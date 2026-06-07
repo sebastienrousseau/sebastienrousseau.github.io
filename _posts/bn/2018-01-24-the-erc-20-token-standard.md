@@ -1,5 +1,6 @@
 ---
 title: "ERC-20: The Ethereum Token Interface That Changed the World"
+tags: "Ethereum, erc20, eip, tokens, contracts, blockchain, cryptocurrencies, smart-token, Solidity, ISO 20022, পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, AI, stablecoins"
 subtitle: "ERC-20 টোকেন, Ethereum স্মার্ট কন্ট্রাক্ট এবং ডিজিটাল সম্পদের মানকীকরণ।"
 description: "ERC-20 হল Ethereum ব্লকচেইনে সর্বাধিক ব্যবহৃত টোকেন মান, যা স্মার্ট কন্ট্রাক্ট ডিজিটাল চুক্তি হিসেবে পরিচিত এবং ডিজিটাল সম্পদ লেনদেনকে সহজ করে তোলে।"
 date: "Jan 24, 2018"
@@ -109,4 +110,3 @@ If you have any questions, please don't hesitate to contact me via [LinkedIn ⧉
 [09]: /articles/index.html "Back to Articles"
 [10]: /contact/index.html "Contact Sebastien Rousseau"
 [11]: https://www.linkedin.com/in/sebastienrousseau/ "Sebastien Rousseau on LinkedIn"
-

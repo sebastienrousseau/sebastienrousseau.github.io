@@ -1,5 +1,6 @@
 ---
 title: "The November 2026 pacs.008 Structured-Address Deadline: A Six-Month View"
+tags: "ISO 20022, pacs.008, CBPR+, কাঠামোগত ঠিকানা, SWIFT, সীমান্ত-পার পেমেন্ট, নিষেধাজ্ঞা স্ক্রিনিং, FI-to-FI credit transfer, payments, DORA, পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, AI, টোকেনাইজড আমানত, open source, কোয়ান্টাম কম্পিউটিং"
 subtitle: "মধ্য-নভেম্বর ২০২৬ থেকে SWIFT CBPR+ pacs.008 এবং সংশ্লিষ্ট ক্রস-বর্ডার পেমেন্ট বার্তায় অকাঠামোগত পোস্টাল ঠিকানা প্রত্যাখ্যান করবে। প্রায় ৬৫% বার্তা এখনও অ-সম্মত, সংশোধনের সুযোগ দ্রুত সংকুচিত হচ্ছে।"
 description: "নভেম্বর ২০২৬ থেকে SWIFT CBPR+ ক্রস-বর্ডার পেমেন্ট বার্তায় কাঠামোগত পোস্টাল ঠিকানা বাধ্যতামূলক করছে। pacs.008-এ অকাঠামোগত AdrLine আর গৃহীত হবে না; TwnNm ও Ctry ন্যূনতম প্রয়োজন। এখনও ৬৫% বার্তা অ-সম্মত এবং ৪৪% ব্যাংক নির্ধারিত সময়ের পিছিয়ে আছে।"
 date: "May 12, 2026"
@@ -186,4 +187,3 @@ Messages with unstructured addresses in the affected party fields will be reject
 - Standard Chartered, (2025). [ISO 20022 – Standard Chartered Address Guidelines (H2H and API) ⧉](https://www.sc.com/en/uploads/sites/66/content/docs/sc-cib-tb-ISO-20022%E2%80%93CBPR-Address-guidelines-H2H-and-API-sept-2025.pdf "Standard Chartered ISO 20022 Address Guidelines"). Standard Chartered.
 - State Street, (2025). [Client Guide to ISO 20022 ⧉](https://www.statestreet.com/web/insights/articles/documents/state-street-client-guide-to-iso-20022-2025.pdf "State Street Client Guide to ISO 20022 2025"). State Street.
 - ISO 20022, (2026). [Message Definitions Catalogue ⧉](https://www.iso20022.org/iso-20022-message-definitions "ISO 20022 Message Definitions"). ISO 20022.
-

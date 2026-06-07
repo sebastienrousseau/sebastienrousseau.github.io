@@ -1,11 +1,13 @@
 {
   "description": "ERC-20 — найпоширеніший стандарт токенів у блокчейні Ethereum, відомий як цифровий смарт-контракт, що революціонізував обіг цифрових активів.",
-  "locale": "uk_UA",
-  "banner": "https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp",
-  "date": "Jan 24, 2018",
   "title": "[UK DRAFT] ERC-20: The Ethereum Token Interface That Changed the World",
+  "locale": "uk_UA",
+  "date": "Jan 24, 2018",
+  "banner": "https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp",
   "banner_alt": "Вимкнений ноутбук на коричневому дерев'яному столі",
-  "keywords": "ethereum, erc20, eip, токени, контракти, blockchain, криптовалюти, smart-token, solidity",
+  "word_count": 217,
   "language": "uk-UA",
+  "keywords": "ethereum, erc20, eip, токени, контракти, blockchain, криптовалюти, smart-token, solidity",
+  "reading_time": 1,
   "subtitle": "Токени ERC-20, смарт-контракти Ethereum та стандартизація цифрових активів."
 }

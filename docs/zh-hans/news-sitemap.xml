@@ -8,9 +8,129 @@
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>zh-Hans</news:language>
     </news:publication>
-    <news:publication_date>2026-05-28T18:12:27+00:00</news:publication_date>
+    <news:publication_date>2026-06-07T18:23:54+00:00</news:publication_date>
     <news:title>2026 自主财务指数：智能体司库、可编程流动性、代币化存款与实时现金管控</news:title>
     <news:keywords>2026 自主财务, 智能体司库, 可编程流动性, 代币化存款司库, 实时司库, 现金管理 AI, ISO 20022, JPM Coin, Kinexys, BIS</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/zh-hans/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-Hans</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-07T18:23:54+00:00</news:publication_date>
+    <news:title>2026 年的多通道银行:卡、A2A、稳定币、RTP、FedNow 与 Open Banking 合于一套战略</news:title>
+    <news:keywords>支付编排层, FedNow 与 RTP, FedNow 与 ACH, 稳定币结算, USDC 原子结算, ISO 20022 pacs.008, 账户到账户 A2A, Open Banking API, 预筹流动性, 7×24 流动性陷阱, 2026 多通道银行, 支付路由引擎, ERP 对账</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/zh-hans/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-Hans</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-07T18:23:54+00:00</news:publication_date>
+    <news:title>后量子支付基础设施:为何银行可能替换而非改造传统通道</news:title>
+    <news:keywords>后量子密码学, PQC 支付, 密码敏捷性, 现收割后解密, HNDL, NIST 后量子标准, ML-KEM, ML-DSA, FIPS 203, FIPS 204, 支付通道迁移, ISO 20022 PQC, SWIFT MT 替换, HSM, PKI 崩塌, 运营韧性, Quantum Computing Cybersecurity Preparedness Act</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/zh-hans/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-Hans</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-06T06:06:06+00:00</news:publication_date>
+    <news:title>2026 大额支付指数:ISO 20022、代币化存款、实时通道与跨境结算</news:title>
+    <news:keywords>2026 大额支付, ISO 20022, 代币化存款, Project Agorá, 跨境支付, 实时支付, 结构化地址数据, 支付数据质量</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/zh-hans/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-Hans</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-05T06:06:06+00:00</news:publication_date>
+    <news:title>2026 云原生银行指数:DORA、平台工程、主权云与运营韧性</news:title>
+    <news:keywords>2026 云原生银行, DORA 银行合规, 云集中度风险, 银行平台工程, ICT 第三方风险, 云退出策略, 主权云, Kubernetes, ISO 20022</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/zh-hans/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-Hans</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-04T06:06:06+00:00</news:publication_date>
+    <news:title>2026 年量子安全银行业指数:后量子密码学、QKD、密码敏捷性与先收集后解密风险</news:title>
+    <news:keywords>量子安全银行 2026, 银行后量子密码学, NIST FIPS 203, ML-KEM, ML-DSA, SLH-DSA, 密码敏捷性, QKD 银行</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/zh-hans/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-Hans</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-03T06:06:06+00:00</news:publication_date>
+    <news:title>2026 年银行智能体 AI 指数:衡量自主性、治理、可审计性与业务影响</news:title>
+    <news:keywords>智能体 AI 银行 2026, AI 智能体 银行, 金融服务 AI 治理, 自主银行工作流, 模型风险管理, AI 可审计性</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/zh-hans/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-Hans</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-02T06:06:06+00:00</news:publication_date>
+    <news:title>2026 年银行基础设施指数:衡量自主式 AI、量子安全、云原生韧性与批发支付的就绪度</news:title>
+    <news:keywords>banking infrastructure index 2026, 银行基础设施指数, agentic AI banking, 自主式 AI 银行, quantum safe banking, 量子安全, cloud native banking, 云原生银行, wholesale payments, 批发支付, ISO 20022, DORA, Project Agora, tokenised deposits, 代币化存款</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/zh-hans/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-Hans</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-30T06:06:06+00:00</news:publication_date>
+    <news:title>英国批发数字市场:代币化国债、结算与新设的协调者角色</news:title>
+    <news:keywords>英国批发数字市场 2026, Chris Woolard, 代币化国债, 代币化批发金融, 数字市场协调者, 英国代币化, 结算</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/zh-hans/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-Hans</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-29T06:06:06+00:00</news:publication_date>
+    <news:title>ISO 20022 迁移之后：把支付数据做成 2026 银行产品</news:title>
+    <news:keywords>ISO 20022 2026, 结构化地址, CBPR+, 支付数据产品, 用途代码, 企业财资, 对账, 制裁筛查, 欺诈检测</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/zh-hans/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-Hans</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-28T06:06:06+00:00</news:publication_date>
+    <news:title>数字资产 2026：基础设施转型不可缓</news:title>
+    <news:keywords>数字资产 2026, 代币化现实资产, 稳定币银行, 代币化存款, 数字资产托管, DLT 银行, 结算基础设施, 抵押品流动性, 可编程货币, 银行数字资产战略</news:keywords>
   </news:news>
 </url>
 <url>

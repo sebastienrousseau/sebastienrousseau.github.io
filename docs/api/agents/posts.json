@@ -1,5 +1,5 @@
 {
-  "count": 57,
+  "count": 67,
   "posts": [
     {
       "slug": "2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026",
@@ -17,6 +17,235 @@
       ],
       "banner": "https://cloudcdn.pro/stocks/images/christopher-burns-Kj2SaNHG-hg.webp",
       "topics": [],
+      "language": "en-GB"
+    },
+    {
+      "slug": "2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026",
+      "url": "https://sebastienrousseau.com/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/index.html",
+      "date": "2026-06-06",
+      "title": "The Wholesale Payments Index in 2026: ISO 20022, Tokenised Deposits, Real-Time Rails, and Cross-Border Settlement",
+      "description": "A 2026 index for wholesale payments readiness, measuring ISO 20022 data quality, tokenised deposits, real-time rails, cross-border settlement, and liquidity efficiency.",
+      "keywords": [
+        "wholesale payments 2026",
+        "ISO 20022",
+        "tokenised deposits",
+        "Project Agora",
+        "cross border payments",
+        "real time payments",
+        "structured address data",
+        "payment data quality"
+      ],
+      "banner": "https://cloudcdn.pro/stocks/images/miquel-parera-NsXLehhHx1Q.webp",
+      "topics": [
+        "iso-20022-payments"
+      ],
+      "language": "en-GB"
+    },
+    {
+      "slug": "2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026",
+      "url": "https://sebastienrousseau.com/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/index.html",
+      "date": "2026-06-05",
+      "title": "The Cloud Native Banking Index in 2026: DORA, Platform Engineering, Sovereign Cloud, and Operational Resilience",
+      "description": "A 2026 cloud native banking index for measuring DORA readiness, platform engineering maturity, cloud concentration risk, exit evidence, and operational resilience.",
+      "keywords": [
+        "cloud native banking 2026",
+        "DORA banks",
+        "cloud concentration risk",
+        "platform engineering banks",
+        "ICT third party risk",
+        "cloud exit strategy",
+        "sovereign cloud"
+      ],
+      "banner": "https://cloudcdn.pro/api/transform?url=/stocks/images/quang-nguyen-vinh-2649403.webp&w=1600&format=webp&q=85",
+      "topics": [
+        "cloud-native-banking"
+      ],
+      "language": "en-GB"
+    },
+    {
+      "slug": "2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026",
+      "url": "https://sebastienrousseau.com/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html",
+      "date": "2026-06-04",
+      "title": "The Quantum-Safe Banking Index in 2026: Post-Quantum Cryptography, QKD, Crypto-Agility, and Harvest-Now-Decrypt-Later Risk",
+      "description": "A banking index for quantum-safe readiness in 2026, covering NIST post-quantum standards, cryptographic inventory, crypto-agility, QKD, and long-lived data exposure.",
+      "keywords": [
+        "quantum safe banking 2026",
+        "post quantum cryptography banks",
+        "NIST FIPS 203",
+        "ML-KEM",
+        "ML-DSA",
+        "SLH-DSA",
+        "crypto agility",
+        "QKD banking"
+      ],
+      "banner": "https://cloudcdn.pro/api/transform?url=/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp&w=1200&format=webp&q=80",
+      "topics": [
+        "post-quantum-cryptography"
+      ],
+      "language": "en-GB"
+    },
+    {
+      "slug": "2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026",
+      "url": "https://sebastienrousseau.com/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/index.html",
+      "date": "2026-06-03",
+      "title": "The Agentic AI Index for Banks in 2026: Measuring Autonomy, Governance, Auditability, and Business Impact",
+      "description": "An index-style framework for measuring agentic AI readiness in banks, covering autonomy, governance, auditability, reliability, controls, and business value.",
+      "keywords": [
+        "agentic AI banking 2026",
+        "AI agents banks",
+        "AI governance financial services",
+        "autonomous banking workflows",
+        "model risk management",
+        "AI auditability"
+      ],
+      "banner": "https://cloudcdn.pro/api/transform?url=/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp&w=1200&format=webp&q=80",
+      "topics": [],
+      "language": "en-GB"
+    },
+    {
+      "slug": "2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026",
+      "url": "https://sebastienrousseau.com/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/index.html",
+      "date": "2026-06-02",
+      "title": "The 2026 Banking Infrastructure Index: Measuring Readiness for Agentic AI, Quantum-Safe Security, Cloud Native Resilience, and Wholesale Payments",
+      "description": "A Stanford AI Index-inspired banking infrastructure index for 2026, measuring readiness across agentic AI, quantum-safe security, cloud native resilience, and global wholesale payments.",
+      "keywords": [
+        "banking infrastructure index 2026",
+        "agentic AI banking",
+        "quantum safe banking",
+        "cloud native banking",
+        "wholesale payments",
+        "ISO 20022",
+        "DORA",
+        "Project Agora",
+        "tokenised deposits"
+      ],
+      "banner": "https://cloudcdn.pro/stocks/images/miguel-sousa-ejIF-pJhYkM.webp",
+      "topics": [],
+      "language": "en-GB"
+    },
+    {
+      "slug": "2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026",
+      "url": "https://sebastienrousseau.com/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html",
+      "date": "2026-06-01",
+      "title": "The Multi-Rail Bank in 2026: Cards, A2A, Stablecoins, RTP, FedNow, and Open Banking in One Strategy",
+      "description": "FedNow demands pre-funded 24/7 liquidity. ACH is cheap but T+1. USDC clears atomically but needs wallet infrastructure. The 2026 multi-rail bank routes each payment by cost, finality, and liquidity cost — driven by an orchestration engine that reads ISO 20022 pacs.008 and decides.",
+      "keywords": [
+        "payment orchestration layer",
+        "FedNow vs RTP",
+        "FedNow vs ACH",
+        "stablecoin settlement",
+        "USDC atomic settlement",
+        "ISO 20022 pacs.008",
+        "account-to-account A2A",
+        "Open Banking APIs",
+        "pre-funded liquidity",
+        "24/7 liquidity trap",
+        "multi-rail bank 2026",
+        "payment routing engine",
+        "ERP reconciliation"
+      ],
+      "banner": "https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp",
+      "topics": [],
+      "language": "en-GB"
+    },
+    {
+      "slug": "2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026",
+      "url": "https://sebastienrousseau.com/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html",
+      "date": "2026-05-31",
+      "title": "Post-Quantum Payments Infrastructure: Why Banks May Replace Rather Than Retrofit Legacy Rails",
+      "description": "Post-quantum cryptography forces a binary choice on payment rails: retrofit RSA/ECC inside SWIFT MT and ISO 20022 envelopes that were never sized for ML-KEM and ML-DSA, or replace with crypto-agile infrastructure. Architects must decide before HNDL becomes operational loss.",
+      "keywords": [
+        "post-quantum cryptography",
+        "PQC payments",
+        "crypto-agility",
+        "Harvest Now Decrypt Later",
+        "HNDL",
+        "NIST post-quantum standards",
+        "ML-KEM",
+        "ML-DSA",
+        "FIPS 203",
+        "FIPS 204",
+        "payment rail migration",
+        "ISO 20022 PQC",
+        "SWIFT MT replacement",
+        "HSM",
+        "PKI collapse",
+        "operational resilience",
+        "Quantum Computing Cybersecurity Preparedness Act"
+      ],
+      "banner": "https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp",
+      "topics": [],
+      "language": "en-GB"
+    },
+    {
+      "slug": "2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026",
+      "url": "https://sebastienrousseau.com/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html",
+      "date": "2026-05-30",
+      "title": "Wholesale Digital Markets in the UK: Tokenised Gilts, Settlement, and the New Champion Role",
+      "description": "The UK has appointed a Wholesale Digital Markets Champion to force interoperability inside the Digital Securities Sandbox (DSS). Tokenised gilts settle this question first — HQLA on DLT, atomic against tokenised cash, with intraday repo as the prize.",
+      "keywords": [
+        "UK Digital Securities Sandbox",
+        "tokenised gilts",
+        "intraday repo",
+        "atomic DvP",
+        "RTGS renewal",
+        "RLN",
+        "Canton DLT",
+        "policy-as-code compliance",
+        "wholesale digital markets",
+        "HQLA collateral mobility"
+      ],
+      "banner": "https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&w=1200&format=webp&q=80",
+      "topics": [
+        "iso-20022-payments"
+      ],
+      "language": "en-GB"
+    },
+    {
+      "slug": "2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026",
+      "url": "https://sebastienrousseau.com/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/index.html",
+      "date": "2026-05-29",
+      "title": "ISO 20022 After Migration: Turning Payment Data into Banking Products in 2026",
+      "description": "ISO 20022 after migration is a data-product opportunity. Structured addresses, purpose codes, invoice details, investigation messages, and richer payment status events can become reconciliation, fraud, liquidity, compliance, and analytics products.",
+      "keywords": [
+        "ISO 20022 2026",
+        "structured address",
+        "CBPR+",
+        "payment data products",
+        "payment purpose codes",
+        "corporate treasury",
+        "reconciliation",
+        "sanctions screening",
+        "fraud detection"
+      ],
+      "banner": "https://cloudcdn.pro/api/transform?url=/stocks/images/humphrey-muleba-1660004.webp&w=1200&format=webp&q=80",
+      "topics": [
+        "iso-20022-payments"
+      ],
+      "language": "en-GB"
+    },
+    {
+      "slug": "2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026",
+      "url": "https://sebastienrousseau.com/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/index.html",
+      "date": "2026-05-28",
+      "title": "Digital Assets in 2026: The Infrastructure Transition Banks Cannot Delay",
+      "description": "Digital assets are no longer an innovation bet. They are a settlement, custody, and balance-sheet architecture question. The strategic task for banks is infrastructure design under structural uncertainty.",
+      "keywords": [
+        "digital assets 2026",
+        "tokenised real-world assets",
+        "stablecoins banking",
+        "tokenised deposits",
+        "digital asset custody",
+        "DLT banking",
+        "settlement infrastructure",
+        "collateral mobility",
+        "programmable money",
+        "bank strategy digital assets"
+      ],
+      "banner": "https://cloudcdn.pro/stocks/images/corporate-finance.webp",
+      "topics": [
+        "blockchain-digital-assets"
+      ],
       "language": "en-GB"
     },
     {
@@ -54,7 +283,7 @@
         "transaction analysis",
         "cash flow forecasting"
       ],
-      "banner": "https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&w=1200&format=webp&q=80",
+      "banner": "https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp",
       "topics": [],
       "language": "en-GB"
     },
@@ -299,7 +528,7 @@
         "payment fragmentation",
         "wholesale CBDC"
       ],
-      "banner": "https://cloudcdn.pro/stocks/images/meiying-ng-OrwkD-iWgqg.webp",
+      "banner": "https://cloudcdn.pro/stocks/images/miguel-sousa-ejIF-pJhYkM.webp",
       "topics": [
         "iso-20022-payments"
       ],
@@ -1222,7 +1451,7 @@
       "url": "https://sebastienrousseau.com/2023-11-12-exploring-generative-ai/index.html",
       "date": "2023-11-12",
       "title": "Generative AI in 2023: How It Works, Where It Lands",
-      "description": "How transformer models work, which 2023 models set the benchmark, where generative AI lands first in financial services, and what governance questions practitioners need answered before deploying.",
+      "description": "Explore Generative AI in 2023: how it works, where it lands first in financial services, and the ethical and architectural questions worth asking.",
       "keywords": [
         "generative AI",
         "large language model",
@@ -1343,7 +1572,7 @@
       "url": "https://sebastienrousseau.com/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html",
       "date": "2023-09-29",
       "title": "Automating ISO 20022 Payment Files Creation with pain001",
-      "description": "pain001 is an open-source Python library that generates ISO 20022 pain.001.001.09 XML payment files from CSV or SQLite data, with automatic XSD validation, control-sum computation, and support for both SEPA SCT and CBPR+ cross-border message formats.",
+      "description": "Automate the creation of ISO 20022 pain.001 payment files from CSV or SQLite. pain001 is the open-source Python library that streamlines compliance.",
       "keywords": [
         "pain001",
         "ISO 20022",

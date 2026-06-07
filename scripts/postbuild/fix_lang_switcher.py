@@ -36,6 +36,7 @@ becomes a redundant safety-net rather than the primary mechanism.
 The rewrite is idempotent — running this script twice on the same
 output produces no further changes.
 """
+
 from __future__ import annotations
 
 import re

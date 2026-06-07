@@ -1,12 +1,14 @@
 {
-  "title": "Static Site Generator: Rust 기반 최고속 정적 사이트 생성기",
-  "subtitle": "성능과 개발자 경험을 위하여 설계된 정적 사이트 생성기",
-  "banner": "https://cloudcdn.pro/stocks/images/shokunin-banner.webp",
-  "language": "ko-KR",
-  "date": "October 9, 2023",
-  "last_reviewed": "2026-05-16",
-  "description": "Shokunin은 Rust로 작성된 정적 사이트 생성기로, 초고속 빌드, JSON-LD 네이티브 지원, 우수한 접근성을 실현합니다.",
-  "keywords": "Static Site Generator, SSG, 정적 사이트 생성기, Rust, 성능, SEO, JSON-LD, 접근성",
   "locale": "ko_KR",
-  "banner_alt": "Static Site Generator 프로젝트 배너"
+  "reading_time": 1,
+  "date": "October 9, 2023",
+  "banner": "https://cloudcdn.pro/stocks/images/shokunin-banner.webp",
+  "description": "Shokunin은 Rust로 작성된 정적 사이트 생성기로, 초고속 빌드, JSON-LD 네이티브 지원, 우수한 접근성을 실현합니다.",
+  "banner_alt": "Static Site Generator 프로젝트 배너",
+  "word_count": 232,
+  "language": "ko-KR",
+  "title": "Static Site Generator: Rust 기반 최고속 정적 사이트 생성기",
+  "last_reviewed": "2026-05-16",
+  "keywords": "Static Site Generator, SSG, 정적 사이트 생성기, Rust, 성능, SEO, JSON-LD, 접근성",
+  "subtitle": "성능과 개발자 경험을 위하여 설계된 정적 사이트 생성기"
 }

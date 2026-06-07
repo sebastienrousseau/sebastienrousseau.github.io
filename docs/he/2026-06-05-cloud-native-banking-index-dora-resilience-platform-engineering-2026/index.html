@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="he-IL" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Fri, 05 Jun 2026 06:06:06 +0000" id="date" />
+    <meta itemprop="dateModified" content="Fri, 05 Jun 2026 06:06:06 +0000" id="last-modified" />
+    <title>מדד הבנקאות ענן-נייטיב ב-2026: DORA, הנדסת פלטפורמה, ענן ריבוני וחוסן תפעולי — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="מדד בנקאות ענן-נייטיב לשנת 2026 למדידת היערכות DORA, בשלות הנדסת פלטפורמה, סיכון ריכוז ענן, ראיות יציאה וחוסן תפעולי במוסדות פיננסיים.">
+<meta name="keywords" content="בנקאות ענן-נייטיב 2026, DORA לבנקים, סיכון ריכוז ענן, הנדסת פלטפורמה לבנקים, סיכון צד-שלישי ICT, אסטרטגיית יציאה מהענן, ענן ריבוני">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="The Cloud Native Banking Index 2026">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-Mg5gjHo1BmjTJtDRuL8m3TbBsLNvgAfcH2W4SGJ/DNQ=' 'sha256-YZPIn+imy1To5e0HJN30+vGaMVKX7zy2bUbj5lc/XgY=' 'sha256-pS9LrozxA5m9HceoPoD8WTcMAf/TelStC2Img2Xutsc=' 'sha256-qdLpHh+QeasN5ggOsrnsDSaJYDjlv5eRmj9hI75GIOE=' 'self' 'inline-speculation-rules' https://cdn.jsdelivr.net https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' https://cloudcdn.pro https://www.google.com https://open.spotify.com;
+        img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/he/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/newsreader-latin.woff2" crossorigin />
+    <link rel="stylesheet" href="/fonts/fonts.css" />
+    <!-- Preload the LCP hero portrait so it doesn't compete with the
+         render-blocking JS bundle on throttled mobile connections.
+         Lighthouse-simulated Slow-4G has been pinning LCP at ~5.6s; the
+         observed (real-network) LCP is 165 ms. This hint pulls the
+         synthetic LCP in line with the observed value. -->
+    <link rel="preload" as="image" href="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=1200&format=webp&q=85" fetchpriority="high">
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script>(function(){try{var saved=localStorage.getItem("theme");var prefersDark=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;var theme=saved||(prefersDark?"dark":"light");document.documentElement.setAttribute("data-theme",theme);}catch(e){}})();</script>
+
+    <link rel="stylesheet" href="/_csp/4724896d11ec6663.css" integrity="sha256-SFQ1AngSMlx94d5FmN1lWSKPs5RL6Y8BQf0nIEBLd7g= sha256-6BJkWGvqh3blXQksn+ynhkpoqcrJzzWhSKVuLVBJY4s=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="ערוץ Atom" href="/he/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="מדד הבנקאות ענן-נייטיב ב-2026: DORA, הנדסת פלטפורמה, ענן ריבוני וחוסן תפעולי — Sebastien Rousseau">
+<meta property="og:description" content="מדד בנקאות ענן-נייטיב לשנת 2026 למדידת היערכות DORA, בשלות הנדסת פלטפורמה, סיכון ריכוז ענן, ראיות יציאה וחוסן תפעולי במוסדות פיננסיים.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/he/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/">
+<meta property="og:image" content="https://cloudcdn.pro/api/transform?url=/stocks/images/quang-nguyen-vinh-2649403.webp&w=1600&format=webp&q=85">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="he_IL">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="מדד הבנקאות ענן-נייטיב ב-2026: DORA, הנדסת פלטפורמה, ענן ריבוני וחוסן תפעולי — Sebastien Rousseau">
+<meta name="twitter:description" content="מדד בנקאות ענן-נייטיב לשנת 2026 למדידת היערכות DORA, בשלות הנדסת פלטפורמה, סיכון ריכוז ענן, ראיות יציאה וחוסן תפעולי במוסדות פיננסיים.">
+<meta name="twitter:image" content="https://cloudcdn.pro/api/transform?url=/stocks/images/quang-nguyen-vinh-2649403.webp&w=1600&format=webp&q=85">
+<link rel="canonical" href="https://sebastienrousseau.com/he/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="bn" href="https://sebastienrousseau.com/bn/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="cs" href="https://sebastienrousseau.com/cs/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="fil" href="https://sebastienrousseau.com/fil/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="ha" href="https://sebastienrousseau.com/ha/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="he" href="https://sebastienrousseau.com/he/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="hi" href="https://sebastienrousseau.com/hi/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="id" href="https://sebastienrousseau.com/id/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="nl" href="https://sebastienrousseau.com/nl/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="pl" href="https://sebastienrousseau.com/pl/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="ro" href="https://sebastienrousseau.com/ro/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="sv" href="https://sebastienrousseau.com/sv/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="th" href="https://sebastienrousseau.com/th/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="tr" href="https://sebastienrousseau.com/tr/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="uk" href="https://sebastienrousseau.com/uk/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="vi" href="https://sebastienrousseau.com/vi/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="yo" href="https://sebastienrousseau.com/yo/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" integrity="sha256-tV/7vAgYDUuBQbSGEPjXL/JC0sD7QpSxXCGKT4ALhh8= sha256-dvm1KF9mEWIapL8BE0nyFlHaKSf6TsjZZoQcJeRPraI=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">דלג לתוכן הראשי</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="החלף ניווט" />
+      <div class="wrap">
+        <a class="ap-brand" href="/he/index.html" aria-label="דף הבית של Sebastien Rousseau">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="ניווט ראשי">
+          <ul class="ap-menu">
+            <li><a href="/he/aleynu/index.html">אודות</a></li>
+            <li><a href="/he/ma-amarim/index.html" aria-current="page" class="active">מאמרים</a></li>
+            <li><a href="/he/pirsumim/index.html">פרסומים</a></li>
+            <li><a href="/he/nos-im/index.html">נושאים</a></li>
+            <li><a href="/he/proyektim/index.html">פרויקטים</a></li>
+            <li><a href="/he/play-listim/index.html">פלייליסטים</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="מעבר למצב כהה" aria-pressed="false" title="החלף ערכת נושא">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="חיפוש (Cmd או Ctrl + K)" title="חיפוש (⌘K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="שפה">
+            <button type="button" class="ap-lang-toggle" aria-label="HE, שינוי שפה" aria-expanded="false" aria-haspopup="menu" title="שינוי שפה">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">HE</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <a class="ap-lang-item" href="/bn/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
+                <a class="ap-lang-item" href="/cs/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
+                <a class="ap-lang-item" href="/de/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <a class="ap-lang-item" href="/fil/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
+                <a class="ap-lang-item" href="/ha/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
+                <a class="ap-lang-item" href="/he/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
+                <a class="ap-lang-item" href="/hi/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <a class="ap-lang-item" href="/id/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
+                <a class="ap-lang-item" href="/it/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <a class="ap-lang-item" href="/pl/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
+                <a class="ap-lang-item" href="/pt-br/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <a class="ap-lang-item" href="/ro/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
+                <a class="ap-lang-item" href="/ru/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <a class="ap-lang-item" href="/sv/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
+                <a class="ap-lang-item" href="/th/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
+                <a class="ap-lang-item" href="/tr/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
+                <a class="ap-lang-item" href="/uk/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="uk" role="menuitem">🇺🇦 Українська</a>
+                <a class="ap-lang-item" href="/vi/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
+                <a class="ap-lang-item" href="/yo/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
+                <a class="ap-lang-item" href="/zh-hans/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/he/tsor-kesher/index.html" aria-label="צרו קשר">צרו קשר ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="החלף ניווט">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>מדד הבנקאות ענן-נייטיב ב-2026: DORA, הנדסת פלטפורמה, ענן ריבוני וחוסן תפעולי</h1>
+      <p class="sub">חוסן ענן תחת DORA נמצא בשלב הביקורת. החלטות הנדסת הפלטפורמה שהתקבלו במהלך 2024-2025 הן מה שמחזור הפיקוח של 2026 בוחן — מסלולים סלולים על Kubernetes, פורטל Backstage, GitOps, Open Policy Agent ברמת ה-admission ו-OpenTelemetry מקצה לקצה — שמייצרים ראיות למרשם סעיף 8 כתוצר של פריסה, לא ברגע הבחינה.</p>
+    <nav class="article-tags" aria-label="נושאים"><a href="/tags/index.html#h3-2026" class="article-tag" rel="tag">בנקאות ענן-נייטיב 2026</a><a href="/tags/index.html#h3-dora" class="article-tag" rel="tag">DORA לבנקים</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">סיכון ריכוז ענן</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">הנדסת פלטפורמה לבנקים</a><a href="/tags/index.html#h3-ict" class="article-tag" rel="tag">סיכון צד-שלישי ICT</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">אסטרטגיית יציאה מהענן</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">ענן ריבוני</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2026-06-05T06:06:06+00:00" class="meta-pub">פורסם בתאריך 5 Jun 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="זמן קריאה משוער">13 דקות קריאה</span></div></section><figure class="article-banner"><img src="https://cloudcdn.pro/api/transform?url=/stocks/images/quang-nguyen-vinh-2649403.webp&w=1600&format=webp&q=85" alt="Banner for: מדד הבנקאות ענן-נייטיב ב-2026: DORA, הנדסת פלטפורמה, ענן ריבוני וחוסן תפעולי" width="1200" height="675" fetchpriority="high" decoding="async" /></figure>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>תוכן עניינים</h2><ol><li><a href="#dora">מדוע חוסן הענן תחת DORA נמצא בשלב הביקורת</a></li><li><a href="#2026">ארכיטקטורת המדד ל-2026</a></li><li><a href="#section-3">אותות עכשוויים למעקב</a></li><li><a href="#section-4">הנדסת פלטפורמה: חמשת היסודות הייעודיים</a></li><li><a href="#section-10">ענן ריבוני כהנדסה, לא כמיתוג</a></li><li><a href="#section-11">ביצוע יציאה שנבדק</a></li><li><a href="#rto-rpo-cif">יעדי RTO / RPO ממלאי ה-CIF</a></li><li><a href="#section-13">מה המשמעות לפי סוג הבנק</a></li><li><a href="#section-18">מסקנה</a></li><li><a href="#section-19">שאלות נפוצות</a></li><li><a href="#section-20">הפניות</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> מדד בנקאות ענן-נייטיב לשנת 2026 למדידת היערכות DORA, בשלות הנדסת פלטפורמה, סיכון ריכוז ענן, ראיות יציאה וחוסן תפעולי במוסדות פיננסיים.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>מדוע חוסן הענן תחת DORA נמצא בשלב הביקורת.</strong> שלוש סיבות מדוע מסגור ה&quot;היערכות&quot; שגוי ב-2026.</li>  <li><strong>אותות עכשוויים למעקב.</strong> בשלות ענן-נייטיב ב-2026 מצטמצמת לחמישה יסודות הנדסיים שמשתלבים זה בזה ומפיקים ראיות פיקוחיות בקצב צנרת הפריסה.</li>  <li><strong>הנדסת פלטפורמה: חמשת היסודות הייעודיים.</strong> בשלות ענן-נייטיב ב-2026 מצטמצמת לחמישה יסודות הנדסיים שמשתלבים זה בזה ומפיקים ראיות פיקוחיות בקצב צנרת הפריסה.</li>  <li><strong>ענן ריבוני כהנדסה, לא כמיתוג.</strong> אסטרטגיית ענן ריבוני ב-2026 חייבת להשיב על ארבע שאלות ספציפיות של Schrems II + DORA + מיקור-חוץ של EBA:.</li></ul></aside><!-- lead-start: manual -->
+
+<!-- lead-end -->
+<p>בנקאות ענן-נייטיב ב-2026 נמצאת בשלב הביקורת של DORA. <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554" title="DORA — חוק החוסן התפעולי הדיגיטלי">תקנה (EU) 2022/2554 ⧉</a> בתוקף מאז 17 בינואר 2025. משטר הסיווג של ספק צד-שלישי קריטי (CTPP) תחת סעיפים 28-44 נפתח לאורך 2025-2026, כש-AWS, Microsoft (Azure), Google (GCP) ו-Salesforce בתוך פרימטר הסיווג או בקרבתו. רשויות הפיקוח האירופיות (EBA, EIOPA, ESMA) פרסמו את ה-RTS וה-ITS הסופיים על <a href="https://www.eba.europa.eu/sites/default/files/2024-01/0e155f7a-9b09-4dba-89cb-37f7e8e1c540/JC%202023%2086%20-%20Final%20report%20on%20draft%20ITS%20on%20Register%20of%20information%20under%20DORA.pdf" title="ESAs ITS על מרשם המידע">מרשם המידע ⧉</a> במהלך 2024. צוות פיקוח הבנקאות של ECB מנהל תכניות מפורשות בנושא היערכות לשיבוש בענן ובדיקות חדירה מונעות-איום ב<a href="https://www.bankingsupervision.europa.eu/framework/priorities/html/ssm.supervisory_priorities202511.en.html" title="סדרי עדיפויות פיקוחיים 2026-28">סדרי העדיפויות הפיקוחיים 2026-28 ⧉</a>. השאלה המוסדית אינה אם להתאים את אסטרטגיית הענן ל-DORA — זה סגור — אלא אם יסודות הנדסת הפלטפורמה של המוסד מייצרים ראיות בקצב צנרת הפריסה במקום בקובצי PDF שנאספים בשבוע שלפני הבחינה.</p>
+<hr />
+<blockquote>
+<p><strong>תקציר מנהלים / עיקרי הדברים</strong></p>
+<ul>
+<li><strong>חוסן הענן תחת DORA באכיפה פעילה מאז 17 בינואר 2025.</strong> סעיפים 6, 8, 18, 26 ו-28-44 כולם בתוקף. ממצאי פיקוח מגל הבחינות הראשון הגיעו ברבעון הרביעי של 2025. מסגור ה&quot;היערכות&quot; מאחר בשני מחזורים.</li>
+<li><strong>משטר הסיווג של CTPP נפתח.</strong> AWS, Microsoft, Google, Salesforce — בתוך הפרימטר או בקרבתו. הסיווג מעניק לרשויות הפיקוח זכויות פיקוח ישיר, ובכלל זה בקשות מידע, ביקורות באתר והמלצות פיקוחיות.</li>
+<li><strong>הנדסת הפלטפורמה היא התוצר.</strong> מסלולים סלולים על Kubernetes (EKS / AKS / GKE / OpenShift), פורטל מפתחים בסגנון Backstage, GitOps (ArgoCD או Flux), Open Policy Agent ברמת ה-admission ו-OpenTelemetry מקצה לקצה. חמישה יסודות ייעודיים; כל דבר חסר הוא ממצא.</li>
+<li><strong>ענן ריבוני הוא הנדסה, לא מיתוג.</strong> AWS European Sovereign Cloud, Microsoft EU Data Boundary, Bleu (Capgemini + Orange + Microsoft), Thales / S3NS, Oracle EU Sovereign Cloud — כל אחת נוגעת בממד ספציפי של Schrems II + סעיף 28 של DORA; אף אחת אינה תשובת מפתח-במפתח.</li>
+<li><strong>נדרשות ראיות יציאה שנבדקו.</strong> סעיפים 81 ו-113-117 של EBA/GL/2019/02. תרגיל-שולחן רבעוני אינו מספק; המפקחים מצפים לבדיקת יציאה שנתית מקצה-לקצה לכל פונקציה קריטית או חשובה.</li>
+<li><strong>RTO / RPO ממלאי ה-CIF.</strong> Tier 1: 2h / 15min. Tier 2: 4h / 1h. Tier 3: 24h / 4h. נגזרים מניתוח השפעה עסקית, לא מקיבולת צוות הפלטפורמה.</li>
+</ul>
+</blockquote>
+<hr />
+<h2 id="dora">מדוע חוסן הענן תחת DORA נמצא בשלב הביקורת <a class="heading-anchor" href="#dora" aria-label="קישור אל מדוע חוסן הענן תחת DORA נמצא בשלב הביקורת">#</a></h2>
+<p>שלוש סיבות מדוע מסגור ה&quot;היערכות&quot; שגוי ב-2026.</p>
+<p><strong>ראשית, ציר הזמן.</strong> DORA פורסמה בדצמבר 2022. תקופת היישום בת 24 החודשים הסתיימה ב-17 בינואר 2025. ה-RTS וה-ITS הסופיים של רשויות הפיקוח — לרבות ה-ITS על מרשם המידע המשמש לסיווג CTPP — פורסמו לאורך 2024. גל הבחינות הפיקוחי הראשון התרחש לאורך 2025; ממצאים על שלמות מסגרת ניהול סיכוני ICT לפי סעיף 6 ועל התאמת מרשם סעיף 8 הגיעו ברבעון הרביעי של 2025 בכמה מוסדות בדרג ראשון.</p>
+<p><strong>שנית, משטר הסיווג של CTPP.</strong> סעיף 31 קובע את הקריטריונים לסיווג כספק צד-שלישי קריטי: השפעה מערכתית במקרה של כשל, קריטיות השירותים המסופקים, היקף ומורכבות השירותים, יכולת הסבה. רשויות הפיקוח מנהלות את המרשם ומפרסמות החלטות סיווג. AWS, Microsoft (Azure), Google (GCP) ו-Salesforce נמצאות בתוך פרימטר הסיווג או בקרבתו, בהתאם לנתח השוק שלהן בשירותים פיננסיים לפי מדינת חברה. הסיווג מעניק למפקח הראשי (אחת מרשויות הפיקוח, המוקצית לכל ספק) סמכות פיקוח ישיר: בקשות מידע לפי סעיף 37, ביקורות באתר לפי סעיף 38, המלצות לפי סעיף 35 ומשטר הגילוי הציבורי לפי סעיף 41. הבנקים המפוקחים על אותם CTPPs כפופים לציפיות פיקוחיות מקבילות באשר לאופן ניהול אותה תלות מסווגת.</p>
+<p><strong>שלישית, סדרי העדיפויות הפיקוחיים של ECB ל-2026-28.</strong> מסמך סדרי העדיפויות נוקב בשתי תכניות מפורשות שמשפיעות ישירות על בנקאות ענן-נייטיב: היערכות לשיבוש מהותי בשירות הענן (תרחישים פיקוחיים מודלים בוחנים את יכולת המוסד לספוג השבתה מתמשכת של CTPP מסווג) ו-TLPT בהתאמה ל-TIBER-EU (כל תרגיל TIBER-EU מקיף את הפונקציות הקריטיות והחשובות של המוסד, שכוללות כעת שירותים המתארחים בענן ציבורי). גל הבחינות של 2026 יפיק ממצאים בשתי הזירות.</p>
+<p>המסגור ל-2026 אינו &quot;DORA בדרך&quot;; הוא &quot;ממצאי בחינות DORA מגיעים לתיבת הדואר של המוסד שלכם, והחלטות הנדסת הפלטפורמה שקיבלתם במהלך 2024-2025 הן מה שהמפקח בוחן בממצאים האלה.&quot;</p>
+<h2 id="2026">ארכיטקטורת המדד ל-2026 <a class="heading-anchor" href="#2026" aria-label="קישור אל ארכיטקטורת המדד ל-2026">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>שכבת מדד</th>
+<th>איך נראית &quot;מוכנות&quot;</th>
+<th>מדד המוכנות</th>
+<th>אופן הכישלון</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>בשלות הפלטפורמה</strong></td>
+<td>יותר מ-80% מעומסי העבודה על פלטפורמת Kubernetes של מסלול סלול (EKS / AKS / GKE / OpenShift) עם admission של policy-as-code, פריסת GitOps ובדיקות DR אוטומטיות</td>
+<td>אחוז ה-CIFs על פלטפורמת המסלול הסלול; ספירת פריסות צל; זמן ממוצע להעלאת שירות חדש לפלטפורמה</td>
+<td>פלטפורמות צל עם בקרות לא עקביות; CIFs הרצים על תשתית לא סלולה, השקופים להתאמת מרשם סעיף 8</td>
+</tr>
+<tr>
+<td><strong>שלמות מרשם סעיף 8</strong></td>
+<td>מרשם המידע מתואם אוטומטית לצריכת ה-API של צד שלישי בפלטפורמה + cloud-bill-of-materials; סיווג הקריטיות עקבי עם מלאי ה-CIF של המוסד</td>
+<td>אחוז רשומות המרשם המותאמות לטלמטרית הפלטפורמה; ספירת רשומות יתומות; בדיקת שלמות פרימטר ה-CTPP</td>
+<td>רשויות הפיקוח מזהות תלות ב-CTPP מסווג שהמוסד לא חשף לפי סעיף 8; ממצא נקודתי והשלכת פרימטר CTPP</td>
+</tr>
+<tr>
+<td><strong>ריכוז בענן</strong></td>
+<td>פונקציות קריטיות ממופות לספקי ענן וגם לאזורי תת-ענן וגם לשירותים וגם להערכת הסבה; חשיפה מתואמת בין CIFs מכומתת</td>
+<td>ציון ריכוז לכל CIF; חשיפה מתואמת בין CIFs החולקים אזור CTPP מסווג</td>
+<td>השבתה אחת של AWS us-east-1 IAM מפילה ארבעה CIFs שהמוסד חשב שמומנו בנפרד</td>
+</tr>
+<tr>
+<td><strong>יכולת יציאה שנבדקה</strong></td>
+<td>בדיקת ביצוע יציאה שנתית מקצה-לקצה לכל CIF התלוי ב-CTPP מסווג; RTO / RPO מתועדים עומדים ביעדים הנגזרים מ-BIA; מסלול ניידות נתונים נבדק</td>
+<td>שיעור הצלחת הבדיקה לכל CIF; זמן ממוצע לביצוע יציאה מול יעד RTO; השהיית מסלול ניידות הנתונים</td>
+<td>תכנית יציאה הקיימת רק כקובץ PDF; תרגיל-שולחן אומר RTO של 4h, בדיקה בפועל מראה 48h בניסיון הראשון</td>
+</tr>
+<tr>
+<td><strong>תצפיתיות + דיווח אירוע</strong></td>
+<td>תיעודי OpenTelemetry מקצה לקצה בין השירותים; עוזר סיווג אוטומטי של 4 שעות לפי סעיף 18 משולב בפלטפורמת ניהול האירועים</td>
+<td>אחוז התעבורה של CIF המכוסה בתיעודי OTel; זמן ממוצע מזיהוי אירוע עד החלטת סיווג לפי סעיף 18</td>
+<td>אירוע מהותי מסווג מחוץ לחלון 4 השעות כי קביעת הקריטיות דרשה ישיבת טריאז'; ממצא לפי סעיף 18</td>
+</tr>
+<tr>
+<td><strong>שילוב TLPT</strong></td>
+<td>היקף ה-TLPT נגזר ממלאי ה-CIF ומתרענן ברציפות; הממצאים מוזרמים בחזרה ל-policy-as-code של הפלטפורמה; ממצאים סגורים מפיקים חבילות ראיות מוכנות לפיקוח</td>
+<td>שיעור סגירת ממצאי TLPT; זמן מחזור מממצא לעדכון מדיניות</td>
+<td>TLPT מגלה פגיעות שצוות הנדסת הפלטפורמה של המוסד לא יכול לתקן בפחות משני מחזורי שחרור</td>
+</tr>
+</tbody>
+</table>
+<h2 id="section-3">אותות עכשוויים למעקב <a class="heading-anchor" href="#section-3" aria-label="קישור אל אותות עכשוויים למעקב">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>אות</th>
+<th>המשמעות לבנקים</th>
+<th>מקור</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>DORA באכיפה פעילה מאז 17 בינואר 2025</strong></td>
+<td>ממצאים פיקוחיים מהגל הראשון הגיעו ברבעון הרביעי של 2025; ממצאי הגל השני צפויים לאורך המחצית השנייה של 2026</td>
+<td><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554" title="DORA">EUR-Lex ⧉</a></td>
+</tr>
+<tr>
+<td><strong>סיווג CTPP נפתח לאורך 2025-2026</strong></td>
+<td>AWS, Microsoft, Google, Salesforce בתוך הפרימטר או בקרבתו; הסיווג מעניק לרשויות הפיקוח זכויות פיקוח ישיר</td>
+<td><a href="https://www.eba.europa.eu/activities/direct-supervision-and-oversight/digital-operational-resilience-act" title="EBA — פיקוח ישיר ופיקוח על DORA">EBA ⧉</a></td>
+</tr>
+<tr>
+<td><strong>סדרי העדיפויות הפיקוחיים של ECB ל-2026-28 נוקבים במפורש בשיבוש בענן</strong></td>
+<td>תרחישים פיקוחיים מודלים בוחנים את היכולת לספוג השבתה מתמשכת של CTPP מסווג</td>
+<td><a href="https://www.bankingsupervision.europa.eu/framework/priorities/html/ssm.supervisory_priorities202511.en.html" title="סדרי עדיפויות פיקוחיים 2026-28">פיקוח הבנקאות של ECB ⧉</a></td>
+</tr>
+<tr>
+<td><strong>TIBER-EU מותאם לסעיף 26 של DORA</strong></td>
+<td>היקף ה-TLPT מכסה פונקציות קריטיות / חשובות, לרבות שירותים המתארחים בענן</td>
+<td><a href="https://www.ecb.europa.eu/paym/cyber-resilience/tiber-eu/html/index.en.html" title="TIBER-EU">TIBER-EU של ECB ⧉</a></td>
+</tr>
+<tr>
+<td><strong>קווי המנחה למיקור-חוץ של EBA (EBA/GL/2019/02) משתלבים עם סעיף 28 של DORA</strong></td>
+<td>נוכחות מהותית (סעיף 64), הערכת הסבה (סעיף 81), אסטרטגיית יציאה (סעיפים 113-117) — הסעיפים שהמפקחים בוחנים בפועל</td>
+<td><a href="https://www.eba.europa.eu/regulation-and-policy/internal-governance/guidelines-on-outsourcing-arrangements" title="קווי המנחה למיקור-חוץ של EBA">EBA ⧉</a></td>
+</tr>
+<tr>
+<td><strong>טיוטת EU Cloud Services Scheme (EUCS) מתקדמת</strong></td>
+<td>תכנית הסמכה עתידית לענן ריבוני תחת חוק הסייבר האירופי; טיוטה שפרסמה ENISA</td>
+<td><a href="https://www.enisa.europa.eu/publications/eucs-cloud-service-scheme" title="EUCS — תכנית הסייבר לשירותי ענן">ENISA EUCS ⧉</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="section-4">הנדסת פלטפורמה: חמשת היסודות הייעודיים <a class="heading-anchor" href="#section-4" aria-label="קישור אל הנדסת פלטפורמה: חמשת היסודות הייעודיים">#</a></h2>
+<p>בשלות ענן-נייטיב ב-2026 מצטמצמת לחמישה יסודות הנדסיים שמשתלבים זה בזה ומפיקים ראיות פיקוחיות בקצב צנרת הפריסה. חסרון של אחד מהם הוא ממצא שמחכה לקרות.</p>
+<h3 id="1-kubernetes">1. מסלולים סלולים מבוססי Kubernetes <a class="heading-anchor" href="#1-kubernetes" aria-label="קישור אל 1. מסלולים סלולים מבוססי Kubernetes">#</a></h3>
+<p>כל CIF רץ על פלטפורמת Kubernetes מנוהלת — EKS, AKS, GKE או OpenShift על CTPP מסווג, או חלופה מנוהלת על ידי ספק. צוות הפלטפורמה מפעיל דפוס אשכול זהב יחיד עם סטייה מבוקרת: צמתים מתמונת בסיס מתועדת; בידוד namespace-לכל-צוות; פרופיל pod-security-standards-restricted; מדיניות רשת; הזרקת service-mesh (Istio או Linkerd) לאימות ולתצפיתיות בין-שירותים. שירותים חדשים מצטרפים למסלול הסלול דרך תהליך הצטרפות מתבנת שמייצר את רשומת מרשם סעיף 8 כתוצר של פריסה.</p>
+<h3 id="2-backstage">2. פורטל מפתחים בסגנון Backstage <a class="heading-anchor" href="#2-backstage" aria-label="קישור אל 2. פורטל מפתחים בסגנון Backstage">#</a></h3>
+<p>פורטל מפתחים מרכזי — <a href="https://backstage.io/" title="פורטל המפתחים Backstage">Backstage ⧉</a> של Spotify בקוד פתוח הוא יישום הייחוס, לצד חלופות ארגוניות מגוונות — מספק את מערכת הרישום עבור מה רץ והיכן. הקטלוג מציג כל שירות, בעלים, תלות, סיווג קריטיות, runbook ומשמרת on-call. הפורטל משתלב עם מרשם סעיף 8: כל רשומת קטלוג ממופה לרשומת מרשם; רשומות ללא הפניה למרשם גורמות לכישלון CI; רשומות מרשם ללא נוכחות בקטלוג מעוררות התראות מקדימות-מפקחים.</p>
+<h3 id="3-gitops-argocd-flux">3. פריסת GitOps באמצעות ArgoCD או Flux <a class="heading-anchor" href="#3-gitops-argocd-flux" aria-label="קישור אל 3. פריסת GitOps באמצעות ArgoCD או Flux">#</a></h3>
+<p>פריסת ייצור עוברת דרך בקר GitOps — ArgoCD או Flux הם תקן הייצור ב-2026 — שמיישב מצב הצהרתי מנוהל-Git לאשכול הרץ. <code>kubectl apply</code> ידני מושבת; המסלול היחיד לייצור הוא pull request שמוזג. מאגר ה-Git הוא שובל יומן הביקורת; מפקחים השואלים &quot;הראו לי את התצורה של שירות X בתאריך Y&quot; מקבלים תגית Git, לא צילום מסך.</p>
+<h3 id="4-open-policy-agent-admission">4. Open Policy Agent ברמת ה-admission <a class="heading-anchor" href="#4-open-policy-agent-admission" aria-label="קישור אל 4. Open Policy Agent ברמת ה-admission">#</a></h3>
+<p>Open Policy Agent (OPA) יושב בשרשרת ה-admission של האשכול ואוכף את מדיניות הפלטפורמה: עמידה בפרופיל pod-security, מקור התמונה, מגבלות משאבים, נוכחות מדיניות רשת, שכפול מתאים לתיר הקריטיות, מיקום בתת-אזור תחת אילוצי ענן ריבוני. המדיניויות מנוהלות ב-Git ומנוהלות-שינויים לצד תצורות השירותים. פריסות שנדחו מפיקות נימוקים הניתנים לסקירה שמזינים את חבילת הראיות לניהול השינוי.</p>
+<h3 id="5-opentelemetry">5. OpenTelemetry מקצה לקצה <a class="heading-anchor" href="#5-opentelemetry" aria-label="קישור אל 5. OpenTelemetry מקצה לקצה">#</a></h3>
+<p>כל שירות פולט תיעודי OpenTelemetry, מטריקות ויומנים. צוות הפלטפורמה מפעיל צינור תצפיתיות מרכזי — בדרך כלל Tempo או Jaeger לתיעודים, Prometheus למטריקות, Loki או OpenSearch ליומנים — שמשטיח בריאות CIF מקצה לקצה, מיפוי תלויות וקלטים לסיווג אירועים. חלון הסיווג בן 4 השעות של סעיף 18 מתחיל עם הזיהוי; צינור ה-OTel מקצר את המסלול מזיהוי לסיווג להפיכתו לחיפוש בר-שאילתה, לא ישיבת טריאז'.</p>
+<h2 id="section-10">ענן ריבוני כהנדסה, לא כמיתוג <a class="heading-anchor" href="#section-10" aria-label="קישור אל ענן ריבוני כהנדסה, לא כמיתוג">#</a></h2>
+<p>אסטרטגיית ענן ריבוני ב-2026 חייבת להשיב על ארבע שאלות ספציפיות של Schrems II + DORA + מיקור-חוץ של EBA:</p>
+<ol>
+<li><strong>היכן הנתונים מעובדים ומאוחסנים?</strong> מיקום במדינת חברה באיחוד האירופי; תת-אזור לזרימות בקריטיות גבוהה; התחייבויות מקום נתונים בכתב.</li>
+<li><strong>למי יש גישה משפטית לנתונים?</strong> הפעלה על ידי עובדים מקומיים בלבד; בקשות גישה של ממשלות זרות כפופות להליך בית משפט מקומי; תגובה לבקשות גישה חוקיות שנבדקה.</li>
+<li><strong>מהו פרופיל ההסבה?</strong> הערכת הסבה לפי סעיף 81 של EBA/GL/2019/02; ביצוע יציאה שנבדק; ספק חלופי מזוהה וחתום בחוזה (או מתועד מדוע אינו ישים).</li>
+<li><strong>מהו מודל הריבונות הטכני?</strong> מפתחות בשליטת הלקוח; הפרדה קריפטוגרפית; מישור ניהול ריבוני; שרשרת אספקה ניתנת לביקורת.</li>
+</ol>
+<p>חלופות הספקים של 2026 שמתייחסות לשאלות אלה:</p>
+<ul>
+<li><strong>AWS European Sovereign Cloud</strong> (הוכרזה ב-2023, GA צפויה במחצית השנייה של 2026): אזור פיזי המופעל על ידי חברת בת של AWS תושבת האיחוד האירופי; הפעלה ותמיכה תושבות איחוד אירופי; מפתחות בשליטת הלקוח באמצעות דפוס KMS-XKS. בהמתנה ליישור תוכן חוזי של סעיף 28 של DORA ב-2026.</li>
+<li><strong>Microsoft EU Data Boundary</strong> (GA 2024) + <strong>Bleu</strong> (Capgemini + Orange + Microsoft, צרפת בלבד): Data Boundary שומרת נתוני לקוחות באיחוד האירופי באזורי האיחוד; Bleu הוא הענן הריבוני הצרפתי בהתאמה ל-SecNumCloud שמריץ את ה-stack של Microsoft Azure תחת שליטה תפעולית צרפתית.</li>
+<li><strong>שותפויות הריבונות של Google Cloud</strong>: Thales / S3NS בצרפת (מקבילה ל-Bleu); T-Systems בגרמניה.</li>
+<li><strong>Oracle EU Sovereign Cloud</strong> (GA 2023): דפוס דו-אזורי (Frankfurt + Madrid) עם הפעלה תושבת איחוד אירופי; תואם Schrems II באופן נקי.</li>
+<li><strong>ספקים בהתאמה ל-Gaia-X</strong> (OVHcloud, Scaleway, Stackit, Aruba Cloud, IONOS): ספקים אירופיים מולדים עם תיוג Gaia-X; היקף ואקוסיסטם קטנים מאלו של ההיפר-סקיילרים אך ללא חשיפה ל-Foreign Intelligence Surveillance Act.</li>
+</ul>
+<p>ההכרעה האסטרטגית כמעט אף פעם אינה בינארית. בנקים בדרג ראשון בדרך כלל מפעילים תצורת היפר-סקיילר-עם-Data-Boundary לרוב עומסי העבודה, חלופת ענן ריבוני לזרימות רגישות מסווגות (למשל מערכות ניהול תיקי AML / סנקציות המטפלות בנתונים אישיים של תושבי האיחוד), ומסלול הסבה-מתחזק שנבדק שנתית תחת סעיף 28 של DORA.</p>
+<h2 id="section-11">ביצוע יציאה שנבדק <a class="heading-anchor" href="#section-11" aria-label="קישור אל ביצוע יציאה שנבדק">#</a></h2>
+<p>סעיפים 113-117 של <a href="https://www.eba.europa.eu/regulation-and-policy/internal-governance/guidelines-on-outsourcing-arrangements" title="קווי המנחה למיקור-חוץ של EBA">EBA/GL/2019/02 ⧉</a> הם הוראות אסטרטגיית היציאה. הטקסט מפורש לגבי הנדרש: &quot;מוסדות ומוסדות תשלום צריכים להבטיח שהם יכולים לצאת מהסדרי מיקור-חוץ ללא הפרעה בלתי מוצדקת לפעילותם העסקית… אסטרטגיות היציאה צריכות להיות מתועדות ומבדוקות כחלק מהסקירות התקופתיות של הסדרי מיקור-החוץ.&quot;</p>
+<p>הציפייה הפיקוחית ב-2026 היא בדיקת ביצוע יציאה שנתית מקצה-לקצה לכל CIF התלוי ב-CTPP מסווג. תרגילי-שולחן וסקירת מסמכים אינם מספיקים. הבדיקה חייבת להפיק:</p>
+<ul>
+<li><strong>מדידת זמן-לשחזור</strong>: זמן בפועל מהכרזת היציאה ועד שחזור עומס העבודה אצל הספק החלופי, מול יעד ה-RTO הנגזר מ-BIA.</li>
+<li><strong>ראיות לניידות נתונים</strong>: ייצוא נתונים שנבדק מהראשי, מאומת מול מסלול הייבוא של ספק היעד, עם ראיות התאמה.</li>
+<li><strong>שקילות פונקציונלית</strong>: עומס עבודה שנבדק רץ אצל הספק החלופי עם SLOs שווי-ערך.</li>
+<li><strong>ראיות עלות</strong>: עלות ביצוע יציאה מתועדת מול הנחת עלות-השחזור בתכנון מצבי החירום של המוסד.</li>
+</ul>
+<p>הניסיון הראשון לבדיקת יציאה מקצה-לקצה של CIF מגלה בדרך כלל פער של פי 5-10 בין ה-RTO המתועד ל-RTO בפועל. סגירת הפער הזה היא עבודה הנדסית שאורכת חודשים. בנקים שמגלים זאת במהלך ביקורת פיקוחית, ולא במחזור הבדיקה השנתי שלהם, ניצבים בפני מחזור ממצאים ברבעון השלישי שניתן היה להימנע ממנו.</p>
+<h2 id="rto-rpo-cif">יעדי RTO / RPO ממלאי ה-CIF <a class="heading-anchor" href="#rto-rpo-cif" aria-label="קישור אל יעדי RTO / RPO ממלאי ה-CIF">#</a></h2>
+<p>כל פונקציה קריטית או חשובה ממופה לסיווג תיר הנגזר מניתוח ההשפעה העסקית של המוסד. התיר מניע את יעדי ה-RTO וה-RPO שצוות הנדסת הפלטפורמה מתחייב לספק.</p>
+<table>
+<thead>
+<tr>
+<th>תיר</th>
+<th>דוגמאות</th>
+<th>RTO</th>
+<th>RPO</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Tier 1 (קריטי משימתית)</strong></td>
+<td>קישוריות RTGS (CHAPS / T2 / Fedwire), הרשאת תשלום קמעונאי, אימות לקוחות לערוצים דיגיטליים</td>
+<td>2 שעות</td>
+<td>15 דקות</td>
+</tr>
+<tr>
+<td><strong>Tier 2 (קריטי)</strong></td>
+<td>סינון AML / סנקציות, צינורות זיהוי הונאה, הרשאת ATM, עיבוד תשלומים אצוותי</td>
+<td>4 שעות</td>
+<td>שעה</td>
+</tr>
+<tr>
+<td><strong>Tier 3 (חשוב)</strong></td>
+<td>דיווח והגשה רגולטורית, מאגרי ידע פונים-ללקוח, פלטפורמות שיתוף פעולה פנימיות</td>
+<td>24 שעות</td>
+<td>4 שעות</td>
+</tr>
+<tr>
+<td><strong>Tier 4 (לא-קריטי)</strong></td>
+<td>מערכות HR פנימיות, כלי שיווק, דיווח שאינו פונה-ללקוח</td>
+<td>72 שעות</td>
+<td>24 שעות</td>
+</tr>
+</tbody>
+</table>
+<p>המספרים האלה ממחישים — ה-BIA של המוסד מפיק שלו. תוצר הנדסת הפלטפורמה הוא יכולת שנבדקה ברגרסיה לעמוד ביעדים הנגזרים מ-BIA, מוכחת באמצעות בדיקות DR אוטומטיות לכל שירות ומאומתת באמצעות בדיקת ביצוע היציאה השנתית עבור CIFs התלויים ב-CTPP.</p>
+<h2 id="section-13">מה המשמעות לפי סוג הבנק <a class="heading-anchor" href="#section-13" aria-label="קישור אל מה המשמעות לפי סוג הבנק">#</a></h2>
+<h3 id="section-14">בנקים חשובים מערכתית גלובלית <a class="heading-anchor" href="#section-14" aria-label="קישור אל בנקים חשובים מערכתית גלובלית">#</a></h3>
+<p>הבעיה הקשה היא קנה מידה לרוחב קווי העסק: אלפי שירותים, מאות CIFs, חשיפות מרובות ל-CTPPs מסווגים על פני מוצרים, תחומי שיפוט ופרופילי חוסן. ההשקעה היא ביכולת הנדסת הפלטפורמה המרכזית — מסלולים סלולים של Kubernetes, פורטל Backstage, GitOps, OPA, OTel — שמפיקה את התאמת מרשם סעיף 8, מפת ריכוז ה-CTPP ויכולת ביצוע היציאה לכל CIF, ללא בנייה ייחודית לקו עסקי.</p>
+<h3 id="section-15">בנקים אוניברסליים ובינוניים <a class="heading-anchor" href="#section-15" aria-label="קישור אל בנקים אוניברסליים ובינוניים">#</a></h3>
+<p>ההשקעה בהנדסת פלטפורמה מוצדקת בדרג הזה אך ההיקף מוגבל: בחרו את שניים-שלושה ה-CIFs בעלי הקריטיות הגבוהה ביותר, בנו סביבם את דפוס המסלול הסלול, וקבלו שמערכת המורשת ממשיכה תחת הבקרות הקיימות בטווח הבינוני. המיצוב הפיקוחי חשוב יותר מרוחב הפלטפורמה — יכולת להוכיח שלמות מרשם סעיף 8 של DORA ויציאה שנבדקה עבור שלושת ה-CIFs המובילים מכסה את עיקרי דאגות המפקח.</p>
+<h3 id="section-16">בנקים אזוריים וקטנים <a class="heading-anchor" href="#section-16" aria-label="קישור אל בנקים אזוריים וקטנים">#</a></h3>
+<p>בחירת ספק במקום בנייה פנימית. בחרו ספק פלטפורמת בנקאות שהארכיטקטורה שלו ב-Kubernetes-native מתועדת, ששילוב מרשם סעיף 8 בו מובנה ושהתחייבויות התוכן החוזי שלו לפי סעיף 28 של DORA ברורות. יכולת ההנדסה הפנימית סובבת תצורה, ניטור ותגובה לאירועים — לא בניית פלטפורמה.</p>
+<h3 id="psps-saas">פינטקים, PSPs וספקי SaaS המשרתים בנקים <a class="heading-anchor" href="#psps-saas" aria-label="קישור אל פינטקים, PSPs וספקי SaaS המשרתים בנקים">#</a></h3>
+<p>שאלת המוצר עבור ספקים שמוכרים לבנקים אירופיים ב-2026 היא האם הפלטפורמה מפיקה את רשומות מרשם סעיף 8 ואת התוכן החוזי לפי סעיף 28 של DORA שתפקיד הציות של הבנק זקוק להם. ספקים עם פלטים מובנים זוכים בעסקאות ארגוניות; ספקים עם תבניות PDF מפסידים למתחרים עם JSON מובנה.</p>
+<h2 id="section-18">מסקנה <a class="heading-anchor" href="#section-18" aria-label="קישור אל מסקנה">#</a></h2>
+<p>חוסן הענן תחת DORA נמצא בשלב הביקורת. החלטות הנדסת הפלטפורמה שהתקבלו במהלך 2024-2025 הן מה שמחזור הפיקוח של 2026 בוחן. המוסדות שייראו אמינים בעיני ECB ו-EBA ב-2026-2028 הם אלה שמפעילים מסלולים סלולים של Kubernetes עם פורטלים בסגנון Backstage ופריסת GitOps תחת admission של Open Policy Agent עם OpenTelemetry מקצה לקצה — מפיקים ראיות למרשם סעיף 8 כתוצר של פריסה וראיות ביצוע יציאה שנבדקו כמחזור שנתי, לא כתגובה לבקשה פיקוחית.</p>
+<p>המוסדות שלא ביצעו את אותן השקעות יגלו אם צוות הציות בקו השני שלהם יכול לספוג את הסבב הראשון של ממצאי הפיקוח לפני שמגיע הסבב השני.</p>
+<p>מדדו את הפלטפורמה כמו שמודדים כל תכנית תפעולית: כיסוי מסלול סלול, שיעור התאמת מרשם, ציון ריכוז CTPP, זמן יציאה שנבדק מול יעד RTO, זמן ממוצע לסיווג לפי סעיף 18, שיעור סגירת TLPT. ראיות בקצב הצנרת; חבילות תיעוד רק כשהמפקח מבקש אחת.</p>
+<h2 id="section-19">שאלות נפוצות <a class="heading-anchor" href="#section-19" aria-label="קישור אל שאלות נפוצות">#</a></h2>
+<p><strong>האם חוסן הענן תחת DORA עדיין בשלב ההיערכות ב-2026?</strong></p>
+<p>לא. DORA באכיפה פעילה מאז 17 בינואר 2025. משטר הסיווג של CTPP תחת סעיפים 28-44 נפתח לאורך 2025-2026. ממצאי בחינות של ECB על ניהול סיכוני ICT לפי סעיף 6 ועל שלמות מרשם סעיף 8 הגיעו בכמה מוסדות בדרג ראשון ברבעון הרביעי של 2025. השאלה הפיקוחית של 2026 היא ראיות בחינה ספציפיות למוסד, לא היערכות רגולטורית.</p>
+<p><strong>אילו ספקי ענן מסווגים כ-CTPPs?</strong></p>
+<p>רשויות הפיקוח מפרסמות החלטות סיווג באתריהן. המוסדות שבתוך הפרימטר או בקרבתו ב-2026 כוללים את AWS, Microsoft (Azure), Google (GCP), Salesforce ומספר מצומצם של אחרים, בהתאם לנתח השוק בשירותים פיננסיים לפי מדינת חברה. הבנקים המפוקחים על אותם ספקים ניצבים בפני ציפיות פיקוחיות מקבילות באשר לאופן ניהול אותה תלות.</p>
+<p><strong>האם ענן ריבוני מבטל את הצורך בתוכן החוזי לפי סעיף 28 של DORA?</strong></p>
+<p>לא. ענן ריבוני מתייחס לממד של Schrems II + מקום נתונים; התוכן החוזי לפי סעיף 28 של DORA הוא חובה נפרדת שחלה ללא קשר למקום שבו הנתונים נמצאים. החוזה של ספק הענן הריבוני עדיין חייב לכסות נגישות נתונים, אבטחה, מקום, זכויות ביקורת, אסטרטגיות יציאה והמשכיות לפי סעיף 28.</p>
+<p><strong>מהו התוצר ההנדסי שמדגים את חוסן הענן תחת DORA?</strong></p>
+<p>חמישה יסודות הנדסת פלטפורמה משתלבים: מסלולים סלולים של Kubernetes (אשכול מנוהל עם סטייה בשליטת מדיניות), פורטל מפתחים בסגנון Backstage (קטלוג שמתואם למרשם סעיף 8), פריסת GitOps (ArgoCD או Flux), Open Policy Agent ברמת ה-admission, OpenTelemetry מקצה לקצה. ראיות בקצב הצנרת ולא ברגע הבחינה.</p>
+<p><strong>באיזו תדירות יש לבדוק ביצוע יציאה?</strong></p>
+<p>בדיקת ביצוע יציאה שנתית מקצה-לקצה לכל CIF התלוי ב-CTPP מסווג. תרגילי-שולחן וסקירת מסמכים אינם מספיקים. הבדיקה חייבת להפיק זמן-לשחזור, ראיות לניידות נתונים, שקילות פונקציונלית וראיות עלות — מדודים מול יעדי ה-RTO וה-RPO הנגזרים מ-BIA.</p>
+<h2 id="section-20">הפניות <a class="heading-anchor" href="#section-20" aria-label="קישור אל הפניות">#</a></h2>
+<ul>
+<li>האיחוד האירופי, (2022). <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554" title="DORA">תקנה (EU) 2022/2554 — חוק החוסן התפעולי הדיגיטלי (DORA) ⧉</a>.</li>
+<li>רשות הבנקאות האירופית, (2019). <a href="https://www.eba.europa.eu/regulation-and-policy/internal-governance/guidelines-on-outsourcing-arrangements" title="קווי המנחה למיקור-חוץ של EBA">EBA/GL/2019/02 — קווי המנחה להסדרי מיקור-חוץ ⧉</a>.</li>
+<li>רשות הבנקאות האירופית, (2026). <a href="https://www.eba.europa.eu/activities/direct-supervision-and-oversight/digital-operational-resilience-act" title="EBA — פיקוח ישיר ופיקוח על DORA">חוק החוסן התפעולי הדיגיטלי ⧉</a>.</li>
+<li>רשויות הפיקוח האירופיות, (2024). <a href="https://www.eba.europa.eu/sites/default/files/2024-01/0e155f7a-9b09-4dba-89cb-37f7e8e1c540/JC%202023%2086%20-%20Final%20report%20on%20draft%20ITS%20on%20Register%20of%20information%20under%20DORA.pdf" title="ESAs ITS">דוח סופי על ה-ITS למרשם המידע תחת DORA ⧉</a>.</li>
+<li>פיקוח הבנקאות של ECB, (2025). <a href="https://www.bankingsupervision.europa.eu/framework/priorities/html/ssm.supervisory_priorities202511.en.html" title="סדרי עדיפויות של ECB 2026-28">סדרי עדיפויות פיקוחיים 2026-28 ⧉</a>.</li>
+<li>הבנק המרכזי האירופי, (2024). <a href="https://www.ecb.europa.eu/paym/cyber-resilience/tiber-eu/html/index.en.html" title="TIBER-EU">מסגרת TIBER-EU ⧉</a>.</li>
+<li>ENISA, (2024). <a href="https://www.enisa.europa.eu/publications/eucs-cloud-service-scheme" title="EUCS">תכנית הסייבר של האיחוד האירופי לשירותי ענן (EUCS) ⧉</a>.</li>
+<li>Spotify, (2020-2024). <a href="https://backstage.io/" title="Backstage">פורטל המפתחים Backstage ⧉</a>.</li>
+<li>Cloud Native Computing Foundation, (2018). <a href="https://www.openpolicyagent.org/" title="Open Policy Agent">Open Policy Agent (OPA) ⧉</a>.</li>
+<li>Cloud Native Computing Foundation, (2019). <a href="https://opentelemetry.io/" title="OpenTelemetry">OpenTelemetry ⧉</a>.</li>
+</ul>
+<!-- enrich-start -->
+
+<p class="post-reviewed">נסקר לאחרונה <time datetime="2026-06-05">2026-06-05</time>.</p>
+<!-- enrich-end -->
+<aside class="author-card" aria-label="אודות הכותב"><img alt="דיוקן של Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=85" width="64" height="64" loading="lazy" decoding="async"  fetchpriority="high"><span class="author-card-body"><strong class="author-card-name"><a href="/he/aleynu/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">מומחה טכנולוגיות בנקאות בכיר הכותב על AI יישומי, מעבר ל-ISO 20022, קריפטוגרפיה פוסט-קוונטית עבור שירותים פיננסיים, וטרנספורמציה מבנית של תשלומי סיטונאות.</span><span class="author-credentials">מעל 20 שנות ניסיון ב-HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA ו-Virgin Group. <a href="/he/aleynu/index.html">פרופיל מלא</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">נסקר לאחרונה <time datetime="2026-06-07">2026-06-07</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">קריאה נוספת</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/he/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026" class="related-media" aria-label="מדד סוכני AI לבנקים ב-2026: מדידת אוטונומיה, ממשל, יכולת ביקורת והשפעה עסקית" tabindex="-1"><img alt="The Agentic AI Index for Banks 2026 index diagram for banks and financial institutions in 2026" src="https://cloudcdn.pro/api/transform?url=/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="ai-2026"><a href="https://sebastienrousseau.com/he/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026">מדד סוכני AI לבנקים ב-2026: מדידת אוטונומיה, ממשל, יכולת ביקורת והשפעה עסקית</a> <a class="heading-anchor" href="#ai-2026" aria-label="קישור אל מדד סוכני AI לבנקים ב-2026: מדידת אוטונומיה, ממשל, יכולת ביקורת והשפעה עסקית">#</a></h3><p><time datetime="2026-06-03">2026-06-03</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/he/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026" class="related-media" aria-label="DORA, חוק הבינה המלאכותית וריבונות נתונים: ערימת הציות של 2026 לבנקים" tabindex="-1"><img alt="Compliance stack diagram showing DORA resilience, EU AI Act transparency, data sovereignty, cloud concentration risk, audit logs, model governance, and third-party providers" src="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="dora-2026"><a href="https://sebastienrousseau.com/he/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026">DORA, חוק הבינה המלאכותית וריבונות נתונים: ערימת הציות של 2026 לבנקים</a> <a class="heading-anchor" href="#dora-2026" aria-label="קישור אל DORA, חוק הבינה המלאכותית וריבונות נתונים: ערימת הציות של 2026 לבנקים">#</a></h3><p><time datetime="2026-05-28">2026-05-28</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/he/2026-05-20-cloud-native-banking-financial-institutions-2026" class="related-media" aria-label="בנקאות cloud native ב-2026: Kubernetes, DORA, ריבונות וסוף הפיצול בין VM לקונטיינר" tabindex="-1"><img alt="Cloud-native banking architecture for 2026 showing Kubernetes, VM coexistence, DORA resilience, sovereign cloud, observability, and bank platform engineering" src="https://cloudcdn.pro/api/transform?url=/stocks/images/freeman-zhou-oV9hp8wXkPE.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="cloud-native-2026-kubernetes-dora-vm"><a href="https://sebastienrousseau.com/he/2026-05-20-cloud-native-banking-financial-institutions-2026">בנקאות cloud native ב-2026: Kubernetes, DORA, ריבונות וסוף הפיצול בין VM לקונטיינר</a> <a class="heading-anchor" href="#cloud-native-2026-kubernetes-dora-vm" aria-label="קישור אל בנקאות cloud native ב-2026: Kubernetes, DORA, ריבונות וסוף הפיצול בין VM לקונטיינר">#</a></h3><p><time datetime="2026-05-20">2026-05-20</time></p></footer></article>
+</div>
+</aside><aside class="article-sources" aria-labelledby="sources-heading"><h2 id="sources-heading" class="article-sources-heading">מקורות והפניות</h2><ol class="article-sources-list"><li><a href="https://www.ecb.europa.eu/paym/cyber-resilience/tiber-eu/html/index.en.html" rel="external noopener nofollow"><span class="source-host">www.ecb.europa.eu</span><span class="source-path">/paym/cyber-resilience/tiber-eu/html/index.en.html</span></a></li></ol></aside><nav class="post-pagination" aria-label="מיון מאמרים"><a class="post-pagination-prev" href="/he/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/"><span class="post-pagination-label">הקודם</span><span class="post-pagination-title">The Quantum-Safe Banking Index in 2026: Post-Quantum Cryptography, QKD, Crypto-Agility, and Harvest-Now-Decrypt-Later Risk</span></a><a class="post-pagination-next" href="/he/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/"><span class="post-pagination-label">הבא</span><span class="post-pagination-title">The Wholesale Payments Index in 2026: ISO 20022, Tokenised Deposits, Real-Time Rails, and Cross-Border Settlement</span></a></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/he/aleynu/index.html">אודות</a></li>
+              <li><a href="/he/tsor-kesher/index.html">צור קשר</a></li>
+              <li><a href="/he/noseh-im-static-site-generator/index.html">נוצר עם Static Site Generator</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">כתיבה</h2>
+            <ul>
+              <li><a href="/he/ma-amarim/index.html">מאמרים</a></li>
+              <li><a href="/he/pirsumim/index.html">פרסומים</a></li>
+              <li><a href="/he/tagim/index.html">תגיות</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">עבודה</h2>
+            <ul>
+              <li><a href="/he/proyektim/index.html">פרויקטים</a></li>
+              <li><a href="/he/play-listim/index.html">פלייליסטים</a></li>
+              <li><a href="/he/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">צור קשר</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="/contact/" method="get" aria-label="הרשמה לניוזלטר">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — פתקי מחקר על תשלומים, AI וקריפטוגרפיה פוסט-קוונטית. ללא ספאם.</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="atah@bank.co.il" />
+            <input type="hidden" name="subject" value="newsletter" />
+            <input type="hidden" name="message" value="Please subscribe me to the Banking On Quantum newsletter." />
+            <button type="submit">הרשמה</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved.</span>
+          <div class="social" aria-label="קישורי רשתות חברתיות">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau ב-Twitter / X"><img src="https://cloudcdn.pro/common/images/buttons/x-black.svg" alt="Sebastien Rousseau ב-Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau ב-LinkedIn"><img src="https://cloudcdn.pro/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau ב-LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau ב-Medium"><img src="https://cloudcdn.pro/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau ב-Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau ב-YouTube"><img src="https://cloudcdn.pro/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau ב-YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/he/nigishut/index.html">נגישות</a> ·
+            <a href="/he/pratiyut/index.html">פרטיות</a> ·
+            <a href="/he/tnaim/index.html">תנאים</a> ·
+            <a href="https://www.thegreenwebfoundation.org/green-web-check/?url=sebastienrousseau.com" target="_blank" rel="noopener noreferrer" title="Hosted on 100% renewable energy (Cloudflare) — estimate via Sustainable Web Design v4 model">Carbon: ~0.04 g/visit · green-hosted</a> ·
+            <a href="https://github.com/sebastienrousseau/sebastienrousseau.github.io/blob/main/project-docs/sigstore.md" target="_blank" rel="noopener noreferrer" title="Every dated article is signed with Sigstore — verify the bytes match what was published">Verify signatures</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","identifier":{"@type":"PropertyValue","propertyID":"ORCID","value":"0009-0005-1434-284X","url":"https://orcid.org/0009-0005-1434-284X"},"worksFor":{"@type":"Organization","@id":"https://www.hsbc.com/#organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal","url":"https://www.paypal.com/"},{"@type":"Organization","name":"Barclays","url":"https://www.barclays.com/"},{"@type":"Organization","name":"Shazam Entertainment","url":"https://www.shazam.com/"},{"@type":"Organization","name":"AKQA","url":"https://www.akqa.com/"},{"@type":"Organization","name":"Virgin Group","url":"https://www.virgin.com/"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"hasCredential":[{"@type":"EducationalOccupationalCredential","credentialCategory":"professional experience","name":"20+ years across Tier-1 banks and global payments infrastructure","recognizedBy":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"}},{"@type":"EducationalOccupationalCredential","credentialCategory":"domain expertise","name":"ISO 20022 migration and wholesale payments architecture","recognizedBy":{"@type":"Organization","name":"SWIFT","url":"https://www.swift.com/"}},{"@type":"EducationalOccupationalCredential","credentialCategory":"domain expertise","name":"Post-Quantum Cryptography for financial services","recognizedBy":{"@type":"Organization","name":"NIST Post-Quantum Cryptography Project","url":"https://csrc.nist.gov/projects/post-quantum-cryptography"}}],"knowsAbout":[{"@type":"DefinedTerm","name":"Post-Quantum Cryptography","sameAs":"https://en.wikipedia.org/wiki/Post-quantum_cryptography"},{"@type":"DefinedTerm","name":"ML-KEM (FIPS 203)","sameAs":"https://csrc.nist.gov/pubs/fips/203/final"},{"@type":"DefinedTerm","name":"ML-DSA (FIPS 204)","sameAs":"https://csrc.nist.gov/pubs/fips/204/final"},{"@type":"DefinedTerm","name":"ISO 20022","sameAs":"https://en.wikipedia.org/wiki/ISO_20022"},{"@type":"DefinedTerm","name":"SWIFT gpi","sameAs":"https://www.swift.com/our-solutions/swift-gpi"},{"@type":"DefinedTerm","name":"SEPA Instant Payments","sameAs":"https://www.ecb.europa.eu/paym/integration/retail/instant_payments/html/index.en.html"},{"@type":"DefinedTerm","name":"FedNow Service","sameAs":"https://www.federalreserve.gov/paymentsystems/fednow_about.htm"},{"@type":"DefinedTerm","name":"Real-Time Payments (RTP)","sameAs":"https://www.theclearinghouse.org/payment-systems/rtp"},{"@type":"DefinedTerm","name":"Cross-border payments","sameAs":"https://en.wikipedia.org/wiki/Cross-border_payments"},{"@type":"DefinedTerm","name":"Wholesale banking","sameAs":"https://en.wikipedia.org/wiki/Wholesale_banking"},{"@type":"DefinedTerm","name":"Applied artificial intelligence in banking","sameAs":"https://en.wikipedia.org/wiki/Applications_of_artificial_intelligence"},{"@type":"DefinedTerm","name":"Generative artificial intelligence","sameAs":"https://en.wikipedia.org/wiki/Generative_artificial_intelligence"}],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://orcid.org/0009-0005-1434-284X","https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":["Organization","Brand"],"@id":"https://sebastienrousseau.com/#organization","name":"Sebastien Rousseau","alternateName":"Banking on Quantum","url":"https://sebastienrousseau.com/","logo":{"@type":"ImageObject","@id":"https://sebastienrousseau.com/#logo","url":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","width":"512","height":"512","caption":"Sebastien Rousseau"},"founder":{"@id":"https://sebastienrousseau.com/#person"},"editorialPolicy":"https://sebastienrousseau.com/editorial/","correctionsPolicy":"https://sebastienrousseau.com/editorial/#corrections","ethicsPolicy":"https://sebastienrousseau.com/editorial/","diversityPolicy":"https://sebastienrousseau.com/editorial/","sameAs":["https://github.com/sebastienrousseau","https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#organization"},"author":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"he"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"he"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":2828,"headline":"מדד הבנקאות ענן-נייטיב ב-2026: DORA, הנדסת פלטפורמה, ענן ריבוני וחוסן תפעולי","description":"מדד בנקאות ענן-נייטיב לשנת 2026 למדידת היערכות DORA, בשלות הנדסת פלטפורמה, סיכון ריכוז ענן, ראיות יציאה וחוסן תפעולי במוסדות פיננסיים.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/api/transform?url=/stocks/images/quang-nguyen-vinh-2649403.webp&w=1600&format=webp&q=85","width":"100vw","height":"100vh","caption":"דפוס לוח-מעגלים שמתפרק לקו רקיע עירוני — האוצר החזותי שנבחר לבנקאות ענן-נייטיב: יסודות של הנדסת פלטפורמה הנתפרים אל תוך המארג התפעולי של הבנק."},"url":"https://sebastienrousseau.com/he/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/","datePublished":"2026-06-05T06:06:06+00:00","dateModified":"2026-06-05","inLanguage":"he","keywords":"בנקאות ענן-נייטיב 2026, DORA לבנקים, סיכון ריכוז ענן, הנדסת פלטפורמה לבנקים, סיכון צד-שלישי ICT, אסטרטגיית יציאה מהענן, ענן ריבוני","articleSection":"Technology","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/he/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"he"},"citation":[{"@type":"CreativeWork","url":"https://www.ecb.europa.eu/paym/cyber-resilience/tiber-eu/html/index.en.html"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/he/"},{"@type":"ListItem","position":3,"name":"מדד הבנקאות ענן-נייטיב ב-2026: DORA, הנדסת פלטפורמה, ענן ריבוני וחוסן תפעולי","item":"https://sebastienrousseau.com/he/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/"}]}]}</script>
+<script src="/main.c9d8dc8d.js" defer integrity="sha256-G3RtagQVu1xMUTaa18I4L7J+vKPyjk2ZQG182kd2kow= sha256-NzL6b2FQD17U0Taqx1C1kOArNHU82qw6DUW7wiG7Bp0=" crossorigin="anonymous"></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="חיפוש">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>חיפוש</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="חיפוש">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="חיפוש בתיעוד..." autocomplete="off" aria-label="חיפוש"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> סגירה</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> ניווט</span><span><kbd>Enter</kbd> פתיחה</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" integrity="sha256-Y0txeCfdk+GUctTYMAxMbFCB2qs1cPm8JSIX3WRS9cs= sha256-5Ca5zk/7tsavsCDhg6M1m4feBn+L4YnJ7iavKawynII=" crossorigin="anonymous"></script>
+</div>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"מדד הבנקאות ענן-נייטיב ב-2026: DORA, הנדסת פלטפורמה, ענן ריבוני וחוסן תפעולי","url":"https://sebastienrousseau.com/he/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/","inLanguage":"he-IL","isAccessibleForFree":true,"author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#organization"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/he/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/"},"keywords":"בנקאות ענן-נייטיב 2026, DORA לבנקים, סיכון ריכוז ענן, הנדסת פלטפורמה לבנקים, סיכון צד-שלישי ICT, אסטרטגיית יציאה מהענן, ענן ריבוני","proficiencyLevel":"Expert"}</script></body>
+</html>

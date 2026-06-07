@@ -1,12 +1,14 @@
 {
-  "locale": "ja_JP",
-  "keywords": "Alien Studio, AI 写真, 拡散モデル, Stable Diffusion, Midjourney, AI アート, クリエイティブ AI",
+  "title": "Alien Studio:AI 写真でアートを革新",
   "date": "January 15, 2024",
+  "subtitle": "拡散モデルが画像生成を変える",
   "description": "Alien Studio が AI 駆動の写真とアートで創造的な表現をどのように再構築しているか。",
   "banner": "https://cloudcdn.pro/stocks/images/aron-visuals-bN5XdU-bap4-unsplash.webp",
-  "title": "Alien Studio:AI 写真でアートを革新",
-  "subtitle": "拡散モデルが画像生成を変える",
-  "banner_alt": "AI が生成した抽象的なアート",
+  "keywords": "Alien Studio, AI 写真, 拡散モデル, Stable Diffusion, Midjourney, AI アート, クリエイティブ AI",
+  "reading_time": 1,
+  "language": "ja-JP",
+  "word_count": 55,
+  "locale": "ja_JP",
   "last_reviewed": "2026-05-11",
-  "language": "ja-JP"
+  "banner_alt": "AI が生成した抽象的なアート"
 }

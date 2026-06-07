@@ -411,12 +411,45 @@ document.addEventListener("click", function (event) {
 (async function mermaidInit() {
     "use strict";
     if (!document.querySelector("pre.mermaid")) return;
-    var theme = document.documentElement.getAttribute("data-theme") === "dark" ? "dark" : "default";
+    // 'neutral' renders black-on-white with no chromatic accents, so
+    // diagrams stay legible in both light and dark modes without having
+    // to swap themes on data-theme change. Diagrams reflow correctly
+    // when the user toggles the colour scheme.
+    //
+    // `startOnLoad: false` + explicit `run()` is required because we
+    // dynamic-import mermaid AFTER DOMContentLoaded has already fired
+    // (the parent script tag is `defer`, and the import resolves on a
+    // microtask further down). With `startOnLoad: true` Mermaid would
+    // hook DOMContentLoaded too late and never auto-render — leaving
+    // the raw `flowchart LR` text in the page. Calling run() ourselves
+    // closes that timing gap.
     try {
         var mod = await import(
             "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"
         );
-        mod.default.initialize({ startOnLoad: true, securityLevel: "strict", theme: theme });
+        // securityLevel:"antiscript" lets `<br/>` in node labels render as
+        // line breaks (htmlLabels:true) while still stripping <script>
+        // tags via DOMPurify. "strict" would block htmlLabels entirely and
+        // collapse multi-line labels into one cramped row — the symptom
+        // observed on the quantum-safe article's PQC migration flowchart.
+        // theme:"base" + themeVariables gives us monochrome defaults but
+        // still honours per-node `style A fill:…` overrides in the source.
+        mod.default.initialize({
+            startOnLoad: false,
+            securityLevel: "antiscript",
+            theme: "base",
+            themeVariables: {
+                fontFamily: "var(--type-mono), ui-monospace, monospace",
+                fontSize: "14px",
+                primaryColor: "#ffffff",
+                primaryTextColor: "#111111",
+                primaryBorderColor: "#3a3a3e",
+                lineColor: "#3a3a3e",
+                textColor: "#111111",
+            },
+            flowchart: { htmlLabels: true, useMaxWidth: true, curve: "basis" },
+        });
+        await mod.default.run({ querySelector: "pre.mermaid" });
     } catch (err) {
         console.warn("mermaid load failed", err);
     }

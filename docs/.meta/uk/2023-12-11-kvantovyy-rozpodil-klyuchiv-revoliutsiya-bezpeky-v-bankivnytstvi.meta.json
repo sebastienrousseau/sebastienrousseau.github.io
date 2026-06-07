@@ -1,11 +1,13 @@
 {
-  "locale": "uk_UA",
+  "banner_alt": "HSBC з доків",
   "banner": "https://cloudcdn.pro/stocks/images/hsbc-from-the-docks.webp",
+  "language": "uk-UA",
+  "description": "Оскільки квантові комп'ютери загрожують традиційним методам шифрування, Квантовий розподіл ключів (QKD) стає революційним рішенням, що пропонує безпрецедентний рівень захисту.",
   "keywords": "Квантовий розподіл ключів (QKD), Квантова безпека, Banking, Фінансова індустрія, Цифрові фінанси, Кібербезпека, Квантові обчислення, HSBC, Quantum Protection Trial, Фінансові транзакції",
   "date": "Dec 11, 2023",
+  "locale": "uk_UA",
+  "word_count": 414,
   "subtitle": "Квантовий розподіл ключів (QKD) для захисту банківських операцій на фінансовому рівні.",
-  "banner_alt": "HSBC з доків",
-  "description": "Оскільки квантові комп'ютери загрожують традиційним методам шифрування, Квантовий розподіл ключів (QKD) стає революційним рішенням, що пропонує безпрецедентний рівень захисту.",
-  "language": "uk-UA",
-  "title": "[UK DRAFT] Quantum Key Distribution Revolutionising Security in Banking"
+  "title": "[UK DRAFT] Quantum Key Distribution Revolutionising Security in Banking",
+  "reading_time": 2
 }

@@ -32,6 +32,7 @@ Usage:
 
 Exit codes: 0 clean, 1 defects found.
 """
+
 from __future__ import annotations
 
 import sys as _sys  # path bootstrap — scripts reorg (scripts/lib/ on sys.path)
@@ -80,9 +81,17 @@ _BANNED_FILLER = (
 
 # Required frontmatter keys for a publishable article
 _REQUIRED_FM = (
-    "title", "subtitle", "description", "banner", "banner_alt",
-    "tags", "excerpt", "date", "keywords",
-    "twitter_title", "twitter_description",
+    "title",
+    "subtitle",
+    "description",
+    "banner",
+    "banner_alt",
+    "tags",
+    "excerpt",
+    "date",
+    "keywords",
+    "twitter_title",
+    "twitter_description",
 )
 
 # Frontmatter parser is imported from _core — single canonical impl.
@@ -94,11 +103,7 @@ _REQUIRED_FM = (
 
 
 def check_frontmatter(fm: dict[str, str]) -> list[str]:
-    return [
-        f"frontmatter: missing or empty `{k}`"
-        for k in _REQUIRED_FM
-        if not fm.get(k)
-    ]
+    return [f"frontmatter: missing or empty `{k}`" for k in _REQUIRED_FM if not fm.get(k)]
 
 
 def check_banner_reachable(banner: str, timeout: float = 10.0) -> list[str]:
@@ -132,29 +137,32 @@ def check_filler(body: str) -> list[str]:
 def check_structure(body: str) -> list[str]:
     """Hard structural requirements for a publishable article."""
     defects: list[str] = []
-    if "<!-- lead-start -->" not in body:
+    # Accept either the canonical marker post_enrich emits or the
+    # `: manual` opt-out variant a hand-curated lead uses to instruct
+    # post_enrich to leave it alone.
+    if "<!-- lead-start -->" not in body and "<!-- lead-start: manual -->" not in body:
         defects.append("structure: missing <!-- lead-start --> lead aside")
-    if not re.search(r'>\s*\*\*Executive Summary', body):
+    if not re.search(r">\s*\*\*Executive Summary", body):
         defects.append("structure: missing > **Executive Summary blockquote")
-    h2s = re.findall(r'^## ', body, re.MULTILINE)
+    h2s = re.findall(r"^## ", body, re.MULTILINE)
     if len(h2s) < 3:
         defects.append(f"structure: only {len(h2s)} H2 section(s), need ≥3")
     citations = re.findall(r'\[[^\]]+\]\(https?://[^)]+ "[^"]+"\)', body)
     if not citations:
         defects.append("structure: no citation links with title attribute")
-    if not re.search(r'^## (?:Frequently Asked Questions|FAQ)', body, re.MULTILINE):
+    if not re.search(r"^## (?:Frequently Asked Questions|FAQ)", body, re.MULTILINE):
         defects.append("structure: missing FAQ section")
-    if not re.search(r'^## References', body, re.MULTILINE):
+    if not re.search(r"^## References", body, re.MULTILINE):
         defects.append("structure: missing References section")
     return defects
 
 
 def check_markdown_discipline(body: str) -> list[str]:
     defects: list[str] = []
-    h1_count = len(re.findall(r'^# ', body, re.MULTILINE))
+    h1_count = len(re.findall(r"^# ", body, re.MULTILINE))
     if h1_count != 1:
         defects.append(f"markdown: H1 appears {h1_count}× — should be exactly 1")
-    if re.search(r'\]\(\]', body):
+    if re.search(r"\]\(\]", body):
         defects.append("markdown: broken citation link `](]` detected")
     return defects
 
@@ -162,7 +170,7 @@ def check_markdown_discipline(body: str) -> list[str]:
 def check_date_consistency(path: Path, fm: dict[str, str]) -> list[str]:
     """Filename date should match today (UTC) and frontmatter date."""
     defects: list[str] = []
-    m = re.match(r'^(\d{4}-\d{2}-\d{2})-', path.stem)
+    m = re.match(r"^(\d{4}-\d{2}-\d{2})-", path.stem)
     if not m:
         return [f"date: filename {path.name} does not begin with YYYY-MM-DD"]
     file_date = m.group(1)
@@ -180,13 +188,12 @@ def check_date_consistency(path: Path, fm: dict[str, str]) -> list[str]:
             fm_iso = dt.strftime("%Y-%m-%d")
             if fm_iso != file_date:
                 defects.append(
-                    f"date: frontmatter `date: \"{fm_date}\"` → "
+                    f'date: frontmatter `date: "{fm_date}"` → '
                     f"{fm_iso}, but filename says {file_date}"
                 )
         except ValueError:
             defects.append(
-                f"date: frontmatter `date: \"{fm_date}\"` is not in "
-                f'"Month DD, YYYY" form'
+                f'date: frontmatter `date: "{fm_date}"` is not in ' f'"Month DD, YYYY" form'
             )
     return defects
 
@@ -202,10 +209,7 @@ def check_external_links(body: str, timeout: float = 10.0) -> list[str]:
     thread pool so the link-rot pass stays in seconds, not minutes."""
     from concurrent.futures import ThreadPoolExecutor
 
-    urls = sorted({
-        m.group(1)
-        for m in re.finditer(r'\]\((https?://[^)\s]+)', body)
-    })
+    urls = sorted({m.group(1) for m in re.finditer(r"\]\((https?://[^)\s]+)", body)})
     if not urls:
         return []
 
@@ -229,9 +233,9 @@ def check_external_links(body: str, timeout: float = 10.0) -> list[str]:
         return [d for d in pool.map(probe, urls) if d]
 
 
-def check_article(path: Path, *, skip_date: bool = False,
-                  skip_network: bool = False,
-                  check_links: bool = False) -> list[str]:
+def check_article(
+    path: Path, *, skip_date: bool = False, skip_network: bool = False, check_links: bool = False
+) -> list[str]:
     """Run every gate against ``path``. Returns a flat list of defect
     strings. Empty list = clean.
 
@@ -268,16 +272,24 @@ def _today_article() -> Path | None:
 def main() -> int:
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument("path", type=Path, nargs="?", help="article markdown path")
-    p.add_argument("--today", action="store_true",
-                   help="auto-pick _posts/<today>-*.md")
-    p.add_argument("--no-date-check", action="store_true",
-                   help="skip filename-date-vs-today gate (useful for backfills)")
-    p.add_argument("--no-network", "--bypass-network", action="store_true",
-                   help="skip banner-reachability + external-link probes "
-                        "(useful for offline drafting)")
-    p.add_argument("--check-links", action="store_true",
-                   help="additionally probe every external citation URL "
-                        "for link rot; surfaces 404s as defects")
+    p.add_argument("--today", action="store_true", help="auto-pick _posts/<today>-*.md")
+    p.add_argument(
+        "--no-date-check",
+        action="store_true",
+        help="skip filename-date-vs-today gate (useful for backfills)",
+    )
+    p.add_argument(
+        "--no-network",
+        "--bypass-network",
+        action="store_true",
+        help="skip banner-reachability + external-link probes " "(useful for offline drafting)",
+    )
+    p.add_argument(
+        "--check-links",
+        action="store_true",
+        help="additionally probe every external citation URL "
+        "for link rot; surfaces 404s as defects",
+    )
     args = p.parse_args()
 
     if args.today:

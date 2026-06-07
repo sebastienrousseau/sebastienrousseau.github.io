@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Wed, 03 Jun 2026 06:06:06 +0000" id="date" />
+    <meta itemprop="dateModified" content="Wed, 03 Jun 2026 06:06:06 +0000" id="last-modified" />
+    <title>2026년 은행을 위한 에이전틱 AI 인덱스: 자율성, 거버넌스, 감사 가능성, 비즈니스 임팩트 측정하기 — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="자율성, 거버넌스, 감사 가능성, 신뢰성, 통제, 비즈니스 가치를 아우르는 은행의 에이전틱 AI 준비도를 측정하기 위한 인덱스형 프레임워크.">
+<meta name="keywords" content="2026 에이전틱 AI 뱅킹, 은행 AI 에이전트, 금융 서비스 AI 거버넌스, 자율 뱅킹 워크플로, 모델 리스크 관리, AI 감사 가능성, SR 11-7, ISO 20022">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="The Agentic AI Index for Banks 2026">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-YwSGOXv1Si6nFt6uQZvtjt2oxYKbo3ebTux/CGCP+eI=' 'sha256-Zijcmv+JziYA0PbK/iLLTtk5Z5jX9DbjQC/DIc2RD3c=' 'sha256-gTi74OrAneqK86FjxEFJBAsjvI93WoWvLSKw8tixPQQ=' 'sha256-mT1jotDwCI1R8wGaUXV6TLxflxBIFdlqRmdQt4VFTn4=' 'self' 'inline-speculation-rules' https://cdn.jsdelivr.net https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' https://cloudcdn.pro https://www.google.com https://open.spotify.com;
+        img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/ko/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/newsreader-latin.woff2" crossorigin />
+    <link rel="stylesheet" href="/fonts/fonts.css" />
+    <!-- Preload the LCP hero portrait so it doesn't compete with the
+         render-blocking JS bundle on throttled mobile connections.
+         Lighthouse-simulated Slow-4G has been pinning LCP at ~5.6s; the
+         observed (real-network) LCP is 165 ms. This hint pulls the
+         synthetic LCP in line with the observed value. -->
+    <link rel="preload" as="image" href="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=1200&format=webp&q=85" fetchpriority="high">
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script>(function(){try{var saved=localStorage.getItem("theme");var prefersDark=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;var theme=saved||(prefersDark?"dark":"light");document.documentElement.setAttribute("data-theme",theme);}catch(e){}})();</script>
+
+    <link rel="stylesheet" href="/_csp/4724896d11ec6663.css" integrity="sha256-SFQ1AngSMlx94d5FmN1lWSKPs5RL6Y8BQf0nIEBLd7g= sha256-6BJkWGvqh3blXQksn+ynhkpoqcrJzzWhSKVuLVBJY4s=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Atom 피드" href="/ko/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="2026년 은행을 위한 에이전틱 AI 인덱스: 자율성, 거버넌스, 감사 가능성, 비즈니스 임팩트 측정하기 — Sebastien Rousseau">
+<meta property="og:description" content="자율성, 거버넌스, 감사 가능성, 신뢰성, 통제, 비즈니스 가치를 아우르는 은행의 에이전틱 AI 준비도를 측정하기 위한 인덱스형 프레임워크.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/ko/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/">
+<meta property="og:image" content="https://cloudcdn.pro/api/transform?url=/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp&w=1200&format=webp&q=80">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="ko_KR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="2026년 은행을 위한 에이전틱 AI 인덱스: 자율성, 거버넌스, 감사 가능성, 비즈니스 임팩트 측정하기 — Sebastien Rousseau">
+<meta name="twitter:description" content="자율성, 거버넌스, 감사 가능성, 신뢰성, 통제, 비즈니스 가치를 아우르는 은행의 에이전틱 AI 준비도를 측정하기 위한 인덱스형 프레임워크.">
+<meta name="twitter:image" content="https://cloudcdn.pro/api/transform?url=/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp&w=1200&format=webp&q=80">
+<link rel="canonical" href="https://sebastienrousseau.com/ko/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" /><link rel="alternate" hreflang="bn" href="https://sebastienrousseau.com/bn/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" /><link rel="alternate" hreflang="cs" href="https://sebastienrousseau.com/cs/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" /><link rel="alternate" hreflang="fil" href="https://sebastienrousseau.com/fil/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" /><link rel="alternate" hreflang="ha" href="https://sebastienrousseau.com/ha/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" /><link rel="alternate" hreflang="he" href="https://sebastienrousseau.com/he/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" /><link rel="alternate" hreflang="hi" href="https://sebastienrousseau.com/hi/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" /><link rel="alternate" hreflang="id" href="https://sebastienrousseau.com/id/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" /><link rel="alternate" hreflang="nl" href="https://sebastienrousseau.com/nl/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" /><link rel="alternate" hreflang="pl" href="https://sebastienrousseau.com/pl/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" /><link rel="alternate" hreflang="ro" href="https://sebastienrousseau.com/ro/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" /><link rel="alternate" hreflang="sv" href="https://sebastienrousseau.com/sv/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" /><link rel="alternate" hreflang="th" href="https://sebastienrousseau.com/th/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" /><link rel="alternate" hreflang="tr" href="https://sebastienrousseau.com/tr/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" /><link rel="alternate" hreflang="uk" href="https://sebastienrousseau.com/uk/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" /><link rel="alternate" hreflang="vi" href="https://sebastienrousseau.com/vi/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" /><link rel="alternate" hreflang="yo" href="https://sebastienrousseau.com/yo/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" integrity="sha256-tV/7vAgYDUuBQbSGEPjXL/JC0sD7QpSxXCGKT4ALhh8= sha256-dvm1KF9mEWIapL8BE0nyFlHaKSf6TsjZZoQcJeRPraI=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">본문으로 건너뛰기</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="내비게이션 전환" />
+      <div class="wrap">
+        <a class="ap-brand" href="/ko/index.html" aria-label="Sebastien Rousseau 홈">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="주요 내비게이션">
+          <ul class="ap-menu">
+            <li><a href="/ko/sogae/index.html">소개</a></li>
+            <li><a href="/ko/gisa/index.html" aria-current="page" class="active">기사</a></li>
+            <li><a href="/ko/nonmun/index.html">논문</a></li>
+            <li><a href="/ko/jujae/index.html">주제</a></li>
+            <li><a href="/ko/peurojekteu/index.html">프로젝트</a></li>
+            <li><a href="/ko/pleilliseuteu/index.html">플레이리스트</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="다크 테마로 전환" aria-pressed="false" title="테마 전환">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="검색 (Cmd 또는 Ctrl + K)" title="검색 (⌘K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="언어">
+            <button type="button" class="ap-lang-toggle" aria-label="KO, 언어 변경" aria-expanded="false" aria-haspopup="menu" title="언어 변경">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">KO</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <a class="ap-lang-item" href="/bn/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
+                <a class="ap-lang-item" href="/cs/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
+                <a class="ap-lang-item" href="/de/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <a class="ap-lang-item" href="/fil/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
+                <a class="ap-lang-item" href="/ha/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
+                <a class="ap-lang-item" href="/he/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
+                <a class="ap-lang-item" href="/hi/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <a class="ap-lang-item" href="/id/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
+                <a class="ap-lang-item" href="/it/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <a class="ap-lang-item" href="/pl/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
+                <a class="ap-lang-item" href="/pt-br/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <a class="ap-lang-item" href="/ro/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
+                <a class="ap-lang-item" href="/ru/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <a class="ap-lang-item" href="/sv/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
+                <a class="ap-lang-item" href="/th/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
+                <a class="ap-lang-item" href="/tr/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
+                <a class="ap-lang-item" href="/uk/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" data-lang="uk" role="menuitem">🇺🇦 Українська</a>
+                <a class="ap-lang-item" href="/vi/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
+                <a class="ap-lang-item" href="/yo/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
+                <a class="ap-lang-item" href="/zh-hans/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/ko/munui/index.html" aria-label="문의하기">문의하기 ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="내비게이션 전환">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>2026년 은행을 위한 에이전틱 AI 인덱스: 자율성, 거버넌스, 감사 가능성, 비즈니스 임팩트 측정하기</h1>
+      <p class="sub">뱅킹 분야의 에이전틱 AI는 AI 문제의 외피를 두른 엔지니어링 문제입니다. 모델은 교체 가능하지만, OAuth 스코프 기반의 서비스 계정, 결정론적 시맨틱 라우터, Open Policy Agent 게이트, WORM 감사 로그, 그리고 검증된 킬 스위치는 그렇지 않습니다.</p>
+    <nav class="article-tags" aria-label="주제"><a href="/tags/index.html#h3-2026-ai" class="article-tag" rel="tag">2026 에이전틱 AI 뱅킹</a><a href="/tags/index.html#h3-ai" class="article-tag" rel="tag">은행 AI 에이전트</a><a href="/tags/index.html#h3-ai" class="article-tag" rel="tag">금융 서비스 AI 거버넌스</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">자율 뱅킹 워크플로</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">모델 리스크 관리</a><a href="/tags/index.html#h3-ai" class="article-tag" rel="tag">AI 감사 가능성</a><a href="/tags/index.html#h3-sr-11-7" class="article-tag" rel="tag">SR 11-7</a><a href="/tags/index.html#h3-iso-20022" class="article-tag" rel="tag">ISO 20022</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2026-06-03T06:06:06+00:00" class="meta-pub">발행일 3 Jun 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="예상 소요 시간">11 분 소요</span></div></section><figure class="article-banner"><img src="https://cloudcdn.pro/api/transform?url=/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp&w=1200&format=webp&q=80" alt="Banner for: 2026년 은행을 위한 에이전틱 AI 인덱스: 자율성, 거버넌스, 감사 가능성, 비즈니스 임팩트 측정하기" width="1200" height="675" fetchpriority="high" decoding="async" /></figure>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>목차</h2><ol><li><a href="#2026">왜 2026년이 이 인덱스가 중요한 해인가</a></li><li><a href="#2026-2">2026 인덱스 아키텍처</a></li><li><a href="#section-3">추적해야 할 현재 시그널</a></li><li><a href="#section-4">자율성 사다리</a></li><li><a href="#section-5">에이전트 통제 평면</a></li><li><a href="#section-11">모델 리스크 관리</a></li><li><a href="#section-12">비즈니스 임팩트 측정</a></li><li><a href="#section-13">은행 유형별 시사점</a></li><li><a href="#section-18">결론</a></li><li><a href="#section-19">자주 묻는 질문</a></li><li><a href="#section-20">참고문헌</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> 자율성, 거버넌스, 감사 가능성, 신뢰성, 통제, 비즈니스 가치를 아우르는 은행의 에이전틱 AI 준비도를 측정하기 위한 인덱스형 프레임워크.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>왜 2026년이 이 인덱스가 중요한 해인가.</strong> 채팅에서 경계가 설정된 워크플로로의 전환은, 올해 은행의 에이전틱 AI에서 유일하게 중요한 변화입니다.</li>  <li><strong>추적해야 할 현재 시그널.</strong> 에이전트는 기반 모델의 영리함이 아니라 허용된 행동 범위로 분류해야 합니다.</li>  <li><strong>자율성 사다리.</strong> 에이전트는 기반 모델의 영리함이 아니라 허용된 행동 범위로 분류해야 합니다.</li>  <li><strong>에이전트 통제 평면.</strong> 통제 평면은 LLM과 귀행의 프로덕션 시스템 사이에 위치하는 엔지니어링 레이어입니다.</li></ul></aside><!-- lead-start -->
+
+<!-- lead-end -->
+<p>뱅킹 분야의 에이전틱 AI는 이제 AI 문제의 외피를 두른 엔지니어링 문제입니다. 모델은 교체 가능하지만, 통제 평면은 그렇지 않습니다. 2026년의 과제는 도입 자체가 아닙니다 — Cambridge CCAF는 이미 도입률을 52%로 집계합니다 — 진짜 과제는 귀행이 오늘 운영 중인 자율 시스템이 다음 분기 SR 11-7 검사를 통과할 수 있는지 여부입니다. 대부분은 통과하지 못합니다.</p>
+<hr />
+<blockquote>
+<p><strong>경영진 요약 / 핵심 시사점</strong></p>
+<ul>
+<li><strong>챗봇이라고 부르는 것을 멈춰야 합니다.</strong> 프로덕션 단위는 엄격한 도구 호출 권한을 가진 경계가 설정된 워크플로입니다. 실제 작업은 LLM 내부가 아니라 워크플로 내부에서 일어납니다.</li>
+<li><strong>OSWorld 66.3%가 신뢰성의 상한선입니다.</strong> Stanford HAI가 엔터프라이즈 도구 활용에 가장 근접한 벤치마크로 제시한 수치이지만, 여전히 세 건 중 한 건의 구조화된 작업에 실패합니다. 이 수치는 적극적인 휴먼 인 더 루프 배포를 정당화하기에는 충분하지만, 고객 자금이 오가는 어떤 영역에서도 무감독 실행을 정당화하기에는 부족합니다.</li>
+<li><strong>지능이 아닌 권한으로 분류해야 합니다.</strong> 자율성 사다리는 Level 0 (읽기 전용 ISDA 조항 추출) 부터 Level 4 (필수 체크포인트가 있는 다중 도구 결제 보정) 까지 이어집니다. Level 5 — 체크포인트 없이 자가 오케스트레이션으로 실행되는 단계 — 는 2026년 프로덕션 뱅킹에 존재해서는 안 됩니다.</li>
+<li><strong>에이전트 통제 평면은 정책 문서가 아니라 다섯 가지 엔지니어링 구성요소입니다.</strong> OAuth 스코프 기반 서비스 계정, 결정론적 시맨틱 라우팅, Open Policy Agent 게이팅, WORM 감사 로깅, 검증된 킬 스위치. 누락된 것은 곧 지적사항입니다.</li>
+<li><strong>SR 11-7과 PRA SS1/23은 이미 적용됩니다.</strong> 연준은 입력-출력 의사결정 시스템은 모두 적용 범위에 해당한다는 입장을 반복적으로 명확히 해왔습니다. LLM은 모델이 아니라고 주장하는 은행은 규제 논쟁을 시작도 하기 전에 패배한 셈입니다.</li>
+</ul>
+</blockquote>
+<hr />
+<h2 id="2026">왜 2026년이 이 인덱스가 중요한 해인가 <a class="heading-anchor" href="#2026" aria-label="링크 왜 2026년이 이 인덱스가 중요한 해인가">#</a></h2>
+<p>채팅에서 경계가 설정된 워크플로로의 전환은, 올해 은행의 에이전틱 AI에서 유일하게 중요한 변화입니다. 고객 이메일 초안을 작성하는 챗봇은 검토 대상에 그칩니다. 그러나 귀행의 프로덕션 카드 플랫폼에 대해 <code>POST /accounts/{id}/freeze</code> 를 호출하는 에이전트는 감사 가능한 증거입니다. 프로덕션은 이 프레임을 따라잡았습니다. Cambridge CCAF의 2026년 조사에 따르면 에이전틱 AI의 실제 도입률은 52%, 확장 또는 전사적 전환 단계에 도달한 비율은 23%에 이릅니다 (<a href="https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/2026-global-ai-in-financial-services-report/" title="2026 글로벌 금융 서비스 AI 보고서">Cambridge CCAF ⧉</a>). &quot;고립된 파일럿&quot;의 임계점은 2025년 말 어디쯤에서 이미 넘어섰습니다.</p>
+<p>도입과 함께 두 가지가 변화했습니다.</p>
+<p>첫째, 규제 당국이 LLM을 신기한 신문물로 다루기를 멈췄습니다. 연준은 <a href="https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm" title="SR 11-7: 모델 리스크 관리 지침">SR 11-7 ⧉</a> 이 LLM을 내부적으로 모델로 분류하든 그렇지 않든, LLM 기반 의사결정에도 적용된다는 점을 명확히 했습니다. PRA의 <a href="https://www.bankofengland.co.uk/prudential-regulation/publication/2023/may/model-risk-management-principles-for-banks-ss" title="감독 성명 SS1/23">SS1/23 ⧉</a> 은 처음부터 이를 포괄할 만큼 광범위했습니다. EU AI Act의 고위험 분류는 대부분의 금융 서비스 LLM 활용을 다룹니다. &quot;이게 해당되는지 확실치 않다&quot;는 식의 변명은 더 이상 통하지 않습니다.</p>
+<p>둘째, 벤치마크 현실이 따라잡았습니다. Stanford HAI의 2026 AI Index는 OSWorld — 실제 엔터프라이즈 도구 활용에 가장 근접한 가용 벤치마크 — 의 정확도를 66.3%로 보고합니다 (<a href="https://hai.stanford.edu/ai-index/2026-ai-index-report/technical-performance" title="Technical Performance 챕터">Stanford HAI ⧉</a>). 구조화된 작업 세 건 중 한 건은 여전히 실패합니다. 이 수치가 2026년 자율성의 기술적 천장을 결정합니다. HITL 감독 하에서 경계가 설정된 Level-3 배포를 정당화하기에는 충분히 높지만, 고객 자금에 닿는 어떤 API에 대해서도 무감독 실행을 정당화하기에는 충분히 높지 않습니다.</p>
+<p>은행을 위한 에이전틱 AI 인덱스는 LLM 기반 의사결정에 대해, 바젤 프레임워크가 자본에 대해 했던 일을 해내야 합니다. 즉, &quot;통제가 있다&quot;는 주장을 워크플로별로 측정 가능하고 감사 가능한 증거로 전환해야 합니다.</p>
+<h2 id="2026-2">2026 인덱스 아키텍처 <a class="heading-anchor" href="#2026-2" aria-label="링크 2026 인덱스 아키텍처">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>인덱스 레이어</th>
+<th>&quot;준비됨&quot;의 모습</th>
+<th>준비도 지표</th>
+<th>실패 양상</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>자율성 등급</strong></td>
+<td>모든 프로덕션 워크플로가 Level 0–4로 태깅됨; 프로덕션에 Level 5 없음</td>
+<td>등급별 워크플로 비율; Level 3 이상의 비중</td>
+<td>프로덕션 에이전트가 SWIFTNet 전 단계에서 페이로드를 게이팅하는 정적 허용 목록이 없어, 환각된 수취인 BIC로 <code>pacs.008</code> 을 전송</td>
+</tr>
+<tr>
+<td><strong>API 권한 부여</strong></td>
+<td>각 에이전트는 최소 권한 OAuth 스코프(예: <code>card-freeze:write:lt-5000usd</code>)를 가진 단일 서비스 계정에 매핑; 레거시 코어에 대해 MTLS</td>
+<td>최소 권한 적용 에이전트 비율; 고아 권한 개수</td>
+<td>에이전트가 과도한 스코프의 서비스 계정을 재사용해 권한 없는 계정들을 순회 조회; 72시간 이내 GDPR 제33조 사고 신고</td>
+</tr>
+<tr>
+<td><strong>결정론적 가드레일</strong></td>
+<td>모든 도구 호출이 API에 도달하기 전 시맨틱 라우터(NeMo Guardrails / LangChain Guardrails) 및 JSON 스키마 검증기를 경유</td>
+<td>가로채인 도구 호출 비율; 카테고리별 거부율</td>
+<td>LLM이 <code>amount: 0</code> 으로 <code>transfer</code> 호출을 발행; 하위 API는 검증하지 않음; 18시간 뒤 다른 시간대에서 원장 정합성 알림 발생</td>
+</tr>
+<tr>
+<td><strong>휴먼 인 더 루프 적용 범위</strong></td>
+<td>모든 Level-3 실행이 강제 타임아웃이 있는 승인 UI를 표시; 정책상 자동 승인 비활성화</td>
+<td>승인 처리량; 고무도장 승인율(2초 이내 승인 비율)</td>
+<td>운영자가 4분 만에 200건의 알림에 &quot;승인&quot; 클릭; 정상 고객에 대해 SAR 제출; 한 주 이내 규제 당국 민원</td>
+</tr>
+<tr>
+<td><strong>감사 완전성</strong></td>
+<td>변경 불가능한 WORM 로그가 시스템 프롬프트 + 검색된 컨텍스트 + LLM 출력 + 도구 호출 + 도구 결과 + 승인자 UID를 캡처; 작성 시점에 암호학적으로 서명</td>
+<td>완전한 트레이스를 갖춘 호출 비율</td>
+<td>SR 11-7 검사관이 에이전트 #4421이 480만 달러 송금을 승인한 이유를 질의; 은행은 송금 영수증과 모델 카드는 보유하나 프롬프트 수준의 증거는 부재; 지적사항 발부</td>
+</tr>
+<tr>
+<td><strong>단위 경제성</strong></td>
+<td>완료된 의사결정당 비용을 회수 및 보정 비용을 포함해 추적; 수동 기준선 대비 양(+)의 값</td>
+<td>의사결정당 순비용; 회수율</td>
+<td>엣지 케이스 에이전트의 토큰당 지출이 대체했던 수동 조사관 비용을 초과; CFO가 3분기에 프로그램 중단</td>
+</tr>
+</tbody>
+</table>
+<h2 id="section-3">추적해야 할 현재 시그널 <a class="heading-anchor" href="#section-3" aria-label="링크 추적해야 할 현재 시그널">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>시그널</th>
+<th>은행에 시사하는 바</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>52% 적극 도입</strong></td>
+<td>에이전틱 AI는 파일럿 단계를 넘어섰으며, 기관 차원의 거버넌스는 이미 늦었음</td>
+<td><a href="https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/2026-global-ai-in-financial-services-report/" title="2026 글로벌 금융 서비스 AI 보고서">Cambridge CCAF ⧉</a></td>
+</tr>
+<tr>
+<td><strong>23% 확장 또는 전환 중</strong></td>
+<td>의미 있는 소수가 개념 증명 무대를 넘어섬</td>
+<td><a href="https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/2026-global-ai-in-financial-services-report/" title="2026 글로벌 금융 서비스 AI 보고서">Cambridge CCAF ⧉</a></td>
+</tr>
+<tr>
+<td><strong>OSWorld 66.3%</strong></td>
+<td>구조화된 도구 활용에서 세 건 중 한 건 실패율. 이 신뢰성 수준에서는 고객 자금 API에 대한 무감독 실행은 정당화 불가</td>
+<td><a href="https://hai.stanford.edu/ai-index/2026-ai-index-report/technical-performance" title="Technical Performance 챕터">Stanford HAI ⧉</a></td>
+</tr>
+<tr>
+<td><strong>55%가 인간 감독 상실을 최상위 리스크로 지적</strong></td>
+<td>통제 설계는 후행 컴플라이언스 사안이 아니라 1차 엔지니어링 과제</td>
+<td><a href="https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/2026-global-ai-in-financial-services-report/" title="2026 글로벌 금융 서비스 AI 보고서">Cambridge CCAF ⧉</a></td>
+</tr>
+<tr>
+<td><strong>대형 금융기관의 76%가 가치 측정에 고전</strong></td>
+<td>일반적인 생산성 주장은 CFO와의 대화를 견디지 못함. 프로그램이 아닌 워크플로별로 측정해야 함</td>
+<td><a href="https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/2026-global-ai-in-financial-services-report/" title="2026 글로벌 금융 서비스 AI 보고서">Cambridge CCAF ⧉</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="section-4">자율성 사다리 <a class="heading-anchor" href="#section-4" aria-label="링크 자율성 사다리">#</a></h2>
+<p>에이전트는 기반 모델의 영리함이 아니라 허용된 행동 범위로 분류해야 합니다. 동일한 GPT-5 / Claude 4 / Gemini 3 인스턴스가 모든 등급에 자리할 수 있으며, 다른 것은 래퍼입니다.</p>
+<ul>
+<li><strong>Level 0 — 관찰.</strong> 로그, 트레이스, 거래에 대한 읽기 전용 접근. 에이전트는 패턴이나 이상을 표면화할 뿐, 어디에도 쓰기 권한이 없습니다. 예시: 회랑별 <code>pacs.008</code> 거절률 드리프트를 감지해 운영팀에 알림.</li>
+<li><strong>Level 1 — 읽기 전용 검색.</strong> 운영 시스템에서 데이터를 읽어, 사람이 소비할 수 있는 구조화된 출력을 생성합니다. 예시: 거래상대방의 ISDA Master Agreement에서 CSA 조항 변형을 추출해 자행 표준 템플릿에서의 이탈을 표시. 에이전트는 결코 계약 저장소에 다시 쓰지 않습니다.</li>
+<li><strong>Level 2 — 사람 제출용 초안.</strong> 사람이 검토 후 제출하는 콘텐츠를 생성합니다. 예시: 사기 시스템 알림 + KYC 기록 + 거래 트레이스로부터 의심 거래 보고서(SAR) 초안 작성; BSA 담당자가 읽고 필요 시 편집한 후 제출. 기록 시스템은 사람이 승인한 버전만을 보게 됩니다.</li>
+<li><strong>Level 3 — 경계가 설정된 실행.</strong> 래퍼가 강제하는 엄격하고 결정론적인 한도 내에서 프로덕션 API를 호출합니다. 예시: 허용 목록 정책으로 강제되는 <code>max-amount-at-risk: 5000 USD</code> 조건으로 카드 동결 API 호출; 에이전트는 해당 임계치를 초과하는 잔액과 연결된 카드를 Level-2 에스컬레이션 없이는 동결할 수 없습니다. 한도는 프롬프트가 아니라 코드형 정책에 존재합니다 — 프롬프트는 보안 경계가 아닙니다.</li>
+<li><strong>Level 4 — 필수 체크포인트가 있는 다중 도구 오케스트레이션.</strong> 시스템을 가로질러 일련의 절차를 수행하며, 모든 상태 전이가 로깅되고, 체크포인트는 다음 도구 호출 전에 사람의 승인을 요구합니다. 예시: 결제 보정 워크플로 — 데드 레터 큐에서 실패한 <code>pacs.008</code> 추출 → SWIFT KYC Registry로 올바른 수취인 조회 → 정정 메시지 생성 → 송신 큐에 기록 → 사람이 재전송을 승인. 어느 단계든 스키마 검증기를 통과하지 못하면 워크플로는 중단되고 예외 케이스가 생성됩니다.</li>
+<li><strong>Level 5 — 자가 오케스트레이션.</strong> 에이전트가 체크포인트 승인 없이 계획하고 실행합니다. <strong>2026년 프로덕션 뱅킹 워크플로는 어떤 것도 Level 5에 있어서는 안 됩니다.</strong> 이것은 성숙도에 관한 진술이 아니라 신뢰성에 관한 진술입니다. OSWorld 66.3%는 연쇄된 API 호출에 걸쳐 복리로 누적됩니다. 각 66%인 도구 호출 세 건의 종단 간 성공률은 29%입니다. 다섯 건이면 13%입니다. 하지 마십시오.</li>
+</ul>
+<h2 id="section-5">에이전트 통제 평면 <a class="heading-anchor" href="#section-5" aria-label="링크 에이전트 통제 평면">#</a></h2>
+<p>통제 평면은 LLM과 귀행의 프로덕션 시스템 사이에 위치하는 엔지니어링 레이어입니다. 모두 런타임에서 동작하는 다섯 가지 구성요소이며, 어느 것도 정책 문서에 적힌 글자가 아닙니다.</p>
+<h3 id="1">1. 신원과 권한 <a class="heading-anchor" href="#1" aria-label="링크 1. 신원과 권한">#</a></h3>
+<p>모든 에이전트는 정확히 하나의 서비스 계정에 매핑됩니다. 그 계정은 필요한 최소 API 표면으로 스코프가 한정된 OAuth <code>client_credentials</code> 토큰을 보유합니다. 카드 동결 에이전트의 토큰은 <code>amount-at-risk: 0..5000 usd</code> 조건으로 <code>POST /accounts/{id}/freeze</code> 를 호출할 수 있습니다. 다른 고객에 대해 <code>GET /accounts/{id}/balance</code> 를 호출할 수 없습니다. 커스터디, 트레저리, 트레이딩의 어떤 호출도 할 수 없습니다. 서비스 계정 시크릿은 주 단위로 교체됩니다. 장기 자격증명은 프로덕션 배포에서 가장 흔한 통제 평면 실패 원인입니다.</p>
+<h3 id="2">2. 도구 호출에 대한 결정론적 가드레일 <a class="heading-anchor" href="#2" aria-label="링크 2. 도구 호출에 대한 결정론적 가드레일">#</a></h3>
+<p>모든 LLM 도구 호출은 프로덕션 API에 도달하기 <strong>이전에</strong> 결정론적 시맨틱 라우터(NeMo Guardrails, LangChain Guardrails 또는 동급)를 통과합니다. 라우터는 의도를 유한한 허용 목록에 대해 분류하며, 목록 외 호출은 거부 후 로깅됩니다. 이어서 JSON 스키마 검증기가 페이로드를 점검합니다 — 필수 필드 존재, 금액의 범위 내 여부, 유효한 ISO 국가 코드, 자행의 사전 승인된 거래상대방 목록에 포함된 수취인 BIC. 검증기는 편집증적이어야 합니다. <code>amount: 0</code> 인 <code>pacs.008</code> 은 정당한 거래가 아니라 모델 실패입니다. 발신 고객 세그먼트에 대해 제재 필터가 사전 승인하지 않은 국가로의 송금 역시 마찬가지입니다.</p>
+<h3 id="3">3. 코드형 정책 <a class="heading-anchor" href="#3" aria-label="링크 3. 코드형 정책">#</a></h3>
+<p>Open Policy Agent(또는 동급)가 검증기와 API 사이에 위치합니다. 정책은 Git에서 버전 관리되며, 거부 결정은 로깅되고, 기존 플랫폼에서 마이크로서비스 간 호출을 게이팅하는 동일한 정책 엔진이 에이전트 도구 호출도 게이팅합니다. 에이전트를 별도의 게이팅이 필요한 특수 계층으로 다루는 방식은, 여섯 달 뒤 플랫폼팀의 그 누구도 이해하지 못하는 그림자 통제 평면을 누적시키는 길입니다.</p>
+<h3 id="4">4. 감사 로깅 <a class="heading-anchor" href="#4" aria-label="링크 4. 감사 로깅">#</a></h3>
+<p>변경 불가능한 WORM 저장소 — S3 Object Lock, Azure Blob immutability, 또는 원장형 데이터베이스. 모든 호출은 다음을 캡처합니다: 타임스탬프, 에이전트 ID, 서비스 계정 ID, 시스템 프롬프트 해시, 검색된 컨텍스트, LLM 제공자 및 모델 및 버전, 원시 LLM 출력, 파싱된 도구 호출, OPA 결정, API 응답, 하위 영향, 그리고 해당되는 경우 승인자 UID. 레코드는 작성 시점에 암호학적으로 서명됩니다. 이 로그가 바로 SR 11-7 및 SS1/23 검사관이 요구할 자료입니다. 임의의 의사결정에 대해 완전한 트레이스를 제시할 수 없다면, 귀행은 모델 리스크가 관리되는 에이전트를 보유한 것이 아닙니다.</p>
+<h3 id="5">5. 킬 스위치 <a class="heading-anchor" href="#5" aria-label="링크 5. 킬 스위치">#</a></h3>
+<p>특정 권한 클래스 내 진행 중인 모든 에이전트 호출을 60초 이내에 취소하는 레드 버튼 API입니다. 분기별로 탁상 훈련을 통해 검증합니다. 킬 스위치는, 벤더 모델 릴리스가 조용히 퇴행하거나, 예측하지 못한 프롬프트 인젝션 벡터가 발견되거나, 운영 임계치를 넘는 위양성률 드리프트가 발생했을 때 귀행을 회복시키는 유일한 수단입니다. 검증되지 않은 킬 스위치는 작동하지 않습니다. 훈련 시간을 예산에 반영해야 합니다.</p>
+<h2 id="section-11">모델 리스크 관리 <a class="heading-anchor" href="#section-11" aria-label="링크 모델 리스크 관리">#</a></h2>
+<p>&quot;LLM은 SR 11-7 상의 모델이 아니다&quot;라고 주장하는 은행은 이미 패배했습니다. 연준은 의사결정 워크플로에 사용되는 입력-출력 시스템은 모두 적용 범위라는 점을 반복적으로 명확히 해왔습니다. PRA의 SS1/23은 그보다 더 광범위합니다. 올바른 자세는 모든 프로덕션 에이전트를 첫날부터 SR 11-7 / SS1/23 모델로 다루는 것입니다. 배포된 에이전트를 사후적으로 모델로 재정의하는 비용은, 처음부터 그렇게 설계하는 비용의 수 배에 달합니다.</p>
+<p>에이전트에 적용된 3선 방어 체계:</p>
+<ul>
+<li><strong>1선 (모델 오너).</strong> 에이전트의 의도된 용도, 학습 및 평가 데이터 계보, 시스템 프롬프트 스키마, 도구 호출 허용 목록, 킬 스위치 테스트 결과를 문서화합니다. 프로덕션에서의 드리프트 모니터링을 책임집니다.</li>
+<li><strong>2선 (MRM 팀).</strong> 프로덕션 이전에 에이전트를 검증합니다. 검증 보고서는 벤더 공개 평가 점수(MMLU, HumanEval, HellaSwag는 유용하지만 충분치 않습니다), 자행 특화 평가 점수(운영 사례로 구축한 자체 보류 평가 세트 — 대부분의 은행이 가장 과소투자하는 영역입니다), 프롬프트 인젝션 레드팀 결과, 워크플로가 고객 영향을 갖는 경우의 편향 및 공정성 분석, 그리고 정량화된 잔여 리스크 진술을 포괄합니다.</li>
+<li><strong>3선 (내부 감사).</strong> 프로덕션 의사결정 표본에 대해 통제 평면 게이트와 감사 로그 완전성을 시험합니다. 2027년 감사 주기는 2025년과 매우 다른 모습일 것입니다. 지금 예산을 잡아두어야 합니다.</li>
+</ul>
+<p>지속적 모니터링은 시점 검증보다 중요합니다. 주 단위로 재실행되는 자행 특화 평가 스위트는, 벤더 벤치마크가 드러내지 못하는 모델 업데이트 회귀를 포착합니다. OpenAI, Anthropic, Google의 릴리스 주기는 귀행의 검증 주기보다 빠릅니다. 그 간극은 귀행이 지속적 평가를 운영함으로써 좁히거나, 검사관의 지적사항으로 좁혀지거나 둘 중 하나입니다.</p>
+<h2 id="section-12">비즈니스 임팩트 측정 <a class="heading-anchor" href="#section-12" aria-label="링크 비즈니스 임팩트 측정">#</a></h2>
+<p>일반적인 생산성 주장은 CFO와의 대화를 견디지 못합니다. 에이전트는 여느 운영 변화를 측정하듯 측정해야 합니다:</p>
+<ul>
+<li><strong>완료된 의사결정당 비용</strong>, 실패한 의사결정의 회수 및 보정 비용을 포함합니다. BSA 담당자 시간을 40% 절감하되 12%의 위양성 신고를 생성하는 SAR 초안 작성 에이전트는, 가치를 창출한 것이 아니라 파괴한 것입니다.</li>
+<li><strong>회피된 수작업 접점 수</strong>, 통제 평면 감독 및 예외 처리로 새로 생긴 접점을 차감해 산정합니다. 핵심은 인간의 주의를 최소화하는 것이 아니라, 더 큰 레버리지를 갖는 의사결정으로 재배치하는 것입니다.</li>
+<li><strong>회수율</strong> — 24시간 이내 롤백된 에이전트 실행 행위의 비율. Level-3 워크플로에서 2%를 넘는 회수율은 신뢰성 문제입니다. 5%를 넘으면 통제 평면 문제입니다.</li>
+<li><strong>감사 트레이스 완전성</strong> — WORM 로그로부터 전체 출처를 재구성할 수 있는 의사결정의 비율. Level-3 및 Level-4 워크플로에서는 100%여야 합니다. 그 미만은 감사에서 표면화될 정책 실패입니다.</li>
+</ul>
+<p>워크플로가 더 빨라졌지만 덜 설명 가능해졌다면, 인덱스는 이를 감점해야 합니다. 규제 검사를 떨어뜨리는 가장 값싼 방법은 처리량을 최적화하면서 트레이스를 잃는 것입니다.</p>
+<h2 id="section-13">은행 유형별 시사점 <a class="heading-anchor" href="#section-13" aria-label="링크 은행 유형별 시사점">#</a></h2>
+<h3 id="g-sib">글로벌 시스템상 중요 은행 (G-SIB) <a class="heading-anchor" href="#g-sib" aria-label="링크 글로벌 시스템상 중요 은행 (G-SIB)">#</a></h3>
+<p>어려운 문제는 규모의 거버넌스입니다. 업무 라인에 걸쳐 수백 개의 에이전트, 각각에 모델 오너가 있고, 각각이 잠재적 감사 지적사항입니다. 투자해야 할 것은 또 하나의 파일럿이 아닙니다. 중앙 통제 평면, 통합 감사 로그 인프라, 그리고 분기당 50개 이상의 에이전트를 검증할 수 있는 MRM 인력입니다. 그 역량이 없으면 에이전트는 거버넌스보다 빨리 안착하고, 기관은 SR 11-7 노출을 조용히 누적하게 됩니다.</p>
+<h3 id="section-15">트랜잭션 및 기업 은행 <a class="heading-anchor" href="#section-15" aria-label="링크 트랜잭션 및 기업 은행">#</a></h3>
+<p>ROI가 가장 높은 워크플로는 결제 보정, KYC 문서 추출, 트레저리 서비스 FAQ 차단, 정합성 불일치 처리입니다. 모두 Level-2 또는 경계가 설정된 Level-3에 해당합니다. 기업 고객은 에이전트가 작업을 수행했는지에 관심이 없습니다. SLA가 개선되고 분쟁률이 평탄하게 유지되었는지를 봅니다. 기술이 아니라 지표로 이끌어야 합니다.</p>
+<h3 id="section-16">지역 은행 <a class="heading-anchor" href="#section-16" aria-label="링크 지역 은행">#</a></h3>
+<p>구입하되, 자체 구축하지 마십시오. 통제 평면의 기본 요소 — OAuth 스코핑, OPA 통합, WORM 감사 로깅, 검증된 킬 스위치 — 를 이미 갖춘 에이전트 플랫폼 벤더를 선정하고, 그 플랫폼을 자행 MRM 프레임워크에 맞게 검증하십시오. 맞춤형 통제 평면을 구축하는 일은 지역 단위 규모에서는 차별화로 이어지지 않는 다년 투자입니다. 그 엔지니어링 역량은 워크플로 설계와 운영자 UX에 투입해야 합니다.</p>
+<h3 id="psp">핀테크, PSP, 인프라 제공자 <a class="heading-anchor" href="#psp" aria-label="링크 핀테크, PSP, 인프라 제공자">#</a></h3>
+<p>벤더에게 던질 제품 질문은 &quot;귀사의 AI 에이전트가 사람보다 더 잘하는가&quot;가 아닙니다. &quot;귀사의 플랫폼이 즉시 SR 11-7 준수 감사 트레이스를 산출하는가&quot;입니다. 그 질문에 &quot;예&quot;라고 답할 수 있는 벤더는 엔터프라이즈 계약을 체결할 것입니다. 답하지 못하는 벤더는 은행 MRM 팀이 검증을 거부할 사유를 찾는 동안 개념 증명 루프에 갇히게 됩니다.</p>
+<h2 id="section-18">결론 <a class="heading-anchor" href="#section-18" aria-label="링크 결론">#</a></h2>
+<p>2026년 은행의 에이전틱 AI는 엔지니어링 문제입니다. 흥미로운 작업은 모델이 아니라 통제 평면에 있습니다. 모델은 교체 가능하지만, OAuth 스코핑, 결정론적 시맨틱 라우터, OPA 정책 게이트, 변경 불가능한 감사 로그, 그리고 킬 스위치는 그렇지 않습니다.</p>
+<p>18개월 뒤 규제 당국에 신뢰감 있게 비칠 기관은, 모든 프로덕션 에이전트를 첫날부터 SR 11-7 / SS1/23 모델로 다루며, 자행 특화 평가 스위트를 지속적으로 운영하고, 안전하게 실패하도록 설계된 통제 평면을 갖춘 기관입니다. 그렇지 않은 기관은, 자행 MRM 인력이 분기당 50건 이상의 시정 지적사항을 처리할 만큼 확장 가능한지 알게 될 것입니다.</p>
+<p>여느 운영 변화를 측정하듯 에이전트를 측정해야 합니다. 비용, 신뢰성, 가역성, 증거. OSWorld 66.3%가 귀행의 신뢰성 천장입니다. 그에 맞게 계획해야 합니다.</p>
+<h2 id="section-19">자주 묻는 질문 <a class="heading-anchor" href="#section-19" aria-label="링크 자주 묻는 질문">#</a></h2>
+<p><strong>뱅킹에서 에이전틱 AI란 무엇입니까?</strong></p>
+<p>LLM을 프로덕션 시스템으로의 도구 호출, 런타임 가드레일, 휴먼 인 더 루프 체크포인트와 결합한, 경계가 설정된 워크플로입니다. 실제 작업은 모델 내부가 아니라 워크플로 내부에서 일어납니다. &quot;챗봇&quot;이라는 단어를 떠올렸다면, 카테고리를 잘못 잡으신 것입니다.</p>
+<p><strong>은행은 어디서부터 시작해야 합니까?</strong></p>
+<p>가치가 측정 가능하고 하방 리스크가 통제 가능한 Level 1 및 Level 2 워크플로입니다: ISDA 조항 추출, SAR 초안 작성, 결제 보정 트리아지, 내부 지식 검색, 코드 리뷰 보조, KYC 문서 분류. 통제 평면이 OAuth 스코핑, 시맨틱 라우팅, OPA 게이팅, WORM 로깅, 검증된 킬 스위치를 모두 처리하기 전까지는 Level 3은 건너뛰십시오.</p>
+<p><strong>가장 큰 리스크는 무엇입니까?</strong></p>
+<p>LLM 출력과 API 사이에 결정론적 가드레일 없이 에이전트가 프로덕션 API에 대해 실행하도록 두는 것입니다. OSWorld 66.3% 수치가 그 경고입니다. 그 실패율의 도구 호출이 SWIFT MT103이나 고객 자금 API에 대해 래퍼 없이 작동한다면, 다음 규제 사이클의 최악의 헤드라인을 직접 작성하는 셈입니다.</p>
+<p><strong>SR 11-7은 LLM 기반 에이전트에도 적용됩니까?</strong></p>
+<p>예. 연준은 의사결정 워크플로에 사용되는 입력-출력 시스템은 모두 SR 11-7 적용 범위라는 점을 명확히 했습니다. PRA의 SS1/23은 영국에서 동일한 영역을 다룹니다. EU AI Act의 고위험 분류는 대부분의 금융 서비스 활용 사례를 포괄합니다. &quot;이게 모델인가&quot; 논쟁은 끝났습니다. 그에 따라 행동해야 합니다.</p>
+<p><strong>에이전틱 AI는 이사회에 어떻게 보고되어야 합니까?</strong></p>
+<p>워크플로당 네 가지 수치: 자율성 등급, 감사 트레이스 완전성, 회수율, 의사결정당 순비용. 그리고 상위 5대 잔여 리스크 목록. 모델 카드 슬라이드웨어는 건너뛰십시오.</p>
+<h2 id="section-20">참고문헌 <a class="heading-anchor" href="#section-20" aria-label="링크 참고문헌">#</a></h2>
+<ul>
+<li>Stanford HAI, (2026). <a href="https://hai.stanford.edu/ai-index/2026-ai-index-report" title="2026 AI 인덱스 보고서">The 2026 AI Index Report ⧉</a>.</li>
+<li>Stanford HAI, (2026). <a href="https://hai.stanford.edu/ai-index/2026-ai-index-report/technical-performance" title="Technical Performance 챕터">Technical Performance 챕터 ⧉</a>.</li>
+<li>Cambridge Centre for Alternative Finance, (2026). <a href="https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/2026-global-ai-in-financial-services-report/" title="2026 글로벌 금융 서비스 AI 보고서">2026 글로벌 금융 서비스 AI 보고서 ⧉</a>.</li>
+<li>Federal Reserve, (2011). <a href="https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm" title="SR 11-7: 모델 리스크 관리 지침">SR 11-7: 모델 리스크 관리 지침 ⧉</a>.</li>
+<li>Prudential Regulation Authority, (2023). <a href="https://www.bankofengland.co.uk/prudential-regulation/publication/2023/may/model-risk-management-principles-for-banks-ss" title="SS1/23: 은행을 위한 모델 리스크 관리 원칙">감독 성명 SS1/23: 은행을 위한 모델 리스크 관리 원칙 ⧉</a>.</li>
+<li>European Commission, (2024). <a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj" title="규정 (EU) 2024/1689 — EU AI Act">규정 (EU) 2024/1689 — AI Act ⧉</a>.</li>
+<li>NVIDIA, (2024). <a href="https://github.com/NVIDIA/NeMo-Guardrails" title="NeMo Guardrails — LLM 기반 대화 시스템에 프로그램 가능한 가드레일을 추가하는 오픈소스 툴킷">NeMo Guardrails 프레임워크 ⧉</a>.</li>
+<li>Cloud Native Computing Foundation, (2018). <a href="https://www.openpolicyagent.org/" title="Open Policy Agent — 클라우드 네이티브 환경을 위한 정책 기반 통제">Open Policy Agent (OPA) ⧉</a>.</li>
+</ul>
+<!-- enrich-start -->
+
+<p class="post-reviewed">최종 검토 <time datetime="2026-06-03">2026-06-03</time>.</p>
+<!-- enrich-end -->
+<aside class="author-card" aria-label="저자 소개"><img alt="Sebastien Rousseau의 초상화" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=85" width="64" height="64" loading="lazy" decoding="async"  fetchpriority="high"><span class="author-card-body"><strong class="author-card-name"><a href="/ko/sogae/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">응용 AI, ISO 20022 이행, 금융 서비스를 위한 포스트 양자 암호, 도매 결제의 구조적 변혁에 관해 집필하는 시니어 뱅킹 테크놀로지스트입니다.</span><span class="author-credentials">HSBC 상업·투자은행, PayPal, Barclays, Shazam, AKQA, Virgin Group에서 20년 이상의 경험을 보유하였습니다. <a href="/ko/sogae/index.html">전체 프로필</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">최종 검토 <time datetime="2026-06-07">2026-06-07</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">관련 읽을거리</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/ko/2026-05-16-2026-choeseon-keulaeudeu-infra-akitekcheo" class="related-media" aria-label="2026년 최선의 클라우드 인프라 아키텍처: 금융 서비스를 위한 AI 네이티브, 멀티클라우드, 양자 인식 청사진" tabindex="-1"><img alt="Six-pillar cloud architecture diagram for 2026 — AI-native, multi-cloud, serverless, edge, DevSecOps, and sustainable design, with CloudCDN edge research overlay" src="https://cloudcdn.pro/api/transform?url=/stock/images/cloud-architecture-2026-banner.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="2026-ai"><a href="https://sebastienrousseau.com/ko/2026-05-16-2026-choeseon-keulaeudeu-infra-akitekcheo">2026년 최선의 클라우드 인프라 아키텍처: 금융 서비스를 위한 AI 네이티브, 멀티클라우드, 양자 인식 청사진</a> <a class="heading-anchor" href="#2026-ai" aria-label="링크 2026년 최선의 클라우드 인프라 아키텍처: 금융 서비스를 위한 AI 네이티브, 멀티클라우드, 양자 인식 청사진">#</a></h3><p><time datetime="2026-05-16">2026-05-16</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/ko/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026" class="related-media" aria-label="2026년 클라우드 네이티브 뱅킹 지수: DORA, 플랫폼 엔지니어링, 소버린 클라우드, 운영 회복력" tabindex="-1"><img alt="Circuit-board pattern resolving into a cityscape skyline — the visual register chosen for cloud-native banking: platform-engineering primitives stitched into the bank's operational fabric." src="https://cloudcdn.pro/api/transform?url=/stocks/images/quang-nguyen-vinh-2649403.webp&w=1600&format=webp&q=85" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="2026-dora"><a href="https://sebastienrousseau.com/ko/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026">2026년 클라우드 네이티브 뱅킹 지수: DORA, 플랫폼 엔지니어링, 소버린 클라우드, 운영 회복력</a> <a class="heading-anchor" href="#2026-dora" aria-label="링크 2026년 클라우드 네이티브 뱅킹 지수: DORA, 플랫폼 엔지니어링, 소버린 클라우드, 운영 회복력">#</a></h3><p><time datetime="2026-06-05">2026-06-05</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/ko/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026" class="related-media" aria-label="2026 뱅킹 인프라 인덱스: 에이전트 AI, 양자내성 보안, 클라우드 네이티브 회복력, 도매 결제 준비도 측정" tabindex="-1"><img alt="An editorial aerial composition by Miguel Sousa suggesting interlocking systems — the visual register chosen for a board-level dashboard view of the 2026 Banking Infrastructure Index" src="https://cloudcdn.pro/api/transform?url=/stocks/images/miguel-sousa-ejIF-pJhYkM.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="2026-ai-2"><a href="https://sebastienrousseau.com/ko/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026">2026 뱅킹 인프라 인덱스: 에이전트 AI, 양자내성 보안, 클라우드 네이티브 회복력, 도매 결제 준비도 측정</a> <a class="heading-anchor" href="#2026-ai-2" aria-label="링크 2026 뱅킹 인프라 인덱스: 에이전트 AI, 양자내성 보안, 클라우드 네이티브 회복력, 도매 결제 준비도 측정">#</a></h3><p><time datetime="2026-06-02">2026-06-02</time></p></footer></article>
+</div>
+</aside><aside class="article-sources" aria-labelledby="sources-heading"><h2 id="sources-heading" class="article-sources-heading">출처 및 참고문헌</h2><ol class="article-sources-list"><li><a href="https://github.com/NVIDIA/NeMo-Guardrails" rel="external noopener nofollow"><span class="source-host">github.com</span><span class="source-path">/NVIDIA/NeMo-Guardrails</span></a></li></ol></aside><nav class="post-pagination" aria-label="기사 페이지 이동"><a class="post-pagination-prev" href="/ko/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/"><span class="post-pagination-label">이전</span><span class="post-pagination-title">The 2026 Banking Infrastructure Index: Measuring Readiness for Agentic AI, Quantum-Safe Security, Cloud Native Resilience, and Wholesale Payments</span></a><a class="post-pagination-next" href="/ko/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/"><span class="post-pagination-label">다음</span><span class="post-pagination-title">The Quantum-Safe Banking Index in 2026: Post-Quantum Cryptography, QKD, Crypto-Agility, and Harvest-Now-Decrypt-Later Risk</span></a></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/ko/sogae/index.html">소개</a></li>
+              <li><a href="/ko/munui/index.html">문의하기</a></li>
+              <li><a href="/ko/jeongjeok-saiteu-saengseonggi-ro-jejak/index.html">Static Site Generator로 제작</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">기사</h2>
+            <ul>
+              <li><a href="/ko/gisa/index.html">기사</a></li>
+              <li><a href="/ko/nonmun/index.html">논문</a></li>
+              <li><a href="/ko/taegeu/index.html">태그</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">업무</h2>
+            <ul>
+              <li><a href="/ko/peurojekteu/index.html">프로젝트</a></li>
+              <li><a href="/ko/pleilliseuteu/index.html">플레이리스트</a></li>
+              <li><a href="/ko/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">연락처</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="/contact/" method="get" aria-label="뉴스레터 구독">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — 결제, AI, 포스트 양자 암호에 관한 연구 노트. 스팸은 발송하지 않습니다.</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="yongnim@eunhaeng.com" />
+            <input type="hidden" name="subject" value="newsletter" />
+            <input type="hidden" name="message" value="Please subscribe me to the Banking On Quantum newsletter." />
+            <button type="submit">구독하기</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved.</span>
+          <div class="social" aria-label="소셜 링크">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau의 Twitter / X"><img src="https://cloudcdn.pro/common/images/buttons/x-black.svg" alt="Sebastien Rousseau의 Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau의 LinkedIn"><img src="https://cloudcdn.pro/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau의 LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau의 Medium"><img src="https://cloudcdn.pro/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau의 Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau의 YouTube"><img src="https://cloudcdn.pro/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau의 YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/ko/jeobgeunseong/index.html">접근성</a> ·
+            <a href="/ko/gaeinjeongbo/index.html">개인정보처리방침</a> ·
+            <a href="/ko/yakgwan/index.html">이용약관</a> ·
+            <a href="https://www.thegreenwebfoundation.org/green-web-check/?url=sebastienrousseau.com" target="_blank" rel="noopener noreferrer" title="Hosted on 100% renewable energy (Cloudflare) — estimate via Sustainable Web Design v4 model">Carbon: ~0.04 g/visit · green-hosted</a> ·
+            <a href="https://github.com/sebastienrousseau/sebastienrousseau.github.io/blob/main/project-docs/sigstore.md" target="_blank" rel="noopener noreferrer" title="Every dated article is signed with Sigstore — verify the bytes match what was published">Verify signatures</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","identifier":{"@type":"PropertyValue","propertyID":"ORCID","value":"0009-0005-1434-284X","url":"https://orcid.org/0009-0005-1434-284X"},"worksFor":{"@type":"Organization","@id":"https://www.hsbc.com/#organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal","url":"https://www.paypal.com/"},{"@type":"Organization","name":"Barclays","url":"https://www.barclays.com/"},{"@type":"Organization","name":"Shazam Entertainment","url":"https://www.shazam.com/"},{"@type":"Organization","name":"AKQA","url":"https://www.akqa.com/"},{"@type":"Organization","name":"Virgin Group","url":"https://www.virgin.com/"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"hasCredential":[{"@type":"EducationalOccupationalCredential","credentialCategory":"professional experience","name":"20+ years across Tier-1 banks and global payments infrastructure","recognizedBy":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"}},{"@type":"EducationalOccupationalCredential","credentialCategory":"domain expertise","name":"ISO 20022 migration and wholesale payments architecture","recognizedBy":{"@type":"Organization","name":"SWIFT","url":"https://www.swift.com/"}},{"@type":"EducationalOccupationalCredential","credentialCategory":"domain expertise","name":"Post-Quantum Cryptography for financial services","recognizedBy":{"@type":"Organization","name":"NIST Post-Quantum Cryptography Project","url":"https://csrc.nist.gov/projects/post-quantum-cryptography"}}],"knowsAbout":[{"@type":"DefinedTerm","name":"Post-Quantum Cryptography","sameAs":"https://en.wikipedia.org/wiki/Post-quantum_cryptography"},{"@type":"DefinedTerm","name":"ML-KEM (FIPS 203)","sameAs":"https://csrc.nist.gov/pubs/fips/203/final"},{"@type":"DefinedTerm","name":"ML-DSA (FIPS 204)","sameAs":"https://csrc.nist.gov/pubs/fips/204/final"},{"@type":"DefinedTerm","name":"ISO 20022","sameAs":"https://en.wikipedia.org/wiki/ISO_20022"},{"@type":"DefinedTerm","name":"SWIFT gpi","sameAs":"https://www.swift.com/our-solutions/swift-gpi"},{"@type":"DefinedTerm","name":"SEPA Instant Payments","sameAs":"https://www.ecb.europa.eu/paym/integration/retail/instant_payments/html/index.en.html"},{"@type":"DefinedTerm","name":"FedNow Service","sameAs":"https://www.federalreserve.gov/paymentsystems/fednow_about.htm"},{"@type":"DefinedTerm","name":"Real-Time Payments (RTP)","sameAs":"https://www.theclearinghouse.org/payment-systems/rtp"},{"@type":"DefinedTerm","name":"Cross-border payments","sameAs":"https://en.wikipedia.org/wiki/Cross-border_payments"},{"@type":"DefinedTerm","name":"Wholesale banking","sameAs":"https://en.wikipedia.org/wiki/Wholesale_banking"},{"@type":"DefinedTerm","name":"Applied artificial intelligence in banking","sameAs":"https://en.wikipedia.org/wiki/Applications_of_artificial_intelligence"},{"@type":"DefinedTerm","name":"Generative artificial intelligence","sameAs":"https://en.wikipedia.org/wiki/Generative_artificial_intelligence"}],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://orcid.org/0009-0005-1434-284X","https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":["Organization","Brand"],"@id":"https://sebastienrousseau.com/#organization","name":"Sebastien Rousseau","alternateName":"Banking on Quantum","url":"https://sebastienrousseau.com/","logo":{"@type":"ImageObject","@id":"https://sebastienrousseau.com/#logo","url":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","width":"512","height":"512","caption":"Sebastien Rousseau"},"founder":{"@id":"https://sebastienrousseau.com/#person"},"editorialPolicy":"https://sebastienrousseau.com/editorial/","correctionsPolicy":"https://sebastienrousseau.com/editorial/#corrections","ethicsPolicy":"https://sebastienrousseau.com/editorial/","diversityPolicy":"https://sebastienrousseau.com/editorial/","sameAs":["https://github.com/sebastienrousseau","https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#organization"},"author":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"ko"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"ko"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":2514,"about":{"@type":"Thing","name":"ISO 20022","sameAs":["https://www.iso20022.org/","https://www.wikidata.org/wiki/Q15727611","https://sebastienrousseau.com/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html"]},"headline":"2026년 은행을 위한 에이전틱 AI 인덱스: 자율성, 거버넌스, 감사 가능성, 비즈니스 임팩트 측정하기","description":"자율성, 거버넌스, 감사 가능성, 신뢰성, 통제, 비즈니스 가치를 아우르는 은행의 에이전틱 AI 준비도를 측정하기 위한 인덱스형 프레임워크.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/api/transform?url=/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp&w=1200&format=webp&q=80","width":"100vw","height":"100vh","caption":"2026년 은행 및 금융기관을 위한 에이전틱 AI 인덱스 다이어그램"},"url":"https://sebastienrousseau.com/ko/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/","datePublished":"2026-06-03T06:06:06+00:00","dateModified":"2026-06-03","inLanguage":"ko","keywords":"2026 에이전틱 AI 뱅킹, 은행 AI 에이전트, 금융 서비스 AI 거버넌스, 자율 뱅킹 워크플로, 모델 리스크 관리, AI 감사 가능성, SR 11-7, ISO 20022","articleSection":"Technology","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/ko/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"ko"},"citation":[{"@type":"CreativeWork","url":"https://github.com/NVIDIA/NeMo-Guardrails"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/ko/"},{"@type":"ListItem","position":3,"name":"2026년 은행을 위한 에이전틱 AI 인덱스: 자율성, 거버넌스, 감사 가능성, 비즈니스 임팩트 측정하기","item":"https://sebastienrousseau.com/ko/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/"}]}]}</script>
+<script src="/main.c9d8dc8d.js" defer integrity="sha256-G3RtagQVu1xMUTaa18I4L7J+vKPyjk2ZQG182kd2kow= sha256-NzL6b2FQD17U0Taqx1C1kOArNHU82qw6DUW7wiG7Bp0=" crossorigin="anonymous"></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="검색">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>검색</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="검색">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="문서 검색..." autocomplete="off" aria-label="검색"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> 닫기</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> 이동</span><span><kbd>Enter</kbd> 열기</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" integrity="sha256-Y0txeCfdk+GUctTYMAxMbFCB2qs1cPm8JSIX3WRS9cs= sha256-5Ca5zk/7tsavsCDhg6M1m4feBn+L4YnJ7iavKawynII=" crossorigin="anonymous"></script>
+</div>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"2026년 은행을 위한 에이전틱 AI 인덱스: 자율성, 거버넌스, 감사 가능성, 비즈니스 임팩트 측정하기","url":"https://sebastienrousseau.com/ko/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/","inLanguage":"ko-KR","isAccessibleForFree":true,"author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#organization"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/ko/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/"},"keywords":"2026 에이전틱 AI 뱅킹, 은행 AI 에이전트, 금융 서비스 AI 거버넌스, 자율 뱅킹 워크플로, 모델 리스크 관리, AI 감사 가능성, SR 11-7, ISO 20022","proficiencyLevel":"Expert","dependencies":["ISO 20022"]}</script></body>
+</html>

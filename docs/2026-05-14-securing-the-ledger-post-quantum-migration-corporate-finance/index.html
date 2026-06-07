@@ -40,9 +40,9 @@
         form-action 'self' https://formspree.io;
         object-src 'none';
         upgrade-insecure-requests;
-        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-9gpskHNycN67kMgramyrSrnpnkGhW61kLYUnu+vjpiE=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-KGQ5DvAJWyobpFAMqq12cKXi41cAoOuaeggeG6Uywjo=' 'sha256-MqGNpUCE898zADOeYePduT+hxcT2aRTVaTuxiUjGC1A=' 'sha256-t2b1gQtC854CEaK77892j4NUoxX4S6zHCgXnAp5uhkU=' 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-9gpskHNycN67kMgramyrSrnpnkGhW61kLYUnu+vjpiE=' 'sha256-Ft50DzCRhSXGhKZbUVZMiSGa1OreUIxnxHZuhvKQAw4=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-KVMrcKb3Ln58beCpQE0ZCvBjAEg5xMs8t+4/Wh70u+E=' 'sha256-SW3gBhoC4QvuJLjY4dobxnMMUFqZiJtO2rEtJTYywao=' 'self' 'inline-speculation-rules' https://cdn.jsdelivr.net https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
         frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
-        connect-src 'self' https://www.google.com https://open.spotify.com;
+        connect-src 'self' https://cloudcdn.pro https://www.google.com https://open.spotify.com;
         img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co;
         style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
         font-src 'self' https://fonts.gstatic.com;
@@ -62,6 +62,8 @@
     <link rel="alternate" type="application/rss+xml" href="/rss.xml" />
     <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
     <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/newsreader-latin.woff2" crossorigin />
+    <link rel="stylesheet" href="/fonts/fonts.css" />
     <!-- Preload the LCP hero portrait so it doesn't compete with the
          render-blocking JS bundle on throttled mobile connections.
          Lighthouse-simulated Slow-4G has been pinning LCP at ~5.6s; the
@@ -73,11 +75,11 @@
     <meta name="color-scheme" content="light dark" />
     <script>(function(){try{var saved=localStorage.getItem("theme");var prefersDark=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;var theme=saved||(prefersDark?"dark":"light");document.documentElement.setAttribute("data-theme",theme);}catch(e){}})();</script>
 
-    <link rel="stylesheet" href="/_csp/6346d01ad7de2d6f.css" integrity="sha256-cmdn5aVLYjokOMehbFCVM2OVn90qAJQVGHgU/SsPTT0= sha256-LfI/OOvfKQbXmGjqT/lqFAdGuOgerwiywMKCZBxL014=" crossorigin="anonymous">
+    <link rel="stylesheet" href="/_csp/b4d33a118777a541.css" integrity="sha256-AvJ2HQqvVN7b9ko4kwoe+0LDSvZbZFdqtTjG1Cj3gyY= sha256-SP05jket9AUV28R01Zvw9HIQQTsS5g5nzddzdJD3ri4=" crossorigin="anonymous">
     <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="https://sebastienrousseau.com/atom.xml"/>
 <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 <meta property="og:title" content="Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for Corporate Finance">
-<meta property="og:description" content="Quantum risk has moved from research curiosity to active regulatory mandate. With the G7 roadmap published in January 2026, the EU, UK, and Australian">
+<meta property="og:description" content=". Without explicit rules the browser cramped 4-5 col tables uncomfortably and longer cells wrapped to 1-2 word/line. Wrap in an overflow-x:auto block +">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://sebastienrousseau.com/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance">
 <meta property="og:image" content="https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp">
@@ -86,7 +88,7 @@
 <meta property="og:locale" content="en_GB">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for Corporate Finance">
-<meta name="twitter:description" content="Quantum risk has moved from research curiosity to active regulatory mandate. With the G7 roadmap published in January 2026, the EU, UK, and Australian">
+<meta name="twitter:description" content=". Without explicit rules the browser cramped 4-5 col tables uncomfortably and longer cells wrapped to 1-2 word/line. Wrap in an overflow-x:auto block +">
 <meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp">
 <link rel="canonical" href="https://sebastienrousseau.com/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance/index.html">
 <link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
@@ -168,7 +170,7 @@
         <section class="ap-hero">
       <h1>Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for Corporate Finance</h1>
       <p class="sub">Quantum risk has moved from research curiosity to active regulatory mandate. With the G7 roadmap published in January 2026 and the BIS Project Leap proving feasibility in live payment systems, the board-level question is no longer whether to migrate — it is whether the migration can be completed before the shelf-life of today's data expires.</p>
-    <nav class="article-tags" aria-label="Topics"><a href="/tags/index.html#h3-post-quantum-cryptography" class="article-tag" rel="tag">post-quantum cryptography</a><a href="/tags/index.html#h3-pqc-migration" class="article-tag" rel="tag">PQC migration</a><a href="/tags/index.html#h3-corporate-banking" class="article-tag" rel="tag">corporate banking</a><a href="/tags/index.html#h3-financial-services" class="article-tag" rel="tag">financial services</a><a href="/tags/index.html#h3-g7-ceg-roadmap" class="article-tag" rel="tag">G7 CEG roadmap</a><a href="/tags/index.html#h3-bis-project-leap" class="article-tag" rel="tag">BIS Project Leap</a><a href="/tags/index.html#h3-ml-kem" class="article-tag" rel="tag">ML-KEM</a><a href="/tags/index.html#h3-ml-dsa" class="article-tag" rel="tag">ML-DSA</a><a href="/tags/index.html#h3-fips-203" class="article-tag" rel="tag">FIPS 203</a><a href="/tags/index.html#h3-fips-204" class="article-tag" rel="tag">FIPS 204</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2026-05-14T06:06:06+00:00" class="meta-pub">Published 14 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Estimated read time">23 min read</span></div></section>
+    <nav class="article-tags" aria-label="Topics"><a href="/tags/index.html#h3-post-quantum-cryptography" class="article-tag" rel="tag">post-quantum cryptography</a><a href="/tags/index.html#h3-pqc-migration" class="article-tag" rel="tag">PQC migration</a><a href="/tags/index.html#h3-corporate-banking" class="article-tag" rel="tag">corporate banking</a><a href="/tags/index.html#h3-financial-services" class="article-tag" rel="tag">financial services</a><a href="/tags/index.html#h3-g7-ceg-roadmap" class="article-tag" rel="tag">G7 CEG roadmap</a><a href="/tags/index.html#h3-bis-project-leap" class="article-tag" rel="tag">BIS Project Leap</a><a href="/tags/index.html#h3-ml-kem" class="article-tag" rel="tag">ML-KEM</a><a href="/tags/index.html#h3-ml-dsa" class="article-tag" rel="tag">ML-DSA</a><a href="/tags/index.html#h3-fips-203" class="article-tag" rel="tag">FIPS 203</a><a href="/tags/index.html#h3-fips-204" class="article-tag" rel="tag">FIPS 204</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2026-05-14T06:06:06+00:00" class="meta-pub">Published 14 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Estimated read time">23 min read</span></div></section><figure class="article-banner"><img src="https://cloudcdn.pro/api/transform?url=/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp&w=1600&format=webp&q=85" alt="Banner for: Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for Corporate Finance" width="1425" height="571" fetchpriority="high" decoding="async" /></figure>
 
     <main id="main" class="content ap-section" aria-label="main">
       <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>Contents</h2><ol><li><a href="#the-year-the-regulatory-posture-hardened">The Year the Regulatory Posture Hardened</a></li><li><a href="#three-threat-vectors-that-should-concern-the-board">Three Threat Vectors That Should Concern the Board</a></li><li><a href="#regulatory-tightening-a-jurisdiction-by-jurisdiction-view">Regulatory Tightening: A Jurisdiction-by-Jurisdiction View</a></li><li><a href="#bis-project-leap-what-the-industry-has-actually-proved">BIS Project Leap: What the Industry Has Actually Proved</a></li><li><a href="#the-nist-toolkit-ml-kem-and-ml-dsa-compared">The NIST Toolkit: ML-KEM and ML-DSA Compared</a></li><li><a href="#a-logical-migration-path-discovery-triage-hybrid-deployment">A Logical Migration Path: Discovery → Triage → Hybrid Deployment</a></li><li><a href="#what-this-costs-and-why-doing-nothing-costs-more">What This Costs and Why Doing Nothing Costs More</a></li><li><a href="#conclusion">Conclusion</a></li><li><a href="#frequently-asked-questions">Frequently Asked Questions</a></li><li><a href="#references">References</a></li></ol></aside><p>Quantum risk has moved from research curiosity to active regulatory mandate. With the G7 roadmap published in January 2026, the EU, UK, and Australian timelines clarified, and the BIS Project Leap proving feasibility in live payment systems, the question for boards is no longer whether to migrate — it is whether the migration can be completed before the cryptographic shelf-life of today's data expires.</p>
@@ -351,13 +353,13 @@
 </ul>
 <!-- enrich-start -->
 <aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=85" width="64" height="64" loading="lazy" decoding="async"  fetchpriority="high"><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
-<p class="post-reviewed">Last reviewed <time datetime="2026-05-28">2026-05-28</time>.</p>
+<p class="post-reviewed">Last reviewed <time datetime="2026-06-07">2026-06-07</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Related reading</h2>
 <div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026" class="related-media" aria-label="Post-Quantum Payments Infrastructure: Why Banks May Replace Rather Than Retrofit Legacy Rails" tabindex="-1"><img alt="Cryptographic key material drifting into deep blue water — symbolising harvest-now-decrypt-later capture of payment messages whose RSA and ECC envelopes will not survive a cryptanalytically relevant quantum computer" src="https://cloudcdn.pro/api/transform?url=/stocks/images/lan-pham-4qG2qqXi3tY.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="post-quantum-payments-infrastructure-why-banks-may-replace-rather-than-retrofit-"><a href="https://sebastienrousseau.com/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026">Post-Quantum Payments Infrastructure: Why Banks May Replace Rather Than Retrofit Legacy Rails</a> <a class="heading-anchor" href="#post-quantum-payments-infrastructure-why-banks-may-replace-rather-than-retrofit-" aria-label="Link to Post-Quantum Payments Infrastructure: Why Banks May Replace Rather Than Retrofit Legacy Rails">#</a></h3><p><time datetime="2026-05-31">2026-05-31</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026" class="related-media" aria-label="The Quantum-Safe Banking Index in 2026: Post-Quantum Cryptography, QKD, Crypto-Agility, and Harvest-Now-Decrypt-Later Risk" tabindex="-1"><img alt="The Quantum-Safe Banking Index 2026 index diagram for banks and financial institutions in 2026" src="https://cloudcdn.pro/api/transform?url=/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="the-quantum-safe-banking-index-in-2026-post-quantum-cryptography-qkd-crypto-agil"><a href="https://sebastienrousseau.com/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026">The Quantum-Safe Banking Index in 2026: Post-Quantum Cryptography, QKD, Crypto-Agility, and Harvest-Now-Decrypt-Later Risk</a> <a class="heading-anchor" href="#the-quantum-safe-banking-index-in-2026-post-quantum-cryptography-qkd-crypto-agil" aria-label="Link to The Quantum-Safe Banking Index in 2026: Post-Quantum Cryptography, QKD, Crypto-Agility, and Harvest-Now-Decrypt-Later Risk">#</a></h3><p><time datetime="2026-06-04">2026-06-04</time></p></footer></article>
 <article class="related-card"><a href="https://sebastienrousseau.com/2026-05-18-quantum-cryptography-standards-developments-2026" class="related-media" aria-label="The Quantum Cryptography Reset in 2026: PQC Standards, QKD Assurance, and the Migration Work Banks Cannot Defer" tabindex="-1"><img alt="Quantum-safe cryptography migration map for 2026 showing NIST PQC standards, hybrid protocol work, QKD assurance, crypto-agility, and bank data-risk tiers" src="https://cloudcdn.pro/api/transform?url=/stocks/images/alex-shuper-YYZnrK8NrSw-unsplash.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="the-quantum-cryptography-reset-in-2026-pqc-standards-qkd-assurance-and-the-migra"><a href="https://sebastienrousseau.com/2026-05-18-quantum-cryptography-standards-developments-2026">The Quantum Cryptography Reset in 2026: PQC Standards, QKD Assurance, and the Migration Work Banks Cannot Defer</a> <a class="heading-anchor" href="#the-quantum-cryptography-reset-in-2026-pqc-standards-qkd-assurance-and-the-migra" aria-label="Link to The Quantum Cryptography Reset in 2026: PQC Standards, QKD Assurance, and the Migration Work Banks Cannot Defer">#</a></h3><p><time datetime="2026-05-18">2026-05-18</time></p></footer></article>
-<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-16-best-cloud-infrastructure-architecture-2026" class="related-media" aria-label="The Best Cloud Infrastructure Architecture in 2026: An AI-Native, Multi-Cloud, Quantum-Aware Blueprint for Financial Services" tabindex="-1"><img alt="Six-pillar cloud architecture diagram for 2026 — AI-native, multi-cloud, serverless, edge, DevSecOps, and sustainable design, with CloudCDN edge research overlay" src="https://cloudcdn.pro/api/transform?url=/stock/images/cloud-architecture-2026-banner.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="the-best-cloud-infrastructure-architecture-in-2026-an-ai-native-multi-cloud-quan"><a href="https://sebastienrousseau.com/2026-05-16-best-cloud-infrastructure-architecture-2026">The Best Cloud Infrastructure Architecture in 2026: An AI-Native, Multi-Cloud, Quantum-Aware Blueprint for Financial Services</a> <a class="heading-anchor" href="#the-best-cloud-infrastructure-architecture-in-2026-an-ai-native-multi-cloud-quan" aria-label="Link to The Best Cloud Infrastructure Architecture in 2026: An AI-Native, Multi-Cloud, Quantum-Aware Blueprint for Financial Services">#</a></h3><p><time datetime="2026-05-16">2026-05-16</time></p></footer></article>
-<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-17-agentic-engineering-banks-blueprint-2026" class="related-media" aria-label="Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It" tabindex="-1"><img alt="Agentic engineering architecture diagram for banks — spec-driven AI agents, governance control plane, quantum-safe substrate, and legacy mainframe modernisation flows" src="https://cloudcdn.pro/api/transform?url=/stocks/images/hector-j-rivas-1FxMET2U5dU-unsplash.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="agentic-engineering-for-banks-a-2026-blueprint-for-the-c-suite-and-the-engineers"><a href="https://sebastienrousseau.com/2026-05-17-agentic-engineering-banks-blueprint-2026">Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It</a> <a class="heading-anchor" href="#agentic-engineering-for-banks-a-2026-blueprint-for-the-c-suite-and-the-engineers" aria-label="Link to Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It">#</a></h3><p><time datetime="2026-05-17">2026-05-17</time></p></footer></article>
 </div>
 </aside>
 <!-- enrich-end -->
@@ -424,7 +426,7 @@
             <a href="/privacy/index.html">Privacy</a> ·
             <a href="/terms/index.html">Terms</a> ·
             <a href="https://www.thegreenwebfoundation.org/green-web-check/?url=sebastienrousseau.com" target="_blank" rel="noopener noreferrer" title="Hosted on 100% renewable energy (Cloudflare) — estimate via Sustainable Web Design v4 model">Carbon: ~0.04 g/visit · green-hosted</a> ·
-            <a href="https://github.com/sebastienrousseau/sebastienrousseau.github.io/blob/main/doc/SIGSTORE.md" target="_blank" rel="noopener noreferrer" title="Every dated article is signed with Sigstore — verify the bytes match what was published">Verify signatures</a>
+            <a href="https://github.com/sebastienrousseau/sebastienrousseau.github.io/blob/main/project-docs/sigstore.md" target="_blank" rel="noopener noreferrer" title="Every dated article is signed with Sigstore — verify the bytes match what was published">Verify signatures</a>
           </p>
         </div>
       </div>
@@ -445,17 +447,24 @@
       "image": "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png",
       "jobTitle": "Senior Product Manager",
       "description": "AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "ORCID",
+        "value": "0009-0005-1434-284X",
+        "url": "https://orcid.org/0009-0005-1434-284X"
+      },
       "worksFor": {
         "@type": "Organization",
+        "@id": "https://www.hsbc.com/#organization",
         "name": "HSBC Commercial & Investment Bank",
         "url": "https://www.hsbc.com/"
       },
       "alumniOf": [
-        {"@type": "Organization", "name": "PayPal"},
-        {"@type": "Organization", "name": "Barclays"},
-        {"@type": "Organization", "name": "Shazam Entertainment"},
-        {"@type": "Organization", "name": "AKQA"},
-        {"@type": "Organization", "name": "Virgin Group"}
+        {"@type": "Organization", "name": "PayPal", "url": "https://www.paypal.com/"},
+        {"@type": "Organization", "name": "Barclays", "url": "https://www.barclays.com/"},
+        {"@type": "Organization", "name": "Shazam Entertainment", "url": "https://www.shazam.com/"},
+        {"@type": "Organization", "name": "AKQA", "url": "https://www.akqa.com/"},
+        {"@type": "Organization", "name": "Virgin Group", "url": "https://www.virgin.com/"}
       ],
       "memberOf": {
         "@type": "ProgramMembership",
@@ -466,18 +475,39 @@
           "url": "https://emergingpaymentsasia.org/"
         }
       },
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "professional experience",
+          "name": "20+ years across Tier-1 banks and global payments infrastructure",
+          "recognizedBy": {"@type": "Organization", "name": "HSBC Commercial & Investment Bank", "url": "https://www.hsbc.com/"}
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "domain expertise",
+          "name": "ISO 20022 migration and wholesale payments architecture",
+          "recognizedBy": {"@type": "Organization", "name": "SWIFT", "url": "https://www.swift.com/"}
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "domain expertise",
+          "name": "Post-Quantum Cryptography for financial services",
+          "recognizedBy": {"@type": "Organization", "name": "NIST Post-Quantum Cryptography Project", "url": "https://csrc.nist.gov/projects/post-quantum-cryptography"}
+        }
+      ],
       "knowsAbout": [
-        "Applied artificial intelligence in banking",
-        "Generative AI for financial services",
-        "Wholesale payments",
-        "ISO 20022 migration",
-        "SWIFT gpi",
-        "SEPA Instant Payments",
-        "Cross-border payments",
-        "Post-quantum cryptography",
-        "CRYSTALS-Kyber",
-        "CRYSTALS-Dilithium",
-        "Quantum-safe payment authentication"
+        {"@type": "DefinedTerm", "name": "Post-Quantum Cryptography", "sameAs": "https://en.wikipedia.org/wiki/Post-quantum_cryptography"},
+        {"@type": "DefinedTerm", "name": "ML-KEM (FIPS 203)", "sameAs": "https://csrc.nist.gov/pubs/fips/203/final"},
+        {"@type": "DefinedTerm", "name": "ML-DSA (FIPS 204)", "sameAs": "https://csrc.nist.gov/pubs/fips/204/final"},
+        {"@type": "DefinedTerm", "name": "ISO 20022", "sameAs": "https://en.wikipedia.org/wiki/ISO_20022"},
+        {"@type": "DefinedTerm", "name": "SWIFT gpi", "sameAs": "https://www.swift.com/our-solutions/swift-gpi"},
+        {"@type": "DefinedTerm", "name": "SEPA Instant Payments", "sameAs": "https://www.ecb.europa.eu/paym/integration/retail/instant_payments/html/index.en.html"},
+        {"@type": "DefinedTerm", "name": "FedNow Service", "sameAs": "https://www.federalreserve.gov/paymentsystems/fednow_about.htm"},
+        {"@type": "DefinedTerm", "name": "Real-Time Payments (RTP)", "sameAs": "https://www.theclearinghouse.org/payment-systems/rtp"},
+        {"@type": "DefinedTerm", "name": "Cross-border payments", "sameAs": "https://en.wikipedia.org/wiki/Cross-border_payments"},
+        {"@type": "DefinedTerm", "name": "Wholesale banking", "sameAs": "https://en.wikipedia.org/wiki/Wholesale_banking"},
+        {"@type": "DefinedTerm", "name": "Applied artificial intelligence in banking", "sameAs": "https://en.wikipedia.org/wiki/Applications_of_artificial_intelligence"},
+        {"@type": "DefinedTerm", "name": "Generative artificial intelligence", "sameAs": "https://en.wikipedia.org/wiki/Generative_artificial_intelligence"}
       ],
       "address": {
         "@type": "PostalAddress",
@@ -485,6 +515,7 @@
         "addressCountry": "United Kingdom"
       },
       "sameAs": [
+        "https://orcid.org/0009-0005-1434-284X",
         "https://twitter.com/wwdseb",
         "https://www.linkedin.com/in/sebastienrousseau/",
         "https://medium.com/@BankingOnQuantum",
@@ -493,12 +524,39 @@
       ]
     },
     {
+      "@type": ["Organization", "Brand"],
+      "@id": "https://sebastienrousseau.com/#organization",
+      "name": "Sebastien Rousseau",
+      "alternateName": "Banking on Quantum",
+      "url": "https://sebastienrousseau.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "https://sebastienrousseau.com/#logo",
+        "url": "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png",
+        "width": "512",
+        "height": "512",
+        "caption": "Sebastien Rousseau"
+      },
+      "founder": {"@id": "https://sebastienrousseau.com/#person"},
+      "editorialPolicy": "https://sebastienrousseau.com/editorial/",
+      "correctionsPolicy": "https://sebastienrousseau.com/editorial/#corrections",
+      "ethicsPolicy": "https://sebastienrousseau.com/editorial/",
+      "diversityPolicy": "https://sebastienrousseau.com/editorial/",
+      "sameAs": [
+        "https://github.com/sebastienrousseau",
+        "https://twitter.com/wwdseb",
+        "https://www.linkedin.com/in/sebastienrousseau/",
+        "https://medium.com/@BankingOnQuantum"
+      ]
+    },
+    {
       "@type": "WebSite",
       "@id": "https://sebastienrousseau.com/#website",
       "url": "https://sebastienrousseau.com/",
       "name": "Sebastien Rousseau",
       "description": "AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.",
-      "publisher": {"@id": "https://sebastienrousseau.com/#person"},
+      "publisher": {"@id": "https://sebastienrousseau.com/#organization"},
+      "author": {"@id": "https://sebastienrousseau.com/#person"},
       "inLanguage": "en-GB"
     },
     {
@@ -516,7 +574,7 @@
         <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":4954,"about":{"@type":"Thing","name":"post-quantum cryptography","sameAs":["https://en.wikipedia.org/wiki/Post-quantum_cryptography","https://www.wikidata.org/wiki/Q1364608","https://sebastienrousseau.com/2025-09-01-quantum-safe-payments-epaa/index.html"]},"headline":"Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for Corporate Finance","description":"Quantum risk has moved from research curiosity to active regulatory mandate. With the G7 roadmap published in January 2026, the EU, UK, and ASD timelines clarified, and the BIS Project Leap proving feasibility at the central-bank level, the question for boards is no longer whether to migrate — it is whether the migration can be completed before the cryptographic shelf-life of today's data expires.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp","width":"1425","height":"571","caption":"Post-quantum cryptography migration roadmap diagram — corporate banking infrastructure transitioning from RSA to ML-KEM and ML-DSA"},"url":"https://sebastienrousseau.com/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance","datePublished":"2026-05-14T06:06:06+00:00","dateModified":"2026-05-14","inLanguage":"en","keywords":"post-quantum cryptography, PQC migration, corporate banking, financial services, G7 CEG roadmap, BIS Project Leap, ML-KEM, ML-DSA, FIPS 203, FIPS 204","articleSection":"Quantum","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/articles/#blog","name":"Sebastien Rousseau — Articles","url":"https://sebastienrousseau.com/articles/"},"citation":[{"@type":"CreativeWork","url":"https://www.bis.org/publ/othp107.htm"},{"@type":"CreativeWork","url":"https://csrc.nist.gov/pubs/fips/203/final"},{"@type":"CreativeWork","url":"https://www.bis.org/about/bisih/topics/cyber_security/leap.htm"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/articles/"},{"@type":"ListItem","position":3,"name":"Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for Corporate Finance","item":"https://sebastienrousseau.com/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance"}]}]}
     </script>
-<script src="/main.e1c270a6.js" defer integrity="sha256-p2FFu6C9UjC1BhWEVTdryx1iPa0FNVgaz5dz365Gd9I= sha256-UVRmWZ21ffSNgLDN1dLfr48S6iL6D3AxL4O5xYOK7U4=" crossorigin="anonymous"></script>
+<script src="/main.c9d8dc8d.js" defer integrity="sha256-G3RtagQVu1xMUTaa18I4L7J+vKPyjk2ZQG182kd2kow= sha256-NzL6b2FQD17U0Taqx1C1kOArNHU82qw6DUW7wiG7Bp0=" crossorigin="anonymous"></script>
   
 <!-- SSG Search Widget -->
 <div id="ssg-search-widget">
@@ -541,5 +599,5 @@
 </div>
 <script src="/_csp/61bc2fae7f71ccad.js" integrity="sha256-Y0txeCfdk+GUctTYMAxMbFCB2qs1cPm8JSIX3WRS9cs= sha256-5Ca5zk/7tsavsCDhg6M1m4feBn+L4YnJ7iavKawynII=" crossorigin="anonymous"></script>
 </div>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for Corporate Finance","url":"https://sebastienrousseau.com/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance/index.html","inLanguage":"en-GB","isAccessibleForFree":true,"proficiencyLevel":"Expert","keywords":"post-quantum cryptography, PQC migration, corporate banking, financial services, G7 CEG roadmap, BIS Project Leap, ML-KEM, ML-DSA, FIPS 203, FIPS 204","dependencies":["Post-Quantum Cryptography","NIST FIPS 203"]}</script></body>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for Corporate Finance","url":"https://sebastienrousseau.com/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance/index.html","inLanguage":"en-GB","isAccessibleForFree":true,"author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#organization"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance/index.html"},"keywords":"post-quantum cryptography, PQC migration, corporate banking, financial services, G7 CEG roadmap, BIS Project Leap, ML-KEM, ML-DSA, FIPS 203, FIPS 204","proficiencyLevel":"Expert","dependencies":["Post-Quantum Cryptography","NIST FIPS 203"]}</script></body>
 </html>

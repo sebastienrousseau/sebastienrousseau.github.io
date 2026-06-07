@@ -4,14 +4,104 @@
   <link href="https://sebastienrousseau.com/zh-hant/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/zh-hant/"/>
   <id>https://sebastienrousseau.com/zh-hant/</id>
-  <updated>2026-05-28T18:12:27+00:00</updated>
+  <updated>2026-06-07T18:23:54+00:00</updated>
   <entry>
     <title>2026 自主財務指數:代理型司庫、可程式化流動性、代幣化存款與即時現金管控</title>
     <link href="https://sebastienrousseau.com/zh-hant/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/"/>
     <id>https://sebastienrousseau.com/zh-hant/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/</id>
-    <updated>2026-05-28T18:12:27+00:00</updated>
-    <published>2026-05-28T18:12:27+00:00</published>
+    <updated>2026-06-07T18:23:54+00:00</updated>
+    <published>2026-06-07T18:23:54+00:00</published>
     <summary>2026 年自主財務就緒度指數——涵蓋代理型司庫工作流、可程式化流動性、代幣化存款、即時支付與自動化現金管控的單一營運模型。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>2026 年的多管道銀行:在單一策略中整合卡片、A2A、穩定幣、RTP、FedNow 與 Open Banking</title>
+    <link href="https://sebastienrousseau.com/zh-hant/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/"/>
+    <id>https://sebastienrousseau.com/zh-hant/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</id>
+    <updated>2026-06-07T18:23:54+00:00</updated>
+    <published>2026-06-07T18:23:54+00:00</published>
+    <summary>FedNow 要求 24/7 預籌流動性。ACH 便宜但是 T+1。USDC 原子結算卻需錢包基礎設施。2026 年多管道銀行依成本、終局性、流動性成本逐筆路由,核心是讀取 ISO 20022 pacs.008 的編排引擎。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>後量子支付基礎建設:銀行為何可能替換而非改造傳統管道</title>
+    <link href="https://sebastienrousseau.com/zh-hant/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/"/>
+    <id>https://sebastienrousseau.com/zh-hant/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</id>
+    <updated>2026-06-07T18:23:54+00:00</updated>
+    <published>2026-06-07T18:23:54+00:00</published>
+    <summary>後量子密碼學迫使支付管道做出二選一決定:在 SWIFT MT 與 ISO 20022 信封中改造 RSA/ECC,或以密碼敏捷基礎建設替換。架構師必須在 HNDL 變成實際損失之前做出決定。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>數位資產 2026:銀行不能延後的轉型</title>
+    <link href="https://sebastienrousseau.com/zh-hant/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/"/>
+    <id>https://sebastienrousseau.com/zh-hant/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</id>
+    <updated>2026-06-07T18:23:54+00:00</updated>
+    <published>2026-06-07T18:23:54+00:00</published>
+    <summary>數位資產不再是創新賭注,而是結算、託管與資產負債表的架構命題。銀行的戰略課題,是在結構性不確定下完成基礎建設設計。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>2026 大額支付指標:ISO 20022、代幣化存款、即時軌道與跨境結算</title>
+    <link href="https://sebastienrousseau.com/zh-hant/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/"/>
+    <id>https://sebastienrousseau.com/zh-hant/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</id>
+    <updated>2026-06-06T06:06:06+00:00</updated>
+    <published>2026-06-06T06:06:06+00:00</published>
+    <summary>2026 大額支付準備度指標,衡量 ISO 20022 資料品質、代幣化存款、即時軌道、跨境結算與流動性效率。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>2026 雲端原生銀行指數:DORA、平台工程、主權雲與營運韌性</title>
+    <link href="https://sebastienrousseau.com/zh-hant/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/"/>
+    <id>https://sebastienrousseau.com/zh-hant/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/</id>
+    <updated>2026-06-05T06:06:06+00:00</updated>
+    <published>2026-06-05T06:06:06+00:00</published>
+    <summary>2026 雲端原生銀行指數:衡量 DORA 就緒度、平台工程成熟度、雲端集中風險、退場證據與營運韌性的工程藍圖。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>2026 年量子安全銀行業指標:後量子密碼、QKD、密碼敏捷性與「先擷取、後解密」風險</title>
+    <link href="https://sebastienrousseau.com/zh-hant/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/"/>
+    <id>https://sebastienrousseau.com/zh-hant/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/</id>
+    <updated>2026-06-04T06:06:06+00:00</updated>
+    <published>2026-06-04T06:06:06+00:00</published>
+    <summary>2026 年量子安全銀行業指標:NIST 後量子標準、密碼資產盤點、密碼敏捷性、QKD,以及長壽機密資料的曝險視角。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>2026 銀行智能體 AI 指數:量測自主性、治理、可稽核性與業務影響</title>
+    <link href="https://sebastienrousseau.com/zh-hant/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/"/>
+    <id>https://sebastienrousseau.com/zh-hant/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/</id>
+    <updated>2026-06-03T06:06:06+00:00</updated>
+    <published>2026-06-03T06:06:06+00:00</published>
+    <summary>面向銀行的智能體 AI 就緒度指數框架,涵蓋自主性、治理、可稽核性、可靠度、控制與業務價值六大面向。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>2026 銀行基礎建設指數:衡量自主式 AI、量子安全、雲原生韌性與大額支付的準備度</title>
+    <link href="https://sebastienrousseau.com/zh-hant/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/"/>
+    <id>https://sebastienrousseau.com/zh-hant/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/</id>
+    <updated>2026-06-02T06:06:06+00:00</updated>
+    <published>2026-06-02T06:06:06+00:00</published>
+    <summary>受史丹佛 AI 指數啟發的 2026 年銀行基礎建設指數,衡量自主式 AI、量子安全密碼學、雲原生韌性與全球大額支付四大領域的同步準備度。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>英國批發數位市場:代幣化金邊債、清算與全新推動者一職</title>
+    <link href="https://sebastienrousseau.com/zh-hant/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/"/>
+    <id>https://sebastienrousseau.com/zh-hant/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</id>
+    <updated>2026-05-30T06:06:06+00:00</updated>
+    <published>2026-05-30T06:06:06+00:00</published>
+    <summary>英國「批發數位市場推動者」一職將代幣化批發金融升格為國家競爭力工程,設計紀律取代分散試點成為 2026 年董事會議題。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>ISO 20022 遷移之後:2026 年把支付資料變成銀行產品</title>
+    <link href="https://sebastienrousseau.com/zh-hant/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/"/>
+    <id>https://sebastienrousseau.com/zh-hant/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</id>
+    <updated>2026-05-29T06:06:06+00:00</updated>
+    <published>2026-05-29T06:06:06+00:00</published>
+    <summary>ISO 20022 遷移之後是支付資料產品商機。結構化地址、用途代碼、發票明細、調查訊息與更豐富的支付狀態事件,可轉化為對帳、詐欺、流動性、合規與分析產品,銀行的設計紀律決定 2026 年的競爭力。</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>

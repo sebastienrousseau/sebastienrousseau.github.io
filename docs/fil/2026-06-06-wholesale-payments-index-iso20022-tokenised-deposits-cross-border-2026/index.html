@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="fil-PH">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Sat, 06 Jun 2026 06:06:06 +0000" id="date" />
+    <meta itemprop="dateModified" content="Sat, 06 Jun 2026 06:06:06 +0000" id="last-modified" />
+    <title>Ang Wholesale Payments Index sa 2026: ISO 20022, Tokenised Deposits, Real-Time Rails, at Cross-Border Settlement — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="Index para sa kahandaan ng wholesale payments sa 2026: kalidad ng ISO 20022 data, tokenised deposits, real-time rails, cross-border settlement, at liquidity efficiency.">
+<meta name="keywords" content="wholesale payments 2026, ISO 20022, tokenised deposits, Project Agora, cross border payments, real time payments, structured address data, kalidad ng payment data">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="The Wholesale Payments Index 2026">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-28qat2QcLvDkTEIO7qMhzox4gjtsgmgvwl1hFIZ0jXE=' 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-9gTJu88OM4O903mjLq5UrC7hGSzFj70x8A5bViqv7Hc=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-QsQfHtg6UCyxHhuqYm3QLAyxR2OLwjxswxSAxbYVYPE=' 'sha256-awhEYyyv0Y6g4Qqu7vdi//cqfsntour5Auf2+GtH+TI=' 'sha256-mdm1njnINoP+RPokQ8BLST/GjSggkGUsiDJ+uD96gUc=' 'self' 'inline-speculation-rules' https://cdn.jsdelivr.net https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' https://cloudcdn.pro https://www.google.com https://open.spotify.com;
+        img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/fil/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/newsreader-latin.woff2" crossorigin />
+    <link rel="stylesheet" href="/fonts/fonts.css" />
+    <!-- Preload the LCP hero portrait so it doesn't compete with the
+         render-blocking JS bundle on throttled mobile connections.
+         Lighthouse-simulated Slow-4G has been pinning LCP at ~5.6s; the
+         observed (real-network) LCP is 165 ms. This hint pulls the
+         synthetic LCP in line with the observed value. -->
+    <link rel="preload" as="image" href="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=1200&format=webp&q=85" fetchpriority="high">
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script>(function(){try{var saved=localStorage.getItem("theme");var prefersDark=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;var theme=saved||(prefersDark?"dark":"light");document.documentElement.setAttribute("data-theme",theme);}catch(e){}})();</script>
+
+    <link rel="stylesheet" href="/_csp/4724896d11ec6663.css" integrity="sha256-SFQ1AngSMlx94d5FmN1lWSKPs5RL6Y8BQf0nIEBLd7g= sha256-6BJkWGvqh3blXQksn+ynhkpoqcrJzzWhSKVuLVBJY4s=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Feed ng Atom" href="/fil/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<link rel="stylesheet" href="/highlight.80eeb321.css">
+<meta property="og:title" content="Ang Wholesale Payments Index sa 2026: ISO 20022, Tokenised Deposits, Real-Time Rails, at Cross-Border Settlement — Sebastien Rousseau">
+<meta property="og:description" content="Index para sa kahandaan ng wholesale payments sa 2026: kalidad ng ISO 20022 data, tokenised deposits, real-time rails, cross-border settlement, at liquidity efficiency.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/fil/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/">
+<meta property="og:image" content="https://cloudcdn.pro/stocks/images/miquel-parera-NsXLehhHx1Q.webp">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="fil_PH">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Ang Wholesale Payments Index sa 2026: ISO 20022, Tokenised Deposits, Real-Time Rails, at Cross-Border Settlement — Sebastien Rousseau">
+<meta name="twitter:description" content="Index para sa kahandaan ng wholesale payments sa 2026: kalidad ng ISO 20022 data, tokenised deposits, real-time rails, cross-border settlement, at liquidity efficiency.">
+<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/miquel-parera-NsXLehhHx1Q.webp">
+<link rel="canonical" href="https://sebastienrousseau.com/fil/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" /><link rel="alternate" hreflang="bn" href="https://sebastienrousseau.com/bn/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" /><link rel="alternate" hreflang="cs" href="https://sebastienrousseau.com/cs/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" /><link rel="alternate" hreflang="fil" href="https://sebastienrousseau.com/fil/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" /><link rel="alternate" hreflang="ha" href="https://sebastienrousseau.com/ha/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" /><link rel="alternate" hreflang="he" href="https://sebastienrousseau.com/he/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" /><link rel="alternate" hreflang="hi" href="https://sebastienrousseau.com/hi/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" /><link rel="alternate" hreflang="id" href="https://sebastienrousseau.com/id/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" /><link rel="alternate" hreflang="nl" href="https://sebastienrousseau.com/nl/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" /><link rel="alternate" hreflang="pl" href="https://sebastienrousseau.com/pl/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" /><link rel="alternate" hreflang="ro" href="https://sebastienrousseau.com/ro/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" /><link rel="alternate" hreflang="sv" href="https://sebastienrousseau.com/sv/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" /><link rel="alternate" hreflang="th" href="https://sebastienrousseau.com/th/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" /><link rel="alternate" hreflang="tr" href="https://sebastienrousseau.com/tr/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" /><link rel="alternate" hreflang="uk" href="https://sebastienrousseau.com/uk/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" /><link rel="alternate" hreflang="vi" href="https://sebastienrousseau.com/vi/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" /><link rel="alternate" hreflang="yo" href="https://sebastienrousseau.com/yo/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" integrity="sha256-tV/7vAgYDUuBQbSGEPjXL/JC0sD7QpSxXCGKT4ALhh8= sha256-dvm1KF9mEWIapL8BE0nyFlHaKSf6TsjZZoQcJeRPraI=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">Lumaktaw sa pangunahing nilalaman</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="I-toggle ang nabigasyon" />
+      <div class="wrap">
+        <a class="ap-brand" href="/fil/index.html" aria-label="Home ni Sebastien Rousseau">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="Pangunahing nabigasyon">
+          <ul class="ap-menu">
+            <li><a href="/fil/tungkol-sa-akin/index.html">Tungkol</a></li>
+            <li><a href="/fil/mga-artikulo/index.html" aria-current="page" class="active">Mga artikulo</a></li>
+            <li><a href="/fil/mga-publikasyon/index.html">Mga publikasyon</a></li>
+            <li><a href="/fil/mga-paksa/index.html">Mga paksa</a></li>
+            <li><a href="/fil/mga-proyekto/index.html">Mga proyekto</a></li>
+            <li><a href="/fil/mga-playlist/index.html">Mga playlist</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="Lumipat sa dark mode" aria-pressed="false" title="Ibahin ang tema">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="Maghanap (Cmd o Ctrl + K)" title="Maghanap (⌘K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="Wika">
+            <button type="button" class="ap-lang-toggle" aria-label="FIL, Baguhin ang wika" aria-expanded="false" aria-haspopup="menu" title="Baguhin ang wika">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">FIL</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <a class="ap-lang-item" href="/bn/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
+                <a class="ap-lang-item" href="/cs/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
+                <a class="ap-lang-item" href="/de/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <a class="ap-lang-item" href="/fil/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
+                <a class="ap-lang-item" href="/ha/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
+                <a class="ap-lang-item" href="/he/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
+                <a class="ap-lang-item" href="/hi/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <a class="ap-lang-item" href="/id/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
+                <a class="ap-lang-item" href="/it/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <a class="ap-lang-item" href="/pl/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
+                <a class="ap-lang-item" href="/pt-br/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <a class="ap-lang-item" href="/ro/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
+                <a class="ap-lang-item" href="/ru/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <a class="ap-lang-item" href="/sv/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
+                <a class="ap-lang-item" href="/th/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
+                <a class="ap-lang-item" href="/tr/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
+                <a class="ap-lang-item" href="/uk/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" data-lang="uk" role="menuitem">🇺🇦 Українська</a>
+                <a class="ap-lang-item" href="/vi/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
+                <a class="ap-lang-item" href="/yo/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
+                <a class="ap-lang-item" href="/zh-hans/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/fil/makipag-ugnayan/index.html" aria-label="Makipag-ugnayan">Makipag-ugnayan ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="I-toggle ang nabigasyon">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>Ang Wholesale Payments Index sa 2026: ISO 20022, Tokenised Deposits, Real-Time Rails, at Cross-Border Settlement</h1>
+      <p class="sub">Mula sa messaging migration patungo sa programmable settlement ang wholesale payments; kailangang sukatin ng mga bangko ang kalidad ng data, orkestrasyon ng rails, liquidity, at finality.</p>
+    <nav class="article-tags" aria-label="Mga paksa"><a href="/tags/index.html#h3-wholesale-payments-2026" class="article-tag" rel="tag">wholesale payments 2026</a><a href="/tags/index.html#h3-iso-20022" class="article-tag" rel="tag">ISO 20022</a><a href="/tags/index.html#h3-tokenised-deposits" class="article-tag" rel="tag">tokenised deposits</a><a href="/tags/index.html#h3-project-agora" class="article-tag" rel="tag">Project Agora</a><a href="/tags/index.html#h3-cross-border-payments" class="article-tag" rel="tag">cross border payments</a><a href="/tags/index.html#h3-real-time-payments" class="article-tag" rel="tag">real time payments</a><a href="/tags/index.html#h3-structured-address-data" class="article-tag" rel="tag">structured address data</a><a href="/tags/index.html#h3-kalidad-ng-payment-data" class="article-tag" rel="tag">kalidad ng payment data</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2026-06-06T06:06:06+00:00" class="meta-pub">Inilathala noong 6 Jun 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Tinatayang oras ng pagbasa">9 min basahin</span></div></section><figure class="article-banner"><img src="https://cloudcdn.pro/api/transform?url=/stocks/images/miquel-parera-NsXLehhHx1Q.webp&w=1600&format=webp&q=85" alt="Banner for: Ang Wholesale Payments Index sa 2026: ISO 20022, Tokenised Deposits, Real-Time Rails, at Cross-Border Settlement" width="1200" height="675" fetchpriority="high" decoding="async" /></figure>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>Mga nilalaman</h2><ol><li><a href="#bakit-ang-2026-ang-taon-na-mahalaga-ang-index-na-ito">Bakit ang 2026 ang Taon na Mahalaga ang Index na Ito</a></li><li><a href="#ang-2026-index-architecture">Ang 2026 Index Architecture</a></li><li><a href="#mga-pangunahing-senyales-ng-wholesale-payments-na-itinugma-sa-mga-pandaigdigang-">Mga Pangunahing Senyales ng Wholesale Payments na Itinugma sa Mga Pandaigdigang Prayoridad</a></li><li><a href="#ang-inflection-point-ng-payment-data">Ang Inflection Point ng Payment Data</a></li><li><a href="#tokenised-deposits-at-wholesale-cbdc">Tokenised Deposits at Wholesale CBDC</a></li><li><a href="#ang-bagong-wholesale-payment-product">Ang Bagong Wholesale Payment Product</a></li><li><a href="#ano-ang-kahulugan-nito-ayon-sa-uri-ng-bangko">Ano ang Kahulugan Nito Ayon sa Uri ng Bangko</a></li><li><a href="#konklusyon">Konklusyon</a></li><li><a href="#mga-madalas-na-itinatanong">Mga Madalas na Itinatanong</a></li><li><a href="#mga-sanggunian">Mga Sanggunian</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> Index para sa kahandaan ng wholesale payments sa 2026: kalidad ng ISO 20022 data, tokenised deposits, real-time rails, cross-border settlement, at liquidity efficiency.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>Bakit ang 2026 ang Taon na Mahalaga ang Index na Ito.</strong> Kapaki-pakinabang ang Stanford AI Index dahil itinuturing nito ang isang mabilis na umuusbong na teknolohiya bilang isang bagay na masusukat: pinagsasama ang output ng pananaliksik, teknikal na pagganap,…</li>  <li><strong>Ang 2026 Index Architecture.</strong> Hindi research agenda ang 2026 signal set.</li>  <li><strong>Mga Pangunahing Senyales ng Wholesale Payments na Itinugma sa Mga Pandaigdigang Prayoridad.</strong> Hindi research agenda ang 2026 signal set.</li>  <li><strong>Ang Inflection Point ng Payment Data.</strong> Lumipat na ang ISO 20022 mula sa proyekto ng messaging format patungo sa operating model para sa kalidad ng data.</li></ul></aside><!-- lead-start: manual -->
+
+<!-- lead-end -->
+<p>Hinuhubog ng dalawang sabay na paglilipat ang wholesale payments sa 2026: structured payment data at programmable settlement. Pinipilit ng milestone ng SWIFT para sa structured-address sa Nobyembre 2026 ang kalidad ng data papasok sa operating model, habang sinusubok ng BIS Project Agorá at tokenised deposits kung kayang maging mas atomic, transparent, at laging-bukas ang cross-border settlement.</p>
+<hr />
+<blockquote>
+<p><strong>Executive Summary / Mga Pangunahing Punto</strong></p>
+<ul>
+<li><strong>Matigas na data milestone ang Nobyembre 2026.</strong> Ayon sa SWIFT, hindi na susuportahan ang mga bayad na naglalaman ng unstructured addresses pagkatapos ng pagbabago sa SR 2026.</li>
+<li><strong>Nagiging product infrastructure ang structured data.</strong> Dapat nasa itinakdang mga field nang minimum ang bayan at bansa, na ginagawang isyu ng kliyente, operations, at compliance ang kalidad ng payment data.</li>
+<li><strong>Wholesale design option ang tokinised deposits.</strong> Sinusuri ng Project Agorá ang tokenised commercial bank deposits at tokenised central bank reserves sa isang unified ledger model.</li>
+<li><strong>Dapat sukatin ng index ang kalidad ng settlement, hindi lamang ang bilis.</strong> Kasinghalaga ng instant execution ang finality, transparency, repair rates, paggamit ng liquidity, compliance data, at visibility para sa kliyente.</li>
+<li><strong>Public-private agenda pa rin ang cross-border payments.</strong> Pinapatakbo pa rin ng FSB ang G20 roadmap sa pamamagitan ng pagpapatupad, na may koordinasyon ng publiko at pribadong sektor.</li>
+</ul>
+</blockquote>
+<hr />
+<h2 id="bakit-ang-2026-ang-taon-na-mahalaga-ang-index-na-ito">Bakit ang 2026 ang Taon na Mahalaga ang Index na Ito <a class="heading-anchor" href="#bakit-ang-2026-ang-taon-na-mahalaga-ang-index-na-ito" aria-label="Link patungo sa Bakit ang 2026 ang Taon na Mahalaga ang Index na Ito">#</a></h2>
+<p>Kapaki-pakinabang ang Stanford AI Index dahil itinuturing nito ang isang mabilis na umuusbong na teknolohiya bilang isang bagay na masusukat: pinagsasama ang output ng pananaliksik, teknikal na pagganap, responsableng deployment, ekonomiya, paggamit ng sektor, patakaran, at pampublikong damdamin sa isang balangkas (<a href="https://hai.stanford.edu/ai-index/2026-ai-index-report" title="The 2026 AI Index Report">Stanford HAI ⧉</a>). Kailangan na ngayon ng mga bangko at institusyong pinansyal ang parehong disiplina para sa imprastraktura. Hindi na magkahiwalay na innovation tracks ang agentic AI, quantum-safe security, cloud native resilience, at wholesale payments; nagsasama na sila sa isang operating model.</p>
+<p>Hindi kung mahalaga ba ang bawat domain ang praktikal na tanong para sa isang bangko. Kung kayang sukatin ng institusyon ang kahandaan sa lahat ng ito nang sabay-sabay. Maaaring i-deploy ng isang bangko ang agentic AI at maging mahina pa rin kung hindi pa migration-ready ang kanyang cryptography. Maaari nitong modernisahin ang mga cloud platform at mabigo pa rin kung mananatiling unstructured ang payment data. Maaari itong magpatakbo ng mga tokenisation pilot at lumikha pa rin ng systemic risk kung hindi sabay na idinisenyo ang settlement, liquidity, identity, at audit layers.</p>
+<h2 id="ang-2026-index-architecture">Ang 2026 Index Architecture <a class="heading-anchor" href="#ang-2026-index-architecture" aria-label="Link patungo sa Ang 2026 Index Architecture">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Index Layer</th>
+<th>Direksiyon sa 2026</th>
+<th>Sukatan ng Kahandaan</th>
+<th>Panganib Kung Mali ang Pagharap</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>ISO 20022 data</strong></td>
+<td>Lumipat mula unstructured text patungong pinamamahalaang structured fields</td>
+<td>Kahandaan ng structured-address at reject rate</td>
+<td>Mga payment reject at manual repair</td>
+</tr>
+<tr>
+<td><strong>Rail orchestration</strong></td>
+<td>I-route sa RTGS, instant, correspondent, stablecoin, at tokenised rails</td>
+<td>Routing na sensitibo sa gastos, bilis, finality, at hurisdiksyon</td>
+<td>Hati-hating rails na may dobleng kontrol</td>
+</tr>
+<tr>
+<td><strong>Tokenised settlement</strong></td>
+<td>Gamitin ang tokenised deposits at central bank money kung saan nababawasan ang friction</td>
+<td>Saklaw ng DvP, PvP, atomic settlement</td>
+<td>Mga pilot asset na walang halaga sa business workflow</td>
+</tr>
+<tr>
+<td><strong>Liquidity</strong></td>
+<td>I-optimise ang intraday liquidity, trapped cash, at settlement windows</td>
+<td>Naipon na liquidity at pagbawas sa settlement failure</td>
+<td>Mas mabilis na pag-ubos ng liquidity</td>
+</tr>
+<tr>
+<td><strong>Compliance</strong></td>
+<td>Ilagay ang AML, sanctions, FATF, at audit requirements sa payment data</td>
+<td>Straight-through compliance at explainability</td>
+<td>Mas mayamang data nang walang mas matibay na kontrol</td>
+</tr>
+</tbody>
+</table>
+<h2 id="mga-pangunahing-senyales-ng-wholesale-payments-na-itinugma-sa-mga-pandaigdigang-">Mga Pangunahing Senyales ng Wholesale Payments na Itinugma sa Mga Pandaigdigang Prayoridad <a class="heading-anchor" href="#mga-pangunahing-senyales-ng-wholesale-payments-na-itinugma-sa-mga-pandaigdigang-" aria-label="Link patungo sa Mga Pangunahing Senyales ng Wholesale Payments na Itinugma sa Mga Pandaigdigang Prayoridad">#</a></h2>
+<p>Hindi research agenda ang 2026 signal set. Isa itong delivery checklist na kasalukuyang sinusukat sa Chief Payments Officer ng isang bangko. Sa tatlong lugar lumilitaw ang remediation work: ang message envelope, ang rail orchestration layer, at ang settlement ledger.</p>
+<table>
+<thead>
+<tr>
+<th>Senyales</th>
+<th>Sanggunian ng G20 / SWIFT / BIS</th>
+<th>Teknikal na Pagpapatupad sa Platform</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>65% ng mga payment message ay naglalaman pa rin ng unstructured addresses</strong></td>
+<td><a href="https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed" title="ISO 20022 novembre 2026 structured address milestone">SWIFT SR 2026 — structured-address milestone, Nob 2026 ⧉</a></td>
+<td>Schema validation sa payment middleware bago tumama ang mensahe sa SWIFTNet adapter; automated address parsing sa corporate-channel + correspondent-bank ingress.</td>
+</tr>
+<tr>
+<td><strong>FSB G20 target: 75% ng cross-border payments matapos sa loob ng 1 oras pagsapit ng 2027</strong></td>
+<td><a href="https://www.fsb.org/2026/03/fsb-kicks-off-new-implementation-phase-to-enhance-cross-border-payments-through-public-private-partnership/" title="FSB cross-border payments implementation phase">FSB cross-border payments roadmap, 2026 implementation phase ⧉</a></td>
+<td>Real-time FX-conversion gateways na may pre-agreed liquidity windows; T+0 confirmation hooks sa client portal; rail-routing engine na hindi pumipili ng anumang corridor na hindi kayang matupad ang 1-oras na sukatan.</td>
+</tr>
+<tr>
+<td><strong>FSB G20 target: average cross-border transaction cost na mababa sa 1%, retail na mababa sa 3%</strong></td>
+<td><a href="https://www.fsb.org/2026/03/fsb-kicks-off-new-implementation-phase-to-enhance-cross-border-payments-through-public-private-partnership/" title="FSB cross-border payments implementation phase">FSB G20 quantitative targets ⧉</a></td>
+<td>Cost-attribution telemetry sa bawat corridor (FX spread, correspondent fee, lifting cost); margin policy registry na naglalantad ng non-compliant pricing bago mag-quote.</td>
+</tr>
+<tr>
+<td><strong>Papasok sa prototype phase ang BIS Project Agorá sa pitong central bank + 41 commercial bank</strong></td>
+<td><a href="https://www.bis.org/about/bisih/topics/fmis/agora.htm" title="Project Agorá">BIS Project Agorá ⧉</a></td>
+<td>Unified-ledger integration spec: tokenised-deposit ledger node + wholesale-CBDC settlement plane + KYC/AML hooks; on-chain liquidity pools na ayon sa bahagi ng bangko sa corridor.</td>
+</tr>
+<tr>
+<td><strong>Nagiging maliwanag ang &quot;digital money&quot; framework ng Deutsche Bank sa client architecture</strong></td>
+<td><a href="https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs" title="Digital Money: stablecoins, tokenised deposits and CBDCs">Deutsche Bank — Digital Money: stablecoins, tokenised deposits and CBDCs ⧉</a></td>
+<td>Wallet-agnostic settlement API na nag-aabstract ng pagpili ng stablecoin / tokenised-deposit / CBDC bawat bayad; programmable conditions na sinusuri laban sa policy registry ng bangko, hindi ng kliyente.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="ang-inflection-point-ng-payment-data">Ang Inflection Point ng Payment Data <a class="heading-anchor" href="#ang-inflection-point-ng-payment-data" aria-label="Link patungo sa Ang Inflection Point ng Payment Data">#</a></h2>
+<p>Lumipat na ang ISO 20022 mula sa proyekto ng messaging format patungo sa operating model para sa kalidad ng data. Kung mahina ang data ng beneficiary, debtor, creditor, agent, bayan, bansa, layunin, at party, makakaranas ang bangko ng mga reject, repair, sanctions friction, pagkadismaya ng kliyente, at mahinang analytics.</p>
+<p><strong>Ginagawang matigas na kontrata, hindi advisory, ng SR 2026 ang bagay na ito.</strong> Ipinapatupad ng SWIFT Standards Release 2026 (Nobyembre 2026) ang structured-address na patakaran sa network layer — mga mensahe na ang <code>&lt;PstlAdr&gt;</code> element ay hindi nagdadala ng <code>&lt;TwnNm&gt;</code> at <code>&lt;Ctry&gt;</code> ay tatanggihan sa pagtanggap ng SWIFTNet validation stack, hindi ima-flag para sa pag-aayos. Hindi na isang back-office cost line ang repair queue kundi isang settlement-failure event na may client-visible delay. Nasa maling runbook ang mga operations team na itinuturing ang SR 2026 bilang &quot;mas mahigpit na gabay&quot; lamang.</p>
+<h3 id="pagsunod-sa-structured-payment-data-sa-ilalim-ng-iso-20022">Pagsunod sa Structured Payment Data sa ilalim ng ISO 20022 <a class="heading-anchor" href="#pagsunod-sa-structured-payment-data-sa-ilalim-ng-iso-20022" aria-label="Link patungo sa Pagsunod sa Structured Payment Data sa ilalim ng ISO 20022">#</a></h3>
+<p>Makitid at malinaw ang remediation surface. Ang mga XML element sa ibaba ay kung saan aktuwal na binibigo ng Nobyembre 2026 SWIFTNet validation stack ang mga mensahe; lahat ng iba pa ay downstream na kahihinatnan.</p>
+<table>
+<thead>
+<tr>
+<th>Elemento ng Data</th>
+<th>ISO 20022 XML Tag</th>
+<th>Kahingian ng SWIFT sa Nobyembre 2026</th>
+<th>Teknikal na Remediation Strategy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Structured Address</strong></td>
+<td><code>&lt;PstlAdr&gt;</code> na naglalaman ng <code>&lt;TwnNm&gt;</code> + <code>&lt;Ctry&gt;</code></td>
+<td>Sapilitan. Ang unstructured <code>&lt;AdrLine&gt;</code> text ay nagpapalitaw ng network rejection sa tumatanggap na SWIFTNet adapter.</td>
+<td>Automated address parsing sa pagsisimula ng bayad; pagsulat-muli ng corporate-channel form; paglilinis ng back-book sa bawat counterparty bago ang susunod na debit.</td>
+</tr>
+<tr>
+<td><strong>Legal Entity Identifier (LEI)</strong></td>
+<td><code>&lt;Id&gt;</code> sa ilalim ng <code>&lt;OrgId&gt;</code></td>
+<td>Mariing inirerekomenda para sa pagberipika ng non-individual na financial counterparty; sapilitan sa ilang CBPR+ corridors.</td>
+<td>LEI lookup + GLEIF cross-check sa corporate onboarding; awtomatikong enrichment para sa back-book counterparties sa pamamagitan ng reference-data services.</td>
+</tr>
+<tr>
+<td><strong>Payment Purpose Codes</strong></td>
+<td><code>&lt;Purp&gt;</code> na naglalaman ng <code>&lt;Cd&gt;</code></td>
+<td>Sapilitan sa maraming regional real-time corridors (CBPR+, SEPA Inst, TIPS) para sa awtomatikong AML / sanctions screening.</td>
+<td>I-map ang legacy bank-internal transaction codes sa standard ISO 20022 ExternalPurposeCode list; ilantad ang pagpili ng layunin sa corporate-channel UI; default-deny sa mga di-kilalang code.</td>
+</tr>
+<tr>
+<td><strong>Ultimate Parties</strong></td>
+<td><code>&lt;UltmtDbtr&gt;</code> / <code>&lt;UltmtCdtr&gt;</code></td>
+<td>Ilantad ang konteksto ng ultimate beneficiary upang tumugon sa G20 FATF travel-rule + sanctions parameters; sapilitan sa ilang payment-type codes.</td>
+<td>I-extract ang end-to-end party names mula sa ledger sub-accounts; ireconcile laban sa KYC graph; ipakita ang ultimate party sa bawat kumpirmasyon.</td>
+</tr>
+<tr>
+<td><strong>Remittance Information (Structured)</strong></td>
+<td><code>&lt;RmtInf&gt;&lt;Strd&gt;</code> na may <code>&lt;RfrdDocInf&gt;</code></td>
+<td>Kinakailangan para sa reconcilable invoice-linked corporate payments sa ilalim ng CBPR+ Phase 2.</td>
+<td>Kunin ang structured remittance sa oras ng quote sa corporate portal; tanggihan ang free-text fallback para sa mga high-value flow.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="tokenised-deposits-at-wholesale-cbdc">Tokenised Deposits at Wholesale CBDC <a class="heading-anchor" href="#tokenised-deposits-at-wholesale-cbdc" aria-label="Link patungo sa Tokenised Deposits at Wholesale CBDC">#</a></h2>
+<p>Iniingatan ng tokenised deposits ang modelo ng commercial-bank money habang nagdaragdag ng programmability. Iniingatan ng wholesale central bank money ang settlement finality. Ang kawili-wiling design pattern ay ang kombinasyon: commercial bank money para sa relasyon ng kliyente at credit intermediation, central bank money para sa final settlement at systemic confidence.</p>
+<p>Ginagawang kongkreto ng Project Agorá ang kombinasyong ito. Ang arkitekturang nasa ibaba ang BIS reference pattern para sa isang atomic, payment-versus-payment (PvP) cross-border settlement na gumagamit ng parehong commercial-bank deposit ledger at wholesale-CBDC settlement plane, na pinag-uugnay sa pamamagitan ng isang unified ledger.</p>
+<pre class="mermaid">sequenceDiagram
+    autonumber
+    participant CB_A as Commercial Bank A&lt;br/&gt;(payer side)
+    participant UL as Unified Ledger&lt;br/&gt;(BIS Agorá coordination plane)
+    participant CBNK as Central Bank&lt;br/&gt;(wholesale CBDC issuer)
+    participant CB_B as Commercial Bank B&lt;br/&gt;(payee side)
+
+    CB_A-&gt;&gt;UL: Submit instruction:&lt;br/&gt;debit tokenised deposit X,&lt;br/&gt;credit tokenised deposit Y,&lt;br/&gt;condition = wholesale CBDC leg
+    UL-&gt;&gt;UL: Validate ISO 20022 envelope,&lt;br/&gt;structured address, LEI,&lt;br/&gt;purpose code, AML/sanctions
+    UL-&gt;&gt;CBNK: Reserve wholesale CBDC&lt;br/&gt;(payer-side central-bank reserves)
+    CBNK--&gt;&gt;UL: Reservation confirmed&lt;br/&gt;(atomic lock)
+    UL-&gt;&gt;CB_A: Lock tokenised deposit X&lt;br/&gt;(commercial-bank money leg)
+    CB_A--&gt;&gt;UL: Deposit lock confirmed
+    UL-&gt;&gt;UL: Both legs locked →&lt;br/&gt;atomic settlement trigger
+    UL-&gt;&gt;CBNK: Settle wholesale CBDC&lt;br/&gt;(payer reserves → payee reserves)
+    UL-&gt;&gt;CB_B: Issue tokenised deposit Y&lt;br/&gt;(commercial-bank money leg)
+    CBNK--&gt;&gt;UL: CBDC settlement finalised
+    CB_B--&gt;&gt;UL: Deposit credited
+    UL-&gt;&gt;CB_A: PvP settlement complete&lt;br/&gt;(both legs final or both legs roll back)
+    UL-&gt;&gt;CB_B: PvP settlement complete
+</pre>
+<p>Atomic ang settlement sa pamamagitan ng konstruksyon: parehong kumikilos ang dalawang leg o parehong umuurong. Ang settlement finality sa wholesale-CBDC leg ang nagpapaepektibo sa commercial-bank tokenised-deposit transfer nang walang correspondent risk. Ang unified ledger ang coordination plane, hindi isang payment system sa sarili nito — ang central bank pa rin ang nag-iisyu ng settlement asset at ang commercial bank pa rin ang nag-bo-book ng deposit liability.</p>
+<h2 id="ang-bagong-wholesale-payment-product">Ang Bagong Wholesale Payment Product <a class="heading-anchor" href="#ang-bagong-wholesale-payment-product" aria-label="Link patungo sa Ang Bagong Wholesale Payment Product">#</a></h2>
+<p>Hindi na lamang isang bayad ang produkto. Ito ay isang bundle ng execution, data, liquidity, compliance, traceability, at exception management. Ang mga bangko na kayang ilantad ang mga kakayahang ito sa pamamagitan ng APIs at client dashboards ay magpapalit ng infrastructure compliance patungong halaga para sa kliyente.</p>
+<h2 id="ano-ang-kahulugan-nito-ayon-sa-uri-ng-bangko">Ano ang Kahulugan Nito Ayon sa Uri ng Bangko <a class="heading-anchor" href="#ano-ang-kahulugan-nito-ayon-sa-uri-ng-bangko" aria-label="Link patungo sa Ano ang Kahulugan Nito Ayon sa Uri ng Bangko">#</a></h2>
+<h3 id="mga-global-systemically-important-banks">Mga Global Systemically Important Banks <a class="heading-anchor" href="#mga-global-systemically-important-banks" aria-label="Link patungo sa Mga Global Systemically Important Banks">#</a></h3>
+<p>Dapat ituring ng mga global na bangko ang index na ito bilang enterprise architecture scorecard. Hindi isa pang proof of concept ang prayoridad; ito ay ebidensya na ang autonomous workflows, cryptographic migration, cloud dependency, at payment modernisation ay maaaring pamahalaan bilang isang sistema ng panganib at halaga.</p>
+<h3 id="mga-transaction-bank-at-corporate-bank">Mga Transaction Bank at Corporate Bank <a class="heading-anchor" href="#mga-transaction-bank-at-corporate-bank" aria-label="Link patungo sa Mga Transaction Bank at Corporate Bank">#</a></h3>
+<p>Dapat tumuon ang mga transaction bank sa wholesale payments, structured data, liquidity, tokenised deposits, at agentic treasury services. Hindi lamang mas mabilis na paggalaw ng pera ang pinakamahalagang panukala para sa kliyente; ito ay maipaliwanag, ma-audit, at programmable na paggalaw ng pera na may mas kaunting imbestigasyon at mas mahusay na visibility sa working-capital.</p>
+<h3 id="mga-regional-na-bangko">Mga Regional na Bangko <a class="heading-anchor" href="#mga-regional-na-bangko" aria-label="Link patungo sa Mga Regional na Bangko">#</a></h3>
+<p>Dapat gamitin ng mga regional na bangko ang index para maiwasan ang programme sprawl. Hindi kailangang manguna sa bawat frontier, ngunit kailangan nila ng kapani-paniwalang posisyon sa AI governance, post-quantum inventory, cloud exit evidence, at kahandaan ng payment data.</p>
+<h3 id="mga-fintech-psp-at-infrastructure-provider">Mga Fintech, PSP, at Infrastructure Provider <a class="heading-anchor" href="#mga-fintech-psp-at-infrastructure-provider" aria-label="Link patungo sa Mga Fintech, PSP, at Infrastructure Provider">#</a></h3>
+<p>Dapat ihanay ng mga fintech at infrastructure provider ang kanilang mga product roadmap sa nasusukat na kahandaan ng bangko. Babawasan ng pinakamagagandang panukala ang integration risk, palalakasin ang ebidensya, at gagawing mas madali para sa mga bangko ang pamahalaan ang masalimuot na imprastraktura.</p>
+<h2 id="konklusyon">Konklusyon <a class="heading-anchor" href="#konklusyon" aria-label="Link patungo sa Konklusyon">#</a></h2>
+<p>Ang halaga ng isang ulat sa istilo ng index ay ginagawa nitong nasusukat na operating model ang hati-hating agenda ng teknolohiya. Sa 2026, ang mga magtatagumpay sa financial infrastructure ay hindi ang mga institusyon na may pinakamaraming pilot. Sila ang mga institusyon na nakakapagpatunay ng kahandaan sa autonomy, security, resilience, settlement, ekonomiya, at governance nang sabay-sabay.</p>
+<h2 id="mga-madalas-na-itinatanong">Mga Madalas na Itinatanong <a class="heading-anchor" href="#mga-madalas-na-itinatanong" aria-label="Link patungo sa Mga Madalas na Itinatanong">#</a></h2>
+<p><strong>Bakit isyu pa rin ng 2026 ang ISO 20022?</strong></p>
+<p>Dahil hindi kumpleto ang migration hangga't hindi pa structured, pinamamahalaan, kinukuha sa pinanggalingan, at magagamit ang payment data sa mga channel, kliyente, at market infrastructure.</p>
+<p><strong>Ano ang isang tokenised deposit?</strong></p>
+<p>Ang tokenised deposit ay isang digital na representasyon ng commercial bank money, idinisenyo para iingatan ang relasyon ng bangko at depositor habang pinapahintulutan ang programmable settlement.</p>
+<p><strong>Pinapalitan ba ng tokenised deposits ang stablecoins?</strong></p>
+<p>Hindi sa lahat ng dako. Maaaring kapaki-pakinabang pa rin ang stablecoins sa ilang konteksto ng digital-asset at cross-border, samantalang istrukturang kaakit-akit ang tokenised deposits para sa regulated wholesale banking.</p>
+<p><strong>Ano ang dapat sukatin ng mga bangko?</strong></p>
+<p>Sukatin ang kahandaan ng structured-data, mga payment reject, repair cost, oras ng settlement, paggamit ng liquidity, resulta ng rail routing, at visibility para sa kliyente.</p>
+<h2 id="mga-sanggunian">Mga Sanggunian <a class="heading-anchor" href="#mga-sanggunian" aria-label="Link patungo sa Mga Sanggunian">#</a></h2>
+<ul>
+<li>SWIFT, (2026). <a href="https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed" title="ISO 20022 novembre 2026 structured address milestone">ISO 20022 novembre 2026 structured address milestone ⧉</a>.</li>
+<li>BIS Innovation Hub, (2026). <a href="https://www.bis.org/about/bisih/topics/fmis/agora.htm" title="Project Agorá">Project Agorá ⧉</a>.</li>
+<li>FSB, (2026). <a href="https://www.fsb.org/2026/03/fsb-kicks-off-new-implementation-phase-to-enhance-cross-border-payments-through-public-private-partnership/" title="Cross-border payments implementation phase">Cross-border payments implementation phase ⧉</a>.</li>
+<li>Deutsche Bank, (2026). <a href="https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs" title="Digital Money: stablecoins, tokenised deposits and CBDCs">Digital Money: stablecoins, tokenised deposits and CBDCs ⧉</a>.</li>
+</ul>
+<!-- enrich-start -->
+
+<p class="post-reviewed">Huling pagsusuri <time datetime="2026-06-06">2026-06-06</time>.</p>
+
+<!-- enrich-end -->
+<aside class="author-card" aria-label="Tungkol sa may-akda"><img alt="Portrait ni Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=85" width="64" height="64" loading="lazy" decoding="async"  fetchpriority="high"><span class="author-card-body"><strong class="author-card-name"><a href="/fil/tungkol-sa-akin/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist na sumusulat tungkol sa applied AI, ISO 20022 migration, post-quantum cryptography para sa financial services, at structural transformation ng wholesale payments.</span><span class="author-credentials">Higit sa 20 taon sa HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA at Virgin Group. <a href="/fil/tungkol-sa-akin/index.html">Buong profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">Huling sinuri <time datetime="2026-06-07">2026-06-07</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Kaugnay na pagbasa</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/fil/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026" class="related-media" aria-label="Ang 2026 Banking Infrastructure Index: Pagsukat ng Katatagan para sa Agentic AI, Quantum-Safe Security, Cloud-Native na Katatagan, at Wholesale Payments" tabindex="-1"><img alt="An editorial aerial composition by Miguel Sousa suggesting interlocking systems — the visual register chosen for a board-level dashboard view of the 2026 Banking Infrastructure Index" src="https://cloudcdn.pro/api/transform?url=/stocks/images/miguel-sousa-ejIF-pJhYkM.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="ang-2026-banking-infrastructure-index-pagsukat-ng-katatagan-para-sa-agentic-ai-q"><a href="https://sebastienrousseau.com/fil/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026">Ang 2026 Banking Infrastructure Index: Pagsukat ng Katatagan para sa Agentic AI, Quantum-Safe Security, Cloud-Native na Katatagan, at Wholesale Payments</a> <a class="heading-anchor" href="#ang-2026-banking-infrastructure-index-pagsukat-ng-katatagan-para-sa-agentic-ai-q" aria-label="Link patungo sa Ang 2026 Banking Infrastructure Index: Pagsukat ng Katatagan para sa Agentic AI, Quantum-Safe Security, Cloud-Native na Katatagan, at Wholesale Payments">#</a></h3><p><time datetime="2026-06-02">2026-06-02</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/fil/2026-05-19-global-wholesale-payments-economics-2026" class="related-media" aria-label="Pandaigdigang Wholesale na Bayad sa 2026: ISO 20022, Pagpapanibago ng RTGS, at ang Ekonomiya ng Interoperability" tabindex="-1"><img alt="Global wholesale payments architecture map for 2026 showing ISO 20022, RTGS renewal, cross-border corridors, liquidity windows, and DLT settlement pilots" src="https://cloudcdn.pro/api/transform?url=/stocks/images/miguel-sousa-ejIF-pJhYkM.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="pandaigdigang-wholesale-na-bayad-sa-2026-iso-20022-pagpapanibago-ng-rtgs-at-ang-"><a href="https://sebastienrousseau.com/fil/2026-05-19-global-wholesale-payments-economics-2026">Pandaigdigang Wholesale na Bayad sa 2026: ISO 20022, Pagpapanibago ng RTGS, at ang Ekonomiya ng Interoperability</a> <a class="heading-anchor" href="#pandaigdigang-wholesale-na-bayad-sa-2026-iso-20022-pagpapanibago-ng-rtgs-at-ang-" aria-label="Link patungo sa Pandaigdigang Wholesale na Bayad sa 2026: ISO 20022, Pagpapanibago ng RTGS, at ang Ekonomiya ng Interoperability">#</a></h3><p><time datetime="2026-05-19">2026-05-19</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/fil/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026" class="related-media" aria-label="Ang Multi-Rail Bank sa 2026: Cards, A2A, Stablecoins, RTP, FedNow, at Open Banking sa Isang Estratehiya" tabindex="-1"><img alt="Long-exposure photograph of intersecting light trails at a major rail interchange at night — visual key for the multi-rail bank piece: cards, A2A, RTP, FedNow, ACH, stablecoins, Open Banking APIs, ISO 20022, and the orchestration engine that routes between them" src="https://cloudcdn.pro/api/transform?url=/stocks/images/joe-gardner-4xv3lqnanYc.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="ang-multi-rail-bank-sa-2026-cards-a2a-stablecoins-rtp-fednow-at-open-banking-sa-"><a href="https://sebastienrousseau.com/fil/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026">Ang Multi-Rail Bank sa 2026: Cards, A2A, Stablecoins, RTP, FedNow, at Open Banking sa Isang Estratehiya</a> <a class="heading-anchor" href="#ang-multi-rail-bank-sa-2026-cards-a2a-stablecoins-rtp-fednow-at-open-banking-sa-" aria-label="Link patungo sa Ang Multi-Rail Bank sa 2026: Cards, A2A, Stablecoins, RTP, FedNow, at Open Banking sa Isang Estratehiya">#</a></h3><p><time datetime="2026-06-01">2026-06-01</time></p></footer></article>
+</div>
+</aside><aside class="article-sources" aria-labelledby="sources-heading"><h2 id="sources-heading" class="article-sources-heading">Mga pinagmulan at sanggunian</h2><ol class="article-sources-list"><li><a href="https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed" rel="external noopener nofollow"><span class="source-host">www.swift.com</span><span class="source-path">/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be…</span></a></li><li><a href="https://www.bis.org/about/bisih/topics/fmis/agora.htm" rel="external noopener nofollow"><span class="source-host">www.bis.org</span><span class="source-path">/about/bisih/topics/fmis/agora.htm</span></a></li></ol></aside><nav class="post-pagination" aria-label="Pagination ng artikulo"><a class="post-pagination-prev" href="/fil/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/"><span class="post-pagination-label">Nakaraan</span><span class="post-pagination-title">The Cloud Native Banking Index in 2026: DORA, Platform Engineering, Sovereign Cloud, and Operational Resilience</span></a><a class="post-pagination-next" href="/fil/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/"><span class="post-pagination-label">Susunod</span><span class="post-pagination-title">The Autonomous Treasury Index in 2026: Agentic Treasury, Programmable Liquidity, Tokenised Deposits, and Real-Time Cash Control</span></a></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/fil/tungkol-sa-akin/index.html">Tungkol</a></li>
+              <li><a href="/fil/makipag-ugnayan/index.html">Makipag-ugnayan</a></li>
+              <li><a href="/fil/ginawa-sa-static-site-generator/index.html">Ginawa sa Static Site Generator</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Pagsusulat</h2>
+            <ul>
+              <li><a href="/fil/mga-artikulo/index.html">Mga artikulo</a></li>
+              <li><a href="/fil/mga-publikasyon/index.html">Mga publikasyon</a></li>
+              <li><a href="/fil/mga-tag/index.html">Mga tag</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Trabaho</h2>
+            <ul>
+              <li><a href="/fil/mga-proyekto/index.html">Mga proyekto</a></li>
+              <li><a href="/fil/mga-playlist/index.html">Mga playlist</a></li>
+              <li><a href="/fil/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Makipag-ugnayan</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="/contact/" method="get" aria-label="Pag-sign up sa newsletter">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — mga research note tungkol sa payments, AI at post-quantum crypto. Walang spam.</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="ikaw@bangko.ph" />
+            <input type="hidden" name="subject" value="newsletter" />
+            <input type="hidden" name="message" value="Please subscribe me to the Banking On Quantum newsletter." />
+            <button type="submit">Mag-subscribe</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved.</span>
+          <div class="social" aria-label="Mga link sa social media">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau sa Twitter / X"><img src="https://cloudcdn.pro/common/images/buttons/x-black.svg" alt="Sebastien Rousseau sa Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau sa LinkedIn"><img src="https://cloudcdn.pro/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau sa LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau sa Medium"><img src="https://cloudcdn.pro/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau sa Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau sa YouTube"><img src="https://cloudcdn.pro/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau sa YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/fil/pagiging-accessible/index.html">Pagiging accessible</a> ·
+            <a href="/fil/pagkapribado/index.html">Pagkapribado</a> ·
+            <a href="/fil/mga-tuntunin/index.html">Mga tuntunin</a> ·
+            <a href="https://www.thegreenwebfoundation.org/green-web-check/?url=sebastienrousseau.com" target="_blank" rel="noopener noreferrer" title="Hosted on 100% renewable energy (Cloudflare) — estimate via Sustainable Web Design v4 model">Carbon: ~0.04 g/visit · green-hosted</a> ·
+            <a href="https://github.com/sebastienrousseau/sebastienrousseau.github.io/blob/main/project-docs/sigstore.md" target="_blank" rel="noopener noreferrer" title="Every dated article is signed with Sigstore — verify the bytes match what was published">Verify signatures</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","identifier":{"@type":"PropertyValue","propertyID":"ORCID","value":"0009-0005-1434-284X","url":"https://orcid.org/0009-0005-1434-284X"},"worksFor":{"@type":"Organization","@id":"https://www.hsbc.com/#organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal","url":"https://www.paypal.com/"},{"@type":"Organization","name":"Barclays","url":"https://www.barclays.com/"},{"@type":"Organization","name":"Shazam Entertainment","url":"https://www.shazam.com/"},{"@type":"Organization","name":"AKQA","url":"https://www.akqa.com/"},{"@type":"Organization","name":"Virgin Group","url":"https://www.virgin.com/"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"hasCredential":[{"@type":"EducationalOccupationalCredential","credentialCategory":"professional experience","name":"20+ years across Tier-1 banks and global payments infrastructure","recognizedBy":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"}},{"@type":"EducationalOccupationalCredential","credentialCategory":"domain expertise","name":"ISO 20022 migration and wholesale payments architecture","recognizedBy":{"@type":"Organization","name":"SWIFT","url":"https://www.swift.com/"}},{"@type":"EducationalOccupationalCredential","credentialCategory":"domain expertise","name":"Post-Quantum Cryptography for financial services","recognizedBy":{"@type":"Organization","name":"NIST Post-Quantum Cryptography Project","url":"https://csrc.nist.gov/projects/post-quantum-cryptography"}}],"knowsAbout":[{"@type":"DefinedTerm","name":"Post-Quantum Cryptography","sameAs":"https://en.wikipedia.org/wiki/Post-quantum_cryptography"},{"@type":"DefinedTerm","name":"ML-KEM (FIPS 203)","sameAs":"https://csrc.nist.gov/pubs/fips/203/final"},{"@type":"DefinedTerm","name":"ML-DSA (FIPS 204)","sameAs":"https://csrc.nist.gov/pubs/fips/204/final"},{"@type":"DefinedTerm","name":"ISO 20022","sameAs":"https://en.wikipedia.org/wiki/ISO_20022"},{"@type":"DefinedTerm","name":"SWIFT gpi","sameAs":"https://www.swift.com/our-solutions/swift-gpi"},{"@type":"DefinedTerm","name":"SEPA Instant Payments","sameAs":"https://www.ecb.europa.eu/paym/integration/retail/instant_payments/html/index.en.html"},{"@type":"DefinedTerm","name":"FedNow Service","sameAs":"https://www.federalreserve.gov/paymentsystems/fednow_about.htm"},{"@type":"DefinedTerm","name":"Real-Time Payments (RTP)","sameAs":"https://www.theclearinghouse.org/payment-systems/rtp"},{"@type":"DefinedTerm","name":"Cross-border payments","sameAs":"https://en.wikipedia.org/wiki/Cross-border_payments"},{"@type":"DefinedTerm","name":"Wholesale banking","sameAs":"https://en.wikipedia.org/wiki/Wholesale_banking"},{"@type":"DefinedTerm","name":"Applied artificial intelligence in banking","sameAs":"https://en.wikipedia.org/wiki/Applications_of_artificial_intelligence"},{"@type":"DefinedTerm","name":"Generative artificial intelligence","sameAs":"https://en.wikipedia.org/wiki/Generative_artificial_intelligence"}],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://orcid.org/0009-0005-1434-284X","https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":["Organization","Brand"],"@id":"https://sebastienrousseau.com/#organization","name":"Sebastien Rousseau","alternateName":"Banking on Quantum","url":"https://sebastienrousseau.com/","logo":{"@type":"ImageObject","@id":"https://sebastienrousseau.com/#logo","url":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","width":"512","height":"512","caption":"Sebastien Rousseau"},"founder":{"@id":"https://sebastienrousseau.com/#person"},"editorialPolicy":"https://sebastienrousseau.com/editorial/","correctionsPolicy":"https://sebastienrousseau.com/editorial/#corrections","ethicsPolicy":"https://sebastienrousseau.com/editorial/","diversityPolicy":"https://sebastienrousseau.com/editorial/","sameAs":["https://github.com/sebastienrousseau","https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#organization"},"author":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"fil"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"fil"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":2067,"about":{"@type":"Thing","name":"ISO 20022","sameAs":["https://www.iso20022.org/","https://www.wikidata.org/wiki/Q15727611","https://sebastienrousseau.com/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html"]},"headline":"Ang Wholesale Payments Index sa 2026: ISO 20022, Tokenised Deposits, Real-Time Rails, at Cross-Border Settlement","description":"Index para sa kahandaan ng wholesale payments sa 2026: kalidad ng ISO 20022 data, tokenised deposits, real-time rails, cross-border settlement, at liquidity efficiency.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/miquel-parera-NsXLehhHx1Q.webp","width":"100vw","height":"100vh","caption":"Visual na talatuntunan para sa wholesale-payments shift sa 2026 — paglilipat ng messaging na nagbibigay-daan sa programmable settlement sa ISO 20022, tokenised deposits, real-time rails, at cross-border atomicity."},"url":"https://sebastienrousseau.com/fil/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/","datePublished":"2026-06-06T06:06:06+00:00","dateModified":"2026-06-06","inLanguage":"fil","keywords":"wholesale payments 2026, ISO 20022, tokenised deposits, Project Agora, cross border payments, real time payments, structured address data, kalidad ng payment data","articleSection":"Finance","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/fil/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"fil"},"citation":[{"@type":"CreativeWork","url":"https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed"},{"@type":"CreativeWork","url":"https://www.bis.org/about/bisih/topics/fmis/agora.htm"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/fil/"},{"@type":"ListItem","position":3,"name":"Ang Wholesale Payments Index sa 2026: ISO 20022, Tokenised Deposits, Real-Time Rails, at Cross-Border Settlement","item":"https://sebastienrousseau.com/fil/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/"}]}]}</script>
+<script src="/main.c9d8dc8d.js" defer integrity="sha256-G3RtagQVu1xMUTaa18I4L7J+vKPyjk2ZQG182kd2kow= sha256-NzL6b2FQD17U0Taqx1C1kOArNHU82qw6DUW7wiG7Bp0=" crossorigin="anonymous"></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="Maghanap">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>Maghanap</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="Maghanap">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="Maghanap sa dokumentasyon..." autocomplete="off" aria-label="Maghanap"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> isara</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> mag-navigate</span><span><kbd>Enter</kbd> buksan</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" integrity="sha256-Y0txeCfdk+GUctTYMAxMbFCB2qs1cPm8JSIX3WRS9cs= sha256-5Ca5zk/7tsavsCDhg6M1m4feBn+L4YnJ7iavKawynII=" crossorigin="anonymous"></script>
+</div>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Ang Wholesale Payments Index sa 2026: ISO 20022, Tokenised Deposits, Real-Time Rails, at Cross-Border Settlement","url":"https://sebastienrousseau.com/fil/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/","inLanguage":"fil-PH","isAccessibleForFree":true,"author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#organization"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/fil/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/"},"keywords":"wholesale payments 2026, ISO 20022, tokenised deposits, Project Agora, cross border payments, real time payments, structured address data, kalidad ng payment data","proficiencyLevel":"Expert","dependencies":["ISO 20022"]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"NewsArticle","headline":"Ang Wholesale Payments Index sa 2026: ISO 20022, Tokenised Deposits, Real-Time Rails, at Cross-Border Settlement","url":"https://sebastienrousseau.com/fil/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/","datePublished":"2026-06-06T06:06:06+00:00","dateModified":"2026-06-06","inLanguage":"fil-PH","isAccessibleForFree":true,"author":[{"@id":"https://sebastienrousseau.com/#person"}],"publisher":{"@id":"https://sebastienrousseau.com/#organization"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/fil/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/"},"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways"]},"image":["https://cloudcdn.pro/stocks/images/miquel-parera-NsXLehhHx1Q.webp"],"articleSection":"Finance","keywords":"wholesale payments 2026, ISO 20022, tokenised deposits, Project Agora, cross border payments, real time payments, structured address data, kalidad ng payment data"}</script></body>
+</html>

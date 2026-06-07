@@ -1,5 +1,6 @@
 ---
 title: "فك شفرة Gemini 1.5: ثورة Google في الذكاء الاصطناعي مشروحةً"
+tags: "Gemini 1.5, Google AI, AI Efficiency, AI Quality, Context Window, In-Context Learning, AI Use Cases, AI Revolution, Technology Transformation, Data Analysis, ISO 20022, التشفير ما بعد الكمي, AI, DORA, الودائع المرمَّزة, هندسة المنصة, السحابة السيادية, البنوك السحابية الأصيلة، Kubernetes، DORA، المؤسسات المالية، OpenShift، Portworx، سيادة السحابة، المرونة التشغيلية، التعافي من الكوارث، التعايش بين الأجهزة الافتراضية والحاويات، أعباء عمل الذكاء الاصطناعي، مخاطر الطرف الثالث، الاعتماد على السحابة, المدفوعات عبر الحدود, stablecoins"
 subtitle: "غوص عميق في آخر اختراقات Google في الذكاء الاصطناعي"
 description: "Gemini 1.5 من Google يدفع نافذة السياق إلى ما يتجاوز المليون رمز. ما الذي يفتحه ذلك للتمويل المُعزَّز بالاسترجاع، والمقايضات التي يجدر الإلمام بها."
 date: "Feb 19, 2024"

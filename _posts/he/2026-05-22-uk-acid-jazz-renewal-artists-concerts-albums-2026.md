@@ -39,7 +39,7 @@ schema: "FAQPage, Article"
 seo_title: "UK Acid Jazz 2026: אמנים, קונצרטים, אלבומים, תחייה"
 short_name: "sebastienrousseau"
 subtitle: "האסיד ג'אז מתחדש בבריטניה דרך שילוב של אמני מורשת, הוצאות Acid Jazz Records, פסטיבלי ג'אז-פאנק, קהלי סול-ג'אז, הופעות חיות בהנעת עוגב המונד ומוזיקאי ג'אז בריטים צעירים יותר המחזירים את הגרוב למרכז הסצנה."
-tags: "acid jazz, UK jazz, Acid Jazz Records, Brand New Heavies, Galliano, James Taylor Quartet, Ronnie Scott's, Bangs and Talbot, Chris Bangs, Mick Talbot, Mostly Jazz Funk Soul Festival, Cymande, Soul II Soul, Jordan Rakei, jazz funk, soul jazz"
+tags: "acid jazz, UK jazz, Acid Jazz Records, Brand New Heavies, Galliano, James Taylor Quartet, Ronnie Scott's, Bangs and Talbot, Chris Bangs, Mick Talbot, Mostly Jazz Funk Soul Festival, Cymande, Soul II Soul, Jordan Rakei, jazz funk, soul jazz, ISO 20022, קריפטוגרפיה פוסט-קוונטית, AI, DORA, פיקדונות מתואדים, הנדסת פלטפורמה, ענן ריבוני, בנקאות ענן-נייטיב, תשלומים חוצי גבולות, סטייבלקוינים"
 theme-color: "0, 83, 191"
 title: "התחדשות האסיד ג'אז בבריטניה: אמנים, קונצרטים ואלבומים של 2026"
 url: "https://sebastienrousseau.com/he/2026-05-22-uk-acid-jazz-renewal-artists-concerts-albums-2026"
@@ -93,9 +93,9 @@ site_software: "Static Site Generator, Rust"
 <p class="post-lead-heading"><strong>נקודות מפתח</strong></p>
 <ul class="post-lead-takeaways">
   <li><strong>לייבל.</strong> קומפילציית Bandcamp של Acid Jazz Records לשנת 2026 כוללת את Matt Berry, Kevin Fingier, The Brand New Heavies, Billy Valentine ו-Mama Terra.</li>
-  <li><strong>הוצאה.</strong> <em>Smokin' Aces</em> של Bangs &amp; Talbot (23 בינואר 2026, Acid Jazz) מאחד מחדש את Chris Bangs ו-Mick Talbot עם צלילי גרוב, פאנק, סול ופיוז'ן גלובלי.</li>
+  <li><strong>הוצאה.</strong> <em>Smokin' Aces</em> של Bangs & Talbot (23 בינואר 2026, Acid Jazz) מאחד מחדש את Chris Bangs ו-Mick Talbot עם צלילי גרוב, פאנק, סול ופיוז'ן גלובלי.</li>
   <li><strong>הופעות.</strong> The Brand New Heavies עם Galliano ב-The Glasshouse ו-The James Taylor Quartet ברוני סקוט'ס הם האותות הברורים ביותר לאסיד ג'אז ברשימות 2026.</li>
-  <li><strong>פסטיבל.</strong> Mostly Jazz Funk &amp; Soul Festival (10–12 ביולי 2026) מתכנת את Soul II Soul, Cymande, Jordan Rakei ו-Sampa The Great לצד אמני ג'אז-פאנק מן המורשת.</li>
+  <li><strong>פסטיבל.</strong> Mostly Jazz Funk & Soul Festival (10–12 ביולי 2026) מתכנת את Soul II Soul, Cymande, Jordan Rakei ו-Sampa The Great לצד אמני ג'אז-פאנק מן המורשת.</li>
 </ul>
 <p class="post-lead-related"><strong>קריאה נוספת:</strong> <a href="https://sebastienrousseau.com/2026-05-21-tokenised-deposits-banking-transformation-2026/index.html">פיקדונות מתויגים: שינוי המבנה הבנקאי המתרחש ב-2026</a>.</p>
 </aside>
@@ -231,6 +231,6 @@ The Brand New Heavies עם Galliano ב-The Glasshouse ו-The James Taylor Quarte
 - Mostly Jazz Funk & Soul Festival, (2026). [פסטיבל Mostly Jazz Funk & Soul 2026 ⧉](https://mostlyjazz.co.uk "Mostly Jazz Funk & Soul Festival").
 - Marlbank, (2026). [אלבומי הג'אז הבריטי המובילים של 2026 עד כה ⧉](https://marlbank.net/top-jazz-in-2026/top-uk-jazz-albums-in-2026-so-far/ "Top UK jazz albums in 2026 so far").
 <!-- enrich-start -->
-<aside class="author-card" aria-label="על המחבר"><img alt="דיוקן של סבסטיאן רוסו" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">סבסטיאן רוסו</a></strong><span class="author-card-bio">טכנולוג בנקאי בכיר הכותב על בינה מלאכותית יישומית, על המעבר ל-ISO 20022, על קריפטוגרפיה פוסט-קוונטית לשירותים פיננסיים ועל השינוי המבני של תשלומי הסיטונאות.</span><span class="author-credentials">למעלה מ-20 שנים ב-HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">פרופיל מלא</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="על המחבר"><img alt="דיוקן של סבסטיאן רוסו" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">סבסטיאן רוסו</a></strong><span class="author-card-bio">טכנולוג בנקאי בכיר הכותב על בינה מלאכותית יישומית, על המעבר ל-ISO 20022, על קריפטוגרפיה פוסט-קוונטית לשירותים פיננסיים ועל השינוי המבני של תשלומי הסיטונאות.</span><span class="author-credentials">למעלה מ-20 שנים ב-HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">פרופיל מלא</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">נסקר לאחרונה <time datetime="2026-05-22">2026-05-22</time>.</p>
 <!-- enrich-end -->

@@ -1,11 +1,13 @@
 {
-  "locale": "hi_IN",
+  "word_count": 1082,
   "keywords": "KyberLib, Rust, CRYSTALS-Kyber, post-quantum, KEM, एम्बेडेड, क्रिप्टोग्राफी, सुरक्षा, NIST, FIPS",
-  "banner_alt": "क्वांटम-ख़तरों के विरुद्ध एक डिजिटल कवच",
-  "date": "November 28, 2023",
+  "reading_time": 5,
   "subtitle": "Rust में CRYSTALS-Kyber का सुरक्षित, परीक्षित और एम्बेडेड-तैयार कार्यान्वयन",
+  "date": "November 28, 2023",
   "title": "KyberLib: क्वांटम-ख़तरों के विरुद्ध Rust-संचालित कवच",
+  "locale": "hi_IN",
   "description": "KyberLib: CRYSTALS-Kyber पोस्ट-क्वांटम कुंजी-समायोजन का एक Rust कार्यान्वयन, जो एम्बेडेड और सर्वर दोनों के लिए तैयार है।",
+  "banner_alt": "क्वांटम-ख़तरों के विरुद्ध एक डिजिटल कवच",
   "language": "hi-IN",
   "banner": "https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg"
 }

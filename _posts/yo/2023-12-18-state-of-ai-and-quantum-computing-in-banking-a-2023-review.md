@@ -1,5 +1,6 @@
 ---
 title: "State of AI and Quantum Computing in Banking: A 2023 Review"
+tags: "AI in banking, quantum computing, open-source LLMs, AI regulation, ìṣàkóso AI, ìsirò ìpamọ́ lẹ́yìn quantum, risk management, 2023 review, ìṣẹ̀dá báńkì, iṣẹ́ owó, ISO 20022, AI, open source"
 subtitle: "Dídàgbà Ọjọ́ Ọ̀la Ẹ̀ka Ilé-ifowopamọ́: AI, Quantum Computing, Àwọn Àwòṣe Open Source àti Ilẹ̀ Àwọn Òfin"
 description: "Ṣíwádìí Ilẹ̀ Ìmọ̀ Ẹrọ 2023: AI àti Quantum Computing Ń Yípadà Ẹ̀ka Ilé-ifowopamọ́, Àwọn Àwòṣe Open-Source Tí Ń Dide àti Ìṣàkóso Tí Ń Yípàdà"
 date: "Dec 18, 2023"
@@ -196,4 +197,3 @@ Thank you again for your time and I look forward to hearing from you!
 [28]: https://cloudcdn.pro/stocks/images/ryoji-iwata-a-qsFZimp1M.webp "AI Regulations"
 
 [divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Divider"
-

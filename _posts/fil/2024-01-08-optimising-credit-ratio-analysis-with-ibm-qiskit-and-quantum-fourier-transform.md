@@ -1,5 +1,6 @@
 ---
 title: "Qiskit والتحويل الكمومي لفورييه لتحليل نسب الائتمان"
+tags: "Qiskit, quantum computing, Credit Analysis, FinTech, QFT, Risk Management, Finance, Data Science, Algorithm, Quantum Technology, ISO 20022, post-quantum cryptography, AI, open source"
 subtitle: "تحسين تحليل نسب الائتمان باستخدام IBM Qiskit والتحويل الكمومي لفورييه"
 description: "كيف يُحدث IBM Qiskit والتحويل الكمومي لفورييه ثورة في تحليل نسب الائتمان في التمويل، مقدّمَين دقّة وسرعة غير مسبوقتَين."
 date: "Jan 08, 2024"

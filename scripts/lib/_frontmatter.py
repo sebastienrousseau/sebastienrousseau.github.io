@@ -12,6 +12,7 @@ Two complementary APIs:
 * ``read_fm`` — dict-based, useful when you only want to *read* fields
   (used by postbuild.py to look up titles, urls, last_reviewed dates).
 """
+
 from __future__ import annotations
 
 import re
@@ -47,7 +48,7 @@ def fm_set(fm_lines: list[str], key: str, value: str) -> list[str]:
     """Set (or insert) a frontmatter field. Always emits the value
     double-quoted for safety. Inserts before the closing ``---`` if the
     field isn't already present."""
-    pat = re.compile(rf'^{re.escape(key)}:')
+    pat = re.compile(rf"^{re.escape(key)}:")
     formatted = f'{key}: "{value}"\n'
     for i, ln in enumerate(fm_lines):
         if pat.match(ln):

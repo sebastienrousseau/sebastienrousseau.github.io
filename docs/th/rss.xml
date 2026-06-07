@@ -6,14 +6,14 @@
     <description>บทความภาษาไทย: AI ประยุกต์, การชำระเงิน ISO 20022, การเข้ารหัสหลังควอนตัม และการปฏิรูปการชำระเงินขายส่ง</description>
     <atom:link href="https://sebastienrousseau.com/th/rss.xml" rel="self" type="application/rss+xml"/>
     <language>th-TH</language>
-    <lastBuildDate>Thu, 28 May 2026 18:12:27 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 07 Jun 2026 18:23:54 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. สงวนลิขสิทธิ์</copyright>
     <item>
       <title>ดัชนีคลังอิสระปี 2026: คลังเชิงตัวแทน สภาพคล่องที่โปรแกรมได้ เงินฝากโทเค็น และการควบคุมเงินสดเรียลไทม์</title>
       <link>https://sebastienrousseau.com/th/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/</link>
       <description>ดัชนีปี 2026 สำหรับความพร้อมของคลังอิสระ ครอบคลุม workflow คลังเชิงตัวแทน สภาพคล่องที่โปรแกรมได้ เงินฝากโทเค็น การชำระเงินเรียลไทม์ และการควบคุมเงินสดอัตโนมัติเป็นโครงสร้างเดียว</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/th/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/</guid>
-      <pubDate>Thu, 28 May 2026 18:12:27 +0000</pubDate>
+      <pubDate>Sun, 07 Jun 2026 18:23:54 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/christopher-burns-Kj2SaNHG-hg.webp" type="image/webp" length="0"/>
       <category>คลังอิสระ 2026</category>
@@ -24,6 +24,194 @@
       <category>การจัดการเงินสดด้วย AI</category>
       <category>ISO 20022</category>
       <category>การควบคุมเงินสดเรียลไทม์</category>
+    </item>
+    <item>
+      <title>ธนาคารหลายรางในปี 2026: บัตร A2A สเตเบิลคอยน์ RTP FedNow และ Open Banking ในกลยุทธ์เดียว</title>
+      <link>https://sebastienrousseau.com/th/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</link>
+      <description>FedNow ต้องการสภาพคล่องที่จัดสรรล่วงหน้าแบบ 24/7 ACH ราคาถูกแต่ T+1 USDC ชำระแบบอะตอมแต่ต้องมีกระเป๋าเงิน ธนาคารหลายรางปี 2026 กำหนดเส้นทางทุกรายการตามต้นทุน ความเด็ดขาด และต้นทุนสภาพคล่อง โดยเอนจินที่อ่าน ISO 20022 pacs.008</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/th/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</guid>
+      <pubDate>Sun, 07 Jun 2026 18:23:54 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
+      <category>เลเยอร์ orchestration การชำระเงิน</category>
+      <category>FedNow vs RTP</category>
+      <category>FedNow vs ACH</category>
+      <category>การชำระบัญชี stablecoin</category>
+      <category>การชำระบัญชีแบบ atomic ด้วย USDC</category>
+      <category>ISO 20022 pacs.008</category>
+      <category>การโอนระหว่างบัญชี A2A</category>
+      <category>Open Banking APIs</category>
+      <category>สภาพคล่อง pre-funded</category>
+      <category>กับดักสภาพคล่อง 24/7</category>
+      <category>multi-rail bank 2026</category>
+      <category>เอนจินกำหนดเส้นทางการชำระเงิน</category>
+      <category>การกระทบยอด ERP</category>
+    </item>
+    <item>
+      <title>โครงสร้างพื้นฐาน PQC การชำระเงิน: เหตุใดธนาคารจึงควรแทนที่ราง ดั้งเดิม ไม่ใช่ปรับเปลี่ยน</title>
+      <link>https://sebastienrousseau.com/th/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</link>
+      <description>การเข้ารหัสยุคหลังควอนตัมบีบให้ราง การชำระเงินเลือกแบบทวิภาค: ปรับเปลี่ยน RSA/ECC ภายในซอง SWIFT MT และ ISO 20022 ที่ไม่เคยถูกออกแบบสำหรับ ML-KEM และ ML-DSA หรือแทนที่ด้วยโครงสร้างพื้นฐานที่คล่องตัวด้านการเข้ารหัส</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/th/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</guid>
+      <pubDate>Sun, 07 Jun 2026 18:23:54 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp" type="image/webp" length="0"/>
+      <category>การเข้ารหัสยุคหลังควอนตัม</category>
+      <category>PQC การชำระเงิน</category>
+      <category>ความคล่องตัวด้านการเข้ารหัส</category>
+      <category>เก็บเกี่ยวตอนนี้-ถอดรหัสภายหลัง</category>
+      <category>HNDL</category>
+      <category>มาตรฐาน NIST หลังควอนตัม</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>FIPS 203</category>
+      <category>FIPS 204</category>
+      <category>การย้ายราง การชำระเงิน</category>
+      <category>ISO 20022 PQC</category>
+      <category>การแทนที่ SWIFT MT</category>
+      <category>HSM</category>
+      <category>การล่มสลายของ PKI</category>
+      <category>ความยืดหยุ่นในการดำเนินงาน</category>
+    </item>
+    <item>
+      <title>ดัชนีการชำระเงินขายส่งในปี 2026: ISO 20022 เงินฝากแบบโทเคน รางเรียลไทม์ และการชำระบัญชีข้ามพรมแดน</title>
+      <link>https://sebastienrousseau.com/th/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</link>
+      <description>ดัชนีปี 2026 สำหรับความพร้อมการชำระเงินขายส่ง วัดคุณภาพข้อมูล ISO 20022 เงินฝากแบบโทเคน รางเรียลไทม์ การชำระข้ามพรมแดน และประสิทธิภาพสภาพคล่อง</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/th/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</guid>
+      <pubDate>Sat, 06 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/miquel-parera-NsXLehhHx1Q.webp" type="image/webp" length="0"/>
+      <category>การชำระเงินขายส่ง 2026</category>
+      <category>ISO 20022</category>
+      <category>เงินฝากแบบโทเคน</category>
+      <category>Project Agorá</category>
+      <category>การชำระเงินข้ามพรมแดน</category>
+      <category>การชำระเงินเรียลไทม์</category>
+      <category>ข้อมูลที่อยู่แบบมีโครงสร้าง</category>
+      <category>คุณภาพข้อมูลการชำระเงิน</category>
+    </item>
+    <item>
+      <title>ดัชนี Cloud Native Banking ปี 2026: DORA, วิศวกรรมแพลตฟอร์ม, Sovereign Cloud และความยืดหยุ่นเชิงปฏิบัติการ</title>
+      <link>https://sebastienrousseau.com/th/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/</link>
+      <description>ดัชนี cloud native banking ปี 2026 สำหรับวัดความพร้อม DORA วุฒิภาวะวิศวกรรมแพลตฟอร์ม ความเสี่ยงกระจุกตัวบนคลาวด์ หลักฐานทางออก และความยืดหยุ่นเชิงปฏิบัติการ</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/th/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/</guid>
+      <pubDate>Fri, 05 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/quang-nguyen-vinh-2649403.webp&w=1600&format=webp&q=85" type="image/webp" length="0"/>
+      <category>cloud native banking 2026</category>
+      <category>DORA ธนาคาร</category>
+      <category>ความเสี่ยงกระจุกตัวบนคลาวด์</category>
+      <category>วิศวกรรมแพลตฟอร์มธนาคาร</category>
+      <category>ความเสี่ยงบุคคลที่สาม ICT</category>
+      <category>กลยุทธ์ทางออกคลาวด์</category>
+      <category>sovereign cloud</category>
+    </item>
+    <item>
+      <title>ดัชนีธนาคารปลอดภัยจากควอนตัมในปี 2026: การเข้ารหัสหลังควอนตัม QKD ความคล่องตัวเข้ารหัส และความเสี่ยง Harvest-Now-Decrypt-Later</title>
+      <link>https://sebastienrousseau.com/th/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/</link>
+      <description>ดัชนีธนาคารสำหรับความพร้อมปลอดภัยจากควอนตัมในปี 2026 ครอบคลุมมาตรฐาน NIST หลังควอนตัม สินค้าคงคลังเข้ารหัส ความคล่องตัวเข้ารหัส QKD และข้อมูลอายุยาว</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/th/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/</guid>
+      <pubDate>Thu, 04 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>ธนาคารปลอดภัยจากควอนตัม 2026</category>
+      <category>การเข้ารหัสหลังควอนตัมสำหรับธนาคาร</category>
+      <category>NIST FIPS 203</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>SLH-DSA</category>
+      <category>ความคล่องตัวเข้ารหัส</category>
+      <category>QKD ในธนาคาร</category>
+    </item>
+    <item>
+      <title>ดัชนี Agentic AI สำหรับธนาคารในปี 2026: การวัดความเป็นอิสระ ธรรมาภิบาล ความสามารถในการตรวจสอบ และผลกระทบทางธุรกิจ</title>
+      <link>https://sebastienrousseau.com/th/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/</link>
+      <description>กรอบเชิงดัชนีสำหรับวัดความพร้อมของ agentic AI ในธนาคาร ครอบคลุมความเป็นอิสระ ธรรมาภิบาล ความสามารถในการตรวจสอบย้อนหลัง ความน่าเชื่อถือ การควบคุม และคุณค่าทางธุรกิจ</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/th/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/</guid>
+      <pubDate>Wed, 03 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>agentic AI ธนาคาร 2026</category>
+      <category>เอเจนต์ AI ในธนาคาร</category>
+      <category>ธรรมาภิบาล AI บริการการเงิน</category>
+      <category>เวิร์กโฟลว์ธนาคารอัตโนมัติ</category>
+      <category>การจัดการความเสี่ยงของโมเดล</category>
+      <category>ความสามารถในการตรวจสอบ AI</category>
+    </item>
+    <item>
+      <title>ดัชนีโครงสร้างพื้นฐานการธนาคารปี 2026: การวัดความพร้อมด้าน Agentic AI ความปลอดภัยควอนตัม คลาวด์-เนทีฟ และการชำระเงินค้าส่ง</title>
+      <link>https://sebastienrousseau.com/th/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/</link>
+      <description>ดัชนีโครงสร้างพื้นฐานการธนาคารปี 2026 ที่ได้แรงบันดาลใจจาก Stanford AI Index วัดความพร้อมด้าน agentic AI ความปลอดภัยควอนตัม คลาวด์-เนทีฟ และการชำระเงินค้าส่งทั่วโลก</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/th/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/</guid>
+      <pubDate>Tue, 02 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/miguel-sousa-ejIF-pJhYkM.webp" type="image/webp" length="0"/>
+      <category>ดัชนีโครงสร้างพื้นฐานการธนาคาร 2026</category>
+      <category>agentic AI การธนาคาร</category>
+      <category>การธนาคารปลอดภัยควอนตัม</category>
+      <category>การธนาคารคลาวด์-เนทีฟ</category>
+      <category>การชำระเงินค้าส่ง</category>
+      <category>ISO 20022</category>
+      <category>DORA</category>
+      <category>Project Agora</category>
+      <category>เงินฝากที่ผ่านการทำโทเคน</category>
+    </item>
+    <item>
+      <title>ตลาดดิจิทัลค้าส่งสหราชอาณาจักร: กิลต์แบบโทเคน การชำระบัญชี และบทบาทผู้นำใหม่</title>
+      <link>https://sebastienrousseau.com/th/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</link>
+      <description>บทบาท Wholesale Digital Markets Champion ของสหราชอาณาจักรยกระดับการเงินค้าส่งแบบโทเคนขึ้นเป็นวาระขีดความสามารถในการแข่งขันระดับชาติของ City</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/th/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</guid>
+      <pubDate>Sat, 30 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>ตลาดดิจิทัลค้าส่งสหราชอาณาจักร 2026</category>
+      <category>Wholesale Digital Markets Champion</category>
+      <category>กิลต์แบบโทเคน</category>
+      <category>tokenised gilts</category>
+      <category>การชำระบัญชี DLT</category>
+      <category>BoE DSS</category>
+      <category>Project Guardian</category>
+      <category>SDX</category>
+      <category>Project Agorá</category>
+      <category>HM Treasury</category>
+      <category>Bank of England</category>
+      <category>City of London</category>
+    </item>
+    <item>
+      <title>ISO 20022 หลังการย้ายระบบ: เปลี่ยนข้อมูลการชำระเงินเป็นผลิตภัณฑ์ธนาคารในปี 2026</title>
+      <link>https://sebastienrousseau.com/th/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</link>
+      <description>ISO 20022 หลังการย้ายระบบคือโอกาสของผลิตภัณฑ์ข้อมูล ที่อยู่แบบมีโครงสร้าง รหัสวัตถุประสงค์ ข้อมูลการโอน และข้อความตรวจสอบกลายเป็นผลิตภัณฑ์การกระทบยอด การฉ้อโกง สภาพคล่อง และการปฏิบัติตามกฎสำหรับธนาคารในปี 2026</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/th/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</guid>
+      <pubDate>Fri, 29 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/humphrey-muleba-1660004.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>ISO 20022 ปี 2026</category>
+      <category>ที่อยู่แบบมีโครงสร้าง</category>
+      <category>CBPR+</category>
+      <category>ผลิตภัณฑ์ข้อมูลการชำระเงิน</category>
+      <category>รหัสวัตถุประสงค์การชำระเงิน</category>
+      <category>การบริหารเงินขององค์กร</category>
+      <category>การกระทบยอด</category>
+      <category>การคัดกรองการคว่ำบาตร</category>
+      <category>การตรวจจับการฉ้อโกง</category>
+    </item>
+    <item>
+      <title>สินทรัพย์ดิจิทัลปี 2026: การเปลี่ยนผ่านโครงสร้างพื้นฐานที่ธนาคารเลื่อนไม่ได้</title>
+      <link>https://sebastienrousseau.com/th/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</link>
+      <description>สินทรัพย์ดิจิทัลไม่ใช่การเดิมพันด้านนวัตกรรมอีกต่อไป แต่เป็นคำถามสถาปัตยกรรมของการชำระบัญชี การคัสโตดี และงบดุล ภารกิจเชิงกลยุทธ์ของธนาคารคือการออกแบบโครงสร้างพื้นฐานภายใต้ความไม่แน่นอนเชิงโครงสร้าง</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/th/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</guid>
+      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/corporate-finance.webp" type="image/webp" length="0"/>
+      <category>สินทรัพย์ดิจิทัล 2026</category>
+      <category>สินทรัพย์โลกจริงที่ถูกโทเค็นไนซ์</category>
+      <category>สเตเบิลคอยน์ของธนาคาร</category>
+      <category>เงินฝากโทเค็น</category>
+      <category>การคัสโตดีสินทรัพย์ดิจิทัล</category>
+      <category>DLT ของธนาคาร</category>
+      <category>โครงสร้างพื้นฐานการชำระบัญชี</category>
+      <category>การเคลื่อนย้ายหลักประกัน</category>
+      <category>เงินที่โปรแกรมได้</category>
+      <category>กลยุทธ์สินทรัพย์ดิจิทัลของธนาคาร</category>
     </item>
     <item>
       <title>DORA กฎหมาย AI ของ EU และอธิปไตยข้อมูล: สแต็คการปฏิบัติตามกฎปี 2026 ของธนาคาร</title>
@@ -48,7 +236,7 @@
       <guid isPermaLink="true">https://sebastienrousseau.com/th/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/</guid>
       <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <enclosure url="https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp" type="image/webp" length="0"/>
       <category>AI การชำระเงิน 2026</category>
       <category>การฉ้อโกงการชำระเงิน</category>
       <category>การกำหนดเส้นทางการชำระเงิน</category>
@@ -250,7 +438,7 @@
       <guid isPermaLink="true">https://sebastienrousseau.com/th/2026-05-19-global-wholesale-payments-economics-2026/</guid>
       <pubDate>Tue, 19 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/meiying-ng-OrwkD-iWgqg.webp" type="image/webp" length="0"/>
+      <enclosure url="https://cloudcdn.pro/stocks/images/miguel-sousa-ejIF-pJhYkM.webp" type="image/webp" length="0"/>
       <category>การชำระเงินขายส่ง 2026</category>
       <category>เศรษฐศาสตร์การชำระเงินระดับโลก</category>
       <category>ISO 20022</category>

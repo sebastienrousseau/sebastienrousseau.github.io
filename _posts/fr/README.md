@@ -1,87 +1,29 @@
----
-# This README is ignored by the build pipeline (the loader skips any
-# file starting with "README" or with a non-dated stem).
----
-
 # French translations
 
-Manual French translations of dated posts from `_posts/`. Published
-at `https://sebastienrousseau.com/fr/<fr-slug>/`.
+> Last Updated: June 4, 2026
+
+This directory houses the manual French translations for the Sebastien Rousseau web platform, where every dated article published on the site gets translated to ensure content parity across all supported language trees.
 
 ## Slug map — single source of truth
 
-`scripts/_fr_slugs.py` holds the canonical EN ↔ FR slug map. Every
-entry follows the contract:
-
-* **Key** — markdown stem in `_posts/fr/` AND `_posts/`.
-* **Value** — published FR URL slug under `/fr/`.
-
-```python
-EN_TO_FR = {
-    "2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf":
-        "2026-05-15-rendement-cache-decryptage-depots-blackrock-brsrv-bstbl-genius-act",
-    ...
-}
-```
-
-The build pipeline accepts either form for the markdown filename — EN
-slug (legacy) or FR slug (current convention) — and resolves the
-counterpart via the map.
+The file scripts/lib/_fr_slugs.py defines the canonical mapping between English and French URL slugs. Each entry follows a key-value contract where the key matches the English source file name and the value represents the localized French URL segment.
 
 ## File convention
 
-```
-_posts/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf.md
-_posts/fr/2026-05-15-rendement-cache-decryptage-depots-blackrock-brsrv-bstbl-genius-act.md
-```
-
-Published URL:
-
-```
-https://sebastienrousseau.com/fr/2026-05-15-rendement-cache-decryptage-depots-blackrock-brsrv-bstbl-genius-act/
-```
+The French files use the same naming convention as the English files and reside in the language folder, which means the build tools can parse these files during compilation to build the correct output folders.
 
 ## Frontmatter
 
-```yaml
----
-title: "Rendement caché : décryptage des dépôts BRSRV et BSTBL de BlackRock"
-subtitle: "..."
-description: "..."
-date: "May 15, 2026"   # keep an English month string — parses cross-locale
-language: "fr"
-locale: "fr_FR"
-banner: "https://cloudcdn.pro/stocks/images/..."
-banner_alt: "..."
-keywords: "..., ..."
----
-```
+The top block of each file holds key details that the Static Site Generator site generator needs to build the pages. You must write dates in English format for the builder.
 
 ## Build flow
 
-1. `scripts/build_translations.py` walks `_posts/fr/*.md`, resolves
-   the EN counterpart via `_fr_slugs.py`, forks the rendered English
-   shell, swaps the body in French, rewrites every internal EN URL to
-   its FR counterpart, localises chrome strings, breadcrumb JSON-LD,
-   feed `<link>` tags, then writes `public/fr/<fr-slug>/index.html`.
-2. `scripts/build_fr_feeds.py` emits `/fr/rss.xml`, `/fr/atom.xml`,
-   `/fr/news-sitemap.xml`.
-3. `scripts/postbuild.py` injects reciprocal hreflang on every paired
-   page, splices the FR URLs into `sitemap.xml`, advertises the FR
-   news-sitemap in `robots.txt`.
+The translation script reads the English pages and swaps the main text and menu buttons. It links internal URLs to French pages and sets response headers.
 
 ## Adding a new translation
 
-1. Add the EN → FR slug pair to `scripts/_fr_slugs.py`.
-2. Create `_posts/fr/<fr-slug>.md` with French frontmatter + body.
-3. Run `./build.sh`.
-4. Verify with `python3 scripts/validate_jsonld.py` and
-   `python3 scripts/audit_links.py`.
+To add a translation, write the slug pair in the map and save the file here. Then run the build script to check if the tests stay green.
 
 ## French UI strings
 
-`scripts/build_translations.py` ships `CHROME_PATCHES` (regex pairs
-that localise nav / footer / search / breadcrumb / aria labels) and
-`I18N_FR` (Published / Updated / Previous / Next / etc.). Postbuild's
-furniture renderers detect `<html lang="fr">` and pick the French
-labels automatically.
+The translation script uses a set of rules to swap common menu labels on the pages, and the templates pick these labels when the language is set.

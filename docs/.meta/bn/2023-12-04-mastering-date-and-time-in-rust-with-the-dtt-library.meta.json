@@ -1,11 +1,14 @@
 {
-  "language": "bn-BD",
-  "banner": "https://cloudcdn.pro/clients/dtt/v1/logos/dtt.svg",
-  "locale": "bn_BD",
   "keywords": "DateTime, DTT, Rust লাইব্রেরি, পার্সিং, যাচাইকরণ, ম্যানিপুলেশন, ফরম্যাটিং, তারিখ, সময়",
   "title": "Efficient Date and Time Management with DateTime (DTT)",
-  "description": "DateTime (DTT) হলো তারিখ ও সময় পার্স, যাচাই, ম্যানিপুলেট এবং ফরম্যাট করার জন্য একটি Rust লাইব্রেরি — উচ্চ নির্ভুলতা ও বিস্তৃত কার্যকারিতা সহ।",
-  "banner_alt": "DateTime (DTT), তারিখ ও সময় অপারেশনের জন্য আপনার অপরিহার্য টুলকিট।",
   "date": "Dec 04, 2023",
+  "banner_alt": "DateTime (DTT), তারিখ ও সময় অপারেশনের জন্য আপনার অপরিহার্য টুলকিট।",
+  "description": "DateTime (DTT) হলো তারিখ ও সময় পার্স, যাচাই, ম্যানিপুলেট এবং ফরম্যাট করার জন্য একটি Rust লাইব্রেরি — উচ্চ নির্ভুলতা ও বিস্তৃত কার্যকারিতা সহ।",
+  "locale": "bn_BD",
+  "word_count": 1039,
+  "tags": "DateTime, DTT, Rust, date library, time library, timezone handling, chrono alternative, ISO 8601, time formatting, Sebastien Rousseau, ISO 20022, পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, AI, open source",
+  "language": "bn-BD",
+  "banner": "https://cloudcdn.pro/clients/dtt/v1/logos/dtt.svg",
+  "reading_time": 5,
   "subtitle": "DTT, তারিখ ও সময় অপারেশনের জন্য উচ্চ-নির্ভুলতার Rust লাইব্রেরি।"
 }

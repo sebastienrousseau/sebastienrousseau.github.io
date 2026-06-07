@@ -1,5 +1,6 @@
 ---
 title: "التشفير المتماثل الكامل (FHE) في عصر الحوسبة الكمومية المصرفية"
+tags: "FHE, Banking, quantum computing, Data Security, Encryption, Financial Technology, Regulatory Compliance, Computational Overhead, Research, Data Privacy, ISO 20022, post-quantum cryptography, AI"
 subtitle: "تعزيز أمن البيانات، تحسين خصوصية الذكاء الاصطناعي، وبناء ثقة العملاء في عصر الحوسبة الكمومية بفضل FHE"
 description: "اكتشف كيف يُحدِث التشفير المتماثل الكامل ثورةً في أمن البيانات في القطاع المصرفي والصناعة المالية، مُحافظاً على الخصوصية في وجه تهديدات الحوسبة الكمومية."
 date: "Mar 25, 2024"

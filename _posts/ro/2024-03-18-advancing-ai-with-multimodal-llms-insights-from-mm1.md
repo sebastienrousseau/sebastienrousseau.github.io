@@ -1,5 +1,6 @@
 ---
 title: "Advancing AI with Multimodal LLMs: Insights from MM1"
+tags: "Multimodal, LLM, AI, MM1, Pre-training, Image Recognition, NLP, Future, Learning, Research, ISO 20022, criptografie post-cuantică, calcul cuantic"
 subtitle: "Dezvăluind Viitorul AI: Cum Studiul Revoluționar MM1 al Apple Transformă Învățarea Multimodală"
 description: "Explorați lucrarea MM1 a Apple despre Modelele Lingvistice Mari Multimodale (MLLM). Descoperiți arhitectura, strategiile de pre-antrenare și potențialul AI."
 date: "Mar 17, 2024"
@@ -121,4 +122,3 @@ To learn more about the groundbreaking MM1 study and explore the fascinating wor
 
 [divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Divider"
 [architecture]: https://cloudcdn.pro/stocks/diagrams/mm1_model_architecture.svg "MM1 Model Architecture"
-

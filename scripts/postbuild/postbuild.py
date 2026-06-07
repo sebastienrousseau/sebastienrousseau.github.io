@@ -11,6 +11,7 @@ Tasks performed:
    inject those hashes into that page's ``script-src`` directive. The previous
    ``'unsafe-inline'`` carve-out is removed.
 """
+
 from __future__ import annotations
 
 import sys as _sys  # path bootstrap — scripts reorg (scripts/lib/ on sys.path)
@@ -220,7 +221,9 @@ asset_path_re = re.compile(
 
 _SRI_ANY_RE = re.compile(r"\s+integrity=(['\"])sha256-[^'\"]+\1")
 _TAG_CLOSE_RE = re.compile(r"(\s*/?>)\s*$")
-_CROSSORIGIN_RE = re.compile(r"\s+crossorigin=(['\"]?)(?:anonymous|use-credentials)\1", re.IGNORECASE)
+_CROSSORIGIN_RE = re.compile(
+    r"\s+crossorigin=(['\"]?)(?:anonymous|use-credentials)\1", re.IGNORECASE
+)
 
 
 def fix_sri(html: str) -> str:
@@ -231,7 +234,7 @@ def fix_sri(html: str) -> str:
     don't accumulate duplicates."""
     out: list[str] = []
     last = 0
-    for m in re.finditer(r'<(?:script|link)\b[^>]+>', html):
+    for m in re.finditer(r"<(?:script|link)\b[^>]+>", html):
         chunk = m.group(0)
         ap = asset_path_re.search(chunk)
         if not ap:
@@ -254,12 +257,8 @@ def fix_sri(html: str) -> str:
         # whitespace-separated ``sha256-<b64>`` tokens (see
         # ``_candidate_digests``). The SRI spec accepts a list and
         # passes the resource if any token matches the computed hash.
-        replaced = (
-            body
-            + f' integrity="{digest}" crossorigin="anonymous"'
-            + closer
-        )
-        out.append(html[last:m.start()])
+        replaced = body + f' integrity="{digest}" crossorigin="anonymous"' + closer
+        out.append(html[last : m.start()])
         out.append(replaced)
         last = m.end()
     out.append(html[last:])
@@ -279,7 +278,7 @@ _FIRST_IMG_RE = re.compile(
     r'<img\b(?![^>]*\b(?:loading=["\']?lazy)\b)[^>]*\bsrc=["\']([^"\']+)["\']',
     re.IGNORECASE,
 )
-_HEAD_CLOSE_RE = re.compile(r'</head>', re.IGNORECASE)
+_HEAD_CLOSE_RE = re.compile(r"</head>", re.IGNORECASE)
 # Match a preload image link regardless of attribute order — SSG's
 # minifier alphabetises ``as=image`` before ``rel=preload``, so the
 # straightforward ``rel=preload[…]as=image`` regex misses the
@@ -312,7 +311,9 @@ def _align_existing_preload(html: str, target_src: str) -> tuple[str, int]:
         if href == target_src:
             return match.group(0)  # already aligned
         new_attrs, n_sub = _LINK_HREF_ANY_RE.subn(
-            f'href="{target_src}"', attrs, count=1,
+            f'href="{target_src}"',
+            attrs,
+            count=1,
         )
         if n_sub == 0:
             return match.group(0)
@@ -346,9 +347,7 @@ def inject_lcp_preload(html: str) -> tuple[str, int]:
         return html, 0
     if _has_image_preload(html):
         return _align_existing_preload(html, src)
-    preload = (
-        f'<link rel="preload" as="image" href="{src}" fetchpriority="high">'
-    )
+    preload = f'<link rel="preload" as="image" href="{src}" fetchpriority="high">'
     new = _HEAD_CLOSE_RE.sub(preload + "</head>", html, count=1)
     if new == html:
         return html, 0
@@ -380,10 +379,12 @@ _CDN_TRANSFORM_PREFIX = f"{_CDN_HOST}/api/transform?"
 _RASTER_EXT_RE = re.compile(r"\.(?:webp|png|jpg|jpeg)(?:[?#]|$)", re.IGNORECASE)
 _IMG_TAG_TRANSFORM_RE = re.compile(r"<img\b([^>]*)/?>", re.IGNORECASE)
 _IMG_SRC_ANY_RE = re.compile(
-    r"""\bsrc=(?:(["'])([^"']+)\1|([^\s>'"]+))""", re.IGNORECASE,
+    r"""\bsrc=(?:(["'])([^"']+)\1|([^\s>'"]+))""",
+    re.IGNORECASE,
 )
 _IMG_WIDTH_ANY_RE = re.compile(
-    r"""\bwidth=(?:["'](\d+)["']|(\d+))""", re.IGNORECASE,
+    r"""\bwidth=(?:["'](\d+)["']|(\d+))""",
+    re.IGNORECASE,
 )
 _IMG_FETCHPRI_RE = re.compile(
     r"""\bfetchpriority=(?:["'](high|low|auto)["']|(high|low|auto))""",
@@ -394,6 +395,7 @@ _IMG_FETCHPRI_RE = re.compile(
 def _build_cdn_transform_url(path: str, width: int, quality: int) -> str:
     """Build the canonical /api/transform URL for a CDN path."""
     from urllib.parse import quote
+
     # safe='/' so the leading slash + nested slashes stay intact; the CDN
     # handler rejects %2F-escaped slashes by treating them as literal in
     # the path.
@@ -433,7 +435,8 @@ _LINK_PRELOAD_IMAGE_RE = re.compile(
     re.IGNORECASE,
 )
 _LINK_HREF_ANY_RE = re.compile(
-    r"""\bhref=(?:(["'])([^"']+)\1|([^\s>'"]+))""", re.IGNORECASE,
+    r"""\bhref=(?:(["'])([^"']+)\1|([^\s>'"]+))""",
+    re.IGNORECASE,
 )
 
 
@@ -473,7 +476,7 @@ def wrap_cdn_images_in_transform(html: str) -> tuple[str, int]:
         if not src or not src.startswith(_CDN_HOST + "/"):
             return match.group(0)
         # Strip the host + any query/fragment to isolate the on-CDN path.
-        path = src[len(_CDN_HOST):].split("?", 1)[0].split("#", 1)[0]
+        path = src[len(_CDN_HOST) :].split("?", 1)[0].split("#", 1)[0]
         base_w = _img_attr_width(attrs) or 600
         quality = 85 if _img_is_high_priority(attrs) else 80
         new_src = _wrap_cdn_path(path, base_w, quality)
@@ -482,7 +485,9 @@ def wrap_cdn_images_in_transform(html: str) -> tuple[str, int]:
         # Splice the new src into the attribute string, preserving quote
         # style. Match both quoted and unquoted src= forms.
         new_attrs, n_sub = _IMG_SRC_ANY_RE.subn(
-            f'src="{new_src}"', attrs, count=1,
+            f'src="{new_src}"',
+            attrs,
+            count=1,
         )
         if n_sub == 0:
             return match.group(0)
@@ -495,7 +500,7 @@ def wrap_cdn_images_in_transform(html: str) -> tuple[str, int]:
         href = _link_attr_href(attrs)
         if not href or not href.startswith(_CDN_HOST + "/"):
             return match.group(0)
-        path = href[len(_CDN_HOST):].split("?", 1)[0].split("#", 1)[0]
+        path = href[len(_CDN_HOST) :].split("?", 1)[0].split("#", 1)[0]
         # Preloads don't carry a width hint; fetchpriority="high" on a
         # preload IS the LCP hero signal, so use the LCP defaults.
         quality = 85 if _img_is_high_priority(attrs) else 80
@@ -504,7 +509,9 @@ def wrap_cdn_images_in_transform(html: str) -> tuple[str, int]:
         if new_href is None:
             return match.group(0)
         new_attrs, n_sub = _LINK_HREF_ANY_RE.subn(
-            f'href="{new_href}"', attrs, count=1,
+            f'href="{new_href}"',
+            attrs,
+            count=1,
         )
         if n_sub == 0:
             return match.group(0)
@@ -532,7 +539,8 @@ def wrap_cdn_images_in_transform(html: str) -> tuple[str, int]:
 # ---------------------------------------------------------------------------
 
 _REDUNDANT_LINK_TITLE_RE = re.compile(
-    r'<a\b([^>]*)>([^<]+)</a>', re.IGNORECASE,
+    r"<a\b([^>]*)>([^<]+)</a>",
+    re.IGNORECASE,
 )
 _TITLE_ATTR_RE = re.compile(r'\s+title="([^"]+)"', re.IGNORECASE)
 
@@ -555,7 +563,7 @@ def strip_redundant_link_titles(html: str) -> tuple[str, int]:
         title_m = _TITLE_ATTR_RE.search(attrs)
         if not title_m or not _title_matches_text(title_m.group(1), text):
             return m.group(0)
-        new_attrs = attrs[: title_m.start()] + attrs[title_m.end():]
+        new_attrs = attrs[: title_m.start()] + attrs[title_m.end() :]
         n += 1
         return f"<a{new_attrs}>{text}</a>"
 
@@ -584,7 +592,7 @@ speculation_re = re.compile(
 # Bare inline <script> blocks (no src, no type) — used for the inlined
 # theme bootstrap. Each one needs its own sha256 in CSP script-src.
 _inline_script_re = re.compile(
-    r'<script(?![^>]*\bsrc=)(?![^>]*\btype=)[^>]*>([\s\S]*?)</script>',
+    r"<script(?![^>]*\bsrc=)(?![^>]*\btype=)[^>]*>([\s\S]*?)</script>",
     re.IGNORECASE,
 )
 
@@ -618,6 +626,8 @@ def inline_theme_init(html: str) -> tuple[str, int]:
     replacement = f"<script>{THEME_INIT_MINIFIED}</script>"
     new, n = _theme_init_tag_re.subn(replacement, html)
     return new, n
+
+
 # Match the CSP meta tag whether attributes are quoted or not, in either order
 # (Static Site Generator's minifier emits `<meta content="..." http-equiv=Content-Security-Policy>`).
 csp_tag_re = re.compile(
@@ -673,7 +683,7 @@ import json as _json
 # /articles/ page) are folded in via wildcard prefix matching below.
 LISTING_PAGES = {
     "articles/index.html": ("newsroom-card", "newsroom-featured"),
-    "papers/index.html":   ("newsroom-card", "book"),
+    "papers/index.html": ("newsroom-card", "book"),
     "projects/index.html": ("newsroom-card",),
     # Playlists embed Spotify iframes per card, not internal links, so an
     # ItemList over those is semantically wrong — Schema.org's ItemList is
@@ -693,12 +703,12 @@ _first_link_re = re.compile(
     r'<a\b[^>]*\bhref="([^"]+)"[^>]*>([\s\S]*?)</a>',
     re.IGNORECASE,
 )
-_strip_tags_re = re.compile(r'<[^>]+>')
-_ws_re = re.compile(r'\s+')
+_strip_tags_re = re.compile(r"<[^>]+>")
+_ws_re = re.compile(r"\s+")
 
 
 def _strip_tags(s: str) -> str:
-    return _ws_re.sub(' ', _strip_tags_re.sub('', s)).strip()
+    return _ws_re.sub(" ", _strip_tags_re.sub("", s)).strip()
 
 
 def _card_title_url(body: str) -> tuple[str, str] | None:
@@ -710,9 +720,9 @@ def _card_title_url(body: str) -> tuple[str, str] | None:
     for lm in _first_link_re.finditer(body):
         href = _html.unescape(lm.group(1))
         text = _strip_tags(lm.group(2))
-        if not href or href.startswith('#') or len(text) < 3:
+        if not href or href.startswith("#") or len(text) < 3:
             continue
-        if href.startswith('/'):
+        if href.startswith("/"):
             href = SITE + href
         cand = (len(text), text, href)
         if best is None or cand[0] > best[0]:
@@ -743,7 +753,7 @@ def build_itemlist(html: str, classes: tuple[str, ...], page_url: str) -> str | 
             items.append(pair)
     if not items:
         return None
-    return _json.dumps(_itemlist_graph(items, page_url), separators=(',', ':'), ensure_ascii=False)
+    return _json.dumps(_itemlist_graph(items, page_url), separators=(",", ":"), ensure_ascii=False)
 
 
 def inject_itemlist(page: Path, html: str) -> str:
@@ -755,13 +765,9 @@ def inject_itemlist(page: Path, html: str) -> str:
     payload = build_itemlist(html, classes, page_url)
     if not payload:
         return html
-    block = (
-        '<script type="application/ld+json">'
-        + payload +
-        '</script>'
-    )
+    block = '<script type="application/ld+json">' + payload + "</script>"
     # Insert just before </body> so the existing CSP-hash pass picks it up.
-    return re.sub(r'(?i)</body>', block + '</body>', html, count=1)
+    return re.sub(r"(?i)</body>", block + "</body>", html, count=1)
 
 
 # SEO + Schema.org injection — moved to postbuild_lib.seo
@@ -789,7 +795,9 @@ from postbuild_lib.article_furniture import (  # noqa: F401 — re-exports
     inject_anchor_links_and_toc,
     inject_article_furniture,
     inject_citations,
+    inject_hero_banner,
     inject_hreflang,
+    inject_lang_switcher,
     inject_mermaid,
     inject_nav_active,
     inject_prev_next_nav,
@@ -797,6 +805,7 @@ from postbuild_lib.article_furniture import (  # noqa: F401 — re-exports
     inject_sources_list,
     inject_speculation_rules,
     slugify,
+    strip_duplicate_body_h1,
 )
 
 # Live GitHub repo stats — moved to postbuild_lib.github_stats
@@ -812,20 +821,26 @@ from postbuild_lib.github_stats import (
 from postbuild_lib.output import (  # noqa: F401 — re-exports
     augment_sitemap_with_rendered_pages,
     build_lastmod_index,
+    build_llms_ctx_txt,
     build_llms_full_txt,
     build_llms_txt,
+    dedupe_sitemap_index_html,
     dedupe_xml_feeds,
     escape_xml_ampersands,
     fix_xml_feed_urls,
     fix_xml_feeds,
     refresh_sitemap_lastmod,
     shrink_news_sitemap,
+    write_humans,
     write_json_feed,
+    write_llms_ctx_txt,
     write_llms_full_txt,
     write_llms_txt,
     write_robots,
+    write_security_txt,
 )
 from postbuild_lib.schemas import (
+    inject_news_article,
     inject_software_source_code,
     inject_tech_article,
 )
@@ -854,6 +869,7 @@ class _PostbuildCounters:
         "about_patched",
         "anchor_patched",
         "asset_fp_patched",
+        "body_h1_stripped",
         "cdn_wrapped",
         "citation_patched",
         "csp_patched",
@@ -862,11 +878,13 @@ class _PostbuildCounters:
         "hreflang_patched",
         "img_dims_patched",
         "itemlist_patched",
+        "langswitch_patched",
         "lcp_preloaded",
         "link_hoisted",
         "localhost_patched",
         "mermaid_patched",
         "nav_patched",
+        "newsarticle_patched",
         "og_patched",
         "redundant_titles_stripped",
         "social_patched",
@@ -900,7 +918,7 @@ class _PostbuildContext:
 
 
 _LOCALHOST_HOST_RE = re.compile(
-    r'https?://(?:127\.0\.0\.1(?::\d+)?|localhost(?::\d+)?)',
+    r"https?://(?:127\.0\.0\.1(?::\d+)?|localhost(?::\d+)?)",
     re.IGNORECASE,
 )
 
@@ -925,9 +943,7 @@ def _build_fp_pattern() -> re.Pattern[str] | None:
     bares = sorted(_FP_ASSET_MAP, key=len, reverse=True)
     alternation = "|".join(re.escape(b) for b in bares)
     return re.compile(
-        r'(<(?:script|link)\b[^>]*\b(?:src|href)=["\']?)('
-        + alternation
-        + r')(["\']?[^>]*>)',
+        r'(<(?:script|link)\b[^>]*\b(?:src|href)=["\']?)(' + alternation + r')(["\']?[^>]*>)',
         re.IGNORECASE,
     )
 
@@ -1023,10 +1039,27 @@ def _apply_seo_passes(html: str, page: Path, ctr: _PostbuildCounters) -> str:
     out = inject_about(out)
     if out != prev:
         ctr.about_patched += 1
-    prev = out
-    out = inject_tech_article(page, out)
+    return _apply_schema_subtype_passes(out, page, ctr)
+
+
+def _apply_schema_subtype_passes(
+    html: str,
+    page: Path,
+    ctr: _PostbuildCounters,
+) -> str:
+    """Article-subtype JSON-LD passes: TechArticle / ScholarlyArticle
+    (auto-dispatched by inject_tech_article), NewsArticle for posts
+    inside the 48-hour Google News carousel window, and
+    SoftwareSourceCode on the projects index. Each is idempotent;
+    the per-pass counter is bumped on the first run that mutates HTML."""
+    prev = html
+    out = inject_tech_article(page, html)
     if out != prev:
         ctr.techarticle_patched += 1
+    prev = out
+    out = inject_news_article(page, out)
+    if out != prev:
+        ctr.newsarticle_patched += 1
     prev = out
     out = inject_software_source_code(page, out)
     if out != prev:
@@ -1040,11 +1073,19 @@ def _apply_article_passes(html: str, page: Path, ctr: _PostbuildCounters) -> str
     out = inject_article_furniture(html)
     if out != prev:
         ctr.furniture_patched += 1
+    # Hero banner (figure pulled from the article's og:image). Runs after
+    # furniture so its anchor regex sees the post-furniture document, and
+    # before the lang switcher so the switcher slots in after the banner.
+    out = inject_hero_banner(out)
     out = inject_sigstore_attestation(out, page.parent.name)
     prev = out
     out = inject_anchor_links_and_toc(out)
     if out != prev:
         ctr.anchor_patched += 1
+    prev = out
+    out = strip_duplicate_body_h1(out)
+    if out != prev:
+        ctr.body_h1_stripped += 1
     out = _convert_faq_to_qa(out)
     prev = out
     out = inject_citations(out)
@@ -1066,13 +1107,15 @@ def _apply_nav_passes(html: str, page: Path, ctx: _PostbuildContext) -> str:
     """Prev/next nav + active-link marker. Must run after sources-list
     (which anchors against either the nav or </main>)."""
     parent_dir_name = page.parent.parent.name
-    page_lang_for_nav = (
-        parent_dir_name if parent_dir_name in _all_active_non_en_langs() else "en"
-    )
+    page_lang_for_nav = parent_dir_name if parent_dir_name in _all_active_non_en_langs() else "en"
     page_is_fr = page_lang_for_nav == "fr"
     out = inject_prev_next_nav(
-        html, page.parent.name, ctx.nav_index, is_fr=page_is_fr,
-        fr_titles=ctx.fr_titles, page_lang=page_lang_for_nav,
+        html,
+        page.parent.name,
+        ctx.nav_index,
+        is_fr=page_is_fr,
+        fr_titles=ctx.fr_titles,
+        page_lang=page_lang_for_nav,
     )
     out = inject_nav_active(out, page)
     if out != html:
@@ -1083,21 +1126,12 @@ def _apply_nav_passes(html: str, page: Path, ctx: _PostbuildContext) -> str:
 def _is_topic_page(page: Path) -> tuple[bool, bool, list[str]]:
     """Return (is_en_topic, is_fr_topic, is_lang_topic_codes) for the
     topic-subpage hreflang branch."""
-    is_en_topic = (
-        page.parent.parent.name == "topics"
-        and page.parent.parent.parent == PUBLIC
-    )
-    is_fr_topic = (
-        page.parent.parent.name == "sujets"
-        and page.parent.parent.parent.name == "fr"
-    )
+    is_en_topic = page.parent.parent.name == "topics" and page.parent.parent.parent == PUBLIC
+    is_fr_topic = page.parent.parent.name == "sujets" and page.parent.parent.parent.name == "fr"
     is_lang_topic_codes: list[str] = []
     for _code in _all_active_non_en_langs():
         _topic_dir = _slug_maps(_code)["statics_en_to_lang"].get("topics", "topics")
-        if (
-            page.parent.parent.name == _topic_dir
-            and page.parent.parent.parent.name == _code
-        ):
+        if page.parent.parent.name == _topic_dir and page.parent.parent.parent.name == _code:
             is_lang_topic_codes.append(_code)
     return is_en_topic, is_fr_topic, is_lang_topic_codes
 
@@ -1117,13 +1151,12 @@ def _topic_hreflang(html: str, rel_slug: str) -> str:
     )
     en_url = topic_alts[0][1]
     _hf_re = re.compile(r'<link rel="alternate"[^>]+hreflang="[^"]+"[^/]*/>', re.IGNORECASE)
-    cleaned = _hf_re.sub('', html)
-    topic_links = ''.join(
-        f'<link rel="alternate" hreflang="{lc}" href="{u}" />'
-        for lc, u in topic_alts
+    cleaned = _hf_re.sub("", html)
+    topic_links = "".join(
+        f'<link rel="alternate" hreflang="{lc}" href="{u}" />' for lc, u in topic_alts
     )
     topic_links += f'<link rel="alternate" hreflang="x-default" href="{en_url}" />'
-    return re.sub(r'</head>', topic_links + '</head>', cleaned, count=1, flags=re.IGNORECASE)
+    return re.sub(r"</head>", topic_links + "</head>", cleaned, count=1, flags=re.IGNORECASE)
 
 
 def _is_home_page(page: Path) -> bool:
@@ -1140,20 +1173,20 @@ def _is_home_page(page: Path) -> bool:
 
 def _home_hreflang(html: str) -> str:
     """Build + inject the home-page hreflang triple."""
-    _head_re = re.compile(r'</head>', re.IGNORECASE)
+    _head_re = re.compile(r"</head>", re.IGNORECASE)
     _hf_re = re.compile(r'<link rel="alternate"[^>]+hreflang="[^"]+"[^/]*/>', re.IGNORECASE)
-    cleaned = _hf_re.sub('', html)
+    cleaned = _hf_re.sub("", html)
     home_alts: list[tuple[str, str]] = [("en", "https://sebastienrousseau.com/")]
     home_alts.extend(
-        (_code, f"https://sebastienrousseau.com/{_code}/")
-        for _code in _all_active_non_en_langs()
+        (_code, f"https://sebastienrousseau.com/{_code}/") for _code in _all_active_non_en_langs()
     )
-    home_links = ''.join(
-        f'<link rel="alternate" hreflang="{lc}" href="{u}" />'
-        for lc, u in home_alts
+    home_links = "".join(
+        f'<link rel="alternate" hreflang="{lc}" href="{u}" />' for lc, u in home_alts
     )
-    home_links += '<link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/" />'
-    return _head_re.sub(home_links + '</head>', cleaned, count=1)
+    home_links += (
+        '<link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/" />'
+    )
+    return _head_re.sub(home_links + "</head>", cleaned, count=1)
 
 
 def _apply_hreflang_pass(html: str, page: Path, ctx: _PostbuildContext) -> str:
@@ -1167,9 +1200,7 @@ def _apply_hreflang_pass(html: str, page: Path, ctx: _PostbuildContext) -> str:
     if _is_home_page(page):
         return _home_hreflang(html)
     page_lang = (
-        page.parent.parent.name
-        if page.parent.parent.name in ctx.translated_per_lang
-        else "en"
+        page.parent.parent.name if page.parent.parent.name in ctx.translated_per_lang else "en"
     )
     return inject_hreflang(html, rel_slug, page_lang, ctx.translated_per_lang)
 
@@ -1179,6 +1210,21 @@ def _process_page(page: Path, ctx: _PostbuildContext) -> None:
     original = page.read_text(encoding="utf-8", errors="ignore")
     patched_about = _apply_seo_passes(original, page, ctx.counters)
     patched_src = _apply_article_passes(patched_about, page, ctx.counters)
+    # Per-article inline language switcher — runs after article furniture
+    # because it inserts between the hero <section> and <main>, which
+    # furniture has already populated. Needs ctx for translated_per_lang.
+    slug = page.parent.name
+    parent_dir = page.parent.parent.name
+    page_lang_for_ls = parent_dir if parent_dir in ctx.translated_per_lang else "en"
+    new_src = inject_lang_switcher(
+        patched_src,
+        slug,
+        page_lang_for_ls,
+        ctx.translated_per_lang,
+    )
+    if new_src != patched_src:
+        ctx.counters.langswitch_patched += 1
+        patched_src = new_src
     patched_nav = _apply_nav_passes(patched_src, page, ctx)
     prev_hl = patched_nav
     patched_hl = _apply_hreflang_pass(patched_nav, page, ctx)
@@ -1227,8 +1273,18 @@ def _finalize_build() -> tuple[int, bool, bool, bool, int, int, int, int]:
     # from the SSG-generated sitemap. Counted into sitemap_patched so
     # the existing report shape is unchanged.
     sitemap_patched += augment_sitemap_with_rendered_pages(PUBLIC)
+    # Drop the stale `<loc>...slug/index.html</loc>` entries that ssg
+    # emits with a homepage-stub lastmod. The canonical pretty URL
+    # (`<loc>...slug/</loc>`) is added by `_splice_fr_urls` with the
+    # article's actual last_reviewed date. Counted into sitemap_patched.
+    sitemap_patched += dedupe_sitemap_index_html(PUBLIC / "sitemap.xml")
     robots_written = write_robots(PUBLIC)
+    # humans.txt + root security.txt: the SSG emits empty placeholders;
+    # copy through from the repo-root sources so both land non-empty.
+    write_humans(PUBLIC, Path("."))
+    write_security_txt(PUBLIC, Path("."))
     llms_written = write_llms_txt(PUBLIC)
+    llms_ctx_written = write_llms_ctx_txt(PUBLIC)
     llms_full_written = write_llms_full_txt(PUBLIC)
     write_json_feed(PUBLIC)
     feed_urls_patched = fix_xml_feed_urls(PUBLIC)
@@ -1236,8 +1292,15 @@ def _finalize_build() -> tuple[int, bool, bool, bool, int, int, int, int]:
     feeds_deduped = dedupe_xml_feeds(PUBLIC)
     news_shrunk = shrink_news_sitemap(PUBLIC)
     return (
-        sitemap_patched, robots_written, llms_written, llms_full_written,
-        feed_urls_patched, xml_patched, feeds_deduped, news_shrunk,
+        sitemap_patched,
+        robots_written,
+        llms_written,
+        llms_ctx_written,
+        llms_full_written,
+        feed_urls_patched,
+        xml_patched,
+        feeds_deduped,
+        news_shrunk,
     )
 
 
@@ -1252,8 +1315,15 @@ def main() -> None:
         _process_page(page, ctx)
 
     (
-        sitemap_patched, robots_written, llms_written, llms_full_written,
-        feed_urls_patched, xml_patched, feeds_deduped, news_shrunk,
+        sitemap_patched,
+        robots_written,
+        llms_written,
+        llms_ctx_written,
+        llms_full_written,
+        feed_urls_patched,
+        xml_patched,
+        feeds_deduped,
+        news_shrunk,
     ) = _finalize_build()
 
     c = ctx.counters
@@ -1272,6 +1342,7 @@ def main() -> None:
         f"{c.sri_patched} got real SRI, "
         f"{c.itemlist_patched} got ItemList JSON-LD, "
         f"{c.techarticle_patched} got TechArticle, "
+        f"{c.newsarticle_patched} got NewsArticle, "
         f"{c.softwaresourcecode_patched} got SoftwareSourceCode, "
         f"{c.social_patched} got og:image fixed, "
         f"{c.og_patched} got og:url/locale/site_name, "
@@ -1280,7 +1351,9 @@ def main() -> None:
         f"{c.wc_patched} got wordCount, "
         f"{c.about_patched} got about/mentions entities, "
         f"{c.furniture_patched} got tag badges + meta bar, "
+        f"{c.langswitch_patched} got inline language rail, "
         f"{c.anchor_patched} got anchor links + ToC, "
+        f"{c.body_h1_stripped} got duplicate body H1 stripped, "
         f"{c.citation_patched} got citation graphs, "
         f"{c.sources_patched} got visible sources list, "
         f"{c.mermaid_patched} got mermaid blocks, "
@@ -1296,6 +1369,7 @@ def main() -> None:
         f"{news_shrunk} news-sitemap shrunk, "
         f"robots.txt {'updated' if robots_written else 'unchanged'}, "
         f"llms.txt {'updated' if llms_written else 'unchanged'}, "
+        f"llms-ctx.txt {'updated' if llms_ctx_written else 'unchanged'}, "
         f"llms-full.txt {'updated' if llms_full_written else 'unchanged'}"
     )
 

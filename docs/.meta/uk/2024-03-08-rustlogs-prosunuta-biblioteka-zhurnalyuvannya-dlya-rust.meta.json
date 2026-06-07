@@ -1,11 +1,13 @@
 {
-  "date": "Mar 08, 2024",
-  "locale": "uk_UA",
-  "subtitle": "Оптимізуйте робочий процес логування у Rust",
-  "banner": "https://cloudcdn.pro/stocks/images/rustlogs.webp",
-  "description": "Відкрийте для себе RustLogs (RLG) — гнучку бібліотеку логування для Rust зі структурованими форматами журналів, асинхронним логуванням та широкими можливостями налаштування.",
-  "keywords": "бібліотека логування Rust, асинхронне логування Rust, структуровані формати журналів, налагодження застосунків Rust, налаштовуване логування Rust, інструменти розробки Rust, функції RustLogs RLG, ефективне логування Rust, інтеграція RustLogs, документація RustLogs",
+  "reading_time": 1,
+  "language": "uk-UA",
   "banner_alt": "Банер для RustLogs (RLG)",
   "title": "[UK DRAFT] RustLogs (RLG): Structured Logging Library for Rust",
-  "language": "uk-UA"
+  "subtitle": "Оптимізуйте робочий процес логування у Rust",
+  "date": "Mar 08, 2024",
+  "keywords": "бібліотека логування Rust, асинхронне логування Rust, структуровані формати журналів, налагодження застосунків Rust, налаштовуване логування Rust, інструменти розробки Rust, функції RustLogs RLG, ефективне логування Rust, інтеграція RustLogs, документація RustLogs",
+  "banner": "https://cloudcdn.pro/stocks/images/rustlogs.webp",
+  "description": "Відкрийте для себе RustLogs (RLG) — гнучку бібліотеку логування для Rust зі структурованими форматами журналів, асинхронним логуванням та широкими можливостями налаштування.",
+  "word_count": 128,
+  "locale": "uk_UA"
 }

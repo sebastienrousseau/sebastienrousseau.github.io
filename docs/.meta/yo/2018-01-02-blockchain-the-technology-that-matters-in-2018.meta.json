@@ -1,11 +1,14 @@
 {
   "banner_alt": "Kọ̀mpútà tábìlẹ̀tì tí a pa tí ó wà lórí tábìlì igi àwọ̀ brownù",
-  "description": "Ìtàn ìrìn àjò àgbàyanu ti ìtọ́jú àwọn ìdúnàádúrà ohun àmúlò àgbáyé nípasẹ̀ Private-key Cryptography àti àwọn nẹtiwọọki Peer-to-peer (P2P).",
-  "title": "Blockchain explained, the technology that matters the most",
-  "subtitle": "Blockchain, àwọn ìwé àkọsílẹ̀ tí a pínká, àti ìmọ̀ ẹrọ tó ṣe pàtàkì jùlọ ní ọdún 2018.",
-  "banner": "https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp",
-  "keywords": "pain001, iso 20022, ìmúdàgba ìsanwó, idinku owó, ìṣiṣẹ́ ìsanwó, àwọn fáìlì ìsanwó, ìbẹ̀rẹ̀ ìsanwó, pain message, pain message standards, pain message validation",
+  "tags": "pain001, ISO 20022, payment automation, cost reduction, payments, payment files, pain message, DORA, ìsirò ìpamọ́ lẹ́yìn quantum, AI, tokenised deposits, Rust, cloud native banking, ìsanwó kọjá-ààlà",
+  "locale": "yo_NG",
   "date": "Jan 02, 2018",
+  "banner": "https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp",
+  "subtitle": "Blockchain, àwọn ìwé àkọsílẹ̀ tí a pínká, àti ìmọ̀ ẹrọ tó ṣe pàtàkì jùlọ ní ọdún 2018.",
   "language": "yo-NG",
-  "locale": "yo_NG"
+  "keywords": "pain001, iso 20022, ìmúdàgba ìsanwó, idinku owó, ìṣiṣẹ́ ìsanwó, àwọn fáìlì ìsanwó, ìbẹ̀rẹ̀ ìsanwó, pain message, pain message standards, pain message validation",
+  "description": "Ìtàn ìrìn àjò àgbàyanu ti ìtọ́jú àwọn ìdúnàádúrà ohun àmúlò àgbáyé nípasẹ̀ Private-key Cryptography àti àwọn nẹtiwọọki Peer-to-peer (P2P).",
+  "word_count": 1019,
+  "title": "Blockchain explained, the technology that matters the most",
+  "reading_time": 5
 }

@@ -1,5 +1,6 @@
 ---
 title: "Unlocking Gemini 1.5: Google's AI Revolution Explained"
+tags: "Gemini 1.5, Google AI, AI Efficiency, AI Quality, Context Window, In-Context Learning, AI Use Cases, AI Revolution, Technology Transformation, Data Analysis, ISO 20022, post-quantum cryptography, AI, DORA, tokenised deposits, platform engineering, sovereign cloud, cloud native banking, biyan kuɗi na cross-border, stablecoins"
 subtitle: "Nazari Mai Zurfi na Babban Nasarar AI ta Google"
 description: "Gemini 1.5 na Google yana faɗaɗa tagar mahallin sama da alamomi miliyan 1. Abin da wannan ke buɗewa don harkar kuɗi ta retrieval-augmented da wuraren musayar da ya kamata a san su."
 date: "Feb 19, 2024"
@@ -70,4 +71,3 @@ Gemini 1.5 marks a significant advancement in AI technology. It improves efficie
 
 [00]: https://blog.google/technology/ai/google-gemini-next-generation-model-february-2024/ "Google's Gemini 1.5: The Next Generation of AI Models"
 [01]: https://deepmind.google/technologies/gemini/#introduction "Gemini - Google DeepMind"
-

@@ -1,5 +1,6 @@
 ---
 title: "Unlocking Gemini 1.5: Google's AI Revolution Explained"
+tags: "Gemini 1.5, Google AI, AI Efficiency, AI Quality, Context Window, In-Context Learning, AI Use Cases, AI Revolution, Technology Transformation, Data Analysis, ISO 20022, criptografie post-cuantică, AI, DORA, depozite tokenizate, ingineria platformei, cloud suveran, banking cloud native, plăți transfrontaliere, stablecoinuri"
 subtitle: "O analiză aprofundată a celui mai recent progres în domeniul AI al Google"
 description: "Gemini 1.5 de la Google extinde ferestrele de context la peste 1 milion de tokeni. Ce posibilități oferă pentru finanțele augmentate prin recuperare și ce compromisuri trebuie cunoscute."
 date: "Feb 19, 2024"
@@ -70,4 +71,3 @@ Gemini 1.5 marks a significant advancement in AI technology. It improves efficie
 
 [00]: https://blog.google/technology/ai/google-gemini-next-generation-model-february-2024/ "Google's Gemini 1.5: The Next Generation of AI Models"
 [01]: https://deepmind.google/technologies/gemini/#introduction "Gemini - Google DeepMind"
-

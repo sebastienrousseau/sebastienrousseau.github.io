@@ -8,9 +8,129 @@
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>th-TH</news:language>
     </news:publication>
-    <news:publication_date>2026-05-28T18:12:27+00:00</news:publication_date>
+    <news:publication_date>2026-06-07T18:23:54+00:00</news:publication_date>
     <news:title>ดัชนีคลังอิสระปี 2026: คลังเชิงตัวแทน สภาพคล่องที่โปรแกรมได้ เงินฝากโทเค็น และการควบคุมเงินสดเรียลไทม์</news:title>
     <news:keywords>คลังอิสระ 2026, คลังเชิงตัวแทน, สภาพคล่องที่โปรแกรมได้, เงินฝากโทเค็นสำหรับคลัง, คลังเรียลไทม์, การจัดการเงินสดด้วย AI, ISO 20022, การควบคุมเงินสดเรียลไทม์</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/th/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>th-TH</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-07T18:23:54+00:00</news:publication_date>
+    <news:title>ธนาคารหลายรางในปี 2026: บัตร A2A สเตเบิลคอยน์ RTP FedNow และ Open Banking ในกลยุทธ์เดียว</news:title>
+    <news:keywords>เลเยอร์ orchestration การชำระเงิน, FedNow vs RTP, FedNow vs ACH, การชำระบัญชี stablecoin, การชำระบัญชีแบบ atomic ด้วย USDC, ISO 20022 pacs.008, การโอนระหว่างบัญชี A2A, Open Banking APIs, สภาพคล่อง pre-funded, กับดักสภาพคล่อง 24/7, multi-rail bank 2026, เอนจินกำหนดเส้นทางการชำระเงิน, การกระทบยอด ERP</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/th/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>th-TH</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-07T18:23:54+00:00</news:publication_date>
+    <news:title>โครงสร้างพื้นฐาน PQC การชำระเงิน: เหตุใดธนาคารจึงควรแทนที่ราง ดั้งเดิม ไม่ใช่ปรับเปลี่ยน</news:title>
+    <news:keywords>การเข้ารหัสยุคหลังควอนตัม, PQC การชำระเงิน, ความคล่องตัวด้านการเข้ารหัส, เก็บเกี่ยวตอนนี้-ถอดรหัสภายหลัง, HNDL, มาตรฐาน NIST หลังควอนตัม, ML-KEM, ML-DSA, FIPS 203, FIPS 204, การย้ายราง การชำระเงิน, ISO 20022 PQC, การแทนที่ SWIFT MT, HSM, การล่มสลายของ PKI, ความยืดหยุ่นในการดำเนินงาน</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/th/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>th-TH</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-06T06:06:06+00:00</news:publication_date>
+    <news:title>ดัชนีการชำระเงินขายส่งในปี 2026: ISO 20022 เงินฝากแบบโทเคน รางเรียลไทม์ และการชำระบัญชีข้ามพรมแดน</news:title>
+    <news:keywords>การชำระเงินขายส่ง 2026, ISO 20022, เงินฝากแบบโทเคน, Project Agorá, การชำระเงินข้ามพรมแดน, การชำระเงินเรียลไทม์, ข้อมูลที่อยู่แบบมีโครงสร้าง, คุณภาพข้อมูลการชำระเงิน</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/th/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>th-TH</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-05T06:06:06+00:00</news:publication_date>
+    <news:title>ดัชนี Cloud Native Banking ปี 2026: DORA, วิศวกรรมแพลตฟอร์ม, Sovereign Cloud และความยืดหยุ่นเชิงปฏิบัติการ</news:title>
+    <news:keywords>cloud native banking 2026, DORA ธนาคาร, ความเสี่ยงกระจุกตัวบนคลาวด์, วิศวกรรมแพลตฟอร์มธนาคาร, ความเสี่ยงบุคคลที่สาม ICT, กลยุทธ์ทางออกคลาวด์, sovereign cloud</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/th/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>th-TH</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-04T06:06:06+00:00</news:publication_date>
+    <news:title>ดัชนีธนาคารปลอดภัยจากควอนตัมในปี 2026: การเข้ารหัสหลังควอนตัม QKD ความคล่องตัวเข้ารหัส และความเสี่ยง Harvest-Now-Decrypt-Later</news:title>
+    <news:keywords>ธนาคารปลอดภัยจากควอนตัม 2026, การเข้ารหัสหลังควอนตัมสำหรับธนาคาร, NIST FIPS 203, ML-KEM, ML-DSA, SLH-DSA, ความคล่องตัวเข้ารหัส, QKD ในธนาคาร</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/th/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>th-TH</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-03T06:06:06+00:00</news:publication_date>
+    <news:title>ดัชนี Agentic AI สำหรับธนาคารในปี 2026: การวัดความเป็นอิสระ ธรรมาภิบาล ความสามารถในการตรวจสอบ และผลกระทบทางธุรกิจ</news:title>
+    <news:keywords>agentic AI ธนาคาร 2026, เอเจนต์ AI ในธนาคาร, ธรรมาภิบาล AI บริการการเงิน, เวิร์กโฟลว์ธนาคารอัตโนมัติ, การจัดการความเสี่ยงของโมเดล, ความสามารถในการตรวจสอบ AI</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/th/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>th-TH</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-02T06:06:06+00:00</news:publication_date>
+    <news:title>ดัชนีโครงสร้างพื้นฐานการธนาคารปี 2026: การวัดความพร้อมด้าน Agentic AI ความปลอดภัยควอนตัม คลาวด์-เนทีฟ และการชำระเงินค้าส่ง</news:title>
+    <news:keywords>ดัชนีโครงสร้างพื้นฐานการธนาคาร 2026, agentic AI การธนาคาร, การธนาคารปลอดภัยควอนตัม, การธนาคารคลาวด์-เนทีฟ, การชำระเงินค้าส่ง, ISO 20022, DORA, Project Agora, เงินฝากที่ผ่านการทำโทเคน</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/th/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>th-TH</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-30T06:06:06+00:00</news:publication_date>
+    <news:title>ตลาดดิจิทัลค้าส่งสหราชอาณาจักร: กิลต์แบบโทเคน การชำระบัญชี และบทบาทผู้นำใหม่</news:title>
+    <news:keywords>ตลาดดิจิทัลค้าส่งสหราชอาณาจักร 2026, Wholesale Digital Markets Champion, กิลต์แบบโทเคน, tokenised gilts, การชำระบัญชี DLT, BoE DSS, Project Guardian, SDX, Project Agorá, HM Treasury, Bank of England, City of London</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/th/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>th-TH</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-29T06:06:06+00:00</news:publication_date>
+    <news:title>ISO 20022 หลังการย้ายระบบ: เปลี่ยนข้อมูลการชำระเงินเป็นผลิตภัณฑ์ธนาคารในปี 2026</news:title>
+    <news:keywords>ISO 20022 ปี 2026, ที่อยู่แบบมีโครงสร้าง, CBPR+, ผลิตภัณฑ์ข้อมูลการชำระเงิน, รหัสวัตถุประสงค์การชำระเงิน, การบริหารเงินขององค์กร, การกระทบยอด, การคัดกรองการคว่ำบาตร, การตรวจจับการฉ้อโกง</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/th/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>th-TH</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-28T06:06:06+00:00</news:publication_date>
+    <news:title>สินทรัพย์ดิจิทัลปี 2026: การเปลี่ยนผ่านโครงสร้างพื้นฐานที่ธนาคารเลื่อนไม่ได้</news:title>
+    <news:keywords>สินทรัพย์ดิจิทัล 2026, สินทรัพย์โลกจริงที่ถูกโทเค็นไนซ์, สเตเบิลคอยน์ของธนาคาร, เงินฝากโทเค็น, การคัสโตดีสินทรัพย์ดิจิทัล, DLT ของธนาคาร, โครงสร้างพื้นฐานการชำระบัญชี, การเคลื่อนย้ายหลักประกัน, เงินที่โปรแกรมได้, กลยุทธ์สินทรัพย์ดิจิทัลของธนาคาร</news:keywords>
   </news:news>
 </url>
 <url>

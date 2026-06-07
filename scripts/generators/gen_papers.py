@@ -7,6 +7,7 @@ is preserved as a second publication card at the top of the related grid.
 Beneath those, a curated set of research-flavoured articles keeps the page
 feeling like a publications archive rather than a single product page.
 """
+
 from __future__ import annotations
 
 import sys as _sys  # path bootstrap — scripts reorg (scripts/lib/ on sys.path)
@@ -26,9 +27,7 @@ EPAA_PDF = (
 
 FEATURED = {
     "eyebrow": "INDUSTRY WHITE PAPER · EPAA",
-    "title": (
-        "Quantum-Safe Payments: Why the Payments Industry Must Act Now"
-    ),
+    "title": ("Quantum-Safe Payments: Why the Payments Industry Must Act Now"),
     "date_iso": "2025-09-01",
     "date_display": "September 2025",
     "format": "English · PDF · 18.9 MB · Free download",
@@ -76,60 +75,96 @@ PREVIOUS_PUBLICATION = {
 # Curated research-flavoured articles to surround the publication.
 # (date_iso, date_display, eyebrow, title, image, image_alt, excerpt, href)
 RELATED = [
-    ("2026-04-11", "April 11, 2026", "RESEARCH NOTE · QUANTUM",
-     "Quantum Thresholds Are Moving Again",
-     "https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp",
-     "Quantum computing circuit board with blue light patterns",
-     "A new paper suggests Shor's algorithm could run on as few as 10,000 qubits. The threshold for cryptographically relevant quantum computing is dropping fast.",
-     "/2026-04-11-quantum-thresholds-are-moving-again/index.html"),
-    ("2024-04-22", "April 22, 2024", "RESEARCH NOTE · QUANTUM",
-     "Bug Discovered in Quantum Algorithm for Lattice-Based Crypto",
-     "https://cloudcdn.pro/stocks/images/digital-nodes.webp",
-     "Network of digital nodes in red and blue hues",
-     "A bug in Yilei Chen's quantum algorithm for solving LWE has been found, temporarily securing lattice-based cryptography and highlighting the need for ongoing research.",
-     "/2024-04-22-bug-discovered-in-quantum-algorithm-for-lattice-based-crypto/index.html"),
-    ("2024-04-15", "April 15, 2024", "RESEARCH NOTE · QUANTUM",
-     "Quantum Algorithm Challenges Lattice-Based Cryptography",
-     "https://cloudcdn.pro/stocks/images/digital-constellation.webp",
-     "Network nodes in a digital blue space",
-     "New quantum algorithm solves a key cryptographic problem, urging accelerated research into quantum-safe security.",
-     "/2024-04-15-quantum-algorithm-challenges-lattice-based-cryptography/index.html"),
-    ("2024-03-25", "March 25, 2024", "RESEARCH · CRYPTOGRAPHY",
-     "Fully Homomorphic Encryption (FHE) in a Banking Quantum Era",
-     "https://cloudcdn.pro/stocks/images/fully-homomorphic-encryption.webp",
-     "Banner for Fully Homomorphic Encryption",
-     "How Fully Homomorphic Encryption revolutionises data security in banking and financial services, preserving privacy against quantum-era threats.",
-     "/2024-03-25-fully-homomorphic-encryption-in-a-banking-quantum-era/index.html"),
-    ("2024-03-18", "March 18, 2024", "RESEARCH · AI",
-     "Advancing AI with Multimodal LLMs: Insights from MM1",
-     "https://cloudcdn.pro/stocks/images/mm1-visual.webp",
-     "Banner for Apple's MM1 multimodal LLM research",
-     "An analysis of Apple's MM1 paper on Multimodal Large Language Models — architecture, pre-training strategies and emerging capabilities.",
-     "/2024-03-18-advancing-ai-with-multimodal-llms-insights-from-mm1/index.html"),
-    ("2024-01-08", "January 8, 2024", "RESEARCH · QUANTUM FINANCE",
-     "Qiskit and Quantum Fourier Transform for Credit Ratio Analysis",
-     "https://cloudcdn.pro/stocks/images/quantum-computer-room.webp",
-     "A quantum computer room",
-     "How IBM Qiskit and the Quantum Fourier Transform reshape credit ratio analysis in finance, offering unprecedented accuracy and speed.",
-     "/2024-01-08-optimising-credit-ratio-analysis-with-ibm-qiskit-and-quantum-fourier-transform/index.html"),
-    ("2023-12-25", "December 25, 2023", "RESEARCH · QUANTUM FINANCE",
-     "Revolutionising Finance with AI-Enhanced Quantum Algorithms",
-     "https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp",
-     "A circuit board cityscape",
-     "The transformative role of AI inside quantum algorithms for finance, focusing on their mathematical structure and banking applications.",
-     "/2023-12-25-revolutionising-finance-with-ai-enhanced-quantum-algorithms/index.html"),
-    ("2023-12-11", "December 11, 2023", "RESEARCH · QUANTUM BANKING",
-     "Quantum Key Distribution: Revolutionising Security in Banking",
-     "https://cloudcdn.pro/stocks/images/hsbc-from-the-docks.webp",
-     "HSBC headquarter in London Canary Wharf docks",
-     "As quantum computers threaten traditional encryption, Quantum Key Distribution (QKD) emerges as a structural answer for financial-grade security.",
-     "/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html"),
-    ("2023-11-19", "November 19, 2023", "RESEARCH · CRYPTOGRAPHY",
-     "CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age",
-     "https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA.webp",
-     "A complex quantum computer architecture",
-     "How CRYSTALS-Kyber, the NIST-selected quantum-resistant key-encapsulation mechanism, is reshaping cryptography for the quantum era.",
-     "/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html"),
+    (
+        "2026-04-11",
+        "April 11, 2026",
+        "RESEARCH NOTE · QUANTUM",
+        "Quantum Thresholds Are Moving Again",
+        "https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp",
+        "Quantum computing circuit board with blue light patterns",
+        "A new paper suggests Shor's algorithm could run on as few as 10,000 qubits. The threshold for cryptographically relevant quantum computing is dropping fast.",
+        "/2026-04-11-quantum-thresholds-are-moving-again/index.html",
+    ),
+    (
+        "2024-04-22",
+        "April 22, 2024",
+        "RESEARCH NOTE · QUANTUM",
+        "Bug Discovered in Quantum Algorithm for Lattice-Based Crypto",
+        "https://cloudcdn.pro/stocks/images/digital-nodes.webp",
+        "Network of digital nodes in red and blue hues",
+        "A bug in Yilei Chen's quantum algorithm for solving LWE has been found, temporarily securing lattice-based cryptography and highlighting the need for ongoing research.",
+        "/2024-04-22-bug-discovered-in-quantum-algorithm-for-lattice-based-crypto/index.html",
+    ),
+    (
+        "2024-04-15",
+        "April 15, 2024",
+        "RESEARCH NOTE · QUANTUM",
+        "Quantum Algorithm Challenges Lattice-Based Cryptography",
+        "https://cloudcdn.pro/stocks/images/digital-constellation.webp",
+        "Network nodes in a digital blue space",
+        "New quantum algorithm solves a key cryptographic problem, urging accelerated research into quantum-safe security.",
+        "/2024-04-15-quantum-algorithm-challenges-lattice-based-cryptography/index.html",
+    ),
+    (
+        "2024-03-25",
+        "March 25, 2024",
+        "RESEARCH · CRYPTOGRAPHY",
+        "Fully Homomorphic Encryption (FHE) in a Banking Quantum Era",
+        "https://cloudcdn.pro/stocks/images/fully-homomorphic-encryption.webp",
+        "Banner for Fully Homomorphic Encryption",
+        "How Fully Homomorphic Encryption revolutionises data security in banking and financial services, preserving privacy against quantum-era threats.",
+        "/2024-03-25-fully-homomorphic-encryption-in-a-banking-quantum-era/index.html",
+    ),
+    (
+        "2024-03-18",
+        "March 18, 2024",
+        "RESEARCH · AI",
+        "Advancing AI with Multimodal LLMs: Insights from MM1",
+        "https://cloudcdn.pro/stocks/images/mm1-visual.webp",
+        "Banner for Apple's MM1 multimodal LLM research",
+        "An analysis of Apple's MM1 paper on Multimodal Large Language Models — architecture, pre-training strategies and emerging capabilities.",
+        "/2024-03-18-advancing-ai-with-multimodal-llms-insights-from-mm1/index.html",
+    ),
+    (
+        "2024-01-08",
+        "January 8, 2024",
+        "RESEARCH · QUANTUM FINANCE",
+        "Qiskit and Quantum Fourier Transform for Credit Ratio Analysis",
+        "https://cloudcdn.pro/stocks/images/quantum-computer-room.webp",
+        "A quantum computer room",
+        "How IBM Qiskit and the Quantum Fourier Transform reshape credit ratio analysis in finance, offering unprecedented accuracy and speed.",
+        "/2024-01-08-optimising-credit-ratio-analysis-with-ibm-qiskit-and-quantum-fourier-transform/index.html",
+    ),
+    (
+        "2023-12-25",
+        "December 25, 2023",
+        "RESEARCH · QUANTUM FINANCE",
+        "Revolutionising Finance with AI-Enhanced Quantum Algorithms",
+        "https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp",
+        "A circuit board cityscape",
+        "The transformative role of AI inside quantum algorithms for finance, focusing on their mathematical structure and banking applications.",
+        "/2023-12-25-revolutionising-finance-with-ai-enhanced-quantum-algorithms/index.html",
+    ),
+    (
+        "2023-12-11",
+        "December 11, 2023",
+        "RESEARCH · QUANTUM BANKING",
+        "Quantum Key Distribution: Revolutionising Security in Banking",
+        "https://cloudcdn.pro/stocks/images/hsbc-from-the-docks.webp",
+        "HSBC headquarter in London Canary Wharf docks",
+        "As quantum computers threaten traditional encryption, Quantum Key Distribution (QKD) emerges as a structural answer for financial-grade security.",
+        "/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html",
+    ),
+    (
+        "2023-11-19",
+        "November 19, 2023",
+        "RESEARCH · CRYPTOGRAPHY",
+        "CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age",
+        "https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA.webp",
+        "A complex quantum computer architecture",
+        "How CRYSTALS-Kyber, the NIST-selected quantum-resistant key-encapsulation mechanism, is reshaping cryptography for the quantum era.",
+        "/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html",
+    ),
 ]
 
 
@@ -161,8 +196,16 @@ def whisper_card_block() -> str:
 </article>"""
 
 
-def card_block(date_iso: str, date_display: str, eyebrow: str, title: str,
-               image: str, alt: str, excerpt: str, href: str) -> str:
+def card_block(
+    date_iso: str,
+    date_display: str,
+    eyebrow: str,
+    title: str,
+    image: str,
+    alt: str,
+    excerpt: str,
+    href: str,
+) -> str:
     return f"""<article class="newsroom-card">
 <a class="newsroom-card-media" href="{href}" title="{title}">
 <img alt="{alt}" src="{image}" loading="lazy" decoding="async" width="600" height="600" />

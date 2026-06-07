@@ -1,11 +1,13 @@
 {
-  "language": "hi-IN",
-  "description": "Blockchain वितरित बही, क्रिप्टोग्राफी और सहमति-तंत्रों को कैसे जोड़ती है — इसकी एक स्पष्ट व्याख्या।",
+  "keywords": "blockchain, वितरित बही, क्रिप्टोग्राफी, सहमति, proof-of-work, smart contract, हैश, मर्कल वृक्ष, विकेंद्रीकरण, P2P",
   "banner_alt": "नेटवर्क-कनेक्शन दर्शाता डिजिटल अमूर्त चित्र",
-  "subtitle": "वितरित बही, क्रिप्टोग्राफी और सहमति का परस्पर मेल",
+  "reading_time": 5,
   "date": "January 9, 2018",
-  "title": "Blockchain के पीछे की प्रौद्योगिकी को समझना",
   "banner": "https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp",
-  "locale": "hi_IN",
-  "keywords": "blockchain, वितरित बही, क्रिप्टोग्राफी, सहमति, proof-of-work, smart contract, हैश, मर्कल वृक्ष, विकेंद्रीकरण, P2P"
+  "word_count": 1004,
+  "subtitle": "वितरित बही, क्रिप्टोग्राफी और सहमति का परस्पर मेल",
+  "title": "Blockchain के पीछे की प्रौद्योगिकी को समझना",
+  "description": "Blockchain वितरित बही, क्रिप्टोग्राफी और सहमति-तंत्रों को कैसे जोड़ती है — इसकी एक स्पष्ट व्याख्या।",
+  "language": "hi-IN",
+  "locale": "hi_IN"
 }

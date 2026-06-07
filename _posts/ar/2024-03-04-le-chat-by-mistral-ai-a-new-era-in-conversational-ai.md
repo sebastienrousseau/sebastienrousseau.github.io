@@ -1,5 +1,6 @@
 ---
 title: "Le Chat من Mistral AI: ذكاء اصطناعي حواري متعدد اللغات"
+tags: "Le Chat, Mistral AI, Conversational AI, Multilingual, Customisation, Business AI, Chatbot, AI Models, Enterprise Solutions, Technology, ISO 20022, التشفير ما بعد الكمي, AI"
 subtitle: "إعادة تعريف تفاعل المستخدم عبر اللغات"
 description: "تعرَّف على المساعد متعدد اللغات الجديد من Mistral AI — ذكاء اصطناعي متقدم قادر على الفهم والاستجابة بلغات متعددة، في محادثة واحدة وفي الوقت الفعلي."
 date: "Mar 04, 2024"

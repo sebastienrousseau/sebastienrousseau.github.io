@@ -1,12 +1,14 @@
 {
-  "locale": "ja_JP",
-  "date": "February 12, 2024",
-  "description": "Akande、自然な対話、PDF 要約、効率的なキャッシュを提供する高度な音声アシスタント。",
+  "banner": "https://cloudcdn.pro/stocks/images/wesley-tingey-snNHKZ-mGfE-unsplash.webp",
   "title": "Akande 音声アシスタント:個人と役員支援の革新",
   "subtitle": "GPT を活用した会話音声アシスタント",
-  "banner_alt": "AI アシスタントとのデジタル対話",
-  "keywords": "Akande, 音声アシスタント, GPT, OpenAI, 役員支援, PDF, AI",
   "last_reviewed": "2026-05-11",
-  "banner": "https://cloudcdn.pro/stocks/images/wesley-tingey-snNHKZ-mGfE-unsplash.webp",
-  "language": "ja-JP"
+  "keywords": "Akande, 音声アシスタント, GPT, OpenAI, 役員支援, PDF, AI",
+  "language": "ja-JP",
+  "banner_alt": "AI アシスタントとのデジタル対話",
+  "description": "Akande、自然な対話、PDF 要約、効率的なキャッシュを提供する高度な音声アシスタント。",
+  "date": "February 12, 2024",
+  "locale": "ja_JP",
+  "word_count": 66,
+  "reading_time": 1
 }

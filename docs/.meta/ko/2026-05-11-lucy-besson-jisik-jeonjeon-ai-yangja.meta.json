@@ -1,12 +1,14 @@
 {
-  "locale": "ko_KR",
+  "language": "ko-KR",
+  "reading_time": 2,
   "description": "개봉 12년 후, 뤽 베송의 「Lucy」는 의사 과학이 아니라 인간 지식이 비생물학적 기질로 이주할 때 무엇이 일어나는지에 관한 사고 실험으로 읽힙니다.",
+  "last_reviewed": "2026-05-16",
+  "subtitle": "개봉 12년 후, 뤽 베송의 「Lucy」는 사고 실험으로 읽힙니다",
+  "locale": "ko_KR",
   "date": "May 11, 2026",
   "banner": "https://cloudcdn.pro/stocks/images/lucy-knowledge-transfer-banner.webp",
-  "banner_alt": "신경망과 양자 원자 배열의 추상적 시각화",
-  "last_reviewed": "2026-05-16",
   "title": "Lucy의 플래시 메모리, 다시 보다: 베송이 지식의 기계 이주에 관하여 본 것",
+  "banner_alt": "신경망과 양자 원자 배열의 추상적 시각화",
   "keywords": "Lucy, 뤽 베송, 지식 이전, AI, LLM, 중성 원자 큐비트, 전뇌 에뮬레이션, AI 철학",
-  "subtitle": "개봉 12년 후, 뤽 베송의 「Lucy」는 사고 실험으로 읽힙니다",
-  "language": "ko-KR"
+  "word_count": 577
 }

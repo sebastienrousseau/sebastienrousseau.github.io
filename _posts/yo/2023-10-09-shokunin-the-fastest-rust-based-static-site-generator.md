@@ -1,5 +1,6 @@
 ---
 title: "Static Site Generator: Fastest Rust-Based SSG"
+tags: "pain001, ISO 20022, payment automation, cost reduction, payments, payment files, pain message, DORA, ìsirò ìpamọ́ lẹ́yìn quantum, AI, tokenised deposits, Rust, cloud native banking, ìsanwó kọjá-ààlà, stablecoins"
 subtitle: "Static Site Generator, olùṣẹ̀dá ìkànnì ẹlẹ́sẹ̀ tó yára jùlọ tó dá lórí Rust fún àwọn ìkànnì wẹ́bù tí ó ní ipa."
 description: "Ṣe ìfúnni agbára fún ọ láti ṣẹ̀dá àwọn ìkànnì wẹ́bù ẹlẹ́sẹ̀ tí ó ní ipa pẹ̀lú àwọn àǹfààní àìlópin, ìgbélárugẹ àìlópin, àti ìhàjọbí wẹ́bù àkànṣe tí ìwọ ń darí."
 date: "Oct 09, 2023"
@@ -129,4 +130,3 @@ If you have any questions, please don't hesitate to contact me via [LinkedIn ⧉
 [09]: /articles/index.html "Back to Articles"
 [10]: /contact/index.html "Contact Sebastien Rousseau"
 [11]: https://www.linkedin.com/in/sebastienrousseau/ "Sebastien Rousseau on LinkedIn"
-

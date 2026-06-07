@@ -4,14 +4,104 @@
   <link href="https://sebastienrousseau.com/ja/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/ja/"/>
   <id>https://sebastienrousseau.com/ja/</id>
-  <updated>2026-05-28T18:12:27+00:00</updated>
+  <updated>2026-06-07T18:23:54+00:00</updated>
   <entry>
     <title>2026 年の自律トレジャリー指数:エージェント型トレジャリー、プログラマブル流動性、トークン化預金、リアルタイムキャッシュ管理</title>
     <link href="https://sebastienrousseau.com/ja/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/"/>
     <id>https://sebastienrousseau.com/ja/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/</id>
-    <updated>2026-05-28T18:12:27+00:00</updated>
-    <published>2026-05-28T18:12:27+00:00</published>
+    <updated>2026-06-07T18:23:54+00:00</updated>
+    <published>2026-06-07T18:23:54+00:00</published>
     <summary>2026 年の自律トレジャリー準備態勢を測定する指数 — エージェント型トレジャリー、プログラマブル流動性、トークン化預金、リアルタイム決済、自動キャッシュ管理を統合的に評価します。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>2026 年銀行インフラ指数:エージェント型 AI、量子安全セキュリティ、クラウドネイティブ・レジリエンス、ホールセール決済の準備度計測</title>
+    <link href="https://sebastienrousseau.com/ja/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/"/>
+    <id>https://sebastienrousseau.com/ja/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/</id>
+    <updated>2026-06-07T18:23:54+00:00</updated>
+    <published>2026-06-07T18:23:54+00:00</published>
+    <summary>Stanford AI Index に着想を得た 2026 年の銀行インフラ指数。エージェント型 AI、量子安全セキュリティ、クラウドネイティブ・レジリエンス、グローバルホールセール決済の準備度を一つの運営モデルで計測します。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>2026 年のマルチレール銀行:カード、A2A、ステーブルコイン、RTP、FedNow、Open Banking を一つの戦略に</title>
+    <link href="https://sebastienrousseau.com/ja/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/"/>
+    <id>https://sebastienrousseau.com/ja/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</id>
+    <updated>2026-06-07T18:23:54+00:00</updated>
+    <published>2026-06-07T18:23:54+00:00</published>
+    <summary>FedNow は 24/7 の事前資金供給型流動性を要求します。ACH は安価ですが T+1 です。USDC はアトミックに決済しますがウォレット基盤を必要とします。2026 年のマルチレール銀行は、ISO 20022 pacs.008 を読み取るオーケストレーション・エンジンが、コスト・ファイナリティ・流動性コストに基づいて各決済の経路を決定します。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>耐量子決済基盤:銀行が既存レールを後付け対応ではなく置換すべき理由</title>
+    <link href="https://sebastienrousseau.com/ja/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/"/>
+    <id>https://sebastienrousseau.com/ja/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</id>
+    <updated>2026-06-07T18:23:54+00:00</updated>
+    <published>2026-06-07T18:23:54+00:00</published>
+    <summary>耐量子暗号は決済レールに二者択一を迫ります。ML-KEM/ML-DSA 向けに設計されていない SWIFT MT・ISO 20022 封筒に RSA/ECC を後付けするか、暗号アジリティを備えた基盤へ置換するか。HNDL が実害となる前に判断が必要です。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>2026 年ホールセール決済指数:ISO 20022、トークン化預金、リアルタイムレール、国境を越えた決済</title>
+    <link href="https://sebastienrousseau.com/ja/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/"/>
+    <id>https://sebastienrousseau.com/ja/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</id>
+    <updated>2026-06-06T06:06:06+00:00</updated>
+    <published>2026-06-06T06:06:06+00:00</published>
+    <summary>2026 年のホールセール決済レディネス指数。ISO 20022 データ品質、トークン化預金、リアルタイムレール、国境を越えた決済、流動性効率を計測する評価枠組み。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>2026 年クラウドネイティブバンキング指標:DORA、プラットフォームエンジニアリング、ソブリンクラウド、運用レジリエンス</title>
+    <link href="https://sebastienrousseau.com/ja/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/"/>
+    <id>https://sebastienrousseau.com/ja/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/</id>
+    <updated>2026-06-05T06:06:06+00:00</updated>
+    <published>2026-06-05T06:06:06+00:00</published>
+    <summary>DORA 対応、プラットフォームエンジニアリング成熟度、クラウド集中リスク、出口エビデンス、運用レジリエンスを測る 2026 年クラウドネイティブバンキング指標。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>2026 年の量子セーフ銀行インデックス: ポスト量子暗号、QKD、クリプト・アジリティ、HNDL リスク</title>
+    <link href="https://sebastienrousseau.com/ja/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/"/>
+    <id>https://sebastienrousseau.com/ja/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/</id>
+    <updated>2026-06-04T06:06:06+00:00</updated>
+    <published>2026-06-04T06:06:06+00:00</published>
+    <summary>2026 年の量子セーフ準備度を測る銀行インデックス。NIST のポスト量子標準、暗号インベントリ、クリプト・アジリティ、QKD、長期保全データのエクスポージャを扱います。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>銀行向けエージェント型AIインデックス 2026:自律性・ガバナンス・監査可能性・ビジネスインパクトの測定</title>
+    <link href="https://sebastienrousseau.com/ja/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/"/>
+    <id>https://sebastienrousseau.com/ja/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/</id>
+    <updated>2026-06-03T06:06:06+00:00</updated>
+    <published>2026-06-03T06:06:06+00:00</published>
+    <summary>銀行のエージェント型AI成熟度を測定するインデックス型フレームワーク。自律性ティア、API権限、ガードレール、HITL、監査可能性、ユニットエコノミクスを6軸で評価。SR 11-7 / SS1/23 対応の設計指針。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>英国のホールセール・デジタル市場:トークン化ギルト、決済、新チャンピオン職</title>
+    <link href="https://sebastienrousseau.com/ja/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/"/>
+    <id>https://sebastienrousseau.com/ja/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</id>
+    <updated>2026-05-30T06:06:06+00:00</updated>
+    <published>2026-05-30T06:06:06+00:00</published>
+    <summary>英国の Wholesale Digital Markets Champion 制度は、トークン化ホールセール金融を国家競争力プロジェクトへと押し上げる。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>ISO 20022 移行後:決済データを 2026 年の銀行プロダクトに変える</title>
+    <link href="https://sebastienrousseau.com/ja/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/"/>
+    <id>https://sebastienrousseau.com/ja/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</id>
+    <updated>2026-05-29T06:06:06+00:00</updated>
+    <published>2026-05-29T06:06:06+00:00</published>
+    <summary>ISO 20022 移行後は決済データ・プロダクトの好機です。構造化アドレス、目的コード、請求明細、調査メッセージ、リッチな決済ステータスが照合、不正、流動性、コンプライアンス、分析プロダクトに進化します。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>デジタル資産 2026:銀行が遅らせられないインフラ移行</title>
+    <link href="https://sebastienrousseau.com/ja/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/"/>
+    <id>https://sebastienrousseau.com/ja/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</id>
+    <updated>2026-05-28T06:06:06+00:00</updated>
+    <published>2026-05-28T06:06:06+00:00</published>
+    <summary>デジタル資産はもはやイノベーションへの賭けではありません。決済、カストディ、バランスシートのアーキテクチャに関する問いです。銀行の戦略課題は構造的不確実性下でのインフラ設計です。</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>

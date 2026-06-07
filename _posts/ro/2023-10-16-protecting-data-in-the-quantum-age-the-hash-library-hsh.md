@@ -1,5 +1,6 @@
 ---
 title: "Protecting Data in the Quantum Age: The Hash Library (HSH)"
+tags: "criptografie post-cuantică, hash library, HSH, password hashing, key derivation, Argon2i, Bcrypt, Scrypt, calcul cuantic, ISO 20022, AI, Rust, open source"
 subtitle: "HSH: o bibliotecă hash rezistentă la cuantică pentru era post-cuantică a autentificării."
 description: "HSH utilizează primitive criptografice rezistente la cuantică pentru a vă proteja datele, garantând securitatea acestora chiar și în fața progreselor viitoare ale calculului cuantic."
 date: "Oct 16, 2023"
@@ -164,4 +165,3 @@ If you have any questions, please don't hesitate to contact me via [LinkedIn ⧉
 [09]: /articles/index.html "Back to Articles"
 [10]: /contact/index.html "Contact Sebastien Rousseau"
 [11]: https://www.linkedin.com/in/sebastienrousseau/ "Sebastien Rousseau on LinkedIn"
-

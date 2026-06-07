@@ -274,6 +274,43 @@ test('withSecurityHeaders extraHeaders appends without replacing', () => {
   assert.ok(cookies.some(c => c.includes('pref-lang=fr')), 'new cookie appended');
 });
 
+test('withSecurityHeaders sets default validation Cache-Control for non-static assets', () => {
+  const upstream = new Response('hi');
+  const req = new Request('https://example.com/about/index.html');
+  const wrapped = withSecurityHeaders(upstream, req);
+  assert.equal(wrapped.headers.get('Cache-Control'), 'public, max-age=0, must-revalidate');
+});
+
+test('withSecurityHeaders sets immutable Cache-Control for static assets', () => {
+  const assets = [
+    'https://example.com/fonts/inter.woff2',
+    'https://example.com/_csp/styles.css',
+    'https://example.com/main.1234abcd.js',
+    'https://example.com/theme.5678ef01.css',
+    'https://example.com/image.webp',
+    'https://example.com/doc.pdf',
+    'https://example.com/demo.wasm',
+  ];
+  for (const url of assets) {
+    const upstream = new Response('asset');
+    const req = new Request(url);
+    const wrapped = withSecurityHeaders(upstream, req);
+    assert.equal(
+      wrapped.headers.get('Cache-Control'),
+      'public, max-age=31536000, immutable',
+      `expected immutable cache for ${url}`
+    );
+  }
+});
+
+test('withSecurityHeaders overrides Cache-Control to private/no-store when Set-Cookie is present', () => {
+  const upstream = new Response('cookie-content', {
+    headers: { 'Set-Cookie': 'session=xyz' }
+  });
+  const wrapped = withSecurityHeaders(upstream);
+  assert.equal(wrapped.headers.get('Cache-Control'), 'no-store, private');
+});
+
 test('withSecurityHeaders works on a 302 redirect response', () => {
   const upstream = Response.redirect('https://example.com/fr/', 302);
   const wrapped = withSecurityHeaders(upstream);
@@ -473,4 +510,19 @@ test('handler: formspree.io is allowlisted by every response CSP', async () => {
       `formspree missing from CSP on ${url}`,
     );
   }
+});
+
+// ---------------------------------------------------------------------------
+// ActivityPub delegation — exercised via /actor (the AP route that needs
+// no origin fetch, so the lang-router test stays origin-free). The
+// activitypub.js module owns its own coverage; this only verifies the
+// router's truthy fast-path branch.
+// ---------------------------------------------------------------------------
+
+test('handler: /actor delegates to ActivityPub handler, skips locale + CSP path', async () => {
+  resetLog();
+  const res = await callHandler(makeRequest('https://sebastienrousseau.com/actor'));
+  assert.equal(res.status, 200);
+  assert.match(res.headers.get('content-type'), /activity\+json/);
+  assert.equal(passThroughLog.length, 0, 'AP routes must not pass through to origin');
 });

@@ -8,9 +8,129 @@
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>pl-PL</news:language>
     </news:publication>
-    <news:publication_date>2026-05-28T18:12:27+00:00</news:publication_date>
+    <news:publication_date>2026-06-07T18:23:54+00:00</news:publication_date>
     <news:title>Indeks Autonomicznego Skarbu 2026: agentowy skarb, programowalna płynność i stokenizowane depozyty</news:title>
     <news:keywords>autonomiczny skarb 2026, agentowy skarb, programowalna płynność, stokenizowane depozyty skarb, skarb w czasie rzeczywistym, zarządzanie gotówką AI</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/pl/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>pl-PL</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-07T18:23:54+00:00</news:publication_date>
+    <news:title>Bank wieloszynowy w 2026: karty, A2A, stablecoiny, RTP, FedNow i Open Banking w jednej strategii</news:title>
+    <news:keywords>warstwa orkiestracji płatności, FedNow vs RTP, FedNow vs ACH, rozliczenie stablecoinowe, atomowe rozliczenie USDC, ISO 20022 pacs.008, A2A, API Open Banking, płynność prefinansowana, pułapka płynności 24/7, bank wieloszynowy 2026, silnik routingu płatności, uzgadnianie ERP</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/pl/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>pl-PL</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-07T18:23:54+00:00</news:publication_date>
+    <news:title>Infrastruktura płatności postkwantowych: dlaczego banki mogą zastąpić, a nie adaptować starsze szyny</news:title>
+    <news:keywords>kryptografia postkwantowa, PQC płatności, krypto-agilność, zbieraj teraz odszyfruj później, HNDL, standardy postkwantowe NIST, ML-KEM, ML-DSA, FIPS 203, FIPS 204, migracja szyn płatniczych, ISO 20022 PQC, zastąpienie SWIFT MT, HSM, załamanie PKI, odporność operacyjna, Quantum Computing Cybersecurity Preparedness Act</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/pl/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>pl-PL</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-07T18:23:54+00:00</news:publication_date>
+    <news:title>Hurtowe rynki cyfrowe w UK: tokenizowane gilty, rozliczenie i champion</news:title>
+    <news:keywords>hurtowe rynki cyfrowe UK 2026, Wholesale Digital Markets Champion, Chris Woolard, tokenizowane gilty, BoE DSS, Project Guardian, SDX, Project Agora, tokenizacja, rozliczenie DLT</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/pl/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>pl-PL</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-07T18:23:54+00:00</news:publication_date>
+    <news:title>Aktywa cyfrowe w 2026: infrastrukturalne przejscie, ktorego banki nie odlozą</news:title>
+    <news:keywords>aktywa cyfrowe 2026, stokenizowane aktywa rzeczywiste, stablecoiny bankowosc, stokenizowane depozyty, przechowywanie aktywow cyfrowych, DLT bankowosc, infrastruktura rozliczeniowa, mobilnosc zabezpieczen, pieniadz programowalny, strategia banku aktywa cyfrowe</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/pl/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>pl-PL</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-06T06:06:06+00:00</news:publication_date>
+    <news:title>Indeks płatności hurtowych w 2026: ISO 20022, depozyty tokenizowane, szyny czasu rzeczywistego i rozrachunek transgraniczny</news:title>
+    <news:keywords>płatności hurtowe 2026, ISO 20022, depozyty tokenizowane, Project Agorá, płatności transgraniczne, płatności czasu rzeczywistego, strukturyzowane dane adresowe, jakość danych płatniczych</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/pl/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>pl-PL</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-05T06:06:06+00:00</news:publication_date>
+    <news:title>Indeks bankowości cloud-native w 2026: DORA, inżynieria platformy, suwerenna chmura i odporność operacyjna</news:title>
+    <news:keywords>bankowość cloud-native 2026, DORA banki, ryzyko koncentracji chmury, inżynieria platformy banki, ryzyko ICT stron trzecich, strategia wyjścia z chmury, suwerenna chmura</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/pl/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>pl-PL</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-04T06:06:06+00:00</news:publication_date>
+    <news:title>Quantum-Safe Banking Index w 2026 r.: kryptografia postkwantowa, QKD, krypto-zwinność i ryzyko harvest-now-decrypt-later</news:title>
+    <news:keywords>quantum-safe banking 2026, kryptografia postkwantowa banki, NIST FIPS 203, ML-KEM, ML-DSA, SLH-DSA, krypto-zwinność, QKD bankowość</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/pl/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>pl-PL</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-03T06:06:06+00:00</news:publication_date>
+    <news:title>Indeks Agentowej AI dla Banków w 2026 roku: Pomiar Autonomii, Ładu, Audytowalności i Wpływu Biznesowego</news:title>
+    <news:keywords>agentowa AI bankowość 2026, agenci AI banki, ład AI usługi finansowe, autonomiczne przepływy bankowe, zarządzanie ryzykiem modeli, audytowalność AI</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/pl/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>pl-PL</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-02T06:06:06+00:00</news:publication_date>
+    <news:title>Indeks Infrastruktury Bankowej 2026: pomiar gotowości na agentowe AI, kryptografię kwantowo-odporną, odporność cloud-native i płatności hurtowe</news:title>
+    <news:keywords>indeks infrastruktury bankowej 2026, agentowe AI w bankowości, bankowość kwantowo-bezpieczna, bankowość cloud-native, płatności hurtowe, ISO 20022, DORA, Project Agora, depozyty tokenizowane</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/pl/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>pl-PL</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-29T06:06:06+00:00</news:publication_date>
+    <news:title>ISO 20022 po migracji: dane płatnicze jako produkty bankowe w 2026</news:title>
+    <news:keywords>ISO 20022 2026, adres strukturalny, CBPR+, produkty danych płatniczych, kody celu płatności, treasury korporacyjne, uzgadnianie, sankcyjne screening, wykrywanie fraudów</news:keywords>
   </news:news>
 </url>
 <url>

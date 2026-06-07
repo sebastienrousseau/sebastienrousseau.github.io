@@ -1,11 +1,13 @@
 {
   "banner_alt": "Абстрактна візуалізація мереж штучного інтелекту, що представляє можливості Gemini 1.5",
-  "language": "uk-UA",
   "keywords": "Gemini 1.5, Google AI, архітектура Mixture-of-Experts, обчислювальна ефективність, розширення контекстного вікна, інновації AI, трансформація аналізу даних, навчання в контексті, варіанти використання AI, технологічна революція",
-  "description": "Gemini 1.5 від Google розширює контекстні вікна понад 1 мільйон токенів. Що це дає для фінансів із доповненим пошуком і які компроміси варто враховувати.",
-  "banner": "https://cloudcdn.pro/stocks/images/abstract-visualization-of-gemini.webp",
-  "subtitle": "Поглиблений аналіз останнього прориву Google у галузі штучного інтелекту",
+  "language": "uk-UA",
+  "word_count": 257,
+  "title": "[UK DRAFT] Unlocking Gemini 1.5: Google's AI Revolution Explained",
   "locale": "uk_UA",
-  "date": "Feb 19, 2024",
-  "title": "[UK DRAFT] Unlocking Gemini 1.5: Google's AI Revolution Explained"
+  "description": "Gemini 1.5 від Google розширює контекстні вікна понад 1 мільйон токенів. Що це дає для фінансів із доповненим пошуком і які компроміси варто враховувати.",
+  "subtitle": "Поглиблений аналіз останнього прориву Google у галузі штучного інтелекту",
+  "banner": "https://cloudcdn.pro/stocks/images/abstract-visualization-of-gemini.webp",
+  "reading_time": 1,
+  "date": "Feb 19, 2024"
 }

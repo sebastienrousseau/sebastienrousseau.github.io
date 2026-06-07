@@ -4,14 +4,104 @@
   <link href="https://sebastienrousseau.com/fil/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/fil/"/>
   <id>https://sebastienrousseau.com/fil/</id>
-  <updated>2026-05-28T18:12:27+00:00</updated>
+  <updated>2026-06-07T18:23:54+00:00</updated>
   <entry>
     <title>Indeks ng Autonomous Treasury 2026: Agentic Treasury, Programmable Liquidity, Tokenized Deposits, at Real-Time Cash Control</title>
     <link href="https://sebastienrousseau.com/fil/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/"/>
     <id>https://sebastienrousseau.com/fil/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/</id>
-    <updated>2026-05-28T18:12:27+00:00</updated>
-    <published>2026-05-28T18:12:27+00:00</published>
+    <updated>2026-06-07T18:23:54+00:00</updated>
+    <published>2026-06-07T18:23:54+00:00</published>
     <summary>Isang indeks ng kahandaan para sa autonomous treasury sa 2026 — agentic workflows, programmable liquidity, tokenized deposits, real-time payments, at automated cash control.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Ang Agentic AI Index para sa mga Bangko sa 2026: Pagsukat ng Autonomy, Pamamahala, Auditability, at Epekto sa Negosyo</title>
+    <link href="https://sebastienrousseau.com/fil/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/"/>
+    <id>https://sebastienrousseau.com/fil/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/</id>
+    <updated>2026-06-07T18:23:54+00:00</updated>
+    <published>2026-06-07T18:23:54+00:00</published>
+    <summary>Isang index-style framework para sa pagsukat ng agentic AI readiness sa mga bangko, sumasaklaw sa autonomy, pamamahala, auditability, pagiging maaasahan, mga kontrol, at halaga sa negosyo.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Ang 2026 Banking Infrastructure Index: Pagsukat ng Katatagan para sa Agentic AI, Quantum-Safe Security, Cloud-Native na Katatagan, at Wholesale Payments</title>
+    <link href="https://sebastienrousseau.com/fil/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/"/>
+    <id>https://sebastienrousseau.com/fil/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/</id>
+    <updated>2026-06-07T18:23:54+00:00</updated>
+    <published>2026-06-07T18:23:54+00:00</published>
+    <summary>Isang banking infrastructure index para sa 2026 na inspirado ng Stanford AI Index, sumusukat ng katatagan sa agentic AI, quantum-safe security, cloud-native na katatagan, at pandaigdigang wholesale payments.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Ang Multi-Rail Bank sa 2026: Cards, A2A, Stablecoins, RTP, FedNow, at Open Banking sa Isang Estratehiya</title>
+    <link href="https://sebastienrousseau.com/fil/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/"/>
+    <id>https://sebastienrousseau.com/fil/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</id>
+    <updated>2026-06-07T18:23:54+00:00</updated>
+    <published>2026-06-07T18:23:54+00:00</published>
+    <summary>Hinihingi ng FedNow ang pre-funded 24/7 liquidity. Mura ang ACH ngunit T+1. Atomic ang USDC ngunit kailangan ng wallet infrastructure. Ruruta ng 2026 multi-rail bank ang bawat bayad ayon sa gastos, finality, at liquidity cost — sa orchestration engine na bumabasa ng ISO 20022 pacs.008.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Post-Quantum Payments Infrastructure: Bakit Maaaring Palitan ng mga Bangko ang Legacy Rails sa Halip na I-adapt</title>
+    <link href="https://sebastienrousseau.com/fil/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/"/>
+    <id>https://sebastienrousseau.com/fil/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</id>
+    <updated>2026-06-07T18:23:54+00:00</updated>
+    <published>2026-06-07T18:23:54+00:00</published>
+    <summary>Pinipili ng post-quantum cryptography ang payment rails: adaptasyon ng RSA/ECC sa SWIFT MT at ISO 20022 envelopes na hindi sukat sa ML-KEM at ML-DSA, o pagpapalit sa crypto-agile infrastructure. Magdesisyon bago maging operational loss ang HNDL.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Digital Assets sa 2026: Transisyon ng Imprastraktura na Hindi Dapat Antalahin</title>
+    <link href="https://sebastienrousseau.com/fil/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/"/>
+    <id>https://sebastienrousseau.com/fil/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</id>
+    <updated>2026-06-07T18:23:54+00:00</updated>
+    <published>2026-06-07T18:23:54+00:00</published>
+    <summary>Hindi na inobasyon ang digital assets, kundi tanong ng arkitektura ng settlement, custody, at balance sheet. Disenyo ng imprastraktura sa ilalim ng istrukturang kawalang-katiyakan ang estratehikong gawain ng bangko.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Ang Wholesale Payments Index sa 2026: ISO 20022, Tokenised Deposits, Real-Time Rails, at Cross-Border Settlement</title>
+    <link href="https://sebastienrousseau.com/fil/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/"/>
+    <id>https://sebastienrousseau.com/fil/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</id>
+    <updated>2026-06-06T06:06:06+00:00</updated>
+    <published>2026-06-06T06:06:06+00:00</published>
+    <summary>Index para sa kahandaan ng wholesale payments sa 2026: kalidad ng ISO 20022 data, tokenised deposits, real-time rails, cross-border settlement, at liquidity efficiency.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Ang Cloud Native Banking Index sa 2026: DORA, Platform Engineering, Sovereign Cloud, at Operational Resilience</title>
+    <link href="https://sebastienrousseau.com/fil/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/"/>
+    <id>https://sebastienrousseau.com/fil/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/</id>
+    <updated>2026-06-05T06:06:06+00:00</updated>
+    <published>2026-06-05T06:06:06+00:00</published>
+    <summary>Cloud native banking index sa 2026 para sukatin ang DORA readiness, platform engineering maturity, cloud concentration risk, exit evidence, at operational resilience ng bangko.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Ang Quantum-Safe Banking Index sa 2026: PQC, QKD, Crypto-Agility, at HNDL Risk</title>
+    <link href="https://sebastienrousseau.com/fil/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/"/>
+    <id>https://sebastienrousseau.com/fil/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/</id>
+    <updated>2026-06-04T06:06:06+00:00</updated>
+    <published>2026-06-04T06:06:06+00:00</published>
+    <summary>Index sa pagbabangko para sa quantum-safe readiness sa 2026: NIST post-quantum standards, cryptographic inventory, crypto-agility, QKD, at long-lived data exposure.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>UK Wholesale Digital Markets: Tokenized Gilts, DLT Settlement, Champion</title>
+    <link href="https://sebastienrousseau.com/fil/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/"/>
+    <id>https://sebastienrousseau.com/fil/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</id>
+    <updated>2026-05-30T06:06:06+00:00</updated>
+    <published>2026-05-30T06:06:06+00:00</published>
+    <summary>Ginagawang pambansang proyekto ng kakayahang makipagkumpitensya ng UK Wholesale Digital Markets Champion ang tokenized wholesale finance, gilts, at DLT settlement.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>ISO 20022 Pagkatapos ng Migration: Payment Data tungo sa Produkto ng Bangko 2026</title>
+    <link href="https://sebastienrousseau.com/fil/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/"/>
+    <id>https://sebastienrousseau.com/fil/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</id>
+    <updated>2026-05-29T06:06:06+00:00</updated>
+    <published>2026-05-29T06:06:06+00:00</published>
+    <summary>Pagkatapos ng migration, ang ISO 20022 ay isang pagkakataon para sa mga payment data product — structured address, purpose code, impormasyon ng remittance, investigation message, at reconciliation bilang produkto ng bangko.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>

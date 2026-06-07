@@ -15,6 +15,7 @@ the site without a TeX install. CI does not require PDFs to be
 regenerated on every build; PDFs are committed to ``docs/`` and only
 refreshed when ``_data/lead-magnets/`` content changes.
 """
+
 from __future__ import annotations
 
 import sys as _sys  # path bootstrap — scripts reorg (scripts/lib/ on sys.path)
@@ -62,13 +63,20 @@ def render(md: Path, out: Path) -> None:
     cmd = [
         "pandoc",
         str(md),
-        "-o", str(out),
-        "--pdf-engine", engine,
-        "-V", "geometry:margin=2cm",
-        "-V", "fontsize=11pt",
-        "-V", "linkcolor=blue",
-        "-V", "urlcolor=blue",
-        "-V", "colorlinks=true",
+        "-o",
+        str(out),
+        "--pdf-engine",
+        engine,
+        "-V",
+        "geometry:margin=2cm",
+        "-V",
+        "fontsize=11pt",
+        "-V",
+        "linkcolor=blue",
+        "-V",
+        "urlcolor=blue",
+        "-V",
+        "colorlinks=true",
         "--toc",
         "--toc-depth=2",
         "--standalone",
@@ -113,8 +121,7 @@ def main() -> int:
     for md, pdf, exc in results:
         if exc is not None:
             print(
-                f"build_lead_magnets: pandoc failed on {md.name} "
-                f"(exit {exc.returncode})",
+                f"build_lead_magnets: pandoc failed on {md.name} " f"(exit {exc.returncode})",
                 file=sys.stderr,
             )
             return 1

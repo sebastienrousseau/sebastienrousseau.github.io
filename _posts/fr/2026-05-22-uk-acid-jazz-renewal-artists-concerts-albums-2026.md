@@ -39,7 +39,7 @@ schema: "FAQPage, Article"
 seo_title: "Acid Jazz UK 2026 : Artistes, Concerts, Albums, Renouveau"
 short_name: "sebastienrousseau"
 subtitle: "L'acid jazz se renouvelle au Royaume-Uni grâce à un mélange d'artistes historiques, de sorties Acid Jazz Records, de festivals de jazz funk, de publics soul-jazz, de concerts à dominante Hammond et de jeunes musiciens de jazz britanniques qui replacent le groove au centre de la scène."
-tags: "acid jazz, UK jazz, Acid Jazz Records, Brand New Heavies, Galliano, James Taylor Quartet, Ronnie Scott's, Bangs and Talbot, Chris Bangs, Mick Talbot, Mostly Jazz Funk Soul Festival, Cymande, Soul II Soul, Jordan Rakei, jazz funk, soul jazz"
+tags: "acid jazz, UK jazz, Acid Jazz Records, Brand New Heavies, Galliano, James Taylor Quartet, Ronnie Scott's, Bangs and Talbot, Chris Bangs, Mick Talbot, Mostly Jazz Funk Soul Festival, Cymande, Soul II Soul, Jordan Rakei, jazz funk, soul jazz, ISO 20022, cryptographie post-quantique, AI, DORA, dépôts tokenisés, ingénierie de plateforme, cloud souverain, cloud native bancaire, paiements transfrontaliers, stablecoins"
 theme-color: "0, 83, 191"
 title: "Le renouveau de l'acid jazz au Royaume-Uni : artistes et albums 2026"
 url: "https://sebastienrousseau.com/fr/2026-05-22-uk-acid-jazz-renewal-artists-concerts-albums-2026"
@@ -93,9 +93,9 @@ site_software: "Static Site Generator, Rust"
 <p class="post-lead-heading"><strong>Points clés</strong></p>
 <ul class="post-lead-takeaways">
   <li><strong>Label.</strong> La compilation Bandcamp 2026 d'Acid Jazz Records réunit Matt Berry, Kevin Fingier, The Brand New Heavies, Billy Valentine et Mama Terra.</li>
-  <li><strong>Sortie.</strong> <em>Smokin' Aces</em> de Bangs &amp; Talbot (23 janvier 2026, Acid Jazz) retrouve Chris Bangs et Mick Talbot autour du groove, du funk, de la soul et des fusions mondiales.</li>
+  <li><strong>Sortie.</strong> <em>Smokin' Aces</em> de Bangs & Talbot (23 janvier 2026, Acid Jazz) retrouve Chris Bangs et Mick Talbot autour du groove, du funk, de la soul et des fusions mondiales.</li>
   <li><strong>Live.</strong> The Brand New Heavies avec Galliano au Glasshouse et The James Taylor Quartet au Ronnie Scott's sont les signaux acid jazz les plus clairs dans les programmations 2026.</li>
-  <li><strong>Festival.</strong> Le Mostly Jazz Funk &amp; Soul Festival (10–12 juillet 2026) programme Soul II Soul, Cymande, Jordan Rakei et Sampa The Great aux côtés des grandes formations historiques du jazz funk.</li>
+  <li><strong>Festival.</strong> Le Mostly Jazz Funk & Soul Festival (10–12 juillet 2026) programme Soul II Soul, Cymande, Jordan Rakei et Sampa The Great aux côtés des grandes formations historiques du jazz funk.</li>
 </ul>
 <p class="post-lead-related"><strong>À lire aussi :</strong> <a href="https://sebastienrousseau.com/2026-05-21-tokenised-deposits-banking-transformation-2026/index.html">Dépôts tokenisés : la transformation bancaire en cours en 2026</a>.</p>
 </aside>
@@ -231,6 +231,6 @@ Le lien, c'est le groove, non une étiquette de genre stricte. Des festivals com
 - Mostly Jazz Funk & Soul Festival, (2026). [Mostly Jazz Funk & Soul Festival 2026 ⧉](https://mostlyjazz.co.uk "Mostly Jazz Funk & Soul Festival").
 - Marlbank, (2026). [Meilleurs albums de jazz britanniques en 2026 jusqu'ici ⧉](https://marlbank.net/top-jazz-in-2026/top-uk-jazz-albums-in-2026-so-far/ "Meilleurs albums de jazz britanniques en 2026 jusqu'ici").
 <!-- enrich-start -->
-<aside class="author-card" aria-label="À propos de l'auteur"><img alt="Portrait de Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Technologue bancaire senior, écrivant sur l'IA appliquée, la migration ISO 20022, la cryptographie post-quantique pour les services financiers et la transformation structurelle des paiements wholesale.</span><span class="author-credentials">Plus de 20 ans à HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profil complet</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="À propos de l'auteur"><img alt="Portrait de Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Technologue bancaire senior, écrivant sur l'IA appliquée, la migration ISO 20022, la cryptographie post-quantique pour les services financiers et la transformation structurelle des paiements wholesale.</span><span class="author-credentials">Plus de 20 ans à HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profil complet</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Dernière relecture <time datetime="2026-05-22">2026-05-22</time>.</p>
 <!-- enrich-end -->

@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="yo-NG">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Sun, 31 May 2026 06:06:06 +0000" id="date" />
+    <meta itemprop="dateModified" content="Sun, 31 May 2026 06:06:06 +0000" id="last-modified" />
+    <title>Ìgbékalẹ̀ Ìsanwó Lẹyin-Quantum: Ìdí Tí Báńkì Fi Lè Fìrọ́pò Dípò Ìbámu Ọ̀nà Àkànṣe — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="Cryptography lẹyin-quantum fi àyàn méjì lélẹ̀ fún ọ̀nà ìsanwó: ìbámu RSA/ECC nínú ìdìpọ̀ SWIFT MT àti ISO 20022 tí kò bá ML-KEM àti ML-DSA mu, tàbí ìfìrọ́pò pẹ̀lú ìgbékalẹ̀ ìyára crypto. Àwọn ayàwòrán gbọ́dọ̀ pinnu kí HNDL tó di àdánù iṣẹ́.">
+<meta name="keywords" content="cryptography lẹyin-quantum, ìsanwó PQC, ìyára crypto, kórè-báyìí-fọkàn-báyẹn, HNDL, ìlànà PQC NIST, ML-KEM, ML-DSA, FIPS 203, FIPS 204, ìṣíkiri ọ̀nà ìsanwó, ISO 20022 PQC, ìfìrọ́pò SWIFT MT, HSM, ìṣubú PKI, ìduróṣinṣin iṣẹ, Quantum Computing Cybersecurity Preparedness Act">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="PQC Payments 2026">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-I1L/GiFe2/7CsDEjSrVdx6BMSR7tF21iz42/ofNEVlQ=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-ZQjJQPt8XmDmDhE7svnCXqpmzB3LwJM1I+lTvpE22oo=' 'sha256-iZ1V5RzBLtl7ZyJTu/zDvb7LG8m7m6B8pnVJFceMbkk=' 'sha256-wGI9LPZwxrfNI/cvHxgJplBtwctp34OgV47vG7F2z4Y=' 'self' 'inline-speculation-rules' https://cdn.jsdelivr.net https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' https://cloudcdn.pro https://www.google.com https://open.spotify.com;
+        img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/yo/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/newsreader-latin.woff2" crossorigin />
+    <link rel="stylesheet" href="/fonts/fonts.css" />
+    <!-- Preload the LCP hero portrait so it doesn't compete with the
+         render-blocking JS bundle on throttled mobile connections.
+         Lighthouse-simulated Slow-4G has been pinning LCP at ~5.6s; the
+         observed (real-network) LCP is 165 ms. This hint pulls the
+         synthetic LCP in line with the observed value. -->
+    <link rel="preload" as="image" href="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=1200&format=webp&q=85" fetchpriority="high">
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script>(function(){try{var saved=localStorage.getItem("theme");var prefersDark=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;var theme=saved||(prefersDark?"dark":"light");document.documentElement.setAttribute("data-theme",theme);}catch(e){}})();</script>
+
+    <link rel="stylesheet" href="/_csp/4724896d11ec6663.css" integrity="sha256-SFQ1AngSMlx94d5FmN1lWSKPs5RL6Y8BQf0nIEBLd7g= sha256-6BJkWGvqh3blXQksn+ynhkpoqcrJzzWhSKVuLVBJY4s=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Àyẹ́ Atom" href="/yo/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="Ìgbékalẹ̀ Ìsanwó Lẹyin-Quantum: Ìdí Tí Báńkì Fi Lè Fìrọ́pò Dípò Ìbámu Ọ̀nà Àkànṣe — Sebastien Rousseau">
+<meta property="og:description" content="Cryptography lẹyin-quantum fi àyàn méjì lélẹ̀ fún ọ̀nà ìsanwó: ìbámu RSA/ECC nínú ìdìpọ̀ SWIFT MT àti ISO 20022 tí kò bá ML-KEM àti ML-DSA mu, tàbí ìfìrọ́pò pẹ̀lú ìgbékalẹ̀ ìyára crypto. Àwọn ayàwòrán gbọ́dọ̀ pinnu kí HNDL tó di àdánù iṣẹ́.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/yo/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/">
+<meta property="og:image" content="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="yo_NG">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Ìgbékalẹ̀ Ìsanwó Lẹyin-Quantum: Ìdí Tí Báńkì Fi Lè Fìrọ́pò Dípò Ìbámu Ọ̀nà Àkànṣe — Sebastien Rousseau">
+<meta name="twitter:description" content="Cryptography lẹyin-quantum fi àyàn méjì lélẹ̀ fún ọ̀nà ìsanwó: ìbámu RSA/ECC nínú ìdìpọ̀ SWIFT MT àti ISO 20022 tí kò bá ML-KEM àti ML-DSA mu, tàbí ìfìrọ́pò pẹ̀lú ìgbékalẹ̀ ìyára crypto. Àwọn ayàwòrán gbọ́dọ̀ pinnu kí HNDL tó di àdánù iṣẹ́.">
+<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp">
+<link rel="canonical" href="https://sebastienrousseau.com/yo/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2026-05-31-post-quantique-paiements-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="bn" href="https://sebastienrousseau.com/bn/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="cs" href="https://sebastienrousseau.com/cs/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2026-05-31-post-quantum-zahlungsverkehr-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2026-05-31-post-quantum-pagos-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="fil" href="https://sebastienrousseau.com/fil/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="ha" href="https://sebastienrousseau.com/ha/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="he" href="https://sebastienrousseau.com/he/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="hi" href="https://sebastienrousseau.com/hi/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="id" href="https://sebastienrousseau.com/id/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/2026-05-31-post-quantum-pagamenti-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="nl" href="https://sebastienrousseau.com/nl/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="pl" href="https://sebastienrousseau.com/pl/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/2026-05-31-post-quantum-pagamentos-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="ro" href="https://sebastienrousseau.com/ro/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="sv" href="https://sebastienrousseau.com/sv/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="th" href="https://sebastienrousseau.com/th/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="tr" href="https://sebastienrousseau.com/tr/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="uk" href="https://sebastienrousseau.com/uk/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="vi" href="https://sebastienrousseau.com/vi/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="yo" href="https://sebastienrousseau.com/yo/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" integrity="sha256-tV/7vAgYDUuBQbSGEPjXL/JC0sD7QpSxXCGKT4ALhh8= sha256-dvm1KF9mEWIapL8BE0nyFlHaKSf6TsjZZoQcJeRPraI=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">Fò sí àkóónú àkọ́kọ́</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="Yí ìwọ̀ndì padà" />
+      <div class="wrap">
+        <a class="ap-brand" href="/yo/index.html" aria-label="Ilé Sebastien Rousseau">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="Ìwọ̀ndì àkọ́kọ́">
+          <ul class="ap-menu">
+            <li><a href="/yo/nipa-wa/index.html">About</a></li>
+            <li><a href="/yo/awon-akole/index.html" aria-current="page" class="active">Articles</a></li>
+            <li><a href="/yo/awon-iwe/index.html">Papers</a></li>
+            <li><a href="/yo/awon-koko/index.html">Àwọn kókó</a></li>
+            <li><a href="/yo/awon-ise/index.html">Projects</a></li>
+            <li><a href="/yo/akojopo-orin/index.html">Playlists</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="Tan àkòrí òkùnkùn" aria-pressed="false" title="Yí àkòrí padà">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="Wá (Cmd tàbí Ctrl + K)" title="Wá (⌘K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="Èdè">
+            <button type="button" class="ap-lang-toggle" aria-label="YO, Yí èdè padà" aria-expanded="false" aria-haspopup="menu" title="Yí èdè padà">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">YO</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/2026-05-31-post-quantique-paiements-infrastructure-replace-rather-than-retrofit-2026/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <a class="ap-lang-item" href="/bn/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
+                <a class="ap-lang-item" href="/cs/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
+                <a class="ap-lang-item" href="/de/2026-05-31-post-quantum-zahlungsverkehr-infrastructure-replace-rather-than-retrofit-2026/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/2026-05-31-post-quantum-pagos-infrastructure-replace-rather-than-retrofit-2026/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <a class="ap-lang-item" href="/fil/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
+                <a class="ap-lang-item" href="/ha/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
+                <a class="ap-lang-item" href="/he/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
+                <a class="ap-lang-item" href="/hi/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <a class="ap-lang-item" href="/id/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
+                <a class="ap-lang-item" href="/it/2026-05-31-post-quantum-pagamenti-infrastructure-replace-rather-than-retrofit-2026/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <a class="ap-lang-item" href="/pl/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
+                <a class="ap-lang-item" href="/pt-br/2026-05-31-post-quantum-pagamentos-infrastructure-replace-rather-than-retrofit-2026/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <a class="ap-lang-item" href="/ro/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
+                <a class="ap-lang-item" href="/ru/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <a class="ap-lang-item" href="/sv/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
+                <a class="ap-lang-item" href="/th/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
+                <a class="ap-lang-item" href="/tr/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
+                <a class="ap-lang-item" href="/uk/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="uk" role="menuitem">🇺🇦 Українська</a>
+                <a class="ap-lang-item" href="/vi/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
+                <a class="ap-lang-item" href="/yo/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
+                <a class="ap-lang-item" href="/zh-hans/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/yo/kan-si-wa/index.html" aria-label="Kàn sí wa">Kàn sí wa ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="Yí ìwọ̀ndì padà">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>Ìgbékalẹ̀ Ìsanwó Lẹyin-Quantum: Ìdí Tí Báńkì Fi Lè Fìrọ́pò Dípò Ìbámu Ọ̀nà Àkànṣe</h1>
+      <p class="sub">ML-KEM àti ML-DSA kò bá ọ̀nà tí ó ń gbé SWIFT MT àti ISO 20022 mu mọ́. Ìdáhùn ìmọ̀ ẹ̀rọ òdodo ni pé ìbámu jẹ́ ètò ìṣíkiri tí kò ní pẹ́, ìfìrọ́pò sì ni ibi tí ó dúró.</p>
+    <nav class="article-tags" aria-label="Àwọn kókó"><a href="/tags/index.html#h3-cryptography-leyin-quantum" class="article-tag" rel="tag">cryptography lẹyin-quantum</a><a href="/tags/index.html#h3-isanwo-pqc" class="article-tag" rel="tag">ìsanwó PQC</a><a href="/tags/index.html#h3-iyara-crypto" class="article-tag" rel="tag">ìyára crypto</a><a href="/tags/index.html#h3-kore-bayii-fokan-bayen" class="article-tag" rel="tag">kórè-báyìí-fọkàn-báyẹn</a><a href="/tags/index.html#h3-hndl" class="article-tag" rel="tag">HNDL</a><a href="/tags/index.html#h3-ilana-pqc-nist" class="article-tag" rel="tag">ìlànà PQC NIST</a><a href="/tags/index.html#h3-ml-kem" class="article-tag" rel="tag">ML-KEM</a><a href="/tags/index.html#h3-ml-dsa" class="article-tag" rel="tag">ML-DSA</a><a href="/tags/index.html#h3-fips-203" class="article-tag" rel="tag">FIPS 203</a><a href="/tags/index.html#h3-fips-204" class="article-tag" rel="tag">FIPS 204</a><a href="/tags/index.html#h3-isikiri-ona-isanwo" class="article-tag" rel="tag">ìṣíkiri ọ̀nà ìsanwó</a><a href="/tags/index.html#h3-iso-20022-pqc" class="article-tag" rel="tag">ISO 20022 PQC</a><a href="/tags/index.html#h3-ifiropo-swift-mt" class="article-tag" rel="tag">ìfìrọ́pò SWIFT MT</a><a href="/tags/index.html#h3-hsm" class="article-tag" rel="tag">HSM</a><a href="/tags/index.html#h3-isubu-pki" class="article-tag" rel="tag">ìṣubú PKI</a><a href="/tags/index.html#h3-idurosinsin-ise" class="article-tag" rel="tag">ìduróṣinṣin iṣẹ</a><a href="/tags/index.html#h3-quantum-computing-cybersecurity-preparedness-act" class="article-tag" rel="tag">Quantum Computing Cybersecurity Preparedness Act</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2026-05-31T06:06:06+00:00" class="meta-pub">Tẹ̀ jáde 31 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Àkókò kíkà tó tó">13 ìṣẹ́jú kíkà</span></div></section><figure class="article-banner"><img src="https://cloudcdn.pro/api/transform?url=/stocks/images/lan-pham-4qG2qqXi3tY.webp&w=1600&format=webp&q=85" alt="Banner for: Ìgbékalẹ̀ Ìsanwó Lẹyin-Quantum: Ìdí Tí Báńkì Fi Lè Fìrọ́pò Dípò Ìbámu Ọ̀nà Àkànṣe" width="1200" height="675" fetchpriority="high" decoding="async" /></figure>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>Àkóónú</h2><ol><li><a href="#kore-bayii-si-bayen-awose-ihale-ti-o-yo-ayan-lati-duro-kuro">Kórè Báyìí, Ṣí Báyẹn: Àwòṣe Ìhalẹ̀ Tí Ó Yọ Àyàn Láti Dúró Kúrò</a></li><li><a href="#isoro-titobi-ni-isoro-imo-ero">Ìṣòro Títóbi Ni Ìṣòro Ìmọ̀ Ẹ̀rọ</a></li><li><a href="#ibamu-lodi-si-ifiropo-ipinnu-ti-o-so-eto-naa">Ìbámu Lòdì sí Ìfìrọ́pò: Ìpinnu Tí Ó Sọ Ètò Náà</a></li><li><a href="#igbekale-iyara-crypto-ipele-kan-leyin-omiran">Ìgbékalẹ̀ Ìyára Crypto, Ìpele Kan Lẹ́yìn Òmíràn</a></li><li><a href="#ohun-ti-iyi-tumo-si-nipa-iru-banki">Ohun Tí Ìyí Túmọ̀ Sí Nípa Ìrú Báńkì</a></li><li><a href="#ohun-ti-yoo-sele-tokan">Ohun Tí Yóò Ṣẹlẹ̀ Tókàn</a></li><li><a href="#awon-ibeere-ti-a-saba-beere">Àwọn Ìbéèrè Tí A Sábà Béèrè</a></li><li><a href="#itokasi">Ìtọ́kasí</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> Cryptography lẹyin-quantum fi àyàn méjì lélẹ̀ fún ọ̀nà ìsanwó: ìbámu RSA/ECC nínú ìdìpọ̀ SWIFT MT àti ISO 20022 tí kò bá ML-KEM àti ML-DSA mu, tàbí ìfìrọ́pò pẹ̀lú ìgbékalẹ̀ ìyára crypto. Àwọn ayàwòrán gbọ́dọ̀ pinnu kí HNDL tó di àdánù iṣẹ́.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>Kórè Báyìí, Ṣí Báyẹn: Àwòṣe Ìhalẹ̀ Tí Ó Yọ Àyàn Láti Dúró Kúrò.</strong> HNDL yí àkókò cryptography pápá sódì padà.</li>  <li><strong>Ìṣòro Títóbi Ni Ìṣòro Ìmọ̀ Ẹ̀rọ.</strong> Ìjíròrò gbangba lórí ìṣíkiri PQC sábà máa ń dá lórí àyàn algorithm.</li>  <li><strong>Ìbámu Lòdì sí Ìfìrọ́pò: Ìpinnu Tí Ó Sọ Ètò Náà.</strong> Èrò òdodo ni pé ìbámu jẹ́ ètò ìṣíkiri tí kò ní pẹ́, ìfìrọ́pò sì ni ibi tí ó dúró.</li>  <li><strong>Ìgbékalẹ̀ Ìyára Crypto, Ìpele Kan Lẹ́yìn Òmíràn.</strong> Àwọn ìpele ìgbékalẹ̀ tí ó ṣe pàtàkì fún ìṣíkiri PQC kì í ṣe àwọn ìpele iṣẹ́ bí &quot;ìsọfúnni, ìṣàkóso, ètò ọrọ̀-ajé&quot; tí ó bá ìtàn báńkì gbogbogbò mu.</li></ul></aside><!-- lead-start -->
+<!-- lead-start: manual -->
+
+<!-- lead-end -->
+<p>Àwọn ohun cryptography tí ó ń jẹ́rìí gbogbo ìsanwó ńlá tí ó wà nínú iṣẹ́ lónìí — RSA, ECDSA, ECDH — ní ọjọ́ ìparí. <a href="https://www.congress.gov/bill/117th-congress/house-bill/7535/text" title="H.R. 7535">Quantum Computing Cybersecurity Preparedness Act ⧉</a> ti orílẹ̀-èdè Amẹ́ríkà fi ọjọ́ ìparí yẹn sínú òfin rírà ìjọba ní ìparí 2022. <a href="https://www.bis.org/publ/work1208.htm" title="Project Leap: Quantum-proofing the financial system">Iwé Iṣẹ́ BIS Nọ. 1208 ⧉</a> fi ọjọ́ ìparí kan náà sínú èrò àbójútó fún báńkì àárín. <a href="https://csrc.nist.gov/pubs/fips/203/final" title="Module-Lattice-Based Key-Encapsulation Mechanism Standard">NIST FIPS 203 ⧉</a> àti <a href="https://csrc.nist.gov/pubs/fips/204/final" title="Module-Lattice-Based Digital Signature Standard">FIPS 204 ⧉</a> tẹ àwọn ohun ìfìrọ́pò jáde ní Òṣù Kẹjọ 2024.</p>
+<p>Ìgbékalẹ̀ ìsanwó kò tíì gba ohun tí ìyẹn túmọ̀ sí.</p>
+<p>Àpilẹ̀kọ yìí ni àríyànjiyàn ìmọ̀ ẹ̀rọ fún ìfìrọ́pò lórí ìbámu. A kọ ọ́ fún àwọn ayàwòrán tí wọ́n ti lóye àwọn algorithm tí wọ́n sì gbọ́dọ̀ pinnu ohun tí wọ́n máa ṣe pẹ̀lú SWIFT MT, àwọn iléèsé pacs àti pain ISO 20022, àwọn ojú-òpó RTGS, àwọn ìkójọpọ̀ HSM, àti àwọn ìpele ìjẹ́rìí tí ó wà ní abẹ́ gbogbo rẹ̀.</p>
+<hr />
+<blockquote>
+<p><strong>Ìsọnísókí Aláṣẹ / Àwọn Kókó Pàtàkì</strong></p>
+<ul>
+<li><strong>Kórè-báyìí-fọkàn-báyẹn (HNDL) ni ìhalẹ̀ iṣẹ́.</strong> Àwọn ọ̀tá ń kọ ìpalọ̀ ìsanwó tí a ti dí sílẹ̀ ní 2026 láti ṣí i nígbà tí kọ̀ǹpútà quantum tó bámu pẹ̀lú ìpinnu cryptography (CRQC) bá wà. Ìpalọ̀ tí a dí kọ pẹ̀lú àwọn ìtọ́nisọ́nà ìpinnu, ìsọfúnni olùgbà, àti ohun-èlò ìjẹ́rìí tí ó ní ìfọwọ́sí gígùn.</li>
+<li><strong>NIST ti gbé àwọn ìfìrọ́pò kalẹ̀.</strong> ML-KEM (FIPS 203) fún ìfìmọ́ kọ́kọ́rọ́ àti ML-DSA (FIPS 204) fún àmì-iwé dijítà ni àyàn àkọ́kọ́. SLH-DSA (FIPS 205) ń bo ohun ìpadàbọ̀ tí ó dá lórí hash.</li>
+<li><strong>Iyàtọ̀ títóbi ń pa àwọn ìgbàgbọ́ àkànṣe.</strong> Kọ́kọ́rọ́ ìgbangba àti àmì-iwé ńlá ní ìlọ́pò 5–20 ju ìbámu RSA-2048 lọ. Ìyẹn ń kọlu MTU lórí àwọn nẹ́tíwọ́kì ìsanwó, ìgbàgbọ́ ìpamọ́ tí a fìdí sínú àwọn olùdánilẹ́kọ̀ọ́ MT, àti agbára cryptography ti àwọn ọkọ̀ HSM tí ó wà.</li>
+<li><strong>Àdàpọ̀ (kíláàsíkì + PQC) jẹ́ ọkọ̀ ìṣíkiri, kì í ṣe ibi tí ó dúró.</strong> TLS àdàpọ̀ àti X.509 àdàpọ̀ ń ra ọdún méjì sí mẹ́ta ti àjọṣepọ̀ nígbà tí a bá ń fìrọ́pò àwọn ọ̀nà iṣẹ́. Wọn kì í yanjú ìṣòro agbára tí ó wà ní abẹ́.</li>
+<li><strong>PKI ni ògiri tí ó gbé ẹrù.</strong> Ọ̀gá ìjẹ́rìí tí algorithm àmì-iwé rẹ̀ di iró ń ba gbogbo ìjẹ́rìí tí ó wà ní abẹ́ rẹ̀ jẹ́. Ewu ìṣètò báńkì ni ẹ̀wọ̀n, kì í ṣe ojú-òpó kankan.</li>
+<li><strong>Ìyára crypto ni ohun-ìní ìgbékalẹ̀ láti kọ́ fún.</strong> Àmì algorithm, fọ́mù kọ́kọ́rọ́, ìdìpọ̀ àmì-iwé, àti àwọn ìpín HSM gbọ́dọ̀ jẹ́ àyàn-àyíká. Ohunkóhun tí a ti múra mọ́ RSA ní àkókò ìkọ́ jẹ́ gbèsè ìmọ̀ ẹ̀rọ tí yóò pari ní àkókò kan náà.</li>
+</ul>
+</blockquote>
+<hr />
+<h2 id="kore-bayii-si-bayen-awose-ihale-ti-o-yo-ayan-lati-duro-kuro">Kórè Báyìí, Ṣí Báyẹn: Àwòṣe Ìhalẹ̀ Tí Ó Yọ Àyàn Láti Dúró Kúrò <a class="heading-anchor" href="#kore-bayii-si-bayen-awose-ihale-ti-o-yo-ayan-lati-duro-kuro" aria-label="Ìjápọ̀ sí Kórè Báyìí, Ṣí Báyẹn: Àwòṣe Ìhalẹ̀ Tí Ó Yọ Àyàn Láti Dúró Kúrò">#</a></h2>
+<p>HNDL yí àkókò cryptography pápá sódì padà. Ìṣàyẹ̀wò ewu lóòótọ́ ń béèrè ìgbà tí ìhalẹ̀ yóò hàn. HNDL ń béèrè ìgbà tí ìpalọ̀ tí a dí lónìí yóò wúlò fún ọ̀tá. Fún àwọn iléèsé ìsanwó — ìdánimọ̀ olùgbà, nọ́mbà àkáǹtì, ìsọfúnni ìfowópamọ́ alábàápín, iléèsé yíyẹ̀ àtìmọ́lé, àti ìtọ́nisọ́nà ìpinnu nínú-báńkì — fèrèsé ìfọwọ́sí jẹ́ ọdún sí ẹ̀wádún. Ọ̀pọ̀ ìpalọ̀ wọ̀nyẹn ni a ń kọ síbi kan ní báyìí.</p>
+<p><a href="https://media.defense.gov/2022/Sep/07/2003071834/-1/-1/0/CSA_CNSA_2.0_ALGORITHMS_.PDF" title="Commercial National Security Algorithm Suite 2.0">Àkókò CNSA 2.0 ti NSA ⧉</a> fún ètò ààbò orílẹ̀-èdè títí di 2035 láti parí ìṣíkiri. Àwọn alábòójútó ìnáwó ń lọ pẹ̀lú àkókò tí ó yára síi — <a href="https://www.bankofengland.co.uk/prudential-regulation/publication/2024/march/operational-resilience-impact-tolerances-for-important-business-services" title="PRA SS1/21">àwọn ìfojúsọ́nà PRA lórí ìduróṣinṣin iṣẹ ⧉</a> ka ìyára crypto sí ewu àdájọpọ̀ ẹgbẹ́-kẹta. Ìfojúsọ́nà ní 2026 ni pé àwọn ọ̀nà ìsanwó pàtàkì gbọ́dọ̀ tẹ ètò ìṣíkiri PQC wọn jáde nínú ìjẹ́rìí-ara wọn lórí ìduróṣinṣin.</p>
+<p>Ọ̀tá HNDL kò nílò CRQC lónìí. Ohun tí ọ̀tá nílò ni:</p>
+<ol>
+<li><strong>Ipò nẹ́tíwọ́kì.</strong> Ìfàṣẹ́ kébù-abẹ́-omi, ìdí ní ipele ISP, àti àwọn middlebox tí wọ́n ti ba jẹ́ wà nínú èyí. Ìpalọ̀ ìsanwó ńlá ń kójọ kọjá àwọn ọ̀nà nẹ́tíwọ́kì díẹ̀.</li>
+<li><strong>Ìpamọ́.</strong> Petabyte kan ti ìsọfúnni ìsanwó tí a ṣètò jẹ́ ìpamọ́ tí ó ṣeé ṣàkóso ní 2026.</li>
+<li><strong>Ìfaradà.</strong> Dídí kò ná ohunkóhun fún iléèsé kọ̀ọ̀kan tí a fà sí. Èrè ń dé nígbà tó kọjá.</li>
+</ol>
+<p>Nítorí náà, àríyànjiyàn ìṣíkiri kì í ṣe pé &quot;àwọn kọ̀ǹpútà quantum lè dé ní 2035.&quot; Ó jẹ́ pé &quot;ìsopọ̀ TLS èyíkéyìí tí ó parí lálẹ́ òní pẹ̀lú ìpàṣípààrọ̀ kọ́kọ́rọ́ RSA-2048 ti farahàn fún gígùn tí ìsọfúnni inú rẹ̀ bá wà pẹ̀lú ìfọwọ́sí.&quot;</p>
+<h2 id="isoro-titobi-ni-isoro-imo-ero">Ìṣòro Títóbi Ni Ìṣòro Ìmọ̀ Ẹ̀rọ <a class="heading-anchor" href="#isoro-titobi-ni-isoro-imo-ero" aria-label="Ìjápọ̀ sí Ìṣòro Títóbi Ni Ìṣòro Ìmọ̀ Ẹ̀rọ">#</a></h2>
+<p>Ìjíròrò gbangba lórí ìṣíkiri PQC sábà máa ń dá lórí àyàn algorithm. Ìṣòro tí ó nira jùlọ ni ti ìwọ̀n.</p>
+<table>
+<thead>
+<tr>
+<th>Ohun</th>
+<th>Kọ́kọ́rọ́ ìgbangba</th>
+<th>Àmì-iwé / Ìpalọ̀</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RSA-2048</td>
+<td>bytes 256</td>
+<td>bytes 256 (àmì-iwé)</td>
+</tr>
+<tr>
+<td>ECDSA P-256</td>
+<td>bytes 64</td>
+<td>bytes 64 (àmì-iwé)</td>
+</tr>
+<tr>
+<td>ML-KEM-768</td>
+<td><strong>bytes 1,184</strong></td>
+<td><strong>bytes 1,088 (ìpalọ̀)</strong></td>
+</tr>
+<tr>
+<td>ML-DSA-65</td>
+<td><strong>bytes 1,952</strong></td>
+<td><strong>bytes 3,309 (àmì-iwé)</strong></td>
+</tr>
+<tr>
+<td>SLH-DSA-128f</td>
+<td>bytes 32</td>
+<td><strong>bytes 17,088 (àmì-iwé)</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Àwọn nọ́mbà wọ̀nyẹn fi ara wọn pa pọ̀ pẹ̀lú àwọn ọ̀nà ìkùnà tí a kò kọ́ ìgbékalẹ̀ ìsanwó àkànṣe fún:</p>
+<ul>
+<li><strong>Ìpínyà ìdìpọ̀ lórí ọ̀nà.</strong> ClientHello tí ó ru ML-KEM-768 àdàpọ̀ pẹ̀lú X25519 kíláàsíkì kọjá MTU Ethernet 1,500-byte. Àwọn middlebox láàrín ojú-òpó ìsanwó méjì ń pín, ń ju, tàbí ń tún ìfọwọ́wọ́ kọ. Ìkùnà náà hàn gẹ́gẹ́ bí ìṣìṣẹ́ TLS tí kò dúró tí ó dà bí ariwo nẹ́tíwọ́kì lójijì.</li>
+<li><strong>Ìgbàgbọ́ ìpamọ́ nínú olùdánilẹ́kọ̀ọ́ MT.</strong> Ọ̀pọ̀ àkànṣe SWIFT MT ń gbé àwọn ìdìpọ̀ tí a fi àmì-iwé sí tí a kọ́ fún ECDSA. Fi àmì-iwé ML-DSA sí inú ìdìpọ̀ kan náà, olùdánilẹ́kọ̀ọ́ yóò gé tàbí jẹ̀.</li>
+<li><strong>Agbára HSM.</strong> Fífi àmì-iwé sí pẹ̀lú ML-DSA lórí ọkọ̀ HSM tí a fi sílẹ̀ jẹ́ ìlọ́pò 3–10 lọ́ra ju ECDSA fún iṣẹ́ kọ̀ọ̀kan, lórí ohun-èlò tí ètò kọ́kọ́rọ́-fún-ìṣẹ́jú-aaya rẹ̀ ti gbóná ní àkókò ìparí ọjọ́.</li>
+<li><strong>Wíwúwo ẹ̀wọ̀n ìjẹ́rìí.</strong> Ìpèsè CA ìpele mẹ́rin tí a tún tẹ pẹ̀lú àmì-iwé ML-DSA ń dàgbà láti bí 6 KB sí bí 60 KB. Gbogbo ìfọwọ́wọ́ TLS sí ọ̀nà náà yóò san ìyẹn.</li>
+</ul>
+<p>Ọ̀nà ìbámu ni láti yan àwọn ìdènà wọ̀nyí lọ́kọ̀ọ̀kan — ìpamọ́ tí ó tóbi níhìn-ín, HSM yíyára níbẹ̀, ìfaradà ìpínyà nínú àwọn middlebox. Ìyẹn jẹ́ afárá oṣù mẹ́fà tí ó dúró. Kì í ṣe ìgbékalẹ̀.</p>
+<h2 id="ibamu-lodi-si-ifiropo-ipinnu-ti-o-so-eto-naa">Ìbámu Lòdì sí Ìfìrọ́pò: Ìpinnu Tí Ó Sọ Ètò Náà <a class="heading-anchor" href="#ibamu-lodi-si-ifiropo-ipinnu-ti-o-so-eto-naa" aria-label="Ìjápọ̀ sí Ìbámu Lòdì sí Ìfìrọ́pò: Ìpinnu Tí Ó Sọ Ètò Náà">#</a></h2>
+<p>Èrò òdodo ni pé ìbámu jẹ́ ètò ìṣíkiri tí kò ní pẹ́, ìfìrọ́pò sì ni ibi tí ó dúró. Ìpinnu ni èwo ni báńkì yóò ná lọ́wọ́ kọ́kọ́, àti bí fèrèsé ìbámu ṣe gùn tó kí ó tó di alábàápín títí.</p>
+<p>Ìbámu túmọ̀ sí:</p>
+<ul>
+<li>TLS àdàpọ̀ (ML-KEM + X25519) tí a parí ní àlà ọ̀nà tí ó wà.</li>
+<li>Ìjẹ́rìí àmì-méjì (RSA àkọ́kọ́, ML-DSA tí ó tẹ̀le) tí a tẹ́jáde láti CA abẹ́-iṣẹ́ tí ó ní agbára PQC.</li>
+<li>Ìpamọ́ MT tí ó tóbi àti ìlànà MTU tí ó le lórí VPN ìsanwó.</li>
+<li>Ìtúnse firmware HSM níbi tí àwọn olùtà bá fọwọ́ sí ohun PQC; ìfìrọ́pò HSM kíkún níbi tí wọn kò bá fọwọ́ sí.</li>
+</ul>
+<p>Iṣẹ́ yẹn ṣeé ṣe. Kì í yanjú ìṣòro tí ó wà ní abẹ́, èyí tí ó jẹ́ pé SWIFT MT àti ọ̀pọ̀ àkànṣe ISO 20022 ń kọ ìdìpọ̀ cryptography sínú fọ́mù iléèsé tí ó múra algorithm. Ìyípadà algorithm tí ó tẹ̀le — bẹ́ẹ̀ ni yóò sì wà, nígbà tí ML-KEM bá fi àìlera hàn tàbí tí ìlànà tuntun bá rọ́pò rẹ̀ — yóò ṣiṣẹ́ ìṣíkiri kan náà lórí ọ̀nà kan náà.</p>
+<p>Ìfìrọ́pò túmọ̀ sí gbígba pé ipele cryptography kì í ṣe ohun-ìní fọ́mù iléèsé. Ó jẹ́ ohun-ìní iṣẹ́ ìdìpọ̀ tí a lè yà tí fọ́mù iléèsé ń pè. Ní kókó:</p>
+<ul>
+<li>Àlà ààbò ìgbé n lọ sí mesh iṣẹ́ tàbí sidecar tí ó parí TLS àdàpọ̀ tí ó sì gbé iléèsé tí kò ní ẹnipọ̀n fún ọ̀nà náà pẹ̀lú àlà tí ó dúró.</li>
+<li>Àwọn àmì-iwé ipele-iléèsé ni iṣẹ́ ìfàmìsí pàtàkì kan ń ṣe tí àyàn algorithm rẹ̀ jẹ́ àyíká ìsètò, kì í ṣe ìgbàgbọ́ tí a ti kọ ní àkókò ìkọ́.</li>
+<li>A ń tẹ ìjẹ́rìí jáde láti CA kan tí algorithm àmì-iwé rẹ̀ tún lè yí padà.</li>
+<li>A ń gbé àwọn ìpín HSM ní àdúgbò gẹ́gẹ́ bí ìdí (ìgbé, ìfàmìsí, ìfìmọ́ kọ́kọ́rọ́) dípò gẹ́gẹ́ bí fọ́mù iléèsé.</li>
+</ul>
+<p>Àpẹẹrẹ ìfìrọ́pò ń là ìyípadà algorithm tí ó tẹ̀le já láìfọwọ́ kan ọ̀nà náà.</p>
+<h2 id="igbekale-iyara-crypto-ipele-kan-leyin-omiran">Ìgbékalẹ̀ Ìyára Crypto, Ìpele Kan Lẹ́yìn Òmíràn <a class="heading-anchor" href="#igbekale-iyara-crypto-ipele-kan-leyin-omiran" aria-label="Ìjápọ̀ sí Ìgbékalẹ̀ Ìyára Crypto, Ìpele Kan Lẹ́yìn Òmíràn">#</a></h2>
+<p>Àwọn ìpele ìgbékalẹ̀ tí ó ṣe pàtàkì fún ìṣíkiri PQC kì í ṣe àwọn ìpele iṣẹ́ bí &quot;ìsọfúnni, ìṣàkóso, ètò ọrọ̀-ajé&quot; tí ó bá ìtàn báńkì gbogbogbò mu. Àwọn ìpele tí ó ṣe pàtàkì jẹ́ ti cryptography.</p>
+<table>
+<thead>
+<tr>
+<th>Ìpele</th>
+<th>Ohun tí ó ṣe</th>
+<th>Ìbéèrè PQC</th>
+<th>Ìtọ́nisọ́nà ìgbékalẹ̀</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>HSM / ìṣàkóso kọ́kọ́rọ́</strong></td>
+<td>Ń ṣẹ̀dá, ń pa mọ́, ń ṣiṣẹ́ lórí ohun kọ́kọ́rọ́ ní abẹ́ àlọ́ ohun-èlò</td>
+<td>Ǹjẹ́ firmware HSM tí a fi sílẹ̀ fọwọ́ sí ML-KEM, ML-DSA, àti API ìfìmọ́ kọ́kọ́rọ́ àdàpọ̀? Kí ni iyàtọ̀ agbára HSM ìfàmìsí lòdì sí ECDSA lórí ohun-èlò kan náà?</td>
+<td>Kọ àkójọ ìpín HSM kọ̀ọ̀kan nípa àtìlẹ́yìn algorithm àti agbára-fún-ìṣẹ́jú-aaya. Pa ohunkóhun tí ó ti mọ́ RSA láìsí ọ̀nà firmware kúrò. Gbé àwọn ìpín PQC pàtàkì kalẹ̀ kí ìgbàlọ́pò iṣẹ́ tó dé.</td>
+</tr>
+<tr>
+<td><strong>PKI / ọ̀gá ìjẹ́rìí</strong></td>
+<td>Ń tẹ jáde, ń pa rẹ́, ń so ìgbẹ́kẹ̀lé pọ̀ kọjá ìjẹ́rìí X.509</td>
+<td>Ǹjẹ́ CA lè fi àmì-iwé pẹ̀lú ML-DSA lónìí? Ǹjẹ́ ìṣẹ́lẹ̀ wà tí a ti dán wò fún yíyí gbòǹgbò padà àti àtùntẹ̀jáde ẹ̀wọ̀n? Ǹjẹ́ a ti dá CRL àti olùdáhùn OCSP fún wíwúwo àmì-iwé ML-DSA?</td>
+<td>Mú ìkójọpọ̀ CA gẹ́gẹ́ bí ògiri tí ó gbé ẹrù. Fi abẹ́-iṣẹ́ tí ó ní agbára PQC sílẹ̀ ní báyìí. Sètò àkókò yíyí gbòǹgbò fún ìgbẹ́kẹ̀lé ìjẹ́rìí tí ó gùn jùlọ, kì í ṣe fún ìrọ̀rùn.</td>
+</tr>
+<tr>
+<td><strong>Ìgbé / nẹ́tíwọ́kì</strong></td>
+<td>Ń parí TLS, IPsec, àti MACsec láàrín àwọn ojú-òpó ìsanwó</td>
+<td>Ǹjẹ́ olùmúdọ́gba ẹrù, WAF, àti ọ̀nà middlebox ń gba àwọn ìfọwọ́wọ́ àdàpọ̀ tí ó kọjá MTU àkànṣe? Ǹjẹ́ a kọ́ àwọn ìwé ìjẹ́rìí ìtẹ̀síwájú-ìpàdé fún kọ́kọ́rọ́ PQC?</td>
+<td>Gbé ìparí TLS sí àlà ìyára crypto (sidecar tàbí mesh). Gbé ìlànà MTU lórí VPN ìsanwó. Dán ọ̀nà gbogbo wò pẹ̀lú ìpínyà tí a fi ìpinnu mú.</td>
+</tr>
+<tr>
+<td><strong>Àpèjúwe / iléèsé</strong></td>
+<td>Ń gbé SWIFT MT, ISO 20022 pacs / pain / camt àti àwọn ìdìpọ̀ cryptography wọn</td>
+<td>Ǹjẹ́ olùdánilẹ́kọ̀ọ́ iléèsé ọ̀nà ń gba àwọn ìdìpọ̀ tí ó ní ìwọ̀n ML-DSA? Ǹjẹ́ àwọn olùdánilẹ́kọ̀ọ́ ààrín mọ algorithm tàbí wọ́n ń gé lórí gígùn?</td>
+<td>Yà ìdìpọ̀ kúrò ní iléèsé. Fi àmì-iwé sí ní àlà iṣẹ́, kì í ṣe nínú olùdánilẹ́kọ̀ọ́ fọ́mù iléèsé. Mú àmì algorithm gẹ́gẹ́ bí ìsọfúnni, kì í ṣe gẹ́gẹ́ bí ṣéma.</td>
+</tr>
+<tr>
+<td><strong>Àyẹ̀wò / ẹ̀rí</strong></td>
+<td>Ń ṣe ẹ̀wọ̀n ìgbẹ́kẹ̀lé cryptography tí àwọn alábòójútó àti àwọn alábàákẹ́gbẹ́ gbọ́kàn lé</td>
+<td>Ǹjẹ́ àwọn àkọsílẹ̀ àmì-iwé ìtàn ṣì lè jẹ́ ìjẹ́rìí nígbà tí algorithm ìfàmìsí bá ti di àìlò? Ǹjẹ́ ètò àmì-iwé ìpamọ́ ìgbà gígùn wà?</td>
+<td>Fi àmì-iwé adákeji sí ìpamọ́ pẹ̀lú ohun tí ó dá lórí hash (SLH-DSA) fún ìdánilójú tí ó la ìṣubú algorithm kankan já. Mú ẹ̀wọ̀n àyẹ̀wò gẹ́gẹ́ bí ohun-èlò tí a ń ṣàkóso, kì í ṣe gẹ́gẹ́ bí ohun tí ìkọ́ ṣẹ̀dá.</td>
+</tr>
+</tbody>
+</table>
+<p>Ìbáwí ni láti mú àyàn algorithm kọ̀ọ̀kan jẹ́ àyíká ìsètò ní ìpele kọ̀ọ̀kan. Ilé-iṣẹ́ tí ó kọ RSA-2048 sínú ohun-èlò ní ìpele kankan nínú àwọn ìpele wọ̀nyẹn ń gba ìṣẹ̀lẹ̀ ìparí-ayé àdájọpọ̀ nígbà tí algorithm yẹn bá ṣubú.</p>
+<h2 id="ohun-ti-iyi-tumo-si-nipa-iru-banki">Ohun Tí Ìyí Túmọ̀ Sí Nípa Ìrú Báńkì <a class="heading-anchor" href="#ohun-ti-iyi-tumo-si-nipa-iru-banki" aria-label="Ìjápọ̀ sí Ohun Tí Ìyí Túmọ̀ Sí Nípa Ìrú Báńkì">#</a></h2>
+<p>Àkójọ ewu yàtọ̀ nípa ilé-iṣẹ́. Àwọn ìtọ́nisọ́nà yàtọ̀ síra wọn nítorí náà.</p>
+<h3 id="banki-agbaye">Báńkì Àgbáyé <a class="heading-anchor" href="#banki-agbaye" aria-label="Ìjápọ̀ sí Báńkì Àgbáyé">#</a></h3>
+<p>Báńkì àgbáyé ń ṣiṣẹ́ pẹ̀lú ọkọ̀ HSM tí ó tóbi jùlọ, ẹ̀wọ̀n ìjẹ́rìí tí ó gùn jùlọ, àti àwọn ọ̀nà nẹ́tíwọ́kì tí ó péré jùlọ láàrín àwọn alábàákẹ́gbẹ́. Ewu pàtàkì kì í ṣe àyàn algorithm — ó jẹ́ owó ìṣàkóso láti yí àwọn algorithm padà kọjá ọgọ́rọ̀ọ̀rún iṣẹ́ inú-ilé àti ọ̀pọ̀ àwọn alábàákẹ́gbẹ́ òde ní àkókò kan náà.</p>
+<p>Ìtọ́nisọ́nà ni láti ná CA tí ó ní agbára PQC, àlà ìgbé tí ó ní ìyára crypto, àti iṣẹ́ ìfàmìsí tí algorithm rẹ̀ jẹ́ àyàn-àyíká gẹ́gẹ́ bí iṣẹ́ 2026, kí a tó ṣe ìbámu sí ọ̀nà kankan. Ìbámu yóò di ìyípadà iṣẹ́ àdéédéé nínú ìlànà tí a mọ̀. Láìsí ìlànà, gbogbo ìbámu ọ̀nà yóò tún àwọn ìpinnu ìgbékalẹ̀ kan náà ṣe.</p>
+<h3 id="banki-agbegbe">Báńkì Agbègbè <a class="heading-anchor" href="#banki-agbegbe" aria-label="Ìjápọ̀ sí Báńkì Agbègbè">#</a></h3>
+<p>Báńkì agbègbè ní ipele algorithm tí ó kéré ṣùgbọ́n àwọn ọmọ ẹgbẹ́ olùmọ̀ tí ó kéré ní ìbáṣepọ̀. Ewu pàtàkì ni ìmúra báńkì sí olùtà HSM lórí àwọn algorithm tí olùtà kò ti fọwọ́ sí láti fọwọ́ sí.</p>
+<p>Ìtọ́nisọ́nà ni láti kọ àtìlẹ́yìn PQC — pàtó ML-KEM àti ML-DSA, pẹ̀lú ọ̀nà ìtúnse firmware tí a dán wò — sínú àdéhùn HSM kọ̀ọ̀kan láti 2026 síwájú. Báńkì láìsí ìpinnu yẹn ń gba ìfìrọ́pò ohun-èlò tí ó dandan lórí àkókò olùtà, kì í ṣe ti ara wọn.</p>
+<h3 id="fintech-ati-psp">Fintech àti PSP <a class="heading-anchor" href="#fintech-ati-psp" aria-label="Ìjápọ̀ sí Fintech àti PSP">#</a></h3>
+<p>Àwọn olùpèsè iṣẹ́ ìsanwó àti fintech sábà máa ń jókòó láàrín alábàákẹ́gbẹ́ báńkì àti ètò oníṣòwò tàbí lílo-tó-gbẹ̀yìn. Ewu cryptography wọn ni àlà API lẹ́gbẹ̀ẹ́ méjèèjì.</p>
+<p>Ìtọ́nisọ́nà ni láti tẹ àlà TLS àdàpọ̀ jáde — kíláàsíkì pẹ̀lú ML-KEM — lẹ́gbẹ̀ẹ́ tí ó dojú kọ báńkì gẹ́gẹ́ bí àdéédéé nínú ìjíròrò ìṣòwò 2026. Fintech tí ó dé pẹ̀lú àjọṣepọ̀ PQC tí a ti fihàn tẹ́lẹ̀ yóò ṣẹ́gun ìṣèjọpọ̀ àyípoke lórí fintech tí kò tíì bẹ̀rẹ̀.</p>
+<h3 id="oluse-owo-ile-ise">Olùṣe Owó Ile-iṣẹ́ <a class="heading-anchor" href="#oluse-owo-ile-ise" aria-label="Ìjápọ̀ sí Olùṣe Owó Ile-iṣẹ́">#</a></h3>
+<p>Olùṣe owó kì í ṣiṣẹ́ ìgbékalẹ̀ cryptography pẹ̀lú ọwọ́. Wọ́n ń lò ó — gbogbo API báńkì, gbogbo ìfàṣẹ́ faili ààbò, gbogbo ìjẹ́rìí àmì-iwé dá lórí PKI báńkì.</p>
+<p>Ìtọ́nisọ́nà ni láti fi ìbéèrè mẹ́ta kún RFP báńkì kọ̀ọ̀kan ní 2026: àwọn algorithm PQC wo ni báńkì ń lò lónìí nínú TLS tí ó dojú kọ alábàápín, kí ni ètò báńkì fún àwọn ìjẹ́rìí ìsanwó tí ML-DSA fi àmì-iwé sí, àti bí báńkì ṣe gbèrò láti dáàbò bo agbára ìjẹ́rìí ti àwọn àkọsílẹ̀ àmì-iwé ìtàn nígbà tí RSA bá di àìlò. Báńkì tí kò lè dáhùn ìbéèrè wọ̀nyẹn ń fi nǹkan kan hàn nípa ìmúratán ìmọ̀ ẹ̀rọ wọn.</p>
+<h2 id="ohun-ti-yoo-sele-tokan">Ohun Tí Yóò Ṣẹlẹ̀ Tókàn <a class="heading-anchor" href="#ohun-ti-yoo-sele-tokan" aria-label="Ìjápọ̀ sí Ohun Tí Yóò Ṣẹlẹ̀ Tókàn">#</a></h2>
+<p>Igbi PQC àkọ́kọ́ nínú ìsanwó kò ní jẹ́ rírí fún àwọn olùlò ìpalẹ̀. TLS àdàpọ̀ yóò hàn nínú ìfọwọ́wọ́, àwọn ẹ̀wọ̀n ìjẹ́rìí yóò dàgbà, ìdúró ìfàmìsí HSM yóò gòkè nípa millisecond díẹ̀, àwọn ọ̀nà sì yóò máa lọ síwájú. Ìyẹn ni ọ̀nà àṣeyọrí.</p>
+<p>Àwọn ìkùnà tí yóò hàn yóò jẹ́ ti ìbámu: ọ̀nà tí kò lè gba ìdìpọ̀ tí ML-DSA fi àmì-iwé sí láìsí gígé, CA tí ìpín CRL rẹ̀ ń kú sórí wíwúwo àmì-iwé tuntun, middlebox tí ó ń pín àwọn ìfọwọ́wọ́ àdàpọ̀ sí ClientHello tí a tún sètò. Àwọn ìkùnà yẹn yóò dé inú iṣẹ́ ní 2027.</p>
+<p>Ìpinnu ìgbékalẹ̀ ní 2026 ni bóyá láti ná ìgbékalẹ̀ ìfìrọ́pò tí ó mú ìbámu di àìlò, tàbí láti ná àkójọ àwọn àtúnṣe ọ̀nà-kọ̀ọ̀kan tí ó dà bí ẹni pé ó pe júwó lọ́kọ̀ọ̀kan tí ó sì ń pamọ́ pọ̀ sí ìṣíkiri gígùn, tí ó gbówó lórí. Báńkì tí ó yan ọ̀nà àkọ́kọ́ yóò ṣiṣẹ́ pẹ̀lú iṣẹ́ tí ó dákẹ́ kọjá ìṣíkiri. Báńkì tí ó yan èkejì yóò ná ìyókù ẹ̀wádún náà láti ṣàlàyé àwọn àyẹ̀wò ìṣẹ̀lẹ̀ fún àwọn alábòójútó.</p>
+<p>PQC kì í ṣe ìṣòro cryptography tí a wọ̀ gẹ́gẹ́ bí ìṣòro ìgbékalẹ̀. Ó jẹ́ ìṣòro ìgbékalẹ̀ tí ó ṣẹlẹ̀ pé cryptography bẹ̀rẹ̀.</p>
+<h2 id="awon-ibeere-ti-a-saba-beere">Àwọn Ìbéèrè Tí A Sábà Béèrè <a class="heading-anchor" href="#awon-ibeere-ti-a-saba-beere" aria-label="Ìjápọ̀ sí Àwọn Ìbéèrè Tí A Sábà Béèrè">#</a></h2>
+<p><strong>Ǹjẹ́ àkókò ìparí kan wà tí ó fi mú iṣẹ́ yìí ṣe?</strong></p>
+<p>Àwọn àkókò ìparí òfin tí ó le jẹ́ ti agbègbè. <a href="https://www.congress.gov/bill/117th-congress/house-bill/7535/text" title="H.R. 7535">Quantum Computing Cybersecurity Preparedness Act ⧉</a> ti Amẹ́ríkà ń so àwọn ètò ìjọba mọ́. <a href="https://media.defense.gov/2022/Sep/07/2003071834/-1/-1/0/CSA_CNSA_2.0_ALGORITHMS_.PDF" title="CNSA 2.0">Àkókò NSA CNSA 2.0 ⧉</a> ń lọ ìfojúsùn 2035 fún ètò ààbò orílẹ̀-èdè. <a href="https://www.bis.org/publ/work1208.htm" title="BIS Working Paper 1208">BIS Project Leap ⧉</a> àti ètò iṣẹ́ FSB ń fa àkókò yẹn síwájú fún ìgbékalẹ̀ ìsanwó ètò. HNDL túmọ̀ sí pé àkókò iṣẹ́ ti bẹ̀rẹ̀ kí àkókò orúkọ kankan tó dé.</p>
+<p><strong>Èétitiṣe tí ML-KEM fi jẹ́ ìfìmọ́ kọ́kọ́rọ́ tí a fọwọ́ sí kì í ṣe ohun yíyára?</strong></p>
+<p>ML-KEM (ìpilẹ̀ṣẹ̀ tí a fọwọ́ sí ti CRYSTALS-Kyber) ní àdàpọ̀ tí ó lágbára jùlọ ti ìwọ̀n ìpalọ̀ àti kọ́kọ́rọ́ kéré láàrín àwọn ohun lattice, pẹ̀lú àkànṣe tí ó ti dàgbà àti ìdíèlè ẹ̀gbẹ́ ìkànnì. NIST tẹ̀ ẹ́ jáde gẹ́gẹ́ bí <a href="https://csrc.nist.gov/pubs/fips/203/final" title="FIPS 203">FIPS 203 ⧉</a>. Ohun yíyára wà ṣùgbọ́n wọ́n ní títóbi gígùn tàbí ìgbẹ́kẹ̀lé alábàwọ́n lórí àyíká ààbò.</p>
+<p><strong>Èétitiṣe tí a kò fi lo SLH-DSA níbi gbogbo dípò ML-DSA?</strong></p>
+<p>SLH-DSA (ìpilẹ̀ṣẹ̀ tí a fọwọ́ sí ti SPHINCS+) dá lórí hash nítorí náà ó gbára lé ààbò iṣẹ́-hash nìkan, èyí tí ó jẹ́ ìgbàgbọ́ tí ó dúró jùlọ tí ó wà. Àwọn àmì-iwé rẹ̀ tóbi ní ìlọ́pò 5–20 ju ti ML-DSA. Ìyẹn jẹ́ ìtẹ́wọ́gbà fún ìpamọ́ àmì-iwé adákeji, ṣùgbọ́n kò ṣeé ṣiṣẹ́ fún ìfàmìsí ìṣòwò níbi tí títóbi ṣe pàtàkì fún iléèsé kọ̀ọ̀kan. Àpẹẹrẹ àkànṣe ni ML-DSA fún ìfàmìsí iṣẹ́ àti SLH-DSA fún ìdánilójú ìpamọ́.</p>
+<p><strong>Ǹjẹ́ báńkì lè kàn dúró títí tí àwọn ọ̀nà yóò fi tẹ̀ àwọn àpèjúwe PQC jáde?</strong></p>
+<p>Báńkì tí ó dúró ń gba fèrèsé ìṣíkiri tí ọ̀nà tẹ̀ jáde, èyí tí ó kéré ju àkókò ìyípadà inú-ilé báńkì lọ. Nígbà tí SWIFT, olùṣe RTGS àdúgbò, àti àwọn CCP tó yẹ kọ̀ọ̀kan bá tẹ àpèjúwe PQC wọn jáde, fèrèsé ìṣíkiri yóò jẹ́ oṣù méjìlá sí mẹ́rìnlélógún. Báńkì tí kò ti kọ́ CA, ìgbé, àti agbára HSM tẹ́lẹ̀ kò ní pàdé rẹ̀ láìsí àwọn ọ̀nà kúkúrú iṣẹ́.</p>
+<p><strong>Kí ni ohun kan tí ó ní agbára jùlọ tí a gbọ́dọ̀ ná kọ́kọ́?</strong></p>
+<p>Ọ̀gá ìjẹ́rìí abẹ́-iṣẹ́ tí ó ní agbára PQC, tí a so pọ̀ mọ́ PKI tí ó wà, tí ó lè tẹ àwọn ìjẹ́rìí algorithm méjì (RSA pẹ̀lú ML-DSA) jáde láìsí dídì ìgbẹ́kẹ̀lé iṣẹ́. Ìyẹn ń fi ohun yíyíká kalẹ̀. Gbogbo nǹkan míràn — àwọn ìtúnse ìgbé, ètò ìpín HSM, àwọn ìyípadà ìdìpọ̀-iléèsé — ni a lè ṣètò ní àyíká rẹ̀.</p>
+<h2 id="itokasi">Ìtọ́kasí <a class="heading-anchor" href="#itokasi" aria-label="Ìjápọ̀ sí Ìtọ́kasí">#</a></h2>
+<ul>
+<li>Congress.gov, (2022). <a href="https://www.congress.gov/bill/117th-congress/house-bill/7535/text" title="Quantum Computing Cybersecurity Preparedness Act">H.R. 7535 — Quantum Computing Cybersecurity Preparedness Act ⧉</a>.</li>
+<li>NIST, (2024). <a href="https://csrc.nist.gov/pubs/fips/203/final" title="FIPS 203">FIPS 203 — Module-Lattice-Based Key-Encapsulation Mechanism Standard ⧉</a>.</li>
+<li>NIST, (2024). <a href="https://csrc.nist.gov/pubs/fips/204/final" title="FIPS 204">FIPS 204 — Module-Lattice-Based Digital Signature Standard ⧉</a>.</li>
+<li>NIST, (2024). <a href="https://csrc.nist.gov/pubs/fips/205/final" title="FIPS 205">FIPS 205 — Stateless Hash-Based Digital Signature Standard ⧉</a>.</li>
+<li>NSA, (2022). <a href="https://media.defense.gov/2022/Sep/07/2003071834/-1/-1/0/CSA_CNSA_2.0_ALGORITHMS_.PDF" title="CNSA 2.0">Commercial National Security Algorithm Suite 2.0 ⧉</a>.</li>
+<li>BIS, (2024). <a href="https://www.bis.org/publ/work1208.htm" title="BIS Working Paper 1208">Working Paper No. 1208 — Project Leap: Quantum-proofing the financial system ⧉</a>.</li>
+<li>Bank of England (PRA), (2024). <a href="https://www.bankofengland.co.uk/prudential-regulation/publication/2024/march/operational-resilience-impact-tolerances-for-important-business-services" title="PRA SS1/21">SS1/21 — Operational resilience: Impact tolerances for important business services ⧉</a>.</li>
+</ul>
+<!-- enrich-start -->
+
+<p class="post-reviewed">Àyẹ̀wò tó kẹ́yìn <time datetime="2026-05-31">2026-05-31</time>.</p>
+
+<!-- enrich-end -->
+</content>
+</invoke>
+<aside class="author-card" aria-label="Nípa òǹkọ̀wé"><img alt="Àwòrán Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=85" width="64" height="64" loading="lazy" decoding="async"  fetchpriority="high"><span class="author-card-body"><strong class="author-card-name"><a href="/yo/nipa-wa/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Onímọ̀ ẹ̀rọ báńkì àgbà; mò ń kọ nípa AI tó wúlò, ìṣírò ISO 20022, kírípító lẹ́yìn-kuántọ́mù fún iṣẹ́ ìnáwó àti àtúnṣe ètò ìsanwó ńláńlá.</span><span class="author-credentials">Ìrírí ọdún 20+ ní HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/yo/nipa-wa/index.html">Àkọsílẹ̀ kíkún</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">Àyẹ̀wò àkọ́kọ́ <time datetime="2026-06-07">2026-06-07</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Ìwé tó jọmọ́</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/yo/2026-05-18-quantum-cryptography-standards-developments-2026" class="related-media" aria-label="Àtúnṣe Cryptography Quantum ní 2026: Àwọn Ìlànà PQC, Ìdánilójú QKD, àti Iṣẹ́ Ìṣípò tí Àwọn Báńkì Kò Lè Sún Síwájú" tabindex="-1"><img alt="Quantum-safe cryptography migration map for 2026 showing NIST PQC standards, hybrid protocol work, QKD assurance, crypto-agility, and bank data-risk tiers" src="https://cloudcdn.pro/api/transform?url=/stocks/images/alex-shuper-YYZnrK8NrSw-unsplash.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="atunse-cryptography-quantum-ni-2026-awon-ilana-pqc-idaniloju-qkd-ati-ise-isipo-t"><a href="https://sebastienrousseau.com/yo/2026-05-18-quantum-cryptography-standards-developments-2026">Àtúnṣe Cryptography Quantum ní 2026: Àwọn Ìlànà PQC, Ìdánilójú QKD, àti Iṣẹ́ Ìṣípò tí Àwọn Báńkì Kò Lè Sún Síwájú</a> <a class="heading-anchor" href="#atunse-cryptography-quantum-ni-2026-awon-ilana-pqc-idaniloju-qkd-ati-ise-isipo-t" aria-label="Ìjápọ̀ sí Àtúnṣe Cryptography Quantum ní 2026: Àwọn Ìlànà PQC, Ìdánilójú QKD, àti Iṣẹ́ Ìṣípò tí Àwọn Báńkì Kò Lè Sún Síwájú">#</a></h3><p><time datetime="2026-05-18">2026-05-18</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/yo/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance" class="related-media" aria-label="Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for Corporate Finance" tabindex="-1"><img alt="Post-quantum cryptography migration roadmap diagram — corporate banking infrastructure transitioning from RSA to ML-KEM and ML-DSA" src="https://cloudcdn.pro/api/transform?url=/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="securing-the-ledger-a-board-level-guide-to-post-quantum-migration-for-corporate-"><a href="https://sebastienrousseau.com/yo/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance">Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for Corporate Finance</a> <a class="heading-anchor" href="#securing-the-ledger-a-board-level-guide-to-post-quantum-migration-for-corporate-" aria-label="Ìjápọ̀ sí Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for Corporate Finance">#</a></h3><p><time datetime="2026-05-14">2026-05-14</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/yo/2026-05-16-best-cloud-infrastructure-architecture-2026" class="related-media" aria-label="Ìkọ́lé Ìpìlẹ̀ Ìkùukùu Tó Dára Jùlọ ní 2026: Ìlànà AI-Native, Multi-Cloud, Olùmọ̀-Quantum fún Àwọn Iṣẹ́-Ìnáwó" tabindex="-1"><img alt="Six-pillar cloud architecture diagram for 2026 — AI-native, multi-cloud, serverless, edge, DevSecOps, and sustainable design, with CloudCDN edge research overlay" src="https://cloudcdn.pro/api/transform?url=/stock/images/cloud-architecture-2026-banner.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="ikole-ipile-ikuukuu-to-dara-julo-ni-2026-ilana-ai-native-multi-cloud-olumo-quant"><a href="https://sebastienrousseau.com/yo/2026-05-16-best-cloud-infrastructure-architecture-2026">Ìkọ́lé Ìpìlẹ̀ Ìkùukùu Tó Dára Jùlọ ní 2026: Ìlànà AI-Native, Multi-Cloud, Olùmọ̀-Quantum fún Àwọn Iṣẹ́-Ìnáwó</a> <a class="heading-anchor" href="#ikole-ipile-ikuukuu-to-dara-julo-ni-2026-ilana-ai-native-multi-cloud-olumo-quant" aria-label="Ìjápọ̀ sí Ìkọ́lé Ìpìlẹ̀ Ìkùukùu Tó Dára Jùlọ ní 2026: Ìlànà AI-Native, Multi-Cloud, Olùmọ̀-Quantum fún Àwọn Iṣẹ́-Ìnáwó">#</a></h3><p><time datetime="2026-05-16">2026-05-16</time></p></footer></article>
+</div>
+</aside><aside class="article-sources" aria-labelledby="sources-heading"><h2 id="sources-heading" class="article-sources-heading">Orisun & àyọ̀kà</h2><ol class="article-sources-list"><li><a href="https://www.bis.org/publ/work1208.htm" rel="external noopener nofollow"><span class="source-host">www.bis.org</span><span class="source-path">/publ/work1208.htm</span></a></li><li><a href="https://csrc.nist.gov/pubs/fips/203/final" rel="external noopener nofollow"><span class="source-host">csrc.nist.gov</span><span class="source-path">/pubs/fips/203/final</span></a></li><li><a href="https://csrc.nist.gov/pubs/fips/204/final" rel="external noopener nofollow"><span class="source-host">csrc.nist.gov</span><span class="source-path">/pubs/fips/204/final</span></a></li><li><a href="https://csrc.nist.gov/pubs/fips/205/final" rel="external noopener nofollow"><span class="source-host">csrc.nist.gov</span><span class="source-path">/pubs/fips/205/final</span></a></li></ol></aside><nav class="post-pagination" aria-label="Ìpín àkọlé"><a class="post-pagination-prev" href="/yo/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/"><span class="post-pagination-label">Tẹ́lẹ̀</span><span class="post-pagination-title">Wholesale Digital Markets in the UK: Tokenised Gilts, Settlement, and the New Champion Role</span></a><a class="post-pagination-next" href="/yo/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/"><span class="post-pagination-label">Tókàn</span><span class="post-pagination-title">The Multi-Rail Bank in 2026: Cards, A2A, Stablecoins, RTP, FedNow, and Open Banking in One Strategy</span></a></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/yo/nipa-wa/index.html">About</a></li>
+              <li><a href="/yo/kan-si-wa/index.html">Contact</a></li>
+              <li><a href="/yo/static-site-generator-lo-ti-se/index.html">Made with Static Site Generator</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Àkọsílẹ̀</h2>
+            <ul>
+              <li><a href="/yo/awon-akole/index.html">Articles</a></li>
+              <li><a href="/yo/awon-iwe/index.html">Papers</a></li>
+              <li><a href="/yo/awon-ami/index.html">Tags</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Iṣẹ́</h2>
+            <ul>
+              <li><a href="/yo/awon-ise/index.html">Projects</a></li>
+              <li><a href="/yo/akojopo-orin/index.html">Playlists</a></li>
+              <li><a href="/yo/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Kàn sí</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="/contact/" method="get" aria-label="Ìforúkọsílẹ̀ ìwé ìròyìn">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — àwọn àkíyèsí ìwádìí lórí ìsanwó, AI àti kírípító lẹ́yìn-kuántọ́mù. Kò sí spam.</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="iwo@banki.com.ng" />
+            <input type="hidden" name="subject" value="newsletter" />
+            <input type="hidden" name="message" value="Please subscribe me to the Banking On Quantum newsletter." />
+            <button type="submit">Forúkọsílẹ̀</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved.</span>
+          <div class="social" aria-label="Àwọn ọ̀nà àjọṣepọ̀">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau lórí Twitter / X"><img src="https://cloudcdn.pro/common/images/buttons/x-black.svg" alt="Sebastien Rousseau lórí Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau lórí LinkedIn"><img src="https://cloudcdn.pro/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau lórí LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau lórí Medium"><img src="https://cloudcdn.pro/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau lórí Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau lórí YouTube"><img src="https://cloudcdn.pro/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau lórí YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/yo/ile-wiwole/index.html">Accessibility</a> ·
+            <a href="/yo/aabo-ikoko/index.html">Privacy</a> ·
+            <a href="/yo/awon-ofin/index.html">Terms</a> ·
+            <a href="https://www.thegreenwebfoundation.org/green-web-check/?url=sebastienrousseau.com" target="_blank" rel="noopener noreferrer" title="Hosted on 100% renewable energy (Cloudflare) — estimate via Sustainable Web Design v4 model">Carbon: ~0.04 g/visit · green-hosted</a> ·
+            <a href="https://github.com/sebastienrousseau/sebastienrousseau.github.io/blob/main/project-docs/sigstore.md" target="_blank" rel="noopener noreferrer" title="Every dated article is signed with Sigstore — verify the bytes match what was published">Verify signatures</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","identifier":{"@type":"PropertyValue","propertyID":"ORCID","value":"0009-0005-1434-284X","url":"https://orcid.org/0009-0005-1434-284X"},"worksFor":{"@type":"Organization","@id":"https://www.hsbc.com/#organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal","url":"https://www.paypal.com/"},{"@type":"Organization","name":"Barclays","url":"https://www.barclays.com/"},{"@type":"Organization","name":"Shazam Entertainment","url":"https://www.shazam.com/"},{"@type":"Organization","name":"AKQA","url":"https://www.akqa.com/"},{"@type":"Organization","name":"Virgin Group","url":"https://www.virgin.com/"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"hasCredential":[{"@type":"EducationalOccupationalCredential","credentialCategory":"professional experience","name":"20+ years across Tier-1 banks and global payments infrastructure","recognizedBy":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"}},{"@type":"EducationalOccupationalCredential","credentialCategory":"domain expertise","name":"ISO 20022 migration and wholesale payments architecture","recognizedBy":{"@type":"Organization","name":"SWIFT","url":"https://www.swift.com/"}},{"@type":"EducationalOccupationalCredential","credentialCategory":"domain expertise","name":"Post-Quantum Cryptography for financial services","recognizedBy":{"@type":"Organization","name":"NIST Post-Quantum Cryptography Project","url":"https://csrc.nist.gov/projects/post-quantum-cryptography"}}],"knowsAbout":[{"@type":"DefinedTerm","name":"Post-Quantum Cryptography","sameAs":"https://en.wikipedia.org/wiki/Post-quantum_cryptography"},{"@type":"DefinedTerm","name":"ML-KEM (FIPS 203)","sameAs":"https://csrc.nist.gov/pubs/fips/203/final"},{"@type":"DefinedTerm","name":"ML-DSA (FIPS 204)","sameAs":"https://csrc.nist.gov/pubs/fips/204/final"},{"@type":"DefinedTerm","name":"ISO 20022","sameAs":"https://en.wikipedia.org/wiki/ISO_20022"},{"@type":"DefinedTerm","name":"SWIFT gpi","sameAs":"https://www.swift.com/our-solutions/swift-gpi"},{"@type":"DefinedTerm","name":"SEPA Instant Payments","sameAs":"https://www.ecb.europa.eu/paym/integration/retail/instant_payments/html/index.en.html"},{"@type":"DefinedTerm","name":"FedNow Service","sameAs":"https://www.federalreserve.gov/paymentsystems/fednow_about.htm"},{"@type":"DefinedTerm","name":"Real-Time Payments (RTP)","sameAs":"https://www.theclearinghouse.org/payment-systems/rtp"},{"@type":"DefinedTerm","name":"Cross-border payments","sameAs":"https://en.wikipedia.org/wiki/Cross-border_payments"},{"@type":"DefinedTerm","name":"Wholesale banking","sameAs":"https://en.wikipedia.org/wiki/Wholesale_banking"},{"@type":"DefinedTerm","name":"Applied artificial intelligence in banking","sameAs":"https://en.wikipedia.org/wiki/Applications_of_artificial_intelligence"},{"@type":"DefinedTerm","name":"Generative artificial intelligence","sameAs":"https://en.wikipedia.org/wiki/Generative_artificial_intelligence"}],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://orcid.org/0009-0005-1434-284X","https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":["Organization","Brand"],"@id":"https://sebastienrousseau.com/#organization","name":"Sebastien Rousseau","alternateName":"Banking on Quantum","url":"https://sebastienrousseau.com/","logo":{"@type":"ImageObject","@id":"https://sebastienrousseau.com/#logo","url":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","width":"512","height":"512","caption":"Sebastien Rousseau"},"founder":{"@id":"https://sebastienrousseau.com/#person"},"editorialPolicy":"https://sebastienrousseau.com/editorial/","correctionsPolicy":"https://sebastienrousseau.com/editorial/#corrections","ethicsPolicy":"https://sebastienrousseau.com/editorial/","diversityPolicy":"https://sebastienrousseau.com/editorial/","sameAs":["https://github.com/sebastienrousseau","https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#organization"},"author":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"yo"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"yo"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":2891,"about":{"@type":"Thing","name":"ISO 20022","sameAs":["https://www.iso20022.org/","https://www.wikidata.org/wiki/Q15727611","https://sebastienrousseau.com/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html"]},"mentions":[{"@type":"Thing","name":"Quantum computing","sameAs":["https://en.wikipedia.org/wiki/Quantum_computing","https://www.wikidata.org/wiki/Q484641"]}],"headline":"Ìgbékalẹ̀ Ìsanwó Lẹyin-Quantum: Ìdí Tí Báńkì Fi Lè Fìrọ́pò Dípò Ìbámu Ọ̀nà Àkànṣe","description":"Cryptography lẹyin-quantum fi àyàn méjì lélẹ̀ fún ọ̀nà ìsanwó: ìbámu RSA/ECC nínú ìdìpọ̀ SWIFT MT àti ISO 20022 tí kò bá ML-KEM àti ML-DSA mu, tàbí ìfìrọ́pò pẹ̀lú ìgbékalẹ̀ ìyára crypto. Àwọn ayàwòrán gbọ́dọ̀ pinnu kí HNDL tó di àdánù iṣẹ́.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp","width":"100vw","height":"100vh","caption":"Ohun-èlò kọ́kọ́rọ́ cryptography tó ń tẹ̀lẹ̀ sínú omi tó jinlẹ̀ aláwọ̀ búlúù — àpẹẹrẹ kórè-báyìí-fọkàn-báyẹn ti àwọn iléèsé ìsanwó tí àwọn ìdìpọ̀ RSA àti ECC kò ní lè la kọ̀ǹpútà quantum tó bámu pẹ̀lú ìpinnu cryptography já"},"url":"https://sebastienrousseau.com/yo/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/","datePublished":"2026-05-31T06:06:06+00:00","dateModified":"2026-05-31","inLanguage":"yo","keywords":"cryptography lẹyin-quantum, ìsanwó PQC, ìyára crypto, kórè-báyìí-fọkàn-báyẹn, HNDL, ìlànà PQC NIST, ML-KEM, ML-DSA, FIPS 203, FIPS 204, ìṣíkiri ọ̀nà ìsanwó, ISO 20022 PQC, ìfìrọ́pò SWIFT MT, HSM, ìṣubú PKI, ìduróṣinṣin iṣẹ, Quantum Computing Cybersecurity Preparedness Act","articleSection":"Technology","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/yo/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"yo"},"citation":[{"@type":"CreativeWork","url":"https://www.bis.org/publ/work1208.htm"},{"@type":"CreativeWork","url":"https://csrc.nist.gov/pubs/fips/203/final"},{"@type":"CreativeWork","url":"https://csrc.nist.gov/pubs/fips/204/final"},{"@type":"CreativeWork","url":"https://csrc.nist.gov/pubs/fips/205/final"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/yo/"},{"@type":"ListItem","position":3,"name":"Ìgbékalẹ̀ Ìsanwó Lẹyin-Quantum: Ìdí Tí Báńkì Fi Lè Fìrọ́pò Dípò Ìbámu Ọ̀nà Àkànṣe","item":"https://sebastienrousseau.com/yo/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/"}]}]}</script>
+<script src="/main.c9d8dc8d.js" defer integrity="sha256-G3RtagQVu1xMUTaa18I4L7J+vKPyjk2ZQG182kd2kow= sha256-NzL6b2FQD17U0Taqx1C1kOArNHU82qw6DUW7wiG7Bp0=" crossorigin="anonymous"></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="Wá">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>Wá</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="Wá">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="Wá nínú àwọn ìwé..." autocomplete="off" aria-label="Wá"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> tì</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> ríranlọ́wọ́</span><span><kbd>Enter</kbd> ṣí</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" integrity="sha256-Y0txeCfdk+GUctTYMAxMbFCB2qs1cPm8JSIX3WRS9cs= sha256-5Ca5zk/7tsavsCDhg6M1m4feBn+L4YnJ7iavKawynII=" crossorigin="anonymous"></script>
+</div>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Ìgbékalẹ̀ Ìsanwó Lẹyin-Quantum: Ìdí Tí Báńkì Fi Lè Fìrọ́pò Dípò Ìbámu Ọ̀nà Àkànṣe","url":"https://sebastienrousseau.com/yo/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/","inLanguage":"yo-NG","isAccessibleForFree":true,"author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#organization"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/yo/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/"},"keywords":"cryptography lẹyin-quantum, ìsanwó PQC, ìyára crypto, kórè-báyìí-fọkàn-báyẹn, HNDL, ìlànà PQC NIST, ML-KEM, ML-DSA, FIPS 203, FIPS 204, ìṣíkiri ọ̀nà ìsanwó, ISO 20022 PQC, ìfìrọ́pò SWIFT MT, HSM, ìṣubú PKI, ìduróṣinṣin iṣẹ, Quantum Computing Cybersecurity Preparedness Act","proficiencyLevel":"Expert","dependencies":["ISO 20022","Post-Quantum Cryptography","NIST","NIST FIPS 203"]}</script></body>
+</html>

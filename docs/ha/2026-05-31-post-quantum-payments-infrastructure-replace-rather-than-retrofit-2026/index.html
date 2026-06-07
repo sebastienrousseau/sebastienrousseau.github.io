@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="ha-NG">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Sun, 31 May 2026 06:06:06 +0000" id="date" />
+    <meta itemprop="dateModified" content="Sun, 31 May 2026 06:06:06 +0000" id="last-modified" />
+    <title>Kayan Biya Bayan Quantum: Me Ya Sa Bankuna Za Su Iya Maye Gurbin Tsofaffin Hanyoyi Maimakon Daidaitawa — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="Cryptography bayan quantum tana tilasta zaɓi biyu kan hanyoyin biya: daidaita RSA/ECC cikin SWIFT MT da ISO 20022 da ba a tsara wa ML-KEM da ML-DSA ba, ko maye gurbi da kayan saurin crypto. Masu zane su yanke kafin HNDL ya zama asarar aiki.">
+<meta name="keywords" content="cryptography bayan quantum, biyan PQC, saurin crypto, tara-yanzu-warware-baya, HNDL, ƙa&#x27;idodin bayan quantum na NIST, ML-KEM, ML-DSA, FIPS 203, FIPS 204, ƙaurar hanyar biya, ISO 20022 PQC, maye gurbin SWIFT MT, HSM, faɗuwar PKI, juriya na aiki, Quantum Computing Cybersecurity Preparedness Act">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="PQC Payments 2026">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-ZXoUE6t5H1AbuGTgn13nGbLUyzKVAqZ9VugXGEHyZHs=' 'sha256-aEQ2EF0aUBJjc9oc7Q7ieC4K00LCMTcLaRKli/I7GQw=' 'sha256-g4fDcLEIVZoTqSVAIKfb7jstodvErJ1WbrUSO3Q8pY0=' 'sha256-m1qHWV3ElBhH935ayNssfWxRuQM/WKDyY2EoXFN9oDw=' 'self' 'inline-speculation-rules' https://cdn.jsdelivr.net https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' https://cloudcdn.pro https://www.google.com https://open.spotify.com;
+        img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/ha/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/newsreader-latin.woff2" crossorigin />
+    <link rel="stylesheet" href="/fonts/fonts.css" />
+    <!-- Preload the LCP hero portrait so it doesn't compete with the
+         render-blocking JS bundle on throttled mobile connections.
+         Lighthouse-simulated Slow-4G has been pinning LCP at ~5.6s; the
+         observed (real-network) LCP is 165 ms. This hint pulls the
+         synthetic LCP in line with the observed value. -->
+    <link rel="preload" as="image" href="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=1200&format=webp&q=85" fetchpriority="high">
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script>(function(){try{var saved=localStorage.getItem("theme");var prefersDark=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;var theme=saved||(prefersDark?"dark":"light");document.documentElement.setAttribute("data-theme",theme);}catch(e){}})();</script>
+
+    <link rel="stylesheet" href="/_csp/4724896d11ec6663.css" integrity="sha256-SFQ1AngSMlx94d5FmN1lWSKPs5RL6Y8BQf0nIEBLd7g= sha256-6BJkWGvqh3blXQksn+ynhkpoqcrJzzWhSKVuLVBJY4s=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Feed na Atom" href="/ha/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="Kayan Biya Bayan Quantum: Me Ya Sa Bankuna Za Su Iya Maye Gurbin Tsofaffin Hanyoyi Maimakon Daidaitawa — Sebastien Rousseau">
+<meta property="og:description" content="Cryptography bayan quantum tana tilasta zaɓi biyu kan hanyoyin biya: daidaita RSA/ECC cikin SWIFT MT da ISO 20022 da ba a tsara wa ML-KEM da ML-DSA ba, ko maye gurbi da kayan saurin crypto. Masu zane su yanke kafin HNDL ya zama asarar aiki.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/ha/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/">
+<meta property="og:image" content="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="ha_NG">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Kayan Biya Bayan Quantum: Me Ya Sa Bankuna Za Su Iya Maye Gurbin Tsofaffin Hanyoyi Maimakon Daidaitawa — Sebastien Rousseau">
+<meta name="twitter:description" content="Cryptography bayan quantum tana tilasta zaɓi biyu kan hanyoyin biya: daidaita RSA/ECC cikin SWIFT MT da ISO 20022 da ba a tsara wa ML-KEM da ML-DSA ba, ko maye gurbi da kayan saurin crypto. Masu zane su yanke kafin HNDL ya zama asarar aiki.">
+<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp">
+<link rel="canonical" href="https://sebastienrousseau.com/ha/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2026-05-31-post-quantique-paiements-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="bn" href="https://sebastienrousseau.com/bn/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="cs" href="https://sebastienrousseau.com/cs/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2026-05-31-post-quantum-zahlungsverkehr-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2026-05-31-post-quantum-pagos-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="fil" href="https://sebastienrousseau.com/fil/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="ha" href="https://sebastienrousseau.com/ha/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="he" href="https://sebastienrousseau.com/he/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="hi" href="https://sebastienrousseau.com/hi/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="id" href="https://sebastienrousseau.com/id/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/2026-05-31-post-quantum-pagamenti-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="nl" href="https://sebastienrousseau.com/nl/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="pl" href="https://sebastienrousseau.com/pl/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/2026-05-31-post-quantum-pagamentos-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="ro" href="https://sebastienrousseau.com/ro/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="sv" href="https://sebastienrousseau.com/sv/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="th" href="https://sebastienrousseau.com/th/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="tr" href="https://sebastienrousseau.com/tr/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="uk" href="https://sebastienrousseau.com/uk/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="vi" href="https://sebastienrousseau.com/vi/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="yo" href="https://sebastienrousseau.com/yo/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" integrity="sha256-tV/7vAgYDUuBQbSGEPjXL/JC0sD7QpSxXCGKT4ALhh8= sha256-dvm1KF9mEWIapL8BE0nyFlHaKSf6TsjZZoQcJeRPraI=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">Tsallaka zuwa babban abun ciki</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="Maɓallin kewayawa" />
+      <div class="wrap">
+        <a class="ap-brand" href="/ha/index.html" aria-label="Sebastien Rousseau gida">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="Babban kewayawa">
+          <ul class="ap-menu">
+            <li><a href="/ha/game-da-mu/index.html">About</a></li>
+            <li><a href="/ha/labarai/index.html" aria-current="page" class="active">Articles</a></li>
+            <li><a href="/ha/takardun-bincike/index.html">Papers</a></li>
+            <li><a href="/ha/batutuwa/index.html">Batutuwa</a></li>
+            <li><a href="/ha/ayyukan/index.html">Projects</a></li>
+            <li><a href="/ha/jerin-waka/index.html">Playlists</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="Kunna jigon duhu" aria-pressed="false" title="Canza jigo">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="Bincika (Cmd ko Ctrl + K)" title="Bincika (⌘K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="Harshe">
+            <button type="button" class="ap-lang-toggle" aria-label="HA, Canza harshe" aria-expanded="false" aria-haspopup="menu" title="Canza harshe">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">HA</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/2026-05-31-post-quantique-paiements-infrastructure-replace-rather-than-retrofit-2026/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <a class="ap-lang-item" href="/bn/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
+                <a class="ap-lang-item" href="/cs/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
+                <a class="ap-lang-item" href="/de/2026-05-31-post-quantum-zahlungsverkehr-infrastructure-replace-rather-than-retrofit-2026/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/2026-05-31-post-quantum-pagos-infrastructure-replace-rather-than-retrofit-2026/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <a class="ap-lang-item" href="/fil/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
+                <a class="ap-lang-item" href="/ha/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
+                <a class="ap-lang-item" href="/he/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
+                <a class="ap-lang-item" href="/hi/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <a class="ap-lang-item" href="/id/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
+                <a class="ap-lang-item" href="/it/2026-05-31-post-quantum-pagamenti-infrastructure-replace-rather-than-retrofit-2026/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <a class="ap-lang-item" href="/pl/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
+                <a class="ap-lang-item" href="/pt-br/2026-05-31-post-quantum-pagamentos-infrastructure-replace-rather-than-retrofit-2026/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <a class="ap-lang-item" href="/ro/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
+                <a class="ap-lang-item" href="/ru/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <a class="ap-lang-item" href="/sv/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
+                <a class="ap-lang-item" href="/th/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
+                <a class="ap-lang-item" href="/tr/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
+                <a class="ap-lang-item" href="/uk/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="uk" role="menuitem">🇺🇦 Українська</a>
+                <a class="ap-lang-item" href="/vi/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
+                <a class="ap-lang-item" href="/yo/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
+                <a class="ap-lang-item" href="/zh-hans/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/ha/tuntube-mu/index.html" aria-label="Tuntube mu">Tuntube mu ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="Maɓallin kewayawa">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>Kayan Biya Bayan Quantum: Me Ya Sa Bankuna Za Su Iya Maye Gurbin Tsofaffin Hanyoyi Maimakon Daidaitawa</h1>
+      <p class="sub">ML-KEM da ML-DSA ba sa shiga cikin sauƙi cikin hanyoyin da ke ɗauke da SWIFT MT da ISO 20022. Amsar injiniya ta gaskiya ita ce daidaitawa shiri ne mai sarrafawa na ƙaura mai ɗan gajeren rai, kuma maye gurbi ne kawai inda za a daidaita.</p>
+    <nav class="article-tags" aria-label="Batutuwa"><a href="/tags/index.html#h3-cryptography-bayan-quantum" class="article-tag" rel="tag">cryptography bayan quantum</a><a href="/tags/index.html#h3-biyan-pqc" class="article-tag" rel="tag">biyan PQC</a><a href="/tags/index.html#h3-saurin-crypto" class="article-tag" rel="tag">saurin crypto</a><a href="/tags/index.html#h3-tara-yanzu-warware-baya" class="article-tag" rel="tag">tara-yanzu-warware-baya</a><a href="/tags/index.html#h3-hndl" class="article-tag" rel="tag">HNDL</a><a href="/tags/index.html#h3-a-idodin-bayan-quantum-na-nist" class="article-tag" rel="tag">ƙa'idodin bayan quantum na NIST</a><a href="/tags/index.html#h3-ml-kem" class="article-tag" rel="tag">ML-KEM</a><a href="/tags/index.html#h3-ml-dsa" class="article-tag" rel="tag">ML-DSA</a><a href="/tags/index.html#h3-fips-203" class="article-tag" rel="tag">FIPS 203</a><a href="/tags/index.html#h3-fips-204" class="article-tag" rel="tag">FIPS 204</a><a href="/tags/index.html#h3-aurar-hanyar-biya" class="article-tag" rel="tag">ƙaurar hanyar biya</a><a href="/tags/index.html#h3-iso-20022-pqc" class="article-tag" rel="tag">ISO 20022 PQC</a><a href="/tags/index.html#h3-maye-gurbin-swift-mt" class="article-tag" rel="tag">maye gurbin SWIFT MT</a><a href="/tags/index.html#h3-hsm" class="article-tag" rel="tag">HSM</a><a href="/tags/index.html#h3-fauwar-pki" class="article-tag" rel="tag">faɗuwar PKI</a><a href="/tags/index.html#h3-juriya-na-aiki" class="article-tag" rel="tag">juriya na aiki</a><a href="/tags/index.html#h3-quantum-computing-cybersecurity-preparedness-act" class="article-tag" rel="tag">Quantum Computing Cybersecurity Preparedness Act</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2026-05-31T06:06:06+00:00" class="meta-pub">An buga 31 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Lokacin karatun da aka kiyasta">14 minti karatu</span></div></section><figure class="article-banner"><img src="https://cloudcdn.pro/api/transform?url=/stocks/images/lan-pham-4qG2qqXi3tY.webp&w=1600&format=webp&q=85" alt="Banner for: Kayan Biya Bayan Quantum: Me Ya Sa Bankuna Za Su Iya Maye Gurbin Tsofaffin Hanyoyi Maimakon Daidaitawa" width="1200" height="675" fetchpriority="high" decoding="async" /></figure>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>Abubuwan da ke ciki</h2><ol><li><a href="#tara-yanzu-warware-baya-tsarin-barazana-da-ke-cire-damar-jiran">Tara Yanzu, Warware Baya: Tsarin Barazana da ke Cire Damar Jiran</a></li><li><a href="#matsalar-girma-ita-ce-matsalar-injiniya">Matsalar Girma Ita Ce Matsalar Injiniya</a></li><li><a href="#daidaitawa-kan-maye-gurbi-yanke-shawara-da-ke-bayyana-shirin">Daidaitawa kan Maye Gurbi: Yanke Shawara da ke Bayyana Shirin</a></li><li><a href="#ginin-saurin-crypto-layi-layi">Ginin Saurin Crypto, Layi-layi</a></li><li><a href="#abin-da-wannan-ya-ke-nufi-ga-kowane-nau-in-banki">Abin Da Wannan Ya Ke Nufi Ga Kowane Nau'in Banki</a></li><li><a href="#abin-da-zai-faru-na-gaba">Abin Da Zai Faru Na Gaba</a></li><li><a href="#tambayoyin-da-ake-yawan-yi">Tambayoyin da ake yawan yi</a></li><li><a href="#bayanai">Bayanai</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> Cryptography bayan quantum tana tilasta zaɓi biyu kan hanyoyin biya: daidaita RSA/ECC cikin SWIFT MT da ISO 20022 da ba a tsara wa ML-KEM da ML-DSA ba, ko maye gurbi da kayan saurin crypto. Masu zane su yanke kafin HNDL ya zama asarar aiki.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>Tara Yanzu, Warware Baya: Tsarin Barazana da ke Cire Damar Jiran.</strong> HNDL yana juyar da jadawalin cryptography na al&#x27;ada.</li>  <li><strong>Matsalar Girma Ita Ce Matsalar Injiniya.</strong> Tattaunawar jama&#x27;a kan ƙaurar PQC tana mai da hankali kan zaɓin algorithm.</li>  <li><strong>Daidaitawa kan Maye Gurbi: Yanke Shawara da ke Bayyana Shirin.</strong> Tsarin gaskiya shi ne daidaitawa shiri ne na ƙaura mai sarrafawa mai ɗan gajeren rai, kuma maye gurbi ne kawai inda za a daidaita.</li>  <li><strong>Ginin Saurin Crypto, Layi-layi.</strong> Layukan ababen more rayuwa da suka shafi ƙaurar PQC ba layukan kasuwanci na &quot;bayanai, kulawa, tattalin arziƙi&quot; ba ne da suka dace da labari na banki na gama gari.</li></ul></aside><!-- lead-start -->
+<!-- lead-start: manual -->
+
+<!-- lead-end -->
+<p>Abubuwan cryptography da ke tabbatar da kowane biyan kuɗi na jumla a samarwa yau — RSA, ECDSA, ECDH — suna da kwanan watan ƙarewa. <a href="https://www.congress.gov/bill/117th-congress/house-bill/7535/text" title="H.R. 7535">Quantum Computing Cybersecurity Preparedness Act ⧉</a> na Amurka ta rubuta wannan kwanan watan ƙarewa cikin dokar sayan tarayya a ƙarshen 2022. <a href="https://www.bis.org/publ/work1208.htm" title="Project Leap: Quantum-proofing the financial system">Takardar Aiki ta BIS Mai Lamba 1208 ⧉</a> ta sanya wannan ƙarewa cikin tsarin kulawa ga bankunan tsakiya. <a href="https://csrc.nist.gov/pubs/fips/203/final" title="Module-Lattice-Based Key-Encapsulation Mechanism Standard">NIST FIPS 203 ⧉</a> da <a href="https://csrc.nist.gov/pubs/fips/204/final" title="Module-Lattice-Based Digital Signature Standard">FIPS 204 ⧉</a> sun buga abubuwan maye gurbi a Agusta 2024.</p>
+<p>Kayan biya ba su shanye ma'anar haka ba tukuna.</p>
+<p>Wannan labari shi ne shari'ar injiniya ga maye gurbi kan daidaitawa. An rubuta shi ga masu zane waɗanda suka riga sun fahimci algorithms kuma suke buƙatar yanke shawara kan abin da za a yi da SWIFT MT, saƙonnin pacs da pain na ISO 20022, masu mu'amala da RTGS, kayayyakin HSM, da matsayi na shaida a ƙarƙashin dukan waɗannan.</p>
+<hr />
+<blockquote>
+<p><strong>Taƙaitawar Zartarwa / Manyan Abubuwan Tuna</strong></p>
+<ul>
+<li><strong>Tara-yanzu-warware-baya (HNDL) shi ne barazana ta aiki.</strong> Maƙiya suna yin rikodin zirga-zirgar biyan da aka ɓoye a 2026 don warware ta da zarar kwamfutar quantum mai dacewa da nazarin cryptography (CRQC) ta wanzu. Zirga-zirgar da aka kama tana ƙunshe da umarnin kammala biyan kuɗi, bayanan masu karɓa, da kayan tabbatarwa masu hassasin lokaci mai tsawo.</li>
+<li><strong>NIST ta tsara abubuwan maye gurbi.</strong> ML-KEM (FIPS 203) don ɗaurin maɓalli da ML-DSA (FIPS 204) don sa hannu na dijital sune ginshiƙai. SLH-DSA (FIPS 205) yana lulluɓe madadin tushen hash ba tare da yanayi ba.</li>
+<li><strong>Bambancin girma yana karya tsofaffin zato.</strong> Maɓallan jama'a da sa hannu sun ninka kwatankwacin RSA-2048 sau 5–20×. Wannan yana karo da MTU a kan cibiyoyin biyan kuɗi, zaton buffer-tsayayye a cikin masu kula da saƙonnin MT, da ƙarfin cryptography na rundunonin HSM da aka shigar.</li>
+<li><strong>Cakuda (na al'ada + PQC) shi ne ababen ƙaura, ba inda za a daidaita ba.</strong> TLS na cakuda da X.509 na cakuda suna sayar da shekaru biyu zuwa uku na haɗin kai yayin da ake maye gurbin hanyoyin samarwa. Ba sa warware matsalar ƙarfi ta ƙasa.</li>
+<li><strong>PKI shi ne bangon da ke ɗaukar nauyi.</strong> Hukumar shaida wadda algorithm na sa hannunta ya zama mai yiwuwar jabu tana lalata kowace shaida da ke ƙarƙashinta. Fallasar cibiya ta banki ita ce sarka, ba kowane ƙarshen ɗaya ba.</li>
+<li><strong>Saurin crypto shi ne sifar gini da za a iya gina shi.</strong> Masu gano algorithm, tsarin maɓallai, ambulan sa hannu, da rabe-raben HSM duk dole su zama masu daidaitawa. Duk wani abu da aka ɗaure ga RSA a lokacin tarawa shi ne basussukan fasaha da za su faɗi a lokaci ɗaya.</li>
+</ul>
+</blockquote>
+<hr />
+<h2 id="tara-yanzu-warware-baya-tsarin-barazana-da-ke-cire-damar-jiran">Tara Yanzu, Warware Baya: Tsarin Barazana da ke Cire Damar Jiran <a class="heading-anchor" href="#tara-yanzu-warware-baya-tsarin-barazana-da-ke-cire-damar-jiran" aria-label="Hanyar haɗi zuwa Tara Yanzu, Warware Baya: Tsarin Barazana da ke Cire Damar Jiran">#</a></h2>
+<p>HNDL yana juyar da jadawalin cryptography na al'ada. Tantance haɗari na al'ada yana tambaya yaushe barazana take faruwa. HNDL yana tambaya yaushe bayanan da aka kama yau za su zama masu amfani ga maƙiyi. Ga saƙonnin biya — sunayen masu karɓa, lambobin asusu, bayanan tura kuɗi na tsari, kayan tantance takunkumi, umarnin kammala biyan cikin banki — tagar hassasin yana da shekaru zuwa shekaru goma. Yawancin wannan zirga-zirgar ana yin rikodi a wani wuri yanzu.</p>
+<p><a href="https://media.defense.gov/2022/Sep/07/2003071834/-1/-1/0/CSA_CNSA_2.0_ALGORITHMS_.PDF" title="Commercial National Security Algorithm Suite 2.0">Jadawalin CNSA 2.0 na NSA ⧉</a> yana ba tsarin tsaron ƙasa lokaci har 2035 don kammala miƙa mulki. Masu sa ido na kuɗi suna tafiya kan jadawali masu sauri — <a href="https://www.bankofengland.co.uk/prudential-regulation/publication/2024/march/operational-resilience-impact-tolerances-for-important-business-services" title="PRA SS1/21">tsammanin PRA kan juriya na aiki ⧉</a> suna kallon saurin cryptography a matsayin haɗarin tarawar ɓangare na uku. Tsammanin a 2026 shi ne hanyoyin biya masu mahimmanci za su buga shirin ƙaurar PQC ɗinsu cikin shaidar kansu na juriya.</p>
+<p>Maƙiyin HNDL ba ya buƙatar CRQC a yau. Maƙiyi yana buƙatar:</p>
+<ol>
+<li><strong>Matsayin cibiyar sadarwa.</strong> Ƙwafe na kebul na ƙarƙashin teku, kamawa a matakin ISP, da middleboxes da aka lalata duk suna cikin iyaka. Zirga-zirgar biyan jumla tana taruwa ta hanyar ƴan kaɗan na hanyoyin cibiyar sadarwa.</li>
+<li><strong>Adana.</strong> Petabyte na bayanan biyan kuɗi na tsari adana ne mai sarrafawa a 2026.</li>
+<li><strong>Haƙuri.</strong> Kamawar baya kashi komai a kowane saƙon da aka kama. Riba tana zuwa baya.</li>
+</ol>
+<p>Don haka muhawarar ƙaura ba &quot;kwamfutocin quantum na iya zuwa a 2035 ba.&quot; Ita ce &quot;duk zaman TLS da ya ƙare a daren yau tare da musayar maɓallin RSA-2048 yana fallasa tsawon lokacin da bayanan ciki suka rage masu hassasin.&quot;</p>
+<h2 id="matsalar-girma-ita-ce-matsalar-injiniya">Matsalar Girma Ita Ce Matsalar Injiniya <a class="heading-anchor" href="#matsalar-girma-ita-ce-matsalar-injiniya" aria-label="Hanyar haɗi zuwa Matsalar Girma Ita Ce Matsalar Injiniya">#</a></h2>
+<p>Tattaunawar jama'a kan ƙaurar PQC tana mai da hankali kan zaɓin algorithm. Matsala mai wuya ita ce ta girma.</p>
+<table>
+<thead>
+<tr>
+<th>Ginshiƙai</th>
+<th>Maɓallin jama'a</th>
+<th>Sa hannu / ciphertext</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RSA-2048</td>
+<td>bytes 256</td>
+<td>bytes 256 (sa hannu)</td>
+</tr>
+<tr>
+<td>ECDSA P-256</td>
+<td>bytes 64</td>
+<td>bytes 64 (sa hannu)</td>
+</tr>
+<tr>
+<td>ML-KEM-768</td>
+<td><strong>bytes 1,184</strong></td>
+<td><strong>bytes 1,088 (ciphertext)</strong></td>
+</tr>
+<tr>
+<td>ML-DSA-65</td>
+<td><strong>bytes 1,952</strong></td>
+<td><strong>bytes 3,309 (sa hannu)</strong></td>
+</tr>
+<tr>
+<td>SLH-DSA-128f</td>
+<td>bytes 32</td>
+<td><strong>bytes 17,088 (sa hannu)</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Waɗannan lambobi suna haɗawa kai tsaye da hanyoyin kasawa da ba a tsara tsofaffin kayan biya ga su ba:</p>
+<ul>
+<li><strong>Tarwatsewar kunshe-kunshe a kan hanya.</strong> ClientHello da ke ɗauke da ML-KEM-768 na cakuda da X25519 na al'ada ya wuce MTU na Ethernet na 1,500-byte na yau da kullum. Middleboxes tsakanin ƙarshen biyan kuɗi guda biyu suna tarwatsewa, sauke, ko sake rubuta handshake. Kasawa tana fitowa a matsayin kurakuran TLS na lokaci-lokaci da suke kama da hayaniya ta hanyar sadarwa ta wucin gadi.</li>
+<li><strong>Zaton buffer a masu kula da MT.</strong> Yawancin haɗin SWIFT MT suna ɗauke da ambulan da aka sa hannu da aka tsara wa ECDSA. Sa sa hannun ML-DSA cikin wannan ambulan kuma parser ko dai ya yanke ko ya ƙi.</li>
+<li><strong>Ƙarfin HSM.</strong> Sa hannun ML-DSA a kan rundunar HSM da aka shigar yana da hankali sau 3–10× sama da ECDSA a kowace aiki, a kan kayan aiki wanda kasafin kuɗin maɓalli-a-dakika ya riga ya yi zafi yayin tagar batch na ƙarshen rana.</li>
+<li><strong>Nauyin sarkar shaida.</strong> Matsayi na CA mai matakai huɗu wanda aka sake bayarwa da sa hannun ML-DSA yana girma daga kusan KB 6 zuwa kusan KB 60. Kowane handshake na TLS zuwa hanyar yana biyan haka.</li>
+</ul>
+<p>Hanyar daidaitawa ita ce sarrafa waɗannan ƙuntatawa daban-daban — buffers masu girma a nan, HSMs masu sauri a can, jurewar tarwatsewa a middleboxes. Wannan gada ce ta watanni shida da za a iya kāre. Ba gini ba ne.</p>
+<h2 id="daidaitawa-kan-maye-gurbi-yanke-shawara-da-ke-bayyana-shirin">Daidaitawa kan Maye Gurbi: Yanke Shawara da ke Bayyana Shirin <a class="heading-anchor" href="#daidaitawa-kan-maye-gurbi-yanke-shawara-da-ke-bayyana-shirin" aria-label="Hanyar haɗi zuwa Daidaitawa kan Maye Gurbi: Yanke Shawara da ke Bayyana Shirin">#</a></h2>
+<p>Tsarin gaskiya shi ne daidaitawa shiri ne na ƙaura mai sarrafawa mai ɗan gajeren rai, kuma maye gurbi ne kawai inda za a daidaita. Yanke shawara shi ne wanne ne banki ya samar kuɗi farko, da kuma har yaushe tagar daidaitawa ta kasance a buɗe kafin ta zama ɗaurin tuƙa na dindindin.</p>
+<p>Daidaitawa yana nufin:</p>
+<ul>
+<li>TLS na cakuda (ML-KEM + X25519) da aka ƙare a iyakar hanyar da take.</li>
+<li>Shaidu da aka sa hannu sau biyu (RSA na farko, ML-DSA na biyu) da aka bayar daga CA na ƙasa mai iya PQC.</li>
+<li>Buffers na MT masu girma da manufar MTU mai tsaurara kan VPN na biyan kuɗi.</li>
+<li>Sabuntawar firmware na HSM inda masu samarwa suka goyi bayan abubuwan PQC; cikakken maye gurbin HSM inda ba haka ba.</li>
+</ul>
+<p>Za a iya yin wannan aiki. Ba ya warware matsala ta ƙasa, wadda ita ce SWIFT MT da yawancin aiwatarwar ISO 20022 suna ɓoye ambulan cryptography cikin tsarin saƙo da ke ɗaure algorithm. Mika mulki na algorithm na gaba — kuma za a yi ɗaya, lokacin da ML-KEM ta nuna rauni daga ƙarshe ko sabon ƙa'ida ta maye gurbinta — yana gudanar da wannan ƙaurar a kan wadannan hanyoyin.</p>
+<p>Maye gurbi yana nufin amincewa cewa layin cryptography ba sifar tsarin saƙo ba ne. Sifar sabis na ambulan da za a iya raba shi wanda tsarin saƙo yake kira. A bayyane:</p>
+<ul>
+<li>Iyakar tsaron jigilar ta motsa zuwa service mesh ko sidecar da ke ƙare TLS na cakuda kuma yana gabatar da saƙon a sarari ga hanyar tare da mu'amala ta tabbata.</li>
+<li>Sa hannu na matakin saƙo ana samar da su ne ta sabis na sa hannu na musamman wanda zaɓin algorithm ɗinsa ya zama ma'aunin sanyi, ba zato mai ƙarewa ba.</li>
+<li>Ana bayar da shaidu daga CA wanda algorithm na sa hannunsa ke iya juyawa kansa.</li>
+<li>Ana magance rabe-raben HSM ta hanyar manufa (jigila, sa hannu, ɗaurin maɓalli) maimakon ta tsarin saƙo.</li>
+</ul>
+<p>Zane na maye gurbi yana rayuwa ta canjin algorithm na gaba ba tare da sake taɓa hanyar ba.</p>
+<h2 id="ginin-saurin-crypto-layi-layi">Ginin Saurin Crypto, Layi-layi <a class="heading-anchor" href="#ginin-saurin-crypto-layi-layi" aria-label="Hanyar haɗi zuwa Ginin Saurin Crypto, Layi-layi">#</a></h2>
+<p>Layukan ababen more rayuwa da suka shafi ƙaurar PQC ba layukan kasuwanci na &quot;bayanai, kulawa, tattalin arziƙi&quot; ba ne da suka dace da labari na banki na gama gari. Layukan da suka shafi sune na cryptography.</p>
+<table>
+<thead>
+<tr>
+<th>Layi</th>
+<th>Abin da yake yi</th>
+<th>Tambayar PQC</th>
+<th>Umarnin gini</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>HSM / sarrafa maɓalli</strong></td>
+<td>Yana samar, adana, da aiki kan kayan maɓalli a ƙarƙashin keɓancewar kayan aiki</td>
+<td>Shin firmware na HSM da aka shigar yana goyi bayan ML-KEM, ML-DSA, da API na ɗaurin maɓalli na cakuda? Menene bambancin ƙarfin sa hannu kan ECDSA a kan kayan aiki ɗaya?</td>
+<td>Tantance kowane ɓangare na HSM ta tallafin algorithm da ƙarfin a kowane dakika. Cire duk wani abu da ke ɗaure ga RSA ba tare da hanyar firmware ba. Tashe rabe-raben PQC na musamman kafin yanke samarwa.</td>
+</tr>
+<tr>
+<td><strong>PKI / hukumar shaida</strong></td>
+<td>Yana bayarwa, soke, da haɗa amincewa ta cikin shaidun X.509</td>
+<td>Shin CA na iya sa hannu da ML-DSA a yau? Akwai tsarin da aka gwada don juya tushe da sake bayar da sarkar? Shin masu amsa CRL da OCSP an tsara su don nauyin sa hannun ML-DSA?</td>
+<td>Yi la'akari da tudun CA a matsayin bangon da ke ɗaukar nauyi. Kafa ƙasa mai iya PQC yanzu. Tsara juyawar tushe don dogaron shaida mafi tsawon rai, ba don dacewa ba.</td>
+</tr>
+<tr>
+<td><strong>Jigila / cibiyar sadarwa</strong></td>
+<td>Yana ƙare TLS, IPsec, da MACsec tsakanin ƙarshen biyan kuɗi</td>
+<td>Shin load balancer, WAF, da hanyar middlebox suna jurewar handshakes na cakuda da suka wuce MTU na gargajiya? Shin tikitin sake fara zama an tsara su don maɓallan PQC?</td>
+<td>Matsar da ƙarshen TLS zuwa iyakar saurin crypto (sidecar ko mesh). Ɗaga manufar MTU kan VPN na biyan kuɗi. Gwada cikakken hanya tare da tarwatsewa da aka haifar da gangan.</td>
+</tr>
+<tr>
+<td><strong>Aikace-aikace / kayan saƙo</strong></td>
+<td>Yana ɗauke da saƙonnin SWIFT MT, ISO 20022 pacs / pain / camt da ambulansu na cryptography</td>
+<td>Shin mai kula da saƙo na hanyar yana jure ambulan da aka sa hannu mai girman ML-DSA? Shin parsers na tsakiya suna sane da algorithm ko suna yanke a tsayi?</td>
+<td>Raba ambulan da kaya. Sa hannu a iyakar sabis, ba cikin mai kula da tsarin saƙo ba. Yi la'akari da masu gano algorithm a matsayin bayanai, ba a matsayin schema ba.</td>
+</tr>
+<tr>
+<td><strong>Bita / hujja</strong></td>
+<td>Yana samar da sarkar amincewa ta cryptography wadda masu sa ido da abokan ciniki suka dogara</td>
+<td>Shin tarihin rikodin da aka sa hannu har yanzu ana iya tabbatar da su da zarar algorithm na sa hannu ya ƙare? Akwai shirin sa hannu na adana na dogon lokaci?</td>
+<td>Sa hannu na biyu kan abubuwan adanawa da tushen hash (SLH-DSA) don tabbacin da ke tsira daga karyewar algorithm guda. Yi la'akari da sarkar bita a matsayin kayan tarihi da aka tsara, ba a matsayin sakamako na ginin ba.</td>
+</tr>
+</tbody>
+</table>
+<p>Horon shi ne sa kowane zaɓin algorithm ya zama ƙimar sanyi a kowane layi. Cibiyar da ke ɗaurewa RSA-2048 a kowane ɗayan waɗannan layukan tana gadon abu na ƙarshen rai na haɗin kai lokacin da wannan algorithm ya faɗi.</p>
+<h2 id="abin-da-wannan-ya-ke-nufi-ga-kowane-nau-in-banki">Abin Da Wannan Ya Ke Nufi Ga Kowane Nau'in Banki <a class="heading-anchor" href="#abin-da-wannan-ya-ke-nufi-ga-kowane-nau-in-banki" aria-label="Hanyar haɗi zuwa Abin Da Wannan Ya Ke Nufi Ga Kowane Nau'in Banki">#</a></h2>
+<p>Bayanin fallasa ya bambanta da cibiya. Umarnan suna bambanta daidai.</p>
+<h3 id="bankuna-na-duniya">Bankuna na Duniya <a class="heading-anchor" href="#bankuna-na-duniya" aria-label="Hanyar haɗi zuwa Bankuna na Duniya">#</a></h3>
+<p>Bankuna na duniya suna gudanar da rundunonin HSM mafi girma da aka shigar, sarƙoƙin shaida mafi tsawo, da hanyoyin cibiyar sadarwa masu rikitarwa tsakanin abokan kasuwanci. Babban haɗari ba zaɓin algorithm ba ne — shi ne farashin daidaitawa na canza algorithms a cikin ɗaruruwan sabis na ciki da dozin na abokan kasuwanci na waje a lokaci ɗaya.</p>
+<p>Umarni shi ne samar kuɗi ga CA mai iya PQC, iyakar jigila ta saurin crypto, da sabis na sa hannu da aka tsara algorithm a matsayin aikin 2026, kafin a daidaita kowace hanya guda. Daidaitawa sai ta zama canjin samarwa na yau da kullum cikin tsari da aka sani. Ba tare da tsarin ba, kowane daidaita hanya yana sake muhawara waɗannan yanke shawara na gini.</p>
+<h3 id="bankunan-yanki">Bankunan Yanki <a class="heading-anchor" href="#bankunan-yanki" aria-label="Hanyar haɗi zuwa Bankunan Yanki">#</a></h3>
+<p>Bankunan yanki suna da ƙarancin saman algorithm amma rage ma'aikatan ƙwararru. Babban haɗari shi ne ɗaurin mai samar HSM ga algorithms wanda mai samarwa bai yi alkawarin tallafa ba.</p>
+<p>Umarni shi ne rubuta tallafin PQC — musamman ML-KEM da ML-DSA, tare da hanyar haɓaka firmware da aka gwada — cikin kowane sabunta kwangilar HSM tun daga 2026 zuwa gaba. Bankunan da basu da wannan sashe suna gadon maye gurbin kayan aiki da aka tilasta a kan jadawalin mai samarwa, ba nasu ba.</p>
+<h3 id="fintechs-da-psps">Fintechs da PSPs <a class="heading-anchor" href="#fintechs-da-psps" aria-label="Hanyar haɗi zuwa Fintechs da PSPs">#</a></h3>
+<p>Masu ba da sabis na biyan kuɗi da fintechs sukan zauna tsakanin abokin kasuwancin banki da tsarin ɗan kasuwa ko tsarin masu amfani na ƙarshe. Fallasarsu ta cryptography ita ce iyakar API a ɓangarorin biyu.</p>
+<p>Umarni shi ne buga mu'amalar TLS na cakuda — na al'ada tare da ML-KEM — a ɓangaren da ke fuskantar banki a matsayin ginshiƙai a tattaunawar kasuwanci ta 2026. Fintech ɗin da ke zuwa da haɗin kai na PQC da aka riga aka nuna yana cin nasarar haɗin kai akan fintech wanda bai fara ba tukuna.</p>
+<h3 id="masu-baitulmali-na-kamfani">Masu Baitulmali na Kamfani <a class="heading-anchor" href="#masu-baitulmali-na-kamfani" aria-label="Hanyar haɗi zuwa Masu Baitulmali na Kamfani">#</a></h3>
+<p>Masu baitulmali ba sa gudanar da kayan cryptography kai tsaye. Suna cinye su — kowane API na banki, kowane tura fayil mai aminci, kowace tabbatarwa da aka sa hannu sun dogara da PKI na banki.</p>
+<p>Umarni shi ne ƙara tambayoyi uku ga kowane RFP na banki a 2026: wace algorithms na PQC banki yake amfani da su yau a TLS da ke fuskantar abokin ciniki, menene shirin banki don tabbatarwar biyan kuɗi da aka sa hannu da ML-DSA, da yaya banki yake niyya ya kiyaye tabbatarwar tarihin rikodin da aka sa hannu da zarar RSA ya ƙare. Bankunan da ba za su iya amsa waɗannan tambayoyi ba suna nuna wani abu game da shirye-shiryen injiniya ta ƙasa.</p>
+<h2 id="abin-da-zai-faru-na-gaba">Abin Da Zai Faru Na Gaba <a class="heading-anchor" href="#abin-da-zai-faru-na-gaba" aria-label="Hanyar haɗi zuwa Abin Da Zai Faru Na Gaba">#</a></h2>
+<p>Igiyar ruwa ta farko na tura PQC a biyan kuɗi za ta zama mara ganuwa ga masu amfani na ƙarshe. TLS na cakuda zai fito a handshake, sarƙoƙin shaida za su yi girma, jinkirin sa hannu na HSM zai tashi da ƴan millise, kuma hanyoyin sun ci gaba da aiki. Wannan ita ce hanyar nasara.</p>
+<p>Kasawa da ake gani za su kasance masu motsawa ta daidaitawa: hanya da ba za ta iya karɓar ambulan da aka sa hannu da ML-DSA ba tare da yankewa ba, CA wanda mahimmancin rarraba CRL ya cika da nauyin sa hannu na sabon, middlebox wanda yake tarwatsa handshakes na cakuda zuwa ClientHellos da aka sake tsara. Waɗancan kasawa za su isa samarwa ta 2027.</p>
+<p>Yanke shawara na gini a 2026 shi ne ko a samar kuɗi ga ababen more rayuwa na maye gurbi wanda ya sa daidaitawa ba ta da muhimmanci, ko a samar kuɗi ga jerin gyare-gyare na musamman na hanya da kowannensu yana kallon mafi arha guda ɗaya kuma yana taruwa cikin ƙaura mafi tsawo, mai tsada. Banki da ya zaɓi hanya ta farko zai gudanar da aiki cikin natsuwa ta hanyar mika mulki. Banki da ya zaɓi na biyu zai kashe sauran shekarun goma yana bayyana bita na lamuran ga masu sa ido.</p>
+<p>PQC ba matsala ce ta cryptography da aka sutura a matsayin matsalar ababen more rayuwa ba. Matsala ce ta ababen more rayuwa wadda cryptography ta faru ta fara.</p>
+<h2 id="tambayoyin-da-ake-yawan-yi">Tambayoyin da ake yawan yi <a class="heading-anchor" href="#tambayoyin-da-ake-yawan-yi" aria-label="Hanyar haɗi zuwa Tambayoyin da ake yawan yi">#</a></h2>
+<p><strong>Akwai kwanan watan da ke tilasta wannan aiki?</strong></p>
+<p>Kwanakin tsari masu wuya na ƙasa ne. <a href="https://www.congress.gov/bill/117th-congress/house-bill/7535/text" title="H.R. 7535">Quantum Computing Cybersecurity Preparedness Act ⧉</a> na Amurka tana ɗaure tsarin tarayya. <a href="https://media.defense.gov/2022/Sep/07/2003071834/-1/-1/0/CSA_CNSA_2.0_ALGORITHMS_.PDF" title="CNSA 2.0">Jadawalin CNSA 2.0 na NSA ⧉</a> yana yiwa 2035 hari ga tsarin tsaron ƙasa. <a href="https://www.bis.org/publ/work1208.htm" title="BIS Working Paper 1208">Project Leap na BIS ⧉</a> da shirin aikin FSB suna jan wannan iyakar gaba ga kayan biyan kuɗi na tsari. HNDL yana nufin agogon aiki ya fara aiki kafin ɗayan waɗannan kwanakin a hukumance.</p>
+<p><strong>Me ya sa ML-KEM ita ce ɗaurin maɓalli da ake bada shawara maimakon wani abu mafi sauri?</strong></p>
+<p>ML-KEM (sigar da aka tsara ta CRYSTALS-Kyber) tana da haɗin mafi ƙarfi na ciphertext da girman maɓalli a tsakanin ƴan takarar lattice, tare da aiwatarwar girma da ƙarfafa side-channel. NIST ta buga ta a matsayin <a href="https://csrc.nist.gov/pubs/fips/203/final" title="FIPS 203">FIPS 203 ⧉</a>. Ƴan takarar mafi sauri sun wanzu amma suna ɗauke da girma mafi girma ko ƙananan tazarar amincewa kan ma'aunin tsaro.</p>
+<p><strong>Me ya sa ba a yi amfani da SLH-DSA a ko'ina maimakon ML-DSA ba?</strong></p>
+<p>SLH-DSA (sigar da aka tsara ta SPHINCS+) tana kan tushen hash kuma don haka tana dogara ne kawai kan tsaron aikin hash, wanda shi ne zato mafi kiyayewa da akwai. Sa hannunta sun ninka na ML-DSA sau 5–20×. Wannan abin yarda ne ga sa hannun adanawa, amma ba zai yiwu ba ga sa hannu na ma'amala inda girma yake muhimmi a kowane saƙo. Tsarin daidai shi ne ML-DSA don sa hannun samarwa da SLH-DSA don tabbacin adanawa.</p>
+<p><strong>Banki na iya jira har hanyoyin su buga bayanan PQC?</strong></p>
+<p>Banki da ya jira yana gadon tagar ƙaura wadda hanya ke bugawa, wadda ta fi gajere fiye da zagayowar canji ta ciki ta banki. Yayin da SWIFT, mai aiki na RTGS na cikin gida, da CCPs masu dacewa kowanne ya buga bayanin PQC ɗinsu, tagar ƙaura zai zama watanni goma sha biyu zuwa ashirin da huɗu. Bankunan da basu riga sun gina CA, jigila, da ƙarfin HSM ba ba za su cika shi ba tare da gajerun hanyoyi na aiki ba.</p>
+<p><strong>Menene abu guda mafi tasiri da za a samar kuɗi farko?</strong></p>
+<p>Hukumar shaida ƙasa mai iya PQC, da aka haɗa cikin PKI na yanzu, wadda za ta iya bayar da shaidu na algorithm biyu (RSA tare da ML-DSA) ba tare da rikitar da amincewar samarwa ba. Wannan yana kafa kayan juyawa. Sauran komai — haɓakar jigila, shirin rabe-raben HSM, canje-canjen ambulan-saƙo — za a iya tsara su kewaye da shi.</p>
+<h2 id="bayanai">Bayanai <a class="heading-anchor" href="#bayanai" aria-label="Hanyar haɗi zuwa Bayanai">#</a></h2>
+<ul>
+<li>Congress.gov, (2022). <a href="https://www.congress.gov/bill/117th-congress/house-bill/7535/text" title="Quantum Computing Cybersecurity Preparedness Act">H.R. 7535 — Quantum Computing Cybersecurity Preparedness Act ⧉</a>.</li>
+<li>NIST, (2024). <a href="https://csrc.nist.gov/pubs/fips/203/final" title="FIPS 203">FIPS 203 — Module-Lattice-Based Key-Encapsulation Mechanism Standard ⧉</a>.</li>
+<li>NIST, (2024). <a href="https://csrc.nist.gov/pubs/fips/204/final" title="FIPS 204">FIPS 204 — Module-Lattice-Based Digital Signature Standard ⧉</a>.</li>
+<li>NIST, (2024). <a href="https://csrc.nist.gov/pubs/fips/205/final" title="FIPS 205">FIPS 205 — Stateless Hash-Based Digital Signature Standard ⧉</a>.</li>
+<li>NSA, (2022). <a href="https://media.defense.gov/2022/Sep/07/2003071834/-1/-1/0/CSA_CNSA_2.0_ALGORITHMS_.PDF" title="CNSA 2.0">Commercial National Security Algorithm Suite 2.0 ⧉</a>.</li>
+<li>BIS, (2024). <a href="https://www.bis.org/publ/work1208.htm" title="BIS Working Paper 1208">Working Paper No. 1208 — Project Leap: Quantum-proofing the financial system ⧉</a>.</li>
+<li>Bank of England (PRA), (2024). <a href="https://www.bankofengland.co.uk/prudential-regulation/publication/2024/march/operational-resilience-impact-tolerances-for-important-business-services" title="PRA SS1/21">SS1/21 — Operational resilience: Impact tolerances for important business services ⧉</a>.</li>
+</ul>
+<!-- enrich-start -->
+
+<p class="post-reviewed">Bita ta ƙarshe <time datetime="2026-05-31">2026-05-31</time>.</p>
+
+<!-- enrich-end -->
+</content>
+</invoke>
+<aside class="author-card" aria-label="Game da marubucin"><img alt="Hoton Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=85" width="64" height="64" loading="lazy" decoding="async"  fetchpriority="high"><span class="author-card-body"><strong class="author-card-name"><a href="/ha/game-da-mu/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Manyan masanin fasahar banki; ina rubutu kan AI mai amfani, ƙaura zuwa ISO 20022, kiriftografi bayan kwantum don sabis na kuɗi da sauye-sauyen tsari na biyan kuɗi na manyan.</span><span class="author-credentials">Fiye da shekaru 20 na ƙwarewa a HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/ha/game-da-mu/index.html">Cikakken bayanin martaba</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">Bita ta ƙarshe <time datetime="2026-06-07">2026-06-07</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Karatun da ke da alaƙa</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/ha/2026-05-18-quantum-cryptography-standards-developments-2026" class="related-media" aria-label="Sake Saita Sirrin Quantum a 2026: Ƙa'idodin PQC, Tabbatar QKD, da Aikin Ƙaura da Bankuna Ba Za Su Iya Jinkirtawa Ba" tabindex="-1"><img alt="Quantum-safe cryptography migration map for 2026 showing NIST PQC standards, hybrid protocol work, QKD assurance, crypto-agility, and bank data-risk tiers" src="https://cloudcdn.pro/api/transform?url=/stocks/images/alex-shuper-YYZnrK8NrSw-unsplash.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="sake-saita-sirrin-quantum-a-2026-a-idodin-pqc-tabbatar-qkd-da-aikin-aura-da-bank"><a href="https://sebastienrousseau.com/ha/2026-05-18-quantum-cryptography-standards-developments-2026">Sake Saita Sirrin Quantum a 2026: Ƙa'idodin PQC, Tabbatar QKD, da Aikin Ƙaura da Bankuna Ba Za Su Iya Jinkirtawa Ba</a> <a class="heading-anchor" href="#sake-saita-sirrin-quantum-a-2026-a-idodin-pqc-tabbatar-qkd-da-aikin-aura-da-bank" aria-label="Hanyar haɗi zuwa Sake Saita Sirrin Quantum a 2026: Ƙa'idodin PQC, Tabbatar QKD, da Aikin Ƙaura da Bankuna Ba Za Su Iya Jinkirtawa Ba">#</a></h3><p><time datetime="2026-05-18">2026-05-18</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/ha/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance" class="related-media" aria-label="Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for Corporate Finance" tabindex="-1"><img alt="Post-quantum cryptography migration roadmap diagram — corporate banking infrastructure transitioning from RSA to ML-KEM and ML-DSA" src="https://cloudcdn.pro/api/transform?url=/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="securing-the-ledger-a-board-level-guide-to-post-quantum-migration-for-corporate-"><a href="https://sebastienrousseau.com/ha/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance">Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for Corporate Finance</a> <a class="heading-anchor" href="#securing-the-ledger-a-board-level-guide-to-post-quantum-migration-for-corporate-" aria-label="Hanyar haɗi zuwa Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for Corporate Finance">#</a></h3><p><time datetime="2026-05-14">2026-05-14</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/ha/2026-05-16-best-cloud-infrastructure-architecture-2026" class="related-media" aria-label="The Best Cloud Infrastructure Architecture in 2026: An AI-Native, Multi-Cloud, Quantum-Aware Blueprint for Financial Services" tabindex="-1"><img alt="Six-pillar cloud architecture diagram for 2026 — AI-native, multi-cloud, serverless, edge, DevSecOps, and sustainable design, with CloudCDN edge research overlay" src="https://cloudcdn.pro/api/transform?url=/stock/images/cloud-architecture-2026-banner.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="the-best-cloud-infrastructure-architecture-in-2026-an-ai-native-multi-cloud-quan"><a href="https://sebastienrousseau.com/ha/2026-05-16-best-cloud-infrastructure-architecture-2026">The Best Cloud Infrastructure Architecture in 2026: An AI-Native, Multi-Cloud, Quantum-Aware Blueprint for Financial Services</a> <a class="heading-anchor" href="#the-best-cloud-infrastructure-architecture-in-2026-an-ai-native-multi-cloud-quan" aria-label="Hanyar haɗi zuwa The Best Cloud Infrastructure Architecture in 2026: An AI-Native, Multi-Cloud, Quantum-Aware Blueprint for Financial Services">#</a></h3><p><time datetime="2026-05-16">2026-05-16</time></p></footer></article>
+</div>
+</aside><aside class="article-sources" aria-labelledby="sources-heading"><h2 id="sources-heading" class="article-sources-heading">Tushen bayanai & nassoshi</h2><ol class="article-sources-list"><li><a href="https://www.bis.org/publ/work1208.htm" rel="external noopener nofollow"><span class="source-host">www.bis.org</span><span class="source-path">/publ/work1208.htm</span></a></li><li><a href="https://csrc.nist.gov/pubs/fips/203/final" rel="external noopener nofollow"><span class="source-host">csrc.nist.gov</span><span class="source-path">/pubs/fips/203/final</span></a></li><li><a href="https://csrc.nist.gov/pubs/fips/204/final" rel="external noopener nofollow"><span class="source-host">csrc.nist.gov</span><span class="source-path">/pubs/fips/204/final</span></a></li><li><a href="https://csrc.nist.gov/pubs/fips/205/final" rel="external noopener nofollow"><span class="source-host">csrc.nist.gov</span><span class="source-path">/pubs/fips/205/final</span></a></li></ol></aside><nav class="post-pagination" aria-label="Shafin labarin"><a class="post-pagination-prev" href="/ha/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/"><span class="post-pagination-label">Baya</span><span class="post-pagination-title">Wholesale Digital Markets in the UK: Tokenised Gilts, Settlement, and the New Champion Role</span></a><a class="post-pagination-next" href="/ha/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/"><span class="post-pagination-label">Gaba</span><span class="post-pagination-title">The Multi-Rail Bank in 2026: Cards, A2A, Stablecoins, RTP, FedNow, and Open Banking in One Strategy</span></a></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/ha/game-da-mu/index.html">About</a></li>
+              <li><a href="/ha/tuntube-mu/index.html">Contact</a></li>
+              <li><a href="/ha/an-yi-da-static-site-generator/index.html">Made with Static Site Generator</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Rubuce-rubuce</h2>
+            <ul>
+              <li><a href="/ha/labarai/index.html">Articles</a></li>
+              <li><a href="/ha/takardun-bincike/index.html">Papers</a></li>
+              <li><a href="/ha/tags/index.html">Tags</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Aiki</h2>
+            <ul>
+              <li><a href="/ha/ayyukan/index.html">Projects</a></li>
+              <li><a href="/ha/jerin-waka/index.html">Playlists</a></li>
+              <li><a href="/ha/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Tuntuɓa</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="/contact/" method="get" aria-label="Yi rajistar wasiƙar labarai">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — bayanan bincike kan biyan kuɗi, AI da kiriftografi bayan kwantum. Babu spam.</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="kai@banki.com.ng" />
+            <input type="hidden" name="subject" value="newsletter" />
+            <input type="hidden" name="message" value="Please subscribe me to the Banking On Quantum newsletter." />
+            <button type="submit">Yi rajista</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved.</span>
+          <div class="social" aria-label="Hanyoyin sadarwa na zamantakewa">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau a kan Twitter / X"><img src="https://cloudcdn.pro/common/images/buttons/x-black.svg" alt="Sebastien Rousseau a kan Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau a kan LinkedIn"><img src="https://cloudcdn.pro/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau a kan LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau a kan Medium"><img src="https://cloudcdn.pro/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau a kan Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau a kan YouTube"><img src="https://cloudcdn.pro/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau a kan YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/ha/isar-da-hannu/index.html">Accessibility</a> ·
+            <a href="/ha/sirri/index.html">Privacy</a> ·
+            <a href="/ha/sharudda/index.html">Terms</a> ·
+            <a href="https://www.thegreenwebfoundation.org/green-web-check/?url=sebastienrousseau.com" target="_blank" rel="noopener noreferrer" title="Hosted on 100% renewable energy (Cloudflare) — estimate via Sustainable Web Design v4 model">Carbon: ~0.04 g/visit · green-hosted</a> ·
+            <a href="https://github.com/sebastienrousseau/sebastienrousseau.github.io/blob/main/project-docs/sigstore.md" target="_blank" rel="noopener noreferrer" title="Every dated article is signed with Sigstore — verify the bytes match what was published">Verify signatures</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","identifier":{"@type":"PropertyValue","propertyID":"ORCID","value":"0009-0005-1434-284X","url":"https://orcid.org/0009-0005-1434-284X"},"worksFor":{"@type":"Organization","@id":"https://www.hsbc.com/#organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal","url":"https://www.paypal.com/"},{"@type":"Organization","name":"Barclays","url":"https://www.barclays.com/"},{"@type":"Organization","name":"Shazam Entertainment","url":"https://www.shazam.com/"},{"@type":"Organization","name":"AKQA","url":"https://www.akqa.com/"},{"@type":"Organization","name":"Virgin Group","url":"https://www.virgin.com/"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"hasCredential":[{"@type":"EducationalOccupationalCredential","credentialCategory":"professional experience","name":"20+ years across Tier-1 banks and global payments infrastructure","recognizedBy":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"}},{"@type":"EducationalOccupationalCredential","credentialCategory":"domain expertise","name":"ISO 20022 migration and wholesale payments architecture","recognizedBy":{"@type":"Organization","name":"SWIFT","url":"https://www.swift.com/"}},{"@type":"EducationalOccupationalCredential","credentialCategory":"domain expertise","name":"Post-Quantum Cryptography for financial services","recognizedBy":{"@type":"Organization","name":"NIST Post-Quantum Cryptography Project","url":"https://csrc.nist.gov/projects/post-quantum-cryptography"}}],"knowsAbout":[{"@type":"DefinedTerm","name":"Post-Quantum Cryptography","sameAs":"https://en.wikipedia.org/wiki/Post-quantum_cryptography"},{"@type":"DefinedTerm","name":"ML-KEM (FIPS 203)","sameAs":"https://csrc.nist.gov/pubs/fips/203/final"},{"@type":"DefinedTerm","name":"ML-DSA (FIPS 204)","sameAs":"https://csrc.nist.gov/pubs/fips/204/final"},{"@type":"DefinedTerm","name":"ISO 20022","sameAs":"https://en.wikipedia.org/wiki/ISO_20022"},{"@type":"DefinedTerm","name":"SWIFT gpi","sameAs":"https://www.swift.com/our-solutions/swift-gpi"},{"@type":"DefinedTerm","name":"SEPA Instant Payments","sameAs":"https://www.ecb.europa.eu/paym/integration/retail/instant_payments/html/index.en.html"},{"@type":"DefinedTerm","name":"FedNow Service","sameAs":"https://www.federalreserve.gov/paymentsystems/fednow_about.htm"},{"@type":"DefinedTerm","name":"Real-Time Payments (RTP)","sameAs":"https://www.theclearinghouse.org/payment-systems/rtp"},{"@type":"DefinedTerm","name":"Cross-border payments","sameAs":"https://en.wikipedia.org/wiki/Cross-border_payments"},{"@type":"DefinedTerm","name":"Wholesale banking","sameAs":"https://en.wikipedia.org/wiki/Wholesale_banking"},{"@type":"DefinedTerm","name":"Applied artificial intelligence in banking","sameAs":"https://en.wikipedia.org/wiki/Applications_of_artificial_intelligence"},{"@type":"DefinedTerm","name":"Generative artificial intelligence","sameAs":"https://en.wikipedia.org/wiki/Generative_artificial_intelligence"}],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://orcid.org/0009-0005-1434-284X","https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":["Organization","Brand"],"@id":"https://sebastienrousseau.com/#organization","name":"Sebastien Rousseau","alternateName":"Banking on Quantum","url":"https://sebastienrousseau.com/","logo":{"@type":"ImageObject","@id":"https://sebastienrousseau.com/#logo","url":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","width":"512","height":"512","caption":"Sebastien Rousseau"},"founder":{"@id":"https://sebastienrousseau.com/#person"},"editorialPolicy":"https://sebastienrousseau.com/editorial/","correctionsPolicy":"https://sebastienrousseau.com/editorial/#corrections","ethicsPolicy":"https://sebastienrousseau.com/editorial/","diversityPolicy":"https://sebastienrousseau.com/editorial/","sameAs":["https://github.com/sebastienrousseau","https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#organization"},"author":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"ha"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"ha"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":3055,"about":{"@type":"Thing","name":"ISO 20022","sameAs":["https://www.iso20022.org/","https://www.wikidata.org/wiki/Q15727611","https://sebastienrousseau.com/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html"]},"mentions":[{"@type":"Thing","name":"Quantum computing","sameAs":["https://en.wikipedia.org/wiki/Quantum_computing","https://www.wikidata.org/wiki/Q484641"]}],"headline":"Kayan Biya Bayan Quantum: Me Ya Sa Bankuna Za Su Iya Maye Gurbin Tsofaffin Hanyoyi Maimakon Daidaitawa","description":"Cryptography bayan quantum tana tilasta zaɓi biyu kan hanyoyin biya: daidaita RSA/ECC cikin SWIFT MT da ISO 20022 da ba a tsara wa ML-KEM da ML-DSA ba, ko maye gurbi da kayan saurin crypto. Masu zane su yanke kafin HNDL ya zama asarar aiki.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp","width":"100vw","height":"100vh","caption":"Kayan maɓallin ɓoye-bayanai suna iyo cikin zurfin ruwan shuɗi — alama ce ta kama-yanzu-warware-gobe na saƙonnin biyan kuɗi waɗanda ambulan RSA da ECC ɗinsu ba za su tsira daga kwamfutar ƙididdiga mai dacewa da nazarin ɓoye-bayanai ba"},"url":"https://sebastienrousseau.com/ha/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/","datePublished":"2026-05-31T06:06:06+00:00","dateModified":"2026-05-31","inLanguage":"ha","keywords":"cryptography bayan quantum, biyan PQC, saurin crypto, tara-yanzu-warware-baya, HNDL, ƙa'idodin bayan quantum na NIST, ML-KEM, ML-DSA, FIPS 203, FIPS 204, ƙaurar hanyar biya, ISO 20022 PQC, maye gurbin SWIFT MT, HSM, faɗuwar PKI, juriya na aiki, Quantum Computing Cybersecurity Preparedness Act","articleSection":"Technology","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/ha/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"ha"},"citation":[{"@type":"CreativeWork","url":"https://www.bis.org/publ/work1208.htm"},{"@type":"CreativeWork","url":"https://csrc.nist.gov/pubs/fips/203/final"},{"@type":"CreativeWork","url":"https://csrc.nist.gov/pubs/fips/204/final"},{"@type":"CreativeWork","url":"https://csrc.nist.gov/pubs/fips/205/final"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/ha/"},{"@type":"ListItem","position":3,"name":"Kayan Biya Bayan Quantum: Me Ya Sa Bankuna Za Su Iya Maye Gurbin Tsofaffin Hanyoyi Maimakon Daidaitawa","item":"https://sebastienrousseau.com/ha/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/"}]}]}</script>
+<script src="/main.c9d8dc8d.js" defer integrity="sha256-G3RtagQVu1xMUTaa18I4L7J+vKPyjk2ZQG182kd2kow= sha256-NzL6b2FQD17U0Taqx1C1kOArNHU82qw6DUW7wiG7Bp0=" crossorigin="anonymous"></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="Bincika">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>Bincika</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="Bincika">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="Bincika cikin takardu..." autocomplete="off" aria-label="Bincika"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> rufe</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> kewayawa</span><span><kbd>Enter</kbd> buɗe</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" integrity="sha256-Y0txeCfdk+GUctTYMAxMbFCB2qs1cPm8JSIX3WRS9cs= sha256-5Ca5zk/7tsavsCDhg6M1m4feBn+L4YnJ7iavKawynII=" crossorigin="anonymous"></script>
+</div>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Kayan Biya Bayan Quantum: Me Ya Sa Bankuna Za Su Iya Maye Gurbin Tsofaffin Hanyoyi Maimakon Daidaitawa","url":"https://sebastienrousseau.com/ha/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/","inLanguage":"ha-NG","isAccessibleForFree":true,"author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#organization"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/ha/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/"},"keywords":"cryptography bayan quantum, biyan PQC, saurin crypto, tara-yanzu-warware-baya, HNDL, ƙa'idodin bayan quantum na NIST, ML-KEM, ML-DSA, FIPS 203, FIPS 204, ƙaurar hanyar biya, ISO 20022 PQC, maye gurbin SWIFT MT, HSM, faɗuwar PKI, juriya na aiki, Quantum Computing Cybersecurity Preparedness Act","proficiencyLevel":"Expert","dependencies":["ISO 20022","Post-Quantum Cryptography","NIST","NIST FIPS 203"]}</script></body>
+</html>

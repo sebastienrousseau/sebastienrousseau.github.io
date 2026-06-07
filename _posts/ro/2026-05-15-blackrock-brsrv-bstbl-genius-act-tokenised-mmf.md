@@ -1,5 +1,6 @@
 ---
 title: "Stablecoin Yield by Another Name: BlackRock's BRSRV and BSTBL Filings Decoded"
+tags: "BlackRock, BRSRV, BSTBL, BUIDL, GENIUS Act, OCC, stablecoinuri, tokenised money market fund, Securitize, BNY Mellon, ERC-20, Ethereum, payments, regulation, ISO 20022, criptografie post-cuantică, AI, depozite tokenizate, plăți transfrontaliere"
 subtitle: "Stablecoin-urile nu pot plăti dobândă conform GENIUS Act. Pe 8 mai 2026, BlackRock a depus două produse care, juridic, nu sunt stablecoins — și care pot plăti randament, într-un portofel, pe un blockchain public."
 description: "Stablecoin-urile nu pot plăti dobândă conform GENIUS Act. Pe 8 mai 2026, BlackRock a depus la SEC BRSRV și BSTBL — fonduri monetare reglementate care oferă randament în portofel pe blockchain, nu stablecoins."
 date: "May 15, 2026"
@@ -180,4 +181,3 @@ It is the end of yield-bearing payment stablecoins as a category, at least under
 - CryptoSlate, (2025). [Tokenized US Treasuries just broke DeFi's most sacred rule ⧉](https://cryptoslate.com/tokenized-us-treasuries-silently-replaced-defis-foundation-and-you-missed-the-critical-9-billion-shift/ "Tokenized US Treasuries — CryptoSlate"). CryptoSlate.
 - MEXC News, (2026). [BlackRock files for two new tokenized funds with the U.S. SEC on Ethereum ⧉](https://www.mexc.com/news/1080472 "BlackRock files for two new tokenized funds with the U.S. SEC on Ethereum"). MEXC News.
 - Stellar Foundation, (2026). [Franklin Templeton, Stellar Development Foundation Mark Five Years of BENJI ⧉](https://stellar.org/press/franklin-templeton-stellar-development-foundation-mark-five-years-of-benji-the-first-u-s-registered-tokenized-money-market-fund "Five Years of BENJI"). Stellar Development Foundation.
-

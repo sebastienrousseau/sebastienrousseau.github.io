@@ -8,9 +8,129 @@
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>ko-KR</news:language>
     </news:publication>
-    <news:publication_date>2026-05-28T18:12:27+00:00</news:publication_date>
+    <news:publication_date>2026-06-07T18:23:54+00:00</news:publication_date>
     <news:title>2026년 자율 트레저리 지수: 에이전트형 트레저리, 프로그래밍 가능한 유동성, 토큰화 예금, 실시간 현금 통제</news:title>
     <news:keywords>자율 트레저리 2026, 에이전트형 트레저리, 프로그래밍 가능한 유동성, 토큰화 예금 트레저리, 실시간 트레저리, 현금 관리 AI</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ko/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ko-KR</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-07T18:23:54+00:00</news:publication_date>
+    <news:title>2026년 멀티레일 뱅크: 카드·A2A·스테이블코인·RTP·FedNow·Open Banking을 하나의 전략으로</news:title>
+    <news:keywords>결제 오케스트레이션 레이어, FedNow vs RTP, FedNow vs ACH, 스테이블코인 결제, USDC 원자적 결제, ISO 20022 pacs.008, A2A 계좌간 결제, Open Banking API, 사전 자금공급 유동성, 24/7 유동성 함정, 2026 멀티레일 뱅크, 결제 라우팅 엔진, ERP 대사</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ko/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ko-KR</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-07T18:23:54+00:00</news:publication_date>
+    <news:title>양자내성 결제 인프라: 은행이 레거시 레일을 개조하지 않고 대체할 수밖에 없는 이유</news:title>
+    <news:keywords>양자내성암호, PQC 결제, 암호 민첩성, 지금 수집 나중에 복호화, HNDL, NIST 양자내성 표준, ML-KEM, ML-DSA, FIPS 203, FIPS 204, 결제 레일 마이그레이션, ISO 20022 PQC, SWIFT MT 대체, HSM, PKI 붕괴, 운영 회복력, Quantum Computing Cybersecurity Preparedness Act</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ko/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ko-KR</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-07T18:23:54+00:00</news:publication_date>
+    <news:title>디지털 자산 2026: 인프라 전환의 해</news:title>
+    <news:keywords>디지털 자산 2026, 토큰화된 실물자산, 스테이블코인 은행, 토큰화 예금, 디지털 자산 수탁, DLT 뱅킹, 결제 인프라, 담보 이동성, 프로그래밍 가능한 화폐, 은행 디지털 자산 전략</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ko/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ko-KR</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-06T06:06:06+00:00</news:publication_date>
+    <news:title>2026 거액 결제 지수: ISO 20022, 토큰화 예금, 실시간 레일, 국경 간 결제</news:title>
+    <news:keywords>거액 결제 2026, ISO 20022, 토큰화 예금, Project Agorá, 국경 간 결제, 실시간 결제, 구조화 주소 데이터, 결제 데이터 품질</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ko/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ko-KR</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-05T06:06:06+00:00</news:publication_date>
+    <news:title>2026년 클라우드 네이티브 뱅킹 지수: DORA, 플랫폼 엔지니어링, 소버린 클라우드, 운영 회복력</news:title>
+    <news:keywords>클라우드 네이티브 뱅킹 2026, DORA 은행, 클라우드 집중 위험, 플랫폼 엔지니어링 은행, ICT 제3자 위험, 클라우드 출구 전략, 소버린 클라우드</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ko/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ko-KR</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-04T06:06:06+00:00</news:publication_date>
+    <news:title>2026 양자내성 뱅킹 지수: 양자내성 암호, QKD, 암호 민첩성, 수집 후 복호화 위험</news:title>
+    <news:keywords>2026 양자내성 뱅킹, 은행 양자내성 암호, NIST FIPS 203, ML-KEM, ML-DSA, SLH-DSA, 암호 민첩성, QKD 뱅킹</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ko/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ko-KR</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-03T06:06:06+00:00</news:publication_date>
+    <news:title>2026년 은행을 위한 에이전틱 AI 인덱스: 자율성, 거버넌스, 감사 가능성, 비즈니스 임팩트 측정하기</news:title>
+    <news:keywords>2026 에이전틱 AI 뱅킹, 은행 AI 에이전트, 금융 서비스 AI 거버넌스, 자율 뱅킹 워크플로, 모델 리스크 관리, AI 감사 가능성, SR 11-7, ISO 20022</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ko/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ko-KR</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-02T06:06:06+00:00</news:publication_date>
+    <news:title>2026 뱅킹 인프라 인덱스: 에이전트 AI, 양자내성 보안, 클라우드 네이티브 회복력, 도매 결제 준비도 측정</news:title>
+    <news:keywords>뱅킹 인프라 인덱스 2026, 에이전트 AI 뱅킹, 양자내성 뱅킹, 클라우드 네이티브 뱅킹, 도매 결제, ISO 20022, DORA, Project Agora, 토큰화 예금</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ko/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ko-KR</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-30T06:06:06+00:00</news:publication_date>
+    <news:title>영국 도매 디지털 시장 2026: 토큰화 길트, 결제, 챔피언 직책</news:title>
+    <news:keywords>영국 도매 디지털 시장 2026, Wholesale Digital Markets Champion, 토큰화 길트, UK gilts, DLT 결제, BoE DSS, Project Guardian, SDX, Project Agorá, HM Treasury, Bank of England, City of London</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ko/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ko-KR</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-29T06:06:06+00:00</news:publication_date>
+    <news:title>ISO 20022 마이그레이션 이후: 2026년 결제 데이터를 은행 제품으로</news:title>
+    <news:keywords>ISO 20022 2026, 구조화 주소, CBPR+, 결제 데이터 제품, 용도 코드, 기업 트레저리, 대사, 제재 스크리닝, 사기 탐지</news:keywords>
   </news:news>
 </url>
 <url>

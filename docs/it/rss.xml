@@ -6,14 +6,14 @@
     <description>Articoli in italiano: IA applicata, pagamenti ISO 20022, crittografia post-quantistica e trasformazione dei pagamenti wholesale.</description>
     <atom:link href="https://sebastienrousseau.com/it/rss.xml" rel="self" type="application/rss+xml"/>
     <language>it-IT</language>
-    <lastBuildDate>Thu, 28 May 2026 18:12:27 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 07 Jun 2026 18:23:54 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Tutti i diritti riservati.</copyright>
     <item>
       <title>Autonomous Treasury Index 2026: tesoreria agentica, liquidità programmabile, depositi tokenizzati e controllo di cassa in tempo reale</title>
       <link>https://sebastienrousseau.com/it/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/</link>
       <description>Un indice 2026 della maturità della tesoreria autonoma: workflow agentici, liquidità programmabile, depositi tokenizzati, pagamenti in tempo reale e controllo di cassa automatizzato.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/it/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/</guid>
-      <pubDate>Thu, 28 May 2026 18:12:27 +0000</pubDate>
+      <pubDate>Sun, 07 Jun 2026 18:23:54 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/christopher-burns-Kj2SaNHG-hg.webp" type="image/webp" length="0"/>
       <category>tesoreria autonoma 2026</category>
@@ -24,11 +24,111 @@
       <category>cash management AI</category>
     </item>
     <item>
+      <title>L&apos;indice dei pagamenti all&apos;ingrosso nel 2026: ISO 20022, depositi tokenizzati, binari real-time e regolamento transfrontaliero</title>
+      <link>https://sebastienrousseau.com/it/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</link>
+      <description>L&apos;indice 2026 dei pagamenti all&apos;ingrosso per misurare la qualità dei dati ISO 20022, i depositi tokenizzati, i binari real-time, il regolamento transfrontaliero e l&apos;efficienza di liquidità.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/it/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</guid>
+      <pubDate>Sun, 07 Jun 2026 18:23:54 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/miquel-parera-NsXLehhHx1Q.webp" type="image/webp" length="0"/>
+      <category>pagamenti all&apos;ingrosso 2026</category>
+      <category>ISO 20022</category>
+      <category>depositi tokenizzati</category>
+      <category>Project Agorá</category>
+      <category>pagamenti transfrontalieri</category>
+      <category>pagamenti real-time</category>
+      <category>indirizzo strutturato</category>
+      <category>qualità dei dati di pagamento</category>
+    </item>
+    <item>
+      <title>L&apos;indice del banking cloud-nativo 2026: DORA, ingegneria di piattaforma, cloud sovrano e resilienza operativa</title>
+      <link>https://sebastienrousseau.com/it/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/</link>
+      <description>L&apos;indice 2026 del banking cloud-nativo per misurare la prontezza DORA, la maturità dell&apos;ingegneria di piattaforma, il rischio di concentrazione cloud, l&apos;evidenza di uscita e la resilienza operativa.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/it/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/</guid>
+      <pubDate>Sun, 07 Jun 2026 18:23:54 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/quang-nguyen-vinh-2649403.webp&w=1600&format=webp&q=85" type="image/webp" length="0"/>
+      <category>banking cloud-nativo 2026</category>
+      <category>DORA banche</category>
+      <category>rischio concentrazione cloud</category>
+      <category>ingegneria di piattaforma banche</category>
+      <category>rischio ICT terze parti</category>
+      <category>strategia di uscita cloud</category>
+      <category>cloud sovrano</category>
+    </item>
+    <item>
+      <title>Agentic AI Index per le banche 2026: autonomia, governance, auditability</title>
+      <link>https://sebastienrousseau.com/it/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/</link>
+      <description>Framework a indice per misurare la prontezza dell&apos;agentic AI nelle banche tier-1: autonomia, governance, auditability, affidabilità, controlli, valore di business.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/it/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/</guid>
+      <pubDate>Sun, 07 Jun 2026 18:23:54 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>agentic AI banche 2026</category>
+      <category>agenti AI banche</category>
+      <category>AI governance servizi finanziari</category>
+      <category>flussi di lavoro bancari autonomi</category>
+      <category>model risk management</category>
+      <category>AI auditability</category>
+      <category>SR 11-7</category>
+      <category>SS1/23</category>
+      <category>OAuth</category>
+      <category>OPA</category>
+    </item>
+    <item>
+      <title>La banca multi-rail nel 2026: carte, A2A, stablecoin, RTP, FedNow e Open Banking in un&apos;unica strategia</title>
+      <link>https://sebastienrousseau.com/it/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</link>
+      <description>FedNow esige liquidità pre-finanziata 24/7. ACH è economico ma T+1. USDC regola atomicamente ma serve infrastruttura wallet. La banca multi-rail 2026 instrada ogni pagamento per costo, finalità e costo di liquidità — guidata da un motore di orchestrazione che legge ISO 20022 pacs.008.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/it/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</guid>
+      <pubDate>Sun, 07 Jun 2026 18:23:54 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
+      <category>motore di orchestrazione pagamenti</category>
+      <category>FedNow vs RTP</category>
+      <category>FedNow vs ACH</category>
+      <category>regolamento stablecoin</category>
+      <category>regolamento atomico USDC</category>
+      <category>ISO 20022 pacs.008</category>
+      <category>account-to-account A2A</category>
+      <category>API Open Banking</category>
+      <category>liquidità pre-finanziata</category>
+      <category>trappola liquidità 24/7</category>
+      <category>banca multi-rail 2026</category>
+      <category>motore di instradamento pagamenti</category>
+      <category>riconciliazione ERP</category>
+    </item>
+    <item>
+      <title>Infrastruttura pagamenti post-quantistica: perché le banche potrebbero sostituire i rail legacy invece di adattarli</title>
+      <link>https://sebastienrousseau.com/it/2026-05-31-post-quantum-pagamenti-infrastructure-replace-rather-than-retrofit-2026/</link>
+      <description>La crittografia post-quantistica impone una scelta binaria ai rail di pagamento: adattare RSA/ECC dentro involucri SWIFT MT e ISO 20022 mai dimensionati per ML-KEM e ML-DSA, oppure sostituire con infrastrutture cripto-agili. Decidere prima che HNDL diventi perdita operativa.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/it/2026-05-31-post-quantum-pagamenti-infrastructure-replace-rather-than-retrofit-2026/</guid>
+      <pubDate>Sun, 07 Jun 2026 18:23:54 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp" type="image/webp" length="0"/>
+      <category>crittografia post-quantistica</category>
+      <category>pagamenti PQC</category>
+      <category>cripto-agilità</category>
+      <category>raccogli-ora-decifra-dopo</category>
+      <category>HNDL</category>
+      <category>standard post-quantistici NIST</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>FIPS 203</category>
+      <category>FIPS 204</category>
+      <category>migrazione rail di pagamento</category>
+      <category>ISO 20022 PQC</category>
+      <category>sostituzione SWIFT MT</category>
+      <category>HSM</category>
+      <category>collasso PKI</category>
+      <category>resilienza operativa</category>
+      <category>Quantum Computing Cybersecurity Preparedness Act</category>
+    </item>
+    <item>
       <title>DORA, EU AI Act e sovranità dei dati: lo stack di conformità 2026 per le banche</title>
       <link>https://sebastienrousseau.com/it/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>
       <description>DORA, EU AI Act, GDPR, rischio di concentrazione cloud e sovranità dei dati convergono nello stack di conformità 2026 per le banche europee.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/it/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</guid>
-      <pubDate>Thu, 28 May 2026 18:12:27 +0000</pubDate>
+      <pubDate>Sun, 07 Jun 2026 18:23:54 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
       <category>DORA 2026</category>
@@ -40,11 +140,30 @@
       <category>AI ad alto rischio</category>
     </item>
     <item>
+      <title>Asset digitali nel 2026: la transizione infrastrutturale che le banche non possono rinviare</title>
+      <link>https://sebastienrousseau.com/it/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</link>
+      <description>Gli asset digitali non sono più una scommessa di innovazione: sono una questione di architettura di regolamento, custodia e bilancio. Il compito per le banche è progettare infrastrutture sotto incertezza strutturale.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/it/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</guid>
+      <pubDate>Sun, 07 Jun 2026 18:23:54 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/corporate-finance.webp" type="image/webp" length="0"/>
+      <category>asset digitali 2026</category>
+      <category>asset reali tokenizzati</category>
+      <category>stablecoins banche</category>
+      <category>depositi tokenizzati</category>
+      <category>custodia asset digitali</category>
+      <category>DLT banche</category>
+      <category>infrastruttura di regolamento</category>
+      <category>mobilità del collaterale</category>
+      <category>moneta programmabile</category>
+      <category>strategia bancaria asset digitali</category>
+    </item>
+    <item>
       <title>Pagamenti agentici nel banking: consenso, responsabilità e nuova UX 2026</title>
       <link>https://sebastienrousseau.com/it/2026-05-23-agentic-pagamenti-banking-consent-liability-new-payment-ux-2026/</link>
       <description>Nel 2026 i pagamenti agentici sono passati dal concetto alla transazione reale. Per le banche la sfida non è più se gli agenti IA possano disporre pagamenti, ma come strutturare consenso, responsabilità, identità, auditabilità, controlli antifrode e interoperabilità dei protocolli.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/it/2026-05-23-agentic-pagamenti-banking-consent-liability-new-payment-ux-2026/</guid>
-      <pubDate>Thu, 28 May 2026 18:12:27 +0000</pubDate>
+      <pubDate>Sun, 07 Jun 2026 18:23:54 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/ai-robot.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
       <category>pagamenti agentici 2026</category>
@@ -67,13 +186,87 @@
       <category>commercio IA</category>
     </item>
     <item>
+      <title>L&apos;Indice Quantum-Safe Banking nel 2026: Crittografia Post-Quantistica, QKD, Crypto-Agility e Rischio Harvest-Now-Decrypt-Later</title>
+      <link>https://sebastienrousseau.com/it/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/</link>
+      <description>Un indice bancario per la prontezza quantum-safe nel 2026: standard post-quantistici NIST, inventario crittografico, crypto-agility, QKD ed esposizione dei dati a lunga vita.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/it/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/</guid>
+      <pubDate>Thu, 04 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>banca quantum-safe 2026</category>
+      <category>crittografia post-quantistica banche</category>
+      <category>NIST FIPS 203</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>SLH-DSA</category>
+      <category>crypto-agility</category>
+      <category>QKD banche</category>
+    </item>
+    <item>
+      <title>Banking Infrastructure Index 2026: AI agentica, quantum-safe, cloud, pagamenti</title>
+      <link>https://sebastienrousseau.com/it/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/</link>
+      <description>Un indice di infrastruttura bancaria ispirato allo Stanford AI Index per il 2026: prontezza su agentic AI, quantum-safe, resilienza cloud-nativa e pagamenti wholesale.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/it/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/</guid>
+      <pubDate>Tue, 02 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/miguel-sousa-ejIF-pJhYkM.webp" type="image/webp" length="0"/>
+      <category>banking infrastructure index 2026</category>
+      <category>agentic AI banche</category>
+      <category>quantum-safe banche</category>
+      <category>banche cloud-native</category>
+      <category>pagamenti wholesale</category>
+      <category>ISO 20022</category>
+      <category>DORA</category>
+      <category>ML-KEM</category>
+      <category>RTGS</category>
+      <category>Project Agorá</category>
+      <category>depositi tokenizzati</category>
+    </item>
+    <item>
+      <title>Mercati digitali all&apos;ingrosso nel Regno Unito: gilts tokenizzati, regolamento e il nuovo ruolo di champion</title>
+      <link>https://sebastienrousseau.com/it/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</link>
+      <description>Il ruolo di Wholesale Digital Markets Champion trasforma la finanza all&apos;ingrosso tokenizzata in un progetto di competitività nazionale del Regno Unito per il 2026.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/it/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</guid>
+      <pubDate>Sat, 30 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>mercati digitali all&apos;ingrosso UK 2026</category>
+      <category>Wholesale Digital Markets Champion</category>
+      <category>gilts tokenizzati</category>
+      <category>regolamento DLT</category>
+      <category>BoE DSS</category>
+      <category>Project Guardian</category>
+      <category>SDX</category>
+      <category>Project Agorá</category>
+      <category>tokenizzazione UK</category>
+      <category>City of London</category>
+    </item>
+    <item>
+      <title>ISO 20022 dopo la migrazione: trasformare i dati di pagamento in prodotti bancari nel 2026</title>
+      <link>https://sebastienrousseau.com/it/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</link>
+      <description>ISO 20022 dopo la migrazione è un&apos;opportunità di prodotto di dati. Indirizzi strutturati, codici scopo, dettagli di fattura, messaggi di indagine e status di pagamento più ricchi diventano prodotti di riconciliazione, frode, liquidità e conformità.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/it/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</guid>
+      <pubDate>Fri, 29 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/humphrey-muleba-1660004.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>ISO 20022 2026</category>
+      <category>indirizzo strutturato</category>
+      <category>CBPR+</category>
+      <category>prodotti di dati di pagamento</category>
+      <category>codici scopo</category>
+      <category>tesoreria aziendale</category>
+      <category>riconciliazione</category>
+      <category>screening sanzioni</category>
+      <category>rilevamento frodi</category>
+    </item>
+    <item>
       <title>L&apos;IA come sistema operativo dei pagamenti: frode, routing, resilienza e conformità nel 2026</title>
       <link>https://sebastienrousseau.com/it/2026-05-27-ai-operating-system-pagamenti-fraud-routing-resilience-compliance-2026/</link>
       <description>Nel 2026 l&apos;IA diventa il sistema operativo dei pagamenti: prevenzione frodi, riparazione, routing, previsione di liquidità, screening di conformità e controlli per il commercio agentico in tempo reale.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/it/2026-05-27-ai-operating-system-pagamenti-fraud-routing-resilience-compliance-2026/</guid>
       <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <enclosure url="https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp" type="image/webp" length="0"/>
       <category>AI pagamenti 2026</category>
       <category>frode nei pagamenti</category>
       <category>routing dei pagamenti</category>
@@ -248,7 +441,7 @@
       <guid isPermaLink="true">https://sebastienrousseau.com/it/2026-05-19-globali-wholesale-pagamenti-economia-2026/</guid>
       <pubDate>Tue, 19 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/meiying-ng-OrwkD-iWgqg.webp" type="image/webp" length="0"/>
+      <enclosure url="https://cloudcdn.pro/stocks/images/miguel-sousa-ejIF-pJhYkM.webp" type="image/webp" length="0"/>
       <category>pagamenti wholesale 2026</category>
       <category>economia dei pagamenti globali</category>
       <category>ISO 20022</category>

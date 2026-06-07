@@ -1,5 +1,6 @@
 ---
 title: "Alien Studio: My Tech-to Art Journey in Photography"
+tags: "Technology, Art, Photography, Rust, AI, calcul cuantic, Personal Journey, Alien Studio, Digital Art, Innovation, ISO 20022, criptografie post-cuantică"
 subtitle: "Începuturile unei Odisee Tehnologice"
 description: "Alăturați-vă mie în călătoria personală, de la Rust, AI și Quantum Computing până la redefinirea artei și fotografiei prin intermediul Alien Studio."
 date: "Jan 15, 2024"
@@ -140,4 +141,3 @@ I invite you to visit [**Alien Studio ⧉**][00], to see through the photographs
 [07]: https://en.wikipedia.org/wiki/Artificial_intelligence "Artificial intelligence"
 [08]: https://en.wikipedia.org/wiki/Quantum_computing "Quantum computing"
 [09]: https://www.midjourney.com/explore "Midjourney"
-

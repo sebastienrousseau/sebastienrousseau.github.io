@@ -1,5 +1,6 @@
 ---
 title: "Static Site Generator: Fastest Rust-Based SSG"
+tags: "pain001, ISO 20022, payment automation, cost reduction, payments, payment files, pain message, DORA, criptografie post-cuantică, AI, depozite tokenizate, Rust, banking cloud native, plăți transfrontaliere, stablecoinuri"
 subtitle: "Static Site Generator, cel mai rapid generator de site-uri statice bazat pe Rust pentru site-uri web cu impact ridicat."
 description: "Vă oferim posibilitatea de a crea site-uri web statice cu impact ridicat, cu posibilități infinite, scalabilitate nelimitată și o prezență web cu adevărat unică pe care o controlați."
 date: "Oct 09, 2023"
@@ -129,4 +130,3 @@ If you have any questions, please don't hesitate to contact me via [LinkedIn ⧉
 [09]: /articles/index.html "Back to Articles"
 [10]: /contact/index.html "Contact Sebastien Rousseau"
 [11]: https://www.linkedin.com/in/sebastienrousseau/ "Sebastien Rousseau on LinkedIn"
-

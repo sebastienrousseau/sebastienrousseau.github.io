@@ -1,5 +1,6 @@
 ---
 title: "Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It"
+tags: "agentic AI, spec-driven development, banks, mulkin AI, EU AI Act, DORA, COBOL modernisation, HITL, HOTL, TPRM, AIBOM, Claude Code, post-quantum cryptography, ISO 20022, quantum computing, AI, Rust, open source, platform engineering"
 subtitle: "Agentic AI ya wuce daga gwaji zuwa samarwa. 70% na bankunan suna amfani da shi; ɗaya cikin biyar ne kawai ke da ƙwararre na mulki. Abokan gaba suna aiki da saurin injin, gado ya rubuta don zato na sarrafawa-tari na 1960s, kuma lokacin da ya ƙare na EU AI Act na haɗari mai tsanani yana nesa da makonni goma sha biyu."
 description: "Agentic AI ya wuce daga gwaji zuwa samarwa a bankunan duniya. Kashi 70% na cibiyoyi suna amfani da shi; ɗaya cikin biyar ne kawai ke da ƙwararre na mulki. Abokan gaba masu cin gashin kansu suna aiki da saurin injin, gado na COBOL an rubuta shi don zato na sarrafawa-tari na 1960s, kuma EU AI Act ta Agusta 2026 tana nesa da makonni goma sha biyu."
 date: "May 17, 2026"
@@ -297,4 +298,3 @@ Three things, sequenced. First, produce the AI Bill of Materials — the complet
 - VentureBeat, (2026). [Agentic coding at enterprise scale demands spec-driven development ⧉](https://venturebeat.com/orchestration/agentic-coding-at-enterprise-scale-demands-spec-driven-development "Agentic coding at enterprise scale demands spec-driven development"). VentureBeat.
 - The News (Pakistan), (2026). [Why British banks' push for agentic AI is worrying UK regulators ⧉](https://www.thenews.com.pk/latest/1385186-why-british-banks-push-for-agentic-ai-is-worrying-uk-regulators "Why British banks' push for agentic AI is worrying UK regulators"). The News International.
 - CNBC, (2026). [Anthropic's Mythos set off a cybersecurity 'hysteria' ⧉](https://www.cnbc.com/2026/05/08/anthropic-mythos-ai-cybersecurity-banks.html "Anthropic's Mythos set off a cybersecurity hysteria"). CNBC.
-

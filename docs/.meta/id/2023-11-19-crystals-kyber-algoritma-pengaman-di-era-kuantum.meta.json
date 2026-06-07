@@ -1,11 +1,13 @@
 {
-  "banner_alt": "Komputer kuantum modern yang ramping dan canggih",
-  "language": "id-ID",
-  "locale": "id_ID",
-  "date": "Nov 19, 2023",
+  "banner": "https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA.webp",
   "keywords": "komputasi kuantum, kriptografi tahan kuantum, CRYSTALS-Kyber, kriptografi, keamanan, perbankan, keuangan, enkripsi, perlindungan data, tahan masa depan",
   "subtitle": "CRYSTALS-Kyber, standar NIST FIPS 203 untuk enkapsulasi kunci pasca-kuantum.",
+  "language": "id-ID",
+  "date": "Nov 19, 2023",
+  "reading_time": 1,
   "description": "Temukan bagaimana CRYSTALS-Kyber, algoritma kriptografi tahan kuantum, merevolusi dunia kriptografi dan mempersiapkan kita menghadapi era kuantum.",
   "title": "[ID DRAFT] CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age",
-  "banner": "https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA.webp"
+  "banner_alt": "Komputer kuantum modern yang ramping dan canggih",
+  "word_count": 296,
+  "locale": "id_ID"
 }

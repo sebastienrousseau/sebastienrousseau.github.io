@@ -6,7 +6,7 @@ so no Anthropic API key ever lives in this repo.
 
 Workflow:
 
-  1. ``scripts/publish_daily.sh`` (or ``make publish-today``) runs THIS
+  1. ``scripts/editorial/publish-daily.sh`` (or ``make publish-today``) runs THIS
      script first. For each active non-EN locale it writes:
         - ``_posts/<lang>/<localized-slug>.md`` with localised
           frontmatter and a placeholder body (the EN body with a
@@ -25,14 +25,15 @@ Workflow:
 
 Usage::
 
-    python3 scripts/translate_post.py 2026-05-19-global-wholesale-payments-economics-2026
-    python3 scripts/translate_post.py <slug> --langs fr es de ja   # subset
-    python3 scripts/translate_post.py <slug> --dry-run             # plan only
+    python3 scripts/editorial/translate_post.py 2026-05-19-global-wholesale-payments-economics-2026
+    python3 scripts/editorial/translate_post.py <slug> --langs fr es de ja   # subset
+    python3 scripts/editorial/translate_post.py <slug> --dry-run             # plan only
 
 Idempotent — re-running on an already-translated post leaves real
 translations alone (only files whose body still starts with the
 ``<!-- translation-stub -->`` marker get overwritten).
 """
+
 from __future__ import annotations
 
 import sys as _sys  # path bootstrap — scripts reorg (scripts/lib/ on sys.path)
@@ -70,32 +71,53 @@ def active_non_en_locales() -> list[str]:
 
 _SLUG_DICT: dict[str, dict[str, str]] = {
     "fr": {
-        "global": "mondiaux", "wholesale": "de-gros", "payments": "paiements",
-        "economics": "economie", "agentic": "agentique",
-        "engineering": "ingenierie", "banks": "banques",
-        "blueprint": "feuille-de-route", "quantum": "quantique",
-        "cryptography": "cryptographie", "standards": "normes",
-        "developments": "evolutions", "best": "meilleure", "cloud": "cloud",
-        "infrastructure": "infrastructure", "architecture": "architecture",
-        "blackrock": "blackrock", "stablecoin": "stablecoin",
-        "tokenised": "tokenise", "mmf": "fcp-monetaire",
-        "securing": "securiser", "ledger": "registre",
-        "post-quantum": "post-quantique", "migration": "migration",
-        "corporate": "entreprise", "finance": "finance",
+        "global": "mondiaux",
+        "wholesale": "de-gros",
+        "payments": "paiements",
+        "economics": "economie",
+        "agentic": "agentique",
+        "engineering": "ingenierie",
+        "banks": "banques",
+        "blueprint": "feuille-de-route",
+        "quantum": "quantique",
+        "cryptography": "cryptographie",
+        "standards": "normes",
+        "developments": "evolutions",
+        "best": "meilleure",
+        "cloud": "cloud",
+        "infrastructure": "infrastructure",
+        "architecture": "architecture",
+        "blackrock": "blackrock",
+        "stablecoin": "stablecoin",
+        "tokenised": "tokenise",
+        "mmf": "fcp-monetaire",
+        "securing": "securiser",
+        "ledger": "registre",
+        "post-quantum": "post-quantique",
+        "migration": "migration",
+        "corporate": "entreprise",
+        "finance": "finance",
     },
     "de": {
-        "global": "globale", "payments": "zahlungsverkehr",
+        "global": "globale",
+        "payments": "zahlungsverkehr",
         "economics": "okonomie",
     },
     "es": {
-        "global": "global", "wholesale": "mayorista", "payments": "pagos",
+        "global": "global",
+        "wholesale": "mayorista",
+        "payments": "pagos",
         "economics": "economia",
     },
     "it": {
-        "global": "globali", "payments": "pagamenti", "economics": "economia",
+        "global": "globali",
+        "payments": "pagamenti",
+        "economics": "economia",
     },
     "pt-br": {
-        "global": "globais", "wholesale": "atacado", "payments": "pagamentos",
+        "global": "globais",
+        "wholesale": "atacado",
+        "payments": "pagamentos",
         "economics": "economia",
     },
     # Other 22 locales fall through to the EN slug — slug shape is
@@ -107,10 +129,7 @@ _SLUG_DICT: dict[str, dict[str, str]] = {
 def localized_slug(en_slug: str, lang: str) -> str:
     if lang not in _SLUG_DICT:
         return en_slug
-    out_parts = [
-        _SLUG_DICT[lang].get(token.lower(), token)
-        for token in en_slug.split("-")
-    ]
+    out_parts = [_SLUG_DICT[lang].get(token.lower(), token) for token in en_slug.split("-")]
     return "-".join(out_parts)
 
 
@@ -119,13 +138,33 @@ def localized_slug(en_slug: str, lang: str) -> str:
 # ---------------------------------------------------------------------------
 
 _LOCALE_CODES: dict[str, str] = {
-    "ar": "ar_AR", "bn": "bn_BD", "cs": "cs_CZ", "de": "de_DE",
-    "es": "es_ES", "fil": "fil_PH", "fr": "fr_FR", "ha": "ha_NG",
-    "he": "he_IL", "hi": "hi_IN", "id": "id_ID", "it": "it_IT",
-    "ja": "ja_JP", "ko": "ko_KR", "nl": "nl_NL", "pl": "pl_PL",
-    "pt-br": "pt_BR", "ro": "ro_RO", "ru": "ru_RU", "sv": "sv_SE",
-    "th": "th_TH", "tr": "tr_TR", "uk": "uk_UA", "vi": "vi_VN",
-    "yo": "yo_NG", "zh-hans": "zh_CN", "zh-hant": "zh_TW",
+    "ar": "ar_AR",
+    "bn": "bn_BD",
+    "cs": "cs_CZ",
+    "de": "de_DE",
+    "es": "es_ES",
+    "fil": "fil_PH",
+    "fr": "fr_FR",
+    "ha": "ha_NG",
+    "he": "he_IL",
+    "hi": "hi_IN",
+    "id": "id_ID",
+    "it": "it_IT",
+    "ja": "ja_JP",
+    "ko": "ko_KR",
+    "nl": "nl_NL",
+    "pl": "pl_PL",
+    "pt-br": "pt_BR",
+    "ro": "ro_RO",
+    "ru": "ru_RU",
+    "sv": "sv_SE",
+    "th": "th_TH",
+    "tr": "tr_TR",
+    "uk": "uk_UA",
+    "vi": "vi_VN",
+    "yo": "yo_NG",
+    "zh-hans": "zh_CN",
+    "zh-hant": "zh_TW",
 }
 
 
@@ -143,7 +182,7 @@ def parse_frontmatter(text: str) -> tuple[dict[str, str], str]:
     if end < 0:
         return {}, text
     fm_text = text[3:end].strip()
-    body = text[end + 4:].lstrip()
+    body = text[end + 4 :].lstrip()
     fm: dict[str, str] = {}
     for raw in fm_text.splitlines():
         line = raw.strip()
@@ -167,7 +206,11 @@ def emit_frontmatter(fm: dict[str, str]) -> str:
 
 
 def scaffold_one(
-    en_slug: str, en_text: str, lang_code: str, *, dry_run: bool,
+    en_slug: str,
+    en_text: str,
+    lang_code: str,
+    *,
+    dry_run: bool,
 ) -> str:
     """Write the stub MD for ``lang_code``. Returns a short status
     string the CLI prints."""
@@ -200,8 +243,7 @@ def scaffold_one(
     placeholder = (
         f"{STUB_MARKER}\n\n"
         f"> _Translation pending — read the "
-        f"[English original](/{en_slug}/) while we localise._\n\n"
-        + body
+        f"[English original](/{en_slug}/) while we localise._\n\n" + body
     )
 
     out_path.parent.mkdir(parents=True, exist_ok=True)
@@ -240,12 +282,14 @@ def main() -> int:
     p = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
     p.add_argument("slug", help="EN article slug under _posts/ (no .md suffix)")
     p.add_argument(
-        "--langs", nargs="*",
+        "--langs",
+        nargs="*",
         help="Restrict to these locale codes. Default: all active non-EN.",
     )
     p.add_argument("--dry-run", action="store_true", help="No writes.")
     p.add_argument(
-        "--list-stubs", action="store_true",
+        "--list-stubs",
+        action="store_true",
         help="Print every locale still carrying the stub marker for this slug.",
     )
     args = p.parse_args()
@@ -274,7 +318,7 @@ def main() -> int:
         print(
             "\nNext step: run Claude Code locally and ask it to translate "
             "the stub bodies (it'll find them with "
-            f"`python3 scripts/translate_post.py {args.slug} --list-stubs`)."
+            f"`python3 scripts/editorial/translate_post.py {args.slug} --list-stubs`)."
         )
     return 0
 

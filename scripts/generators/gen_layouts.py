@@ -5,6 +5,7 @@ The shared shell is everything except the body's `<section class="ap-hero">…</
 `<main>…</main>`, and `<aside>…</aside>`. Each layout below substitutes its own hero +
 main body. Aside is dropped (it lives on the homepage only).
 """
+
 from __future__ import annotations
 
 import sys as _sys  # path bootstrap — scripts reorg (scripts/lib/ on sys.path)
@@ -44,7 +45,7 @@ BREADCRUMB = (
     ',{"@type":"BreadcrumbList","itemListElement":['
     '{"@type":"ListItem","position":1,"name":"Home","item":"https://sebastienrousseau.com/"},'
     '{"@type":"ListItem","position":2,"name":"{{title}}","item":"{{url}}"}'
-    ']}'
+    "]}"
 )
 # Dated posts (the "report" layout) live inside the /articles/ Blog graph,
 # so their breadcrumb is three levels deep: Home > Articles > <post title>.
@@ -53,11 +54,9 @@ REPORT_BREADCRUMB = (
     '{"@type":"ListItem","position":1,"name":"Home","item":"https://sebastienrousseau.com/"},'
     '{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/articles/"},'
     '{"@type":"ListItem","position":3,"name":"{{title}}","item":"{{url}}"}'
-    ']}'
+    "]}"
 )
-IMAGE_OBJ = (
-    '{"@type":"ImageObject","url":"{{image}}","width":"{{image_width}}","height":"{{image_height}}"}'
-)
+IMAGE_OBJ = '{"@type":"ImageObject","url":"{{image}}","width":"{{image_width}}","height":"{{image_height}}"}'
 # The article banner is the visual lead, and the right artwork for
 # Article.image per Google's structured-data guidance. ``{{image}}`` was
 # the small 162×162 author headshot — wrong shape for a social preview.
@@ -87,7 +86,7 @@ PAPERS_FAQ = (
     '"acceptedAnswer":{"@type":"Answer","text":"Yes — limited, by selection. Commissioned work focuses on wholesale payments, ISO 20022 migration, post-quantum cryptography for financial services, and applied AI in banking. Speaking engagements at industry conferences, central-bank fora, and regulator round-tables are considered case-by-case."}},'
     '{"@type":"Question","name":"How do I follow new publications?",'
     '"acceptedAnswer":{"@type":"Answer","text":"New papers and research notes are announced first through the site RSS feed at /rss.xml and the Banking On Quantum newsletter at news.bankingonquantum.com, which covers post-quantum cryptography, central-bank policy, and the migration roadmap across major payment schemes."}}'
-    ']}'
+    "]}"
 )
 # FAQ block for /projects/. Mirrors the on-page accordion so AI engines can
 # cite licence, production-readiness, contribution and commercial-support
@@ -106,29 +105,74 @@ PROJECTS_FAQ = (
     '"acceptedAnswer":{"@type":"Answer","text":"Yes, on a selective basis. Engagements focus on ISO 20022 migration, post-quantum cryptography migration roadmaps, and applied AI in financial services. Get in touch with a short brief, your timeline and any constraints."}},'
     '{"@type":"Question","name":"How do I follow new releases?",'
     '"acceptedAnswer":{"@type":"Answer","text":"New papers and research notes are announced first through the site RSS feed and the Banking On Quantum newsletter, which covers post-quantum cryptography, central-bank policy, and the migration roadmap across major payment schemes. Individual repositories also publish releases on GitHub, which you can watch directly."}}'
-    ']}'
+    "]}"
 )
+
+
 # Each schema is wrapped in an @graph array so we can attach the BreadcrumbList
 # as a second top-level node without breaking the JSON envelope. ``breadcrumb``
 # defaults to the two-level form (Home > <page>); the "report" layout uses
 # REPORT_BREADCRUMB to slot Articles as the parent collection.
 def WRAP(body: str, extra: str = "", breadcrumb: str = BREADCRUMB) -> str:
-    return '"@graph":[{' + body + '}' + breadcrumb + extra + ']'
+    return '"@graph":[{' + body + "}" + breadcrumb + extra + "]"
+
 
 SCHEMA_TEMPLATES = {
-    "default":  WRAP('"@type":"WebPage","name":"{{title}}","description":"{{description}}","url":"{{url}}","inLanguage":"{{hreflang}}","image":' + IMAGE_OBJ + ',"author":' + PERSON_REF + ',"publisher":' + PERSON_REF + ',"isPartOf":' + SITE_REF),
-    "about":    WRAP('"@type":"ProfilePage","name":"{{title}}","description":"{{description}}","url":"{{url}}","inLanguage":"{{hreflang}}","mainEntity":' + PERSON_REF + ',"isPartOf":' + SITE_REF + ',"dateCreated":"2007-01-01","dateModified":"{{last_reviewed}}"'),
-    "contact":  WRAP('"@type":"ContactPage","name":"{{title}}","description":"{{description}}","url":"{{url}}","inLanguage":"{{hreflang}}","mainEntity":' + PERSON_REF + ',"isPartOf":' + SITE_REF),
-    "articles": WRAP('"@type":"CollectionPage","name":"{{title}}","description":"{{description}}","url":"{{url}}","inLanguage":"{{hreflang}}","about":"Banking, payments, AI and post-quantum cryptography","author":' + PERSON_REF + ',"isPartOf":' + SITE_REF),
-    "papers":   WRAP('"@type":"CollectionPage","name":"{{title}}","description":"{{description}}","url":"{{url}}","inLanguage":"{{hreflang}}","about":"Research papers and white papers on wholesale payments and post-quantum cryptography","author":' + PERSON_REF + ',"isPartOf":' + SITE_REF, PAPERS_FAQ),
-    "projects": WRAP('"@type":"CollectionPage","name":"{{title}}","description":"{{description}}","url":"{{url}}","inLanguage":"{{hreflang}}","about":"Open-source projects applied to finance and banking","author":' + PERSON_REF + ',"isPartOf":' + SITE_REF, PROJECTS_FAQ),
-    "playlist": WRAP('"@type":"CollectionPage","name":"{{title}}","description":"{{description}}","url":"{{url}}","inLanguage":"{{hreflang}}","about":"Curated Spotify playlists","author":' + PERSON_REF + ',"isPartOf":' + SITE_REF),
-    "report":   WRAP(
+    "default": WRAP(
+        '"@type":"WebPage","name":"{{title}}","description":"{{description}}","url":"{{url}}","inLanguage":"{{hreflang}}","image":'
+        + IMAGE_OBJ
+        + ',"author":'
+        + PERSON_REF
+        + ',"publisher":'
+        + PERSON_REF
+        + ',"isPartOf":'
+        + SITE_REF
+    ),
+    "about": WRAP(
+        '"@type":"ProfilePage","name":"{{title}}","description":"{{description}}","url":"{{url}}","inLanguage":"{{hreflang}}","mainEntity":'
+        + PERSON_REF
+        + ',"isPartOf":'
+        + SITE_REF
+        + ',"dateCreated":"2007-01-01","dateModified":"{{last_reviewed}}"'
+    ),
+    "contact": WRAP(
+        '"@type":"ContactPage","name":"{{title}}","description":"{{description}}","url":"{{url}}","inLanguage":"{{hreflang}}","mainEntity":'
+        + PERSON_REF
+        + ',"isPartOf":'
+        + SITE_REF
+    ),
+    "articles": WRAP(
+        '"@type":"CollectionPage","name":"{{title}}","description":"{{description}}","url":"{{url}}","inLanguage":"{{hreflang}}","about":"Banking, payments, AI and post-quantum cryptography","author":'
+        + PERSON_REF
+        + ',"isPartOf":'
+        + SITE_REF
+    ),
+    "papers": WRAP(
+        '"@type":"CollectionPage","name":"{{title}}","description":"{{description}}","url":"{{url}}","inLanguage":"{{hreflang}}","about":"Research papers and white papers on wholesale payments and post-quantum cryptography","author":'
+        + PERSON_REF
+        + ',"isPartOf":'
+        + SITE_REF,
+        PAPERS_FAQ,
+    ),
+    "projects": WRAP(
+        '"@type":"CollectionPage","name":"{{title}}","description":"{{description}}","url":"{{url}}","inLanguage":"{{hreflang}}","about":"Open-source projects applied to finance and banking","author":'
+        + PERSON_REF
+        + ',"isPartOf":'
+        + SITE_REF,
+        PROJECTS_FAQ,
+    ),
+    "playlist": WRAP(
+        '"@type":"CollectionPage","name":"{{title}}","description":"{{description}}","url":"{{url}}","inLanguage":"{{hreflang}}","about":"Curated Spotify playlists","author":'
+        + PERSON_REF
+        + ',"isPartOf":'
+        + SITE_REF
+    ),
+    "report": WRAP(
         '"@type":"BlogPosting","headline":"{{title}}","description":"{{description}}","image":'
         + BANNER_OBJ
         + ',"url":"{{url}}","datePublished":"{{item_pub_date}}","dateModified":"{{last_reviewed}}",'
         '"inLanguage":"{{hreflang}}","keywords":"{{keywords}}","articleSection":"{{category}}",'
-        '"author":' + PERSON_REF + ',"publisher":' + PERSON_REF + ','
+        '"author":' + PERSON_REF + ',"publisher":' + PERSON_REF + ","
         '"mainEntityOfPage":{"@type":"WebPage","@id":"{{url}}"},'
         '"isPartOf":' + BLOG_REF + SPEAKABLE,
         breadcrumb=REPORT_BREADCRUMB,
@@ -140,8 +184,8 @@ def schema_for(kind: str) -> str:
     body = SCHEMA_TEMPLATES.get(kind, SCHEMA_TEMPLATES["default"])
     return (
         '    <script type="application/ld+json">\n'
-        '{"@context":"https://schema.org",' + body + '}\n'
-        '    </script>\n'
+        '{"@context":"https://schema.org",' + body + "}\n"
+        "    </script>\n"
     )
 
 
@@ -257,37 +301,139 @@ def report_layout() -> str:
 
 # (title, eyebrow, description, spotify_id)
 PLAYLISTS_FEATURED = (
-    "TETRA 🔱", "Latest · Soul · Uplift", "May 11, 2024",
+    "TETRA 🔱",
+    "Latest · Soul · Uplift",
+    "May 11, 2024",
     "Step into the harmonious realm of TETRA. A euphoric playlist curated to uplift your spirits and fill your soul with joy.",
     "2KTuNfNOJsvUmrcTK3Erh5",
 )
 
 PLAYLISTS_SECTIONS = [
-    ("SOUL & JAZZ", "Soulful, jazz and downtempo", "Smooth Jazz, Neo Soul, and laid-back grooves. Playlists for when the day calls for a slower tempo.", [
-        ("SUMMERTIME 🌞", "Soul · Jazz", "Unwind and embrace the essence of summer with this curated selection of Jazz, Soul, R&B and Neo Soul beats.", "5RQ9X2WmRseY9SEU5oLwwX"),
-        ("NEO SOUL 🎶", "Soul · R&B", "A deep dive into the quintessential collection of Jazz, Soul, R&B and Neo Soul beats.", "7yvugJcCzkaWN908rXTSIL"),
-        ("LOTUS 🪷", "Nu-Jazz · Downtempo", "Take a break from a busy day and relax with soothing nu jazz and downtempo beats.", "7hZsKoasqFogxZVqDKYJwA"),
-    ]),
-    ("MORNING & MOOD", "Energy and tone", "Tracks to kick off the day or shift the room. Fashion-forward soul, vivid colour, and laid-back energy.", [
-        ("MORNING ☕️", "Soul · Mood", "Soulful tracks with a fashion-forward vibe. Music to set the tone for a productive and stylish day.", "3GspTYbjOA4oCSulh3YLng"),
-        ("COLOURS 🌈", "Soul · Joy", "Celebrate the joy of life and dive into a world of vivid emotions, vibrant hues and soulful rhythms.", "2JGGk44Nopf8BX7oYJsler"),
-        ("ESSENTIAL 💚", "House · Deep house", "Laid-back beats, house-influenced grooves and new deep house tracks.", "1lZbauO3yCPB3YAyT5xLCW"),
-    ]),
-    ("ELECTRONIC", "Disco, house and workout", "Funky disco, French touch and electro. Energetic listening for movement, focus or the dance floor.", [
-        ("COOL 🎧", "Disco · French house", "Seamlessly blending funky disco, house, French touch and other genres into an ultra-cool and energetic musical experience.", "4y3b1FXh8eVhwRRoKwrtSx"),
-        ("LOOK 💋", "Nu-disco · Electro", "A sonic voyage featuring Nu-Disco, French House, Electro and Disco House tunes from artists like Madeon and Fred Falke.", "0S31oWFMppEkhtHiSsldI1"),
-        ("WORKOUT BEATS 💿", "Hip-hop · Indie pop", "Laid-back beats, hip-hop-influenced grooves and new indie pop tracks.", "5yegPuy33SiP7DIwL6MF0J"),
-    ]),
-    ("HIP-HOP", "Rap, R&B and beats", "From original Hip Hop sessions to hardcore rap, contemporary R&B and Lo-Fi. The full breadth of beats.", [
-        ("HIP-HOP 🎤", "Hip-hop · R&B", "Original Hip Hop, Rap and R&B Flavor Sessions.", "6jFJIxFfpUx0oGkbLDImKB"),
-        ("BLAST 💥", "Hip-hop · Rap", "Brace yourself for hardcore rap and hip hop tracks.", "6830pCYVUFYHtnkE4SJfhR"),
-        ("HIP HOP MIXTAPE 📼", "Hip-hop", "A few of the favourite hip-hop gems.", "5yUR35ZVOOpxyPOBhAvhkR"),
-        ("LIFETIME ⏳", "Hip-hop · R&B", "Soulful beats and thoughtful lyrics. A captivating look into the world of contemporary hip hop, R&B and rap.", "1RnzXyrj73nyo4yK6j3xT9"),
-        ("LO-FI BEATS 🎹", "Lo-fi", "Laid-back vibes and mellow rhythms with this stunning playlist of Lo-Fi Hip Hop beats.", "6Utj7AwHY6VkgGtm9wAneh"),
-    ]),
-    ("GLOBAL", "World rhythms", None, [
-        ("WASSULU DON 🦁", "Africa · World", "Celebrate the diverse heritage of African music. From the soulful rhythms of Wassoulou to the lively beats of Londonko.", "13oQhLqxlNuPrn9pOIx6Vx"),
-    ]),
+    (
+        "SOUL & JAZZ",
+        "Soulful, jazz and downtempo",
+        "Smooth Jazz, Neo Soul, and laid-back grooves. Playlists for when the day calls for a slower tempo.",
+        [
+            (
+                "SUMMERTIME 🌞",
+                "Soul · Jazz",
+                "Unwind and embrace the essence of summer with this curated selection of Jazz, Soul, R&B and Neo Soul beats.",
+                "5RQ9X2WmRseY9SEU5oLwwX",
+            ),
+            (
+                "NEO SOUL 🎶",
+                "Soul · R&B",
+                "A deep dive into the quintessential collection of Jazz, Soul, R&B and Neo Soul beats.",
+                "7yvugJcCzkaWN908rXTSIL",
+            ),
+            (
+                "LOTUS 🪷",
+                "Nu-Jazz · Downtempo",
+                "Take a break from a busy day and relax with soothing nu jazz and downtempo beats.",
+                "7hZsKoasqFogxZVqDKYJwA",
+            ),
+        ],
+    ),
+    (
+        "MORNING & MOOD",
+        "Energy and tone",
+        "Tracks to kick off the day or shift the room. Fashion-forward soul, vivid colour, and laid-back energy.",
+        [
+            (
+                "MORNING ☕️",
+                "Soul · Mood",
+                "Soulful tracks with a fashion-forward vibe. Music to set the tone for a productive and stylish day.",
+                "3GspTYbjOA4oCSulh3YLng",
+            ),
+            (
+                "COLOURS 🌈",
+                "Soul · Joy",
+                "Celebrate the joy of life and dive into a world of vivid emotions, vibrant hues and soulful rhythms.",
+                "2JGGk44Nopf8BX7oYJsler",
+            ),
+            (
+                "ESSENTIAL 💚",
+                "House · Deep house",
+                "Laid-back beats, house-influenced grooves and new deep house tracks.",
+                "1lZbauO3yCPB3YAyT5xLCW",
+            ),
+        ],
+    ),
+    (
+        "ELECTRONIC",
+        "Disco, house and workout",
+        "Funky disco, French touch and electro. Energetic listening for movement, focus or the dance floor.",
+        [
+            (
+                "COOL 🎧",
+                "Disco · French house",
+                "Seamlessly blending funky disco, house, French touch and other genres into an ultra-cool and energetic musical experience.",
+                "4y3b1FXh8eVhwRRoKwrtSx",
+            ),
+            (
+                "LOOK 💋",
+                "Nu-disco · Electro",
+                "A sonic voyage featuring Nu-Disco, French House, Electro and Disco House tunes from artists like Madeon and Fred Falke.",
+                "0S31oWFMppEkhtHiSsldI1",
+            ),
+            (
+                "WORKOUT BEATS 💿",
+                "Hip-hop · Indie pop",
+                "Laid-back beats, hip-hop-influenced grooves and new indie pop tracks.",
+                "5yegPuy33SiP7DIwL6MF0J",
+            ),
+        ],
+    ),
+    (
+        "HIP-HOP",
+        "Rap, R&B and beats",
+        "From original Hip Hop sessions to hardcore rap, contemporary R&B and Lo-Fi. The full breadth of beats.",
+        [
+            (
+                "HIP-HOP 🎤",
+                "Hip-hop · R&B",
+                "Original Hip Hop, Rap and R&B Flavor Sessions.",
+                "6jFJIxFfpUx0oGkbLDImKB",
+            ),
+            (
+                "BLAST 💥",
+                "Hip-hop · Rap",
+                "Brace yourself for hardcore rap and hip hop tracks.",
+                "6830pCYVUFYHtnkE4SJfhR",
+            ),
+            (
+                "HIP HOP MIXTAPE 📼",
+                "Hip-hop",
+                "A few of the favourite hip-hop gems.",
+                "5yUR35ZVOOpxyPOBhAvhkR",
+            ),
+            (
+                "LIFETIME ⏳",
+                "Hip-hop · R&B",
+                "Soulful beats and thoughtful lyrics. A captivating look into the world of contemporary hip hop, R&B and rap.",
+                "1RnzXyrj73nyo4yK6j3xT9",
+            ),
+            (
+                "LO-FI BEATS 🎹",
+                "Lo-fi",
+                "Laid-back vibes and mellow rhythms with this stunning playlist of Lo-Fi Hip Hop beats.",
+                "6Utj7AwHY6VkgGtm9wAneh",
+            ),
+        ],
+    ),
+    (
+        "GLOBAL",
+        "World rhythms",
+        None,
+        [
+            (
+                "WASSULU DON 🦁",
+                "Africa · World",
+                "Celebrate the diverse heritage of African music. From the soulful rhythms of Wassoulou to the lively beats of Londonko.",
+                "13oQhLqxlNuPrn9pOIx6Vx",
+            ),
+        ],
+    ),
 ]
 
 
@@ -329,8 +475,7 @@ def _playlist_section(kicker: str, title: str, lede, items) -> str:
 
 def playlist_layout() -> str:
     sections_html = "\n\n".join(
-        _playlist_section(key, title, link, items)
-        for key, title, link, items in PLAYLISTS_SECTIONS
+        _playlist_section(key, title, link, items) for key, title, link, items in PLAYLISTS_SECTIONS
     )
     body = f"""    <section class="ap-hero">
       <h1>{{{{name}}}}</h1>
@@ -385,8 +530,8 @@ def main() -> None:
     }
     for name, kind in kind_map.items():
         write(name, inject_schema(page_html, kind))
-    write("contact.html",  inject_schema(contact_layout(),  "contact"))
-    write("report.html",   inject_schema(report_layout(),   "report"))
+    write("contact.html", inject_schema(contact_layout(), "contact"))
+    write("report.html", inject_schema(report_layout(), "report"))
     write("playlist.html", inject_schema(playlist_layout(), "playlist"))
 
 

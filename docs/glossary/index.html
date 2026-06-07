@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Tue, 02 Jun 2026 05:00:00 +0000" id="date" />
+    <meta itemprop="dateModified" content="Tue, 02 Jun 2026 05:00:00 +0000" id="last-modified" />
+    <title>Glossary: sebastienrousseau.com</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="Standards-anchored glossary for sebastienrousseau.com. Every term carries a sameAs link to the canonical standards-body or central-bank source (NIST, ISO, BIS, ECB, Federal Reserve, EUR-Lex).">
+<meta name="keywords" content="glossary, ML-KEM, ML-DSA, ISO 20022, DORA, FedNow, CBDC, tokenised deposits, RTGS, SWIFT gpi, PSD3, banking terms, payments terms, post-quantum cryptography">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Glossary">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-Ft50DzCRhSXGhKZbUVZMiSGa1OreUIxnxHZuhvKQAw4=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-KaikhFk3paFH9XoUHZwvgxNjSYXWvAGtQ1NPIGBN9mQ=' 'sha256-OQBgpIvpKxfSIZ7gL2cYND8pziLE7IsRBMFtVhun+/0=' 'sha256-bZyb4/DsouRPVti0pIkX+SPodJxwlyZZj8wec+8qme8=' 'self' 'inline-speculation-rules' https://cdn.jsdelivr.net https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' https://cloudcdn.pro https://www.google.com https://open.spotify.com;
+        img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    <link rel="alternate" href="https://sebastienrousseau.com/glossary" hreflang="en" />
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/clients/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/clients/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/newsreader-latin.woff2" crossorigin />
+    <link rel="stylesheet" href="/fonts/fonts.css" />
+    <!-- Preload the LCP hero portrait so it doesn't compete with the
+         render-blocking JS bundle on throttled mobile connections.
+         Lighthouse-simulated Slow-4G has been pinning LCP at ~5.6s; the
+         observed (real-network) LCP is 165 ms. This hint pulls the
+         synthetic LCP in line with the observed value. -->
+    <link rel="preload" as="image" href="https://cloudcdn.pro/clients/common/images/buttons/x-black.svg" fetchpriority="high">
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script>(function(){try{var saved=localStorage.getItem("theme");var prefersDark=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;var theme=saved||(prefersDark?"dark":"light");document.documentElement.setAttribute("data-theme",theme);}catch(e){}})();</script>
+
+    <link rel="stylesheet" href="/_csp/b4d33a118777a541.css" integrity="sha256-AvJ2HQqvVN7b9ko4kwoe+0LDSvZbZFdqtTjG1Cj3gyY= sha256-SP05jket9AUV28R01Zvw9HIQQTsS5g5nzddzdJD3ri4=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="https://sebastienrousseau.com/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="Glossary: sebastienrousseau.com">
+<meta property="og:description" content=". Without explicit rules the browser cramped 4-5 col tables uncomfortably and longer cells wrapped to 1-2 word/line. Wrap in an overflow-x:auto block +">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://sebastienrousseau.com/glossary">
+<meta property="og:image" content="https://cloudcdn.pro/clients/common/images/buttons/x-black.svg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_GB">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Glossary: sebastienrousseau.com">
+<meta name="twitter:description" content=". Without explicit rules the browser cramped 4-5 col tables uncomfortably and longer cells wrapped to 1-2 word/line. Wrap in an overflow-x:auto block +">
+<meta name="twitter:image" content="https://cloudcdn.pro/clients/common/images/buttons/x-black.svg">
+<link rel="canonical" href="https://sebastienrousseau.com/glossary/index.html">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" integrity="sha256-tV/7vAgYDUuBQbSGEPjXL/JC0sD7QpSxXCGKT4ALhh8= sha256-dvm1KF9mEWIapL8BE0nyFlHaKSf6TsjZZoQcJeRPraI=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">Skip to main content</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="Toggle navigation" />
+      <div class="wrap">
+        <a class="ap-brand" href="/index.html" aria-label="Sebastien Rousseau home">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="Primary">
+          <ul class="ap-menu">
+            <li><a href="/about/index.html">About</a></li>
+            <li><a href="/articles/index.html">Articles</a></li>
+            <li><a href="/papers/index.html">Papers</a></li>
+            <li><a href="/topics/index.html">Topics</a></li>
+            <li><a href="/projects/index.html">Projects</a></li>
+            <li><a href="/playlists/index.html">Playlists</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="Switch to dark theme" aria-pressed="false" title="Switch theme">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="Search (Cmd or Ctrl + K)" title="Search (⌘K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="Language">
+            <button type="button" class="ap-lang-toggle" aria-label="EN, Change language" aria-expanded="false" aria-haspopup="menu" title="Change language">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">EN</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/glossary" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <a class="ap-lang-item" href="/bn/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
+                <a class="ap-lang-item" href="/cs/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
+                <a class="ap-lang-item" href="/de/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <a class="ap-lang-item" href="/fil/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
+                <a class="ap-lang-item" href="/ha/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
+                <a class="ap-lang-item" href="/he/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
+                <a class="ap-lang-item" href="/hi/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <a class="ap-lang-item" href="/id/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
+                <a class="ap-lang-item" href="/it/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <a class="ap-lang-item" href="/pl/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
+                <a class="ap-lang-item" href="/pt-br/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <a class="ap-lang-item" href="/ro/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
+                <a class="ap-lang-item" href="/ru/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <a class="ap-lang-item" href="/sv/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
+                <a class="ap-lang-item" href="/th/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
+                <a class="ap-lang-item" href="/tr/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
+                <a class="ap-lang-item" href="/uk/" data-lang="uk" role="menuitem">🇺🇦 Українська</a>
+                <a class="ap-lang-item" href="/vi/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
+                <a class="ap-lang-item" href="/yo/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
+                <a class="ap-lang-item" href="/zh-hans/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/contact/index.html" aria-label="Get in touch">Get in touch ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="Toggle navigation">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>Sebastien Rousseau</h1>
+      <p class="sub">Standards-anchored definitions of every load-bearing term used across the site. NIST, ISO, BIS, ECB, Federal Reserve, EUR-Lex linked on each entry.</p>
+    </section>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://sebastienrousseau.com/glossary/#webpage",
+      "url": "https://sebastienrousseau.com/glossary/",
+      "name": "Glossary · sebastienrousseau.com",
+      "isPartOf": {"@id": "https://sebastienrousseau.com/#website"},
+      "about": {"@id": "https://sebastienrousseau.com/glossary/#termset"},
+      "inLanguage": "en-GB",
+      "datePublished": "2026-06-02",
+      "dateModified": "2026-06-02"
+    },
+    {
+      "@type": "DefinedTermSet",
+      "@id": "https://sebastienrousseau.com/glossary/#termset",
+      "name": "sebastienrousseau.com glossary",
+      "url": "https://sebastienrousseau.com/glossary/",
+      "description": "Standards-anchored definitions of every load-bearing term used across the site. Each entry links to the canonical standards-body or central-bank source.",
+      "publisher": {"@id": "https://sebastienrousseau.com/#organization"},
+      "hasDefinedTerm": [
+        {"@id": "https://sebastienrousseau.com/glossary/#ml-kem"},
+        {"@id": "https://sebastienrousseau.com/glossary/#ml-dsa"},
+        {"@id": "https://sebastienrousseau.com/glossary/#iso-20022"},
+        {"@id": "https://sebastienrousseau.com/glossary/#dora"},
+        {"@id": "https://sebastienrousseau.com/glossary/#fednow"},
+        {"@id": "https://sebastienrousseau.com/glossary/#cbdc"},
+        {"@id": "https://sebastienrousseau.com/glossary/#tokenised-deposits"},
+        {"@id": "https://sebastienrousseau.com/glossary/#rtgs"},
+        {"@id": "https://sebastienrousseau.com/glossary/#swift-gpi"},
+        {"@id": "https://sebastienrousseau.com/glossary/#psd3"}
+      ]
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://sebastienrousseau.com/glossary/#ml-kem",
+      "name": "ML-KEM",
+      "alternateName": "Module-Lattice-Based Key-Encapsulation Mechanism",
+      "description": "NIST-standardised post-quantum key-encapsulation mechanism (FIPS 203), based on the CRYSTALS-Kyber lattice scheme. Replaces RSA/ECDH key agreement in TLS, IKE, and SWIFT messaging when quantum resistance is required.",
+      "inDefinedTermSet": {"@id": "https://sebastienrousseau.com/glossary/#termset"},
+      "sameAs": "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.203.pdf"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://sebastienrousseau.com/glossary/#ml-dsa",
+      "name": "ML-DSA",
+      "alternateName": "Module-Lattice-Based Digital Signature Algorithm",
+      "description": "NIST-standardised post-quantum digital signature scheme (FIPS 204), based on CRYSTALS-Dilithium. Replaces RSA/ECDSA signatures in code-signing, TLS certificates, and payment authorisation when quantum resistance is required.",
+      "inDefinedTermSet": {"@id": "https://sebastienrousseau.com/glossary/#termset"},
+      "sameAs": "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.204.pdf"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://sebastienrousseau.com/glossary/#iso-20022",
+      "name": "ISO 20022",
+      "alternateName": "Universal financial industry message scheme",
+      "description": "ISO standard for electronic data interchange between financial institutions. Defines an XML/JSON message syntax (pacs, pain, camt, …) carrying structured remittance, party, and regulatory data. Mandatory for SWIFT cross-border payments since November 2022, fully adopted by November 2025.",
+      "inDefinedTermSet": {"@id": "https://sebastienrousseau.com/glossary/#termset"},
+      "sameAs": "https://www.iso.org/standard/76074.html"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://sebastienrousseau.com/glossary/#dora",
+      "name": "DORA",
+      "alternateName": "Digital Operational Resilience Act",
+      "description": "EU Regulation 2022/2554 establishing uniform ICT risk-management, incident-reporting, resilience-testing, and third-party-risk requirements for financial entities. In force from 17 January 2025. Applies to banks, insurers, investment firms, crypto-asset service providers, and their critical ICT third-party providers.",
+      "inDefinedTermSet": {"@id": "https://sebastienrousseau.com/glossary/#termset"},
+      "sameAs": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://sebastienrousseau.com/glossary/#fednow",
+      "name": "FedNow",
+      "alternateName": "FedNow Service",
+      "description": "Federal Reserve instant-payment rail launched July 2023. 24/7/365 settlement in central-bank money, ISO 20022 messaging, $500,000 transaction cap (raised from $100,000 in February 2024). Sits alongside The Clearing House's RTP rail for US instant payments.",
+      "inDefinedTermSet": {"@id": "https://sebastienrousseau.com/glossary/#termset"},
+      "sameAs": "https://www.federalreserve.gov/paymentsystems/fednow_about.htm"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://sebastienrousseau.com/glossary/#cbdc",
+      "name": "CBDC",
+      "alternateName": "Central Bank Digital Currency",
+      "description": "A central-bank-issued digital liability, denominated in the sovereign unit of account, available either retail (to households) or wholesale (to financial institutions). Distinct from commercial-bank money, e-money, and crypto-assets. Live or piloted across 130+ jurisdictions per the BIS survey.",
+      "inDefinedTermSet": {"@id": "https://sebastienrousseau.com/glossary/#termset"},
+      "sameAs": "https://www.bis.org/publ/work880.htm"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://sebastienrousseau.com/glossary/#tokenised-deposits",
+      "name": "Tokenised deposits",
+      "alternateName": "Deposit tokens",
+      "description": "Commercial-bank deposits issued as transferable tokens on a programmable ledger, preserving the depositor's claim on the issuing bank. Distinct from stablecoins (non-bank issuers, often money-market backed) and from CBDC (central-bank liability). Programmable, atomic-settlement-capable, and inside the deposit-insurance perimeter.",
+      "inDefinedTermSet": {"@id": "https://sebastienrousseau.com/glossary/#termset"},
+      "sameAs": "https://www.bis.org/publ/work1101.htm"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://sebastienrousseau.com/glossary/#rtgs",
+      "name": "RTGS",
+      "alternateName": "Real-Time Gross Settlement",
+      "description": "An interbank payment system that settles each transfer individually and irrevocably in central-bank money at the moment it is processed, with no netting. Examples: Fedwire (US), CHAPS (UK), T2 (eurozone), CHATS (Hong Kong). The settlement layer for wholesale payments above retail thresholds.",
+      "inDefinedTermSet": {"@id": "https://sebastienrousseau.com/glossary/#termset"},
+      "sameAs": "https://www.bis.org/cpmi/publ/d101a.pdf"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://sebastienrousseau.com/glossary/#swift-gpi",
+      "name": "SWIFT gpi",
+      "alternateName": "Global Payments Innovation",
+      "description": "SWIFT's cross-border-payments service introduced in 2017, providing same-day settlement, end-to-end tracking via UETR (Unique End-to-end Transaction Reference), and full transparency on fees and FX. Carries 90%+ of cross-border value across SWIFT today, fully on ISO 20022 from November 2025.",
+      "inDefinedTermSet": {"@id": "https://sebastienrousseau.com/glossary/#termset"},
+      "sameAs": "https://www.swift.com/our-solutions/swift-gpi"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://sebastienrousseau.com/glossary/#psd3",
+      "name": "PSD3",
+      "alternateName": "Third Payment Services Directive",
+      "description": "EU proposal succeeding PSD2 (Directive 2015/2366), tightening fraud-prevention, strong-customer-authentication, and open-banking access regimes. Paired with the Payment Services Regulation (PSR) for directly-applicable rules. Political agreement expected during 2026; transposition through 2027–2028.",
+      "inDefinedTermSet": {"@id": "https://sebastienrousseau.com/glossary/#termset"},
+      "sameAs": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A52023PC0366"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://sebastienrousseau.com/"},
+        {"@type": "ListItem", "position": 2, "name": "Glossary", "item": "https://sebastienrousseau.com/glossary/"}
+      ]
+    }
+  ]
+}
+</script>
+<h1>Glossary</h1>
+<p>Every load-bearing term used across <code>sebastienrousseau.com</code> is defined here against its canonical standards-body or central-bank source. Each entry carries a <code>sameAs</code> link in the JSON-LD pointing to the primary specification — NIST FIPS publications for the cryptographic terms, the ISO catalogue for messaging standards, EUR-Lex for EU regulation, BIS / CPMI / ECB / Federal Reserve documents for payment-systems vocabulary.</p>
+<p>The list is short by design. Terms graduate to this page only once they appear in at least three articles <strong>and</strong> carry a primary-source citation. Acronyms that show up once in passing are defined inline in the article, not here.</p>
+<p>If a term you expected to find is missing, email <a href="mailto:contact@sebastienrousseau.com">contact@sebastienrousseau.com</a> with the article context and we will add it.</p>
+<h2>Post-quantum cryptography</h2>
+<h3>ML-KEM — Module-Lattice-Based Key-Encapsulation Mechanism</h3>
+<p>NIST-standardised post-quantum key-encapsulation mechanism, published as <a href="https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.203.pdf">FIPS 203</a> in August 2024. Based on the CRYSTALS-Kyber lattice scheme that won the third round of the NIST post-quantum standardisation competition. Replaces RSA / ECDH key agreement in TLS, IKE, and SWIFT messaging where quantum resistance is required.</p>
+<p>Parameter sets: ML-KEM-512 (Category 1, ~AES-128), ML-KEM-768 (Category 3, ~AES-192), ML-KEM-1024 (Category 5, ~AES-256). Public-key sizes are 800 / 1184 / 1568 bytes respectively — substantially larger than ECDH P-256's 65 bytes but practical at TLS handshake scale.</p>
+<h3>ML-DSA — Module-Lattice-Based Digital Signature Algorithm</h3>
+<p>NIST-standardised post-quantum digital signature scheme, published as <a href="https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.204.pdf">FIPS 204</a> in August 2024. Based on CRYSTALS-Dilithium. Replaces RSA / ECDSA signatures in code-signing, TLS certificates, payment authorisation, and document signing where quantum resistance is required.</p>
+<p>Parameter sets: ML-DSA-44 (Category 2), ML-DSA-65 (Category 3), ML-DSA-87 (Category 5). Signature sizes range from 2420 to 4595 bytes — large enough to affect packet fragmentation strategies for certificate chains, manageable for code-signing and payment-message use.</p>
+<h2>Messaging standards</h2>
+<h3>ISO 20022 — Universal financial industry message scheme</h3>
+<p>ISO standard for electronic data interchange between financial institutions. Defines an XML / JSON message syntax — <code>pacs.008</code> (customer credit transfer), <code>pain.001</code> (initiation), <code>camt.054</code> (notification), and several hundred others — carrying structured remittance, party, and regulatory data.</p>
+<p>Mandatory for SWIFT cross-border payments from November 2022, with full adoption by November 2025. T2 (the eurozone RTGS) migrated in March 2023, the Fedwire Funds Service in March 2025, CHAPS in stages through 2024. ISO 20022 is the data layer underneath every modern wholesale-payments programme.</p>
+<p>Catalogue: <a href="https://www.iso.org/standard/76074.html">iso.org/standard/76074</a>.</p>
+<h3>SWIFT gpi — Global Payments Innovation</h3>
+<p>SWIFT's cross-border-payments service introduced in 2017, providing same-day settlement, end-to-end tracking via a UETR (Unique End-to-end Transaction Reference), and full transparency on fees and FX. Carries 90%+ of cross-border value across SWIFT today. Fully on ISO 20022 from November 2025.</p>
+<p>Specification: <a href="https://www.swift.com/our-solutions/swift-gpi">swift.com/our-solutions/swift-gpi</a>.</p>
+<h2>Settlement infrastructure</h2>
+<h3>RTGS — Real-Time Gross Settlement</h3>
+<p>An interbank payment system that settles each transfer <strong>individually</strong> and <strong>irrevocably</strong> in central-bank money at the moment it is processed, with no netting. The settlement layer for wholesale payments above retail thresholds. Examples: Fedwire (US), CHAPS (UK), T2 (eurozone), CHATS (Hong Kong), CNAPS (mainland China).</p>
+<p>The canonical reference is BIS CPMI's <a href="https://www.bis.org/cpmi/publ/d101a.pdf"><em>Principles for Financial Market Infrastructures</em></a> (PFMI), 2012.</p>
+<h3>FedNow</h3>
+<p>Federal Reserve instant-payment rail launched July 2023. 24/7/365 settlement in central-bank money, ISO 20022 messaging end-to-end, transaction cap raised from $100,000 to $500,000 in February 2024. Sits alongside The Clearing House's <a href="https://www.theclearinghouse.org/payment-systems/rtp">RTP</a> rail (live since November 2017) for US instant payments — the two rails are interoperable at the participant tier but settle separately.</p>
+<p>Reference: <a href="https://www.federalreserve.gov/paymentsystems/fednow_about.htm">federalreserve.gov/paymentsystems/fednow_about.htm</a>.</p>
+<h2>Digital money</h2>
+<h3>CBDC — Central Bank Digital Currency</h3>
+<p>A central-bank-issued digital liability, denominated in the sovereign unit of account, available either <strong>retail</strong> (to households) or <strong>wholesale</strong> (to financial institutions). Distinct from commercial-bank money (a claim on the issuing bank), from e-money (a claim on a non-bank issuer), and from crypto-assets (no issuer at all).</p>
+<p>Live or actively piloted across 130+ jurisdictions per the <a href="https://www.bis.org/publ/work880.htm">BIS survey</a>. Notable production-grade examples: Bahamas Sand Dollar (2020), Jamaica JAM-DEX (2022), Nigeria eNaira (2021). Notable wholesale pilots: Project Agorá (BIS), Project Mariana (BIS / Banque de France / MAS / SNB), Project mBridge.</p>
+<h3>Tokenised deposits</h3>
+<p>Commercial-bank deposits issued as transferable tokens on a programmable ledger, preserving the depositor's claim on the issuing bank. Distinct from <strong>stablecoins</strong> (non-bank issuers, often money-market-fund-backed) and from <strong>CBDC</strong> (central-bank liability). Programmable, atomic-settlement-capable, and — crucially — <strong>inside the deposit-insurance perimeter</strong> (FDIC, FSCS, ESM coverage).</p>
+<p>Reference: BIS Working Paper 1101, <a href="https://www.bis.org/publ/work1101.htm"><em>The tokenisation continuum</em></a>, April 2023.</p>
+<h2>Regulation</h2>
+<h3>DORA — Digital Operational Resilience Act</h3>
+<p>EU Regulation <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554">2022/2554</a> establishing uniform ICT risk-management, incident-reporting, resilience-testing, and third-party-risk requirements for financial entities. In force from <strong>17 January 2025</strong>.</p>
+<p>Applies to banks, insurers, investment firms, crypto-asset service providers, trade repositories, central counterparties, and — for the first time in EU financial regulation — directly to <strong>critical ICT third-party providers</strong> (CTPPs) through a designation regime operated by the European Supervisory Authorities.</p>
+<h3>PSD3 — Third Payment Services Directive</h3>
+<p>EU proposal succeeding <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32015L2366">PSD2</a> (Directive 2015/2366), tightening fraud-prevention, strong-customer-authentication, and open-banking access regimes. Paired with the <strong>Payment Services Regulation (PSR)</strong> for directly-applicable rules across the EU.</p>
+<p>Commission proposal: <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A52023PC0366">COM/2023/366</a>, 28 June 2023. Political agreement expected during 2026; member-state transposition runs through 2027–2028.</p>
+<h2>Revision history</h2>
+<ul>
+<li><strong>2026-06-02</strong> — Initial publication. Seeded with 10 terms across post-quantum cryptography, messaging standards, settlement infrastructure, digital money, and regulation. Quarterly review.</li>
+</ul>
+</div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/about/index.html">About</a></li>
+              <li><a href="/contact/index.html">Contact</a></li>
+              <li><a href="/made-with-static-site-generator/index.html">Made with Static Site Generator</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Writing</h2>
+            <ul>
+              <li><a href="/articles/index.html">Articles</a></li>
+              <li><a href="/papers/index.html">Papers</a></li>
+              <li><a href="/tags/index.html">Tags</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Work</h2>
+            <ul>
+              <li><a href="/projects/index.html">Projects</a></li>
+              <li><a href="/playlists/index.html">Playlists</a></li>
+              <li><a href="/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Reach</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="/contact/" method="get" aria-label="Newsletter signup">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — research notes on payments, AI &amp; post-quantum crypto. No spam.</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="you@bank.com" />
+            <input type="hidden" name="subject" value="newsletter" />
+            <input type="hidden" name="message" value="Please subscribe me to the Banking On Quantum newsletter." />
+            <button type="submit">Subscribe</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved.</span>
+          <div class="social" aria-label="Social links">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on Twitter / X"><img src="https://cloudcdn.pro/clients/common/images/buttons/x-black.svg" alt="Sebastien Rousseau on Twitter X" width="18" height="18"  decoding="async" fetchpriority="high"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on LinkedIn"><img src="https://cloudcdn.pro/clients/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau on LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on Medium"><img src="https://cloudcdn.pro/clients/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau on Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on YouTube"><img src="https://cloudcdn.pro/clients/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau on YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/accessibility/index.html">Accessibility</a> ·
+            <a href="/privacy/index.html">Privacy</a> ·
+            <a href="/terms/index.html">Terms</a> ·
+            <a href="https://www.thegreenwebfoundation.org/green-web-check/?url=sebastienrousseau.com" target="_blank" rel="noopener noreferrer" title="Hosted on 100% renewable energy (Cloudflare) — estimate via Sustainable Web Design v4 model">Carbon: ~0.04 g/visit · green-hosted</a> ·
+            <a href="https://github.com/sebastienrousseau/sebastienrousseau.github.io/blob/main/project-docs/sigstore.md" target="_blank" rel="noopener noreferrer" title="Every dated article is signed with Sigstore — verify the bytes match what was published">Verify signatures</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://sebastienrousseau.com/#person",
+      "name": "Sebastien Rousseau",
+      "givenName": "Sebastien",
+      "familyName": "Rousseau",
+      "url": "https://sebastienrousseau.com/",
+      "image": "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png",
+      "jobTitle": "Senior Product Manager",
+      "description": "AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "ORCID",
+        "value": "0009-0005-1434-284X",
+        "url": "https://orcid.org/0009-0005-1434-284X"
+      },
+      "worksFor": {
+        "@type": "Organization",
+        "@id": "https://www.hsbc.com/#organization",
+        "name": "HSBC Commercial & Investment Bank",
+        "url": "https://www.hsbc.com/"
+      },
+      "alumniOf": [
+        {"@type": "Organization", "name": "PayPal", "url": "https://www.paypal.com/"},
+        {"@type": "Organization", "name": "Barclays", "url": "https://www.barclays.com/"},
+        {"@type": "Organization", "name": "Shazam Entertainment", "url": "https://www.shazam.com/"},
+        {"@type": "Organization", "name": "AKQA", "url": "https://www.akqa.com/"},
+        {"@type": "Organization", "name": "Virgin Group", "url": "https://www.virgin.com/"}
+      ],
+      "memberOf": {
+        "@type": "ProgramMembership",
+        "programName": "Quantum-Safe Cryptography Working Group",
+        "hostingOrganization": {
+          "@type": "Organization",
+          "name": "Emerging Payments Association Asia",
+          "url": "https://emergingpaymentsasia.org/"
+        }
+      },
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "professional experience",
+          "name": "20+ years across Tier-1 banks and global payments infrastructure",
+          "recognizedBy": {"@type": "Organization", "name": "HSBC Commercial & Investment Bank", "url": "https://www.hsbc.com/"}
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "domain expertise",
+          "name": "ISO 20022 migration and wholesale payments architecture",
+          "recognizedBy": {"@type": "Organization", "name": "SWIFT", "url": "https://www.swift.com/"}
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "domain expertise",
+          "name": "Post-Quantum Cryptography for financial services",
+          "recognizedBy": {"@type": "Organization", "name": "NIST Post-Quantum Cryptography Project", "url": "https://csrc.nist.gov/projects/post-quantum-cryptography"}
+        }
+      ],
+      "knowsAbout": [
+        {"@type": "DefinedTerm", "name": "Post-Quantum Cryptography", "sameAs": "https://en.wikipedia.org/wiki/Post-quantum_cryptography"},
+        {"@type": "DefinedTerm", "name": "ML-KEM (FIPS 203)", "sameAs": "https://csrc.nist.gov/pubs/fips/203/final"},
+        {"@type": "DefinedTerm", "name": "ML-DSA (FIPS 204)", "sameAs": "https://csrc.nist.gov/pubs/fips/204/final"},
+        {"@type": "DefinedTerm", "name": "ISO 20022", "sameAs": "https://en.wikipedia.org/wiki/ISO_20022"},
+        {"@type": "DefinedTerm", "name": "SWIFT gpi", "sameAs": "https://www.swift.com/our-solutions/swift-gpi"},
+        {"@type": "DefinedTerm", "name": "SEPA Instant Payments", "sameAs": "https://www.ecb.europa.eu/paym/integration/retail/instant_payments/html/index.en.html"},
+        {"@type": "DefinedTerm", "name": "FedNow Service", "sameAs": "https://www.federalreserve.gov/paymentsystems/fednow_about.htm"},
+        {"@type": "DefinedTerm", "name": "Real-Time Payments (RTP)", "sameAs": "https://www.theclearinghouse.org/payment-systems/rtp"},
+        {"@type": "DefinedTerm", "name": "Cross-border payments", "sameAs": "https://en.wikipedia.org/wiki/Cross-border_payments"},
+        {"@type": "DefinedTerm", "name": "Wholesale banking", "sameAs": "https://en.wikipedia.org/wiki/Wholesale_banking"},
+        {"@type": "DefinedTerm", "name": "Applied artificial intelligence in banking", "sameAs": "https://en.wikipedia.org/wiki/Applications_of_artificial_intelligence"},
+        {"@type": "DefinedTerm", "name": "Generative artificial intelligence", "sameAs": "https://en.wikipedia.org/wiki/Generative_artificial_intelligence"}
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "London",
+        "addressCountry": "United Kingdom"
+      },
+      "sameAs": [
+        "https://orcid.org/0009-0005-1434-284X",
+        "https://twitter.com/wwdseb",
+        "https://www.linkedin.com/in/sebastienrousseau/",
+        "https://medium.com/@BankingOnQuantum",
+        "https://www.youtube.com/@BankingOnQuantum",
+        "https://github.com/sebastienrousseau"
+      ]
+    },
+    {
+      "@type": ["Organization", "Brand"],
+      "@id": "https://sebastienrousseau.com/#organization",
+      "name": "Sebastien Rousseau",
+      "alternateName": "Banking on Quantum",
+      "url": "https://sebastienrousseau.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "https://sebastienrousseau.com/#logo",
+        "url": "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png",
+        "width": "512",
+        "height": "512",
+        "caption": "Sebastien Rousseau"
+      },
+      "founder": {"@id": "https://sebastienrousseau.com/#person"},
+      "editorialPolicy": "https://sebastienrousseau.com/editorial/",
+      "correctionsPolicy": "https://sebastienrousseau.com/editorial/#corrections",
+      "ethicsPolicy": "https://sebastienrousseau.com/editorial/",
+      "diversityPolicy": "https://sebastienrousseau.com/editorial/",
+      "sameAs": [
+        "https://github.com/sebastienrousseau",
+        "https://twitter.com/wwdseb",
+        "https://www.linkedin.com/in/sebastienrousseau/",
+        "https://medium.com/@BankingOnQuantum"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://sebastienrousseau.com/#website",
+      "url": "https://sebastienrousseau.com/",
+      "name": "Sebastien Rousseau",
+      "description": "AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.",
+      "publisher": {"@id": "https://sebastienrousseau.com/#organization"},
+      "author": {"@id": "https://sebastienrousseau.com/#person"},
+      "inLanguage": "en-GB"
+    },
+    {
+      "@type": "ProfilePage",
+      "@id": "https://sebastienrousseau.com/#profile",
+      "mainEntity": {"@id": "https://sebastienrousseau.com/#person"},
+      "name": "Sebastien Rousseau: AI, Banking & Financial Services Expert",
+      "url": "https://sebastienrousseau.com/",
+      "inLanguage": "en-GB"
+    }
+  ]
+}
+    </script>
+
+        <script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[{"@type":"WebPage","name":"Glossary: sebastienrousseau.com","description":"Standards-anchored glossary for sebastienrousseau.com. Every term carries a sameAs link to the canonical standards-body or central-bank source (NIST, ISO, BIS, ECB, Federal Reserve, EUR-Lex).","url":"https://sebastienrousseau.com/glossary","inLanguage":"en","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","width":"162","height":"162"},"author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"isPartOf":{"@id":"https://sebastienrousseau.com/#website"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Glossary: sebastienrousseau.com","item":"https://sebastienrousseau.com/glossary"}]}]}
+    </script>
+<script src="/main.c9d8dc8d.js" defer integrity="sha256-G3RtagQVu1xMUTaa18I4L7J+vKPyjk2ZQG182kd2kow= sha256-NzL6b2FQD17U0Taqx1C1kOArNHU82qw6DUW7wiG7Bp0=" crossorigin="anonymous"></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="Search">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>Search</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="Search">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="Search documentation..." autocomplete="off" aria-label="Search"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> close</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> navigate</span><span><kbd>Enter</kbd> open</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" integrity="sha256-Y0txeCfdk+GUctTYMAxMbFCB2qs1cPm8JSIX3WRS9cs= sha256-5Ca5zk/7tsavsCDhg6M1m4feBn+L4YnJ7iavKawynII=" crossorigin="anonymous"></script>
+</div>
+</body>
+</html>

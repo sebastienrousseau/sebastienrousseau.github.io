@@ -27,6 +27,7 @@ so re-running mutates nothing on a clean tree:
 Frontmatter is augmented in place when ``excerpt`` or ``last_reviewed``
 are missing.
 """
+
 from __future__ import annotations
 
 import sys as _sys  # path bootstrap — scripts reorg (scripts/lib/ on sys.path)
@@ -45,18 +46,30 @@ DATED = re.compile(r"^\d{4}-\d{2}-\d{2}-.+\.md$")
 # H2 titles that are structural rather than substantive; skipped when
 # auto-deriving key takeaways. Lowercased for comparison.
 GENERIC_H2 = {
-    "insight", "introduction", "background", "overview", "summary",
-    "conclusion", "references", "related articles", "related reading",
-    "further reading", "key takeaways", "table of contents",
+    "insight",
+    "introduction",
+    "background",
+    "overview",
+    "summary",
+    "conclusion",
+    "references",
+    "related articles",
+    "related reading",
+    "further reading",
+    "key takeaways",
+    "table of contents",
 }
 
 # Marker pairs.
 LEAD_START = "<!-- lead-start -->"
-LEAD_END   = "<!-- lead-end -->"
+LEAD_END = "<!-- lead-end -->"
 LEAD_BLOCK_RE = re.compile(
     rf"{re.escape(LEAD_START)}[\s\S]*?{re.escape(LEAD_END)}\s*",
     re.MULTILINE,
 )
+# `<!-- lead-start: manual -->` opts a hand-curated lead aside out of
+# regeneration. The auto-injector neither strips nor replaces it.
+LEAD_MANUAL_MARKER = "<!-- lead-start: manual -->"
 ENRICH_BLOCK_RE = re.compile(
     r"\n\n<!-- enrich-start -->[\s\S]*?<!-- enrich-end -->\s*",
 )
@@ -211,19 +224,21 @@ def build_lead(excerpt: str, takeaways: list[str], related: list[dict]) -> str:
     # SpeakableSpecification (so voice assistants + AI Overviews know the
     # canonical block to quote) and gives us a stable styling hook.
     parts: list[str] = ["", LEAD_START, '<aside class="post-lead" aria-label="Article summary">']
-    parts.append(f'<p class="post-lead-tldr"><strong>TL;DR.</strong> {md_inline_to_html(excerpt)}</p>')
+    parts.append(
+        f'<p class="post-lead-tldr"><strong>TL;DR.</strong> {md_inline_to_html(excerpt)}</p>'
+    )
     if takeaways:
         parts.append('<p class="post-lead-heading"><strong>Key takeaways</strong></p>')
         parts.append('<ul class="post-lead-takeaways">')
         parts.extend(f"  <li>{md_inline_to_html(t)}</li>" for t in takeaways)
-        parts.append('</ul>')
+        parts.append("</ul>")
     if related:
         links = ", ".join(
             f'<a href="{post_url(r)}">{md_inline_to_html(strip_md(r["title"]))}</a>'
             for r in related
         )
         parts.append(f'<p class="post-lead-related"><strong>Related reading:</strong> {links}.</p>')
-    parts.append('</aside>')
+    parts.append("</aside>")
     parts.append(LEAD_END)
     # Emit two trailing newlines so the lead block ends with a blank line.
     # CommonMark requires a blank line between a raw HTML block and the next
@@ -242,17 +257,18 @@ def md_inline_to_html(text: str) -> str:
     """
     # Links: [text](url) — do this first so the URL contents don't trip the
     # other patterns.
-    text = re.sub(r'\[([^\]]+)\]\(([^)]+)\)', r'<a href="\2">\1</a>', text)
+    text = re.sub(r"\[([^\]]+)\]\(([^)]+)\)", r'<a href="\2">\1</a>', text)
     # Bold: **text**
-    text = re.sub(r'\*\*([^*]+)\*\*', r'<strong>\1</strong>', text)
+    text = re.sub(r"\*\*([^*]+)\*\*", r"<strong>\1</strong>", text)
     # Italic: *text*  (avoid eating bold by requiring the prior ** to be gone)
-    text = re.sub(r'(?<!\*)\*([^*\n]+)\*(?!\*)', r'<em>\1</em>', text)
+    text = re.sub(r"(?<!\*)\*([^*\n]+)\*(?!\*)", r"<em>\1</em>", text)
     # Inline code: `text`
-    text = re.sub(r'`([^`]+)`', r'<code>\1</code>', text)
+    text = re.sub(r"`([^`]+)`", r"<code>\1</code>", text)
     return text
 
 
 # ---------------------------------------------------------------------------
+
 
 def _load_post(md: Path) -> dict[str, object] | None:
     """Read one dated post into the internal ``post`` dict, or return
@@ -334,10 +350,7 @@ def _related_posts(
                     overlap[oid] = (overlap[oid][0] + 1, other)
                 else:
                     overlap[oid] = (1, other)
-        candidates = [
-            (score, other["date_iso"], other)
-            for score, other in overlap.values()
-        ]
+        candidates = [(score, other["date_iso"], other) for score, other in overlap.values()]
     else:
         # Fallback: O(N) scan for single-post callers (test fixtures).
         for other in all_posts:
@@ -355,6 +368,8 @@ def _insert_lead(body_text: str, tldr: str, related: list[dict[str, object]]) ->
     """Stage 3: insert the top-of-body lead block. Returns (new_body,
     inserted_flag). Idempotent — skip if a hand-curated lead opens
     the body already."""
+    if LEAD_MANUAL_MARKER in body_text[:2000]:
+        return body_text, False
     body_text = remove_existing_lead(body_text)
     if body_starts_with_lead(body_text):
         return body_text, False
@@ -380,15 +395,15 @@ _AUTHOR_CARD_HTML = (
     '<strong class="author-card-name">'
     '<a href="/about/index.html">Sebastien Rousseau</a></strong>'
     '<span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 '
-    'migration, post-quantum cryptography for financial services, and '
-    'the structural transformation of wholesale payments.</span>'
+    "migration, post-quantum cryptography for financial services, and "
+    "the structural transformation of wholesale payments.</span>"
     '<span class="author-credentials">'
-    '20+ years across HSBC Commercial &amp; Investment Bank, PayPal, '
-    'Barclays, Shazam, AKQA, Virgin Group. '
+    "20+ years across HSBC Commercial &amp; Investment Bank, PayPal, "
+    "Barclays, Shazam, AKQA, Virgin Group. "
     '<a href="/about/index.html">Full profile</a> &middot; '
     '<a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; '
     '<a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a>'
-    '</span></span></aside>'
+    "</span></span></aside>"
 )
 
 
@@ -408,7 +423,8 @@ def _related_grid_html(related: list[dict[str, object]], post: dict[str, object]
         alt = (r.get("image_alt") or r["title"]).replace('"', "&quot;")
         img_html = (
             f'<img alt="{alt}" src="{img}" loading="lazy" decoding="async" width="600" height="400" />'
-            if img else ""
+            if img
+            else ""
         )
         out.append(
             '<article class="related-card">'
@@ -418,12 +434,14 @@ def _related_grid_html(related: list[dict[str, object]], post: dict[str, object]
             f'<p><time datetime="{r["date_iso"]}">{r["date_iso"]}</time></p>'
             '</footer></article>'
         )
-    out.append('</div>')
-    out.append('</aside>')
+    out.append("</div>")
+    out.append("</aside>")
     return out
 
 
-def _append_enrich_block(body_text: str, reviewed: str, related: list[dict[str, object]], post: dict[str, object]) -> str:
+def _append_enrich_block(
+    body_text: str, reviewed: str, related: list[dict[str, object]], post: dict[str, object]
+) -> str:
     """Stage 4: append the bottom enrichment block (author card +
     last-reviewed line + related grid). Idempotent — strips any prior
     enrich-start/enrich-end block before re-appending."""

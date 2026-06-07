@@ -1,5 +1,6 @@
 ---
 title: "KyberLib: CRYSTALS-Kyber بلغة Rust لما بعد الكم"
+tags: "KyberLib, Rust, CRYSTALS-Kyber, post-quantum cryptography, lattice-based cryptography, key encapsulation mechanism, NIST, libsignal, cryptography, ISO 20022, quantum computing, AI"
 subtitle: "KyberLib، تطبيق Rust متين لـ CRYSTALS-Kyber للعصر الكمي."
 description: "تطبيق تشفيري متين وآمن كمياً لخوارزمية CRYSTALS-Kyber، لحماية بياناتكم من التهديدات الكمية وهجمات تحليل الشفرات."
 date: "Nov 28, 2023"

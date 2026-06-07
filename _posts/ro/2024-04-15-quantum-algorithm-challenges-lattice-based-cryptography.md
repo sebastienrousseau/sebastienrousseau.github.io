@@ -1,5 +1,6 @@
 ---
 title: "Quantum Algorithm Challenges Lattice-Based Cryptography"
+tags: "quantum algorithms, cryptography, lattice problems, LWE, criptografie post-cuantică, cybersecurity, research, innovation, future-proofing, ISO 20022, calcul cuantic, AI"
 subtitle: "Noul algoritm cuantic de timp polinomial pentru criptografia bazată pe rețele"
 description: "Nou algoritm cuantic polinomial al lui Yilei Chen vizează criptografia pe rețele cu implicații pentru standardele post-cuantice, inclusiv CRYSTALS-Kyber."
 date: "Apr 01, 2024"
@@ -130,4 +131,3 @@ Kuperberg, G. (2005). [**A subexponential-time quantum algorithm for the dihedra
 [00]: https://eprint.iacr.org/2024/555.pdf "Quantum Algorithms for Lattice Problems: A New Era in Cryptography"
 [01]: https://arxiv.org/abs/2401.03703 "On Lattices, Learning with Errors, Random Linear Codes, and Cryptography"
 [02]: https://arxiv.org/abs/quant-ph/0302112 "A subexponential-time quantum algorithm for the dihedral hidden subgroup problem"
-

@@ -1,10 +1,5 @@
 name: schema-diff
 
-# Build the site at the PR base commit and at HEAD, then post a comment
-# summarising structured-data drift. Read-only signal — never fails the PR;
-# reviewers see at a glance which pages had their JSON-LD added, removed,
-# or changed.
-
 on:
   pull_request:
     branches: [main]
@@ -35,10 +30,7 @@ jobs:
           path: base
           fetch-depth: 1
 
-      - name: Install Rust toolchain (cached)
-        uses: dtolnay/rust-toolchain@stable
-
-      - name: Cache cargo registry + git
+      - name: Cache cargo registry + git + ssg
         uses: actions/cache@v4
         with:
           path: |
@@ -47,28 +39,22 @@ jobs:
             ~/.cargo/bin
           key: ${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}-ssg
 
+      - name: Add cargo bin to PATH
+        run: echo "$HOME/.cargo/bin" >> $GITHUB_PATH
+
       - name: Install Static Site Generator (ssg)
         run: |
           if ! command -v ssg >/dev/null 2>&1; then
             cargo install ssg --locked
           fi
 
-      - name: Install wasm-pack + wasm32 target
-        run: |
-          rustup target add wasm32-unknown-unknown
-          if ! command -v wasm-pack >/dev/null 2>&1; then
-            curl -sSf https://rustwasm.github.io/wasm-pack/installer/init.sh | sh
-          fi
-
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+          cache: 'pip'
 
       - name: Setup Node
-        # Both base + HEAD builds run build.sh, which gates the Worker
-        # tests with --test-coverage-{lines,branches,functions}=100 —
-        # stable from Node 22+.
         uses: actions/setup-node@v4
         with:
           node-version: "22"
@@ -76,11 +62,11 @@ jobs:
       - name: Install Python build deps
         run: pip install --quiet -r head/requirements.txt
 
-      - name: Build BASE
+      - name: Build BASE (skip WASM compilation)
         working-directory: base
         run: ./build.sh
 
-      - name: Build HEAD
+      - name: Build HEAD (skip WASM compilation)
         working-directory: head
         run: ./build.sh
 
@@ -90,9 +76,6 @@ jobs:
           cat diff.md
 
       - name: Post diff comment
-        # Read-only signal: a transient 401/comment-permissions failure
-        # must not red-flag the PR. The build at HEAD already passed
-        # by this point; this step is informational only.
         continue-on-error: true
         uses: actions/github-script@v7
         with:

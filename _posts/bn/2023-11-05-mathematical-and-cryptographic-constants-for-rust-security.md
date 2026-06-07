@@ -1,5 +1,6 @@
 ---
 title: "Mathematical and Cryptographic Constants for Rust Security"
+tags: "math, cybersecurity, cryptography, Rust, programming, encryption, communication, constants, constants in Rust, Common library, ISO 20022, পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, কোয়ান্টাম কম্পিউটিং, AI, open source"
 subtitle: "মেমরি-সেফ Rust নিরাপত্তার জন্য যাচাইকৃত গাণিতিক ও ক্রিপ্টোগ্রাফিক কনস্ট্যান্ট।"
 description: "সুনিপুণভাবে যাচাইকৃত গাণিতিক ও ক্রিপ্টোগ্রাফিক কনস্ট্যান্ট দিয়ে কোড অখণ্ডতা সুরক্ষিত করুন, মেমরি ও কনকারেন্সি নিরাপত্তা শক্তিশালী করে উন্নত কোড সুরক্ষা নিশ্চিত করুন।"
 date: "Nov 05, 2023"
@@ -108,4 +109,3 @@ Developers requiring mathematical or cryptographic constants in Rust should look
 [00]: https://github.com/sebastienrousseau/cmn "The Common (CMN) library website"
 [01]: https://docs.rs/cmn/latest/cmn/ "The Common (CMN) library documentation"
 [02]: https://github.com/sebastienrousseau/cmn "The Common (CMN) library GitHub repository"
-

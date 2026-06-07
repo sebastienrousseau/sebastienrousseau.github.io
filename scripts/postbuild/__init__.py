@@ -11,6 +11,7 @@ postbuild.py module. ``from .postbuild import *`` would only re-
 export public names and would create a separate package object
 whose attributes drift from the underlying module's.
 """
+
 from __future__ import annotations
 
 import sys as _sys

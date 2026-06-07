@@ -31,6 +31,7 @@ Algorithm:
 Run as part of ``build.sh`` before ``ssg`` so the rendered hreflang and
 locale-alternative URLs always reflect the on-disk state.
 """
+
 from __future__ import annotations
 
 import json

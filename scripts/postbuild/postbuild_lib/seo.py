@@ -19,6 +19,7 @@ applies to every rendered HTML page:
 Each entry point is a pure function over HTML text; module-level
 state is regex constants only.
 """
+
 from __future__ import annotations
 
 import json as _json
@@ -26,7 +27,6 @@ import re
 from pathlib import Path
 
 PUBLIC = Path("public")
-
 
 
 # ---------------------------------------------------------------------------
@@ -64,41 +64,87 @@ _blogposting_image_re = re.compile(
 # write-up — also added to sameAs so the site is treated as a co-authority.
 # A page never self-anchors.
 ENTITY_AUTHORITY: dict[str, tuple[str, str | None, str | None]] = {
-    "CRYSTALS-Kyber":               ("https://en.wikipedia.org/wiki/Kyber", "Q116727584",
-                                     "2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age"),
-    "post-quantum cryptography":    ("https://en.wikipedia.org/wiki/Post-quantum_cryptography", "Q1364608",
-                                     "2025-09-01-quantum-safe-payments-epaa"),
-    "lattice-based cryptography":   ("https://en.wikipedia.org/wiki/Lattice-based_cryptography", "Q6499614",
-                                     "2024-04-15-quantum-algorithm-challenges-lattice-based-cryptography"),
-    "Quantum key distribution":     ("https://en.wikipedia.org/wiki/Quantum_key_distribution", "Q768051",
-                                     "2023-12-11-quantum-key-distribution-revolutionising-security-in-banking"),
-    "Shor's algorithm":             ("https://en.wikipedia.org/wiki/Shor%27s_algorithm", "Q717409",
-                                     "2026-04-11-quantum-thresholds-are-moving-again"),
-    "homomorphic encryption":       ("https://en.wikipedia.org/wiki/Homomorphic_encryption", "Q2154943",
-                                     "2024-03-25-fully-homomorphic-encryption-in-a-banking-quantum-era"),
-    "Quantum computing":            ("https://en.wikipedia.org/wiki/Quantum_computing", "Q484641", None),
-    "NIST PQC":                     ("https://csrc.nist.gov/projects/post-quantum-cryptography", None, None),
-    "ISO 20022":                    ("https://www.iso20022.org/", "Q15727611",
-                                     "2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001"),
-    "SWIFT gpi":                    ("https://www.swift.com/our-solutions/swift-gpi", None, None),
-    "SEPA":                         ("https://en.wikipedia.org/wiki/Single_Euro_Payments_Area", "Q286094", None),
-    "Large language model":         ("https://en.wikipedia.org/wiki/Large_language_model", "Q115305900",
-                                     "2026-05-11-lucy-besson-knowledge-transfer-ai-quantum"),
-    "Generative AI":                ("https://en.wikipedia.org/wiki/Generative_artificial_intelligence", "Q108766533",
-                                     "2023-11-12-exploring-generative-ai"),
-    "Artificial intelligence":      ("https://en.wikipedia.org/wiki/Artificial_intelligence", "Q11660", None),
-    "Multimodal learning":          ("https://en.wikipedia.org/wiki/Multimodal_learning", "Q117259025",
-                                     "2024-03-18-advancing-ai-with-multimodal-llms-insights-from-mm1"),
-    "Rust":                         ("https://en.wikipedia.org/wiki/Rust_(programming_language)", "Q575650", None),
-    "Python":                       ("https://en.wikipedia.org/wiki/Python_(programming_language)", "Q28865", None),
-    "Blockchain":                   ("https://en.wikipedia.org/wiki/Blockchain", "Q20514253",
-                                     "2018-01-02-blockchain-the-technology-that-matters-in-2018"),
-    "Bitcoin":                      ("https://en.wikipedia.org/wiki/Bitcoin", "Q131723",
-                                     "2018-01-01-bitcoin-the-year-in-review"),
-    "Ethereum":                     ("https://en.wikipedia.org/wiki/Ethereum", "Q21825854",
-                                     "2018-01-24-the-erc-20-token-standard"),
-    "ERC-20":                       ("https://en.wikipedia.org/wiki/Ethereum#Tokens", None,
-                                     "2018-01-24-the-erc-20-token-standard"),
+    "CRYSTALS-Kyber": (
+        "https://en.wikipedia.org/wiki/Kyber",
+        "Q116727584",
+        "2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age",
+    ),
+    "post-quantum cryptography": (
+        "https://en.wikipedia.org/wiki/Post-quantum_cryptography",
+        "Q1364608",
+        "2025-09-01-quantum-safe-payments-epaa",
+    ),
+    "lattice-based cryptography": (
+        "https://en.wikipedia.org/wiki/Lattice-based_cryptography",
+        "Q6499614",
+        "2024-04-15-quantum-algorithm-challenges-lattice-based-cryptography",
+    ),
+    "Quantum key distribution": (
+        "https://en.wikipedia.org/wiki/Quantum_key_distribution",
+        "Q768051",
+        "2023-12-11-quantum-key-distribution-revolutionising-security-in-banking",
+    ),
+    "Shor's algorithm": (
+        "https://en.wikipedia.org/wiki/Shor%27s_algorithm",
+        "Q717409",
+        "2026-04-11-quantum-thresholds-are-moving-again",
+    ),
+    "homomorphic encryption": (
+        "https://en.wikipedia.org/wiki/Homomorphic_encryption",
+        "Q2154943",
+        "2024-03-25-fully-homomorphic-encryption-in-a-banking-quantum-era",
+    ),
+    "Quantum computing": ("https://en.wikipedia.org/wiki/Quantum_computing", "Q484641", None),
+    "NIST PQC": ("https://csrc.nist.gov/projects/post-quantum-cryptography", None, None),
+    "ISO 20022": (
+        "https://www.iso20022.org/",
+        "Q15727611",
+        "2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001",
+    ),
+    "SWIFT gpi": ("https://www.swift.com/our-solutions/swift-gpi", None, None),
+    "SEPA": ("https://en.wikipedia.org/wiki/Single_Euro_Payments_Area", "Q286094", None),
+    "Large language model": (
+        "https://en.wikipedia.org/wiki/Large_language_model",
+        "Q115305900",
+        "2026-05-11-lucy-besson-knowledge-transfer-ai-quantum",
+    ),
+    "Generative AI": (
+        "https://en.wikipedia.org/wiki/Generative_artificial_intelligence",
+        "Q108766533",
+        "2023-11-12-exploring-generative-ai",
+    ),
+    "Artificial intelligence": (
+        "https://en.wikipedia.org/wiki/Artificial_intelligence",
+        "Q11660",
+        None,
+    ),
+    "Multimodal learning": (
+        "https://en.wikipedia.org/wiki/Multimodal_learning",
+        "Q117259025",
+        "2024-03-18-advancing-ai-with-multimodal-llms-insights-from-mm1",
+    ),
+    "Rust": ("https://en.wikipedia.org/wiki/Rust_(programming_language)", "Q575650", None),
+    "Python": ("https://en.wikipedia.org/wiki/Python_(programming_language)", "Q28865", None),
+    "Blockchain": (
+        "https://en.wikipedia.org/wiki/Blockchain",
+        "Q20514253",
+        "2018-01-02-blockchain-the-technology-that-matters-in-2018",
+    ),
+    "Bitcoin": (
+        "https://en.wikipedia.org/wiki/Bitcoin",
+        "Q131723",
+        "2018-01-01-bitcoin-the-year-in-review",
+    ),
+    "Ethereum": (
+        "https://en.wikipedia.org/wiki/Ethereum",
+        "Q21825854",
+        "2018-01-24-the-erc-20-token-standard",
+    ),
+    "ERC-20": (
+        "https://en.wikipedia.org/wiki/Ethereum#Tokens",
+        None,
+        "2018-01-24-the-erc-20-token-standard",
+    ),
 }
 
 SITE_ROOT = "https://sebastienrousseau.com"
@@ -193,6 +239,7 @@ def build_about_graph(html: str) -> str | None:
     if not matches:
         return None
     import json as _json
+
     primary = matches[0]
     rest = matches[1:6]  # cap secondary entities at 5 to keep schema lean
     fragment_parts = [f'"about":{_json.dumps(primary, separators=(",", ":"))}']
@@ -209,7 +256,7 @@ def inject_about(html: str) -> str:
     # so the entity graph sits at a stable position in the BlogPosting.
     return re.sub(
         r'("@type":"BlogPosting"[^{]*?)("headline":)',
-        rf'\1{fragment},\2',
+        rf"\1{fragment},\2",
         html,
         count=1,
     )
@@ -219,10 +266,10 @@ def inject_about(html: str) -> str:
 # 5. wordCount injection into BlogPosting
 # ---------------------------------------------------------------------------
 
-_main_re = re.compile(r'<main\b[^>]*>([\s\S]*?)</main>', re.IGNORECASE)
-_aside_re = re.compile(r'<aside\b[^>]*>([\s\S]*?)</aside>', re.IGNORECASE)
-_html_tag_re = re.compile(r'<[^>]+>')
-_whitespace_re = re.compile(r'\s+')
+_main_re = re.compile(r"<main\b[^>]*>([\s\S]*?)</main>", re.IGNORECASE)
+_aside_re = re.compile(r"<aside\b[^>]*>([\s\S]*?)</aside>", re.IGNORECASE)
+_html_tag_re = re.compile(r"<[^>]+>")
+_whitespace_re = re.compile(r"\s+")
 
 
 def compute_word_count(html: str) -> int | None:
@@ -232,9 +279,9 @@ def compute_word_count(html: str) -> int | None:
     content = main_m.group(1)
     # Drop asides (lead block, related-cards, etc.) — they're already
     # represented by speakable + isPartOf and aren't the article body.
-    content = _aside_re.sub('', content)
-    text = _html_tag_re.sub(' ', content)
-    text = _whitespace_re.sub(' ', text).strip()
+    content = _aside_re.sub("", content)
+    text = _html_tag_re.sub(" ", content)
+    text = _whitespace_re.sub(" ", text).strip()
     if not text:
         return None
     return len(text.split())
@@ -277,7 +324,8 @@ def fix_social_image(html: str) -> str:
     # losing the large banner preview on every share.
     html = sub_attr(
         r'(<meta\s+name="twitter:card"\s+content=)"summary"',
-        "summary_large_image", html,
+        "summary_large_image",
+        html,
     )
     return html
 
@@ -301,20 +349,27 @@ HOWTO_SCHEMAS: dict[str, dict] = {
             "ISO 20022 pain.001.001.09 payment-initiation file."
         ),
         "totalTime": "PT15M",
-        "supply": ["Python 3.9+", "pain001 PyPI package", "ISO 20022 XML template",
-                   "Input CSV of payment instructions"],
+        "supply": [
+            "Python 3.9+",
+            "pain001 PyPI package",
+            "ISO 20022 XML template",
+            "Input CSV of payment instructions",
+        ],
         "tool": ["pip", "Terminal", "lxml validator"],
         "steps": [
             ("Install pain001", "Install the package from PyPI with `pip install pain001`."),
-            ("Prepare your inputs",
-             "Place your payment-instruction CSV and your ISO 20022 XML template "
-             "in the same directory; both must follow the column layout documented "
-             "in the README."),
-            ("Run pain001",
-             "Invoke `pain001 -t template.xml -i instructions.csv -o pain001.xml`."),
-            ("Validate the output",
-             "Open the generated XML in lxml or your bank's validator; the file "
-             "should parse against the pain.001.001.09 schema with zero errors."),
+            (
+                "Prepare your inputs",
+                "Place your payment-instruction CSV and your ISO 20022 XML template "
+                "in the same directory; both must follow the column layout documented "
+                "in the README.",
+            ),
+            ("Run pain001", "Invoke `pain001 -t template.xml -i instructions.csv -o pain001.xml`."),
+            (
+                "Validate the output",
+                "Open the generated XML in lxml or your bank's validator; the file "
+                "should parse against the pain.001.001.09 schema with zero errors.",
+            ),
         ],
     },
     "2026-05-12-iso-20022-pacs008-structured-address-deadline": {
@@ -325,23 +380,34 @@ HOWTO_SCHEMAS: dict[str, dict] = {
             "structured-address mandate."
         ),
         "totalTime": "PT3M",
-        "supply": ["pacs.008 sample messages", "Current address-quality metrics",
-                   "Mapping rules to ISO 20022 PostalAddress components"],
+        "supply": [
+            "pacs.008 sample messages",
+            "Current address-quality metrics",
+            "Mapping rules to ISO 20022 PostalAddress components",
+        ],
         "tool": ["pacs008 parser", "ISO 20022 XML validator"],
         "steps": [
-            ("Inventory unstructured addresses",
-             "Audit your outbound pacs.008 traffic. Any address still in a single "
-             "free-text field is in scope."),
-            ("Map fields to structured components",
-             "Decompose the address into Town, PostCode, Country, BuildingNumber, "
-             "Street and other ISO 20022 PostalAddress slots."),
-            ("Update your message generator",
-             "Patch the pacs.008 templating layer so every new message emits "
-             "structured fields by default; keep a fallback for receivers that "
-             "haven't migrated."),
-            ("Test against the deadline",
-             "Run end-to-end tests against your scheme's test harness before the "
-             "November 2026 enforcement date."),
+            (
+                "Inventory unstructured addresses",
+                "Audit your outbound pacs.008 traffic. Any address still in a single "
+                "free-text field is in scope.",
+            ),
+            (
+                "Map fields to structured components",
+                "Decompose the address into Town, PostCode, Country, BuildingNumber, "
+                "Street and other ISO 20022 PostalAddress slots.",
+            ),
+            (
+                "Update your message generator",
+                "Patch the pacs.008 templating layer so every new message emits "
+                "structured fields by default; keep a fallback for receivers that "
+                "haven't migrated.",
+            ),
+            (
+                "Test against the deadline",
+                "Run end-to-end tests against your scheme's test harness before the "
+                "November 2026 enforcement date.",
+            ),
         ],
     },
 }
@@ -350,12 +416,14 @@ HOWTO_SCHEMAS: dict[str, dict] = {
 def _build_howto_jsonld(spec: dict) -> str:
     steps_json = []
     for i, (name, text) in enumerate(spec["steps"], 1):
-        steps_json.append({
-            "@type": "HowToStep",
-            "position": i,
-            "name": name,
-            "text": text,
-        })
+        steps_json.append(
+            {
+                "@type": "HowToStep",
+                "position": i,
+                "name": name,
+                "text": text,
+            }
+        )
     payload = {
         "@context": "https://schema.org",
         "@type": "HowTo",
@@ -366,7 +434,9 @@ def _build_howto_jsonld(spec: dict) -> str:
         "tool": [{"@type": "HowToTool", "name": t} for t in spec.get("tool", [])],
         "step": steps_json,
     }
-    return f'<script type="application/ld+json">{_json.dumps(payload, separators=(",",":"))}</script>'
+    return (
+        f'<script type="application/ld+json">{_json.dumps(payload, separators=(",",":"))}</script>'
+    )
 
 
 def inject_howto(page: Path, html: str) -> str:
@@ -378,7 +448,7 @@ def inject_howto(page: Path, html: str) -> str:
     if '"@type":"HowTo"' in html or '"@type": "HowTo"' in html:
         return html  # Already injected — idempotent.
     block = _build_howto_jsonld(spec)
-    return re.sub(r'</body>', block + '</body>', html, count=1)
+    return re.sub(r"</body>", block + "</body>", html, count=1)
 
 
 # ---------------------------------------------------------------------------
@@ -396,8 +466,8 @@ def inject_howto(page: Path, html: str) -> str:
 # else gets a 16:9 (1200×675) default which matches the dominant
 # banner shape used across the site.
 
-_IMG_TAG_RE = re.compile(r'<img\b([^>]*?)/?>', re.IGNORECASE)
-_IMG_SRC_RE = re.compile(r'''\bsrc=["']?([^"'\s>]+)''', re.IGNORECASE)
+_IMG_TAG_RE = re.compile(r"<img\b([^>]*?)/?>", re.IGNORECASE)
+_IMG_SRC_RE = re.compile(r"""\bsrc=["']?([^"'\s>]+)""", re.IGNORECASE)
 
 # Known dimensions for high-frequency assets. Keep this short — the
 # default below catches everything else.
@@ -436,11 +506,11 @@ def stamp_image_dimensions(html: str) -> tuple[str, int]:  # noqa: C901 — per-
         attrs = m.group(1)
         is_first = not seen_first
         seen_first = True
-        has_w = bool(re.search(r'\bwidth=', attrs, re.IGNORECASE))
-        has_h = bool(re.search(r'\bheight=', attrs, re.IGNORECASE))
-        has_loading = bool(re.search(r'\bloading=', attrs, re.IGNORECASE))
-        has_decoding = bool(re.search(r'\bdecoding=', attrs, re.IGNORECASE))
-        has_fetchpri = bool(re.search(r'\bfetchpriority=', attrs, re.IGNORECASE))
+        has_w = bool(re.search(r"\bwidth=", attrs, re.IGNORECASE))
+        has_h = bool(re.search(r"\bheight=", attrs, re.IGNORECASE))
+        has_loading = bool(re.search(r"\bloading=", attrs, re.IGNORECASE))
+        has_decoding = bool(re.search(r"\bdecoding=", attrs, re.IGNORECASE))
+        has_fetchpri = bool(re.search(r"\bfetchpriority=", attrs, re.IGNORECASE))
 
         if has_w and has_h and has_loading and has_decoding and (has_fetchpri or not is_first):
             return m.group(0)
@@ -489,7 +559,7 @@ BASE_URL = "https://sebastienrousseau.com"
 SITE_NAME = "Sebastien Rousseau"
 
 _HTML_LANG_RE = re.compile(r'<html\b[^>]*\blang=["\']?([a-zA-Z-]+)', re.IGNORECASE)
-_HEAD_END_RE = re.compile(r'</head>', re.IGNORECASE)
+_HEAD_END_RE = re.compile(r"</head>", re.IGNORECASE)
 _OG_TAG_RE = re.compile(
     r'<meta\s+(?:property|name)=["\']?(og:[a-z_]+|twitter:[a-z_]+)["\']?',
     re.IGNORECASE,
@@ -520,8 +590,9 @@ def _resolve_og_banner(html: str, present: set[str]) -> list[str]:
     if "og:image" in present:
         return []
     img_m = _blogposting_image_re.search(html)
-    banner = (img_m.group(1) if img_m else "") or \
-        "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+    banner = (
+        img_m.group(1) if img_m else ""
+    ) or "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
     out = [f'<meta property="og:image" content="{banner}">']
     if "twitter:image" not in present:
         out.append(f'<meta name="twitter:image" content="{banner}">')

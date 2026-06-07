@@ -1,5 +1,6 @@
 ---
 title: "العتبات الكمية تتحرّك من جديد"
+tags: "الحوسبة الكمومية, Shor's algorithm, التشفير ما بعد الكمي, RSA, elliptic curve, neutral atoms, error correction, cryptographic agility, quantum threat, payments, ISO 20022, DORA, AI, المدفوعات عبر الحدود, stablecoins"
 subtitle: "تقترح ورقةٌ بحثية جديدة أن خوارزمية Shor يمكن أن تعمل على عشرة آلاف qubit فحسب. وتنخفض عتبة الحوسبة الكمية ذات الصلة بالتشفير أسرع ممّا توقّع أكثر الباحثين."
 description: "تقترح ورقةٌ بحثية جديدة أن خوارزمية Shor يمكن أن تعمل على عشرة آلاف qubit فحسب. وتنخفض عتبة الحوسبة الكمية ذات الصلة بالتشفير أسرع ممّا توقّع أكثر الباحثين."
 date: "April 11, 2026"

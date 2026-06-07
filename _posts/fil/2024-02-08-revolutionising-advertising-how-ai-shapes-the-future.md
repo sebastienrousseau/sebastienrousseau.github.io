@@ -1,5 +1,6 @@
 ---
 title: "الذكاء الاصطناعي التوليدي في الإعلان: Amazon Rufus وMeta"
+tags: "AI, Advertising, Amazon, Meta, Chatbots, Marketing, Technology, Analytics, Digital, Optimization, ISO 20022, post-quantum cryptography"
 subtitle: "كيف يُحوِّل الذكاء الاصطناعي تفاعلات المستهلكين وديناميكيات الإعلان"
 description: "كيف يُحوِّل الذكاء الاصطناعي الإعلان — رؤى حول Rufus من Amazon وأحدث تطورات Meta. اكتشف الأثر على إشراك المستهلك."
 date: "Feb 08, 2024"

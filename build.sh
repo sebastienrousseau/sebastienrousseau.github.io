@@ -50,23 +50,42 @@ if [[ -d .well-known ]]; then
   cp -R .well-known/. public/.well-known/
 fi
 
-# Build + stage WASM lab demos. Each subdirectory of _wasm-demos/ is a
-# self-contained Rust→WASM crate plus a `web/` folder with the standalone
-# HTML/JS/CSS shell. The compiled wasm-pack artefacts + the web shell are
-# copied into public/labs/<crate-name>/ where they're served alongside the
-# rest of the static site. Skipped if wasm-pack isn't on the PATH (e.g.
-# minimal local builds) — CI installs it explicitly.
-if command -v wasm-pack >/dev/null 2>&1 && [[ -d _wasm-demos ]]; then
-  for demo in _wasm-demos/*/; do
-    [[ -f "$demo/Cargo.toml" ]] || continue
+# Mirror fonts/ (self-hosted Inter + Newsreader + JetBrains Mono variable
+# WOFF2, latin + latin-ext subsets) into public/fonts/. Same hands-off
+# pattern as .well-known — files are static, served as-is, immutable cache.
+if [[ -d fonts ]]; then
+  mkdir -p public/fonts
+  cp -R fonts/. public/fonts/
+fi
+
+# Compile and copy all client-side lab demos under labs/ into public/labs/.
+# If a directory contains Cargo.toml, it is built with wasm-pack and the WASM
+# artifacts (and any web shell content) are staged. Otherwise, it is a pure
+# JavaScript/HTML/CSS demo and copied directly.
+if [[ -d labs ]]; then
+  mkdir -p public/labs
+  if [[ -f labs/README.md ]]; then
+    cp labs/README.md public/labs/README.md
+  fi
+  for demo in labs/*/; do
+    [[ -d "$demo" ]] || continue
     name=$(basename "$demo")
-    echo "wasm-pack[$name]: building"
-    (cd "$demo" && wasm-pack build --target web --release 2>&1 | tail -3)
-    mkdir -p "public/labs/$name"
-    cp "$demo/pkg/${name//-/_}.js" "public/labs/$name/"
-    cp "$demo/pkg/${name//-/_}_bg.wasm" "public/labs/$name/"
-    if [[ -d "$demo/web" ]]; then
-      cp -R "$demo/web/." "public/labs/$name/"
+    if [[ -f "$demo/Cargo.toml" ]]; then
+      if command -v wasm-pack >/dev/null 2>&1; then
+        echo "wasm-pack[$name]: building"
+        (cd "$demo" && wasm-pack build --target web --release 2>&1 | tail -3)
+        mkdir -p "public/labs/$name"
+        cp "$demo/pkg/${name//-/_}.js" "public/labs/$name/"
+        cp "$demo/pkg/${name//-/_}_bg.wasm" "public/labs/$name/"
+        if [[ -d "$demo/web" ]]; then
+          cp -R "$demo/web/." "public/labs/$name/"
+        fi
+      else
+        echo "warning: wasm-pack not found, skipping Rust compilation for $name"
+      fi
+    else
+      mkdir -p "public/labs/$name"
+      cp -R "$demo/." "public/labs/$name/"
     fi
   done
 fi
@@ -86,6 +105,7 @@ python3 scripts/generators/build_translations.py
 python3 scripts/generators/build_lang_feeds.py
 python3 scripts/generators/build_agent_api.py
 python3 scripts/generators/build_lead_magnets.py
+python3 scripts/generators/build_news_sitemap.py
 python3 scripts/postbuild/postbuild.py
 # Rewrite the in-page language switcher so each .ap-lang-item link
 # points to the localised URL of THIS page (per the page's own
@@ -108,19 +128,19 @@ fi
 # Allow the signing pass to fail (e.g. wrong COSIGN_PASSWORD on this
 # machine) without breaking the build — the committed bundles still ship.
 python3 scripts/security/sigstore_sign.py || true
-python3 scripts/tests/test_search_indexes.py
-python3 scripts/tests/test_i18n_parity.py
-python3 scripts/tests/test_i18n_strings.py
-python3 scripts/tests/test_i18n_labels.py
-python3 scripts/tests/test_i18n_takeaway_labels.py
-python3 scripts/tests/test_i18n_render_data.py
-python3 scripts/tests/test_i18n_author.py
-python3 scripts/tests/test_hreflang_reciprocity.py
-python3 scripts/tests/test_jsonld_localized.py
-python3 scripts/tests/test_sitemap_completeness.py
-python3 scripts/tests/test_lang_no_leakage.py
-python3 scripts/tests/test_rtl_safe.py --strict
-python3 scripts/tests/test_csp_strict.py
+python3 tests/validation/test_search_indexes.py
+python3 tests/validation/test_i18n_parity.py
+python3 tests/validation/test_i18n_strings.py
+python3 tests/validation/test_i18n_labels.py
+python3 tests/validation/test_i18n_takeaway_labels.py
+python3 tests/validation/test_i18n_render_data.py
+python3 tests/validation/test_i18n_author.py
+python3 tests/validation/test_hreflang_reciprocity.py
+python3 tests/validation/test_jsonld_localized.py
+python3 tests/validation/test_sitemap_completeness.py
+python3 tests/validation/test_lang_no_leakage.py
+python3 tests/validation/test_rtl_safe.py --strict
+python3 tests/validation/test_csp_strict.py
 # Cloudflare Worker (edge Accept-Language router + security headers) —
 # pure-logic tests, no Cloudflare runtime required. 100% line/branch/
 # function coverage is enforced via Node's built-in test coverage so the
@@ -134,6 +154,16 @@ if command -v node >/dev/null 2>&1; then
     --test-coverage-functions=100 \
     --test-coverage-include='workers/lang-router.js' \
     workers/test_lang_router.mjs
+  # ActivityPub sibling — same 100% line/branch/function coverage gate,
+  # tested in isolation so the webfinger / actor / inbox / outbox decision
+  # tree stays exhaustively covered as it grows past starter scope.
+  node --test \
+    --experimental-test-coverage \
+    --test-coverage-lines=100 \
+    --test-coverage-branches=100 \
+    --test-coverage-functions=100 \
+    --test-coverage-include='workers/activitypub.js' \
+    workers/test_activitypub.mjs
 fi
 
 # GitHub Pages serves from main/docs, so mirror the postbuild output into

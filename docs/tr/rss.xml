@@ -6,14 +6,14 @@
     <description>Türkçe makaleler: uygulamalı yapay zeka, ISO 20022 ödemeleri, post-kuantum kriptografi ve toptan ödemelerin dönüşümü.</description>
     <atom:link href="https://sebastienrousseau.com/tr/rss.xml" rel="self" type="application/rss+xml"/>
     <language>tr-TR</language>
-    <lastBuildDate>Thu, 28 May 2026 18:12:27 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 07 Jun 2026 18:23:54 +0000</lastBuildDate>
     <copyright>© Telif Hakkı 2007 - 2026 - Sebastien Rousseau. Tüm hakları saklıdır.</copyright>
     <item>
       <title>2026&apos;da Otonom Hazine Endeksi: Ajan Tabanlı Hazine, Programlanabilir Likidite, Tokenize Mevduatlar ve Gerçek Zamanlı Nakit Kontrolü</title>
       <link>https://sebastienrousseau.com/tr/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/</link>
       <description>Ajan tabanlı hazine iş akışlarını, programlanabilir likiditeyi, tokenize mevduatları, gerçek zamanlı ödemeleri ve otomatik nakit kontrolünü kapsayan 2026 otonom hazine hazırlık endeksi.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/</guid>
-      <pubDate>Thu, 28 May 2026 18:12:27 +0000</pubDate>
+      <pubDate>Sun, 07 Jun 2026 18:23:54 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/christopher-burns-Kj2SaNHG-hg.webp" type="image/webp" length="0"/>
       <category>otonom hazine 2026</category>
@@ -24,13 +24,95 @@
       <category>nakit yönetimi AI</category>
     </item>
     <item>
+      <title>2026&apos;da Toptan Ödemeler Endeksi: ISO 20022, Tokenleştirilmiş Mevduat, Gerçek Zamanlı Raylar ve Sınır Ötesi Mutabakat</title>
+      <link>https://sebastienrousseau.com/tr/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</link>
+      <description>2026 toptan ödeme hazırlığı için bir endeks: ISO 20022 veri kalitesi, tokenleştirilmiş mevduat, gerçek zamanlı raylar, sınır ötesi mutabakat ve likidite verimliliğini ölçer.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</guid>
+      <pubDate>Sun, 07 Jun 2026 18:23:54 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/miquel-parera-NsXLehhHx1Q.webp" type="image/webp" length="0"/>
+      <category>toptan ödemeler 2026</category>
+      <category>ISO 20022</category>
+      <category>tokenleştirilmiş mevduat</category>
+      <category>Proje Agorá</category>
+      <category>sınır ötesi ödemeler</category>
+      <category>gerçek zamanlı ödemeler</category>
+      <category>yapılandırılmış adres verisi</category>
+      <category>ödeme veri kalitesi</category>
+    </item>
+    <item>
+      <title>2026&apos;da Bulut-Yerel Bankacılık Endeksi: DORA, Platform Mühendisliği, Egemen Bulut ve Operasyonel Dayanıklılık</title>
+      <link>https://sebastienrousseau.com/tr/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/</link>
+      <description>DORA hazırlığını, platform mühendisliği olgunluğunu, bulut yoğunlaşma riskini, çıkış kanıtını ve operasyonel dayanıklılığı ölçmek için 2026 bulut-yerel bankacılık endeksi.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/</guid>
+      <pubDate>Sun, 07 Jun 2026 18:23:54 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/quang-nguyen-vinh-2649403.webp&w=1600&format=webp&q=85" type="image/webp" length="0"/>
+      <category>bulut-yerel bankacılık 2026</category>
+      <category>DORA bankalar</category>
+      <category>bulut yoğunlaşma riski</category>
+      <category>platform mühendisliği bankalar</category>
+      <category>BİT üçüncü taraf riski</category>
+      <category>bulut çıkış stratejisi</category>
+      <category>egemen bulut</category>
+      <category>Kubernetes</category>
+    </item>
+    <item>
+      <title>2026&apos;da Çok Raylı Banka: Kartlar, A2A, Stablecoin&apos;ler, RTP, FedNow ve Open Banking Tek Stratejide</title>
+      <link>https://sebastienrousseau.com/tr/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</link>
+      <description>FedNow 7/24 ön finansmanlı likidite ister. ACH ucuz ama T+1&apos;dir. USDC atomik mutabaka ulaşır ama cüzdan altyapısı gerektirir. 2026 çok raylı bankası her ödemeyi maliyet ve kesinliğe göre yönlendirir.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</guid>
+      <pubDate>Sun, 07 Jun 2026 18:23:54 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
+      <category>ödeme orkestrasyon katmanı</category>
+      <category>FedNow vs RTP</category>
+      <category>FedNow vs ACH</category>
+      <category>stablecoin mutabakatı</category>
+      <category>USDC atomik mutabakat</category>
+      <category>ISO 20022 pacs.008</category>
+      <category>hesaptan hesaba A2A</category>
+      <category>Open Banking API&apos;leri</category>
+      <category>ön finansmanlı likidite</category>
+      <category>7/24 likidite tuzağı</category>
+      <category>çok raylı banka 2026</category>
+      <category>ödeme yönlendirme motoru</category>
+      <category>ERP mutabakatı</category>
+    </item>
+    <item>
+      <title>Kuantum Sonrası Ödeme Altyapısı: Bankalar Neden Eski Rayları Uyarlamak Yerine Değiştirebilir</title>
+      <link>https://sebastienrousseau.com/tr/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</link>
+      <description>Kuantum sonrası kriptografi ödeme raylarına ikili bir seçim dayatır: ML-KEM ve ML-DSA için hiç boyutlanmamış SWIFT MT ve ISO 20022 zarflarında RSA/ECC&apos;yi uyarlamak ya da kripto-çevik altyapıyla değiştirmek. Mimarlar HNDL operasyonel kayba dönüşmeden karar vermeli.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</guid>
+      <pubDate>Sun, 07 Jun 2026 18:23:54 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp" type="image/webp" length="0"/>
+      <category>kuantum sonrası kriptografi</category>
+      <category>PQC ödemeler</category>
+      <category>kripto-çeviklik</category>
+      <category>şimdi topla sonra çöz</category>
+      <category>HNDL</category>
+      <category>NIST kuantum sonrası standartlar</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>FIPS 203</category>
+      <category>FIPS 204</category>
+      <category>ödeme rayı göçü</category>
+      <category>ISO 20022 PQC</category>
+      <category>SWIFT MT değiştirme</category>
+      <category>HSM</category>
+      <category>PKI çöküşü</category>
+      <category>operasyonel dayanıklılık</category>
+      <category>Quantum Computing Cybersecurity Preparedness Act</category>
+    </item>
+    <item>
       <title>Ödemelerin İşletim Sistemi Olarak AI: 2026&apos;da Dolandırıcılık, Yönlendirme, Dayanıklılık ve Uyum</title>
       <link>https://sebastienrousseau.com/tr/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/</link>
       <description>AI 2026&apos;da ödemelerin işletim sistemi hâline geliyor; analitikten dolandırıcılık önleme, ödeme onarımı, yönlendirme, likidite tahmini, uyum taraması ve aracılı ticaret kontrollerine geçiyor.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/</guid>
-      <pubDate>Thu, 28 May 2026 18:12:27 +0000</pubDate>
+      <pubDate>Sun, 07 Jun 2026 18:23:54 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <enclosure url="https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp" type="image/webp" length="0"/>
       <category>AI ödemeler 2026</category>
       <category>ödeme dolandırıcılığı</category>
       <category>ödeme yönlendirme</category>
@@ -45,7 +127,7 @@
       <link>https://sebastienrousseau.com/tr/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/</link>
       <description>Stablecoinler ve tokenleştirilmiş mevduatlar programlanabilir mutabakat etrafında yakınsıyor; ancak bilanço, hukuki, likidite ve güven modelleri farklı kalıyor.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026/</guid>
-      <pubDate>Thu, 28 May 2026 18:12:27 +0000</pubDate>
+      <pubDate>Sun, 07 Jun 2026 18:23:54 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/pixabay-210547.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
       <category>stablecoinler 2026</category>
@@ -63,7 +145,7 @@
       <link>https://sebastienrousseau.com/tr/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/</link>
       <description>UK Payments Forward Plan ve Nisan 2026 politika paketi; geleneksel ödemeler, stablecoinler, tokenleştirilmiş mevduatlar, açık bankacılık ve yapay zeka ajanı ödemeleri için tek tutarlı bir çerçeveye işaret ediyor.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/</guid>
-      <pubDate>Thu, 28 May 2026 18:12:27 +0000</pubDate>
+      <pubDate>Sun, 07 Jun 2026 18:23:54 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/riccardo-oliva-C5DLhUkEWfM.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
       <category>UK Payments Forward Plan 2026</category>
@@ -81,7 +163,7 @@
       <link>https://sebastienrousseau.com/tr/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/</link>
       <description>2026&apos;da ajansal ödemeler kavramdan canlı işleme geçti. Bankacılık sorusu artık yapay zeka ajanlarının ödeme başlatıp başlatamayacağı değil; onay, sorumluluk, kimlik, denetlenebilirlik, dolandırıcılık kontrolleri ve protokol birlikte çalışabilirliğinin nasıl kurulacağıdır.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/</guid>
-      <pubDate>Thu, 28 May 2026 18:12:27 +0000</pubDate>
+      <pubDate>Sun, 07 Jun 2026 18:23:54 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/ai-robot.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
       <category>ajansal ödemeler 2026</category>
@@ -102,6 +184,123 @@
       <category>geçiş anahtarları</category>
       <category>bankacılık UX</category>
       <category>yapay zeka ticareti</category>
+    </item>
+    <item>
+      <title>2026 Kuantum-Güvenli Bankacılık İndeksi: Kuantum-Sonrası Kriptografi, QKD, Kripto-Çeviklik ve Şimdi-Topla-Sonra-Çöz Riski</title>
+      <link>https://sebastienrousseau.com/tr/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/</link>
+      <description>2026&apos;da kuantum-güvenli hazırlık için bir bankacılık indeksi: NIST kuantum-sonrası standartları, kriptografik envanter, kripto-çeviklik, QKD ve uzun ömürlü veri maruziyetini kapsar.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/</guid>
+      <pubDate>Thu, 04 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>2026 kuantum güvenli bankacılık</category>
+      <category>bankalar için kuantum sonrası kriptografi</category>
+      <category>NIST FIPS 203</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>SLH-DSA</category>
+      <category>kripto çeviklik</category>
+      <category>QKD bankacılık</category>
+    </item>
+    <item>
+      <title>Bankalar için 2026 Ajansal Yapay Zekâ İndeksi: Özerklik, Yönetişim, Denetlenebilirlik ve İş Etkisinin Ölçülmesi</title>
+      <link>https://sebastienrousseau.com/tr/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/</link>
+      <description>Bankalarda ajansal yapay zekâ hazırlığını ölçen indeks tarzı bir çerçeve: özerklik, yönetişim, denetlenebilirlik, dayanıklılık, kontroller ve iş değeri.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/</guid>
+      <pubDate>Wed, 03 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>bankalarda ajansal yapay zekâ 2026</category>
+      <category>banka yapay zekâ ajanları</category>
+      <category>finansal hizmetlerde yapay zekâ yönetişimi</category>
+      <category>özerk bankacılık iş akışları</category>
+      <category>model risk yönetimi</category>
+      <category>yapay zekâ denetlenebilirliği</category>
+    </item>
+    <item>
+      <title>2026 Bankacılık Altyapı Endeksi: Özerk Yapay Zeka, Kuantum-Güvenli Güvenlik, Bulut-Yerel Dayanıklılık ve Toptan Ödemelerde Hazır Olma Ölçümü</title>
+      <link>https://sebastienrousseau.com/tr/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/</link>
+      <description>2026 Stanford AI Index esinli bankacılık altyapı endeksi: özerk YZ, kuantum-güvenli güvenlik, bulut-yerel dayanıklılık ve toptan ödemelerde hazır olma ölçümü.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/</guid>
+      <pubDate>Tue, 02 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/miguel-sousa-ejIF-pJhYkM.webp" type="image/webp" length="0"/>
+      <category>bankacılık altyapı endeksi 2026</category>
+      <category>agentic AI banking</category>
+      <category>özerk yapay zeka bankacılık</category>
+      <category>quantum safe banking</category>
+      <category>kuantum güvenli bankacılık</category>
+      <category>cloud native banking</category>
+      <category>bulut-yerel bankacılık</category>
+      <category>wholesale payments</category>
+      <category>toptan ödemeler</category>
+      <category>ISO 20022</category>
+      <category>DORA</category>
+      <category>Project Agora</category>
+      <category>tokenleştirilmiş mevduat</category>
+    </item>
+    <item>
+      <title>Birleşik Krallık&apos;ta Toptan Dijital Piyasalar: Gilt&apos;ler ve Şampiyon Rolü</title>
+      <link>https://sebastienrousseau.com/tr/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</link>
+      <description>Birleşik Krallık&apos;ın Toptan Dijital Piyasalar Şampiyonu rolü; tokenleştirilmiş gilt&apos;leri, DLT mutabakatını ve City&apos;yi ulusal rekabet gücü projesine bağlıyor.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</guid>
+      <pubDate>Sat, 30 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>Birleşik Krallık toptan dijital piyasalar 2026</category>
+      <category>Chris Woolard</category>
+      <category>tokenleştirilmiş gilt</category>
+      <category>tokenleştirilmiş toptan finans</category>
+      <category>dijital piyasalar şampiyonu</category>
+      <category>DSS</category>
+      <category>FCA</category>
+      <category>BoE</category>
+      <category>RTGS</category>
+      <category>atomik DvP</category>
+      <category>gün içi repo</category>
+      <category>teminat hareketliliği</category>
+    </item>
+    <item>
+      <title>ISO 20022 Göçten Sonra: Ödeme Verisini 2026&apos;da Banka Ürünlerine Dönüştürmek</title>
+      <link>https://sebastienrousseau.com/tr/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</link>
+      <description>ISO 20022 göçten sonra bir ödeme verisi ürünleri fırsatıdır. Yapılandırılmış adresler, amaç kodları, fatura ayrıntıları, soruşturma mesajları ve zengin ödeme statü olayları 2026 banka platformudur.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</guid>
+      <pubDate>Fri, 29 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/humphrey-muleba-1660004.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>ISO 20022 2026</category>
+      <category>yapılandırılmış adres</category>
+      <category>CBPR+</category>
+      <category>ödeme verisi ürünleri</category>
+      <category>amaç kodu</category>
+      <category>kurumsal hazine</category>
+      <category>mutabakat</category>
+      <category>yaptırım taraması</category>
+      <category>dolandırıcılık tespiti</category>
+      <category>pacs.008</category>
+      <category>pain.001</category>
+      <category>SWIFT gpi</category>
+      <category>SEPA Instant</category>
+      <category>FedNow</category>
+    </item>
+    <item>
+      <title>Dijital Varlıklar 2026: Bankaların Erteleyemeyeceği Altyapı Geçişi</title>
+      <link>https://sebastienrousseau.com/tr/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</link>
+      <description>Dijital varlıklar artık inovasyon bahsi değildir. Bankalar için takas, saklama ve bilanço mimarisi sorusudur; stratejik görev yapısal belirsizlik altında altyapı tasarımıdır.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</guid>
+      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/corporate-finance.webp" type="image/webp" length="0"/>
+      <category>dijital varlıklar 2026</category>
+      <category>tokenize gerçek dünya varlıkları</category>
+      <category>stablecoinler bankacılık</category>
+      <category>tokenize mevduatlar</category>
+      <category>dijital varlık saklama</category>
+      <category>DLT bankacılık</category>
+      <category>takas altyapısı</category>
+      <category>teminat hareketliliği</category>
+      <category>programlanabilir para</category>
+      <category>dijital varlık banka stratejisi</category>
     </item>
     <item>
       <title>DORA, EU AI Yasası ve Veri Egemenliği: Bankalar için 2026 Uyum Yığını</title>
@@ -248,7 +447,7 @@
       <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-05-19-global-wholesale-payments-economics-2026/</guid>
       <pubDate>Tue, 19 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/meiying-ng-OrwkD-iWgqg.webp" type="image/webp" length="0"/>
+      <enclosure url="https://cloudcdn.pro/stocks/images/miguel-sousa-ejIF-pJhYkM.webp" type="image/webp" length="0"/>
       <category>toptan ödemeler 2026</category>
       <category>küresel ödemeler ekonomisi</category>
       <category>ISO 20022</category>

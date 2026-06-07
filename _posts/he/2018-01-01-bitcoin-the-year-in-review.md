@@ -1,5 +1,6 @@
 ---
 title: "بيتكوين: عام في المراجعة لأوّل عملة مشفّرة"
+tags: "bitcoin, cryptocurrency, blockchain, decentralized finance, digital currency, peer-to-peer payments, digital gold, כסף ניתן לתכנות, future of money, financial revolution, ISO 20022, קריפטוגרפיה פוסט-קוונטית, AI, סטייבלקוינים, פיקדונות מתואדים, open source"
 subtitle: "نظام دفع إلكتروني نِدّ-لنِدّ أعاد تعريف المال"
 description: "بيتكوين: نظام نقد إلكتروني نِدّ-لنِدّ (P2P ECS) قادر على إحداث ثورة في طريقة تعامل الناس عبر الإنترنت."
 date: "January 1, 2018"

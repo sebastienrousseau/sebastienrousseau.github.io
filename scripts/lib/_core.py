@@ -10,6 +10,7 @@ every caller imports from this module.
 This module is intentionally tiny and has zero external dependencies
 beyond stdlib — it's imported very early in every pipeline step.
 """
+
 from __future__ import annotations
 
 import json
@@ -43,7 +44,7 @@ def parse_frontmatter(text: str) -> tuple[dict[str, str], str]:
     if end < 0:
         return {}, text
     head = text[3:end]
-    body = text[end + 4:].lstrip("\n")
+    body = text[end + 4 :].lstrip("\n")
     fm: dict[str, str] = {}
     for line in head.splitlines():
         m = _FM_KEY_RE.match(line)
@@ -69,8 +70,18 @@ def read_frontmatter(path: Path) -> dict[str, str]:
 # ---------------------------------------------------------------------------
 
 _MONTH_NAMES = (
-    "January", "February", "March", "April", "May", "June",
-    "July", "August", "September", "October", "November", "December",
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
 )
 
 

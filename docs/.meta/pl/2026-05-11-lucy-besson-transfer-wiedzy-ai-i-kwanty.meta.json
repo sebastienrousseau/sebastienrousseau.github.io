@@ -1,11 +1,13 @@
 {
-  "banner": "https://cloudcdn.pro/stocks/images/lucy-knowledge-transfer-banner.webp",
   "date": "May 11, 2026",
-  "title": "Lucy Besson: transfer wiedzy w AI i kwantach",
-  "locale": "pl_PL",
   "keywords": "transfer wiedzy, AI, kwanty, konsulting, knowledge transfer, Lucy Besson",
+  "title": "Lucy Besson: transfer wiedzy w AI i kwantach",
+  "description": "Jak strukturyzowany transfer wiedzy zmienia konsulting w obszarach AI i obliczeń kwantowych.",
+  "banner": "https://cloudcdn.pro/stocks/images/lucy-knowledge-transfer-banner.webp",
+  "reading_time": 1,
+  "locale": "pl_PL",
   "language": "pl-PL",
-  "subtitle": "Strukturyzowany transfer wiedzy w pracy konsultingowej",
   "banner_alt": "Portret Lucy Besson z motywem transferu wiedzy",
-  "description": "Jak strukturyzowany transfer wiedzy zmienia konsulting w obszarach AI i obliczeń kwantowych."
+  "subtitle": "Strukturyzowany transfer wiedzy w pracy konsultingowej",
+  "word_count": 167
 }

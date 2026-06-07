@@ -43,7 +43,7 @@ short_name: "sebastienrousseau"
 subtitle: "Browse the site by topic: AI, payments, post-quantum cryptography, open source."
 tags: "explore by tag, explore topics, delve deeper, get to the subjects, matter most, website, website content, website topics, website tags, website search, website navigation"
 theme-color: "0, 67, 165"
-title: "Topics & Tags Index: AI, Payments, Quantum, Rust OSS"
+title: "Tags Index: AI, Payments & Rust OSS - Sebastien Rousseau"
 url: "https://sebastienrousseau.com/tags"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 

@@ -1,5 +1,6 @@
 ---
 title: "Google Gemma AI: Transforming Open-Source AI Development"
+tags: "Gemma, Google, AI, open source, Technical, Enterprise, Integration, macOS, Data, Ethics, ISO 20022, পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, Rust"
 subtitle: "সক্ষমতা, ওপেন সোর্স অবদান এবং ভবিষ্যৎ পরিকল্পনার অন্তরঙ্গ পর্যালোচনা"
 description: "গুগলের Gemma AI মডেল আবিষ্কার করুন: একটি ওপেন-সোর্স প্রকল্প যা ব্যক্তিগত ও এন্টারপ্রাইজ উভয় ব্যবহারের জন্য নৈতিক AI সমাধান প্রদান করে।"
 date: "Feb 26, 2024"
@@ -239,4 +240,3 @@ Gemma's launch is a watershed moment in the field of AI, highlighting a shift to
 [05]: https://ollama.com/download "Ollama Download"
 
 [divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Divider"
-

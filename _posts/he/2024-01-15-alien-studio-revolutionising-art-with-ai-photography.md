@@ -1,5 +1,6 @@
 ---
 title: "Alien Studio: رحلتي من التكنولوجيا إلى الفنّ التصويري"
+tags: "Technology, Art, Photography, Rust, AI, מחשוב קוונטי, Personal Journey, Alien Studio, Digital Art, Innovation, ISO 20022, קריפטוגרפיה פוסט-קוונטית"
 subtitle: "بدايات ملحمة تكنولوجية"
 description: "انضمّ إليّ في رحلتي الشخصية — من Rust والذكاء الاصطناعي والحوسبة الكمومية إلى إعادة تعريف الفنّ والتصوير عبر Alien Studio."
 date: "Jan 15, 2024"

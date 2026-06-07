@@ -1,11 +1,14 @@
 {
-  "description": "ইলেই চেনের কোয়ান্টাম LWE অ্যালগরিদমে একটি বাগ ল্যাটিস-ভিত্তিক ক্রিপ্টোগ্রাফিকে সাময়িকভাবে রক্ষা করেছে। CRYSTALS-Kyber, Dilithium এবং PQC রোডম্যাপের জন্য এর অর্থ কী।",
-  "banner_alt": "MidJourney ব্যবহার করে তৈরি চিত্র — লাল ও নীল আভায় ডিজিটাল নোডের একটি নেটওয়ার্ক।",
-  "banner": "https://cloudcdn.pro/stocks/images/digital-nodes.webp",
-  "keywords": "পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, NIST, PQC মানকীকরণ, Yilei Chen, কোয়ান্টাম অ্যালগরিদম, ল্যাটিস-ভিত্তিক ক্রিপ্টোগ্রাফি, LWE সমস্যা, CRYSTALS-KYBER, CRYSTALS-Dilithium, কোয়ান্টাম-প্রতিরোধী ক্রিপ্টোগ্রাফি",
-  "locale": "bn_BD",
-  "date": "Apr 22, 2024",
-  "language": "bn-BD",
   "title": "Quantum Lattice Crypto: Bug in Chen's LWE Attack",
-  "subtitle": "পিয়ার রিভিউ চেনের যুগান্তকারী গবেষণায় ত্রুটি উন্মোচন করেছে"
+  "keywords": "পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, NIST, PQC মানকীকরণ, Yilei Chen, কোয়ান্টাম অ্যালগরিদম, ল্যাটিস-ভিত্তিক ক্রিপ্টোগ্রাফি, LWE সমস্যা, CRYSTALS-KYBER, CRYSTALS-Dilithium, কোয়ান্টাম-প্রতিরোধী ক্রিপ্টোগ্রাফি",
+  "word_count": 1081,
+  "tags": "পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, NIST, quantum algorithms, Lattice-Based Cryptography, LWE Problem, কোয়ান্টাম কম্পিউটিং, Cryptographic Security, Quantum Resistance, Cryptography Research, ISO 20022, AI, Rust",
+  "banner": "https://cloudcdn.pro/stocks/images/digital-nodes.webp",
+  "reading_time": 5,
+  "locale": "bn_BD",
+  "language": "bn-BD",
+  "banner_alt": "MidJourney ব্যবহার করে তৈরি চিত্র — লাল ও নীল আভায় ডিজিটাল নোডের একটি নেটওয়ার্ক।",
+  "date": "Apr 22, 2024",
+  "subtitle": "পিয়ার রিভিউ চেনের যুগান্তকারী গবেষণায় ত্রুটি উন্মোচন করেছে",
+  "description": "ইলেই চেনের কোয়ান্টাম LWE অ্যালগরিদমে একটি বাগ ল্যাটিস-ভিত্তিক ক্রিপ্টোগ্রাফিকে সাময়িকভাবে রক্ষা করেছে। CRYSTALS-Kyber, Dilithium এবং PQC রোডম্যাপের জন্য এর অর্থ কী।"
 }

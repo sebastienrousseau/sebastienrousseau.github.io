@@ -39,7 +39,7 @@ schema: "FAQPage, Article"
 seo_title: "Acid Jazz UK 2026: Artis, Konser, Album, Kebangkitan"
 short_name: "sebastienrousseau"
 subtitle: "Acid jazz di Inggris tengah memperbarui dirinya melalui perpaduan antara pelaku era lama, rilisan Acid Jazz Records, festival jazz funk, audiens soul jazz, pertunjukan hidup bertenaga organ Hammond, dan musisi jazz UK generasi baru yang membawa groove kembali ke pusat panggung."
-tags: "acid jazz, UK jazz, Acid Jazz Records, Brand New Heavies, Galliano, James Taylor Quartet, Ronnie Scott's, Bangs and Talbot, Chris Bangs, Mick Talbot, Mostly Jazz Funk Soul Festival, Cymande, Soul II Soul, Jordan Rakei, jazz funk, soul jazz"
+tags: "acid jazz, UK jazz, Acid Jazz Records, Brand New Heavies, Galliano, James Taylor Quartet, Ronnie Scott's, Bangs and Talbot, Chris Bangs, Mick Talbot, Mostly Jazz Funk Soul Festival, Cymande, Soul II Soul, Jordan Rakei, jazz funk, soul jazz, ISO 20022, kriptografi pasca-kuantum, AI, DORA, simpanan tertokenisasi, rekayasa platform, sovereign cloud, perbankan cloud native, pembayaran lintas batas, stablecoins"
 theme-color: "0, 83, 191"
 title: "Pembaruan Acid Jazz di Inggris: Artis, Konser, dan Album 2026"
 url: "https://sebastienrousseau.com/id/2026-05-22-uk-acid-jazz-renewal-artists-concerts-albums-2026"
@@ -93,9 +93,9 @@ site_software: "Static Site Generator, Rust"
 <p class="post-lead-heading"><strong>Poin-poin kunci</strong></p>
 <ul class="post-lead-takeaways">
   <li><strong>Label.</strong> Kompilasi Bandcamp 2026 Acid Jazz Records mencakup Matt Berry, Kevin Fingier, The Brand New Heavies, Billy Valentine, dan Mama Terra.</li>
-  <li><strong>Rilisan.</strong> <em>Smokin' Aces</em> karya Bangs &amp; Talbot (23 Januari 2026, Acid Jazz) mempertemukan kembali Chris Bangs dan Mick Talbot dengan groove, funk, soul, dan warna fusion global.</li>
+  <li><strong>Rilisan.</strong> <em>Smokin' Aces</em> karya Bangs & Talbot (23 Januari 2026, Acid Jazz) mempertemukan kembali Chris Bangs dan Mick Talbot dengan groove, funk, soul, dan warna fusion global.</li>
   <li><strong>Panggung.</strong> The Brand New Heavies bersama Galliano di The Glasshouse dan The James Taylor Quartet di Ronnie Scott's adalah sinyal acid jazz paling jelas dalam daftar acara 2026.</li>
-  <li><strong>Festival.</strong> Mostly Jazz Funk &amp; Soul Festival (10–12 Juli 2026) menampilkan Soul II Soul, Cymande, Jordan Rakei, dan Sampa The Great bersama pelaku jazz funk era lama.</li>
+  <li><strong>Festival.</strong> Mostly Jazz Funk & Soul Festival (10–12 Juli 2026) menampilkan Soul II Soul, Cymande, Jordan Rakei, dan Sampa The Great bersama pelaku jazz funk era lama.</li>
 </ul>
 <p class="post-lead-related"><strong>Bacaan terkait:</strong> <a href="https://sebastienrousseau.com/2026-05-21-tokenised-deposits-banking-transformation-2026/index.html">Tokenised Deposits: Transformasi Perbankan yang Sedang Berlangsung di 2026</a>.</p>
 </aside>
@@ -231,6 +231,6 @@ Koneksinya adalah groove, bukan pelabelan genre yang ketat. Festival seperti Mos
 - Mostly Jazz Funk & Soul Festival, (2026). [Mostly Jazz Funk & Soul Festival 2026 ⧉](https://mostlyjazz.co.uk "Mostly Jazz Funk & Soul Festival").
 - Marlbank, (2026). [Top UK jazz albums in 2026 so far ⧉](https://marlbank.net/top-jazz-in-2026/top-uk-jazz-albums-in-2026-so-far/ "Top UK jazz albums in 2026 so far").
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Tentang penulis"><img alt="Potret Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Teknolog perbankan senior yang menulis tentang AI terapan, migrasi ISO 20022, kriptografi pasca-kuantum untuk layanan keuangan, dan transformasi struktural pembayaran grosir.</span><span class="author-credentials">Lebih dari 20 tahun pengalaman di HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profil lengkap</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Tentang penulis"><img alt="Potret Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Teknolog perbankan senior yang menulis tentang AI terapan, migrasi ISO 20022, kriptografi pasca-kuantum untuk layanan keuangan, dan transformasi struktural pembayaran grosir.</span><span class="author-credentials">Lebih dari 20 tahun pengalaman di HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profil lengkap</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Terakhir ditinjau <time datetime="2026-05-22">2026-05-22</time>.</p>
 <!-- enrich-end -->

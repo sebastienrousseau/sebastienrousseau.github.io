@@ -1,16 +1,18 @@
 {
-  "date": "May 18, 2026",
+  "subtitle": "La criptografía cuántica ha pasado de la prospectiva a la disciplina de implementación: los estándares NIST PQC están listos, la guía del NCSC británico ha estrechado las opciones de algoritmos, el trabajo protocolar del IETF todavía madura, y la garantía de QKD pasa de la confianza de laboratorio al lenguaje de certificación.",
   "tags": "criptografía cuántica, criptografía postcuántica, PQC, NIST, FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC, IETF, TLS, IPsec, QKD, ETSI, cripto-agilidad, HNDL, seguridad bancaria",
-  "banner": "https://cloudcdn.pro/stocks/images/alex-shuper-YYZnrK8NrSw-unsplash.webp",
-  "description": "La criptografía cuántica en 2026 ya no es un debate sobre la inminencia de los ordenadores cuánticos. Es un programa de migración que atraviesa la criptografía postcuántica, la cripto-agilidad, la garantía de la distribución cuántica de claves, los estándares de protocolo, la preparación de proveedores y los datos financieros de larga duración ya expuestos al riesgo «harvest-now-decrypt-later».",
   "item_description": "El reinicio de la criptografía cuántica 2026: estándares NIST PQC, recomendaciones de migración del NCSC, preparación protocolar del IETF, garantía de QKD, cripto-agilidad y lo que los bancos deberían priorizar esta semana.",
-  "banner_alt": "Mapa de migración hacia una criptografía resistente a lo cuántico para 2026 — estándares NIST PQC, trabajo sobre protocolos híbridos, garantía de QKD, cripto-agilidad y niveles de riesgo de datos bancarios",
-  "keywords": "criptografía cuántica 2026, criptografía postcuántica, NIST FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC PQC, IETF TLS, IPsec, RFC 9794, intercambio de claves híbrido, QKD, ETSI QKD, ISO IEC 23837, cripto-agilidad, harvest now decrypt later, HNDL, criptografía para servicios financieros, seguridad bancaria",
-  "locale": "es_ES",
+  "word_count": 2484,
+  "twitter_title": "Criptografía cuántica 2026: estándares PQC y migración bancaria",
+  "description": "La criptografía cuántica en 2026 ya no es un debate sobre la inminencia de los ordenadores cuánticos. Es un programa de migración que atraviesa la criptografía postcuántica, la cripto-agilidad, la garantía de la distribución cuántica de claves, los estándares de protocolo, la preparación de proveedores y los datos financieros de larga duración ya expuestos al riesgo «harvest-now-decrypt-later».",
   "item_title": "El reinicio de la criptografía cuántica en 2026: estándares PQC, garantía de QKD y el trabajo de migración que los bancos no pueden aplazar",
   "title": "El reinicio de la criptografía cuántica en 2026: estándares PQC, garantía de QKD y el trabajo de migración que los bancos no pueden aplazar",
-  "twitter_title": "Criptografía cuántica 2026: estándares PQC y migración bancaria",
-  "subtitle": "La criptografía cuántica ha pasado de la prospectiva a la disciplina de implementación: los estándares NIST PQC están listos, la guía del NCSC británico ha estrechado las opciones de algoritmos, el trabajo protocolar del IETF todavía madura, y la garantía de QKD pasa de la confianza de laboratorio al lenguaje de certificación.",
+  "reading_time": 12,
+  "banner_alt": "Mapa de migración hacia una criptografía resistente a lo cuántico para 2026 — estándares NIST PQC, trabajo sobre protocolos híbridos, garantía de QKD, cripto-agilidad y niveles de riesgo de datos bancarios",
   "twitter_description": "El reinicio de la criptografía cuántica 2026: estándares NIST PQC, recomendaciones de migración del NCSC, preparación protocolar del IETF, garantía de QKD, cripto-agilidad y lo que los bancos deberían priorizar esta semana.",
-  "language": "es-ES"
+  "language": "es-ES",
+  "date": "May 18, 2026",
+  "keywords": "criptografía cuántica 2026, criptografía postcuántica, NIST FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC PQC, IETF TLS, IPsec, RFC 9794, intercambio de claves híbrido, QKD, ETSI QKD, ISO IEC 23837, cripto-agilidad, harvest now decrypt later, HNDL, criptografía para servicios financieros, seguridad bancaria",
+  "banner": "https://cloudcdn.pro/stocks/images/alex-shuper-YYZnrK8NrSw-unsplash.webp",
+  "locale": "es_ES"
 }

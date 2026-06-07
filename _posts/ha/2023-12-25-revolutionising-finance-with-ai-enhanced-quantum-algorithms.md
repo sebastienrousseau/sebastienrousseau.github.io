@@ -1,5 +1,6 @@
 ---
 title: "Revolutionising Finance with AI-Enhanced Quantum Algorithms"
+tags: "Quantum, AI, Finance, Algorithms, Mathematics, Banking, Technology, Innovation, Data, Efficiency, ISO 20022, post-quantum cryptography, quantum computing"
 subtitle: "Sakin Ikon Quantum don Ƙirƙirar Kuɗi: AI a Zuciyar Algorithms na Sabon Zamani"
 description: "Bincika rawar canjawa ta AI a cikin algorithms na quantum don kuɗi, tare da mai da hankali kan rikitarwar lissafinsu da aikace-aikacen banki."
 date: "Dec 25, 2023"
@@ -141,4 +142,3 @@ The integration of AI with quantum algorithm design represents a pivotal moment 
 [05]: https://www.terraquantum.swiss/ "TerraQuantum"
 [06]: https://web.archive.org/web/2*/https://zapata.ai/bbva-monte-carlo-simulation-finance-case-study/ "BBVA Monte Carlo Simulation Finance Case Study (Zapata Computing, archived)"
 [07]: https://www.goldmansachs.com/intelligence/pages/gs-research/euv-3.0/report.pdf "Europe Technology Hardware EUV 3.0 High NA a prime Digital Enabler for the next decade with deep competitive moat"
-

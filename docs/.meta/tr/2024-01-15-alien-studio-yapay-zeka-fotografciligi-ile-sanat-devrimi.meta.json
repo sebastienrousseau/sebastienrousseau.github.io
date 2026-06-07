@@ -1,11 +1,13 @@
 {
   "keywords": "yapay zeka, sanat, fotoğrafçılık, üretken yapay zeka, Alien Studio, yaratıcılık",
-  "description": "Alien Studio, geleneksel ve yapay zeka tabanlı fotoğrafçılığı, gerçeküstü görsel üretmek için birleştiriyor.",
   "language": "tr-TR",
   "title": "Alien Studio: yapay zeka fotoğrafçılığıyla sanatta devrim",
+  "description": "Alien Studio, geleneksel ve yapay zeka tabanlı fotoğrafçılığı, gerçeküstü görsel üretmek için birleştiriyor.",
   "banner": "https://cloudcdn.pro/clients/alienstudio/v1/collections/radiance/radiance-08.webp",
-  "locale": "tr_TR",
   "subtitle": "Yaratıcı stüdyolarda yapay zekanın görsel üretime uygulanması",
-  "banner_alt": "Alien Studio tarafından oluşturulan sanat eseri",
-  "date": "January 15, 2024"
+  "date": "January 15, 2024",
+  "word_count": 1011,
+  "locale": "tr_TR",
+  "reading_time": 5,
+  "banner_alt": "Alien Studio tarafından oluşturulan sanat eseri"
 }
