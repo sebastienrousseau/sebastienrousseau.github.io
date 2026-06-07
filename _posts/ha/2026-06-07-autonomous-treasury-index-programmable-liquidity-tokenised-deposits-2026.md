@@ -141,7 +141,7 @@ Tambayar mai amfani ga banki ba ko kowane fage yana da mahimmanci ba ce. Tana ce
 |---|---|---|
 | **52% ɗaukar agentic AI a sabis na kuɗi** | Kuɗi yanzu zai iya ɗaukar tafiyar ayyukan agentic ta cikin dandamali da aka tafiyar | [Cambridge CCAF ⧉](https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/2026-global-ai-in-financial-services-report/ "Rahoton AI a Sabis na Kuɗi a Duniya na 2026") |
 | **Biyan kuɗi mai sharaɗi na Project Agorá** | Tokenisation na iya bayar da damar biyan kuɗi mai sharaɗi da na koyaushe | [BIS ⧉](https://www.bis.org/about/bisih/topics/fmis/agora.htm "Project Agorá") |
-| **Aikin stablecoin da DSS na Bank of England** | Ana gwada kadarorin sasantawa na ɗimbin yawa a cikin saitin ababen more rayuwa na kasuwa na UK | [Bank of England ⧉](https://www.bankofengland.co.uk/speech/2025/january/sasha-mills-speech-at-the-tokenisation-summit "Tsara makomar kuɗi ta dijital ta UK") |
+| **Bank of England — Digital Securities Sandbox** | Bonds da equities da aka bayar ta DLT suna sasantawa a kan tushen 「Delivery-versus-Payment (DvP)」 — ɓangaren kadarar da ɓangaren kuɗi (wholesale CBDC ko ajiyar bankin kasuwanci na tokens) suna sasantawa a cikin ma'amala ta atomic guda, suna kawar da haɗarin abokin huldar gaba ɗaya | [Bank of England ⧉](https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox "Digital Securities Sandbox") |
 | **Ƙarshen lokaci na adireshin tsarin SWIFT** | Bayanan kuɗi dole a kama su daidai a tushe | [SWIFT ⧉](https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed "Matsayin adireshin tsarin ISO 20022 na Nuwamba 2026") |
 | **Manyan cibiyoyin kuɗi suna fafutuka don auna ƙimar AI** | Sarrafa kai na kuɗi yana buƙatar ma'aunin tattalin arziki masu wuya | [Cambridge CCAF ⧉](https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/2026-global-ai-in-financial-services-report/ "Rahoton AI a Sabis na Kuɗi a Duniya na 2026") |
 
@@ -149,13 +149,45 @@ Tambayar mai amfani ga banki ba ko kowane fage yana da mahimmanci ba ce. Tana ce
 
 Bai kamata a tsara agent na kuɗi a matsayin mataimaki na gama-gari ba. Yana buƙatar umarni: sa ido kan asusu, gano banbanci, hango giɓi na tallafi, shirya ayyuka, neman amincewa, aiwatarwa cikin iyaka, da samar da shaida. Kowane mataki ya kamata ya kasance da samfurin iko dabam.
 
+Loop ɗin sarrafawa yana gudana Observe → Detect → Forecast → Prepare → Request Approval — sannan ya tsaya. Agent ɗin ba ya taɓa ƙetare iyakar izini na cryptographic da kansa. Zane na ƙasa yana bin diddigin zagaye cikakke guda: ƙarancin ruwa-ruwa na cikin yini na dala miliyoyi yana fitowa a cikin `camt.052` telemetry, agent ɗin yana hango matsayin ƙarshen yini, yana shirya repo ko intercompany sweep a matsayin `pain.001` da aka kammala, sannan ya miƙa shi ga ma'aikacin kuɗi don sa hannu na cryptographic mai abubuwa da yawa a kan maɓallin da ke ɗaure da hardware. Agent ɗin sai ya gabatar da payload ɗin da aka sa hannu; ƙarshen yana zuwa a matsayin `pain.002` ACK da `camt.053` na rikodi mai zuwa.
+
+```mermaid
+sequenceDiagram
+    autonumber
+    participant Banks as Bankunan Gudanar da Kuɗi
+    participant Agent as Treasury Agent<br/>(mai iyaka, mai ƙofar manufa)
+    participant Forecast as Injin Hangen<br/>(ML + ɗakin yanayi)
+    participant Treasurer as Ma'aikacin Kuɗi<br/>(MFA / maɓallin hardware)
+    participant Rails as Hanyoyin Biya<br/>(RTGS / RTP / DLT)
+
+    Banks->>Agent: camt.052 rafin ma'auni na cikin yini
+    Agent->>Agent: Observe — sabunta matsayi a ainihin lokaci
+    Agent->>Agent: Detect — entity X ya ƙetare ƙasan ruwa-ruwa
+    Agent->>Forecast: Nemi hangen EOD
+    Forecast-->>Agent: An tabbatar da ƙarancin (USD 12.4m)
+    Agent->>Agent: Prepare — shirya pain.001<br/>(repo / sweep) ƙarƙashin iyakar umarni
+    Agent->>Treasurer: Tura buƙatar amincewa mai aminci<br/>(payload da aka shirya + shaida)
+    Note over Treasurer: MFA na cryptographic<br/>a kan maɓallin da ke ɗaure da hardware
+    Treasurer-->>Agent: Izinin da aka sa hannu
+    Agent->>Rails: Gabatar da pain.001 da aka sa hannu
+    Rails-->>Agent: pain.002 ACK + ƙarshe
+    Banks->>Agent: camt.053 bayanin ƙarshen yini
+    Agent->>Agent: Evidence — haɗa aikin zuwa rikodin camt.053
+```
+
+Iyakar ita ce muhimmiyar — kowane aikin da ke motsa kuɗi na ainihi yana zaune a bayan ƙofar cryptographic da agent ba zai iya cikawa da kansa ba.
+
 ## Kuɗin Shirye-shiryen
 
 Kuɗin shirye-shiryen shi ne ikon motsa ƙima a ƙarƙashin yanayi: idan an wuce kofa, idan jingina ta cancanta, idan abokin huldar ya wuce gwajin, idan ƙarshen sasantawa yana samuwa, ko idan buffer na kuɗin yini ya yi ƙasa sosai. Ajiyar tokens da dandamali na sasantawa na ɗimbin yawa suna sa waɗannan tsare-tsare su zama masu amfani.
 
+Shirye-shiryen ba ya nufin fitar da ma'aunin daidaitawa. Hanyar aiwatarwa ita ce `pain.001` — ISO 20022 Customer Credit Transfer Initiation. Aikin da agent ya shirya shi ne payload na `pain.001` da aka kammala wanda aka tura zuwa banki a kan channel ɗin da kamfani ERP zai yi amfani da shi, an tabbatar da shi a kan schema ɗin, an ƙididdige shi da injunan fraud da sanctions, kuma an amince da shi a kan rahotannin halin `pain.002` ɗin. Layi na sharaɗi (kofa, cancantar jingina, samuwar ƙarshe, ƙasan buffer) yana zaune sama da saƙon — yana yin ƙofa *idan* aka aika `pain.001`, ba *siffar da yake ɗauka ba*. Dandamali na kuɗi da ke ƙirƙirar payloads na musamman don bayyana yanayi za su faɗi daga hanyar da banki ya iya cinyewa kuma su koma kan haɗin gwiwa biyu-biyu.
+
 ## Ɗakin Sarrafa na Kuɗi
 
 Samfurin aiki ya kamata ya yi kama da ɗakin sarrafa: matsayi, hangen, halin biyan kuɗi, amfani da iyaka, banbanci, amincewa, da shaida a cikin ƙofa guda. Fihirisa ya kamata ta hukunta tsarin kuɗi da ke buƙatar ƙungiyoyi su haɗa imel, sheets, ƙofofin banki, da dashboards da ba a haɗa ba.
+
+Layi ɗin bayanai a bayan wannan ƙofa shi ne ISO 20022 cash management. Matsayin cikin yini shi ne `camt.052` — Bank-to-Customer Account Report — wanda aka tura daga kowane bankin gudanar da kuɗi zuwa cikin layi ɗin lura na agent a kan saurin da banki ke bugawa (mintuna ga masu samar da GTB na tier-1, ƙarshen-zagaye ga sauran). Daidaita ƙarshen yini shi ne `camt.053` — Bank-to-Customer Statement — rikodin da za a iya bincika wanda za a auna hangen na agent da safiya mai zuwa. Dandamali na kuɗi da ke karanta bayanan PDF ko screen-scrape ƙofofin banki ba za su iya cika 「Level 4」 na fihirisa ba; telemetry na cikin yini dole ya iso a matsayin `camt.052` mai tsari domin loop ɗin hangen ya rufe a lokaci don aiki.
 
 ## Abin da Wannan Ke Nufi Bisa Nau'in Banki
 

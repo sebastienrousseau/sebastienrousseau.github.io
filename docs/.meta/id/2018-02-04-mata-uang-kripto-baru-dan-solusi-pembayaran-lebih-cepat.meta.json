@@ -1,13 +1,13 @@
 {
-  "locale": "id_ID",
-  "subtitle": "A new cryptocurrency and faster-payments solution for the next-generation of finance.",
+  "title": "[ID DRAFT] Unveiling a new Cryptocurrency and Faster Payment Solution",
   "word_count": 254,
   "language": "id-ID",
-  "title": "[ID DRAFT] Unveiling a new Cryptocurrency and Faster Payment Solution",
+  "subtitle": "A new cryptocurrency and faster-payments solution for the next-generation of finance.",
   "keywords": "pain001, iso 20022, payment automation, cost reduction, payment processing, payment files, payment initiation, pain message, pain message standards, pain message validation",
-  "reading_time": 1,
+  "date": "Feb 04, 2018",
+  "locale": "id_ID",
   "banner": "https://cloudcdn.pro/stocks/images/laureen-missaire-DBbuhMbAIsQ.webp",
-  "description": "A significant chapter in the evolution of the global financial landscape, shaped by technological innovation, geopolitical shifts, and sustainable finance.",
   "banner_alt": "Turned off laptop computer on top of brown wooden table",
-  "date": "Feb 04, 2018"
+  "reading_time": 1,
+  "description": "A significant chapter in the evolution of the global financial landscape, shaped by technological innovation, geopolitical shifts, and sustainable finance."
 }

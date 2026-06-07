@@ -1,13 +1,13 @@
 {
-  "date": "Oct 26, 2023",
   "subtitle": "LibMake: pembuat kode Rust yang menerapkan praktik terbaik sejak hari pertama.",
-  "banner_alt": "Pilar-pilar putih raksasa",
+  "date": "Oct 26, 2023",
   "word_count": 250,
-  "description": "Tingkatkan pengembangan pustaka Rust dengan LibMake: alat pembuat kode yang menerapkan praktik terbaik dan menghasilkan kode awal, sehingga menghemat waktu dan tenaga para pengembang.",
-  "language": "id-ID",
-  "reading_time": 1,
   "banner": "https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp",
+  "banner_alt": "Pilar-pilar putih raksasa",
+  "title": "[ID DRAFT] Streamlining Rust Library Development with Code Generation",
+  "reading_time": 1,
   "locale": "id_ID",
   "keywords": "Rust, pustaka, pengembangan, kode, generator, boilerplate, praktik, terbaik, kualitas, andal",
-  "title": "[ID DRAFT] Streamlining Rust Library Development with Code Generation"
+  "language": "id-ID",
+  "description": "Tingkatkan pengembangan pustaka Rust dengan LibMake: alat pembuat kode yang menerapkan praktik terbaik dan menghasilkan kode awal, sehingga menghemat waktu dan tenaga para pengembang."
 }

@@ -139,7 +139,7 @@ La pregunta práctica para un banco no es si cada dominio importa. Es si la enti
 |---|---|---|
 | **52% de adopción de IA agéntica en servicios financieros** | La tesorería puede ya absorber workflows agénticos a través de plataformas gobernadas | [Cambridge CCAF ⧉](https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/2026-global-ai-in-financial-services-report/ "Informe Global IA en Servicios Financieros 2026") |
 | **Pagos condicionales de Project Agorá** | La tokenización puede habilitar capacidades de pago condicional y siempre disponibles | [BIS ⧉](https://www.bis.org/about/bisih/topics/fmis/agora.htm "Project Agorá") |
-| **Trabajo del Bank of England sobre stablecoins y DSS** | Los activos de liquidación mayorista se prueban en infraestructuras de mercado controladas del Reino Unido | [Bank of England ⧉](https://www.bankofengland.co.uk/speech/2025/january/sasha-mills-speech-at-the-tokenisation-summit "Dando forma al futuro financiero digital del Reino Unido") |
+| **Bank of England Digital Securities Sandbox** | Los bonos y la renta variable emitidos en DLT se liquidan en modalidad de Entrega contra Pago (DvP): la pata de activo y la pata de caja (CBDC mayorista o depósitos tokenizados de banca comercial) se liquidan en la misma transacción atómica, eliminando el riesgo principal de contraparte | [Bank of England ⧉](https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox "Digital Securities Sandbox") |
 | **Fecha límite de SWIFT para direcciones estructuradas** | Los datos de tesorería deben capturarse correctamente en origen | [SWIFT ⧉](https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed "Hito ISO 20022 de noviembre de 2026 sobre direcciones estructuradas") |
 | **Las grandes entidades luchan por medir el valor de la IA** | La automatización de tesorería necesita métricas económicas duras | [Cambridge CCAF ⧉](https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/2026-global-ai-in-financial-services-report/ "Informe Global IA en Servicios Financieros 2026") |
 
@@ -147,13 +147,45 @@ La pregunta práctica para un banco no es si cada dominio importa. Es si la enti
 
 Un agente de tesorería no debe diseñarse como un asistente de propósito general. Necesita un mandato: observar cuentas, detectar excepciones, prever brechas de financiación, preparar acciones, solicitar aprobaciones, ejecutar dentro de los límites y producir evidencia. Cada paso debe contar con un modelo de autoridad distinto.
 
+El bucle de control ejecuta Observar → Detectar → Prever → Preparar → Solicitar aprobación, y se detiene. El agente nunca cruza por sí solo la frontera de autorización criptográfica. El diagrama siguiente recorre un ciclo completo: una brecha intradía de liquidez de varios millones de dólares aflora en la telemetría `camt.052`, el agente prevé la posición de cierre de día, prepara un repo o un sweep intercompañía como un `pain.001` plenamente conformado y lo entrega al tesorero humano para la firma criptográfica multifactor sobre una clave anclada al hardware. El agente envía entonces el payload firmado; la finalidad llega como ACK `pain.002` y queda en el siguiente `camt.053` de registro.
+
+```mermaid
+sequenceDiagram
+    autonumber
+    participant Banks as Bancos de Cash Management
+    participant Agent as Agente de Tesorería<br/>(acotado, con barreras de protección por política)
+    participant Forecast as Motor de Previsión<br/>(ML + librería de escenarios)
+    participant Treasurer as Tesorero Humano<br/>(MFA / clave hardware)
+    participant Rails as Raíles de Pago<br/>(RTGS / RTP / DLT)
+
+    Banks->>Agent: flujo de saldos intradía camt.052
+    Agent->>Agent: Observar — refrescar posición en tiempo real
+    Agent->>Agent: Detectar — la entidad X rompe el suelo de liquidez
+    Agent->>Forecast: Solicitar proyección de cierre de día
+    Forecast-->>Agent: Brecha confirmada (USD 12.4m)
+    Agent->>Agent: Preparar — borrador de pain.001<br/>(repo / sweep) dentro de los límites del mandato
+    Agent->>Treasurer: Enviar solicitud segura de aprobación<br/>(payload preparado + evidencia)
+    Note over Treasurer: MFA criptográfica<br/>sobre clave anclada al hardware
+    Treasurer-->>Agent: Autorización firmada
+    Agent->>Rails: Enviar pain.001 firmado
+    Rails-->>Agent: ACK pain.002 + finalidad
+    Banks->>Agent: extracto de cierre de día camt.053
+    Agent->>Agent: Evidencia — vincular acción al registro camt.053
+```
+
+La frontera es el punto: cada acción que mueve dinero real queda detrás de una puerta criptográfica que el agente no puede satisfacer por sí solo.
+
 ## Liquidez programable
 
 La liquidez programable es la capacidad de mover valor bajo condiciones: si se rebasa un umbral, si el colateral es elegible, si la contraparte supera el cribado, si hay finalidad de liquidación o si el colchón de liquidez intradía es demasiado bajo. Los depósitos tokenizados y las plataformas de liquidación mayorista hacen que estos patrones sean más prácticos.
 
+Programable no significa fuera de estándar. La ruta de ejecución es `pain.001`: ISO 20022 Customer Credit Transfer Initiation. La acción preparada por el agente es un payload `pain.001` plenamente conformado, enrutado al banco por el mismo canal que usaría un ERP corporativo, validado contra el mismo esquema, puntuado por los mismos motores de fraude y sanciones y confirmado en los mismos informes de estado `pain.002`. La capa de condicionalidad (umbral, elegibilidad de colateral, disponibilidad de finalidad, suelo de colchón) vive por encima del mensaje: gobierna *si* se envía un `pain.001`, no *qué forma* adopta. Las plataformas de tesorería que inventan payloads ad hoc para expresar condiciones quedarán fuera de la ruta consumible por la banca y volverán a la integración bilateral.
+
 ## La sala de control de tesorería
 
 El modelo operativo debe parecerse a una sala de control: posiciones, previsiones, estados de pago, uso de límites, excepciones, aprobaciones y evidencia en una sola interfaz. El índice debe penalizar las pilas de tesorería que obligan a los equipos a coser correos, hojas de cálculo, portales bancarios y cuadros de mando desconectados.
+
+El plano de datos detrás de esa interfaz es el cash management ISO 20022. La posición intradía es `camt.052` — Bank-to-Customer Account Report — transmitida desde cada banco de cash management hacia la capa de observación del agente con la frecuencia que publique el banco (minutos para proveedores GTB de primer nivel, fin de ciclo para la cola larga). La conciliación de cierre de día es `camt.053` — Bank-to-Customer Statement — el registro auditable contra el que se mide la previsión del agente a la mañana siguiente. Las plataformas de tesorería que leen extractos en PDF o hacen screen-scraping de portales bancarios no pueden alcanzar el Nivel 4 del índice; la telemetría intradía tiene que llegar como `camt.052` estructurado para que el bucle de previsión cierre a tiempo de actuar.
 
 ## Qué implica según el tipo de banco
 

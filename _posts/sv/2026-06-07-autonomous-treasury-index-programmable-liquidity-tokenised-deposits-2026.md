@@ -139,7 +139,7 @@ Den praktiska frågan för en bank är inte om varje område är viktigt. Det ä
 |---|---|---|
 | **52 % adoption av agentisk AI inom finansiella tjänster** | Treasury kan nu absorbera agentiska arbetsflöden via styrda plattformar | [Cambridge CCAF ⧉](https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/2026-global-ai-in-financial-services-report/ "2026 Global AI in Financial Services Report") |
 | **Villkorade betalningar i Project Agorá** | Tokenisering kan möjliggöra villkorade och alltid tillgängliga betalningsfunktioner | [BIS ⧉](https://www.bis.org/about/bisih/topics/fmis/agora.htm "Project Agorá") |
-| **Bank of Englands arbete med stablecoins och DSS** | Avvecklingstillgångar på grossistnivå testas i kontrollerade marknadsinfrastrukturmiljöer i Storbritannien | [Bank of England ⧉](https://www.bankofengland.co.uk/speech/2025/january/sasha-mills-speech-at-the-tokenisation-summit "Att forma Storbritanniens digitala finansiella framtid") |
+| **Bank of England — Digital Securities Sandbox** | DLT-emitterade obligationer och aktier avvecklas på basis av Leverans mot betalning (DvP) — tillgångsbenet och kassabenet (grossist-CBDC eller tokeniserade affärsbanksinsättningar) avvecklas i samma atomiska transaktion, vilket eliminerar principalmotpartsrisken | [Bank of England ⧉](https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox "Digital Securities Sandbox") |
 | **SWIFT:s deadline för strukturerade adresser** | Treasury-data måste fångas korrekt vid källan | [SWIFT ⧉](https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed "ISO 20022-milstolpen i november 2026 om strukturerade adresser") |
 | **Stora finansinstitut har svårt att mäta värdet av AI** | Treasury-automation behöver hårda ekonomiska mått | [Cambridge CCAF ⧉](https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/2026-global-ai-in-financial-services-report/ "2026 Global AI in Financial Services Report") |
 
@@ -147,13 +147,45 @@ Den praktiska frågan för en bank är inte om varje område är viktigt. Det ä
 
 En treasury-agent bör inte utformas som en allmän assistent. Den behöver ett mandat: observera konton, upptäcka avvikelser, prognostisera finansieringsgap, förbereda åtgärder, begära godkännanden, exekvera inom gränser och producera bevis. Varje steg bör ha en egen befogenhetsmodell.
 
+Kontrollslingan löper Observera → Upptäck → Prognostisera → Förbered → Begär godkännande — och stannar där. Agenten passerar aldrig den kryptografiska auktorisationsgränsen på egen hand. Diagrammet nedan följer en hel cykel: ett mångmiljon-intradagsunderskott i likviditet syns i `camt.052`-telemetri, agenten prognostiserar dagsslutspositionen, förbereder en repo eller koncernintern sweep som ett fullständigt utformat `pain.001` och lämnar över det till den mänskliga treasurern för flerfaktorautentiserad kryptografisk signering på en hårdvarubunden nyckel. Agenten skickar sedan in den signerade nyttolasten; finalitet landar som en `pain.002`-ACK och nästa `camt.053` of record.
+
+```mermaid
+sequenceDiagram
+    autonumber
+    participant Banks as Cash management-banker
+    participant Agent as Treasury-agent<br/>(avgränsad, policystyrd)
+    participant Forecast as Prognosmotor<br/>(ML + scenariobibliotek)
+    participant Treasurer as Mänsklig treasurer<br/>(MFA / hårdvarunyckel)
+    participant Rails as Betalningsrails<br/>(RTGS / RTP / DLT)
+
+    Banks->>Agent: camt.052 intradagsflöde av saldon
+    Agent->>Agent: Observera — uppdatera realtidsposition
+    Agent->>Agent: Upptäck — enhet X bryter likviditetsgolv
+    Agent->>Forecast: Begär dagsslutsprojektion
+    Forecast-->>Agent: Underskott bekräftat (USD 12.4m)
+    Agent->>Agent: Förbered — utkast pain.001<br/>(repo / sweep) inom mandatgränser
+    Agent->>Treasurer: Skicka säker godkännandeförfrågan<br/>(förberedd nyttolast + bevis)
+    Note over Treasurer: Kryptografisk MFA<br/>på hårdvarubunden nyckel
+    Treasurer-->>Agent: Signerad auktorisation
+    Agent->>Rails: Skicka signerad pain.001
+    Rails-->>Agent: pain.002-ACK + finalitet
+    Banks->>Agent: camt.053 dagsslutsutdrag
+    Agent->>Agent: Bevis — knyt åtgärd till camt.053-posten
+```
+
+Gränsen är hela poängen — varje åtgärd som flyttar riktiga pengar ligger bakom en kryptografisk grind som agenten inte kan passera på egen hand.
+
 ## Programmerbar likviditet
 
 Programmerbar likviditet är förmågan att flytta värde under villkor: om ett tröskelvärde överskrids, om säkerhet är godtagbar, om en motpart klarar screening, om avvecklingsfinalitet finns tillgänglig eller om en intradagslikviditetsbuffert är för låg. Tokeniserade insättningar och avvecklingsplattformar på grossistnivå gör dessa mönster mer praktiska.
 
+Programmerbar betyder inte off-standard. Exekveringsvägen är `pain.001` — ISO 20022 Customer Credit Transfer Initiation. Agentens förberedda åtgärd är en fullständigt utformad `pain.001`-nyttolast som routas till banken i samma kanal som ett företags ERP skulle använda, valideras mot samma schema, scoras av samma bedrägeri- och sanktionsmotorer och bekräftas på samma `pain.002`-statusrapporter. Villkorslagret (tröskel, säkerhetsgodtagbarhet, finalitetstillgänglighet, buffertgolv) ligger ovanför meddelandet — det avgör *om* en `pain.001` ska skickas, inte *vilken form* den ska ha. Treasury-plattformar som uppfinner egna nyttolaster för att uttrycka villkor faller ur den bankkonsumerbara vägen och tillbaka i bilateral integration.
+
 ## Treasury-kontrollrummet
 
 Den operativa modellen bör se ut som ett kontrollrum: positioner, prognoser, betalningsstatus, gränsanvändning, avvikelser, godkännanden och bevis i ett gränssnitt. Indexet bör straffa treasury-stackar som tvingar team att sy ihop e-post, kalkylblok, bankportaler och bortkopplade dashboards.
+
+Dataplanet bakom det gränssnittet är ISO 20022 cash management. Intradagsposition är `camt.052` — Bank-to-Customer Account Report — som strömmas från varje cash management-bank in i agentens observationslager med den frekvens banken publicerar (minuter för tier-1 GTB-leverantörer, slutet av cykeln för den långa svansen). Dagsslutsavstämning är `camt.053` — Bank-to-Customer Statement — den granskningsbara post som agentens prognos bedöms mot nästa morgon. Treasury-plattformar som läser PDF-utdrag eller skrapar bankportaler kan inte nå Nivå 4 i indexet; intradagstelemetrin måste komma in som strukturerad `camt.052` för att prognosslingan ska kunna stängas i tid för att agera.
 
 ## Vad detta innebär per banktyp
 

@@ -139,7 +139,7 @@ site_software: "Static Site Generator, Rust"
 |---|---|---|
 | **금융 서비스 내 에이전트형 AI 도입률 52%** | 트레저리는 이제 거버넌스가 적용된 플랫폼을 통해 에이전트형 워크플로우를 흡수할 수 있음 | [Cambridge CCAF ⧉](https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/2026-global-ai-in-financial-services-report/ "2026 글로벌 금융 서비스 AI 보고서") |
 | **Project Agorá 조건부 결제** | 토큰화는 조건부 및 상시 결제 역량을 가능하게 할 수 있음 | [BIS ⧉](https://www.bis.org/about/bisih/topics/fmis/agora.htm "Project Agorá") |
-| **잉글랜드은행의 스테이블코인과 DSS 작업** | 도매 결제 자산이 통제된 영국 시장 인프라 환경에서 시험되고 있음 | [Bank of England ⧉](https://www.bankofengland.co.uk/speech/2025/january/sasha-mills-speech-at-the-tokenisation-summit "영국의 디지털 금융 미래를 형성하기") |
+| **Bank of England Digital Securities Sandbox** | DLT로 발행된 채권과 주식이 「증권·자금 동시결제(DvP)」 기반으로 결제됩니다 — 자산 레그와 현금 레그(도매 CBDC 또는 토큰화 상업은행 예금)가 동일한 원자적 거래 안에서 결제되어, 원금 거래상대방 리스크가 제거됩니다 | [Bank of England ⧉](https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox "Digital Securities Sandbox") |
 | **SWIFT 구조화 주소 마감 시한** | 트레저리 데이터는 원천에서 올바르게 캡처되어야 함 | [SWIFT ⧉](https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed "ISO 20022 2026년 11월 구조화 주소 마일스톤") |
 | **대형 금융기관이 AI 가치 측정에 어려움을 겪음** | 트레저리 자동화는 견고한 경제 지표가 필요함 | [Cambridge CCAF ⧉](https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/2026-global-ai-in-financial-services-report/ "2026 글로벌 금융 서비스 AI 보고서") |
 
@@ -147,13 +147,45 @@ site_software: "Static Site Generator, Rust"
 
 트레저리 에이전트는 범용 어시스턴트로 설계되어서는 안 됩니다. 위임이 필요합니다. 계좌 관찰, 예외 탐지, 자금 부족 예측, 행위 준비, 승인 요청, 한도 내 실행, 증거 산출이 그것입니다. 각 단계마다 서로 다른 권한 모델이 적용되어야 합니다.
 
+제어 루프는 관찰(Observe) → 탐지(Detect) → 예측(Forecast) → 준비(Prepare) → 승인 요청(Request Approval) 순으로 작동한 뒤 정지합니다. 에이전트는 결코 단독으로 암호학적 인가 경계를 넘지 않습니다. 아래 다이어그램은 하나의 완전한 사이클을 따라갑니다. 수백만 달러 규모의 일중 유동성 부족이 `camt.052` 텔레메트리에서 표면화되고, 에이전트가 영업일 종가 포지션을 예측한 뒤 레포 또는 사내 스윕을 완성된 형태의 `pain.001`로 준비하며, 이를 하드웨어 바인딩 키 기반의 다중 인증 암호학적 서명을 위해 인간 트레저러에게 전달합니다. 이어 에이전트는 서명된 페이로드를 제출하고, 확정성은 `pain.002` ACK로 안착하며, 그 다음의 공식 기록은 `camt.053`이 됩니다.
+
+```mermaid
+sequenceDiagram
+    autonumber
+    participant Banks as 현금 관리 은행
+    participant Agent as 트레저리 에이전트<br/>(제한·정책 통제)
+    participant Forecast as 예측 엔진<br/>(ML + 시나리오 라이브러리)
+    participant Treasurer as 인간 트레저러<br/>(MFA / 하드웨어 키)
+    participant Rails as 결제 레일<br/>(RTGS / RTP / DLT)
+
+    Banks->>Agent: camt.052 일중 잔액 스트림
+    Agent->>Agent: 관찰 — 실시간 포지션 갱신
+    Agent->>Agent: 탐지 — 법인 X가 유동성 하한 위반
+    Agent->>Forecast: 영업일 종가 전망 요청
+    Forecast-->>Agent: 부족 확인 (USD 12.4m)
+    Agent->>Agent: 준비 — 위임 한도 내에서 pain.001<br/>(레포 / 스윕) 초안 작성
+    Agent->>Treasurer: 보안 승인 요청 전송<br/>(준비된 페이로드 + 증거)
+    Note over Treasurer: 하드웨어 바인딩 키 기반<br/>암호학적 MFA
+    Treasurer-->>Agent: 서명된 인가
+    Agent->>Rails: 서명된 pain.001 제출
+    Rails-->>Agent: pain.002 ACK + 확정성
+    Banks->>Agent: camt.053 영업일 종가 명세서
+    Agent->>Agent: 증거 — 행위를 camt.053 기록에 결속
+```
+
+경계 자체가 핵심입니다. 실제 자금을 이동시키는 모든 행위는 에이전트가 단독으로 충족할 수 없는 암호학적 게이트 뒤에 놓여 있습니다.
+
 ## 프로그래밍 가능한 유동성
 
 프로그래밍 가능한 유동성은 조건에 따라 가치를 이동시키는 역량입니다. 임계값이 위반되면, 담보가 적격하면, 거래상대방이 스크리닝을 통과하면, 결제 완결성이 확보되면, 또는 일중 유동성 버퍼가 너무 낮으면 작동합니다. 토큰화 예금과 도매 결제 플랫폼이 이러한 패턴을 더 실용적으로 만듭니다.
 
+프로그래밍 가능성이 표준 이탈을 의미하지는 않습니다. 실행 경로는 `pain.001`, 즉 ISO 20022 고객 계좌이체 개시 메시지입니다. 에이전트가 준비한 행위는 기업 ERP가 사용하는 것과 동일한 채널을 통해 은행에 라우팅되는 완성된 형태의 `pain.001` 페이로드이며, 동일한 스키마로 검증되고, 동일한 사기 및 제재 엔진으로 스코어링되며, 동일한 `pain.002` 상태 보고서로 확인됩니다. 조건성 계층(임계값, 담보 적격성, 확정성 가용성, 버퍼 하한)은 메시지 위쪽에 자리 잡습니다. 즉, `pain.001`이 *전송될지 여부*를 통제할 뿐, *어떤 형태*를 띠는지를 통제하지는 않습니다. 조건을 표현하기 위해 별도의 페이로드를 고안하는 트레저리 플랫폼은 은행이 소비 가능한 경로에서 이탈하여 양자 간 통합으로 되돌아가게 됩니다.
+
 ## 트레저리 컨트롤 룸
 
 운영 모델은 컨트롤 룸처럼 보여야 합니다. 포지션, 예측, 결제 상태, 한도 사용, 예외, 승인, 증거가 하나의 인터페이스에 통합되어야 합니다. 지수는 팀이 이메일, 스프레드시트, 은행 포털, 분리된 대시보드를 짜맞춰야 하는 트레저리 스택에 불이익을 주어야 합니다.
+
+해당 인터페이스 뒤의 데이터 플레인은 ISO 20022 현금 관리입니다. 일중 포지션은 `camt.052`, 즉 은행-고객 계좌 보고서로, 모든 현금 관리 은행에서 에이전트의 관찰 계층으로 은행이 게시하는 주기에 맞춰 스트리밍됩니다(티어1 GTB 제공자의 경우 분 단위, 롱테일의 경우 사이클 종료 단위). 영업일 종가 대사는 `camt.053`, 즉 은행-고객 명세서로, 에이전트의 예측이 다음 날 아침 평가되는 감사 가능한 기록입니다. PDF 명세서를 읽거나 은행 포털을 스크린 스크레이핑하는 트레저리 플랫폼은 지수의 「4단계」를 충족할 수 없습니다. 행동에 옮길 시간 안에 예측 루프가 마감되려면, 일중 텔레메트리가 구조화된 `camt.052`로 도착해야 합니다.
 
 ## 은행 유형별 시사점
 

@@ -1,13 +1,13 @@
 {
-  "description": "Le récit du voyage extraordinaire de la sécurisation des transactions numériques par la cryptographie à clé privée et les réseaux pair-à-pair (P2P).",
-  "banner_alt": "Ordinateur portable éteint sur une table en bois marron",
-  "banner": "https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp",
-  "keywords": "blockchain, cryptomonnaie, Bitcoin, P2P, smart contract, registre distribué, finance, supply chain, identité numérique, tokenisation",
-  "locale": "fr_FR",
-  "language": "fr",
-  "word_count": 893,
-  "subtitle": "Cryptographie à clé privée et réseaux pair-à-pair au service de transactions sûres",
   "title": "Blockchain : la technologie qui compte en 2018",
+  "banner": "https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp",
+  "locale": "fr_FR",
   "reading_time": 4,
-  "date": "January 2, 2018"
+  "banner_alt": "Ordinateur portable éteint sur une table en bois marron",
+  "keywords": "blockchain, cryptomonnaie, Bitcoin, P2P, smart contract, registre distribué, finance, supply chain, identité numérique, tokenisation",
+  "word_count": 893,
+  "language": "fr",
+  "subtitle": "Cryptographie à clé privée et réseaux pair-à-pair au service de transactions sûres",
+  "date": "January 2, 2018",
+  "description": "Le récit du voyage extraordinaire de la sécurisation des transactions numériques par la cryptographie à clé privée et les réseaux pair-à-pair (P2P)."
 }

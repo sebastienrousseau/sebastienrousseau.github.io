@@ -1,14 +1,14 @@
 {
-  "language": "he-IL",
-  "tags": "bitcoin, cryptocurrency, blockchain, decentralized finance, digital currency, peer-to-peer payments, digital gold, כסף ניתן לתכנות, future of money, financial revolution, ISO 20022, קריפטוגרפיה פוסט-קוונטית, AI, סטייבלקוינים, פיקדונות מתואדים, open source",
-  "description": "بيتكوين: نظام نقد إلكتروني نِدّ-لنِدّ (P2P ECS) قادر على إحداث ثورة في طريقة تعامل الناس عبر الإنترنت.",
-  "keywords": "بيتكوين, عملة مشفّرة, blockchain, P2P, الإنفاق المزدوج, التعدين, proof-of-work, ETF, Satoshi Nakamoto, التمويل اللامركزي",
-  "word_count": 1017,
-  "subtitle": "نظام دفع إلكتروني نِدّ-لنِدّ أعاد تعريف المال",
-  "banner_alt": "كومة من العملات الذهبية والفضية موضوعة فوق طاولة",
-  "date": "January 1, 2018",
   "title": "بيتكوين: عام في المراجعة لأوّل عملة مشفّرة",
+  "date": "January 1, 2018",
   "banner": "https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp",
+  "keywords": "بيتكوين, عملة مشفّرة, blockchain, P2P, الإنفاق المزدوج, التعدين, proof-of-work, ETF, Satoshi Nakamoto, التمويل اللامركزي",
+  "banner_alt": "كومة من العملات الذهبية والفضية موضوعة فوق طاولة",
   "locale": "he_IL",
-  "reading_time": 5
+  "description": "بيتكوين: نظام نقد إلكتروني نِدّ-لنِدّ (P2P ECS) قادر على إحداث ثورة في طريقة تعامل الناس عبر الإنترنت.",
+  "language": "he-IL",
+  "word_count": 1017,
+  "reading_time": 5,
+  "tags": "bitcoin, cryptocurrency, blockchain, decentralized finance, digital currency, peer-to-peer payments, digital gold, כסף ניתן לתכנות, future of money, financial revolution, ISO 20022, קריפטוגרפיה פוסט-קוונטית, AI, סטייבלקוינים, פיקדונות מתואדים, open source",
+  "subtitle": "نظام دفع إلكتروني نِدّ-لنِدّ أعاد تعريف المال"
 }

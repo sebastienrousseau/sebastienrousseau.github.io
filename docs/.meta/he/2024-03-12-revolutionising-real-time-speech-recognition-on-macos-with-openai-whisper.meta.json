@@ -1,14 +1,14 @@
 {
-  "locale": "he_IL",
-  "date": "Mar 12, 2024",
-  "title": "التعرّف الصوتي السريع في الزمن الفعلي على macOS باستخدام OpenAI Whisper",
-  "language": "he-IL",
-  "keywords": "OpenAI Whisper, Metal Performance Shaders, التعرّف الصوتي على macOS, النسخ في الزمن الفعلي, اكتشاف النشاط الصوتي, تسريع GPU, تكامل Python, تحويل الكلام إلى نصّ على macOS, اكتشاف الكلام الموفِّر للطاقة, Apple silicon",
   "reading_time": 4,
-  "word_count": 828,
   "banner_alt": "لافتة للتعرّف الآلي على الكلام في الزمن الفعلي (ASR)",
   "description": "اكتشف كيف يُحوِّل OpenAI Whisper وMetal Performance Shaders التعرّفَ الصوتي في الزمن الفعلي على macOS، مُقدِّمَين سرعةً ودقّةً لا مثيل لهما.",
   "banner": "https://cloudcdn.pro/stocks/images/research-paper.webp",
-  "subtitle": "أطلق قدرات تحويل الكلام إلى نصّ بدفع الذكاء الاصطناعي وتسريع وحدة معالجة الرسوميات على جهاز Mac",
-  "tags": "OpenAI, Whisper, Metal, macOS, Speech, Real-Time, Transcription, GPU, Python, Silicon, ISO 20022, קריפטוגרפיה פוסט-קוונטית, AI, open source, DORA, הנדסת פלטפורמה, ענן ריבוני, בנקאות ענן-נייטיב"
+  "language": "he-IL",
+  "title": "التعرّف الصوتي السريع في الزمن الفعلي على macOS باستخدام OpenAI Whisper",
+  "word_count": 828,
+  "keywords": "OpenAI Whisper, Metal Performance Shaders, التعرّف الصوتي على macOS, النسخ في الزمن الفعلي, اكتشاف النشاط الصوتي, تسريع GPU, تكامل Python, تحويل الكلام إلى نصّ على macOS, اكتشاف الكلام الموفِّر للطاقة, Apple silicon",
+  "tags": "OpenAI, Whisper, Metal, macOS, Speech, Real-Time, Transcription, GPU, Python, Silicon, ISO 20022, קריפטוגרפיה פוסט-קוונטית, AI, open source, DORA, הנדסת פלטפורמה, ענן ריבוני, בנקאות ענן-נייטיב",
+  "date": "Mar 12, 2024",
+  "locale": "he_IL",
+  "subtitle": "أطلق قدرات تحويل الكلام إلى نصّ بدفع الذكاء الاصطناعي وتسريع وحدة معالجة الرسوميات على جهاز Mac"
 }

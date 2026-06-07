@@ -1,13 +1,13 @@
 {
-  "locale": "nl_NL",
-  "date": "November 12, 2023",
-  "word_count": 2083,
-  "subtitle": "Het landschap van moderne generatieve modellen, hun mogelijkheden en hun grenzen",
-  "reading_time": 10,
-  "title": "Generatieve AI verkennen",
-  "keywords": "Generatieve AI, LLM, GAN, diffusiemodellen, GPT, machine learning, AI",
   "description": "Een diepgaande verkenning van generatieve AI: architecturen, trainingsstrategieën en toepassingen in financiën, kunst en wetenschap.",
+  "date": "November 12, 2023",
+  "keywords": "Generatieve AI, LLM, GAN, diffusiemodellen, GPT, machine learning, AI",
   "banner_alt": "Conceptuele visualisatie van een generatief AI-systeem",
+  "locale": "nl_NL",
+  "reading_time": 10,
   "banner": "https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp",
-  "language": "nl-NL"
+  "language": "nl-NL",
+  "title": "Generatieve AI verkennen",
+  "word_count": 2083,
+  "subtitle": "Het landschap van moderne generatieve modellen, hun mogelijkheden en hun grenzen"
 }

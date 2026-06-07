@@ -139,7 +139,7 @@ site_software: "Static Site Generator, Rust"
 |---|---|---|
 | **金融服務代理型 AI 採用率 52%** | 司庫如今可透過受治理的平台吸納代理型工作流 | [Cambridge CCAF ⧉](https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/2026-global-ai-in-financial-services-report/ "2026 全球金融服務 AI 報告") |
 | **Project Agorá 條件支付** | 代幣化可能開啟條件式與全時支付能力 | [BIS ⧉](https://www.bis.org/about/bisih/topics/fmis/agora.htm "Project Agorá") |
-| **英格蘭銀行穩定幣與 DSS 工作** | 大額清算資產正在受控的英國市場基礎設施環境中受測 | [Bank of England ⧉](https://www.bankofengland.co.uk/speech/2025/january/sasha-mills-speech-at-the-tokenisation-summit "形塑英國數位金融未來") |
+| **英格蘭銀行數位證券沙盒(Digital Securities Sandbox)** | DLT 發行的債券與股權以款券同步交割(DvP)為基礎完成清算——資產腳與現金腳(大額 CBDC 或代幣化商業銀行存款)於同一筆原子交易內同步結算,消除本金交易對手風險 | [英格蘭銀行 ⧉](https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox "Digital Securities Sandbox") |
 | **SWIFT 結構化地址截止日期** | 司庫資料必須在源頭被正確擷取 | [SWIFT ⧉](https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed "ISO 20022 2026 年 11 月結構化地址里程碑") |
 | **大型金融機構難以量測 AI 價值** | 司庫自動化需要硬性的經濟指標 | [Cambridge CCAF ⧉](https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/2026-global-ai-in-financial-services-report/ "2026 全球金融服務 AI 報告") |
 
@@ -147,13 +147,45 @@ site_software: "Static Site Generator, Rust"
 
 司庫代理人不應被設計成通用助理。它需要一份明確的授權指令:觀察帳戶、偵測例外、預測融資缺口、預備動作、請求核准、在限額內執行,並產出證據。每一步都應對應不同的授權模型。
 
+此控制迴圈循「觀察 → 偵測 → 預測 → 預備 → 請求核准」依序運行——並止步於此。代理人從不會自行跨越密碼學授權邊界。下圖追蹤一次完整循環:多百萬美元規模的日內流動性缺口浮現於 `camt.052` 遙測資料,代理人預測日終部位,以完整成形的 `pain.001` 預備一筆附買回或集團內歸集,並交由人類司庫長透過硬體綁定金鑰完成多因素密碼學簽核。代理人隨後送出已簽署之承載;終局性以 `pain.002` 確收訊息回傳,並於下一份正式 `camt.053` 中歸帳。
+
+```mermaid
+sequenceDiagram
+    autonumber
+    participant Banks as 現金管理銀行
+    participant Agent as 司庫代理人<br/>(受限、政策閘控)
+    participant Forecast as 預測引擎<br/>(ML + 情境庫)
+    participant Treasurer as 人類司庫長<br/>(MFA / 硬體金鑰)
+    participant Rails as 支付軌道<br/>(RTGS / RTP / DLT)
+
+    Banks->>Agent: camt.052 日內餘額串流
+    Agent->>Agent: 觀察——更新即時部位
+    Agent->>Agent: 偵測——實體 X 跌破流動性下限
+    Agent->>Forecast: 請求日終投射
+    Forecast-->>Agent: 確認缺口 (USD 12.4m)
+    Agent->>Agent: 預備——於授權限額內草擬 pain.001<br/>(附買回 / 歸集)
+    Agent->>Treasurer: 推送安全核准請求<br/>(預備承載 + 證據)
+    Note over Treasurer: 於硬體綁定金鑰<br/>進行密碼學 MFA
+    Treasurer-->>Agent: 已簽署授權
+    Agent->>Rails: 送出已簽署之 pain.001
+    Rails-->>Agent: pain.002 確收 + 終局性
+    Banks->>Agent: camt.053 日終對帳單
+    Agent->>Agent: 證據——將動作綁定至 camt.053 紀錄
+```
+
+邊界本身就是重點——凡是真正移動資金的動作,都坐落在代理人無法獨力滿足的密碼學閘門之後。
+
 ## 可程式化流動性
 
 可程式化流動性,是在條件下移動價值的能力:當門檻被觸發、當擔保品合格、當交易對手通過篩查、當清算終局性可得,或當日內流動性緩衝過低時。代幣化存款與大額清算平台,讓這些模式更具可行性。
 
+可程式化並非偏離標準。執行路徑就是 `pain.001`——ISO 20022 客戶付款轉帳發起訊息。代理人預備好的動作,是一筆完整成形的 `pain.001` 承載,透過企業 ERP 同樣使用的通道送往銀行,以同一套綱要進行驗證,由同一組詐欺與制裁引擎評分,並在同樣的 `pain.002` 狀態報告上獲得確收。條件化層(門檻、擔保品合格性、終局性可得性、緩衝下限)架於訊息之上——它閘控「是否」送出 `pain.001`,而非「以何種形貌」送出。發明特製承載以表達條件的司庫平台,將跌出銀行可消化的路徑,退回雙邊整合的舊路。
+
 ## 司庫控制室
 
 營運模型應如同一座控制室:部位、預測、支付狀態、限額使用、例外、核准與證據集中於同一介面。指數應對需要團隊拼湊電子郵件、試算表、銀行入口網站與互不相通儀表板的司庫堆疊予以扣分。
+
+該介面背後的資料平面,就是 ISO 20022 現金管理。日內部位為 `camt.052`——Bank-to-Customer Account Report——以銀行公布的頻率,由每一家現金管理銀行串流至代理人的觀察層(對於頂級 GTB 業者為分鐘級,對於長尾則為週期結束)。日終對帳為 `camt.053`——Bank-to-Customer Statement——也是代理人預測在隔日早晨被評分時所對照的可稽核紀錄。讀取 PDF 對帳單或對銀行入口網站做螢幕擷取的司庫平台,無法達到本指數的 4 級;日內遙測資料必須以結構化 `camt.052` 形式抵達,預測迴圈才能在可行動的時間內收斂。
 
 ## 對各類銀行的意義
 
