@@ -139,7 +139,7 @@ Stanford AI Index este util pentru că tratează un domeniu tehnologic în mișc
 |---|---|---|
 | **52% adoptare AI agentic în serviciile financiare** | Trezoreria poate absorbi acum fluxurile agentice prin platforme guvernate | [Cambridge CCAF ⧉](https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/2026-global-ai-in-financial-services-report/ "Raportul 2026 Global AI in Financial Services") |
 | **Plăți condiționate Project Agorá** | Tokenizarea poate activa capabilități de plată condiționată și permanentă | [BIS ⧉](https://www.bis.org/about/bisih/topics/fmis/agora.htm "Project Agorá") |
-| **Lucrările Bank of England privind stablecoins și DSS** | Activele de decontare wholesale sunt testate în setări controlate de infrastructură de piață din Regatul Unit | [Bank of England ⧉](https://www.bankofengland.co.uk/speech/2025/january/sasha-mills-speech-at-the-tokenisation-summit "Conturarea viitorului financiar digital al Regatului Unit") |
+| **Bank of England — Digital Securities Sandbox** | Obligațiunile și acțiunile emise pe DLT se decontează pe baza 「Livrare contra plată (DvP)」 — latura activului și latura numerarului (CBDC wholesale sau depozite tokenizate emise de băncile comerciale) se decontează în aceeași tranzacție atomică, eliminând riscul de contraparte pe principal | [Bank of England ⧉](https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox "Digital Securities Sandbox") |
 | **Termenul SWIFT pentru adrese structurate** | Datele de trezorerie trebuie capturate corect la sursă | [SWIFT ⧉](https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed "Etapa ISO 20022 noiembrie 2026 privind adresele structurate") |
 | **Instituțiile financiare mari au dificultăți în măsurarea valorii AI** | Automatizarea trezoreriei are nevoie de metrici economice solide | [Cambridge CCAF ⧉](https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/2026-global-ai-in-financial-services-report/ "Raportul 2026 Global AI in Financial Services") |
 
@@ -147,13 +147,45 @@ Stanford AI Index este util pentru că tratează un domeniu tehnologic în mișc
 
 Un agent de trezorerie nu ar trebui proiectat ca un asistent de uz general. El are nevoie de un mandat: să observe conturile, să detecteze excepțiile, să prognozeze decalajele de finanțare, să pregătească acțiunile, să solicite aprobările, să execute în cadrul limitelor și să producă dovezi. Fiecare pas ar trebui să aibă un model diferit de autoritate.
 
+Bucla de control rulează Observă → Detectează → Prognozează → Pregătește → Solicită aprobare — și se oprește. Agentul nu trece niciodată singur de granița de autorizare criptografică. Diagrama de mai jos urmărește un ciclu complet: un deficit de lichiditate intraday de mai multe milioane de dolari apare în telemetria `camt.052`, agentul prognozează poziția de sfârșit de zi, pregătește un repo sau un sweep intercompanii ca un `pain.001` complet structurat și îl predă trezorierului uman pentru semnătură criptografică multi-factor pe o cheie legată hardware. Agentul trimite apoi sarcina utilă semnată; finalitatea aterizează ca un ACK `pain.002` și următorul `camt.053` de înregistrare.
+
+```mermaid
+sequenceDiagram
+    autonumber
+    participant Banks as Bănci de cash management
+    participant Agent as Agent de trezorerie<br/>(cu limite, controlat de politici)
+    participant Forecast as Motor de prognoză<br/>(ML + bibliotecă de scenarii)
+    participant Treasurer as Trezorier uman<br/>(MFA / cheie hardware)
+    participant Rails as Șine de plată<br/>(RTGS / RTP / DLT)
+
+    Banks->>Agent: flux de solduri intraday camt.052
+    Agent->>Agent: Observă — actualizează poziția în timp real
+    Agent->>Agent: Detectează — entitatea X încalcă pragul de lichiditate
+    Agent->>Forecast: Solicită proiecție EOD
+    Forecast-->>Agent: Deficit confirmat (USD 12.4m)
+    Agent->>Agent: Pregătește — schiță pain.001<br/>(repo / sweep) în limitele mandatului
+    Agent->>Treasurer: Trimite cerere de aprobare securizată<br/>(sarcină utilă pregătită + dovezi)
+    Note over Treasurer: MFA criptografic<br/>pe cheie legată hardware
+    Treasurer-->>Agent: Autorizație semnată
+    Agent->>Rails: Trimite pain.001 semnat
+    Rails-->>Agent: ACK pain.002 + finalitate
+    Banks->>Agent: extras de sfârșit de zi camt.053
+    Agent->>Agent: Dovezi — leagă acțiunea de înregistrarea camt.053
+```
+
+Granița este esența — fiecare acțiune care mișcă bani reali stă în spatele unei porți criptografice pe care agentul nu o poate satisface singur.
+
 ## Lichiditatea programabilă
 
 Lichiditatea programabilă este capacitatea de a mișca valoare în anumite condiții: dacă un prag este depășit, dacă garanția este eligibilă, dacă o contraparte trece de screening, dacă finalitatea decontării este disponibilă sau dacă un tampon de lichiditate intraday este prea scăzut. Depozitele tokenizate și platformele de decontare wholesale fac aceste tipare mai practice.
 
+Programabilă nu înseamnă în afara standardelor. Calea de execuție este `pain.001` — ISO 20022 Customer Credit Transfer Initiation. Acțiunea pregătită a agentului este o sarcină utilă `pain.001` complet structurată, dirijată către bancă prin același canal pe care l-ar folosi un ERP corporativ, validată pe baza aceleiași scheme, evaluată de aceleași motoare de fraudă și sancțiuni și confirmată prin aceleași rapoarte de stare `pain.002`. Stratul de condiționalitate (prag, eligibilitatea garanției, disponibilitatea finalității, planșeul tamponului) se află deasupra mesajului — controlează *dacă* este trimis un `pain.001`, nu *ce formă* ia. Platformele de trezorerie care inventează sarcini utile personalizate pentru a exprima condiții vor cădea în afara căii consumabile de bănci și înapoi în integrarea bilaterală.
+
 ## Camera de control a trezoreriei
 
 Modelul operațional ar trebui să arate ca o cameră de control: poziții, prognoze de numerar, stări de plată, utilizarea limitelor, excepții, aprobări și dovezi într-o singură interfață. Indicele ar trebui să penalizeze stivele de trezorerie care cer echipelor să coase laolaltă emailuri, foi de calcul, portaluri bancare și panouri deconectate.
+
+Planul de date din spatele acelei interfețe este cash management-ul ISO 20022. Poziția intraday este `camt.052` — Bank-to-Customer Account Report — transmisă în flux de la fiecare bancă de cash management către stratul de observare al agentului la frecvența la care publică banca (minute pentru furnizorii GTB de nivelul 1, sfârșit de ciclu pentru restul). Reconcilierea de sfârșit de zi este `camt.053` — Bank-to-Customer Statement — înregistrarea auditabilă în raport cu care este evaluată prognoza agentului în dimineața următoare. Platformele de trezorerie care citesc extrase PDF sau fac screen-scraping pe portaluri bancare nu pot atinge 「Nivelul 4」 al indicelui; telemetria intraday trebuie să sosească ca `camt.052` structurat pentru ca bucla de prognoză să se închidă la timp pentru a putea acționa.
 
 ## Ce înseamnă acest lucru pe tipuri de bănci
 

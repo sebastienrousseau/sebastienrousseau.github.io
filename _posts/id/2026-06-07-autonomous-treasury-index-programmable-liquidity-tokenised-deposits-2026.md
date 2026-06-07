@@ -139,7 +139,7 @@ Pertanyaan praktis bagi sebuah bank bukanlah apakah setiap domain itu penting. P
 |---|---|---|
 | **Adopsi AI agentik 52% di jasa keuangan** | Treasury kini dapat menyerap alur kerja agentik melalui platform yang tata kelolanya jelas | [Cambridge CCAF ⧉](https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/2026-global-ai-in-financial-services-report/ "Laporan Global AI di Jasa Keuangan 2026") |
 | **Pembayaran bersyarat Project Agorá** | Tokenisasi dapat memungkinkan kemampuan pembayaran bersyarat dan selalu-aktif | [BIS ⧉](https://www.bis.org/about/bisih/topics/fmis/agora.htm "Project Agorá") |
-| **Pekerjaan stablecoin dan DSS Bank of England** | Aset penyelesaian wholesale diuji dalam pengaturan infrastruktur pasar Inggris yang terkendali | [Bank of England ⧉](https://www.bankofengland.co.uk/speech/2025/january/sasha-mills-speech-at-the-tokenisation-summit "Membentuk masa depan keuangan digital Inggris") |
+| **Bank of England — Digital Securities Sandbox** | Obligasi dan ekuitas yang diterbitkan via DLT diselesaikan secara Penyerahan terhadap Pembayaran (DvP) — sisi aset dan sisi kas (CBDC wholesale atau simpanan bank komersial tertokenisasi) diselesaikan dalam transaksi atomik yang sama, menghilangkan risiko rekanan pokok | [Bank of England ⧉](https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox "Digital Securities Sandbox") |
 | **Tenggat alamat terstruktur SWIFT** | Data treasury harus ditangkap dengan benar di sumbernya | [SWIFT ⧉](https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed "Tonggak alamat terstruktur ISO 20022 November 2026") |
 | **FI besar kesulitan mengukur nilai AI** | Otomatisasi treasury memerlukan metrik ekonomi yang keras | [Cambridge CCAF ⧉](https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/2026-global-ai-in-financial-services-report/ "Laporan Global AI di Jasa Keuangan 2026") |
 
@@ -147,13 +147,45 @@ Pertanyaan praktis bagi sebuah bank bukanlah apakah setiap domain itu penting. P
 
 Agen treasury tidak boleh dirancang sebagai asisten serbaguna. Ia memerlukan mandat: mengamati rekening, mendeteksi pengecualian, memperkirakan kebutuhan pendanaan, menyiapkan aksi, meminta persetujuan, mengeksekusi dalam batas, dan menghasilkan bukti. Setiap langkah harus memiliki model otoritas yang berbeda.
 
+Loop kontrol berjalan Observe → Detect → Forecast → Prepare → Request Approval — lalu berhenti. Agen tidak pernah melewati batas otorisasi kriptografis sendirian. Diagram di bawah menelusuri satu siklus penuh: kekurangan likuiditas intraday bernilai jutaan dolar muncul dalam telemetri `camt.052`, agen memperkirakan posisi akhir hari, menyiapkan repo atau sweep antar-entitas sebagai `pain.001` yang sudah lengkap, dan menyerahkannya kepada treasurer manusia untuk penandatanganan kriptografis multi-faktor pada kunci yang terikat perangkat keras. Agen kemudian mengirimkan payload yang sudah ditandatangani; finalitas tiba sebagai ACK `pain.002` dan `camt.053` resmi berikutnya.
+
+```mermaid
+sequenceDiagram
+    autonumber
+    participant Banks as Bank Manajemen Kas
+    participant Agent as Agen Treasury<br/>(dibatasi, dipagari kebijakan)
+    participant Forecast as Mesin Perkiraan<br/>(ML + pustaka skenario)
+    participant Treasurer as Treasurer Manusia<br/>(MFA / kunci perangkat keras)
+    participant Rails as Rail Pembayaran<br/>(RTGS / RTP / DLT)
+
+    Banks->>Agent: aliran saldo intraday camt.052
+    Agent->>Agent: Observe — segarkan posisi real-time
+    Agent->>Agent: Detect — entitas X melanggar batas bawah likuiditas
+    Agent->>Forecast: Minta proyeksi akhir hari
+    Forecast-->>Agent: Kekurangan terkonfirmasi (USD 12.4m)
+    Agent->>Agent: Prepare — susun pain.001<br/>(repo / sweep) dalam batas mandat
+    Agent->>Treasurer: Kirim permintaan persetujuan aman<br/>(payload siap + bukti)
+    Note over Treasurer: MFA kriptografis<br/>pada kunci perangkat keras
+    Treasurer-->>Agent: Otorisasi yang sudah ditandatangani
+    Agent->>Rails: Kirim pain.001 yang sudah ditandatangani
+    Rails-->>Agent: ACK pain.002 + finalitas
+    Banks->>Agent: laporan akhir hari camt.053
+    Agent->>Agent: Bukti — kaitkan aksi ke catatan camt.053
+```
+
+Batas itulah intinya — setiap aksi yang menggerakkan uang sungguhan berada di balik gerbang kriptografis yang tidak dapat dipenuhi agen sendirian.
+
 ## Likuiditas Terprogram
 
 Likuiditas terprogram adalah kemampuan memindahkan nilai dalam kondisi tertentu: jika ambang batas terlampaui, jika agunan memenuhi syarat, jika rekanan lolos penyaringan, jika finalitas penyelesaian tersedia, atau jika buffer likuiditas intraday terlalu rendah. Simpanan tertokenisasi dan platform penyelesaian wholesale menjadikan pola-pola ini lebih praktis.
 
+Dapat-diprogram bukan berarti keluar dari standar. Jalur eksekusinya adalah `pain.001` — ISO 20022 Customer Credit Transfer Initiation. Aksi yang disiapkan agen adalah payload `pain.001` yang sudah lengkap, dialirkan ke bank melalui kanal yang sama yang akan dipakai ERP korporat, divalidasi terhadap skema yang sama, dinilai oleh mesin penipuan dan sanksi yang sama, dan diakui pada laporan status `pain.002` yang sama. Lapisan kondisionalitas (ambang batas, kelayakan agunan, ketersediaan finalitas, batas bawah buffer) berada di atas pesan — ia menggerbangi *apakah* sebuah `pain.001` dikirim, bukan *bentuk seperti apa* yang diambilnya. Platform treasury yang menciptakan payload khusus untuk mengekspresikan kondisi akan terlempar dari jalur yang dapat dikonsumsi bank dan kembali ke integrasi bilateral.
+
 ## Control Room Treasury
 
 Model operasi seharusnya terlihat seperti control room: posisi, perkiraan kas, status pembayaran, penggunaan batas, pengecualian, persetujuan, dan bukti dalam satu antarmuka. Indeks harus menghukum tumpukan treasury yang mengharuskan tim merangkai email, spreadsheet, portal bank, dan dasbor yang tidak terhubung.
+
+Bidang data di balik antarmuka itu adalah manajemen kas ISO 20022. Posisi intraday adalah `camt.052` — Bank-to-Customer Account Report — dialirkan dari setiap bank manajemen kas ke lapisan observasi agen pada frekuensi yang dipublikasikan bank (menit untuk penyedia GTB tier-1, akhir-siklus untuk long tail). Rekonsiliasi akhir hari adalah `camt.053` — Bank-to-Customer Statement — catatan yang dapat diaudit di mana perkiraan agen dinilai pada pagi berikutnya. Platform treasury yang membaca laporan PDF atau melakukan screen-scrape portal bank tidak dapat memenuhi 「Level 4」 dari indeks ini; telemetri intraday harus tiba sebagai `camt.052` terstruktur agar loop perkiraan dapat menutup tepat waktu untuk bertindak.
 
 ## Apa Artinya Berdasarkan Jenis Bank
 

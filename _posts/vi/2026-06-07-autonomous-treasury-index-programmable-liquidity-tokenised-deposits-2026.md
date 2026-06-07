@@ -141,21 +141,53 @@ Câu hỏi thực tế đối với một ngân hàng không phải là từng l
 |---|---|---|
 | **52% mức chấp nhận AI tác tử trong dịch vụ tài chính** | Kho bạc nay có thể hấp thụ quy trình tác tử qua các nền tảng được quản trị | [Cambridge CCAF ⧉](https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/2026-global-ai-in-financial-services-report/ "Báo cáo AI toàn cầu trong dịch vụ tài chính 2026") |
 | **Thanh toán có điều kiện của Project Agorá** | Token hoá có thể cho phép năng lực thanh toán có điều kiện và luôn sẵn sàng | [BIS ⧉](https://www.bis.org/about/bisih/topics/fmis/agora.htm "Project Agorá") |
-| **Công việc về stablecoin và DSS của Bank of England** | Tài sản quyết toán bán buôn đang được thử nghiệm trong môi trường hạ tầng thị trường có kiểm soát tại Vương quốc Anh | [Bank of England ⧉](https://www.bankofengland.co.uk/speech/2025/january/sasha-mills-speech-at-the-tokenisation-summit "Định hình tương lai tài chính số của Vương quốc Anh") |
+| **Bank of England — Digital Securities Sandbox** | Trái phiếu và cổ phiếu phát hành trên DLT được quyết toán trên cơ sở 「Giao hàng đối ứng thanh toán (DvP)」 — nhánh tài sản và nhánh tiền mặt (CBDC bán buôn hoặc tiền gửi ngân hàng thương mại token hoá) được quyết toán trong cùng một giao dịch nguyên tử, loại bỏ rủi ro đối tác gốc | [Bank of England ⧉](https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox "Digital Securities Sandbox") |
 | **Hạn chót địa chỉ có cấu trúc của SWIFT** | Dữ liệu kho bạc phải được nắm bắt chính xác từ nguồn | [SWIFT ⧉](https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed "Mốc địa chỉ có cấu trúc ISO 20022 tháng 11 năm 2026") |
 | **Các định chế tài chính lớn gặp khó khi đo lường giá trị AI** | Tự động hoá kho bạc cần các chỉ số kinh tế cứng | [Cambridge CCAF ⧉](https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/2026-global-ai-in-financial-services-report/ "Báo cáo AI toàn cầu trong dịch vụ tài chính 2026") |
 
-## Ủy nhiệm của tác tử kho bạc
+## Ủy nhiệm của tác nhân kho bạc
 
-Tác tử kho bạc không nên được thiết kế như một trợ lý đa năng. Nó cần một ủy nhiệm: quan sát tài khoản, phát hiện ngoại lệ, dự báo lỗ hổng cấp vốn, chuẩn bị hành động, yêu cầu phê duyệt, thực thi trong hạn mức và tạo bằng chứng. Mỗi bước cần có một mô hình thẩm quyền khác nhau.
+Tác nhân kho bạc không nên được thiết kế như một trợ lý đa năng. Nó cần một ủy nhiệm: quan sát tài khoản, phát hiện ngoại lệ, dự báo lỗ hổng cấp vốn, chuẩn bị hành động, yêu cầu phê duyệt, thực thi trong hạn mức và tạo bằng chứng. Mỗi bước cần có một mô hình thẩm quyền khác nhau.
+
+Vòng lặp kiểm soát chạy theo trình tự Quan sát → Phát hiện → Dự báo → Chuẩn bị → Yêu cầu phê duyệt — rồi dừng. Tác nhân không bao giờ tự mình vượt qua ranh giới uỷ quyền mật mã. Sơ đồ bên dưới mô tả một chu kỳ trọn vẹn: một khoản thiếu hụt thanh khoản trong ngày trị giá hàng triệu đô la xuất hiện trong dòng dữ liệu `camt.052`, tác nhân dự báo trạng thái cuối ngày, chuẩn bị một giao dịch repo hoặc quét quỹ liên công ty dưới dạng `pain.001` được định hình đầy đủ, rồi chuyển giao cho giám đốc kho bạc để ký mật mã đa yếu tố trên khoá phần cứng. Tác nhân sau đó nộp tải trọng đã ký; tính chung cuộc đến dưới dạng xác nhận `pain.002` và bản `camt.053` ghi nhận tiếp theo.
+
+```mermaid
+sequenceDiagram
+    autonumber
+    participant Banks as Ngân hàng quản lý tiền mặt
+    participant Agent as Tác nhân kho bạc<br/>(có ranh giới, được chính sách kiểm soát)
+    participant Forecast as Bộ máy dự báo<br/>(ML + thư viện kịch bản)
+    participant Treasurer as Giám đốc kho bạc<br/>(MFA / khoá phần cứng)
+    participant Rails as Đường truyền thanh toán<br/>(RTGS / RTP / DLT)
+
+    Banks->>Agent: Dòng số dư trong ngày camt.052
+    Agent->>Agent: Quan sát — làm mới trạng thái thời gian thực
+    Agent->>Agent: Phát hiện — đơn vị X vượt ngưỡng sàn thanh khoản
+    Agent->>Forecast: Yêu cầu dự báo cuối ngày
+    Forecast-->>Agent: Xác nhận thiếu hụt (USD 12.4m)
+    Agent->>Agent: Chuẩn bị — soạn pain.001<br/>(repo / quét quỹ) trong hạn mức uỷ nhiệm
+    Agent->>Treasurer: Gửi yêu cầu phê duyệt bảo mật<br/>(tải trọng đã chuẩn bị + bằng chứng)
+    Note over Treasurer: MFA mật mã<br/>trên khoá phần cứng
+    Treasurer-->>Agent: Uỷ quyền đã ký
+    Agent->>Rails: Nộp pain.001 đã ký
+    Rails-->>Agent: Xác nhận pain.002 + tính chung cuộc
+    Banks->>Agent: Sao kê cuối ngày camt.053
+    Agent->>Agent: Bằng chứng — gắn hành động vào bản ghi camt.053
+```
+
+Ranh giới chính là trọng điểm — mọi hành động dịch chuyển tiền thật đều nằm sau một cổng mật mã mà tác nhân không thể tự mình thoả mãn.
 
 ## Thanh khoản có thể lập trình
 
 Thanh khoản có thể lập trình là khả năng dịch chuyển giá trị theo điều kiện: nếu một ngưỡng bị vượt, nếu tài sản thế chấp đủ điều kiện, nếu đối tác qua được sàng lọc, nếu tính chung cuộc quyết toán có sẵn, hoặc nếu đệm thanh khoản trong ngày quá thấp. Tiền gửi token hoá và các nền tảng quyết toán bán buôn làm cho các mẫu này trở nên thực tế hơn.
 
+Có thể lập trình không có nghĩa là phi tiêu chuẩn. Đường thực thi là `pain.001` — Khởi tạo Chuyển khoản Tín dụng Khách hàng theo ISO 20022. Hành động đã chuẩn bị của tác nhân là một tải trọng `pain.001` được định hình đầy đủ, định tuyến đến ngân hàng qua cùng kênh mà một hệ thống ERP doanh nghiệp sẽ sử dụng, được xác thực theo cùng lược đồ, được chấm điểm bởi cùng các bộ máy chống gian lận và trừng phạt, và được xác nhận trên cùng các báo cáo trạng thái `pain.002`. Lớp điều kiện (ngưỡng, đủ điều kiện tài sản thế chấp, sẵn có tính chung cuộc, sàn đệm) nằm trên thông điệp — nó kiểm soát *liệu* một `pain.001` có được gửi hay không, chứ không phải *hình dạng* nào của nó. Các nền tảng kho bạc tự sáng tạo tải trọng riêng để diễn đạt điều kiện sẽ rơi ra khỏi đường tiêu thụ của ngân hàng và quay trở lại tích hợp song phương.
+
 ## Phòng kiểm soát kho bạc
 
 Mô hình vận hành nên trông giống như một phòng kiểm soát: trạng thái, dự báo, trạng thái thanh toán, mức sử dụng hạn mức, ngoại lệ, phê duyệt và bằng chứng trong một giao diện. Chỉ số nên trừng phạt các kho bạc đòi hỏi đội ngũ phải khâu vá email, bảng tính, cổng ngân hàng và các bảng điều khiển rời rạc.
+
+Mặt phẳng dữ liệu phía sau giao diện đó là quản lý tiền mặt ISO 20022. Trạng thái trong ngày là `camt.052` — Báo cáo Tài khoản Ngân hàng đến Khách hàng — được phát trực tuyến từ mọi ngân hàng quản lý tiền mặt vào lớp quan sát của tác nhân theo tần suất mà ngân hàng công bố (theo phút đối với nhà cung cấp GTB hạng nhất, theo cuối chu kỳ đối với nhóm còn lại). Đối chiếu cuối ngày là `camt.053` — Sao kê Ngân hàng đến Khách hàng — bản ghi có thể kiểm toán mà dự báo của tác nhân được chấm điểm vào sáng hôm sau. Các nền tảng kho bạc đọc sao kê PDF hoặc cào màn hình cổng ngân hàng không thể đáp ứng 「Cấp 4」 của chỉ số; dữ liệu trong ngày phải đến dưới dạng `camt.052` có cấu trúc để vòng dự báo khép lại kịp thời gian hành động.
 
 ## Ý nghĩa theo loại hình ngân hàng
 

@@ -139,7 +139,7 @@ Die praktische Frage für eine Bank lautet nicht, ob jede Domäne wichtig ist. S
 |---|---|---|
 | **52 % Adoption agentischer KI im Finanzdienstleistungssektor** | Treasury kann agentische Workflows nun über gesteuerte Plattformen aufnehmen | [Cambridge CCAF ⧉](https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/2026-global-ai-in-financial-services-report/ "Global AI in Financial Services Report 2026") |
 | **Bedingte Zahlungen unter Project Agorá** | Tokenisierung kann bedingte und permanent verfügbare Zahlungsfunktionen ermöglichen | [BIS ⧉](https://www.bis.org/about/bisih/topics/fmis/agora.htm "Project Agorá") |
-| **Stablecoin- und DSS-Arbeit der Bank of England** | Wholesale-Settlement-Assets werden in kontrollierten UK-Marktinfrastrukturen erprobt | [Bank of England ⧉](https://www.bankofengland.co.uk/speech/2025/january/sasha-mills-speech-at-the-tokenisation-summit "Die digitale Finanzzukunft Großbritanniens gestalten") |
+| **Bank of England Digital Securities Sandbox** | Per DLT begebene Anleihen und Aktien werden auf Basis von Lieferung gegen Zahlung (DvP) abgewickelt — der Asset-Leg und der Cash-Leg (Wholesale-CBDC oder tokenisierte Geschäftsbankeinlagen) werden in derselben atomaren Transaktion abgewickelt, wodurch das Principal-Counterparty-Risiko entfällt | [Bank of England ⧉](https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox "Digital Securities Sandbox") |
 | **SWIFT-Frist für strukturierte Adressen** | Treasury-Daten müssen an der Quelle korrekt erfasst werden | [SWIFT ⧉](https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed "ISO-20022-Meilenstein November 2026: strukturierte Adressen") |
 | **Großbanken tun sich schwer, KI-Wert zu messen** | Treasury-Automatisierung braucht harte ökonomische Kennzahlen | [Cambridge CCAF ⧉](https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/2026-global-ai-in-financial-services-report/ "Global AI in Financial Services Report 2026") |
 
@@ -147,13 +147,45 @@ Die praktische Frage für eine Bank lautet nicht, ob jede Domäne wichtig ist. S
 
 Ein Treasury-Agent sollte nicht als Allzweck-Assistent konzipiert werden. Er braucht ein Mandat: Konten beobachten, Ausnahmen erkennen, Funding-Lücken prognostizieren, Aktionen vorbereiten, Freigaben anfordern, innerhalb von Limiten ausführen und Nachweise erzeugen. Jeder Schritt sollte ein eigenes Autoritätsmodell besitzen.
 
+Die Kontrollschleife läuft Beobachten → Erkennen → Prognostizieren → Vorbereiten → Freigabe anfordern — und hält dort an. Der Agent überschreitet die kryptografische Autorisierungsgrenze niemals von sich aus. Das folgende Diagramm zeichnet einen vollständigen Zyklus nach: Eine mehrere Millionen Dollar schwere Intraday-Liquiditätslücke wird in der `camt.052`-Telemetrie sichtbar, der Agent prognostiziert die Tagesendposition, bereitet einen Repo- oder Konzern-Sweep als vollständig ausgeformte `pain.001` vor und übergibt diese dem menschlichen Treasurer zur kryptografischen Mehrfaktor-Freigabe auf einem hardware-gebundenen Schlüssel. Anschließend reicht der Agent die signierte Nachricht ein; die Finalität trifft als `pain.002`-ACK ein und mündet in den nächsten `camt.053` als Buchungsbeleg.
+
+```mermaid
+sequenceDiagram
+    autonumber
+    participant Banks as Cash-Management-Banken
+    participant Agent as Treasury-Agent<br/>(begrenzt, policy-gesteuert)
+    participant Forecast as Prognose-Engine<br/>(ML + Szenarienbibliothek)
+    participant Treasurer as Menschlicher Treasurer<br/>(MFA / Hardware-Schlüssel)
+    participant Rails as Zahlungs-Rails<br/>(RTGS / RTP / DLT)
+
+    Banks->>Agent: camt.052 Intraday-Saldenstrom
+    Agent->>Agent: Beobachten — Echtzeit-Position aktualisieren
+    Agent->>Agent: Erkennen — Einheit X unterschreitet Liquiditätsuntergrenze
+    Agent->>Forecast: Tagesend-Projektion anfordern
+    Forecast-->>Agent: Unterdeckung bestätigt (USD 12.4m)
+    Agent->>Agent: Vorbereiten — pain.001 entwerfen<br/>(Repo / Sweep) innerhalb Mandatslimiten
+    Agent->>Treasurer: Sichere Freigabeanfrage senden<br/>(vorbereitete Nachricht + Nachweise)
+    Note over Treasurer: Kryptografische MFA<br/>auf hardware-gebundenem Schlüssel
+    Treasurer-->>Agent: Signierte Autorisierung
+    Agent->>Rails: Signierte pain.001 einreichen
+    Rails-->>Agent: pain.002 ACK + Finalität
+    Banks->>Agent: camt.053 Tagesendauszug
+    Agent->>Agent: Nachweis — Aktion an camt.053-Datensatz binden
+```
+
+Die Grenze ist der Punkt — jede Aktion, die echtes Geld bewegt, sitzt hinter einem kryptografischen Tor, das der Agent allein nicht passieren kann.
+
 ## Programmierbare Liquidität
 
 Programmierbare Liquidität ist die Fähigkeit, Werte unter Bedingungen zu bewegen: wenn eine Schwelle überschritten wird, wenn Sicherheiten zulässig sind, wenn eine Gegenpartei die Prüfung besteht, wenn die Settlement-Finalität verfügbar ist oder wenn ein Intraday-Liquiditätspuffer zu niedrig wird. Tokenisierte Einlagen und Wholesale-Settlement-Plattformen machen diese Muster praktikabler.
 
+Programmierbar bedeutet nicht abseits des Standards. Der Ausführungspfad ist `pain.001` — ISO 20022 Customer Credit Transfer Initiation. Die vom Agenten vorbereitete Aktion ist eine vollständig ausgeformte `pain.001`-Nachricht, die über denselben Kanal an die Bank geroutet wird, den ein Firmenkunden-ERP nutzen würde, gegen dasselbe Schema validiert, von denselben Betrugs- und Sanktionsprüfungen bewertet und über dieselben `pain.002`-Statusberichte bestätigt. Die Bedingungsschicht (Schwelle, Zulässigkeit der Sicherheit, Verfügbarkeit der Finalität, Pufferuntergrenze) liegt oberhalb der Nachricht — sie steuert, *ob* eine `pain.001` gesendet wird, nicht *wie* sie aussieht. Treasury-Plattformen, die eigene Sondernachrichten erfinden, um Bedingungen abzubilden, fallen aus dem bankseitig konsumierbaren Pfad heraus und zurück in bilaterale Integration.
+
 ## Der Treasury-Kontrollraum
 
 Das Betriebsmodell sollte einem Kontrollraum gleichen: Positionen, Prognosen, Zahlungsstatus, Limitnutzung, Ausnahmen, Freigaben und Nachweise in einer Oberfläche. Der Index sollte Treasury-Stacks abwerten, in denen Teams E-Mails, Tabellen, Bankportale und unverbundene Dashboards zusammenkleben müssen.
+
+Die Datenebene hinter dieser Oberfläche ist ISO 20022 Cash Management. Die Intraday-Position ist `camt.052` — Bank-to-Customer Account Report — gestreamt aus jeder Cash-Management-Bank in die Beobachtungsschicht des Agenten in der Frequenz, mit der die Bank veröffentlicht (Minutentakt bei Tier-1-GTB-Anbietern, am Zyklusende beim langen Ausläufer). Die Tagesabschluss-Abstimmung ist `camt.053` — Bank-to-Customer Statement — der prüfbare Datensatz, an dem die Prognose des Agenten am nächsten Morgen gemessen wird. Treasury-Plattformen, die PDF-Auszüge lesen oder Bankportale per Screen-Scraping abgreifen, erreichen Stufe 4 des Index nicht; die Intraday-Telemetrie muss als strukturierte `camt.052` eintreffen, damit sich die Prognoseschleife rechtzeitig schließt, um zu handeln.
 
 ## Was das je Banktyp bedeutet
 
