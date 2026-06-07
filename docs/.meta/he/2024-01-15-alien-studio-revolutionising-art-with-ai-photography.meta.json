@@ -1,14 +1,14 @@
 {
-  "tags": "Technology, Art, Photography, Rust, AI, מחשוב קוונטי, Personal Journey, Alien Studio, Digital Art, Innovation, ISO 20022, קריפטוגרפיה פוסט-קוונטית",
-  "word_count": 689,
   "reading_time": 3,
-  "description": "انضمّ إليّ في رحلتي الشخصية — من Rust والذكاء الاصطناعي والحوسبة الكمومية إلى إعادة تعريف الفنّ والتصوير عبر Alien Studio.",
-  "banner_alt": "ملهمة الغروب، نظرة هادئة؛ جمال في السكون",
-  "locale": "he_IL",
-  "keywords": "رحلة تقنية شخصية، اكتشاف Rust، استكشاف الذكاء الاصطناعي، الحوسبة الكمومية، اندماج الفنّ والتصوير، Alien Studio، إنشاء الفنّ الرقمي، التكنولوجيا في الفنّ، تصوير مبتكر، إعادة اكتشاف فنّي",
-  "subtitle": "بدايات ملحمة تكنولوجية",
+  "banner": "https://cloudcdn.pro/clients/alienstudio/v1/collections/radiance/radiance-08.webp",
   "title": "Alien Studio: رحلتي من التكنولوجيا إلى الفنّ التصويري",
-  "date": "Jan 15, 2024",
+  "subtitle": "بدايات ملحمة تكنولوجية",
+  "keywords": "رحلة تقنية شخصية، اكتشاف Rust، استكشاف الذكاء الاصطناعي، الحوسبة الكمومية، اندماج الفنّ والتصوير، Alien Studio، إنشاء الفنّ الرقمي، التكنولوجيا في الفنّ، تصوير مبتكر، إعادة اكتشاف فنّي",
+  "word_count": 689,
   "language": "he-IL",
-  "banner": "https://cloudcdn.pro/clients/alienstudio/v1/collections/radiance/radiance-08.webp"
+  "banner_alt": "ملهمة الغروب، نظرة هادئة؛ جمال في السكون",
+  "tags": "Technology, Art, Photography, Rust, AI, מחשוב קוונטי, Personal Journey, Alien Studio, Digital Art, Innovation, ISO 20022, קריפטוגרפיה פוסט-קוונטית",
+  "locale": "he_IL",
+  "date": "Jan 15, 2024",
+  "description": "انضمّ إليّ في رحلتي الشخصية — من Rust والذكاء الاصطناعي والحوسبة الكمومية إلى إعادة تعريف الفنّ والتصوير عبر Alien Studio."
 }

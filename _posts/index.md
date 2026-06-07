@@ -235,6 +235,18 @@ site_software: "Static Site Generator, Rust"
 <div class="newsroom-grid feat-latest-grid">
 
 <article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/index.html" title="The Autonomous Treasury Index in 2026: Agentic Treasury, Programmable Liquidity, Tokenised Deposits, and Real-Time Cash Control">
+<img alt="Abstract architectural photograph used as the visual key for the 2026 Autonomous Treasury Index — measuring agentic treasury workflows, programmable liquidity, tokenised deposits, real-time payments, and automated cash control" src="https://cloudcdn.pro/stocks/images/christopher-burns-Kj2SaNHG-hg.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Treasury · Agentic AI · Programmable Liquidity</span>
+<h3><a href="/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/index.html">The Autonomous Treasury Index in 2026: Agentic Treasury, Programmable Liquidity, Tokenised Deposits, and Real-Time Cash Control</a></h3>
+<p class="newsroom-meta"><time datetime="2026-06-07">June 7, 2026</time></p>
+<p class="newsroom-excerpt">A 2026 autonomous treasury readiness index — measuring agentic treasury workflows, programmable liquidity coverage, tokenised deposit integration, real-time payment orchestration, and automated cash control as one operating-model fabric.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/index.html" title="The Wholesale Payments Index in 2026: ISO 20022, Tokenised Deposits, Real-Time Rails, and Cross-Border Settlement">
 <img alt="Visual register for the wholesale-payments shift in 2026 — messaging migration giving way to programmable settlement across ISO 20022, tokenised deposits, real-time rails, and cross-border atomicity." src="https://cloudcdn.pro/stocks/images/miquel-parera-NsXLehhHx1Q.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
@@ -291,18 +303,6 @@ site_software: "Static Site Generator, Rust"
 <h3><a href="/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/index.html">The 2026 Banking Infrastructure Index: Measuring Readiness for Agentic AI, Quantum-Safe Security, Cloud Native Resilience, and Wholesale Payments</a></h3>
 <p class="newsroom-meta"><time datetime="2026-06-02">June 2, 2026</time></p>
 <p class="newsroom-excerpt">Banking infrastructure in 2026 has reached the point where it needs an index, not another trend list. A Stanford AI Index-inspired framework for measuring bank readiness across agentic AI, quantum-safe security, cloud-native resilience, and wholesale payments — measured as one operating model.</p>
-</div>
-</article>
-
-<article class="newsroom-card">
-<a class="newsroom-card-media" href="/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html" title="The Multi-Rail Bank in 2026: Cards, A2A, Stablecoins, RTP, FedNow, and Open Banking in One Strategy">
-<img alt="Long-exposure photograph of intersecting light trails at a major rail interchange at night — visual key for the multi-rail bank piece: cards, A2A, RTP, FedNow, ACH, stablecoins, Open Banking APIs, ISO 20022, and the orchestration engine that routes between them" src="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" loading="lazy" decoding="async" width="600" height="600" />
-</a>
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Payments · FedNow · RTP</span>
-<h3><a href="/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html">The Multi-Rail Bank in 2026: Cards, A2A, Stablecoins, RTP, FedNow, and Open Banking in One Strategy</a></h3>
-<p class="newsroom-meta"><time datetime="2026-06-01">June 1, 2026</time></p>
-<p class="newsroom-excerpt">FedNow demands pre-funded 24/7 liquidity. ACH is cheap but T+1. USDC clears atomically but needs wallet infrastructure. The 2026 multi-rail bank routes each payment by cost, finality, and liquidity cost — driven by an orchestration engine that reads ISO 20022 pacs.008 and decides.</p>
 </div>
 </article>
 

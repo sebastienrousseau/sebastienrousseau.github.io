@@ -1,13 +1,13 @@
 {
-  "word_count": 1620,
+  "reading_time": 8,
   "banner": "https://cloudcdn.pro/stocks/images/mm1-visual.webp",
   "subtitle": "Çok modlu büyük dil modelleri üzerine Apple'ın MM1 makalesinin analizi",
-  "keywords": "MM1, çok modlu, LLM, Apple, üretken yapay zeka, araştırma",
-  "locale": "tr_TR",
-  "reading_time": 8,
-  "title": "Çok modlu LLM'ler ile yapay zekayı ilerletmek: MM1 dersleri",
   "language": "tr-TR",
   "banner_alt": "MM1 modelinin görselleştirmesi",
+  "locale": "tr_TR",
+  "keywords": "MM1, çok modlu, LLM, Apple, üretken yapay zeka, araştırma",
+  "title": "Çok modlu LLM'ler ile yapay zekayı ilerletmek: MM1 dersleri",
   "date": "March 18, 2024",
+  "word_count": 1620,
   "description": "MM1, mimari, ön eğitim stratejileri ve çok modlu LLM'lerin ortaya çıkan yetenekleri üzerine Apple'ın araştırmasıdır."
 }

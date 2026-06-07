@@ -1,14 +1,14 @@
 {
-  "word_count": 1282,
-  "banner": "https://cloudcdn.pro/stocks/images/open-voice.webp",
-  "keywords": "OpenVoice, Tehnologie de Clonare Vocală, Vorbire Sintetică AI, Clonare Vocală Open-Source, Sinteză Vocală Cross-Lingvistică, Clonare Vocală Instantanee, Control Stil Vocal, Tehnologie Vocală pentru Accesibilitate, Voci pentru Industria Divertismentului, AI Vocal pentru Servicii Clienți",
-  "description": "OpenVoice from MIT, Tsinghua and MyShell: production-grade voice cloning with tone, accent and emotion control — and the trade-offs worth knowing.",
-  "subtitle": "Instrumentul Open-Source de Ultimă Generație pentru Clonarea Vocii",
-  "tags": "OpenVoice, Voice Cloning, Synthetic Speech, open source, Cross-Lingual, Instant Cloning, Voice Control, Accessibility, Entertainment, Customer Service, ISO 20022, criptografie post-cuantică, AI, DORA, ingineria platformei, cloud suveran, banking cloud native",
-  "banner_alt": "Banner cu gradient vibrant suprapus pe profiluri repetate",
-  "locale": "ro_RO",
-  "date": "Apr 01, 2024",
-  "title": "OpenVoice: Leading Innovation in Voice Cloning Technology",
   "language": "ro-RO",
-  "reading_time": 6
+  "subtitle": "Instrumentul Open-Source de Ultimă Generație pentru Clonarea Vocii",
+  "title": "OpenVoice: Leading Innovation in Voice Cloning Technology",
+  "banner": "https://cloudcdn.pro/stocks/images/open-voice.webp",
+  "description": "OpenVoice from MIT, Tsinghua and MyShell: production-grade voice cloning with tone, accent and emotion control — and the trade-offs worth knowing.",
+  "tags": "OpenVoice, Voice Cloning, Synthetic Speech, open source, Cross-Lingual, Instant Cloning, Voice Control, Accessibility, Entertainment, Customer Service, ISO 20022, criptografie post-cuantică, AI, DORA, ingineria platformei, cloud suveran, banking cloud native",
+  "keywords": "OpenVoice, Tehnologie de Clonare Vocală, Vorbire Sintetică AI, Clonare Vocală Open-Source, Sinteză Vocală Cross-Lingvistică, Clonare Vocală Instantanee, Control Stil Vocal, Tehnologie Vocală pentru Accesibilitate, Voci pentru Industria Divertismentului, AI Vocal pentru Servicii Clienți",
+  "banner_alt": "Banner cu gradient vibrant suprapus pe profiluri repetate",
+  "reading_time": 6,
+  "date": "Apr 01, 2024",
+  "locale": "ro_RO",
+  "word_count": 1282
 }

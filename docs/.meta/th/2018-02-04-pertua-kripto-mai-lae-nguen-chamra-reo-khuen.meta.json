@@ -1,13 +1,13 @@
 {
-  "subtitle": "EXTC Network: una visión para pagos instantáneos sobre blockchain",
-  "description": "Un capítulo significativo en la evolución del panorama financiero mundial, configurado por la innovación tecnológica, los cambios geopolíticos y las finanzas sostenibles.",
-  "keywords": "EXTC Network, criptomoneda, pagos más rápidos, Ethereum, EIP20, smart contracts, blockchain, pagos transfronterizos, inclusión financiera",
-  "language": "th-TH",
-  "title": "Presentación de una nueva criptomoneda y una solución de pago más rápida",
-  "locale": "th_TH",
-  "date": "February 4, 2018",
-  "word_count": 812,
   "reading_time": 4,
+  "locale": "th_TH",
+  "keywords": "EXTC Network, criptomoneda, pagos más rápidos, Ethereum, EIP20, smart contracts, blockchain, pagos transfronterizos, inclusión financiera",
+  "description": "Un capítulo significativo en la evolución del panorama financiero mundial, configurado por la innovación tecnológica, los cambios geopolíticos y las finanzas sostenibles.",
+  "banner": "https://cloudcdn.pro/stocks/images/laureen-missaire-DBbuhMbAIsQ.webp",
+  "date": "February 4, 2018",
+  "title": "Presentación de una nueva criptomoneda y una solución de pago más rápida",
   "banner_alt": "Ordenador portátil apagado sobre una mesa de madera marrón",
-  "banner": "https://cloudcdn.pro/stocks/images/laureen-missaire-DBbuhMbAIsQ.webp"
+  "subtitle": "EXTC Network: una visión para pagos instantáneos sobre blockchain",
+  "word_count": 812,
+  "language": "th-TH"
 }

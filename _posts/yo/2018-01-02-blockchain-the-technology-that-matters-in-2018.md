@@ -1,6 +1,6 @@
 ---
 title: "Blockchain explained, the technology that matters the most"
-tags: "pain001, ISO 20022, payment automation, cost reduction, payments, payment files, pain message, DORA, ìsirò ìpamọ́ lẹ́yìn quantum, AI, tokenised deposits, Rust, cloud native banking, ìsanwó kọjá-ààlà"
+tags: "pain001, ISO 20022, payment automation, cost reduction, payments, payment files, pain message, DORA, ìsirò ìpamọ́ lẹ́yìn quantum, AI, tokenised deposits, Rust, cloud native banking, ìsanwó kọjá-ààlà, stablecoins"
 subtitle: "Blockchain, àwọn ìwé àkọsílẹ̀ tí a pínká, àti ìmọ̀ ẹrọ tó ṣe pàtàkì jùlọ ní ọdún 2018."
 description: "Ìtàn ìrìn àjò àgbàyanu ti ìtọ́jú àwọn ìdúnàádúrà ohun àmúlò àgbáyé nípasẹ̀ Private-key Cryptography àti àwọn nẹtiwọọki Peer-to-peer (P2P)."
 date: "Jan 02, 2018"

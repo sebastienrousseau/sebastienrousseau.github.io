@@ -1,6 +1,6 @@
 ---
 title: "Blockchain explained, the technology that matters the most"
-tags: "pain001, ISO 20022, payment automation, cost reduction, payments, payment files, pain message, DORA, criptografie post-cuantică, AI, depozite tokenizate, Rust, banking cloud native, plăți transfrontaliere"
+tags: "pain001, ISO 20022, payment automation, cost reduction, payments, payment files, pain message, DORA, criptografie post-cuantică, AI, depozite tokenizate, Rust, banking cloud native, plăți transfrontaliere, stablecoinuri"
 subtitle: "Blockchain, registre distribuite și tehnologia care contează cel mai mult în 2018."
 description: "Povestea extraordinarei călătorii de securizare a tranzacțiilor digitale prin criptografia cu cheie privată și rețelele Peer-to-peer (P2P)."
 date: "Jan 02, 2018"

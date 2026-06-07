@@ -139,6 +139,7 @@ site_software: "Static Site Generator, Rust"
 
 
 
+
 <!-- lead-start -->
 <aside class="post-lead" aria-label="Article summary">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> AI is becoming the operating system of payments in 2026, moving from analytics into fraud prevention, payment repair, routing, liquidity forecasting, compliance screening, and agentic commerce controls.</p>

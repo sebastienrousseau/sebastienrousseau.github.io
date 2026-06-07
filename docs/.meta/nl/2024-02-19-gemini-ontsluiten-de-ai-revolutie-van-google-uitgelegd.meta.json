@@ -1,13 +1,13 @@
 {
   "date": "February 19, 2024",
-  "subtitle": "Een blik op Gemini, Google's multimodale AI-systeem en zijn ecosysteem",
-  "title": "Gemini ontsluiten: de AI-revolutie van Google uitgelegd",
-  "reading_time": 2,
-  "banner_alt": "Banner van Google Gemini",
   "keywords": "Gemini, Google, AI, multimodaal, LLM, machine learning",
-  "word_count": 507,
+  "subtitle": "Een blik op Gemini, Google's multimodale AI-systeem en zijn ecosysteem",
+  "description": "Een blik op Gemini, het multimodale AI-systeem van Google: architectuur, mogelijkheden en plaats in het AI-ecosysteem.",
   "banner": "https://cloudcdn.pro/stocks/images/abstract-visualization-of-gemini.webp",
-  "locale": "nl_NL",
   "language": "nl-NL",
-  "description": "Een blik op Gemini, het multimodale AI-systeem van Google: architectuur, mogelijkheden en plaats in het AI-ecosysteem."
+  "locale": "nl_NL",
+  "word_count": 507,
+  "banner_alt": "Banner van Google Gemini",
+  "reading_time": 2,
+  "title": "Gemini ontsluiten: de AI-revolutie van Google uitgelegd"
 }

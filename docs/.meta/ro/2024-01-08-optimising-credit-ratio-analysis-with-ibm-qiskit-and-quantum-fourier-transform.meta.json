@@ -1,14 +1,14 @@
 {
-  "word_count": 1545,
-  "language": "ro-RO",
-  "reading_time": 7,
-  "subtitle": "Optimizarea Analizei Ratelor de Credit cu IBM Qiskit și Transformata Fourier Cuantică",
-  "description": "Explorați cum IBM Qiskit și Transformata Fourier Cuantică revoluționează analiza ratelor de credit în finanțe, oferind precizie și viteză fără precedent.",
-  "banner": "https://cloudcdn.pro/stocks/images/quantum-computer-room.webp",
-  "banner_alt": "Sală cu Calculator Cuantic",
-  "date": "Jan 08, 2024",
-  "tags": "Qiskit, calcul cuantic, Credit Analysis, FinTech, QFT, Risk Management, Finance, Data Science, Algorithm, Quantum Technology, ISO 20022, criptografie post-cuantică, AI, open source",
   "keywords": "calcul cuantic, finanțe, analiză rate de credit, Qiskit, Quantum Fourier Transform, IBM, învățare automată, inteligență artificială, evaluarea riscului financiar, bonitate",
+  "banner": "https://cloudcdn.pro/stocks/images/quantum-computer-room.webp",
+  "tags": "Qiskit, calcul cuantic, Credit Analysis, FinTech, QFT, Risk Management, Finance, Data Science, Algorithm, Quantum Technology, ISO 20022, criptografie post-cuantică, AI, open source",
+  "reading_time": 7,
   "locale": "ro_RO",
-  "title": "Qiskit & Quantum Fourier Transform for Credit Ratio Analysis"
+  "date": "Jan 08, 2024",
+  "description": "Explorați cum IBM Qiskit și Transformata Fourier Cuantică revoluționează analiza ratelor de credit în finanțe, oferind precizie și viteză fără precedent.",
+  "word_count": 1545,
+  "subtitle": "Optimizarea Analizei Ratelor de Credit cu IBM Qiskit și Transformata Fourier Cuantică",
+  "language": "ro-RO",
+  "title": "Qiskit & Quantum Fourier Transform for Credit Ratio Analysis",
+  "banner_alt": "Sală cu Calculator Cuantic"
 }

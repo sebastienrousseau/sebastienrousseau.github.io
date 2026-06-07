@@ -1,6 +1,6 @@
 ---
 title: "Blockchain explained, the technology that matters the most"
-tags: "pain001, ISO 20022, payment automation, cost reduction, payments, payment files, pain message, DORA, পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, AI, টোকেনাইজড আমানত, Rust, ক্লাউড নেটিভ ব্যাংকিং, সীমান্ত-পার পেমেন্ট"
+tags: "pain001, ISO 20022, payment automation, cost reduction, payments, payment files, pain message, DORA, পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, AI, টোকেনাইজড আমানত, Rust, ক্লাউড নেটিভ ব্যাংকিং, সীমান্ত-পার পেমেন্ট, stablecoins"
 subtitle: "ব্লকচেইন, বিতরণকৃত লেজার এবং ২০১৮ সালের সবচেয়ে গুরুত্বপূর্ণ প্রযুক্তি।"
 description: "ব্যক্তিগত-কী ক্রিপ্টোগ্রাফি এবং পিয়ার-টু-পিয়ার (P2P) নেটওয়ার্কের মাধ্যমে ডিজিটাল লেনদেন সুরক্ষিত করার অসাধারণ যাত্রার একটি গল্প।"
 date: "Jan 02, 2018"

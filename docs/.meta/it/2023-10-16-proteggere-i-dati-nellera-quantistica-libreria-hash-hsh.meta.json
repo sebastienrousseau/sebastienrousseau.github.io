@@ -1,13 +1,13 @@
 {
-  "reading_time": 6,
-  "banner_alt": "Illustrazione creativa a tema calcolo quantistico",
-  "keywords": "HSH, hash, digest, Rust, crittografia, post-quantistica, password, autenticazione",
+  "word_count": 1389,
+  "subtitle": "Algoritmi di hash e digest sicuri per la cifratura e verifica delle password",
+  "locale": "it_IT",
+  "title": "Proteggere i dati nell'era quantistica: la libreria di hash HSH",
   "language": "it-IT",
   "description": "HSH è una libreria Rust che implementa algoritmi di hash e digest sicuri per la cifratura e verifica delle password, progettata con un approccio resistente al quantum per l'era post-PQC dell'autenticazione.",
+  "reading_time": 6,
+  "banner_alt": "Illustrazione creativa a tema calcolo quantistico",
   "date": "October 16, 2023",
-  "title": "Proteggere i dati nell'era quantistica: la libreria di hash HSH",
-  "locale": "it_IT",
-  "subtitle": "Algoritmi di hash e digest sicuri per la cifratura e verifica delle password",
   "banner": "https://cloudcdn.pro/stocks/images/galina-nelyubova-7ej8VWfwFsg.webp",
-  "word_count": 1389
+  "keywords": "HSH, hash, digest, Rust, crittografia, post-quantistica, password, autenticazione"
 }

@@ -1,13 +1,13 @@
 {
-  "title": "KyberLib: CRYSTALS-Kyber in Rust für die Post-Quanten-Welt",
-  "word_count": 826,
   "reading_time": 4,
-  "locale": "de_DE",
-  "keywords": "KyberLib, Rust CRYSTALS-Kyber, Post-Quanten-Kryptografie, gitterbasierte Kryptografie, quantenresistenter Schlüsselaustausch, NIST FIPS 203, Sebastien Rousseau, KEM, Zahlungsauthentifizierung, PQC-Bibliothek",
-  "description": "Robuste, quantensichere kryptografische Implementierung des CRYSTALS-Kyber-Algorithmus, um Ihre Daten vor Quantenbedrohungen und kryptanalytischen Angriffen zu schützen.",
-  "subtitle": "KyberLib, eine robuste Rust-Implementierung von CRYSTALS-Kyber für das Quantenzeitalter",
-  "banner_alt": "Sichere Kommunikation im Quantenzeitalter mit KyberLib stärken",
-  "language": "de",
   "banner": "https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg",
-  "date": "November 28, 2023"
+  "banner_alt": "Sichere Kommunikation im Quantenzeitalter mit KyberLib stärken",
+  "locale": "de_DE",
+  "language": "de",
+  "date": "November 28, 2023",
+  "word_count": 826,
+  "description": "Robuste, quantensichere kryptografische Implementierung des CRYSTALS-Kyber-Algorithmus, um Ihre Daten vor Quantenbedrohungen und kryptanalytischen Angriffen zu schützen.",
+  "title": "KyberLib: CRYSTALS-Kyber in Rust für die Post-Quanten-Welt",
+  "keywords": "KyberLib, Rust CRYSTALS-Kyber, Post-Quanten-Kryptografie, gitterbasierte Kryptografie, quantenresistenter Schlüsselaustausch, NIST FIPS 203, Sebastien Rousseau, KEM, Zahlungsauthentifizierung, PQC-Bibliothek",
+  "subtitle": "KyberLib, eine robuste Rust-Implementierung von CRYSTALS-Kyber für das Quantenzeitalter"
 }

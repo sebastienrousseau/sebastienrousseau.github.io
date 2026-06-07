@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Sun, 07 Jun 2026 06:06:06 +0000" id="date" />
+    <meta itemprop="dateModified" content="Sun, 07 Jun 2026 06:06:06 +0000" id="last-modified" />
+    <title>Índice de Tesorería Autónoma 2026: agéntica, liquidez programable y depósitos tokenizados — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="Un índice 2026 de preparación de tesorería autónoma: workflows de tesorería agéntica, liquidez programable, depósitos tokenizados, pagos en tiempo real y control automatizado.">
+<meta name="keywords" content="tesorería autónoma 2026, tesorería agéntica, liquidez programable, depósitos tokenizados tesorería, tesorería en tiempo real, gestión de caja con IA">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="The Autonomous Treasury Index 2026">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-Ky/GulXvV45GX8BpXW/0HwKWs/hxG/dwfrNBpmL4ew0=' 'sha256-UCYQkriiPzYtkiIK5ras9fYIu5jxpzDG7kLIMi4YEvw=' 'sha256-hefCBEnrEowzqttI3VtEEadETbitVJ69QhytoLN0+kc=' 'sha256-x2CX/Yv7Y/sugyJNThOLMYnDjqagmDX6Sz4v1hQiAFc=' 'sha256-zhje9oq7RnQbYRwb+PXaFsqTv0jDIqCkIA5QLdAN7uw=' 'self' 'inline-speculation-rules' https://cdn.jsdelivr.net https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' https://cloudcdn.pro https://www.google.com https://open.spotify.com;
+        img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/es/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/newsreader-latin.woff2" crossorigin />
+    <link rel="stylesheet" href="/fonts/fonts.css" />
+    <!-- Preload the LCP hero portrait so it doesn't compete with the
+         render-blocking JS bundle on throttled mobile connections.
+         Lighthouse-simulated Slow-4G has been pinning LCP at ~5.6s; the
+         observed (real-network) LCP is 165 ms. This hint pulls the
+         synthetic LCP in line with the observed value. -->
+    <link rel="preload" as="image" href="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=1200&format=webp&q=85" fetchpriority="high">
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script>(function(){try{var saved=localStorage.getItem("theme");var prefersDark=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;var theme=saved||(prefersDark?"dark":"light");document.documentElement.setAttribute("data-theme",theme);}catch(e){}})();</script>
+
+    <link rel="stylesheet" href="/_csp/4724896d11ec6663.css" integrity="sha256-SFQ1AngSMlx94d5FmN1lWSKPs5RL6Y8BQf0nIEBLd7g= sha256-6BJkWGvqh3blXQksn+ynhkpoqcrJzzWhSKVuLVBJY4s=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Feed Atom" href="/es/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="Índice de Tesorería Autónoma 2026: agéntica, liquidez programable y depósitos tokenizados — Sebastien Rousseau">
+<meta property="og:description" content="Un índice 2026 de preparación de tesorería autónoma: workflows de tesorería agéntica, liquidez programable, depósitos tokenizados, pagos en tiempo real y control automatizado.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/es/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/">
+<meta property="og:image" content="https://cloudcdn.pro/stocks/images/christopher-burns-Kj2SaNHG-hg.webp">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="es_ES">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Índice de Tesorería Autónoma 2026: agéntica, liquidez programable y depósitos tokenizados — Sebastien Rousseau">
+<meta name="twitter:description" content="Un índice 2026 de preparación de tesorería autónoma: workflows de tesorería agéntica, liquidez programable, depósitos tokenizados, pagos en tiempo real y control automatizado.">
+<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/christopher-burns-Kj2SaNHG-hg.webp">
+<link rel="canonical" href="https://sebastienrousseau.com/es/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/" /><link rel="alternate" hreflang="bn" href="https://sebastienrousseau.com/bn/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/" /><link rel="alternate" hreflang="cs" href="https://sebastienrousseau.com/cs/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/" /><link rel="alternate" hreflang="fil" href="https://sebastienrousseau.com/fil/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/" /><link rel="alternate" hreflang="ha" href="https://sebastienrousseau.com/ha/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/" /><link rel="alternate" hreflang="he" href="https://sebastienrousseau.com/he/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/" /><link rel="alternate" hreflang="hi" href="https://sebastienrousseau.com/hi/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/" /><link rel="alternate" hreflang="id" href="https://sebastienrousseau.com/id/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/" /><link rel="alternate" hreflang="nl" href="https://sebastienrousseau.com/nl/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/" /><link rel="alternate" hreflang="pl" href="https://sebastienrousseau.com/pl/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/" /><link rel="alternate" hreflang="ro" href="https://sebastienrousseau.com/ro/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/" /><link rel="alternate" hreflang="sv" href="https://sebastienrousseau.com/sv/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/" /><link rel="alternate" hreflang="th" href="https://sebastienrousseau.com/th/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/" /><link rel="alternate" hreflang="tr" href="https://sebastienrousseau.com/tr/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/" /><link rel="alternate" hreflang="uk" href="https://sebastienrousseau.com/uk/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/" /><link rel="alternate" hreflang="vi" href="https://sebastienrousseau.com/vi/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/" /><link rel="alternate" hreflang="yo" href="https://sebastienrousseau.com/yo/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" integrity="sha256-tV/7vAgYDUuBQbSGEPjXL/JC0sD7QpSxXCGKT4ALhh8= sha256-dvm1KF9mEWIapL8BE0nyFlHaKSf6TsjZZoQcJeRPraI=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">Saltar al contenido principal</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="Alternar navegación" />
+      <div class="wrap">
+        <a class="ap-brand" href="/es/index.html" aria-label="Inicio de Sebastien Rousseau">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="Navegación principal">
+          <ul class="ap-menu">
+            <li><a href="/es/sobre-mi/index.html">Sobre mí</a></li>
+            <li><a href="/es/articulos/index.html" aria-current="page" class="active">Artículos</a></li>
+            <li><a href="/es/publicaciones/index.html">Publicaciones</a></li>
+            <li><a href="/es/temas/index.html">Temas</a></li>
+            <li><a href="/es/proyectos/index.html">Proyectos</a></li>
+            <li><a href="/es/playlists/index.html">Playlists</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="Activar el tema oscuro" aria-pressed="false" title="Cambiar tema">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="Buscar (Cmd o Ctrl + K)" title="Buscar (⌘K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="Idioma">
+            <button type="button" class="ap-lang-toggle" aria-label="ES, Cambiar de idioma" aria-expanded="false" aria-haspopup="menu" title="Cambiar de idioma">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">ES</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <a class="ap-lang-item" href="/bn/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
+                <a class="ap-lang-item" href="/cs/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
+                <a class="ap-lang-item" href="/de/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <a class="ap-lang-item" href="/fil/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
+                <a class="ap-lang-item" href="/ha/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
+                <a class="ap-lang-item" href="/he/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
+                <a class="ap-lang-item" href="/hi/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <a class="ap-lang-item" href="/id/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
+                <a class="ap-lang-item" href="/it/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <a class="ap-lang-item" href="/pl/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
+                <a class="ap-lang-item" href="/pt-br/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <a class="ap-lang-item" href="/ro/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
+                <a class="ap-lang-item" href="/ru/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <a class="ap-lang-item" href="/sv/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
+                <a class="ap-lang-item" href="/th/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
+                <a class="ap-lang-item" href="/tr/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
+                <a class="ap-lang-item" href="/uk/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/" data-lang="uk" role="menuitem">🇺🇦 Українська</a>
+                <a class="ap-lang-item" href="/vi/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
+                <a class="ap-lang-item" href="/yo/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
+                <a class="ap-lang-item" href="/zh-hans/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/es/contacto/index.html" aria-label="Contactar">Contactar ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="Alternar navegación">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>Índice de Tesorería Autónoma 2026: agéntica, liquidez programable y depósitos tokenizados</h1>
+      <p class="sub">La tesorería se convierte en un sistema operativo en tiempo real donde agentes, raíles de pago, depósitos tokenizados, previsiones de liquidez y controles deben funcionar como una sola pieza.</p>
+    <nav class="article-tags" aria-label="Temas"><a href="/tags/index.html#h3-tesoreria-autonoma-2026" class="article-tag" rel="tag">tesorería autónoma 2026</a><a href="/tags/index.html#h3-tesoreria-agentica" class="article-tag" rel="tag">tesorería agéntica</a><a href="/tags/index.html#h3-liquidez-programable" class="article-tag" rel="tag">liquidez programable</a><a href="/tags/index.html#h3-depositos-tokenizados-tesoreria" class="article-tag" rel="tag">depósitos tokenizados tesorería</a><a href="/tags/index.html#h3-tesoreria-en-tiempo-real" class="article-tag" rel="tag">tesorería en tiempo real</a><a href="/tags/index.html#h3-gestion-de-caja-con-ia" class="article-tag" rel="tag">gestión de caja con IA</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2026-06-07T06:06:06+00:00" class="meta-pub">Publicado el 7 Jun 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Tiempo estimado de lectura">6 min de lectura</span></div></section><figure class="article-banner"><img src="https://cloudcdn.pro/api/transform?url=/stocks/images/christopher-burns-Kj2SaNHG-hg.webp&w=1600&format=webp&q=85" alt="Banner for: Índice de Tesorería Autónoma 2026: agéntica, liquidez programable y depósitos tokenizados" width="1200" height="675" fetchpriority="high" decoding="async" /></figure>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>Contenido</h2><ol><li><a href="#por-que-2026-es-el-ano-en-que-este-indice-importa">Por qué 2026 es el año en que este índice importa</a></li><li><a href="#la-arquitectura-del-indice-2026">La arquitectura del índice 2026</a></li><li><a href="#senales-actuales-a-vigilar">Señales actuales a vigilar</a></li><li><a href="#el-mandato-del-agente-de-tesoreria">El mandato del agente de tesorería</a></li><li><a href="#liquidez-programable">Liquidez programable</a></li><li><a href="#la-sala-de-control-de-tesoreria">La sala de control de tesorería</a></li><li><a href="#que-implica-segun-el-tipo-de-banco">Qué implica según el tipo de banco</a></li><li><a href="#conclusion">Conclusión</a></li><li><a href="#preguntas-frecuentes">Preguntas frecuentes</a></li><li><a href="#referencias">Referencias</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> Un índice 2026 de preparación de tesorería autónoma: workflows de tesorería agéntica, liquidez programable, depósitos tokenizados, pagos en tiempo real y control automatizado.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>Por qué 2026 es el año en que este índice importa.</strong> El Stanford AI Index resulta útil porque trata un campo tecnológico de evolución rápida como algo que se puede medir: producción investigadora, rendimiento técnico, despliegue responsable, economía, adopción…</li>  <li><strong>Señales actuales a vigilar.</strong> Un agente de tesorería no debe diseñarse como un asistente de propósito general.</li>  <li><strong>El mandato del agente de tesorería.</strong> Un agente de tesorería no debe diseñarse como un asistente de propósito general.</li>  <li><strong>Liquidez programable.</strong> La liquidez programable es la capacidad de mover valor bajo condiciones: si se rebasa un umbral, si el colateral es elegible, si la contraparte supera el cribado, si hay finalidad de liquidación o si el colchón de…</li></ul></aside><!-- lead-start -->
+
+<!-- lead-end -->
+<p>La tesorería autónoma es el punto de encuentro natural entre IA agéntica, pagos mayoristas, depósitos tokenizados y liquidez en tiempo real. En 2026, las mejores arquitecturas de tesorería no se limitarán a prever la caja: recomendarán, explicarán y, llegado el caso, ejecutarán acciones de liquidez acotadas en cuentas, divisas, raíles y activos de liquidación.</p>
+<hr />
+<blockquote>
+<p><strong>Resumen ejecutivo / conclusiones clave</strong></p>
+<ul>
+<li><strong>La tesorería pasa del reporte al control.</strong> Los saldos en tiempo real, las previsiones, el estado de los pagos y el movimiento de liquidez forman parte de un mismo workflow.</li>
+<li><strong>La IA agéntica crea una nueva interfaz de tesorería.</strong> Los agentes pueden monitorizar posiciones, aflorar anomalías, preparar acciones de financiación y escalar decisiones dentro de mandatos definidos.</li>
+<li><strong>El dinero programable cambia la pata de caja.</strong> Los depósitos tokenizados y los experimentos de CBDC mayorista abren nuevas posibilidades de liquidación atómica, pagos condicionales y liquidez siempre disponible.</li>
+<li><strong>El índice debe medir la autoridad.</strong> La pregunta no es si el agente puede sugerir una acción; es si la autoridad, los límites, las aprobaciones y la evidencia están claros.</li>
+<li><strong>El valor de la tesorería es medible.</strong> Liquidez ahorrada, investigaciones manuales reducidas, fallos de liquidación evitados y capital circulante liberado deben definir el éxito.</li>
+</ul>
+</blockquote>
+<hr />
+<h2 id="por-que-2026-es-el-ano-en-que-este-indice-importa">Por qué 2026 es el año en que este índice importa <a class="heading-anchor" href="#por-que-2026-es-el-ano-en-que-este-indice-importa" aria-label="Enlace a Por qué 2026 es el año en que este índice importa">#</a></h2>
+<p>El Stanford AI Index resulta útil porque trata un campo tecnológico de evolución rápida como algo que se puede medir: producción investigadora, rendimiento técnico, despliegue responsable, economía, adopción sectorial, política y opinión pública se integran en un único marco (<a href="https://hai.stanford.edu/ai-index/2026-ai-index-report" title="The 2026 AI Index Report">Stanford HAI ⧉</a>). La banca y las entidades financieras necesitan ya la misma disciplina para su infraestructura. IA agéntica, seguridad quantum-safe, resiliencia cloud-native y pagos mayoristas han dejado de ser vías de innovación separadas; convergen en un único modelo operativo.</p>
+<p>La pregunta práctica para un banco no es si cada dominio importa. Es si la entidad puede medir la preparación en todos ellos al mismo tiempo. Un banco puede desplegar IA agéntica y seguir siendo frágil si su criptografía no está lista para migrar. Puede modernizar plataformas cloud y aun así fallar si los datos de pago siguen sin estructurarse. Puede ejecutar pilotos de tokenización y aun así generar riesgo sistémico si las capas de liquidación, liquidez, identidad y auditoría no se diseñan de forma conjunta.</p>
+<h2 id="la-arquitectura-del-indice-2026">La arquitectura del índice 2026 <a class="heading-anchor" href="#la-arquitectura-del-indice-2026" aria-label="Enlace a La arquitectura del índice 2026">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Capa del índice</th>
+<th>Dirección 2026</th>
+<th>Métrica de preparación</th>
+<th>Riesgo si se gestiona mal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Visibilidad</strong></td>
+<td>Unificar datos de cuenta, pago, liquidez y exposición</td>
+<td>Cobertura de posiciones de caja en tiempo real</td>
+<td>Visibilidad de caja fragmentada</td>
+</tr>
+<tr>
+<td><strong>Previsión</strong></td>
+<td>Usar IA para prever saldos, flujos y necesidades de financiación</td>
+<td>Precisión de la previsión y tasa de excepción</td>
+<td>Falsa confianza en datos débiles</td>
+</tr>
+<tr>
+<td><strong>Autonomía</strong></td>
+<td>Conceder a los agentes autoridad acotada para recomendaciones y acciones</td>
+<td>Cobertura de mandatos y calidad de las aprobaciones</td>
+<td>Acción no autorizada o sin explicación</td>
+</tr>
+<tr>
+<td><strong>Programabilidad</strong></td>
+<td>Usar depósitos tokenizados y condiciones inteligentes donde aporten valor</td>
+<td>Casos de uso de pagos condicionales y liquidación atómica</td>
+<td>Pilotos de tesorería guiados por tecnología</td>
+</tr>
+<tr>
+<td><strong>Controles</strong></td>
+<td>Embeber límites, sanciones, FX, liquidez y controles de auditoría</td>
+<td>Evidencia de control por acción de tesorería</td>
+<td>Gobernanza manual a posteriori</td>
+</tr>
+</tbody>
+</table>
+<h2 id="senales-actuales-a-vigilar">Señales actuales a vigilar <a class="heading-anchor" href="#senales-actuales-a-vigilar" aria-label="Enlace a Señales actuales a vigilar">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Señal</th>
+<th>Lo que significa para la banca</th>
+<th>Fuente</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>52% de adopción de IA agéntica en servicios financieros</strong></td>
+<td>La tesorería puede ya absorber workflows agénticos a través de plataformas gobernadas</td>
+<td><a href="https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/2026-global-ai-in-financial-services-report/" title="Informe Global IA en Servicios Financieros 2026">Cambridge CCAF ⧉</a></td>
+</tr>
+<tr>
+<td><strong>Pagos condicionales de Project Agorá</strong></td>
+<td>La tokenización puede habilitar capacidades de pago condicional y siempre disponibles</td>
+<td><a href="https://www.bis.org/about/bisih/topics/fmis/agora.htm" title="Project Agorá">BIS ⧉</a></td>
+</tr>
+<tr>
+<td><strong>Trabajo del Bank of England sobre stablecoins y DSS</strong></td>
+<td>Los activos de liquidación mayorista se prueban en infraestructuras de mercado controladas del Reino Unido</td>
+<td><a href="https://www.bankofengland.co.uk/speech/2025/january/sasha-mills-speech-at-the-tokenisation-summit" title="Dando forma al futuro financiero digital del Reino Unido">Bank of England ⧉</a></td>
+</tr>
+<tr>
+<td><strong>Fecha límite de SWIFT para direcciones estructuradas</strong></td>
+<td>Los datos de tesorería deben capturarse correctamente en origen</td>
+<td><a href="https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed" title="Hito ISO 20022 de noviembre de 2026 sobre direcciones estructuradas">SWIFT ⧉</a></td>
+</tr>
+<tr>
+<td><strong>Las grandes entidades luchan por medir el valor de la IA</strong></td>
+<td>La automatización de tesorería necesita métricas económicas duras</td>
+<td><a href="https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/2026-global-ai-in-financial-services-report/" title="Informe Global IA en Servicios Financieros 2026">Cambridge CCAF ⧉</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="el-mandato-del-agente-de-tesoreria">El mandato del agente de tesorería <a class="heading-anchor" href="#el-mandato-del-agente-de-tesoreria" aria-label="Enlace a El mandato del agente de tesorería">#</a></h2>
+<p>Un agente de tesorería no debe diseñarse como un asistente de propósito general. Necesita un mandato: observar cuentas, detectar excepciones, prever brechas de financiación, preparar acciones, solicitar aprobaciones, ejecutar dentro de los límites y producir evidencia. Cada paso debe contar con un modelo de autoridad distinto.</p>
+<h2 id="liquidez-programable">Liquidez programable <a class="heading-anchor" href="#liquidez-programable" aria-label="Enlace a Liquidez programable">#</a></h2>
+<p>La liquidez programable es la capacidad de mover valor bajo condiciones: si se rebasa un umbral, si el colateral es elegible, si la contraparte supera el cribado, si hay finalidad de liquidación o si el colchón de liquidez intradía es demasiado bajo. Los depósitos tokenizados y las plataformas de liquidación mayorista hacen que estos patrones sean más prácticos.</p>
+<h2 id="la-sala-de-control-de-tesoreria">La sala de control de tesorería <a class="heading-anchor" href="#la-sala-de-control-de-tesoreria" aria-label="Enlace a La sala de control de tesorería">#</a></h2>
+<p>El modelo operativo debe parecerse a una sala de control: posiciones, previsiones, estados de pago, uso de límites, excepciones, aprobaciones y evidencia en una sola interfaz. El índice debe penalizar las pilas de tesorería que obligan a los equipos a coser correos, hojas de cálculo, portales bancarios y cuadros de mando desconectados.</p>
+<h2 id="que-implica-segun-el-tipo-de-banco">Qué implica según el tipo de banco <a class="heading-anchor" href="#que-implica-segun-el-tipo-de-banco" aria-label="Enlace a Qué implica según el tipo de banco">#</a></h2>
+<h3 id="bancos-globales-sistemicamente-importantes">Bancos globales sistémicamente importantes <a class="heading-anchor" href="#bancos-globales-sistemicamente-importantes" aria-label="Enlace a Bancos globales sistémicamente importantes">#</a></h3>
+<p>Los bancos globales deben tratar este índice como un cuadro de mando de arquitectura empresarial. La prioridad no es otra prueba de concepto; es la evidencia de que los workflows autónomos, la migración criptográfica, la dependencia cloud y la modernización de pagos pueden gobernarse como un único sistema de riesgo y valor.</p>
+<h3 id="bancos-de-transaccion-y-bancos-corporativos">Bancos de transacción y bancos corporativos <a class="heading-anchor" href="#bancos-de-transaccion-y-bancos-corporativos" aria-label="Enlace a Bancos de transacción y bancos corporativos">#</a></h3>
+<p>Los bancos de transacción deben centrarse en pagos mayoristas, dato estructurado, liquidez, depósitos tokenizados y servicios de tesorería agéntica. La propuesta de cliente más valiosa no es solo mover el dinero más rápido; es un movimiento de dinero explicable, auditable y programable, con menos investigaciones y mejor visibilidad del capital circulante.</p>
+<h3 id="bancos-regionales">Bancos regionales <a class="heading-anchor" href="#bancos-regionales" aria-label="Enlace a Bancos regionales">#</a></h3>
+<p>Los bancos regionales deben utilizar el índice para evitar la dispersión de programas. No tienen que liderar todas las fronteras, pero sí necesitan posiciones creíbles sobre gobernanza de IA, inventario poscuántico, evidencia de salida cloud y preparación del dato de pago.</p>
+<h3 id="fintech-psp-y-proveedores-de-infraestructura">Fintech, PSP y proveedores de infraestructura <a class="heading-anchor" href="#fintech-psp-y-proveedores-de-infraestructura" aria-label="Enlace a Fintech, PSP y proveedores de infraestructura">#</a></h3>
+<p>Las fintech y los proveedores de infraestructura deben alinear sus hojas de ruta de producto con la preparación medible de la banca. Las mejores propuestas reducirán el riesgo de integración, reforzarán la evidencia y harán que la infraestructura compleja sea más fácil de gobernar para los bancos.</p>
+<h2 id="conclusion">Conclusión <a class="heading-anchor" href="#conclusion" aria-label="Enlace a Conclusión">#</a></h2>
+<p>El valor de un informe-índice es que convierte una agenda tecnológica fragmentada en un modelo operativo medible. En 2026, los ganadores de la infraestructura financiera no serán las entidades con más pilotos. Serán las entidades capaces de demostrar preparación en autonomía, seguridad, resiliencia, liquidación, economía y gobernanza al mismo tiempo.</p>
+<h2 id="preguntas-frecuentes">Preguntas frecuentes <a class="heading-anchor" href="#preguntas-frecuentes" aria-label="Enlace a Preguntas frecuentes">#</a></h2>
+<p><strong>¿Qué es la tesorería autónoma?</strong></p>
+<p>La tesorería autónoma es el uso de agentes de IA, datos en tiempo real y pagos programables para monitorizar, recomendar y, potencialmente, ejecutar acciones de tesorería dentro de controles definidos.</p>
+<p><strong>¿Debe permitirse a los agentes de tesorería ejecutar pagos?</strong></p>
+<p>Solo dentro de mandatos estrechos, límites estrictos, aprobaciones explícitas y auditabilidad completa. La autoridad de ejecución debe ganarse con la madurez.</p>
+<p><strong>¿Cómo ayudan los depósitos tokenizados a la tesorería?</strong></p>
+<p>Pueden soportar liquidación programable, ejecución atómica y, potencialmente, un mejor control de la liquidez intradía sin renunciar a la relación con el dinero bancario comercial.</p>
+<p><strong>¿Cuál es el primer paso de implantación?</strong></p>
+<p>Construir visibilidad y calidad del dato en tiempo real antes de conceder autonomía. Los agentes no pueden optimizar con seguridad una caja que no ven con precisión.</p>
+<h2 id="referencias">Referencias <a class="heading-anchor" href="#referencias" aria-label="Enlace a Referencias">#</a></h2>
+<ul>
+<li>Cambridge Centre for Alternative Finance, (2026). <a href="https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/2026-global-ai-in-financial-services-report/" title="Informe Global IA en Servicios Financieros 2026">Informe Global IA en Servicios Financieros 2026 ⧉</a>.</li>
+<li>SWIFT, (2026). <a href="https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed" title="Hito ISO 20022 de noviembre de 2026 sobre direcciones estructuradas">Hito ISO 20022 de noviembre de 2026 sobre direcciones estructuradas ⧉</a>.</li>
+<li>BIS Innovation Hub, (2026). <a href="https://www.bis.org/about/bisih/topics/fmis/agora.htm" title="Project Agorá">Project Agorá ⧉</a>.</li>
+<li>Bank of England, (2026). <a href="https://www.bankofengland.co.uk/speech/2025/january/sasha-mills-speech-at-the-tokenisation-summit" title="Dando forma al futuro financiero digital del Reino Unido">Dando forma al futuro financiero digital del Reino Unido ⧉</a>.</li>
+</ul>
+<!-- enrich-start -->
+
+<p class="post-reviewed">Última revisión <time datetime="2026-06-07">2026-06-07</time>.</p>
+<!-- enrich-end -->
+<aside class="author-card" aria-label="Sobre el autor"><img alt="Retrato de Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=85" width="64" height="64" loading="lazy" decoding="async"  fetchpriority="high"><span class="author-card-body"><strong class="author-card-name"><a href="/es/sobre-mi/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Tecnólogo bancario senior, escribo sobre IA aplicada, migración a ISO 20022, criptografía postcuántica para los servicios financieros y la transformación estructural de los pagos mayoristas.</span><span class="author-credentials">Más de 20 años de experiencia en HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/es/sobre-mi/index.html">Perfil completo</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">Última revisión <time datetime="2026-06-07">2026-06-07</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Lecturas relacionadas</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/es/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026" class="related-media" aria-label="Índice de infraestructura bancaria 2026: IA agéntica, criptografía poscuántica, cloud y pagos mayoristas" tabindex="-1"><img alt="An editorial aerial composition by Miguel Sousa suggesting interlocking systems — the visual register chosen for a board-level dashboard view of the 2026 Banking Infrastructure Index" src="https://cloudcdn.pro/api/transform?url=/stocks/images/miguel-sousa-ejIF-pJhYkM.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="indice-de-infraestructura-bancaria-2026-ia-agentica-criptografia-poscuantica-clo"><a href="https://sebastienrousseau.com/es/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026">Índice de infraestructura bancaria 2026: IA agéntica, criptografía poscuántica, cloud y pagos mayoristas</a> <a class="heading-anchor" href="#indice-de-infraestructura-bancaria-2026-ia-agentica-criptografia-poscuantica-clo" aria-label="Enlace a Índice de infraestructura bancaria 2026: IA agéntica, criptografía poscuántica, cloud y pagos mayoristas">#</a></h3><p><time datetime="2026-06-02">2026-06-02</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/es/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026" class="related-media" aria-label="El Índice de Pagos Mayoristas en 2026: ISO 20022, Depósitos Tokenizados, Rieles en Tiempo Real y Liquidación Transfronteriza" tabindex="-1"><img alt="Visual register for the wholesale-payments shift in 2026 — messaging migration giving way to programmable settlement across ISO 20022, tokenised deposits, real-time rails, and cross-border atomicity." src="https://cloudcdn.pro/api/transform?url=/stocks/images/miquel-parera-NsXLehhHx1Q.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="el-indice-de-pagos-mayoristas-en-2026-iso-20022-depositos-tokenizados-rieles-en-"><a href="https://sebastienrousseau.com/es/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026">El Índice de Pagos Mayoristas en 2026: ISO 20022, Depósitos Tokenizados, Rieles en Tiempo Real y Liquidación Transfronteriza</a> <a class="heading-anchor" href="#el-indice-de-pagos-mayoristas-en-2026-iso-20022-depositos-tokenizados-rieles-en-" aria-label="Enlace a El Índice de Pagos Mayoristas en 2026: ISO 20022, Depósitos Tokenizados, Rieles en Tiempo Real y Liquidación Transfronteriza">#</a></h3><p><time datetime="2026-06-06">2026-06-06</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/es/2026-05-27-ai-operating-system-pagos-fraud-routing-resilience-compliance-2026" class="related-media" aria-label="La IA como sistema operativo de los pagos: fraude, enrutamiento, resiliencia y cumplimiento en 2026" tabindex="-1"><img alt="AI payments operating system diagram showing fraud scoring, multi-rail routing, liquidity forecasting, ISO 20022 data, compliance screening, and exception repair" src="https://cloudcdn.pro/api/transform?url=/stocks/images/circuit_board_cityscape.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="la-ia-como-sistema-operativo-de-los-pagos-fraude-enrutamiento-resiliencia-y-cump"><a href="https://sebastienrousseau.com/es/2026-05-27-ai-operating-system-pagos-fraud-routing-resilience-compliance-2026">La IA como sistema operativo de los pagos: fraude, enrutamiento, resiliencia y cumplimiento en 2026</a> <a class="heading-anchor" href="#la-ia-como-sistema-operativo-de-los-pagos-fraude-enrutamiento-resiliencia-y-cump" aria-label="Enlace a La IA como sistema operativo de los pagos: fraude, enrutamiento, resiliencia y cumplimiento en 2026">#</a></h3><p><time datetime="2026-05-27">2026-05-27</time></p></footer></article>
+</div>
+</aside><aside class="article-sources" aria-labelledby="sources-heading"><h2 id="sources-heading" class="article-sources-heading">Fuentes y referencias</h2><ol class="article-sources-list"><li><a href="https://www.bis.org/about/bisih/topics/fmis/agora.htm" rel="external noopener nofollow"><span class="source-host">www.bis.org</span><span class="source-path">/about/bisih/topics/fmis/agora.htm</span></a></li><li><a href="https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed" rel="external noopener nofollow"><span class="source-host">www.swift.com</span><span class="source-path">/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be…</span></a></li></ol></aside><nav class="post-pagination" aria-label="Paginación de artículos"><a class="post-pagination-prev" href="/es/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/"><span class="post-pagination-label">Anterior</span><span class="post-pagination-title">The Wholesale Payments Index in 2026: ISO 20022, Tokenised Deposits, Real-Time Rails, and Cross-Border Settlement</span></a><span class="post-pagination-stub" aria-hidden="true"></span></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/es/sobre-mi/index.html">Sobre mí</a></li>
+              <li><a href="/es/contacto/index.html">Contacto</a></li>
+              <li><a href="/es/hecho-con-static-site-generator/index.html">Hecho con Static Site Generator</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Publicaciones</h2>
+            <ul>
+              <li><a href="/es/articulos/index.html">Artículos</a></li>
+              <li><a href="/es/publicaciones/index.html">Publicaciones</a></li>
+              <li><a href="/es/etiquetas/index.html">Etiquetas</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Actividad</h2>
+            <ul>
+              <li><a href="/es/proyectos/index.html">Proyectos</a></li>
+              <li><a href="/es/playlists/index.html">Playlists</a></li>
+              <li><a href="/es/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Contacto</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="/contact/" method="get" aria-label="Suscripción a la newsletter">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — notas de investigación sobre pagos, IA y criptografía postcuántica. Sin spam.</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="tu@banco.com" />
+            <input type="hidden" name="subject" value="newsletter" />
+            <input type="hidden" name="message" value="Please subscribe me to the Banking On Quantum newsletter." />
+            <button type="submit">Suscribirse</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved.</span>
+          <div class="social" aria-label="Enlaces sociales">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau en Twitter / X"><img src="https://cloudcdn.pro/common/images/buttons/x-black.svg" alt="Sebastien Rousseau en Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau en LinkedIn"><img src="https://cloudcdn.pro/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau en LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau en Medium"><img src="https://cloudcdn.pro/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau en Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau en YouTube"><img src="https://cloudcdn.pro/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau en YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/es/accesibilidad/index.html">Accesibilidad</a> ·
+            <a href="/es/privacidad/index.html">Privacidad</a> ·
+            <a href="/es/terminos/index.html">Términos</a> ·
+            <a href="https://www.thegreenwebfoundation.org/green-web-check/?url=sebastienrousseau.com" target="_blank" rel="noopener noreferrer" title="Hosted on 100% renewable energy (Cloudflare) — estimate via Sustainable Web Design v4 model">Carbon: ~0.04 g/visit · green-hosted</a> ·
+            <a href="https://github.com/sebastienrousseau/sebastienrousseau.github.io/blob/main/project-docs/sigstore.md" target="_blank" rel="noopener noreferrer" title="Every dated article is signed with Sigstore — verify the bytes match what was published">Verify signatures</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","identifier":{"@type":"PropertyValue","propertyID":"ORCID","value":"0009-0005-1434-284X","url":"https://orcid.org/0009-0005-1434-284X"},"worksFor":{"@type":"Organization","@id":"https://www.hsbc.com/#organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal","url":"https://www.paypal.com/"},{"@type":"Organization","name":"Barclays","url":"https://www.barclays.com/"},{"@type":"Organization","name":"Shazam Entertainment","url":"https://www.shazam.com/"},{"@type":"Organization","name":"AKQA","url":"https://www.akqa.com/"},{"@type":"Organization","name":"Virgin Group","url":"https://www.virgin.com/"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"hasCredential":[{"@type":"EducationalOccupationalCredential","credentialCategory":"professional experience","name":"20+ years across Tier-1 banks and global payments infrastructure","recognizedBy":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"}},{"@type":"EducationalOccupationalCredential","credentialCategory":"domain expertise","name":"ISO 20022 migration and wholesale payments architecture","recognizedBy":{"@type":"Organization","name":"SWIFT","url":"https://www.swift.com/"}},{"@type":"EducationalOccupationalCredential","credentialCategory":"domain expertise","name":"Post-Quantum Cryptography for financial services","recognizedBy":{"@type":"Organization","name":"NIST Post-Quantum Cryptography Project","url":"https://csrc.nist.gov/projects/post-quantum-cryptography"}}],"knowsAbout":[{"@type":"DefinedTerm","name":"Post-Quantum Cryptography","sameAs":"https://en.wikipedia.org/wiki/Post-quantum_cryptography"},{"@type":"DefinedTerm","name":"ML-KEM (FIPS 203)","sameAs":"https://csrc.nist.gov/pubs/fips/203/final"},{"@type":"DefinedTerm","name":"ML-DSA (FIPS 204)","sameAs":"https://csrc.nist.gov/pubs/fips/204/final"},{"@type":"DefinedTerm","name":"ISO 20022","sameAs":"https://en.wikipedia.org/wiki/ISO_20022"},{"@type":"DefinedTerm","name":"SWIFT gpi","sameAs":"https://www.swift.com/our-solutions/swift-gpi"},{"@type":"DefinedTerm","name":"SEPA Instant Payments","sameAs":"https://www.ecb.europa.eu/paym/integration/retail/instant_payments/html/index.en.html"},{"@type":"DefinedTerm","name":"FedNow Service","sameAs":"https://www.federalreserve.gov/paymentsystems/fednow_about.htm"},{"@type":"DefinedTerm","name":"Real-Time Payments (RTP)","sameAs":"https://www.theclearinghouse.org/payment-systems/rtp"},{"@type":"DefinedTerm","name":"Cross-border payments","sameAs":"https://en.wikipedia.org/wiki/Cross-border_payments"},{"@type":"DefinedTerm","name":"Wholesale banking","sameAs":"https://en.wikipedia.org/wiki/Wholesale_banking"},{"@type":"DefinedTerm","name":"Applied artificial intelligence in banking","sameAs":"https://en.wikipedia.org/wiki/Applications_of_artificial_intelligence"},{"@type":"DefinedTerm","name":"Generative artificial intelligence","sameAs":"https://en.wikipedia.org/wiki/Generative_artificial_intelligence"}],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://orcid.org/0009-0005-1434-284X","https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":["Organization","Brand"],"@id":"https://sebastienrousseau.com/#organization","name":"Sebastien Rousseau","alternateName":"Banking on Quantum","url":"https://sebastienrousseau.com/","logo":{"@type":"ImageObject","@id":"https://sebastienrousseau.com/#logo","url":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","width":"512","height":"512","caption":"Sebastien Rousseau"},"founder":{"@id":"https://sebastienrousseau.com/#person"},"editorialPolicy":"https://sebastienrousseau.com/editorial/","correctionsPolicy":"https://sebastienrousseau.com/editorial/#corrections","ethicsPolicy":"https://sebastienrousseau.com/editorial/","diversityPolicy":"https://sebastienrousseau.com/editorial/","sameAs":["https://github.com/sebastienrousseau","https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#organization"},"author":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"es"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"es"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":1276,"headline":"Índice de Tesorería Autónoma 2026: agéntica, liquidez programable y depósitos tokenizados","description":"Un índice 2026 de preparación de tesorería autónoma: workflows de tesorería agéntica, liquidez programable, depósitos tokenizados, pagos en tiempo real y control automatizado.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/christopher-burns-Kj2SaNHG-hg.webp","width":"100vw","height":"100vh","caption":"Fotografía arquitectónica abstracta como imagen clave del Índice de Tesorería Autónoma 2026: workflows de tesorería agéntica, liquidez programable, depósitos tokenizados, pagos en tiempo real y control de caja automatizado"},"url":"https://sebastienrousseau.com/es/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/","datePublished":"2026-06-07T06:06:06+00:00","dateModified":"2026-06-07","inLanguage":"es","keywords":"tesorería autónoma 2026, tesorería agéntica, liquidez programable, depósitos tokenizados tesorería, tesorería en tiempo real, gestión de caja con IA","articleSection":"Finance","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/es/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"es"},"citation":[{"@type":"CreativeWork","url":"https://www.bis.org/about/bisih/topics/fmis/agora.htm"},{"@type":"CreativeWork","url":"https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/es/"},{"@type":"ListItem","position":3,"name":"Índice de Tesorería Autónoma 2026: agéntica, liquidez programable y depósitos tokenizados","item":"https://sebastienrousseau.com/es/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/"}]}]}</script>
+<script src="/main.c9d8dc8d.js" defer integrity="sha256-G3RtagQVu1xMUTaa18I4L7J+vKPyjk2ZQG182kd2kow= sha256-NzL6b2FQD17U0Taqx1C1kOArNHU82qw6DUW7wiG7Bp0=" crossorigin="anonymous"></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="Buscar">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>Buscar</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="Buscar">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="Buscar en la documentación..." autocomplete="off" aria-label="Buscar"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> cerrar</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> navegar</span><span><kbd>Intro</kbd> abrir</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" integrity="sha256-Y0txeCfdk+GUctTYMAxMbFCB2qs1cPm8JSIX3WRS9cs= sha256-5Ca5zk/7tsavsCDhg6M1m4feBn+L4YnJ7iavKawynII=" crossorigin="anonymous"></script>
+</div>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Índice de Tesorería Autónoma 2026: agéntica, liquidez programable y depósitos tokenizados","url":"https://sebastienrousseau.com/es/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/","inLanguage":"es-ES","isAccessibleForFree":true,"author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#organization"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/es/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/"},"keywords":"tesorería autónoma 2026, tesorería agéntica, liquidez programable, depósitos tokenizados tesorería, tesorería en tiempo real, gestión de caja con IA","proficiencyLevel":"Expert"}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"NewsArticle","headline":"Índice de Tesorería Autónoma 2026: agéntica, liquidez programable y depósitos tokenizados","url":"https://sebastienrousseau.com/es/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/","datePublished":"2026-06-07T06:06:06+00:00","dateModified":"2026-06-07","inLanguage":"es-ES","isAccessibleForFree":true,"author":[{"@id":"https://sebastienrousseau.com/#person"}],"publisher":{"@id":"https://sebastienrousseau.com/#organization"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/es/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/"},"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways"]},"image":["https://cloudcdn.pro/stocks/images/christopher-burns-Kj2SaNHG-hg.webp"],"articleSection":"Finance","keywords":"tesorería autónoma 2026, tesorería agéntica, liquidez programable, depósitos tokenizados tesorería, tesorería en tiempo real, gestión de caja con IA"}</script></body>
+</html>

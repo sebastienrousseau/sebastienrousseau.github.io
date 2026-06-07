@@ -1,6 +1,6 @@
 ---
 title: "Quantum-Safe Payments: Why the Industry Must Act Now"
-tags: "quantum-safe payments, post-quantum cryptography, payments, EPAA, ISO 20022, SWIFT, SEPA, DORA, quantum computing, AI, biyan kuɗi na cross-border"
+tags: "quantum-safe payments, post-quantum cryptography, payments, EPAA, ISO 20022, SWIFT, SEPA, DORA, quantum computing, AI, biyan kuɗi na cross-border, stablecoins"
 subtitle: "Shirye-shiryen quantum-safe yanke shawara ce ta yanzu game da kayayyakin more rayuwa. Ba ta gaba ba."
 description: "Kwamfutar quantum na barazana ga cryptography na tsarin biyan kuɗi. Takarda ta EPAA ta bayyana haɗarin tsarin da gaggawar hijira zuwa PQC."
 date: "Sep 01, 2025"

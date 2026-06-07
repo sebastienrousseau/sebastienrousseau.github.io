@@ -139,6 +139,7 @@ last_reviewed: "2026-05-27"
 
 
 
+
 <!-- lead-start -->
 <aside class="post-lead" aria-label="Article summary">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> On 25 May 2026, Pope Leo XIV released Magnifica Humanitas, the first papal encyclical devoted to artificial intelligence. Read objectively from inside the technology industry — not as doctrine but as one of the most coherent ethical frameworks yet articulated for the AI and quantum era — it echoes the moral anxieties that accompanied the train, the automobile, nuclear power, and the internet. This is what it means for the industry, for humanity, and why, in the end, the honest reading is one of hope.</p>
