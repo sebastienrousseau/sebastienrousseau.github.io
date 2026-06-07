@@ -1,12 +1,14 @@
 {
-  "language": "ha-NG",
-  "title": "Alien Studio: My Tech-to Art Journey in Photography",
-  "description": "Ku tare da ni a tafiyata ta sirri daga Rust, AI, da Quantum Computing zuwa sake fasalin fasaha da daukar hoto ta Alien Studio.",
-  "tags": "Technology, Art, Photography, Rust, AI, quantum computing, Personal Journey, Alien Studio, Digital Art, Innovation, ISO 20022, post-quantum cryptography",
-  "locale": "ha_NG",
-  "keywords": "tafiyar fasaha ta sirri, binciken Rust, binciken AI, Quantum Computing, haɗin fasaha da daukar hoto, Alien Studio, ƙirƙirar fasahar dijital, fasaha a cikin zane-zane, daukar hoto mai ƙirƙira, sake binciken fasaha",
-  "banner": "https://cloudcdn.pro/clients/alienstudio/v1/collections/radiance/radiance-08.webp",
-  "subtitle": "Farkon Tafiya Mai Zurfi ta Fasaha ta Zamani",
   "date": "Jan 15, 2024",
-  "banner_alt": "Wahayin faɗuwar rana, kallon nutsuwa; kyau a cikin shiru"
+  "banner_alt": "Wahayin faɗuwar rana, kallon nutsuwa; kyau a cikin shiru",
+  "reading_time": 5,
+  "subtitle": "Farkon Tafiya Mai Zurfi ta Fasaha ta Zamani",
+  "description": "Ku tare da ni a tafiyata ta sirri daga Rust, AI, da Quantum Computing zuwa sake fasalin fasaha da daukar hoto ta Alien Studio.",
+  "word_count": 1104,
+  "locale": "ha_NG",
+  "tags": "Technology, Art, Photography, Rust, AI, quantum computing, Personal Journey, Alien Studio, Digital Art, Innovation, ISO 20022, post-quantum cryptography",
+  "banner": "https://cloudcdn.pro/clients/alienstudio/v1/collections/radiance/radiance-08.webp",
+  "title": "Alien Studio: My Tech-to Art Journey in Photography",
+  "language": "ha-NG",
+  "keywords": "tafiyar fasaha ta sirri, binciken Rust, binciken AI, Quantum Computing, haɗin fasaha da daukar hoto, Alien Studio, ƙirƙirar fasahar dijital, fasaha a cikin zane-zane, daukar hoto mai ƙirƙira, sake binciken fasaha"
 }

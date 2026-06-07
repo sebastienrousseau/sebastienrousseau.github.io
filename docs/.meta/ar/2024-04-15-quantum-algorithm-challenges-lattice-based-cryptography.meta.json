@@ -1,12 +1,14 @@
 {
-  "date": "Apr 01, 2024",
+  "reading_time": 5,
   "title": "خوارزمية كمومية تتحدّى التشفير القائم على الشبكات",
-  "tags": "quantum algorithms, cryptography, lattice problems, LWE, التشفير ما بعد الكمي, cybersecurity, research, innovation, future-proofing, ISO 20022, الحوسبة الكمومية, AI",
-  "keywords": "الحوسبة الكمومية, الخوارزمية الكمومية, التشفير القائم على الشبكات, LWE, التشفير, التشفير ما بعد الكمومي, الأمن السيبراني, Yilei Chen, أبحاث التشفير, التهديدات الأمنية",
-  "banner_alt": "لافتة تُمثّل عُقَد شبكة في فضاء رقمي أزرق",
-  "subtitle": "الخوارزمية الكمومية التالية في الزمن المتعدّد الحدود ضدّ التشفير القائم على الشبكات",
-  "banner": "https://cloudcdn.pro/stocks/images/digital-constellation.webp",
-  "description": "خوارزمية كمومية جديدة في الزمن المتعدّد الحدود من Yilei Chen تستهدف التشفير القائم على الشبكات. تبعات على المعايير ما بعد الكمومية بما في ذلك CRYSTALS-Kyber.",
   "language": "ar",
-  "locale": "ar_SA"
+  "description": "خوارزمية كمومية جديدة في الزمن المتعدّد الحدود من Yilei Chen تستهدف التشفير القائم على الشبكات. تبعات على المعايير ما بعد الكمومية بما في ذلك CRYSTALS-Kyber.",
+  "banner": "https://cloudcdn.pro/stocks/images/digital-constellation.webp",
+  "subtitle": "الخوارزمية الكمومية التالية في الزمن المتعدّد الحدود ضدّ التشفير القائم على الشبكات",
+  "locale": "ar_SA",
+  "date": "Apr 01, 2024",
+  "tags": "quantum algorithms, cryptography, lattice problems, LWE, التشفير ما بعد الكمي, cybersecurity, research, innovation, future-proofing, ISO 20022, الحوسبة الكمومية, AI",
+  "banner_alt": "لافتة تُمثّل عُقَد شبكة في فضاء رقمي أزرق",
+  "keywords": "الحوسبة الكمومية, الخوارزمية الكمومية, التشفير القائم على الشبكات, LWE, التشفير, التشفير ما بعد الكمومي, الأمن السيبراني, Yilei Chen, أبحاث التشفير, التهديدات الأمنية",
+  "word_count": 1111
 }

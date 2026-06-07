@@ -1,11 +1,13 @@
 {
-  "banner_alt": "Schemat struktury BRSRV i BSTBL BlackRock",
-  "language": "pl-PL",
+  "reading_time": 1,
+  "subtitle": "Jak BlackRock obchodzi zakaz wypłaty zysków przez stablecoiny",
+  "date": "May 15, 2026",
   "description": "Stablecoiny nie mogą wypłacać zysków zgodnie z GENIUS Act. Złożenia BRSRV i BSTBL BlackRock pokazują rozwiązanie — tokenizowany fundusz rynku pieniężnego.",
   "banner": "https://cloudcdn.pro/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp",
-  "subtitle": "Jak BlackRock obchodzi zakaz wypłaty zysków przez stablecoiny",
-  "keywords": "BlackRock, BRSRV, BSTBL, GENIUS Act, stablecoin, tokenizacja, MMF, fundusz rynku pieniężnego",
   "locale": "pl_PL",
   "title": "BlackRock BRSRV/BSTBL: GENIUS Act i tokenizowany fundusz rynku pieniężnego",
-  "date": "May 15, 2026"
+  "banner_alt": "Schemat struktury BRSRV i BSTBL BlackRock",
+  "language": "pl-PL",
+  "keywords": "BlackRock, BRSRV, BSTBL, GENIUS Act, stablecoin, tokenizacja, MMF, fundusz rynku pieniężnego",
+  "word_count": 197
 }

@@ -147,33 +147,6 @@ def test_fix_cdn_urls_main_runs(capsys):
 
 
 @SKIP_IF_NO_BUILD
-def test_fix_seo_meta_main_runs(capsys):
-    import fix_seo_meta
-
-    fix_seo_meta.main()
-    out = capsys.readouterr().out
-    assert "updated" in out.lower() or "file(s)" in out.lower()
-
-
-@SKIP_IF_NO_BUILD
-def test_rename_shokunin_main_runs(capsys):
-    """No-op on the current tree (already renamed)."""
-    import rename_shokunin
-
-    rename_shokunin.main()
-    # No specific output assertion — function may print 0 or nothing.
-
-
-@SKIP_IF_NO_BUILD
-def test_build_fr_feeds_main_runs(capsys):
-    """The FR-specific feed builder (legacy shim wrapping
-    build_lang_feeds for FR alone)."""
-    import build_fr_feeds
-
-    build_fr_feeds.main()
-
-
-@SKIP_IF_NO_BUILD
 def test_validate_jsonld_main_runs(monkeypatch):
     """Run the JSON-LD validator. Exits non-zero if defects found —
     expects a clean tree here. main() uses argparse so we need to

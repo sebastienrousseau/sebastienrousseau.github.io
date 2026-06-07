@@ -42,7 +42,7 @@ schema: "FAQPage, Article"
 seo_title: "UK Acid Jazz 2026: Artists, Concerts, Albums, Revival"
 short_name: "sebastienrousseau"
 subtitle: "Acid jazz in the UK is renewing through a mix of legacy acts, Acid Jazz Records releases, jazz-funk festivals, soul-jazz audiences, Hammond-driven live shows, and younger UK jazz musicians carrying groove back into the centre of the scene."
-tags: "acid jazz, UK jazz, Acid Jazz Records, Brand New Heavies, Galliano, James Taylor Quartet, Ronnie Scott’s, Bangs and Talbot, Chris Bangs, Mick Talbot, Mostly Jazz Funk Soul Festival, Cymande, Soul II Soul, Jordan Rakei, jazz funk, soul jazz, ISO 20022, post-quantum cryptography, AI"
+tags: "acid jazz, UK jazz, Acid Jazz Records, Brand New Heavies, Galliano, James Taylor Quartet, Ronnie Scott’s, Bangs and Talbot, Chris Bangs, Mick Talbot, Mostly Jazz Funk Soul Festival, Cymande, Soul II Soul, Jordan Rakei, jazz funk, soul jazz, ISO 20022, post-quantum cryptography, AI, DORA, tokenised deposits, platform engineering, sovereign cloud, cloud native banking, cross-border payments, stablecoins"
 theme-color: "0, 83, 191"
 title: "The Renewal of Acid Jazz in the UK: 2026 Artists, Concerts, Albums, and the Return of Groove-Led Live Culture"
 url: "https://sebastienrousseau.com/2026-05-22-uk-acid-jazz-renewal-artists-concerts-albums-2026"
@@ -139,6 +139,8 @@ site_software: "Static Site Generator, Rust"
 
 
 
+
+
 <!-- lead-start -->
 <aside class="post-lead" aria-label="Article summary">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> The UK acid jazz renewal in 2026 is visible in Acid Jazz Records releases, Bangs & Talbot, Brand New Heavies with Galliano, James Taylor Quartet at Ronnie Scott’s, Mostly Jazz Funk & Soul Festival, and the broader UK jazz scene’s renewed appetite for groove, soul, funk and dance-floor musicianship.</p>
@@ -149,6 +151,7 @@ site_software: "Static Site Generator, Rust"
   <li><strong>Artists and Signals to Watch.</strong> The Brand New Heavies remain a core reference point because they translated acid jazz into songs, vocals, and mainstream stagecraft.</li>
   <li><strong>2026 Listening and Live Guide.</strong> The moment is rewarding because it is not just anniversary nostalgia.</li>
 </ul>
+<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026">The 2026 Banking Infrastructure Index: Measuring Readiness for Agentic AI, Quantum-Safe Security, Cloud Native Resilience, and Wholesale Payments</a>, <a href="https://sebastienrousseau.com/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026">Digital Assets in 2026: The Infrastructure Transition Banks Cannot Delay</a>, <a href="https://sebastienrousseau.com/2026-05-16-best-cloud-infrastructure-architecture-2026">The Best Cloud Infrastructure Architecture in 2026: An AI-Native, Multi-Cloud, Quantum-Aware Blueprint for Financial Services</a>.</p>
 </aside>
 <!-- lead-end -->
 
@@ -288,5 +291,13 @@ The connection is groove, not strict genre labelling. Festivals such as Mostly J
 
 <!-- enrich-start -->
 <aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
-<p class="post-reviewed">Last reviewed <time datetime="2026-06-06">2026-06-06</time>.</p>
+<p class="post-reviewed">Last reviewed <time datetime="2026-06-07">2026-06-07</time>.</p>
+<aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Related reading</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026" class="related-media" aria-label="The 2026 Banking Infrastructure Index: Measuring Readiness for Agentic AI, Quantum-Safe Security, Cloud Native Resilience, and Wholesale Payments" tabindex="-1"><img alt="An editorial aerial composition by Miguel Sousa suggesting interlocking systems — the visual register chosen for a board-level dashboard view of the 2026 Banking Infrastructure Index" src="https://cloudcdn.pro/stocks/images/miguel-sousa-ejIF-pJhYkM.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026">The 2026 Banking Infrastructure Index: Measuring Readiness for Agentic AI, Quantum-Safe Security, Cloud Native Resilience, and Wholesale Payments</a></h3><p><time datetime="2026-06-02">2026-06-02</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026" class="related-media" aria-label="Digital Assets in 2026: The Infrastructure Transition Banks Cannot Delay" tabindex="-1"><img alt="Digital asset infrastructure diagram showing tokenised real-world assets, stablecoins, tokenised deposits, custody, settlement, collateral mobility, and bank platform layers" src="https://cloudcdn.pro/stocks/images/corporate-finance.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026">Digital Assets in 2026: The Infrastructure Transition Banks Cannot Delay</a></h3><p><time datetime="2026-05-28">2026-05-28</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-16-best-cloud-infrastructure-architecture-2026" class="related-media" aria-label="The Best Cloud Infrastructure Architecture in 2026: An AI-Native, Multi-Cloud, Quantum-Aware Blueprint for Financial Services" tabindex="-1"><img alt="Six-pillar cloud architecture diagram for 2026 — AI-native, multi-cloud, serverless, edge, DevSecOps, and sustainable design, with CloudCDN edge research overlay" src="https://cloudcdn.pro/stock/images/cloud-architecture-2026-banner.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-16-best-cloud-infrastructure-architecture-2026">The Best Cloud Infrastructure Architecture in 2026: An AI-Native, Multi-Cloud, Quantum-Aware Blueprint for Financial Services</a></h3><p><time datetime="2026-05-16">2026-05-16</time></p></footer></article>
+</div>
+</aside>
 <!-- enrich-end -->

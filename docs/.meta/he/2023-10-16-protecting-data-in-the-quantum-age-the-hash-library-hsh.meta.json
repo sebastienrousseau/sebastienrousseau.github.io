@@ -1,12 +1,14 @@
 {
   "subtitle": "HSH: مكتبة هاش مقاومة للحوسبة الكمية لعصر ما بعد الكم في المصادقة.",
-  "banner_alt": "رسم توضيحي إبداعي حول موضوع الحوسبة الكمية",
-  "language": "he-IL",
-  "banner": "https://cloudcdn.pro/stocks/images/galina-nelyubova-7ej8VWfwFsg.webp",
-  "tags": "קריפטוגרפיה פוסט-קוונטית, hash library, HSH, password hashing, key derivation, Argon2i, Bcrypt, Scrypt, מחשוב קוונטי, ISO 20022, AI, Rust, open source",
-  "locale": "he_IL",
-  "keywords": "التشفير المقاوم للكم، التشفير ما بعد الكمي، مكتبة الهاش، HSH، تجزئة كلمات المرور، اشتقاق المفاتيح، Argon2i، Bcrypt، Scrypt، الحوسبة الكمية",
-  "description": "تستخدم HSH أوليات تشفيرية مقاومة للحوسبة الكمية لحماية بياناتكم، وضمان أمنها حتى في مواجهة التقدمات المستقبلية للحوسبة الكمية.",
   "date": "Oct 16, 2023",
-  "title": "حماية البيانات في عصر الكم: مكتبة الهاش (HSH)"
+  "title": "حماية البيانات في عصر الكم: مكتبة الهاش (HSH)",
+  "language": "he-IL",
+  "tags": "קריפטוגרפיה פוסט-קוונטית, hash library, HSH, password hashing, key derivation, Argon2i, Bcrypt, Scrypt, מחשוב קוונטי, ISO 20022, AI, Rust, open source",
+  "description": "تستخدم HSH أوليات تشفيرية مقاومة للحوسبة الكمية لحماية بياناتكم، وضمان أمنها حتى في مواجهة التقدمات المستقبلية للحوسبة الكمية.",
+  "keywords": "التشفير المقاوم للكم، التشفير ما بعد الكمي، مكتبة الهاش، HSH، تجزئة كلمات المرور، اشتقاق المفاتيح، Argon2i، Bcrypt، Scrypt، الحوسبة الكمية",
+  "word_count": 1040,
+  "reading_time": 5,
+  "locale": "he_IL",
+  "banner": "https://cloudcdn.pro/stocks/images/galina-nelyubova-7ej8VWfwFsg.webp",
+  "banner_alt": "رسم توضيحي إبداعي حول موضوع الحوسبة الكمية"
 }

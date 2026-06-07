@@ -1,11 +1,13 @@
 {
-  "description": "HSH se apoya en primitivas criptográficas resistentes a lo cuántico para proteger sus datos frente a los avances futuros de la computación cuántica.",
+  "reading_time": 6,
   "locale": "cs_CZ",
-  "keywords": "criptografía resistente a lo cuántico, biblioteca Hash, HSH, Rust, postcuántica, PQC, KDF, Argon2i, BScrypt, Scrypt, servicios financieros, seguridad, NIST",
-  "banner_alt": "Ilustración creativa sobre el tema de la computación cuántica",
-  "language": "cs-CZ",
-  "title": "Proteger los datos en la era cuántica: la biblioteca Hash (HSH)",
-  "subtitle": "Una biblioteca Rust resistente a lo cuántico para el hashing y la verificación criptográficos",
   "banner": "https://cloudcdn.pro/stocks/images/galina-nelyubova-7ej8VWfwFsg.webp",
-  "date": "October 16, 2023"
+  "title": "Proteger los datos en la era cuántica: la biblioteca Hash (HSH)",
+  "date": "October 16, 2023",
+  "word_count": 1357,
+  "language": "cs-CZ",
+  "description": "HSH se apoya en primitivas criptográficas resistentes a lo cuántico para proteger sus datos frente a los avances futuros de la computación cuántica.",
+  "banner_alt": "Ilustración creativa sobre el tema de la computación cuántica",
+  "subtitle": "Una biblioteca Rust resistente a lo cuántico para el hashing y la verificación criptográficos",
+  "keywords": "criptografía resistente a lo cuántico, biblioteca Hash, HSH, Rust, postcuántica, PQC, KDF, Argon2i, BScrypt, Scrypt, servicios financieros, seguridad, NIST"
 }

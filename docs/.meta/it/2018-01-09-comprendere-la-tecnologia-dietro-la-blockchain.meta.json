@@ -1,11 +1,13 @@
 {
-  "keywords": "blockchain, crittografia, hash, Merkle, consenso, Bizantino, P2P, libro mastro distribuito",
   "subtitle": "Crittografia, consenso e libri mastri distribuiti spiegati",
-  "description": "Un'analisi tecnica dei componenti della blockchain: funzioni hash, alberi di Merkle, firme digitali, consenso distribuito e l'architettura che rende possibile il libro mastro condiviso.",
-  "banner": "https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp",
-  "locale": "it_IT",
-  "banner_alt": "Laptop spento su un tavolo di legno marrone",
-  "date": "January 9, 2018",
+  "reading_time": 5,
   "language": "it-IT",
-  "title": "Comprendere la tecnologia dietro la blockchain"
+  "date": "January 9, 2018",
+  "locale": "it_IT",
+  "banner": "https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp",
+  "description": "Un'analisi tecnica dei componenti della blockchain: funzioni hash, alberi di Merkle, firme digitali, consenso distribuito e l'architettura che rende possibile il libro mastro condiviso.",
+  "keywords": "blockchain, crittografia, hash, Merkle, consenso, Bizantino, P2P, libro mastro distribuito",
+  "banner_alt": "Laptop spento su un tavolo di legno marrone",
+  "title": "Comprendere la tecnologia dietro la blockchain",
+  "word_count": 1017
 }

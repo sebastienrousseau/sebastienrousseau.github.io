@@ -1,11 +1,13 @@
 {
-  "language": "uk-UA",
-  "banner_alt": "Барвисте абстрактне цифрове мистецтво у вигляді кота",
-  "locale": "uk_UA",
-  "description": "Познайомтеся з новим багатомовним Асистентом Mistral AI. Розвинений ШІ, що розуміє та відповідає кількома мовами в одній розмові та в режимі реального часу.",
-  "date": "Mar 04, 2024",
   "title": "[UK DRAFT] Le Chat by Mistral AI: Multilingual Conversational AI",
-  "keywords": "Le Chat AI, чат-бот Mistral AI, віртуальний асистент Le Chat, розуміння мов Mistral AI, обслуговування клієнтів Le Chat AI, корпоративні рішення Mistral AI, налаштування Le Chat AI, багатомовна підтримка Mistral AI, комунікація Le Chat AI, бізнес-рішення Mistral AI",
+  "language": "uk-UA",
+  "locale": "uk_UA",
+  "banner_alt": "Барвисте абстрактне цифрове мистецтво у вигляді кота",
+  "banner": "https://cloudcdn.pro/stocks/images/abstract-digital-art-of-a-cat.webp",
   "subtitle": "Переосмислення взаємодії з користувачами різними мовами",
-  "banner": "https://cloudcdn.pro/stocks/images/abstract-digital-art-of-a-cat.webp"
+  "date": "Mar 04, 2024",
+  "reading_time": 1,
+  "description": "Познайомтеся з новим багатомовним Асистентом Mistral AI. Розвинений ШІ, що розуміє та відповідає кількома мовами в одній розмові та в режимі реального часу.",
+  "keywords": "Le Chat AI, чат-бот Mistral AI, віртуальний асистент Le Chat, розуміння мов Mistral AI, обслуговування клієнтів Le Chat AI, корпоративні рішення Mistral AI, налаштування Le Chat AI, багатомовна підтримка Mistral AI, комунікація Le Chat AI, бізнес-рішення Mistral AI",
+  "word_count": 328
 }

@@ -89,13 +89,11 @@ run scripts/seo_and_audit/validate_jsonld.py || true
 run scripts/seo_and_audit/jsonld_diff.py || true
 run scripts/seo_and_audit/audit_links.py --no-network || true
 run scripts/postbuild/fix_cdn_urls.py || true
-run scripts/postbuild/fix_seo_meta.py || true
 run scripts/generators/gen_articles.py || true
 run scripts/generators/gen_layouts.py || true
 run scripts/generators/gen_papers.py || true
 run scripts/generators/gen_projects.py || true
 run scripts/postbuild/post_enrich.py || true
-run scripts/postbuild/rename_shokunin.py || true
 run scripts/postbuild/topic_link.py || true
 
 echo "---"

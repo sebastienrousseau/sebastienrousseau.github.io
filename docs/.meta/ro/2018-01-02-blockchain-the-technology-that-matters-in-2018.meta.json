@@ -1,12 +1,14 @@
 {
-  "banner": "https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp",
-  "date": "Jan 02, 2018",
-  "title": "Blockchain explained, the technology that matters the most",
-  "language": "ro-RO",
-  "keywords": "pain001, iso 20022, automatizarea plăților, reducerea costurilor, procesarea plăților, fișiere de plată, inițierea plăților, pain message, pain message standards, pain message validation",
-  "locale": "ro_RO",
+  "word_count": 1018,
   "banner_alt": "Laptop închis pe un birou din lemn maro",
+  "date": "Jan 02, 2018",
+  "keywords": "pain001, iso 20022, automatizarea plăților, reducerea costurilor, procesarea plăților, fișiere de plată, inițierea plăților, pain message, pain message standards, pain message validation",
+  "language": "ro-RO",
   "tags": "pain001, ISO 20022, payment automation, cost reduction, payments, payment files, pain message, DORA, criptografie post-cuantică, AI, depozite tokenizate, Rust, banking cloud native, plăți transfrontaliere",
-  "description": "Povestea extraordinarei călătorii de securizare a tranzacțiilor digitale prin criptografia cu cheie privată și rețelele Peer-to-peer (P2P).",
-  "subtitle": "Blockchain, registre distribuite și tehnologia care contează cel mai mult în 2018."
+  "locale": "ro_RO",
+  "title": "Blockchain explained, the technology that matters the most",
+  "banner": "https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp",
+  "subtitle": "Blockchain, registre distribuite și tehnologia care contează cel mai mult în 2018.",
+  "reading_time": 5,
+  "description": "Povestea extraordinarei călătorii de securizare a tranzacțiilor digitale prin criptografia cu cheie privată și rețelele Peer-to-peer (P2P)."
 }

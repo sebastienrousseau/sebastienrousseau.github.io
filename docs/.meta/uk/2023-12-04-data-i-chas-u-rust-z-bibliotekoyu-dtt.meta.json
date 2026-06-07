@@ -1,11 +1,13 @@
 {
-  "title": "[UK DRAFT] Efficient Date and Time Management with DateTime (DTT)",
+  "reading_time": 1,
+  "locale": "uk_UA",
   "language": "uk-UA",
-  "banner_alt": "DateTime (DTT), ваш незамінний набір інструментів для роботи з датами та часом.",
-  "banner": "https://cloudcdn.pro/clients/dtt/v1/logos/dtt.svg",
   "subtitle": "DTT, високоточна бібліотека Rust для роботи з датами та часом.",
   "keywords": "DateTime, DTT, бібліотека Rust, розбір, валідація, маніпулювання, форматування, дати, час",
+  "title": "[UK DRAFT] Efficient Date and Time Management with DateTime (DTT)",
+  "banner_alt": "DateTime (DTT), ваш незамінний набір інструментів для роботи з датами та часом.",
   "description": "DateTime (DTT) — бібліотека Rust для розбору, валідації, маніпулювання та форматування дат і часу — висока точність, широка функціональність.",
-  "locale": "uk_UA",
+  "banner": "https://cloudcdn.pro/clients/dtt/v1/logos/dtt.svg",
+  "word_count": 361,
   "date": "Dec 04, 2023"
 }

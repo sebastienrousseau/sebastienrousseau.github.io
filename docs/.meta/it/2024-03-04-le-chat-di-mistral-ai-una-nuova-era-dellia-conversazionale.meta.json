@@ -1,11 +1,13 @@
 {
-  "subtitle": "Il chatbot dell'campione europeo dell'IA generativa",
-  "locale": "it_IT",
   "description": "Le Chat è il prodotto di IA conversazionale di Mistral AI, costruito sui modelli aperti dell'azienda francese. Posizionamento, capacità e rilevanza europea.",
-  "language": "it-IT",
+  "locale": "it_IT",
+  "subtitle": "Il chatbot dell'campione europeo dell'IA generativa",
+  "word_count": 1260,
   "keywords": "Mistral, Le Chat, IA conversazionale, Francia, Europa, sovranità, LLM",
-  "banner": "https://cloudcdn.pro/stocks/images/abstract-digitale-art-of-a-cat.webp",
   "title": "Le Chat di Mistral AI: una nuova era dell'IA conversazionale",
+  "language": "it-IT",
+  "banner": "https://cloudcdn.pro/stocks/images/abstract-digitale-art-of-a-cat.webp",
   "date": "March 04, 2024",
-  "banner_alt": "Le Chat di Mistral AI"
+  "banner_alt": "Le Chat di Mistral AI",
+  "reading_time": 6
 }

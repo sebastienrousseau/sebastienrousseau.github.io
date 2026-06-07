@@ -1,11 +1,13 @@
 {
   "title": "Static Site Generator：最快的基於 Rust 的靜態網站生成器",
-  "subtitle": "助你建立具有無限可能、無限可擴充套件性以及獨特網路存在的高影響力靜態網站",
-  "banner_alt": "白色桌子上一臺關機的膝上型電腦，左側放著一杯水，右側有鋼筆、記事本和盆栽",
+  "date": "October 9, 2023",
   "language": "zh-Hant",
-  "banner": "https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp",
-  "keywords": "Static Site Generator, 靜態網站生成器, SSG, Rust, Markdown, SEO, WCAG, ADA, PWA, RSS",
+  "subtitle": "助你建立具有無限可能、無限可擴充套件性以及獨特網路存在的高影響力靜態網站",
   "locale": "zh_TW",
-  "description": "Static Site Generator 是一款基於 Rust 的高效能靜態網站生成器，致力於 SEO、可訪問性與極速效能。",
-  "date": "October 9, 2023"
+  "banner": "https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp",
+  "reading_time": 1,
+  "word_count": 200,
+  "banner_alt": "白色桌子上一臺關機的膝上型電腦，左側放著一杯水，右側有鋼筆、記事本和盆栽",
+  "keywords": "Static Site Generator, 靜態網站生成器, SSG, Rust, Markdown, SEO, WCAG, ADA, PWA, RSS",
+  "description": "Static Site Generator 是一款基於 Rust 的高效能靜態網站生成器，致力於 SEO、可訪問性與極速效能。"
 }

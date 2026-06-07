@@ -1,6 +1,6 @@
 ---
 title: "Quantum Lattice Crypto: Bug in Chen's LWE Attack"
-tags: "পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, NIST, quantum algorithms, Lattice-Based Cryptography, LWE Problem, কোয়ান্টাম কম্পিউটিং, Cryptographic Security, Quantum Resistance, Cryptography Research, ISO 20022, AI"
+tags: "পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, NIST, quantum algorithms, Lattice-Based Cryptography, LWE Problem, কোয়ান্টাম কম্পিউটিং, Cryptographic Security, Quantum Resistance, Cryptography Research, ISO 20022, AI, Rust"
 subtitle: "পিয়ার রিভিউ চেনের যুগান্তকারী গবেষণায় ত্রুটি উন্মোচন করেছে"
 description: "ইলেই চেনের কোয়ান্টাম LWE অ্যালগরিদমে একটি বাগ ল্যাটিস-ভিত্তিক ক্রিপ্টোগ্রাফিকে সাময়িকভাবে রক্ষা করেছে। CRYSTALS-Kyber, Dilithium এবং PQC রোডম্যাপের জন্য এর অর্থ কী।"
 date: "Apr 22, 2024"

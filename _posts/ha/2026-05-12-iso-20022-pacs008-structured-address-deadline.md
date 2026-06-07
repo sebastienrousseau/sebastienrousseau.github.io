@@ -1,6 +1,6 @@
 ---
 title: "The November 2026 pacs.008 Structured-Address Deadline: A Six-Month View"
-tags: "ISO 20022, pacs.008, CBPR+, adireshi mai tsari, SWIFT, biyan kuɗi na cross-border, gwajin takunkumi, FI-to-FI credit transfer, payments, DORA, post-quantum cryptography, AI, tokenised deposits, open source"
+tags: "ISO 20022, pacs.008, CBPR+, adireshi mai tsari, SWIFT, biyan kuɗi na cross-border, gwajin takunkumi, FI-to-FI credit transfer, payments, DORA, post-quantum cryptography, AI, tokenised deposits, open source, quantum computing"
 subtitle: "Daga tsakiyar Nuwamba 2026, SWIFT CBPR+ zai ƙi adireshi na gidan waya marasa tsari a pacs.008 da saƙonnin biyan kuɗi na ƙasa da ƙasa. Kusan kashi 65% na saƙonnin ba su cika ka'ida ba, tagar gyarawa na rufewa da sauri."
 description: "Daga Nuwamba 2026, SWIFT CBPR+ yana buƙatar adireshi na gidan waya da aka tsara a cikin saƙonnin biyan kuɗi na ƙasa da ƙasa. Layin adireshi marasa tsari (AdrLine kaɗai) ba za a yarda da su ba a pacs.008; aƙalla TwnNm da Ctry ana buƙata. Har yanzu kashi 65% na saƙonnin da kashi 44% na bankunan ba su cika ka'ida ba."
 date: "May 12, 2026"

@@ -1,12 +1,14 @@
 {
-  "date": "May 17, 2026",
-  "tags": "agentic AI, spec-driven development, banks, mulkin AI, EU AI Act, DORA, COBOL modernisation, HITL, HOTL, TPRM, AIBOM, Claude Code, post-quantum cryptography, ISO 20022, quantum computing, AI, Rust, open source, platform engineering",
+  "keywords": "injiniyan agentic, spec-driven development, bankunan, sabis na kuɗi, AI governance, EU AI Act, DORA, SR 11-7, NIST AI RMF, ISO 42001, COBOL modernisation, mainframe, vibe coding, vibe hacking, autonomous agents, Claude Code, GitHub Spec Kit, AI Bill of Materials, AIBOM, human in the loop, HITL, human on the loop, HOTL, sarrafa haɗarin ɓangare na uku, TPRM, vendor risk, post-quantum cryptography, agent control plane, FCA, SM&CR, shirin aiki na makonni 12, Sebastien Rousseau",
+  "word_count": 8192,
   "banner": "https://cloudcdn.pro/stocks/images/hector-j-rivas-1FxMET2U5dU-unsplash.webp",
-  "locale": "ha_NG",
-  "description": "Agentic AI ya wuce daga gwaji zuwa samarwa a bankunan duniya. Kashi 70% na cibiyoyi suna amfani da shi; ɗaya cikin biyar ne kawai ke da ƙwararre na mulki. Abokan gaba masu cin gashin kansu suna aiki da saurin injin, gado na COBOL an rubuta shi don zato na sarrafawa-tari na 1960s, kuma EU AI Act ta Agusta 2026 tana nesa da makonni goma sha biyu.",
-  "subtitle": "Agentic AI ya wuce daga gwaji zuwa samarwa. 70% na bankunan suna amfani da shi; ɗaya cikin biyar ne kawai ke da ƙwararre na mulki. Abokan gaba suna aiki da saurin injin, gado ya rubuta don zato na sarrafawa-tari na 1960s, kuma lokacin da ya ƙare na EU AI Act na haɗari mai tsanani yana nesa da makonni goma sha biyu.",
-  "language": "ha-NG",
   "banner_alt": "Zane na gine-ginen injiniyan agentic ga bankunan — wakilan AI na spec-driven, farantin kula da mulki, substrate mai amincin quantum, da kwararan modernisation na mainframe na gado",
+  "tags": "agentic AI, spec-driven development, banks, mulkin AI, EU AI Act, DORA, COBOL modernisation, HITL, HOTL, TPRM, AIBOM, Claude Code, post-quantum cryptography, ISO 20022, quantum computing, AI, Rust, open source, platform engineering",
+  "date": "May 17, 2026",
+  "locale": "ha_NG",
   "title": "Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It",
-  "keywords": "injiniyan agentic, spec-driven development, bankunan, sabis na kuɗi, AI governance, EU AI Act, DORA, SR 11-7, NIST AI RMF, ISO 42001, COBOL modernisation, mainframe, vibe coding, vibe hacking, autonomous agents, Claude Code, GitHub Spec Kit, AI Bill of Materials, AIBOM, human in the loop, HITL, human on the loop, HOTL, sarrafa haɗarin ɓangare na uku, TPRM, vendor risk, post-quantum cryptography, agent control plane, FCA, SM&CR, shirin aiki na makonni 12, Sebastien Rousseau"
+  "description": "Agentic AI ya wuce daga gwaji zuwa samarwa a bankunan duniya. Kashi 70% na cibiyoyi suna amfani da shi; ɗaya cikin biyar ne kawai ke da ƙwararre na mulki. Abokan gaba masu cin gashin kansu suna aiki da saurin injin, gado na COBOL an rubuta shi don zato na sarrafawa-tari na 1960s, kuma EU AI Act ta Agusta 2026 tana nesa da makonni goma sha biyu.",
+  "language": "ha-NG",
+  "subtitle": "Agentic AI ya wuce daga gwaji zuwa samarwa. 70% na bankunan suna amfani da shi; ɗaya cikin biyar ne kawai ke da ƙwararre na mulki. Abokan gaba suna aiki da saurin injin, gado ya rubuta don zato na sarrafawa-tari na 1960s, kuma lokacin da ya ƙare na EU AI Act na haɗari mai tsanani yana nesa da makonni goma sha biyu.",
+  "reading_time": 40
 }

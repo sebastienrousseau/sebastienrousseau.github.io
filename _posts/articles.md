@@ -138,7 +138,7 @@ site_software: "Static Site Generator, Rust"
 <img alt="The Quantum-Safe Banking Index 2026 index diagram for banks and financial institutions in 2026" src="https://cloudcdn.pro/api/transform?url=/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Quantum Cryptography · Post-Quantum Cryptography · Pqc</span>
+<span class="newsroom-eyebrow">Quantum Cryptography · Post-Quantum Cryptography · Qkd</span>
 <h3><a href="/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html" title="The Quantum-Safe Banking Index in 2026: Post-Quantum Cryptography, QKD, Crypto-Agility, and Harvest-Now-Decrypt-Later Risk">The Quantum-Safe Banking Index in 2026: Post-Quantum Cryptography, QKD, Crypto-Agility, and Harvest-Now-Decrypt-Later Risk</a></h3>
 <p class="newsroom-meta"><time datetime="2026-06-04">June 4, 2026</time> · Sebastien Rousseau</p>
 <p class="newsroom-excerpt">An index framework for measuring quantum-safe banking readiness in 2026: cryptographic bill of materials, hybrid TLS deployment, NIST FIPS 203 / 204 / 205 migration progress, crypto-agility primitives, and harvest-now-decrypt-later exposure across long-lived confidential data. The Board-Level Quantum Scorecard defines </p>
@@ -174,7 +174,7 @@ site_software: "Static Site Generator, Rust"
 <img alt="Long-exposure photograph of intersecting light trails at a major rail interchange at night — visual key for the multi-rail bank piece: cards, A2A, RTP, FedNow, ACH, stablecoins, Open Banking APIs, ISO 20022, and the orchestration engine that routes between them" src="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Payment Orchestration · Fednow · Rtp</span>
+<span class="newsroom-eyebrow">Payments · Fednow · Rtp</span>
 <h3><a href="/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html" title="The Multi-Rail Bank in 2026: Cards, A2A, Stablecoins, RTP, FedNow, and Open Banking in One Strategy">The Multi-Rail Bank in 2026: Cards, A2A, Stablecoins, RTP, FedNow, and Open Banking in One Strategy</a></h3>
 <p class="newsroom-meta"><time datetime="2026-06-01">June 1, 2026</time> · Sebastien Rousseau</p>
 <p class="newsroom-excerpt">FedNow demands pre-funded 24/7 liquidity. ACH is cheap but T+1. USDC clears atomically but needs wallet infrastructure. The 2026 multi-rail bank routes each payment by cost, finality, and liquidity cost — driven by an orchestration engine that reads ISO 20022 pacs.008 and decides.</p>
@@ -186,7 +186,7 @@ site_software: "Static Site Generator, Rust"
 <img alt="Cryptographic key material drifting into deep blue water — symbolising harvest-now-decrypt-later capture of payment messages whose RSA and ECC envelopes will not survive a cryptanalytically relevant quantum computer" src="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Post-Quantum Cryptography · Pqc · Crypto-Agility</span>
+<span class="newsroom-eyebrow">Post-Quantum Cryptography · Crypto-Agility · Hndl</span>
 <h3><a href="/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html" title="Post-Quantum Payments Infrastructure: Why Banks May Replace Rather Than Retrofit Legacy Rails">Post-Quantum Payments Infrastructure: Why Banks May Replace Rather Than Retrofit Legacy Rails</a></h3>
 <p class="newsroom-meta"><time datetime="2026-05-31">May 31, 2026</time> · Sebastien Rousseau</p>
 <p class="newsroom-excerpt">Harvest-now-decrypt-later turns today's TLS-protected payment messages into tomorrow's decrypted exposure. ML-KEM and ML-DSA are an order of magnitude larger than the RSA and ECC keys legacy rails were sized for — retrofit triggers fragmentation, latency, and HSM exhaustion. The 2026 architectural decision is whether t</p>
@@ -330,7 +330,7 @@ site_software: "Static Site Generator, Rust"
 <img alt="Tokenised deposit banking architecture for 2026 showing commercial bank money, digital wallets, stablecoins, CBDCs, tokenised gilts, and Project Agorá settlement paths" src="https://cloudcdn.pro/stocks/images/bit-cloud-GlqbGLCPnQ4.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Tokenised Deposits · Tokenized Deposits · Deposit Tokens</span>
+<span class="newsroom-eyebrow">Tokenised Deposits · Stablecoins · Commercial Bank Money</span>
 <h3><a href="/2026-05-21-tokenised-deposits-banking-services-status-2026/index.html" title="Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money">Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money</a></h3>
 <p class="newsroom-meta"><time datetime="2026-05-21">May 21, 2026</time> · Sebastien Rousseau</p>
 <p class="newsroom-excerpt">Tokenised deposit services in 2026 are moving from research into bank pilots and early client propositions. The status is still pre-scale, but the direction is clear: commercial bank money is being adapted for programmable settlement, digital wallets…</p>
