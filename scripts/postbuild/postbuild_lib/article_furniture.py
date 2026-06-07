@@ -29,7 +29,8 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[3]))
 import _lang_registry as _lr  # type: ignore[import-not-found]
-from _fr_slugs import en_slug as _en_slug  # type: ignore[import-not-found]
+
+# _fr_slugs is deprecated
 from postbuild_lib.seo import _keywords_re  # type: ignore[unused-import]
 
 PUBLIC = Path("public")
@@ -730,13 +731,15 @@ def build_fr_title_index(pages: list[Path]) -> dict[str, str]:
     neighbouring article instead of the English H1.
     """
     out: dict[str, str] = {}
+    fr_articles_map = _lr.load_slugs("fr").get("articles", {})
+    fr_to_en = {v: k for k, v in fr_articles_map.items()}
     for p in pages:
         if p.parent.parent.name != "fr":
             continue
         slug = p.parent.name  # FR slug
         if not _DATED_SLUG_RE.match(slug):
             continue
-        en = _en_slug(slug)
+        en = fr_to_en.get(slug, slug)
         if en == slug:  # not in slug map
             continue
         html = p.read_text(encoding="utf-8", errors="ignore")

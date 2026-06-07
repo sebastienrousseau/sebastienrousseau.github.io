@@ -1,11 +1,13 @@
 {
+  "reading_time": 5,
+  "keywords": "paiements quantique-résistants, cryptographie post-quantique, SEPA, SWIFT gpi, ISO 20022, sécurité des services financiers, EPAA, harvest-now decrypt-later, agilité cryptographique, Sebastien Rousseau",
+  "banner": "https://cloudcdn.pro/stocks/images/digital-nodes.webp",
   "title": "Paiements quantique-résistants : pourquoi l'industrie doit agir maintenant",
   "subtitle": "La cryptographie post-quantique est désormais une décision d'infrastructure actuelle, et non future. Le livre blanc EPAA expose le risque structurel et le besoin urgent de migration.",
+  "language": "fr",
   "locale": "fr_FR",
-  "banner_alt": "Circuit imprimé de calcul quantique baigné de lumière bleue",
-  "banner": "https://cloudcdn.pro/stocks/images/digital-nodes.webp",
+  "word_count": 1008,
   "date": "September 01, 2025",
   "description": "Le calcul quantique menace la cryptographie des systèmes de paiement. Le livre blanc EPAA expose le risque structurel et plaide pour une migration urgente vers la cryptographie post-quantique.",
-  "keywords": "paiements quantique-résistants, cryptographie post-quantique, SEPA, SWIFT gpi, ISO 20022, sécurité des services financiers, EPAA, harvest-now decrypt-later, agilité cryptographique, Sebastien Rousseau",
-  "language": "fr"
+  "banner_alt": "Circuit imprimé de calcul quantique baigné de lumière bleue"
 }

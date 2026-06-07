@@ -1,6 +1,6 @@
 ---
 title: "OpenVoice: ريادة الابتكار في تقنية الاستنساخ الصوتي"
-tags: "OpenVoice, Voice Cloning, Synthetic Speech, open source, Cross-Lingual, Instant Cloning, Voice Control, Accessibility, Entertainment, Customer Service, ISO 20022, التشفير ما بعد الكمي, AI"
+tags: "OpenVoice, Voice Cloning, Synthetic Speech, open source, Cross-Lingual, Instant Cloning, Voice Control, Accessibility, Entertainment, Customer Service, ISO 20022, التشفير ما بعد الكمي, AI, DORA, هندسة المنصة, السحابة السيادية, البنوك السحابية الأصيلة، Kubernetes، DORA، المؤسسات المالية، OpenShift، Portworx، سيادة السحابة، المرونة التشغيلية، التعافي من الكوارث، التعايش بين الأجهزة الافتراضية والحاويات، أعباء عمل الذكاء الاصطناعي، مخاطر الطرف الثالث، الاعتماد على السحابة"
 subtitle: "أداة الاستنساخ الصوتي مفتوحة المصدر من الجيل التالي"
 description: "OpenVoice من MIT وTsinghua وMyShell: استنساخ صوتي بمستوى الإنتاج مع التحكّم في النبرة واللكنة والعاطفة — والمقايضات التي يجدر معرفتها."
 date: "Apr 01, 2024"

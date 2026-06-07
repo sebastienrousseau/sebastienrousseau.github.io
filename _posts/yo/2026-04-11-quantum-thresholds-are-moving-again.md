@@ -1,6 +1,6 @@
 ---
 title: "Quantum Thresholds Are Moving: 10,000-Qubit Shor Risk"
-tags: "quantum computing, Shor's algorithm, ìsirò ìpamọ́ lẹ́yìn quantum, RSA, elliptic curve, neutral atoms, error correction, cryptographic agility, quantum threat, payments, ISO 20022, DORA, AI"
+tags: "quantum computing, Shor's algorithm, ìsirò ìpamọ́ lẹ́yìn quantum, RSA, elliptic curve, neutral atoms, error correction, cryptographic agility, quantum threat, payments, ISO 20022, DORA, AI, ìsanwó kọjá-ààlà"
 subtitle: "Ìwádìí tuntun dábàá pé algorithmù Shor lè ṣiṣẹ́ lórí qubit 10,000 péré. Àwọn ìpadà fún cryptography ṣòro láti fojú fò."
 description: "Algorithmù Shor lè ṣiṣẹ́ lórí qubit 10,000 péré. RSA, ECC àti àkókò ìṣípò sí post-quantum cryptography ń yára yí padà. Èyí ni ìdí rẹ̀."
 date: "Apr 11, 2026"

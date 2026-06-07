@@ -67,20 +67,17 @@ def _import_fresh(modname: str):
 
 BUILDER_MODULES = (
     "build_agent_api",
-    "build_fr_feeds",
     "build_lang_feeds",
     "build_lead_magnets",
     "build_topics",
     "build_translations",
     "fix_cdn_urls",
-    "fix_seo_meta",
     "gen_articles",
     "gen_layouts",
     "gen_papers",
     "gen_projects",
     "jsonld_diff",
     "post_enrich",
-    "rename_shokunin",
     "sigstore_sign",
     "validate_jsonld",
 )

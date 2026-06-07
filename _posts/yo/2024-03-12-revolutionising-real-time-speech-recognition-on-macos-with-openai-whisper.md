@@ -1,6 +1,6 @@
 ---
 title: "Fast Real-Time Speech Recognition on macOS: OpenAI Whisper"
-tags: "OpenAI, Whisper, Metal, macOS, Speech, Real-Time, Transcription, GPU, Python, Silicon, ISO 20022, ìsirò ìpamọ́ lẹ́yìn quantum, AI, open source"
+tags: "OpenAI, Whisper, Metal, macOS, Speech, Real-Time, Transcription, GPU, Python, Silicon, ISO 20022, ìsirò ìpamọ́ lẹ́yìn quantum, AI, open source, DORA, platform engineering, sovereign cloud, cloud native banking"
 subtitle: "Ṣí agbára Ìmọ̀ Atọwọda GPU-Accelerated Speech-to-Text lórí Mac rẹ"
 description: "Ṣayẹwo bí OpenAI Whisper àti Metal Performance Shaders ṣe ń yí ìmọ̀ ọ̀rọ̀ àsọyé padà ní àkókò gidi lórí macOS, tí ń pèsè iyára àti déédéé tí kò ní ẹlẹgbẹ́."
 date: "Mar 12, 2024"

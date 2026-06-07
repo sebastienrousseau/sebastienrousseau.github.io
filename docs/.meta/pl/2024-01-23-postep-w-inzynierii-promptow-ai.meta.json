@@ -1,11 +1,13 @@
 {
-  "keywords": "prompt engineering, LLM, AI, GPT, Claude, chain-of-thought, few-shot, RAG",
-  "language": "pl-PL",
-  "date": "Jan 23, 2024",
-  "locale": "pl_PL",
-  "description": "Inżynieria promptów: techniki, wzorce i najlepsze praktyki w pracy z dużymi modelami językowymi.",
-  "banner_alt": "Wizualizacja interakcji prompt-LLM",
-  "subtitle": "Lepsze techniki dla lepszych wyników z LLM",
   "title": "Postęp w inżynierii promptów AI",
-  "banner": "https://cloudcdn.pro/stocks/images/ai-prompt-engineering-modern-office.webp"
+  "banner": "https://cloudcdn.pro/stocks/images/ai-prompt-engineering-modern-office.webp",
+  "locale": "pl_PL",
+  "subtitle": "Lepsze techniki dla lepszych wyników z LLM",
+  "keywords": "prompt engineering, LLM, AI, GPT, Claude, chain-of-thought, few-shot, RAG",
+  "description": "Inżynieria promptów: techniki, wzorce i najlepsze praktyki w pracy z dużymi modelami językowymi.",
+  "date": "Jan 23, 2024",
+  "language": "pl-PL",
+  "banner_alt": "Wizualizacja interakcji prompt-LLM",
+  "word_count": 168,
+  "reading_time": 1
 }

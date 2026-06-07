@@ -1,12 +1,14 @@
 {
-  "language": "ro-RO",
-  "subtitle": "Tokenuri ERC-20, contracte inteligente Ethereum și standardizarea activelor digitale.",
-  "date": "Jan 24, 2018",
   "description": "ERC-20 este cel mai utilizat standard de token pe blockchain-ul Ethereum, cunoscut ca un contract digital smart contract care a revoluționat activele digitale.",
+  "locale": "ro_RO",
+  "language": "ro-RO",
   "title": "ERC-20: The Ethereum Token Interface That Changed the World",
-  "tags": "Ethereum, erc20, eip, tokens, contracts, blockchain, cryptocurrencies, smart-token, Solidity, ISO 20022, criptografie post-cuantică, AI, stablecoinuri",
+  "reading_time": 6,
+  "date": "Jan 24, 2018",
+  "banner_alt": "Laptop închis pe un birou din lemn maro",
+  "subtitle": "Tokenuri ERC-20, contracte inteligente Ethereum și standardizarea activelor digitale.",
   "banner": "https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp",
   "keywords": "ethereum, erc20, eip, tokenuri, contracte, blockchain, criptomonede, smart-token, solidity",
-  "locale": "ro_RO",
-  "banner_alt": "Laptop închis pe un birou din lemn maro"
+  "tags": "Ethereum, erc20, eip, tokens, contracts, blockchain, cryptocurrencies, smart-token, Solidity, ISO 20022, criptografie post-cuantică, AI, stablecoinuri",
+  "word_count": 1276
 }

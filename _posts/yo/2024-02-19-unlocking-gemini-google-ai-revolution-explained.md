@@ -1,6 +1,6 @@
 ---
 title: "Unlocking Gemini 1.5: Google's AI Revolution Explained"
-tags: "Gemini 1.5, Google AI, AI Efficiency, AI Quality, Context Window, In-Context Learning, AI Use Cases, AI Revolution, Technology Transformation, Data Analysis, ISO 20022, ìsirò ìpamọ́ lẹ́yìn quantum, AI"
+tags: "Gemini 1.5, Google AI, AI Efficiency, AI Quality, Context Window, In-Context Learning, AI Use Cases, AI Revolution, Technology Transformation, Data Analysis, ISO 20022, ìsirò ìpamọ́ lẹ́yìn quantum, AI, DORA, tokenised deposits, platform engineering, sovereign cloud, cloud native banking, ìsanwó kọjá-ààlà, stablecoins"
 subtitle: "Iwadii Jijinlẹ sinu Ilọsiwaju AI Tuntun ti Google"
 description: "Gemini 1.5 lati ọdọ Google faagun awọn ferese ọrọ-ọrọ ju 1M ami lọ. Kini eyi ṣii fun iṣuna-owo ti a fikun pẹlu imularada ati awọn ipadabọ ti o tọ si mimọ."
 date: "Feb 19, 2024"

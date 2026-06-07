@@ -1,6 +1,6 @@
 ---
 title: "Google Gemma AI: Transforming Open-Source AI Development"
-tags: "Gemma, Google, AI, open source, Technical, Enterprise, Integration, macOS, Data, Ethics, ISO 20022, ìsirò ìpamọ́ lẹ́yìn quantum"
+tags: "Gemma, Google, AI, open source, Technical, Enterprise, Integration, macOS, Data, Ethics, ISO 20022, ìsirò ìpamọ́ lẹ́yìn quantum, Rust"
 subtitle: "Ìwò Jínjìn sí Agbára, Àwọn Ìdásí Open-Source, àti Ohun tó Ń Bọ̀ L'ọjọ́ Iwájú"
 description: "Ṣàwárí Àwòṣe AI Gemma ti Google: iṣẹ́ open-source tó ń pèsè àwọn ojútùú AI tó tọ̀nà fún lílo ara ẹni àti ti ilé-iṣẹ́."
 date: "Feb 26, 2024"

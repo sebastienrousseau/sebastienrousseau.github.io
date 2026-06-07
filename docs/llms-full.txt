@@ -698,6 +698,8 @@ _Jun 2, 2026_  ·  [https://sebastienrousseau.com/2026-06-02-banking-infrastruct
 
 
 
+
+
 <!-- lead-start -->
 
 <!-- lead-end -->
@@ -1756,6 +1758,8 @@ _May 28, 2026_  ·  [https://sebastienrousseau.com/2026-05-28-digital-assets-tok
 
 
 
+
+
 <!-- lead-start -->
 
 <!-- lead-end -->
@@ -2004,6 +2008,8 @@ _May 27, 2026_  ·  [https://sebastienrousseau.com/2026-05-27-ai-operating-syste
 
 
 
+
+
 <!-- lead-start -->
 
 <!-- lead-end -->
@@ -2149,6 +2155,8 @@ _May 26, 2026_  ·  [https://sebastienrousseau.com/2026-05-26-stablecoins-vs-tok
 
 
 
+
+
 <!-- lead-start -->
 
 <!-- lead-end -->
@@ -2259,6 +2267,8 @@ Success should be measured by unit economics, resilience evidence, data quality,
 _May 26, 2026_  ·  [https://sebastienrousseau.com/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/](https://sebastienrousseau.com/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/)
 
 # Magnifica Humanitas: An AI-Industry Reading of the First Papal Encyclical on Artificial Intelligence
+
+
 
 
 
@@ -2479,6 +2489,8 @@ _May 25, 2026_  ·  [https://sebastienrousseau.com/2026-05-25-programmable-liqui
 
 
 
+
+
 <!-- lead-start -->
 
 <!-- lead-end -->
@@ -2624,6 +2636,8 @@ _May 24, 2026_  ·  [https://sebastienrousseau.com/2026-05-24-uk-payments-forwar
 
 
 
+
+
 <!-- lead-start -->
 
 <!-- lead-end -->
@@ -2734,6 +2748,8 @@ Success should be measured by unit economics, resilience evidence, data quality,
 _May 23, 2026_  ·  [https://sebastienrousseau.com/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/](https://sebastienrousseau.com/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/)
 
 # Agentic Payments in Banking: Consent, Liability, and the New Payment UX in 2026
+
+
 
 
 
@@ -2919,6 +2935,8 @@ _May 22, 2026_  ·  [https://sebastienrousseau.com/2026-05-22-uk-acid-jazz-renew
 
 
 
+
+
 <!-- lead-start -->
 
 <!-- lead-end -->
@@ -3060,6 +3078,8 @@ The connection is groove, not strict genre labelling. Festivals such as Mostly J
 _May 21, 2026_  ·  [https://sebastienrousseau.com/2026-05-21-tokenised-deposits-banking-services-status-2026/](https://sebastienrousseau.com/2026-05-21-tokenised-deposits-banking-services-status-2026/)
 
 # Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money
+
+
 
 
 
@@ -3388,6 +3408,8 @@ _May 20, 2026_  ·  [https://sebastienrousseau.com/2026-05-20-cloud-native-banki
 
 
 
+
+
 <!-- lead-start -->
 
 <!-- lead-end -->
@@ -3527,6 +3549,8 @@ The biggest mistake is adopting containers without platform controls. If Kuberne
 _May 19, 2026_  ·  [https://sebastienrousseau.com/2026-05-19-global-wholesale-payments-economics-2026/](https://sebastienrousseau.com/2026-05-19-global-wholesale-payments-economics-2026/)
 
 # Global Wholesale Payments in 2026: ISO 20022, RTGS Renewal, and the Economics of Interoperability
+
+
 
 
 
@@ -3727,6 +3751,8 @@ No. Stablecoins may influence cross-border payment design, but wholesale payment
 _May 18, 2026_  ·  [https://sebastienrousseau.com/2026-05-18-quantum-cryptography-standards-developments-2026/](https://sebastienrousseau.com/2026-05-18-quantum-cryptography-standards-developments-2026/)
 
 # The Quantum Cryptography Reset in 2026: PQC Standards, QKD Assurance, and the Migration Work Banks Cannot Defer
+
+
 
 
 
@@ -4207,6 +4233,8 @@ Three things, sequenced. First, produce the AI Bill of Materials — the complet
 _May 16, 2026_  ·  [https://sebastienrousseau.com/2026-05-16-best-cloud-infrastructure-architecture-2026/](https://sebastienrousseau.com/2026-05-16-best-cloud-infrastructure-architecture-2026/)
 
 # The Best Cloud Infrastructure Architecture in 2026: An AI-Native, Multi-Cloud, Quantum-Aware Blueprint for Financial Services
+
+
 
 
 
@@ -8630,13 +8658,9 @@ Developers requiring mathematical or cryptographic constants in Rust should look
 
 _Oct 26, 2023_  ·  [https://sebastienrousseau.com/2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries/](https://sebastienrousseau.com/2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries/)
 
-> **Executive Summary / Key Takeaways**
->
-> - **[LibMake ⧉][00]** is an open-source Rust CLI tool installed via `cargo install libmake` that generates a complete library scaffold from CLI flags or a config file (TOML, YAML, JSON, or CSV), with output covering Cargo.toml, source, tests, benchmarks, documentation, and CI in one invocation.
-> - **The generated project follows Rust API Guidelines** conventions: module-level and item-level doc comments in src/lib.rs, `#![deny(missing_docs)]` in the crate root, and a README wired to the crate documentation via `#![doc = include_str!("../README.md")]`.
-> - **Config-file mode** (`--config libmake.toml`) allows teams to commit a single file that fully specifies their library template — author, licence, categories, Rust edition, MSRV, repository URL — making scaffold generation repeatable and diffable in Git.
-> - **The GitHub Actions workflow** generated by LibMake tests on stable, beta, and nightly Rust toolchains, enforces `clippy -D warnings`, checks `rustfmt`, and runs `cargo-audit` for known CVEs in the dependency tree.
-> - **Tera templates** power the code generation: LibMake ships with a default template set but accepts a custom template directory via `--template`, so non-standard project layouts and additional generated files are supported without forking the tool.
+<!-- lead-start -->
+
+<!-- lead-end -->
 
 [**LibMake ⧉**][00] is an open-source Rust CLI and library that generates a complete library project scaffold from a single invocation. It targets the gap between `cargo new --lib` (which creates only a minimal Cargo.toml and src/lib.rs) and a production-ready library setup (which requires manually adding doc comments, CI, test harnesses, benchmark structure, CONTRIBUTING.md, and licence files).
 
@@ -8674,41 +8698,6 @@ For team use, all CLI flags can be expressed in a TOML config file:
 
 ```toml
 # libmake.toml
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- lead-start -->
-
-<!-- lead-end -->
 
 author      = "Jane Smith"
 email       = "jane@example.com"

@@ -1,6 +1,6 @@
 ---
 title: "The November 2026 pacs.008 Structured-Address Deadline: A Six-Month View"
-tags: "ISO 20022, pacs.008, CBPR+, àdírẹ́ẹ̀sì tó ní ìṣètò, SWIFT, ìsanwó kọjá-ààlà, àyẹ̀wò ìfòfindè, FI-to-FI credit transfer, payments, DORA, ìsirò ìpamọ́ lẹ́yìn quantum, AI, tokenised deposits, open source"
+tags: "ISO 20022, pacs.008, CBPR+, àdírẹ́ẹ̀sì tó ní ìṣètò, SWIFT, ìsanwó kọjá-ààlà, àyẹ̀wò ìfòfindè, FI-to-FI credit transfer, payments, DORA, ìsirò ìpamọ́ lẹ́yìn quantum, AI, tokenised deposits, open source, quantum computing"
 subtitle: "Láti àárọ̀ November 2026, SWIFT CBPR+ yóò kọ àwọn àdírẹ́sì tí kò ní ìtọ́sọ́nà nínú pacs.008 àti àwọn ìfiranṣẹ ìsanwó aáárọ̀-òkun. Ó fẹ́rẹ̀ẹ́ jẹ́ 65% ìfiranṣẹ ṣì kò bára mu — àkókò fún àtúnṣe ń parí kánkán."
 description: "Láti November 2026, SWIFT CBPR+ nílò àwọn àdírẹ́sì tí a ṣètò nínú pacs.008. AdrLine nìkan kò ní tún gbà fún àwọn àyè pàtàkì; TwnNm àti Ctry jẹ́ dandan. 65% ìfiranṣẹ ṣì kò bára mu."
 date: "May 12, 2026"

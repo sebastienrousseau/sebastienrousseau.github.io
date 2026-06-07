@@ -1,6 +1,6 @@
 ---
 title: "فك شفرة Gemini 1.5: ثورة Google في الذكاء الاصطناعي مشروحةً"
-tags: "Gemini 1.5, Google AI, AI Efficiency, AI Quality, Context Window, In-Context Learning, AI Use Cases, AI Revolution, Technology Transformation, Data Analysis, ISO 20022, קריפטוגרפיה פוסט-קוונטית, AI"
+tags: "Gemini 1.5, Google AI, AI Efficiency, AI Quality, Context Window, In-Context Learning, AI Use Cases, AI Revolution, Technology Transformation, Data Analysis, ISO 20022, קריפטוגרפיה פוסט-קוונטית, AI, DORA, פיקדונות מתואדים, הנדסת פלטפורמה, ענן ריבוני, בנקאות ענן-נייטיב, תשלומים חוצי גבולות, סטייבלקוינים"
 subtitle: "غوص عميق في آخر اختراقات Google في الذكاء الاصطناعي"
 description: "Gemini 1.5 من Google يدفع نافذة السياق إلى ما يتجاوز المليون رمز. ما الذي يفتحه ذلك للتمويل المُعزَّز بالاسترجاع، والمقايضات التي يجدر الإلمام بها."
 date: "Feb 19, 2024"

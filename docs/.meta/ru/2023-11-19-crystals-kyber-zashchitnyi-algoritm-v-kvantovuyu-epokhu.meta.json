@@ -1,11 +1,13 @@
 {
+  "title": "CRYSTALS-Kyber: защитный алгоритм в квантовую эпоху",
+  "language": "ru-RU",
   "description": "Как CRYSTALS-Kyber — выбранный NIST квантово-устойчивый механизм инкапсуляции ключей — переопределяет криптографию для квантовой эпохи.",
   "date": "November 19, 2023",
-  "banner": "https://cloudcdn.pro/stocks/images/crystals-kyber-banner.webp",
+  "reading_time": 1,
+  "word_count": 245,
   "banner_alt": "Постквантовая криптография: визуализация решёток",
-  "language": "ru-RU",
-  "title": "CRYSTALS-Kyber: защитный алгоритм в квантовую эпоху",
-  "locale": "ru_RU",
   "keywords": "CRYSTALS-Kyber, постквантовая криптография, NIST, FIPS 203, ML-KEM, инкапсуляция ключей, решётки, безопасность",
+  "banner": "https://cloudcdn.pro/stocks/images/crystals-kyber-banner.webp",
+  "locale": "ru_RU",
   "subtitle": "Стандарт NIST для постквантовой инкапсуляции ключей"
 }
