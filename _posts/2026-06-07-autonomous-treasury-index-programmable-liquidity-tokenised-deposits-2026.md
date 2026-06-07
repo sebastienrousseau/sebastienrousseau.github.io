@@ -3,10 +3,10 @@
 # Front Matter (YAML)
 
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
-banner_alt: "The Autonomous Treasury Index 2026 index diagram for banks and financial institutions in 2026"
-banner_height: "571"
-banner_width: "1425"
-banner: "https://cloudcdn.pro/stock/images/autonomous-treasury-index-2026-banner.webp"
+banner_alt: "Abstract architectural photograph used as the visual key for the 2026 Autonomous Treasury Index — measuring agentic treasury workflows, programmable liquidity, tokenised deposits, real-time payments, and automated cash control"
+banner_height: "1597"
+banner_width: "2584"
+banner: "https://cloudcdn.pro/stocks/images/christopher-burns-Kj2SaNHG-hg.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
@@ -41,7 +41,8 @@ schema: "FAQPage, Article"
 seo_title: "The Autonomous Treasury Index 2026"
 short_name: "sebastienrousseau"
 subtitle: "Treasury is becoming a real-time operating system where agents, payment rails, tokenised deposits, liquidity forecasts, and controls must work together."
-tags: "treasury, agentic AI, programmable liquidity, tokenised deposits, cash management, wholesale payments, ISO 20022, DORA, post-quantum cryptography, AI, stablecoins, cloud native banking"
+tags: "treasury, agentic AI, programmable liquidity, tokenised deposits, cash management, wholesale payments, ISO 20022, DORA, post-quantum cryptography, AI, stablecoins, cloud native banking, cross-border payments"
+excerpt: "A 2026 autonomous treasury readiness index — measuring agentic treasury workflows, programmable liquidity coverage, tokenised deposit integration, real-time payment orchestration, and automated cash control as one operating-model fabric."
 theme-color: "0, 83, 191"
 title: "The Autonomous Treasury Index in 2026: Agentic Treasury, Programmable Liquidity, Tokenised Deposits, and Real-Time Cash Control"
 url: "https://sebastienrousseau.com/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026"
@@ -101,6 +102,24 @@ site_software: "Static Site Generator, Rust"
 ---
 
 # The Autonomous Treasury Index in 2026: Agentic Treasury, Programmable Liquidity, Tokenised Deposits, and Real-Time Cash Control
+
+
+
+
+
+<!-- lead-start -->
+<aside class="post-lead" aria-label="Article summary">
+<p class="post-lead-tldr"><strong>TL;DR.</strong> A 2026 index for autonomous treasury readiness, covering agentic treasury workflows, programmable liquidity, tokenised deposits, real-time payments, and automated cash control.</p>
+<p class="post-lead-heading"><strong>Key takeaways</strong></p>
+<ul class="post-lead-takeaways">
+  <li><strong>Why 2026 Is the Year This Index Matters.</strong> The Stanford AI Index is useful because it treats a fast-moving technology field as something that can be measured: research output, technical performance, responsible deployment, economics, sector adoption, policy,…</li>
+  <li><strong>Current Signals to Track.</strong> A treasury agent should not be designed as a general-purpose assistant.</li>
+  <li><strong>The Treasury Agent Mandate.</strong> A treasury agent should not be designed as a general-purpose assistant.</li>
+  <li><strong>Programmable Liquidity.</strong> Programmable liquidity is the ability to move value under conditions: if a threshold is breached, if collateral is eligible, if a counterparty passes screening, if settlement finality is available, or if an intraday…</li>
+</ul>
+<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026">The 2026 Banking Infrastructure Index: Measuring Readiness for Agentic AI, Quantum-Safe Security, Cloud Native Resilience, and Wholesale Payments</a>, <a href="https://sebastienrousseau.com/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026">The Wholesale Payments Index in 2026: ISO 20022, Tokenised Deposits, Real-Time Rails, and Cross-Border Settlement</a>, <a href="https://sebastienrousseau.com/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026">AI as the Operating System of Payments: Fraud, Routing, Resilience, and Compliance in 2026</a>.</p>
+</aside>
+<!-- lead-end -->
 
 Autonomous treasury is the natural meeting point for agentic AI, wholesale payments, tokenised deposits, and real-time liquidity. In 2026, the best treasury architectures will not merely forecast cash; they will recommend, explain, and eventually execute bounded liquidity actions across accounts, currencies, rails, and settlement assets.
 
@@ -202,6 +221,14 @@ Build real-time visibility and data quality before granting autonomy. Agents can
 - Bank of England, (2026). [Shaping the UK's digital financial future ⧉](https://www.bankofengland.co.uk/speech/2025/january/sasha-mills-speech-at-the-tokenisation-summit "Shaping the UK's digital financial future").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, payments infrastructure, tokenised money, ISO 20022, post-quantum security, cloud-native financial services, and regulated digital markets.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Last reviewed <time datetime="2026-06-07">2026-06-07</time>.</p>
+<aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Related reading</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026" class="related-media" aria-label="The 2026 Banking Infrastructure Index: Measuring Readiness for Agentic AI, Quantum-Safe Security, Cloud Native Resilience, and Wholesale Payments" tabindex="-1"><img alt="An editorial aerial composition by Miguel Sousa suggesting interlocking systems — the visual register chosen for a board-level dashboard view of the 2026 Banking Infrastructure Index" src="https://cloudcdn.pro/stocks/images/miguel-sousa-ejIF-pJhYkM.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026">The 2026 Banking Infrastructure Index: Measuring Readiness for Agentic AI, Quantum-Safe Security, Cloud Native Resilience, and Wholesale Payments</a></h3><p><time datetime="2026-06-02">2026-06-02</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026" class="related-media" aria-label="The Wholesale Payments Index in 2026: ISO 20022, Tokenised Deposits, Real-Time Rails, and Cross-Border Settlement" tabindex="-1"><img alt="Visual register for the wholesale-payments shift in 2026 — messaging migration giving way to programmable settlement across ISO 20022, tokenised deposits, real-time rails, and cross-border atomicity." src="https://cloudcdn.pro/stocks/images/miquel-parera-NsXLehhHx1Q.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026">The Wholesale Payments Index in 2026: ISO 20022, Tokenised Deposits, Real-Time Rails, and Cross-Border Settlement</a></h3><p><time datetime="2026-06-06">2026-06-06</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026" class="related-media" aria-label="AI as the Operating System of Payments: Fraud, Routing, Resilience, and Compliance in 2026" tabindex="-1"><img alt="AI payments operating system diagram showing fraud scoring, multi-rail routing, liquidity forecasting, ISO 20022 data, compliance screening, and exception repair" src="https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026">AI as the Operating System of Payments: Fraud, Routing, Resilience, and Compliance in 2026</a></h3><p><time datetime="2026-05-27">2026-05-27</time></p></footer></article>
+</div>
+</aside>
 <!-- enrich-end -->

@@ -1,15 +1,15 @@
 {
-  "word_count": 1095,
-  "date": "Dec 11, 2023",
-  "title": "Quantum Key Distribution Revolutionising Security in Banking",
-  "reading_time": 5,
-  "language": "yo-NG",
-  "locale": "yo_NG",
-  "keywords": "Ìpínkiri Kọ́kọ́rọ́ Kuántọ̀m (QKD), Ààbò Kuántọ̀m, Banking, Ẹ̀ka Ìṣúná, Ìṣúná Dígítà, Ààbò Ìkànnì, Ìṣiro Kuántọ̀m, HSBC, Quantum Protection Trial, Àwọn Ìdúnàádúrà Ìṣúná",
-  "banner_alt": "HSBC Láti Ọ̀dọ̀ Àwọn Dọ́ọ̀kù",
-  "banner": "https://cloudcdn.pro/stocks/images/hsbc-from-the-docks.webp",
-  "description": "Bí àwọn kọ̀mpútà kuántọ̀m ṣe ń halẹ̀ mọ́ àwọn ọ̀nà ìfipamọ́ àtọwọdọwọ, Ìpínkiri Kọ́kọ́rọ́ Kuántọ̀m (QKD) jẹ́ ìyípadà àgbàyanu, tí ń pèsè ààbò àìlẹ́gbẹ́.",
-  "tags": "quantum, key, distribution, cryptography, cybersecurity, finance, banking, digital, innovation, blockchain, quantum computing, hsbc, trading, data, protection, future, ISO 20022, DORA, ìsirò ìpamọ́ lẹ́yìn quantum, AI",
   "subtitle": "Ìpínkiri Kọ́kọ́rọ́ Kuántọ̀m (QKD) fún ààbò ìpele ìṣúná nínú ẹ̀ka ìfowópamọ́.",
-  "excerpt": "As quantum computers pose a threat to traditional encryption methods, Quantum Key Distribution (QKD) emerges as a game-changer, offering unparalleled security."
+  "reading_time": 5,
+  "banner_alt": "HSBC Láti Ọ̀dọ̀ Àwọn Dọ́ọ̀kù",
+  "title": "Quantum Key Distribution Revolutionising Security in Banking",
+  "keywords": "Ìpínkiri Kọ́kọ́rọ́ Kuántọ̀m (QKD), Ààbò Kuántọ̀m, Banking, Ẹ̀ka Ìṣúná, Ìṣúná Dígítà, Ààbò Ìkànnì, Ìṣiro Kuántọ̀m, HSBC, Quantum Protection Trial, Àwọn Ìdúnàádúrà Ìṣúná",
+  "description": "Bí àwọn kọ̀mpútà kuántọ̀m ṣe ń halẹ̀ mọ́ àwọn ọ̀nà ìfipamọ́ àtọwọdọwọ, Ìpínkiri Kọ́kọ́rọ́ Kuántọ̀m (QKD) jẹ́ ìyípadà àgbàyanu, tí ń pèsè ààbò àìlẹ́gbẹ́.",
+  "language": "yo-NG",
+  "excerpt": "As quantum computers pose a threat to traditional encryption methods, Quantum Key Distribution (QKD) emerges as a game-changer, offering unparalleled security.",
+  "date": "Dec 11, 2023",
+  "banner": "https://cloudcdn.pro/stocks/images/hsbc-from-the-docks.webp",
+  "tags": "quantum, key, distribution, cryptography, cybersecurity, finance, banking, digital, innovation, blockchain, quantum computing, hsbc, trading, data, protection, future, ISO 20022, DORA, ìsirò ìpamọ́ lẹ́yìn quantum, AI",
+  "locale": "yo_NG",
+  "word_count": 1095
 }

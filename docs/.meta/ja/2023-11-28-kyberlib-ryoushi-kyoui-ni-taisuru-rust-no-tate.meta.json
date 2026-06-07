@@ -1,14 +1,14 @@
 {
   "keywords": "kyberlib, CRYSTALS-Kyber, Rust, ML-KEM, FIPS 203, 鍵カプセル化, ポスト量子暗号, 量子耐性",
-  "word_count": 110,
-  "subtitle": "Rust 製の堅牢な CRYSTALS-Kyber 実装",
-  "banner_alt": "保護を表すバイナリコードと盾",
-  "banner": "https://cloudcdn.pro/stocks/images/markus-spiske-Skf7HxARcoc-unsplash.webp",
   "description": "kyberlib は NIST FIPS 203 標準 CRYSTALS-Kyber の Rust 実装で、汎用ポスト量子鍵カプセル化のためのものです。",
-  "last_reviewed": "2026-05-11",
   "language": "ja-JP",
-  "locale": "ja_JP",
+  "banner": "https://cloudcdn.pro/stocks/images/markus-spiske-Skf7HxARcoc-unsplash.webp",
+  "subtitle": "Rust 製の堅牢な CRYSTALS-Kyber 実装",
   "date": "November 28, 2023",
+  "locale": "ja_JP",
+  "banner_alt": "保護を表すバイナリコードと盾",
+  "reading_time": 1,
+  "last_reviewed": "2026-05-11",
   "title": "kyberlib:量子脅威に対する Rust の盾",
-  "reading_time": 1
+  "word_count": 110
 }

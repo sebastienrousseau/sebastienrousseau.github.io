@@ -1,6 +1,6 @@
 ---
 title: "Static Site Generator: أسرع مولّد للمواقع الساكنة قائمٌ على Rust"
-tags: "pain001, ISO 20022, payment automation, cost reduction, payments, payment files, pain message, DORA, التشفير ما بعد الكمي, AI, الودائع المرمَّزة, Rust, البنوك السحابية الأصيلة، Kubernetes، DORA، المؤسسات المالية، OpenShift، Portworx، سيادة السحابة، المرونة التشغيلية، التعافي من الكوارث، التعايش بين الأجهزة الافتراضية والحاويات، أعباء عمل الذكاء الاصطناعي، مخاطر الطرف الثالث، الاعتماد على السحابة, المدفوعات عبر الحدود"
+tags: "pain001, ISO 20022, payment automation, cost reduction, payments, payment files, pain message, DORA, التشفير ما بعد الكمي, AI, الودائع المرمَّزة, Rust, البنوك السحابية الأصيلة، Kubernetes، DORA، المؤسسات المالية، OpenShift، Portworx، سيادة السحابة، المرونة التشغيلية، التعافي من الكوارث، التعايش بين الأجهزة الافتراضية والحاويات، أعباء عمل الذكاء الاصطناعي، مخاطر الطرف الثالث، الاعتماد على السحابة, المدفوعات عبر الحدود, stablecoins"
 subtitle: "مولّدُ SSG فائق السرعة، يَسِير الوصول ومُحسَّن لمحرّكات البحث، مكتوبٌ بلغة Rust"
 description: "أنشئ مواقع ساكنة عالية الأثر، قابلة للتوسّع بلا حدود وتحت سيطرتك الكاملة، بفضل Static Site Generator — مولّد SSG فائق السرعة مكتوب بلغة Rust."
 date: "October 9, 2023"

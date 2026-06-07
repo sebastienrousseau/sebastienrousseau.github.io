@@ -2,6 +2,342 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://sebastienrousseau.com/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Sebastien Rousseau — English edition</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-06-07T06:06:06+00:00</news:publication_date>
+      <news:title>The Autonomous Treasury Index in 2026: Agentic Treasury, Programmable…</news:title>
+      <news:keywords>autonomous treasury 2026, agentic treasury, programmable liquidity, tokenised deposits treasury, real time treasury, cash management AI</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://sebastienrousseau.com/fr/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Sebastien Rousseau — Édition française</news:name>
+        <news:language>fr</news:language>
+      </news:publication>
+      <news:publication_date>2026-06-07T06:06:06+00:00</news:publication_date>
+      <news:title>L&apos;Indice de trésorerie autonome 2026 : trésorerie agentique, liquidité…</news:title>
+      <news:keywords>trésorerie autonome 2026, trésorerie agentique, liquidité programmable, dépôts tokenisés trésorerie, trésorerie temps réel, gestion de trésorerie IA</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://sebastienrousseau.com/ar/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>سيباستيان روسو — النسخة العربية</news:name>
+        <news:language>ar</news:language>
+      </news:publication>
+      <news:publication_date>2026-06-07T06:06:06+00:00</news:publication_date>
+      <news:title>مؤشر الخزانة المستقلة 2026: الخزانة العميلة والسيولة القابلة للبرمجة والودائع…</news:title>
+      <news:keywords>الخزانة المستقلة 2026، الخزانة العميلة، السيولة القابلة للبرمجة، الودائع المرمَّزة للخزانة، الخزانة الفورية، إدارة النقد بالذكاء الاصطناعي</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://sebastienrousseau.com/bn/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Sebastien Rousseau — বাংলা সংস্করণ</news:name>
+        <news:language>bn</news:language>
+      </news:publication>
+      <news:publication_date>2026-06-07T06:06:06+00:00</news:publication_date>
+      <news:title>2026-এ স্বায়ত্তশাসিত ট্রেজারি সূচক: এজেন্টিক ট্রেজারি, প্রোগ্রামযোগ্য তরলতা…</news:title>
+      <news:keywords>স্বায়ত্তশাসিত ট্রেজারি 2026, এজেন্টিক ট্রেজারি, প্রোগ্রামযোগ্য তরলতা, টোকেনাইজড আমানত ট্রেজারি, রিয়েল-টাইম ট্রেজারি, ক্যাশ ম্যানেজমেন্ট AI</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://sebastienrousseau.com/cs/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Sebastien Rousseau — české vydání</news:name>
+        <news:language>cs</news:language>
+      </news:publication>
+      <news:publication_date>2026-06-07T06:06:06+00:00</news:publication_date>
+      <news:title>Index autonomního treasury 2026: agentní treasury, programovatelná likvidita…</news:title>
+      <news:keywords>autonomní treasury 2026, agentní treasury, programovatelná likvidita, tokenizované vklady treasury, treasury v reálném čase, řízení hotovosti AI, ISO 20022, vnitrodenní likvidita</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://sebastienrousseau.com/de/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Sebastien Rousseau — Deutsche Ausgabe</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-06-07T06:06:06+00:00</news:publication_date>
+      <news:title>Autonomous Treasury Index 2026: Agentisches Treasury, programmierbare…</news:title>
+      <news:keywords>autonomes Treasury 2026, agentisches Treasury, programmierbare Liquidität, tokenisierte Einlagen Treasury, Echtzeit-Treasury, Cash-Management KI</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://sebastienrousseau.com/es/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Sebastien Rousseau — Edición en español</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-06-07T06:06:06+00:00</news:publication_date>
+      <news:title>Índice de Tesorería Autónoma 2026: agéntica, liquidez programable y depósitos…</news:title>
+      <news:keywords>tesorería autónoma 2026, tesorería agéntica, liquidez programable, depósitos tokenizados tesorería, tesorería en tiempo real, gestión de caja con IA</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://sebastienrousseau.com/fil/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Sebastien Rousseau — Filipino edition</news:name>
+        <news:language>fil</news:language>
+      </news:publication>
+      <news:publication_date>2026-06-07T06:06:06+00:00</news:publication_date>
+      <news:title>Indeks ng Autonomous Treasury 2026: Agentic Treasury, Programmable Liquidity…</news:title>
+      <news:keywords>autonomous treasury 2026, agentic treasury, programmable liquidity, tokenized deposits treasury, real-time treasury, cash management AI</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://sebastienrousseau.com/ha/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Sebastien Rousseau — Bugun Hausa</news:name>
+        <news:language>ha</news:language>
+      </news:publication>
+      <news:publication_date>2026-06-07T06:06:06+00:00</news:publication_date>
+      <news:title>Fihirisar Kuɗi Mai Cin Gashin Kansa a 2026: Kuɗi na Agentic, Kuɗin…</news:title>
+      <news:keywords>kuɗi mai cin gashin kansa 2026, kuɗi na agentic, kuɗin shirye-shiryen, ajiyar tokens kuɗi, kuɗi a ainihin lokaci, gudanar da kuɗi AI</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://sebastienrousseau.com/he/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Sebastien Rousseau — מהדורה עברית</news:name>
+        <news:language>he</news:language>
+      </news:publication>
+      <news:publication_date>2026-06-07T06:06:06+00:00</news:publication_date>
+      <news:title>מדד האוצר האוטונומי 2026: אוצר סוכני, נזילות ניתנת לתכנות ופיקדונות מתוקנים</news:title>
+      <news:keywords>אוצר אוטונומי 2026, אוצר סוכני, נזילות ניתנת לתכנות, פיקדונות מתוקנים באוצר, אוצר בזמן אמת, ניהול מזומנים עם AI, ISO 20022, SWIFT, RTGS, RTP</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://sebastienrousseau.com/hi/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Sebastien Rousseau — हिन्दी संस्करण</news:name>
+        <news:language>hi</news:language>
+      </news:publication>
+      <news:publication_date>2026-06-07T06:06:06+00:00</news:publication_date>
+      <news:title>2026 में स्वायत्त ट्रेज़री सूचकांक: एजेंटिक ट्रेज़री, प्रोग्राम-योग्य तरलता…</news:title>
+      <news:keywords>स्वायत्त ट्रेज़री 2026, एजेंटिक ट्रेज़री, प्रोग्राम-योग्य तरलता, टोकनाइज़्ड जमा ट्रेज़री, रियल-टाइम ट्रेज़री, नकद प्रबंधन AI</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://sebastienrousseau.com/id/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Sebastien Rousseau — edisi Bahasa Indonesia</news:name>
+        <news:language>id</news:language>
+      </news:publication>
+      <news:publication_date>2026-06-07T06:06:06+00:00</news:publication_date>
+      <news:title>Indeks Treasury Otonom 2026: Treasury Agentik, Likuiditas Terprogram, Simpanan…</news:title>
+      <news:keywords>treasury otonom 2026, treasury agentik, likuiditas terprogram, simpanan tertokenisasi treasury, treasury real-time, manajemen kas AI</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://sebastienrousseau.com/it/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Sebastien Rousseau — Edizione italiana</news:name>
+        <news:language>it</news:language>
+      </news:publication>
+      <news:publication_date>2026-06-07T06:06:06+00:00</news:publication_date>
+      <news:title>Autonomous Treasury Index 2026: tesoreria agentica, liquidità programmabile…</news:title>
+      <news:keywords>tesoreria autonoma 2026, tesoreria agentica, liquidità programmabile, depositi tokenizzati tesoreria, tesoreria in tempo reale, cash management AI</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://sebastienrousseau.com/ja/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Sebastien Rousseau — 日本語版</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-06-07T06:06:06+00:00</news:publication_date>
+      <news:title>2026 年の自律トレジャリー指数:エージェント型トレジャリー、プログラマブル流動性、トークン化預金、リアルタイムキャッシュ管理</news:title>
+      <news:keywords>自律トレジャリー 2026, エージェント型トレジャリー, プログラマブル流動性, トークン化預金トレジャリー, リアルタイムトレジャリー, キャッシュマネジメント AI</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://sebastienrousseau.com/ko/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Sebastien Rousseau — 한국어판</news:name>
+        <news:language>ko</news:language>
+      </news:publication>
+      <news:publication_date>2026-06-07T06:06:06+00:00</news:publication_date>
+      <news:title>2026년 자율 트레저리 지수: 에이전트형 트레저리, 프로그래밍 가능한 유동성, 토큰화 예금, 실시간 현금 통제</news:title>
+      <news:keywords>자율 트레저리 2026, 에이전트형 트레저리, 프로그래밍 가능한 유동성, 토큰화 예금 트레저리, 실시간 트레저리, 현금 관리 AI</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://sebastienrousseau.com/nl/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Sebastien Rousseau — Nederlandse editie</news:name>
+        <news:language>nl</news:language>
+      </news:publication>
+      <news:publication_date>2026-06-07T06:06:06+00:00</news:publication_date>
+      <news:title>De Autonome Treasury-Index in 2026: agentische treasury en programmeerbare…</news:title>
+      <news:keywords>autonome treasury 2026, agentische treasury, programmeerbare liquiditeit, getokeniseerde deposito&apos;s, realtime treasury, cash management AI</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://sebastienrousseau.com/pl/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Sebastien Rousseau — Wydanie polskie</news:name>
+        <news:language>pl</news:language>
+      </news:publication>
+      <news:publication_date>2026-06-07T06:06:06+00:00</news:publication_date>
+      <news:title>Indeks Autonomicznego Skarbu 2026: agentowy skarb, programowalna płynność i…</news:title>
+      <news:keywords>autonomiczny skarb 2026, agentowy skarb, programowalna płynność, stokenizowane depozyty skarb, skarb w czasie rzeczywistym, zarządzanie gotówką AI</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://sebastienrousseau.com/pt-br/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Sebastien Rousseau — Edição em português</news:name>
+        <news:language>pt-br</news:language>
+      </news:publication>
+      <news:publication_date>2026-06-07T06:06:06+00:00</news:publication_date>
+      <news:title>Índice de Tesouraria Autônoma em 2026: tesouraria agêntica, liquidez…</news:title>
+      <news:keywords>tesouraria autônoma 2026, tesouraria agêntica, liquidez programável, depósitos tokenizados tesouraria, tesouraria em tempo real, IA gestão de caixa</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://sebastienrousseau.com/ro/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Sebastien Rousseau — Ediția în limba română</news:name>
+        <news:language>ro</news:language>
+      </news:publication>
+      <news:publication_date>2026-06-07T06:06:06+00:00</news:publication_date>
+      <news:title>Indicele Trezoreriei Autonome 2026: lichiditate programabilă</news:title>
+      <news:keywords>trezorerie autonomă 2026, trezorerie agentică, lichiditate programabilă, depozite tokenizate trezorerie, trezorerie în timp real, managementul numerarului AI</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://sebastienrousseau.com/ru/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Sebastien Rousseau — Русское издание</news:name>
+        <news:language>ru</news:language>
+      </news:publication>
+      <news:publication_date>2026-06-07T06:06:06+00:00</news:publication_date>
+      <news:title>Индекс автономного казначейства 2026: агентные процессы, программируемая…</news:title>
+      <news:keywords>автономное казначейство 2026, агентное казначейство, программируемая ликвидность, токенизированные депозиты казначейство, казначейство в реальном времени, управление наличными ИИ</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://sebastienrousseau.com/sv/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Sebastien Rousseau — svensk utgåva</news:name>
+        <news:language>sv</news:language>
+      </news:publication>
+      <news:publication_date>2026-06-07T06:06:06+00:00</news:publication_date>
+      <news:title>Autonomous Treasury Index 2026: agentisk treasury, programmerbar likviditet…</news:title>
+      <news:keywords>autonom treasury 2026, agentisk treasury, programmerbar likviditet, tokeniserade insättningar treasury, realtidstreasury, kassahantering AI</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://sebastienrousseau.com/th/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Sebastien Rousseau — ฉบับภาษาไทย</news:name>
+        <news:language>th</news:language>
+      </news:publication>
+      <news:publication_date>2026-06-07T06:06:06+00:00</news:publication_date>
+      <news:title>ดัชนีคลังอิสระปี 2026: คลังเชิงตัวแทน สภาพคล่องที่โปรแกรมได้ เงินฝากโทเค็น…</news:title>
+      <news:keywords>คลังอิสระ 2026, คลังเชิงตัวแทน, สภาพคล่องที่โปรแกรมได้, เงินฝากโทเค็นสำหรับคลัง, คลังเรียลไทม์, การจัดการเงินสดด้วย AI, ISO 20022, การควบคุมเงินสดเรียลไทม์</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://sebastienrousseau.com/tr/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Sebastien Rousseau — Türkçe baskı</news:name>
+        <news:language>tr</news:language>
+      </news:publication>
+      <news:publication_date>2026-06-07T06:06:06+00:00</news:publication_date>
+      <news:title>2026&apos;da Otonom Hazine Endeksi: Ajan Tabanlı Hazine, Programlanabilir…</news:title>
+      <news:keywords>otonom hazine 2026, ajan tabanlı hazine, programlanabilir likidite, tokenize mevduat hazinesi, gerçek zamanlı hazine, nakit yönetimi AI</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://sebastienrousseau.com/uk/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Sebastien Rousseau — українське видання</news:name>
+        <news:language>uk</news:language>
+      </news:publication>
+      <news:publication_date>2026-06-07T06:06:06+00:00</news:publication_date>
+      <news:title>Індекс автономного казначейства 2026: агенти, програмована ліквідність і…</news:title>
+      <news:keywords>автономне казначейство 2026, агентне казначейство, програмована ліквідність, токенізовані депозити казначейство, казначейство в реальному часі, керування грошима ШІ</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://sebastienrousseau.com/vi/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Sebastien Rousseau — Ấn bản tiếng Việt</news:name>
+        <news:language>vi</news:language>
+      </news:publication>
+      <news:publication_date>2026-06-07T06:06:06+00:00</news:publication_date>
+      <news:title>Chỉ số Kho bạc Tự trị 2026: Kho bạc tác tử, thanh khoản có thể lập trình, tiền…</news:title>
+      <news:keywords>kho bạc tự trị 2026, kho bạc tác tử, thanh khoản có thể lập trình, tiền gửi token hoá kho bạc, kho bạc thời gian thực, quản lý tiền mặt AI</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://sebastienrousseau.com/yo/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Sebastien Rousseau — Ẹ̀dà Yorùbá</news:name>
+        <news:language>yo</news:language>
+      </news:publication>
+      <news:publication_date>2026-06-07T06:06:06+00:00</news:publication_date>
+      <news:title>Ìmọ̀ Ìjọba Owó Adásí 2026: Agentic, Ìṣàn-owó Tó Lè Ṣètò, Ifowopamọ́ Tokens…</news:title>
+      <news:keywords>ìjọba owó adásí 2026, ìjọba owó agentic, ìṣàn-owó tó lè ṣètò, ifowopamọ́ tokens, ìjọba owó akóko, ìṣàkóso owó AI, ISO 20022, JPMorgan Kinexys</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://sebastienrousseau.com/zh-hans/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Sebastien Rousseau — 简体中文版</news:name>
+        <news:language>zh-hans</news:language>
+      </news:publication>
+      <news:publication_date>2026-06-07T06:06:06+00:00</news:publication_date>
+      <news:title>2026 自主财务指数：智能体司库、可编程流动性、代币化存款与实时现金管控</news:title>
+      <news:keywords>2026 自主财务, 智能体司库, 可编程流动性, 代币化存款司库, 实时司库, 现金管理 AI, ISO 20022, JPM Coin, Kinexys, BIS</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://sebastienrousseau.com/zh-hant/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Sebastien Rousseau — 繁體中文版</news:name>
+        <news:language>zh-hant</news:language>
+      </news:publication>
+      <news:publication_date>2026-06-07T06:06:06+00:00</news:publication_date>
+      <news:title>2026 自主財務指數:代理型司庫、可程式化流動性、代幣化存款與即時現金管控</news:title>
+      <news:keywords>自主財務 2026, 代理型司庫, 可程式化流動性, 代幣化存款財務, 即時財務, 現金管理 AI</news:keywords>
+    </news:news>
+  </url>
+  <url>
     <loc>https://sebastienrousseau.com/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</loc>
     <news:news>
       <news:publication>

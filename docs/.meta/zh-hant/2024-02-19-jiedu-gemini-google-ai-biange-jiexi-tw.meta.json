@@ -1,13 +1,13 @@
 {
-  "subtitle": "Gemini 1.5——下一代 Google AI 模型的能力與意義",
-  "title": "解讀 Gemini：Google AI 革命解析",
-  "banner_alt": "AI 網路的抽象視覺化，代表 Gemini 1.5 的能力",
-  "keywords": "Gemini 1.5, Google AI, 大型語言模型, MoE 架構, 上下文視窗, 多模態, AI 倫理, 效能基準, Google DeepMind",
-  "locale": "zh_TW",
-  "word_count": 103,
-  "description": "Gemini 1.5 透過新的 MoE 架構和擴充套件上下文視窗，重新定義大型語言模型的能力。",
-  "language": "zh-Hant",
   "banner": "https://cloudcdn.pro/stocks/images/abstract-visualization-of-gemini.webp",
   "reading_time": 1,
-  "date": "February 19, 2024"
+  "subtitle": "Gemini 1.5——下一代 Google AI 模型的能力與意義",
+  "date": "February 19, 2024",
+  "locale": "zh_TW",
+  "keywords": "Gemini 1.5, Google AI, 大型語言模型, MoE 架構, 上下文視窗, 多模態, AI 倫理, 效能基準, Google DeepMind",
+  "banner_alt": "AI 網路的抽象視覺化，代表 Gemini 1.5 的能力",
+  "description": "Gemini 1.5 透過新的 MoE 架構和擴充套件上下文視窗，重新定義大型語言模型的能力。",
+  "title": "解讀 Gemini：Google AI 革命解析",
+  "language": "zh-Hant",
+  "word_count": 103
 }

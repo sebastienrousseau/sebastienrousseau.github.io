@@ -141,6 +141,7 @@ site_software: "Static Site Generator, Rust"
 
 
 
+
 <!-- lead-start -->
 <aside class="post-lead" aria-label="Article summary">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> The UK acid jazz renewal in 2026 is visible in Acid Jazz Records releases, Bangs & Talbot, Brand New Heavies with Galliano, James Taylor Quartet at Ronnie Scott’s, Mostly Jazz Funk & Soul Festival, and the broader UK jazz scene’s renewed appetite for groove, soul, funk and dance-floor musicianship.</p>

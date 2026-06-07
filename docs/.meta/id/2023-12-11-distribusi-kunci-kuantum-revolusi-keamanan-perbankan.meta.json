@@ -1,13 +1,13 @@
 {
-  "keywords": "Quantum Key Distribution (QKD), Keamanan Kuantum, Perbankan, Industri Keuangan, Keuangan Digital, Keamanan Siber, Quantum Computing, HSBC, Quantum Protection Trial, Transaksi Keuangan",
-  "subtitle": "Quantum Key Distribution (QKD) untuk keamanan tingkat finansial dalam industri perbankan.",
   "description": "Ketika komputer kuantum mengancam metode enkripsi tradisional, Quantum Key Distribution (QKD) muncul sebagai pengubah paradigma yang menawarkan keamanan tak tertandingi.",
-  "banner": "https://cloudcdn.pro/stocks/images/hsbc-from-the-docks.webp",
-  "locale": "id_ID",
   "banner_alt": "HSBC Dilihat dari Dermaga",
-  "date": "Dec 11, 2023",
+  "banner": "https://cloudcdn.pro/stocks/images/hsbc-from-the-docks.webp",
+  "subtitle": "Quantum Key Distribution (QKD) untuk keamanan tingkat finansial dalam industri perbankan.",
+  "keywords": "Quantum Key Distribution (QKD), Keamanan Kuantum, Perbankan, Industri Keuangan, Keuangan Digital, Keamanan Siber, Quantum Computing, HSBC, Quantum Protection Trial, Transaksi Keuangan",
   "language": "id-ID",
-  "title": "[ID DRAFT] Quantum Key Distribution Revolutionising Security in Banking",
   "word_count": 483,
-  "reading_time": 2
+  "reading_time": 2,
+  "date": "Dec 11, 2023",
+  "title": "[ID DRAFT] Quantum Key Distribution Revolutionising Security in Banking",
+  "locale": "id_ID"
 }

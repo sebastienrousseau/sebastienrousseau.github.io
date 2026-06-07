@@ -1,6 +1,6 @@
 ---
 title: "Quantum Thresholds Are Moving: 10,000-Qubit Shor Risk"
-tags: "quantum computing, Shor's algorithm, post-quantum cryptography, RSA, elliptic curve, neutral atoms, error correction, cryptographic agility, quantum threat, payments, ISO 20022, DORA, AI, biyan kuɗi na cross-border"
+tags: "quantum computing, Shor's algorithm, post-quantum cryptography, RSA, elliptic curve, neutral atoms, error correction, cryptographic agility, quantum threat, payments, ISO 20022, DORA, AI, biyan kuɗi na cross-border, stablecoins"
 subtitle: "Takarda sabuwa tana ba da shawarar cewa Shor's algorithm na iya gudana akan qubits 10,000 kawai. Tasirin da cryptography ke fuskanta ba za a iya yin watsi da shi ba."
 description: "Shor's algorithm yanzu yana iya gudana akan qubits 10,000 kawai. RSA, ECC da jadawalin ƙaura na post-quantum duk suna matsawa gaba. Ga dalilin."
 date: "Apr 11, 2026"

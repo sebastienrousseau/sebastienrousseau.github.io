@@ -1,13 +1,13 @@
 {
-  "word_count": 1307,
-  "banner": "https://cloudcdn.pro/stocks/images/galina-nelyubova-7ej8VWfwFsg.webp",
-  "description": "HSH s'appuie sur des primitives cryptographiques résistantes au quantique pour protéger vos données face aux avancées futures du calcul quantique.",
-  "subtitle": "Une bibliothèque Rust résistante au quantique pour le hachage et la vérification cryptographiques",
-  "banner_alt": "Illustration créative sur le thème de l'informatique quantique",
   "keywords": "cryptographie résistante au quantique, bibliothèque Hash, HSH, Rust, post-quantique, PQC, KDF, Argon2i, BScrypt, Scrypt, services financiers, sécurité, NIST",
-  "language": "fr",
-  "reading_time": 6,
+  "banner": "https://cloudcdn.pro/stocks/images/galina-nelyubova-7ej8VWfwFsg.webp",
+  "date": "October 16, 2023",
+  "banner_alt": "Illustration créative sur le thème de l'informatique quantique",
   "locale": "fr_FR",
-  "title": "Protéger les données à l'ère quantique : la bibliothèque Hash (HSH)",
-  "date": "October 16, 2023"
+  "reading_time": 6,
+  "language": "fr",
+  "description": "HSH s'appuie sur des primitives cryptographiques résistantes au quantique pour protéger vos données face aux avancées futures du calcul quantique.",
+  "word_count": 1307,
+  "subtitle": "Une bibliothèque Rust résistante au quantique pour le hachage et la vérification cryptographiques",
+  "title": "Protéger les données à l'ère quantique : la bibliothèque Hash (HSH)"
 }

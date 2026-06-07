@@ -1,6 +1,6 @@
 ---
 title: "Quantum-Safe Payments: Why the Industry Must Act Now"
-tags: "quantum-safe payments, পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, payments, EPAA, ISO 20022, SWIFT, SEPA, DORA, কোয়ান্টাম কম্পিউটিং, AI, সীমান্ত-পার পেমেন্ট"
+tags: "quantum-safe payments, পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, payments, EPAA, ISO 20022, SWIFT, SEPA, DORA, কোয়ান্টাম কম্পিউটিং, AI, সীমান্ত-পার পেমেন্ট, stablecoins"
 subtitle: "কোয়ান্টাম-নিরাপদ প্রস্তুতি একটি বর্তমান অবকাঠামো সিদ্ধান্ত। ভবিষ্যতের নয়।"
 description: "কোয়ান্টাম কম্পিউটিং পেমেন্ট সিস্টেমের ক্রিপ্টোগ্রাফিকে হুমকির মুখে ফেলছে। EPAA শ্বেতপত্র কাঠামোগত ঝুঁকি এবং PQC মাইগ্রেশনের জরুরি প্রয়োজনীয়তা বিশদভাবে তুলে ধরেছে।"
 date: "Sep 01, 2025"

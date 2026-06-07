@@ -1,13 +1,13 @@
 {
-  "banner": "https://cloudcdn.pro/stocks/images/digital-constellation.webp",
   "subtitle": "Algoritma kuantum polynomial-time berikutnya untuk kriptografi berbasis lattice",
   "language": "id-ID",
-  "locale": "id_ID",
-  "description": "Algoritma kuantum polynomial-time baru oleh Yilei Chen menargetkan kriptografi berbasis lattice. Implikasinya bagi standar post-kuantum termasuk CRYSTALS-Kyber.",
-  "reading_time": 2,
   "word_count": 571,
   "title": "[ID DRAFT] Quantum Algorithm Challenges Lattice-Based Cryptography",
-  "date": "Apr 01, 2024",
   "banner_alt": "Banner simpul-simpul jaringan dalam ruang biru digital",
+  "locale": "id_ID",
+  "reading_time": 2,
+  "date": "Apr 01, 2024",
+  "banner": "https://cloudcdn.pro/stocks/images/digital-constellation.webp",
+  "description": "Algoritma kuantum polynomial-time baru oleh Yilei Chen menargetkan kriptografi berbasis lattice. Implikasinya bagi standar post-kuantum termasuk CRYSTALS-Kyber.",
   "keywords": "komputasi kuantum, algoritma kuantum, lattice cryptography, LWE, enkripsi, post-quantum cryptography, keamanan siber, Yilei Chen, penelitian kriptografi, ancaman keamanan"
 }

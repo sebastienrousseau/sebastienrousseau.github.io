@@ -1,6 +1,6 @@
 ---
 title: "Static Site Generator: Fastest Rust-Based SSG"
-tags: "pain001, ISO 20022, payment automation, cost reduction, payments, payment files, pain message, DORA, post-quantum cryptography, AI, tokenised deposits, Rust, cloud native banking, biyan kuɗi na cross-border"
+tags: "pain001, ISO 20022, payment automation, cost reduction, payments, payment files, pain message, DORA, post-quantum cryptography, AI, tokenised deposits, Rust, cloud native banking, biyan kuɗi na cross-border, stablecoins"
 subtitle: "Static Site Generator, mafi sauri Rust-based static site generator don gidajen yanar gizo masu tasiri sosai."
 description: "Yana ba ku damar ƙirƙirar gidajen yanar gizo na tsaye masu tasiri tare da yiwuwar da ba ta iyaka, girma marar iyaka, da kasancewar yanar gizo ta musamman da kuke sarrafawa."
 date: "Oct 09, 2023"

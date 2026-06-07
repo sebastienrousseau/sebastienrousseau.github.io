@@ -1,14 +1,14 @@
 {
-  "locale": "bn_BD",
-  "banner": "https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg",
-  "language": "bn-BD",
-  "date": "Nov 28, 2023",
-  "description": "CRYSTALS-Kyber অ্যালগরিদমের একটি শক্তিশালী এবং কোয়ান্টাম-নিরাপদ ক্রিপ্টোগ্রাফি বাস্তবায়ন, আপনার ডেটাকে কোয়ান্টাম হুমকি এবং ক্রিপ্টোঅ্যানালিটিক আক্রমণ থেকে সুরক্ষিত রাখতে।",
   "reading_time": 5,
   "tags": "KyberLib, Rust, CRYSTALS-Kyber, পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, lattice-based cryptography, key encapsulation mechanism, NIST, libsignal, cryptography, ISO 20022, কোয়ান্টাম কম্পিউটিং, AI",
-  "title": "KyberLib: Rust CRYSTALS-Kyber for Post-Quantum",
-  "subtitle": "KyberLib — কোয়ান্টাম যুগের জন্য CRYSTALS-Kyber-এর একটি শক্তিশালী Rust বাস্তবায়ন।",
+  "locale": "bn_BD",
+  "description": "CRYSTALS-Kyber অ্যালগরিদমের একটি শক্তিশালী এবং কোয়ান্টাম-নিরাপদ ক্রিপ্টোগ্রাফি বাস্তবায়ন, আপনার ডেটাকে কোয়ান্টাম হুমকি এবং ক্রিপ্টোঅ্যানালিটিক আক্রমণ থেকে সুরক্ষিত রাখতে।",
+  "language": "bn-BD",
+  "keywords": "KyberLib, Rust CRYSTALS-Kyber, পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, ল্যাটিস-ভিত্তিক ক্রিপ্টোগ্রাফি, কোয়ান্টাম-প্রতিরোধী কী এক্সচেঞ্জ, NIST FIPS 203, Sebastien Rousseau, KEM, পেমেন্ট অথেনটিকেশন, PQC লাইব্রেরি",
+  "date": "Nov 28, 2023",
   "banner_alt": "KyberLib-এর সাথে কোয়ান্টাম যুগে নিরাপদ যোগাযোগকে শক্তিশালী করা",
   "word_count": 1118,
-  "keywords": "KyberLib, Rust CRYSTALS-Kyber, পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, ল্যাটিস-ভিত্তিক ক্রিপ্টোগ্রাফি, কোয়ান্টাম-প্রতিরোধী কী এক্সচেঞ্জ, NIST FIPS 203, Sebastien Rousseau, KEM, পেমেন্ট অথেনটিকেশন, PQC লাইব্রেরি"
+  "banner": "https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg",
+  "title": "KyberLib: Rust CRYSTALS-Kyber for Post-Quantum",
+  "subtitle": "KyberLib — কোয়ান্টাম যুগের জন্য CRYSTALS-Kyber-এর একটি শক্তিশালী Rust বাস্তবায়ন।"
 }

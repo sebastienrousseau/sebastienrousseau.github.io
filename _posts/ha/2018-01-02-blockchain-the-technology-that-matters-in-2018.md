@@ -1,6 +1,6 @@
 ---
 title: "Blockchain explained, the technology that matters the most"
-tags: "pain001, ISO 20022, payment automation, cost reduction, payments, payment files, pain message, DORA, post-quantum cryptography, AI, tokenised deposits, Rust, cloud native banking, biyan kuɗi na cross-border"
+tags: "pain001, ISO 20022, payment automation, cost reduction, payments, payment files, pain message, DORA, post-quantum cryptography, AI, tokenised deposits, Rust, cloud native banking, biyan kuɗi na cross-border, stablecoins"
 subtitle: "Blockchain, rarraba ledgers, da fasahar da ta fi muhimmanci a shekarar 2018."
 description: "Labarin tafiya mai ban al'ajabi na kare ma'amalar dijital ta hanyar Private-key Cryptography da hanyoyin sadarwar Peer-to-peer (P2P)."
 date: "Jan 02, 2018"

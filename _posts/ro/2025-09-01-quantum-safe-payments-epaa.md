@@ -1,6 +1,6 @@
 ---
 title: "Quantum-Safe Payments: Why the Industry Must Act Now"
-tags: "quantum-safe payments, criptografie post-cuantică, payments, EPAA, ISO 20022, SWIFT, SEPA, DORA, calcul cuantic, AI, plăți transfrontaliere"
+tags: "quantum-safe payments, criptografie post-cuantică, payments, EPAA, ISO 20022, SWIFT, SEPA, DORA, calcul cuantic, AI, plăți transfrontaliere, stablecoinuri"
 subtitle: "Pregătirea pentru siguranță cuantică este o decizie de infrastructură prezentă. Nu una viitoare."
 description: "Calculul cuantic amenință criptografia sistemelor de plată. White paper-ul EPAA prezintă riscul structural și necesitatea urgentă de migrare la PQC."
 date: "Sep 01, 2025"

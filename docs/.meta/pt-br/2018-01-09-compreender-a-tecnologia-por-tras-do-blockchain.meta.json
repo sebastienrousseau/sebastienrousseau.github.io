@@ -1,13 +1,13 @@
 {
-  "word_count": 892,
-  "subtitle": "Construir uma criptomoeda sobre Ethereum, paso a paso",
-  "title": "Comprender a tecnologia atrás de blockchain",
-  "reading_time": 4,
-  "description": "Construir uma criptomoeda em a blockchain Ethereum: uma guía completa de desenvolvimento blockchain, tokenización e implementación.",
-  "language": "pt-BR",
   "banner": "https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp",
+  "description": "Construir uma criptomoeda em a blockchain Ethereum: uma guía completa de desenvolvimento blockchain, tokenización e implementación.",
+  "title": "Comprender a tecnologia atrás de blockchain",
+  "subtitle": "Construir uma criptomoeda sobre Ethereum, paso a paso",
+  "word_count": 892,
   "banner_alt": "Ordenador portátil apagado sobre uma mesa de madera marrón",
   "date": "January 9, 2018",
+  "keywords": "blockchain, Ethereum, smart contract, criptomoeda, Solidity, Geth, dApps, ERC-20, tokenización, testnet",
   "locale": "pt_BR",
-  "keywords": "blockchain, Ethereum, smart contract, criptomoeda, Solidity, Geth, dApps, ERC-20, tokenización, testnet"
+  "reading_time": 4,
+  "language": "pt-BR"
 }

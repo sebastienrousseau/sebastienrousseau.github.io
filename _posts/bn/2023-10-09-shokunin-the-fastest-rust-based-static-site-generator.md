@@ -1,6 +1,6 @@
 ---
 title: "Static Site Generator: Fastest Rust-Based SSG"
-tags: "pain001, ISO 20022, payment automation, cost reduction, payments, payment files, pain message, DORA, পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, AI, টোকেনাইজড আমানত, Rust, ক্লাউড নেটিভ ব্যাংকিং, সীমান্ত-পার পেমেন্ট"
+tags: "pain001, ISO 20022, payment automation, cost reduction, payments, payment files, pain message, DORA, পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, AI, টোকেনাইজড আমানত, Rust, ক্লাউড নেটিভ ব্যাংকিং, সীমান্ত-পার পেমেন্ট, stablecoins"
 subtitle: "Static Site Generator — উচ্চ-প্রভাবশালী ওয়েবসাইটের জন্য সবচেয়ে দ্রুত Rust-ভিত্তিক স্ট্যাটিক সাইট জেনারেটর।"
 description: "অসীম সম্ভাবনা, সীমাহীন স্কেলেবিলিটি এবং আপনার নিজের নিয়ন্ত্রণে একটি অনন্য ওয়েব উপস্থিতি সহ উচ্চ-প্রভাবশালী স্ট্যাটিক ওয়েবসাইট তৈরি করতে আপনাকে সক্ষম করছে।"
 date: "Oct 09, 2023"
