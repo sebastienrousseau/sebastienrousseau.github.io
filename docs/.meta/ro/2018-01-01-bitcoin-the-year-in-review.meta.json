@@ -1,14 +1,14 @@
 {
-  "locale": "ro_RO",
-  "description": "Bitcoin: Un sistem electronic de plăți peer-to-peer (P2P ECS) cu potențialul de a revoluționa modul în care oamenii tranzacționează online.",
-  "title": "Bitcoin: A Year In Review of the First Cryptocurrency",
-  "word_count": 1381,
-  "reading_time": 6,
-  "keywords": "bitcoin, cryptocurrency, blockchain, finanțe descentralizate, monedă digitală, plăți peer-to-peer, aur digital, bani programabili, viitorul banilor, revoluție financiară",
-  "banner_alt": "O grămadă de monede de aur și argint așezate pe o masă",
-  "subtitle": "Bitcoin, criptomonede și tehnologia care remodelează piețele financiare.",
   "tags": "bitcoin, criptomonedă, blockchain, decentralized finance, digital currency, peer-to-peer payments, digital gold, bani programabili, future of money, financial revolution, ISO 20022, criptografie post-cuantică, AI, stablecoinuri, depozite tokenizate, open source",
+  "reading_time": 6,
   "language": "ro-RO",
+  "locale": "ro_RO",
+  "date": "Jan 01, 2018",
+  "banner_alt": "O grămadă de monede de aur și argint așezate pe o masă",
+  "keywords": "bitcoin, cryptocurrency, blockchain, finanțe descentralizate, monedă digitală, plăți peer-to-peer, aur digital, bani programabili, viitorul banilor, revoluție financiară",
   "banner": "https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp",
-  "date": "Jan 01, 2018"
+  "subtitle": "Bitcoin, criptomonede și tehnologia care remodelează piețele financiare.",
+  "description": "Bitcoin: Un sistem electronic de plăți peer-to-peer (P2P ECS) cu potențialul de a revoluționa modul în care oamenii tranzacționează online.",
+  "word_count": 1381,
+  "title": "Bitcoin: A Year In Review of the First Cryptocurrency"
 }

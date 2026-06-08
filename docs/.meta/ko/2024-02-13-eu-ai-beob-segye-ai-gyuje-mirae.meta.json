@@ -1,14 +1,14 @@
 {
-  "banner_alt": "브뤼셀 EU 의회",
-  "keywords": "EU AI 법, AI 규제, 거버넌스, 위험 분류, 규정 준수, GDPR, AI 감독",
-  "word_count": 240,
-  "reading_time": 1,
-  "date": "February 13, 2024",
-  "banner": "https://cloudcdn.pro/stocks/images/guillaume-perigois-0NRkVddA1fw-unsplash.webp",
-  "subtitle": "EU AI 법과 그 세계적 영향",
-  "description": "EU AI 법이 세계 AI 규제를 어떻게 형성하고 기업의 AI 채택에 영향을 미치는지에 관하여.",
-  "language": "ko-KR",
   "locale": "ko_KR",
+  "keywords": "EU AI 법, AI 규제, 거버넌스, 위험 분류, 규정 준수, GDPR, AI 감독",
+  "language": "ko-KR",
+  "last_reviewed": "2026-05-16",
+  "description": "EU AI 법이 세계 AI 규제를 어떻게 형성하고 기업의 AI 채택에 영향을 미치는지에 관하여.",
+  "word_count": 240,
   "title": "EU AI 규제: 세계 AI 규제의 미래를 형성하다",
-  "last_reviewed": "2026-05-16"
+  "banner_alt": "브뤼셀 EU 의회",
+  "reading_time": 1,
+  "subtitle": "EU AI 법과 그 세계적 영향",
+  "date": "February 13, 2024",
+  "banner": "https://cloudcdn.pro/stocks/images/guillaume-perigois-0NRkVddA1fw-unsplash.webp"
 }

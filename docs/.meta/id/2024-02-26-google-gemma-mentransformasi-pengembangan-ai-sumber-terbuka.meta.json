@@ -1,13 +1,13 @@
 {
   "subtitle": "Pandangan Mendalam tentang Kemampuan, Kontribusi Open Source, dan Arah ke Depan",
-  "date": "Feb 26, 2024",
-  "keywords": "Google Gemma AI, model AI open-source, arsitektur teknis Gemma, Gemma 2B 7B, AI etis, integrasi AI macOS, solusi AI enterprise, AI percakapan, AI analisis data, AI untuk perangkat edge",
   "description": "Jelajahi Model AI Gemma dari Google: Proyek open-source yang menawarkan solusi AI etis untuk penggunaan pribadi maupun enterprise.",
-  "word_count": 484,
+  "banner": "https://cloudcdn.pro/stocks/images/ai-ship.webp",
+  "language": "id-ID",
   "banner_alt": "Pesawat luar angkasa biru futuristik dengan lampu neon",
   "locale": "id_ID",
-  "reading_time": 2,
   "title": "[ID DRAFT] Google Gemma AI: Transforming Open-Source AI Development",
-  "banner": "https://cloudcdn.pro/stocks/images/ai-ship.webp",
-  "language": "id-ID"
+  "word_count": 484,
+  "date": "Feb 26, 2024",
+  "reading_time": 2,
+  "keywords": "Google Gemma AI, model AI open-source, arsitektur teknis Gemma, Gemma 2B 7B, AI etis, integrasi AI macOS, solusi AI enterprise, AI percakapan, AI analisis data, AI untuk perangkat edge"
 }

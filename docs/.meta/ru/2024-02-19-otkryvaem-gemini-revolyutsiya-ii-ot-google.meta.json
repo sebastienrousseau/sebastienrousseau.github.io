@@ -1,13 +1,13 @@
 {
+  "banner_alt": "Абстрактная визуализация нейронных сетей ИИ Gemini 1.5",
+  "subtitle": "Погружение в новый прорыв Google в ИИ",
+  "description": "Gemini 1.5 от Google расширяет контекстное окно за миллион токенов. Что это открывает для финансов с retrieval-augmented моделями и какие компромиссы возникают.",
+  "locale": "ru_RU",
   "reading_time": 1,
   "title": "Раскрываем Gemini 1.5: революция ИИ от Google объяснена",
+  "date": "February 19, 2024",
   "keywords": "Gemini 1.5, Google AI, Mixture-of-Experts, контекстное окно, миллион токенов, in-context learning, мультимодальность, бенчмарки",
   "language": "ru-RU",
-  "locale": "ru_RU",
   "banner": "https://cloudcdn.pro/stocks/images/abstract-visualization-of-gemini.webp",
-  "description": "Gemini 1.5 от Google расширяет контекстное окно за миллион токенов. Что это открывает для финансов с retrieval-augmented моделями и какие компромиссы возникают.",
-  "banner_alt": "Абстрактная визуализация нейронных сетей ИИ Gemini 1.5",
-  "word_count": 289,
-  "subtitle": "Погружение в новый прорыв Google в ИИ",
-  "date": "February 19, 2024"
+  "word_count": 289
 }

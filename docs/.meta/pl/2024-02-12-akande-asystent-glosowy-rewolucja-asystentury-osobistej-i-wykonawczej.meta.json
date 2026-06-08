@@ -1,13 +1,13 @@
 {
-  "locale": "pl_PL",
   "banner": "https://cloudcdn.pro/stocks/images/akande-voice-assistant.webp",
-  "keywords": "Akande, asystent głosowy, GPT, AI, OpenAI, asystentura wykonawcza, produktywność",
-  "banner_alt": "Logo Akande z motywem asystenta głosowego",
   "word_count": 175,
-  "date": "Feb 12, 2024",
   "subtitle": "Zaawansowany asystent głosowy oparty na GPT",
-  "description": "Akande to zaawansowany asystent głosowy wykorzystujący GPT do naturalnych interakcji, streszczeń PDF i wydajnego buforowania.",
-  "title": "Akande: asystent głosowy rewolucjonizujący asystenturę osobistą i wykonawczą",
+  "keywords": "Akande, asystent głosowy, GPT, AI, OpenAI, asystentura wykonawcza, produktywność",
   "reading_time": 1,
-  "language": "pl-PL"
+  "language": "pl-PL",
+  "title": "Akande: asystent głosowy rewolucjonizujący asystenturę osobistą i wykonawczą",
+  "banner_alt": "Logo Akande z motywem asystenta głosowego",
+  "locale": "pl_PL",
+  "description": "Akande to zaawansowany asystent głosowy wykorzystujący GPT do naturalnych interakcji, streszczeń PDF i wydajnego buforowania.",
+  "date": "Feb 12, 2024"
 }

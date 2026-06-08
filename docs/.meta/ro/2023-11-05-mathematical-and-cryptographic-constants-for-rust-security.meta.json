@@ -1,14 +1,14 @@
 {
-  "title": "Mathematical and Cryptographic Constants for Rust Security",
-  "date": "Nov 05, 2023",
-  "tags": "math, cybersecurity, cryptography, Rust, programming, encryption, communication, constants, constants in Rust, Common library, ISO 20022, criptografie post-cuantică, calcul cuantic, AI, open source",
-  "keywords": "constante matematice, constante criptografice, Rust security, comunicare securizată, criptare, RSA, elliptic curve cryptography, Common (CMN) library, aplicații Rust, calcule matematice",
-  "banner": "https://cloudcdn.pro/stocks/images/antoine-dautry-05A-kdOH6Hw.webp",
-  "locale": "ro_RO",
-  "description": "Protejați integritatea codului cu constante matematice și criptografice verificate minuțios, consolidând siguranța memoriei și a concurenței pentru o securitate sporită a codului.",
-  "subtitle": "Constante matematice și criptografice verificate pentru securitate Rust sigură în memorie.",
+  "reading_time": 4,
   "language": "ro-RO",
   "word_count": 877,
+  "banner": "https://cloudcdn.pro/stocks/images/antoine-dautry-05A-kdOH6Hw.webp",
+  "description": "Protejați integritatea codului cu constante matematice și criptografice verificate minuțios, consolidând siguranța memoriei și a concurenței pentru o securitate sporită a codului.",
   "banner_alt": "Calcul matematic",
-  "reading_time": 4
+  "keywords": "constante matematice, constante criptografice, Rust security, comunicare securizată, criptare, RSA, elliptic curve cryptography, Common (CMN) library, aplicații Rust, calcule matematice",
+  "date": "Nov 05, 2023",
+  "locale": "ro_RO",
+  "title": "Mathematical and Cryptographic Constants for Rust Security",
+  "subtitle": "Constante matematice și criptografice verificate pentru securitate Rust sigură în memorie.",
+  "tags": "math, cybersecurity, cryptography, Rust, programming, encryption, communication, constants, constants in Rust, Common library, ISO 20022, criptografie post-cuantică, calcul cuantic, AI, open source"
 }

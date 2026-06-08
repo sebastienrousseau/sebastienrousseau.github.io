@@ -1,13 +1,13 @@
 {
+  "description": "Cómo el cifrado completamente homomórfico revoluciona la seguridad de los datos en la banca y las finanzas, garantizando la confidencialidad frente a las amenazas de la computación cuántica.",
+  "date": "March 25, 2024",
+  "reading_time": 11,
+  "language": "es-ES",
+  "locale": "es_ES",
+  "banner": "https://cloudcdn.pro/stocks/images/fully-homomorphic-encryption.webp",
+  "word_count": 2384,
+  "banner_alt": "Banner del cifrado completamente homomórfico",
   "keywords": "cifrado completamente homomórfico, seguridad bancaria, computación cuántica, cifrado de datos financieros, FHE, RGPD, CCPA, cumplimiento, computación cloud, IA y confidencialidad, LLM cifrado, Zama, Gentry",
   "title": "El cifrado completamente homomórfico (FHE) en la era bancaria cuántica",
-  "banner_alt": "Banner del cifrado completamente homomórfico",
-  "date": "March 25, 2024",
-  "subtitle": "Reforzar la seguridad de los datos, mejorar la confidencialidad de la IA y construir la confianza del cliente en la era de la computación cuántica con el FHE",
-  "language": "es-ES",
-  "description": "Cómo el cifrado completamente homomórfico revoluciona la seguridad de los datos en la banca y las finanzas, garantizando la confidencialidad frente a las amenazas de la computación cuántica.",
-  "word_count": 2384,
-  "reading_time": 11,
-  "locale": "es_ES",
-  "banner": "https://cloudcdn.pro/stocks/images/fully-homomorphic-encryption.webp"
+  "subtitle": "Reforzar la seguridad de los datos, mejorar la confidencialidad de la IA y construir la confianza del cliente en la era de la computación cuántica con el FHE"
 }

@@ -411,59 +411,90 @@ document.addEventListener("click", function (event) {
 (async function mermaidInit() {
     "use strict";
     if (!document.querySelector("pre.mermaid")) return;
-    // 'neutral' renders black-on-white with no chromatic accents, so
-    // diagrams stay legible in both light and dark modes without having
-    // to swap themes on data-theme change. Diagrams reflow correctly
-    // when the user toggles the colour scheme.
-    //
-    // `startOnLoad: false` + explicit `run()` is required because we
-    // dynamic-import mermaid AFTER DOMContentLoaded has already fired
-    // (the parent script tag is `defer`, and the import resolves on a
-    // microtask further down). With `startOnLoad: true` Mermaid would
-    // hook DOMContentLoaded too late and never auto-render — leaving
-    // the raw `flowchart LR` text in the page. Calling run() ourselves
-    // closes that timing gap.
     try {
         var mod = await import(
             "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"
         );
-        // securityLevel:"antiscript" lets `<br/>` in node labels render as
-        // line breaks (htmlLabels:true) while still stripping <script>
-        // tags via DOMPurify. "strict" would block htmlLabels entirely and
-        // collapse multi-line labels into one cramped row — the symptom
-        // observed on the quantum-safe article's PQC migration flowchart.
-        // theme:"base" + themeVariables gives us monochrome defaults but
-        // still honours per-node `style A fill:…` overrides in the source.
+        var isDark = document.documentElement.getAttribute("data-theme") === "dark";
+        if (!document.documentElement.getAttribute("data-theme")) {
+            isDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        }
         mod.default.initialize({
             startOnLoad: false,
             securityLevel: "antiscript",
-            theme: "base",
-            themeVariables: {
+            theme: isDark ? "dark" : "base",
+            themeVariables: isDark ? {
                 fontFamily: "var(--type-mono), ui-monospace, monospace",
                 fontSize: "14px",
-                primaryColor: "var(--card, #ffffff)",
-                primaryTextColor: "var(--ink, #111111)",
-                primaryBorderColor: "var(--border, #3a3a3e)",
-                lineColor: "var(--ink-mute, #3a3a3e)",
-                textColor: "var(--ink, #111111)",
-                actorBorder: "var(--border, #3a3a3e)",
-                actorBkg: "var(--bg-alt, #f1f1f3)",
-                actorTextColor: "var(--ink, #111111)",
-                actorLineColor: "var(--border, #3a3a3e)",
-                labelBoxBkgColor: "var(--card, #ffffff)",
-                labelBoxBorderColor: "var(--border, #3a3a3e)",
-                labelTextBkgColor: "var(--card, #ffffff)",
-                labelTextColor: "var(--ink, #111111)",
-                loopTextColor: "var(--ink, #111111)",
-                noteBorderColor: "var(--border, #3a3a3e)",
-                noteBkgColor: "var(--bg-alt, #f1f1f3)",
-                noteTextColor: "var(--ink, #111111)",
-                activationBorderColor: "var(--border, #3a3a3e)",
-                activationBkgColor: "var(--bg-alt, #f1f1f3)",
-                sequenceNumberColor: "var(--ink, #111111)",
+                primaryColor: "#161617",
+                primaryTextColor: "#f5f5f7",
+                primaryBorderColor: "#3a3a3c",
+                lineColor: "#b0b0b8",
+                textColor: "#f5f5f7",
+                actorBorder: "#3a3a3c",
+                actorBkg: "#161617",
+                actorTextColor: "#f5f5f7",
+                actorLineColor: "#3a3a3c",
+                labelBoxBkgColor: "#161617",
+                labelBoxBorderColor: "#3a3a3c",
+                labelTextBkgColor: "#161617",
+                labelTextColor: "#f5f5f7",
+                loopTextColor: "#f5f5f7",
+                noteBorderColor: "#3a3a3c",
+                noteBkgColor: "#1d1d1f",
+                noteTextColor: "#f5f5f7",
+                activationBorderColor: "#3a3a3c",
+                activationBkgColor: "#1d1d1f",
+                sequenceNumberColor: "#f5f5f7",
+            } : {
+                fontFamily: "var(--type-mono), ui-monospace, monospace",
+                fontSize: "14px",
+                primaryColor: "#ffffff",
+                primaryTextColor: "#111111",
+                primaryBorderColor: "#d2d2d7",
+                lineColor: "#505058",
+                textColor: "#1d1d1f",
+                actorBorder: "#d2d2d7",
+                actorBkg: "#fafafc",
+                actorTextColor: "#1d1d1f",
+                actorLineColor: "#d2d2d7",
+                labelBoxBkgColor: "#ffffff",
+                labelBoxBorderColor: "#d2d2d7",
+                labelTextBkgColor: "#ffffff",
+                labelTextColor: "#1d1d1f",
+                loopTextColor: "#1d1d1f",
+                noteBorderColor: "#d2d2d7",
+                noteBkgColor: "#f1f1f3",
+                noteTextColor: "#1d1d1f",
+                activationBorderColor: "#d2d2d7",
+                activationBkgColor: "#f1f1f3",
+                sequenceNumberColor: "#1d1d1f",
             },
             flowchart: { htmlLabels: true, useMaxWidth: true, curve: "basis" },
         });
+
+        // Inject dynamic CSS overrides using variables so SVGs update cleanly on theme toggles
+        var style = document.createElement("style");
+        style.textContent = [
+            "pre.mermaid svg .actor { fill: var(--bg-alt, #fafafc) !important; stroke: var(--border, #3a3a3e) !important; }",
+            "pre.mermaid svg .actor text { fill: var(--ink, #111111) !important; }",
+            "pre.mermaid svg .actor-line { stroke: var(--border, #3a3a3e) !important; }",
+            "pre.mermaid svg .messageLine0, pre.mermaid svg .messageLine1 { stroke: var(--ink-mute, #3a3a3e) !important; }",
+            "pre.mermaid svg .messageText { fill: var(--ink, #111111) !important; stroke: none !important; }",
+            "pre.mermaid svg .labelBox { fill: var(--card, #ffffff) !important; stroke: var(--border, #3a3a3e) !important; }",
+            "pre.mermaid svg .labelText { fill: var(--ink, #111111) !important; }",
+            "pre.mermaid svg .note { fill: var(--bg-alt, #fafafc) !important; stroke: var(--border, #3a3a3e) !important; }",
+            "pre.mermaid svg .noteText { fill: var(--ink, #111111) !important; }",
+            "pre.mermaid svg .loopText { fill: var(--ink, #111111) !important; }",
+            "pre.mermaid svg .loopLine { stroke: var(--border, #3a3a3e) !important; fill: none !important; }",
+            "pre.mermaid svg .active { fill: var(--bg-alt, #fafafc) !important; stroke: var(--border, #3a3a3e) !important; }",
+            "pre.mermaid svg .edgePath .path { stroke: var(--ink-mute, #3a3a3e) !important; }",
+            "pre.mermaid svg .edgeLabel rect { fill: var(--card, #ffffff) !important; }",
+            "pre.mermaid svg .edgeLabel text { fill: var(--ink, #111111) !important; }",
+            "pre.mermaid svg marker { fill: var(--ink-mute, #3a3a3e) !important; stroke: none !important; }"
+        ].join("\n");
+        document.head.appendChild(style);
+
         await mod.default.run({ querySelector: "pre.mermaid" });
     } catch (err) {
         console.warn("mermaid load failed", err);

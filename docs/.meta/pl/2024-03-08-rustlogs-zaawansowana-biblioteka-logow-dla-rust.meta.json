@@ -1,13 +1,13 @@
 {
-  "reading_time": 1,
-  "description": "RustLogs to zaawansowana biblioteka logów dla aplikacji Rust, oferująca strukturalne logowanie i wysoką wydajność.",
-  "title": "RustLogs: zaawansowana biblioteka logów dla aplikacji Rust",
-  "locale": "pl_PL",
   "subtitle": "Wydajne i konfigurowalne logowanie dla Rust",
-  "keywords": "RustLogs, Rust, logowanie, log, biblioteka, open source, obserwowalność",
-  "banner": "https://cloudcdn.pro/stocks/images/rustlogs.webp",
+  "title": "RustLogs: zaawansowana biblioteka logów dla aplikacji Rust",
+  "description": "RustLogs to zaawansowana biblioteka logów dla aplikacji Rust, oferująca strukturalne logowanie i wysoką wydajność.",
   "word_count": 172,
+  "language": "pl-PL",
   "date": "Mar 08, 2024",
+  "locale": "pl_PL",
+  "banner": "https://cloudcdn.pro/stocks/images/rustlogs.webp",
   "banner_alt": "Logo RustLogs z motywem strukturalnego logowania",
-  "language": "pl-PL"
+  "keywords": "RustLogs, Rust, logowanie, log, biblioteka, open source, obserwowalność",
+  "reading_time": 1
 }

@@ -1,13 +1,13 @@
 {
-  "banner_alt": "Banner van het EPAA-whitepaper over kwantumveilige betalingen",
+  "locale": "nl_NL",
   "language": "nl-NL",
-  "description": "Branche-whitepaper voor de Emerging Payments Association Asia over de structurele dreiging die kwantumcomputing vormt voor de betaalinfrastructuur.",
   "banner": "https://cloudcdn.pro/stocks/images/digital-nodes.webp",
+  "description": "Branche-whitepaper voor de Emerging Payments Association Asia over de structurele dreiging die kwantumcomputing vormt voor de betaalinfrastructuur.",
   "title": "Kwantumveilige betalingen — EPAA-whitepaper",
+  "subtitle": "Waarom de betaalsector nu moet handelen tegen de kwantumdreiging",
+  "keywords": "EPAA, kwantumveilige betalingen, post-kwantum, whitepaper, betalingsverkeer, banking",
+  "banner_alt": "Banner van het EPAA-whitepaper over kwantumveilige betalingen",
   "date": "September 01, 2025",
   "word_count": 796,
-  "subtitle": "Waarom de betaalsector nu moet handelen tegen de kwantumdreiging",
-  "reading_time": 3,
-  "keywords": "EPAA, kwantumveilige betalingen, post-kwantum, whitepaper, betalingsverkeer, banking",
-  "locale": "nl_NL"
+  "reading_time": 3
 }

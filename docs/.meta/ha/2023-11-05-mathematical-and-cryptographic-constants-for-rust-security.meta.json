@@ -1,14 +1,14 @@
 {
-  "locale": "ha_NG",
-  "reading_time": 4,
-  "date": "Nov 05, 2023",
-  "tags": "math, cybersecurity, cryptography, Rust, programming, encryption, communication, constants, constants in Rust, Common library, ISO 20022, post-quantum cryptography, quantum computing, AI, open source",
-  "banner_alt": "Lissafin Mathematics",
-  "language": "ha-NG",
-  "keywords": "constants na lissafi, constants na cryptography, Rust security, sadarwa mai aminci, encryption, RSA, elliptic curve cryptography, Common (CMN) library, Rust applications, lissafin lissafi",
-  "word_count": 877,
-  "description": "Kare ingancin code da constants na lissafi da cryptography da aka tabbatar sosai, ƙarfafa amincin memory da concurrency don ƙara tsaro na code.",
-  "subtitle": "Constants na lissafi da cryptography da aka tabbatar don amincin memory-safe Rust.",
   "title": "Mathematical and Cryptographic Constants for Rust Security",
-  "banner": "https://cloudcdn.pro/stocks/images/antoine-dautry-05A-kdOH6Hw.webp"
+  "keywords": "constants na lissafi, constants na cryptography, Rust security, sadarwa mai aminci, encryption, RSA, elliptic curve cryptography, Common (CMN) library, Rust applications, lissafin lissafi",
+  "date": "Nov 05, 2023",
+  "banner_alt": "Lissafin Mathematics",
+  "reading_time": 4,
+  "subtitle": "Constants na lissafi da cryptography da aka tabbatar don amincin memory-safe Rust.",
+  "locale": "ha_NG",
+  "language": "ha-NG",
+  "tags": "math, cybersecurity, cryptography, Rust, programming, encryption, communication, constants, constants in Rust, Common library, ISO 20022, post-quantum cryptography, quantum computing, AI, open source",
+  "banner": "https://cloudcdn.pro/stocks/images/antoine-dautry-05A-kdOH6Hw.webp",
+  "description": "Kare ingancin code da constants na lissafi da cryptography da aka tabbatar sosai, ƙarfafa amincin memory da concurrency don ƙara tsaro na code.",
+  "word_count": 877
 }

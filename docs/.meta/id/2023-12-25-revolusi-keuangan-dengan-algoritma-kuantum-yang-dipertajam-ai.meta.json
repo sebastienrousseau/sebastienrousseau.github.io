@@ -1,13 +1,13 @@
 {
-  "date": "Dec 25, 2023",
-  "word_count": 298,
-  "subtitle": "Melepaskan Kekuatan Quantum untuk Inovasi Keuangan: AI di Jantung Algoritma Generasi Berikutnya",
-  "reading_time": 1,
-  "keywords": "Quantum Computing, AI Algorithms, Matematika Keuangan, Banking Technology, Manajemen Risiko, Algorithm Design, Analisis Data, Strategi Investasi, Quantum Finance, Machine Learning",
-  "title": "[ID DRAFT] Revolutionising Finance with AI-Enhanced Quantum Algorithms",
   "language": "id-ID",
+  "keywords": "Quantum Computing, AI Algorithms, Matematika Keuangan, Banking Technology, Manajemen Risiko, Algorithm Design, Analisis Data, Strategi Investasi, Quantum Finance, Machine Learning",
+  "date": "Dec 25, 2023",
+  "title": "[ID DRAFT] Revolutionising Finance with AI-Enhanced Quantum Algorithms",
+  "word_count": 298,
   "locale": "id_ID",
-  "description": "Jelajahi peran transformatif AI dalam algoritma kuantum untuk keuangan, dengan fokus pada kerumitan matematisnya dan aplikasi perbankan.",
   "banner": "https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp",
-  "banner_alt": "Merevolusi Keuangan dengan Quantum Algorithms yang Ditingkatkan AI"
+  "banner_alt": "Merevolusi Keuangan dengan Quantum Algorithms yang Ditingkatkan AI",
+  "reading_time": 1,
+  "subtitle": "Melepaskan Kekuatan Quantum untuk Inovasi Keuangan: AI di Jantung Algoritma Generasi Berikutnya",
+  "description": "Jelajahi peran transformatif AI dalam algoritma kuantum untuk keuangan, dengan fokus pada kerumitan matematisnya dan aplikasi perbankan."
 }

@@ -1,14 +1,14 @@
 {
-  "locale": "ar_SA",
-  "banner": "https://cloudcdn.pro/stocks/images/hsbc-from-the-docks.webp",
   "banner_alt": "بنك HSBC من جهة الأرصفة",
-  "keywords": "توزيع المفاتيح الكمومي، QKD، الأمن الكمومي، الصيرفة، الصناعة المالية، التمويل الرقمي، الأمن السيبراني، الحوسبة الكمومية، HSBC، تجربة الحماية الكمومية، المعاملات المالية",
-  "word_count": 707,
-  "subtitle": "توزيع المفاتيح الكمومي (QKD) لأمن بدرجة المؤسسات المالية",
-  "title": "توزيع المفاتيح الكمومي يُحدث ثورة في أمن القطاع المصرفي",
-  "reading_time": 3,
-  "tags": "quantum, key, distribution, cryptography, cybersecurity, finance, banking, digital, innovation, blockchain، Ethereum، عقود ذكية، تجزئة تشفيرية، شجرة Merkle، آلية توافق، إثبات العمل، EVM، Solidity، ERC-20، سجل موزع، تمويل لا مركزي, الحوسبة الكمومية, hsbc, trading, data, protection, future, ISO 20022, DORA, التشفير ما بعد الكمي, AI",
-  "description": "في الوقت الذي تهدّد فيه الحواسيب الكمومية أساليب التشفير التقليدية، يبرز توزيع المفاتيح الكمومي (QKD) باعتباره نقلة نوعية تقدّم أمناً لا مثيل له.",
   "language": "ar",
-  "date": "Dec 11, 2023"
+  "keywords": "توزيع المفاتيح الكمومي، QKD، الأمن الكمومي، الصيرفة، الصناعة المالية، التمويل الرقمي، الأمن السيبراني، الحوسبة الكمومية، HSBC، تجربة الحماية الكمومية، المعاملات المالية",
+  "description": "في الوقت الذي تهدّد فيه الحواسيب الكمومية أساليب التشفير التقليدية، يبرز توزيع المفاتيح الكمومي (QKD) باعتباره نقلة نوعية تقدّم أمناً لا مثيل له.",
+  "tags": "quantum, key, distribution, cryptography, cybersecurity, finance, banking, digital, innovation, blockchain، Ethereum، عقود ذكية، تجزئة تشفيرية، شجرة Merkle، آلية توافق، إثبات العمل، EVM، Solidity، ERC-20، سجل موزع، تمويل لا مركزي, الحوسبة الكمومية, hsbc, trading, data, protection, future, ISO 20022, DORA, التشفير ما بعد الكمي, AI",
+  "subtitle": "توزيع المفاتيح الكمومي (QKD) لأمن بدرجة المؤسسات المالية",
+  "date": "Dec 11, 2023",
+  "title": "توزيع المفاتيح الكمومي يُحدث ثورة في أمن القطاع المصرفي",
+  "locale": "ar_SA",
+  "word_count": 707,
+  "banner": "https://cloudcdn.pro/stocks/images/hsbc-from-the-docks.webp",
+  "reading_time": 3
 }
