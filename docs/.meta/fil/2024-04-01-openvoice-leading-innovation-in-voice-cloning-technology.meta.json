@@ -1,14 +1,14 @@
 {
-  "subtitle": "أداة الاستنساخ الصوتي مفتوحة المصدر من الجيل التالي",
-  "keywords": "OpenVoice, تقنية الاستنساخ الصوتي, الكلام الصناعي بالذكاء الاصطناعي, الاستنساخ الصوتي مفتوح المصدر, التركيب الصوتي عبر اللغات, الاستنساخ الصوتي الفوري, التحكّم في الأسلوب الصوتي, تقنية صوتية للوصول, الأصوات في صناعة الترفيه, الذكاء الاصطناعي الصوتي لخدمة العملاء",
-  "word_count": 918,
-  "description": "OpenVoice من MIT وTsinghua وMyShell: استنساخ صوتي بمستوى الإنتاج مع التحكّم في النبرة واللكنة والعاطفة — والمقايضات التي يجدر معرفتها.",
-  "reading_time": 4,
-  "locale": "fil_PH",
-  "language": "fil-PH",
   "date": "Apr 01, 2024",
-  "banner_alt": "لافتة تُمثّل طبقات من الملامح بتدرّجات لون نابضة",
+  "keywords": "OpenVoice, تقنية الاستنساخ الصوتي, الكلام الصناعي بالذكاء الاصطناعي, الاستنساخ الصوتي مفتوح المصدر, التركيب الصوتي عبر اللغات, الاستنساخ الصوتي الفوري, التحكّم في الأسلوب الصوتي, تقنية صوتية للوصول, الأصوات في صناعة الترفيه, الذكاء الاصطناعي الصوتي لخدمة العملاء",
   "banner": "https://cloudcdn.pro/stocks/images/open-voice.webp",
+  "subtitle": "أداة الاستنساخ الصوتي مفتوحة المصدر من الجيل التالي",
+  "language": "fil-PH",
+  "banner_alt": "لافتة تُمثّل طبقات من الملامح بتدرّجات لون نابضة",
+  "reading_time": 4,
+  "word_count": 918,
+  "locale": "fil_PH",
   "title": "OpenVoice: ريادة الابتكار في تقنية الاستنساخ الصوتي",
-  "tags": "OpenVoice, Voice Cloning, Synthetic Speech, open source, Cross-Lingual, Instant Cloning, Voice Control, Accessibility, Entertainment, Customer Service, ISO 20022, post-quantum cryptography, AI, DORA, platform engineering, sovereign cloud, cloud native banking"
+  "tags": "OpenVoice, Voice Cloning, Synthetic Speech, open source, Cross-Lingual, Instant Cloning, Voice Control, Accessibility, Entertainment, Customer Service, ISO 20022, post-quantum cryptography, AI, DORA, platform engineering, sovereign cloud, cloud native banking",
+  "description": "OpenVoice من MIT وTsinghua وMyShell: استنساخ صوتي بمستوى الإنتاج مع التحكّم في النبرة واللكنة والعاطفة — والمقايضات التي يجدر معرفتها."
 }

@@ -4,13 +4,13 @@
   <link href="https://sebastienrousseau.com/ja/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/ja/"/>
   <id>https://sebastienrousseau.com/ja/</id>
-  <updated>2026-06-07T22:11:07+00:00</updated>
+  <updated>2026-06-08T06:26:13+00:00</updated>
   <entry>
     <title>2026 年の自律トレジャリー指数:エージェント型トレジャリー、プログラマブル流動性、トークン化預金、リアルタイムキャッシュ管理</title>
     <link href="https://sebastienrousseau.com/ja/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/"/>
     <id>https://sebastienrousseau.com/ja/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/</id>
-    <updated>2026-06-07T22:11:07+00:00</updated>
-    <published>2026-06-07T22:11:07+00:00</published>
+    <updated>2026-06-08T06:26:13+00:00</updated>
+    <published>2026-06-08T06:26:13+00:00</published>
     <summary>2026 年の自律トレジャリー準備態勢を測定する指数 — エージェント型トレジャリー、プログラマブル流動性、トークン化預金、リアルタイム決済、自動キャッシュ管理を統合的に評価します。</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
@@ -18,8 +18,8 @@
     <title>2026 年銀行インフラ指数:エージェント型 AI、量子安全セキュリティ、クラウドネイティブ・レジリエンス、ホールセール決済の準備度計測</title>
     <link href="https://sebastienrousseau.com/ja/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/"/>
     <id>https://sebastienrousseau.com/ja/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/</id>
-    <updated>2026-06-07T22:11:07+00:00</updated>
-    <published>2026-06-07T22:11:07+00:00</published>
+    <updated>2026-06-08T06:26:13+00:00</updated>
+    <published>2026-06-08T06:26:13+00:00</published>
     <summary>Stanford AI Index に着想を得た 2026 年の銀行インフラ指数。エージェント型 AI、量子安全セキュリティ、クラウドネイティブ・レジリエンス、グローバルホールセール決済の準備度を一つの運営モデルで計測します。</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
@@ -27,8 +27,8 @@
     <title>2026 年のマルチレール銀行:カード、A2A、ステーブルコイン、RTP、FedNow、Open Banking を一つの戦略に</title>
     <link href="https://sebastienrousseau.com/ja/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/"/>
     <id>https://sebastienrousseau.com/ja/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</id>
-    <updated>2026-06-07T22:11:07+00:00</updated>
-    <published>2026-06-07T22:11:07+00:00</published>
+    <updated>2026-06-08T06:26:13+00:00</updated>
+    <published>2026-06-08T06:26:13+00:00</published>
     <summary>FedNow は 24/7 の事前資金供給型流動性を要求します。ACH は安価ですが T+1 です。USDC はアトミックに決済しますがウォレット基盤を必要とします。2026 年のマルチレール銀行は、ISO 20022 pacs.008 を読み取るオーケストレーション・エンジンが、コスト・ファイナリティ・流動性コストに基づいて各決済の経路を決定します。</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
@@ -36,8 +36,8 @@
     <title>耐量子決済基盤:銀行が既存レールを後付け対応ではなく置換すべき理由</title>
     <link href="https://sebastienrousseau.com/ja/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/"/>
     <id>https://sebastienrousseau.com/ja/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</id>
-    <updated>2026-06-07T22:11:07+00:00</updated>
-    <published>2026-06-07T22:11:07+00:00</published>
+    <updated>2026-06-08T06:26:13+00:00</updated>
+    <published>2026-06-08T06:26:13+00:00</published>
     <summary>耐量子暗号は決済レールに二者択一を迫ります。ML-KEM/ML-DSA 向けに設計されていない SWIFT MT・ISO 20022 封筒に RSA/ECC を後付けするか、暗号アジリティを備えた基盤へ置換するか。HNDL が実害となる前に判断が必要です。</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>

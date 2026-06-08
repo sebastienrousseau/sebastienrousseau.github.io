@@ -1,13 +1,13 @@
 {
-  "word_count": 473,
-  "language": "uk-UA",
-  "description": "Дізнайтесь, як Àkàndé використовує розуміння природної мови OpenAI GPT, резюме PDF та ефективне кешування, щоб переосмислити особисту й виконавчу допомогу.",
-  "subtitle": "Забезпечення безперебійної взаємодії за допомогою передових технологій штучного інтелекту",
-  "banner_alt": "Сучасний сферичний пристрій білого кольору",
-  "locale": "uk_UA",
-  "title": "[UK DRAFT] Àkàndé: GPT-Powered Voice Assistant for Executives",
   "keywords": "Àkàndé, Голосовий асистент, Розуміння природної мови, Резюме PDF, Ефективне кешування, OpenAI GPT, Виконавча допомога, Особиста допомога, Цифрові асистенти, Технологічні інновації",
   "date": "Feb 12, 2024",
+  "subtitle": "Забезпечення безперебійної взаємодії за допомогою передових технологій штучного інтелекту",
+  "title": "[UK DRAFT] Àkàndé: GPT-Powered Voice Assistant for Executives",
   "banner": "https://cloudcdn.pro/stocks/images/akande-voice-assistant.webp",
-  "reading_time": 2
+  "word_count": 473,
+  "language": "uk-UA",
+  "locale": "uk_UA",
+  "banner_alt": "Сучасний сферичний пристрій білого кольору",
+  "reading_time": 2,
+  "description": "Дізнайтесь, як Àkàndé використовує розуміння природної мови OpenAI GPT, резюме PDF та ефективне кешування, щоб переосмислити особисту й виконавчу допомогу."
 }

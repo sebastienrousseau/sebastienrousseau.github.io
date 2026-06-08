@@ -1,13 +1,13 @@
 {
-  "title": "[UK DRAFT] State of AI and Quantum Computing in Banking: A 2023 Review",
-  "locale": "uk_UA",
-  "date": "Dec 18, 2023",
+  "word_count": 356,
   "description": "Технологічний ландшафт 2023 року: AI та Quantum Computing революціонізують банківництво, зростання open-source моделей та розвиток регулювання й управління",
-  "reading_time": 1,
-  "language": "uk-UA",
-  "banner": "https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp",
   "keywords": "AI у банківництві, Quantum Computing, фінансові технології, open-source AI, управління ризиками, квантова безпека, регулювання AI, етика AI, управління AI, банківські інновації",
-  "banner_alt": "Стан AI та Quantum Computing у банківництві: огляд 2023 року",
+  "date": "Dec 18, 2023",
+  "locale": "uk_UA",
   "subtitle": "Формування майбутнього банківництва: AI, Quantum Computing, моделі з відкритим кодом та регуляторне середовище",
-  "word_count": 356
+  "banner": "https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp",
+  "language": "uk-UA",
+  "banner_alt": "Стан AI та Quantum Computing у банківництві: огляд 2023 року",
+  "title": "[UK DRAFT] State of AI and Quantum Computing in Banking: A 2023 Review",
+  "reading_time": 1
 }

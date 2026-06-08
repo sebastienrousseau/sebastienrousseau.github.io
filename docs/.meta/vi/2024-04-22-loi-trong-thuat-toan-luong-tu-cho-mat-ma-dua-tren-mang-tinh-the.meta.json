@@ -1,13 +1,13 @@
 {
+  "reading_time": 3,
+  "banner": "https://cloudcdn.pro/stocks/images/lattice-secure-banner.webp",
+  "locale": "vi_VN",
   "description": "Một lỗi đã được phát hiện trong thuật toán lượng tử của Yilei Chen cho LWE, tạm thời bảo vệ mật mã dựa trên mạng tinh thể và nhấn mạnh nhu cầu nghiên cứu liên tục.",
   "language": "vi-VN",
-  "reading_time": 3,
-  "subtitle": "Cộng đồng mật mã phục hồi sau lo lắng Chen-LWE",
-  "date": "April 22, 2024",
-  "locale": "vi_VN",
   "banner_alt": "Mạng tinh thể an toàn với khoá mật mã",
-  "title": "Lỗi được phát hiện trong thuật toán lượng tử cho mật mã dựa trên mạng tinh thể",
-  "banner": "https://cloudcdn.pro/stocks/images/lattice-secure-banner.webp",
   "keywords": "LWE, mạng tinh thể, mật mã, Chen, Kyber, PQC, hậu lượng tử, an toàn",
-  "word_count": 702
+  "subtitle": "Cộng đồng mật mã phục hồi sau lo lắng Chen-LWE",
+  "title": "Lỗi được phát hiện trong thuật toán lượng tử cho mật mã dựa trên mạng tinh thể",
+  "word_count": 702,
+  "date": "April 22, 2024"
 }

@@ -1,13 +1,13 @@
 {
-  "locale": "it_IT",
-  "date": "January 9, 2018",
-  "title": "Comprendere la tecnologia dietro la blockchain",
-  "language": "it-IT",
-  "banner_alt": "Laptop spento su un tavolo di legno marrone",
   "word_count": 1017,
-  "subtitle": "Crittografia, consenso e libri mastri distribuiti spiegati",
+  "locale": "it_IT",
+  "title": "Comprendere la tecnologia dietro la blockchain",
   "reading_time": 5,
+  "description": "Un'analisi tecnica dei componenti della blockchain: funzioni hash, alberi di Merkle, firme digitali, consenso distribuito e l'architettura che rende possibile il libro mastro condiviso.",
   "banner": "https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp",
+  "date": "January 9, 2018",
+  "subtitle": "Crittografia, consenso e libri mastri distribuiti spiegati",
+  "language": "it-IT",
   "keywords": "blockchain, crittografia, hash, Merkle, consenso, Bizantino, P2P, libro mastro distribuito",
-  "description": "Un'analisi tecnica dei componenti della blockchain: funzioni hash, alberi di Merkle, firme digitali, consenso distribuito e l'architettura che rende possibile il libro mastro condiviso."
+  "banner_alt": "Laptop spento su un tavolo di legno marrone"
 }
