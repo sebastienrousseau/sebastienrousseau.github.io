@@ -1,14 +1,14 @@
 {
-  "description": "Ṣàwárí RustLogs (RLG), ìwé-ìkàwé ìgbàánú onírúurú fún Rust, pẹ̀lú àwọn ìpele ìgbàánú tó ṣètò, ìgbàánú àsínú, àti ọpọlọpọ àwọn àṣàyàn ìdásí.",
+  "language": "yo-NG",
   "locale": "yo_NG",
   "subtitle": "Mú Ìlànà Ìgbàánú Rust Rẹ Dára Sí i",
-  "keywords": "ìwé-ìkàwé ìgbàánú Rust, ìgbàánú àsínú Rust, àwọn ìpele ìgbàánú tó ṣètò, ìtúnṣe àwọn ètò Rust, ìgbàánú tó lè yípò Rust, àwọn irinṣẹ ìdàgbàsókè Rust, àwọn ẹ̀yà RustLogs RLG, ìgbàánú tó múná Rust, àpapọ̀ RustLogs, àkọsílẹ̀ RustLogs",
-  "title": "RustLogs (RLG): Structured Logging Library for Rust",
-  "banner": "https://cloudcdn.pro/stocks/images/rustlogs.webp",
-  "banner_alt": "Àpáta fún RustLogs (RLG)",
-  "tags": "Rust, Logging, Asynchronous, Structured, Customisable, Debugging, Development, RustLogs, Integration, Documentation, ISO 20022, ìsirò ìpamọ́ lẹ́yìn quantum, AI, open source",
-  "reading_time": 10,
-  "language": "yo-NG",
   "date": "Mar 08, 2024",
-  "word_count": 2041
+  "tags": "Rust, Logging, Asynchronous, Structured, Customisable, Debugging, Development, RustLogs, Integration, Documentation, ISO 20022, ìsirò ìpamọ́ lẹ́yìn quantum, AI, open source",
+  "word_count": 2041,
+  "keywords": "ìwé-ìkàwé ìgbàánú Rust, ìgbàánú àsínú Rust, àwọn ìpele ìgbàánú tó ṣètò, ìtúnṣe àwọn ètò Rust, ìgbàánú tó lè yípò Rust, àwọn irinṣẹ ìdàgbàsókè Rust, àwọn ẹ̀yà RustLogs RLG, ìgbàánú tó múná Rust, àpapọ̀ RustLogs, àkọsílẹ̀ RustLogs",
+  "reading_time": 10,
+  "title": "RustLogs (RLG): Structured Logging Library for Rust",
+  "description": "Ṣàwárí RustLogs (RLG), ìwé-ìkàwé ìgbàánú onírúurú fún Rust, pẹ̀lú àwọn ìpele ìgbàánú tó ṣètò, ìgbàánú àsínú, àti ọpọlọpọ àwọn àṣàyàn ìdásí.",
+  "banner": "https://cloudcdn.pro/stocks/images/rustlogs.webp",
+  "banner_alt": "Àpáta fún RustLogs (RLG)"
 }

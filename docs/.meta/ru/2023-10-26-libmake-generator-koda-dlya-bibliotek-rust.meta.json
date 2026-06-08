@@ -1,13 +1,13 @@
 {
-  "word_count": 225,
-  "description": "libmake — это open-source генератор кода, сокращающий повторяющиеся задачи и помогающий создавать качественные Rust-библиотеки.",
-  "banner": "https://cloudcdn.pro/stocks/images/libmake-banner.webp",
   "language": "ru-RU",
-  "locale": "ru_RU",
   "title": "libmake: генератор кода для создания качественных Rust-библиотек",
-  "subtitle": "Меньше повторяющейся работы, больше времени на главное",
-  "date": "October 26, 2023",
-  "keywords": "libmake, генерация кода, Rust, шаблоны, инструменты разработчика, open source, продуктивность, CLI",
   "reading_time": 1,
-  "banner_alt": "Логотип и баннер libmake"
+  "banner_alt": "Логотип и баннер libmake",
+  "locale": "ru_RU",
+  "banner": "https://cloudcdn.pro/stocks/images/libmake-banner.webp",
+  "subtitle": "Меньше повторяющейся работы, больше времени на главное",
+  "word_count": 225,
+  "keywords": "libmake, генерация кода, Rust, шаблоны, инструменты разработчика, open source, продуктивность, CLI",
+  "date": "October 26, 2023",
+  "description": "libmake — это open-source генератор кода, сокращающий повторяющиеся задачи и помогающий создавать качественные Rust-библиотеки."
 }

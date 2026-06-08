@@ -1,14 +1,14 @@
 {
   "word_count": 665,
-  "banner": "https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp",
-  "date": "January 2, 2018",
   "title": "البلوكشين: التقنية التي تهمّ في 2018",
-  "subtitle": "تعمية المفتاح الخاص وشبكات النِدّ-لنِدّ في خدمة معاملاتٍ آمنة",
   "description": "حكاية الرحلة الاستثنائية لتأمين المعاملات الرقمية عبر تعمية المفتاح الخاص وشبكات النِدّ-لنِدّ (P2P).",
-  "language": "he-IL",
-  "locale": "he_IL",
+  "date": "January 2, 2018",
   "banner_alt": "حاسوب محمول مُطفأ فوق طاولة خشبية بُنّية",
-  "tags": "pain001, ISO 20022, payment automation, cost reduction, payments, payment files, pain message, DORA, קריפטוגרפיה פוסט-קוונטית, AI, פיקדונות מתואדים, Rust, בנקאות ענן-נייטיב, תשלומים חוצי גבולות, סטייבלקוינים",
+  "subtitle": "تعمية المفتاح الخاص وشبكات النِدّ-لنِدّ في خدمة معاملاتٍ آمنة",
+  "banner": "https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp",
+  "keywords": "blockchain, العملة المشفّرة, Bitcoin, P2P, smart contract, السجل الموزّع, التمويل, سلسلة التوريد, الهويّة الرقمية, الترميز",
   "reading_time": 3,
-  "keywords": "blockchain, العملة المشفّرة, Bitcoin, P2P, smart contract, السجل الموزّع, التمويل, سلسلة التوريد, الهويّة الرقمية, الترميز"
+  "tags": "pain001, ISO 20022, payment automation, cost reduction, payments, payment files, pain message, DORA, קריפטוגרפיה פוסט-קוונטית, AI, פיקדונות מתואדים, Rust, בנקאות ענן-נייטיב, תשלומים חוצי גבולות, סטייבלקוינים",
+  "locale": "he_IL",
+  "language": "he-IL"
 }

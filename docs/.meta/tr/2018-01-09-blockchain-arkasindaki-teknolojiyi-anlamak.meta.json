@@ -1,13 +1,13 @@
 {
+  "banner_alt": "Soyut bir blockchain ağ görselleştirmesi",
+  "description": "Blockchain'in mimarisi: bloklar, hash'ler, konsensüs algoritmaları ve güveni mümkün kılan kriptografi.",
+  "keywords": "blockchain, kriptografi, hash, konsensüs, proof-of-work, proof-of-stake, dağıtık defter",
   "subtitle": "Dağıtık defter sistemini destekleyen temel mekanizmalar",
   "language": "tr-TR",
+  "title": "Blockchain'in arkasındaki teknolojiyi anlamak",
+  "locale": "tr_TR",
   "word_count": 1014,
   "reading_time": 5,
   "date": "January 9, 2018",
-  "banner_alt": "Soyut bir blockchain ağ görselleştirmesi",
-  "keywords": "blockchain, kriptografi, hash, konsensüs, proof-of-work, proof-of-stake, dağıtık defter",
-  "description": "Blockchain'in mimarisi: bloklar, hash'ler, konsensüs algoritmaları ve güveni mümkün kılan kriptografi.",
-  "title": "Blockchain'in arkasındaki teknolojiyi anlamak",
-  "banner": "https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp",
-  "locale": "tr_TR"
+  "banner": "https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp"
 }

@@ -1,14 +1,14 @@
 {
-  "locale": "yo_NG",
-  "subtitle": "Iwadii Jijinlẹ sinu Ilọsiwaju AI Tuntun ti Google",
-  "word_count": 740,
-  "title": "Unlocking Gemini 1.5: Google's AI Revolution Explained",
   "tags": "Gemini 1.5, Google AI, AI Efficiency, AI Quality, Context Window, In-Context Learning, AI Use Cases, AI Revolution, Technology Transformation, Data Analysis, ISO 20022, ìsirò ìpamọ́ lẹ́yìn quantum, AI, DORA, tokenised deposits, platform engineering, sovereign cloud, cloud native banking, ìsanwó kọjá-ààlà, stablecoins",
-  "reading_time": 3,
-  "description": "Gemini 1.5 lati ọdọ Google faagun awọn ferese ọrọ-ọrọ ju 1M ami lọ. Kini eyi ṣii fun iṣuna-owo ti a fikun pẹlu imularada ati awọn ipadabọ ti o tọ si mimọ.",
   "keywords": "Gemini 1.5, Google AI, faaji Mixture-of-Experts, ṣiṣedeede iṣiro, faagun ferese ọrọ-ọrọ, imọ-ẹrọ AI titun, iyipada itupalẹ data, ẹkọ ninu ọrọ-ọrọ, awọn lilo AI, iyipada imọ-ẹrọ",
-  "date": "Feb 19, 2024",
+  "description": "Gemini 1.5 lati ọdọ Google faagun awọn ferese ọrọ-ọrọ ju 1M ami lọ. Kini eyi ṣii fun iṣuna-owo ti a fikun pẹlu imularada ati awọn ipadabọ ti o tọ si mimọ.",
   "banner": "https://cloudcdn.pro/stocks/images/abstract-visualization-of-gemini.webp",
+  "subtitle": "Iwadii Jijinlẹ sinu Ilọsiwaju AI Tuntun ti Google",
+  "date": "Feb 19, 2024",
+  "title": "Unlocking Gemini 1.5: Google's AI Revolution Explained",
+  "reading_time": 3,
+  "locale": "yo_NG",
+  "language": "yo-NG",
   "banner_alt": "Aworan àkójọpọ ti awọn nẹtiwọọki AI, ti o ṣe aṣoju awọn agbara Gemini 1.5",
-  "language": "yo-NG"
+  "word_count": 740
 }

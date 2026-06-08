@@ -1,13 +1,13 @@
 {
-  "keywords": "Quantencomputing, Quantenalgorithmus, gitterbasierte Kryptographie, LWE, Verschlüsselung, Post-Quanten-Kryptographie, Cybersicherheit, Yilei Chen, kryptographische Forschung, Sicherheitsbedrohungen",
-  "language": "de",
-  "banner": "https://cloudcdn.pro/stocks/images/digital-constellation.webp",
+  "banner_alt": "Banner mit Netzwerkknoten in einem digitalen blauen Raum",
   "word_count": 1159,
   "title": "Ein Quantenalgorithmus fordert die gitterbasierte Kryptographie heraus",
-  "description": "Ein neuer Quantenalgorithmus mit polynomieller Laufzeit von Yilei Chen zielt auf die gitterbasierte Kryptographie. Implikationen für Post-Quanten-Standards einschließlich CRYSTALS-Kyber.",
-  "subtitle": "Der nächste Quantenalgorithmus mit polynomieller Laufzeit gegen die gitterbasierte Kryptographie",
   "reading_time": 5,
-  "banner_alt": "Banner mit Netzwerkknoten in einem digitalen blauen Raum",
+  "banner": "https://cloudcdn.pro/stocks/images/digital-constellation.webp",
+  "subtitle": "Der nächste Quantenalgorithmus mit polynomieller Laufzeit gegen die gitterbasierte Kryptographie",
   "locale": "de_DE",
-  "date": "April 15, 2024"
+  "date": "April 15, 2024",
+  "language": "de",
+  "keywords": "Quantencomputing, Quantenalgorithmus, gitterbasierte Kryptographie, LWE, Verschlüsselung, Post-Quanten-Kryptographie, Cybersicherheit, Yilei Chen, kryptographische Forschung, Sicherheitsbedrohungen",
+  "description": "Ein neuer Quantenalgorithmus mit polynomieller Laufzeit von Yilei Chen zielt auf die gitterbasierte Kryptographie. Implikationen für Post-Quanten-Standards einschließlich CRYSTALS-Kyber."
 }

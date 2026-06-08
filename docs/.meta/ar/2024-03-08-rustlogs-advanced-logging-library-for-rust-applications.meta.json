@@ -1,14 +1,14 @@
 {
   "tags": "Rust, Logging, Asynchronous, Structured, Customisable, Debugging, Development, RustLogs, Integration, Documentation, ISO 20022, التشفير ما بعد الكمي, AI, open source",
+  "title": "RustLogs (RLG): مكتبة تسجيل منظَّمة للغة Rust",
+  "language": "ar",
+  "word_count": 1563,
   "subtitle": "تبسيط سير عمل التسجيل في Rust",
-  "keywords": "مكتبة تسجيل Rust, تسجيل غير متزامن في Rust, تنسيقات سجلات منظَّمة, تصحيح تطبيقات Rust, تسجيل قابل للتخصيص في Rust, أدوات تطوير Rust, ميزات RustLogs RLG, تسجيل فعّال في Rust, تكامل RustLogs, توثيق RustLogs",
-  "description": "اكتشف RustLogs (RLG)، مكتبة التسجيل المرنة للغة Rust مع تنسيقات سجلات منظَّمة وتسجيل غير متزامن وخيارات تخصيص واسعة.",
-  "reading_time": 7,
+  "locale": "ar_SA",
   "date": "Mar 08, 2024",
+  "description": "اكتشف RustLogs (RLG)، مكتبة التسجيل المرنة للغة Rust مع تنسيقات سجلات منظَّمة وتسجيل غير متزامن وخيارات تخصيص واسعة.",
   "banner": "https://cloudcdn.pro/stocks/images/rustlogs.webp",
   "banner_alt": "لافتة RustLogs (RLG)",
-  "title": "RustLogs (RLG): مكتبة تسجيل منظَّمة للغة Rust",
-  "word_count": 1563,
-  "language": "ar",
-  "locale": "ar_SA"
+  "keywords": "مكتبة تسجيل Rust, تسجيل غير متزامن في Rust, تنسيقات سجلات منظَّمة, تصحيح تطبيقات Rust, تسجيل قابل للتخصيص في Rust, أدوات تطوير Rust, ميزات RustLogs RLG, تسجيل فعّال في Rust, تكامل RustLogs, توثيق RustLogs",
+  "reading_time": 7
 }

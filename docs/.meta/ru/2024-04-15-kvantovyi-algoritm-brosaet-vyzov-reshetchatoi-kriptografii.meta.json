@@ -1,13 +1,13 @@
 {
-  "locale": "ru_RU",
-  "word_count": 265,
   "description": "Новый квантовый алгоритм решает ключевую криптографическую задачу, призывая ускорить исследования в области квантово-устойчивой безопасности.",
-  "title": "Квантовый алгоритм бросает вызов решётчатой криптографии",
+  "language": "ru-RU",
+  "word_count": 265,
   "banner_alt": "Квантовый алгоритм против решётчатой криптографии",
-  "banner": "https://cloudcdn.pro/stocks/images/quantum-lattice-attack.webp",
+  "title": "Квантовый алгоритм бросает вызов решётчатой криптографии",
   "subtitle": "Новая работа поднимает вопросы о LWE",
   "date": "April 15, 2024",
   "keywords": "квантовый алгоритм, LWE, Learning With Errors, решётчатая криптография, ML-KEM, постквантовая безопасность, исследования",
   "reading_time": 1,
-  "language": "ru-RU"
+  "locale": "ru_RU",
+  "banner": "https://cloudcdn.pro/stocks/images/quantum-lattice-attack.webp"
 }

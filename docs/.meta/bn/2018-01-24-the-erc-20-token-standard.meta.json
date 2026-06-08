@@ -1,14 +1,14 @@
 {
-  "tags": "Ethereum, erc20, eip, tokens, contracts, blockchain, cryptocurrencies, smart-token, Solidity, ISO 20022, পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, AI, stablecoins",
   "banner": "https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp",
+  "title": "ERC-20: The Ethereum Token Interface That Changed the World",
+  "word_count": 1276,
+  "banner_alt": "বাদামি কাঠের টেবিলের উপর বন্ধ ল্যাপটপ কম্পিউটার",
+  "tags": "Ethereum, erc20, eip, tokens, contracts, blockchain, cryptocurrencies, smart-token, Solidity, ISO 20022, পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, AI, stablecoins",
   "description": "ERC-20 হল Ethereum ব্লকচেইনে সর্বাধিক ব্যবহৃত টোকেন মান, যা স্মার্ট কন্ট্রাক্ট ডিজিটাল চুক্তি হিসেবে পরিচিত এবং ডিজিটাল সম্পদ লেনদেনকে সহজ করে তোলে।",
+  "keywords": "ethereum, erc20, eip, টোকেন, কন্ট্রাক্ট, blockchain, ক্রিপ্টোকারেন্সি, smart-token, solidity",
   "subtitle": "ERC-20 টোকেন, Ethereum স্মার্ট কন্ট্রাক্ট এবং ডিজিটাল সম্পদের মানকীকরণ।",
   "language": "bn-BD",
-  "title": "ERC-20: The Ethereum Token Interface That Changed the World",
-  "keywords": "ethereum, erc20, eip, টোকেন, কন্ট্রাক্ট, blockchain, ক্রিপ্টোকারেন্সি, smart-token, solidity",
   "reading_time": 6,
-  "banner_alt": "বাদামি কাঠের টেবিলের উপর বন্ধ ল্যাপটপ কম্পিউটার",
   "date": "Jan 24, 2018",
-  "locale": "bn_BD",
-  "word_count": 1276
+  "locale": "bn_BD"
 }

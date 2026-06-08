@@ -1,13 +1,13 @@
 {
+  "word_count": 653,
+  "description": "Automatisieren Sie die Erstellung ISO-20022-konformer pain.001-Zahlungsdateien aus CSV- oder SQLite-Quellen mit Pain001, der quelloffenen Python-Bibliothek.",
+  "keywords": "ISO 20022, pain.001, Pain001, Python, Zahlungen, Automatisierung, CBPR+, HVPS+, SEPA, Compliance, Überweisungen",
+  "title": "ISO 20022-konforme Zahlungsdateien automatisieren mit Pain001",
+  "date": "September 29, 2023",
+  "language": "de",
   "banner_alt": "Ein sehr hohes Gebäude mit zahlreichen Öffnungen",
   "subtitle": "Pain001: die Open-Source-Python-Bibliothek, die ISO-20022-Compliance vereinfacht",
-  "title": "ISO 20022-konforme Zahlungsdateien automatisieren mit Pain001",
-  "description": "Automatisieren Sie die Erstellung ISO-20022-konformer pain.001-Zahlungsdateien aus CSV- oder SQLite-Quellen mit Pain001, der quelloffenen Python-Bibliothek.",
-  "locale": "de_DE",
-  "language": "de",
-  "date": "September 29, 2023",
-  "keywords": "ISO 20022, pain.001, Pain001, Python, Zahlungen, Automatisierung, CBPR+, HVPS+, SEPA, Compliance, Überweisungen",
   "banner": "https://cloudcdn.pro/stocks/images/andrea-de-santis-T3Qen8vVgRc.webp",
-  "word_count": 653,
-  "reading_time": 3
+  "reading_time": 3,
+  "locale": "de_DE"
 }

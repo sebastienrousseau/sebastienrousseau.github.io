@@ -6,14 +6,14 @@
     <description>বাংলা প্রবন্ধ: প্রায়োগিক এআই, ISO 20022 পেমেন্ট, পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি এবং পাইকারি পেমেন্টের রূপান্তর।</description>
     <atom:link href="https://sebastienrousseau.com/bn/rss.xml" rel="self" type="application/rss+xml"/>
     <language>bn-BD</language>
-    <lastBuildDate>Sun, 07 Jun 2026 22:11:07 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 08 Jun 2026 06:26:13 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. সর্বস্বত্ব সংরক্ষিত।</copyright>
     <item>
       <title>২০২৬ সালে ক্লাউড-নেটিভ ব্যাংকিং ইনডেক্স: DORA, প্ল্যাটফর্ম ইঞ্জিনিয়ারিং, সার্বভৌম ক্লাউড এবং পরিচালনাগত স্থিতিস্থাপকতা</title>
       <link>https://sebastienrousseau.com/bn/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/</link>
       <description>২০২৬ সালের একটি ক্লাউড-নেটিভ ব্যাংকিং ইনডেক্স — DORA প্রস্তুতি, প্ল্যাটফর্ম ইঞ্জিনিয়ারিং পরিপক্বতা, ক্লাউড ঘনত্ব ঝুঁকি, এক্সিট প্রমাণ এবং পরিচালনাগত স্থিতিস্থাপকতা পরিমাপের কাঠামো।</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/bn/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/</guid>
-      <pubDate>Sun, 07 Jun 2026 22:11:07 +0000</pubDate>
+      <pubDate>Mon, 08 Jun 2026 06:26:13 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/quang-nguyen-vinh-2649403.webp&w=1600&format=webp&q=85" type="image/webp" length="0"/>
       <category>ক্লাউড নেটিভ ব্যাংকিং ২০২৬</category>
@@ -29,7 +29,7 @@
       <link>https://sebastienrousseau.com/bn/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/</link>
       <description>২০২৬ সালে কোয়ান্টাম-সেফ প্রস্তুতির জন্য একটি ব্যাংকিং ইনডেক্স: NIST পোস্ট-কোয়ান্টাম মান, ক্রিপ্টোগ্রাফিক ইনভেন্টরি, ক্রিপ্টো-এজিলিটি, QKD এবং দীর্ঘস্থায়ী ডেটা এক্সপোজার।</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/bn/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/</guid>
-      <pubDate>Sun, 07 Jun 2026 22:11:07 +0000</pubDate>
+      <pubDate>Mon, 08 Jun 2026 06:26:13 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
       <category>কোয়ান্টাম সেফ ব্যাংকিং ২০২৬</category>
@@ -46,7 +46,7 @@
       <link>https://sebastienrousseau.com/bn/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</link>
       <description>FedNow-এর জন্য ২৪/৭ প্রাক-অর্থায়িত তারল্য বাধ্যতামূলক। ACH সস্তা, কিন্তু T+1। USDC পারমাণবিকভাবে নিষ্পত্তি হয়, তবে ওয়ালেট পরিকাঠামো লাগে। ২০২৬-এর মাল্টি-রেল ব্যাংক প্রতিটি পেমেন্ট খরচ, চূড়ান্ততা ও তারল্য খরচ অনুযায়ী রাউট করে।</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/bn/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</guid>
-      <pubDate>Sun, 07 Jun 2026 22:11:07 +0000</pubDate>
+      <pubDate>Mon, 08 Jun 2026 06:26:13 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
       <category>পেমেন্ট অর্কেস্ট্রেশন স্তর</category>
@@ -68,7 +68,7 @@
       <link>https://sebastienrousseau.com/bn/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</link>
       <description>পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি পেমেন্ট রেলে দুটি পথ রাখে: SWIFT MT ও ISO 20022 এনভেলপে RSA/ECC অভিযোজন, অথবা ক্রিপ্টো-চটপটে পরিকাঠামোয় প্রতিস্থাপন। HNDL অপারেশনাল ক্ষতি হওয়ার আগেই স্থপতিদের সিদ্ধান্ত নিতে হবে।</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/bn/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</guid>
-      <pubDate>Sun, 07 Jun 2026 22:11:07 +0000</pubDate>
+      <pubDate>Mon, 08 Jun 2026 06:26:13 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp" type="image/webp" length="0"/>
       <category>পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি</category>

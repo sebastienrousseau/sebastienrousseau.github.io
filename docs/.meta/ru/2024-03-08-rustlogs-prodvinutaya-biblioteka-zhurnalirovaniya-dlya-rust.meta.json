@@ -1,13 +1,13 @@
 {
-  "banner_alt": "RustLogs — баннер библиотеки журналирования",
-  "word_count": 244,
-  "locale": "ru_RU",
-  "banner": "https://cloudcdn.pro/stocks/images/rustlogs-banner.webp",
-  "subtitle": "Структурированное логирование с заботой о производительности",
-  "description": "RustLogs — это продвинутая библиотека журналирования для приложений на Rust, обеспечивающая структурированный лог и высокую производительность.",
-  "reading_time": 1,
-  "language": "ru-RU",
   "date": "March 8, 2024",
+  "locale": "ru_RU",
   "keywords": "RustLogs, журналирование, логирование, Rust, структурированное логирование, OpenTelemetry, наблюдаемость, производительность",
-  "title": "RustLogs: продвинутая библиотека журналирования для приложений на Rust"
+  "title": "RustLogs: продвинутая библиотека журналирования для приложений на Rust",
+  "reading_time": 1,
+  "description": "RustLogs — это продвинутая библиотека журналирования для приложений на Rust, обеспечивающая структурированный лог и высокую производительность.",
+  "banner_alt": "RustLogs — баннер библиотеки журналирования",
+  "subtitle": "Структурированное логирование с заботой о производительности",
+  "language": "ru-RU",
+  "word_count": 244,
+  "banner": "https://cloudcdn.pro/stocks/images/rustlogs-banner.webp"
 }

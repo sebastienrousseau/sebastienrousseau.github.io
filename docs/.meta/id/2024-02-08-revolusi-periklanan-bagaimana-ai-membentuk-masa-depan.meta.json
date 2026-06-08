@@ -1,13 +1,13 @@
 {
-  "language": "id-ID",
-  "banner_alt": "Seorang wanita robot dikelilingi kupu-kupu dan bunga",
-  "locale": "id_ID",
-  "reading_time": 1,
-  "description": "Jelajahi bagaimana AI mengubah periklanan melalui wawasan tentang Amazon Rufus dan perkembangan terbaru Meta. Temukan dampaknya terhadap keterlibatan konsumen.",
   "keywords": "AI dalam periklanan, Amazon Rufus, alat Meta AI, penargetan konsumen, teknologi periklanan, chatbot AI, tren pemasaran digital, analitik AI, AI kreatif, optimasi kampanye iklan",
+  "locale": "id_ID",
   "title": "[ID DRAFT] Generative AI in Advertising: Amazon Rufus & Meta",
-  "banner": "https://cloudcdn.pro/stocks/images/advertising-ai.webp",
   "date": "Feb 08, 2024",
-  "subtitle": "Bagaimana AI Mengubah Interaksi Konsumen dan Dinamika Periklanan",
-  "word_count": 352
+  "banner_alt": "Seorang wanita robot dikelilingi kupu-kupu dan bunga",
+  "banner": "https://cloudcdn.pro/stocks/images/advertising-ai.webp",
+  "language": "id-ID",
+  "word_count": 352,
+  "description": "Jelajahi bagaimana AI mengubah periklanan melalui wawasan tentang Amazon Rufus dan perkembangan terbaru Meta. Temukan dampaknya terhadap keterlibatan konsumen.",
+  "reading_time": 1,
+  "subtitle": "Bagaimana AI Mengubah Interaksi Konsumen dan Dinamika Periklanan"
 }

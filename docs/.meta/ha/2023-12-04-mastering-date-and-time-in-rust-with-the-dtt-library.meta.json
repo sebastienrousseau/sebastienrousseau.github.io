@@ -1,14 +1,14 @@
 {
-  "language": "ha-NG",
-  "tags": "DateTime, DTT, Rust, date library, time library, timezone handling, chrono alternative, ISO 8601, time formatting, Sebastien Rousseau, ISO 20022, post-quantum cryptography, AI, open source",
-  "subtitle": "DTT, ɗakin karatu na Rust mai daidaito mai girma don ayyukan kwana da lokaci.",
-  "word_count": 1039,
-  "description": "DateTime (DTT) ɗakin karatu ne na Rust don tattaro, tabbatarwa, sarrafa da tsara kwanaki da lokaci — daidaito mai girma, ayyuka masu faɗi.",
+  "banner_alt": "DateTime (DTT), Kayan Aikin da Ake Bukata don Ayyukan Kwana da Lokaci.",
   "keywords": "DateTime, DTT, ɗakin karatu na Rust, tattarowa, tabbatarwa, sarrafa, tsarawa, kwanaki, lokaci",
   "title": "Efficient Date and Time Management with DateTime (DTT)",
-  "reading_time": 5,
-  "locale": "ha_NG",
-  "banner": "https://cloudcdn.pro/clients/dtt/v1/logos/dtt.svg",
+  "tags": "DateTime, DTT, Rust, date library, time library, timezone handling, chrono alternative, ISO 8601, time formatting, Sebastien Rousseau, ISO 20022, post-quantum cryptography, AI, open source",
+  "word_count": 1039,
   "date": "Dec 04, 2023",
-  "banner_alt": "DateTime (DTT), Kayan Aikin da Ake Bukata don Ayyukan Kwana da Lokaci."
+  "banner": "https://cloudcdn.pro/clients/dtt/v1/logos/dtt.svg",
+  "subtitle": "DTT, ɗakin karatu na Rust mai daidaito mai girma don ayyukan kwana da lokaci.",
+  "reading_time": 5,
+  "description": "DateTime (DTT) ɗakin karatu ne na Rust don tattaro, tabbatarwa, sarrafa da tsara kwanaki da lokaci — daidaito mai girma, ayyuka masu faɗi.",
+  "locale": "ha_NG",
+  "language": "ha-NG"
 }
