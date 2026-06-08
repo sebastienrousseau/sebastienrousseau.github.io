@@ -1,14 +1,14 @@
 {
-  "description": "新しい量子アルゴリズムが鍵となる暗号問題を解決し、量子安全セキュリティの研究を加速する必要性を示唆。",
-  "title": "量子アルゴリズムが格子暗号に挑戦",
-  "keywords": "量子アルゴリズム, 格子ベース暗号, LWE, Learning With Errors, ポスト量子暗号, 量子の脅威",
   "date": "April 15, 2024",
   "last_reviewed": "2026-05-11",
-  "reading_time": 1,
+  "keywords": "量子アルゴリズム, 格子ベース暗号, LWE, Learning With Errors, ポスト量子暗号, 量子の脅威",
+  "language": "ja-JP",
   "subtitle": "新しい量子アルゴリズムが鍵となる暗号問題を解決する可能性",
   "locale": "ja_JP",
-  "language": "ja-JP",
-  "banner_alt": "量子コンピュータの回路",
+  "word_count": 71,
+  "reading_time": 1,
+  "title": "量子アルゴリズムが格子暗号に挑戦",
   "banner": "https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp",
-  "word_count": 71
+  "description": "新しい量子アルゴリズムが鍵となる暗号問題を解決し、量子安全セキュリティの研究を加速する必要性を示唆。",
+  "banner_alt": "量子コンピュータの回路"
 }

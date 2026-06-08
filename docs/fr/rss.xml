@@ -6,14 +6,14 @@
     <description>Articles en français : IA appliquée, paiements ISO 20022, cryptographie post-quantique et transformation des paiements wholesale.</description>
     <atom:link href="https://sebastienrousseau.com/fr/rss.xml" rel="self" type="application/rss+xml"/>
     <language>fr-FR</language>
-    <lastBuildDate>Mon, 08 Jun 2026 08:36:23 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 08 Jun 2026 10:27:50 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Tous droits réservés.</copyright>
     <item>
       <title>L&apos;Indice de trésorerie autonome 2026 : trésorerie agentique, liquidité programmable, dépôts tokenisés et contrôle en temps réel</title>
       <link>https://sebastienrousseau.com/fr/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/</link>
       <description>Indice 2026 de préparation à la trésorerie autonome : flux agentiques, liquidité programmable, dépôts tokenisés, paiements temps réel et contrôle automatisé.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/fr/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/</guid>
-      <pubDate>Mon, 08 Jun 2026 08:36:23 +0000</pubDate>
+      <pubDate>Mon, 08 Jun 2026 10:27:50 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/christopher-burns-Kj2SaNHG-hg.webp" type="image/webp" length="0"/>
       <category>trésorerie autonome 2026</category>
@@ -28,7 +28,7 @@
       <link>https://sebastienrousseau.com/fr/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</link>
       <description>FedNow exige une liquidité préfinancée 24/7. ACH coûte peu mais règle T+1. USDC règle en atomique. La banque multi-rail 2026 arbitre par coût et finalité.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/fr/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</guid>
-      <pubDate>Mon, 08 Jun 2026 08:36:23 +0000</pubDate>
+      <pubDate>Mon, 08 Jun 2026 10:27:50 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
       <category>couche d&apos;orchestration des paiements</category>
@@ -50,7 +50,7 @@
       <link>https://sebastienrousseau.com/fr/2026-05-31-post-quantique-paiements-infrastructure-replace-rather-than-retrofit-2026/</link>
       <description>La cryptographie post-quantique impose un choix binaire aux rails de paiement : adapter RSA/ECC dans des enveloppes SWIFT MT et ISO 20022 jamais dimensionnées pour ML-KEM et ML-DSA, ou remplacer par une infrastructure crypto-agile. Les architectes doivent trancher avant que HNDL ne devienne perte opérationnelle.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/fr/2026-05-31-post-quantique-paiements-infrastructure-replace-rather-than-retrofit-2026/</guid>
-      <pubDate>Mon, 08 Jun 2026 08:36:23 +0000</pubDate>
+      <pubDate>Mon, 08 Jun 2026 10:27:50 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp" type="image/webp" length="0"/>
       <category>cryptographie post-quantique</category>
@@ -76,7 +76,7 @@
       <link>https://sebastienrousseau.com/fr/2026-05-30-uk-de-gros-digital-markets-tokenise-gilts-settlement-2026/</link>
       <description>Le Digital Securities Sandbox et les gilts tokenisés font du règlement-livraison atomique et du repo intrajournalier le nouveau standard sterling.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/fr/2026-05-30-uk-de-gros-digital-markets-tokenise-gilts-settlement-2026/</guid>
-      <pubDate>Mon, 08 Jun 2026 08:36:23 +0000</pubDate>
+      <pubDate>Mon, 08 Jun 2026 10:27:50 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
       <category>Digital Securities Sandbox 2026</category>
@@ -94,7 +94,7 @@
       <link>https://sebastienrousseau.com/fr/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</link>
       <description>ISO 20022 après migration : un terrain de produits de données. Adresses structurées, codes d&apos;objet, détails de facture, messages d&apos;investigation et statuts enrichis deviennent rapprochement, fraude, liquidité et conformité.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/fr/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</guid>
-      <pubDate>Mon, 08 Jun 2026 08:36:23 +0000</pubDate>
+      <pubDate>Mon, 08 Jun 2026 10:27:50 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/humphrey-muleba-1660004.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
       <category>ISO 20022 2026</category>

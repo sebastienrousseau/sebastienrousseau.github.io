@@ -1,13 +1,13 @@
 {
-  "subtitle": "Революція в обробці аудіоданих за допомогою Azure AI Platform",
-  "language": "uk-UA",
-  "keywords": "аудіо аналізатор, azure ai, speech-to-text, аналіз аудіоданих, аналіз тексту, переклади ai, аудіо insights, автоматична транскрипція, обробка аудіоданих, machine learning",
-  "description": "Дізнайтеся, як Audio Analyser на базі Azure AI перетворює розпізнавання мовлення, аналіз тексту та переклади на практичні аналітичні дані.",
-  "locale": "uk_UA",
-  "title": "[UK DRAFT] AI-Powered Speech Analysis, Translation, & Insight Tool",
-  "banner_alt": "Мінімалістичний сучасний корпоративний офіс",
-  "word_count": 257,
   "banner": "https://cloudcdn.pro/stocks/images/modern-corporate-office-with-technological-displays.webp",
+  "title": "[UK DRAFT] AI-Powered Speech Analysis, Translation, & Insight Tool",
+  "locale": "uk_UA",
+  "keywords": "аудіо аналізатор, azure ai, speech-to-text, аналіз аудіоданих, аналіз тексту, переклади ai, аудіо insights, автоматична транскрипція, обробка аудіоданих, machine learning",
+  "subtitle": "Революція в обробці аудіоданих за допомогою Azure AI Platform",
+  "reading_time": 1,
+  "banner_alt": "Мінімалістичний сучасний корпоративний офіс",
+  "description": "Дізнайтеся, як Audio Analyser на базі Azure AI перетворює розпізнавання мовлення, аналіз тексту та переклади на практичні аналітичні дані.",
   "date": "Jan 29, 2024",
-  "reading_time": 1
+  "language": "uk-UA",
+  "word_count": 257
 }

@@ -1,13 +1,13 @@
 {
-  "description": "La computação quântica amenaza a criptografia de os sistemas de pago. El libro blanco EPAA expone o riesgo estructural e aboga por uma migración urgente rumo a a criptografia pós-quântica.",
-  "language": "pt-BR",
-  "title": "Pagos resistentes a lo quântico: por que a industria deve actuar agora",
-  "word_count": 1012,
   "reading_time": 5,
   "date": "September 01, 2025",
-  "subtitle": "La criptografia pós-quântica é ya uma decisão de infraestrutura actual, e no futura. El libro blanco EPAA expone o riesgo estructural e a urgente necessidade de migración.",
+  "description": "La computação quântica amenaza a criptografia de os sistemas de pago. El libro blanco EPAA expone o riesgo estructural e aboga por uma migración urgente rumo a a criptografia pós-quântica.",
+  "locale": "pt_BR",
+  "title": "Pagos resistentes a lo quântico: por que a industria deve actuar agora",
   "keywords": "pagos resistentes a lo quântico, criptografia pós-quântica, SEPA, SWIFT gpi, ISO 20022, segurança de os serviços financeiros, EPAA, harvest-now decrypt-later, agilidade criptográfica, Sebastien Rousseau",
+  "language": "pt-BR",
   "banner": "https://cloudcdn.pro/stocks/images/digital-nodes.webp",
+  "subtitle": "La criptografia pós-quântica é ya uma decisão de infraestrutura actual, e no futura. El libro blanco EPAA expone o riesgo estructural e a urgente necessidade de migración.",
   "banner_alt": "Placa de circuito de computação quântica bañada em luz azul",
-  "locale": "pt_BR"
+  "word_count": 1012
 }

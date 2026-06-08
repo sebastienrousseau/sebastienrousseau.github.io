@@ -1,13 +1,13 @@
 {
+  "description": "In Yilei Chens kwantumalgoritme voor het oplossen van LWE is een fout gevonden, die rooster-gebaseerde cryptografie tijdelijk veilig stelt.",
+  "keywords": "Yilei Chen, kwantumalgoritme, LWE, rooster-gebaseerde cryptografie, post-kwantum",
+  "banner": "https://cloudcdn.pro/stocks/images/digital-nodes.webp",
+  "subtitle": "De rooster-gebaseerde cryptografie is voorlopig veilig — maar de les is duidelijk",
+  "banner_alt": "Visualisatie van een correctie in een kwantumalgoritme",
+  "word_count": 711,
   "language": "nl-NL",
   "reading_time": 3,
-  "banner_alt": "Visualisatie van een correctie in een kwantumalgoritme",
-  "description": "In Yilei Chens kwantumalgoritme voor het oplossen van LWE is een fout gevonden, die rooster-gebaseerde cryptografie tijdelijk veilig stelt.",
-  "locale": "nl_NL",
-  "keywords": "Yilei Chen, kwantumalgoritme, LWE, rooster-gebaseerde cryptografie, post-kwantum",
-  "subtitle": "De rooster-gebaseerde cryptografie is voorlopig veilig — maar de les is duidelijk",
   "title": "Fout ontdekt in kwantumalgoritme voor rooster-gebaseerde cryptografie",
   "date": "April 22, 2024",
-  "banner": "https://cloudcdn.pro/stocks/images/digital-nodes.webp",
-  "word_count": 711
+  "locale": "nl_NL"
 }

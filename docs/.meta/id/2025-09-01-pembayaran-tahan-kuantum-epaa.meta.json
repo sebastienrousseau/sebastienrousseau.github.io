@@ -1,13 +1,13 @@
 {
-  "banner_alt": "Papan sirkuit komputasi kuantum dalam cahaya biru",
-  "reading_time": 2,
   "locale": "id_ID",
-  "word_count": 433,
-  "title": "[ID DRAFT] Quantum-Safe Payments: Why the Industry Must Act Now",
+  "reading_time": 2,
   "date": "Sep 01, 2025",
+  "banner_alt": "Papan sirkuit komputasi kuantum dalam cahaya biru",
+  "title": "[ID DRAFT] Quantum-Safe Payments: Why the Industry Must Act Now",
   "subtitle": "Kesiapan quantum-safe adalah keputusan infrastruktur saat ini. Bukan masa depan.",
+  "banner": "https://cloudcdn.pro/stocks/images/digital-nodes.webp",
+  "keywords": "pembayaran quantum-safe, kriptografi pasca-kuantum, SEPA, SWIFT gpi, ISO 20022, keamanan layanan keuangan, EPAA, harvest-now decrypt-later, kelincahan kriptografi, Sebastien Rousseau",
   "description": "Komputasi kuantum mengancam kriptografi sistem pembayaran. Buku putih EPAA menguraikan risiko struktural dan urgensi migrasi ke PQC.",
   "language": "id-ID",
-  "keywords": "pembayaran quantum-safe, kriptografi pasca-kuantum, SEPA, SWIFT gpi, ISO 20022, keamanan layanan keuangan, EPAA, harvest-now decrypt-later, kelincahan kriptografi, Sebastien Rousseau",
-  "banner": "https://cloudcdn.pro/stocks/images/digital-nodes.webp"
+  "word_count": 433
 }

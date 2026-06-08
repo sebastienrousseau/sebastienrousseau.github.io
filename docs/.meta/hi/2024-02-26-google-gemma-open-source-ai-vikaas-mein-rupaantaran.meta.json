@@ -1,13 +1,13 @@
 {
-  "banner": "https://cloudcdn.pro/stocks/images/ai-ship.webp",
-  "description": "Google Gemma: एक ओपन-सोर्स मॉडल-परिवार जो स्थानीय-तैनात AI-विकास को बढ़ावा देता है।",
-  "subtitle": "हल्के, स्थानीय-तैनात-योग्य मॉडल का परिवार",
+  "keywords": "Gemma, Google, ओपन सोर्स, AI, LLM, फ़ाइन-ट्यूनिंग, स्थानीय, edge, Gemini, मॉडल",
+  "language": "hi-IN",
   "date": "February 26, 2024",
   "banner_alt": "Google Gemma का प्रतीक",
-  "locale": "hi_IN",
-  "title": "Google Gemma: ओपन-सोर्स AI-विकास का रूपांतरण",
   "reading_time": 9,
-  "language": "hi-IN",
+  "banner": "https://cloudcdn.pro/stocks/images/ai-ship.webp",
+  "locale": "hi_IN",
   "word_count": 1999,
-  "keywords": "Gemma, Google, ओपन सोर्स, AI, LLM, फ़ाइन-ट्यूनिंग, स्थानीय, edge, Gemini, मॉडल"
+  "title": "Google Gemma: ओपन-सोर्स AI-विकास का रूपांतरण",
+  "description": "Google Gemma: एक ओपन-सोर्स मॉडल-परिवार जो स्थानीय-तैनात AI-विकास को बढ़ावा देता है।",
+  "subtitle": "हल्के, स्थानीय-तैनात-योग्य मॉडल का परिवार"
 }

@@ -1,14 +1,14 @@
 {
-  "tags": "Technology, Art, Photography, Rust, AI, calcul cuantic, Personal Journey, Alien Studio, Digital Art, Innovation, ISO 20022, criptografie post-cuantică",
   "locale": "ro_RO",
+  "banner_alt": "Muza apusului, o privire senină; frumusețe în liniște",
   "subtitle": "Începuturile unei Odisee Tehnologice",
   "date": "Jan 15, 2024",
   "word_count": 1104,
+  "tags": "Technology, Art, Photography, Rust, AI, calcul cuantic, Personal Journey, Alien Studio, Digital Art, Innovation, ISO 20022, criptografie post-cuantică",
   "reading_time": 5,
-  "keywords": "călătorie tehnologică personală, descoperirea Rust, explorare AI, Quantum Computing, fuziunea artei și fotografiei, Alien Studio, creație artă digitală, tehnologie în artă, fotografie inovatoare, redescoperire artistică",
+  "banner": "https://cloudcdn.pro/clients/alienstudio/v1/collections/radiance/radiance-08.webp",
   "title": "Alien Studio: My Tech-to Art Journey in Photography",
   "description": "Alăturați-vă mie în călătoria personală, de la Rust, AI și Quantum Computing până la redefinirea artei și fotografiei prin intermediul Alien Studio.",
   "language": "ro-RO",
-  "banner_alt": "Muza apusului, o privire senină; frumusețe în liniște",
-  "banner": "https://cloudcdn.pro/clients/alienstudio/v1/collections/radiance/radiance-08.webp"
+  "keywords": "călătorie tehnologică personală, descoperirea Rust, explorare AI, Quantum Computing, fuziunea artei și fotografiei, Alien Studio, creație artă digitală, tehnologie în artă, fotografie inovatoare, redescoperire artistică"
 }

@@ -1,13 +1,13 @@
 {
-  "banner": "https://cloudcdn.pro/stocks/images/lucy-besson-knowledge-transfer.webp",
-  "locale": "ru_RU",
-  "title": "Lucy Besson: передача знаний, ИИ и квантовые технологии",
-  "date": "May 11, 2026",
   "description": "Lucy Besson и подход к передаче знаний на пересечении ИИ и квантовых технологий: как наставничество ускоряет освоение сложных областей в финансовой индустрии.",
-  "word_count": 293,
-  "subtitle": "Как практическое наставничество ускоряет внедрение",
-  "banner_alt": "Lucy Besson: передача знаний в ИИ и квантовых технологиях",
-  "reading_time": 1,
   "keywords": "передача знаний, наставничество, ИИ, квантовые технологии, обучение, банковская инженерия, развитие команд",
+  "word_count": 293,
+  "date": "May 11, 2026",
+  "banner_alt": "Lucy Besson: передача знаний в ИИ и квантовых технологиях",
+  "title": "Lucy Besson: передача знаний, ИИ и квантовые технологии",
+  "locale": "ru_RU",
+  "subtitle": "Как практическое наставничество ускоряет внедрение",
+  "reading_time": 1,
+  "banner": "https://cloudcdn.pro/stocks/images/lucy-besson-knowledge-transfer.webp",
   "language": "ru-RU"
 }

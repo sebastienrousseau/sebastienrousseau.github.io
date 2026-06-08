@@ -1,13 +1,13 @@
 {
-  "locale": "tr_TR",
-  "keywords": "kuantum, Shor, kübit, kriptografi, post-kuantum, araştırma",
   "date": "April 11, 2026",
-  "title": "Kuantum eşikleri yeniden hareket ediyor",
-  "banner": "https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp",
-  "reading_time": 12,
-  "word_count": 2499,
-  "language": "tr-TR",
+  "banner_alt": "Kuantum hesaplamanın görselleştirmesi",
+  "keywords": "kuantum, Shor, kübit, kriptografi, post-kuantum, araştırma",
   "subtitle": "Yeni bir makale Shor'un 10.000 kübit kadar az kübitle çalışabileceğini öne sürüyor",
+  "banner": "https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp",
+  "language": "tr-TR",
+  "reading_time": 12,
+  "title": "Kuantum eşikleri yeniden hareket ediyor",
   "description": "Yeni bir makale, Shor algoritmasının 10.000 kübit kadar az kübitle çalışabileceğini öne sürüyor — kriptografik olarak ilgili kuantum bilişim eşiği düşüyor.",
-  "banner_alt": "Kuantum hesaplamanın görselleştirmesi"
+  "locale": "tr_TR",
+  "word_count": 2499
 }

@@ -1,13 +1,13 @@
 {
+  "subtitle": "Plan wdrażania agentów AI w bankach Tier-1",
   "language": "pl-PL",
-  "banner": "https://cloudcdn.pro/stocks/images/hector-j-rivas-1FxMET2U5dU-unsplash.webp",
+  "description": "Blueprint inżynierii agentowej dla banków 2026: jak wdrażać agentów AI w produkcji, zarządzać ryzykiem i mierzyć wpływ.",
+  "date": "May 17, 2026",
+  "banner_alt": "Schemat blueprint inżynierii agentowej w bankowości",
   "keywords": "inżynieria agentowa, agenci AI, bankowość, blueprint 2026, LLM, automatyzacja, AI w produkcji",
   "title": "Inżynieria agentowa: blueprint banków na 2026",
-  "subtitle": "Plan wdrażania agentów AI w bankach Tier-1",
-  "description": "Blueprint inżynierii agentowej dla banków 2026: jak wdrażać agentów AI w produkcji, zarządzać ryzykiem i mierzyć wpływ.",
-  "word_count": 183,
-  "reading_time": 1,
+  "banner": "https://cloudcdn.pro/stocks/images/hector-j-rivas-1FxMET2U5dU-unsplash.webp",
   "locale": "pl_PL",
-  "date": "May 17, 2026",
-  "banner_alt": "Schemat blueprint inżynierii agentowej w bankowości"
+  "word_count": 183,
+  "reading_time": 1
 }

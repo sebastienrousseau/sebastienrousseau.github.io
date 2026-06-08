@@ -1,13 +1,13 @@
 {
-  "locale": "pl_PL",
-  "keywords": "Static Site Generator, generator stron statycznych, Rust, SSG, wydajność, SEO, dostępność, JSON-LD",
-  "date": "Oct 09, 2023",
-  "language": "pl-PL",
-  "reading_time": 1,
-  "description": "Static Site Generator to generator stron statycznych w Rust zaprojektowany dla wydajności, dostępności i SEO, z natywnym wsparciem JSON-LD.",
-  "banner": "https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp",
   "banner_alt": "Logo Static Site Generator z motywem Rust w tle",
-  "word_count": 198,
+  "reading_time": 1,
+  "date": "Oct 09, 2023",
+  "keywords": "Static Site Generator, generator stron statycznych, Rust, SSG, wydajność, SEO, dostępność, JSON-LD",
+  "language": "pl-PL",
+  "banner": "https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp",
   "title": "Static Site Generator: najszybszy generator stron statycznych w Rust",
+  "locale": "pl_PL",
+  "description": "Static Site Generator to generator stron statycznych w Rust zaprojektowany dla wydajności, dostępności i SEO, z natywnym wsparciem JSON-LD.",
+  "word_count": 198,
   "subtitle": "Generator stron statycznych zoptymalizowany pod kątem wydajności, dostępności i SEO"
 }

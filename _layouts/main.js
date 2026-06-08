@@ -476,21 +476,23 @@ document.addEventListener("click", function (event) {
         // Inject dynamic CSS overrides using variables so SVGs update cleanly on theme toggles
         var style = document.createElement("style");
         style.textContent = [
-            "pre.mermaid svg .actor { fill: var(--bg-alt, #fafafc) !important; stroke: var(--border, #3a3a3e) !important; }",
-            "pre.mermaid svg .actor text { fill: var(--ink, #111111) !important; }",
+            "pre.mermaid svg .actor rect { fill: var(--bg-alt, #fafafc) !important; stroke: var(--border, #3a3a3e) !important; }",
+            "pre.mermaid svg .actor text, pre.mermaid svg .actor tspan { fill: var(--ink, #111111) !important; }",
             "pre.mermaid svg .actor-line { stroke: var(--border, #3a3a3e) !important; }",
             "pre.mermaid svg .messageLine0, pre.mermaid svg .messageLine1 { stroke: var(--ink-mute, #3a3a3e) !important; }",
             "pre.mermaid svg .messageText { fill: var(--ink, #111111) !important; stroke: none !important; }",
             "pre.mermaid svg .labelBox { fill: var(--card, #ffffff) !important; stroke: var(--border, #3a3a3e) !important; }",
-            "pre.mermaid svg .labelText { fill: var(--ink, #111111) !important; }",
-            "pre.mermaid svg .note { fill: var(--bg-alt, #fafafc) !important; stroke: var(--border, #3a3a3e) !important; }",
-            "pre.mermaid svg .noteText { fill: var(--ink, #111111) !important; }",
-            "pre.mermaid svg .loopText { fill: var(--ink, #111111) !important; }",
+            "pre.mermaid svg .labelText, pre.mermaid svg .labelText tspan { fill: var(--ink, #111111) !important; }",
+            "pre.mermaid svg .note rect { fill: var(--bg-alt, #fafafc) !important; stroke: var(--border, #3a3a3e) !important; }",
+            "pre.mermaid svg .note text, pre.mermaid svg .note tspan { fill: var(--ink, #111111) !important; }",
+            "pre.mermaid svg .loopText, pre.mermaid svg .loopText tspan { fill: var(--ink, #111111) !important; }",
             "pre.mermaid svg .loopLine { stroke: var(--border, #3a3a3e) !important; fill: none !important; }",
             "pre.mermaid svg .active { fill: var(--bg-alt, #fafafc) !important; stroke: var(--border, #3a3a3e) !important; }",
+            "pre.mermaid svg circle.sequenceNumber { fill: var(--accent, #0056b3) !important; stroke: var(--accent, #0056b3) !important; }",
+            "pre.mermaid svg text.sequenceNumber { fill: #ffffff !important; stroke: none !important; font-weight: bold !important; }",
             "pre.mermaid svg .edgePath .path { stroke: var(--ink-mute, #3a3a3e) !important; }",
             "pre.mermaid svg .edgeLabel rect { fill: var(--card, #ffffff) !important; }",
-            "pre.mermaid svg .edgeLabel text { fill: var(--ink, #111111) !important; }",
+            "pre.mermaid svg .edgeLabel text, pre.mermaid svg .edgeLabel tspan { fill: var(--ink, #111111) !important; }",
             "pre.mermaid svg marker { fill: var(--ink-mute, #3a3a3e) !important; stroke: none !important; }"
         ].join("\n");
         document.head.appendChild(style);

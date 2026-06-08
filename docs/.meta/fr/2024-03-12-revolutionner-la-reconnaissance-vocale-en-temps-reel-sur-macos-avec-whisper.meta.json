@@ -1,13 +1,13 @@
 {
+  "title": "Reconnaissance vocale en temps réel rapide sur macOS : OpenAI Whisper",
   "language": "fr",
-  "date": "March 12, 2024",
   "locale": "fr_FR",
   "banner": "https://cloudcdn.pro/stocks/images/research-paper.webp",
-  "keywords": "OpenAI Whisper, Metal Performance Shaders, reconnaissance vocale macOS, transcription en temps réel, détection d'activité vocale, accélération GPU, intégration Python, speech-to-text macOS, détection vocale économe en énergie, Apple silicon",
-  "word_count": 1056,
   "reading_time": 5,
-  "subtitle": "Libérer la puissance de la transcription IA et GPU sur votre Mac",
+  "banner_alt": "Bannière pour la reconnaissance vocale automatique en temps réel (ASR)",
+  "date": "March 12, 2024",
   "description": "Comment OpenAI Whisper et Metal Performance Shaders transforment la reconnaissance vocale en temps réel sur macOS, avec vitesse et précision inégalées.",
-  "title": "Reconnaissance vocale en temps réel rapide sur macOS : OpenAI Whisper",
-  "banner_alt": "Bannière pour la reconnaissance vocale automatique en temps réel (ASR)"
+  "word_count": 1056,
+  "subtitle": "Libérer la puissance de la transcription IA et GPU sur votre Mac",
+  "keywords": "OpenAI Whisper, Metal Performance Shaders, reconnaissance vocale macOS, transcription en temps réel, détection d'activité vocale, accélération GPU, intégration Python, speech-to-text macOS, détection vocale économe en énergie, Apple silicon"
 }
