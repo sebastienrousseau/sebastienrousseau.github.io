@@ -1,13 +1,13 @@
 {
-  "title": "Akande — голосовой помощник: революция персональной и руководительской поддержки",
-  "word_count": 246,
-  "reading_time": 1,
-  "banner": "https://cloudcdn.pro/stocks/images/akande-banner.webp",
-  "description": "Akande — продвинутый голосовой помощник на базе OpenAI GPT для естественных взаимодействий, резюме PDF и эффективного кэширования, рассчитанный на личное и руководительское использование.",
   "language": "ru-RU",
+  "description": "Akande — продвинутый голосовой помощник на базе OpenAI GPT для естественных взаимодействий, резюме PDF и эффективного кэширования, рассчитанный на личное и руководительское использование.",
+  "word_count": 246,
   "locale": "ru_RU",
-  "banner_alt": "Akande — баннер голосового ассистента",
-  "keywords": "Akande, голосовой помощник, GPT, ИИ-ассистент, OpenAI, продуктивность, кэширование, PDF-суммаризация, open source",
+  "title": "Akande — голосовой помощник: революция персональной и руководительской поддержки",
   "subtitle": "ИИ-ассистент с естественным голосом для деловых задач",
-  "date": "February 12, 2024"
+  "banner_alt": "Akande — баннер голосового ассистента",
+  "date": "February 12, 2024",
+  "banner": "https://cloudcdn.pro/stocks/images/akande-banner.webp",
+  "reading_time": 1,
+  "keywords": "Akande, голосовой помощник, GPT, ИИ-ассистент, OpenAI, продуктивность, кэширование, PDF-суммаризация, open source"
 }

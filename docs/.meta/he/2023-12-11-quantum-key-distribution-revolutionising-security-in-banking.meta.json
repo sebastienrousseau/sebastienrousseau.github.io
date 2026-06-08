@@ -1,14 +1,14 @@
 {
-  "tags": "quantum, key, distribution, cryptography, cybersecurity, finance, banking, digital, innovation, blockchain, מחשוב קוונטי, hsbc, trading, data, protection, future, ISO 20022, DORA, קריפטוגרפיה פוסט-קוונטית, AI",
-  "date": "Dec 11, 2023",
-  "banner": "https://cloudcdn.pro/stocks/images/hsbc-from-the-docks.webp",
+  "language": "he-IL",
   "locale": "he_IL",
   "subtitle": "توزيع المفاتيح الكمومي (QKD) لأمن بدرجة المؤسسات المالية",
-  "banner_alt": "بنك HSBC من جهة الأرصفة",
-  "keywords": "توزيع المفاتيح الكمومي، QKD، الأمن الكمومي، الصيرفة، الصناعة المالية، التمويل الرقمي، الأمن السيبراني، الحوسبة الكمومية، HSBC، تجربة الحماية الكمومية، المعاملات المالية",
   "description": "في الوقت الذي تهدّد فيه الحواسيب الكمومية أساليب التشفير التقليدية، يبرز توزيع المفاتيح الكمومي (QKD) باعتباره نقلة نوعية تقدّم أمناً لا مثيل له.",
-  "language": "he-IL",
-  "word_count": 707,
+  "banner": "https://cloudcdn.pro/stocks/images/hsbc-from-the-docks.webp",
   "reading_time": 3,
-  "title": "توزيع المفاتيح الكمومي يُحدث ثورة في أمن القطاع المصرفي"
+  "banner_alt": "بنك HSBC من جهة الأرصفة",
+  "date": "Dec 11, 2023",
+  "keywords": "توزيع المفاتيح الكمومي، QKD، الأمن الكمومي، الصيرفة، الصناعة المالية، التمويل الرقمي، الأمن السيبراني، الحوسبة الكمومية، HSBC، تجربة الحماية الكمومية، المعاملات المالية",
+  "title": "توزيع المفاتيح الكمومي يُحدث ثورة في أمن القطاع المصرفي",
+  "tags": "quantum, key, distribution, cryptography, cybersecurity, finance, banking, digital, innovation, blockchain, מחשוב קוונטי, hsbc, trading, data, protection, future, ISO 20022, DORA, קריפטוגרפיה פוסט-קוונטית, AI",
+  "word_count": 707
 }

@@ -6,14 +6,14 @@
     <description>中文文章：应用人工智能、ISO 20022 支付、后量子密码学以及批发支付的转型。</description>
     <atom:link href="https://sebastienrousseau.com/zh-hans/rss.xml" rel="self" type="application/rss+xml"/>
     <language>zh-Hans</language>
-    <lastBuildDate>Mon, 08 Jun 2026 06:26:13 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 08 Jun 2026 08:36:24 +0000</lastBuildDate>
     <copyright>© 版权所有 2007 - 2026 - Sebastien Rousseau。保留所有权利。</copyright>
     <item>
       <title>2026 自主财务指数：智能体司库、可编程流动性、代币化存款与实时现金管控</title>
       <link>https://sebastienrousseau.com/zh-hans/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/</link>
       <description>2026 年自主财务就绪度指数，覆盖智能体司库工作流、可编程流动性、代币化存款、实时支付与自动化现金管控。</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/zh-hans/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/</guid>
-      <pubDate>Mon, 08 Jun 2026 06:26:13 +0000</pubDate>
+      <pubDate>Mon, 08 Jun 2026 08:36:24 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/christopher-burns-Kj2SaNHG-hg.webp" type="image/webp" length="0"/>
       <category>2026 自主财务</category>
@@ -32,7 +32,7 @@
       <link>https://sebastienrousseau.com/zh-hans/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</link>
       <description>FedNow 要求 7×24 小时预筹流动性。ACH 廉价但是 T+1。USDC 原子结算却需要钱包基础设施。2026 年的多通道银行按成本、终局性与流动性成本逐笔路由,由读取 ISO 20022 pacs.008 的编排引擎作出决策。</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/zh-hans/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</guid>
-      <pubDate>Mon, 08 Jun 2026 06:26:13 +0000</pubDate>
+      <pubDate>Mon, 08 Jun 2026 08:36:24 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
       <category>支付编排层</category>
@@ -54,7 +54,7 @@
       <link>https://sebastienrousseau.com/zh-hans/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</link>
       <description>后量子密码学迫使支付通道作出二选一:在从未为 ML-KEM 与 ML-DSA 适配的 SWIFT MT 与 ISO 20022 信封内改造 RSA/ECC,或以密码敏捷的基础设施替换。架构师必须在 HNDL 转为运营损失前决断。</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/zh-hans/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</guid>
-      <pubDate>Mon, 08 Jun 2026 06:26:13 +0000</pubDate>
+      <pubDate>Mon, 08 Jun 2026 08:36:24 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp" type="image/webp" length="0"/>
       <category>后量子密码学</category>

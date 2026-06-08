@@ -1,13 +1,13 @@
 {
-  "banner": "https://cloudcdn.pro/stocks/images/digital-nodes.webp",
-  "word_count": 370,
   "date": "Apr 22, 2024",
-  "locale": "uk_UA",
   "subtitle": "Рецензування Виявляє Недолік у Новаторській Роботі Чена",
+  "reading_time": 1,
   "keywords": "постквантова криптографія, NIST, стандартизація PQC, Yilei Chen, квантовий алгоритм, криптографія на основі ґраток, задача LWE, CRYSTALS-KYBER, CRYSTALS-Dilithium, квантово-стійка криптографія",
+  "language": "uk-UA",
+  "word_count": 370,
   "title": "[UK DRAFT] Quantum Lattice Crypto: Bug in Chen's LWE Attack",
   "banner_alt": "Зображення згенероване за допомогою MidJourney - Мережа цифрових вузлів у червоно-синіх відтінках.",
   "description": "Помилка в квантовому алгоритмі LWE Yilei Chen тимчасово відстрочує загрозу для криптографії на основі ґраток. Що це означає для CRYSTALS-Kyber, Dilithium та дорожньої карти PQC.",
-  "language": "uk-UA",
-  "reading_time": 1
+  "locale": "uk_UA",
+  "banner": "https://cloudcdn.pro/stocks/images/digital-nodes.webp"
 }

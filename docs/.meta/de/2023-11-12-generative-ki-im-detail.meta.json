@@ -1,13 +1,13 @@
 {
-  "banner_alt": "KI-Konzept, 3D-Rendering, konzeptionelles Bild",
-  "description": "Generative KI im Jahr 2023: Wie sie funktioniert, wo sie in Finanzdienstleistungen zuerst Fuß fasst und welche ethischen und architektonischen Fragen es zu stellen gilt.",
-  "keywords": "generative KI, Technologie, Zukunft, Wirkung, Ethik, Synergien, Innovation, Kreativität, Transformation, Entwicklung",
-  "date": "November 12, 2023",
   "word_count": 2074,
   "title": "Generative KI im Jahr 2023: Funktionsweise und Einsatzfelder",
-  "language": "de",
-  "locale": "de_DE",
+  "date": "November 12, 2023",
   "subtitle": "Künstliche Intelligenz im Einsatz für Banken und Finanzdienstleistungen",
+  "language": "de",
+  "banner_alt": "KI-Konzept, 3D-Rendering, konzeptionelles Bild",
+  "banner": "https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp",
   "reading_time": 10,
-  "banner": "https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp"
+  "description": "Generative KI im Jahr 2023: Wie sie funktioniert, wo sie in Finanzdienstleistungen zuerst Fuß fasst und welche ethischen und architektonischen Fragen es zu stellen gilt.",
+  "locale": "de_DE",
+  "keywords": "generative KI, Technologie, Zukunft, Wirkung, Ethik, Synergien, Innovation, Kreativität, Transformation, Entwicklung"
 }

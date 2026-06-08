@@ -1,14 +1,14 @@
 {
   "language": "ha-NG",
-  "locale": "ha_NG",
-  "date": "Mar 08, 2024",
-  "title": "RustLogs (RLG): Structured Logging Library for Rust",
-  "tags": "Rust, Logging, Asynchronous, Structured, Customisable, Debugging, Development, RustLogs, Integration, Documentation, ISO 20022, post-quantum cryptography, AI, open source",
-  "subtitle": "Sauƙaƙe Tsarin Aiki na Rust Logging",
   "banner": "https://cloudcdn.pro/stocks/images/rustlogs.webp",
-  "keywords": "ɗakin karatu na Rust logging, asynchronous Rust logging, tsarin log da aka tsara, gyaran kuskure na Rust application, logging na Rust mai keɓantawa, kayan aikin Rust development, fasalulluka na RustLogs RLG, logging na Rust mai inganci, haɗin RustLogs, takardun RustLogs",
   "description": "Gano RustLogs (RLG), ɗakin karatu mai sassauci na logging don Rust tare da tsarin log da aka tsara, logging na asynchronous, da zaɓuɓɓuka masu yawa na keɓantawa.",
+  "tags": "Rust, Logging, Asynchronous, Structured, Customisable, Debugging, Development, RustLogs, Integration, Documentation, ISO 20022, post-quantum cryptography, AI, open source",
   "banner_alt": "Banner don RustLogs (RLG)",
-  "word_count": 2040,
-  "reading_time": 10
+  "title": "RustLogs (RLG): Structured Logging Library for Rust",
+  "reading_time": 10,
+  "subtitle": "Sauƙaƙe Tsarin Aiki na Rust Logging",
+  "date": "Mar 08, 2024",
+  "keywords": "ɗakin karatu na Rust logging, asynchronous Rust logging, tsarin log da aka tsara, gyaran kuskure na Rust application, logging na Rust mai keɓantawa, kayan aikin Rust development, fasalulluka na RustLogs RLG, logging na Rust mai inganci, haɗin RustLogs, takardun RustLogs",
+  "locale": "ha_NG",
+  "word_count": 2040
 }

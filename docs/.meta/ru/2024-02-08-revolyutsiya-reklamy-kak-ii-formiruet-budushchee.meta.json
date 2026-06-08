@@ -1,13 +1,13 @@
 {
-  "date": "February 8, 2024",
-  "banner": "https://cloudcdn.pro/stocks/images/ai-advertising.webp",
-  "language": "ru-RU",
-  "subtitle": "От таргетирования к генеративной креативности",
-  "locale": "ru_RU",
-  "title": "Революция рекламы: как ИИ формирует будущее",
-  "keywords": "ИИ в рекламе, programmatic, таргетирование, генеративные креативы, персонализация, RTB, аналитика, маркетинг банков",
   "description": "ИИ преобразует рекламную индустрию — от таргетирования и оптимизации показов до генерации креативов и персонализации сообщений.",
+  "title": "Революция рекламы: как ИИ формирует будущее",
+  "banner": "https://cloudcdn.pro/stocks/images/ai-advertising.webp",
+  "date": "February 8, 2024",
   "banner_alt": "ИИ в рекламе: визуализация технологического стека",
-  "reading_time": 1,
-  "word_count": 246
+  "language": "ru-RU",
+  "locale": "ru_RU",
+  "subtitle": "От таргетирования к генеративной креативности",
+  "keywords": "ИИ в рекламе, programmatic, таргетирование, генеративные креативы, персонализация, RTB, аналитика, маркетинг банков",
+  "word_count": 246,
+  "reading_time": 1
 }

@@ -1,14 +1,14 @@
 {
-  "word_count": 828,
-  "description": "اكتشف كيف يُحوِّل OpenAI Whisper وMetal Performance Shaders التعرّفَ الصوتي في الزمن الفعلي على macOS، مُقدِّمَين سرعةً ودقّةً لا مثيل لهما.",
   "tags": "OpenAI, Whisper, Metal, macOS, Speech, Real-Time, Transcription, GPU, Python, Silicon, ISO 20022, التشفير ما بعد الكمي, AI, open source, DORA, هندسة المنصة, السحابة السيادية, البنوك السحابية الأصيلة، Kubernetes، DORA، المؤسسات المالية، OpenShift، Portworx، سيادة السحابة، المرونة التشغيلية، التعافي من الكوارث، التعايش بين الأجهزة الافتراضية والحاويات، أعباء عمل الذكاء الاصطناعي، مخاطر الطرف الثالث، الاعتماد على السحابة",
-  "keywords": "OpenAI Whisper, Metal Performance Shaders, التعرّف الصوتي على macOS, النسخ في الزمن الفعلي, اكتشاف النشاط الصوتي, تسريع GPU, تكامل Python, تحويل الكلام إلى نصّ على macOS, اكتشاف الكلام الموفِّر للطاقة, Apple silicon",
-  "locale": "ar_SA",
-  "reading_time": 4,
-  "title": "التعرّف الصوتي السريع في الزمن الفعلي على macOS باستخدام OpenAI Whisper",
   "banner_alt": "لافتة للتعرّف الآلي على الكلام في الزمن الفعلي (ASR)",
   "language": "ar",
+  "word_count": 828,
+  "keywords": "OpenAI Whisper, Metal Performance Shaders, التعرّف الصوتي على macOS, النسخ في الزمن الفعلي, اكتشاف النشاط الصوتي, تسريع GPU, تكامل Python, تحويل الكلام إلى نصّ على macOS, اكتشاف الكلام الموفِّر للطاقة, Apple silicon",
   "subtitle": "أطلق قدرات تحويل الكلام إلى نصّ بدفع الذكاء الاصطناعي وتسريع وحدة معالجة الرسوميات على جهاز Mac",
+  "title": "التعرّف الصوتي السريع في الزمن الفعلي على macOS باستخدام OpenAI Whisper",
   "banner": "https://cloudcdn.pro/stocks/images/research-paper.webp",
-  "date": "Mar 12, 2024"
+  "date": "Mar 12, 2024",
+  "locale": "ar_SA",
+  "description": "اكتشف كيف يُحوِّل OpenAI Whisper وMetal Performance Shaders التعرّفَ الصوتي في الزمن الفعلي على macOS، مُقدِّمَين سرعةً ودقّةً لا مثيل لهما.",
+  "reading_time": 4
 }

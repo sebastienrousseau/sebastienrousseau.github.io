@@ -1,14 +1,14 @@
 {
-  "subtitle": "O analiză aprofundată a celui mai recent progres în domeniul AI al Google",
-  "language": "ro-RO",
-  "locale": "ro_RO",
-  "word_count": 739,
-  "reading_time": 3,
-  "banner_alt": "Vizualizare abstractă a rețelelor de inteligență artificială, reprezentând capacitățile Gemini 1.5",
-  "banner": "https://cloudcdn.pro/stocks/images/abstract-visualization-of-gemini.webp",
   "title": "Unlocking Gemini 1.5: Google's AI Revolution Explained",
-  "description": "Gemini 1.5 de la Google extinde ferestrele de context la peste 1 milion de tokeni. Ce posibilități oferă pentru finanțele augmentate prin recuperare și ce compromisuri trebuie cunoscute.",
+  "locale": "ro_RO",
   "tags": "Gemini 1.5, Google AI, AI Efficiency, AI Quality, Context Window, In-Context Learning, AI Use Cases, AI Revolution, Technology Transformation, Data Analysis, ISO 20022, criptografie post-cuantică, AI, DORA, depozite tokenizate, ingineria platformei, cloud suveran, banking cloud native, plăți transfrontaliere, stablecoinuri",
+  "banner_alt": "Vizualizare abstractă a rețelelor de inteligență artificială, reprezentând capacitățile Gemini 1.5",
+  "keywords": "Gemini 1.5, Google AI, arhitectură Mixture-of-Experts, eficiență computațională, extinderea ferestrei de context, inovație AI, transformarea analizei datelor, învățare în context, cazuri de utilizare AI, revoluție tehnologică",
+  "word_count": 739,
+  "subtitle": "O analiză aprofundată a celui mai recent progres în domeniul AI al Google",
+  "reading_time": 3,
+  "language": "ro-RO",
+  "description": "Gemini 1.5 de la Google extinde ferestrele de context la peste 1 milion de tokeni. Ce posibilități oferă pentru finanțele augmentate prin recuperare și ce compromisuri trebuie cunoscute.",
   "date": "Feb 19, 2024",
-  "keywords": "Gemini 1.5, Google AI, arhitectură Mixture-of-Experts, eficiență computațională, extinderea ferestrei de context, inovație AI, transformarea analizei datelor, învățare în context, cazuri de utilizare AI, revoluție tehnologică"
+  "banner": "https://cloudcdn.pro/stocks/images/abstract-visualization-of-gemini.webp"
 }

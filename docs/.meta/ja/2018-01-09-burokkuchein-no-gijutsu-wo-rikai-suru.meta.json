@@ -1,14 +1,14 @@
 {
-  "title": "ブロックチェーンの背後にある技術を理解する",
-  "keywords": "ブロックチェーン, 暗号, ハッシュ, デジタル署名, マークルツリー, 合意, プルーフ・オブ・ワーク, P2P ネットワーク",
-  "banner": "https://cloudcdn.pro/stocks/images/markus-spiske-466ENaLuhLY-unsplash.webp",
-  "locale": "ja_JP",
-  "banner_alt": "ターミナル画面上のコード",
-  "date": "January 9, 2018",
-  "description": "ブロックチェーンを構成する暗号、ネットワーク、合意の各レイヤーを技術的に分解して解説します。",
   "word_count": 58,
-  "reading_time": 1,
-  "last_reviewed": "2026-05-11",
+  "subtitle": "暗号、合意、ネットワークレイヤーを技術的に分解する",
   "language": "ja-JP",
-  "subtitle": "暗号、合意、ネットワークレイヤーを技術的に分解する"
+  "last_reviewed": "2026-05-11",
+  "keywords": "ブロックチェーン, 暗号, ハッシュ, デジタル署名, マークルツリー, 合意, プルーフ・オブ・ワーク, P2P ネットワーク",
+  "title": "ブロックチェーンの背後にある技術を理解する",
+  "banner": "https://cloudcdn.pro/stocks/images/markus-spiske-466ENaLuhLY-unsplash.webp",
+  "description": "ブロックチェーンを構成する暗号、ネットワーク、合意の各レイヤーを技術的に分解して解説します。",
+  "date": "January 9, 2018",
+  "banner_alt": "ターミナル画面上のコード",
+  "reading_time": 1,
+  "locale": "ja_JP"
 }

@@ -1,14 +1,14 @@
 {
-  "keywords": "cryptography mai tsayayya da quantum, post-quantum cryptography, ɗakin karatu na hash, HSH, hashing kalmar sirri, kamus na key, Argon2i, Bcrypt, Scrypt, kwamfutar quantum",
-  "description": "HSH yana amfani da kayan aikin cryptographic masu tsayayya da kwamfutar quantum don kare bayananka, yana tabbatar da tsaronsu har ma a gaban ci gaban quantum na gaba.",
-  "banner": "https://cloudcdn.pro/stocks/images/galina-nelyubova-7ej8VWfwFsg.webp",
   "banner_alt": "Zane mai ƙirƙira akan jigon kwamfutar quantum",
+  "description": "HSH yana amfani da kayan aikin cryptographic masu tsayayya da kwamfutar quantum don kare bayananka, yana tabbatar da tsaronsu har ma a gaban ci gaban quantum na gaba.",
   "subtitle": "HSH: ɗakin karatu na hash mai tsayayya da quantum don zamanin post-quantum na tabbatar da asali.",
-  "tags": "post-quantum cryptography, hash library, HSH, password hashing, key derivation, Argon2i, Bcrypt, Scrypt, quantum computing, ISO 20022, AI, Rust, open source",
   "date": "Oct 16, 2023",
-  "word_count": 1498,
-  "language": "ha-NG",
-  "reading_time": 7,
   "locale": "ha_NG",
-  "title": "Protecting Data in the Quantum Age: The Hash Library (HSH)"
+  "title": "Protecting Data in the Quantum Age: The Hash Library (HSH)",
+  "banner": "https://cloudcdn.pro/stocks/images/galina-nelyubova-7ej8VWfwFsg.webp",
+  "reading_time": 7,
+  "language": "ha-NG",
+  "tags": "post-quantum cryptography, hash library, HSH, password hashing, key derivation, Argon2i, Bcrypt, Scrypt, quantum computing, ISO 20022, AI, Rust, open source",
+  "word_count": 1498,
+  "keywords": "cryptography mai tsayayya da quantum, post-quantum cryptography, ɗakin karatu na hash, HSH, hashing kalmar sirri, kamus na key, Argon2i, Bcrypt, Scrypt, kwamfutar quantum"
 }

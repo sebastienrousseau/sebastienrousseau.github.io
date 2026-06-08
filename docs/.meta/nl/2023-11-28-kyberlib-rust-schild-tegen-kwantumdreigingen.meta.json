@@ -1,13 +1,13 @@
 {
+  "keywords": "KyberLib, CRYSTALS-Kyber, Rust, post-kwantum, FIPS 203, KEM, beveiliging",
+  "locale": "nl_NL",
   "banner": "https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg",
   "description": "KyberLib is een Rust-implementatie van CRYSTALS-Kyber, het NIST FIPS 203-standaardalgoritme voor post-kwantum-sleutelencapsulatie.",
-  "keywords": "KyberLib, CRYSTALS-Kyber, Rust, post-kwantum, FIPS 203, KEM, beveiliging",
-  "banner_alt": "Banner van KyberLib: Rust-implementatie van CRYSTALS-Kyber",
-  "subtitle": "Een robuuste Rust-implementatie van CRYSTALS-Kyber voor algemene post-kwantumversleuteling",
-  "locale": "nl_NL",
-  "word_count": 825,
-  "language": "nl-NL",
-  "date": "November 28, 2023",
   "reading_time": 4,
-  "title": "KyberLib: een Rust-schild tegen kwantumdreigingen"
+  "subtitle": "Een robuuste Rust-implementatie van CRYSTALS-Kyber voor algemene post-kwantumversleuteling",
+  "date": "November 28, 2023",
+  "title": "KyberLib: een Rust-schild tegen kwantumdreigingen",
+  "banner_alt": "Banner van KyberLib: Rust-implementatie van CRYSTALS-Kyber",
+  "language": "nl-NL",
+  "word_count": 825
 }
