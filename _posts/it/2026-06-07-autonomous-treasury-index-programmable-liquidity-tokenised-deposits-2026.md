@@ -155,19 +155,18 @@ Il ciclo di controllo segue Osserva → Rileva → Prevedi → Prepara → Richi
 sequenceDiagram
     autonumber
     participant Banks as Banche di cash management
-    participant Agent as Agente di tesoreria<br/>(delimitato, governato da policy)
-    participant Forecast as Motore di previsione<br/>(ML + libreria di scenari)
-    participant Treasurer as Tesoriere umano<br/>(MFA / chiave hardware)
-    participant Rails as Rail di pagamento<br/>(RTGS / RTP / DLT)
-
+    participant Agent as Agente di tesoreria
+    participant Forecast as Motore di previsione
+    participant Treasurer as Tesoriere umano
+    participant Rails as Rail di pagamento
     Banks->>Agent: Flusso saldi infragiornalieri camt.052
     Agent->>Agent: Osserva — aggiorna la posizione in tempo reale
     Agent->>Agent: Rileva — l'entità X supera la soglia di liquidità
     Agent->>Forecast: Richiedi proiezione di fine giornata
     Forecast-->>Agent: Carenza confermata (USD 12.4m)
-    Agent->>Agent: Prepara — bozza pain.001<br/>(repo / sweep) entro i limiti del mandato
-    Agent->>Treasurer: Invia richiesta di approvazione sicura<br/>(payload preparato + prove)
-    Note over Treasurer: MFA crittografica<br/>su chiave vincolata all'hardware
+    Agent->>Agent: Prepara — bozza pain.001 (repo / sweep) entro i limiti del mandato
+    Agent->>Treasurer: Invia richiesta di approvazione sicura (payload preparato + prove)
+    Note over Treasurer: MFA crittografica su chiave vincolata all'hardware
     Treasurer-->>Agent: Autorizzazione firmata
     Agent->>Rails: Trasmette pain.001 firmato
     Rails-->>Agent: ACK pain.002 + finalità

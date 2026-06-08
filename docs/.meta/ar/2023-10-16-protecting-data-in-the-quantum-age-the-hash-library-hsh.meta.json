@@ -1,14 +1,14 @@
 {
   "description": "تستخدم HSH أوليات تشفيرية مقاومة للحوسبة الكمية لحماية بياناتكم، وضمان أمنها حتى في مواجهة التقدمات المستقبلية للحوسبة الكمية.",
-  "locale": "ar_SA",
-  "language": "ar",
-  "date": "Oct 16, 2023",
-  "tags": "التشفير ما بعد الكمي, hash library, HSH, password hashing, key derivation, Argon2i, Bcrypt, Scrypt, الحوسبة الكمومية, ISO 20022, AI, Rust, open source",
-  "banner": "https://cloudcdn.pro/stocks/images/galina-nelyubova-7ej8VWfwFsg.webp",
-  "word_count": 1040,
-  "subtitle": "HSH: مكتبة هاش مقاومة للحوسبة الكمية لعصر ما بعد الكم في المصادقة.",
-  "keywords": "التشفير المقاوم للكم، التشفير ما بعد الكمي، مكتبة الهاش، HSH، تجزئة كلمات المرور، اشتقاق المفاتيح، Argon2i، Bcrypt، Scrypt، الحوسبة الكمية",
   "reading_time": 5,
+  "language": "ar",
+  "keywords": "التشفير المقاوم للكم، التشفير ما بعد الكمي، مكتبة الهاش، HSH، تجزئة كلمات المرور، اشتقاق المفاتيح، Argon2i، Bcrypt، Scrypt، الحوسبة الكمية",
+  "subtitle": "HSH: مكتبة هاش مقاومة للحوسبة الكمية لعصر ما بعد الكم في المصادقة.",
+  "locale": "ar_SA",
   "title": "حماية البيانات في عصر الكم: مكتبة الهاش (HSH)",
-  "banner_alt": "رسم توضيحي إبداعي حول موضوع الحوسبة الكمية"
+  "tags": "التشفير ما بعد الكمي, hash library, HSH, password hashing, key derivation, Argon2i, Bcrypt, Scrypt, الحوسبة الكمومية, ISO 20022, AI, Rust, open source",
+  "date": "Oct 16, 2023",
+  "banner_alt": "رسم توضيحي إبداعي حول موضوع الحوسبة الكمية",
+  "banner": "https://cloudcdn.pro/stocks/images/galina-nelyubova-7ej8VWfwFsg.webp",
+  "word_count": 1040
 }

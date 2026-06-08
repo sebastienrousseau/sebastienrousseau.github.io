@@ -170,23 +170,22 @@ Project Agorá fi àpapọ̀ náà ṣe gangan. Àpẹẹrẹ nísàlẹ̀ ni à
 ```mermaid
 sequenceDiagram
     autonumber
-    participant CB_A as Commercial Bank A<br/>(ẹgbẹ́ olùsanwó)
-    participant UL as Unified Ledger<br/>(ìpele ìṣàkóso BIS Agorá)
-    participant CBNK as Central Bank<br/>(olùpèsè wholesale CBDC)
-    participant CB_B as Commercial Bank B<br/>(ẹgbẹ́ olùgbà)
-
-    CB_A->>UL: Fi ìtọ́ni ránṣẹ́:<br/>debit tokenised deposit X,<br/>credit tokenised deposit Y,<br/>ipò = ẹsẹ̀ wholesale CBDC
-    UL->>UL: Ṣàyẹ̀wò àpò ISO 20022,<br/>àdírẹ́sì ìṣèlú, LEI,<br/>koodu ète, AML/sanctions
-    UL->>CBNK: Fipamọ́ wholesale CBDC<br/>(reserves bánkì-àárín gbùngbùn ẹgbẹ́ olùsanwó)
-    CBNK-->>UL: Ìfipamọ́ ti jẹ́rìí<br/>(ìdè atomic)
-    UL->>CB_A: Fi tokenised deposit X dè<br/>(ẹsẹ̀ owó commercial-bank)
+    participant CB_A as Commercial Bank A
+    participant UL as Unified Ledger
+    participant CBNK as Central Bank
+    participant CB_B as Commercial Bank B
+    CB_A->>UL: Fi ìtọ́ni ránṣẹ́: debit tokenised deposit X, credit tokenised deposit Y, ipò = ẹsẹ̀ wholesale CBDC
+    UL->>UL: Ṣàyẹ̀wò àpò ISO 20022, àdírẹ́sì ìṣèlú, LEI, koodu ète, AML/sanctions
+    UL->>CBNK: Fipamọ́ wholesale CBDC (reserves bánkì-àárín gbùngbùn ẹgbẹ́ olùsanwó)
+    CBNK-->>UL: Ìfipamọ́ ti jẹ́rìí (ìdè atomic)
+    UL->>CB_A: Fi tokenised deposit X dè (ẹsẹ̀ owó commercial-bank)
     CB_A-->>UL: Ìdè deposit jẹ́rìí
-    UL->>UL: Àwọn ẹsẹ̀ méjèèjì dè →<br/>okùnfà ìpinnu atomic
-    UL->>CBNK: Pinnu wholesale CBDC<br/>(reserves olùsanwó → reserves olùgbà)
-    UL->>CB_B: Pèsè tokenised deposit Y<br/>(ẹsẹ̀ owó commercial-bank)
+    UL->>UL: Àwọn ẹsẹ̀ méjèèjì dè → okùnfà ìpinnu atomic
+    UL->>CBNK: Pinnu wholesale CBDC (reserves olùsanwó → reserves olùgbà)
+    UL->>CB_B: Pèsè tokenised deposit Y (ẹsẹ̀ owó commercial-bank)
     CBNK-->>UL: Ìpinnu CBDC ti parí
     CB_B-->>UL: Deposit ti gbà
-    UL->>CB_A: Ìpinnu PvP ti parí<br/>(àwọn ẹsẹ̀ méjèèjì parí tàbí àwọn ẹsẹ̀ méjèèjì padà sẹ́yìn)
+    UL->>CB_A: Ìpinnu PvP ti parí (àwọn ẹsẹ̀ méjèèjì parí tàbí àwọn ẹsẹ̀ méjèèjì padà sẹ́yìn)
     UL->>CB_B: Ìpinnu PvP ti parí
 ```
 

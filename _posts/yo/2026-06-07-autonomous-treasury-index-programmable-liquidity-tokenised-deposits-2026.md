@@ -153,19 +153,18 @@ Control loop náà ń ṣiṣẹ́ Observe → Detect → Forecast → Prepare �
 sequenceDiagram
     autonumber
     participant Banks as Àwọn Bánkì Ìṣàkóso-Owó
-    participant Agent as Agent Ìjọba Owó<br/>(tí a fi ààlà sí, policy-gated)
-    participant Forecast as Ẹ̀rọ Ìfọkànbalẹ̀<br/>(ML + ilé-ìwé ìṣẹ̀lẹ̀)
-    participant Treasurer as Olùṣàkóso Ènìyàn<br/>(MFA / kọ́kọ́rọ́ hardware)
-    participant Rails as Àwọn Ọ̀nà Ìsanwó<br/>(RTGS / RTP / DLT)
-
+    participant Agent as Agent Ìjọba Owó
+    participant Forecast as Ẹ̀rọ Ìfọkànbalẹ̀
+    participant Treasurer as Olùṣàkóso Ènìyàn
+    participant Rails as Àwọn Ọ̀nà Ìsanwó
     Banks->>Agent: camt.052 ìṣàn ìwòntúnwòsì intraday
     Agent->>Agent: Observe — sọ ipò akóko di tuntun
     Agent->>Agent: Detect — entity X rékọjá ààlà ìṣàn-owó
     Agent->>Forecast: Béèrè ìfojúsọ́nà EOD
     Forecast-->>Agent: A jẹ́rìí àìtó (USD 12.4m)
-    Agent->>Agent: Prepare — kọ pain.001<br/>(repo / sweep) lábẹ́ àwọn ààlà àṣẹ
-    Agent->>Treasurer: Tì ìbéèrè ìfàṣẹsí ààbò<br/>(payload tó tilẹ̀ + ẹ̀rí)
-    Note over Treasurer: Cryptographic MFA<br/>lórí kọ́kọ́rọ́ hardware
+    Agent->>Agent: Prepare — kọ pain.001 (repo / sweep) lábẹ́ àwọn ààlà àṣẹ
+    Agent->>Treasurer: Tì ìbéèrè ìfàṣẹsí ààbò (payload tó tilẹ̀ + ẹ̀rí)
+    Note over Treasurer: Cryptographic MFA lórí kọ́kọ́rọ́ hardware
     Treasurer-->>Agent: Ìfọwọ́sí tí a fọwọ́sí
     Agent->>Rails: Fi pain.001 tí a fọwọ́sí ránṣẹ́
     Rails-->>Agent: pain.002 ACK + ìparí

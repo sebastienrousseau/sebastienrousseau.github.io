@@ -1471,6 +1471,50 @@ def test_inject_mermaid_converts_fenced_block():
     assert "cdn.jsdelivr.net" in out
 
 
+def test_inject_mermaid_widens_style_src_and_strips_hashes():
+    """The style-src widening branch:
+    - Adds 'unsafe-inline' so Mermaid's inline styles aren't CSP-blocked.
+    - Strips any existing sha256 hashes (CSP3: hashes silently disable
+      'unsafe-inline' if both are present in the same source list).
+    """
+    from postbuild_lib.article_furniture import inject_mermaid
+
+    html = (
+        '<meta http-equiv="Content-Security-Policy" '
+        "content=\"script-src 'self'; "
+        "style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' "
+        'https://fonts.googleapis.com\">'
+        '<pre><code class="language-mermaid">'
+        "sequenceDiagram\n    A-&gt;&gt;B: hi"
+        "</code></pre>"
+    )
+    out = inject_mermaid(html)
+    assert "'unsafe-inline'" in out
+    # The placeholder sha256 hash must be stripped to make unsafe-inline take effect.
+    assert "sha256-47DEQpj8HBSa" not in out
+    # script-src still widened by the original branch.
+    assert "cdn.jsdelivr.net" in out
+    # Raw `>` chars in mermaid block (not re-encoded as &gt;).
+    assert "A->>B" in out
+
+
+def test_inject_mermaid_no_re_widen_when_already_widened():
+    """Idempotent: if the CSP already has cdn.jsdelivr.net AND
+    'unsafe-inline', the patch leaves it alone."""
+    from postbuild_lib.article_furniture import inject_mermaid
+
+    html = (
+        '<meta http-equiv="Content-Security-Policy" '
+        "content=\"script-src 'self' https://cdn.jsdelivr.net; "
+        "style-src 'unsafe-inline' 'self'\">"
+        '<pre><code class="language-mermaid">graph TD; X--&gt;Y</code></pre>'
+    )
+    out = inject_mermaid(html)
+    # No duplicate insertions.
+    assert out.count("'unsafe-inline'") == 1
+    assert out.count("cdn.jsdelivr.net") == 1
+
+
 # ---------------------------------------------------------------------------
 # inject_sources_list
 # ---------------------------------------------------------------------------

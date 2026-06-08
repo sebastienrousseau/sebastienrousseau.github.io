@@ -153,19 +153,18 @@ Bucla de control rulează Observă → Detectează → Prognozează → Pregăte
 sequenceDiagram
     autonumber
     participant Banks as Bănci de cash management
-    participant Agent as Agent de trezorerie<br/>(cu limite, controlat de politici)
-    participant Forecast as Motor de prognoză<br/>(ML + bibliotecă de scenarii)
-    participant Treasurer as Trezorier uman<br/>(MFA / cheie hardware)
-    participant Rails as Șine de plată<br/>(RTGS / RTP / DLT)
-
+    participant Agent as Agent de trezorerie
+    participant Forecast as Motor de prognoză
+    participant Treasurer as Trezorier uman
+    participant Rails as Șine de plată
     Banks->>Agent: flux de solduri intraday camt.052
     Agent->>Agent: Observă — actualizează poziția în timp real
     Agent->>Agent: Detectează — entitatea X încalcă pragul de lichiditate
     Agent->>Forecast: Solicită proiecție EOD
     Forecast-->>Agent: Deficit confirmat (USD 12.4m)
-    Agent->>Agent: Pregătește — schiță pain.001<br/>(repo / sweep) în limitele mandatului
-    Agent->>Treasurer: Trimite cerere de aprobare securizată<br/>(sarcină utilă pregătită + dovezi)
-    Note over Treasurer: MFA criptografic<br/>pe cheie legată hardware
+    Agent->>Agent: Pregătește — schiță pain.001 (repo / sweep) în limitele mandatului
+    Agent->>Treasurer: Trimite cerere de aprobare securizată (sarcină utilă pregătită + dovezi)
+    Note over Treasurer: MFA criptografic pe cheie legată hardware
     Treasurer-->>Agent: Autorizație semnată
     Agent->>Rails: Trimite pain.001 semnat
     Rails-->>Agent: ACK pain.002 + finalitate

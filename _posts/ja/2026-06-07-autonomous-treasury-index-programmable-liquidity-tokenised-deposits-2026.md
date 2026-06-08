@@ -153,19 +153,18 @@ Stanford AI Index が有用であるのは、急速に進化するテクノロ�
 sequenceDiagram
     autonumber
     participant Banks as キャッシュマネジメント銀行
-    participant Agent as トレジャリー・エージェント<br/>(制限付き・ポリシーゲート)
-    participant Forecast as 予測エンジン<br/>(ML + シナリオ・ライブラリ)
-    participant Treasurer as 人間のトレジャラー<br/>(MFA / ハードウェア鍵)
-    participant Rails as 決済レール<br/>(RTGS / RTP / DLT)
-
+    participant Agent as トレジャリー・エージェント
+    participant Forecast as 予測エンジン
+    participant Treasurer as 人間のトレジャラー
+    participant Rails as 決済レール
     Banks->>Agent: camt.052 日中残高ストリーム
     Agent->>Agent: Observe — リアルタイム・ポジションを更新
     Agent->>Agent: Detect — エンティティ X が流動性フロアを抵触
     Agent->>Forecast: 当日終了時点の予測を要求
     Forecast-->>Agent: 資金不足を確認 (USD 12.4m)
-    Agent->>Agent: Prepare — pain.001 を起草<br/>(レポ / スイープ)マンデート・リミット内
-    Agent->>Treasurer: セキュアな承認要求を送信<br/>(準備済みペイロード + エビデンス)
-    Note over Treasurer: ハードウェアバインドされた鍵による<br/>暗号 MFA
+    Agent->>Agent: Prepare — pain.001 を起草 (レポ / スイープ)マンデート・リミット内
+    Agent->>Treasurer: セキュアな承認要求を送信 (準備済みペイロード + エビデンス)
+    Note over Treasurer: ハードウェアバインドされた鍵による 暗号 MFA
     Treasurer-->>Agent: 署名済み認可
     Agent->>Rails: 署名済み pain.001 を送信
     Rails-->>Agent: pain.002 ACK + ファイナリティ

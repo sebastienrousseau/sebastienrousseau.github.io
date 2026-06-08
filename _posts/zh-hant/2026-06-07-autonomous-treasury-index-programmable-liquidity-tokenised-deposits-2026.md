@@ -153,19 +153,18 @@ site_software: "Static Site Generator, Rust"
 sequenceDiagram
     autonumber
     participant Banks as 現金管理銀行
-    participant Agent as 司庫代理人<br/>(受限、政策閘控)
-    participant Forecast as 預測引擎<br/>(ML + 情境庫)
-    participant Treasurer as 人類司庫長<br/>(MFA / 硬體金鑰)
-    participant Rails as 支付軌道<br/>(RTGS / RTP / DLT)
-
+    participant Agent as 司庫代理人
+    participant Forecast as 預測引擎
+    participant Treasurer as 人類司庫長
+    participant Rails as 支付軌道
     Banks->>Agent: camt.052 日內餘額串流
     Agent->>Agent: 觀察——更新即時部位
     Agent->>Agent: 偵測——實體 X 跌破流動性下限
     Agent->>Forecast: 請求日終投射
     Forecast-->>Agent: 確認缺口 (USD 12.4m)
-    Agent->>Agent: 預備——於授權限額內草擬 pain.001<br/>(附買回 / 歸集)
-    Agent->>Treasurer: 推送安全核准請求<br/>(預備承載 + 證據)
-    Note over Treasurer: 於硬體綁定金鑰<br/>進行密碼學 MFA
+    Agent->>Agent: 預備——於授權限額內草擬 pain.001 (附買回 / 歸集)
+    Agent->>Treasurer: 推送安全核准請求 (預備承載 + 證據)
+    Note over Treasurer: 於硬體綁定金鑰 進行密碼學 MFA
     Treasurer-->>Agent: 已簽署授權
     Agent->>Rails: 送出已簽署之 pain.001
     Rails-->>Agent: pain.002 確收 + 終局性

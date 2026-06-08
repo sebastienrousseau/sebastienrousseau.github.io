@@ -153,19 +153,18 @@ El bucle de control ejecuta Observar → Detectar → Prever → Preparar → So
 sequenceDiagram
     autonumber
     participant Banks as Bancos de Cash Management
-    participant Agent as Agente de Tesorería<br/>(acotado, con barreras de protección por política)
-    participant Forecast as Motor de Previsión<br/>(ML + librería de escenarios)
-    participant Treasurer as Tesorero Humano<br/>(MFA / clave hardware)
-    participant Rails as Raíles de Pago<br/>(RTGS / RTP / DLT)
-
+    participant Agent as Agente de Tesorería
+    participant Forecast as Motor de Previsión
+    participant Treasurer as Tesorero Humano
+    participant Rails as Raíles de Pago
     Banks->>Agent: flujo de saldos intradía camt.052
     Agent->>Agent: Observar — refrescar posición en tiempo real
     Agent->>Agent: Detectar — la entidad X rompe el suelo de liquidez
     Agent->>Forecast: Solicitar proyección de cierre de día
     Forecast-->>Agent: Brecha confirmada (USD 12.4m)
-    Agent->>Agent: Preparar — borrador de pain.001<br/>(repo / sweep) dentro de los límites del mandato
-    Agent->>Treasurer: Enviar solicitud segura de aprobación<br/>(payload preparado + evidencia)
-    Note over Treasurer: MFA criptográfica<br/>sobre clave anclada al hardware
+    Agent->>Agent: Preparar — borrador de pain.001 (repo / sweep) dentro de los límites del mandato
+    Agent->>Treasurer: Enviar solicitud segura de aprobación (payload preparado + evidencia)
+    Note over Treasurer: MFA criptográfica sobre clave anclada al hardware
     Treasurer-->>Agent: Autorización firmada
     Agent->>Rails: Enviar pain.001 firmado
     Rails-->>Agent: ACK pain.002 + finalidad

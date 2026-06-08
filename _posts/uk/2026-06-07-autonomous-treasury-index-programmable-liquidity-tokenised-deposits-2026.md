@@ -155,19 +155,18 @@ site_software: "Static Site Generator, Rust"
 sequenceDiagram
     autonumber
     participant Banks as Банки касового керування
-    participant Agent as Казначейський агент<br/>(обмежений, шлюзований політикою)
-    participant Forecast as Прогнозний рушій<br/>(ML + бібліотека сценаріїв)
-    participant Treasurer as Людина-казначей<br/>(MFA / апаратний ключ)
-    participant Rails as Платіжні рейки<br/>(RTGS / RTP / DLT)
-
+    participant Agent as Казначейський агент
+    participant Forecast as Прогнозний рушій
+    participant Treasurer as Людина-казначей
+    participant Rails as Платіжні рейки
     Banks->>Agent: потік внутрішньоденних залишків camt.052
     Agent->>Agent: Спостерігай — оновити позицію в реальному часі
     Agent->>Agent: Виявляй — суб'єкт X порушує мінімум ліквідності
     Agent->>Forecast: Запит прогнозу на кінець дня
     Forecast-->>Agent: Дефіцит підтверджено (USD 12.4m)
-    Agent->>Agent: Готуй — чернетка pain.001<br/>(репо / перерахування) у межах мандата
-    Agent->>Treasurer: Надіслати захищений запит на погодження<br/>(підготовлене навантаження + докази)
-    Note over Treasurer: Криптографічне MFA<br/>на апаратно-прив'язаному ключі
+    Agent->>Agent: Готуй — чернетка pain.001 (репо / перерахування) у межах мандата
+    Agent->>Treasurer: Надіслати захищений запит на погодження (підготовлене навантаження + докази)
+    Note over Treasurer: Криптографічне MFA на апаратно-прив'язаному ключі
     Treasurer-->>Agent: Підписана авторизація
     Agent->>Rails: Подати підписане pain.001
     Rails-->>Agent: підтвердження pain.002 + остаточність

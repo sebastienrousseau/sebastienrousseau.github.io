@@ -1,13 +1,13 @@
 {
   "date": "Nov 12, 2023",
-  "banner_alt": "AI, Artificial Intelligence concept,3d rendering,conceptual image",
+  "description": "Explore Generative AI in 2023: how it works, where it lands first in financial services, and the ethical and architectural questions worth asking.",
   "language": "id-ID",
+  "keywords": "Generative AI, technology, future, impact, ethics, synergies, innovation, creativity, transformation, evolution",
+  "reading_time": 1,
+  "locale": "id_ID",
+  "title": "[ID DRAFT] Generative AI in 2023: How It Works, Where It Lands",
   "word_count": 300,
   "banner": "https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp",
-  "title": "[ID DRAFT] Generative AI in 2023: How It Works, Where It Lands",
-  "locale": "id_ID",
-  "keywords": "Generative AI, technology, future, impact, ethics, synergies, innovation, creativity, transformation, evolution",
-  "description": "Explore Generative AI in 2023: how it works, where it lands first in financial services, and the ethical and architectural questions worth asking.",
-  "reading_time": 1,
-  "subtitle": "Applied artificial intelligence in banking and financial services."
+  "subtitle": "Applied artificial intelligence in banking and financial services.",
+  "banner_alt": "AI, Artificial Intelligence concept,3d rendering,conceptual image"
 }

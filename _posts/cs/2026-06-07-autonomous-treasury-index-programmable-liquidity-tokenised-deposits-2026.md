@@ -155,19 +155,18 @@ Treasury agent by neměl být navržen jako univerzální asistent. Potřebuje m
 sequenceDiagram
     autonumber
     participant Banks as Banky cash managementu
-    participant Agent as Treasury agent<br/>(ohraničený, řízený politikou)
-    participant Forecast as Predikční engine<br/>(ML + knihovna scénářů)
-    participant Treasurer as Lidský treasurer<br/>(MFA / hardwarový klíč)
-    participant Rails as Platební raily<br/>(RTGS / RTP / DLT)
-
+    participant Agent as Treasury agent
+    participant Forecast as Predikční engine
+    participant Treasurer as Lidský treasurer
+    participant Rails as Platební raily
     Banks->>Agent: camt.052 stream vnitrodenních zůstatků
     Agent->>Agent: Pozorovat — obnovit pozici v reálném čase
     Agent->>Agent: Detekovat — entita X překračuje likviditní práh
     Agent->>Forecast: Požádat o predikci EOD
     Forecast-->>Agent: Výpadek potvrzen (USD 12.4m)
-    Agent->>Agent: Připravit — návrh pain.001<br/>(repo / sweep) v rámci mandátních limitů
-    Agent->>Treasurer: Odeslat zabezpečenou žádost o schválení<br/>(připravený payload + důkazy)
-    Note over Treasurer: Kryptografické MFA<br/>na klíči vázaném na hardware
+    Agent->>Agent: Připravit — návrh pain.001 (repo / sweep) v rámci mandátních limitů
+    Agent->>Treasurer: Odeslat zabezpečenou žádost o schválení (připravený payload + důkazy)
+    Note over Treasurer: Kryptografické MFA na klíči vázaném na hardware
     Treasurer-->>Agent: Podepsaná autorizace
     Agent->>Rails: Odeslat podepsaný pain.001
     Rails-->>Agent: pain.002 ACK + finalita

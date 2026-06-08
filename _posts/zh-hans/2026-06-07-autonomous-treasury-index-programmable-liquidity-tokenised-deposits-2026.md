@@ -153,19 +153,19 @@ Stanford AI Index 之所以有价值，是因为它把一个快速演进的技�
 sequenceDiagram
     autonumber
     participant Banks as 现金管理银行
-    participant Agent as 司库智能体<br/>（受限、按策略门禁）
-    participant Forecast as 预测引擎<br/>（ML + 情景库）
-    participant Treasurer as 人工司库<br/>（MFA / 硬件密钥）
-    participant Rails as 支付轨道<br/>（RTGS / RTP / DLT）
+    participant Agent as 司库智能体 （受限、按策略门禁）
+    participant Forecast as 预测引擎 （ML + 情景库）
+    participant Treasurer as 人工司库 （MFA / 硬件密钥）
+    participant Rails as 支付轨道 （RTGS / RTP / DLT）
 
     Banks->>Agent: camt.052 日内余额流
     Agent->>Agent: 观察——刷新实时头寸
     Agent->>Agent: 检测——主体 X 突破流动性下限
     Agent->>Forecast: 申请日终预测
     Forecast-->>Agent: 缺口确认（USD 12.4m）
-    Agent->>Agent: 准备——在授权指令限额内起草 pain.001<br/>（回购 / 归集）
-    Agent->>Treasurer: 推送安全审批请求<br/>（已准备报文 + 凭证）
-    Note over Treasurer: 在硬件绑定密钥上<br/>完成密码学 MFA
+    Agent->>Agent: 准备——在授权指令限额内起草 pain.001 （回购 / 归集）
+    Agent->>Treasurer: 推送安全审批请求 （已准备报文 + 凭证）
+    Note over Treasurer: 在硬件绑定密钥上 完成密码学 MFA
     Treasurer-->>Agent: 已签名授权
     Agent->>Rails: 提交已签名 pain.001
     Rails-->>Agent: pain.002 确认 + 终局性

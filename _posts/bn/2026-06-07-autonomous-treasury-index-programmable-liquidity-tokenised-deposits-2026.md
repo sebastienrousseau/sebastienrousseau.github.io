@@ -155,19 +155,18 @@ Stanford AI সূচক উপযোগী, কারণ এটি একটি
 sequenceDiagram
     autonumber
     participant Banks as ক্যাশ-ম্যানেজমেন্ট ব্যাংক
-    participant Agent as ট্রেজারি এজেন্ট<br/>(সীমাবদ্ধ, পলিসি-গেটেড)
-    participant Forecast as পূর্বাভাস ইঞ্জিন<br/>(ML + পরিস্থিতি লাইব্রেরি)
-    participant Treasurer as মানব ট্রেজারার<br/>(MFA / হার্ডওয়্যার কী)
-    participant Rails as পেমেন্ট রেল<br/>(RTGS / RTP / DLT)
-
+    participant Agent as ট্রেজারি এজেন্ট
+    participant Forecast as পূর্বাভাস ইঞ্জিন
+    participant Treasurer as মানব ট্রেজারার
+    participant Rails as পেমেন্ট রেল
     Banks->>Agent: camt.052 ইন্ট্রাডে ব্যালেন্স স্ট্রিম
     Agent->>Agent: পর্যবেক্ষণ — রিয়েল-টাইম পজিশন রিফ্রেশ
     Agent->>Agent: শনাক্তকরণ — সত্তা X তরলতার মেঝে লঙ্ঘন করেছে
     Agent->>Forecast: EOD প্রক্ষেপণের অনুরোধ
     Forecast-->>Agent: ঘাটতি নিশ্চিত (USD 12.4m)
-    Agent->>Agent: প্রস্তুতি — pain.001 খসড়া<br/>(রেপো / সুইপ) ম্যান্ডেট সীমার মধ্যে
-    Agent->>Treasurer: নিরাপদ অনুমোদন অনুরোধ পুশ<br/>(প্রস্তুত পেলোড + প্রমাণ)
-    Note over Treasurer: হার্ডওয়্যার-বদ্ধ কী-তে<br/>ক্রিপ্টোগ্রাফিক MFA
+    Agent->>Agent: প্রস্তুতি — pain.001 খসড়া (রেপো / সুইপ) ম্যান্ডেট সীমার মধ্যে
+    Agent->>Treasurer: নিরাপদ অনুমোদন অনুরোধ পুশ (প্রস্তুত পেলোড + প্রমাণ)
+    Note over Treasurer: হার্ডওয়্যার-বদ্ধ কী-তে ক্রিপ্টোগ্রাফিক MFA
     Treasurer-->>Agent: স্বাক্ষরিত অনুমোদন
     Agent->>Rails: স্বাক্ষরিত pain.001 জমা দেয়
     Rails-->>Agent: pain.002 ACK + চূড়ান্ততা

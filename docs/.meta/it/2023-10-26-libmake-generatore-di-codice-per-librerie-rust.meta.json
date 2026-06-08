@@ -1,13 +1,13 @@
 {
-  "description": "Libmake è un generatore di codice che automatizza la creazione di nuove librerie Rust con scaffolding, CI, documentazione e test pronti all'uso.",
   "subtitle": "Scaffolding standardizzato per librerie Rust open source",
-  "banner_alt": "Pilastri bianchi giganti",
-  "keywords": "Libmake, Rust, generatore di codice, scaffolding, automazione, open source",
-  "banner": "https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp",
-  "language": "it-IT",
-  "date": "October 26, 2023",
+  "description": "Libmake è un generatore di codice che automatizza la creazione di nuove librerie Rust con scaffolding, CI, documentazione e test pronti all'uso.",
   "title": "Libmake: un generatore di codice per ridurre i compiti ripetitivi e costruire librerie Rust di qualità",
+  "banner": "https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp",
+  "reading_time": 3,
+  "banner_alt": "Pilastri bianchi giganti",
+  "date": "October 26, 2023",
   "locale": "it_IT",
-  "word_count": 783,
-  "reading_time": 3
+  "keywords": "Libmake, Rust, generatore di codice, scaffolding, automazione, open source",
+  "language": "it-IT",
+  "word_count": 783
 }

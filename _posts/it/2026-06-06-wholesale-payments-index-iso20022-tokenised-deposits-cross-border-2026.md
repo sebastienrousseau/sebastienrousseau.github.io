@@ -170,23 +170,22 @@ Project Agorá rende concreta la combinazione. L'architettura qui sotto è il pa
 ```mermaid
 sequenceDiagram
     autonumber
-    participant CB_A as Banca commerciale A<br/>(lato pagatore)
-    participant UL as Registro unificato<br/>(piano di coordinamento BIS Agorá)
-    participant CBNK as Banca centrale<br/>(emittente CBDC wholesale)
-    participant CB_B as Banca commerciale B<br/>(lato beneficiario)
-
-    CB_A->>UL: Invia istruzione:<br/>addebita deposito tokenizzato X,<br/>accredita deposito tokenizzato Y,<br/>condizione = gamba CBDC wholesale
-    UL->>UL: Valida busta ISO 20022,<br/>indirizzo strutturato, LEI,<br/>codice di finalità, AML/sanzioni
-    UL->>CBNK: Riserva CBDC wholesale<br/>(riserve di banca centrale lato pagatore)
-    CBNK-->>UL: Riserva confermata<br/>(lock atomico)
-    UL->>CB_A: Blocca deposito tokenizzato X<br/>(gamba moneta di banca commerciale)
+    participant CB_A as Banca commerciale A
+    participant UL as Registro unificato
+    participant CBNK as Banca centrale
+    participant CB_B as Banca commerciale B
+    CB_A->>UL: Invia istruzione: addebita deposito tokenizzato X, accredita deposito tokenizzato Y, condizione = gamba CBDC wholesale
+    UL->>UL: Valida busta ISO 20022, indirizzo strutturato, LEI, codice di finalità, AML/sanzioni
+    UL->>CBNK: Riserva CBDC wholesale (riserve di banca centrale lato pagatore)
+    CBNK-->>UL: Riserva confermata (lock atomico)
+    UL->>CB_A: Blocca deposito tokenizzato X (gamba moneta di banca commerciale)
     CB_A-->>UL: Lock del deposito confermato
-    UL->>UL: Entrambe le gambe bloccate →<br/>trigger di regolamento atomico
-    UL->>CBNK: Regola CBDC wholesale<br/>(riserve pagatore → riserve beneficiario)
-    UL->>CB_B: Emetti deposito tokenizzato Y<br/>(gamba moneta di banca commerciale)
+    UL->>UL: Entrambe le gambe bloccate → trigger di regolamento atomico
+    UL->>CBNK: Regola CBDC wholesale (riserve pagatore → riserve beneficiario)
+    UL->>CB_B: Emetti deposito tokenizzato Y (gamba moneta di banca commerciale)
     CBNK-->>UL: Regolamento CBDC finalizzato
     CB_B-->>UL: Deposito accreditato
-    UL->>CB_A: Regolamento PvP completato<br/>(entrambe le gambe definitive o entrambe rollback)
+    UL->>CB_A: Regolamento PvP completato (entrambe le gambe definitive o entrambe rollback)
     UL->>CB_B: Regolamento PvP completato
 ```
 

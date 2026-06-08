@@ -170,23 +170,22 @@ Project Agorá nadaje tej kombinacji konkretny kształt. Poniższa architektura 
 ```mermaid
 sequenceDiagram
     autonumber
-    participant CB_A as Bank komercyjny A<br/>(strona płatnika)
-    participant UL as Zunifikowana księga<br/>(warstwa koordynacji BIS Agorá)
-    participant CBNK as Bank centralny<br/>(emitent hurtowego CBDC)
-    participant CB_B as Bank komercyjny B<br/>(strona beneficjenta)
-
-    CB_A->>UL: Złóż instrukcję:<br/>obciąż depozyt tokenizowany X,<br/>uznaj depozyt tokenizowany Y,<br/>warunek = noga hurtowego CBDC
-    UL->>UL: Waliduj kopertę ISO 20022,<br/>adres ustrukturyzowany, LEI,<br/>kod celu, AML/sankcje
-    UL->>CBNK: Zarezerwuj hurtowy CBDC<br/>(rezerwy banku centralnego po stronie płatnika)
-    CBNK-->>UL: Rezerwacja potwierdzona<br/>(blokada atomowa)
-    UL->>CB_A: Zablokuj depozyt tokenizowany X<br/>(noga pieniądza banku komercyjnego)
+    participant CB_A as Bank komercyjny A
+    participant UL as Zunifikowana księga
+    participant CBNK as Bank centralny
+    participant CB_B as Bank komercyjny B
+    CB_A->>UL: Złóż instrukcję: obciąż depozyt tokenizowany X, uznaj depozyt tokenizowany Y, warunek = noga hurtowego CBDC
+    UL->>UL: Waliduj kopertę ISO 20022, adres ustrukturyzowany, LEI, kod celu, AML/sankcje
+    UL->>CBNK: Zarezerwuj hurtowy CBDC (rezerwy banku centralnego po stronie płatnika)
+    CBNK-->>UL: Rezerwacja potwierdzona (blokada atomowa)
+    UL->>CB_A: Zablokuj depozyt tokenizowany X (noga pieniądza banku komercyjnego)
     CB_A-->>UL: Blokada depozytu potwierdzona
-    UL->>UL: Obie nogi zablokowane →<br/>wyzwalacz rozrachunku atomowego
-    UL->>CBNK: Rozlicz hurtowy CBDC<br/>(rezerwy płatnika → rezerwy beneficjenta)
-    UL->>CB_B: Wyemituj depozyt tokenizowany Y<br/>(noga pieniądza banku komercyjnego)
+    UL->>UL: Obie nogi zablokowane → wyzwalacz rozrachunku atomowego
+    UL->>CBNK: Rozlicz hurtowy CBDC (rezerwy płatnika → rezerwy beneficjenta)
+    UL->>CB_B: Wyemituj depozyt tokenizowany Y (noga pieniądza banku komercyjnego)
     CBNK-->>UL: Rozrachunek CBDC sfinalizowany
     CB_B-->>UL: Depozyt uznany
-    UL->>CB_A: Rozrachunek PvP kompletny<br/>(obie nogi ostateczne lub obie wycofane)
+    UL->>CB_A: Rozrachunek PvP kompletny (obie nogi ostateczne lub obie wycofane)
     UL->>CB_B: Rozrachunek PvP kompletny
 ```
 

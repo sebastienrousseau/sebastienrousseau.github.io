@@ -153,19 +153,18 @@ Stanford AI Index มีประโยชน์เพราะปฏิบั�
 sequenceDiagram
     autonumber
     participant Banks as ธนาคารบริหารเงินสด
-    participant Agent as เอเจนต์คลัง<br/>(มีขอบเขต, ผ่านรั้วกันชนนโยบาย)
-    participant Forecast as เครื่องมือพยากรณ์<br/>(ML + คลังสถานการณ์)
-    participant Treasurer as เหรัญญิกที่เป็นมนุษย์<br/>(MFA / คีย์ฮาร์ดแวร์)
-    participant Rails as รางชำระเงิน<br/>(RTGS / RTP / DLT)
-
+    participant Agent as เอเจนต์คลัง
+    participant Forecast as เครื่องมือพยากรณ์
+    participant Treasurer as เหรัญญิกที่เป็นมนุษย์
+    participant Rails as รางชำระเงิน
     Banks->>Agent: camt.052 สตรีมยอดคงเหลือในระหว่างวัน
     Agent->>Agent: Observe — รีเฟรชฐานะเรียลไทม์
     Agent->>Agent: Detect — นิติบุคคล X ละเมิดเพดานล่างสภาพคล่อง
     Agent->>Forecast: ขอประมาณการปลายวัน
     Forecast-->>Agent: ยืนยันการขาดดุล (USD 12.4m)
-    Agent->>Agent: Prepare — ร่าง pain.001<br/>(repo / sweep) ภายในขีดจำกัดคำสั่งมอบหมาย
-    Agent->>Treasurer: ส่งคำขออนุมัติแบบปลอดภัย<br/>(payload ที่เตรียมแล้ว + หลักฐาน)
-    Note over Treasurer: MFA เชิงเข้ารหัส<br/>บนคีย์ที่ผูกกับฮาร์ดแวร์
+    Agent->>Agent: Prepare — ร่าง pain.001 (repo / sweep) ภายในขีดจำกัดคำสั่งมอบหมาย
+    Agent->>Treasurer: ส่งคำขออนุมัติแบบปลอดภัย (payload ที่เตรียมแล้ว + หลักฐาน)
+    Note over Treasurer: MFA เชิงเข้ารหัส บนคีย์ที่ผูกกับฮาร์ดแวร์
     Treasurer-->>Agent: การอนุญาตที่ลงนามแล้ว
     Agent->>Rails: ส่ง pain.001 ที่ลงนาม
     Rails-->>Agent: ACK ของ pain.002 + ความเป็นที่สุด

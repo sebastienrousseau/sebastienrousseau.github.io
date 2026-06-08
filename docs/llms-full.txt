@@ -70,19 +70,19 @@ The control loop runs Observe → Detect → Forecast → Prepare → Request Ap
 sequenceDiagram
     autonumber
     participant Banks as Cash-Management Banks
-    participant Agent as Treasury Agent<br/>(bounded, policy-gated)
-    participant Forecast as Forecast Engine<br/>(ML + scenario lib)
-    participant Treasurer as Human Treasurer<br/>(MFA / hardware key)
-    participant Rails as Payment Rails<br/>(RTGS / RTP / DLT)
+    participant Agent as Treasury Agent (bounded, policy-gated)
+    participant Forecast as Forecast Engine (ML + scenario lib)
+    participant Treasurer as Human Treasurer (MFA / hardware key)
+    participant Rails as Payment Rails (RTGS / RTP / DLT)
 
     Banks->>Agent: camt.052 intraday balance stream
     Agent->>Agent: Observe — refresh real-time position
     Agent->>Agent: Detect — entity X breaches liquidity floor
     Agent->>Forecast: Request EOD projection
     Forecast-->>Agent: Shortfall confirmed (USD 12.4m)
-    Agent->>Agent: Prepare — draft pain.001<br/>(repo / sweep) under mandate limits
-    Agent->>Treasurer: Push secure approval request<br/>(prepared payload + evidence)
-    Note over Treasurer: Cryptographic MFA<br/>on hardware-bound key
+    Agent->>Agent: Prepare — draft pain.001 (repo / sweep) under mandate limits
+    Agent->>Treasurer: Push secure approval request (prepared payload + evidence)
+    Note over Treasurer: Cryptographic MFA on hardware-bound key
     Treasurer-->>Agent: Signed authorisation
     Agent->>Rails: Submit signed pain.001
     Rails-->>Agent: pain.002 ACK + finality
@@ -232,23 +232,23 @@ Project Agorá makes the combination concrete. The architecture below is the BIS
 ```mermaid
 sequenceDiagram
     autonumber
-    participant CB_A as Commercial Bank A<br/>(payer side)
-    participant UL as Unified Ledger<br/>(BIS Agorá coordination plane)
-    participant CBNK as Central Bank<br/>(wholesale CBDC issuer)
-    participant CB_B as Commercial Bank B<br/>(payee side)
+    participant CB_A as Commercial Bank A (payer side)
+    participant UL as Unified Ledger (BIS Agorá coordination plane)
+    participant CBNK as Central Bank (wholesale CBDC issuer)
+    participant CB_B as Commercial Bank B (payee side)
 
-    CB_A->>UL: Submit instruction:<br/>debit tokenised deposit X,<br/>credit tokenised deposit Y,<br/>condition = wholesale CBDC leg
-    UL->>UL: Validate ISO 20022 envelope,<br/>structured address, LEI,<br/>purpose code, AML/sanctions
-    UL->>CBNK: Reserve wholesale CBDC<br/>(payer-side central-bank reserves)
-    CBNK-->>UL: Reservation confirmed<br/>(atomic lock)
-    UL->>CB_A: Lock tokenised deposit X<br/>(commercial-bank money leg)
+    CB_A->>UL: Submit instruction: debit tokenised deposit X, credit tokenised deposit Y, condition = wholesale CBDC leg
+    UL->>UL: Validate ISO 20022 envelope, structured address, LEI, purpose code, AML/sanctions
+    UL->>CBNK: Reserve wholesale CBDC (payer-side central-bank reserves)
+    CBNK-->>UL: Reservation confirmed (atomic lock)
+    UL->>CB_A: Lock tokenised deposit X (commercial-bank money leg)
     CB_A-->>UL: Deposit lock confirmed
-    UL->>UL: Both legs locked →<br/>atomic settlement trigger
-    UL->>CBNK: Settle wholesale CBDC<br/>(payer reserves → payee reserves)
-    UL->>CB_B: Issue tokenised deposit Y<br/>(commercial-bank money leg)
+    UL->>UL: Both legs locked → atomic settlement trigger
+    UL->>CBNK: Settle wholesale CBDC (payer reserves → payee reserves)
+    UL->>CB_B: Issue tokenised deposit Y (commercial-bank money leg)
     CBNK-->>UL: CBDC settlement finalised
     CB_B-->>UL: Deposit credited
-    UL->>CB_A: PvP settlement complete<br/>(both legs final or both legs roll back)
+    UL->>CB_A: PvP settlement complete (both legs final or both legs roll back)
     UL->>CB_B: PvP settlement complete
 ```
 

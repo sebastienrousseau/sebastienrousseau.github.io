@@ -170,23 +170,22 @@ Project Agorá tuto kombinaci zhmotňuje. Architektura níže je referenční vz
 ```mermaid
 sequenceDiagram
     autonumber
-    participant CB_A as Komerční banka A<br/>(strana plátce)
-    participant UL as Jednotná kniha<br/>(koordinační rovina BIS Agorá)
-    participant CBNK as Centrální banka<br/>(emitent velkoobchodní CBDC)
-    participant CB_B as Komerční banka B<br/>(strana příjemce)
-
-    CB_A->>UL: Podání instrukce:<br/>debit tokenizovaný vklad X,<br/>kredit tokenizovaný vklad Y,<br/>podmínka = leg velkoobchodní CBDC
-    UL->>UL: Validace obálky ISO 20022,<br/>strukturovaná adresa, LEI,<br/>kód účelu, AML/sankce
-    UL->>CBNK: Rezervace velkoobchodní CBDC<br/>(rezervy centrální banky na straně plátce)
-    CBNK-->>UL: Rezervace potvrzena<br/>(atomický lock)
-    UL->>CB_A: Lock tokenizovaného vkladu X<br/>(leg peněz komerční banky)
+    participant CB_A as Komerční banka A
+    participant UL as Jednotná kniha
+    participant CBNK as Centrální banka
+    participant CB_B as Komerční banka B
+    CB_A->>UL: Podání instrukce: debit tokenizovaný vklad X, kredit tokenizovaný vklad Y, podmínka = leg velkoobchodní CBDC
+    UL->>UL: Validace obálky ISO 20022, strukturovaná adresa, LEI, kód účelu, AML/sankce
+    UL->>CBNK: Rezervace velkoobchodní CBDC (rezervy centrální banky na straně plátce)
+    CBNK-->>UL: Rezervace potvrzena (atomický lock)
+    UL->>CB_A: Lock tokenizovaného vkladu X (leg peněz komerční banky)
     CB_A-->>UL: Lock vkladu potvrzen
-    UL->>UL: Oba legy uzamčeny →<br/>spuštění atomického zúčtování
-    UL->>CBNK: Zúčtování velkoobchodní CBDC<br/>(rezervy plátce → rezervy příjemce)
-    UL->>CB_B: Emise tokenizovaného vkladu Y<br/>(leg peněz komerční banky)
+    UL->>UL: Oba legy uzamčeny → spuštění atomického zúčtování
+    UL->>CBNK: Zúčtování velkoobchodní CBDC (rezervy plátce → rezervy příjemce)
+    UL->>CB_B: Emise tokenizovaného vkladu Y (leg peněz komerční banky)
     CBNK-->>UL: Zúčtování CBDC finalizováno
     CB_B-->>UL: Vklad připsán
-    UL->>CB_A: PvP zúčtování dokončeno<br/>(buď oba legy finální, nebo oba roll back)
+    UL->>CB_A: PvP zúčtování dokončeno (buď oba legy finální, nebo oba roll back)
     UL->>CB_B: PvP zúčtování dokončeno
 ```
 

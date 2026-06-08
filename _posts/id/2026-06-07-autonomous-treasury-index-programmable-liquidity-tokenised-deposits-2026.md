@@ -153,19 +153,18 @@ Loop kontrol berjalan Observe → Detect → Forecast → Prepare → Request Ap
 sequenceDiagram
     autonumber
     participant Banks as Bank Manajemen Kas
-    participant Agent as Agen Treasury<br/>(dibatasi, dipagari kebijakan)
-    participant Forecast as Mesin Perkiraan<br/>(ML + pustaka skenario)
-    participant Treasurer as Treasurer Manusia<br/>(MFA / kunci perangkat keras)
-    participant Rails as Rail Pembayaran<br/>(RTGS / RTP / DLT)
-
+    participant Agent as Agen Treasury
+    participant Forecast as Mesin Perkiraan
+    participant Treasurer as Treasurer Manusia
+    participant Rails as Rail Pembayaran
     Banks->>Agent: aliran saldo intraday camt.052
     Agent->>Agent: Observe — segarkan posisi real-time
     Agent->>Agent: Detect — entitas X melanggar batas bawah likuiditas
     Agent->>Forecast: Minta proyeksi akhir hari
     Forecast-->>Agent: Kekurangan terkonfirmasi (USD 12.4m)
-    Agent->>Agent: Prepare — susun pain.001<br/>(repo / sweep) dalam batas mandat
-    Agent->>Treasurer: Kirim permintaan persetujuan aman<br/>(payload siap + bukti)
-    Note over Treasurer: MFA kriptografis<br/>pada kunci perangkat keras
+    Agent->>Agent: Prepare — susun pain.001 (repo / sweep) dalam batas mandat
+    Agent->>Treasurer: Kirim permintaan persetujuan aman (payload siap + bukti)
+    Note over Treasurer: MFA kriptografis pada kunci perangkat keras
     Treasurer-->>Agent: Otorisasi yang sudah ditandatangani
     Agent->>Rails: Kirim pain.001 yang sudah ditandatangani
     Rails-->>Agent: ACK pain.002 + finalitas

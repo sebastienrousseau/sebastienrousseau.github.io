@@ -155,19 +155,18 @@ Loop ɗin sarrafawa yana gudana Observe → Detect → Forecast → Prepare → 
 sequenceDiagram
     autonumber
     participant Banks as Bankunan Gudanar da Kuɗi
-    participant Agent as Treasury Agent<br/>(mai iyaka, mai ƙofar manufa)
-    participant Forecast as Injin Hangen<br/>(ML + ɗakin yanayi)
-    participant Treasurer as Ma'aikacin Kuɗi<br/>(MFA / maɓallin hardware)
-    participant Rails as Hanyoyin Biya<br/>(RTGS / RTP / DLT)
-
+    participant Agent as Treasury Agent
+    participant Forecast as Injin Hangen
+    participant Treasurer as Ma'aikacin Kuɗi
+    participant Rails as Hanyoyin Biya
     Banks->>Agent: camt.052 rafin ma'auni na cikin yini
     Agent->>Agent: Observe — sabunta matsayi a ainihin lokaci
     Agent->>Agent: Detect — entity X ya ƙetare ƙasan ruwa-ruwa
     Agent->>Forecast: Nemi hangen EOD
     Forecast-->>Agent: An tabbatar da ƙarancin (USD 12.4m)
-    Agent->>Agent: Prepare — shirya pain.001<br/>(repo / sweep) ƙarƙashin iyakar umarni
-    Agent->>Treasurer: Tura buƙatar amincewa mai aminci<br/>(payload da aka shirya + shaida)
-    Note over Treasurer: MFA na cryptographic<br/>a kan maɓallin da ke ɗaure da hardware
+    Agent->>Agent: Prepare — shirya pain.001 (repo / sweep) ƙarƙashin iyakar umarni
+    Agent->>Treasurer: Tura buƙatar amincewa mai aminci (payload da aka shirya + shaida)
+    Note over Treasurer: MFA na cryptographic a kan maɓallin da ke ɗaure da hardware
     Treasurer-->>Agent: Izinin da aka sa hannu
     Agent->>Rails: Gabatar da pain.001 da aka sa hannu
     Rails-->>Agent: pain.002 ACK + ƙarshe

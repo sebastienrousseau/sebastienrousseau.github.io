@@ -1,14 +1,14 @@
 {
-  "tags": "Technology, Art, Photography, Rust, AI, quantum computing, Personal Journey, Alien Studio, Digital Art, Innovation, ISO 20022, post-quantum cryptography",
-  "date": "Jan 15, 2024",
-  "description": "Ku tare da ni a tafiyata ta sirri daga Rust, AI, da Quantum Computing zuwa sake fasalin fasaha da daukar hoto ta Alien Studio.",
-  "banner": "https://cloudcdn.pro/clients/alienstudio/v1/collections/radiance/radiance-08.webp",
-  "banner_alt": "Wahayin faɗuwar rana, kallon nutsuwa; kyau a cikin shiru",
   "word_count": 1104,
-  "subtitle": "Farkon Tafiya Mai Zurfi ta Fasaha ta Zamani",
-  "reading_time": 5,
-  "title": "Alien Studio: My Tech-to Art Journey in Photography",
   "locale": "ha_NG",
+  "description": "Ku tare da ni a tafiyata ta sirri daga Rust, AI, da Quantum Computing zuwa sake fasalin fasaha da daukar hoto ta Alien Studio.",
+  "title": "Alien Studio: My Tech-to Art Journey in Photography",
+  "banner_alt": "Wahayin faɗuwar rana, kallon nutsuwa; kyau a cikin shiru",
+  "tags": "Technology, Art, Photography, Rust, AI, quantum computing, Personal Journey, Alien Studio, Digital Art, Innovation, ISO 20022, post-quantum cryptography",
   "keywords": "tafiyar fasaha ta sirri, binciken Rust, binciken AI, Quantum Computing, haɗin fasaha da daukar hoto, Alien Studio, ƙirƙirar fasahar dijital, fasaha a cikin zane-zane, daukar hoto mai ƙirƙira, sake binciken fasaha",
-  "language": "ha-NG"
+  "date": "Jan 15, 2024",
+  "subtitle": "Farkon Tafiya Mai Zurfi ta Fasaha ta Zamani",
+  "language": "ha-NG",
+  "banner": "https://cloudcdn.pro/clients/alienstudio/v1/collections/radiance/radiance-08.webp",
+  "reading_time": 5
 }

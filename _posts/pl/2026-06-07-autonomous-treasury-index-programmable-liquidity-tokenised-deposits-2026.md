@@ -155,19 +155,18 @@ Pętla kontrolna przebiega według sekwencji Obserwuj → Wykryj → Prognozuj �
 sequenceDiagram
     autonumber
     participant Banks as Banki cash-management
-    participant Agent as Agent skarbowy<br/>(ograniczony, gated przez politykę)
-    participant Forecast as Silnik prognoz<br/>(ML + biblioteka scenariuszy)
-    participant Treasurer as Skarbnik (człowiek)<br/>(MFA / klucz sprzętowy)
-    participant Rails as Szyny płatnicze<br/>(RTGS / RTP / DLT)
-
+    participant Agent as Agent skarbowy
+    participant Forecast as Silnik prognoz
+    participant Treasurer as Skarbnik (człowiek) (MFA / klucz sprzętowy)
+    participant Rails as Szyny płatnicze
     Banks->>Agent: camt.052 strumień sald śróddziennych
     Agent->>Agent: Obserwuj — odśwież pozycję w czasie rzeczywistym
     Agent->>Agent: Wykryj — podmiot X narusza próg płynności
     Agent->>Forecast: Poproś o prognozę na koniec dnia
     Forecast-->>Agent: Niedobór potwierdzony (USD 12.4m)
-    Agent->>Agent: Przygotuj — wstępny pain.001<br/>(repo / sweep) w ramach limitów mandatu
-    Agent->>Treasurer: Wyślij bezpieczne żądanie zatwierdzenia<br/>(przygotowany ładunek + dowody)
-    Note over Treasurer: Kryptograficzne MFA<br/>na kluczu związanym ze sprzętem
+    Agent->>Agent: Przygotuj — wstępny pain.001 (repo / sweep) w ramach limitów mandatu
+    Agent->>Treasurer: Wyślij bezpieczne żądanie zatwierdzenia (przygotowany ładunek + dowody)
+    Note over Treasurer: Kryptograficzne MFA na kluczu związanym ze sprzętem
     Treasurer-->>Agent: Podpisana autoryzacja
     Agent->>Rails: Prześlij podpisany pain.001
     Rails-->>Agent: potwierdzenie pain.002 + finalizacja

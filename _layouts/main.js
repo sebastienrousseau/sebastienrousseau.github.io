@@ -476,6 +476,34 @@ document.addEventListener("click", function (event) {
         // Inject dynamic CSS overrides using variables so SVGs update cleanly on theme toggles
         var style = document.createElement("style");
         style.textContent = [
+            // Container — the layout's generic `main.content pre` rule paints
+            // a grey card background + padding meant for code blocks. Override
+            // for Mermaid so the SVG sits flush on the page background, and
+            // widen to the banner / page max width so the diagram is legible.
+            // Match the site's existing wide-content pattern (used by tables
+            // and .article-banner) — max-width: var(--max-wide) with auto
+            // margins. The site's <main> doesn't actually constrain to a
+            // narrow column for everything; only paragraphs have max-width:65ch.
+            // pre.mermaid as block-level can therefore go to the full
+            // --max-wide alongside tables and banner figures.
+            "pre.mermaid { background: transparent !important; border: 0 !important; padding: 0 !important; margin: 24px auto !important; width: 100% !important; max-width: var(--max-wide, 1440px) !important; overflow-x: auto; text-align: center; }",
+            "pre.mermaid svg { max-width: 100%; height: auto; }",
+            // Dark mode: Mermaid's themeVariables are baked into the SVG at
+            // render time, so toggling the site theme post-render leaves the
+            // SVG with stale colors. CSS overrides using --ink / --bg-alt /
+            // --border / --card / --accent follow the theme variable
+            // switching at paint time and stay readable in either mode.
+            "[data-theme='dark'] pre.mermaid svg .actor rect, html:not([data-theme='light']) pre.mermaid svg .actor rect { fill: #161617 !important; stroke: #3a3a3c !important; }",
+            "[data-theme='dark'] pre.mermaid svg .actor text, [data-theme='dark'] pre.mermaid svg .actor tspan, html:not([data-theme='light']) pre.mermaid svg .actor text, html:not([data-theme='light']) pre.mermaid svg .actor tspan { fill: #f5f5f7 !important; }",
+            "[data-theme='dark'] pre.mermaid svg .actor-line, html:not([data-theme='light']) pre.mermaid svg .actor-line { stroke: #3a3a3c !important; }",
+            "[data-theme='dark'] pre.mermaid svg .messageLine0, [data-theme='dark'] pre.mermaid svg .messageLine1, html:not([data-theme='light']) pre.mermaid svg .messageLine0, html:not([data-theme='light']) pre.mermaid svg .messageLine1 { stroke: #b0b0b8 !important; fill: none !important; }",
+            "[data-theme='dark'] pre.mermaid svg .messageText, html:not([data-theme='light']) pre.mermaid svg .messageText { fill: #f5f5f7 !important; }",
+            "[data-theme='dark'] pre.mermaid svg .labelBox, html:not([data-theme='light']) pre.mermaid svg .labelBox { fill: #161617 !important; stroke: #3a3a3c !important; }",
+            "[data-theme='dark'] pre.mermaid svg .labelText, [data-theme='dark'] pre.mermaid svg .labelText tspan, html:not([data-theme='light']) pre.mermaid svg .labelText, html:not([data-theme='light']) pre.mermaid svg .labelText tspan { fill: #f5f5f7 !important; }",
+            "[data-theme='dark'] pre.mermaid svg .note rect, html:not([data-theme='light']) pre.mermaid svg .note rect { fill: #1d1d1f !important; stroke: #3a3a3c !important; }",
+            "[data-theme='dark'] pre.mermaid svg .note text, [data-theme='dark'] pre.mermaid svg .note tspan, html:not([data-theme='light']) pre.mermaid svg .note text, html:not([data-theme='light']) pre.mermaid svg .note tspan { fill: #f5f5f7 !important; }",
+            "[data-theme='dark'] pre.mermaid svg marker path, [data-theme='dark'] pre.mermaid svg marker polygon, html:not([data-theme='light']) pre.mermaid svg marker path, html:not([data-theme='light']) pre.mermaid svg marker polygon { fill: #b0b0b8 !important; stroke: #b0b0b8 !important; }",
+            "@media (prefers-color-scheme: dark) { html:not([data-theme='light']) pre.mermaid svg .actor rect { fill: #161617 !important; stroke: #3a3a3c !important; } html:not([data-theme='light']) pre.mermaid svg .actor text, html:not([data-theme='light']) pre.mermaid svg .actor tspan { fill: #f5f5f7 !important; } html:not([data-theme='light']) pre.mermaid svg .messageText { fill: #f5f5f7 !important; } html:not([data-theme='light']) pre.mermaid svg .note rect { fill: #1d1d1f !important; stroke: #3a3a3c !important; } html:not([data-theme='light']) pre.mermaid svg .note text, html:not([data-theme='light']) pre.mermaid svg .note tspan { fill: #f5f5f7 !important; } html:not([data-theme='light']) pre.mermaid svg marker path { fill: #b0b0b8 !important; stroke: #b0b0b8 !important; } html:not([data-theme='light']) pre.mermaid svg .messageLine0, html:not([data-theme='light']) pre.mermaid svg .messageLine1 { stroke: #b0b0b8 !important; fill: none !important; } }",
             "pre.mermaid svg .actor rect { fill: var(--bg-alt, #fafafc) !important; stroke: var(--border, #3a3a3e) !important; }",
             "pre.mermaid svg .actor text, pre.mermaid svg .actor tspan { fill: var(--ink, #111111) !important; }",
             "pre.mermaid svg .actor-line { stroke: var(--border, #3a3a3e) !important; }",

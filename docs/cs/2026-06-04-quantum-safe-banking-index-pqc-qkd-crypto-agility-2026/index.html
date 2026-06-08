@@ -287,11 +287,11 @@
 <h2 id="migrace-zacina-u-rejstriku-kryptografie">Migrace začíná u rejstříku kryptografie <a class="heading-anchor" href="#migrace-zacina-u-rejstriku-kryptografie" aria-label="Odkaz na Migrace začíná u rejstříku kryptografie">#</a></h2>
 <p>Sekvence migrace je v této chvíli dobře pochopena. Každá brána produkuje důkazy, které pohánějí tu následující; přeskočení nebo zkrácení brány je to, co generuje riziko nouzového re-platformingu uvedené ve sloupci selhání architektury indexu.</p>
 <pre class="mermaid">flowchart LR
-    A[&quot;Discovery&lt;br/&gt;CycloneDX CBOM&lt;br/&gt;scanners + CMDB&quot;] --&gt; B[&quot;Exposure model&lt;br/&gt;lifetime × capture&lt;br/&gt;× CRQC horizon&quot;]
-    B --&gt; C[&quot;Hybrid TLS 1.3&lt;br/&gt;X25519MLKEM768&lt;br/&gt;external endpoints&quot;]
-    C --&gt; D[&quot;HSM PQC firmware&lt;br/&gt;vendor-by-vendor&lt;br/&gt;roadmap rollout&quot;]
-    D --&gt; E[&quot;Crypto-agility&lt;br/&gt;PKCS#11 + policy&lt;br/&gt;registry + kill switch&quot;]
-    E --&gt; F[&quot;Pure PQC&lt;br/&gt;2028+&lt;br/&gt;conformance + audit&quot;]
+    A["Discovery&lt;br/>CycloneDX CBOM&lt;br/>scanners + CMDB"] --> B["Exposure model&lt;br/>lifetime × capture&lt;br/>× CRQC horizon"]
+    B --> C["Hybrid TLS 1.3&lt;br/>X25519MLKEM768&lt;br/>external endpoints"]
+    C --> D["HSM PQC firmware&lt;br/>vendor-by-vendor&lt;br/>roadmap rollout"]
+    D --> E["Crypto-agility&lt;br/>PKCS#11 + policy&lt;br/>registry + kill switch"]
+    E --> F["Pure PQC&lt;br/>2028+&lt;br/>conformance + audit"]
 
     style A fill:#eff5ff,stroke:#0056b3,color:#111
     style B fill:#eff5ff,stroke:#0056b3,color:#111

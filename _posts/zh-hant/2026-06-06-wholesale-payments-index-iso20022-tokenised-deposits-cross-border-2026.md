@@ -170,23 +170,22 @@ Project Agorá 把這個組合具體化。下方架構是 BIS 的參考模式,�
 ```mermaid
 sequenceDiagram
     autonumber
-    participant CB_A as 商業銀行 A<br/>(付款方)
-    participant UL as 統一帳本<br/>(BIS Agorá 協調平面)
-    participant CBNK as 央行<br/>(大額 CBDC 發行方)
-    participant CB_B as 商業銀行 B<br/>(收款方)
-
-    CB_A->>UL: 提交指令:<br/>扣除代幣化存款 X、<br/>入帳代幣化存款 Y、<br/>條件 = 大額 CBDC 腿
-    UL->>UL: 驗證 ISO 20022 封包、<br/>結構化地址、LEI、<br/>用途代碼、AML/制裁
-    UL->>CBNK: 預留大額 CBDC<br/>(付款方央行準備金)
-    CBNK-->>UL: 預留已確認<br/>(原子鎖定)
-    UL->>CB_A: 鎖定代幣化存款 X<br/>(商業銀行貨幣腿)
+    participant CB_A as 商業銀行 A
+    participant UL as 統一帳本
+    participant CBNK as 央行
+    participant CB_B as 商業銀行 B
+    CB_A->>UL: 提交指令: 扣除代幣化存款 X、 入帳代幣化存款 Y、 條件 = 大額 CBDC 腿
+    UL->>UL: 驗證 ISO 20022 封包、 結構化地址、LEI、 用途代碼、AML/制裁
+    UL->>CBNK: 預留大額 CBDC (付款方央行準備金)
+    CBNK-->>UL: 預留已確認 (原子鎖定)
+    UL->>CB_A: 鎖定代幣化存款 X (商業銀行貨幣腿)
     CB_A-->>UL: 存款鎖定已確認
-    UL->>UL: 兩腿皆已鎖定 →<br/>觸發原子結算
-    UL->>CBNK: 結算大額 CBDC<br/>(付款方準備金 → 收款方準備金)
-    UL->>CB_B: 發行代幣化存款 Y<br/>(商業銀行貨幣腿)
+    UL->>UL: 兩腿皆已鎖定 → 觸發原子結算
+    UL->>CBNK: 結算大額 CBDC (付款方準備金 → 收款方準備金)
+    UL->>CB_B: 發行代幣化存款 Y (商業銀行貨幣腿)
     CBNK-->>UL: CBDC 結算已終局
     CB_B-->>UL: 存款已入帳
-    UL->>CB_A: PvP 結算完成<br/>(兩腿同時終局或同時回滾)
+    UL->>CB_A: PvP 結算完成 (兩腿同時終局或同時回滾)
     UL->>CB_B: PvP 結算完成
 ```
 

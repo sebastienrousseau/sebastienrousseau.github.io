@@ -1,14 +1,14 @@
 {
-  "word_count": 739,
-  "subtitle": "Google-এর সর্বশেষ AI অগ্রগতির গভীর বিশ্লেষণ",
-  "reading_time": 3,
-  "tags": "Gemini 1.5, Google AI, AI Efficiency, AI Quality, Context Window, In-Context Learning, AI Use Cases, AI Revolution, Technology Transformation, Data Analysis, ISO 20022, পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, AI, DORA, টোকেনাইজড আমানত, প্ল্যাটফর্ম ইঞ্জিনিয়ারিং, সার্বভৌম ক্লাউড, ক্লাউড নেটিভ ব্যাংকিং, সীমান্ত-পার পেমেন্ট, stablecoins",
-  "language": "bn-BD",
-  "date": "Feb 19, 2024",
-  "locale": "bn_BD",
   "description": "Google-এর Gemini 1.5 কনটেক্সট উইন্ডো ১ মিলিয়ন টোকেনের বেশি স্কেল করে। রিট্রিভাল-অগমেন্টেড ফিনান্সে এটি কী সম্ভাবনা উন্মোচন করে এবং জানার মতো ট্রেড-অফগুলি কী।",
+  "title": "Unlocking Gemini 1.5: Google's AI Revolution Explained",
+  "language": "bn-BD",
+  "banner": "https://cloudcdn.pro/stocks/images/abstract-visualization-of-gemini.webp",
+  "subtitle": "Google-এর সর্বশেষ AI অগ্রগতির গভীর বিশ্লেষণ",
+  "word_count": 739,
+  "date": "Feb 19, 2024",
+  "tags": "Gemini 1.5, Google AI, AI Efficiency, AI Quality, Context Window, In-Context Learning, AI Use Cases, AI Revolution, Technology Transformation, Data Analysis, ISO 20022, পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, AI, DORA, টোকেনাইজড আমানত, প্ল্যাটফর্ম ইঞ্জিনিয়ারিং, সার্বভৌম ক্লাউড, ক্লাউড নেটিভ ব্যাংকিং, সীমান্ত-পার পেমেন্ট, stablecoins",
+  "locale": "bn_BD",
   "banner_alt": "AI নেটওয়ার্কের বিমূর্ত ভিজুয়ালাইজেশন, Gemini 1.5-এর সক্ষমতা উপস্থাপন করছে",
   "keywords": "Gemini 1.5, Google AI, Mixture-of-Experts আর্কিটেকচার, কম্পিউটেশনাল দক্ষতা, কনটেক্সট উইন্ডো সম্প্রসারণ, AI উদ্ভাবন, ডেটা বিশ্লেষণ রূপান্তর, ইন-কনটেক্সট লার্নিং, AI ব্যবহারের ক্ষেত্র, প্রযুক্তি বিপ্লব",
-  "title": "Unlocking Gemini 1.5: Google's AI Revolution Explained",
-  "banner": "https://cloudcdn.pro/stocks/images/abstract-visualization-of-gemini.webp"
+  "reading_time": 3
 }

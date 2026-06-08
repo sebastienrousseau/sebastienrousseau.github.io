@@ -1,13 +1,13 @@
 {
-  "word_count": 667,
-  "description": "Una panoramica del modello Gemini di Google: architettura multimodale nativa, capacità misurate, casi d'uso e posizionamento rispetto a GPT-4 e Claude.",
-  "keywords": "Gemini, Google, IA, multimodale, GPT-4, Claude, LLM",
-  "title": "Scoprire Gemini: la rivoluzione IA di Google spiegata",
-  "date": "February 19, 2024",
-  "locale": "it_IT",
-  "subtitle": "Architettura, capacità e posizionamento del modello multimodale di Google",
   "reading_time": 3,
-  "language": "it-IT",
+  "description": "Una panoramica del modello Gemini di Google: architettura multimodale nativa, capacità misurate, casi d'uso e posizionamento rispetto a GPT-4 e Claude.",
+  "locale": "it_IT",
+  "keywords": "Gemini, Google, IA, multimodale, GPT-4, Claude, LLM",
   "banner_alt": "Google Gemini",
-  "banner": "https://cloudcdn.pro/stocks/images/abstract-visualization-of-gemini.webp"
+  "word_count": 667,
+  "subtitle": "Architettura, capacità e posizionamento del modello multimodale di Google",
+  "date": "February 19, 2024",
+  "title": "Scoprire Gemini: la rivoluzione IA di Google spiegata",
+  "banner": "https://cloudcdn.pro/stocks/images/abstract-visualization-of-gemini.webp",
+  "language": "it-IT"
 }

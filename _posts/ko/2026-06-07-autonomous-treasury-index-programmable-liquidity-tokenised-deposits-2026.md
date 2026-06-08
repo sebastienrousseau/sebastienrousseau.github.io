@@ -153,19 +153,18 @@ site_software: "Static Site Generator, Rust"
 sequenceDiagram
     autonumber
     participant Banks as 현금 관리 은행
-    participant Agent as 트레저리 에이전트<br/>(제한·정책 통제)
-    participant Forecast as 예측 엔진<br/>(ML + 시나리오 라이브러리)
-    participant Treasurer as 인간 트레저러<br/>(MFA / 하드웨어 키)
-    participant Rails as 결제 레일<br/>(RTGS / RTP / DLT)
-
+    participant Agent as 트레저리 에이전트
+    participant Forecast as 예측 엔진
+    participant Treasurer as 인간 트레저러
+    participant Rails as 결제 레일
     Banks->>Agent: camt.052 일중 잔액 스트림
     Agent->>Agent: 관찰 — 실시간 포지션 갱신
     Agent->>Agent: 탐지 — 법인 X가 유동성 하한 위반
     Agent->>Forecast: 영업일 종가 전망 요청
     Forecast-->>Agent: 부족 확인 (USD 12.4m)
-    Agent->>Agent: 준비 — 위임 한도 내에서 pain.001<br/>(레포 / 스윕) 초안 작성
-    Agent->>Treasurer: 보안 승인 요청 전송<br/>(준비된 페이로드 + 증거)
-    Note over Treasurer: 하드웨어 바인딩 키 기반<br/>암호학적 MFA
+    Agent->>Agent: 준비 — 위임 한도 내에서 pain.001 (레포 / 스윕) 초안 작성
+    Agent->>Treasurer: 보안 승인 요청 전송 (준비된 페이로드 + 증거)
+    Note over Treasurer: 하드웨어 바인딩 키 기반 암호학적 MFA
     Treasurer-->>Agent: 서명된 인가
     Agent->>Rails: 서명된 pain.001 제출
     Rails-->>Agent: pain.002 ACK + 확정성
