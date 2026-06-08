@@ -15,7 +15,6 @@ regenerate:
 	@python3 scripts/generators/gen_articles.py
 	@python3 scripts/generators/gen_projects.py
 	@python3 scripts/postbuild/topic_link.py
-	@python3 scripts/postbuild/post_enrich.py
 	@python3 scripts/generators/build_news_sitemap.py
 	@./build.sh
 

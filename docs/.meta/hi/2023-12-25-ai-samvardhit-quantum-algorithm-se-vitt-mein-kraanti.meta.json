@@ -1,13 +1,13 @@
 {
-  "locale": "hi_IN",
-  "date": "December 25, 2023",
-  "banner_alt": "AI और क्वांटम-गणना की अमूर्त छवि",
-  "subtitle": "हाइब्रिड वर्कफ़्लो जो AI और क्वांटम को एक साथ लाते हैं",
-  "word_count": 1656,
-  "description": "हाइब्रिड AI-क्वांटम अल्गोरिदम वित्त को कैसे बदल रहे हैं — पोर्टफ़ोलियो-अनुकूलन से लेकर जोखिम-मॉडलिंग तक।",
-  "reading_time": 8,
-  "banner": "https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp",
   "keywords": "AI, क्वांटम, हाइब्रिड, वित्त, पोर्टफ़ोलियो, जोखिम, बैंकिंग, NISQ, VQE, QAOA",
+  "word_count": 1656,
+  "banner_alt": "AI और क्वांटम-गणना की अमूर्त छवि",
+  "description": "हाइब्रिड AI-क्वांटम अल्गोरिदम वित्त को कैसे बदल रहे हैं — पोर्टफ़ोलियो-अनुकूलन से लेकर जोखिम-मॉडलिंग तक।",
+  "subtitle": "हाइब्रिड वर्कफ़्लो जो AI और क्वांटम को एक साथ लाते हैं",
+  "banner": "https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp",
   "title": "AI-संवर्धित क्वांटम-अल्गोरिदम से वित्त में क्रांति",
-  "language": "hi-IN"
+  "language": "hi-IN",
+  "locale": "hi_IN",
+  "reading_time": 8,
+  "date": "December 25, 2023"
 }

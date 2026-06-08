@@ -1,14 +1,14 @@
 {
-  "banner_alt": "Banner cu gradient vibrant suprapus pe profiluri repetate",
-  "tags": "OpenVoice, Voice Cloning, Synthetic Speech, open source, Cross-Lingual, Instant Cloning, Voice Control, Accessibility, Entertainment, Customer Service, ISO 20022, criptografie post-cuantică, AI, DORA, ingineria platformei, cloud suveran, banking cloud native",
-  "description": "OpenVoice from MIT, Tsinghua and MyShell: production-grade voice cloning with tone, accent and emotion control — and the trade-offs worth knowing.",
-  "locale": "ro_RO",
-  "language": "ro-RO",
-  "subtitle": "Instrumentul Open-Source de Ultimă Generație pentru Clonarea Vocii",
-  "keywords": "OpenVoice, Tehnologie de Clonare Vocală, Vorbire Sintetică AI, Clonare Vocală Open-Source, Sinteză Vocală Cross-Lingvistică, Clonare Vocală Instantanee, Control Stil Vocal, Tehnologie Vocală pentru Accesibilitate, Voci pentru Industria Divertismentului, AI Vocal pentru Servicii Clienți",
-  "title": "OpenVoice: Leading Innovation in Voice Cloning Technology",
   "date": "Apr 01, 2024",
+  "keywords": "OpenVoice, Tehnologie de Clonare Vocală, Vorbire Sintetică AI, Clonare Vocală Open-Source, Sinteză Vocală Cross-Lingvistică, Clonare Vocală Instantanee, Control Stil Vocal, Tehnologie Vocală pentru Accesibilitate, Voci pentru Industria Divertismentului, AI Vocal pentru Servicii Clienți",
+  "subtitle": "Instrumentul Open-Source de Ultimă Generație pentru Clonarea Vocii",
   "banner": "https://cloudcdn.pro/stocks/images/open-voice.webp",
+  "tags": "OpenVoice, Voice Cloning, Synthetic Speech, open source, Cross-Lingual, Instant Cloning, Voice Control, Accessibility, Entertainment, Customer Service, ISO 20022, criptografie post-cuantică, AI, DORA, ingineria platformei, cloud suveran, banking cloud native",
+  "reading_time": 6,
+  "locale": "ro_RO",
+  "title": "OpenVoice: Leading Innovation in Voice Cloning Technology",
+  "banner_alt": "Banner cu gradient vibrant suprapus pe profiluri repetate",
+  "language": "ro-RO",
   "word_count": 1282,
-  "reading_time": 6
+  "description": "OpenVoice from MIT, Tsinghua and MyShell: production-grade voice cloning with tone, accent and emotion control — and the trade-offs worth knowing."
 }

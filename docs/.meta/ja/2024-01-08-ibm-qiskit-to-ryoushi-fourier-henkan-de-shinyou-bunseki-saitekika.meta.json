@@ -1,14 +1,14 @@
 {
-  "language": "ja-JP",
-  "last_reviewed": "2026-05-11",
-  "word_count": 84,
-  "banner_alt": "量子回路図",
-  "description": "IBM Qiskit と量子フーリエ変換が金融の信用比率分析を再構築し、前例のない精度と速度を提供する方法。",
-  "banner": "https://cloudcdn.pro/stocks/images/markus-spiske-FXFz-sW0uwo-unsplash.webp",
-  "locale": "ja_JP",
-  "date": "January 8, 2024",
-  "title": "IBM Qiskit と量子フーリエ変換による信用比率分析の最適化",
   "subtitle": "金融分析における量子計算の応用",
+  "keywords": "IBM Qiskit, 量子フーリエ変換, QFT, 信用比率, 量子金融, 量子計算, ポートフォリオ分析",
+  "banner": "https://cloudcdn.pro/stocks/images/markus-spiske-FXFz-sW0uwo-unsplash.webp",
+  "description": "IBM Qiskit と量子フーリエ変換が金融の信用比率分析を再構築し、前例のない精度と速度を提供する方法。",
+  "title": "IBM Qiskit と量子フーリエ変換による信用比率分析の最適化",
+  "banner_alt": "量子回路図",
+  "date": "January 8, 2024",
+  "word_count": 84,
   "reading_time": 1,
-  "keywords": "IBM Qiskit, 量子フーリエ変換, QFT, 信用比率, 量子金融, 量子計算, ポートフォリオ分析"
+  "last_reviewed": "2026-05-11",
+  "locale": "ja_JP",
+  "language": "ja-JP"
 }

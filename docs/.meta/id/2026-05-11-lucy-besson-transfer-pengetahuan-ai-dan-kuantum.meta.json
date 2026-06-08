@@ -1,13 +1,13 @@
 {
-  "banner_alt": "Visualisasi abstrak jaringan saraf dan larik atom kuantum. Sebuah komputer hitam terbentuk dari partikel-partikel yang tersusun ulang",
+  "description": "Dua belas tahun berlalu, Lucy karya Besson terasa seperti eksperimen pikiran tentang pengetahuan yang berpindah dari daging ke mesin — diam-diam divalidasi oleh LLM dan qubit.",
+  "banner": "https://cloudcdn.pro/stocks/images/lucy-knowledge-transfer-banner.webp",
+  "title": "[ID DRAFT] Lucy's Flash Drive Revisited: AI, Quantum & Knowledge",
   "date": "May 11, 2026",
   "keywords": "film Lucy 2014, Luc Besson, transfer pengetahuan, large language models, neutral atom qubits, whole-brain emulation, substrate independence, filosofi AI, quantum computing, persistensi pengetahuan",
-  "word_count": 608,
-  "locale": "id_ID",
-  "banner": "https://cloudcdn.pro/stocks/images/lucy-knowledge-transfer-banner.webp",
-  "description": "Dua belas tahun berlalu, Lucy karya Besson terasa seperti eksperimen pikiran tentang pengetahuan yang berpindah dari daging ke mesin — diam-diam divalidasi oleh LLM dan qubit.",
-  "language": "id-ID",
   "subtitle": "Dua belas tahun setelah Lucy karya Luc Besson, metafora sentral tentang pengetahuan yang berpindah dari daging ke mesin kini divalidasi secara tak terduga oleh LLM, neutral atom qubit, dan whole-brain emulation.",
+  "locale": "id_ID",
+  "word_count": 608,
+  "language": "id-ID",
   "reading_time": 3,
-  "title": "[ID DRAFT] Lucy's Flash Drive Revisited: AI, Quantum & Knowledge"
+  "banner_alt": "Visualisasi abstrak jaringan saraf dan larik atom kuantum. Sebuah komputer hitam terbentuk dari partikel-partikel yang tersusun ulang"
 }

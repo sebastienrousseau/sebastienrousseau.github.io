@@ -1,14 +1,14 @@
 {
+  "locale": "fil_PH",
+  "title": "ثوابت رياضية وتشفيرية لأمن Rust",
+  "word_count": 529,
   "language": "fil-PH",
+  "banner_alt": "حسابات رياضية",
+  "subtitle": "ثوابت رياضية وتشفيرية مُتحقَّق منها لأمن Rust ذي السلامة الذاكرية",
   "description": "احموا تكامل الشفرة بثوابت رياضية وتشفيرية مُدقَّقة بعناية، تُعزّز سلامة الذاكرة والتزامن من أجل أمن شفرة أعلى.",
   "date": "Nov 05, 2023",
-  "banner": "https://cloudcdn.pro/stocks/images/antoine-dautry-05A-kdOH6Hw.webp",
-  "title": "ثوابت رياضية وتشفيرية لأمن Rust",
   "tags": "math, cybersecurity, cryptography, Rust, programming, encryption, communication, constants, constants in Rust, Common library, ISO 20022, post-quantum cryptography, quantum computing, AI, open source",
   "keywords": "الثوابت الرياضية، الثوابت التشفيرية، أمن Rust، الاتصالات الآمنة، التشفير، RSA، تشفير المنحنى الإهليلجي، مكتبة Common (CMN)، تطبيقات Rust، الحسابات الرياضية",
-  "locale": "fil_PH",
-  "banner_alt": "حسابات رياضية",
-  "word_count": 529,
-  "subtitle": "ثوابت رياضية وتشفيرية مُتحقَّق منها لأمن Rust ذي السلامة الذاكرية",
+  "banner": "https://cloudcdn.pro/stocks/images/antoine-dautry-05A-kdOH6Hw.webp",
   "reading_time": 2
 }

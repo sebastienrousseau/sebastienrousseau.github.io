@@ -1,13 +1,13 @@
 {
+  "subtitle": "Зміцніть безпеку даних, підвищте конфіденційність ШІ та зміцніть довіру клієнтів в епоху Quantum Computing за допомогою FHE",
+  "word_count": 442,
   "banner": "https://cloudcdn.pro/stocks/images/fully-homomorphic-encryption.webp",
-  "locale": "uk_UA",
   "language": "uk-UA",
-  "title": "[UK DRAFT] Fully Homomorphic Encryption (FHE) in a Banking Quantum Era",
+  "banner_alt": "Банер для Fully Homomorphic Encryption",
   "keywords": "Fully Homomorphic Encryption, банківська безпека, quantum computing, шифрування фінансових даних, кейси FHE, регуляторні рамки FHE, обчислювальне навантаження FHE, дослідження FHE, апаратне забезпечення FHE, закони про захист даних",
   "description": "Дізнайтеся, як Fully Homomorphic Encryption революціонізує безпеку даних у банківництві, захищаючи конфіденційність від загроз quantum computing.",
+  "reading_time": 2,
   "date": "Mar 25, 2024",
-  "word_count": 442,
-  "subtitle": "Зміцніть безпеку даних, підвищте конфіденційність ШІ та зміцніть довіру клієнтів в епоху Quantum Computing за допомогою FHE",
-  "banner_alt": "Банер для Fully Homomorphic Encryption",
-  "reading_time": 2
+  "locale": "uk_UA",
+  "title": "[UK DRAFT] Fully Homomorphic Encryption (FHE) in a Banking Quantum Era"
 }

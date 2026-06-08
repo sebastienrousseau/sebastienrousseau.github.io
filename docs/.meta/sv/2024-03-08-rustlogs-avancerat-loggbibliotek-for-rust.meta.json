@@ -1,13 +1,13 @@
 {
   "word_count": 1963,
-  "date": "March 08, 2024",
-  "language": "sv-SE",
-  "banner_alt": "Banner para RustLogs (RLG)",
-  "banner": "https://cloudcdn.pro/stocks/images/rustlogs.webp",
-  "reading_time": 9,
   "locale": "sv_SE",
-  "description": "Descubra RustLogs (RLG), la biblioteca flexible de registro para Rust con formatos de logs estructurados, registro asíncrono y opciones de personalización extensas.",
-  "subtitle": "Simplificar su flujo de trabajo de registro en Rust",
+  "banner_alt": "Banner para RustLogs (RLG)",
+  "reading_time": 9,
+  "banner": "https://cloudcdn.pro/stocks/images/rustlogs.webp",
   "keywords": "biblioteca de registro Rust, registro Rust asíncrono, formatos de logs estructurados, depuración Rust, registro personalizable, herramientas de desarrollo Rust, funcionalidades RustLogs RLG, registro eficiente, integración RustLogs, documentación RustLogs",
-  "title": "RustLogs (RLG): biblioteca de registro estructurado para Rust"
+  "title": "RustLogs (RLG): biblioteca de registro estructurado para Rust",
+  "subtitle": "Simplificar su flujo de trabajo de registro en Rust",
+  "language": "sv-SE",
+  "description": "Descubra RustLogs (RLG), la biblioteca flexible de registro para Rust con formatos de logs estructurados, registro asíncrono y opciones de personalización extensas.",
+  "date": "March 08, 2024"
 }

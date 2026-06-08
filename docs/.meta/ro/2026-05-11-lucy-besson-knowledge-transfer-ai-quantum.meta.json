@@ -1,14 +1,14 @@
 {
-  "reading_time": 13,
-  "title": "Lucy's Flash Drive Revisited: AI, Quantum & Knowledge",
-  "tags": "Lucy, Luc Besson, Scarlett Johansson, AI, calcul cuantic, neutral atoms, LLM, transumanism, mind uploading, brain-computer interfaces, posthumanism, film philosophy, ISO 20022, criptografie post-cuantică",
-  "language": "ro-RO",
-  "locale": "ro_RO",
   "subtitle": "La doisprezece ani după Lucy al lui Luc Besson, metafora centrală a filmului — cunoașterea migrând din carne în mașină — este validată pe neașteptate de LLM-uri, qubiți cu atomi neutri și emularea întregului creier.",
-  "keywords": "filmul Lucy 2014, Luc Besson, transfer de cunoștințe, large language models, neutral atom qubits, whole-brain emulation, independență de substrat, filozofia AI, computație cuantică, persistența cunoașterii",
+  "locale": "ro_RO",
+  "word_count": 2744,
   "date": "May 11, 2026",
   "description": "Doisprezece ani mai târziu, Lucy al lui Besson pare un experiment mental despre cunoașterea migrând din carne în mașină — validat tacit de LLM-uri și qubiți.",
+  "keywords": "filmul Lucy 2014, Luc Besson, transfer de cunoștințe, large language models, neutral atom qubits, whole-brain emulation, independență de substrat, filozofia AI, computație cuantică, persistența cunoașterii",
   "banner_alt": "Vizualizare abstractă a rețelelor neuronale și matricelor cuantice de atomi. Un computer negru format din particule rearanjate",
   "banner": "https://cloudcdn.pro/stocks/images/lucy-knowledge-transfer-banner.webp",
-  "word_count": 2744
+  "reading_time": 13,
+  "language": "ro-RO",
+  "tags": "Lucy, Luc Besson, Scarlett Johansson, AI, calcul cuantic, neutral atoms, LLM, transumanism, mind uploading, brain-computer interfaces, posthumanism, film philosophy, ISO 20022, criptografie post-cuantică",
+  "title": "Lucy's Flash Drive Revisited: AI, Quantum & Knowledge"
 }

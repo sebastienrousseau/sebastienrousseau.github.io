@@ -1,13 +1,13 @@
 {
-  "word_count": 369,
-  "reading_time": 1,
-  "keywords": "pain001, iso 20022, otomasi pembayaran, pengurangan biaya, pemrosesan pembayaran, file pembayaran, inisiasi pembayaran, pain message, pain message standards, pain message validation",
-  "title": "[ID DRAFT] Blockchain explained, the technology that matters the most",
-  "banner_alt": "Laptop yang dimatikan di atas meja kayu berwarna cokelat",
-  "banner": "https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp",
   "date": "Jan 02, 2018",
+  "keywords": "pain001, iso 20022, otomasi pembayaran, pengurangan biaya, pemrosesan pembayaran, file pembayaran, inisiasi pembayaran, pain message, pain message standards, pain message validation",
   "description": "Kisah perjalanan luar biasa dalam mengamankan transaksi digital melalui Private-key Cryptography dan jaringan Peer-to-peer (P2P).",
+  "reading_time": 1,
   "subtitle": "Blockchain, buku besar terdistribusi, dan teknologi yang paling penting di tahun 2018.",
+  "banner": "https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp",
+  "title": "[ID DRAFT] Blockchain explained, the technology that matters the most",
+  "locale": "id_ID",
+  "word_count": 369,
   "language": "id-ID",
-  "locale": "id_ID"
+  "banner_alt": "Laptop yang dimatikan di atas meja kayu berwarna cokelat"
 }

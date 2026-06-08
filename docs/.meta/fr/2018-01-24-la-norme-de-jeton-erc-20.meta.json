@@ -1,13 +1,13 @@
 {
-  "reading_time": 4,
-  "title": "La norme de jeton ERC-20",
   "banner_alt": "Ordinateur portable éteint sur une table en bois marron",
+  "word_count": 973,
+  "language": "fr",
+  "title": "La norme de jeton ERC-20",
   "subtitle": "L'interface unifiée qui a permis à l'écosystème Ethereum de prospérer",
   "banner": "https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp",
-  "language": "fr",
-  "keywords": "ERC-20, Ethereum, token, smart contract, DeFi, EIP, blockchain, interoperabilité, DApps, standard",
-  "description": "ERC-20 : le type de token le plus répandu sur la blockchain Ethereum, souvent décrit comme un contrat numérique intelligent (smart contract).",
+  "reading_time": 4,
   "locale": "fr_FR",
+  "description": "ERC-20 : le type de token le plus répandu sur la blockchain Ethereum, souvent décrit comme un contrat numérique intelligent (smart contract).",
   "date": "January 24, 2018",
-  "word_count": 973
+  "keywords": "ERC-20, Ethereum, token, smart contract, DeFi, EIP, blockchain, interoperabilité, DApps, standard"
 }

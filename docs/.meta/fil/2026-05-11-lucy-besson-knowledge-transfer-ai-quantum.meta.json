@@ -1,14 +1,14 @@
 {
-  "date": "May 11, 2026",
   "tags": "Lucy, Luc Besson, Scarlett Johansson, AI, quantum computing, neutral atoms, LLM, transhumanism, mind uploading, brain-computer interfaces, posthumanism, film philosophy, ISO 20022, post-quantum cryptography",
-  "language": "fil-PH",
   "description": "بعد اثني عشر عاماً على إصداره، يُقرأ فيلم Lucy لـ Luc Besson أقلّ كعِلمٍ زائف وأكثر كتجربةٍ فكرية حول ما يحدث حين تهاجر المعرفة الإنسانية إلى ركائز غير حيوية. في زمن النماذج اللغوية الكبيرة، و qubits الذرّات المحايدة، ومحاكاة الدماغ الكامل، تشيخ الاستعارة المركزية للفيلم بشكلٍ لافتٍ للنظر.",
-  "banner_alt": "تصوّرٌ مجرّد لشبكاتٍ عصبية ومصفوفات ذرّية كمية. حاسوبٌ أسود يتشكّل من جزيئاتٍ تُعيد ترتيب نفسها",
   "locale": "fil_PH",
-  "keywords": "Lucy، Luc Besson، نقل المعرفة، الذكاء الاصطناعي، LLM، qubits الذرّات المحايدة، محاكاة الدماغ، Neuralink، Eon Systems، Carboncopies، Fromm، استقلال الركيزة، فلسفة الذكاء الاصطناعي",
-  "subtitle": "بعد اثني عشر عاماً على إصداره، يُقرأ فيلم Lucy لـ Luc Besson أقلّ كعِلمٍ زائف وأكثر كتجربةٍ فكرية حول ما يحدث حين تهاجر المعرفة الإنسانية إلى ركائز غير حيوية.",
+  "date": "May 11, 2026",
   "word_count": 2239,
   "reading_time": 11,
+  "keywords": "Lucy، Luc Besson، نقل المعرفة، الذكاء الاصطناعي، LLM، qubits الذرّات المحايدة، محاكاة الدماغ، Neuralink، Eon Systems، Carboncopies، Fromm، استقلال الركيزة، فلسفة الذكاء الاصطناعي",
+  "language": "fil-PH",
   "title": "ذاكرة فلاش لوسي، عودة إلى الزيارة: ما رآه Besson في هجرة المعرفة إلى الآلات",
-  "banner": "https://cloudcdn.pro/stocks/images/lucy-knowledge-transfer-banner.webp"
+  "banner": "https://cloudcdn.pro/stocks/images/lucy-knowledge-transfer-banner.webp",
+  "subtitle": "بعد اثني عشر عاماً على إصداره، يُقرأ فيلم Lucy لـ Luc Besson أقلّ كعِلمٍ زائف وأكثر كتجربةٍ فكرية حول ما يحدث حين تهاجر المعرفة الإنسانية إلى ركائز غير حيوية.",
+  "banner_alt": "تصوّرٌ مجرّد لشبكاتٍ عصبية ومصفوفات ذرّية كمية. حاسوبٌ أسود يتشكّل من جزيئاتٍ تُعيد ترتيب نفسها"
 }
