@@ -152,19 +152,18 @@ Ang control loop ay tumatakbo bilang Observe → Detect → Forecast → Prepare
 sequenceDiagram
     autonumber
     participant Banks as Cash-Management Banks
-    participant Agent as Treasury Agent<br/>(bounded, policy-gated)
-    participant Forecast as Forecast Engine<br/>(ML + scenario lib)
-    participant Treasurer as Human Treasurer<br/>(MFA / hardware key)
-    participant Rails as Payment Rails<br/>(RTGS / RTP / DLT)
-
+    participant Agent as Treasury Agent
+    participant Forecast as Forecast Engine
+    participant Treasurer as Human Treasurer
+    participant Rails as Payment Rails
     Banks->>Agent: camt.052 intraday balance stream
     Agent->>Agent: Observe — i-refresh ang real-time position
     Agent->>Agent: Detect — nilabag ng entity X ang liquidity floor
     Agent->>Forecast: Humiling ng EOD projection
     Forecast-->>Agent: Nakumpirma ang shortfall (USD 12.4m)
-    Agent->>Agent: Prepare — mag-draft ng pain.001<br/>(repo / sweep) sa loob ng mandate limits
-    Agent->>Treasurer: Ipadala ang secure approval request<br/>(handa nang payload + ebidensya)
-    Note over Treasurer: Cryptographic MFA<br/>sa hardware-bound key
+    Agent->>Agent: Prepare — mag-draft ng pain.001 (repo / sweep) sa loob ng mandate limits
+    Agent->>Treasurer: Ipadala ang secure approval request (handa nang payload + ebidensya)
+    Note over Treasurer: Cryptographic MFA sa hardware-bound key
     Treasurer-->>Agent: Signed authorisation
     Agent->>Rails: Ipasa ang signed pain.001
     Rails-->>Agent: pain.002 ACK + finality

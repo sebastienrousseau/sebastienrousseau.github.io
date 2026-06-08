@@ -1,14 +1,14 @@
 {
-  "keywords": "calcul cuantic, criptografie rezistentă la cuantică, CRYSTALS-Kyber, criptografie, securitate, banking, financiar, criptare, protecția datelor, rezistent la viitor",
-  "banner": "https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA.webp",
-  "banner_alt": "Un calculator cuantic modern și elegant",
-  "word_count": 2448,
-  "date": "Nov 19, 2023",
   "reading_time": 12,
+  "banner": "https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA.webp",
   "language": "ro-RO",
+  "banner_alt": "Un calculator cuantic modern și elegant",
   "description": "Descoperiți cum CRYSTALS-Kyber, un algoritm de criptografie rezistent la calculul cuantic, revoluționează criptografia și ne pregătește pentru era cuantică.",
-  "title": "CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age",
+  "date": "Nov 19, 2023",
   "locale": "ro_RO",
-  "subtitle": "CRYSTALS-Kyber, standardul NIST FIPS 203 pentru încapsularea cheilor post-cuantice.",
-  "tags": "quantum, CRYSTALS-Kyber, encryption, cybersecurity, banking, finance, data, future, criptografie post-cuantică, cryptography, ISO 20022, DORA, calcul cuantic, AI, Rust"
+  "keywords": "calcul cuantic, criptografie rezistentă la cuantică, CRYSTALS-Kyber, criptografie, securitate, banking, financiar, criptare, protecția datelor, rezistent la viitor",
+  "word_count": 2448,
+  "title": "CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age",
+  "tags": "quantum, CRYSTALS-Kyber, encryption, cybersecurity, banking, finance, data, future, criptografie post-cuantică, cryptography, ISO 20022, DORA, calcul cuantic, AI, Rust",
+  "subtitle": "CRYSTALS-Kyber, standardul NIST FIPS 203 pentru încapsularea cheilor post-cuantice."
 }

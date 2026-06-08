@@ -1,13 +1,13 @@
 {
-  "reading_time": 5,
   "banner_alt": "Кучка золотых и серебряных монет на столе",
-  "banner": "https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp",
-  "description": "Bitcoin: одноранговая система электронных денег (P2P ECS), способная революционизировать способы онлайн-расчётов между людьми.",
-  "title": "Bitcoin: итоги года первой криптовалюты",
-  "language": "ru-RU",
+  "reading_time": 5,
   "subtitle": "Одноранговая система электронных платежей, переопределившая деньги",
-  "locale": "ru_RU",
   "keywords": "Bitcoin, криптовалюта, блокчейн, P2P, двойная трата, майнинг, proof-of-work, ETF, Satoshi Nakamoto, децентрализованные финансы",
+  "description": "Bitcoin: одноранговая система электронных денег (P2P ECS), способная революционизировать способы онлайн-расчётов между людьми.",
+  "language": "ru-RU",
+  "banner": "https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp",
+  "title": "Bitcoin: итоги года первой криптовалюты",
+  "date": "January 1, 2018",
   "word_count": 1089,
-  "date": "January 1, 2018"
+  "locale": "ru_RU"
 }

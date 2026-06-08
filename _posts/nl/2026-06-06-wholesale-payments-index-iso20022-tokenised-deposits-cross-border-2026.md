@@ -170,23 +170,22 @@ Project Agorá maakt de combinatie concreet. De onderstaande architectuur is het
 ```mermaid
 sequenceDiagram
     autonumber
-    participant CB_A as Commerciële Bank A<br/>(betalerzijde)
-    participant UL as Unified Ledger<br/>(BIS Agorá-coördinatievlak)
-    participant CBNK as Centrale Bank<br/>(uitgever wholesale-CBDC)
-    participant CB_B as Commerciële Bank B<br/>(begunstigde zijde)
-
-    CB_A->>UL: Stuur instructie:<br/>debiteer getokeniseerd deposito X,<br/>crediteer getokeniseerd deposito Y,<br/>voorwaarde = wholesale-CBDC-been
-    UL->>UL: Valideer ISO 20022-envelop,<br/>gestructureerd adres, LEI,<br/>doelcode, AML/sancties
-    UL->>CBNK: Reserveer wholesale-CBDC<br/>(centralebankreserves betalerzijde)
-    CBNK-->>UL: Reservering bevestigd<br/>(atomische lock)
-    UL->>CB_A: Lock getokeniseerd deposito X<br/>(been commerciëlebankgeld)
+    participant CB_A as Commerciële Bank A
+    participant UL as Unified Ledger
+    participant CBNK as Centrale Bank
+    participant CB_B as Commerciële Bank B
+    CB_A->>UL: Stuur instructie: debiteer getokeniseerd deposito X, crediteer getokeniseerd deposito Y, voorwaarde = wholesale-CBDC-been
+    UL->>UL: Valideer ISO 20022-envelop, gestructureerd adres, LEI, doelcode, AML/sancties
+    UL->>CBNK: Reserveer wholesale-CBDC (centralebankreserves betalerzijde)
+    CBNK-->>UL: Reservering bevestigd (atomische lock)
+    UL->>CB_A: Lock getokeniseerd deposito X (been commerciëlebankgeld)
     CB_A-->>UL: Deposito-lock bevestigd
-    UL->>UL: Beide benen gelockt →<br/>atomische afwikkeltrigger
-    UL->>CBNK: Wikkel wholesale-CBDC af<br/>(reserves betaler → reserves begunstigde)
-    UL->>CB_B: Geef getokeniseerd deposito Y uit<br/>(been commerciëlebankgeld)
+    UL->>UL: Beide benen gelockt → atomische afwikkeltrigger
+    UL->>CBNK: Wikkel wholesale-CBDC af (reserves betaler → reserves begunstigde)
+    UL->>CB_B: Geef getokeniseerd deposito Y uit (been commerciëlebankgeld)
     CBNK-->>UL: CBDC-afwikkeling gefinaliseerd
     CB_B-->>UL: Deposito bijgeschreven
-    UL->>CB_A: PvP-afwikkeling voltooid<br/>(beide benen finaal of beide benen teruggedraaid)
+    UL->>CB_A: PvP-afwikkeling voltooid (beide benen finaal of beide benen teruggedraaid)
     UL->>CB_B: PvP-afwikkeling voltooid
 ```
 

@@ -153,19 +153,18 @@ Kontrollslingan löper Observera → Upptäck → Prognostisera → Förbered �
 sequenceDiagram
     autonumber
     participant Banks as Cash management-banker
-    participant Agent as Treasury-agent<br/>(avgränsad, policystyrd)
-    participant Forecast as Prognosmotor<br/>(ML + scenariobibliotek)
-    participant Treasurer as Mänsklig treasurer<br/>(MFA / hårdvarunyckel)
-    participant Rails as Betalningsrails<br/>(RTGS / RTP / DLT)
-
+    participant Agent as Treasury-agent
+    participant Forecast as Prognosmotor
+    participant Treasurer as Mänsklig treasurer
+    participant Rails as Betalningsrails
     Banks->>Agent: camt.052 intradagsflöde av saldon
     Agent->>Agent: Observera — uppdatera realtidsposition
     Agent->>Agent: Upptäck — enhet X bryter likviditetsgolv
     Agent->>Forecast: Begär dagsslutsprojektion
     Forecast-->>Agent: Underskott bekräftat (USD 12.4m)
-    Agent->>Agent: Förbered — utkast pain.001<br/>(repo / sweep) inom mandatgränser
-    Agent->>Treasurer: Skicka säker godkännandeförfrågan<br/>(förberedd nyttolast + bevis)
-    Note over Treasurer: Kryptografisk MFA<br/>på hårdvarubunden nyckel
+    Agent->>Agent: Förbered — utkast pain.001 (repo / sweep) inom mandatgränser
+    Agent->>Treasurer: Skicka säker godkännandeförfrågan (förberedd nyttolast + bevis)
+    Note over Treasurer: Kryptografisk MFA på hårdvarubunden nyckel
     Treasurer-->>Agent: Signerad auktorisation
     Agent->>Rails: Skicka signerad pain.001
     Rails-->>Agent: pain.002-ACK + finalitet

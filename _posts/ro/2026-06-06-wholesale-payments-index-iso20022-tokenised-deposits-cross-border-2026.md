@@ -170,23 +170,22 @@ Project Agorá face combinația concretă. Arhitectura de mai jos este tiparul d
 ```mermaid
 sequenceDiagram
     autonumber
-    participant CB_A as Banca comercială A<br/>(partea plătitor)
-    participant UL as Registru unificat<br/>(plan de coordonare BIS Agorá)
-    participant CBNK as Banca centrală<br/>(emitent CBDC en gros)
-    participant CB_B as Banca comercială B<br/>(partea beneficiar)
-
-    CB_A->>UL: Trimite instrucțiunea:<br/>debitează depozit tokenizat X,<br/>creditează depozit tokenizat Y,<br/>condiție = leg CBDC en gros
-    UL->>UL: Validează plicul ISO 20022,<br/>adresă structurată, LEI,<br/>cod de scop, AML/sancțiuni
-    UL->>CBNK: Rezervă CBDC en gros<br/>(rezerve ale băncii centrale partea plătitor)
-    CBNK-->>UL: Rezervare confirmată<br/>(blocare atomică)
-    UL->>CB_A: Blochează depozit tokenizat X<br/>(leg bani de bancă comercială)
+    participant CB_A as Banca comercială A
+    participant UL as Registru unificat
+    participant CBNK as Banca centrală
+    participant CB_B as Banca comercială B
+    CB_A->>UL: Trimite instrucțiunea: debitează depozit tokenizat X, creditează depozit tokenizat Y, condiție = leg CBDC en gros
+    UL->>UL: Validează plicul ISO 20022, adresă structurată, LEI, cod de scop, AML/sancțiuni
+    UL->>CBNK: Rezervă CBDC en gros (rezerve ale băncii centrale partea plătitor)
+    CBNK-->>UL: Rezervare confirmată (blocare atomică)
+    UL->>CB_A: Blochează depozit tokenizat X (leg bani de bancă comercială)
     CB_A-->>UL: Blocarea depozitului confirmată
-    UL->>UL: Ambele leg-uri blocate →<br/>declanșator decontare atomică
-    UL->>CBNK: Decontează CBDC en gros<br/>(rezerve plătitor → rezerve beneficiar)
-    UL->>CB_B: Emite depozit tokenizat Y<br/>(leg bani de bancă comercială)
+    UL->>UL: Ambele leg-uri blocate → declanșator decontare atomică
+    UL->>CBNK: Decontează CBDC en gros (rezerve plătitor → rezerve beneficiar)
+    UL->>CB_B: Emite depozit tokenizat Y (leg bani de bancă comercială)
     CBNK-->>UL: Decontarea CBDC finalizată
     CB_B-->>UL: Depozit creditat
-    UL->>CB_A: Decontare PvP completă<br/>(ambele leg-uri finale sau ambele revin)
+    UL->>CB_A: Decontare PvP completă (ambele leg-uri finale sau ambele revin)
     UL->>CB_B: Decontare PvP completă
 ```
 

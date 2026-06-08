@@ -175,19 +175,18 @@ The control loop runs Observe → Detect → Forecast → Prepare → Request Ap
 sequenceDiagram
     autonumber
     participant Banks as Cash-Management Banks
-    participant Agent as Treasury Agent<br/>(bounded, policy-gated)
-    participant Forecast as Forecast Engine<br/>(ML + scenario lib)
-    participant Treasurer as Human Treasurer<br/>(MFA / hardware key)
-    participant Rails as Payment Rails<br/>(RTGS / RTP / DLT)
-
+    participant Agent as Treasury Agent
+    participant Forecast as Forecast Engine
+    participant Treasurer as Human Treasurer
+    participant Rails as Payment Rails
     Banks->>Agent: camt.052 intraday balance stream
     Agent->>Agent: Observe — refresh real-time position
     Agent->>Agent: Detect — entity X breaches liquidity floor
     Agent->>Forecast: Request EOD projection
     Forecast-->>Agent: Shortfall confirmed (USD 12.4m)
-    Agent->>Agent: Prepare — draft pain.001<br/>(repo / sweep) under mandate limits
-    Agent->>Treasurer: Push secure approval request<br/>(prepared payload + evidence)
-    Note over Treasurer: Cryptographic MFA<br/>on hardware-bound key
+    Agent->>Agent: Prepare — draft pain.001 (repo / sweep) under mandate limits
+    Agent->>Treasurer: Push secure approval request (prepared payload + evidence)
+    Note over Treasurer: Cryptographic MFA on hardware-bound key
     Treasurer-->>Agent: Signed authorisation
     Agent->>Rails: Submit signed pain.001
     Rails-->>Agent: pain.002 ACK + finality

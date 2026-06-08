@@ -170,23 +170,22 @@ Project Agorá 把这一组合落到了实处。下面的架构是 BIS 给出的
 ```mermaid
 sequenceDiagram
     autonumber
-    participant CB_A as 商业银行 A<br/>(付款方)
-    participant UL as 统一账本<br/>(BIS Agorá 协调面)
-    participant CBNK as 央行<br/>(大额 CBDC 发行方)
-    participant CB_B as 商业银行 B<br/>(收款方)
-
-    CB_A->>UL: 提交指令:<br/>借记代币化存款 X、<br/>贷记代币化存款 Y、<br/>条件 = 大额 CBDC 腿
-    UL->>UL: 校验 ISO 20022 信封、<br/>结构化地址、LEI、<br/>用途码、AML/制裁
-    UL->>CBNK: 预留大额 CBDC<br/>(付款侧央行储备)
-    CBNK-->>UL: 预留确认<br/>(原子锁定)
-    UL->>CB_A: 锁定代币化存款 X<br/>(商业银行货币腿)
+    participant CB_A as 商业银行 A
+    participant UL as 统一账本
+    participant CBNK as 央行
+    participant CB_B as 商业银行 B
+    CB_A->>UL: 提交指令: 借记代币化存款 X、 贷记代币化存款 Y、 条件 = 大额 CBDC 腿
+    UL->>UL: 校验 ISO 20022 信封、 结构化地址、LEI、 用途码、AML/制裁
+    UL->>CBNK: 预留大额 CBDC (付款侧央行储备)
+    CBNK-->>UL: 预留确认 (原子锁定)
+    UL->>CB_A: 锁定代币化存款 X (商业银行货币腿)
     CB_A-->>UL: 存款锁定确认
-    UL->>UL: 两腿均锁定 →<br/>触发原子结算
-    UL->>CBNK: 结算大额 CBDC<br/>(付款方储备 → 收款方储备)
-    UL->>CB_B: 发行代币化存款 Y<br/>(商业银行货币腿)
+    UL->>UL: 两腿均锁定 → 触发原子结算
+    UL->>CBNK: 结算大额 CBDC (付款方储备 → 收款方储备)
+    UL->>CB_B: 发行代币化存款 Y (商业银行货币腿)
     CBNK-->>UL: CBDC 结算定案
     CB_B-->>UL: 存款已贷记
-    UL->>CB_A: PvP 结算完成<br/>(两腿同时定案,或同时回滚)
+    UL->>CB_A: PvP 结算完成 (两腿同时定案,或同时回滚)
     UL->>CB_B: PvP 结算完成
 ```
 

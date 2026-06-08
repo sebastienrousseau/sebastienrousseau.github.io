@@ -153,19 +153,18 @@ site_software: "Static Site Generator, Rust"
 sequenceDiagram
     autonumber
     participant Banks as مصارف إدارة النقد
-    participant Agent as وكيل الخزانة<br/>(محدود ومضبوط بالسياسة)
-    participant Forecast as محرك التنبؤ<br/>(تعلم آلي + مكتبة سيناريوهات)
-    participant Treasurer as أمين الخزانة البشري<br/>(MFA / مفتاح أجهزة)
-    participant Rails as سكك المدفوعات<br/>(RTGS / RTP / DLT)
-
+    participant Agent as وكيل الخزانة
+    participant Forecast as محرك التنبؤ
+    participant Treasurer as أمين الخزانة البشري
+    participant Rails as سكك المدفوعات
     Banks->>Agent: تدفق رصيد خلال اليوم camt.052
     Agent->>Agent: المراقبة — تحديث المركز الفوري
     Agent->>Agent: الكشف — الكيان X يخترق الحد الأدنى للسيولة
     Agent->>Forecast: طلب إسقاط نهاية اليوم
     Forecast-->>Agent: تأكيد العجز (USD 12.4m)
-    Agent->>Agent: الإعداد — صياغة pain.001<br/>(إعادة شراء / مقاصة) ضمن حدود التفويض
-    Agent->>Treasurer: دفع طلب موافقة آمن<br/>(حمولة معدَّة + أدلة)
-    Note over Treasurer: مصادقة تشفيرية متعددة العوامل<br/>على مفتاح مرتبط بجهاز
+    Agent->>Agent: الإعداد — صياغة pain.001 (إعادة شراء / مقاصة) ضمن حدود التفويض
+    Agent->>Treasurer: دفع طلب موافقة آمن (حمولة معدَّة + أدلة)
+    Note over Treasurer: مصادقة تشفيرية متعددة العوامل على مفتاح مرتبط بجهاز
     Treasurer-->>Agent: تفويض موقَّع
     Agent->>Rails: إرسال pain.001 الموقَّعة
     Rails-->>Agent: إقرار pain.002 + قطعية

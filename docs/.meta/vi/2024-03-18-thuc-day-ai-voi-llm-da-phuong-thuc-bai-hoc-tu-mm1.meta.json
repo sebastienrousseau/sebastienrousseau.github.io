@@ -1,13 +1,13 @@
 {
-  "keywords": "MM1, Apple, LLM, đa phương thức, hình ảnh, văn bản, học máy, kiến trúc, huấn luyện trước",
-  "title": "Thúc đẩy AI với LLM đa phương thức: bài học từ MM1",
-  "banner_alt": "Sơ đồ trừu tượng của một LLM đa phương thức",
-  "reading_time": 3,
-  "date": "March 18, 2024",
-  "description": "Phân tích bài báo MM1 của Apple — kiến trúc, chiến lược huấn luyện trước và các khả năng mới nổi của LLM đa phương thức.",
-  "word_count": 694,
   "locale": "vi_VN",
-  "language": "vi-VN",
+  "banner": "https://cloudcdn.pro/stocks/images/mm1-banner.webp",
+  "title": "Thúc đẩy AI với LLM đa phương thức: bài học từ MM1",
+  "reading_time": 3,
+  "description": "Phân tích bài báo MM1 của Apple — kiến trúc, chiến lược huấn luyện trước và các khả năng mới nổi của LLM đa phương thức.",
+  "keywords": "MM1, Apple, LLM, đa phương thức, hình ảnh, văn bản, học máy, kiến trúc, huấn luyện trước",
+  "date": "March 18, 2024",
   "subtitle": "Phân tích bài báo MM1 của Apple về các mô hình ngôn ngữ lớn đa phương thức",
-  "banner": "https://cloudcdn.pro/stocks/images/mm1-banner.webp"
+  "word_count": 694,
+  "language": "vi-VN",
+  "banner_alt": "Sơ đồ trừu tượng của một LLM đa phương thức"
 }

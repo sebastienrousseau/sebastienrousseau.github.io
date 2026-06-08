@@ -170,23 +170,22 @@ Project Agorá biến sự kết hợp này thành cụ thể. Kiến trúc dư�
 ```mermaid
 sequenceDiagram
     autonumber
-    participant CB_A as Ngân hàng Thương mại A<br/>(phía trả)
-    participant UL as Sổ cái Thống nhất<br/>(mặt phẳng phối hợp BIS Agorá)
-    participant CBNK as Ngân hàng Trung ương<br/>(phát hành CBDC bán buôn)
-    participant CB_B as Ngân hàng Thương mại B<br/>(phía nhận)
-
-    CB_A->>UL: Gửi lệnh:<br/>ghi nợ tiền gửi được mã hóa X,<br/>ghi có tiền gửi được mã hóa Y,<br/>điều kiện = nhánh CBDC bán buôn
-    UL->>UL: Xác thực phong bì ISO 20022,<br/>địa chỉ có cấu trúc, LEI,<br/>mã mục đích, AML/trừng phạt
-    UL->>CBNK: Dự trữ CBDC bán buôn<br/>(dự trữ ngân hàng trung ương phía trả)
-    CBNK-->>UL: Xác nhận dự trữ<br/>(khóa nguyên tử)
-    UL->>CB_A: Khóa tiền gửi được mã hóa X<br/>(nhánh tiền ngân hàng thương mại)
+    participant CB_A as Ngân hàng Thương mại A
+    participant UL as Sổ cái Thống nhất
+    participant CBNK as Ngân hàng Trung ương
+    participant CB_B as Ngân hàng Thương mại B
+    CB_A->>UL: Gửi lệnh: ghi nợ tiền gửi được mã hóa X, ghi có tiền gửi được mã hóa Y, điều kiện = nhánh CBDC bán buôn
+    UL->>UL: Xác thực phong bì ISO 20022, địa chỉ có cấu trúc, LEI, mã mục đích, AML/trừng phạt
+    UL->>CBNK: Dự trữ CBDC bán buôn (dự trữ ngân hàng trung ương phía trả)
+    CBNK-->>UL: Xác nhận dự trữ (khóa nguyên tử)
+    UL->>CB_A: Khóa tiền gửi được mã hóa X (nhánh tiền ngân hàng thương mại)
     CB_A-->>UL: Xác nhận khóa tiền gửi
-    UL->>UL: Cả hai nhánh đã khóa →<br/>kích hoạt quyết toán nguyên tử
-    UL->>CBNK: Quyết toán CBDC bán buôn<br/>(dự trữ phía trả → dự trữ phía nhận)
-    UL->>CB_B: Phát hành tiền gửi được mã hóa Y<br/>(nhánh tiền ngân hàng thương mại)
+    UL->>UL: Cả hai nhánh đã khóa → kích hoạt quyết toán nguyên tử
+    UL->>CBNK: Quyết toán CBDC bán buôn (dự trữ phía trả → dự trữ phía nhận)
+    UL->>CB_B: Phát hành tiền gửi được mã hóa Y (nhánh tiền ngân hàng thương mại)
     CBNK-->>UL: Quyết toán CBDC hoàn tất
     CB_B-->>UL: Tiền gửi đã được ghi có
-    UL->>CB_A: Quyết toán PvP hoàn tất<br/>(cả hai nhánh cuối cùng hoặc cả hai cùng quay lại)
+    UL->>CB_A: Quyết toán PvP hoàn tất (cả hai nhánh cuối cùng hoặc cả hai cùng quay lại)
     UL->>CB_B: Quyết toán PvP hoàn tất
 ```
 

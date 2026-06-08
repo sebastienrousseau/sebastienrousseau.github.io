@@ -155,19 +155,18 @@ Vòng lặp kiểm soát chạy theo trình tự Quan sát → Phát hiện → 
 sequenceDiagram
     autonumber
     participant Banks as Ngân hàng quản lý tiền mặt
-    participant Agent as Tác nhân kho bạc<br/>(có ranh giới, được chính sách kiểm soát)
-    participant Forecast as Bộ máy dự báo<br/>(ML + thư viện kịch bản)
-    participant Treasurer as Giám đốc kho bạc<br/>(MFA / khoá phần cứng)
-    participant Rails as Đường truyền thanh toán<br/>(RTGS / RTP / DLT)
-
+    participant Agent as Tác nhân kho bạc
+    participant Forecast as Bộ máy dự báo
+    participant Treasurer as Giám đốc kho bạc
+    participant Rails as Đường truyền thanh toán
     Banks->>Agent: Dòng số dư trong ngày camt.052
     Agent->>Agent: Quan sát — làm mới trạng thái thời gian thực
     Agent->>Agent: Phát hiện — đơn vị X vượt ngưỡng sàn thanh khoản
     Agent->>Forecast: Yêu cầu dự báo cuối ngày
     Forecast-->>Agent: Xác nhận thiếu hụt (USD 12.4m)
-    Agent->>Agent: Chuẩn bị — soạn pain.001<br/>(repo / quét quỹ) trong hạn mức uỷ nhiệm
-    Agent->>Treasurer: Gửi yêu cầu phê duyệt bảo mật<br/>(tải trọng đã chuẩn bị + bằng chứng)
-    Note over Treasurer: MFA mật mã<br/>trên khoá phần cứng
+    Agent->>Agent: Chuẩn bị — soạn pain.001 (repo / quét quỹ) trong hạn mức uỷ nhiệm
+    Agent->>Treasurer: Gửi yêu cầu phê duyệt bảo mật (tải trọng đã chuẩn bị + bằng chứng)
+    Note over Treasurer: MFA mật mã trên khoá phần cứng
     Treasurer-->>Agent: Uỷ quyền đã ký
     Agent->>Rails: Nộp pain.001 đã ký
     Rails-->>Agent: Xác nhận pain.002 + tính chung cuộc

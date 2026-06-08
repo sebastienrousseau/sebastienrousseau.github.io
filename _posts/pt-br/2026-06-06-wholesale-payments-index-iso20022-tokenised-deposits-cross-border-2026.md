@@ -170,23 +170,22 @@ O Project Agorá torna essa combinação concreta. A arquitetura abaixo é o pad
 ```mermaid
 sequenceDiagram
     autonumber
-    participant CB_A as Banco Comercial A<br/>(lado pagador)
-    participant UL as Razão Unificado<br/>(plano de coordenação BIS Agorá)
-    participant CBNK as Banco Central<br/>(emissor de CBDC de atacado)
-    participant CB_B as Banco Comercial B<br/>(lado recebedor)
-
-    CB_A->>UL: Submete instrução:<br/>debitar depósito tokenizado X,<br/>creditar depósito tokenizado Y,<br/>condição = perna em CBDC de atacado
-    UL->>UL: Valida envelope ISO 20022,<br/>endereço estruturado, LEI,<br/>código de propósito, AML/sanções
-    UL->>CBNK: Reserva CBDC de atacado<br/>(reservas do banco central, lado pagador)
-    CBNK-->>UL: Reserva confirmada<br/>(trava atômica)
-    UL->>CB_A: Trava depósito tokenizado X<br/>(perna em moeda de banco comercial)
+    participant CB_A as Banco Comercial A
+    participant UL as Razão Unificado
+    participant CBNK as Banco Central
+    participant CB_B as Banco Comercial B
+    CB_A->>UL: Submete instrução: debitar depósito tokenizado X, creditar depósito tokenizado Y, condição = perna em CBDC de atacado
+    UL->>UL: Valida envelope ISO 20022, endereço estruturado, LEI, código de propósito, AML/sanções
+    UL->>CBNK: Reserva CBDC de atacado (reservas do banco central, lado pagador)
+    CBNK-->>UL: Reserva confirmada (trava atômica)
+    UL->>CB_A: Trava depósito tokenizado X (perna em moeda de banco comercial)
     CB_A-->>UL: Trava de depósito confirmada
-    UL->>UL: Ambas as pernas travadas →<br/>gatilho de liquidação atômica
-    UL->>CBNK: Liquida CBDC de atacado<br/>(reservas pagador → reservas recebedor)
-    UL->>CB_B: Emite depósito tokenizado Y<br/>(perna em moeda de banco comercial)
+    UL->>UL: Ambas as pernas travadas → gatilho de liquidação atômica
+    UL->>CBNK: Liquida CBDC de atacado (reservas pagador → reservas recebedor)
+    UL->>CB_B: Emite depósito tokenizado Y (perna em moeda de banco comercial)
     CBNK-->>UL: Liquidação em CBDC finalizada
     CB_B-->>UL: Depósito creditado
-    UL->>CB_A: Liquidação PvP concluída<br/>(ambas as pernas finais ou ambas revertidas)
+    UL->>CB_A: Liquidação PvP concluída (ambas as pernas finais ou ambas revertidas)
     UL->>CB_B: Liquidação PvP concluída
 ```
 

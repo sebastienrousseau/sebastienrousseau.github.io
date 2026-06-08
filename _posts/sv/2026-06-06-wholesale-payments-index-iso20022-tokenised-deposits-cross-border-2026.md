@@ -170,23 +170,22 @@ Project Agorá gör kombinationen konkret. Arkitekturen nedan är BIS referensm�
 ```mermaid
 sequenceDiagram
     autonumber
-    participant CB_A as Affärsbank A<br/>(betalarsida)
-    participant UL as Enhetlig huvudbok<br/>(BIS Agorá samordningsplan)
-    participant CBNK as Centralbank<br/>(emittent av grossist-CBDC)
-    participant CB_B as Affärsbank B<br/>(mottagarsida)
-
-    CB_A->>UL: Skicka instruktion:<br/>debitera tokeniserad insättning X,<br/>kreditera tokeniserad insättning Y,<br/>villkor = grossist-CBDC-ben
-    UL->>UL: Validera ISO 20022-kuvert,<br/>strukturerad adress, LEI,<br/>syfteskod, AML/sanktioner
-    UL->>CBNK: Reservera grossist-CBDC<br/>(centralbanksreserver på betalarsidan)
-    CBNK-->>UL: Reservation bekräftad<br/>(atomärt lås)
-    UL->>CB_A: Lås tokeniserad insättning X<br/>(affärsbankspengaben)
+    participant CB_A as Affärsbank A
+    participant UL as Enhetlig huvudbok
+    participant CBNK as Centralbank
+    participant CB_B as Affärsbank B
+    CB_A->>UL: Skicka instruktion: debitera tokeniserad insättning X, kreditera tokeniserad insättning Y, villkor = grossist-CBDC-ben
+    UL->>UL: Validera ISO 20022-kuvert, strukturerad adress, LEI, syfteskod, AML/sanktioner
+    UL->>CBNK: Reservera grossist-CBDC (centralbanksreserver på betalarsidan)
+    CBNK-->>UL: Reservation bekräftad (atomärt lås)
+    UL->>CB_A: Lås tokeniserad insättning X (affärsbankspengaben)
     CB_A-->>UL: Insättningslås bekräftat
-    UL->>UL: Båda benen låsta →<br/>utlös atomär avveckling
-    UL->>CBNK: Avveckla grossist-CBDC<br/>(betalarreserver → mottagarreserver)
-    UL->>CB_B: Emittera tokeniserad insättning Y<br/>(affärsbankspengaben)
+    UL->>UL: Båda benen låsta → utlös atomär avveckling
+    UL->>CBNK: Avveckla grossist-CBDC (betalarreserver → mottagarreserver)
+    UL->>CB_B: Emittera tokeniserad insättning Y (affärsbankspengaben)
     CBNK-->>UL: CBDC-avveckling slutförd
     CB_B-->>UL: Insättning krediterad
-    UL->>CB_A: PvP-avveckling klar<br/>(båda benen slutgiltiga eller båda rullas tillbaka)
+    UL->>CB_A: PvP-avveckling klar (båda benen slutgiltiga eller båda rullas tillbaka)
     UL->>CB_B: PvP-avveckling klar
 ```
 

@@ -1,13 +1,13 @@
 {
-  "banner_alt": "Логотип и баннер Static Site Generator (SSG)",
-  "language": "ru-RU",
-  "locale": "ru_RU",
-  "title": "Static Site Generator: самый быстрый статический генератор сайтов на Rust",
-  "description": "Static Site Generator — это статический генератор сайтов на Rust, созданный для производительности, доступности и SEO. Молниеносные сборки с поддержкой JSON-LD из коробки.",
-  "word_count": 225,
   "date": "October 9, 2023",
+  "word_count": 225,
+  "banner_alt": "Логотип и баннер Static Site Generator (SSG)",
+  "title": "Static Site Generator: самый быстрый статический генератор сайтов на Rust",
+  "locale": "ru_RU",
+  "description": "Static Site Generator — это статический генератор сайтов на Rust, созданный для производительности, доступности и SEO. Молниеносные сборки с поддержкой JSON-LD из коробки.",
   "subtitle": "Производительность, доступность и SEO как первоклассные граждане",
+  "reading_time": 1,
   "keywords": "Static Site Generator, статический генератор сайтов, Rust, SSG, производительность, SEO, JSON-LD, доступность, open source",
   "banner": "https://cloudcdn.pro/stocks/images/shokunin-banner.webp",
-  "reading_time": 1
+  "language": "ru-RU"
 }

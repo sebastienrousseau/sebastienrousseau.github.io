@@ -170,23 +170,22 @@ Proje Agorá kombinasyonu somutlaştırır. Aşağıdaki mimari, hem bir ticari-
 ```mermaid
 sequenceDiagram
     autonumber
-    participant CB_A as Ticari Banka A<br/>(ödeyen taraf)
-    participant UL as Birleşik Defter<br/>(BIS Agorá koordinasyon düzlemi)
-    participant CBNK as Merkez Bankası<br/>(toptan CBDC ihracı)
-    participant CB_B as Ticari Banka B<br/>(alacaklı taraf)
-
-    CB_A->>UL: Talimat gönder:<br/>tokenleştirilmiş mevduat X borç,<br/>tokenleştirilmiş mevduat Y alacak,<br/>koşul = toptan CBDC bacağı
-    UL->>UL: ISO 20022 zarfını,<br/>yapılandırılmış adres, LEI,<br/>amaç kodu, AML/yaptırımları doğrula
-    UL->>CBNK: Toptan CBDC rezerve et<br/>(ödeyen-taraf merkez bankası rezervleri)
-    CBNK-->>UL: Rezervasyon onaylandı<br/>(atomik kilit)
-    UL->>CB_A: Tokenleştirilmiş mevduat X'i kilitle<br/>(ticari-banka para bacağı)
+    participant CB_A as Ticari Banka A
+    participant UL as Birleşik Defter
+    participant CBNK as Merkez Bankası
+    participant CB_B as Ticari Banka B
+    CB_A->>UL: Talimat gönder: tokenleştirilmiş mevduat X borç, tokenleştirilmiş mevduat Y alacak, koşul = toptan CBDC bacağı
+    UL->>UL: ISO 20022 zarfını, yapılandırılmış adres, LEI, amaç kodu, AML/yaptırımları doğrula
+    UL->>CBNK: Toptan CBDC rezerve et (ödeyen-taraf merkez bankası rezervleri)
+    CBNK-->>UL: Rezervasyon onaylandı (atomik kilit)
+    UL->>CB_A: Tokenleştirilmiş mevduat X'i kilitle (ticari-banka para bacağı)
     CB_A-->>UL: Mevduat kilidi onaylandı
-    UL->>UL: Her iki bacak kilitlendi →<br/>atomik mutabakat tetikleyicisi
-    UL->>CBNK: Toptan CBDC mutabakatını yap<br/>(ödeyen rezervleri → alacaklı rezervleri)
-    UL->>CB_B: Tokenleştirilmiş mevduat Y ihraç et<br/>(ticari-banka para bacağı)
+    UL->>UL: Her iki bacak kilitlendi → atomik mutabakat tetikleyicisi
+    UL->>CBNK: Toptan CBDC mutabakatını yap (ödeyen rezervleri → alacaklı rezervleri)
+    UL->>CB_B: Tokenleştirilmiş mevduat Y ihraç et (ticari-banka para bacağı)
     CBNK-->>UL: CBDC mutabakatı kesinleştirildi
     CB_B-->>UL: Mevduat alacaklandırıldı
-    UL->>CB_A: PvP mutabakatı tamamlandı<br/>(her iki bacak da kesin veya her ikisi de geri alındı)
+    UL->>CB_A: PvP mutabakatı tamamlandı (her iki bacak da kesin veya her ikisi de geri alındı)
     UL->>CB_B: PvP mutabakatı tamamlandı
 ```
 

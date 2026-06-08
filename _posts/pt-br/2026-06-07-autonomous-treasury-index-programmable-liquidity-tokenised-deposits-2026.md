@@ -155,19 +155,18 @@ O ciclo de controle roda Observar → Detectar → Prever → Preparar → Solic
 sequenceDiagram
     autonumber
     participant Banks as Bancos de Cash Management
-    participant Agent as Agente de Tesouraria<br/>(delimitado, sob política)
-    participant Forecast as Motor de Previsão<br/>(ML + biblioteca de cenários)
-    participant Treasurer as Tesoureiro Humano<br/>(MFA / chave em hardware)
-    participant Rails as Trilhos de Pagamento<br/>(RTGS / RTP / DLT)
-
+    participant Agent as Agente de Tesouraria
+    participant Forecast as Motor de Previsão
+    participant Treasurer as Tesoureiro Humano
+    participant Rails as Trilhos de Pagamento
     Banks->>Agent: fluxo de saldo intradia camt.052
     Agent->>Agent: Observar — atualizar posição em tempo real
     Agent->>Agent: Detectar — entidade X viola piso de liquidez
     Agent->>Forecast: Solicitar projeção de fim de dia
     Forecast-->>Agent: Carência confirmada (USD 12.4m)
-    Agent->>Agent: Preparar — esboçar pain.001<br/>(repo / sweep) sob limites do mandato
-    Agent->>Treasurer: Enviar solicitação de aprovação segura<br/>(payload preparado + evidências)
-    Note over Treasurer: MFA criptográfica<br/>em chave vinculada a hardware
+    Agent->>Agent: Preparar — esboçar pain.001 (repo / sweep) sob limites do mandato
+    Agent->>Treasurer: Enviar solicitação de aprovação segura (payload preparado + evidências)
+    Note over Treasurer: MFA criptográfica em chave vinculada a hardware
     Treasurer-->>Agent: Autorização assinada
     Agent->>Rails: Submeter pain.001 assinada
     Rails-->>Agent: ACK pain.002 + finalidade

@@ -153,19 +153,18 @@ Stanford AI सूचकांक उपयोगी है क्योंक�
 sequenceDiagram
     autonumber
     participant Banks as नकद-प्रबंधन बैंक
-    participant Agent as ट्रेज़री एजेंट<br/>(सीमित, नीति-गेटेड)
-    participant Forecast as पूर्वानुमान इंजन<br/>(ML + परिदृश्य लाइब्रेरी)
-    participant Treasurer as मानव कोषाध्यक्ष<br/>(MFA / हार्डवेयर कुंजी)
-    participant Rails as भुगतान रेल<br/>(RTGS / RTP / DLT)
-
+    participant Agent as ट्रेज़री एजेंट
+    participant Forecast as पूर्वानुमान इंजन
+    participant Treasurer as मानव कोषाध्यक्ष
+    participant Rails as भुगतान रेल
     Banks->>Agent: camt.052 इंट्राडे शेष स्ट्रीम
     Agent->>Agent: अवलोकन — रियल-टाइम स्थिति ताज़ा करें
     Agent->>Agent: पहचान — इकाई X तरलता न्यूनतम का उल्लंघन करती है
     Agent->>Forecast: EOD प्रक्षेपण का अनुरोध
     Forecast-->>Agent: कमी की पुष्टि (USD 12.4m)
-    Agent->>Agent: तैयारी — pain.001 का मसौदा<br/>(रेपो / स्वीप) मेंडेट सीमाओं के भीतर
-    Agent->>Treasurer: सुरक्षित अनुमोदन अनुरोध भेजें<br/>(तैयार पेलोड + साक्ष्य)
-    Note over Treasurer: हार्डवेयर-बद्ध कुंजी पर<br/>क्रिप्टोग्राफ़िक MFA
+    Agent->>Agent: तैयारी — pain.001 का मसौदा (रेपो / स्वीप) मेंडेट सीमाओं के भीतर
+    Agent->>Treasurer: सुरक्षित अनुमोदन अनुरोध भेजें (तैयार पेलोड + साक्ष्य)
+    Note over Treasurer: हार्डवेयर-बद्ध कुंजी पर क्रिप्टोग्राफ़िक MFA
     Treasurer-->>Agent: हस्ताक्षरित प्राधिकरण
     Agent->>Rails: हस्ताक्षरित pain.001 प्रस्तुत करें
     Rails-->>Agent: pain.002 ACK + अंतिमता

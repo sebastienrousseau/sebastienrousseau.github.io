@@ -1014,8 +1014,13 @@ def inject_mermaid(html: str) -> str:
     def replace(m: re.Match[str]) -> str:
         # Strip <span> wrappers a syntax highlighter may have added,
         # then unescape entities — Mermaid wants the raw source.
+        # Mermaid v10's run() reads via innerHTML, so emit `>` as a raw
+        # char (not `&gt;`) — otherwise `->>` arrows fail to parse.
+        # Still escape `<` and `&` to keep the surrounding HTML valid.
         inner = re.sub(r"<[^>]+>", "", m.group(1))
-        return f'<pre class="mermaid">{_h.escape(_h.unescape(inner))}</pre>'
+        raw = _h.unescape(inner)
+        safe = raw.replace("&", "&amp;").replace("<", "&lt;")
+        return f'<pre class="mermaid">{safe}</pre>'
 
     new_html = _MERMAID_BLOCK_RE.sub(replace, html)
     if new_html == html:
@@ -1027,14 +1032,48 @@ def inject_mermaid(html: str) -> str:
 
         def patch_content(c: re.Match[str]) -> str:
             policy = c.group(3)
-            if "cdn.jsdelivr.net" in policy:
+            new_policy = policy
+            # Widen script-src so the Mermaid lib can be imported from jsDelivr.
+            if "cdn.jsdelivr.net" not in new_policy:
+                new_policy = re.sub(
+                    r"(script-src)(\s+)",
+                    r"\1 https://cdn.jsdelivr.net\2",
+                    new_policy,
+                    count=1,
+                )
+            # Widen style-src so Mermaid can set inline styles on the SVG it
+            # generates (arrowhead fills, sequence-number colors, message-line
+            # strokes are all set via element.style.X). Without 'unsafe-inline'
+            # in style-src for these pages, those assignments are silently
+            # blocked by CSP and the diagram renders with browser default fill
+            # (black filled paths = teardrop blobs).
+            #
+            # CSP3 spec gotcha: 'unsafe-inline' is IGNORED if any hash or nonce
+            # is also present in the same source list. So we strip the existing
+            # 'sha256-…' tokens from the style-src clause when we add
+            # 'unsafe-inline', otherwise the browser silently drops it.
+            if "'unsafe-inline'" not in new_policy:
+                # Match the whole style-src clause (up to the next ; or end of value)
+                def widen_style_src(m: re.Match[str]) -> str:
+                    clause = m.group(0)
+                    # Drop any 'sha256-…' or 'sha384-…' / 'sha512-…' hashes
+                    clause = re.sub(r"\s*'sha(?:256|384|512)-[A-Za-z0-9+/=]+'", "", clause)
+                    # Insert 'unsafe-inline' right after the directive name
+                    clause = re.sub(
+                        r"^(style-src)(\s+)",
+                        r"\1 'unsafe-inline'\2",
+                        clause,
+                        count=1,
+                    )
+                    return clause
+                new_policy = re.sub(
+                    r"style-src[^;]*",
+                    widen_style_src,
+                    new_policy,
+                    count=1,
+                )
+            if new_policy == policy:
                 return c.group(0)
-            new_policy = re.sub(
-                r"(script-src)(\s+)",
-                r"\1 https://cdn.jsdelivr.net\2",
-                policy,
-                count=1,
-            )
             return c.group(1) + c.group(2) + new_policy + c.group(4)
 
         return _content_attr_re.sub(patch_content, tag, count=1)

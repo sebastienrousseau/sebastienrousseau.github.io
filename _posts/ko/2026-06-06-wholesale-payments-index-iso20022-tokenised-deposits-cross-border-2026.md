@@ -170,23 +170,22 @@ Project Agorá는 그 조합을 구체화합니다. 아래 아키텍처는 상�
 ```mermaid
 sequenceDiagram
     autonumber
-    participant CB_A as 상업은행 A<br/>(지급인 측)
-    participant UL as 단일 원장<br/>(BIS Agorá 조율 평면)
-    participant CBNK as 중앙은행<br/>(거액 CBDC 발행자)
-    participant CB_B as 상업은행 B<br/>(수취인 측)
-
-    CB_A->>UL: 지시 제출:<br/>토큰화 예금 X 차변,<br/>토큰화 예금 Y 대변,<br/>조건 = 거액 CBDC 레그
-    UL->>UL: ISO 20022 봉투,<br/>구조화 주소, LEI,<br/>목적 코드, AML/제재 검증
-    UL->>CBNK: 거액 CBDC 예약<br/>(지급인 측 중앙은행 준비금)
-    CBNK-->>UL: 예약 확인<br/>(원자적 잠금)
-    UL->>CB_A: 토큰화 예금 X 잠금<br/>(상업은행 자금 레그)
+    participant CB_A as 상업은행 A
+    participant UL as 단일 원장
+    participant CBNK as 중앙은행
+    participant CB_B as 상업은행 B
+    CB_A->>UL: 지시 제출: 토큰화 예금 X 차변, 토큰화 예금 Y 대변, 조건 = 거액 CBDC 레그
+    UL->>UL: ISO 20022 봉투, 구조화 주소, LEI, 목적 코드, AML/제재 검증
+    UL->>CBNK: 거액 CBDC 예약 (지급인 측 중앙은행 준비금)
+    CBNK-->>UL: 예약 확인 (원자적 잠금)
+    UL->>CB_A: 토큰화 예금 X 잠금 (상업은행 자금 레그)
     CB_A-->>UL: 예금 잠금 확인
-    UL->>UL: 양 레그 잠금 완료 →<br/>원자적 결제 트리거
-    UL->>CBNK: 거액 CBDC 결제<br/>(지급인 준비금 → 수취인 준비금)
-    UL->>CB_B: 토큰화 예금 Y 발행<br/>(상업은행 자금 레그)
+    UL->>UL: 양 레그 잠금 완료 → 원자적 결제 트리거
+    UL->>CBNK: 거액 CBDC 결제 (지급인 준비금 → 수취인 준비금)
+    UL->>CB_B: 토큰화 예금 Y 발행 (상업은행 자금 레그)
     CBNK-->>UL: CBDC 결제 종결
     CB_B-->>UL: 예금 입금 완료
-    UL->>CB_A: PvP 결제 완료<br/>(양 레그 종결 또는 양 레그 롤백)
+    UL->>CB_A: PvP 결제 완료 (양 레그 종결 또는 양 레그 롤백)
     UL->>CB_B: PvP 결제 완료
 ```
 

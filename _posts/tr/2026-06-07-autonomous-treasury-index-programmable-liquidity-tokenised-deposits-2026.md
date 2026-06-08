@@ -155,19 +155,18 @@ Kontrol döngüsü Gözlemle → Tespit Et → Tahmin Et → Hazırla → Onay T
 sequenceDiagram
     autonumber
     participant Banks as Nakit Yönetim Bankaları
-    participant Agent as Hazine Ajanı<br/>(sınırlı, ilke kapılı)
-    participant Forecast as Tahmin Motoru<br/>(ML + senaryo kütüphanesi)
-    participant Treasurer as İnsan Hazinedar<br/>(MFA / donanım anahtarı)
-    participant Rails as Ödeme Rayları<br/>(RTGS / RTP / DLT)
-
+    participant Agent as Hazine Ajanı
+    participant Forecast as Tahmin Motoru
+    participant Treasurer as İnsan Hazinedar
+    participant Rails as Ödeme Rayları
     Banks->>Agent: camt.052 gün içi bakiye akışı
     Agent->>Agent: Gözlemle — gerçek zamanlı pozisyonu yenile
     Agent->>Agent: Tespit Et — X kuruluşu likidite tabanını aşıyor
     Agent->>Forecast: Gün sonu projeksiyonu talep et
     Forecast-->>Agent: Açık doğrulandı (USD 12.4m)
-    Agent->>Agent: Hazırla — pain.001 taslağı<br/>(repo / sweep) manda limitleri dahilinde
-    Agent->>Treasurer: Güvenli onay talebi gönder<br/>(hazırlanmış yük + kanıt)
-    Note over Treasurer: Donanım bağlı anahtar üzerinde<br/>kriptografik MFA
+    Agent->>Agent: Hazırla — pain.001 taslağı (repo / sweep) manda limitleri dahilinde
+    Agent->>Treasurer: Güvenli onay talebi gönder (hazırlanmış yük + kanıt)
+    Note over Treasurer: Donanım bağlı anahtar üzerinde kriptografik MFA
     Treasurer-->>Agent: İmzalı yetkilendirme
     Agent->>Rails: İmzalı pain.001 gönder
     Rails-->>Agent: pain.002 ACK + kesinlik

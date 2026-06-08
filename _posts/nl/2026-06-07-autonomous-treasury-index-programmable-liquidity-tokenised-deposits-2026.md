@@ -153,19 +153,18 @@ De controlelus loopt Observeren → Detecteren → Prognosticeren → Voorbereid
 sequenceDiagram
     autonumber
     participant Banks as Cash-Management-banken
-    participant Agent as Treasury-agent<br/>(begrensd, beleidsgestuurd)
-    participant Forecast as Prognosemotor<br/>(ML + scenariobibliotheek)
-    participant Treasurer as Menselijke treasurer<br/>(MFA / hardware-sleutel)
-    participant Rails as Betaalrails<br/>(RTGS / RTP / DLT)
-
+    participant Agent as Treasury-agent
+    participant Forecast as Prognosemotor
+    participant Treasurer as Menselijke treasurer
+    participant Rails as Betaalrails
     Banks->>Agent: camt.052 intraday-saldostroom
     Agent->>Agent: Observeren — realtime positie verversen
     Agent->>Agent: Detecteren — entiteit X doorbreekt liquiditeitsondergrens
     Agent->>Forecast: Verzoek EOD-projectie
     Forecast-->>Agent: Tekort bevestigd (USD 12.4m)
-    Agent->>Agent: Voorbereiden — pain.001 concipiëren<br/>(repo / sweep) binnen mandaatlimieten
-    Agent->>Treasurer: Beveiligd goedkeuringsverzoek pushen<br/>(voorbereide payload + bewijs)
-    Note over Treasurer: Cryptografische MFA<br/>op hardware-gebonden sleutel
+    Agent->>Agent: Voorbereiden — pain.001 concipiëren (repo / sweep) binnen mandaatlimieten
+    Agent->>Treasurer: Beveiligd goedkeuringsverzoek pushen (voorbereide payload + bewijs)
+    Note over Treasurer: Cryptografische MFA op hardware-gebonden sleutel
     Treasurer-->>Agent: Ondertekende autorisatie
     Agent->>Rails: Ondertekende pain.001 indienen
     Rails-->>Agent: pain.002 ACK + finaliteit

@@ -170,23 +170,22 @@ Project Agorá concreta esa combinación. La arquitectura siguiente es el patró
 ```mermaid
 sequenceDiagram
     autonumber
-    participant CB_A as Banco Comercial A<br/>(lado pagador)
-    participant UL as Libro Unificado<br/>(plano de coordinación BIS Agorá)
-    participant CBNK as Banco Central<br/>(emisor CBDC mayorista)
-    participant CB_B as Banco Comercial B<br/>(lado beneficiario)
-
-    CB_A->>UL: Enviar instrucción:<br/>adeudar depósito tokenizado X,<br/>abonar depósito tokenizado Y,<br/>condición = pierna CBDC mayorista
-    UL->>UL: Validar sobre ISO 20022,<br/>dirección estructurada, LEI,<br/>código de finalidad, AML/sanciones
-    UL->>CBNK: Reservar CBDC mayorista<br/>(reservas de banco central lado pagador)
-    CBNK-->>UL: Reserva confirmada<br/>(bloqueo atómico)
-    UL->>CB_A: Bloquear depósito tokenizado X<br/>(pierna de dinero de banco comercial)
+    participant CB_A as Banco Comercial A
+    participant UL as Libro Unificado
+    participant CBNK as Banco Central
+    participant CB_B as Banco Comercial B
+    CB_A->>UL: Enviar instrucción: adeudar depósito tokenizado X, abonar depósito tokenizado Y, condición = pierna CBDC mayorista
+    UL->>UL: Validar sobre ISO 20022, dirección estructurada, LEI, código de finalidad, AML/sanciones
+    UL->>CBNK: Reservar CBDC mayorista (reservas de banco central lado pagador)
+    CBNK-->>UL: Reserva confirmada (bloqueo atómico)
+    UL->>CB_A: Bloquear depósito tokenizado X (pierna de dinero de banco comercial)
     CB_A-->>UL: Bloqueo de depósito confirmado
-    UL->>UL: Ambas piernas bloqueadas →<br/>disparador de liquidación atómica
-    UL->>CBNK: Liquidar CBDC mayorista<br/>(reservas pagador → reservas beneficiario)
-    UL->>CB_B: Emitir depósito tokenizado Y<br/>(pierna de dinero de banco comercial)
+    UL->>UL: Ambas piernas bloqueadas → disparador de liquidación atómica
+    UL->>CBNK: Liquidar CBDC mayorista (reservas pagador → reservas beneficiario)
+    UL->>CB_B: Emitir depósito tokenizado Y (pierna de dinero de banco comercial)
     CBNK-->>UL: Liquidación CBDC finalizada
     CB_B-->>UL: Depósito abonado
-    UL->>CB_A: Liquidación PvP completada<br/>(ambas piernas finales o ambas revertidas)
+    UL->>CB_A: Liquidación PvP completada (ambas piernas finales o ambas revertidas)
     UL->>CB_B: Liquidación PvP completada
 ```
 

@@ -170,23 +170,22 @@ Project Agorá macht die Kombination konkret. Die Architektur unten ist das BIS-
 ```mermaid
 sequenceDiagram
     autonumber
-    participant CB_A as Geschäftsbank A<br/>(Zahlerseite)
-    participant UL as Einheitlicher Ledger<br/>(BIS-Agorá-Koordinationsplane)
-    participant CBNK as Zentralbank<br/>(Wholesale-CBDC-Emittentin)
-    participant CB_B as Geschäftsbank B<br/>(Zahlungsempfängerseite)
-
-    CB_A->>UL: Instruktion einreichen:<br/>tokenisierte Einlage X belasten,<br/>tokenisierte Einlage Y gutschreiben,<br/>Bedingung = Wholesale-CBDC-Leg
-    UL->>UL: ISO-20022-Envelope validieren,<br/>strukturierte Adresse, LEI,<br/>Verwendungszweck, AML/Sanktionen
-    UL->>CBNK: Wholesale-CBDC reservieren<br/>(Zentralbankreserven der Zahlerseite)
-    CBNK-->>UL: Reservierung bestätigt<br/>(atomarer Lock)
-    UL->>CB_A: Tokenisierte Einlage X sperren<br/>(Geschäftsbankgeld-Leg)
+    participant CB_A as Geschäftsbank A
+    participant UL as Einheitlicher Ledger
+    participant CBNK as Zentralbank
+    participant CB_B as Geschäftsbank B
+    CB_A->>UL: Instruktion einreichen: tokenisierte Einlage X belasten, tokenisierte Einlage Y gutschreiben, Bedingung = Wholesale-CBDC-Leg
+    UL->>UL: ISO-20022-Envelope validieren, strukturierte Adresse, LEI, Verwendungszweck, AML/Sanktionen
+    UL->>CBNK: Wholesale-CBDC reservieren (Zentralbankreserven der Zahlerseite)
+    CBNK-->>UL: Reservierung bestätigt (atomarer Lock)
+    UL->>CB_A: Tokenisierte Einlage X sperren (Geschäftsbankgeld-Leg)
     CB_A-->>UL: Einlagensperre bestätigt
-    UL->>UL: Beide Legs gesperrt →<br/>Auslöser für atomare Abwicklung
-    UL->>CBNK: Wholesale-CBDC abwickeln<br/>(Zahlerreserven → Empfängerreserven)
-    UL->>CB_B: Tokenisierte Einlage Y ausgeben<br/>(Geschäftsbankgeld-Leg)
+    UL->>UL: Beide Legs gesperrt → Auslöser für atomare Abwicklung
+    UL->>CBNK: Wholesale-CBDC abwickeln (Zahlerreserven → Empfängerreserven)
+    UL->>CB_B: Tokenisierte Einlage Y ausgeben (Geschäftsbankgeld-Leg)
     CBNK-->>UL: CBDC-Abwicklung finalisiert
     CB_B-->>UL: Einlage gutgeschrieben
-    UL->>CB_A: PvP-Abwicklung abgeschlossen<br/>(beide Legs final oder beide rollen zurück)
+    UL->>CB_A: PvP-Abwicklung abgeschlossen (beide Legs final oder beide rollen zurück)
     UL->>CB_B: PvP-Abwicklung abgeschlossen
 ```
 

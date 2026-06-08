@@ -153,19 +153,18 @@ site_software: "Static Site Generator, Rust"
 sequenceDiagram
     autonumber
     participant Banks as בנקי ניהול מזומנים
-    participant Agent as סוכן האוצר<br/>(תחום, מבוקר מדיניות)
-    participant Forecast as מנוע התחזית<br/>(ML + ספריית תרחישים)
-    participant Treasurer as גזבר אנושי<br/>(MFA / מפתח חומרה)
-    participant Rails as מסילות תשלום<br/>(RTGS / RTP / DLT)
-
+    participant Agent as סוכן האוצר
+    participant Forecast as מנוע התחזית
+    participant Treasurer as גזבר אנושי
+    participant Rails as מסילות תשלום
     Banks->>Agent: זרם יתרות תוך-יומיות camt.052
     Agent->>Agent: תצפית — רענון פוזיציה בזמן אמת
     Agent->>Agent: זיהוי — ישות X חוצה רצפת נזילות
     Agent->>Forecast: בקשת תחזית לסוף היום
     Forecast-->>Agent: גירעון אושר (USD 12.4m)
-    Agent->>Agent: הכנה — טיוטת pain.001<br/>(רפו / סוויפ) במסגרת מגבלות המנדט
-    Agent->>Treasurer: דחיפת בקשת אישור מאובטחת<br/>(מטען מוכן + ראיות)
-    Note over Treasurer: MFA קריפטוגרפי<br/>על מפתח קשור לחומרה
+    Agent->>Agent: הכנה — טיוטת pain.001 (רפו / סוויפ) במסגרת מגבלות המנדט
+    Agent->>Treasurer: דחיפת בקשת אישור מאובטחת (מטען מוכן + ראיות)
+    Note over Treasurer: MFA קריפטוגרפי על מפתח קשור לחומרה
     Treasurer-->>Agent: הרשאה חתומה
     Agent->>Rails: שליחת pain.001 חתום
     Rails-->>Agent: ACK של pain.002 + סופיות

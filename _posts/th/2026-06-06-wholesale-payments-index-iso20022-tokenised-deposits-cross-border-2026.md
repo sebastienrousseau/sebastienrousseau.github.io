@@ -170,23 +170,22 @@ Project Agorá ทำให้การรวมกันเป็นรูป�
 ```mermaid
 sequenceDiagram
     autonumber
-    participant CB_A as Commercial Bank A<br/>(payer side)
-    participant UL as Unified Ledger<br/>(BIS Agorá coordination plane)
-    participant CBNK as Central Bank<br/>(wholesale CBDC issuer)
-    participant CB_B as Commercial Bank B<br/>(payee side)
-
-    CB_A->>UL: Submit instruction:<br/>debit tokenised deposit X,<br/>credit tokenised deposit Y,<br/>condition = wholesale CBDC leg
-    UL->>UL: Validate ISO 20022 envelope,<br/>structured address, LEI,<br/>purpose code, AML/sanctions
-    UL->>CBNK: Reserve wholesale CBDC<br/>(payer-side central-bank reserves)
-    CBNK-->>UL: Reservation confirmed<br/>(atomic lock)
-    UL->>CB_A: Lock tokenised deposit X<br/>(commercial-bank money leg)
+    participant CB_A as Commercial Bank A
+    participant UL as Unified Ledger
+    participant CBNK as Central Bank
+    participant CB_B as Commercial Bank B
+    CB_A->>UL: Submit instruction: debit tokenised deposit X, credit tokenised deposit Y, condition = wholesale CBDC leg
+    UL->>UL: Validate ISO 20022 envelope, structured address, LEI, purpose code, AML/sanctions
+    UL->>CBNK: Reserve wholesale CBDC (payer-side central-bank reserves)
+    CBNK-->>UL: Reservation confirmed (atomic lock)
+    UL->>CB_A: Lock tokenised deposit X (commercial-bank money leg)
     CB_A-->>UL: Deposit lock confirmed
-    UL->>UL: Both legs locked →<br/>atomic settlement trigger
-    UL->>CBNK: Settle wholesale CBDC<br/>(payer reserves → payee reserves)
-    UL->>CB_B: Issue tokenised deposit Y<br/>(commercial-bank money leg)
+    UL->>UL: Both legs locked → atomic settlement trigger
+    UL->>CBNK: Settle wholesale CBDC (payer reserves → payee reserves)
+    UL->>CB_B: Issue tokenised deposit Y (commercial-bank money leg)
     CBNK-->>UL: CBDC settlement finalised
     CB_B-->>UL: Deposit credited
-    UL->>CB_A: PvP settlement complete<br/>(both legs final or both legs roll back)
+    UL->>CB_A: PvP settlement complete (both legs final or both legs roll back)
     UL->>CB_B: PvP settlement complete
 ```
 

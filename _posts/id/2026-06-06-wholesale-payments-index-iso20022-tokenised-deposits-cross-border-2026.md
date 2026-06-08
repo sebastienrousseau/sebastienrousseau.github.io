@@ -170,23 +170,22 @@ Project Agorá membuat kombinasinya konkret. Arsitektur di bawah ini adalah pola
 ```mermaid
 sequenceDiagram
     autonumber
-    participant CB_A as Bank Komersial A<br/>(sisi pembayar)
-    participant UL as Ledger Terpadu<br/>(bidang koordinasi BIS Agorá)
-    participant CBNK as Bank Sentral<br/>(penerbit wholesale CBDC)
-    participant CB_B as Bank Komersial B<br/>(sisi penerima)
-
-    CB_A->>UL: Kirim instruksi:<br/>debit simpanan tertokenisasi X,<br/>kredit simpanan tertokenisasi Y,<br/>kondisi = leg wholesale CBDC
-    UL->>UL: Validasi amplop ISO 20022,<br/>alamat terstruktur, LEI,<br/>kode tujuan, AML/sanksi
-    UL->>CBNK: Cadangkan wholesale CBDC<br/>(cadangan bank sentral sisi pembayar)
-    CBNK-->>UL: Reservasi dikonfirmasi<br/>(kunci atomik)
-    UL->>CB_A: Kunci simpanan tertokenisasi X<br/>(leg uang bank komersial)
+    participant CB_A as Bank Komersial A
+    participant UL as Ledger Terpadu
+    participant CBNK as Bank Sentral
+    participant CB_B as Bank Komersial B
+    CB_A->>UL: Kirim instruksi: debit simpanan tertokenisasi X, kredit simpanan tertokenisasi Y, kondisi = leg wholesale CBDC
+    UL->>UL: Validasi amplop ISO 20022, alamat terstruktur, LEI, kode tujuan, AML/sanksi
+    UL->>CBNK: Cadangkan wholesale CBDC (cadangan bank sentral sisi pembayar)
+    CBNK-->>UL: Reservasi dikonfirmasi (kunci atomik)
+    UL->>CB_A: Kunci simpanan tertokenisasi X (leg uang bank komersial)
     CB_A-->>UL: Kunci simpanan dikonfirmasi
-    UL->>UL: Kedua leg terkunci →<br/>pemicu setelmen atomik
-    UL->>CBNK: Settle wholesale CBDC<br/>(cadangan pembayar → cadangan penerima)
-    UL->>CB_B: Terbitkan simpanan tertokenisasi Y<br/>(leg uang bank komersial)
+    UL->>UL: Kedua leg terkunci → pemicu setelmen atomik
+    UL->>CBNK: Settle wholesale CBDC (cadangan pembayar → cadangan penerima)
+    UL->>CB_B: Terbitkan simpanan tertokenisasi Y (leg uang bank komersial)
     CBNK-->>UL: Setelmen CBDC final
     CB_B-->>UL: Simpanan dikreditkan
-    UL->>CB_A: Setelmen PvP selesai<br/>(kedua leg final atau kedua leg roll back)
+    UL->>CB_A: Setelmen PvP selesai (kedua leg final atau kedua leg roll back)
     UL->>CB_B: Setelmen PvP selesai
 ```
 

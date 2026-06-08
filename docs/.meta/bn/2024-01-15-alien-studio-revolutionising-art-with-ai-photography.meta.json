@@ -1,14 +1,14 @@
 {
-  "title": "Alien Studio: My Tech-to Art Journey in Photography",
-  "language": "bn-BD",
   "date": "Jan 15, 2024",
   "keywords": "ব্যক্তিগত প্রযুক্তি যাত্রা, Rust আবিষ্কার, AI অন্বেষণ, Quantum Computing, শিল্প ও ফটোগ্রাফির সংমিশ্রণ, Alien Studio, ডিজিটাল আর্ট তৈরি, শিল্পে প্রযুক্তি, উদ্ভাবনী ফটোগ্রাফি, শৈল্পিক পুনরাবিষ্কার",
-  "banner": "https://cloudcdn.pro/clients/alienstudio/v1/collections/radiance/radiance-08.webp",
-  "banner_alt": "সূর্যাস্তের অনুপ্রেরণা, একটি প্রশান্ত দৃষ্টি; নিস্তব্ধতায় সৌন্দর্য",
-  "word_count": 1104,
   "subtitle": "একটি প্রযুক্তিগত অডিসির সূচনা",
   "locale": "bn_BD",
   "description": "Alien Studio-র মাধ্যমে Rust, AI এবং Quantum Computing থেকে শিল্প ও ফটোগ্রাফিকে নতুনভাবে সংজ্ঞায়িত করার আমার ব্যক্তিগত যাত্রায় যোগ দিন।",
+  "banner_alt": "সূর্যাস্তের অনুপ্রেরণা, একটি প্রশান্ত দৃষ্টি; নিস্তব্ধতায় সৌন্দর্য",
+  "banner": "https://cloudcdn.pro/clients/alienstudio/v1/collections/radiance/radiance-08.webp",
+  "word_count": 1104,
+  "language": "bn-BD",
+  "title": "Alien Studio: My Tech-to Art Journey in Photography",
   "tags": "Technology, Art, Photography, Rust, AI, কোয়ান্টাম কম্পিউটিং, Personal Journey, Alien Studio, Digital Art, Innovation, ISO 20022, পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি",
   "reading_time": 5
 }

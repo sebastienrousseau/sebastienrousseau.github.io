@@ -153,19 +153,18 @@ Die Kontrollschleife läuft Beobachten → Erkennen → Prognostizieren → Vorb
 sequenceDiagram
     autonumber
     participant Banks as Cash-Management-Banken
-    participant Agent as Treasury-Agent<br/>(begrenzt, policy-gesteuert)
-    participant Forecast as Prognose-Engine<br/>(ML + Szenarienbibliothek)
-    participant Treasurer as Menschlicher Treasurer<br/>(MFA / Hardware-Schlüssel)
-    participant Rails as Zahlungs-Rails<br/>(RTGS / RTP / DLT)
-
+    participant Agent as Treasury-Agent
+    participant Forecast as Prognose-Engine
+    participant Treasurer as Menschlicher Treasurer
+    participant Rails as Zahlungs-Rails
     Banks->>Agent: camt.052 Intraday-Saldenstrom
     Agent->>Agent: Beobachten — Echtzeit-Position aktualisieren
     Agent->>Agent: Erkennen — Einheit X unterschreitet Liquiditätsuntergrenze
     Agent->>Forecast: Tagesend-Projektion anfordern
     Forecast-->>Agent: Unterdeckung bestätigt (USD 12.4m)
-    Agent->>Agent: Vorbereiten — pain.001 entwerfen<br/>(Repo / Sweep) innerhalb Mandatslimiten
-    Agent->>Treasurer: Sichere Freigabeanfrage senden<br/>(vorbereitete Nachricht + Nachweise)
-    Note over Treasurer: Kryptografische MFA<br/>auf hardware-gebundenem Schlüssel
+    Agent->>Agent: Vorbereiten — pain.001 entwerfen (Repo / Sweep) innerhalb Mandatslimiten
+    Agent->>Treasurer: Sichere Freigabeanfrage senden (vorbereitete Nachricht + Nachweise)
+    Note over Treasurer: Kryptografische MFA auf hardware-gebundenem Schlüssel
     Treasurer-->>Agent: Signierte Autorisierung
     Agent->>Rails: Signierte pain.001 einreichen
     Rails-->>Agent: pain.002 ACK + Finalität

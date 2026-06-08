@@ -170,23 +170,22 @@ Project Agorá はその組み合わせを具現化します。以下のアー�
 ```mermaid
 sequenceDiagram
     autonumber
-    participant CB_A as 商業銀行 A<br/>(支払側)
-    participant UL as 統合台帳<br/>(BIS Agorá 調整プレーン)
-    participant CBNK as 中央銀行<br/>(ホールセール CBDC 発行体)
-    participant CB_B as 商業銀行 B<br/>(受取側)
-
-    CB_A->>UL: 指示を送信:<br/>トークン化預金 X を引落し、<br/>トークン化預金 Y へ入金、<br/>条件 = ホールセール CBDC レッグ
-    UL->>UL: ISO 20022 エンベロープ、<br/>構造化住所、LEI、<br/>目的コード、AML/制裁を検証
-    UL->>CBNK: ホールセール CBDC を予約<br/>(支払側中央銀行準備金)
-    CBNK-->>UL: 予約確認<br/>(アトミック・ロック)
-    UL->>CB_A: トークン化預金 X をロック<br/>(商業銀行マネー・レッグ)
+    participant CB_A as 商業銀行 A
+    participant UL as 統合台帳
+    participant CBNK as 中央銀行
+    participant CB_B as 商業銀行 B
+    CB_A->>UL: 指示を送信: トークン化預金 X を引落し、 トークン化預金 Y へ入金、 条件 = ホールセール CBDC レッグ
+    UL->>UL: ISO 20022 エンベロープ、 構造化住所、LEI、 目的コード、AML/制裁を検証
+    UL->>CBNK: ホールセール CBDC を予約 (支払側中央銀行準備金)
+    CBNK-->>UL: 予約確認 (アトミック・ロック)
+    UL->>CB_A: トークン化預金 X をロック (商業銀行マネー・レッグ)
     CB_A-->>UL: 預金ロック確認
-    UL->>UL: 両レッグ・ロック →<br/>アトミック決済トリガー
-    UL->>CBNK: ホールセール CBDC を決済<br/>(支払側準備金 → 受取側準備金)
-    UL->>CB_B: トークン化預金 Y を発行<br/>(商業銀行マネー・レッグ)
+    UL->>UL: 両レッグ・ロック → アトミック決済トリガー
+    UL->>CBNK: ホールセール CBDC を決済 (支払側準備金 → 受取側準備金)
+    UL->>CB_B: トークン化預金 Y を発行 (商業銀行マネー・レッグ)
     CBNK-->>UL: CBDC 決済が最終化
     CB_B-->>UL: 預金が入金済み
-    UL->>CB_A: PvP 決済完了<br/>(両レッグが最終、または両レッグが巻き戻し)
+    UL->>CB_A: PvP 決済完了 (両レッグが最終、または両レッグが巻き戻し)
     UL->>CB_B: PvP 決済完了
 ```
 

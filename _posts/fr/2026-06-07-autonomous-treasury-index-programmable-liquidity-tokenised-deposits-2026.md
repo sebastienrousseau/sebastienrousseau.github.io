@@ -153,19 +153,18 @@ La boucle de contrôle s'exécute Observer → Détecter → Prévoir → Prépa
 sequenceDiagram
     autonumber
     participant Banks as Banques de cash management
-    participant Agent as Agent Trésorerie<br/>(borné, sous politique)
-    participant Forecast as Moteur de prévision<br/>(ML + bibliothèque de scénarios)
-    participant Treasurer as Trésorier humain<br/>(MFA / clé matérielle)
-    participant Rails as Rails de paiement<br/>(RTGS / RTP / DLT)
-
+    participant Agent as Agent Trésorerie
+    participant Forecast as Moteur de prévision
+    participant Treasurer as Trésorier humain
+    participant Rails as Rails de paiement
     Banks->>Agent: Flux de soldes intraday camt.052
     Agent->>Agent: Observer — rafraîchir la position en temps réel
     Agent->>Agent: Détecter — l'entité X franchit le seuil de liquidité
     Agent->>Forecast: Demander projection de fin de journée
     Forecast-->>Agent: Découvert confirmé (USD 12.4m)
-    Agent->>Agent: Préparer — rédiger pain.001<br/>(repo / sweep) dans les limites du mandat
-    Agent->>Treasurer: Envoyer la demande d'approbation sécurisée<br/>(charge utile préparée + preuves)
-    Note over Treasurer: MFA cryptographique<br/>sur clé matérielle
+    Agent->>Agent: Préparer — rédiger pain.001 (repo / sweep) dans les limites du mandat
+    Agent->>Treasurer: Envoyer la demande d'approbation sécurisée (charge utile préparée + preuves)
+    Note over Treasurer: MFA cryptographique sur clé matérielle
     Treasurer-->>Agent: Autorisation signée
     Agent->>Rails: Soumettre pain.001 signé
     Rails-->>Agent: ACK pain.002 + finalité

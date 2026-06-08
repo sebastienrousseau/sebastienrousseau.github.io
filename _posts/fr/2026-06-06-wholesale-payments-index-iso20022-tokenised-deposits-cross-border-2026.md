@@ -170,23 +170,22 @@ Le Project Agorá rend cette combinaison concrète. L'architecture ci-dessous es
 ```mermaid
 sequenceDiagram
     autonumber
-    participant CB_A as Banque commerciale A<br/>(côté payeur)
-    participant UL as Registre unifié<br/>(plan de coordination BIS Agorá)
-    participant CBNK as Banque centrale<br/>(émetteur de MNBC de gros)
-    participant CB_B as Banque commerciale B<br/>(côté bénéficiaire)
-
-    CB_A->>UL: Soumettre l'instruction :<br/>débiter dépôt tokenisé X,<br/>créditer dépôt tokenisé Y,<br/>condition = jambe en MNBC de gros
-    UL->>UL: Valider l'enveloppe ISO 20022,<br/>adresse structurée, LEI,<br/>code de motif, LCB-FT/sanctions
-    UL->>CBNK: Réserver la MNBC de gros<br/>(réserves de banque centrale côté payeur)
-    CBNK-->>UL: Réservation confirmée<br/>(verrou atomique)
-    UL->>CB_A: Verrouiller le dépôt tokenisé X<br/>(jambe en monnaie de banque commerciale)
+    participant CB_A as Banque commerciale A
+    participant UL as Registre unifié
+    participant CBNK as Banque centrale
+    participant CB_B as Banque commerciale B
+    CB_A->>UL: Soumettre l'instruction : débiter dépôt tokenisé X, créditer dépôt tokenisé Y, condition = jambe en MNBC de gros
+    UL->>UL: Valider l'enveloppe ISO 20022, adresse structurée, LEI, code de motif, LCB-FT/sanctions
+    UL->>CBNK: Réserver la MNBC de gros (réserves de banque centrale côté payeur)
+    CBNK-->>UL: Réservation confirmée (verrou atomique)
+    UL->>CB_A: Verrouiller le dépôt tokenisé X (jambe en monnaie de banque commerciale)
     CB_A-->>UL: Verrou du dépôt confirmé
-    UL->>UL: Deux jambes verrouillées →<br/>déclencheur de règlement atomique
-    UL->>CBNK: Régler la MNBC de gros<br/>(réserves payeur → réserves bénéficiaire)
-    UL->>CB_B: Émettre le dépôt tokenisé Y<br/>(jambe en monnaie de banque commerciale)
+    UL->>UL: Deux jambes verrouillées → déclencheur de règlement atomique
+    UL->>CBNK: Régler la MNBC de gros (réserves payeur → réserves bénéficiaire)
+    UL->>CB_B: Émettre le dépôt tokenisé Y (jambe en monnaie de banque commerciale)
     CBNK-->>UL: Règlement MNBC finalisé
     CB_B-->>UL: Dépôt crédité
-    UL->>CB_A: Règlement PvP terminé<br/>(les deux jambes définitives ou les deux annulées)
+    UL->>CB_A: Règlement PvP terminé (les deux jambes définitives ou les deux annulées)
     UL->>CB_B: Règlement PvP terminé
 ```
 
