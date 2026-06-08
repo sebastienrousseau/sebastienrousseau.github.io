@@ -1,14 +1,14 @@
 {
-  "locale": "yo_NG",
-  "date": "May 11, 2026",
-  "description": "Ọdún méjìlá lẹ́yìn, fíìmù Lucy Besson dà bí ìdánwò ọpọlọ nípa ìmọ̀ tí ń yí padà láti ara sí ẹ̀rọ — tí LLM àti qubits ti jẹ́rìísí ní ìdáké.",
-  "banner_alt": "Àwòrán àfọwọ́ya ti àwọn nẹ́tiwọ̀ọ̀kì neuron àti àwọn àrègún atọ́mù kuantọ́mù. Kọ̀ǹpútà dúdú tí ń dára sí i láti inú àwọn pàǹtírí tí a tún ṣètò",
-  "subtitle": "Ọdún méjìlá lẹ́yìn Lucy Luc Besson, àfọwọ́kọ àárín fíìmù náà nípa ìmọ̀ tí ń lọ láti ara sí ẹ̀rọ ni a ń jẹ́rìísí ní àìròtẹ́lẹ̀ látọwọ́ LLM, qubits atọ́mù aláìníkárùn, àti ẹ̀dà ọpọlọ pipe.",
-  "tags": "Lucy, Luc Besson, Scarlett Johansson, AI, quantum computing, neutral atoms, LLM, transhumanism, mind uploading, brain-computer interfaces, posthumanism, film philosophy, ISO 20022, ìsirò ìpamọ́ lẹ́yìn quantum",
-  "keywords": "fíìmù Lucy 2014, Luc Besson, gbígbe ìmọ̀, large language models, neutral atom qubits, whole-brain emulation, ìsọfúnni substrate, ìmọ̀ ọgbọ́n AI, ìṣirò kuantọ́mù, ìtọ́jú ìmọ̀",
   "language": "yo-NG",
+  "keywords": "fíìmù Lucy 2014, Luc Besson, gbígbe ìmọ̀, large language models, neutral atom qubits, whole-brain emulation, ìsọfúnni substrate, ìmọ̀ ọgbọ́n AI, ìṣirò kuantọ́mù, ìtọ́jú ìmọ̀",
+  "tags": "Lucy, Luc Besson, Scarlett Johansson, AI, quantum computing, neutral atoms, LLM, transhumanism, mind uploading, brain-computer interfaces, posthumanism, film philosophy, ISO 20022, ìsirò ìpamọ́ lẹ́yìn quantum",
+  "banner": "https://cloudcdn.pro/stocks/images/lucy-knowledge-transfer-banner.webp",
   "word_count": 2745,
   "reading_time": 13,
-  "banner": "https://cloudcdn.pro/stocks/images/lucy-knowledge-transfer-banner.webp",
-  "title": "Lucy's Flash Drive Revisited: AI, Quantum & Knowledge"
+  "title": "Lucy's Flash Drive Revisited: AI, Quantum & Knowledge",
+  "subtitle": "Ọdún méjìlá lẹ́yìn Lucy Luc Besson, àfọwọ́kọ àárín fíìmù náà nípa ìmọ̀ tí ń lọ láti ara sí ẹ̀rọ ni a ń jẹ́rìísí ní àìròtẹ́lẹ̀ látọwọ́ LLM, qubits atọ́mù aláìníkárùn, àti ẹ̀dà ọpọlọ pipe.",
+  "banner_alt": "Àwòrán àfọwọ́ya ti àwọn nẹ́tiwọ̀ọ̀kì neuron àti àwọn àrègún atọ́mù kuantọ́mù. Kọ̀ǹpútà dúdú tí ń dára sí i láti inú àwọn pàǹtírí tí a tún ṣètò",
+  "locale": "yo_NG",
+  "date": "May 11, 2026",
+  "description": "Ọdún méjìlá lẹ́yìn, fíìmù Lucy Besson dà bí ìdánwò ọpọlọ nípa ìmọ̀ tí ń yí padà láti ara sí ẹ̀rọ — tí LLM àti qubits ti jẹ́rìísí ní ìdáké."
 }

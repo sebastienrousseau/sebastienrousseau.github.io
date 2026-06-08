@@ -1,14 +1,14 @@
 {
-  "banner_alt": "تعزيز الاتصالات الآمنة في العصر الكمي مع KyberLib",
-  "banner": "https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg",
-  "date": "Nov 28, 2023",
   "tags": "KyberLib, Rust, CRYSTALS-Kyber, קריפטוגרפיה פוסט-קוונטית, lattice-based cryptography, key encapsulation mechanism, NIST, libsignal, cryptography, ISO 20022, מחשוב קוונטי, AI",
-  "description": "تطبيق تشفيري متين وآمن كمياً لخوارزمية CRYSTALS-Kyber، لحماية بياناتكم من التهديدات الكمية وهجمات تحليل الشفرات.",
-  "locale": "he_IL",
-  "language": "he-IL",
+  "banner": "https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg",
   "keywords": "KyberLib، Rust CRYSTALS-Kyber، التشفير ما بعد الكمي، التشفير القائم على الشبكيات، تبادل المفاتيح المقاوم للكم، NIST FIPS 203، Sebastien Rousseau، KEM، مصادقة المدفوعات، مكتبة PQC",
-  "title": "KyberLib: CRYSTALS-Kyber بلغة Rust لما بعد الكم",
-  "subtitle": "KyberLib، تطبيق Rust متين لـ CRYSTALS-Kyber للعصر الكمي.",
+  "description": "تطبيق تشفيري متين وآمن كمياً لخوارزمية CRYSTALS-Kyber، لحماية بياناتكم من التهديدات الكمية وهجمات تحليل الشفرات.",
   "word_count": 756,
-  "reading_time": 3
+  "language": "he-IL",
+  "subtitle": "KyberLib، تطبيق Rust متين لـ CRYSTALS-Kyber للعصر الكمي.",
+  "locale": "he_IL",
+  "date": "Nov 28, 2023",
+  "title": "KyberLib: CRYSTALS-Kyber بلغة Rust لما بعد الكم",
+  "reading_time": 3,
+  "banner_alt": "تعزيز الاتصالات الآمنة في العصر الكمي مع KyberLib"
 }

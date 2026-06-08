@@ -1,13 +1,13 @@
 {
-  "subtitle": "Інструмент нового покоління для клонування голосу з відкритим кодом",
   "reading_time": 2,
-  "keywords": "OpenVoice, Технологія клонування голосу, AI синтетичне мовлення, Клонування голосу з відкритим кодом, Міжмовний синтез голосу, Миттєве клонування голосу, Управління стилем голосу, Голосові технології для доступності, Голоси для індустрії розваг, AI голосовий асистент для обслуговування клієнтів",
-  "description": "OpenVoice from MIT, Tsinghua and MyShell: production-grade voice cloning with tone, accent and emotion control — and the trade-offs worth knowing.",
-  "title": "[UK DRAFT] OpenVoice: Leading Innovation in Voice Cloning Technology",
-  "banner_alt": "Банер з яскравим градієнтним накладенням на повторювані профілі",
-  "locale": "uk_UA",
   "language": "uk-UA",
+  "title": "[UK DRAFT] OpenVoice: Leading Innovation in Voice Cloning Technology",
+  "subtitle": "Інструмент нового покоління для клонування голосу з відкритим кодом",
+  "description": "OpenVoice from MIT, Tsinghua and MyShell: production-grade voice cloning with tone, accent and emotion control — and the trade-offs worth knowing.",
+  "word_count": 554,
+  "banner_alt": "Банер з яскравим градієнтним накладенням на повторювані профілі",
+  "keywords": "OpenVoice, Технологія клонування голосу, AI синтетичне мовлення, Клонування голосу з відкритим кодом, Міжмовний синтез голосу, Миттєве клонування голосу, Управління стилем голосу, Голосові технології для доступності, Голоси для індустрії розваг, AI голосовий асистент для обслуговування клієнтів",
   "date": "Apr 01, 2024",
   "banner": "https://cloudcdn.pro/stocks/images/open-voice.webp",
-  "word_count": 554
+  "locale": "uk_UA"
 }

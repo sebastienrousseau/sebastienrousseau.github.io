@@ -1,14 +1,14 @@
 {
-  "locale": "yo_NG",
   "word_count": 1070,
+  "language": "yo-NG",
+  "title": "Quantum-Safe Payments: Why the Industry Must Act Now",
+  "locale": "yo_NG",
+  "tags": "quantum-safe payments, ìsirò ìpamọ́ lẹ́yìn quantum, payments, EPAA, ISO 20022, SWIFT, SEPA, DORA, quantum computing, AI, ìsanwó kọjá-ààlà, stablecoins",
+  "reading_time": 5,
   "keywords": "ìsanwó quantum-safe, cryptography post-quantum, SEPA, SWIFT gpi, ISO 20022, ààbò àwọn iṣẹ́ ìnáwó, EPAA, harvest-now decrypt-later, agility cryptographic, Sebastien Rousseau",
   "description": "Ìṣirò kuatomu ń halẹ̀ mọ́ cryptography ti àwọn ètò ìsanwó. Ìwé funfun EPAA ṣàlàyé ewu ìgbékalẹ̀ àti ìjẹ̀pàtàkì ìjíkọ PQC.",
-  "date": "Sep 01, 2025",
   "banner": "https://cloudcdn.pro/stocks/images/digital-nodes.webp",
-  "title": "Quantum-Safe Payments: Why the Industry Must Act Now",
-  "tags": "quantum-safe payments, ìsirò ìpamọ́ lẹ́yìn quantum, payments, EPAA, ISO 20022, SWIFT, SEPA, DORA, quantum computing, AI, ìsanwó kọjá-ààlà, stablecoins",
-  "language": "yo-NG",
-  "reading_time": 5,
+  "date": "Sep 01, 2025",
   "subtitle": "Ìmúrasílẹ̀ fún ààbò kuatomu jẹ́ ìpinnu amayederun lọwọlọwọ. Kì í ṣe ti ọjọ iwaju.",
   "banner_alt": "Bọ́ọ̀dù ìyíká ìṣirò kuatomu nínú ìmọ́lẹ̀ búlúù"
 }

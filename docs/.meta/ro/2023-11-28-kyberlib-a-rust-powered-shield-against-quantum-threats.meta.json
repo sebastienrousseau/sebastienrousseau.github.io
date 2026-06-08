@@ -1,14 +1,14 @@
 {
-  "keywords": "KyberLib, Rust CRYSTALS-Kyber, criptografie post-cuantică, criptografie bazată pe rețele, schimb de chei rezistent la quantum, NIST FIPS 203, Sebastien Rousseau, KEM, autentificare plăți, PQC library",
-  "locale": "ro_RO",
-  "tags": "KyberLib, Rust, CRYSTALS-Kyber, criptografie post-cuantică, lattice-based cryptography, key encapsulation mechanism, NIST, libsignal, cryptography, ISO 20022, calcul cuantic, AI",
-  "reading_time": 5,
-  "subtitle": "KyberLib, o implementare Rust robustă a CRYSTALS-Kyber pentru era cuantică.",
+  "banner": "https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg",
   "description": "O implementare robustă și sigură față de amenințările cuantice a algoritmului CRYSTALS-Kyber, pentru a proteja datele dvs. de atacurile cuantice și criptanalitice.",
+  "locale": "ro_RO",
+  "keywords": "KyberLib, Rust CRYSTALS-Kyber, criptografie post-cuantică, criptografie bazată pe rețele, schimb de chei rezistent la quantum, NIST FIPS 203, Sebastien Rousseau, KEM, autentificare plăți, PQC library",
+  "subtitle": "KyberLib, o implementare Rust robustă a CRYSTALS-Kyber pentru era cuantică.",
   "banner_alt": "Consolidarea comunicațiilor securizate în era cuantică cu KyberLib",
-  "language": "ro-RO",
-  "date": "Nov 28, 2023",
-  "word_count": 1118,
+  "tags": "KyberLib, Rust, CRYSTALS-Kyber, criptografie post-cuantică, lattice-based cryptography, key encapsulation mechanism, NIST, libsignal, cryptography, ISO 20022, calcul cuantic, AI",
   "title": "KyberLib: Rust CRYSTALS-Kyber for Post-Quantum",
-  "banner": "https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg"
+  "language": "ro-RO",
+  "word_count": 1118,
+  "reading_time": 5,
+  "date": "Nov 28, 2023"
 }

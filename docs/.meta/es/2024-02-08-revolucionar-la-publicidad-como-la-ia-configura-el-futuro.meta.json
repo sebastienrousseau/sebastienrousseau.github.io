@@ -1,13 +1,13 @@
 {
-  "word_count": 1255,
+  "description": "Cómo la IA transforma la publicidad: perspectivas sobre Rufus de Amazon y los últimos desarrollos de Meta. Descubra el impacto en el compromiso del consumidor.",
   "banner": "https://cloudcdn.pro/stocks/images/advertising-ai.webp",
-  "date": "February 08, 2024",
-  "banner_alt": "Una mujer robot con mariposas y flores",
-  "keywords": "IA en la publicidad, Amazon Rufus, herramientas IA Meta, segmentación del consumidor, tecnología publicitaria, chatbots IA, tendencias de marketing digital, analítica IA, IA creativa, optimización de campañas",
-  "language": "es-ES",
-  "locale": "es_ES",
   "subtitle": "Cómo la IA transforma las interacciones con los consumidores y la dinámica publicitaria",
   "reading_time": 6,
-  "description": "Cómo la IA transforma la publicidad: perspectivas sobre Rufus de Amazon y los últimos desarrollos de Meta. Descubra el impacto en el compromiso del consumidor.",
-  "title": "IA generativa en la publicidad: Amazon Rufus y Meta"
+  "locale": "es_ES",
+  "language": "es-ES",
+  "banner_alt": "Una mujer robot con mariposas y flores",
+  "keywords": "IA en la publicidad, Amazon Rufus, herramientas IA Meta, segmentación del consumidor, tecnología publicitaria, chatbots IA, tendencias de marketing digital, analítica IA, IA creativa, optimización de campañas",
+  "date": "February 08, 2024",
+  "title": "IA generativa en la publicidad: Amazon Rufus y Meta",
+  "word_count": 1255
 }

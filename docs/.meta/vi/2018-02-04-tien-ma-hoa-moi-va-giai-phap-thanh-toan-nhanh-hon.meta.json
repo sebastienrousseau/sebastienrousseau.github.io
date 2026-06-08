@@ -1,13 +1,13 @@
 {
+  "word_count": 633,
+  "banner": "https://cloudcdn.pro/stocks/images/etc-banner.webp",
+  "banner_alt": "Một sơ đồ trừu tượng về một mạng thanh toán nhanh",
   "subtitle": "Tổng quan thiết kế của Express Transaction Credits (ETC)",
   "language": "vi-VN",
-  "banner": "https://cloudcdn.pro/stocks/images/etc-banner.webp",
-  "date": "February 4, 2018",
-  "keywords": "tiền mã hoá, thanh toán nhanh, Express Transaction Credits, ETC, blockchain, giao dịch tức thời, Layer 2",
-  "word_count": 633,
-  "reading_time": 3,
-  "locale": "vi_VN",
-  "banner_alt": "Một sơ đồ trừu tượng về một mạng thanh toán nhanh",
   "description": "Hé lộ Express Transaction Credits — một đồng tiền mã hoá mới được thiết kế để giải quyết các giới hạn tốc độ của Bitcoin và Ethereum.",
-  "title": "Hé lộ một đồng tiền mã hoá mới và giải pháp thanh toán nhanh hơn cho tương lai"
+  "keywords": "tiền mã hoá, thanh toán nhanh, Express Transaction Credits, ETC, blockchain, giao dịch tức thời, Layer 2",
+  "date": "February 4, 2018",
+  "reading_time": 3,
+  "title": "Hé lộ một đồng tiền mã hoá mới và giải pháp thanh toán nhanh hơn cho tương lai",
+  "locale": "vi_VN"
 }

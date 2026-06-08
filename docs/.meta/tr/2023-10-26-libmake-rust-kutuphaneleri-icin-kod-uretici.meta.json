@@ -1,13 +1,13 @@
 {
-  "date": "October 26, 2023",
-  "locale": "tr_TR",
   "banner_alt": "Rust kod editörü ekran görüntüsü",
-  "subtitle": "Sağlam Rust kütüphane şablonları için bir kod üretici",
-  "language": "tr-TR",
-  "description": "libmake, sağlam ve test edilmiş şablonlardan başlayarak Rust kütüphanelerinin oluşturulmasını otomatikleştirir.",
-  "word_count": 780,
-  "reading_time": 3,
-  "keywords": "Rust, libmake, kod üretici, açık kaynak, otomasyon, kütüphaneler",
+  "locale": "tr_TR",
   "title": "libmake: tekrarlayan görevleri azaltıp kaliteli Rust kütüphaneleri inşa eden kod üretici",
-  "banner": "https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp"
+  "language": "tr-TR",
+  "banner": "https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp",
+  "subtitle": "Sağlam Rust kütüphane şablonları için bir kod üretici",
+  "date": "October 26, 2023",
+  "description": "libmake, sağlam ve test edilmiş şablonlardan başlayarak Rust kütüphanelerinin oluşturulmasını otomatikleştirir.",
+  "keywords": "Rust, libmake, kod üretici, açık kaynak, otomasyon, kütüphaneler",
+  "reading_time": 3,
+  "word_count": 780
 }
