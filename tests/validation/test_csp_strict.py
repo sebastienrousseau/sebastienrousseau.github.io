@@ -87,8 +87,19 @@ def _has_bad_token(tokens: list[str], bad: str) -> bool:
     return any(t.strip("'\"") == bad for t in tokens)
 
 
-def check_policy(directives: dict[str, list[str]], rel: str) -> list[str]:
-    """Static-shape checks on the policy itself."""
+def check_policy(
+    directives: dict[str, list[str]],
+    rel: str,
+    *,
+    has_mermaid: bool = False,
+) -> list[str]:
+    """Static-shape checks on the policy itself.
+
+    `has_mermaid=True` exempts the page from the style-src 'unsafe-inline'
+    check. Mermaid v10 sets per-element fills/colors via element.style.X
+    at render time, which CSP would otherwise block. The Cloudflare Worker
+    CSP at the edge mirrors this allowance (workers/lang-router.js:79).
+    """
     defects: list[str] = []
     script = directives.get("script-src", [])
     if _has_bad_token(script, "unsafe-inline"):
@@ -96,7 +107,7 @@ def check_policy(directives: dict[str, list[str]], rel: str) -> list[str]:
     if _has_bad_token(script, "unsafe-eval"):
         defects.append(f"{rel}: script-src contains 'unsafe-eval'")
     style = directives.get("style-src", [])
-    if _has_bad_token(style, "unsafe-inline"):
+    if _has_bad_token(style, "unsafe-inline") and not has_mermaid:
         defects.append(f"{rel}: style-src contains 'unsafe-inline'")
     if _has_bad_token(style, "unsafe-eval"):
         defects.append(f"{rel}: style-src contains 'unsafe-eval'")
@@ -151,7 +162,8 @@ def main() -> int:
             problems.append(f"{rel}: no CSP <meta> tag found")
             continue
         directives = _parse_directives(policy)
-        problems.extend(check_policy(directives, rel))
+        has_mermaid = '<pre class="mermaid">' in html
+        problems.extend(check_policy(directives, rel, has_mermaid=has_mermaid))
         problems.extend(check_jsonld_hashes(policy, html, rel))
     if problems:
         print(f"csp-strict: {len(problems)} defect(s):", file=sys.stderr)
