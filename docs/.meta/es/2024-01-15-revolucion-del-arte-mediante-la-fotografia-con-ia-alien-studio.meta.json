@@ -1,13 +1,13 @@
 {
-  "date": "January 15, 2024",
   "locale": "es_ES",
-  "language": "es-ES",
-  "title": "Alien Studio: mi viaje de la tecnología al arte fotográfico",
-  "keywords": "recorrido tecnológico personal, descubrimiento Rust, exploración IA, computación cuántica, fusión arte y fotografía, Alien Studio, creación de arte digital, tecnología en el arte, fotografía innovadora, redescubrimiento artístico",
   "banner_alt": "Musa al atardecer, mirada serena; belleza en la inmovilidad",
-  "banner": "https://cloudcdn.pro/clients/alienstudio/v1/collections/radiance/radiance-08.webp",
-  "word_count": 928,
+  "title": "Alien Studio: mi viaje de la tecnología al arte fotográfico",
+  "date": "January 15, 2024",
+  "reading_time": 4,
   "description": "Acompáñeme en mi recorrido personal: de Rust, la IA y la computación cuántica hacia la redefinición del arte y la fotografía a través de Alien Studio.",
-  "subtitle": "Los inicios de una odisea tecnológica",
-  "reading_time": 4
+  "language": "es-ES",
+  "word_count": 928,
+  "banner": "https://cloudcdn.pro/clients/alienstudio/v1/collections/radiance/radiance-08.webp",
+  "keywords": "recorrido tecnológico personal, descubrimiento Rust, exploración IA, computación cuántica, fusión arte y fotografía, Alien Studio, creación de arte digital, tecnología en el arte, fotografía innovadora, redescubrimiento artístico",
+  "subtitle": "Los inicios de una odisea tecnológica"
 }

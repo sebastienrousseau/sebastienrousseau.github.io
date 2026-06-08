@@ -1,13 +1,13 @@
 {
+  "language": "tr-TR",
+  "locale": "tr_TR",
+  "title": "Kafes tabanlı kripto için kuantum algoritmasında hata",
   "reading_time": 4,
   "banner_alt": "Kriptografik hatanın soyut görselleştirmesi",
-  "language": "tr-TR",
   "date": "April 22, 2024",
-  "subtitle": "Yilei Chen'in algoritmasındaki hata kafes tabanlı kriptografiyi geçici olarak yeniden güvene alıyor",
-  "description": "Yilei Chen'in LWE'yi çözmek için kuantum algoritmasında bir hata keşfedildi; bu, kafes tabanlı kriptografiyi geçici olarak yeniden güvenceye alıyor.",
-  "keywords": "kuantum, kafes tabanlı, kriptografi, LWE, Yilei Chen, hata, post-kuantum",
-  "locale": "tr_TR",
   "banner": "https://cloudcdn.pro/stocks/images/digitale-nodes.webp",
+  "description": "Yilei Chen'in LWE'yi çözmek için kuantum algoritmasında bir hata keşfedildi; bu, kafes tabanlı kriptografiyi geçici olarak yeniden güvenceye alıyor.",
+  "subtitle": "Yilei Chen'in algoritmasındaki hata kafes tabanlı kriptografiyi geçici olarak yeniden güvene alıyor",
   "word_count": 900,
-  "title": "Kafes tabanlı kripto için kuantum algoritmasında hata"
+  "keywords": "kuantum, kafes tabanlı, kriptografi, LWE, Yilei Chen, hata, post-kuantum"
 }

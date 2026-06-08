@@ -1,14 +1,14 @@
 {
-  "subtitle": "HSH: o bibliotecă hash rezistentă la cuantică pentru era post-cuantică a autentificării.",
-  "locale": "ro_RO",
-  "title": "Protecting Data in the Quantum Age: The Hash Library (HSH)",
-  "banner": "https://cloudcdn.pro/stocks/images/galina-nelyubova-7ej8VWfwFsg.webp",
-  "description": "HSH utilizează primitive criptografice rezistente la cuantică pentru a vă proteja datele, garantând securitatea acestora chiar și în fața progreselor viitoare ale calculului cuantic.",
-  "language": "ro-RO",
-  "word_count": 1498,
   "reading_time": 7,
-  "keywords": "criptografie rezistentă la cuantică, criptografie post-cuantică, bibliotecă hash, HSH, hashing parole, derivare cheie, Argon2i, Bcrypt, Scrypt, calcul cuantic",
-  "date": "Oct 16, 2023",
+  "description": "HSH utilizează primitive criptografice rezistente la cuantică pentru a vă proteja datele, garantând securitatea acestora chiar și în fața progreselor viitoare ale calculului cuantic.",
   "banner_alt": "O ilustrație creativă pe tema calculului cuantic",
-  "tags": "criptografie post-cuantică, hash library, HSH, password hashing, key derivation, Argon2i, Bcrypt, Scrypt, calcul cuantic, ISO 20022, AI, Rust, open source"
+  "title": "Protecting Data in the Quantum Age: The Hash Library (HSH)",
+  "locale": "ro_RO",
+  "keywords": "criptografie rezistentă la cuantică, criptografie post-cuantică, bibliotecă hash, HSH, hashing parole, derivare cheie, Argon2i, Bcrypt, Scrypt, calcul cuantic",
+  "subtitle": "HSH: o bibliotecă hash rezistentă la cuantică pentru era post-cuantică a autentificării.",
+  "language": "ro-RO",
+  "banner": "https://cloudcdn.pro/stocks/images/galina-nelyubova-7ej8VWfwFsg.webp",
+  "date": "Oct 16, 2023",
+  "tags": "criptografie post-cuantică, hash library, HSH, password hashing, key derivation, Argon2i, Bcrypt, Scrypt, calcul cuantic, ISO 20022, AI, Rust, open source",
+  "word_count": 1498
 }

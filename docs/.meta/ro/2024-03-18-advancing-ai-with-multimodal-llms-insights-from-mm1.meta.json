@@ -1,14 +1,14 @@
 {
-  "banner": "https://cloudcdn.pro/stocks/images/mm1-visual.webp",
-  "description": "Explorați lucrarea MM1 a Apple despre Modelele Lingvistice Mari Multimodale (MLLM). Descoperiți arhitectura, strategiile de pre-antrenare și potențialul AI.",
-  "subtitle": "Dezvăluind Viitorul AI: Cum Studiul Revoluționar MM1 al Apple Transformă Învățarea Multimodală",
+  "locale": "ro_RO",
   "date": "Mar 17, 2024",
-  "banner_alt": "Banner pentru Apple MM1",
   "tags": "Multimodal, LLM, AI, MM1, Pre-training, Image Recognition, NLP, Future, Learning, Research, ISO 20022, criptografie post-cuantică, calcul cuantic",
-  "language": "ro-RO",
-  "keywords": "LLM-uri multimodale, studiu MM1, progrese AI, strategii de pre-antrenare, recunoaștere imagini, procesarea limbajului natural, aplicații AI, viitorul AI, învățare multimodală, cercetare AI",
   "title": "Advancing AI with Multimodal LLMs: Insights from MM1",
-  "word_count": 1662,
+  "keywords": "LLM-uri multimodale, studiu MM1, progrese AI, strategii de pre-antrenare, recunoaștere imagini, procesarea limbajului natural, aplicații AI, viitorul AI, învățare multimodală, cercetare AI",
+  "subtitle": "Dezvăluind Viitorul AI: Cum Studiul Revoluționar MM1 al Apple Transformă Învățarea Multimodală",
+  "language": "ro-RO",
   "reading_time": 8,
-  "locale": "ro_RO"
+  "banner": "https://cloudcdn.pro/stocks/images/mm1-visual.webp",
+  "word_count": 1662,
+  "description": "Explorați lucrarea MM1 a Apple despre Modelele Lingvistice Mari Multimodale (MLLM). Descoperiți arhitectura, strategiile de pre-antrenare și potențialul AI.",
+  "banner_alt": "Banner pentru Apple MM1"
 }

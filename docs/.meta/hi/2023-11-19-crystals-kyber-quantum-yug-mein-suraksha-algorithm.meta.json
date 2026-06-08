@@ -1,13 +1,13 @@
 {
+  "word_count": 2552,
+  "locale": "hi_IN",
+  "date": "November 19, 2023",
   "language": "hi-IN",
-  "title": "CRYSTALS-Kyber: क्वांटम-युग का सुरक्षा-कवच अल्गोरिदम",
+  "description": "CRYSTALS-Kyber: NIST द्वारा मानकीकरण के लिए चयनित लैटिस-आधारित पोस्ट-क्वांटम कुंजी-समायोजन-तंत्र।",
   "keywords": "CRYSTALS-Kyber, post-quantum, NIST, lattice, KEM, क्रिप्टोग्राफी, सुरक्षा, क्वांटम कंप्यूटर, MLWE, FIPS",
   "banner_alt": "क्वांटम कंप्यूटर की डिजिटल कल्पना",
-  "word_count": 2552,
   "reading_time": 12,
-  "description": "CRYSTALS-Kyber: NIST द्वारा मानकीकरण के लिए चयनित लैटिस-आधारित पोस्ट-क्वांटम कुंजी-समायोजन-तंत्र।",
   "banner": "https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA.webp",
-  "date": "November 19, 2023",
-  "locale": "hi_IN",
-  "subtitle": "लैटिस-आधारित KEM जिसे NIST ने पोस्ट-क्वांटम मानकीकरण हेतु चुना"
+  "subtitle": "लैटिस-आधारित KEM जिसे NIST ने पोस्ट-क्वांटम मानकीकरण हेतु चुना",
+  "title": "CRYSTALS-Kyber: क्वांटम-युग का सुरक्षा-कवच अल्गोरिदम"
 }

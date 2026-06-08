@@ -1,14 +1,14 @@
 {
-  "word_count": 3453,
-  "banner_alt": "Kallon Drone na Birnin London",
-  "date": "Jan 08, 2024",
-  "description": "Abubuwan da suka fi muhimmanci na AI na 2024: generative AI a harkar kuɗi, ƙirar multimodal, LLMs na na'ura, da sauye-sauyen da za su sake fasalin banki da injiniyancin kayayyaki.",
-  "subtitle": "Shekara Mai Muhimmanci ga Fasaha, Al'umma, da Juyin ɗabi'a",
-  "reading_time": 17,
-  "tags": "AI, 2024, Trends, generative AI, cybersecurity, Education, Retail, Ethics, Analytics, Innovation, ISO 20022, post-quantum cryptography, quantum computing, open source, Rust",
   "banner": "https://cloudcdn.pro/stocks/images/drone-view-of-london.webp",
+  "tags": "AI, 2024, Trends, generative AI, cybersecurity, Education, Retail, Ethics, Analytics, Innovation, ISO 20022, post-quantum cryptography, quantum computing, open source, Rust",
+  "description": "Abubuwan da suka fi muhimmanci na AI na 2024: generative AI a harkar kuɗi, ƙirar multimodal, LLMs na na'ura, da sauye-sauyen da za su sake fasalin banki da injiniyancin kayayyaki.",
+  "date": "Jan 08, 2024",
+  "subtitle": "Shekara Mai Muhimmanci ga Fasaha, Al'umma, da Juyin ɗabi'a",
+  "banner_alt": "Kallon Drone na Birnin London",
+  "language": "ha-NG",
+  "word_count": 3453,
   "keywords": "AI trends 2024, generative AI, AI a ilimi, AI cybersecurity, AI a harkar kuɗi, AI ƙirƙirar abun ciki, AI binciken sarari, ethical AI, AI a ciniki, AI analytics",
-  "locale": "ha_NG",
   "title": "AI Trends 2024: Insights and Predictions for the Future",
-  "language": "ha-NG"
+  "reading_time": 17,
+  "locale": "ha_NG"
 }

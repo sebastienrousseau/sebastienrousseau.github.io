@@ -1,13 +1,13 @@
 {
-  "description": "Pain001 automatizza la creazione di file di pagamento ISO 20022 pain.001 da CSV o SQLite. Pensata per la migrazione globale da MT/MX verso messaggi strutturati su SWIFT, SEPA e i principali schemi.",
-  "subtitle": "Una libreria Python open source per generare messaggi pain.001 da CSV o SQLite",
-  "language": "it-IT",
-  "reading_time": 4,
-  "keywords": "ISO 20022, pain.001, pagamenti, SWIFT, SEPA, Python, automazione, open source",
   "banner_alt": "Laptop spento su un tavolo di legno marrone",
   "date": "September 29, 2023",
-  "banner": "https://cloudcdn.pro/stocks/images/andrea-di-santis-T3Qen8vVgRc.webp",
   "word_count": 890,
+  "banner": "https://cloudcdn.pro/stocks/images/andrea-di-santis-T3Qen8vVgRc.webp",
+  "reading_time": 4,
+  "language": "it-IT",
   "locale": "it_IT",
-  "title": "Automatizzare la creazione di file di pagamento conformi a ISO 20022 con Pain001"
+  "subtitle": "Una libreria Python open source per generare messaggi pain.001 da CSV o SQLite",
+  "keywords": "ISO 20022, pain.001, pagamenti, SWIFT, SEPA, Python, automazione, open source",
+  "title": "Automatizzare la creazione di file di pagamento conformi a ISO 20022 con Pain001",
+  "description": "Pain001 automatizza la creazione di file di pagamento ISO 20022 pain.001 da CSV o SQLite. Pensata per la migrazione globale da MT/MX verso messaggi strutturati su SWIFT, SEPA e i principali schemi."
 }

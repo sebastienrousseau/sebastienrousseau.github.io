@@ -1,14 +1,14 @@
 {
-  "reading_time": 11,
-  "tags": "FHE, Banking, calcul cuantic, Data Security, Encryption, Financial Technology, Regulatory Compliance, Computational Overhead, Research, Data Privacy, ISO 20022, criptografie post-cuantică, AI",
-  "banner": "https://cloudcdn.pro/stocks/images/fully-homomorphic-encryption.webp",
-  "language": "ro-RO",
-  "subtitle": "Consolidați Securitatea Datelor, Îmbunătățiți Confidențialitatea AI și Construiți Încrederea Clienților în Era Quantum Computing cu FHE",
-  "date": "Mar 25, 2024",
   "banner_alt": "Banner pentru Fully Homomorphic Encryption",
   "description": "Explorați cum Fully Homomorphic Encryption revoluționează securitatea datelor în sectorul bancar, protejând confidențialitatea față de amenințările informaticii cuantice.",
+  "language": "ro-RO",
+  "word_count": 2274,
+  "subtitle": "Consolidați Securitatea Datelor, Îmbunătățiți Confidențialitatea AI și Construiți Încrederea Clienților în Era Quantum Computing cu FHE",
+  "banner": "https://cloudcdn.pro/stocks/images/fully-homomorphic-encryption.webp",
   "keywords": "Fully Homomorphic Encryption, securitate bancară, quantum computing, criptare date financiare, studii de caz FHE, cadre de reglementare FHE, suprasarcină computațională FHE, cercetare FHE, hardware FHE, legi confidențialitate date",
-  "title": "Fully Homomorphic Encryption (FHE) in a Banking Quantum Era",
   "locale": "ro_RO",
-  "word_count": 2274
+  "date": "Mar 25, 2024",
+  "reading_time": 11,
+  "tags": "FHE, Banking, calcul cuantic, Data Security, Encryption, Financial Technology, Regulatory Compliance, Computational Overhead, Research, Data Privacy, ISO 20022, criptografie post-cuantică, AI",
+  "title": "Fully Homomorphic Encryption (FHE) in a Banking Quantum Era"
 }

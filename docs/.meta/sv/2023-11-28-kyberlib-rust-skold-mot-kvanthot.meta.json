@@ -1,13 +1,13 @@
 {
-  "banner_alt": "Reforzar la comunicación segura en la era cuántica con KyberLib",
-  "keywords": "KyberLib, Rust CRYSTALS-Kyber, criptografía postcuántica, criptografía sobre retículos, intercambio de claves resistente a lo cuántico, NIST FIPS 203, Sebastien Rousseau, KEM, autenticación de pagos, biblioteca PQC",
-  "reading_time": 4,
-  "locale": "sv_SE",
-  "banner": "https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg",
   "title": "KyberLib: CRYSTALS-Kyber en Rust para el postcuántico",
-  "word_count": 976,
-  "description": "Implementación criptográfica robusta y resistente a lo cuántico del algoritmo CRYSTALS-Kyber, para proteger sus datos de las amenazas cuánticas y ataques criptoanalíticos.",
   "language": "sv-SE",
+  "description": "Implementación criptográfica robusta y resistente a lo cuántico del algoritmo CRYSTALS-Kyber, para proteger sus datos de las amenazas cuánticas y ataques criptoanalíticos.",
+  "banner_alt": "Reforzar la comunicación segura en la era cuántica con KyberLib",
   "subtitle": "KyberLib, una implementación Rust robusta de CRYSTALS-Kyber para la era cuántica",
-  "date": "November 28, 2023"
+  "locale": "sv_SE",
+  "reading_time": 4,
+  "keywords": "KyberLib, Rust CRYSTALS-Kyber, criptografía postcuántica, criptografía sobre retículos, intercambio de claves resistente a lo cuántico, NIST FIPS 203, Sebastien Rousseau, KEM, autenticación de pagos, biblioteca PQC",
+  "date": "November 28, 2023",
+  "word_count": 976,
+  "banner": "https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg"
 }

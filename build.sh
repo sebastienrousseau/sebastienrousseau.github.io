@@ -31,10 +31,20 @@ SERVE=0
 #     from the top-6 most recent dated EN posts.
 #
 # Both are idempotent: a no-op rebuild leaves the working tree clean.
-python3 scripts/postbuild/regen_slug_maps.py
-python3 scripts/postbuild/regen_homepage.py
+# Create a temporary copy of the content directory to build from
+rm -rf _posts_build
+cp -R _posts _posts_build
 
-ssg -n=docs -c=_posts -t=_layouts -o=public
+# Run homepage rotation and post-enrichment on the temporary directory
+python3 scripts/postbuild/regen_slug_maps.py
+python3 scripts/postbuild/regen_homepage.py --dir _posts_build
+python3 scripts/postbuild/post_enrich.py --dir _posts_build
+
+# Compile the site from the temporary directory instead of _posts
+ssg -n=docs -c=_posts_build -t=_layouts -o=public
+
+# Clean up the temporary directory
+rm -rf _posts_build
 
 # Static Site Generator doesn't pick up theme-init.js as a managed asset; we ship it as-is.
 cp -f _layouts/theme-init.js public/theme-init.js

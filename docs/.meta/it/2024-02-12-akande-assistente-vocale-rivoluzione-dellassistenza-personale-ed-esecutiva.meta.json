@@ -1,13 +1,13 @@
 {
   "word_count": 1481,
-  "language": "it-IT",
-  "title": "Akande: l'assistente vocale che rivoluziona l'assistenza personale ed esecutiva",
   "date": "February 12, 2024",
-  "description": "Akande è un assistente vocale avanzato che utilizza GPT di OpenAI per interazioni naturali, sintesi di PDF e caching efficiente. Pensato sia per uso personale sia esecutivo.",
   "locale": "it_IT",
-  "subtitle": "Un assistente vocale avanzato basato su GPT per interazioni naturali e sintesi di documenti",
+  "language": "it-IT",
+  "description": "Akande è un assistente vocale avanzato che utilizza GPT di OpenAI per interazioni naturali, sintesi di PDF e caching efficiente. Pensato sia per uso personale sia esecutivo.",
+  "banner_alt": "Akande, assistente vocale",
+  "title": "Akande: l'assistente vocale che rivoluziona l'assistenza personale ed esecutiva",
   "banner": "https://cloudcdn.pro/stocks/images/akande-voice-assistant.webp",
   "reading_time": 7,
-  "banner_alt": "Akande, assistente vocale",
-  "keywords": "Akande, assistente vocale, GPT, OpenAI, sintesi PDF, assistenza esecutiva"
+  "keywords": "Akande, assistente vocale, GPT, OpenAI, sintesi PDF, assistenza esecutiva",
+  "subtitle": "Un assistente vocale avanzato basato su GPT per interazioni naturali e sintesi di documenti"
 }

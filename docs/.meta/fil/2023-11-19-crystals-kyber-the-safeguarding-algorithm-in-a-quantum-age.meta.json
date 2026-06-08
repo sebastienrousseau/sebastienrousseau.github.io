@@ -1,14 +1,14 @@
 {
-  "word_count": 1780,
-  "banner_alt": "حاسوب كمي حديث وأنيق",
-  "locale": "fil_PH",
-  "tags": "quantum, CRYSTALS-Kyber, encryption, cybersecurity, banking, finance, data, future, post-quantum cryptography, cryptography, ISO 20022, DORA, quantum computing, AI, Rust",
-  "language": "fil-PH",
-  "keywords": "الحوسبة الكمية، التشفير المقاوم للكم، CRYSTALS-Kyber، التشفير، الأمن، المصرفية، المالية، الحماية، حماية البيانات، الاستدامة",
-  "description": "اكتشفوا كيف تُحدِث CRYSTALS-Kyber، خوارزمية تشفير مقاومة للحوسبة الكمية، ثورةً في عالم التشفير وتُهيّئنا للعصر الكمي.",
   "title": "CRYSTALS-Kyber: خوارزمية الحماية في العصر الكمي",
-  "date": "Nov 19, 2023",
+  "tags": "quantum, CRYSTALS-Kyber, encryption, cybersecurity, banking, finance, data, future, post-quantum cryptography, cryptography, ISO 20022, DORA, quantum computing, AI, Rust",
+  "description": "اكتشفوا كيف تُحدِث CRYSTALS-Kyber، خوارزمية تشفير مقاومة للحوسبة الكمية، ثورةً في عالم التشفير وتُهيّئنا للعصر الكمي.",
   "banner": "https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA.webp",
+  "keywords": "الحوسبة الكمية، التشفير المقاوم للكم، CRYSTALS-Kyber، التشفير، الأمن، المصرفية، المالية، الحماية، حماية البيانات، الاستدامة",
+  "date": "Nov 19, 2023",
+  "word_count": 1780,
   "reading_time": 8,
-  "subtitle": "CRYSTALS-Kyber، معيار NIST FIPS 203 لتغليف المفاتيح ما بعد الكمي."
+  "subtitle": "CRYSTALS-Kyber، معيار NIST FIPS 203 لتغليف المفاتيح ما بعد الكمي.",
+  "banner_alt": "حاسوب كمي حديث وأنيق",
+  "language": "fil-PH",
+  "locale": "fil_PH"
 }

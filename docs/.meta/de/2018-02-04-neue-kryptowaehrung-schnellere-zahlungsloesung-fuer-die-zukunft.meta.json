@@ -1,13 +1,13 @@
 {
-  "locale": "de_DE",
-  "subtitle": "EXTC Network: eine Vision für sofortige Zahlungen auf der Blockchain",
-  "reading_time": 3,
-  "description": "Ein bedeutendes Kapitel in der Entwicklung der globalen Finanzlandschaft, geprägt von technologischer Innovation, geopolitischen Verschiebungen und nachhaltiger Finanzwirtschaft.",
-  "banner_alt": "Ausgeschalteter Laptop auf einem braunen Holztisch",
   "date": "February 4, 2018",
-  "language": "de",
+  "description": "Ein bedeutendes Kapitel in der Entwicklung der globalen Finanzlandschaft, geprägt von technologischer Innovation, geopolitischen Verschiebungen und nachhaltiger Finanzwirtschaft.",
   "keywords": "EXTC Network, Kryptowährung, schnellere Zahlungen, Ethereum, EIP20, Smart Contracts, Blockchain, grenzüberschreitende Zahlungen, finanzielle Inklusion",
-  "title": "Eine neue Kryptowährung und eine schnellere Zahlungslösung für die Zukunft",
+  "language": "de",
   "banner": "https://cloudcdn.pro/stocks/images/laureen-missaire-DBbuhMbAIsQ.webp",
-  "word_count": 672
+  "reading_time": 3,
+  "subtitle": "EXTC Network: eine Vision für sofortige Zahlungen auf der Blockchain",
+  "word_count": 672,
+  "locale": "de_DE",
+  "title": "Eine neue Kryptowährung und eine schnellere Zahlungslösung für die Zukunft",
+  "banner_alt": "Ausgeschalteter Laptop auf einem braunen Holztisch"
 }

@@ -1,14 +1,14 @@
 {
-  "language": "he-IL",
-  "subtitle": "الخوارزمية الكمومية التالية في الزمن المتعدّد الحدود ضدّ التشفير القائم على الشبكات",
-  "date": "Apr 01, 2024",
   "banner": "https://cloudcdn.pro/stocks/images/digital-constellation.webp",
-  "description": "خوارزمية كمومية جديدة في الزمن المتعدّد الحدود من Yilei Chen تستهدف التشفير القائم على الشبكات. تبعات على المعايير ما بعد الكمومية بما في ذلك CRYSTALS-Kyber.",
-  "title": "خوارزمية كمومية تتحدّى التشفير القائم على الشبكات",
+  "word_count": 1111,
+  "language": "he-IL",
   "locale": "he_IL",
-  "tags": "quantum algorithms, cryptography, lattice problems, LWE, קריפטוגרפיה פוסט-קוונטית, cybersecurity, research, innovation, future-proofing, ISO 20022, מחשוב קוונטי, AI",
-  "reading_time": 5,
+  "date": "Apr 01, 2024",
   "banner_alt": "لافتة تُمثّل عُقَد شبكة في فضاء رقمي أزرق",
   "keywords": "الحوسبة الكمومية, الخوارزمية الكمومية, التشفير القائم على الشبكات, LWE, التشفير, التشفير ما بعد الكمومي, الأمن السيبراني, Yilei Chen, أبحاث التشفير, التهديدات الأمنية",
-  "word_count": 1111
+  "description": "خوارزمية كمومية جديدة في الزمن المتعدّد الحدود من Yilei Chen تستهدف التشفير القائم على الشبكات. تبعات على المعايير ما بعد الكمومية بما في ذلك CRYSTALS-Kyber.",
+  "subtitle": "الخوارزمية الكمومية التالية في الزمن المتعدّد الحدود ضدّ التشفير القائم على الشبكات",
+  "title": "خوارزمية كمومية تتحدّى التشفير القائم على الشبكات",
+  "tags": "quantum algorithms, cryptography, lattice problems, LWE, קריפטוגרפיה פוסט-קוונטית, cybersecurity, research, innovation, future-proofing, ISO 20022, מחשוב קוונטי, AI",
+  "reading_time": 5
 }

@@ -1,13 +1,13 @@
 {
-  "banner_alt": "Turned off laptop computer on top of brown wooden table",
+  "description": "Building a Cryptocurrency on the Ethereum Blockchain: A Comprehensive Guide to Blockchain Development, Tokenization and Cryptocurrency Implementation",
+  "keywords": "pain001, iso 20022, payment automation, cost reduction, payment processing, payment files, payment initiation, pain message, pain message standards, pain message validation",
   "language": "id-ID",
-  "title": "[ID DRAFT] Understanding the Technology behind Blockchain",
-  "word_count": 298,
   "locale": "id_ID",
+  "title": "[ID DRAFT] Understanding the Technology behind Blockchain",
+  "date": "Jan 09, 2018",
   "banner": "https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp",
   "reading_time": 1,
-  "description": "Building a Cryptocurrency on the Ethereum Blockchain: A Comprehensive Guide to Blockchain Development, Tokenization and Cryptocurrency Implementation",
-  "date": "Jan 09, 2018",
-  "keywords": "pain001, iso 20022, payment automation, cost reduction, payment processing, payment files, payment initiation, pain message, pain message standards, pain message validation",
-  "subtitle": "A practical walk-through of the cryptography and consensus behind blockchain."
+  "word_count": 298,
+  "subtitle": "A practical walk-through of the cryptography and consensus behind blockchain.",
+  "banner_alt": "Turned off laptop computer on top of brown wooden table"
 }

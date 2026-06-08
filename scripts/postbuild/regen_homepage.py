@@ -260,8 +260,18 @@ def _collect_top_six() -> list[tuple[str, int, int, int, dict[str, str]]]:
 
 
 def main() -> int:
+    import argparse
+    parser = argparse.ArgumentParser(description="Regenerate homepage newsroom grid.")
+    parser.add_argument("--dir", default=None, help="Custom posts directory")
+    args = parser.parse_args()
+
+    global POSTS, INDEX
+    if args.dir:
+        POSTS = Path(args.dir)
+        INDEX = POSTS / "index.md"
+
     if not INDEX.exists():
-        print("regen_homepage: _posts/index.md not found; nothing to do.")
+        print(f"regen_homepage: {INDEX} not found; nothing to do.")
         return 0
     cards = _collect_top_six()
     if not cards:
@@ -271,7 +281,7 @@ def main() -> int:
     text = INDEX.read_text(encoding="utf-8")
     if not _GRID_RE.search(text):
         print(
-            "regen_homepage: newsroom-grid block not found in _posts/index.md; "
+            f"regen_homepage: newsroom-grid block not found in {INDEX}; "
             "nothing replaced. (Layout markup may have changed.)",
             file=sys.stderr,
         )
@@ -292,3 +302,4 @@ def main() -> int:
 
 if __name__ == "__main__":
     sys.exit(main())
+

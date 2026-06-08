@@ -1,13 +1,13 @@
 {
-  "language": "zh-Hans",
-  "keywords": "CRYSTALS-Kyber, 后量子密码学, KEM, LWE, 格密码学, NIST, Kyber512, Kyber768, Kyber1024, 银行业",
-  "subtitle": "了解抗量子密码算法 CRYSTALS-Kyber 如何革新密码学并让我们为量子时代做好准备",
-  "banner": "https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA.webp",
-  "banner_alt": "AI、人工智能概念、3D 渲染、概念图像",
-  "title": "CRYSTALS-Kyber：量子时代的守护算法",
-  "date": "November 19, 2023",
-  "word_count": 301,
-  "locale": "zh_CN",
   "description": "CRYSTALS-Kyber 是基于格的抗量子密钥封装机制（KEM），是 NIST 后量子标准化的领跑者。",
-  "reading_time": 1
+  "language": "zh-Hans",
+  "banner_alt": "AI、人工智能概念、3D 渲染、概念图像",
+  "subtitle": "了解抗量子密码算法 CRYSTALS-Kyber 如何革新密码学并让我们为量子时代做好准备",
+  "reading_time": 1,
+  "word_count": 301,
+  "date": "November 19, 2023",
+  "locale": "zh_CN",
+  "title": "CRYSTALS-Kyber：量子时代的守护算法",
+  "banner": "https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA.webp",
+  "keywords": "CRYSTALS-Kyber, 后量子密码学, KEM, LWE, 格密码学, NIST, Kyber512, Kyber768, Kyber1024, 银行业"
 }

@@ -1,13 +1,13 @@
 {
-  "language": "fr",
-  "keywords": "stablecoins, GENIUS Act, BlackRock, BRSRV, BSTBL, fonds monétaire tokenisé, OCC, OnChain Shares, Securitize, BNY Mellon, paiements",
-  "locale": "fr_FR",
-  "word_count": 5065,
-  "title": "Le rendement caché : décryptage des dépôts BRSRV et BSTBL de BlackRock",
-  "description": "Sous le GENIUS Act, les stablecoins ne peuvent pas verser de rendement. Les dépôts BRSRV et BSTBL de BlackRock illustrent le contournement : un fonds monétaire tokenisé en parallèle d'un stablecoin réglementé, pour acheminer le rendement via un rail conforme adjacent.",
-  "banner": "https://cloudcdn.pro/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp",
-  "subtitle": "Sous le GENIUS Act, les stablecoins ne peuvent plus distribuer de rendement. BlackRock contourne la contrainte avec deux fonds monétaires tokenisés.",
   "date": "May 15, 2026",
+  "locale": "fr_FR",
+  "banner": "https://cloudcdn.pro/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp",
   "banner_alt": "Pièces de dollars empilées sous une lumière chaude, représentant le rendement d'un fonds monétaire tokenisé",
-  "reading_time": 25
+  "reading_time": 25,
+  "subtitle": "Sous le GENIUS Act, les stablecoins ne peuvent plus distribuer de rendement. BlackRock contourne la contrainte avec deux fonds monétaires tokenisés.",
+  "title": "Le rendement caché : décryptage des dépôts BRSRV et BSTBL de BlackRock",
+  "word_count": 5065,
+  "language": "fr",
+  "description": "Sous le GENIUS Act, les stablecoins ne peuvent pas verser de rendement. Les dépôts BRSRV et BSTBL de BlackRock illustrent le contournement : un fonds monétaire tokenisé en parallèle d'un stablecoin réglementé, pour acheminer le rendement via un rail conforme adjacent.",
+  "keywords": "stablecoins, GENIUS Act, BlackRock, BRSRV, BSTBL, fonds monétaire tokenisé, OCC, OnChain Shares, Securitize, BNY Mellon, paiements"
 }
