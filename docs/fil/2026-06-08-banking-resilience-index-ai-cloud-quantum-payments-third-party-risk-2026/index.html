@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="fil-PH">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Mon, 08 Jun 2026 06:06:06 +0000" id="date" />
+    <meta itemprop="dateModified" content="Mon, 08 Jun 2026 06:06:06 +0000" id="last-modified" />
+    <title>Indeks ng Banking Resilience sa 2026: AI, Cloud, Quantum, Bayad, at Third-Party Concentration Risk — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="Isang indeks ng banking resilience sa 2026 na pinagsasama panganib ng AI, panganib ng konsentrasyon sa cloud, quantum-safe na seguridad, pagpapatuloy ng pagbabayad, at third-party risk.">
+<meta name="keywords" content="indeks ng banking resilience 2026, DORA operational resilience, panganib ng AI sa operasyon, panganib ng konsentrasyon sa cloud, quantum risk sa pagbabangko, payment resilience">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="The Banking Resilience Index 2026">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-2soICzNwUYff40vjK9T8uUUaDiRNSFjYnQ/gR0hXk0E=' 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-RGXlit3N8CsCaCCYFj88xejOUWx3ViD0sUm0ZGQqv8Y=' 'sha256-TsdOpOiyE/dyr0yr3yy0+LFgLAHqfkqPazvKcQCA/EY=' 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' https://www.google.com https://open.spotify.com;
+        img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/fil/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <!-- Preload the LCP hero portrait so it doesn't compete with the
+         render-blocking JS bundle on throttled mobile connections.
+         Lighthouse-simulated Slow-4G has been pinning LCP at ~5.6s; the
+         observed (real-network) LCP is 165 ms. This hint pulls the
+         synthetic LCP in line with the observed value. -->
+    <link rel="preload" as="image" href="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=1200&format=webp&q=85" fetchpriority="high">
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script>(function(){try{var saved=localStorage.getItem("theme");var prefersDark=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;var theme=saved||(prefersDark?"dark":"light");document.documentElement.setAttribute("data-theme",theme);}catch(e){}})();</script>
+
+    <link rel="stylesheet" href="/_csp/493b9900892b340d.css" integrity="sha256-OhfPiaSml7/vXd8JdMYp3RH7EPb/w/8weVm5WYUa8ec= sha256-5/5Lg9CU1dmoacFrFtpQFTTicu/xVERXg50F3c/SAj8=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Feed ng Atom" href="/fil/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="Indeks ng Banking Resilience sa 2026: AI, Cloud, Quantum, Bayad, at Third-Party Concentration Risk — Sebastien Rousseau">
+<meta property="og:description" content="Isang indeks ng banking resilience sa 2026 na pinagsasama panganib ng AI, panganib ng konsentrasyon sa cloud, quantum-safe na seguridad, pagpapatuloy ng pagbabayad, at third-party risk.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/fil/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/">
+<meta property="og:image" content="https://cloudcdn.pro/stocks/images/simone-hutsch-oqlh6RsrYB0.webp">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="fil_PH">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Indeks ng Banking Resilience sa 2026: AI, Cloud, Quantum, Bayad, at Third-Party Concentration Risk — Sebastien Rousseau">
+<meta name="twitter:description" content="Isang indeks ng banking resilience sa 2026 na pinagsasama panganib ng AI, panganib ng konsentrasyon sa cloud, quantum-safe na seguridad, pagpapatuloy ng pagbabayad, at third-party risk.">
+<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/simone-hutsch-oqlh6RsrYB0.webp">
+<link rel="canonical" href="https://sebastienrousseau.com/fil/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2026-06-08-banking-resilience-index-ai-cloud-quantique-paiements-third-party-risk-2026/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/" /><link rel="alternate" hreflang="bn" href="https://sebastienrousseau.com/bn/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/" /><link rel="alternate" hreflang="cs" href="https://sebastienrousseau.com/cs/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2026-06-08-banking-resilience-index-ai-cloud-quantum-zahlungsverkehr-third-party-risk-2026/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2026-06-08-banking-resilience-index-ai-cloud-quantum-pagos-third-party-risk-2026/" /><link rel="alternate" hreflang="fil" href="https://sebastienrousseau.com/fil/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/" /><link rel="alternate" hreflang="ha" href="https://sebastienrousseau.com/ha/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/" /><link rel="alternate" hreflang="he" href="https://sebastienrousseau.com/he/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/" /><link rel="alternate" hreflang="hi" href="https://sebastienrousseau.com/hi/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/" /><link rel="alternate" hreflang="id" href="https://sebastienrousseau.com/id/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/2026-06-08-banking-resilience-index-ai-cloud-quantum-pagamenti-third-party-risk-2026/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/" /><link rel="alternate" hreflang="nl" href="https://sebastienrousseau.com/nl/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/" /><link rel="alternate" hreflang="pl" href="https://sebastienrousseau.com/pl/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/2026-06-08-banking-resilience-index-ai-cloud-quantum-pagamentos-third-party-risk-2026/" /><link rel="alternate" hreflang="ro" href="https://sebastienrousseau.com/ro/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/" /><link rel="alternate" hreflang="sv" href="https://sebastienrousseau.com/sv/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/" /><link rel="alternate" hreflang="th" href="https://sebastienrousseau.com/th/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/" /><link rel="alternate" hreflang="tr" href="https://sebastienrousseau.com/tr/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/" /><link rel="alternate" hreflang="uk" href="https://sebastienrousseau.com/uk/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/" /><link rel="alternate" hreflang="vi" href="https://sebastienrousseau.com/vi/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/" /><link rel="alternate" hreflang="yo" href="https://sebastienrousseau.com/yo/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" integrity="sha256-tV/7vAgYDUuBQbSGEPjXL/JC0sD7QpSxXCGKT4ALhh8= sha256-dvm1KF9mEWIapL8BE0nyFlHaKSf6TsjZZoQcJeRPraI=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">Lumaktaw sa pangunahing nilalaman</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="I-toggle ang nabigasyon" />
+      <div class="wrap">
+        <a class="ap-brand" href="/fil/index.html" aria-label="Home ni Sebastien Rousseau">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="Pangunahing nabigasyon">
+          <ul class="ap-menu">
+            <li><a href="/fil/tungkol-sa-akin/index.html">Tungkol</a></li>
+            <li><a href="/fil/mga-artikulo/index.html" aria-current="page" class="active">Mga artikulo</a></li>
+            <li><a href="/fil/mga-publikasyon/index.html">Mga publikasyon</a></li>
+            <li><a href="/fil/mga-paksa/index.html">Mga paksa</a></li>
+            <li><a href="/fil/mga-proyekto/index.html">Mga proyekto</a></li>
+            <li><a href="/fil/mga-playlist/index.html">Mga playlist</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="Lumipat sa dark mode" aria-pressed="false" title="Ibahin ang tema">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="Maghanap (Cmd o Ctrl + K)" title="Maghanap (⌘K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="Wika">
+            <button type="button" class="ap-lang-toggle" aria-label="FIL, Baguhin ang wika" aria-expanded="false" aria-haspopup="menu" title="Baguhin ang wika">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">FIL</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/2026-06-08-banking-resilience-index-ai-cloud-quantique-paiements-third-party-risk-2026/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <a class="ap-lang-item" href="/bn/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
+                <a class="ap-lang-item" href="/cs/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
+                <a class="ap-lang-item" href="/de/2026-06-08-banking-resilience-index-ai-cloud-quantum-zahlungsverkehr-third-party-risk-2026/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/2026-06-08-banking-resilience-index-ai-cloud-quantum-pagos-third-party-risk-2026/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <a class="ap-lang-item" href="/fil/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
+                <a class="ap-lang-item" href="/ha/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
+                <a class="ap-lang-item" href="/he/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
+                <a class="ap-lang-item" href="/hi/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <a class="ap-lang-item" href="/id/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
+                <a class="ap-lang-item" href="/it/2026-06-08-banking-resilience-index-ai-cloud-quantum-pagamenti-third-party-risk-2026/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <a class="ap-lang-item" href="/pl/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
+                <a class="ap-lang-item" href="/pt-br/2026-06-08-banking-resilience-index-ai-cloud-quantum-pagamentos-third-party-risk-2026/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <a class="ap-lang-item" href="/ro/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
+                <a class="ap-lang-item" href="/ru/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <a class="ap-lang-item" href="/sv/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
+                <a class="ap-lang-item" href="/th/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
+                <a class="ap-lang-item" href="/tr/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
+                <a class="ap-lang-item" href="/uk/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/" data-lang="uk" role="menuitem">🇺🇦 Українська</a>
+                <a class="ap-lang-item" href="/vi/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
+                <a class="ap-lang-item" href="/yo/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
+                <a class="ap-lang-item" href="/zh-hans/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/fil/makipag-ugnayan/index.html" aria-label="Makipag-ugnayan">Makipag-ugnayan ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="I-toggle ang nabigasyon">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>Indeks ng Banking Resilience sa 2026: AI, Cloud, Quantum, Bayad, at Third-Party Concentration Risk</h1>
+      <p class="sub">Saklaw na ng operational resilience ang mga sistema ng AI, cloud platform, cryptographic dependency, payment rails, at third-party provider; kailangan ng mga bangko ng pinagsamang indeks.</p>
+    <nav class="article-tags" aria-label="Mga paksa"><a href="/tags/index.html#h3-indeks-ng-banking-resilience-2026" class="article-tag" rel="tag">indeks ng banking resilience 2026</a><a href="/tags/index.html#h3-dora-operational-resilience" class="article-tag" rel="tag">DORA operational resilience</a><a href="/tags/index.html#h3-panganib-ng-ai-sa-operasyon" class="article-tag" rel="tag">panganib ng AI sa operasyon</a><a href="/tags/index.html#h3-panganib-ng-konsentrasyon-sa-cloud" class="article-tag" rel="tag">panganib ng konsentrasyon sa cloud</a><a href="/tags/index.html#h3-quantum-risk-sa-pagbabangko" class="article-tag" rel="tag">quantum risk sa pagbabangko</a><a href="/tags/index.html#h3-payment-resilience" class="article-tag" rel="tag">payment resilience</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2026-06-08T06:06:06+00:00" class="meta-pub">Inilathala noong 8 Jun 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Tinatayang oras ng pagbasa">6 min basahin</span></div></section>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>Mga nilalaman</h2><ol><li><a href="#bakit-mahalaga-ang-indeks-na-ito-sa-2026">Bakit Mahalaga Ang Indeks Na Ito Sa 2026</a></li><li><a href="#ang-arkitektura-ng-indeks-sa-2026">Ang Arkitektura ng Indeks sa 2026</a></li><li><a href="#mga-kasalukuyang-senyas-na-dapat-subaybayan">Mga Kasalukuyang Senyas Na Dapat Subaybayan</a></li><li><a href="#ang-pinagsamang-mapa-ng-resilience">Ang Pinagsamang Mapa ng Resilience</a></li><li><a href="#pagsusuri-ng-senaryo-na-mahalaga">Pagsusuri ng Senaryo Na Mahalaga</a></li><li><a href="#ebidensya-bilang-produkto">Ebidensya Bilang Produkto</a></li><li><a href="#ang-kahulugan-nito-ayon-sa-uri-ng-bangko">Ang Kahulugan Nito Ayon Sa Uri Ng Bangko</a></li><li><a href="#konklusyon">Konklusyon</a></li><li><a href="#mga-madalas-itanong">Mga Madalas Itanong</a></li><li><a href="#mga-sanggunian">Mga Sanggunian</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> Isang indeks ng banking resilience sa 2026 na pinagsasama panganib ng AI, panganib ng konsentrasyon sa cloud, quantum-safe na seguridad, pagpapatuloy ng pagbabayad, at third-party risk.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>Bakit Mahalaga Ang Indeks Na Ito Sa 2026.</strong> Mahalaga ang Stanford AI Index dahil tinatrato nito ang isang mabilis na lumilipas na larangan ng teknolohiya bilang isang bagay na masusukat: ang produksyon ng pananaliksik, teknikal na pagganap, responsableng…</li>  <li><strong>Mga Kasalukuyang Senyas Na Dapat Subaybayan.</strong> Dapat i-map ng indeks ang resilience ayon sa kritikal na business service, hindi ayon sa departamento ng teknolohiya.</li>  <li><strong>Ang Pinagsamang Mapa ng Resilience.</strong> Dapat i-map ng indeks ang resilience ayon sa kritikal na business service, hindi ayon sa departamento ng teknolohiya.</li>  <li><strong>Pagsusuri ng Senaryo Na Mahalaga.</strong> Pinagsasama ng mga kapaki-pakinabang na senaryo ang mga dominyo: isang outage ng cloud provider sa loob ng cut-off window ng pagbabayad; isang depekto sa AI code-generation sa isang kritikal na release; isang pagdami…</li></ul></aside><h1>Indeks ng Banking Resilience sa 2026: AI, Cloud, Quantum, Bayad, at Third-Party Concentration Risk</h1>
+<!-- lead-start -->
+
+<!-- lead-end -->
+<p>Hindi na lamang business continuity o disaster recovery ang banking resilience sa 2026. Ito ang kakayahang pigilan, tagalan, mabawi, ipaliwanag, at i-ebidensya ang pagkagambala sa mga sistema ng AI, cloud platform, kriptograpiya, payment rails, datos, at kritikal na third party. Dapat ipakita ng indeks kung saan malakas sa operasyon ang isang bangko at kung saan ipinagpapalagay lamang ang resilience.</p>
+<hr />
+<blockquote>
+<p><strong>Buod ng Ehekutibo / Mga Pangunahing Tinik</strong></p>
+<ul>
+<li><strong>Binabago ng DORA ang ebidensya ng resilience.</strong> Dapat patunayan ng mga bangko ang matatag na kakayahan sa ICT, third-party risk management, tugon sa insidente, pagsusuri, at kahandaan sa recovery.</li>
+<li><strong>Nagdadagdag ang AI ng bagong layer sa operasyon.</strong> Maaaring mapabuti ng agentic AI ang resilience sa pamamagitan ng automation, ngunit lumilikha rin ito ng panganib sa oversight, adversarial na paggamit, software engineering, at pagkabigo ng modelo.</li>
+<li><strong>Isyu ng resilience ang quantum risk.</strong> Ang long-lived na kompidensyalidad at tiwala sa digital signature ay bahagi ng pagpapatuloy ng operasyon, hindi lamang ng estratehiya sa cyber.</li>
+<li><strong>Nakikita ng kliyente ang payment resilience.</strong> Ang nabigo, naantala, o di-sumusunod na bayad ay direktang nakakaapekto sa kliyente at sa merkado.</li>
+<li><strong>Sistemiko ang third-party concentration.</strong> Dapat sukatin ang dependency sa iilang cloud, AI, datos, at payment provider bilang exposure sa resilience.</li>
+</ul>
+</blockquote>
+<hr />
+<h2 id="bakit-mahalaga-ang-indeks-na-ito-sa-2026">Bakit Mahalaga Ang Indeks Na Ito Sa 2026 <a class="heading-anchor" href="#bakit-mahalaga-ang-indeks-na-ito-sa-2026" aria-label="Link patungo sa Bakit Mahalaga Ang Indeks Na Ito Sa 2026">#</a></h2>
+<p>Mahalaga ang Stanford AI Index dahil tinatrato nito ang isang mabilis na lumilipas na larangan ng teknolohiya bilang isang bagay na masusukat: ang produksyon ng pananaliksik, teknikal na pagganap, responsableng deployment, ekonomiya, pag-ampon ng sektor, patakaran, at saloobin ng publiko ay dinadala sa iisang balangkas (<a href="https://hai.stanford.edu/ai-index/2026-ai-index-report" title="Ang 2026 AI Index Report">Stanford HAI ⧉</a>). Kailangan na rin ng mga bangko at institusyong pinansyal ang parehong disiplina para sa imprastraktura. Ang agentic AI, quantum-safe na seguridad, cloud-native na resilience, at wholesale payments ay hindi na magkahiwalay na track ng inobasyon; nagtatagpo ang mga ito sa iisang operating model.</p>
+<p>Ang praktikal na tanong para sa isang bangko ay hindi kung mahalaga ang bawat dominyo. Ito ay kung kaya ng institusyon na sukatin ang kahandaan sa lahat ng mga ito nang sabay. Maaaring mag-deploy ng agentic AI ang isang bangko at manatiling marupok kung hindi handa sa migration ang kriptograpiya nito. Maaari nitong i-modernise ang cloud platform at mabigo pa rin kung mananatiling hindi nakastruktura ang payment data. Maaari itong magpatakbo ng tokenisation pilot at lumikha pa rin ng systemic risk kung hindi pinag-isang dinisenyo ang settlement, liquidity, identity, at audit layer.</p>
+<h2 id="ang-arkitektura-ng-indeks-sa-2026">Ang Arkitektura ng Indeks sa 2026 <a class="heading-anchor" href="#ang-arkitektura-ng-indeks-sa-2026" aria-label="Link patungo sa Ang Arkitektura ng Indeks sa 2026">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Layer ng Indeks</th>
+<th>Direksyon sa 2026</th>
+<th>Metric ng Kahandaan</th>
+<th>Panganib Kapag Hindi Maayos</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>AI resilience</strong></td>
+<td>Pamahalaan ang pagkabigo ng modelo, aksyon ng ahente, paggamit sa cyber misuse, at pagkawala ng oversight</td>
+<td>Rate ng insidente, rate ng override, saklaw ng kontrol</td>
+<td>Pinapalakas ng automation ang pagkabigo</td>
+</tr>
+<tr>
+<td><strong>Cloud resilience</strong></td>
+<td>Subukin ang recovery, exit, failover, at mga senaryo ng pagkagambala ng provider</td>
+<td>Ebidensya ng recovery ng kritikal na serbisyo</td>
+<td>Nagiging outage ng bangko ang outage ng provider</td>
+</tr>
+<tr>
+<td><strong>Quantum resilience</strong></td>
+<td>Ihanda ang kriptograpiya sa pagkasira ng algorithm sa hinaharap</td>
+<td>Iskor sa PQC migration at crypto-agility</td>
+<td>Pagkawala ng kompidensyalidad at tiwala sa lagda</td>
+</tr>
+<tr>
+<td><strong>Payment resilience</strong></td>
+<td>Panatilihin ang pagpapatuloy sa mga rail, datos, sanctions, likido, at operasyon</td>
+<td>Rate ng nabigong bayad at pag-aayos</td>
+<td>Nakikita ng kliyente na pagkagambala sa operasyon</td>
+</tr>
+<tr>
+<td><strong>Third-party resilience</strong></td>
+<td>I-map at subukin ang mga dependency sa mga provider at subcontractor</td>
+<td>Konsentrasyon ng dependency at substitutability</td>
+<td>Nakatagong single point of failure</td>
+</tr>
+</tbody>
+</table>
+<h2 id="mga-kasalukuyang-senyas-na-dapat-subaybayan">Mga Kasalukuyang Senyas Na Dapat Subaybayan <a class="heading-anchor" href="#mga-kasalukuyang-senyas-na-dapat-subaybayan" aria-label="Link patungo sa Mga Kasalukuyang Senyas Na Dapat Subaybayan">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Senyas</th>
+<th>Ang Kahulugan Para sa Mga Bangko</th>
+<th>Pinagmulan</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Mahina ang iskor ng operational risk at ICT risk</strong></td>
+<td>Kinikilala ng ECB ang operational at ICT risk bilang patuloy na alalahanin sa pamamahala</td>
+<td><a href="https://www.bankingsupervision.europa.eu/framework/priorities/html/ssm.supervisory_priorities202511.en.html" title="Mga prayoridad sa pamamahala 2026-28">ECB Banking Supervision ⧉</a></td>
+</tr>
+<tr>
+<td><strong>Mga kapangyarihan sa oversight ng DORA CTPP</strong></td>
+<td>Maaaring maharap ang mga kritikal na third-party provider sa inspeksyon at mga rekomendasyon</td>
+<td><a href="https://www.eba.europa.eu/activities/direct-supervision-and-oversight/digital-operational-resilience-act" title="Digital Operational Resilience Act">EBA ⧉</a></td>
+</tr>
+<tr>
+<td><strong>Pagkawala ng oversight ng tao sa 55%</strong></td>
+<td>Lumilikha ang agentic AI ng tiyak na panganib sa operational resilience</td>
+<td><a href="https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/2026-global-ai-in-financial-services-report/" title="2026 Global AI in Financial Services Report">Cambridge CCAF ⧉</a></td>
+</tr>
+<tr>
+<td><strong>Natapos na ang mga pamantayan ng NIST PQC</strong></td>
+<td>Mayroon na ngayong implementation path ang cryptographic resilience</td>
+<td><a href="https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards" title="Unang tatlong natapos na post-quantum encryption standards">NIST ⧉</a></td>
+</tr>
+<tr>
+<td><strong>Milyahe ng SWIFT structured data</strong></td>
+<td>Nakadepende ang payment resilience sa datos na nakuha nang tama mula sa pinagmulan</td>
+<td><a href="https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed" title="ISO 20022 milyahe ng Nobyembre 2026 sa structured address">SWIFT ⧉</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="ang-pinagsamang-mapa-ng-resilience">Ang Pinagsamang Mapa ng Resilience <a class="heading-anchor" href="#ang-pinagsamang-mapa-ng-resilience" aria-label="Link patungo sa Ang Pinagsamang Mapa ng Resilience">#</a></h2>
+<p>Dapat i-map ng indeks ang resilience ayon sa kritikal na business service, hindi ayon sa departamento ng teknolohiya. Maaaring umasa ang isang serbisyo sa corporate payment sa AI fraud models, cloud-hosted API, cryptographic certificate, sanctions vendor, koneksyon sa SWIFT, structured beneficiary data, at mga tao sa operasyon. Ang resilience ay ang pinakamahinang kawing sa hanay na iyon.</p>
+<h2 id="pagsusuri-ng-senaryo-na-mahalaga">Pagsusuri ng Senaryo Na Mahalaga <a class="heading-anchor" href="#pagsusuri-ng-senaryo-na-mahalaga" aria-label="Link patungo sa Pagsusuri ng Senaryo Na Mahalaga">#</a></h2>
+<p>Pinagsasama ng mga kapaki-pakinabang na senaryo ang mga dominyo: isang outage ng cloud provider sa loob ng cut-off window ng pagbabayad; isang depekto sa AI code-generation sa isang kritikal na release; isang pagdami ng sanctions false-positive; isang pagkabigo sa certificate migration; o isang agentic workflow na pumapasok sa loob ng internal API. Ito ang mga senaryo na naghahayag ng tunay na resilience.</p>
+<h2 id="ebidensya-bilang-produkto">Ebidensya Bilang Produkto <a class="heading-anchor" href="#ebidensya-bilang-produkto" aria-label="Link patungo sa Ebidensya Bilang Produkto">#</a></h2>
+<p>Dapat patuloy na malikha ng mga sistema ang ebidensya sa regulasyon, hindi manu-manong tipunin pagkatapos ng insidente. Kukunin ng pinakamahuhusay na bangko ang mga log, pagsusuri, pag-apruba, dependency, output ng modelo, insidente, hakbang sa recovery, at epekto sa kliyente bilang operational telemetry.</p>
+<h2 id="ang-kahulugan-nito-ayon-sa-uri-ng-bangko">Ang Kahulugan Nito Ayon Sa Uri Ng Bangko <a class="heading-anchor" href="#ang-kahulugan-nito-ayon-sa-uri-ng-bangko" aria-label="Link patungo sa Ang Kahulugan Nito Ayon Sa Uri Ng Bangko">#</a></h2>
+<h3 id="mga-pandaigdigang-bangko-na-sistematikong-mahalaga">Mga Pandaigdigang Bangko na Sistematikong Mahalaga <a class="heading-anchor" href="#mga-pandaigdigang-bangko-na-sistematikong-mahalaga" aria-label="Link patungo sa Mga Pandaigdigang Bangko na Sistematikong Mahalaga">#</a></h3>
+<p>Dapat ituring ng mga pandaigdigang bangko ang indeks na ito bilang scorecard ng enterprise architecture. Hindi ang isa pang proof of concept ang prayoridad; ito ay ebidensya na ang autonomous workflow, cryptographic migration, cloud dependency, at modernisasyon ng pagbabayad ay maaaring pamahalaan bilang iisang sistema ng panganib at halaga.</p>
+<h3 id="mga-transaction-bank-at-korporatong-bangko">Mga Transaction Bank at Korporatong Bangko <a class="heading-anchor" href="#mga-transaction-bank-at-korporatong-bangko" aria-label="Link patungo sa Mga Transaction Bank at Korporatong Bangko">#</a></h3>
+<p>Dapat tumutok ang mga transaction bank sa wholesale payments, structured data, likido, tokenised deposits, at agentic treasury services. Ang pinakamahalagang proposisyon sa kliyente ay hindi lamang mas mabilis na paggalaw ng pera; ito ay maipaliwanag, ma-audit, at programmable na paggalaw ng pera na may mas kakaunting imbestigasyon at mas mahusay na visibility ng working capital.</p>
+<h3 id="mga-panrehiyong-bangko">Mga Panrehiyong Bangko <a class="heading-anchor" href="#mga-panrehiyong-bangko" aria-label="Link patungo sa Mga Panrehiyong Bangko">#</a></h3>
+<p>Dapat gamitin ng mga panrehiyong bangko ang indeks upang maiwasan ang paglaganap ng programa. Hindi nila kailangang manguna sa bawat hangganan, ngunit kailangan nila ng kapani-paniwalang posisyon sa AI governance, imbentaryo ng post-quantum, ebidensya ng cloud exit, at kahandaan ng payment data.</p>
+<h3 id="mga-fintech-psp-at-infrastructure-provider">Mga Fintech, PSP, at Infrastructure Provider <a class="heading-anchor" href="#mga-fintech-psp-at-infrastructure-provider" aria-label="Link patungo sa Mga Fintech, PSP, at Infrastructure Provider">#</a></h3>
+<p>Dapat iayon ng mga fintech at infrastructure provider ang kanilang product roadmap sa nasusukat na kahandaan ng bangko. Babawasan ng pinakamahuhusay na proposisyon ang panganib sa integrasyon, palalakasin ang ebidensya, at gagawing mas madaling pamahalaan ng mga bangko ang kumplikadong imprastraktura.</p>
+<h2 id="konklusyon">Konklusyon <a class="heading-anchor" href="#konklusyon" aria-label="Link patungo sa Konklusyon">#</a></h2>
+<p>Ang halaga ng isang ulat na index-style ay binubuo nito ang isang nagkakawatak-watak na agenda ng teknolohiya tungo sa isang nasusukat na operating model. Sa 2026, ang mga nananalo sa imprastraktura ng pinansyal ay hindi ang mga institusyong may pinakamaraming pilot. Sila ang mga institusyong nakakapagpatunay ng kahandaan sa autonomiya, seguridad, resilience, settlement, ekonomiya, at pamamahala nang sabay-sabay.</p>
+<h2 id="mga-madalas-itanong">Mga Madalas Itanong <a class="heading-anchor" href="#mga-madalas-itanong" aria-label="Link patungo sa Mga Madalas Itanong">#</a></h2>
+<p><strong>Paano ito naiiba sa business continuity?</strong></p>
+<p>Bahagi nito ang business continuity, ngunit saklaw din ng indeks ang behavior ng AI, konsentrasyon sa cloud, cryptographic migration, payment data, at third-party dependency.</p>
+<p><strong>Ano ang dapat subukin muna?</strong></p>
+<p>Subukin ang mga kritikal na serbisyo kung saan magiging pinakamataas ang pinsala sa kliyente, epekto sa merkado, paglabag sa regulasyon, o pagkagambala sa likido.</p>
+<p><strong>Sino ang nagmamay-ari ng indeks ng resilience?</strong></p>
+<p>Dapat magkasamang nasa teknolohiya, panganib, operasyon, cyber, bayad, compliance, at mga may-ari ng business-service ang pagmamay-ari.</p>
+<p><strong>Ano ang pinakakaraniwang kahinaan?</strong></p>
+<p>Ang pinakakaraniwang kahinaan ay ang dependency mapping na huminto sa primaryong provider at hindi nakikita ang mga subcontractor, daloy ng datos, proseso ng operasyon, at ebidensya ng recovery.</p>
+<h2 id="mga-sanggunian">Mga Sanggunian <a class="heading-anchor" href="#mga-sanggunian" aria-label="Link patungo sa Mga Sanggunian">#</a></h2>
+<ul>
+<li>Cambridge Centre for Alternative Finance, (2026). <a href="https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/2026-global-ai-in-financial-services-report/" title="2026 Global AI in Financial Services Report">2026 Global AI in Financial Services Report ⧉</a>.</li>
+<li>NIST, (2026). <a href="https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards" title="Unang tatlong natapos na post-quantum encryption standards">Unang tatlong natapos na post-quantum encryption standards ⧉</a>.</li>
+<li>SWIFT, (2026). <a href="https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed" title="ISO 20022 milyahe ng Nobyembre 2026 sa structured address">ISO 20022 milyahe ng Nobyembre 2026 sa structured address ⧉</a>.</li>
+<li>ECB Banking Supervision, (2026). <a href="https://www.bankingsupervision.europa.eu/framework/priorities/html/ssm.supervisory_priorities202511.en.html" title="Mga prayoridad sa pamamahala 2026-28">Mga prayoridad sa pamamahala 2026-28 ⧉</a>.</li>
+<li>European Banking Authority, (2026). <a href="https://www.eba.europa.eu/activities/direct-supervision-and-oversight/digital-operational-resilience-act" title="Digital Operational Resilience Act">Digital Operational Resilience Act ⧉</a>.</li>
+</ul>
+<!-- enrich-start -->
+
+<p class="post-reviewed">Huling sinuri <time datetime="2026-06-08">2026-06-08</time>.</p>
+<!-- enrich-end -->
+<aside class="author-card" aria-label="Tungkol sa may-akda"><img alt="Portrait ni Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=85" width="64" height="64" loading="lazy" decoding="async"  fetchpriority="high"><span class="author-card-body"><strong class="author-card-name"><a href="/fil/tungkol-sa-akin/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist na sumusulat tungkol sa applied AI, ISO 20022 migration, post-quantum cryptography para sa financial services, at structural transformation ng wholesale payments.</span><span class="author-credentials">Higit sa 20 taon sa HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA at Virgin Group. <a href="/fil/tungkol-sa-akin/index.html">Buong profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">Huling sinuri <time datetime="2026-05-28">2026-05-28</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Kaugnay na pagbasa</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/fil/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026" class="related-media" aria-label="DORA, EU AI Act, at Soberanya ng Data: Compliance Stack ng Bangko 2026" tabindex="-1"><img alt="Compliance stack diagram showing DORA resilience, EU AI Act transparency, data sovereignty, cloud concentration risk, audit logs, model governance, and third-party providers" src="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="dora-eu-ai-act-at-soberanya-ng-data-compliance-stack-ng-bangko-2026"><a href="https://sebastienrousseau.com/fil/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026">DORA, EU AI Act, at Soberanya ng Data: Compliance Stack ng Bangko 2026</a> <a class="heading-anchor" href="#dora-eu-ai-act-at-soberanya-ng-data-compliance-stack-ng-bangko-2026" aria-label="Link patungo sa DORA, EU AI Act, at Soberanya ng Data: Compliance Stack ng Bangko 2026">#</a></h3><p><time datetime="2026-05-28">2026-05-28</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/fil/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope" class="related-media" aria-label="Magnifica Humanitas: Pagbasa ng Industriya sa Enciklika ni Leo XIV" tabindex="-1"><img alt="Long-exposure photograph of light trails forming a path through darkness toward a luminous horizon, used as the visual key for an AI-ethics reading of the Magnifica Humanitas encyclical" src="https://cloudcdn.pro/api/transform?url=/stocks/images/marek-piwnicki-U6WvLJU0l6o.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="magnifica-humanitas-pagbasa-ng-industriya-sa-enciklika-ni-leo-xiv"><a href="https://sebastienrousseau.com/fil/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope">Magnifica Humanitas: Pagbasa ng Industriya sa Enciklika ni Leo XIV</a> <a class="heading-anchor" href="#magnifica-humanitas-pagbasa-ng-industriya-sa-enciklika-ni-leo-xiv" aria-label="Link patungo sa Magnifica Humanitas: Pagbasa ng Industriya sa Enciklika ni Leo XIV">#</a></h3><p><time datetime="2026-05-26">2026-05-26</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/fil/2026-05-20-cloud-native-banking-financial-institutions-2026" class="related-media" aria-label="Cloud Native Banking sa 2026: Kubernetes, DORA, Soberanya, at ang Katapusan ng Pagitan ng VM at Container" tabindex="-1"><img alt="Cloud-native banking architecture for 2026 showing Kubernetes, VM coexistence, DORA resilience, sovereign cloud, observability, and bank platform engineering" src="https://cloudcdn.pro/api/transform?url=/stocks/images/freeman-zhou-oV9hp8wXkPE.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="cloud-native-banking-sa-2026-kubernetes-dora-soberanya-at-ang-katapusan-ng-pagit"><a href="https://sebastienrousseau.com/fil/2026-05-20-cloud-native-banking-financial-institutions-2026">Cloud Native Banking sa 2026: Kubernetes, DORA, Soberanya, at ang Katapusan ng Pagitan ng VM at Container</a> <a class="heading-anchor" href="#cloud-native-banking-sa-2026-kubernetes-dora-soberanya-at-ang-katapusan-ng-pagit" aria-label="Link patungo sa Cloud Native Banking sa 2026: Kubernetes, DORA, Soberanya, at ang Katapusan ng Pagitan ng VM at Container">#</a></h3><p><time datetime="2026-05-20">2026-05-20</time></p></footer></article>
+</div>
+</aside><aside class="article-sources" aria-labelledby="sources-heading"><h2 id="sources-heading" class="article-sources-heading">Mga pinagmulan at sanggunian</h2><ol class="article-sources-list"><li><a href="https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards" rel="external noopener nofollow"><span class="source-host">www.nist.gov</span><span class="source-path">/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryp…</span></a></li><li><a href="https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed" rel="external noopener nofollow"><span class="source-host">www.swift.com</span><span class="source-path">/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be…</span></a></li></ol></aside><nav class="post-pagination" aria-label="Pagination ng artikulo"><a class="post-pagination-prev" href="/fil/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/"><span class="post-pagination-label">Nakaraan</span><span class="post-pagination-title">DORA, the EU AI Act, and Data Sovereignty: The 2026 Compliance Stack for Banks</span></a><span class="post-pagination-stub" aria-hidden="true"></span></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/fil/tungkol-sa-akin/index.html">Tungkol</a></li>
+              <li><a href="/fil/makipag-ugnayan/index.html">Makipag-ugnayan</a></li>
+              <li><a href="/fil/ginawa-sa-static-site-generator/index.html">Ginawa sa Static Site Generator</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Pagsusulat</h2>
+            <ul>
+              <li><a href="/fil/mga-artikulo/index.html">Mga artikulo</a></li>
+              <li><a href="/fil/mga-publikasyon/index.html">Mga publikasyon</a></li>
+              <li><a href="/fil/mga-tag/index.html">Mga tag</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Trabaho</h2>
+            <ul>
+              <li><a href="/fil/mga-proyekto/index.html">Mga proyekto</a></li>
+              <li><a href="/fil/mga-playlist/index.html">Mga playlist</a></li>
+              <li><a href="/fil/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Makipag-ugnayan</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="/contact/" method="get" aria-label="Pag-sign up sa newsletter">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — mga research note tungkol sa payments, AI at post-quantum crypto. Walang spam.</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="ikaw@bangko.ph" />
+            <input type="hidden" name="subject" value="newsletter" />
+            <input type="hidden" name="message" value="Please subscribe me to the Banking On Quantum newsletter." />
+            <button type="submit">Mag-subscribe</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved.</span>
+          <div class="social" aria-label="Mga link sa social media">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau sa Twitter / X"><img src="https://cloudcdn.pro/common/images/buttons/x-black.svg" alt="Sebastien Rousseau sa Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau sa LinkedIn"><img src="https://cloudcdn.pro/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau sa LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau sa Medium"><img src="https://cloudcdn.pro/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau sa Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau sa YouTube"><img src="https://cloudcdn.pro/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau sa YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/fil/pagiging-accessible/index.html">Pagiging accessible</a> ·
+            <a href="/fil/pagkapribado/index.html">Pagkapribado</a> ·
+            <a href="/fil/mga-tuntunin/index.html">Mga tuntunin</a> ·
+            <a href="https://www.thegreenwebfoundation.org/green-web-check/?url=sebastienrousseau.com" target="_blank" rel="noopener noreferrer" title="Hosted on 100% renewable energy (Cloudflare) — estimate via Sustainable Web Design v4 model">Carbon: ~0.04 g/visit · green-hosted</a> ·
+            <a href="https://github.com/sebastienrousseau/sebastienrousseau.github.io/blob/main/doc/SIGSTORE.md" target="_blank" rel="noopener noreferrer" title="Every dated article is signed with Sigstore — verify the bytes match what was published">Verify signatures</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"fil"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"fil"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":1317,"headline":"Indeks ng Banking Resilience sa 2026: AI, Cloud, Quantum, Bayad, at Third-Party Concentration Risk","description":"Isang indeks ng banking resilience sa 2026 na pinagsasama panganib ng AI, panganib ng konsentrasyon sa cloud, quantum-safe na seguridad, pagpapatuloy ng pagbabayad, at third-party risk.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/simone-hutsch-oqlh6RsrYB0.webp","width":"100vw","height":"100vh","caption":"Abstract na arkitekturang larawan na ginagamit bilang visual key para sa 2026 Banking Resilience Index — pinagsasama ang panganib ng AI, panganib ng konsentrasyon sa cloud, quantum-safe na seguridad, pagpapatuloy ng pagbabayad, at kritikal na third-party dependency sa iisang scoreboard ng operational resilience"},"url":"https://sebastienrousseau.com/fil/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/","datePublished":"2026-06-08T06:06:06+00:00","dateModified":"2026-06-08","inLanguage":"fil","keywords":"indeks ng banking resilience 2026, DORA operational resilience, panganib ng AI sa operasyon, panganib ng konsentrasyon sa cloud, quantum risk sa pagbabangko, payment resilience","articleSection":"Risk","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/fil/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"fil"},"citation":[{"@type":"CreativeWork","url":"https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards"},{"@type":"CreativeWork","url":"https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/fil/"},{"@type":"ListItem","position":3,"name":"Indeks ng Banking Resilience sa 2026: AI, Cloud, Quantum, Bayad, at Third-Party Concentration Risk","item":"https://sebastienrousseau.com/fil/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/"}]}]}</script>
+<script src="/main.e1c270a6.js" defer integrity="sha256-p2FFu6C9UjC1BhWEVTdryx1iPa0FNVgaz5dz365Gd9I= sha256-UVRmWZ21ffSNgLDN1dLfr48S6iL6D3AxL4O5xYOK7U4=" crossorigin="anonymous"></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="Maghanap">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>Maghanap</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="Maghanap">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="Maghanap sa dokumentasyon..." autocomplete="off" aria-label="Maghanap"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> isara</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> mag-navigate</span><span><kbd>Enter</kbd> buksan</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" integrity="sha256-Y0txeCfdk+GUctTYMAxMbFCB2qs1cPm8JSIX3WRS9cs= sha256-5Ca5zk/7tsavsCDhg6M1m4feBn+L4YnJ7iavKawynII=" crossorigin="anonymous"></script>
+</div>
+</body>
+</html>
