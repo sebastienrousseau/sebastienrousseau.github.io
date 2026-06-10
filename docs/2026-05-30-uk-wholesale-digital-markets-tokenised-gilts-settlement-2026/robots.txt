@@ -1,2 +1,0 @@
-User-agent: *
-Sitemap: https://sebastienrousseau.com/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/sitemap.xml

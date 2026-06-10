@@ -1,2 +1,0 @@
-User-agent: *
-Sitemap: https://sebastienrousseau.com/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/sitemap.xml

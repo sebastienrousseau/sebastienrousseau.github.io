@@ -1,8 +1,8 @@
 name: Monthly external link audit
 
-# Catches link rot. Runs the in-repo audit on the deployed `docs/` tree and
-# files a tracking issue if any external links break. The audit script
-# already filters bot-blocked false positives.
+# Catches link rot. Builds the site, runs the in-repo audit on the fresh
+# `public/` tree, and files a tracking issue if any external links break.
+# The audit script already filters bot-blocked false positives.
 
 on:
   schedule:
@@ -24,12 +24,38 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+          cache: 'pip'
+
+      - name: Install Rust toolchain (cached)
+        uses: dtolnay/rust-toolchain@stable
+
+      - name: Cache cargo registry + git
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cargo/registry
+            ~/.cargo/git
+            ~/.cargo/bin
+          key: ${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}-ssg
+
+      - name: Install Static Site Generator (ssg)
+        run: |
+          echo "$HOME/.cargo/bin" >> $GITHUB_PATH
+          export PATH="$HOME/.cargo/bin:$PATH"
+          if ! command -v ssg >/dev/null 2>&1; then
+            cargo install ssg --locked
+          fi
+
+      - name: Build site
+        run: |
+          pip install --quiet -r requirements.txt
+          ./build.sh
 
       - name: Run external link audit
         id: audit
         run: |
           set -o pipefail
-          python3 scripts/seo_and_audit/audit_links.py --base-dir docs --check-external \
+          python3 scripts/seo_and_audit/audit_links.py --base-dir public --check-external \
             | tee audit-report.txt
           broken=$(grep -c '^  \[' audit-report.txt || true)
           echo "broken=${broken}" >> "$GITHUB_OUTPUT"

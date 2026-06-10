@@ -4,7 +4,7 @@
 
 Every dated article on this Shokunin static site is signed using Sigstore, and this runbook explains how to setup, use, and check these signatures.
 
-The signing pass — `scripts/sigstore_sign.py` — is wired into the build script. It is a no-op until `_data/sigstore/config.json` exists, which means the build stays green for any writer without a key setup. Signatures only get made on the machine that holds the private key.
+The signing pass — `scripts/security/sigstore_sign.py` — is wired into the build script. It is a no-op until `_data/sigstore/config.json` exists, which means the build stays green for any writer without a key setup. Signatures only get made on the machine that holds the private key.
 
 ## Why sign content
 
@@ -40,11 +40,12 @@ The key file is ignored by git, and you should treat it like a private key. Stor
 ### 3. Publish the public key
 
 ```sh
-# Mirror it into the deployed site so verifiers can fetch it from the site itself
-mkdir -p docs/sigstore
-cp _data/sigstore/cosign.pub docs/sigstore/cosign.pub
+# Mirror it into the committed bundle store; build.sh copies sigstore-bundles/
+# into public/sigstore/ on every build so verifiers can fetch it from the site.
+mkdir -p sigstore-bundles
+cp _data/sigstore/cosign.pub sigstore-bundles/cosign.pub
 # Commit + push:
-git add docs/sigstore/cosign.pub
+git add sigstore-bundles/cosign.pub
 git commit -m "chore(sigstore): publish cosign public key"
 git push
 ```

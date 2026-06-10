@@ -55,7 +55,7 @@ python3 scripts/generators/build_agent_api.py
 # 4. Full build with all i18n + CSP gates.
 ./build.sh
 
-# 5. Stage source changes — never docs/ or public/, CI rebuilds those.
+# 5. Stage source changes — never public/, CI rebuilds it.
 git add _posts/ _data/i18n/ _drafts/ scripts/generators/gen_articles.py scripts/generators/build_topics.py 2>/dev/null || true
 
 echo

@@ -1,2 +1,0 @@
-User-agent: *
-Sitemap: https://sebastienrousseau.com/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/sitemap.xml

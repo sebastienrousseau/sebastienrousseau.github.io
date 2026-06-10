@@ -200,6 +200,7 @@ def test_main_signs_each_dated_article(tmp_path, monkeypatch, capsys):
     monkeypatch.setattr(ss, "CONFIG_PATH", cfg)
     monkeypatch.setattr(ss, "PUBLIC", public)
     monkeypatch.setattr(ss, "SIGSTORE_DIR", sigstore)
+    monkeypatch.setattr(ss, "BUNDLES_DIR", tmp_path / "sigstore-bundles")
     monkeypatch.setattr(ss, "_cosign_available", lambda: True)
     monkeypatch.setattr(ss, "_sign_one", lambda *a, **kw: True)
 
@@ -268,8 +269,64 @@ def test_main_copies_public_key_when_configured(tmp_path, monkeypatch):
     monkeypatch.setattr(ss, "CONFIG_PATH", cfg_path)
     monkeypatch.setattr(ss, "PUBLIC", public)
     monkeypatch.setattr(ss, "SIGSTORE_DIR", sigstore)
+    monkeypatch.setattr(ss, "BUNDLES_DIR", tmp_path / "sigstore-bundles")
     monkeypatch.setattr(ss, "_cosign_available", lambda: True)
     monkeypatch.setattr(ss, "_sign_one", lambda *a, **kw: True)
 
     ss.main()
     assert (sigstore / "cosign.pub").read_text(encoding="utf-8") == "KEY"
+
+
+def test_main_mirrors_bundles_into_committed_store(tmp_path, monkeypatch):
+    cfg_path = tmp_path / "config.json"
+    pub_src = tmp_path / "cosign.pub"
+    pub_src.write_text("KEY", encoding="utf-8")
+    cfg_path.write_text(
+        json.dumps({"public_key_local": str(pub_src)}),
+        encoding="utf-8",
+    )
+    public = tmp_path / "public"
+    sigstore = public / "sigstore"
+    bundles = tmp_path / "sigstore-bundles"
+    public.mkdir()
+    d = public / "2026-05-19-foo"
+    d.mkdir()
+    (d / "index.html").write_text("<html></html>", encoding="utf-8")
+
+    def fake_sign(html, out_dir, cfg):
+        (out_dir / f"{html.parent.name}.bundle").write_text("BUNDLE", encoding="utf-8")
+        return True
+
+    monkeypatch.setattr(ss, "CONFIG_PATH", cfg_path)
+    monkeypatch.setattr(ss, "PUBLIC", public)
+    monkeypatch.setattr(ss, "SIGSTORE_DIR", sigstore)
+    monkeypatch.setattr(ss, "BUNDLES_DIR", bundles)
+    monkeypatch.setattr(ss, "_cosign_available", lambda: True)
+    monkeypatch.setattr(ss, "_sign_one", fake_sign)
+
+    rc = ss.main()
+    assert rc == 0
+    assert (bundles / "2026-05-19-foo.bundle").read_text(encoding="utf-8") == "BUNDLE"
+    assert (bundles / "cosign.pub").read_text(encoding="utf-8") == "KEY"
+
+
+def test_main_does_not_touch_committed_store_when_nothing_signed(tmp_path, monkeypatch):
+    cfg = tmp_path / "config.json"
+    cfg.write_text("{}", encoding="utf-8")
+    public = tmp_path / "public"
+    bundles = tmp_path / "sigstore-bundles"
+    public.mkdir()
+    d = public / "2026-05-19-foo"
+    d.mkdir()
+    (d / "index.html").write_text("<html></html>", encoding="utf-8")
+
+    monkeypatch.setattr(ss, "CONFIG_PATH", cfg)
+    monkeypatch.setattr(ss, "PUBLIC", public)
+    monkeypatch.setattr(ss, "SIGSTORE_DIR", public / "sigstore")
+    monkeypatch.setattr(ss, "BUNDLES_DIR", bundles)
+    monkeypatch.setattr(ss, "_cosign_available", lambda: True)
+    monkeypatch.setattr(ss, "_sign_one", lambda *a, **kw: False)
+
+    rc = ss.main()
+    assert rc == 1
+    assert not bundles.exists()

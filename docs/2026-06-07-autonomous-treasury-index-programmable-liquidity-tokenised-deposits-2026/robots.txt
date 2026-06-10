@@ -1,2 +1,0 @@
-User-agent: *
-Sitemap: https://sebastienrousseau.com/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/sitemap.xml

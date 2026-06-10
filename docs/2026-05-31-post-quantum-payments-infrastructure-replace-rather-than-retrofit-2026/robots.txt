@@ -1,2 +1,0 @@
-User-agent: *
-Sitemap: https://sebastienrousseau.com/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/sitemap.xml

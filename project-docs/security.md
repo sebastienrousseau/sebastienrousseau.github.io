@@ -29,7 +29,7 @@ graph TB
  end
 
  subgraph ORIG["GitHub Pages origin"]
- H["docs/ (static HTML)"]
+ H["public/ (static HTML,<br/>Pages artifact)"]
  SBOM["sbom.cdx.json"]
  WKD["openpgpkey/<br/>(WKD)"]
  end

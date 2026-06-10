@@ -61,8 +61,8 @@ The folder outline separates the source articles, layouts, and python build scri
 - `project-docs/` contains the guide files
 - `workers/` houses the router code
 - `labs/` holds the Rust → WebAssembly demos
-- `public/` stores the build output
-- `docs/` stores the GitHub Pages root
+- `public/` stores the build output (gitignored; deployed as a CI artifact)
+- `sigstore-bundles/` stores the committed article signature bundles
 
 Each folder has a single task to make updates easy.
 
@@ -280,10 +280,10 @@ The integration runner blocks any pull request that fails these checks.
 
 ## Deployment
 
-The site deploys to Cloudflare Pages automatically when you push to the main branch.
+The site deploys to GitHub Pages automatically when you push to the main branch.
 
-The build actions take about two minutes to run and update the live edge servers.
-We purge the edge cache to ensure that visitors see the latest updates.
+CI builds the site, uploads `public/` as a Pages artifact, and `actions/deploy-pages` publishes it.
+Cloudflare sits in front of the GitHub Pages origin as the CDN and edge security layer.
 
 ## When this repo is not what you want
 

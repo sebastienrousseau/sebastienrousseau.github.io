@@ -51,6 +51,10 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 PUBLIC = ROOT / "public"
 SIGSTORE_DIR = PUBLIC / "sigstore"
+# Committed store of signed bundles. CI has no signing key, so build.sh
+# copies these into public/sigstore/ on every build; local signed builds
+# write fresh bundles back here for committing.
+BUNDLES_DIR = ROOT / "sigstore-bundles"
 CONFIG_PATH = ROOT / "_data" / "sigstore" / "config.json"
 
 _DATED_DIR_RE = re.compile(r"^\d{4}-\d{2}-\d{2}-")
@@ -151,6 +155,13 @@ def main() -> int:
             signed += 1
         else:
             failed += 1
+    if signed:
+        BUNDLES_DIR.mkdir(parents=True, exist_ok=True)
+        for artefact in sorted(SIGSTORE_DIR.glob("*.bundle")):
+            shutil.copy2(artefact, BUNDLES_DIR / artefact.name)
+        pub = SIGSTORE_DIR / "cosign.pub"
+        if pub.is_file():
+            shutil.copy2(pub, BUNDLES_DIR / pub.name)
     print(f"sigstore: {signed} article(s) signed, {failed} failed")
     return 0 if failed == 0 else 1
 

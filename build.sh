@@ -127,13 +127,14 @@ python3 scripts/postbuild/postbuild.py
 python3 scripts/postbuild/fix_lang_switcher.py
 # Sigstore signing pass — no-op unless _data/sigstore/config.json exists
 # (the cosign private key is machine-local, never in CI). Always mirror
-# the *previously committed* bundles from docs/sigstore/ into
-# public/sigstore/ first, so CI deploys ship the signatures even though
-# CI has no key. Local builds with the key set will then overwrite each
-# bundle with a fresh signature for any article whose HTML changed.
-if [[ -d docs/sigstore ]]; then
+# the *committed* bundles from sigstore-bundles/ into public/sigstore/
+# first, so CI deploys ship the signatures even though CI has no key.
+# Local builds with the key set will then overwrite each bundle with a
+# fresh signature (and write it back to sigstore-bundles/) for any
+# article whose HTML changed.
+if [[ -d sigstore-bundles ]]; then
   mkdir -p public/sigstore
-  cp -a docs/sigstore/. public/sigstore/
+  cp -a sigstore-bundles/. public/sigstore/
 fi
 # Allow the signing pass to fail (e.g. wrong COSIGN_PASSWORD on this
 # machine) without breaking the build — the committed bundles still ship.
@@ -176,14 +177,9 @@ if command -v node >/dev/null 2>&1; then
     workers/test_activitypub.mjs
 fi
 
-# GitHub Pages serves from main/docs, so mirror the postbuild output into
-# docs/ on every build. CNAME and .nojekyll are preserved.
-rsync -a --delete --exclude CNAME --exclude .nojekyll public/ docs/
-cat > docs/CNAME <<'CNAME'
-sebastienrousseau.com
-www.sebastienrousseau.com
-CNAME
-touch docs/.nojekyll
+# Deployment is the public/ Pages artifact uploaded by CI
+# (.github/workflows/ci.yml) — nothing is served from a git-tracked
+# directory, so no local mirror step is needed.
 
 if (( SERVE )); then
   exec python3 -m http.server 8000 --directory public --bind 127.0.0.1

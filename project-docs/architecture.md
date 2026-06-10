@@ -49,7 +49,7 @@ flowchart TB
 
  subgraph Output["Output"]
  P[public/<br/>1850 pages]
- DC[docs/<br/>GH Pages root]
+ DC[GH Pages<br/>artifact deploy]
  CF[Cloudflare CDN<br/>PQC TLS]
  WORK[Worker: lang-router<br/>cookie/?lang routing<br/>+ edge security headers]
  LABS[labs/ → /labs/<crate>/<br/>Rust → WASM, strict CSP]
@@ -62,8 +62,8 @@ flowchart TB
  REG --> BA
  PB --> Gates
  Gates --> P
- P -->|rsync| DC
- DC -->|git push| CF
+ P -->|upload-pages-artifact| DC
+ DC -->|deploy-pages| CF
  CF --> WORK
  ```
 

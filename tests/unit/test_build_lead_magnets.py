@@ -1,8 +1,8 @@
 """Unit tests for scripts/build_lead_magnets.py.
 
 Covers all four code paths through main():
-  - no pandoc → fallback copy from docs/
-  - no LaTeX → fallback copy from docs/
+  - no pandoc → fallback copy from _data/lead-magnets/pdf/
+  - no LaTeX → fallback copy from _data/lead-magnets/pdf/
   - tooling present + no _data/lead-magnets/ → no-op
   - tooling present + sources → renders each, or surfaces pandoc errors
 """
@@ -62,23 +62,23 @@ def test_have_tooling_falls_back_to_pdflatex(monkeypatch):
 
 
 # ---------------------------------------------------------------------------
-# fallback_copy_from_docs
+# fallback_copy_from_committed
 # ---------------------------------------------------------------------------
 
 
-def test_fallback_copy_returns_zero_when_docs_missing(tmp_path, monkeypatch):
+def test_fallback_copy_returns_zero_when_committed_missing(tmp_path, monkeypatch):
     monkeypatch.chdir(tmp_path)
-    assert blm.fallback_copy_from_docs(tmp_path / "public" / "resources") == 0
+    assert blm.fallback_copy_from_committed(tmp_path / "public" / "resources") == 0
 
 
 def test_fallback_copy_mirrors_committed_pdfs(tmp_path, monkeypatch):
     monkeypatch.chdir(tmp_path)
-    docs = tmp_path / "docs" / "resources"
-    docs.mkdir(parents=True)
-    (docs / "a.pdf").write_bytes(b"PDF-A")
-    (docs / "b.pdf").write_bytes(b"PDF-B")
+    committed = tmp_path / "_data" / "lead-magnets" / "pdf"
+    committed.mkdir(parents=True)
+    (committed / "a.pdf").write_bytes(b"PDF-A")
+    (committed / "b.pdf").write_bytes(b"PDF-B")
     out = tmp_path / "public" / "resources"
-    n = blm.fallback_copy_from_docs(out)
+    n = blm.fallback_copy_from_committed(out)
     assert n == 2
     assert (out / "a.pdf").read_bytes() == b"PDF-A"
     assert (out / "b.pdf").read_bytes() == b"PDF-B"
@@ -134,7 +134,7 @@ def test_render_falls_back_to_pdflatex_when_no_xelatex(tmp_path, monkeypatch):
 def test_main_falls_back_when_tooling_missing(tmp_path, monkeypatch, capsys):
     monkeypatch.chdir(tmp_path)
     monkeypatch.setattr(blm, "have_tooling", lambda: (False, "missing"))
-    monkeypatch.setattr(blm, "fallback_copy_from_docs", lambda out: 3)
+    monkeypatch.setattr(blm, "fallback_copy_from_committed", lambda out: 3)
     rc = blm.main()
     assert rc == 0
     out = capsys.readouterr().out
@@ -144,7 +144,7 @@ def test_main_falls_back_when_tooling_missing(tmp_path, monkeypatch, capsys):
 def test_main_fallback_no_committed_pdfs(tmp_path, monkeypatch, capsys):
     monkeypatch.chdir(tmp_path)
     monkeypatch.setattr(blm, "have_tooling", lambda: (False, "missing"))
-    monkeypatch.setattr(blm, "fallback_copy_from_docs", lambda out: 0)
+    monkeypatch.setattr(blm, "fallback_copy_from_committed", lambda out: 0)
     rc = blm.main()
     assert rc == 0
     assert "no committed PDFs found" in capsys.readouterr().out
@@ -177,6 +177,23 @@ def test_main_renders_each_markdown(tmp_path, monkeypatch, capsys):
     assert ("b.md", "b.pdf") in rendered
     msg = capsys.readouterr().out
     assert "wrote 2 PDF(s)" in msg
+
+
+def test_main_mirrors_rendered_pdfs_to_committed_store(tmp_path, monkeypatch):
+    monkeypatch.chdir(tmp_path)
+    src = tmp_path / "_data" / "lead-magnets"
+    src.mkdir(parents=True)
+    (src / "a.md").write_text("# A\n", encoding="utf-8")
+    out = tmp_path / "public" / "resources"
+    committed = tmp_path / "_data" / "lead-magnets" / "pdf"
+    monkeypatch.setattr(blm, "have_tooling", lambda: (True, ""))
+    monkeypatch.setattr(blm, "SRC", src)
+    monkeypatch.setattr(blm, "OUT", out)
+    monkeypatch.setattr(blm, "COMMITTED", committed)
+    monkeypatch.setattr(blm, "render", lambda md, pdf: pdf.write_bytes(b"PDF-A"))
+    rc = blm.main()
+    assert rc == 0
+    assert (committed / "a.pdf").read_bytes() == b"PDF-A"
 
 
 def test_main_returns_one_on_pandoc_failure(tmp_path, monkeypatch, capsys):

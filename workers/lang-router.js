@@ -38,7 +38,7 @@
  * be removed so the header CSP has a single source of truth in-repo.
  */
 
-// Active non-EN languages with rendered subtrees in /docs/. Keep this list in
+// Active non-EN languages with rendered subtrees in the deployed site. Keep this list in
 // sync with `scripts/_lang_registry.py`'s `active=True` entries. If a
 // language ships static pages they get routed here; otherwise the Worker
 // falls through to the EN tree.

@@ -10,13 +10,13 @@
 # Usage: scripts/security/sigstore-setup.sh
 set -euo pipefail
 
-REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
 cd "$REPO_ROOT"
 
 SIGSTORE_DIR="$REPO_ROOT/_data/sigstore"
 KEY_FILE="$SIGSTORE_DIR/cosign.key"
 PUB_FILE="$SIGSTORE_DIR/cosign.pub"
-PUB_PUBLISHED="$REPO_ROOT/docs/sigstore/cosign.pub"
+PUB_PUBLISHED="$REPO_ROOT/sigstore-bundles/cosign.pub"
 CONFIG="$SIGSTORE_DIR/config.json"
 CONFIG_TEMPLATE="$SIGSTORE_DIR/config.example.json"
 
@@ -62,8 +62,8 @@ ok "cosign $(cosign version --json 2>/dev/null | grep -oE '"GitVersion": *"[^"]+
 
 # --- step 2: ensure scaffold directories --------------------------------
 
-say "Preparing _data/sigstore + docs/sigstore"
-mkdir -p "$SIGSTORE_DIR" "$REPO_ROOT/docs/sigstore"
+say "Preparing _data/sigstore + sigstore-bundles"
+mkdir -p "$SIGSTORE_DIR" "$REPO_ROOT/sigstore-bundles"
 ok "directories present"
 
 # --- step 3: keypair --------------------------------------------------
@@ -100,9 +100,9 @@ fi
 
 # --- step 4: publish public key into deployed tree ---------------------
 
-say "Publishing public key into docs/sigstore/"
+say "Publishing public key into sigstore-bundles/"
 cp "$PUB_FILE" "$PUB_PUBLISHED"
-ok "docs/sigstore/cosign.pub up to date"
+ok "sigstore-bundles/cosign.pub up to date"
 
 # --- step 5: activate config ------------------------------------------
 
@@ -130,20 +130,20 @@ fi
 # --- step 7: verify outputs ------------------------------------------
 
 say "Verifying signature output"
-n=$(find docs/sigstore -name '*.bundle' -type f 2>/dev/null | wc -l | tr -d ' ')
+n=$(find sigstore-bundles -name '*.bundle' -type f 2>/dev/null | wc -l | tr -d ' ')
 if [ "$n" -lt 1 ]; then
-  die "no .bundle files in docs/sigstore — signing did not run. Check $CONFIG and the sigstore line of /tmp/sigstore-build.log"
+  die "no .bundle files in sigstore-bundles — signing did not run. Check $CONFIG and the sigstore line of /tmp/sigstore-build.log"
 fi
-ok "$n signed bundle(s) in docs/sigstore/"
+ok "$n signed bundle(s) in sigstore-bundles/"
 
 # --- step 8: commit prompt -----------------------------------------
 
 say "Ready to commit"
 echo "  Files staged for review:"
-git status --short docs/sigstore/ _data/sigstore/.gitignore _data/sigstore/config.example.json project-docs/sigstore.md 2>/dev/null | sed 's/^/    /'
+git status --short sigstore-bundles/ _data/sigstore/.gitignore _data/sigstore/config.example.json project-docs/sigstore.md 2>/dev/null | sed 's/^/    /'
 echo
 echo "  To publish:"
-echo "    git add docs/sigstore/ _data/sigstore/.gitignore _data/sigstore/config.example.json project-docs/sigstore.md"
+echo "    git add sigstore-bundles/ _data/sigstore/.gitignore _data/sigstore/config.example.json project-docs/sigstore.md"
 echo "    git commit -m 'chore(sigstore): activate signing — per-article bundles'"
 echo "    git push"
 echo

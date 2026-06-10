@@ -1,2 +1,0 @@
-User-agent: *
-Sitemap: https://sebastienrousseau.com/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/sitemap.xml
