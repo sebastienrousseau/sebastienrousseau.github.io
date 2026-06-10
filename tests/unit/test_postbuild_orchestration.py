@@ -1054,3 +1054,39 @@ def test_main_runs_against_synthetic_tree(fake_public: Path, capsys):
     captured = capsys.readouterr()
     assert "postbuild:" in captured.out
     assert "HTML pages" in captured.out
+    assert "failed 0" in captured.out
+
+
+def test_main_contains_per_page_failures_and_exits_nonzero(
+    fake_public: Path, capsys, monkeypatch
+):
+    """One malformed page must not abort the rest of the tree: main()
+    processes every page, names the failure on stderr, and exits 1."""
+    good = fake_public / "index.html"
+    good.write_text(_minimal_page_html(with_jsonld=True), encoding="utf-8")
+    (fake_public / "bad").mkdir()
+    bad = fake_public / "bad" / "index.html"
+    bad.write_text(_minimal_page_html(), encoding="utf-8")
+    (fake_public / "sitemap.xml").write_text(
+        '<?xml version="1.0"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
+        "<url><loc>https://sebastienrousseau.com/</loc></url>"
+        "</urlset>",
+        encoding="utf-8",
+    )
+
+    real_process = pb._process_page
+
+    def exploding(page, ctx):
+        if page == bad:
+            raise ValueError("boom on this page")
+        return real_process(page, ctx)
+
+    monkeypatch.setattr(pb, "_process_page", exploding)
+    with pytest.raises(SystemExit) as excinfo:
+        pb.main()
+    assert excinfo.value.code == 1
+    captured = capsys.readouterr()
+    # The good page still went through the full pipeline.
+    assert 'hreflang="x-default"' in good.read_text(encoding="utf-8")
+    assert "patched 1, failed 1" in captured.out
+    assert "postbuild: FAILED bad/index.html: ValueError: boom on this page" in captured.err

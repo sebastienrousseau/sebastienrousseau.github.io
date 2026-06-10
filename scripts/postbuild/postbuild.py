@@ -1390,8 +1390,14 @@ def main() -> None:
     """
     pages = list(PUBLIC.rglob("*.html"))
     ctx = _PostbuildContext(pages)
+    # Contain per-page failures so one malformed page can't abort the
+    # whole pass silently mid-tree; collect and fail loudly at the end.
+    failures: list[tuple[Path, BaseException]] = []
     for page in pages:
-        _process_page(page, ctx)
+        try:
+            _process_page(page, ctx)
+        except Exception as exc:  # boundary: report + exit 1 below
+            failures.append((page, exc))
 
     (
         sitemap_patched,
@@ -1450,8 +1456,17 @@ def main() -> None:
         f"robots.txt {'updated' if robots_written else 'unchanged'}, "
         f"llms.txt {'updated' if llms_written else 'unchanged'}, "
         f"llms-ctx.txt {'updated' if llms_ctx_written else 'unchanged'}, "
-        f"llms-full.txt {'updated' if llms_full_written else 'unchanged'}"
+        f"llms-full.txt {'updated' if llms_full_written else 'unchanged'}; "
+        f"patched {len(pages) - len(failures)}, failed {len(failures)}"
     )
+    if failures:
+        for page, exc in failures:
+            print(
+                f"postbuild: FAILED {page.relative_to(PUBLIC)}: "
+                f"{type(exc).__name__}: {exc}",
+                file=sys.stderr,
+            )
+        raise SystemExit(1)
 
 
 if __name__ == "__main__":  # pragma: no cover — exercised by build.sh
