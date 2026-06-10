@@ -45,7 +45,11 @@ def _repair_csp_after_mutating_main():
 
 
 @SKIP_IF_NO_BUILD
-def test_post_enrich_main_runs(capsys):
+def test_post_enrich_main_runs(capsys, monkeypatch):
+    # post_enrich.main() argparse-reads sys.argv; under pytest, sys.argv
+    # carries pytest's own args. Patch in a clean argv so argparse sees
+    # only the script name and defaults the --dir flag.
+    monkeypatch.setattr("sys.argv", ["post_enrich"])
     import post_enrich
 
     post_enrich.main()
