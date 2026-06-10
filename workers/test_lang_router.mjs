@@ -522,7 +522,11 @@ test('handler: formspree.io is allowlisted by every response CSP', async () => {
 test('handler: /actor delegates to ActivityPub handler, skips locale + CSP path', async () => {
   resetLog();
   const res = await callHandler(makeRequest('https://sebastienrousseau.com/actor'));
-  assert.equal(res.status, 200);
-  assert.match(res.headers.get('content-type'), /activity\+json/);
+  // While PUBLIC_KEY_PEM is the placeholder, activitypub.js short-circuits to
+  // 503 + text/plain (see commit e9caa541cd). The router's responsibility —
+  // delegate to AP, never pass to origin — is still what we assert. When a
+  // real RSA-2048 key replaces the PEM, flip these back to 200 + /activity\+json/.
+  assert.equal(res.status, 503);
+  assert.match(res.headers.get('content-type'), /text\/plain/);
   assert.equal(passThroughLog.length, 0, 'AP routes must not pass through to origin');
 });
