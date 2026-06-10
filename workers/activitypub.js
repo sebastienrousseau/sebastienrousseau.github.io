@@ -57,6 +57,29 @@ const PUBLIC_KEY_PEM = [
 
 export const AP_ROUTES = new Set(['/.well-known/webfinger', '/actor', '/inbox', '/outbox']);
 
+// True when the embedded PUBLIC_KEY_PEM has been replaced with a real key —
+// i.e. it no longer contains the literal "placeholder" sentinel that the
+// audit-2026-06-10 short-circuit checks for. While false, every AP route
+// returns 503 so we never advertise a cryptographically-useless actor to
+// the Fediverse. Replace the PEM and this flips to true automatically.
+export const HAS_REAL_KEY = !PUBLIC_KEY_PEM.includes('placeholder');
+
+// 503 short-circuit body shared by every AP route while HAS_REAL_KEY is false.
+// Retry-After 86400 (24 h) tells well-behaved crawlers to back off for a day.
+export function activityPubServiceUnavailable() {
+  return new Response(
+    'ActivityPub temporarily unavailable — actor key not configured.\n',
+    {
+      status: 503,
+      headers: {
+        'retry-after': '86400',
+        'content-type': 'text/plain; charset=utf-8',
+        'cache-control': 'no-store',
+      },
+    },
+  );
+}
+
 const JSON_AP = 'application/activity+json; charset=utf-8';
 const JSON_JRD = 'application/jrd+json; charset=utf-8';
 
@@ -208,9 +231,15 @@ export function inbox(request) {
  * Route dispatcher. Returns a Response for AP routes, or null for
  * pass-through (lang-router continues its locale + CSP handling).
  */
-export async function tryActivityPub(request, fetchOrigin) {
+export async function tryActivityPub(request, fetchOrigin, hasRealKey = HAS_REAL_KEY) {
   const { pathname } = new URL(request.url);
   if (!AP_ROUTES.has(pathname)) return null;
+
+  // Short-circuit while the actor key is the placeholder PEM. Once a real
+  // RSA-2048 key replaces PUBLIC_KEY_PEM, HAS_REAL_KEY flips to true and
+  // the dispatch path below runs. The hasRealKey parameter exists so tests
+  // can exercise the dispatch path without rebuilding the module.
+  if (!hasRealKey) return activityPubServiceUnavailable();
 
   // AP_ROUTES.has() above guarantees the pathname matches one of the four
   // branches below — no default needed (and adding one would be dead code

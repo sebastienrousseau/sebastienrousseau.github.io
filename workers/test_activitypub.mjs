@@ -16,6 +16,8 @@ import { strict as assert } from 'node:assert';
 
 import {
   AP_ROUTES,
+  HAS_REAL_KEY,
+  activityPubServiceUnavailable,
   webfinger,
   actor,
   outbox,
@@ -231,21 +233,79 @@ test('tryActivityPub: returns null for non-AP routes', async () => {
 });
 
 test('tryActivityPub: webfinger', async () => {
-  const r = await tryActivityPub(get(`/.well-known/webfinger?resource=${encodeURIComponent(ACCT)}`));
+  const r = await tryActivityPub(get(`/.well-known/webfinger?resource=${encodeURIComponent(ACCT)}`), undefined, true);
   assert.equal(r.status, 200);
 });
 
 test('tryActivityPub: actor', async () => {
-  const r = await tryActivityPub(get('/actor'));
+  const r = await tryActivityPub(get('/actor'), undefined, true);
   assert.equal(r.status, 200);
 });
 
 test('tryActivityPub: outbox', async () => {
-  const r = await tryActivityPub(get('/outbox'), fakeOrigin({ posts: [] }));
+  const r = await tryActivityPub(get('/outbox'), fakeOrigin({ posts: [] }), true);
   assert.equal(r.status, 200);
 });
 
 test('tryActivityPub: inbox POST', async () => {
-  const r = await tryActivityPub(post('/inbox'));
+  const r = await tryActivityPub(post('/inbox'), undefined, true);
+  assert.equal(r.status, 202);
+});
+
+
+// ---------------------------------------------------------------------------
+// audit-2026-06-10 — 503 short-circuit while PUBLIC_KEY_PEM is the placeholder
+// ---------------------------------------------------------------------------
+
+test('HAS_REAL_KEY is false while PUBLIC_KEY_PEM contains the placeholder', () => {
+  // Regression guard: once a real key replaces the placeholder PEM, this
+  // assertion flips to .ok(HAS_REAL_KEY) — at which point delete this test
+  // and rely on the dispatch-path tests below.
+  assert.equal(HAS_REAL_KEY, false);
+});
+
+test('activityPubServiceUnavailable returns 503 with retry-after', async () => {
+  const r = activityPubServiceUnavailable();
+  assert.equal(r.status, 503);
+  assert.equal(r.headers.get('retry-after'), '86400');
+  assert.match(r.headers.get('content-type'), /text\/plain/);
+  assert.equal(r.headers.get('cache-control'), 'no-store');
+});
+
+for (const path of ['/.well-known/webfinger', '/actor', '/outbox', '/inbox']) {
+  test(`tryActivityPub short-circuits ${path} to 503 while key is placeholder`, async () => {
+    const r = await tryActivityPub(get(path));
+    assert.equal(r.status, 503);
+  });
+}
+
+test('tryActivityPub dispatches /.well-known/webfinger when hasRealKey=true', async () => {
+  const r = await tryActivityPub(
+    get(`/.well-known/webfinger?resource=${encodeURIComponent(ACCT)}`),
+    undefined,
+    true,
+  );
+  assert.equal(r.status, 200);
+});
+
+test('tryActivityPub dispatches /actor when hasRealKey=true', async () => {
+  const r = await tryActivityPub(get('/actor'), undefined, true);
+  assert.equal(r.status, 200);
+  assert.match(r.headers.get('content-type'), /activity\+json/);
+});
+
+test('tryActivityPub dispatches /outbox when hasRealKey=true', async () => {
+  // Inject a fake fetchOrigin so we don't hit the real CDN.
+  const fakeFetch = async () =>
+    new Response(JSON.stringify({ posts: [] }), {
+      status: 200,
+      headers: { 'content-type': 'application/json' },
+    });
+  const r = await tryActivityPub(get('/outbox'), fakeFetch, true);
+  assert.equal(r.status, 200);
+});
+
+test('tryActivityPub dispatches /inbox when hasRealKey=true', async () => {
+  const r = await tryActivityPub(post('/inbox', ''), undefined, true);
   assert.equal(r.status, 202);
 });
