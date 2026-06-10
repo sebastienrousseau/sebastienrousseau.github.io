@@ -1,22 +1,101 @@
-"""Shared frontmatter helpers used by post_enrich.py + postbuild.py.
+"""Shared frontmatter helpers — the ONE canonical parser for the repo.
 
 Posts in ``_posts/`` carry a YAML frontmatter block delimited by ``---``
-lines. We parse the subset of YAML we actually use (``key: "value"`` and
-``key: value`` on a single line), not the full spec.
+lines. We parse the subset of YAML we actually use (``key: "value"``,
+``key: 'value'`` and ``key: value`` on a single line), not the full spec.
 
-Two complementary APIs:
+Three complementary APIs:
 
+* ``parse_frontmatter`` — the canonical dict-based parser. Returns
+  ``(frontmatter_dict, body)``. ``_core.parse_frontmatter`` and
+  ``build_translations.parse_frontmatter`` are thin re-exports of it.
 * ``split_frontmatter`` / ``fm_get`` / ``fm_set`` — line-based, preserves
   the original frontmatter ordering and formatting (used by
   post_enrich.py to rewrite single fields without churning the rest).
-* ``read_fm`` — dict-based, useful when you only want to *read* fields
-  (used by postbuild.py to look up titles, urls, last_reviewed dates).
+* ``read_fm`` — dict-based file wrapper, useful when you only want to
+  *read* fields (used by postbuild.py to look up titles, urls,
+  last_reviewed dates).
 """
 
 from __future__ import annotations
 
 import re
 from pathlib import Path
+
+# ---------------------------------------------------------------------------
+# Canonical parser (dict-based)
+#
+# Union of the behaviours of the three historical implementations
+# (scripts/lib/_core.py, scripts/generators/build_translations.py, and
+# the original read_fm below):
+#
+# * the block must open with a ``---`` line at the very start and close
+#   with another ``---`` line — otherwise ``({}, text)`` is returned
+#   unchanged (the _core / gen_articles contract);
+# * values may be double-quoted (with escapes), single-quoted (with
+#   escapes — the build_translations extension), or bare (the read_fm
+#   extension); bare values are whitespace-trimmed. A value that *opens*
+#   with a quote but isn't a well-formed quoted string (e.g. an
+#   unescaped quote inside) is dropped — the historical _core /
+#   build_translations behaviour, which downstream renderers rely on to
+#   fall back to derived values instead of ingesting mangled text;
+# * keys match ``[A-Za-z][A-Za-z0-9_-]*`` (union of the three key
+#   grammars);
+# * repeated keys: last occurrence wins by default (the _core /
+#   build_translations contract); ``first_wins=True`` preserves the
+#   read_fm contract;
+# * the body is everything after the closing ``---`` with leading
+#   newlines stripped (the _core contract; markdown rendering is
+#   insensitive to the leading blank line build_translations kept).
+# ---------------------------------------------------------------------------
+
+_KEY = r"[A-Za-z][A-Za-z0-9_-]*"
+_QUOTED_LINE_RE = re.compile(
+    rf"^({_KEY}):\s*(?:\"((?:[^\"\\]|\\.)*)\"|'((?:[^'\\]|\\.)*)')\s*$"
+)
+_BARE_LINE_RE = re.compile(rf"^({_KEY}):\s*(\S.*?)\s*$")
+
+
+def parse_frontmatter(text: str, *, first_wins: bool = False) -> tuple[dict[str, str], str]:
+    """Parse a Markdown document's YAML frontmatter.
+
+    Returns ``({}, text)`` if the document doesn't open with a ``---``
+    line or the closing ``---`` delimiter is missing. Otherwise returns
+    a flat ``key -> value`` dict and the body after the delimiter.
+
+    Deliberately *not* full PyYAML — that would pull in a dependency,
+    and the pipeline only emits single-line frontmatter anyway.
+    Multi-line blocks aren't supported.
+    """
+    lines = text.splitlines(keepends=True)
+    if not lines or lines[0].strip() != "---":
+        return {}, text
+    close = next((i for i in range(1, len(lines)) if lines[i].strip() == "---"), None)
+    if close is None:
+        return {}, text
+    fm: dict[str, str] = {}
+    for raw in lines[1:close]:
+        line = raw.strip()
+        m = _QUOTED_LINE_RE.match(line)
+        if m:
+            value = m.group(2) if m.group(2) is not None else m.group(3)
+        else:
+            m = _BARE_LINE_RE.match(line)
+            if not m:
+                continue
+            value = m.group(2)
+            if value[0] in "\"'":
+                # Opens like a quoted string but didn't parse as one
+                # (unescaped inner quote, missing closer, …) — drop the
+                # key rather than ingest mangled text.
+                continue
+        key = m.group(1)
+        if first_wins:
+            fm.setdefault(key, value)
+        else:
+            fm[key] = value
+    body = "".join(lines[close + 1 :]).lstrip("\n")
+    return fm, body
 
 # ---------------------------------------------------------------------------
 # Line-based API (preserves source formatting)
@@ -65,19 +144,14 @@ def fm_set(fm_lines: list[str], key: str, value: str) -> list[str]:
 # ---------------------------------------------------------------------------
 
 
-_FM_RE = re.compile(r"^---\s*\n(.*?)\n---", re.DOTALL)
-_FM_FIELD_RE = re.compile(r'^([a-zA-Z_-]+):\s*"?([^"\n]*)"?', re.MULTILINE)
-
-
 def read_fm(path: Path) -> dict[str, str]:
     """Parse the first frontmatter block from ``path`` into a flat dict.
-    Repeated keys are kept as the first occurrence (``setdefault``)."""
-    src = path.read_text(encoding="utf-8", errors="ignore")
-    m = _FM_RE.match(src)
-    if not m:
+    Repeated keys are kept as the first occurrence. Returns ``{}`` for
+    missing/unreadable files — the fail-soft contract every caller
+    expects."""
+    try:
+        src = path.read_text(encoding="utf-8", errors="ignore")
+    except OSError:
         return {}
-    fm_text = m.group(1)
-    out: dict[str, str] = {}
-    for fm in _FM_FIELD_RE.finditer(fm_text):
-        out.setdefault(fm.group(1), fm.group(2).strip())
-    return out
+    fm, _body = parse_frontmatter(src, first_wins=True)
+    return fm
