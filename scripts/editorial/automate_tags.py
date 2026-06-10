@@ -178,7 +178,7 @@ def load_translations() -> dict[str, dict[str, str]]:
         return {}
     try:
         return json.loads(TRANSLATIONS_FILE.read_text(encoding="utf-8"))
-    except Exception as e:
+    except (json.JSONDecodeError, OSError, UnicodeDecodeError) as e:
         print(f"Error loading tag translations: {e}")
         return {}
 

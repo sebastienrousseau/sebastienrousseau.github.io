@@ -74,6 +74,15 @@ jobs:
           pip install --quiet 'ruff==0.15.*' pytest radon pytest-cov
           pip install --quiet -r requirements.txt
 
+      - name: Vulnerability scan (pip-audit)
+        # Audit the runtime deps in requirements.txt against the OSV / PyPI
+        # advisory database. Fails the build on any non-deferred advisory;
+        # use `pip-audit --ignore-vuln <id>` in this step's body to defer
+        # with a comment justifying the deferral.
+        run: |
+          pip install --quiet pip-audit
+          pip-audit --strict -r requirements.txt
+
       - name: Lint (ruff)
         run: ruff check scripts/ tests/
 

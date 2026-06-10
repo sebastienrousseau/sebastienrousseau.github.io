@@ -116,3 +116,14 @@ workers/lang-router.bundled.js
 .pa11y-cache-manifest.json
 pa11y.json
 _data/pa11y-cache.json
+
+# --- audit 2026-06-10 ---
+# Caches and audit-cycle output that should never enter source control.
+.benchmarks/
+.coverage
+.coverage.*
+.pytest_cache/
+.ruff_cache/
+_posts_build/
+project-docs/audits/*.md
+audits/lh/

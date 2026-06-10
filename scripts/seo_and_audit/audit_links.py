@@ -80,7 +80,7 @@ def check_external(url: str) -> tuple[str, int | str]:
             return url, r.status
     except urllib.error.HTTPError as e:
         return url, e.code
-    except Exception as e:
+    except (urllib.error.URLError, TimeoutError, OSError, ValueError) as e:
         return url, f"ERR {type(e).__name__}"
 
 

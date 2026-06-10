@@ -123,7 +123,7 @@ def check_banner_reachable(banner: str, timeout: float = 10.0) -> list[str]:
         with urllib.request.urlopen(req, timeout=timeout) as r:
             if r.status not in (200, 206):
                 return [f"banner: {banner} returned HTTP {r.status}"]
-    except Exception as exc:
+    except (urllib.error.URLError, TimeoutError, OSError, ValueError) as exc:
         return [f"banner: {banner} unreachable ({exc})"]
     return []
 
@@ -225,7 +225,7 @@ def check_external_links(body: str, timeout: float = 10.0) -> list[str]:
             with urllib.request.urlopen(req, timeout=timeout) as r:
                 if r.status not in (200, 206):
                     return f"link-rot: {url} → HTTP {r.status}"
-        except Exception as exc:
+        except (urllib.error.URLError, TimeoutError, OSError, ValueError) as exc:
             return f"link-rot: {url} → {exc}"
         return None
 

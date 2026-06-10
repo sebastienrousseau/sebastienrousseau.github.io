@@ -36,3 +36,9 @@ repos:
         language: system
         pass_filenames: false
         always_run: true
+      - id: check-added-ds-store
+        name: Reject .DS_Store
+        entry: bash -c 'if git diff --cached --name-only | grep -q "\\.DS_Store$"; then echo "refusing to commit .DS_Store"; exit 1; fi'
+        language: system
+        pass_filenames: false
+        always_run: true
