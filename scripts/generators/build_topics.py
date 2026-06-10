@@ -180,6 +180,22 @@ def read_frontmatter(slug: str) -> dict[str, str]:
 _DATED_FILE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}-.+\.md$")
 
 
+def _dated_post_frontmatter() -> list[tuple[str, str, dict[str, str]]]:
+    """All dated ``_posts/`` entries as ``(date, slug, frontmatter)``
+    rows, skipping files without parseable frontmatter."""
+    dated: list[tuple[str, str, dict[str, str]]] = []
+    if not POSTS.is_dir():
+        return dated
+    for md in POSTS.iterdir():
+        if not _DATED_FILE_RE.match(md.name):
+            continue
+        fm = _core_read_frontmatter(md)
+        if not fm:
+            continue
+        dated.append((md.stem[:10], md.stem, fm))
+    return dated
+
+
 def _discover_frontmatter_topic_assignments() -> dict[str, list[str]]:
     """Scan ``_posts/<date>-*.md`` for ``topic_clusters:`` frontmatter
     entries and return ``{cluster_key: [slug, ...]}`` (slugs in
@@ -194,16 +210,7 @@ def _discover_frontmatter_topic_assignments() -> dict[str, list[str]]:
     just don't appear in any topic page — same as before.
     """
     out: dict[str, list[str]] = {}
-    if not POSTS.is_dir():
-        return out
-    dated: list[tuple[str, str, dict[str, str]]] = []
-    for md in POSTS.iterdir():
-        if not _DATED_FILE_RE.match(md.name):
-            continue
-        fm = _core_read_frontmatter(md)
-        if not fm:
-            continue
-        dated.append((md.stem[:10], md.stem, fm))
+    dated = _dated_post_frontmatter()
     # Latest article first.
     dated.sort(key=lambda r: r[0], reverse=True)
     for _date, slug, fm in dated:
@@ -263,22 +270,29 @@ def _format_date(iso_like: str) -> str:
     return iso_like
 
 
+def _field(fm: dict[str, str], key: str, default: str = "") -> str:
+    return fm.get(key) or default
+
+
+def _human_date(date_iso: str) -> str:
+    from datetime import datetime as _dt
+
+    try:
+        return _dt.strptime(date_iso, "%Y-%m-%d").strftime("%b %-d, %Y")
+    except ValueError:
+        return date_iso
+
+
 def render_card(slug: str, fm: dict[str, str]) -> str:
     """Render a single newsroom-card for the given post slug + frontmatter."""
-    title = fm.get("title") or slug
-    desc = fm.get("description") or ""
-    banner = fm.get("banner") or "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
-    banner_alt = fm.get("banner_alt") or title
-    keywords = fm.get("keywords") or ""
+    title = _field(fm, "title", slug)
+    desc = _field(fm, "description")
+    banner = _field(fm, "banner", "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png")
+    banner_alt = _field(fm, "banner_alt", title)
+    keywords = _field(fm, "keywords")
     eyebrow = " · ".join(k.strip().title() for k in keywords.split(",")[:3] if k.strip())
-    date_iso = _format_date(fm.get("date") or slug[:10])
-    date_human = ""
-    try:
-        from datetime import datetime as _dt
-
-        date_human = _dt.strptime(date_iso, "%Y-%m-%d").strftime("%b %-d, %Y")
-    except ValueError:
-        date_human = date_iso
+    date_iso = _format_date(_field(fm, "date", slug[:10]))
+    date_human = _human_date(date_iso)
 
     url = f"/{slug}/index.html"
     e_title = html.escape(title, quote=True)

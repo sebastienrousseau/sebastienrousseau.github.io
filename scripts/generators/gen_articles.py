@@ -533,6 +533,18 @@ def _tuple_from_post(date_str: str, path: _Path) -> tuple | None:
     )
 
 
+def _dated_posts() -> list[tuple[str, _Path]]:
+    """All `_posts/YYYY-MM-DD-*.md` entries as (date, path) pairs."""
+    if not POSTS.is_dir():
+        return []
+    dated: list[tuple[str, _Path]] = []
+    for md in POSTS.glob("*.md"):
+        m = _DATED_RE.match(md.name)
+        if m:
+            dated.append((m.group(1), md))
+    return dated
+
+
 def _discover_missing_articles() -> list[tuple]:
     """Scan _posts/YYYY-MM-DD-*.md for any article newer than ARTICLES[0]
     that is not already present in ARTICLES (matched by date + slug).
@@ -543,13 +555,7 @@ def _discover_missing_articles() -> list[tuple]:
     which meant if more than one daily article published between two
     ARTICLES[] refreshes, the in-between ones silently disappeared from
     /articles/. The fix is to surface ALL missing dated posts."""
-    if not POSTS.is_dir():
-        return []
-    dated: list[tuple[str, _Path]] = []
-    for md in POSTS.glob("*.md"):
-        m = _DATED_RE.match(md.name)
-        if m:
-            dated.append((m.group(1), md))
+    dated = _dated_posts()
     if not dated:
         return []
     head_date = ARTICLES[0][0] if ARTICLES else ""

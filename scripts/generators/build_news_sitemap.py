@@ -70,6 +70,17 @@ def _slug_for_locale(
     return None
 
 
+def _slug_maps(lang_code: str) -> tuple[dict[str, str], dict[str, str]]:
+    """``(en→lang, lang→en)`` slug maps for the locale; both empty for
+    ``en`` or when the slug registry is missing/unreadable."""
+    if lang_code == "en":
+        return {}, {}
+    slugs: dict[str, str] = {}
+    with contextlib.suppress(Exception):
+        slugs = _lang_registry.load_slugs(lang_code).get("articles", {})
+    return slugs, {v: k for k, v in slugs.items()}
+
+
 def _iter_locale_entries(lang_code: str, now: datetime) -> Iterator[dict]:
     """Yield one entry dict per dated post in `lang_code` that falls
     inside the rolling 48 h news window."""
@@ -77,16 +88,7 @@ def _iter_locale_entries(lang_code: str, now: datetime) -> Iterator[dict]:
     if not src_dir.is_dir():
         return
 
-    if lang_code == "en":
-        en_to_lang: dict[str, str] = {}
-        lang_to_en: dict[str, str] = {}
-    else:
-        slugs: dict[str, str] = {}
-        with contextlib.suppress(Exception):
-            slugs = _lang_registry.load_slugs(lang_code).get("articles", {})
-        en_to_lang = slugs
-        lang_to_en = {v: k for k, v in slugs.items()}
-
+    en_to_lang, lang_to_en = _slug_maps(lang_code)
     pub_name = _resolve_pub_name(lang_code)
 
     for md in sorted(src_dir.glob("*.md")):

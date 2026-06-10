@@ -91,8 +91,8 @@ jobs:
 
       - name: Cyclomatic complexity (radon)
         run: |
-          radon cc scripts/postbuild/postbuild.py scripts/postbuild/postbuild_lib/ scripts/generators/build_translations/ -a -s
-          c_or_worse=$(radon cc scripts/postbuild/postbuild.py scripts/postbuild/postbuild_lib/ scripts/generators/build_translations/ -n C -s 2>&1)
+          radon cc scripts/postbuild/postbuild.py scripts/postbuild/postbuild_lib/ scripts/generators/ scripts/lib/ -a -s
+          c_or_worse=$(radon cc scripts/postbuild/postbuild.py scripts/postbuild/postbuild_lib/ scripts/generators/ scripts/lib/ -n C -s 2>&1)
           if [ -n "$c_or_worse" ]; then
             echo "::error::C-grade or worse complexity found:"
             echo "$c_or_worse"

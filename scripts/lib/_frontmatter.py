@@ -50,10 +50,23 @@ from pathlib import Path
 # ---------------------------------------------------------------------------
 
 _KEY = r"[A-Za-z][A-Za-z0-9_-]*"
-_QUOTED_LINE_RE = re.compile(
-    rf"^({_KEY}):\s*(?:\"((?:[^\"\\]|\\.)*)\"|'((?:[^'\\]|\\.)*)')\s*$"
-)
+_QUOTED_LINE_RE = re.compile(rf"^({_KEY}):\s*(?:\"((?:[^\"\\]|\\.)*)\"|'((?:[^'\\]|\\.)*)')\s*$")
 _BARE_LINE_RE = re.compile(rf"^({_KEY}):\s*(\S.*?)\s*$")
+
+
+def _parse_fm_line(line: str) -> tuple[str, str] | None:
+    """Parse one ``key: value`` frontmatter line, or ``None`` if the
+    line isn't a well-formed field. A value that *opens* with a quote
+    but isn't a well-formed quoted string (unescaped inner quote,
+    missing closer, …) is dropped rather than ingested mangled."""
+    m = _QUOTED_LINE_RE.match(line)
+    if m:
+        value = m.group(2) if m.group(2) is not None else m.group(3)
+        return m.group(1), value
+    m = _BARE_LINE_RE.match(line)
+    if not m or m.group(2)[0] in "\"'":
+        return None
+    return m.group(1), m.group(2)
 
 
 def parse_frontmatter(text: str, *, first_wins: bool = False) -> tuple[dict[str, str], str]:
@@ -75,27 +88,17 @@ def parse_frontmatter(text: str, *, first_wins: bool = False) -> tuple[dict[str,
         return {}, text
     fm: dict[str, str] = {}
     for raw in lines[1:close]:
-        line = raw.strip()
-        m = _QUOTED_LINE_RE.match(line)
-        if m:
-            value = m.group(2) if m.group(2) is not None else m.group(3)
-        else:
-            m = _BARE_LINE_RE.match(line)
-            if not m:
-                continue
-            value = m.group(2)
-            if value[0] in "\"'":
-                # Opens like a quoted string but didn't parse as one
-                # (unescaped inner quote, missing closer, …) — drop the
-                # key rather than ingest mangled text.
-                continue
-        key = m.group(1)
+        parsed = _parse_fm_line(raw.strip())
+        if parsed is None:
+            continue
+        key, value = parsed
         if first_wins:
             fm.setdefault(key, value)
         else:
             fm[key] = value
     body = "".join(lines[close + 1 :]).lstrip("\n")
     return fm, body
+
 
 # ---------------------------------------------------------------------------
 # Line-based API (preserves source formatting)

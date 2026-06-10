@@ -47,13 +47,32 @@ _WC_RE = re.compile(r'"wordCount":(\d+)')
 _DATED_RE = re.compile(r"^\d{4}-\d{2}-\d{2}-")
 
 
-def collect_posts() -> list[dict[str, object]]:
-    """Walk _posts/, return one record per dated post."""
-    out: list[dict[str, object]] = []
+def _topic_index() -> dict[str, list[str]]:
     slug_to_topics: dict[str, list[str]] = {}
     for tslug, spec in TOPICS.items():
         for s in spec["slugs"]:  # type: ignore[index]
             slug_to_topics.setdefault(s, []).append(tslug)
+    return slug_to_topics
+
+
+def _word_count(stem: str) -> int | None:
+    """Word count is added by postbuild — peek at the rendered page if
+    it exists at this point in the pipeline."""
+    rendered = PUBLIC / stem / "index.html"
+    if not rendered.is_file():
+        return None
+    m = _WC_RE.search(rendered.read_text(encoding="utf-8", errors="ignore"))
+    return int(m.group(1)) if m else None
+
+
+def _split_keywords(fm: dict[str, str]) -> list[str]:
+    return [k.strip() for k in (fm.get("keywords") or "").split(",") if k.strip()]
+
+
+def collect_posts() -> list[dict[str, object]]:
+    """Walk _posts/, return one record per dated post."""
+    out: list[dict[str, object]] = []
+    slug_to_topics = _topic_index()
 
     for md in sorted(POSTS.glob("*.md")):
         stem = md.stem
@@ -62,21 +81,14 @@ def collect_posts() -> list[dict[str, object]]:
         fm = read_frontmatter(stem)
         if not fm:
             continue
-        # Word count is added by postbuild — peek at the rendered page
-        # if it exists at this point in the pipeline.
-        wc: int | None = None
-        rendered = PUBLIC / stem / "index.html"
-        if rendered.is_file():
-            m = _WC_RE.search(rendered.read_text(encoding="utf-8", errors="ignore"))
-            if m:
-                wc = int(m.group(1))
+        wc = _word_count(stem)
         record: dict[str, object] = {
             "slug": stem,
             "url": f"{BASE}/{stem}/index.html",
             "date": stem[:10],
             "title": fm.get("title") or stem,
             "description": fm.get("description", ""),
-            "keywords": [k.strip() for k in (fm.get("keywords") or "").split(",") if k.strip()],
+            "keywords": _split_keywords(fm),
             "banner": fm.get("banner", ""),
             "topics": slug_to_topics.get(stem, []),
             "language": fm.get("language", "en-GB"),

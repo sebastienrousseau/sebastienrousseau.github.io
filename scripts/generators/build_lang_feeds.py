@@ -105,30 +105,34 @@ def parse_frontmatter(text: str) -> dict[str, str]:
     return fm
 
 
+_DATE_FORMATS = ("%Y-%m-%d", "%B %d, %Y", "%b %d, %Y")
+
+
+def _parse_date_strptime(s: str) -> datetime | None:
+    for fmt in _DATE_FORMATS:
+        try:
+            return datetime.strptime(s, fmt)
+        except ValueError:
+            continue
+    return None
+
+
+def _parse_date_localised(s: str) -> datetime | None:
+    """'26 octobre 2023'-style dates via the localised month table."""
+    m = re.match(r"^([A-Za-zÀ-ÿ]+)\s+(\d{1,2}),?\s+(\d{4})$", s)
+    if not m:
+        return None
+    month = _MONTHS.get(m.group(1)) or _MONTHS.get(m.group(1).lower())
+    if not month:
+        return None
+    return datetime(int(m.group(3)), month, int(m.group(2)))
+
+
 def parse_date(s: str) -> datetime:
     """Parse a frontmatter date string ('October 26, 2023' or '2023-10-26')
     to a tz-aware UTC datetime at 06:06:06 (mirrors Shokunin's RSS time)."""
     s = (s or "").strip()
-    if not s:
-        return datetime.now(tz=UTC)
-    try:
-        d = datetime.strptime(s, "%Y-%m-%d")
-    except ValueError:
-        d = None
-    if d is None:
-        try:
-            d = datetime.strptime(s, "%B %d, %Y")
-        except ValueError:
-            try:
-                d = datetime.strptime(s, "%b %d, %Y")
-            except ValueError:
-                d = None
-    if d is None:
-        m = re.match(r"^([A-Za-zÀ-ÿ]+)\s+(\d{1,2}),?\s+(\d{4})$", s)
-        if m:
-            month = _MONTHS.get(m.group(1)) or _MONTHS.get(m.group(1).lower())
-            if month:
-                d = datetime(int(m.group(3)), month, int(m.group(2)))
+    d = (_parse_date_strptime(s) or _parse_date_localised(s)) if s else None
     if d is None:
         return datetime.now(tz=UTC)
     return d.replace(hour=6, minute=6, second=6, tzinfo=UTC)
