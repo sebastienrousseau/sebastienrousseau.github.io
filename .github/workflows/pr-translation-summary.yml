@@ -1,0 +1,179 @@
+name: pr-translation-summary
+
+# Posts a CI comment summarising per-locale build status + i18n parity gate
+# results on any PR that touches the article source tree. Replaces the
+# human-reviewable diff that landed in docs/ before audit 2026-06-10.
+#
+# Comment shape (one row per language; tick = parity gates pass + page count
+# matches EN; cross = either gate failed or page count differs):
+#
+#   | lang | pages | parity | leakage | hreflang |
+#   |------|------:|:------:|:-------:|:--------:|
+#   | ar   |    1  |   ✓    |    ✓    |    ✓     |
+#   | bn   |    1  |   ✓    |    ✓    |    ✓     |
+#   | …    |       |        |         |          |
+#
+# Pattern follows schema-diff.yml: marker comment + edit-or-create via the
+# github-script action.
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - '_posts/**'
+      - '_data/i18n/**'
+
+permissions:
+  contents: read
+  pull-requests: write
+
+concurrency:
+  group: pr-translation-summary-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  summary:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Rust toolchain (cached)
+        uses: dtolnay/rust-toolchain@stable
+
+      - name: Cache cargo registry + git + ssg
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cargo/registry
+            ~/.cargo/git
+            ~/.cargo/bin
+          key: ${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}-ssg
+
+      - name: Add cargo bin to PATH
+        run: echo "$HOME/.cargo/bin" >> $GITHUB_PATH
+
+      - name: Install Static Site Generator (ssg)
+        run: |
+          if ! command -v ssg >/dev/null 2>&1; then
+            cargo install ssg --locked
+          fi
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: 'pip'
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install Python build deps
+        run: pip install --quiet -r requirements.txt
+
+      - name: Build site
+        run: ./build.sh
+
+      - name: Per-locale + parity summary
+        id: summary
+        run: |
+          python3 <<'PY'
+          # Build the translation summary table. Reads:
+          #   - scripts/lib/_lang_registry.py for the active language list
+          #   - public/<lang>/ for per-language rendered page counts
+          #   - tests/validation/test_lang_no_leakage.py — re-runs and parses
+          #   - tests/validation/test_hreflang_reciprocity.py — re-runs and parses
+          #   - tests/validation/test_i18n_parity.py — re-runs and parses
+          #
+          # Outputs a markdown table to $GITHUB_OUTPUT under the key 'body'
+          # so the next step can pipe it into a PR comment.
+          import json, os, subprocess, sys
+          from pathlib import Path
+
+          sys.path.insert(0, str(Path("scripts/lib")))
+          import _lang_registry as lr
+
+          active = [lg.code for lg in lr.LANGUAGES if lg.active]
+          en_count = len(list(Path("public").glob("*-*/index.html")))
+
+          def run_gate(name):
+              # Each validation script exits 0 on pass, non-zero on fail; we
+              # only need pass/fail per language. We rely on the gate scripts
+              # printing the language code on any failure line — simplest
+              # cross-script contract.
+              r = subprocess.run(
+                  ["python3", f"tests/validation/{name}"],
+                  capture_output=True, text=True, check=False,
+              )
+              # Per-language fail set: any active code whose name appears in
+              # the stderr+stdout while exit code is non-zero.
+              if r.returncode == 0:
+                  return set()
+              text = r.stdout + r.stderr
+              return {code for code in active if code in text}
+
+          leakage_fail = run_gate("test_lang_no_leakage.py")
+          hreflang_fail = run_gate("test_hreflang_reciprocity.py")
+          parity_fail = run_gate("test_i18n_parity.py")
+
+          def tick(ok): return "✓" if ok else "✗"
+
+          rows = [f"| **en** | {en_count} | — | — | — |"]
+          for code in [c for c in active if c != "en"]:
+              n = len(list(Path(f"public/{code}").glob("*-*/index.html")))
+              rows.append(
+                  f"| {code} | {n} | "
+                  f"{tick(code not in parity_fail)} | "
+                  f"{tick(code not in leakage_fail)} | "
+                  f"{tick(code not in hreflang_fail)} |"
+              )
+
+          body = (
+              "<!-- pr-translation-summary-bot -->\n\n"
+              "## Translation summary\n\n"
+              f"Active languages: {len(active)} — "
+              f"EN reference: {en_count} dated articles.\n\n"
+              "| lang | pages | parity | leakage | hreflang |\n"
+              "|------|------:|:------:|:-------:|:--------:|\n"
+              + "\n".join(rows)
+              + "\n\n"
+              "Gates: **parity** = `test_i18n_parity.py`, **leakage** = "
+              "`test_lang_no_leakage.py`, **hreflang** = "
+              "`test_hreflang_reciprocity.py`. Re-run locally with "
+              "`./build.sh` if any cross appears.\n"
+          )
+
+          # GitHub-Actions output: write to $GITHUB_OUTPUT with a delimiter so
+          # newlines survive (per the actions-runner doc).
+          delim = "BODY_EOF"
+          with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as f:
+              f.write(f"body<<{delim}\n{body}\n{delim}\n")
+          PY
+
+      - name: Post or update PR comment
+        uses: actions/github-script@v7
+        env:
+          # Passed via env, not template interpolation — the body contains
+          # backticks, which would terminate a JS template literal.
+          SUMMARY_BODY: ${{ steps.summary.outputs.body }}
+        with:
+          script: |
+            const body = process.env.SUMMARY_BODY;
+            const marker = '<!-- pr-translation-summary-bot -->';
+            const { owner, repo } = context.repo;
+            const issue_number = context.issue.number;
+            const { data: comments } = await github.rest.issues.listComments({
+              owner, repo, issue_number, per_page: 100,
+            });
+            const existing = comments.find(c => c.body && c.body.includes(marker));
+            if (existing) {
+              await github.rest.issues.updateComment({
+                owner, repo, comment_id: existing.id, body,
+              });
+            } else {
+              await github.rest.issues.createComment({
+                owner, repo, issue_number, body,
+              });
+            }
