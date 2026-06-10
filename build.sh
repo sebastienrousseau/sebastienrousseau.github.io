@@ -111,7 +111,7 @@ for f in public/main.*.js public/sw.*.js public/theme-init.*.js public/highlight
 done
 
 python3 scripts/generators/build_topics.py
-python3 scripts/generators/build_translations.py
+python3 scripts/generators/build_translations/__main__.py
 python3 scripts/generators/build_lang_feeds.py
 python3 scripts/generators/build_agent_api.py
 python3 scripts/generators/build_lead_magnets.py

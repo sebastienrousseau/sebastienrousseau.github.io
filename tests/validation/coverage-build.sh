@@ -63,7 +63,7 @@ run() {
 }
 
 run scripts/generators/build_topics.py
-run scripts/generators/build_translations.py
+run scripts/generators/build_translations/__main__.py
 run scripts/generators/build_lang_feeds.py
 run scripts/generators/build_agent_api.py
 run scripts/generators/build_lead_magnets.py
