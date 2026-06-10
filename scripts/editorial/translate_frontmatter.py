@@ -224,7 +224,9 @@ Example structure:
             print("  Timeout — retrying", file=sys.stderr)
             if attempt < 2:
                 time.sleep(5)
-        except Exception as e:
+        except (OSError, ValueError) as e:
+            # OSError: claude binary missing/unrunnable; ValueError: the
+            # empty-response raise above. Anything else should traceback.
             print(f"  Error: {e}", file=sys.stderr)
             if attempt < 2:
                 time.sleep(5)

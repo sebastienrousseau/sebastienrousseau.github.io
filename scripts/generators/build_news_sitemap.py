@@ -160,7 +160,9 @@ def main() -> int:
     try:
         build_news_sitemap()
         return 0
-    except Exception as exc:
+    except (OSError, ValueError, KeyError) as exc:
+        # I/O failures and malformed frontmatter get a clean exit-1;
+        # anything else is a programming error and should traceback.
         print(f"error: failed to build news sitemap: {exc}", file=sys.stderr)
         return 1
 

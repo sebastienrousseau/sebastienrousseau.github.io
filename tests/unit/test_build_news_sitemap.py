@@ -7,6 +7,8 @@ import xml.etree.ElementTree as ET
 from datetime import UTC, datetime, timedelta
 from pathlib import Path
 
+import pytest
+
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / "scripts" / "generators"))
 sys.path.insert(0, str(ROOT / "scripts" / "lib"))
@@ -128,7 +130,16 @@ def test_main_generates_correct_sitemap(tmp_path, monkeypatch):
 
 def test_main_error_handling(monkeypatch):
     def mock_build_news_sitemap():
-        raise Exception("Mock build failure")
+        raise OSError("Mock build failure")
 
     monkeypatch.setattr(bns, "build_news_sitemap", mock_build_news_sitemap)
     assert bns.main() == 1
+
+
+def test_main_lets_programming_errors_traceback(monkeypatch):
+    def mock_build_news_sitemap():
+        raise RuntimeError("unexpected bug")
+
+    monkeypatch.setattr(bns, "build_news_sitemap", mock_build_news_sitemap)
+    with pytest.raises(RuntimeError):
+        bns.main()
