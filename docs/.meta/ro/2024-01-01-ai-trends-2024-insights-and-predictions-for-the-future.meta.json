@@ -1,14 +1,14 @@
 {
-  "title": "AI Trends 2024: Insights and Predictions for the Future",
-  "keywords": "tendințe AI 2024, AI generativ, AI în educație, securitate cibernetică AI, AI în finanțe, creare conținut AI, explorare spațială AI, AI etic, AI în retail, analiză AI",
-  "date": "Jan 08, 2024",
-  "banner": "https://cloudcdn.pro/stocks/images/drone-view-of-london.webp",
-  "tags": "AI, 2024, Trends, IA generativă, cybersecurity, Education, Retail, Ethics, Analytics, Innovation, ISO 20022, criptografie post-cuantică, calcul cuantic, open source, Rust",
-  "locale": "ro_RO",
-  "description": "Tendințe AI 2024: AI generativ în finanțe, modele multimodale, LLM-uri pe dispozitiv și schimbările care vor redefini sectorul bancar și ingineria produselor.",
-  "subtitle": "Un An Decisiv pentru Tehnologie, Societate și Evoluție Etică",
-  "reading_time": 17,
   "language": "ro-RO",
+  "reading_time": 17,
+  "title": "AI Trends 2024: Insights and Predictions for the Future",
+  "banner": "https://cloudcdn.pro/stocks/images/drone-view-of-london.webp",
   "banner_alt": "Vedere cu drona asupra Londrei",
-  "word_count": 3453
+  "description": "Tendințe AI 2024: AI generativ în finanțe, modele multimodale, LLM-uri pe dispozitiv și schimbările care vor redefini sectorul bancar și ingineria produselor.",
+  "date": "Jan 08, 2024",
+  "word_count": 3453,
+  "subtitle": "Un An Decisiv pentru Tehnologie, Societate și Evoluție Etică",
+  "keywords": "tendințe AI 2024, AI generativ, AI în educație, securitate cibernetică AI, AI în finanțe, creare conținut AI, explorare spațială AI, AI etic, AI în retail, analiză AI",
+  "tags": "AI, 2024, Trends, IA generativă, cybersecurity, Education, Retail, Ethics, Analytics, Innovation, ISO 20022, criptografie post-cuantică, calcul cuantic, open source, Rust",
+  "locale": "ro_RO"
 }

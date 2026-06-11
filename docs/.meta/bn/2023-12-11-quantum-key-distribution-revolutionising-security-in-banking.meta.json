@@ -1,15 +1,15 @@
 {
-  "tags": "quantum, key, distribution, cryptography, cybersecurity, finance, banking, digital, innovation, blockchain, কোয়ান্টাম কম্পিউটিং, hsbc, trading, data, protection, future, ISO 20022, DORA, পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, AI",
-  "subtitle": "ব্যাংকিং খাতে আর্থিক-মানের নিরাপত্তার জন্য Quantum Key Distribution (QKD)।",
+  "excerpt": "As quantum computers pose a threat to traditional encryption methods, Quantum Key Distribution (QKD) emerges as a game-changer, offering unparalleled security.",
+  "word_count": 1094,
   "description": "কোয়ান্টাম কম্পিউটার প্রচলিত এনক্রিপশন পদ্ধতিকে হুমকির মুখে ফেলায়, Quantum Key Distribution (QKD) অতুলনীয় নিরাপত্তা প্রদান করে একটি যুগান্তকারী সমাধান হিসেবে আবির্ভূত হচ্ছে।",
-  "banner": "https://cloudcdn.pro/stocks/images/hsbc-from-the-docks.webp",
   "language": "bn-BD",
-  "keywords": "Quantum Key Distribution (QKD), কোয়ান্টাম নিরাপত্তা, ব্যাংকিং, আর্থিক শিল্প, ডিজিটাল ফিনান্স, সাইবার নিরাপত্তা, Quantum Computing, HSBC, Quantum Protection Trial, আর্থিক লেনদেন",
+  "date": "Dec 11, 2023",
+  "reading_time": 5,
+  "banner": "https://cloudcdn.pro/stocks/images/hsbc-from-the-docks.webp",
   "banner_alt": "HSBC ডকস থেকে দৃশ্য",
   "title": "Quantum Key Distribution Revolutionising Security in Banking",
-  "date": "Dec 11, 2023",
-  "word_count": 1094,
-  "locale": "bn_BD",
-  "reading_time": 5,
-  "excerpt": "As quantum computers pose a threat to traditional encryption methods, Quantum Key Distribution (QKD) emerges as a game-changer, offering unparalleled security."
+  "keywords": "Quantum Key Distribution (QKD), কোয়ান্টাম নিরাপত্তা, ব্যাংকিং, আর্থিক শিল্প, ডিজিটাল ফিনান্স, সাইবার নিরাপত্তা, Quantum Computing, HSBC, Quantum Protection Trial, আর্থিক লেনদেন",
+  "subtitle": "ব্যাংকিং খাতে আর্থিক-মানের নিরাপত্তার জন্য Quantum Key Distribution (QKD)।",
+  "tags": "quantum, key, distribution, cryptography, cybersecurity, finance, banking, digital, innovation, blockchain, কোয়ান্টাম কম্পিউটিং, hsbc, trading, data, protection, future, ISO 20022, DORA, পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, AI",
+  "locale": "bn_BD"
 }

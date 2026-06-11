@@ -1,13 +1,13 @@
 {
+  "banner_alt": "DateTime (DTT), Ihr unverzichtbares Toolkit für Datums- und Zeitoperationen.",
+  "keywords": "DateTime, DTT, Rust-Bibliothek, Parsen, Validieren, Manipulieren, Formatieren, Datum, Zeit",
+  "banner": "https://cloudcdn.pro/clients/dtt/v1/logos/dtt.svg",
+  "word_count": 814,
+  "language": "de",
   "subtitle": "DTT, die hochpräzise Rust-Bibliothek für Datums- und Zeitoperationen",
   "reading_time": 4,
-  "title": "Effizientes Datums- und Zeitmanagement mit DateTime (DTT)",
-  "locale": "de_DE",
-  "language": "de",
-  "keywords": "DateTime, DTT, Rust-Bibliothek, Parsen, Validieren, Manipulieren, Formatieren, Datum, Zeit",
   "description": "DateTime (DTT) ist eine Rust-Bibliothek zum Parsen, Validieren, Manipulieren und Formatieren von Datums- und Zeitangaben — hohe Präzision, breite Funktionalität.",
-  "word_count": 814,
   "date": "Dec 04, 2023",
-  "banner": "https://cloudcdn.pro/clients/dtt/v1/logos/dtt.svg",
-  "banner_alt": "DateTime (DTT), Ihr unverzichtbares Toolkit für Datums- und Zeitoperationen."
+  "title": "Effizientes Datums- und Zeitmanagement mit DateTime (DTT)",
+  "locale": "de_DE"
 }

@@ -2,13 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/zh-hans/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-Hans</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-11T00:09:27+00:00</news:publication_date>
+    <news:title>CloudCDN：2026 年 AI原生 边缘的开源蓝图</news:title>
+    <news:keywords>CloudCDN, AI原生 边缘, 开源 CDN, MCP, Cloudflare Workers, Durable Objects, 签名URL, passkeys, SLSA, 边缘基础设施</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/zh-hans/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-Hans</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-11T00:09:27+00:00</news:publication_date>
+    <news:title>2026 银行运营韧性指数：AI、云、量子、支付与第三方集中风险</news:title>
+    <news:keywords>银行运营韧性指数 2026, DORA 韧性, AI 运营风险, 云集中风险, 银行量子风险, 支付韧性</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/zh-hans/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>zh-Hans</news:language>
     </news:publication>
-    <news:publication_date>2026-06-08T12:45:04+00:00</news:publication_date>
+    <news:publication_date>2026-06-11T00:09:27+00:00</news:publication_date>
     <news:title>2026 自主财务指数：智能体司库、可编程流动性、代币化存款与实时现金管控</news:title>
     <news:keywords>2026 自主财务, 智能体司库, 可编程流动性, 代币化存款司库, 实时司库, 现金管理 AI, ISO 20022, JPM Coin, Kinexys, BIS</news:keywords>
   </news:news>
@@ -20,7 +44,7 @@
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>zh-Hans</news:language>
     </news:publication>
-    <news:publication_date>2026-06-08T12:45:04+00:00</news:publication_date>
+    <news:publication_date>2026-06-11T00:09:27+00:00</news:publication_date>
     <news:title>2026 年的多通道银行:卡、A2A、稳定币、RTP、FedNow 与 Open Banking 合于一套战略</news:title>
     <news:keywords>支付编排层, FedNow 与 RTP, FedNow 与 ACH, 稳定币结算, USDC 原子结算, ISO 20022 pacs.008, 账户到账户 A2A, Open Banking API, 预筹流动性, 7×24 流动性陷阱, 2026 多通道银行, 支付路由引擎, ERP 对账</news:keywords>
   </news:news>
@@ -32,7 +56,7 @@
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>zh-Hans</news:language>
     </news:publication>
-    <news:publication_date>2026-06-08T12:45:04+00:00</news:publication_date>
+    <news:publication_date>2026-06-11T00:09:27+00:00</news:publication_date>
     <news:title>后量子支付基础设施:为何银行可能替换而非改造传统通道</news:title>
     <news:keywords>后量子密码学, PQC 支付, 密码敏捷性, 现收割后解密, HNDL, NIST 后量子标准, ML-KEM, ML-DSA, FIPS 203, FIPS 204, 支付通道迁移, ISO 20022 PQC, SWIFT MT 替换, HSM, PKI 崩塌, 运营韧性, Quantum Computing Cybersecurity Preparedness Act</news:keywords>
   </news:news>

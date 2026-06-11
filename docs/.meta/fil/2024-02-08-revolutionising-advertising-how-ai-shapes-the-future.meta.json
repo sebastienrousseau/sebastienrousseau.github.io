@@ -1,14 +1,14 @@
 {
-  "reading_time": 4,
-  "banner_alt": "امرأة آلية مع فراشات وأزهار",
-  "language": "fil-PH",
-  "description": "كيف يُحوِّل الذكاء الاصطناعي الإعلان — رؤى حول Rufus من Amazon وأحدث تطورات Meta. اكتشف الأثر على إشراك المستهلك.",
-  "word_count": 962,
   "title": "الذكاء الاصطناعي التوليدي في الإعلان: Amazon Rufus وMeta",
+  "word_count": 962,
+  "reading_time": 4,
   "locale": "fil_PH",
-  "subtitle": "كيف يُحوِّل الذكاء الاصطناعي تفاعلات المستهلكين وديناميكيات الإعلان",
+  "language": "fil-PH",
   "keywords": "الذكاء الاصطناعي في الإعلان, Amazon Rufus, أدوات Meta AI, استهداف المستهلكين, تكنولوجيا الإعلان, روبوتات الدردشة, اتجاهات التسويق الرقمي, تحليلات الذكاء الاصطناعي, الذكاء الاصطناعي الإبداعي, تحسين الحملات",
-  "date": "Feb 08, 2024",
+  "description": "كيف يُحوِّل الذكاء الاصطناعي الإعلان — رؤى حول Rufus من Amazon وأحدث تطورات Meta. اكتشف الأثر على إشراك المستهلك.",
   "banner": "https://cloudcdn.pro/stocks/images/advertising-ai.webp",
-  "tags": "AI, Advertising, Amazon, Meta, Chatbots, Marketing, Technology, Analytics, Digital, Optimization, ISO 20022, post-quantum cryptography"
+  "date": "Feb 08, 2024",
+  "tags": "AI, Advertising, Amazon, Meta, Chatbots, Marketing, Technology, Analytics, Digital, Optimization, ISO 20022, post-quantum cryptography",
+  "banner_alt": "امرأة آلية مع فراشات وأزهار",
+  "subtitle": "كيف يُحوِّل الذكاء الاصطناعي تفاعلات المستهلكين وديناميكيات الإعلان"
 }

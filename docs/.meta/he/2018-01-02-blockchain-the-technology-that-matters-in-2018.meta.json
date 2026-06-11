@@ -1,14 +1,14 @@
 {
-  "keywords": "blockchain, العملة المشفّرة, Bitcoin, P2P, smart contract, السجل الموزّع, التمويل, سلسلة التوريد, الهويّة الرقمية, الترميز",
-  "language": "he-IL",
+  "subtitle": "تعمية المفتاح الخاص وشبكات النِدّ-لنِدّ في خدمة معاملاتٍ آمنة",
   "title": "البلوكشين: التقنية التي تهمّ في 2018",
+  "banner_alt": "حاسوب محمول مُطفأ فوق طاولة خشبية بُنّية",
+  "description": "حكاية الرحلة الاستثنائية لتأمين المعاملات الرقمية عبر تعمية المفتاح الخاص وشبكات النِدّ-لنِدّ (P2P).",
+  "tags": "pain001, ISO 20022, payment automation, cost reduction, payments, payment files, pain message, DORA, קריפטוגרפיה פוסט-קוונטית, AI, פיקדונות מתואדים, Rust, בנקאות ענן-נייטיב, תשלומים חוצי גבולות, סטייבלקוינים",
+  "word_count": 665,
   "date": "January 2, 2018",
   "reading_time": 3,
+  "language": "he-IL",
   "locale": "he_IL",
-  "tags": "pain001, ISO 20022, payment automation, cost reduction, payments, payment files, pain message, DORA, קריפטוגרפיה פוסט-קוונטית, AI, פיקדונות מתואדים, Rust, בנקאות ענן-נייטיב, תשלומים חוצי גבולות, סטייבלקוינים",
-  "subtitle": "تعمية المفتاح الخاص وشبكات النِدّ-لنِدّ في خدمة معاملاتٍ آمنة",
-  "banner_alt": "حاسوب محمول مُطفأ فوق طاولة خشبية بُنّية",
   "banner": "https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp",
-  "description": "حكاية الرحلة الاستثنائية لتأمين المعاملات الرقمية عبر تعمية المفتاح الخاص وشبكات النِدّ-لنِدّ (P2P).",
-  "word_count": 665
+  "keywords": "blockchain, العملة المشفّرة, Bitcoin, P2P, smart contract, السجل الموزّع, التمويل, سلسلة التوريد, الهويّة الرقمية, الترميز"
 }

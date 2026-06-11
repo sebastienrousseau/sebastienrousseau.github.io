@@ -1,14 +1,14 @@
 {
-  "banner_alt": "إحداث ثورة في التمويل عبر الخوارزميات الكمومية المعزّزة بالذكاء الاصطناعي",
-  "language": "fil-PH",
-  "date": "Dec 25, 2023",
-  "banner": "https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp",
-  "description": "الدور التحويلي للذكاء الاصطناعي في الخوارزميات الكمومية للتمويل، مع التركيز على تفاصيلها الرياضية وتطبيقاتها المصرفية.",
-  "word_count": 1133,
-  "title": "إحداث ثورة في التمويل عبر الخوارزميات الكمومية المعزّزة بالذكاء الاصطناعي",
-  "reading_time": 5,
-  "tags": "Quantum, AI, Finance, Algorithms, Mathematics, Banking, Technology, Innovation, Data, Efficiency, ISO 20022, post-quantum cryptography, quantum computing",
+  "locale": "fil_PH",
   "keywords": "الحوسبة الكمومية، خوارزميات الذكاء الاصطناعي، الرياضيات المالية، تكنولوجيا القطاع المصرفي، إدارة المخاطر، تصميم الخوارزميات، تحليل البيانات، استراتيجيات الاستثمار، التمويل الكمومي، تعلّم الآلة",
+  "reading_time": 5,
+  "banner_alt": "إحداث ثورة في التمويل عبر الخوارزميات الكمومية المعزّزة بالذكاء الاصطناعي",
+  "title": "إحداث ثورة في التمويل عبر الخوارزميات الكمومية المعزّزة بالذكاء الاصطناعي",
+  "tags": "Quantum, AI, Finance, Algorithms, Mathematics, Banking, Technology, Innovation, Data, Efficiency, ISO 20022, post-quantum cryptography, quantum computing",
+  "language": "fil-PH",
+  "banner": "https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp",
+  "word_count": 1133,
   "subtitle": "إطلاق العنان للقوّة الكمومية للابتكار المالي: الذكاء الاصطناعي في قلب الخوارزميات الجيلية الجديدة",
-  "locale": "fil_PH"
+  "date": "Dec 25, 2023",
+  "description": "الدور التحويلي للذكاء الاصطناعي في الخوارزميات الكمومية للتمويل، مع التركيز على تفاصيلها الرياضية وتطبيقاتها المصرفية."
 }

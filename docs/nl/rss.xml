@@ -6,14 +6,50 @@
     <description>Artikelen in het Nederlands: toegepaste AI, ISO 20022-betalingen, post-kwantumcryptografie en transformatie van het wholesale-betalingsverkeer.</description>
     <atom:link href="https://sebastienrousseau.com/nl/rss.xml" rel="self" type="application/rss+xml"/>
     <language>nl-NL</language>
-    <lastBuildDate>Mon, 08 Jun 2026 12:45:03 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 11 Jun 2026 00:09:27 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Alle rechten voorbehouden.</copyright>
+    <item>
+      <title>CloudCDN: een open source blauwdruk voor de AI-native edge in 2026</title>
+      <link>https://sebastienrousseau.com/nl/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/</link>
+      <description>CloudCDN is een open source, AI-native edge CDN-blauwdruk voor MCP-bestuurde infrastructuur, Durable Objects rate limiting, ondertekende URLs, toegankelijkheid en auditeerbaarheid.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/nl/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/</guid>
+      <pubDate>Thu, 11 Jun 2026 00:09:27 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/alis-po-IdVNRv-5wJo.webp" type="image/webp" length="0"/>
+      <category>CloudCDN</category>
+      <category>AI-native edge</category>
+      <category>open source CDN</category>
+      <category>MCP-server</category>
+      <category>Cloudflare Workers</category>
+      <category>Durable Objects</category>
+      <category>ondertekende URLs</category>
+      <category>passkeys</category>
+      <category>SLSA</category>
+      <category>edge-infrastructuur</category>
+    </item>
+    <item>
+      <title>Banking Resilience Index 2026: AI, cloud, kwantum, betalingen en derdenrisico</title>
+      <link>https://sebastienrousseau.com/nl/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/</link>
+      <description>Een Banking Resilience Index 2026 die AI-risico, concentratierisico cloud, kwantumveilige beveiliging, betalingscontinuïteit en kritieke derdenafhankelijkheid in één scorebord samenbrengt.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/nl/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/</guid>
+      <pubDate>Thu, 11 Jun 2026 00:09:27 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/simone-hutsch-oqlh6RsrYB0.webp" type="image/webp" length="0"/>
+      <category>banking resilience index 2026</category>
+      <category>DORA veerkracht</category>
+      <category>AI operationeel risico</category>
+      <category>concentratierisico cloud</category>
+      <category>kwantumrisico banken</category>
+      <category>betalingsveerkracht</category>
+      <category>derdenrisico</category>
+      <category>PQC migratie</category>
+    </item>
     <item>
       <title>De Autonome Treasury-Index in 2026: agentische treasury en programmeerbare liquiditeit</title>
       <link>https://sebastienrousseau.com/nl/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/</link>
       <description>Een index 2026 voor gereedheid van autonome treasury: agentische workflows, programmeerbare liquiditeit, getokeniseerde deposito&apos;s, realtime betalingen en cash control.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/nl/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/</guid>
-      <pubDate>Mon, 08 Jun 2026 12:45:03 +0000</pubDate>
+      <pubDate>Thu, 11 Jun 2026 00:09:27 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/christopher-burns-Kj2SaNHG-hg.webp" type="image/webp" length="0"/>
       <category>autonome treasury 2026</category>
@@ -28,7 +64,7 @@
       <link>https://sebastienrousseau.com/nl/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/</link>
       <description>Een cloud-native banking-index 2026 om DORA-gereedheid, platform engineering-volwassenheid, cloudconcentratierisico, exit-bewijs en operationele veerkracht te meten.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/nl/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/</guid>
-      <pubDate>Mon, 08 Jun 2026 12:45:03 +0000</pubDate>
+      <pubDate>Thu, 11 Jun 2026 00:09:27 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/quang-nguyen-vinh-2649403.webp&w=1600&format=webp&q=85" type="image/webp" length="0"/>
       <category>cloud-native banking 2026</category>
@@ -48,7 +84,7 @@
       <link>https://sebastienrousseau.com/nl/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/</link>
       <description>Een bankindex voor quantum-safe gereedheid in 2026, met de NIST post-kwantumstandaarden, cryptografische inventaris, crypto-wendbaarheid, QKD en blootstelling van langlevende data.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/nl/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/</guid>
-      <pubDate>Mon, 08 Jun 2026 12:45:03 +0000</pubDate>
+      <pubDate>Thu, 11 Jun 2026 00:09:27 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
       <category>quantum-safe banking 2026</category>
@@ -65,7 +101,7 @@
       <link>https://sebastienrousseau.com/nl/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</link>
       <description>FedNow vereist voorgefinancierde liquiditeit 24/7. ACH is goedkoop maar T+1. USDC wikkelt atomair af maar vergt wallet-infrastructuur. De multi-rail bank van 2026 routeert per kosten, finaliteit en liquiditeitskost via een orkestratie-engine die ISO 20022 pacs.008 leest.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/nl/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</guid>
-      <pubDate>Mon, 08 Jun 2026 12:45:03 +0000</pubDate>
+      <pubDate>Thu, 11 Jun 2026 00:09:27 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
       <category>betalingsorkestratielaag</category>
@@ -87,7 +123,7 @@
       <link>https://sebastienrousseau.com/nl/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</link>
       <description>Post-quantum-cryptografie dwingt betaalrails tot een binaire keuze: RSA/ECC aanpassen binnen SWIFT MT- en ISO 20022-enveloppen die nooit op ML-KEM en ML-DSA zijn afgestemd, of vervangen door crypto-flexibele infrastructuur. Architecten moeten beslissen voordat HNDL verlies wordt.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/nl/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</guid>
-      <pubDate>Mon, 08 Jun 2026 12:45:03 +0000</pubDate>
+      <pubDate>Thu, 11 Jun 2026 00:09:27 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp" type="image/webp" length="0"/>
       <category>post-quantum-cryptografie</category>
@@ -113,7 +149,7 @@
       <link>https://sebastienrousseau.com/nl/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>
       <description>DORA, EU AI Act, GDPR, concentratierisico cloud en datasoevereiniteit smelten in 2026 samen tot één compliance-stack voor banken in Nederland.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/nl/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</guid>
-      <pubDate>Mon, 08 Jun 2026 12:45:03 +0000</pubDate>
+      <pubDate>Thu, 11 Jun 2026 00:09:27 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
       <category>DORA 2026</category>

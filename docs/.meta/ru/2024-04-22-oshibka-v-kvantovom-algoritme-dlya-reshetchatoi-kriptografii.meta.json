@@ -1,13 +1,13 @@
 {
-  "banner": "https://cloudcdn.pro/stocks/images/quantum-lattice-bug.webp",
-  "reading_time": 1,
-  "language": "ru-RU",
+  "word_count": 279,
   "banner_alt": "Ошибка в квантовом алгоритме: визуализация",
   "description": "В квантовом алгоритме Yilei Chen для решения LWE найдена ошибка, временно защищающая решётчатую криптографию и подчёркивающая необходимость продолжения исследований.",
-  "word_count": 279,
-  "date": "April 22, 2024",
   "subtitle": "Временное облегчение и постоянный урок",
+  "banner": "https://cloudcdn.pro/stocks/images/quantum-lattice-bug.webp",
+  "date": "April 22, 2024",
+  "language": "ru-RU",
+  "reading_time": 1,
   "keywords": "Yilei Chen, LWE, ошибка в алгоритме, решётчатая криптография, ML-KEM, постквантовая безопасность, академическая проверка",
-  "locale": "ru_RU",
-  "title": "Обнаружена ошибка в квантовом алгоритме для решётчатой криптографии"
+  "title": "Обнаружена ошибка в квантовом алгоритме для решётчатой криптографии",
+  "locale": "ru_RU"
 }

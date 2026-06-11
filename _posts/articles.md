@@ -105,21 +105,33 @@ site_software: "Static Site Generator, Rust"
 <header class="newsroom-section-head"><p class="newsroom-kicker">FEATURED</p><h2>Latest story</h2></header>
 
 <article class="newsroom-featured">
-<a class="newsroom-featured-media" href="/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/index.html" title="The Banking Resilience Index in 2026: AI, Cloud, Quantum, Payments, and Third-Party Concentration Risk">
-<img alt="Abstract architectural photograph used as the visual key for the 2026 Banking Resilience Index — combining AI risk, cloud concentration, quantum-safe security, payment continuity, and critical third-party dependency into one operational-resilience scoreboard" src="https://cloudcdn.pro/stocks/images/simone-hutsch-oqlh6RsrYB0.webp" loading="eager" fetchpriority="high" decoding="async" width="800" height="800" />
+<a class="newsroom-featured-media" href="/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/index.html" title="CloudCDN: An Open-Source Blueprint for the AI-Native Edge in 2026">
+<img alt="Glowing data-centre rack stack at night — symbolising the inspectable, agent-controllable, open-source edge that CloudCDN is built on" src="https://cloudcdn.pro/stocks/images/alis-po-IdVNRv-5wJo.webp" loading="eager" fetchpriority="high" decoding="async" width="800" height="800" />
 </a>
 <div class="newsroom-featured-body">
-<span class="newsroom-eyebrow">Banking Resilience · Dora · Ai Risk</span>
-<h3><a href="/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/index.html" title="The Banking Resilience Index in 2026: AI, Cloud, Quantum, Payments, and Third-Party Concentration Risk">The Banking Resilience Index in 2026: AI, Cloud, Quantum, Payments, and Third-Party Concentration Risk</a></h3>
-<p class="newsroom-meta"><time datetime="2026-06-08">June 8, 2026</time> · Sebastien Rousseau</p>
-<p>A 2026 banking resilience index — combining AI risk, cloud concentration, quantum-safe migration, payment continuity, and critical third-party dependency into one operational-resilience scoreboard the board and supervisor can both read.</p>
-<p><a class="pill ghost" href="/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/index.html" title="The Banking Resilience Index in 2026: AI, Cloud, Quantum, Payments, and Third-Party Concentration Risk">Read the full story</a></p>
+<span class="newsroom-eyebrow">Cloudcdn · Open Source · Cdn</span>
+<h3><a href="/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/index.html" title="CloudCDN: An Open-Source Blueprint for the AI-Native Edge in 2026">CloudCDN: An Open-Source Blueprint for the AI-Native Edge in 2026</a></h3>
+<p class="newsroom-meta"><time datetime="2026-06-11">June 11, 2026</time> · Sebastien Rousseau</p>
+<p>CloudCDN is an open-source, AI-native edge CDN blueprint — MCP-controlled infrastructure, Durable Objects rate limiting, signed URLs, passkeys, accessibility, and 100% test coverage as enforceable defaults, not vendor promises.</p>
+<p><a class="pill ghost" href="/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/index.html" title="CloudCDN: An Open-Source Blueprint for the AI-Native Edge in 2026">Read the full story</a></p>
 </div>
 </article>
 
 <header class="newsroom-section-head"><p class="newsroom-kicker">ARCHIVE</p><h2>All news stories and articles</h2></header>
 
 <div class="newsroom-grid">
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/index.html" title="The Banking Resilience Index in 2026: AI, Cloud, Quantum, Payments, and Third-Party Concentration Risk">
+<img alt="Abstract architectural photograph used as the visual key for the 2026 Banking Resilience Index — combining AI risk, cloud concentration, quantum-safe security, payment continuity, and critical third-party dependency into one operational-resilience scoreboard" src="https://cloudcdn.pro/stocks/images/simone-hutsch-oqlh6RsrYB0.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Banking Resilience · Dora · Ai Risk</span>
+<h3><a href="/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/index.html" title="The Banking Resilience Index in 2026: AI, Cloud, Quantum, Payments, and Third-Party Concentration Risk">The Banking Resilience Index in 2026: AI, Cloud, Quantum, Payments, and Third-Party Concentration Risk</a></h3>
+<p class="newsroom-meta"><time datetime="2026-06-08">June 8, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">A 2026 banking resilience index — combining AI risk, cloud concentration, quantum-safe migration, payment continuity, and critical third-party dependency into one operational-resilience scoreboard the board and supervisor can both read.</p>
+</div>
+</article>
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/index.html" title="The Autonomous Treasury Index in 2026: Agentic Treasury, Programmable Liquidity, Tokenised Deposits, and Real-Time Cash Control">

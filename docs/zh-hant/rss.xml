@@ -6,14 +6,48 @@
     <description>中文文章：應用人工智慧、ISO 20022 支付、後量子密碼學以及批發支付的轉型。</description>
     <atom:link href="https://sebastienrousseau.com/zh-hant/rss.xml" rel="self" type="application/rss+xml"/>
     <language>zh-Hant</language>
-    <lastBuildDate>Mon, 08 Jun 2026 12:45:04 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 11 Jun 2026 00:09:27 +0000</lastBuildDate>
     <copyright>© 2007 - 2026 - Sebastien Rousseau。版權所有，翻印必究。</copyright>
+    <item>
+      <title>CloudCDN:2026 年 AI原生邊緣的開源藍圖</title>
+      <link>https://sebastienrousseau.com/zh-hant/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/</link>
+      <description>CloudCDN 是一份開源 AI原生邊緣 CDN 藍圖,涵蓋 MCP 控制的基礎設施、Durable Objects 速率限制、signed URLs、無障礙與可稽核性。</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/zh-hant/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/</guid>
+      <pubDate>Thu, 11 Jun 2026 00:09:27 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/alis-po-IdVNRv-5wJo.webp" type="image/webp" length="0"/>
+      <category>CloudCDN</category>
+      <category>AI原生邊緣</category>
+      <category>開源 CDN</category>
+      <category>MCP 伺服器</category>
+      <category>Cloudflare Workers</category>
+      <category>Durable Objects</category>
+      <category>signed URLs</category>
+      <category>passkeys</category>
+      <category>SLSA</category>
+      <category>邊緣基礎設施</category>
+    </item>
+    <item>
+      <title>2026 年銀行業營運韌性指數:AI、雲端、量子、支付與第三方集中風險</title>
+      <link>https://sebastienrousseau.com/zh-hant/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/</link>
+      <description>2026 年銀行業營運韌性指數:整合 AI 風險、雲端集中風險、抗量子安全、支付連續性與關鍵第三方依賴的單一董事會儀表板。</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/zh-hant/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/</guid>
+      <pubDate>Thu, 11 Jun 2026 00:09:27 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/simone-hutsch-oqlh6RsrYB0.webp" type="image/webp" length="0"/>
+      <category>2026 銀行營運韌性指數</category>
+      <category>DORA 營運韌性</category>
+      <category>AI 作業風險</category>
+      <category>雲端集中風險</category>
+      <category>銀行量子風險</category>
+      <category>支付韌性</category>
+    </item>
     <item>
       <title>2026 自主財務指數:代理型司庫、可程式化流動性、代幣化存款與即時現金管控</title>
       <link>https://sebastienrousseau.com/zh-hant/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/</link>
       <description>2026 年自主財務就緒度指數——涵蓋代理型司庫工作流、可程式化流動性、代幣化存款、即時支付與自動化現金管控的單一營運模型。</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/zh-hant/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/</guid>
-      <pubDate>Mon, 08 Jun 2026 12:45:04 +0000</pubDate>
+      <pubDate>Thu, 11 Jun 2026 00:09:27 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/christopher-burns-Kj2SaNHG-hg.webp" type="image/webp" length="0"/>
       <category>自主財務 2026</category>
@@ -28,7 +62,7 @@
       <link>https://sebastienrousseau.com/zh-hant/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</link>
       <description>FedNow 要求 24/7 預籌流動性。ACH 便宜但是 T+1。USDC 原子結算卻需錢包基礎設施。2026 年多管道銀行依成本、終局性、流動性成本逐筆路由,核心是讀取 ISO 20022 pacs.008 的編排引擎。</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/zh-hant/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</guid>
-      <pubDate>Mon, 08 Jun 2026 12:45:04 +0000</pubDate>
+      <pubDate>Thu, 11 Jun 2026 00:09:27 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
       <category>支付編排層</category>
@@ -50,7 +84,7 @@
       <link>https://sebastienrousseau.com/zh-hant/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</link>
       <description>後量子密碼學迫使支付管道做出二選一決定:在 SWIFT MT 與 ISO 20022 信封中改造 RSA/ECC,或以密碼敏捷基礎建設替換。架構師必須在 HNDL 變成實際損失之前做出決定。</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/zh-hant/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</guid>
-      <pubDate>Mon, 08 Jun 2026 12:45:04 +0000</pubDate>
+      <pubDate>Thu, 11 Jun 2026 00:09:27 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp" type="image/webp" length="0"/>
       <category>後量子密碼學</category>
@@ -76,7 +110,7 @@
       <link>https://sebastienrousseau.com/zh-hant/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</link>
       <description>數位資產不再是創新賭注,而是結算、託管與資產負債表的架構命題。銀行的戰略課題,是在結構性不確定下完成基礎建設設計。</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/zh-hant/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</guid>
-      <pubDate>Mon, 08 Jun 2026 12:45:04 +0000</pubDate>
+      <pubDate>Thu, 11 Jun 2026 00:09:27 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/corporate-finance.webp" type="image/webp" length="0"/>
       <category>數位資產 2026</category>

@@ -1,14 +1,14 @@
 {
-  "date": "Mar 25, 2024",
-  "description": "Bincike yadda Fully Homomorphic Encryption ke juya tsaron bayanai a Banking da Masana'antar Kudi, tare da tabbatar da sirri daga barazanar quantum computing.",
-  "banner_alt": "Tuta don Fully Homomorphic Encryption",
+  "banner": "https://cloudcdn.pro/stocks/images/fully-homomorphic-encryption.webp",
+  "language": "ha-NG",
   "tags": "FHE, Banking, quantum computing, Data Security, Encryption, Financial Technology, Regulatory Compliance, Computational Overhead, Research, Data Privacy, ISO 20022, post-quantum cryptography, AI",
-  "locale": "ha_NG",
-  "subtitle": "Ƙarfafa Tsaron Bayanai, Inganta Sirrin AI, da Gina Amincin Abokin Ciniki a Zamanin Quantum Computing tare da FHE",
-  "title": "Fully Homomorphic Encryption (FHE) in a Banking Quantum Era",
-  "keywords": "Fully Homomorphic Encryption, tsaron banking, quantum computing, ɓoye bayanai na kudi, FHE case studies, tsarin doka FHE, computational overhead FHE, binciken FHE, kayan aiki FHE, dokar sirrin bayanai",
+  "banner_alt": "Tuta don Fully Homomorphic Encryption",
   "word_count": 2274,
   "reading_time": 11,
-  "language": "ha-NG",
-  "banner": "https://cloudcdn.pro/stocks/images/fully-homomorphic-encryption.webp"
+  "date": "Mar 25, 2024",
+  "description": "Bincike yadda Fully Homomorphic Encryption ke juya tsaron bayanai a Banking da Masana'antar Kudi, tare da tabbatar da sirri daga barazanar quantum computing.",
+  "subtitle": "Ƙarfafa Tsaron Bayanai, Inganta Sirrin AI, da Gina Amincin Abokin Ciniki a Zamanin Quantum Computing tare da FHE",
+  "locale": "ha_NG",
+  "title": "Fully Homomorphic Encryption (FHE) in a Banking Quantum Era",
+  "keywords": "Fully Homomorphic Encryption, tsaron banking, quantum computing, ɓoye bayanai na kudi, FHE case studies, tsarin doka FHE, computational overhead FHE, binciken FHE, kayan aiki FHE, dokar sirrin bayanai"
 }

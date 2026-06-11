@@ -1,13 +1,13 @@
 {
-  "locale": "id_ID",
-  "date": "Jan 02, 2018",
-  "language": "id-ID",
+  "banner_alt": "Laptop yang dimatikan di atas meja kayu berwarna cokelat",
   "subtitle": "Blockchain, buku besar terdistribusi, dan teknologi yang paling penting di tahun 2018.",
+  "word_count": 369,
   "reading_time": 1,
   "banner": "https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp",
-  "word_count": 369,
+  "locale": "id_ID",
   "description": "Kisah perjalanan luar biasa dalam mengamankan transaksi digital melalui Private-key Cryptography dan jaringan Peer-to-peer (P2P).",
   "title": "[ID DRAFT] Blockchain explained, the technology that matters the most",
-  "banner_alt": "Laptop yang dimatikan di atas meja kayu berwarna cokelat",
-  "keywords": "pain001, iso 20022, otomasi pembayaran, pengurangan biaya, pemrosesan pembayaran, file pembayaran, inisiasi pembayaran, pain message, pain message standards, pain message validation"
+  "language": "id-ID",
+  "keywords": "pain001, iso 20022, otomasi pembayaran, pengurangan biaya, pemrosesan pembayaran, file pembayaran, inisiasi pembayaran, pain message, pain message standards, pain message validation",
+  "date": "Jan 02, 2018"
 }

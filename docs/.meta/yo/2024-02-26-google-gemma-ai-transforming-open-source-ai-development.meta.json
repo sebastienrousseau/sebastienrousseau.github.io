@@ -1,14 +1,14 @@
 {
-  "banner_alt": "Ọkọ̀ òfuurufú aláwọ̀ búlúù ti ọjọ́ iwájú pẹ̀lú ìmọlẹ̀ neon",
-  "subtitle": "Ìwò Jínjìn sí Agbára, Àwọn Ìdásí Open-Source, àti Ohun tó Ń Bọ̀ L'ọjọ́ Iwájú",
-  "reading_time": 9,
-  "title": "Google Gemma AI: Transforming Open-Source AI Development",
-  "locale": "yo_NG",
+  "tags": "Gemma, Google, AI, open source, Technical, Enterprise, Integration, macOS, Data, Ethics, ISO 20022, ìsirò ìpamọ́ lẹ́yìn quantum, Rust",
   "language": "yo-NG",
+  "subtitle": "Ìwò Jínjìn sí Agbára, Àwọn Ìdásí Open-Source, àti Ohun tó Ń Bọ̀ L'ọjọ́ Iwájú",
+  "word_count": 1846,
+  "keywords": "Google Gemma AI, àwòṣe AI open-source, ìmọ̀-ẹ̀rọ Gemma, Gemma 2B 7B, AI tó tọ̀nà, ìṣọpọ̀ AI macOS, àwọn ojútùú AI ilé-iṣẹ́, AI ìbáradọ̀, ìtúpalẹ̀ dátà AI, AI fún àwọn ẹ̀rọ edge",
+  "title": "Google Gemma AI: Transforming Open-Source AI Development",
+  "reading_time": 9,
+  "date": "Feb 26, 2024",
+  "locale": "yo_NG",
   "description": "Ṣàwárí Àwòṣe AI Gemma ti Google: iṣẹ́ open-source tó ń pèsè àwọn ojútùú AI tó tọ̀nà fún lílo ara ẹni àti ti ilé-iṣẹ́.",
   "banner": "https://cloudcdn.pro/stocks/images/ai-ship.webp",
-  "keywords": "Google Gemma AI, àwòṣe AI open-source, ìmọ̀-ẹ̀rọ Gemma, Gemma 2B 7B, AI tó tọ̀nà, ìṣọpọ̀ AI macOS, àwọn ojútùú AI ilé-iṣẹ́, AI ìbáradọ̀, ìtúpalẹ̀ dátà AI, AI fún àwọn ẹ̀rọ edge",
-  "word_count": 1846,
-  "tags": "Gemma, Google, AI, open source, Technical, Enterprise, Integration, macOS, Data, Ethics, ISO 20022, ìsirò ìpamọ́ lẹ́yìn quantum, Rust",
-  "date": "Feb 26, 2024"
+  "banner_alt": "Ọkọ̀ òfuurufú aláwọ̀ búlúù ti ọjọ́ iwájú pẹ̀lú ìmọlẹ̀ neon"
 }

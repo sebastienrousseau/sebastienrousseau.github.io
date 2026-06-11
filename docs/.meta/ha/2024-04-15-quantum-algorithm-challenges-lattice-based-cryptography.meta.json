@@ -1,14 +1,14 @@
 {
-  "locale": "ha_NG",
-  "banner_alt": "Babban hoton nodes na hanyar sadarwa a sararin dijital na shuɗi",
+  "date": "Apr 01, 2024",
+  "subtitle": "Algorithm na gaba na quantum na polynomial-time don lattice-based cryptography",
   "keywords": "quantum computing, quantum algorithm, lattice cryptography, LWE, ɓoyewa, post-quantum cryptography, tsaron yanar gizo, Yilei Chen, binciken cryptography, barazanar tsaro",
   "title": "Quantum Algorithm Challenges Lattice-Based Cryptography",
-  "subtitle": "Algorithm na gaba na quantum na polynomial-time don lattice-based cryptography",
-  "banner": "https://cloudcdn.pro/stocks/images/digital-constellation.webp",
-  "description": "Sabon algorithm na quantum na polynomial-time na Yilei Chen yana kai hari ga lattice-based cryptography. Tasirin da hakan ke da shi ga ma'auni na post-quantum kamar CRYSTALS-Kyber.",
-  "date": "Apr 01, 2024",
-  "language": "ha-NG",
-  "word_count": 1513,
   "reading_time": 7,
-  "tags": "quantum algorithms, cryptography, lattice problems, LWE, post-quantum cryptography, cybersecurity, research, innovation, future-proofing, ISO 20022, quantum computing, AI"
+  "banner": "https://cloudcdn.pro/stocks/images/digital-constellation.webp",
+  "word_count": 1513,
+  "tags": "quantum algorithms, cryptography, lattice problems, LWE, post-quantum cryptography, cybersecurity, research, innovation, future-proofing, ISO 20022, quantum computing, AI",
+  "banner_alt": "Babban hoton nodes na hanyar sadarwa a sararin dijital na shuɗi",
+  "language": "ha-NG",
+  "locale": "ha_NG",
+  "description": "Sabon algorithm na quantum na polynomial-time na Yilei Chen yana kai hari ga lattice-based cryptography. Tasirin da hakan ke da shi ga ma'auni na post-quantum kamar CRYSTALS-Kyber."
 }

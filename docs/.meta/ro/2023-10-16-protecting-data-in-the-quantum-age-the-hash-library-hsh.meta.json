@@ -1,14 +1,14 @@
 {
-  "locale": "ro_RO",
+  "description": "HSH utilizează primitive criptografice rezistente la cuantică pentru a vă proteja datele, garantând securitatea acestora chiar și în fața progreselor viitoare ale calculului cuantic.",
+  "date": "Oct 16, 2023",
   "subtitle": "HSH: o bibliotecă hash rezistentă la cuantică pentru era post-cuantică a autentificării.",
-  "reading_time": 7,
+  "keywords": "criptografie rezistentă la cuantică, criptografie post-cuantică, bibliotecă hash, HSH, hashing parole, derivare cheie, Argon2i, Bcrypt, Scrypt, calcul cuantic",
+  "locale": "ro_RO",
   "banner": "https://cloudcdn.pro/stocks/images/galina-nelyubova-7ej8VWfwFsg.webp",
   "title": "Protecting Data in the Quantum Age: The Hash Library (HSH)",
-  "date": "Oct 16, 2023",
-  "description": "HSH utilizează primitive criptografice rezistente la cuantică pentru a vă proteja datele, garantând securitatea acestora chiar și în fața progreselor viitoare ale calculului cuantic.",
-  "keywords": "criptografie rezistentă la cuantică, criptografie post-cuantică, bibliotecă hash, HSH, hashing parole, derivare cheie, Argon2i, Bcrypt, Scrypt, calcul cuantic",
-  "tags": "criptografie post-cuantică, hash library, HSH, password hashing, key derivation, Argon2i, Bcrypt, Scrypt, calcul cuantic, ISO 20022, AI, Rust, open source",
+  "banner_alt": "O ilustrație creativă pe tema calculului cuantic",
   "word_count": 1498,
   "language": "ro-RO",
-  "banner_alt": "O ilustrație creativă pe tema calculului cuantic"
+  "reading_time": 7,
+  "tags": "criptografie post-cuantică, hash library, HSH, password hashing, key derivation, Argon2i, Bcrypt, Scrypt, calcul cuantic, ISO 20022, AI, Rust, open source"
 }

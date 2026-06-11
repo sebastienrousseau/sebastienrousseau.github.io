@@ -1,14 +1,14 @@
 {
-  "banner_alt": "حاسوب محمول مُطفأ فوق طاولة خشبية بُنّية",
-  "word_count": 730,
-  "reading_time": 3,
-  "date": "January 24, 2018",
-  "tags": "Ethereum, erc20, eip, tokens, contracts, blockchain, cryptocurrencies, smart-token, Solidity, ISO 20022, post-quantum cryptography, AI, stablecoins",
   "language": "fil-PH",
-  "banner": "https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp",
   "description": "ERC-20: أكثر أنواع التوكنات شيوعاً على بلوكشين Ethereum، يُوصف كثيراً بأنّه عقد رقمي ذكي (smart contract).",
+  "tags": "Ethereum, erc20, eip, tokens, contracts, blockchain, cryptocurrencies, smart-token, Solidity, ISO 20022, post-quantum cryptography, AI, stablecoins",
+  "date": "January 24, 2018",
+  "reading_time": 3,
   "subtitle": "الواجهة الموحَّدة التي أتاحت لمنظومة Ethereum أن تزدهر",
+  "banner_alt": "حاسوب محمول مُطفأ فوق طاولة خشبية بُنّية",
+  "locale": "fil_PH",
   "title": "معيار التوكن ERC-20",
-  "keywords": "ERC-20, Ethereum, token, smart contract, DeFi, EIP, blockchain, التشغيل البيني, DApps, المعيار",
-  "locale": "fil_PH"
+  "banner": "https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp",
+  "word_count": 730,
+  "keywords": "ERC-20, Ethereum, token, smart contract, DeFi, EIP, blockchain, التشغيل البيني, DApps, المعيار"
 }

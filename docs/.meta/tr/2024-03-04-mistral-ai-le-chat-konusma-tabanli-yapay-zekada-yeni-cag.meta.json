@@ -1,13 +1,13 @@
 {
-  "language": "tr-TR",
-  "title": "Mistral AI'dan Le Chat: konuşma tabanlı yapay zekada yeni bir çağ",
-  "description": "Le Chat, Mistral'in Avrupalı modellerinin gücünü açıklığa ve performansa odaklanarak sunan konuşma asistanıdır.",
-  "banner": "https://cloudcdn.pro/stocks/images/abstract-digitale-art-of-a-cat.webp",
-  "date": "March 04, 2024",
+  "locale": "tr_TR",
   "keywords": "Le Chat, Mistral AI, konuşma tabanlı yapay zeka, LLM, Avrupa, açık kaynak",
-  "reading_time": 6,
-  "banner_alt": "Le Chat arayüzü",
+  "banner": "https://cloudcdn.pro/stocks/images/abstract-digitale-art-of-a-cat.webp",
+  "description": "Le Chat, Mistral'in Avrupalı modellerinin gücünü açıklığa ve performansa odaklanarak sunan konuşma asistanıdır.",
   "word_count": 1248,
+  "language": "tr-TR",
+  "date": "March 04, 2024",
+  "banner_alt": "Le Chat arayüzü",
   "subtitle": "Mistral'in Avrupalı LLM'lerinin gücüyle desteklenen konuşma asistanı",
-  "locale": "tr_TR"
+  "reading_time": 6,
+  "title": "Mistral AI'dan Le Chat: konuşma tabanlı yapay zekada yeni bir çağ"
 }

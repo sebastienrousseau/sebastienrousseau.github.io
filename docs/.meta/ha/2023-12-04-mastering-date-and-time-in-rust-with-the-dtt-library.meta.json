@@ -1,14 +1,14 @@
 {
   "title": "Efficient Date and Time Management with DateTime (DTT)",
-  "keywords": "DateTime, DTT, ɗakin karatu na Rust, tattarowa, tabbatarwa, sarrafa, tsarawa, kwanaki, lokaci",
-  "date": "Dec 04, 2023",
   "language": "ha-NG",
+  "date": "Dec 04, 2023",
   "tags": "DateTime, DTT, Rust, date library, time library, timezone handling, chrono alternative, ISO 8601, time formatting, Sebastien Rousseau, ISO 20022, post-quantum cryptography, AI, open source",
-  "banner_alt": "DateTime (DTT), Kayan Aikin da Ake Bukata don Ayyukan Kwana da Lokaci.",
-  "reading_time": 5,
-  "banner": "https://cloudcdn.pro/clients/dtt/v1/logos/dtt.svg",
-  "subtitle": "DTT, ɗakin karatu na Rust mai daidaito mai girma don ayyukan kwana da lokaci.",
   "locale": "ha_NG",
+  "description": "DateTime (DTT) ɗakin karatu ne na Rust don tattaro, tabbatarwa, sarrafa da tsara kwanaki da lokaci — daidaito mai girma, ayyuka masu faɗi.",
+  "subtitle": "DTT, ɗakin karatu na Rust mai daidaito mai girma don ayyukan kwana da lokaci.",
+  "banner": "https://cloudcdn.pro/clients/dtt/v1/logos/dtt.svg",
+  "banner_alt": "DateTime (DTT), Kayan Aikin da Ake Bukata don Ayyukan Kwana da Lokaci.",
   "word_count": 1039,
-  "description": "DateTime (DTT) ɗakin karatu ne na Rust don tattaro, tabbatarwa, sarrafa da tsara kwanaki da lokaci — daidaito mai girma, ayyuka masu faɗi."
+  "keywords": "DateTime, DTT, ɗakin karatu na Rust, tattarowa, tabbatarwa, sarrafa, tsarawa, kwanaki, lokaci",
+  "reading_time": 5
 }

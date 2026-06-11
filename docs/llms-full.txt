@@ -2,11 +2,243 @@
 
 Every article on sebastienrousseau.com, newest-first, with navigation furniture stripped. Provided for LLM ingestion under Apache-2.0 attribution. See https://sebastienrousseau.com/ for the canonical formatting.
 
+## CloudCDN: An Open-Source Blueprint for the AI-Native Edge in 2026
+
+_June 11, 2026_  ·  [https://sebastienrousseau.com/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/](https://sebastienrousseau.com/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/)
+
+# CloudCDN: An Open-Source Blueprint for the AI-Native Edge in 2026
+
+
+<!-- lead-start -->
+
+<!-- lead-end -->
+
+CloudCDN matters because the edge is becoming the control plane for AI-native software. As agents begin to call tools, move data, purge caches, request signed URLs, and coordinate workflows, the old CDN model of opaque dashboards and proprietary control planes becomes insufficient. CloudCDN argues for a different model: an open, inspectable, agent-controllable edge platform that treats security, accessibility, performance, and auditability as first-class design constraints.
+
+The open-source reference point for this article is [cloudcdn.pro ⧉](https://github.com/sebastienrousseau/cloudcdn.pro "cloudcdn.pro"). The repository is positioned as: a multi-tenant, AI-native CDN that can be read end-to-end and deployed independently, with sub-100ms TTFB across Cloudflare PoPs, MCP control, Durable Objects rate limiting, WCAG-AA accessibility, signed URLs, passkeys, SLSA, and 3,185 tests at 100% coverage.
+
+---
+
+> **Executive Summary / Key Takeaways**
+>
+> - **CloudCDN is the flagship open-source infrastructure story.** It brings together CDN mechanics, Cloudflare Workers, Durable Objects, MCP, signed URLs, passkeys, rate limiting, accessibility, and test discipline.
+> - **The edge is becoming an agent surface.** Once AI systems can operate infrastructure through MCP tools, the CDN must become governable by identity, policy, rate limits, and audit logs.
+> - **Open source is the trust mechanism.** A bank or enterprise can inspect how the control plane works instead of relying entirely on vendor claims.
+> - **Atomic rate limiting is strategic.** Durable Objects provide a coordination point for limiting both external abuse and internal agentic loops.
+> - **The project is a reference architecture.** Its value is not only what it serves, but what it teaches about the next generation of edge infrastructure.
+>
+---
+
+## Why This Open-Source Project Matters in 2026
+
+The strategic value of open source in 2026 is no longer limited to transparency, reuse, or developer goodwill. For banks and financial institutions, open-source infrastructure has become a way to inspect assumptions, test controls, reduce vendor opacity, and turn architectural claims into code that can be read, forked, hardened, and operated. The most useful projects are not demos. They are reference implementations that reveal how security, accessibility, performance, compliance, and developer experience fit together.
+
+This is the lens through which cloudcdn.pro should be understood. It is not simply a repository; it is a concrete design argument. It says that critical infrastructure should be auditable, composable, documented, testable, and understandable by the people who depend on it. In financial services, that matters because systems increasingly sit at the intersection of agentic AI, real-time payments, post-quantum cryptography, cloud-native resilience, structured data, and regulatory evidence.
+
+## Architecture Lens
+
+| Layer | Design Decision | Why It Matters | Risk if Mishandled |
+|---|---|---|---|
+| **Edge runtime** | Cloudflare Workers and Pages | Global execution with low operational overhead | Latency gains without control discipline |
+| **State coordination** | Durable Objects for atomic limits and shared control | Prevents race conditions in edge enforcement | Distributed abuse and inconsistent quotas |
+| **Agent interface** | MCP-exposed operations | Lets agents operate infrastructure through governed tools | Unbounded tool invocation |
+| **Access control** | Passkeys, signed URLs, permissions, and audit trails | Turns CDN operations into accountable actions | Anonymous or weakly attributed changes |
+| **Quality gates** | Accessibility, testing, SLSA, and deployment checks | Makes trust part of delivery | Fast infrastructure that cannot be safely governed |
+
+## Signals to Track
+
+| Signal | What It Means | Reference |
+|---|---|---|
+| **42 MCP tools** | CloudCDN is designed for agent-controllable infrastructure | [cloudcdn.pro ⧉](https://github.com/sebastienrousseau/cloudcdn.pro "CloudCDN repository") |
+| **Durable Objects rate limiting** | Stateful edge coordination becomes a security primitive | [Cloudflare Durable Objects ⧉](https://developers.cloudflare.com/durable-objects/ "Cloudflare Durable Objects documentation") |
+| **Cloudflare Agents SDK and MCP** | The wider edge ecosystem is moving toward authenticated agent connectivity | [Cloudflare ⧉](https://blog.cloudflare.com/building-ai-agents-with-mcp-authn-authz-and-durable-objects/ "Cloudflare MCP, auth and Durable Objects") |
+| **Signed URLs and passkeys** | Access and delegation are treated as infrastructure concerns | [cloudcdn.pro ⧉](https://github.com/sebastienrousseau/cloudcdn.pro "CloudCDN repository") |
+| **3,185 tests at 100% coverage** | The project positions verification as part of infrastructure design | [cloudcdn.pro ⧉](https://github.com/sebastienrousseau/cloudcdn.pro "CloudCDN repository") |
+
+## The CDN Becomes a Control Plane
+
+Traditional CDNs were built around content acceleration, cache purging, routing, and WAF-like protections. The AI-native edge adds a new requirement: software agents need to inspect, trigger, and operate infrastructure safely. That turns the CDN into a control plane. A control plane must have identity, permissions, logs, rate limits, and explainability.
+
+## Why Open Source Changes the Trust Model
+
+For regulated institutions, the appeal of CloudCDN is not only performance. It is inspectability. Teams can read how rate limits work, how tool interfaces are exposed, how signed URLs are generated, how tests are structured, and how accessibility is enforced. That creates a different relationship between infrastructure and governance.
+
+## The Bank-Grade Edge Pattern
+
+The bank-grade pattern is simple but hard to execute: agent-accessible operations, strongly bounded permissions, atomic rate limiting, immutable audit trails, accessibility checks, signed distribution, and deployment evidence. CloudCDN turns that pattern into code rather than a slide.
+
+## What This Means by Audience
+
+### For Bank Technology Leaders
+
+The question is whether the project can help turn a strategic pressure into an executable architecture. The value is strongest when the repository gives teams something concrete to inspect: interfaces, configuration, tests, security boundaries, deployment assumptions, and failure modes.
+
+### For Security and Risk Teams
+
+The project should be evaluated not only for features but for control evidence. Useful open-source financial infrastructure exposes how identity, secrets, validation, audit logs, rate limits, signatures, provenance, and recovery are meant to work.
+
+### For Developers and Platform Engineers
+
+The most important test is whether the project reduces cognitive load without hiding important mechanics. Good open source should make the safe path the easy path while still allowing experienced engineers to understand and modify the implementation.
+
+### For Contributors
+
+The opportunity is to strengthen the project where real institutions need assurance: documentation, examples, conformance tests, CI hardening, threat models, performance profiles, accessibility checks, and integration guides.
+
+## Conclusion
+
+The reason to write about cloudcdn.pro is that it turns a wider industry problem into something concrete. In 2026, banks do not need more abstract transformation language. They need inspectable systems that show how modern infrastructure can be built, secured, tested, and governed. Open source is the most credible way to make that argument visible.
+
+## Frequently Asked Questions
+
+**Why write about CloudCDN first?**
+
+Because it is the broadest open-source story: AI agents, edge, MCP, security, accessibility, performance, and banking-grade auditability in one project.
+
+**Is CloudCDN only for banks?**
+
+No. The architecture is generally useful, but banks are a demanding lens because they force stronger controls, auditability, and resilience requirements.
+
+**What makes CloudCDN AI-native?**
+
+Its MCP-controlled operations and agent-aware control model make it suitable for autonomous infrastructure workflows rather than only human dashboard use.
+
+**What is the strongest technical idea?**
+
+Atomic edge rate limiting with Durable Objects, because it can defend against external abuse and internal agentic runaway behaviour.
+
+## References
+
+- GitHub, (2026). [cloudcdn.pro repository ⧉](https://github.com/sebastienrousseau/cloudcdn.pro "cloudcdn.pro repository").
+- Cloudflare, (2026). [Building AI agents with MCP, authentication and Durable Objects ⧉](https://blog.cloudflare.com/building-ai-agents-with-mcp-authn-authz-and-durable-objects/ "Building AI agents with MCP, authentication and Durable Objects").
+- Cloudflare, (2026). [Durable Objects documentation ⧉](https://developers.cloudflare.com/durable-objects/ "Durable Objects documentation").
+
+---
+
+## The Banking Resilience Index in 2026: AI, Cloud, Quantum, Payments, and Third-Party Concentration Risk
+
+_June 8, 2026_  ·  [https://sebastienrousseau.com/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/](https://sebastienrousseau.com/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/)
+
+# The Banking Resilience Index in 2026: AI, Cloud, Quantum, Payments, and Third-Party Concentration Risk
+
+
+
+
+
+
+<!-- lead-start -->
+
+<!-- lead-end -->
+
+Banking resilience in 2026 is no longer just business continuity or disaster recovery. It is the ability to prevent, withstand, recover, explain, and evidence disruption across AI systems, cloud platforms, cryptography, payment rails, data, and critical third parties. The index should reveal where a bank is operationally strong and where resilience is only assumed.
+
+---
+
+> **Executive Summary / Key Takeaways**
+>
+> - **DORA changes resilience evidence.** Banks must show robust ICT capabilities, third-party risk management, incident response, testing, and recovery readiness.
+> - **AI adds a new operational layer.** Agentic AI can improve resilience through automation, but it also creates risks around oversight, adversarial use, software engineering, and model failure.
+> - **Quantum risk is a resilience issue.** Long-lived confidentiality and digital-signature trust are part of operational continuity, not just cyber strategy.
+> - **Payment resilience is client-visible.** Failed, delayed, or non-compliant payments create direct customer and market impact.
+> - **Third-party concentration is systemic.** Dependency on a handful of cloud, AI, data, and payment providers should be measured as a resilience exposure.
+>
+---
+
+## Why 2026 Is the Year This Index Matters
+
+The Stanford AI Index is useful because it treats a fast-moving technology field as something that can be measured: research output, technical performance, responsible deployment, economics, sector adoption, policy, and public sentiment are brought into a single frame ([Stanford HAI ⧉](https://hai.stanford.edu/ai-index/2026-ai-index-report "The 2026 AI Index Report")). Banks and financial institutions now need the same discipline for infrastructure. Agentic AI, quantum-safe security, cloud native resilience, and wholesale payments are no longer separate innovation tracks; they are converging into one operating model.
+
+The practical question for a bank is not whether each domain is important. It is whether the institution can measure readiness across all of them at the same time. A bank can deploy agentic AI and still be fragile if its cryptography is not migration-ready. It can modernise cloud platforms and still fail if payment data remains unstructured. It can run tokenisation pilots and still create systemic risk if the settlement, liquidity, identity, and audit layers are not designed together.
+
+## The 2026 Index Architecture
+
+| Index Layer | 2026 Direction | Readiness Metric | Risk if Mishandled |
+|---|---|---|---|
+| **AI resilience** | Govern model failure, agent action, cyber misuse, and oversight loss | Incident rate, override rate, control coverage | Automation amplifies failure |
+| **Cloud resilience** | Test recovery, exit, failover, and provider disruption scenarios | Critical-service recovery evidence | Provider outage becomes bank outage |
+| **Quantum resilience** | Prepare cryptography for future algorithm breakage | PQC migration and crypto-agility score | Loss of confidentiality and signature trust |
+| **Payment resilience** | Maintain continuity across rails, data, sanctions, liquidity, and operations | Failed payment and repair rates | Client-visible operational disruption |
+| **Third-party resilience** | Map and test dependencies across providers and subcontractors | Dependency concentration and substitutability | Hidden single points of failure |
+
+## Current Signals to Track
+
+| Signal | What It Means for Banks | Source |
+|---|---|---|
+| **Operational risk and ICT risk score poorly** | ECB identifies operational and ICT risk as persistent supervisory concerns | [ECB Banking Supervision ⧉](https://www.bankingsupervision.europa.eu/framework/priorities/html/ssm.supervisory_priorities202511.en.html "Supervisory priorities 2026-28") |
+| **DORA CTPP oversight powers** | Critical third-party providers can face inspection and recommendations | [EBA ⧉](https://www.eba.europa.eu/activities/direct-supervision-and-oversight/digital-operational-resilience-act "Digital Operational Resilience Act") |
+| **Loss of human oversight at 55%** | Agentic AI creates a specific operational resilience risk | [Cambridge CCAF ⧉](https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/2026-global-ai-in-financial-services-report/ "2026 Global AI in Financial Services Report") |
+| **NIST PQC standards finalised** | Cryptographic resilience now has an implementation path | [NIST ⧉](https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards "First three finalized post-quantum encryption standards") |
+| **SWIFT structured data milestone** | Payment resilience depends on data captured correctly at origin | [SWIFT ⧉](https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed "ISO 20022 November 2026 structured address milestone") |
+
+## The Combined Resilience Map
+
+The index should map resilience by critical business service, not by technology department. A corporate payment service may depend on AI fraud models, cloud-hosted APIs, cryptographic certificates, sanctions vendors, SWIFT connectivity, structured beneficiary data, and human operations teams. Resilience is the weakest link in that chain.
+
+## Scenario Testing That Matters
+
+Useful scenarios combine domains: a cloud provider outage during a payment cut-off window; an AI code-generation defect in a critical release; a sanctions false-positive surge; a certificate migration failure; or an agentic workflow that loops into internal APIs. These are the scenarios that reveal real resilience.
+
+## Evidence as a Product
+
+Regulatory evidence should be produced continuously by systems, not assembled manually after an incident. The best banks will capture logs, tests, approvals, dependencies, model outputs, incidents, recovery steps, and client impact as operational telemetry.
+
+## What This Means by Bank Type
+
+### Global Systemically Important Banks
+
+Global banks should treat this index as an enterprise architecture scorecard. The priority is not another proof of concept; it is evidence that autonomous workflows, cryptographic migration, cloud dependency, and payment modernisation can be governed as a single risk and value system.
+
+### Transaction Banks and Corporate Banks
+
+Transaction banks should focus on wholesale payments, structured data, liquidity, tokenised deposits, and agentic treasury services. The most valuable client proposition is not faster money movement alone; it is explainable, auditable, programmable money movement with fewer investigations and better working-capital visibility.
+
+### Regional Banks
+
+Regional banks should use the index to avoid programme sprawl. They do not need to lead every frontier, but they do need credible positions on AI governance, post-quantum inventory, cloud exit evidence, and payment data readiness.
+
+### Fintechs, PSPs, and Infrastructure Providers
+
+Fintechs and infrastructure providers should align their product roadmaps to measurable bank readiness. The best propositions will reduce integration risk, strengthen evidence, and make complex infrastructure easier for banks to govern.
+
+## Conclusion
+
+The value of an index-style report is that it converts a fragmented technology agenda into a measurable operating model. In 2026, the winners in financial infrastructure will not be the institutions with the most pilots. They will be the institutions that can prove readiness across autonomy, security, resilience, settlement, economics, and governance at the same time.
+
+## Frequently Asked Questions
+
+**How is this different from business continuity?**
+
+Business continuity is part of it, but the index also covers AI behavior, cloud concentration, cryptographic migration, payment data, and third-party dependencies.
+
+**What should be tested first?**
+
+Test the critical services where client harm, market impact, regulatory breach, or liquidity disruption would be highest.
+
+**Who owns the resilience index?**
+
+Ownership should sit jointly across technology, risk, operations, cyber, payments, compliance, and business-service owners.
+
+**What is the most common weakness?**
+
+The most common weakness is dependency mapping that stops at the primary provider and misses subcontractors, data flows, operational processes, and recovery evidence.
+
+## References
+
+- Cambridge Centre for Alternative Finance, (2026). [2026 Global AI in Financial Services Report ⧉](https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/2026-global-ai-in-financial-services-report/ "2026 Global AI in Financial Services Report").
+- NIST, (2026). [First three finalized post-quantum encryption standards ⧉](https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards "First three finalized post-quantum encryption standards").
+- SWIFT, (2026). [ISO 20022 November 2026 structured address milestone ⧉](https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed "ISO 20022 November 2026 structured address milestone").
+- ECB Banking Supervision, (2026). [Supervisory priorities 2026-28 ⧉](https://www.bankingsupervision.europa.eu/framework/priorities/html/ssm.supervisory_priorities202511.en.html "Supervisory priorities 2026-28").
+- European Banking Authority, (2026). [Digital Operational Resilience Act ⧉](https://www.eba.europa.eu/activities/direct-supervision-and-oversight/digital-operational-resilience-act "Digital Operational Resilience Act").
+
+---
+
 ## The Autonomous Treasury Index in 2026: Agentic Treasury, Programmable Liquidity, Tokenised Deposits, and Real-Time Cash Control
 
 _June 7, 2026_  ·  [https://sebastienrousseau.com/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/](https://sebastienrousseau.com/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/)
 
 # The Autonomous Treasury Index in 2026: Agentic Treasury, Programmable Liquidity, Tokenised Deposits, and Real-Time Cash Control
+
+
 
 
 
@@ -70,11 +302,10 @@ The control loop runs Observe → Detect → Forecast → Prepare → Request Ap
 sequenceDiagram
     autonumber
     participant Banks as Cash-Management Banks
-    participant Agent as Treasury Agent (bounded, policy-gated)
-    participant Forecast as Forecast Engine (ML + scenario lib)
-    participant Treasurer as Human Treasurer (MFA / hardware key)
-    participant Rails as Payment Rails (RTGS / RTP / DLT)
-
+    participant Agent as Treasury Agent
+    participant Forecast as Forecast Engine
+    participant Treasurer as Human Treasurer
+    participant Rails as Payment Rails
     Banks->>Agent: camt.052 intraday balance stream
     Agent->>Agent: Observe — refresh real-time position
     Agent->>Agent: Detect — entity X breaches liquidity floor
@@ -96,7 +327,7 @@ The boundary is the point — every action that moves real money sits behind a c
 
 Programmable liquidity is the ability to move value under conditions: if a threshold is breached, if collateral is eligible, if a counterparty passes screening, if settlement finality is available, or if an intraday liquidity buffer is too low. Tokenised deposits and wholesale settlement platforms make these patterns more practical.
 
-Programmable does not mean off-standard. The execution path is `pain.001` — ISO 20022 Customer Credit Transfer Initiation. The agent's prepared action is a fully-formed `pain.001` payload routed to the bank in the same channel a corporate ERP would use, validated against the same schema, scored by the same fraud and sanctions engines, and acknowledged on the same `pain.002` status reports. The conditionality layer (threshold, collateral eligibility, finality availability, buffer floor) lives above the message — it gates *whether* a `pain.001` is sent, not *what shape* it takes. Treasury platforms that invent bespoke payloads to express conditions will fall out of the bank-consumable path and back into bilateral integration.
+Programmable does not mean off-standard. The execution path is `pain.001` — [ISO 20022](/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html) Customer Credit Transfer Initiation. The agent's prepared action is a fully-formed `pain.001` payload routed to the bank in the same channel a corporate ERP would use, validated against the same schema, scored by the same fraud and sanctions engines, and acknowledged on the same `pain.002` status reports. The conditionality layer (threshold, collateral eligibility, finality availability, buffer floor) lives above the message — it gates *whether* a `pain.001` is sent, not *what shape* it takes. Treasury platforms that invent bespoke payloads to express conditions will fall out of the bank-consumable path and back into bilateral integration.
 
 ## The Treasury Control Room
 
@@ -232,11 +463,10 @@ Project Agorá makes the combination concrete. The architecture below is the BIS
 ```mermaid
 sequenceDiagram
     autonumber
-    participant CB_A as Commercial Bank A (payer side)
-    participant UL as Unified Ledger (BIS Agorá coordination plane)
-    participant CBNK as Central Bank (wholesale CBDC issuer)
-    participant CB_B as Commercial Bank B (payee side)
-
+    participant CB_A as Commercial Bank A
+    participant UL as Unified Ledger
+    participant CBNK as Central Bank
+    participant CB_B as Commercial Bank B
     CB_A->>UL: Submit instruction: debit tokenised deposit X, credit tokenised deposit Y, condition = wholesale CBDC leg
     UL->>UL: Validate ISO 20022 envelope, structured address, LEI, purpose code, AML/sanctions
     UL->>CBNK: Reserve wholesale CBDC (payer-side central-bank reserves)
@@ -831,6 +1061,8 @@ Four numbers per workflow: autonomy tier, audit-trace completeness, reversal rat
 _Jun 2, 2026_  ·  [https://sebastienrousseau.com/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/](https://sebastienrousseau.com/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/)
 
 # The 2026 Banking Infrastructure Index: Measuring Readiness for Agentic AI, Quantum-Safe Security, Cloud Native Resilience, and Wholesale Payments
+
+
 
 
 
@@ -1921,6 +2153,8 @@ _May 28, 2026_  ·  [https://sebastienrousseau.com/2026-05-28-digital-assets-tok
 
 
 
+
+
 <!-- lead-start -->
 
 <!-- lead-end -->
@@ -2176,6 +2410,8 @@ _May 27, 2026_  ·  [https://sebastienrousseau.com/2026-05-27-ai-operating-syste
 
 
 
+
+
 <!-- lead-start -->
 
 <!-- lead-end -->
@@ -2328,6 +2564,8 @@ _May 26, 2026_  ·  [https://sebastienrousseau.com/2026-05-26-stablecoins-vs-tok
 
 
 
+
+
 <!-- lead-start -->
 
 <!-- lead-end -->
@@ -2438,6 +2676,8 @@ Success should be measured by unit economics, resilience evidence, data quality,
 _May 26, 2026_  ·  [https://sebastienrousseau.com/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/](https://sebastienrousseau.com/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/)
 
 # Magnifica Humanitas: An AI-Industry Reading of the First Papal Encyclical on Artificial Intelligence
+
+
 
 
 
@@ -2672,6 +2912,8 @@ _May 25, 2026_  ·  [https://sebastienrousseau.com/2026-05-25-programmable-liqui
 
 
 
+
+
 <!-- lead-start -->
 
 <!-- lead-end -->
@@ -2824,6 +3066,8 @@ _May 24, 2026_  ·  [https://sebastienrousseau.com/2026-05-24-uk-payments-forwar
 
 
 
+
+
 <!-- lead-start -->
 
 <!-- lead-end -->
@@ -2934,6 +3178,8 @@ Success should be measured by unit economics, resilience evidence, data quality,
 _May 23, 2026_  ·  [https://sebastienrousseau.com/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/](https://sebastienrousseau.com/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/)
 
 # Agentic Payments in Banking: Consent, Liability, and the New Payment UX in 2026
+
+
 
 
 
@@ -3133,6 +3379,8 @@ _May 22, 2026_  ·  [https://sebastienrousseau.com/2026-05-22-uk-acid-jazz-renew
 
 
 
+
+
 <!-- lead-start -->
 
 <!-- lead-end -->
@@ -3274,6 +3522,8 @@ The connection is groove, not strict genre labelling. Festivals such as Mostly J
 _May 21, 2026_  ·  [https://sebastienrousseau.com/2026-05-21-tokenised-deposits-banking-services-status-2026/](https://sebastienrousseau.com/2026-05-21-tokenised-deposits-banking-services-status-2026/)
 
 # Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money
+
+
 
 
 
@@ -3616,6 +3866,8 @@ _May 20, 2026_  ·  [https://sebastienrousseau.com/2026-05-20-cloud-native-banki
 
 
 
+
+
 <!-- lead-start -->
 
 <!-- lead-end -->
@@ -3755,6 +4007,8 @@ The biggest mistake is adopting containers without platform controls. If Kuberne
 _May 19, 2026_  ·  [https://sebastienrousseau.com/2026-05-19-global-wholesale-payments-economics-2026/](https://sebastienrousseau.com/2026-05-19-global-wholesale-payments-economics-2026/)
 
 # Global Wholesale Payments in 2026: ISO 20022, RTGS Renewal, and the Economics of Interoperability
+
+
 
 
 
@@ -3962,6 +4216,8 @@ No. Stablecoins may influence cross-border payment design, but wholesale payment
 _May 18, 2026_  ·  [https://sebastienrousseau.com/2026-05-18-quantum-cryptography-standards-developments-2026/](https://sebastienrousseau.com/2026-05-18-quantum-cryptography-standards-developments-2026/)
 
 # The Quantum Cryptography Reset in 2026: PQC Standards, QKD Assurance, and the Migration Work Banks Cannot Defer
+
+
 
 
 
@@ -4449,6 +4705,8 @@ Three things, sequenced. First, produce the AI Bill of Materials — the complet
 _May 16, 2026_  ·  [https://sebastienrousseau.com/2026-05-16-best-cloud-infrastructure-architecture-2026/](https://sebastienrousseau.com/2026-05-16-best-cloud-infrastructure-architecture-2026/)
 
 # The Best Cloud Infrastructure Architecture in 2026: An AI-Native, Multi-Cloud, Quantum-Aware Blueprint for Financial Services
+
+
 
 
 

@@ -1,14 +1,14 @@
 {
-  "tags": "Technology, Art, Photography, Rust, AI, quantum computing, Personal Journey, Alien Studio, Digital Art, Innovation, ISO 20022, ìsirò ìpamọ́ lẹ́yìn quantum",
-  "locale": "yo_NG",
-  "subtitle": "Ibẹrẹ Irin-ajo Imọ-ẹrọ",
-  "date": "Jan 15, 2024",
-  "language": "yo-NG",
-  "banner": "https://cloudcdn.pro/clients/alienstudio/v1/collections/radiance/radiance-08.webp",
-  "keywords": "irin-ajo imọ-ẹrọ ti ara ẹni, wiwa Rust, iwadii AI, Quantum Computing, idapọ aworan ati fọtoyiya, Alien Studio, ẹda aworan oni-nọmba, imọ-ẹrọ ninu aworan, fọtoyiya tuntun, atunṣawari iṣẹ-ọnà",
-  "word_count": 1105,
-  "reading_time": 5,
   "title": "Alien Studio: My Tech-to Art Journey in Photography",
+  "reading_time": 5,
   "description": "Darapọ mọ mi lori irin-ajo ti ara ẹni lati Rust, AI, ati Quantum Computing si atunṣafihan aworan ati fọtoyiya nipasẹ Alien Studio.",
+  "banner": "https://cloudcdn.pro/clients/alienstudio/v1/collections/radiance/radiance-08.webp",
+  "word_count": 1105,
+  "language": "yo-NG",
+  "tags": "Technology, Art, Photography, Rust, AI, quantum computing, Personal Journey, Alien Studio, Digital Art, Innovation, ISO 20022, ìsirò ìpamọ́ lẹ́yìn quantum",
+  "date": "Jan 15, 2024",
+  "subtitle": "Ibẹrẹ Irin-ajo Imọ-ẹrọ",
+  "keywords": "irin-ajo imọ-ẹrọ ti ara ẹni, wiwa Rust, iwadii AI, Quantum Computing, idapọ aworan ati fọtoyiya, Alien Studio, ẹda aworan oni-nọmba, imọ-ẹrọ ninu aworan, fọtoyiya tuntun, atunṣawari iṣẹ-ọnà",
+  "locale": "yo_NG",
   "banner_alt": "Atilẹyin oorun, oju aifọkanbalẹ; ẹwa ninu idakẹjẹ"
 }

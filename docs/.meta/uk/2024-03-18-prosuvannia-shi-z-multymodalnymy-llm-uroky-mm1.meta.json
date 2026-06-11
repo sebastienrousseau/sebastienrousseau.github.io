@@ -1,13 +1,13 @@
 {
+  "word_count": 367,
+  "reading_time": 1,
+  "locale": "uk_UA",
   "keywords": "Багатомодальні LLM, дослідження MM1, досягнення AI, стратегії попереднього навчання, розпізнавання зображень, обробка природної мови, застосування AI, майбутнє AI, багатомодальне навчання, дослідження AI",
+  "language": "uk-UA",
+  "description": "Досліджуйте статтю Apple MM1 про багатомодальні великі мовні моделі (MLLM). Дізнайтеся про архітектуру, стратегії попереднього навчання та потенціал AI.",
+  "banner_alt": "Банер для Apple MM1",
+  "subtitle": "Розкриваючи майбутнє AI: як революційне дослідження MM1 від Apple трансформує багатомодальне навчання",
   "title": "[UK DRAFT] Advancing AI with Multimodal LLMs: Insights from MM1",
   "date": "Mar 17, 2024",
-  "word_count": 367,
-  "banner": "https://cloudcdn.pro/stocks/images/mm1-visual.webp",
-  "description": "Досліджуйте статтю Apple MM1 про багатомодальні великі мовні моделі (MLLM). Дізнайтеся про архітектуру, стратегії попереднього навчання та потенціал AI.",
-  "subtitle": "Розкриваючи майбутнє AI: як революційне дослідження MM1 від Apple трансформує багатомодальне навчання",
-  "language": "uk-UA",
-  "banner_alt": "Банер для Apple MM1",
-  "locale": "uk_UA",
-  "reading_time": 1
+  "banner": "https://cloudcdn.pro/stocks/images/mm1-visual.webp"
 }

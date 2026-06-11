@@ -1,14 +1,14 @@
 {
-  "keywords": "stablecoins، GENIUS Act، BlackRock، BRSRV، BSTBL، صندوق السوق النقدية المُرمَّز، OCC، OnChain Shares، Securitize، BNY Mellon، المدفوعات",
-  "tags": "BlackRock, BRSRV, BSTBL, BUIDL, GENIUS Act, OCC, סטייבלקוינים, tokenised money market fund, Securitize, BNY Mellon, ERC-20, Ethereum, payments, regulation, ISO 20022, קריפטוגרפיה פוסט-קוונטית, AI, פיקדונות מתואדים, תשלומים חוצי גבולות",
-  "language": "he-IL",
-  "date": "May 15, 2026",
-  "word_count": 3533,
-  "description": "بموجب GENIUS Act، لا يمكن للـ stablecoins دفع العائد. تُجسّد إيداعات BRSRV و BSTBL من BlackRock التحايل: صندوق سوقٍ نقدية مُرمَّز بالتوازي مع stablecoin مُنظَّم، لتوجيه العائد عبر مسارٍ متوافق مجاور.",
-  "title": "العائد المخفي: تفكيك إيداعات BRSRV و BSTBL من BlackRock",
-  "reading_time": 17,
-  "subtitle": "بموجب GENIUS Act، لا يمكن للـ stablecoins توزيع عوائد. تتجاوز BlackRock القيد بصندوقَي سوقٍ نقدية مُرمَّزَين.",
   "banner": "https://cloudcdn.pro/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp",
+  "description": "بموجب GENIUS Act، لا يمكن للـ stablecoins دفع العائد. تُجسّد إيداعات BRSRV و BSTBL من BlackRock التحايل: صندوق سوقٍ نقدية مُرمَّز بالتوازي مع stablecoin مُنظَّم، لتوجيه العائد عبر مسارٍ متوافق مجاور.",
   "banner_alt": "قطع دولارات مكدّسة تحت إضاءةٍ دافئة، تمثيل لعائد صندوق سوقٍ نقدية مُرمَّز",
-  "locale": "he_IL"
+  "subtitle": "بموجب GENIUS Act، لا يمكن للـ stablecoins توزيع عوائد. تتجاوز BlackRock القيد بصندوقَي سوقٍ نقدية مُرمَّزَين.",
+  "date": "May 15, 2026",
+  "tags": "BlackRock, BRSRV, BSTBL, BUIDL, GENIUS Act, OCC, סטייבלקוינים, tokenised money market fund, Securitize, BNY Mellon, ERC-20, Ethereum, payments, regulation, ISO 20022, קריפטוגרפיה פוסט-קוונטית, AI, פיקדונות מתואדים, תשלומים חוצי גבולות",
+  "keywords": "stablecoins، GENIUS Act، BlackRock، BRSRV، BSTBL، صندوق السوق النقدية المُرمَّز، OCC، OnChain Shares، Securitize، BNY Mellon، المدفوعات",
+  "title": "العائد المخفي: تفكيك إيداعات BRSRV و BSTBL من BlackRock",
+  "language": "he-IL",
+  "locale": "he_IL",
+  "reading_time": 17,
+  "word_count": 3533
 }

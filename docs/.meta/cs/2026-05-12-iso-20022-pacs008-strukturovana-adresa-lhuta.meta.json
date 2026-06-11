@@ -1,13 +1,13 @@
 {
-  "description": "A mediados de noviembre de 2026, SWIFT CBPR+ rechazará las direcciones postales no estructuradas en los mensajes pacs.008 y mensajes asociados. Con cerca del 65 % de mensajes aún no conformes y el 44 % de los bancos atrasados, la ventana de remediación se cierra más rápido de lo que la mayoría de los programas de preparación están diseñados para gestionar.",
-  "reading_time": 24,
-  "keywords": "ISO 20022, pacs.008, pacs.009, pacs.004, pacs.003, pain.001, CBPR+, SWIFT, SR2026, dirección estructurada, SEPA, EPC, pagos transfronterizos, cribado de sanciones, pacs008",
-  "title": "El plazo pacs.008 de «dirección estructurada» de noviembre de 2026: vista a seis meses",
-  "locale": "cs_CZ",
-  "date": "May 12, 2026",
-  "language": "cs-CZ",
   "subtitle": "A mediados de noviembre de 2026, SWIFT CBPR+ rechazará las direcciones postales no estructuradas en los mensajes pacs.008 y mensajes de pago transfronterizos asociados.",
   "banner_alt": "Esquema de un mensaje de pago transfronterizo con dirección estructurada, con TwnNm y Ctry resaltados",
+  "language": "cs-CZ",
   "banner": "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp",
+  "date": "May 12, 2026",
+  "title": "El plazo pacs.008 de «dirección estructurada» de noviembre de 2026: vista a seis meses",
+  "reading_time": 24,
+  "locale": "cs_CZ",
+  "keywords": "ISO 20022, pacs.008, pacs.009, pacs.004, pacs.003, pain.001, CBPR+, SWIFT, SR2026, dirección estructurada, SEPA, EPC, pagos transfronterizos, cribado de sanciones, pacs008",
+  "description": "A mediados de noviembre de 2026, SWIFT CBPR+ rechazará las direcciones postales no estructuradas en los mensajes pacs.008 y mensajes asociados. Con cerca del 65 % de mensajes aún no conformes y el 44 % de los bancos atrasados, la ventana de remediación se cierra más rápido de lo que la mayoría de los programas de preparación están diseñados para gestionar.",
   "word_count": 4876
 }

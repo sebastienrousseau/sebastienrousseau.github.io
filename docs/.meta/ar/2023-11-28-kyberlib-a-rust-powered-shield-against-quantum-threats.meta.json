@@ -1,14 +1,14 @@
 {
-  "locale": "ar_SA",
   "description": "تطبيق تشفيري متين وآمن كمياً لخوارزمية CRYSTALS-Kyber، لحماية بياناتكم من التهديدات الكمية وهجمات تحليل الشفرات.",
-  "banner": "https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg",
-  "tags": "KyberLib, Rust, CRYSTALS-Kyber, التشفير ما بعد الكمي, lattice-based cryptography, key encapsulation mechanism, NIST, libsignal, cryptography, ISO 20022, الحوسبة الكمومية, AI",
-  "title": "KyberLib: CRYSTALS-Kyber بلغة Rust لما بعد الكم",
-  "date": "Nov 28, 2023",
-  "word_count": 756,
-  "banner_alt": "تعزيز الاتصالات الآمنة في العصر الكمي مع KyberLib",
-  "reading_time": 3,
+  "locale": "ar_SA",
   "subtitle": "KyberLib، تطبيق Rust متين لـ CRYSTALS-Kyber للعصر الكمي.",
+  "banner_alt": "تعزيز الاتصالات الآمنة في العصر الكمي مع KyberLib",
+  "keywords": "KyberLib، Rust CRYSTALS-Kyber، التشفير ما بعد الكمي، التشفير القائم على الشبكيات، تبادل المفاتيح المقاوم للكم، NIST FIPS 203، Sebastien Rousseau، KEM، مصادقة المدفوعات، مكتبة PQC",
+  "reading_time": 3,
+  "banner": "https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg",
+  "date": "Nov 28, 2023",
+  "title": "KyberLib: CRYSTALS-Kyber بلغة Rust لما بعد الكم",
+  "tags": "KyberLib, Rust, CRYSTALS-Kyber, التشفير ما بعد الكمي, lattice-based cryptography, key encapsulation mechanism, NIST, libsignal, cryptography, ISO 20022, الحوسبة الكمومية, AI",
   "language": "ar",
-  "keywords": "KyberLib، Rust CRYSTALS-Kyber، التشفير ما بعد الكمي، التشفير القائم على الشبكيات، تبادل المفاتيح المقاوم للكم، NIST FIPS 203، Sebastien Rousseau، KEM، مصادقة المدفوعات، مكتبة PQC"
+  "word_count": 756
 }

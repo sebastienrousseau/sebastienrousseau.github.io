@@ -235,6 +235,30 @@ site_software: "Static Site Generator, Rust"
 <div class="newsroom-grid feat-latest-grid">
 
 <article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/index.html" title="CloudCDN: An Open-Source Blueprint for the AI-Native Edge in 2026">
+<img alt="Glowing data-centre rack stack at night — symbolising the inspectable, agent-controllable, open-source edge that CloudCDN is built on" src="https://cloudcdn.pro/stocks/images/alis-po-IdVNRv-5wJo.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">CloudCDN · Open Source · CDN</span>
+<h3><a href="/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/index.html">CloudCDN: An Open-Source Blueprint for the AI-Native Edge in 2026</a></h3>
+<p class="newsroom-meta"><time datetime="2026-06-11">June 11, 2026</time></p>
+<p class="newsroom-excerpt">CloudCDN is an open-source, AI-native edge CDN blueprint — MCP-controlled infrastructure, Durable Objects rate limiting, signed URLs, passkeys, accessibility, and 100% test coverage as enforceable defaults, not vendor promises.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/index.html" title="The Banking Resilience Index in 2026: AI, Cloud, Quantum, Payments, and Third-Party Concentration Risk">
+<img alt="Abstract architectural photograph used as the visual key for the 2026 Banking Resilience Index — combining AI risk, cloud concentration, quantum-safe security, payment continuity, and critical third-party dependency into one operational-resilience scoreboard" src="https://cloudcdn.pro/stocks/images/simone-hutsch-oqlh6RsrYB0.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Banking Resilience · DORA · AI Risk</span>
+<h3><a href="/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/index.html">The Banking Resilience Index in 2026: AI, Cloud, Quantum, Payments, and Third-Party Concentration Risk</a></h3>
+<p class="newsroom-meta"><time datetime="2026-06-08">June 8, 2026</time></p>
+<p class="newsroom-excerpt">A 2026 banking resilience index — combining AI risk, cloud concentration, quantum-safe migration, payment continuity, and critical third-party dependency into one operational-resilience scoreboard the board and supervisor can both read.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/index.html" title="The Autonomous Treasury Index in 2026: Agentic Treasury, Programmable Liquidity, Tokenised Deposits, and Real-Time Cash Control">
 <img alt="Abstract architectural photograph used as the visual key for the 2026 Autonomous Treasury Index — measuring agentic treasury workflows, programmable liquidity, tokenised deposits, real-time payments, and automated cash control" src="https://cloudcdn.pro/stocks/images/christopher-burns-Kj2SaNHG-hg.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
@@ -279,30 +303,6 @@ site_software: "Static Site Generator, Rust"
 <h3><a href="/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html">The Quantum-Safe Banking Index in 2026: Post-Quantum Cryptography, QKD, Crypto-Agility, and Harvest-Now-Decrypt-Later Risk</a></h3>
 <p class="newsroom-meta"><time datetime="2026-06-04">June 4, 2026</time></p>
 <p class="newsroom-excerpt">An index framework for measuring quantum-safe banking readiness in 2026: cryptographic bill of materials, hybrid TLS deployment, NIST FIPS 203 / 204 / 205 migration progress, crypto-agility primitives, and harvest-now-decrypt-later exposure across long-lived confidential data. The Board-Level Quantum Scorecard defines four exact percentages — inventory completeness, HNDL exposure, NIST migration progress, crypto-agility readiness — that turn project statuses into supervisory-ready evidence.</p>
-</div>
-</article>
-
-<article class="newsroom-card">
-<a class="newsroom-card-media" href="/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/index.html" title="The Agentic AI Index for Banks in 2026: Measuring Autonomy, Governance, Auditability, and Business Impact">
-<img alt="The Agentic AI Index for Banks 2026 index diagram for banks and financial institutions in 2026" src="https://cloudcdn.pro/api/transform?url=/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
-</a>
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Agentic AI · Banking AI · AI Governance</span>
-<h3><a href="/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/index.html">The Agentic AI Index for Banks in 2026: Measuring Autonomy, Governance, Auditability, and Business Impact</a></h3>
-<p class="newsroom-meta"><time datetime="2026-06-03">June 3, 2026</time></p>
-<p class="newsroom-excerpt">An engineering blueprint for agentic AI in tier-1 banks: classify by permissions not intelligence, treat every production agent as an SR 11-7 / SS1/23 model from day one, and build the five-component control plane — OAuth-scoped service accounts, deterministic semantic routing, OPA policy gates, immutable WORM audit logs, and a tested kill switch — that turns autonomous workflows into auditable evidence.</p>
-</div>
-</article>
-
-<article class="newsroom-card">
-<a class="newsroom-card-media" href="/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/index.html" title="The 2026 Banking Infrastructure Index: Measuring Readiness for Agentic AI, Quantum-Safe Security, Cloud Native Resilience, and Wholesale Payments">
-<img alt="An editorial aerial composition by Miguel Sousa suggesting interlocking systems — the visual register chosen for a board-level dashboard view of the 2026 Banking Infrastructure Index" src="https://cloudcdn.pro/stocks/images/miguel-sousa-ejIF-pJhYkM.webp" loading="lazy" decoding="async" width="600" height="600" />
-</a>
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Banking Infrastructure · Agentic AI · Quantum Cryptography</span>
-<h3><a href="/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/index.html">The 2026 Banking Infrastructure Index: Measuring Readiness for Agentic AI, Quantum-Safe Security, Cloud Native Resilience, and Wholesale Payments</a></h3>
-<p class="newsroom-meta"><time datetime="2026-06-02">June 2, 2026</time></p>
-<p class="newsroom-excerpt">Banking infrastructure in 2026 has reached the point where it needs an index, not another trend list. A Stanford AI Index-inspired framework for measuring bank readiness across agentic AI, quantum-safe security, cloud-native resilience, and wholesale payments — measured as one operating model.</p>
 </div>
 </article>
 

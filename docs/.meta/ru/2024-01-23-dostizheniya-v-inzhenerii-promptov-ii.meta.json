@@ -1,13 +1,13 @@
 {
+  "subtitle": "Как разговаривать с большими языковыми моделями",
+  "keywords": "prompt-инжиниринг, LLM, chain-of-thought, few-shot, RAG, retrieval-augmented generation, структурированные ответы, JSON mode",
+  "locale": "ru_RU",
+  "language": "ru-RU",
+  "date": "January 23, 2024",
+  "word_count": 289,
+  "reading_time": 1,
+  "banner_alt": "Инженерия промптов: визуализация техник работы с LLM",
   "title": "Достижения в инженерии промптов ИИ",
   "description": "Современные техники prompt-инжиниринга для LLM: chain-of-thought, few-shot learning, retrieval-augmented generation и структурированные ответы.",
-  "locale": "ru_RU",
-  "subtitle": "Как разговаривать с большими языковыми моделями",
-  "banner": "https://cloudcdn.pro/stocks/images/prompt-engineering.webp",
-  "date": "January 23, 2024",
-  "banner_alt": "Инженерия промптов: визуализация техник работы с LLM",
-  "keywords": "prompt-инжиниринг, LLM, chain-of-thought, few-shot, RAG, retrieval-augmented generation, структурированные ответы, JSON mode",
-  "reading_time": 1,
-  "language": "ru-RU",
-  "word_count": 289
+  "banner": "https://cloudcdn.pro/stocks/images/prompt-engineering.webp"
 }

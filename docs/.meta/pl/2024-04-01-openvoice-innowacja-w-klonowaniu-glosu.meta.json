@@ -1,13 +1,13 @@
 {
-  "keywords": "OpenVoice, klonowanie głosu, AI, synteza mowy, TTS, open source",
+  "subtitle": "Otwarty model klonowania głosu o wysokiej jakości",
+  "reading_time": 1,
   "banner": "https://cloudcdn.pro/stocks/images/open-voice.webp",
-  "description": "OpenVoice: wiodąca innowacja w technologii klonowania głosu, oferująca wysoką jakość i otwartą licencję.",
   "date": "Apr 01, 2024",
   "title": "OpenVoice: innowacja w technologii klonowania głosu",
-  "word_count": 169,
-  "banner_alt": "Diagram klonowania głosu OpenVoice",
   "locale": "pl_PL",
   "language": "pl-PL",
-  "subtitle": "Otwarty model klonowania głosu o wysokiej jakości",
-  "reading_time": 1
+  "description": "OpenVoice: wiodąca innowacja w technologii klonowania głosu, oferująca wysoką jakość i otwartą licencję.",
+  "word_count": 169,
+  "banner_alt": "Diagram klonowania głosu OpenVoice",
+  "keywords": "OpenVoice, klonowanie głosu, AI, synteza mowy, TTS, open source"
 }

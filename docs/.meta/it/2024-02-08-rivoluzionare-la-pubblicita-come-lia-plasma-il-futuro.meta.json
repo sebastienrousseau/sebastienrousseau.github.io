@@ -1,13 +1,13 @@
 {
-  "word_count": 1316,
-  "reading_time": 6,
-  "keywords": "pubblicità, IA, marketing, personalizzazione, creatività, campagne, generativa",
   "banner_alt": "Pubblicità e IA",
-  "language": "it-IT",
   "date": "February 08, 2024",
-  "description": "L'IA generativa sta ridisegnando il marketing e la pubblicità: personalizzazione di massa, creatività assistita, ottimizzazione delle campagne.",
-  "banner": "https://cloudcdn.pro/stocks/images/advertising-ai.webp",
-  "locale": "it_IT",
   "subtitle": "L'impatto dell'IA generativa sull'industria pubblicitaria",
-  "title": "Rivoluzionare la pubblicità: come l'IA plasma il futuro"
+  "locale": "it_IT",
+  "title": "Rivoluzionare la pubblicità: come l'IA plasma il futuro",
+  "banner": "https://cloudcdn.pro/stocks/images/advertising-ai.webp",
+  "reading_time": 6,
+  "word_count": 1316,
+  "keywords": "pubblicità, IA, marketing, personalizzazione, creatività, campagne, generativa",
+  "language": "it-IT",
+  "description": "L'IA generativa sta ridisegnando il marketing e la pubblicità: personalizzazione di massa, creatività assistita, ottimizzazione delle campagne."
 }

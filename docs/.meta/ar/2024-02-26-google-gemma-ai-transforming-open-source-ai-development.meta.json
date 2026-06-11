@@ -1,14 +1,14 @@
 {
-  "banner": "https://cloudcdn.pro/stocks/images/ai-ship.webp",
   "subtitle": "نظرة من الداخل على القدرات والمساهمات مفتوحة المصدر وما هو قادم",
-  "banner_alt": "سفينة فضائية مستقبلية زرقاء بأضواء نيون",
-  "description": "اكتشف نموذج Gemma من Google: مشروع مفتوح المصدر يُقدِّم حلول ذكاء اصطناعي أخلاقية للاستخدام الشخصي والمؤسسي.",
-  "keywords": "Google Gemma, نموذج ذكاء اصطناعي مفتوح المصدر, البنية التقنية لـ Gemma, Gemma 2B 7B, ذكاء اصطناعي أخلاقي, دمج الذكاء الاصطناعي مع macOS, حلول الذكاء الاصطناعي للمؤسسات, الذكاء الاصطناعي الحواري, تحليل البيانات بالذكاء الاصطناعي, الذكاء الاصطناعي للأجهزة الطرفية",
-  "word_count": 1422,
-  "tags": "Gemma, Google, AI, open source, Technical, Enterprise, Integration, macOS, Data, Ethics, ISO 20022, التشفير ما بعد الكمي, Rust",
-  "title": "Google Gemma: تحويل تطوير الذكاء الاصطناعي مفتوح المصدر",
-  "language": "ar",
   "reading_time": 7,
+  "title": "Google Gemma: تحويل تطوير الذكاء الاصطناعي مفتوح المصدر",
+  "keywords": "Google Gemma, نموذج ذكاء اصطناعي مفتوح المصدر, البنية التقنية لـ Gemma, Gemma 2B 7B, ذكاء اصطناعي أخلاقي, دمج الذكاء الاصطناعي مع macOS, حلول الذكاء الاصطناعي للمؤسسات, الذكاء الاصطناعي الحواري, تحليل البيانات بالذكاء الاصطناعي, الذكاء الاصطناعي للأجهزة الطرفية",
+  "description": "اكتشف نموذج Gemma من Google: مشروع مفتوح المصدر يُقدِّم حلول ذكاء اصطناعي أخلاقية للاستخدام الشخصي والمؤسسي.",
+  "date": "Feb 26, 2024",
+  "language": "ar",
+  "tags": "Gemma, Google, AI, open source, Technical, Enterprise, Integration, macOS, Data, Ethics, ISO 20022, التشفير ما بعد الكمي, Rust",
+  "banner_alt": "سفينة فضائية مستقبلية زرقاء بأضواء نيون",
   "locale": "ar_SA",
-  "date": "Feb 26, 2024"
+  "banner": "https://cloudcdn.pro/stocks/images/ai-ship.webp",
+  "word_count": 1422
 }

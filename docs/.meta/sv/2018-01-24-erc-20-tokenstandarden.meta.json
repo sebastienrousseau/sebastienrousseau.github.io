@@ -1,13 +1,13 @@
 {
   "subtitle": "La interfaz unificada que permitió prosperar al ecosistema Ethereum",
-  "word_count": 986,
   "language": "sv-SE",
-  "reading_time": 4,
   "locale": "sv_SE",
-  "banner_alt": "Ordenador portátil apagado sobre una mesa de madera marrón",
-  "date": "January 24, 2018",
-  "title": "El estándar de token ERC-20",
-  "keywords": "ERC-20, Ethereum, token, smart contract, DeFi, EIP, blockchain, interoperabilidad, DApps, estándar",
+  "reading_time": 4,
   "banner": "https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp",
-  "description": "ERC-20: el tipo de token más extendido en la blockchain Ethereum, a menudo descrito como un contrato digital inteligente (smart contract)."
+  "keywords": "ERC-20, Ethereum, token, smart contract, DeFi, EIP, blockchain, interoperabilidad, DApps, estándar",
+  "description": "ERC-20: el tipo de token más extendido en la blockchain Ethereum, a menudo descrito como un contrato digital inteligente (smart contract).",
+  "banner_alt": "Ordenador portátil apagado sobre una mesa de madera marrón",
+  "word_count": 986,
+  "date": "January 24, 2018",
+  "title": "El estándar de token ERC-20"
 }

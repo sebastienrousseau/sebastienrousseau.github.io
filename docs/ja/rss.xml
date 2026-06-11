@@ -6,14 +6,48 @@
     <description>日本語の記事:応用AI、ISO 20022 決済、ポスト量子暗号、ホールセール決済の構造変革。</description>
     <atom:link href="https://sebastienrousseau.com/ja/rss.xml" rel="self" type="application/rss+xml"/>
     <language>ja-JP</language>
-    <lastBuildDate>Mon, 08 Jun 2026 12:45:03 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 11 Jun 2026 00:09:27 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved.</copyright>
+    <item>
+      <title>CloudCDN:2026 年 AIネイティブ・エッジのオープンソース・ブループリント</title>
+      <link>https://sebastienrousseau.com/ja/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/</link>
+      <description>CloudCDN は、MCP 制御インフラ、Durable Objects によるレート制限、署名付きURL、アクセシビリティ、監査可能性のための、オープンソースかつ AIネイティブなエッジ CDN ブループリントです。</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ja/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/</guid>
+      <pubDate>Thu, 11 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/alis-po-IdVNRv-5wJo.webp" type="image/webp" length="0"/>
+      <category>CloudCDN</category>
+      <category>AIネイティブ・エッジ</category>
+      <category>オープンソース CDN</category>
+      <category>MCP サーバー</category>
+      <category>Cloudflare Workers</category>
+      <category>Durable Objects</category>
+      <category>署名付きURL</category>
+      <category>passkeys</category>
+      <category>SLSA</category>
+      <category>エッジインフラ</category>
+    </item>
+    <item>
+      <title>2026 年銀行レジリエンス指数:AI、クラウド、量子、決済、サードパーティ集中リスク</title>
+      <link>https://sebastienrousseau.com/ja/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/</link>
+      <description>AI リスク、クラウド集中、量子安全セキュリティ、決済の継続性、重要なサードパーティ依存性を統合する、2026 年の銀行レジリエンス指数。</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ja/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/</guid>
+      <pubDate>Thu, 11 Jun 2026 00:09:27 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/simone-hutsch-oqlh6RsrYB0.webp" type="image/webp" length="0"/>
+      <category>銀行レジリエンス指数 2026</category>
+      <category>DORA レジリエンス</category>
+      <category>AI オペレーショナル・リスク</category>
+      <category>クラウド集中リスク</category>
+      <category>銀行の量子リスク</category>
+      <category>決済レジリエンス</category>
+    </item>
     <item>
       <title>2026 年の自律トレジャリー指数:エージェント型トレジャリー、プログラマブル流動性、トークン化預金、リアルタイムキャッシュ管理</title>
       <link>https://sebastienrousseau.com/ja/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/</link>
       <description>2026 年の自律トレジャリー準備態勢を測定する指数 — エージェント型トレジャリー、プログラマブル流動性、トークン化預金、リアルタイム決済、自動キャッシュ管理を統合的に評価します。</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ja/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/</guid>
-      <pubDate>Mon, 08 Jun 2026 12:45:03 +0000</pubDate>
+      <pubDate>Thu, 11 Jun 2026 00:09:27 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/christopher-burns-Kj2SaNHG-hg.webp" type="image/webp" length="0"/>
       <category>自律トレジャリー 2026</category>
@@ -28,7 +62,7 @@
       <link>https://sebastienrousseau.com/ja/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/</link>
       <description>Stanford AI Index に着想を得た 2026 年の銀行インフラ指数。エージェント型 AI、量子安全セキュリティ、クラウドネイティブ・レジリエンス、グローバルホールセール決済の準備度を一つの運営モデルで計測します。</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ja/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/</guid>
-      <pubDate>Mon, 08 Jun 2026 12:45:03 +0000</pubDate>
+      <pubDate>Thu, 11 Jun 2026 00:09:27 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/miguel-sousa-ejIF-pJhYkM.webp" type="image/webp" length="0"/>
       <category>銀行インフラ指数 2026</category>
@@ -46,7 +80,7 @@
       <link>https://sebastienrousseau.com/ja/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</link>
       <description>FedNow は 24/7 の事前資金供給型流動性を要求します。ACH は安価ですが T+1 です。USDC はアトミックに決済しますがウォレット基盤を必要とします。2026 年のマルチレール銀行は、ISO 20022 pacs.008 を読み取るオーケストレーション・エンジンが、コスト・ファイナリティ・流動性コストに基づいて各決済の経路を決定します。</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ja/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</guid>
-      <pubDate>Mon, 08 Jun 2026 12:45:03 +0000</pubDate>
+      <pubDate>Thu, 11 Jun 2026 00:09:27 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
       <category>決済オーケストレーション層</category>
@@ -68,7 +102,7 @@
       <link>https://sebastienrousseau.com/ja/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</link>
       <description>耐量子暗号は決済レールに二者択一を迫ります。ML-KEM/ML-DSA 向けに設計されていない SWIFT MT・ISO 20022 封筒に RSA/ECC を後付けするか、暗号アジリティを備えた基盤へ置換するか。HNDL が実害となる前に判断が必要です。</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ja/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</guid>
-      <pubDate>Mon, 08 Jun 2026 12:45:03 +0000</pubDate>
+      <pubDate>Thu, 11 Jun 2026 00:09:27 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp" type="image/webp" length="0"/>
       <category>耐量子計算機暗号</category>

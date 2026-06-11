@@ -40,11 +40,11 @@
         form-action 'self' https://formspree.io;
         object-src 'none';
         upgrade-insecure-requests;
-        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-Ft50DzCRhSXGhKZbUVZMiSGa1OreUIxnxHZuhvKQAw4=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-SW3gBhoC4QvuJLjY4dobxnMMUFqZiJtO2rEtJTYywao=' 'sha256-UvXnxFImJlrqC5FclT3sFG33XZoBYVP5W7OlZ8VcYg0=' 'sha256-hccps70E2728JZgMW6d5naXU6aaij+hT1hdBRuMNg1E=' 'self' 'inline-speculation-rules' https://cdn.jsdelivr.net https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-Ft50DzCRhSXGhKZbUVZMiSGa1OreUIxnxHZuhvKQAw4=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-UvXnxFImJlrqC5FclT3sFG33XZoBYVP5W7OlZ8VcYg0=' 'sha256-WMRp8KHVdO1gUP8Hyh1gD1sRmZiN4twLA5LrUnzpX9c=' 'sha256-oCaffOwz5fEjQQEFpGBgbhqPoO/YPf+iAyH6tnTESto=' 'self' 'inline-speculation-rules' https://cdn.jsdelivr.net https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
         frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
         connect-src 'self' https://cloudcdn.pro https://www.google.com https://open.spotify.com;
         img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co;
-        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        style-src 'unsafe-inline' 'self' https://fonts.googleapis.com;
         font-src 'self' https://fonts.gstatic.com;
         media-src 'self' https://p.scdn.co https://*.scdn.co;" />
 
@@ -337,11 +337,10 @@
 <pre class="mermaid">
 sequenceDiagram
     autonumber
-    participant CB_A as Commercial Bank A (payer side)
-    participant UL as Unified Ledger (BIS Agorá coordination plane)
-    participant CBNK as Central Bank (wholesale CBDC issuer)
-    participant CB_B as Commercial Bank B (payee side)
-
+    participant CB_A as Commercial Bank A
+    participant UL as Unified Ledger
+    participant CBNK as Central Bank
+    participant CB_B as Commercial Bank B
     CB_A->>UL: Submit instruction: debit tokenised deposit X, credit tokenised deposit Y, condition = wholesale CBDC leg
     UL->>UL: Validate ISO 20022 envelope, structured address, LEI, purpose code, AML/sanctions
     UL->>CBNK: Reserve wholesale CBDC (payer-side central-bank reserves)
@@ -380,7 +379,7 @@ sequenceDiagram
 </ul>
 <!-- enrich-start -->
 <aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=85" width="64" height="64" loading="lazy" decoding="async"  fetchpriority="high"><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
-<p class="post-reviewed">Last reviewed <time datetime="2026-06-08">2026-06-08</time>.</p>
+<p class="post-reviewed">Last reviewed <time datetime="2026-06-11">2026-06-11</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Related reading</h2>
 <div class="related-grid">
@@ -599,9 +598,9 @@ sequenceDiagram
     </script>
 
         <script type="application/ld+json">
-{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":1805,"about":{"@type":"Thing","name":"ISO 20022","sameAs":["https://www.iso20022.org/","https://www.wikidata.org/wiki/Q15727611","https://sebastienrousseau.com/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html"]},"headline":"The Wholesale Payments Index in 2026: ISO 20022, Tokenised Deposits, Real-Time Rails, and Cross-Border Settlement","description":"A 2026 index for wholesale payments readiness, measuring ISO 20022 data quality, tokenised deposits, real-time rails, cross-border settlement, and liquidity efficiency.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/miquel-parera-NsXLehhHx1Q.webp","width":"1425","height":"571","caption":"Visual register for the wholesale-payments shift in 2026 — messaging migration giving way to programmable settlement across ISO 20022, tokenised deposits, real-time rails, and cross-border atomicity."},"url":"https://sebastienrousseau.com/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026","datePublished":"2026-06-06T06:06:06+00:00","dateModified":"2026-06-06","inLanguage":"en","keywords":"wholesale payments 2026, ISO 20022, tokenised deposits, Project Agora, cross border payments, real time payments, structured address data, payment data quality","articleSection":"Finance","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/articles/#blog","name":"Sebastien Rousseau — Articles","url":"https://sebastienrousseau.com/articles/"},"citation":[{"@type":"CreativeWork","url":"https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed"},{"@type":"CreativeWork","url":"https://www.bis.org/about/bisih/topics/fmis/agora.htm"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/articles/"},{"@type":"ListItem","position":3,"name":"The Wholesale Payments Index in 2026: ISO 20022, Tokenised Deposits, Real-Time Rails, and Cross-Border Settlement","item":"https://sebastienrousseau.com/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026"}]}]}
+{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":1794,"about":{"@type":"Thing","name":"ISO 20022","sameAs":["https://www.iso20022.org/","https://www.wikidata.org/wiki/Q15727611","https://sebastienrousseau.com/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html"]},"headline":"The Wholesale Payments Index in 2026: ISO 20022, Tokenised Deposits, Real-Time Rails, and Cross-Border Settlement","description":"A 2026 index for wholesale payments readiness, measuring ISO 20022 data quality, tokenised deposits, real-time rails, cross-border settlement, and liquidity efficiency.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/miquel-parera-NsXLehhHx1Q.webp","width":"1425","height":"571","caption":"Visual register for the wholesale-payments shift in 2026 — messaging migration giving way to programmable settlement across ISO 20022, tokenised deposits, real-time rails, and cross-border atomicity."},"url":"https://sebastienrousseau.com/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026","datePublished":"2026-06-06T06:06:06+00:00","dateModified":"2026-06-06","inLanguage":"en","keywords":"wholesale payments 2026, ISO 20022, tokenised deposits, Project Agora, cross border payments, real time payments, structured address data, payment data quality","articleSection":"Finance","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/articles/#blog","name":"Sebastien Rousseau — Articles","url":"https://sebastienrousseau.com/articles/"},"citation":[{"@type":"CreativeWork","url":"https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed"},{"@type":"CreativeWork","url":"https://www.bis.org/about/bisih/topics/fmis/agora.htm"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/articles/"},{"@type":"ListItem","position":3,"name":"The Wholesale Payments Index in 2026: ISO 20022, Tokenised Deposits, Real-Time Rails, and Cross-Border Settlement","item":"https://sebastienrousseau.com/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026"}]}]}
     </script>
-<script src="/main.4b54f5c9.js" defer integrity="sha256-zp5hTNpY3p1b0lkoCQABvqbC0gwAKPaagKXeaD1JALA= sha256-/I1gqjc8uVwCHruFaNeAuHJ30EJR5WyKgOc30CfIaEY=" crossorigin="anonymous"></script>
+<script src="/main.931cef3c.js" defer integrity="sha256-JUs9z2u4RDSgxMCjBnyMmIHIkpakA7s5FxUmnDnSpD0= sha256-r33y52uSTzd+MqMufJlWsd09gyxv578IRoF5Gomw7Aw=" crossorigin="anonymous"></script>
   
 <!-- SSG Search Widget -->
 <div id="ssg-search-widget">

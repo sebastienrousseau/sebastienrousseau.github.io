@@ -1,14 +1,14 @@
 {
-  "subtitle": "Ìmúdára Ìtúpalẹ̀ Ìdásí Ìgbàwọ̀ pẹ̀lú IBM Qiskit àti Quantum Fourier Transform",
-  "title": "Qiskit & Quantum Fourier Transform for Credit Ratio Analysis",
-  "word_count": 1546,
-  "description": "Ṣàwárí bí IBM Qiskit àti Quantum Fourier Transform ṣe ń yí ìtúpalẹ̀ ìdásí ìgbàwọ̀ padà nínú ìṣúnmọ̀ owó, pẹ̀lú ìpéye àti ìyára tí kò tíì rí rí.",
-  "reading_time": 7,
-  "banner_alt": "Yàrá Kọ̀mpútà Kuantọ́ọ̀mù",
   "language": "yo-NG",
+  "banner_alt": "Yàrá Kọ̀mpútà Kuantọ́ọ̀mù",
+  "keywords": "ìṣírò kuantọ́ọ̀mù, ìṣúnmọ̀ owó, ìtúpalẹ̀ ìdásí ìgbàwọ̀, Qiskit, Quantum Fourier Transform, IBM, ìkẹ́kọ̀ọ́ ẹ̀rọ, ọgbọ́n àtọwọ́dọ́wọ́, ìdínwọ̀ ewu ìṣúnmọ̀ owó, ipele ìsanwó",
   "date": "Jan 08, 2024",
-  "banner": "https://cloudcdn.pro/stocks/images/quantum-computer-room.webp",
   "locale": "yo_NG",
   "tags": "Qiskit, quantum computing, Credit Analysis, FinTech, QFT, Risk Management, Finance, Data Science, Algorithm, Quantum Technology, ISO 20022, ìsirò ìpamọ́ lẹ́yìn quantum, AI, open source",
-  "keywords": "ìṣírò kuantọ́ọ̀mù, ìṣúnmọ̀ owó, ìtúpalẹ̀ ìdásí ìgbàwọ̀, Qiskit, Quantum Fourier Transform, IBM, ìkẹ́kọ̀ọ́ ẹ̀rọ, ọgbọ́n àtọwọ́dọ́wọ́, ìdínwọ̀ ewu ìṣúnmọ̀ owó, ipele ìsanwó"
+  "description": "Ṣàwárí bí IBM Qiskit àti Quantum Fourier Transform ṣe ń yí ìtúpalẹ̀ ìdásí ìgbàwọ̀ padà nínú ìṣúnmọ̀ owó, pẹ̀lú ìpéye àti ìyára tí kò tíì rí rí.",
+  "title": "Qiskit & Quantum Fourier Transform for Credit Ratio Analysis",
+  "subtitle": "Ìmúdára Ìtúpalẹ̀ Ìdásí Ìgbàwọ̀ pẹ̀lú IBM Qiskit àti Quantum Fourier Transform",
+  "banner": "https://cloudcdn.pro/stocks/images/quantum-computer-room.webp",
+  "reading_time": 7,
+  "word_count": 1546
 }

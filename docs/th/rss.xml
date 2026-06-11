@@ -6,14 +6,48 @@
     <description>บทความภาษาไทย: AI ประยุกต์, การชำระเงิน ISO 20022, การเข้ารหัสหลังควอนตัม และการปฏิรูปการชำระเงินขายส่ง</description>
     <atom:link href="https://sebastienrousseau.com/th/rss.xml" rel="self" type="application/rss+xml"/>
     <language>th-TH</language>
-    <lastBuildDate>Mon, 08 Jun 2026 12:45:03 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 11 Jun 2026 00:09:27 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. สงวนลิขสิทธิ์</copyright>
+    <item>
+      <title>CloudCDN: พิมพ์เขียวโอเพนซอร์สสำหรับเอดจ์ AI-เนทีฟในปี 2569</title>
+      <link>https://sebastienrousseau.com/th/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/</link>
+      <description>CloudCDN คือพิมพ์เขียวเอดจ์ CDN แบบโอเพนซอร์ส AI-เนทีฟ สำหรับโครงสร้างพื้นฐานที่ควบคุมด้วย MCP การจำกัดอัตราด้วย Durable Objects signed URLs การเข้าถึงได้ และความสามารถในการตรวจสอบ</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/th/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/</guid>
+      <pubDate>Thu, 11 Jun 2026 00:09:27 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/alis-po-IdVNRv-5wJo.webp" type="image/webp" length="0"/>
+      <category>CloudCDN</category>
+      <category>เอดจ์ AI-เนทีฟ</category>
+      <category>CDN โอเพนซอร์ส</category>
+      <category>MCP server</category>
+      <category>Cloudflare Workers</category>
+      <category>Durable Objects</category>
+      <category>signed URLs</category>
+      <category>passkeys</category>
+      <category>SLSA</category>
+      <category>โครงสร้างพื้นฐานเอดจ์</category>
+    </item>
+    <item>
+      <title>ดัชนีความสามารถในการฟื้นตัวของธนาคารปี 2026: AI คลาวด์ ควอนตัม การชำระเงิน และความเสี่ยงการกระจุกตัวจากบุคคลที่สาม</title>
+      <link>https://sebastienrousseau.com/th/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/</link>
+      <description>ดัชนีความสามารถในการฟื้นตัวของธนาคารปี 2026 รวมความเสี่ยง AI การกระจุกตัวคลาวด์ ความปลอดภัยควอนตัม ความต่อเนื่องการชำระเงิน และการพึ่งพาบุคคลที่สาม</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/th/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/</guid>
+      <pubDate>Thu, 11 Jun 2026 00:09:27 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/simone-hutsch-oqlh6RsrYB0.webp" type="image/webp" length="0"/>
+      <category>ดัชนีความสามารถในการฟื้นตัวของธนาคาร 2026</category>
+      <category>ความสามารถในการฟื้นตัว DORA</category>
+      <category>ความเสี่ยงการดำเนินงาน AI</category>
+      <category>ความเสี่ยงการกระจุกตัวคลาวด์</category>
+      <category>ความเสี่ยงควอนตัมธนาคาร</category>
+      <category>ความสามารถในการฟื้นตัวการชำระเงิน</category>
+    </item>
     <item>
       <title>ดัชนีคลังอิสระปี 2026: คลังเชิงตัวแทน สภาพคล่องที่โปรแกรมได้ เงินฝากโทเค็น และการควบคุมเงินสดเรียลไทม์</title>
       <link>https://sebastienrousseau.com/th/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/</link>
       <description>ดัชนีปี 2026 สำหรับความพร้อมของคลังอิสระ ครอบคลุม workflow คลังเชิงตัวแทน สภาพคล่องที่โปรแกรมได้ เงินฝากโทเค็น การชำระเงินเรียลไทม์ และการควบคุมเงินสดอัตโนมัติเป็นโครงสร้างเดียว</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/th/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/</guid>
-      <pubDate>Mon, 08 Jun 2026 12:45:03 +0000</pubDate>
+      <pubDate>Thu, 11 Jun 2026 00:09:27 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/christopher-burns-Kj2SaNHG-hg.webp" type="image/webp" length="0"/>
       <category>คลังอิสระ 2026</category>
@@ -30,7 +64,7 @@
       <link>https://sebastienrousseau.com/th/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</link>
       <description>FedNow ต้องการสภาพคล่องที่จัดสรรล่วงหน้าแบบ 24/7 ACH ราคาถูกแต่ T+1 USDC ชำระแบบอะตอมแต่ต้องมีกระเป๋าเงิน ธนาคารหลายรางปี 2026 กำหนดเส้นทางทุกรายการตามต้นทุน ความเด็ดขาด และต้นทุนสภาพคล่อง โดยเอนจินที่อ่าน ISO 20022 pacs.008</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/th/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</guid>
-      <pubDate>Mon, 08 Jun 2026 12:45:03 +0000</pubDate>
+      <pubDate>Thu, 11 Jun 2026 00:09:27 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
       <category>เลเยอร์ orchestration การชำระเงิน</category>
@@ -52,7 +86,7 @@
       <link>https://sebastienrousseau.com/th/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</link>
       <description>การเข้ารหัสยุคหลังควอนตัมบีบให้ราง การชำระเงินเลือกแบบทวิภาค: ปรับเปลี่ยน RSA/ECC ภายในซอง SWIFT MT และ ISO 20022 ที่ไม่เคยถูกออกแบบสำหรับ ML-KEM และ ML-DSA หรือแทนที่ด้วยโครงสร้างพื้นฐานที่คล่องตัวด้านการเข้ารหัส</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/th/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</guid>
-      <pubDate>Mon, 08 Jun 2026 12:45:03 +0000</pubDate>
+      <pubDate>Thu, 11 Jun 2026 00:09:27 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp" type="image/webp" length="0"/>
       <category>การเข้ารหัสยุคหลังควอนตัม</category>

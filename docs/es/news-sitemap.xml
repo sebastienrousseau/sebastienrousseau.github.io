@@ -2,13 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/es/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>es-ES</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-11T00:09:27+00:00</news:publication_date>
+    <news:title>CloudCDN: modelo de código abierto para el edge nativo de IA en 2026</news:title>
+    <news:keywords>CloudCDN, edge nativo de IA, CDN de código abierto, servidor MCP, Cloudflare Workers, Durable Objects, URLs firmadas, passkeys, SLSA, infraestructura edge</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/es/2026-06-08-banking-resilience-index-ai-cloud-quantum-pagos-third-party-risk-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>es-ES</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-11T00:09:27+00:00</news:publication_date>
+    <news:title>Índice de Resiliencia Bancaria 2026: IA, cloud, cuántico, pagos y riesgo de concentración de terceros</news:title>
+    <news:keywords>índice de resiliencia bancaria 2026, resiliencia DORA, riesgo operativo de IA, riesgo de concentración cloud, riesgo cuántico en banca, resiliencia de pagos</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/es/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>es-ES</news:language>
     </news:publication>
-    <news:publication_date>2026-06-08T12:45:03+00:00</news:publication_date>
+    <news:publication_date>2026-06-11T00:09:27+00:00</news:publication_date>
     <news:title>Índice de Tesorería Autónoma 2026: agéntica, liquidez programable y depósitos tokenizados</news:title>
     <news:keywords>tesorería autónoma 2026, tesorería agéntica, liquidez programable, depósitos tokenizados tesorería, tesorería en tiempo real, gestión de caja con IA</news:keywords>
   </news:news>
@@ -20,7 +44,7 @@
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>es-ES</news:language>
     </news:publication>
-    <news:publication_date>2026-06-08T12:45:03+00:00</news:publication_date>
+    <news:publication_date>2026-06-11T00:09:27+00:00</news:publication_date>
     <news:title>El banco multi-carril en 2026: tarjetas, A2A, stablecoins, RTP, FedNow y Open Banking en una sola estrategia</news:title>
     <news:keywords>capa de orquestación de pagos, FedNow frente a RTP, FedNow frente a ACH, liquidación con stablecoin, liquidación atómica USDC, ISO 20022 pacs.008, cuenta a cuenta A2A, APIs de Open Banking, liquidez prefinanciada, trampa de liquidez 24/7, banco multi-carril 2026, motor de enrutamiento de pagos, conciliación ERP</news:keywords>
   </news:news>
@@ -32,7 +56,7 @@
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>es-ES</news:language>
     </news:publication>
-    <news:publication_date>2026-06-08T12:45:03+00:00</news:publication_date>
+    <news:publication_date>2026-06-11T00:09:27+00:00</news:publication_date>
     <news:title>Infraestructura de pagos poscuántica: por qué los bancos reemplazarán los carriles heredados en lugar de adaptarlos</news:title>
     <news:keywords>criptografía poscuántica, pagos PQC, cripto-agilidad, recolectar ahora descifrar después, HNDL, estándares poscuánticos NIST, ML-KEM, ML-DSA, FIPS 203, FIPS 204, migración de carriles de pago, ISO 20022 PQC, reemplazo SWIFT MT, HSM, colapso PKI, resiliencia operativa, Quantum Computing Cybersecurity Preparedness Act</news:keywords>
   </news:news>
@@ -44,7 +68,7 @@
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>es-ES</news:language>
     </news:publication>
-    <news:publication_date>2026-06-08T12:45:03+00:00</news:publication_date>
+    <news:publication_date>2026-06-11T00:09:27+00:00</news:publication_date>
     <news:title>Activos digitales en 2026: la transición de infraestructura que la banca no puede aplazar</news:title>
     <news:keywords>activos digitales 2026, activos reales tokenizados, stablecoins banca, depósitos tokenizados, custodia de activos digitales, DLT banca, infraestructura de liquidación, movilidad del colateral, dinero programable, estrategia bancaria activos digitales</news:keywords>
   </news:news>

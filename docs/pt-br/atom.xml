@@ -4,13 +4,31 @@
   <link href="https://sebastienrousseau.com/pt-br/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/pt-br/"/>
   <id>https://sebastienrousseau.com/pt-br/</id>
-  <updated>2026-06-08T12:45:03+00:00</updated>
+  <updated>2026-06-11T00:09:27+00:00</updated>
+  <entry>
+    <title>CloudCDN: um blueprint de código aberto para a edge AI-nativa em 2026</title>
+    <link href="https://sebastienrousseau.com/pt-br/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/"/>
+    <id>https://sebastienrousseau.com/pt-br/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/</id>
+    <updated>2026-06-11T00:09:27+00:00</updated>
+    <published>2026-06-11T00:09:27+00:00</published>
+    <summary>CloudCDN é um blueprint de CDN de edge AI-nativo e de código aberto, com infraestrutura controlada por MCP, limitação de taxa via Durable Objects, signed URLs e auditabilidade.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Índice de Resiliência Bancária 2026: IA, nuvem, quântica, pagamentos e risco de terceiros</title>
+    <link href="https://sebastienrousseau.com/pt-br/2026-06-08-banking-resilience-index-ai-cloud-quantum-pagamentos-third-party-risk-2026/"/>
+    <id>https://sebastienrousseau.com/pt-br/2026-06-08-banking-resilience-index-ai-cloud-quantum-pagamentos-third-party-risk-2026/</id>
+    <updated>2026-06-11T00:09:27+00:00</updated>
+    <published>2026-06-11T00:09:27+00:00</published>
+    <summary>Um índice de resiliência bancária 2026 que combina risco de IA, concentração em nuvem, segurança resistente a quântica, continuidade de pagamentos e risco de terceiros.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>Índice de Tesouraria Autônoma em 2026: tesouraria agêntica, liquidez programável e depósitos tokenizados</title>
     <link href="https://sebastienrousseau.com/pt-br/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/"/>
     <id>https://sebastienrousseau.com/pt-br/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/</id>
-    <updated>2026-06-08T12:45:03+00:00</updated>
-    <published>2026-06-08T12:45:03+00:00</published>
+    <updated>2026-06-11T00:09:27+00:00</updated>
+    <published>2026-06-11T00:09:27+00:00</published>
     <summary>Um índice 2026 de prontidão para tesouraria autônoma, cobrindo fluxos de tesouraria agêntica, liquidez programável, depósitos tokenizados, pagamentos em tempo real e controle de caixa automatizado.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
@@ -18,8 +36,8 @@
     <title>O Banco Multi-Trilho em 2026: Cartões, A2A, Stablecoins, RTP, FedNow e Open Banking em uma única estratégia</title>
     <link href="https://sebastienrousseau.com/pt-br/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/"/>
     <id>https://sebastienrousseau.com/pt-br/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</id>
-    <updated>2026-06-08T12:45:03+00:00</updated>
-    <published>2026-06-08T12:45:03+00:00</published>
+    <updated>2026-06-11T00:09:27+00:00</updated>
+    <published>2026-06-11T00:09:27+00:00</published>
     <summary>FedNow exige liquidez pré-financiada 24/7. ACH é barato, mas T+1. USDC liquida atomicamente, mas precisa de carteira. O banco multi-trilho de 2026 roteia cada pagamento por custo, finalidade e custo de liquidez — guiado por motor de orquestração que lê ISO 20022 pacs.008.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
@@ -27,8 +45,8 @@
     <title>Infraestrutura de pagamentos pós-quântica: por que bancos podem substituir em vez de adaptar trilhos legados</title>
     <link href="https://sebastienrousseau.com/pt-br/2026-05-31-post-quantum-pagamentos-infrastructure-replace-rather-than-retrofit-2026/"/>
     <id>https://sebastienrousseau.com/pt-br/2026-05-31-post-quantum-pagamentos-infrastructure-replace-rather-than-retrofit-2026/</id>
-    <updated>2026-06-08T12:45:03+00:00</updated>
-    <published>2026-06-08T12:45:03+00:00</published>
+    <updated>2026-06-11T00:09:27+00:00</updated>
+    <published>2026-06-11T00:09:27+00:00</published>
     <summary>ML-KEM e ML-DSA não cabem nos envelopes SWIFT MT e ISO 20022 dimensionados para RSA-2048. HNDL fecha a janela. Em 2026, substituir os trilhos vence adaptar.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
@@ -36,8 +54,8 @@
     <title>Mercados de Atacado Digitais no Reino Unido: Gilts Tokenizados, Liquidação e o Novo Campeão</title>
     <link href="https://sebastienrousseau.com/pt-br/2026-05-30-uk-atacado-digital-markets-tokenised-gilts-settlement-2026/"/>
     <id>https://sebastienrousseau.com/pt-br/2026-05-30-uk-atacado-digital-markets-tokenised-gilts-settlement-2026/</id>
-    <updated>2026-06-08T12:45:03+00:00</updated>
-    <published>2026-06-08T12:45:03+00:00</published>
+    <updated>2026-06-11T00:09:27+00:00</updated>
+    <published>2026-06-11T00:09:27+00:00</published>
     <summary>O papel de Campeão dos Mercados de Atacado Digitais do Reino Unido transforma o atacado tokenizado em projeto nacional de competitividade para 2026.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
@@ -45,8 +63,8 @@
     <title>ISO 20022 Pós-Migração: Transformando Dados de Pagamento em Produtos Bancários em 2026</title>
     <link href="https://sebastienrousseau.com/pt-br/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/"/>
     <id>https://sebastienrousseau.com/pt-br/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</id>
-    <updated>2026-06-08T12:45:03+00:00</updated>
-    <published>2026-06-08T12:45:03+00:00</published>
+    <updated>2026-06-11T00:09:27+00:00</updated>
+    <published>2026-06-11T00:09:27+00:00</published>
     <summary>ISO 20022 após a migração é uma oportunidade de produto de dados. Endereços estruturados, códigos de finalidade, detalhes de fatura, mensagens de investigação e eventos de status mais ricos viram produtos de conciliação, fraude, liquidez, compliance e analytics.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>

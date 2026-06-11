@@ -1,6 +1,46 @@
 {
-  "count": 67,
+  "count": 69,
   "posts": [
+    {
+      "slug": "2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026",
+      "url": "https://sebastienrousseau.com/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/index.html",
+      "date": "2026-06-11",
+      "title": "CloudCDN: An Open-Source Blueprint for the AI-Native Edge in 2026",
+      "description": "CloudCDN is an open-source, AI-native edge CDN blueprint for MCP-controlled infrastructure, Durable Objects rate limiting, signed URLs, accessibility, and auditability.",
+      "keywords": [
+        "CloudCDN",
+        "AI-native edge",
+        "open-source CDN",
+        "MCP server",
+        "Cloudflare Workers",
+        "Durable Objects",
+        "signed URLs",
+        "passkeys",
+        "SLSA",
+        "edge infrastructure"
+      ],
+      "banner": "https://cloudcdn.pro/stocks/images/alis-po-IdVNRv-5wJo.webp",
+      "topics": [],
+      "language": "en-GB"
+    },
+    {
+      "slug": "2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026",
+      "url": "https://sebastienrousseau.com/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/index.html",
+      "date": "2026-06-08",
+      "title": "The Banking Resilience Index in 2026: AI, Cloud, Quantum, Payments, and Third-Party Concentration Risk",
+      "description": "A 2026 banking resilience index combining AI risk, cloud concentration, quantum-safe security, payment continuity, and critical third-party dependency.",
+      "keywords": [
+        "banking resilience index 2026",
+        "DORA resilience",
+        "AI operational risk",
+        "cloud concentration risk",
+        "quantum risk banking",
+        "payment resilience"
+      ],
+      "banner": "https://cloudcdn.pro/stocks/images/simone-hutsch-oqlh6RsrYB0.webp",
+      "topics": [],
+      "language": "en-GB"
+    },
     {
       "slug": "2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026",
       "url": "https://sebastienrousseau.com/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/index.html",

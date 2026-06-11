@@ -6,14 +6,48 @@
     <description>Статьи на русском языке: прикладной ИИ, платежи ISO 20022, постквантовая криптография и трансформация оптовых платежей.</description>
     <atom:link href="https://sebastienrousseau.com/ru/rss.xml" rel="self" type="application/rss+xml"/>
     <language>ru-RU</language>
-    <lastBuildDate>Mon, 08 Jun 2026 12:45:03 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 11 Jun 2026 00:09:27 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Все права защищены.</copyright>
+    <item>
+      <title>CloudCDN: открытая схема AI-нативной периферии в 2026 году</title>
+      <link>https://sebastienrousseau.com/ru/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/</link>
+      <description>CloudCDN — открытая AI-нативная схема периферийного CDN: управление через MCP, лимиты на Durable Objects, подписанные URL, доступность, аудируемость.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ru/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/</guid>
+      <pubDate>Thu, 11 Jun 2026 00:09:27 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/alis-po-IdVNRv-5wJo.webp" type="image/webp" length="0"/>
+      <category>CloudCDN</category>
+      <category>AI-нативная периферия</category>
+      <category>открытый CDN</category>
+      <category>MCP-сервер</category>
+      <category>Cloudflare Workers</category>
+      <category>Durable Objects</category>
+      <category>подписанные URL</category>
+      <category>passkeys</category>
+      <category>SLSA</category>
+      <category>периферийная инфраструктура</category>
+    </item>
+    <item>
+      <title>Индекс банковской устойчивости 2026 года: ИИ, облако, квант, платежи, риск концентрации третьих лиц</title>
+      <link>https://sebastienrousseau.com/ru/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/</link>
+      <description>Индекс банковской устойчивости 2026 года, объединяющий риск ИИ, концентрацию в облаке, квантово-устойчивую безопасность, непрерывность платежей и риск третьих лиц.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ru/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/</guid>
+      <pubDate>Thu, 11 Jun 2026 00:09:27 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/simone-hutsch-oqlh6RsrYB0.webp" type="image/webp" length="0"/>
+      <category>индекс банковской устойчивости 2026</category>
+      <category>устойчивость DORA</category>
+      <category>операционный риск ИИ</category>
+      <category>риск концентрации в облаке</category>
+      <category>квантовый риск в банке</category>
+      <category>устойчивость платежей</category>
+    </item>
     <item>
       <title>Индекс автономного казначейства 2026: агентные процессы, программируемая ликвидность, токенизированные депозиты</title>
       <link>https://sebastienrousseau.com/ru/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/</link>
       <description>Индекс готовности автономного казначейства 2026: агентные процессы, программируемая ликвидность, токенизированные депозиты, платежи в реальном времени, контроль наличных.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ru/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/</guid>
-      <pubDate>Mon, 08 Jun 2026 12:45:03 +0000</pubDate>
+      <pubDate>Thu, 11 Jun 2026 00:09:27 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/christopher-burns-Kj2SaNHG-hg.webp" type="image/webp" length="0"/>
       <category>автономное казначейство 2026</category>
@@ -28,7 +62,7 @@
       <link>https://sebastienrousseau.com/ru/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/</link>
       <description>Индексная методика для измерения готовности банков к агентному ИИ: автономия, управление, аудируемость, надёжность, контроли и бизнес-ценность.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ru/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/</guid>
-      <pubDate>Mon, 08 Jun 2026 12:45:03 +0000</pubDate>
+      <pubDate>Thu, 11 Jun 2026 00:09:27 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
       <category>агентный ИИ в банках 2026</category>
@@ -43,7 +77,7 @@
       <link>https://sebastienrousseau.com/ru/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</link>
       <description>FedNow требует предварительно профондированной ликвидности 24/7. ACH дешёв, но T+1. USDC рассчитывается атомарно, но требует кошельковой инфраструктуры. Мульти-рельсовый банк 2026 года маршрутизирует каждый платёж по стоимости, окончательности и цене ликвидности.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ru/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</guid>
-      <pubDate>Mon, 08 Jun 2026 12:45:03 +0000</pubDate>
+      <pubDate>Thu, 11 Jun 2026 00:09:27 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
       <category>уровень оркестрации платежей</category>
@@ -65,7 +99,7 @@
       <link>https://sebastienrousseau.com/ru/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</link>
       <description>Постквантовая криптография ставит платёжные рельсы перед бинарным выбором: доработка RSA/ECC в конвертах SWIFT MT и ISO 20022, не рассчитанных на ML-KEM и ML-DSA, либо замена на криптоагильную инфраструктуру. Архитекторы должны решить до того, как HNDL станет операционной потерей.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ru/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</guid>
-      <pubDate>Mon, 08 Jun 2026 12:45:03 +0000</pubDate>
+      <pubDate>Thu, 11 Jun 2026 00:09:27 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp" type="image/webp" length="0"/>
       <category>постквантовая криптография</category>
@@ -91,7 +125,7 @@
       <link>https://sebastienrousseau.com/ru/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</link>
       <description>Цифровые активы перестали быть ставкой на инновацию. Это вопрос архитектуры расчётов, хранения и баланса. Стратегическая задача банков — проектировать инфраструктуру в условиях структурной неопределённости.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ru/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</guid>
-      <pubDate>Mon, 08 Jun 2026 12:45:03 +0000</pubDate>
+      <pubDate>Thu, 11 Jun 2026 00:09:27 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/corporate-finance.webp" type="image/webp" length="0"/>
       <category>цифровые активы 2026</category>
