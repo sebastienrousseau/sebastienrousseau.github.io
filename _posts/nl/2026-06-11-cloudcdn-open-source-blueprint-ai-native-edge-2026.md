@@ -1,4 +1,7 @@
 ---
+
+# Front Matter (YAML)
+
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "Verlicht datacenter-rackstack bij nacht — symbool voor de inspecteerbare, agent-bestuurbare, open source edge waarop CloudCDN is gebouwd"
 banner_height: "1597"
@@ -9,7 +12,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2025 - 2026 - Sebastien Rousseau. Alle rechten voorbehouden."
 date: "11 juni 2026"
-description: "CloudCDN is een open source, AI-native edge CDN-blauwdruk voor MCP-bestuurde infrastructuur, Durable Objects rate limiting, ondertekende URLs, toegankelijkheid en auditeerbaarheid."
+description: "CloudCDN maakt van de CDN een cryptografisch beveiligd, agent-bestuurbaar edge-controlevlak — zero-trust MCP-gateway, Durable Objects, SLSA Level 3, DORA-bewijs."
 format-detection: "telephone=no"
 hreflang: "nl"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -18,7 +21,7 @@ image_alt: "Zwart-witportret van Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
 image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
-keywords: "CloudCDN, AI-native edge, open source CDN, MCP-server, Cloudflare Workers, Durable Objects, ondertekende URLs, passkeys, SLSA, edge-infrastructuur"
+keywords: "CloudCDN, AI-native edge, open source CDN, MCP-server, Cloudflare Workers, Durable Objects, zero trust, WebAuthn, ondertekende URLs, SLSA Level 3, DORA, edge-controlevlak"
 language: "nl"
 last_reviewed: "2026-06-11"
 layout: "report"
@@ -37,17 +40,19 @@ robots: "index, follow"
 schema: "FAQPage, Article"
 seo_title: "CloudCDN: open source AI-native edge-blauwdruk"
 short_name: "sebastienrousseau"
-subtitle: "CloudCDN laat zien hoe open source edge-infrastructuur inspecteerbaar, agent-bestuurbaar, rate-limited, toegankelijk en bank-grade kan worden."
-tags: "CloudCDN, open source, CDN, edge, AI-agents, MCP, Cloudflare Workers, Durable Objects, rate limiting"
+subtitle: "Van statische contentcaching naar een cryptografisch beveiligd, agent-bestuurbaar edge-controlevlak voor de wereldwijde CDN."
+tags: "CloudCDN, open source, CDN, edge, AI-agents, MCP, Cloudflare Workers, Durable Objects, rate limiting, zero trust, WebAuthn, SLSA, DORA, BCBS 239, Basel III, cloud-native banking"
 theme-color: "0, 83, 191"
 title: "CloudCDN: een open source blauwdruk voor de AI-native edge in 2026"
 url: "https://sebastienrousseau.com/nl/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
+
+# RSS - The RSS feed front matter (YAML).
 atom_link: "https://sebastienrousseau.com/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/rss.xml"
 category: "Technology"
-docs: "https://validator.w3.org/feed/docs/rss2.html"
+docs: https://validator.w3.org/feed/docs/rss2.html
 generator: "Static Site Generator (SSG) (version 0.0.26)"
-item_description: "CloudCDN is een open source, AI-native edge CDN-blauwdruk voor MCP-bestuurde infrastructuur, Durable Objects rate limiting, ondertekende URLs, toegankelijkheid en auditeerbaarheid."
+item_description: "CloudCDN maakt van de CDN een cryptografisch beveiligd, agent-bestuurbaar edge-controlevlak — zero-trust MCP-gateway, Durable Objects, SLSA Level 3, DORA-bewijs."
 item_guid: "https://sebastienrousseau.com/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/rss.xml"
 item_link: "https://sebastienrousseau.com/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/rss.xml"
 item_pub_date: "Thu, 11 Jun 2026 06:06:06 +0000"
@@ -58,23 +63,34 @@ pub_date: "Thu, 11 Jun 2026 06:06:06 +0000"
 ttl: "60"
 type: "article"
 webmaster: "contact@sebastienrousseau.com"
+
+# Apple - The Apple front matter (YAML).
 apple_mobile_web_app_orientations: "portrait"
 apple_touch_icon_sizes: "192x192"
 apple-mobile-web-app-capable: "yes"
 apple-mobile-web-app-status-bar-inset: "black"
 apple-mobile-web-app-status-bar-style: "black-translucent"
-apple-mobile-web-app-title: "CloudCDN AI-native edge"
+apple-mobile-web-app-title: "CloudCDN: open source AI-native edge-blauwdruk"
 apple-touch-fullscreen: "yes"
+
+# MS Application - The MS Application front matter (YAML).
+
 msapplication-navbutton-color: "0, 83, 191"
+
+# Twitter Card - The Twitter Card front matter (YAML).
+
 twitter_card: "summary_large_image"
 twitter_creator: "@wwdseb"
-twitter_description: "CloudCDN is een open source, AI-native edge CDN-blauwdruk voor MCP-bestuurde infrastructuur, Durable Objects rate limiting, ondertekende URLs, toegankelijkheid en auditeerbaarheid."
+twitter_description: "CloudCDN maakt van de CDN een cryptografisch beveiligd, agent-bestuurbaar edge-controlevlak — zero-trust MCP-gateway, Durable Objects, SLSA Level 3, DORA-bewijs."
 twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 twitter_image_alt: "Logo van Sebastien Rousseau"
 twitter_site: "@wwdseb"
 twitter_title: "CloudCDN: open source AI-native edge-blauwdruk"
 twitter_url: "https://sebastienrousseau.com/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026"
-excerpt: "CloudCDN is een open source, AI-native edge CDN-blauwdruk — MCP-bestuurde infrastructuur, Durable Objects rate limiting, ondertekende URLs, passkeys, toegankelijkheid en 100% testdekking als afdwingbare standaarden, geen leveranciersbeloften."
+
+excerpt: "CloudCDN is een open source blauwdruk voor de AI-native edge — een zero-trust MCP-gateway met 42 tools, atomair rate limiting via Durable Objects, WebAuthn-passkeys, ondertekende URLs, SLSA Level 3-provenance en 3.185 tests bij 100% dekking, gekoppeld aan DORA, BCBS 239 en Basel III."
+
+# Humans.txt - The Humans.txt front matter (YAML).
 author_website: "https://sebastienrousseau.com"
 author_twitter: "@wwdseb"
 author_location: "London, UK"
@@ -83,124 +99,187 @@ site_last_updated: "2026-06-11"
 site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 site_software: "Static Site Generator, Rust"
+
 ---
 
 # CloudCDN: een open source blauwdruk voor de AI-native edge in 2026
 
-<!-- lead-start -->
+
+
+
+<!-- lead-start: manual -->
 <aside class="post-lead" aria-label="Samenvatting artikel">
-<p class="post-lead-tldr"><strong>TL;DR.</strong> CloudCDN is een open source, AI-native edge-blauwdruk. Het behandelt de CDN als een agent-oppervlak — MCP-bestuurd, identiteitsgebonden, rate-limited, afgeschermd met ondertekende URLs, getest op toegankelijkheid en reproduceerbaar vanaf de broncode — in plaats van een ondoorzichtig leveranciersdashboard. De referentierepository draait een TTFB van onder de 100 ms over Cloudflare PoPs met 3.185 tests bij 100% dekking.</p>
+<p class="post-lead-tldr"><strong>TL;DR.</strong> Enterprise-technologie in 2026 wordt bepaald door de samenkomst van wereldwijd gedistribueerde serverless-uitvoering en agentische AI. Standaard-CDN's — gebouwd voor het cachen van statische bestanden en elementaire verkeersroutering — zijn structureel verouderd in een tijdperk van actieve, realtime data-orkestratie. CloudCDN is een open source blauwdruk die de edge herinricht als een actief controlevlak: serverless-runtimes, stateful coördinatie via Cloudflare Durable Objects, en een zero-trust Model Context Protocol (MCP)-gateway waarmee autonome AI-agents webinfrastructuur bedienen binnen begrensde, cryptografisch beveiligde operationele kaders.</p>
 <p class="post-lead-heading"><strong>Belangrijkste punten</strong></p>
 <ul class="post-lead-takeaways">
-  <li><strong>De edge is het nieuwe controlevlak.</strong> Agents gaan caches purgen, ondertekende URLs uitgeven en verkeer verleggen — dat vraagt om bestuurbare infrastructuur, niet om een leveranciersportaal.</li>
-  <li><strong>MCP maakt van CDN-acties getypeerde tools.</strong> Elke operatie is auditeerbaar, gebonden aan een identiteit en begrensd door beleid.</li>
-  <li><strong>Durable Objects doen het rate-limiting-rekenwerk.</strong> Limieten per sleutel, per IP en per route die failover overleven.</li>
-  <li><strong>Ondertekende URLs + passkeys schermen toegang af.</strong> Geen bearer-tokens die in logs ronddrijven; geen gedeelde API-sleutels.</li>
-  <li><strong>Open source is het vertrouwensmechanisme.</strong> Banken en ondernemingen kunnen het controlevlak lezen in plaats van te vertrouwen op pdf's van leveranciers.</li>
+  <li><strong>Van statische cache naar begrensd controlevlak.</strong> CloudCDN verplaatst de operationele grens naar de edge en maakt van CDN-knooppunten actieve beleidspoorten die beveiligings-, routerings- en toegangsbeslissingen in sub-milliseconden uitvoeren.</li>
+  <li><strong>Stateful edge-coördinatie.</strong> Cloudflare Durable Objects dwingen atomair, realtime rate limiting en statecoördinatie wereldwijd af — geen gedistribueerde race-condities, geen systemisch quotamisbruik over edge-regio's heen.</li>
+  <li><strong>Veilig agentisch infrastructuurbeheer via MCP.</strong> Een zero-trust gateway stelt 42 gespecialiseerde MCP-tools beschikbaar, waarmee AI-agents infrastructuur inspecteren, configureren en bedienen binnen cryptografisch ondertekende grenzen.</li>
+  <li><strong>Toeleveringsketenbeveiliging als pipeline-deliverable.</strong> SLSA Level 3-buildprovenance via Sigstore/Cosign en 3.185 unit tests bij 100% dekking op elke release.</li>
+  <li><strong>Bewijs op bestuursniveau, geen dashboards.</strong> Edge-telemetrie sluit direct aan op de bestuursverantwoordelijkheid van DORA artikel 5, BCBS 239-risicorapportage en de Basel III-kapitaalregels voor operationeel risico.</li>
 </ul>
-<p><strong>Verwante lectuur:</strong> <a href="/2026-05-20-cloud-native-banking-financial-institutions-2026/">Cloud-native banking</a> · <a href="/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/">AI-besturingssysteem voor betalingen</a> · <a href="/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/">DORA + AI Act compliance-stack</a></p>
+<p class="post-lead-related"><strong>Verwante lectuur:</strong> <a href="/2026-05-16-best-cloud-infrastructure-architecture-2026/">Cloudinfrastructuur-architectuur 2026</a> · <a href="/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/">Cloud Native Banking Index 2026</a> · <a href="/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/">Agentic AI Index voor banken 2026</a></p>
 </aside>
 <!-- lead-end -->
 
-CloudCDN doet ertoe omdat de edge het controlevlak wordt voor AI-native software. Naarmate agents tools aanroepen, data verplaatsen, caches purgen, ondertekende URLs aanvragen en workflows coördineren, schiet het oude CDN-model van ondoorzichtige dashboards en proprietaire controlevlakken tekort. CloudCDN bepleit een ander model: een open, inspecteerbaar, agent-bestuurbaar edge-platform dat beveiliging, toegankelijkheid, prestaties en auditeerbaarheid als ontwerprandvoorwaarden van eerste orde behandelt.
+Het CDN-debat is voorbij. De edge is geen cache meer; het is het controlevlak voor AI-native software. Nu agents tools aanroepen, data verplaatsen, caches purgen, ondertekende URLs aanvragen en workflows coördineren, is het oude model van ondoorzichtige dashboards en proprietaire controlevlakken niet langer een ongemak maar een regelgevende aansprakelijkheid. CloudCDN bepleit een ander model: een open, inspecteerbaar, agent-bestuurbaar edge-platform dat beveiliging, toegankelijkheid, prestaties en auditeerbaarheid behandelt als afdwingbare standaardinstellingen in plaats van leveranciersbeloften.
 
-Het open source referentiepunt voor dit artikel is [cloudcdn.pro ⧉](https://github.com/sebastienrousseau/cloudcdn.pro "cloudcdn.pro"). De repository wordt gepositioneerd als: een multi-tenant, AI-native CDN die end-to-end te lezen en zelfstandig te deployen is, met een TTFB van onder de 100 ms over Cloudflare PoPs, MCP-besturing, Durable Objects rate limiting, WCAG-AA-toegankelijkheid, ondertekende URLs, passkeys, SLSA en 3.185 tests bij 100% dekking.
+Het open source referentiepunt voor dit artikel is [cloudcdn.pro ⧉](https://github.com/sebastienrousseau/cloudcdn.pro "cloudcdn.pro"). De repository is een multi-tenant, AI-native CDN die end-to-end te lezen en zelfstandig te deployen is: TTFB onder de 100 ms over Cloudflare PoPs, MCP-besturing, rate limiting via Durable Objects, WCAG-AA-toegankelijkheid, ondertekende URLs, passkeys, SLSA Level 3 en 3.185 tests bij 100% dekking.
 
 ---
 
 > **Managementsamenvatting / belangrijkste punten**
 >
-> - **CloudCDN is het vlaggenschip van open source infrastructuurverhalen.** Het brengt CDN-mechanica, Cloudflare Workers, Durable Objects, MCP, ondertekende URLs, passkeys, rate limiting, toegankelijkheid en testdiscipline samen.
-> - **De edge wordt een agent-oppervlak.** Zodra AI-systemen infrastructuur kunnen bedienen via MCP-tools, moet de CDN bestuurbaar worden door identiteit, beleid, rate limits en auditlogs.
-> - **Open source is het vertrouwensmechanisme.** Een bank of onderneming kan inspecteren hoe het controlevlak werkt in plaats van volledig te vertrouwen op claims van leveranciers.
-> - **Atomair rate limiting is strategisch.** Durable Objects bieden een coördinatiepunt om zowel externe abuse als interne agentische lussen te beperken.
-> - **Het project is een referentiearchitectuur.** De waarde zit niet alleen in wat het uitserveert, maar in wat het leert over de volgende generatie edge-infrastructuur.
+> - **De edge wordt de operationele grens.** CloudCDN maakt van standaard-CDN-knooppunten actieve beleidspoorten die beveiliging, routering en toegangscontrole in sub-milliseconden uitvoeren.
+> - **Durable Objects maken rate limiting atomair.** Realtime, wereldwijd consistente quotahandhaving sluit het race-conditievenster dat eventueel consistente limiters openlaten voor aanvallers en haperende agents.
+> - **Agents bedienen infrastructuur via 42 begrensde MCP-tools.** Elke aanroep wordt gevalideerd tegen WebAuthn-passkeys, ondertekende payloads en OPA-beleid voordat er iets wordt uitgevoerd.
+> - **De toeleveringsketen is onderdeel van het product.** SLSA Level 3-provenance via Sigstore/Cosign koppelt elke release cryptografisch aan de geauditeerde broncode.
+> - **Telemetrie is compliance-bewijs.** Edge-operaties sluiten aan op DORA artikel 5, BCBS 239 en Basel III-kapitaal voor operationeel risico — direct, niet via rapportage achteraf.
 >
 ---
 
 ## Waarom dit open source project er in 2026 toe doet
 
-De strategische waarde van open source in 2026 beperkt zich niet langer tot transparantie, hergebruik of welwillendheid van ontwikkelaars. Voor banken en financiële instellingen is open source infrastructuur een manier geworden om aannames te inspecteren, controles te testen, leveranciersondoorzichtigheid te verminderen en architectonische claims om te zetten in code die gelezen, geforkt, gehard en geopereerd kan worden. De nuttigste projecten zijn geen demo's. Het zijn referentie-implementaties die laten zien hoe beveiliging, toegankelijkheid, prestaties, compliance en ontwikkelaarservaring in elkaar grijpen.
+Enterprise-IT is in 2026 verschoven van statische infrastructuurprovisioning naar realtime, event-gedreven data-orkestratie. Twee marktkrachten drijven die verschuiving.
 
-Door deze lens moet cloudcdn.pro begrepen worden. Het is niet zomaar een repository; het is een concreet ontwerpargument. Het stelt dat kritieke infrastructuur auditeerbaar, samenstelbaar, gedocumenteerd, testbaar en begrijpelijk moet zijn voor de mensen die ervan afhankelijk zijn. In de financiële sector telt dat omdat systemen steeds vaker op het snijvlak liggen van agentische AI, realtime betalingen, post-kwantumcryptografie, cloud-native veerkracht, gestructureerde data en regelgevend bewijs.
+De eerste is de opmars van agentische AI. Autonome modellen en softwareagents voeren inmiddels complexe operationele taken uit — geautomatiseerde dreigingsmitigatie, routeringsbeslissingen, realtime grootboekafstemming. Ze gebruiken geen dashboards. Ze roepen tools aan.
 
-## Architectuurlens
+De tweede is de actieve handhaving van de [Digital Operational Resilience Act (DORA) ⧉](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554 "Verordening (EU) 2022/2554 betreffende digitale operationele weerbaarheid voor de financiële sector"). Bankinstellingen kunnen niet langer leunen op ondoorzichtige, proprietaire CDN's van derden. Toezichthouders eisen volledig zicht op de softwaretoeleveringsketen, aantoonbare exitcapaciteit en onveranderbare cryptografische audittrails.
+
+Gecentraliseerde serverarchitecturen leggen latentiestraffen op die realtime orkestratie niet kan absorberen. Proprietaire CDN's functioneren als zwarte dozen die instellingen blootstellen aan compromittering van de toeleveringsketen die ze niet kunnen zien, laat staan bewijzen. CloudCDN dicht dat gat met een transparante, zero-trust, open source blauwdruk die van de edge een actief controlevlak maakt. Voor technologiebestuurders verschuift het gesprek daarmee van de kosten van compliance naar het rendement op weerbaarheid (Return on Resilience): kapitaal dat behouden blijft door geautomatiseerde, audit-klare operationele pipelines.
+
+## De architectuurlens
+
+De CloudCDN-architectuur is opgebouwd uit vijf lagen, waarbij gecentraliseerde middleware wordt vervangen door gelokaliseerde, stateful edge-primitieven:
 
 | Laag | Ontwerpkeuze | Waarom het ertoe doet | Risico bij verkeerde aanpak |
 |---|---|---|---|
-| **Edge-runtime** | Cloudflare Workers en Pages | Wereldwijde uitvoering met lage operationele overhead | Latentiewinst zonder controlediscipline |
-| **Statecoördinatie** | Durable Objects voor atomaire limieten en gedeelde controle | Voorkomt race-condities in edge-handhaving | Verspreide abuse en inconsistente quota's |
-| **Agent-interface** | MCP-blootgestelde operaties | Laat agents infrastructuur bedienen via beheerde tools | Ongebreidelde tool-aanroep |
-| **Toegangscontrole** | Passkeys, ondertekende URLs, permissies en audittrails | Maakt CDN-operaties tot herleidbare acties | Anonieme of zwak toegeschreven wijzigingen |
-| **Kwaliteitspoorten** | Toegankelijkheid, testen, SLSA en deploymentchecks | Maakt vertrouwen onderdeel van levering | Snelle infrastructuur die niet veilig bestuurd kan worden |
+| **Edge-runtime** | Cloudflare Workers en Pages | Elimineert de latentie van gecentraliseerde VM's; voert beleid wereldwijd in sub-milliseconden uit | Prestatiewinst zonder beleidsdiscipline leidt tot chaotische edge-drift |
+| **Statecoördinatie** | Durable Objects | Garandeert atomaire, realtime consistentie voor rate limits en gedeelde state over regio's heen | Gedistribueerde race-condities, misbruik van API-resources, omzeilde perimeterquota's |
+| **Agent-interface** | Zero-trust MCP-gateway | Stelt 42 gespecialiseerde MCP-tools beschikbaar zodat AI-agents infrastructuur bedienen binnen beheerde grenzen | Onbegrensde tool-aanroepen en ongeautoriseerde configuratiewijzigingen |
+| **Toegangscontrole** | WebAuthn-passkeys en ondertekende URLs | Vervangt statische wachtwoorden door cryptografische handtekeningen voor auditeerbare operaties | Zwak toegeschreven wijzigingen; credential-diefstal die tot een perimeterdoorbraak leidt |
+| **Kwaliteitspoorten** | SLSA Level 3 en 100% testdekking | Verifieert de buildbron wiskundig; blokkeert kwaadaardige dependency-injectie | Kwaadaardige code die via de softwaretoeleveringsketen binnenkomt |
 
-## Signalen om te volgen
+## Operationele signalen om te volgen
 
-| Signaal | Wat het betekent | Referentie |
-|---|---|---|
-| **42 MCP-tools** | CloudCDN is ontworpen voor agent-bestuurbare infrastructuur | [cloudcdn.pro ⧉](https://github.com/sebastienrousseau/cloudcdn.pro "CloudCDN-repository") |
-| **Durable Objects rate limiting** | Stateful edge-coördinatie wordt een beveiligingsprimitive | [Cloudflare Durable Objects ⧉](https://developers.cloudflare.com/durable-objects/ "Documentatie Cloudflare Durable Objects") |
-| **Cloudflare Agents SDK en MCP** | Het bredere edge-ecosysteem beweegt naar geauthenticeerde agent-connectiviteit | [Cloudflare ⧉](https://blog.cloudflare.com/building-ai-agents-with-mcp-authn-authz-and-durable-objects/ "Cloudflare MCP, authenticatie en Durable Objects") |
-| **Ondertekende URLs en passkeys** | Toegang en delegatie worden behandeld als infrastructuurzaken | [cloudcdn.pro ⧉](https://github.com/sebastienrousseau/cloudcdn.pro "CloudCDN-repository") |
-| **3.185 tests bij 100% dekking** | Het project positioneert verificatie als onderdeel van het infrastructuurontwerp | [cloudcdn.pro ⧉](https://github.com/sebastienrousseau/cloudcdn.pro "CloudCDN-repository") |
+Edge-gereedheid is meetbaar. Dit zijn de kwantitatieve indicatoren die uitvoeringscapaciteit aantonen in plaats van intentie:
 
-## De CDN wordt een controlevlak
+| Signaal | Metriek / benchmark | Regelgevende referentie | Platformimplementatie |
+|---|---|---|---|
+| **42 MCP-tools** | Begrensd toolregister voor geautomatiseerd beheer | COBIT 2019 (BAI06) | MCP-gateway die agent-handtekeningen toetst aan OPA-beleid |
+| **Durable Objects** | Lekvrije, atomaire quotahandhaving in sub-milliseconden | DORA artikel 6 | Durable Objects die de wereldwijde API-quotastatus bijhouden |
+| **Passkeys en ondertekende URLs** | 100% van de beheersessies geverifieerd via FIDO2 WebAuthn | DORA artikel 30 | Cryptografische handtekeningcontroles ingebed in de edge-router |
+| **SLSA Level 3** | Cryptografisch ondertekende buildmanifesten (Sigstore) | DORA artikel 30 | GitHub Actions-pipelines die ondertekende buildmetadata genereren |
+| **3.185 unit tests** | 100% dekking; regressiepoorten op elke release | NIST CSF 2.0 (PR.DS-01) | CI-pipelines die deployment stilleggen bij elke testfout |
 
-Traditionele CDN's waren gebouwd rond contentversnelling, cachepurging, routering en WAF-achtige beschermingen. De AI-native edge voegt een nieuwe eis toe: softwareagents moeten infrastructuur veilig kunnen inspecteren, triggeren en bedienen. Dat maakt van de CDN een controlevlak. Een controlevlak moet identiteit, permissies, logs, rate limits en uitlegbaarheid hebben.
+## De CDN wordt een actief controlevlak
+
+Traditionele CDN's zijn ontworpen rond passieve versnelling van statische content. CloudCDN herdefinieert dat model. Met geïntegreerde Cloudflare Workers en Durable Objects functioneert de edge als een actieve, stateful beleidspoort.
+
+Wanneer een AI-agent of geautomatiseerd proces een infrastructuurconfiguratiewijziging of routeringsaanpassing aanvraagt, praat het niet met een kwetsbare, gecentraliseerde database. Het verzoek wordt onderschept op het dichtstbijzijnde edge-knooppunt en doorloopt identiteits-, beleids- en quotacontroles voordat er iets wordt uitgevoerd:
+
+```mermaid
+sequenceDiagram
+    autonumber
+    participant Agent as AI-agent / LLM-client
+    participant MCP as Zero-trust MCP-gateway
+    participant DO as Durable Objects (stateruimte)
+    participant Worker as Cloudflare Workers-runtime
+    participant Edge as Edge-CDN / WAF-state
+    Agent->>MCP: Tool-aanroep (route wijzigen) met ondertekende payload
+    activate MCP
+    Note over MCP: Valideert WebAuthn-passkey<br/>en cryptografisch ondertekende URL
+    MCP->>MCP: Toetst beleid aan OPA-regels
+    alt Beleidscontrole faalt
+        MCP-->>Agent: Toegang geweigerd (403 Unauthorized)
+    else Beleidscontrole slaagt
+        MCP->>DO: Bevraagt state & actieve quota
+        activate DO
+        Note over DO: Verifieert atomaire rate limits<br/>om race-condities te voorkomen
+        DO-->>MCP: Quota bevestigd & verlaagd
+        deactivate DO
+        MCP->>Worker: Stuurt begrensde uitvoering door
+        activate Worker
+        Worker->>Edge: Werkt WAF-regel / routeringstabel bij
+        Worker->>Worker: Voegt cryptografisch log toe (SLSA-ondertekend)
+        Worker-->>Agent: Actie voltooid (200 OK + audit-hash)
+        deactivate Worker
+    end
+    deactivate MCP
+```
+
+Elke stap in die sequentie levert een herleidbaar, ondertekend record op. Dat is het verschil tussen een CDN die content versnelt en een controlevlak dat bestuurd kan worden.
 
 ## Waarom open source het vertrouwensmodel verandert
 
-Voor gereguleerde instellingen ligt de aantrekkingskracht van CloudCDN niet alleen in prestaties. Het is inspecteerbaarheid. Teams kunnen lezen hoe rate limits werken, hoe tool-interfaces worden blootgesteld, hoe ondertekende URLs worden gegenereerd, hoe tests zijn gestructureerd en hoe toegankelijkheid wordt gehandhaafd. Dat schept een andere relatie tussen infrastructuur en governance.
+Voor Chief Information Security Officers vormen ondoorzichtige proprietaire CDN's een zichzelf versterkend risico. Closed source edge-netwerken zijn zwarte dozen: als de leverancier intern wordt gecompromitteerd, heeft de bank geen enkel zicht totdat het lek publiek wordt gemaakt.
+
+CloudCDN vervangt die asymmetrie door een volledig auditeerbaar, open source vertrouwensmodel dat steunt op drie mechanismen:
+
+1. **Wiskundige buildprovenance.** Onder SLSA Level 3 wordt elke release cryptografisch gekoppeld aan de open source GitHub-repository. Een CISO kan verifiëren — wiskundig, niet contractueel — dat de binary op de wereldwijde edge-knooppunten van Cloudflare exact de geauditeerde broncode bevat.
+2. **Doorlopende, publieke beveiligingsaudits.** De codebase wordt onderworpen aan geautomatiseerde scans, publieke kwetsbaarheidsmeldingen en peer-reviewed code-audits. Obscuriteit is geen beheersmaatregel; review wel.
+3. **Geen vendor lock-in (DORA artikel 28).** DORA verplicht banken een duidelijke, geteste exitstrategie aan te tonen voor kritieke derde aanbieders. Omdat CloudCDN open source is en op standaard serverless-primitieven is gebouwd, kunnen instellingen edge-configuraties migreren van Cloudflare naar andere serverless-runtimes of private Kubernetes-clusters — en die capaciteit aantonen bij de toezichthouder.
 
 ## Het bank-grade edge-patroon
 
-Het bank-grade patroon is eenvoudig maar lastig uitvoerbaar: agent-toegankelijke operaties, strikt begrensde permissies, atomair rate limiting, onveranderbare audittrails, toegankelijkheidschecks, ondertekende distributie en deployment-bewijs. CloudCDN zet dat patroon om in code in plaats van in een slide.
+CloudCDN is ontworpen om te voldoen aan de compliance-standaarden van de mondiale financiële sector en koppelt technische edge-operaties direct aan de kaders die toezichthouders daadwerkelijk toetsen:
 
-## Wat dit per doelgroep betekent
+- **Modelrisicobeheer ([US Fed SR 11-7 ⧉](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "Toezichtsrichtsnoeren voor modelrisicobeheer") / UK PRA SS1/23).** Autonome modellen die operationele taken uitvoeren, vallen onder modelrisicogovernance. De MCP-gateway van CloudCDN behandelt agentische tools als kwantitatieve modellen: strikte beleidsgrenzen, realtime logging en verplichte human-in-the-loop-overrides voor acties met grote impact.
+- **BCBS 239 (aggregatie van risicodata).** Door transactiedata aan de edge vast te leggen, te taggen en te structureren, ontstaan operationele metrieken in realtime — conform de BCBS 239-eisen voor data-integriteit, tijdigheid en traceerbaarheid richting de toezichthouder.
+- **DORA artikel 5 (bestuursverantwoordelijkheid).** Het bestuur draagt de uiteindelijke persoonlijke aansprakelijkheid voor operationele weerbaarheid. CloudCDN vertaalt edge-telemetrie naar gekwantificeerd, verifieerbaar bewijs dat niet-technische bestuurders kunnen meenemen naar een audit met persoonlijke aansprakelijkheid.
+- **Basel III-kapitaal voor operationeel risico.** Banken houden regelgevend kapitaal aan tegen operationeel risico. Geautomatiseerde DR-failover en SLSA Level 3-provenance verlagen het operationeel risicoprofiel van de instelling — kapitaal dat op de balans behouden blijft, niet alleen een afgevinkte audit.
 
-### Voor bank-technologiebestuurders
+## Wat dit per banktype betekent
 
-De vraag is of het project helpt om strategische druk om te zetten in een uitvoerbare architectuur. De waarde is het sterkst wanneer de repository teams iets concreets geeft om te inspecteren: interfaces, configuratie, tests, beveiligingsgrenzen, deployment-aannames en faalmodi.
+### Mondiaal systeemrelevante banken (G-SIB's)
 
-### Voor beveiliging en risicoteams
+G-SIB's verwerken enorme transactievolumes over meerdere jurisdicties. De prioriteit is het vervangen van gefragmenteerde legacy-perimetercontroles door één uniform edge-vlak. Met het CloudCDN-patroon kan een G-SIB beveiligingsbeleid, API-gateways en agentische governance wereldwijd standaardiseren — en DORA-conforme bewijspipelines genereren als bijproduct van de operatie in plaats van als kwartaalsprint.
 
-Het project moet niet alleen op functies worden geëvalueerd, maar op controle-bewijs. Bruikbare open source financiële infrastructuur laat zien hoe identiteit, geheimen, validatie, auditlogs, rate limits, ondertekeningen, herkomst en herstel verondersteld worden te werken.
+### Transactiebanken en corporate banks
 
-### Voor ontwikkelaars en platformingenieurs
+Voor transactiebanken is het klantgerichte product een bundel van uitvoeringssnelheid, beveiliging en datatransparantie. Met het CloudCDN-patroon kunnen deze banken beveiligde API-dashboards en realtime cash-trackingdiensten aanbieden aan corporate treasurers — een weerbare edge-houding die zakelijke deposito's verdedigt.
 
-De belangrijkste test is of het project cognitieve belasting verlaagt zonder belangrijke mechaniek te verbergen. Goede open source moet het veilige pad het gemakkelijke pad maken, terwijl ervaren ingenieurs de implementatie nog steeds kunnen begrijpen en aanpassen.
+### Regionale en kleinere banken
 
-### Voor bijdragers
+Regionale banken staan tegenover dezelfde dreigingsactoren als G-SIB's, zonder de engineeringbudgetten. Een open source, bank-grade edge-blauwdruk levert de controles kant-en-klaar: directe regelgevende aansluiting zonder proprietaire licentiekosten, met de broncode als bewijs.
 
-De kans is om het project te versterken waar echte instellingen zekerheid nodig hebben: documentatie, voorbeelden, conformiteitstests, CI-hardening, dreigingsmodellen, prestatieprofielen, toegankelijkheidschecks en integratiegidsen.
+## Het draaiboek voor de bestuurskamer
 
-## Conclusie
+Operationele weerbaarheid is niet langer een onzichtbare backoffice-IT-metriek; het is een bestuursprioriteit met persoonlijke aansprakelijkheid. De instellingen die in 2026 het vertrouwen van toezichthouders, klanten en aandeelhouders behouden, behandelen technologie als een verifieerbaar, observeerbaar bedrijfsmiddel.
 
-De reden om over cloudcdn.pro te schrijven is dat het een breder sectorvraagstuk concreet maakt. In 2026 hebben banken geen abstracte transformatietaal nodig. Ze hebben inspecteerbare systemen nodig die laten zien hoe moderne infrastructuur gebouwd, beveiligd, getest en bestuurd kan worden. Open source is de geloofwaardigste manier om dat argument zichtbaar te maken.
+De routekaart voor senior technologieleiders is kort:
+
+1. **Maak bewijs een product.** Budgetteer voor geautomatiseerde, zelfdocumenterende pipelines aan de edge — bewijs dat de operatie zelf genereert, niet dat voor de auditor wordt samengesteld.
+2. **Stap over op stateful edge-controle.** Haal rate limiting, WAF en identiteitsverificatie van gecentraliseerde servers af en breng ze onder bij atomaire edge-primitieven.
+3. **Stel cryptografische agentische grenzen in.** Dwing zero-trust MCP-gateways af met passkey- en OPA-validatie voor elke geautomatiseerde tool-aanroep.
+4. **Eis open source build-audits.** Maak SLSA Level 3-buildprovenance een voorwaarde voor deployment, geen ambitie.
 
 ## Veelgestelde vragen
 
-**Waarom eerst over CloudCDN schrijven?**
+**Is CloudCDN klaar voor DORA-audits?**
 
-Omdat het het breedste open source verhaal is: AI-agents, edge, MCP, beveiliging, toegankelijkheid, prestaties en bank-grade auditeerbaarheid in één project.
+Ja. CloudCDN is ontworpen om geautomatiseerd compliance-bewijs te produceren dat direct aansluit op de ITS-templates van het Register of Information (RT.01 tot en met RT.15) en de contractuele bepalingen van DORA artikel 30.
 
-**Is CloudCDN alleen voor banken?**
+**Wat is het voordeel van Durable Objects voor rate limiting?**
 
-Nee. De architectuur is breed bruikbaar, maar banken vormen een veeleisende lens omdat ze sterkere controles, auditeerbaarheid en veerkrachtvereisten afdwingen.
+Traditionele gedistribueerde rate limiters leunen op eventuele consistentie, wat een latentievenster openlaat dat aanvallers of haperende agents kunnen uitbuiten. Durable Objects garanderen onmiddellijke, atomaire consistentie wereldwijd en sluiten dat race-conditievenster volledig.
 
 **Wat maakt CloudCDN AI-native?**
 
-De MCP-bestuurde operaties en het agent-bewuste controlemodel maken het geschikt voor autonome infrastructuurworkflows in plaats van uitsluitend menselijk dashboardgebruik.
+De MCP-bestuurde operaties en het agent-bewuste controlemodel. Infrastructuur wordt bediend via 42 beheerde tools met cryptografische identiteit en beleidsgrenzen — ontworpen voor autonome workflows, niet alleen voor menselijke dashboards.
 
-**Wat is het sterkste technische idee?**
+**Vergroot open source code het risico op zero-day-exploits?**
 
-Atomair edge rate limiting met Durable Objects, omdat het zowel externe abuse als intern op hol geslagen agentisch gedrag kan afweren.
+Nee. Proprietaire, closed source CDN's leunen op beveiliging door obscuriteit. De codebase van CloudCDN wordt doorlopend onderworpen aan geautomatiseerde tests, publieke peer review en SLSA Level 3-validatie — een aantoonbaar hogere vertrouwensdrempel.
 
 ## Referenties
 
-- GitHub, (2026). [cloudcdn.pro-repository ⧉](https://github.com/sebastienrousseau/cloudcdn.pro "cloudcdn.pro-repository").
+- Europees Parlement en Raad van de Europese Unie, (2022). [Verordening (EU) 2022/2554 betreffende digitale operationele weerbaarheid voor de financiële sector (DORA) ⧉](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554 "Verordening (EU) 2022/2554 betreffende digitale operationele weerbaarheid voor de financiële sector (DORA)"). Brussel: Publicatieblad van de Europese Unie.
+- Basel Committee on Banking Supervision (BCBS), (2013). [Beginselen voor effectieve aggregatie van risicodata en risicorapportage (BCBS 239) ⧉](https://www.bis.org/publ/bcbs239.htm "Beginselen voor effectieve aggregatie van risicodata en risicorapportage (BCBS 239)"). Bazel: Bank for International Settlements.
+- Board of Governors of the Federal Reserve System, (2011). [Toezichtsrichtsnoeren voor modelrisicobeheer (SR Letter 11-7) ⧉](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "Toezichtsrichtsnoeren voor modelrisicobeheer (SR Letter 11-7)"). Washington D.C.: Federal Reserve.
+- Cloudflare, (2026). [Documentatie Durable Objects: stateful edge-coördinatie ⧉](https://developers.cloudflare.com/durable-objects/ "Documentatie Durable Objects"). San Francisco: Cloudflare.
 - Cloudflare, (2026). [AI-agents bouwen met MCP, authenticatie en Durable Objects ⧉](https://blog.cloudflare.com/building-ai-agents-with-mcp-authn-authz-and-durable-objects/ "AI-agents bouwen met MCP, authenticatie en Durable Objects").
-- Cloudflare, (2026). [Documentatie Durable Objects ⧉](https://developers.cloudflare.com/durable-objects/ "Documentatie Durable Objects").
+- GitHub, (2026). [cloudcdn.pro-repository ⧉](https://github.com/sebastienrousseau/cloudcdn.pro "cloudcdn.pro-repository").
 
 <!-- enrich-start -->
 <aside class="author-card" aria-label="Over de auteur"><img alt="Portret van Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist, schrijft over toegepaste AI, betalingsinfrastructuur, getokeniseerd geld, ISO 20022, post-kwantumbeveiliging, cloud-native financiële dienstverlening, open source infrastructuur en gereguleerde digitale markten.</span><span class="author-credentials">Meer dan 20 jaar bij HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Volledig profiel</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
