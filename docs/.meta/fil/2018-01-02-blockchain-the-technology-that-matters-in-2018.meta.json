@@ -1,11 +1,14 @@
 {
-  "title": "البلوكشين: التقنية التي تهمّ في 2018",
-  "language": "fil-PH",
-  "banner_alt": "حاسوب محمول مُطفأ فوق طاولة خشبية بُنّية",
-  "date": "January 2, 2018",
-  "banner": "https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp",
-  "description": "حكاية الرحلة الاستثنائية لتأمين المعاملات الرقمية عبر تعمية المفتاح الخاص وشبكات النِدّ-لنِدّ (P2P).",
-  "keywords": "blockchain, العملة المشفّرة, Bitcoin, P2P, smart contract, السجل الموزّع, التمويل, سلسلة التوريد, الهويّة الرقمية, الترميز",
   "subtitle": "تعمية المفتاح الخاص وشبكات النِدّ-لنِدّ في خدمة معاملاتٍ آمنة",
-  "locale": "fil_PH"
+  "language": "fil-PH",
+  "title": "البلوكشين: التقنية التي تهمّ في 2018",
+  "locale": "fil_PH",
+  "banner": "https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp",
+  "banner_alt": "حاسوب محمول مُطفأ فوق طاولة خشبية بُنّية",
+  "word_count": 665,
+  "description": "حكاية الرحلة الاستثنائية لتأمين المعاملات الرقمية عبر تعمية المفتاح الخاص وشبكات النِدّ-لنِدّ (P2P).",
+  "date": "January 2, 2018",
+  "reading_time": 3,
+  "tags": "pain001, ISO 20022, payment automation, cost reduction, payments, payment files, pain message, DORA, post-quantum cryptography, AI, tokenised deposits, Rust, cloud native banking, cross-border payments, stablecoins",
+  "keywords": "blockchain, العملة المشفّرة, Bitcoin, P2P, smart contract, السجل الموزّع, التمويل, سلسلة التوريد, الهويّة الرقمية, الترميز"
 }

@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://sebastienrousseau.com/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/sitemap.xml

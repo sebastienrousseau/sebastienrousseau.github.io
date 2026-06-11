@@ -1,5 +1,6 @@
 ---
 title: "Blockchain explained, the technology that matters the most"
+tags: "pain001, ISO 20022, payment automation, cost reduction, payments, payment files, pain message, DORA, post-quantum cryptography, AI, tokenised deposits, Rust, cloud native banking, biyan kuɗi na cross-border, stablecoins"
 subtitle: "Blockchain, rarraba ledgers, da fasahar da ta fi muhimmanci a shekarar 2018."
 description: "Labarin tafiya mai ban al'ajabi na kare ma'amalar dijital ta hanyar Private-key Cryptography da hanyoyin sadarwar Peer-to-peer (P2P)."
 date: "Jan 02, 2018"
@@ -81,9 +82,9 @@ The versatility of blockchain has sparked innovative applications across sectors
 
 - **Finance:** Cryptocurrencies, decentralized exchanges, tokenized securities trading, cross-border payments
 
-- **Supply Chain:** Tracking provenance of goods, improving transparency in manufacturing and distribution 
+- **Supply Chain:** Tracking provenance of goods, improving transparency in manufacturing and distribution
 
-- **Healthcare:** Secure medical data storage, facilitating sharing across providers 
+- **Healthcare:** Secure medical data storage, facilitating sharing across providers
 
 - **Government:** Digital identity records, transparent voting systems
 
@@ -135,4 +136,3 @@ If you have any questions, please don't hesitate to contact me via [LinkedIn ⧉
 [09]: /articles/index.html "Back to Articles"
 [10]: /contact/index.html "Contact Sebastien Rousseau"
 [11]: https://www.linkedin.com/in/sebastienrousseau/ "Sebastien Rousseau on LinkedIn"
-

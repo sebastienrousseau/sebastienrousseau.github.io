@@ -1,5 +1,6 @@
 ---
 title: "إحداث ثورة في التمويل عبر الخوارزميات الكمومية المعزّزة بالذكاء الاصطناعي"
+tags: "Quantum, AI, Finance, Algorithms, Mathematics, Banking, Technology, Innovation, Data, Efficiency, ISO 20022, post-quantum cryptography, quantum computing"
 subtitle: "إطلاق العنان للقوّة الكمومية للابتكار المالي: الذكاء الاصطناعي في قلب الخوارزميات الجيلية الجديدة"
 description: "الدور التحويلي للذكاء الاصطناعي في الخوارزميات الكمومية للتمويل، مع التركيز على تفاصيلها الرياضية وتطبيقاتها المصرفية."
 date: "Dec 25, 2023"

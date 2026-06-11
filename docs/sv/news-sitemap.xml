@@ -8,9 +8,153 @@
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>sv-SE</news:language>
     </news:publication>
-    <news:publication_date>2026-05-28T23:46:22+00:00</news:publication_date>
+    <news:publication_date>2026-06-11T00:09:27+00:00</news:publication_date>
     <news:title>CloudCDN: en ritning med öppen källkod för AI-inbyggd edge 2026</news:title>
     <news:keywords>CloudCDN, AI-inbyggd edge, CDN med öppen källkod, MCP-server, Cloudflare Workers, Durable Objects, signerade URL:er, passkeys, SLSA, edge-infrastruktur</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/sv/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>sv-SE</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-11T00:09:27+00:00</news:publication_date>
+    <news:title>Banking Resilience Index 2026: AI, moln, kvant, betalningar och tredjepartsrisk</news:title>
+    <news:keywords>bankindex motståndskraft 2026, DORA operationell motståndskraft, AI-operativ risk, koncentrationsrisk moln, kvantrisk banker, betalningskontinuitet</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/sv/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>sv-SE</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-11T00:09:27+00:00</news:publication_date>
+    <news:title>Autonomous Treasury Index 2026: agentisk treasury, programmerbar likviditet och tokeniserade insättningar</news:title>
+    <news:keywords>autonom treasury 2026, agentisk treasury, programmerbar likviditet, tokeniserade insättningar treasury, realtidstreasury, kassahantering AI</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/sv/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>sv-SE</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-11T00:09:27+00:00</news:publication_date>
+    <news:title>Multi-rälsbanken 2026: Kort, A2A, stablecoins, RTP, FedNow och Open Banking i en strategi</news:title>
+    <news:keywords>betalningsorkestrering, FedNow vs RTP, FedNow vs ACH, stablecoin-avveckling, USDC atomär avveckling, ISO 20022 pacs.008, konto-till-konto A2A, Open Banking API:er, förfinansierad likviditet, likviditetsfälla dygnet runt, multi-rälsbank 2026, routningsmotor för betalningar, ERP-avstämning</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/sv/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>sv-SE</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-11T00:09:27+00:00</news:publication_date>
+    <news:title>Postkvantinfrastruktur för betalningar: varför banker kan välja ersättning framför anpassning av äldre räls</news:title>
+    <news:keywords>postkvantkryptografi, PQC-betalningar, kryptoagilitet, samla-nu-dekryptera-senare, HNDL, NIST postkvantstandarder, ML-KEM, ML-DSA, FIPS 203, FIPS 204, migration av betalningsräls, ISO 20022 PQC, ersättning av SWIFT MT, HSM, PKI-kollaps, operativ motståndskraft, Quantum Computing Cybersecurity Preparedness Act</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/sv/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>sv-SE</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-11T00:09:27+00:00</news:publication_date>
+    <news:title>Digitala tillgångar 2026: infrastrukturövergången bankerna inte kan skjuta upp</news:title>
+    <news:keywords>digitala tillgångar 2026, tokeniserade reala tillgångar, stablecoins bank, tokeniserade insättningar, förvaring digitala tillgångar, DLT bank, avvecklingsinfrastruktur, säkerhetsmobilitet, programmerbara pengar, bankstrategi digitala tillgångar</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/sv/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>sv-SE</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-06T06:06:06+00:00</news:publication_date>
+    <news:title>Indexet för grossistbetalningar 2026: ISO 20022, tokeniserade insättningar, realtidsspår och gränsöverskridande avveckling</news:title>
+    <news:keywords>grossistbetalningar 2026, ISO 20022, tokeniserade insättningar, Project Agora, gränsöverskridande betalningar, realtidsbetalningar, strukturerade adressdata, datakvalitet i betalningar</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/sv/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>sv-SE</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-05T06:06:06+00:00</news:publication_date>
+    <news:title>Index över molnnativ bankverksamhet 2026: DORA, plattformsteknik, suverän moln och operativ motståndskraft</news:title>
+    <news:keywords>molnnativ bankverksamhet 2026, DORA banker, molnkoncentrationsrisk, plattformsteknik banker, IKT-tredjepartsrisk, molnexitstrategi, suverän moln</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/sv/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>sv-SE</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-04T06:06:06+00:00</news:publication_date>
+    <news:title>Quantum-Safe Banking Index 2026: Postkvantkryptografi, QKD, kryptoagilitet och harvest-now-decrypt-later-risk</news:title>
+    <news:keywords>kvantsäker bank 2026, postkvantkryptografi banker, NIST FIPS 203, ML-KEM, ML-DSA, SLH-DSA, kryptoagilitet, QKD bank</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/sv/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>sv-SE</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-03T06:06:06+00:00</news:publication_date>
+    <news:title>Det agentiska AI-indexet för banker 2026: Att mäta autonomi, styrning, revisionsbarhet och affärspåverkan</news:title>
+    <news:keywords>agentisk AI bank 2026, AI-agenter banker, AI-styrning finansiella tjänster, autonoma bankarbetsflöden, modellrisk, AI-revisionsbarhet, ISO 20022, SR 11-7, DORA, OAuth, OPA</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/sv/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>sv-SE</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-02T06:06:06+00:00</news:publication_date>
+    <news:title>Bankinfrastrukturindex 2026: AI, kvant, moln och wholesale-betalningar</news:title>
+    <news:keywords>bankinfrastrukturindex 2026, agentisk AI bank, kvantsäker bank, molnnativ bank, wholesale-betalningar, ISO 20022, DORA, Project Agora, tokeniserade insättningar</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/sv/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>sv-SE</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-30T06:06:06+00:00</news:publication_date>
+    <news:title>Digitala grossistmarknader i Storbritannien: tokeniserade gilts och avveckling</news:title>
+    <news:keywords>digitala grossistmarknader Storbritannien 2026, Wholesale Digital Markets Champion, tokeniserade gilts, tokeniserad grossistfinansiering, DSS, intradagsrepo, atomär DvP, City i London, avveckling</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/sv/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>sv-SE</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-29T06:06:06+00:00</news:publication_date>
+    <news:title>ISO 20022 efter migreringen: betaldata som bankprodukter 2026</news:title>
+    <news:keywords>ISO 20022 2026, strukturerad adress, CBPR+, betaldata-produkter, ändamålskoder, företagskassör, avstämning, sanktionsscreening, bedrägeridetektering</news:keywords>
   </news:news>
 </url>
 <url>

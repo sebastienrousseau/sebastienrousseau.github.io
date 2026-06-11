@@ -1,5 +1,6 @@
 ---
 title: "Quantum-Safe Payments: Why the Industry Must Act Now"
+tags: "quantum-safe payments, post-quantum cryptography, payments, EPAA, ISO 20022, SWIFT, SEPA, DORA, quantum computing, AI, biyan kuɗi na cross-border, stablecoins"
 subtitle: "Shirye-shiryen quantum-safe yanke shawara ce ta yanzu game da kayayyakin more rayuwa. Ba ta gaba ba."
 description: "Kwamfutar quantum na barazana ga cryptography na tsarin biyan kuɗi. Takarda ta EPAA ta bayyana haɗarin tsarin da gaggawar hijira zuwa PQC."
 date: "Sep 01, 2025"
@@ -98,4 +99,3 @@ Sebastien Rousseau is a Senior Digital Product Manager at HSBC Bank plc, leading
 [epaa]: https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf "EPAA Quantum-Safe Payments White Paper"
 [rel1]: /2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html "Quantum Key Distribution: Revolutionising Security in Banking"
 [rel2]: /2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html "CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age"
-

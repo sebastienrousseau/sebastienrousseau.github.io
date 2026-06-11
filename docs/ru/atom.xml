@@ -4,14 +4,122 @@
   <link href="https://sebastienrousseau.com/ru/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/ru/"/>
   <id>https://sebastienrousseau.com/ru/</id>
-  <updated>2026-05-28T23:46:22+00:00</updated>
+  <updated>2026-06-11T00:09:27+00:00</updated>
   <entry>
     <title>CloudCDN: открытая схема AI-нативной периферии в 2026 году</title>
     <link href="https://sebastienrousseau.com/ru/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/"/>
     <id>https://sebastienrousseau.com/ru/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/</id>
-    <updated>2026-05-28T23:46:22+00:00</updated>
-    <published>2026-05-28T23:46:22+00:00</published>
+    <updated>2026-06-11T00:09:27+00:00</updated>
+    <published>2026-06-11T00:09:27+00:00</published>
     <summary>CloudCDN — открытая AI-нативная схема периферийного CDN: управление через MCP, лимиты на Durable Objects, подписанные URL, доступность, аудируемость.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Индекс банковской устойчивости 2026 года: ИИ, облако, квант, платежи, риск концентрации третьих лиц</title>
+    <link href="https://sebastienrousseau.com/ru/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/"/>
+    <id>https://sebastienrousseau.com/ru/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/</id>
+    <updated>2026-06-11T00:09:27+00:00</updated>
+    <published>2026-06-11T00:09:27+00:00</published>
+    <summary>Индекс банковской устойчивости 2026 года, объединяющий риск ИИ, концентрацию в облаке, квантово-устойчивую безопасность, непрерывность платежей и риск третьих лиц.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Индекс автономного казначейства 2026: агентные процессы, программируемая ликвидность, токенизированные депозиты</title>
+    <link href="https://sebastienrousseau.com/ru/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/"/>
+    <id>https://sebastienrousseau.com/ru/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/</id>
+    <updated>2026-06-11T00:09:27+00:00</updated>
+    <published>2026-06-11T00:09:27+00:00</published>
+    <summary>Индекс готовности автономного казначейства 2026: агентные процессы, программируемая ликвидность, токенизированные депозиты, платежи в реальном времени, контроль наличных.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Индекс агентного ИИ для банков в 2026 году: измерение автономии, управления, аудируемости и бизнес-эффекта</title>
+    <link href="https://sebastienrousseau.com/ru/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/"/>
+    <id>https://sebastienrousseau.com/ru/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/</id>
+    <updated>2026-06-11T00:09:27+00:00</updated>
+    <published>2026-06-11T00:09:27+00:00</published>
+    <summary>Индексная методика для измерения готовности банков к агентному ИИ: автономия, управление, аудируемость, надёжность, контроли и бизнес-ценность.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Мульти-рельсовый банк в 2026 году: карты, A2A, стейблкоины, RTP, FedNow и открытый банкинг в единой стратегии</title>
+    <link href="https://sebastienrousseau.com/ru/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/"/>
+    <id>https://sebastienrousseau.com/ru/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</id>
+    <updated>2026-06-11T00:09:27+00:00</updated>
+    <published>2026-06-11T00:09:27+00:00</published>
+    <summary>FedNow требует предварительно профондированной ликвидности 24/7. ACH дешёв, но T+1. USDC рассчитывается атомарно, но требует кошельковой инфраструктуры. Мульти-рельсовый банк 2026 года маршрутизирует каждый платёж по стоимости, окончательности и цене ликвидности.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Постквантовая платёжная инфраструктура: почему банки заменят, а не доработают устаревшие рельсы</title>
+    <link href="https://sebastienrousseau.com/ru/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/"/>
+    <id>https://sebastienrousseau.com/ru/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</id>
+    <updated>2026-06-11T00:09:27+00:00</updated>
+    <published>2026-06-11T00:09:27+00:00</published>
+    <summary>Постквантовая криптография ставит платёжные рельсы перед бинарным выбором: доработка RSA/ECC в конвертах SWIFT MT и ISO 20022, не рассчитанных на ML-KEM и ML-DSA, либо замена на криптоагильную инфраструктуру. Архитекторы должны решить до того, как HNDL станет операционной потерей.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Цифровые активы в 2026: инфраструктурный переход, который банки не могут откладывать</title>
+    <link href="https://sebastienrousseau.com/ru/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/"/>
+    <id>https://sebastienrousseau.com/ru/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</id>
+    <updated>2026-06-11T00:09:27+00:00</updated>
+    <published>2026-06-11T00:09:27+00:00</published>
+    <summary>Цифровые активы перестали быть ставкой на инновацию. Это вопрос архитектуры расчётов, хранения и баланса. Стратегическая задача банков — проектировать инфраструктуру в условиях структурной неопределённости.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Индекс оптовых платежей в 2026 году: ISO 20022, токенизированные депозиты, рельсы реального времени и трансграничный расчёт</title>
+    <link href="https://sebastienrousseau.com/ru/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/"/>
+    <id>https://sebastienrousseau.com/ru/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</id>
+    <updated>2026-06-06T06:06:06+00:00</updated>
+    <published>2026-06-06T06:06:06+00:00</published>
+    <summary>Индекс готовности оптовых платежей 2026 года: качество данных ISO 20022, токенизированные депозиты, рельсы реального времени, трансграничный расчёт и эффективность ликвидности.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Индекс облачно изначально банкинга 2026: DORA, инженерия платформы, суверенное облако и операционная устойчивость</title>
+    <link href="https://sebastienrousseau.com/ru/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/"/>
+    <id>https://sebastienrousseau.com/ru/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/</id>
+    <updated>2026-06-05T06:06:06+00:00</updated>
+    <published>2026-06-05T06:06:06+00:00</published>
+    <summary>Индекс облачно изначально банкинга 2026: измеряем готовность к DORA, зрелость инженерии платформы, риск концентрации в облаке, доказательства выхода и операционную устойчивость.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Индекс квантово-устойчивого банкинга в 2026 году: постквантовая криптография, QKD, крипто-гибкость и риск harvest-now-decrypt-later</title>
+    <link href="https://sebastienrousseau.com/ru/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/"/>
+    <id>https://sebastienrousseau.com/ru/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/</id>
+    <updated>2026-06-04T06:06:06+00:00</updated>
+    <published>2026-06-04T06:06:06+00:00</published>
+    <summary>Банковский индекс квантово-устойчивой готовности в 2026 году: постквантовые стандарты NIST, криптографическая инвентаризация, крипто-гибкость, QKD и риски долгоживущих данных.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Индекс банковской инфраструктуры 2026: готовность к агентному ИИ, квантовой безопасности, облачной устойчивости и оптовым платежам</title>
+    <link href="https://sebastienrousseau.com/ru/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/"/>
+    <id>https://sebastienrousseau.com/ru/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/</id>
+    <updated>2026-06-02T06:06:06+00:00</updated>
+    <published>2026-06-02T06:06:06+00:00</published>
+    <summary>Индекс банковской инфраструктуры 2026 года в духе Stanford AI Index: измерение готовности по агентному ИИ, квантово-устойчивой безопасности, облачно-нативной устойчивости и оптовым платежам.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Оптовые цифровые рынки Великобритании: токенизированные гилты, расчёт и новая роль координатора</title>
+    <link href="https://sebastienrousseau.com/ru/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/"/>
+    <id>https://sebastienrousseau.com/ru/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</id>
+    <updated>2026-05-30T06:06:06+00:00</updated>
+    <published>2026-05-30T06:06:06+00:00</published>
+    <summary>Роль координатора оптовых цифровых рынков Великобритании превращает токенизированные оптовые финансы в национальный проект конкурентоспособности.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>ISO 20022 после миграции: платёжные данные как банковские продукты в 2026</title>
+    <link href="https://sebastienrousseau.com/ru/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/"/>
+    <id>https://sebastienrousseau.com/ru/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</id>
+    <updated>2026-05-29T06:06:06+00:00</updated>
+    <published>2026-05-29T06:06:06+00:00</published>
+    <summary>ISO 20022 после миграции — это возможность для продуктов данных. Структурированные адреса, коды назначения, реквизиты счетов, сообщения расследований и статусные события становятся продуктами сверки, фрода, ликвидности и комплаенса.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>

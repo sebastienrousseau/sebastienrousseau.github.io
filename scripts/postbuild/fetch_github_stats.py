@@ -18,6 +18,7 @@ Failure mode: if the API call fails for any repo, keep the previously
 cached value so the build doesn't fail. Only repos with FRESH data get
 updated. Stale data is logged but tolerated.
 """
+
 from __future__ import annotations
 
 import sys as _sys  # path bootstrap — scripts reorg (scripts/lib/ on sys.path)

@@ -4,14 +4,122 @@
   <link href="https://sebastienrousseau.com/ko/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/ko/"/>
   <id>https://sebastienrousseau.com/ko/</id>
-  <updated>2026-05-28T23:46:22+00:00</updated>
+  <updated>2026-06-11T00:09:27+00:00</updated>
   <entry>
     <title>CloudCDN: 2026년 AI 네이티브 엣지의 오픈 소스 블루프린트</title>
     <link href="https://sebastienrousseau.com/ko/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/"/>
     <id>https://sebastienrousseau.com/ko/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/</id>
-    <updated>2026-05-28T23:46:22+00:00</updated>
-    <published>2026-05-28T23:46:22+00:00</published>
+    <updated>2026-06-11T00:09:27+00:00</updated>
+    <published>2026-06-11T00:09:27+00:00</published>
     <summary>CloudCDN은 MCP 제어 인프라, Durable Objects 속도 제한, 서명된 URL, 접근성, 감사 가능성을 갖춘 오픈 소스 AI 네이티브 엣지 CDN 블루프린트입니다.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>2026년 은행 회복탄력성 지수: AI·클라우드·양자·결제·제3자 위험</title>
+    <link href="https://sebastienrousseau.com/ko/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/"/>
+    <id>https://sebastienrousseau.com/ko/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/</id>
+    <updated>2026-06-11T00:09:27+00:00</updated>
+    <published>2026-06-11T00:09:27+00:00</published>
+    <summary>AI 위험, 클라우드 집중, 양자내성 보안, 결제 연속성, 핵심 제3자 종속성을 결합한 2026년 은행 회복탄력성 지수.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>2026년 자율 트레저리 지수: 에이전트형 트레저리, 프로그래밍 가능한 유동성, 토큰화 예금, 실시간 현금 통제</title>
+    <link href="https://sebastienrousseau.com/ko/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/"/>
+    <id>https://sebastienrousseau.com/ko/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/</id>
+    <updated>2026-06-11T00:09:27+00:00</updated>
+    <published>2026-06-11T00:09:27+00:00</published>
+    <summary>에이전트형 트레저리 워크플로우, 프로그래밍 가능한 유동성, 토큰화 예금, 실시간 결제, 자동화된 현금 통제를 다루는 2026년 자율 트레저리 준비도 지수입니다.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>2026년 멀티레일 뱅크: 카드·A2A·스테이블코인·RTP·FedNow·Open Banking을 하나의 전략으로</title>
+    <link href="https://sebastienrousseau.com/ko/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/"/>
+    <id>https://sebastienrousseau.com/ko/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</id>
+    <updated>2026-06-11T00:09:27+00:00</updated>
+    <published>2026-06-11T00:09:27+00:00</published>
+    <summary>FedNow는 24/7 사전 자금공급 유동성을 요구합니다. ACH는 저렴하지만 T+1입니다. USDC는 원자적으로 정산되지만 지갑 인프라가 필요합니다. 2026년 멀티레일 뱅크는 비용·결제 종결성·유동성 비용 기준으로 라우팅합니다.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>양자내성 결제 인프라: 은행이 레거시 레일을 개조하지 않고 대체할 수밖에 없는 이유</title>
+    <link href="https://sebastienrousseau.com/ko/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/"/>
+    <id>https://sebastienrousseau.com/ko/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</id>
+    <updated>2026-06-11T00:09:27+00:00</updated>
+    <published>2026-06-11T00:09:27+00:00</published>
+    <summary>양자내성암호는 결제 레일에 이분법적 선택을 강요합니다. ML-KEM·ML-DSA용으로 설계되지 않은 SWIFT MT·ISO 20022 봉투에 RSA/ECC를 개조하거나, 암호 민첩성 인프라로 대체해야 합니다.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>디지털 자산 2026: 인프라 전환의 해</title>
+    <link href="https://sebastienrousseau.com/ko/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/"/>
+    <id>https://sebastienrousseau.com/ko/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</id>
+    <updated>2026-06-11T00:09:27+00:00</updated>
+    <published>2026-06-11T00:09:27+00:00</published>
+    <summary>디지털 자산은 더 이상 혁신 베팅이 아닙니다. 결제, 수탁, 대차대조표 아키텍처의 문제입니다. 은행의 전략적 과제는 구조적 불확실성 속에서의 인프라 설계입니다.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>2026 거액 결제 지수: ISO 20022, 토큰화 예금, 실시간 레일, 국경 간 결제</title>
+    <link href="https://sebastienrousseau.com/ko/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/"/>
+    <id>https://sebastienrousseau.com/ko/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</id>
+    <updated>2026-06-06T06:06:06+00:00</updated>
+    <published>2026-06-06T06:06:06+00:00</published>
+    <summary>ISO 20022 데이터 품질, 토큰화 예금, 실시간 레일, 국경 간 결제, 유동성 효율을 측정하는 2026년 거액 결제 준비도 지수.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>2026년 클라우드 네이티브 뱅킹 지수: DORA, 플랫폼 엔지니어링, 소버린 클라우드, 운영 회복력</title>
+    <link href="https://sebastienrousseau.com/ko/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/"/>
+    <id>https://sebastienrousseau.com/ko/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/</id>
+    <updated>2026-06-05T06:06:06+00:00</updated>
+    <published>2026-06-05T06:06:06+00:00</published>
+    <summary>DORA 준비도, 플랫폼 엔지니어링 성숙도, 클라우드 집중 위험, 출구 증거, 운영 회복력을 측정하는 2026년 클라우드 네이티브 뱅킹 지수.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>2026 양자내성 뱅킹 지수: 양자내성 암호, QKD, 암호 민첩성, 수집 후 복호화 위험</title>
+    <link href="https://sebastienrousseau.com/ko/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/"/>
+    <id>https://sebastienrousseau.com/ko/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/</id>
+    <updated>2026-06-04T06:06:06+00:00</updated>
+    <published>2026-06-04T06:06:06+00:00</published>
+    <summary>2026년 양자내성 준비도를 측정하는 뱅킹 지수입니다. NIST 양자내성 표준, 암호 자산 인벤토리, 암호 민첩성, QKD, 장기 데이터 노출 위험을 다룹니다.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>2026년 은행을 위한 에이전틱 AI 인덱스: 자율성, 거버넌스, 감사 가능성, 비즈니스 임팩트 측정하기</title>
+    <link href="https://sebastienrousseau.com/ko/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/"/>
+    <id>https://sebastienrousseau.com/ko/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/</id>
+    <updated>2026-06-03T06:06:06+00:00</updated>
+    <published>2026-06-03T06:06:06+00:00</published>
+    <summary>자율성, 거버넌스, 감사 가능성, 신뢰성, 통제, 비즈니스 가치를 아우르는 은행의 에이전틱 AI 준비도를 측정하기 위한 인덱스형 프레임워크.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>2026 뱅킹 인프라 인덱스: 에이전트 AI, 양자내성 보안, 클라우드 네이티브 회복력, 도매 결제 준비도 측정</title>
+    <link href="https://sebastienrousseau.com/ko/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/"/>
+    <id>https://sebastienrousseau.com/ko/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/</id>
+    <updated>2026-06-02T06:06:06+00:00</updated>
+    <published>2026-06-02T06:06:06+00:00</published>
+    <summary>에이전트 AI, 양자내성 보안, 클라우드 네이티브 회복력, 글로벌 도매 결제 전반의 준비도를 측정하는 Stanford AI Index 기반 2026년 뱅킹 인프라 인덱스입니다.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>영국 도매 디지털 시장 2026: 토큰화 길트, 결제, 챔피언 직책</title>
+    <link href="https://sebastienrousseau.com/ko/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/"/>
+    <id>https://sebastienrousseau.com/ko/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</id>
+    <updated>2026-05-30T06:06:06+00:00</updated>
+    <published>2026-05-30T06:06:06+00:00</published>
+    <summary>영국 도매 디지털 시장 챔피언 직책은 토큰화 길트, DLT 결제, BoE DSS 샌드박스를 국가 경쟁력 의제로 격상시킵니다. 2026년 시티의 설계 규율을 점검합니다.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>ISO 20022 마이그레이션 이후: 2026년 결제 데이터를 은행 제품으로</title>
+    <link href="https://sebastienrousseau.com/ko/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/"/>
+    <id>https://sebastienrousseau.com/ko/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</id>
+    <updated>2026-05-29T06:06:06+00:00</updated>
+    <published>2026-05-29T06:06:06+00:00</published>
+    <summary>ISO 20022 마이그레이션 이후는 데이터 제품 기회입니다. 구조화 주소, 용도 코드, 송장 정보, 조사 메시지, 풍부한 결제 상태 이벤트가 대사·사기·유동성·컴플라이언스·분석 제품으로 전환됩니다.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>

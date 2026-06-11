@@ -8,9 +8,153 @@
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>yo-NG</news:language>
     </news:publication>
-    <news:publication_date>2026-05-28T23:46:22+00:00</news:publication_date>
+    <news:publication_date>2026-06-11T00:09:27+00:00</news:publication_date>
     <news:title>CloudCDN: Ètò Ìpinnu Orisun Ṣiṣi fún Eti AI-Ìbílẹ̀ ní 2026</news:title>
     <news:keywords>CloudCDN, eti AI-ìbílẹ̀, CDN orisun ṣiṣi, MCP server, Cloudflare Workers, Durable Objects, signed URLs, passkeys, SLSA, ìgbékalẹ̀ eti</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/yo/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>yo-NG</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-11T00:09:27+00:00</news:publication_date>
+    <news:title>Ìmọ̀ Ìfaradà Báńkì ní 2026: AI, Cloud, Quantum, Ìsanwó, àti Ewu Ìkójọpọ̀ Ẹgbẹ́ Kẹta</news:title>
+    <news:keywords>ìmọ̀ ìfaradà báńkì 2026, ìfaradà DORA, ewu iṣẹ́ AI, ewu ìkójọpọ̀ cloud, ewu quantum báńkì, ìfaradà ìsanwó</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/yo/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>yo-NG</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-11T00:09:27+00:00</news:publication_date>
+    <news:title>Àkójọ-Ìwọ̀n Ìsanwó Ńlá ní 2026: ISO 20022, Tokenised Deposits, Ọ̀nà Àkókò-Gangan, àti Ìpinnu Kọjá-Ààlà</news:title>
+    <news:keywords>ìsanwó ńlá 2026, ISO 20022, tokenised deposits, Project Agora, ìsanwó kọjá-ààlà, ìsanwó àkókò-gangan, data àdírẹ́sì ìṣèlú, ìpé data ìsanwó</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/yo/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>yo-NG</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-11T00:09:27+00:00</news:publication_date>
+    <news:title>Báńkì Ọ̀nà-Púpọ̀ ní 2026: Káàdì, A2A, Stablecoins, RTP, FedNow, àti Open Banking nínú Ìlànà Kan</news:title>
+    <news:keywords>ìpele àkójọpọ̀ ìsanwó, FedNow vs RTP, FedNow vs ACH, ìpinnu stablecoin, ìpinnu àtómù USDC, ISO 20022 pacs.008, account-to-account A2A, Open Banking APIs, owó tó wà ní àkọ́sẹ̀, ìdẹkùn owó 24/7, báńkì ọ̀nà-púpọ̀ 2026, ẹ̀rọ àfàyà ìsanwó, ìdúró ERP</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/yo/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>yo-NG</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-11T00:09:27+00:00</news:publication_date>
+    <news:title>Ìgbékalẹ̀ Ìsanwó Lẹyin-Quantum: Ìdí Tí Báńkì Fi Lè Fìrọ́pò Dípò Ìbámu Ọ̀nà Àkànṣe</news:title>
+    <news:keywords>cryptography lẹyin-quantum, ìsanwó PQC, ìyára crypto, kórè-báyìí-fọkàn-báyẹn, HNDL, ìlànà PQC NIST, ML-KEM, ML-DSA, FIPS 203, FIPS 204, ìṣíkiri ọ̀nà ìsanwó, ISO 20022 PQC, ìfìrọ́pò SWIFT MT, HSM, ìṣubú PKI, ìduróṣinṣin iṣẹ, Quantum Computing Cybersecurity Preparedness Act</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/yo/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>yo-NG</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-07T06:06:06+00:00</news:publication_date>
+    <news:title>Ìmọ̀ Ìjọba Owó Adásí 2026: Agentic, Ìṣàn-owó Tó Lè Ṣètò, Ifowopamọ́ Tokens, Ìṣàkóso Owó Akóko</news:title>
+    <news:keywords>ìjọba owó adásí 2026, ìjọba owó agentic, ìṣàn-owó tó lè ṣètò, ifowopamọ́ tokens, ìjọba owó akóko, ìṣàkóso owó AI, ISO 20022, JPMorgan Kinexys</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/yo/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>yo-NG</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-05T06:06:06+00:00</news:publication_date>
+    <news:title>Atọ́ka Bánkì Ọlọ́nà-Àwọsánmà ní 2026: DORA, Platform Engineering, Àwọsánmà Alágbára, àti Ìfaradà Iṣẹ́</news:title>
+    <news:keywords>bánkì ọlọ́nà-àwọsánmà 2026, àwọn bánkì DORA, ewu ìkójọpọ̀ àwọsánmà, platform engineering bánkì, ewu ICT ẹgbẹ́ kẹta, ètò ìjáde àwọsánmà, àwọsánmà alágbára</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/yo/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>yo-NG</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-04T06:06:06+00:00</news:publication_date>
+    <news:title>Atọ́ka Bánkì Aláàbò-Quantum ní 2026: Cryptography Lẹ́yìn-Quantum, QKD, Crypto-Agility, àti Ewu Harvest-Now-Decrypt-Later</news:title>
+    <news:keywords>bánkì aláàbò quantum 2026, cryptography lẹ́yìn-quantum àwọn bánkì, NIST FIPS 203, ML-KEM, ML-DSA, SLH-DSA, crypto agility, bánkì QKD</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/yo/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>yo-NG</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-03T06:06:06+00:00</news:publication_date>
+    <news:title>Atọ́ka Agentic AI fún Àwọn Bánkì ní 2026: Dídiwọ̀n Ìṣọmọ̀dáṣe, Ìṣàkóso, Agbára Àyẹ̀wò, àti Ipa Ìṣòwò</news:title>
+    <news:keywords>agentic AI bánkì 2026, àwọn agent AI bánkì, ìṣàkóso AI iṣẹ́ ìnáwó, àwọn àbáṣe bánkì adáṣe, ìṣàkóso ewu àwòrán, agbára àyẹ̀wò AI</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/yo/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>yo-NG</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-02T06:06:06+00:00</news:publication_date>
+    <news:title>Atọ́ka Ohun Èlò Báńkì 2026: Wíwọn Ìmúrasílẹ̀ fún AI Aládàádúró, Ààbò Ọba-Aláṣẹ-Quantum, Ìfaradà Orígínal-Àwọsánmà, àti Ìsanwó Olówó-Ńlá</news:title>
+    <news:keywords>atọ́ka ohun èlò báńkì 2026, AI aládàádúró báńkì, báńkì ọba-aláṣẹ-quantum, báńkì orígínal-àwọsánmà, ìsanwó olówó-ńlá, ISO 20022, DORA, Project Agora, ìdípamọ́ tókenì</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/yo/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>yo-NG</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-30T06:06:06+00:00</news:publication_date>
+    <news:title>Àwọn Ọjà Oníròyìn Ńlá Dijítà ní UK: Gilts Tókènì, Ìpinnu Owó, àti Ipa Akọni Tuntun</news:title>
+    <news:keywords>àwọn ọjà oníròyìn ńlá UK 2026, Wholesale Digital Markets Champion, gilts tókènì, BoE DSS, Project Guardian, SDX, Project Agorá, ìpinnu owó DLT, City of London</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/yo/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>yo-NG</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-29T06:06:06+00:00</news:publication_date>
+    <news:title>ISO 20022 Lẹ́yìn Ìṣíkiri: Yíyí Dátà Ìsanwó Padà Di Ọjà Báńkì ní 2026</news:title>
+    <news:keywords>ISO 20022 2026, àdírẹ́ẹ̀sì tó ní ìṣètò, CBPR+, àwọn ọjà dátà ìsanwó, kóòdù ìdí ìsanwó, akápò ilé-iṣẹ́, ìbáramu, àyẹ̀wò ìfòfindè, ìṣàwárí àdàmọ̀</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/yo/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>yo-NG</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-28T06:06:06+00:00</news:publication_date>
+    <news:title>Àwọn Dúkìá Dijítà 2026: Ìyípadà Ìkọ́lé Tí Bánkì Kò Lè Sún Sẹ́yìn</news:title>
+    <news:keywords>àwọn dúkìá dijítà 2026, RWA tí a ti tokeníní, stablecoins bánkì, ìfowópamọ́ tí a ti tokeníní, ìṣọ́ dúkìá dijítà, DLT bánkì, ìkọ́lé ìsanwó ìparí, ìṣipopadà collateral, owó alágbára-ètò, ìlànà bánkì àwọn dúkìá dijítà</news:keywords>
   </news:news>
 </url>
 <url>

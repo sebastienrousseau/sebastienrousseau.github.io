@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="id-ID">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Thu, 04 Jun 2026 06:06:06 +0000" id="date" />
+    <meta itemprop="dateModified" content="2026-06-04" id="last-modified" />
+    <title>Indeks Perbankan Aman-Kuantum 2026: PQC, QKD, Crypto-Agility, dan Risiko Harvest-Now-Decrypt-Later — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="Indeks perbankan untuk kesiapan aman-kuantum 2026: standar pasca-kuantum NIST, inventaris kriptografi, crypto-agility, QKD, dan eksposur data berumur panjang.">
+<meta name="keywords" content="perbankan aman kuantum 2026, kriptografi pasca-kuantum bank, NIST FIPS 203, ML-KEM, ML-DSA, SLH-DSA, crypto-agility, QKD perbankan">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="The Quantum-Safe Banking Index 2026">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-076l6a9B0lqhRRDRpoGNBJXOBBXh7B1eP3JV3TZAExE=' 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-AwB5YmDa4NfqPtXHYqRD/pN4gpF7l+2YKernHplLCSM=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-SW6VHEXjMQISo7U978t9Roigbm/m04SxJcEKruEjU2s=' 'sha256-Triz18HcQz7A6J3w+Pb9FQlWfeBjPCPOoSXO+if3Djc=' 'self' 'inline-speculation-rules' https://cdn.jsdelivr.net https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' https://cloudcdn.pro https://www.google.com https://open.spotify.com;
+        img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co;
+        style-src 'unsafe-inline' 'self' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/id/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/newsreader-latin.woff2" crossorigin />
+    <link rel="stylesheet" href="/fonts/fonts.css" />
+    <!-- Preload the LCP hero portrait so it doesn't compete with the
+         render-blocking JS bundle on throttled mobile connections.
+         Lighthouse-simulated Slow-4G has been pinning LCP at ~5.6s; the
+         observed (real-network) LCP is 165 ms. This hint pulls the
+         synthetic LCP in line with the observed value. -->
+    <link rel="preload" as="image" href="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=1200&format=webp&q=85" fetchpriority="high">
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script>(function(){try{var saved=localStorage.getItem("theme");var prefersDark=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;var theme=saved||(prefersDark?"dark":"light");document.documentElement.setAttribute("data-theme",theme);}catch(e){}})();</script>
+
+    <link rel="stylesheet" href="/_csp/4724896d11ec6663.css" integrity="sha256-SFQ1AngSMlx94d5FmN1lWSKPs5RL6Y8BQf0nIEBLd7g= sha256-6BJkWGvqh3blXQksn+ynhkpoqcrJzzWhSKVuLVBJY4s=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Umpan Atom" href="/id/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<link rel="stylesheet" href="/highlight.80eeb321.css">
+<meta property="og:title" content="Indeks Perbankan Aman-Kuantum 2026: PQC, QKD, Crypto-Agility, dan Risiko Harvest-Now-Decrypt-Later — Sebastien Rousseau">
+<meta property="og:description" content="Indeks perbankan untuk kesiapan aman-kuantum 2026: standar pasca-kuantum NIST, inventaris kriptografi, crypto-agility, QKD, dan eksposur data berumur panjang.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/id/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/">
+<meta property="og:image" content="https://cloudcdn.pro/api/transform?url=/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp&w=1200&format=webp&q=80">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="id_ID">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Indeks Perbankan Aman-Kuantum 2026: PQC, QKD, Crypto-Agility, dan Risiko Harvest-Now-Decrypt-Later — Sebastien Rousseau">
+<meta name="twitter:description" content="Indeks perbankan untuk kesiapan aman-kuantum 2026: standar pasca-kuantum NIST, inventaris kriptografi, crypto-agility, QKD, dan eksposur data berumur panjang.">
+<meta name="twitter:image" content="https://cloudcdn.pro/api/transform?url=/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp&w=1200&format=webp&q=80">
+<link rel="canonical" href="https://sebastienrousseau.com/id/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="bn" href="https://sebastienrousseau.com/bn/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="cs" href="https://sebastienrousseau.com/cs/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="fil" href="https://sebastienrousseau.com/fil/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="ha" href="https://sebastienrousseau.com/ha/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="he" href="https://sebastienrousseau.com/he/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="hi" href="https://sebastienrousseau.com/hi/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="id" href="https://sebastienrousseau.com/id/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="nl" href="https://sebastienrousseau.com/nl/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="pl" href="https://sebastienrousseau.com/pl/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="ro" href="https://sebastienrousseau.com/ro/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="sv" href="https://sebastienrousseau.com/sv/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="th" href="https://sebastienrousseau.com/th/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="tr" href="https://sebastienrousseau.com/tr/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="uk" href="https://sebastienrousseau.com/uk/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="vi" href="https://sebastienrousseau.com/vi/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="yo" href="https://sebastienrousseau.com/yo/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" integrity="sha256-tV/7vAgYDUuBQbSGEPjXL/JC0sD7QpSxXCGKT4ALhh8= sha256-dvm1KF9mEWIapL8BE0nyFlHaKSf6TsjZZoQcJeRPraI=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">Lompat ke konten utama</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="Alihkan navigasi" />
+      <div class="wrap">
+        <a class="ap-brand" href="/id/index.html" aria-label="Beranda Sebastien Rousseau">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="Navigasi utama">
+          <ul class="ap-menu">
+            <li><a href="/id/tentang/index.html">Tentang</a></li>
+            <li><a href="/id/artikel/index.html" aria-current="page" class="active">Articles</a></li>
+            <li><a href="/id/makalah/index.html">Makalah</a></li>
+            <li><a href="/id/topik/index.html">Topik</a></li>
+            <li><a href="/id/proyek/index.html">Proyek</a></li>
+            <li><a href="/id/daftar-putar/index.html">Playlists</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="Aktifkan tema gelap" aria-pressed="false" title="Ganti tema">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="Cari (Cmd atau Ctrl + K)" title="Cari (⌘K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="Bahasa">
+            <button type="button" class="ap-lang-toggle" aria-label="ID, Ganti bahasa" aria-expanded="false" aria-haspopup="menu" title="Ganti bahasa">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">ID</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <a class="ap-lang-item" href="/bn/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
+                <a class="ap-lang-item" href="/cs/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
+                <a class="ap-lang-item" href="/de/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <a class="ap-lang-item" href="/fil/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
+                <a class="ap-lang-item" href="/ha/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
+                <a class="ap-lang-item" href="/he/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
+                <a class="ap-lang-item" href="/hi/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <a class="ap-lang-item" href="/id/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
+                <a class="ap-lang-item" href="/it/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <a class="ap-lang-item" href="/pl/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
+                <a class="ap-lang-item" href="/pt-br/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <a class="ap-lang-item" href="/ro/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
+                <a class="ap-lang-item" href="/ru/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <a class="ap-lang-item" href="/sv/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
+                <a class="ap-lang-item" href="/th/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
+                <a class="ap-lang-item" href="/tr/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
+                <a class="ap-lang-item" href="/uk/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="uk" role="menuitem">🇺🇦 Українська</a>
+                <a class="ap-lang-item" href="/vi/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
+                <a class="ap-lang-item" href="/yo/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
+                <a class="ap-lang-item" href="/zh-hans/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/id/kontak/index.html" aria-label="Hubungi saya">Hubungi ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="Alihkan navigasi">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>Indeks Perbankan Aman-Kuantum 2026: PQC, QKD, Crypto-Agility, dan Risiko Harvest-Now-Decrypt-Later</h1>
+      <p class="sub">Risiko kuantum sudah bergeser dari ancaman teoretis menjadi program migrasi: bank perlu mengukur eksposur kriptografi, kesiapan migrasi, dan crypto-agility.</p>
+    <nav class="article-tags" aria-label="Topik"><a href="/tags/index.html#h3-perbankan-aman-kuantum-2026" class="article-tag" rel="tag">perbankan aman kuantum 2026</a><a href="/tags/index.html#h3-kriptografi-pasca-kuantum-bank" class="article-tag" rel="tag">kriptografi pasca-kuantum bank</a><a href="/tags/index.html#h3-nist-fips-203" class="article-tag" rel="tag">NIST FIPS 203</a><a href="/tags/index.html#h3-ml-kem" class="article-tag" rel="tag">ML-KEM</a><a href="/tags/index.html#h3-ml-dsa" class="article-tag" rel="tag">ML-DSA</a><a href="/tags/index.html#h3-slh-dsa" class="article-tag" rel="tag">SLH-DSA</a><a href="/tags/index.html#h3-crypto-agility" class="article-tag" rel="tag">crypto-agility</a><a href="/tags/index.html#h3-qkd-perbankan" class="article-tag" rel="tag">QKD perbankan</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2026-06-04T06:06:06+00:00" class="meta-pub">Diterbitkan 4 Jun 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Perkiraan waktu baca">8 menit baca</span></div></section><figure class="article-banner"><img src="https://cloudcdn.pro/api/transform?url=/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp&w=1200&format=webp&q=80" alt="Banner for: Indeks Perbankan Aman-Kuantum 2026: PQC, QKD, Crypto-Agility, dan Risiko Harvest-Now-Decrypt-Later" width="1200" height="675" fetchpriority="high" decoding="async" /></figure>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>Daftar isi</h2><ol><li><a href="#mengapa-2026-tahun-indeks-ini-penting">Mengapa 2026 Tahun Indeks Ini Penting</a></li><li><a href="#arsitektur-indeks-2026">Arsitektur Indeks 2026</a></li><li><a href="#sinyal-terkini-untuk-dilacak">Sinyal Terkini untuk Dilacak</a></li><li><a href="#migrasi-dimulai-dari-buku-besar-kriptografi">Migrasi Dimulai dari Buku Besar Kriptografi</a></li><li><a href="#hibrida-dulu-selalu-agile">Hibrida Dulu, Selalu Agile</a></li><li><a href="#posisi-qkd">Posisi QKD</a></li><li><a href="#apa-artinya-per-jenis-bank">Apa Artinya per Jenis Bank</a></li><li><a href="#kesimpulan">Kesimpulan</a></li><li><a href="#pertanyaan-yang-sering-diajukan">Pertanyaan yang Sering Diajukan</a></li><li><a href="#referensi">Referensi</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> Indeks perbankan untuk kesiapan aman-kuantum 2026: standar pasca-kuantum NIST, inventaris kriptografi, crypto-agility, QKD, dan eksposur data berumur panjang.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>Mengapa 2026 Tahun Indeks Ini Penting.</strong> Tiga pergeseran pada 2024-2025 membuat aman-kuantum menjadi program bank yang dapat diukur, bukan sekadar pengamatan riset.</li>  <li><strong>Arsitektur Indeks 2026.</strong> Scorecard kesiapan kuantum yang kredibel mengharuskan pelacakan persentase eksak, bukan sekadar status proyek:.</li>  <li><strong>Sinyal Terkini untuk Dilacak.</strong> Urutan migrasi sudah dipahami dengan baik saat ini.</li>  <li><strong>Migrasi Dimulai dari Buku Besar Kriptografi.</strong> Urutan migrasi sudah dipahami dengan baik saat ini.</li></ul></aside><!-- lead-start: manual -->
+
+<!-- lead-end -->
+<p>Perbankan aman-kuantum pada 2026 adalah soal migrasi operasional, bukan spekulasi. NIST telah memfinalisasi tiga standar kriptografi pasca-kuantum pertama, dan bank kini wajib memahami sistem mana saja yang bergantung pada RSA, ECC, TLS, tanda tangan, HSM, sertifikat, kanal pembayaran, arsip, dan data rahasia berumur panjang. Pertanyaan indeksnya sederhana: dapatkah lembaga mengganti kriptografi sebelum ancamannya menjadi operasional?</p>
+<hr />
+<blockquote>
+<p><strong>Ringkasan Eksekutif / Poin Utama</strong></p>
+<ul>
+<li><strong>Standar NIST kini konkret.</strong> FIPS 203 menetapkan ML-KEM untuk enkapsulasi kunci, FIPS 204 menetapkan ML-DSA untuk tanda tangan, dan FIPS 205 menetapkan SLH-DSA sebagai standar tanda tangan berbasis hash tanpa state.</li>
+<li><strong>Inventaris adalah pintu kematangan pertama.</strong> Bank tidak bisa memigrasi apa yang tidak bisa ia temukan: sertifikat, kunci, protokol, aplikasi, vendor, HSM, API, arsip, dan embedded system harus dipetakan.</li>
+<li><strong>Crypto-agility adalah tujuan yang tahan lama.</strong> Tujuannya bukan pertukaran algoritma sekali pakai; tujuannya adalah kemampuan mengganti primitif kriptografi tanpa mendesain ulang seluruh aplikasi.</li>
+<li><strong>Data berumur panjang mengubah urgensi.</strong> Risiko harvest-now-decrypt-later berarti data yang ditangkap hari ini bisa dapat dibaca kemudian jika ia tetap berharga cukup lama.</li>
+<li><strong>QKD adalah pelengkap khusus.</strong> Quantum key distribution mungkin relevan untuk kanal bernilai tertinggi, tetapi tidak menggantikan migrasi PQC di seluruh lembaga.</li>
+</ul>
+</blockquote>
+<hr />
+<h2 id="mengapa-2026-tahun-indeks-ini-penting">Mengapa 2026 Tahun Indeks Ini Penting <a class="heading-anchor" href="#mengapa-2026-tahun-indeks-ini-penting" aria-label="Tautan ke Mengapa 2026 Tahun Indeks Ini Penting">#</a></h2>
+<p>Tiga pergeseran pada 2024-2025 membuat aman-kuantum menjadi program bank yang dapat diukur, bukan sekadar pengamatan riset. Pertama, NIST memfinalisasi standar pasca-kuantum utama pada 13 Agustus 2024: <a href="https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.203.pdf" title="FIPS 203 — Module-Lattice-Based Key-Encapsulation Mechanism">FIPS 203 (ML-KEM) ⧉</a>, <a href="https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.204.pdf" title="FIPS 204 — Module-Lattice-Based Digital Signature Standard">FIPS 204 (ML-DSA) ⧉</a>, <a href="https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.205.pdf" title="FIPS 205 — Stateless Hash-Based Digital Signature Standard">FIPS 205 (SLH-DSA) ⧉</a>. Perdebatan pemilihan algoritma tutup pada tanggal itu; bank yang masih menjalankan workstream internal &quot;skema mana yang menang&quot; pada 2026 sudah tertinggal 18 bulan.</p>
+<p>Kedua, <a href="https://media.defense.gov/2022/Sep/07/2003071834/-1/-1/0/CSA_CNSA_2.0_ALGORITHMS_.PDF" title="Commercial National Security Algorithm Suite 2.0">CNSA 2.0 milik NSA ⧉</a> menetapkan end-state federal AS pada 2033 dengan cutoff antara mulai 2027 untuk penandatanganan perangkat lunak dan firmware, 2030 untuk peramban dan sistem operasi. Setiap bank yang punya eksposur kontraparti federal AS — FedNow, operasi Treasury, akun nasabah federal — berada di dalam perimeter itu untuk sistem yang menyentuh data federal. Jamnya tidak lagi abstrak.</p>
+<p>Ketiga, <a href="https://csrc.nist.gov/Projects/post-quantum-cryptography" title="Program Post-Quantum Cryptography NIST">Harvest-Now-Decrypt-Later (HNDL) ⧉</a> adalah argumen risiko penopang urgensi. Adversary canggih sudah menangkap pesan pembayaran berlindung TLS, amplop SWIFT, dokumentasi KYC, dan ciphertext arsip berumur panjang di pusat keuangan utama. Data yang ditangkap pada 2026 hanya perlu tetap sensitif-kerahasiaan saat dekripsi terjadi — untuk KPR 30 tahun, underwriting asuransi jiwa, rekaman transaksi MiFID II / GDPR, dan arsip retensi M&amp;A, jendela itu meluas jauh melewati setiap estimasi kredibel untuk Cryptographically Relevant Quantum Computer (CRQC). Adversary tidak butuh komputer kuantum hari ini. Ia butuh satu sebelum datanya berhenti berarti.</p>
+<p>Indeks Perbankan Aman-Kuantum mengukur apakah lembaga Anda dapat menyelesaikan migrasi sebelum perpotongan itu tiba. Pekerjaannya bukan lagi soal apakah harus migrasi; melainkan apakah migrasi selesai pada garis waktu yang dapat dipertahankan.</p>
+<h2 id="arsitektur-indeks-2026">Arsitektur Indeks 2026 <a class="heading-anchor" href="#arsitektur-indeks-2026" aria-label="Tautan ke Arsitektur Indeks 2026">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Lapisan Indeks</th>
+<th>Arah 2026</th>
+<th>Metrik Kesiapan</th>
+<th>Risiko jika Salah Tangani</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Inventaris</strong></td>
+<td>Memetakan aset, protokol, sertifikat, vendor, dan kelas data kriptografi</td>
+<td>Persentase estate yang terinventarisasi</td>
+<td>Dependensi rentan-kuantum yang tidak diketahui</td>
+</tr>
+<tr>
+<td><strong>Eksposur</strong></td>
+<td>Mengklasifikasikan sistem menurut umur kerahasiaan dan kekritisan transaksi</td>
+<td>Aset berisiko tinggi menurut nilai dan umur</td>
+<td>Migrasi salah prioritas</td>
+</tr>
+<tr>
+<td><strong>Migrasi</strong></td>
+<td>Mengadopsi pola hibrida dan siap-PQC selaras dengan standar NIST</td>
+<td>Kesiapan ML-KEM dan ML-DSA</td>
+<td>Re-platforming darurat di bawah tenggat</td>
+</tr>
+<tr>
+<td><strong>Crypto-agility</strong></td>
+<td>Memisahkan logika aplikasi dari primitif kriptografi</td>
+<td>Cakupan kripto yang dikendalikan kebijakan</td>
+<td>Algoritma hard-coded di seluruh estate</td>
+</tr>
+<tr>
+<td><strong>Jaminan</strong></td>
+<td>Menguji interoperabilitas, performa, dukungan HSM, sertifikat, dan kesiapan vendor</td>
+<td>Tingkat lulus uji dan backlog pengecualian</td>
+<td>Kanal rusak atau kontrol fallback lemah</td>
+</tr>
+</tbody>
+</table>
+<h3 id="quantum-scorecard-tingkat-dewan">Quantum Scorecard Tingkat Dewan <a class="heading-anchor" href="#quantum-scorecard-tingkat-dewan" aria-label="Tautan ke Quantum Scorecard Tingkat Dewan">#</a></h3>
+<p>Scorecard kesiapan kuantum yang kredibel mengharuskan pelacakan persentase eksak, bukan sekadar status proyek:</p>
+<ol>
+<li><strong>Kelengkapan Inventaris:</strong> Persentase aplikasi tier-1 dengan Cryptographic Bill of Materials (CBOM) yang terpetakan penuh.</li>
+<li><strong>Eksposur HNDL:</strong> Volume data rahasia berumur panjang (mis. PII, rahasia dagang) yang ditransmisikan lewat jaringan tanpa enkapsulasi kunci hibrida aman-kuantum.</li>
+<li><strong>Progres Migrasi NIST:</strong> Persentase kunci enkripsi asimetris dan tanda tangan digital yang sudah dimigrasi ke standar FIPS 203 (ML-KEM) dan FIPS 204 (ML-DSA).</li>
+<li><strong>Kesiapan Crypto-Agility:</strong> Persentase sistem kritis di mana algoritma kriptografi dapat dirotasi lewat kebijakan terpusat tanpa rekompilasi kode.</li>
+</ol>
+<h2 id="sinyal-terkini-untuk-dilacak">Sinyal Terkini untuk Dilacak <a class="heading-anchor" href="#sinyal-terkini-untuk-dilacak" aria-label="Tautan ke Sinyal Terkini untuk Dilacak">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Sinyal</th>
+<th>Artinya bagi Bank</th>
+<th>Sumber</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>FIPS 203 ML-KEM</strong></td>
+<td>Standar NIST utama untuk pendirian kunci enkripsi umum</td>
+<td><a href="https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards" title="Tiga standar enkripsi pasca-kuantum final pertama">NIST ⧉</a></td>
+</tr>
+<tr>
+<td><strong>FIPS 204 ML-DSA</strong></td>
+<td>Standar NIST utama untuk tanda tangan digital</td>
+<td><a href="https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards" title="Tiga standar enkripsi pasca-kuantum final pertama">NIST ⧉</a></td>
+</tr>
+<tr>
+<td><strong>FIPS 205 SLH-DSA</strong></td>
+<td>Alternatif tanda tangan berbasis hash dan desain cadangan</td>
+<td><a href="https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards" title="Tiga standar enkripsi pasca-kuantum final pertama">NIST ⧉</a></td>
+</tr>
+<tr>
+<td><strong>Integrasi segera dianjurkan</strong></td>
+<td>NIST secara eksplisit memberi tahu administrator untuk mulai mengintegrasikan standar karena integrasi penuh butuh waktu</td>
+<td><a href="https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards" title="Tiga standar enkripsi pasca-kuantum final pertama">NIST ⧉</a></td>
+</tr>
+<tr>
+<td><strong>Program kuantum bank bertambah</strong></td>
+<td>Bank besar mengeksplorasi teknologi kuantum sambil menyiapkan transisi PQC</td>
+<td><a href="https://thequantuminsider.com/2026/03/27/15-plus-global-banks-probing-the-wonderful-world-of-quantum-technologies/" title="Tinjauan bank global yang mengeksplorasi teknologi kuantum">Quantum Insider ⧉</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="migrasi-dimulai-dari-buku-besar-kriptografi">Migrasi Dimulai dari Buku Besar Kriptografi <a class="heading-anchor" href="#migrasi-dimulai-dari-buku-besar-kriptografi" aria-label="Tautan ke Migrasi Dimulai dari Buku Besar Kriptografi">#</a></h2>
+<p>Urutan migrasi sudah dipahami dengan baik saat ini. Setiap gate menghasilkan bukti yang menggerakkan gate berikutnya; melewati atau memampatkan gate adalah yang menghasilkan risiko re-platforming darurat yang muncul di kolom kegagalan Arsitektur Indeks.</p>
+<pre class="mermaid">flowchart LR
+    A["Discovery&lt;br/>CycloneDX CBOM&lt;br/>scanners + CMDB"] --> B["Exposure model&lt;br/>lifetime × capture&lt;br/>× CRQC horizon"]
+    B --> C["Hybrid TLS 1.3&lt;br/>X25519MLKEM768&lt;br/>external endpoints"]
+    C --> D["HSM PQC firmware&lt;br/>vendor-by-vendor&lt;br/>roadmap rollout"]
+    D --> E["Crypto-agility&lt;br/>PKCS#11 + policy&lt;br/>registry + kill switch"]
+    E --> F["Pure PQC&lt;br/>2028+&lt;br/>conformance + audit"]
+
+    style A fill:#eff5ff,stroke:#0056b3,color:#111
+    style B fill:#eff5ff,stroke:#0056b3,color:#111
+    style C fill:#fff4cf,stroke:#5a3e00,color:#111
+    style D fill:#fff4cf,stroke:#5a3e00,color:#111
+    style E fill:#e8f5e9,stroke:#1b5e20,color:#111
+    style F fill:#e8f5e9,stroke:#1b5e20,color:#111
+</pre>
+<p>Deliverable pertama bukanlah algoritma baru; melainkan cryptographic bill of materials (CBOM). Bank membutuhkan inventaris hidup yang menghubungkan layanan bisnis ke algoritma, library, sertifikat, panjang kunci, HSM, umur data, vendor, dan pemilik operasional. Tanpa buku besar itu, migrasi aman-kuantum menjadi tebak-tebakan.</p>
+<p>Set rekaman CBOM harus mencatat, untuk tiap primitif kriptografi: protokol atau antarmuka (TLS 1.3, IPsec, SSH, format pesan pembayaran khusus), algoritma dan parameter (RSA-2048, ECDH P-256, ML-KEM-768, ML-DSA-65), library dan versi (OpenSSL 3.4, hash commit BoringSSL, build SDK vendor), batas perangkat keras (partisi HSM, TPM, secure enclave, atau tidak ada), identitas sertifikat jika berlaku, pemilik aplikasi, dan umur klasifikasi data. Tooling yang masuk produksi pada 2025-2026 — IBM Quantum Safe Inventory, <a href="https://cyclonedx.org/capabilities/cbom/" title="CycloneDX Cryptography Bill of Materials">spesifikasi CycloneDX CBOM ⧉</a> sumber terbuka, scanner enterprise dari CryptoNext / Sandbox / PQShield — terintegrasi ke pipeline CMDB yang ada. Tidak satu pun yang lengkap sendirian; harapkan siklus pembangunan CBOM 12-18 bulan bahkan dengan tooling vendor dan headcount khusus.</p>
+<p>Metrik yang dilacak adalah kesegaran, bukan cakupan. CBOM yang sudah dua bulan tidak diperbarui lebih buruk daripada tidak ada CBOM sama sekali karena memberi tim keamanan keyakinan palsu tentang apa yang sudah dimigrasi.</p>
+<h2 id="hibrida-dulu-selalu-agile">Hibrida Dulu, Selalu Agile <a class="heading-anchor" href="#hibrida-dulu-selalu-agile" aria-label="Tautan ke Hibrida Dulu, Selalu Agile">#</a></h2>
+<p>Sebagian besar bank tidak akan mengganti semuanya sekaligus. Pola realistis adalah deployment hibrida, di mana mekanisme klasik dan pasca-kuantum berjalan bersama sementara vendor, protokol, sertifikat, dan tooling operasional matang. Target jangka panjang adalah crypto-agility: pilihan kriptografi yang dikendalikan kebijakan dan dapat diubah tanpa membangun ulang aplikasi bisnis.</p>
+<p>[Sisipkan Komponen Interaktif: Kalkulator Risiko Harvest-Now-Decrypt-Later (HNDL) — alat berbasis slider di mana eksekutif memasukkan shelf-life data vs. estimasi garis waktu kuantum untuk melihat jendela eksposur mereka.]</p>
+<blockquote>
+<p><strong>Wawasan utama:</strong> Jika data Anda perlu tetap rahasia selama 10 tahun, dan Cryptographically Relevant Quantum Computer (CRQC) masih 7 tahun lagi, tenggat migrasi Anda bukan 7 tahun lagi — melainkan 3 tahun yang lalu.</p>
+</blockquote>
+<p>Dalam praktiknya ini berarti TLS 1.3 dengan hybrid key share <code>X25519MLKEM768</code> untuk endpoint yang menghadap luar (Chrome / Firefox / Cloudflare / Akamai semua mendukung ini hari ini), rantai tanda tangan klasik sampai infrastruktur HSM dan CA mengejar, serta lapisan abstraksi PKCS#11 yang memungkinkan policy registry merotasi algoritma tanpa merekompilasi aplikasi bisnis. Crypto-agility adalah yang menentukan apakah transisi algoritma berikutnya (kapan, bukan jika) menjadi rotasi enam minggu atau program tujuh tahun lagi.</p>
+<h2 id="posisi-qkd">Posisi QKD <a class="heading-anchor" href="#posisi-qkd" aria-label="Tautan ke Posisi QKD">#</a></h2>
+<p>Quantum key distribution masuk ke dalam indeks sebagai opsi kanal sensitivitas tinggi, terutama untuk infrastruktur pasar keuangan, konektivitas bank sentral, dan aliran institusional yang sangat sensitif. Ia harus diperlakukan sebagai pelengkap PQC, bukan alasan untuk menunda migrasi tingkat enterprise.</p>
+<h2 id="apa-artinya-per-jenis-bank">Apa Artinya per Jenis Bank <a class="heading-anchor" href="#apa-artinya-per-jenis-bank" aria-label="Tautan ke Apa Artinya per Jenis Bank">#</a></h2>
+<h3 id="bank-sistemik-global">Bank Sistemik Global <a class="heading-anchor" href="#bank-sistemik-global" aria-label="Tautan ke Bank Sistemik Global">#</a></h3>
+<p>Masalah berat di sini adalah skala: puluhan ribu endpoint TLS, ratusan partisi HSM, lusinan certificate authority internal, ratusan aplikasi bisnis dengan primitif kriptografi tertanam, dan SDK vendor yang tidak bisa dimodifikasi bank. Investasinya bukan pilot lagi; melainkan tooling CBOM, lapisan abstraksi PKCS#11 yang ditanamkan ke setiap build baru, rencana konsolidasi HSM yang memilih satu vendor untuk memimpin firmware PQC dan menerima ekor multi-tahun pada yang lain, serta policy registry yang menjadi permukaan crypto-agility tahan lama jauh setelah migrasi FIPS 203 / 204 / 205 selesai.</p>
+<h3 id="bank-transaksi-dan-korporasi">Bank Transaksi dan Korporasi <a class="heading-anchor" href="#bank-transaksi-dan-korporasi" aria-label="Tautan ke Bank Transaksi dan Korporasi">#</a></h3>
+<p>Cakupan migrasinya lebih sempit daripada di tier G-SIB tetapi eksposur HNDL-nya akut: pesan lintas-batas SWIFT, data pembayaran terstruktur yang membawa PII kontraparti korporasi, platform pertukaran dokumen yang menyimpan dokumentasi trade finance, dan arsip pelaporan retensi panjang. Prioritaskan TLS hibrida pada setiap endpoint yang menghadap nasabah dan PQC at rest untuk arsip retensi. Dorong akuntabilitas vendor HSM — tim platform corporate banking punya daya tawar pengadaan langsung yang sering tidak dimiliki tim wholesale technology.</p>
+<h3 id="bank-regional">Bank Regional <a class="heading-anchor" href="#bank-regional" aria-label="Tautan ke Bank Regional">#</a></h3>
+<p>Beli tumpukan vendor yang sudah memiliki primitif crypto-agility. Pilih platform core banking yang vendor-nya menerbitkan CBOM dan berkomitmen pada garis waktu dukungan ML-KEM / ML-DSA. Validasi roadmap HSM vendor selaras dengan tenggat migrasi bank. Kapasitas engineering yang dibutuhkan untuk membangun crypto-agility dari nol bersifat multi-tahun; vendor membayar biaya itu di banyak pelanggan dan bank mewarisi manfaatnya. Pekerjaan validasi — memeriksa klaim vendor bertahan terhadap proses MRM lembaga — adalah cakupan internal yang sah.</p>
+<h3 id="fintech-psp-dan-penyedia-infrastruktur">Fintech, PSP, dan Penyedia Infrastruktur <a class="heading-anchor" href="#fintech-psp-dan-penyedia-infrastruktur" aria-label="Tautan ke Fintech, PSP, dan Penyedia Infrastruktur">#</a></h3>
+<p>Pertanyaan kompetitif untuk vendor yang menjual ke bank pada 2026 bukan &quot;apakah Anda mendukung PQC.&quot; Tetapi &quot;dapatkah Anda menghasilkan CycloneDX CBOM untuk platform Anda, matriks dukungan vendor HSM, dan SLA rotasi algoritma tertulis.&quot; Vendor yang menjawab ya akan lolos gate pengadaan tier-1 pada 2026-2027. Vendor yang tidak akan kehilangan siklus pembaruan kepada pesaing yang bisa.</p>
+<h2 id="kesimpulan">Kesimpulan <a class="heading-anchor" href="#kesimpulan" aria-label="Tautan ke Kesimpulan">#</a></h2>
+<p>Perbankan aman-kuantum pada 2026 bukan pengamatan riset; ia adalah program pengiriman dengan tenggat yang ditentukan oleh perpotongan dua kurva — umur kerahasiaan data yang dipegang lembaga hari ini, dan horizon kedatangan Cryptographically Relevant Quantum Computer. Lembaga yang tampak kredibel bagi regulator dan kontraparti pada 2030 adalah yang mulai membangun CBOM pada 2024, men-deploy TLS hibrida di setiap endpoint eksternal pada akhir 2026, dan merekayasa crypto-agility ke setiap build baru sejak hari pertama. Lembaga yang tidak akan menemukan apakah jendela migrasi mereka sudah tertutup untuk data yang sedang dipanen adversary hari ini.</p>
+<p>Ukur migrasi seperti Anda mengukur program operasional mana pun: cakupan diketahui, urutan diprioritaskan, tenggat dikomitmenkan, register pengecualian jujur. Semakin teliti Anda menatap estate Anda sendiri, semakin sempit jendela migrasi itu terasa.</p>
+<h2 id="pertanyaan-yang-sering-diajukan">Pertanyaan yang Sering Diajukan <a class="heading-anchor" href="#pertanyaan-yang-sering-diajukan" aria-label="Tautan ke Pertanyaan yang Sering Diajukan">#</a></h2>
+<p><strong>Apa yang harus diinventarisasi bank lebih dulu?</strong></p>
+<p>Mulailah dengan TLS yang terekspos eksternal, kanal pembayaran, autentikasi nasabah, konektivitas antarbank, layanan ber-HSM, arsip jangka panjang, dan sistem yang menangani data rahasia dengan umur pakai panjang.</p>
+<p><strong>Apakah PQC hanya isu cybersecurity?</strong></p>
+<p>Tidak. Ia memengaruhi pembayaran, identitas, bukti hukum, penandatanganan transaksi, kepercayaan nasabah, retensi data, manajemen vendor, dan ketahanan operasional.</p>
+<p><strong>Apa arti crypto-agility?</strong></p>
+<p>Crypto-agility berarti kemampuan mengganti primitif kriptografi melalui kebijakan dan kontrol platform, bukan perubahan aplikasi yang hard-coded.</p>
+<p><strong>Apakah bank harus menunggu standar lebih lanjut?</strong></p>
+<p>Tidak. NIST mendorong administrator untuk mulai mengintegrasikan standar final pertama karena integrasi penuh butuh waktu.</p>
+<h2 id="referensi">Referensi <a class="heading-anchor" href="#referensi" aria-label="Tautan ke Referensi">#</a></h2>
+<ul>
+<li>NIST, (2026). <a href="https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards" title="Tiga standar enkripsi pasca-kuantum final pertama">Tiga standar enkripsi pasca-kuantum final pertama ⧉</a>.</li>
+</ul>
+<!-- enrich-start -->
+
+<p class="post-reviewed">Terakhir ditinjau <time datetime="2026-06-04">2026-06-04</time>.</p>
+<!-- enrich-end -->
+</content>
+</invoke>
+<aside class="author-card" aria-label="Tentang penulis"><img alt="Potret Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=85" width="64" height="64" loading="lazy" decoding="async"  fetchpriority="high"><span class="author-card-body"><strong class="author-card-name"><a href="/id/tentang/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Teknolog senior di perbankan. Menulis tentang AI terapan, migrasi ISO 20022, kriptografi pasca-kuantum untuk layanan keuangan, dan transformasi struktural pembayaran grosir.</span><span class="author-credentials">Lebih dari 20 tahun pengalaman di HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/id/tentang/index.html">Profil lengkap</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">Terakhir ditinjau <time datetime="2026-06-11">2026-06-11</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Bacaan terkait</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/id/2026-05-16-arsitektur-infrastruktur-cloud-terbaik-untuk-bank-2026" class="related-media" aria-label="Arsitektur Infrastruktur Cloud Terbaik pada 2026: Cetak Biru AI-Native, Multi-Cloud, dan Sadar-Kuantum untuk Jasa Keuangan" tabindex="-1"><img alt="Six-pillar cloud architecture diagram for 2026 — AI-native, multi-cloud, serverless, edge, DevSecOps, and sustainable design, with CloudCDN edge research overlay" src="https://cloudcdn.pro/api/transform?url=/stock/images/cloud-architecture-2026-banner.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="arsitektur-infrastruktur-cloud-terbaik-pada-2026-cetak-biru-ai-native-multi-clou"><a href="https://sebastienrousseau.com/id/2026-05-16-arsitektur-infrastruktur-cloud-terbaik-untuk-bank-2026">Arsitektur Infrastruktur Cloud Terbaik pada 2026: Cetak Biru AI-Native, Multi-Cloud, dan Sadar-Kuantum untuk Jasa Keuangan</a> <a class="heading-anchor" href="#arsitektur-infrastruktur-cloud-terbaik-pada-2026-cetak-biru-ai-native-multi-clou" aria-label="Tautan ke Arsitektur Infrastruktur Cloud Terbaik pada 2026: Cetak Biru AI-Native, Multi-Cloud, dan Sadar-Kuantum untuk Jasa Keuangan">#</a></h3><p><time datetime="2026-05-16">2026-05-16</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/id/2026-05-18-kriptografi-kuantum-standar-perkembangan-2026" class="related-media" aria-label="Reset Kriptografi Kuantum 2026: Standar PQC, Jaminan QKD, dan Pekerjaan Migrasi yang Tidak Dapat Ditunda Bank" tabindex="-1"><img alt="Quantum-safe cryptography migration map for 2026 showing NIST PQC standards, hybrid protocol work, QKD assurance, crypto-agility, and bank data-risk tiers" src="https://cloudcdn.pro/api/transform?url=/stocks/images/alex-shuper-YYZnrK8NrSw-unsplash.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="reset-kriptografi-kuantum-2026-standar-pqc-jaminan-qkd-dan-pekerjaan-migrasi-yan"><a href="https://sebastienrousseau.com/id/2026-05-18-kriptografi-kuantum-standar-perkembangan-2026">Reset Kriptografi Kuantum 2026: Standar PQC, Jaminan QKD, dan Pekerjaan Migrasi yang Tidak Dapat Ditunda Bank</a> <a class="heading-anchor" href="#reset-kriptografi-kuantum-2026-standar-pqc-jaminan-qkd-dan-pekerjaan-migrasi-yan" aria-label="Tautan ke Reset Kriptografi Kuantum 2026: Standar PQC, Jaminan QKD, dan Pekerjaan Migrasi yang Tidak Dapat Ditunda Bank">#</a></h3><p><time datetime="2026-05-18">2026-05-18</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/id/2026-05-14-mengamankan-buku-besar-migrasi-pasca-kuantum-keuangan-korporat" class="related-media" aria-label="[ID DRAFT] Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for Corporate Finance" tabindex="-1"><img alt="Post-quantum cryptography migration roadmap diagram — corporate banking infrastructure transitioning from RSA to ML-KEM and ML-DSA" src="https://cloudcdn.pro/api/transform?url=/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="id-draft-securing-the-ledger-a-board-level-guide-to-post-quantum-migration-for-c"><a href="https://sebastienrousseau.com/id/2026-05-14-mengamankan-buku-besar-migrasi-pasca-kuantum-keuangan-korporat">[ID DRAFT] Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for Corporate Finance</a> <a class="heading-anchor" href="#id-draft-securing-the-ledger-a-board-level-guide-to-post-quantum-migration-for-c" aria-label="Tautan ke [ID DRAFT] Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for Corporate Finance">#</a></h3><p><time datetime="2026-05-14">2026-05-14</time></p></footer></article>
+</div>
+</aside><aside class="article-sources" aria-labelledby="sources-heading"><h2 id="sources-heading" class="article-sources-heading">Sumber & referensi</h2><ol class="article-sources-list"><li><a href="https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.203.pdf" rel="external noopener nofollow"><span class="source-host">nvlpubs.nist.gov</span><span class="source-path">/nistpubs/FIPS/NIST.FIPS.203.pdf</span></a></li><li><a href="https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.204.pdf" rel="external noopener nofollow"><span class="source-host">nvlpubs.nist.gov</span><span class="source-path">/nistpubs/FIPS/NIST.FIPS.204.pdf</span></a></li><li><a href="https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.205.pdf" rel="external noopener nofollow"><span class="source-host">nvlpubs.nist.gov</span><span class="source-path">/nistpubs/FIPS/NIST.FIPS.205.pdf</span></a></li><li><a href="https://csrc.nist.gov/Projects/post-quantum-cryptography" rel="external noopener nofollow"><span class="source-host">csrc.nist.gov</span><span class="source-path">/Projects/post-quantum-cryptography</span></a></li><li><a href="https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards" rel="external noopener nofollow"><span class="source-host">www.nist.gov</span><span class="source-path">/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryp…</span></a></li></ol></aside><nav class="post-pagination" aria-label="Navigasi artikel"><a class="post-pagination-prev" href="/id/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/"><span class="post-pagination-label">Sebelumnya</span><span class="post-pagination-title">The Agentic AI Index for Banks in 2026: Measuring Autonomy, Governance, Auditability, and Business Impact</span></a><a class="post-pagination-next" href="/id/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/"><span class="post-pagination-label">Berikutnya</span><span class="post-pagination-title">The Cloud Native Banking Index in 2026: DORA, Platform Engineering, Sovereign Cloud, and Operational Resilience</span></a></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/id/tentang/index.html">Tentang</a></li>
+              <li><a href="/id/kontak/index.html">Contact</a></li>
+              <li><a href="/id/dibuat-dengan-generator-situs-statis/index.html">Conçu avec Static Site Generator</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Tulisan</h2>
+            <ul>
+              <li><a href="/id/artikel/index.html">Articles</a></li>
+              <li><a href="/id/makalah/index.html">Makalah</a></li>
+              <li><a href="/id/label/index.html">Label</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Karya</h2>
+            <ul>
+              <li><a href="/id/proyek/index.html">Proyek</a></li>
+              <li><a href="/id/daftar-putar/index.html">Playlists</a></li>
+              <li><a href="/id/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Jangkauan</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="/contact/" method="get" aria-label="Berlangganan buletin">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — catatan riset tentang pembayaran, AI, dan kriptografi pasca-kuantum. Tanpa spam.</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="anda@bank.id" />
+            <input type="hidden" name="subject" value="newsletter" />
+            <input type="hidden" name="message" value="Please subscribe me to the Banking On Quantum newsletter." />
+            <button type="submit">Berlangganan</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved.</span>
+          <div class="social" aria-label="Tautan sosial">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau di Twitter / X"><img src="https://cloudcdn.pro/common/images/buttons/x-black.svg" alt="Sebastien Rousseau di Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau di LinkedIn"><img src="https://cloudcdn.pro/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau di LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau di Medium"><img src="https://cloudcdn.pro/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau di Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau di YouTube"><img src="https://cloudcdn.pro/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau di YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/id/aksesibilitas/index.html">Aksesibilitas</a> ·
+            <a href="/id/privasi/index.html">Privasi</a> ·
+            <a href="/id/syarat/index.html">Syarat</a> ·
+            <a href="https://www.thegreenwebfoundation.org/green-web-check/?url=sebastienrousseau.com" target="_blank" rel="noopener noreferrer" title="Hosted on 100% renewable energy (Cloudflare) — estimate via Sustainable Web Design v4 model">Carbon: ~0.04 g/visit · green-hosted</a> ·
+            <a href="https://github.com/sebastienrousseau/sebastienrousseau.github.io/blob/main/project-docs/sigstore.md" target="_blank" rel="noopener noreferrer" title="Every dated article is signed with Sigstore — verify the bytes match what was published">Verify signatures</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","identifier":{"@type":"PropertyValue","propertyID":"ORCID","value":"0009-0005-1434-284X","url":"https://orcid.org/0009-0005-1434-284X"},"worksFor":{"@type":"Organization","@id":"https://www.hsbc.com/#organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal","url":"https://www.paypal.com/"},{"@type":"Organization","name":"Barclays","url":"https://www.barclays.com/"},{"@type":"Organization","name":"Shazam Entertainment","url":"https://www.shazam.com/"},{"@type":"Organization","name":"AKQA","url":"https://www.akqa.com/"},{"@type":"Organization","name":"Virgin Group","url":"https://www.virgin.com/"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"hasCredential":[{"@type":"EducationalOccupationalCredential","credentialCategory":"professional experience","name":"20+ years across Tier-1 banks and global payments infrastructure","recognizedBy":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"}},{"@type":"EducationalOccupationalCredential","credentialCategory":"domain expertise","name":"ISO 20022 migration and wholesale payments architecture","recognizedBy":{"@type":"Organization","name":"SWIFT","url":"https://www.swift.com/"}},{"@type":"EducationalOccupationalCredential","credentialCategory":"domain expertise","name":"Post-Quantum Cryptography for financial services","recognizedBy":{"@type":"Organization","name":"NIST Post-Quantum Cryptography Project","url":"https://csrc.nist.gov/projects/post-quantum-cryptography"}}],"knowsAbout":[{"@type":"DefinedTerm","name":"Post-Quantum Cryptography","sameAs":"https://en.wikipedia.org/wiki/Post-quantum_cryptography"},{"@type":"DefinedTerm","name":"ML-KEM (FIPS 203)","sameAs":"https://csrc.nist.gov/pubs/fips/203/final"},{"@type":"DefinedTerm","name":"ML-DSA (FIPS 204)","sameAs":"https://csrc.nist.gov/pubs/fips/204/final"},{"@type":"DefinedTerm","name":"ISO 20022","sameAs":"https://en.wikipedia.org/wiki/ISO_20022"},{"@type":"DefinedTerm","name":"SWIFT gpi","sameAs":"https://www.swift.com/our-solutions/swift-gpi"},{"@type":"DefinedTerm","name":"SEPA Instant Payments","sameAs":"https://www.ecb.europa.eu/paym/integration/retail/instant_payments/html/index.en.html"},{"@type":"DefinedTerm","name":"FedNow Service","sameAs":"https://www.federalreserve.gov/paymentsystems/fednow_about.htm"},{"@type":"DefinedTerm","name":"Real-Time Payments (RTP)","sameAs":"https://www.theclearinghouse.org/payment-systems/rtp"},{"@type":"DefinedTerm","name":"Cross-border payments","sameAs":"https://en.wikipedia.org/wiki/Cross-border_payments"},{"@type":"DefinedTerm","name":"Wholesale banking","sameAs":"https://en.wikipedia.org/wiki/Wholesale_banking"},{"@type":"DefinedTerm","name":"Applied artificial intelligence in banking","sameAs":"https://en.wikipedia.org/wiki/Applications_of_artificial_intelligence"},{"@type":"DefinedTerm","name":"Generative artificial intelligence","sameAs":"https://en.wikipedia.org/wiki/Generative_artificial_intelligence"}],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://orcid.org/0009-0005-1434-284X","https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":["Organization","Brand"],"@id":"https://sebastienrousseau.com/#organization","name":"Sebastien Rousseau","alternateName":"Banking on Quantum","url":"https://sebastienrousseau.com/","logo":{"@type":"ImageObject","@id":"https://sebastienrousseau.com/#logo","url":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","width":"512","height":"512","caption":"Sebastien Rousseau"},"founder":{"@id":"https://sebastienrousseau.com/#person"},"editorialPolicy":"https://sebastienrousseau.com/editorial/","correctionsPolicy":"https://sebastienrousseau.com/editorial/#corrections","ethicsPolicy":"https://sebastienrousseau.com/editorial/","diversityPolicy":"https://sebastienrousseau.com/editorial/","sameAs":["https://github.com/sebastienrousseau","https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#organization"},"author":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"id"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"id"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":1782,"headline":"Indeks Perbankan Aman-Kuantum 2026: PQC, QKD, Crypto-Agility, dan Risiko Harvest-Now-Decrypt-Later","description":"Indeks perbankan untuk kesiapan aman-kuantum 2026: standar pasca-kuantum NIST, inventaris kriptografi, crypto-agility, QKD, dan eksposur data berumur panjang.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/api/transform?url=/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp&w=1200&format=webp&q=80","width":"100vw","height":"100vh","caption":"Diagram Indeks Perbankan Aman-Kuantum 2026 untuk bank dan lembaga keuangan pada 2026"},"url":"https://sebastienrousseau.com/id/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/","datePublished":"2026-06-04T06:06:06+00:00","dateModified":"2026-06-04","inLanguage":"id","keywords":"perbankan aman kuantum 2026, kriptografi pasca-kuantum bank, NIST FIPS 203, ML-KEM, ML-DSA, SLH-DSA, crypto-agility, QKD perbankan","articleSection":"Security","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/id/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"id"},"citation":[{"@type":"CreativeWork","url":"https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.203.pdf"},{"@type":"CreativeWork","url":"https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.204.pdf"},{"@type":"CreativeWork","url":"https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.205.pdf"},{"@type":"CreativeWork","url":"https://csrc.nist.gov/Projects/post-quantum-cryptography"},{"@type":"CreativeWork","url":"https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/id/"},{"@type":"ListItem","position":3,"name":"Indeks Perbankan Aman-Kuantum 2026: PQC, QKD, Crypto-Agility, dan Risiko Harvest-Now-Decrypt-Later","item":"https://sebastienrousseau.com/id/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/"}]}]}</script>
+<script src="/main.931cef3c.js" defer integrity="sha256-JUs9z2u4RDSgxMCjBnyMmIHIkpakA7s5FxUmnDnSpD0= sha256-r33y52uSTzd+MqMufJlWsd09gyxv578IRoF5Gomw7Aw=" crossorigin="anonymous"></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="Cari">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>Cari</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="Cari">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="Cari dokumentasi..." autocomplete="off" aria-label="Cari"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> tutup</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> navigasi</span><span><kbd>Enter</kbd> buka</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" integrity="sha256-Y0txeCfdk+GUctTYMAxMbFCB2qs1cPm8JSIX3WRS9cs= sha256-5Ca5zk/7tsavsCDhg6M1m4feBn+L4YnJ7iavKawynII=" crossorigin="anonymous"></script>
+</div>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Indeks Perbankan Aman-Kuantum 2026: PQC, QKD, Crypto-Agility, dan Risiko Harvest-Now-Decrypt-Later","url":"https://sebastienrousseau.com/id/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/","inLanguage":"id-ID","isAccessibleForFree":true,"author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#organization"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/id/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/"},"keywords":"perbankan aman kuantum 2026, kriptografi pasca-kuantum bank, NIST FIPS 203, ML-KEM, ML-DSA, SLH-DSA, crypto-agility, QKD perbankan","proficiencyLevel":"Expert","dependencies":["NIST","NIST FIPS 203"]}</script></body>
+</html>

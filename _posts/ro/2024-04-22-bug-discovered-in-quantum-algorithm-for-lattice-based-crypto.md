@@ -1,5 +1,6 @@
 ---
 title: "Quantum Lattice Crypto: Bug in Chen's LWE Attack"
+tags: "criptografie post-cuantică, NIST, quantum algorithms, Lattice-Based Cryptography, LWE Problem, calcul cuantic, Cryptographic Security, Quantum Resistance, Cryptography Research, ISO 20022, AI, Rust"
 subtitle: "Revizuirea de Colegi Dezvăluie un Defect în Lucrarea Revoluționară a lui Chen"
 description: "Un bug în algoritmul cuantic LWE al lui Yilei Chen acordă o amânare temporară criptografiei bazate pe rețele. Ce înseamnă pentru CRYSTALS-Kyber, Dilithium și foaia de parcurs PQC."
 date: "Apr 22, 2024"
@@ -96,4 +97,3 @@ As NIST continues its PQC standardisation process, the cryptographic community m
 [05]: https://pq-crystals.org/dilithium/ "Dilithium"
 [06]: https://www.inferati.com/blog/fhe-schemes-bgv "BGV"
 [07]: https://tfhe.github.io/tfhe/ "TFHE"
-

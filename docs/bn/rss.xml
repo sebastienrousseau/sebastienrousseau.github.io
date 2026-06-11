@@ -6,14 +6,14 @@
     <description>বাংলা প্রবন্ধ: প্রায়োগিক এআই, ISO 20022 পেমেন্ট, পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি এবং পাইকারি পেমেন্টের রূপান্তর।</description>
     <atom:link href="https://sebastienrousseau.com/bn/rss.xml" rel="self" type="application/rss+xml"/>
     <language>bn-BD</language>
-    <lastBuildDate>Thu, 28 May 2026 23:46:21 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 11 Jun 2026 00:09:27 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. সর্বস্বত্ব সংরক্ষিত।</copyright>
     <item>
       <title>CloudCDN: ২০২৬-এ AI-নেটিভ এজের জন্য একটি ওপেন সোর্স নকশা</title>
       <link>https://sebastienrousseau.com/bn/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/</link>
       <description>CloudCDN হল MCP-নিয়ন্ত্রিত পরিকাঠামো, Durable Objects রেট লিমিটিং, স্বাক্ষরিত URL, অভিগম্যতা ও নিরীক্ষণযোগ্যতার জন্য একটি ওপেন সোর্স, AI-নেটিভ এজ CDN নকশা।</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/bn/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/</guid>
-      <pubDate>Thu, 28 May 2026 23:46:21 +0000</pubDate>
+      <pubDate>Thu, 11 Jun 2026 00:09:27 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/alis-po-IdVNRv-5wJo.webp" type="image/webp" length="0"/>
       <category>CloudCDN</category>
@@ -26,6 +26,230 @@
       <category>passkeys</category>
       <category>SLSA</category>
       <category>এজ পরিকাঠামো</category>
+    </item>
+    <item>
+      <title>2026-এর ব্যাংকিং স্থিতিস্থাপকতা সূচক: AI, ক্লাউড, কোয়ান্টাম ও পেমেন্ট</title>
+      <link>https://sebastienrousseau.com/bn/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/</link>
+      <description>2026-এর ব্যাংকিং স্থিতিস্থাপকতা সূচক — AI ঝুঁকি, ক্লাউড কেন্দ্রীভবন, কোয়ান্টাম-নিরাপদ সুরক্ষা, পেমেন্ট ধারাবাহিকতা ও সঙ্কটপূর্ণ তৃতীয় পক্ষের নির্ভরতা একত্রে।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/bn/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/</guid>
+      <pubDate>Thu, 11 Jun 2026 00:09:27 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/simone-hutsch-oqlh6RsrYB0.webp" type="image/webp" length="0"/>
+      <category>ব্যাংকিং স্থিতিস্থাপকতা সূচক 2026</category>
+      <category>DORA স্থিতিস্থাপকতা</category>
+      <category>AI পরিচালনগত ঝুঁকি</category>
+      <category>ক্লাউড কেন্দ্রীভবন ঝুঁকি</category>
+      <category>ব্যাংকিং কোয়ান্টাম ঝুঁকি</category>
+      <category>পেমেন্ট স্থিতিস্থাপকতা</category>
+    </item>
+    <item>
+      <title>২০২৬ সালে ক্লাউড-নেটিভ ব্যাংকিং ইনডেক্স: DORA, প্ল্যাটফর্ম ইঞ্জিনিয়ারিং, সার্বভৌম ক্লাউড এবং পরিচালনাগত স্থিতিস্থাপকতা</title>
+      <link>https://sebastienrousseau.com/bn/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/</link>
+      <description>২০২৬ সালের একটি ক্লাউড-নেটিভ ব্যাংকিং ইনডেক্স — DORA প্রস্তুতি, প্ল্যাটফর্ম ইঞ্জিনিয়ারিং পরিপক্বতা, ক্লাউড ঘনত্ব ঝুঁকি, এক্সিট প্রমাণ এবং পরিচালনাগত স্থিতিস্থাপকতা পরিমাপের কাঠামো।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/bn/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/</guid>
+      <pubDate>Thu, 11 Jun 2026 00:09:27 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/quang-nguyen-vinh-2649403.webp&w=1600&format=webp&q=85" type="image/webp" length="0"/>
+      <category>ক্লাউড নেটিভ ব্যাংকিং ২০২৬</category>
+      <category>DORA ব্যাংক</category>
+      <category>ক্লাউড ঘনত্ব ঝুঁকি</category>
+      <category>প্ল্যাটফর্ম ইঞ্জিনিয়ারিং ব্যাংক</category>
+      <category>ICT তৃতীয় পক্ষ ঝুঁকি</category>
+      <category>ক্লাউড এক্সিট কৌশল</category>
+      <category>সার্বভৌম ক্লাউড</category>
+    </item>
+    <item>
+      <title>২০২৬ সালে কোয়ান্টাম-সেফ ব্যাংকিং ইনডেক্স: পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, QKD, ক্রিপ্টো-এজিলিটি এবং হার্ভেস্ট-নাও-ডিক্রিপ্ট-লেটার ঝুঁকি</title>
+      <link>https://sebastienrousseau.com/bn/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/</link>
+      <description>২০২৬ সালে কোয়ান্টাম-সেফ প্রস্তুতির জন্য একটি ব্যাংকিং ইনডেক্স: NIST পোস্ট-কোয়ান্টাম মান, ক্রিপ্টোগ্রাফিক ইনভেন্টরি, ক্রিপ্টো-এজিলিটি, QKD এবং দীর্ঘস্থায়ী ডেটা এক্সপোজার।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/bn/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/</guid>
+      <pubDate>Thu, 11 Jun 2026 00:09:27 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>কোয়ান্টাম সেফ ব্যাংকিং ২০২৬</category>
+      <category>ব্যাংকের জন্য পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি</category>
+      <category>NIST FIPS 203</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>SLH-DSA</category>
+      <category>ক্রিপ্টো এজিলিটি</category>
+      <category>QKD ব্যাংকিং</category>
+    </item>
+    <item>
+      <title>২০২৬-এ মাল্টি-রেল ব্যাংক: কার্ড, A2A, স্টেবলকয়েন, RTP, FedNow ও Open Banking — এক কৌশলে</title>
+      <link>https://sebastienrousseau.com/bn/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</link>
+      <description>FedNow-এর জন্য ২৪/৭ প্রাক-অর্থায়িত তারল্য বাধ্যতামূলক। ACH সস্তা, কিন্তু T+1। USDC পারমাণবিকভাবে নিষ্পত্তি হয়, তবে ওয়ালেট পরিকাঠামো লাগে। ২০২৬-এর মাল্টি-রেল ব্যাংক প্রতিটি পেমেন্ট খরচ, চূড়ান্ততা ও তারল্য খরচ অনুযায়ী রাউট করে।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/bn/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</guid>
+      <pubDate>Thu, 11 Jun 2026 00:09:27 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
+      <category>পেমেন্ট অর্কেস্ট্রেশন স্তর</category>
+      <category>FedNow বনাম RTP</category>
+      <category>FedNow বনাম ACH</category>
+      <category>স্টেবলকয়েন নিষ্পত্তি</category>
+      <category>USDC পারমাণবিক নিষ্পত্তি</category>
+      <category>ISO 20022 pacs.008</category>
+      <category>অ্যাকাউন্ট-টু-অ্যাকাউন্ট A2A</category>
+      <category>Open Banking API</category>
+      <category>প্রাক-অর্থায়িত তারল্য</category>
+      <category>২৪/৭ তারল্য ফাঁদ</category>
+      <category>মাল্টি-রেল ব্যাংক ২০২৬</category>
+      <category>পেমেন্ট রাউটিং ইঞ্জিন</category>
+      <category>ERP মিলকরণ</category>
+    </item>
+    <item>
+      <title>পোস্ট-কোয়ান্টাম পেমেন্ট পরিকাঠামো: কেন ব্যাংক লিগ্যাসি রেল অভিযোজন না করে প্রতিস্থাপন করতে পারে</title>
+      <link>https://sebastienrousseau.com/bn/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</link>
+      <description>পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি পেমেন্ট রেলে দুটি পথ রাখে: SWIFT MT ও ISO 20022 এনভেলপে RSA/ECC অভিযোজন, অথবা ক্রিপ্টো-চটপটে পরিকাঠামোয় প্রতিস্থাপন। HNDL অপারেশনাল ক্ষতি হওয়ার আগেই স্থপতিদের সিদ্ধান্ত নিতে হবে।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/bn/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</guid>
+      <pubDate>Thu, 11 Jun 2026 00:09:27 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp" type="image/webp" length="0"/>
+      <category>পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি</category>
+      <category>PQC পেমেন্ট</category>
+      <category>ক্রিপ্টো-চটপটে</category>
+      <category>এখন-সংগ্রহ-পরে-ডিক্রিপ্ট</category>
+      <category>HNDL</category>
+      <category>NIST পোস্ট-কোয়ান্টাম মান</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>FIPS 203</category>
+      <category>FIPS 204</category>
+      <category>পেমেন্ট রেল মাইগ্রেশন</category>
+      <category>ISO 20022 PQC</category>
+      <category>SWIFT MT প্রতিস্থাপন</category>
+      <category>HSM</category>
+      <category>PKI ভাঙন</category>
+      <category>অপারেশনাল স্থিতিস্থাপকতা</category>
+      <category>Quantum Computing Cybersecurity Preparedness Act</category>
+    </item>
+    <item>
+      <title>2026-এ স্বায়ত্তশাসিত ট্রেজারি সূচক: এজেন্টিক ট্রেজারি, প্রোগ্রামযোগ্য তরলতা, টোকেনাইজড আমানত ও রিয়েল-টাইম নগদ নিয়ন্ত্রণ</title>
+      <link>https://sebastienrousseau.com/bn/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/</link>
+      <description>2026-এর স্বায়ত্তশাসিত ট্রেজারি প্রস্তুতির সূচক — এজেন্টিক ট্রেজারি ওয়ার্কফ্লো, প্রোগ্রামযোগ্য তরলতা, টোকেনাইজড আমানত, রিয়েল-টাইম পেমেন্ট ও স্বয়ংক্রিয় নগদ নিয়ন্ত্রণকে এক পরিচালন-মডেল কাঠামোয় পরিমাপ করে।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/bn/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/</guid>
+      <pubDate>Sun, 07 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/christopher-burns-Kj2SaNHG-hg.webp" type="image/webp" length="0"/>
+      <category>স্বায়ত্তশাসিত ট্রেজারি 2026</category>
+      <category>এজেন্টিক ট্রেজারি</category>
+      <category>প্রোগ্রামযোগ্য তরলতা</category>
+      <category>টোকেনাইজড আমানত ট্রেজারি</category>
+      <category>রিয়েল-টাইম ট্রেজারি</category>
+      <category>ক্যাশ ম্যানেজমেন্ট AI</category>
+    </item>
+    <item>
+      <title>২০২৬-এ হোলসেল পেমেন্ট সূচক: ISO 20022, টোকেনাইজড আমানত, রিয়েল-টাইম রেল ও সীমান্ত-পার সেটেলমেন্ট</title>
+      <link>https://sebastienrousseau.com/bn/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</link>
+      <description>২০২৬-এর হোলসেল পেমেন্ট প্রস্তুতির সূচক: ISO 20022 ডেটা গুণমান, টোকেনাইজড আমানত, রিয়েল-টাইম রেল, সীমান্ত-পার সেটেলমেন্ট এবং তরলতা দক্ষতা পরিমাপ।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/bn/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</guid>
+      <pubDate>Sat, 06 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/miquel-parera-NsXLehhHx1Q.webp" type="image/webp" length="0"/>
+      <category>হোলসেল পেমেন্ট ২০২৬</category>
+      <category>ISO 20022</category>
+      <category>টোকেনাইজড আমানত</category>
+      <category>Project Agora</category>
+      <category>সীমান্ত-পার পেমেন্ট</category>
+      <category>রিয়েল-টাইম পেমেন্ট</category>
+      <category>স্ট্রাকচার্ড অ্যাড্রেস ডেটা</category>
+      <category>পেমেন্ট ডেটা গুণমান</category>
+    </item>
+    <item>
+      <title>২০২৬-এ ব্যাংকের জন্য এজেন্টিক AI সূচক: স্বায়ত্তশাসন, গভর্নেন্স, অডিটযোগ্যতা এবং ব্যবসায়িক প্রভাব পরিমাপ</title>
+      <link>https://sebastienrousseau.com/bn/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/</link>
+      <description>ব্যাংকে এজেন্টিক AI প্রস্তুতি পরিমাপের একটি সূচক-ধাঁচের কাঠামো, যা স্বায়ত্তশাসন, গভর্নেন্স, অডিটযোগ্যতা, নির্ভরযোগ্যতা, নিয়ন্ত্রণ এবং ব্যবসায়িক মূল্য অন্তর্ভুক্ত করে।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/bn/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/</guid>
+      <pubDate>Wed, 03 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>এজেন্টিক AI ব্যাংকিং ২০২৬</category>
+      <category>AI এজেন্ট ব্যাংক</category>
+      <category>AI গভর্নেন্স আর্থিক পরিষেবা</category>
+      <category>স্বায়ত্ত ব্যাংকিং কর্মপ্রবাহ</category>
+      <category>মডেল ঝুঁকি ব্যবস্থাপনা</category>
+      <category>AI অডিটযোগ্যতা</category>
+    </item>
+    <item>
+      <title>২০২৬ ব্যাংকিং ইনফ্রাস্ট্রাকচার সূচক: এজেন্টিক AI, কোয়ান্টাম-নিরাপদ নিরাপত্তা ও ক্লাউড স্থিতিস্থাপকতার প্রস্তুতি</title>
+      <link>https://sebastienrousseau.com/bn/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/</link>
+      <description>২০২৬-এর জন্য Stanford AI Index-অনুপ্রাণিত ব্যাংকিং ইনফ্রাস্ট্রাকচার সূচক, যা এজেন্টিক AI, কোয়ান্টাম-নিরাপদ নিরাপত্তা, ক্লাউড-নেটিভ স্থিতিস্থাপকতা ও পাইকারি পেমেন্টে প্রস্তুতি পরিমাপ করে।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/bn/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/</guid>
+      <pubDate>Tue, 02 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/miguel-sousa-ejIF-pJhYkM.webp" type="image/webp" length="0"/>
+      <category>ব্যাংকিং ইনফ্রাস্ট্রাকচার সূচক ২০২৬</category>
+      <category>এজেন্টিক AI ব্যাংকিং</category>
+      <category>কোয়ান্টাম-নিরাপদ ব্যাংকিং</category>
+      <category>ক্লাউড-নেটিভ ব্যাংকিং</category>
+      <category>পাইকারি পেমেন্ট</category>
+      <category>ISO 20022</category>
+      <category>DORA</category>
+      <category>Project Agora</category>
+      <category>টোকেনাইজড আমানত</category>
+    </item>
+    <item>
+      <title>যুক্তরাজ্যের পাইকারি ডিজিটাল বাজার: টোকেনাইজড গিল্টস, নিষ্পত্তি ও নতুন চ্যাম্পিয়ন ভূমিকা</title>
+      <link>https://sebastienrousseau.com/bn/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</link>
+      <description>যুক্তরাজ্যের Wholesale Digital Markets Champion ভূমিকা টোকেনাইজড পাইকারি অর্থব্যবস্থাকে জাতীয় প্রতিযোগিতার প্রকল্পে রূপান্তরিত করেছে।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/bn/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</guid>
+      <pubDate>Sat, 30 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>যুক্তরাজ্য পাইকারি ডিজিটাল বাজার ২০২৬</category>
+      <category>Wholesale Digital Markets Champion</category>
+      <category>UK gilts</category>
+      <category>টোকেনাইজড গিল্টস</category>
+      <category>DLT নিষ্পত্তি</category>
+      <category>BoE DSS</category>
+      <category>Project Guardian</category>
+      <category>SDX</category>
+      <category>Project Agorá</category>
+      <category>HM Treasury</category>
+      <category>Bank of England</category>
+      <category>City of London</category>
+    </item>
+    <item>
+      <title>ISO 20022 মাইগ্রেশনের পরে: পেমেন্ট ডেটাকে ব্যাংকিং পণ্যে রূপান্তর ২০২৬</title>
+      <link>https://sebastienrousseau.com/bn/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</link>
+      <description>ISO 20022 মাইগ্রেশনের পরে আসল পুরস্কার পেমেন্ট ডেটা পণ্য — কাঠামোগত ঠিকানা, উদ্দেশ্য কোড, রেমিট্যান্স তথ্য ও তদন্ত বার্তা থেকে মিলকরণ, জালিয়াতি, তারল্য ও কমপ্লায়েন্স পণ্য গড়ে ওঠে।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/bn/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</guid>
+      <pubDate>Fri, 29 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/humphrey-muleba-1660004.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>ISO 20022 2026</category>
+      <category>কাঠামোগত ঠিকানা</category>
+      <category>CBPR+</category>
+      <category>পেমেন্ট ডেটা পণ্য</category>
+      <category>উদ্দেশ্য কোড</category>
+      <category>কর্পোরেট ট্রেজারি</category>
+      <category>মিলকরণ</category>
+      <category>নিষেধাজ্ঞা স্ক্রিনিং</category>
+      <category>জালিয়াতি শনাক্তকরণ</category>
+      <category>pacs.008</category>
+      <category>pain.001</category>
+      <category>SWIFT gpi</category>
+      <category>SEPA Instant</category>
+      <category>FedNow</category>
+    </item>
+    <item>
+      <title>ডিজিটাল সম্পদ ২০২৬: ব্যাংকের জন্য অপরিহার্য পরিকাঠামো রূপান্তর</title>
+      <link>https://sebastienrousseau.com/bn/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</link>
+      <description>ডিজিটাল সম্পদ আর উদ্ভাবন বাজি নয়। এটি সেটেলমেন্ট, কাস্টডি ও ব্যালেন্স শিট স্থাপত্যের প্রশ্ন। ব্যাংকের কৌশলগত কাজ কাঠামোগত অনিশ্চয়তায় পরিকাঠামো ডিজাইন।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/bn/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</guid>
+      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/corporate-finance.webp" type="image/webp" length="0"/>
+      <category>ডিজিটাল সম্পদ ২০২৬</category>
+      <category>টোকেনাইজড রিয়েল-ওয়ার্ল্ড অ্যাসেট</category>
+      <category>স্টেবলকয়েন ব্যাংকিং</category>
+      <category>টোকেনাইজড আমানত</category>
+      <category>ডিজিটাল সম্পদ কাস্টডি</category>
+      <category>DLT ব্যাংকিং</category>
+      <category>সেটেলমেন্ট পরিকাঠামো</category>
+      <category>কোল্যাটারাল মোবিলিটি</category>
+      <category>প্রোগ্রামযোগ্য মুদ্রা</category>
+      <category>ব্যাংক কৌশল ডিজিটাল সম্পদ</category>
     </item>
     <item>
       <title>DORA, EU AI আইন ও ডেটা সার্বভৌমত্ব: ব্যাংকের জন্য ২০২৬-এর কমপ্লায়েন্স স্ট্যাক</title>
@@ -50,7 +274,7 @@
       <guid isPermaLink="true">https://sebastienrousseau.com/bn/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/</guid>
       <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <enclosure url="https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp" type="image/webp" length="0"/>
       <category>২০২৬ AI পেমেন্ট</category>
       <category>পেমেন্ট প্রতারণা</category>
       <category>পেমেন্ট রাউটিং</category>
@@ -258,7 +482,7 @@
       <guid isPermaLink="true">https://sebastienrousseau.com/bn/2026-05-19-global-wholesale-payments-economics-2026/</guid>
       <pubDate>Tue, 19 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/meiying-ng-OrwkD-iWgqg.webp" type="image/webp" length="0"/>
+      <enclosure url="https://cloudcdn.pro/stocks/images/miguel-sousa-ejIF-pJhYkM.webp" type="image/webp" length="0"/>
       <category>পাইকারি পেমেন্ট ২০২৬</category>
       <category>বৈশ্বিক পেমেন্ট অর্থনীতি</category>
       <category>ISO 20022</category>

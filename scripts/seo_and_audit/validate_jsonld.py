@@ -30,6 +30,7 @@ Run:
 Exits non-zero if any page or feed has a hard error; warnings are
 reported but don't fail the build.
 """
+
 from __future__ import annotations
 
 import sys as _sys  # path bootstrap — scripts reorg (scripts/lib/ on sys.path)
@@ -48,7 +49,7 @@ JSONLD_RE = re.compile(
     r'<script[^>]*type=["\']?application/ld\+json["\']?[^>]*>([\s\S]*?)</script>',
     re.IGNORECASE,
 )
-COMMENT_RE = re.compile(r'<!--[\s\S]*?-->')
+COMMENT_RE = re.compile(r"<!--[\s\S]*?-->")
 
 # CSP delivery is a defence-in-depth contract: the HTTP response carries a
 # permissive header (with 'unsafe-inline') for the securityheaders.com
@@ -67,7 +68,7 @@ META_CSP_RE_ALT = re.compile(
     r'[^>]*?http-equiv\s*=\s*["\']?Content-Security-Policy["\']?',
     re.IGNORECASE,
 )
-SCRIPT_SRC_RE = re.compile(r'script-src\s+([^;]+)', re.IGNORECASE)
+SCRIPT_SRC_RE = re.compile(r"script-src\s+([^;]+)", re.IGNORECASE)
 
 
 def _extract_meta_csp(html: str) -> str | None:
@@ -85,7 +86,9 @@ def validate_meta_csp(html: str) -> list[str]:
     errors: list[str] = []
     csp = _extract_meta_csp(html)
     if csp is None:
-        errors.append("meta CSP missing — site relies on it for hash-pinned inline-script enforcement")
+        errors.append(
+            "meta CSP missing — site relies on it for hash-pinned inline-script enforcement"
+        )
         return errors
     m = SCRIPT_SRC_RE.search(csp)
     if m is None:
@@ -93,9 +96,13 @@ def validate_meta_csp(html: str) -> list[str]:
         return errors
     script_src = m.group(1)
     if "'unsafe-inline'" in script_src:
-        errors.append("meta CSP script-src contains 'unsafe-inline' — defeats hash-only enforcement")
+        errors.append(
+            "meta CSP script-src contains 'unsafe-inline' — defeats hash-only enforcement"
+        )
     if "sha256-" not in script_src:
-        errors.append("meta CSP script-src has no sha256-* hash tokens — inline JSON-LD would fail to load")
+        errors.append(
+            "meta CSP script-src has no sha256-* hash tokens — inline JSON-LD would fail to load"
+        )
     return errors
 
 
@@ -112,34 +119,35 @@ def validate_article_furniture(html: str) -> list[str]:
     if '"@type":"BlogPosting"' not in html:
         return errors
     if 'class="article-tags"' not in html:
-        errors.append('missing .article-tags — tag badges not rendered after H1')
+        errors.append("missing .article-tags — tag badges not rendered after H1")
     if 'class="article-meta"' not in html:
-        errors.append('missing .article-meta — author/date/read-time bar not rendered')
+        errors.append("missing .article-meta — author/date/read-time bar not rendered")
     if 'class="author-card"' not in html:
-        errors.append('missing .author-card — author E-E-A-T bio not rendered at post end')
+        errors.append("missing .author-card — author E-E-A-T bio not rendered at post end")
     if 'class="post-pagination"' not in html:
-        errors.append('missing .post-pagination — prev/next article nav not rendered')
+        errors.append("missing .post-pagination — prev/next article nav not rendered")
     return errors
+
 
 # Required-property table per @type. Keep narrow — false positives are
 # more expensive than missing a real issue, and the Rich Results Test
 # covers the wider spec.
 REQUIRED: dict[str, set[str]] = {
-    "BlogPosting":      {"headline", "author", "datePublished"},
-    "Article":          {"headline", "author", "datePublished"},
-    "NewsArticle":      {"headline", "author", "datePublished"},
-    "Person":           {"name"},
-    "Organization":     {"name"},
-    "WebSite":          {"name", "url"},
-    "WebPage":          {"name"} ,
-    "ImageObject":      {"url"},
-    "BreadcrumbList":   {"itemListElement"},
-    "ListItem":         {"position", "name"},
-    "ItemList":         {"itemListElement"},
-    "FAQPage":          {"mainEntity"},
-    "Question":         {"name", "acceptedAnswer"},
-    "Answer":           {"text"},
-    "ProfilePage":      {"mainEntity"},
+    "BlogPosting": {"headline", "author", "datePublished"},
+    "Article": {"headline", "author", "datePublished"},
+    "NewsArticle": {"headline", "author", "datePublished"},
+    "Person": {"name"},
+    "Organization": {"name"},
+    "WebSite": {"name", "url"},
+    "WebPage": {"name"},
+    "ImageObject": {"url"},
+    "BreadcrumbList": {"itemListElement"},
+    "ListItem": {"position", "name"},
+    "ItemList": {"itemListElement"},
+    "FAQPage": {"mainEntity"},
+    "Question": {"name", "acceptedAnswer"},
+    "Answer": {"text"},
+    "ProfilePage": {"mainEntity"},
     "SpeakableSpecification": {"cssSelector"},
 }
 
@@ -208,9 +216,7 @@ def _check_node_empty_urls(type_str: str, node: dict, errors: list[str]) -> None
         val = node.get(key)
         if isinstance(val, str) and val.strip() == "":
             errors.append(f"{type_str}.{key} is empty string")
-        elif isinstance(val, list) and any(
-            isinstance(x, str) and x.strip() == "" for x in val
-        ):
+        elif isinstance(val, list) and any(isinstance(x, str) and x.strip() == "" for x in val):
             errors.append(f"{type_str}.{key}[] contains empty string")
 
 
@@ -226,9 +232,7 @@ def _validate_jsonld_block(
     try:
         data = json.loads(body)
     except json.JSONDecodeError as e:
-        errors.append(
-            f"block#{i}: invalid JSON ({e.msg} at line {e.lineno} col {e.colno})"
-        )
+        errors.append(f"block#{i}: invalid JSON ({e.msg} at line {e.lineno} col {e.colno})")
         return
     for type_str, node in iter_typed_nodes(data):
         # Skip pure @id references — pointers to nodes defined elsewhere,
@@ -252,7 +256,7 @@ def validate_page(path: Path) -> tuple[list[str], list[str]]:
     # Strip HTML comments first — they can contain literal
     # <script type="application/ld+json"> text (documentation) that we
     # don't want the regex to match as a real script block.
-    html = COMMENT_RE.sub('', raw_html)
+    html = COMMENT_RE.sub("", raw_html)
     blocks = JSONLD_RE.findall(html)
     if not blocks:
         return errors, warnings
@@ -281,10 +285,10 @@ def _localname(tag: str) -> str:
 # exact patterns the postbuild URL-repair pass rewrites — this check is the
 # loud failure surface for when that repair stops working.
 TAINTED_URL_RE = re.compile(
-    r'(?:'
-    r'https?://(?:127\.0\.0\.1|localhost)'   # local dev host
-    r'|/\.meta(?:/|$)'                       # SSG internal path
-    r')',
+    r"(?:"
+    r"https?://(?:127\.0\.0\.1|localhost)"  # local dev host
+    r"|/\.meta(?:/|$)"  # SSG internal path
+    r")",
     re.IGNORECASE,
 )
 
@@ -292,15 +296,14 @@ TAINTED_URL_RE = re.compile(
 # We accept the "Day, DD Mon YYYY HH:MM:SS ±HHMM" shape — Google + most
 # feed readers reject anything looser.
 RFC822_RE = re.compile(
-    r'^(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun), '
-    r'\d{2} (?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) \d{4} '
-    r'\d{2}:\d{2}:\d{2} (?:[+-]\d{4}|GMT|UTC)$'
+    r"^(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun), "
+    r"\d{2} (?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) \d{4} "
+    r"\d{2}:\d{2}:\d{2} (?:[+-]\d{4}|GMT|UTC)$"
 )
 # RFC 3339 / ISO 8601 date used by Atom + sitemaps
 # (e.g. "2026-05-11T06:06:06+00:00" or just "2026-05-11").
 RFC3339_RE = re.compile(
-    r'^\d{4}-\d{2}-\d{2}'
-    r'(?:T\d{2}:\d{2}:\d{2}(?:\.\d+)?(?:Z|[+-]\d{2}:\d{2}))?$'
+    r"^\d{4}-\d{2}-\d{2}" r"(?:T\d{2}:\d{2}:\d{2}(?:\.\d+)?(?:Z|[+-]\d{2}:\d{2}))?$"
 )
 
 
@@ -454,8 +457,7 @@ def _validate_news_extension(
         errors.append(f"news-sitemap: url[{i}] missing <news:publication_date>")
     elif pubdate.text and not RFC3339_RE.match(pubdate.text.strip()):
         warnings.append(
-            f"news-sitemap: url[{i}] <news:publication_date> not ISO 8601: "
-            f"{pubdate.text!r}"
+            f"news-sitemap: url[{i}] <news:publication_date> not ISO 8601: " f"{pubdate.text!r}"
         )
     kw_el = news.find(f"{{{_NEWS_NS}}}keywords")
     if kw_el is not None and kw_el.text:
@@ -541,7 +543,9 @@ def validate_feed(path: Path) -> tuple[list[str], list[str]]:
     root = tree.getroot()
     handler = _FEED_HANDLERS.get(_localname(root.tag))
     if handler is None:
-        warnings.append(f"unknown root element <{_localname(root.tag)}>; skipped feed-specific checks")
+        warnings.append(
+            f"unknown root element <{_localname(root.tag)}>; skipped feed-specific checks"
+        )
         return errors, warnings
     handler(root, path, errors, warnings)
     return errors, warnings
@@ -554,8 +558,7 @@ def validate_feed(path: Path) -> tuple[list[str], list[str]]:
 
 def main() -> int:
     p = argparse.ArgumentParser()
-    p.add_argument("--base-dir", default="public",
-                   help="HTML tree to validate (default: public)")
+    p.add_argument("--base-dir", default="public", help="HTML tree to validate (default: public)")
     args = p.parse_args()
     base = Path(args.base_dir)
     if not base.is_dir():

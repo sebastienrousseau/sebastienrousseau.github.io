@@ -1,5 +1,6 @@
 ---
 title: "البلوكشين: التقنية التي تهمّ في 2018"
+tags: "pain001, ISO 20022, payment automation, cost reduction, payments, payment files, pain message, DORA, post-quantum cryptography, AI, tokenised deposits, Rust, cloud native banking, cross-border payments, stablecoins"
 subtitle: "تعمية المفتاح الخاص وشبكات النِدّ-لنِدّ في خدمة معاملاتٍ آمنة"
 description: "حكاية الرحلة الاستثنائية لتأمين المعاملات الرقمية عبر تعمية المفتاح الخاص وشبكات النِدّ-لنِدّ (P2P)."
 date: "January 2, 2018"

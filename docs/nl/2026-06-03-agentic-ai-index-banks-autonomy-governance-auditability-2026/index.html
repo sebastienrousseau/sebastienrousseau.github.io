@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="nl-NL">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Wed, 03 Jun 2026 06:06:06 +0000" id="date" />
+    <meta itemprop="dateModified" content="2026-06-03" id="last-modified" />
+    <title>Agentic AI-index voor banken 2026: autonomie, governance en impact — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="Een indexkader voor de meting van agentic AI-volwassenheid bij banken: autonomie, governance, auditeerbaarheid, betrouwbaarheid en bedrijfswaarde.">
+<meta name="keywords" content="agentic AI banken 2026, AI-agents banken, AI-governance financiële sector, autonome bankworkflows, model risk management, SR 11-7, SS1/23, DORA, OAuth, OPA, ISO 20022, auditeerbaarheid AI">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="The Agentic AI Index for Banks 2026">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-NuzAeiIRgiFyWvbutzN+TmvoBC+LogYOXY7U8PXZ3U8=' 'sha256-VGROPjIIYB5+GRalm3jifInzWiTojHI9X/YBeXsUdvw=' 'sha256-ffS8bkht143yo8DqNDHUR/dgoBa6LVVbewhg6LFE9zw=' 'sha256-lUHVwdSn8t4qf0zhxzcEak2DcF7ZhvyOzqCvPni9pq4=' 'self' 'inline-speculation-rules' https://cdn.jsdelivr.net https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' https://cloudcdn.pro https://www.google.com https://open.spotify.com;
+        img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/nl/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/newsreader-latin.woff2" crossorigin />
+    <link rel="stylesheet" href="/fonts/fonts.css" />
+    <!-- Preload the LCP hero portrait so it doesn't compete with the
+         render-blocking JS bundle on throttled mobile connections.
+         Lighthouse-simulated Slow-4G has been pinning LCP at ~5.6s; the
+         observed (real-network) LCP is 165 ms. This hint pulls the
+         synthetic LCP in line with the observed value. -->
+    <link rel="preload" as="image" href="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=1200&format=webp&q=85" fetchpriority="high">
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script>(function(){try{var saved=localStorage.getItem("theme");var prefersDark=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;var theme=saved||(prefersDark?"dark":"light");document.documentElement.setAttribute("data-theme",theme);}catch(e){}})();</script>
+
+    <link rel="stylesheet" href="/_csp/4724896d11ec6663.css" integrity="sha256-SFQ1AngSMlx94d5FmN1lWSKPs5RL6Y8BQf0nIEBLd7g= sha256-6BJkWGvqh3blXQksn+ynhkpoqcrJzzWhSKVuLVBJY4s=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Atom-feed" href="/nl/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="Agentic AI-index voor banken 2026: autonomie, governance en impact — Sebastien Rousseau">
+<meta property="og:description" content="Een indexkader voor de meting van agentic AI-volwassenheid bij banken: autonomie, governance, auditeerbaarheid, betrouwbaarheid en bedrijfswaarde.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/nl/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/">
+<meta property="og:image" content="https://cloudcdn.pro/api/transform?url=/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp&w=1200&format=webp&q=80">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="nl_NL">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Agentic AI-index voor banken 2026: autonomie, governance en impact — Sebastien Rousseau">
+<meta name="twitter:description" content="Een indexkader voor de meting van agentic AI-volwassenheid bij banken: autonomie, governance, auditeerbaarheid, betrouwbaarheid en bedrijfswaarde.">
+<meta name="twitter:image" content="https://cloudcdn.pro/api/transform?url=/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp&w=1200&format=webp&q=80">
+<link rel="canonical" href="https://sebastienrousseau.com/nl/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" /><link rel="alternate" hreflang="bn" href="https://sebastienrousseau.com/bn/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" /><link rel="alternate" hreflang="cs" href="https://sebastienrousseau.com/cs/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" /><link rel="alternate" hreflang="fil" href="https://sebastienrousseau.com/fil/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" /><link rel="alternate" hreflang="ha" href="https://sebastienrousseau.com/ha/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" /><link rel="alternate" hreflang="he" href="https://sebastienrousseau.com/he/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" /><link rel="alternate" hreflang="hi" href="https://sebastienrousseau.com/hi/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" /><link rel="alternate" hreflang="id" href="https://sebastienrousseau.com/id/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" /><link rel="alternate" hreflang="nl" href="https://sebastienrousseau.com/nl/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" /><link rel="alternate" hreflang="pl" href="https://sebastienrousseau.com/pl/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" /><link rel="alternate" hreflang="ro" href="https://sebastienrousseau.com/ro/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" /><link rel="alternate" hreflang="sv" href="https://sebastienrousseau.com/sv/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" /><link rel="alternate" hreflang="th" href="https://sebastienrousseau.com/th/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" /><link rel="alternate" hreflang="tr" href="https://sebastienrousseau.com/tr/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" /><link rel="alternate" hreflang="uk" href="https://sebastienrousseau.com/uk/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" /><link rel="alternate" hreflang="vi" href="https://sebastienrousseau.com/vi/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" /><link rel="alternate" hreflang="yo" href="https://sebastienrousseau.com/yo/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" integrity="sha256-tV/7vAgYDUuBQbSGEPjXL/JC0sD7QpSxXCGKT4ALhh8= sha256-dvm1KF9mEWIapL8BE0nyFlHaKSf6TsjZZoQcJeRPraI=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">Naar hoofdinhoud gaan</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="Navigatie omschakelen" />
+      <div class="wrap">
+        <a class="ap-brand" href="/nl/index.html" aria-label="Startpagina van Sebastien Rousseau">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="Hoofdnavigatie">
+          <ul class="ap-menu">
+            <li><a href="/nl/over/index.html">Over mij</a></li>
+            <li><a href="/nl/artikelen/index.html" aria-current="page" class="active">Artikelen</a></li>
+            <li><a href="/nl/publicaties/index.html">Publicaties</a></li>
+            <li><a href="/nl/onderwerpen/index.html">Onderwerpen</a></li>
+            <li><a href="/nl/projecten/index.html">Projecten</a></li>
+            <li><a href="/nl/afspeellijsten/index.html">Afspeellijsten</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="Donker thema inschakelen" aria-pressed="false" title="Thema wisselen">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="Zoeken (Cmd of Ctrl + K)" title="Zoeken (⌘K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="Taal">
+            <button type="button" class="ap-lang-toggle" aria-label="NL, Taal wijzigen" aria-expanded="false" aria-haspopup="menu" title="Taal wijzigen">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">NL</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <a class="ap-lang-item" href="/bn/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
+                <a class="ap-lang-item" href="/cs/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
+                <a class="ap-lang-item" href="/de/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <a class="ap-lang-item" href="/fil/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
+                <a class="ap-lang-item" href="/ha/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
+                <a class="ap-lang-item" href="/he/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
+                <a class="ap-lang-item" href="/hi/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <a class="ap-lang-item" href="/id/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
+                <a class="ap-lang-item" href="/it/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <a class="ap-lang-item" href="/pl/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
+                <a class="ap-lang-item" href="/pt-br/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <a class="ap-lang-item" href="/ro/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
+                <a class="ap-lang-item" href="/ru/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <a class="ap-lang-item" href="/sv/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
+                <a class="ap-lang-item" href="/th/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
+                <a class="ap-lang-item" href="/tr/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
+                <a class="ap-lang-item" href="/uk/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" data-lang="uk" role="menuitem">🇺🇦 Українська</a>
+                <a class="ap-lang-item" href="/vi/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
+                <a class="ap-lang-item" href="/yo/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
+                <a class="ap-lang-item" href="/zh-hans/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/nl/contact/index.html" aria-label="Neem contact op">Neem contact op ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="Navigatie omschakelen">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>Agentic AI-index voor banken 2026: autonomie, governance en impact</h1>
+      <p class="sub">Agentic AI in het bankwezen is een engineeringvraagstuk verkleed als AI-vraagstuk. Het model is uitwisselbaar; de OAuth-gescopete service-accounts, de deterministische semantische router, de Open Policy Agent-poorten, het WORM-auditlog en de geteste noodknop zijn dat niet.</p>
+    <nav class="article-tags" aria-label="Onderwerpen"><a href="/tags/index.html#h3-agentic-ai-banken-2026" class="article-tag" rel="tag">agentic AI banken 2026</a><a href="/tags/index.html#h3-ai-agents-banken" class="article-tag" rel="tag">AI-agents banken</a><a href="/tags/index.html#h3-ai-governance-financiele-sector" class="article-tag" rel="tag">AI-governance financiële sector</a><a href="/tags/index.html#h3-autonome-bankworkflows" class="article-tag" rel="tag">autonome bankworkflows</a><a href="/tags/index.html#h3-model-risk-management" class="article-tag" rel="tag">model risk management</a><a href="/tags/index.html#h3-sr-11-7" class="article-tag" rel="tag">SR 11-7</a><a href="/tags/index.html#h3-ss1-23" class="article-tag" rel="tag">SS1/23</a><a href="/tags/index.html#h3-dora" class="article-tag" rel="tag">DORA</a><a href="/tags/index.html#h3-oauth" class="article-tag" rel="tag">OAuth</a><a href="/tags/index.html#h3-opa" class="article-tag" rel="tag">OPA</a><a href="/tags/index.html#h3-iso-20022" class="article-tag" rel="tag">ISO 20022</a><a href="/tags/index.html#h3-auditeerbaarheid-ai" class="article-tag" rel="tag">auditeerbaarheid AI</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2026-06-03T06:06:06+00:00" class="meta-pub">Gepubliceerd op 3 Jun 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Geschatte leestijd">13 min. leestijd</span></div></section><figure class="article-banner"><img src="https://cloudcdn.pro/api/transform?url=/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp&w=1200&format=webp&q=80" alt="Banner for: Agentic AI-index voor banken 2026: autonomie, governance en impact" width="1200" height="675" fetchpriority="high" decoding="async" /></figure>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>Inhoud</h2><ol><li><a href="#waarom-2026-het-jaar-is-waarin-deze-index-telt">Waarom 2026 het jaar is waarin deze index telt</a></li><li><a href="#de-architectuur-van-de-index-voor-2026">De architectuur van de index voor 2026</a></li><li><a href="#actuele-signalen-om-te-volgen">Actuele signalen om te volgen</a></li><li><a href="#de-autonomieladder">De Autonomieladder</a></li><li><a href="#het-agent-control-plane">Het Agent Control Plane</a></li><li><a href="#model-risk-management">Model Risk Management</a></li><li><a href="#bedrijfsimpact-meten">Bedrijfsimpact meten</a></li><li><a href="#wat-dit-betekent-per-banktype">Wat dit betekent per banktype</a></li><li><a href="#conclusie">Conclusie</a></li><li><a href="#veelgestelde-vragen">Veelgestelde vragen</a></li><li><a href="#referenties">Referenties</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> Een indexkader voor de meting van agentic AI-volwassenheid bij banken: autonomie, governance, auditeerbaarheid, betrouwbaarheid en bedrijfswaarde.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>Waarom 2026 het jaar is waarin deze index telt.</strong> De verschuiving van chat naar afgebakende workflows is dit jaar het enige dat telt voor agentic AI bij banken.</li>  <li><strong>Actuele signalen om te volgen.</strong> Classificeer agents op wat zij mogen doen, niet op hoe slim het onderliggende model is.</li>  <li><strong>De Autonomieladder.</strong> Classificeer agents op wat zij mogen doen, niet op hoe slim het onderliggende model is.</li>  <li><strong>Het Agent Control Plane.</strong> Het control plane is de engineeringlaag tussen het LLM en uw productiesystemen.</li></ul></aside><h1>Agentic AI-index voor banken 2026: autonomie, governance, auditeerbaarheid en bedrijfsimpact</h1>
+<!-- lead-start -->
+
+<!-- lead-end -->
+<p>Agentic AI in het bankwezen is een engineeringvraagstuk verkleed als AI-vraagstuk. Het model is uitwisselbaar; het control plane niet. De uitdaging voor 2026 is niet adoptie — Cambridge CCAF zet die al op 52% — maar de vraag of de autonome systemen die uw bank vandaag draait volgend kwartaal een SR 11-7-onderzoek doorstaan. De meeste niet.</p>
+<hr />
+<blockquote>
+<p><strong>Executive samenvatting / Kernpunten</strong></p>
+<ul>
+<li><strong>Stop met de term chatbot.</strong> De productie-eenheid is een afgebakende workflow met strikte rechten op tool-aanroepen. Het werk gebeurt binnen de workflow, niet binnen het LLM.</li>
+<li><strong>OSWorld op 66,3% is het betrouwbaarheidsplafond.</strong> De benchmark van Stanford HAI die het dichtst bij enterprise tool-aanroepen ligt, faalt nog steeds op één op drie gestructureerde taken. Dat cijfer rechtvaardigt forse uitrol met human-in-the-loop; het rechtvaardigt geen ongesuperviseerde uitvoering op iets dat klantgeld raakt.</li>
+<li><strong>Classificeer op rechten, niet op intelligentie.</strong> De Autonomieladder loopt van Niveau 0 (read-only ISDA-clausule-extractie) tot Niveau 4 (multi-tool payment repair met verplichte controlepunten). Niveau 5 — zelfsturende uitvoering zonder controlepunten — hoort in 2026 niet thuis in productie binnen het bankwezen.</li>
+<li><strong>Het Agent Control Plane bestaat uit vijf geëngineerde componenten, geen beleidsdocument.</strong> OAuth-gescopete service-accounts, deterministische semantische routing, Open Policy Agent als poort, WORM-auditlogging en een geteste noodknop. Wat ontbreekt, wordt een bevinding.</li>
+<li><strong>SR 11-7 en PRA SS1/23 zijn al van toepassing.</strong> De Fed heeft herhaaldelijk verduidelijkt dat elk beslissingssysteem van input naar output binnen het bereik valt. Banken die betogen dat een LLM geen model is, hebben de toezichtsdiscussie verloren voordat zij hem begonnen.</li>
+</ul>
+</blockquote>
+<hr />
+<h2 id="waarom-2026-het-jaar-is-waarin-deze-index-telt">Waarom 2026 het jaar is waarin deze index telt <a class="heading-anchor" href="#waarom-2026-het-jaar-is-waarin-deze-index-telt" aria-label="Link naar Waarom 2026 het jaar is waarin deze index telt">#</a></h2>
+<p>De verschuiving van chat naar afgebakende workflows is dit jaar het enige dat telt voor agentic AI bij banken. Een chatbot die een klantmail opstelt, is te beoordelen. Een agent die <code>POST /accounts/{id}/freeze</code> aanroept op uw productieplatform voor kaarten, levert auditeerbaar bewijs. Productie heeft de framing ingehaald: het Cambridge CCAF-onderzoek van 2026 meldt 52% actieve agentic-adoptie en 23% in opschaling of transformatie (<a href="https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/2026-global-ai-in-financial-services-report/" title="Wereldwijd rapport AI in financiële dienstverlening 2026">Cambridge CCAF ⧉</a>). De drempel van de &quot;geïsoleerde pilot&quot; is ergens eind 2025 gepasseerd.</p>
+<p>Twee dingen zijn naast de adoptie verschoven.</p>
+<p>Ten eerste behandelen toezichthouders LLM's niet langer als een nieuwigheid. De Federal Reserve heeft verduidelijkt dat <a href="https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm" title="SR 11-7: Richtlijn voor Model Risk Management">SR 11-7 ⧉</a> van toepassing is op LLM-gedreven besluitvorming, ongeacht of het LLM intern als model is geclassificeerd. De <a href="https://www.bankofengland.co.uk/prudential-regulation/publication/2023/may/model-risk-management-principles-for-banks-ss" title="Toezichtsbrief SS1/23">SS1/23 ⧉</a> van de PRA was altijd al ruim genoeg om ze te vatten. De hoog-risicoclassificatie van de EU AI Act dekt het merendeel van het LLM-gebruik in de financiële sector. Het argument &quot;we weten niet zeker of dit eronder valt&quot; bestaat niet meer.</p>
+<p>Ten tweede heeft de benchmarkrealiteit zich aangepast. De 2026 AI Index van Stanford HAI noteert OSWorld — de dichtstbijzijnde benchmark voor echt enterprise tool-gebruik — op 66,3% nauwkeurigheid (<a href="https://hai.stanford.edu/ai-index/2026-ai-index-report/technical-performance" title="Hoofdstuk Technische prestaties">Stanford HAI ⧉</a>). Eén op drie gestructureerde taken faalt nog steeds. Dat cijfer zet het technische plafond voor autonomie in 2026. Hoog genoeg om afgebakende Niveau-3-uitrol onder HITL-toezicht te rechtvaardigen; niet hoog genoeg voor ongesuperviseerde uitvoering tegen welke API dan ook die klantgeld raakt.</p>
+<p>De Agentic AI-index voor banken moet voor LLM-gedreven besluitvorming doen wat het Basel-raamwerk deed voor kapitaal: de claim &quot;we hebben controls&quot; omzetten in meetbaar, auditeerbaar bewijs per workflow.</p>
+<h2 id="de-architectuur-van-de-index-voor-2026">De architectuur van de index voor 2026 <a class="heading-anchor" href="#de-architectuur-van-de-index-voor-2026" aria-label="Link naar De architectuur van de index voor 2026">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Indexlaag</th>
+<th>Hoe &quot;klaar&quot; eruitziet</th>
+<th>Indicator voor gereedheid</th>
+<th>Faalmodus</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Autonomieniveau</strong></td>
+<td>Elke productie-workflow gelabeld op Niveau 0–4; geen Niveau 5 in productie</td>
+<td>% workflows per niveau; aandeel op Niveau 3+</td>
+<td>Productie-agent verstuurt een <code>pacs.008</code> naar een gehallucineerde begunstigde-BIC omdat geen statische allow-list de payload poortwacht voor SWIFTNet</td>
+</tr>
+<tr>
+<td><strong>API-permissionering</strong></td>
+<td>Elke agent koppelt aan één service-account met OAuth-scopes volgens minste rechten (bijv. <code>card-freeze:write:lt-5000usd</code>); MTLS naar de legacy-core</td>
+<td>% agents op minste rechten; aantal wees-permissies</td>
+<td>Agent hergebruikt een te ruim gescopet service-account; itereert door accounts die hij niet hoorde te lezen; AVG-artikel-33-incident binnen 72 uur gemeld</td>
+</tr>
+<tr>
+<td><strong>Deterministische vangrails</strong></td>
+<td>Elke tool-aanroep loopt via een semantische router (NeMo Guardrails / LangChain Guardrails) plus JSON-schema-validator voor de API</td>
+<td>% onderschepte tool-aanroepen; afwijzingspercentage per categorie</td>
+<td>LLM verstuurt een <code>transfer</code>-aanroep met <code>amount: 0</code>; downstream-API valideert niet; reconciliatie-alert op het grootboek volgt 18 uur later in een andere tijdzone</td>
+</tr>
+<tr>
+<td><strong>Dekking human-in-the-loop</strong></td>
+<td>Elke Niveau-3-uitvoering toont een goedkeurings-UI met een harde time-out; auto-goedkeuring uitgeschakeld door beleid</td>
+<td>Goedkeuringsdoorlooptijd; rubber-stamp-percentage (binnen 2 seconden goedgekeurd)</td>
+<td>Operator klikt &quot;goedkeuren&quot; op 200 alerts in 4 minuten; SAR ingediend tegen een legitieme klant; klacht van de toezichthouder binnen de week</td>
+</tr>
+<tr>
+<td><strong>Volledigheid van het auditlog</strong></td>
+<td>Onveranderbaar WORM-log legt system prompt + opgehaalde context + LLM-output + tool-aanroep + tool-resultaat + UID van de goedkeurder vast; cryptografisch ondertekend bij wegschrijven</td>
+<td>% aanroepen met volledig spoor</td>
+<td>SR 11-7-onderzoeker vraagt waarom agent #4421 een wire van USD 4,8 mln goedkeurde; bank heeft de wire-bevestiging en de model card; geen bewijs op prompt-niveau; bevinding afgegeven</td>
+</tr>
+<tr>
+<td><strong>Unit economics</strong></td>
+<td>Kosten per voltooide beslissing gemeten inclusief reversal- en herstelkosten; positief versus handmatige nullijn</td>
+<td>Nettokosten per beslissing; reversal-percentage</td>
+<td>Tokenkosten op edge-case-agents overstijgen de handmatige onderzoekers die zij vervingen; CFO stopt het programma in Q3</td>
+</tr>
+</tbody>
+</table>
+<h2 id="actuele-signalen-om-te-volgen">Actuele signalen om te volgen <a class="heading-anchor" href="#actuele-signalen-om-te-volgen" aria-label="Link naar Actuele signalen om te volgen">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Signaal</th>
+<th>Wat dit voor banken betekent</th>
+<th>Bron</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>52% actieve adoptie</strong></td>
+<td>Agentic AI is voorbij het pilotstadium; instellingsbrede governance is overdue</td>
+<td><a href="https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/2026-global-ai-in-financial-services-report/" title="Wereldwijd rapport AI in financiële dienstverlening 2026">Cambridge CCAF ⧉</a></td>
+</tr>
+<tr>
+<td><strong>23% in opschaling of transformatie</strong></td>
+<td>Een betekenisvolle minderheid is voorbij het proof-of-concept-theater</td>
+<td><a href="https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/2026-global-ai-in-financial-services-report/" title="Wereldwijd rapport AI in financiële dienstverlening 2026">Cambridge CCAF ⧉</a></td>
+</tr>
+<tr>
+<td><strong>OSWorld op 66,3%</strong></td>
+<td>Eén op drie faalt op gestructureerd tool-gebruik. Ongesuperviseerde uitvoering tegen API's voor klantgelden is op dit betrouwbaarheidsniveau niet verdedigbaar</td>
+<td><a href="https://hai.stanford.edu/ai-index/2026-ai-index-report/technical-performance" title="Hoofdstuk Technische prestaties">Stanford HAI ⧉</a></td>
+</tr>
+<tr>
+<td><strong>55% noemt verlies van menselijk toezicht als topriciso</strong></td>
+<td>Het ontwerp van controls is de primaire engineeringzorg, geen downstream-compliancevraagstuk</td>
+<td><a href="https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/2026-global-ai-in-financial-services-report/" title="Wereldwijd rapport AI in financiële dienstverlening 2026">Cambridge CCAF ⧉</a></td>
+</tr>
+<tr>
+<td><strong>76% van de grote FI's worstelt om waarde te meten</strong></td>
+<td>Algemene productiviteitsclaims overleven geen gesprek met de CFO. Meet per workflow, niet per programma</td>
+<td><a href="https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/2026-global-ai-in-financial-services-report/" title="Wereldwijd rapport AI in financiële dienstverlening 2026">Cambridge CCAF ⧉</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="de-autonomieladder">De Autonomieladder <a class="heading-anchor" href="#de-autonomieladder" aria-label="Link naar De Autonomieladder">#</a></h2>
+<p>Classificeer agents op wat zij mogen doen, niet op hoe slim het onderliggende model is. Dezelfde GPT-5- / Claude 4- / Gemini 3-instantie kan op elk niveau zitten; de wrapper is wat verschilt.</p>
+<ul>
+<li><strong>Niveau 0 — Observeren.</strong> Read-only toegang tot logs, traces of transacties. De agent legt patronen of anomalieën bloot; nergens schrijfacties. Voorbeeld: drift in <code>pacs.008</code>-afwijzingspercentages per corridor detecteren en het operationsteam alerteren.</li>
+<li><strong>Niveau 1 — Read-only retrieval.</strong> Leest uit operationele systemen; produceert gestructureerde output voor menselijke consumptie. Voorbeeld: CSA-clausulevariaties uit het ISDA Master Agreement van een tegenpartij halen en afwijkingen ten opzichte van het standaardtemplate van de bank markeren. De agent schrijft nooit terug naar de contractenstore.</li>
+<li><strong>Niveau 2 — Opstellen voor menselijke indiening.</strong> Genereert inhoud die een mens beoordeelt en indient. Voorbeeld: een Suspicious Activity Report opstellen op basis van een fraud-system-alert plus KYC-record plus transactietrace; de BSA-officer leest, bewerkt indien nodig en dient in. Het system of record ziet alleen de door de mens goedgekeurde versie.</li>
+<li><strong>Niveau 3 — Afgebakende uitvoering.</strong> Roept een productie-API aan met harde, deterministische limieten die door de wrapper worden afgedwongen. Voorbeeld: card-freeze-API-aanroep met <code>max-amount-at-risk: 5000 USD</code> afgedwongen door een allow-list-beleid; de agent kan geen kaart bevriezen die gekoppeld is aan saldi boven die drempel zonder Niveau-2-escalatie. De limiet zit in policy-as-code, niet in de prompt — prompts vormen geen beveiligingsgrens.</li>
+<li><strong>Niveau 4 — Multi-tool-orkestratie met verplichte controlepunten.</strong> Doorloopt een reeks over systemen; elke statetransitie wordt gelogd; controlepunten vragen menselijke goedkeuring voor de volgende tool-aanroep. Voorbeeld: payment-repair-workflow — gefaalde <code>pacs.008</code> uit de dead-letter queue halen → juiste begunstigde opzoeken via SWIFT KYC Registry → gecorrigeerd bericht genereren → naar de uitgaande queue schrijven → mens keurt het opnieuw versturen goed. Faalt een stap op de schema-validator, dan stopt de workflow en wordt een uitzonderingszaak aangemaakt.</li>
+<li><strong>Niveau 5 — Zelfsturing.</strong> De agent plant en voert uit zonder goedkeuring op controlepunten. <strong>Geen enkele productie-bankworkflow hoort in 2026 op Niveau 5 te draaien.</strong> Dit is geen volwassenheidsstelling; het is een betrouwbaarheidsstelling. OSWorld op 66,3% stapelt over gekoppelde API-aanroepen. Drie tool-aanroepen van elk 66% levert 29% end-to-end-succes op. Vijf is 13%. Doen niet.</li>
+</ul>
+<h2 id="het-agent-control-plane">Het Agent Control Plane <a class="heading-anchor" href="#het-agent-control-plane" aria-label="Link naar Het Agent Control Plane">#</a></h2>
+<p>Het control plane is de engineeringlaag tussen het LLM en uw productiesystemen. Vijf componenten, allemaal runtime, geen ervan staat in een beleidsdocument.</p>
+<h3 id="1-identiteit-en-rechten">1. Identiteit en rechten <a class="heading-anchor" href="#1-identiteit-en-rechten" aria-label="Link naar 1. Identiteit en rechten">#</a></h3>
+<p>Elke agent koppelt aan precies één service-account. Dat account houdt OAuth-<code>client_credentials</code>-tokens met scopes op het minimale API-oppervlak dat nodig is. Het token van de card-freeze-agent kan <code>POST /accounts/{id}/freeze</code> aanroepen met <code>amount-at-risk: 0..5000 usd</code>. Het kan <code>GET /accounts/{id}/balance</code> niet aanroepen voor andere klanten. Het kan niets aanroepen in custody, treasury of trading. Service-accountgeheimen roteren wekelijks; langlevende credentials zijn de meest voorkomende control-plane-fout in productie-uitrol.</p>
+<h3 id="2-deterministische-vangrails-op-tool-aanroepen">2. Deterministische vangrails op tool-aanroepen <a class="heading-anchor" href="#2-deterministische-vangrails-op-tool-aanroepen" aria-label="Link naar 2. Deterministische vangrails op tool-aanroepen">#</a></h3>
+<p>Elke LLM-tool-aanroep gaat door een deterministische semantische router (NeMo Guardrails, LangChain Guardrails of gelijkwaardig) <strong>voordat</strong> de aanroep de productie-API raakt. De router classificeert de intentie tegen een eindige allow-list; aanroepen daarbuiten worden afgewezen en gelogd. Daarna controleert een JSON-schema-validator de payload — verplichte velden aanwezig, bedragen binnen grenzen, ISO-landcodes valide, begunstigde-BIC op de vooraf goedgekeurde tegenpartijlijst van de bank. De validator hoort paranoïde te zijn: een <code>pacs.008</code> met <code>amount: 0</code> is een modelfout, geen legitieme transactie. Een wire naar een land dat uw sanctiefilter niet vooraf heeft goedgekeurd voor het uitgaande klantsegment evenmin.</p>
+<h3 id="3-policy-as-code">3. Policy-as-code <a class="heading-anchor" href="#3-policy-as-code" aria-label="Link naar 3. Policy-as-code">#</a></h3>
+<p>Open Policy Agent (of gelijkwaardig) zit tussen de validator en de API. Policies staan onder Git-versiebeheer; afwijzingsbeslissingen worden gelogd; dezelfde policy-engine die microservice-naar-microservice-aanroepen op uw bestaande platform poortwacht, poortwacht agent-tool-aanroepen. Agents als bijzondere klasse met op maat gemaakte poorten behandelen, is hoe banken zes maanden later zitten met schaduw-control-planes die niemand op het platformteam nog begrijpt.</p>
+<h3 id="4-auditlogging">4. Auditlogging <a class="heading-anchor" href="#4-auditlogging" aria-label="Link naar 4. Auditlogging">#</a></h3>
+<p>Onveranderbare WORM-opslag — S3 Object Lock, Azure Blob immutability of een ledger-database. Elke aanroep legt vast: tijdstempel, agent-ID, service-account-ID, hash van de system prompt, opgehaalde context, LLM-provider plus model plus versie, ruwe LLM-output, geparseerde tool-aanroep, OPA-beslissing, API-respons, downstream-effect en UID van de goedkeurder waar van toepassing. Records worden cryptografisch ondertekend bij wegschrijven. Dit log is wat SR 11-7- en SS1/23-onderzoekers zullen opvragen. Kunt u voor een gegeven beslissing geen volledig spoor leveren, dan beheert u geen model-risk-managed agent.</p>
+<h3 id="5-noodknop">5. Noodknop <a class="heading-anchor" href="#5-noodknop" aria-label="Link naar 5. Noodknop">#</a></h3>
+<p>Een red-button-API die alle lopende agent-aanroepen binnen een rechtenklasse in minder dan 60 seconden annuleert. Elk kwartaal getest met een tabletop-oefening. De noodknop is het enige dat u recupereert van een vendor-modelrelease die stilletjes regresseert, een prompt-injection-vector die u niet voorzag, of een drift-event dat de fout-positief-percentages voorbij uw operationele drempel duwt. Ongeteste noodknoppen werken niet; reserveer de oefentijd in het budget.</p>
+<h2 id="model-risk-management">Model Risk Management <a class="heading-anchor" href="#model-risk-management" aria-label="Link naar Model Risk Management">#</a></h2>
+<p>Banken die beweren &quot;een LLM is geen model onder SR 11-7&quot; hebben al verloren. De Federal Reserve heeft herhaaldelijk verduidelijkt dat elk input-naar-output-systeem dat in een beslisproces wordt gebruikt, binnen het bereik valt. De SS1/23 van de PRA is nog breder. De juiste houding: behandel elke productie-agent vanaf dag één als een SR 11-7- / SS1/23-model. De kosten om een uitgerolde agent achteraf als model te framen zijn een veelvoud van de kosten om hem vooraf zo te ontwerpen.</p>
+<p>Drie verdedigingslinies, toegepast op agents:</p>
+<ul>
+<li><strong>Eerste lijn (modeleigenaar).</strong> Documenteert het beoogde gebruik van de agent, de lineage van trainings- en evaluatiedata, het schema van de system prompt, de allow-list voor tool-aanroepen en de testresultaten van de noodknop. Eigenaar van drift-monitoring in productie.</li>
+<li><strong>Tweede lijn (MRM-team).</strong> Valideert de agent voor productie. Het validatierapport dekt vendor-evaluatiescores (MMLU, HumanEval, HellaSwag zijn nuttig maar niet voldoende), bank-specifieke evaluatiescores (uw eigen held-out evaluatieset opgebouwd uit operationele voorbeelden — dit is het werk waar de meeste banken te weinig in investeren), red-team-resultaten op prompt-injection, bias- en fairnessanalyse waar de workflow klantimpact heeft en een gekwantificeerde residual-risk-verklaring.</li>
+<li><strong>Derde lijn (internal audit).</strong> Test de control-plane-poorten en de volledigheid van het auditlog tegen een steekproef van productie-beslissingen. De auditcyclus van 2027 zal er heel anders uitzien dan die van 2025; reserveer er nu budget voor.</li>
+</ul>
+<p>Continue monitoring telt meer dan punt-in-tijdvalidatie. Wekelijks herdraaiende bank-specifieke evaluatiesuites vangen modelupdate-regressies die vendor-benchmarks niet aan het licht brengen. De releasecadans van OpenAI, Anthropic en Google ligt hoger dan uw validatiecadans; of u sluit het gat door continue evaluaties te draaien, of een onderzoeker sluit het voor u via een bevinding.</p>
+<h2 id="bedrijfsimpact-meten">Bedrijfsimpact meten <a class="heading-anchor" href="#bedrijfsimpact-meten" aria-label="Link naar Bedrijfsimpact meten">#</a></h2>
+<p>Algemene productiviteitsclaims overleven geen gesprek met de CFO. Meet agents zoals u andere operationele veranderingen meet:</p>
+<ul>
+<li><strong>Kosten per voltooide beslissing</strong>, inclusief de reversal- en herstelkosten van gefaalde beslissingen. Een SAR-opstellende agent die BSA-officer-tijd met 40% terugbrengt maar 12% fout-positieve filings genereert, heeft waarde vernietigd, niet gecreëerd.</li>
+<li><strong>Vermeden handmatige acties</strong>, geteld na aftrek van nieuwe handmatige acties die ontstaan door control-plane-toezicht en exception handling. Het doel is niet menselijke aandacht minimaliseren; het is die aandacht herleiden naar beslissingen met meer hefboom.</li>
+<li><strong>Reversal-percentage</strong> — aandeel agent-uitgevoerde acties dat binnen 24 uur wordt teruggedraaid. Een reversal-percentage boven 2% op een Niveau-3-workflow is een betrouwbaarheidsprobleem. Boven 5% is een control-plane-probleem.</li>
+<li><strong>Volledigheid van het audit-spoor</strong> — aandeel beslissingen met volledige provenance reconstrueerbaar uit het WORM-log. Hoort 100% te zijn op Niveau-3- en Niveau-4-workflows. Minder is een beleidsfout die in audit naar boven komt.</li>
+</ul>
+<p>Wordt een workflow sneller maar minder verklaarbaar, dan moet de index hem afstraffen. De goedkoopste manier om een toezichtsonderzoek te falen, is optimaliseren op doorvoer en het spoor verliezen.</p>
+<h2 id="wat-dit-betekent-per-banktype">Wat dit betekent per banktype <a class="heading-anchor" href="#wat-dit-betekent-per-banktype" aria-label="Link naar Wat dit betekent per banktype">#</a></h2>
+<h3 id="global-systemically-important-banks">Global Systemically Important Banks <a class="heading-anchor" href="#global-systemically-important-banks" aria-label="Link naar Global Systemically Important Banks">#</a></h3>
+<p>Het lastige vraagstuk is governance op schaal: honderden agents over business lines, elk met een eigen modeleigenaar, elk een potentiële auditbevinding. De investering is niet nog een pilot. Het is het centrale control plane, de uniforme auditlog-infrastructuur en een MRM-bench die 50-plus agents per kwartaal kan valideren. Zonder die capaciteit landen agents sneller dan ze beheerd kunnen worden en bouwt de instelling stilletjes SR 11-7-exposure op.</p>
+<h3 id="transaction-en-corporate-banks">Transaction- en corporate banks <a class="heading-anchor" href="#transaction-en-corporate-banks" aria-label="Link naar Transaction- en corporate banks">#</a></h3>
+<p>De workflows met de hoogste ROI zijn payment repair, KYC-documentextractie, treasury-services-FAQ-deflectie en reconciliation breaks. Allemaal Niveau-2 of afgebakend Niveau-3. De corporate klant maakt het niet uit dat een agent het werk deed; hij geeft erom dat de SLA verbeterde en het disputeercijfer vlak bleef. Leid met de metrics, niet met de technologie.</p>
+<h3 id="regionale-banken">Regionale banken <a class="heading-anchor" href="#regionale-banken" aria-label="Link naar Regionale banken">#</a></h3>
+<p>Kopen, niet bouwen. Kies een leverancier wiens agent-platform de control-plane-primitieven al heeft — OAuth-scoping, OPA-integratie, WORM-auditlogging, geteste noodknop — en valideer dat platform tegen uw MRM-raamwerk. Een eigen control plane bouwen is een meerjarige investering die op regionale schaal niet onderscheidt. Besteed de engineeringcapaciteit aan workflowontwerp en operator-UX.</p>
+<h3 id="fintechs-psp-s-en-infrastructuuraanbieders">Fintechs, PSP's en infrastructuuraanbieders <a class="heading-anchor" href="#fintechs-psp-s-en-infrastructuuraanbieders" aria-label="Link naar Fintechs, PSP's en infrastructuuraanbieders">#</a></h3>
+<p>De productvraag voor leveranciers is niet &quot;presteert uw AI-agent beter dan mensen&quot;. Het is &quot;produceert uw platform standaard een SR 11-7-conform audit-spoor&quot;. Leveranciers die hier ja op kunnen zeggen, sluiten enterprise-deals. Leveranciers die dat niet kunnen, blijven steken in proof-of-concept-cycli terwijl het MRM-team van de bank redenen vindt om validatie te laten falen.</p>
+<h2 id="conclusie">Conclusie <a class="heading-anchor" href="#conclusie" aria-label="Link naar Conclusie">#</a></h2>
+<p>Agentic AI in banken in 2026 is een engineeringvraagstuk. Het interessante werk zit in het control plane, niet in het model. Het model is uitwisselbaar; de OAuth-scoping, de deterministische semantische router, de OPA-policy-poorten, het onveranderbare auditlog en de noodknop zijn dat niet.</p>
+<p>De instellingen die er over 18 maanden geloofwaardig uitzien voor toezichthouders zijn die welke elke productie-agent vanaf dag één behandelen als een SR 11-7- / SS1/23-model, met bank-specifieke evaluatiesuites die continu draaien en een control plane dat veilig faalt. De instellingen die dat niet doen, zullen ontdekken of hun MRM-bench kan opschalen om 50-plus remediatiebevindingen per kwartaal te verwerken.</p>
+<p>Meet agents zoals u elke operationele verandering meet: kosten, betrouwbaarheid, omkeerbaarheid, bewijs. OSWorld op 66,3% is uw betrouwbaarheidsplafond. Plan dienovereenkomstig.</p>
+<h2 id="veelgestelde-vragen">Veelgestelde vragen <a class="heading-anchor" href="#veelgestelde-vragen" aria-label="Link naar Veelgestelde vragen">#</a></h2>
+<p><strong>Wat is agentic AI in het bankwezen?</strong></p>
+<p>Een afgebakende workflow die een LLM combineert met tool-aanroepen naar productiesystemen, runtime-vangrails en human-in-the-loop-controlepunten. Het werk gebeurt binnen de workflow, niet binnen het model. Hoort u het woord &quot;chatbot&quot;, dan zit u in de verkeerde categorie.</p>
+<p><strong>Waar zouden banken moeten beginnen?</strong></p>
+<p>Niveau-1- en Niveau-2-workflows waar waarde meetbaar is en het neerwaarts risico beheersbaar: ISDA-clausule-extractie, SAR-opstellen, payment-repair-triage, interne kennisontsluiting, code-reviewondersteuning, KYC-documentclassificatie. Sla Niveau 3 over totdat uw control plane OAuth-scoping, semantische routing, OPA-poorten, WORM-logging en een geteste noodknop afhandelt.</p>
+<p><strong>Wat is het grootste risico?</strong></p>
+<p>Agents laten uitvoeren tegen productie-API's zonder deterministische vangrails tussen LLM-output en API. Het OSWorld-cijfer van 66,3% is de waarschuwing. Onverpakte tool-aanroepen met dat faalpercentage tegen een SWIFT MT103 of een API voor klantgelden schrijven de slechtst denkbare kop van de volgende toezichtscyclus.</p>
+<p><strong>Is SR 11-7 van toepassing op LLM-gebaseerde agents?</strong></p>
+<p>Ja. De Federal Reserve heeft verduidelijkt dat elk input-naar-output-systeem dat in beslisworkflows wordt gebruikt onder SR 11-7 valt. De SS1/23 van de PRA dekt hetzelfde terrein in het VK. De hoog-risicoclassificatie van de EU AI Act dekt de meeste use cases in de financiële sector. De discussie &quot;is dit een model&quot; is voorbij; handel ernaar.</p>
+<p><strong>Hoe rapporteer je agentic AI aan boards?</strong></p>
+<p>Vier cijfers per workflow: autonomieniveau, volledigheid van het audit-spoor, reversal-percentage en nettokosten per beslissing. Plus een top-vijf-residual-risk-lijst. Sla de model-card-slideware over.</p>
+<h2 id="referenties">Referenties <a class="heading-anchor" href="#referenties" aria-label="Link naar Referenties">#</a></h2>
+<ul>
+<li>Stanford HAI, (2026). <a href="https://hai.stanford.edu/ai-index/2026-ai-index-report" title="AI Index-rapport 2026">The 2026 AI Index Report ⧉</a>.</li>
+<li>Stanford HAI, (2026). <a href="https://hai.stanford.edu/ai-index/2026-ai-index-report/technical-performance" title="Hoofdstuk Technische prestaties">Hoofdstuk Technische prestaties ⧉</a>.</li>
+<li>Cambridge Centre for Alternative Finance, (2026). <a href="https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/2026-global-ai-in-financial-services-report/" title="Wereldwijd rapport AI in financiële dienstverlening 2026">Wereldwijd rapport AI in financiële dienstverlening 2026 ⧉</a>.</li>
+<li>Federal Reserve, (2011). <a href="https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm" title="SR 11-7: Richtlijn voor Model Risk Management">SR 11-7: Richtlijn voor Model Risk Management ⧉</a>.</li>
+<li>Prudential Regulation Authority, (2023). <a href="https://www.bankofengland.co.uk/prudential-regulation/publication/2023/may/model-risk-management-principles-for-banks-ss" title="SS1/23: principes voor model risk management bij banken">Toezichtsbrief SS1/23: principes voor model risk management bij banken ⧉</a>.</li>
+<li>Europese Commissie, (2024). <a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj" title="Verordening (EU) 2024/1689 — de EU AI Act">Verordening (EU) 2024/1689 — AI Act ⧉</a>.</li>
+<li>NVIDIA, (2024). <a href="https://github.com/NVIDIA/NeMo-Guardrails" title="NeMo Guardrails — open-source toolkit om programmeerbare vangrails toe te voegen aan LLM-gebaseerde conversatiesystemen">NeMo Guardrails-framework ⧉</a>.</li>
+<li>Cloud Native Computing Foundation, (2018). <a href="https://www.openpolicyagent.org/" title="Open Policy Agent — policy-gestuurde controle voor cloud-native omgevingen">Open Policy Agent (OPA) ⧉</a>.</li>
+</ul>
+<!-- enrich-start -->
+
+<p class="post-reviewed">Laatst beoordeeld <time datetime="2026-06-03">2026-06-03</time>.</p>
+<!-- enrich-end -->
+<aside class="author-card" aria-label="Over de auteur"><img alt="Portret van Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=85" width="64" height="64" loading="lazy" decoding="async"  fetchpriority="high"><span class="author-card-body"><strong class="author-card-name"><a href="/nl/over/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior technoloog in banking; schrijft over toegepaste AI, ISO 20022-migratie, post-kwantumcryptografie voor financiële dienstverlening en de structurele transformatie van het wholesale-betalingsverkeer.</span><span class="author-credentials">20+ jaar ervaring bij HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/nl/over/index.html">Volledig profiel</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">Laatst herzien <time datetime="2026-06-11">2026-06-11</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Verwante artikelen</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/nl/2026-05-16-beste-cloud-infrastructuur-architectuur-voor-banken-2026" class="related-media" aria-label="De beste cloudinfrastructuur-architectuur in 2026: een AI-native, multi-cloud, kwantumbewuste blauwdruk voor financiële dienstverlening" tabindex="-1"><img alt="Six-pillar cloud architecture diagram for 2026 — AI-native, multi-cloud, serverless, edge, DevSecOps, and sustainable design, with CloudCDN edge research overlay" src="https://cloudcdn.pro/api/transform?url=/stock/images/cloud-architecture-2026-banner.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="de-beste-cloudinfrastructuur-architectuur-in-2026-een-ai-native-multi-cloud-kwan"><a href="https://sebastienrousseau.com/nl/2026-05-16-beste-cloud-infrastructuur-architectuur-voor-banken-2026">De beste cloudinfrastructuur-architectuur in 2026: een AI-native, multi-cloud, kwantumbewuste blauwdruk voor financiële dienstverlening</a> <a class="heading-anchor" href="#de-beste-cloudinfrastructuur-architectuur-in-2026-een-ai-native-multi-cloud-kwan" aria-label="Link naar De beste cloudinfrastructuur-architectuur in 2026: een AI-native, multi-cloud, kwantumbewuste blauwdruk voor financiële dienstverlening">#</a></h3><p><time datetime="2026-05-16">2026-05-16</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/nl/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026" class="related-media" aria-label="De Cloud-Native Banking-Index in 2026: DORA, Platform Engineering, Soevereine Cloud en Operationele Veerkracht" tabindex="-1"><img alt="Circuit-board pattern resolving into a cityscape skyline — the visual register chosen for cloud-native banking: platform-engineering primitives stitched into the bank's operational fabric." src="https://cloudcdn.pro/api/transform?url=/stocks/images/quang-nguyen-vinh-2649403.webp&w=1600&format=webp&q=85" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="de-cloud-native-banking-index-in-2026-dora-platform-engineering-soevereine-cloud"><a href="https://sebastienrousseau.com/nl/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026">De Cloud-Native Banking-Index in 2026: DORA, Platform Engineering, Soevereine Cloud en Operationele Veerkracht</a> <a class="heading-anchor" href="#de-cloud-native-banking-index-in-2026-dora-platform-engineering-soevereine-cloud" aria-label="Link naar De Cloud-Native Banking-Index in 2026: DORA, Platform Engineering, Soevereine Cloud en Operationele Veerkracht">#</a></h3><p><time datetime="2026-06-05">2026-06-05</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/nl/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026" class="related-media" aria-label="De Banking Infrastructure Index 2026: gereedheid meten voor agentic AI, kwantumveilige beveiliging, cloud-native veerkracht en wholesale-betalingen" tabindex="-1"><img alt="An editorial aerial composition by Miguel Sousa suggesting interlocking systems — the visual register chosen for a board-level dashboard view of the 2026 Banking Infrastructure Index" src="https://cloudcdn.pro/api/transform?url=/stocks/images/miguel-sousa-ejIF-pJhYkM.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="de-banking-infrastructure-index-2026-gereedheid-meten-voor-agentic-ai-kwantumvei"><a href="https://sebastienrousseau.com/nl/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026">De Banking Infrastructure Index 2026: gereedheid meten voor agentic AI, kwantumveilige beveiliging, cloud-native veerkracht en wholesale-betalingen</a> <a class="heading-anchor" href="#de-banking-infrastructure-index-2026-gereedheid-meten-voor-agentic-ai-kwantumvei" aria-label="Link naar De Banking Infrastructure Index 2026: gereedheid meten voor agentic AI, kwantumveilige beveiliging, cloud-native veerkracht en wholesale-betalingen">#</a></h3><p><time datetime="2026-06-02">2026-06-02</time></p></footer></article>
+</div>
+</aside><aside class="article-sources" aria-labelledby="sources-heading"><h2 id="sources-heading" class="article-sources-heading">Bronnen en referenties</h2><ol class="article-sources-list"><li><a href="https://github.com/NVIDIA/NeMo-Guardrails" rel="external noopener nofollow"><span class="source-host">github.com</span><span class="source-path">/NVIDIA/NeMo-Guardrails</span></a></li></ol></aside><nav class="post-pagination" aria-label="Artikelnavigatie"><a class="post-pagination-prev" href="/nl/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/"><span class="post-pagination-label">Vorige</span><span class="post-pagination-title">The 2026 Banking Infrastructure Index: Measuring Readiness for Agentic AI, Quantum-Safe Security, Cloud Native Resilience, and Wholesale Payments</span></a><a class="post-pagination-next" href="/nl/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/"><span class="post-pagination-label">Volgende</span><span class="post-pagination-title">The Quantum-Safe Banking Index in 2026: Post-Quantum Cryptography, QKD, Crypto-Agility, and Harvest-Now-Decrypt-Later Risk</span></a></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/nl/over/index.html">Over mij</a></li>
+              <li><a href="/nl/contact/index.html">Contact</a></li>
+              <li><a href="/nl/gemaakt-met-statische-sitegenerator/index.html">Gemaakt met Static Site Generator</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Publicaties</h2>
+            <ul>
+              <li><a href="/nl/artikelen/index.html">Artikelen</a></li>
+              <li><a href="/nl/publicaties/index.html">Publicaties</a></li>
+              <li><a href="/nl/labels/index.html">Labels</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Werk</h2>
+            <ul>
+              <li><a href="/nl/projecten/index.html">Projecten</a></li>
+              <li><a href="/nl/afspeellijsten/index.html">Afspeellijsten</a></li>
+              <li><a href="/nl/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Netwerk</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="/contact/" method="get" aria-label="Aanmelding nieuwsbrief">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — onderzoeksnotities over betalingen, AI en post-kwantumcryptografie. Geen spam.</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="jij@bank.nl" />
+            <input type="hidden" name="subject" value="newsletter" />
+            <input type="hidden" name="message" value="Please subscribe me to the Banking On Quantum newsletter." />
+            <button type="submit">Abonneren</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved.</span>
+          <div class="social" aria-label="Sociale netwerken">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau op Twitter / X"><img src="https://cloudcdn.pro/common/images/buttons/x-black.svg" alt="Sebastien Rousseau op Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau op LinkedIn"><img src="https://cloudcdn.pro/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau op LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau op Medium"><img src="https://cloudcdn.pro/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau op Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau op YouTube"><img src="https://cloudcdn.pro/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau op YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/nl/toegankelijkheid/index.html">Toegankelijkheid</a> ·
+            <a href="/nl/privacy/index.html">Privacy</a> ·
+            <a href="/nl/voorwaarden/index.html">Voorwaarden</a> ·
+            <a href="https://www.thegreenwebfoundation.org/green-web-check/?url=sebastienrousseau.com" target="_blank" rel="noopener noreferrer" title="Hosted on 100% renewable energy (Cloudflare) — estimate via Sustainable Web Design v4 model">Carbon: ~0.04 g/visit · green-hosted</a> ·
+            <a href="https://github.com/sebastienrousseau/sebastienrousseau.github.io/blob/main/project-docs/sigstore.md" target="_blank" rel="noopener noreferrer" title="Every dated article is signed with Sigstore — verify the bytes match what was published">Verify signatures</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","identifier":{"@type":"PropertyValue","propertyID":"ORCID","value":"0009-0005-1434-284X","url":"https://orcid.org/0009-0005-1434-284X"},"worksFor":{"@type":"Organization","@id":"https://www.hsbc.com/#organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal","url":"https://www.paypal.com/"},{"@type":"Organization","name":"Barclays","url":"https://www.barclays.com/"},{"@type":"Organization","name":"Shazam Entertainment","url":"https://www.shazam.com/"},{"@type":"Organization","name":"AKQA","url":"https://www.akqa.com/"},{"@type":"Organization","name":"Virgin Group","url":"https://www.virgin.com/"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"hasCredential":[{"@type":"EducationalOccupationalCredential","credentialCategory":"professional experience","name":"20+ years across Tier-1 banks and global payments infrastructure","recognizedBy":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"}},{"@type":"EducationalOccupationalCredential","credentialCategory":"domain expertise","name":"ISO 20022 migration and wholesale payments architecture","recognizedBy":{"@type":"Organization","name":"SWIFT","url":"https://www.swift.com/"}},{"@type":"EducationalOccupationalCredential","credentialCategory":"domain expertise","name":"Post-Quantum Cryptography for financial services","recognizedBy":{"@type":"Organization","name":"NIST Post-Quantum Cryptography Project","url":"https://csrc.nist.gov/projects/post-quantum-cryptography"}}],"knowsAbout":[{"@type":"DefinedTerm","name":"Post-Quantum Cryptography","sameAs":"https://en.wikipedia.org/wiki/Post-quantum_cryptography"},{"@type":"DefinedTerm","name":"ML-KEM (FIPS 203)","sameAs":"https://csrc.nist.gov/pubs/fips/203/final"},{"@type":"DefinedTerm","name":"ML-DSA (FIPS 204)","sameAs":"https://csrc.nist.gov/pubs/fips/204/final"},{"@type":"DefinedTerm","name":"ISO 20022","sameAs":"https://en.wikipedia.org/wiki/ISO_20022"},{"@type":"DefinedTerm","name":"SWIFT gpi","sameAs":"https://www.swift.com/our-solutions/swift-gpi"},{"@type":"DefinedTerm","name":"SEPA Instant Payments","sameAs":"https://www.ecb.europa.eu/paym/integration/retail/instant_payments/html/index.en.html"},{"@type":"DefinedTerm","name":"FedNow Service","sameAs":"https://www.federalreserve.gov/paymentsystems/fednow_about.htm"},{"@type":"DefinedTerm","name":"Real-Time Payments (RTP)","sameAs":"https://www.theclearinghouse.org/payment-systems/rtp"},{"@type":"DefinedTerm","name":"Cross-border payments","sameAs":"https://en.wikipedia.org/wiki/Cross-border_payments"},{"@type":"DefinedTerm","name":"Wholesale banking","sameAs":"https://en.wikipedia.org/wiki/Wholesale_banking"},{"@type":"DefinedTerm","name":"Applied artificial intelligence in banking","sameAs":"https://en.wikipedia.org/wiki/Applications_of_artificial_intelligence"},{"@type":"DefinedTerm","name":"Generative artificial intelligence","sameAs":"https://en.wikipedia.org/wiki/Generative_artificial_intelligence"}],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://orcid.org/0009-0005-1434-284X","https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":["Organization","Brand"],"@id":"https://sebastienrousseau.com/#organization","name":"Sebastien Rousseau","alternateName":"Banking on Quantum","url":"https://sebastienrousseau.com/","logo":{"@type":"ImageObject","@id":"https://sebastienrousseau.com/#logo","url":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","width":"512","height":"512","caption":"Sebastien Rousseau"},"founder":{"@id":"https://sebastienrousseau.com/#person"},"editorialPolicy":"https://sebastienrousseau.com/editorial/","correctionsPolicy":"https://sebastienrousseau.com/editorial/#corrections","ethicsPolicy":"https://sebastienrousseau.com/editorial/","diversityPolicy":"https://sebastienrousseau.com/editorial/","sameAs":["https://github.com/sebastienrousseau","https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#organization"},"author":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"nl"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"nl"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":2799,"about":{"@type":"Thing","name":"ISO 20022","sameAs":["https://www.iso20022.org/","https://www.wikidata.org/wiki/Q15727611","https://sebastienrousseau.com/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html"]},"headline":"Agentic AI-index voor banken 2026: autonomie, governance en impact","description":"Een indexkader voor de meting van agentic AI-volwassenheid bij banken: autonomie, governance, auditeerbaarheid, betrouwbaarheid en bedrijfswaarde.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/api/transform?url=/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp&w=1200&format=webp&q=80","width":"100vw","height":"100vh","caption":"The Agentic AI Index for Banks 2026 indexdiagram voor banken en financiële instellingen in 2026"},"url":"https://sebastienrousseau.com/nl/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/","datePublished":"2026-06-03T06:06:06+00:00","dateModified":"2026-06-03","inLanguage":"nl","keywords":"agentic AI banken 2026, AI-agents banken, AI-governance financiële sector, autonome bankworkflows, model risk management, SR 11-7, SS1/23, DORA, OAuth, OPA, ISO 20022, auditeerbaarheid AI","articleSection":"Technology","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/nl/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"nl"},"citation":[{"@type":"CreativeWork","url":"https://github.com/NVIDIA/NeMo-Guardrails"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/nl/"},{"@type":"ListItem","position":3,"name":"Agentic AI-index voor banken 2026: autonomie, governance en impact","item":"https://sebastienrousseau.com/nl/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/"}]}]}</script>
+<script src="/main.931cef3c.js" defer integrity="sha256-JUs9z2u4RDSgxMCjBnyMmIHIkpakA7s5FxUmnDnSpD0= sha256-r33y52uSTzd+MqMufJlWsd09gyxv578IRoF5Gomw7Aw=" crossorigin="anonymous"></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="Zoeken">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>Zoeken</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="Zoeken">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="Documentatie doorzoeken..." autocomplete="off" aria-label="Zoeken"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> sluiten</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> navigeren</span><span><kbd>Enter</kbd> openen</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" integrity="sha256-Y0txeCfdk+GUctTYMAxMbFCB2qs1cPm8JSIX3WRS9cs= sha256-5Ca5zk/7tsavsCDhg6M1m4feBn+L4YnJ7iavKawynII=" crossorigin="anonymous"></script>
+</div>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Agentic AI-index voor banken 2026: autonomie, governance en impact","url":"https://sebastienrousseau.com/nl/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/","inLanguage":"nl-NL","isAccessibleForFree":true,"author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#organization"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/nl/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/"},"keywords":"agentic AI banken 2026, AI-agents banken, AI-governance financiële sector, autonome bankworkflows, model risk management, SR 11-7, SS1/23, DORA, OAuth, OPA, ISO 20022, auditeerbaarheid AI","proficiencyLevel":"Expert","dependencies":["ISO 20022"]}</script></body>
+</html>

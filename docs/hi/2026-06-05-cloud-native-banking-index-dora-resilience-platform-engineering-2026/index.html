@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="hi-IN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Fri, 05 Jun 2026 06:06:06 +0000" id="date" />
+    <meta itemprop="dateModified" content="2026-06-05" id="last-modified" />
+    <title>2026 में क्लाउड-नेटिव बैंकिंग इंडेक्स: DORA, प्लेटफ़ॉर्म इंजीनियरिंग, सॉवरेन क्लाउड और परिचालन लचीलापन — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="2026 का क्लाउड-नेटिव बैंकिंग इंडेक्स — DORA तत्परता, प्लेटफ़ॉर्म इंजीनियरिंग परिपक्वता, क्लाउड संकेंद्रण जोखिम, एग्ज़िट साक्ष्य और परिचालन लचीलापन मापने का ढाँचा।">
+<meta name="keywords" content="क्लाउड नेटिव बैंकिंग 2026, DORA बैंक, क्लाउड संकेंद्रण जोखिम, प्लेटफ़ॉर्म इंजीनियरिंग बैंक, ICT तृतीय-पक्ष जोखिम, क्लाउड एग्ज़िट रणनीति, सॉवरेन क्लाउड">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="The Cloud Native Banking Index 2026">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-91HPgpBda2Bqy4NKrN3gtOwOBfFx/Pa9t4lipPBOyH4=' 'sha256-AAud9YzpXXW+0WSuTdP6C5WjkEj52z3af38CSef5E60=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-kMrzYkEZan7YZvov2jZWTmSRO1e1AAkgc90yeFc1uE4=' 'sha256-xD3Bg/WTc9Dd4kfzRbDQZrjcASM9IhpB4rvSXV0HjB8=' 'self' 'inline-speculation-rules' https://cdn.jsdelivr.net https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' https://cloudcdn.pro https://www.google.com https://open.spotify.com;
+        img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/hi/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/newsreader-latin.woff2" crossorigin />
+    <link rel="stylesheet" href="/fonts/fonts.css" />
+    <!-- Preload the LCP hero portrait so it doesn't compete with the
+         render-blocking JS bundle on throttled mobile connections.
+         Lighthouse-simulated Slow-4G has been pinning LCP at ~5.6s; the
+         observed (real-network) LCP is 165 ms. This hint pulls the
+         synthetic LCP in line with the observed value. -->
+    <link rel="preload" as="image" href="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=1200&format=webp&q=85" fetchpriority="high">
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script>(function(){try{var saved=localStorage.getItem("theme");var prefersDark=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;var theme=saved||(prefersDark?"dark":"light");document.documentElement.setAttribute("data-theme",theme);}catch(e){}})();</script>
+
+    <link rel="stylesheet" href="/_csp/4724896d11ec6663.css" integrity="sha256-SFQ1AngSMlx94d5FmN1lWSKPs5RL6Y8BQf0nIEBLd7g= sha256-6BJkWGvqh3blXQksn+ynhkpoqcrJzzWhSKVuLVBJY4s=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Atom फ़ीड" href="/hi/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="2026 में क्लाउड-नेटिव बैंकिंग इंडेक्स: DORA, प्लेटफ़ॉर्म इंजीनियरिंग, सॉवरेन क्लाउड और परिचालन लचीलापन — Sebastien Rousseau">
+<meta property="og:description" content="2026 का क्लाउड-नेटिव बैंकिंग इंडेक्स — DORA तत्परता, प्लेटफ़ॉर्म इंजीनियरिंग परिपक्वता, क्लाउड संकेंद्रण जोखिम, एग्ज़िट साक्ष्य और परिचालन लचीलापन मापने का ढाँचा।">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/hi/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/">
+<meta property="og:image" content="https://cloudcdn.pro/api/transform?url=/stocks/images/quang-nguyen-vinh-2649403.webp&w=1600&format=webp&q=85">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="hi_IN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="2026 में क्लाउड-नेटिव बैंकिंग इंडेक्स: DORA, प्लेटफ़ॉर्म इंजीनियरिंग, सॉवरेन क्लाउड और परिचालन लचीलापन — Sebastien Rousseau">
+<meta name="twitter:description" content="2026 का क्लाउड-नेटिव बैंकिंग इंडेक्स — DORA तत्परता, प्लेटफ़ॉर्म इंजीनियरिंग परिपक्वता, क्लाउड संकेंद्रण जोखिम, एग्ज़िट साक्ष्य और परिचालन लचीलापन मापने का ढाँचा।">
+<meta name="twitter:image" content="https://cloudcdn.pro/api/transform?url=/stocks/images/quang-nguyen-vinh-2649403.webp&w=1600&format=webp&q=85">
+<link rel="canonical" href="https://sebastienrousseau.com/hi/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="bn" href="https://sebastienrousseau.com/bn/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="cs" href="https://sebastienrousseau.com/cs/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="fil" href="https://sebastienrousseau.com/fil/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="ha" href="https://sebastienrousseau.com/ha/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="he" href="https://sebastienrousseau.com/he/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="hi" href="https://sebastienrousseau.com/hi/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="id" href="https://sebastienrousseau.com/id/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="nl" href="https://sebastienrousseau.com/nl/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="pl" href="https://sebastienrousseau.com/pl/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="ro" href="https://sebastienrousseau.com/ro/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="sv" href="https://sebastienrousseau.com/sv/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="th" href="https://sebastienrousseau.com/th/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="tr" href="https://sebastienrousseau.com/tr/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="uk" href="https://sebastienrousseau.com/uk/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="vi" href="https://sebastienrousseau.com/vi/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="yo" href="https://sebastienrousseau.com/yo/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" integrity="sha256-tV/7vAgYDUuBQbSGEPjXL/JC0sD7QpSxXCGKT4ALhh8= sha256-dvm1KF9mEWIapL8BE0nyFlHaKSf6TsjZZoQcJeRPraI=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">मुख्य सामग्री पर जाएँ</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="नेविगेशन बदलें" />
+      <div class="wrap">
+        <a class="ap-brand" href="/hi/index.html" aria-label="Sebastien Rousseau मुख्य पृष्ठ">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="मुख्य नेविगेशन">
+          <ul class="ap-menu">
+            <li><a href="/hi/hamare-baare-mein/index.html">हमारे बारे में</a></li>
+            <li><a href="/hi/lekh/index.html" aria-current="page" class="active">लेख</a></li>
+            <li><a href="/hi/prakashan/index.html">प्रकाशन</a></li>
+            <li><a href="/hi/vishay/index.html">विषय</a></li>
+            <li><a href="/hi/pariyojanaen/index.html">परियोजनाएँ</a></li>
+            <li><a href="/hi/pleelist/index.html">प्लेलिस्ट</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="डार्क थीम चालू करें" aria-pressed="false" title="थीम बदलें">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="खोजें (Cmd या Ctrl + K)" title="खोजें (⌘K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="भाषा">
+            <button type="button" class="ap-lang-toggle" aria-label="HI, भाषा बदलें" aria-expanded="false" aria-haspopup="menu" title="भाषा बदलें">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">HI</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <a class="ap-lang-item" href="/bn/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
+                <a class="ap-lang-item" href="/cs/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
+                <a class="ap-lang-item" href="/de/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <a class="ap-lang-item" href="/fil/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
+                <a class="ap-lang-item" href="/ha/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
+                <a class="ap-lang-item" href="/he/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
+                <a class="ap-lang-item" href="/hi/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <a class="ap-lang-item" href="/id/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
+                <a class="ap-lang-item" href="/it/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <a class="ap-lang-item" href="/pl/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
+                <a class="ap-lang-item" href="/pt-br/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <a class="ap-lang-item" href="/ro/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
+                <a class="ap-lang-item" href="/ru/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <a class="ap-lang-item" href="/sv/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
+                <a class="ap-lang-item" href="/th/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
+                <a class="ap-lang-item" href="/tr/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
+                <a class="ap-lang-item" href="/uk/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="uk" role="menuitem">🇺🇦 Українська</a>
+                <a class="ap-lang-item" href="/vi/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
+                <a class="ap-lang-item" href="/yo/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
+                <a class="ap-lang-item" href="/zh-hans/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/hi/sampark/index.html" aria-label="संपर्क करें">संपर्क करें ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="नेविगेशन बदलें">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>2026 में क्लाउड-नेटिव बैंकिंग इंडेक्स: DORA, प्लेटफ़ॉर्म इंजीनियरिंग, सॉवरेन क्लाउड और परिचालन लचीलापन</h1>
+      <p class="sub">DORA क्लाउड लचीलापन ऑडिट चरण में है। 2024-2025 के दौरान लिए गए प्लेटफ़ॉर्म इंजीनियरिंग निर्णय ही 2026 के पर्यवेक्षी चक्र की कसौटी पर हैं — Kubernetes पेव्ड रोड्स, Backstage पोर्टल, GitOps, एडमिशन पर Open Policy Agent, OpenTelemetry एंड-टू-एंड — परीक्षा के समय नहीं, बल्कि तैनाती की आर्टेफ़ैक्ट के रूप में Article 8 रजिस्टर साक्ष्य उत्पन्न करते हैं।</p>
+    <nav class="article-tags" aria-label="विषय"><a href="/tags/index.html#h3-2026" class="article-tag" rel="tag">क्लाउड नेटिव बैंकिंग 2026</a><a href="/tags/index.html#h3-dora" class="article-tag" rel="tag">DORA बैंक</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">क्लाउड संकेंद्रण जोखिम</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">प्लेटफ़ॉर्म इंजीनियरिंग बैंक</a><a href="/tags/index.html#h3-ict" class="article-tag" rel="tag">ICT तृतीय-पक्ष जोखिम</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">क्लाउड एग्ज़िट रणनीति</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">सॉवरेन क्लाउड</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2026-06-05T06:06:06+00:00" class="meta-pub">प्रकाशित 5 Jun 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="अनुमानित पठन-समय">15 मिनट का पठन</span></div></section><figure class="article-banner"><img src="https://cloudcdn.pro/api/transform?url=/stocks/images/quang-nguyen-vinh-2649403.webp&w=1600&format=webp&q=85" alt="Banner for: 2026 में क्लाउड-नेटिव बैंकिंग इंडेक्स: DORA, प्लेटफ़ॉर्म इंजीनियरिंग, सॉवरेन क्लाउड और परिचालन लचीलापन" width="1200" height="675" fetchpriority="high" decoding="async" /></figure>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>विषय-सूची</h2><ol><li><a href="#dora">DORA क्लाउड लचीलापन ऑडिट चरण में क्यों है</a></li><li><a href="#2026">2026 इंडेक्स आर्किटेक्चर</a></li><li><a href="#section-3">ट्रैक करने योग्य वर्तमान संकेत</a></li><li><a href="#section-4">प्लेटफ़ॉर्म इंजीनियरिंग: पाँच नामित प्रिमिटिव्स</a></li><li><a href="#section-10">सॉवरेन क्लाउड इंजीनियरिंग के रूप में, ब्रांडिंग नहीं</a></li><li><a href="#section-11">परीक्षित एग्ज़िट निष्पादन</a></li><li><a href="#cif-rto-rpo">CIF इन्वेंट्री से RTO / RPO लक्ष्य</a></li><li><a href="#section-13">बैंक प्रकार के अनुसार इसका क्या अर्थ है</a></li><li><a href="#section-18">निष्कर्ष</a></li><li><a href="#section-19">अक्सर पूछे जाने वाले प्रश्न</a></li><li><a href="#section-20">संदर्भ</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> 2026 का क्लाउड-नेटिव बैंकिंग इंडेक्स — DORA तत्परता, प्लेटफ़ॉर्म इंजीनियरिंग परिपक्वता, क्लाउड संकेंद्रण जोखिम, एग्ज़िट साक्ष्य और परिचालन लचीलापन मापने का ढाँचा।</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>DORA क्लाउड लचीलापन ऑडिट चरण में क्यों है.</strong> 2026 में &quot;तैयारी&quot; वाला नज़रिया गलत क्यों है, इसके तीन कारण।.</li>  <li><strong>ट्रैक करने योग्य वर्तमान संकेत.</strong> 2026 में क्लाउड-नेटिव परिपक्वता पाँच इंजीनियरिंग प्रिमिटिव्स तक सिमट जाती है जो तैनाती पाइपलाइन की गति पर पर्यवेक्षी साक्ष्य उत्पन्न करने के लिए इंटरलॉक होते हैं। किसी एक का भी अभाव होने पर फ़ाइंडिंग होना तय है।.</li>  <li><strong>प्लेटफ़ॉर्म इंजीनियरिंग: पाँच नामित प्रिमिटिव्स.</strong> 2026 में क्लाउड-नेटिव परिपक्वता पाँच इंजीनियरिंग प्रिमिटिव्स तक सिमट जाती है जो तैनाती पाइपलाइन की गति पर पर्यवेक्षी साक्ष्य उत्पन्न करने के लिए इंटरलॉक होते हैं। किसी एक का भी अभाव होने पर फ़ाइंडिंग होना तय है।.</li>  <li><strong>सॉवरेन क्लाउड इंजीनियरिंग के रूप में, ब्रांडिंग नहीं.</strong> 2026 में सॉवरेन-क्लाउड रणनीति को Schrems II + DORA + EBA आउटसोर्सिंग के चार विशिष्ट सवालों का जवाब देना होगा:.</li></ul></aside><!-- lead-start: manual -->
+
+<!-- lead-end -->
+<p>2026 में क्लाउड-नेटिव बैंकिंग DORA ऑडिट चरण में है। <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554" title="DORA — Digital Operational Resilience Act">रेगुलेशन (EU) 2022/2554 ⧉</a> 17 जनवरी 2025 से प्रवर्तन में है। Articles 28-44 के अंतर्गत क्रिटिकल थर्ड-पार्टी प्रोवाइडर (CTPP) डेज़िग्नेशन रेजीम 2025-2026 में खुल रहा है, जिसमें AWS, Microsoft (Azure), Google (GCP) और Salesforce डेज़िग्नेशन परिधि के अंदर या निकट हैं। European Supervisory Authorities (EBA, EIOPA, ESMA) ने 2024 में <a href="https://www.eba.europa.eu/sites/default/files/2024-01/0e155f7a-9b09-4dba-89cb-37f7e8e1c540/JC%202023%2086%20-%20Final%20report%20on%20draft%20ITS%20on%20Register%20of%20information%20under%20DORA.pdf" title="ESAs ITS on Register of Information">सूचना रजिस्टर ⧉</a> पर अंतिम RTS और ITS प्रकाशित किए। ECB बैंकिंग पर्यवेक्षण टीम के <a href="https://www.bankingsupervision.europa.eu/framework/priorities/html/ssm.supervisory_priorities202511.en.html" title="Supervisory priorities 2026-28">2026-28 पर्यवेक्षी प्राथमिकताओं ⧉</a> में क्लाउड-व्यवधान तैयारी और थ्रेट-लेड पेनेट्रेशन परीक्षण पर स्पष्ट कार्यक्रम हैं। संस्थागत सवाल यह नहीं है कि क्लाउड रणनीति को DORA के अनुरूप करना है या नहीं — वह तय हो चुका है — बल्कि यह है कि क्या संस्थान के प्लेटफ़ॉर्म इंजीनियरिंग प्रिमिटिव्स तैनाती पाइपलाइन की गति पर साक्ष्य उत्पन्न करते हैं, या परीक्षा से एक हफ़्ते पहले जुटाए गए PDFs में।</p>
+<hr />
+<blockquote>
+<p><strong>कार्यकारी सारांश / मुख्य निष्कर्ष</strong></p>
+<ul>
+<li><strong>DORA क्लाउड लचीलापन 17 जनवरी 2025 से सक्रिय प्रवर्तन में।</strong> Articles 6, 8, 18, 26 और 28-44 सभी प्रवर्तन में। पहली परीक्षा-लहर के पर्यवेक्षी निष्कर्ष Q4 2025 में आ चुके। &quot;तैयारी&quot; वाला नज़रिया दो चक्र पुराना है।</li>
+<li><strong>CTPP डेज़िग्नेशन रेजीम खुल रहा है।</strong> AWS, Microsoft, Google, Salesforce — परिधि के अंदर या निकट। डेज़िग्नेशन ESAs को सूचना अनुरोध, ऑन-साइट निरीक्षण और पर्यवेक्षी सिफ़ारिशों सहित सीधी निगरानी अधिकार देता है।</li>
+<li><strong>प्लेटफ़ॉर्म इंजीनियरिंग ही डिलिवरेबल है।</strong> Kubernetes पेव्ड रोड्स (EKS / AKS / GKE / OpenShift), Backstage-शैली डेवलपर पोर्टल, GitOps (ArgoCD या Flux), एडमिशन पर Open Policy Agent, OpenTelemetry एंड-टू-एंड। पाँच नामित प्रिमिटिव्स; जो भी छूटा वह एक फ़ाइंडिंग है।</li>
+<li><strong>सॉवरेन क्लाउड इंजीनियरिंग है, ब्रांडिंग नहीं।</strong> AWS European Sovereign Cloud, Microsoft EU Data Boundary, Bleu (Capgemini + Orange + Microsoft), Thales / S3NS, Oracle EU Sovereign Cloud — हर एक विशिष्ट Schrems II + DORA Article 28 आयाम को संबोधित करता है; कोई भी टर्नकी उत्तर नहीं।</li>
+<li><strong>परीक्षित एग्ज़िट साक्ष्य अनिवार्य।</strong> EBA/GL/2019/02 पैराग्राफ़ 81 और 113-117। तिमाही टेबलटॉप अपर्याप्त; पर्यवेक्षक हर आलोचनात्मक या महत्वपूर्ण फ़ंक्शन के लिए वार्षिक एंड-टू-एंड एग्ज़िट-निष्पादन परीक्षण की अपेक्षा रखते हैं।</li>
+<li><strong>RTO / RPO CIF इन्वेंट्री से।</strong> Tier 1: 2 घंटे / 15 मिनट। Tier 2: 4 घंटे / 1 घंटा। Tier 3: 24 घंटे / 4 घंटे। बिज़नेस-इम्पैक्ट विश्लेषण से व्युत्पन्न, प्लेटफ़ॉर्म-टीम क्षमता से नहीं।</li>
+</ul>
+</blockquote>
+<hr />
+<h2 id="dora">DORA क्लाउड लचीलापन ऑडिट चरण में क्यों है <a class="heading-anchor" href="#dora" aria-label="लिंक:  DORA क्लाउड लचीलापन ऑडिट चरण में क्यों है">#</a></h2>
+<p>2026 में &quot;तैयारी&quot; वाला नज़रिया गलत क्यों है, इसके तीन कारण।</p>
+<p><strong>पहला, टाइमलाइन।</strong> DORA दिसंबर 2022 में प्रकाशित हुआ। 24-महीने की अनुप्रयोग अवधि 17 जनवरी 2025 को बंद हो गई। ESAs के अंतिम RTS और ITS — जिसमें CTPP डेज़िग्नेशन के लिए उपयोग किया जाने वाला सूचना रजिस्टर पर ITS भी शामिल है — 2024 में प्रकाशित हुए। पहली पर्यवेक्षी परीक्षा-लहर 2025 में चली; Article 6 ICT जोखिम-प्रबंधन ढाँचे की पूर्णता और Article 8 रजिस्टर मिलान पर निष्कर्ष कई टियर-1 संस्थानों में Q4 2025 में आए।</p>
+<p><strong>दूसरा, CTPP डेज़िग्नेशन रेजीम।</strong> Article 31 क्रिटिकल थर्ड-पार्टी प्रोवाइडर के रूप में डेज़िग्नेशन के मानदंड तय करता है: विफलता की स्थिति में प्रणालीगत प्रभाव, प्रदान की गई सेवाओं की आलोचनात्मकता, सेवाओं का पैमाना और जटिलता, प्रतिस्थापन-योग्यता। ESAs रजिस्टर बनाए रखते हैं और डेज़िग्नेशन निर्णय प्रकाशित करते हैं। AWS, Microsoft (Azure), Google (GCP) और Salesforce — सदस्य राज्य के अनुसार वित्तीय-सेवाओं बाज़ार हिस्सेदारी के आधार पर — डेज़िग्नेशन परिधि के अंदर या निकट हैं। डेज़िग्नेशन मुख्य ओवरसीयर (प्रदाता-वार आवंटित कोई ESA) को सीधी निगरानी का अधिकार देता है: Article 37 के तहत सूचना अनुरोध, Article 38 के तहत ऑन-साइट निरीक्षण, Article 35 के तहत सिफ़ारिशें, और Article 41 के तहत सार्वजनिक-प्रकटीकरण रेजीम। उन CTPPs पर निर्भर पर्यवेक्षित बैंकों पर भी संबंधित पर्यवेक्षी अपेक्षाएँ लागू होती हैं कि वे उस डेज़िग्नेटेड निर्भरता को कैसे प्रबंधित करते हैं।</p>
+<p><strong>तीसरा, ECB की 2026-28 पर्यवेक्षी प्राथमिकताएँ।</strong> प्राथमिकता दस्तावेज़ दो स्पष्ट कार्यक्रमों का नाम लेता है जो क्लाउड-नेटिव बैंकिंग को सीधे प्रभावित करते हैं: बड़े क्लाउड-सेवा व्यवधान के लिए तैयारी (मॉडल-आधारित पर्यवेक्षी परिदृश्य संस्थान की डेज़िग्नेटेड CTPP के लगातार आउटेज को सहन करने की क्षमता का परीक्षण करते हैं) और TIBER-EU-संरेखित TLPT (हर TIBER-EU अभ्यास संस्थान के आलोचनात्मक और महत्वपूर्ण फ़ंक्शन्स को स्कोप करता है, जिसमें अब सार्वजनिक-क्लाउड-होस्टेड सेवाएँ भी शामिल हैं)। 2026 की परीक्षा-लहर दोनों पर निष्कर्ष देगी।</p>
+<p>2026 का नज़रिया यह नहीं है कि &quot;DORA आ रहा है&quot;; यह है कि &quot;DORA परीक्षा-निष्कर्ष आपके संस्थान के मेलबॉक्स में आ रहे हैं, और 2024-2025 में आपने जो प्लेटफ़ॉर्म इंजीनियरिंग निर्णय लिए, उन्हीं की पर्यवेक्षक उन निष्कर्षों में जाँच कर रहे हैं।&quot;</p>
+<h2 id="2026">2026 इंडेक्स आर्किटेक्चर <a class="heading-anchor" href="#2026" aria-label="लिंक:  2026 इंडेक्स आर्किटेक्चर">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>इंडेक्स परत</th>
+<th>&quot;तैयार&quot; का स्वरूप</th>
+<th>तत्परता मीट्रिक</th>
+<th>विफलता मोड</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>प्लेटफ़ॉर्म परिपक्वता</strong></td>
+<td>पॉलिसी-ऐज़-कोड एडमिशन, GitOps तैनाती, स्वचालित DR परीक्षण के साथ पेव्ड-रोड Kubernetes प्लेटफ़ॉर्म (EKS / AKS / GKE / OpenShift) पर &gt;80% वर्कलोड</td>
+<td>पेव्ड-रोड प्लेटफ़ॉर्म पर CIFs का %; शैडो-तैनाती गणना; प्लेटफ़ॉर्म पर नई सेवा को ऑनबोर्ड करने का औसत समय</td>
+<td>असंगत नियंत्रणों वाले शैडो प्लेटफ़ॉर्म; Article 8 रजिस्टर मिलान के लिए अदृश्य अन-पेव्ड बुनियादी ढाँचे पर चलने वाले CIFs</td>
+</tr>
+<tr>
+<td><strong>Article 8 रजिस्टर अखंडता</strong></td>
+<td>सूचना रजिस्टर स्वचालित रूप से प्लेटफ़ॉर्म की तृतीय-पक्ष API खपत + क्लाउड-बिल-ऑफ़-मटीरियल्स के साथ मिलान करता है; आलोचनात्मकता वर्गीकरण संस्थान की CIF इन्वेंट्री के अनुरूप</td>
+<td>प्लेटफ़ॉर्म टेलीमेट्री के साथ मिलान किए गए रजिस्टर प्रविष्टियों का %; अनाथ-प्रविष्टि गणना; CTPP-परिधि अखंडता जाँच</td>
+<td>ESAs एक डेज़िग्नेटेड CTPP निर्भरता की पहचान करते हैं जिसे संस्थान Article 8 के तहत प्रकट नहीं कर सका; व्यक्तिगत फ़ाइंडिंग और CTPP-परिधि परिणाम</td>
+</tr>
+<tr>
+<td><strong>क्लाउड संकेंद्रण</strong></td>
+<td>आलोचनात्मक फ़ंक्शन्स को क्लाउड प्रदाताओं और सब-क्लाउड क्षेत्रों और सेवाओं और प्रतिस्थापन-योग्यता आकलन के साथ मैप किया गया; क्रॉस-CIF सहसंबद्ध एक्सपोज़र मात्रात्मक रूप से दर्ज</td>
+<td>प्रति CIF संकेंद्रण स्कोर; डेज़िग्नेटेड CTPP क्षेत्र साझा करने वाले CIFs के बीच सहसंबद्ध एक्सपोज़र</td>
+<td>एक AWS us-east-1 IAM आउटेज चार ऐसे CIFs को गिरा देता है जिन्हें संस्थान स्वतंत्र रूप से संसाधित मानता था</td>
+</tr>
+<tr>
+<td><strong>परीक्षित एग्ज़िट क्षमता</strong></td>
+<td>डेज़िग्नेटेड CTPP पर निर्भर हर CIF के लिए वार्षिक एंड-टू-एंड एग्ज़िट-निष्पादन परीक्षण; दस्तावेज़ित RTO / RPO BIA-व्युत्पन्न लक्ष्यों को पूरा करता है; डेटा-पोर्टेबिलिटी पथ परीक्षित</td>
+<td>प्रति CIF परीक्षण उत्तीर्ण दर; RTO लक्ष्य बनाम औसत एग्ज़िट-निष्पादन समय; डेटा-पोर्टेबिलिटी पथ विलंबता</td>
+<td>एग्ज़िट प्लान जो केवल PDF के रूप में मौजूद है; टेबलटॉप कहता है 4 घंटे RTO, वास्तविक परीक्षण में पहली कोशिश में 48 घंटे</td>
+</tr>
+<tr>
+<td><strong>अवलोकनीयता + घटना रिपोर्टिंग</strong></td>
+<td>OpenTelemetry ट्रेस सेवाओं में एंड-टू-एंड; घटना-प्रबंधन प्लेटफ़ॉर्म से जुड़ा स्वचालित Article 18 4-घंटे वर्गीकरण सहायक</td>
+<td>OTel ट्रेस से कवर ट्रैफ़िक का % CIF; घटना पहचान से Article 18 वर्गीकरण निर्णय तक औसत समय</td>
+<td>बड़ी घटना 4-घंटे की खिड़की के बाहर वर्गीकृत क्योंकि आलोचनात्मकता निर्धारण के लिए ट्राएज बैठक की ज़रूरत पड़ी; Article 18 फ़ाइंडिंग</td>
+</tr>
+<tr>
+<td><strong>TLPT एकीकरण</strong></td>
+<td>TLPT स्कोप CIF इन्वेंट्री से व्युत्पन्न और निरंतर रिफ़्रेश; निष्कर्ष प्लेटफ़ॉर्म पॉलिसी-ऐज़-कोड में वापस फ़ीड होते हैं; बंद किए गए निष्कर्ष पर्यवेक्षी-तैयार साक्ष्य पैकेट उत्पन्न करते हैं</td>
+<td>TLPT निष्कर्ष क्लोज़र दर; निष्कर्ष-से-पॉलिसी-अपडेट चक्र समय</td>
+<td>TLPT एक भेद्यता खोजता है जिसे संस्थान की प्लेटफ़ॉर्म इंजीनियरिंग टीम दो रिलीज़ चक्र से कम में ठीक नहीं कर सकती</td>
+</tr>
+</tbody>
+</table>
+<h2 id="section-3">ट्रैक करने योग्य वर्तमान संकेत <a class="heading-anchor" href="#section-3" aria-label="लिंक:  ट्रैक करने योग्य वर्तमान संकेत">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>संकेत</th>
+<th>बैंकों के लिए इसका क्या अर्थ है</th>
+<th>स्रोत</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>DORA 17 जनवरी 2025 से सक्रिय प्रवर्तन में</strong></td>
+<td>पहली-लहर के पर्यवेक्षी निष्कर्ष Q4 2025 में आए; दूसरी-लहर के निष्कर्ष 2026 H2 तक अपेक्षित</td>
+<td><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554" title="DORA">EUR-Lex ⧉</a></td>
+</tr>
+<tr>
+<td><strong>CTPP डेज़िग्नेशन 2025-2026 में खुल रहा</strong></td>
+<td>AWS, Microsoft, Google, Salesforce परिधि के अंदर या निकट; डेज़िग्नेशन ESAs को सीधी निगरानी अधिकार देता है</td>
+<td><a href="https://www.eba.europa.eu/activities/direct-supervision-and-oversight/digital-operational-resilience-act" title="EBA — DORA direct supervision and oversight">EBA ⧉</a></td>
+</tr>
+<tr>
+<td><strong>ECB 2026-28 पर्यवेक्षी प्राथमिकताएँ क्लाउड व्यवधान का स्पष्ट उल्लेख</strong></td>
+<td>मॉडल-आधारित पर्यवेक्षी परिदृश्य लगातार डेज़िग्नेटेड-CTPP आउटेज सहन करने की क्षमता का परीक्षण करते हैं</td>
+<td><a href="https://www.bankingsupervision.europa.eu/framework/priorities/html/ssm.supervisory_priorities202511.en.html" title="Supervisory priorities 2026-28">ECB Banking Supervision ⧉</a></td>
+</tr>
+<tr>
+<td><strong>TIBER-EU DORA Article 26 के साथ संरेखित</strong></td>
+<td>TLPT स्कोप क्लाउड-होस्टेड सेवाओं सहित आलोचनात्मक / महत्वपूर्ण फ़ंक्शन्स को कवर करता है</td>
+<td><a href="https://www.ecb.europa.eu/paym/cyber-resilience/tiber-eu/html/index.en.html" title="TIBER-EU">ECB TIBER-EU ⧉</a></td>
+</tr>
+<tr>
+<td><strong>EBA आउटसोर्सिंग दिशानिर्देश (EBA/GL/2019/02) DORA Article 28 के साथ इंटरलॉक</strong></td>
+<td>सार्थक उपस्थिति (¶64), प्रतिस्थापन-योग्यता आकलन (¶81), एग्ज़िट रणनीति (¶113-117) — वे पैराग्राफ़ जिनकी पर्यवेक्षक वास्तव में जाँच करते हैं</td>
+<td><a href="https://www.eba.europa.eu/regulation-and-policy/internal-governance/guidelines-on-outsourcing-arrangements" title="EBA Outsourcing Guidelines">EBA ⧉</a></td>
+</tr>
+<tr>
+<td><strong>EU Cloud Services Scheme (EUCS) ड्राफ़्ट प्रगति पर</strong></td>
+<td>EU साइबर सुरक्षा अधिनियम के तहत भविष्य की सॉवरेन-क्लाउड प्रमाणन योजना; ENISA-प्रकाशित ड्राफ़्ट</td>
+<td><a href="https://www.enisa.europa.eu/publications/eucs-cloud-service-scheme" title="EUCS — Cybersecurity Scheme for Cloud Services">ENISA EUCS ⧉</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="section-4">प्लेटफ़ॉर्म इंजीनियरिंग: पाँच नामित प्रिमिटिव्स <a class="heading-anchor" href="#section-4" aria-label="लिंक:  प्लेटफ़ॉर्म इंजीनियरिंग: पाँच नामित प्रिमिटिव्स">#</a></h2>
+<p>2026 में क्लाउड-नेटिव परिपक्वता पाँच इंजीनियरिंग प्रिमिटिव्स तक सिमट जाती है जो तैनाती पाइपलाइन की गति पर पर्यवेक्षी साक्ष्य उत्पन्न करने के लिए इंटरलॉक होते हैं। किसी एक का भी अभाव होने पर फ़ाइंडिंग होना तय है।</p>
+<h3 id="1-kubernetes">1. Kubernetes-आधारित पेव्ड रोड्स <a class="heading-anchor" href="#1-kubernetes" aria-label="लिंक:  1. Kubernetes-आधारित पेव्ड रोड्स">#</a></h3>
+<p>हर CIF एक प्रबंधित Kubernetes प्लेटफ़ॉर्म पर चलता है — डेज़िग्नेटेड CTPP पर EKS, AKS, GKE या OpenShift, या वेंडर-प्रबंधित विकल्प। प्लेटफ़ॉर्म टीम नियंत्रित विचलन के साथ एकल गोल्डन क्लस्टर पैटर्न संचालित करती है: दस्तावेज़ित बेस इमेज से नोड्स; नेमस्पेस-प्रति-टीम अलगाव; pod-security-standards-restricted प्रोफ़ाइल; नेटवर्क नीतियाँ; इंटर-सर्विस प्रमाणीकरण और अवलोकनीयता के लिए सर्विस-मेश इंजेक्शन (Istio या Linkerd)। नई सेवाएँ एक टेम्पलेटेड ऑनबोर्डिंग वर्कफ़्लो के माध्यम से पेव्ड रोड में शामिल होती हैं जो Article 8 रजिस्टर प्रविष्टि को तैनाती आर्टेफ़ैक्ट के रूप में उत्पन्न करता है।</p>
+<h3 id="2-backstage">2. Backstage-शैली डेवलपर पोर्टल <a class="heading-anchor" href="#2-backstage" aria-label="लिंक:  2. Backstage-शैली डेवलपर पोर्टल">#</a></h3>
+<p>केंद्रीय डेवलपर पोर्टल — Spotify का ओपन-सोर्स <a href="https://backstage.io/" title="Backstage developer portal">Backstage ⧉</a> संदर्भ कार्यान्वयन है, साथ ही विभिन्न एंटरप्राइज़ विकल्प भी — यह बताता है कि क्या कहाँ चल रहा है, इसका सिस्टम ऑफ़ रिकॉर्ड। कैटलॉग में हर सेवा, स्वामी, निर्भरता, आलोचनात्मकता वर्गीकरण, रनबुक, ऑन-कॉल रोटेशन सूचीबद्ध है। पोर्टल Article 8 रजिस्टर के साथ इंटरलॉक करता है: हर कैटलॉग प्रविष्टि एक रजिस्टर प्रविष्टि से मैप होती है; रजिस्टर संदर्भ के बिना प्रविष्टियाँ CI विफलता ट्रिगर करती हैं; कैटलॉग उपस्थिति के बिना रजिस्टर प्रविष्टियाँ पर्यवेक्षक-पूर्व-अनुमान अलर्ट ट्रिगर करती हैं।</p>
+<h3 id="3-argocd-flux-gitops">3. ArgoCD या Flux के माध्यम से GitOps तैनाती <a class="heading-anchor" href="#3-argocd-flux-gitops" aria-label="लिंक:  3. ArgoCD या Flux के माध्यम से GitOps तैनाती">#</a></h3>
+<p>उत्पादन तैनाती एक GitOps नियंत्रक के माध्यम से चलती है — ArgoCD या Flux 2026 में उत्पादन मानक हैं — जो एक Git-वर्शन्ड घोषणात्मक स्थिति को चालू क्लस्टर के साथ मिलाता है। मैनुअल <code>kubectl apply</code> अक्षम है; उत्पादन का एकमात्र मार्ग मर्ज किया गया पुल रिक्वेस्ट है। Git रिपॉज़िटरी ऑडिट लॉग है; पर्यवेक्षक जब पूछते हैं &quot;तारीख Y को सेवा X का कॉन्फ़िगरेशन दिखाओ&quot; तो उन्हें स्क्रीनशॉट नहीं, Git टैग मिलता है।</p>
+<h3 id="4-open-policy-agent">4. एडमिशन पर Open Policy Agent <a class="heading-anchor" href="#4-open-policy-agent" aria-label="लिंक:  4. एडमिशन पर Open Policy Agent">#</a></h3>
+<p>Open Policy Agent (OPA) क्लस्टर एडमिशन चेन में बैठकर प्लेटफ़ॉर्म नीति लागू करता है: pod-security प्रोफ़ाइल अनुपालन, इमेज प्रोवेनेंस, संसाधन सीमाएँ, नेटवर्क-नीति उपस्थिति, आलोचनात्मकता-टियर-उपयुक्त प्रतिकृति, सॉवरेन-क्लाउड बाध्यताओं के अंतर्गत सब-क्षेत्र प्लेसमेंट। नीतियाँ Git-वर्शन्ड हैं और सेवा कॉन्फ़िगरेशन के साथ-साथ चेंज-मैनेज्ड। अस्वीकृत तैनातियाँ समीक्षा-योग्य कारण उत्पन्न करती हैं जो चेंज-मैनेजमेंट साक्ष्य पैकेट में फ़ीड होते हैं।</p>
+<h3 id="5-opentelemetry">5. OpenTelemetry एंड-टू-एंड <a class="heading-anchor" href="#5-opentelemetry" aria-label="लिंक:  5. OpenTelemetry एंड-टू-एंड">#</a></h3>
+<p>हर सेवा OpenTelemetry ट्रेस, मेट्रिक्स और लॉग उत्सर्जित करती है। प्लेटफ़ॉर्म टीम एक केंद्रीकृत अवलोकनीयता पाइपलाइन संचालित करती है — आमतौर पर ट्रेस के लिए Tempo या Jaeger, मेट्रिक्स के लिए Prometheus, लॉग के लिए Loki या OpenSearch — जो एंड-टू-एंड CIF स्वास्थ्य, निर्भरता मानचित्रण और घटना-वर्गीकरण इनपुट सामने लाती है। 4-घंटे की Article 18 वर्गीकरण खिड़की पहचान के साथ शुरू होती है; OTel पाइपलाइन पहचान से वर्गीकरण तक के मार्ग को ट्राएज बैठक नहीं, बल्कि क्वेरी-योग्य लुकअप तक छोटा कर देती है।</p>
+<h2 id="section-10">सॉवरेन क्लाउड इंजीनियरिंग के रूप में, ब्रांडिंग नहीं <a class="heading-anchor" href="#section-10" aria-label="लिंक:  सॉवरेन क्लाउड इंजीनियरिंग के रूप में, ब्रांडिंग नहीं">#</a></h2>
+<p>2026 में सॉवरेन-क्लाउड रणनीति को Schrems II + DORA + EBA आउटसोर्सिंग के चार विशिष्ट सवालों का जवाब देना होगा:</p>
+<ol>
+<li><strong>डेटा कहाँ संसाधित और संग्रहीत होता है?</strong> EU सदस्य-राज्य स्थान; उच्च-आलोचनात्मकता प्रवाह के लिए सब-क्षेत्र; लिखित डेटा निवास प्रतिबद्धताएँ।</li>
+<li><strong>डेटा तक कानूनी पहुँच किसके पास है?</strong> स्थानीय-कर्मचारी-केवल संचालन; विदेशी-सरकार पहुँच अनुरोध स्थानीय-न्यायालय प्रक्रिया के अधीन; वैध-पहुँच अनुरोधों की परीक्षित प्रतिक्रिया।</li>
+<li><strong>प्रतिस्थापन-योग्यता प्रोफ़ाइल क्या है?</strong> EBA/GL/2019/02 ¶81 प्रतिस्थापन-योग्यता आकलन; परीक्षित एग्ज़िट-निष्पादन; वैकल्पिक प्रदाता पहचान-कर अनुबंधित (या क्यों संभव नहीं, यह दस्तावेज़ित)।</li>
+<li><strong>तकनीकी संप्रभुता मॉडल क्या है?</strong> ग्राहक-नियंत्रित कुंजियाँ; क्रिप्टोग्राफ़िक पृथक्करण; सॉवरेन प्रबंधन प्लेन; ऑडिट-योग्य आपूर्ति शृंखला।</li>
+</ol>
+<p>इन सवालों को संबोधित करने वाले 2026 के वेंडर विकल्प:</p>
+<ul>
+<li><strong>AWS European Sovereign Cloud</strong> (2023 में घोषित, GA H2 2026 में अपेक्षित): EU-निवासी AWS सहायक कंपनी द्वारा संचालित भौतिक क्षेत्र; EU-निवासी संचालन और समर्थन; KMS-XKS पैटर्न के माध्यम से ग्राहक-नियंत्रित कुंजियाँ। 2026 में DORA Article 28 अनुबंध सामग्री संरेखण लंबित।</li>
+<li><strong>Microsoft EU Data Boundary</strong> (GA 2024) + <strong>Bleu</strong> (Capgemini + Orange + Microsoft, केवल फ़्रांस): Data Boundary EU ग्राहक डेटा को EU क्षेत्रों में रखता है; Bleu फ़्रांसीसी परिचालन नियंत्रण में Microsoft Azure स्टैक चलाने वाला SecNumCloud-संरेखित फ़्रांसीसी सॉवरेन क्लाउड है।</li>
+<li><strong>Google Cloud सॉवरेन साझेदारियाँ</strong>: फ़्रांस में Thales / S3NS (Bleu समकक्ष); जर्मनी में T-Systems।</li>
+<li><strong>Oracle EU Sovereign Cloud</strong> (GA 2023): EU-निवासी संचालन के साथ द्वि-क्षेत्र पैटर्न (फ़्रैंकफ़र्ट + मैड्रिड); स्पष्ट रूप से Schrems II-अनुपालक।</li>
+<li><strong>Gaia-X-संरेखित प्रदाता</strong> (OVHcloud, Scaleway, Stackit, Aruba Cloud, IONOS): Gaia-X लेबलिंग के साथ देशी-EU प्रदाता; हाइपरस्केलर्स की तुलना में छोटे पैमाने और पारिस्थितिकी तंत्र, लेकिन Foreign Intelligence Surveillance Act एक्सपोज़र नहीं।</li>
+</ul>
+<p>रणनीतिक निर्णय शायद ही कभी द्विआधारी होता है। टियर-1 बैंक आमतौर पर अधिकांश वर्कलोड के लिए हाइपरस्केलर-विथ-Data-Boundary कॉन्फ़िगरेशन चलाते हैं, डेज़िग्नेटेड उच्च-संवेदनशीलता प्रवाह (जैसे EU-निवासी व्यक्तिगत डेटा संभालने वाली AML / सैंक्शन्स केस-मैनेजमेंट प्रणालियाँ) के लिए सॉवरेन-क्लाउड विकल्प, और DORA Article 28 के अंतर्गत सालाना परीक्षित आकस्मिकता-प्रतिस्थापन-योग्यता पथ रखते हैं।</p>
+<h2 id="section-11">परीक्षित एग्ज़िट निष्पादन <a class="heading-anchor" href="#section-11" aria-label="लिंक:  परीक्षित एग्ज़िट निष्पादन">#</a></h2>
+<p><a href="https://www.eba.europa.eu/regulation-and-policy/internal-governance/guidelines-on-outsourcing-arrangements" title="EBA Outsourcing Guidelines">EBA/GL/2019/02 ⧉</a> पैराग्राफ़ 113-117 एग्ज़िट-रणनीति प्रावधान हैं। पाठ स्पष्ट रूप से बताता है कि क्या आवश्यक है: &quot;संस्थानों और भुगतान संस्थानों को यह सुनिश्चित करना चाहिए कि वे अपनी व्यावसायिक गतिविधियों में अनुचित व्यवधान के बिना आउटसोर्सिंग व्यवस्था से बाहर निकल सकें… एग्ज़िट रणनीतियों को आउटसोर्सिंग व्यवस्था की नियमित समीक्षा के भाग के रूप में दस्तावेज़ित और परीक्षित भी किया जाना चाहिए।&quot;</p>
+<p>2026 में पर्यवेक्षी अपेक्षा डेज़िग्नेटेड CTPP पर निर्भर हर CIF के लिए वार्षिक एंड-टू-एंड एग्ज़िट-निष्पादन परीक्षण है। टेबलटॉप अभ्यास और दस्तावेज़ी समीक्षा अपर्याप्त हैं। परीक्षण को उत्पन्न करना चाहिए:</p>
+<ul>
+<li><strong>पुनर्स्थापना-समय</strong> माप: एग्ज़िट घोषणा से वैकल्पिक प्रदाता पर वर्कलोड पुनर्स्थापन तक वास्तविक बीता हुआ समय, BIA-व्युत्पन्न RTO लक्ष्य के विरुद्ध।</li>
+<li><strong>डेटा-पोर्टेबिलिटी साक्ष्य</strong>: प्राथमिक से परीक्षित डेटा निर्यात, गंतव्य प्रदाता के आयात पथ के विरुद्ध सत्यापित, मिलान साक्ष्य के साथ।</li>
+<li><strong>कार्यात्मक समतुल्यता</strong>: वैकल्पिक प्रदाता पर समतुल्य SLOs के साथ चलने वाला परीक्षित वर्कलोड।</li>
+<li><strong>लागत साक्ष्य</strong>: संस्थान की आकस्मिकता योजना में पुनर्स्थापना-लागत धारणा बनाम दस्तावेज़ित एग्ज़िट-निष्पादन लागत।</li>
+</ul>
+<p>एक CIF के लिए एंड-टू-एंड एग्ज़िट परीक्षण का पहला प्रयास आमतौर पर दस्तावेज़ित RTO और वास्तविक RTO के बीच 5-10× अंतर उजागर करता है। उस अंतर को पाटना महीनों की इंजीनियरिंग का काम है। जो बैंक इसे अपने वार्षिक परीक्षण चक्र के बजाय पर्यवेक्षी निरीक्षण के दौरान खोजते हैं, वे Q3 फ़ाइंडिंग चक्र का सामना करते हैं जिससे वे बच सकते थे।</p>
+<h2 id="cif-rto-rpo">CIF इन्वेंट्री से RTO / RPO लक्ष्य <a class="heading-anchor" href="#cif-rto-rpo" aria-label="लिंक:  CIF इन्वेंट्री से RTO / RPO लक्ष्य">#</a></h2>
+<p>हर आलोचनात्मक या महत्वपूर्ण फ़ंक्शन संस्थान के बिज़नेस-इम्पैक्ट विश्लेषण से व्युत्पन्न टियर वर्गीकरण से मैप होता है। टियर ही RTO और RPO लक्ष्यों को निर्धारित करता है जिन्हें प्लेटफ़ॉर्म इंजीनियरिंग टीम पूरा करने के लिए प्रतिबद्ध है।</p>
+<table>
+<thead>
+<tr>
+<th>टियर</th>
+<th>उदाहरण</th>
+<th>RTO</th>
+<th>RPO</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Tier 1 (मिशन-क्रिटिकल)</strong></td>
+<td>RTGS कनेक्टिविटी (CHAPS / T2 / Fedwire), खुदरा भुगतान प्राधिकरण, डिजिटल चैनलों के लिए ग्राहक प्रमाणीकरण</td>
+<td>2 घंटे</td>
+<td>15 मिनट</td>
+</tr>
+<tr>
+<td><strong>Tier 2 (आलोचनात्मक)</strong></td>
+<td>AML / सैंक्शन्स स्क्रीनिंग, फ़्रॉड-डिटेक्शन पाइपलाइन, ATM प्राधिकरण, बैच भुगतान प्रसंस्करण</td>
+<td>4 घंटे</td>
+<td>1 घंटा</td>
+</tr>
+<tr>
+<td><strong>Tier 3 (महत्वपूर्ण)</strong></td>
+<td>रिपोर्टिंग और नियामक सबमिशन, ग्राहक-सामने वाले ज्ञान आधार, आंतरिक सहयोग प्लेटफ़ॉर्म</td>
+<td>24 घंटे</td>
+<td>4 घंटे</td>
+</tr>
+<tr>
+<td><strong>Tier 4 (गैर-आलोचनात्मक)</strong></td>
+<td>आंतरिक HR प्रणालियाँ, मार्केटिंग टूलिंग, गैर-ग्राहक-सामने वाली रिपोर्टिंग</td>
+<td>72 घंटे</td>
+<td>24 घंटे</td>
+</tr>
+</tbody>
+</table>
+<p>ये आँकड़े उदाहरणात्मक हैं — संस्थान का BIA अपने स्वयं के आँकड़े उत्पन्न करता है। प्लेटफ़ॉर्म इंजीनियरिंग डिलिवरेबल BIA-व्युत्पन्न लक्ष्यों को पूरा करने की रिग्रेशन-परीक्षित क्षमता है, जिसे प्रति सेवा स्वचालित DR परीक्षण के माध्यम से प्रमाणित किया जाता है और CTPP-निर्भर CIFs के लिए वार्षिक एग्ज़िट-निष्पादन परीक्षण के माध्यम से सत्यापित किया जाता है।</p>
+<h2 id="section-13">बैंक प्रकार के अनुसार इसका क्या अर्थ है <a class="heading-anchor" href="#section-13" aria-label="लिंक:  बैंक प्रकार के अनुसार इसका क्या अर्थ है">#</a></h2>
+<h3 id="g-sibs">वैश्विक प्रणालीगत रूप से महत्वपूर्ण बैंक (G-SIBs) <a class="heading-anchor" href="#g-sibs" aria-label="लिंक:  वैश्विक प्रणालीगत रूप से महत्वपूर्ण बैंक (G-SIBs)">#</a></h3>
+<p>कठिन समस्या व्यावसायिक रेखाओं में पैमाना है: हज़ारों सेवाएँ, सैकड़ों CIFs, उत्पादों, अधिकार-क्षेत्रों और लचीलापन प्रोफ़ाइलों में कई डेज़िग्नेटेड-CTPP एक्सपोज़र। निवेश केंद्रीय प्लेटफ़ॉर्म इंजीनियरिंग क्षमता है — Kubernetes पेव्ड रोड्स, Backstage पोर्टल, GitOps, OPA, OTel — जो प्रति-व्यावसायिक-रेखा अनुकूलित निर्माण के बिना Article 8 रजिस्टर मिलान, CTPP संकेंद्रण मानचित्र और CIF-दर-CIF एग्ज़िट-निष्पादन क्षमता उत्पन्न करती है।</p>
+<h3 id="section-15">यूनिवर्सल और मध्यम-आकार के बैंक <a class="heading-anchor" href="#section-15" aria-label="लिंक:  यूनिवर्सल और मध्यम-आकार के बैंक">#</a></h3>
+<p>इस टियर पर प्लेटफ़ॉर्म इंजीनियरिंग निवेश उचित है लेकिन दायरा सीमित है: दो या तीन सर्वोच्च-आलोचनात्मकता वाले CIFs चुनें, उनके इर्द-गिर्द पेव्ड-रोड पैटर्न बनाएँ, स्वीकार करें कि लीगेसी एस्टेट मध्यम-अवधि के लिए मौजूदा नियंत्रणों पर चलता रहेगा। प्लेटफ़ॉर्म विस्तार से अधिक महत्वपूर्ण पर्यवेक्षी स्थिति है — शीर्ष तीन CIFs के लिए DORA Article 8 रजिस्टर अखंडता और परीक्षित एग्ज़िट को प्रमाणित कर पाना ही पर्यवेक्षक की प्राथमिक चिंताओं को कवर करता है।</p>
+<h3 id="section-16">क्षेत्रीय और छोटे बैंक <a class="heading-anchor" href="#section-16" aria-label="लिंक:  क्षेत्रीय और छोटे बैंक">#</a></h3>
+<p>आंतरिक निर्माण के बजाय वेंडर चयन। एक बैंकिंग-प्लेटफ़ॉर्म वेंडर चुनें जिसका Kubernetes-नेटिव आर्किटेक्चर दस्तावेज़ित हो, जिसका Article 8 रजिस्टर एकीकरण बिल्ट-इन हो, और जिसकी DORA Article 28 अनुबंध सामग्री प्रतिबद्धताएँ स्पष्ट हों। आंतरिक इंजीनियरिंग क्षमता कॉन्फ़िगरेशन, निगरानी और घटना प्रतिक्रिया के इर्द-गिर्द है — प्लेटफ़ॉर्म निर्माण नहीं।</p>
+<h3 id="psps-saas">बैंकों को सेवा देने वाले फ़िनटेक, PSPs और SaaS प्रदाता <a class="heading-anchor" href="#psps-saas" aria-label="लिंक:  बैंकों को सेवा देने वाले फ़िनटेक, PSPs और SaaS प्रदाता">#</a></h3>
+<p>2026 में EU बैंकों को बेचने वाले वेंडरों के लिए उत्पाद प्रश्न यह है कि क्या प्लेटफ़ॉर्म वे Article 8 रजिस्टर प्रविष्टियाँ और DORA Article 28 अनुबंध सामग्री उत्पन्न करता है जो बैंक के अनुपालन फ़ंक्शन को चाहिए। संरचित आउटपुट वाले वेंडर एंटरप्राइज़ सौदे जीतते हैं; PDF टेम्पलेट वाले वेंडर संरचित JSON देने वाले प्रतिस्पर्धियों से हार जाते हैं।</p>
+<h2 id="section-18">निष्कर्ष <a class="heading-anchor" href="#section-18" aria-label="लिंक:  निष्कर्ष">#</a></h2>
+<p>DORA क्लाउड लचीलापन ऑडिट चरण में है। 2024-2025 के दौरान लिए गए प्लेटफ़ॉर्म इंजीनियरिंग निर्णय ही 2026 के पर्यवेक्षी चक्र की कसौटी पर हैं। 2026-2028 में ECB और EBA के सामने जो संस्थान विश्वसनीय दिखेंगे, वे वही हैं जो Backstage-शैली पोर्टल और GitOps तैनाती के साथ Kubernetes पेव्ड रोड्स चला रहे हैं, एडमिशन पर Open Policy Agent और OpenTelemetry एंड-टू-एंड के अंतर्गत — Article 8 रजिस्टर साक्ष्य को तैनाती आर्टेफ़ैक्ट के रूप में और परीक्षित एग्ज़िट-निष्पादन साक्ष्य को वार्षिक चक्र के रूप में उत्पन्न करते हुए, न कि पर्यवेक्षी अनुरोध की प्रतिक्रिया के रूप में।</p>
+<p>जिन संस्थानों ने वे निवेश नहीं किए, वे यह पता लगाएंगे कि उनकी दूसरी-पंक्ति अनुपालन टीम पहली राउंड के पर्यवेक्षी निष्कर्षों को दूसरी राउंड आने से पहले अवशोषित कर सकती है या नहीं।</p>
+<p>प्लेटफ़ॉर्म को उसी तरह मापें जैसे आप किसी भी परिचालन कार्यक्रम को मापते हैं: पेव्ड-रोड कवरेज, रजिस्टर मिलान दर, CTPP संकेंद्रण स्कोर, RTO लक्ष्य बनाम परीक्षित एग्ज़िट समय, Article 18 वर्गीकरण औसत समय, TLPT क्लोज़र दर। पाइपलाइन की गति पर साक्ष्य; दस्तावेज़ी पैकेट केवल तब जब पर्यवेक्षक माँगे।</p>
+<h2 id="section-19">अक्सर पूछे जाने वाले प्रश्न <a class="heading-anchor" href="#section-19" aria-label="लिंक:  अक्सर पूछे जाने वाले प्रश्न">#</a></h2>
+<p><strong>क्या 2026 में DORA क्लाउड लचीलापन अब भी तैयारी चरण में है?</strong></p>
+<p>नहीं। DORA 17 जनवरी 2025 से सक्रिय प्रवर्तन में है। Articles 28-44 के अंतर्गत CTPP डेज़िग्नेशन रेजीम 2025-2026 के दौरान खुल रहा है। Article 6 ICT जोखिम-प्रबंधन और Article 8 रजिस्टर अखंडता पर ECB परीक्षा निष्कर्ष Q4 2025 में कई टियर-1 संस्थानों में आए। 2026 का पर्यवेक्षी सवाल नियामक तत्परता नहीं, बल्कि संस्थान-विशिष्ट परीक्षा साक्ष्य है।</p>
+<p><strong>किन क्लाउड प्रदाताओं को CTPPs के रूप में डेज़िग्नेट किया गया है?</strong></p>
+<p>ESAs अपनी वेबसाइटों पर डेज़िग्नेशन निर्णय प्रकाशित करते हैं। 2026 में परिधि के अंदर या निकट संस्थानों में AWS, Microsoft (Azure), Google (GCP), Salesforce और सदस्य राज्य के अनुसार वित्तीय-सेवा बाज़ार हिस्सेदारी पर निर्भर कुछ अन्य शामिल हैं। उन प्रदाताओं पर निर्भर पर्यवेक्षित बैंकों पर भी संबंधित पर्यवेक्षी अपेक्षाएँ लागू होती हैं कि वे उस निर्भरता को कैसे प्रबंधित करते हैं।</p>
+<p><strong>क्या सॉवरेन क्लाउड DORA Article 28 अनुबंध सामग्री की आवश्यकता को समाप्त कर देता है?</strong></p>
+<p>नहीं। सॉवरेन क्लाउड Schrems II + डेटा-निवास आयाम को संबोधित करता है; DORA Article 28 अनुबंध सामग्री एक अलग दायित्व है जो डेटा के स्थान की परवाह किए बिना लागू होता है। सॉवरेन-क्लाउड प्रदाता के अनुबंध में अभी भी Article 28 के अनुसार डेटा सुलभता, सुरक्षा, निवास, ऑडिट अधिकार, एग्ज़िट रणनीतियाँ और निरंतरता कवर होनी चाहिए।</p>
+<p><strong>DORA क्लाउड लचीलापन प्रदर्शित करने वाला इंजीनियरिंग डिलिवरेबल क्या है?</strong></p>
+<p>पाँच इंटरलॉक करने वाले प्लेटफ़ॉर्म इंजीनियरिंग प्रिमिटिव्स: Kubernetes पेव्ड रोड्स (नीति-नियंत्रित विचलन वाला प्रबंधित क्लस्टर), Backstage-शैली डेवलपर पोर्टल (Article 8 रजिस्टर के साथ मिलान करने वाला कैटलॉग), GitOps तैनाती (ArgoCD या Flux), एडमिशन पर Open Policy Agent, OpenTelemetry एंड-टू-एंड। परीक्षा के समय नहीं, बल्कि पाइपलाइन की गति पर साक्ष्य।</p>
+<p><strong>एग्ज़िट निष्पादन का परीक्षण कितनी बार करना ज़रूरी है?</strong></p>
+<p>डेज़िग्नेटेड CTPP पर निर्भर प्रति CIF वार्षिक एंड-टू-एंड एग्ज़िट-निष्पादन परीक्षण। टेबलटॉप अभ्यास और दस्तावेज़ी समीक्षा अपर्याप्त हैं। परीक्षण को पुनर्स्थापना-समय, डेटा-पोर्टेबिलिटी साक्ष्य, कार्यात्मक समतुल्यता और लागत साक्ष्य उत्पन्न करना चाहिए — BIA-व्युत्पन्न RTO और RPO लक्ष्यों के विरुद्ध मापा हुआ।</p>
+<h2 id="section-20">संदर्भ <a class="heading-anchor" href="#section-20" aria-label="लिंक:  संदर्भ">#</a></h2>
+<ul>
+<li>यूरोपीय संघ, (2022)। <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554" title="DORA">रेगुलेशन (EU) 2022/2554 — डिजिटल ऑपरेशनल रेज़िलियेंस एक्ट (DORA) ⧉</a>।</li>
+<li>यूरोपीय बैंकिंग प्राधिकरण, (2019)। <a href="https://www.eba.europa.eu/regulation-and-policy/internal-governance/guidelines-on-outsourcing-arrangements" title="EBA Outsourcing Guidelines">EBA/GL/2019/02 — आउटसोर्सिंग व्यवस्था पर दिशानिर्देश ⧉</a>।</li>
+<li>यूरोपीय बैंकिंग प्राधिकरण, (2026)। <a href="https://www.eba.europa.eu/activities/direct-supervision-and-oversight/digital-operational-resilience-act" title="EBA — DORA direct supervision and oversight">डिजिटल ऑपरेशनल रेज़िलियेंस एक्ट ⧉</a>।</li>
+<li>यूरोपीय पर्यवेक्षी प्राधिकरण, (2024)। <a href="https://www.eba.europa.eu/sites/default/files/2024-01/0e155f7a-9b09-4dba-89cb-37f7e8e1c540/JC%202023%2086%20-%20Final%20report%20on%20draft%20ITS%20on%20Register%20of%20information%20under%20DORA.pdf" title="ESAs ITS">DORA के अंतर्गत सूचना रजिस्टर पर ITS पर अंतिम रिपोर्ट ⧉</a>।</li>
+<li>ECB बैंकिंग पर्यवेक्षण, (2025)। <a href="https://www.bankingsupervision.europa.eu/framework/priorities/html/ssm.supervisory_priorities202511.en.html" title="ECB priorities 2026-28">पर्यवेक्षी प्राथमिकताएँ 2026-28 ⧉</a>।</li>
+<li>यूरोपीय केंद्रीय बैंक, (2024)। <a href="https://www.ecb.europa.eu/paym/cyber-resilience/tiber-eu/html/index.en.html" title="TIBER-EU">TIBER-EU फ़्रेमवर्क ⧉</a>।</li>
+<li>ENISA, (2024)। <a href="https://www.enisa.europa.eu/publications/eucs-cloud-service-scheme" title="EUCS">क्लाउड सेवाओं के लिए EU साइबर सुरक्षा योजना (EUCS) ⧉</a>।</li>
+<li>Spotify, (2020-2024)। <a href="https://backstage.io/" title="Backstage">Backstage डेवलपर पोर्टल ⧉</a>।</li>
+<li>क्लाउड नेटिव कंप्यूटिंग फ़ाउंडेशन, (2018)। <a href="https://www.openpolicyagent.org/" title="Open Policy Agent">Open Policy Agent (OPA) ⧉</a>।</li>
+<li>क्लाउड नेटिव कंप्यूटिंग फ़ाउंडेशन, (2019)। <a href="https://opentelemetry.io/" title="OpenTelemetry">OpenTelemetry ⧉</a>।</li>
+</ul>
+<!-- enrich-start -->
+
+<p class="post-reviewed">अंतिम समीक्षा <time datetime="2026-06-05">2026-06-05</time>।</p>
+<!-- enrich-end -->
+<aside class="author-card" aria-label="लेखक के बारे में"><img alt="Sebastien Rousseau का चित्र" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=85" width="64" height="64" loading="lazy" decoding="async"  fetchpriority="high"><span class="author-card-body"><strong class="author-card-name"><a href="/hi/hamare-baare-mein/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">वरिष्ठ बैंकिंग टेक्नोलॉजिस्ट; मैं व्यावहारिक AI, ISO 20022 की ओर माइग्रेशन, वित्तीय सेवाओं के लिए पोस्ट-क्वांटम क्रिप्टोग्राफी और थोक भुगतानों के संरचनात्मक रूपांतरण पर लिखता हूँ।</span><span class="author-credentials">HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group में 20 वर्ष से अधिक का अनुभव। <a href="/hi/hamare-baare-mein/index.html">पूरा परिचय</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">अंतिम समीक्षा <time datetime="2026-06-11">2026-06-11</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">संबंधित पठन</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/hi/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026" class="related-media" aria-label="2026 में बैंकों के लिए एजेंटिक AI सूचकांक: स्वायत्तता, गवर्नेंस, ऑडिटेबिलिटी और व्यावसायिक प्रभाव मापना" tabindex="-1"><img alt="The Agentic AI Index for Banks 2026 index diagram for banks and financial institutions in 2026" src="https://cloudcdn.pro/api/transform?url=/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="2026-ai"><a href="https://sebastienrousseau.com/hi/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026">2026 में बैंकों के लिए एजेंटिक AI सूचकांक: स्वायत्तता, गवर्नेंस, ऑडिटेबिलिटी और व्यावसायिक प्रभाव मापना</a> <a class="heading-anchor" href="#2026-ai" aria-label="लिंक:  2026 में बैंकों के लिए एजेंटिक AI सूचकांक: स्वायत्तता, गवर्नेंस, ऑडिटेबिलिटी और व्यावसायिक प्रभाव मापना">#</a></h3><p><time datetime="2026-06-03">2026-06-03</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/hi/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026" class="related-media" aria-label="DORA, EU AI अधिनियम और डेटा संप्रभुता: बैंकों का 2026 अनुपालन स्टैक" tabindex="-1"><img alt="Compliance stack diagram showing DORA resilience, EU AI Act transparency, data sovereignty, cloud concentration risk, audit logs, model governance, and third-party providers" src="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="dora-eu-ai-2026"><a href="https://sebastienrousseau.com/hi/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026">DORA, EU AI अधिनियम और डेटा संप्रभुता: बैंकों का 2026 अनुपालन स्टैक</a> <a class="heading-anchor" href="#dora-eu-ai-2026" aria-label="लिंक:  DORA, EU AI अधिनियम और डेटा संप्रभुता: बैंकों का 2026 अनुपालन स्टैक">#</a></h3><p><time datetime="2026-05-28">2026-05-28</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/hi/2026-05-20-cloud-native-banking-financial-institutions-2026" class="related-media" aria-label="2026 में क्लाउड-नेटिव बैंकिंग: Kubernetes, DORA, संप्रभुता, और VM बनाम कंटेनर विभाजन का अंत" tabindex="-1"><img alt="Cloud-native banking architecture for 2026 showing Kubernetes, VM coexistence, DORA resilience, sovereign cloud, observability, and bank platform engineering" src="https://cloudcdn.pro/api/transform?url=/stocks/images/freeman-zhou-oV9hp8wXkPE.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="2026-kubernetes-dora-vm"><a href="https://sebastienrousseau.com/hi/2026-05-20-cloud-native-banking-financial-institutions-2026">2026 में क्लाउड-नेटिव बैंकिंग: Kubernetes, DORA, संप्रभुता, और VM बनाम कंटेनर विभाजन का अंत</a> <a class="heading-anchor" href="#2026-kubernetes-dora-vm" aria-label="लिंक:  2026 में क्लाउड-नेटिव बैंकिंग: Kubernetes, DORA, संप्रभुता, और VM बनाम कंटेनर विभाजन का अंत">#</a></h3><p><time datetime="2026-05-20">2026-05-20</time></p></footer></article>
+</div>
+</aside><aside class="article-sources" aria-labelledby="sources-heading"><h2 id="sources-heading" class="article-sources-heading">स्रोत और संदर्भ</h2><ol class="article-sources-list"><li><a href="https://www.ecb.europa.eu/paym/cyber-resilience/tiber-eu/html/index.en.html" rel="external noopener nofollow"><span class="source-host">www.ecb.europa.eu</span><span class="source-path">/paym/cyber-resilience/tiber-eu/html/index.en.html</span></a></li></ol></aside><nav class="post-pagination" aria-label="लेख पृष्ठ-क्रम"><a class="post-pagination-prev" href="/hi/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/"><span class="post-pagination-label">पिछला</span><span class="post-pagination-title">The Quantum-Safe Banking Index in 2026: Post-Quantum Cryptography, QKD, Crypto-Agility, and Harvest-Now-Decrypt-Later Risk</span></a><a class="post-pagination-next" href="/hi/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/"><span class="post-pagination-label">अगला</span><span class="post-pagination-title">The Wholesale Payments Index in 2026: ISO 20022, Tokenised Deposits, Real-Time Rails, and Cross-Border Settlement</span></a></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/hi/hamare-baare-mein/index.html">हमारे बारे में</a></li>
+              <li><a href="/hi/sampark/index.html">संपर्क</a></li>
+              <li><a href="/hi/static-site-generator-se-banaya/index.html">Static Site Generator से बनाया गया</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">लेखन</h2>
+            <ul>
+              <li><a href="/hi/lekh/index.html">लेख</a></li>
+              <li><a href="/hi/prakashan/index.html">प्रकाशन</a></li>
+              <li><a href="/hi/tag/index.html">टैग</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">कार्य</h2>
+            <ul>
+              <li><a href="/hi/pariyojanaen/index.html">परियोजनाएँ</a></li>
+              <li><a href="/hi/pleelist/index.html">प्लेलिस्ट</a></li>
+              <li><a href="/hi/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">संपर्क</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="/contact/" method="get" aria-label="न्यूज़लेटर सदस्यता">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — भुगतान, AI और पोस्ट-क्वांटम क्रिप्टोग्राफी पर शोध-नोट्स। कोई स्पैम नहीं।</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="aap@bank.in" />
+            <input type="hidden" name="subject" value="newsletter" />
+            <input type="hidden" name="message" value="Please subscribe me to the Banking On Quantum newsletter." />
+            <button type="submit">सदस्यता लें</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved.</span>
+          <div class="social" aria-label="सामाजिक लिंक">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau पर Twitter / X"><img src="https://cloudcdn.pro/common/images/buttons/x-black.svg" alt="Sebastien Rousseau पर Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau पर LinkedIn"><img src="https://cloudcdn.pro/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau पर LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau पर Medium"><img src="https://cloudcdn.pro/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau पर Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau पर YouTube"><img src="https://cloudcdn.pro/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau पर YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/hi/pahunch-yogyata/index.html">पहुँच-योग्यता</a> ·
+            <a href="/hi/gopniyata/index.html">गोपनीयता</a> ·
+            <a href="/hi/shartein/index.html">शर्तें</a> ·
+            <a href="https://www.thegreenwebfoundation.org/green-web-check/?url=sebastienrousseau.com" target="_blank" rel="noopener noreferrer" title="Hosted on 100% renewable energy (Cloudflare) — estimate via Sustainable Web Design v4 model">Carbon: ~0.04 g/visit · green-hosted</a> ·
+            <a href="https://github.com/sebastienrousseau/sebastienrousseau.github.io/blob/main/project-docs/sigstore.md" target="_blank" rel="noopener noreferrer" title="Every dated article is signed with Sigstore — verify the bytes match what was published">Verify signatures</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","identifier":{"@type":"PropertyValue","propertyID":"ORCID","value":"0009-0005-1434-284X","url":"https://orcid.org/0009-0005-1434-284X"},"worksFor":{"@type":"Organization","@id":"https://www.hsbc.com/#organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal","url":"https://www.paypal.com/"},{"@type":"Organization","name":"Barclays","url":"https://www.barclays.com/"},{"@type":"Organization","name":"Shazam Entertainment","url":"https://www.shazam.com/"},{"@type":"Organization","name":"AKQA","url":"https://www.akqa.com/"},{"@type":"Organization","name":"Virgin Group","url":"https://www.virgin.com/"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"hasCredential":[{"@type":"EducationalOccupationalCredential","credentialCategory":"professional experience","name":"20+ years across Tier-1 banks and global payments infrastructure","recognizedBy":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"}},{"@type":"EducationalOccupationalCredential","credentialCategory":"domain expertise","name":"ISO 20022 migration and wholesale payments architecture","recognizedBy":{"@type":"Organization","name":"SWIFT","url":"https://www.swift.com/"}},{"@type":"EducationalOccupationalCredential","credentialCategory":"domain expertise","name":"Post-Quantum Cryptography for financial services","recognizedBy":{"@type":"Organization","name":"NIST Post-Quantum Cryptography Project","url":"https://csrc.nist.gov/projects/post-quantum-cryptography"}}],"knowsAbout":[{"@type":"DefinedTerm","name":"Post-Quantum Cryptography","sameAs":"https://en.wikipedia.org/wiki/Post-quantum_cryptography"},{"@type":"DefinedTerm","name":"ML-KEM (FIPS 203)","sameAs":"https://csrc.nist.gov/pubs/fips/203/final"},{"@type":"DefinedTerm","name":"ML-DSA (FIPS 204)","sameAs":"https://csrc.nist.gov/pubs/fips/204/final"},{"@type":"DefinedTerm","name":"ISO 20022","sameAs":"https://en.wikipedia.org/wiki/ISO_20022"},{"@type":"DefinedTerm","name":"SWIFT gpi","sameAs":"https://www.swift.com/our-solutions/swift-gpi"},{"@type":"DefinedTerm","name":"SEPA Instant Payments","sameAs":"https://www.ecb.europa.eu/paym/integration/retail/instant_payments/html/index.en.html"},{"@type":"DefinedTerm","name":"FedNow Service","sameAs":"https://www.federalreserve.gov/paymentsystems/fednow_about.htm"},{"@type":"DefinedTerm","name":"Real-Time Payments (RTP)","sameAs":"https://www.theclearinghouse.org/payment-systems/rtp"},{"@type":"DefinedTerm","name":"Cross-border payments","sameAs":"https://en.wikipedia.org/wiki/Cross-border_payments"},{"@type":"DefinedTerm","name":"Wholesale banking","sameAs":"https://en.wikipedia.org/wiki/Wholesale_banking"},{"@type":"DefinedTerm","name":"Applied artificial intelligence in banking","sameAs":"https://en.wikipedia.org/wiki/Applications_of_artificial_intelligence"},{"@type":"DefinedTerm","name":"Generative artificial intelligence","sameAs":"https://en.wikipedia.org/wiki/Generative_artificial_intelligence"}],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://orcid.org/0009-0005-1434-284X","https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":["Organization","Brand"],"@id":"https://sebastienrousseau.com/#organization","name":"Sebastien Rousseau","alternateName":"Banking on Quantum","url":"https://sebastienrousseau.com/","logo":{"@type":"ImageObject","@id":"https://sebastienrousseau.com/#logo","url":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","width":"512","height":"512","caption":"Sebastien Rousseau"},"founder":{"@id":"https://sebastienrousseau.com/#person"},"editorialPolicy":"https://sebastienrousseau.com/editorial/","correctionsPolicy":"https://sebastienrousseau.com/editorial/#corrections","ethicsPolicy":"https://sebastienrousseau.com/editorial/","diversityPolicy":"https://sebastienrousseau.com/editorial/","sameAs":["https://github.com/sebastienrousseau","https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#organization"},"author":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"hi"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"hi"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":3326,"headline":"2026 में क्लाउड-नेटिव बैंकिंग इंडेक्स: DORA, प्लेटफ़ॉर्म इंजीनियरिंग, सॉवरेन क्लाउड और परिचालन लचीलापन","description":"2026 का क्लाउड-नेटिव बैंकिंग इंडेक्स — DORA तत्परता, प्लेटफ़ॉर्म इंजीनियरिंग परिपक्वता, क्लाउड संकेंद्रण जोखिम, एग्ज़िट साक्ष्य और परिचालन लचीलापन मापने का ढाँचा।","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/api/transform?url=/stocks/images/quang-nguyen-vinh-2649403.webp&w=1600&format=webp&q=85","width":"100vw","height":"100vh","caption":"सर्किट-बोर्ड पैटर्न जो शहरी क्षितिज में बदल जाता है — क्लाउड-नेटिव बैंकिंग के लिए चुनी गई दृश्य रजिस्टर: प्लेटफ़ॉर्म इंजीनियरिंग प्रिमिटिव्स बैंक के परिचालन ताने-बाने में सिले गए।"},"url":"https://sebastienrousseau.com/hi/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/","datePublished":"2026-06-05T06:06:06+00:00","dateModified":"2026-06-05","inLanguage":"hi","keywords":"क्लाउड नेटिव बैंकिंग 2026, DORA बैंक, क्लाउड संकेंद्रण जोखिम, प्लेटफ़ॉर्म इंजीनियरिंग बैंक, ICT तृतीय-पक्ष जोखिम, क्लाउड एग्ज़िट रणनीति, सॉवरेन क्लाउड","articleSection":"Technology","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/hi/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"hi"},"citation":[{"@type":"CreativeWork","url":"https://www.ecb.europa.eu/paym/cyber-resilience/tiber-eu/html/index.en.html"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/hi/"},{"@type":"ListItem","position":3,"name":"2026 में क्लाउड-नेटिव बैंकिंग इंडेक्स: DORA, प्लेटफ़ॉर्म इंजीनियरिंग, सॉवरेन क्लाउड और परिचालन लचीलापन","item":"https://sebastienrousseau.com/hi/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/"}]}]}</script>
+<script src="/main.931cef3c.js" defer integrity="sha256-JUs9z2u4RDSgxMCjBnyMmIHIkpakA7s5FxUmnDnSpD0= sha256-r33y52uSTzd+MqMufJlWsd09gyxv578IRoF5Gomw7Aw=" crossorigin="anonymous"></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="खोजें">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>खोजें</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="खोजें">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="दस्तावेज़ में खोजें..." autocomplete="off" aria-label="खोजें"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> बंद करें</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> नेविगेट करें</span><span><kbd>Enter</kbd> खोलें</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" integrity="sha256-Y0txeCfdk+GUctTYMAxMbFCB2qs1cPm8JSIX3WRS9cs= sha256-5Ca5zk/7tsavsCDhg6M1m4feBn+L4YnJ7iavKawynII=" crossorigin="anonymous"></script>
+</div>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"2026 में क्लाउड-नेटिव बैंकिंग इंडेक्स: DORA, प्लेटफ़ॉर्म इंजीनियरिंग, सॉवरेन क्लाउड और परिचालन लचीलापन","url":"https://sebastienrousseau.com/hi/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/","inLanguage":"hi-IN","isAccessibleForFree":true,"author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#organization"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/hi/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/"},"keywords":"क्लाउड नेटिव बैंकिंग 2026, DORA बैंक, क्लाउड संकेंद्रण जोखिम, प्लेटफ़ॉर्म इंजीनियरिंग बैंक, ICT तृतीय-पक्ष जोखिम, क्लाउड एग्ज़िट रणनीति, सॉवरेन क्लाउड","proficiencyLevel":"Expert"}</script></body>
+</html>

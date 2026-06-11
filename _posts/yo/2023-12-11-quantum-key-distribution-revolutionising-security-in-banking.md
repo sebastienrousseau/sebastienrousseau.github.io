@@ -1,5 +1,6 @@
 ---
 title: "Quantum Key Distribution Revolutionising Security in Banking"
+tags: "quantum, key, distribution, cryptography, cybersecurity, finance, banking, digital, innovation, blockchain, quantum computing, hsbc, trading, data, protection, future, ISO 20022, DORA, ìsirò ìpamọ́ lẹ́yìn quantum, AI"
 excerpt: "As quantum computers pose a threat to traditional encryption methods, Quantum Key Distribution (QKD) emerges as a game-changer, offering unparalleled security."
 subtitle: "Ìpínkiri Kọ́kọ́rọ́ Kuántọ̀m (QKD) fún ààbò ìpele ìṣúná nínú ẹ̀ka ìfowópamọ́."
 description: "Bí àwọn kọ̀mpútà kuántọ̀m ṣe ń halẹ̀ mọ́ àwọn ọ̀nà ìfipamọ́ àtọwọdọwọ, Ìpínkiri Kọ́kọ́rọ́ Kuántọ̀m (QKD) jẹ́ ìyípadà àgbàyanu, tí ń pèsè ààbò àìlẹ́gbẹ́."
@@ -108,4 +109,3 @@ By embracing QKD, HSBC has set a new benchmark in financial cybersecurity, pavin
 [01]: https://cloudcdn.pro/stocks/images/quantum-computer-room.webp "Entangled Photons"
 [02]: https://cloudcdn.pro/stocks/diagrams/qkd-qc-market-value.svg "QKD and Quantum Computing Market Value"
 [divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Divider"
-

@@ -1,11 +1,13 @@
 {
-  "language": "fr",
-  "description": "Découvrez l'article MM1 d'Apple sur les grands modèles de langage multimodaux (MLLM). Architecture, stratégies de pré-entraînement et potentiels de l'IA.",
-  "keywords": "LLM multimodaux, étude MM1, avancées IA, stratégies de pré-entraînement, reconnaissance d'images, traitement du langage naturel, applications IA, futur de l'IA, apprentissage multimodal, recherche IA",
-  "date": "March 18, 2024",
-  "locale": "fr_FR",
-  "banner_alt": "Bannière pour MM1 d'Apple",
-  "banner": "https://cloudcdn.pro/stocks/images/mm1-visual.webp",
   "subtitle": "Dévoiler le futur de l'IA : comment l'étude révolutionnaire MM1 d'Apple transforme l'apprentissage multimodal",
-  "title": "Faire progresser l'IA avec les LLM multimodaux : enseignements de MM1"
+  "reading_time": 7,
+  "title": "Faire progresser l'IA avec les LLM multimodaux : enseignements de MM1",
+  "date": "March 18, 2024",
+  "description": "Découvrez l'article MM1 d'Apple sur les grands modèles de langage multimodaux (MLLM). Architecture, stratégies de pré-entraînement et potentiels de l'IA.",
+  "word_count": 1504,
+  "locale": "fr_FR",
+  "banner": "https://cloudcdn.pro/stocks/images/mm1-visual.webp",
+  "banner_alt": "Bannière pour MM1 d'Apple",
+  "keywords": "LLM multimodaux, étude MM1, avancées IA, stratégies de pré-entraînement, reconnaissance d'images, traitement du langage naturel, applications IA, futur de l'IA, apprentissage multimodal, recherche IA",
+  "language": "fr"
 }

@@ -39,7 +39,7 @@ schema: "FAQPage, Article"
 seo_title: "UK Acid Jazz 2026: артисты, концерты, альбомы, возрождение"
 short_name: "sebastienrousseau"
 subtitle: "Брит-эйсид-джаз обновляется через сочетание артистов-ветеранов, релизов Acid Jazz Records, джаз-фанк-фестивалей, соул-джаз-аудитории, живых шоу с органом Хаммонд и молодых британских музыкантов, возвращающих грув в центр сцены."
-tags: "acid jazz, UK jazz, Acid Jazz Records, Brand New Heavies, Galliano, James Taylor Quartet, Ronnie Scott's, Bangs and Talbot, Chris Bangs, Mick Talbot, Mostly Jazz Funk Soul Festival, Cymande, Soul II Soul, Jordan Rakei, jazz funk, soul jazz"
+tags: "acid jazz, UK jazz, Acid Jazz Records, Brand New Heavies, Galliano, James Taylor Quartet, Ronnie Scott's, Bangs and Talbot, Chris Bangs, Mick Talbot, Mostly Jazz Funk Soul Festival, Cymande, Soul II Soul, Jordan Rakei, jazz funk, soul jazz, ISO 20022, постквантовая криптография, AI, DORA, токенизированные депозиты, инженерия платформы, суверенное облако, облачно-нативный банкинг, трансграничные платежи, стейблкоины"
 theme-color: "0, 83, 191"
 title: "Эйсид-джаз в Великобритании: артисты, концерты и альбомы 2026"
 url: "https://sebastienrousseau.com/ru/2026-05-22-uk-acid-jazz-renewal-artists-concerts-albums-2026"
@@ -93,9 +93,9 @@ site_software: "Static Site Generator, Rust"
 <p class="post-lead-heading"><strong>Ключевые выводы</strong></p>
 <ul class="post-lead-takeaways">
   <li><strong>Лейбл.</strong> В компиляцию Acid Jazz Records 2026 года на Bandcamp вошли Matt Berry, Kevin Fingier, The Brand New Heavies, Billy Valentine и Mama Terra.</li>
-  <li><strong>Релиз.</strong> <em>Smokin' Aces</em> Bangs &amp; Talbot (23 января 2026 года, Acid Jazz) воссоединяет Криса Бэнгса и Мика Тэлбота с грувом, фанком, соулом и звучаниями глобального фьюжна.</li>
+  <li><strong>Релиз.</strong> <em>Smokin' Aces</em> Bangs & Talbot (23 января 2026 года, Acid Jazz) воссоединяет Криса Бэнгса и Мика Тэлбота с грувом, фанком, соулом и звучаниями глобального фьюжна.</li>
   <li><strong>Живые выступления.</strong> The Brand New Heavies с Galliano в The Glasshouse и The James Taylor Quartet в Ronnie Scott's — наиболее очевидные сигналы эйсид-джаза в афише 2026 года.</li>
-  <li><strong>Фестиваль.</strong> Mostly Jazz Funk &amp; Soul Festival (10–12 июля 2026 года) включает в программу Soul II Soul, Cymande, Jordan Rakei и Sampa The Great наряду с ветеранами джаз-фанка.</li>
+  <li><strong>Фестиваль.</strong> Mostly Jazz Funk & Soul Festival (10–12 июля 2026 года) включает в программу Soul II Soul, Cymande, Jordan Rakei и Sampa The Great наряду с ветеранами джаз-фанка.</li>
 </ul>
 <p class="post-lead-related"><strong>Связанное чтение:</strong> <a href="https://sebastienrousseau.com/2026-05-21-tokenised-deposits-banking-transformation-2026/index.html">Токенизированные депозиты: банковская трансформация 2026 года</a>.</p>
 </aside>
@@ -231,6 +231,6 @@ The Brand New Heavies с Galliano в The Glasshouse и The James Taylor Quartet 
 - Mostly Jazz Funk & Soul Festival, (2026). [Mostly Jazz Funk & Soul Festival 2026 ⧉](https://mostlyjazz.co.uk "Mostly Jazz Funk & Soul Festival").
 - Marlbank, (2026). [Top UK jazz albums in 2026 so far ⧉](https://marlbank.net/top-jazz-in-2026/top-uk-jazz-albums-in-2026-so-far/ "Top UK jazz albums in 2026 so far").
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Об авторе"><img alt="Портрет Себастьяна Руссо" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Себастьян Руссо</a></strong><span class="author-card-bio">Старший банковский технолог, пишет о прикладном ИИ, миграции на ISO 20022, постквантовой криптографии для финансовых услуг и структурной трансформации оптовых платежей.</span><span class="author-credentials">Более 20 лет в HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Полный профиль</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Об авторе"><img alt="Портрет Себастьяна Руссо" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Себастьян Руссо</a></strong><span class="author-card-bio">Старший банковский технолог, пишет о прикладном ИИ, миграции на ISO 20022, постквантовой криптографии для финансовых услуг и структурной трансформации оптовых платежей.</span><span class="author-credentials">Более 20 лет в HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Полный профиль</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Последняя проверка <time datetime="2026-05-22">2026-05-22</time>.</p>
 <!-- enrich-end -->

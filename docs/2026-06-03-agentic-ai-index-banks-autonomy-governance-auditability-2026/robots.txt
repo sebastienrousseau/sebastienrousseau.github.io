@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://sebastienrousseau.com/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/sitemap.xml

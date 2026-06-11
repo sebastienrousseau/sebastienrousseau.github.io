@@ -64,16 +64,17 @@ export const CSP_DIRECTIVES = [
   "object-src 'none'",
   "frame-ancestors 'none'",
   "upgrade-insecure-requests",
-  // Header script-src deliberately omits 'unsafe-inline'. CSP intersection
-  // means the meta-CSP hash list still gates the actual inline JSON-LD
-  // blob on every postbuild-processed page, so this layer doesn't need
-  // to repeat the relaxation. Stripping it closes the response-header
-  // gap that security scanners flag and provides defence in depth on
-  // any page that might bypass postbuild (none today — verified all
-  // pages, including 404, ship with hashed meta-CSP).
-  "script-src 'self' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com",
+  // Header script-src must include 'unsafe-inline' and 'inline-speculation-rules'
+  // because the browser intersects header and meta CSPs — the strictest of the
+  // two applies for any given directive. Stripping 'unsafe-inline' here did
+  // close a security-scanner gap, but it also blocked the per-page inline
+  // theme-bootstrap script, the speculation-rules block, and any mermaid
+  // dynamic-import target. https://cdn.jsdelivr.net is the mermaid@10 CDN
+  // (the postbuild injects a `<div class="mermaid">` and main.js lazy-imports
+  // the ESM bundle on first scroll).
+  "script-src 'self' 'unsafe-inline' 'inline-speculation-rules' https://cdn.jsdelivr.net https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com",
   "frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com",
-  "connect-src 'self' https://www.google.com https://open.spotify.com",
+  "connect-src 'self' https://cloudcdn.pro https://www.google.com https://open.spotify.com",
   "img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co",
   "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
   "font-src 'self' https://fonts.gstatic.com",
@@ -111,16 +112,48 @@ export const SECURITY_HEADERS = {
  * the redirect path to append `Set-Cookie` without forking the wrapping
  * logic.
  */
-export function withSecurityHeaders(response, extraHeaders) {
+export function withSecurityHeaders(response, request, extraHeaders) {
+  let req = null;
+  let extra = extraHeaders;
+
+  // Gracefully handle legacy two-parameter calls and mock requests
+  if (request instanceof Request) {
+    req = request;
+  } else if (request && typeof request === 'object') {
+    extra = request;
+  }
+
   const headers = new Headers(response.headers);
   for (const name of Object.keys(SECURITY_HEADERS)) {
     headers.set(name, SECURITY_HEADERS[name]);
   }
-  if (extraHeaders) {
-    for (const name of Object.keys(extraHeaders)) {
-      headers.append(name, extraHeaders[name]);
+
+  let cacheControl = 'public, max-age=0, must-revalidate';
+  if (req && req.url) {
+    const url = new URL(req.url);
+    const pathname = url.pathname;
+    if (
+      pathname.startsWith('/fonts/') ||
+      pathname.startsWith('/_csp/') ||
+      /\.[a-f0-9]{4,32}\.(?:js|css)$/i.test(pathname) ||
+      /\.(?:webp|jpg|jpeg|png|gif|svg|ico|mp4|webm|ogg|mp3|wav|flac|aac|wasm|woff2?|eot|ttf|otf|pdf)$/i.test(pathname)
+    ) {
+      cacheControl = 'public, max-age=31536000, immutable';
     }
   }
+
+  if (extra) {
+    for (const name of Object.keys(extra)) {
+      headers.append(name, extra[name]);
+    }
+  }
+
+  // Safe cache control override for any cookies (redirects or standard responses)
+  if (headers.has('Set-Cookie')) {
+    cacheControl = 'no-store, private';
+  }
+  headers.set('Cache-Control', cacheControl);
+
   return new Response(response.body, {
     status: response.status,
     statusText: response.statusText,
@@ -159,33 +192,44 @@ export function isPageNavigation(pathname) {
   return true;
 }
 
+// ActivityPub routes (webfinger / actor / inbox / outbox) live in a
+// sibling module; lang-router checks them first so the Fediverse
+// endpoints take precedence over locale routing and CSP rewriting.
+import { tryActivityPub } from './activitypub.js';
+
 export default {
   async fetch(request, env, ctx) {
     const url = new URL(request.url);
+    // ActivityPub handler — fields the four Fediverse endpoints before
+    // the locale + CSP path runs. Returns null when the request isn't
+    // an AP route, in which case we fall through to the existing flow.
+    const apResponse = await tryActivityPub(request);
+    if (apResponse) return apResponse;
+
     // Only act on GET / HEAD page navigation; everything else still gets
     // security headers via the pass-through wrapper.
     if (request.method !== 'GET' && request.method !== 'HEAD') {
-      return withSecurityHeaders(await fetch(request));
+      return withSecurityHeaders(await fetch(request), request);
     }
     if (!isPageNavigation(url.pathname)) {
-      return withSecurityHeaders(await fetch(request));
+      return withSecurityHeaders(await fetch(request), request);
     }
     // Visitor has chosen — respect that choice forever (until cookie expires).
     const cookieHeader = request.headers.get('Cookie');
     const prefLang = getCookie(cookieHeader, COOKIE);
     if (prefLang === 'en') {
-      return withSecurityHeaders(await fetch(request));
+      return withSecurityHeaders(await fetch(request), request);
     }
     if (prefLang && ACTIVE_LANGS.has(prefLang)) {
       const redirected = new URL(url);
       redirected.pathname = `/${prefLang}${url.pathname === '/' ? '/' : url.pathname}`;
-      return withSecurityHeaders(Response.redirect(redirected.toString(), 302));
+      return withSecurityHeaders(Response.redirect(redirected.toString(), 302), request);
     }
     // Honour `?lang=xx` as a one-off override (no cookie set — the user
     // is just deep-linking) — and respect ?lang=en as an opt-out signal.
     const overrideLang = url.searchParams.get('lang');
     if (overrideLang === 'en') {
-      return withSecurityHeaders(await fetch(request));
+      return withSecurityHeaders(await fetch(request), request);
     }
     if (overrideLang && ACTIVE_LANGS.has(overrideLang.toLowerCase())) {
       const redirected = new URL(url);
@@ -194,6 +238,7 @@ export default {
       const cookieValue = `${COOKIE}=${overrideLang.toLowerCase()}; Path=/; Max-Age=${COOKIE_MAX_AGE}; SameSite=Lax; Secure`;
       return withSecurityHeaders(
         Response.redirect(redirected.toString(), 302),
+        request,
         { 'Set-Cookie': cookieValue },
       );
     }
@@ -202,6 +247,6 @@ export default {
     // `pref-lang`) or by deep-linking with `?lang=xx`. Auto-redirect on
     // Accept-Language alone surprises too many bilingual readers who
     // expect the English version by default; keeping discovery opt-in.
-    return withSecurityHeaders(await fetch(request));
+    return withSecurityHeaders(await fetch(request), request);
   },
 };

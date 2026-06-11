@@ -4,14 +4,122 @@
   <link href="https://sebastienrousseau.com/sv/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/sv/"/>
   <id>https://sebastienrousseau.com/sv/</id>
-  <updated>2026-05-28T23:46:22+00:00</updated>
+  <updated>2026-06-11T00:09:27+00:00</updated>
   <entry>
     <title>CloudCDN: en ritning med öppen källkod för AI-inbyggd edge 2026</title>
     <link href="https://sebastienrousseau.com/sv/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/"/>
     <id>https://sebastienrousseau.com/sv/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/</id>
-    <updated>2026-05-28T23:46:22+00:00</updated>
-    <published>2026-05-28T23:46:22+00:00</published>
+    <updated>2026-06-11T00:09:27+00:00</updated>
+    <published>2026-06-11T00:09:27+00:00</published>
     <summary>CloudCDN är en AI-inbyggd edge-CDN-ritning med öppen källkod: MCP-styrning, Durable Objects-frekvensbegränsning, signerade URL:er och granskningsbarhet.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Banking Resilience Index 2026: AI, moln, kvant, betalningar och tredjepartsrisk</title>
+    <link href="https://sebastienrousseau.com/sv/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/"/>
+    <id>https://sebastienrousseau.com/sv/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/</id>
+    <updated>2026-06-11T00:09:27+00:00</updated>
+    <published>2026-06-11T00:09:27+00:00</published>
+    <summary>Ett bankindex 2026 för operationell motståndskraft som väger AI-risk, koncentrationsrisk i molnet, kvantsäkerhet, betalningskontinuitet och kritisk tredjepartsrisk i ett mått.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Autonomous Treasury Index 2026: agentisk treasury, programmerbar likviditet och tokeniserade insättningar</title>
+    <link href="https://sebastienrousseau.com/sv/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/"/>
+    <id>https://sebastienrousseau.com/sv/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/</id>
+    <updated>2026-06-11T00:09:27+00:00</updated>
+    <published>2026-06-11T00:09:27+00:00</published>
+    <summary>Ett index för 2026 över beredskap för autonom treasury — agentiska arbetsflöden, programmerbar likviditet, tokeniserade insättningar, realtidsbetalningar och kassastyrning.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Multi-rälsbanken 2026: Kort, A2A, stablecoins, RTP, FedNow och Open Banking i en strategi</title>
+    <link href="https://sebastienrousseau.com/sv/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/"/>
+    <id>https://sebastienrousseau.com/sv/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</id>
+    <updated>2026-06-11T00:09:27+00:00</updated>
+    <published>2026-06-11T00:09:27+00:00</published>
+    <summary>FedNow kräver förfinansierad likviditet dygnet runt. ACH är billigt men T+1. USDC avvecklas atomärt men kräver wallet-infrastruktur. Multi-rälsbanken 2026 routar varje betalning efter kostnad, finalitet och likviditetskostnad — driven av en orkestreringsmotor som läser ISO 20022 pacs.008.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Postkvantinfrastruktur för betalningar: varför banker kan välja ersättning framför anpassning av äldre räls</title>
+    <link href="https://sebastienrousseau.com/sv/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/"/>
+    <id>https://sebastienrousseau.com/sv/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</id>
+    <updated>2026-06-11T00:09:27+00:00</updated>
+    <published>2026-06-11T00:09:27+00:00</published>
+    <summary>Postkvantkryptografi tvingar fram ett binärt val för betalningsräls: anpassa RSA/ECC inom SWIFT MT- och ISO 20022-kuvert som aldrig dimensionerats för ML-KEM och ML-DSA, eller ersätt med kryptoagil infrastruktur. Arkitekter måste välja innan HNDL blir operativ förlust.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Digitala tillgångar 2026: infrastrukturövergången bankerna inte kan skjuta upp</title>
+    <link href="https://sebastienrousseau.com/sv/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/"/>
+    <id>https://sebastienrousseau.com/sv/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</id>
+    <updated>2026-06-11T00:09:27+00:00</updated>
+    <published>2026-06-11T00:09:27+00:00</published>
+    <summary>Digitala tillgångar är inte längre en innovationssatsning. De är en arkitekturfråga för avveckling, förvaring och balansräkning. Bankernas strategiska uppgift är infrastrukturdesign under strukturell osäkerhet.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Indexet för grossistbetalningar 2026: ISO 20022, tokeniserade insättningar, realtidsspår och gränsöverskridande avveckling</title>
+    <link href="https://sebastienrousseau.com/sv/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/"/>
+    <id>https://sebastienrousseau.com/sv/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</id>
+    <updated>2026-06-06T06:06:06+00:00</updated>
+    <published>2026-06-06T06:06:06+00:00</published>
+    <summary>Ett index för 2026 som mäter beredskap för grossistbetalningar: ISO 20022-datakvalitet, tokeniserade insättningar, realtidsspår, gränsöverskridande avveckling och likviditetseffektivitet.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Index över molnnativ bankverksamhet 2026: DORA, plattformsteknik, suverän moln och operativ motståndskraft</title>
+    <link href="https://sebastienrousseau.com/sv/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/"/>
+    <id>https://sebastienrousseau.com/sv/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/</id>
+    <updated>2026-06-05T06:06:06+00:00</updated>
+    <published>2026-06-05T06:06:06+00:00</published>
+    <summary>Ett index över molnnativ bankverksamhet 2026 för att mäta DORA-mognad, plattformstekniknivå, koncentrationsrisk i molnet, exit-bevis och operativ motståndskraft.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Quantum-Safe Banking Index 2026: Postkvantkryptografi, QKD, kryptoagilitet och harvest-now-decrypt-later-risk</title>
+    <link href="https://sebastienrousseau.com/sv/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/"/>
+    <id>https://sebastienrousseau.com/sv/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/</id>
+    <updated>2026-06-04T06:06:06+00:00</updated>
+    <published>2026-06-04T06:06:06+00:00</published>
+    <summary>Ett bankindex för kvantsäker beredskap 2026 — NIST:s postkvantstandarder, kryptografisk inventering, kryptoagilitet, QKD och exponering av långlivade data.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Det agentiska AI-indexet för banker 2026: Att mäta autonomi, styrning, revisionsbarhet och affärspåverkan</title>
+    <link href="https://sebastienrousseau.com/sv/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/"/>
+    <id>https://sebastienrousseau.com/sv/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/</id>
+    <updated>2026-06-03T06:06:06+00:00</updated>
+    <published>2026-06-03T06:06:06+00:00</published>
+    <summary>Ett indexramverk för att mäta agentisk AI-mognad i banker, som omfattar autonomi, styrning, revisionsbarhet, tillförlitlighet, kontroller och affärsvärde.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Bankinfrastrukturindex 2026: AI, kvant, moln och wholesale-betalningar</title>
+    <link href="https://sebastienrousseau.com/sv/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/"/>
+    <id>https://sebastienrousseau.com/sv/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/</id>
+    <updated>2026-06-02T06:06:06+00:00</updated>
+    <published>2026-06-02T06:06:06+00:00</published>
+    <summary>Bankinfrastrukturindex 2026 i Stanford AI Index-anda: mäter beredskap inom agentisk AI, kvantsäkerhet, molnnativ motståndskraft och wholesale-betalningar.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Digitala grossistmarknader i Storbritannien: tokeniserade gilts och avveckling</title>
+    <link href="https://sebastienrousseau.com/sv/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/"/>
+    <id>https://sebastienrousseau.com/sv/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</id>
+    <updated>2026-05-30T06:06:06+00:00</updated>
+    <published>2026-05-30T06:06:06+00:00</published>
+    <summary>Storbritanniens Wholesale Digital Markets Champion gör tokeniserade gilts och DLT-avveckling till ett nationellt konkurrenskraftsprojekt 2026.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>ISO 20022 efter migreringen: betaldata som bankprodukter 2026</title>
+    <link href="https://sebastienrousseau.com/sv/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/"/>
+    <id>https://sebastienrousseau.com/sv/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</id>
+    <updated>2026-05-29T06:06:06+00:00</updated>
+    <published>2026-05-29T06:06:06+00:00</published>
+    <summary>ISO 20022 efter migreringen är en möjlighet för betaldata-produkter. Strukturerade adresser, ändamålskoder, fakturadetaljer, utredningsmeddelanden och rikare statushändelser kan bli produkter för avstämning, bedrägeri, likviditet, regelefterlevnad och analys.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>

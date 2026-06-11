@@ -39,7 +39,7 @@ schema: "FAQPage, Article"
 seo_title: "UK Acid Jazz 2026: Mawaka, Wasanni, Albam, Farfaɗowa"
 short_name: "sebastienrousseau"
 subtitle: "Acid jazz a UK na sabuntawa ta hanyar haɗuwar tsofaffin mawaka, fitarwar Acid Jazz Records, bukukuwan jazz funk, masu saurar soul jazz, wasannin kayan kiɗa na Hammond da ƙarfi, da kuma ƙaramar mawaka ta UK jazz da ke dawo da groove zuwa tsakiyar fage."
-tags: "acid jazz, UK jazz, Acid Jazz Records, Brand New Heavies, Galliano, James Taylor Quartet, Ronnie Scott's, Bangs and Talbot, Chris Bangs, Mick Talbot, Mostly Jazz Funk Soul Festival, Cymande, Soul II Soul, Jordan Rakei, jazz funk, soul jazz"
+tags: "acid jazz, UK jazz, Acid Jazz Records, Brand New Heavies, Galliano, James Taylor Quartet, Ronnie Scott's, Bangs and Talbot, Chris Bangs, Mick Talbot, Mostly Jazz Funk Soul Festival, Cymande, Soul II Soul, Jordan Rakei, jazz funk, soul jazz, ISO 20022, post-quantum cryptography, AI, DORA, tokenised deposits, platform engineering, sovereign cloud, cloud native banking, biyan kuɗi na cross-border, stablecoins"
 theme-color: "0, 83, 191"
 title: "Sabuntawar Acid Jazz a UK: Mawaka, Wasanni, Albam na 2026"
 url: "https://sebastienrousseau.com/ha/2026-05-22-uk-acid-jazz-renewal-artists-concerts-albums-2026"
@@ -93,9 +93,9 @@ site_software: "Static Site Generator, Rust"
 <p class="post-lead-heading"><strong>Mahimman bayanai</strong></p>
 <ul class="post-lead-takeaways">
   <li><strong>Lakabi.</strong> Tattarawa ta 2026 na Acid Jazz Records a Bandcamp ta haɗa da Matt Berry, Kevin Fingier, The Brand New Heavies, Billy Valentine, da Mama Terra.</li>
-  <li><strong>Fitarwa.</strong> <em>Smokin' Aces</em> na Bangs &amp; Talbot (23 Janairu 2026, Acid Jazz) ta sake haɗa Chris Bangs da Mick Talbot tare da sautukan groove, funk, soul, da haɗewar duniya.</li>
+  <li><strong>Fitarwa.</strong> <em>Smokin' Aces</em> na Bangs & Talbot (23 Janairu 2026, Acid Jazz) ta sake haɗa Chris Bangs da Mick Talbot tare da sautukan groove, funk, soul, da haɗewar duniya.</li>
   <li><strong>Wasan kwaikwayo.</strong> The Brand New Heavies tare da Galliano a The Glasshouse da The James Taylor Quartet a Ronnie Scott's sune mafi bayyanannun alamomi na acid jazz a cikin jerin 2026.</li>
-  <li><strong>Biki.</strong> Mostly Jazz Funk &amp; Soul Festival (10–12 Yuli 2026) na tsara Soul II Soul, Cymande, Jordan Rakei, da Sampa The Great tare da tsofaffin mawaka na jazz funk.</li>
+  <li><strong>Biki.</strong> Mostly Jazz Funk & Soul Festival (10–12 Yuli 2026) na tsara Soul II Soul, Cymande, Jordan Rakei, da Sampa The Great tare da tsofaffin mawaka na jazz funk.</li>
 </ul>
 <p class="post-lead-related"><strong>Ƙarin karatu:</strong> <a href="https://sebastienrousseau.com/2026-05-21-tokenised-deposits-banking-transformation-2026/index.html">Kuɗaɗen da Aka Alamta: Canjin Harkar Banki da ke Ci Gaba a 2026</a>.</p>
 </aside>
@@ -231,6 +231,6 @@ Haɗin ita ce groove, ba tsattsauran lakaban nau'in kiɗa ba. Bukukuwa kamar Mos
 - Mostly Jazz Funk & Soul Festival, (2026). [Mostly Jazz Funk & Soul Festival 2026 ⧉](https://mostlyjazz.co.uk "Mostly Jazz Funk & Soul Festival").
 - Marlbank, (2026). [Top UK jazz albums in 2026 so far ⧉](https://marlbank.net/top-jazz-in-2026/top-uk-jazz-albums-in-2026-so-far/ "Top UK jazz albums in 2026 so far").
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Game da marubucin"><img alt="Hoton Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Babban masanin fasahar banki yana rubutu kan amfani da AI, ƙaura na ISO 20022, sirrin bayan ƙididdiga don sabis na kuɗi, da kuma canjin tsarin biyan kuɗi na manyan-manya.</span><span class="author-credentials">Shekaru 20+ a HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Cikakken bayani</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Game da marubucin"><img alt="Hoton Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Babban masanin fasahar banki yana rubutu kan amfani da AI, ƙaura na ISO 20022, sirrin bayan ƙididdiga don sabis na kuɗi, da kuma canjin tsarin biyan kuɗi na manyan-manya.</span><span class="author-credentials">Shekaru 20+ a HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Cikakken bayani</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">An sake duba ta ƙarshe <time datetime="2026-05-22">2026-05-22</time>.</p>
 <!-- enrich-end -->

@@ -1,0 +1,44 @@
+# pre-commit framework config to catch quality/validation failures locally.
+# Install pre-commit tool: pip install pre-commit
+# Register git hooks: pre-commit install
+exclude: ^(docs|public|jscpd-report)/
+
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-yaml
+      - id: check-json
+      - id: check-toml
+      - id: check-added-large-files
+
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.4.4
+    hooks:
+      - id: ruff
+        args: [ --fix ]
+      - id: ruff-format
+
+  - repo: local
+    hooks:
+      - id: check-naming-conventions
+        name: Check Naming Conventions
+        entry: python3 scripts/dev/check_naming_conventions.py
+        language: system
+        pass_filenames: false
+        always_run: true
+
+      - id: automate-tags
+        name: Automate and Optimize Tags
+        entry: python3 scripts/editorial/automate_tags.py
+        language: system
+        pass_filenames: false
+        always_run: true
+      - id: check-added-ds-store
+        name: Reject .DS_Store
+        entry: bash -c 'if git diff --cached --name-only | grep -q "\\.DS_Store$"; then echo "refusing to commit .DS_Store"; exit 1; fi'
+        language: system
+        pass_filenames: false
+        always_run: true

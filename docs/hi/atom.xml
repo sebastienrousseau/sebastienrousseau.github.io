@@ -4,14 +4,122 @@
   <link href="https://sebastienrousseau.com/hi/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/hi/"/>
   <id>https://sebastienrousseau.com/hi/</id>
-  <updated>2026-05-28T23:46:22+00:00</updated>
+  <updated>2026-06-11T00:09:27+00:00</updated>
   <entry>
     <title>CloudCDN: 2026 में AI-नेटिव एज का ओपन सोर्स ब्लूप्रिंट</title>
     <link href="https://sebastienrousseau.com/hi/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/"/>
     <id>https://sebastienrousseau.com/hi/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/</id>
-    <updated>2026-05-28T23:46:22+00:00</updated>
-    <published>2026-05-28T23:46:22+00:00</published>
+    <updated>2026-06-11T00:09:27+00:00</updated>
+    <published>2026-06-11T00:09:27+00:00</published>
     <summary>CloudCDN एक ओपन सोर्स, AI-नेटिव एज CDN ब्लूप्रिंट है — MCP-नियंत्रित अवसंरचना, Durable Objects रेट लिमिटिंग, हस्ताक्षरित URL, सुगम्यता और ऑडिट योग्यता।</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>बैंकिंग लचीलापन सूचकांक 2026: AI, क्लाउड, क्वांटम, भुगतान और तृतीय-पक्ष संकेन्द्रण जोखिम</title>
+    <link href="https://sebastienrousseau.com/hi/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/"/>
+    <id>https://sebastienrousseau.com/hi/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/</id>
+    <updated>2026-06-11T00:09:27+00:00</updated>
+    <published>2026-06-11T00:09:27+00:00</published>
+    <summary>2026 का बैंकिंग लचीलापन सूचकांक — AI जोखिम, क्लाउड संकेन्द्रण, क्वांटम-सुरक्षित सुरक्षा, भुगतान निरंतरता और महत्वपूर्ण तृतीय-पक्ष निर्भरता को एक मापने योग्य परिचालन ढाँचे में संयोजित।</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>2026 में स्वायत्त ट्रेज़री सूचकांक: एजेंटिक ट्रेज़री, प्रोग्राम-योग्य तरलता, टोकनाइज़्ड जमा और रियल-टाइम नकद नियंत्रण</title>
+    <link href="https://sebastienrousseau.com/hi/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/"/>
+    <id>https://sebastienrousseau.com/hi/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/</id>
+    <updated>2026-06-11T00:09:27+00:00</updated>
+    <published>2026-06-11T00:09:27+00:00</published>
+    <summary>स्वायत्त ट्रेज़री तत्परता का 2026 सूचकांक — एजेंटिक ट्रेज़री कार्यप्रवाह, प्रोग्राम-योग्य तरलता, टोकनाइज़्ड जमा, रियल-टाइम भुगतान और स्वचालित नकद नियंत्रण को एक परिचालन-मॉडल ताने-बाने में मापना।</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>2026 में क्लाउड-नेटिव बैंकिंग इंडेक्स: DORA, प्लेटफ़ॉर्म इंजीनियरिंग, सॉवरेन क्लाउड और परिचालन लचीलापन</title>
+    <link href="https://sebastienrousseau.com/hi/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/"/>
+    <id>https://sebastienrousseau.com/hi/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/</id>
+    <updated>2026-06-11T00:09:27+00:00</updated>
+    <published>2026-06-11T00:09:27+00:00</published>
+    <summary>2026 का क्लाउड-नेटिव बैंकिंग इंडेक्स — DORA तत्परता, प्लेटफ़ॉर्म इंजीनियरिंग परिपक्वता, क्लाउड संकेंद्रण जोखिम, एग्ज़िट साक्ष्य और परिचालन लचीलापन मापने का ढाँचा।</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>2026 का मल्टी-रेल बैंक: कार्ड, A2A, स्टेबलकॉइन, RTP, FedNow और ओपन बैंकिंग, एक ही रणनीति में</title>
+    <link href="https://sebastienrousseau.com/hi/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/"/>
+    <id>https://sebastienrousseau.com/hi/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</id>
+    <updated>2026-06-11T00:09:27+00:00</updated>
+    <published>2026-06-11T00:09:27+00:00</published>
+    <summary>FedNow को 24/7 पूर्व-वित्तपोषित तरलता चाहिए। ACH सस्ता है पर T+1। USDC परमाणु निपटान देता है पर वॉलेट बुनियादी ढाँचा माँगता है। 2026 का मल्टी-रेल बैंक हर भुगतान को लागत, अंतिमता और तरलता-लागत पर रूट करता है।</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>पोस्ट-क्वांटम भुगतान बुनियादी ढाँचा: बैंक विरासत रेलों का अनुकूलन क्यों नहीं, प्रतिस्थापन क्यों कर सकते हैं</title>
+    <link href="https://sebastienrousseau.com/hi/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/"/>
+    <id>https://sebastienrousseau.com/hi/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</id>
+    <updated>2026-06-11T00:09:27+00:00</updated>
+    <published>2026-06-11T00:09:27+00:00</published>
+    <summary>पोस्ट-क्वांटम क्रिप्टोग्राफी भुगतान रेलों पर बाइनरी विकल्प थोपती है: SWIFT MT और ISO 20022 आवरणों में RSA/ECC का अनुकूलन, या क्रिप्टो-चपल बुनियादी ढाँचे से प्रतिस्थापन। आर्किटेक्ट्स को HNDL नुकसान बनने से पहले तय करना होगा।</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>यूके के थोक डिजिटल बाजार: टोकनीकृत गिल्ट्स, निपटान एवं नया चैम्पियन पद</title>
+    <link href="https://sebastienrousseau.com/hi/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/"/>
+    <id>https://sebastienrousseau.com/hi/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</id>
+    <updated>2026-06-11T00:09:27+00:00</updated>
+    <published>2026-06-11T00:09:27+00:00</published>
+    <summary>यूके का Wholesale Digital Markets Champion पद टोकनीकृत थोक वित्त को राष्ट्रीय प्रतिस्पर्धात्मकता परियोजना बनाता है — गिल्ट्स, निपटान, साक्ष्य।</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>डिजिटल संपत्तियाँ 2026: बैंक जिसे टाल नहीं सकते वह अवसंरचना संक्रमण</title>
+    <link href="https://sebastienrousseau.com/hi/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/"/>
+    <id>https://sebastienrousseau.com/hi/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</id>
+    <updated>2026-06-11T00:09:27+00:00</updated>
+    <published>2026-06-11T00:09:27+00:00</published>
+    <summary>डिजिटल संपत्तियाँ अब नवाचार दांव नहीं रहीं। यह निपटान, कस्टडी और बैलेंस शीट की संरचनात्मक प्रश्न है। बैंकों का रणनीतिक कार्य संरचनात्मक अनिश्चितता के बीच अवसंरचना डिज़ाइन करना है।</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>2026 में थोक भुगतान सूचकांक: ISO 20022, टोकनयुक्त जमा, रियल-टाइम रेल्स और सीमा पार निपटान</title>
+    <link href="https://sebastienrousseau.com/hi/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/"/>
+    <id>https://sebastienrousseau.com/hi/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</id>
+    <updated>2026-06-06T06:06:06+00:00</updated>
+    <published>2026-06-06T06:06:06+00:00</published>
+    <summary>2026 के लिए थोक भुगतान तत्परता का सूचकांक: ISO 20022 डेटा गुणवत्ता, टोकनयुक्त जमा, रियल-टाइम रेल्स, सीमा पार निपटान और तरलता दक्षता मापना।</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>2026 में क्वांटम-सेफ बैंकिंग सूचकांक: पोस्ट-क्वांटम क्रिप्टोग्राफी, QKD, क्रिप्टो-एजिलिटी और हार्वेस्ट-नाउ-डिक्रिप्ट-लेटर जोखिम</title>
+    <link href="https://sebastienrousseau.com/hi/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/"/>
+    <id>https://sebastienrousseau.com/hi/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/</id>
+    <updated>2026-06-04T06:06:06+00:00</updated>
+    <published>2026-06-04T06:06:06+00:00</published>
+    <summary>2026 के लिए क्वांटम-सेफ तैयारी का बैंकिंग सूचकांक: NIST पोस्ट-क्वांटम मानक, क्रिप्टोग्राफिक इन्वेंट्री, क्रिप्टो-एजिलिटी, QKD और दीर्घजीवी डेटा का जोखिम।</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>2026 में बैंकों के लिए एजेंटिक AI सूचकांक: स्वायत्तता, गवर्नेंस, ऑडिटेबिलिटी और व्यावसायिक प्रभाव मापना</title>
+    <link href="https://sebastienrousseau.com/hi/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/"/>
+    <id>https://sebastienrousseau.com/hi/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/</id>
+    <updated>2026-06-03T06:06:06+00:00</updated>
+    <published>2026-06-03T06:06:06+00:00</published>
+    <summary>टियर-1 बैंकों में एजेंटिक AI तत्परता मापने का सूचकांक-शैली ढाँचा — स्वायत्तता, गवर्नेंस, ऑडिटेबिलिटी, विश्वसनीयता, नियंत्रण और व्यावसायिक मूल्य को कवर करता है।</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>2026 बैंकिंग बुनियादी ढाँचा सूचकांक: एजेंटिक AI, क्वांटम-सेफ़ सुरक्षा, क्लाउड-नेटिव लचीलापन और थोक भुगतान</title>
+    <link href="https://sebastienrousseau.com/hi/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/"/>
+    <id>https://sebastienrousseau.com/hi/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/</id>
+    <updated>2026-06-02T06:06:06+00:00</updated>
+    <published>2026-06-02T06:06:06+00:00</published>
+    <summary>2026 के लिए Stanford AI Index से प्रेरित बैंकिंग बुनियादी ढाँचा सूचकांक — एजेंटिक AI, क्वांटम-सेफ़ सुरक्षा, क्लाउड-नेटिव लचीलापन और थोक भुगतान में बैंक तत्परता मापता है।</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>ISO 20022 माइग्रेशन के बाद: भुगतान डेटा को 2026 में बैंकिंग उत्पादों में बदलना</title>
+    <link href="https://sebastienrousseau.com/hi/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/"/>
+    <id>https://sebastienrousseau.com/hi/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</id>
+    <updated>2026-05-29T06:06:06+00:00</updated>
+    <published>2026-05-29T06:06:06+00:00</published>
+    <summary>ISO 20022 माइग्रेशन के बाद डेटा उत्पाद अवसर है। संरचित पते, उद्देश्य कोड, चालान विवरण और समृद्ध स्थिति घटनाएँ मिलान, धोखाधड़ी, तरलता और अनुपालन उत्पाद बनती हैं।</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>

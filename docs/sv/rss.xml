@@ -6,14 +6,14 @@
     <description>Artiklar på svenska: tillämpad AI, ISO 20022-betalningar, postkvantkryptografi och transformationen av grossistbetalningar.</description>
     <atom:link href="https://sebastienrousseau.com/sv/rss.xml" rel="self" type="application/rss+xml"/>
     <language>sv-SE</language>
-    <lastBuildDate>Thu, 28 May 2026 23:46:22 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 11 Jun 2026 00:09:27 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Alla rättigheter förbehållna.</copyright>
     <item>
       <title>CloudCDN: en ritning med öppen källkod för AI-inbyggd edge 2026</title>
       <link>https://sebastienrousseau.com/sv/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/</link>
       <description>CloudCDN är en AI-inbyggd edge-CDN-ritning med öppen källkod: MCP-styrning, Durable Objects-frekvensbegränsning, signerade URL:er och granskningsbarhet.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/sv/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/</guid>
-      <pubDate>Thu, 28 May 2026 23:46:22 +0000</pubDate>
+      <pubDate>Thu, 11 Jun 2026 00:09:27 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/alis-po-IdVNRv-5wJo.webp" type="image/webp" length="0"/>
       <category>CloudCDN</category>
@@ -26,6 +26,227 @@
       <category>passkeys</category>
       <category>SLSA</category>
       <category>edge-infrastruktur</category>
+    </item>
+    <item>
+      <title>Banking Resilience Index 2026: AI, moln, kvant, betalningar och tredjepartsrisk</title>
+      <link>https://sebastienrousseau.com/sv/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/</link>
+      <description>Ett bankindex 2026 för operationell motståndskraft som väger AI-risk, koncentrationsrisk i molnet, kvantsäkerhet, betalningskontinuitet och kritisk tredjepartsrisk i ett mått.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/sv/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/</guid>
+      <pubDate>Thu, 11 Jun 2026 00:09:27 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/simone-hutsch-oqlh6RsrYB0.webp" type="image/webp" length="0"/>
+      <category>bankindex motståndskraft 2026</category>
+      <category>DORA operationell motståndskraft</category>
+      <category>AI-operativ risk</category>
+      <category>koncentrationsrisk moln</category>
+      <category>kvantrisk banker</category>
+      <category>betalningskontinuitet</category>
+    </item>
+    <item>
+      <title>Autonomous Treasury Index 2026: agentisk treasury, programmerbar likviditet och tokeniserade insättningar</title>
+      <link>https://sebastienrousseau.com/sv/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/</link>
+      <description>Ett index för 2026 över beredskap för autonom treasury — agentiska arbetsflöden, programmerbar likviditet, tokeniserade insättningar, realtidsbetalningar och kassastyrning.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/sv/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/</guid>
+      <pubDate>Thu, 11 Jun 2026 00:09:27 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/christopher-burns-Kj2SaNHG-hg.webp" type="image/webp" length="0"/>
+      <category>autonom treasury 2026</category>
+      <category>agentisk treasury</category>
+      <category>programmerbar likviditet</category>
+      <category>tokeniserade insättningar treasury</category>
+      <category>realtidstreasury</category>
+      <category>kassahantering AI</category>
+    </item>
+    <item>
+      <title>Multi-rälsbanken 2026: Kort, A2A, stablecoins, RTP, FedNow och Open Banking i en strategi</title>
+      <link>https://sebastienrousseau.com/sv/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</link>
+      <description>FedNow kräver förfinansierad likviditet dygnet runt. ACH är billigt men T+1. USDC avvecklas atomärt men kräver wallet-infrastruktur. Multi-rälsbanken 2026 routar varje betalning efter kostnad, finalitet och likviditetskostnad — driven av en orkestreringsmotor som läser ISO 20022 pacs.008.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/sv/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</guid>
+      <pubDate>Thu, 11 Jun 2026 00:09:27 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
+      <category>betalningsorkestrering</category>
+      <category>FedNow vs RTP</category>
+      <category>FedNow vs ACH</category>
+      <category>stablecoin-avveckling</category>
+      <category>USDC atomär avveckling</category>
+      <category>ISO 20022 pacs.008</category>
+      <category>konto-till-konto A2A</category>
+      <category>Open Banking API:er</category>
+      <category>förfinansierad likviditet</category>
+      <category>likviditetsfälla dygnet runt</category>
+      <category>multi-rälsbank 2026</category>
+      <category>routningsmotor för betalningar</category>
+      <category>ERP-avstämning</category>
+    </item>
+    <item>
+      <title>Postkvantinfrastruktur för betalningar: varför banker kan välja ersättning framför anpassning av äldre räls</title>
+      <link>https://sebastienrousseau.com/sv/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</link>
+      <description>Postkvantkryptografi tvingar fram ett binärt val för betalningsräls: anpassa RSA/ECC inom SWIFT MT- och ISO 20022-kuvert som aldrig dimensionerats för ML-KEM och ML-DSA, eller ersätt med kryptoagil infrastruktur. Arkitekter måste välja innan HNDL blir operativ förlust.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/sv/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</guid>
+      <pubDate>Thu, 11 Jun 2026 00:09:27 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp" type="image/webp" length="0"/>
+      <category>postkvantkryptografi</category>
+      <category>PQC-betalningar</category>
+      <category>kryptoagilitet</category>
+      <category>samla-nu-dekryptera-senare</category>
+      <category>HNDL</category>
+      <category>NIST postkvantstandarder</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>FIPS 203</category>
+      <category>FIPS 204</category>
+      <category>migration av betalningsräls</category>
+      <category>ISO 20022 PQC</category>
+      <category>ersättning av SWIFT MT</category>
+      <category>HSM</category>
+      <category>PKI-kollaps</category>
+      <category>operativ motståndskraft</category>
+      <category>Quantum Computing Cybersecurity Preparedness Act</category>
+    </item>
+    <item>
+      <title>Digitala tillgångar 2026: infrastrukturövergången bankerna inte kan skjuta upp</title>
+      <link>https://sebastienrousseau.com/sv/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</link>
+      <description>Digitala tillgångar är inte längre en innovationssatsning. De är en arkitekturfråga för avveckling, förvaring och balansräkning. Bankernas strategiska uppgift är infrastrukturdesign under strukturell osäkerhet.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/sv/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</guid>
+      <pubDate>Thu, 11 Jun 2026 00:09:27 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/corporate-finance.webp" type="image/webp" length="0"/>
+      <category>digitala tillgångar 2026</category>
+      <category>tokeniserade reala tillgångar</category>
+      <category>stablecoins bank</category>
+      <category>tokeniserade insättningar</category>
+      <category>förvaring digitala tillgångar</category>
+      <category>DLT bank</category>
+      <category>avvecklingsinfrastruktur</category>
+      <category>säkerhetsmobilitet</category>
+      <category>programmerbara pengar</category>
+      <category>bankstrategi digitala tillgångar</category>
+    </item>
+    <item>
+      <title>Indexet för grossistbetalningar 2026: ISO 20022, tokeniserade insättningar, realtidsspår och gränsöverskridande avveckling</title>
+      <link>https://sebastienrousseau.com/sv/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</link>
+      <description>Ett index för 2026 som mäter beredskap för grossistbetalningar: ISO 20022-datakvalitet, tokeniserade insättningar, realtidsspår, gränsöverskridande avveckling och likviditetseffektivitet.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/sv/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</guid>
+      <pubDate>Sat, 06 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/miquel-parera-NsXLehhHx1Q.webp" type="image/webp" length="0"/>
+      <category>grossistbetalningar 2026</category>
+      <category>ISO 20022</category>
+      <category>tokeniserade insättningar</category>
+      <category>Project Agora</category>
+      <category>gränsöverskridande betalningar</category>
+      <category>realtidsbetalningar</category>
+      <category>strukturerade adressdata</category>
+      <category>datakvalitet i betalningar</category>
+    </item>
+    <item>
+      <title>Index över molnnativ bankverksamhet 2026: DORA, plattformsteknik, suverän moln och operativ motståndskraft</title>
+      <link>https://sebastienrousseau.com/sv/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/</link>
+      <description>Ett index över molnnativ bankverksamhet 2026 för att mäta DORA-mognad, plattformstekniknivå, koncentrationsrisk i molnet, exit-bevis och operativ motståndskraft.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/sv/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/</guid>
+      <pubDate>Fri, 05 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/quang-nguyen-vinh-2649403.webp&w=1600&format=webp&q=85" type="image/webp" length="0"/>
+      <category>molnnativ bankverksamhet 2026</category>
+      <category>DORA banker</category>
+      <category>molnkoncentrationsrisk</category>
+      <category>plattformsteknik banker</category>
+      <category>IKT-tredjepartsrisk</category>
+      <category>molnexitstrategi</category>
+      <category>suverän moln</category>
+    </item>
+    <item>
+      <title>Quantum-Safe Banking Index 2026: Postkvantkryptografi, QKD, kryptoagilitet och harvest-now-decrypt-later-risk</title>
+      <link>https://sebastienrousseau.com/sv/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/</link>
+      <description>Ett bankindex för kvantsäker beredskap 2026 — NIST:s postkvantstandarder, kryptografisk inventering, kryptoagilitet, QKD och exponering av långlivade data.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/sv/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/</guid>
+      <pubDate>Thu, 04 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>kvantsäker bank 2026</category>
+      <category>postkvantkryptografi banker</category>
+      <category>NIST FIPS 203</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>SLH-DSA</category>
+      <category>kryptoagilitet</category>
+      <category>QKD bank</category>
+    </item>
+    <item>
+      <title>Det agentiska AI-indexet för banker 2026: Att mäta autonomi, styrning, revisionsbarhet och affärspåverkan</title>
+      <link>https://sebastienrousseau.com/sv/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/</link>
+      <description>Ett indexramverk för att mäta agentisk AI-mognad i banker, som omfattar autonomi, styrning, revisionsbarhet, tillförlitlighet, kontroller och affärsvärde.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/sv/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/</guid>
+      <pubDate>Wed, 03 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>agentisk AI bank 2026</category>
+      <category>AI-agenter banker</category>
+      <category>AI-styrning finansiella tjänster</category>
+      <category>autonoma bankarbetsflöden</category>
+      <category>modellrisk</category>
+      <category>AI-revisionsbarhet</category>
+      <category>ISO 20022</category>
+      <category>SR 11-7</category>
+      <category>DORA</category>
+      <category>OAuth</category>
+      <category>OPA</category>
+    </item>
+    <item>
+      <title>Bankinfrastrukturindex 2026: AI, kvant, moln och wholesale-betalningar</title>
+      <link>https://sebastienrousseau.com/sv/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/</link>
+      <description>Bankinfrastrukturindex 2026 i Stanford AI Index-anda: mäter beredskap inom agentisk AI, kvantsäkerhet, molnnativ motståndskraft och wholesale-betalningar.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/sv/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/</guid>
+      <pubDate>Tue, 02 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/miguel-sousa-ejIF-pJhYkM.webp" type="image/webp" length="0"/>
+      <category>bankinfrastrukturindex 2026</category>
+      <category>agentisk AI bank</category>
+      <category>kvantsäker bank</category>
+      <category>molnnativ bank</category>
+      <category>wholesale-betalningar</category>
+      <category>ISO 20022</category>
+      <category>DORA</category>
+      <category>Project Agora</category>
+      <category>tokeniserade insättningar</category>
+    </item>
+    <item>
+      <title>Digitala grossistmarknader i Storbritannien: tokeniserade gilts och avveckling</title>
+      <link>https://sebastienrousseau.com/sv/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</link>
+      <description>Storbritanniens Wholesale Digital Markets Champion gör tokeniserade gilts och DLT-avveckling till ett nationellt konkurrenskraftsprojekt 2026.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/sv/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</guid>
+      <pubDate>Sat, 30 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>digitala grossistmarknader Storbritannien 2026</category>
+      <category>Wholesale Digital Markets Champion</category>
+      <category>tokeniserade gilts</category>
+      <category>tokeniserad grossistfinansiering</category>
+      <category>DSS</category>
+      <category>intradagsrepo</category>
+      <category>atomär DvP</category>
+      <category>City i London</category>
+      <category>avveckling</category>
+    </item>
+    <item>
+      <title>ISO 20022 efter migreringen: betaldata som bankprodukter 2026</title>
+      <link>https://sebastienrousseau.com/sv/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</link>
+      <description>ISO 20022 efter migreringen är en möjlighet för betaldata-produkter. Strukturerade adresser, ändamålskoder, fakturadetaljer, utredningsmeddelanden och rikare statushändelser kan bli produkter för avstämning, bedrägeri, likviditet, regelefterlevnad och analys.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/sv/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</guid>
+      <pubDate>Fri, 29 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/humphrey-muleba-1660004.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>ISO 20022 2026</category>
+      <category>strukturerad adress</category>
+      <category>CBPR+</category>
+      <category>betaldata-produkter</category>
+      <category>ändamålskoder</category>
+      <category>företagskassör</category>
+      <category>avstämning</category>
+      <category>sanktionsscreening</category>
+      <category>bedrägeridetektering</category>
     </item>
     <item>
       <title>DORA, EU:s AI-förordning och datasuveränitet: bankernas efterlevnadsstack 2026</title>
@@ -50,7 +271,7 @@
       <guid isPermaLink="true">https://sebastienrousseau.com/sv/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/</guid>
       <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <enclosure url="https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp" type="image/webp" length="0"/>
       <category>AI-betalningar 2026</category>
       <category>betalningsbedrägeri</category>
       <category>betalningsroutning</category>
@@ -254,7 +475,7 @@
       <guid isPermaLink="true">https://sebastienrousseau.com/sv/2026-05-19-global-wholesale-payments-economics-2026/</guid>
       <pubDate>Tue, 19 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/meiying-ng-OrwkD-iWgqg.webp" type="image/webp" length="0"/>
+      <enclosure url="https://cloudcdn.pro/stocks/images/miguel-sousa-ejIF-pJhYkM.webp" type="image/webp" length="0"/>
       <category>stora betalningar 2026</category>
       <category>global betalningsekonomi</category>
       <category>ISO 20022</category>

@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Thu, 28 May 2026 06:06:06 +0000" id="date" />
+    <meta itemprop="dateModified" content="2026-05-28" id="last-modified" />
+    <title>数字资产 2026：基础设施转型不可缓 — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="数字资产已不再是创新押注，而是关于结算、托管与资产负债表的架构问题；银行的战略任务是在结构性不确定中设计基础设施。">
+<meta name="keywords" content="数字资产 2026, 代币化现实资产, 稳定币银行, 代币化存款, 数字资产托管, DLT 银行, 结算基础设施, 抵押品流动性, 可编程货币, 银行数字资产战略">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Digital Assets 2026">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-3pPSG2N/ITqejJes3nbQTB0v/4TjQtqZaOO42h9QcSY=' 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-JR7ke1mZ0vz4h7uq7I7D2KB0OKgFiICzHvT5CNcU8F0=' 'sha256-ZVTNuRpGm37mw1NlhCIKMc3wZ949tN2FwpSA7lB8m8E=' 'sha256-atPt7lwK4hT3r6Xs4k2AP8qDGM2edxt4UelcELL6NLQ=' 'self' 'inline-speculation-rules' https://cdn.jsdelivr.net https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' https://cloudcdn.pro https://www.google.com https://open.spotify.com;
+        img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/zh-hans/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/newsreader-latin.woff2" crossorigin />
+    <link rel="stylesheet" href="/fonts/fonts.css" />
+    <!-- Preload the LCP hero portrait so it doesn't compete with the
+         render-blocking JS bundle on throttled mobile connections.
+         Lighthouse-simulated Slow-4G has been pinning LCP at ~5.6s; the
+         observed (real-network) LCP is 165 ms. This hint pulls the
+         synthetic LCP in line with the observed value. -->
+    <link rel="preload" as="image" href="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=1200&format=webp&q=85" fetchpriority="high">
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script>(function(){try{var saved=localStorage.getItem("theme");var prefersDark=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;var theme=saved||(prefersDark?"dark":"light");document.documentElement.setAttribute("data-theme",theme);}catch(e){}})();</script>
+
+    <link rel="stylesheet" href="/_csp/4724896d11ec6663.css" integrity="sha256-SFQ1AngSMlx94d5FmN1lWSKPs5RL6Y8BQf0nIEBLd7g= sha256-6BJkWGvqh3blXQksn+ynhkpoqcrJzzWhSKVuLVBJY4s=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Atom 订阅源" href="/zh-hans/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="数字资产 2026：基础设施转型不可缓 — Sebastien Rousseau">
+<meta property="og:description" content="数字资产已不再是创新押注，而是关于结算、托管与资产负债表的架构问题；银行的战略任务是在结构性不确定中设计基础设施。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/zh-hans/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/">
+<meta property="og:image" content="https://cloudcdn.pro/stocks/images/corporate-finance.webp">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="数字资产 2026：基础设施转型不可缓 — Sebastien Rousseau">
+<meta name="twitter:description" content="数字资产已不再是创新押注，而是关于结算、托管与资产负债表的架构问题；银行的战略任务是在结构性不确定中设计基础设施。">
+<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/corporate-finance.webp">
+<link rel="canonical" href="https://sebastienrousseau.com/zh-hans/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" /><link rel="alternate" hreflang="bn" href="https://sebastienrousseau.com/bn/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" /><link rel="alternate" hreflang="cs" href="https://sebastienrousseau.com/cs/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" /><link rel="alternate" hreflang="fil" href="https://sebastienrousseau.com/fil/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" /><link rel="alternate" hreflang="ha" href="https://sebastienrousseau.com/ha/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" /><link rel="alternate" hreflang="he" href="https://sebastienrousseau.com/he/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" /><link rel="alternate" hreflang="hi" href="https://sebastienrousseau.com/hi/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" /><link rel="alternate" hreflang="id" href="https://sebastienrousseau.com/id/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" /><link rel="alternate" hreflang="nl" href="https://sebastienrousseau.com/nl/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" /><link rel="alternate" hreflang="pl" href="https://sebastienrousseau.com/pl/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" /><link rel="alternate" hreflang="ro" href="https://sebastienrousseau.com/ro/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" /><link rel="alternate" hreflang="sv" href="https://sebastienrousseau.com/sv/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" /><link rel="alternate" hreflang="th" href="https://sebastienrousseau.com/th/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" /><link rel="alternate" hreflang="tr" href="https://sebastienrousseau.com/tr/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" /><link rel="alternate" hreflang="uk" href="https://sebastienrousseau.com/uk/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" /><link rel="alternate" hreflang="vi" href="https://sebastienrousseau.com/vi/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" /><link rel="alternate" hreflang="yo" href="https://sebastienrousseau.com/yo/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" integrity="sha256-tV/7vAgYDUuBQbSGEPjXL/JC0sD7QpSxXCGKT4ALhh8= sha256-dvm1KF9mEWIapL8BE0nyFlHaKSf6TsjZZoQcJeRPraI=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">跳至主要内容</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="切换导航" />
+      <div class="wrap">
+        <a class="ap-brand" href="/zh-hans/index.html" aria-label="Sebastien Rousseau 首页">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="主导航">
+          <ul class="ap-menu">
+            <li><a href="/zh-hans/guanyu/index.html">关于</a></li>
+            <li><a href="/zh-hans/wenzhang/index.html" aria-current="page" class="active">文章</a></li>
+            <li><a href="/zh-hans/lunwen/index.html">论文与白皮书</a></li>
+            <li><a href="/zh-hans/zhuti/index.html">主题</a></li>
+            <li><a href="/zh-hans/xiangmu/index.html">项目</a></li>
+            <li><a href="/zh-hans/boqing/index.html">播放列表</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="切换到深色主题" aria-pressed="false" title="切换主题">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="搜索（Cmd 或 Ctrl + K）" title="搜索（⌘K）">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="语言">
+            <button type="button" class="ap-lang-toggle" aria-label="ZH，切换语言" aria-expanded="false" aria-haspopup="menu" title="切换语言">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">ZH</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <a class="ap-lang-item" href="/bn/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
+                <a class="ap-lang-item" href="/cs/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
+                <a class="ap-lang-item" href="/de/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <a class="ap-lang-item" href="/fil/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
+                <a class="ap-lang-item" href="/ha/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
+                <a class="ap-lang-item" href="/he/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
+                <a class="ap-lang-item" href="/hi/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <a class="ap-lang-item" href="/id/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
+                <a class="ap-lang-item" href="/it/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <a class="ap-lang-item" href="/pl/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
+                <a class="ap-lang-item" href="/pt-br/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <a class="ap-lang-item" href="/ro/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
+                <a class="ap-lang-item" href="/ru/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <a class="ap-lang-item" href="/sv/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
+                <a class="ap-lang-item" href="/th/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
+                <a class="ap-lang-item" href="/tr/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
+                <a class="ap-lang-item" href="/uk/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" data-lang="uk" role="menuitem">🇺🇦 Українська</a>
+                <a class="ap-lang-item" href="/vi/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
+                <a class="ap-lang-item" href="/yo/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
+                <a class="ap-lang-item" href="/zh-hans/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/zh-hans/lianxi/index.html" aria-label="联系我">联系我 ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="切换导航">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>数字资产 2026：基础设施转型不可缓</h1>
+      <p class="sub">稳定币、代币化存款与现实资产代币化正汇聚为结算基础设施问题。能为编排、控制与多轨共存而设计的银行，将塑造未来十年的资本市场。</p>
+    <nav class="article-tags" aria-label="Topics"><a href="/tags/index.html#h3-2026" class="article-tag" rel="tag">数字资产 2026</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">代币化现实资产</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">稳定币银行</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">代币化存款</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">数字资产托管</a><a href="/tags/index.html#h3-dlt" class="article-tag" rel="tag">DLT 银行</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">结算基础设施</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">抵押品流动性</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">可编程货币</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">银行数字资产战略</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2026-05-28T06:06:06+00:00" class="meta-pub">Published 28 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Estimated read time">2 min read</span></div></section><figure class="article-banner"><img src="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&w=1600&format=webp&q=85" alt="Banner for: 数字资产 2026：基础设施转型不可缓" width="1200" height="675" fetchpriority="high" decoding="async" /></figure>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>Contents</h2><ol><li><a href="#2026">为何2026年是数字资产升格为架构议题的拐点</a></li><li><a href="#section-2">三类资产：经济学不同，架构亦不同</a></li><li><a href="#section-6">对银行的影响：风险中的收入与可触达的收入</a></li><li><a href="#section-7">真正重要的架构原则</a></li><li><a href="#section-12">风险控制：为何反洗钱、托管与智能合约是增长约束</a></li><li><a href="#section-16">监管：意图趋同，架构发散</a></li><li><a href="#section-17">不同银行类型的含义</a></li><li><a href="#section-22">五项可落地步骤</a></li><li><a href="#section-23">结论</a></li><li><a href="#section-24">常见问题</a></li><li><a href="#section-25">参考资料</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> 数字资产已不再是创新押注，而是关于结算、托管与资产负债表的架构问题；银行的战略任务是在结构性不确定中设计基础设施。</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>为何2026年是数字资产升格为架构议题的拐点.</strong> 数字资产议题的重心已经转移。问题不再是区块链技术在金融服务中是否有位置，而是在价值链的哪些环节——结算、托管、发行、抵押品管理、支付、财资、分销——银行必须自有基础设施，哪些环节可以协作，哪些环节的延迟将造成不可逆的依赖。.</li>  <li><strong>三类资产：经济学不同，架构亦不同.</strong> BCG 将数字资产分为三类——表面相似，但经济学与战略含义本质迥异。.</li>  <li><strong>对银行的影响：风险中的收入与可触达的收入.</strong> BCG 模拟了数字资产演进的四类情景，从私人主导的快速扩张到监管收紧与防御性回退。在最激进的情景下，到2035年，与无数字资产基线相比，银行资产负债表可能缩水约10%、收入下降14%、市场份额向非银金融机构流失9个百分点、成本收入比上升8个百分点、利润下降30%。.</li>  <li><strong>真正重要的架构原则.</strong> BCG 的 CTO 视角提出了数字资产技术战略的七条原则。结合 DORA 合规栈与云原生银行中的架构基线一并阅读，可见一致的模式。.</li></ul></aside><h1>2026 数字资产：银行不可推迟的基础设施转型</h1>
+<!-- lead-start -->
+
+<!-- lead-end -->
+<p>数字资产已不再是创新押注。它是关于结算、托管与资产负债表的架构问题。2026年银行的战略任务，是在结构性不确定中完成基础设施设计。</p>
+<hr />
+<blockquote>
+<p><strong>董事会摘要 / 核心结论</strong></p>
+<ul>
+<li>**数字资产是基础设施转型，而非创新主题。**加密资产规模约3万亿美元，稳定币流通量约3000亿美元，代币化现实资产在2025年同比增长约300%。BCG于2026年5月发布的旗舰报告把它定位为每家银行董事会面前的战略、治理与资产负债表议题，而非金融科技噱头（<a href="https://www.bcg.com" title="BCG">BCG，《数字资产的未来》，2026年5月</a>）。</li>
+<li>**最大的结构性风险不在单一产品。**它是客户接口、资产负债表相关性与关键结算基础设施的控制权流向非银平台。在BCG的快速数字扩张情景中，到2035年，与无数字资产基线相比，银行资产负债表可能缩水约10%、收入下降约14%、利润下降约30%。</li>
+<li>**最大的结构性机会同样清晰。**交易业务RoE可提升约4个百分点，资产管理可释放15%–30%的收入增长，零售与企业银行各有数亿美元的年度增量空间——前提是现在就把钱包、托管、代币化基金与可编程财资服务纳入运营模式。</li>
+<li>**胜出的模式是编排。**能够跨稳定币、代币化存款、CBDC 与传统轨道完成路由的机构——配以银行级托管、嵌入式合规与多链架构——将塑造下一代结算栈。等待者将被迫接入他人的基础设施（<a href="https://sebastienrousseau.com/zh-hans/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026" title="2026 稳定币与代币化存款">Sebastien Rousseau，稳定币与代币化存款</a>）。</li>
+</ul>
+</blockquote>
+<hr />
+<h2 id="2026">为何2026年是数字资产升格为架构议题的拐点 <a class="heading-anchor" href="#2026" aria-label="Link to 为何2026年是数字资产升格为架构议题的拐点">#</a></h2>
+<p>数字资产议题的重心已经转移。问题不再是区块链技术在金融服务中是否有位置，而是在价值链的哪些环节——结算、托管、发行、抵押品管理、支付、财资、分销——银行必须自有基础设施，哪些环节可以协作，哪些环节的延迟将造成不可逆的依赖。</p>
+<p>三个数据点说明议题为何已经改变。加密资产仍是市值约3万亿美元的资产类别，年度收入池约900亿美元——利润率高，对任何拥有机构客户基础的银行都具商业意义。稳定币流通规模已达约3000亿美元，约占全球M2货币供应量的0.5%，一旦主要法域达成完整监管清晰度，增速将更为强劲。代币化现实资产虽然在2025年底公链上规模仅约300亿美元，但同比增长约300%，是未来十年对银行结构性相关性最深的类别。根据 RWA.xyz 数据，至2026年5月中旬，链上 RWA 价值已达314亿美元，几乎完全由机构对链上收益、代币化美国国债产品与货币市场基金的需求驱动。</p>
+<p>BCG 2026年5月旗舰报告《数字资产的未来》把它定位为可与电信业从电路交换语音迁移至分组交换IP网络相比拟的战略基础设施转型——一场历时二十年的双轨迁移。报告指出，银行将在多年内并行运行遗留与代币化基础设施，战略目标不是预测哪条轨道胜出，而是无论哪条轨道扩张都保持系统性相关。</p>
+<p>本文从可落地的银行技术架构视角检视 BCG 框架——即战略要么转化为运营、要么沦为幻灯片的那一层。本文承接此前对<a href="https://sebastienrousseau.com/zh-hans/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026" title="2026 稳定币与代币化存款">稳定币与代币化存款</a>、<a href="https://sebastienrousseau.com/zh-hans/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026" title="2026 可编程流动性">可编程流动性</a>、<a href="https://sebastienrousseau.com/zh-hans/2026-05-21-tokenised-deposits-banking-services-status-2026" title="2026 代币化存款">代币化存款服务</a>，以及 <a href="https://sebastienrousseau.com/zh-hans/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026" title="DORA、欧盟 AI 法案与数据主权">DORA、AI 法案与数据主权合规栈</a>的分析，将 BCG 愿景与银行真正需要建设、治理与举证的内容连接起来。</p>
+<h2 id="section-2">三类资产：经济学不同，架构亦不同 <a class="heading-anchor" href="#section-2" aria-label="Link to 三类资产：经济学不同，架构亦不同">#</a></h2>
+<p>BCG 将数字资产分为三类——表面相似，但经济学与战略含义本质迥异。</p>
+<h3 id="cbdc">数字货币：稳定币、代币化存款、CBDC <a class="heading-anchor" href="#cbdc" aria-label="Link to 数字货币：稳定币、代币化存款、CBDC">#</a></h3>
+<p>数字货币——包括私人发行的稳定币、银行发行的代币化存款与央行数字货币——最贴近金融体系核心。架构问题在于：哪一类数字货币服务于哪一类结算场景，以及银行如何在守住存款业务的同时获取可编程结算的收益。</p>
+<p>稳定币是当前的主导形式。约3000亿美元存量中，大约65%与加密交易和 DeFi 活动绑定，约25%承担价值储藏需求（主要是新兴市场的美元敞口），仅约10%与实体经济支付相关——但该部分正在快速增长。BCG 测算，2025年用于商品与服务的真实双边稳定币支付达到3500亿–5500亿美元，其中B2B占比最大，约为40%。</p>
+<p>存款外流的讨论真实存在，但有边界。BCG 指出，在没有根本性货币制度变革的前提下（即稳定币成为法定货币、支付利息并被保险），全球M2约15%（按2025年水平约9万亿美元）将构成稳定币采纳的自然上限，受到收益动态、信贷体系反馈与机构结构的约束。</p>
+<p>关于稳定币与代币化存款竞争动态——包括对手方风险、互操作性碎片化以及 BIS 统一账本框架——的更深入分析，参见前作<a href="https://sebastienrousseau.com/zh-hans/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026" title="2026 稳定币与代币化存款">稳定币与代币化存款</a>。BCG 报告印证了该分析：代币化存款最有利于具备内部结算与批发支付场景的大额交易银行，而稳定币在双方未经高效支付轨道连接、或已在公链上互动的场合更具优势。</p>
+<p>架构层面的含义是：银行必须为共存而设计，而非押注单一赢家。路由决策——哪种数字货币结算哪笔交易——应综合考量成本、速度、终局性、司法辖区、客户偏好与韧性。这正是 <a href="https://sebastienrousseau.com/zh-hans/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026" title="DORA、欧盟 AI 法案与数据主权">DORA 合规栈</a>所描述的编排模式。</p>
+<h3 id="section-4">数字现实资产：资本市场的转型 <a class="heading-anchor" href="#section-4" aria-label="Link to 数字现实资产：资本市场的转型">#</a></h3>
+<p>代币化现实资产（RWA）——即以具备法律可执行请求权的链上代币形式表征的债券、基金、股票、商品与另类资产——是对银行结构性相关性最深的类别。BCG 报告预测，在积极情景下，到2035年全球可投资资产中约16%将被代币化，其中货币市场工具（渗透率25%–40%）、证券化债务（20%–30%）与另类资产（25%–35%）将引领采纳。政府债券（3%–5%）与上市股票（3%–7%）则因治理、市场结构与交易所在位约束而进展较慢。</p>
+<p>经济效益在结算与交易后环节最为清晰。对于日回购规模1000亿美元的全球性银行，BCG 测算通过降低闲置抵押品与加速结算周期，可实现每年1.5亿–3亿美元的节约。Broadridge 的 DLR 平台在2026年1月日均成交量达到3650亿美元，同比增长508%——已是规模化的生产级机构采纳。JPMorgan 的代币化抵押品网络与 BlackRock 的 BUIDL 基金表明，先行者并非在试验，而是在搭建生产级基础设施。</p>
+<p>与<a href="https://sebastienrousseau.com/zh-hans/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026" title="2026 可编程流动性">可编程流动性</a>的连接是直接的。没有代币化结算的代币化资产，会在现金接口处留下摩擦；没有代币化资产的代币化现金，则只是一条接入慢速、批处理交易后流程的更快管道。两者合力，才能实现原子化券款对付与近实时终局。BCG 类比 ETF：创新不在资产本身，而在运营模式——日内流动性、实物申购赎回、税务效率与交易所可交易性——先行者（State Street、iShares、Vanguard）凭借自我强化的优势捕获了全球ETF资产的75%–80%。</p>
+<p>关于 BlackRock BRSRV 与 BSTBL 申报文件的详细解读——它们展示了代币化货币市场基金如何在 GENIUS Act 下绕过稳定币收益限制——参见前作 <a href="https://sebastienrousseau.com/zh-hans/2026-05-15-beilaide-brsrv-bstbl-genius-fa-an-daibihua-mmf" title="另一种形式的稳定币收益">BlackRock 的稳定币邻接收益策略</a>。</p>
+<h3 id="section-5">加密：当下收入的来源 <a class="heading-anchor" href="#section-5" aria-label="Link to 加密：当下收入的来源">#</a></h3>
+<p>加密是目前商业成熟度最高的板块——资产规模约3万亿美元，年度收入池约900亿美元；相比之下，传统银行与市场基础设施在300万亿美元可投资资产上的交易收入约4000亿美元。加密的市值收入率结构性偏高，达2%–4%，由交易速度、波动率、杠杆与全天候全球市场结构驱动。</p>
+<p>受监管金融机构的可触达池——交易、衍生品、托管与主经纪服务、质押——全球合计约550亿美元。银行在机构客户关系、监管公信力、风险管理与抵押品优化方面具备结构性优势。战略问题是：参与目的是防守（保住客户关系与钱包份额）还是进攻（追求增量增长），以及哪一种参与模式——代理、主经纪、分销或全栈——契合银行的风险偏好与交付能力。</p>
+<h2 id="section-6">对银行的影响：风险中的收入与可触达的收入 <a class="heading-anchor" href="#section-6" aria-label="Link to 对银行的影响：风险中的收入与可触达的收入">#</a></h2>
+<p>BCG 模拟了数字资产演进的四类情景，从私人主导的快速扩张到监管收紧与防御性回退。在最激进的情景下，到2035年，与无数字资产基线相比，银行资产负债表可能缩水约10%、收入下降14%、市场份额向非银金融机构流失9个百分点、成本收入比上升8个百分点、利润下降30%。</p>
+<p>三股结构性力量驱动上述压力：代币化将价值转移至发行人与消费者，对中介需求下降；代币化加剧了价值从银行向非银金融机构迁移的长期趋势；遗留与代币化轨道并行运行造成阶段性成本重复。</p>
+<p>但报告同样清晰指出机会。对一家拥有大型自有资管业务的典型 G-SIB，自下而上的分析在上述逆风之下仍识别出可观的上行空间。</p>
+<table>
+<thead>
+<tr>
+<th>业务条线</th>
+<th>主要机会</th>
+<th>示意性增量</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>个人银行</strong></td>
+<td>通过银行钱包、托管、咨询与贷款，将流向非银钱包的客户资产重新捕获</td>
+<td>随表外数字资产增长，年收入约3.4亿–6亿美元</td>
+</tr>
+<tr>
+<td><strong>企业银行</strong></td>
+<td>可编程财资、稳定币驱动的跨境支付、面向加密原生企业的银行服务</td>
+<td>年收入约2亿–6亿美元</td>
+</tr>
+<tr>
+<td><strong>资产管理</strong></td>
+<td>代币化基金、另类资产分割化、分销效率提升</td>
+<td>收入提升15%–30%，2万亿美元规模的资管约12亿–25亿美元</td>
+</tr>
+<tr>
+<td><strong>资本市场</strong></td>
+<td>代币化发行、抵押品流动性、回购、数字托管、更快结算</td>
+<td>RoE提升至多约4个百分点，典型 G-SIB 利润增量超10亿美元</td>
+</tr>
+</tbody>
+</table>
+<p>此处与<a href="https://sebastienrousseau.com/zh-hans/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026" title="AI 作为支付操作系统">支付人工智能操作系统</a>的连接很重要。同一套按成本、速度、终局性与合规性进行评分、在多条轨道间路由支付的决策基础设施，也可用于代币化结算、稳定币出入金与抵押品流动性的编排。把这一决策层在传统与代币化轨道上一次性搭建到位的机构，将相对于并行搭建多套控制栈的同业获得结构性的成本优势。</p>
+<h2 id="section-7">真正重要的架构原则 <a class="heading-anchor" href="#section-7" aria-label="Link to 真正重要的架构原则">#</a></h2>
+<p>BCG 的 CTO 视角提出了数字资产技术战略的七条原则。结合 <a href="https://sebastienrousseau.com/zh-hans/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026" title="DORA、欧盟 AI 法案与数据主权">DORA 合规栈</a>与<a href="https://sebastienrousseau.com/zh-hans/2026-05-20-cloud-native-banking-financial-institutions-2026" title="2026 云原生银行">云原生银行</a>中的架构基线一并阅读，可见一致的模式。</p>
+<h3 id="dlt">把 DLT 视为基础设施，而非产品 <a class="heading-anchor" href="#dlt" aria-label="Link to 把 DLT 视为基础设施，而非产品">#</a></h3>
+<p>最常见的失败模式是孤立的事业部试点：各自选择不同的链、托管模型与供应商栈，最终形成重复的钱包、不一致的安全模型与脆弱的集成。BCG 建议在集团 CTO/COO 层级集中平台所有权，由业务条线在统一控制框架之上承担优先级用例。这与<a href="https://sebastienrousseau.com/zh-hans/2026-05-20-cloud-native-banking-financial-institutions-2026" title="2026 云原生银行">云原生银行</a>所述的平台工程纪律直接对应——Kubernetes 与虚拟机共存、经 DORA 验证的韧性、主权云，以及关键服务在提供商中断中仍可存续的证据。</p>
+<h3 id="section-9">从一开始就按多链设计 <a class="heading-anchor" href="#section-9" aria-label="Link to 从一开始就按多链设计">#</a></h3>
+<p>公链与私链将共存。各条区块链都在构建自己的生态——用户群、应用与流动性池各异。绑定单一链将造成战略依赖。架构必须链中立，从一开始就嵌入抽象与互操作性，使新增链无需重新设计系统。德意志交易所的 D7 平台与 BIS 的 Agorá 项目，是这种&quot;组合式&quot;路径的实例。</p>
+<h3 id="section-10">为监管可逆性而设计 <a class="heading-anchor" href="#section-10" aria-label="Link to 为监管可逆性而设计">#</a></h3>
+<p>规则将不断演进。可配置的控制、可审计性、清晰的迁移路径与安全的升级机制，并非可选项。这一原则正是 DORA 合规架构的核心：在压力下、跨链上链下系统、在市场波动期间、在与第三方协同时，仍能举证控制有效。<a href="https://sebastienrousseau.com/zh-hans/2026-05-17-ai-dailixing-gongcheng-yinhang-2026-lantu" title="银行代理式工程">代理式工程蓝图</a>进一步延伸：在数字资产工作流中运行的 AI 代理，需要与其他任何自动化银行流程一样的规范驱动治理、同意授权与审计轨迹。</p>
+<h3 id="section-11">控制平面留在银行内部 <a class="heading-anchor" href="#section-11" aria-label="Link to 控制平面留在银行内部">#</a></h3>
+<p>策略、密钥管理、合约治理、限额、证据与事件响应应留在银行内部。在网络效应或专业能力重要的环节——生产引擎、网络连接与标准化工具——则与外部协作。当速度、牌照、人才或分销比自建更有价值时可选择采购，但前提是与银行控制模型的整合切实可行。</p>
+<p>这与适用于支付编排、云基础设施与 AI 模型治理的&quot;自建—协作—采购&quot;纪律一致。原则始终如一：自建差异化所在，协作标准化部分，采购加速所需。</p>
+<h2 id="section-12">风险控制：为何反洗钱、托管与智能合约是增长约束 <a class="heading-anchor" href="#section-12" aria-label="Link to 风险控制：为何反洗钱、托管与智能合约是增长约束">#</a></h2>
+<p>BCG 的 CRO 视角点出一个在数字资产战略讨论中常被低估的关键：扩大收入的能力，受制于控制框架的设计，而非仅受需求或资本约束。在传统银行业中，控制围绕产品；在可编程市场中，控制内嵌于产品。</p>
+<h3 id="section-13">金融犯罪从以客户为中心转向以流向为中心 <a class="heading-anchor" href="#section-13" aria-label="Link to 金融犯罪从以客户为中心转向以流向为中心">#</a></h3>
+<p>全球范围内，稳定币目前约占链上非法交易量的84%。与加密相关的欺诈仅占报告事件的约10%，却造成约50%的损失。反洗钱与制裁风险源自交易流向与生态连接性，而不仅是直接的客户关系。钱包行为、交易上下文、聚类模式与网络关系，与客户画像并列，成为首要风险信号。</p>
+<p>这与<a href="https://sebastienrousseau.com/zh-hans/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026" title="AI 作为支付操作系统">支付人工智能操作系统</a>所述的转变一致：欺诈评分、制裁筛查与合规控制从周期性批处理监控，转向持续、实时、基于流向的介入。数字资产场景放大了这一要求，因为结算近乎即时且不可逆。</p>
+<h3 id="section-14">托管是首要级控制风险 <a class="heading-anchor" href="#section-14" aria-label="Link to 托管是首要级控制风险">#</a></h3>
+<p>在数字资产市场中，对私钥的控制即意味着对资产的控制，并带来即时的法律与运营后果。法律托管、技术控制与指令权限可能错位——一家机构可能在法律上是托管人，而技术控制实际由技术供应商或协议持有。2025年上半年，119起加密事件共造成超过30亿美元损失，其中集中式交易所占损失的过半。许多事件源于密钥管理与托管控制的失陷，而非区块链协议层面的失败。</p>
+<p>BCG 主张，托管的审视层级应提升至与系统重要性支付或结算基础设施相同。<a href="https://sebastienrousseau.com/zh-hans/2026-05-14-baozhang-zhangbu-hou-liangzi-qianyi-qiye-jinrong" title="守护账本">后量子迁移</a>增加了时间维度：当前保护数字资产托管的密码学密钥材料，必须在比多数机构规划更紧迫的时间窗内迁移至后量子算法。G7于2026年1月发布了迁移路线图，BIS 的 Project Leap 已在生产级支付系统中验证可行性。</p>
+<h3 id="section-15">智能合约必须按高风险模型治理 <a class="heading-anchor" href="#section-15" aria-label="Link to 智能合约必须按高风险模型治理">#</a></h3>
+<p>智能合约将假设、阈值与行为编码，使结果以自动化方式在规模上发生。编码错误、参数误校准或合约间的非预期交互，会产生与模型风险相当的系统性影响——且缺少人工复核传统上提供的缓冲。2025年，恶意授权利用造成约15亿美元损失。BCG 建议在更宏观的风险框架中整合部署前验证、持续监控、受控变更管理，以及在技术上可执行的升级与干预权限。</p>
+<h2 id="section-16">监管：意图趋同，架构发散 <a class="heading-anchor" href="#section-16" aria-label="Link to 监管：意图趋同，架构发散">#</a></h2>
+<p>BCG 识别出四种监管原型——市场驱动型（美国、加拿大、巴西）、定制制度型（欧盟、英国、日本）、竞争性枢纽型（新加坡、瑞士、香港、阿联酋）与主权管控型（中国大陆）。各方在金融稳定、市场诚信、反洗钱控制与运营韧性方面的政策意图广义趋同，但转化为可执行规则的进度仍不均衡。</p>
+<p>欧盟 MiCA 框架最具规定性，要求电子货币代币发行人获得授权、储备资产完全隔离、按面值可执行赎回，并禁止 EMT 发行人支付利息。美国的讨论已从立法设计转向落地实施，GENIUS 框架界定了发行人类别与储备标准，与此同时关于收益机制与更广义市场结构的谈判仍在进行。</p>
+<p>两个争议尤为突出：稳定币能否支付收益；以及承压情境下可接受的支持资产与流动性管理如何界定。这些辩论实质上是对存款替代、挤兑动态与发行人商业模式可持续性等更深层问题的代理。</p>
+<p>对银行而言，现实含义是按持久的多制度并存而非单一全球终局来设计。<a href="https://sebastienrousseau.com/zh-hans/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026" title="DORA、欧盟 AI 法案与数据主权">DORA 合规栈</a>与 <a href="https://sebastienrousseau.com/zh-hans/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026" title="英国支付前瞻计划">UK Payments Forward Plan</a>分析均印证这一点：以参数化控制构建模块化运营模式，使银行能够随规则演进进行隔离、改道或退出市场。</p>
+<h2 id="section-17">不同银行类型的含义 <a class="heading-anchor" href="#section-17" aria-label="Link to 不同银行类型的含义">#</a></h2>
+<h3 id="section-18">全球性银行 <a class="heading-anchor" href="#section-18" aria-label="Link to 全球性银行">#</a></h3>
+<p>全球性银行应建设平台级编排，使每个市场、每条轨道、每种代币与每种托管模型都不至于各自演化为独立运营模式。BCG 建议集中拥有 DLT 架构、按多链设计，并采用统一控制框架。先发优势在结算基础设施、抵押品流动性与代币化基金分销最为显著——规模在这些领域会形成自我强化的网络效应。推进顺序应为：先建账本中立的平台与控制，再推进高价值用例（回购、抵押品、代币化基金），最后逐步扩展账本敞口。</p>
+<h3 id="section-19">区域性银行 <a class="heading-anchor" href="#section-19" aria-label="Link to 区域性银行">#</a></h3>
+<p>在缺乏互操作性标准或共享结算场所的情况下，新建 DLT 基础设施对区域性银行而言面临可负担性问题。BCG 指出，对非全球最大梯队的银行而言，缺乏互操作性的代币化存款更接近功能而非战略资产。更合理的路径是互操作性路线图：参与行业联盟，将客户钱包作为信任锚优先建设，并聚焦本地市场认知与受监管托管胜过规模的场景——资金可视化、欺诈防范、Open Banking 支付与稳定币出入金。</p>
+<h3 id="psp">金融科技与 PSP <a class="heading-anchor" href="#psp" aria-label="Link to 金融科技与 PSP">#</a></h3>
+<p>市场现已在技术与运营服务两个层级提供生产级构件。最优的方案将为银行带来编排、合规证据或数据智能——降低复杂度，而不是再加一条孤立的轨道。这与<a href="https://sebastienrousseau.com/zh-hans/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026" title="银行代理式支付">代理式支付</a>分析所识别的原则一致：在支付执行之外同时提供同意基础设施、责任边界与可审计证据的金融科技，将胜过仅仅提供更快管道的同业。</p>
+<h3 id="section-21">资产管理人 <a class="heading-anchor" href="#section-21" aria-label="Link to 资产管理人">#</a></h3>
+<p>代币化是结构性增长故事，而非防御性议题。主要杠杆包括：将目前未产生费用的资产更多纳入受管结构、通过分割化与可扩展分销实现产品组合向高费率另类资产的倾斜、以及通过可编程基金生命周期管理拓展服务栈。BCG 明确以 ETF 作类比：在位者最初低估 ETF，因为它在经济上看似冗余，而真正的创新在运营模式。同样的动态正在代币化基金上重现。</p>
+<h2 id="section-22">五项可落地步骤 <a class="heading-anchor" href="#section-22" aria-label="Link to 五项可落地步骤">#</a></h2>
+<p>BCG 给出了十步指引。提炼为未来十二个月的五项当务之急：</p>
+<p>**量化经济性。**在90天内按业务条线建模：风险中的收入池、可触达的收入池、存款与流动性敏感性，以及双轨的预期成本。没有量化敞口，数字资产就只能停留在抽象层面。</p>
+<p>**锁定雄心与治理。**为每条相关业务条线选择雄心原型——防御性整合者、规模化参与者或基础设施塑造者。指定一位负责的高管赞助人。建立与情景指标挂钩的董事会层级审视节奏。</p>
+<p>**立即守住客户接口。**优先建设安全的钱包与托管能力，以及面向客户的出入金、咨询与报告编排。无论哪种底层货币工具胜出，钱包都将守住客户关系。</p>
+<p>**工业化2–3个高价值用例。**典型候选包括：跨境财资与可编程流动性、代币化基金与另类资产、回购与抵押品流动性，以及面向现有客户的选择性加密服务。避免为了代币化而代币化。</p>
+<p>**搭建银行级控制平面。**建立统一的 DLT 平台、密钥管理、合约治理、反洗钱工具、报告、合作框架与退出路径。第一个生产级用例应在后续规模化所依赖的同一套控制之上运行。</p>
+<h2 id="section-23">结论 <a class="heading-anchor" href="#section-23" aria-label="Link to 结论">#</a></h2>
+<p>2026年的数字资产不是创新问题，而是关于结算、托管、合规与资产负债表的架构问题。BCG 报告将其定位为可与电信业双轨迁移相比拟的结构性转型——战略目标不是预测胜出轨道，而是在多种可能的未来中保持相关性。</p>
+<p>将塑造下一代结算栈的机构，是现在就按编排进行设计的机构：多轨、多链、多币种，并将银行级控制嵌入产品之内，而非贴附在产品之外。等待的机构，将发现自己接入的是他人设计的基础设施，使用的是他人设定的条款。</p>
+<p>架构原则在本系列涵盖的每一议题中保持一致——支付、财资、合规、云、AI，以及现在的数字资产。工作流优先、数据作为控制平面、跨轨道与跨平台的编排、嵌入式合规与证据，以及证明规模化合理的单位经济性。技术标签会变，设计纪律不会。</p>
+<h2 id="section-24">常见问题 <a class="heading-anchor" href="#section-24" aria-label="Link to 常见问题">#</a></h2>
+<p><strong>为什么这一议题在2026年迫在眉睫？</strong></p>
+<p>因为监管清晰度（MiCA、GENIUS Act、英国框架）、生产级机构平台（Broadridge DLR、Kinexys、BlackRock BUIDL）与可量化的稳定币支付量已经汇合，把数字资产从实验阶段推入运营基础设施阶段。双轨成本的时钟已经在走。</p>
+<p><strong>最大的实施风险是什么？</strong></p>
+<p>最大的风险是架构碎片化：各事业部各自建设独立的 DLT 试点，使用不同的链、托管模型、供应商栈与控制框架。这造成成本重复、安全不一致，且没有规模化路径。</p>
+<p><strong>银行应先建什么？</strong></p>
+<p>安全的客户钱包与账本中立的控制平面——密钥管理、策略执行、监控、审计证据与集成模式。无论哪些链、代币或货币工具最终扩张，这些都能保留选择权。</p>
+<p><strong>如何与既有合规义务相衔接？</strong></p>
+<p>数字资产控制应作为支撑 DORA 运营韧性、欧盟 AI 法案透明度与数据主权的同一套架构的延伸，而非另立项目。同一套证据生产纪律、同一套审计就绪标准、同一套治理模型。</p>
+<p><strong>应如何衡量成功？</strong></p>
+<p>按从可触达池中捕获的收入、双轨运营成本、控制框架就绪度（经过测试，而非仅有文档）、客户钱包采纳，以及代币化抵押品与结算带来的资产负债表效率提升来衡量。</p>
+<h2 id="section-25">参考资料 <a class="heading-anchor" href="#section-25" aria-label="Link to 参考资料">#</a></h2>
+<ul>
+<li>BCG, (2026). <a href="https://www.bcg.com" title="BCG">《数字资产的未来——BCG 旗舰报告，2026年5月》⧉</a>.</li>
+<li>RWA.xyz, (2026). <a href="https://rwa.xyz" title="RWA.xyz">RWA 市场数据 ⧉</a>.</li>
+<li>Sebastien Rousseau, (2026). <a href="https://sebastienrousseau.com/zh-hans/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026" title="稳定币与代币化存款">2026 稳定币与代币化存款 ⧉</a>.</li>
+<li>Sebastien Rousseau, (2026). <a href="https://sebastienrousseau.com/zh-hans/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026" title="可编程流动性">2026 可编程流动性 ⧉</a>.</li>
+<li>Sebastien Rousseau, (2026). <a href="https://sebastienrousseau.com/zh-hans/2026-05-21-tokenised-deposits-banking-services-status-2026" title="代币化存款">2026 代币化存款 ⧉</a>.</li>
+<li>Sebastien Rousseau, (2026). <a href="https://sebastienrousseau.com/zh-hans/2026-05-15-beilaide-brsrv-bstbl-genius-fa-an-daibihua-mmf" title="BlackRock 稳定币收益">BlackRock BRSRV 与 BSTBL 申报解读 ⧉</a>.</li>
+<li>Sebastien Rousseau, (2026). <a href="https://sebastienrousseau.com/zh-hans/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026" title="DORA 合规栈">DORA、欧盟 AI 法案与数据主权 ⧉</a>.</li>
+<li>Sebastien Rousseau, (2026). <a href="https://sebastienrousseau.com/zh-hans/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026" title="AI 支付">AI 作为支付操作系统 ⧉</a>.</li>
+<li>Sebastien Rousseau, (2026). <a href="https://sebastienrousseau.com/zh-hans/2026-05-20-cloud-native-banking-financial-institutions-2026" title="云原生银行">2026 云原生银行 ⧉</a>.</li>
+<li>Sebastien Rousseau, (2026). <a href="https://sebastienrousseau.com/zh-hans/2026-05-14-baozhang-zhangbu-hou-liangzi-qianyi-qiye-jinrong" title="后量子迁移">守护账本：后量子迁移 ⧉</a>.</li>
+<li>Sebastien Rousseau, (2026). <a href="https://sebastienrousseau.com/zh-hans/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026" title="代理式支付">银行代理式支付 ⧉</a>.</li>
+<li>Sebastien Rousseau, (2026). <a href="https://sebastienrousseau.com/zh-hans/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026" title="英国支付前瞻计划">英国支付前瞻计划 ⧉</a>.</li>
+<li>Sebastien Rousseau, (2026). <a href="https://sebastienrousseau.com/zh-hans/2026-05-17-ai-dailixing-gongcheng-yinhang-2026-lantu" title="代理式工程">银行代理式工程 ⧉</a>.</li>
+</ul>
+<!-- enrich-start -->
+
+<p class="post-reviewed">最近审阅 <time datetime="2026-05-28">2026-05-28</time>。</p>
+
+<!-- enrich-end -->
+<aside class="author-card" aria-label="关于作者"><img alt="Sebastien Rousseau 肖像" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=85" width="64" height="64" loading="lazy" decoding="async"  fetchpriority="high"><span class="author-card-body"><strong class="author-card-name"><a href="/zh-hans/guanyu/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">资深银行技术专家，撰写关于应用人工智能、ISO 20022 迁移、面向金融服务的后量子密码学，以及批发支付结构性转型的内容。</span><span class="author-credentials">20 多年经验，曾任职于汇丰商业及投资银行、PayPal、巴克莱、Shazam、AKQA、维珍集团。 <a href="/zh-hans/guanyu/index.html">完整简介</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">最近审阅 <time datetime="2026-06-11">2026-06-11</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">相关阅读</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/zh-hans/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026" class="related-media" aria-label="2026 年银行基础设施指数:衡量自主式 AI、量子安全、云原生韧性与批发支付的就绪度" tabindex="-1"><img alt="An editorial aerial composition by Miguel Sousa suggesting interlocking systems — the visual register chosen for a board-level dashboard view of the 2026 Banking Infrastructure Index" src="https://cloudcdn.pro/api/transform?url=/stocks/images/miguel-sousa-ejIF-pJhYkM.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="2026-ai"><a href="https://sebastienrousseau.com/zh-hans/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026">2026 年银行基础设施指数:衡量自主式 AI、量子安全、云原生韧性与批发支付的就绪度</a> <a class="heading-anchor" href="#2026-ai" aria-label="Link to 2026 年银行基础设施指数:衡量自主式 AI、量子安全、云原生韧性与批发支付的就绪度">#</a></h3><p><time datetime="2026-06-02">2026-06-02</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/zh-hans/2026-05-22-uk-acid-jazz-renewal-artists-concerts-albums-2026" class="related-media" aria-label="英国酸爵士复兴：2026年艺人、现场、专辑与律动文化的回归" tabindex="-1"><img alt="UK acid jazz renewal collage for 2026 with Hammond organ, vinyl, Ronnie Scott’s, Acid Jazz Records, jazz-funk festival stages, and London groove culture" src="https://cloudcdn.pro/api/transform?url=/stocks/images/aperture-vintage-SshYpuf607g.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="2026-2"><a href="https://sebastienrousseau.com/zh-hans/2026-05-22-uk-acid-jazz-renewal-artists-concerts-albums-2026">英国酸爵士复兴：2026年艺人、现场、专辑与律动文化的回归</a> <a class="heading-anchor" href="#2026-2" aria-label="Link to 英国酸爵士复兴：2026年艺人、现场、专辑与律动文化的回归">#</a></h3><p><time datetime="2026-05-22">2026-05-22</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/zh-hans/2026-05-16-2026-zuijia-yun-jichu-jiagou" class="related-media" aria-label="2026 年最佳云基础设施架构：金融服务的 AI 原生、多云、量子感知蓝图" tabindex="-1"><img alt="Six-pillar cloud architecture diagram for 2026 — AI-native, multi-cloud, serverless, edge, DevSecOps, and sustainable design, with CloudCDN edge research overlay" src="https://cloudcdn.pro/api/transform?url=/stock/images/cloud-architecture-2026-banner.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="2026-ai-2"><a href="https://sebastienrousseau.com/zh-hans/2026-05-16-2026-zuijia-yun-jichu-jiagou">2026 年最佳云基础设施架构：金融服务的 AI 原生、多云、量子感知蓝图</a> <a class="heading-anchor" href="#2026-ai-2" aria-label="Link to 2026 年最佳云基础设施架构：金融服务的 AI 原生、多云、量子感知蓝图">#</a></h3><p><time datetime="2026-05-16">2026-05-16</time></p></footer></article>
+</div>
+</aside><nav class="post-pagination" aria-label="Article pagination"><a class="post-pagination-prev" href="/zh-hans/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/"><span class="post-pagination-label">Previous</span><span class="post-pagination-title">DORA, the EU AI Act, and Data Sovereignty: The 2026 Compliance Stack for Banks</span></a><a class="post-pagination-next" href="/zh-hans/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/"><span class="post-pagination-label">Next</span><span class="post-pagination-title">ISO 20022 After Migration: Turning Payment Data into Banking Products in 2026</span></a></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/zh-hans/guanyu/index.html">关于</a></li>
+              <li><a href="/zh-hans/lianxi/index.html">联系</a></li>
+              <li><a href="/zh-hans/yong-static-site-generator-zhizuo/index.html">使用 Static Site Generator 构建</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">文章</h2>
+            <ul>
+              <li><a href="/zh-hans/wenzhang/index.html">文章</a></li>
+              <li><a href="/zh-hans/lunwen/index.html">论文与白皮书</a></li>
+              <li><a href="/zh-hans/biaoqian/index.html">标签</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">工作</h2>
+            <ul>
+              <li><a href="/zh-hans/xiangmu/index.html">项目</a></li>
+              <li><a href="/zh-hans/boqing/index.html">播放列表</a></li>
+              <li><a href="/zh-hans/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">联系</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="/contact/" method="get" aria-label="通讯订阅">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — 关于支付、人工智能与后量子密码学的研究笔记。无垃圾邮件。</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="nin@yinhang.com" />
+            <input type="hidden" name="subject" value="newsletter" />
+            <input type="hidden" name="message" value="Please subscribe me to the Banking On Quantum newsletter." />
+            <button type="submit">订阅</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved.</span>
+          <div class="social" aria-label="社交链接">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau 于 Twitter / X"><img src="https://cloudcdn.pro/common/images/buttons/x-black.svg" alt="Sebastien Rousseau 于 Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau 于 LinkedIn"><img src="https://cloudcdn.pro/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau 于 LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau 于 Medium"><img src="https://cloudcdn.pro/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau 于 Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau 于 YouTube"><img src="https://cloudcdn.pro/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau 于 YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/zh-hans/wuzhang-ai/index.html">无障碍访问</a> ·
+            <a href="/zh-hans/yinsi/index.html">隐私</a> ·
+            <a href="/zh-hans/tiaokuan/index.html">条款</a> ·
+            <a href="https://www.thegreenwebfoundation.org/green-web-check/?url=sebastienrousseau.com" target="_blank" rel="noopener noreferrer" title="Hosted on 100% renewable energy (Cloudflare) — estimate via Sustainable Web Design v4 model">Carbon: ~0.04 g/visit · green-hosted</a> ·
+            <a href="https://github.com/sebastienrousseau/sebastienrousseau.github.io/blob/main/project-docs/sigstore.md" target="_blank" rel="noopener noreferrer" title="Every dated article is signed with Sigstore — verify the bytes match what was published">Verify signatures</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","identifier":{"@type":"PropertyValue","propertyID":"ORCID","value":"0009-0005-1434-284X","url":"https://orcid.org/0009-0005-1434-284X"},"worksFor":{"@type":"Organization","@id":"https://www.hsbc.com/#organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal","url":"https://www.paypal.com/"},{"@type":"Organization","name":"Barclays","url":"https://www.barclays.com/"},{"@type":"Organization","name":"Shazam Entertainment","url":"https://www.shazam.com/"},{"@type":"Organization","name":"AKQA","url":"https://www.akqa.com/"},{"@type":"Organization","name":"Virgin Group","url":"https://www.virgin.com/"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"hasCredential":[{"@type":"EducationalOccupationalCredential","credentialCategory":"professional experience","name":"20+ years across Tier-1 banks and global payments infrastructure","recognizedBy":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"}},{"@type":"EducationalOccupationalCredential","credentialCategory":"domain expertise","name":"ISO 20022 migration and wholesale payments architecture","recognizedBy":{"@type":"Organization","name":"SWIFT","url":"https://www.swift.com/"}},{"@type":"EducationalOccupationalCredential","credentialCategory":"domain expertise","name":"Post-Quantum Cryptography for financial services","recognizedBy":{"@type":"Organization","name":"NIST Post-Quantum Cryptography Project","url":"https://csrc.nist.gov/projects/post-quantum-cryptography"}}],"knowsAbout":[{"@type":"DefinedTerm","name":"Post-Quantum Cryptography","sameAs":"https://en.wikipedia.org/wiki/Post-quantum_cryptography"},{"@type":"DefinedTerm","name":"ML-KEM (FIPS 203)","sameAs":"https://csrc.nist.gov/pubs/fips/203/final"},{"@type":"DefinedTerm","name":"ML-DSA (FIPS 204)","sameAs":"https://csrc.nist.gov/pubs/fips/204/final"},{"@type":"DefinedTerm","name":"ISO 20022","sameAs":"https://en.wikipedia.org/wiki/ISO_20022"},{"@type":"DefinedTerm","name":"SWIFT gpi","sameAs":"https://www.swift.com/our-solutions/swift-gpi"},{"@type":"DefinedTerm","name":"SEPA Instant Payments","sameAs":"https://www.ecb.europa.eu/paym/integration/retail/instant_payments/html/index.en.html"},{"@type":"DefinedTerm","name":"FedNow Service","sameAs":"https://www.federalreserve.gov/paymentsystems/fednow_about.htm"},{"@type":"DefinedTerm","name":"Real-Time Payments (RTP)","sameAs":"https://www.theclearinghouse.org/payment-systems/rtp"},{"@type":"DefinedTerm","name":"Cross-border payments","sameAs":"https://en.wikipedia.org/wiki/Cross-border_payments"},{"@type":"DefinedTerm","name":"Wholesale banking","sameAs":"https://en.wikipedia.org/wiki/Wholesale_banking"},{"@type":"DefinedTerm","name":"Applied artificial intelligence in banking","sameAs":"https://en.wikipedia.org/wiki/Applications_of_artificial_intelligence"},{"@type":"DefinedTerm","name":"Generative artificial intelligence","sameAs":"https://en.wikipedia.org/wiki/Generative_artificial_intelligence"}],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://orcid.org/0009-0005-1434-284X","https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":["Organization","Brand"],"@id":"https://sebastienrousseau.com/#organization","name":"Sebastien Rousseau","alternateName":"Banking on Quantum","url":"https://sebastienrousseau.com/","logo":{"@type":"ImageObject","@id":"https://sebastienrousseau.com/#logo","url":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","width":"512","height":"512","caption":"Sebastien Rousseau"},"founder":{"@id":"https://sebastienrousseau.com/#person"},"editorialPolicy":"https://sebastienrousseau.com/editorial/","correctionsPolicy":"https://sebastienrousseau.com/editorial/#corrections","ethicsPolicy":"https://sebastienrousseau.com/editorial/","diversityPolicy":"https://sebastienrousseau.com/editorial/","sameAs":["https://github.com/sebastienrousseau","https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#organization"},"author":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"zh-hans"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"zh-hans"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":359,"headline":"数字资产 2026：基础设施转型不可缓","description":"数字资产已不再是创新押注，而是关于结算、托管与资产负债表的架构问题；银行的战略任务是在结构性不确定中设计基础设施。","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/corporate-finance.webp","width":"100vw","height":"100vh","caption":"数字资产基础设施图示——展示代币化现实资产、稳定币、代币化存款、托管、结算、抵押品流动性与银行平台分层"},"url":"https://sebastienrousseau.com/zh-hans/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/","datePublished":"2026-05-28T06:06:06+00:00","dateModified":"2026-05-28","inLanguage":"zh-hans","keywords":"数字资产 2026, 代币化现实资产, 稳定币银行, 代币化存款, 数字资产托管, DLT 银行, 结算基础设施, 抵押品流动性, 可编程货币, 银行数字资产战略","articleSection":"Technology","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/zh-hans/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"zh-hans"},"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/zh-hans/"},{"@type":"ListItem","position":3,"name":"数字资产 2026：基础设施转型不可缓","item":"https://sebastienrousseau.com/zh-hans/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/"}]}]}</script>
+<script src="/main.931cef3c.js" defer integrity="sha256-JUs9z2u4RDSgxMCjBnyMmIHIkpakA7s5FxUmnDnSpD0= sha256-r33y52uSTzd+MqMufJlWsd09gyxv578IRoF5Gomw7Aw=" crossorigin="anonymous"></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="搜索">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>搜索</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="搜索">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="搜索文档…" autocomplete="off" aria-label="搜索"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> 关闭</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> 导航</span><span><kbd>Enter</kbd> 打开</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" integrity="sha256-Y0txeCfdk+GUctTYMAxMbFCB2qs1cPm8JSIX3WRS9cs= sha256-5Ca5zk/7tsavsCDhg6M1m4feBn+L4YnJ7iavKawynII=" crossorigin="anonymous"></script>
+</div>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"数字资产 2026：基础设施转型不可缓","url":"https://sebastienrousseau.com/zh-hans/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/","inLanguage":"zh-Hans","isAccessibleForFree":true,"author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#organization"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/zh-hans/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/"},"keywords":"数字资产 2026, 代币化现实资产, 稳定币银行, 代币化存款, 数字资产托管, DLT 银行, 结算基础设施, 抵押品流动性, 可编程货币, 银行数字资产战略","proficiencyLevel":"Expert"}</script></body>
+</html>

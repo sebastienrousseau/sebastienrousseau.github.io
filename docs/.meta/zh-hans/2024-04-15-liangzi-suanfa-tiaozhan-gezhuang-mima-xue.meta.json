@@ -1,11 +1,13 @@
 {
-  "title": "量子算法挑战格状密码学",
-  "description": "陈逸雷的多项式时间量子算法对 Learning With Errors（LWE）问题及格基密码学构成挑战。",
-  "language": "zh-Hans",
-  "keywords": "量子算法, LWE, 格密码学, 陈逸雷, GapSVP, SIVP, 后量子密码学, 量子傅里叶变换, 高斯函数, 安全",
-  "banner": "https://cloudcdn.pro/stocks/images/digital-constellation.webp",
   "banner_alt": "数字蓝色空间中网络节点的横幅",
   "date": "April 15, 2024",
+  "reading_time": 1,
   "locale": "zh_CN",
-  "subtitle": "陈逸雷的多项式时间量子算法对 LWE 问题及后量子密码学的潜在影响"
+  "language": "zh-Hans",
+  "keywords": "量子算法, LWE, 格密码学, 陈逸雷, GapSVP, SIVP, 后量子密码学, 量子傅里叶变换, 高斯函数, 安全",
+  "title": "量子算法挑战格状密码学",
+  "word_count": 200,
+  "banner": "https://cloudcdn.pro/stocks/images/digital-constellation.webp",
+  "subtitle": "陈逸雷的多项式时间量子算法对 LWE 问题及后量子密码学的潜在影响",
+  "description": "陈逸雷的多项式时间量子算法对 Learning With Errors（LWE）问题及格基密码学构成挑战。"
 }

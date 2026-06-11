@@ -1,5 +1,6 @@
 ---
 title: "Le Chat by Mistral AI: Multilingual Conversational AI"
+tags: "Le Chat, Mistral AI, Conversational AI, Multilingual, Customisation, Business AI, Chatbot, AI Models, Enterprise Solutions, Technology, ISO 20022, ìsirò ìpamọ́ lẹ́yìn quantum, AI"
 subtitle: "Atunto Ibaraẹnisọrọ Olumulo Kọja Awọn Ede"
 description: "Pade Oluranlọwọ tuntun ti Mistral AI ti o le sọrọ ede pupọ. AI giga ti o le ye àti dáhùn ní ede pupọ, gbogbo rẹ nínú ìjíròrò kan ní àkókò gidi."
 date: "Mar 04, 2024"
@@ -127,4 +128,3 @@ In conclusion, Le Chat by Mistral AI represents a significant leap forward in th
 [00]: https://chat.mistral.ai/chat "Le Chat Mistral"
 [01]: https://mistral.ai/ "Mistral AI | Frontier AI in your hands"
 [02]: https://chat.openai.com/ "ChatGPT"
-

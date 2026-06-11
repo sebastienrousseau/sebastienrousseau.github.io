@@ -411,12 +411,121 @@ document.addEventListener("click", function (event) {
 (async function mermaidInit() {
     "use strict";
     if (!document.querySelector("pre.mermaid")) return;
-    var theme = document.documentElement.getAttribute("data-theme") === "dark" ? "dark" : "default";
     try {
         var mod = await import(
             "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"
         );
-        mod.default.initialize({ startOnLoad: true, securityLevel: "strict", theme: theme });
+        var isDark = document.documentElement.getAttribute("data-theme") === "dark";
+        if (!document.documentElement.getAttribute("data-theme")) {
+            isDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        }
+        mod.default.initialize({
+            startOnLoad: false,
+            securityLevel: "antiscript",
+            theme: isDark ? "dark" : "base",
+            themeVariables: isDark ? {
+                fontFamily: "var(--type-mono), ui-monospace, monospace",
+                fontSize: "14px",
+                primaryColor: "#161617",
+                primaryTextColor: "#f5f5f7",
+                primaryBorderColor: "#3a3a3c",
+                lineColor: "#b0b0b8",
+                textColor: "#f5f5f7",
+                actorBorder: "#3a3a3c",
+                actorBkg: "#161617",
+                actorTextColor: "#f5f5f7",
+                actorLineColor: "#3a3a3c",
+                labelBoxBkgColor: "#161617",
+                labelBoxBorderColor: "#3a3a3c",
+                labelTextBkgColor: "#161617",
+                labelTextColor: "#f5f5f7",
+                loopTextColor: "#f5f5f7",
+                noteBorderColor: "#3a3a3c",
+                noteBkgColor: "#1d1d1f",
+                noteTextColor: "#f5f5f7",
+                activationBorderColor: "#3a3a3c",
+                activationBkgColor: "#1d1d1f",
+                sequenceNumberColor: "#f5f5f7",
+            } : {
+                fontFamily: "var(--type-mono), ui-monospace, monospace",
+                fontSize: "14px",
+                primaryColor: "#ffffff",
+                primaryTextColor: "#111111",
+                primaryBorderColor: "#d2d2d7",
+                lineColor: "#505058",
+                textColor: "#1d1d1f",
+                actorBorder: "#d2d2d7",
+                actorBkg: "#fafafc",
+                actorTextColor: "#1d1d1f",
+                actorLineColor: "#d2d2d7",
+                labelBoxBkgColor: "#ffffff",
+                labelBoxBorderColor: "#d2d2d7",
+                labelTextBkgColor: "#ffffff",
+                labelTextColor: "#1d1d1f",
+                loopTextColor: "#1d1d1f",
+                noteBorderColor: "#d2d2d7",
+                noteBkgColor: "#f1f1f3",
+                noteTextColor: "#1d1d1f",
+                activationBorderColor: "#d2d2d7",
+                activationBkgColor: "#f1f1f3",
+                sequenceNumberColor: "#1d1d1f",
+            },
+            flowchart: { htmlLabels: true, useMaxWidth: true, curve: "basis" },
+        });
+
+        // Inject dynamic CSS overrides using variables so SVGs update cleanly on theme toggles
+        var style = document.createElement("style");
+        style.textContent = [
+            // Container — the layout's generic `main.content pre` rule paints
+            // a grey card background + padding meant for code blocks. Override
+            // for Mermaid so the SVG sits flush on the page background, and
+            // widen to the banner / page max width so the diagram is legible.
+            // Match the site's existing wide-content pattern (used by tables
+            // and .article-banner) — max-width: var(--max-wide) with auto
+            // margins. The site's <main> doesn't actually constrain to a
+            // narrow column for everything; only paragraphs have max-width:65ch.
+            // pre.mermaid as block-level can therefore go to the full
+            // --max-wide alongside tables and banner figures.
+            "pre.mermaid { background: transparent !important; border: 0 !important; padding: 0 !important; margin: 24px auto !important; width: 100% !important; max-width: var(--max-wide, 1440px) !important; overflow-x: auto; text-align: center; }",
+            "pre.mermaid svg { max-width: 100%; height: auto; }",
+            // Dark mode: Mermaid's themeVariables are baked into the SVG at
+            // render time, so toggling the site theme post-render leaves the
+            // SVG with stale colors. CSS overrides using --ink / --bg-alt /
+            // --border / --card / --accent follow the theme variable
+            // switching at paint time and stay readable in either mode.
+            "[data-theme='dark'] pre.mermaid svg .actor rect, html:not([data-theme='light']) pre.mermaid svg .actor rect { fill: #161617 !important; stroke: #3a3a3c !important; }",
+            "[data-theme='dark'] pre.mermaid svg .actor text, [data-theme='dark'] pre.mermaid svg .actor tspan, html:not([data-theme='light']) pre.mermaid svg .actor text, html:not([data-theme='light']) pre.mermaid svg .actor tspan { fill: #f5f5f7 !important; }",
+            "[data-theme='dark'] pre.mermaid svg .actor-line, html:not([data-theme='light']) pre.mermaid svg .actor-line { stroke: #3a3a3c !important; }",
+            "[data-theme='dark'] pre.mermaid svg .messageLine0, [data-theme='dark'] pre.mermaid svg .messageLine1, html:not([data-theme='light']) pre.mermaid svg .messageLine0, html:not([data-theme='light']) pre.mermaid svg .messageLine1 { stroke: #b0b0b8 !important; fill: none !important; }",
+            "[data-theme='dark'] pre.mermaid svg .messageText, html:not([data-theme='light']) pre.mermaid svg .messageText { fill: #f5f5f7 !important; }",
+            "[data-theme='dark'] pre.mermaid svg .labelBox, html:not([data-theme='light']) pre.mermaid svg .labelBox { fill: #161617 !important; stroke: #3a3a3c !important; }",
+            "[data-theme='dark'] pre.mermaid svg .labelText, [data-theme='dark'] pre.mermaid svg .labelText tspan, html:not([data-theme='light']) pre.mermaid svg .labelText, html:not([data-theme='light']) pre.mermaid svg .labelText tspan { fill: #f5f5f7 !important; }",
+            "[data-theme='dark'] pre.mermaid svg .note rect, html:not([data-theme='light']) pre.mermaid svg .note rect { fill: #1d1d1f !important; stroke: #3a3a3c !important; }",
+            "[data-theme='dark'] pre.mermaid svg .note text, [data-theme='dark'] pre.mermaid svg .note tspan, html:not([data-theme='light']) pre.mermaid svg .note text, html:not([data-theme='light']) pre.mermaid svg .note tspan { fill: #f5f5f7 !important; }",
+            "[data-theme='dark'] pre.mermaid svg marker path, [data-theme='dark'] pre.mermaid svg marker polygon, html:not([data-theme='light']) pre.mermaid svg marker path, html:not([data-theme='light']) pre.mermaid svg marker polygon { fill: #b0b0b8 !important; stroke: #b0b0b8 !important; }",
+            "@media (prefers-color-scheme: dark) { html:not([data-theme='light']) pre.mermaid svg .actor rect { fill: #161617 !important; stroke: #3a3a3c !important; } html:not([data-theme='light']) pre.mermaid svg .actor text, html:not([data-theme='light']) pre.mermaid svg .actor tspan { fill: #f5f5f7 !important; } html:not([data-theme='light']) pre.mermaid svg .messageText { fill: #f5f5f7 !important; } html:not([data-theme='light']) pre.mermaid svg .note rect { fill: #1d1d1f !important; stroke: #3a3a3c !important; } html:not([data-theme='light']) pre.mermaid svg .note text, html:not([data-theme='light']) pre.mermaid svg .note tspan { fill: #f5f5f7 !important; } html:not([data-theme='light']) pre.mermaid svg marker path { fill: #b0b0b8 !important; stroke: #b0b0b8 !important; } html:not([data-theme='light']) pre.mermaid svg .messageLine0, html:not([data-theme='light']) pre.mermaid svg .messageLine1 { stroke: #b0b0b8 !important; fill: none !important; } }",
+            "pre.mermaid svg .actor rect { fill: var(--bg-alt, #fafafc) !important; stroke: var(--border, #3a3a3e) !important; }",
+            "pre.mermaid svg .actor text, pre.mermaid svg .actor tspan { fill: var(--ink, #111111) !important; }",
+            "pre.mermaid svg .actor-line { stroke: var(--border, #3a3a3e) !important; }",
+            "pre.mermaid svg .messageLine0, pre.mermaid svg .messageLine1 { stroke: var(--ink-mute, #3a3a3e) !important; }",
+            "pre.mermaid svg .messageText { fill: var(--ink, #111111) !important; stroke: none !important; }",
+            "pre.mermaid svg .labelBox { fill: var(--card, #ffffff) !important; stroke: var(--border, #3a3a3e) !important; }",
+            "pre.mermaid svg .labelText, pre.mermaid svg .labelText tspan { fill: var(--ink, #111111) !important; }",
+            "pre.mermaid svg .note rect { fill: var(--bg-alt, #fafafc) !important; stroke: var(--border, #3a3a3e) !important; }",
+            "pre.mermaid svg .note text, pre.mermaid svg .note tspan { fill: var(--ink, #111111) !important; }",
+            "pre.mermaid svg .loopText, pre.mermaid svg .loopText tspan { fill: var(--ink, #111111) !important; }",
+            "pre.mermaid svg .loopLine { stroke: var(--border, #3a3a3e) !important; fill: none !important; }",
+            "pre.mermaid svg .active { fill: var(--bg-alt, #fafafc) !important; stroke: var(--border, #3a3a3e) !important; }",
+            "pre.mermaid svg circle.sequenceNumber { fill: var(--accent, #0056b3) !important; stroke: var(--accent, #0056b3) !important; }",
+            "pre.mermaid svg text.sequenceNumber { fill: #ffffff !important; stroke: none !important; font-weight: bold !important; }",
+            "pre.mermaid svg .edgePath .path { stroke: var(--ink-mute, #3a3a3e) !important; }",
+            "pre.mermaid svg .edgeLabel rect { fill: var(--card, #ffffff) !important; }",
+            "pre.mermaid svg .edgeLabel text, pre.mermaid svg .edgeLabel tspan { fill: var(--ink, #111111) !important; }",
+            "pre.mermaid svg marker { fill: var(--ink-mute, #3a3a3e) !important; stroke: none !important; }"
+        ].join("\n");
+        document.head.appendChild(style);
+
+        await mod.default.run({ querySelector: "pre.mermaid" });
     } catch (err) {
         console.warn("mermaid load failed", err);
     }

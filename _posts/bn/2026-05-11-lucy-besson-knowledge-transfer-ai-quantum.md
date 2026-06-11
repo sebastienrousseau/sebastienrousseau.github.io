@@ -1,5 +1,6 @@
 ---
 title: "Lucy's Flash Drive Revisited: AI, Quantum & Knowledge"
+tags: "Lucy, Luc Besson, Scarlett Johansson, AI, কোয়ান্টাম কম্পিউটিং, neutral atoms, LLM, ট্রান্সহিউম্যানিজম, mind uploading, brain-computer interfaces, posthumanism, film philosophy, ISO 20022, পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি"
 subtitle: "লুক বেসোঁর Lucy-র বারো বছর পর, মাংস থেকে যন্ত্রে জ্ঞান স্থানান্তরের কেন্দ্রীয় রূপকটি LLM, neutral atom qubits এবং whole-brain emulation দ্বারা অপ্রত্যাশিতভাবে যাচাই হচ্ছে।"
 description: "বারো বছর পরে, বেসোঁর Lucy মাংস থেকে যন্ত্রে জ্ঞান স্থানান্তরের একটি চিন্তা-পরীক্ষার মতো পড়ায় — LLM এবং কিউবিট দ্বারা নিঃশব্দে বৈধতা পাচ্ছে।"
 date: "May 11, 2026"
@@ -133,4 +134,3 @@ At human scale, no, and probably not for some time. As of early 2026, the state 
 - Sebastien Rousseau, (2025). [Quantum-Safe Payments: Why the Payments Industry Must Act Now](/2025-09-01-quantum-safe-payments-epaa/index.html "Quantum-Safe Payments: Why the Payments Industry Must Act Now").
 - Wikipedia contributors, (2026). [Lucy (2014 film) ⧉](https://en.wikipedia.org/wiki/Lucy_(2014_film) "Lucy (2014 film) - Wikipedia"). Wikipedia.
 - Wikipedia contributors, (2026). [Mind uploading ⧉](https://en.wikipedia.org/wiki/Mind_uploading "Mind uploading"). Wikipedia.
-

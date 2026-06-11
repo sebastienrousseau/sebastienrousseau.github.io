@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://sebastienrousseau.com/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/sitemap.xml

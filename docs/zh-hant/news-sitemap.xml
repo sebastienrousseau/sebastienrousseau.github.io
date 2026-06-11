@@ -8,9 +8,153 @@
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>zh-Hant</news:language>
     </news:publication>
-    <news:publication_date>2026-05-28T23:46:22+00:00</news:publication_date>
+    <news:publication_date>2026-06-11T00:09:27+00:00</news:publication_date>
     <news:title>CloudCDN:2026 年 AI原生邊緣的開源藍圖</news:title>
     <news:keywords>CloudCDN, AI原生邊緣, 開源 CDN, MCP 伺服器, Cloudflare Workers, Durable Objects, signed URLs, passkeys, SLSA, 邊緣基礎設施</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/zh-hant/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-Hant</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-11T00:09:27+00:00</news:publication_date>
+    <news:title>2026 年銀行業營運韌性指數:AI、雲端、量子、支付與第三方集中風險</news:title>
+    <news:keywords>2026 銀行營運韌性指數, DORA 營運韌性, AI 作業風險, 雲端集中風險, 銀行量子風險, 支付韌性</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/zh-hant/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-Hant</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-11T00:09:27+00:00</news:publication_date>
+    <news:title>2026 自主財務指數:代理型司庫、可程式化流動性、代幣化存款與即時現金管控</news:title>
+    <news:keywords>自主財務 2026, 代理型司庫, 可程式化流動性, 代幣化存款財務, 即時財務, 現金管理 AI</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/zh-hant/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-Hant</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-11T00:09:27+00:00</news:publication_date>
+    <news:title>2026 年的多管道銀行:在單一策略中整合卡片、A2A、穩定幣、RTP、FedNow 與 Open Banking</news:title>
+    <news:keywords>支付編排層, FedNow vs RTP, FedNow vs ACH, 穩定幣結算, USDC 原子結算, ISO 20022 pacs.008, 帳對帳 A2A, Open Banking API, 預籌流動性, 24/7 流動性陷阱, 多管道銀行 2026, 支付路由引擎, ERP 對帳</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/zh-hant/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-Hant</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-11T00:09:27+00:00</news:publication_date>
+    <news:title>後量子支付基礎建設:銀行為何可能替換而非改造傳統管道</news:title>
+    <news:keywords>後量子密碼學, PQC 支付, 密碼敏捷性, 現收割後解密, HNDL, NIST 後量子標準, ML-KEM, ML-DSA, FIPS 203, FIPS 204, 支付管道遷移, ISO 20022 PQC, SWIFT MT 替換, HSM, PKI 崩潰, 營運韌性, Quantum Computing Cybersecurity Preparedness Act</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/zh-hant/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-Hant</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-11T00:09:27+00:00</news:publication_date>
+    <news:title>數位資產 2026:銀行不能延後的轉型</news:title>
+    <news:keywords>數位資產 2026, 代幣化現實資產, 穩定幣銀行, 代幣化存款, 數位資產託管, DLT 銀行, 結算基礎建設, 抵押品流動性, 可程式化貨幣, 數位資產銀行戰略</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/zh-hant/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-Hant</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-06T06:06:06+00:00</news:publication_date>
+    <news:title>2026 大額支付指標:ISO 20022、代幣化存款、即時軌道與跨境結算</news:title>
+    <news:keywords>2026 大額支付, ISO 20022, 代幣化存款, Project Agorá, 跨境支付, 即時支付, 結構化地址資料, 支付資料品質</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/zh-hant/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-Hant</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-05T06:06:06+00:00</news:publication_date>
+    <news:title>2026 雲端原生銀行指數:DORA、平台工程、主權雲與營運韌性</news:title>
+    <news:keywords>雲端原生銀行 2026, DORA 銀行, 雲端集中風險, 銀行平台工程, ICT 第三方風險, 雲端退場策略, 主權雲, FIPS 203, ML-KEM, ISO 20022, Kubernetes</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/zh-hant/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-Hant</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-04T06:06:06+00:00</news:publication_date>
+    <news:title>2026 年量子安全銀行業指標:後量子密碼、QKD、密碼敏捷性與「先擷取、後解密」風險</news:title>
+    <news:keywords>2026 量子安全銀行業, 銀行後量子密碼, NIST FIPS 203, ML-KEM, ML-DSA, SLH-DSA, 密碼敏捷性, QKD 銀行業, ISO 20022, DORA</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/zh-hant/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-Hant</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-03T06:06:06+00:00</news:publication_date>
+    <news:title>2026 銀行智能體 AI 指數:量測自主性、治理、可稽核性與業務影響</news:title>
+    <news:keywords>智能體 AI 銀行 2026, 銀行 AI 智能體, 金融服務 AI 治理, 銀行自主工作流程, 模型風險管理, AI 可稽核性, SR 11-7, ISO 20022</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/zh-hant/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-Hant</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-02T06:06:06+00:00</news:publication_date>
+    <news:title>2026 銀行基礎建設指數:衡量自主式 AI、量子安全、雲原生韌性與大額支付的準備度</news:title>
+    <news:keywords>2026 銀行基礎建設指數, 自主式 AI 銀行, 量子安全銀行, 雲原生銀行, 大額支付, ISO 20022, DORA, Project Agora, 代幣化存款</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/zh-hant/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-Hant</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-30T06:06:06+00:00</news:publication_date>
+    <news:title>英國批發數位市場:代幣化金邊債、清算與全新推動者一職</news:title>
+    <news:keywords>英國批發數位市場 2026, Wholesale Digital Markets Champion, UK gilts, 代幣化金邊債, tokenised gilts, DLT 清算, BoE DSS, Project Guardian, SDX, Project Agorá, HM Treasury, Bank of England, City of London</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/zh-hant/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-Hant</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-29T06:06:06+00:00</news:publication_date>
+    <news:title>ISO 20022 遷移之後:2026 年把支付資料變成銀行產品</news:title>
+    <news:keywords>ISO 20022 2026, 結構化地址, CBPR+, 支付資料產品, 用途代碼, 企業財資, 對帳, 制裁篩查, 詐欺偵測, pacs.008, pain.001</news:keywords>
   </news:news>
 </url>
 <url>

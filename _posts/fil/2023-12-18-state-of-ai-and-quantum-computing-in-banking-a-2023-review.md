@@ -1,5 +1,6 @@
 ---
 title: "حالة الذكاء الاصطناعي والحوسبة الكمومية في القطاع المصرفي: مراجعة 2023"
+tags: "AI in banking, quantum computing, open-source LLMs, AI regulation, AI governance, post-quantum cryptography, risk management, 2023 review, banking innovation, serbisyong pinansyal, ISO 20022, AI, open source"
 subtitle: "تشكيل مستقبل القطاع المصرفي: الذكاء الاصطناعي، الحوسبة الكمومية، النماذج مفتوحة المصدر، والمشهد التنظيمي"
 description: "استكشاف المشهد التكنولوجي لعام 2023: الذكاء الاصطناعي والحوسبة الكمومية يُحدثان ثورة في القطاع المصرفي، صعود النماذج مفتوحة المصدر، وتطوّر التشريعات والحوكمة."
 date: "Dec 18, 2023"

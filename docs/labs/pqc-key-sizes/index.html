@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'self'; style-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; form-action 'none'; upgrade-insecure-requests">
+  <title>PQC key-size estimator — sebastienrousseau.com</title>
+  <link rel="stylesheet" href="calc.css">
+  <link rel="canonical" href="https://sebastienrousseau.com/labs/pqc-key-sizes/">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="description" content="Interactive estimator: classical RSA/ECC key sizes vs NIST PQC (ML-KEM, ML-DSA) equivalents, with TLS handshake overhead deltas.">
+<meta property="og:url" content="https://sebastienrousseau.com/labs/pqc-key-sizes/index.html">
+<meta property="og:locale" content="en_EN">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<meta property="og:image" content="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png">
+<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png">
+<script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script></head>
+<body>
+  <main>
+    <header>
+      <p class="eyebrow">Standards: <a href="https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.203.pdf">NIST FIPS 203 (ML-KEM)</a> &middot; <a href="https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.204.pdf">FIPS 204 (ML-DSA)</a></p>
+      <h1>Post-quantum key-size estimator</h1>
+      <p class="lede">Pick a classical algorithm and security category. The estimator returns the NIST-standardised post-quantum equivalent — ML-KEM (FIPS 203) for key encapsulation, ML-DSA (FIPS 204) for signatures — and the on-wire size delta you should expect at the TLS handshake.</p>
+    </header>
+
+    <section class="calc">
+      <fieldset>
+        <legend>Use case</legend>
+        <label class="radio"><input type="radio" name="use" value="kem" checked> Key agreement / encryption <small>(KEM — replaces RSA/ECDH)</small></label>
+        <label class="radio"><input type="radio" name="use" value="sig"> Digital signature <small>(replaces RSA/ECDSA/Ed25519)</small></label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Classical algorithm in use today</legend>
+        <label for="classical">Algorithm</label>
+        <select id="classical"></select>
+        <p class="hint" id="classical-hint" aria-live="polite"></p>
+      </fieldset>
+
+      <section class="result" aria-live="polite">
+        <h2>PQC equivalent</h2>
+        <table>
+          <tbody>
+            <tr><th>NIST security category</th><td id="r-cat">—</td></tr>
+            <tr><th>Algorithm</th><td id="r-alg">—</td></tr>
+            <tr><th>FIPS reference</th><td id="r-fips">—</td></tr>
+            <tr><th>Public key</th><td id="r-pk">—</td></tr>
+            <tr id="r-secret-row"><th>Ciphertext / signature</th><td id="r-secret">—</td></tr>
+            <tr><th>Classical baseline</th><td id="r-classical">—</td></tr>
+            <tr><th>On-wire delta</th><td id="r-delta">—</td></tr>
+          </tbody>
+        </table>
+
+        <div class="callout" id="callout">—</div>
+      </section>
+
+      <details>
+        <summary>What this estimator does <em>not</em> tell you</summary>
+        <ul>
+          <li><strong>Performance.</strong> ML-KEM keygen / encaps / decaps are faster than RSA on most CPUs and roughly comparable to ECDH; ML-DSA verify is fast, sign is slower. Use a benchmark on your target hardware, not size as a proxy.</li>
+          <li><strong>Migration risk.</strong> Hybrid (classical + PQC) is what most operators are deploying first; this tool models the PQC half only. The hybrid wire-format adds the classical key/signature alongside, doubling the bytes during the transition window.</li>
+          <li><strong>Side-channel posture.</strong> Both ML-KEM and ML-DSA require constant-time implementations to be safe; check the library you intend to use.</li>
+        </ul>
+      </details>
+    </section>
+
+    <footer>
+      <p>Sources: NIST <a href="https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.203.pdf">FIPS 203 (ML-KEM)</a>, <a href="https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.204.pdf">FIPS 204 (ML-DSA)</a>, August 2024. Classical key/signature sizes from <a href="https://datatracker.ietf.org/doc/html/rfc8446">RFC 8446 (TLS 1.3)</a> and the relevant SEC1 / PKCS#1 specs. No data leaves your browser — the computation is a static lookup table on the client.</p>
+    </footer>
+  </main>
+
+  <script type="module" src="calc.js"></script>
+</body>
+</html>

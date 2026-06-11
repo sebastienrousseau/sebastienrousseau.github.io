@@ -8,9 +8,153 @@
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>vi-VN</news:language>
     </news:publication>
-    <news:publication_date>2026-05-28T23:46:22+00:00</news:publication_date>
+    <news:publication_date>2026-06-11T00:09:27+00:00</news:publication_date>
     <news:title>CloudCDN: bản thiết kế mã nguồn mở cho biên AI-bản địa 2026</news:title>
     <news:keywords>CloudCDN, biên AI-bản địa, CDN mã nguồn mở, máy chủ MCP, Cloudflare Workers, Durable Objects, signed URLs, passkeys, SLSA, hạ tầng biên</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/vi/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>vi-VN</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-11T00:09:27+00:00</news:publication_date>
+    <news:title>Chỉ số Khả năng Phục hồi Ngân hàng 2026: AI, Đám mây, Lượng tử, Thanh toán và Rủi ro Tập trung Bên Thứ Ba</news:title>
+    <news:keywords>chỉ số khả năng phục hồi ngân hàng 2026, khả năng phục hồi DORA, rủi ro vận hành AI, rủi ro tập trung đám mây, rủi ro lượng tử ngân hàng, khả năng phục hồi thanh toán</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/vi/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>vi-VN</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-11T00:09:27+00:00</news:publication_date>
+    <news:title>Chỉ số Kho bạc Tự trị 2026: Kho bạc tác tử, thanh khoản có thể lập trình, tiền gửi token hoá và kiểm soát tiền mặt thời gian thực</news:title>
+    <news:keywords>kho bạc tự trị 2026, kho bạc tác tử, thanh khoản có thể lập trình, tiền gửi token hoá kho bạc, kho bạc thời gian thực, quản lý tiền mặt AI</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/vi/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>vi-VN</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-11T00:09:27+00:00</news:publication_date>
+    <news:title>Chỉ số Thanh toán Bán buôn 2026: ISO 20022, Tiền gửi Được Mã hóa, Đường ray Thời gian Thực và Quyết toán Xuyên Biên giới</news:title>
+    <news:keywords>thanh toán bán buôn 2026, ISO 20022, tiền gửi được mã hóa, Project Agorá, thanh toán xuyên biên giới, thanh toán thời gian thực, dữ liệu địa chỉ có cấu trúc, chất lượng dữ liệu thanh toán</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/vi/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>vi-VN</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-11T00:09:27+00:00</news:publication_date>
+    <news:title>Chỉ số Hạ tầng Ngân hàng 2026: Đo lường mức độ sẵn sàng cho Agentic AI, An ninh Kháng Lượng tử, Khả năng Phục hồi Cloud Native và Thanh toán Bán buôn</news:title>
+    <news:keywords>chỉ số hạ tầng ngân hàng 2026, agentic AI ngân hàng, ngân hàng kháng lượng tử, ngân hàng cloud-native, thanh toán bán buôn, ISO 20022, DORA, Project Agora, tiền gửi token hoá</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/vi/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>vi-VN</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-11T00:09:27+00:00</news:publication_date>
+    <news:title>Ngân hàng đa đường ray năm 2026: Thẻ, A2A, Stablecoin, RTP, FedNow và Open Banking trong một chiến lược</news:title>
+    <news:keywords>lớp điều phối thanh toán, FedNow so với RTP, FedNow so với ACH, quyết toán stablecoin, quyết toán nguyên tử USDC, ISO 20022 pacs.008, tài khoản tới tài khoản A2A, API Open Banking, thanh khoản nạp trước, bẫy thanh khoản 24/7, ngân hàng đa đường ray 2026, động cơ định tuyến thanh toán, đối chiếu ERP</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/vi/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>vi-VN</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-11T00:09:27+00:00</news:publication_date>
+    <news:title>Hạ tầng Thanh toán Hậu Lượng tử: Vì sao Ngân hàng nên Thay thế chứ không Điều chỉnh Đường ray Cũ</news:title>
+    <news:keywords>mật mã hậu lượng tử, PQC thanh toán, linh hoạt mật mã, thu thập-bây-giờ-giải-mã-sau, HNDL, chuẩn hậu lượng tử NIST, ML-KEM, ML-DSA, FIPS 203, FIPS 204, di trú đường ray thanh toán, ISO 20022 PQC, thay thế SWIFT MT, HSM, sụp đổ PKI, khả năng phục hồi vận hành, Đạo luật Chuẩn bị An ninh Mạng Điện toán Lượng tử</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/vi/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>vi-VN</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-11T00:09:27+00:00</news:publication_date>
+    <news:title>Thị trường Số Bán buôn tại Anh: Gilt Mã hóa, Quyết toán và Vai trò Điều phối</news:title>
+    <news:keywords>thị trường số bán buôn Anh 2026, Chris Woolard, gilt mã hóa, tài chính bán buôn mã hóa, điều phối viên thị trường số, tokenisation Anh, quyết toán</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/vi/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>vi-VN</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-11T00:09:27+00:00</news:publication_date>
+    <news:title>ISO 20022 Sau Di Trú: Biến Dữ Liệu Thanh Toán Thành Sản Phẩm Ngân Hàng 2026</news:title>
+    <news:keywords>ISO 20022 2026, địa chỉ có cấu trúc, CBPR+, sản phẩm dữ liệu thanh toán, mã mục đích thanh toán, ngân quỹ doanh nghiệp, đối soát, sàng lọc trừng phạt, phát hiện gian lận, pacs.008, pain.001</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/vi/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>vi-VN</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-05T06:06:06+00:00</news:publication_date>
+    <news:title>Chỉ số Ngân hàng Cloud-Native 2026: DORA, Kỹ thuật Nền tảng, Cloud Chủ quyền và Phục hồi Vận hành</news:title>
+    <news:keywords>ngân hàng cloud-native 2026, DORA ngân hàng, rủi ro tập trung cloud, kỹ thuật nền tảng ngân hàng, rủi ro bên thứ ba ICT, chiến lược thoát cloud, cloud chủ quyền, Kubernetes</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/vi/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>vi-VN</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-04T06:06:06+00:00</news:publication_date>
+    <news:title>Chỉ số Ngân hàng An toàn Lượng tử 2026: Mật mã Hậu Lượng tử, QKD, Linh hoạt Mật mã và Rủi ro Thu-Hoạch-Nay-Giải-Mã-Sau</news:title>
+    <news:keywords>ngân hàng an toàn lượng tử 2026, mật mã hậu lượng tử ngân hàng, NIST FIPS 203, ML-KEM, ML-DSA, SLH-DSA, linh hoạt mật mã, QKD ngân hàng</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/vi/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>vi-VN</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-03T06:06:06+00:00</news:publication_date>
+    <news:title>Chỉ số AI Tác nhân cho Ngân hàng năm 2026: Đo lường Quyền Tự chủ, Quản trị, Khả năng Kiểm toán và Tác động Kinh doanh</news:title>
+    <news:keywords>AI tác nhân ngân hàng 2026, tác nhân AI tại ngân hàng, quản trị AI dịch vụ tài chính, quy trình ngân hàng tự chủ, quản lý rủi ro mô hình, khả năng kiểm toán AI, SR 11-7, ISO 20022</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/vi/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>vi-VN</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-28T06:06:06+00:00</news:publication_date>
+    <news:title>Tài sản kỹ thuật số 2026: Chuyển dịch hạ tầng ngân hàng không thể trì hoãn</news:title>
+    <news:keywords>tài sản kỹ thuật số 2026, RWA token hoá, stablecoin ngân hàng, tiền gửi token hoá, lưu ký tài sản kỹ thuật số, DLT ngân hàng, hạ tầng quyết toán, tính di động tài sản đảm bảo, tiền có thể lập trình, chiến lược ngân hàng tài sản kỹ thuật số</news:keywords>
   </news:news>
 </url>
 <url>

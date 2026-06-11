@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta itemprop="datePublished" content="Mon, 12 Feb 2024 11:12:12 +0000" id="date" />
-    <meta itemprop="dateModified" content="Mon, 12 Feb 2024 11:12:12 +0000" id="last-modified" />
+    <meta itemprop="dateModified" content="2026-05-24" id="last-modified" />
     <title>Àkàndé: GPT-Powered Voice Assistant for Executives</title>
 
     <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
@@ -40,9 +40,9 @@
         form-action 'self' https://formspree.io;
         object-src 'none';
         upgrade-insecure-requests;
-        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-d9HO5Cvyme+VZWpa4G08AjRJcJAjRWtpWB0PAgup8vc=' 'sha256-hWYDph9hNE27gFvKv2d+LPv0PQ2mlJkYeBxhaqB51u0=' 'sha256-t2b1gQtC854CEaK77892j4NUoxX4S6zHCgXnAp5uhkU=' 'sha256-x5mmgRY9xmaNdZVQSTJ0eWD4B+azrB+v08S7JQyBqKY=' 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-Ft50DzCRhSXGhKZbUVZMiSGa1OreUIxnxHZuhvKQAw4=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-ZVvNYqv6Hh84XWrshF0GyVXjTNDH4JZ9pXEqPR2lZgA=' 'sha256-d9HO5Cvyme+VZWpa4G08AjRJcJAjRWtpWB0PAgup8vc=' 'sha256-oDsTcF5vfKxtnDtQs8vVl/5usl3kl4RB56sUWGaVIJc=' 'self' 'inline-speculation-rules' https://cdn.jsdelivr.net https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
         frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
-        connect-src 'self' https://www.google.com https://open.spotify.com;
+        connect-src 'self' https://cloudcdn.pro https://www.google.com https://open.spotify.com;
         img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co;
         style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
         font-src 'self' https://fonts.gstatic.com;
@@ -62,6 +62,8 @@
     <link rel="alternate" type="application/rss+xml" href="/rss.xml" />
     <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
     <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/newsreader-latin.woff2" crossorigin />
+    <link rel="stylesheet" href="/fonts/fonts.css" />
     <!-- Preload the LCP hero portrait so it doesn't compete with the
          render-blocking JS bundle on throttled mobile connections.
          Lighthouse-simulated Slow-4G has been pinning LCP at ~5.6s; the
@@ -73,13 +75,13 @@
     <meta name="color-scheme" content="light dark" />
     <script>(function(){try{var saved=localStorage.getItem("theme");var prefersDark=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;var theme=saved||(prefersDark?"dark":"light");document.documentElement.setAttribute("data-theme",theme);}catch(e){}})();</script>
 
-    <link rel="stylesheet" href="/_csp/6346d01ad7de2d6f.css" integrity="sha256-cmdn5aVLYjokOMehbFCVM2OVn90qAJQVGHgU/SsPTT0= sha256-LfI/OOvfKQbXmGjqT/lqFAdGuOgerwiywMKCZBxL014=" crossorigin="anonymous">
+    <link rel="stylesheet" href="/_csp/b4d33a118777a541.css" integrity="sha256-AvJ2HQqvVN7b9ko4kwoe+0LDSvZbZFdqtTjG1Cj3gyY= sha256-SP05jket9AUV28R01Zvw9HIQQTsS5g5nzddzdJD3ri4=" crossorigin="anonymous">
     <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="https://sebastienrousseau.com/atom.xml"/>
 <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-<link rel="stylesheet" href="/highlight.a92b9694.css">
+<link rel="stylesheet" href="/highlight.80eeb321.css">
 <meta property="og:title" content="Àkàndé: GPT-Powered Voice Assistant for Executives">
-<meta property="og:description" content="TL;DR. Àkàndé is an open-source Python voice assistant that chains OpenAI Whisper speech recognition, GPT-4 chat completions, and a local SQLite response">
-<meta property="og:type" content="website">
+<meta property="og:description" content=". Without explicit rules the browser cramped 4-5 col tables uncomfortably and longer cells wrapped to 1-2 word/line. Wrap in an overflow-x:auto block +">
+<meta property="og:type" content="article">
 <meta property="og:url" content="https://sebastienrousseau.com/2024-02-12-akande-voice-assistant-revolutionising-personal-and-executive-assistance/index.html">
 <meta property="og:image" content="https://cloudcdn.pro/stocks/images/akande-voice-assistant.webp">
 <meta property="og:image:width" content="100vw">
@@ -87,7 +89,7 @@
 <meta property="og:locale" content="en_GB">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Àkàndé: GPT-Powered Voice Assistant for Executives">
-<meta name="twitter:description" content="TL;DR. Àkàndé is an open-source Python voice assistant that chains OpenAI Whisper speech recognition, GPT-4 chat completions, and a local SQLite response">
+<meta name="twitter:description" content=". Without explicit rules the browser cramped 4-5 col tables uncomfortably and longer cells wrapped to 1-2 word/line. Wrap in an overflow-x:auto block +">
 <meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/akande-voice-assistant.webp">
 <link rel="canonical" href="https://sebastienrousseau.com/2024-02-12-akande-voice-assistant-revolutionising-personal-and-executive-assistance/index.html">
 <link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
@@ -169,7 +171,7 @@
         <section class="ap-hero">
       <h1>Àkàndé: GPT-Powered Voice Assistant for Executives</h1>
       <p class="sub">Architecture of an open-source Python voice assistant: Whisper, GPT-4, SQLite cache, and fpdf2</p>
-    <nav class="article-tags" aria-label="Topics"><a href="/tags/index.html#h3-akande" class="article-tag" rel="tag">Àkàndé</a><a href="/tags/index.html#h3-openai-gpt-4" class="article-tag" rel="tag">OpenAI GPT-4</a><a href="/tags/index.html#h3-whisper-stt" class="article-tag" rel="tag">Whisper STT</a><a href="/tags/index.html#h3-sqlite-caching" class="article-tag" rel="tag">SQLite caching</a><a href="/tags/index.html#h3-fpdf2" class="article-tag" rel="tag">fpdf2</a><a href="/tags/index.html#h3-python-voice-assistant" class="article-tag" rel="tag">Python voice assistant</a><a href="/tags/index.html#h3-chat-completions-api" class="article-tag" rel="tag">chat completions API</a><a href="/tags/index.html#h3-pdf-summary-generation" class="article-tag" rel="tag">PDF summary generation</a><a href="/tags/index.html#h3-sha-256-cache" class="article-tag" rel="tag">SHA-256 cache</a><a href="/tags/index.html#h3-text-to-speech" class="article-tag" rel="tag">text-to-speech</a><a href="/tags/index.html#h3-executive-assistant-ai" class="article-tag" rel="tag">executive assistant AI</a><a href="/tags/index.html#h3-open-source" class="article-tag" rel="tag">open-source</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2024-02-12T11:12:12+00:00" class="meta-pub">Published 12 Feb 2024</time> <span aria-hidden="true">·</span> <time datetime="2026-05-24" class="meta-rev">Updated 24 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Estimated read time">7 min read</span></div></section>
+    <nav class="article-tags" aria-label="Topics"><a href="/tags/index.html#h3-akande" class="article-tag" rel="tag">Àkàndé</a><a href="/tags/index.html#h3-openai-gpt-4" class="article-tag" rel="tag">OpenAI GPT-4</a><a href="/tags/index.html#h3-whisper-stt" class="article-tag" rel="tag">Whisper STT</a><a href="/tags/index.html#h3-sqlite-caching" class="article-tag" rel="tag">SQLite caching</a><a href="/tags/index.html#h3-fpdf2" class="article-tag" rel="tag">fpdf2</a><a href="/tags/index.html#h3-python-voice-assistant" class="article-tag" rel="tag">Python voice assistant</a><a href="/tags/index.html#h3-chat-completions-api" class="article-tag" rel="tag">chat completions API</a><a href="/tags/index.html#h3-pdf-summary-generation" class="article-tag" rel="tag">PDF summary generation</a><a href="/tags/index.html#h3-sha-256-cache" class="article-tag" rel="tag">SHA-256 cache</a><a href="/tags/index.html#h3-text-to-speech" class="article-tag" rel="tag">text-to-speech</a><a href="/tags/index.html#h3-executive-assistant-ai" class="article-tag" rel="tag">executive assistant AI</a><a href="/tags/index.html#h3-open-source" class="article-tag" rel="tag">open-source</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2024-02-12T11:12:12+00:00" class="meta-pub">Published 12 Feb 2024</time> <span aria-hidden="true">·</span> <time datetime="2026-05-24" class="meta-rev">Updated 24 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Estimated read time">7 min read</span></div></section><figure class="article-banner"><img src="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant.webp&w=1600&format=webp&q=85" alt="Banner for: Àkàndé: GPT-Powered Voice Assistant for Executives" width="1200" height="675" fetchpriority="high" decoding="async" /></figure>
 
     <main id="main" class="content ap-section" aria-label="main">
       <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>Contents</h2><ol><li><a href="#pipeline-overview">Pipeline Overview</a></li><li><a href="#openai-integration-chat-completions-and-whisper">OpenAI Integration: Chat Completions and Whisper</a></li><li><a href="#sqlite-response-cache">SQLite Response Cache</a></li><li><a href="#pdf-summary-generation">PDF Summary Generation</a></li><li><a href="#privacy-model">Privacy Model</a></li><li><a href="#frequently-asked-questions">Frequently Asked Questions</a></li><li><a href="#references">References</a></li></ol></aside><!-- lead-start -->
@@ -182,6 +184,7 @@
   <li><strong>SQLite Response Cache.</strong> The cache schema is minimal:.</li>
   <li><strong>PDF Summary Generation.</strong> PDF export uses fpdf2, a maintained Python PDF library with no binary dependencies:.</li>
 </ul>
+<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026">The Cloud Native Banking Index in 2026: DORA, Platform Engineering, Sovereign Cloud, and Operational Resilience</a>, <a href="https://sebastienrousseau.com/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026">The Agentic AI Index for Banks in 2026: Measuring Autonomy, Governance, Auditability, and Business Impact</a>, <a href="https://sebastienrousseau.com/2026-05-16-best-cloud-infrastructure-architecture-2026">The Best Cloud Infrastructure Architecture in 2026: An AI-Native, Multi-Cloud, Quantum-Aware Blueprint for Financial Services</a>.</p>
 </aside>
 <!-- lead-end -->
 <blockquote>
@@ -339,7 +342,15 @@ Yes. The fpdf2 export function accepts the <code>messages</code> list as its onl
 </ol>
 <!-- enrich-start -->
 <aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=85" width="64" height="64" loading="lazy" decoding="async"  fetchpriority="high"><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
-<p class="post-reviewed">Last reviewed <time datetime="2026-05-29">2026-05-29</time>.</p>
+<p class="post-reviewed">Last reviewed <time datetime="2026-06-11">2026-06-11</time>.</p>
+<aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Related reading</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026" class="related-media" aria-label="The Cloud Native Banking Index in 2026: DORA, Platform Engineering, Sovereign Cloud, and Operational Resilience" tabindex="-1"><img alt="Circuit-board pattern resolving into a cityscape skyline — the visual register chosen for cloud-native banking: platform-engineering primitives stitched into the bank's operational fabric." src="https://cloudcdn.pro/api/transform?url=/stocks/images/quang-nguyen-vinh-2649403.webp&w=1600&format=webp&q=85" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="the-cloud-native-banking-index-in-2026-dora-platform-engineering-sovereign-cloud"><a href="https://sebastienrousseau.com/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026">The Cloud Native Banking Index in 2026: DORA, Platform Engineering, Sovereign Cloud, and Operational Resilience</a> <a class="heading-anchor" href="#the-cloud-native-banking-index-in-2026-dora-platform-engineering-sovereign-cloud" aria-label="Link to The Cloud Native Banking Index in 2026: DORA, Platform Engineering, Sovereign Cloud, and Operational Resilience">#</a></h3><p><time datetime="2026-06-05">2026-06-05</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026" class="related-media" aria-label="The Agentic AI Index for Banks in 2026: Measuring Autonomy, Governance, Auditability, and Business Impact" tabindex="-1"><img alt="The Agentic AI Index for Banks 2026 index diagram for banks and financial institutions in 2026" src="https://cloudcdn.pro/api/transform?url=/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="the-agentic-ai-index-for-banks-in-2026-measuring-autonomy-governance-auditabilit"><a href="https://sebastienrousseau.com/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026">The Agentic AI Index for Banks in 2026: Measuring Autonomy, Governance, Auditability, and Business Impact</a> <a class="heading-anchor" href="#the-agentic-ai-index-for-banks-in-2026-measuring-autonomy-governance-auditabilit" aria-label="Link to The Agentic AI Index for Banks in 2026: Measuring Autonomy, Governance, Auditability, and Business Impact">#</a></h3><p><time datetime="2026-06-03">2026-06-03</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-16-best-cloud-infrastructure-architecture-2026" class="related-media" aria-label="The Best Cloud Infrastructure Architecture in 2026: An AI-Native, Multi-Cloud, Quantum-Aware Blueprint for Financial Services" tabindex="-1"><img alt="Six-pillar cloud architecture diagram for 2026 — AI-native, multi-cloud, serverless, edge, DevSecOps, and sustainable design, with CloudCDN edge research overlay" src="https://cloudcdn.pro/api/transform?url=/stock/images/cloud-architecture-2026-banner.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="the-best-cloud-infrastructure-architecture-in-2026-an-ai-native-multi-cloud-quan"><a href="https://sebastienrousseau.com/2026-05-16-best-cloud-infrastructure-architecture-2026">The Best Cloud Infrastructure Architecture in 2026: An AI-Native, Multi-Cloud, Quantum-Aware Blueprint for Financial Services</a> <a class="heading-anchor" href="#the-best-cloud-infrastructure-architecture-in-2026-an-ai-native-multi-cloud-quan" aria-label="Link to The Best Cloud Infrastructure Architecture in 2026: An AI-Native, Multi-Cloud, Quantum-Aware Blueprint for Financial Services">#</a></h3><p><time datetime="2026-05-16">2026-05-16</time></p></footer></article>
+</div>
+</aside>
 <!-- enrich-end -->
 <aside class="article-sources" aria-labelledby="sources-heading"><h2 id="sources-heading" class="article-sources-heading">Sources & references</h2><ol class="article-sources-list"><li><a href="https://platform.openai.com/docs/api-reference/audio/createTranscription" rel="external noopener nofollow"><span class="source-host">platform.openai.com</span><span class="source-path">/docs/api-reference/audio/createTranscription</span></a></li><li><a href="https://platform.openai.com/docs/api-reference/chat/create" rel="external noopener nofollow"><span class="source-host">platform.openai.com</span><span class="source-path">/docs/api-reference/chat/create</span></a></li><li><a href="https://github.com/py-pdf/fpdf2" rel="external noopener nofollow"><span class="source-host">github.com</span><span class="source-path">/py-pdf/fpdf2</span></a></li></ol></aside><nav class="post-pagination" aria-label="Article pagination"><a class="post-pagination-prev" href="/2024-02-08-revolutionising-advertising-how-ai-shapes-the-future/"><span class="post-pagination-label">Previous</span><span class="post-pagination-title">Generative AI in Advertising: Amazon Rufus & Meta</span></a><a class="post-pagination-next" href="/2024-02-13-eus-ai-act-shaping-the-future-of-global-ai-regulation/"><span class="post-pagination-label">Next</span><span class="post-pagination-title">EU's AI Act: Pioneering Ethical AI Regulation Worldwide</span></a></nav></div>
     </main>
@@ -404,7 +415,7 @@ Yes. The fpdf2 export function accepts the <code>messages</code> list as its onl
             <a href="/privacy/index.html">Privacy</a> ·
             <a href="/terms/index.html">Terms</a> ·
             <a href="https://www.thegreenwebfoundation.org/green-web-check/?url=sebastienrousseau.com" target="_blank" rel="noopener noreferrer" title="Hosted on 100% renewable energy (Cloudflare) — estimate via Sustainable Web Design v4 model">Carbon: ~0.04 g/visit · green-hosted</a> ·
-            <a href="https://github.com/sebastienrousseau/sebastienrousseau.github.io/blob/main/doc/SIGSTORE.md" target="_blank" rel="noopener noreferrer" title="Every dated article is signed with Sigstore — verify the bytes match what was published">Verify signatures</a>
+            <a href="https://github.com/sebastienrousseau/sebastienrousseau.github.io/blob/main/project-docs/sigstore.md" target="_blank" rel="noopener noreferrer" title="Every dated article is signed with Sigstore — verify the bytes match what was published">Verify signatures</a>
           </p>
         </div>
       </div>
@@ -425,17 +436,24 @@ Yes. The fpdf2 export function accepts the <code>messages</code> list as its onl
       "image": "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png",
       "jobTitle": "Senior Product Manager",
       "description": "AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "ORCID",
+        "value": "0009-0005-1434-284X",
+        "url": "https://orcid.org/0009-0005-1434-284X"
+      },
       "worksFor": {
         "@type": "Organization",
+        "@id": "https://www.hsbc.com/#organization",
         "name": "HSBC Commercial & Investment Bank",
         "url": "https://www.hsbc.com/"
       },
       "alumniOf": [
-        {"@type": "Organization", "name": "PayPal"},
-        {"@type": "Organization", "name": "Barclays"},
-        {"@type": "Organization", "name": "Shazam Entertainment"},
-        {"@type": "Organization", "name": "AKQA"},
-        {"@type": "Organization", "name": "Virgin Group"}
+        {"@type": "Organization", "name": "PayPal", "url": "https://www.paypal.com/"},
+        {"@type": "Organization", "name": "Barclays", "url": "https://www.barclays.com/"},
+        {"@type": "Organization", "name": "Shazam Entertainment", "url": "https://www.shazam.com/"},
+        {"@type": "Organization", "name": "AKQA", "url": "https://www.akqa.com/"},
+        {"@type": "Organization", "name": "Virgin Group", "url": "https://www.virgin.com/"}
       ],
       "memberOf": {
         "@type": "ProgramMembership",
@@ -446,18 +464,39 @@ Yes. The fpdf2 export function accepts the <code>messages</code> list as its onl
           "url": "https://emergingpaymentsasia.org/"
         }
       },
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "professional experience",
+          "name": "20+ years across Tier-1 banks and global payments infrastructure",
+          "recognizedBy": {"@type": "Organization", "name": "HSBC Commercial & Investment Bank", "url": "https://www.hsbc.com/"}
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "domain expertise",
+          "name": "ISO 20022 migration and wholesale payments architecture",
+          "recognizedBy": {"@type": "Organization", "name": "SWIFT", "url": "https://www.swift.com/"}
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "domain expertise",
+          "name": "Post-Quantum Cryptography for financial services",
+          "recognizedBy": {"@type": "Organization", "name": "NIST Post-Quantum Cryptography Project", "url": "https://csrc.nist.gov/projects/post-quantum-cryptography"}
+        }
+      ],
       "knowsAbout": [
-        "Applied artificial intelligence in banking",
-        "Generative AI for financial services",
-        "Wholesale payments",
-        "ISO 20022 migration",
-        "SWIFT gpi",
-        "SEPA Instant Payments",
-        "Cross-border payments",
-        "Post-quantum cryptography",
-        "CRYSTALS-Kyber",
-        "CRYSTALS-Dilithium",
-        "Quantum-safe payment authentication"
+        {"@type": "DefinedTerm", "name": "Post-Quantum Cryptography", "sameAs": "https://en.wikipedia.org/wiki/Post-quantum_cryptography"},
+        {"@type": "DefinedTerm", "name": "ML-KEM (FIPS 203)", "sameAs": "https://csrc.nist.gov/pubs/fips/203/final"},
+        {"@type": "DefinedTerm", "name": "ML-DSA (FIPS 204)", "sameAs": "https://csrc.nist.gov/pubs/fips/204/final"},
+        {"@type": "DefinedTerm", "name": "ISO 20022", "sameAs": "https://en.wikipedia.org/wiki/ISO_20022"},
+        {"@type": "DefinedTerm", "name": "SWIFT gpi", "sameAs": "https://www.swift.com/our-solutions/swift-gpi"},
+        {"@type": "DefinedTerm", "name": "SEPA Instant Payments", "sameAs": "https://www.ecb.europa.eu/paym/integration/retail/instant_payments/html/index.en.html"},
+        {"@type": "DefinedTerm", "name": "FedNow Service", "sameAs": "https://www.federalreserve.gov/paymentsystems/fednow_about.htm"},
+        {"@type": "DefinedTerm", "name": "Real-Time Payments (RTP)", "sameAs": "https://www.theclearinghouse.org/payment-systems/rtp"},
+        {"@type": "DefinedTerm", "name": "Cross-border payments", "sameAs": "https://en.wikipedia.org/wiki/Cross-border_payments"},
+        {"@type": "DefinedTerm", "name": "Wholesale banking", "sameAs": "https://en.wikipedia.org/wiki/Wholesale_banking"},
+        {"@type": "DefinedTerm", "name": "Applied artificial intelligence in banking", "sameAs": "https://en.wikipedia.org/wiki/Applications_of_artificial_intelligence"},
+        {"@type": "DefinedTerm", "name": "Generative artificial intelligence", "sameAs": "https://en.wikipedia.org/wiki/Generative_artificial_intelligence"}
       ],
       "address": {
         "@type": "PostalAddress",
@@ -465,6 +504,7 @@ Yes. The fpdf2 export function accepts the <code>messages</code> list as its onl
         "addressCountry": "United Kingdom"
       },
       "sameAs": [
+        "https://orcid.org/0009-0005-1434-284X",
         "https://twitter.com/wwdseb",
         "https://www.linkedin.com/in/sebastienrousseau/",
         "https://medium.com/@BankingOnQuantum",
@@ -473,12 +513,39 @@ Yes. The fpdf2 export function accepts the <code>messages</code> list as its onl
       ]
     },
     {
+      "@type": ["Organization", "Brand"],
+      "@id": "https://sebastienrousseau.com/#organization",
+      "name": "Sebastien Rousseau",
+      "alternateName": "Banking on Quantum",
+      "url": "https://sebastienrousseau.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "https://sebastienrousseau.com/#logo",
+        "url": "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png",
+        "width": "512",
+        "height": "512",
+        "caption": "Sebastien Rousseau"
+      },
+      "founder": {"@id": "https://sebastienrousseau.com/#person"},
+      "editorialPolicy": "https://sebastienrousseau.com/editorial/",
+      "correctionsPolicy": "https://sebastienrousseau.com/editorial/#corrections",
+      "ethicsPolicy": "https://sebastienrousseau.com/editorial/",
+      "diversityPolicy": "https://sebastienrousseau.com/editorial/",
+      "sameAs": [
+        "https://github.com/sebastienrousseau",
+        "https://twitter.com/wwdseb",
+        "https://www.linkedin.com/in/sebastienrousseau/",
+        "https://medium.com/@BankingOnQuantum"
+      ]
+    },
+    {
       "@type": "WebSite",
       "@id": "https://sebastienrousseau.com/#website",
       "url": "https://sebastienrousseau.com/",
       "name": "Sebastien Rousseau",
       "description": "AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.",
-      "publisher": {"@id": "https://sebastienrousseau.com/#person"},
+      "publisher": {"@id": "https://sebastienrousseau.com/#organization"},
+      "author": {"@id": "https://sebastienrousseau.com/#person"},
       "inLanguage": "en-GB"
     },
     {
@@ -496,7 +563,7 @@ Yes. The fpdf2 export function accepts the <code>messages</code> list as its onl
         <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":1521,"about":{"@type":"Thing","name":"Python","sameAs":["https://en.wikipedia.org/wiki/Python_(programming_language)","https://www.wikidata.org/wiki/Q28865"]},"headline":"Àkàndé: GPT-Powered Voice Assistant for Executives","description":"Àkàndé is an open-source Python voice assistant that chains OpenAI Whisper speech recognition, GPT-4 chat completions, and a local SQLite response cache into a voice-driven workflow — generating PDF summaries from conversation history and keeping all stored data local.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/akande-voice-assistant.webp","width":"100vw","height":"100vh","caption":"A white, spherical modern device"},"url":"https://sebastienrousseau.com/2024-02-12-akande-voice-assistant-revolutionising-personal-and-executive-assistance/index.html","datePublished":"2024-02-12T11:12:12+00:00","dateModified":"2026-05-24","inLanguage":"en","keywords":"Àkàndé, OpenAI GPT-4, Whisper STT, SQLite caching, fpdf2, Python voice assistant, chat completions API, PDF summary generation, SHA-256 cache, text-to-speech, executive assistant AI, open-source","articleSection":"AI","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/2024-02-12-akande-voice-assistant-revolutionising-personal-and-executive-assistance/index.html"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/articles/#blog","name":"Sebastien Rousseau — Articles","url":"https://sebastienrousseau.com/articles/"},"citation":[{"@type":"CreativeWork","url":"https://platform.openai.com/docs/api-reference/audio/createTranscription"},{"@type":"CreativeWork","url":"https://platform.openai.com/docs/api-reference/chat/create"},{"@type":"CreativeWork","url":"https://github.com/py-pdf/fpdf2"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/articles/"},{"@type":"ListItem","position":3,"name":"Àkàndé: GPT-Powered Voice Assistant for Executives","item":"https://sebastienrousseau.com/2024-02-12-akande-voice-assistant-revolutionising-personal-and-executive-assistance/index.html"}]}]}
     </script>
-<script src="/main.e1c270a6.js" defer integrity="sha256-p2FFu6C9UjC1BhWEVTdryx1iPa0FNVgaz5dz365Gd9I= sha256-UVRmWZ21ffSNgLDN1dLfr48S6iL6D3AxL4O5xYOK7U4=" crossorigin="anonymous"></script>
+<script src="/main.931cef3c.js" defer integrity="sha256-JUs9z2u4RDSgxMCjBnyMmIHIkpakA7s5FxUmnDnSpD0= sha256-r33y52uSTzd+MqMufJlWsd09gyxv578IRoF5Gomw7Aw=" crossorigin="anonymous"></script>
   
 <!-- SSG Search Widget -->
 <div id="ssg-search-widget">
@@ -521,5 +588,5 @@ Yes. The fpdf2 export function accepts the <code>messages</code> list as its onl
 </div>
 <script src="/_csp/61bc2fae7f71ccad.js" integrity="sha256-Y0txeCfdk+GUctTYMAxMbFCB2qs1cPm8JSIX3WRS9cs= sha256-5Ca5zk/7tsavsCDhg6M1m4feBn+L4YnJ7iavKawynII=" crossorigin="anonymous"></script>
 </div>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Àkàndé: GPT-Powered Voice Assistant for Executives","url":"https://sebastienrousseau.com/2024-02-12-akande-voice-assistant-revolutionising-personal-and-executive-assistance/index.html","inLanguage":"en-GB","isAccessibleForFree":true,"proficiencyLevel":"Expert","keywords":"Àkàndé, OpenAI GPT-4, Whisper STT, SQLite caching, fpdf2, Python voice assistant, chat completions API, PDF summary generation, SHA-256 cache, text-to-speech, executive assistant AI, open-source","programmingLanguage":"Python"}</script></body>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Àkàndé: GPT-Powered Voice Assistant for Executives","url":"https://sebastienrousseau.com/2024-02-12-akande-voice-assistant-revolutionising-personal-and-executive-assistance/index.html","inLanguage":"en-GB","isAccessibleForFree":true,"author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#organization"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/2024-02-12-akande-voice-assistant-revolutionising-personal-and-executive-assistance/index.html"},"keywords":"Àkàndé, OpenAI GPT-4, Whisper STT, SQLite caching, fpdf2, Python voice assistant, chat completions API, PDF summary generation, SHA-256 cache, text-to-speech, executive assistant AI, open-source","proficiencyLevel":"Expert","programmingLanguage":"Python"}</script></body>
 </html>

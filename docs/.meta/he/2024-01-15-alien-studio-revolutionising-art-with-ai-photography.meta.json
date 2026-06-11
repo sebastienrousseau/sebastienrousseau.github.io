@@ -1,11 +1,14 @@
 {
-  "title": "Alien Studio: رحلتي من التكنولوجيا إلى الفنّ التصويري",
   "banner_alt": "ملهمة الغروب، نظرة هادئة؛ جمال في السكون",
+  "language": "he-IL",
+  "banner": "https://cloudcdn.pro/clients/alienstudio/v1/collections/radiance/radiance-08.webp",
+  "title": "Alien Studio: رحلتي من التكنولوجيا إلى الفنّ التصويري",
   "date": "Jan 15, 2024",
   "keywords": "رحلة تقنية شخصية، اكتشاف Rust، استكشاف الذكاء الاصطناعي، الحوسبة الكمومية، اندماج الفنّ والتصوير، Alien Studio، إنشاء الفنّ الرقمي، التكنولوجيا في الفنّ، تصوير مبتكر، إعادة اكتشاف فنّي",
-  "locale": "he_IL",
+  "word_count": 689,
+  "tags": "Technology, Art, Photography, Rust, AI, מחשוב קוונטי, Personal Journey, Alien Studio, Digital Art, Innovation, ISO 20022, קריפטוגרפיה פוסט-קוונטית",
   "subtitle": "بدايات ملحمة تكنولوجية",
+  "locale": "he_IL",
   "description": "انضمّ إليّ في رحلتي الشخصية — من Rust والذكاء الاصطناعي والحوسبة الكمومية إلى إعادة تعريف الفنّ والتصوير عبر Alien Studio.",
-  "banner": "https://cloudcdn.pro/clients/alienstudio/v1/collections/radiance/radiance-08.webp",
-  "language": "he-IL"
+  "reading_time": 3
 }

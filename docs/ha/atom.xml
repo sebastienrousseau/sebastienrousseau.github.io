@@ -4,14 +4,122 @@
   <link href="https://sebastienrousseau.com/ha/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/ha/"/>
   <id>https://sebastienrousseau.com/ha/</id>
-  <updated>2026-05-28T23:46:21+00:00</updated>
+  <updated>2026-06-11T00:09:27+00:00</updated>
   <entry>
     <title>CloudCDN: Tsari na Buɗaɗɗen Tushe ga Gefe na AI-na Asali a 2026</title>
     <link href="https://sebastienrousseau.com/ha/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/"/>
     <id>https://sebastienrousseau.com/ha/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/</id>
-    <updated>2026-05-28T23:46:21+00:00</updated>
-    <published>2026-05-28T23:46:21+00:00</published>
+    <updated>2026-06-11T00:09:27+00:00</updated>
+    <published>2026-06-11T00:09:27+00:00</published>
     <summary>CloudCDN tsari ne na buɗaɗɗen tushe, na CDN na gefe na AI-na asali don ababen more rayuwa da MCP ke sarrafa, iyakancewar adadi ta Durable Objects, signed URLs, da ikon bincike.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Fihirisa na Juriyar Banki a 2026: AI, Cloud, Quantum, Biya, da Haɗarin Tarawa na Ɓangare na Uku</title>
+    <link href="https://sebastienrousseau.com/ha/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/"/>
+    <id>https://sebastienrousseau.com/ha/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/</id>
+    <updated>2026-06-11T00:09:27+00:00</updated>
+    <published>2026-06-11T00:09:27+00:00</published>
+    <summary>Fihirisa na juriyar banki ta 2026 da ke haɗa haɗarin AI, haɗarin tarawa na cloud, tsaron PQC, ci gaba na biya, da dogaro ga ɓangare na uku.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Fihirisar Kuɗi Mai Cin Gashin Kansa a 2026: Kuɗi na Agentic, Kuɗin Shirye-shiryen, Ajiyar Tokens, da Kula da Kuɗi a Ainihin Lokaci</title>
+    <link href="https://sebastienrousseau.com/ha/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/"/>
+    <id>https://sebastienrousseau.com/ha/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/</id>
+    <updated>2026-06-11T00:09:27+00:00</updated>
+    <published>2026-06-11T00:09:27+00:00</published>
+    <summary>Fihirisar 2026 don shirye-shiryen kuɗi mai cin gashin kansa, mai rufe tafiyar ayyukan kuɗi na agentic, kuɗin shirye-shiryen, ajiyar tokens, biyan kuɗi a ainihin lokaci, da kula da kuɗi ta atomatik.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Bankin Hanyoyi Da Yawa a 2026: Katuna, A2A, Stablecoins, RTP, FedNow, da Open Banking Cikin Dabara Daya</title>
+    <link href="https://sebastienrousseau.com/ha/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/"/>
+    <id>https://sebastienrousseau.com/ha/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</id>
+    <updated>2026-06-11T00:09:27+00:00</updated>
+    <published>2026-06-11T00:09:27+00:00</published>
+    <summary>Bankin hanyoyi da yawa na 2026 yana tafiyar da biya bisa farashi, ƙarshe, da farashin kuɗi — injin tsara ne ke karanta ISO 20022 pacs.008 ya yanke shawara.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Kayan Biya Bayan Quantum: Me Ya Sa Bankuna Za Su Iya Maye Gurbin Tsofaffin Hanyoyi Maimakon Daidaitawa</title>
+    <link href="https://sebastienrousseau.com/ha/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/"/>
+    <id>https://sebastienrousseau.com/ha/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</id>
+    <updated>2026-06-11T00:09:27+00:00</updated>
+    <published>2026-06-11T00:09:27+00:00</published>
+    <summary>Cryptography bayan quantum tana tilasta zaɓi biyu kan hanyoyin biya: daidaita RSA/ECC cikin SWIFT MT da ISO 20022 da ba a tsara wa ML-KEM da ML-DSA ba, ko maye gurbi da kayan saurin crypto. Masu zane su yanke kafin HNDL ya zama asarar aiki.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Kadarorin Dijital a 2026: Sauyin Ababen More Rayuwa da Bankuna Ba za su Iya Jinkirta ba</title>
+    <link href="https://sebastienrousseau.com/ha/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/"/>
+    <id>https://sebastienrousseau.com/ha/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</id>
+    <updated>2026-06-11T00:09:27+00:00</updated>
+    <published>2026-06-11T00:09:27+00:00</published>
+    <summary>Kadarorin dijital ba sake fasalin sabuntawa ba ne. Sun zama tambaya ta tsarin biyan kuɗi na ƙarshe, kulawa, da ma&apos;aunin daidaitawa. Aikin dabaru ga bankuna shi ne tsara ababen more rayuwa a ƙarƙashin rashin tabbas na tsari.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Index na Biyan Kuɗi na Wholesale a 2026: ISO 20022, Tokenised Deposits, Layukan Ainihin-Lokaci, da Settlement na Cross-Border</title>
+    <link href="https://sebastienrousseau.com/ha/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/"/>
+    <id>https://sebastienrousseau.com/ha/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</id>
+    <updated>2026-06-06T06:06:06+00:00</updated>
+    <published>2026-06-06T06:06:06+00:00</published>
+    <summary>Index na 2026 don shirin biyan kuɗi na wholesale, yana auna ingancin bayanan ISO 20022, tokenised deposits, layukan ainihin-lokaci, settlement na cross-border, da ingantaccen ruwa.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Ma&apos;aunin Banking Cloud-Native a 2026: DORA, Platform Engineering, Sovereign Cloud, da Juriya na Aiki</title>
+    <link href="https://sebastienrousseau.com/ha/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/"/>
+    <id>https://sebastienrousseau.com/ha/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/</id>
+    <updated>2026-06-05T06:06:06+00:00</updated>
+    <published>2026-06-05T06:06:06+00:00</published>
+    <summary>Ma&apos;aunin banking na cloud-native na 2026 don auna shirye-shiryen DORA, balagar platform engineering, haɗarin tarin cloud, shaidar fita, da juriya na aiki.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Quantum-Safe Banking Index a 2026: Cryptography na Post-Quantum, QKD, Crypto-Agility, da Haɗarin Harvest-Now-Decrypt-Later</title>
+    <link href="https://sebastienrousseau.com/ha/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/"/>
+    <id>https://sebastienrousseau.com/ha/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/</id>
+    <updated>2026-06-04T06:06:06+00:00</updated>
+    <published>2026-06-04T06:06:06+00:00</published>
+    <summary>Index na banki don shirin quantum-safe a 2026, ya rufe ƙa&apos;idodin post-quantum na NIST, kayyade cryptographic, crypto-agility, QKD, da bayyanar bayanan dadewa.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Agentic AI Index don Bankuna a 2026: Auna Cin Gashin Kai, Mulki, Ikon Binciken Audit, da Tasirin Kasuwanci</title>
+    <link href="https://sebastienrousseau.com/ha/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/"/>
+    <id>https://sebastienrousseau.com/ha/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/</id>
+    <updated>2026-06-03T06:06:06+00:00</updated>
+    <published>2026-06-03T06:06:06+00:00</published>
+    <summary>Tsarin index-style don auna shirin agentic AI a bankuna, wanda ya ƙunshi cin gashin kai, mulki, ikon binciken audit, dogaro, sarrafawa, da darajar kasuwanci.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Index na Tsarin Banki na 2026: Auna Shirin AI Mai Cin Gashin Kansa, Tsaron Quantum, Juriya, da Biyan Kuɗi na Babba</title>
+    <link href="https://sebastienrousseau.com/ha/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/"/>
+    <id>https://sebastienrousseau.com/ha/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/</id>
+    <updated>2026-06-02T06:06:06+00:00</updated>
+    <published>2026-06-02T06:06:06+00:00</published>
+    <summary>Index na tsarin banki na 2026 mai jagora daga Stanford AI Index, yana auna shirin AI mai cin gashin kansa, tsaron quantum, juriya, da biyan kuɗi na babba.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Kasuwannin Dijital na Yawa a Birtaniya: Gilts Tokenised, Sasantawa, da Sabon Matsayin Zakara</title>
+    <link href="https://sebastienrousseau.com/ha/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/"/>
+    <id>https://sebastienrousseau.com/ha/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</id>
+    <updated>2026-05-30T06:06:06+00:00</updated>
+    <published>2026-05-30T06:06:06+00:00</published>
+    <summary>Matsayin Zakara na Kasuwannin Dijital na Yawa na Birtaniya yana mai da kuɗin gilts tokenised zuwa aikin ƙarfin gasa na ƙasa baki ɗaya na 2026.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>ISO 20022 Bayan Ƙaura: Juyar da Bayanan Biyan Kuɗi zuwa Kayayyakin Banki a 2026</title>
+    <link href="https://sebastienrousseau.com/ha/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/"/>
+    <id>https://sebastienrousseau.com/ha/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</id>
+    <updated>2026-05-29T06:06:06+00:00</updated>
+    <published>2026-05-29T06:06:06+00:00</published>
+    <summary>ISO 20022 bayan ƙaura damar samfurin bayanai ce. Adireshi mai tsari, lambobin manufa, bayanan daftari, saƙonnin bincike, da abubuwan da suka faru na biyan kuɗi za su zama kayayyakin daidaitawa, zamba, kuɗi, da bin doka.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>

@@ -6,14 +6,14 @@
     <description>Články v češtině: aplikovaná AI, platby ISO 20022, postkvantová kryptografie a transformace velkoobchodních plateb.</description>
     <atom:link href="https://sebastienrousseau.com/cs/rss.xml" rel="self" type="application/rss+xml"/>
     <language>cs-CZ</language>
-    <lastBuildDate>Thu, 28 May 2026 23:46:21 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 11 Jun 2026 00:09:27 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Všechna práva vyhrazena.</copyright>
     <item>
       <title>CloudCDN: Open source plán pro AI-nativní edge v roce 2026</title>
       <link>https://sebastienrousseau.com/cs/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/</link>
       <description>CloudCDN je open source AI-nativní plán edge CDN: infrastruktura řízená přes MCP, omezování rychlosti Durable Objects, signed URLs, přístupnost a auditovatelnost.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/cs/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/</guid>
-      <pubDate>Thu, 28 May 2026 23:46:21 +0000</pubDate>
+      <pubDate>Thu, 11 Jun 2026 00:09:27 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/alis-po-IdVNRv-5wJo.webp" type="image/webp" length="0"/>
       <category>CloudCDN</category>
@@ -26,6 +26,233 @@
       <category>passkeys</category>
       <category>SLSA</category>
       <category>infrastruktura edge</category>
+    </item>
+    <item>
+      <title>Index bankovní odolnosti 2026: AI, cloud, kvantová bezpečnost, platby a riziko koncentrace třetích stran</title>
+      <link>https://sebastienrousseau.com/cs/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/</link>
+      <description>Index bankovní odolnosti 2026 propojující AI riziko, koncentraci v cloudu, kvantově odolnou bezpečnost, kontinuitu plateb a kritickou závislost na třetích stranách.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/cs/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/</guid>
+      <pubDate>Thu, 11 Jun 2026 00:09:27 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/simone-hutsch-oqlh6RsrYB0.webp" type="image/webp" length="0"/>
+      <category>index bankovní odolnosti 2026</category>
+      <category>DORA odolnost</category>
+      <category>operační riziko AI</category>
+      <category>riziko koncentrace v cloudu</category>
+      <category>kvantové riziko bankovnictví</category>
+      <category>odolnost plateb</category>
+    </item>
+    <item>
+      <title>Multi-kolejnicová banka v roce 2026: karty, A2A, stablecoiny, RTP, FedNow a otevřené bankovnictví v jedné strategii</title>
+      <link>https://sebastienrousseau.com/cs/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</link>
+      <description>FedNow vyžaduje předfinancovanou likviditu 24/7. ACH je levné, ale T+1. USDC se vypořádá atomicky, ale potřebuje wallet infrastrukturu. Multi-kolejnicová banka roku 2026 směruje každou platbu podle nákladů, finality a ceny likvidity.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/cs/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</guid>
+      <pubDate>Thu, 11 Jun 2026 00:09:27 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
+      <category>vrstva orchestrace plateb</category>
+      <category>FedNow vs RTP</category>
+      <category>FedNow vs ACH</category>
+      <category>vypořádání stablecoinů</category>
+      <category>atomické vypořádání USDC</category>
+      <category>ISO 20022 pacs.008</category>
+      <category>account-to-account A2A</category>
+      <category>API otevřeného bankovnictví</category>
+      <category>předfinancovaná likvidita</category>
+      <category>past likvidity 24/7</category>
+      <category>multi-kolejnicová banka 2026</category>
+      <category>směrovací engine plateb</category>
+      <category>odsouhlasení ERP</category>
+    </item>
+    <item>
+      <title>Postkvantová infrastruktura plateb: proč banky nahradí, místo aby upravovaly starší kolejnice</title>
+      <link>https://sebastienrousseau.com/cs/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</link>
+      <description>Postkvantová kryptografie staví platební kolejnice před binární volbu: upravit RSA/ECC v obálkách SWIFT MT a ISO 20022, které nebyly dimenzovány pro ML-KEM a ML-DSA, nebo nahradit krypto-agilní infrastrukturou, než HNDL přejde v provozní ztrátu.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/cs/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</guid>
+      <pubDate>Thu, 11 Jun 2026 00:09:27 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp" type="image/webp" length="0"/>
+      <category>postkvantová kryptografie</category>
+      <category>PQC platby</category>
+      <category>krypto-agilita</category>
+      <category>sklízej nyní dešifruj později</category>
+      <category>HNDL</category>
+      <category>NIST postkvantové standardy</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>FIPS 203</category>
+      <category>FIPS 204</category>
+      <category>migrace platebních kolejnic</category>
+      <category>ISO 20022 PQC</category>
+      <category>náhrada SWIFT MT</category>
+      <category>HSM</category>
+      <category>kolaps PKI</category>
+      <category>provozní odolnost</category>
+      <category>Quantum Computing Cybersecurity Preparedness Act</category>
+    </item>
+    <item>
+      <title>Velkoobchodní digitální trhy v UK: tokenizované gilty, vypořádání a nová role Champion</title>
+      <link>https://sebastienrousseau.com/cs/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</link>
+      <description>Britská role Wholesale Digital Markets Champion proměňuje tokenizované velkoobchodní finance v národní projekt konkurenceschopnosti City of London.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/cs/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</guid>
+      <pubDate>Thu, 11 Jun 2026 00:09:27 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>velkoobchodní digitální trhy UK 2026</category>
+      <category>Chris Woolard</category>
+      <category>tokenizované gilty</category>
+      <category>tokenizované velkoobchodní finance</category>
+      <category>Wholesale Digital Markets Champion</category>
+      <category>tokenizace UK</category>
+      <category>vypořádání</category>
+      <category>BoE DSS</category>
+      <category>Project Guardian</category>
+      <category>SDX</category>
+      <category>Project Agorá</category>
+      <category>atomické vypořádání</category>
+    </item>
+    <item>
+      <title>Digitální aktiva 2026: infrastrukturní přechod, který banky nemohou odkládat</title>
+      <link>https://sebastienrousseau.com/cs/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</link>
+      <description>Digitální aktiva už nejsou inovační sázkou. Jsou otázkou architektury vypořádání, úschovy a rozvahy. Strategickým úkolem bank je návrh infrastruktury za strukturální nejistoty.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/cs/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</guid>
+      <pubDate>Thu, 11 Jun 2026 00:09:27 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/corporate-finance.webp" type="image/webp" length="0"/>
+      <category>digitální aktiva 2026</category>
+      <category>tokenizovaná reálná aktiva</category>
+      <category>stablecoiny banky</category>
+      <category>tokenizované vklady</category>
+      <category>úschova digitálních aktiv</category>
+      <category>DLT bankovnictví</category>
+      <category>infrastruktura vypořádání</category>
+      <category>mobilita kolaterálu</category>
+      <category>programovatelné peníze</category>
+      <category>strategie bank digitální aktiva</category>
+    </item>
+    <item>
+      <title>Index autonomního treasury 2026: agentní treasury, programovatelná likvidita, tokenizované vklady a řízení hotovosti v reálném čase</title>
+      <link>https://sebastienrousseau.com/cs/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/</link>
+      <description>Index připravenosti autonomního treasury pro rok 2026: agentní workflowy, programovatelná likvidita, tokenizované vklady, platby v reálném čase a automatizované řízení hotovosti.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/cs/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/</guid>
+      <pubDate>Sun, 07 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/christopher-burns-Kj2SaNHG-hg.webp" type="image/webp" length="0"/>
+      <category>autonomní treasury 2026</category>
+      <category>agentní treasury</category>
+      <category>programovatelná likvidita</category>
+      <category>tokenizované vklady treasury</category>
+      <category>treasury v reálném čase</category>
+      <category>řízení hotovosti AI</category>
+      <category>ISO 20022</category>
+      <category>vnitrodenní likvidita</category>
+    </item>
+    <item>
+      <title>Index velkoobchodních plateb v roce 2026: ISO 20022, tokenizované vklady, real-time koleje a přeshraniční zúčtování</title>
+      <link>https://sebastienrousseau.com/cs/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</link>
+      <description>Index připravenosti velkoobchodních plateb pro rok 2026: kvalita dat ISO 20022, tokenizované vklady, real-time koleje, přeshraniční zúčtování a efektivita likvidity.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/cs/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</guid>
+      <pubDate>Sat, 06 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/miquel-parera-NsXLehhHx1Q.webp" type="image/webp" length="0"/>
+      <category>velkoobchodní platby 2026</category>
+      <category>ISO 20022</category>
+      <category>tokenizované vklady</category>
+      <category>Project Agorá</category>
+      <category>přeshraniční platby</category>
+      <category>okamžité platby</category>
+      <category>strukturovaná adresní data</category>
+      <category>kvalita platebních dat</category>
+    </item>
+    <item>
+      <title>Index cloud-native bankovnictví 2026: DORA, platformové inženýrství, suverénní cloud a provozní odolnost</title>
+      <link>https://sebastienrousseau.com/cs/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/</link>
+      <description>Index cloud-native bankovnictví 2026 pro měření připravenosti na DORA, vyspělosti platformového inženýrství, koncentračního cloudového rizika, evidence o exitu a provozní odolnosti.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/cs/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/</guid>
+      <pubDate>Fri, 05 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/quang-nguyen-vinh-2649403.webp&w=1600&format=webp&q=85" type="image/webp" length="0"/>
+      <category>cloud-native bankovnictví 2026</category>
+      <category>DORA banky</category>
+      <category>koncentrační cloudové riziko</category>
+      <category>platformové inženýrství v bankách</category>
+      <category>riziko třetích stran v ICT</category>
+      <category>strategie exitu z cloudu</category>
+      <category>suverénní cloud</category>
+    </item>
+    <item>
+      <title>Index kvantově bezpečného bankovnictví v roce 2026: postkvantová kryptografie, QKD, kryptografická agilita a riziko HNDL</title>
+      <link>https://sebastienrousseau.com/cs/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/</link>
+      <description>Bankovní index připravenosti na kvantovou bezpečnost v roce 2026: postkvantové standardy NIST, kryptografická inventarizace, kryptografická agilita, QKD a expozice dat s dlouhou životností.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/cs/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/</guid>
+      <pubDate>Thu, 04 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>kvantově bezpečné bankovnictví 2026</category>
+      <category>postkvantová kryptografie banky</category>
+      <category>NIST FIPS 203</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>SLH-DSA</category>
+      <category>kryptografická agilita</category>
+      <category>QKD bankovnictví</category>
+    </item>
+    <item>
+      <title>Index agentní AI pro banky v roce 2026: měření autonomie, governance, auditovatelnosti a obchodního dopadu</title>
+      <link>https://sebastienrousseau.com/cs/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/</link>
+      <description>Index-orientovaný rámec pro měření připravenosti bank na agentní AI: autonomie, governance, auditovatelnost, spolehlivost, kontroly a obchodní hodnota.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/cs/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/</guid>
+      <pubDate>Wed, 03 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>agentní AI v bankovnictví 2026</category>
+      <category>AI agenti banky</category>
+      <category>governance AI ve finančních službách</category>
+      <category>autonomní bankovní pracovní postupy</category>
+      <category>řízení modelového rizika</category>
+      <category>auditovatelnost AI</category>
+      <category>SR 11-7</category>
+      <category>ISO 20022</category>
+      <category>OAuth</category>
+      <category>OPA</category>
+    </item>
+    <item>
+      <title>Index bankovní infrastruktury 2026: měření připravenosti pro agentní AI, kvantovou bezpečnost, cloud-native odolnost a velkoobchodní platby</title>
+      <link>https://sebastienrousseau.com/cs/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/</link>
+      <description>Index bankovní infrastruktury 2026 inspirovaný Stanford AI Indexem měří připravenost v agentní AI, kvantové bezpečnosti, cloud-native odolnosti a velkoobchodních platbách.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/cs/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/</guid>
+      <pubDate>Tue, 02 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/miguel-sousa-ejIF-pJhYkM.webp" type="image/webp" length="0"/>
+      <category>index bankovní infrastruktury 2026</category>
+      <category>agentní AI bankovnictví</category>
+      <category>kvantově bezpečné bankovnictví</category>
+      <category>cloud-native bankovnictví</category>
+      <category>velkoobchodní platby</category>
+      <category>ISO 20022</category>
+      <category>DORA</category>
+      <category>Project Agora</category>
+      <category>tokenizované vklady</category>
+    </item>
+    <item>
+      <title>ISO 20022 po migraci: přeměna platebních dat na bankovní produkty v roce 2026</title>
+      <link>https://sebastienrousseau.com/cs/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</link>
+      <description>ISO 20022 po migraci je příležitost datového produktu. Strukturované adresy, kódy účelu, fakturační detaily a vyšetřovací zprávy se mění v produkty odsouhlasení, podvodů, likvidity a compliance.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/cs/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</guid>
+      <pubDate>Fri, 29 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/humphrey-muleba-1660004.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>ISO 20022 2026</category>
+      <category>strukturovaná adresa</category>
+      <category>CBPR+</category>
+      <category>produkty platebních dat</category>
+      <category>kódy účelu platby</category>
+      <category>korporátní treasury</category>
+      <category>odsouhlasení</category>
+      <category>screening sankcí</category>
+      <category>detekce podvodů</category>
+      <category>pacs.008</category>
+      <category>pain.001</category>
     </item>
     <item>
       <title>DORA, EU AI Act a suverenita dat: Compliance stack pro banky v roce 2026</title>
@@ -50,7 +277,7 @@
       <guid isPermaLink="true">https://sebastienrousseau.com/cs/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/</guid>
       <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <enclosure url="https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp" type="image/webp" length="0"/>
       <category>AI platby 2026</category>
       <category>podvody v platbách</category>
       <category>směrování plateb</category>
@@ -252,7 +479,7 @@
       <guid isPermaLink="true">https://sebastienrousseau.com/cs/2026-05-19-global-wholesale-payments-economics-2026/</guid>
       <pubDate>Tue, 19 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/meiying-ng-OrwkD-iWgqg.webp" type="image/webp" length="0"/>
+      <enclosure url="https://cloudcdn.pro/stocks/images/miguel-sousa-ejIF-pJhYkM.webp" type="image/webp" length="0"/>
       <category>velkoobjemové platby 2026</category>
       <category>ekonomika světových plateb</category>
       <category>ISO 20022</category>

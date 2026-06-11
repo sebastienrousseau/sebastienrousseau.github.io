@@ -39,7 +39,7 @@ schema: "FAQPage, Article"
 seo_title: "UK Acid Jazz 2026: Mga Artista, Konsyerto, Album, Pagbabago"
 short_name: "sebastienrousseau"
 subtitle: "Ang acid jazz sa UK ay nagbabago sa pamamagitan ng pinagsamang legacy na mga artista, mga paglabas ng Acid Jazz Records, mga jazz-funk festival, mga manonood ng soul jazz, mga live na palabas na pinapatakbo ng Hammond, at mga batang musikero ng UK jazz na nagbabalik ng groove sa gitna ng eksena."
-tags: "acid jazz, UK jazz, Acid Jazz Records, Brand New Heavies, Galliano, James Taylor Quartet, Ronnie Scott's, Bangs and Talbot, Chris Bangs, Mick Talbot, Mostly Jazz Funk Soul Festival, Cymande, Soul II Soul, Jordan Rakei, jazz funk, soul jazz"
+tags: "acid jazz, UK jazz, Acid Jazz Records, Brand New Heavies, Galliano, James Taylor Quartet, Ronnie Scott's, Bangs and Talbot, Chris Bangs, Mick Talbot, Mostly Jazz Funk Soul Festival, Cymande, Soul II Soul, Jordan Rakei, jazz funk, soul jazz, ISO 20022, post-quantum cryptography, AI, DORA, tokenised deposits, platform engineering, sovereign cloud, cloud native banking, cross-border payments, stablecoins"
 theme-color: "0, 83, 191"
 title: "Pagbabago ng Acid Jazz sa UK: 2026 Artista, Konsyerto, Album"
 url: "https://sebastienrousseau.com/fil/2026-05-22-uk-acid-jazz-renewal-artists-concerts-albums-2026"
@@ -93,9 +93,9 @@ site_software: "Static Site Generator, Rust"
 <p class="post-lead-heading"><strong>Mga pangunahing aral</strong></p>
 <ul class="post-lead-takeaways">
   <li><strong>Label.</strong> Ang 2026 Bandcamp compilation ng Acid Jazz Records ay kinabibilangan ng Matt Berry, Kevin Fingier, The Brand New Heavies, Billy Valentine, at Mama Terra.</li>
-  <li><strong>Paglabas.</strong> Ang <em>Smokin' Aces</em> ng Bangs &amp; Talbot (23 Enero 2026, Acid Jazz) ay nagtitipon muli kay Chris Bangs at Mick Talbot kasama ang groove, funk, soul, at mga tunog ng pandaigdigang fusion.</li>
+  <li><strong>Paglabas.</strong> Ang <em>Smokin' Aces</em> ng Bangs & Talbot (23 Enero 2026, Acid Jazz) ay nagtitipon muli kay Chris Bangs at Mick Talbot kasama ang groove, funk, soul, at mga tunog ng pandaigdigang fusion.</li>
   <li><strong>Live.</strong> Ang The Brand New Heavies kasama si Galliano sa The Glasshouse at ang The James Taylor Quartet sa Ronnie Scott's ang pinakamalinaw na senyales ng acid jazz sa mga listahan ng 2026.</li>
-  <li><strong>Festival.</strong> Ang Mostly Jazz Funk &amp; Soul Festival (10–12 Hulyo 2026) ay nagtatampok ng Soul II Soul, Cymande, Jordan Rakei, at Sampa The Great kasabay ng mga legacy na jazz-funk na artista.</li>
+  <li><strong>Festival.</strong> Ang Mostly Jazz Funk & Soul Festival (10–12 Hulyo 2026) ay nagtatampok ng Soul II Soul, Cymande, Jordan Rakei, at Sampa The Great kasabay ng mga legacy na jazz-funk na artista.</li>
 </ul>
 <p class="post-lead-related"><strong>Kaugnay na babasahin:</strong> <a href="https://sebastienrousseau.com/2026-05-21-tokenised-deposits-banking-transformation-2026/index.html">Tokenised Deposits: Ang Pagbabago ng Pagbabangko na Nagaganap sa 2026</a>.</p>
 </aside>
@@ -231,6 +231,6 @@ Ang koneksyon ay groove, hindi mahigpit na paglalabel ng genre. Ang mga festival
 - Mostly Jazz Funk & Soul Festival, (2026). [Mostly Jazz Funk & Soul Festival 2026 ⧉](https://mostlyjazz.co.uk "Mostly Jazz Funk & Soul Festival").
 - Marlbank, (2026). [Pinakamahusay na UK jazz album sa 2026 hanggang ngayon ⧉](https://marlbank.net/top-jazz-in-2026/top-uk-jazz-albums-in-2026-so-far/ "Pinakamahusay na UK jazz album sa 2026 hanggang ngayon").
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Tungkol sa may-akda"><img alt="Larawan ni Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior na teknologist sa pagbabangko na sumusulat tungkol sa applied AI, migrasyon ng ISO 20022, post-quantum cryptography para sa mga serbisyong pinansyal, at istrukturang pagbabago ng wholesale payments.</span><span class="author-credentials">Mahigit 20 taon sa HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Buong profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Tungkol sa may-akda"><img alt="Larawan ni Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior na teknologist sa pagbabangko na sumusulat tungkol sa applied AI, migrasyon ng ISO 20022, post-quantum cryptography para sa mga serbisyong pinansyal, at istrukturang pagbabago ng wholesale payments.</span><span class="author-credentials">Mahigit 20 taon sa HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Buong profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Huling sinuri <time datetime="2026-05-22">2026-05-22</time>.</p>
 <!-- enrich-end -->

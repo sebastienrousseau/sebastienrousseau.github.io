@@ -1,5 +1,6 @@
 ---
 title: "Le Chat by Mistral AI: Multilingual Conversational AI"
+tags: "Le Chat, Mistral AI, Conversational AI, বহুভাষিক, Customisation, Business AI, Chatbot, AI Models, Enterprise Solutions, Technology, ISO 20022, পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, AI"
 subtitle: "ভাষাজুড়ে ব্যবহারকারীর মিথস্ক্রিয়া পুনর্সংজ্ঞায়িত করা"
 description: "Mistral AI-এর নতুন বহুভাষিক সহকারীর সাথে পরিচিত হন। একটি উন্নত AI যা একটি কথোপকথনে একাধিক ভাষায় বুঝতে ও সাড়া দিতে পারে, রিয়েল-টাইমে।"
 date: "Mar 04, 2024"
@@ -127,4 +128,3 @@ In conclusion, Le Chat by Mistral AI represents a significant leap forward in th
 [00]: https://chat.mistral.ai/chat "Le Chat Mistral"
 [01]: https://mistral.ai/ "Mistral AI | Frontier AI in your hands"
 [02]: https://chat.openai.com/ "ChatGPT"
-

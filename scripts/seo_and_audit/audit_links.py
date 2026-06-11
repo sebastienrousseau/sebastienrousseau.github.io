@@ -7,6 +7,7 @@ or GET-checked against the live origin; HEAD-blocking hosts are auto-skipped.
 
 Exit code is non-zero if --strict-internal is set and any internal link is broken.
 """
+
 from __future__ import annotations
 
 import sys as _sys  # path bootstrap — scripts reorg (scripts/lib/ on sys.path)
@@ -71,14 +72,15 @@ def check_internal(href: str, public: Path) -> bool:
 def check_external(url: str) -> tuple[str, int | str]:
     try:
         req = urllib.request.Request(
-            url, method="HEAD",
+            url,
+            method="HEAD",
             headers={"User-Agent": "Mozilla/5.0 audit_links"},
         )
         with urllib.request.urlopen(req, timeout=8) as r:
             return url, r.status
     except urllib.error.HTTPError as e:
         return url, e.code
-    except Exception as e:
+    except (urllib.error.URLError, TimeoutError, OSError, ValueError) as e:
         return url, f"ERR {type(e).__name__}"
 
 
@@ -97,8 +99,7 @@ def main() -> int:
     hrefs = collect_hrefs(public)
     internal = sorted(h for h in hrefs if h.startswith("/"))
     external = sorted(
-        h for h in hrefs if h.startswith(("http://", "https://"))
-        and "127.0.0.1" not in h
+        h for h in hrefs if h.startswith(("http://", "https://")) and "127.0.0.1" not in h
     )
 
     int_broken = [h for h in internal if not check_internal(h, public)]
@@ -113,7 +114,9 @@ def main() -> int:
             for url, code in ex.map(check_external, checkable):
                 if not (isinstance(code, int) and 200 <= code < 400):
                     ext_broken.append((url, code))
-        print(f"external: {len(checkable):4d} checked (skipped {len(external) - len(checkable)} bot-blocked), {len(ext_broken)} broken")
+        print(
+            f"external: {len(checkable):4d} checked (skipped {len(external) - len(checkable)} bot-blocked), {len(ext_broken)} broken"
+        )
         for url, code in sorted(ext_broken):
             print(f"  [{code}] {url}")
 

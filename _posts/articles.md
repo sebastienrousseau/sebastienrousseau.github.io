@@ -122,6 +122,138 @@ site_software: "Static Site Generator, Rust"
 <div class="newsroom-grid">
 
 <article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/index.html" title="The Banking Resilience Index in 2026: AI, Cloud, Quantum, Payments, and Third-Party Concentration Risk">
+<img alt="Abstract architectural photograph used as the visual key for the 2026 Banking Resilience Index — combining AI risk, cloud concentration, quantum-safe security, payment continuity, and critical third-party dependency into one operational-resilience scoreboard" src="https://cloudcdn.pro/stocks/images/simone-hutsch-oqlh6RsrYB0.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Banking Resilience · Dora · Ai Risk</span>
+<h3><a href="/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/index.html" title="The Banking Resilience Index in 2026: AI, Cloud, Quantum, Payments, and Third-Party Concentration Risk">The Banking Resilience Index in 2026: AI, Cloud, Quantum, Payments, and Third-Party Concentration Risk</a></h3>
+<p class="newsroom-meta"><time datetime="2026-06-08">June 8, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">A 2026 banking resilience index — combining AI risk, cloud concentration, quantum-safe migration, payment continuity, and critical third-party dependency into one operational-resilience scoreboard the board and supervisor can both read.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/index.html" title="The Autonomous Treasury Index in 2026: Agentic Treasury, Programmable Liquidity, Tokenised Deposits, and Real-Time Cash Control">
+<img alt="Abstract architectural photograph used as the visual key for the 2026 Autonomous Treasury Index — measuring agentic treasury workflows, programmable liquidity, tokenised deposits, real-time payments, and automated cash control" src="https://cloudcdn.pro/stocks/images/christopher-burns-Kj2SaNHG-hg.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Treasury · Agentic Ai · Programmable Liquidity</span>
+<h3><a href="/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/index.html" title="The Autonomous Treasury Index in 2026: Agentic Treasury, Programmable Liquidity, Tokenised Deposits, and Real-Time Cash Control">The Autonomous Treasury Index in 2026: Agentic Treasury, Programmable Liquidity, Tokenised Deposits, and Real-Time Cash Control</a></h3>
+<p class="newsroom-meta"><time datetime="2026-06-07">June 7, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">A 2026 autonomous treasury readiness index — measuring agentic treasury workflows, programmable liquidity coverage, tokenised deposit integration, real-time payment orchestration, and automated cash control as one operating-model fabric.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/index.html" title="The Wholesale Payments Index in 2026: ISO 20022, Tokenised Deposits, Real-Time Rails, and Cross-Border Settlement">
+<img alt="Visual register for the wholesale-payments shift in 2026 — messaging migration giving way to programmable settlement across ISO 20022, tokenised deposits, real-time rails, and cross-border atomicity." src="https://cloudcdn.pro/stocks/images/miquel-parera-NsXLehhHx1Q.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Wholesale Payments · Iso 20022 · Tokenised Deposits</span>
+<h3><a href="/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/index.html" title="The Wholesale Payments Index in 2026: ISO 20022, Tokenised Deposits, Real-Time Rails, and Cross-Border Settlement">The Wholesale Payments Index in 2026: ISO 20022, Tokenised Deposits, Real-Time Rails, and Cross-Border Settlement</a></h3>
+<p class="newsroom-meta"><time datetime="2026-06-06">June 6, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">An index framework for measuring wholesale-payments readiness in 2026: ISO 20022 structured-address compliance ahead of SWIFT's November 2026 milestone, tokenised-deposit settlement, BIS Project Agorá cross-border atomicity, real-time rail orchestration, and liquidity efficiency. Four percentages — structured-data comp</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/index.html" title="The Cloud Native Banking Index in 2026: DORA, Platform Engineering, Sovereign Cloud, and Operational Resilience">
+<img alt="Circuit-board pattern resolving into a cityscape skyline — the visual register chosen for cloud-native banking: platform-engineering primitives stitched into the bank's operational fabric." src="https://cloudcdn.pro/api/transform?url=/stocks/images/quang-nguyen-vinh-2649403.webp&w=1600&format=webp&q=85" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Cloud Native Banking · Dora · Platform Engineering</span>
+<h3><a href="/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/index.html" title="The Cloud Native Banking Index in 2026: DORA, Platform Engineering, Sovereign Cloud, and Operational Resilience">The Cloud Native Banking Index in 2026: DORA, Platform Engineering, Sovereign Cloud, and Operational Resilience</a></h3>
+<p class="newsroom-meta"><time datetime="2026-06-05">June 5, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">An engineering blueprint for cloud-native banking in DORA audit phase. Five platform-engineering primitives — Kubernetes paved roads, Backstage portal, GitOps via ArgoCD, Open Policy Agent admission, OpenTelemetry end-to-end — produce Article 8 register evidence at the speed of the pipeline. Tested exit-execution annua</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html" title="The Quantum-Safe Banking Index in 2026: Post-Quantum Cryptography, QKD, Crypto-Agility, and Harvest-Now-Decrypt-Later Risk">
+<img alt="The Quantum-Safe Banking Index 2026 index diagram for banks and financial institutions in 2026" src="https://cloudcdn.pro/api/transform?url=/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Quantum Cryptography · Post-Quantum Cryptography · Qkd</span>
+<h3><a href="/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html" title="The Quantum-Safe Banking Index in 2026: Post-Quantum Cryptography, QKD, Crypto-Agility, and Harvest-Now-Decrypt-Later Risk">The Quantum-Safe Banking Index in 2026: Post-Quantum Cryptography, QKD, Crypto-Agility, and Harvest-Now-Decrypt-Later Risk</a></h3>
+<p class="newsroom-meta"><time datetime="2026-06-04">June 4, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">An index framework for measuring quantum-safe banking readiness in 2026: cryptographic bill of materials, hybrid TLS deployment, NIST FIPS 203 / 204 / 205 migration progress, crypto-agility primitives, and harvest-now-decrypt-later exposure across long-lived confidential data. The Board-Level Quantum Scorecard defines </p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/index.html" title="The Agentic AI Index for Banks in 2026: Measuring Autonomy, Governance, Auditability, and Business Impact">
+<img alt="The Agentic AI Index for Banks 2026 index diagram for banks and financial institutions in 2026" src="https://cloudcdn.pro/api/transform?url=/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Agentic Ai · Banking Ai · Ai Governance</span>
+<h3><a href="/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/index.html" title="The Agentic AI Index for Banks in 2026: Measuring Autonomy, Governance, Auditability, and Business Impact">The Agentic AI Index for Banks in 2026: Measuring Autonomy, Governance, Auditability, and Business Impact</a></h3>
+<p class="newsroom-meta"><time datetime="2026-06-03">June 3, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">An engineering blueprint for agentic AI in tier-1 banks: classify by permissions not intelligence, treat every production agent as an SR 11-7 / SS1/23 model from day one, and build the five-component control plane — OAuth-scoped service accounts, deterministic semantic routing, OPA policy gates, immutable WORM audit lo</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/index.html" title="The 2026 Banking Infrastructure Index: Measuring Readiness for Agentic AI, Quantum-Safe Security, Cloud Native Resilience, and Wholesale Payments">
+<img alt="An editorial aerial composition by Miguel Sousa suggesting interlocking systems — the visual register chosen for a board-level dashboard view of the 2026 Banking Infrastructure Index" src="https://cloudcdn.pro/stocks/images/miguel-sousa-ejIF-pJhYkM.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Banking Infrastructure · Agentic Ai · Quantum Cryptography</span>
+<h3><a href="/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/index.html" title="The 2026 Banking Infrastructure Index: Measuring Readiness for Agentic AI, Quantum-Safe Security, Cloud Native Resilience, and Wholesale Payments">The 2026 Banking Infrastructure Index: Measuring Readiness for Agentic AI, Quantum-Safe Security, Cloud Native Resilience, and Wholesale Payments</a></h3>
+<p class="newsroom-meta"><time datetime="2026-06-02">June 2, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Banking infrastructure in 2026 has reached the point where it needs an index, not another trend list. A Stanford AI Index-inspired framework for measuring bank readiness across agentic AI, quantum-safe security, cloud-native resilience, and wholesale payments — measured as one operating model.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html" title="The Multi-Rail Bank in 2026: Cards, A2A, Stablecoins, RTP, FedNow, and Open Banking in One Strategy">
+<img alt="Long-exposure photograph of intersecting light trails at a major rail interchange at night — visual key for the multi-rail bank piece: cards, A2A, RTP, FedNow, ACH, stablecoins, Open Banking APIs, ISO 20022, and the orchestration engine that routes between them" src="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Payments · Fednow · Rtp</span>
+<h3><a href="/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/index.html" title="The Multi-Rail Bank in 2026: Cards, A2A, Stablecoins, RTP, FedNow, and Open Banking in One Strategy">The Multi-Rail Bank in 2026: Cards, A2A, Stablecoins, RTP, FedNow, and Open Banking in One Strategy</a></h3>
+<p class="newsroom-meta"><time datetime="2026-06-01">June 1, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">FedNow demands pre-funded 24/7 liquidity. ACH is cheap but T+1. USDC clears atomically but needs wallet infrastructure. The 2026 multi-rail bank routes each payment by cost, finality, and liquidity cost — driven by an orchestration engine that reads ISO 20022 pacs.008 and decides.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html" title="Post-Quantum Payments Infrastructure: Why Banks May Replace Rather Than Retrofit Legacy Rails">
+<img alt="Cryptographic key material drifting into deep blue water — symbolising harvest-now-decrypt-later capture of payment messages whose RSA and ECC envelopes will not survive a cryptanalytically relevant quantum computer" src="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Post-Quantum Cryptography · Crypto-Agility · Hndl</span>
+<h3><a href="/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/index.html" title="Post-Quantum Payments Infrastructure: Why Banks May Replace Rather Than Retrofit Legacy Rails">Post-Quantum Payments Infrastructure: Why Banks May Replace Rather Than Retrofit Legacy Rails</a></h3>
+<p class="newsroom-meta"><time datetime="2026-05-31">May 31, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Harvest-now-decrypt-later turns today's TLS-protected payment messages into tomorrow's decrypted exposure. ML-KEM and ML-DSA are an order of magnitude larger than the RSA and ECC keys legacy rails were sized for — retrofit triggers fragmentation, latency, and HSM exhaustion. The 2026 architectural decision is whether t</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html" title="Wholesale Digital Markets in the UK: Tokenised Gilts, Settlement, and the New Champion Role">
+<img alt="UK wholesale digital markets diagram showing tokenised gilts, settlement, digital assets, tokenised deposits, regulatory coordination, and capital markets infrastructure" src="https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Digital Securities Sandbox · Tokenised Gilts · Atomic Dvp</span>
+<h3><a href="/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/index.html" title="Wholesale Digital Markets in the UK: Tokenised Gilts, Settlement, and the New Champion Role">Wholesale Digital Markets in the UK: Tokenised Gilts, Settlement, and the New Champion Role</a></h3>
+<p class="newsroom-meta"><time datetime="2026-05-30">May 30, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">The UK Wholesale Digital Markets Champion role makes tokenised gilts, DLT-based settlement, and digital wholesale finance a national competitiveness project. The 2026 strategic question for banks is design discipline — which tokenised assets sit on which platform, how settlement risk is evidenced, and how to defend the</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/index.html" title="ISO 20022 After Migration: Turning Payment Data into Banking Products in 2026">
+<img alt="ISO 20022 payment data product diagram showing structured addresses, purpose codes, reconciliation, fraud detection, liquidity forecasting, sanctions screening, and analytics products" src="https://cloudcdn.pro/api/transform?url=/stocks/images/humphrey-muleba-1660004.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Iso 20022 · Structured Address · Cbpr+</span>
+<h3><a href="/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/index.html" title="ISO 20022 After Migration: Turning Payment Data into Banking Products in 2026">ISO 20022 After Migration: Turning Payment Data into Banking Products in 2026</a></h3>
+<p class="newsroom-meta"><time datetime="2026-05-29">May 29, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">ISO 20022 after migration is not a project closeout — it's the start of a data-product opportunity. Structured addresses, purpose codes, invoice details, and rich status events become reconciliation, fraud, liquidity, and compliance products. The 2026 question is design discipline: which payment data carries which clie</p>
+</div>
+</article>
+
+<article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html" title="DORA, the EU AI Act, and Data Sovereignty: The 2026 Compliance Stack for Banks">
 <img alt="Compliance stack diagram showing DORA resilience, EU AI Act transparency, data sovereignty, cloud concentration risk, audit logs, model governance, and third-party providers" src="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
 </a>
@@ -134,8 +266,20 @@ site_software: "Static Site Generator, Rust"
 </article>
 
 <article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/index.html" title="Digital Assets in 2026: The Infrastructure Transition Banks Cannot Delay">
+<img alt="Digital asset infrastructure diagram showing tokenised real-world assets, stablecoins, tokenised deposits, custody, settlement, collateral mobility, and bank platform layers" src="https://cloudcdn.pro/stocks/images/corporate-finance.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Digital Assets · Tokenisation · Stablecoins</span>
+<h3><a href="/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/index.html" title="Digital Assets in 2026: The Infrastructure Transition Banks Cannot Delay">Digital Assets in 2026: The Infrastructure Transition Banks Cannot Delay</a></h3>
+<p class="newsroom-meta"><time datetime="2026-05-28">May 28, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Digital assets are no longer an innovation bet. They are a settlement, custody, and balance-sheet architecture question. Crypto is a ~$3 trillion asset class, stablecoins have reached ~$300 billion, and tokenised real-world assets grew ~300% in 2025. The strategic task for banks in 2026 is not whether to engage but how</p>
+</div>
+</article>
+
+<article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/index.html" title="AI as the Operating System of Payments: Fraud, Routing, Resilience, and Compliance in 2026">
-<img alt="AI payments operating system diagram showing fraud scoring, multi-rail routing, liquidity forecasting, ISO 20022 data, compliance screening, and exception repair" src="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="AI payments operating system diagram showing fraud scoring, multi-rail routing, liquidity forecasting, ISO 20022 data, compliance screening, and exception repair" src="https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Ai Payments · Fraud Prevention · Routing</span>
@@ -213,7 +357,7 @@ site_software: "Static Site Generator, Rust"
 <span class="newsroom-eyebrow">Acid Jazz · Uk Jazz · Acid Jazz Records</span>
 <h3><a href="/2026-05-22-uk-acid-jazz-renewal-artists-concerts-albums-2026/index.html" title="The Renewal of Acid Jazz in the UK: 2026 Artists, Concerts, Albums, and the Return of Groove-Led Live Culture">The Renewal of Acid Jazz in the UK: 2026 Artists, Concerts, Albums, and the Return of Groove-Led Live Culture</a></h3>
 <p class="newsroom-meta"><time datetime="2026-05-22">May 22, 2026</time> · Sebastien Rousseau</p>
-<p class="newsroom-excerpt">The UK acid jazz renewal in 2026 spans label releases, live dates by first-wave acts, and festival programming — Acid Jazz Records, Bangs &amp; Talbot, The Brand New Heavies, Galliano, James Taylor Quartet, and Mostly Jazz Funk &amp; Soul Festival are all active at once.</p>
+<p class="newsroom-excerpt">The UK acid jazz renewal in 2026 spans label releases, live dates by first-wave acts, and festival programming — Acid Jazz Records, Bangs & Talbot, The Brand New Heavies, Galliano, James Taylor Quartet, and Mostly Jazz Funk & Soul Festival are all active at once.</p>
 </div>
 </article>
 
@@ -222,7 +366,7 @@ site_software: "Static Site Generator, Rust"
 <img alt="Tokenised deposit banking architecture for 2026 showing commercial bank money, digital wallets, stablecoins, CBDCs, tokenised gilts, and Project Agorá settlement paths" src="https://cloudcdn.pro/stocks/images/bit-cloud-GlqbGLCPnQ4.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Tokenised Deposits · Tokenized Deposits · Deposit Tokens</span>
+<span class="newsroom-eyebrow">Tokenised Deposits · Stablecoins · Commercial Bank Money</span>
 <h3><a href="/2026-05-21-tokenised-deposits-banking-services-status-2026/index.html" title="Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money">Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money</a></h3>
 <p class="newsroom-meta"><time datetime="2026-05-21">May 21, 2026</time> · Sebastien Rousseau</p>
 <p class="newsroom-excerpt">Tokenised deposit services in 2026 are moving from research into bank pilots and early client propositions. The status is still pre-scale, but the direction is clear: commercial bank money is being adapted for programmable settlement, digital wallets…</p>
@@ -243,7 +387,7 @@ site_software: "Static Site Generator, Rust"
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-05-19-global-wholesale-payments-economics-2026/index.html" title="Global Wholesale Payments in 2026: ISO 20022, RTGS Renewal, and the Economics of Interoperability">
-<img alt="Global wholesale payments architecture map for 2026 showing ISO 20022, RTGS renewal, cross-border corridors, liquidity windows, and DLT settlement pilots" src="https://cloudcdn.pro/stocks/images/meiying-ng-OrwkD-iWgqg.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Global wholesale payments architecture map for 2026 showing ISO 20022, RTGS renewal, cross-border corridors, liquidity windows, and DLT settlement pilots" src="https://cloudcdn.pro/stocks/images/miguel-sousa-ejIF-pJhYkM.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Payments · ISO 20022 · Cross-Border</span>
@@ -255,7 +399,7 @@ site_software: "Static Site Generator, Rust"
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf/index.html" title="Stablecoin Yield by Another Name: BlackRock's BRSRV and BSTBL Filings Decoded">
-<img alt="Stacked US dollar coins under warm light, representing tokenised money-market fund yield" src="https://cloudcdn.pro/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="BlackRock tokenised money market fund architecture diagram — BRSRV OnChain Shares and BSTBL ERC-20 share class with GENIUS Act reserve flows" src="https://cloudcdn.pro/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Payments · Stablecoins · Regulation</span>
@@ -267,7 +411,7 @@ site_software: "Static Site Generator, Rust"
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance/index.html" title="Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for Corporate Finance">
-<img alt="Open vault door framed by gold light — visual metaphor for cryptographic protection of financial records" src="https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Post-quantum cryptography migration roadmap diagram — corporate banking infrastructure transitioning from RSA to ML-KEM and ML-DSA" src="https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Post-Quantum · Treasury · Governance</span>
@@ -279,7 +423,7 @@ site_software: "Static Site Generator, Rust"
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-05-12-iso-20022-pacs008-structured-address-deadline/index.html" title="The November 2026 pacs.008 Structured-Address Deadline: A Six-Month View">
-<img alt="Cross-border payment message structured-address diagram with TwnNm and Ctry highlighted" src="https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="ISO 20022 pacs.008 structured address diagram — cross-border payment message fields with TwnNm and Ctry highlighted" src="https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">ISO 20022 · Payments · CBPR+</span>
@@ -303,7 +447,7 @@ site_software: "Static Site Generator, Rust"
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-04-11-quantum-thresholds-are-moving-again/index.html" title="Quantum Thresholds Are Moving Again">
-<img alt="Quantum computing circuit board with blue light patterns" src="https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Shor's algorithm qubit threshold diagram. Quantum computing circuit board with blue light patterns" src="https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Quantum</span>
@@ -315,7 +459,7 @@ site_software: "Static Site Generator, Rust"
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2024-04-22-bug-discovered-in-quantum-algorithm-for-lattice-based-crypto/index.html" title="Bug Discovered in Quantum Algorithm for Lattice-Based Crypto">
-<img alt="Image generated using MidJourney. A network of digital nodes in red and blue hues" src="https://cloudcdn.pro/stocks/images/digital-nodes.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Image generated using MidJourney - A Network of digital nodes in red and blue hues." src="https://cloudcdn.pro/stocks/images/digital-nodes.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Quantum</span>
@@ -327,7 +471,7 @@ site_software: "Static Site Generator, Rust"
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2024-04-15-quantum-algorithm-challenges-lattice-based-cryptography/index.html" title="Quantum Algorithm Challenges Lattice-Based Cryptography">
-<img alt="Banner Image of Network nodes in a digital blue space" src="https://cloudcdn.pro/stocks/images/digital-constellation.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Banner of Network nodes in a digital blue space" src="https://cloudcdn.pro/stocks/images/digital-constellation.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Quantum</span>
@@ -339,7 +483,7 @@ site_software: "Static Site Generator, Rust"
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2024-04-01-openvoice-leading-innovation-in-voice-cloning-technology/index.html" title="OpenVoice: Leading Innovation in Voice Cloning Technology">
-<img alt="Banner of vibrant gradient overlay on repeated profiles" src="https://cloudcdn.pro/stocks/images/open-voice.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Banner of Vibrant gradient overlay on repeated profiles" src="https://cloudcdn.pro/stocks/images/open-voice.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">AI</span>
@@ -351,7 +495,7 @@ site_software: "Static Site Generator, Rust"
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2024-03-25-fully-homomorphic-encryption-in-a-banking-quantum-era/index.html" title="Fully Homomorphic Encryption (FHE) in a Banking Quantum Era">
-<img alt="Banner for Fully Homomorphic Encryption" src="https://cloudcdn.pro/stocks/images/fully-homomorphic-encryption.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Banner for the Fully Homomorphic Encryption" src="https://cloudcdn.pro/stocks/images/fully-homomorphic-encryption.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Quantum</span>
@@ -363,7 +507,7 @@ site_software: "Static Site Generator, Rust"
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2024-03-18-advancing-ai-with-multimodal-llms-insights-from-mm1/index.html" title="Advancing AI with Multimodal LLMs: Insights from MM1">
-<img alt="Banner for the Apple MM1 multimodal LLM research" src="https://cloudcdn.pro/stocks/images/mm1-visual.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Banner for the Apple MM1" src="https://cloudcdn.pro/stocks/images/mm1-visual.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">AI</span>
@@ -375,7 +519,7 @@ site_software: "Static Site Generator, Rust"
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2024-03-12-revolutionising-real-time-speech-recognition-on-macos-with-openai-whisper/index.html" title="Accelerating Real-Time Speech Recognition on macOS with OpenAI Whisper">
-<img alt="Banner for Real-time automatic speech recognition research" src="https://cloudcdn.pro/stocks/images/research-paper.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Banner for Real-time automatic speech recognition (ASR)" src="https://cloudcdn.pro/stocks/images/research-paper.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">AI · macOS</span>
@@ -387,7 +531,7 @@ site_software: "Static Site Generator, Rust"
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/index.html" title="Unleashing the Power of Logging in Rust with RustLogs (RLG)">
-<img alt="Banner for RustLogs (RLG) library" src="https://cloudcdn.pro/stocks/images/rustlogs.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Banner for RustLogs (RLG)" src="https://cloudcdn.pro/stocks/images/rustlogs.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Open source · Rust</span>
@@ -423,7 +567,7 @@ site_software: "Static Site Generator, Rust"
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2024-02-19-unlocking-gemini-google-ai-revolution-explained/index.html" title="Unlocking Gemini 1.5: Google's AI Revolution Explained">
-<img alt="Abstract visualisation of AI networks, representing Gemini 1.5" src="https://cloudcdn.pro/stocks/images/abstract-visualization-of-gemini.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Abstract visualisation of AI networks, representing Gemini 1.5's capabilities" src="https://cloudcdn.pro/stocks/images/abstract-visualization-of-gemini.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">AI</span>
@@ -435,7 +579,7 @@ site_software: "Static Site Generator, Rust"
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2024-02-13-eus-ai-act-shaping-the-future-of-global-ai-regulation/index.html" title="EU's AI Act: Pioneering Ethical AI Regulation Worldwide">
-<img alt="A person sitting on a black bench reading a newspaper" src="https://cloudcdn.pro/stocks/images/ryoji-iwata-a-qsFZimp1M.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="A person sitting on black bench reading newspaper" src="https://cloudcdn.pro/stocks/images/ryoji-iwata-a-qsFZimp1M.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Policy</span>
@@ -447,7 +591,7 @@ site_software: "Static Site Generator, Rust"
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2024-02-12-akande-voice-assistant-revolutionising-personal-and-executive-assistance/index.html" title="Àkàndé Voice Assistant, A Personal and Executive Assistance">
-<img alt="A white, spherical modern AI device" src="https://cloudcdn.pro/stocks/images/akande-voice-assistant.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="A white, spherical modern device" src="https://cloudcdn.pro/stocks/images/akande-voice-assistant.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">AI</span>
@@ -471,7 +615,7 @@ site_software: "Static Site Generator, Rust"
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2024-01-29-ai-powered-audio-insights-analysis-translations/index.html" title="AI-Powered Speech Analysis, Translation & Insight Tool">
-<img alt="A minimalist, modern corporate office with technological displays" src="https://cloudcdn.pro/stocks/images/modern-corporate-office-with-technological-displays.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="A minimalist, modern corporate office" src="https://cloudcdn.pro/stocks/images/modern-corporate-office-with-technological-displays.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">AI</span>
@@ -483,7 +627,7 @@ site_software: "Static Site Generator, Rust"
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2024-01-23-advancements-in-ai-prompt-engineering/index.html" title="AI Prompt Engineering 2024: Insights & Advanced Techniques">
-<img alt="Man analysing data on screens in a modern office" src="https://cloudcdn.pro/stocks/images/ai-prompt-engineering-modern-office.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="A man analysing data on screens" src="https://cloudcdn.pro/stocks/images/ai-prompt-engineering-modern-office.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">AI</span>
@@ -495,7 +639,7 @@ site_software: "Static Site Generator, Rust"
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2024-01-15-alien-studio-revolutionising-art-with-ai-photography/index.html" title="Alien Studio: My Tech-to-Art Journey in Photography">
-<img alt="A sunset's muse. Beauty in stillness from Alien Studio's Radiance collection" src="https://cloudcdn.pro/clients/alienstudio/v1/collections/radiance/radiance-08.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Sunset's muse, a serene glance; beauty in stillness" src="https://cloudcdn.pro/clients/alienstudio/v1/collections/radiance/radiance-08.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Art</span>
@@ -507,7 +651,7 @@ site_software: "Static Site Generator, Rust"
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2024-01-08-optimising-credit-ratio-analysis-with-ibm-qiskit-and-quantum-fourier-transform/index.html" title="Qiskit & Quantum Fourier Transform for Credit Ratio Analysis">
-<img alt="A Quantum Computer Room" src="https://cloudcdn.pro/stocks/images/quantum-computer-room.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Quantum Computer Room" src="https://cloudcdn.pro/stocks/images/quantum-computer-room.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Quantum · Finance</span>
@@ -519,7 +663,7 @@ site_software: "Static Site Generator, Rust"
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2024-01-01-ai-trends-2024-insights-and-predictions-for-the-future/index.html" title="AI Trends 2024: Insights and Predictions for the Future">
-<img alt="A Drone View of London" src="https://cloudcdn.pro/stocks/images/drone-view-of-london.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Drone View of London" src="https://cloudcdn.pro/stocks/images/drone-view-of-london.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">AI</span>
@@ -531,7 +675,7 @@ site_software: "Static Site Generator, Rust"
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2023-12-25-revolutionising-finance-with-ai-enhanced-quantum-algorithms/index.html" title="Revolutionising Finance with AI-Enhanced Quantum Algorithms">
-<img alt="A circuit board cityscape" src="https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Revolutionising Finance with AI-Enhanced Quantum Algorithms" src="https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Quantum · Finance</span>
@@ -543,7 +687,7 @@ site_software: "Static Site Generator, Rust"
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html" title="State of AI and Quantum Computing in Banking: A 2023 Review">
-<img alt="A circuit board with an AI GPU" src="https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="State of AI and Quantum Computing in Banking: A 2023 Review" src="https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">AI · Quantum</span>
@@ -555,7 +699,7 @@ site_software: "Static Site Generator, Rust"
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html" title="Quantum Key Distribution Revolutionising Security in Banking">
-<img alt="HSBC Headquarter in London Canary Wharf Docks" src="https://cloudcdn.pro/stocks/images/hsbc-from-the-docks.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="HSBC From the Docks" src="https://cloudcdn.pro/stocks/images/hsbc-from-the-docks.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Quantum · Banking</span>
@@ -567,7 +711,7 @@ site_software: "Static Site Generator, Rust"
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2023-12-04-mastering-date-and-time-in-rust-with-the-dtt-library/index.html" title="Efficient Date and Time Management with DateTime (DTT)">
-<img alt="The DTT (DateTime) Rust library logo" src="https://cloudcdn.pro/clients/dtt/v1/logos/dtt.svg" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="DateTime (DTT), Your Essential Toolkit for Date and Time Operations." src="https://cloudcdn.pro/clients/dtt/v1/logos/dtt.svg" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Open source · Rust</span>
@@ -579,7 +723,7 @@ site_software: "Static Site Generator, Rust"
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats/index.html" title="KyberLib: A Rust-Powered Shield Against Quantum Threats">
-<img alt="The KyberLib Rust library logo" src="https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Empowering Secure Communications in the Quantum Era with KyberLib" src="https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Quantum · Rust</span>
@@ -591,7 +735,7 @@ site_software: "Static Site Generator, Rust"
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html" title="CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age">
-<img alt="A complex quantum computer architecture" src="https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="A modern, sleek quantum computer" src="https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Quantum</span>
@@ -603,7 +747,7 @@ site_software: "Static Site Generator, Rust"
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2023-11-12-exploring-generative-ai/index.html" title="Exploring Generative AI: Shaping the Future of Technology">
-<img alt="Holographic cubes at a concert" src="https://cloudcdn.pro/stocks/images/fabio-oyXis2kALVg.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Abstract neural network visualisation in blue and purple tones representing AI processing" src="https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">AI</span>
@@ -615,7 +759,7 @@ site_software: "Static Site Generator, Rust"
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2023-11-05-mathematical-and-cryptographic-constants-for-rust-security/index.html" title="Mathematical and Cryptographic Constants for Rust Security">
-<img alt="Mathematical and cryptographic constants" src="https://cloudcdn.pro/stocks/images/antoine-dautry-05A-kdOH6Hw.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Mathematics computation" src="https://cloudcdn.pro/stocks/images/antoine-dautry-05A-kdOH6Hw.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Open source · Rust</span>
@@ -627,7 +771,7 @@ site_software: "Static Site Generator, Rust"
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries/index.html" title="Streamlining Rust Library Development with Code Generation">
-<img alt="A white modern building" src="https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Giant white pillars" src="https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Open source · Rust</span>
@@ -639,7 +783,7 @@ site_software: "Static Site Generator, Rust"
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2023-10-16-protecting-data-in-the-quantum-age-the-hash-library-hsh/index.html" title="Protecting Data in the Quantum Age: The Hash Library (HSH)">
-<img alt="A creative illustration on the quantum computing theme" src="https://cloudcdn.pro/stocks/images/galina-nelyubova-7ej8VWfwFsg.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="A creative illustration on Quantum computing theme" src="https://cloudcdn.pro/stocks/images/galina-nelyubova-7ej8VWfwFsg.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Quantum · Rust</span>
@@ -651,7 +795,7 @@ site_software: "Static Site Generator, Rust"
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/index.html" title="Static Site Generator: the fastest Rust-based SSG">
-<img alt="Turned-off laptop computer on top of a white table" src="https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Turned off laptop computer on top of a white table with a glass of water on the left and a pen, notepad and plant on the right" src="https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Open source · Rust</span>
@@ -663,7 +807,7 @@ site_software: "Static Site Generator, Rust"
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html" title="Automating ISO 20022 Payment Files Creation with pain001">
-<img alt="A very tall building with intricate hollow façade detailing" src="https://cloudcdn.pro/stocks/images/andrea-de-santis-T3Qen8vVgRc.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Turned off laptop computer on top of brown wooden table" src="https://cloudcdn.pro/stocks/images/andrea-de-santis-T3Qen8vVgRc.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Payments</span>
@@ -675,7 +819,7 @@ site_software: "Static Site Generator, Rust"
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2018-02-15-the-making-of-the-express-transaction-credits-platform/index.html" title="The Making of the Express Transaction Credits Platform">
-<img alt="Man typing on a laptop keyboard" src="https://cloudcdn.pro/stocks/images/rawpixel-com-369782.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Giant white pillars" src="https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Blockchain</span>
@@ -687,7 +831,7 @@ site_software: "Static Site Generator, Rust"
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution/index.html" title="Unveiling a New Cryptocurrency and Faster Payment Solution">
-<img alt="Canary Wharf clocks" src="https://cloudcdn.pro/stocks/images/laureen-missaire-DBbuhMbAIsQ.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Turned off laptop computer on top of brown wooden table" src="https://cloudcdn.pro/stocks/images/laureen-missaire-DBbuhMbAIsQ.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Blockchain · Payments</span>
@@ -699,7 +843,7 @@ site_software: "Static Site Generator, Rust"
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2018-01-24-the-erc-20-token-standard/index.html" title="ERC-20: The Ethereum Token Interface That Changed the World">
-<img alt="Computer screen with trades" src="https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Turned off laptop computer on top of brown wooden table" src="https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Blockchain</span>
@@ -711,7 +855,7 @@ site_software: "Static Site Generator, Rust"
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2018-01-09-understanding-the-technology-behind-blockchain/index.html" title="Understanding the Technology behind Blockchain">
-<img alt="Computer and mobile screens with trades" src="https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Abstract digital ledger blocks connected by light trails on dark background" src="https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Blockchain</span>
@@ -723,7 +867,7 @@ site_software: "Static Site Generator, Rust"
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2018-01-02-blockchain-the-technology-that-matters-in-2018/index.html" title="Blockchain Explained. The Technology That Matters the Most">
-<img alt="Horizontal view of a tall building" src="https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Turned off laptop computer on top of brown wooden table" src="https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Blockchain</span>
@@ -735,7 +879,7 @@ site_software: "Static Site Generator, Rust"
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2018-01-01-bitcoin-the-year-in-review/index.html" title="Bitcoin: A Year in Review of the First Cryptocurrency">
-<img alt="Physical bitcoins on a flat surface" src="https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="A pile of gold and silver coins sitting on top of a table" src="https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Blockchain</span>

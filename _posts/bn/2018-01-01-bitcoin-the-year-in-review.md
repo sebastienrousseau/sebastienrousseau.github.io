@@ -1,5 +1,6 @@
 ---
 title: "Bitcoin: A Year In Review of the First Cryptocurrency"
+tags: "bitcoin, ক্রিপ্টোকারেন্সি, blockchain, decentralized finance, digital currency, peer-to-peer payments, digital gold, প্রোগ্রামযোগ্য মুদ্রা, future of money, financial revolution, ISO 20022, পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, AI, stablecoins, টোকেনাইজড আমানত, open source"
 subtitle: "Bitcoin, cryptocurrency এবং আর্থিক বাজারকে নতুনভাবে রূপদানকারী প্রযুক্তি।"
 description: "Bitcoin: একটি পিয়ার-টু-পিয়ার ইলেকট্রনিক ক্যাশ সিস্টেম (P2P ECS) যা মানুষের অনলাইন লেনদেনের পদ্ধতিকে বৈপ্লবিকভাবে পরিবর্তন করার সম্ভাবনা রাখে।"
 date: "Jan 01, 2018"
@@ -160,4 +161,3 @@ If you have any questions, please don't hesitate to contact me via [LinkedIn ⧉
 [09]: /articles/index.html "Back to Articles"
 [10]: /contact/index.html "Contact Sebastien Rousseau"
 [11]: https://www.linkedin.com/in/sebastienrousseau/ "Sebastien Rousseau on LinkedIn"
-

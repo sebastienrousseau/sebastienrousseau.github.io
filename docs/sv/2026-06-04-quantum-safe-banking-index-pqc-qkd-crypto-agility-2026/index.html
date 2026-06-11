@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="sv-SE">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Thu, 04 Jun 2026 06:06:06 +0000" id="date" />
+    <meta itemprop="dateModified" content="2026-06-04" id="last-modified" />
+    <title>Quantum-Safe Banking Index 2026: Postkvantkryptografi, QKD, kryptoagilitet och harvest-now-decrypt-later-risk — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="Ett bankindex för kvantsäker beredskap 2026 — NIST:s postkvantstandarder, kryptografisk inventering, kryptoagilitet, QKD och exponering av långlivade data.">
+<meta name="keywords" content="kvantsäker bank 2026, postkvantkryptografi banker, NIST FIPS 203, ML-KEM, ML-DSA, SLH-DSA, kryptoagilitet, QKD bank">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="The Quantum-Safe Banking Index 2026">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-IDIDhTV/BUdauCVHbnu82+MMnG+uj/xOquvIAzKAzKQ=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-a5Ac7tDpe8vA71JXyRhnjPzPa06PwhJj5jq2hm2Pgao=' 'sha256-blQB0zgt1hfhWKMYV4dsU8yrv6gVN135cUTeY/dfAR0=' 'sha256-vADAr/nI8JJW0yx9wjLSLe8O2cR0f0QPqB7WlZ2GGow=' 'self' 'inline-speculation-rules' https://cdn.jsdelivr.net https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' https://cloudcdn.pro https://www.google.com https://open.spotify.com;
+        img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co;
+        style-src 'unsafe-inline' 'self' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/sv/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/newsreader-latin.woff2" crossorigin />
+    <link rel="stylesheet" href="/fonts/fonts.css" />
+    <!-- Preload the LCP hero portrait so it doesn't compete with the
+         render-blocking JS bundle on throttled mobile connections.
+         Lighthouse-simulated Slow-4G has been pinning LCP at ~5.6s; the
+         observed (real-network) LCP is 165 ms. This hint pulls the
+         synthetic LCP in line with the observed value. -->
+    <link rel="preload" as="image" href="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=1200&format=webp&q=85" fetchpriority="high">
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script>(function(){try{var saved=localStorage.getItem("theme");var prefersDark=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;var theme=saved||(prefersDark?"dark":"light");document.documentElement.setAttribute("data-theme",theme);}catch(e){}})();</script>
+
+    <link rel="stylesheet" href="/_csp/4724896d11ec6663.css" integrity="sha256-SFQ1AngSMlx94d5FmN1lWSKPs5RL6Y8BQf0nIEBLd7g= sha256-6BJkWGvqh3blXQksn+ynhkpoqcrJzzWhSKVuLVBJY4s=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Atom-flöde" href="/sv/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<link rel="stylesheet" href="/highlight.80eeb321.css">
+<meta property="og:title" content="Quantum-Safe Banking Index 2026: Postkvantkryptografi, QKD, kryptoagilitet och harvest-now-decrypt-later-risk — Sebastien Rousseau">
+<meta property="og:description" content="Ett bankindex för kvantsäker beredskap 2026 — NIST:s postkvantstandarder, kryptografisk inventering, kryptoagilitet, QKD och exponering av långlivade data.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/sv/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/">
+<meta property="og:image" content="https://cloudcdn.pro/api/transform?url=/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp&w=1200&format=webp&q=80">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="sv_SE">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Quantum-Safe Banking Index 2026: Postkvantkryptografi, QKD, kryptoagilitet och harvest-now-decrypt-later-risk — Sebastien Rousseau">
+<meta name="twitter:description" content="Ett bankindex för kvantsäker beredskap 2026 — NIST:s postkvantstandarder, kryptografisk inventering, kryptoagilitet, QKD och exponering av långlivade data.">
+<meta name="twitter:image" content="https://cloudcdn.pro/api/transform?url=/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp&w=1200&format=webp&q=80">
+<link rel="canonical" href="https://sebastienrousseau.com/sv/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="bn" href="https://sebastienrousseau.com/bn/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="cs" href="https://sebastienrousseau.com/cs/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="fil" href="https://sebastienrousseau.com/fil/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="ha" href="https://sebastienrousseau.com/ha/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="he" href="https://sebastienrousseau.com/he/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="hi" href="https://sebastienrousseau.com/hi/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="id" href="https://sebastienrousseau.com/id/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="nl" href="https://sebastienrousseau.com/nl/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="pl" href="https://sebastienrousseau.com/pl/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="ro" href="https://sebastienrousseau.com/ro/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="sv" href="https://sebastienrousseau.com/sv/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="th" href="https://sebastienrousseau.com/th/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="tr" href="https://sebastienrousseau.com/tr/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="uk" href="https://sebastienrousseau.com/uk/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="vi" href="https://sebastienrousseau.com/vi/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="yo" href="https://sebastienrousseau.com/yo/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" integrity="sha256-tV/7vAgYDUuBQbSGEPjXL/JC0sD7QpSxXCGKT4ALhh8= sha256-dvm1KF9mEWIapL8BE0nyFlHaKSf6TsjZZoQcJeRPraI=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">Hoppa till huvudinnehållet</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="Växla navigering" />
+      <div class="wrap">
+        <a class="ap-brand" href="/sv/index.html" aria-label="Sebastien Rousseau startsida">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="Huvudnavigering">
+          <ul class="ap-menu">
+            <li><a href="/sv/om-mig/index.html">Om mig</a></li>
+            <li><a href="/sv/artiklar/index.html" aria-current="page" class="active">Artiklar</a></li>
+            <li><a href="/sv/publikationer/index.html">Publikationer</a></li>
+            <li><a href="/sv/amnen/index.html">Ämnen</a></li>
+            <li><a href="/sv/projekt/index.html">Projekt</a></li>
+            <li><a href="/sv/spellistor/index.html">Playlists</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="Växla till mörkt tema" aria-pressed="false" title="Byt tema">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="Sök (Cmd eller Ctrl + K)" title="Sök (⌘K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="Språk">
+            <button type="button" class="ap-lang-toggle" aria-label="SV, Byt språk" aria-expanded="false" aria-haspopup="menu" title="Byt språk">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">SV</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <a class="ap-lang-item" href="/bn/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
+                <a class="ap-lang-item" href="/cs/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
+                <a class="ap-lang-item" href="/de/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <a class="ap-lang-item" href="/fil/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
+                <a class="ap-lang-item" href="/ha/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
+                <a class="ap-lang-item" href="/he/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
+                <a class="ap-lang-item" href="/hi/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <a class="ap-lang-item" href="/id/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
+                <a class="ap-lang-item" href="/it/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <a class="ap-lang-item" href="/pl/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
+                <a class="ap-lang-item" href="/pt-br/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <a class="ap-lang-item" href="/ro/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
+                <a class="ap-lang-item" href="/ru/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <a class="ap-lang-item" href="/sv/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
+                <a class="ap-lang-item" href="/th/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
+                <a class="ap-lang-item" href="/tr/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
+                <a class="ap-lang-item" href="/uk/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="uk" role="menuitem">🇺🇦 Українська</a>
+                <a class="ap-lang-item" href="/vi/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
+                <a class="ap-lang-item" href="/yo/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
+                <a class="ap-lang-item" href="/zh-hans/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/sv/kontakt/index.html" aria-label="Ta kontakt">Ta kontakt ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="Växla navigering">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>Quantum-Safe Banking Index 2026: Postkvantkryptografi, QKD, kryptoagilitet och harvest-now-decrypt-later-risk</h1>
+      <p class="sub">Kvantrisk har flyttat från teoretiskt hot till migrationsprogram: banker måste mäta kryptografisk exponering, migrationsberedskap och kryptoagilitet.</p>
+    <nav class="article-tags" aria-label="Ämnen"><a href="/tags/index.html#h3-kvantsaker-bank-2026" class="article-tag" rel="tag">kvantsäker bank 2026</a><a href="/tags/index.html#h3-postkvantkryptografi-banker" class="article-tag" rel="tag">postkvantkryptografi banker</a><a href="/tags/index.html#h3-nist-fips-203" class="article-tag" rel="tag">NIST FIPS 203</a><a href="/tags/index.html#h3-ml-kem" class="article-tag" rel="tag">ML-KEM</a><a href="/tags/index.html#h3-ml-dsa" class="article-tag" rel="tag">ML-DSA</a><a href="/tags/index.html#h3-slh-dsa" class="article-tag" rel="tag">SLH-DSA</a><a href="/tags/index.html#h3-kryptoagilitet" class="article-tag" rel="tag">kryptoagilitet</a><a href="/tags/index.html#h3-qkd-bank" class="article-tag" rel="tag">QKD bank</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2026-06-04T06:06:06+00:00" class="meta-pub">Publicerad 4 Jun 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Uppskattad lästid">8 min läsning</span></div></section><figure class="article-banner"><img src="https://cloudcdn.pro/api/transform?url=/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp&w=1200&format=webp&q=80" alt="Banner for: Quantum-Safe Banking Index 2026: Postkvantkryptografi, QKD, kryptoagilitet och harvest-now-decrypt-later-risk" width="1200" height="675" fetchpriority="high" decoding="async" /></figure>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>Innehåll</h2><ol><li><a href="#varfor-2026-ar-aret-da-detta-index-har-betydelse">Varför 2026 är året då detta index har betydelse</a></li><li><a href="#indexarkitekturen-2026">Indexarkitekturen 2026</a></li><li><a href="#aktuella-signaler-att-spara">Aktuella signaler att spåra</a></li><li><a href="#migrationen-borjar-med-kryptografins-liggare">Migrationen börjar med kryptografins liggare</a></li><li><a href="#hybrid-forst-agil-alltid">Hybrid först, agil alltid</a></li><li><a href="#var-qkd-passar-in">Var QKD passar in</a></li><li><a href="#vad-detta-betyder-per-banktyp">Vad detta betyder per banktyp</a></li><li><a href="#slutsats">Slutsats</a></li><li><a href="#vanliga-fragor">Vanliga frågor</a></li><li><a href="#referenser">Referenser</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> Ett bankindex för kvantsäker beredskap 2026 — NIST:s postkvantstandarder, kryptografisk inventering, kryptoagilitet, QKD och exponering av långlivade data.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>Varför 2026 är året då detta index har betydelse.</strong> Tre förskjutningar 2024-2025 gjorde kvantsäkerhet till ett mätbart bankprogram snarare än en forskningsbevakningspunkt.</li>  <li><strong>Indexarkitekturen 2026.</strong> Ett trovärdigt kvantberedskapskort kräver att man spårar exakta procenttal, inte bara projektstatusar:.</li>  <li><strong>Aktuella signaler att spåra.</strong> Migrationssekvensen är vid det här laget välförstådd.</li>  <li><strong>Migrationen börjar med kryptografins liggare.</strong> Migrationssekvensen är vid det här laget välförstådd.</li></ul></aside><!-- lead-start: manual -->
+
+<!-- lead-end -->
+<p>Kvantsäker bankverksamhet 2026 handlar om operativ migration, inte spekulation. NIST har slutfört de tre första postkvantkryptografiska standarderna, och bankerna måste nu förstå vilka system som är beroende av RSA, ECC, TLS, signaturer, HSM:er, certifikat, betalningskanaler, arkiv och långlivade konfidentiella data. Indexfrågan är enkel: kan institutet byta ut kryptografin innan hotet blir operativt?</p>
+<hr />
+<blockquote>
+<p><strong>Sammanfattning / Huvudpunkter</strong></p>
+<ul>
+<li><strong>NIST:s standarder är nu konkreta.</strong> FIPS 203 definierar ML-KEM för nyckelinkapsling, FIPS 204 definierar ML-DSA för signaturer och FIPS 205 definierar SLH-DSA som en tillståndslös hashbaserad signaturstandard.</li>
+<li><strong>Inventering är den första mognadsgrinden.</strong> En bank kan inte migrera det den inte kan hitta: certifikat, nycklar, protokoll, applikationer, leverantörer, HSM:er, API:er, arkiv och inbäddade system måste kartläggas.</li>
+<li><strong>Kryptoagilitet är det hållbara målet.</strong> Målet är inte ett engångsbyte av algoritm; det är förmågan att byta kryptografiska primitiver utan att designa om hela applikationer.</li>
+<li><strong>Långlivade data förändrar brådskan.</strong> Harvest-now-decrypt-later-risk innebär att data som fångas idag kan bli läsbara senare om de förblir värdefulla tillräckligt länge.</li>
+<li><strong>QKD är ett specialiserat komplement.</strong> Kvantnyckeldistribution kan vara relevant för kanaler med högst värde, men ersätter inte en institutionsövergripande PQC-migration.</li>
+</ul>
+</blockquote>
+<hr />
+<h2 id="varfor-2026-ar-aret-da-detta-index-har-betydelse">Varför 2026 är året då detta index har betydelse <a class="heading-anchor" href="#varfor-2026-ar-aret-da-detta-index-har-betydelse" aria-label="Länk till Varför 2026 är året då detta index har betydelse">#</a></h2>
+<p>Tre förskjutningar 2024-2025 gjorde kvantsäkerhet till ett mätbart bankprogram snarare än en forskningsbevakningspunkt. För det första slutförde NIST de primära postkvantstandarderna den 13 augusti 2024: <a href="https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.203.pdf" title="FIPS 203 — Module-Lattice-Based Key-Encapsulation Mechanism">FIPS 203 (ML-KEM) ⧉</a>, <a href="https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.204.pdf" title="FIPS 204 — Module-Lattice-Based Digital Signature Standard">FIPS 204 (ML-DSA) ⧉</a>, <a href="https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.205.pdf" title="FIPS 205 — Stateless Hash-Based Digital Signature Standard">FIPS 205 (SLH-DSA) ⧉</a>. Algoritmvalsdebatten avslutades det datumet; banker som fortfarande kör interna arbetsströmmar om &quot;vilket schema vinner&quot; 2026 är 18 månader efter.</p>
+<p>För det andra satte <a href="https://media.defense.gov/2022/Sep/07/2003071834/-1/-1/0/CSA_CNSA_2.0_ALGORITHMS_.PDF" title="Commercial National Security Algorithm Suite 2.0">NSA:s CNSA 2.0 ⧉</a> det amerikanska federala måltillståndet till 2033 med mellanliggande brytpunkter från 2027 för signering av mjukvara och firmware, 2030 för webbläsare och operativsystem. Varje bank med exponering mot amerikansk federal motpart — FedNow, Treasury-operationer, federala kundkonton — ligger inom den perimetern för de system som vidrör federala data. Klockan är inte längre abstrakt.</p>
+<p>För det tredje är <a href="https://csrc.nist.gov/Projects/post-quantum-cryptography" title="NIST:s program för postkvantkryptografi">Harvest-Now-Decrypt-Later (HNDL) ⧉</a> det bärande riskargumentet för brådska. Sofistikerade motståndare fångar redan TLS-skyddade betalningsmeddelanden, SWIFT-kuvert, KYC-dokumentation och långlivat arkivkrypteringstext vid stora finanscentra. Data som fångas 2026 behöver bara förbli konfidentialitetskänsliga vid dekrypteringsögonblicket — för 30-åriga bolån, livförsäkringsteckning, MiFID II- / GDPR-transaktionsinspelningar och M&amp;A-bevarandearkiv sträcker sig det fönstret långt bortom varje trovärdig uppskattning av en kryptografiskt relevant kvantdator (CRQC). Motståndaren behöver inte en kvantdator idag. De behöver en innan datan slutar betyda något.</p>
+<p>Quantum-Safe Banking Index mäter om ditt institut kan leverera migrationen innan den skärningen inträffar. Arbetet handlar inte längre om huruvida man ska migrera; det handlar om huruvida migrationen slutförs på en försvarbar tidslinje.</p>
+<h2 id="indexarkitekturen-2026">Indexarkitekturen 2026 <a class="heading-anchor" href="#indexarkitekturen-2026" aria-label="Länk till Indexarkitekturen 2026">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Indexlager</th>
+<th>Riktning 2026</th>
+<th>Beredskapsmått</th>
+<th>Risk vid feltahantering</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Inventering</strong></td>
+<td>Kartlägg kryptografiska tillgångar, protokoll, certifikat, leverantörer och dataklasser</td>
+<td>Andel av beståndet som inventerats</td>
+<td>Okända kvantsårbara beroenden</td>
+</tr>
+<tr>
+<td><strong>Exponering</strong></td>
+<td>Klassificera system efter konfidentialitetslivslängd och transaktionskritikalitet</td>
+<td>Högrisktillgångar efter värde och livslängd</td>
+<td>Felprioriterad migration</td>
+</tr>
+<tr>
+<td><strong>Migration</strong></td>
+<td>Inför hybridmönster och PQC-redo mönster i linje med NIST:s standarder</td>
+<td>ML-KEM- och ML-DSA-beredskap</td>
+<td>Akut omplattformering under deadline</td>
+</tr>
+<tr>
+<td><strong>Kryptoagilitet</strong></td>
+<td>Separera applikationslogik från kryptografiska primitiver</td>
+<td>Policyledd kryptotäckning</td>
+<td>Hårdkodade algoritmer över beståndet</td>
+</tr>
+<tr>
+<td><strong>Assurans</strong></td>
+<td>Testa interoperabilitet, prestanda, HSM-stöd, certifikat och leverantörsberedskap</td>
+<td>Andel godkända tester och eftersläpning av undantag</td>
+<td>Trasiga kanaler eller svaga reservkontroller</td>
+</tr>
+</tbody>
+</table>
+<h3 id="styrelsens-kvantkort">Styrelsens kvantkort <a class="heading-anchor" href="#styrelsens-kvantkort" aria-label="Länk till Styrelsens kvantkort">#</a></h3>
+<p>Ett trovärdigt kvantberedskapskort kräver att man spårar exakta procenttal, inte bara projektstatusar:</p>
+<ol>
+<li><strong>Inventeringsfullständighet:</strong> Andelen tier-1-applikationer med en fullständigt kartlagd kryptografisk materialförteckning (CBOM).</li>
+<li><strong>HNDL-exponering:</strong> Volymen långlivade konfidentiella data (t.ex. PII, affärshemligheter) som överförs över nätverk utan hybrid kvantsäker nyckelinkapsling.</li>
+<li><strong>NIST-migrationsprogress:</strong> Andelen asymmetriska krypteringsnycklar och digitala signaturer som migrerats till FIPS 203 (ML-KEM)- och FIPS 204 (ML-DSA)-standarderna.</li>
+<li><strong>Kryptoagilitetsberedskap:</strong> Andelen kritiska system där kryptografiska algoritmer kan roteras via central policy utan att kräva omkompilering av kod.</li>
+</ol>
+<h2 id="aktuella-signaler-att-spara">Aktuella signaler att spåra <a class="heading-anchor" href="#aktuella-signaler-att-spara" aria-label="Länk till Aktuella signaler att spåra">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Signal</th>
+<th>Vad det betyder för banker</th>
+<th>Källa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>FIPS 203 ML-KEM</strong></td>
+<td>Primär NIST-standard för allmän nyckeletablering vid kryptering</td>
+<td><a href="https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards" title="Första tre slutgiltiga postkvantkrypteringsstandarderna">NIST ⧉</a></td>
+</tr>
+<tr>
+<td><strong>FIPS 204 ML-DSA</strong></td>
+<td>Primär NIST-standard för digitala signaturer</td>
+<td><a href="https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards" title="Första tre slutgiltiga postkvantkrypteringsstandarderna">NIST ⧉</a></td>
+</tr>
+<tr>
+<td><strong>FIPS 205 SLH-DSA</strong></td>
+<td>Hashbaserat signaturalternativ och reservdesign</td>
+<td><a href="https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards" title="Första tre slutgiltiga postkvantkrypteringsstandarderna">NIST ⧉</a></td>
+</tr>
+<tr>
+<td><strong>Omedelbar integration uppmuntras</strong></td>
+<td>NIST säger uttryckligen åt administratörer att börja integrera standarderna eftersom full integration tar tid</td>
+<td><a href="https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards" title="Första tre slutgiltiga postkvantkrypteringsstandarderna">NIST ⧉</a></td>
+</tr>
+<tr>
+<td><strong>Bankernas kvantprogram expanderar</strong></td>
+<td>Storbanker utforskar kvantteknologier samtidigt som de förbereder PQC-övergångar</td>
+<td><a href="https://thequantuminsider.com/2026/03/27/15-plus-global-banks-probing-the-wonderful-world-of-quantum-technologies/" title="Översikt över globala banker som utforskar kvantteknologier">Quantum Insider ⧉</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="migrationen-borjar-med-kryptografins-liggare">Migrationen börjar med kryptografins liggare <a class="heading-anchor" href="#migrationen-borjar-med-kryptografins-liggare" aria-label="Länk till Migrationen börjar med kryptografins liggare">#</a></h2>
+<p>Migrationssekvensen är vid det här laget välförstådd. Varje grind producerar bevis som driver nästa; att hoppa över eller komprimera en grind är vad som genererar den akuta omplattformeringsrisken som dyker upp i indexarkitekturens felkolumn.</p>
+<pre class="mermaid">flowchart LR
+    A["Discovery&lt;br/>CycloneDX CBOM&lt;br/>scanners + CMDB"] --> B["Exposure model&lt;br/>lifetime × capture&lt;br/>× CRQC horizon"]
+    B --> C["Hybrid TLS 1.3&lt;br/>X25519MLKEM768&lt;br/>external endpoints"]
+    C --> D["HSM PQC firmware&lt;br/>vendor-by-vendor&lt;br/>roadmap rollout"]
+    D --> E["Crypto-agility&lt;br/>PKCS#11 + policy&lt;br/>registry + kill switch"]
+    E --> F["Pure PQC&lt;br/>2028+&lt;br/>conformance + audit"]
+
+    style A fill:#eff5ff,stroke:#0056b3,color:#111
+    style B fill:#eff5ff,stroke:#0056b3,color:#111
+    style C fill:#fff4cf,stroke:#5a3e00,color:#111
+    style D fill:#fff4cf,stroke:#5a3e00,color:#111
+    style E fill:#e8f5e9,stroke:#1b5e20,color:#111
+    style F fill:#e8f5e9,stroke:#1b5e20,color:#111
+</pre>
+<p>Den första leveransen är inte en ny algoritm; det är en kryptografisk materialförteckning (CBOM). Banker behöver en levande inventering som kopplar affärstjänster till algoritmer, bibliotek, certifikat, nyckellängder, HSM:er, datalivslängder, leverantörer och operativa ägare. Utan den liggaren blir kvantsäker migration gissningsarbete.</p>
+<p>CBOM-postuppsättningen bör fånga, för varje kryptografisk primitiv: protokollet eller gränssnittet (TLS 1.3, IPsec, SSH, eget format för betalningsmeddelanden), algoritmen och parameteruppsättningen (RSA-2048, ECDH P-256, ML-KEM-768, ML-DSA-65), biblioteket och versionen (OpenSSL 3.4, BoringSSL commit-hash, leverantörens SDK-bygge), hårdvarugränsen (HSM-partition, TPM, secure enclave eller ingen), certifikatidentiteten i tillämpliga fall, applikationsägaren och dataklassificeringslivslängden. Verktyg som hamnar i produktion 2025-2026 — IBM Quantum Safe Inventory, den öppna källkoden <a href="https://cyclonedx.org/capabilities/cbom/" title="CycloneDX Cryptography Bill of Materials">CycloneDX CBOM-specifikation ⧉</a>, företagsskannrar från CryptoNext / Sandbox / PQShield — integreras i befintliga CMDB-pipelines. Inget av dem är fullständigt på egen hand; räkna med en bygglivscykel på 12-18 månader för CBOM även med leverantörsverktyg och dedikerad bemanning.</p>
+<p>Måttet att spåra är färskhet, inte täckning. En CBOM som är två månader gammal är värre än ingen CBOM alls eftersom den ger säkerhetsteamet falsk tilltro till vad som har migrerats.</p>
+<h2 id="hybrid-forst-agil-alltid">Hybrid först, agil alltid <a class="heading-anchor" href="#hybrid-forst-agil-alltid" aria-label="Länk till Hybrid först, agil alltid">#</a></h2>
+<p>De flesta banker kommer inte att byta allt på en gång. Det realistiska mönstret är hybridutrullning, där klassiska och postkvantmekanismer körs tillsammans medan leverantörer, protokoll, certifikat och operativ tooling mognar. Det långsiktiga målet är kryptoagilitet: policyledda kryptografiska val som kan ändras utan att bygga om affärsapplikationen.</p>
+<p>[Insert Interactive Component: Harvest-Now-Decrypt-Later (HNDL) Risk Calculator — A slider-based tool where executives input data shelf-life vs. estimated quantum timeline to see their exposure window.]</p>
+<blockquote>
+<p><strong>Kärninsikt:</strong> Om dina data måste förbli konfidentiella i 10 år, och en kryptografiskt relevant kvantdator (CRQC) är 7 år bort, ligger din migrationsdeadline inte 7 år fram i tiden — den var 3 år sedan.</p>
+</blockquote>
+<p>I praktiken betyder detta TLS 1.3 med hybriden <code>X25519MLKEM768</code> key share för externt vända ändpunkter (Chrome / Firefox / Cloudflare / Akamai stödjer alla detta idag), klassiska signaturkedjor tills HSM- och CA-infrastrukturen kommer ikapp, och ett PKCS#11-abstraktionslager som låter policyregistret rotera algoritmer utan att kompilera om affärsapplikationer. Kryptoagilitet är vad som avgör om nästa algoritmövergång (när, inte om) blir en sexveckorsrotation eller ännu ett sjuårsprogram.</p>
+<h2 id="var-qkd-passar-in">Var QKD passar in <a class="heading-anchor" href="#var-qkd-passar-in" aria-label="Länk till Var QKD passar in">#</a></h2>
+<p>Kvantnyckeldistribution hör hemma i indexet som ett kanalval med hög känslighet, särskilt för finansmarknadsinfrastruktur, centralbanksanslutning och extremt känsliga institutionella flöden. Den bör behandlas som ett komplement till PQC, inte som en ursäkt för att fördröja företagsmigrationen.</p>
+<h2 id="vad-detta-betyder-per-banktyp">Vad detta betyder per banktyp <a class="heading-anchor" href="#vad-detta-betyder-per-banktyp" aria-label="Länk till Vad detta betyder per banktyp">#</a></h2>
+<h3 id="globalt-systemviktiga-banker">Globalt systemviktiga banker <a class="heading-anchor" href="#globalt-systemviktiga-banker" aria-label="Länk till Globalt systemviktiga banker">#</a></h3>
+<p>Det svåra problemet är skalan: tiotusentals TLS-ändpunkter, hundratals HSM-partitioner, dussintals interna certifikatutfärdare, hundratals affärsapplikationer med inbäddade kryptografiska primitiver och leverantörs-SDK:er som banken inte kan modifiera. Investeringen är inte ännu en pilot; det är CBOM-verktygen, PKCS#11-abstraktionslagret kopplat till varje nytt bygge, HSM-konsolideringsplanen som väljer en leverantör att leda PQC-firmware och accepterar en flerårig svans på de andra, samt policyregistret som blir den hållbara kryptoagilitetsytan långt efter att FIPS 203 / 204 / 205-migrationen slutförts.</p>
+<h3 id="transaktions-och-affarsbanker">Transaktions- och affärsbanker <a class="heading-anchor" href="#transaktions-och-affarsbanker" aria-label="Länk till Transaktions- och affärsbanker">#</a></h3>
+<p>Migrationsomfattningen är smalare än på G-SIB-nivå men HNDL-exponeringen är akut: SWIFT-meddelanden över gränser, strukturerad betalningsdata som bär företagsmotparts-PII, dokumentutbytesplattformar som håller handelsfinansieringsdokumentation och rapporteringsarkiv med lång lagring. Prioritera hybrid TLS på varje kundvänd ändpunkt och PQC i vila för bevarandearkiv. Driv ansvarsutkrävande från HSM-leverantörer — företagsbanksplattformsteamet har direkt inköpshävstång som grossistteknikteamet ofta saknar.</p>
+<h3 id="regionala-banker">Regionala banker <a class="heading-anchor" href="#regionala-banker" aria-label="Länk till Regionala banker">#</a></h3>
+<p>Köp den leverantörsstack som redan har kryptoagilitetsprimitiverna. Välj en kärnbankplattform vars leverantör publicerar en CBOM och åtar sig tidsplaner för ML-KEM- / ML-DSA-stöd. Validera att leverantörens HSM-färdplan ligger i linje med bankens migrationsdeadline. Den ingenjörskapacitet som krävs för att bygga kryptoagilitet från grunden är flerårig; leverantören betalar den kostnaden över många kunder och banken ärver nyttan. Valideringsarbetet — att kontrollera att leverantörens påståenden överlever institutets MRM-process — är den legitima interna omfattningen.</p>
+<h3 id="fintechs-psp-er-och-infrastrukturleverantorer">Fintechs, PSP:er och infrastrukturleverantörer <a class="heading-anchor" href="#fintechs-psp-er-och-infrastrukturleverantorer" aria-label="Länk till Fintechs, PSP:er och infrastrukturleverantörer">#</a></h3>
+<p>Den konkurrensfråga som möter leverantörer som säljer till banker 2026 är inte &quot;stödjer ni PQC&quot;. Det är &quot;kan ni producera en CycloneDX CBOM för er plattform, en HSM-leverantörsstödmatris och ett skrivet algoritmrotations-SLA&quot;. Leverantörer som svarar ja kommer att klara tier-1-inköpsgrindarna 2026-2027. De som inte kan kommer att förlora förnyelsecykeln till en konkurrent som kan.</p>
+<h2 id="slutsats">Slutsats <a class="heading-anchor" href="#slutsats" aria-label="Länk till Slutsats">#</a></h2>
+<p>Kvantsäker bankverksamhet 2026 är inte en forskningsbevakningspunkt; det är ett leveransprogram med en deadline som sätts av skärningen mellan två kurvor — konfidentialitetslivslängden på den data institutet håller idag och ankomsthorisonten för en kryptografiskt relevant kvantdator. De institut som ser trovärdiga ut för tillsynsmyndigheter och motparter 2030 är de som påbörjade CBOM-konstruktion 2024, rullade ut hybrid TLS på varje extern ändpunkt vid utgången av 2026 och byggde in kryptoagilitet i varje nytt bygge från dag ett. De som inte gjorde det kommer att upptäcka om deras migrationsfönster redan har stängts för de data som motståndaren skördar idag.</p>
+<p>Mät migrationen så som du mäter vilket operativt program som helst: känd omfattning, prioriterad sekvensering, åtagna deadlines, ärliga undantagsregister. Ju hårdare du tittar på ditt eget bestånd, desto mindre känns migrationsfönstret.</p>
+<h2 id="vanliga-fragor">Vanliga frågor <a class="heading-anchor" href="#vanliga-fragor" aria-label="Länk till Vanliga frågor">#</a></h2>
+<p><strong>Vad bör en bank inventera först?</strong></p>
+<p>Börja med externt exponerad TLS, betalningskanaler, kundautentisering, interbankanslutning, HSM-stödda tjänster, långtidsarkiv och system som hanterar konfidentiella data med lång nyttig livslängd.</p>
+<p><strong>Är PQC enbart en cybersäkerhetsfråga?</strong></p>
+<p>Nej. Det påverkar betalningar, identitet, juridiska bevis, transaktionssignering, kundförtroende, datalagring, leverantörshantering och operativ motståndskraft.</p>
+<p><strong>Vad betyder kryptoagilitet?</strong></p>
+<p>Kryptoagilitet innebär förmågan att byta kryptografiska primitiver genom policy- och plattformskontroller istället för hårdkodade applikationsändringar.</p>
+<p><strong>Bör banker vänta på fler standarder?</strong></p>
+<p>Nej. NIST har uppmuntrat administratörer att börja integrera de första slutgiltiga standarderna eftersom full integration tar tid.</p>
+<h2 id="referenser">Referenser <a class="heading-anchor" href="#referenser" aria-label="Länk till Referenser">#</a></h2>
+<ul>
+<li>NIST, (2026). <a href="https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards" title="Första tre slutgiltiga postkvantkrypteringsstandarderna">Första tre slutgiltiga postkvantkrypteringsstandarderna ⧉</a>.</li>
+</ul>
+<!-- enrich-start -->
+
+<p class="post-reviewed">Senast granskad <time datetime="2026-06-04">2026-06-04</time>.</p>
+<!-- enrich-end -->
+<aside class="author-card" aria-label="Om författaren"><img alt="Porträtt av Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=85" width="64" height="64" loading="lazy" decoding="async"  fetchpriority="high"><span class="author-card-body"><strong class="author-card-name"><a href="/sv/om-mig/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banktekniker — skriver om tillämpad AI, migrering till ISO 20022, postkvantkryptografi för finansiella tjänster och den strukturella omvandlingen av grossistbetalningar.</span><span class="author-credentials">Över 20 års erfarenhet från HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA och Virgin Group. <a href="/sv/om-mig/index.html">Fullständig profil</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">Senast granskad <time datetime="2026-06-11">2026-06-11</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Relaterad läsning</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/sv/2026-05-16-basta-molnarkitektur-for-banker-2026" class="related-media" aria-label="Den bästa molninfrastrukturarkitekturen 2026: En AI-nativ, multi-cloud, kvantmedveten ritning för finansiella tjänster" tabindex="-1"><img alt="Six-pillar cloud architecture diagram for 2026 — AI-native, multi-cloud, serverless, edge, DevSecOps, and sustainable design, with CloudCDN edge research overlay" src="https://cloudcdn.pro/api/transform?url=/stock/images/cloud-architecture-2026-banner.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="den-basta-molninfrastrukturarkitekturen-2026-en-ai-nativ-multi-cloud-kvantmedvet"><a href="https://sebastienrousseau.com/sv/2026-05-16-basta-molnarkitektur-for-banker-2026">Den bästa molninfrastrukturarkitekturen 2026: En AI-nativ, multi-cloud, kvantmedveten ritning för finansiella tjänster</a> <a class="heading-anchor" href="#den-basta-molninfrastrukturarkitekturen-2026-en-ai-nativ-multi-cloud-kvantmedvet" aria-label="Länk till Den bästa molninfrastrukturarkitekturen 2026: En AI-nativ, multi-cloud, kvantmedveten ritning för finansiella tjänster">#</a></h3><p><time datetime="2026-05-16">2026-05-16</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/sv/2026-05-18-kvantkryptografi-standarder-utveckling-2026" class="related-media" aria-label="Återställningen av kvantkryptografi 2026: PQC-standarder, QKD-säkerhet och migrationsarbetet bankerna inte kan skjuta upp" tabindex="-1"><img alt="Quantum-safe cryptography migration map for 2026 showing NIST PQC standards, hybrid protocol work, QKD assurance, crypto-agility, and bank data-risk tiers" src="https://cloudcdn.pro/api/transform?url=/stocks/images/alex-shuper-YYZnrK8NrSw-unsplash.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="aterstallningen-av-kvantkryptografi-2026-pqc-standarder-qkd-sakerhet-och-migrati"><a href="https://sebastienrousseau.com/sv/2026-05-18-kvantkryptografi-standarder-utveckling-2026">Återställningen av kvantkryptografi 2026: PQC-standarder, QKD-säkerhet och migrationsarbetet bankerna inte kan skjuta upp</a> <a class="heading-anchor" href="#aterstallningen-av-kvantkryptografi-2026-pqc-standarder-qkd-sakerhet-och-migrati" aria-label="Länk till Återställningen av kvantkryptografi 2026: PQC-standarder, QKD-säkerhet och migrationsarbetet bankerna inte kan skjuta upp">#</a></h3><p><time datetime="2026-05-18">2026-05-18</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/sv/2026-05-14-sakra-huvudboken-postkvantmigration-foretagsfinans" class="related-media" aria-label="Asegurar el libro contable: guía para consejos de administración sobre la migración postcuántica en banca corporativa" tabindex="-1"><img alt="Post-quantum cryptography migration roadmap diagram — corporate banking infrastructure transitioning from RSA to ML-KEM and ML-DSA" src="https://cloudcdn.pro/api/transform?url=/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="asegurar-el-libro-contable-guia-para-consejos-de-administracion-sobre-la-migraci"><a href="https://sebastienrousseau.com/sv/2026-05-14-sakra-huvudboken-postkvantmigration-foretagsfinans">Asegurar el libro contable: guía para consejos de administración sobre la migración postcuántica en banca corporativa</a> <a class="heading-anchor" href="#asegurar-el-libro-contable-guia-para-consejos-de-administracion-sobre-la-migraci" aria-label="Länk till Asegurar el libro contable: guía para consejos de administración sobre la migración postcuántica en banca corporativa">#</a></h3><p><time datetime="2026-05-14">2026-05-14</time></p></footer></article>
+</div>
+</aside><aside class="article-sources" aria-labelledby="sources-heading"><h2 id="sources-heading" class="article-sources-heading">Källor och referenser</h2><ol class="article-sources-list"><li><a href="https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.203.pdf" rel="external noopener nofollow"><span class="source-host">nvlpubs.nist.gov</span><span class="source-path">/nistpubs/FIPS/NIST.FIPS.203.pdf</span></a></li><li><a href="https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.204.pdf" rel="external noopener nofollow"><span class="source-host">nvlpubs.nist.gov</span><span class="source-path">/nistpubs/FIPS/NIST.FIPS.204.pdf</span></a></li><li><a href="https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.205.pdf" rel="external noopener nofollow"><span class="source-host">nvlpubs.nist.gov</span><span class="source-path">/nistpubs/FIPS/NIST.FIPS.205.pdf</span></a></li><li><a href="https://csrc.nist.gov/Projects/post-quantum-cryptography" rel="external noopener nofollow"><span class="source-host">csrc.nist.gov</span><span class="source-path">/Projects/post-quantum-cryptography</span></a></li><li><a href="https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards" rel="external noopener nofollow"><span class="source-host">www.nist.gov</span><span class="source-path">/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryp…</span></a></li></ol></aside><nav class="post-pagination" aria-label="Artikelpaginering"><a class="post-pagination-prev" href="/sv/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/"><span class="post-pagination-label">Föregående</span><span class="post-pagination-title">The Agentic AI Index for Banks in 2026: Measuring Autonomy, Governance, Auditability, and Business Impact</span></a><a class="post-pagination-next" href="/sv/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/"><span class="post-pagination-label">Nästa</span><span class="post-pagination-title">The Cloud Native Banking Index in 2026: DORA, Platform Engineering, Sovereign Cloud, and Operational Resilience</span></a></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/sv/om-mig/index.html">Om mig</a></li>
+              <li><a href="/sv/kontakt/index.html">Kontakt</a></li>
+              <li><a href="/sv/gjord-med-statisk-sajtgenerator/index.html">Gjord med Static Site Generator</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Publikationer</h2>
+            <ul>
+              <li><a href="/sv/artiklar/index.html">Artiklar</a></li>
+              <li><a href="/sv/publikationer/index.html">Publikationer</a></li>
+              <li><a href="/sv/taggar/index.html">Taggar</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Verksamhet</h2>
+            <ul>
+              <li><a href="/sv/projekt/index.html">Projekt</a></li>
+              <li><a href="/sv/spellistor/index.html">Playlists</a></li>
+              <li><a href="/sv/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Kontakt</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="/contact/" method="get" aria-label="Anmälan till nyhetsbrev">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — notas de investigación sobre pagos, IA y criptografía postcuántica. Sin spam.</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="du@bank.se" />
+            <input type="hidden" name="subject" value="newsletter" />
+            <input type="hidden" name="message" value="Please subscribe me to the Banking On Quantum newsletter." />
+            <button type="submit">Prenumerera</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved.</span>
+          <div class="social" aria-label="Sociala länkar">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau en Twitter / X"><img src="https://cloudcdn.pro/common/images/buttons/x-black.svg" alt="Sebastien Rousseau en Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau en LinkedIn"><img src="https://cloudcdn.pro/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau en LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau en Medium"><img src="https://cloudcdn.pro/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau en Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau en YouTube"><img src="https://cloudcdn.pro/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau en YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/sv/tillganglighet/index.html">Tillgänglighet</a> ·
+            <a href="/sv/integritet/index.html">Integritet</a> ·
+            <a href="/sv/villkor/index.html">Villkor</a> ·
+            <a href="https://www.thegreenwebfoundation.org/green-web-check/?url=sebastienrousseau.com" target="_blank" rel="noopener noreferrer" title="Hosted on 100% renewable energy (Cloudflare) — estimate via Sustainable Web Design v4 model">Carbon: ~0.04 g/visit · green-hosted</a> ·
+            <a href="https://github.com/sebastienrousseau/sebastienrousseau.github.io/blob/main/project-docs/sigstore.md" target="_blank" rel="noopener noreferrer" title="Every dated article is signed with Sigstore — verify the bytes match what was published">Verify signatures</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","identifier":{"@type":"PropertyValue","propertyID":"ORCID","value":"0009-0005-1434-284X","url":"https://orcid.org/0009-0005-1434-284X"},"worksFor":{"@type":"Organization","@id":"https://www.hsbc.com/#organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal","url":"https://www.paypal.com/"},{"@type":"Organization","name":"Barclays","url":"https://www.barclays.com/"},{"@type":"Organization","name":"Shazam Entertainment","url":"https://www.shazam.com/"},{"@type":"Organization","name":"AKQA","url":"https://www.akqa.com/"},{"@type":"Organization","name":"Virgin Group","url":"https://www.virgin.com/"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"hasCredential":[{"@type":"EducationalOccupationalCredential","credentialCategory":"professional experience","name":"20+ years across Tier-1 banks and global payments infrastructure","recognizedBy":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"}},{"@type":"EducationalOccupationalCredential","credentialCategory":"domain expertise","name":"ISO 20022 migration and wholesale payments architecture","recognizedBy":{"@type":"Organization","name":"SWIFT","url":"https://www.swift.com/"}},{"@type":"EducationalOccupationalCredential","credentialCategory":"domain expertise","name":"Post-Quantum Cryptography for financial services","recognizedBy":{"@type":"Organization","name":"NIST Post-Quantum Cryptography Project","url":"https://csrc.nist.gov/projects/post-quantum-cryptography"}}],"knowsAbout":[{"@type":"DefinedTerm","name":"Post-Quantum Cryptography","sameAs":"https://en.wikipedia.org/wiki/Post-quantum_cryptography"},{"@type":"DefinedTerm","name":"ML-KEM (FIPS 203)","sameAs":"https://csrc.nist.gov/pubs/fips/203/final"},{"@type":"DefinedTerm","name":"ML-DSA (FIPS 204)","sameAs":"https://csrc.nist.gov/pubs/fips/204/final"},{"@type":"DefinedTerm","name":"ISO 20022","sameAs":"https://en.wikipedia.org/wiki/ISO_20022"},{"@type":"DefinedTerm","name":"SWIFT gpi","sameAs":"https://www.swift.com/our-solutions/swift-gpi"},{"@type":"DefinedTerm","name":"SEPA Instant Payments","sameAs":"https://www.ecb.europa.eu/paym/integration/retail/instant_payments/html/index.en.html"},{"@type":"DefinedTerm","name":"FedNow Service","sameAs":"https://www.federalreserve.gov/paymentsystems/fednow_about.htm"},{"@type":"DefinedTerm","name":"Real-Time Payments (RTP)","sameAs":"https://www.theclearinghouse.org/payment-systems/rtp"},{"@type":"DefinedTerm","name":"Cross-border payments","sameAs":"https://en.wikipedia.org/wiki/Cross-border_payments"},{"@type":"DefinedTerm","name":"Wholesale banking","sameAs":"https://en.wikipedia.org/wiki/Wholesale_banking"},{"@type":"DefinedTerm","name":"Applied artificial intelligence in banking","sameAs":"https://en.wikipedia.org/wiki/Applications_of_artificial_intelligence"},{"@type":"DefinedTerm","name":"Generative artificial intelligence","sameAs":"https://en.wikipedia.org/wiki/Generative_artificial_intelligence"}],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://orcid.org/0009-0005-1434-284X","https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":["Organization","Brand"],"@id":"https://sebastienrousseau.com/#organization","name":"Sebastien Rousseau","alternateName":"Banking on Quantum","url":"https://sebastienrousseau.com/","logo":{"@type":"ImageObject","@id":"https://sebastienrousseau.com/#logo","url":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","width":"512","height":"512","caption":"Sebastien Rousseau"},"founder":{"@id":"https://sebastienrousseau.com/#person"},"editorialPolicy":"https://sebastienrousseau.com/editorial/","correctionsPolicy":"https://sebastienrousseau.com/editorial/#corrections","ethicsPolicy":"https://sebastienrousseau.com/editorial/","diversityPolicy":"https://sebastienrousseau.com/editorial/","sameAs":["https://github.com/sebastienrousseau","https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#organization"},"author":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"sv"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"sv"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":1650,"headline":"Quantum-Safe Banking Index 2026: Postkvantkryptografi, QKD, kryptoagilitet och harvest-now-decrypt-later-risk","description":"Ett bankindex för kvantsäker beredskap 2026 — NIST:s postkvantstandarder, kryptografisk inventering, kryptoagilitet, QKD och exponering av långlivade data.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/api/transform?url=/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp&w=1200&format=webp&q=80","width":"100vw","height":"100vh","caption":"Indexdiagram för Quantum-Safe Banking Index 2026 för banker och finansinstitut 2026"},"url":"https://sebastienrousseau.com/sv/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/","datePublished":"2026-06-04T06:06:06+00:00","dateModified":"2026-06-04","inLanguage":"sv","keywords":"kvantsäker bank 2026, postkvantkryptografi banker, NIST FIPS 203, ML-KEM, ML-DSA, SLH-DSA, kryptoagilitet, QKD bank","articleSection":"Security","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/sv/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"sv"},"citation":[{"@type":"CreativeWork","url":"https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.203.pdf"},{"@type":"CreativeWork","url":"https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.204.pdf"},{"@type":"CreativeWork","url":"https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.205.pdf"},{"@type":"CreativeWork","url":"https://csrc.nist.gov/Projects/post-quantum-cryptography"},{"@type":"CreativeWork","url":"https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/sv/"},{"@type":"ListItem","position":3,"name":"Quantum-Safe Banking Index 2026: Postkvantkryptografi, QKD, kryptoagilitet och harvest-now-decrypt-later-risk","item":"https://sebastienrousseau.com/sv/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/"}]}]}</script>
+<script src="/main.931cef3c.js" defer integrity="sha256-JUs9z2u4RDSgxMCjBnyMmIHIkpakA7s5FxUmnDnSpD0= sha256-r33y52uSTzd+MqMufJlWsd09gyxv578IRoF5Gomw7Aw=" crossorigin="anonymous"></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="Sök">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>Sök</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="Sök">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="Sök i dokumentationen..." autocomplete="off" aria-label="Sök"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> stäng</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> navigera</span><span><kbd>Enter</kbd> öppna</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" integrity="sha256-Y0txeCfdk+GUctTYMAxMbFCB2qs1cPm8JSIX3WRS9cs= sha256-5Ca5zk/7tsavsCDhg6M1m4feBn+L4YnJ7iavKawynII=" crossorigin="anonymous"></script>
+</div>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Quantum-Safe Banking Index 2026: Postkvantkryptografi, QKD, kryptoagilitet och harvest-now-decrypt-later-risk","url":"https://sebastienrousseau.com/sv/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/","inLanguage":"sv-SE","isAccessibleForFree":true,"author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#organization"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/sv/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/"},"keywords":"kvantsäker bank 2026, postkvantkryptografi banker, NIST FIPS 203, ML-KEM, ML-DSA, SLH-DSA, kryptoagilitet, QKD bank","proficiencyLevel":"Expert","dependencies":["NIST","NIST FIPS 203"]}</script></body>
+</html>

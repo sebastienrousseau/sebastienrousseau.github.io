@@ -6,14 +6,14 @@
     <description>Artikel berbahasa Indonesia: AI terapan, pembayaran ISO 20022, kriptografi pasca-kuantum, dan transformasi pembayaran grosir.</description>
     <atom:link href="https://sebastienrousseau.com/id/rss.xml" rel="self" type="application/rss+xml"/>
     <language>id-ID</language>
-    <lastBuildDate>Thu, 28 May 2026 23:46:22 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 11 Jun 2026 00:09:27 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Hak cipta dilindungi.</copyright>
     <item>
       <title>CloudCDN: Blueprint Open Source untuk Edge AI-Native di 2026</title>
       <link>https://sebastienrousseau.com/id/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/</link>
       <description>CloudCDN adalah blueprint CDN edge open source dan AI-native untuk infrastruktur terkendali MCP, pembatasan laju Durable Objects, signed URLs, aksesibilitas, dan kemampuan audit.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/id/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/</guid>
-      <pubDate>Thu, 28 May 2026 23:46:22 +0000</pubDate>
+      <pubDate>Thu, 11 Jun 2026 00:09:27 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/alis-po-IdVNRv-5wJo.webp" type="image/webp" length="0"/>
       <category>CloudCDN</category>
@@ -28,11 +28,111 @@
       <category>infrastruktur edge</category>
     </item>
     <item>
+      <title>Indeks Ketahanan Perbankan 2026: AI, Cloud, Kuantum, Pembayaran, dan Risiko Konsentrasi Pihak Ketiga</title>
+      <link>https://sebastienrousseau.com/id/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/</link>
+      <description>Indeks ketahanan perbankan 2026 menggabungkan risiko AI, konsentrasi cloud, keamanan tahan-kuantum, kontinuitas pembayaran, dan ketergantungan pihak ketiga kritis.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/id/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/</guid>
+      <pubDate>Thu, 11 Jun 2026 00:09:27 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/simone-hutsch-oqlh6RsrYB0.webp" type="image/webp" length="0"/>
+      <category>indeks ketahanan perbankan 2026</category>
+      <category>ketahanan DORA</category>
+      <category>risiko operasional AI</category>
+      <category>risiko konsentrasi cloud</category>
+      <category>risiko kuantum perbankan</category>
+      <category>ketahanan pembayaran</category>
+      <category>risiko pihak ketiga</category>
+    </item>
+    <item>
+      <title>Indeks Treasury Otonom 2026: Treasury Agentik, Likuiditas Terprogram, Simpanan Tertokenisasi, dan Kontrol Kas Real-Time</title>
+      <link>https://sebastienrousseau.com/id/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/</link>
+      <description>Indeks kesiapan treasury otonom 2026 — alur kerja treasury agentik, likuiditas terprogram, simpanan tertokenisasi, pembayaran real-time, dan kontrol kas otomatis sebagai satu model operasi.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/id/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/</guid>
+      <pubDate>Thu, 11 Jun 2026 00:09:27 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/christopher-burns-Kj2SaNHG-hg.webp" type="image/webp" length="0"/>
+      <category>treasury otonom 2026</category>
+      <category>treasury agentik</category>
+      <category>likuiditas terprogram</category>
+      <category>simpanan tertokenisasi treasury</category>
+      <category>treasury real-time</category>
+      <category>manajemen kas AI</category>
+    </item>
+    <item>
+      <title>Bank Multi-Rel pada 2026: Kartu, A2A, Stablecoin, RTP, FedNow, dan Open Banking dalam Satu Strategi</title>
+      <link>https://sebastienrousseau.com/id/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</link>
+      <description>FedNow menuntut likuiditas pra-pendanaan 24/7. ACH murah tetapi T+1. USDC menyelesaikan secara atomik tetapi butuh infrastruktur dompet. Bank multi-rel 2026 merutekan tiap pembayaran berdasar biaya, finalitas, dan biaya likuiditas — digerakkan mesin orkestrasi yang membaca pacs.008.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/id/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</guid>
+      <pubDate>Thu, 11 Jun 2026 00:09:27 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
+      <category>lapisan orkestrasi pembayaran</category>
+      <category>FedNow vs RTP</category>
+      <category>FedNow vs ACH</category>
+      <category>penyelesaian stablecoin</category>
+      <category>penyelesaian atomik USDC</category>
+      <category>ISO 20022 pacs.008</category>
+      <category>account-to-account A2A</category>
+      <category>API Open Banking</category>
+      <category>likuiditas pra-pendanaan</category>
+      <category>jebakan likuiditas 24/7</category>
+      <category>bank multi-rel 2026</category>
+      <category>mesin perutean pembayaran</category>
+      <category>rekonsiliasi ERP</category>
+    </item>
+    <item>
+      <title>Infrastruktur Pembayaran Pasca-Kuantum: Mengapa Bank Mungkin Mengganti Alih-alih Menyesuaikan Rel Warisan</title>
+      <link>https://sebastienrousseau.com/id/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</link>
+      <description>Kriptografi pasca-kuantum memaksa pilihan biner pada rel pembayaran: sesuaikan RSA/ECC di dalam amplop SWIFT MT dan ISO 20022 yang tidak pernah diukur untuk ML-KEM dan ML-DSA, atau ganti dengan infrastruktur kripto-agil. Arsitek harus memutuskan sebelum HNDL menjadi kerugian operasional.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/id/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</guid>
+      <pubDate>Thu, 11 Jun 2026 00:09:27 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp" type="image/webp" length="0"/>
+      <category>kriptografi pasca-kuantum</category>
+      <category>pembayaran PQC</category>
+      <category>kripto-agilitas</category>
+      <category>kumpulkan sekarang dekripsi nanti</category>
+      <category>HNDL</category>
+      <category>standar pasca-kuantum NIST</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>FIPS 203</category>
+      <category>FIPS 204</category>
+      <category>migrasi rel pembayaran</category>
+      <category>ISO 20022 PQC</category>
+      <category>penggantian SWIFT MT</category>
+      <category>HSM</category>
+      <category>keruntuhan PKI</category>
+      <category>ketahanan operasional</category>
+      <category>Quantum Computing Cybersecurity Preparedness Act</category>
+    </item>
+    <item>
+      <title>Pasar Digital Grosir di Inggris: Gilts Tertokenisasi, Penyelesaian, dan Peran Champion Baru</title>
+      <link>https://sebastienrousseau.com/id/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</link>
+      <description>Peran Wholesale Digital Markets Champion Inggris menjadikan keuangan grosir tertokenisasi sebagai proyek daya saing nasional bagi City of London di 2026.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/id/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</guid>
+      <pubDate>Thu, 11 Jun 2026 00:09:27 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>pasar digital grosir Inggris 2026</category>
+      <category>Wholesale Digital Markets Champion</category>
+      <category>UK gilts</category>
+      <category>gilts tertokenisasi</category>
+      <category>penyelesaian DLT</category>
+      <category>BoE DSS</category>
+      <category>Project Guardian</category>
+      <category>SDX</category>
+      <category>Project Agorá</category>
+      <category>HM Treasury</category>
+      <category>Bank of England</category>
+      <category>City of London</category>
+    </item>
+    <item>
       <title>DORA, EU AI Act, dan Kedaulatan Data: Tumpukan Kepatuhan 2026 bagi Bank</title>
       <link>https://sebastienrousseau.com/id/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</link>
       <description>DORA, EU AI Act, GDPR, risiko konsentrasi cloud, dan kedaulatan data berkonvergensi menjadi satu tumpukan kepatuhan 2026 bagi bank — orkestrasi bukti tunggal.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/id/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/</guid>
-      <pubDate>Thu, 28 May 2026 23:46:22 +0000</pubDate>
+      <pubDate>Thu, 11 Jun 2026 00:09:27 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
       <category>DORA 2026</category>
@@ -46,13 +146,32 @@
       <category>risiko pihak ketiga</category>
     </item>
     <item>
+      <title>Aset Digital pada 2026: Transisi Infrastruktur yang Tak Bisa Ditunda Bank</title>
+      <link>https://sebastienrousseau.com/id/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</link>
+      <description>Aset digital bukan lagi taruhan inovasi. Ini adalah pertanyaan arsitektur penyelesaian, kustodi, dan neraca. Tugas strategis bank adalah desain infrastruktur di tengah ketidakpastian struktural.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/id/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</guid>
+      <pubDate>Thu, 11 Jun 2026 00:09:27 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/corporate-finance.webp" type="image/webp" length="0"/>
+      <category>aset digital 2026</category>
+      <category>aset dunia nyata tertokenisasi</category>
+      <category>stablecoin perbankan</category>
+      <category>simpanan tertokenisasi</category>
+      <category>kustodi aset digital</category>
+      <category>perbankan DLT</category>
+      <category>infrastruktur penyelesaian</category>
+      <category>mobilitas agunan</category>
+      <category>uang terprogram</category>
+      <category>strategi bank aset digital</category>
+    </item>
+    <item>
       <title>AI sebagai Sistem Operasi Pembayaran: Penipuan, Routing, Ketahanan, dan Kepatuhan pada 2026</title>
       <link>https://sebastienrousseau.com/id/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/</link>
       <description>AI menjadi sistem operasi pembayaran pada 2026, bergeser dari analitik ke pencegahan penipuan, perbaikan pembayaran, routing, prakiraan likuiditas, penyaringan kepatuhan, dan kontrol agentic commerce.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/id/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/</guid>
-      <pubDate>Thu, 28 May 2026 23:46:22 +0000</pubDate>
+      <pubDate>Thu, 11 Jun 2026 00:09:27 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <enclosure url="https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp" type="image/webp" length="0"/>
       <category>sistem operasi AI pembayaran 2026</category>
       <category>penipuan pembayaran</category>
       <category>routing pembayaran</category>
@@ -67,7 +186,7 @@
       <link>https://sebastienrousseau.com/id/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/</link>
       <description>Pembayaran agentik pada 2026 telah berpindah dari konsep ke transaksi langsung. Tantangan perbankan bukan lagi apakah AI agent dapat memulai pembayaran, melainkan bagaimana persetujuan, tanggung jawab, identitas, auditabilitas, kendali fraud, dan interoperabilitas protokol harus dirancang.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/id/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/</guid>
-      <pubDate>Thu, 28 May 2026 23:46:22 +0000</pubDate>
+      <pubDate>Thu, 11 Jun 2026 00:09:27 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/ai-robot.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
       <category>pembayaran agentik 2026</category>
@@ -88,6 +207,107 @@
       <category>kunci akses</category>
       <category>UX perbankan</category>
       <category>perdagangan AI</category>
+    </item>
+    <item>
+      <title>Indeks Pembayaran Grosir 2026: ISO 20022, Simpanan Tertokenisasi, Rel Real-Time, dan Setelmen Lintas Batas</title>
+      <link>https://sebastienrousseau.com/id/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</link>
+      <description>Indeks 2026 untuk kesiapan pembayaran grosir: kualitas data ISO 20022, simpanan tertokenisasi, rel real-time, setelmen lintas batas, dan efisiensi likuiditas.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/id/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</guid>
+      <pubDate>Sat, 06 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/miquel-parera-NsXLehhHx1Q.webp" type="image/webp" length="0"/>
+      <category>pembayaran grosir 2026</category>
+      <category>ISO 20022</category>
+      <category>simpanan tertokenisasi</category>
+      <category>Project Agora</category>
+      <category>pembayaran lintas batas</category>
+      <category>pembayaran real-time</category>
+      <category>data alamat terstruktur</category>
+      <category>kualitas data pembayaran</category>
+    </item>
+    <item>
+      <title>Indeks Cloud-Native Banking 2026: DORA, Rekayasa Platform, Sovereign Cloud, dan Ketahanan Operasional</title>
+      <link>https://sebastienrousseau.com/id/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/</link>
+      <description>Indeks cloud-native banking 2026 untuk mengukur kesiapan DORA, kematangan rekayasa platform, risiko konsentrasi cloud, bukti exit, dan ketahanan operasional.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/id/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/</guid>
+      <pubDate>Fri, 05 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/quang-nguyen-vinh-2649403.webp&w=1600&format=webp&q=85" type="image/webp" length="0"/>
+      <category>cloud native banking 2026</category>
+      <category>bank DORA</category>
+      <category>risiko konsentrasi cloud</category>
+      <category>rekayasa platform bank</category>
+      <category>risiko pihak ketiga TIK</category>
+      <category>strategi exit cloud</category>
+      <category>sovereign cloud</category>
+    </item>
+    <item>
+      <title>Indeks Perbankan Aman-Kuantum 2026: PQC, QKD, Crypto-Agility, dan Risiko Harvest-Now-Decrypt-Later</title>
+      <link>https://sebastienrousseau.com/id/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/</link>
+      <description>Indeks perbankan untuk kesiapan aman-kuantum 2026: standar pasca-kuantum NIST, inventaris kriptografi, crypto-agility, QKD, dan eksposur data berumur panjang.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/id/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/</guid>
+      <pubDate>Thu, 04 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>perbankan aman kuantum 2026</category>
+      <category>kriptografi pasca-kuantum bank</category>
+      <category>NIST FIPS 203</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>SLH-DSA</category>
+      <category>crypto-agility</category>
+      <category>QKD perbankan</category>
+    </item>
+    <item>
+      <title>Indeks AI Agentik untuk Bank di 2026: Mengukur Otonomi, Tata Kelola, Auditabilitas, dan Dampak Bisnis</title>
+      <link>https://sebastienrousseau.com/id/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/</link>
+      <description>Kerangka kerja berformat indeks untuk mengukur kesiapan AI agentik di bank, mencakup otonomi, tata kelola, auditabilitas, keandalan, kontrol, dan nilai bisnis.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/id/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/</guid>
+      <pubDate>Wed, 03 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>AI agentik perbankan 2026</category>
+      <category>agen AI bank</category>
+      <category>tata kelola AI jasa keuangan</category>
+      <category>alur kerja perbankan otonom</category>
+      <category>manajemen risiko model</category>
+      <category>auditabilitas AI</category>
+    </item>
+    <item>
+      <title>Banking Infrastructure Index 2026: Mengukur Kesiapan Agentic AI, Keamanan Kuantum, Ketahanan Cloud Native, dan Pembayaran Grosir</title>
+      <link>https://sebastienrousseau.com/id/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/</link>
+      <description>Banking infrastructure index 2026 bergaya Stanford AI Index: mengukur kesiapan bank pada agentic AI, kuantum, ketahanan cloud-native, dan pembayaran grosir.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/id/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/</guid>
+      <pubDate>Tue, 02 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/miguel-sousa-ejIF-pJhYkM.webp" type="image/webp" length="0"/>
+      <category>banking infrastructure index 2026</category>
+      <category>agentic AI perbankan</category>
+      <category>perbankan quantum safe</category>
+      <category>perbankan cloud native</category>
+      <category>pembayaran grosir</category>
+      <category>ISO 20022</category>
+      <category>DORA</category>
+      <category>Project Agora</category>
+      <category>deposito tertokenisasi</category>
+    </item>
+    <item>
+      <title>ISO 20022 Pasca-Migrasi: Mengubah Data Pembayaran Menjadi Produk Bank 2026</title>
+      <link>https://sebastienrousseau.com/id/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</link>
+      <description>ISO 20022 pasca-migrasi adalah peluang produk data. Alamat terstruktur, kode tujuan, detail faktur, dan pesan investigasi menjadi produk rekonsiliasi, penipuan, likuiditas, kepatuhan, dan analitik bank.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/id/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</guid>
+      <pubDate>Fri, 29 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/humphrey-muleba-1660004.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>ISO 20022 2026</category>
+      <category>alamat terstruktur</category>
+      <category>CBPR+</category>
+      <category>produk data pembayaran</category>
+      <category>kode tujuan pembayaran</category>
+      <category>treasury korporat</category>
+      <category>rekonsiliasi</category>
+      <category>penyaringan sanksi</category>
+      <category>deteksi penipuan</category>
     </item>
     <item>
       <title>Magnifica Humanitas: Pembacaan Industri AI atas Ensiklik Kepausan Pertama tentang AI</title>
@@ -253,7 +473,7 @@
       <guid isPermaLink="true">https://sebastienrousseau.com/id/2026-05-19-global-wholesale-payments-economics-2026/</guid>
       <pubDate>Tue, 19 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/meiying-ng-OrwkD-iWgqg.webp" type="image/webp" length="0"/>
+      <enclosure url="https://cloudcdn.pro/stocks/images/miguel-sousa-ejIF-pJhYkM.webp" type="image/webp" length="0"/>
       <category>pembayaran wholesale 2026</category>
       <category>ekonomi pembayaran global</category>
       <category>ISO 20022</category>

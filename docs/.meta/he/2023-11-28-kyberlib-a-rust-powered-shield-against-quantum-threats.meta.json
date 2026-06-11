@@ -1,11 +1,14 @@
 {
-  "description": "تطبيق تشفيري متين وآمن كمياً لخوارزمية CRYSTALS-Kyber، لحماية بياناتكم من التهديدات الكمية وهجمات تحليل الشفرات.",
-  "language": "he-IL",
-  "subtitle": "KyberLib، تطبيق Rust متين لـ CRYSTALS-Kyber للعصر الكمي.",
-  "banner_alt": "تعزيز الاتصالات الآمنة في العصر الكمي مع KyberLib",
-  "date": "Nov 28, 2023",
   "banner": "https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg",
-  "locale": "he_IL",
+  "word_count": 756,
+  "subtitle": "KyberLib، تطبيق Rust متين لـ CRYSTALS-Kyber للعصر الكمي.",
+  "title": "KyberLib: CRYSTALS-Kyber بلغة Rust لما بعد الكم",
   "keywords": "KyberLib، Rust CRYSTALS-Kyber، التشفير ما بعد الكمي، التشفير القائم على الشبكيات، تبادل المفاتيح المقاوم للكم، NIST FIPS 203، Sebastien Rousseau، KEM، مصادقة المدفوعات، مكتبة PQC",
-  "title": "KyberLib: CRYSTALS-Kyber بلغة Rust لما بعد الكم"
+  "description": "تطبيق تشفيري متين وآمن كمياً لخوارزمية CRYSTALS-Kyber، لحماية بياناتكم من التهديدات الكمية وهجمات تحليل الشفرات.",
+  "reading_time": 3,
+  "locale": "he_IL",
+  "language": "he-IL",
+  "banner_alt": "تعزيز الاتصالات الآمنة في العصر الكمي مع KyberLib",
+  "tags": "KyberLib, Rust, CRYSTALS-Kyber, קריפטוגרפיה פוסט-קוונטית, lattice-based cryptography, key encapsulation mechanism, NIST, libsignal, cryptography, ISO 20022, מחשוב קוונטי, AI",
+  "date": "Nov 28, 2023"
 }

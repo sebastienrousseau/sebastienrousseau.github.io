@@ -1,11 +1,13 @@
 {
-  "banner_alt": "Stand von KI und Quantencomputern im Banking: ein Rückblick auf 2023",
-  "description": "Erkundung der Technologielandschaft 2023: KI und Quantencomputing revolutionieren das Banking, Aufstieg von Open-Source-Modellen, sich weiterentwickelnde Regulierungen und Governance.",
-  "date": "Dec 18, 2023",
+  "keywords": "KI im Banking, Quantencomputing, Finanztechnologie, Open-Source-KI, Risikomanagement, Quantensicherheit, KI-Regulierung, KI-Ethik, KI-Governance, Banking-Innovation",
   "banner": "https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp",
-  "locale": "de_DE",
   "subtitle": "Die Zukunft des Bankings gestalten: KI, Quantencomputing, Open-Source-Modelle und regulatorische Landschaft",
   "language": "de",
+  "banner_alt": "Stand von KI und Quantencomputern im Banking: ein Rückblick auf 2023",
+  "reading_time": 10,
+  "word_count": 2001,
   "title": "Stand von KI und Quantencomputern im Banking: ein Rückblick auf 2023",
-  "keywords": "KI im Banking, Quantencomputing, Finanztechnologie, Open-Source-KI, Risikomanagement, Quantensicherheit, KI-Regulierung, KI-Ethik, KI-Governance, Banking-Innovation"
+  "locale": "de_DE",
+  "date": "Dec 18, 2023",
+  "description": "Erkundung der Technologielandschaft 2023: KI und Quantencomputing revolutionieren das Banking, Aufstieg von Open-Source-Modellen, sich weiterentwickelnde Regulierungen und Governance."
 }

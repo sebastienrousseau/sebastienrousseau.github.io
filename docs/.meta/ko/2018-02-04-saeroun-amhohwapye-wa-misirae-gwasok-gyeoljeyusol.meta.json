@@ -1,12 +1,14 @@
 {
-  "language": "ko-KR",
-  "keywords": "암호자산, 결제, 실시간 결제, 토큰, ICO, 블록체인, 핀테크, 국경 간 송금",
   "last_reviewed": "2026-05-16",
-  "banner_alt": "도시 가로등의 네온",
-  "description": "새로운 암호자산 프로젝트와, 그것이 보다 빠른 결제 솔루션을 어떻게 가능하게 하는지에 관하여.",
+  "word_count": 295,
   "banner": "https://cloudcdn.pro/stocks/images/clay-banks-l9tsdhTDecg-unsplash.webp",
-  "locale": "ko_KR",
-  "subtitle": "암호자산에서 실세계의 결제 인프라로",
+  "language": "ko-KR",
+  "reading_time": 1,
+  "title": "새로운 암호자산을 공개하며 미래의 보다 빠른 결제 솔루션을 제공한다",
+  "keywords": "암호자산, 결제, 실시간 결제, 토큰, ICO, 블록체인, 핀테크, 국경 간 송금",
+  "description": "새로운 암호자산 프로젝트와, 그것이 보다 빠른 결제 솔루션을 어떻게 가능하게 하는지에 관하여.",
   "date": "February 4, 2018",
-  "title": "새로운 암호자산을 공개하며 미래의 보다 빠른 결제 솔루션을 제공한다"
+  "subtitle": "암호자산에서 실세계의 결제 인프라로",
+  "banner_alt": "도시 가로등의 네온",
+  "locale": "ko_KR"
 }

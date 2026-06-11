@@ -1,5 +1,6 @@
 ---
 title: "Advancing AI with Multimodal LLMs: Insights from MM1"
+tags: "Multimodal, LLM, AI, MM1, Pre-training, Image Recognition, NLP, Future, Learning, Research, ISO 20022, ìsirò ìpamọ́ lẹ́yìn quantum, quantum computing"
 subtitle: "Ṣíṣàfihàn Ọjọ́-iwájú AI: Bí Ìwádìí MM1 ti Apple Ṣe Ń Yí Ìkẹ́kọ̀ọ́ Ọ̀pọ̀-Ọ̀nà Padà"
 description: "Ṣawari iwe MM1 ti Apple lori Awọn Awoṣe Ede Nla Multimodal (MLLMs). Kọ ẹkọ nipa eto wọn, awọn ilana ikẹkọ iṣaaju, ati agbara AI."
 date: "Mar 17, 2024"
@@ -121,4 +122,3 @@ To learn more about the groundbreaking MM1 study and explore the fascinating wor
 
 [divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Divider"
 [architecture]: https://cloudcdn.pro/stocks/diagrams/mm1_model_architecture.svg "MM1 Model Architecture"
-

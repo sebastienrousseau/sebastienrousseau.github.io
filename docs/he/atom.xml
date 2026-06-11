@@ -4,14 +4,122 @@
   <link href="https://sebastienrousseau.com/he/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/he/"/>
   <id>https://sebastienrousseau.com/he/</id>
-  <updated>2026-05-28T23:46:22+00:00</updated>
+  <updated>2026-06-11T00:09:27+00:00</updated>
   <entry>
     <title>CloudCDN: תכנית אב של קוד פתוח לקצה ילידי-AI ב-2026</title>
     <link href="https://sebastienrousseau.com/he/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/"/>
     <id>https://sebastienrousseau.com/he/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/</id>
-    <updated>2026-05-28T23:46:22+00:00</updated>
-    <published>2026-05-28T23:46:22+00:00</published>
+    <updated>2026-06-11T00:09:27+00:00</updated>
+    <published>2026-06-11T00:09:27+00:00</published>
     <summary>CloudCDN היא תכנית אב של קוד פתוח, ילידת-AI, לרשת CDN בקצה — תשתית בבקרת MCP, הגבלת קצב ב-Durable Objects, כתובות URL חתומות, נגישות ויכולת ביקורת.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>מדד החוסן הבנקאי 2026: AI, ענן, קוונטים, תשלומים וסיכון ריכוז צד שלישי</title>
+    <link href="https://sebastienrousseau.com/he/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/"/>
+    <id>https://sebastienrousseau.com/he/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/</id>
+    <updated>2026-06-11T00:09:27+00:00</updated>
+    <published>2026-06-11T00:09:27+00:00</published>
+    <summary>מדד חוסן בנקאי 2026 המשלב סיכון AI, ריכוז ענן, אבטחה עמידה לקוונטים, המשכיות תשלומים ותלות צדדים שלישיים קריטיים — מדידה משולבת לדירקטוריון ולרגולטור.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>מדד האוצר האוטונומי 2026: אוצר סוכני, נזילות ניתנת לתכנות ופיקדונות מתוקנים</title>
+    <link href="https://sebastienrousseau.com/he/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/"/>
+    <id>https://sebastienrousseau.com/he/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/</id>
+    <updated>2026-06-11T00:09:27+00:00</updated>
+    <published>2026-06-11T00:09:27+00:00</published>
+    <summary>מדד מוכנות 2026 לאוצר אוטונומי — תהליכי אוצר סוכניים, נזילות ניתנת לתכנות, פיקדונות מתוקנים, תשלומים בזמן אמת ושליטת מזומן אוטומטית כמרקם תפעולי אחד.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>הבנק הרב-ערוצי ב-2026: כרטיסים, A2A, מטבעות יציבים, RTP, FedNow ו-Open Banking באסטרטגיה אחת</title>
+    <link href="https://sebastienrousseau.com/he/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/"/>
+    <id>https://sebastienrousseau.com/he/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</id>
+    <updated>2026-06-11T00:09:27+00:00</updated>
+    <published>2026-06-11T00:09:27+00:00</published>
+    <summary>FedNow דורש נזילות ממומנת מראש 24/7. ACH זול אך T+1. USDC נסלק אטומית אך מצריך תשתית ארנקים. הבנק הרב-ערוצי של 2026 מנתב כל תשלום לפי עלות, סופיות ועלות נזילות — באמצעות מנוע אורקסטרציה הקורא ISO 20022 pacs.008 ומחליט.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>תשתית תשלומים פוסט-קוונטית: מדוע בנקים יחליפו ולא יתאימו ערוצים מורשתיים</title>
+    <link href="https://sebastienrousseau.com/he/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/"/>
+    <id>https://sebastienrousseau.com/he/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</id>
+    <updated>2026-06-11T00:09:27+00:00</updated>
+    <published>2026-06-11T00:09:27+00:00</published>
+    <summary>קריפטוגרפיה פוסט-קוונטית כופה החלטה בינארית על ערוצי תשלומים: התאמת RSA/ECC בתוך מעטפות SWIFT MT ו-ISO 20022 שמעולם לא נמדדו ל-ML-KEM ו-ML-DSA, או החלפה בתשתית גמישה קריפטוגרפית. ארכיטקטים חייבים להחליט לפני ש-HNDL הופך להפסד תפעולי.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>נכסים דיגיטליים 2026: מעבר תשתית שהבנקים לא יכולים לדחות</title>
+    <link href="https://sebastienrousseau.com/he/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/"/>
+    <id>https://sebastienrousseau.com/he/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</id>
+    <updated>2026-06-11T00:09:27+00:00</updated>
+    <published>2026-06-11T00:09:27+00:00</published>
+    <summary>נכסים דיגיטליים אינם עוד הימור על חדשנות. הם שאלת ארכיטקטורה של סליקה, משמורת ומאזן. המשימה האסטרטגית של הבנקים היא תכנון תשתית באי-ודאות מבנית.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>מדד תשלומי הסיטונאות ב-2026: ISO 20022, פיקדונות מתואדים, מסילות בזמן-אמת וסליקה חוצת גבולות</title>
+    <link href="https://sebastienrousseau.com/he/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/"/>
+    <id>https://sebastienrousseau.com/he/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</id>
+    <updated>2026-06-06T06:06:06+00:00</updated>
+    <published>2026-06-06T06:06:06+00:00</published>
+    <summary>מדד 2026 לכשירות תשלומי סיטונאות: איכות נתוני ISO 20022, פיקדונות מתואדים, מסילות בזמן-אמת, סליקה חוצת גבולות ויעילות נזילות בבנקאות.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>מדד הבנקאות ענן-נייטיב ב-2026: DORA, הנדסת פלטפורמה, ענן ריבוני וחוסן תפעולי</title>
+    <link href="https://sebastienrousseau.com/he/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/"/>
+    <id>https://sebastienrousseau.com/he/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/</id>
+    <updated>2026-06-05T06:06:06+00:00</updated>
+    <published>2026-06-05T06:06:06+00:00</published>
+    <summary>מדד בנקאות ענן-נייטיב לשנת 2026 למדידת היערכות DORA, בשלות הנדסת פלטפורמה, סיכון ריכוז ענן, ראיות יציאה וחוסן תפעולי במוסדות פיננסיים.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>מדד הבנקאות הקוונטית-בטוחה ב-2026: קריפטוגרפיה פוסט-קוונטית, QKD, גמישות קריפטוגרפית וסיכון Harvest-Now-Decrypt-Later</title>
+    <link href="https://sebastienrousseau.com/he/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/"/>
+    <id>https://sebastienrousseau.com/he/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/</id>
+    <updated>2026-06-04T06:06:06+00:00</updated>
+    <published>2026-06-04T06:06:06+00:00</published>
+    <summary>מדד בנקאי למוכנות קוונטית-בטוחה ב-2026: תקני NIST פוסט-קוונטיים, מצאי קריפטוגרפי, גמישות קריפטוגרפית, QKD וחשיפת נתונים ארוכי-חיים.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>מדד סוכני AI לבנקים ב-2026: מדידת אוטונומיה, ממשל, יכולת ביקורת והשפעה עסקית</title>
+    <link href="https://sebastienrousseau.com/he/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/"/>
+    <id>https://sebastienrousseau.com/he/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/</id>
+    <updated>2026-06-03T06:06:06+00:00</updated>
+    <published>2026-06-03T06:06:06+00:00</published>
+    <summary>מסגרת בסגנון מדד למדידת בשלות סוכני AI אוטונומיים בבנקים, המכסה אוטונומיה, ממשל, יכולת ביקורת, אמינות, בקרות וערך עסקי.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>מדד תשתיות הבנקאות 2026: מדידת מוכנות לבינה אוטונומית, אבטחה קוונטית, חוסן ענן ותשלומים סיטונאיים</title>
+    <link href="https://sebastienrousseau.com/he/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/"/>
+    <id>https://sebastienrousseau.com/he/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/</id>
+    <updated>2026-06-02T06:06:06+00:00</updated>
+    <published>2026-06-02T06:06:06+00:00</published>
+    <summary>מדד תשתיות בנקאות 2026 בהשראת Stanford AI Index: מדידת מוכנות בבינה אוטונומית, אבטחה עמידת קוונטים, חוסן ענן-מקורי ותשלומים סיטונאיים גלובליים.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>שווקים דיגיטליים סיטונאיים בבריטניה: גילט מתורמזים, סליקה ותפקיד האלוף החדש</title>
+    <link href="https://sebastienrousseau.com/he/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/"/>
+    <id>https://sebastienrousseau.com/he/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</id>
+    <updated>2026-05-30T06:06:06+00:00</updated>
+    <published>2026-05-30T06:06:06+00:00</published>
+    <summary>תפקיד אלוף השווקים הדיגיטליים הסיטונאיים בבריטניה הופך מימון סיטונאי מתורמז לפרויקט תחרותיות לאומי המאחד גילט, סליקה וזירות DLT.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>ISO 20022 לאחר ההגירה: הפיכת נתוני תשלום למוצרי בנקאות ב-2026</title>
+    <link href="https://sebastienrousseau.com/he/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/"/>
+    <id>https://sebastienrousseau.com/he/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</id>
+    <updated>2026-05-29T06:06:06+00:00</updated>
+    <published>2026-05-29T06:06:06+00:00</published>
+    <summary>ISO 20022 לאחר ההגירה הוא הזדמנות מוצר נתונים: כתובות מובנות, קודי מטרה, פרטי חשבונית, הודעות חקירה ואירועי סטטוס הופכים למוצרי התאמה, הונאה, נזידוש, ציות ואנליטיקה לבנקים.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>

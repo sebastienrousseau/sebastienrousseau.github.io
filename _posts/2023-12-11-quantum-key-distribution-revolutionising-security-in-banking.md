@@ -40,7 +40,7 @@ revisit-after: "7 days"
 robots: "index, follow"
 short_name: "sebastienrousseau"
 subtitle: "Quantum Key Distribution (QKD) for financial-grade security in banking."
-tags: "quantum, key, distribution, cryptography, security, finance, banking, digital, innovation, blockchain, quantum computing, hsbc, trading, data, protection, future"
+tags: "quantum, key, distribution, cryptography, cybersecurity, finance, banking, digital, innovation, blockchain, quantum computing, hsbc, trading, data, protection, future, ISO 20022, DORA, post-quantum cryptography, AI"
 theme-color: "0, 67, 165"
 title: "Quantum Key Distribution Revolutionising Security in Banking"
 url: "https://sebastienrousseau.com/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html"
@@ -187,7 +187,7 @@ By embracing QKD, HSBC has set a new benchmark in financial cybersecurity, pavin
 
 <!-- enrich-start -->
 <aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
-<p class="post-reviewed">Last reviewed <time datetime="2026-05-29">2026-05-29</time>.</p>
+<p class="post-reviewed">Last reviewed <time datetime="2026-06-10">2026-06-10</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Related reading</h2>
 <div class="related-grid">

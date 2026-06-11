@@ -1,5 +1,6 @@
 ---
 title: "State of AI and Quantum Computing in Banking: A 2023 Review"
+tags: "AI in banking, quantum computing, open-source LLMs, AI regulation, mulkin AI, post-quantum cryptography, risk management, 2023 review, ƙirƙira banki, ayyukan kudi, ISO 20022, AI, open source"
 subtitle: "Tsara Makomar Banki: AI, Quantum Computing, Samfuran Open Source, da Yanayin Tsarin Mulki"
 description: "Binciken Fasahar Teknoloji na 2023: AI da Quantum Computing suna juya Banki, Haɓakar Samfuran Open-Source, da Dokokin Tsarin Mulki"
 date: "Dec 18, 2023"
@@ -196,4 +197,3 @@ Thank you again for your time and I look forward to hearing from you!
 [28]: https://cloudcdn.pro/stocks/images/ryoji-iwata-a-qsFZimp1M.webp "AI Regulations"
 
 [divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Divider"
-

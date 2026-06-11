@@ -39,8 +39,8 @@ referrer: "no-referrer"
 revisit-after: "7 days"
 robots: "index, follow"
 short_name: "sebastienrousseau"
-subtitle: "An early-2018 experiment in Ethereum ERC-223 smart contracts and programmable payment tokens."
-tags: "EXTC, ERC-223, Ethereum, smart contracts, cryptocurrency, blockchain payments, faster payments, decentralised finance, payment token, cross-border payments"
+subtitle: "A new cryptocurrency and faster-payments solution for the next-generation of finance."
+tags: "EXTC, ERC-223, Ethereum, smart contracts, cryptocurrency, blockchain, faster payments, decentralised finance, payment token, cross-border payments, ISO 20022, post-quantum cryptography, AI, tokenised deposits, stablecoins"
 theme-color: "0, 67, 165"
 title: "Unveiling a new Cryptocurrency and Faster Payment Solution"
 url: "https://sebastienrousseau.com/2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution/index.html"
@@ -112,7 +112,7 @@ last_reviewed: "2026-05-11"
   <li><strong>The EXTC Token Design.</strong> The Express Transaction Credits token was designed around five core attributes:.</li>
   <li><strong>Payment Primitives the Platform Targeted.</strong> EXTC’s architecture was designed to replace four specific payment workflows that legacy systems handled inefficiently:.</li>
 </ul>
-<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2018-02-15-the-making-of-the-express-transaction-credits-platform/index.html">The making of the Express Transaction Credits Platform</a>, <a href="https://sebastienrousseau.com/2018-01-09-understanding-the-technology-behind-blockchain/index.html">Understanding the Technology behind Blockchain</a>, <a href="https://sebastienrousseau.com/2026-05-19-global-wholesale-payments-economics-2026">Global Wholesale Payments in 2026: ISO 20022, RTGS Renewal, and the Economics of Interoperability</a>.</p>
+<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2018-02-15-the-making-of-the-express-transaction-credits-platform/index.html">The making of the Express Transaction Credits Platform</a>, <a href="https://sebastienrousseau.com/2018-01-09-understanding-the-technology-behind-blockchain/index.html">Understanding the Technology behind Blockchain</a>, <a href="https://sebastienrousseau.com/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf">Stablecoin Yield by Another Name: BlackRock's BRSRV and BSTBL Filings Decoded</a>.</p>
 </aside>
 <!-- lead-end -->
 
@@ -211,13 +211,13 @@ The settlement model is similar — tokens representing monetary claims, transfe
 
 <!-- enrich-start -->
 <aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
-<p class="post-reviewed">Last reviewed <time datetime="2026-05-29">2026-05-29</time>.</p>
+<p class="post-reviewed">Last reviewed <time datetime="2026-06-10">2026-06-10</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Related reading</h2>
 <div class="related-grid">
 <article class="related-card"><a href="https://sebastienrousseau.com/2018-02-15-the-making-of-the-express-transaction-credits-platform/index.html" class="related-media" aria-label="The making of the Express Transaction Credits Platform" tabindex="-1"><img alt="Giant white pillars" src="https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2018-02-15-the-making-of-the-express-transaction-credits-platform/index.html">The making of the Express Transaction Credits Platform</a></h3><p><time datetime="2018-02-15">2018-02-15</time></p></footer></article>
 <article class="related-card"><a href="https://sebastienrousseau.com/2018-01-09-understanding-the-technology-behind-blockchain/index.html" class="related-media" aria-label="Understanding the Technology behind Blockchain" tabindex="-1"><img alt="Abstract digital ledger blocks connected by light trails on dark background" src="https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2018-01-09-understanding-the-technology-behind-blockchain/index.html">Understanding the Technology behind Blockchain</a></h3><p><time datetime="2018-01-09">2018-01-09</time></p></footer></article>
-<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-19-global-wholesale-payments-economics-2026" class="related-media" aria-label="Global Wholesale Payments in 2026: ISO 20022, RTGS Renewal, and the Economics of Interoperability" tabindex="-1"><img alt="Global wholesale payments architecture map for 2026 showing ISO 20022, RTGS renewal, cross-border corridors, liquidity windows, and DLT settlement pilots" src="https://cloudcdn.pro/stocks/images/meiying-ng-OrwkD-iWgqg.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-19-global-wholesale-payments-economics-2026">Global Wholesale Payments in 2026: ISO 20022, RTGS Renewal, and the Economics of Interoperability</a></h3><p><time datetime="2026-05-19">2026-05-19</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf" class="related-media" aria-label="Stablecoin Yield by Another Name: BlackRock's BRSRV and BSTBL Filings Decoded" tabindex="-1"><img alt="BlackRock tokenised money market fund architecture diagram — BRSRV OnChain Shares and BSTBL ERC-20 share class with GENIUS Act reserve flows" src="https://cloudcdn.pro/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf">Stablecoin Yield by Another Name: BlackRock's BRSRV and BSTBL Filings Decoded</a></h3><p><time datetime="2026-05-15">2026-05-15</time></p></footer></article>
 </div>
 </aside>
 <!-- enrich-end -->

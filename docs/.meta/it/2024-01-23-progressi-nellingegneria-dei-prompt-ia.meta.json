@@ -1,11 +1,13 @@
 {
-  "description": "Una rassegna delle tecniche di ingegneria dei prompt: chain-of-thought, few-shot, RAG, agenti, function calling — e il loro impatto sui deployment produttivi.",
-  "keywords": "prompt engineering, LLM, chain-of-thought, RAG, agenti, function calling, IA applicata",
   "title": "Progressi nell'ingegneria dei prompt IA",
-  "language": "it-IT",
-  "date": "January 23, 2024",
-  "banner": "https://cloudcdn.pro/stocks/images/ai-prompt-engineering-modern-office.webp",
+  "keywords": "prompt engineering, LLM, chain-of-thought, RAG, agenti, function calling, IA applicata",
   "subtitle": "Tecniche, pattern e best practice per portare gli LLM in produzione",
+  "word_count": 2604,
+  "locale": "it_IT",
   "banner_alt": "Un uomo che analizza dati su schermi",
-  "locale": "it_IT"
+  "date": "January 23, 2024",
+  "language": "it-IT",
+  "description": "Una rassegna delle tecniche di ingegneria dei prompt: chain-of-thought, few-shot, RAG, agenti, function calling — e il loro impatto sui deployment produttivi.",
+  "reading_time": 13,
+  "banner": "https://cloudcdn.pro/stocks/images/ai-prompt-engineering-modern-office.webp"
 }

@@ -8,9 +8,69 @@
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>ar-SA</news:language>
     </news:publication>
-    <news:publication_date>2026-05-28T23:46:21+00:00</news:publication_date>
+    <news:publication_date>2026-06-11T00:09:27+00:00</news:publication_date>
     <news:title>CloudCDN: مخطط مفتوح المصدر للحافة الأصلية للذكاء الاصطناعي في 2026</news:title>
     <news:keywords>CloudCDN, الحافة الأصلية للذكاء الاصطناعي, CDN مفتوح المصدر, خادم MCP, Cloudflare Workers, Durable Objects, عناوين URL الموقّعة, passkeys, SLSA, البنية التحتية للحافة</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ar/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ar-SA</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-11T00:09:27+00:00</news:publication_date>
+    <news:title>مؤشر مرونة المصارف في 2026: الذكاء الاصطناعي والسحابة والكم والمدفوعات ومخاطر التركز</news:title>
+    <news:keywords>مؤشر مرونة المصارف 2026، مرونة DORA، المخاطر التشغيلية للذكاء الاصطناعي، مخاطر التركز السحابي، المخاطر الكمومية للمصارف، مرونة المدفوعات، مخاطر الأطراف الثالثة</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ar/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ar-SA</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-11T00:09:27+00:00</news:publication_date>
+    <news:title>مؤشر الخزانة المستقلة 2026: الخزانة العميلة والسيولة القابلة للبرمجة والودائع المرمَّزة</news:title>
+    <news:keywords>الخزانة المستقلة 2026، الخزانة العميلة، السيولة القابلة للبرمجة، الودائع المرمَّزة للخزانة، الخزانة الفورية، إدارة النقد بالذكاء الاصطناعي</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ar/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ar-SA</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-11T00:09:27+00:00</news:publication_date>
+    <news:title>المصرف متعدد القنوات في 2026: البطاقات وA2A والعملات المستقرة وRTP وFedNow وOpen Banking في استراتيجية واحدة</news:title>
+    <news:keywords>طبقة تنسيق المدفوعات، FedNow مقابل RTP، FedNow مقابل ACH، تسوية العملات المستقرة، التسوية الذرية لـUSDC، ISO 20022 pacs.008، حساب إلى حساب A2A، واجهات Open Banking، السيولة المموَّلة مسبقًا، فخ السيولة 24/7، المصرف متعدد القنوات 2026، محرك توجيه المدفوعات، مطابقة ERP</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ar/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ar-SA</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-11T00:09:27+00:00</news:publication_date>
+    <news:title>بنية المدفوعات ما بعد الكمية: لماذا قد تستبدل المصارف قنواتها القديمة بدل تحديثها</news:title>
+    <news:keywords>التشفير ما بعد الكمي, مدفوعات PQC, المرونة التشفيرية, الجمع الآن وفك التشفير لاحقًا, HNDL, معايير NIST ما بعد الكمية, ML-KEM, ML-DSA, FIPS 203, FIPS 204, ترحيل قنوات المدفوعات, ISO 20022 PQC, استبدال SWIFT MT, HSM, انهيار PKI, الصمود التشغيلي, قانون التأهب للأمن السيبراني للحوسبة الكمية</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ar/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ar-SA</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-11T00:09:27+00:00</news:publication_date>
+    <news:title>الأصول الرقمية في 2026: تحوّل البنية التحتية الذي لا يمكن للمصارف تأجيله</news:title>
+    <news:keywords>الأصول الرقمية 2026، الأصول الحقيقية المرمَّزة، العملات المستقرة في المصارف، الودائع المرمَّزة، حفظ الأصول الرقمية، DLT في المصارف، البنية التحتية للتسوية، قابلية تحرّك الضمانات، النقود القابلة للبرمجة، استراتيجية المصارف للأصول الرقمية</news:keywords>
   </news:news>
 </url>
 <url>
@@ -20,9 +80,93 @@
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>ar-SA</news:language>
     </news:publication>
-    <news:publication_date>2026-05-28T23:46:21+00:00</news:publication_date>
+    <news:publication_date>2026-06-11T00:09:27+00:00</news:publication_date>
     <news:title>Magnifica Humanitas: قراءة هندسية لأول رسالة بابوية عن الذكاء الاصطناعي</news:title>
     <news:keywords>Magnifica Humanitas, البابا ليو الرابع عشر, رسالة بابوية حول الذكاء الاصطناعي, أخلاقيات الذكاء الاصطناعي, أخلاقيات الحوسبة الكمومية, Rerum Novarum, برج بابل, التكنولوجيا ليست محايدة, ما بعد الإنسانية, التحول الإنساني, الكرامة الإنسانية, النموذج التكنولوجي, القطار السيارة النووي الإنترنت, تاريخ الذعر الأخلاقي من التكنولوجيا, نقل المعرفة Lucy, أمل الذكاء الاصطناعي, EU AI Act, DORA, Anthropic, Sebastien Rousseau</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ar/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ar-SA</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-06T06:06:06+00:00</news:publication_date>
+    <news:title>مؤشر المدفوعات بالجملة في 2026: ISO 20022، والودائع المرمَّزة، والمسارات الفورية، والتسوية عبر الحدود</news:title>
+    <news:keywords>المدفوعات بالجملة 2026, ISO 20022, الودائع المرمَّزة, Project Agorá, المدفوعات عبر الحدود, المدفوعات الفورية, بيانات العناوين المُهيكَلة, جودة بيانات المدفوعات</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ar/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ar-SA</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-05T06:06:06+00:00</news:publication_date>
+    <news:title>مؤشر الخدمات المصرفية السحابية الأصل في 2026: DORA، وهندسة المنصة، والسحابة السيادية، والمرونة التشغيلية</news:title>
+    <news:keywords>الخدمات المصرفية السحابية الأصل 2026, DORA, البنوك, تركّز المخاطر السحابية, هندسة المنصة في البنوك, مخاطر الأطراف الثالثة لتقنية المعلومات, استراتيجية الخروج السحابي, السحابة السيادية, ISO 20022, Kubernetes</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ar/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ar-SA</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-04T06:06:06+00:00</news:publication_date>
+    <news:title>مؤشر المصرفية الآمنة كموميًا في 2026: تشفير ما بعد الكم، QKD، المرونة التشفيرية، ومخاطر اجمع-الآن-فُكَّ-لاحقًا</news:title>
+    <news:keywords>المصرفية الآمنة كموميًا 2026, تشفير ما بعد الكم في البنوك, FIPS 203, ML-KEM, ML-DSA, SLH-DSA, المرونة التشفيرية, QKD مصرفي</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ar/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ar-SA</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-03T06:06:06+00:00</news:publication_date>
+    <news:title>مؤشر الذكاء الاصطناعي الوكيل للبنوك في عام 2026: قياس الاستقلالية والحوكمة وقابلية التدقيق والأثر التجاري</news:title>
+    <news:keywords>الذكاء الاصطناعي الوكيل في البنوك 2026، وكلاء الذكاء الاصطناعي في البنوك، حوكمة الذكاء الاصطناعي في الخدمات المالية، سير العمل المصرفي المستقل، إدارة مخاطر النماذج، قابلية تدقيق الذكاء الاصطناعي، SR 11-7، ISO 20022</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ar/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ar-SA</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-02T06:06:06+00:00</news:publication_date>
+    <news:title>مؤشر البنية التحتية المصرفية 2026: قياس الجاهزية للذكاء الاصطناعي الوكيلي والأمن الكمومي والمرونة السحابية الأصلية ومدفوعات الجملة</news:title>
+    <news:keywords>مؤشر البنية التحتية المصرفية 2026, الذكاء الاصطناعي الوكيلي للمصارف, الأمن المصرفي الكمومي, المصارف السحابية الأصلية, مدفوعات الجملة, ISO 20022, DORA, مشروع Agora, الودائع المُرمَّزة</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ar/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ar-SA</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-30T06:06:06+00:00</news:publication_date>
+    <news:title>الأسواق الرقمية للجملة في المملكة المتحدة: سندات gilt المرمَّزة، التسوية، ودور المنسق الجديد</news:title>
+    <news:keywords>الأسواق الرقمية للجملة 2026، سندات gilt المرمَّزة، تسوية DLT، منسق الأسواق الرقمية، Wholesale Digital Markets Champion، BoE DSS، FCA، RTGS، إعادة الشراء خلال اليوم، HQLA، DvP الذري، Canton، RLN، سيتي لندن</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ar/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ar-SA</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-29T06:06:06+00:00</news:publication_date>
+    <news:title>ISO 20022 بعد الترحيل: تحويل بيانات المدفوعات إلى منتجات مصرفية في 2026</news:title>
+    <news:keywords>ISO 20022 2026، pacs.008، pain.001، CBPR+، SWIFT gpi، SEPA Instant، FedNow، MX، RTGS، العنوان المنظم، رمز الغرض، منتجات بيانات المدفوعات، خزينة الشركات، التسوية، فحص العقوبات، كشف الاحتيال</news:keywords>
   </news:news>
 </url>
 <url>

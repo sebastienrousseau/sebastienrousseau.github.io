@@ -39,7 +39,7 @@ schema: "FAQPage, Article"
 seo_title: "UK Acid Jazz 2026: শিল্পী, কনসার্ট, অ্যালবাম, পুনরুজ্জীবন"
 short_name: "sebastienrousseau"
 subtitle: "UK-এ অ্যাসিড জ্যাজের পুনরুজ্জীবন ঘটছে ঐতিহ্যবাহী শিল্পী, Acid Jazz Records-এর রিলিজ, জ্যাজ-ফাঙ্ক উৎসব, সোল-জ্যাজ দর্শক, হ্যামন্ড অর্গান-চালিত লাইভ শো এবং নতুন প্রজন্মের UK জ্যাজ সংগীতশিল্পীদের মাধ্যমে — যারা গ্রুভকে আবার দৃশ্যের কেন্দ্রে নিয়ে আসছেন।"
-tags: "acid jazz, UK jazz, Acid Jazz Records, Brand New Heavies, Galliano, James Taylor Quartet, Ronnie Scott's, Bangs and Talbot, Chris Bangs, Mick Talbot, Mostly Jazz Funk Soul Festival, Cymande, Soul II Soul, Jordan Rakei, jazz funk, soul jazz"
+tags: "acid jazz, UK jazz, Acid Jazz Records, Brand New Heavies, Galliano, James Taylor Quartet, Ronnie Scott's, Bangs and Talbot, Chris Bangs, Mick Talbot, Mostly Jazz Funk Soul Festival, Cymande, Soul II Soul, Jordan Rakei, jazz funk, soul jazz, ISO 20022, পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, AI, DORA, টোকেনাইজড আমানত, প্ল্যাটফর্ম ইঞ্জিনিয়ারিং, সার্বভৌম ক্লাউড, ক্লাউড নেটিভ ব্যাংকিং, সীমান্ত-পার পেমেন্ট, stablecoins"
 theme-color: "0, 83, 191"
 title: "UK-এ অ্যাসিড জ্যাজের পুনরুজ্জীবন: ২০২৬-এর শিল্পী, কনসার্ট ও অ্যালবাম"
 url: "https://sebastienrousseau.com/bn/2026-05-22-uk-acid-jazz-renewal-artists-concerts-albums-2026"
@@ -93,9 +93,9 @@ site_software: "Static Site Generator, Rust"
 <p class="post-lead-heading"><strong>মূল বিষয়সমূহ</strong></p>
 <ul class="post-lead-takeaways">
   <li><strong>লেবেল।</strong> Acid Jazz Records-এর ২০২৬ Bandcamp সংকলনে রয়েছেন Matt Berry, Kevin Fingier, The Brand New Heavies, Billy Valentine এবং Mama Terra।</li>
-  <li><strong>রিলিজ।</strong> Bangs &amp; Talbot-এর <em>Smokin' Aces</em> (২৩ জানুয়ারি ২০২৬, Acid Jazz) Chris Bangs ও Mick Talbot-কে গ্রুভ, ফাঙ্ক, সোল এবং বৈশ্বিক ফিউশন সুরের সাথে পুনর্মিলিত করেছে।</li>
+  <li><strong>রিলিজ।</strong> Bangs & Talbot-এর <em>Smokin' Aces</em> (২৩ জানুয়ারি ২০২৬, Acid Jazz) Chris Bangs ও Mick Talbot-কে গ্রুভ, ফাঙ্ক, সোল এবং বৈশ্বিক ফিউশন সুরের সাথে পুনর্মিলিত করেছে।</li>
   <li><strong>লাইভ।</strong> The Glasshouse-এ The Brand New Heavies-এর সাথে Galliano এবং Ronnie Scott's-এ The James Taylor Quartet — ২০২৬-এর তালিকায় অ্যাসিড জ্যাজের সবচেয়ে স্পষ্ট সংকেত।</li>
-  <li><strong>উৎসব।</strong> Mostly Jazz Funk &amp; Soul Festival (১০–১২ জুলাই ২০২৬) প্রোগ্রামে রয়েছেন Soul II Soul, Cymande, Jordan Rakei এবং Sampa The Great — ঐতিহ্যবাহী জ্যাজ-ফাঙ্ক শিল্পীদের পাশাপাশি।</li>
+  <li><strong>উৎসব।</strong> Mostly Jazz Funk & Soul Festival (১০–১২ জুলাই ২০২৬) প্রোগ্রামে রয়েছেন Soul II Soul, Cymande, Jordan Rakei এবং Sampa The Great — ঐতিহ্যবাহী জ্যাজ-ফাঙ্ক শিল্পীদের পাশাপাশি।</li>
 </ul>
 <p class="post-lead-related"><strong>সম্পর্কিত পাঠ:</strong> <a href="https://sebastienrousseau.com/2026-05-21-tokenised-deposits-banking-transformation-2026/index.html">টোকেনাইজড ডিপোজিট: ২০২৬ সালে ব্যাংকিং রূপান্তরের গতিপথ</a>।</p>
 </aside>
@@ -231,6 +231,6 @@ The Glasshouse-এ The Brand New Heavies-এর সাথে Galliano এবং 
 - Mostly Jazz Funk & Soul Festival, (২০২৬)। [Mostly Jazz Funk & Soul Festival 2026 ⧉](https://mostlyjazz.co.uk "Mostly Jazz Funk & Soul Festival")।
 - Marlbank, (২০২৬)। [Top UK jazz albums in 2026 so far ⧉](https://marlbank.net/top-jazz-in-2026/top-uk-jazz-albums-in-2026-so-far/ "Top UK jazz albums in 2026 so far")।
 <!-- enrich-start -->
-<aside class="author-card" aria-label="লেখক সম্পর্কে"><img alt="সেবাস্তিয়ান রুসোর প্রতিকৃতি" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">সেবাস্তিয়ান রুসো</a></strong><span class="author-card-bio">সিনিয়র ব্যাংকিং প্রযুক্তিবিদ, প্রয়োগ-ভিত্তিক এআই, ISO 20022 মাইগ্রেশন, আর্থিক পরিষেবার জন্য পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি এবং পাইকারি পেমেন্টের কাঠামোগত রূপান্তর সম্পর্কে লেখেন।</span><span class="author-credentials">HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group-এ ২০+ বছরের অভিজ্ঞতা। <a href="/about/index.html">সম্পূর্ণ প্রোফাইল</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="লেখক সম্পর্কে"><img alt="সেবাস্তিয়ান রুসোর প্রতিকৃতি" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">সেবাস্তিয়ান রুসো</a></strong><span class="author-card-bio">সিনিয়র ব্যাংকিং প্রযুক্তিবিদ, প্রয়োগ-ভিত্তিক এআই, ISO 20022 মাইগ্রেশন, আর্থিক পরিষেবার জন্য পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি এবং পাইকারি পেমেন্টের কাঠামোগত রূপান্তর সম্পর্কে লেখেন।</span><span class="author-credentials">HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group-এ ২০+ বছরের অভিজ্ঞতা। <a href="/about/index.html">সম্পূর্ণ প্রোফাইল</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">সর্বশেষ পর্যালোচনা <time datetime="2026-05-22">2026-05-22</time>।</p>
 <!-- enrich-end -->

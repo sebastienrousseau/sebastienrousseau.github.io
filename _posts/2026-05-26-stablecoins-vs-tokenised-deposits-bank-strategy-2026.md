@@ -42,7 +42,7 @@ schema: "FAQPage, Article"
 seo_title: "Stablecoins vs Tokenised Deposits 2026: Bank Strategy"
 short_name: "sebastienrousseau"
 subtitle: "Stablecoins are forcing banks to defend payment utility, not merely deposit balances. Tokenised deposits are the bank-native answer, but only if they match programmability, availability, and settlement speed."
-tags: "stablecoins, tokenised deposits, bank strategy, deposit tokens, JPM Coin, GENIUS Act, commercial bank money"
+tags: "stablecoins, tokenised deposits, bank strategy, JPM Coin, GENIUS Act, commercial bank money, ISO 20022, DORA, post-quantum cryptography, AI, cross-border payments"
 theme-color: "0, 83, 191"
 title: "Stablecoins vs Tokenised Deposits in 2026: What Banks Actually Need to Defend"
 url: "https://sebastienrousseau.com/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026"
@@ -108,6 +108,44 @@ site_software: "Static Site Generator, Rust"
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!-- lead-start -->
 <aside class="post-lead" aria-label="Article summary">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Stablecoins and tokenised deposits are converging around programmable settlement, but their balance-sheet, legal, liquidity, and trust models remain different.</p>
@@ -118,7 +156,7 @@ site_software: "Static Site Generator, Rust"
   <li><strong>Strategic Architecture Table.</strong> Global banks should create platform-level orchestration so that each market, rail, token, and AI capability does not become a separate operating model.</li>
   <li><strong>What This Means by Bank Type.</strong> Global banks should create platform-level orchestration so that each market, rail, token, and AI capability does not become a separate operating model.</li>
 </ul>
-<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2026-05-21-tokenised-deposits-banking-services-status-2026">Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money</a>, <a href="https://sebastienrousseau.com/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026">Programmable Liquidity in 2026: AI, Tokenised Deposits, and Real-Time Treasury Orchestration</a>, <a href="https://sebastienrousseau.com/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026">The UK Payments Forward Plan in 2026: Stablecoins, Open Banking, Tokenised Deposits, and Agentic Payments</a>.</p>
+<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026">Digital Assets in 2026: The Infrastructure Transition Banks Cannot Delay</a>, <a href="https://sebastienrousseau.com/2026-05-21-tokenised-deposits-banking-services-status-2026">Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money</a>, <a href="https://sebastienrousseau.com/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026">The Autonomous Treasury Index in 2026: Agentic Treasury, Programmable Liquidity, Tokenised Deposits, and Real-Time Cash Control</a>.</p>
 </aside>
 <!-- lead-end -->
 
@@ -223,13 +261,13 @@ Success should be measured by unit economics, resilience evidence, data quality,
 
 <!-- enrich-start -->
 <aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
-<p class="post-reviewed">Last reviewed <time datetime="2026-05-29">2026-05-29</time>.</p>
+<p class="post-reviewed">Last reviewed <time datetime="2026-06-10">2026-06-10</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Related reading</h2>
 <div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026" class="related-media" aria-label="Digital Assets in 2026: The Infrastructure Transition Banks Cannot Delay" tabindex="-1"><img alt="Digital asset infrastructure diagram showing tokenised real-world assets, stablecoins, tokenised deposits, custody, settlement, collateral mobility, and bank platform layers" src="https://cloudcdn.pro/stocks/images/corporate-finance.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026">Digital Assets in 2026: The Infrastructure Transition Banks Cannot Delay</a></h3><p><time datetime="2026-05-28">2026-05-28</time></p></footer></article>
 <article class="related-card"><a href="https://sebastienrousseau.com/2026-05-21-tokenised-deposits-banking-services-status-2026" class="related-media" aria-label="Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money" tabindex="-1"><img alt="Tokenised deposit banking architecture for 2026 showing commercial bank money, digital wallets, stablecoins, CBDCs, tokenised gilts, and Project Agorá settlement paths" src="https://cloudcdn.pro/stocks/images/bit-cloud-GlqbGLCPnQ4.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-21-tokenised-deposits-banking-services-status-2026">Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money</a></h3><p><time datetime="2026-05-21">2026-05-21</time></p></footer></article>
-<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026" class="related-media" aria-label="Programmable Liquidity in 2026: AI, Tokenised Deposits, and Real-Time Treasury Orchestration" tabindex="-1"><img alt="Programmable liquidity architecture diagram showing treasury systems, AI forecasting, tokenised deposits, real-time rails, stablecoins, virtual accounts, FX, and collateral mobility" src="https://cloudcdn.pro/api/transform?url=/stocks/images/alex-knight-2EJCSULRwC8.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026">Programmable Liquidity in 2026: AI, Tokenised Deposits, and Real-Time Treasury Orchestration</a></h3><p><time datetime="2026-05-25">2026-05-25</time></p></footer></article>
-<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026" class="related-media" aria-label="The UK Payments Forward Plan in 2026: Stablecoins, Open Banking, Tokenised Deposits, and Agentic Payments" tabindex="-1"><img alt="UK payments modernisation diagram showing stablecoins, tokenised deposits, open banking, AI agents, FCA regulation, PSR consolidation, and wholesale digital markets" src="https://cloudcdn.pro/api/transform?url=/stocks/images/riccardo-oliva-C5DLhUkEWfM.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026">The UK Payments Forward Plan in 2026: Stablecoins, Open Banking, Tokenised Deposits, and Agentic Payments</a></h3><p><time datetime="2026-05-24">2026-05-24</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026" class="related-media" aria-label="The Autonomous Treasury Index in 2026: Agentic Treasury, Programmable Liquidity, Tokenised Deposits, and Real-Time Cash Control" tabindex="-1"><img alt="Abstract architectural photograph used as the visual key for the 2026 Autonomous Treasury Index — measuring agentic treasury workflows, programmable liquidity, tokenised deposits, real-time payments, and automated cash control" src="https://cloudcdn.pro/stocks/images/christopher-burns-Kj2SaNHG-hg.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026">The Autonomous Treasury Index in 2026: Agentic Treasury, Programmable Liquidity, Tokenised Deposits, and Real-Time Cash Control</a></h3><p><time datetime="2026-06-07">2026-06-07</time></p></footer></article>
 </div>
 </aside>
 <!-- enrich-end -->

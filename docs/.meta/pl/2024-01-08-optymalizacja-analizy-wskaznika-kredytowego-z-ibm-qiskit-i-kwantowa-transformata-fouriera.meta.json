@@ -1,11 +1,13 @@
 {
-  "description": "Jak IBM Qiskit i kwantowa transformata Fouriera przekształcają analizę wskaźników kredytowych, oferując bezprecedensową dokładność i szybkość.",
-  "subtitle": "Jak QFT przekształca analizę ryzyka kredytowego",
+  "banner_alt": "Obwód kwantowy Qiskit do analizy kredytowej",
+  "date": "Jan 08, 2024",
   "locale": "pl_PL",
   "keywords": "IBM Qiskit, QFT, kwantowa transformata Fouriera, kredyt, analiza ryzyka, bankowość, kwanty",
-  "banner_alt": "Obwód kwantowy Qiskit do analizy kredytowej",
+  "description": "Jak IBM Qiskit i kwantowa transformata Fouriera przekształcają analizę wskaźników kredytowych, oferując bezprecedensową dokładność i szybkość.",
   "banner": "https://cloudcdn.pro/stocks/images/quantum-computer-room.webp",
-  "language": "pl-PL",
   "title": "Optymalizacja analizy wskaźnika kredytowego z IBM Qiskit i kwantową transformatą Fouriera",
-  "date": "Jan 08, 2024"
+  "word_count": 178,
+  "subtitle": "Jak QFT przekształca analizę ryzyka kredytowego",
+  "reading_time": 1,
+  "language": "pl-PL"
 }

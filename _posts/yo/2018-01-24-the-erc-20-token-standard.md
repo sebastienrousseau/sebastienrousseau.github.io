@@ -1,5 +1,6 @@
 ---
 title: "ERC-20: The Ethereum Token Interface That Changed the World"
+tags: "Ethereum, erc20, eip, tokens, contracts, blockchain, cryptocurrencies, smart-token, Solidity, ISO 20022, ìsirò ìpamọ́ lẹ́yìn quantum, AI, stablecoins"
 subtitle: "Àwọn token ERC-20, smart contract Ethereum àti ìṣọ̀kan àwọn ohun-ìní dijital."
 description: "ERC-20 jẹ iru token tó wọ́pọ̀ jù lọ lórí blockchain Ethereum, tí a tún mọ sí adehun dijital smart contract tó yí ọ̀nà ìdáná ohun-ìní dijital padà."
 date: "Jan 24, 2018"
@@ -109,4 +110,3 @@ If you have any questions, please don't hesitate to contact me via [LinkedIn ⧉
 [09]: /articles/index.html "Back to Articles"
 [10]: /contact/index.html "Contact Sebastien Rousseau"
 [11]: https://www.linkedin.com/in/sebastienrousseau/ "Sebastien Rousseau on LinkedIn"
-

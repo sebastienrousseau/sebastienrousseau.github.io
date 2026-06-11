@@ -20,6 +20,7 @@ Output (success): a single line, the CDN transform URL — e.g.
 
 Exit codes: 0 ok, 1 no candidate, 2 usage error.
 """
+
 from __future__ import annotations
 
 import sys as _sys  # path bootstrap — scripts reorg (scripts/lib/ on sys.path)
@@ -83,14 +84,16 @@ def score_candidate(name: str, hints: list[str]) -> int:
     return score
 
 
-def pick(inv: list[str], used: set[str], hints: list[str],
-         exclude: set[str] | None = None,
-         rng: random.Random | None = None) -> str | None:
+def pick(
+    inv: list[str],
+    used: set[str],
+    hints: list[str],
+    exclude: set[str] | None = None,
+    rng: random.Random | None = None,
+) -> str | None:
     """Return one banner filename — keyword-biased if hints provided,
     otherwise random — that is in `inv`, not in `used`, not in `exclude`."""
-    candidates = [
-        n for n in inv if n not in used and (not exclude or n not in exclude)
-    ]
+    candidates = [n for n in inv if n not in used and (not exclude or n not in exclude)]
     if not candidates:
         return None
     rng = rng or random.Random()  # noqa: S311 — banner picker, not crypto
@@ -116,19 +119,28 @@ def transform_url(name: str, *, width: int = 1200, q: int = 80) -> str:
 
 def main() -> int:
     p = argparse.ArgumentParser(description=__doc__)
-    p.add_argument("--hint", default="",
-                   help="comma-separated keyword hints "
-                        "(cloud,kubernetes,quantum,payments,ai,rust,blockchain,iso,agentic)")
-    p.add_argument("--list", type=int, default=0, metavar="N",
-                   help="just list N unused candidates and exit")
-    p.add_argument("--check", default="",
-                   help="verify the named .webp exists in inventory + unused")
+    p.add_argument(
+        "--hint",
+        default="",
+        help="comma-separated keyword hints "
+        "(cloud,kubernetes,quantum,payments,ai,rust,blockchain,iso,agentic)",
+    )
+    p.add_argument(
+        "--list", type=int, default=0, metavar="N", help="just list N unused candidates and exit"
+    )
+    p.add_argument(
+        "--check", default="", help="verify the named .webp exists in inventory + unused"
+    )
     p.add_argument("--width", type=int, default=1200)
     p.add_argument("--quality", type=int, default=80)
-    p.add_argument("--inventory", type=Path,
-                   default=Path(os.environ.get("CDN_INVENTORY", str(DEFAULT_INVENTORY))))
-    p.add_argument("--seed", type=int, default=None,
-                   help="deterministic picker for reproducible tests")
+    p.add_argument(
+        "--inventory",
+        type=Path,
+        default=Path(os.environ.get("CDN_INVENTORY", str(DEFAULT_INVENTORY))),
+    )
+    p.add_argument(
+        "--seed", type=int, default=None, help="deterministic picker for reproducible tests"
+    )
     args = p.parse_args()
 
     inv = collect_inventory(args.inventory)

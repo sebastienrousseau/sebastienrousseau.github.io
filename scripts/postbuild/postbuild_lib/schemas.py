@@ -1,14 +1,25 @@
-"""Additional Schema.org JSON-LD passes — TechArticle + SoftwareSourceCode.
+"""Additional Schema.org JSON-LD passes — TechArticle / ScholarlyArticle
++ SoftwareSourceCode.
 
 The site already emits BlogPosting for every dated article and an ItemList
 for /articles/, /papers/, /projects/. This module layers two more types:
 
-* :func:`inject_tech_article` — adds a ``TechArticle`` block alongside
-  BlogPosting for posts whose keyword set names a programming language
-  or one of the site's technical domains (PQC, ISO 20022, AI, Rust).
-  TechArticle is a richer Article subtype: search engines + AI agents
-  use ``dependencies`` + ``programmingLanguage`` to surface the post
-  as a code-relevant result.
+* :func:`inject_tech_article` — adds a richer Article subtype block on
+  every dated post. The type is chosen at runtime:
+
+  - **ScholarlyArticle** when the article cites at least
+    :data:`SCHOLARLY_CITATION_THRESHOLD` distinct primary-source
+    authorities (NIST, ISO, BIS, IETF, …). Carries the citation array
+    natively so AI engines walking the JSON-LD see a peer-reviewable
+    document graph.
+  - **TechArticle** otherwise. Carries ``programmingLanguage`` and
+    ``dependencies`` when the keyword set names them.
+
+  Both inherit from ``Article`` and AI Overview / Google Search pick
+  the more specific subtype when present. The existing BlogPosting
+  block remains untouched so the postbuild gates (``article_furniture``,
+  ``seo``, ``build_translations``) keep matching their substrings.
+
 * :func:`inject_software_source_code` — for /projects/index.html only,
   replaces the plain ListItem entries (already injected by
   postbuild.inject_itemlist) with ``SoftwareSourceCode``-typed items
@@ -20,8 +31,10 @@ Both functions are pure ``(html) -> html``. Insertion happens before
 ``</body>`` so the existing CSP-hash pass in postbuild captures the
 new blocks.
 """
+
 from __future__ import annotations
 
+import datetime as _dt
 import html as _html
 import json as _json
 import re
@@ -50,22 +63,22 @@ _LANG_TOKENS: dict[str, str] = {
 # Keyword tokens → domain dependency label that goes into
 # TechArticle.dependencies (a free-text list per schema.org).
 _DEP_TOKENS: dict[str, str] = {
-    "iso 20022":          "ISO 20022",
-    "pain.001":           "ISO 20022 pain.001",
-    "pacs.008":           "ISO 20022 pacs.008",
-    "post-quantum":       "Post-Quantum Cryptography",
-    "post quantum":       "Post-Quantum Cryptography",
-    "pqc":                "Post-Quantum Cryptography",
-    "crystals-kyber":     "CRYSTALS-Kyber (NIST FIPS 203)",
-    "kyber":              "CRYSTALS-Kyber",
-    "nist":               "NIST",
-    "fips 203":           "NIST FIPS 203",
-    "swift gpi":          "SWIFT gpi",
-    "sepa":               "SEPA Instant Payments",
-    "blockchain":         "Blockchain",
-    "ethereum":           "Ethereum",
-    "erc-20":             "ERC-20",
-    "stablecoin":         "Stablecoin",
+    "iso 20022": "ISO 20022",
+    "pain.001": "ISO 20022 pain.001",
+    "pacs.008": "ISO 20022 pacs.008",
+    "post-quantum": "Post-Quantum Cryptography",
+    "post quantum": "Post-Quantum Cryptography",
+    "pqc": "Post-Quantum Cryptography",
+    "crystals-kyber": "CRYSTALS-Kyber (NIST FIPS 203)",
+    "kyber": "CRYSTALS-Kyber",
+    "nist": "NIST",
+    "fips 203": "NIST FIPS 203",
+    "swift gpi": "SWIFT gpi",
+    "sepa": "SEPA Instant Payments",
+    "blockchain": "Blockchain",
+    "ethereum": "Ethereum",
+    "erc-20": "ERC-20",
+    "stablecoin": "Stablecoin",
 }
 
 _keywords_meta_re = re.compile(
@@ -122,56 +135,259 @@ def _is_dated_article(page: Path) -> bool:
 
 def _page_lang(html: str) -> str:
     m = _html_lang_re.search(html)
-    return (m.group(1) if m else "en-GB")
+    return m.group(1) if m else "en-GB"
+
+
+# A page with at least this many distinct primary-source citations
+# (NIST / ISO / BIS / IETF / …) earns the ScholarlyArticle subtype.
+# Below the threshold we still emit TechArticle. Six is the heuristic
+# used by the BIS Working Paper style sheet — fewer than six and the
+# piece reads as commentary; six or more and it reads as research.
+SCHOLARLY_CITATION_THRESHOLD = 6
+
+# Google News Top Stories carousel admits articles published within
+# the last 48 hours. Above this cutoff a NewsArticle block has no
+# practical effect — the article is still discoverable via TechArticle
+# / ScholarlyArticle / BlogPosting, but the carousel slot has passed.
+NEWS_FRESHNESS_HOURS = 48
+
+
+_blogposting_dates_re = re.compile(
+    r'"datePublished":"([^"]+)"[^"]*"dateModified":"([^"]+)"',
+)
+_blogposting_image_re = re.compile(
+    r'"@type":"BlogPosting"[\s\S]*?' r'"image":\{[^{}]*?"url":"([^"]+)"',
+)
+_blogposting_section_re = re.compile(
+    r'"@type":"BlogPosting"[\s\S]*?"articleSection":"([^"]+)"',
+)
+
+
+def _parse_iso_date(s: str) -> _dt.datetime | None:
+    """Liberal ISO 8601 parser. Accepts ``YYYY-MM-DD``, full timestamps
+    with ``+HH:MM`` offsets, and the ``Z`` shorthand. Returns a
+    timezone-aware datetime or None."""
+    s = s.strip().replace("Z", "+00:00")
+    for fmt in (
+        "%Y-%m-%dT%H:%M:%S%z",
+        "%Y-%m-%dT%H:%M:%S.%f%z",
+        "%Y-%m-%dT%H:%M%z",
+        "%Y-%m-%d",
+    ):
+        try:
+            dt = _dt.datetime.strptime(s, fmt)
+        except ValueError:
+            continue
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=_dt.UTC)
+        return dt
+    return None
+
+
+def _is_fresh_for_news(
+    date_pub: str,
+    now: _dt.datetime,
+) -> bool:
+    """True iff ``date_pub`` is within :data:`NEWS_FRESHNESS_HOURS` of ``now``.
+
+    Posts older than the window stay indexed via TechArticle /
+    ScholarlyArticle / BlogPosting; we just stop emitting the NewsArticle
+    carousel signal because Google News won't slot it anyway."""
+    parsed = _parse_iso_date(date_pub)
+    if parsed is None:
+        return False
+    delta = now - parsed
+    return _dt.timedelta(0) <= delta <= _dt.timedelta(hours=NEWS_FRESHNESS_HOURS)
+
+
+def _tech_payload(
+    languages: list[str],
+    dependencies: list[str],
+) -> dict[str, object]:
+    """TechArticle-specific developer hints."""
+    payload: dict[str, object] = {"proficiencyLevel": "Expert"}
+    if languages:
+        payload["programmingLanguage"] = languages if len(languages) > 1 else languages[0]
+    if dependencies:
+        payload["dependencies"] = dependencies
+    return payload
+
+
+def _detect_kw_signals(html: str) -> tuple[list[str], list[str], list[str]]:
+    """Return (keywords, languages, dependencies) for the page."""
+    keywords = _parse_keywords(html)
+    if not keywords:
+        return [], [], []
+    kw_lower = ", ".join(keywords).lower()
+    return keywords, _detect_languages(kw_lower), _detect_dependencies(kw_lower)
 
 
 def _tech_article_graph(
-    html: str, page: Path,
+    html: str,
+    page: Path,
 ) -> dict[str, object] | None:
-    """Build the TechArticle JSON-LD payload, or return None if the
-    post isn't technical enough to warrant the upgrade."""
-    keywords = _parse_keywords(html)
-    if not keywords:
-        return None
-    kw_lower = ", ".join(keywords).lower()
-    languages = _detect_languages(kw_lower)
-    dependencies = _detect_dependencies(kw_lower)
-    # We only emit TechArticle when there's something tech-y to carry.
-    if not languages and not dependencies:
-        return None
+    """Build the richer Article-subtype JSON-LD payload for a dated post.
+
+    Returns ``None`` only when the page is missing the structural anchors
+    we need (title, canonical URL). For every other dated post the
+    function returns:
+
+    * ``ScholarlyArticle`` when the rendered body cites
+      ``SCHOLARLY_CITATION_THRESHOLD`` or more distinct authority-domain
+      URLs (the same set ``inject_citations`` writes into BlogPosting).
+      The citation array is duplicated into the new block so AI engines
+      and academic-graph crawlers walking just the ScholarlyArticle node
+      still see the full provenance chain.
+    * ``TechArticle`` otherwise — with ``programmingLanguage`` and
+      ``dependencies`` populated when the keyword set names them.
+    """
     title_m = _title_re.search(html)
     canon_m = _canonical_re.search(html)
     if not title_m or not canon_m:
         return None
+
+    # Late import to avoid a circular at module load — article_furniture
+    # already imports from postbuild_lib.seo, so going the other way
+    # via top-level import would close the loop.
+    from postbuild_lib.article_furniture import _extract_citations
+
+    citations = _extract_citations(html)
+    is_scholarly = len(citations) >= SCHOLARLY_CITATION_THRESHOLD
+    keywords, languages, dependencies = _detect_kw_signals(html)
+
     headline = _html.unescape(title_m.group(1)).split(" — ")[0].strip()
     url = _html.unescape(canon_m.group(1))
     graph: dict[str, object] = {
         "@context": "https://schema.org",
-        "@type": "TechArticle",
+        "@type": "ScholarlyArticle" if is_scholarly else "TechArticle",
         "headline": headline,
         "url": url,
         "inLanguage": _page_lang(html),
         "isAccessibleForFree": True,
-        "proficiencyLevel": "Expert",
-        "keywords": ", ".join(keywords),
+        "author": {"@id": "https://sebastienrousseau.com/#person"},
+        "publisher": {"@id": "https://sebastienrousseau.com/#organization"},
+        "mainEntityOfPage": {"@type": "WebPage", "@id": url},
     }
-    if languages:
-        graph["programmingLanguage"] = languages if len(languages) > 1 else languages[0]
-    if dependencies:
-        graph["dependencies"] = dependencies
+    if keywords:
+        graph["keywords"] = ", ".join(keywords)
+    if is_scholarly:
+        graph["citation"] = citations
+    else:
+        graph.update(_tech_payload(languages, dependencies))
     return graph
 
 
 def inject_tech_article(page: Path, html: str) -> str:
-    """Add a TechArticle JSON-LD block to dated post pages. Skip pages
-    that already carry one (idempotent), pages that aren't dated posts,
-    and pages whose keywords don't name a programming language or one
-    of the site's technical domains."""
+    """Add a TechArticle (or ScholarlyArticle, when citation-heavy)
+    JSON-LD block to every dated post page. Idempotent — skipped if a
+    TechArticle or ScholarlyArticle block already exists on the page,
+    or if the page isn't a dated post."""
     if not _is_dated_article(page):
         return html
-    if '"@type":"TechArticle"' in html or '"@type": "TechArticle"' in html:
+    if (
+        '"@type":"TechArticle"' in html
+        or '"@type": "TechArticle"' in html
+        or '"@type":"ScholarlyArticle"' in html
+        or '"@type": "ScholarlyArticle"' in html
+    ):
         return html
     graph = _tech_article_graph(html, page)
+    if graph is None:
+        return html
+    payload = _json.dumps(graph, separators=(",", ":"), ensure_ascii=False)
+    block = f'<script type="application/ld+json">{payload}</script>'
+    return re.sub(r"(?i)</body>", block + "</body>", html, count=1)
+
+
+# ---------------------------------------------------------------------------
+# NewsArticle — Google News Top Stories carousel signal for fresh posts.
+# ---------------------------------------------------------------------------
+
+
+def _news_article_graph(
+    html: str,
+    page: Path,
+    now: _dt.datetime,
+) -> dict[str, object] | None:
+    """Build the NewsArticle JSON-LD payload, or return None when the
+    page isn't a fresh dated post.
+
+    Reads the canonical URL, headline, datePublished + dateModified,
+    keywords, articleSection, and banner image URL from the existing
+    BlogPosting graph the SSG already emits, then re-shapes them into
+    a Google-News-spec-compliant NewsArticle node with author /
+    publisher refs pointing at the identity graph #person and
+    #organization @ids.
+    """
+    canon_m = _canonical_re.search(html)
+    title_m = _title_re.search(html)
+    dates_m = _blogposting_dates_re.search(html)
+    if not canon_m or not title_m or not dates_m:
+        return None
+    date_pub, date_mod = dates_m.group(1), dates_m.group(2)
+    if not _is_fresh_for_news(date_pub, now):
+        return None
+
+    headline = _html.unescape(title_m.group(1)).split(" — ")[0].strip()
+    url = _html.unescape(canon_m.group(1))
+    graph: dict[str, object] = {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": headline,
+        "url": url,
+        "datePublished": date_pub,
+        "dateModified": date_mod,
+        "inLanguage": _page_lang(html),
+        "isAccessibleForFree": True,
+        "author": [{"@id": "https://sebastienrousseau.com/#person"}],
+        "publisher": {"@id": "https://sebastienrousseau.com/#organization"},
+        "mainEntityOfPage": {"@type": "WebPage", "@id": url},
+        "speakable": {
+            "@type": "SpeakableSpecification",
+            "cssSelector": [
+                ".post-lead",
+                ".post-lead-tldr",
+                ".post-lead-takeaways",
+            ],
+        },
+    }
+    image_m = _blogposting_image_re.search(html)
+    if image_m:
+        graph["image"] = [_html.unescape(image_m.group(1))]
+    section_m = _blogposting_section_re.search(html)
+    if section_m:
+        graph["articleSection"] = _html.unescape(section_m.group(1))
+    keywords, *_ = _detect_kw_signals(html)
+    if keywords:
+        graph["keywords"] = ", ".join(keywords)
+    return graph
+
+
+def inject_news_article(
+    page: Path,
+    html: str,
+    now: _dt.datetime | None = None,
+) -> str:
+    """Add a NewsArticle JSON-LD block to dated post pages published
+    within the Google News Top Stories carousel window.
+
+    Skipped when:
+      - the page isn't a dated post,
+      - the article is older than :data:`NEWS_FRESHNESS_HOURS`,
+      - a NewsArticle block already exists on the page (idempotent),
+      - the page lacks a canonical URL, title, or BlogPosting graph
+        (no source to project from).
+
+    ``now`` defaults to the wall-clock time; tests pass a fixed value
+    so the freshness check is deterministic.
+    """
+    if not _is_dated_article(page):
+        return html
+    if '"@type":"NewsArticle"' in html or '"@type": "NewsArticle"' in html:
+        return html
+    if now is None:
+        now = _dt.datetime.now(_dt.UTC)
+    graph = _news_article_graph(html, page, now)
     if graph is None:
         return html
     payload = _json.dumps(graph, separators=(",", ":"), ensure_ascii=False)
@@ -202,8 +418,7 @@ _excerpt_re = re.compile(
 _strip_tags_re = re.compile(r"<[^>]+>")
 _ws_re = re.compile(r"\s+")
 _section_re = re.compile(
-    r'<h2\b[^>]*\bid="([^"]+)"[^>]*>([\s\S]*?)</h2>([\s\S]*?)'
-    r'(?=<h2\b[^>]*\bid=|</main>)',
+    r'<h2\b[^>]*\bid="([^"]+)"[^>]*>([\s\S]*?)</h2>([\s\S]*?)' r"(?=<h2\b[^>]*\bid=|</main>)",
     re.IGNORECASE,
 )
 
@@ -262,7 +477,9 @@ def _parse_card(card_body: str) -> tuple[str, str, str, list[str]] | None:
 
 
 def _build_software_source_code(
-    card_body: str, section_title: str, position: int,
+    card_body: str,
+    section_title: str,
+    position: int,
 ) -> dict[str, object] | None:
     parsed = _parse_card(card_body)
     if parsed is None:
@@ -280,9 +497,7 @@ def _build_software_source_code(
     if description:
         record["description"] = description
     if languages:
-        record["programmingLanguage"] = (
-            languages if len(languages) > 1 else languages[0]
-        )
+        record["programmingLanguage"] = languages if len(languages) > 1 else languages[0]
     if "github.com/sebastienrousseau/" in href:
         record["codeRepository"] = href
     elif href.startswith("https://") and "github" not in href:

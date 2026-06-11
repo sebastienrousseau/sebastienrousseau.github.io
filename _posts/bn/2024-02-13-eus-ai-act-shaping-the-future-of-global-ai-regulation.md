@@ -1,5 +1,6 @@
 ---
 title: "EU's AI Act: Pioneering Ethical AI Regulation Worldwide"
+tags: "EU, AI, Regulation, Ethics, Innovation, Transparency, Governance, Standards, Consumer Rights, Technology, ISO 20022, পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি"
 subtitle: "EU-র যুগান্তকারী আইনি কাঠামোর মাধ্যমে AI-এর ভবিষ্যৎ পরিচালনা"
 description: "EU AI Act বিশ্বব্যাপী নৈতিক, ঝুঁকি-স্তরীয় AI নিয়ন্ত্রণের প্রথম ব্যাপক কাঠামো নির্ধারণ করে। ব্যাংক, বিক্রেতা এবং উচ্চ-ঝুঁকির সিস্টেমের জন্য কী পরিবর্তন আসছে তা জানুন।"
 date: "Feb 13, 2024"
@@ -81,4 +82,3 @@ The EU's Artificial Intelligence Act represents a critical step in navigating th
 
 [divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Divider"
 [00]: https://www.europarl.europa.eu/news/en/press-room/20240212IPR17618/artificial-intelligence-act-committees-confirm-landmark-agreement "AI Act: committees confirm landmark agreement"
-

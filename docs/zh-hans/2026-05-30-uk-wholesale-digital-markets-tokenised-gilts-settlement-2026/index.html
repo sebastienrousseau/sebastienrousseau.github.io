@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Sat, 30 May 2026 06:06:06 +0000" id="date" />
+    <meta itemprop="dateModified" content="2026-05-30" id="last-modified" />
+    <title>英国批发数字市场:代币化国债、结算与新设的协调者角色 — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="英国批发数字市场协调者(Champion)角色把代币化批发金融升格为国家竞争力工程,重塑伦敦金融城在代币化国债与结算上的运营模型。">
+<meta name="keywords" content="英国批发数字市场 2026, Chris Woolard, 代币化国债, 代币化批发金融, 数字市场协调者, 英国代币化, 结算">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Wholesale Markets">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-3pPSG2N/ITqejJes3nbQTB0v/4TjQtqZaOO42h9QcSY=' 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-ZVTNuRpGm37mw1NlhCIKMc3wZ949tN2FwpSA7lB8m8E=' 'sha256-mw5+1zDE/a6wy0ZoK4NXceo9UTraSCrmcz1lUUxXHfI=' 'sha256-oUC+wuMF/VxSfN2mrIL6Iy4bVxGAzVP70F7Q4cTqrCA=' 'self' 'inline-speculation-rules' https://cdn.jsdelivr.net https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' https://cloudcdn.pro https://www.google.com https://open.spotify.com;
+        img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/zh-hans/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/newsreader-latin.woff2" crossorigin />
+    <link rel="stylesheet" href="/fonts/fonts.css" />
+    <!-- Preload the LCP hero portrait so it doesn't compete with the
+         render-blocking JS bundle on throttled mobile connections.
+         Lighthouse-simulated Slow-4G has been pinning LCP at ~5.6s; the
+         observed (real-network) LCP is 165 ms. This hint pulls the
+         synthetic LCP in line with the observed value. -->
+    <link rel="preload" as="image" href="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=1200&format=webp&q=85" fetchpriority="high">
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script>(function(){try{var saved=localStorage.getItem("theme");var prefersDark=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;var theme=saved||(prefersDark?"dark":"light");document.documentElement.setAttribute("data-theme",theme);}catch(e){}})();</script>
+
+    <link rel="stylesheet" href="/_csp/4724896d11ec6663.css" integrity="sha256-SFQ1AngSMlx94d5FmN1lWSKPs5RL6Y8BQf0nIEBLd7g= sha256-6BJkWGvqh3blXQksn+ynhkpoqcrJzzWhSKVuLVBJY4s=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Atom 订阅源" href="/zh-hans/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="英国批发数字市场:代币化国债、结算与新设的协调者角色 — Sebastien Rousseau">
+<meta property="og:description" content="英国批发数字市场协调者(Champion)角色把代币化批发金融升格为国家竞争力工程,重塑伦敦金融城在代币化国债与结算上的运营模型。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/zh-hans/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/">
+<meta property="og:image" content="https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&w=1200&format=webp&q=80">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="英国批发数字市场:代币化国债、结算与新设的协调者角色 — Sebastien Rousseau">
+<meta name="twitter:description" content="英国批发数字市场协调者(Champion)角色把代币化批发金融升格为国家竞争力工程,重塑伦敦金融城在代币化国债与结算上的运营模型。">
+<meta name="twitter:image" content="https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&w=1200&format=webp&q=80">
+<link rel="canonical" href="https://sebastienrousseau.com/zh-hans/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2026-05-30-uk-de-gros-digital-markets-tokenise-gilts-settlement-2026/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/" /><link rel="alternate" hreflang="bn" href="https://sebastienrousseau.com/bn/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/" /><link rel="alternate" hreflang="cs" href="https://sebastienrousseau.com/cs/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2026-05-30-uk-mayorista-digital-markets-tokenised-gilts-settlement-2026/" /><link rel="alternate" hreflang="fil" href="https://sebastienrousseau.com/fil/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/" /><link rel="alternate" hreflang="ha" href="https://sebastienrousseau.com/ha/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/" /><link rel="alternate" hreflang="he" href="https://sebastienrousseau.com/he/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/" /><link rel="alternate" hreflang="hi" href="https://sebastienrousseau.com/hi/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/" /><link rel="alternate" hreflang="id" href="https://sebastienrousseau.com/id/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/" /><link rel="alternate" hreflang="nl" href="https://sebastienrousseau.com/nl/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/" /><link rel="alternate" hreflang="pl" href="https://sebastienrousseau.com/pl/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/2026-05-30-uk-atacado-digital-markets-tokenised-gilts-settlement-2026/" /><link rel="alternate" hreflang="ro" href="https://sebastienrousseau.com/ro/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/" /><link rel="alternate" hreflang="sv" href="https://sebastienrousseau.com/sv/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/" /><link rel="alternate" hreflang="th" href="https://sebastienrousseau.com/th/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/" /><link rel="alternate" hreflang="tr" href="https://sebastienrousseau.com/tr/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/" /><link rel="alternate" hreflang="uk" href="https://sebastienrousseau.com/uk/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/" /><link rel="alternate" hreflang="vi" href="https://sebastienrousseau.com/vi/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/" /><link rel="alternate" hreflang="yo" href="https://sebastienrousseau.com/yo/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" integrity="sha256-tV/7vAgYDUuBQbSGEPjXL/JC0sD7QpSxXCGKT4ALhh8= sha256-dvm1KF9mEWIapL8BE0nyFlHaKSf6TsjZZoQcJeRPraI=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">跳至主要内容</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="切换导航" />
+      <div class="wrap">
+        <a class="ap-brand" href="/zh-hans/index.html" aria-label="Sebastien Rousseau 首页">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="主导航">
+          <ul class="ap-menu">
+            <li><a href="/zh-hans/guanyu/index.html">关于</a></li>
+            <li><a href="/zh-hans/wenzhang/index.html" aria-current="page" class="active">文章</a></li>
+            <li><a href="/zh-hans/lunwen/index.html">论文与白皮书</a></li>
+            <li><a href="/zh-hans/zhuti/index.html">主题</a></li>
+            <li><a href="/zh-hans/xiangmu/index.html">项目</a></li>
+            <li><a href="/zh-hans/boqing/index.html">播放列表</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="切换到深色主题" aria-pressed="false" title="切换主题">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="搜索（Cmd 或 Ctrl + K）" title="搜索（⌘K）">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="语言">
+            <button type="button" class="ap-lang-toggle" aria-label="ZH，切换语言" aria-expanded="false" aria-haspopup="menu" title="切换语言">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">ZH</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/2026-05-30-uk-de-gros-digital-markets-tokenise-gilts-settlement-2026/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <a class="ap-lang-item" href="/bn/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
+                <a class="ap-lang-item" href="/cs/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
+                <a class="ap-lang-item" href="/de/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/2026-05-30-uk-mayorista-digital-markets-tokenised-gilts-settlement-2026/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <a class="ap-lang-item" href="/fil/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
+                <a class="ap-lang-item" href="/ha/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
+                <a class="ap-lang-item" href="/he/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
+                <a class="ap-lang-item" href="/hi/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <a class="ap-lang-item" href="/id/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
+                <a class="ap-lang-item" href="/it/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <a class="ap-lang-item" href="/pl/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
+                <a class="ap-lang-item" href="/pt-br/2026-05-30-uk-atacado-digital-markets-tokenised-gilts-settlement-2026/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <a class="ap-lang-item" href="/ro/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
+                <a class="ap-lang-item" href="/ru/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <a class="ap-lang-item" href="/sv/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
+                <a class="ap-lang-item" href="/th/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
+                <a class="ap-lang-item" href="/tr/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
+                <a class="ap-lang-item" href="/uk/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/" data-lang="uk" role="menuitem">🇺🇦 Українська</a>
+                <a class="ap-lang-item" href="/vi/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
+                <a class="ap-lang-item" href="/yo/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
+                <a class="ap-lang-item" href="/zh-hans/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/zh-hans/lianxi/index.html" aria-label="联系我">联系我 ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="切换导航">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>英国批发数字市场:代币化国债、结算与新设的协调者角色</h1>
+      <p class="sub">代币化批发市场正从试验走向公私协调。英国设立批发数字市场协调者,因为分散试点已不足以推动市场。</p>
+    <nav class="article-tags" aria-label="Topics"><a href="/tags/index.html#h3-2026" class="article-tag" rel="tag">英国批发数字市场 2026</a><a href="/tags/index.html#h3-chris-woolard" class="article-tag" rel="tag">Chris Woolard</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">代币化国债</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">代币化批发金融</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">数字市场协调者</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">英国代币化</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">结算</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2026-05-30T06:06:06+00:00" class="meta-pub">Published 30 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Estimated read time">1 min read</span></div></section><figure class="article-banner"><img src="https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&w=1200&format=webp&q=80" alt="Banner for: 英国批发数字市场:代币化国债、结算与新设的协调者角色" width="1200" height="675" fetchpriority="high" decoding="async" /></figure>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>Contents</h2><ol><li><a href="#section-1">协调者授权:协调,而非仪式</a></li><li><a href="#section-2">为什么先做代币化国债?</a></li><li><a href="#dss">DSS 运营模型</a></li><li><a href="#section-9">架构矩阵</a></li><li><a href="#section-10">不同类型机构的含义</a></li><li><a href="#section-15">下一步会发生什么</a></li><li><a href="#section-16">常见问题</a></li><li><a href="#section-17">参考资料</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> 英国批发数字市场协调者(Champion)角色把代币化批发金融升格为国家竞争力工程,重塑伦敦金融城在代币化国债与结算上的运营模型。</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>协调者授权:协调,而非仪式.</strong> 英国批发市场改革长期败在同一处——协调。Treasury 制定政策、央行运营结算、FCA 主管行为监管、伦敦金融城交付产品。各方都很称职。但单凭其中任何一方,都无法迫使一家一级银行的代币化平台与一家中央证券存管机构(CSD)的结算引擎实现互操作。这正是协调者上任要补的缺口。.</li>  <li><strong>为什么先做代币化国债?.</strong> 国债是英镑体系的基石。它是央行回购接受的担保品、银行用以满足 LCR 要求的资产、养老金用以匹配负债的工具。同时,它今天的结算运营管道在二十年里也未发生根本变化——CREST 批量、T+1 惯例、日终流动性对账。被这套工作流困住的资本规模不小。.</li>  <li><strong>DSS 运营模型.</strong> DSS 是一套正在运行的监管制度。要把它当平台用,而不仅是 PoC,银行需要一套既能经受监管审视、也能承受商业压力的架构。五根支柱承担承重职责。.</li>  <li><strong>架构矩阵.</strong> 构建编排层。一级银行无法承担每出现一种新的代币化资产或新的 DLT 网络,就再衍生出一套定制运营模型。其角色是充当链下与链上流动性之间受监管的桥梁——提供让沙盒为整个市场运转所需的法律封装、资产负债表与监管关系。守在网关、为接入收费、捍卫特许经营。.</li></ul></aside><!-- lead-start -->
+
+<!-- lead-end -->
+<p>代币化批发金融已不再是思想实验。2026 年,它是英镑资本市场的运营基线。英格兰银行的 RTGS 更新、FCA 与 BoE 联合主持的数字证券沙盒(DSS),以及新设的批发数字市场协调者,如今同框出现——这正是关键。各部件本就被设计成相互嵌合(<a href="https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox" title="数字证券沙盒">Bank of England</a>、<a href="https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology" title="英国金融科技获扶持以拥抱未来支付技术">GOV.UK</a>)。</p>
+<p>协调者就是迫使它们嵌合到位的杠杆。</p>
+<hr />
+<blockquote>
+<p><strong>执行摘要 / 核心要点</strong></p>
+<ul>
+<li>**协调者补齐了伦敦金融城长期缺位的协调层。**职权横跨 HM Treasury、FCA、英格兰银行以及主要卖方与买方桌——其设计目的是打破让早期数字市场倡议停留在 PoC 阶段的客气僵局(<a href="https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/" title="英国批发数字市场协调者">Global Government Finance</a>)。</li>
+<li>**国债打头阵,因为它是最难做对的资产。**HQLA 上链、与代币化现金原子化结算,在最深的英镑池上验证完整技术栈——发行、交易、回购、担保品、央行货币(<a href="https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox" title="数字证券沙盒">Bank of England</a>)。</li>
+<li>**日内回购是眼前最直接的奖赏。**代币化国债的 T+0 原子化回购释放出今天作为当日流动性缓冲被闲置的资本,节省直接落到 ROE。</li>
+<li>**编排取代独立网络。**受监管负债网络(RLN)、Canton、私有银行 DLT、RTGS 与代币化商业银行货币各承载着银行已在运行的工作流。任务是跨之路由,而非择一站队。</li>
+<li>**政策即代码是唯一跟得上节奏的合规模型。**制裁、KYC、头寸限额、辖区门控——编码进结算层,与交易原子化执行,产出加密审计轨迹,而不是要监管机构去信任的日志(<a href="https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026" title="2026 年 5 月支付格局更新">Association of Corporate Treasurers</a>)。</li>
+<li>**架构就是护城河。**赢家把工作流、数据、支付通道、控制与单位经济性织成一套运营模型;输家则把一堆互不相通的试点拼成&quot;战略&quot;。</li>
+</ul>
+</blockquote>
+<hr />
+<h2 id="section-1">协调者授权:协调,而非仪式 <a class="heading-anchor" href="#section-1" aria-label="Link to 协调者授权:协调,而非仪式">#</a></h2>
+<p>英国批发市场改革长期败在同一处——协调。Treasury 制定政策、央行运营结算、FCA 主管行为监管、伦敦金融城交付产品。各方都很称职。但单凭其中任何一方,都无法迫使一家一级银行的代币化平台与一家中央证券存管机构(CSD)的结算引擎实现互操作。这正是协调者上任要补的缺口。</p>
+<p>该角色围绕 DSS 而设。沙盒是英国监管边界内唯一允许机构在针对 CSDR 与现行结算规则定制豁免下发行、交易并结算真实数字证券(包括代币化国债)的场所(<a href="https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox" title="数字证券沙盒">Bank of England</a>、<a href="https://www.fca.org.uk/firms/innovation/digital-securities-sandbox" title="FCA 数字证券沙盒">FCA</a>)。它已上线运行,而非纸上规划。协调者的任务是确保沙盒内的机构在身份、结算最终性与报文格式上向同一标准看齐——这样,涌现出的平台才能真正彼此对话。</p>
+<p>这正是沙盒(Sandbox)与小沙坑(sandpit)之间的差别。</p>
+<h2 id="section-2">为什么先做代币化国债? <a class="heading-anchor" href="#section-2" aria-label="Link to 为什么先做代币化国债?">#</a></h2>
+<p>国债是英镑体系的基石。它是央行回购接受的担保品、银行用以满足 LCR 要求的资产、养老金用以匹配负债的工具。同时,它今天的结算运营管道在二十年里也未发生根本变化——CREST 批量、T+1 惯例、日终流动性对账。被这套工作流困住的资本规模不小。</p>
+<p>把国债搬上 DLT,会同时改变三件事。</p>
+<p>**日内回购变成原子化。**代币化国债以 T+0 与代币化现金对付,数秒内即结算,不再以小时计。原本用于满足当日现金需求的机构流动性缓冲,可释放回市场。对于一家管理大型回购簿的一级银行而言,这就是数个基点的融资成本——也是数个基点的 ROE。</p>
+<p>**担保品流动性不再依赖一通电话。**数字国债可在司法管辖之间瞬时质押或赎回,以应对追加保证金通知。中介托管报文那条慢链——传真、SWIFT MT、日终对账——让位给附带加密质押证明的智能合约转移。</p>
+<p>**结算环节的本金风险消失。**原子化券款对付(DvP)意味着国债腿与现金腿作为一个不可分割的操作执行。要么两腿同时结算,要么都不结算。今天将一方暴露于对手方交易中违约风险的那个结算窗口,被压缩到零。</p>
+<p>这些并不是未来的收益。它们已在沙盒中运行。</p>
+<h2 id="dss">DSS 运营模型 <a class="heading-anchor" href="#dss" aria-label="Link to DSS 运营模型">#</a></h2>
+<p>DSS 是一套正在运行的监管制度。要把它当平台用,而不仅是 PoC,银行需要一套既能经受监管审视、也能承受商业压力的架构。五根支柱承担承重职责。</p>
+<h3 id="section-4">工作流先于技术 <a class="heading-anchor" href="#section-4" aria-label="Link to 工作流先于技术">#</a></h3>
+<p>从摩擦入手。被困住的流动性、结算断点、对账成本、失败支付——这些才是客户付费要去除的问题。技术只有在去除它们时才正当。代币化是手段,不是产品。一个交付代币化国债日内回购的平台有用例。一个交付代币化引擎、再去找用例的平台没有。</p>
+<h3 id="section-5">数据作为控制面 <a class="heading-anchor" href="#section-5" aria-label="Link to 数据作为控制面">#</a></h3>
+<p>ISO 20022 报文绑定到链上交易哈希,把结算数据变成单一可信来源。没有这层绑定,智能合约自动化就脆,对账退回电子表格。有了它,银行才能获得直通处理、实时控制以及客户愿意付费的分析能力(<a href="https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026" title="2026 年 5 月支付格局更新">Association of Corporate Treasurers</a>)。</p>
+<h3 id="section-6">跨支付通道的编排 <a class="heading-anchor" href="#section-6" aria-label="Link to 跨支付通道的编排">#</a></h3>
+<p>受监管负债网络(RLN)、Canton、私有银行 DLT、RTGS、代币化商业银行货币——每一条都承载着银行已在运行的工作流。强行把每笔交易塞进同一张网络是错的仗。正确的架构是把每条工作流路由到在成本、速度、结算最终性、辖区与韧性上最佳组合的支付通道。这个决策应在运行时做出,而不是硬编码进平台。</p>
+<h3 id="section-7">政策即代码的合规 <a class="heading-anchor" href="#section-7" aria-label="Link to 政策即代码的合规">#</a></h3>
+<p>原子化结算不留事后合规的余地。制裁筛查、KYC 校验、头寸限额、辖区限制——全部必须在结算层与交易同步执行。输出的是加密审计轨迹,而非数据库日志。零知识身份证明使得这一切在不向对手方泄露客户数据的情况下成立。这是唯一能在日内成交量下生存的合规模型。</p>
+<h3 id="section-8">经得起董事会的单位经济性 <a class="heading-anchor" href="#section-8" aria-label="Link to 经得起董事会的单位经济性">#</a></h3>
+<p>每项倡议都需要硬数字。担保品融资节省的基点。日内流动性缓冲下降幅度。结算失败率。被替代的对账 FTE。对手方接入的周期时间。其他任何东西——人头、媒体曝光、PPT 页——都不是 ROI。没有这些指标,&quot;创新&quot;预算就成了下一任 CFO 一笔勾销的沉没成本。</p>
+<h2 id="section-9">架构矩阵 <a class="heading-anchor" href="#section-9" aria-label="Link to 架构矩阵">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>层</th>
+<th>2026 年 DSS 的要求</th>
+<th>机构层面的奖赏</th>
+<th>做错的代价</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>工作流</strong></td>
+<td>客户摩擦决定产品设计</td>
+<td>清晰的商业立项、资本释放、即时采纳</td>
+<td>没有用户的代币化平台——董事会幻灯片上的创新表演</td>
+</tr>
+<tr>
+<td><strong>数据</strong></td>
+<td>ISO 20022 报文绑定链上交易哈希</td>
+<td>直通处理、可审计级别的证据、可付费分析</td>
+<td>坏数据跑得更快——对账断点变多,而不是变少</td>
+</tr>
+<tr>
+<td><strong>支付通道</strong></td>
+<td>在 RTGS、RLN、Canton、私有 DLT、代币化现金之间路由</td>
+<td>资本效率、按需最终性、更低融资成本</td>
+<td>通道蔓延、流动性碎片化、控制重复五遍</td>
+</tr>
+<tr>
+<td><strong>控制</strong></td>
+<td>政策即代码、零知识身份、原子化合规</td>
+<td>在交易时点缓释风险——没有 T+2 才出现的惊喜</td>
+<td>几天后才人工调查——以及随之而来的罚款</td>
+</tr>
+<tr>
+<td><strong>经济性</strong></td>
+<td>与客户成果挂钩的可验证单位成本下降</td>
+<td>证据驱动的扩张、经得起审计的 ROE</td>
+<td>创新支出沉没、缺乏持久回报、董事会一笔勾销</td>
+</tr>
+</tbody>
+</table>
+<h2 id="section-10">不同类型机构的含义 <a class="heading-anchor" href="#section-10" aria-label="Link to 不同类型机构的含义">#</a></h2>
+<blockquote>
+<p><em>&quot;决定性的命题是设计纪律:哪些数据、支付通道、控制、负债与客户工作流应当放在一起。&quot;</em></p>
+</blockquote>
+<h3 id="section-11">一级银行 <a class="heading-anchor" href="#section-11" aria-label="Link to 一级银行">#</a></h3>
+<p>构建编排层。一级银行无法承担每出现一种新的代币化资产或新的 DLT 网络,就再衍生出一套定制运营模型。其角色是充当链下与链上流动性之间受监管的桥梁——提供让沙盒为整个市场运转所需的法律封装、资产负债表与监管关系。守在网关、为接入收费、捍卫特许经营。</p>
+<h3 id="section-12">区域银行 <a class="heading-anchor" href="#section-12" aria-label="Link to 区域银行">#</a></h3>
+<p>停止自建私有支付通道。优势在于信任与本地知识。向企业财资主管提供他们自己建不出来的可视化、欺诈控制以及通往一级数字流动性池的可靠接入。战略是集成,不是发明。</p>
+<h3 id="section-13">金融科技与市场基础设施提供方 <a class="heading-anchor" href="#section-13" aria-label="Link to 金融科技与市场基础设施提供方">#</a></h3>
+<p>2026 年胜出的金融科技,不会是又一张独立网络的运营方。它们会是集成层的提供者——编排引擎、预言机、合规取证工具——为银行降低复杂度。加在银行栈上,不要与之竞争。市场对独立网络已经表态。</p>
+<h3 id="section-14">企业财资主管 <a class="heading-anchor" href="#section-14" aria-label="Link to 企业财资主管">#</a></h3>
+<p>不要再接受日终报告。要求可编程银行:自动归集、实时流动性可视化、即时担保品部署、ISO 20022 级别的对账数据。提供这些能力的平台已经存在。筹码就是把工作流迁走的威胁。</p>
+<h2 id="section-15">下一步会发生什么 <a class="heading-anchor" href="#section-15" aria-label="Link to 下一步会发生什么">#</a></h2>
+<p>协调者角色是一种强制函数。DSS 是一套正在运行的制度。代币化国债已在测试中结算,生产上线近在眼前。每一块独立看都能跑通。2026 年的命题是:哪些机构能把它们装配成一套统一运营模型——哪些则要在季度业绩电话会上再花一年为遗留栈辩护。</p>
+<p>胜出的银行,不会是区块链营销喊得最响的那几家。它们会是架构隐形的那几家——工作流、数据、支付通道、控制与经济性如此干净地交织在一起,客户从不看见接缝。这就是伦敦金融城如今要去对标的水位。Singapore、Switzerland 与 Frankfurt 在盯着看。他们已经注意到了。</p>
+<h2 id="section-16">常见问题 <a class="heading-anchor" href="#section-16" aria-label="Link to 常见问题">#</a></h2>
+<p><strong>什么是数字证券沙盒(DSS),它为何重要?</strong></p>
+<p>DSS 是 FCA 与英格兰银行联合主持的监管制度,允许机构在针对 CSDR 与现行结算规则的定制豁免下发行、交易并结算真实数字证券——代币化国债在内。它之所以重要,是因为英国机构可以在监管掩护下运行真实的基于 DLT 的批发市场基础设施,而不是一次性丢弃的 PoC。</p>
+<p><strong>为什么偏偏选代币化国债,而不是公司债或股票?</strong></p>
+<p>国债是英镑体系内最深、监管最严的资产——央行接受的担保品、LCR 的中坚、养老金用于负债匹配的工具。把它代币化,就是在最难的资产类别上检验完整技术栈。其他任何标的相比之下都更容易。</p>
+<p><strong>RLN、Canton 与私有银行 DLT 有何区别?</strong></p>
+<p>受监管负债网络是一种共享账本模型,承载由多家受监管机构发行的代币化商业银行货币。Canton 是一种许可型、隐私保护的 DLT,在资本市场中广泛使用。私有银行 DLT 则是单一机构的网络。2026 年的编排层会根据工作流在三者之间路由。</p>
+<p><strong>原子化 DvP 如何消除本金风险?</strong></p>
+<p>非 DvP 的结算窗口里,一笔交易的一腿先于另一腿结算。原子化 DvP 用智能合约把两腿作为一个不可分割的操作执行——要么两腿同时结算,要么都不结算。对手方在窗口内违约,就再也无法把另一方留在敞口里,因为窗口本身已不存在。</p>
+<p><strong>&quot;政策即代码&quot;在实务中是什么意思?</strong></p>
+<p>合规规则——制裁筛查、KYC 校验、头寸限额、辖区限制——直接编码进智能合约或结算层,在交易时点执行。输出是加密审计轨迹,而非要监管机构信任的数据库日志。</p>
+<p><strong>银行应如何衡量 DSS 试点的 ROI?</strong></p>
+<p>担保品融资节省的基点。日内流动性缓冲下降幅度。结算失败率。被替代的对账 FTE。对手方接入的周期时间。就是这份清单。人头、媒体曝光、董事会幻灯片不是 ROI——从来都不是。</p>
+<h2 id="section-17">参考资料 <a class="heading-anchor" href="#section-17" aria-label="Link to 参考资料">#</a></h2>
+<ul>
+<li>GOV.UK,(2026)。<a href="https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology" title="英国金融科技扶持">英国金融科技获扶持以拥抱未来支付技术 ⧉</a>。</li>
+<li>Bank of England,(2026)。<a href="https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox" title="数字证券沙盒">数字证券沙盒 ⧉</a>。</li>
+<li>FCA,(2026)。<a href="https://www.fca.org.uk/firms/innovation/digital-securities-sandbox" title="FCA 数字证券沙盒">数字证券沙盒 ⧉</a>。</li>
+<li>Association of Corporate Treasurers,(2026)。<a href="https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026" title="支付格局更新">2026 年 5 月支付格局更新 ⧉</a>。</li>
+<li>Global Government Finance,(2026)。<a href="https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/" title="英国批发数字市场协调者">英国批发数字市场协调者 ⧉</a>。</li>
+</ul>
+<!-- enrich-start -->
+
+<p class="post-reviewed">最近审阅 <time datetime="2026-05-30">2026-05-30</time>。</p>
+
+<!-- enrich-end -->
+</content>
+</invoke>
+<aside class="author-card" aria-label="关于作者"><img alt="Sebastien Rousseau 肖像" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=85" width="64" height="64" loading="lazy" decoding="async"  fetchpriority="high"><span class="author-card-body"><strong class="author-card-name"><a href="/zh-hans/guanyu/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">资深银行技术专家，撰写关于应用人工智能、ISO 20022 迁移、面向金融服务的后量子密码学，以及批发支付结构性转型的内容。</span><span class="author-credentials">20 多年经验，曾任职于汇丰商业及投资银行、PayPal、巴克莱、Shazam、AKQA、维珍集团。 <a href="/zh-hans/guanyu/index.html">完整简介</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">最近审阅 <time datetime="2026-06-11">2026-06-11</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">相关阅读</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/zh-hans/2026-05-21-tokenised-deposits-banking-services-status-2026" class="related-media" aria-label="2026年的代币化存款：银行服务、稳定币竞争与可编程商业银行货币的现状" tabindex="-1"><img alt="Tokenised deposit banking architecture for 2026 showing commercial bank money, digital wallets, stablecoins, CBDCs, tokenised gilts, and Project Agorá settlement paths" src="https://cloudcdn.pro/api/transform?url=/stocks/images/bit-cloud-GlqbGLCPnQ4.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="2026"><a href="https://sebastienrousseau.com/zh-hans/2026-05-21-tokenised-deposits-banking-services-status-2026">2026年的代币化存款：银行服务、稳定币竞争与可编程商业银行货币的现状</a> <a class="heading-anchor" href="#2026" aria-label="Link to 2026年的代币化存款：银行服务、稳定币竞争与可编程商业银行货币的现状">#</a></h3><p><time datetime="2026-05-21">2026-05-21</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/zh-hans/2026-05-19-global-wholesale-payments-economics-2026" class="related-media" aria-label="2026年全球批发支付：ISO 20022、RTGS更新与互操作性的经济学" tabindex="-1"><img alt="Global wholesale payments architecture map for 2026 showing ISO 20022, RTGS renewal, cross-border corridors, liquidity windows, and DLT settlement pilots" src="https://cloudcdn.pro/api/transform?url=/stocks/images/miguel-sousa-ejIF-pJhYkM.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="2026-iso-20022rtgs"><a href="https://sebastienrousseau.com/zh-hans/2026-05-19-global-wholesale-payments-economics-2026">2026年全球批发支付：ISO 20022、RTGS更新与互操作性的经济学</a> <a class="heading-anchor" href="#2026-iso-20022rtgs" aria-label="Link to 2026年全球批发支付：ISO 20022、RTGS更新与互操作性的经济学">#</a></h3><p><time datetime="2026-05-19">2026-05-19</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/zh-hans/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026" class="related-media" aria-label="2026 自主财务指数：智能体司库、可编程流动性、代币化存款与实时现金管控" tabindex="-1"><img alt="Abstract architectural photograph used as the visual key for the 2026 Autonomous Treasury Index — measuring agentic treasury workflows, programmable liquidity, tokenised deposits, real-time payments, and automated cash control" src="https://cloudcdn.pro/api/transform?url=/stocks/images/christopher-burns-Kj2SaNHG-hg.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="2026-2"><a href="https://sebastienrousseau.com/zh-hans/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026">2026 自主财务指数：智能体司库、可编程流动性、代币化存款与实时现金管控</a> <a class="heading-anchor" href="#2026-2" aria-label="Link to 2026 自主财务指数：智能体司库、可编程流动性、代币化存款与实时现金管控">#</a></h3><p><time datetime="2026-06-07">2026-06-07</time></p></footer></article>
+</div>
+</aside><nav class="post-pagination" aria-label="Article pagination"><a class="post-pagination-prev" href="/zh-hans/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/"><span class="post-pagination-label">Previous</span><span class="post-pagination-title">ISO 20022 After Migration: Turning Payment Data into Banking Products in 2026</span></a><a class="post-pagination-next" href="/zh-hans/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/"><span class="post-pagination-label">Next</span><span class="post-pagination-title">Post-Quantum Payments Infrastructure: Why Banks May Replace Rather Than Retrofit Legacy Rails</span></a></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/zh-hans/guanyu/index.html">关于</a></li>
+              <li><a href="/zh-hans/lianxi/index.html">联系</a></li>
+              <li><a href="/zh-hans/yong-static-site-generator-zhizuo/index.html">使用 Static Site Generator 构建</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">文章</h2>
+            <ul>
+              <li><a href="/zh-hans/wenzhang/index.html">文章</a></li>
+              <li><a href="/zh-hans/lunwen/index.html">论文与白皮书</a></li>
+              <li><a href="/zh-hans/biaoqian/index.html">标签</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">工作</h2>
+            <ul>
+              <li><a href="/zh-hans/xiangmu/index.html">项目</a></li>
+              <li><a href="/zh-hans/boqing/index.html">播放列表</a></li>
+              <li><a href="/zh-hans/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">联系</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="/contact/" method="get" aria-label="通讯订阅">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — 关于支付、人工智能与后量子密码学的研究笔记。无垃圾邮件。</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="nin@yinhang.com" />
+            <input type="hidden" name="subject" value="newsletter" />
+            <input type="hidden" name="message" value="Please subscribe me to the Banking On Quantum newsletter." />
+            <button type="submit">订阅</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved.</span>
+          <div class="social" aria-label="社交链接">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau 于 Twitter / X"><img src="https://cloudcdn.pro/common/images/buttons/x-black.svg" alt="Sebastien Rousseau 于 Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau 于 LinkedIn"><img src="https://cloudcdn.pro/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau 于 LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau 于 Medium"><img src="https://cloudcdn.pro/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau 于 Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau 于 YouTube"><img src="https://cloudcdn.pro/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau 于 YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/zh-hans/wuzhang-ai/index.html">无障碍访问</a> ·
+            <a href="/zh-hans/yinsi/index.html">隐私</a> ·
+            <a href="/zh-hans/tiaokuan/index.html">条款</a> ·
+            <a href="https://www.thegreenwebfoundation.org/green-web-check/?url=sebastienrousseau.com" target="_blank" rel="noopener noreferrer" title="Hosted on 100% renewable energy (Cloudflare) — estimate via Sustainable Web Design v4 model">Carbon: ~0.04 g/visit · green-hosted</a> ·
+            <a href="https://github.com/sebastienrousseau/sebastienrousseau.github.io/blob/main/project-docs/sigstore.md" target="_blank" rel="noopener noreferrer" title="Every dated article is signed with Sigstore — verify the bytes match what was published">Verify signatures</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","identifier":{"@type":"PropertyValue","propertyID":"ORCID","value":"0009-0005-1434-284X","url":"https://orcid.org/0009-0005-1434-284X"},"worksFor":{"@type":"Organization","@id":"https://www.hsbc.com/#organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal","url":"https://www.paypal.com/"},{"@type":"Organization","name":"Barclays","url":"https://www.barclays.com/"},{"@type":"Organization","name":"Shazam Entertainment","url":"https://www.shazam.com/"},{"@type":"Organization","name":"AKQA","url":"https://www.akqa.com/"},{"@type":"Organization","name":"Virgin Group","url":"https://www.virgin.com/"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"hasCredential":[{"@type":"EducationalOccupationalCredential","credentialCategory":"professional experience","name":"20+ years across Tier-1 banks and global payments infrastructure","recognizedBy":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"}},{"@type":"EducationalOccupationalCredential","credentialCategory":"domain expertise","name":"ISO 20022 migration and wholesale payments architecture","recognizedBy":{"@type":"Organization","name":"SWIFT","url":"https://www.swift.com/"}},{"@type":"EducationalOccupationalCredential","credentialCategory":"domain expertise","name":"Post-Quantum Cryptography for financial services","recognizedBy":{"@type":"Organization","name":"NIST Post-Quantum Cryptography Project","url":"https://csrc.nist.gov/projects/post-quantum-cryptography"}}],"knowsAbout":[{"@type":"DefinedTerm","name":"Post-Quantum Cryptography","sameAs":"https://en.wikipedia.org/wiki/Post-quantum_cryptography"},{"@type":"DefinedTerm","name":"ML-KEM (FIPS 203)","sameAs":"https://csrc.nist.gov/pubs/fips/203/final"},{"@type":"DefinedTerm","name":"ML-DSA (FIPS 204)","sameAs":"https://csrc.nist.gov/pubs/fips/204/final"},{"@type":"DefinedTerm","name":"ISO 20022","sameAs":"https://en.wikipedia.org/wiki/ISO_20022"},{"@type":"DefinedTerm","name":"SWIFT gpi","sameAs":"https://www.swift.com/our-solutions/swift-gpi"},{"@type":"DefinedTerm","name":"SEPA Instant Payments","sameAs":"https://www.ecb.europa.eu/paym/integration/retail/instant_payments/html/index.en.html"},{"@type":"DefinedTerm","name":"FedNow Service","sameAs":"https://www.federalreserve.gov/paymentsystems/fednow_about.htm"},{"@type":"DefinedTerm","name":"Real-Time Payments (RTP)","sameAs":"https://www.theclearinghouse.org/payment-systems/rtp"},{"@type":"DefinedTerm","name":"Cross-border payments","sameAs":"https://en.wikipedia.org/wiki/Cross-border_payments"},{"@type":"DefinedTerm","name":"Wholesale banking","sameAs":"https://en.wikipedia.org/wiki/Wholesale_banking"},{"@type":"DefinedTerm","name":"Applied artificial intelligence in banking","sameAs":"https://en.wikipedia.org/wiki/Applications_of_artificial_intelligence"},{"@type":"DefinedTerm","name":"Generative artificial intelligence","sameAs":"https://en.wikipedia.org/wiki/Generative_artificial_intelligence"}],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://orcid.org/0009-0005-1434-284X","https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":["Organization","Brand"],"@id":"https://sebastienrousseau.com/#organization","name":"Sebastien Rousseau","alternateName":"Banking on Quantum","url":"https://sebastienrousseau.com/","logo":{"@type":"ImageObject","@id":"https://sebastienrousseau.com/#logo","url":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","width":"512","height":"512","caption":"Sebastien Rousseau"},"founder":{"@id":"https://sebastienrousseau.com/#person"},"editorialPolicy":"https://sebastienrousseau.com/editorial/","correctionsPolicy":"https://sebastienrousseau.com/editorial/#corrections","ethicsPolicy":"https://sebastienrousseau.com/editorial/","diversityPolicy":"https://sebastienrousseau.com/editorial/","sameAs":["https://github.com/sebastienrousseau","https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#organization"},"author":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"zh-hans"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"zh-hans"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":245,"headline":"英国批发数字市场:代币化国债、结算与新设的协调者角色","description":"英国批发数字市场协调者(Champion)角色把代币化批发金融升格为国家竞争力工程,重塑伦敦金融城在代币化国债与结算上的运营模型。","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&w=1200&format=webp&q=80","width":"100vw","height":"100vh","caption":"英国批发数字市场示意图:代币化国债、结算、数字资产、代币化存款、监管协调与资本市场基础设施"},"url":"https://sebastienrousseau.com/zh-hans/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/","datePublished":"2026-05-30T06:06:06+00:00","dateModified":"2026-05-30","inLanguage":"zh-hans","keywords":"英国批发数字市场 2026, Chris Woolard, 代币化国债, 代币化批发金融, 数字市场协调者, 英国代币化, 结算","articleSection":"Finance","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/zh-hans/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"zh-hans"},"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/zh-hans/"},{"@type":"ListItem","position":3,"name":"英国批发数字市场:代币化国债、结算与新设的协调者角色","item":"https://sebastienrousseau.com/zh-hans/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/"}]}]}</script>
+<script src="/main.931cef3c.js" defer integrity="sha256-JUs9z2u4RDSgxMCjBnyMmIHIkpakA7s5FxUmnDnSpD0= sha256-r33y52uSTzd+MqMufJlWsd09gyxv578IRoF5Gomw7Aw=" crossorigin="anonymous"></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="搜索">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>搜索</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="搜索">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="搜索文档…" autocomplete="off" aria-label="搜索"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> 关闭</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> 导航</span><span><kbd>Enter</kbd> 打开</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" integrity="sha256-Y0txeCfdk+GUctTYMAxMbFCB2qs1cPm8JSIX3WRS9cs= sha256-5Ca5zk/7tsavsCDhg6M1m4feBn+L4YnJ7iavKawynII=" crossorigin="anonymous"></script>
+</div>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"英国批发数字市场:代币化国债、结算与新设的协调者角色","url":"https://sebastienrousseau.com/zh-hans/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/","inLanguage":"zh-Hans","isAccessibleForFree":true,"author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#organization"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/zh-hans/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/"},"keywords":"英国批发数字市场 2026, Chris Woolard, 代币化国债, 代币化批发金融, 数字市场协调者, 英国代币化, 结算","proficiencyLevel":"Expert"}</script></body>
+</html>

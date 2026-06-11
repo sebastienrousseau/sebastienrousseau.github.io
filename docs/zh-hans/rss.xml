@@ -6,14 +6,14 @@
     <description>中文文章：应用人工智能、ISO 20022 支付、后量子密码学以及批发支付的转型。</description>
     <atom:link href="https://sebastienrousseau.com/zh-hans/rss.xml" rel="self" type="application/rss+xml"/>
     <language>zh-Hans</language>
-    <lastBuildDate>Thu, 28 May 2026 23:46:22 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 11 Jun 2026 00:09:27 +0000</lastBuildDate>
     <copyright>© 版权所有 2007 - 2026 - Sebastien Rousseau。保留所有权利。</copyright>
     <item>
       <title>CloudCDN：2026 年 AI原生 边缘的开源蓝图</title>
       <link>https://sebastienrousseau.com/zh-hans/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/</link>
       <description>CloudCDN：面向 MCP 控制基础设施、Durable Objects 速率限制、签名URL、无障碍与可审计性的 AI原生 边缘 CDN 开源蓝图。</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/zh-hans/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/</guid>
-      <pubDate>Thu, 28 May 2026 23:46:22 +0000</pubDate>
+      <pubDate>Thu, 11 Jun 2026 00:09:27 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/alis-po-IdVNRv-5wJo.webp" type="image/webp" length="0"/>
       <category>CloudCDN</category>
@@ -26,6 +26,232 @@
       <category>passkeys</category>
       <category>SLSA</category>
       <category>边缘基础设施</category>
+    </item>
+    <item>
+      <title>2026 银行运营韧性指数：AI、云、量子、支付与第三方集中风险</title>
+      <link>https://sebastienrousseau.com/zh-hans/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/</link>
+      <description>2026 银行运营韧性指数：把 AI 风险、云集中风险、抗量子安全、支付连续性与关键第三方依赖合并为一张董事会可读的记分板。</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/zh-hans/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/</guid>
+      <pubDate>Thu, 11 Jun 2026 00:09:27 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/simone-hutsch-oqlh6RsrYB0.webp" type="image/webp" length="0"/>
+      <category>银行运营韧性指数 2026</category>
+      <category>DORA 韧性</category>
+      <category>AI 运营风险</category>
+      <category>云集中风险</category>
+      <category>银行量子风险</category>
+      <category>支付韧性</category>
+    </item>
+    <item>
+      <title>2026 自主财务指数：智能体司库、可编程流动性、代币化存款与实时现金管控</title>
+      <link>https://sebastienrousseau.com/zh-hans/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/</link>
+      <description>2026 年自主财务就绪度指数，覆盖智能体司库工作流、可编程流动性、代币化存款、实时支付与自动化现金管控。</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/zh-hans/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/</guid>
+      <pubDate>Thu, 11 Jun 2026 00:09:27 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/christopher-burns-Kj2SaNHG-hg.webp" type="image/webp" length="0"/>
+      <category>2026 自主财务</category>
+      <category>智能体司库</category>
+      <category>可编程流动性</category>
+      <category>代币化存款司库</category>
+      <category>实时司库</category>
+      <category>现金管理 AI</category>
+      <category>ISO 20022</category>
+      <category>JPM Coin</category>
+      <category>Kinexys</category>
+      <category>BIS</category>
+    </item>
+    <item>
+      <title>2026 年的多通道银行:卡、A2A、稳定币、RTP、FedNow 与 Open Banking 合于一套战略</title>
+      <link>https://sebastienrousseau.com/zh-hans/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</link>
+      <description>FedNow 要求 7×24 小时预筹流动性。ACH 廉价但是 T+1。USDC 原子结算却需要钱包基础设施。2026 年的多通道银行按成本、终局性与流动性成本逐笔路由,由读取 ISO 20022 pacs.008 的编排引擎作出决策。</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/zh-hans/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</guid>
+      <pubDate>Thu, 11 Jun 2026 00:09:27 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" type="image/webp" length="0"/>
+      <category>支付编排层</category>
+      <category>FedNow 与 RTP</category>
+      <category>FedNow 与 ACH</category>
+      <category>稳定币结算</category>
+      <category>USDC 原子结算</category>
+      <category>ISO 20022 pacs.008</category>
+      <category>账户到账户 A2A</category>
+      <category>Open Banking API</category>
+      <category>预筹流动性</category>
+      <category>7×24 流动性陷阱</category>
+      <category>2026 多通道银行</category>
+      <category>支付路由引擎</category>
+      <category>ERP 对账</category>
+    </item>
+    <item>
+      <title>后量子支付基础设施:为何银行可能替换而非改造传统通道</title>
+      <link>https://sebastienrousseau.com/zh-hans/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</link>
+      <description>后量子密码学迫使支付通道作出二选一:在从未为 ML-KEM 与 ML-DSA 适配的 SWIFT MT 与 ISO 20022 信封内改造 RSA/ECC,或以密码敏捷的基础设施替换。架构师必须在 HNDL 转为运营损失前决断。</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/zh-hans/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</guid>
+      <pubDate>Thu, 11 Jun 2026 00:09:27 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp" type="image/webp" length="0"/>
+      <category>后量子密码学</category>
+      <category>PQC 支付</category>
+      <category>密码敏捷性</category>
+      <category>现收割后解密</category>
+      <category>HNDL</category>
+      <category>NIST 后量子标准</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>FIPS 203</category>
+      <category>FIPS 204</category>
+      <category>支付通道迁移</category>
+      <category>ISO 20022 PQC</category>
+      <category>SWIFT MT 替换</category>
+      <category>HSM</category>
+      <category>PKI 崩塌</category>
+      <category>运营韧性</category>
+      <category>Quantum Computing Cybersecurity Preparedness Act</category>
+    </item>
+    <item>
+      <title>2026 大额支付指数:ISO 20022、代币化存款、实时通道与跨境结算</title>
+      <link>https://sebastienrousseau.com/zh-hans/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</link>
+      <description>面向 2026 年的大额支付就绪度指数:衡量 ISO 20022 数据质量、代币化存款、实时通道、跨境结算与流动性效率的工程化基准。</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/zh-hans/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</guid>
+      <pubDate>Sat, 06 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/miquel-parera-NsXLehhHx1Q.webp" type="image/webp" length="0"/>
+      <category>2026 大额支付</category>
+      <category>ISO 20022</category>
+      <category>代币化存款</category>
+      <category>Project Agorá</category>
+      <category>跨境支付</category>
+      <category>实时支付</category>
+      <category>结构化地址数据</category>
+      <category>支付数据质量</category>
+    </item>
+    <item>
+      <title>2026 云原生银行指数:DORA、平台工程、主权云与运营韧性</title>
+      <link>https://sebastienrousseau.com/zh-hans/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/</link>
+      <description>面向 2026 年的云原生银行指数:衡量 DORA 落地度、平台工程成熟度、云集中度风险、退出证据与运营韧性的工程化基准。</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/zh-hans/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/</guid>
+      <pubDate>Fri, 05 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/quang-nguyen-vinh-2649403.webp&w=1600&format=webp&q=85" type="image/webp" length="0"/>
+      <category>2026 云原生银行</category>
+      <category>DORA 银行合规</category>
+      <category>云集中度风险</category>
+      <category>银行平台工程</category>
+      <category>ICT 第三方风险</category>
+      <category>云退出策略</category>
+      <category>主权云</category>
+      <category>Kubernetes</category>
+      <category>ISO 20022</category>
+    </item>
+    <item>
+      <title>2026 年量子安全银行业指数:后量子密码学、QKD、密码敏捷性与先收集后解密风险</title>
+      <link>https://sebastienrousseau.com/zh-hans/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/</link>
+      <description>面向 2026 年的量子安全银行业就绪度指数,涵盖 NIST 后量子标准、密码学清单、密码敏捷性、QKD,以及长期保留数据的暴露风险。</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/zh-hans/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/</guid>
+      <pubDate>Thu, 04 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>量子安全银行 2026</category>
+      <category>银行后量子密码学</category>
+      <category>NIST FIPS 203</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>SLH-DSA</category>
+      <category>密码敏捷性</category>
+      <category>QKD 银行</category>
+    </item>
+    <item>
+      <title>2026 年银行智能体 AI 指数:衡量自主性、治理、可审计性与业务影响</title>
+      <link>https://sebastienrousseau.com/zh-hans/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/</link>
+      <description>面向银行的智能体 AI 就绪度指数框架,涵盖自主性、治理、可审计性、可靠性、控制与业务价值六个维度。</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/zh-hans/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/</guid>
+      <pubDate>Wed, 03 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>智能体 AI 银行 2026</category>
+      <category>AI 智能体 银行</category>
+      <category>金融服务 AI 治理</category>
+      <category>自主银行工作流</category>
+      <category>模型风险管理</category>
+      <category>AI 可审计性</category>
+    </item>
+    <item>
+      <title>2026 年银行基础设施指数:衡量自主式 AI、量子安全、云原生韧性与批发支付的就绪度</title>
+      <link>https://sebastienrousseau.com/zh-hans/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/</link>
+      <description>受斯坦福 AI Index 启发的 2026 年银行基础设施指数,衡量自主式 AI、量子安全、云原生韧性与全球批发支付四大领域的就绪度。</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/zh-hans/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/</guid>
+      <pubDate>Tue, 02 Jun 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/miguel-sousa-ejIF-pJhYkM.webp" type="image/webp" length="0"/>
+      <category>banking infrastructure index 2026</category>
+      <category>银行基础设施指数</category>
+      <category>agentic AI banking</category>
+      <category>自主式 AI 银行</category>
+      <category>quantum safe banking</category>
+      <category>量子安全</category>
+      <category>cloud native banking</category>
+      <category>云原生银行</category>
+      <category>wholesale payments</category>
+      <category>批发支付</category>
+      <category>ISO 20022</category>
+      <category>DORA</category>
+      <category>Project Agora</category>
+      <category>tokenised deposits</category>
+      <category>代币化存款</category>
+    </item>
+    <item>
+      <title>英国批发数字市场:代币化国债、结算与新设的协调者角色</title>
+      <link>https://sebastienrousseau.com/zh-hans/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</link>
+      <description>英国批发数字市场协调者(Champion)角色把代币化批发金融升格为国家竞争力工程,重塑伦敦金融城在代币化国债与结算上的运营模型。</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/zh-hans/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</guid>
+      <pubDate>Sat, 30 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>英国批发数字市场 2026</category>
+      <category>Chris Woolard</category>
+      <category>代币化国债</category>
+      <category>代币化批发金融</category>
+      <category>数字市场协调者</category>
+      <category>英国代币化</category>
+      <category>结算</category>
+    </item>
+    <item>
+      <title>ISO 20022 迁移之后：把支付数据做成 2026 银行产品</title>
+      <link>https://sebastienrousseau.com/zh-hans/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</link>
+      <description>ISO 20022 迁移之后是一次数据产品机会。结构化地址、用途代码、汇款信息、调查报文与更丰富的支付状态事件，可以转化为对账、欺诈、流动性、合规与分析产品。</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/zh-hans/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</guid>
+      <pubDate>Fri, 29 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/humphrey-muleba-1660004.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>ISO 20022 2026</category>
+      <category>结构化地址</category>
+      <category>CBPR+</category>
+      <category>支付数据产品</category>
+      <category>用途代码</category>
+      <category>企业财资</category>
+      <category>对账</category>
+      <category>制裁筛查</category>
+      <category>欺诈检测</category>
+    </item>
+    <item>
+      <title>数字资产 2026：基础设施转型不可缓</title>
+      <link>https://sebastienrousseau.com/zh-hans/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</link>
+      <description>数字资产已不再是创新押注，而是关于结算、托管与资产负债表的架构问题；银行的战略任务是在结构性不确定中设计基础设施。</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/zh-hans/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</guid>
+      <pubDate>Thu, 28 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/corporate-finance.webp" type="image/webp" length="0"/>
+      <category>数字资产 2026</category>
+      <category>代币化现实资产</category>
+      <category>稳定币银行</category>
+      <category>代币化存款</category>
+      <category>数字资产托管</category>
+      <category>DLT 银行</category>
+      <category>结算基础设施</category>
+      <category>抵押品流动性</category>
+      <category>可编程货币</category>
+      <category>银行数字资产战略</category>
     </item>
     <item>
       <title>DORA、EU AI 法案与数据主权：银行 2026 合规栈</title>
@@ -50,7 +276,7 @@
       <guid isPermaLink="true">https://sebastienrousseau.com/zh-hans/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/</guid>
       <pubDate>Wed, 27 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <enclosure url="https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp" type="image/webp" length="0"/>
       <category>2026 支付人工智能</category>
       <category>支付欺诈</category>
       <category>支付路由</category>
@@ -257,7 +483,7 @@
       <guid isPermaLink="true">https://sebastienrousseau.com/zh-hans/2026-05-19-global-wholesale-payments-economics-2026/</guid>
       <pubDate>Tue, 19 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/meiying-ng-OrwkD-iWgqg.webp" type="image/webp" length="0"/>
+      <enclosure url="https://cloudcdn.pro/stocks/images/miguel-sousa-ejIF-pJhYkM.webp" type="image/webp" length="0"/>
       <category>批发支付 2026</category>
       <category>全球支付经济学</category>
       <category>ISO 20022</category>

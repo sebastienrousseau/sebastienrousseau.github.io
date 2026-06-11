@@ -1,11 +1,13 @@
 {
   "subtitle": "Майбутнє штучного інтелекту крізь призму революційної правової бази ЄС",
-  "banner_alt": "Людина сидить на чорній лавці та читає газету",
   "keywords": "EU AI Act, регулювання штучного інтелекту, етична рамка ШІ, управління ризиками ШІ, інновації ШІ, прозорість ШІ, права споживачів ШІ, управління ШІ, стандарти ШІ, етика ШІ",
-  "language": "uk-UA",
-  "locale": "uk_UA",
   "date": "Feb 13, 2024",
-  "title": "[UK DRAFT] EU's AI Act: Pioneering Ethical AI Regulation Worldwide",
+  "reading_time": 1,
   "description": "EU AI Act запроваджує перший у світі комплексний рівневий регуляторний акт для ШІ. Що змінюється для банків, постачальників та систем із високим ризиком.",
-  "banner": "https://cloudcdn.pro/stocks/images/ryoji-iwata-a-qsFZimp1M.webp"
+  "title": "[UK DRAFT] EU's AI Act: Pioneering Ethical AI Regulation Worldwide",
+  "banner": "https://cloudcdn.pro/stocks/images/ryoji-iwata-a-qsFZimp1M.webp",
+  "locale": "uk_UA",
+  "banner_alt": "Людина сидить на чорній лавці та читає газету",
+  "word_count": 215,
+  "language": "uk-UA"
 }

@@ -8,9 +8,153 @@
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>ru-RU</news:language>
     </news:publication>
-    <news:publication_date>2026-05-28T23:46:22+00:00</news:publication_date>
+    <news:publication_date>2026-06-11T00:09:27+00:00</news:publication_date>
     <news:title>CloudCDN: открытая схема AI-нативной периферии в 2026 году</news:title>
     <news:keywords>CloudCDN, AI-нативная периферия, открытый CDN, MCP-сервер, Cloudflare Workers, Durable Objects, подписанные URL, passkeys, SLSA, периферийная инфраструктура</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ru/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ru-RU</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-11T00:09:27+00:00</news:publication_date>
+    <news:title>Индекс банковской устойчивости 2026 года: ИИ, облако, квант, платежи, риск концентрации третьих лиц</news:title>
+    <news:keywords>индекс банковской устойчивости 2026, устойчивость DORA, операционный риск ИИ, риск концентрации в облаке, квантовый риск в банке, устойчивость платежей</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ru/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ru-RU</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-11T00:09:27+00:00</news:publication_date>
+    <news:title>Индекс автономного казначейства 2026: агентные процессы, программируемая ликвидность, токенизированные депозиты</news:title>
+    <news:keywords>автономное казначейство 2026, агентное казначейство, программируемая ликвидность, токенизированные депозиты казначейство, казначейство в реальном времени, управление наличными ИИ</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ru/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ru-RU</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-11T00:09:27+00:00</news:publication_date>
+    <news:title>Индекс агентного ИИ для банков в 2026 году: измерение автономии, управления, аудируемости и бизнес-эффекта</news:title>
+    <news:keywords>агентный ИИ в банках 2026, ИИ-агенты в банках, управление ИИ в финансовых услугах, автономные банковские рабочие процессы, управление модельным риском, аудируемость ИИ</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ru/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ru-RU</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-11T00:09:27+00:00</news:publication_date>
+    <news:title>Мульти-рельсовый банк в 2026 году: карты, A2A, стейблкоины, RTP, FedNow и открытый банкинг в единой стратегии</news:title>
+    <news:keywords>уровень оркестрации платежей, FedNow против RTP, FedNow против ACH, расчёты в стейблкоинах, атомарный расчёт USDC, ISO 20022 pacs.008, A2A платежи, API открытого банкинга, предварительно профондированная ликвидность, ловушка ликвидности 24/7, мульти-рельсовый банк 2026, движок маршрутизации платежей, сверка с ERP</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ru/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ru-RU</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-11T00:09:27+00:00</news:publication_date>
+    <news:title>Постквантовая платёжная инфраструктура: почему банки заменят, а не доработают устаревшие рельсы</news:title>
+    <news:keywords>постквантовая криптография, PQC платежи, криптоагильность, собирай-сейчас-расшифровывай-позже, HNDL, постквантовые стандарты NIST, ML-KEM, ML-DSA, FIPS 203, FIPS 204, миграция платёжных рельсов, ISO 20022 PQC, замена SWIFT MT, HSM, обрушение PKI, операционная устойчивость, Quantum Computing Cybersecurity Preparedness Act</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ru/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ru-RU</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-11T00:09:27+00:00</news:publication_date>
+    <news:title>Цифровые активы в 2026: инфраструктурный переход, который банки не могут откладывать</news:title>
+    <news:keywords>цифровые активы 2026, токенизированные реальные активы, стейблкоины банки, токенизированные депозиты, кастоди цифровых активов, DLT в банках, инфраструктура расчётов, мобильность обеспечения, программируемые деньги, стратегия банка по цифровым активам</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ru/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ru-RU</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-06T06:06:06+00:00</news:publication_date>
+    <news:title>Индекс оптовых платежей в 2026 году: ISO 20022, токенизированные депозиты, рельсы реального времени и трансграничный расчёт</news:title>
+    <news:keywords>оптовые платежи 2026, ISO 20022, токенизированные депозиты, проект Agorá, трансграничные платежи, платежи реального времени, структурированные адресные данные, качество платёжных данных</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ru/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ru-RU</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-05T06:06:06+00:00</news:publication_date>
+    <news:title>Индекс облачно изначально банкинга 2026: DORA, инженерия платформы, суверенное облако и операционная устойчивость</news:title>
+    <news:keywords>облачно изначально банкинг 2026, DORA в банках, риск концентрации в облаке, инженерия платформы в банках, риски третьих сторон ИКТ, стратегия выхода из облака, суверенное облако</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ru/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ru-RU</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-04T06:06:06+00:00</news:publication_date>
+    <news:title>Индекс квантово-устойчивого банкинга в 2026 году: постквантовая криптография, QKD, крипто-гибкость и риск harvest-now-decrypt-later</news:title>
+    <news:keywords>квантово-устойчивый банкинг 2026, постквантовая криптография банки, NIST FIPS 203, ML-KEM, ML-DSA, SLH-DSA, крипто-гибкость, QKD в банках</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ru/2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ru-RU</news:language>
+    </news:publication>
+    <news:publication_date>2026-06-02T06:06:06+00:00</news:publication_date>
+    <news:title>Индекс банковской инфраструктуры 2026: готовность к агентному ИИ, квантовой безопасности, облачной устойчивости и оптовым платежам</news:title>
+    <news:keywords>индекс банковской инфраструктуры 2026, агентный ИИ в банках, квантово-устойчивые банки, облачно-нативный банкинг, оптовые платежи, ISO 20022, DORA, Project Agora, токенизированные депозиты</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ru/2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ru-RU</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-30T06:06:06+00:00</news:publication_date>
+    <news:title>Оптовые цифровые рынки Великобритании: токенизированные гилты, расчёт и новая роль координатора</news:title>
+    <news:keywords>оптовые цифровые рынки Великобритании 2026, Chris Woolard, токенизированные гилты, токенизированные оптовые финансы, координатор цифровых рынков, токенизация UK, расчёт</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ru/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ru-RU</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-29T06:06:06+00:00</news:publication_date>
+    <news:title>ISO 20022 после миграции: платёжные данные как банковские продукты в 2026</news:title>
+    <news:keywords>ISO 20022 2026, структурированный адрес, CBPR+, продукты платёжных данных, коды назначения, корпоративное казначейство, сверка, санкционный скрининг, обнаружение мошенничества, pacs.008, pain.001, SWIFT gpi, SEPA Instant, FedNow</news:keywords>
   </news:news>
 </url>
 <url>

@@ -1,5 +1,6 @@
 ---
 title: "ثوابت رياضية وتشفيرية لأمن Rust"
+tags: "math, cybersecurity, cryptography, Rust, programming, encryption, communication, constants, constants in Rust, Common library, ISO 20022, post-quantum cryptography, quantum computing, AI, open source"
 subtitle: "ثوابت رياضية وتشفيرية مُتحقَّق منها لأمن Rust ذي السلامة الذاكرية"
 description: "احموا تكامل الشفرة بثوابت رياضية وتشفيرية مُدقَّقة بعناية، تُعزّز سلامة الذاكرة والتزامن من أجل أمن شفرة أعلى."
 date: "Nov 05, 2023"

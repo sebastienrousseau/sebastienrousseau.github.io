@@ -1,5 +1,6 @@
 ---
 title: "Protecting Data in the Quantum Age: The Hash Library (HSH)"
+tags: "post-quantum cryptography, hash library, HSH, password hashing, key derivation, Argon2i, Bcrypt, Scrypt, quantum computing, ISO 20022, AI, Rust, open source"
 subtitle: "HSH: ɗakin karatu na hash mai tsayayya da quantum don zamanin post-quantum na tabbatar da asali."
 description: "HSH yana amfani da kayan aikin cryptographic masu tsayayya da kwamfutar quantum don kare bayananka, yana tabbatar da tsaronsu har ma a gaban ci gaban quantum na gaba."
 date: "Oct 16, 2023"
@@ -164,4 +165,3 @@ If you have any questions, please don't hesitate to contact me via [LinkedIn ⧉
 [09]: /articles/index.html "Back to Articles"
 [10]: /contact/index.html "Contact Sebastien Rousseau"
 [11]: https://www.linkedin.com/in/sebastienrousseau/ "Sebastien Rousseau on LinkedIn"
-
