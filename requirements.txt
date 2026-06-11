@@ -2,6 +2,6 @@
 # Keep this list minimal — every package here runs in CI and locally on
 # every build. Dev tooling (ruff, pytest) is pinned in CI workflows
 # directly so it doesn't drift with the build deps.
-markdown-it-py>=3,<4
-rjsmin>=1.2,<2
-rcssmin>=1.2,<2
+markdown-it-py>=4.2.0,<5
+rjsmin>=1.2.5,<2
+rcssmin>=1.2.2,<2
