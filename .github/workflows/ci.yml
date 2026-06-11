@@ -110,28 +110,31 @@ jobs:
       - name: Unit tests (pytest)
         run: pytest tests/unit/ -ra
 
-      - name: Coverage gate (postbuild_lib + build_translations must stay at 100 %)
+      - name: Coverage gate (postbuild_lib must stay at 100 %)
+        # build_translations is gated post-build below: its smoke suites are
+        # SKIP_IF_NO_BUILD-guarded, so a pre-build run can only reach ~92 %.
         run: |
           pytest tests/unit/ \
             --cov=scripts/postbuild/postbuild_lib \
-            --cov=scripts/generators/build_translations \
             --cov-fail-under=100 -q
 
       - name: Build site
         run: ./build.sh
 
-      - name: Post-build smoke tests (pytest)
-        # These suites are guarded by SKIP_IF_NO_BUILD and silently skip in
-        # the pre-build pytest run. Re-run them now that public/ exists so
-        # the build-dependent assertions actually execute in CI. Runs before
-        # the link / JSON-LD audits because the translations smoke re-renders
-        # locale pages and re-stamps CSP hashes (idempotent on a clean tree).
+      - name: Post-build smoke tests + combined coverage gate (100 %)
+        # The smoke suites are guarded by SKIP_IF_NO_BUILD and silently skip
+        # in the pre-build pytest run. Re-run all of tests/unit/ now that
+        # public/ exists so the build-dependent assertions execute, and gate
+        # postbuild_lib + build_translations at 100 % combined coverage —
+        # build_translations only reaches 100 % with the smoke suites live.
+        # Runs before the link / JSON-LD audits because the translations
+        # smoke re-renders locale pages and re-stamps CSP hashes (idempotent
+        # on a clean tree).
         run: |
-          pytest -ra \
-            tests/unit/test_build_output.py \
-            tests/unit/test_build_translations_smoke.py \
-            tests/unit/test_builder_main_smoke.py \
-            tests/unit/test_cli_smoke.py
+          pytest tests/unit/ -ra \
+            --cov=scripts/postbuild/postbuild_lib \
+            --cov=scripts/generators/build_translations \
+            --cov-fail-under=100
 
       - name: Internal-link audit
         run: python3 scripts/seo_and_audit/audit_links.py --base-dir public --strict-internal
