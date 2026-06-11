@@ -1,6 +1,9 @@
 # Deployment configuration
 
-The static site is served by GitHub Pages from `docs/`, with Cloudflare in
+The static site is deployed to GitHub Pages by CI: `.github/workflows/ci.yml`
+uploads the `public/` build output as a Pages artifact
+(`actions/upload-pages-artifact` → `actions/deploy-pages`) on every push to
+`main`. Nothing is served from a git-tracked directory. Cloudflare sits in
 front as the CDN. A handful of security headers and the post-quantum TLS
 key-exchange cannot be set from the static output — they have to be
 configured in the Cloudflare dashboard. This file is the canonical
@@ -91,7 +94,7 @@ required):
 
 | Header | Source |
 |---|---|
-| `Content-Security-Policy` (strict, hash-based, no `'unsafe-inline'`) | `<meta http-equiv>` in `_layouts/index.html`; per-page JSON-LD hashes computed by `scripts/postbuild.py:inject_jsonld_hashes()` |
+| `Content-Security-Policy` (strict, hash-based, no `'unsafe-inline'`) | `<meta http-equiv>` in `_layouts/index.html`; per-page JSON-LD hashes computed by `scripts/postbuild/postbuild.py:inject_jsonld_hashes()` |
 | `Permissions-Policy` (deny-by-default for ~40 permissions) | `<meta http-equiv>` |
 | `X-Content-Type-Options: nosniff` | `<meta http-equiv>` |
 | `Referrer-Policy: strict-origin-when-cross-origin` | `<meta name="referrer">` |
@@ -100,7 +103,7 @@ required):
 
 Every rendered page carries a `<script type="speculationrules">` block
 that asks the browser to prerender same-origin pages on hover. Wired in
-`scripts/postbuild.py:inject_speculation_rules()` and allowed by the CSP
+`scripts/postbuild/postbuild.py:inject_speculation_rules()` and allowed by the CSP
 via `'inline-speculationrules'` in `script-src`.
 
 Excluded patterns: `/_csp/*` (assets), `*.xml`/`*.json`/`*.txt`/`*.pdf`
@@ -111,20 +114,24 @@ pages (don't prerender forms).
 
 The site ships a static subtree per active language (`/fr/`, `/ja/`,
 `/zh-hans/`, …). A Cloudflare Worker at `workers/lang-router.js`
-redirects bare-root requests to the visitor's preferred locale at the
+redirects page navigations to the visitor's chosen locale at the
 edge — sub-50ms, no origin fetch.
 
-**Decision order:**
+**Decision order (explicit opt-in only — Accept-Language is NOT sniffed):**
 
-1. Honour an existing `pref-lang` cookie (visitor already chose).
-2. Honour `?lang=xx` in the URL — set the cookie so it sticks.
-3. Sniff `Accept-Language`; map the highest-q non-EN tag to a site
-   lang via `TAG_TO_LANG` and 302 there.
-4. Fall through to the EN tree if nothing matches.
+1. Honour an existing `pref-lang` cookie (visitor already chose via the
+   in-page locale switcher); `pref-lang=en` opts out of redirects.
+2. Honour `?lang=xx` in the URL as a deep-link — 302 to `/<lang>/…` and
+   set the cookie so it sticks.
+3. Fall through to the canonical EN tree otherwise.
 
-**Deploy:** Cloudflare dashboard → Workers & Pages → create application
-→ paste `workers/lang-router.js` → set routes
-`sebastienrousseau.com/*` and `www.sebastienrousseau.com/*`.
+**Deploy:** `lang-router.js` imports `./activitypub.js`, which the
+dashboard's single-file editor cannot resolve. Regenerate the single-file
+bundle first (`./.git/bundle-worker.sh` → `workers/lang-router.bundled.js`),
+then Cloudflare dashboard → Workers & Pages → paste the bundled file → set
+routes `sebastienrousseau.com/*` and `www.sebastienrousseau.com/*`.
+Alternatively `npx wrangler deploy` from `workers/` uses the module source
+directly.
 
 **Verify:**
 
@@ -137,6 +144,7 @@ curl -sI -H 'Accept-Language: fr-FR,fr;q=0.9,en;q=0.5' https://sebastienrousseau
   | grep -iE '(location|HTTP)'
 ```
 
-**Tests:** `node workers/test_lang_router.mjs` exercises the pure helpers
-(parsing, mapping, navigation gating, cookie reader). Wired into
-`scripts/test_workers.py` and `build.sh`.
+**Tests:** `node --test workers/test_lang_router.mjs` and
+`node --test workers/test_activitypub.mjs` exercise the pure helpers
+(routing, CSP headers, cookie reader, ActivityPub gating). Both run in
+`build.sh` with enforced 100% line/branch/function coverage.

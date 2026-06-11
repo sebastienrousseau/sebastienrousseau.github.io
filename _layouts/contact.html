@@ -35,9 +35,9 @@
         form-action 'self' https://formspree.io;
         object-src 'none';
         upgrade-insecure-requests;
-        script-src 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        script-src 'self' 'inline-speculation-rules' https://cdn.jsdelivr.net https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
         frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
-        connect-src 'self' https://www.google.com https://open.spotify.com;
+        connect-src 'self' https://cloudcdn.pro https://www.google.com https://open.spotify.com;
         img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co;
         style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
         font-src 'self' https://fonts.gstatic.com;
@@ -58,6 +58,8 @@
     <link rel="alternate" type="application/rss+xml" href="/rss.xml" />
     <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
     <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/newsreader-latin.woff2" crossorigin />
+    <link rel="stylesheet" href="/fonts/fonts.css" />
     <!-- Preload the LCP hero portrait so it doesn't compete with the
          render-blocking JS bundle on throttled mobile connections.
          Lighthouse-simulated Slow-4G has been pinning LCP at ~5.6s; the
@@ -94,6 +96,14 @@
         --max-wide:1440px;
         --radius:18px;
         color-scheme: light dark;
+        /* Named typography abstraction — every font-family in the
+           stylesheet reads from these three vars. Values are system
+           fonts only for now; a follow-up PR will swap in self-hosted
+           WOFF2 (Inter / Newsreader / JetBrains Mono) with size-adjust
+           fallback metrics so CLS stays under 0.1 during font swap. */
+        --type-display: "Newsreader", "Newsreader Fallback", Georgia, Cambria, "Times New Roman", Times, serif;
+        --type-body: "Inter", "Inter Fallback", "SF Pro Text", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        --type-mono: "JetBrains Mono", "JetBrains Mono Fallback", ui-monospace, SFMono-Regular, Menlo, monospace;
       }
       /* View Transitions API (Chromium 126+) — native cross-fade on
          cross-document navigation. Honours prefers-reduced-motion via
@@ -129,7 +139,7 @@
       html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
       body{
         margin:0;background:var(--bg);color:var(--ink);
-        font-family:"SF Pro Text","SF Pro Display",-apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-family:var(--type-body);
         font-size:17px;line-height:1.47059;letter-spacing:-.022em;
         -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;
       }
@@ -147,7 +157,7 @@
          opt out via their own class-bearing selectors. */
       main.content :is(p,li,blockquote,dd,dt,td,th) a:not([class]){text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
 
-      h1,h2,h3,h4,h5,h6{font-family:"SF Pro Display",-apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:600;letter-spacing:-.015em;margin:0;color:inherit;text-wrap:balance}
+      h1,h2,h3,h4,h5,h6{font-family:var(--type-display);font-weight:600;letter-spacing:-.015em;margin:0;color:inherit;text-wrap:balance}
       p,li{text-wrap:pretty}
       @media print{nav,header,footer,.ap-search,.ap-lang,.skip,.gh-stats-row,.setup-finale,.share-block,.related-section,.speculation-rules{display:none!important}main{max-width:none!important;padding:0!important}body{background:#fff!important;color:#000!important;font-size:11pt;line-height:1.45}a{color:#000;text-decoration:underline}a[href^="http"]:after{content:" (" attr(href) ")";font-size:9pt;color:#444}img{max-width:100%!important;page-break-inside:avoid}h1,h2,h3{page-break-after:avoid}pre,blockquote{page-break-inside:avoid;border-left:2px solid #000/* rtl-safe-ignore — print stylesheet */}}
 
@@ -181,7 +191,7 @@
       .ap-search{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:0 10px;background:transparent;border:1px solid transparent;border-radius:22px;color:var(--ink);cursor:pointer;transition:background .15s,border-color .15s}
       .ap-search:hover{background:color-mix(in srgb,var(--ink) 7%,transparent)}
       .ap-search svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-      .ap-search-kbd{display:inline-flex;align-items:center;padding:2px 6px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11.5px;color:var(--ink-mute, #6e6e73);background:color-mix(in srgb,var(--ink) 6%,transparent);border:1px solid color-mix(in srgb,var(--ink) 10%,transparent);border-radius:6px;line-height:1}
+      .ap-search-kbd{display:inline-flex;align-items:center;padding:2px 6px;font-family:var(--type-mono);font-size:11.5px;color:var(--ink-mute, #6e6e73);background:color-mix(in srgb,var(--ink) 6%,transparent);border:1px solid color-mix(in srgb,var(--ink) 10%,transparent);border-radius:6px;line-height:1}
       @media (max-width:1100px){.ap-search-kbd{display:none}.ap-search{width:44px;padding:0;border-radius:50%}}
 
       /* Language selector — globe + lang code, opens a flag grid below
@@ -268,7 +278,7 @@
       .article-sources-list a{display:inline-flex;flex-wrap:wrap;gap:6px;text-decoration:none;color:var(--ink, #111)}
       .article-sources-list a:hover .source-host{text-decoration:underline}
       .source-host{font-weight:500;color:var(--accent, #0056b3)}
-      .source-path{color:var(--ink-mute, #6e6e73);font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12.5px;overflow-wrap:anywhere}
+      .source-path{color:var(--ink-mute, #6e6e73);font-family:var(--type-mono);font-size:12.5px;overflow-wrap:anywhere}
       .post-pagination{display:grid;grid-template-columns:1fr 1fr;gap:14px;max-width:760px;margin:32px auto 8px;padding:0 var(--pad-x)}
       .post-pagination a{display:flex;flex-direction:column;gap:4px;padding:16px 20px;background:var(--card, #fafafc);border:1px solid var(--cl-grey-200, #e3e6ed);border-radius:14px;text-decoration:none;color:var(--ink, #111);transition:background .15s ease,transform .15s ease}
       .post-pagination a:hover{background:var(--cl-grey-100, #f1f3f7);transform:translateY(-1px)}
@@ -276,11 +286,56 @@
       .post-pagination-label{font-size:12.5px;font-weight:500;letter-spacing:.03em;text-transform:uppercase;color:var(--ink-mute, #6e6e73)}
       .post-pagination-title{font-size:15px;font-weight:500;line-height:1.35}
       .post-pagination-stub{display:block}
+      /* ---------- Article body tables. Markdown emits <table> directly
+         under <main>. Without explicit rules the browser cramped 4-5 col
+         tables uncomfortably and longer cells wrapped to 1-2 word/line.
+         Wrap in an overflow-x:auto block + sensible min-widths so
+         columns stay readable; on narrow viewports the table side-scrolls
+         rather than crushing. ---------- */
+      main table{display:block;width:100%;max-width:var(--max-wide, 1100px);margin:24px auto;overflow-x:auto;border-collapse:collapse;font-size:14.5px;line-height:1.55;-webkit-overflow-scrolling:touch}
+      main table thead{background:var(--cl-grey-100, #f5f5f7)}
+      main table th,main table td{padding:12px 14px;text-align:start;vertical-align:top;border-bottom:1px solid var(--cl-grey-200, #e3e6ed);min-width:160px}
+      main table th{font-weight:600;color:var(--ink, #111);white-space:nowrap;border-bottom:2px solid var(--cl-grey-200, #d8d8df)}
+      main table td{color:var(--ink-soft, #2a2a2e)}
+      main table tr:last-child td{border-bottom:none}
+      main table code{background:var(--cl-grey-100, #f1f3f7);padding:1px 5px;border-radius:4px;font-size:12.5px}
+      @media (max-width:640px){main table{font-size:13.5px}main table th,main table td{padding:10px 12px;min-width:140px}}
+      /* ---------- Article hero banner (figure inserted by postbuild from
+         frontmatter `banner:`). LCP-relevant: must be the first image
+         after the H1. fetchpriority="high" set inline by the postbuild
+         injector. Sizing matches the 1200×675 (16:9) source the CDN
+         delivers; aspect-ratio reserved up-front to keep CLS at zero
+         even before the image loads. ---------- */
+      .article-banner{margin:0 auto 32px;max-width:var(--max-wide, 1100px);padding:0 var(--pad-x)}
+      .article-banner img{width:100%;height:auto;object-fit:cover;border-radius:var(--radius, 14px);box-shadow:0 24px 60px -28px rgba(0,0,0,.22);background:var(--cl-grey-100, #f1f3f7)}
+      .article-banner figcaption{display:block;font-size:12.5px;color:var(--ink-mute, #6e6e73);margin-top:8px;text-align:center;line-height:1.4}
+      .article-banner figcaption a{color:inherit;text-decoration:underline;text-underline-offset:2px}
+
+      /* ---------- In-article language switcher. Renders as a single
+         baseline-aligned row that wraps to additional rows only when
+         the locale chips don't fit. Each chip is a low-affordance
+         underline link with a hairline middle-dot separator from the
+         previous chip — the Mozilla / NY Times pattern, scaled to 27
+         locales. ---------- */
+      .article-langswitch{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 4px;max-width:var(--max-wide, 1100px);margin:0 auto 32px;padding:14px var(--pad-x);font-size:14px;color:var(--ink-mute, #6e6e73);line-height:1.55}
+      .article-langswitch-lead{font-weight:500;color:var(--ink, #111);margin-inline-end:4px}
+      .article-langswitch-lead::after{content:":"}
+      .article-langswitch-list{display:contents;list-style:none;margin:0;padding:0}
+      .article-langswitch-list li{display:inline-flex;align-items:baseline}
+      .article-langswitch-list li + li::before{content:"\00B7";color:var(--ink-faint, #b0b0b8);margin:0 8px 0 4px;font-weight:700}
+      .article-langswitch-list a{color:var(--link-color, #0056b3);text-decoration:none;border-bottom:1px solid transparent;transition:border-color .15s ease,color .15s ease}
+      .article-langswitch-list a:hover{border-bottom-color:currentColor}
+      .article-langswitch-list a[hreflang]:lang(ar),
+      .article-langswitch-list a[hreflang]:lang(he){direction:rtl}
+
       @media (max-width:640px){
         .article-toc{margin-inline:var(--pad-x)}
         .author-card{margin-inline:var(--pad-x);flex-direction:column;align-items:center;text-align:center}
         .post-pagination{grid-template-columns:1fr;gap:10px}
         .post-pagination-next{text-align:start}
+        .article-langswitch{padding:12px var(--pad-x);font-size:13.5px}
+        .article-banner{padding:0}
+        .article-banner img{border-radius:0}
       }
 
       /* ---------- Pill button (Apple-style) ---------- */
@@ -360,7 +415,7 @@
       main.content p{font-size:18px;line-height:1.6;margin:0 0 1em;color:var(--ink-soft)}
       main.content a{color:var(--link-color)}
       main.content :is(p,figure) > img{border-radius:14px;margin:32px auto}
-      pre.mermaid{max-width:760px;margin:32px auto;padding:24px;background:var(--card, #fafafc);border:1px solid var(--cl-grey-200, #e3e6ed);border-radius:14px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13px;line-height:1.5;color:var(--ink-mute, #6e6e73);overflow-x:auto;text-align:center}
+      pre.mermaid{max-width:1100px;margin:32px auto;padding:24px;background:var(--card, #fafafc);border:1px solid var(--cl-grey-200, #e3e6ed);border-radius:14px;font-family:var(--type-mono);font-size:13px;line-height:1.5;overflow-x:auto;text-align:center}
       pre.mermaid svg{max-width:100%;height:auto;margin:0 auto;display:block}
       main.content figure{margin:32px 0}
       main.content blockquote{border-inline-start:4px solid var(--accent);margin:32px 0;padding-block:8px;padding-inline-start:20px;color:var(--ink-mute);font-style:italic}
@@ -460,7 +515,7 @@
 
       /* 404 page */
       .error-page{max-width:680px;margin:0 auto;text-align:center;padding:40px 0}
-      .error-eyebrow{font-size:96px;font-weight:700;letter-spacing:-.03em;color:var(--accent);line-height:1;margin:0 0 16px;font-family:"SF Pro Display",-apple-system,sans-serif}
+      .error-eyebrow{font-size:96px;font-weight:700;letter-spacing:-.03em;color:var(--accent);line-height:1;margin:0 0 16px;font-family:var(--type-display)}
       .error-title{font-size:clamp(28px,3.6vw,40px);font-weight:600;letter-spacing:-.015em;margin:0 0 12px;color:var(--ink)}
       .error-sub{font-size:18px;line-height:1.45;color:var(--ink-mute);margin:0 0 32px}
       .error-cta{display:inline-flex;flex-wrap:wrap;gap:14px;justify-content:center}
@@ -591,7 +646,7 @@
       .gh-stats-row .gh-stat{display:inline-flex;align-items:center;gap:6px;padding:3px 14px;border:1px solid var(--border);border-radius:999px;background:var(--card);white-space:nowrap}
       .gh-stats-row .gh-ico{display:inline-flex;align-items:center;justify-content:center;font-size:1em;line-height:1}
       .gh-stats-row .gh-num,.gh-stats-row .gh-txt{display:inline-block;line-height:1.5}
-      
+
 
       /* Bottom finale CTA on /projects/. Bigger margin so it breathes after
          the FAQ accordion. */
@@ -680,7 +735,7 @@
       .feat-quote-section{background:linear-gradient(135deg,#0a1b3d 0%,#13284e 50%,#082450 100%);color:#f5f5f7;position:relative;overflow:hidden}
       .feat-quote-section::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 20% 20%,rgba(90,200,250,.15) 0%,transparent 45%),radial-gradient(circle at 80% 80%,rgba(120,90,255,.18) 0%,transparent 50%);z-index:0;pointer-events:none}
       .feat-quote-section .wrap{position:relative;z-index:1}
-      .feat-quote{font-family:"SF Pro Display",-apple-system,sans-serif;font-size:clamp(28px,3.6vw,44px);line-height:1.18;font-weight:500;letter-spacing:-.015em;color:inherit;max-width:1100px;margin:0 auto;text-align:start}
+      .feat-quote{font-family:var(--type-display);font-size:clamp(28px,3.6vw,44px);line-height:1.18;font-weight:500;letter-spacing:-.015em;color:inherit;max-width:1100px;margin:0 auto;text-align:start}
       .feat-quote-section .feat-quote{text-align:center}
       .feat-quote p{margin:0}
       /* Opaque background so HTMLCS can compute contrast (a translucent bg
@@ -697,7 +752,7 @@
       .feat-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;margin-top:48px;text-align:start}
       @media (max-width:833px){.feat-stats{grid-template-columns:1fr;gap:32px}}
       .feat-stat{display:block;padding:36px 32px;background:var(--card);border-radius:22px;box-shadow:var(--shadow);text-align:start}
-      .feat-stat strong{display:block;font-size:clamp(56px,7vw,88px);font-weight:600;letter-spacing:-.03em;line-height:.95;margin:0 0 14px;color:var(--ink);font-family:"SF Pro Display",-apple-system,sans-serif}
+      .feat-stat strong{display:block;font-size:clamp(56px,7vw,88px);font-weight:600;letter-spacing:-.03em;line-height:.95;margin:0 0 14px;color:var(--ink);font-family:var(--type-display)}
       .feat.dark .feat-stat strong{color:#fff}
       .feat-stat span{font-size:15px;line-height:1.45;color:var(--ink-mute);display:block}
       .feat.dark .feat-stat span{color:#a1a1a6}
@@ -966,7 +1021,7 @@
             <a href="/privacy/index.html">Privacy</a> ·
             <a href="/terms/index.html">Terms</a> ·
             <a href="https://www.thegreenwebfoundation.org/green-web-check/?url=sebastienrousseau.com" target="_blank" rel="noopener noreferrer" title="Hosted on 100% renewable energy (Cloudflare) — estimate via Sustainable Web Design v4 model">Carbon: ~0.04 g/visit · green-hosted</a> ·
-            <a href="https://github.com/sebastienrousseau/sebastienrousseau.github.io/blob/main/doc/SIGSTORE.md" target="_blank" rel="noopener noreferrer" title="Every dated article is signed with Sigstore — verify the bytes match what was published">Verify signatures</a>
+            <a href="https://github.com/sebastienrousseau/sebastienrousseau.github.io/blob/main/project-docs/sigstore.md" target="_blank" rel="noopener noreferrer" title="Every dated article is signed with Sigstore — verify the bytes match what was published">Verify signatures</a>
           </p>
         </div>
       </div>
@@ -987,17 +1042,24 @@
       "image": "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png",
       "jobTitle": "Senior Product Manager",
       "description": "AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "ORCID",
+        "value": "0009-0005-1434-284X",
+        "url": "https://orcid.org/0009-0005-1434-284X"
+      },
       "worksFor": {
         "@type": "Organization",
+        "@id": "https://www.hsbc.com/#organization",
         "name": "HSBC Commercial & Investment Bank",
         "url": "https://www.hsbc.com/"
       },
       "alumniOf": [
-        {"@type": "Organization", "name": "PayPal"},
-        {"@type": "Organization", "name": "Barclays"},
-        {"@type": "Organization", "name": "Shazam Entertainment"},
-        {"@type": "Organization", "name": "AKQA"},
-        {"@type": "Organization", "name": "Virgin Group"}
+        {"@type": "Organization", "name": "PayPal", "url": "https://www.paypal.com/"},
+        {"@type": "Organization", "name": "Barclays", "url": "https://www.barclays.com/"},
+        {"@type": "Organization", "name": "Shazam Entertainment", "url": "https://www.shazam.com/"},
+        {"@type": "Organization", "name": "AKQA", "url": "https://www.akqa.com/"},
+        {"@type": "Organization", "name": "Virgin Group", "url": "https://www.virgin.com/"}
       ],
       "memberOf": {
         "@type": "ProgramMembership",
@@ -1008,18 +1070,39 @@
           "url": "https://emergingpaymentsasia.org/"
         }
       },
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "professional experience",
+          "name": "20+ years across Tier-1 banks and global payments infrastructure",
+          "recognizedBy": {"@type": "Organization", "name": "HSBC Commercial & Investment Bank", "url": "https://www.hsbc.com/"}
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "domain expertise",
+          "name": "ISO 20022 migration and wholesale payments architecture",
+          "recognizedBy": {"@type": "Organization", "name": "SWIFT", "url": "https://www.swift.com/"}
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "domain expertise",
+          "name": "Post-Quantum Cryptography for financial services",
+          "recognizedBy": {"@type": "Organization", "name": "NIST Post-Quantum Cryptography Project", "url": "https://csrc.nist.gov/projects/post-quantum-cryptography"}
+        }
+      ],
       "knowsAbout": [
-        "Applied artificial intelligence in banking",
-        "Generative AI for financial services",
-        "Wholesale payments",
-        "ISO 20022 migration",
-        "SWIFT gpi",
-        "SEPA Instant Payments",
-        "Cross-border payments",
-        "Post-quantum cryptography",
-        "CRYSTALS-Kyber",
-        "CRYSTALS-Dilithium",
-        "Quantum-safe payment authentication"
+        {"@type": "DefinedTerm", "name": "Post-Quantum Cryptography", "sameAs": "https://en.wikipedia.org/wiki/Post-quantum_cryptography"},
+        {"@type": "DefinedTerm", "name": "ML-KEM (FIPS 203)", "sameAs": "https://csrc.nist.gov/pubs/fips/203/final"},
+        {"@type": "DefinedTerm", "name": "ML-DSA (FIPS 204)", "sameAs": "https://csrc.nist.gov/pubs/fips/204/final"},
+        {"@type": "DefinedTerm", "name": "ISO 20022", "sameAs": "https://en.wikipedia.org/wiki/ISO_20022"},
+        {"@type": "DefinedTerm", "name": "SWIFT gpi", "sameAs": "https://www.swift.com/our-solutions/swift-gpi"},
+        {"@type": "DefinedTerm", "name": "SEPA Instant Payments", "sameAs": "https://www.ecb.europa.eu/paym/integration/retail/instant_payments/html/index.en.html"},
+        {"@type": "DefinedTerm", "name": "FedNow Service", "sameAs": "https://www.federalreserve.gov/paymentsystems/fednow_about.htm"},
+        {"@type": "DefinedTerm", "name": "Real-Time Payments (RTP)", "sameAs": "https://www.theclearinghouse.org/payment-systems/rtp"},
+        {"@type": "DefinedTerm", "name": "Cross-border payments", "sameAs": "https://en.wikipedia.org/wiki/Cross-border_payments"},
+        {"@type": "DefinedTerm", "name": "Wholesale banking", "sameAs": "https://en.wikipedia.org/wiki/Wholesale_banking"},
+        {"@type": "DefinedTerm", "name": "Applied artificial intelligence in banking", "sameAs": "https://en.wikipedia.org/wiki/Applications_of_artificial_intelligence"},
+        {"@type": "DefinedTerm", "name": "Generative artificial intelligence", "sameAs": "https://en.wikipedia.org/wiki/Generative_artificial_intelligence"}
       ],
       "address": {
         "@type": "PostalAddress",
@@ -1027,6 +1110,7 @@
         "addressCountry": "United Kingdom"
       },
       "sameAs": [
+        "https://orcid.org/0009-0005-1434-284X",
         "https://twitter.com/wwdseb",
         "https://www.linkedin.com/in/sebastienrousseau/",
         "https://medium.com/@BankingOnQuantum",
@@ -1035,12 +1119,39 @@
       ]
     },
     {
+      "@type": ["Organization", "Brand"],
+      "@id": "https://sebastienrousseau.com/#organization",
+      "name": "Sebastien Rousseau",
+      "alternateName": "Banking on Quantum",
+      "url": "https://sebastienrousseau.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "https://sebastienrousseau.com/#logo",
+        "url": "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png",
+        "width": "512",
+        "height": "512",
+        "caption": "Sebastien Rousseau"
+      },
+      "founder": {"@id": "https://sebastienrousseau.com/#person"},
+      "editorialPolicy": "https://sebastienrousseau.com/editorial/",
+      "correctionsPolicy": "https://sebastienrousseau.com/editorial/#corrections",
+      "ethicsPolicy": "https://sebastienrousseau.com/editorial/",
+      "diversityPolicy": "https://sebastienrousseau.com/editorial/",
+      "sameAs": [
+        "https://github.com/sebastienrousseau",
+        "https://twitter.com/wwdseb",
+        "https://www.linkedin.com/in/sebastienrousseau/",
+        "https://medium.com/@BankingOnQuantum"
+      ]
+    },
+    {
       "@type": "WebSite",
       "@id": "https://sebastienrousseau.com/#website",
       "url": "https://sebastienrousseau.com/",
       "name": "Sebastien Rousseau",
       "description": "AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.",
-      "publisher": {"@id": "https://sebastienrousseau.com/#person"},
+      "publisher": {"@id": "https://sebastienrousseau.com/#organization"},
+      "author": {"@id": "https://sebastienrousseau.com/#person"},
       "inLanguage": "en-GB"
     },
     {

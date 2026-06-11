@@ -32,6 +32,7 @@ build stays green; just no signatures are emitted.
 
 See ``DEPLOY.md`` for the runbook.
 """
+
 from __future__ import annotations
 
 import sys as _sys  # path bootstrap — scripts reorg (scripts/lib/ on sys.path)
@@ -50,6 +51,10 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 PUBLIC = ROOT / "public"
 SIGSTORE_DIR = PUBLIC / "sigstore"
+# Committed store of signed bundles. CI has no signing key, so build.sh
+# copies these into public/sigstore/ on every build; local signed builds
+# write fresh bundles back here for committing.
+BUNDLES_DIR = ROOT / "sigstore-bundles"
 CONFIG_PATH = ROOT / "_data" / "sigstore" / "config.json"
 
 _DATED_DIR_RE = re.compile(r"^\d{4}-\d{2}-\d{2}-")
@@ -81,9 +86,12 @@ def _sign_one(html_path: Path, out_dir: Path, cfg: dict) -> bool:
         return False
     bundle_path = out_dir / f"{html_path.parent.name}.bundle"
     cmd = [
-        "cosign", "sign-blob",
-        "--key", key_path,
-        "--bundle", str(bundle_path),
+        "cosign",
+        "sign-blob",
+        "--key",
+        key_path,
+        "--bundle",
+        str(bundle_path),
         "--yes",
         str(html_path),
     ]
@@ -93,15 +101,21 @@ def _sign_one(html_path: Path, out_dir: Path, cfg: dict) -> bool:
         env["COSIGN_PASSWORD"] = env[pw_env]
     try:
         result = subprocess.run(
-            cmd, check=False, capture_output=True, text=True, env=env, timeout=30,
+            cmd,
+            check=False,
+            capture_output=True,
+            text=True,
+            env=env,
+            timeout=30,
         )
     except (OSError, subprocess.TimeoutExpired) as e:
-        print(f"sigstore: cosign failed for {html_path.parent.name}: {e}",
-              file=sys.stderr)
+        print(f"sigstore: cosign failed for {html_path.parent.name}: {e}", file=sys.stderr)
         return False
     if result.returncode != 0:
-        print(f"sigstore: cosign error for {html_path.parent.name}: "
-              f"{result.stderr.strip()}", file=sys.stderr)
+        print(
+            f"sigstore: cosign error for {html_path.parent.name}: " f"{result.stderr.strip()}",
+            file=sys.stderr,
+        )
         return False
     return True
 
@@ -109,8 +123,10 @@ def _sign_one(html_path: Path, out_dir: Path, cfg: dict) -> bool:
 def main() -> int:
     cfg = _load_config()
     if cfg is None:
-        print("sigstore: no _data/sigstore/config.json — signing skipped "
-              "(see scripts/sigstore_sign.py docstring for activation)")
+        print(
+            "sigstore: no _data/sigstore/config.json — signing skipped "
+            "(see scripts/sigstore_sign.py docstring for activation)"
+        )
         return 0
     if not _cosign_available():
         print("sigstore: cosign binary not on PATH — signing skipped", file=sys.stderr)
@@ -139,6 +155,13 @@ def main() -> int:
             signed += 1
         else:
             failed += 1
+    if signed:
+        BUNDLES_DIR.mkdir(parents=True, exist_ok=True)
+        for artefact in sorted(SIGSTORE_DIR.glob("*.bundle")):
+            shutil.copy2(artefact, BUNDLES_DIR / artefact.name)
+        pub = SIGSTORE_DIR / "cosign.pub"
+        if pub.is_file():
+            shutil.copy2(pub, BUNDLES_DIR / pub.name)
     print(f"sigstore: {signed} article(s) signed, {failed} failed")
     return 0 if failed == 0 else 1
 

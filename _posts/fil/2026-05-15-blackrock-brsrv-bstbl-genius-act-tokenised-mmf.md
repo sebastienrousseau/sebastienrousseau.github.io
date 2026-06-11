@@ -1,5 +1,6 @@
 ---
 title: "العائد المخفي: تفكيك إيداعات BRSRV و BSTBL من BlackRock"
+tags: "BlackRock, BRSRV, BSTBL, BUIDL, GENIUS Act, OCC, stablecoins, tokenised money market fund, Securitize, BNY Mellon, ERC-20, Ethereum, payments, regulation, ISO 20022, post-quantum cryptography, AI, tokenised deposits, cross-border payments"
 subtitle: "بموجب GENIUS Act، لا يمكن للـ stablecoins توزيع عوائد. تتجاوز BlackRock القيد بصندوقَي سوقٍ نقدية مُرمَّزَين."
 description: "بموجب GENIUS Act، لا يمكن للـ stablecoins دفع العائد. تُجسّد إيداعات BRSRV و BSTBL من BlackRock التحايل: صندوق سوقٍ نقدية مُرمَّز بالتوازي مع stablecoin مُنظَّم، لتوجيه العائد عبر مسارٍ متوافق مجاور."
 date: "May 15, 2026"

@@ -1,5 +1,6 @@
 ---
 title: "Google Gemma AI: Transforming Open-Source AI Development"
+tags: "Gemma, Google, AI, open source, Technical, Enterprise, Integration, macOS, Data, Ethics, ISO 20022, criptografie post-cuantică, Rust"
 subtitle: "O privire detaliată asupra capabilităților, contribuțiilor open-source și direcțiilor viitoare"
 description: "Explorați modelul AI Gemma de la Google: un proiect open-source care oferă soluții AI etice atât pentru uz personal, cât și pentru întreprinderi."
 date: "Feb 26, 2024"
@@ -239,4 +240,3 @@ Gemma's launch is a watershed moment in the field of AI, highlighting a shift to
 [05]: https://ollama.com/download "Ollama Download"
 
 [divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Divider"
-

@@ -1,5 +1,6 @@
 ---
 title: "बैंकों के लिए एजेंटिक-इंजीनियरिंग: 2026 का ब्लूप्रिंट"
+tags: "एजेंटिक AI, spec-driven development, banks, AI गवर्नेंस, EU AI Act, DORA, COBOL modernisation, HITL, HOTL, TPRM, AIBOM, Claude Code, पोस्ट-क्वांटम क्रिप्टोग्राफी, ISO 20022, क्वांटम कंप्यूटिंग, AI, Rust, open source, प्लेटफ़ॉर्म इंजीनियरिंग"
 subtitle: "एजेंट-वर्कफ़्लो, MCP और मानव-निगरानी"
 description: "बैंकों के लिए एजेंटिक-इंजीनियरिंग — 2026 का ब्लूप्रिंट: एजेंट, MCP, यूनिट-अर्थशास्त्र और निगरानी।"
 date: "May 17, 2026"

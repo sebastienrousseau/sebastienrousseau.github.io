@@ -1,5 +1,6 @@
 ---
 title: "Ang Quantum Cryptography Reset sa 2026: Mga PQC Standard, QKD Assurance, at ang Migration Work na Hindi Maaaring Ipagpaliban ng mga Bangko"
+tags: "quantum cryptography, post-quantum cryptography, NIST, FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC, IETF, TLS, IPsec, QKD, ETSI, crypto-agility, HNDL, cybersecurity, ISO 20022, AI"
 subtitle: "Ang quantum cryptography ay lumipat mula sa horizon-scanning patungo sa disiplina ng implementasyon: handa na ang mga NIST PQC standard, pinaikli na ng UK NCSC guidance ang mga pagpipilian sa algorithm, ang IETF protocol work ay patuloy na nagtatamo, at ang QKD assurance ay lumilipat mula sa kumpiyansa sa laboratoryo patungo sa wika ng sertipikasyon."
 description: "Ang quantum cryptography sa 2026 ay hindi na isang debate kung malapit na ang mga quantum computer. Ito ay isang programa ng migration sa post-quantum cryptography, crypto-agility, quantum key distribution assurance, mga protocol standard, kahandaan ng supplier, at matagal-tagal na financial data na nakalantad na sa harvest-now-decrypt-later na panganib."
 date: "May 18, 2026"

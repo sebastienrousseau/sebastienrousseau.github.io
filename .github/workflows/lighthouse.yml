@@ -1,24 +1,10 @@
 name: Lighthouse CI
 
-# Performance regression guardrails. Runs Lighthouse against the freshly
-# built `public/` tree on every push and on a weekly schedule, asserting
-# the thresholds declared in lighthouserc.json. Reports are uploaded to
-# Lighthouse's temporary public storage so the URLs end up in the run log.
-
 on:
-  push:
-    branches: [main]
-    paths:
-      - "_posts/**"
-      - "_layouts/**"
-      - "scripts/**"
-      - "build.sh"
-      - "lighthouserc.json"
-      - ".github/workflows/lighthouse.yml"
   schedule:
-    # Sundays at 03:00 UTC.
+    # Sundays at 03:00 UTC
     - cron: "0 3 * * 0"
-  workflow_dispatch: {}
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -29,32 +15,39 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: actions/setup-python@v5
+      - name: Setup Python
+        uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+          cache: 'pip'
 
       - name: Install Python build deps
         run: pip install --quiet -r requirements.txt
 
       - uses: actions/setup-node@v4
         with:
-          # Node 22+ for stable --test-coverage-* flags used by build.sh.
           node-version: "22"
 
       - name: Install Lighthouse CI
         run: npm install -g @lhci/cli@0.14.x
 
-      - name: Install Shokunin SSG
+      - name: Cache cargo registry + git + ssg
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cargo/registry
+            ~/.cargo/git
+            ~/.cargo/bin
+          key: ${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}-ssg
+
+      - name: Add cargo bin to PATH
+        run: echo "$HOME/.cargo/bin" >> $GITHUB_PATH
+
+      - name: Install Static Site Generator (ssg)
         run: |
-          curl -sSL https://github.com/sebastienrousseau/shokunin/releases/latest/download/ssg-linux-x86_64.tar.gz \
-            | tar -xz -C /usr/local/bin/ || true
-          # Fallback to cargo if the binary tarball isn't available.
-          if ! command -v ssg >/dev/null; then
-            curl -sSL https://sh.rustup.rs | sh -s -- -y --default-toolchain stable
-            export PATH="$HOME/.cargo/bin:$PATH"
+          if ! command -v ssg >/dev/null 2>&1; then
             cargo install ssg --locked
           fi
-          ssg --version
 
       - name: Build site
         run: ./build.sh

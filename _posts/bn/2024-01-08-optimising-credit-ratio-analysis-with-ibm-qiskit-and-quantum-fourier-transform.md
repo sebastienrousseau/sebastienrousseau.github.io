@@ -1,5 +1,6 @@
 ---
 title: "Qiskit & Quantum Fourier Transform for Credit Ratio Analysis"
+tags: "Qiskit, কোয়ান্টাম কম্পিউটিং, Credit Analysis, FinTech, QFT, Risk Management, Finance, Data Science, Algorithm, Quantum Technology, ISO 20022, পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, AI, open source"
 subtitle: "IBM Qiskit এবং Quantum Fourier Transform দিয়ে ক্রেডিট রেশিও বিশ্লেষণের অপ্টিমাইজেশন"
 description: "আর্থিক খাতে ক্রেডিট রেশিও বিশ্লেষণে IBM Qiskit এবং Quantum Fourier Transform কীভাবে বিপ্লব আনছে তা অন্বেষণ করুন, যা অভূতপূর্ব নির্ভুলতা ও গতি প্রদান করে।"
 date: "Jan 08, 2024"
@@ -111,4 +112,3 @@ The future of credit analysis is quantum, and the time to explore its possibilit
 
 [01]: https://www.ibm.com/quantum/qiskit "IBM Quantum Computing | Qiskit"
 [02]: https://sebastienrousseau.com/2023-12-25-revolutionising-finance-with-ai-enhanced-quantum-algorithms/index.html#h4-quantum "Quantum Fourier Transform (QFT)"
-

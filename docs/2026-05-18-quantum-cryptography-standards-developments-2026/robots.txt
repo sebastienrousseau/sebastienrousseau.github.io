@@ -1,2 +1,0 @@
-User-agent: *
-Sitemap: https://sebastienrousseau.com/2026-05-18-quantum-cryptography-standards-developments-2026/sitemap.xml

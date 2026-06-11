@@ -15,6 +15,7 @@ Safety:
 - Idempotent: re-runs are no-ops once every applicable post has gained
   its links.
 """
+
 from __future__ import annotations
 
 import sys as _sys  # path bootstrap — scripts reorg (scripts/lib/ on sys.path)
@@ -31,18 +32,33 @@ POSTS = Path("_posts")
 # the regex matches any variant. Each canonical stem maps to the post that
 # defines or owns the entity — we never self-link a post to itself.
 ENTITY_MAP: list[tuple[list[str], str]] = [
-    (["pain001"],                      "2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001"),
-    (["ISO 20022"],                    "2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001"),
-    (["KyberLib"],                     "2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats"),
-    (["CRYSTALS-Kyber"],               "2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age"),
-    (["Hash (HSH)", "HSH library"],    "2023-10-16-protecting-data-in-the-quantum-age-the-hash-library-hsh"),
-    (["libmake"],                      "2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries"),
-    (["DateTime (DTT)", "DTT library"],"2023-12-04-mastering-date-and-time-in-rust-with-the-dtt-library"),
-    (["Shokunin"],                     "2023-10-09-shokunin-the-fastest-rust-based-static-site-generator"),
-    (["OpenVoice"],                    "2024-04-01-openvoice-leading-innovation-in-voice-cloning-technology"),
-    (["Akande"],                       "2024-02-12-akande-voice-assistant-revolutionising-personal-and-executive-assistance"),
-    (["Quantum Key Distribution", "QKD"], "2023-12-11-quantum-key-distribution-revolutionising-security-in-banking"),
-    (["Quantum-Safe Payments"],        "2025-09-01-quantum-safe-payments-epaa"),
+    (["pain001"], "2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001"),
+    (["ISO 20022"], "2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001"),
+    (["KyberLib"], "2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats"),
+    (["CRYSTALS-Kyber"], "2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age"),
+    (
+        ["Hash (HSH)", "HSH library"],
+        "2023-10-16-protecting-data-in-the-quantum-age-the-hash-library-hsh",
+    ),
+    (
+        ["libmake"],
+        "2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries",
+    ),
+    (
+        ["DateTime (DTT)", "DTT library"],
+        "2023-12-04-mastering-date-and-time-in-rust-with-the-dtt-library",
+    ),
+    (["Shokunin"], "2023-10-09-shokunin-the-fastest-rust-based-static-site-generator"),
+    (["OpenVoice"], "2024-04-01-openvoice-leading-innovation-in-voice-cloning-technology"),
+    (
+        ["Akande"],
+        "2024-02-12-akande-voice-assistant-revolutionising-personal-and-executive-assistance",
+    ),
+    (
+        ["Quantum Key Distribution", "QKD"],
+        "2023-12-11-quantum-key-distribution-revolutionising-security-in-banking",
+    ),
+    (["Quantum-Safe Payments"], "2025-09-01-quantum-safe-payments-epaa"),
 ]
 
 DATED_NAME = re.compile(r"^\d{4}-\d{2}-\d{2}-")
@@ -54,18 +70,18 @@ def split_segments(body: str) -> list[tuple[str, bool]]:
     raw HTML blocks — we don't touch those."""
     PROTECT_RE = re.compile(
         r"(?ms)"
-        r"(```[\s\S]*?```)"                # fenced code blocks
-        r"|(`[^`\n]+`)"                    # inline code
-        r"|(\[[^\]\n]*\]\([^)\n]+\))"      # existing markdown link
-        r"|(^\#{1,6}\s.*?$)"               # ATX heading
+        r"(```[\s\S]*?```)"  # fenced code blocks
+        r"|(`[^`\n]+`)"  # inline code
+        r"|(\[[^\]\n]*\]\([^)\n]+\))"  # existing markdown link
+        r"|(^\#{1,6}\s.*?$)"  # ATX heading
         r"|(<[a-zA-Z][^>]*>[\s\S]*?</[a-zA-Z][^>]*>)"  # raw HTML block
-        r"|(^\s*\[[^\]]+\]:\s.*?$)"        # reference-style link def line
+        r"|(^\s*\[[^\]]+\]:\s.*?$)"  # reference-style link def line
     )
     segments: list[tuple[str, bool]] = []
     last = 0
     for m in PROTECT_RE.finditer(body):
         if m.start() > last:
-            segments.append((body[last:m.start()], False))
+            segments.append((body[last : m.start()], False))
         segments.append((m.group(0), True))
         last = m.end()
     if last < len(body):
@@ -86,10 +102,10 @@ def link_segment(segment: str, entities: list[tuple[list[str], str]]) -> tuple[s
         m = pat.search(out)
         if not m:
             continue
-        anchor = m.group(0)      # preserve source casing
+        anchor = m.group(0)  # preserve source casing
         url = f"/{stem}/index.html"
         replacement = f"[{anchor}]({url})"
-        out = out[: m.start()] + replacement + out[m.end():]
+        out = out[: m.start()] + replacement + out[m.end() :]
         consumed.add(idx)
     return out, consumed
 

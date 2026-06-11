@@ -2,54 +2,23 @@
 
 Before this module existed there were three different bespoke YAML
 frontmatter parsers spread across ``gen_articles.py``,
-``check_voice.py``, and ``build_topics.py``. Each one was *almost*
-identical but differed in a subtle way (return type, handling of
-unclosed delimiters, etc.). One canonical implementation here, and
-every caller imports from this module.
+``check_voice.py``, and ``build_topics.py``. The single canonical
+implementation now lives in ``scripts/lib/_frontmatter.py``;
+``parse_frontmatter`` here is a re-export kept for the existing
+import sites (``from _core import parse_frontmatter``).
 
 This module is intentionally tiny and has zero external dependencies
 beyond stdlib — it's imported very early in every pipeline step.
 """
+
 from __future__ import annotations
 
 import json
-import re
 from pathlib import Path
 
+from _frontmatter import parse_frontmatter  # re-exported for legacy import sites
+
 ROOT = Path(__file__).resolve().parents[2]
-
-# ---------------------------------------------------------------------------
-# Frontmatter
-# ---------------------------------------------------------------------------
-
-_FM_KEY_RE = re.compile(r'^([a-z_]+):\s*"((?:[^"\\]|\\.)*)"\s*$')
-
-
-def parse_frontmatter(text: str) -> tuple[dict[str, str], str]:
-    """Parse a Markdown file's YAML frontmatter.
-
-    Returns ``({}, text)`` if the text doesn't start with ``---`` or if
-    the closing ``---`` delimiter is missing. Otherwise returns a flat
-    dict of key→value (quoted-string values only — same shape every
-    caller in this repo uses) and the body after the delimiter.
-
-    This is deliberately *not* full PyYAML — that would pull in a
-    dependency, and the pipeline only emits single-line ``key: "value"``
-    frontmatter anyway. Multi-line blocks aren't supported.
-    """
-    if not text.startswith("---"):
-        return {}, text
-    end = text.find("\n---", 3)
-    if end < 0:
-        return {}, text
-    head = text[3:end]
-    body = text[end + 4:].lstrip("\n")
-    fm: dict[str, str] = {}
-    for line in head.splitlines():
-        m = _FM_KEY_RE.match(line)
-        if m:
-            fm[m.group(1)] = m.group(2)
-    return fm, body
 
 
 def read_frontmatter(path: Path) -> dict[str, str]:
@@ -69,8 +38,18 @@ def read_frontmatter(path: Path) -> dict[str, str]:
 # ---------------------------------------------------------------------------
 
 _MONTH_NAMES = (
-    "January", "February", "March", "April", "May", "June",
-    "July", "August", "September", "October", "November", "December",
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
 )
 
 

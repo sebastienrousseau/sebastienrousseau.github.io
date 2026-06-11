@@ -16,6 +16,7 @@ Usage:
   python3 scripts/editorial/translate_frontmatter.py --langs fr de ar
   python3 scripts/editorial/translate_frontmatter.py --dry-run
 """
+
 from __future__ import annotations
 
 import argparse
@@ -164,11 +165,7 @@ def _translate_batch(
     if not locales_needing:
         return {}
 
-    guidance_lines = "\n".join(
-        f"  - {f}: {_FIELD_GUIDANCE[f]}"
-        for f in FIELDS
-        if f in en_fields
-    )
+    guidance_lines = "\n".join(f"  - {f}: {_FIELD_GUIDANCE[f]}" for f in FIELDS if f in en_fields)
 
     prompt = f"""\
 You are a professional translator and SEO specialist for financial technology content.
@@ -227,7 +224,9 @@ Example structure:
             print("  Timeout — retrying", file=sys.stderr)
             if attempt < 2:
                 time.sleep(5)
-        except Exception as e:
+        except (OSError, ValueError) as e:
+            # OSError: claude binary missing/unrunnable; ValueError: the
+            # empty-response raise above. Anything else should traceback.
             print(f"  Error: {e}", file=sys.stderr)
             if attempt < 2:
                 time.sleep(5)
@@ -258,11 +257,7 @@ def _process_article(  # noqa: C901 — orchestrates the per-article EN→27 loc
     if not en_fields:
         return 0
 
-    all_langs = [
-        lang.code
-        for lang in _lang_registry.active()
-        if lang.code != "en"
-    ]
+    all_langs = [lang.code for lang in _lang_registry.active() if lang.code != "en"]
     target_langs = langs_filter if langs_filter else all_langs
 
     locales_needing: dict[str, list[str]] = {}
@@ -276,8 +271,7 @@ def _process_article(  # noqa: C901 — orchestrates the per-article EN→27 loc
         needs = [
             f
             for f in FIELDS
-            if _field_exists(loc_text, f)
-            and _read_field(loc_text, f) == en_fields.get(f)
+            if _field_exists(loc_text, f) and _read_field(loc_text, f) == en_fields.get(f)
         ]
         if needs:
             locales_needing[lang] = needs
@@ -288,8 +282,7 @@ def _process_article(  # noqa: C901 — orchestrates the per-article EN→27 loc
 
     total_fields = sum(len(v) for v in locales_needing.values())
     print(
-        f"  {en_slug}: {len(locales_needing)} locales, "
-        f"{total_fields} field-translations needed"
+        f"  {en_slug}: {len(locales_needing)} locales, " f"{total_fields} field-translations needed"
     )
 
     if dry_run:

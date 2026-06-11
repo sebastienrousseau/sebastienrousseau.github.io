@@ -39,7 +39,7 @@ schema: "FAQPage, Article"
 seo_title: "UK 애시드 재즈 2026: 아티스트, 콘서트, 앨범, 부흥"
 short_name: "sebastienrousseau"
 subtitle: "영국 애시드 재즈는 레거시 아티스트, Acid Jazz Records 신보, 재즈 펑크 페스티벌, 소울 재즈 청중, 해먼드 오르간 중심 라이브 공연, 그리고 그루브를 씬의 중심으로 되돌리는 젊은 영국 재즈 뮤지션들을 통해 새롭게 살아나고 있다."
-tags: "acid jazz, UK jazz, Acid Jazz Records, Brand New Heavies, Galliano, James Taylor Quartet, Ronnie Scott's, Bangs and Talbot, Chris Bangs, Mick Talbot, Mostly Jazz Funk Soul Festival, Cymande, Soul II Soul, Jordan Rakei, jazz funk, soul jazz"
+tags: "acid jazz, UK jazz, Acid Jazz Records, Brand New Heavies, Galliano, James Taylor Quartet, Ronnie Scott's, Bangs and Talbot, Chris Bangs, Mick Talbot, Mostly Jazz Funk Soul Festival, Cymande, Soul II Soul, Jordan Rakei, jazz funk, soul jazz, ISO 20022, 양자내성 암호, AI, DORA, 토큰화 예금, 플랫폼 엔지니어링, 소버린 클라우드, 클라우드 네이티브 뱅킹, 국경 간 결제, 스테이블코인"
 theme-color: "0, 83, 191"
 title: "영국 애시드 재즈의 부흥: 2026년 아티스트·공연·앨범과 그루브 중심 라이브 문화의 귀환"
 url: "https://sebastienrousseau.com/ko/2026-05-22-uk-acid-jazz-renewal-artists-concerts-albums-2026"
@@ -93,9 +93,9 @@ site_software: "Static Site Generator, Rust"
 <p class="post-lead-heading"><strong>핵심 요약</strong></p>
 <ul class="post-lead-takeaways">
   <li><strong>레이블.</strong> Acid Jazz Records의 2026년 Bandcamp 컴필레이션에는 Matt Berry, Kevin Fingier, The Brand New Heavies, Billy Valentine, Mama Terra가 수록되었다.</li>
-  <li><strong>신보.</strong> Bangs &amp; Talbot의 <em>Smokin' Aces</em>(2026년 1월 23일, Acid Jazz)는 Chris Bangs와 Mick Talbot을 그루브·펑크·소울·글로벌 퓨전 사운드 안에서 재결합시킨다.</li>
+  <li><strong>신보.</strong> Bangs & Talbot의 <em>Smokin' Aces</em>(2026년 1월 23일, Acid Jazz)는 Chris Bangs와 Mick Talbot을 그루브·펑크·소울·글로벌 퓨전 사운드 안에서 재결합시킨다.</li>
   <li><strong>라이브.</strong> The Glasshouse에서의 Brand New Heavies·Galliano 협연과 Ronnie Scott's에서의 James Taylor Quartet 공연은 2026년 라이브 목록에서 가장 선명한 애시드 재즈 신호다.</li>
-  <li><strong>페스티벌.</strong> Mostly Jazz Funk &amp; Soul Festival(2026년 7월 10–12일)은 Soul II Soul, Cymande, Jordan Rakei, Sampa The Great를 레거시 재즈 펑크 아티스트들과 함께 무대에 올린다.</li>
+  <li><strong>페스티벌.</strong> Mostly Jazz Funk & Soul Festival(2026년 7월 10–12일)은 Soul II Soul, Cymande, Jordan Rakei, Sampa The Great를 레거시 재즈 펑크 아티스트들과 함께 무대에 올린다.</li>
 </ul>
 <p class="post-lead-related"><strong>관련 읽을거리:</strong> <a href="https://sebastienrousseau.com/2026-05-21-tokenised-deposits-banking-transformation-2026/index.html">토큰화 예금: 2026년 진행 중인 뱅킹 변혁</a>.</p>
 </aside>

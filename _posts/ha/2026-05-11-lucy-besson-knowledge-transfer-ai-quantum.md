@@ -1,5 +1,6 @@
 ---
 title: "Lucy's Flash Drive Revisited: AI, Quantum & Knowledge"
+tags: "Lucy, Luc Besson, Scarlett Johansson, AI, quantum computing, neutral atoms, LLM, transhumanism, mind uploading, brain-computer interfaces, posthumanism, film philosophy, ISO 20022, post-quantum cryptography"
 subtitle: "Shekaru goma sha biyu bayan fim ɗin Lucy na Luc Besson, tsakiyar misalin ƙaurar ilimi daga jiki zuwa na'ura an tabbatar da shi ba tsammani ta LLMs, neutral atom qubits, da whole-brain emulation."
 description: "Shekaru goma sha biyu bayan, fim ɗin Lucy na Besson yana karantawa kamar gwajin tunani game da ilimi da ke ƙaura daga jiki zuwa na'ura — LLMs da qubits sun tabbatar da shi a ɓoye."
 date: "May 11, 2026"
@@ -133,4 +134,3 @@ At human scale, no, and probably not for some time. As of early 2026, the state 
 - Sebastien Rousseau, (2025). [Quantum-Safe Payments: Why the Payments Industry Must Act Now](/2025-09-01-quantum-safe-payments-epaa/index.html "Quantum-Safe Payments: Why the Payments Industry Must Act Now").
 - Wikipedia contributors, (2026). [Lucy (2014 film) ⧉](https://en.wikipedia.org/wiki/Lucy_(2014_film) "Lucy (2014 film) - Wikipedia"). Wikipedia.
 - Wikipedia contributors, (2026). [Mind uploading ⧉](https://en.wikipedia.org/wiki/Mind_uploading "Mind uploading"). Wikipedia.
-

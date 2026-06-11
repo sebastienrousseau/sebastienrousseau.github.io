@@ -1,5 +1,6 @@
 ---
 title: "Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It"
+tags: "AI agentic, spec-driven development, banks, guvernanță AI, EU AI Act, DORA, COBOL modernisation, HITL, HOTL, TPRM, AIBOM, Claude Code, criptografie post-cuantică, ISO 20022, calcul cuantic, AI, Rust, open source, ingineria platformei"
 subtitle: "IA agentică a trecut de la pilot la producție. 70% din bănci o utilizează; unu din cinci are un model matur de guvernanță. Adversarii operează la viteza mașinii, moștenirea COBOL datează din epoca batch a anilor 1960, iar termenul EU AI Act este la 12 săptămâni."
 description: "IA agentică a trecut la producție în bănci. 70% o utilizează; puțini au guvernanță matură. Adversarii operează autonom; deadline EU AI Act pentru riscuri ridicate este la 12 săptămâni."
 date: "May 17, 2026"
@@ -297,4 +298,3 @@ Three things, sequenced. First, produce the AI Bill of Materials — the complet
 - VentureBeat, (2026). [Agentic coding at enterprise scale demands spec-driven development ⧉](https://venturebeat.com/orchestration/agentic-coding-at-enterprise-scale-demands-spec-driven-development "Agentic coding at enterprise scale demands spec-driven development"). VentureBeat.
 - The News (Pakistan), (2026). [Why British banks' push for agentic AI is worrying UK regulators ⧉](https://www.thenews.com.pk/latest/1385186-why-british-banks-push-for-agentic-ai-is-worrying-uk-regulators "Why British banks' push for agentic AI is worrying UK regulators"). The News International.
 - CNBC, (2026). [Anthropic's Mythos set off a cybersecurity 'hysteria' ⧉](https://www.cnbc.com/2026/05/08/anthropic-mythos-ai-cybersecurity-banks.html "Anthropic's Mythos set off a cybersecurity hysteria"). CNBC.
-

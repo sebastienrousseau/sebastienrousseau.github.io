@@ -20,6 +20,7 @@ Plus the lang/slug helpers used by the hreflang pass:
 Pure functions over HTML strings; module-level state is regex
 constants + author identity constants only.
 """
+
 from __future__ import annotations
 
 import re
@@ -28,7 +29,8 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[3]))
 import _lang_registry as _lr  # type: ignore[import-not-found]
-from _fr_slugs import en_slug as _en_slug  # type: ignore[import-not-found]
+
+# _fr_slugs is deprecated
 from postbuild_lib.seo import _keywords_re  # type: ignore[unused-import]
 
 PUBLIC = Path("public")
@@ -45,13 +47,34 @@ PUBLIC = Path("public")
 
 # Domains we accept as primary-source citations for AI grounding.
 CITATION_AUTHORITIES = (
-    "iso20022.org", "swift.com", "iso.org", "ietf.org", "w3.org",
-    "nist.gov", "csrc.nist.gov", "bis.org", "ecb.europa.eu", "imf.org",
-    "wikipedia.org", "wikidata.org",
-    "arxiv.org", "ieee.org", "acm.org", "doi.org",
-    "blackrock.com", "sec.gov", "treasury.gov", "ofac.treasury.gov",
-    "hsbc.com", "jpmorgan.com", "santander.com", "bmo.com",
-    "google.com", "openai.com", "anthropic.com", "deepmind.com",
+    "iso20022.org",
+    "swift.com",
+    "iso.org",
+    "ietf.org",
+    "w3.org",
+    "nist.gov",
+    "csrc.nist.gov",
+    "bis.org",
+    "ecb.europa.eu",
+    "imf.org",
+    "wikipedia.org",
+    "wikidata.org",
+    "arxiv.org",
+    "ieee.org",
+    "acm.org",
+    "doi.org",
+    "blackrock.com",
+    "sec.gov",
+    "treasury.gov",
+    "ofac.treasury.gov",
+    "hsbc.com",
+    "jpmorgan.com",
+    "santander.com",
+    "bmo.com",
+    "google.com",
+    "openai.com",
+    "anthropic.com",
+    "deepmind.com",
     "github.com",
     "emergingpaymentsasia.org",
 )
@@ -75,7 +98,7 @@ _BLOGPOSTING_DATES_RE = re.compile(
 _WORDCOUNT_RE = re.compile(r'"wordCount":(\d+)')
 _HEADING_RE = re.compile(r'<(h[23])(?:\s+id="[^"]*")?>([\s\S]*?)</\1>', re.IGNORECASE)
 _OUTBOUND_LINK_RE = re.compile(r'<a\b[^>]*\bhref="(https?://[^"]+)"', re.IGNORECASE)
-_DATED_SLUG_RE = re.compile(r'^(\d{4}-\d{2}-\d{2})-')
+_DATED_SLUG_RE = re.compile(r"^(\d{4}-\d{2}-\d{2})-")
 _H1_RE = re.compile(r'<section class="ap-hero">\s*<h1>([^<]+)</h1>', re.IGNORECASE)
 _HTML_LANG_DETECT_RE = re.compile(r'<html\b[^>]*\blang="([^"]+)"', re.IGNORECASE)
 
@@ -154,6 +177,7 @@ def _labels(html: str) -> dict[str, str]:
 
 def slugify(s: str) -> str:
     import unicodedata as _ud
+
     s = re.sub(r"<[^>]+>", "", s).strip().lower()
     s = re.sub(r"&[a-z0-9#]+;", " ", s)
     # Fold accented letters to ASCII so "Références" -> "references", not
@@ -166,8 +190,18 @@ def slugify(s: str) -> str:
 
 
 _FR_MONTHS = {
-    1: "janv.", 2: "févr.", 3: "mars", 4: "avr.", 5: "mai", 6: "juin",
-    7: "juil.", 8: "août", 9: "sept.", 10: "oct.", 11: "nov.", 12: "déc.",
+    1: "janv.",
+    2: "févr.",
+    3: "mars",
+    4: "avr.",
+    5: "mai",
+    6: "juin",
+    7: "juil.",
+    8: "août",
+    9: "sept.",
+    10: "oct.",
+    11: "nov.",
+    12: "déc.",
 }
 
 
@@ -177,6 +211,7 @@ def _fmt_date(iso_or_rfc: str, french: bool = False) -> str:
     parse failure."""
     iso_or_rfc = iso_or_rfc.strip()
     from datetime import datetime as _dt
+
     for fmt in (
         "%Y-%m-%dT%H:%M:%S%z",
         "%Y-%m-%dT%H:%M:%S.%f%z",
@@ -206,19 +241,18 @@ def _render_tag_badges(keywords: list[str], labels: dict[str, str], lang: str = 
     return f'<nav class="article-tags" aria-label="{aria}">{badges}</nav>'
 
 
-def _render_meta_bar(date_pub: str, date_mod: str, word_count: int | None, labels: dict[str, str], lang: str = "en") -> str:
+def _render_meta_bar(
+    date_pub: str, date_mod: str, word_count: int | None, labels: dict[str, str], lang: str = "en"
+) -> str:
     parts: list[str] = []
     french = labels is LABELS_FR
     author_url = "/fr/a-propos/index.html" if lang == "fr" else AUTHOR_URL
-    alt_text = (
-        f"Portrait de {AUTHOR_NAME}" if lang == "fr"
-        else f"Portrait of {AUTHOR_NAME}"
-    )
+    alt_text = f"Portrait de {AUTHOR_NAME}" if lang == "fr" else f"Portrait of {AUTHOR_NAME}"
     parts.append(
         f'<a href="{author_url}" class="article-author" rel="author">'
         f'<img alt="{alt_text}" src="{AUTHOR_AVATAR}" '
         f'width="36" height="36" loading="lazy" decoding="async" />'
-        f'<span>{AUTHOR_NAME}</span></a>'
+        f"<span>{AUTHOR_NAME}</span></a>"
     )
     if date_pub:
         parts.append(
@@ -239,7 +273,9 @@ def _render_meta_bar(date_pub: str, date_mod: str, word_count: int | None, label
             f'<span class="meta-read" aria-label="{labels["Estimated read time"]}">'
             f'{read_min} {labels["min read"]}</span>'
         )
-    return '<div class="article-meta">' + ' <span aria-hidden="true">·</span> '.join(parts) + '</div>'
+    return (
+        '<div class="article-meta">' + ' <span aria-hidden="true">·</span> '.join(parts) + "</div>"
+    )
 
 
 # ---------------------------------------------------------------------------
@@ -254,7 +290,7 @@ def _render_meta_bar(date_pub: str, date_mod: str, word_count: int | None, label
 # verify command so any reader can confirm the page bytes match what
 # the author signed.
 
-_SIGSTORE_CONFIG_PRESENT: bool = (Path("_data/sigstore/config.json").is_file())
+_SIGSTORE_CONFIG_PRESENT: bool = Path("_data/sigstore/config.json").is_file()
 
 
 def inject_sigstore_attestation(html: str, slug: str) -> str:
@@ -272,16 +308,17 @@ def inject_sigstore_attestation(html: str, slug: str) -> str:
     is_fr = _is_french(html)
     label = (
         "Signature Sigstore · vérifiable avec cosign"
-        if is_fr else "Sigstore signature · verifiable with cosign"
+        if is_fr
+        else "Sigstore signature · verifiable with cosign"
     )
     badge = (
         f'<aside class="article-sigstore" aria-label="{label}">'
         f'<a href="/sigstore/{slug}.bundle" rel="external" '
         f'type="application/vnd.dev.sigstore.bundle+json">'
-        f'🔏 {label}</a></aside>'
+        f"🔏 {label}</a></aside>"
     )
     # Insert just before the existing article furniture's end-of-main.
-    return re.sub(r'(</main>)', badge + r'\1', html, count=1)
+    return re.sub(r"(</main>)", badge + r"\1", html, count=1)
 
 
 def _extract_article_metadata(html: str) -> tuple[list[str], str, str, int | None]:
@@ -312,25 +349,222 @@ def inject_article_furniture(html: str) -> str:
     keywords, date_pub, date_mod, word_count = _extract_article_metadata(html)
     labels = _labels(html)
     lang = "fr" if _is_french(html) else "en"
-    fragment = (
-        _render_tag_badges(keywords, labels, lang)
-        + _render_meta_bar(date_pub, date_mod, word_count, labels, lang)
+    fragment = _render_tag_badges(keywords, labels, lang) + _render_meta_bar(
+        date_pub, date_mod, word_count, labels, lang
     )
     if not fragment:
         return html
-    return _HERO_RE.sub(rf'\1{fragment}\2', html, count=1)
+    return _HERO_RE.sub(rf"\1{fragment}\2", html, count=1)
+
+
+_OG_IMAGE_RE = re.compile(
+    r'<meta\s+property="og:image"\s+content="([^"]+)"',
+    re.IGNORECASE,
+)
+_OG_IMAGE_ALT_RE = re.compile(
+    r'<meta\s+(?:property|name)="og:image:alt"\s+content="([^"]+)"',
+    re.IGNORECASE,
+)
+_BANNER_ALT_FRONTMATTER_RE = re.compile(
+    r'<meta\s+name="twitter:image:alt"\s+content="([^"]+)"',
+    re.IGNORECASE,
+)
+_OG_IMAGE_WIDTH_RE = re.compile(
+    r'<meta\s+property="og:image:width"\s+content="(\d+)"',
+    re.IGNORECASE,
+)
+_OG_IMAGE_HEIGHT_RE = re.compile(
+    r'<meta\s+property="og:image:height"\s+content="(\d+)"',
+    re.IGNORECASE,
+)
+# Fallback dimensions when the page has no og:image:width / og:image:height
+# meta tags. Picked at 16:9 because that's the canonical hero aspect for
+# CDN-transform URLs that don't carry a height. Used only as a last resort
+# — every article since 2026-06-02 ships with explicit og:image dimensions.
+_BANNER_FALLBACK_WIDTH = 1200
+_BANNER_FALLBACK_HEIGHT = 675
+
+
+def _banner_dimensions(html: str) -> tuple[int, int]:
+    """Read og:image:width / og:image:height from the rendered HTML and
+    return ``(width, height)`` as integers. Falls back to the canonical
+    16:9 hero dims when either tag is absent or malformed.
+
+    This is what fixes the lighthouse CLS regression: an article whose
+    banner has a 2.5:1 natural ratio (e.g. 1425×571) needs a 2.5:1 box
+    reservation. Hardcoding 16:9 attributes meant the browser reserved a
+    16:9 box while CSS set ``aspect-ratio: 16/9``; when the natural image
+    actually arrived, ``object-fit: cover`` cropped the strip but the box
+    surrounding text still shifted by ~0.04 above the 0.1 CLS threshold.
+    Reading the real og:image dimensions makes the reservation exact.
+    """
+    w_m = _OG_IMAGE_WIDTH_RE.search(html)
+    h_m = _OG_IMAGE_HEIGHT_RE.search(html)
+    # The og:image:width/height regexes only match \d+, so the int() cast
+    # cannot fail — validation is the regex shape, not a runtime check.
+    if w_m and h_m:
+        w = int(w_m.group(1))
+        h = int(h_m.group(1))
+        if w > 0 and h > 0:
+            return w, h
+    return _BANNER_FALLBACK_WIDTH, _BANNER_FALLBACK_HEIGHT
+
+
+def _banner_path(banner_url: str) -> str | None:
+    """Return the on-CDN path component (e.g. ``/stocks/images/foo.webp``)
+    of a banner URL, or ``None`` if the URL has no extractable path."""
+    m = re.match(r"https?://[^/]+(/[^?#]+)", banner_url)
+    return m.group(1) if m else None
+
+
+def strip_legacy_inline_banner(html: str, banner_url: str) -> str:
+    """Remove the legacy ``<p><img></p>`` wrapper that pre-2026 articles
+    used to place the banner inline as the first body element.
+
+    Pre-2026 articles routinely placed the banner as the first paragraph
+    in the markdown source (``![alt](url)`` → ``<p><img></p>``). The
+    article-banner figure injected by ``inject_hero_banner`` now carries
+    that role at the top of every page, so the inline copy is a visible
+    duplicate of the same image.
+
+    Detection: find the first ``<p><img></p>`` after the article-banner
+    figure (skipping ``langswitch`` aside + ``lead-start`` aside in
+    between); if the img's src contains the og:image path as a substring,
+    drop the entire ``<p>…</p>`` wrapper. The wrap_cdn_images postbuild
+    pass may have rewritten the body img to a ``/api/transform?url=…``
+    form, so substring match is used instead of URL equality.
+
+    No-op if the page has no article-banner figure (e.g. listings,
+    static pages) or the first body ``<p><img></p>`` doesn't match the
+    banner.
+    """
+    og_path = _banner_path(banner_url)
+    if og_path is None:
+        return html
+    # Anchor: the close of the auto-injected article-banner figure.
+    anchor = re.search(r"</figure>", html, re.IGNORECASE)
+    if not anchor:
+        return html
+    # Look at the first ~4 KB after </figure> for a `<p><img …></p>`
+    # whose src contains the banner path. The langswitch + lead-start
+    # asides come in between but are easy to skip — they're `<aside>`
+    # tags that the regex skips over.
+    start = anchor.end()
+    window = html[start : start + 4000]
+    m = re.search(
+        r'<p>\s*<img\b[^>]*\bsrc="([^"]+)"[^>]*>\s*</p>',
+        window,
+        re.IGNORECASE,
+    )
+    if not m or og_path not in m.group(1):
+        return html
+    # Drop the matched <p>…</p>.
+    abs_start = start + m.start()
+    abs_end = start + m.end()
+    return html[:abs_start] + html[abs_end:]
+
+
+def inject_hero_banner(html: str) -> str:
+    """Insert a hero ``<figure class="article-banner">`` right after the
+    H1/byline ``<section class="ap-hero">`` on every BlogPosting page.
+
+    Source: ``<meta property="og:image">`` (set by the SSG from the
+    article's frontmatter ``banner:`` field).
+    Alt:    ``<meta name="twitter:image:alt">`` (set by the SSG from
+            ``banner_alt:``), falling back to the article's H1 title.
+
+    Idempotent. Skips:
+      - non-BlogPosting pages (listings / static pages)
+      - pages already carrying ``class="article-banner"`` (re-runs)
+      - legacy articles whose first body image already matches the
+        og:image URL (``_body_starts_with_banner_image``); without this
+        check we'd inject a duplicate, producing the banner-then-banner
+        stack at the top of the article that the 2018 / 2023 series
+        currently shows.
+    """
+    if '"@type":"BlogPosting"' not in html:
+        return html
+    if 'class="article-banner"' in html:
+        return html
+    og = _OG_IMAGE_RE.search(html)
+    if not og:
+        return html
+    banner_url = og.group(1)
+    banner_width, banner_height = _banner_dimensions(html)
+
+    alt_m = _BANNER_ALT_FRONTMATTER_RE.search(html) or _OG_IMAGE_ALT_RE.search(html)
+    if alt_m:
+        alt_text = alt_m.group(1)
+    else:
+        # Fallback: derive from the H1 — better than nothing, screen-reader-safe.
+        h1 = _H1_RE.search(html)
+        alt_text = f"Banner for: {h1.group(1).strip()}" if h1 else ""
+
+    figure = (
+        f'<figure class="article-banner">'
+        f'<img src="{banner_url}" alt="{alt_text}" '
+        f'width="{banner_width}" height="{banner_height}" '
+        f'fetchpriority="high" decoding="async" />'
+        f"</figure>"
+    )
+    # Insert immediately after the closing </section> of the ap-hero block.
+    # Same anchor _LANG_SWITCH_INSERT_RE uses, but we run BEFORE the lang
+    # switcher so its insertion sees the banner already in place and slots
+    # the langswitch aside after the banner.
+    new_html, n = _HERO_BANNER_INSERT_RE.subn(
+        lambda m: f"{m.group(1)}{figure}{m.group(2)}",
+        html,
+        count=1,
+    )
+    if not n:
+        return html
+    # Legacy authoring pattern: pre-2026 articles placed the banner image
+    # inline as the first body element. The auto-injected figure above
+    # now carries that role, so the inline copy is a visible duplicate.
+    return strip_legacy_inline_banner(new_html, banner_url)
+
+
+# Insertion anchor: the close of <section class="ap-hero"> immediately
+# followed by the next sibling. Matches the same shape as the lang-switch
+# anchor (which runs later in the pipeline).
+_HERO_BANNER_INSERT_RE = re.compile(
+    r'(</section>)(\s*<(?!figure class="article-banner")[a-z])',
+    re.IGNORECASE,
+)
+
+
+# A previously-injected anchor link inside a heading. Matched once and
+# stripped during text extraction so a re-run never picks up the "#" or
+# its surrounding markup as part of the heading title.
+_HEADING_ANCHOR_RE = re.compile(
+    r'\s*<a\s+class="heading-anchor"[\s\S]*?</a>',
+    re.IGNORECASE,
+)
 
 
 def inject_anchor_links_and_toc(html: str) -> str:
     """Add id="…" + a click-to-copy anchor link icon to every H2/H3 inside
     <main>. If the post has ≥5 H2 headings, build a table-of-contents card
-    and insert it at the top of <main>."""
+    and insert it at the top of <main>.
+
+    Idempotent: if a previous run already injected a ``.article-toc`` or
+    any ``.heading-anchor`` link inside <main>, the function no-ops.
+    Without this guard, re-running the pass (e.g. when a stale ``public/``
+    tree carries last build's HTML) compounds anchors on each H2 and
+    stacks N copies of the TOC — and because each rerun strips tags
+    rather than the prior anchor's "#" text content, the TOC labels
+    accumulate trailing " # # # #" tokens that contaminate every entry.
+    """
     if '"@type":"BlogPosting"' not in html:
         return html
     m = _MAIN_RE.search(html)
     if not m:
         return html
     pre, body, post = m.group(1), m.group(2), m.group(3)
+    # Idempotency guard — either marker means a previous run already
+    # owned this <main>. Skipping returns the HTML untouched.
+    if 'class="article-toc"' in body or 'class="heading-anchor"' in body:
+        return html
     h2_titles: list[tuple[str, str]] = []
     labels = _labels(html)
     # Track slugs already emitted on this page; append -2, -3… on
@@ -353,14 +587,20 @@ def inject_anchor_links_and_toc(html: str) -> str:
         heading_idx += 1
         level = hm.group(1).lower()
         inner = hm.group(2)
-        text = re.sub(r'<[^>]+>', '', inner).strip()
+        # Drop any prior anchor-link markup from the inner content
+        # before computing the heading text. The top-level idempotency
+        # guard makes this defensive rather than hot-path — kept so
+        # narrow regression cases (e.g. tests that hand-craft a partial
+        # state) still degrade safely.
+        clean_inner = _HEADING_ANCHOR_RE.sub("", inner)
+        text = re.sub(r"<[^>]+>", "", clean_inner).strip()
         if not text:
             return hm.group(0)
         slug = _unique(slugify(text), heading_idx)
         if level == "h2":
             h2_titles.append((slug, text))
         return (
-            f'<{level} id="{slug}">{inner} '
+            f'<{level} id="{slug}">{clean_inner} '
             f'<a class="heading-anchor" href="#{slug}" aria-label="{labels["Link to"]} {text}">#</a>'
             f'</{level}>'
         )
@@ -368,15 +608,55 @@ def inject_anchor_links_and_toc(html: str) -> str:
     new_body = _HEADING_RE.sub(patch_heading, body)
     toc_html = ""
     if len(h2_titles) >= 5:
-        items = "".join(
-            f'<li><a href="#{slug}">{text}</a></li>' for slug, text in h2_titles
-        )
+        items = "".join(f'<li><a href="#{slug}">{text}</a></li>' for slug, text in h2_titles)
         toc_html = (
             f'<aside class="article-toc" aria-label="{labels["Table of contents"]}">'
             f'<h2>{labels["Contents"]}</h2>'
             f'<ol>{items}</ol></aside>'
         )
-    return html[: m.start()] + pre + toc_html + new_body + post + html[m.end():]
+    return html[: m.start()] + pre + toc_html + new_body + post + html[m.end() :]
+
+
+_BODY_H1_RE = re.compile(
+    r'(<main\b[^>]*>\s*<div class="wrap[^"]*">[\s\S]*?' r"(?:</aside>\s*)*)<h1>([^<]+)</h1>\s*",
+    re.IGNORECASE,
+)
+
+
+def strip_duplicate_body_h1(html: str) -> str:
+    """Remove the first H1 inside <main> when it duplicates the hero H1
+    that the layout template emits in ``<section class="ap-hero">``.
+
+    Every dated article runs the markdown body through Static Site
+    Generator with the H1 markdown ``# {{title}}`` at the top. The
+    layout *also* emits ``<h1>{{title}}</h1>`` in the hero band. The
+    rendered output therefore carries two H1s with identical text —
+    WCAG 1.3.1 / 2.4.6 violation, plus a noisy duplicate above the
+    article body.
+
+    The fix is render-only: ``check_voice`` still requires exactly one
+    H1 in the markdown source (so editors keep the canonical title at
+    the top of the file), but the postbuild pass deletes the
+    duplicate before the page is served.
+    """
+    hero_m = _H1_RE.search(html)
+    if hero_m is None:
+        return html
+    hero_text = _html_unescape(hero_m.group(1)).strip()
+    new_html, n = _BODY_H1_RE.subn(
+        lambda m: m.group(1) if _html_unescape(m.group(2)).strip() == hero_text else m.group(0),
+        html,
+        count=1,
+    )
+    return new_html if n else html
+
+
+def _html_unescape(s: str) -> str:
+    """Local indirection so the strip-duplicate-H1 helper can mock if
+    needed without polluting the module-level ``html`` alias."""
+    import html as _h
+
+    return _h.unescape(s)
 
 
 _NON_BODY_ASIDE_RE = re.compile(
@@ -393,7 +673,7 @@ def _extract_citations(html: str) -> list[dict[str, str]]:
     main_m = _MAIN_RE.search(html)
     if not main_m:
         return []
-    body = _NON_BODY_ASIDE_RE.sub('', main_m.group(2))
+    body = _NON_BODY_ASIDE_RE.sub("", main_m.group(2))
     seen: set[str] = set()
     out: list[dict[str, str]] = []
     for lm in _OUTBOUND_LINK_RE.finditer(body):
@@ -410,7 +690,9 @@ def _extract_citations(html: str) -> list[dict[str, str]]:
     return out
 
 
-def build_post_nav_index(pages: list[Path]) -> dict[str, tuple[tuple[str, str] | None, tuple[str, str] | None]]:
+def build_post_nav_index(
+    pages: list[Path],
+) -> dict[str, tuple[tuple[str, str] | None, tuple[str, str] | None]]:
     """Build a slug -> (prev, next) lookup over every dated post in pages.
 
     A dated post is one whose parent directory name matches ``YYYY-MM-DD-…``.
@@ -449,13 +731,15 @@ def build_fr_title_index(pages: list[Path]) -> dict[str, str]:
     neighbouring article instead of the English H1.
     """
     out: dict[str, str] = {}
+    fr_articles_map = _lr.load_slugs("fr").get("articles", {})
+    fr_to_en = {v: k for k, v in fr_articles_map.items()}
     for p in pages:
         if p.parent.parent.name != "fr":
             continue
         slug = p.parent.name  # FR slug
         if not _DATED_SLUG_RE.match(slug):
             continue
-        en = _en_slug(slug)
+        en = fr_to_en.get(slug, slug)
         if en == slug:  # not in slug map
             continue
         html = p.read_text(encoding="utf-8", errors="ignore")
@@ -467,9 +751,9 @@ def build_fr_title_index(pages: list[Path]) -> dict[str, str]:
 
 _FAQ_H2_RE = re.compile(
     r'<h2 id="(frequently-asked-questions|foire-aux-questions)"[^>]*>'
-    r'([\s\S]+?)</h2>'
-    r'([\s\S]+?)'
-    r'(?=<h2|<aside|</main>|<hr|<footer)',
+    r"([\s\S]+?)</h2>"
+    r"([\s\S]+?)"
+    r"(?=<h2|<aside|</main>|<hr|<footer)",
 )
 
 
@@ -491,14 +775,13 @@ def _convert_faq_to_qa(html: str) -> str:
         # Capture Q + multiple following <p>…</p> until next <p><strong>...?</strong></p>.
         # Build a list of P-segments first, then pair Q with the answer chunk.
         segments: list[str] = [
-            sm.group(1).strip()
-            for sm in re.finditer(r'<p>([\s\S]*?)</p>', body)
+            sm.group(1).strip() for sm in re.finditer(r"<p>([\s\S]*?)</p>", body)
         ]
         i = 0
         while i < len(segments):
             seg = segments[i]
             # Q heuristic: starts with <strong> and ends with ? (or French ?)
-            qm = re.match(r'^<strong>([\s\S]+?)</strong>\s*$', seg)
+            qm = re.match(r"^<strong>([\s\S]+?)</strong>\s*$", seg)
             if qm:
                 question = qm.group(1).strip()
                 # Collect answer paragraphs until next strong-only paragraph
@@ -506,7 +789,7 @@ def _convert_faq_to_qa(html: str) -> str:
                 j = i + 1
                 while j < len(segments):
                     nxt = segments[j]
-                    if re.match(r'^<strong>[\s\S]+?</strong>\s*$', nxt):
+                    if re.match(r"^<strong>[\s\S]+?</strong>\s*$", nxt):
                         break
                     ans_parts.append(nxt)
                     j += 1
@@ -528,7 +811,7 @@ def _convert_faq_to_qa(html: str) -> str:
                 f'<details class="qa-item" open><summary class="qa-q">{q}</summary>'
                 f'<section class="qa-a"><p>{a}</p></section></details>'
             )
-        out_parts.append('</section>')
+        out_parts.append("</section>")
         return "".join(out_parts)
 
     return _FAQ_H2_RE.sub(patch, html)
@@ -587,22 +870,22 @@ def inject_nav_active(html: str, page: Path) -> str:
         return html
 
     # Always clear any pre-existing active markers in the header first.
-    header_m = re.search(r'<header\b[^>]*>([\s\S]*?)</header>', html, re.IGNORECASE)
+    header_m = re.search(r"<header\b[^>]*>([\s\S]*?)</header>", html, re.IGNORECASE)
     if not header_m:
         return html
     header_body = header_m.group(1)
-    header_clean = re.sub(r'\s+aria-current=["\']?[^"\'>]+["\']?', '', header_body)
-    header_clean = re.sub(r'(<a\b[^>]*?)\s+class=["\']?active["\']?', r'\1', header_clean)
+    header_clean = re.sub(r'\s+aria-current=["\']?[^"\'>]+["\']?', "", header_body)
+    header_clean = re.sub(r'(<a\b[^>]*?)\s+class=["\']?active["\']?', r"\1", header_clean)
 
     pat = re.compile(
-        r'(<a\s+(?:[^>]*?)href=["\']?)('
-        + re.escape(target)
-        + r')(["\']?)([^>]*>)',
+        r'(<a\s+(?:[^>]*?)href=["\']?)(' + re.escape(target) + r')(["\']?)([^>]*>)',
         re.IGNORECASE,
     )
 
     def repl(m: re.Match[str]) -> str:
-        return f'{m.group(1)}{m.group(2)}{m.group(3)} aria-current="page" class="active"{m.group(4)}'
+        return (
+            f'{m.group(1)}{m.group(2)}{m.group(3)} aria-current="page" class="active"{m.group(4)}'
+        )
 
     new_body = pat.sub(repl, header_clean, count=1)
     open_tag = header_m.group(0)[: header_m.group(0).index(">") + 1]
@@ -660,7 +943,7 @@ def inject_prev_next_nav(
             f'<a class="post-pagination-{direction}" href="{href}">'
             f'<span class="post-pagination-label">{label}</span>'
             f'<span class="post-pagination-title">{t}</span>'
-            f'</a>'
+            f"</a>"
         )
 
     inner = render(prev_e, "prev", labels["Previous"]) + render(next_e, "next", labels["Next"])
@@ -673,8 +956,8 @@ def inject_prev_next_nav(
     # sigstore has run. Without this, translated pages with sigstore bundles
     # silently lost prev/next nav.
     patched = re.sub(
-        r'(</div>)(\s*(?:<aside\b[^>]*>[\s\S]*?</aside>\s*)*</main>)',
-        nav + r'\1\2',
+        r"(</div>)(\s*(?:<aside\b[^>]*>[\s\S]*?</aside>\s*)*</main>)",
+        nav + r"\1\2",
         html,
         count=1,
     )
@@ -691,11 +974,12 @@ def inject_citations(html: str) -> str:
     if not cites:
         return html
     import json as _json
+
     fragment = ',"citation":' + _json.dumps(cites, separators=(",", ":"))
     # Insert just before the "speakable" key in the BlogPosting object.
     return re.sub(
         r'(,"speakable":)',
-        fragment + r'\1',
+        fragment + r"\1",
         html,
         count=1,
     )
@@ -723,15 +1007,20 @@ def inject_mermaid(html: str) -> str:
     so main.js can lazy-load the Mermaid library and render them. Also
     widens the meta-CSP script-src to allow the cdn.jsdelivr.net import,
     but only on pages that actually contain a Mermaid block."""
-    if 'language-mermaid' not in html:
+    if "language-mermaid" not in html:
         return html
     import html as _h
 
     def replace(m: re.Match[str]) -> str:
         # Strip <span> wrappers a syntax highlighter may have added,
         # then unescape entities — Mermaid wants the raw source.
-        inner = re.sub(r'<[^>]+>', '', m.group(1))
-        return f'<pre class="mermaid">{_h.escape(_h.unescape(inner))}</pre>'
+        # Mermaid v10's run() reads via innerHTML, so emit `>` as a raw
+        # char (not `&gt;`) — otherwise `->>` arrows fail to parse.
+        # Still escape `<` and `&` to keep the surrounding HTML valid.
+        inner = re.sub(r"<[^>]+>", "", m.group(1))
+        raw = _h.unescape(inner)
+        safe = raw.replace("&", "&amp;").replace("<", "&lt;")
+        return f'<pre class="mermaid">{safe}</pre>'
 
     new_html = _MERMAID_BLOCK_RE.sub(replace, html)
     if new_html == html:
@@ -743,14 +1032,48 @@ def inject_mermaid(html: str) -> str:
 
         def patch_content(c: re.Match[str]) -> str:
             policy = c.group(3)
-            if "cdn.jsdelivr.net" in policy:
+            new_policy = policy
+            # Widen script-src so the Mermaid lib can be imported from jsDelivr.
+            if "cdn.jsdelivr.net" not in new_policy:
+                new_policy = re.sub(
+                    r"(script-src)(\s+)",
+                    r"\1 https://cdn.jsdelivr.net\2",
+                    new_policy,
+                    count=1,
+                )
+            # Widen style-src so Mermaid can set inline styles on the SVG it
+            # generates (arrowhead fills, sequence-number colors, message-line
+            # strokes are all set via element.style.X). Without 'unsafe-inline'
+            # in style-src for these pages, those assignments are silently
+            # blocked by CSP and the diagram renders with browser default fill
+            # (black filled paths = teardrop blobs).
+            #
+            # CSP3 spec gotcha: 'unsafe-inline' is IGNORED if any hash or nonce
+            # is also present in the same source list. So we strip the existing
+            # 'sha256-…' tokens from the style-src clause when we add
+            # 'unsafe-inline', otherwise the browser silently drops it.
+            if "'unsafe-inline'" not in new_policy:
+                # Match the whole style-src clause (up to the next ; or end of value)
+                def widen_style_src(m: re.Match[str]) -> str:
+                    clause = m.group(0)
+                    # Drop any 'sha256-…' or 'sha384-…' / 'sha512-…' hashes
+                    clause = re.sub(r"\s*'sha(?:256|384|512)-[A-Za-z0-9+/=]+'", "", clause)
+                    # Insert 'unsafe-inline' right after the directive name
+                    clause = re.sub(
+                        r"^(style-src)(\s+)",
+                        r"\1 'unsafe-inline'\2",
+                        clause,
+                        count=1,
+                    )
+                    return clause
+                new_policy = re.sub(
+                    r"style-src[^;]*",
+                    widen_style_src,
+                    new_policy,
+                    count=1,
+                )
+            if new_policy == policy:
                 return c.group(0)
-            new_policy = re.sub(
-                r"(script-src)(\s+)",
-                r"\1 https://cdn.jsdelivr.net\2",
-                policy,
-                count=1,
-            )
             return c.group(1) + c.group(2) + new_policy + c.group(4)
 
         return _content_attr_re.sub(patch_content, tag, count=1)
@@ -781,7 +1104,7 @@ def inject_sources_list(html: str) -> str:
             f'<li><a href="{url}" rel="external noopener nofollow">'
             f'<span class="source-host">{host}</span>'
             f'<span class="source-path">{display}</span>'
-            f'</a></li>'
+            f"</a></li>"
         )
     heading = _labels(html)["Sources & references"]
     fragment = (
@@ -793,11 +1116,11 @@ def inject_sources_list(html: str) -> str:
     # Insert before the prev/next nav if it's already there, else before
     # the closing </div></main>.
     if 'class="post-pagination"' in html:
-        return re.sub(r'(<nav class="post-pagination")', fragment + r'\1', html, count=1)
-    return re.sub(r'(</div>\s*</main>)', fragment + r'\1', html, count=1)
+        return re.sub(r'(<nav class="post-pagination")', fragment + r"\1", html, count=1)
+    return re.sub(r"(</div>\s*</main>)", fragment + r"\1", html, count=1)
 
 
-_HEAD_END_RE = re.compile(r'</head>', re.IGNORECASE)
+_HEAD_END_RE = re.compile(r"</head>", re.IGNORECASE)
 # Match a <link rel="alternate" hreflang=…> tag with any attribute order
 # and either HTML5 (``>``) or XHTML (``/>``) self-close. The previous form
 # required ``[^/]*/>`` which can never match real URLs (every ``https://``
@@ -825,10 +1148,10 @@ SPECULATION_RULES_BLOCK = (
     '{"not":{"href_matches":"/sw.js"}},'
     '{"not":{"href_matches":"/contact/*"}},'
     '{"not":{"href_matches":"/fr/contact/*"}}'
-    ']},'
+    "]},"
     '"eagerness":"moderate"'
-    '}]}'
-    '</script>'
+    "}]}"
+    "</script>"
 )
 
 
@@ -836,7 +1159,7 @@ _BODY_LINK_STYLESHEET_RE = re.compile(
     r'<link\b[^>]*\brel=(?:"stylesheet"|stylesheet)[^>]*>',
     re.IGNORECASE,
 )
-_BODY_END_RE = re.compile(r'</head>', re.IGNORECASE)
+_BODY_END_RE = re.compile(r"</head>", re.IGNORECASE)
 
 
 def _sanitize_link_tag(tag: str) -> str:
@@ -848,7 +1171,8 @@ def _sanitize_link_tag(tag: str) -> str:
     # Collapse any duplicate `crossorigin="anonymous"` runs into one.
     tag = re.sub(
         r'(crossorigin="anonymous")(\s+crossorigin="anonymous")+',
-        r'\1', tag,
+        r"\1",
+        tag,
     )
     # Remove a trailing `"` immediately before the closing `>`.
     tag = re.sub(r'""(\s*/?>)', r'"\1', tag)
@@ -877,7 +1201,7 @@ def hoist_body_link_stylesheets(html: str) -> tuple[str, int]:
     new_body = body
     for m in reversed(matches):
         extracted.insert(0, _sanitize_link_tag(m.group(0)))
-        new_body = new_body[:m.start()] + new_body[m.end():]
+        new_body = new_body[: m.start()] + new_body[m.end() :]
     return head + "".join(extracted) + new_body, len(extracted)
 
 
@@ -885,9 +1209,7 @@ def inject_speculation_rules(html: str) -> str:
     """Inject the Speculation Rules API block before </head>. Idempotent."""
     if 'type="speculationrules"' in html:
         return html
-    return _HEAD_END_RE.sub(SPECULATION_RULES_BLOCK + '</head>', html, count=1)
-
-
+    return _HEAD_END_RE.sub(SPECULATION_RULES_BLOCK + "</head>", html, count=1)
 
 
 # ---------------------------------------------------------------------------
@@ -957,10 +1279,7 @@ def _resolve_en_slug(slug: str, lang: str) -> str | None:
     if lang == "en":
         return slug
     maps = _slug_maps(lang)
-    return (
-        maps["articles_lang_to_en"].get(slug)
-        or maps["statics_lang_to_en"].get(slug)
-    )
+    return maps["articles_lang_to_en"].get(slug) or maps["statics_lang_to_en"].get(slug)
 
 
 def _alternates_for_en_slug(
@@ -974,9 +1293,8 @@ def _alternates_for_en_slug(
     ]
     for code in _all_active_non_en_langs():
         maps = _slug_maps(code)
-        lang_slug = (
-            maps["articles_en_to_lang"].get(en_slug)
-            or maps["statics_en_to_lang"].get(en_slug)
+        lang_slug = maps["articles_en_to_lang"].get(en_slug) or maps["statics_en_to_lang"].get(
+            en_slug
         )
         if not lang_slug:
             continue
@@ -984,6 +1302,164 @@ def _alternates_for_en_slug(
             continue
         alts.append((code, f"https://sebastienrousseau.com/{code}/{lang_slug}/"))
     return alts
+
+
+# Per-locale lead-in for the inline language switcher rail. (visible-lead,
+# aria-label). Visible-lead reads naturally before a comma-separated list of
+# native-script language names; aria-label is the accessible name for the
+# <aside> wrapper. Translations match the editorial register used elsewhere
+# on the site — sub-agents that touch this file should not paraphrase.
+_LANG_SWITCH_STRINGS: dict[str, tuple[str, str]] = {
+    "en": ("This post is also available in", "Available languages"),
+    "fr": ("Cet article est aussi disponible en", "Langues disponibles"),
+    "es": ("Este artículo también está disponible en", "Idiomas disponibles"),
+    "de": ("Dieser Artikel ist auch verfügbar auf", "Verfügbare Sprachen"),
+    "it": ("Questo articolo è disponibile anche in", "Lingue disponibili"),
+    "pt-br": ("Este artigo também está disponível em", "Idiomas disponíveis"),
+    "nl": ("Dit artikel is ook beschikbaar in", "Beschikbare talen"),
+    "ja": ("この記事は次の言語でもご覧いただけます", "対応言語"),
+    "zh-hans": ("本文亦提供以下语言版本", "可用语言"),
+    "zh-hant": ("本文亦提供以下語言版本", "可用語言"),
+    "ko": ("이 글은 다음 언어로도 제공됩니다", "지원 언어"),
+    "ar": ("هذه المقالة متوفرة أيضًا باللغات", "اللغات المتوفرة"),
+    "ru": ("Эта статья также доступна на", "Доступные языки"),
+    "pl": ("Ten artykuł jest również dostępny w", "Dostępne języki"),
+    "cs": ("Tento článek je k dispozici také v", "Dostupné jazyky"),
+    "uk": ("Ця стаття також доступна", "Доступні мови"),
+    "ro": ("Acest articol este disponibil și în", "Limbi disponibile"),
+    "tr": ("Bu makale şu dillerde de mevcuttur", "Mevcut diller"),
+    "he": ("מאמר זה זמין גם בשפות", "שפות זמינות"),
+    "hi": ("यह लेख इन भाषाओं में भी उपलब्ध है", "उपलब्ध भाषाएँ"),
+    "bn": ("এই নিবন্ধটি এই ভাষাগুলিতেও উপলব্ধ", "উপলব্ধ ভাষাসমূহ"),
+    "id": ("Artikel ini juga tersedia dalam", "Bahasa yang tersedia"),
+    "vi": ("Bài viết này cũng có sẵn bằng", "Ngôn ngữ có sẵn"),
+    "th": ("บทความนี้มีให้ในภาษาต่อไปนี้ด้วย", "ภาษาที่ใช้ได้"),
+    "fil": ("Available rin ang artikulong ito sa", "Mga available na wika"),
+    "ha": ("Wannan labarin yana samuwa kuma a cikin", "Harsunan da ake samu"),
+    "yo": ("Àpilẹ̀kọ yìí tún wà ní", "Àwọn èdè tó wà"),
+    "sv": ("Den här artikeln finns även på", "Tillgängliga språk"),
+}
+
+# Curated rendering order — high-distribution markets first, then alphabetical
+# by code for the long tail. Matches the publish-today dispatch order so the
+# language rail visually mirrors the translation pipeline's priority.
+_LANG_SWITCH_ORDER: tuple[str, ...] = (
+    "fr",
+    "es",
+    "de",
+    "it",
+    "pt-br",
+    "nl",
+    "ja",
+    "zh-hans",
+    "zh-hant",
+    "ko",
+    "ar",
+    "ru",
+    "pl",
+    "cs",
+    "uk",
+    "ro",
+    "tr",
+    "he",
+    "hi",
+    "bn",
+    "id",
+    "vi",
+    "th",
+    "fil",
+    "ha",
+    "yo",
+    "sv",
+    "en",
+)
+
+# Match the closing </section> of the article hero followed by the opening
+# <main>. Insertion target is exactly between them so the rail sits as a
+# distinct band above the body — not competing with tag badges + meta bar
+# inside the hero, not buried below the lead aside.
+_LANG_SWITCH_INSERT_RE = re.compile(
+    r"(</section>)(\s*<main\b)",
+    re.IGNORECASE,
+)
+
+
+def _render_lang_switch_item(
+    code: str,
+    href: str,
+) -> str:
+    """One <li><a> for the lang rail. Sets lang + hreflang + dir=rtl when
+    appropriate so screen readers pronounce the native label correctly."""
+    lang_obj = _lr.get(code)
+    rtl_attr = ' dir="rtl"' if lang_obj.rtl else ""
+    return (
+        f'<li><a href="{href}" lang="{lang_obj.bcp47}" hreflang="{lang_obj.bcp47}"'
+        f' rel="alternate"{rtl_attr}>{lang_obj.long_label}</a></li>'
+    )
+
+
+def _lang_switch_others(
+    en_slug: str,
+    lang: str,
+    translated_per_lang: dict[str, set[str]],
+) -> list[tuple[str, str]]:
+    """Return ``[(code, relative_href), …]`` for every locale this article
+    is available in, excluding the current page's lang, in the
+    :data:`_LANG_SWITCH_ORDER` priority order."""
+    alts = _alternates_for_en_slug(en_slug, translated_per_lang)
+    by_code = {code: url.replace("https://sebastienrousseau.com", "", 1) for code, url in alts}
+    return [
+        (code, by_code[code]) for code in _LANG_SWITCH_ORDER if code in by_code and code != lang
+    ]
+
+
+def inject_lang_switcher(
+    html: str,
+    slug: str,
+    lang: str,
+    translated_per_lang: dict[str, set[str]],
+) -> str:
+    """Insert an inline per-article language switcher between the hero
+    and the article body.
+
+    Surfaces the 28-locale advantage to readers as content, not chrome.
+    Different from the site-wide ``.ap-lang-item`` dropdown — that's nav
+    furniture; this is editorial. Both can coexist on the same page.
+
+    Idempotent. Skips:
+      - pages without the BlogPosting JSON-LD anchor (listing / static)
+      - pages already carrying a ``.article-langswitch`` block
+      - articles available in fewer than two locales (no rail needed)
+    """
+    if '"@type":"BlogPosting"' not in html:
+        return html
+    if 'class="article-langswitch"' in html:
+        return html
+    en_slug = _resolve_en_slug(slug, lang)
+    if en_slug is None:
+        return html
+    others = _lang_switch_others(en_slug, lang, translated_per_lang)
+    if not others:
+        return html
+
+    lead_text, aria_label = _LANG_SWITCH_STRINGS.get(
+        lang,
+        _LANG_SWITCH_STRINGS["en"],
+    )
+    items = "".join(_render_lang_switch_item(c, h) for c, h in others)
+    aside = (
+        f'<aside class="article-langswitch" aria-label="{aria_label}">'
+        f'<span class="article-langswitch-lead">{lead_text}</span> '
+        f'<ul class="article-langswitch-list">{items}</ul>'
+        f"</aside>"
+    )
+
+    new_html, n = _LANG_SWITCH_INSERT_RE.subn(
+        lambda m: f"{m.group(1)}{aside}{m.group(2)}",
+        html,
+        count=1,
+    )
+    return new_html if n else html
 
 
 def inject_hreflang(
@@ -1008,10 +1484,9 @@ def inject_hreflang(
     if len(alts) < 2:
         return html
     en_url = alts[0][1]
-    html = _HREFLANG_RE.sub('', html)
-    links = ''.join(
-        f'<link rel="alternate" hreflang="{code}" href="{url}" />'
-        for code, url in alts
+    html = _HREFLANG_RE.sub("", html)
+    links = "".join(
+        f'<link rel="alternate" hreflang="{code}" href="{url}" />' for code, url in alts
     )
     links += f'<link rel="alternate" hreflang="x-default" href="{en_url}" />'
-    return _HEAD_END_RE.sub(links + '</head>', html, count=1)
+    return _HEAD_END_RE.sub(links + "</head>", html, count=1)

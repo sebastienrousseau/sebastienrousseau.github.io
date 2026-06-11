@@ -7,6 +7,7 @@ This module owns everything that runs once at the end of postbuild
 ``PUBLIC`` as a parameter so the orchestrator doesn't have to set a
 module-level constant.
 """
+
 from __future__ import annotations
 
 import json
@@ -26,19 +27,27 @@ def _all_active_non_en_langs() -> list[str]:
 
 
 # ---------------------------------------------------------------------------
-# 6a. robots.txt — explicit AI crawler rules
+# 6a. robots.txt — explicit per-category crawler stance
 # ---------------------------------------------------------------------------
 #
-# Default robots.txt that SSG emits is just "User-agent: *" + Sitemap. The
-# spec for major AI crawlers is to keep separate User-agent blocks rather
-# than rely on the wildcard, so each ML team can be addressed independently
-# in future without rewriting the whole file. We allow all AI crawlers
-# because the goal is broad LLM citation; flip any line to `Disallow: /`
-# to opt out of that specific bot.
-ROBOTS_BODY = """User-agent: *
+# Default robots.txt that SSG emits is just "User-agent: *" + Sitemap. We
+# replace it with an explicit per-bot taxonomy so each crawler family
+# (search / social preview / AI retrieval / AI training / SEO audit) can
+# be addressed and reasoned about independently — and so the stance is
+# legible to humans, not just bots.
+#
+# Current stance: ALLOW everywhere. Goal is broad LLM citation under the
+# CC BY-4.0 license posted at /about/#bot-policy. Flip any block to
+# `Disallow: /` to opt out per-bot — the categorisation makes the
+# trade-off visible at the point of decision.
+ROBOTS_BODY = """# Crawler policy for sebastienrousseau.com
+# Human-readable version: https://sebastienrousseau.com/about/#bot-policy
+# License of crawled content: CC BY-4.0 — attribution required.
+
+User-agent: *
 Allow: /
 
-# Web search + general-purpose crawlers
+# -- Web search engines -----------------------------------------------------
 User-agent: Googlebot
 Allow: /
 
@@ -60,12 +69,7 @@ Allow: /
 User-agent: Applebot
 Allow: /
 
-User-agent: AhrefsBot
-Allow: /
-
-User-agent: SemrushBot
-Allow: /
-
+# -- Social / link-preview --------------------------------------------------
 User-agent: facebookexternalhit
 Allow: /
 
@@ -75,18 +79,29 @@ Allow: /
 User-agent: LinkedInBot
 Allow: /
 
-# AI / LLM crawlers — broad citation rather than blanket block. Flip any
-# block to `Disallow: /` to opt out per-bot.
-User-agent: GPTBot
+# -- SEO audit / link-graph crawlers ---------------------------------------
+User-agent: AhrefsBot
 Allow: /
 
+User-agent: SemrushBot
+Allow: /
+
+# -- AI retrieval (cite-on-query) ------------------------------------------
+# These crawlers fetch on user-query and surface citations. Highest-signal
+# bots for the site's distribution strategy.
 User-agent: ChatGPT-User
 Allow: /
 
 User-agent: OAI-SearchBot
 Allow: /
 
-User-agent: Google-Extended
+User-agent: Claude-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-Web
 Allow: /
 
 User-agent: PerplexityBot
@@ -95,13 +110,26 @@ Allow: /
 User-agent: Perplexity-User
 Allow: /
 
+User-agent: MistralAI-User
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+# -- AI training crawlers ---------------------------------------------------
+# Broad-ingest model-training bots. Allowed under CC BY-4.0; attribution
+# requested per /about/#bot-policy. Flip any line to `Disallow: /` to
+# opt out of that specific corpus.
+User-agent: GPTBot
+Allow: /
+
 User-agent: ClaudeBot
 Allow: /
 
-User-agent: Claude-Web
+User-agent: anthropic-ai
 Allow: /
 
-User-agent: anthropic-ai
+User-agent: Google-Extended
 Allow: /
 
 User-agent: Amazonbot
@@ -119,12 +147,6 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-User-agent: ImagesiftBot
-Allow: /
-
-User-agent: Diffbot
-Allow: /
-
 User-agent: meta-externalagent
 Allow: /
 
@@ -134,18 +156,29 @@ Allow: /
 User-agent: facebook-externalhit-llama
 Allow: /
 
-User-agent: MistralAI-User
+# -- Specialised indexers ---------------------------------------------------
+User-agent: ImagesiftBot
 Allow: /
 
-User-agent: YouBot
+User-agent: Diffbot
 Allow: /
 
+# -- Sitemaps ---------------------------------------------------------------
 Sitemap: https://sebastienrousseau.com/sitemap.xml
 Sitemap: https://sebastienrousseau.com/news-sitemap.xml
 Sitemap: https://sebastienrousseau.com/fr/news-sitemap.xml
 
-# llms.txt: https://sebastienrousseau.com/llms.txt
-# llms-full: https://sebastienrousseau.com/llms-full.txt
+# -- Machine-readable surfaces ---------------------------------------------
+# llms.txt        — navigation index for LLM ingestion (llmstxt.org)
+# llms-ctx.txt    — compact agent-context format (URLs + one-line context)
+# llms-full.txt   — full article corpus, navigation-stripped
+# api/agents/     — JSON API: posts, topics, person, organization
+# Bot policy      — https://sebastienrousseau.com/about/#bot-policy
+
+# llms.txt:       https://sebastienrousseau.com/llms.txt
+# llms-ctx.txt:   https://sebastienrousseau.com/llms-ctx.txt
+# llms-full.txt:  https://sebastienrousseau.com/llms-full.txt
+# Agent API:      https://sebastienrousseau.com/api/agents/index.json
 """
 
 
@@ -156,6 +189,42 @@ def write_robots(public: Path) -> bool:
         return False
     target.write_text(ROBOTS_BODY, encoding="utf-8")
     return True
+
+
+# ---------------------------------------------------------------------------
+# 6a-ii. humans.txt + security.txt — copy the source files into public/
+# ---------------------------------------------------------------------------
+#
+# Shokunin emits empty placeholder humans.txt + security.txt at the site root
+# regardless of source. The canonical RFC-9116 disclosure file lives at
+# /.well-known/security.txt and the human-readable colophon at /humans.txt
+# — both authored in the repo root. This pass copies them through so they
+# survive the SSG's auxiliary-file emission. Idempotent.
+
+
+def _copy_through(public: Path, source_root: Path, name: str) -> bool:
+    src = source_root / name
+    dst = public / name
+    if not src.is_file():
+        return False
+    src_body = src.read_text(encoding="utf-8")
+    cur = dst.read_text(encoding="utf-8") if dst.is_file() else ""
+    if cur == src_body:
+        return False
+    dst.write_text(src_body, encoding="utf-8")
+    return True
+
+
+def write_humans(public: Path, source_root: Path) -> bool:
+    """Copy the repo-root humans.txt over the SSG's empty placeholder."""
+    return _copy_through(public, source_root, "humans.txt")
+
+
+def write_security_txt(public: Path, source_root: Path) -> bool:
+    """Copy the repo-root security.txt over the SSG's empty placeholder so the
+    RFC 9116 file is reachable at both `/security.txt` (root) and the canonical
+    `/.well-known/security.txt`. Security scanners check both locations."""
+    return _copy_through(public, source_root, "security.txt")
 
 
 # ---------------------------------------------------------------------------
@@ -184,13 +253,27 @@ def build_llms_txt() -> str:
     out.append("## Canonical entry points")
     out.append("")
     out.append(f"- [Home]({base}/) — landing page with the latest research and projects.")
-    out.append(f"- [About]({base}/about/) — full biography, professional history, areas of expertise.")
-    out.append(f"- [Articles]({base}/articles/) — research notes on quantum-safe cryptography, ISO 20022, applied AI, wholesale payments.")
-    out.append(f"- [Papers]({base}/papers/) — industry white papers, peer-reviewed analysis, regulatory submissions.")
-    out.append(f"- [Projects]({base}/projects/) — open-source Python and Rust libraries for payments, post-quantum crypto, AI tooling.")
-    out.append(f"- [Topics]({base}/topics/) — topic hubs: post-quantum, ISO 20022, applied AI, Rust, blockchain.")
-    out.append(f"- [Playlists]({base}/playlists/) — curated music libraries for deep work and engineering flow.")
-    out.append(f"- [Contact]({base}/contact/) — professional contact form for consulting, speaking, advisory engagements.")
+    out.append(
+        f"- [About]({base}/about/) — full biography, professional history, areas of expertise."
+    )
+    out.append(
+        f"- [Articles]({base}/articles/) — research notes on quantum-safe cryptography, ISO 20022, applied AI, wholesale payments."
+    )
+    out.append(
+        f"- [Papers]({base}/papers/) — industry white papers, peer-reviewed analysis, regulatory submissions."
+    )
+    out.append(
+        f"- [Projects]({base}/projects/) — open-source Python and Rust libraries for payments, post-quantum crypto, AI tooling."
+    )
+    out.append(
+        f"- [Topics]({base}/topics/) — topic hubs: post-quantum, ISO 20022, applied AI, Rust, blockchain."
+    )
+    out.append(
+        f"- [Playlists]({base}/playlists/) — curated music libraries for deep work and engineering flow."
+    )
+    out.append(
+        f"- [Contact]({base}/contact/) — professional contact form for consulting, speaking, advisory engagements."
+    )
     out.append("")
     out.append("## Feeds")
     out.append("")
@@ -232,6 +315,83 @@ def build_llms_txt() -> str:
 def write_llms_txt(public: Path) -> bool:
     target = public / "llms.txt"
     new = build_llms_txt()
+    cur = target.read_text(encoding="utf-8") if target.is_file() else ""
+    if cur == new:
+        return False
+    target.write_text(new, encoding="utf-8")
+    return True
+
+
+def build_llms_ctx_txt() -> str:
+    """Render llms-ctx.txt — the compact "agent context" companion to
+    llms.txt designed to drop directly into an LLM context window.
+
+    Per the llmstxt.org convention, llms-ctx.txt strips marketing prose
+    and groups the site's machine-readable surfaces into terse
+    URL + one-line description pairs. The audience is a tool-using
+    agent that wants to know "where do I look?" — not a human reader.
+
+    Structure: site identity → primary content URLs → feeds / JSON
+    endpoints → author profile → bot policy. Every line is either a
+    URL or a one-line description tied to a URL.
+    """
+    base = "https://sebastienrousseau.com"
+    out: list[str] = []
+    out.append("# Sebastien Rousseau — agent context")
+    out.append("")
+    out.append(
+        "Compact reference for LLM/agent ingestion. URLs + one-line "
+        "descriptions; no marketing prose. Crawl policy: "
+        "CC BY-4.0, attribution requested. See /about/#bot-policy."
+    )
+    out.append("")
+    out.append("## Content")
+    out.append(f"- {base}/                — Home: latest research and projects.")
+    out.append(f"- {base}/about/          — Biography, credentials (ORCID 0009-0005-1434-284X).")
+    out.append(f"- {base}/articles/       — Research notes: PQC, ISO 20022, payments, applied AI.")
+    out.append(
+        f"- {base}/papers/         — White papers, peer-reviewed analysis, regulatory submissions."
+    )
+    out.append(f"- {base}/projects/       — Open-source Python and Rust libraries.")
+    out.append(
+        f"- {base}/topics/         — Topic hubs: post-quantum, ISO 20022, applied AI, Rust, blockchain."
+    )
+    out.append(f"- {base}/contact/        — Professional contact form.")
+    out.append("")
+    out.append("## Feeds")
+    out.append(f"- {base}/llms.txt        — Site directory (llmstxt.org navigation format).")
+    out.append(f"- {base}/llms-full.txt   — Full article corpus, navigation-stripped.")
+    out.append(f"- {base}/sitemap.xml     — All URLs, with hreflang per locale.")
+    out.append(f"- {base}/news-sitemap.xml — Last 48 h news entries.")
+    out.append(f"- {base}/rss.xml         — RSS feed.")
+    out.append(f"- {base}/atom.xml        — Atom feed.")
+    out.append(f"- {base}/feed.json       — JSON Feed 1.1.")
+    out.append("")
+    out.append("## JSON API")
+    out.append(f"- {base}/api/agents/index.json        — Endpoint index + crawl policy.")
+    out.append(f"- {base}/api/agents/posts.json        — Every dated post with metadata.")
+    out.append(f"- {base}/api/agents/topics.json       — Curated topic clusters.")
+    out.append(f"- {base}/api/agents/person.json       — Author (Person + ORCID + hasCredential).")
+    out.append(f"- {base}/api/agents/organization.json — Publisher (Organization + Brand).")
+    out.append("")
+    out.append("## Author")
+    out.append("- Sebastien Rousseau, London, UK.")
+    out.append("- Senior payments leader, 20+ years at Tier-1 banks (HSBC, PayPal, Barclays).")
+    out.append("- ORCID: https://orcid.org/0009-0005-1434-284X")
+    out.append("- GitHub: https://github.com/sebastienrousseau")
+    out.append("- LinkedIn: https://www.linkedin.com/in/sebastienrousseau/")
+    out.append("")
+    out.append("## Bot policy")
+    out.append("- Allow: all categories (web search, social, AI retrieval, AI training, indexers).")
+    out.append("- License: CC BY-4.0 — attribution required.")
+    out.append(f"- Full text: {base}/about/#bot-policy")
+    out.append("")
+    return "\n".join(out)
+
+
+def write_llms_ctx_txt(public: Path) -> bool:
+    target = public / "llms-ctx.txt"
+    new = build_llms_ctx_txt()
     cur = target.read_text(encoding="utf-8") if target.is_file() else ""
     if cur == new:
         return False
@@ -394,12 +554,12 @@ def write_llms_full_txt(public: Path) -> bool:
 
 
 _TITLE_INSIDE_RE = re.compile(
-    r'<(?:title|news:title)[^>]*>([\s\S]*?)</(?:title|news:title)>',
+    r"<(?:title|news:title)[^>]*>([\s\S]*?)</(?:title|news:title)>",
     re.IGNORECASE,
 )
-_RSS_ITEM_RE   = re.compile(r'<item>[\s\S]*?</item>', re.IGNORECASE)
-_ATOM_ENTRY_RE = re.compile(r'<entry>[\s\S]*?</entry>', re.IGNORECASE)
-_NEWS_URL_RE   = re.compile(r'<url>[\s\S]*?</url>', re.IGNORECASE)
+_RSS_ITEM_RE = re.compile(r"<item>[\s\S]*?</item>", re.IGNORECASE)
+_ATOM_ENTRY_RE = re.compile(r"<entry>[\s\S]*?</entry>", re.IGNORECASE)
+_NEWS_URL_RE = re.compile(r"<url>[\s\S]*?</url>", re.IGNORECASE)
 
 
 def _build_title_index() -> dict[str, str]:
@@ -452,12 +612,14 @@ def _index_title(idx: dict[str, str], title: str, url: str) -> None:
 
 
 def _decode_entities(s: str) -> str:
-    return (s.replace("&amp;", "&")
-             .replace("&lt;", "<")
-             .replace("&gt;", ">")
-             .replace("&quot;", '"')
-             .replace("&apos;", "'")
-             .strip())
+    return (
+        s.replace("&amp;", "&")
+        .replace("&lt;", "<")
+        .replace("&gt;", ">")
+        .replace("&quot;", '"')
+        .replace("&apos;", "'")
+        .strip()
+    )
 
 
 def _patch_block(block: str, title_index: dict[str, str]) -> str:
@@ -473,19 +635,19 @@ def _patch_block(block: str, title_index: dict[str, str]) -> str:
     # Replace any URL inside this block that either has a localhost host or
     # has /.meta/ anywhere in its path — that's the Shokunin bug signature.
     bad_url = (
-        r'https?://'
-        r'(?:'
+        r"https?://"
+        r"(?:"
         # localhost host (any path)
         r'(?:127\.0\.0\.1|localhost)(?::\d+)?[^<\s"]*'
         # OR any host with a /.meta/ path segment
         r'|[^<\s"]*?/\.meta(?:/[^<\s"]*)?'
-        r')'
+        r")"
     )
 
     def rewrite_url(m: re.Match[str]) -> str:
         return m.group(1) + url + m.group(3)
 
-    block = re.sub(rf'(>\s*)({bad_url})(\s*<)', rewrite_url, block)
+    block = re.sub(rf"(>\s*)({bad_url})(\s*<)", rewrite_url, block)
     block = re.sub(rf'(="\s*)({bad_url})(\s*")', rewrite_url, block)
     return block
 
@@ -514,15 +676,15 @@ def fix_xml_feed_urls(public: Path) -> int:
         # processing the nested _posts/fr/ directory and don't belong in
         # the news-sitemap.
         text = re.sub(
-            r'<url>\s*<loc>[^<]*\/\.meta\/[^<]*</loc>[\s\S]*?</url>\s*',
-            '',
+            r"<url>\s*<loc>[^<]*\/\.meta\/[^<]*</loc>[\s\S]*?</url>\s*",
+            "",
             text,
         )
 
         # Top-of-feed cleanup: any residual localhost reference becomes the
         # production root. Done last so it doesn't shadow per-block matches.
         text = re.sub(
-            r'https?://(?:127\.0\.0\.1|localhost)(?::\d+)?',
+            r"https?://(?:127\.0\.0\.1|localhost)(?::\d+)?",
             "https://sebastienrousseau.com",
             text,
         )
@@ -538,8 +700,8 @@ def fix_xml_feed_urls(public: Path) -> int:
 # ---------------------------------------------------------------------------
 
 
-_VALID_ENTITY_RE = re.compile(r'&(amp|lt|gt|quot|apos|#\d+|#x[0-9a-fA-F]+);')
-_DOUBLE_ESCAPE_RE = re.compile(r'&amp;(amp|lt|gt|quot|apos|#\d+|#x[0-9a-fA-F]+);')
+_VALID_ENTITY_RE = re.compile(r"&(amp|lt|gt|quot|apos|#\d+|#x[0-9a-fA-F]+);")
+_DOUBLE_ESCAPE_RE = re.compile(r"&amp;(amp|lt|gt|quot|apos|#\d+|#x[0-9a-fA-F]+);")
 
 
 def escape_xml_ampersands(text: str) -> str:
@@ -552,19 +714,19 @@ def escape_xml_ampersands(text: str) -> str:
 
     Walks the string in one pass after the double-escape repair.
     """
-    text = _DOUBLE_ESCAPE_RE.sub(r'&\1;', text)
+    text = _DOUBLE_ESCAPE_RE.sub(r"&\1;", text)
     out: list[str] = []
     i = 0
     n = len(text)
     while i < n:
         ch = text[i]
-        if ch == '&':
+        if ch == "&":
             m = _VALID_ENTITY_RE.match(text, i)
             if m:
                 out.append(m.group(0))
                 i = m.end()
                 continue
-            out.append('&amp;')
+            out.append("&amp;")
             i += 1
         else:
             out.append(ch)
@@ -591,12 +753,12 @@ def fix_xml_feeds(public: Path) -> int:
 # generator can collapse multiple locale files onto the same per-item URL
 # instead of emitting distinct per-locale URLs, producing identical-by-link
 # duplicates that fail xmlls/lib2-news validation downstream.
-_RSS_ITEM_RE = re.compile(r'<item>[\s\S]*?</item>', re.IGNORECASE)
-_ATOM_ENTRY_RE = re.compile(r'<entry>[\s\S]*?</entry>', re.IGNORECASE)
-_SITEMAP_URL_RE = re.compile(r'<url>[\s\S]*?</url>', re.IGNORECASE)
-_LINK_RE = re.compile(r'<link[^>]*>([\s\S]*?)</link>', re.IGNORECASE)
+_RSS_ITEM_RE = re.compile(r"<item>[\s\S]*?</item>", re.IGNORECASE)
+_ATOM_ENTRY_RE = re.compile(r"<entry>[\s\S]*?</entry>", re.IGNORECASE)
+_SITEMAP_URL_RE = re.compile(r"<url>[\s\S]*?</url>", re.IGNORECASE)
+_LINK_RE = re.compile(r"<link[^>]*>([\s\S]*?)</link>", re.IGNORECASE)
 _ATOM_LINK_HREF_RE = re.compile(r'<link[^>]*\bhref="([^"]+)"', re.IGNORECASE)
-_LOC_RE = re.compile(r'<loc>([\s\S]*?)</loc>', re.IGNORECASE)
+_LOC_RE = re.compile(r"<loc>([\s\S]*?)</loc>", re.IGNORECASE)
 
 
 def _dedupe_blocks(text: str, block_re: re.Pattern[str], key_fn) -> tuple[str, int]:
@@ -608,7 +770,7 @@ def _dedupe_blocks(text: str, block_re: re.Pattern[str], key_fn) -> tuple[str, i
     cursor = 0
     dropped = 0
     for m in block_re.finditer(text):
-        out.append(text[cursor:m.start()])
+        out.append(text[cursor : m.start()])
         block = m.group(0)
         key = key_fn(block)
         if key and key in seen:
@@ -647,8 +809,8 @@ def dedupe_xml_feeds(public: Path) -> int:
     the count of files actually rewritten."""
     n = 0
     targets = [
-        (public / "rss.xml",          _RSS_ITEM_RE,    _rss_key),
-        (public / "atom.xml",         _ATOM_ENTRY_RE,  _atom_key),
+        (public / "rss.xml", _RSS_ITEM_RE, _rss_key),
+        (public / "atom.xml", _ATOM_ENTRY_RE, _atom_key),
         (public / "news-sitemap.xml", _SITEMAP_URL_RE, _sitemap_key),
     ]
     for xml, block_re, key_fn in targets:
@@ -666,7 +828,14 @@ _SITE = "https://sebastienrousseau.com"
 
 # Pages excluded from sitemap by convention. Keep in sync with
 # scripts/test_sitemap_completeness.py.
-_SITEMAP_EXCLUDE_TAILS = ("/404/", "/offline/", "/thanks/", "/fr/404/", "/fr/hors-ligne/", "/fr/merci/")
+_SITEMAP_EXCLUDE_TAILS = (
+    "/404/",
+    "/offline/",
+    "/thanks/",
+    "/fr/404/",
+    "/fr/hors-ligne/",
+    "/fr/merci/",
+)
 _SITEMAP_EXCLUDE_PREFIXES = ("/labs/",)
 
 
@@ -681,17 +850,11 @@ def _path_excluded_from_sitemap(path: str) -> bool:
     """Mirror the exclude policy used by test_sitemap_completeness."""
     if any(path.startswith(p) for p in _SITEMAP_EXCLUDE_PREFIXES):
         return True
-    return any(
-        path.startswith(tail) or path == tail.rstrip("/")
-        for tail in _SITEMAP_EXCLUDE_TAILS
-    )
+    return any(path.startswith(tail) or path == tail.rstrip("/") for tail in _SITEMAP_EXCLUDE_TAILS)
 
 
 def _collect_sitemap_urls(text: str) -> set[str]:
-    return {
-        _normalise_url(m.group(1))
-        for m in re.finditer(r'<loc>([^<]+)</loc>', text)
-    }
+    return {_normalise_url(m.group(1)) for m in re.finditer(r"<loc>([^<]+)</loc>", text)}
 
 
 def _missing_rendered_urls(public: Path, existing: set[str]) -> list[str]:
@@ -721,6 +884,9 @@ def augment_sitemap_with_rendered_pages(public: Path) -> int:
     sitemap. Without this pass, ``test_sitemap_completeness`` fails on
     every new cluster.
 
+    Emits the canonical pretty URL (``/<slug>/``) — the ``/index.html``
+    form is a search-engine duplicate that hurts crawl budget.
+
     Returns the count of `<url>` entries appended."""
     sitemap = public / "sitemap.xml"
     if not sitemap.is_file():
@@ -729,21 +895,84 @@ def augment_sitemap_with_rendered_pages(public: Path) -> int:
     additions = _missing_rendered_urls(public, _collect_sitemap_urls(text))
     if not additions:
         return 0
-    m = re.search(r'<lastmod>(\d{4}-\d{2}-\d{2})</lastmod>', text)
+    m = re.search(r"<lastmod>(\d{4}-\d{2}-\d{2})</lastmod>", text)
     today = m.group(1) if m else ""
-    # `additions` already ends with `/`, so append index.html with no sep.
+    # `additions` already ends with `/` — the canonical pretty URL.
     block = "".join(
         f"\n<url>\n  <changefreq>weekly</changefreq>\n"
-        f"  <lastmod>{today}</lastmod>\n  <loc>{u}index.html</loc>\n</url>"
+        f"  <lastmod>{today}</lastmod>\n  <loc>{u}</loc>\n</url>"
         for u in additions
     )
-    new_text = re.sub(r'</urlset>\s*$', block + "\n</urlset>\n", text, count=1)
+    new_text = re.sub(r"</urlset>\s*$", block + "\n</urlset>\n", text, count=1)
     sitemap.write_text(new_text, encoding="utf-8")
     return len(additions)
 
 
-_NEWS_TITLE_RE = re.compile(r'(<news:title>)([\s\S]*?)(</news:title>)', re.IGNORECASE)
-_NEWS_KEYWORDS_RE = re.compile(r'(<news:keywords>)([\s\S]*?)(</news:keywords>)', re.IGNORECASE)
+_URL_BLOCK_FOR_DEDUP_RE = re.compile(r"<url>[\s\S]*?</url>", re.MULTILINE)
+
+
+def dedupe_sitemap_index_html(sitemap_path: Path) -> int:
+    """Normalise every ``<loc>`` in the sitemap to the canonical pretty
+    URL form (``/<path>/``), dropping the legacy ``/<path>/index.html``
+    variant.
+
+    Why this exists: the upstream SSG ships every page as
+    ``<loc>...slug/index.html</loc>`` with a generic homepage-stub
+    ``<lastmod>``. Postbuild's ``_splice_fr_urls`` adds the canonical
+    pretty URL (``/<slug>/``) with the article's actual last-reviewed
+    date. The two coexist until this pass cleans them up — Google
+    treats them as separate URLs and the stale lastmod tells the
+    crawler the page hasn't changed since 2024.
+
+    Two cases:
+
+    - **Twin exists** (both ``/<path>/`` and ``/<path>/index.html`` are
+      present): drop the ``/index.html`` block. The pretty form already
+      carries the right ``lastmod`` and ``priority``.
+    - **Orphan** (only ``/<path>/index.html`` is present): rewrite its
+      ``<loc>`` to the pretty form in place. Preserves the block's
+      other metadata (``lastmod``, ``changefreq``, ``priority``).
+
+    Returns the count of ``<url>`` blocks rewritten or removed."""
+    if not sitemap_path.is_file():
+        return 0
+    text = sitemap_path.read_text(encoding="utf-8")
+    pretty_urls: set[str] = set()
+    for m in _LOC_RE.finditer(text):
+        loc = m.group(1).strip()
+        if loc.endswith("/") and not loc.endswith("/index.html"):
+            pretty_urls.add(loc)
+    touched = 0
+
+    def _patch(m: re.Match[str]) -> str:
+        nonlocal touched
+        block = m.group(0)
+        loc_m = _LOC_RE.search(block)
+        if not loc_m:
+            return block
+        loc = loc_m.group(1).strip()
+        if not loc.endswith("/index.html"):
+            return block
+        pretty = loc[: -len("index.html")]
+        if pretty in pretty_urls:
+            # Twin exists — drop the duplicate /index.html block entirely.
+            touched += 1
+            return ""
+        # Orphan — rewrite this block's <loc> to the pretty URL in place.
+        touched += 1
+        pretty_urls.add(pretty)
+        return block.replace(f"<loc>{loc}</loc>", f"<loc>{pretty}</loc>", 1)
+
+    new_text = _URL_BLOCK_FOR_DEDUP_RE.sub(_patch, text)
+    # Collapse the blank lines left behind by dropped blocks.
+    new_text = re.sub(r"\n{3,}", "\n\n", new_text)
+    if touched > 0:
+        sitemap_path.write_text(new_text, encoding="utf-8")
+    return touched
+
+
+_NEWS_TITLE_RE = re.compile(r"(<news:title>)([\s\S]*?)(</news:title>)", re.IGNORECASE)
+_NEWS_KEYWORDS_RE = re.compile(r"(<news:keywords>)([\s\S]*?)(</news:keywords>)", re.IGNORECASE)
 
 
 def _truncate_news_title(title: str, limit: int = 80) -> str:
@@ -846,7 +1075,9 @@ def refresh_sitemap_lastmod(sitemap_path: Path, index: dict[str, str]) -> int:
             new_block = _LASTMOD_RE.sub(new_lastmod, block, count=1)
         else:
             new_block = block.replace(
-                "</loc>", f"</loc>\n  {new_lastmod}", 1,
+                "</loc>",
+                f"</loc>\n  {new_lastmod}",
+                1,
             )
         if new_block != block:
             n += 1
@@ -860,14 +1091,27 @@ def refresh_sitemap_lastmod(sitemap_path: Path, index: dict[str, str]) -> int:
 
 _SITEMAP_BASE = "https://sebastienrousseau.com"
 _STATIC_SLUGS = (
-    "about", "articles", "papers", "projects", "topics", "tags",
-    "playlists", "contact", "accessibility", "privacy", "terms",
-    "made-with-shokunin", "made-with-static-site-generator",
+    "about",
+    "articles",
+    "papers",
+    "projects",
+    "topics",
+    "tags",
+    "playlists",
+    "contact",
+    "accessibility",
+    "privacy",
+    "terms",
+    "made-with-shokunin",
+    "made-with-static-site-generator",
     "resources-pacs008-checklist",
 )
 _TOPIC_SLUGS = (
-    "post-quantum-cryptography", "iso-20022-payments",
-    "applied-ai-banking", "rust-open-source", "blockchain-digital-assets",
+    "post-quantum-cryptography",
+    "iso-20022-payments",
+    "applied-ai-banking",
+    "rust-open-source",
+    "blockchain-digital-assets",
 )
 
 
@@ -894,9 +1138,7 @@ def _en_sitemap_urls(lastmod_index: dict[str, str]) -> list[tuple[str, str, str,
     return out
 
 
-def _lang_sitemap_urls(
-    code: str, lastmod_index: dict[str, str]
-) -> list[tuple[str, str, str, str]]:
+def _lang_sitemap_urls(code: str, lastmod_index: dict[str, str]) -> list[tuple[str, str, str, str]]:
     """Return ``(url, priority, changefreq, lastmod)`` tuples for a single
     non-EN language tree (home + statics + topics + articles)."""
     slugs = _lr.load_slugs(code)
@@ -919,7 +1161,12 @@ def _lang_sitemap_urls(
         for topic in _TOPIC_SLUGS
     )
     out.extend(
-        (f"{_SITEMAP_BASE}/{code}/{lang_slug}/", "0.7", "monthly", lastmod_index.get(en_art_slug, ""))
+        (
+            f"{_SITEMAP_BASE}/{code}/{lang_slug}/",
+            "0.7",
+            "monthly",
+            lastmod_index.get(en_art_slug, ""),
+        )
         for en_art_slug, lang_slug in articles.items()
     )
     return out

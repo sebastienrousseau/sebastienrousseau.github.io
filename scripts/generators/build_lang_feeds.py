@@ -26,6 +26,7 @@ Must run AFTER ``build_translations.py`` (so the translated pages
 exist on disk) and BEFORE ``postbuild.py`` (so the feeds get SRI/CSP
 treatment if needed and robots.txt picks them up).
 """
+
 from __future__ import annotations
 
 import sys as _sys  # path bootstrap — scripts reorg (scripts/lib/ on sys.path)
@@ -46,22 +47,43 @@ PUBLIC = Path("public")
 BASE = "https://sebastienrousseau.com"
 
 _DATED_RE = re.compile(r"^\d{4}-\d{2}-\d{2}-")
-_FM_KEY_RE = re.compile(
-    r'^([a-zA-Z_]+):\s*(?:"((?:[^"\\]|\\.)*)"|\'((?:[^\'\\]|\\.)*)\')\s*$'
-)
+_FM_KEY_RE = re.compile(r'^([a-zA-Z_]+):\s*(?:"((?:[^"\\]|\\.)*)"|\'((?:[^\'\\]|\\.)*)\')\s*$')
 
 _MONTHS = {
-    "January": 1, "February": 2, "March": 3, "April": 4,
-    "May": 5, "June": 6, "July": 7, "August": 8,
-    "September": 9, "October": 10, "November": 11, "December": 12,
+    "January": 1,
+    "February": 2,
+    "March": 3,
+    "April": 4,
+    "May": 5,
+    "June": 6,
+    "July": 7,
+    "August": 8,
+    "September": 9,
+    "October": 10,
+    "November": 11,
+    "December": 12,
     # French
-    "janvier": 1, "février": 2, "mars": 3, "avril": 4,
-    "mai": 5, "juin": 6, "juillet": 7, "août": 8,
-    "septembre": 9, "octobre": 10, "novembre": 11, "décembre": 12,
+    "janvier": 1,
+    "février": 2,
+    "mars": 3,
+    "avril": 4,
+    "mai": 5,
+    "juin": 6,
+    "juillet": 7,
+    "août": 8,
+    "septembre": 9,
+    "octobre": 10,
+    "novembre": 11,
+    "décembre": 12,
     # German
-    "Januar": 1, "Februar": 2, "März": 3,
-    "Mai": 5, "Juni": 6, "Juli": 7,
-    "Oktober": 10, "Dezember": 12,
+    "Januar": 1,
+    "Februar": 2,
+    "März": 3,
+    "Mai": 5,
+    "Juni": 6,
+    "Juli": 7,
+    "Oktober": 10,
+    "Dezember": 12,
     # (April/August/September/November share spelling with EN)
 }
 
@@ -83,30 +105,34 @@ def parse_frontmatter(text: str) -> dict[str, str]:
     return fm
 
 
+_DATE_FORMATS = ("%Y-%m-%d", "%B %d, %Y", "%b %d, %Y")
+
+
+def _parse_date_strptime(s: str) -> datetime | None:
+    for fmt in _DATE_FORMATS:
+        try:
+            return datetime.strptime(s, fmt)
+        except ValueError:
+            continue
+    return None
+
+
+def _parse_date_localised(s: str) -> datetime | None:
+    """'26 octobre 2023'-style dates via the localised month table."""
+    m = re.match(r"^([A-Za-zÀ-ÿ]+)\s+(\d{1,2}),?\s+(\d{4})$", s)
+    if not m:
+        return None
+    month = _MONTHS.get(m.group(1)) or _MONTHS.get(m.group(1).lower())
+    if not month:
+        return None
+    return datetime(int(m.group(3)), month, int(m.group(2)))
+
+
 def parse_date(s: str) -> datetime:
     """Parse a frontmatter date string ('October 26, 2023' or '2023-10-26')
     to a tz-aware UTC datetime at 06:06:06 (mirrors Shokunin's RSS time)."""
     s = (s or "").strip()
-    if not s:
-        return datetime.now(tz=UTC)
-    try:
-        d = datetime.strptime(s, "%Y-%m-%d")
-    except ValueError:
-        d = None
-    if d is None:
-        try:
-            d = datetime.strptime(s, "%B %d, %Y")
-        except ValueError:
-            try:
-                d = datetime.strptime(s, "%b %d, %Y")
-            except ValueError:
-                d = None
-    if d is None:
-        m = re.match(r"^([A-Za-zÀ-ÿ]+)\s+(\d{1,2}),?\s+(\d{4})$", s)
-        if m:
-            month = _MONTHS.get(m.group(1)) or _MONTHS.get(m.group(1).lower())
-            if month:
-                d = datetime(int(m.group(3)), month, int(m.group(2)))
+    d = (_parse_date_strptime(s) or _parse_date_localised(s)) if s else None
     if d is None:
         return datetime.now(tz=UTC)
     return d.replace(hour=6, minute=6, second=6, tzinfo=UTC)
@@ -133,15 +159,17 @@ def collect_entries(lang_code: str) -> list[dict[str, object]]:
         if not fm.get("title"):
             continue
         d = parse_date(fm.get("date", ""))
-        entries.append({
-            "slug": slug,
-            "title": fm.get("title", ""),
-            "description": fm.get("description", ""),
-            "keywords": fm.get("keywords", ""),
-            "banner": fm.get("banner", ""),
-            "date": d,
-            "url": f"{BASE}/{lang_code}/{slug}/",
-        })
+        entries.append(
+            {
+                "slug": slug,
+                "title": fm.get("title", ""),
+                "description": fm.get("description", ""),
+                "keywords": fm.get("keywords", ""),
+                "banner": fm.get("banner", ""),
+                "date": d,
+                "url": f"{BASE}/{lang_code}/{slug}/",
+            }
+        )
     entries.sort(key=lambda e: e["date"], reverse=True)  # type: ignore[arg-type, return-value]
     return entries
 
@@ -151,12 +179,7 @@ _AMP_RE = re.compile(r"&(?![a-zA-Z]+;|#\d+;|#x[0-9a-fA-F]+;)")
 
 def xml_escape(s: str) -> str:
     s = _AMP_RE.sub("&amp;", s)
-    return (
-        s.replace("<", "&lt;")
-        .replace(">", "&gt;")
-        .replace('"', "&quot;")
-        .replace("'", "&apos;")
-    )
+    return s.replace("<", "&lt;").replace(">", "&gt;").replace('"', "&quot;").replace("'", "&apos;")
 
 
 def rfc822(d: datetime) -> str:
@@ -167,7 +190,9 @@ def iso8601(d: datetime) -> str:
     return d.strftime("%Y-%m-%dT%H:%M:%S+00:00")
 
 
-def render_rss(entries: list[dict[str, object]], lang_code: str, bcp47: str, strings: dict[str, str]) -> str:
+def render_rss(
+    entries: list[dict[str, object]], lang_code: str, bcp47: str, strings: dict[str, str]
+) -> str:
     today = datetime.now(tz=UTC)
     parts: list[str] = []
     parts.append('<?xml version="1.0" encoding="UTF-8"?>')
@@ -175,11 +200,17 @@ def render_rss(entries: list[dict[str, object]], lang_code: str, bcp47: str, str
     parts.append("  <channel>")
     parts.append(f"    <title>{xml_escape(strings.get('feeds.channelTitle', ''))}</title>")
     parts.append(f"    <link>{BASE}/{lang_code}/</link>")
-    parts.append(f"    <description>{xml_escape(strings.get('feeds.channelDescription', ''))}</description>")
-    parts.append(f'    <atom:link href="{BASE}/{lang_code}/rss.xml" rel="self" type="application/rss+xml"/>')
+    parts.append(
+        f"    <description>{xml_escape(strings.get('feeds.channelDescription', ''))}</description>"
+    )
+    parts.append(
+        f'    <atom:link href="{BASE}/{lang_code}/rss.xml" rel="self" type="application/rss+xml"/>'
+    )
     parts.append(f"    <language>{bcp47}</language>")
     parts.append(f"    <lastBuildDate>{rfc822(today)}</lastBuildDate>")
-    parts.append(f"    <copyright>{xml_escape(strings.get('feeds.channelCopyright', ''))}</copyright>")
+    parts.append(
+        f"    <copyright>{xml_escape(strings.get('feeds.channelCopyright', ''))}</copyright>"
+    )
     for e in entries:
         parts.append("    <item>")
         parts.append(f"      <title>{xml_escape(e['title'])}</title>")  # type: ignore[arg-type]
@@ -191,11 +222,11 @@ def render_rss(entries: list[dict[str, object]], lang_code: str, bcp47: str, str
         banner = e.get("banner") or ""
         if banner:
             parts.append(f'      <enclosure url="{banner}" type="image/webp" length="0"/>')
-        keywords = (e.get("keywords") or "").split(",") if isinstance(e.get("keywords"), str) else []
+        keywords = (
+            (e.get("keywords") or "").split(",") if isinstance(e.get("keywords"), str) else []
+        )
         parts.extend(
-            f"      <category>{xml_escape(k)}</category>"
-            for kw in keywords
-            if (k := kw.strip())
+            f"      <category>{xml_escape(k)}</category>" for kw in keywords if (k := kw.strip())
         )
         parts.append("    </item>")
     parts.append("  </channel>")
@@ -204,13 +235,17 @@ def render_rss(entries: list[dict[str, object]], lang_code: str, bcp47: str, str
     return "\n".join(parts)
 
 
-def render_atom(entries: list[dict[str, object]], lang_code: str, bcp47: str, strings: dict[str, str]) -> str:
+def render_atom(
+    entries: list[dict[str, object]], lang_code: str, bcp47: str, strings: dict[str, str]
+) -> str:
     today = datetime.now(tz=UTC)
     parts: list[str] = []
     parts.append('<?xml version="1.0" encoding="UTF-8"?>')
     parts.append(f'<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="{bcp47}">')
     parts.append(f"  <title>{xml_escape(strings.get('feeds.channelTitle', ''))}</title>")
-    parts.append(f'  <link href="{BASE}/{lang_code}/atom.xml" rel="self" type="application/atom+xml"/>')
+    parts.append(
+        f'  <link href="{BASE}/{lang_code}/atom.xml" rel="self" type="application/atom+xml"/>'
+    )
     parts.append(f'  <link href="{BASE}/{lang_code}/"/>')
     parts.append(f"  <id>{BASE}/{lang_code}/</id>")
     parts.append(f"  <updated>{iso8601(today)}</updated>")
@@ -222,7 +257,9 @@ def render_atom(entries: list[dict[str, object]], lang_code: str, bcp47: str, st
         parts.append(f"    <updated>{iso8601(e['date'])}</updated>")  # type: ignore[arg-type]
         parts.append(f"    <published>{iso8601(e['date'])}</published>")  # type: ignore[arg-type]
         parts.append(f"    <summary>{xml_escape(e['description'])}</summary>")  # type: ignore[arg-type]
-        parts.append("    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>")
+        parts.append(
+            "    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>"
+        )
         parts.append("  </entry>")
     parts.append("</feed>")
     parts.append("")
@@ -239,7 +276,9 @@ def render_news_sitemap(entries: list[dict[str, object]], bcp47: str) -> str:
         parts.append(f"  <loc>{e['url']}</loc>")
         parts.append("  <news:news>")
         parts.append("    <news:publication>")
-        parts.append("      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>")
+        parts.append(
+            "      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>"
+        )
         parts.append(f"      <news:language>{bcp47}</news:language>")
         parts.append("    </news:publication>")
         parts.append(f"    <news:publication_date>{iso8601(e['date'])}</news:publication_date>")  # type: ignore[arg-type]
@@ -254,7 +293,9 @@ def render_news_sitemap(entries: list[dict[str, object]], bcp47: str) -> str:
     return "\n".join(parts)
 
 
-def render_json_feed(entries: list[dict[str, object]], lang_code: str, bcp47: str, strings: dict[str, str]) -> str:
+def render_json_feed(
+    entries: list[dict[str, object]], lang_code: str, bcp47: str, strings: dict[str, str]
+) -> str:
     """JSON Feed 1.1 (https://www.jsonfeed.org/version/1.1/)."""
     items = []
     for e in entries:
@@ -305,10 +346,18 @@ def build_for_lang(lang_code: str) -> int:
     strings = _lang_registry.load_strings(lang_code)
     out = PUBLIC / lang_code
     out.mkdir(parents=True, exist_ok=True)
-    (out / "rss.xml").write_text(render_rss(entries, lang_code, lang.bcp47, strings), encoding="utf-8")
-    (out / "atom.xml").write_text(render_atom(entries, lang_code, lang.bcp47, strings), encoding="utf-8")
-    (out / "news-sitemap.xml").write_text(render_news_sitemap(entries, lang.bcp47), encoding="utf-8")
-    (out / "feed.json").write_text(render_json_feed(entries, lang_code, lang.bcp47, strings), encoding="utf-8")
+    (out / "rss.xml").write_text(
+        render_rss(entries, lang_code, lang.bcp47, strings), encoding="utf-8"
+    )
+    (out / "atom.xml").write_text(
+        render_atom(entries, lang_code, lang.bcp47, strings), encoding="utf-8"
+    )
+    (out / "news-sitemap.xml").write_text(
+        render_news_sitemap(entries, lang.bcp47), encoding="utf-8"
+    )
+    (out / "feed.json").write_text(
+        render_json_feed(entries, lang_code, lang.bcp47, strings), encoding="utf-8"
+    )
     return len(entries)
 
 

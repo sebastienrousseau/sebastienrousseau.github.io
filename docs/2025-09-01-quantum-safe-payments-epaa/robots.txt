@@ -1,2 +1,0 @@
-User-agent: *
-Sitemap: https://sebastienrousseau.com/2025-09-01-quantum-safe-payments-epaa/sitemap.xml

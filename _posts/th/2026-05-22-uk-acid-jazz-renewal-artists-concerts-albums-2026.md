@@ -39,7 +39,7 @@ schema: "FAQPage, Article"
 seo_title: "UK Acid Jazz 2026: ศิลปิน คอนเสิร์ต อัลบั้ม"
 short_name: "sebastienrousseau"
 subtitle: "Acid jazz ในสหราชอาณาจักรกำลังฟื้นตัวผ่านการผสมผสานระหว่างศิลปินยุคบุกเบิก การปล่อยผลงานของ Acid Jazz Records เทศกาลแจ๊ส-ฟังก์ กลุ่มผู้ฟังโซล-แจ๊ส การแสดงสดที่ขับเคลื่อนด้วยแฮมมอนด์ออร์แกน และนักดนตรีแจ๊สรุ่นใหม่ที่นำกรูฟกลับสู่จุดศูนย์กลางของวงการ"
-tags: "acid jazz, UK jazz, Acid Jazz Records, Brand New Heavies, Galliano, James Taylor Quartet, Ronnie Scott's, Bangs and Talbot, Chris Bangs, Mick Talbot, Mostly Jazz Funk Soul Festival, Cymande, Soul II Soul, Jordan Rakei, jazz funk, soul jazz"
+tags: "acid jazz, UK jazz, Acid Jazz Records, Brand New Heavies, Galliano, James Taylor Quartet, Ronnie Scott's, Bangs and Talbot, Chris Bangs, Mick Talbot, Mostly Jazz Funk Soul Festival, Cymande, Soul II Soul, Jordan Rakei, jazz funk, soul jazz, ISO 20022, การเข้ารหัสหลังควอนตัม, AI, DORA, เงินฝากแบบโทเคน, วิศวกรรมแพลตฟอร์ม, sovereign cloud, cloud native banking, การชำระเงินข้ามพรมแดน, stablecoins"
 theme-color: "0, 83, 191"
 title: "การฟื้นคืน Acid Jazz ในอังกฤษปี 2026: ศิลปิน คอนเสิร์ต อัลบั้ม"
 url: "https://sebastienrousseau.com/th/2026-05-22-uk-acid-jazz-renewal-artists-concerts-albums-2026"
@@ -93,9 +93,9 @@ site_software: "Static Site Generator, Rust"
 <p class="post-lead-heading"><strong>ประเด็นสำคัญ</strong></p>
 <ul class="post-lead-takeaways">
   <li><strong>ค่ายเพลง.</strong> คอมไพเลชันบน Bandcamp ของ Acid Jazz Records ปี 2026 รวม Matt Berry, Kevin Fingier, The Brand New Heavies, Billy Valentine และ Mama Terra ไว้ในชุดเดียว</li>
-  <li><strong>ผลงานใหม่.</strong> <em>Smokin' Aces</em> ของ Bangs &amp; Talbot (23 มกราคม 2026, Acid Jazz) รวม Chris Bangs และ Mick Talbot กลับมาพร้อมเสียงกรูฟ ฟังก์ โซล และการผสมผสานระดับโลก</li>
+  <li><strong>ผลงานใหม่.</strong> <em>Smokin' Aces</em> ของ Bangs & Talbot (23 มกราคม 2026, Acid Jazz) รวม Chris Bangs และ Mick Talbot กลับมาพร้อมเสียงกรูฟ ฟังก์ โซล และการผสมผสานระดับโลก</li>
   <li><strong>สด.</strong> The Brand New Heavies กับ Galliano ที่ The Glasshouse และ The James Taylor Quartet ที่ Ronnie Scott's คือสัญญาณ acid jazz ที่ชัดเจนที่สุดในรายการแสดงปี 2026</li>
-  <li><strong>เทศกาล.</strong> Mostly Jazz Funk &amp; Soul Festival (10–12 กรกฎาคม 2026) จัดโปรแกรม Soul II Soul, Cymande, Jordan Rakei และ Sampa The Great ควบคู่กับศิลปินแจ๊ส-ฟังก์รุ่นดั้งเดิม</li>
+  <li><strong>เทศกาล.</strong> Mostly Jazz Funk & Soul Festival (10–12 กรกฎาคม 2026) จัดโปรแกรม Soul II Soul, Cymande, Jordan Rakei และ Sampa The Great ควบคู่กับศิลปินแจ๊ส-ฟังก์รุ่นดั้งเดิม</li>
 </ul>
 <p class="post-lead-related"><strong>อ่านเพิ่มเติม:</strong> <a href="https://sebastienrousseau.com/2026-05-21-tokenised-deposits-banking-transformation-2026/index.html">Tokenised Deposits: การเปลี่ยนแปลงธนาคารที่กำลังดำเนินอยู่ในปี 2026</a>.</p>
 </aside>
@@ -231,6 +231,6 @@ The Brand New Heavies กับ Galliano ที่ The Glasshouse และ The 
 - Mostly Jazz Funk & Soul Festival, (2026). [Mostly Jazz Funk & Soul Festival 2026 ⧉](https://mostlyjazz.co.uk "Mostly Jazz Funk & Soul Festival")
 - Marlbank, (2026). [Top UK jazz albums in 2026 so far ⧉](https://marlbank.net/top-jazz-in-2026/top-uk-jazz-albums-in-2026-so-far/ "Top UK jazz albums in 2026 so far")
 <!-- enrich-start -->
-<aside class="author-card" aria-label="เกี่ยวกับผู้เขียน"><img alt="ภาพเหมือนของ Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">นักเทคโนโลยีธนาคารอาวุโสที่เขียนเกี่ยวกับ AI ประยุกต์ การอพยพ ISO 20022 การเข้ารหัสหลังควอนตัมสำหรับบริการทางการเงิน และการเปลี่ยนแปลงเชิงโครงสร้างของการชำระเงินขายส่ง</span><span class="author-credentials">มากกว่า 20 ปีที่ HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">โปรไฟล์เต็ม</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="เกี่ยวกับผู้เขียน"><img alt="ภาพเหมือนของ Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">นักเทคโนโลยีธนาคารอาวุโสที่เขียนเกี่ยวกับ AI ประยุกต์ การอพยพ ISO 20022 การเข้ารหัสหลังควอนตัมสำหรับบริการทางการเงิน และการเปลี่ยนแปลงเชิงโครงสร้างของการชำระเงินขายส่ง</span><span class="author-credentials">มากกว่า 20 ปีที่ HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">โปรไฟล์เต็ม</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">ตรวจสอบครั้งสุดท้าย <time datetime="2026-05-22">2026-05-22</time>.</p>
 <!-- enrich-end -->

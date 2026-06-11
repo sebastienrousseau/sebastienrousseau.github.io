@@ -1,5 +1,6 @@
 ---
 title: "Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for Corporate Finance"
+tags: "পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, corporate banking, G7 CEG, BIS Project Leap, ML-KEM, ML-DSA, NCSC, ASD, CNSA 2.0, harvest now decrypt later, Mosca equation, ক্রিপ্টো-চটপটতা, hybrid cryptography, ISO 20022, DORA, কোয়ান্টাম কম্পিউটিং, AI, Rust, open source, সীমান্ত-পার পেমেন্ট"
 subtitle: "কোয়ান্টাম ঝুঁকি গবেষণার কৌতূহল থেকে সক্রিয় নিয়ন্ত্রক বাধ্যতায় পরিণত হয়েছে। ২০২৬ সালের জানুয়ারিতে প্রকাশিত G7 রোডম্যাপ এবং BIS Project Leap লাইভ পেমেন্ট সিস্টেমে সম্ভাব্যতা প্রমাণ করার পর, বোর্ড পর্যায়ের প্রশ্ন এখন মাইগ্রেট করবেন কিনা তা নয় — বরং আজকের ডেটার ক্রিপ্টোগ্রাফিক মেয়াদ শেষ হওয়ার আগে মাইগ্রেশন সম্পন্ন করা যাবে কিনা।"
 description: "কোয়ান্টাম ঝুঁকি গবেষণার কৌতূহল থেকে সক্রিয় নিয়ন্ত্রক বাধ্যতায় পরিণত হয়েছে। G7 রোডম্যাপ, BIS Project Leap এবং EU, UK ও ASD সময়রেখার পরিপ্রেক্ষিতে বোর্ডের প্রশ্ন এখন মাইগ্রেশন সম্পন্ন করা যাবে কিনা।"
 date: "May 14, 2026"
@@ -250,4 +251,3 @@ It is not zero, and it is not symmetric. Waiting one year forfeits a year of HND
 - Cryptomathic, (2025). [A Banker's Guide to Quantum Safe Cryptography — Roadmap to PQC Migration for Financial Institutions ⧉](https://www.cryptomathic.com/a-bankers-guide-to-quantum-safe-cryptography-part-3-roadmap-to-pqc-migration-for-financial-institutions-cryptomathic "A Banker's Guide to Quantum Safe Cryptography"). Cryptomathic.
 - Forrester, (2025). [2026 Asia Pacific Predictions: Quantum Security ⧉](https://www.forrester.com/press-newsroom/forrester-apac-2026-predictions/ "Forrester's 2026 APAC Predictions"). Forrester Research.
 - The Asian Banker, (2025). [Building Resilience for a Quantum-Ready Financial System ⧉](https://www.theasianbanker.com/updates-and-articles/building-resilience-for-a-quantum-ready-financial-system "Building resilience for a quantum-ready financial system"). The Asian Banker.
-

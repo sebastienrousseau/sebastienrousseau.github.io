@@ -40,7 +40,7 @@ revisit-after: "7 days"
 robots: "index, follow"
 short_name: "sebastienrousseau"
 subtitle: "Zero-shot, chain-of-thought, ReAct, and prompt security — the techniques that matter in 2024"
-tags: "PromptEngineering, ChainOfThought, ZeroShot, FewShot, ReAct, SelfConsistency, PromptInjection, RAG, BloombergGPT, LLM"
+tags: "prompt engineering, ChainOfThought, ZeroShot, FewShot, ReAct, SelfConsistency, PromptInjection, RAG, BloombergGPT, LLM, ISO 20022, post-quantum cryptography, AI"
 theme-color: "0, 67, 165"
 title: "AI Prompt Engineering 2024: Techniques That Work"
 url: "https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/index.html"
@@ -122,7 +122,7 @@ last_reviewed: "2026-05-24"
   <li><strong>Chain-of-Thought Prompting and Self-Consistency.</strong> Chain-of-thought (CoT) prompting (Wei et al., 2022) inserts intermediate reasoning steps before the final answer.</li>
   <li><strong>ReAct: Reasoning and Acting in LLM Agents.</strong> ReAct (Yao et al., 2022) interleaves Thought, Action, and Observation steps, enabling an LLM to invoke external tools mid-reasoning:.</li>
 </ul>
-<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2023-11-12-exploring-generative-ai/index.html">Generative AI in 2023: How It Works, Where It Lands</a>.</p>
+<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2023-11-12-exploring-generative-ai/index.html">Generative AI in 2023: How It Works, Where It Lands</a>, <a href="https://sebastienrousseau.com/2026-05-11-lucy-besson-knowledge-transfer-ai-quantum/index.html">Lucy's Flash Drive Revisited: AI, Quantum & Knowledge</a>, <a href="https://sebastienrousseau.com/2024-03-18-advancing-ai-with-multimodal-llms-insights-from-mm1/index.html">Advancing AI with Multimodal LLMs: Insights from MM1</a>.</p>
 </aside>
 <!-- lead-end -->
 
@@ -305,11 +305,13 @@ When accuracy matters more than cost and the task involves multi-step reasoning.
 
 <!-- enrich-start -->
 <aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
-<p class="post-reviewed">Last reviewed <time datetime="2026-05-29">2026-05-29</time>.</p>
+<p class="post-reviewed">Last reviewed <time datetime="2026-06-10">2026-06-10</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Related reading</h2>
 <div class="related-grid">
 <article class="related-card"><a href="https://sebastienrousseau.com/2023-11-12-exploring-generative-ai/index.html" class="related-media" aria-label="Generative AI in 2023: How It Works, Where It Lands" tabindex="-1"><img alt="Abstract neural network visualisation in blue and purple tones representing AI processing" src="https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2023-11-12-exploring-generative-ai/index.html">Generative AI in 2023: How It Works, Where It Lands</a></h3><p><time datetime="2023-11-12">2023-11-12</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-11-lucy-besson-knowledge-transfer-ai-quantum/index.html" class="related-media" aria-label="Lucy's Flash Drive Revisited: AI, Quantum & Knowledge" tabindex="-1"><img alt="Abstract visualisation of neural networks and quantum atomic arrays. A black computer forming from rearranging particles" src="https://cloudcdn.pro/stocks/images/lucy-knowledge-transfer-banner.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-11-lucy-besson-knowledge-transfer-ai-quantum/index.html">Lucy's Flash Drive Revisited: AI, Quantum & Knowledge</a></h3><p><time datetime="2026-05-11">2026-05-11</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2024-03-18-advancing-ai-with-multimodal-llms-insights-from-mm1/index.html" class="related-media" aria-label="Advancing AI with Multimodal LLMs: Insights from MM1" tabindex="-1"><img alt="Banner for the Apple MM1" src="https://cloudcdn.pro/stocks/images/mm1-visual.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2024-03-18-advancing-ai-with-multimodal-llms-insights-from-mm1/index.html">Advancing AI with Multimodal LLMs: Insights from MM1</a></h3><p><time datetime="2024-03-18">2024-03-18</time></p></footer></article>
 </div>
 </aside>
 <!-- enrich-end -->

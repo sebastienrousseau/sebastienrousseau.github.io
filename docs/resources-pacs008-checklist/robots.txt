@@ -1,2 +1,0 @@
-User-agent: *
-Sitemap: https://sebastienrousseau.com/resources-pacs008-checklist/sitemap.xml

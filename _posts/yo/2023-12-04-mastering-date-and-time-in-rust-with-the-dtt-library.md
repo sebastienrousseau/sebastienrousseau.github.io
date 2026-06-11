@@ -1,5 +1,6 @@
 ---
 title: "Efficient Date and Time Management with DateTime (DTT)"
+tags: "DateTime, DTT, Rust, date library, time library, timezone handling, chrono alternative, ISO 8601, time formatting, Sebastien Rousseau, ISO 20022, ìsirò ìpamọ́ lẹ́yìn quantum, AI, open source"
 subtitle: "DTT, ìwé-iṣẹ́ Rust tó ga fún ìṣiṣẹ́ ọjọ́ àti àkókò."
 description: "DateTime (DTT) jẹ́ ìwé-iṣẹ́ Rust fún ìtúpalẹ̀, ìfọwọ́sí, ìṣàkóso àti ìpèsè ọjọ́ àti àkókò — pínpín gíga, iṣẹ́ líle."
 date: "Dec 04, 2023"
@@ -137,4 +138,3 @@ Employing DateTime (DTT) for managing dates and times in your Rust projects offe
 [03]: https://github.com/sebastienrousseau/dtt "DateTime (DTT) GitHub Repository"
 
 [divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Divider"
-

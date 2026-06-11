@@ -1,5 +1,6 @@
 ---
 title: "CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age"
+tags: "quantum, CRYSTALS-Kyber, encryption, cybersecurity, banking, finance, data, future, পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, cryptography, ISO 20022, DORA, কোয়ান্টাম কম্পিউটিং, AI, Rust"
 subtitle: "CRYSTALS-Kyber, পোস্ট-কোয়ান্টাম কী এনক্যাপসুলেশনের জন্য NIST FIPS 203 মান।"
 description: "আবিষ্কার করুন কীভাবে CRYSTALS-Kyber, একটি কোয়ান্টাম-প্রতিরোধী ক্রিপ্টোগ্রাফি অ্যালগরিদম, ক্রিপ্টোগ্রাফির বিশ্বে বিপ্লব এনেছে এবং আমাদের কোয়ান্টাম যুগের জন্য প্রস্তুত করছে।"
 date: "Nov 19, 2023"
@@ -191,4 +192,3 @@ Thank you again for your time and I look forward to hearing from you.
 [03]: /2023-10-16-protecting-data-in-the-quantum-age-the-hash-library-hsh/index.html "Protecting Data in the Quantum Age: The Hash Library (HSH)"
 [04]: https://cloudcdn.pro/stocks/diagrams/alice-bob-eve-kyber.svg "CRYSTALS-Kyber Key Encapsulation Mechanism (KEM)"
 [05]: https://www.nist.gov/ "The National Institute of Standards and Technology (NIST)"
-

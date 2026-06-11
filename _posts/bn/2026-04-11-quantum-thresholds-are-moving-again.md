@@ -1,5 +1,6 @@
 ---
 title: "Quantum Thresholds Are Moving: 10,000-Qubit Shor Risk"
+tags: "কোয়ান্টাম কম্পিউটিং, Shor's algorithm, পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, RSA, elliptic curve, neutral atoms, error correction, cryptographic agility, quantum threat, payments, ISO 20022, DORA, AI, সীমান্ত-পার পেমেন্ট, stablecoins"
 subtitle: "একটি নতুন গবেষণাপত্র পরামর্শ দিচ্ছে যে Shor's algorithm মাত্র ১০,০০০ কিউবিটে চলতে পারে। ক্রিপ্টোগ্রাফির জন্য এর প্রভাব উপেক্ষা করা কঠিন।"
 description: "Shor's algorithm এখন মাত্র ১০,০০০ কিউবিটে চলতে পারে। RSA, ECC এবং পোস্ট-কোয়ান্টাম মাইগ্রেশনের সময়সীমা সবই এগিয়ে আসছে। কারণটি জানুন।"
 date: "Apr 11, 2026"
@@ -144,4 +145,3 @@ CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age").
 - Anonymous, (2026). [Shor's algorithm is possible with as few as 10,000 reconfigurable atomic qubits ⧉](https://arxiv.org/abs/2603.28627 "Shor's algorithm is possible with as few as 10,000 reconfigurable atomic qubits"). arXiv preprint arXiv:2603.28627.
 - Castelvecchi, D. (2026). [Quantum-computing breakthroughs pose risks to encryption ⧉](https://www.nature.com/articles/d41586-026-01054-1 "Quantum-computing breakthroughs pose risks to encryption"). Nature.
 - Phys.org, (2026). [Useful quantum computers could be built with as few as 10,000 qubits ⧉](https://phys.org/news/2026-04-quantum-built-qubits-team.html "Useful quantum computers could be built with as few as 10,000 qubits"). Phys.org.
-

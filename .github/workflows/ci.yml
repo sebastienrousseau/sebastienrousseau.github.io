@@ -7,12 +7,26 @@ on:
     branches: [main]
   workflow_dispatch:
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 permissions:
   contents: read
 
 jobs:
-  build:
+  build-audit-deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    # The `github-pages` environment has "Deployment branches: main only"
+    # protection. Applying it to the whole job blocks every PR run at the
+    # 2-second mark before any step executes. Bind it only when this run
+    # is actually going to deploy (main push) so PRs can still get a real
+    # build / lint / test / Lighthouse / pa11y signal.
+    environment: ${{ github.ref == 'refs/heads/main' && 'github-pages' || '' }}
     steps:
       - uses: actions/checkout@v4
 
@@ -28,6 +42,9 @@ jobs:
             ~/.cargo/bin
           key: ${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}-ssg
 
+      - name: Add cargo bin to PATH
+        run: echo "$HOME/.cargo/bin" >> $GITHUB_PATH
+
       - name: Install Static Site Generator (ssg)
         run: |
           if ! command -v ssg >/dev/null 2>&1; then
@@ -35,9 +52,6 @@ jobs:
           fi
 
       - name: Install wasm-pack + wasm32 target
-        # build.sh compiles every crate under _wasm-demos/ to WebAssembly
-        # and stages the artefacts under public/labs/<crate>/. wasm-pack
-        # ships a prebuilt binary so the install is a couple seconds.
         run: |
           rustup target add wasm32-unknown-unknown
           if ! command -v wasm-pack >/dev/null 2>&1; then
@@ -48,34 +62,37 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+          cache: 'pip'
 
       - name: Setup Node
-        # Node 22 (LTS) is needed for the stable `--test-coverage-{lines,
-        # branches,functions}` flags that gate workers/lang-router.js at
-        # 100 % during build.sh.
         uses: actions/setup-node@v4
         with:
           node-version: "22"
 
       - name: Install Python dev tooling
-        # Pin ruff so CI uses the same rule set + complexity bookkeeping
-        # as local. Bump deliberately rather than drift with `latest`.
         run: |
-          pip install --quiet 'ruff==0.15.*' pytest
+          pip install --quiet 'ruff==0.15.*' pytest radon pytest-cov
           pip install --quiet -r requirements.txt
+
+      - name: Vulnerability scan (pip-audit)
+        # Audit the runtime deps in requirements.txt against the OSV / PyPI
+        # advisory database. Fails the build on any non-deferred advisory;
+        # use `pip-audit --ignore-vuln <id>` in this step's body to defer
+        # with a comment justifying the deferral.
+        run: |
+          pip install --quiet pip-audit
+          pip-audit --strict -r requirements.txt
 
       - name: Lint (ruff)
         run: ruff check scripts/ tests/
 
+      - name: Naming conventions check
+        run: python3 scripts/dev/check_naming_conventions.py
+
       - name: Cyclomatic complexity (radon)
-        # Hard ceiling: every function in postbuild + postbuild_lib must
-        # stay at grade B (CC ≤ 10) or lower. ``radon cc -n C`` prints
-        # any C-grade-or-worse block; we fail the build if it prints
-        # anything.
         run: |
-          pip install --quiet radon
-          radon cc scripts/postbuild/postbuild.py scripts/postbuild/postbuild_lib/ -a -s
-          c_or_worse=$(radon cc scripts/postbuild/postbuild.py scripts/postbuild/postbuild_lib/ -n C -s 2>&1)
+          radon cc scripts/postbuild/postbuild.py scripts/postbuild/postbuild_lib/ scripts/generators/ scripts/lib/ -a -s
+          c_or_worse=$(radon cc scripts/postbuild/postbuild.py scripts/postbuild/postbuild_lib/ scripts/generators/ scripts/lib/ -n C -s 2>&1)
           if [ -n "$c_or_worse" ]; then
             echo "::error::C-grade or worse complexity found:"
             echo "$c_or_worse"
@@ -83,9 +100,6 @@ jobs:
           fi
 
       - name: Code duplication (jscpd)
-        # Industry-standard warn threshold is 10 %; we currently sit at
-        # ~1.5 %. Fail if duplication crosses 3 % so a regression can't
-        # creep in unnoticed.
         run: |
           npx --yes jscpd@4 scripts/ tests/ _layouts/ \
             --min-tokens 50 \
@@ -94,18 +108,33 @@ jobs:
             --silent
 
       - name: Unit tests (pytest)
-        run: pytest tests/ -ra
+        run: pytest tests/unit/ -ra
 
       - name: Coverage gate (postbuild_lib must stay at 100 %)
-        # Hard ceiling: every line in scripts/postbuild/postbuild_lib/ has a unit
-        # test. The gate fails the build if anyone lands code under that
-        # tree without matching coverage.
+        # build_translations is gated post-build below: its smoke suites are
+        # SKIP_IF_NO_BUILD-guarded, so a pre-build run can only reach ~92 %.
         run: |
-          pip install --quiet pytest-cov
-          pytest tests/ --cov=scripts/postbuild/postbuild_lib --cov-fail-under=100 -q
+          pytest tests/unit/ \
+            --cov=scripts/postbuild/postbuild_lib \
+            --cov-fail-under=100 -q
 
       - name: Build site
         run: ./build.sh
+
+      - name: Post-build smoke tests + combined coverage gate (100 %)
+        # The smoke suites are guarded by SKIP_IF_NO_BUILD and silently skip
+        # in the pre-build pytest run. Re-run all of tests/unit/ now that
+        # public/ exists so the build-dependent assertions execute, and gate
+        # postbuild_lib + build_translations at 100 % combined coverage —
+        # build_translations only reaches 100 % with the smoke suites live.
+        # Runs before the link / JSON-LD audits because the translations
+        # smoke re-renders locale pages and re-stamps CSP hashes (idempotent
+        # on a clean tree).
+        run: |
+          pytest tests/unit/ -ra \
+            --cov=scripts/postbuild/postbuild_lib \
+            --cov=scripts/generators/build_translations \
+            --cov-fail-under=100
 
       - name: Internal-link audit
         run: python3 scripts/seo_and_audit/audit_links.py --base-dir public --strict-internal
@@ -113,46 +142,17 @@ jobs:
       - name: JSON-LD + feed validation
         run: python3 scripts/seo_and_audit/validate_jsonld.py --base-dir public
 
-      - name: Upload built artefact
-        uses: actions/upload-artifact@v4
-        with:
-          name: public
-          path: public/
-
-  accessibility:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/download-artifact@v4
-        with:
-          name: public
-          path: public
-      - uses: actions/setup-node@v4
-        with:
-          node-version: "20"
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
-
-      - name: Install pa11y-ci
-        run: npm install -g pa11y-ci@^3
+      - name: Install pa11y-ci & Lighthouse CI
+        run: npm install -g pa11y-ci@^3 @lhci/cli@0.14.x
 
       - name: Restore pa11y hash cache
         id: pa11y-cache
         uses: actions/cache@v4
         with:
-          # Keyed only by the cache schema major. Within a key the
-          # cache layer carries its own fingerprint (pa11y/Chromium
-          # versions + config hash) so a mismatch already forces a
-          # full re-sweep without needing a separate cache bucket.
           path: _data/pa11y-cache.json
-          key: pa11y-cache-v1-${{ runner.os }}
-          # Restore-keys lets a fresh runner pick up the most recent
-          # cache even if the exact key isn't a hit (e.g. after a
-          # cache-eviction window).
+          key: pa11y-cache-v1-${{ runner.os }}-${{ github.run_id }}
           restore-keys: |
-            pa11y-cache-v1-
+            pa11y-cache-v1-${{ runner.os }}-
 
       - name: Serve public/
         run: |
@@ -170,14 +170,19 @@ jobs:
 
       - name: Run pa11y-ci on the delta only
         run: |
-          # If .pa11yci has an empty URL list (full cache hit), skip
-          # pa11y entirely — it errors on an empty config.
           n=$(python3 -c "import json; print(len(json.load(open('.pa11yci'))['urls']))")
           if [ "$n" -eq 0 ]; then
             echo "pa11y-cache: full cache hit, skipping pa11y-ci run"
             exit 0
           fi
-          pa11y-ci -c .pa11yci || (echo "pa11y violations above"; exit 1)
+          set +e
+          pa11y-ci -c .pa11yci --reporter json > pa11y.json
+          rc=$?
+          set -e
+          if [ "$rc" -eq 0 ]; then
+            exit 0
+          fi
+          python3 scripts/seo_and_audit/pa11y_retry_flakes.py pa11y.json
 
       - name: Post — update cache for next run
         if: success()
@@ -187,23 +192,28 @@ jobs:
             --cache _data/pa11y-cache.json \
             --manifest .pa11y-cache-manifest.json
 
-  lighthouse:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/download-artifact@v4
-        with:
-          name: public
-          path: public
-      - uses: actions/setup-node@v4
-        with:
-          node-version: "20"
-
-      - name: Install Lighthouse CI
-        run: npm install -g @lhci/cli@^0.13
-
       - name: Run Lighthouse CI
         run: lhci autorun
         env:
           LHCI_BUILD_CONTEXT__CURRENT_HASH: ${{ github.sha }}
+
+      - name: Prepare CNAME and .nojekyll
+        if: github.ref == 'refs/heads/main'
+        run: |
+          printf 'sebastienrousseau.com\nwww.sebastienrousseau.com\n' > public/CNAME
+          touch public/.nojekyll
+
+      - name: Configure Pages
+        if: github.ref == 'refs/heads/main'
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        if: github.ref == 'refs/heads/main'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+
+      - name: Deploy to GitHub Pages
+        if: github.ref == 'refs/heads/main'
+        id: deployment
+        uses: actions/deploy-pages@v4

@@ -39,7 +39,7 @@ schema: "FAQPage, Article"
 seo_title: "آسيد جاز بريطاني 2026: فنانون، حفلات، ألبومات"
 short_name: "sebastienrousseau"
 subtitle: "يتجدَّد الأسيد جاز في المملكة المتحدة عبر مزيج من فرق الموجة الأولى وإصدارات Acid Jazz Records ومهرجانات جاز فانك وجماهير جاز السول والعروض الحية القائمة على أورغن هاموند وموسيقيي الجاز البريطانيين الشباب الذين يُعيدون الإيقاع إلى قلب المشهد."
-tags: "acid jazz, UK jazz, Acid Jazz Records, Brand New Heavies, Galliano, James Taylor Quartet, Ronnie Scott's, Bangs and Talbot, Chris Bangs, Mick Talbot, Mostly Jazz Funk Soul Festival, Cymande, Soul II Soul, Jordan Rakei, jazz funk, soul jazz"
+tags: "acid jazz, UK jazz, Acid Jazz Records, Brand New Heavies, Galliano, James Taylor Quartet, Ronnie Scott's, Bangs and Talbot, Chris Bangs, Mick Talbot, Mostly Jazz Funk Soul Festival, Cymande, Soul II Soul, Jordan Rakei, jazz funk, soul jazz, ISO 20022, التشفير ما بعد الكمي, AI, DORA, الودائع المرمَّزة, هندسة المنصة, السحابة السيادية, البنوك السحابية الأصيلة، Kubernetes، DORA، المؤسسات المالية، OpenShift، Portworx، سيادة السحابة، المرونة التشغيلية، التعافي من الكوارث، التعايش بين الأجهزة الافتراضية والحاويات، أعباء عمل الذكاء الاصطناعي، مخاطر الطرف الثالث، الاعتماد على السحابة, المدفوعات عبر الحدود, stablecoins"
 theme-color: "0, 83, 191"
 title: "تجدُّد الأسيد جاز في المملكة المتحدة: فنانون وحفلات وألبومات 2026"
 url: "https://sebastienrousseau.com/ar/2026-05-22-uk-acid-jazz-renewal-artists-concerts-albums-2026"
@@ -93,9 +93,9 @@ site_software: "Static Site Generator, Rust"
 <p class="post-lead-heading"><strong>أبرز النقاط</strong></p>
 <ul class="post-lead-takeaways">
   <li><strong>الإسطبل.</strong> يضمّ تجميع Acid Jazz Records على Bandcamp لعام 2026 كلاً من Matt Berry وKevin Fingier وThe Brand New Heavies وBilly Valentine وMama Terra.</li>
-  <li><strong>الإصدار.</strong> يُعيد ألبوم <em>Smokin' Aces</em> لثنائي Bangs &amp; Talbot (23 يناير 2026، Acid Jazz) لمَّ شمل Chris Bangs وMick Talbot في إيقاعات الفانك والسول والفيوجن العالمي.</li>
+  <li><strong>الإصدار.</strong> يُعيد ألبوم <em>Smokin' Aces</em> لثنائي Bangs & Talbot (23 يناير 2026، Acid Jazz) لمَّ شمل Chris Bangs وMick Talbot في إيقاعات الفانك والسول والفيوجن العالمي.</li>
   <li><strong>الحفلات.</strong> يمثّل The Brand New Heavies مع Galliano في The Glasshouse وThe James Taylor Quartet في Ronnie Scott's أوضح إشارتَين للأسيد جاز في قوائم 2026.</li>
-  <li><strong>المهرجان.</strong> يُبرمج مهرجان Mostly Jazz Funk &amp; Soul Festival (10–12 يوليو 2026) Soul II Soul وCymande وJordan Rakei وSampa The Great إلى جانب أسماء جاز فانك الكلاسيكية.</li>
+  <li><strong>المهرجان.</strong> يُبرمج مهرجان Mostly Jazz Funk & Soul Festival (10–12 يوليو 2026) Soul II Soul وCymande وJordan Rakei وSampa The Great إلى جانب أسماء جاز فانك الكلاسيكية.</li>
 </ul>
 <p class="post-lead-related"><strong>قراءة ذات صلة:</strong> <a href="https://sebastienrousseau.com/2026-05-21-tokenised-deposits-banking-transformation-2026/index.html">الودائع الرمزية: التحول المصرفي الجاري عام 2026</a>.</p>
 </aside>

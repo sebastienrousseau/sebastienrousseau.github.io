@@ -1,5 +1,6 @@
 ---
 title: "Stablecoin Yield by Another Name: BlackRock's BRSRV and BSTBL Filings Decoded"
+tags: "BlackRock, BRSRV, BSTBL, BUIDL, GENIUS Act, OCC, stablecoins, tokenised money market fund, Securitize, BNY Mellon, ERC-20, Ethereum, payments, regulation, ISO 20022, পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, AI, টোকেনাইজড আমানত, সীমান্ত-পার পেমেন্ট"
 subtitle: "GENIUS আইনের অধীনে স্টেবলকয়েন সুদ দিতে পারে না। ৮ মে ২০২৬-এ BlackRock দুটি পণ্য নিবন্ধন করেছে যা আইনত স্টেবলকয়েন নয়—এবং পাবলিক ব্লকচেইনে ওয়ালেটে সুদ প্রদান করতে পারে।"
 description: "GENIUS আইনে স্টেবলকয়েন সুদ দিতে পারে না। ৮ মে ২০২৬-এ BlackRock দুটি SEC নিবন্ধন দাখিল করেছে যা মানি মার্কেট ফান্ড হিসেবে নিয়ন্ত্রিত, স্টেবলকয়েন নয়। BRSRV, BSTBL ও OCC নিয়মের বিশ্লেষণ।"
 date: "May 15, 2026"
@@ -180,4 +181,3 @@ It is the end of yield-bearing payment stablecoins as a category, at least under
 - CryptoSlate, (2025). [Tokenized US Treasuries just broke DeFi's most sacred rule ⧉](https://cryptoslate.com/tokenized-us-treasuries-silently-replaced-defis-foundation-and-you-missed-the-critical-9-billion-shift/ "Tokenized US Treasuries — CryptoSlate"). CryptoSlate.
 - MEXC News, (2026). [BlackRock files for two new tokenized funds with the U.S. SEC on Ethereum ⧉](https://www.mexc.com/news/1080472 "BlackRock files for two new tokenized funds with the U.S. SEC on Ethereum"). MEXC News.
 - Stellar Foundation, (2026). [Franklin Templeton, Stellar Development Foundation Mark Five Years of BENJI ⧉](https://stellar.org/press/franklin-templeton-stellar-development-foundation-mark-five-years-of-benji-the-first-u-s-registered-tokenized-money-market-fund "Five Years of BENJI"). Stellar Development Foundation.
-

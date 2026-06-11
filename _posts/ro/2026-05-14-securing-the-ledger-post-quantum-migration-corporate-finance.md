@@ -1,5 +1,6 @@
 ---
 title: "Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for Corporate Finance"
+tags: "criptografie post-cuantică, corporate banking, G7 CEG, BIS Project Leap, ML-KEM, ML-DSA, NCSC, ASD, CNSA 2.0, harvest now decrypt later, Mosca equation, agilitate criptografică, hybrid cryptography, ISO 20022, DORA, calcul cuantic, AI, Rust, open source, plăți transfrontaliere"
 subtitle: "Riscul cuantic a trecut de la o curiozitate de cercetare la un mandat de reglementare activ. Cu foaia de parcurs G7 din 2026 și BIS Project Leap demonstrând fezabilitatea în sisteme de plată reale, întrebarea pentru consilii de administrație nu mai este dacă să migreze, ci dacă pot finaliza migrarea înainte ca datele actuale să-și piardă valoarea criptografică."
 description: "Riscul cuantic este acum mandat de reglementare. Harta G7 din 2026 și BIS Project Leap confirmă că întrebarea nu mai este dacă să migrați la PQC, ci cât de repede."
 date: "May 14, 2026"
@@ -250,4 +251,3 @@ It is not zero, and it is not symmetric. Waiting one year forfeits a year of HND
 - Cryptomathic, (2025). [A Banker's Guide to Quantum Safe Cryptography — Roadmap to PQC Migration for Financial Institutions ⧉](https://www.cryptomathic.com/a-bankers-guide-to-quantum-safe-cryptography-part-3-roadmap-to-pqc-migration-for-financial-institutions-cryptomathic "A Banker's Guide to Quantum Safe Cryptography"). Cryptomathic.
 - Forrester, (2025). [2026 Asia Pacific Predictions: Quantum Security ⧉](https://www.forrester.com/press-newsroom/forrester-apac-2026-predictions/ "Forrester's 2026 APAC Predictions"). Forrester Research.
 - The Asian Banker, (2025). [Building Resilience for a Quantum-Ready Financial System ⧉](https://www.theasianbanker.com/updates-and-articles/building-resilience-for-a-quantum-ready-financial-system "Building resilience for a quantum-ready financial system"). The Asian Banker.
-

@@ -1,5 +1,6 @@
 ---
 title: "Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for Corporate Finance"
+tags: "ìsirò ìpamọ́ lẹ́yìn quantum, corporate banking, G7 CEG, BIS Project Leap, ML-KEM, ML-DSA, NCSC, ASD, CNSA 2.0, harvest now decrypt later, Mosca equation, ìmọ̀ ìrọ̀lọ́ crypto, hybrid cryptography, ISO 20022, DORA, quantum computing, AI, Rust, open source, ìsanwó kọjá-ààlà"
 subtitle: "Ewu kúántọ̀mù ti gbéra láti ìdánilẹ́kọ̀ọ́ sí àṣẹ ìlànà tó ṣiṣẹ́. Ìlànà G7 2026 àti BIS Project Leap nínú àwọn ètò ìsanwó fi hàn pé ìbéèrè fún àwọn ìgbìmọ̀ kò sí mọ́ bóyá kí wọn ṣí kiri, bí kò ṣe bóyá wọn lè parí ṣáájú tí àwọn dátà òde òní bà jẹ́."
 description: "Ewu kúántọ̀mù ti di àṣẹ ìlànà tó ṣiṣẹ́. Ìlànà G7 2026 àti BIS Project Leap fi hàn pé ìbéèrè kò sí mọ́ bóyá kí a ṣí kiri si PQC, bí kò ṣe bóyá a lè parí ṣáájú tí dátà òde òní wó lulẹ̀."
 date: "May 14, 2026"
@@ -250,4 +251,3 @@ It is not zero, and it is not symmetric. Waiting one year forfeits a year of HND
 - Cryptomathic, (2025). [A Banker's Guide to Quantum Safe Cryptography — Roadmap to PQC Migration for Financial Institutions ⧉](https://www.cryptomathic.com/a-bankers-guide-to-quantum-safe-cryptography-part-3-roadmap-to-pqc-migration-for-financial-institutions-cryptomathic "A Banker's Guide to Quantum Safe Cryptography"). Cryptomathic.
 - Forrester, (2025). [2026 Asia Pacific Predictions: Quantum Security ⧉](https://www.forrester.com/press-newsroom/forrester-apac-2026-predictions/ "Forrester's 2026 APAC Predictions"). Forrester Research.
 - The Asian Banker, (2025). [Building Resilience for a Quantum-Ready Financial System ⧉](https://www.theasianbanker.com/updates-and-articles/building-resilience-for-a-quantum-ready-financial-system "Building resilience for a quantum-ready financial system"). The Asian Banker.
-

@@ -1,5 +1,6 @@
 ---
 title: "Unlocking Gemini 1.5: Google's AI Revolution Explained"
+tags: "Gemini 1.5, Google AI, AI Efficiency, AI Quality, Context Window, In-Context Learning, AI Use Cases, AI Revolution, Technology Transformation, Data Analysis, ISO 20022, পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, AI, DORA, টোকেনাইজড আমানত, প্ল্যাটফর্ম ইঞ্জিনিয়ারিং, সার্বভৌম ক্লাউড, ক্লাউড নেটিভ ব্যাংকিং, সীমান্ত-পার পেমেন্ট, stablecoins"
 subtitle: "Google-এর সর্বশেষ AI অগ্রগতির গভীর বিশ্লেষণ"
 description: "Google-এর Gemini 1.5 কনটেক্সট উইন্ডো ১ মিলিয়ন টোকেনের বেশি স্কেল করে। রিট্রিভাল-অগমেন্টেড ফিনান্সে এটি কী সম্ভাবনা উন্মোচন করে এবং জানার মতো ট্রেড-অফগুলি কী।"
 date: "Feb 19, 2024"
@@ -70,4 +71,3 @@ Gemini 1.5 marks a significant advancement in AI technology. It improves efficie
 
 [00]: https://blog.google/technology/ai/google-gemini-next-generation-model-february-2024/ "Google's Gemini 1.5: The Next Generation of AI Models"
 [01]: https://deepmind.google/technologies/gemini/#introduction "Gemini - Google DeepMind"
-

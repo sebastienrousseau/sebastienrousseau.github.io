@@ -1,5 +1,6 @@
 ---
 title: "Protecting Data in the Quantum Age: The Hash Library (HSH)"
+tags: "ìsirò ìpamọ́ lẹ́yìn quantum, hash library, HSH, password hashing, key derivation, Argon2i, Bcrypt, Scrypt, quantum computing, ISO 20022, AI, Rust, open source"
 subtitle: "HSH: ikawe hash ti o tako quantum fun akoko post-quantum ti ijẹrisi idanimọ."
 description: "HSH nlo awọn ipilẹ cryptographic ti o tako quantum lati daabobo data rẹ, ni idaniloju aabo rẹ paapaa ni oju awọn ilọsiwaju iṣiro quantum ti ọjọ iwaju."
 date: "Oct 16, 2023"
@@ -164,4 +165,3 @@ If you have any questions, please don't hesitate to contact me via [LinkedIn ⧉
 [09]: /articles/index.html "Back to Articles"
 [10]: /contact/index.html "Contact Sebastien Rousseau"
 [11]: https://www.linkedin.com/in/sebastienrousseau/ "Sebastien Rousseau on LinkedIn"
-

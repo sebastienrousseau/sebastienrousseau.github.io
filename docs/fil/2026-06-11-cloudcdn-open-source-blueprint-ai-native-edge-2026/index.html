@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="fil-PH">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Thu, 11 Jun 2026 06:06:06 +0000" id="date" />
+    <meta itemprop="dateModified" content="2026-06-11" id="last-modified" />
+    <title>CloudCDN: Open-Source na Blueprint para sa AI-Native Edge sa 2026 — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="Ang CloudCDN ay open-source, AI-native edge CDN blueprint para sa imprastraktura na MCP-controlled, rate limiting ng Durable Objects, signed URLs, accessibility, at kakayahang i-audit.">
+<meta name="keywords" content="CloudCDN, AI-native edge, open-source CDN, MCP server, Cloudflare Workers, Durable Objects, signed URLs, passkeys, SLSA, imprastraktura ng edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="CloudCDN: Open-Source AI-Native Edge Blueprint">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-28qat2QcLvDkTEIO7qMhzox4gjtsgmgvwl1hFIZ0jXE=' 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-KU7Un5CpHzOcd8dXwK+vCdt1EOgCe+pXnVwWl3vLluA=' 'sha256-awhEYyyv0Y6g4Qqu7vdi//cqfsntour5Auf2+GtH+TI=' 'sha256-hfJKmHc0ENbKDJFLT5jAVl2nJiq4XX2uwEuWvJo5lS0=' 'self' 'inline-speculation-rules' https://cdn.jsdelivr.net https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' https://cloudcdn.pro https://www.google.com https://open.spotify.com;
+        img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/fil/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/newsreader-latin.woff2" crossorigin />
+    <link rel="stylesheet" href="/fonts/fonts.css" />
+    <!-- Preload the LCP hero portrait so it doesn't compete with the
+         render-blocking JS bundle on throttled mobile connections.
+         Lighthouse-simulated Slow-4G has been pinning LCP at ~5.6s; the
+         observed (real-network) LCP is 165 ms. This hint pulls the
+         synthetic LCP in line with the observed value. -->
+    <link rel="preload" as="image" href="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=1200&format=webp&q=85" fetchpriority="high">
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script>(function(){try{var saved=localStorage.getItem("theme");var prefersDark=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;var theme=saved||(prefersDark?"dark":"light");document.documentElement.setAttribute("data-theme",theme);}catch(e){}})();</script>
+
+    <link rel="stylesheet" href="/_csp/4724896d11ec6663.css" integrity="sha256-SFQ1AngSMlx94d5FmN1lWSKPs5RL6Y8BQf0nIEBLd7g= sha256-6BJkWGvqh3blXQksn+ynhkpoqcrJzzWhSKVuLVBJY4s=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Feed ng Atom" href="/fil/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="CloudCDN: Open-Source na Blueprint para sa AI-Native Edge sa 2026 — Sebastien Rousseau">
+<meta property="og:description" content="Ang CloudCDN ay open-source, AI-native edge CDN blueprint para sa imprastraktura na MCP-controlled, rate limiting ng Durable Objects, signed URLs, accessibility, at kakayahang i-audit.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/fil/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/">
+<meta property="og:image" content="https://cloudcdn.pro/stocks/images/alis-po-IdVNRv-5wJo.webp">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="fil_PH">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="CloudCDN: Open-Source na Blueprint para sa AI-Native Edge sa 2026 — Sebastien Rousseau">
+<meta name="twitter:description" content="Ang CloudCDN ay open-source, AI-native edge CDN blueprint para sa imprastraktura na MCP-controlled, rate limiting ng Durable Objects, signed URLs, accessibility, at kakayahang i-audit.">
+<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/alis-po-IdVNRv-5wJo.webp">
+<link rel="canonical" href="https://sebastienrousseau.com/fil/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" /><link rel="alternate" hreflang="bn" href="https://sebastienrousseau.com/bn/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" /><link rel="alternate" hreflang="cs" href="https://sebastienrousseau.com/cs/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" /><link rel="alternate" hreflang="fil" href="https://sebastienrousseau.com/fil/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" /><link rel="alternate" hreflang="ha" href="https://sebastienrousseau.com/ha/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" /><link rel="alternate" hreflang="he" href="https://sebastienrousseau.com/he/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" /><link rel="alternate" hreflang="hi" href="https://sebastienrousseau.com/hi/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" /><link rel="alternate" hreflang="id" href="https://sebastienrousseau.com/id/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" /><link rel="alternate" hreflang="nl" href="https://sebastienrousseau.com/nl/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" /><link rel="alternate" hreflang="pl" href="https://sebastienrousseau.com/pl/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" /><link rel="alternate" hreflang="ro" href="https://sebastienrousseau.com/ro/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" /><link rel="alternate" hreflang="sv" href="https://sebastienrousseau.com/sv/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" /><link rel="alternate" hreflang="th" href="https://sebastienrousseau.com/th/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" /><link rel="alternate" hreflang="tr" href="https://sebastienrousseau.com/tr/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" /><link rel="alternate" hreflang="uk" href="https://sebastienrousseau.com/uk/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" /><link rel="alternate" hreflang="vi" href="https://sebastienrousseau.com/vi/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" /><link rel="alternate" hreflang="yo" href="https://sebastienrousseau.com/yo/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" integrity="sha256-tV/7vAgYDUuBQbSGEPjXL/JC0sD7QpSxXCGKT4ALhh8= sha256-dvm1KF9mEWIapL8BE0nyFlHaKSf6TsjZZoQcJeRPraI=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">Lumaktaw sa pangunahing nilalaman</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="I-toggle ang nabigasyon" />
+      <div class="wrap">
+        <a class="ap-brand" href="/fil/index.html" aria-label="Home ni Sebastien Rousseau">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="Pangunahing nabigasyon">
+          <ul class="ap-menu">
+            <li><a href="/fil/tungkol-sa-akin/index.html">Tungkol</a></li>
+            <li><a href="/fil/mga-artikulo/index.html" aria-current="page" class="active">Mga artikulo</a></li>
+            <li><a href="/fil/mga-publikasyon/index.html">Mga publikasyon</a></li>
+            <li><a href="/fil/mga-paksa/index.html">Mga paksa</a></li>
+            <li><a href="/fil/mga-proyekto/index.html">Mga proyekto</a></li>
+            <li><a href="/fil/mga-playlist/index.html">Mga playlist</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="Lumipat sa dark mode" aria-pressed="false" title="Ibahin ang tema">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="Maghanap (Cmd o Ctrl + K)" title="Maghanap (⌘K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="Wika">
+            <button type="button" class="ap-lang-toggle" aria-label="FIL, Baguhin ang wika" aria-expanded="false" aria-haspopup="menu" title="Baguhin ang wika">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">FIL</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <a class="ap-lang-item" href="/bn/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
+                <a class="ap-lang-item" href="/cs/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
+                <a class="ap-lang-item" href="/de/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <a class="ap-lang-item" href="/fil/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
+                <a class="ap-lang-item" href="/ha/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
+                <a class="ap-lang-item" href="/he/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
+                <a class="ap-lang-item" href="/hi/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <a class="ap-lang-item" href="/id/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
+                <a class="ap-lang-item" href="/it/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <a class="ap-lang-item" href="/pl/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
+                <a class="ap-lang-item" href="/pt-br/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <a class="ap-lang-item" href="/ro/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
+                <a class="ap-lang-item" href="/ru/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <a class="ap-lang-item" href="/sv/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
+                <a class="ap-lang-item" href="/th/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
+                <a class="ap-lang-item" href="/tr/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
+                <a class="ap-lang-item" href="/uk/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" data-lang="uk" role="menuitem">🇺🇦 Українська</a>
+                <a class="ap-lang-item" href="/vi/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
+                <a class="ap-lang-item" href="/yo/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
+                <a class="ap-lang-item" href="/zh-hans/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/fil/makipag-ugnayan/index.html" aria-label="Makipag-ugnayan">Makipag-ugnayan ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="I-toggle ang nabigasyon">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>CloudCDN: Open-Source na Blueprint para sa AI-Native Edge sa 2026</h1>
+      <p class="sub">Ipinapakita ng CloudCDN kung paano maaaring maging masusuri, agent-controllable, rate-limited, accessible, at bank-grade ang open-source na imprastraktura ng edge.</p>
+    <nav class="article-tags" aria-label="Mga paksa"><a href="/tags/index.html#h3-cloudcdn" class="article-tag" rel="tag">CloudCDN</a><a href="/tags/index.html#h3-ai-native-edge" class="article-tag" rel="tag">AI-native edge</a><a href="/tags/index.html#h3-open-source-cdn" class="article-tag" rel="tag">open-source CDN</a><a href="/tags/index.html#h3-mcp-server" class="article-tag" rel="tag">MCP server</a><a href="/tags/index.html#h3-cloudflare-workers" class="article-tag" rel="tag">Cloudflare Workers</a><a href="/tags/index.html#h3-durable-objects" class="article-tag" rel="tag">Durable Objects</a><a href="/tags/index.html#h3-signed-urls" class="article-tag" rel="tag">signed URLs</a><a href="/tags/index.html#h3-passkeys" class="article-tag" rel="tag">passkeys</a><a href="/tags/index.html#h3-slsa" class="article-tag" rel="tag">SLSA</a><a href="/tags/index.html#h3-imprastraktura-ng-edge" class="article-tag" rel="tag">imprastraktura ng edge</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2026-06-11T06:06:06+00:00" class="meta-pub">Inilathala noong 11 Jun 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Tinatayang oras ng pagbasa">6 min basahin</span></div></section><figure class="article-banner"><img src="https://cloudcdn.pro/api/transform?url=/stocks/images/alis-po-IdVNRv-5wJo.webp&w=1600&format=webp&q=85" alt="Banner for: CloudCDN: Open-Source na Blueprint para sa AI-Native Edge sa 2026" width="1200" height="675" fetchpriority="high" decoding="async" /></figure>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>Mga nilalaman</h2><ol><li><a href="#bakit-mahalaga-ang-open-source-na-proyektong-ito-sa-2026">Bakit Mahalaga Ang Open-Source na Proyektong Ito Sa 2026</a></li><li><a href="#lente-ng-arkitektura">Lente ng Arkitektura</a></li><li><a href="#mga-senyas-na-dapat-subaybayan">Mga Senyas na Dapat Subaybayan</a></li><li><a href="#ang-cdn-ay-nagiging-control-plane">Ang CDN Ay Nagiging Control Plane</a></li><li><a href="#bakit-binabago-ng-open-source-ang-modelo-ng-tiwala">Bakit Binabago ng Open Source ang Modelo ng Tiwala</a></li><li><a href="#ang-pattern-ng-bank-grade-na-edge">Ang Pattern ng Bank-Grade na Edge</a></li><li><a href="#ano-ang-ibig-sabihin-nito-ayon-sa-tagapakinig">Ano Ang Ibig Sabihin Nito Ayon sa Tagapakinig</a></li><li><a href="#konklusyon">Konklusyon</a></li><li><a href="#mga-madalas-itanong">Mga Madalas Itanong</a></li><li><a href="#mga-reference">Mga Reference</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> Ang CloudCDN ay open-source, AI-native edge CDN blueprint para sa imprastraktura na MCP-controlled, rate limiting ng Durable Objects, signed URLs, accessibility, at kakayahang i-audit.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>Bakit Mahalaga Ang Open-Source na Proyektong Ito Sa 2026.</strong> Hindi na limitado sa transparency, muling paggamit, o goodwill ng developer ang estratehikong halaga ng open source sa 2026.</li>  <li><strong>Mga Senyas na Dapat Subaybayan.</strong> Ang mga tradisyunal na CDN ay binuo sa palibot ng pagpapabilis ng nilalaman, pag-purge ng cache, routing, at mga proteksyong tulad ng WAF.</li>  <li><strong>Ang CDN Ay Nagiging Control Plane.</strong> Ang mga tradisyunal na CDN ay binuo sa palibot ng pagpapabilis ng nilalaman, pag-purge ng cache, routing, at mga proteksyong tulad ng WAF.</li>  <li><strong>Bakit Binabago ng Open Source ang Modelo ng Tiwala.</strong> Para sa mga regulado na institusyon, hindi lamang performance ang kaakit-akit sa CloudCDN.</li></ul></aside><!-- lead-start -->
+<aside class="lead" aria-label="Sa isang sulyap">
+<p><strong>TL;DR.</strong> Ang CloudCDN ay open-source, AI-native na blueprint ng edge. Itinuturing nito ang CDN bilang agent surface — MCP-controlled, nakatali sa pagkakakilanlan, rate-limited, naka-gate sa pamamagitan ng signed URLs, sinubok para sa accessibility, at masusubaybayan mula sa pinagmulan — sa halip na isang opaque na dashboard ng vendor. Tumatakbo ang reference repo nang sub-100ms TTFB sa mga Cloudflare PoP na may 3,185 na pagsubok sa 100% na coverage.</p>
+<p><strong>Mga pangunahing tinik:</strong></p>
+<ul>
+<li><strong>Ang edge na ngayon ang bagong control plane.</strong> Magbabago ng cache ang mga agent, maglilikha ng signed URLs, at maglilipat ng trapiko — kailangan nito ng imprastraktura na maaaring pamahalaan, hindi portal ng vendor.</li>
+<li><strong>Ginagawa ng MCP na typed tools ang mga aksyon sa CDN.</strong> Bawat operasyon ay may kakayahang i-audit, nakatali sa isang pagkakakilanlan, at limitado ng patakaran.</li>
+<li><strong>Ginagawa ng Durable Objects ang matematika ng rate-limiting.</strong> Mga limitasyon kada-key, kada-IP, at kada-route na nakaliligtas sa failover.</li>
+<li><strong>Nagbabantay ng access ang signed URLs at passkeys.</strong> Walang bearer tokens na lumulutang sa logs; walang shared API keys.</li>
+<li><strong>Ang open source ang mekanismo ng tiwala.</strong> Mababasa ng mga bangko at enterprise ang control plane sa halip na magtiwala sa mga PDF ng vendor.</li>
+</ul>
+<p><strong>Karagdagang pagbabasa:</strong> <a href="/fil/2026-05-20-cloud-native-banking-financial-institutions-2026/">Cloud-native banking</a> · <a href="/fil/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026/">AI operating system para sa payments</a> · <a href="/fil/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/">DORA + AI Act compliance stack</a></p>
+</aside>
+<!-- lead-end -->
+<p>Mahalaga ang CloudCDN dahil ang edge na ang nagiging control plane para sa AI-native na software. Habang nagsisimulang tumawag ng tools ang mga agent, maglipat ng datos, magbago ng cache, humingi ng signed URLs, at mag-coordinate ng mga workflow, hindi na sapat ang lumang modelo ng CDN na may opaque na dashboard at proprietary na control plane. Iginigiit ng CloudCDN ang ibang modelo: bukás, masusuri, agent-controllable na edge platform na itinuturing ang seguridad, accessibility, performance, at kakayahang i-audit bilang pundasyong limitasyon ng disenyo.</p>
+<p>Ang open-source na reference para sa artikulong ito ay <a href="https://github.com/sebastienrousseau/cloudcdn.pro" title="cloudcdn.pro">cloudcdn.pro ⧉</a>. Naka-posisyon ang repository bilang: multi-tenant, AI-native na CDN na maaaring basahin mula simula hanggang katapusan at i-deploy nang nakapag-iisa, na may sub-100ms TTFB sa mga Cloudflare PoP, kontrol ng MCP, rate limiting ng Durable Objects, WCAG-AA na accessibility, signed URLs, passkeys, SLSA, at 3,185 na pagsubok sa 100% na coverage.</p>
+<hr />
+<blockquote>
+<p><strong>Buod ng Ehekutibo / Mga Pangunahing Tinik</strong></p>
+<ul>
+<li><strong>Ang CloudCDN ang flagship na kuwento ng open-source na imprastraktura.</strong> Pinagsasama nito ang mekanika ng CDN, Cloudflare Workers, Durable Objects, MCP, signed URLs, passkeys, rate limiting, accessibility, at disiplina sa pagsubok.</li>
+<li><strong>Ang edge na ang nagiging agent surface.</strong> Sa sandaling kaya nang pamahalaan ng AI systems ang imprastraktura sa pamamagitan ng MCP tools, dapat na maging pamamahalaan ng pagkakakilanlan, patakaran, rate limits, at audit logs ang CDN.</li>
+<li><strong>Ang open source ang mekanismo ng tiwala.</strong> Masusuri ng isang bangko o enterprise kung paano gumagana ang control plane sa halip na umasa nang buo sa mga inaangkin ng vendor.</li>
+<li><strong>Estratehiko ang atomic rate limiting.</strong> Nagbibigay ang Durable Objects ng punto ng coordination upang limitahan ang panlabas na pang-aabuso at panloob na agentic loops.</li>
+<li><strong>Reference architecture ang proyekto.</strong> Ang halaga nito ay hindi lamang kung ano ang ipinaghahatid kundi kung ano ang itinuturo nito tungkol sa susunod na henerasyon ng edge infrastructure.</li>
+</ul>
+</blockquote>
+<hr />
+<h2 id="bakit-mahalaga-ang-open-source-na-proyektong-ito-sa-2026">Bakit Mahalaga Ang Open-Source na Proyektong Ito Sa 2026 <a class="heading-anchor" href="#bakit-mahalaga-ang-open-source-na-proyektong-ito-sa-2026" aria-label="Link patungo sa Bakit Mahalaga Ang Open-Source na Proyektong Ito Sa 2026">#</a></h2>
+<p>Hindi na limitado sa transparency, muling paggamit, o goodwill ng developer ang estratehikong halaga ng open source sa 2026. Para sa mga bangko at institusyong pinansyal, ang open-source na imprastraktura ay naging paraan upang masuri ang mga palagay, masubok ang mga kontrol, mabawasan ang opacity ng vendor, at gawing code ang mga arkitektural na inaangkin na maaaring basahin, i-fork, palakasin, at patakbuhin. Ang mga pinakakapaki-pakinabang na proyekto ay hindi mga demo. Ang mga ito ay reference implementation na naglalantad kung paano nagkakasama ang seguridad, accessibility, performance, compliance, at karanasan ng developer.</p>
+<p>Ito ang lente kung saan dapat unawain ang cloudcdn.pro. Hindi lamang ito isang repository; isang kongkretong argumento ng disenyo. Sinasabi nito na ang kritikal na imprastraktura ay dapat may kakayahang i-audit, masusuri, dokumentado, mapagsusubok, at mauunawaan ng mga taong nakaaasa rito. Sa mga serbisyong pinansyal, mahalaga iyon dahil lalong nakahimpil ang mga sistema sa pinag-uugpungan ng agentic AI, real-time na pagbabayad, post-quantum cryptography, cloud-native na katatagan, structured na datos, at ebidensya ng regulasyon.</p>
+<h2 id="lente-ng-arkitektura">Lente ng Arkitektura <a class="heading-anchor" href="#lente-ng-arkitektura" aria-label="Link patungo sa Lente ng Arkitektura">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Desisyon sa Disenyo</th>
+<th>Bakit Mahalaga</th>
+<th>Panganib Kung Mali Ang Pamamahala</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Edge runtime</strong></td>
+<td>Cloudflare Workers at Pages</td>
+<td>Global na pagpapatupad na may mababang overhead sa operasyon</td>
+<td>Pakinabang sa latency nang walang disiplina sa kontrol</td>
+</tr>
+<tr>
+<td><strong>State coordination</strong></td>
+<td>Durable Objects para sa atomic na limitasyon at ibinahaging kontrol</td>
+<td>Pumipigil sa race conditions sa enforcement sa edge</td>
+<td>Distribuhidong pang-aabuso at hindi pare-parehong quotas</td>
+</tr>
+<tr>
+<td><strong>Agent interface</strong></td>
+<td>Mga operasyong inilalantad sa pamamagitan ng MCP</td>
+<td>Pinapayagan ang mga agent na patakbuhin ang imprastraktura sa pamamagitan ng mga pinamamahalaang tools</td>
+<td>Walang limitasyong pag-invoke ng tools</td>
+</tr>
+<tr>
+<td><strong>Access control</strong></td>
+<td>Passkeys, signed URLs, mga pahintulot, at audit trails</td>
+<td>Ginagawang mananagot na aksyon ang mga operasyon sa CDN</td>
+<td>Anonymous o mahinang naka-attribute na mga pagbabago</td>
+</tr>
+<tr>
+<td><strong>Quality gates</strong></td>
+<td>Accessibility, pagsubok, SLSA, at mga pagsusuri sa deployment</td>
+<td>Ginagawang bahagi ng paghahatid ang tiwala</td>
+<td>Mabilis na imprastraktura na hindi ligtas na mapamamahalaan</td>
+</tr>
+</tbody>
+</table>
+<h2 id="mga-senyas-na-dapat-subaybayan">Mga Senyas na Dapat Subaybayan <a class="heading-anchor" href="#mga-senyas-na-dapat-subaybayan" aria-label="Link patungo sa Mga Senyas na Dapat Subaybayan">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Senyas</th>
+<th>Ano Ang Ibig Sabihin</th>
+<th>Reference</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>42 na MCP tools</strong></td>
+<td>Ang CloudCDN ay idinisenyo para sa agent-controllable na imprastraktura</td>
+<td><a href="https://github.com/sebastienrousseau/cloudcdn.pro" title="Repository ng CloudCDN">cloudcdn.pro ⧉</a></td>
+</tr>
+<tr>
+<td><strong>Rate limiting ng Durable Objects</strong></td>
+<td>Nagiging primitibo ng seguridad ang stateful na coordination sa edge</td>
+<td><a href="https://developers.cloudflare.com/durable-objects/" title="Dokumentasyon ng Cloudflare Durable Objects">Cloudflare Durable Objects ⧉</a></td>
+</tr>
+<tr>
+<td><strong>Cloudflare Agents SDK at MCP</strong></td>
+<td>Lumilipat ang mas malawak na edge ecosystem patungo sa authenticated na koneksyon ng agent</td>
+<td><a href="https://blog.cloudflare.com/building-ai-agents-with-mcp-authn-authz-and-durable-objects/" title="Cloudflare MCP, auth at Durable Objects">Cloudflare ⧉</a></td>
+</tr>
+<tr>
+<td><strong>Signed URLs at passkeys</strong></td>
+<td>Itinuturing na mga alalahanin sa imprastraktura ang access at delegasyon</td>
+<td><a href="https://github.com/sebastienrousseau/cloudcdn.pro" title="Repository ng CloudCDN">cloudcdn.pro ⧉</a></td>
+</tr>
+<tr>
+<td><strong>3,185 na pagsubok sa 100% na coverage</strong></td>
+<td>Itinatakda ng proyekto ang beripikasyon bilang bahagi ng disenyo ng imprastraktura</td>
+<td><a href="https://github.com/sebastienrousseau/cloudcdn.pro" title="Repository ng CloudCDN">cloudcdn.pro ⧉</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="ang-cdn-ay-nagiging-control-plane">Ang CDN Ay Nagiging Control Plane <a class="heading-anchor" href="#ang-cdn-ay-nagiging-control-plane" aria-label="Link patungo sa Ang CDN Ay Nagiging Control Plane">#</a></h2>
+<p>Ang mga tradisyunal na CDN ay binuo sa palibot ng pagpapabilis ng nilalaman, pag-purge ng cache, routing, at mga proteksyong tulad ng WAF. Nagdaragdag ang AI-native na edge ng bagong pangangailangan: kailangang masuri, ma-trigger, at mapatakbo ng mga software agent ang imprastraktura nang ligtas. Iyon ang nagbabago sa CDN tungo sa control plane. Dapat magkaroon ang control plane ng pagkakakilanlan, mga pahintulot, mga log, rate limits, at kakayahang ipaliwanag.</p>
+<h2 id="bakit-binabago-ng-open-source-ang-modelo-ng-tiwala">Bakit Binabago ng Open Source ang Modelo ng Tiwala <a class="heading-anchor" href="#bakit-binabago-ng-open-source-ang-modelo-ng-tiwala" aria-label="Link patungo sa Bakit Binabago ng Open Source ang Modelo ng Tiwala">#</a></h2>
+<p>Para sa mga regulado na institusyon, hindi lamang performance ang kaakit-akit sa CloudCDN. Ito ay ang kakayahang masuri. Mababasa ng mga team kung paano gumagana ang rate limits, kung paano inilalantad ang mga tool interface, kung paano binubuo ang signed URLs, kung paano nakabalangkas ang mga pagsubok, at kung paano ipinatutupad ang accessibility. Lumilikha iyon ng ibang ugnayan sa pagitan ng imprastraktura at gobernansya.</p>
+<h2 id="ang-pattern-ng-bank-grade-na-edge">Ang Pattern ng Bank-Grade na Edge <a class="heading-anchor" href="#ang-pattern-ng-bank-grade-na-edge" aria-label="Link patungo sa Ang Pattern ng Bank-Grade na Edge">#</a></h2>
+<p>Simple ngunit mahirap isakatuparan ang bank-grade na pattern: mga operasyon na maa-access ng agent, mahigpit na limitadong pahintulot, atomic rate limiting, hindi mababagong audit trails, mga pagsusuri sa accessibility, naka-sign na pamamahagi, at ebidensya ng deployment. Ginagawang code ng CloudCDN ang pattern na iyon sa halip na slide.</p>
+<h2 id="ano-ang-ibig-sabihin-nito-ayon-sa-tagapakinig">Ano Ang Ibig Sabihin Nito Ayon sa Tagapakinig <a class="heading-anchor" href="#ano-ang-ibig-sabihin-nito-ayon-sa-tagapakinig" aria-label="Link patungo sa Ano Ang Ibig Sabihin Nito Ayon sa Tagapakinig">#</a></h2>
+<h3 id="para-sa-mga-lider-ng-teknolohiya-ng-bangko">Para sa mga Lider ng Teknolohiya ng Bangko <a class="heading-anchor" href="#para-sa-mga-lider-ng-teknolohiya-ng-bangko" aria-label="Link patungo sa Para sa mga Lider ng Teknolohiya ng Bangko">#</a></h3>
+<p>Ang tanong ay kung kayang tulungan ng proyekto na maisalin ang estratehikong presyon tungo sa maipapatupad na arkitektura. Pinakamalakas ang halaga kapag binibigyan ng repository ang mga team ng konkretong masusuri: mga interface, configuration, pagsubok, hangganan ng seguridad, mga palagay sa deployment, at mga failure mode.</p>
+<h3 id="para-sa-mga-team-ng-security-at-risk">Para sa mga Team ng Security at Risk <a class="heading-anchor" href="#para-sa-mga-team-ng-security-at-risk" aria-label="Link patungo sa Para sa mga Team ng Security at Risk">#</a></h3>
+<p>Dapat suriin ang proyekto hindi lamang para sa mga feature kundi para sa ebidensya ng kontrol. Inilalantad ng kapaki-pakinabang na open-source na imprastrukturang pinansyal kung paano dapat gumana ang pagkakakilanlan, mga sikreto, validation, audit logs, rate limits, mga lagda, provenance, at recovery.</p>
+<h3 id="para-sa-mga-developer-at-platform-engineer">Para sa mga Developer at Platform Engineer <a class="heading-anchor" href="#para-sa-mga-developer-at-platform-engineer" aria-label="Link patungo sa Para sa mga Developer at Platform Engineer">#</a></h3>
+<p>Ang pinakamahalagang pagsubok ay kung binabawasan ng proyekto ang cognitive load nang hindi itinatago ang mahahalagang mekanika. Dapat gawing madaling daan ang ligtas na daan ng magandang open source habang pinapayagan pa rin ang mga bihasang engineer na unawain at baguhin ang implementasyon.</p>
+<h3 id="para-sa-mga-contributor">Para sa mga Contributor <a class="heading-anchor" href="#para-sa-mga-contributor" aria-label="Link patungo sa Para sa mga Contributor">#</a></h3>
+<p>Ang pagkakataon ay palakasin ang proyekto kung saan kailangan ng tunay na mga institusyon ang katiyakan: dokumentasyon, mga halimbawa, conformance tests, paghigpit ng CI, threat models, performance profiles, mga pagsusuri sa accessibility, at mga gabay sa integrasyon.</p>
+<h2 id="konklusyon">Konklusyon <a class="heading-anchor" href="#konklusyon" aria-label="Link patungo sa Konklusyon">#</a></h2>
+<p>Ang dahilan ng pagsulat tungkol sa cloudcdn.pro ay dahil ginagawa nitong konkreto ang isang mas malawak na problema ng industriya. Sa 2026, hindi na kailangan ng mga bangko ng mas marami pang abstract na wika ng transpormasyon. Kailangan nila ng mga masusuring sistema na nagpapakita kung paano maitatayo, mapoprotektahan, masusubok, at mapamamahalaan ang modernong imprastraktura. Ang open source ang pinaka-kapani-paniwalang paraan upang gawing nakikita ang argumentong iyon.</p>
+<h2 id="mga-madalas-itanong">Mga Madalas Itanong <a class="heading-anchor" href="#mga-madalas-itanong" aria-label="Link patungo sa Mga Madalas Itanong">#</a></h2>
+<p><strong>Bakit isulat muna ang tungkol sa CloudCDN?</strong></p>
+<p>Sapagkat ito ang pinakamalawak na kuwento ng open source: AI agents, edge, MCP, seguridad, accessibility, performance, at banking-grade na kakayahang i-audit sa iisang proyekto.</p>
+<p><strong>Ang CloudCDN ba ay para lamang sa mga bangko?</strong></p>
+<p>Hindi. Pangkalahatang kapaki-pakinabang ang arkitektura, ngunit ang mga bangko ay isang mahigpit na lente dahil pinipilit ng mga ito ang mas malakas na kontrol, kakayahang i-audit, at mga pangangailangan sa katatagan.</p>
+<p><strong>Ano ang gumagawa sa CloudCDN na AI-native?</strong></p>
+<p>Ang MCP-controlled na mga operasyon at agent-aware na modelo ng kontrol ang gumagawa rito na angkop para sa autonomous na mga workflow ng imprastraktura sa halip na para lamang sa paggamit ng human dashboard.</p>
+<p><strong>Ano ang pinakamatibay na teknikal na ideya?</strong></p>
+<p>Ang atomic edge rate limiting sa Durable Objects, dahil kayang ipagtanggol ang sarili laban sa panlabas na pang-aabuso at panloob na agentic runaway na pag-uugali.</p>
+<h2 id="mga-reference">Mga Reference <a class="heading-anchor" href="#mga-reference" aria-label="Link patungo sa Mga Reference">#</a></h2>
+<ul>
+<li>GitHub, (2026). <a href="https://github.com/sebastienrousseau/cloudcdn.pro" title="Repository ng cloudcdn.pro">Repository ng cloudcdn.pro ⧉</a>.</li>
+<li>Cloudflare, (2026). <a href="https://blog.cloudflare.com/building-ai-agents-with-mcp-authn-authz-and-durable-objects/" title="Pagbuo ng mga AI agent gamit ang MCP, authentication at Durable Objects">Pagbuo ng mga AI agent gamit ang MCP, authentication at Durable Objects ⧉</a>.</li>
+<li>Cloudflare, (2026). <a href="https://developers.cloudflare.com/durable-objects/" title="Dokumentasyon ng Durable Objects">Dokumentasyon ng Durable Objects ⧉</a>.</li>
+</ul>
+<!-- enrich-start -->
+
+<p class="post-reviewed">Huling sinuri <time datetime="2026-06-11">2026-06-11</time>.</p>
+<!-- enrich-end -->
+<aside class="author-card" aria-label="Tungkol sa may-akda"><img alt="Portrait ni Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=85" width="64" height="64" loading="lazy" decoding="async"  fetchpriority="high"><span class="author-card-body"><strong class="author-card-name"><a href="/fil/tungkol-sa-akin/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist na sumusulat tungkol sa applied AI, ISO 20022 migration, post-quantum cryptography para sa financial services, at structural transformation ng wholesale payments.</span><span class="author-credentials">Higit sa 20 taon sa HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA at Virgin Group. <a href="/fil/tungkol-sa-akin/index.html">Buong profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">Huling sinuri <time datetime="2026-06-11">2026-06-11</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Kaugnay na pagbasa</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/fil/2026-05-16-best-cloud-infrastructure-architecture-2026" class="related-media" aria-label="Ang Pinakamahusay na Arkitektura ng Cloud Infrastructure sa 2026: Isang AI-Native, Multi-Cloud, Quantum-Aware na Blueprint para sa Financial Services" tabindex="-1"><img alt="Six-pillar cloud architecture diagram for 2026 — AI-native, multi-cloud, serverless, edge, DevSecOps, and sustainable design, with CloudCDN edge research overlay" src="https://cloudcdn.pro/api/transform?url=/stock/images/cloud-architecture-2026-banner.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="ang-pinakamahusay-na-arkitektura-ng-cloud-infrastructure-sa-2026-isang-ai-native"><a href="https://sebastienrousseau.com/fil/2026-05-16-best-cloud-infrastructure-architecture-2026">Ang Pinakamahusay na Arkitektura ng Cloud Infrastructure sa 2026: Isang AI-Native, Multi-Cloud, Quantum-Aware na Blueprint para sa Financial Services</a> <a class="heading-anchor" href="#ang-pinakamahusay-na-arkitektura-ng-cloud-infrastructure-sa-2026-isang-ai-native" aria-label="Link patungo sa Ang Pinakamahusay na Arkitektura ng Cloud Infrastructure sa 2026: Isang AI-Native, Multi-Cloud, Quantum-Aware na Blueprint para sa Financial Services">#</a></h3><p><time datetime="2026-05-16">2026-05-16</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/fil/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026" class="related-media" aria-label="Ang Cloud Native Banking Index sa 2026: DORA, Platform Engineering, Sovereign Cloud, at Operational Resilience" tabindex="-1"><img alt="Circuit-board pattern resolving into a cityscape skyline — the visual register chosen for cloud-native banking: platform-engineering primitives stitched into the bank's operational fabric." src="https://cloudcdn.pro/api/transform?url=/stocks/images/quang-nguyen-vinh-2649403.webp&w=1600&format=webp&q=85" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="ang-cloud-native-banking-index-sa-2026-dora-platform-engineering-sovereign-cloud"><a href="https://sebastienrousseau.com/fil/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026">Ang Cloud Native Banking Index sa 2026: DORA, Platform Engineering, Sovereign Cloud, at Operational Resilience</a> <a class="heading-anchor" href="#ang-cloud-native-banking-index-sa-2026-dora-platform-engineering-sovereign-cloud" aria-label="Link patungo sa Ang Cloud Native Banking Index sa 2026: DORA, Platform Engineering, Sovereign Cloud, at Operational Resilience">#</a></h3><p><time datetime="2026-06-05">2026-06-05</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/fil/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026" class="related-media" aria-label="Ang Agentic AI Index para sa mga Bangko sa 2026: Pagsukat ng Autonomy, Pamamahala, Auditability, at Epekto sa Negosyo" tabindex="-1"><img alt="The Agentic AI Index for Banks 2026 index diagram for banks and financial institutions in 2026" src="https://cloudcdn.pro/api/transform?url=/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="ang-agentic-ai-index-para-sa-mga-bangko-sa-2026-pagsukat-ng-autonomy-pamamahala-"><a href="https://sebastienrousseau.com/fil/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026">Ang Agentic AI Index para sa mga Bangko sa 2026: Pagsukat ng Autonomy, Pamamahala, Auditability, at Epekto sa Negosyo</a> <a class="heading-anchor" href="#ang-agentic-ai-index-para-sa-mga-bangko-sa-2026-pagsukat-ng-autonomy-pamamahala-" aria-label="Link patungo sa Ang Agentic AI Index para sa mga Bangko sa 2026: Pagsukat ng Autonomy, Pamamahala, Auditability, at Epekto sa Negosyo">#</a></h3><p><time datetime="2026-06-03">2026-06-03</time></p></footer></article>
+</div>
+</aside><aside class="article-sources" aria-labelledby="sources-heading"><h2 id="sources-heading" class="article-sources-heading">Mga pinagmulan at sanggunian</h2><ol class="article-sources-list"><li><a href="https://github.com/sebastienrousseau/cloudcdn.pro" rel="external noopener nofollow"><span class="source-host">github.com</span><span class="source-path">/sebastienrousseau/cloudcdn.pro</span></a></li></ol></aside><nav class="post-pagination" aria-label="Pagination ng artikulo"><a class="post-pagination-prev" href="/fil/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/"><span class="post-pagination-label">Nakaraan</span><span class="post-pagination-title">The Banking Resilience Index in 2026: AI, Cloud, Quantum, Payments, and Third-Party Concentration Risk</span></a><span class="post-pagination-stub" aria-hidden="true"></span></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/fil/tungkol-sa-akin/index.html">Tungkol</a></li>
+              <li><a href="/fil/makipag-ugnayan/index.html">Makipag-ugnayan</a></li>
+              <li><a href="/fil/ginawa-sa-static-site-generator/index.html">Ginawa sa Static Site Generator</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Pagsusulat</h2>
+            <ul>
+              <li><a href="/fil/mga-artikulo/index.html">Mga artikulo</a></li>
+              <li><a href="/fil/mga-publikasyon/index.html">Mga publikasyon</a></li>
+              <li><a href="/fil/mga-tag/index.html">Mga tag</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Trabaho</h2>
+            <ul>
+              <li><a href="/fil/mga-proyekto/index.html">Mga proyekto</a></li>
+              <li><a href="/fil/mga-playlist/index.html">Mga playlist</a></li>
+              <li><a href="/fil/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Makipag-ugnayan</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="/contact/" method="get" aria-label="Pag-sign up sa newsletter">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — mga research note tungkol sa payments, AI at post-quantum crypto. Walang spam.</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="ikaw@bangko.ph" />
+            <input type="hidden" name="subject" value="newsletter" />
+            <input type="hidden" name="message" value="Please subscribe me to the Banking On Quantum newsletter." />
+            <button type="submit">Mag-subscribe</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved.</span>
+          <div class="social" aria-label="Mga link sa social media">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau sa Twitter / X"><img src="https://cloudcdn.pro/common/images/buttons/x-black.svg" alt="Sebastien Rousseau sa Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau sa LinkedIn"><img src="https://cloudcdn.pro/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau sa LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau sa Medium"><img src="https://cloudcdn.pro/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau sa Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau sa YouTube"><img src="https://cloudcdn.pro/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau sa YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/fil/pagiging-accessible/index.html">Pagiging accessible</a> ·
+            <a href="/fil/pagkapribado/index.html">Pagkapribado</a> ·
+            <a href="/fil/mga-tuntunin/index.html">Mga tuntunin</a> ·
+            <a href="https://www.thegreenwebfoundation.org/green-web-check/?url=sebastienrousseau.com" target="_blank" rel="noopener noreferrer" title="Hosted on 100% renewable energy (Cloudflare) — estimate via Sustainable Web Design v4 model">Carbon: ~0.04 g/visit · green-hosted</a> ·
+            <a href="https://github.com/sebastienrousseau/sebastienrousseau.github.io/blob/main/project-docs/sigstore.md" target="_blank" rel="noopener noreferrer" title="Every dated article is signed with Sigstore — verify the bytes match what was published">Verify signatures</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","identifier":{"@type":"PropertyValue","propertyID":"ORCID","value":"0009-0005-1434-284X","url":"https://orcid.org/0009-0005-1434-284X"},"worksFor":{"@type":"Organization","@id":"https://www.hsbc.com/#organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal","url":"https://www.paypal.com/"},{"@type":"Organization","name":"Barclays","url":"https://www.barclays.com/"},{"@type":"Organization","name":"Shazam Entertainment","url":"https://www.shazam.com/"},{"@type":"Organization","name":"AKQA","url":"https://www.akqa.com/"},{"@type":"Organization","name":"Virgin Group","url":"https://www.virgin.com/"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"hasCredential":[{"@type":"EducationalOccupationalCredential","credentialCategory":"professional experience","name":"20+ years across Tier-1 banks and global payments infrastructure","recognizedBy":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"}},{"@type":"EducationalOccupationalCredential","credentialCategory":"domain expertise","name":"ISO 20022 migration and wholesale payments architecture","recognizedBy":{"@type":"Organization","name":"SWIFT","url":"https://www.swift.com/"}},{"@type":"EducationalOccupationalCredential","credentialCategory":"domain expertise","name":"Post-Quantum Cryptography for financial services","recognizedBy":{"@type":"Organization","name":"NIST Post-Quantum Cryptography Project","url":"https://csrc.nist.gov/projects/post-quantum-cryptography"}}],"knowsAbout":[{"@type":"DefinedTerm","name":"Post-Quantum Cryptography","sameAs":"https://en.wikipedia.org/wiki/Post-quantum_cryptography"},{"@type":"DefinedTerm","name":"ML-KEM (FIPS 203)","sameAs":"https://csrc.nist.gov/pubs/fips/203/final"},{"@type":"DefinedTerm","name":"ML-DSA (FIPS 204)","sameAs":"https://csrc.nist.gov/pubs/fips/204/final"},{"@type":"DefinedTerm","name":"ISO 20022","sameAs":"https://en.wikipedia.org/wiki/ISO_20022"},{"@type":"DefinedTerm","name":"SWIFT gpi","sameAs":"https://www.swift.com/our-solutions/swift-gpi"},{"@type":"DefinedTerm","name":"SEPA Instant Payments","sameAs":"https://www.ecb.europa.eu/paym/integration/retail/instant_payments/html/index.en.html"},{"@type":"DefinedTerm","name":"FedNow Service","sameAs":"https://www.federalreserve.gov/paymentsystems/fednow_about.htm"},{"@type":"DefinedTerm","name":"Real-Time Payments (RTP)","sameAs":"https://www.theclearinghouse.org/payment-systems/rtp"},{"@type":"DefinedTerm","name":"Cross-border payments","sameAs":"https://en.wikipedia.org/wiki/Cross-border_payments"},{"@type":"DefinedTerm","name":"Wholesale banking","sameAs":"https://en.wikipedia.org/wiki/Wholesale_banking"},{"@type":"DefinedTerm","name":"Applied artificial intelligence in banking","sameAs":"https://en.wikipedia.org/wiki/Applications_of_artificial_intelligence"},{"@type":"DefinedTerm","name":"Generative artificial intelligence","sameAs":"https://en.wikipedia.org/wiki/Generative_artificial_intelligence"}],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://orcid.org/0009-0005-1434-284X","https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":["Organization","Brand"],"@id":"https://sebastienrousseau.com/#organization","name":"Sebastien Rousseau","alternateName":"Banking on Quantum","url":"https://sebastienrousseau.com/","logo":{"@type":"ImageObject","@id":"https://sebastienrousseau.com/#logo","url":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","width":"512","height":"512","caption":"Sebastien Rousseau"},"founder":{"@id":"https://sebastienrousseau.com/#person"},"editorialPolicy":"https://sebastienrousseau.com/editorial/","correctionsPolicy":"https://sebastienrousseau.com/editorial/#corrections","ethicsPolicy":"https://sebastienrousseau.com/editorial/","diversityPolicy":"https://sebastienrousseau.com/editorial/","sameAs":["https://github.com/sebastienrousseau","https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#organization"},"author":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"fil"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"fil"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":1388,"headline":"CloudCDN: Open-Source na Blueprint para sa AI-Native Edge sa 2026","description":"Ang CloudCDN ay open-source, AI-native edge CDN blueprint para sa imprastraktura na MCP-controlled, rate limiting ng Durable Objects, signed URLs, accessibility, at kakayahang i-audit.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/alis-po-IdVNRv-5wJo.webp","width":"100vw","height":"100vh","caption":"Nagliliwanag na rack stack ng data centre sa gabi — sumisimbolo sa masusuri, agent-controllable, open-source edge kung saan itinayo ang CloudCDN"},"url":"https://sebastienrousseau.com/fil/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/","datePublished":"2026-06-11T06:06:06+00:00","dateModified":"2026-06-11","inLanguage":"fil","keywords":"CloudCDN, AI-native edge, open-source CDN, MCP server, Cloudflare Workers, Durable Objects, signed URLs, passkeys, SLSA, imprastraktura ng edge","articleSection":"Technology","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/fil/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"fil"},"citation":[{"@type":"CreativeWork","url":"https://github.com/sebastienrousseau/cloudcdn.pro"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/fil/"},{"@type":"ListItem","position":3,"name":"CloudCDN: Open-Source na Blueprint para sa AI-Native Edge sa 2026","item":"https://sebastienrousseau.com/fil/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/"}]}]}</script>
+<script src="/main.931cef3c.js" defer integrity="sha256-JUs9z2u4RDSgxMCjBnyMmIHIkpakA7s5FxUmnDnSpD0= sha256-r33y52uSTzd+MqMufJlWsd09gyxv578IRoF5Gomw7Aw=" crossorigin="anonymous"></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="Maghanap">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>Maghanap</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="Maghanap">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="Maghanap sa dokumentasyon..." autocomplete="off" aria-label="Maghanap"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> isara</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> mag-navigate</span><span><kbd>Enter</kbd> buksan</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" integrity="sha256-Y0txeCfdk+GUctTYMAxMbFCB2qs1cPm8JSIX3WRS9cs= sha256-5Ca5zk/7tsavsCDhg6M1m4feBn+L4YnJ7iavKawynII=" crossorigin="anonymous"></script>
+</div>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"CloudCDN: Open-Source na Blueprint para sa AI-Native Edge sa 2026","url":"https://sebastienrousseau.com/fil/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/","inLanguage":"fil-PH","isAccessibleForFree":true,"author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#organization"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/fil/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/"},"keywords":"CloudCDN, AI-native edge, open-source CDN, MCP server, Cloudflare Workers, Durable Objects, signed URLs, passkeys, SLSA, imprastraktura ng edge","proficiencyLevel":"Expert"}</script></body>
+</html>

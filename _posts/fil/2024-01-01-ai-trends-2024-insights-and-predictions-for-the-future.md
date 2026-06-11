@@ -1,5 +1,6 @@
 ---
 title: "اتّجاهات الذكاء الاصطناعي 2024: رؤى وتوقّعات للمستقبل"
+tags: "AI, 2024, Trends, generative AI, cybersecurity, Education, Retail, Ethics, Analytics, Innovation, ISO 20022, post-quantum cryptography, quantum computing, open source, Rust"
 subtitle: "عام محوري للتقنية والمجتمع والتطوّر الأخلاقي"
 description: "اتّجاهات الذكاء الاصطناعي لعام 2024: الذكاء الاصطناعي التوليدي في التمويل، النماذج متعدّدة الوسائط، النماذج اللغوية على الأجهزة، والتحوّلات التي ستُعيد تشكيل القطاع المصرفي وهندسة المنتجات."
 date: "Jan 08, 2024"

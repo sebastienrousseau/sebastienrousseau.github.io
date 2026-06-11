@@ -41,7 +41,7 @@ revisit-after: "7 days"
 robots: "index, follow"
 short_name: "sebastienrousseau"
 subtitle: "Shaping the Future of Banking and Financial Services through Strategic Integration of Artificial Intelligence, Post-Quantum Cryptography & Blockchain Technology"
-tags: "payments technology, digital finance, artificial intelligence, post-quantum cryptography, blockchain technology, strategic leadership, operational leadership, cross-platform product design, engineering, solution architecture"
+tags: "payments, digital finance, AI, post-quantum cryptography, blockchain, strategic leadership, operational leadership, cross-platform product design, engineering, solution architecture, ISO 20022, Rust, open source"
 theme-color: "0, 67, 165"
 title: "Sebastien Rousseau: AI, Banking & Financial Services Expert"
 url: "https://sebastienrousseau.com/about"
@@ -115,14 +115,8 @@ Sebastien’s diverse experience in banking, financial services, communications,
 ## Identifiers and credentials
 
 <dl class="author-ids">
-<!--
-TODO(seb): register an ORCID iD at https://orcid.org/register, replace the
-href + visible text below, then remove this comment. ORCID is the
-researcher-identifier equivalent of a Knowledge-Graph anchor — Google /
-Crossref / EUR ePub / IEEE cross-walk a profile back to publications.
--->
 <dt>ORCID iD</dt>
-<dd><a href="https://orcid.org/" rel="external me noopener">Pending registration</a></dd>
+<dd><a href="https://orcid.org/0009-0005-1434-284X" rel="external me noopener">0009-0005-1434-284X</a></dd>
 <dt>GitHub</dt>
 <dd><a href="https://github.com/sebastienrousseau" rel="external me noopener">github.com/sebastienrousseau</a></dd>
 <dt>LinkedIn</dt>
@@ -155,5 +149,9 @@ Brands Sebastien has worked with along the way.
 </div>
 
 ![divider][divider].class=\"m-10 w-100\"
+
+## Bot policy
+
+All crawlers welcome — search engines, social link-preview, SEO, AI retrieval and AI training — under [CC BY-4.0](https://creativecommons.org/licenses/by/4.0/). Operational detail (named crawler categories, machine-readable surfaces, opt-out path) lives at [`/editorial/#bot-policy`](/editorial/#bot-policy); machine-actionable rules at [`/robots.txt`](/robots.txt) and [`/llms.txt`](/llms.txt).
 
 [divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Divider"

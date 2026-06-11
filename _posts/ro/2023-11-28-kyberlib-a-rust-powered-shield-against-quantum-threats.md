@@ -1,5 +1,6 @@
 ---
 title: "KyberLib: Rust CRYSTALS-Kyber for Post-Quantum"
+tags: "KyberLib, Rust, CRYSTALS-Kyber, criptografie post-cuantică, lattice-based cryptography, key encapsulation mechanism, NIST, libsignal, cryptography, ISO 20022, calcul cuantic, AI"
 subtitle: "KyberLib, o implementare Rust robustă a CRYSTALS-Kyber pentru era cuantică."
 description: "O implementare robustă și sigură față de amenințările cuantice a algoritmului CRYSTALS-Kyber, pentru a proteja datele dvs. de atacurile cuantice și criptanalitice."
 date: "Nov 28, 2023"
@@ -124,4 +125,3 @@ Additionally, KyberLib's WebAssembly compatibility enhances its utility in web a
 [07]: https://kyberlib.com/ "Privacy and Security in a Quantum World"
 
 [divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Divider"
-

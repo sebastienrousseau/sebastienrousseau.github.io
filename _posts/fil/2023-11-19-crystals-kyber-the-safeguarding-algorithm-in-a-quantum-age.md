@@ -1,5 +1,6 @@
 ---
 title: "CRYSTALS-Kyber: خوارزمية الحماية في العصر الكمي"
+tags: "quantum, CRYSTALS-Kyber, encryption, cybersecurity, banking, finance, data, future, post-quantum cryptography, cryptography, ISO 20022, DORA, quantum computing, AI, Rust"
 subtitle: "CRYSTALS-Kyber، معيار NIST FIPS 203 لتغليف المفاتيح ما بعد الكمي."
 description: "اكتشفوا كيف تُحدِث CRYSTALS-Kyber، خوارزمية تشفير مقاومة للحوسبة الكمية، ثورةً في عالم التشفير وتُهيّئنا للعصر الكمي."
 date: "Nov 19, 2023"

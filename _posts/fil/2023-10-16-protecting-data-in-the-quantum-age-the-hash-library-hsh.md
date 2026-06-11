@@ -1,5 +1,6 @@
 ---
 title: "حماية البيانات في عصر الكم: مكتبة الهاش (HSH)"
+tags: "post-quantum cryptography, hash library, HSH, password hashing, key derivation, Argon2i, Bcrypt, Scrypt, quantum computing, ISO 20022, AI, Rust, open source"
 subtitle: "HSH: مكتبة هاش مقاومة للحوسبة الكمية لعصر ما بعد الكم في المصادقة."
 description: "تستخدم HSH أوليات تشفيرية مقاومة للحوسبة الكمية لحماية بياناتكم، وضمان أمنها حتى في مواجهة التقدمات المستقبلية للحوسبة الكمية."
 date: "Oct 16, 2023"

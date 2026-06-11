@@ -1,5 +1,6 @@
 ---
 title: "CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age"
+tags: "quantum, CRYSTALS-Kyber, encryption, cybersecurity, banking, finance, data, future, post-quantum cryptography, cryptography, ISO 20022, DORA, quantum computing, AI, Rust"
 subtitle: "CRYSTALS-Kyber, ma'aunin NIST FIPS 203 don keɓance makulli bayan-quantum."
 description: "Gano yadda CRYSTALS-Kyber, algorithm na cryptography mai tsayayya da quantum, ke canza duniyar cryptography tana shirya mu don zamanin quantum."
 date: "Nov 19, 2023"
@@ -191,4 +192,3 @@ Thank you again for your time and I look forward to hearing from you.
 [03]: /2023-10-16-protecting-data-in-the-quantum-age-the-hash-library-hsh/index.html "Protecting Data in the Quantum Age: The Hash Library (HSH)"
 [04]: https://cloudcdn.pro/stocks/diagrams/alice-bob-eve-kyber.svg "CRYSTALS-Kyber Key Encapsulation Mechanism (KEM)"
 [05]: https://www.nist.gov/ "The National Institute of Standards and Technology (NIST)"
-

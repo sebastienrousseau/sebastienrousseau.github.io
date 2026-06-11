@@ -433,4 +433,3 @@ Een **cloud consumer** koopt de zes pijlers in bij hyperscalers met minimale int
 
 <!-- enrich-start -->
 <!-- enrich-end -->
-

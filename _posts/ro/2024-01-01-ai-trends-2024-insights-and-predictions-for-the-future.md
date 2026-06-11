@@ -1,5 +1,6 @@
 ---
 title: "AI Trends 2024: Insights and Predictions for the Future"
+tags: "AI, 2024, Trends, IA generativă, cybersecurity, Education, Retail, Ethics, Analytics, Innovation, ISO 20022, criptografie post-cuantică, calcul cuantic, open source, Rust"
 subtitle: "Un An Decisiv pentru Tehnologie, Societate și Evoluție Etică"
 description: "Tendințe AI 2024: AI generativ în finanțe, modele multimodale, LLM-uri pe dispozitiv și schimbările care vor redefini sectorul bancar și ingineria produselor."
 date: "Jan 08, 2024"
@@ -189,4 +190,3 @@ However, as we embrace AI, we must also be mindful of the ethical implications a
 In conclusion, 2024 is poised to be a year where AI not only continues to evolve but also profoundly impacts our lives and work. The potential of AI is boundless, and its responsible integration across sectors promises a future that is more efficient, creative, and sustainable. As we navigate this AI-driven era, it is incumbent upon us to harness its power wisely, ensuring that it serves the greater good and propels humanity towards a brighter, more innovative future.
 
 [divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Divider"
-
