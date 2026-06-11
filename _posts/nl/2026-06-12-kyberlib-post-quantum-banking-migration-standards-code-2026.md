@@ -1,6 +1,6 @@
 ---
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
-banner_alt: "Luchtfoto van de City of London bij schemering — symbool voor de post-quantum-migratie die banken moeten doorlopen, van NIST-standaarden naar inspecteerbare cryptografische code"
+banner_alt: "Luchtfoto van de City of London bij schemering — symbool voor de post-quantum-migratie die banken moeten uitvoeren, van NIST-standaarden naar inspecteerbare cryptografische code"
 banner_height: "1597"
 banner_width: "2584"
 banner: "https://cloudcdn.pro/stocks/images/ben-o-bro-wpU4veNGnHg.webp"
@@ -9,7 +9,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2025 - 2026 - Sebastien Rousseau. Alle rechten voorbehouden."
 date: "12 juni 2026"
-description: "KyberLib laat zien hoe post-quantum-cryptografie van NIST-standaarden en bancaire migratieprogramma's naar inspecteerbare Rust-code beweegt."
+description: "KyberLib vertaalt de post-quantum-migratie van banken naar inspecteerbare, geheugenveilige Rust — FIPS 203 ML-KEM, hybride handshakes en crypto-agile grenzen."
 format-detection: "telephone=no"
 hreflang: "nl"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -18,7 +18,7 @@ image_alt: "Zwart-witportret van Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
 image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
-keywords: "KyberLib, post-quantum-cryptografie, CRYSTALS-Kyber, ML-KEM, PQC banken, quantum-veilig bankieren, Rust-cryptografie"
+keywords: "KyberLib, post-quantum-cryptografie, ML-KEM, FIPS 203, CRYSTALS-Kyber, crypto-agility, hybride sleuteluitwisseling, Rust-cryptografie, store now decrypt later, DORA, NIST SP 1800-38, quantum-veilig bankieren"
 language: "nl"
 last_reviewed: "2026-05-29"
 layout: "report"
@@ -35,11 +35,11 @@ rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
 schema: "FAQPage, Article"
-seo_title: "KyberLib en de post-quantum-migratie van banken in 2026"
+seo_title: "KyberLib en de post-quantum-migratie van banken"
 short_name: "sebastienrousseau"
 slug: "2026-06-12-kyberlib-post-quantum-migratie-banken-standaarden-code-2026"
-subtitle: "Post-quantum-migratie vraagt meer dan beleidsnota's; het vraagt bibliotheken, tests, API's en crypto-flexibele engineeringpatronen die ontwikkelaars kunnen inspecteren."
-tags: "KyberLib, post-quantum-cryptografie, quantum-veilig bankieren, Rust, ML-KEM, CRYSTALS-Kyber"
+subtitle: "Bancaire cryptografie verplaatsen van legacy-RSA en -ECC naar door NIST gestandaardiseerde post-quantum-primitieven via inspecteerbare, geheugenveilige, crypto-agile Rust."
+tags: "KyberLib, post-quantum-cryptografie, quantum-veilig bankieren, Rust, ML-KEM, FIPS 203, CRYSTALS-Kyber, crypto-agility, hybride sleuteluitwisseling, SNDL, DORA, SR 11-7, Basel III, open source"
 theme-color: "0, 83, 191"
 title: "KyberLib en de post-quantum-migratie van banken in 2026: van standaarden naar code"
 url: "https://sebastienrousseau.com/nl/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026"
@@ -48,7 +48,7 @@ atom_link: "https://sebastienrousseau.com/2026-06-12-kyberlib-post-quantum-banki
 category: "Security"
 docs: "https://validator.w3.org/feed/docs/rss2.html"
 generator: "Static Site Generator (SSG) (version 0.0.26)"
-item_description: "KyberLib laat zien hoe post-quantum-cryptografie van NIST-standaarden en bancaire migratieprogramma's naar inspecteerbare Rust-code beweegt."
+item_description: "KyberLib vertaalt de post-quantum-migratie van banken naar inspecteerbare, geheugenveilige Rust — FIPS 203 ML-KEM, hybride handshakes en crypto-agile grenzen."
 item_guid: "https://sebastienrousseau.com/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/rss.xml"
 item_link: "https://sebastienrousseau.com/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/rss.xml"
 item_pub_date: "Fri, 12 Jun 2026 06:06:06 +0000"
@@ -69,13 +69,13 @@ apple-touch-fullscreen: "yes"
 msapplication-navbutton-color: "0, 83, 191"
 twitter_card: "summary_large_image"
 twitter_creator: "@wwdseb"
-twitter_description: "KyberLib laat zien hoe post-quantum-cryptografie van NIST-standaarden en bancaire migratieprogramma's naar inspecteerbare Rust-code beweegt."
+twitter_description: "KyberLib vertaalt de post-quantum-migratie van banken naar inspecteerbare, geheugenveilige Rust — FIPS 203 ML-KEM, hybride handshakes en crypto-agile grenzen."
 twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 twitter_image_alt: "Logo van Sebastien Rousseau"
 twitter_site: "@wwdseb"
 twitter_title: "KyberLib en de post-quantum-migratie van banken"
 twitter_url: "https://sebastienrousseau.com/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026"
-excerpt: "KyberLib maakt van de post-quantum-migratie van banken een inspecteerbaar Rust-vraagstuk — ML-KEM-sleutel-encapsulatie, hybride uitrol, crypto-flexibiliteit, no_std-targets en HSM-klare API's die banken kunnen auditen."
+excerpt: "KyberLib vertaalt de post-quantum-migratie van banken van beleidsnota naar inspecteerbare Rust — FIPS 203 ML-KEM-sleutel-encapsulatie, hybride klassiek-plus-quantum-handshakes, no_std-compilatie voor HSM's, crypto-agile abstractiegrenzen en het governancebewijs dat besturen onder DORA artikel 5 nodig hebben."
 author_website: "https://sebastienrousseau.com"
 author_twitter: "@wwdseb"
 author_location: "London, UK"
@@ -88,122 +88,179 @@ site_software: "Static Site Generator, Rust"
 
 # KyberLib en de post-quantum-migratie van banken in 2026: van standaarden naar code
 
-<!-- lead-start -->
-<aside class="lead" aria-label="In één oogopslag">
 
-**TL;DR.** Post-quantum-migratie in het bankwezen is geen beleidsvraagstuk meer — NIST heeft ML-KEM, ML-DSA en SLH-DSA gestandaardiseerd, toezichthouders zetten de klok aan en "nu oogsten, later ontsleutelen" maakt van de TLS-sessies van vandaag de blootstelling van morgen. KyberLib geeft banken een open source, in Rust geïmplementeerde referentie voor CRYSTALS-Kyber / ML-KEM die draait op `no_std`-targets, hybride uitrol ondersteunt en als code te auditen valt in plaats van als leveranciersclaim te moeten worden vertrouwd.
-
-**Belangrijkste punten:**
-
-- **De standaarden staan vast.** FIPS 203 (ML-KEM), 204 (ML-DSA) en 205 (SLH-DSA) zijn definitief. Het resterende werk is engineering, geen selectie.
-- **Migratie is een codevraagstuk.** Inventarisatie, sleutel-encapsulatie, hybrid TLS, HSM-compatibiliteit en crypto-flexibiliteit — alles in bibliotheken, niet in beleidsmemo's.
-- **Hybride uitrol is de brug.** Klassieke algoritmen en ML-KEM samen houden defence-in-depth overeind terwijl de post-quantum-stack rijpt.
-- **Crypto-flexibiliteit is het enige duurzame antwoord.** Code die aan één algoritme vastzit, is de technische schuld van het komende decennium.
-- **Open source is het vertrouwensmechanisme.** Een gereguleerde instelling kan KyberLib's tests, KAT's en garanties voor constante tijd zelf lezen in plaats van te vertrouwen op leveranciers-PDF's.
-
-**Verwante lectuur:** [Quantum-cryptografiestandaarden 2026](/2026-05-18-quantum-cryptography-standards-developments-2026/) · [DORA + AI Act compliance-stack](/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/) · [Cloud-native bankieren](/2026-05-20-cloud-native-banking-financial-institutions-2026/)
-
+<!-- lead-start: manual -->
+<aside class="post-lead" aria-label="Samenvatting artikel">
+<p class="post-lead-tldr"><strong>TL;DR.</strong> De bancaire infrastructuur staat in 2026 tegenover een systemische dreiging met een bekend eindpunt: rekenkracht op quantumschaal breekt de RSA- en ECC-sleuteluitwisseling die het transitverkeer van vandaag beschermt. Federale standaarden en toezichtnota's hebben het bewustzijn vergroot; de technische uitvoering blijft versnipperd. <a href="https://github.com/sebastienrousseau/kyberlib">KyberLib</a> is een open source-engineeringblauwdruk die het post-quantum-verhaal vertaalt naar concrete, geheugenveilige Rust-code — met een implementatie van door NIST gestandaardiseerde ML-KEM (FIPS 203) achter crypto-agile abstractiegrenzen, zodat instellingen transportbeveiliging en sleutel-encapsulatie kunnen opwaarderen voordat "Store Now, Decrypt Later"-aanvallen hun archieven bereiken.</p>
+<p class="post-lead-heading"><strong>Belangrijkste punten</strong></p>
+<ul class="post-lead-takeaways">
+  <li><strong>Van beleid naar inspecteerbare code.</strong> KyberLib verplaatst post-quantum-cryptografie van abstracte strategische roadmaps naar concrete, hoogperformante, auditeerbare Rust-implementaties.</li>
+  <li><strong>Gestandaardiseerde FIPS 203 ML-KEM-uitvoering.</strong> De bibliotheek implementeert ML-KEM — het sleutelvaststellingsalgoritme dat onder NIST FIPS 203 definitief is gemaakt — en houdt conformiteit in lijn met mondiale toezichtverwachtingen.</li>
+  <li><strong>Crypto-agility by design.</strong> Stabiele abstractiegrenzen laten bankapplicaties cryptografische primitieven wisselen zonder dure, foutgevoelige herschrijvingen van applicaties.</li>
+  <li><strong>Geheugenveiligheid op Rust-niveau.</strong> Eigenaarschapsregels op compileertijd elimineren de bufferoverflows en geheugenlekken die legacy C-cryptobibliotheken teisteren, op zero-cost-abstractiesnelheid.</li>
+  <li><strong>Beperking van fiduciaire aansprakelijkheid.</strong> Observeerbaar, testbaar migratiebewijs geeft bestuurders het "redelijke stappen"-dossier dat persoonlijke-aansprakelijkheidsaudits onder DORA artikel 5 vereisen.</li>
+</ul>
+<p class="post-lead-related"><strong>Verwante artikelen:</strong> <a href="/2026-05-18-quantum-cryptography-standards-developments-2026/">Quantum-cryptografiestandaarden 2026</a>, <a href="/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/">DORA + AI Act compliance-stack</a>, <a href="/2026-05-20-cloud-native-banking-financial-institutions-2026/">Cloud-native bankieren</a>.</p>
 </aside>
 <!-- lead-end -->
 
-KyberLib is het juiste open source-project om het post-quantum-verhaal in het bankwezen te verbinden met daadwerkelijke code. Banken hebben nu NIST-standaarden om naar te plannen, maar migratie zal mislukken als zij gevangen blijft in beleidstaal. Het harde werk zit in bibliotheken, API's, sleutel-encapsulatie, hybride uitrol, tests, HSM-compatibiliteit en crypto-flexibiliteit.
-
-Het open source-referentiepunt voor dit artikel is [kyberlib ⧉](https://github.com/sebastienrousseau/kyberlib "kyberlib"). De repository profileert zich als een Rust-bibliotheek voor CRYSTALS-Kyber post-quantum-cryptografie, gepositioneerd rond post-quantum-KEM's, no_std-ondersteuning, quantumcryptografie en het ontwerp van cryptografische bibliotheken.
+De post-quantum-migratie is geen planningsoefening meer. In 2026 is zij een actieve operationele vereiste, en de kloof tussen regelgevende intentie en technische uitvoering is waar het risico nu zit. [KyberLib ⧉](https://github.com/sebastienrousseau/kyberlib "kyberlib") dicht een deel van die kloof: een productiegerichte, geheugenveilige Rust-bibliotheek die ML-KEM implementeert volgens de definitieve FIPS 203-parameters en haar verpakt in de crypto-agile grenzen die de transactionele omgeving van een bank werkelijk nodig heeft.
 
 ---
 
 > **Managementsamenvatting / belangrijkste punten**
 >
-> - **KyberLib maakt van PQC een engineeringgesprek.** Het geeft ontwikkelaars een concrete Rust-bibliotheek rond CRYSTALS-Kyber in plaats van een puur strategisch migratiethema.
-> - **NIST heeft de startlijn helder gemaakt.** FIPS 203 standaardiseert ML-KEM voor sleutelvaststelling, afgeleid van de CRYSTALS-Kyber-familie.
-> - **Banken hebben crypto-flexibiliteit nodig.** Het duurzame doel is het vermogen om primitieven te wisselen zonder applicaties te herschrijven.
-> - **Open source-PQC-bibliotheken helpen educatie en toezicht.** Ontwikkelaars kunnen inspecteren hoe de primitieven worden verpakt, getest en blootgesteld.
-> - **Het artikel slaat een brug tussen standaarden en implementatie.** Het verbindt het bredere quantum-veilige bankschrijven met een repository die lezers kunnen bestuderen.
+> - **De dreiging is al operationeel.** Tegenstanders voeren vandaag "Store Now, Decrypt Later"-harvesting uit; datavertrouwelijkheid faalt met terugwerkende kracht op de dag dat een cryptografisch relevante quantumcomputer arriveert.
+> - **De standaarden zijn definitief.** NIST FIPS 203 (ML-KEM) en FIPS 204 (ML-DSA) geven auditcommissies een helder, testbaar ijkpunt — het verweer "wachten op standaarden" bestaat niet meer.
+> - **KyberLib is de engineeringblauwdruk.** Geheugenveilige Rust, `no_std`-compilatie voor HSM's en smartcards, en hybride handshake-patronen die klassieke interoperabiliteit behouden.
+> - **Crypto-agility is het duurzame doel.** Stabiele abstractiegrenzen laten primitieven veranderen zonder applicatieherschrijvingen — de les die elk afzonderlijk algoritme overleeft.
+> - **Besturen dragen de aansprakelijkheid.** DORA artikel 5 legt persoonlijke verantwoordelijkheid bij bestuurders; inspecteerbare, observeerbare migratiecode is het bewijs dat daaraan voldoet.
 >
 ---
 
 ## Waarom dit open source-project er in 2026 toe doet
 
-De strategische waarde van open source is in 2026 niet langer beperkt tot transparantie, hergebruik of welwillendheid van ontwikkelaars. Voor banken en financiële instellingen is open source-infrastructuur een manier geworden om aannames te inspecteren, controles te testen, leveranciersondoorzichtigheid te verminderen en architectuurclaims te vertalen naar code die gelezen, geforkt, gehard en geëxploiteerd kan worden. De nuttigste projecten zijn geen demo's. Het zijn referentie-implementaties die laten zien hoe beveiliging, toegankelijkheid, prestaties, compliance en ontwikkelaarservaring samenkomen.
+Nu asymmetrische cryptografie haar einde nadert, wacht de dreiging niet tot een cryptografisch relevante quantumcomputer is gebouwd. Tegenstanders voeren nu **"Store Now, Decrypt Later" (SNDL)**-aanvallen uit — zij oogsten versleutelde transitstromen van zakelijke banktransacties, handelsgeheimen en institutionele communicatie met de intentie die te ontsleutelen zodra quantumcapaciteiten volwassen zijn. Voor een bank is elke klassieke handshake die vandaag over de lijn gaat een vertrouwelijkheidsinbreuk met een uitgestelde ontploffingsdatum.
 
-Door die bril moet kyberlib worden gelezen. Het is niet enkel een repository; het is een concreet ontwerpargument. Het stelt dat kritieke infrastructuur auditeerbaar, samenstelbaar, gedocumenteerd, testbaar en begrijpelijk hoort te zijn voor de mensen die ervan afhankelijk zijn. In de financiële sector telt dat omdat systemen steeds vaker zitten op het kruispunt van agentic AI, realtime betalingen, post-quantum-cryptografie, cloud-native veerkracht, gestructureerde data en regelgevend bewijs.
+Toezichthouders hebben gereageerd met concrete verplichtingen:
 
-## Architectuurlens
+1. **DORA artikel 6 (ICT-risicobeheer)** verplicht instellingen kwetsbaarheden in hun cryptografische omgeving in kaart te brengen, te identificeren en te mitigeren — inclusief de asymmetrische sleuteluitwisseling die begraven ligt in middleware die niemand heeft geïnventariseerd.
+2. **NIST FIPS 203 en 204** vestigen de officiële post-quantum-standaarden voor sleutel-encapsulatie (ML-KEM) en digitale handtekeningen (ML-DSA), en geven auditcommissies een gestandaardiseerd ijkpunt waaraan zij migratievoortgang afmeten.
+
+Deze migratie uitvoeren zonder lopende operaties te verstoren, vraagt meer dan beleidsnota's: het vraagt **inspecteerbare, open source cryptografische infrastructuur**. [KyberLib ⧉](https://github.com/sebastienrousseau/kyberlib "kyberlib") levert precies dat: een geheugenveilige Rust-bibliotheek conform FIPS 203 die de post-quantum-transitie omzet in een meetbare, verifieerbare engineeringpijplijn — en het gesprek over technologie-investeringen verschuift naar een tastbare Return on Resilience.
+
+## De architectuurlens
+
+KyberLib zit achter stabiele API-grenzen en schermt de transactionele kernapplicaties van een bank af van veranderingen in laag-niveau cryptografische primitieven.
 
 | Laag | Ontwerpkeuze | Waarom het ertoe doet | Risico bij verkeerde aanpak |
 |---|---|---|---|
-| **Primitief** | CRYSTALS-Kyber / ML-KEM-achtige sleutel-encapsulatie | Adresseert de quantumdreiging voor klassieke sleuteluitwisseling | Onjuist gebruik van parameter of API |
-| **Taal** | Implementatie in Rust | Geheugenveiligheid en moderne systeemintegratie | Onveilige bindings of zwakke afhankelijkhedenhygiëne |
-| **Uitrol** | Hybride migratiepatronen | Maakt gefaseerde adoptie naast klassieke algoritmen mogelijk | Verbroken interoperabiliteit |
-| **Assurance** | Tests, voorbeelden en documentatie | Maakt cryptografisch gebruik makkelijker te verifiëren | Veiligheidstheater zonder implementatiebewijs |
-| **Bankgeschiktheid** | Crypto-flexibele bibliotheekgrens | Ondersteunt migratie door primitieven achter stabiele interfaces te vervangen | Vastgepinde algoritmen door applicaties heen |
+| **Primitief** | FIPS 203 ML-KEM-sleutel-encapsulatie | Vervangt klassieke Diffie-Hellman- en RSA-sleuteluitwisseling door op roosters gebaseerde structuren | Non-conformiteit met de definitieve FIPS 203-parameters, met gefaalde compliance-audits tot gevolg |
+| **Taal** | Geheugenveilige Rust-implementatie | Elimineert de geheugencorruptiekwetsbaarheden (bufferoverflows, use-after-free) die endemisch zijn in C/C++ | Wildgroei aan afhankelijkheden die de integriteit van de buildketen ondermijnt |
+| **Abstractie** | Stabiele crypto-agile grenzen | Applicaties wisselen algoritmen achter één uniforme interface terwijl standaarden evolueren | Hard gecodeerde primitieven die bij elke toekomstige migratie handmatige herschrijvingen afdwingen |
+| **Uitrol** | Hybride encryptie-handshakes | Combineert post-quantum-KEM's met klassieke algoritmen in een dubbel gewikkelde envelop | Verlies van legacy-interoperabiliteit of stille configuratiedrift |
+| **Assurance** | SLSA Level 3-herkomst en inspecteerbare tests | Garandeert codebron en herkomst; voorbeelden zijn regel voor regel te auditen | Veiligheidstheater — black-box-bibliotheken waarvan implementatiefouten pas in productie opduiken |
 
-## Signalen om te volgen
+## Operationele signalen om te volgen
 
-| Signaal | Wat het betekent | Referentie |
-|---|---|---|
-| **NIST FIPS 203** | ML-KEM is de aangewezen standaard voor sleutel-encapsulatie | [NIST ⧉](https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards "NIST PQC-standaarden") |
-| **KyberLib-repository** | Het project levert een concrete open source-implementatiefocus in Rust | [kyberlib ⧉](https://github.com/sebastienrousseau/kyberlib "KyberLib-repository") |
-| **Onderwerp post-quantum-KEM** | De repo zit rechtstreeks in het PQC-migratiedomein | [kyberlib ⧉](https://github.com/sebastienrousseau/kyberlib "KyberLib-repository") |
-| **Onderwerp no_std** | Potentiële relevantie voor embedded en beperkte omgevingen | [kyberlib ⧉](https://github.com/sebastienrousseau/kyberlib "KyberLib-repository") |
-| **Cryptografische inventarisatie van de bank** | Migratie begint bij vaststellen waar sleuteluitwisseling plaatsvindt | [NIST ⧉](https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards "NIST PQC-standaarden") |
+Post-quantum-compliance aantonen tegenover raden van toezicht en toezichthouders betekent specifieke, kwantificeerbare metrieken volgen:
 
-## Van standaarden naar migratiewerk
+| Signaal | Metriek | Regelgevende referentie | Platformimplementatie |
+|---|---|---|---|
+| **FIPS 203 ML-KEM-conformiteit** | 100% naleving van de definitieve parameters (ML-KEM-512/768/1024) | NIST FIPS 203 | Parameter-geverifieerde roostercryptografie gecompileerd binnen KyberLib-modules |
+| **Cryptografische inventaris** | Volledige inventaris van het gebruik van asymmetrische sleuteluitwisseling in alle systemen | NIST SP 1800-38 | Geautomatiseerde scanagents die actieve ciphersuites loggen in een centraal register |
+| **Hybride sleuteluitwisseling** | Percentage transportlaag-handshakes dat in een hybride envelop draait | DORA artikel 6 | Netwerkproxy's die klassieke TLS 1.3-handshakes wikkelen in PQC-encapsulatie |
+| **`no_std`-compilatie** | Vermogen om zonder de standaardbibliotheek van Rust te compileren voor beperkte targets | DORA artikel 30 | Conditionele `no_std`-compilatie in KyberLib voor Hardware Security Modules |
+| **Crypto-agility-index** | Tijd in minuten om een cryptografisch primitief te wisselen over de API-gateway | UK PRA SS1/23 | Geabstraheerde routeringsregisters die algoritmetoewijzing beheren via runtimevariabelen |
 
-NIST-standaarden zetten de richting, maar vervangen het engineeringwerk niet. Een bank moet nog steeds cryptografische afhankelijkheden in kaart brengen, implementaties valideren, prestaties testen, leveranciersgereedheid controleren en hybride uitrollen ontwerpen. KyberLib helpt omdat het één deel van die migratie tastbaar maakt.
+## Waarom Rust ertoe doet voor post-quantum-cryptografie
 
-## Waarom Rust ertoe doet voor PQC
+Het implementeren van post-quantum-algoritmen zoals ML-KEM vereist complexe, laag-niveau wiskundige bewerkingen op polynoomringen. Historisch betekende het op productiesnelheid draaien van die bewerkingen handgeschreven C/C++ of assembly — een groot aanvalsoppervlak voor geheugencorruptie, in precies de code waar een bank zich het minst een fout kan veroorloven.
 
-Rust is aantrekkelijk voor cryptografische infrastructuur omdat geheugenveiligheid, verpakkingsdiscipline en prestaties op systeemniveau er allemaal toe doen. Een PQC-bibliotheek moet moeilijk te misbruiken zijn, eenvoudig te testen en helder over parameterkeuzes. KyberLib werkt als voorbeeld van hoe cryptografische primitieven op laag niveau onderdeel kunnen worden van een breder bancair migratieplan.
+Rust verandert de beveiligingspositie van cryptografische engineering op drie concrete manieren:
 
-## De les van crypto-flexibiliteit
+1. **Geheugenveiligheid op compileertijd.** Het eigenaarschapsmodel van Rust garandeert dat bufferoverflows, double frees en use-after-free-fouten op compileertijd worden voorkomen. Dat telt extra zwaar voor post-quantum-bibliotheken, waar sleutelgroottes en ciphertexts aanzienlijk groter zijn dan hun klassieke tegenhangers.
+2. **Deterministische, zero-cost abstracties.** Rust compileert naar native machinecode zonder garbage collector, zodat uitvoeringssnelheid en geheugenvoetafdruk C-bibliotheken evenaren of overtreffen met behoud van veiligheid.
+3. **`no_std`-compatibiliteit.** KyberLib compileert zonder de standaardbibliotheek van Rust en draait dus in beperkte, bare-metal-omgevingen — Hardware Security Modules en smartcards inbegrepen — zodat cryptografie van bancaire kwaliteit binnen fysieke beveiligingsgrenzen blijft.
 
-Het punt is niet dat één bibliotheek enterprise-migratie oplost. De les is dat banken abstractiegrenzen nodig hebben. Applicaties mogen cryptografische aannames niet hardcoden. Zij horen goed beoordeelde bibliotheken aan te roepen via interfaces die kunnen meegroeien met standaarden, certificering en implementatiebegeleiding.
+## Een crypto-agile architectuur ontwerpen
 
-## Wat dit betekent per doelgroep
+De klassieke faalwijze bij cryptografische migraties is hardcoderen: algoritmespecifieke aannames rechtstreeks ingebed in applicatielogica, bij elke transitie opnieuw pijnlijk herontdekt. Het duurzame doel voor 2026 is **crypto-agility** — een abstractielaag die algoritmen behandelt als verwisselbare modules achter een stabiele interface, zodat de volgende migratie een configuratiewijziging is in plaats van een herschrijving van het hele applicatiepark.
 
-### Voor banktechnologieleiders
+De sequentie hieronder toont hoe de crypto-agile wrapper van KyberLib een hybride (klassiek plus post-quantum) sleuteluitwisselings-handshake coördineert:
 
-De vraag is of het project strategische druk kan omzetten in uitvoerbare architectuur. De waarde is het sterkst wanneer de repository teams iets concreets geeft om te inspecteren: interfaces, configuratie, tests, beveiligingsgrenzen, uitrolaannames en faalmodi.
+```mermaid
+sequenceDiagram
+    autonumber
+    participant App as Kernbankapplicatie
+    participant Agile as Crypto-agile wrapper
+    participant Classical as Klassieke engine (ECDH)
+    participant PQC as Post-quantum-KEM (ML-KEM)
+    participant Peer as Tegenpartij-API / grootboek
+    App->>Agile: Start beveiligde sessie (clientcontext)
+    activate Agile
+    Note over Agile: Onderhandelt het beveiligingsbeleid<br/>en kiest de hybride handshake
+    Agile->>Classical: Genereer klassiek publiek sleuteldeel
+    activate Classical
+    Classical-->>Agile: ECDH publiek deel (C_pub)
+    deactivate Classical
+    Agile->>PQC: Genereer quantum-veilig publiek sleuteldeel
+    activate PQC
+    PQC-->>Agile: ML-KEM publiek deel (Q_pub)
+    deactivate PQC
+    Agile->>Agile: Bundel hybride sleuteldeel (C_pub || Q_pub)
+    Agile->>Peer: Verstuur hybride deel
+    activate Peer
+    Note over Peer: Verwerkt ECDH en ML-KEM<br/>en encapsuleert symmetrische geheimen
+    Peer-->>Agile: Retourneer ciphertexts (C_ct || Q_ct)
+    deactivate Peer
+    Agile->>Classical: Decapsuleer klassiek geheim
+    activate Classical
+    Classical-->>Agile: Klassiek sleutelmateriaal (K_class)
+    deactivate Classical
+    Agile->>PQC: Decapsuleer quantum-veilig geheim
+    activate PQC
+    PQC-->>Agile: Post-quantum-sleutelmateriaal (K_pqc)
+    deactivate PQC
+    Agile->>Agile: HKDF-Extract en HKDF-Expand (K_class || K_pqc)
+    Note over Agile: Leidt één quantum-veilige<br/>symmetrische sessiesleutel af (K_sess)
+    Agile-->>App: Beveiligde sessie tot stand gebracht (K_sess)
+    deactivate Agile
+```
 
-### Voor beveiligings- en risicoteams
+De hybride envelop is het operationeel belangrijke detail. Totdat post-quantum-primitieven jaren productie-ervaring hebben opgebouwd, wordt de sessiesleutel afgeleid van zowel het klassieke als het post-quantum-geheim: een aanvaller moet ECDH **en** ML-KEM breken om het kanaal te kraken. Tegenpartijen die nog niet zijn gemigreerd, blijven gewoon werken; tegenpartijen die dat wel zijn, krijgen onmiddellijk op roosters gebaseerde bescherming.
 
-Het project moet niet alleen op functies worden beoordeeld, maar op controlebewijs. Bruikbare open source-financiële infrastructuur legt bloot hoe identiteit, secrets, validatie, auditlogs, rate limits, handtekeningen, herkomst en herstel zijn bedoeld te werken.
+## Het draaiboek voor de bestuurskamer
 
-### Voor ontwikkelaars en platform engineers
+Post-quantum-beveiliging is geen encryptiekwestie voor de backoffice; het is een governancevraagstuk voor de bestuurskamer met persoonlijke inzet. Senior managers horen de migratie te framen via fiduciaire verantwoordelijkheid:
 
-De belangrijkste toets is of het project de cognitieve last verlaagt zonder essentiële mechanica te verbergen. Goede open source maakt het veilige pad het makkelijke pad en laat ervaren engineers toch toe de implementatie te begrijpen en aan te passen.
+- **DORA artikel 5 (governance en organisatie)** legt de persoonlijke verantwoordelijkheid voor ICT-beveiliging bij de raad van bestuur. Open source, observeerbare tests zijn het directe bewijs waar een persoonlijke-aansprakelijkheidsaudit om vraagt — "wij hebben een inspecteerbare FIPS 203-implementatie geselecteerd en dit zijn haar conformiteitsruns" is een verdedigbaar antwoord; "onze leverancier heeft ons gerustgesteld" is dat niet.
+- **Modelrisicobeheer (US Fed SR 11-7 / UK PRA SS1/23)** geldt evenzeer voor cryptografische wrapper-architecturen als voor pricingmodellen. Abstractielagen horen door MRM-validatie te gaan, inclusief prestaties onder extreme verstoringsscenario's.
+- **Operationeel-risicokapitaal onder Basel III** beloont aangetoonde controlematuriteit. Geteste hybride handshakes verlagen het operationele risicoprofiel van de instelling op lange termijn, drukken de kapitaalpremie en maken balanscapaciteit vrij voor actieve treasury-inzet.
 
-### Voor bijdragers
+## Wat dit betekent per banktype
 
-De kans ligt in het versterken van het project op punten waar echte instellingen assurance nodig hebben: documentatie, voorbeelden, conformiteitstests, CI-hardening, dreigingsmodellen, prestatieprofielen, toegankelijkheidscontroles en integratiegidsen.
+### Mondiaal systeemrelevante banken (G-SIB's)
 
-## Conclusie
+G-SIB's draaien transactionele omgevingen vol legacy, dus hun bindende beperking is ontdekking: weten waar asymmetrische sleuteluitwisseling daadwerkelijk plaatsvindt. Continue cryptografische inventarissen volgens de richtsnoeren van NIST SP 1800-38 komen eerst; KyberLib levert vervolgens de gestandaardiseerde, geheugenveilige bibliotheek om post-quantum-sleutel-encapsulatie uit te voeren op elk modern knooppunt dat de inventaris blootlegt.
 
-De reden om over kyberlib te schrijven, is dat het een breder sectorprobleem omzet in iets concreets. In 2026 hebben banken geen behoefte aan meer abstracte transformatietaal. Zij hebben inspecteerbare systemen nodig die laten zien hoe moderne infrastructuur kan worden gebouwd, beveiligd, getest en bestuurd. Open source is de meest geloofwaardige manier om dat argument zichtbaar te maken — en daarmee een gesprek dat zowel DNB als ECB graag op tafel zien bij elk migratiedossier.
+### Transactie- en corporate banken
+
+Vertrouwelijkheid over betaalrails is de franchise. Omdat KyberLib compileert naar bare-metal `no_std`-targets, kunnen transactiebanken post-quantum-handshakes rechtstreeks uitrollen binnen edge-hardware voor betalingsroutering en liquiditeitsbeheer — niet alleen in de applicatielaag.
+
+### Regionale en kleinere banken
+
+Regionale instellingen staan tegenover dezelfde staatsgesteunde harvesting zonder de onderzoeksbudgetten van een G-SIB. Een inspecteerbare, open source Rust-implementatie geeft hun onmiddellijk een kant-en-klaar pad naar NIST FIPS 203-conformiteit, zonder onderhandelingen over ondoorzichtige leveranciersroadmaps.
+
+## Van roadmaps naar compilerende code
+
+De post-quantum-transitie is een actieve engineeringtaak, en de instellingen die tot en met 2026 het vertrouwen van toezichthouders, tegenpartijen en corporate treasurers behouden, zijn de instellingen die van abstracte roadmaps naar observeerbare, compilerende code bewegen. Het bestuursmandaat volgt daar direct uit: auditeer de legacy-sleuteluitwisselingspunten, rol hybride handshakes uit op de kanalen met de hoogste waarde, en bouw de stabiele abstractiegrenzen die elke toekomstige primitiefwissel routinematig maken. KyberLib maakt van elk van die stappen een meetbare operationele capaciteit in plaats van een belofte op een slide.
 
 ## Veelgestelde vragen
 
-**Wat is KyberLib?**
+**Voldoet KyberLib aan de definitieve NIST-standaarden?**
 
-KyberLib is een open source Rust-project gericht op sleutel-encapsulatie in CRYSTALS-Kyber-stijl voor het post-quantum-tijdperk.
+Ja. KyberLib is ontworpen rond de parameters van ML-KEM zoals definitief gemaakt in FIPS 203, zodat de gecompileerde bibliotheek in lijn blijft met federale en mondiale toezichtverwachtingen.
 
-**Waarom is dit relevant voor banken?**
+**Vereist een post-quantum-bibliotheek gespecialiseerde hardware?**
 
-Banken zijn voor transportbeveiliging, identiteit, handtekeningen, betalingen, archieven en de vertrouwelijkheid van klantgegevens afhankelijk van cryptografie.
+Nee. De Rust-implementatie van KyberLib compileert naar standaard systeemarchitecturen. Haar `no_std`-capaciteit laat haar bovendien draaien op gespecialiseerde Hardware Security Modules en smartcards waar fysiek sleutelbeheer vereist is.
 
-**Lost een bibliotheek de PQC-migratie op?**
+**Hoe raakt "Store Now, Decrypt Later" de compliance van vandaag?**
 
-Nee. Het is één implementatielaag. Migratie vraagt daarnaast om inventarisatie, leveranciersmanagement, beleid, tests en governance.
+Als de transportlaag op klassieke RSA of ECC leunt, kunnen tegenstanders vandaag verkeer oogsten en het ontsleutelen zodra quantumcapaciteit volwassen is. Hybride sleuteluitwisseling die nu wordt uitgerold, houdt onderschepte data achter op roosters gebaseerde bescherming.
 
-**Wat zouden lezers moeten meenemen?**
+**Waarom hybride handshakes in plaats van direct overstappen op post-quantum-primitieven?**
 
-Dat post-quantum-migratie pas reëel wordt wanneer standaarden worden verbonden met code, API's, tests en operationele uitrolpatronen.
+Hybride enveloppen leiden de sessiesleutel af van zowel een klassiek als een post-quantum-geheim, zodat de beveiliging standhoudt tenzij beide worden gebroken. Dat behoudt interoperabiliteit met niet-gemigreerde tegenpartijen terwijl de nieuwe primitieven productie-ervaring opbouwen.
 
 ## Referenties
 
-- GitHub, (2026). [kyberlib-repository ⧉](https://github.com/sebastienrousseau/kyberlib "kyberlib-repository").
-- NIST, (2026). [De eerste drie definitieve post-quantum-encryptiestandaarden ⧉](https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards "De eerste drie definitieve post-quantum-encryptiestandaarden").
+- National Institute of Standards and Technology, (2024). [FIPS 203: Module-Lattice-Based Key-Encapsulation Mechanism Standard ⧉](https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards "NIST FIPS 203-aankondiging").
+- Board of Governors of the Federal Reserve System, (2011). [Supervisory Guidance on Model Risk Management (SR Letter 11-7) ⧉](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "Federal Reserve SR 11-7").
+- Europees Parlement en Raad van de Europese Unie, (2022). [Verordening (EU) 2022/2554 betreffende digitale operationele weerbaarheid voor de financiële sector (DORA) ⧉](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554 "DORA-verordening").
+- NIST National Cybersecurity Center of Excellence, (2025). [Migration to Post-Quantum Cryptography (NIST SP 1800-38) ⧉](https://www.nccoe.nist.gov/projects/migration-post-quantum-cryptography "NIST SP 1800-38").
+- GitHub, (2026). [kyberlib open source-repository ⧉](https://github.com/sebastienrousseau/kyberlib "kyberlib-repository").
 
 <!-- enrich-start -->
 <aside class="author-card" aria-label="Over de auteur"><img alt="Portret van Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist, schrijft over toegepaste AI, betalingsinfrastructuur, getokeniseerd geld, ISO 20022, post-kwantumbeveiliging, cloud-native financiële dienstverlening en gereguleerde digitale markten.</span><span class="author-credentials">Meer dan 20 jaar bij HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Volledig profiel</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>

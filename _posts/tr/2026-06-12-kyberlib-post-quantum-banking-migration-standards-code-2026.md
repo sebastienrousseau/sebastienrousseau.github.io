@@ -1,6 +1,6 @@
 ---
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
-banner_alt: "Alacakaranlıkta City of London'ın havadan görünümü — bankaların NIST standartlarından incelenebilir kriptografik koda doğru yürütmesi gereken kuantum sonrası geçişi simgeliyor"
+banner_alt: "Alacakaranlıkta City of London'ın havadan görünümü — bankaların NIST standartlarından incelenebilir kriptografik koda taşıması gereken kuantum sonrası geçişi simgeliyor"
 banner_height: "1597"
 banner_width: "2584"
 banner: "https://cloudcdn.pro/stocks/images/ben-o-bro-wpU4veNGnHg.webp"
@@ -9,21 +9,21 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "12 Haziran 2026"
-description: "KyberLib, kuantum sonrası kriptografinin NIST standartlarından ve banka geçiş programlarından incelenebilir Rust koduna nasıl taşındığını gösteriyor."
+description: "KyberLib, kuantum sonrası bankacılık geçişini incelenebilir, bellek güvenli Rust koduna dönüştürür — FIPS 203 ML-KEM, hibrit el sıkışmalar, kripto-çeviklik."
 format-detection: "telephone=no"
 hreflang: "tr"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 id: "https://sebastienrousseau.com/tr/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026"
-image_alt: "Black and White Portrait of Sebastien Rousseau"
+image_alt: "Sebastien Rousseau'nun siyah beyaz portresi"
 image_height: "162"
 image_width: "162"
 image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
-keywords: "KyberLib, kuantum sonrası kriptografi, CRYSTALS-Kyber, ML-KEM, PQC bankacılık, kuantum güvenli bankacılık, Rust kriptografi"
+keywords: "KyberLib, kuantum sonrası kriptografi, ML-KEM, FIPS 203, CRYSTALS-Kyber, kripto-çeviklik, hibrit anahtar değişimi, Rust kriptografi, şimdi sakla sonra çöz, DORA, NIST SP 1800-38, kuantum güvenli bankacılık"
 language: "tr"
 last_reviewed: "2026-06-12"
 layout: "report"
 locale: "tr_TR"
-logo_alt: "Logo for Sebastien Rousseau"
+logo_alt: "Sebastien Rousseau logosu"
 logo_height: "44"
 logo_width: "44"
 logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -35,24 +35,24 @@ rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
 schema: "FAQPage, Article"
-seo_title: "KyberLib ve Kuantum Sonrası Banka Geçişi 2026"
+seo_title: "KyberLib ve Kuantum Sonrası Bankacılık Geçişi"
 short_name: "sebastienrousseau"
 slug: "2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026"
-subtitle: "Kuantum sonrası geçiş, politika belgelerinden fazlasına ihtiyaç duyar; geliştiricilerin inceleyebileceği kütüphanelere, testlere, API'lere ve kripto-çevik mühendislik desenlerine ihtiyaç duyar."
-tags: "KyberLib, kuantum sonrası kriptografi, kuantum güvenli bankacılık, Rust, ML-KEM, CRYSTALS-Kyber"
+subtitle: "Bankacılık kriptografisini eski RSA ve ECC'den NIST standardı kuantum sonrası ilkellere; incelenebilir, bellek güvenli ve kripto-çevik Rust ile taşımak."
+tags: "KyberLib, kuantum sonrası kriptografi, kuantum güvenli bankacılık, Rust, ML-KEM, FIPS 203, CRYSTALS-Kyber, kripto-çeviklik, hibrit anahtar değişimi, SNDL, DORA, SR 11-7, Basel III, açık kaynak"
 theme-color: "0, 83, 191"
-title: "KyberLib ve 2026'da Kuantum Sonrası Banka Geçişi: Standartlardan Koda"
+title: "KyberLib ve 2026'da Kuantum Sonrası Bankacılık Geçişi: Standartlardan Koda"
 url: "https://sebastienrousseau.com/tr/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 atom_link: "https://sebastienrousseau.com/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/rss.xml"
 category: "Security"
 docs: "https://validator.w3.org/feed/docs/rss2.html"
 generator: "Static Site Generator (SSG) (version 0.0.26)"
-item_description: "KyberLib, kuantum sonrası kriptografinin NIST standartlarından ve banka geçiş programlarından incelenebilir Rust koduna nasıl taşındığını gösteriyor."
+item_description: "KyberLib, kuantum sonrası bankacılık geçişini incelenebilir, bellek güvenli Rust koduna dönüştürür — FIPS 203 ML-KEM, hibrit el sıkışmalar, kripto-çeviklik."
 item_guid: "https://sebastienrousseau.com/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/rss.xml"
 item_link: "https://sebastienrousseau.com/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/rss.xml"
 item_pub_date: "Fri, 12 Jun 2026 06:06:06 +0000"
-item_title: "KyberLib ve 2026'da Kuantum Sonrası Banka Geçişi: Standartlardan Koda"
+item_title: "KyberLib ve 2026'da Kuantum Sonrası Bankacılık Geçişi: Standartlardan Koda"
 last_build_date: "Fri, 12 Jun 2026 06:06:06 +0000"
 managing_editor: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 pub_date: "Fri, 12 Jun 2026 06:06:06 +0000"
@@ -64,150 +64,205 @@ apple_touch_icon_sizes: "192x192"
 apple-mobile-web-app-capable: "yes"
 apple-mobile-web-app-status-bar-inset: "black"
 apple-mobile-web-app-status-bar-style: "black-translucent"
-apple-mobile-web-app-title: "KyberLib Kuantum Sonrası Bankacılık"
+apple-mobile-web-app-title: "KyberLib ve Kuantum Sonrası Bankacılık Geçişi"
 apple-touch-fullscreen: "yes"
 msapplication-navbutton-color: "0, 83, 191"
 twitter_card: "summary_large_image"
 twitter_creator: "@wwdseb"
-twitter_description: "KyberLib, kuantum sonrası kriptografinin NIST standartlarından ve banka geçiş programlarından incelenebilir Rust koduna nasıl taşındığını gösteriyor."
+twitter_description: "KyberLib, kuantum sonrası bankacılık geçişini incelenebilir, bellek güvenli Rust koduna dönüştürür — FIPS 203 ML-KEM, hibrit el sıkışmalar, kripto-çeviklik."
 twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
-twitter_image_alt: "Logo of Sebastien Rousseau"
+twitter_image_alt: "Sebastien Rousseau'nun logosu"
 twitter_site: "@wwdseb"
-twitter_title: "KyberLib ve Kuantum Sonrası Banka Geçişi 2026"
+twitter_title: "KyberLib ve Kuantum Sonrası Bankacılık Geçişi"
 twitter_url: "https://sebastienrousseau.com/tr/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026"
-excerpt: "KyberLib, kuantum sonrası banka geçişini politika belgesinden incelenebilir Rust'a dönüştürür — ML-KEM anahtar kapsülleme, hibrit dağıtım, kripto-çeviklik, no_std hedefleri ve bankaların denetleyebileceği HSM hazır API'ler."
+excerpt: "KyberLib, kuantum sonrası bankacılık geçişini politika belgesinden incelenebilir Rust koduna taşır — FIPS 203 ML-KEM anahtar kapsülleme, hibrit klasik artı kuantum el sıkışmaları, HSM'ler için no_std derleme, kripto-çevik soyutlama sınırları ve yönetim kurullarının DORA Madde 5 için gereksinim duyduğu yönetişim kanıtı."
 author_website: "https://sebastienrousseau.com"
 author_twitter: "@wwdseb"
 author_location: "London, UK"
-thanks: "Thanks for reading!"
+thanks: "Okuduğunuz için teşekkürler!"
 site_last_updated: "2026-06-12"
 site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 site_software: "Static Site Generator, Rust"
 ---
 
-# KyberLib ve 2026'da Kuantum Sonrası Banka Geçişi: Standartlardan Koda
+# KyberLib ve 2026'da Kuantum Sonrası Bankacılık Geçişi: Standartlardan Koda
 
-<!-- lead-start -->
-<aside class="lead" aria-label="Bir bakışta">
 
-**Özet.** Bankacılıkta kuantum sonrası geçiş artık bir politika sorusu değil — NIST, ML-KEM, ML-DSA ve SLH-DSA'yı standartlaştırdı, düzenleyiciler saatleri kuruyor ve "şimdi hasat et sonra şifresini çöz", bugünün TLS oturumlarını yarının açık riski yapıyor. KyberLib, bankalara CRYSTALS-Kyber / ML-KEM için `no_std` hedeflerinde çalışan, hibrit dağıtımı destekleyen ve bir tedarikçi iddiasına güvenilmek yerine kod olarak denetlenebilen, açık kaynaklı bir Rust referans uygulaması sunuyor.
-
-**Temel çıkarımlar:**
-
-- **Standartlar belirlendi.** FIPS 203 (ML-KEM), 204 (ML-DSA), 205 (SLH-DSA) nihaileşti. Geriye kalan iş seçim değil, mühendisliktir.
-- **Geçiş bir kod problemidir.** Envanter, anahtar kapsülleme, hibrit TLS, HSM uyumluluğu, kripto-çeviklik — hepsi politika notlarında değil, kütüphanelerde yer alır.
-- **Hibrit, köprüdür.** Klasik + ML-KEM birlikte, kuantum sonrası yığın olgunlaşırken katmanlı savunmayı korur.
-- **Kripto-çeviklik tek kalıcı yanıttır.** Algoritmaya sabitlenmiş kod, önümüzdeki on yılın teknik borcudur.
-- **Açık kaynak, güven mekanizmasıdır.** Düzenlenmiş bir kurum, tedarikçi PDF'lerine güvenmek yerine KyberLib'in testlerini, KAT'larını ve sabit zamanlı garantilerini okuyabilir.
-
-**İlgili okumalar:** [Kuantum kriptografi standartları 2026](/2026-05-18-quantum-cryptography-standards-developments-2026/) · [DORA + AI Yasası uyum yığını](/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/) · [Bulut yerel bankacılık](/2026-05-20-cloud-native-banking-financial-institutions-2026/)
-
+<!-- lead-start: manual -->
+<aside class="post-lead" aria-label="Makale özeti">
+<p class="post-lead-tldr"><strong>Özet.</strong> 2026'da bankacılık altyapısı, sonu bilinen sistemik bir tehditle karşı karşıya: kuantum ölçekli hesaplama, bugünün aktarım trafiğini koruyan RSA ve ECC anahtar değişimini kıracak. Federal standartlar ve denetim otoritelerinin politika belgeleri farkındalığı artırdı; teknik yürütme ise hâlâ silolarda. <a href="https://github.com/sebastienrousseau/kyberlib">KyberLib</a>, kuantum sonrası anlatıyı somut, bellek güvenli Rust koduna taşıyan açık kaynaklı bir mühendislik şablonudur — NIST standardı ML-KEM'i (FIPS 203) kripto-çevik soyutlama sınırlarının arkasında uygulayarak kurumların, "Şimdi Sakla, Sonra Çöz" saldırıları arşivlerine ulaşmadan önce taşıma güvenliğini ve anahtar kapsüllemeyi yükseltmesine olanak tanır.</p>
+<p class="post-lead-heading"><strong>Temel çıkarımlar</strong></p>
+<ul class="post-lead-takeaways">
+  <li><strong>Politikadan incelenebilir koda.</strong> KyberLib, kuantum sonrası kriptografiyi soyut stratejik yol haritalarından somut, yüksek performanslı, denetlenebilir Rust uygulamalarına taşır.</li>
+  <li><strong>Standartlaştırılmış FIPS 203 ML-KEM yürütmesi.</strong> Kütüphane, NIST FIPS 203 kapsamında nihaileştirilen anahtar oluşturma algoritması ML-KEM'i uygulayarak uygunluğu küresel düzenleyici beklentilerle hizalı tutar.</li>
+  <li><strong>Tasarım gereği kripto-çeviklik.</strong> Kararlı soyutlama sınırları, bankacılık uygulamalarının kriptografik ilkelleri pahalı ve hataya açık uygulama yeniden yazımları olmadan değiştirmesine olanak verir.</li>
+  <li><strong>Rust temelli bellek güvenliği.</strong> Derleme zamanı sahiplik kuralları, eski C tabanlı kriptografik kütüphaneleri kemiren arabellek taşmalarını ve bellek sızıntılarını sıfır maliyetli soyutlama hızında ortadan kaldırır.</li>
+  <li><strong>Yediemin sorumluluğunun azaltılması.</strong> Gözlemlenebilir, test edilebilir geçiş kanıtı, yöneticilere DORA Madde 5 kişisel hesap verebilirlik denetimlerinin talep ettiği "makul adımlar" kaydını sağlar.</li>
+</ul>
+<p class="post-lead-related"><strong>İlgili okumalar:</strong> <a href="/2026-05-18-quantum-cryptography-standards-developments-2026/">Kuantum kriptografi standartları 2026</a>, <a href="/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/">DORA + AI Yasası uyum yığını</a>, <a href="/2026-05-20-cloud-native-banking-financial-institutions-2026/">Bulut yerel bankacılık</a>.</p>
 </aside>
 <!-- lead-end -->
 
-KyberLib, kuantum sonrası bankacılık anlatısını gerçek koda bağlamak için doğru açık kaynak projesidir. Bankaların artık planlama yapabilecekleri NIST standartları var, ancak geçiş politika diline sıkışıp kalırsa başarısız olacaktır. Asıl iş; kütüphanelerde, API'lerde, anahtar kapsüllemede, hibrit dağıtımda, testte, HSM uyumluluğunda ve kripto-çeviklikte oturur.
-
-Bu makalenin açık kaynak referans noktası [kyberlib ⧉](https://github.com/sebastienrousseau/kyberlib "kyberlib"). Depo şu şekilde konumlandırılmıştır: CRYSTALS-Kyber kuantum sonrası kriptografi için bir Rust kütüphanesi; kuantum sonrası KEM'ler, no_std desteği, kuantum kriptografisi ve kriptografik kütüphane tasarımı etrafında konumlandırılmıştır.
+Kuantum sonrası geçiş bir planlama egzersizi olmaktan çıktı. 2026'da aktif bir operasyonel gerekliliktir ve risk artık düzenleyici niyet ile mühendislik yürütmesi arasındaki boşlukta oturmaktadır. [KyberLib ⧉](https://github.com/sebastienrousseau/kyberlib "kyberlib") bu boşluğun bir bölümünü kapatır: ML-KEM'i nihaileştirilmiş FIPS 203 parametrelerine göre uygulayan ve bir bankanın işlemsel varlık envanterinin gerçekten ihtiyaç duyduğu kripto-çevik sınırlarla saran, üretime dönük, bellek güvenli bir Rust kütüphanesi.
 
 ---
 
 > **Yönetici Özeti / Temel Çıkarımlar**
 >
-> - **KyberLib, PQC'yi bir mühendislik konuşmasına dönüştürür.** Geliştiricilere yalnızca stratejik bir geçiş teması yerine CRYSTALS-Kyber etrafında somut bir Rust kütüphanesi sunar.
-> - **NIST, başlangıç çizgisini netleştirdi.** FIPS 203, CRYSTALS-Kyber ailesinden türetilen anahtar oluşturma için ML-KEM'i standartlaştırır.
-> - **Bankaların kripto-çevikliğe ihtiyacı vardır.** Kalıcı hedef, uygulamaları yeniden yazmadan ilkelleri değiştirebilme yeteneğidir.
-> - **Açık kaynak PQC kütüphaneleri, eğitime ve denetime yardımcı olur.** Geliştiriciler, ilkelin nasıl paketlendiğini, test edildiğini ve dışa aktarıldığını inceleyebilir.
-> - **Makale, standartlar ile uygulama arasında köprü kurar.** Kuantum güvenli bankacılık yazınınızı, okurların inceleyebileceği bir depoya bağlayabilir.
+> - **Tehdit zaten operasyonel.** Saldırganlar bugün "Şimdi Sakla, Sonra Çöz" toplaması yürütüyor; kriptografik olarak anlamlı bir kuantum bilgisayar geldiği gün, veri gizliliği geriye dönük olarak çöker.
+> - **Standartlar nihaileşti.** NIST FIPS 203 (ML-KEM) ve FIPS 204 (ML-DSA), denetim komitelerine açık ve test edilebilir bir kıyas noktası sunar — artık "standartları bekliyoruz" savunması yoktur.
+> - **KyberLib mühendislik şablonudur.** Bellek güvenli Rust, HSM'ler ve akıllı kartlar için `no_std` derleme ve klasik birlikte çalışabilirliği koruyan hibrit el sıkışma desenleri.
+> - **Kripto-çeviklik kalıcı hedeftir.** Kararlı soyutlama sınırları, ilkellerin uygulama yeniden yazımı olmadan değişmesine olanak verir — tek bir algoritmayı aşan ders budur.
+> - **Sorumluluğu yönetim kurulları taşır.** DORA Madde 5, yöneticilere kişisel sorumluluk yükler; incelenebilir, gözlemlenebilir geçiş kodu bu sorumluluğu karşılayan kanıttır.
 >
 ---
 
 ## Bu Açık Kaynak Projesi 2026'da Neden Önemli
 
-2026'da açık kaynağın stratejik değeri artık şeffaflık, yeniden kullanım veya geliştirici sempatisi ile sınırlı değil. Bankalar ve finansal kurumlar için açık kaynak altyapı; varsayımları incelemenin, kontrolleri test etmenin, tedarikçi opaklığını azaltmanın ve mimari iddiaları okunabilen, çatallanabilen, sertleştirilebilen ve işletilebilen koda dönüştürmenin bir yolu haline geldi. En faydalı projeler demolar değildir. Güvenlik, erişilebilirlik, performans, uyum ve geliştirici deneyiminin nasıl bir araya geldiğini ortaya koyan referans uygulamalardır.
+Asimetrik kriptografi geçersizliğe yaklaşırken tehdit, kriptografik olarak anlamlı bir kuantum bilgisayarın inşa edilmesini beklemiyor. Saldırganlar **"Şimdi Sakla, Sonra Çöz" (SNDL)** saldırılarını şimdi yürütüyor — kurumsal banka işlemlerinin, ticari sırların ve kurumsal iletişimlerin şifreli aktarım akışlarını, kuantum yetenekleri olgunlaştığında çözmek amacıyla topluyorlar. Bir banka için bugün hat üzerindeki her klasik el sıkışma, patlaması ertelenmiş bir gizlilik ihlalidir.
 
-kyberlib'i bu mercekten anlamak gerekir. Yalnızca bir depo değil; somut bir tasarım argümanıdır. Kritik altyapının; ona bağımlı olanlar tarafından denetlenebilir, birleştirilebilir, belgelenmiş, test edilebilir ve anlaşılabilir olması gerektiğini söyler. Finansal hizmetlerde bu önemlidir, çünkü sistemler giderek ajan tabanlı AI, gerçek zamanlı ödemeler, kuantum sonrası kriptografi, bulut yerel dayanıklılık, yapılandırılmış veri ve düzenleyici kanıt kesişiminde yer almaktadır.
+Düzenleyiciler somut yükümlülüklerle yanıt verdi:
+
+1. **DORA Madde 6 (BİT risk yönetimi)**, kurumların kriptografik varlık envanteri genelindeki zafiyetleri haritalamasını, tanımlamasını ve azaltmasını zorunlu kılar — kimsenin envantere almadığı ara katman yazılımına gömülü asimetrik anahtar değişimi dâhil.
+2. **NIST FIPS 203 ve 204**, anahtar kapsülleme (ML-KEM) ve dijital imzalar (ML-DSA) için resmî kuantum sonrası standartları belirleyerek denetim komitelerine geçiş ilerlemesinin ölçüleceği standartlaştırılmış bir kıyas noktası verir.
+
+Bu geçişi canlı operasyonları aksatmadan yürütmek, politika belgelerinin ötesine geçip **incelenebilir, açık kaynaklı kriptografik altyapıya** geçmeyi gerektirir. [KyberLib ⧉](https://github.com/sebastienrousseau/kyberlib "kyberlib") tam olarak bunu sunar: kuantum sonrası dönüşümü ölçülebilir, doğrulanabilir bir mühendislik hattına dönüştüren, FIPS 203 ile uyumlu, bellek güvenli bir Rust kütüphanesi — ve teknoloji yatırımı tartışmasını somut bir Dayanıklılık Getirisine yönlendirir.
 
 ## Mimari Merceği
 
+KyberLib kararlı API sınırlarının arkasında oturur ve bir bankanın çekirdek işlemsel uygulamalarını düşük seviyeli kriptografik ilkellerdeki değişikliklerden yalıtır.
+
 | Katman | Tasarım Kararı | Neden Önemli | Yanlış Yönetilirse Risk |
 |---|---|---|---|
-| **İlkel** | CRYSTALS-Kyber / ML-KEM tarzı anahtar kapsülleme | Klasik anahtar değişimine yönelik kuantum tehdidini ele alır | Yanlış parametre veya API kullanımı |
-| **Dil** | Rust uygulaması | Bellek güvenliği ve modern sistem entegrasyonu | Güvensiz bağlamalar veya zayıf bağımlılık hijyeni |
-| **Dağıtım** | Hibrit geçiş desenleri | Klasik algoritmalarla kademeli benimsemeye olanak verir | Birlikte çalışabilirliğin bozulması |
-| **Güvence** | Testler, örnekler ve belgeler | Kriptografik kullanımı doğrulamayı kolaylaştırır | Uygulama kanıtı olmadan güvenlik tiyatrosu |
-| **Bankacılık uyumu** | Kripto-çevik kütüphane sınırı | Kararlı arayüzler arkasında ilkelleri değiştirerek geçişi destekler | Uygulamalar genelinde sabit kodlanmış algoritmalar |
+| **İlkel** | FIPS 203 ML-KEM anahtar kapsülleme | Klasik Diffie-Hellman ve RSA anahtar değişimini kafes tabanlı yapılarla değiştirir | Nihaileştirilmiş FIPS 203 parametrelerine uyumsuzluk ve başarısız uyum denetimleri |
+| **Dil** | Bellek güvenli Rust uygulaması | C/C++ için endemik bellek bozulması zafiyetlerini (arabellek taşmaları, use-after-free) ortadan kaldırır | Yapı zinciri bütünlüğünü tehlikeye atan bağımlılık yayılması |
+| **Soyutlama** | Kararlı kripto-çevik sınırlar | Standartlar evrildikçe uygulamalar, birleşik bir arayüzün arkasında algoritma değiştirir | Her gelecekteki geçişte elle yeniden yazım dayatan sabit kodlanmış ilkeller |
+| **Dağıtım** | Hibrit şifreleme el sıkışmaları | Kuantum sonrası KEM'leri klasik algoritmalarla çift sarmalı bir zarfta birleştirir | Eski sistemlerle birlikte çalışabilirliğin kaybı veya sessiz yapılandırma kayması |
+| **Güvence** | SLSA Level 3 menşe kanıtı ve incelenebilir testler | Kod kaynağını ve menşesini garanti eder; örnekler satır satır denetlenebilir | Güvenlik tiyatrosu — uygulama hataları üretimde ortaya çıkan kara kutu kütüphaneler |
 
-## Takip Edilecek Sinyaller
+## Takip Edilecek Operasyonel Sinyaller
 
-| Sinyal | Ne Anlama Geliyor | Referans |
-|---|---|---|
-| **NIST FIPS 203** | ML-KEM, anahtar kapsülleme için adlandırılmış standarttır | [NIST ⧉](https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards "NIST PQC standartları") |
-| **KyberLib deposu** | Proje, somut bir açık kaynak Rust uygulama odağı sunar | [kyberlib ⧉](https://github.com/sebastienrousseau/kyberlib "KyberLib deposu") |
-| **Kuantum sonrası KEM konusu** | Depo, doğrudan PQC geçiş alanında konumlanmıştır | [kyberlib ⧉](https://github.com/sebastienrousseau/kyberlib "KyberLib deposu") |
-| **No-std konusu** | Gömülü ve kısıtlı ortamlarla potansiyel ilgi | [kyberlib ⧉](https://github.com/sebastienrousseau/kyberlib "KyberLib deposu") |
-| **Banka kriptografik envanteri** | Geçiş, anahtar değişiminin nerede gerçekleştiğini bulmakla başlar | [NIST ⧉](https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards "NIST PQC standartları") |
+Denetim kurullarına ve düzenleyicilere kuantum sonrası uyumu kanıtlamak, belirli ve ölçülebilir metrikleri izlemek anlamına gelir:
 
-## Standartlardan Geçiş İşine
+| Sinyal | Metrik | Düzenleyici Referans | Platform Uygulaması |
+|---|---|---|---|
+| **FIPS 203 ML-KEM uygunluğu** | Nihaileştirilmiş parametrelerle (ML-KEM-512/768/1024) %100 uyum | NIST FIPS 203 | KyberLib modülleri içinde derlenmiş, parametreleri doğrulanmış kafes kriptografisi |
+| **Kriptografik envanter** | Tüm sistemlerdeki asimetrik anahtar değişimi kullanımının eksiksiz envanteri | NIST SP 1800-38 | Aktif şifre paketlerini merkezi bir kayıt defterine işleyen otomatik tarama ajanları |
+| **Hibrit anahtar değişimi** | Hibrit zarf içinde yürütülen taşıma katmanı el sıkışmalarının yüzdesi | DORA Madde 6 | Klasik TLS 1.3 el sıkışmalarını PQC kapsüllemesiyle saran ağ vekilleri |
+| **`no_std` derleme** | Kısıtlı hedefler için Rust standart kütüphanesi olmadan derleyebilme | DORA Madde 30 | KyberLib'de Donanım Güvenlik Modülleri için koşullu `no_std` derleme |
+| **Kripto-çeviklik endeksi** | API ağ geçidi genelinde bir kriptografik ilkeli değiştirmenin dakika cinsinden süresi | UK PRA SS1/23 | Algoritma tahsisini çalışma zamanı değişkenleriyle yöneten soyutlanmış yönlendirme kayıtları |
 
-NIST standartları yön belirler ancak mühendislik işinin yerini almaz. Bir bankanın hâlâ kriptografik bağımlılıkları belirlemesi, uygulamaları doğrulaması, performansı test etmesi, tedarikçi hazırlığını kontrol etmesi ve hibrit yayılımları tasarlaması gerekir. KyberLib, bu geçişin bir bölümünü somut hale getirdiği için faydalıdır.
+## Kuantum Sonrası Kriptografi için Rust Neden Önemli
 
-## PQC için Rust Neden Önemli
+ML-KEM gibi kuantum sonrası algoritmaları uygulamak, polinom halkaları üzerinde karmaşık, düşük seviyeli matematiksel işlemler gerektirir. Tarihsel olarak bu işlemleri üretim hızında çalıştırmak, elle yazılmış C/C++ veya assembly anlamına geliyordu — bir bankanın yanlış yapma lüksünün en az olduğu kodda, bellek bozulması için geniş bir saldırı yüzeyi.
 
-Rust, kriptografik altyapı için caziptir çünkü bellek güvenliği, paketleme disiplini ve sistem düzeyinde performans önemlidir. Bir PQC kütüphanesinin yanlış kullanılması zor, test edilmesi kolay ve parametre seçimleri konusunda net olmalıdır. Makale, KyberLib'i, düşük seviyeli kriptografik ilkelin daha geniş bir banka geçiş planının parçası haline gelebilmesinin örneği olarak kullanmalıdır.
+Rust, kriptografik mühendisliğin güvenlik duruşunu üç somut şekilde değiştirir:
 
-## Kripto-Çeviklik Dersi
+1. **Derleme zamanı bellek güvenliği.** Rust'ın sahiplik modeli; arabellek taşmalarının, çift serbest bırakmaların ve use-after-free hatalarının derleme zamanında engellenmesini garanti eder. Anahtar boyutlarının ve şifreli metinlerin klasik karşılıklarından belirgin biçimde büyük olduğu kuantum sonrası kütüphanelerde bu özellikle kritiktir.
+2. **Deterministik, sıfır maliyetli soyutlamalar.** Rust, çöp toplayıcı olmadan yerel makine koduna derlenir; yürütme hızı ve bellek ayak izi, güvenliği korurken C tabanlı kütüphanelere eşit veya onlardan üstündür.
+3. **`no_std` uyumluluğu.** KyberLib, Rust'ın standart kütüphanesi olmadan derlenir; böylece kısıtlı, çıplak donanım ortamlarında — Donanım Güvenlik Modülleri (HSM) ve akıllı kartlar dâhil — çalışarak banka düzeyinde kriptografiyi fiziksel güvenlik sınırlarının içinde tutar.
 
-Buradaki amaç, tek bir kütüphanenin kurumsal geçişi çözdüğünü iddia etmek değildir. Ders, bankaların soyutlama sınırlarına ihtiyaç duymasıdır. Uygulamalar, kriptografik varsayımları sabit kodlamamalıdır. İyi incelenmiş kütüphaneleri; standartlar, sertifikasyon ve uygulama rehberi olgunlaştıkça evrilebilen arayüzler üzerinden çağırmalıdırlar.
+## Kripto-Çevik Bir Mimari Tasarlamak
 
-## Kitleye Göre Bunun Anlamı
+Kriptografik geçişlerin klasik başarısızlık modu sabit kodlamadır: uygulama mantığına doğrudan gömülmüş, her dönüşümde acı verici biçimde yeniden keşfedilen algoritmaya özgü varsayımlar. 2026 için kalıcı hedef **kripto-çevikliktir** — algoritmaları kararlı bir arayüzün arkasında değiştirilebilir modüller olarak ele alan bir soyutlama katmanı; böylece bir sonraki geçiş, varlık envanteri çapında bir yeniden yazım değil, bir yapılandırma değişikliği olur.
 
-### Banka Teknoloji Liderleri için
+Aşağıdaki akış, KyberLib'in kripto-çevik sarmalayıcısının hibrit (klasik artı kuantum sonrası) bir anahtar değişimi el sıkışmasını nasıl koordine ettiğini gösterir:
 
-Soru, projenin stratejik bir baskıyı yürütülebilir bir mimariye dönüştürmeye yardımcı olup olamayacağıdır. Değer, depo ekiplere incelenebilecek somut bir şey sunduğunda en güçlüdür: arayüzler, yapılandırma, testler, güvenlik sınırları, dağıtım varsayımları ve başarısızlık modları.
+```mermaid
+sequenceDiagram
+    autonumber
+    participant App as Temel Bankacılık Uygulaması
+    participant Agile as Kripto-Çevik Sarmalayıcı
+    participant Classical as Klasik Motor (ECDH)
+    participant PQC as Kuantum Sonrası KEM (ML-KEM)
+    participant Peer as Karşı Taraf API / Defter
+    App->>Agile: Güvenli oturumu başlat (istemci bağlamı)
+    activate Agile
+    Note over Agile: Güvenlik politikasını müzakere eder<br/>ve hibrit el sıkışmayı seçer
+    Agile->>Classical: Klasik açık anahtar payı üret
+    activate Classical
+    Classical-->>Agile: ECDH açık payı (C_pub)
+    deactivate Classical
+    Agile->>PQC: Kuantum güvenli açık anahtar payı üret
+    activate PQC
+    PQC-->>Agile: ML-KEM açık payı (Q_pub)
+    deactivate PQC
+    Agile->>Agile: Hibrit anahtar payını paketle (C_pub || Q_pub)
+    Agile->>Peer: Hibrit payı ilet
+    activate Peer
+    Note over Peer: ECDH ve ML-KEM'i işler<br/>ve simetrik sırları kapsüller
+    Peer-->>Agile: Şifreli metinleri döndür (C_ct || Q_ct)
+    deactivate Peer
+    Agile->>Classical: Klasik sırrın kapsülünü aç
+    activate Classical
+    Classical-->>Agile: Klasik anahtar malzemesi (K_class)
+    deactivate Classical
+    Agile->>PQC: Kuantum güvenli sırrın kapsülünü aç
+    activate PQC
+    PQC-->>Agile: Kuantum sonrası anahtar malzemesi (K_pqc)
+    deactivate PQC
+    Agile->>Agile: HKDF-Extract ve HKDF-Expand (K_class || K_pqc)
+    Note over Agile: Tek bir kuantum güvenli<br/>simetrik oturum anahtarı türetir (K_sess)
+    Agile-->>App: Güvenli oturum kuruldu (K_sess)
+    deactivate Agile
+```
 
-### Güvenlik ve Risk Ekipleri için
+Operasyonel açıdan önemli ayrıntı hibrit zarftır. Kuantum sonrası ilkeller yıllar süren üretim denetimini biriktirene kadar oturum anahtarı hem klasik hem de kuantum sonrası sırdan türetilir: bir saldırganın kanalı ele geçirmesi için ECDH **ve** ML-KEM'i birlikte kırması gerekir. Geçiş yapmamış karşı taraflar çalışmaya devam eder; geçiş yapanlar ise kafes tabanlı korumayı anında kazanır.
 
-Proje yalnızca özellikler için değil, kontrol kanıtı için de değerlendirilmelidir. Faydalı açık kaynak finansal altyapı; kimlik, sırlar, doğrulama, denetim günlükleri, hız sınırları, imzalar, kanıt ve kurtarmanın nasıl çalışması gerektiğini açığa çıkarır.
+## Yönetim Kurulu Oyun Planı
 
-### Geliştiriciler ve Platform Mühendisleri için
+Kuantum sonrası güvenlik bir arka ofis şifreleme meselesi değildir; kişisel sonuçları olan bir yönetim kurulu yönetişim konusudur. Üst düzey yöneticiler geçişi yediemin sorumluluğu çerçevesinden ele almalıdır:
 
-En önemli test, projenin önemli mekanikleri gizlemeden bilişsel yükü azaltıp azaltmadığıdır. İyi açık kaynak, güvenli yolu kolay yol haline getirirken deneyimli mühendislerin uygulamayı anlamasına ve değiştirmesine de izin vermelidir.
+- **DORA Madde 5 (yönetişim ve organizasyon)**, BİT güvenliğinin kişisel sorumluluğunu yönetim kuruluna yükler. Açık kaynaklı, gözlemlenebilir testler, bir kişisel sorumluluk denetiminin talep ettiği doğrudan kanıttır — "incelenebilir bir FIPS 203 uygulaması seçtik ve işte uygunluk koşuları" savunulabilir bir yanıttır; "tedarikçimiz bizi temin etti" değildir.
+- **Model risk yönetimi (ABD Fed SR 11-7 / UK PRA SS1/23)**, fiyatlama modelleri kadar kriptografik sarmalayıcı mimarilerine de uygulanır. Soyutlama katmanları, aşırı kesinti senaryoları altındaki performans dâhil olmak üzere MRM doğrulamasından geçmelidir.
+- **Basel III operasyonel risk sermayesi**, kanıtlanmış kontrol olgunluğunu ödüllendirir. Test edilmiş hibrit el sıkışmalar, kurumun uzun vadeli operasyonel risk profilini düşürür; sermaye primini kırparak bilanço kapasitesini aktif hazine kullanımına açar.
 
-### Katkı Sağlayanlar için
+## Banka Türüne Göre Bunun Anlamı
 
-Fırsat, projeyi gerçek kurumların güvence ihtiyacı duyduğu yerlerde güçlendirmektir: belgeler, örnekler, uygunluk testleri, CI sertleştirme, tehdit modelleri, performans profilleri, erişilebilirlik kontrolleri ve entegrasyon kılavuzları.
+### Küresel Sistemik Öneme Sahip Bankalar (G-SIB'ler)
 
-## Sonuç
+G-SIB'ler eski sistem ağırlıklı işlemsel varlık envanterleri işletir; bu nedenle bağlayıcı kısıtları keşiftir: asimetrik anahtar değişiminin fiilen nerede gerçekleştiğini bilmek. Önce NIST SP 1800-38 rehberliğinde sürekli kriptografik envanterler gelir; ardından KyberLib, envanterin ortaya çıkardığı her modern düğümde kuantum sonrası anahtar kapsüllemeyi yürütmek için standartlaştırılmış, bellek güvenli kütüphaneyi sağlar.
 
-kyberlib hakkında yazmanın nedeni, daha geniş bir sektör problemini somut bir şeye dönüştürmesidir. 2026'da bankaların daha fazla soyut dönüşüm diline değil; modern altyapının nasıl inşa edilebileceğini, güvence altına alınabileceğini, test edilebileceğini ve yönetilebileceğini gösteren incelenebilir sistemlere ihtiyacı var. Açık kaynak, bu argümanı görünür kılmanın en güvenilir yoludur.
+### İşlem ve Kurumsal Bankalar
+
+Ödeme rayları üzerindeki gizlilik, işin özüdür. KyberLib çıplak donanım `no_std` hedeflerine derlendiği için işlem bankaları, kuantum sonrası el sıkışmaları yalnızca uygulama katmanında değil, doğrudan uçtaki ödeme yönlendirme ve likidite yönetimi donanımının içine dağıtabilir.
+
+### Bölgesel ve Daha Küçük Bankalar
+
+Bölgesel kurumlar, G-SIB araştırma bütçeleri olmadan aynı devlet destekli toplama faaliyetiyle karşı karşıyadır. İncelenebilir, açık kaynaklı bir Rust uygulaması, onlara kara kutu tedarikçi yol haritalarını müzakere etmeden NIST FIPS 203 uygunluğuna anında ulaşan anahtar teslim bir yol sunar.
+
+## Yol Haritalarından Derlenen Koda
+
+Kuantum sonrası dönüşüm aktif bir mühendislik görevidir ve 2026 boyunca denetçilerin, karşı tarafların ve kurumsal hazinecilerin güvenini koruyacak kurumlar, soyut yol haritalarından gözlemlenebilir, derlenen koda geçenlerdir. Yönetici talimatı doğrudan bunu izler: eski anahtar değişim noktalarını denetleyin, en yüksek değerli kanallarda hibrit el sıkışmaları dağıtın ve gelecekteki her ilkel değişimini rutin hale getiren kararlı soyutlama sınırlarını inşa edin. KyberLib, bu adımların her birini bir sunum taahhüdü yerine ölçülebilir bir operasyonel yetenek haline getirir.
 
 ## Sıkça Sorulan Sorular
 
-**KyberLib nedir?**
+**KyberLib, nihaileştirilmiş NIST standartlarıyla uyumlu mu?**
 
-KyberLib, CRYSTALS-Kyber tarzı kuantum sonrası anahtar kapsüllemeye odaklanan açık kaynaklı bir Rust projesidir.
+Evet. KyberLib, FIPS 203'te nihaileştirilen ML-KEM parametreleri etrafında tasarlanmıştır; derlenen kütüphaneyi federal ve küresel düzenleyici beklentilerle hizalı tutar.
 
-**Bu, bankalar için neden önemlidir?**
+**Kuantum sonrası bir kütüphane özel donanım gerektirir mi?**
 
-Bankalar; taşıma güvenliği, kimlik, imzalar, ödemeler, arşivler ve müşteri verisi gizliliği için kriptografiye bağımlıdır.
+Hayır. KyberLib'in Rust uygulaması standart sistem mimarilerine derlenir. `no_std` yeteneği ayrıca, fiziksel anahtar saklamanın zorunlu olduğu özel Donanım Güvenlik Modüllerinde ve akıllı kartlarda çalışmasına olanak verir.
 
-**Bir kütüphane PQC geçişini çözer mi?**
+**"Şimdi Sakla, Sonra Çöz" mevcut uyumu nasıl etkiler?**
 
-Hayır. Yalnızca bir uygulama katmanıdır. Geçiş ayrıca envanter, tedarikçi yönetimi, politika, test ve yönetişim gerektirir.
+Taşıma katmanı klasik RSA veya ECC'ye dayanıyorsa saldırganlar trafiği bugün toplayıp kuantum yeteneği olgunlaştığında çözebilir. Şimdi dağıtılan hibrit anahtar değişimi, ele geçirilen veriyi kafes tabanlı korumanın arkasında tutar.
 
-**Okuyucular ne öğrenmelidir?**
+**Neden doğrudan kuantum sonrası ilkellere geçmek yerine hibrit el sıkışmalar?**
 
-Kuantum sonrası geçişin, ancak standartlar koda, API'lere, testlere ve operasyonel dağıtım desenlerine bağlandığında gerçek olduğunu.
+Hibrit zarflar, oturum anahtarını hem klasik hem de kuantum sonrası bir sırdan türetir; dolayısıyla her ikisi birden kırılmadıkça güvenlik korunur. Bu, yeni ilkeller üretim denetimi biriktirirken geçiş yapmamış karşı taraflarla birlikte çalışabilirliği sürdürür.
 
 ## Kaynakça
 
-- GitHub, (2026). [kyberlib deposu ⧉](https://github.com/sebastienrousseau/kyberlib "kyberlib deposu").
-- NIST, (2026). [İlk üç nihaileşmiş kuantum sonrası şifreleme standardı ⧉](https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards "İlk üç nihaileşmiş kuantum sonrası şifreleme standardı").
+- National Institute of Standards and Technology, (2024). [FIPS 203: Modül-Kafes Tabanlı Anahtar Kapsülleme Mekanizması Standardı ⧉](https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards "NIST FIPS 203 duyurusu").
+- Board of Governors of the Federal Reserve System, (2011). [Model Risk Yönetimine İlişkin Denetim Rehberi (SR Letter 11-7) ⧉](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "Federal Reserve SR 11-7").
+- European Parliament and Council of the European Union, (2022). [Finansal sektör için dijital operasyonel dayanıklılığa ilişkin (AB) 2022/2554 sayılı Tüzük (DORA) ⧉](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554 "DORA Tüzüğü").
+- NIST National Cybersecurity Center of Excellence, (2025). [Kuantum Sonrası Kriptografiye Geçiş (NIST SP 1800-38) ⧉](https://www.nccoe.nist.gov/projects/migration-post-quantum-cryptography "NIST SP 1800-38").
+- GitHub, (2026). [kyberlib açık kaynak deposu ⧉](https://github.com/sebastienrousseau/kyberlib "kyberlib deposu").
 
 <!-- enrich-start -->
 <aside class="author-card" aria-label="Yazar Hakkında"><img alt="Sebastien Rousseau'nun portresi" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Uygulamalı yapay zeka, ödeme altyapısı, tokenleştirilmiş para, ISO 20022, kuantum sonrası güvenlik, bulut yerel finansal hizmetler, açık kaynak altyapı ve düzenlenmiş dijital piyasalar üzerine yazan kıdemli bankacılık teknoloğu.</span><span class="author-credentials">HSBC Ticari ve Yatırım Bankası, PayPal, Barclays, Shazam, AKQA ve Virgin Group'ta 20+ yıl. <a href="/about/index.html">Tam profil</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Son inceleme <time datetime="2026-06-12">2026-06-12</time>.</p>
 <!-- enrich-end -->
-</content>
-</invoke>

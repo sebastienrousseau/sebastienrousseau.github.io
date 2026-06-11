@@ -105,21 +105,33 @@ site_software: "Static Site Generator, Rust"
 <header class="newsroom-section-head"><p class="newsroom-kicker">FEATURED</p><h2>Latest story</h2></header>
 
 <article class="newsroom-featured">
-<a class="newsroom-featured-media" href="/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/index.html" title="CloudCDN: An Open-Source Blueprint for the AI-Native Edge in 2026">
-<img alt="Glowing data-centre rack stack at night — symbolising the inspectable, agent-controllable, open-source edge that CloudCDN is built on" src="https://cloudcdn.pro/stocks/images/alis-po-IdVNRv-5wJo.webp" loading="eager" fetchpriority="high" decoding="async" width="800" height="800" />
+<a class="newsroom-featured-media" href="/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/index.html" title="KyberLib and the Post-Quantum Banking Migration in 2026: From Standards to Code">
+<img alt="Aerial view of the City of London at dusk — symbolising the post-quantum migration banks must run from NIST standards into inspectable cryptographic code" src="https://cloudcdn.pro/stocks/images/ben-o-bro-wpU4veNGnHg.webp" loading="eager" fetchpriority="high" decoding="async" width="800" height="800" />
 </a>
 <div class="newsroom-featured-body">
-<span class="newsroom-eyebrow">Cloudcdn · Open Source · Cdn</span>
-<h3><a href="/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/index.html" title="CloudCDN: An Open-Source Blueprint for the AI-Native Edge in 2026">CloudCDN: An Open-Source Blueprint for the AI-Native Edge in 2026</a></h3>
-<p class="newsroom-meta"><time datetime="2026-06-11">June 11, 2026</time> · Sebastien Rousseau</p>
-<p>CloudCDN is an open-source, AI-native edge CDN blueprint — MCP-controlled infrastructure, Durable Objects rate limiting, signed URLs, passkeys, accessibility, and 100% test coverage as enforceable defaults, not vendor promises.</p>
-<p><a class="pill ghost" href="/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/index.html" title="CloudCDN: An Open-Source Blueprint for the AI-Native Edge in 2026">Read the full story</a></p>
+<span class="newsroom-eyebrow">Kyberlib · Post-Quantum Cryptography · Quantum-Safe Banking</span>
+<h3><a href="/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/index.html" title="KyberLib and the Post-Quantum Banking Migration in 2026: From Standards to Code">KyberLib and the Post-Quantum Banking Migration in 2026: From Standards to Code</a></h3>
+<p class="newsroom-meta"><time datetime="2026-06-12">June 12, 2026</time> · Sebastien Rousseau</p>
+<p>KyberLib turns the post-quantum banking migration from policy paper into inspectable Rust — FIPS 203 ML-KEM key encapsulation, hybrid classical-plus-quantum handshakes, no_std compilation for HSMs, crypto-agile abstraction boundaries, and the DORA Article 5 governance evidence boards now need.</p>
+<p><a class="pill ghost" href="/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/index.html" title="KyberLib and the Post-Quantum Banking Migration in 2026: From Standards to Code">Read the full story</a></p>
 </div>
 </article>
 
 <header class="newsroom-section-head"><p class="newsroom-kicker">ARCHIVE</p><h2>All news stories and articles</h2></header>
 
 <div class="newsroom-grid">
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/index.html" title="CloudCDN: An Open-Source Blueprint for the AI-Native Edge in 2026">
+<img alt="Glowing data-centre rack stack at night — symbolising the inspectable, agent-controllable, open-source edge that CloudCDN is built on" src="https://cloudcdn.pro/stocks/images/alis-po-IdVNRv-5wJo.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Cloudcdn · Open Source · Cdn</span>
+<h3><a href="/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/index.html" title="CloudCDN: An Open-Source Blueprint for the AI-Native Edge in 2026">CloudCDN: An Open-Source Blueprint for the AI-Native Edge in 2026</a></h3>
+<p class="newsroom-meta"><time datetime="2026-06-11">June 11, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">CloudCDN is an open-source blueprint for the AI-native edge — a zero-trust MCP gateway with 42 tools, atomic Durable Objects rate limiting, WebAuthn passkeys, signed URLs, SLSA Level 3 provenance, and 3,185 tests at 100% coverage, mapped to DORA, BCBS 239, and Basel III.</p>
+</div>
+</article>
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/index.html" title="The Banking Resilience Index in 2026: AI, Cloud, Quantum, Payments, and Third-Party Concentration Risk">
