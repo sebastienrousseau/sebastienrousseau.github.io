@@ -175,6 +175,7 @@ excerpt: "Cloud architecture in 2026 has crystallised around six pillars: AI-nat
 
 
 
+
 <!-- lead-start -->
 <aside class="post-lead" aria-label="Article summary">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Cloud architecture in 2026 has crystallised around six pillars: AI-native infrastructure, intelligent multi-cloud, serverless-first design with WebAssembly at the edge, edge computing, automated security with crypto-agility, and sustainable high-density operations. For banks, the question is whether to consume cloud or design it — under converging pressure from agentic commerce, agentic unit economics, harvest-now-decrypt-later quantum risk, MCP security and algorithmic contagion, cryptographic agent identity, continuous-treasury demands, and the EU AI Act.</p>
@@ -520,7 +521,7 @@ A **cloud consumer** procures the six pillars from hyperscalers with minimal int
 
 <!-- enrich-start -->
 <aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
-<p class="post-reviewed">Last reviewed <time datetime="2026-06-10">2026-06-10</time>.</p>
+<p class="post-reviewed">Last reviewed <time datetime="2026-06-12">2026-06-12</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Related reading</h2>
 <div class="related-grid">
