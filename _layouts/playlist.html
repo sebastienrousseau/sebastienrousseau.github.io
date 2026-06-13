@@ -95,6 +95,18 @@
         --max:980px;
         --max-wide:1440px;
         --radius:18px;
+        /* FT-tier editorial tokens. --paper is the warm article surface
+           separate from --bg (which keeps the chrome cool-neutral);
+           --ink-deep is the dark-navy card background (.card--editorial)
+           that stays dark in BOTH themes; --rule and --eyebrow are
+           paper-tuned accents; --measure-article + --leading-article
+           govern the article body column. No consumers in this commit. */
+        --paper:#fdf9f0;
+        --ink-deep:#0d1b2a;
+        --rule:#d8d2c2;
+        --eyebrow:#0d1b2a;
+        --measure-article:62ch;
+        --leading-article:1.65;
         color-scheme: light dark;
         /* Named typography abstraction — every font-family in the
            stylesheet reads from these three vars. Values are system
@@ -121,6 +133,13 @@
         --border:#3a3a3c;
         --shadow:0 1px 0 rgba(255,255,255,.05);
         --shadow-lift:0 18px 40px -10px rgba(0,0,0,.7);
+        /* Dark-mode pairs for the FT-tier tokens. --paper goes inky;
+           --ink-deep inverts to off-white so .card--editorial keeps the
+           same dark-card-on-light-card-bg gesture that defines FT. */
+        --paper:#0b0b0d;
+        --ink-deep:#f2efe6;
+        --rule:#2a2a2c;
+        --eyebrow:#f2efe6;
       }
       @media (prefers-color-scheme: dark){
         html:not([data-theme="light"]){
@@ -133,6 +152,10 @@
           --bg-alt:#1d1d1f;
           --card:#161617;
           --border:#3a3a3c;
+          --paper:#0b0b0d;
+          --ink-deep:#f2efe6;
+          --rule:#2a2a2c;
+          --eyebrow:#f2efe6;
         }
       }
       /* ---------- Glass surface tokens + utilities. Opaque --card
