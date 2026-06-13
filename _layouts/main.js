@@ -111,6 +111,61 @@ document.addEventListener("click", function (event) {
 });
 
 /**
+ * Action-rail "Save PDF" trigger — opens the browser print dialog so the
+ * user can route to "Save as PDF". The @media print stylesheet hides
+ * interactive chrome and forces a serif body, so the PDF that drops out
+ * is editorially clean. Until the WS5 Fly.io weasyprint route ships
+ * (/api/pdf/<slug>.pdf), this is the only working PDF path.
+ */
+document.addEventListener("click", function (event) {
+    var trigger = event.target.closest("[data-print]");
+    if (!trigger) return;
+    event.preventDefault();
+    window.print();
+});
+
+/**
+ * Copy-to-clipboard handler — single delegate for every [data-copy]
+ * button inside the cite popover (BibTeX / RIS / Vancouver / Chicago /
+ * APA) and the reuse / republish panel. The target is the CSS selector
+ * in data-copy, typically "#cite-bibtex" or "#reuse-attribution". On
+ * success we flip data-copied="1" for 2s so the CSS can render a
+ * "Copied ✓" affordance; on failure (Clipboard API unavailable,
+ * insecure context) we fall back to a transient textarea + execCommand.
+ */
+document.addEventListener("click", function (event) {
+    var btn = event.target.closest("[data-copy]");
+    if (!btn) return;
+    event.preventDefault();
+    var target = document.querySelector(btn.getAttribute("data-copy"));
+    if (!target) return;
+    var text = target.innerText || target.textContent || "";
+    var done = function () {
+        btn.setAttribute("data-copied", "1");
+        setTimeout(function () { btn.removeAttribute("data-copied"); }, 2000);
+    };
+    if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(text).then(done).catch(function () {
+            fallbackCopy(text, done);
+        });
+    } else {
+        fallbackCopy(text, done);
+    }
+});
+
+function fallbackCopy(text, done) {
+    var ta = document.createElement("textarea");
+    ta.value = text;
+    ta.setAttribute("readonly", "");
+    ta.style.cssText = "position:fixed;top:-9999px;left:-9999px";
+    document.body.appendChild(ta);
+    ta.select();
+    try { document.execCommand("copy"); done(); }
+    catch (err) { console.warn("copy fallback failed", err); }
+    document.body.removeChild(ta);
+}
+
+/**
  * Back-to-top floating button. Reveals after the user scrolls past one viewport
  * height and scrolls smoothly to the top on click.
  */

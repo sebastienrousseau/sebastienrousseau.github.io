@@ -864,27 +864,26 @@ def _license_id(html: str) -> str:
 
 
 def inject_action_rail(html: str) -> str:
-    """Render the floating ``.action-rail--sticky`` with Save PDF / Listen /
-    Cite at the top of the article body. The CSS (WS1 commit 2) positions
-    it on the right edge on >=80em viewports and as a sticky bottom bar
-    on <48em. Anchors only — Save PDF points at the lang-router PDF
-    proxy route (``/api/pdf/<slug>.pdf``, wired by WS5); Listen jumps to
-    a future ``#audio-player`` (Phase 2 TTS); Cite jumps to the cite
-    popover injected below. BlogPosting pages only; idempotent."""
+    """Render the floating ``.action-rail--sticky`` with Save PDF + Cite
+    at the top of the article body. The CSS positions it on the right
+    edge on >=64em viewports and as a sticky bottom bar on <48em.
+    Anchors only — Save PDF carries ``data-print`` so the main.js
+    delegate calls ``window.print()`` immediately (the browser's
+    "Save as PDF" sink uses our @media print stylesheet). The Listen
+    button is intentionally absent until Phase 2 TTS lands — placeholder
+    buttons that don't work were worse than no buttons. Cite jumps to
+    the popover. BlogPosting pages only; idempotent."""
     if '"@type":"BlogPosting"' not in html:
         return html
     if 'class="action-rail action-rail--sticky"' in html:
         return html
-    slug = _slug_from_canonical(html)
-    if not slug:
+    if not _slug_from_canonical(html):
         return html
     labels = _labels(html)
     aria = _esc(labels.get("Action.aria", "Article actions"), quote=True)
     items = (
-        f'<li><a href="/api/pdf/{_esc(slug, quote=True)}.pdf" download>{_SVG_DOWNLOAD}'
-        f'<span>{_esc(labels.get("Action.savePdf", "Save PDF"))}</span></a></li>'
-        f'<li><a href="#audio-player">{_SVG_HEADPHONES}'
-        f'<span>{_esc(labels.get("Action.listen", "Listen"))}</span></a></li>'
+        f'<li><button type="button" data-print>{_SVG_DOWNLOAD}'
+        f'<span>{_esc(labels.get("Action.savePdf", "Save PDF"))}</span></button></li>'
         f'<li><a href="#cite-popover">{_SVG_QUOTE}'
         f'<span>{_esc(labels.get("Action.cite", "Cite"))}</span></a></li>'
     )
@@ -974,15 +973,21 @@ def inject_cite_popover(html: str) -> str:
     _kw, date_pub, _dm, _wc = _extract_article_metadata(html)
     formats = _citation_blocks(title, url, date_pub)
     labels = _labels(html)
-    blocks = "".join(
-        f'<div class="cite-format"><h3>{_esc(name)}</h3>'
-        f"<pre>{_esc(body)}</pre></div>"
-        for name, body in formats.items()
-    )
+    copy_label = _esc(labels.get("Cite.copy", "Copy"))
+    blocks = []
+    for name, body in formats.items():
+        target_id = f"cite-{name.lower()}"
+        blocks.append(
+            f'<div class="cite-format"><h3>{_esc(name)}</h3>'
+            f'<pre id="{target_id}">{_esc(body)}</pre>'
+            f'<button type="button" class="copy-btn" data-copy="#{target_id}" '
+            f'aria-label="{_esc(name, quote=True)} — {copy_label}">{copy_label}</button>'
+            f"</div>"
+        )
     popover = (
         f'<details class="cite-popover" id="cite-popover">'
         f'<summary>{_esc(labels.get("Cite.heading", "Cite this article"))}</summary>'
-        f"{blocks}</details>"
+        f"{''.join(blocks)}</details>"
     )
     return _WRAP_CLOSE_RE.sub(popover + r"\1", html, count=1)
 
@@ -1017,6 +1022,7 @@ def inject_reuse_panel(html: str) -> str:
         f'"{title}" by {_AUTHOR_FIRST} {_AUTHOR_LAST}, '
         f"originally published at {url}. Licensed under {license_id}."
     )
+    copy_label = _esc(labels.get("Reuse.copy", "Copy attribution"))
     panel = (
         f'<section class="reuse" aria-labelledby="reuse-heading">'
         f'<h2 id="reuse-heading">'
@@ -1024,7 +1030,10 @@ def inject_reuse_panel(html: str) -> str:
         f"<p>{_esc(labels.get('Reuse.license', 'This article is licensed under'))} "
         f"{license_a}. "
         f"{_esc(labels.get('Reuse.attribution', 'Republication requires attribution to the canonical URL.'))}</p>"
-        f"<pre>{_esc(attribution)}</pre></section>"
+        f'<pre id="reuse-attribution">{_esc(attribution)}</pre>'
+        f'<button type="button" class="copy-btn" data-copy="#reuse-attribution" '
+        f'aria-label="{copy_label}">{copy_label}</button>'
+        f"</section>"
     )
     return _WRAP_CLOSE_RE.sub(panel + r"\1", html, count=1)
 

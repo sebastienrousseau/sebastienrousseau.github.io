@@ -2440,15 +2440,19 @@ def test_inject_action_rail_no_op_without_blogposting():
     assert inject_action_rail("<p>plain page</p>") == "<p>plain page</p>"
 
 
-def test_inject_action_rail_renders_three_actions_at_top_of_main():
+def test_inject_action_rail_renders_save_pdf_and_cite_buttons_at_top_of_main():
     from postbuild_lib.article_furniture import inject_action_rail
 
     out = inject_action_rail(_ws2_page())
     assert 'class="action-rail action-rail--sticky"' in out
-    # Slug derived from canonical URL → PDF route
-    assert 'href="/api/pdf/2026-01-01-my-post.pdf"' in out
-    assert 'href="#audio-player"' in out
+    # Save PDF is a <button data-print> — main.js delegates to
+    # window.print() so the @media print stylesheet drives output.
+    assert "<button type=\"button\" data-print>" in out
+    # Cite anchors to the popover injected later in the pipeline.
     assert 'href="#cite-popover"' in out
+    # Listen is intentionally absent until Phase 2 TTS ships.
+    assert "#audio-player" not in out
+    assert "Listen" not in out
     # Sits inside the wrap-div, before the body paragraph
     assert out.index("action-rail--sticky") < out.index("<p>body</p>")
 
@@ -2460,24 +2464,11 @@ def test_inject_action_rail_idempotent():
     assert inject_action_rail(once) == once
 
 
-def test_inject_action_rail_strips_index_html_suffix_from_slug():
-    from postbuild_lib.article_furniture import inject_action_rail
-
-    # Real built pages have canonical URLs ending in /index.html — the
-    # slug must strip both /index.html and the trailing slash, else the
-    # PDF link becomes /api/pdf/index.html.pdf for every BlogPosting.
-    head = _WS2_HEAD.replace(
-        '<link rel="canonical" href="https://sebastienrousseau.com/2026-01-01-my-post/">',
-        '<link rel="canonical" href="https://sebastienrousseau.com/2026-01-01-my-post/index.html">',
-    )
-    out = inject_action_rail(_ws2_page(head=head))
-    assert 'href="/api/pdf/2026-01-01-my-post.pdf"' in out
-    assert "/api/pdf/index.html.pdf" not in out
-
-
 def test_inject_action_rail_no_op_when_canonical_missing():
     from postbuild_lib.article_furniture import inject_action_rail
 
+    # Save PDF is a data-print <button>; the canonical is still required
+    # as the BlogPosting gate signal — no canonical → no rail.
     head = _WS2_HEAD.replace(
         '<link rel="canonical" href="https://sebastienrousseau.com/2026-01-01-my-post/">',
         "",
@@ -2495,7 +2486,7 @@ def test_inject_cite_popover_no_op_without_blogposting():
     assert inject_cite_popover("<p>plain page</p>") == "<p>plain page</p>"
 
 
-def test_inject_cite_popover_emits_all_five_formats_with_metadata():
+def test_inject_cite_popover_emits_all_five_formats_with_copy_buttons():
     from postbuild_lib.article_furniture import inject_cite_popover
 
     head = _WS2_HEAD.replace(
@@ -2507,6 +2498,13 @@ def test_inject_cite_popover_emits_all_five_formats_with_metadata():
     # All 5 format headings present
     for fmt in ("BibTeX", "RIS", "Vancouver", "Chicago", "APA"):
         assert f"<h3>{fmt}</h3>" in out
+    # Each <pre> has a stable id and a paired copy button so main.js
+    # can wire the clipboard handler via [data-copy].
+    for fid in ("cite-bibtex", "cite-ris", "cite-vancouver", "cite-chicago", "cite-apa"):
+        assert f'<pre id="{fid}">' in out
+        assert f'data-copy="#{fid}"' in out
+    # 5 copy buttons, one per format.
+    assert out.count('class="copy-btn"') == 5
     # BibTeX key + author surface in the rendered citation
     assert "rousseau2026" in out
     assert "Rousseau, Sebastien" in out
@@ -2552,6 +2550,10 @@ def test_inject_reuse_panel_emits_cc_by_4_default_with_machine_readable_license(
     assert "My Post: A Subtitle" in out
     assert "Sebastien Rousseau" in out
     assert "Licensed under CC-BY-4.0" in out
+    # Copy button paired with the attribution <pre> for main.js to wire.
+    assert '<pre id="reuse-attribution">' in out
+    assert 'data-copy="#reuse-attribution"' in out
+    assert 'class="copy-btn"' in out
 
 
 def test_inject_reuse_panel_respects_license_meta_override():

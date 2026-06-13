@@ -101,9 +101,9 @@
            that stays dark in BOTH themes; --rule and --eyebrow are
            paper-tuned accents; --measure-article + --leading-article
            govern the article body column. No consumers in this commit. */
-        --paper:#fdf9f0;
+        --paper:#fafaf6;
         --ink-deep:#0d1b2a;
-        --rule:#d8d2c2;
+        --rule:#e3e0d6;
         --eyebrow:#0d1b2a;
         --measure-article:62ch;
         --leading-article:1.65;
@@ -243,36 +243,44 @@
       aside.pull-quote cite{display:block;margin-top:12px;font-style:normal;font-family:var(--type-body);font-size:.75rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-mute)}
       aside.pull-quote cite::before{content:"\2014\00a0"}
       hr.section-rule{border:0;border-top:1px solid var(--rule);max-width:var(--measure-article);margin:32px 0}
-      .share-rail{display:flex;gap:8px;padding:0;margin:0 0 24px;list-style:none}
-      .share-rail li{margin:0}
+      /* Share + action rails. Both: outer <nav> is a positioning shell,
+         inner <ul> is the flex flow with list-style: none. Without the
+         ul scope, default disc bullets showed through. */
+      .share-rail{margin:0 0 24px}
+      .share-rail>ul{display:flex;gap:8px;padding:0;margin:0;list-style:none}
+      .share-rail li{margin:0;list-style:none}
       .share-rail a,.share-rail button{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;border:1px solid var(--border);background:var(--paper);color:var(--ink-mute);cursor:pointer;text-decoration:none;transition:color .2s ease,border-color .2s ease,background .2s ease}
       .share-rail a:hover,.share-rail button:hover{color:var(--ink-deep);border-color:var(--ink-deep);background:var(--bg);opacity:1}
       .share-rail svg{width:16px;height:16px;display:block;fill:currentColor}
-      /* Fixed left rail on tablet+, inline on small screens. The rail is
-         injected at the top of main.content's wrap-div; inline rendering
-         on small screens puts it directly above the article body, which
-         is reasonable as a share affordance. */
       @media (min-width:64em){
-        .share-rail--sticky{position:fixed;inset-inline-start:24px;top:calc(var(--nav-h) + 96px);flex-direction:column;z-index:50;margin:0}
+        .share-rail--sticky{position:fixed;inset-inline-start:24px;top:calc(var(--nav-h) + 96px);z-index:50;margin:0}
+        .share-rail--sticky>ul{flex-direction:column}
       }
       .share-rail--card a,.share-rail--card button{width:28px;height:28px;color:var(--paper);border-color:transparent;background:transparent}
       .share-rail--card a:hover,.share-rail--card button:hover{color:var(--paper);border-color:var(--paper);background:transparent}
       .share-rail--card svg{width:14px;height:14px}
-      .action-rail{display:flex;gap:8px;list-style:none;padding:0;margin:0 0 24px}
-      .action-rail li{margin:0}
+      .action-rail{margin:0 0 24px}
+      .action-rail>ul{display:flex;gap:8px;padding:0;margin:0;list-style:none}
+      .action-rail li{margin:0;list-style:none}
       .action-rail a,.action-rail button{display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:8px 14px;border:1px solid var(--border);background:var(--paper);color:var(--ink-deep);border-radius:999px;text-decoration:none;font-size:.75rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;font-family:var(--type-body);transition:border-color .2s ease,background .2s ease,color .2s ease}
       .action-rail a:hover,.action-rail button:hover{border-color:var(--ink-deep);background:var(--ink-deep);color:var(--paper);opacity:1}
       .action-rail svg{width:14px;height:14px;display:block;fill:currentColor}
-      /* Fixed right rail on tablet+, sticky bottom bar on mobile,
-         inline on the in-between range. Match the share-rail breakpoint
-         (64em) so both float at the same viewport size. */
       @media (min-width:64em){
-        .action-rail--sticky{position:fixed;inset-inline-end:24px;top:calc(var(--nav-h) + 96px);flex-direction:column;z-index:50;margin:0}
+        .action-rail--sticky{position:fixed;inset-inline-end:24px;top:calc(var(--nav-h) + 96px);z-index:50;margin:0}
+        .action-rail--sticky>ul{flex-direction:column}
       }
       @media (max-width:47.9375em){
-        .action-rail--sticky{position:fixed;inset-inline:0;bottom:0;justify-content:center;padding:12px;background:var(--paper);border-top:1px solid var(--rule);z-index:50;border-radius:0;margin:0}
+        .action-rail--sticky{position:fixed;inset-inline:0;bottom:0;background:var(--paper);border-top:1px solid var(--rule);z-index:50;border-radius:0;margin:0;padding:12px}
+        .action-rail--sticky>ul{justify-content:center}
         .action-rail--sticky a,.action-rail--sticky button{flex:1 1 0;max-width:160px}
       }
+      /* Clipboard copy buttons inside cite popover + reuse panel —
+         small ghost-pill style, gives a 2s visual confirmation via
+         [data-copied] flipped by main.js. */
+      .copy-btn{display:inline-flex;align-items:center;gap:6px;margin-top:8px;padding:6px 12px;border:1px solid var(--border);background:transparent;color:var(--ink-deep);border-radius:999px;font-size:.6875rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;font-family:var(--type-body);transition:border-color .2s ease,background .2s ease,color .2s ease}
+      .copy-btn:hover{border-color:var(--ink-deep);background:var(--ink-deep);color:var(--paper)}
+      .copy-btn[data-copied="1"]{border-color:var(--ink-deep);background:var(--ink-deep);color:var(--paper)}
+      .copy-btn[data-copied="1"]::after{content:" ✓"}
       .card--editorial{display:flex;flex-direction:column;gap:8px;background:var(--ink-deep);color:var(--paper);padding:24px;border:none;border-radius:0;box-shadow:none;text-decoration:none}
       .card--editorial:hover{opacity:1}
       .card--editorial .eyebrow{color:var(--paper);opacity:.7}
