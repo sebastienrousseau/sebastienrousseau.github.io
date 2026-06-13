@@ -287,7 +287,63 @@
 
       h1,h2,h3,h4,h5,h6{font-family:var(--type-display);font-weight:600;letter-spacing:-.015em;margin:0;color:inherit;text-wrap:balance}
       p,li{text-wrap:pretty}
-      @media print{nav,header,footer,.ap-search,.ap-lang,.skip,.gh-stats-row,.setup-finale,.share-block,.related-section,.speculation-rules{display:none!important}main{max-width:none!important;padding:0!important}body{background:#fff!important;color:#000!important;font-size:11pt;line-height:1.45}a{color:#000;text-decoration:underline}a[href^="http"]:after{content:" (" attr(href) ")";font-size:9pt;color:#444}img{max-width:100%!important;page-break-inside:avoid}h1,h2,h3{page-break-after:avoid}pre,blockquote{page-break-inside:avoid;border-left:2px solid #000/* rtl-safe-ignore — print stylesheet */}}
+      /* ---------- FT-tier print stylesheet. Removes interactive chrome,
+         forces serif body, surfaces footnote and source text inline,
+         shows the URL after every external link, and adds a print
+         masthead from .eyebrow + h1. @page sets the source URL in the
+         running footer for citation-ready output. ---------- */
+      @media print{
+        @page{size:A4;margin:18mm 16mm;@bottom-left{content:"sebastienrousseau.com";font-family:serif;font-size:9pt;color:#555}@bottom-right{content:counter(page) " / " counter(pages);font-family:serif;font-size:9pt;color:#555}}
+        nav,header.ap-nav,.ap-nav,footer,.ap-search,.ap-lang,.skip,.ap-progress,.reading-progress,.gh-stats-row,.setup-finale,.share-block,.share-rail,.share-rail--sticky,.share-rail--card,.action-rail,.action-rail--sticky,.related-section,.speculation-rules,.crumbs,.topic-breadcrumb,.glass-premium,.btn-sweep::after,.theme-toggle{display:none!important}
+        html,body{background:#fff!important;color:#000!important;font-family:Georgia,"Times New Roman",Times,serif!important;font-size:11pt;line-height:1.45}
+        main,main.content{max-width:none!important;padding:0!important;display:block!important}
+        .ap-hero,section.ap-hero{padding:0!important;background:transparent!important}
+        .eyebrow{color:#000!important;font-family:Georgia,Times,serif!important;font-size:9pt;letter-spacing:.12em;text-transform:uppercase;margin:0 0 6pt}
+        .deck{color:#222!important;font-family:Georgia,Times,serif!important;font-size:12pt;max-width:none}
+        .byline-strap{color:#444!important;font-family:Georgia,Times,serif!important;font-size:9pt;letter-spacing:.06em}
+        h1,h2,h3,h4,h5,h6{font-family:Georgia,Times,serif!important;color:#000!important;page-break-after:avoid;text-wrap:initial}
+        h1{font-size:24pt;line-height:1.15;margin:0 0 8pt}
+        h2{font-size:16pt;margin:18pt 0 6pt}
+        h3{font-size:13pt;margin:14pt 0 4pt}
+        p,li{color:#000!important;max-width:none;orphans:3;widows:3}
+        a{color:#000!important;text-decoration:underline}
+        a[href^="http"]::after,a[href^="/"]::after{content:" (" attr(href) ")";font-size:9pt;color:#444}
+        a[href^="#"]::after,nav.crumbs a::after,.footnotes a::after{content:""!important}
+        img,figure{max-width:100%!important;page-break-inside:avoid}
+        pre,blockquote,aside.pull-quote,table{page-break-inside:avoid}
+        aside.pull-quote{font-style:italic;color:#000!important;border-left:2pt solid #000;padding:0 0 0 12pt;margin:12pt 0;font-family:Georgia,Times,serif!important}
+        aside.pull-quote::before{content:""!important}
+        hr.section-rule{border-top:1pt solid #000;margin:18pt 0}
+        .footnotes{font-size:9pt;color:#000!important;border-top:1pt solid #000;margin-top:18pt;padding-top:6pt}
+        .footnotes li{margin-bottom:3pt}
+        .article-sources,.article-sources-list,.sources{font-size:9pt;color:#000!important;page-break-before:auto}
+        .reuse,.cite-popover{display:none!important}
+        details[open] summary,details summary{display:none!important}
+        details[open]>*:not(summary){display:block!important}
+        pre{border-left:2pt solid #000/* rtl-safe-ignore — print stylesheet */;padding:6pt 8pt;font-family:"Courier New",Courier,monospace!important;font-size:9pt;white-space:pre-wrap}
+      }
+      /* prefers-contrast: more — push the FT-tier components to AAA
+         contrast minimums. The eyebrow + byline-strap default to muted
+         tokens for editorial restraint; high-contrast mode promotes
+         them to --ink. The deck moves from --ink-soft to --ink. The
+         share-rail and action-rail gain heavier borders. */
+      @media (prefers-contrast: more){
+        .eyebrow{color:var(--ink)}
+        .deck{color:var(--ink)}
+        .byline-strap{color:var(--ink)}
+        .share-rail a,.share-rail button,.action-rail a,.action-rail button{border-width:2px;color:var(--ink);border-color:var(--ink)}
+        aside.pull-quote{color:var(--ink)}
+        aside.pull-quote::before{color:var(--ink)}
+        hr.section-rule{border-top-width:2px;border-top-color:var(--ink)}
+      }
+      /* prefers-reduced-transparency: reduce — explicit fallback. The
+         glass + glass-premium rules above are already gated on a
+         no-preference query, so they don't apply here; this block
+         also drops the .card--editorial 24% paper-bg overlay (if
+         any) and any other translucent overlay we add later. */
+      @media (prefers-reduced-transparency: reduce){
+        .glass,.glass-premium{background:var(--card)!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important;border-color:var(--border)!important;box-shadow:var(--shadow)!important}
+      }
 
       .skip{position:absolute;left:-9999px;top:-9999px}
       .skip:focus{left:12px;top:12px;background:var(--ink);color:#fff;padding:10px 16px;z-index:300;border-radius:8px}
