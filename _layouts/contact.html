@@ -135,6 +135,34 @@
           --border:#3a3a3c;
         }
       }
+      /* ---------- Glass surface tokens + utilities. Opaque --card
+         fallback first; promoted to translucent glass only when the
+         engine supports backdrop-filter AND the user hasn't asked for
+         reduced transparency. Body text never sits on glass surfaces
+         (HTMLCS can't compute contrast through translucency — the same
+         constraint that keeps .ap-nav opaque). ---------- */
+      :root{
+        --glass-bg:oklch(1 0 0 / .55);
+        --glass-edge:oklch(1 0 0 / .15);
+        --glass-shadow:0 8px 32px rgba(0,0,0,.12);
+      }
+      [data-theme="dark"]{--glass-bg:oklch(0.17 0.01 250 / .55);--glass-shadow:0 8px 32px rgba(0,0,0,.5)}
+      @media (prefers-color-scheme: dark){html:not([data-theme="light"]){--glass-bg:oklch(0.17 0.01 250 / .55);--glass-shadow:0 8px 32px rgba(0,0,0,.5)}}
+      .glass,.glass-premium{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow)}
+      @supports (backdrop-filter: blur(1px)){
+        @media (prefers-reduced-transparency: no-preference){
+          .glass{background:var(--glass-bg);backdrop-filter:blur(20px) saturate(160%);-webkit-backdrop-filter:blur(20px) saturate(160%);border-color:var(--glass-edge);box-shadow:var(--glass-shadow)}
+          .glass-premium{background:var(--glass-bg);backdrop-filter:blur(24px) saturate(1.6);-webkit-backdrop-filter:blur(24px) saturate(1.6);border-color:transparent;box-shadow:inset 0 1px oklch(1 0 0 / .15),inset 0 -1px oklch(0 0 0 / .10),var(--glass-shadow)}
+        }
+      }
+      @media (prefers-contrast: more){.glass,.glass-premium{background:var(--card);backdrop-filter:none;-webkit-backdrop-filter:none;border-color:var(--border)}}
+      /* Light-sweep hover for pill CTAs — hover-capable, motion-tolerant
+         pointers only; paint-only transform on an overlay. */
+      @media (hover:hover) and (prefers-reduced-motion: no-preference){
+        .btn-sweep{position:relative;overflow:hidden}
+        .btn-sweep::after{content:"";position:absolute;inset:0;background:linear-gradient(105deg,transparent 40%,rgba(255,255,255,.35) 50%,transparent 60%);transform:translateX(-120%);transition:transform .6s ease;pointer-events:none}
+        .btn-sweep:hover::after{transform:translateX(120%)}
+      }
       *{box-sizing:border-box}
       html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
       body{
@@ -145,9 +173,32 @@
       }
       img{max-width:100%;height:auto;display:block}
       .reading-progress{position:fixed;top:0;left:0;width:100%;height:3px;background:var(--accent, #0056b3);transform:scaleX(0);transform-origin:0 50%;z-index:9999;pointer-events:none;will-change:transform;transition:transform .12s linear}
+      /* Soft glow on the progress bar; engines without color-mix drop
+         the declaration harmlessly. The bar itself stays JS-driven
+         (main.js) — it tracks the <main> article, not the document, and
+         keeps aria-valuenow in sync, which scroll(root) couldn't. */
+      .reading-progress{box-shadow:0 0 12px color-mix(in srgb,var(--accent) 55%,transparent)}
+      /* Zero-JS scroll-driven nav elevation (Chromium 115+) — paint-only
+         box-shadow over the first 150px of scroll, no CLS impact. */
+      @media (prefers-reduced-motion: no-preference){
+        @supports (animation-timeline: scroll()){
+          .ap-nav{animation:nav-elevate linear both;animation-timeline:scroll(root);animation-range:0 150px}
+        }
+      }
+      @keyframes nav-elevate{to{box-shadow:0 8px 24px -12px rgba(0,0,0,.22)}}
       .topic-breadcrumb{font-size:13px;color:var(--ink-mute, #6e6e73);margin:0 auto 16px;max-width:var(--max-wide);padding:0 var(--pad-x)}
       .topic-breadcrumb a{color:var(--ink-mute, #6e6e73)}
       .topic-breadcrumb a:hover{color:var(--accent, #0056b3)}
+      /* Visible breadcrumb trail — injected by postbuild above the H1 hero
+         on every BlogPosting page; mirrors the BreadcrumbList JSON-LD. */
+      .crumbs{max-width:var(--max-wide);margin:0 auto;padding:14px var(--pad-x) 0;font-size:13px}
+      .crumbs ol{list-style:none;display:flex;flex-wrap:wrap;align-items:center;margin:0;padding:0}
+      .crumbs li{display:inline-flex;align-items:center;min-height:24px}
+      .crumbs li+li::before{content:"\203A";margin:0 8px;color:var(--ink-mute, #6e6e73)}
+      [dir="rtl"] .crumbs li+li::before{content:"\2039"}
+      .crumbs a{color:var(--ink-mute, #6e6e73);padding:2px 0}
+      .crumbs a:hover{color:var(--accent, #0056b3);opacity:1}
+      .crumbs a[aria-current="page"]{color:var(--ink, #111);font-weight:500}
       .topic-lede{font-size:18px;line-height:1.5;color:var(--ink-soft);max-width:760px;margin:8px auto 0}
       @media (prefers-reduced-motion: reduce){.reading-progress{transition:none}}
       a{color:var(--accent);text-decoration:none;transition:opacity .2s ease}
@@ -300,6 +351,16 @@
       main table tr:last-child td{border-bottom:none}
       main table code{background:var(--cl-grey-100, #f1f3f7);padding:1px 5px;border-radius:4px;font-size:12.5px}
       @media (max-width:640px){main table{font-size:13.5px}main table th,main table td{padding:10px 12px;min-width:140px}}
+      /* Card-collapse for labelled article tables below 48em — postbuild
+         stamps data-label="<column header>" on every td (.table--cards). */
+      @media (max-width:47.9375em){
+        main table.table--cards thead{position:absolute;clip-path:inset(50%);height:1px;width:1px;overflow:hidden;white-space:nowrap}
+        main table.table--cards tbody,main table.table--cards tr{display:block}
+        main table.table--cards tr{margin:0 0 14px;border:1px solid var(--cl-grey-200, #e3e6ed);border-radius:12px;overflow:hidden}
+        main table.table--cards td{display:grid;grid-template-columns:minmax(7rem,35%) 1fr;gap:4px 12px;min-width:0;padding:9px 14px}
+        main table.table--cards td::before{content:attr(data-label);font-weight:600;font-size:12px;color:var(--ink-mute, #6e6e73)}
+        main table.table--cards td:last-child{border-bottom:none}
+      }
       /* ---------- Article hero banner (figure inserted by postbuild from
          frontmatter `banner:`). LCP-relevant: must be the first image
          after the H1. fetchpriority="high" set inline by the postbuild
@@ -909,7 +970,7 @@
               </div>
             </div>
           </div>
-          <a class="ap-cta-mini" href="/contact/index.html" aria-label="Get in touch">Get in touch ›</a>
+          <a class="ap-cta-mini btn-sweep" href="/contact/index.html" aria-label="Get in touch">Get in touch ›</a>
           <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="Toggle navigation">☰</label>
         </div>
       </div>
