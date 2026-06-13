@@ -69,6 +69,7 @@ _LANDING_THRESHOLD = 3
 _TAG_FM_RE = re.compile(r'^tags:\s*"?([^"\n]+)"?', re.MULTILINE)
 _TITLE_FM_RE = re.compile(r'^title:\s*"?([^"\n]+?)"?\s*$', re.MULTILINE)
 _DATE_FM_RE = re.compile(r'^date:\s*"?([^"\n]+?)"?\s*$', re.MULTILINE)
+_DATED_SLUG_RE = re.compile(r"^(\d{4}-\d{2}-\d{2})-(.+)$")
 
 
 def _alias_map(taxonomy: dict) -> dict[str, str]:
@@ -80,21 +81,53 @@ def _alias_map(taxonomy: dict) -> dict[str, str]:
     return out
 
 
-def _resolved_tag_counts(taxonomy: dict) -> collections.Counter[str]:
+def _post_meta(path: Path) -> tuple[str | None, str, str, str] | None:
+    """Extract (title, iso-date, slug, raw-tags-line) from a post.
+    Returns None for posts that don't have a dated filename or don't
+    carry a tags frontmatter line."""
+    text = path.read_text(encoding="utf-8", errors="ignore")
+    tags_m = _TAG_FM_RE.search(text)
+    if not tags_m:
+        return None
+    title_m = _TITLE_FM_RE.search(text)
+    title = title_m.group(1) if title_m else path.stem
+    stem_m = _DATED_SLUG_RE.match(path.stem)
+    if not stem_m:
+        return title, "", path.stem, tags_m.group(1)
+    return title, stem_m.group(1), path.stem, tags_m.group(1)
+
+
+def _walk_posts(taxonomy: dict) -> tuple[
+    collections.Counter[str],
+    dict[str, list[tuple[str, str, str]]],
+]:
+    """Return (per-canonical post counts, per-canonical [(title, iso-date,
+    slug), …] sorted newest-first)."""
     amap = _alias_map(taxonomy)
     counts: collections.Counter[str] = collections.Counter()
+    posts: dict[str, list[tuple[str, str, str]]] = collections.defaultdict(list)
     for path in sorted((ROOT / "_posts").glob("*.md")):
         if path.name in {"tags.md", "categories.md"}:
             continue
-        text = path.read_text(encoding="utf-8", errors="ignore")
-        m = _TAG_FM_RE.search(text)
-        if not m:
+        meta = _post_meta(path)
+        if not meta:
             continue
-        for raw in m.group(1).split(","):
+        title, iso_date, slug, tags_line = meta
+        seen: set[str] = set()
+        for raw in tags_line.split(","):
             tag = raw.strip().strip('"').strip("'").strip()
             canon = amap.get(tag.lower())
-            if canon:
+            if canon and canon not in seen:
                 counts[canon] += 1
+                posts[canon].append((title, iso_date, slug))
+                seen.add(canon)
+    for canon in posts:
+        posts[canon].sort(key=lambda p: p[1] or "0000", reverse=True)
+    return counts, posts
+
+
+def _resolved_tag_counts(taxonomy: dict) -> collections.Counter[str]:
+    counts, _ = _walk_posts(taxonomy)
     return counts
 
 
@@ -114,25 +147,39 @@ def _render_pillar_cards(
     counts: collections.Counter[str],
     by_pillar: dict[str, list[str]],
 ) -> str:
+    """Pillar cards are NAVIGATION (anchors that jump to the matching
+    pillar section below) — not section headings themselves. Using
+    <h3> in here would skip from the page <h1> to <h3> with no
+    intervening <h2>, which is a WCAG hierarchy violation. The
+    accessible name comes from the <a>'s aria-label."""
     cards: list[str] = []
     for pillar in PILLAR_ORDER:
         slugs = by_pillar.get(pillar, [])
         article_count = sum(counts.get(s, 0) for s in slugs)
+        label = (
+            f"{PILLAR_LABELS[pillar]} — {len(slugs)} tags, "
+            f"{article_count} articles"
+        )
         cards.append(
-            f'<a href="#pillar-{pillar}" class="tag-pillar-card">'
+            f'<a href="#pillar-{pillar}" class="tag-pillar-card" '
+            f'aria-label="{label}">'
             f'<p class="eyebrow">{PILLAR_LABELS[pillar]}</p>'
-            f'<h3>{len(slugs)} tags · {article_count} articles</h3>'
+            f'<p class="tag-pillar-count"><strong>{len(slugs)} tags</strong> · '
+            f'{article_count} articles</p>'
             f'<p>{PILLAR_DECKS[pillar]}</p>'
             f"</a>"
         )
     return (
-        '<section aria-label="Editorial pillars" class="tag-pillar-grid">'
+        '<nav aria-label="Editorial pillars" class="tag-pillar-grid">'
         + "".join(cards)
-        + "</section>"
+        + "</nav>"
     )
 
 
 def _render_featured_tags(taxonomy: dict, counts: collections.Counter[str]) -> str:
+    """Featured cards mirror the pillar cards — anchors, not headings.
+    Card text reads as the link label; aria-label provides the SR
+    announcement when the visible text doesn't say "articles"."""
     top = sorted(
         ((slug, n) for slug, n in counts.items() if n >= _LANDING_THRESHOLD),
         key=lambda x: -x[1],
@@ -140,18 +187,46 @@ def _render_featured_tags(taxonomy: dict, counts: collections.Counter[str]) -> s
     cards = []
     for slug, n in top:
         entry = taxonomy[slug]
+        label = f'{entry["name"]} — {n} articles'
         cards.append(
-            f'<a href="#tag-{slug}" class="tag-featured-card">'
-            f'<h3>{entry["name"]}</h3>'
-            f'<p class="meta">{n} articles</p>'
+            f'<a href="#tag-{slug}" class="tag-featured-card" '
+            f'aria-label="{label}">'
+            f'<strong>{entry["name"]}</strong>'
+            f'<span class="meta">{n} articles</span>'
             f"</a>"
         )
     return (
         '<section aria-labelledby="featured-heading" class="tag-featured">'
         '<h2 id="featured-heading">Featured topics</h2>'
-        '<section class="tag-featured-grid" aria-label="Featured topics list">'
+        '<nav class="tag-featured-grid" aria-label="Featured topics list">'
         + "".join(cards)
-        + "</section></section>"
+        + "</nav></section>"
+    )
+
+
+def _render_tag_post_list(posts_for_tag: list[tuple[str, str, str]]) -> str:
+    """Render a <details> block of articles under this tag, newest first.
+    Title text deliberately keeps the post's own title — search will
+    surface them and that's the editorial deep-link readers click.
+
+    ``<time datetime="YYYY-MM-DD">`` carries the machine-readable date
+    so screen readers announce "12 June 2026", not the literal slug
+    string. AAA requirement (WCAG 1.3.1)."""
+    if not posts_for_tag:
+        return ""
+    items = []
+    for title, iso_date, slug in posts_for_tag:
+        date_label = (
+            f'<time datetime="{iso_date}">{iso_date}</time>' if iso_date else ""
+        )
+        items.append(f'<li><a href="/{slug}/">{title}</a> {date_label}</li>')
+    n = len(posts_for_tag)
+    return (
+        f'<details class="tag-posts"><summary>'
+        f"View {n} article{'s' if n != 1 else ''}"
+        f"</summary><ul>"
+        + "".join(items)
+        + "</ul></details>"
     )
 
 
@@ -159,6 +234,7 @@ def _render_pillar_section(
     pillar: str,
     taxonomy: dict,
     counts: collections.Counter[str],
+    posts: dict[str, list[tuple[str, str, str]]],
     by_pillar: dict[str, list[str]],
 ) -> str:
     items = []
@@ -170,7 +246,9 @@ def _render_pillar_section(
         items.append(
             f'<li id="tag-{slug}"><strong>{entry["name"]}</strong>'
             f' <span class="meta">— {n} article{"s" if n != 1 else ""}</span>'
-            f"<p>{entry['description'].strip()}</p></li>"
+            f"<p>{entry['description'].strip()}</p>"
+            f"{_render_tag_post_list(posts.get(slug, []))}"
+            f"</li>"
         )
     return (
         f'<section id="pillar-{pillar}" class="tag-pillar-section">'
@@ -182,25 +260,35 @@ def _render_pillar_section(
     )
 
 
-def _render_body(taxonomy: dict, counts: collections.Counter[str]) -> str:
+def _render_body(
+    taxonomy: dict,
+    counts: collections.Counter[str],
+    posts: dict[str, list[tuple[str, str, str]]],
+) -> str:
     by_pillar = _group_by_pillar(taxonomy, counts)
     parts: list[str] = [
-        '<p class="deck">Browse the editorial corpus by pillar, by featured topic, or by canonical tag. Tags with fewer than 3 articles are shown but currently have no dedicated landing page.</p>',
+        '<p class="deck">Browse the editorial corpus by pillar, by featured topic, or by canonical tag. Each tag expands to show the articles it covers.</p>',
         _render_pillar_cards(counts, by_pillar),
         _render_featured_tags(taxonomy, counts),
     ]
     parts.extend(
-        _render_pillar_section(pillar, taxonomy, counts, by_pillar) for pillar in PILLAR_ORDER
+        _render_pillar_section(pillar, taxonomy, counts, posts, by_pillar)
+        for pillar in PILLAR_ORDER
     )
     return "\n\n".join(parts)
 
 
-def _write_cover(out_dir: Path, taxonomy: dict, counts: collections.Counter[str]) -> Path:
+def _write_cover(
+    out_dir: Path,
+    taxonomy: dict,
+    counts: collections.Counter[str],
+    posts: dict[str, list[tuple[str, str, str]]],
+) -> Path:
     out_dir.mkdir(parents=True, exist_ok=True)
     if not SOURCE.is_file():
         raise FileNotFoundError(f"missing source {SOURCE}")
     template = SOURCE.read_text(encoding="utf-8")
-    body = _render_body(taxonomy, counts)
+    body = _render_body(taxonomy, counts, posts)
     # Swap the [[content]] placeholder for the curated body. If the
     # placeholder isn't present, append to the end so we never lose
     # frontmatter or the banner line.
@@ -221,9 +309,9 @@ def main() -> int:
         print(f"build_tags: no taxonomy at {TAXONOMY}, skipping", file=sys.stderr)
         return 0
     taxonomy = yaml.safe_load(TAXONOMY.read_text(encoding="utf-8")) or {}
-    counts = _resolved_tag_counts(taxonomy)
+    counts, posts = _walk_posts(taxonomy)
     out_dir = (ROOT / args.dir).resolve()
-    dest = _write_cover(out_dir, taxonomy, counts)
+    dest = _write_cover(out_dir, taxonomy, counts, posts)
     landing = sum(1 for n in counts.values() if n >= _LANDING_THRESHOLD)
     print(
         f"build_tags: wrote {dest.relative_to(ROOT)} — "

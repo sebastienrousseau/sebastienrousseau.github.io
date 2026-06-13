@@ -1023,9 +1023,15 @@ def inject_cite_popover(html: str) -> str:
     # canonical <meta name="description"> the article already carries.
     desc_m = _DESCRIPTION_RE.search(html)
     desc = _unesc(desc_m.group(1)) if desc_m else ""
+    # Heading-skip-safe: the cite popover is a <details> disclosure
+    # widget whose <summary> already serves as the accessible name.
+    # An <h3> here under the article's body <h2>s would still parse,
+    # but inside a closed <details> the screen-reader heading tree
+    # gets confusing. Use a <p class="cite-title"> with strong text
+    # — same visual weight, no heading-skip claim.
     meta_block = (
         f'<header class="cite-meta">'
-        f"<h3>{_esc(title)}</h3>"
+        f'<p class="cite-title"><strong>{_esc(title)}</strong></p>'
         + (f"<p>{_esc(desc)}</p>" if desc else "")
         + "</header>"
     )
@@ -1080,9 +1086,13 @@ def inject_reuse_panel(html: str) -> str:
     # meta description (rare; default articles do).
     desc_m = _DESCRIPTION_RE.search(html)
     desc = _unesc(desc_m.group(1)) if desc_m else ""
+    # Same heading-skip-safe pattern as the cite popover: the panel's
+    # <h2 id="reuse-heading"> ("Republish this article") IS the
+    # section heading; the title preview is a strong paragraph, not
+    # another h-level inside it.
     meta_block = (
         f'<header class="reuse-meta">'
-        f"<h3>{_esc(title)}</h3>"
+        f'<p class="reuse-title"><strong>{_esc(title)}</strong></p>'
         + (f"<p>{_esc(desc)}</p>" if desc else "")
         + "</header>"
     )

@@ -2508,7 +2508,7 @@ def test_inject_cite_popover_emits_meta_and_all_five_formats_with_copy_buttons()
     # Meta header — title + description surface above the format blocks
     # so the reader sees what they're committing to citing/sharing.
     assert 'class="cite-meta"' in out
-    assert "<h3>My Post: A Subtitle</h3>" in out
+    assert "<strong>My Post: A Subtitle</strong>" in out
     assert "<p>A brief description of the article.</p>" in out
     # All 5 format headings present
     for fmt in ("BibTeX", "RIS", "Vancouver", "Chicago", "APA"):
@@ -2539,7 +2539,7 @@ def test_inject_cite_popover_skips_description_paragraph_when_meta_missing():
     # than empty so the popover stays compact when an article has no
     # description meta.
     assert 'class="cite-meta"' in out
-    assert "<h3>My Post: A Subtitle</h3>" in out
+    assert "<strong>My Post: A Subtitle</strong>" in out
     assert "<p></p>" not in out
 
 
@@ -2580,7 +2580,7 @@ def test_inject_reuse_panel_emits_share_card_with_title_description_license():
     # Visible share-card preview — title + description above the
     # licence + attribution lines, like the cite popover.
     assert 'class="reuse-meta"' in out
-    assert "<h3>My Post: A Subtitle</h3>" in out
+    assert "<strong>My Post: A Subtitle</strong>" in out
     assert "<p>A brief description of the article.</p>" in out
     # Multi-line attribution payload includes title + description so
     # what the reader copies is a complete share card, not a one-liner.
@@ -2604,7 +2604,7 @@ def test_inject_reuse_panel_compact_when_description_missing():
     out = inject_reuse_panel(_ws2_page(head=head))
     # Title still renders in the preview; no empty <p></p> for the
     # missing description; attribution still works.
-    assert "<h3>My Post: A Subtitle</h3>" in out
+    assert "<strong>My Post: A Subtitle</strong>" in out
     assert "<p></p>" not in out
     assert "Originally published at" in out
 
