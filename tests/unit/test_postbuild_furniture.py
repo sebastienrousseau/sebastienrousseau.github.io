@@ -2163,14 +2163,23 @@ def test_inject_share_rail_renders_all_five_anchors_at_top_of_main():
 
     out = inject_share_rail(_ws2_page())
     assert 'class="share-rail share-rail--sticky"' in out
-    # All five service hostnames present
-    assert "twitter.com/intent/tweet" in out
-    assert "linkedin.com/sharing/share-offsite" in out
-    assert "facebook.com/sharer/sharer.php" in out
+    # All five service endpoints present, with platform-aware URLs.
+    # LinkedIn uses the feed composer (?shareActive=true) because the
+    # share-offsite dialog ignores ?text= today — that gets us the
+    # "Share your thoughts…" prompt pre-filled.
+    assert "twitter.com/intent/tweet?text=" in out
+    assert "linkedin.com/feed/?shareActive=true&amp;text=" in out
+    assert "facebook.com/sharer/sharer.php?u=" in out
     assert "wa.me/?text=" in out
     assert 'href="mailto:?subject=' in out
-    # Title + URL are URL-encoded in the X / WhatsApp combo params
+    # Title + URL get URL-encoded into the X / LinkedIn / WhatsApp
+    # payloads.
     assert "My%20Post%3A%20A%20Subtitle" in out
+    # Description renders into the LinkedIn pre-fill so the share
+    # dialog opens with a complete card (title + description + URL),
+    # which is what the user expects when they click "Share on
+    # LinkedIn" — empty share dialogs get closed.
+    assert "A%20brief%20description%20of%20the%20article" in out
     # Rail sits inside main's wrap-div, before the body paragraph
     assert out.index("share-rail--sticky") < out.index("<p>body</p>")
 

@@ -631,6 +631,82 @@ def _share_li(href: str, label: str, glyph: str) -> str:
     )
 
 
+def _share_payload(html: str) -> dict[str, str] | None:
+    """Extract canonical URL + og:title + meta description and return
+    the per-platform pre-fill strings the share rail needs. Returns
+    None if canonical or title is missing."""
+    url_m = _CANONICAL_RE.search(html)
+    title_m = _OG_TITLE_RE.search(html)
+    if not (url_m and title_m):
+        return None
+    url = url_m.group(1)
+    # Strip the /index.html canonical suffix so previews carry a clean
+    # trailing-slash URL — browsers resolve either.
+    if url.endswith("/index.html"):
+        url = url[: -len("/index.html")] + "/"
+    title = _unesc(title_m.group(1))
+    desc_m = _DESCRIPTION_RE.search(html)
+    desc = _unesc(desc_m.group(1)) if desc_m else ""
+    return {
+        "url": url,
+        "title": title,
+        "desc": desc,
+    }
+
+
+def _share_rail_items(payload: dict[str, str], labels: dict[str, str]) -> str:
+    """Render the 5 share-rail <li> anchors. Per-platform pre-fill
+    strategy (the richer the prompt, the more likely the reader
+    actually shares — empty share dialogs get closed):
+
+    * **X** — 280 char limit; title + URL fits, description usually
+      doesn't, so it's omitted and the OG meta card carries the
+      visual preview.
+    * **LinkedIn** — the share-offsite dialog ignores ``?text=`` today,
+      so we open the feed composer (``?shareActive=true``) with
+      title + description + URL pre-filled. That's the
+      "Share your thoughts…" prompt the FT pattern lives in.
+    * **Facebook** — stripped all ``?quote=`` support in 2017. Only
+      the URL gets through; OG meta drives the preview card.
+    * **WhatsApp + email** — no length cap, so they get the full
+      title + description + URL share-card payload.
+    """
+    url, title, desc = payload["url"], payload["title"], payload["desc"]
+    x_text = f"{title}\n\n{url}"
+    wa_text = "\n\n".join(p for p in (title, desc, url) if p)
+    email_body = "\n\n".join(p for p in (desc, f"Read more: {url}") if p)
+    li_text = "\n\n".join(p for p in (title, desc, url) if p)
+    enc_url = _url_quote(url, safe="")
+    enc_title = _url_quote(title, safe="")
+    return (
+        _share_li(
+            f"https://twitter.com/intent/tweet?text={_url_quote(x_text, safe='')}",
+            labels.get("Share.x", "Share on X"),
+            _SVG_X,
+        )
+        + _share_li(
+            f"https://www.linkedin.com/feed/?shareActive=true&text={_url_quote(li_text, safe='')}",
+            labels.get("Share.linkedin", "Share on LinkedIn"),
+            _SVG_LI,
+        )
+        + _share_li(
+            f"https://www.facebook.com/sharer/sharer.php?u={enc_url}",
+            labels.get("Share.facebook", "Share on Facebook"),
+            _SVG_FB,
+        )
+        + _share_li(
+            f"https://wa.me/?text={_url_quote(wa_text, safe='')}",
+            labels.get("Share.whatsapp", "Share on WhatsApp"),
+            _SVG_WA,
+        )
+        + _share_li(
+            f"mailto:?subject={enc_title}&body={_url_quote(email_body, safe='')}",
+            labels.get("Share.email", "Share by email"),
+            _SVG_EMAIL,
+        )
+    )
+
+
 def inject_share_rail(html: str) -> str:
     """Render an FT-style vertical share rail (X / LinkedIn / Facebook
     / WhatsApp / email) at the top of the article body. CSS makes it
@@ -642,44 +718,11 @@ def inject_share_rail(html: str) -> str:
         return html
     if 'class="share-rail share-rail--sticky"' in html:
         return html
-    url_m = _CANONICAL_RE.search(html)
-    title_m = _OG_TITLE_RE.search(html)
-    if not (url_m and title_m):
+    payload = _share_payload(html)
+    if payload is None:
         return html
-    url = url_m.group(1)
-    title = _unesc(title_m.group(1))
-    enc_url = _url_quote(url, safe="")
-    enc_title = _url_quote(title, safe="")
-    enc_combo = _url_quote(f"{title} {url}", safe="")
-    labels = _labels(html)
-    aria = _esc(labels.get("Share", "Share"), quote=True)
-    items = (
-        _share_li(
-            f"https://twitter.com/intent/tweet?text={enc_combo}",
-            labels.get("Share.x", "Share on X"),
-            _SVG_X,
-        )
-        + _share_li(
-            f"https://www.linkedin.com/sharing/share-offsite/?url={enc_url}",
-            labels.get("Share.linkedin", "Share on LinkedIn"),
-            _SVG_LI,
-        )
-        + _share_li(
-            f"https://www.facebook.com/sharer/sharer.php?u={enc_url}",
-            labels.get("Share.facebook", "Share on Facebook"),
-            _SVG_FB,
-        )
-        + _share_li(
-            f"https://wa.me/?text={enc_combo}",
-            labels.get("Share.whatsapp", "Share on WhatsApp"),
-            _SVG_WA,
-        )
-        + _share_li(
-            f"mailto:?subject={enc_title}&body={enc_url}",
-            labels.get("Share.email", "Share by email"),
-            _SVG_EMAIL,
-        )
-    )
+    items = _share_rail_items(payload, _labels(html))
+    aria = _esc(_labels(html).get("Share", "Share"), quote=True)
     rail = (
         f'<nav class="share-rail share-rail--sticky" aria-label="{aria}">'
         f"<ul>{items}</ul></nav>"
