@@ -23,8 +23,11 @@ constants + author identity constants only.
 
 from __future__ import annotations
 
+import json as _json
 import re
 import sys
+from html import escape as _esc
+from html import unescape as _unesc
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[3]))
@@ -124,6 +127,8 @@ LABELS_EN: dict[str, str] = {
     "Link to": "Link to",
     "Table of contents": "Table of contents",
     "Topics": "Topics",
+    "Home": "Home",
+    "Breadcrumb": "Breadcrumb",
 }
 LABELS_FR: dict[str, str] = {
     "Published": "Publié le",
@@ -138,6 +143,8 @@ LABELS_FR: dict[str, str] = {
     "Link to": "Lien vers",
     "Table of contents": "Table des matières",
     "Topics": "Sujets",
+    "Home": "Accueil",
+    "Breadcrumb": "Fil d'Ariane",
 }
 
 
@@ -355,6 +362,140 @@ def inject_article_furniture(html: str) -> str:
     if not fragment:
         return html
     return _HERO_RE.sub(rf"\1{fragment}\2", html, count=1)
+
+
+_LDJSON_BLOCK_RE = re.compile(
+    r'<script type="application/ld\+json"[^>]*>([\s\S]*?)</script>',
+    re.IGNORECASE,
+)
+_BASE_URL = "https://sebastienrousseau.com"
+
+
+def _relativize(url: str) -> str:
+    if url.startswith(_BASE_URL):
+        return url[len(_BASE_URL) :] or "/"
+    return url
+
+
+def _trail_from_node(node: object) -> list[tuple[str, str]]:
+    """Extract a 3-level ``(name, root-relative href)`` trail from one
+    JSON-LD node; empty list when the node isn't a well-formed
+    ``BreadcrumbList``."""
+    if not isinstance(node, dict) or node.get("@type") != "BreadcrumbList":
+        return []
+    raw = node.get("itemListElement")
+    if not isinstance(raw, list) or len(raw) != 3:
+        return []
+    items: list[tuple[str, str]] = []
+    for entry in raw:
+        if not isinstance(entry, dict):
+            return []
+        name, url = entry.get("name"), entry.get("item")
+        if not (isinstance(name, str) and isinstance(url, str)):
+            return []
+        items.append((name, _relativize(url)))
+    return items
+
+
+def _breadcrumb_items(html: str) -> list[tuple[str, str]]:
+    """Return the article's ``BreadcrumbList`` as ``[(name, href), …]``
+    with hrefs made root-relative. Empty list when no 3-level trail is
+    found (listing / static pages) or the JSON-LD is malformed."""
+    for m in _LDJSON_BLOCK_RE.finditer(html):
+        if '"BreadcrumbList"' not in m.group(1):
+            continue
+        try:
+            data = _json.loads(m.group(1))
+        except ValueError:
+            continue
+        nodes = data.get("@graph", [data]) if isinstance(data, dict) else []
+        for node in nodes:
+            items = _trail_from_node(node)
+            if items:
+                return items
+    return []
+
+
+def inject_breadcrumbs(html: str) -> str:
+    """Render a visible breadcrumb trail mirroring the page's 3-level
+    ``BreadcrumbList`` JSON-LD (Home > Articles > Title), inserted
+    directly above the H1 hero. Names and URLs come from the JSON-LD —
+    already localized by build_translations — so the visible UI can
+    never drift from the structured-data markup."""
+    if '"@type":"BlogPosting"' not in html:
+        return html
+    if 'class="crumbs"' in html:
+        return html
+    items = _breadcrumb_items(html)
+    if not items:
+        return html
+    aria = _esc(_labels(html).get("Breadcrumb", "Breadcrumb"), quote=True)
+    parts = []
+    for i, (name, url) in enumerate(items):
+        current = ' aria-current="page"' if i == 2 else ""
+        parts.append(f'<li><a href="{_esc(url, quote=True)}"{current}>{_esc(name)}</a></li>')
+    nav = f'<nav class="crumbs" aria-label="{aria}"><ol>{"".join(parts)}</ol></nav>'
+    return html.replace('<section class="ap-hero">', f'{nav}<section class="ap-hero">', 1)
+
+
+_TABLE_BLOCK_RE = re.compile(r"<table\b[^>]*>[\s\S]*?</table>", re.IGNORECASE)
+_THEAD_RE = re.compile(r"<thead\b[\s\S]*?</thead>", re.IGNORECASE)
+_TH_TEXT_RE = re.compile(r"<th\b[^>]*>([\s\S]*?)</th>", re.IGNORECASE)
+_TR_RE = re.compile(r"<tr\b[\s\S]*?</tr>", re.IGNORECASE)
+_TD_OPEN_RE = re.compile(r"<td\b", re.IGNORECASE)
+_TABLE_OPEN_RE = re.compile(r"<table\b([^>]*)>", re.IGNORECASE)
+_TAG_STRIP_RE = re.compile(r"<[^>]+>")
+
+
+def _card_label_table(table: str) -> str:
+    """Stamp ``data-label="<column header>"`` on every body ``<td>`` and
+    tag the table ``table--cards`` so CSS can collapse it into stacked
+    cards below 48em. No-op for headerless tables or on re-runs."""
+    if "data-label=" in table or "table--cards" in table:
+        return table
+    head_m = _THEAD_RE.search(table)
+    if not head_m:
+        return table
+    # th text arrives entity-encoded from ssg; unescape before re-escaping
+    # so CSS attr() renders "Q&A", not a raw "&amp;" entity.
+    headers = [
+        _esc(_unesc(_TAG_STRIP_RE.sub("", m.group(1)).strip()), quote=True)
+        for m in _TH_TEXT_RE.finditer(head_m.group(0))
+    ]
+    if not any(headers):
+        return table
+
+    def label_row(row_m: re.Match[str]) -> str:
+        cell = -1
+
+        def label_td(td_m: re.Match[str]) -> str:
+            nonlocal cell
+            cell += 1
+            if cell >= len(headers) or not headers[cell]:
+                return td_m.group(0)
+            return f'<td data-label="{headers[cell]}"'
+
+        return _TD_OPEN_RE.sub(label_td, row_m.group(0))
+
+    body = _TR_RE.sub(label_row, table[head_m.end() :])
+
+    def add_class(open_m: re.Match[str]) -> str:
+        attrs = open_m.group(1)
+        if 'class="' in attrs:
+            return f"<table{attrs}>".replace('class="', 'class="table--cards ', 1)
+        return f'<table{attrs} class="table--cards">'
+
+    head = _TABLE_OPEN_RE.sub(add_class, table[: head_m.end()], count=1)
+    return head + body
+
+
+def inject_table_labels(html: str) -> str:
+    """Make every article table mobile-fluid: per-cell ``data-label``
+    attributes (mirroring the column headers) + a ``table--cards``
+    class for the card-collapse CSS. BlogPosting pages only."""
+    if '"@type":"BlogPosting"' not in html:
+        return html
+    return _TABLE_BLOCK_RE.sub(lambda m: _card_label_table(m.group(0)), html)
 
 
 _OG_IMAGE_RE = re.compile(

@@ -1823,3 +1823,228 @@ def test_inject_lang_switcher_is_idempotent():
         af._alternates_for_en_slug = real
         af._resolve_en_slug = real_resolve
     assert once == twice
+
+
+# ---------------------------------------------------------------------------
+# inject_breadcrumbs — visible trail mirroring the BreadcrumbList JSON-LD
+# ---------------------------------------------------------------------------
+
+_CRUMB_BASE = "https://sebastienrousseau.com"
+_CRUMB_LD = (
+    '<script type="application/ld+json">{"@graph":[{"@type":"BlogPosting"},'
+    '{"@type":"BreadcrumbList","itemListElement":['
+    '{"@type":"ListItem","position":1,"name":"Home","item":"https://sebastienrousseau.com/"},'
+    '{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/articles/"},'
+    '{"@type":"ListItem","position":3,"name":"My Post","item":"https://sebastienrousseau.com/2026-01-01-my-post/"}'
+    "]}]}</script>"
+)
+_CRUMB_HERO = '<section class="ap-hero"><h1>My Post</h1></section>'
+
+
+def _crumb_page(ld: str = _CRUMB_LD, lang: str = "en-GB") -> str:
+    return f'<html lang="{lang}"><head>{ld}</head><body>{_CRUMB_HERO}<main></main></body></html>'
+
+
+def test_inject_breadcrumbs_no_op_without_blogposting():
+    from postbuild_lib.article_furniture import inject_breadcrumbs
+
+    html = "<p>plain page, no BlogPosting graph</p>"
+    assert inject_breadcrumbs(html) == html
+
+
+def test_inject_breadcrumbs_renders_trail_above_hero():
+    from postbuild_lib.article_furniture import inject_breadcrumbs
+
+    out = inject_breadcrumbs(_crumb_page())
+    assert '<nav class="crumbs" aria-label="Breadcrumb"><ol>' in out
+    assert '<li><a href="/">Home</a></li>' in out
+    assert '<li><a href="/articles/">Articles</a></li>' in out
+    assert '<a href="/2026-01-01-my-post/" aria-current="page">My Post</a>' in out
+    assert out.index('class="crumbs"') < out.index('class="ap-hero"')
+
+
+def test_inject_breadcrumbs_idempotent():
+    from postbuild_lib.article_furniture import inject_breadcrumbs
+
+    once = inject_breadcrumbs(_crumb_page())
+    assert inject_breadcrumbs(once) == once
+
+
+def test_inject_breadcrumbs_localizes_aria_label_french():
+    from postbuild_lib.article_furniture import inject_breadcrumbs
+
+    out = inject_breadcrumbs(_crumb_page(lang="fr-FR"))
+    assert 'aria-label="Fil d&#x27;Ariane"' in out
+
+
+def test_inject_breadcrumbs_escapes_title_html():
+    from postbuild_lib.article_furniture import inject_breadcrumbs
+
+    ld = _CRUMB_LD.replace("My Post", "Q&A <Rust>")
+    out = inject_breadcrumbs(_crumb_page(ld))
+    # The visible anchor escapes the JSON-LD name; the raw <Rust> stays
+    # only inside the (legitimately unescaped) JSON-LD script block.
+    assert 'aria-current="page">Q&amp;A &lt;Rust&gt;</a>' in out
+    assert ">Q&A <Rust></a>" not in out
+
+
+def test_inject_breadcrumbs_no_op_when_trail_not_three_levels():
+    from postbuild_lib.article_furniture import inject_breadcrumbs
+
+    ld = (
+        '<script type="application/ld+json">{"@graph":[{"@type":"BlogPosting"},'
+        '{"@type":"BreadcrumbList","itemListElement":['
+        '{"@type":"ListItem","position":1,"name":"Home","item":"https://sebastienrousseau.com/"}'
+        "]}]}</script>"
+    )
+    html = _crumb_page(ld)
+    assert inject_breadcrumbs(html) == html
+
+
+def test_breadcrumb_items_skips_malformed_and_non_breadcrumb_blocks():
+    from postbuild_lib.article_furniture import _breadcrumb_items
+
+    html = (
+        '<script type="application/ld+json">{"@type":"WebSite"}</script>'
+        '<script type="application/ld+json">{"BreadcrumbList" oops}</script>'
+        '<script type="application/ld+json">["BreadcrumbList"]</script>'
+    )
+    assert _breadcrumb_items(html) == []
+
+
+def test_breadcrumb_items_requires_dict_entries_with_string_fields():
+    from postbuild_lib.article_furniture import _breadcrumb_items
+
+    ld = (
+        '<script type="application/ld+json">'
+        '{"@type":"BreadcrumbList","itemListElement":['
+        '{"@type":"ListItem","position":1,"name":"Home","item":"https://sebastienrousseau.com/"},'
+        "null,"
+        '{"@type":"ListItem","position":3,"name":"T","item":"https://sebastienrousseau.com/t/"}'
+        "]}</script>"
+    )
+    assert _breadcrumb_items(ld) == []
+    ld_bad_name = ld.replace("null", '{"@type":"ListItem","position":2,"name":7,"item":"x"}')
+    assert _breadcrumb_items(ld_bad_name) == []
+
+
+def test_breadcrumb_items_handles_non_list_itemlist_and_non_dict_nodes():
+    from postbuild_lib.article_furniture import _breadcrumb_items
+
+    html = (
+        '<script type="application/ld+json">'
+        '{"@graph":["BreadcrumbList",'
+        '{"@type":"BreadcrumbList","itemListElement":"BreadcrumbList"}]}'
+        "</script>"
+    )
+    assert _breadcrumb_items(html) == []
+
+
+def test_breadcrumb_items_root_relativizes_and_keeps_external_urls():
+    from postbuild_lib.article_furniture import _breadcrumb_items
+
+    ld = (
+        '<script type="application/ld+json">'
+        '{"@type":"BreadcrumbList","itemListElement":['
+        '{"@type":"ListItem","position":1,"name":"Home","item":"https://sebastienrousseau.com"},'
+        '{"@type":"ListItem","position":2,"name":"Ext","item":"https://example.com/x/"},'
+        '{"@type":"ListItem","position":3,"name":"T","item":"https://sebastienrousseau.com/t/"}'
+        "]}</script>"
+    )
+    assert _breadcrumb_items(ld) == [
+        ("Home", "/"),
+        ("Ext", "https://example.com/x/"),
+        ("T", "/t/"),
+    ]
+
+
+# ---------------------------------------------------------------------------
+# inject_table_labels — data-label card-collapse stamping
+# ---------------------------------------------------------------------------
+
+_TBL_LD = '<script type="application/ld+json">{"@type":"BlogPosting"}</script>'
+
+
+def _tbl_page(table: str) -> str:
+    return f"<html>{_TBL_LD}<main>{table}</main></html>"
+
+
+_TBL = (
+    '<table class="table"><thead><tr><th>Layer</th><th>Why <em>It</em> Matters</th></tr></thead>'
+    "<tbody><tr><td>HSM</td><td>keys</td></tr>"
+    "<tr><td>API</td><td>contracts</td></tr></tbody></table>"
+)
+
+
+def test_inject_table_labels_no_op_without_blogposting():
+    from postbuild_lib.article_furniture import inject_table_labels
+
+    html = f"<html><main>{_TBL}</main></html>"
+    assert inject_table_labels(html) == html
+
+
+def test_inject_table_labels_stamps_labels_and_class():
+    from postbuild_lib.article_furniture import inject_table_labels
+
+    out = inject_table_labels(_tbl_page(_TBL))
+    assert '<table class="table--cards table">' in out
+    assert '<td data-label="Layer">HSM</td>' in out
+    # inline markup in the header is stripped from the label
+    assert '<td data-label="Why It Matters">keys</td>' in out
+    assert '<td data-label="Layer">API</td>' in out
+
+
+def test_inject_table_labels_idempotent():
+    from postbuild_lib.article_furniture import inject_table_labels
+
+    once = inject_table_labels(_tbl_page(_TBL))
+    assert inject_table_labels(once) == once
+
+
+def test_inject_table_labels_adds_class_to_bare_table():
+    from postbuild_lib.article_furniture import inject_table_labels
+
+    bare = _TBL.replace('<table class="table">', "<table>")
+    out = inject_table_labels(_tbl_page(bare))
+    assert '<table class="table--cards">' in out
+
+
+def test_inject_table_labels_no_op_without_thead_or_headers():
+    from postbuild_lib.article_furniture import inject_table_labels
+
+    headless = "<table><tbody><tr><td>x</td></tr></tbody></table>"
+    empty_th = "<table><thead><tr><th> </th></tr></thead><tbody><tr><td>x</td></tr></tbody></table>"
+    page = _tbl_page(headless + empty_th)
+    assert inject_table_labels(page) == page
+
+
+def test_inject_table_labels_extra_or_unlabelled_cells_left_bare():
+    from postbuild_lib.article_furniture import inject_table_labels
+
+    tbl = (
+        "<table><thead><tr><th>A</th><th></th></tr></thead>"
+        "<tbody><tr><td>1</td><td>2</td><td>3</td></tr></tbody></table>"
+    )
+    out = inject_table_labels(_tbl_page(tbl))
+    assert '<td data-label="A">1</td>' in out
+    # empty header → cell 2 unlabelled; cell 3 beyond the header count
+    assert "<td>2</td><td>3</td>" in out
+
+
+def test_inject_table_labels_escapes_header_text():
+    from postbuild_lib.article_furniture import inject_table_labels
+
+    tbl = (
+        '<table><thead><tr><th>Q&amp;A "quote"</th></tr></thead>'
+        "<tbody><tr><td>x</td></tr></tbody></table>"
+    )
+    out = inject_table_labels(_tbl_page(tbl))
+    assert 'data-label="Q&amp;A &quot;quote&quot;"' in out
+
+
+def test_inject_table_labels_handles_multiple_tables():
+    from postbuild_lib.article_furniture import inject_table_labels
+
+    out = inject_table_labels(_tbl_page(_TBL + _TBL.replace("Layer", "Signal")))
+    assert out.count("table--cards") == 2
+    assert '<td data-label="Signal">HSM</td>' in out
