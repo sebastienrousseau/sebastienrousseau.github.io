@@ -13,5 +13,22 @@
   "Article pagination": "Artikelnavigatie",
   "Link to": "Link naar",
   "Home": "Home",
-  "Breadcrumb": "Kruimelpad"
+  "Breadcrumb": "Kruimelpad",
+  "Byline": "Naamregel",
+  "Share": "Delen",
+  "Share.x": "Delen op X",
+  "Share.linkedin": "Delen op LinkedIn",
+  "Share.facebook": "Delen op Facebook",
+  "Share.whatsapp": "Delen via WhatsApp",
+  "Share.email": "Delen via e-mail",
+  "Action.aria": "Artikelacties",
+  "Action.savePdf": "PDF opslaan",
+  "Action.listen": "Luisteren",
+  "Action.cite": "Citeren",
+  "Cite.heading": "Dit artikel citeren",
+  "Reuse.heading": "Dit artikel herpubliceren",
+  "Reuse.license": "Dit artikel valt onder de licentie",
+  "Reuse.attribution": "Herpublicatie vereist attributie aan de canonieke URL.",
+  "Footnotes.heading": "Voetnoten",
+  "Footnotes.return": "Terug naar tekst"
 }

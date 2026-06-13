@@ -13,5 +13,22 @@
   "Article pagination": "Stránkování článků",
   "Link to": "Odkaz na",
   "Home": "Domů",
-  "Breadcrumb": "Drobečková navigace"
+  "Breadcrumb": "Drobečková navigace",
+  "Byline": "Autor",
+  "Share": "Sdílet",
+  "Share.x": "Sdílet na X",
+  "Share.linkedin": "Sdílet na LinkedIn",
+  "Share.facebook": "Sdílet na Facebooku",
+  "Share.whatsapp": "Sdílet na WhatsApp",
+  "Share.email": "Sdílet e-mailem",
+  "Action.aria": "Akce článku",
+  "Action.savePdf": "Uložit PDF",
+  "Action.listen": "Poslechnout",
+  "Action.cite": "Citovat",
+  "Cite.heading": "Citovat tento článek",
+  "Reuse.heading": "Znovu publikovat tento článek",
+  "Reuse.license": "Tento článek je licencován pod",
+  "Reuse.attribution": "Při opětovné publikaci uveďte odkaz na kanonickou URL.",
+  "Footnotes.heading": "Poznámky pod čarou",
+  "Footnotes.return": "Návrat k textu"
 }

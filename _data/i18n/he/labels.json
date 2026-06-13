@@ -13,5 +13,22 @@
   "Article pagination": "מיון מאמרים",
   "Link to": "קישור אל",
   "Home": "דף הבית",
-  "Breadcrumb": "שביל ניווט"
+  "Breadcrumb": "שביל ניווט",
+  "Byline": "חתימה",
+  "Share": "שתפו",
+  "Share.x": "שתפו ב-X",
+  "Share.linkedin": "שתפו ב-LinkedIn",
+  "Share.facebook": "שתפו בפייסבוק",
+  "Share.whatsapp": "שתפו בוואטסאפ",
+  "Share.email": "שתפו במייל",
+  "Action.aria": "פעולות כתבה",
+  "Action.savePdf": "שמרו PDF",
+  "Action.listen": "האזינו",
+  "Action.cite": "ציטוט",
+  "Cite.heading": "ציטוט הכתבה",
+  "Reuse.heading": "פרסום מחדש של הכתבה",
+  "Reuse.license": "כתבה זו מפורסמת ברישיון",
+  "Reuse.attribution": "פרסום מחדש מחייב ייחוס לכתובת ה-URL הקאנונית.",
+  "Footnotes.heading": "הערות שוליים",
+  "Footnotes.return": "חזרה לטקסט"
 }

@@ -13,5 +13,22 @@
   "Article pagination": "Paginare articol",
   "Link to": "Link către",
   "Home": "Acasă",
-  "Breadcrumb": "Cale de navigare"
+  "Breadcrumb": "Cale de navigare",
+  "Byline": "Semnătură",
+  "Share": "Partajează",
+  "Share.x": "Partajează pe X",
+  "Share.linkedin": "Partajează pe LinkedIn",
+  "Share.facebook": "Partajează pe Facebook",
+  "Share.whatsapp": "Partajează pe WhatsApp",
+  "Share.email": "Partajează prin e-mail",
+  "Action.aria": "Acțiuni articol",
+  "Action.savePdf": "Salvează PDF",
+  "Action.listen": "Ascultă",
+  "Action.cite": "Citează",
+  "Cite.heading": "Citează acest articol",
+  "Reuse.heading": "Republică acest articol",
+  "Reuse.license": "Acest articol este licențiat sub",
+  "Reuse.attribution": "Republicarea necesită atribuirea la URL-ul canonic.",
+  "Footnotes.heading": "Note de subsol",
+  "Footnotes.return": "Înapoi la text"
 }

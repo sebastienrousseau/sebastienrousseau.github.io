@@ -13,5 +13,22 @@
   "Article pagination": "Makale sayfalama",
   "Link to": "Bağlantı",
   "Home": "Ana Sayfa",
-  "Breadcrumb": "Gezinti yolu"
+  "Breadcrumb": "Gezinti yolu",
+  "Byline": "İmza",
+  "Share": "Paylaş",
+  "Share.x": "X'te paylaş",
+  "Share.linkedin": "LinkedIn'de paylaş",
+  "Share.facebook": "Facebook'ta paylaş",
+  "Share.whatsapp": "WhatsApp'ta paylaş",
+  "Share.email": "E-posta ile paylaş",
+  "Action.aria": "Makale eylemleri",
+  "Action.savePdf": "PDF olarak kaydet",
+  "Action.listen": "Dinle",
+  "Action.cite": "Alıntıla",
+  "Cite.heading": "Bu makaleyi alıntıla",
+  "Reuse.heading": "Bu makaleyi yeniden yayınla",
+  "Reuse.license": "Bu makale şu lisans altında yayınlanmıştır",
+  "Reuse.attribution": "Yeniden yayın, kanonik URL'ye atıfta bulunulmasını gerektirir.",
+  "Footnotes.heading": "Dipnotlar",
+  "Footnotes.return": "Metne dön"
 }

@@ -13,5 +13,22 @@
   "Article pagination": "Navigasi artikel",
   "Link to": "Tautan ke",
   "Home": "Beranda",
-  "Breadcrumb": "Jejak navigasi"
+  "Breadcrumb": "Jejak navigasi",
+  "Byline": "Tanda Tangan",
+  "Share": "Bagikan",
+  "Share.x": "Bagikan ke X",
+  "Share.linkedin": "Bagikan ke LinkedIn",
+  "Share.facebook": "Bagikan ke Facebook",
+  "Share.whatsapp": "Bagikan ke WhatsApp",
+  "Share.email": "Bagikan lewat email",
+  "Action.aria": "Tindakan artikel",
+  "Action.savePdf": "Simpan PDF",
+  "Action.listen": "Dengar",
+  "Action.cite": "Kutip",
+  "Cite.heading": "Kutip artikel ini",
+  "Reuse.heading": "Terbitkan ulang artikel ini",
+  "Reuse.license": "Artikel ini berlisensi",
+  "Reuse.attribution": "Penerbitan ulang memerlukan atribusi ke URL kanonis.",
+  "Footnotes.heading": "Catatan kaki",
+  "Footnotes.return": "Kembali ke teks"
 }

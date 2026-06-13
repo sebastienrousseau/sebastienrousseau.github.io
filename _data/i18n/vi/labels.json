@@ -13,5 +13,22 @@
   "Article pagination": "Phân trang bài viết",
   "Link to": "Liên kết đến",
   "Home": "Trang chủ",
-  "Breadcrumb": "Đường dẫn điều hướng"
+  "Breadcrumb": "Đường dẫn điều hướng",
+  "Byline": "Tác giả",
+  "Share": "Chia sẻ",
+  "Share.x": "Chia sẻ trên X",
+  "Share.linkedin": "Chia sẻ trên LinkedIn",
+  "Share.facebook": "Chia sẻ trên Facebook",
+  "Share.whatsapp": "Chia sẻ trên WhatsApp",
+  "Share.email": "Chia sẻ qua email",
+  "Action.aria": "Hành động bài viết",
+  "Action.savePdf": "Lưu PDF",
+  "Action.listen": "Nghe",
+  "Action.cite": "Trích dẫn",
+  "Cite.heading": "Trích dẫn bài này",
+  "Reuse.heading": "Đăng lại bài này",
+  "Reuse.license": "Bài viết này được cấp phép theo",
+  "Reuse.attribution": "Đăng lại yêu cầu ghi nguồn đến URL chính tắc.",
+  "Footnotes.heading": "Chú thích",
+  "Footnotes.return": "Quay lại văn bản"
 }

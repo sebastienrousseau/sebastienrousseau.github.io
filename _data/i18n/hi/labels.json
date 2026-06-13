@@ -13,5 +13,22 @@
   "Article pagination": "लेख पृष्ठ-क्रम",
   "Link to": "लिंक: ",
   "Home": "होम",
-  "Breadcrumb": "ब्रेडक्रंब"
+  "Breadcrumb": "ब्रेडक्रंब",
+  "Byline": "लेखक",
+  "Share": "साझा करें",
+  "Share.x": "X पर साझा करें",
+  "Share.linkedin": "LinkedIn पर साझा करें",
+  "Share.facebook": "Facebook पर साझा करें",
+  "Share.whatsapp": "WhatsApp पर साझा करें",
+  "Share.email": "ईमेल से साझा करें",
+  "Action.aria": "लेख क्रियाएँ",
+  "Action.savePdf": "PDF सहेजें",
+  "Action.listen": "सुनें",
+  "Action.cite": "उद्धरण",
+  "Cite.heading": "इस लेख को उद्धृत करें",
+  "Reuse.heading": "इस लेख को पुनः प्रकाशित करें",
+  "Reuse.license": "यह लेख लाइसेंस के अंतर्गत है",
+  "Reuse.attribution": "पुनः प्रकाशन के लिए कैनोनिकल URL का श्रेय आवश्यक है।",
+  "Footnotes.heading": "फुटनोट",
+  "Footnotes.return": "पाठ पर वापस जाएँ"
 }

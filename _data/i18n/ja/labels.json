@@ -13,5 +13,22 @@
   "Article pagination": "記事ページネーション",
   "Link to": "リンク先",
   "Home": "ホーム",
-  "Breadcrumb": "パンくずリスト"
+  "Breadcrumb": "パンくずリスト",
+  "Byline": "署名",
+  "Share": "共有",
+  "Share.x": "Xで共有",
+  "Share.linkedin": "LinkedInで共有",
+  "Share.facebook": "Facebookで共有",
+  "Share.whatsapp": "WhatsAppで共有",
+  "Share.email": "メールで共有",
+  "Action.aria": "記事のアクション",
+  "Action.savePdf": "PDFを保存",
+  "Action.listen": "聴く",
+  "Action.cite": "引用",
+  "Cite.heading": "この記事を引用",
+  "Reuse.heading": "この記事を転載",
+  "Reuse.license": "本記事のライセンスは",
+  "Reuse.attribution": "転載の際は正規URLへの帰属表示が必要です。",
+  "Footnotes.heading": "脚注",
+  "Footnotes.return": "本文に戻る"
 }

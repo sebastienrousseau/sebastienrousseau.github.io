@@ -13,5 +13,22 @@
   "Article pagination": "Навігація статтями",
   "Link to": "Посилання на",
   "Home": "Головна",
-  "Breadcrumb": "Навігаційний ланцюжок"
+  "Breadcrumb": "Навігаційний ланцюжок",
+  "Byline": "Підпис",
+  "Share": "Поділитися",
+  "Share.x": "Поділитися в X",
+  "Share.linkedin": "Поділитися в LinkedIn",
+  "Share.facebook": "Поділитися у Facebook",
+  "Share.whatsapp": "Поділитися у WhatsApp",
+  "Share.email": "Поділитися електронною поштою",
+  "Action.aria": "Дії зі статтею",
+  "Action.savePdf": "Зберегти PDF",
+  "Action.listen": "Слухати",
+  "Action.cite": "Цитувати",
+  "Cite.heading": "Цитувати цю статтю",
+  "Reuse.heading": "Перевидати цю статтю",
+  "Reuse.license": "Ця стаття поширюється за ліцензією",
+  "Reuse.attribution": "Перевидання вимагає посилання на канонічну URL-адресу.",
+  "Footnotes.heading": "Виноски",
+  "Footnotes.return": "Повернутися до тексту"
 }

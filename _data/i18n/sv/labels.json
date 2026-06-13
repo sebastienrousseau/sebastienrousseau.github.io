@@ -13,5 +13,22 @@
   "Article pagination": "Artikelpaginering",
   "Link to": "Länk till",
   "Home": "Hem",
-  "Breadcrumb": "Brödsmulor"
+  "Breadcrumb": "Brödsmulor",
+  "Byline": "Signatur",
+  "Share": "Dela",
+  "Share.x": "Dela på X",
+  "Share.linkedin": "Dela på LinkedIn",
+  "Share.facebook": "Dela på Facebook",
+  "Share.whatsapp": "Dela på WhatsApp",
+  "Share.email": "Dela via e-post",
+  "Action.aria": "Artikelåtgärder",
+  "Action.savePdf": "Spara PDF",
+  "Action.listen": "Lyssna",
+  "Action.cite": "Citera",
+  "Cite.heading": "Citera den här artikeln",
+  "Reuse.heading": "Återpublicera den här artikeln",
+  "Reuse.license": "Den här artikeln är licensierad under",
+  "Reuse.attribution": "Återpublicering kräver attribution till den kanoniska URL:en.",
+  "Footnotes.heading": "Fotnoter",
+  "Footnotes.return": "Tillbaka till texten"
 }

@@ -13,5 +13,22 @@
   "Article pagination": "Article pagination",
   "Link to": "Link to",
   "Home": "Home",
-  "Breadcrumb": "Breadcrumb"
+  "Breadcrumb": "Breadcrumb",
+  "Byline": "Byline",
+  "Share": "Share",
+  "Share.x": "Share on X",
+  "Share.linkedin": "Share on LinkedIn",
+  "Share.facebook": "Share on Facebook",
+  "Share.whatsapp": "Share on WhatsApp",
+  "Share.email": "Share by email",
+  "Action.aria": "Article actions",
+  "Action.savePdf": "Save PDF",
+  "Action.listen": "Listen",
+  "Action.cite": "Cite",
+  "Cite.heading": "Cite this article",
+  "Reuse.heading": "Republish this article",
+  "Reuse.license": "This article is licensed under",
+  "Reuse.attribution": "Republication requires attribution to the canonical URL.",
+  "Footnotes.heading": "Footnotes",
+  "Footnotes.return": "Return to text"
 }

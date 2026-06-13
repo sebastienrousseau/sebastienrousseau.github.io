@@ -13,5 +13,22 @@
   "Article pagination": "Постраничная навигация по статьям",
   "Link to": "Ссылка на",
   "Home": "Главная",
-  "Breadcrumb": "Навигационная цепочка"
+  "Breadcrumb": "Навигационная цепочка",
+  "Byline": "Автор",
+  "Share": "Поделиться",
+  "Share.x": "Поделиться в X",
+  "Share.linkedin": "Поделиться в LinkedIn",
+  "Share.facebook": "Поделиться в Facebook",
+  "Share.whatsapp": "Поделиться в WhatsApp",
+  "Share.email": "Поделиться по эл. почте",
+  "Action.aria": "Действия со статьёй",
+  "Action.savePdf": "Сохранить PDF",
+  "Action.listen": "Слушать",
+  "Action.cite": "Цитировать",
+  "Cite.heading": "Цитировать эту статью",
+  "Reuse.heading": "Опубликовать заново",
+  "Reuse.license": "Эта статья распространяется по лицензии",
+  "Reuse.attribution": "При повторной публикации требуется указание канонической ссылки.",
+  "Footnotes.heading": "Примечания",
+  "Footnotes.return": "Вернуться к тексту"
 }

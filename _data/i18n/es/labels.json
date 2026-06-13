@@ -13,5 +13,22 @@
   "Article pagination": "Paginación de artículos",
   "Link to": "Enlace a",
   "Home": "Inicio",
-  "Breadcrumb": "Ruta de navegación"
+  "Breadcrumb": "Ruta de navegación",
+  "Byline": "Firma",
+  "Share": "Compartir",
+  "Share.x": "Compartir en X",
+  "Share.linkedin": "Compartir en LinkedIn",
+  "Share.facebook": "Compartir en Facebook",
+  "Share.whatsapp": "Compartir en WhatsApp",
+  "Share.email": "Compartir por correo",
+  "Action.aria": "Acciones del artículo",
+  "Action.savePdf": "Guardar PDF",
+  "Action.listen": "Escuchar",
+  "Action.cite": "Citar",
+  "Cite.heading": "Citar este artículo",
+  "Reuse.heading": "Volver a publicar este artículo",
+  "Reuse.license": "Este artículo se publica bajo",
+  "Reuse.attribution": "La republicación requiere atribución a la URL canónica.",
+  "Footnotes.heading": "Notas al pie",
+  "Footnotes.return": "Volver al texto"
 }

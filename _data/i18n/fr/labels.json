@@ -13,5 +13,22 @@
   "Article pagination": "Pagination des articles",
   "Link to": "Lien vers",
   "Home": "Accueil",
-  "Breadcrumb": "Fil d'Ariane"
+  "Breadcrumb": "Fil d'Ariane",
+  "Byline": "Signature",
+  "Share": "Partager",
+  "Share.x": "Partager sur X",
+  "Share.linkedin": "Partager sur LinkedIn",
+  "Share.facebook": "Partager sur Facebook",
+  "Share.whatsapp": "Partager sur WhatsApp",
+  "Share.email": "Partager par e-mail",
+  "Action.aria": "Actions de l'article",
+  "Action.savePdf": "Enregistrer en PDF",
+  "Action.listen": "Écouter",
+  "Action.cite": "Citer",
+  "Cite.heading": "Citer cet article",
+  "Reuse.heading": "Republier cet article",
+  "Reuse.license": "Cet article est sous licence",
+  "Reuse.attribution": "La republication nécessite l'attribution à l'URL canonique.",
+  "Footnotes.heading": "Notes de bas de page",
+  "Footnotes.return": "Retour au texte"
 }

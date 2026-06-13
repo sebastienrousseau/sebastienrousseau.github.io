@@ -13,5 +13,22 @@
   "Article pagination": "Paginação do artigo",
   "Link to": "Link para",
   "Home": "Início",
-  "Breadcrumb": "Trilha de navegação"
+  "Breadcrumb": "Trilha de navegação",
+  "Byline": "Assinatura",
+  "Share": "Compartilhar",
+  "Share.x": "Compartilhar no X",
+  "Share.linkedin": "Compartilhar no LinkedIn",
+  "Share.facebook": "Compartilhar no Facebook",
+  "Share.whatsapp": "Compartilhar no WhatsApp",
+  "Share.email": "Compartilhar por e-mail",
+  "Action.aria": "Ações do artigo",
+  "Action.savePdf": "Salvar PDF",
+  "Action.listen": "Ouvir",
+  "Action.cite": "Citar",
+  "Cite.heading": "Citar este artigo",
+  "Reuse.heading": "Republicar este artigo",
+  "Reuse.license": "Este artigo está licenciado sob",
+  "Reuse.attribution": "A republicação exige atribuição à URL canônica.",
+  "Footnotes.heading": "Notas de rodapé",
+  "Footnotes.return": "Voltar ao texto"
 }

@@ -13,5 +13,22 @@
   "Article pagination": "Shafin labarin",
   "Link to": "Hanyar haɗi zuwa",
   "Home": "Gida",
-  "Breadcrumb": "Hanyar kewayawa"
+  "Breadcrumb": "Hanyar kewayawa",
+  "Byline": "Sa hannu",
+  "Share": "Raba",
+  "Share.x": "Raba akan X",
+  "Share.linkedin": "Raba akan LinkedIn",
+  "Share.facebook": "Raba akan Facebook",
+  "Share.whatsapp": "Raba akan WhatsApp",
+  "Share.email": "Raba ta imel",
+  "Action.aria": "Ayyukan labari",
+  "Action.savePdf": "Ajiye PDF",
+  "Action.listen": "Saurara",
+  "Action.cite": "Buga",
+  "Cite.heading": "Buga wannan labari",
+  "Reuse.heading": "Sake buga wannan labari",
+  "Reuse.license": "An lasisin wannan labari a karkashin",
+  "Reuse.attribution": "Sake bugawa na bukatar nuna asalin URL na asali.",
+  "Footnotes.heading": "Bayanan kasa",
+  "Footnotes.return": "Komawa zuwa rubutu"
 }

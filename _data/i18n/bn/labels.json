@@ -13,5 +13,22 @@
   "Article pagination": "নিবন্ধ পেজিনেশন",
   "Link to": "লিঙ্ক",
   "Home": "হোম",
-  "Breadcrumb": "ব্রেডক্রাম্ব"
+  "Breadcrumb": "ব্রেডক্রাম্ব",
+  "Byline": "বাইলাইন",
+  "Share": "শেয়ার করুন",
+  "Share.x": "X-এ শেয়ার করুন",
+  "Share.linkedin": "LinkedIn-এ শেয়ার করুন",
+  "Share.facebook": "Facebook-এ শেয়ার করুন",
+  "Share.whatsapp": "WhatsApp-এ শেয়ার করুন",
+  "Share.email": "ইমেলে শেয়ার করুন",
+  "Action.aria": "নিবন্ধের ক্রিয়া",
+  "Action.savePdf": "PDF সংরক্ষণ",
+  "Action.listen": "শুনুন",
+  "Action.cite": "উদ্ধৃত করুন",
+  "Cite.heading": "এই নিবন্ধটি উদ্ধৃত করুন",
+  "Reuse.heading": "এই নিবন্ধটি পুনঃপ্রকাশ করুন",
+  "Reuse.license": "এই নিবন্ধটি লাইসেন্স করা হয়েছে",
+  "Reuse.attribution": "পুনঃপ্রকাশনার জন্য মূল URL-এর কৃতিত্ব আবশ্যক।",
+  "Footnotes.heading": "পাদটীকা",
+  "Footnotes.return": "পাঠ্যে ফিরে যান"
 }

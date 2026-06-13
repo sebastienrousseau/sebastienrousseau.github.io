@@ -13,5 +13,22 @@
   "Article pagination": "Artikel-Navigation",
   "Link to": "Link zu",
   "Home": "Startseite",
-  "Breadcrumb": "Brotkrümelnavigation"
+  "Breadcrumb": "Brotkrümelnavigation",
+  "Byline": "Autorenzeile",
+  "Share": "Teilen",
+  "Share.x": "Auf X teilen",
+  "Share.linkedin": "Auf LinkedIn teilen",
+  "Share.facebook": "Auf Facebook teilen",
+  "Share.whatsapp": "Auf WhatsApp teilen",
+  "Share.email": "Per E-Mail teilen",
+  "Action.aria": "Artikel-Aktionen",
+  "Action.savePdf": "Als PDF speichern",
+  "Action.listen": "Anhören",
+  "Action.cite": "Zitieren",
+  "Cite.heading": "Diesen Artikel zitieren",
+  "Reuse.heading": "Diesen Artikel republizieren",
+  "Reuse.license": "Dieser Artikel ist lizenziert unter",
+  "Reuse.attribution": "Eine Republikation erfordert Attribution zur kanonischen URL.",
+  "Footnotes.heading": "Fußnoten",
+  "Footnotes.return": "Zurück zum Text"
 }
