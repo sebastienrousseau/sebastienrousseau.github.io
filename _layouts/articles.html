@@ -388,7 +388,41 @@
         .reuse,.cite-popover{display:none!important}
         details[open] summary,details summary{display:none!important}
         details[open]>*:not(summary){display:block!important}
-        pre{border-left:2pt solid #000/* rtl-safe-ignore — print stylesheet */;padding:6pt 8pt;font-family:"Courier New",Courier,monospace!important;font-size:9pt;white-space:pre-wrap}
+        /* Reset the screen `main.content pre / code` background pill +
+           border-radius so the print-mode <pre> doesn't render as a
+           double-nested rounded blob. Specificity-matching the screen
+           rule (main.content pre) is the only reliable way; the bare
+           `pre { … }` rule below loses the cascade. Inline <code> in
+           print uses no background or border — keeping the existing
+           pill makes inline tokens look like clickable pills on
+           paper, which is wrong. */
+        main.content pre,main.content pre>code,main.content code{
+          background:transparent!important;
+          border-radius:0!important;
+          color:#000!important;
+        }
+        main.content code{padding:0 2pt!important;font-family:"Courier New",Courier,monospace!important;font-size:9pt!important}
+        main.content pre{
+          padding:6pt 0 6pt 10pt!important;
+          border:0!important;
+          border-inline-start:2pt solid #000!important;
+          font-family:"Courier New",Courier,monospace!important;
+          font-size:9pt!important;
+          line-height:1.45!important;
+          white-space:pre-wrap;
+          word-break:break-word;
+        }
+        /* Same neutralisation for the cite popover / reuse panel
+           <pre> blocks — they ship with --bg / --paper backgrounds
+           and a 1px border that print as visible boxes. */
+        details.cite-popover pre,section.reuse pre{
+          background:transparent!important;
+          border:0!important;
+          border-inline-start:2pt solid #000!important;
+          border-radius:0!important;
+          padding:6pt 0 6pt 10pt!important;
+          color:#000!important;
+        }
       }
       /* prefers-contrast: more — push the FT-tier components to AAA
          contrast minimums. The eyebrow + byline-strap default to muted
