@@ -521,6 +521,7 @@ def inject_table_labels(html: str) -> str:
 
 _CANONICAL_RE = re.compile(r'<link\s+rel="canonical"\s+href="([^"]+)"', re.IGNORECASE)
 _OG_TITLE_RE = re.compile(r'<meta\s+property="og:title"\s+content="([^"]+)"', re.IGNORECASE)
+_DESCRIPTION_RE = re.compile(r'<meta\s+name="description"\s+content="([^"]+)"', re.IGNORECASE)
 _AP_HERO_OPEN_RE = re.compile(r'(<section class="ap-hero">)(\s*)(<h1>)', re.IGNORECASE)
 _SUB_PARA_RE = re.compile(r'<p class="sub">', re.IGNORECASE)
 _WRAP_CLOSE_RE = re.compile(r"(</div>\s*</main>)", re.IGNORECASE)
@@ -974,6 +975,17 @@ def inject_cite_popover(html: str) -> str:
     formats = _citation_blocks(title, url, date_pub)
     labels = _labels(html)
     copy_label = _esc(labels.get("Cite.copy", "Copy"))
+    # Meta header — title + description give the reader context before
+    # they commit to a citation format. Description comes from the
+    # canonical <meta name="description"> the article already carries.
+    desc_m = _DESCRIPTION_RE.search(html)
+    desc = _unesc(desc_m.group(1)) if desc_m else ""
+    meta_block = (
+        f'<header class="cite-meta">'
+        f"<h3>{_esc(title)}</h3>"
+        + (f"<p>{_esc(desc)}</p>" if desc else "")
+        + "</header>"
+    )
     blocks = []
     for name, body in formats.items():
         target_id = f"cite-{name.lower()}"
@@ -987,7 +999,9 @@ def inject_cite_popover(html: str) -> str:
     popover = (
         f'<details class="cite-popover" id="cite-popover">'
         f'<summary>{_esc(labels.get("Cite.heading", "Cite this article"))}</summary>'
-        f"{''.join(blocks)}</details>"
+        + meta_block
+        + "".join(blocks)
+        + "</details>"
     )
     return _WRAP_CLOSE_RE.sub(popover + r"\1", html, count=1)
 

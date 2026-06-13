@@ -2057,6 +2057,7 @@ def test_inject_table_labels_handles_multiple_tables():
 _WS2_HEAD = (
     '<link rel="canonical" href="https://sebastienrousseau.com/2026-01-01-my-post/">'
     '<meta property="og:title" content="My Post: A Subtitle">'
+    '<meta name="description" content="A brief description of the article.">'
     '<meta name="keywords" content="AI, payments, post-quantum cryptography">'
     '<script type="application/ld+json">'
     '{"@type":"BlogPosting","keywords":"AI, payments, post-quantum cryptography"}'
@@ -2486,7 +2487,7 @@ def test_inject_cite_popover_no_op_without_blogposting():
     assert inject_cite_popover("<p>plain page</p>") == "<p>plain page</p>"
 
 
-def test_inject_cite_popover_emits_all_five_formats_with_copy_buttons():
+def test_inject_cite_popover_emits_meta_and_all_five_formats_with_copy_buttons():
     from postbuild_lib.article_furniture import inject_cite_popover
 
     head = _WS2_HEAD.replace(
@@ -2495,6 +2496,11 @@ def test_inject_cite_popover_emits_all_five_formats_with_copy_buttons():
     )
     out = inject_cite_popover(_ws2_page(head=head))
     assert 'class="cite-popover"' in out and 'id="cite-popover"' in out
+    # Meta header — title + description surface above the format blocks
+    # so the reader sees what they're committing to citing/sharing.
+    assert 'class="cite-meta"' in out
+    assert "<h3>My Post: A Subtitle</h3>" in out
+    assert "<p>A brief description of the article.</p>" in out
     # All 5 format headings present
     for fmt in ("BibTeX", "RIS", "Vancouver", "Chicago", "APA"):
         assert f"<h3>{fmt}</h3>" in out
@@ -2510,6 +2516,22 @@ def test_inject_cite_popover_emits_all_five_formats_with_copy_buttons():
     assert "Rousseau, Sebastien" in out
     # Canonical URL surfaces in every block
     assert out.count("https://sebastienrousseau.com/2026-01-01-my-post/") >= 5
+
+
+def test_inject_cite_popover_skips_description_paragraph_when_meta_missing():
+    from postbuild_lib.article_furniture import inject_cite_popover
+
+    head = _WS2_HEAD.replace(
+        '<meta name="description" content="A brief description of the article.">',
+        "",
+    )
+    out = inject_cite_popover(_ws2_page(head=head))
+    # Title still renders; the <p> description block is omitted rather
+    # than empty so the popover stays compact when an article has no
+    # description meta.
+    assert 'class="cite-meta"' in out
+    assert "<h3>My Post: A Subtitle</h3>" in out
+    assert "<p></p>" not in out
 
 
 def test_inject_cite_popover_idempotent():

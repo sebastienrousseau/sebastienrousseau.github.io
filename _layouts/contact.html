@@ -101,9 +101,9 @@
            that stays dark in BOTH themes; --rule and --eyebrow are
            paper-tuned accents; --measure-article + --leading-article
            govern the article body column. No consumers in this commit. */
-        --paper:#fafaf6;
+        --paper:#ffffff;
         --ink-deep:#0d1b2a;
-        --rule:#e3e0d6;
+        --rule:#e0e0e0;
         --eyebrow:#0d1b2a;
         --measure-article:62ch;
         --leading-article:1.65;
@@ -295,6 +295,12 @@
       details.cite-popover>summary::-webkit-details-marker{display:none}
       details.cite-popover>summary::after{content:"+";float:inline-end;font-weight:400;font-size:1rem}
       details.cite-popover[open]>summary::after{content:"\2212"}
+      /* Meta header — article title + description shown above the
+         citation format blocks so the reader sees what they're about
+         to cite or share. */
+      details.cite-popover .cite-meta{padding:14px 18px 0;border-top:1px solid var(--rule)}
+      details.cite-popover .cite-meta h3{font-family:var(--type-display);font-size:1.125rem;font-weight:600;margin:0 0 8px;color:var(--ink-deep);line-height:1.3;text-transform:none;letter-spacing:0}
+      details.cite-popover .cite-meta p{font-family:var(--type-body);font-size:.9375rem;line-height:1.5;color:var(--ink-soft);margin:0 0 12px;max-width:none}
       details.cite-popover .cite-format{padding:0 18px 14px;border-top:1px solid var(--rule)}
       details.cite-popover .cite-format h3{font-family:var(--type-body);font-size:.6875rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-mute);margin:14px 0 8px}
       details.cite-popover pre{margin:0;padding:12px;background:var(--bg);border:1px solid var(--rule);font-family:var(--type-mono);font-size:.8125rem;line-height:1.5;color:var(--ink);overflow-x:auto;white-space:pre-wrap;word-break:break-word}
