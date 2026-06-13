@@ -376,6 +376,14 @@
       nav.related-tags a.related-tag-chip{display:inline-flex;align-items:center;gap:6px;padding:8px 14px;min-height:44px;border:1px solid var(--rule);background:transparent;color:var(--ink-deep);text-decoration:none;border-radius:999px;font-family:var(--type-body);font-size:.875rem;transition:border-color .2s ease,background .2s ease}
       nav.related-tags a.related-tag-chip:hover{border-color:var(--ink-deep);background:var(--ink-deep);color:var(--paper)}
       nav.related-tags a.related-tag-chip .meta{font-size:.75rem;opacity:.7}
+      /* Paged article listings — /articles/, /articles/page/N/.
+         Pagination nav at the bottom mirrors the FT pattern 1 2 3 … N. */
+      nav.page-nav{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:8px;margin:48px 0 24px;font-family:var(--type-body);font-size:.875rem}
+      nav.page-nav .page-nav-pages{display:flex;flex-wrap:wrap;gap:4px}
+      nav.page-nav a,nav.page-nav .page-nav-num{display:inline-flex;align-items:center;justify-content:center;min-width:44px;min-height:44px;padding:0 12px;border:1px solid var(--rule);background:var(--paper);color:var(--ink-deep);text-decoration:none;transition:border-color .2s ease,background .2s ease,color .2s ease}
+      nav.page-nav a:hover{border-color:var(--ink-deep);background:var(--ink-deep);color:var(--paper)}
+      nav.page-nav .page-nav-num.is-current{background:var(--ink-deep);color:var(--paper);border-color:var(--ink-deep);font-weight:700}
+      nav.page-nav .page-nav-prev,nav.page-nav .page-nav-next{padding:0 18px;font-weight:600;letter-spacing:.04em}
       /* Article body type-scale: tighten in-body H2/H3/P/UL/OL only.
          h1 stays in .ap-hero at its current scale. */
       main.content :is(h2){font-size:clamp(1.625rem,2.6vw,2rem);line-height:1.2;letter-spacing:-.01em;margin:calc(var(--leading-article) * 2em) 0 .5em;max-width:var(--measure-article)}

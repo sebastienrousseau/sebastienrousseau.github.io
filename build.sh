@@ -120,6 +120,11 @@ python3 scripts/generators/build_topics.py
 # /tags/<slug>/index.html per landing-eligible canonical (>=3 posts).
 # Locale forks land in a follow-up WS3 commit.
 python3 scripts/generators/build_tag_landings.py
+# Paged article listings — /articles/page/N/ + locale forks. Must run
+# after ssg has produced /articles/index.html (used as template
+# skeleton) and before build_translations (so the locale variants the
+# generator emits don't get clobbered).
+python3 scripts/generators/build_listings.py
 python3 scripts/generators/build_translations/__main__.py
 python3 scripts/generators/build_lang_feeds.py
 python3 scripts/generators/build_agent_api.py

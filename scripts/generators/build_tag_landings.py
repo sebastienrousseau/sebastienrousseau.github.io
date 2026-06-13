@@ -391,7 +391,7 @@ _HREFLANG_ARTICLE_RE = re.compile(r'href="/(\d{4}-\d{2}-\d{2}-[^/"]+)/"')
 # template. validate_jsonld.py flags them when the <html lang> base
 # doesn't match — see the build's JSON-LD validation step. Update in
 # place for each locale fork.
-_INLANG_RE = re.compile(r'"inLanguage":"(?:en|en-GB|en-US)"')
+_INLANG_RE = re.compile(r'"inLanguage":\s*"(?:en|en-GB|en-US)"')
 
 
 def _localise_html_links(
