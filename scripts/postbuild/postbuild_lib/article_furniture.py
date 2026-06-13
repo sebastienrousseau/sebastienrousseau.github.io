@@ -685,6 +685,114 @@ def inject_share_rail(html: str) -> str:
     return _MAIN_RE.sub(rf"\1{rail}\2\3", html, count=1)
 
 
+# ---------------------------------------------------------------------------
+# WS2 — pull-quotes, section rules, footnotes
+# ---------------------------------------------------------------------------
+
+_PULL_BLOCKQUOTE_RE = re.compile(
+    r'<blockquote\b[^>]*\bclass="[^"]*\bpull\b[^"]*"[^>]*>([\s\S]*?)</blockquote>',
+    re.IGNORECASE,
+)
+# inject_anchor_links_and_toc stamps id="h2-..." on every PROSE h2
+# (the ones with slugified anchors). The ToC / Lead / Sources asides
+# use bare <h2> with no id, so this scoped regex naturally skips them.
+_H2_WITH_ID_RE = re.compile(r'<h2\s+id="[^"]*"[^>]*>', re.IGNORECASE)
+_MIN_H2_FOR_RULES = 6
+_FOOTNOTE_MARKER_RE = re.compile(r"\[\^(\d+)\]")
+_FOOTNOTE_DEF_RE = re.compile(r"\[\^(\d+)\]:\s*([^\n<]+)")
+
+
+def inject_pullquotes(html: str) -> str:
+    """Promote ``<blockquote class="pull">…</blockquote>`` blocks to
+    ``<aside class="pull-quote">…</aside>`` so the FT-style serif italic
+    + oversized opening-quote CSS (WS1 commit 2) applies. The marker
+    class is opt-in — authors who don't want a pull-quote keep the
+    plain blockquote. BlogPosting pages only; idempotent."""
+    if '"@type":"BlogPosting"' not in html:
+        return html
+    if 'class="pull-quote"' in html:
+        return html
+    return _PULL_BLOCKQUOTE_RE.sub(
+        lambda m: f'<aside class="pull-quote">{m.group(1)}</aside>',
+        html,
+    )
+
+
+def inject_section_rules(html: str) -> str:
+    """Insert ``<hr class="section-rule" aria-hidden="true">`` BEFORE
+    every prose ``<h2 id="...">`` after the first, on long-read
+    articles with at least 6 such headings. Targets the anchored body
+    headings stamped by ``inject_anchor_links_and_toc`` — so the
+    aside-only headings (Contents, Lead, Sources) are skipped, and
+    short pieces don't get visually overloaded with rules. Skipping
+    the first H2 preserves the natural break from the hero section.
+    BlogPosting pages only; idempotent."""
+    if '"@type":"BlogPosting"' not in html:
+        return html
+    if 'class="section-rule"' in html:
+        return html
+    headings = list(_H2_WITH_ID_RE.finditer(html))
+    if len(headings) < _MIN_H2_FOR_RULES:
+        return html
+    rule = '<hr class="section-rule" aria-hidden="true">'
+    out = html
+    # Walk back-to-front so earlier offsets stay valid as we splice.
+    for match in reversed(headings[1:]):
+        start = match.start()
+        out = out[:start] + rule + out[start:]
+    return out
+
+
+def _footnote_list_items(definitions: list[tuple[str, str]], labels: dict[str, str]) -> str:
+    backref_label = labels.get("Footnotes.return", "Return to text")
+    items = []
+    for n, body in definitions:
+        items.append(
+            f'<li id="fn-{n}">{body} '
+            f'<a class="footnote-back" href="#fnref-{n}" '
+            f'aria-label="{_esc(backref_label, quote=True)}">↩</a></li>'
+        )
+    return "".join(items)
+
+
+def inject_footnotes(html: str) -> str:
+    """Convert literal markdown footnote markers (``[^n]`` in text and
+    ``[^n]: …`` at the article foot) into HTML: each in-text marker
+    becomes a numbered ``<sup><a>`` link, and the collected definitions
+    surface as a ``<section class="footnotes">`` block immediately
+    inside the wrap-div close. Shokunin SSG doesn't expand footnotes,
+    so we do it at postbuild. BlogPosting pages only; idempotent."""
+    if '"@type":"BlogPosting"' not in html:
+        return html
+    if 'class="footnotes"' in html:
+        return html
+    if "[^" not in html:
+        return html
+    definitions = _FOOTNOTE_DEF_RE.findall(html)
+    if not definitions:
+        return html
+    # Strip the literal "[^n]: definition" lines from the body — they're
+    # about to be moved into the <section class="footnotes"> block.
+    body_no_defs = _FOOTNOTE_DEF_RE.sub("", html)
+    # Wrap remaining "[^n]" markers in <sup><a> superscript links.
+    def _sup(m: re.Match[str]) -> str:
+        n = m.group(1)
+        return (
+            f'<sup class="footnote-ref"><a href="#fn-{n}" id="fnref-{n}">{n}</a></sup>'
+        )
+
+    body_marked = _FOOTNOTE_MARKER_RE.sub(_sup, body_no_defs)
+    labels = _labels(html)
+    heading = _esc(labels.get("Footnotes.heading", "Footnotes"), quote=True)
+    items = _footnote_list_items(definitions, labels)
+    section = (
+        f'<section class="footnotes" aria-labelledby="footnotes-heading">'
+        f'<h2 id="footnotes-heading">{heading}</h2>'
+        f"<ol>{items}</ol></section>"
+    )
+    return _WRAP_CLOSE_RE.sub(section + r"\1", body_marked, count=1)
+
+
 _OG_IMAGE_RE = re.compile(
     r'<meta\s+property="og:image"\s+content="([^"]+)"',
     re.IGNORECASE,

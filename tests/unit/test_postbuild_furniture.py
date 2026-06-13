@@ -2228,3 +2228,199 @@ def test_inject_byline_strap_french_role_when_html_lang_fr():
     out = inject_byline_strap(_ws2_page(lang="fr-FR"))
     assert "FONDATEUR · INGÉNIEUR" in out
     assert 'href="/fr/a-propos/index.html"' in out
+
+
+# ---------------------------------------------------------------------------
+# WS2 commit 6 — pull-quotes, section rules, footnotes
+# ---------------------------------------------------------------------------
+
+# inject_pullquotes ---------------------------------------------------------
+
+
+def test_inject_pullquotes_no_op_without_blogposting():
+    from postbuild_lib.article_furniture import inject_pullquotes
+
+    assert inject_pullquotes("<p>plain page</p>") == "<p>plain page</p>"
+
+
+def test_inject_pullquotes_promotes_blockquote_pull_to_aside():
+    from postbuild_lib.article_furniture import inject_pullquotes
+
+    body = (
+        '<section class="ap-hero"><h1>T</h1></section>'
+        '<main id="main"><div class="wrap">'
+        '<p>Body.</p>'
+        '<blockquote class="pull">A quotable claim.</blockquote>'
+        '<p>More body.</p>'
+        '</div></main>'
+    )
+    out = inject_pullquotes(_ws2_page(body=body))
+    assert '<aside class="pull-quote">A quotable claim.</aside>' in out
+    assert 'class="pull">' not in out  # original blockquote removed
+
+
+def test_inject_pullquotes_idempotent():
+    from postbuild_lib.article_furniture import inject_pullquotes
+
+    body = (
+        '<section class="ap-hero"><h1>T</h1></section>'
+        '<main id="main"><div class="wrap">'
+        '<blockquote class="pull">Q.</blockquote>'
+        '</div></main>'
+    )
+    once = inject_pullquotes(_ws2_page(body=body))
+    assert inject_pullquotes(once) == once
+
+
+def test_inject_pullquotes_handles_multiple_per_article():
+    from postbuild_lib.article_furniture import inject_pullquotes
+
+    body = (
+        '<section class="ap-hero"><h1>T</h1></section>'
+        '<main id="main"><div class="wrap">'
+        '<blockquote class="pull">First.</blockquote>'
+        '<p>x</p>'
+        '<blockquote class="pull">Second.</blockquote>'
+        '</div></main>'
+    )
+    out = inject_pullquotes(_ws2_page(body=body))
+    assert out.count('class="pull-quote"') == 2
+
+
+def test_inject_pullquotes_ignores_plain_blockquotes():
+    from postbuild_lib.article_furniture import inject_pullquotes
+
+    body = (
+        '<section class="ap-hero"><h1>T</h1></section>'
+        '<main id="main"><div class="wrap">'
+        '<blockquote>Plain.</blockquote>'
+        '</div></main>'
+    )
+    out = inject_pullquotes(_ws2_page(body=body))
+    assert 'class="pull-quote"' not in out
+    assert '<blockquote>Plain.</blockquote>' in out
+
+
+# inject_section_rules ------------------------------------------------------
+
+
+def _ws2_body_with_h2s(n: int) -> str:
+    heads = "".join(f'<h2 id="h2-s{i}">Section {i}</h2><p>x</p>' for i in range(n))
+    return (
+        '<section class="ap-hero"><h1>T</h1></section>'
+        '<main id="main"><div class="wrap">'
+        + heads
+        + '</div></main>'
+    )
+
+
+def test_inject_section_rules_no_op_without_blogposting():
+    from postbuild_lib.article_furniture import inject_section_rules
+
+    assert inject_section_rules("<p>plain page</p>") == "<p>plain page</p>"
+
+
+def test_inject_section_rules_no_op_below_threshold():
+    from postbuild_lib.article_furniture import inject_section_rules
+
+    page = _ws2_page(body=_ws2_body_with_h2s(5))
+    assert inject_section_rules(page) == page
+
+
+def test_inject_section_rules_inserts_for_six_or_more_h2s_skipping_first():
+    from postbuild_lib.article_furniture import inject_section_rules
+
+    out = inject_section_rules(_ws2_page(body=_ws2_body_with_h2s(6)))
+    # 6 prose h2s → 5 rules (before h2#2..h2#6, first one skipped).
+    assert out.count('class="section-rule"') == 5
+    # No rule precedes the first h2.
+    assert out.index('id="h2-s0"') < out.index('class="section-rule"')
+
+
+def test_inject_section_rules_idempotent():
+    from postbuild_lib.article_furniture import inject_section_rules
+
+    once = inject_section_rules(_ws2_page(body=_ws2_body_with_h2s(6)))
+    assert inject_section_rules(once) == once
+
+
+def test_inject_section_rules_ignores_h2_without_id_attribute():
+    from postbuild_lib.article_furniture import inject_section_rules
+
+    # 6 bare <h2>s (no id) — these are ToC / Sources / aside headings.
+    # inject_anchor_links_and_toc didn't run, so no prose h2 has an id.
+    bare = (
+        '<section class="ap-hero"><h1>T</h1></section>'
+        '<main id="main"><div class="wrap">'
+        + ("<h2>X</h2><p>p</p>" * 6)
+        + '</div></main>'
+    )
+    page = _ws2_page(body=bare)
+    assert inject_section_rules(page) == page
+
+
+# inject_footnotes ----------------------------------------------------------
+
+
+def test_inject_footnotes_no_op_without_blogposting():
+    from postbuild_lib.article_furniture import inject_footnotes
+
+    assert inject_footnotes("<p>plain page</p>") == "<p>plain page</p>"
+
+
+def test_inject_footnotes_no_op_without_markers():
+    from postbuild_lib.article_furniture import inject_footnotes
+
+    page = _ws2_page()  # default body has no [^n] markers
+    assert inject_footnotes(page) == page
+
+
+def test_inject_footnotes_no_op_when_marker_without_definition():
+    from postbuild_lib.article_furniture import inject_footnotes
+
+    body = (
+        '<section class="ap-hero"><h1>T</h1></section>'
+        '<main id="main"><div class="wrap">'
+        '<p>Claim with [^1] marker but no definition.</p>'
+        '</div></main>'
+    )
+    page = _ws2_page(body=body)
+    assert inject_footnotes(page) == page
+
+
+def test_inject_footnotes_wraps_markers_and_emits_section():
+    from postbuild_lib.article_furniture import inject_footnotes
+
+    body = (
+        '<section class="ap-hero"><h1>T</h1></section>'
+        '<main id="main"><div class="wrap">'
+        '<p>Claim one [^1] and claim two [^2].</p>'
+        '<p>[^1]: First footnote.</p>'
+        '<p>[^2]: Second footnote.</p>'
+        '</div></main>'
+    )
+    out = inject_footnotes(_ws2_page(body=body))
+    # Markers wrapped as superscript anchor links.
+    assert '<sup class="footnote-ref"><a href="#fn-1" id="fnref-1">1</a></sup>' in out
+    assert '<sup class="footnote-ref"><a href="#fn-2" id="fnref-2">2</a></sup>' in out
+    # Footnotes section emitted with the two definitions.
+    assert 'class="footnotes"' in out
+    assert '<li id="fn-1">First footnote.' in out
+    assert '<li id="fn-2">Second footnote.' in out
+    # Definition lines stripped from body.
+    assert "[^1]: First footnote." not in out
+    # Section anchored inside wrap-div so build_translations replaces it.
+    assert out.rindex('class="footnotes"') < out.rindex("</div></main>")
+
+
+def test_inject_footnotes_idempotent():
+    from postbuild_lib.article_furniture import inject_footnotes
+
+    body = (
+        '<section class="ap-hero"><h1>T</h1></section>'
+        '<main id="main"><div class="wrap">'
+        '<p>Claim [^1].</p><p>[^1]: A note.</p>'
+        '</div></main>'
+    )
+    once = inject_footnotes(_ws2_page(body=body))
+    assert inject_footnotes(once) == once

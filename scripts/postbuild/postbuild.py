@@ -800,12 +800,15 @@ from postbuild_lib.article_furniture import (  # noqa: F401 — re-exports
     inject_citations,
     inject_deck,
     inject_eyebrow,
+    inject_footnotes,
     inject_hero_banner,
     inject_hreflang,
     inject_lang_switcher,
     inject_mermaid,
     inject_nav_active,
     inject_prev_next_nav,
+    inject_pullquotes,
+    inject_section_rules,
     inject_share_rail,
     inject_sigstore_attestation,
     inject_sources_list,
@@ -884,6 +887,7 @@ class _PostbuildCounters:
         "csp_patched",
         "decks_set",
         "eyebrows_set",
+        "footnotes_set",
         "furniture_patched",
         "howto_patched",
         "hreflang_patched",
@@ -898,7 +902,9 @@ class _PostbuildCounters:
         "nav_patched",
         "newsarticle_patched",
         "og_patched",
+        "pullquotes_set",
         "redundant_titles_stripped",
+        "section_rules_set",
         "share_rails_set",
         "social_patched",
         "softwaresourcecode_patched",
@@ -1114,11 +1120,14 @@ def _apply_article_passes(html: str, page: Path, ctr: _PostbuildCounters) -> str
     out = inject_hero_banner(out)
     out = inject_sigstore_attestation(out, page.parent.name)
     out = _bump(inject_anchor_links_and_toc, out, ctr, "anchor_patched")
+    out = _bump(inject_section_rules, out, ctr, "section_rules_set")
     out = _bump(strip_duplicate_body_h1, out, ctr, "body_h1_stripped")
     out = _convert_faq_to_qa(out)
+    out = _bump(inject_pullquotes, out, ctr, "pullquotes_set")
     out = _bump(inject_citations, out, ctr, "citation_patched")
     out = _bump(inject_sources_list, out, ctr, "sources_patched")
     out = _bump(inject_mermaid, out, ctr, "mermaid_patched")
+    out = _bump(inject_footnotes, out, ctr, "footnotes_set")
     out = _bump(inject_share_rail, out, ctr, "share_rails_set")
     out = _bump(inject_byline_strap, out, ctr, "byline_straps_set")
     return out
@@ -1453,6 +1462,9 @@ def main() -> None:
         f"{c.tables_carded} got card-collapse tables, "
         f"{c.eyebrows_set} got FT eyebrow, "
         f"{c.decks_set} got FT deck, "
+        f"{c.section_rules_set} got section rules, "
+        f"{c.pullquotes_set} got pull-quotes, "
+        f"{c.footnotes_set} got footnotes, "
         f"{c.share_rails_set} got share rail, "
         f"{c.byline_straps_set} got byline strap, "
         f"{c.langswitch_patched} got inline language rail, "
