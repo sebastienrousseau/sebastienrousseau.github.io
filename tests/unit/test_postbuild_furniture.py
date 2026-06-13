@@ -2460,6 +2460,21 @@ def test_inject_action_rail_idempotent():
     assert inject_action_rail(once) == once
 
 
+def test_inject_action_rail_strips_index_html_suffix_from_slug():
+    from postbuild_lib.article_furniture import inject_action_rail
+
+    # Real built pages have canonical URLs ending in /index.html — the
+    # slug must strip both /index.html and the trailing slash, else the
+    # PDF link becomes /api/pdf/index.html.pdf for every BlogPosting.
+    head = _WS2_HEAD.replace(
+        '<link rel="canonical" href="https://sebastienrousseau.com/2026-01-01-my-post/">',
+        '<link rel="canonical" href="https://sebastienrousseau.com/2026-01-01-my-post/index.html">',
+    )
+    out = inject_action_rail(_ws2_page(head=head))
+    assert 'href="/api/pdf/2026-01-01-my-post.pdf"' in out
+    assert "/api/pdf/index.html.pdf" not in out
+
+
 def test_inject_action_rail_no_op_when_canonical_missing():
     from postbuild_lib.article_furniture import inject_action_rail
 

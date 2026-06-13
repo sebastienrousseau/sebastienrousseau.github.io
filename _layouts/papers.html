@@ -189,7 +189,7 @@
       *{box-sizing:border-box}
       html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
       body{
-        margin:0;background:var(--bg);color:var(--ink);
+        margin:0;background:var(--paper);color:var(--ink);
         font-family:var(--type-body);
         font-size:17px;line-height:1.47059;letter-spacing:-.022em;
         -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;
@@ -229,7 +229,7 @@
          article) keeps its current display sizing. h1 stays at hero
          scale on .ap-hero; WS2 wires the eyebrow/deck/byline-strap
          injectors that compose around it. ---------- */
-      .eyebrow{font-family:var(--type-body);font-size:.6875rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--eyebrow);margin:0 0 8px;line-height:1.2}
+      .eyebrow{font-family:var(--type-body);font-size:.8125rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--eyebrow);margin:0 0 12px;line-height:1.2}
       .eyebrow a{color:inherit;text-decoration:none}
       .eyebrow a:hover{color:var(--accent);opacity:1}
       .deck{font-family:var(--type-body);font-size:clamp(1.0625rem,1.4vw,1.25rem);line-height:1.5;color:var(--ink-soft);max-width:var(--measure-article);margin:8px 0 24px;text-wrap:pretty}
@@ -243,27 +243,34 @@
       aside.pull-quote cite{display:block;margin-top:12px;font-style:normal;font-family:var(--type-body);font-size:.75rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-mute)}
       aside.pull-quote cite::before{content:"\2014\00a0"}
       hr.section-rule{border:0;border-top:1px solid var(--rule);max-width:var(--measure-article);margin:32px 0}
-      .share-rail{display:flex;gap:8px;padding:0;margin:0;list-style:none}
+      .share-rail{display:flex;gap:8px;padding:0;margin:0 0 24px;list-style:none}
       .share-rail li{margin:0}
-      .share-rail a,.share-rail button{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;border:1px solid var(--border);background:var(--bg);color:var(--ink-mute);cursor:pointer;text-decoration:none;transition:color .2s ease,border-color .2s ease,background .2s ease}
-      .share-rail a:hover,.share-rail button:hover{color:var(--ink-deep);border-color:var(--ink-deep);background:var(--paper);opacity:1}
+      .share-rail a,.share-rail button{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;border:1px solid var(--border);background:var(--paper);color:var(--ink-mute);cursor:pointer;text-decoration:none;transition:color .2s ease,border-color .2s ease,background .2s ease}
+      .share-rail a:hover,.share-rail button:hover{color:var(--ink-deep);border-color:var(--ink-deep);background:var(--bg);opacity:1}
       .share-rail svg{width:16px;height:16px;display:block;fill:currentColor}
+      /* Fixed left rail on tablet+, inline on small screens. The rail is
+         injected at the top of main.content's wrap-div; inline rendering
+         on small screens puts it directly above the article body, which
+         is reasonable as a share affordance. */
       @media (min-width:64em){
-        main.content .share-rail--sticky{position:sticky;top:calc(var(--nav-h) + 16px);flex-direction:column;align-self:flex-start}
+        .share-rail--sticky{position:fixed;inset-inline-start:24px;top:calc(var(--nav-h) + 96px);flex-direction:column;z-index:50;margin:0}
       }
       .share-rail--card a,.share-rail--card button{width:28px;height:28px;color:var(--paper);border-color:transparent;background:transparent}
       .share-rail--card a:hover,.share-rail--card button:hover{color:var(--paper);border-color:var(--paper);background:transparent}
       .share-rail--card svg{width:14px;height:14px}
-      .action-rail{display:flex;gap:8px;list-style:none;padding:0;margin:0}
+      .action-rail{display:flex;gap:8px;list-style:none;padding:0;margin:0 0 24px}
       .action-rail li{margin:0}
-      .action-rail a,.action-rail button{display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:8px 14px;border:1px solid var(--border);background:var(--paper);color:var(--ink-deep);border-radius:999px;text-decoration:none;font-size:.6875rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;font-family:var(--type-body);transition:border-color .2s ease,background .2s ease,color .2s ease}
+      .action-rail a,.action-rail button{display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:8px 14px;border:1px solid var(--border);background:var(--paper);color:var(--ink-deep);border-radius:999px;text-decoration:none;font-size:.75rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;font-family:var(--type-body);transition:border-color .2s ease,background .2s ease,color .2s ease}
       .action-rail a:hover,.action-rail button:hover{border-color:var(--ink-deep);background:var(--ink-deep);color:var(--paper);opacity:1}
       .action-rail svg{width:14px;height:14px;display:block;fill:currentColor}
-      @media (min-width:80em){
-        .action-rail--sticky{position:fixed;inset-inline-end:24px;top:calc(var(--nav-h) + 64px);flex-direction:column;z-index:50}
+      /* Fixed right rail on tablet+, sticky bottom bar on mobile,
+         inline on the in-between range. Match the share-rail breakpoint
+         (64em) so both float at the same viewport size. */
+      @media (min-width:64em){
+        .action-rail--sticky{position:fixed;inset-inline-end:24px;top:calc(var(--nav-h) + 96px);flex-direction:column;z-index:50;margin:0}
       }
       @media (max-width:47.9375em){
-        .action-rail--sticky{position:fixed;inset-inline:0;bottom:0;justify-content:center;padding:12px;background:var(--paper);border-top:1px solid var(--rule);z-index:50;border-radius:0}
+        .action-rail--sticky{position:fixed;inset-inline:0;bottom:0;justify-content:center;padding:12px;background:var(--paper);border-top:1px solid var(--rule);z-index:50;border-radius:0;margin:0}
         .action-rail--sticky a,.action-rail--sticky button{flex:1 1 0;max-width:160px}
       }
       .card--editorial{display:flex;flex-direction:column;gap:8px;background:var(--ink-deep);color:var(--paper);padding:24px;border:none;border-radius:0;box-shadow:none;text-decoration:none}
@@ -375,8 +382,8 @@
          compute contrast through a translucent layer and falls back to NaN,
          which fails WCAG AAA in automated audits. Solid bg also performs
          marginally better (no compositor layer). */
-      .ap-nav{position:sticky;top:0;z-index:100;height:var(--nav-h);background:var(--bg);border-bottom:1px solid var(--border)}
-      [data-theme="dark"] .ap-nav{background:var(--bg);border-bottom-color:var(--border)}
+      .ap-nav{position:sticky;top:0;z-index:100;height:var(--nav-h);background:var(--paper);border-bottom:1px solid var(--border)}
+      [data-theme="dark"] .ap-nav{background:var(--paper);border-bottom-color:var(--border)}
       /* Grid: brand on the left, menu perfectly centred, utilities on the right.
          The outer cols are 1fr each so the menu always sits in the viewport centre
          regardless of how wide the brand or the right group becomes. */

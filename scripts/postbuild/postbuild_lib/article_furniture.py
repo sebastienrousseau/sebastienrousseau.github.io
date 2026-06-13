@@ -839,10 +839,19 @@ _SVG_QUOTE = (
 
 
 def _slug_from_canonical(html: str) -> str | None:
+    """Return the bare slug from the canonical URL. Canonical URLs on
+    this site always end with ``/<slug>/index.html``; strip that suffix
+    before taking the last path segment so PDF / oEmbed routes get
+    ``/api/pdf/<slug>.pdf`` and not ``/api/pdf/index.html.pdf``."""
     m = _CANONICAL_RE.search(html)
     if not m:
         return None
-    return m.group(1).rstrip("/").rsplit("/", 1)[-1] or None
+    url = m.group(1)
+    for suffix in ("/index.html", "/"):
+        if url.endswith(suffix):
+            url = url[: -len(suffix)]
+            break
+    return url.rsplit("/", 1)[-1] or None
 
 
 def _license_id(html: str) -> str:
