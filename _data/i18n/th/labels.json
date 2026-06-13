@@ -11,5 +11,7 @@
   "Contents": "สารบัญ",
   "Estimated read time": "เวลาในการอ่านโดยประมาณ",
   "Article pagination": "การแบ่งหน้าบทความ",
-  "Link to": "ลิงก์ไปยัง"
+  "Link to": "ลิงก์ไปยัง",
+  "Home": "หน้าแรก",
+  "Breadcrumb": "เส้นทางนำทาง"
 }
