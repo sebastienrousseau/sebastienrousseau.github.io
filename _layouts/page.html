@@ -223,6 +223,60 @@
       .crumbs a:hover{color:var(--accent, #0056b3);opacity:1}
       .crumbs a[aria-current="page"]{color:var(--ink, #111);font-weight:500}
       .topic-lede{font-size:18px;line-height:1.5;color:var(--ink-soft);max-width:760px;margin:8px auto 0}
+      /* ---------- FT-tier editorial components. Pure additive classes —
+         no global selector poisoning. Body type-scale tightening is
+         scoped to main.content so the homepage hero (which is NOT an
+         article) keeps its current display sizing. h1 stays at hero
+         scale on .ap-hero; WS2 wires the eyebrow/deck/byline-strap
+         injectors that compose around it. ---------- */
+      .eyebrow{font-family:var(--type-body);font-size:.6875rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--eyebrow);margin:0 0 8px;line-height:1.2}
+      .eyebrow a{color:inherit;text-decoration:none}
+      .eyebrow a:hover{color:var(--accent);opacity:1}
+      .deck{font-family:var(--type-body);font-size:clamp(1.0625rem,1.4vw,1.25rem);line-height:1.5;color:var(--ink-soft);max-width:var(--measure-article);margin:8px 0 24px;text-wrap:pretty}
+      .deck a{color:inherit;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
+      .byline-strap{font-family:var(--type-body);font-size:.75rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-mute);margin:0 0 8px;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+      .byline-strap a{color:inherit;text-decoration:none}
+      .byline-strap a:hover{color:var(--accent);opacity:1}
+      .byline-strap .sep{color:var(--rule);user-select:none}
+      aside.pull-quote{font-family:var(--type-display);font-style:italic;font-size:clamp(1.25rem,2vw,1.625rem);line-height:1.4;color:var(--ink-deep);max-width:var(--measure-article);margin:32px 0;padding:0 0 0 32px;position:relative;text-wrap:balance}
+      aside.pull-quote::before{content:"\201C";position:absolute;inset-inline-start:0;top:-12px;font-size:3rem;line-height:1;color:var(--rule);font-family:var(--type-display)}
+      aside.pull-quote cite{display:block;margin-top:12px;font-style:normal;font-family:var(--type-body);font-size:.75rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-mute)}
+      aside.pull-quote cite::before{content:"\2014\00a0"}
+      hr.section-rule{border:0;border-top:1px solid var(--rule);max-width:var(--measure-article);margin:32px 0}
+      .share-rail{display:flex;gap:8px;padding:0;margin:0;list-style:none}
+      .share-rail li{margin:0}
+      .share-rail a,.share-rail button{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;border:1px solid var(--border);background:var(--bg);color:var(--ink-mute);cursor:pointer;text-decoration:none;transition:color .2s ease,border-color .2s ease,background .2s ease}
+      .share-rail a:hover,.share-rail button:hover{color:var(--ink-deep);border-color:var(--ink-deep);background:var(--paper);opacity:1}
+      .share-rail svg{width:16px;height:16px;display:block;fill:currentColor}
+      @media (min-width:64em){
+        main.content .share-rail--sticky{position:sticky;top:calc(var(--nav-h) + 16px);flex-direction:column;align-self:flex-start}
+      }
+      .share-rail--card a,.share-rail--card button{width:28px;height:28px;color:var(--paper);border-color:transparent;background:transparent}
+      .share-rail--card a:hover,.share-rail--card button:hover{color:var(--paper);border-color:var(--paper);background:transparent}
+      .share-rail--card svg{width:14px;height:14px}
+      .action-rail{display:flex;gap:8px;list-style:none;padding:0;margin:0}
+      .action-rail li{margin:0}
+      .action-rail a,.action-rail button{display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:8px 14px;border:1px solid var(--border);background:var(--paper);color:var(--ink-deep);border-radius:999px;text-decoration:none;font-size:.6875rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;font-family:var(--type-body);transition:border-color .2s ease,background .2s ease,color .2s ease}
+      .action-rail a:hover,.action-rail button:hover{border-color:var(--ink-deep);background:var(--ink-deep);color:var(--paper);opacity:1}
+      .action-rail svg{width:14px;height:14px;display:block;fill:currentColor}
+      @media (min-width:80em){
+        .action-rail--sticky{position:fixed;inset-inline-end:24px;top:calc(var(--nav-h) + 64px);flex-direction:column;z-index:50}
+      }
+      @media (max-width:47.9375em){
+        .action-rail--sticky{position:fixed;inset-inline:0;bottom:0;justify-content:center;padding:12px;background:var(--paper);border-top:1px solid var(--rule);z-index:50;border-radius:0}
+        .action-rail--sticky a,.action-rail--sticky button{flex:1 1 0;max-width:160px}
+      }
+      .card--editorial{display:flex;flex-direction:column;gap:8px;background:var(--ink-deep);color:var(--paper);padding:24px;border:none;border-radius:0;box-shadow:none;text-decoration:none}
+      .card--editorial:hover{opacity:1}
+      .card--editorial .eyebrow{color:var(--paper);opacity:.7}
+      .card--editorial h2,.card--editorial h3{color:var(--paper);font-family:var(--type-body);font-weight:700;letter-spacing:-.01em;margin:0}
+      .card--editorial p{color:var(--paper);opacity:.85;font-size:.9375rem;line-height:1.5;margin:0;max-width:none}
+      /* Article body type-scale: tighten in-body H2/H3/P/UL/OL only.
+         h1 stays in .ap-hero at its current scale. */
+      main.content :is(h2){font-size:clamp(1.625rem,2.6vw,2rem);line-height:1.2;letter-spacing:-.01em;margin:calc(var(--leading-article) * 2em) 0 .5em;max-width:var(--measure-article)}
+      main.content :is(h3){font-size:clamp(1.25rem,1.6vw,1.4rem);line-height:1.3;margin:1.5em 0 .5em;max-width:var(--measure-article)}
+      main.content :is(p,li){font-size:clamp(1.0625rem,1.05vw,1.125rem);line-height:var(--leading-article)}
+      main.content p,main.content ul,main.content ol{max-width:var(--measure-article)}
       @media (prefers-reduced-motion: reduce){.reading-progress{transition:none}}
       a{color:var(--accent);text-decoration:none;transition:opacity .2s ease}
       a:hover{opacity:.72}
