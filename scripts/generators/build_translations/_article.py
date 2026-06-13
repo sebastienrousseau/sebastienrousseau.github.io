@@ -287,14 +287,31 @@ _BODY_FURNITURE_RE = re.compile(
 )
 
 _CRUMBS_NAV_RE = re.compile(r'<nav class="crumbs"[\s\S]*?</nav>')
+_EYEBROW_RE = re.compile(r'<p class="eyebrow"[\s\S]*?</p>')
+_SHARE_RAIL_RE = re.compile(r'<nav class="share-rail[^"]*"[\s\S]*?</nav>')
+_BYLINE_STRAP_RE = re.compile(r'<p class="byline-strap"[\s\S]*?</p>')
+_DECK_CLASS_RE = re.compile(r'<p class="sub deck">')
 
 
-def _strip_postbuild_crumbs(shell: str) -> str:
-    """Drop the visible breadcrumb nav that postbuild injects above the
-    hero. The CI smoke re-renders locale pages from already-postbuilt EN
-    shells; the EN trail must not leak — postbuild re-runs afterwards
-    and re-injects a localized trail from each page's own JSON-LD."""
-    return _CRUMBS_NAV_RE.sub("", shell)
+def _strip_postbuild_furniture(shell: str) -> str:
+    """Drop the visible furniture that postbuild injects into shells.
+
+    The CI smoke re-renders locale pages from already-postbuilt EN
+    shells, then runs postbuild.main() again. Anything injected
+    OUTSIDE ``<main>``'s wrap-div (crumb nav above the hero, eyebrow
+    above the h1, share rail / byline strap inside main, plus the
+    ``deck`` class token added to the existing ``<p class="sub">``)
+    survives the ``<main>``-only replacement regex unless stripped
+    explicitly. Stripping these lets postbuild re-inject locale-
+    correct strings from each page's own JSON-LD + labels.json,
+    instead of leaking the EN versions into the 27 locale trees.
+    """
+    out = _CRUMBS_NAV_RE.sub("", shell)
+    out = _EYEBROW_RE.sub("", out)
+    out = _SHARE_RAIL_RE.sub("", out)
+    out = _BYLINE_STRAP_RE.sub("", out)
+    out = _DECK_CLASS_RE.sub('<p class="sub">', out)
+    return out
 
 
 def _french_body(
@@ -336,7 +353,7 @@ def render_translation(slug: str, fm: dict[str, str], body_md: str) -> str | Non
     if not shell_src.is_file():
         print(f"build_translations: skip {slug} — English shell missing at {shell_src}")
         return None
-    shell = _strip_postbuild_crumbs(shell_src.read_text(encoding="utf-8"))
+    shell = _strip_postbuild_furniture(shell_src.read_text(encoding="utf-8"))
     body_html = render_markdown(body_md)
 
     title = fm.get("title", slug)

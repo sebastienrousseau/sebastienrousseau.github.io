@@ -403,7 +403,7 @@ def test_french_body_uses_shell_lead_when_no_takeaways():
     assert "TL;DR" in out2
 
 
-def test_strip_postbuild_crumbs_removes_en_trail_from_shell():
+def test_strip_postbuild_furniture_removes_en_crumb_trail_from_shell():
     """The CI smoke re-renders locale pages from already-postbuilt EN
     shells; the visible EN breadcrumb nav must be stripped so the
     follow-up postbuild run re-injects a localized trail (its
@@ -413,11 +413,46 @@ def test_strip_postbuild_crumbs_removes_en_trail_from_shell():
         '<li><a href="/">Home</a></li></ol></nav>'
         '<section class="ap-hero"><h1>T</h1></section></body>'
     )
-    out = _article._strip_postbuild_crumbs(shell)
+    out = _article._strip_postbuild_furniture(shell)
     assert 'class="crumbs"' not in out
     assert out == '<body><section class="ap-hero"><h1>T</h1></section></body>'
     # No-op on shells that never had a trail (pre-postbuild builds).
-    assert _article._strip_postbuild_crumbs(out) == out
+    assert _article._strip_postbuild_furniture(out) == out
+
+
+def test_strip_postbuild_furniture_removes_en_ws2_components():
+    """WS2 added 4 more postbuild-injected blocks that must NOT leak
+    into the 27 locale trees: the FT eyebrow above the hero h1, the
+    ``.deck`` class on the existing ``<p class="sub">``, the share
+    rail at the top of main, and the byline strap before ``</main>``.
+    Each gets stripped so postbuild re-runs with locale-correct
+    labels.json strings on the localized shell."""
+    shell = (
+        '<body>'
+        '<section class="ap-hero">'
+        '<p class="eyebrow">AI</p>'
+        '<h1>T</h1>'
+        '<p class="sub deck">Standfirst.</p>'
+        '</section>'
+        '<main id="main"><div class="wrap">'
+        '<nav class="share-rail share-rail--sticky" aria-label="Share">'
+        '<ul><li><a href="https://twitter.com/intent/tweet?text=...">X</a></li></ul>'
+        '</nav>'
+        '<p>body</p>'
+        '<p class="byline-strap" aria-label="Byline">'
+        '<a href="/about/index.html">SEBASTIEN ROUSSEAU</a>'
+        ' <span class="sep">·</span> <span>FOUNDER · ENGINEER</span></p>'
+        '</div></main>'
+        '</body>'
+    )
+    out = _article._strip_postbuild_furniture(shell)
+    assert 'class="eyebrow"' not in out
+    assert 'class="sub deck"' not in out
+    assert '<p class="sub">' in out  # deck demoted, not removed
+    assert 'class="share-rail' not in out
+    assert 'class="byline-strap"' not in out
+    # Idempotent — second pass produces the same byte stream.
+    assert _article._strip_postbuild_furniture(out) == out
 
 
 def test_derive_fr_takeaways_h2_then_h3():

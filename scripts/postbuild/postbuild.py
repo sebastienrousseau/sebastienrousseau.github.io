@@ -23,6 +23,7 @@ import base64
 import hashlib
 import re
 import sys
+from collections.abc import Callable
 from pathlib import Path
 
 import rcssmin
@@ -795,13 +796,17 @@ from postbuild_lib.article_furniture import (  # noqa: F401 — re-exports
     inject_anchor_links_and_toc,
     inject_article_furniture,
     inject_breadcrumbs,
+    inject_byline_strap,
     inject_citations,
+    inject_deck,
+    inject_eyebrow,
     inject_hero_banner,
     inject_hreflang,
     inject_lang_switcher,
     inject_mermaid,
     inject_nav_active,
     inject_prev_next_nav,
+    inject_share_rail,
     inject_sigstore_attestation,
     inject_sources_list,
     inject_speculation_rules,
@@ -872,10 +877,13 @@ class _PostbuildCounters:
         "anchor_patched",
         "asset_fp_patched",
         "body_h1_stripped",
+        "byline_straps_set",
         "cdn_wrapped",
         "citation_patched",
         "crumbs_patched",
         "csp_patched",
+        "decks_set",
+        "eyebrows_set",
         "furniture_patched",
         "howto_patched",
         "hreflang_patched",
@@ -891,6 +899,7 @@ class _PostbuildCounters:
         "newsarticle_patched",
         "og_patched",
         "redundant_titles_stripped",
+        "share_rails_set",
         "social_patched",
         "softwaresourcecode_patched",
         "sources_patched",
@@ -1080,47 +1089,38 @@ def _apply_schema_subtype_passes(
     return out
 
 
+def _bump(fn: Callable[[str], str], html: str, ctr: _PostbuildCounters, attr: str) -> str:
+    """Run a one-arg HTML→HTML injector, bump ``ctr.<attr>`` if the page
+    actually changed, return the new HTML. Centralises the
+    ``prev = out; out = fn(out); if out != prev: ctr.X += 1`` pattern
+    so ``_apply_article_passes`` stays at CC ≤ B as new WS2/WS3 passes
+    are added."""
+    out = fn(html)
+    if out != html:
+        setattr(ctr, attr, getattr(ctr, attr) + 1)
+    return out
+
+
 def _apply_article_passes(html: str, page: Path, ctr: _PostbuildCounters) -> str:
     """Article-furniture + body-content injection passes."""
-    prev = html
-    out = inject_article_furniture(html)
-    if out != prev:
-        ctr.furniture_patched += 1
-    prev = out
-    out = inject_breadcrumbs(out)
-    if out != prev:
-        ctr.crumbs_patched += 1
-    prev = out
-    out = inject_table_labels(out)
-    if out != prev:
-        ctr.tables_carded += 1
+    out = _bump(inject_eyebrow, html, ctr, "eyebrows_set")
+    out = _bump(inject_deck, out, ctr, "decks_set")
+    out = _bump(inject_article_furniture, out, ctr, "furniture_patched")
+    out = _bump(inject_breadcrumbs, out, ctr, "crumbs_patched")
+    out = _bump(inject_table_labels, out, ctr, "tables_carded")
     # Hero banner (figure pulled from the article's og:image). Runs after
     # furniture so its anchor regex sees the post-furniture document, and
     # before the lang switcher so the switcher slots in after the banner.
     out = inject_hero_banner(out)
     out = inject_sigstore_attestation(out, page.parent.name)
-    prev = out
-    out = inject_anchor_links_and_toc(out)
-    if out != prev:
-        ctr.anchor_patched += 1
-    prev = out
-    out = strip_duplicate_body_h1(out)
-    if out != prev:
-        ctr.body_h1_stripped += 1
+    out = _bump(inject_anchor_links_and_toc, out, ctr, "anchor_patched")
+    out = _bump(strip_duplicate_body_h1, out, ctr, "body_h1_stripped")
     out = _convert_faq_to_qa(out)
-    prev = out
-    out = inject_citations(out)
-    if out != prev:
-        ctr.citation_patched += 1
-    prev = out
-    out = inject_sources_list(out)
-    if out != prev:
-        ctr.sources_patched += 1
-    prev = out
-    out2 = inject_mermaid(out)
-    if out2 != prev:
-        ctr.mermaid_patched += 1
-        out = out2
+    out = _bump(inject_citations, out, ctr, "citation_patched")
+    out = _bump(inject_sources_list, out, ctr, "sources_patched")
+    out = _bump(inject_mermaid, out, ctr, "mermaid_patched")
+    out = _bump(inject_share_rail, out, ctr, "share_rails_set")
+    out = _bump(inject_byline_strap, out, ctr, "byline_straps_set")
     return out
 
 
@@ -1451,6 +1451,10 @@ def main() -> None:
         f"{c.furniture_patched} got tag badges + meta bar, "
         f"{c.crumbs_patched} got visible breadcrumbs, "
         f"{c.tables_carded} got card-collapse tables, "
+        f"{c.eyebrows_set} got FT eyebrow, "
+        f"{c.decks_set} got FT deck, "
+        f"{c.share_rails_set} got share rail, "
+        f"{c.byline_straps_set} got byline strap, "
         f"{c.langswitch_patched} got inline language rail, "
         f"{c.anchor_patched} got anchor links + ToC, "
         f"{c.body_h1_stripped} got duplicate body H1 stripped, "

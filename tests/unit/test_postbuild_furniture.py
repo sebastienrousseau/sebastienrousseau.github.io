@@ -2048,3 +2048,183 @@ def test_inject_table_labels_handles_multiple_tables():
     out = inject_table_labels(_tbl_page(_TBL + _TBL.replace("Layer", "Signal")))
     assert out.count("table--cards") == 2
     assert '<td data-label="Signal">HSM</td>' in out
+
+
+# ---------------------------------------------------------------------------
+# WS2 — FT-tier editorial composition (eyebrow, deck, share-rail, byline-strap)
+# ---------------------------------------------------------------------------
+
+_WS2_HEAD = (
+    '<link rel="canonical" href="https://sebastienrousseau.com/2026-01-01-my-post/">'
+    '<meta property="og:title" content="My Post: A Subtitle">'
+    '<meta name="keywords" content="AI, payments, post-quantum cryptography">'
+    '<script type="application/ld+json">'
+    '{"@type":"BlogPosting","keywords":"AI, payments, post-quantum cryptography"}'
+    "</script>"
+)
+_WS2_BODY = (
+    '<section class="ap-hero"><h1>My Post</h1>'
+    '<p class="sub">Standfirst sentence.</p></section>'
+    '<main id="main" class="content ap-section">'
+    '<div class="wrap report-wrap"><p>body</p></div></main>'
+)
+
+
+def _ws2_page(lang: str = "en-GB", head: str = _WS2_HEAD, body: str = _WS2_BODY) -> str:
+    return f'<html lang="{lang}"><head>{head}</head><body>{body}</body></html>'
+
+
+# inject_eyebrow ------------------------------------------------------------
+
+
+def test_inject_eyebrow_no_op_without_blogposting():
+    from postbuild_lib.article_furniture import inject_eyebrow
+
+    assert inject_eyebrow("<p>plain page</p>") == "<p>plain page</p>"
+
+
+def test_inject_eyebrow_renders_first_keyword_uppercased_above_h1():
+    from postbuild_lib.article_furniture import inject_eyebrow
+
+    out = inject_eyebrow(_ws2_page())
+    assert '<p class="eyebrow">AI</p><h1>' in out
+    # ordering: hero opens → eyebrow → h1
+    assert out.index('class="eyebrow"') < out.index("<h1>")
+
+
+def test_inject_eyebrow_idempotent():
+    from postbuild_lib.article_furniture import inject_eyebrow
+
+    once = inject_eyebrow(_ws2_page())
+    assert inject_eyebrow(once) == once
+
+
+def test_inject_eyebrow_no_op_when_keywords_meta_missing():
+    from postbuild_lib.article_furniture import inject_eyebrow
+
+    head_no_keywords = _WS2_HEAD.replace(
+        '"keywords":"AI, payments, post-quantum cryptography"', '"keywords":""'
+    )
+    page = _ws2_page(head=head_no_keywords)
+    assert inject_eyebrow(page) == page
+
+
+def test_inject_eyebrow_escapes_html_in_section_label():
+    from postbuild_lib.article_furniture import inject_eyebrow
+
+    head = _WS2_HEAD.replace(
+        '"keywords":"AI, payments, post-quantum cryptography"',
+        '"keywords":"Q&amp;A &lt;Rust&gt;, payments"',
+    )
+    out = inject_eyebrow(_ws2_page(head=head))
+    # The raw "<Rust>" angle brackets must never reach the rendered
+    # eyebrow markup; html.escape catches anything that didn't already
+    # arrive entity-encoded from the JSON-LD.
+    assert "<Rust>" not in out
+    assert 'class="eyebrow"' in out
+
+
+# inject_deck ---------------------------------------------------------------
+
+
+def test_inject_deck_no_op_without_blogposting():
+    from postbuild_lib.article_furniture import inject_deck
+
+    assert inject_deck("<p>plain page</p>") == "<p>plain page</p>"
+
+
+def test_inject_deck_promotes_sub_class_to_sub_deck():
+    from postbuild_lib.article_furniture import inject_deck
+
+    out = inject_deck(_ws2_page())
+    assert '<p class="sub deck">Standfirst sentence.</p>' in out
+    assert out.count('class="sub deck"') == 1
+
+
+def test_inject_deck_idempotent():
+    from postbuild_lib.article_furniture import inject_deck
+
+    once = inject_deck(_ws2_page())
+    assert inject_deck(once) == once
+
+
+# inject_share_rail ---------------------------------------------------------
+
+
+def test_inject_share_rail_no_op_without_blogposting():
+    from postbuild_lib.article_furniture import inject_share_rail
+
+    assert inject_share_rail("<p>plain page</p>") == "<p>plain page</p>"
+
+
+def test_inject_share_rail_renders_all_five_anchors_at_top_of_main():
+    from postbuild_lib.article_furniture import inject_share_rail
+
+    out = inject_share_rail(_ws2_page())
+    assert 'class="share-rail share-rail--sticky"' in out
+    # All five service hostnames present
+    assert "twitter.com/intent/tweet" in out
+    assert "linkedin.com/sharing/share-offsite" in out
+    assert "facebook.com/sharer/sharer.php" in out
+    assert "wa.me/?text=" in out
+    assert 'href="mailto:?subject=' in out
+    # Title + URL are URL-encoded in the X / WhatsApp combo params
+    assert "My%20Post%3A%20A%20Subtitle" in out
+    # Rail sits inside main's wrap-div, before the body paragraph
+    assert out.index("share-rail--sticky") < out.index("<p>body</p>")
+
+
+def test_inject_share_rail_idempotent():
+    from postbuild_lib.article_furniture import inject_share_rail
+
+    once = inject_share_rail(_ws2_page())
+    assert inject_share_rail(once) == once
+
+
+def test_inject_share_rail_no_op_when_canonical_missing():
+    from postbuild_lib.article_furniture import inject_share_rail
+
+    head = _WS2_HEAD.replace(
+        '<link rel="canonical" href="https://sebastienrousseau.com/2026-01-01-my-post/">',
+        "",
+    )
+    page = _ws2_page(head=head)
+    assert inject_share_rail(page) == page
+
+
+# inject_byline_strap -------------------------------------------------------
+
+
+def test_inject_byline_strap_no_op_without_blogposting():
+    from postbuild_lib.article_furniture import inject_byline_strap
+
+    assert inject_byline_strap("<p>plain page</p>") == "<p>plain page</p>"
+
+
+def test_inject_byline_strap_renders_inside_wrap_div_above_closing_main():
+    from postbuild_lib.article_furniture import inject_byline_strap
+
+    out = inject_byline_strap(_ws2_page())
+    assert 'class="byline-strap"' in out
+    assert "SEBASTIEN ROUSSEAU" in out
+    assert "FOUNDER · ENGINEER" in out
+    # Sits INSIDE the wrap-div (immediately before </div></main>) so the
+    # later inject_prev_next_nav pass — which anchors on </div>\s*</main>
+    # — still matches and the pagination ends up below the byline.
+    assert '</p></div></main>' in out
+    assert out.index('class="byline-strap"') < out.rindex("</div>")
+
+
+def test_inject_byline_strap_idempotent():
+    from postbuild_lib.article_furniture import inject_byline_strap
+
+    once = inject_byline_strap(_ws2_page())
+    assert inject_byline_strap(once) == once
+
+
+def test_inject_byline_strap_french_role_when_html_lang_fr():
+    from postbuild_lib.article_furniture import inject_byline_strap
+
+    out = inject_byline_strap(_ws2_page(lang="fr-FR"))
+    assert "FONDATEUR · INGÉNIEUR" in out
+    assert 'href="/fr/a-propos/index.html"' in out

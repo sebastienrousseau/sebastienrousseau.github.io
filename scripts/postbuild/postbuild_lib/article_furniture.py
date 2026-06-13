@@ -29,6 +29,7 @@ import sys
 from html import escape as _esc
 from html import unescape as _unesc
 from pathlib import Path
+from urllib.parse import quote as _url_quote
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[3]))
 import _lang_registry as _lr  # type: ignore[import-not-found]
@@ -88,7 +89,11 @@ AUTHOR_AVATAR = "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
 AUTHOR_URL = "/about/index.html"
 
 _HERO_RE = re.compile(
-    r'(<section class="ap-hero">\s*<h1>[^<]*</h1>\s*(?:<p class="sub">[^<]*</p>\s*)?)(</section>)',
+    r'(<section class="ap-hero">\s*'
+    r'(?:<p class="eyebrow">[^<]*</p>\s*)?'
+    r'<h1>[^<]*</h1>\s*'
+    r'(?:<p class="sub[^"]*">[^<]*</p>\s*)?'
+    r")(</section>)",
     re.IGNORECASE,
 )
 _MAIN_RE = re.compile(
@@ -102,7 +107,12 @@ _WORDCOUNT_RE = re.compile(r'"wordCount":(\d+)')
 _HEADING_RE = re.compile(r'<(h[23])(?:\s+id="[^"]*")?>([\s\S]*?)</\1>', re.IGNORECASE)
 _OUTBOUND_LINK_RE = re.compile(r'<a\b[^>]*\bhref="(https?://[^"]+)"', re.IGNORECASE)
 _DATED_SLUG_RE = re.compile(r"^(\d{4}-\d{2}-\d{2})-")
-_H1_RE = re.compile(r'<section class="ap-hero">\s*<h1>([^<]+)</h1>', re.IGNORECASE)
+_H1_RE = re.compile(
+    r'<section class="ap-hero">\s*'
+    r'(?:<p class="eyebrow">[^<]*</p>\s*)?'
+    r"<h1>([^<]+)</h1>",
+    re.IGNORECASE,
+)
 _HTML_LANG_DETECT_RE = re.compile(r'<html\b[^>]*\blang="([^"]+)"', re.IGNORECASE)
 
 
@@ -496,6 +506,183 @@ def inject_table_labels(html: str) -> str:
     if '"@type":"BlogPosting"' not in html:
         return html
     return _TABLE_BLOCK_RE.sub(lambda m: _card_label_table(m.group(0)), html)
+
+
+# ---------------------------------------------------------------------------
+# WS2 — FT-tier editorial composition
+# ---------------------------------------------------------------------------
+# Pure additive HTML — no <script> or <style> tags, CSP-safe. Each pass is
+# BlogPosting-gated, idempotent, and only reads from data already in the
+# built page (canonical URL, og:title, JSON-LD keywords). The translation
+# pipeline's _strip_postbuild_furniture in build_translations/_article.py
+# strips each tag from EN shells before locale re-render so locale pages
+# get re-injected with locale-correct strings, not EN leaks.
+
+_CANONICAL_RE = re.compile(r'<link\s+rel="canonical"\s+href="([^"]+)"', re.IGNORECASE)
+_OG_TITLE_RE = re.compile(r'<meta\s+property="og:title"\s+content="([^"]+)"', re.IGNORECASE)
+_AP_HERO_OPEN_RE = re.compile(r'(<section class="ap-hero">)(\s*)(<h1>)', re.IGNORECASE)
+_SUB_PARA_RE = re.compile(r'<p class="sub">', re.IGNORECASE)
+_WRAP_CLOSE_RE = re.compile(r"(</div>\s*</main>)", re.IGNORECASE)
+
+# 16x16 monochrome SVG glyphs — currentColor so .share-rail can theme them.
+_SVG_X = (
+    '<svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">'
+    '<path d="M9.52 6.88L14.86 1h-1.42L8.83 6.07 4.94 1H.78l5.6 7.7L.78 15h1.42l4.78-5.27L11.07 15'
+    'h4.16L9.52 6.88zM2.71 2.07h1.83l7.61 10.51h-1.83L2.71 2.07z"/></svg>'
+)
+_SVG_LI = (
+    '<svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">'
+    '<path d="M13.6 13.6h-2.37V9.93c0-.87-.02-2-1.22-2-1.22 0-1.4.95-1.4 1.93v3.74H6.24V6.04h2.27'
+    'v1.04h.03c.32-.6 1.09-1.22 2.25-1.22 2.4 0 2.85 1.58 2.85 3.64v4.1zM3.56 5C2.81 5 2.2 4.39 '
+    '2.2 3.64S2.81 2.28 3.56 2.28s1.36.61 1.36 1.36S4.31 5 3.56 5zm1.18 8.6H2.39V6.04h2.36V13.6z"/'
+    '></svg>'
+)
+_SVG_FB = (
+    '<svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">'
+    '<path d="M9 14H6.5V8.5H5V6h1.5V4.5C6.5 3.07 7.07 2 9.07 2H10.5v2.5H9.43c-.38 0-.43.14-.43.43V'
+    '6h1.5L10 8.5H9V14z"/></svg>'
+)
+_SVG_WA = (
+    '<svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">'
+    '<path d="M8 1C4.13 1 1 4.13 1 8c0 1.27.34 2.46.93 3.5L1 15l3.6-.93C5.62 14.66 6.79 15 8 15c3'
+    '.87 0 7-3.13 7-7s-3.13-7-7-7zm0 12.7c-1.06 0-2.05-.29-2.9-.78l-.2-.12-2.13.56.57-2.08-.13-.21'
+    'A5.69 5.69 0 012.3 8c0-3.14 2.56-5.7 5.7-5.7s5.7 2.56 5.7 5.7-2.56 5.7-5.7 5.7zm3.1-4.27c-.17'
+    '-.08-1-.5-1.16-.55-.16-.06-.27-.08-.39.08-.11.17-.44.55-.54.66-.1.11-.2.13-.37.04-.17-.08-.71'
+    '-.26-1.36-.83a5.04 5.04 0 01-.94-1.17c-.1-.17-.01-.26.07-.34.07-.07.17-.2.25-.3.08-.1.11-.17'
+    '.16-.28.06-.11.03-.21-.01-.3-.05-.08-.39-.94-.53-1.28-.14-.34-.28-.29-.39-.3-.1-.01-.21-.01-'
+    '.32-.01a.61.61 0 00-.45.21c-.15.17-.59.58-.59 1.4 0 .83.61 1.63.69 1.74.08.12 1.2 1.83 2.91 '
+    '2.57.41.18.72.28.97.36.4.13.78.11 1.07.07.33-.05 1-.41 1.14-.8.14-.4.14-.74.1-.81-.04-.07-.16'
+    '-.11-.32-.19z"/></svg>'
+)
+_SVG_EMAIL = (
+    '<svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">'
+    '<path d="M2 3h12c.55 0 1 .45 1 1v8c0 .55-.45 1-1 1H2c-.55 0-1-.45-1-1V4c0-.55.45-1 1-1zm6 5.'
+    '18L13.18 4H2.82L8 8.18zM2 5.46V12h12V5.46L8 9.5 2 5.46z"/></svg>'
+)
+
+
+def inject_eyebrow(html: str) -> str:
+    """Render an FT-style eyebrow caption (``<p class="eyebrow">``)
+    immediately above the H1 hero. The label is the article's first
+    keyword, upper-cased — mirroring how the FT promotes a single
+    editorial section per article (FEATURES / OPINION / ANALYSIS).
+    BlogPosting pages only; idempotent."""
+    if '"@type":"BlogPosting"' not in html:
+        return html
+    if 'class="eyebrow"' in html:
+        return html
+    keywords, _date_pub, _date_mod, _wc = _extract_article_metadata(html)
+    if not keywords:
+        return html
+    section = keywords[0].upper()
+    eyebrow = f'<p class="eyebrow">{_esc(section)}</p>'
+    return _AP_HERO_OPEN_RE.sub(rf"\1\2{eyebrow}\3", html, count=1)
+
+
+def inject_deck(html: str) -> str:
+    """Promote the existing ``<p class="sub">`` hero excerpt to the
+    FT-style ``.deck`` standfirst. The excerpt is already populated
+    from the article's frontmatter; this pass just signals 'editorial
+    standfirst' so the .deck CSS applies. BlogPosting pages only;
+    idempotent."""
+    if '"@type":"BlogPosting"' not in html:
+        return html
+    if 'class="sub deck"' in html:
+        return html
+    return _SUB_PARA_RE.sub('<p class="sub deck">', html, count=1)
+
+
+def _byline_role(is_fr: bool) -> str:
+    return "FONDATEUR · INGÉNIEUR" if is_fr else "FOUNDER · ENGINEER"
+
+
+def inject_byline_strap(html: str) -> str:
+    """Render an FT-style byline strap (``NAME · ROLE`` in caps) at the
+    foot of the article body, INSIDE the wrap-div so it ends up
+    immediately before the prev/next pagination (which the later
+    ``inject_prev_next_nav`` pass anchors on ``</div>\\s*</main>``).
+    The strap signals the editorial credit attached to the foregoing
+    piece — the same gesture FT Professional uses to close a Features
+    post. BlogPosting pages only; idempotent."""
+    if '"@type":"BlogPosting"' not in html:
+        return html
+    if 'class="byline-strap"' in html:
+        return html
+    labels = _labels(html)
+    is_fr = _is_french(html)
+    author_url = "/fr/a-propos/index.html" if is_fr else AUTHOR_URL
+    role = _byline_role(is_fr)
+    aria = _esc(labels.get("Byline", "Byline"), quote=True)
+    strap = (
+        f'<p class="byline-strap" aria-label="{aria}">'
+        f'<a href="{author_url}">{_esc(AUTHOR_NAME.upper())}</a>'
+        f' <span class="sep" aria-hidden="true">·</span> '
+        f"<span>{_esc(role)}</span></p>"
+    )
+    return _WRAP_CLOSE_RE.sub(strap + r"\1", html, count=1)
+
+
+def _share_li(href: str, label: str, glyph: str) -> str:
+    return (
+        f'<li><a href="{_esc(href, quote=True)}" rel="noopener noreferrer" '
+        f'aria-label="{_esc(label, quote=True)}">{glyph}</a></li>'
+    )
+
+
+def inject_share_rail(html: str) -> str:
+    """Render an FT-style vertical share rail (X / LinkedIn / Facebook
+    / WhatsApp / email) at the top of the article body. CSS makes it
+    ``position: sticky`` on >=64em and flows it inline on mobile.
+    Anchors only — no inline JavaScript, CSP-safe. The clipboard
+    'copy link' button + cross-post payload generators land later in
+    WS5. BlogPosting pages only; idempotent."""
+    if '"@type":"BlogPosting"' not in html:
+        return html
+    if 'class="share-rail share-rail--sticky"' in html:
+        return html
+    url_m = _CANONICAL_RE.search(html)
+    title_m = _OG_TITLE_RE.search(html)
+    if not (url_m and title_m):
+        return html
+    url = url_m.group(1)
+    title = _unesc(title_m.group(1))
+    enc_url = _url_quote(url, safe="")
+    enc_title = _url_quote(title, safe="")
+    enc_combo = _url_quote(f"{title} {url}", safe="")
+    labels = _labels(html)
+    aria = _esc(labels.get("Share", "Share"), quote=True)
+    items = (
+        _share_li(
+            f"https://twitter.com/intent/tweet?text={enc_combo}",
+            labels.get("Share.x", "Share on X"),
+            _SVG_X,
+        )
+        + _share_li(
+            f"https://www.linkedin.com/sharing/share-offsite/?url={enc_url}",
+            labels.get("Share.linkedin", "Share on LinkedIn"),
+            _SVG_LI,
+        )
+        + _share_li(
+            f"https://www.facebook.com/sharer/sharer.php?u={enc_url}",
+            labels.get("Share.facebook", "Share on Facebook"),
+            _SVG_FB,
+        )
+        + _share_li(
+            f"https://wa.me/?text={enc_combo}",
+            labels.get("Share.whatsapp", "Share on WhatsApp"),
+            _SVG_WA,
+        )
+        + _share_li(
+            f"mailto:?subject={enc_title}&body={enc_url}",
+            labels.get("Share.email", "Share by email"),
+            _SVG_EMAIL,
+        )
+    )
+    rail = (
+        f'<nav class="share-rail share-rail--sticky" aria-label="{aria}">'
+        f"<ul>{items}</ul></nav>"
+    )
+    return _MAIN_RE.sub(rf"\1{rail}\2\3", html, count=1)
 
 
 _OG_IMAGE_RE = re.compile(
