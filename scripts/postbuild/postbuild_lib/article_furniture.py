@@ -247,12 +247,49 @@ def _fmt_date(iso_or_rfc: str, french: bool = False) -> str:
     return iso_or_rfc
 
 
+_TAGS_PATH_BY_LANG: dict[str, str] = {
+    "en": "/tags",
+    "ar": "/ar/wusum",
+    "bn": "/bn/tag",
+    "cs": "/cs/stitky",
+    "de": "/de/etiketten",
+    "es": "/es/etiquetas",
+    "fil": "/fil/mga-tag",
+    "fr": "/fr/etiquettes",
+    "ha": "/ha/tags",
+    "he": "/he/tagim",
+    "hi": "/hi/tag",
+    "id": "/id/label",
+    "it": "/it/etichette",
+    "ja": "/ja/tagu",
+    "ko": "/ko/taegeu",
+    "nl": "/nl/labels",
+    "pl": "/pl/tagi",
+    "pt-br": "/pt-br/etiquetas",
+    "ro": "/ro/etichete",
+    "ru": "/ru/tegi",
+    "sv": "/sv/taggar",
+    "th": "/th/thaek",
+    "tr": "/tr/etiketler",
+    "uk": "/uk/tegy",
+    "vi": "/vi/the",
+    "yo": "/yo/awon-ami",
+    "zh-hans": "/zh-hans/biaoqian",
+    "zh-hant": "/zh-hant/biaoqian-tw",
+}
+
+
 def _render_tag_badges(keywords: list[str], labels: dict[str, str], lang: str = "en") -> str:
+    """Render the hero tag-chip strip. Links point at the new per-tag
+    landings ``/<locale-tags>/<slug>/`` (WS3) rather than the legacy
+    ``/tags/index.html#h3-<slug>`` anchor on the retired monolith.
+    Unknown tags fall back to the cover page (no per-tag landing yet —
+    the cover has the anchor list)."""
     if not keywords:
         return ""
-    prefix = "/fr/etiquettes/index.html" if lang == "fr" else "/tags/index.html"
+    prefix = _TAGS_PATH_BY_LANG.get(lang, "/tags")
     badges = "".join(
-        f'<a href="{prefix}#h3-{slugify(k)}" class="article-tag" rel="tag">{k}</a>'
+        f'<a href="{prefix}/{slugify(k)}/" class="article-tag" rel="tag">{k}</a>'
         for k in keywords
     )
     aria = labels.get("Topics", "Topics")

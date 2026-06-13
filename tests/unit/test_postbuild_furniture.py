@@ -169,12 +169,15 @@ def test_render_tag_badges_empty_returns_empty_string():
     assert _render_tag_badges([], LABELS_EN) == ""
 
 
-def test_render_tag_badges_en_uses_tags_prefix():
+def test_render_tag_badges_en_links_to_per_tag_landings():
     from postbuild_lib.article_furniture import LABELS_EN, _render_tag_badges
 
+    # WS3: tag chips now point at the new per-tag landing pages
+    # (/tags/<slug>/) instead of the legacy /tags/index.html#h3-…
+    # anchor on the retired monolith.
     out = _render_tag_badges(["quantum", "ISO 20022"], LABELS_EN, lang="en")
-    assert "/tags/index.html#h3-quantum" in out
-    assert "/tags/index.html#h3-iso-20022" in out
+    assert '<a href="/tags/quantum/"' in out
+    assert '<a href="/tags/iso-20022/"' in out
     assert 'rel="tag"' in out
     assert 'aria-label="Topics"' in out
 
@@ -183,7 +186,17 @@ def test_render_tag_badges_fr_uses_etiquettes_prefix():
     from postbuild_lib.article_furniture import LABELS_FR, _render_tag_badges
 
     out = _render_tag_badges(["quantique"], LABELS_FR, lang="fr")
-    assert "/fr/etiquettes/index.html#h3-quantique" in out
+    assert '<a href="/fr/etiquettes/quantique/"' in out
+
+
+def test_render_tag_badges_ja_uses_tagu_prefix():
+    """Spot-check a CJK locale to confirm the localised tags-path map
+    covers the full hreflang chain, not just FR."""
+    from postbuild_lib.article_furniture import _render_tag_badges
+
+    labels = {"Topics": "トピック"}
+    out = _render_tag_badges(["AI"], labels, lang="ja")
+    assert '<a href="/ja/tagu/ai/"' in out
 
 
 def test_render_meta_bar_includes_author_and_dates():

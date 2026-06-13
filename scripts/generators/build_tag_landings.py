@@ -41,6 +41,26 @@ ROOT = Path(__file__).resolve().parents[2]
 TAXONOMY = ROOT / "_data" / "taxonomy.yml"
 PUBLIC = ROOT / "public"
 TEMPLATE_PATH = PUBLIC / "tags" / "index.html"
+# Six editorial pillars from taxonomy.yml's category field. Order
+# matches the cover-page pillar grid; same order is used to render
+# /categories/index.html.
+PILLAR_ORDER = ("ai", "payments", "infra", "policy", "open-source", "leadership")
+PILLAR_LABELS: dict[str, str] = {
+    "ai": "Applied AI",
+    "payments": "Payments & money",
+    "infra": "Infrastructure & cryptography",
+    "policy": "Policy & resilience",
+    "open-source": "Open source",
+    "leadership": "Banking leadership",
+}
+PILLAR_DECKS: dict[str, str] = {
+    "ai": "Generative AI, agentic systems, governance, and the LLM tooling that lands in banking workflows.",
+    "payments": "Rails, settlement, tokenisation, treasury programmability, and the economics of moving money.",
+    "infra": "Post-quantum cryptography, cloud-native banking, platform engineering, and the engineering stack that runs the rail.",
+    "policy": "DORA, EU AI Act, NIST standards, third-party risk — the supervisory pressure shaping technology decisions.",
+    "open-source": "OSS in regulated banking — supply-chain trust, Rust, MCP, the projects banks rely on and ship.",
+    "leadership": "CTO / CIO concerns — strategic technology decisions, organisational design, original analysis.",
+}
 # Per-locale tags-path segment. Matches the hreflang chain already
 # emitted on /tags/index.html. The canonical tag slug stays English
 # (post-quantum-cryptography, iso-20022, …) — localising the slug
@@ -105,6 +125,15 @@ _OG_URL_RE = re.compile(
     r'<meta property="og:url" content="[^"]*"', re.IGNORECASE
 )
 _HTML_LANG_RE = re.compile(r'<html lang="[^"]*"', re.IGNORECASE)
+# The /tags/index.html cover template carries a leftover hero section
+# from its own markdown frontmatter — `<section class="ap-hero"><h1>
+# Sebastien Rousseau</h1>…</section>`. Each landing supplies its own
+# `<h1>` inside the wrap-div, so we strip the cover's hero to keep
+# the page at exactly one h1 (WCAG 2.4.6 + 1.3.1 AAA).
+_AP_HERO_BLOCK_RE = re.compile(
+    r'<section class="ap-hero">[\s\S]*?</section>',
+    re.IGNORECASE,
+)
 
 
 def _esc(s: str) -> str:
@@ -333,6 +362,7 @@ def _render_landing_html(
     out = _OG_URL_RE.sub(
         f'<meta property="og:url" content="{url}"', out, count=1
     )
+    out = _AP_HERO_BLOCK_RE.sub("", out, count=1)
     out = _MAIN_RE.sub(rf"\1{body}\3", out, count=1)
     jsonld = _render_jsonld(slug, entry, posts_for_tag)
     out = out.replace("</head>", f"{jsonld}</head>", 1)
@@ -357,6 +387,11 @@ def _load_locale_article_slugs(lang: str) -> dict[str, str]:
 
 
 _HREFLANG_ARTICLE_RE = re.compile(r'href="/(\d{4}-\d{2}-\d{2}-[^/"]+)/"')
+# JSON-LD "inLanguage":"en" / "en-GB" strings sprinkled across the EN
+# template. validate_jsonld.py flags them when the <html lang> base
+# doesn't match — see the build's JSON-LD validation step. Update in
+# place for each locale fork.
+_INLANG_RE = re.compile(r'"inLanguage":"(?:en|en-GB|en-US)"')
 
 
 def _localise_html_links(
@@ -388,6 +423,8 @@ def _localise_html_links(
     out = _HREFLANG_ARTICLE_RE.sub(_swap_article, out)
     # Related-tag chips: /tags/<canonical>/ → /<lang>/<locale-tags>/<canonical>/
     out = out.replace('href="/tags/', f'href="{locale_root}/{locale_tags}/')
+    # Update JSON-LD inLanguage so validate_jsonld doesn't warn.
+    out = _INLANG_RE.sub(f'"inLanguage":"{lang}"', out)
     return out
 
 
@@ -409,6 +446,153 @@ def _write_locale_landings(
             )
             out_path.parent.mkdir(parents=True, exist_ok=True)
             out_path.write_text(locale_html, encoding="utf-8")
+            written += 1
+    return written
+
+
+def _render_category_body(
+    pillar: str,
+    taxonomy: dict,
+    posts: dict[str, list[tuple[str, str, str, str]]],
+) -> str:
+    """Render the body of a /categories/<pillar>/ landing — a hero
+    with the pillar deck, the canonical tags belonging to the pillar
+    (each linked to /tags/<slug>/, with article count), and a
+    "recent across this pillar" card list."""
+    pillar_slugs = [
+        slug for slug, e in taxonomy.items() if e.get("category") == pillar
+    ]
+    pillar_slugs.sort(key=lambda s: -len(posts.get(s, [])))
+    tag_items = []
+    for slug in pillar_slugs:
+        n = len(posts.get(slug, []))
+        if n < 1:
+            continue
+        entry = taxonomy[slug]
+        tag_items.append(
+            f'<li><a href="/tags/{slug}/"><strong>{_esc(entry["name"])}</strong>'
+            f' <span class="meta">— {n} article{"s" if n != 1 else ""}</span></a>'
+            f"<p>{_esc(entry['description'].strip())}</p></li>"
+        )
+    # Cross-pillar recent posts: collect unique recent posts that
+    # touch any canonical in this pillar, dedupe by slug, newest first.
+    seen: set[str] = set()
+    recent: list[tuple[str, str, str, str]] = []
+    for slug in pillar_slugs:
+        for entry in posts.get(slug, []):
+            if entry[2] in seen:
+                continue
+            seen.add(entry[2])
+            recent.append(entry)
+    recent.sort(key=lambda p: p[1] or "0000", reverse=True)
+    recent = recent[:12]
+    return (
+        f'<div class="wrap report-wrap">'
+        f'<header class="tag-landing-hero">'
+        f'<p class="eyebrow">CATEGORY</p>'
+        f"<h1>{_esc(PILLAR_LABELS[pillar])}</h1>"
+        f'<p class="deck">{_esc(PILLAR_DECKS[pillar])}</p>'
+        f'<p class="tag-landing-meta">{len(tag_items)} tags</p>'
+        f"</header>"
+        f'<section aria-label="Tags under {_esc(PILLAR_LABELS[pillar])}">'
+        f'<h2>Tags in this category</h2>'
+        f'<ul class="tag-list">' + "".join(tag_items) + "</ul>"
+        f"</section>"
+        f'<section class="tag-landing-list" aria-label="Recent articles">'
+        f'<h2>Recent articles in {_esc(PILLAR_LABELS[pillar])}</h2>'
+        f"{_render_article_cards(recent)}"
+        f"</section>"
+        f"</div>"
+    )
+
+
+def _render_category_html(
+    template: str,
+    pillar: str,
+    taxonomy: dict,
+    posts: dict[str, list[tuple[str, str, str, str]]],
+) -> str:
+    url = f"{_BASE_URL}/categories/{pillar}/"
+    title = f"{PILLAR_LABELS[pillar]} — Editorial pillar"
+    desc = PILLAR_DECKS[pillar]
+    out = template
+    out = _TITLE_RE.sub(f"<title>{_esc(title)}</title>", out, count=1)
+    out = _DESC_RE.sub(
+        f'<meta name="description" content="{_esc(desc)}"', out, count=1
+    )
+    out = _CANONICAL_RE.sub(
+        f'<link rel="canonical" href="{url}"', out, count=1
+    )
+    out = _OG_TITLE_RE.sub(
+        f'<meta property="og:title" content="{_esc(title)}"', out, count=1
+    )
+    out = _OG_DESC_RE.sub(
+        f'<meta property="og:description" content="{_esc(desc)}"', out, count=1
+    )
+    out = _OG_URL_RE.sub(
+        f'<meta property="og:url" content="{url}"', out, count=1
+    )
+    body = _render_category_body(pillar, taxonomy, posts)
+    out = _AP_HERO_BLOCK_RE.sub("", out, count=1)
+    out = _MAIN_RE.sub(rf"\1{body}\3", out, count=1)
+    return out
+
+
+def _write_category_pages(
+    taxonomy: dict,
+    posts: dict[str, list[tuple[str, str, str, str]]],
+) -> tuple[int, int]:
+    """Generate /categories/<pillar>/index.html for each of the 6
+    pillars + locale forks. Reuses the /tags/index.html cover as a
+    template skeleton."""
+    if not TEMPLATE_PATH.is_file():
+        return 0, 0
+    template = TEMPLATE_PATH.read_text(encoding="utf-8")
+    en_pages: dict[str, str] = {}
+    for pillar in PILLAR_ORDER:
+        page_html = _render_category_html(template, pillar, taxonomy, posts)
+        out_path = PUBLIC / "categories" / pillar / "index.html"
+        out_path.parent.mkdir(parents=True, exist_ok=True)
+        out_path.write_text(page_html, encoding="utf-8")
+        en_pages[pillar] = page_html
+    locale_written = _write_category_locale_forks(en_pages)
+    return len(en_pages), locale_written
+
+
+def _write_category_locale_forks(en_pages: dict[str, str]) -> int:
+    """Same lang/canonical/links rewrite as tag-landing locales. The
+    /categories/ path stays English across all locales (no localised
+    segment for this round — a future polish can add per-locale
+    "catégories" / "categorías" / etc.)."""
+    written = 0
+    article_maps = {lang: _load_locale_article_slugs(lang) for lang in LOCALES_NON_EN}
+    for pillar, en_html in en_pages.items():
+        for lang in LOCALES_NON_EN:
+            locale_tags = LOCALE_TAGS_PATH[lang]
+            out = en_html
+            out = _HTML_LANG_RE.sub(f'<html lang="{lang}"', out, count=1)
+            canonical = f"{_BASE_URL}/{lang}/categories/{pillar}/"
+            out = _CANONICAL_RE.sub(
+                f'<link rel="canonical" href="{canonical}"', out, count=1
+            )
+            out = _OG_URL_RE.sub(
+                f'<meta property="og:url" content="{canonical}"', out, count=1
+            )
+            # Article links + tags → locale variants.
+            amap = article_maps[lang]
+
+            def _swap_article(m: re.Match[str], _lang: str = lang, _amap: dict = amap) -> str:
+                en_slug = m.group(1)
+                return f'href="/{_lang}/{_amap.get(en_slug, en_slug)}/"'
+
+            out = _HREFLANG_ARTICLE_RE.sub(_swap_article, out)
+            out = out.replace('href="/tags/', f'href="/{lang}/{locale_tags}/')
+            out = _INLANG_RE.sub(f'"inLanguage":"{lang}"', out)
+            out_path = (
+                PUBLIC / lang / "categories" / pillar / "index.html"
+            )
+            out_path.parent.mkdir(parents=True, exist_ok=True)
+            out_path.write_text(out, encoding="utf-8")
             written += 1
     return written
 
@@ -453,9 +637,11 @@ def main() -> int:
     taxonomy = yaml.safe_load(TAXONOMY.read_text(encoding="utf-8")) or {}
     posts, cooccur = _walk(taxonomy)
     en_written, locale_written = _write_landings(taxonomy, posts, cooccur)
+    cat_en, cat_locale = _write_category_pages(taxonomy, posts)
     print(
-        f"build_tag_landings: wrote {en_written} EN landing(s) + "
-        f"{locale_written} locale fork(s) "
+        f"build_tag_landings: wrote {en_written} EN tag landing(s) + "
+        f"{locale_written} locale fork(s); {cat_en} EN category landing(s) + "
+        f"{cat_locale} locale fork(s) "
         f"across {len(LOCALES_NON_EN)} non-EN locales."
     )
     return 0
