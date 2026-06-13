@@ -34,9 +34,15 @@ import re
 import sys
 from pathlib import Path
 
+try:
+    import yaml
+except ImportError:
+    yaml = None  # type: ignore[assignment]
+
 ROOT = Path(__file__).resolve().parents[2]
 PUBLIC = ROOT / "public"
 POSTS = ROOT / "_posts"
+TAXONOMY = ROOT / "_data" / "taxonomy.yml"
 TEMPLATE_PATH = PUBLIC / "articles" / "index.html"
 
 PAGE_SIZE = 24
@@ -44,7 +50,17 @@ _BASE_URL = "https://sebastienrousseau.com"
 
 _TITLE_FM_RE = re.compile(r'^title:\s*"?([^"\n]+?)"?\s*$', re.MULTILINE)
 _EXCERPT_FM_RE = re.compile(r'^excerpt:\s*"?([^"\n]+?)"?\s*$', re.MULTILINE)
+_TAG_FM_RE = re.compile(r'^tags:\s*"?([^"\n]+)"?', re.MULTILINE)
 _DATED_SLUG_RE = re.compile(r"^(\d{4}-\d{2}-\d{2})-(.+)$")
+PILLAR_ORDER = ("ai", "payments", "infra", "policy", "open-source", "leadership")
+PILLAR_LABELS: dict[str, str] = {
+    "ai": "Applied AI",
+    "payments": "Payments & money",
+    "infra": "Infra & cryptography",
+    "policy": "Policy & resilience",
+    "open-source": "Open source",
+    "leadership": "Banking leadership",
+}
 _MAIN_RE = re.compile(r'(<main\b[^>]*>)([\s\S]*?)(</main>)', re.IGNORECASE)
 _AP_HERO_BLOCK_RE = re.compile(
     r'<section class="ap-hero">[\s\S]*?</section>', re.IGNORECASE
@@ -76,10 +92,48 @@ def _esc(s: str) -> str:
     )
 
 
-def _walk_posts() -> list[tuple[str, str, str, str]]:
-    """Return [(title, iso-date, slug, excerpt), …] for every dated post,
-    newest first."""
-    out: list[tuple[str, str, str, str]] = []
+def _alias_map(taxonomy: dict) -> dict[str, str]:
+    out: dict[str, str] = {}
+    for slug, entry in taxonomy.items():
+        out[slug.strip().lower()] = slug
+        for alias in entry.get("aliases", []) or []:
+            out[alias.strip().lower()] = slug
+    return out
+
+
+def _load_taxonomy() -> tuple[dict, dict[str, str]]:
+    """Return (taxonomy, alias→canonical-slug map). Empty when missing."""
+    if yaml is None or not TAXONOMY.is_file():
+        return {}, {}
+    taxonomy = yaml.safe_load(TAXONOMY.read_text(encoding="utf-8")) or {}
+    return taxonomy, _alias_map(taxonomy)
+
+
+def _post_pillars(text: str, taxonomy: dict, amap: dict[str, str]) -> list[str]:
+    """Return the deduplicated pillars (categories) a post belongs to,
+    derived from its frontmatter `tags:` line resolved through aliases."""
+    m = _TAG_FM_RE.search(text)
+    if not m:
+        return []
+    pillars: set[str] = set()
+    for raw in m.group(1).split(","):
+        tag = raw.strip().strip('"').strip("'").strip()
+        canon = amap.get(tag.lower())
+        if not canon:
+            continue
+        cat = taxonomy.get(canon, {}).get("category")
+        if cat:
+            pillars.add(cat)
+    # Stable order — same as the pillar nav.
+    return [p for p in PILLAR_ORDER if p in pillars]
+
+
+def _walk_posts() -> list[tuple[str, str, str, str, list[str]]]:
+    """Return [(title, iso-date, slug, excerpt, pillars), …] for every
+    dated post, newest first. The fifth tuple field is a list of
+    pillar slugs the post belongs to (for the filter data-category)."""
+    taxonomy, amap = _load_taxonomy()
+    out: list[tuple[str, str, str, str, list[str]]] = []
     for path in sorted(POSTS.glob("*.md")):
         stem_m = _DATED_SLUG_RE.match(path.stem)
         if not stem_m:
@@ -87,12 +141,14 @@ def _walk_posts() -> list[tuple[str, str, str, str]]:
         text = path.read_text(encoding="utf-8", errors="ignore")
         title_m = _TITLE_FM_RE.search(text)
         excerpt_m = _EXCERPT_FM_RE.search(text)
+        pillars = _post_pillars(text, taxonomy, amap) if taxonomy else []
         out.append(
             (
                 title_m.group(1) if title_m else path.stem,
                 stem_m.group(1),
                 path.stem,
                 excerpt_m.group(1) if excerpt_m else "",
+                pillars,
             )
         )
     out.sort(key=lambda p: p[1], reverse=True)
@@ -123,16 +179,49 @@ def _load_locale_article_slugs(lang: str) -> dict[str, str]:
     return {k: v for k, v in arts.items() if isinstance(v, str) and v}
 
 
-def _render_card(title: str, iso_date: str, slug: str, excerpt: str) -> str:
+def _render_card(
+    title: str, iso_date: str, slug: str, excerpt: str, pillars: list[str] | None = None
+) -> str:
     excerpt_html = (
         f'<p class="card-excerpt">{_esc(excerpt)}</p>' if excerpt else ""
     )
+    year_attr = f' data-year="{iso_date[:4]}"' if iso_date else ""
+    cat_attr = f' data-category="{" ".join(pillars)}"' if pillars else ""
     return (
-        f'<article class="tag-landing-card">'
+        f'<article class="tag-landing-card"{year_attr}{cat_attr}>'
         f'<h2><a href="/{slug}/">{_esc(title)}</a></h2>'
         f'<time datetime="{iso_date}" class="card-date">{iso_date}</time>'
         f"{excerpt_html}"
         f"</article>"
+    )
+
+
+def _render_filter_form(
+    pillar_options: list[tuple[str, str]],
+    year_options: list[str],
+) -> str:
+    """Two native <select>s + an empty-state region. main.js wires the
+    `change` event to update data-filter-* attributes on the list."""
+    pillar_opts = '<option value="">All categories</option>' + "".join(
+        f'<option value="{slug}">{_esc(label)}</option>'
+        for slug, label in pillar_options
+    )
+    year_opts = '<option value="">All years</option>' + "".join(
+        f'<option value="{year}">{year}</option>' for year in year_options
+    )
+    # `<div role="search">` rather than `<form>` — there's no submit
+    # target (selects fire JS change events that mutate the list's
+    # data attributes), and a form-without-submit-button trips
+    # WCAG H32.2 AAA. The role keeps SR announcement as "search".
+    return (
+        '<div class="listing-filters" role="search" aria-label="Filter articles">'
+        '<label>Category'
+        f'<select data-filter-target="category" name="category">{pillar_opts}</select>'
+        '</label>'
+        '<label>Year'
+        f'<select data-filter-target="year" name="year">{year_opts}</select>'
+        '</label>'
+        '</div>'
     )
 
 
@@ -179,23 +268,29 @@ def _render_pagination(
 def _render_listing_body(
     page: int,
     total_pages: int,
-    page_posts: list[tuple[str, str, str, str]],
+    page_posts: list[tuple[str, str, str, str, list[str]]],
     base_path: str,
     page_label: str,
     title: str,
+    all_years: list[str],
 ) -> str:
     cards = "".join(_render_card(*p) for p in page_posts)
     pagination = _render_pagination(page, total_pages, base_path)
+    pillar_options = [(p, PILLAR_LABELS[p]) for p in PILLAR_ORDER]
+    filter_form = _render_filter_form(pillar_options, all_years)
     return (
         f'<div class="wrap report-wrap">'
         f'<header class="tag-landing-hero">'
         f'<p class="eyebrow">ARCHIVE</p>'
         f"<h1>{_esc(title)}</h1>"
-        f'<p class="tag-landing-meta">{page_label}</p>'
+        f'<p class="tag-landing-meta">{page_label} · '
+        f'<span id="listing-count">{len(page_posts)}</span> visible</p>'
         f"</header>"
+        f"{filter_form}"
         f'<section class="tag-landing-list" aria-label="Article cards">'
         f"{cards}"
         f"</section>"
+        f'<p class="listing-empty" role="status">No articles match the current filters.</p>'
         f"{pagination}"
         f"</div>"
     )
@@ -230,10 +325,11 @@ def _render_page_html(
     template: str,
     page: int,
     total_pages: int,
-    page_posts: list[tuple[str, str, str, str]],
+    page_posts: list[tuple[str, str, str, str, list[str]]],
     canonical_url: str,
     base_path: str,
     title: str,
+    all_years: list[str],
 ) -> str:
     page_label = f"Page {page} of {total_pages}"
     desc = (
@@ -241,7 +337,7 @@ def _render_page_html(
         f"cryptography, and the technology of banking. {page_label}."
     )
     body = _render_listing_body(
-        page, total_pages, page_posts, base_path, page_label, title
+        page, total_pages, page_posts, base_path, page_label, title, all_years
     )
     out = _swap_head(template, title, desc, canonical_url)
     out = _AP_HERO_BLOCK_RE.sub("", out, count=1)
@@ -287,18 +383,103 @@ def _chunk(seq: list, size: int) -> list[list]:
     return [seq[i : i + size] for i in range(0, len(seq), size)]
 
 
-def _write_listings() -> tuple[int, int]:
-    if not TEMPLATE_PATH.is_file():
-        print(
-            f"build_listings: missing template {TEMPLATE_PATH}",
-            file=sys.stderr,
+def _group_by_year(
+    posts: list[tuple[str, str, str, str, list[str]]]
+) -> dict[str, list[tuple[str, str, str, str, list[str]]]]:
+    groups: dict[str, list[tuple[str, str, str, str, list[str]]]] = {}
+    for p in posts:
+        year = p[1][:4]
+        groups.setdefault(year, []).append(p)
+    return groups
+
+
+def _render_year_body(
+    year: str,
+    posts_for_year: list[tuple[str, str, str, str, list[str]]],
+) -> str:
+    cards = "".join(_render_card(*p) for p in posts_for_year)
+    n = len(posts_for_year)
+    return (
+        f'<div class="wrap report-wrap">'
+        f'<header class="tag-landing-hero">'
+        f'<p class="eyebrow">ARCHIVE</p>'
+        f"<h1>Articles — {year}</h1>"
+        f'<p class="tag-landing-meta">{n} article{"s" if n != 1 else ""}</p>'
+        f"</header>"
+        f'<section class="tag-landing-list" aria-label="Articles published in {year}">'
+        f"{cards}"
+        f"</section>"
+        f"</div>"
+    )
+
+
+def _write_year_archives(
+    template: str,
+    posts: list[tuple[str, str, str, str, list[str]]],
+) -> tuple[int, int]:
+    by_year = _group_by_year(posts)
+    en_pages: list[tuple[str, str]] = []
+    for year, year_posts in sorted(by_year.items(), reverse=True):
+        canonical = f"{_BASE_URL}/articles/{year}/"
+        title = f"Articles — {year}"
+        desc = (
+            f"All articles published by Sebastien Rousseau in {year}. "
+            f"{len(year_posts)} articles on AI, payments, post-quantum "
+            f"cryptography, and the technology of banking."
         )
-        return 0, 0
-    template = TEMPLATE_PATH.read_text(encoding="utf-8")
-    posts = _walk_posts()
-    pages = _chunk(posts, PAGE_SIZE)
+        out = _swap_head(template, title, desc, canonical)
+        out = _AP_HERO_BLOCK_RE.sub("", out, count=1)
+        out = _MAIN_RE.sub(rf"\1{_render_year_body(year, year_posts)}\3", out, count=1)
+        out_path = PUBLIC / "articles" / year / "index.html"
+        out_path.parent.mkdir(parents=True, exist_ok=True)
+        out_path.write_text(out, encoding="utf-8")
+        en_pages.append((year, out))
+
+    locale_written = 0
+    article_maps = {lang: _load_locale_article_slugs(lang) for lang in LOCALES_NON_EN}
+    locale_prefixes = {
+        lang: _load_static_slug(lang, "articles", "articles") for lang in LOCALES_NON_EN
+    }
+    for year, en_html in en_pages:
+        for lang in LOCALES_NON_EN:
+            prefix = locale_prefixes[lang]
+            out_path = PUBLIC / lang / prefix / year / "index.html"
+            # Reuse the per-page locale rewrite (it doesn't care about
+            # which kind of listing; only swaps the chrome).
+            out = en_html
+            out = _HTML_LANG_RE.sub(f'<html lang="{lang}"', out, count=1)
+            canonical = f"{_BASE_URL}/{lang}/{prefix}/{year}/"
+            out = _CANONICAL_RE.sub(
+                f'<link rel="canonical" href="{canonical}"', out, count=1
+            )
+            out = _OG_URL_RE.sub(
+                f'<meta property="og:url" content="{canonical}"', out, count=1
+            )
+            amap = article_maps[lang]
+
+            def _swap_article(m: re.Match[str], _lang: str = lang, _amap: dict = amap) -> str:
+                en_slug = m.group(1)
+                return f'href="/{_lang}/{_amap.get(en_slug, en_slug)}/"'
+
+            out = _HREFLANG_ARTICLE_RE.sub(_swap_article, out)
+            out = out.replace('href="/articles/', f'href="/{lang}/{prefix}/')
+            out = _INLANG_RE.sub(f'"inLanguage":"{lang}"', out)
+            out_path.parent.mkdir(parents=True, exist_ok=True)
+            out_path.write_text(out, encoding="utf-8")
+            locale_written += 1
+    return len(en_pages), locale_written
+
+
+def _write_en_paged(
+    template: str,
+    pages: list[list],
+    all_years: list[str],
+) -> list[tuple[int, str]]:
+    """Write each English paged listing to /articles/[page/N/]index.html
+    and return the (page-number, rendered-html) pairs for the locale
+    fork pass."""
     total_pages = len(pages)
-    en_pages: list[tuple[int, str]] = []
+    out: list[tuple[int, str]] = []
     for idx, page_posts in enumerate(pages, start=1):
         canonical = (
             f"{_BASE_URL}/articles/"
@@ -306,7 +487,14 @@ def _write_listings() -> tuple[int, int]:
             else f"{_BASE_URL}/articles/page/{idx}/"
         )
         page_html = _render_page_html(
-            template, idx, total_pages, page_posts, canonical, "/articles", "Articles"
+            template,
+            idx,
+            total_pages,
+            page_posts,
+            canonical,
+            "/articles",
+            "Articles",
+            all_years,
         )
         out_path = (
             PUBLIC / "articles" / "index.html"
@@ -315,7 +503,23 @@ def _write_listings() -> tuple[int, int]:
         )
         out_path.parent.mkdir(parents=True, exist_ok=True)
         out_path.write_text(page_html, encoding="utf-8")
-        en_pages.append((idx, page_html))
+        out.append((idx, page_html))
+    return out
+
+
+def _write_listings() -> tuple[int, int, int, int]:
+    if not TEMPLATE_PATH.is_file():
+        print(
+            f"build_listings: missing template {TEMPLATE_PATH}",
+            file=sys.stderr,
+        )
+        return 0, 0, 0, 0
+    template = TEMPLATE_PATH.read_text(encoding="utf-8")
+    posts = _walk_posts()
+    year_en, year_locale = _write_year_archives(template, posts)
+    pages = _chunk(posts, PAGE_SIZE)
+    all_years = sorted({p[1][:4] for p in posts}, reverse=True)
+    en_pages = _write_en_paged(template, pages, all_years)
 
     locale_written = 0
     article_maps = {lang: _load_locale_article_slugs(lang) for lang in LOCALES_NON_EN}
@@ -332,16 +536,17 @@ def _write_listings() -> tuple[int, int]:
             )
             _write_locale_page(en_html, lang, idx, article_maps[lang], prefix, out_path)
             locale_written += 1
-    return len(en_pages), locale_written
+    return len(en_pages), locale_written, year_en, year_locale
 
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.parse_args()
-    en_written, locale_written = _write_listings()
+    en_written, locale_written, year_en, year_locale = _write_listings()
     print(
         f"build_listings: wrote {en_written} EN paged listing(s) + "
-        f"{locale_written} locale fork(s) "
+        f"{locale_written} locale fork(s); "
+        f"{year_en} EN year archive(s) + {year_locale} locale fork(s) "
         f"across {len(LOCALES_NON_EN)} non-EN locales."
     )
     return 0

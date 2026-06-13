@@ -384,6 +384,31 @@
       nav.page-nav a:hover{border-color:var(--ink-deep);background:var(--ink-deep);color:var(--paper)}
       nav.page-nav .page-nav-num.is-current{background:var(--ink-deep);color:var(--paper);border-color:var(--ink-deep);font-weight:700}
       nav.page-nav .page-nav-prev,nav.page-nav .page-nav-next{padding:0 18px;font-weight:600;letter-spacing:.04em}
+      /* Filter controls — native <select> over the listing grid, no JS.
+         Uses `:has()` to hide cards that don't match the chosen
+         category. Two selects per /articles/ page: category + year. */
+      .listing-filters{display:flex;flex-wrap:wrap;gap:14px;margin:0 0 24px;padding:0}
+      .listing-filters label{display:inline-flex;flex-direction:column;gap:4px;font-family:var(--type-body);font-size:.6875rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-mute)}
+      .listing-filters select{font-family:var(--type-body);font-size:1rem;padding:10px 14px;min-height:44px;border:1px solid var(--rule);background:var(--paper);color:var(--ink-deep);cursor:pointer;min-width:200px}
+      .listing-filters select:focus-visible{outline:2px solid var(--ink-deep);outline-offset:2px}
+      /* Filter logic: main.js updates data-filter-category /
+         data-filter-year attributes on .tag-landing-list. CSS uses
+         attribute selectors to hide non-matching cards. Empty value
+         means "show all". */
+      section.tag-landing-list[data-filter-category="ai"] article:not([data-category~="ai"]),
+      section.tag-landing-list[data-filter-category="payments"] article:not([data-category~="payments"]),
+      section.tag-landing-list[data-filter-category="infra"] article:not([data-category~="infra"]),
+      section.tag-landing-list[data-filter-category="policy"] article:not([data-category~="policy"]),
+      section.tag-landing-list[data-filter-category="open-source"] article:not([data-category~="open-source"]),
+      section.tag-landing-list[data-filter-category="leadership"] article:not([data-category~="leadership"]){display:none}
+      section.tag-landing-list[data-filter-year] article[data-year]:not([data-year]){display:none}
+      section.tag-landing-list[data-filter-year="2026"] article:not([data-year="2026"]),
+      section.tag-landing-list[data-filter-year="2025"] article:not([data-year="2025"]),
+      section.tag-landing-list[data-filter-year="2024"] article:not([data-year="2024"]),
+      section.tag-landing-list[data-filter-year="2023"] article:not([data-year="2023"]),
+      section.tag-landing-list[data-filter-year="2018"] article:not([data-year="2018"]){display:none}
+      .listing-empty{display:none;font-family:var(--type-body);color:var(--ink-mute);text-align:center;padding:32px;border:1px dashed var(--rule)}
+      section.tag-landing-list[data-empty="1"] + .listing-empty{display:block}
       /* Article body type-scale: tighten in-body H2/H3/P/UL/OL only.
          h1 stays in .ap-hero at its current scale. */
       main.content :is(h2){font-size:clamp(1.625rem,2.6vw,2rem);line-height:1.2;letter-spacing:-.01em;margin:calc(var(--leading-article) * 2em) 0 .5em;max-width:var(--measure-article)}

@@ -111,6 +111,43 @@ document.addEventListener("click", function (event) {
 });
 
 /**
+ * Listing filter — `/articles/` page <select>s update data-filter-*
+ * attributes on the .tag-landing-list container. CSS in the layout
+ * uses attribute selectors to hide non-matching cards. Empty value
+ * means "show all". Updates a counter + empty-state marker so screen
+ * readers can announce the filtered count.
+ */
+document.addEventListener("change", function (event) {
+    var target = event.target;
+    if (!target || target.tagName !== "SELECT") return;
+    var which = target.getAttribute("data-filter-target");
+    if (!which) return;
+    var list = document.querySelector(".tag-landing-list");
+    if (!list) return;
+    if (target.value) {
+        list.setAttribute("data-filter-" + which, target.value);
+    } else {
+        list.removeAttribute("data-filter-" + which);
+    }
+    // Empty-state: after each filter change, count VISIBLE cards via
+    // getBoundingClientRect (cheaper than getComputedStyle); flip a
+    // marker that the CSS shows in a sibling `.listing-empty` block.
+    var visible = 0;
+    Array.prototype.forEach.call(list.children, function (card) {
+        if (card.offsetParent !== null) visible++;
+    });
+    if (visible === 0) {
+        list.setAttribute("data-empty", "1");
+    } else {
+        list.removeAttribute("data-empty");
+    }
+    var counter = document.getElementById("listing-count");
+    if (counter) {
+        counter.textContent = visible;
+    }
+});
+
+/**
  * Action-rail "Save PDF" trigger — opens the browser print dialog so the
  * user can route to "Save as PDF". The @media print stylesheet hides
  * interactive chrome and forces a serif body, so the PDF that drops out
