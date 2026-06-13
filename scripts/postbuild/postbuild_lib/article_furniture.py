@@ -1032,22 +1032,48 @@ def inject_reuse_panel(html: str) -> str:
         license_a = f'<a rel="license" href="{license_url}">{_esc(license_label)}</a>'
     else:
         license_a = _esc(license_label)
-    attribution = (
-        f'"{title}" by {_AUTHOR_FIRST} {_AUTHOR_LAST}, '
-        f"originally published at {url}. Licensed under {license_id}."
+    # Description for the visible share-card preview AND the multi-line
+    # attribution payload. Falls back to "" when the article has no
+    # meta description (rare; default articles do).
+    desc_m = _DESCRIPTION_RE.search(html)
+    desc = _unesc(desc_m.group(1)) if desc_m else ""
+    meta_block = (
+        f'<header class="reuse-meta">'
+        f"<h3>{_esc(title)}</h3>"
+        + (f"<p>{_esc(desc)}</p>" if desc else "")
+        + "</header>"
     )
+    # Richer multi-line attribution so the pasted block reads as a
+    # complete share card, not a one-liner. Title + description give
+    # republishers immediate context; URL + author + licence carry
+    # the legal attribution requirement. The visible URL drops the
+    # /index.html canonical suffix so the share payload reads
+    # naturally — browsers resolve either form.
+    share_url = url[: -len("/index.html")] + "/" if url.endswith("/index.html") else url
+    attribution_lines = [title]
+    if desc:
+        attribution_lines.extend(["", desc])
+    attribution_lines.extend(
+        [
+            "",
+            f"Originally published at {share_url} by {_AUTHOR_FIRST} {_AUTHOR_LAST}.",
+            f"Licensed under {license_id}.",
+        ]
+    )
+    attribution = "\n".join(attribution_lines)
     copy_label = _esc(labels.get("Reuse.copy", "Copy attribution"))
     panel = (
         f'<section class="reuse" aria-labelledby="reuse-heading">'
         f'<h2 id="reuse-heading">'
         f'{_esc(labels.get("Reuse.heading", "Republish this article"))}</h2>'
-        f"<p>{_esc(labels.get('Reuse.license', 'This article is licensed under'))} "
-        f"{license_a}. "
-        f"{_esc(labels.get('Reuse.attribution', 'Republication requires attribution to the canonical URL.'))}</p>"
-        f'<pre id="reuse-attribution">{_esc(attribution)}</pre>'
-        f'<button type="button" class="copy-btn" data-copy="#reuse-attribution" '
-        f'aria-label="{copy_label}">{copy_label}</button>'
-        f"</section>"
+        + meta_block
+        + f"<p>{_esc(labels.get('Reuse.license', 'This article is licensed under'))} "
+        + f"{license_a}. "
+        + f"{_esc(labels.get('Reuse.attribution', 'Republication requires attribution to the canonical URL.'))}</p>"
+        + f'<pre id="reuse-attribution">{_esc(attribution)}</pre>'
+        + '<button type="button" class="copy-btn" data-copy="#reuse-attribution" '
+        + f'aria-label="{copy_label}">{copy_label}</button>'
+        + "</section>"
     )
     return _WRAP_CLOSE_RE.sub(panel + r"\1", html, count=1)
 

@@ -2561,21 +2561,43 @@ def test_inject_reuse_panel_no_op_without_blogposting():
     assert inject_reuse_panel("<p>plain page</p>") == "<p>plain page</p>"
 
 
-def test_inject_reuse_panel_emits_cc_by_4_default_with_machine_readable_license():
+def test_inject_reuse_panel_emits_share_card_with_title_description_license():
     from postbuild_lib.article_furniture import inject_reuse_panel
 
     out = inject_reuse_panel(_ws2_page())
     assert 'class="reuse"' in out
     assert 'rel="license"' in out
     assert 'href="https://creativecommons.org/licenses/by/4.0/"' in out
-    # Attribution snippet renders title + author + canonical URL
-    assert "My Post: A Subtitle" in out
-    assert "Sebastien Rousseau" in out
+    # Visible share-card preview — title + description above the
+    # licence + attribution lines, like the cite popover.
+    assert 'class="reuse-meta"' in out
+    assert "<h3>My Post: A Subtitle</h3>" in out
+    assert "<p>A brief description of the article.</p>" in out
+    # Multi-line attribution payload includes title + description so
+    # what the reader copies is a complete share card, not a one-liner.
+    assert "My Post: A Subtitle\n\nA brief description of the article." in out
+    assert "Originally published at https://sebastienrousseau.com/2026-01-01-my-post/" in out
+    assert "by Sebastien Rousseau" in out
     assert "Licensed under CC-BY-4.0" in out
     # Copy button paired with the attribution <pre> for main.js to wire.
     assert '<pre id="reuse-attribution">' in out
     assert 'data-copy="#reuse-attribution"' in out
     assert 'class="copy-btn"' in out
+
+
+def test_inject_reuse_panel_compact_when_description_missing():
+    from postbuild_lib.article_furniture import inject_reuse_panel
+
+    head = _WS2_HEAD.replace(
+        '<meta name="description" content="A brief description of the article.">',
+        "",
+    )
+    out = inject_reuse_panel(_ws2_page(head=head))
+    # Title still renders in the preview; no empty <p></p> for the
+    # missing description; attribution still works.
+    assert "<h3>My Post: A Subtitle</h3>" in out
+    assert "<p></p>" not in out
+    assert "Originally published at" in out
 
 
 def test_inject_reuse_panel_respects_license_meta_override():
