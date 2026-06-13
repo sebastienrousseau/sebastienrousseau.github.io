@@ -41,6 +41,42 @@ ROOT = Path(__file__).resolve().parents[2]
 TAXONOMY = ROOT / "_data" / "taxonomy.yml"
 PUBLIC = ROOT / "public"
 TEMPLATE_PATH = PUBLIC / "tags" / "index.html"
+# Per-locale tags-path segment. Matches the hreflang chain already
+# emitted on /tags/index.html. The canonical tag slug stays English
+# (post-quantum-cryptography, iso-20022, …) — localising the slug
+# itself is a future polish; for now we get URL parity at /<lang>/
+# <localised-tags-segment>/<canonical>/index.html.
+LOCALE_TAGS_PATH: dict[str, str] = {
+    "en": "tags",
+    "ar": "wusum",
+    "bn": "tag",
+    "cs": "stitky",
+    "de": "etiketten",
+    "es": "etiquetas",
+    "fil": "mga-tag",
+    "fr": "etiquettes",
+    "ha": "tags",
+    "he": "tagim",
+    "hi": "tag",
+    "id": "label",
+    "it": "etichette",
+    "ja": "tagu",
+    "ko": "taegeu",
+    "nl": "labels",
+    "pl": "tagi",
+    "pt-br": "etiquetas",
+    "ro": "etichete",
+    "ru": "tegi",
+    "sv": "taggar",
+    "th": "thaek",
+    "tr": "etiketler",
+    "uk": "tegy",
+    "vi": "the",
+    "yo": "awon-ami",
+    "zh-hans": "biaoqian",
+    "zh-hant": "biaoqian-tw",
+}
+LOCALES_NON_EN = [code for code in LOCALE_TAGS_PATH if code != "en"]
 
 _LANDING_THRESHOLD = 3
 _BASE_URL = "https://sebastienrousseau.com"
@@ -303,19 +339,93 @@ def _render_landing_html(
     return out
 
 
+def _load_locale_article_slugs(lang: str) -> dict[str, str]:
+    """Return {en-slug: locale-slug} from ``_data/i18n/<lang>/slugs.json``.
+    Returns {} when the file is missing — locale forks then keep the
+    EN article links rather than 404 silently."""
+    import json
+
+    path = ROOT / "_data" / "i18n" / lang / "slugs.json"
+    if not path.is_file():
+        return {}
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return {}
+    arts = data.get("articles") or {}
+    return {k: v for k, v in arts.items() if isinstance(v, str) and v}
+
+
+_HREFLANG_ARTICLE_RE = re.compile(r'href="/(\d{4}-\d{2}-\d{2}-[^/"]+)/"')
+
+
+def _localise_html_links(
+    en_html: str,
+    lang: str,
+    slug: str,
+    article_map: dict[str, str],
+) -> str:
+    """Rewrite the EN landing HTML into one locale variant: <html lang>,
+    canonical, og:url, internal article links, related-tag chip hrefs."""
+    locale_tags = LOCALE_TAGS_PATH[lang]
+    locale_root = f"/{lang}"
+    out = en_html
+    out = _HTML_LANG_RE.sub(f'<html lang="{lang}"', out, count=1)
+    canonical = f"{_BASE_URL}{locale_root}/{locale_tags}/{slug}/"
+    out = _CANONICAL_RE.sub(
+        f'<link rel="canonical" href="{canonical}"', out, count=1
+    )
+    out = _OG_URL_RE.sub(
+        f'<meta property="og:url" content="{canonical}"', out, count=1
+    )
+    # Article slug remap — strict {en-slug} matches only so we don't
+    # silently rewrite unrelated hrefs.
+    def _swap_article(m: re.Match[str]) -> str:
+        en_slug = m.group(1)
+        locale_slug = article_map.get(en_slug, en_slug)
+        return f'href="{locale_root}/{locale_slug}/"'
+
+    out = _HREFLANG_ARTICLE_RE.sub(_swap_article, out)
+    # Related-tag chips: /tags/<canonical>/ → /<lang>/<locale-tags>/<canonical>/
+    out = out.replace('href="/tags/', f'href="{locale_root}/{locale_tags}/')
+    return out
+
+
+def _write_locale_landings(
+    taxonomy: dict,
+    posts: dict[str, list[tuple[str, str, str, str]]],
+    en_pages: dict[str, str],
+) -> int:
+    written = 0
+    article_maps = {lang: _load_locale_article_slugs(lang) for lang in LOCALES_NON_EN}
+    for slug in en_pages:
+        if len(posts.get(slug, [])) < _LANDING_THRESHOLD:
+            continue
+        en_html = en_pages[slug]
+        for lang in LOCALES_NON_EN:
+            locale_html = _localise_html_links(en_html, lang, slug, article_maps[lang])
+            out_path = (
+                PUBLIC / lang / LOCALE_TAGS_PATH[lang] / slug / "index.html"
+            )
+            out_path.parent.mkdir(parents=True, exist_ok=True)
+            out_path.write_text(locale_html, encoding="utf-8")
+            written += 1
+    return written
+
+
 def _write_landings(
     taxonomy: dict,
     posts: dict[str, list[tuple[str, str, str, str]]],
     cooccur: dict[str, collections.Counter[str]],
-) -> int:
+) -> tuple[int, int]:
     if not TEMPLATE_PATH.is_file():
         print(
             f"build_tag_landings: missing template {TEMPLATE_PATH}",
             file=sys.stderr,
         )
-        return 2
+        return 0, 0
     template = TEMPLATE_PATH.read_text(encoding="utf-8")
-    written = 0
+    en_pages: dict[str, str] = {}
     for slug, entry in taxonomy.items():
         ps = posts.get(slug, [])
         if len(ps) < _LANDING_THRESHOLD:
@@ -326,8 +436,9 @@ def _write_landings(
         out_path = PUBLIC / "tags" / slug / "index.html"
         out_path.parent.mkdir(parents=True, exist_ok=True)
         out_path.write_text(page_html, encoding="utf-8")
-        written += 1
-    return written
+        en_pages[slug] = page_html
+    locale_written = _write_locale_landings(taxonomy, posts, en_pages)
+    return len(en_pages), locale_written
 
 
 def main() -> int:
@@ -341,10 +452,11 @@ def main() -> int:
         return 0
     taxonomy = yaml.safe_load(TAXONOMY.read_text(encoding="utf-8")) or {}
     posts, cooccur = _walk(taxonomy)
-    written = _write_landings(taxonomy, posts, cooccur)
+    en_written, locale_written = _write_landings(taxonomy, posts, cooccur)
     print(
-        f"build_tag_landings: wrote {written} per-tag landing page(s) "
-        f"under public/tags/<slug>/index.html"
+        f"build_tag_landings: wrote {en_written} EN landing(s) + "
+        f"{locale_written} locale fork(s) "
+        f"across {len(LOCALES_NON_EN)} non-EN locales."
     )
     return 0
 
