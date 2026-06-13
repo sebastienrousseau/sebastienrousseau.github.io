@@ -314,6 +314,31 @@
       section.reuse p{font-family:var(--type-body);font-size:.9375rem;line-height:1.5;color:var(--ink-soft);margin:0 0 8px;max-width:none}
       section.reuse a{color:var(--ink-deep);text-decoration:underline}
       section.reuse pre{margin:8px 0 0;padding:12px;background:var(--bg);border:1px solid var(--rule);font-family:var(--type-mono);font-size:.8125rem;line-height:1.4;color:var(--ink);overflow-x:auto;white-space:pre-wrap;word-break:break-word}
+      /* /tags/ cover — curated pillar grid + featured-tag cards +
+         per-pillar canonical list. Replaces the legacy 482KB
+         monolithic anchor list. Per-tag landing pages at
+         /tags/<slug>/ ship in WS3 commit 3. */
+      .tag-pillar-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin:24px 0 36px}
+      .tag-pillar-card{display:block;padding:18px;border:1px solid var(--rule);background:var(--paper);color:var(--ink);text-decoration:none;transition:border-color .2s ease}
+      .tag-pillar-card:hover{border-color:var(--ink-deep);opacity:1}
+      .tag-pillar-card .eyebrow{margin-bottom:6px}
+      .tag-pillar-card h3{font-family:var(--type-body);font-size:1rem;font-weight:700;margin:0 0 6px;color:var(--ink-deep)}
+      .tag-pillar-card p{font-family:var(--type-body);font-size:.875rem;line-height:1.45;color:var(--ink-soft);margin:0;max-width:none}
+      .tag-featured{margin:36px 0}
+      .tag-featured h2{font-family:var(--type-body);font-size:.875rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-deep);margin:0 0 12px}
+      .tag-featured-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:8px}
+      .tag-featured-card{display:block;padding:12px 14px;border:1px solid var(--rule);background:var(--paper);color:var(--ink);text-decoration:none;transition:border-color .2s ease,color .2s ease}
+      .tag-featured-card:hover{border-color:var(--ink-deep);opacity:1}
+      .tag-featured-card h3{font-family:var(--type-body);font-size:.9375rem;font-weight:600;margin:0;color:var(--ink-deep);letter-spacing:0;text-transform:none}
+      .tag-featured-card .meta{font-family:var(--type-body);font-size:.75rem;color:var(--ink-mute);margin:4px 0 0}
+      .tag-pillar-section{margin:48px 0;padding-top:24px;border-top:1px solid var(--rule)}
+      .tag-pillar-section h2{font-family:var(--type-display);font-size:clamp(1.625rem,2.6vw,2rem);margin:0 0 8px;color:var(--ink-deep)}
+      .tag-pillar-section .deck{margin:0 0 18px;color:var(--ink-soft)}
+      .tag-list{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px}
+      .tag-list li{padding:14px;border:1px solid var(--rule);background:var(--paper);scroll-margin-top:calc(var(--nav-h) + 16px)}
+      .tag-list li strong{font-family:var(--type-body);font-weight:700;color:var(--ink-deep)}
+      .tag-list li .meta{font-family:var(--type-body);font-size:.75rem;color:var(--ink-mute)}
+      .tag-list li p{font-family:var(--type-body);font-size:.875rem;line-height:1.45;color:var(--ink-soft);margin:6px 0 0;max-width:none}
       /* Article body type-scale: tighten in-body H2/H3/P/UL/OL only.
          h1 stays in .ap-hero at its current scale. */
       main.content :is(h2){font-size:clamp(1.625rem,2.6vw,2rem);line-height:1.2;letter-spacing:-.01em;margin:calc(var(--leading-article) * 2em) 0 .5em;max-width:var(--measure-article)}
