@@ -115,6 +115,11 @@ for f in public/main.*.js public/sw.*.js public/theme-init.*.js public/highlight
 done
 
 python3 scripts/generators/build_topics.py
+# Per-tag landing pages — reads the ssg-emitted /tags/index.html as
+# template skeleton + the canonical taxonomy, and writes
+# /tags/<slug>/index.html per landing-eligible canonical (>=3 posts).
+# Locale forks land in a follow-up WS3 commit.
+python3 scripts/generators/build_tag_landings.py
 python3 scripts/generators/build_translations/__main__.py
 python3 scripts/generators/build_lang_feeds.py
 python3 scripts/generators/build_agent_api.py

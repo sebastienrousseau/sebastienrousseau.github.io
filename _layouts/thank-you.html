@@ -237,7 +237,7 @@
       .byline-strap{font-family:var(--type-body);font-size:.75rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-mute);margin:0 0 8px;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
       .byline-strap a{color:inherit;text-decoration:none}
       .byline-strap a:hover{color:var(--accent);opacity:1}
-      .byline-strap .sep{color:var(--rule);user-select:none}
+      .byline-strap .sep{color:var(--ink-mute);user-select:none}
       aside.pull-quote{font-family:var(--type-display);font-style:italic;font-size:clamp(1.25rem,2vw,1.625rem);line-height:1.4;color:var(--ink-deep);max-width:var(--measure-article);margin:32px 0;padding:0 0 0 32px;position:relative;text-wrap:balance}
       aside.pull-quote::before{content:"\201C";position:absolute;inset-inline-start:0;top:-12px;font-size:3rem;line-height:1;color:var(--rule);font-family:var(--type-display)}
       aside.pull-quote cite{display:block;margin-top:12px;font-style:normal;font-family:var(--type-body);font-size:.75rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-mute)}
@@ -354,6 +354,28 @@
       details.tag-posts>ul li{padding:0;background:transparent;border:0}
       details.tag-posts a{color:var(--ink-deep)}
       details.tag-posts time{color:var(--ink-mute);font-size:.75rem;margin-inline-start:6px}
+      /* Per-tag landing page (/tags/<slug>/) — hero + article cards
+         + related-tags nav. Built by scripts/generators/build_tag_landings.py
+         after ssg has run. */
+      header.tag-landing-hero{margin:24px 0 32px;padding-bottom:24px;border-bottom:1px solid var(--rule)}
+      header.tag-landing-hero h1{font-family:var(--type-display);font-size:clamp(2rem,3.5vw,2.75rem);font-weight:600;margin:0 0 12px;color:var(--ink-deep);max-width:var(--measure-article)}
+      header.tag-landing-hero .deck{margin:0 0 12px}
+      header.tag-landing-hero .tag-landing-meta{font-family:var(--type-body);font-size:.75rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-mute);margin:0}
+      section.tag-landing-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:18px;margin:0 0 48px;list-style:none;padding:0}
+      article.tag-landing-card{padding:18px;border:1px solid var(--rule);background:var(--paper);transition:border-color .2s ease}
+      article.tag-landing-card:hover{border-color:var(--ink-deep)}
+      article.tag-landing-card h2{font-family:var(--type-body);font-size:1rem;font-weight:700;margin:0 0 6px;line-height:1.3;color:var(--ink-deep);letter-spacing:0;text-transform:none}
+      article.tag-landing-card h2 a{color:var(--ink-deep);text-decoration:none}
+      article.tag-landing-card h2 a:hover{text-decoration:underline}
+      article.tag-landing-card .card-date{display:block;font-family:var(--type-body);font-size:.75rem;color:var(--ink-mute);margin:0 0 6px}
+      article.tag-landing-card .card-excerpt{font-family:var(--type-body);font-size:.875rem;line-height:1.45;color:var(--ink-soft);margin:0;max-width:none}
+      nav.related-tags{padding:18px;border:1px solid var(--rule);background:var(--paper);margin:32px 0}
+      nav.related-tags h2{font-family:var(--type-body);font-size:.875rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-deep);margin:0 0 8px}
+      nav.related-tags p{font-family:var(--type-body);font-size:.875rem;color:var(--ink-soft);margin:0 0 12px}
+      nav.related-tags .related-tags-grid{display:flex;flex-wrap:wrap;gap:8px}
+      nav.related-tags a.related-tag-chip{display:inline-flex;align-items:center;gap:6px;padding:8px 14px;min-height:44px;border:1px solid var(--rule);background:transparent;color:var(--ink-deep);text-decoration:none;border-radius:999px;font-family:var(--type-body);font-size:.875rem;transition:border-color .2s ease,background .2s ease}
+      nav.related-tags a.related-tag-chip:hover{border-color:var(--ink-deep);background:var(--ink-deep);color:var(--paper)}
+      nav.related-tags a.related-tag-chip .meta{font-size:.75rem;opacity:.7}
       /* Article body type-scale: tighten in-body H2/H3/P/UL/OL only.
          h1 stays in .ap-hero at its current scale. */
       main.content :is(h2){font-size:clamp(1.625rem,2.6vw,2rem);line-height:1.2;letter-spacing:-.01em;margin:calc(var(--leading-article) * 2em) 0 .5em;max-width:var(--measure-article)}
