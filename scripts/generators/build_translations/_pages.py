@@ -401,7 +401,7 @@ def render_static_translation(slug: str) -> str | None:  # noqa: C901 — per-pa
                     continue
                 pos = item.get("position")
                 if pos == 1:
-                    item["name"] = "Accueil"
+                    item["name"] = st.I18N_FR.get("Home", "Home")
                     item["item"] = f"{st.BASE}/"
                     local = True
                 elif pos == 2:
@@ -573,7 +573,7 @@ def _render_topic_subpage_fr(topic_slug: str, shell: str) -> str:  # noqa: C901 
                     continue
                 pos = item.get("position")
                 if pos == 1:
-                    item["name"] = "Accueil"
+                    item["name"] = st.I18N_FR.get("Home", "Home")
                     item["item"] = f"{st.BASE}/"
                     local = True
                 elif pos == 2:

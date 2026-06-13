@@ -57,6 +57,15 @@ def test_swap_breadcrumb_localises_items():
     assert '"item":"https://sebastienrousseau.com/fr/mon-slug/"' in out
 
 
+def test_swap_breadcrumb_home_label_follows_bound_language():
+    """Regression: the Home crumb was hardcoded to French "Accueil" for
+    every locale — de/ja/ar pages shipped a French breadcrumb name."""
+    st.bind_lang("de")
+    out = _chrome._swap_breadcrumb(f"<html>{BREADCRUMB}</html>", "mein-slug", "Titel DE")
+    assert '"name":"Startseite"' in out
+    assert '"name":"Accueil"' not in out
+
+
 def test_swap_breadcrumb_malformed_json_warns_and_keeps_html(capsys):
     """Task-2 regression: a malformed BreadcrumbList block must leave
     the HTML byte-identical AND print a one-line stderr warning naming
@@ -392,6 +401,23 @@ def test_french_body_uses_shell_lead_when_no_takeaways():
     # And the fallback path when no shell lead either:
     out2 = _article._french_body("<p>corps</p>", "desc", "", "", body_md="")
     assert "TL;DR" in out2
+
+
+def test_strip_postbuild_crumbs_removes_en_trail_from_shell():
+    """The CI smoke re-renders locale pages from already-postbuilt EN
+    shells; the visible EN breadcrumb nav must be stripped so the
+    follow-up postbuild run re-injects a localized trail (its
+    idempotency gate would otherwise keep the English one)."""
+    shell = (
+        '<body><nav class="crumbs" aria-label="Breadcrumb"><ol>'
+        '<li><a href="/">Home</a></li></ol></nav>'
+        '<section class="ap-hero"><h1>T</h1></section></body>'
+    )
+    out = _article._strip_postbuild_crumbs(shell)
+    assert 'class="crumbs"' not in out
+    assert out == '<body><section class="ap-hero"><h1>T</h1></section></body>'
+    # No-op on shells that never had a trail (pre-postbuild builds).
+    assert _article._strip_postbuild_crumbs(out) == out
 
 
 def test_derive_fr_takeaways_h2_then_h3():

@@ -286,6 +286,16 @@ _BODY_FURNITURE_RE = re.compile(
     re.IGNORECASE,
 )
 
+_CRUMBS_NAV_RE = re.compile(r'<nav class="crumbs"[\s\S]*?</nav>')
+
+
+def _strip_postbuild_crumbs(shell: str) -> str:
+    """Drop the visible breadcrumb nav that postbuild injects above the
+    hero. The CI smoke re-renders locale pages from already-postbuilt EN
+    shells; the EN trail must not leak — postbuild re-runs afterwards
+    and re-injects a localized trail from each page's own JSON-LD."""
+    return _CRUMBS_NAV_RE.sub("", shell)
+
 
 def _french_body(
     body_html: str,
@@ -326,7 +336,7 @@ def render_translation(slug: str, fm: dict[str, str], body_md: str) -> str | Non
     if not shell_src.is_file():
         print(f"build_translations: skip {slug} — English shell missing at {shell_src}")
         return None
-    shell = shell_src.read_text(encoding="utf-8")
+    shell = _strip_postbuild_crumbs(shell_src.read_text(encoding="utf-8"))
     body_html = render_markdown(body_md)
 
     title = fm.get("title", slug)
