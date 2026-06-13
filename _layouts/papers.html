@@ -271,6 +271,25 @@
       .card--editorial .eyebrow{color:var(--paper);opacity:.7}
       .card--editorial h2,.card--editorial h3{color:var(--paper);font-family:var(--type-body);font-weight:700;letter-spacing:-.01em;margin:0}
       .card--editorial p{color:var(--paper);opacity:.85;font-size:.9375rem;line-height:1.5;margin:0;max-width:none}
+      /* Cite-this popover — zero-JS <details> with one <pre> per
+         citation format (BibTeX / RIS / Vancouver / Chicago / APA).
+         WS5 wires the copy-button JS; for now readers select-all
+         + copy from the <pre>. */
+      details.cite-popover{max-width:var(--measure-article);margin:32px 0;border:1px solid var(--rule);background:var(--paper);padding:0}
+      details.cite-popover>summary{padding:14px 18px;font-family:var(--type-body);font-size:.75rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-deep);cursor:pointer;list-style:none}
+      details.cite-popover>summary::-webkit-details-marker{display:none}
+      details.cite-popover>summary::after{content:"+";float:inline-end;font-weight:400;font-size:1rem}
+      details.cite-popover[open]>summary::after{content:"\2212"}
+      details.cite-popover .cite-format{padding:0 18px 14px;border-top:1px solid var(--rule)}
+      details.cite-popover .cite-format h3{font-family:var(--type-body);font-size:.6875rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-mute);margin:14px 0 8px}
+      details.cite-popover pre{margin:0;padding:12px;background:var(--bg);border:1px solid var(--rule);font-family:var(--type-mono);font-size:.8125rem;line-height:1.5;color:var(--ink);overflow-x:auto;white-space:pre-wrap;word-break:break-word}
+      /* Reuse / republish panel — CC-BY-4.0 by default, frontmatter
+         "license:" overrides. WS5 wires the clipboard copy button. */
+      section.reuse{max-width:var(--measure-article);margin:32px 0;padding:18px;border:1px solid var(--rule);background:var(--paper)}
+      section.reuse h2{font-family:var(--type-body);font-size:.875rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-deep);margin:0 0 8px}
+      section.reuse p{font-family:var(--type-body);font-size:.9375rem;line-height:1.5;color:var(--ink-soft);margin:0 0 8px;max-width:none}
+      section.reuse a{color:var(--ink-deep);text-decoration:underline}
+      section.reuse pre{margin:8px 0 0;padding:12px;background:var(--bg);border:1px solid var(--rule);font-family:var(--type-mono);font-size:.8125rem;line-height:1.4;color:var(--ink);overflow-x:auto;white-space:pre-wrap;word-break:break-word}
       /* Article body type-scale: tighten in-body H2/H3/P/UL/OL only.
          h1 stays in .ap-hero at its current scale. */
       main.content :is(h2){font-size:clamp(1.625rem,2.6vw,2rem);line-height:1.2;letter-spacing:-.01em;margin:calc(var(--leading-article) * 2em) 0 .5em;max-width:var(--measure-article)}

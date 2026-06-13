@@ -2424,3 +2424,152 @@ def test_inject_footnotes_idempotent():
     )
     once = inject_footnotes(_ws2_page(body=body))
     assert inject_footnotes(once) == once
+
+
+# ---------------------------------------------------------------------------
+# WS2 commit 7 — action rail, cite popover, reuse panel
+# ---------------------------------------------------------------------------
+
+
+# inject_action_rail --------------------------------------------------------
+
+
+def test_inject_action_rail_no_op_without_blogposting():
+    from postbuild_lib.article_furniture import inject_action_rail
+
+    assert inject_action_rail("<p>plain page</p>") == "<p>plain page</p>"
+
+
+def test_inject_action_rail_renders_three_actions_at_top_of_main():
+    from postbuild_lib.article_furniture import inject_action_rail
+
+    out = inject_action_rail(_ws2_page())
+    assert 'class="action-rail action-rail--sticky"' in out
+    # Slug derived from canonical URL → PDF route
+    assert 'href="/api/pdf/2026-01-01-my-post.pdf"' in out
+    assert 'href="#audio-player"' in out
+    assert 'href="#cite-popover"' in out
+    # Sits inside the wrap-div, before the body paragraph
+    assert out.index("action-rail--sticky") < out.index("<p>body</p>")
+
+
+def test_inject_action_rail_idempotent():
+    from postbuild_lib.article_furniture import inject_action_rail
+
+    once = inject_action_rail(_ws2_page())
+    assert inject_action_rail(once) == once
+
+
+def test_inject_action_rail_no_op_when_canonical_missing():
+    from postbuild_lib.article_furniture import inject_action_rail
+
+    head = _WS2_HEAD.replace(
+        '<link rel="canonical" href="https://sebastienrousseau.com/2026-01-01-my-post/">',
+        "",
+    )
+    page = _ws2_page(head=head)
+    assert inject_action_rail(page) == page
+
+
+# inject_cite_popover -------------------------------------------------------
+
+
+def test_inject_cite_popover_no_op_without_blogposting():
+    from postbuild_lib.article_furniture import inject_cite_popover
+
+    assert inject_cite_popover("<p>plain page</p>") == "<p>plain page</p>"
+
+
+def test_inject_cite_popover_emits_all_five_formats_with_metadata():
+    from postbuild_lib.article_furniture import inject_cite_popover
+
+    head = _WS2_HEAD.replace(
+        '"@type":"BlogPosting","keywords":"AI, payments, post-quantum cryptography"',
+        '"@type":"BlogPosting","keywords":"AI","datePublished":"2026-06-12T00:00:00Z","dateModified":"2026-06-12T00:00:00Z"',
+    )
+    out = inject_cite_popover(_ws2_page(head=head))
+    assert 'class="cite-popover"' in out and 'id="cite-popover"' in out
+    # All 5 format headings present
+    for fmt in ("BibTeX", "RIS", "Vancouver", "Chicago", "APA"):
+        assert f"<h3>{fmt}</h3>" in out
+    # BibTeX key + author surface in the rendered citation
+    assert "rousseau2026" in out
+    assert "Rousseau, Sebastien" in out
+    # Canonical URL surfaces in every block
+    assert out.count("https://sebastienrousseau.com/2026-01-01-my-post/") >= 5
+
+
+def test_inject_cite_popover_idempotent():
+    from postbuild_lib.article_furniture import inject_cite_popover
+
+    once = inject_cite_popover(_ws2_page())
+    assert inject_cite_popover(once) == once
+
+
+def test_inject_cite_popover_no_op_when_canonical_missing():
+    from postbuild_lib.article_furniture import inject_cite_popover
+
+    head = _WS2_HEAD.replace(
+        '<link rel="canonical" href="https://sebastienrousseau.com/2026-01-01-my-post/">',
+        "",
+    )
+    page = _ws2_page(head=head)
+    assert inject_cite_popover(page) == page
+
+
+# inject_reuse_panel --------------------------------------------------------
+
+
+def test_inject_reuse_panel_no_op_without_blogposting():
+    from postbuild_lib.article_furniture import inject_reuse_panel
+
+    assert inject_reuse_panel("<p>plain page</p>") == "<p>plain page</p>"
+
+
+def test_inject_reuse_panel_emits_cc_by_4_default_with_machine_readable_license():
+    from postbuild_lib.article_furniture import inject_reuse_panel
+
+    out = inject_reuse_panel(_ws2_page())
+    assert 'class="reuse"' in out
+    assert 'rel="license"' in out
+    assert 'href="https://creativecommons.org/licenses/by/4.0/"' in out
+    # Attribution snippet renders title + author + canonical URL
+    assert "My Post: A Subtitle" in out
+    assert "Sebastien Rousseau" in out
+    assert "Licensed under CC-BY-4.0" in out
+
+
+def test_inject_reuse_panel_respects_license_meta_override():
+    from postbuild_lib.article_furniture import inject_reuse_panel
+
+    head = _WS2_HEAD + '<meta name="license" content="CC-BY-SA-4.0">'
+    out = inject_reuse_panel(_ws2_page(head=head))
+    assert 'href="https://creativecommons.org/licenses/by-sa/4.0/"' in out
+    assert "Licensed under CC-BY-SA-4.0" in out
+
+
+def test_inject_reuse_panel_unknown_license_falls_back_to_default():
+    from postbuild_lib.article_furniture import inject_reuse_panel
+
+    head = _WS2_HEAD + '<meta name="license" content="bogus-license">'
+    out = inject_reuse_panel(_ws2_page(head=head))
+    # Falls back to the safe CC-BY-4.0 default rather than emitting a
+    # broken licence URL — the allow-list is the gate.
+    assert 'href="https://creativecommons.org/licenses/by/4.0/"' in out
+
+
+def test_inject_reuse_panel_all_rights_reserved_omits_rel_license_url():
+    from postbuild_lib.article_furniture import inject_reuse_panel
+
+    head = _WS2_HEAD + '<meta name="license" content="All-Rights-Reserved">'
+    out = inject_reuse_panel(_ws2_page(head=head))
+    assert "All rights reserved" in out
+    # No rel=license anchor → can't claim a CC URL for an ARR article.
+    assert 'rel="license"' not in out
+
+
+def test_inject_reuse_panel_idempotent():
+    from postbuild_lib.article_furniture import inject_reuse_panel
+
+    once = inject_reuse_panel(_ws2_page())
+    assert inject_reuse_panel(once) == once

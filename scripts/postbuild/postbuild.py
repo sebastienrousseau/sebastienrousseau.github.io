@@ -793,11 +793,13 @@ from postbuild_lib.article_furniture import (  # noqa: F401 — re-exports
     build_fr_title_index,
     build_post_nav_index,
     hoist_body_link_stylesheets,
+    inject_action_rail,
     inject_anchor_links_and_toc,
     inject_article_furniture,
     inject_breadcrumbs,
     inject_byline_strap,
     inject_citations,
+    inject_cite_popover,
     inject_deck,
     inject_eyebrow,
     inject_footnotes,
@@ -808,6 +810,7 @@ from postbuild_lib.article_furniture import (  # noqa: F401 — re-exports
     inject_nav_active,
     inject_prev_next_nav,
     inject_pullquotes,
+    inject_reuse_panel,
     inject_section_rules,
     inject_share_rail,
     inject_sigstore_attestation,
@@ -877,12 +880,14 @@ class _PostbuildCounters:
 
     __slots__ = (
         "about_patched",
+        "action_rails_set",
         "anchor_patched",
         "asset_fp_patched",
         "body_h1_stripped",
         "byline_straps_set",
         "cdn_wrapped",
         "citation_patched",
+        "cite_panels_set",
         "crumbs_patched",
         "csp_patched",
         "decks_set",
@@ -904,6 +909,7 @@ class _PostbuildCounters:
         "og_patched",
         "pullquotes_set",
         "redundant_titles_stripped",
+        "reuse_panels_set",
         "section_rules_set",
         "share_rails_set",
         "social_patched",
@@ -1129,6 +1135,12 @@ def _apply_article_passes(html: str, page: Path, ctr: _PostbuildCounters) -> str
     out = _bump(inject_mermaid, out, ctr, "mermaid_patched")
     out = _bump(inject_footnotes, out, ctr, "footnotes_set")
     out = _bump(inject_share_rail, out, ctr, "share_rails_set")
+    out = _bump(inject_action_rail, out, ctr, "action_rails_set")
+    # Wrap-foot stack — order matters: each _WRAP_CLOSE_RE.sub inserts
+    # BEFORE </div></main>, so the LAST pass ends up closest to it.
+    # We want: cite (top) → reuse → byline (bottom).
+    out = _bump(inject_cite_popover, out, ctr, "cite_panels_set")
+    out = _bump(inject_reuse_panel, out, ctr, "reuse_panels_set")
     out = _bump(inject_byline_strap, out, ctr, "byline_straps_set")
     return out
 
@@ -1466,6 +1478,9 @@ def main() -> None:
         f"{c.pullquotes_set} got pull-quotes, "
         f"{c.footnotes_set} got footnotes, "
         f"{c.share_rails_set} got share rail, "
+        f"{c.action_rails_set} got action rail, "
+        f"{c.cite_panels_set} got cite popover, "
+        f"{c.reuse_panels_set} got reuse panel, "
         f"{c.byline_straps_set} got byline strap, "
         f"{c.langswitch_patched} got inline language rail, "
         f"{c.anchor_patched} got anchor links + ToC, "

@@ -26,6 +26,7 @@ from __future__ import annotations
 import json as _json
 import re
 import sys
+from datetime import datetime as _datetime
 from html import escape as _esc
 from html import unescape as _unesc
 from pathlib import Path
@@ -791,6 +792,232 @@ def inject_footnotes(html: str) -> str:
         f"<ol>{items}</ol></section>"
     )
     return _WRAP_CLOSE_RE.sub(section + r"\1", body_marked, count=1)
+
+
+# ---------------------------------------------------------------------------
+# WS2 — action rail, cite popover, reuse / republish panel
+# ---------------------------------------------------------------------------
+
+_LICENSE_RE = re.compile(r'<meta\s+name="license"\s+content="([^"]+)"', re.IGNORECASE)
+_LICENSE_DEFAULT = "CC-BY-4.0"
+_LICENSE_LABELS: dict[str, str] = {
+    "CC-BY-4.0": "Creative Commons Attribution 4.0 International",
+    "CC-BY-SA-4.0": "Creative Commons Attribution-ShareAlike 4.0 International",
+    "CC-BY-NC-SA-4.0": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0",
+    "CC-BY-ND-4.0": "Creative Commons Attribution-NoDerivatives 4.0 International",
+    "All-Rights-Reserved": "All rights reserved",
+}
+_LICENSE_URLS: dict[str, str] = {
+    "CC-BY-4.0": "https://creativecommons.org/licenses/by/4.0/",
+    "CC-BY-SA-4.0": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "CC-BY-NC-SA-4.0": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "CC-BY-ND-4.0": "https://creativecommons.org/licenses/by-nd/4.0/",
+}
+
+_AUTHOR_LAST = "Rousseau"
+_AUTHOR_FIRST = "Sebastien"
+_AUTHOR_INITIAL = "S."
+
+# 14x14 monochrome SVG glyphs (currentColor fill) for the action rail.
+_SVG_DOWNLOAD = (
+    '<svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">'
+    '<path d="M7.3 1.5h1.4v6l1.95-1.95.99.99L8 9.18 4.36 5.54l.99-.99L7.3 6.5v-5zM2 13h12v1.5H2V13z"/>'
+    "</svg>"
+)
+_SVG_HEADPHONES = (
+    '<svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">'
+    '<path d="M8 2C4.7 2 2 4.7 2 8v3a1.5 1.5 0 001.5 1.5h1V8h-1V8c0-2 1.5-4 3.5-4s3.5 1.5 3.5 4v4.5'
+    'h1c.8 0 1.5-.7 1.5-1.5V8c0-3.3-2.7-6-6-6z"/>'
+    "</svg>"
+)
+_SVG_QUOTE = (
+    '<svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">'
+    '<path d="M3 4.5h3.5v3.5H5c0 1.5.5 2.5 1.5 3v1c-2 0-3.5-2-3.5-4V4.5zm6.5 0H13v3.5h-1.5'
+    'c0 1.5.5 2.5 1.5 3v1c-2 0-3.5-2-3.5-4V4.5z"/>'
+    "</svg>"
+)
+
+
+def _slug_from_canonical(html: str) -> str | None:
+    m = _CANONICAL_RE.search(html)
+    if not m:
+        return None
+    return m.group(1).rstrip("/").rsplit("/", 1)[-1] or None
+
+
+def _license_id(html: str) -> str:
+    m = _LICENSE_RE.search(html)
+    if m:
+        candidate = m.group(1).strip()
+        if candidate in _LICENSE_LABELS:
+            return candidate
+    return _LICENSE_DEFAULT
+
+
+def inject_action_rail(html: str) -> str:
+    """Render the floating ``.action-rail--sticky`` with Save PDF / Listen /
+    Cite at the top of the article body. The CSS (WS1 commit 2) positions
+    it on the right edge on >=80em viewports and as a sticky bottom bar
+    on <48em. Anchors only — Save PDF points at the lang-router PDF
+    proxy route (``/api/pdf/<slug>.pdf``, wired by WS5); Listen jumps to
+    a future ``#audio-player`` (Phase 2 TTS); Cite jumps to the cite
+    popover injected below. BlogPosting pages only; idempotent."""
+    if '"@type":"BlogPosting"' not in html:
+        return html
+    if 'class="action-rail action-rail--sticky"' in html:
+        return html
+    slug = _slug_from_canonical(html)
+    if not slug:
+        return html
+    labels = _labels(html)
+    aria = _esc(labels.get("Action.aria", "Article actions"), quote=True)
+    items = (
+        f'<li><a href="/api/pdf/{_esc(slug, quote=True)}.pdf" download>{_SVG_DOWNLOAD}'
+        f'<span>{_esc(labels.get("Action.savePdf", "Save PDF"))}</span></a></li>'
+        f'<li><a href="#audio-player">{_SVG_HEADPHONES}'
+        f'<span>{_esc(labels.get("Action.listen", "Listen"))}</span></a></li>'
+        f'<li><a href="#cite-popover">{_SVG_QUOTE}'
+        f'<span>{_esc(labels.get("Action.cite", "Cite"))}</span></a></li>'
+    )
+    rail = (
+        f'<nav class="action-rail action-rail--sticky" aria-label="{aria}">'
+        f"<ul>{items}</ul></nav>"
+    )
+    return _MAIN_RE.sub(rf"\1{rail}\2\3", html, count=1)
+
+
+def _parse_iso_date(date_str: str) -> _datetime | None:
+    if not date_str:
+        return None
+    for fmt in ("%Y-%m-%dT%H:%M:%S%z", "%Y-%m-%dT%H:%M:%S.%f%z", "%Y-%m-%d"):
+        try:
+            return _datetime.strptime(date_str, fmt)
+        except ValueError:
+            continue
+    return None
+
+
+def _first_word(title: str) -> str:
+    m = re.search(r"\w+", title)
+    return m.group(0).lower() if m else "post"
+
+
+def _citation_blocks(title: str, url: str, date_str: str) -> dict[str, str]:
+    """Render the 5 academic citation formats from article metadata."""
+    dt = _parse_iso_date(date_str)
+    year = str(dt.year) if dt else "n.d."
+    month_short = dt.strftime("%b") if dt else ""
+    month_long = dt.strftime("%B") if dt else ""
+    day = str(dt.day) if dt else ""
+    author_lastfirst = f"{_AUTHOR_LAST}, {_AUTHOR_FIRST}"
+    author_vancouver = f"{_AUTHOR_LAST} {_AUTHOR_INITIAL[0]}"
+    author_apa = f"{_AUTHOR_LAST}, {_AUTHOR_INITIAL}"
+    bib_key = f"{_AUTHOR_LAST.lower()}{year}{_first_word(title)}"
+    bibtex = (
+        f"@online{{{bib_key},\n"
+        f"  author  = {{{author_lastfirst}}},\n"
+        f"  title   = {{{{{title}}}}},\n"
+        f"  year    = {{{year}}},\n"
+        f"  url     = {{{url}}},\n"
+        f"  urldate = {{{year}}}\n"
+        f"}}"
+    )
+    ris = (
+        f"TY  - GEN\n"
+        f"AU  - {author_lastfirst}\n"
+        f"TI  - {title}\n"
+        f"PY  - {year}\n"
+        f"UR  - {url}\n"
+        f"ER  -"
+    )
+    vancouver = (
+        f"{author_vancouver}. {title}. sebastienrousseau.com. "
+        f"{year} {month_short} {day}. Available from: {url}"
+    )
+    chicago = f'{author_lastfirst}. "{title}." sebastienrousseau.com. {month_long} {day}, {year}. {url}.'
+    apa = f"{author_apa} ({year}, {month_long} {day}). {title}. sebastienrousseau.com. {url}"
+    return {
+        "BibTeX": bibtex,
+        "RIS": ris,
+        "Vancouver": vancouver,
+        "Chicago": chicago,
+        "APA": apa,
+    }
+
+
+def inject_cite_popover(html: str) -> str:
+    """Append a zero-JS ``<details class="cite-popover" id="cite-popover">``
+    block at the wrap-div close, with one ``<pre>`` per citation format
+    (BibTeX / RIS / Vancouver / Chicago / APA). The action-rail's
+    "Cite" button jumps here. WS5 will wire copy-to-clipboard
+    buttons + main.js handlers; for now readers select-all + copy
+    from the <pre>. BlogPosting pages only; idempotent."""
+    if '"@type":"BlogPosting"' not in html:
+        return html
+    if 'class="cite-popover"' in html:
+        return html
+    url_m = _CANONICAL_RE.search(html)
+    title_m = _OG_TITLE_RE.search(html)
+    if not (url_m and title_m):
+        return html
+    url = url_m.group(1)
+    title = _unesc(title_m.group(1))
+    _kw, date_pub, _dm, _wc = _extract_article_metadata(html)
+    formats = _citation_blocks(title, url, date_pub)
+    labels = _labels(html)
+    blocks = "".join(
+        f'<div class="cite-format"><h3>{_esc(name)}</h3>'
+        f"<pre>{_esc(body)}</pre></div>"
+        for name, body in formats.items()
+    )
+    popover = (
+        f'<details class="cite-popover" id="cite-popover">'
+        f'<summary>{_esc(labels.get("Cite.heading", "Cite this article"))}</summary>'
+        f"{blocks}</details>"
+    )
+    return _WRAP_CLOSE_RE.sub(popover + r"\1", html, count=1)
+
+
+def inject_reuse_panel(html: str) -> str:
+    """Append a republish / reuse panel at the wrap-div close: licence
+    statement, machine-readable ``rel="license"`` link, attribution
+    snippet in a ``<pre>``. License id comes from
+    ``<meta name="license">`` (or defaults to CC-BY-4.0) and must be
+    on the allow-list; unknown ids fall back to the default rather
+    than emitting a broken licence URL. BlogPosting pages only;
+    idempotent."""
+    if '"@type":"BlogPosting"' not in html:
+        return html
+    if 'class="reuse"' in html:
+        return html
+    url_m = _CANONICAL_RE.search(html)
+    title_m = _OG_TITLE_RE.search(html)
+    if not (url_m and title_m):
+        return html
+    url = url_m.group(1)
+    title = _unesc(title_m.group(1))
+    license_id = _license_id(html)
+    license_label = _LICENSE_LABELS[license_id]
+    license_url = _LICENSE_URLS.get(license_id)
+    labels = _labels(html)
+    if license_url:
+        license_a = f'<a rel="license" href="{license_url}">{_esc(license_label)}</a>'
+    else:
+        license_a = _esc(license_label)
+    attribution = (
+        f'"{title}" by {_AUTHOR_FIRST} {_AUTHOR_LAST}, '
+        f"originally published at {url}. Licensed under {license_id}."
+    )
+    panel = (
+        f'<section class="reuse" aria-labelledby="reuse-heading">'
+        f'<h2 id="reuse-heading">'
+        f'{_esc(labels.get("Reuse.heading", "Republish this article"))}</h2>'
+        f"<p>{_esc(labels.get('Reuse.license', 'This article is licensed under'))} "
+        f"{license_a}. "
+        f"{_esc(labels.get('Reuse.attribution', 'Republication requires attribution to the canonical URL.'))}</p>"
+        f"<pre>{_esc(attribution)}</pre></section>"
+    )
+    return _WRAP_CLOSE_RE.sub(panel + r"\1", html, count=1)
 
 
 _OG_IMAGE_RE = re.compile(
