@@ -183,8 +183,12 @@
          pointers only; paint-only transform on an overlay. */
       @media (hover:hover) and (prefers-reduced-motion: no-preference){
         .btn-sweep{position:relative;overflow:hidden}
-        .btn-sweep::after{content:"";position:absolute;inset:0;background:linear-gradient(105deg,transparent 40%,rgba(255,255,255,.35) 50%,transparent 60%);transform:translateX(-120%);transition:transform .6s ease;pointer-events:none}
-        .btn-sweep:hover::after{transform:translateX(120%)}
+        /* Decorative sweep gradient — opacity:0 at rest so axe-core can
+           cleanly compute the underlying button contrast without the
+           gradient overlay tripping its "needs further review" heuristic.
+           Only fades + sweeps in on hover/focus. */
+        .btn-sweep::after{content:"";position:absolute;inset:0;background:linear-gradient(105deg,transparent 40%,rgba(255,255,255,.35) 50%,transparent 60%);transform:translateX(-120%);opacity:0;transition:transform .6s ease,opacity .15s ease;pointer-events:none}
+        .btn-sweep:hover::after,.btn-sweep:focus-visible::after{transform:translateX(120%);opacity:1}
       }
       *{box-sizing:border-box}
       html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
@@ -369,6 +373,56 @@
       article.tag-landing-card h2 a:hover{text-decoration:underline}
       article.tag-landing-card .card-date{display:block;font-family:var(--type-body);font-size:.75rem;color:var(--ink-mute);margin:0 0 6px}
       article.tag-landing-card .card-excerpt{font-family:var(--type-body);font-size:.875rem;line-height:1.45;color:var(--ink-soft);margin:0;max-width:none}
+      /* FT-tier card variant — image-left, dark-navy body. Used by
+         /articles/, year archives, per-tag landings, per-category
+         landings. Reverts to single-column at <40em (mobile). */
+      article.tag-landing-card.tag-landing-card--ft{display:grid;grid-template-columns:1fr;gap:0;padding:0;border:0;background:transparent;overflow:hidden}
+      article.tag-landing-card--ft .card-media{display:block;background:var(--ink-deep);overflow:hidden;aspect-ratio:1/1}
+      article.tag-landing-card--ft .card-media img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .3s ease}
+      article.tag-landing-card--ft:hover .card-media img{transform:scale(1.03)}
+      article.tag-landing-card--ft .card-body{background:var(--ink-deep);color:var(--paper);padding:22px 24px 22px;display:flex;flex-direction:column;justify-content:space-between}
+      article.tag-landing-card--ft .card-body .eyebrow.card-eyebrow{color:var(--paper);opacity:1;margin:0 0 14px;font-size:.6875rem;font-weight:700;letter-spacing:.12em}
+      article.tag-landing-card--ft .card-body h2{color:var(--paper);font-family:var(--type-body);font-size:1.375rem;line-height:1.2;font-weight:600;letter-spacing:-.01em;margin:0 0 12px}
+      article.tag-landing-card--ft .card-body h2 a{color:var(--paper)}
+      article.tag-landing-card--ft .card-body h2 a:hover{text-decoration:underline}
+      /* The card-date is intentionally hidden inside the FT-tier card —
+         FT-style cards lead with eyebrow + headline + excerpt, not a date.
+         Date remains in the DOM (and in the structured JSON-LD) for SEO
+         + accessibility, just hidden from sighted readers. */
+      article.tag-landing-card--ft .card-body .card-date{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+      article.tag-landing-card--ft .card-body .card-excerpt{color:var(--paper);opacity:.88;font-size:.9375rem;line-height:1.55;margin:0;max-width:none}
+      /* Per-card share rail — 6 monochrome 14px glyphs in a row, each in a
+         28px box. Border + icon use a hand-mixed semi-transparent variant
+         of `--paper` so both render correctly in light AND dark mode
+         (where the card body is light cream, --paper switches to near-
+         black, and a hardcoded rgba(255,255,255,…) border would vanish).
+         Selectors are double-classed (`.tag-landing-card .card-share-rail`)
+         so they beat the page's `main.content a{color:var(--link-color)}`
+         (0,1,2) specificity — without this, the icons inherit the page
+         link color (light grey in dark mode → invisible on cream cards).
+         AAA-contrast: icon at full --paper on var(--ink-deep) clears 12:1
+         in both themes. */
+      .tag-landing-card .card-share-rail{margin:20px 0 0;padding:18px 0 0;border-top:1px solid color-mix(in srgb,var(--paper) 18%,transparent)}
+      .tag-landing-card .card-share-rail ul{display:flex;flex-wrap:wrap;gap:6px;margin:0;padding:0;list-style:none}
+      .tag-landing-card .card-share-rail li{margin:0}
+      .tag-landing-card .card-share-rail a,.tag-landing-card .card-share-rail button{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;padding:0;border:1px solid color-mix(in srgb,var(--paper) 55%,transparent);background:transparent;color:var(--paper);border-radius:2px;text-decoration:none;cursor:pointer;transition:background .15s ease,border-color .15s ease}
+      .tag-landing-card .card-share-rail a:hover,.tag-landing-card .card-share-rail button:hover{background:color-mix(in srgb,var(--paper) 14%,transparent);border-color:var(--paper)}
+      .tag-landing-card .card-share-rail a:focus-visible,.tag-landing-card .card-share-rail button:focus-visible{outline:2px solid var(--paper);outline-offset:2px}
+      .tag-landing-card .card-share-rail svg{width:14px;height:14px;fill:currentColor}
+      /* Copied-state — flips for 2s after the Clipboard API resolves. */
+      .tag-landing-card .card-share-rail button[data-copied="1"]{background:var(--paper);color:var(--ink-deep);border-color:var(--paper)}
+      /* Featured card — newest article on page 1 of /articles/ spans the
+         full grid row and switches to landscape (image left, body right) so
+         it reads as the lead story (the FT "featured" pattern). */
+      article.tag-landing-card--featured{grid-column:1 / -1}
+      @media (min-width:48em){
+        article.tag-landing-card--ft{grid-template-columns:1fr 1fr}
+        article.tag-landing-card--ft .card-media{aspect-ratio:auto;min-height:100%}
+        article.tag-landing-card--featured{grid-template-columns:3fr 2fr}
+        article.tag-landing-card--featured .card-body{padding:32px 36px}
+        article.tag-landing-card--featured .card-body h2{font-size:1.75rem;line-height:1.2}
+        article.tag-landing-card--featured .card-body .card-excerpt{font-size:1rem}
+      }
       nav.related-tags{padding:18px;border:1px solid var(--rule);background:var(--paper);margin:32px 0}
       nav.related-tags h2{font-family:var(--type-body);font-size:.875rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-deep);margin:0 0 8px}
       nav.related-tags p{font-family:var(--type-body);font-size:.875rem;color:var(--ink-soft);margin:0 0 12px}
@@ -558,7 +612,13 @@
       .ap-menu a:hover{opacity:1}.ap-brand[aria-current="page"]{color:var(--accent)}.ap-menu a[aria-current="page"],.ap-menu a.active{opacity:1;color:var(--accent);font-weight:600;position:relative}.ap-menu a[aria-current="page"]::after,.ap-menu a.active::after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:2px;background:var(--accent);border-radius:1px}
       .ap-nav-right{justify-self:end;display:inline-flex;align-items:center;gap:6px}
       .ap-cta-mini{font-size:12px;font-weight:500;color:#fff;background:var(--accent);padding:10px 16px;min-height:44px;border-radius:980px;line-height:1;box-sizing:border-box;display:inline-flex;align-items:center;gap:4px;white-space:nowrap;transition:opacity .15s ease}
-      .ap-cta-mini:hover{opacity:.88;color:#fff}[data-theme=dark] .ap-cta-mini,html:not([data-theme=light]) .ap-cta-mini{color:#000}[data-theme=dark] .ap-cta-mini:hover,html:not([data-theme=light]) .ap-cta-mini:hover{color:#000}
+      .ap-cta-mini:hover{opacity:.88;color:#fff}
+      /* Dark-theme inversion — needs to gate on actual dark rendering
+         (data-theme=dark explicit OR prefers-color-scheme:dark with no
+         explicit light override) so light-mode users don't get black
+         text on the dark-blue accent (~2.4:1, fails AA). */
+      [data-theme=dark] .ap-cta-mini,[data-theme=dark] .ap-cta-mini:hover{color:#000}
+      @media (prefers-color-scheme:dark){html:not([data-theme=light]) .ap-cta-mini,html:not([data-theme=light]) .ap-cta-mini:hover{color:#000}}
 
       /* In-nav search button. Triggers Static Site Generator's search modal via main.js. */
       .ap-search{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:0 10px;background:transparent;border:1px solid transparent;border-radius:22px;color:var(--ink);cursor:pointer;transition:background .15s,border-color .15s}
@@ -1254,7 +1314,7 @@
             <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
             <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
           </button>
-          <div class="ap-lang" aria-label="Language">
+          <div class="ap-lang" role="group" aria-label="Language">
             <button type="button" class="ap-lang-toggle" aria-label="EN, Change language" aria-expanded="false" aria-haspopup="menu" title="Change language">
               <span class="ap-lang-globe" aria-hidden="true">🌐</span>
               <span class="ap-lang-current">EN</span>
@@ -1292,7 +1352,7 @@
               </div>
             </div>
           </div>
-          <a class="ap-cta-mini btn-sweep" href="/contact/index.html" aria-label="Get in touch">Get in touch ›</a>
+          <a class="ap-cta-mini" href="/contact/index.html" aria-label="Get in touch">Get in touch ›</a>
           <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="Toggle navigation">☰</label>
         </div>
       </div>
@@ -1393,12 +1453,12 @@
         </form>
         <div class="legal">
           <span>{{copyright}}</span>
-          <div class="social" aria-label="Social links">
+          <nav class="social" aria-label="Social links">
             <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on Twitter / X"><img src="{{cdn}}/common/images/buttons/x-black.svg" alt="Sebastien Rousseau on Twitter X" width="18" height="18" /></a>
             <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on LinkedIn"><img src="{{cdn}}/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau on LinkedIn" width="18" height="18" /></a>
             <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on Medium"><img src="{{cdn}}/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau on Medium" width="18" height="18" /></a>
             <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on YouTube"><img src="{{cdn}}/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau on YouTube" width="18" height="18" /></a>
-          </div>
+          </nav>
           <p>
             <a href="/accessibility/index.html">Accessibility</a> ·
             <a href="/privacy/index.html">Privacy</a> ·

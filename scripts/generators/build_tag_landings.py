@@ -103,6 +103,10 @@ _BASE_URL = "https://sebastienrousseau.com"
 _TAG_FM_RE = re.compile(r'^tags:\s*"?([^"\n]+)"?', re.MULTILINE)
 _TITLE_FM_RE = re.compile(r'^title:\s*"?([^"\n]+?)"?\s*$', re.MULTILINE)
 _EXCERPT_FM_RE = re.compile(r'^excerpt:\s*"?([^"\n]+?)"?\s*$', re.MULTILINE)
+_DESC_FM_RE = re.compile(r'^description:\s*"?([^"\n]+?)"?\s*$', re.MULTILINE)
+_BANNER_FM_RE = re.compile(r'^banner:\s*"?([^"\n]+?)"?\s*$', re.MULTILINE)
+_BANNER_ALT_FM_RE = re.compile(r'^banner_alt:\s*"?([^"\n]+?)"?\s*$', re.MULTILINE)
+_DEFAULT_BANNER = "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
 _DATED_SLUG_RE = re.compile(r"^(\d{4}-\d{2}-\d{2})-(.+)$")
 _MAIN_RE = re.compile(
     r'(<main\b[^>]*>)([\s\S]*?)(</main>)',
@@ -155,8 +159,87 @@ def _alias_map(taxonomy: dict) -> dict[str, str]:
     return out
 
 
-def _post_meta(path: Path) -> tuple[str, str, str, str, list[str]] | None:
-    """Return (title, iso-date, slug, excerpt, [raw tag strings]) or None."""
+# Tiny per-card share rail — 6 monochrome SVG glyphs (X, LinkedIn, Facebook,
+# WhatsApp, email, copy-link). Mirrors build_listings._card_share_rail; copied
+# here so build_tag_landings stays import-self-contained.
+_CARD_SVG_X = (
+    '<svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">'
+    '<path d="M9.52 6.88L14.86 1h-1.42L8.83 6.07 4.94 1H.78l5.6 7.7L.78 15h1.42l4.78-5.27L11.07 15'
+    'h4.16L9.52 6.88zM2.71 2.07h1.83l7.61 10.51h-1.83L2.71 2.07z"/></svg>'
+)
+_CARD_SVG_LI = (
+    '<svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">'
+    '<path d="M13.6 13.6h-2.37V9.93c0-.87-.02-2-1.22-2-1.22 0-1.4.95-1.4 1.93v3.74H6.24V6.04h2.27'
+    'v1.04h.03c.32-.6 1.09-1.22 2.25-1.22 2.4 0 2.85 1.58 2.85 3.64v4.1zM3.56 5C2.81 5 2.2 4.39 '
+    '2.2 3.64S2.81 2.28 3.56 2.28s1.36.61 1.36 1.36S4.31 5 3.56 5zm1.18 8.6H2.39V6.04h2.36V13.6z"/'
+    '></svg>'
+)
+_CARD_SVG_FB = (
+    '<svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">'
+    '<path d="M9 14H6.5V8.5H5V6h1.5V4.5C6.5 3.07 7.07 2 9.07 2H10.5v2.5H9.43c-.38 0-.43.14-.43.43V'
+    '6h1.5L10 8.5H9V14z"/></svg>'
+)
+_CARD_SVG_WA = (
+    '<svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">'
+    '<path d="M8 1C4.13 1 1 4.13 1 8c0 1.27.34 2.46.93 3.5L1 15l3.6-.93C5.62 14.66 6.79 15 8 15c3'
+    '.87 0 7-3.13 7-7s-3.13-7-7-7zm0 12.7c-1.06 0-2.05-.29-2.9-.78l-.2-.12-2.13.56.57-2.08-.13-.21'
+    'A5.69 5.69 0 012.3 8c0-3.14 2.56-5.7 5.7-5.7s5.7 2.56 5.7 5.7-2.56 5.7-5.7 5.7z"/></svg>'
+)
+_CARD_SVG_EMAIL = (
+    '<svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">'
+    '<path d="M2 3h12c.55 0 1 .45 1 1v8c0 .55-.45 1-1 1H2c-.55 0-1-.45-1-1V4c0-.55.45-1 1-1zm6 5.'
+    '18L13.18 4H2.82L8 8.18zM2 5.46V12h12V5.46L8 9.5 2 5.46z"/></svg>'
+)
+_CARD_SVG_LINK = (
+    '<svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">'
+    '<path d="M6.6 10.4a1.5 1.5 0 010-2.1l2.8-2.8a1.5 1.5 0 112.1 2.1L10 9.1l1.1 1.1 1.5-1.5a3 3 0 '
+    '00-4.2-4.2L5.6 7.3a3 3 0 000 4.2 3 3 0 002.1.9l-1-1c-.1 0-.1-.1-.1-.1zM9.4 5.6L8.3 6.7l1.4 1.4 '
+    '1.1-1.1A1.5 1.5 0 0112.9 9l-2.8 2.8a1.5 1.5 0 11-2.1-2.1L9.1 8.6 8 7.5 6.5 9a3 3 0 004.2 4.2l '
+    '2.8-2.8a3 3 0 000-4.2 3 3 0 00-4.1-.6z"/></svg>'
+)
+
+
+def _card_share_rail(url: str, title: str, desc: str) -> str:
+    """6-icon per-card share rail: X / LinkedIn / Facebook / WhatsApp /
+    email / copy-link. Anchors-only except for copy-link (button +
+    data-copy-link)."""
+    abs_url = url if url.startswith("http") else f"{_BASE_URL}{url}"
+    x_text = f"{title}\n\n{abs_url}"
+    li_text = "\n\n".join(p for p in (title, desc, abs_url) if p)
+    wa_text = "\n\n".join(p for p in (title, desc, abs_url) if p)
+    email_body = "\n\n".join(p for p in (desc, f"Read more: {abs_url}") if p)
+    import urllib.parse as _u
+
+    def q(s: str) -> str:
+        return _u.quote(s, safe="")
+
+    items = (
+        f'<li><a href="https://twitter.com/intent/tweet?text={q(x_text)}" '
+        f'rel="noopener noreferrer" aria-label="Share on X">{_CARD_SVG_X}</a></li>'
+        f'<li><a href="https://www.linkedin.com/feed/?shareActive=true&text={q(li_text)}" '
+        f'rel="noopener noreferrer" aria-label="Share on LinkedIn">{_CARD_SVG_LI}</a></li>'
+        f'<li><a href="https://www.facebook.com/sharer/sharer.php?u={q(abs_url)}" '
+        f'rel="noopener noreferrer" aria-label="Share on Facebook">{_CARD_SVG_FB}</a></li>'
+        f'<li><a href="https://wa.me/?text={q(wa_text)}" '
+        f'rel="noopener noreferrer" aria-label="Share on WhatsApp">{_CARD_SVG_WA}</a></li>'
+        f'<li><a href="mailto:?subject={q(title)}&body={q(email_body)}" '
+        f'aria-label="Share by email">{_CARD_SVG_EMAIL}</a></li>'
+        f'<li><button type="button" data-copy-link="{_esc(abs_url)}" '
+        f'aria-label="Copy link">{_CARD_SVG_LINK}</button></li>'
+    )
+    # `<div role="group">` rather than `<nav>` — every card emits the
+    # same share rail, so a per-card `<nav aria-label="Share this
+    # article">` would trip axe landmark-unique. role="group" carries
+    # the semantics without contributing to the page outline.
+    return (
+        f'<div class="card-share-rail" role="group" aria-label="Share this article">'
+        f"<ul>{items}</ul></div>"
+    )
+
+
+def _post_meta(path: Path) -> tuple[str, str, str, str, list[str], str, str] | None:
+    """Return (title, iso-date, slug, excerpt, [raw tag strings],
+    banner, banner_alt) or None."""
     text = path.read_text(encoding="utf-8", errors="ignore")
     tags_m = _TAG_FM_RE.search(text)
     if not tags_m:
@@ -164,11 +247,20 @@ def _post_meta(path: Path) -> tuple[str, str, str, str, list[str]] | None:
     title_m = _TITLE_FM_RE.search(text)
     title = title_m.group(1) if title_m else path.stem
     excerpt_m = _EXCERPT_FM_RE.search(text)
-    excerpt = excerpt_m.group(1) if excerpt_m else ""
+    desc_m = _DESC_FM_RE.search(text)
+    excerpt = (
+        excerpt_m.group(1)
+        if excerpt_m
+        else (desc_m.group(1) if desc_m else "")
+    )
+    banner_m = _BANNER_FM_RE.search(text)
+    banner_alt_m = _BANNER_ALT_FM_RE.search(text)
+    banner = banner_m.group(1) if banner_m else _DEFAULT_BANNER
+    banner_alt = banner_alt_m.group(1) if banner_alt_m else title
     stem_m = _DATED_SLUG_RE.match(path.stem)
     iso_date = stem_m.group(1) if stem_m else ""
     raw_tags = [t.strip().strip('"').strip("'").strip() for t in tags_m.group(1).split(",")]
-    return title, iso_date, path.stem, excerpt, [t for t in raw_tags if t]
+    return title, iso_date, path.stem, excerpt, [t for t in raw_tags if t], banner, banner_alt
 
 
 def _canonical_set(raw_tags: list[str], amap: dict[str, str]) -> set[str]:
@@ -177,34 +269,51 @@ def _canonical_set(raw_tags: list[str], amap: dict[str, str]) -> set[str]:
     return {amap[r.lower()] for r in raw_tags if r.lower() in amap}
 
 
+def _post_pillars(raw_tags: list[str], taxonomy: dict, amap: dict[str, str]) -> list[str]:
+    """Return ordered list of pillar slugs (categories) this post
+    belongs to, derived from its raw tag strings."""
+    pillars: set[str] = set()
+    for r in raw_tags:
+        canon = amap.get(r.lower())
+        if not canon:
+            continue
+        cat = taxonomy.get(canon, {}).get("category")
+        if cat:
+            pillars.add(cat)
+    return [p for p in PILLAR_ORDER if p in pillars]
+
+
 def _ingest_post(
     path: Path,
+    taxonomy: dict,
     amap: dict[str, str],
-    posts: dict[str, list[tuple[str, str, str, str]]],
+    posts: dict[str, list[tuple[str, str, str, str, list[str], str, str]]],
     cooccur: dict[str, collections.Counter[str]],
 ) -> None:
     meta = _post_meta(path)
     if not meta:
         return
-    title, iso_date, slug, excerpt, raw_tags = meta
+    title, iso_date, slug, excerpt, raw_tags, banner, banner_alt = meta
     canons = _canonical_set(raw_tags, amap)
+    pillars = _post_pillars(raw_tags, taxonomy, amap)
     for c in canons:
-        posts[c].append((title, iso_date, slug, excerpt))
+        posts[c].append((title, iso_date, slug, excerpt, pillars, banner, banner_alt))
         for other in canons - {c}:
             cooccur[c][other] += 1
 
 
 def _walk(taxonomy: dict) -> tuple[
-    dict[str, list[tuple[str, str, str, str]]],
+    dict[str, list[tuple[str, str, str, str, list[str], str, str]]],
     dict[str, collections.Counter[str]],
 ]:
     """Return:
-    * per-canonical [(title, iso-date, slug, excerpt), ...] newest first
+    * per-canonical [(title, iso-date, slug, excerpt, pillars, banner,
+      banner_alt), ...] newest first
     * per-canonical Counter of OTHER canonicals that co-occur on the
       same posts — drives the "related tags" sidebar.
     """
     amap = _alias_map(taxonomy)
-    posts: dict[str, list[tuple[str, str, str, str]]] = collections.defaultdict(list)
+    posts: dict[str, list[tuple[str, str, str, str, list[str], str, str]]] = collections.defaultdict(list)
     cooccur: dict[str, collections.Counter[str]] = collections.defaultdict(
         collections.Counter
     )
@@ -215,15 +324,30 @@ def _walk(taxonomy: dict) -> tuple[
         # pointing at `/index/` etc. (an obvious broken-link smell).
         if not _DATED_SLUG_RE.match(path.stem):
             continue
-        _ingest_post(path, amap, posts, cooccur)
+        _ingest_post(path, taxonomy, amap, posts, cooccur)
     for c in posts:
         posts[c].sort(key=lambda p: p[1] or "0000", reverse=True)
     return posts, cooccur
 
 
-def _render_article_cards(posts_for_tag: list[tuple[str, str, str, str]]) -> str:
-    cards = []
-    for title, iso_date, slug, excerpt in posts_for_tag:
+def _render_article_cards(
+    posts_for_tag: list[tuple[str, str, str, str, list[str], str, str]],
+    href_overrides: dict[str, str] | None = None,
+    eyebrow_override: str | None = None,
+) -> str:
+    """Render the FT-tier image-card list used across tag landings,
+    category landings, and the cross-pillar "Recent articles" rail.
+    ``href_overrides`` maps EN slug → locale URL (used by locale forks).
+    ``eyebrow_override`` overrides the per-pillar caption (used by
+    category pages where every card shares the same pillar)."""
+    cards: list[str] = []
+    overrides = href_overrides or {}
+    for title, iso_date, slug, excerpt, pillars, banner, banner_alt in posts_for_tag:
+        href = overrides.get(slug) or f"/{slug}/"
+        eyebrow_label = eyebrow_override or (
+            PILLAR_LABELS[pillars[0]] if pillars else "Editorial"
+        )
+        eyebrow_html = f'<p class="eyebrow card-eyebrow">{_esc(eyebrow_label).upper()}</p>'
         date_html = (
             f'<time datetime="{iso_date}" class="card-date">{iso_date}</time>'
             if iso_date
@@ -232,11 +356,26 @@ def _render_article_cards(posts_for_tag: list[tuple[str, str, str, str]]) -> str
         excerpt_html = (
             f'<p class="card-excerpt">{_esc(excerpt)}</p>' if excerpt else ""
         )
-        cards.append(
-            f'<article class="tag-landing-card">'
-            f'<h2><a href="/{slug}/">{_esc(title)}</a></h2>'
+        safe_alt = banner_alt or title
+        img_html = (
+            f'<a class="card-media" href="{href}" tabindex="-1" aria-hidden="true">'
+            f'<img src="{banner}" alt="{_esc(safe_alt)}" loading="lazy" '
+            f'decoding="async" width="800" height="800" />'
+            f"</a>"
+        )
+        share_html = _card_share_rail(href, title, excerpt)
+        body_html = (
+            f'<div class="card-body">'
+            f"{eyebrow_html}"
+            f'<h2><a href="{href}">{_esc(title)}</a></h2>'
             f"{date_html}"
             f"{excerpt_html}"
+            f"{share_html}"
+            f"</div>"
+        )
+        cards.append(
+            f'<article class="tag-landing-card tag-landing-card--ft">'
+            f"{img_html}{body_html}"
             f"</article>"
         )
     return "".join(cards)
@@ -246,7 +385,7 @@ def _render_related_tags(
     cooccur: collections.Counter[str],
     taxonomy: dict,
     slug: str,
-    posts: dict[str, list[tuple[str, str, str, str]]],
+    posts: dict[str, list[tuple[str, str, str, str, list[str], str, str]]],
     n: int = 6,
 ) -> str:
     """Render the top-N co-occurring canonical tags as chip links.
@@ -279,7 +418,7 @@ def _render_related_tags(
 def _render_jsonld(
     slug: str,
     entry: dict,
-    posts_for_tag: list[tuple[str, str, str, str]],
+    posts_for_tag: list[tuple[str, str, str, str, list[str], str, str]],
 ) -> str:
     """CollectionPage + ItemList. Both Schema.org types Google indexes
     for topic pages and AI summarisers consume."""
@@ -293,7 +432,7 @@ def _render_jsonld(
             "url": f"{_BASE_URL}/{post_slug}/",
             "name": title,
         }
-        for i, (title, _iso, post_slug, _ex) in enumerate(posts_for_tag)
+        for i, (title, _iso, post_slug, *_rest) in enumerate(posts_for_tag)
     ]
     payload = {
         "@context": "https://schema.org",
@@ -324,10 +463,10 @@ def _render_jsonld(
 def _render_landing_body(
     slug: str,
     entry: dict,
-    posts_for_tag: list[tuple[str, str, str, str]],
+    posts_for_tag: list[tuple[str, str, str, str, list[str], str, str]],
     cooccur: collections.Counter[str],
     taxonomy: dict,
-    posts: dict[str, list[tuple[str, str, str, str]]],
+    posts: dict[str, list[tuple[str, str, str, str, list[str], str, str]]],
 ) -> str:
     n = len(posts_for_tag)
     pillar = entry.get("category", "leadership").upper()
@@ -367,10 +506,10 @@ def _render_landing_html(
     template: str,
     slug: str,
     entry: dict,
-    posts_for_tag: list[tuple[str, str, str, str]],
+    posts_for_tag: list[tuple[str, str, str, str, list[str], str, str]],
     cooccur: collections.Counter[str],
     taxonomy: dict,
-    posts: dict[str, list[tuple[str, str, str, str]]],
+    posts: dict[str, list[tuple[str, str, str, str, list[str], str, str]]],
 ) -> str:
     """Take the /tags/index.html cover as the shell skeleton, swap the
     <main> body, title, description, canonical, og:* meta, and inject
@@ -421,6 +560,92 @@ def _load_locale_article_slugs(lang: str) -> dict[str, str]:
         return {}
     arts = data.get("articles") or {}
     return {k: v for k, v in arts.items() if isinstance(v, str) and v}
+
+
+def _load_locale_post_index(lang: str) -> dict[str, tuple[str, str, str, str]]:
+    """Return ``{en_slug: (locale_slug, locale_title, locale_excerpt,
+    locale_banner)}`` for every dated post in ``_posts/<lang>/``. Same
+    contract as build_listings._load_locale_post_index — duplicated
+    here to keep build_tag_landings importable without forcing a
+    cross-module import. Posts present only in EN fall back to the
+    EN card content at render time."""
+    import json
+
+    src = ROOT / "_posts" / lang
+    if not src.is_dir():
+        return {}
+    fr_to_en: dict[str, str] = {}
+    slugs_path = ROOT / "_data" / "i18n" / lang / "slugs.json"
+    if slugs_path.is_file():
+        try:
+            data = json.loads(slugs_path.read_text(encoding="utf-8"))
+            for en_slug, locale_slug in (data.get("articles") or {}).items():
+                if isinstance(locale_slug, str) and locale_slug:
+                    fr_to_en[locale_slug] = en_slug
+        except (OSError, ValueError):
+            pass
+    out: dict[str, tuple[str, str, str, str]] = {}
+    for path in sorted(src.glob("*.md")):
+        stem = path.stem
+        text = path.read_text(encoding="utf-8", errors="ignore")
+        title_m = _TITLE_FM_RE.search(text)
+        excerpt_m = _EXCERPT_FM_RE.search(text)
+        desc_m = _DESC_FM_RE.search(text)
+        banner_m = _BANNER_FM_RE.search(text)
+        if not title_m:
+            continue
+        title = title_m.group(1)
+        excerpt = (
+            excerpt_m.group(1)
+            if excerpt_m
+            else (desc_m.group(1) if desc_m else "")
+        )
+        banner = banner_m.group(1) if banner_m else _DEFAULT_BANNER
+        en_slug = fr_to_en.get(stem, stem)
+        out[en_slug] = (stem, title, excerpt, banner)
+    return out
+
+
+def _localise_posts_for_tag(
+    posts_for_tag: list[tuple[str, str, str, str, list[str], str, str]],
+    locale_index: dict[str, tuple[str, str, str, str]],
+) -> list[tuple[str, str, str, str, list[str], str, str]]:
+    """Return a list with locale-translated title/excerpt/banner where
+    the EN slug maps to a locale post; pass-through otherwise."""
+    out: list[tuple[str, str, str, str, list[str], str, str]] = []
+    for title, iso_date, slug, excerpt, pillars, banner, banner_alt in posts_for_tag:
+        entry = locale_index.get(slug)
+        if entry is not None:
+            _locale_slug, locale_title, locale_excerpt, locale_banner = entry
+            title = locale_title
+            excerpt = locale_excerpt or excerpt
+            banner = locale_banner or banner
+        out.append((title, iso_date, slug, excerpt, pillars, banner, banner_alt))
+    return out
+
+
+_LANDING_LIST_SECTION_RE = re.compile(
+    r'(<section class="tag-landing-list"[^>]*>)([\s\S]*?)(</section>)',
+    re.IGNORECASE,
+)
+
+
+def _swap_landing_cards(
+    html: str,
+    posts_for_tag: list[tuple[str, str, str, str, list[str], str, str]],
+    locale_index: dict[str, tuple[str, str, str, str]],
+    article_map: dict[str, str],
+    lang: str,
+) -> str:
+    """Replace the EN card grid inside the per-tag landing's
+    ``<section class="tag-landing-list">`` with locale-translated
+    cards pointing at ``/<lang>/<locale-slug>/`` URLs."""
+    locale_posts = _localise_posts_for_tag(posts_for_tag, locale_index)
+    href_overrides = {
+        p[2]: f"/{lang}/{article_map.get(p[2], p[2])}/" for p in posts_for_tag
+    }
+    body = _render_article_cards(locale_posts, href_overrides=href_overrides)
+    return _LANDING_LIST_SECTION_RE.sub(rf"\1{body}\3", html, count=1)
 
 
 _HREFLANG_ARTICLE_RE = re.compile(r'href="/(\d{4}-\d{2}-\d{2}-[^/"]+)/"')
@@ -486,17 +711,23 @@ def _translate_chrome_for(lang: str, html: str) -> str:
 
 def _write_locale_landings(
     taxonomy: dict,
-    posts: dict[str, list[tuple[str, str, str, str]]],
+    posts: dict[str, list[tuple[str, str, str, str, list[str], str, str]]],
     en_pages: dict[str, str],
 ) -> int:
     written = 0
     article_maps = {lang: _load_locale_article_slugs(lang) for lang in LOCALES_NON_EN}
+    locale_indexes = {lang: _load_locale_post_index(lang) for lang in LOCALES_NON_EN}
     for slug in en_pages:
         if len(posts.get(slug, [])) < _LANDING_THRESHOLD:
             continue
         en_html = en_pages[slug]
+        posts_for_tag = posts.get(slug, [])
         for lang in LOCALES_NON_EN:
             locale_html = _localise_html_links(en_html, lang, slug, article_maps[lang])
+            locale_html = _swap_landing_cards(
+                locale_html, posts_for_tag, locale_indexes[lang],
+                article_maps[lang], lang,
+            )
             locale_html = _translate_chrome_for(lang, locale_html)
             out_path = (
                 PUBLIC / lang / LOCALE_TAGS_PATH[lang] / slug / "index.html"
@@ -526,13 +757,13 @@ def _render_category_tag_item(
 
 def _category_recent_posts(
     pillar_slugs: list[str],
-    posts: dict[str, list[tuple[str, str, str, str]]],
+    posts: dict[str, list[tuple[str, str, str, str, list[str], str, str]]],
     n: int = 12,
-) -> list[tuple[str, str, str, str]]:
+) -> list[tuple[str, str, str, str, list[str], str, str]]:
     """Collect recent posts across every canonical in the pillar,
     dedupe by slug, return the newest ``n``."""
     seen: set[str] = set()
-    recent: list[tuple[str, str, str, str]] = []
+    recent: list[tuple[str, str, str, str, list[str], str, str]] = []
     for slug in pillar_slugs:
         for entry in posts.get(slug, []):
             if entry[2] in seen:
@@ -546,7 +777,7 @@ def _category_recent_posts(
 def _render_category_body(
     pillar: str,
     taxonomy: dict,
-    posts: dict[str, list[tuple[str, str, str, str]]],
+    posts: dict[str, list[tuple[str, str, str, str, list[str], str, str]]],
 ) -> str:
     """Render the body of a /categories/<pillar>/ landing — a hero
     with the pillar deck, the canonical tags belonging to the pillar
@@ -612,7 +843,7 @@ def _render_category_html(
     template: str,
     pillar: str,
     taxonomy: dict,
-    posts: dict[str, list[tuple[str, str, str, str]]],
+    posts: dict[str, list[tuple[str, str, str, str, list[str], str, str]]],
 ) -> str:
     url = f"{_BASE_URL}/categories/{pillar}/"
     title = f"{PILLAR_LABELS[pillar]} — Editorial pillar"
@@ -643,7 +874,7 @@ def _render_category_html(
 
 def _write_category_pages(
     taxonomy: dict,
-    posts: dict[str, list[tuple[str, str, str, str]]],
+    posts: dict[str, list[tuple[str, str, str, str, list[str], str, str]]],
 ) -> tuple[int, int]:
     """Generate /categories/<pillar>/index.html for each of the 6
     pillars + locale forks. Reuses the /tags/index.html cover as a
@@ -651,25 +882,37 @@ def _write_category_pages(
     if not TEMPLATE_PATH.is_file():
         return 0, 0
     template = TEMPLATE_PATH.read_text(encoding="utf-8")
-    en_pages: dict[str, str] = {}
+    en_pages: dict[str, tuple[str, list[tuple[str, str, str, str, list[str], str, str]]]] = {}
     for pillar in PILLAR_ORDER:
         page_html = _render_category_html(template, pillar, taxonomy, posts)
         out_path = PUBLIC / "categories" / pillar / "index.html"
         out_path.parent.mkdir(parents=True, exist_ok=True)
         out_path.write_text(page_html, encoding="utf-8")
-        en_pages[pillar] = page_html
+        pillar_slugs = [
+            slug for slug, e in taxonomy.items() if e.get("category") == pillar
+        ]
+        pillar_slugs.sort(key=lambda s: -len(posts.get(s, [])))
+        recent = _category_recent_posts(pillar_slugs, posts)
+        en_pages[pillar] = (page_html, recent)
     locale_written = _write_category_locale_forks(en_pages)
     return len(en_pages), locale_written
 
 
-def _write_category_locale_forks(en_pages: dict[str, str]) -> int:
+def _write_category_locale_forks(
+    en_pages: dict[str, tuple[str, list[tuple[str, str, str, str, list[str], str, str]]]],
+) -> int:
     """Same lang/canonical/links rewrite as tag-landing locales. The
     /categories/ path stays English across all locales (no localised
     segment for this round — a future polish can add per-locale
-    "catégories" / "categorías" / etc.)."""
+    "catégories" / "categorías" / etc.).
+
+    Cards inside the "Recent articles" rail get re-rendered with
+    locale-translated title/excerpt/banner + URL via the per-locale
+    post index (frontmatter from ``_posts/<lang>/``)."""
     written = 0
     article_maps = {lang: _load_locale_article_slugs(lang) for lang in LOCALES_NON_EN}
-    for pillar, en_html in en_pages.items():
+    locale_indexes = {lang: _load_locale_post_index(lang) for lang in LOCALES_NON_EN}
+    for pillar, (en_html, recent) in en_pages.items():
         for lang in LOCALES_NON_EN:
             locale_tags = LOCALE_TAGS_PATH[lang]
             out = en_html
@@ -681,7 +924,6 @@ def _write_category_locale_forks(en_pages: dict[str, str]) -> int:
             out = _OG_URL_RE.sub(
                 f'<meta property="og:url" content="{canonical}"', out, count=1
             )
-            # Article links + tags → locale variants.
             amap = article_maps[lang]
 
             def _swap_article(m: re.Match[str], _lang: str = lang, _amap: dict = amap) -> str:
@@ -691,6 +933,7 @@ def _write_category_locale_forks(en_pages: dict[str, str]) -> int:
             out = _HREFLANG_ARTICLE_RE.sub(_swap_article, out)
             out = out.replace('href="/tags/', f'href="/{lang}/{locale_tags}/')
             out = _INLANG_RE.sub(f'"inLanguage":"{lang}"', out)
+            out = _swap_landing_cards(out, recent, locale_indexes[lang], amap, lang)
             out = _translate_chrome_for(lang, out)
             out_path = (
                 PUBLIC / lang / "categories" / pillar / "index.html"
@@ -703,7 +946,7 @@ def _write_category_locale_forks(en_pages: dict[str, str]) -> int:
 
 def _write_landings(
     taxonomy: dict,
-    posts: dict[str, list[tuple[str, str, str, str]]],
+    posts: dict[str, list[tuple[str, str, str, str, list[str], str, str]]],
     cooccur: dict[str, collections.Counter[str]],
 ) -> tuple[int, int]:
     if not TEMPLATE_PATH.is_file():

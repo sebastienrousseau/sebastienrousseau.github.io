@@ -233,6 +233,32 @@ document.addEventListener("click", function (event) {
     }
 });
 
+/**
+ * Per-card "Copy link" — every .card-share-rail emits a
+ * <button data-copy-link="https://…/<slug>/"> so readers can paste the
+ * canonical URL anywhere. Same Clipboard API + textarea fallback as the
+ * cite popover handler above. data-copied="1" flips for 2s so CSS can
+ * render a "Copied ✓" affordance on top of the icon.
+ */
+document.addEventListener("click", function (event) {
+    var btn = event.target.closest("[data-copy-link]");
+    if (!btn) return;
+    event.preventDefault();
+    var text = btn.getAttribute("data-copy-link");
+    if (!text) return;
+    var done = function () {
+        btn.setAttribute("data-copied", "1");
+        setTimeout(function () { btn.removeAttribute("data-copied"); }, 2000);
+    };
+    if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(text).then(done).catch(function () {
+            fallbackCopy(text, done);
+        });
+    } else {
+        fallbackCopy(text, done);
+    }
+});
+
 function fallbackCopy(text, done) {
     var ta = document.createElement("textarea");
     ta.value = text;
