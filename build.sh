@@ -135,6 +135,11 @@ python3 scripts/generators/build_agent_api.py
 python3 scripts/generators/build_lead_magnets.py
 python3 scripts/generators/build_news_sitemap.py
 python3 scripts/postbuild/postbuild.py
+# RAG-ready corpus export — JSONL one-object-per-article + per-tag
+# subsets. Consumed by Claude / ChatGPT / Perplexity / LangChain etc.
+# Runs after postbuild so body_text reflects the final article HTML
+# (table-card data-labels stamped, breadcrumb chrome injected, etc.).
+python3 scripts/seo_and_audit/build_rag_corpus.py
 # Rewrite the in-page language switcher so each .ap-lang-item link
 # points to the localised URL of THIS page (per the page's own
 # hreflang alternates), not just /<lang>/. Without this, clicking
