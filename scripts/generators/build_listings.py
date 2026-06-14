@@ -345,6 +345,20 @@ def _render_page_html(
     return out
 
 
+def _translate_chrome_for(lang: str, html: str) -> str:
+    """Apply build_translations.translate_chrome bound to ``lang`` —
+    translates nav, footer, search labels, aria attributes, language
+    menu, dates. Body content (which we emit ourselves) is left alone.
+    Falls back to the untranslated HTML on import error."""
+    try:
+        from scripts.generators.build_translations import _state as _bt_state
+        from scripts.generators.build_translations._chrome import translate_chrome
+    except Exception:
+        return html
+    _bt_state.bind_lang(lang)
+    return translate_chrome(html)
+
+
 def _write_locale_page(
     en_html: str,
     lang: str,
@@ -354,7 +368,7 @@ def _write_locale_page(
     out_path: Path,
 ) -> None:
     """Rewrite an EN page into one locale variant: <html lang>,
-    canonical, internal links, og:url, JSON-LD inLanguage."""
+    canonical, internal links, og:url, JSON-LD inLanguage, chrome."""
     out = en_html
     out = _HTML_LANG_RE.sub(f'<html lang="{lang}"', out, count=1)
     canonical = f"{_BASE_URL}/{lang}/{locale_prefix}/"
@@ -375,6 +389,7 @@ def _write_locale_page(
     # The per-page pagination links (/articles/page/N/) → localised.
     out = out.replace('href="/articles/', f'href="/{lang}/{locale_prefix}/')
     out = _INLANG_RE.sub(f'"inLanguage":"{lang}"', out)
+    out = _translate_chrome_for(lang, out)
     out_path.parent.mkdir(parents=True, exist_ok=True)
     out_path.write_text(out, encoding="utf-8")
 
@@ -464,6 +479,7 @@ def _write_year_archives(
             out = _HREFLANG_ARTICLE_RE.sub(_swap_article, out)
             out = out.replace('href="/articles/', f'href="/{lang}/{prefix}/')
             out = _INLANG_RE.sub(f'"inLanguage":"{lang}"', out)
+            out = _translate_chrome_for(lang, out)
             out_path.parent.mkdir(parents=True, exist_ok=True)
             out_path.write_text(out, encoding="utf-8")
             locale_written += 1

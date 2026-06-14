@@ -428,6 +428,22 @@ def _localise_html_links(
     return out
 
 
+def _translate_chrome_for(lang: str, html: str) -> str:
+    """Run the EN shell through ``build_translations.translate_chrome``
+    bound to ``lang`` — translates nav, footer, search labels, aria
+    attributes, language menu, dates. Keeps the body content (which
+    is generator-emitted EN text) untouched. Falls back to the
+    untranslated HTML on any import error so the build still emits
+    something usable."""
+    try:
+        from scripts.generators.build_translations import _state as _bt_state
+        from scripts.generators.build_translations._chrome import translate_chrome
+    except Exception:
+        return html
+    _bt_state.bind_lang(lang)
+    return translate_chrome(html)
+
+
 def _write_locale_landings(
     taxonomy: dict,
     posts: dict[str, list[tuple[str, str, str, str]]],
@@ -441,6 +457,7 @@ def _write_locale_landings(
         en_html = en_pages[slug]
         for lang in LOCALES_NON_EN:
             locale_html = _localise_html_links(en_html, lang, slug, article_maps[lang])
+            locale_html = _translate_chrome_for(lang, locale_html)
             out_path = (
                 PUBLIC / lang / LOCALE_TAGS_PATH[lang] / slug / "index.html"
             )
@@ -469,10 +486,17 @@ def _render_category_body(
         if n < 1:
             continue
         entry = taxonomy[slug]
+        meta = (
+            f' <span class="meta">— {n} article{"s" if n != 1 else ""}</span>'
+        )
+        head = f'<strong>{_esc(entry["name"])}</strong>{meta}'
+        # Tags below the landing threshold are listed (with count + deck)
+        # but not linked — their `/tags/<slug>/` page is not emitted, so
+        # the link would 404 and fail audit_links --strict-internal.
+        if n >= _LANDING_THRESHOLD:
+            head = f'<a href="/tags/{slug}/">{head}</a>'
         tag_items.append(
-            f'<li><a href="/tags/{slug}/"><strong>{_esc(entry["name"])}</strong>'
-            f' <span class="meta">— {n} article{"s" if n != 1 else ""}</span></a>'
-            f"<p>{_esc(entry['description'].strip())}</p></li>"
+            f"<li>{head}<p>{_esc(entry['description'].strip())}</p></li>"
         )
     # Cross-pillar recent posts: collect unique recent posts that
     # touch any canonical in this pillar, dedupe by slug, newest first.
@@ -588,6 +612,7 @@ def _write_category_locale_forks(en_pages: dict[str, str]) -> int:
             out = _HREFLANG_ARTICLE_RE.sub(_swap_article, out)
             out = out.replace('href="/tags/', f'href="/{lang}/{locale_tags}/')
             out = _INLANG_RE.sub(f'"inLanguage":"{lang}"', out)
+            out = _translate_chrome_for(lang, out)
             out_path = (
                 PUBLIC / lang / "categories" / pillar / "index.html"
             )
