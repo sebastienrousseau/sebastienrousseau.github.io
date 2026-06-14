@@ -2718,3 +2718,91 @@ def test_inject_reuse_panel_idempotent():
 
     once = inject_reuse_panel(_ws2_page())
     assert inject_reuse_panel(once) == once
+
+
+# ---------------------------------------------------------------------------
+# inject_oembed_link, _has_landing, _parse_iso_date — coverage gap fills
+# ---------------------------------------------------------------------------
+
+
+def test_inject_oembed_link_emits_alternate_link_in_head():
+    """The oEmbed discovery `<link rel="alternate">` carries the per-
+    article /oembed/<slug>.json URL so Notion / Slack / Discord can fetch
+    the rich card metadata. BlogPosting pages only; idempotent."""
+    from postbuild_lib.article_furniture import inject_oembed_link
+
+    out = inject_oembed_link(_ws2_page())
+    assert 'application/json+oembed' in out
+    assert 'href="https://sebastienrousseau.com/oembed/2026-01-01-my-post.json"' in out
+    # The previous oEmbed link sat inside <head>.
+    assert out.index('application/json+oembed') < out.index("</head>")
+
+
+def test_inject_oembed_link_no_op_without_blogposting():
+    from postbuild_lib.article_furniture import inject_oembed_link
+
+    plain = "<html><head></head><body>x</body></html>"
+    assert inject_oembed_link(plain) == plain
+
+
+def test_inject_oembed_link_idempotent():
+    from postbuild_lib.article_furniture import inject_oembed_link
+
+    once = inject_oembed_link(_ws2_page())
+    assert inject_oembed_link(once) == once
+
+
+def test_inject_oembed_link_no_op_when_canonical_or_title_missing():
+    from postbuild_lib.article_furniture import inject_oembed_link
+
+    head_no_canonical = _WS2_HEAD.replace(
+        '<link rel="canonical" href="https://sebastienrousseau.com/2026-01-01-my-post/">',
+        "",
+    )
+    page = _ws2_page(head=head_no_canonical)
+    assert inject_oembed_link(page) == page
+
+
+def test_inject_oembed_link_handles_index_html_canonical_suffix():
+    """Canonical URLs that end with `/index.html` (older slug shape)
+    still resolve to the same bare slug — `/oembed/<slug>.json` should
+    not contain `index.html` in the filename."""
+    from postbuild_lib.article_furniture import inject_oembed_link
+
+    head_with_index = _WS2_HEAD.replace(
+        'href="https://sebastienrousseau.com/2026-01-01-my-post/"',
+        'href="https://sebastienrousseau.com/2026-01-01-my-post/index.html"',
+    )
+    page = _ws2_page(head=head_with_index)
+    out = inject_oembed_link(page)
+    assert 'href="https://sebastienrousseau.com/oembed/2026-01-01-my-post.json"' in out
+
+
+def test_has_landing_returns_false_for_missing_path(tmp_path, monkeypatch):
+    """Direct call to _has_landing — exercises the Path.is_file() probe
+    without the per-test monkeypatch the tag-badges tests use."""
+    from postbuild_lib import article_furniture as af
+
+    monkeypatch.setattr(af, "_LANDING_PUBLIC", tmp_path)
+    assert af._has_landing("never-emitted-tag", "en") is False
+
+
+def test_has_landing_returns_true_for_existing_path(tmp_path, monkeypatch):
+    from postbuild_lib import article_furniture as af
+
+    landing = tmp_path / "tags" / "post-quantum-cryptography" / "index.html"
+    landing.parent.mkdir(parents=True, exist_ok=True)
+    landing.write_text("<html>tag landing</html>")
+    monkeypatch.setattr(af, "_LANDING_PUBLIC", tmp_path)
+    assert af._has_landing("post-quantum-cryptography", "en") is True
+
+
+def test_parse_iso_date_returns_none_for_unrecognised_format():
+    """The third format pattern (`%Y-%m-%d`) is the last fallback;
+    strings that don't match any pattern return None — exercises the
+    `except ValueError: continue` branches + the final `return None`."""
+    from postbuild_lib.article_furniture import _parse_iso_date
+
+    assert _parse_iso_date("not-a-date") is None
+    assert _parse_iso_date("2026-13-40") is None  # invalid month + day
+    assert _parse_iso_date("") is None

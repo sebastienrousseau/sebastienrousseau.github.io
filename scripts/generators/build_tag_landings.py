@@ -347,6 +347,22 @@ def _render_landing_body(
     )
 
 
+_HREFLANG_LINK_RE = re.compile(
+    r'(<link\s+rel="alternate"\s+hreflang="[^"]+"\s+href=")([^"]+?)/"',
+    re.IGNORECASE,
+)
+
+
+def _append_slug_to_hreflang(html: str, slug: str) -> str:
+    """Rewrite every ``<link rel="alternate" hreflang="…" href="…/">`` so
+    the URL points at the per-tag landing for ``slug`` rather than the
+    cover. The cover template's hreflang chain ends every locale URL
+    with the cover path (``/tags/``, ``/fr/etiquettes/``, …) — we just
+    append ``<slug>/`` to keep the chain reciprocal across the locale
+    forks of each canonical tag."""
+    return _HREFLANG_LINK_RE.sub(rf'\g<1>\g<2>/{slug}/"', html)
+
+
 def _render_landing_html(
     template: str,
     slug: str,
@@ -358,7 +374,9 @@ def _render_landing_html(
 ) -> str:
     """Take the /tags/index.html cover as the shell skeleton, swap the
     <main> body, title, description, canonical, og:* meta, and inject
-    the per-tag JSON-LD before </head>."""
+    the per-tag JSON-LD before </head>. Hreflang alternates are
+    re-pointed at the per-tag landing of each locale so reciprocity
+    holds across the 28-locale chain."""
     url = f"{_BASE_URL}/tags/{slug}/"
     title = f'{entry["name"]} — Articles by topic'
     desc = entry["description"].strip()
@@ -380,6 +398,7 @@ def _render_landing_html(
     out = _OG_URL_RE.sub(
         f'<meta property="og:url" content="{url}"', out, count=1
     )
+    out = _append_slug_to_hreflang(out, slug)
     out = _AP_HERO_BLOCK_RE.sub("", out, count=1)
     out = _MAIN_RE.sub(rf"\1{body}\3", out, count=1)
     jsonld = _render_jsonld(slug, entry, posts_for_tag)
@@ -563,6 +582,32 @@ def _render_category_body(
     )
 
 
+def _rewrite_hreflang_to_category(html: str, pillar: str) -> str:
+    """Rewrite the cover template's hreflang chain so every locale URL
+    points at ``/categories/<pillar>/`` (EN) or ``/<lang>/categories/
+    <pillar>/`` (non-EN). The cover template's chain ends with each
+    locale's tags-cover path (``/fr/etiquettes/``, ``/ar/wusum/``, …);
+    we swap that segment out for the unified ``/categories/<pillar>/``
+    pattern so the reciprocity checker can pair every category page
+    across the 28-locale matrix."""
+    cover_path = f"/categories/{pillar}/"
+
+    def _swap(m: re.Match[str]) -> str:
+        prefix, href = m.group(1), m.group(2)
+        # Check locale-prefixed forms first (e.g. /ha/tags, /zh-hans/biaoqian)
+        # so we don't mistake them for the bare-EN /tags pattern.
+        for lang, locale_tags in LOCALE_TAGS_PATH.items():
+            tail = f"/{lang}/{locale_tags}"
+            if href.endswith(tail):
+                return f'{prefix}{_BASE_URL}/{lang}{cover_path}"'
+        # Bare EN cover: href ends with /tags (no locale prefix).
+        if href.endswith("/tags"):
+            return f'{prefix}{_BASE_URL}{cover_path}"'
+        return m.group(0)
+
+    return _HREFLANG_LINK_RE.sub(_swap, html)
+
+
 def _render_category_html(
     template: str,
     pillar: str,
@@ -589,6 +634,7 @@ def _render_category_html(
     out = _OG_URL_RE.sub(
         f'<meta property="og:url" content="{url}"', out, count=1
     )
+    out = _rewrite_hreflang_to_category(out, pillar)
     body = _render_category_body(pillar, taxonomy, posts)
     out = _AP_HERO_BLOCK_RE.sub("", out, count=1)
     out = _MAIN_RE.sub(rf"\1{body}\3", out, count=1)
