@@ -846,6 +846,7 @@ from postbuild_lib.output import (  # noqa: F401 — re-exports
     fix_xml_feeds,
     refresh_sitemap_lastmod,
     shrink_news_sitemap,
+    write_ai_txt,
     write_humans,
     write_json_feed,
     write_llms_ctx_txt,
@@ -1404,6 +1405,7 @@ def _finalize_build() -> tuple[int, bool, bool, bool, int, int, int, int]:
     llms_written = write_llms_txt(PUBLIC)
     llms_ctx_written = write_llms_ctx_txt(PUBLIC)
     llms_full_written = write_llms_full_txt(PUBLIC)
+    ai_written = write_ai_txt(PUBLIC)
     write_json_feed(PUBLIC)
     feed_urls_patched = fix_xml_feed_urls(PUBLIC)
     xml_patched = fix_xml_feeds(PUBLIC)
@@ -1415,6 +1417,7 @@ def _finalize_build() -> tuple[int, bool, bool, bool, int, int, int, int]:
         llms_written,
         llms_ctx_written,
         llms_full_written,
+        ai_written,
         feed_urls_patched,
         xml_patched,
         feeds_deduped,
@@ -1444,6 +1447,7 @@ def main() -> None:
         llms_written,
         llms_ctx_written,
         llms_full_written,
+        ai_written,
         feed_urls_patched,
         xml_patched,
         feeds_deduped,
@@ -1509,7 +1513,8 @@ def main() -> None:
         f"robots.txt {'updated' if robots_written else 'unchanged'}, "
         f"llms.txt {'updated' if llms_written else 'unchanged'}, "
         f"llms-ctx.txt {'updated' if llms_ctx_written else 'unchanged'}, "
-        f"llms-full.txt {'updated' if llms_full_written else 'unchanged'}; "
+        f"llms-full.txt {'updated' if llms_full_written else 'unchanged'}, "
+        f"ai.txt {'updated' if ai_written else 'unchanged'}; "
         f"patched {len(pages) - len(failures)}, failed {len(failures)}"
     )
     if failures:
