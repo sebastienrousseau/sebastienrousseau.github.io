@@ -191,6 +191,47 @@ def _write_global_and_per_tag(records: list[dict], amap: dict[str, str]) -> tupl
     return len(records), len(by_canonical)
 
 
+def _write_mcp_manifest(records: list[dict]) -> int:
+    """Write `/api/mcp-resources.json` — the static resource manifest
+    consumed by the lang-router MCP routes. Mirrors the JSONL feed but
+    keeps only the discovery fields the MCP handlers need (slug, url,
+    title, summary, tags, pillars, lang, license, published_at,
+    updated_at). The full body lives in /feed.jsonl, read on demand by
+    /mcp/v1/read_resource."""
+    light = [
+        {
+            "slug": r["url"].rstrip("/").rsplit("/", 1)[-1],
+            "url": r["url"],
+            "title": r["title"],
+            "summary": r["summary"],
+            "tags": r["tags"],
+            "pillars": r["pillars"],
+            "lang": r["lang"],
+            "license": r["license"],
+            "published_at": r["published_at"],
+            "updated_at": r["updated_at"],
+        }
+        for r in records
+    ]
+    out_path = PUBLIC / "api" / "mcp-resources.json"
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    out_path.write_text(
+        json.dumps(
+            {
+                "version": "1.0",
+                "generated_at": records[0]["updated_at"] if records else "",
+                "total": len(light),
+                "resources": light,
+            },
+            ensure_ascii=False,
+            indent=2,
+        )
+        + "\n",
+        encoding="utf-8",
+    )
+    return len(light)
+
+
 def main() -> int:
     taxonomy, amap = _load_taxonomy()
     records: list[dict] = []
@@ -199,9 +240,11 @@ def main() -> int:
         if rec is not None:
             records.append(rec)
     n, t = _write_global_and_per_tag(records, amap)
+    m = _write_mcp_manifest(records)
     print(
         f"build_rag_corpus: wrote {n} records to public/feed.jsonl + "
-        f"{t} per-tag JSONL files under public/tags/<slug>/feed.jsonl."
+        f"{t} per-tag JSONL files + {m} resources to "
+        f"public/api/mcp-resources.json."
     )
     return 0
 

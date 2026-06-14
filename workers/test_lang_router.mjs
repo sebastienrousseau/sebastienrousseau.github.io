@@ -63,6 +63,31 @@ async function callHandler(request) {
 }
 
 // ---------------------------------------------------------------------------
+// MCP route fall-through: when tryMCP returns a Response, lang-router
+// returns it directly (locale routing doesn't apply to API endpoints).
+// ---------------------------------------------------------------------------
+
+test('MCP /mcp/v1/list_resources short-circuits locale routing', async () => {
+  const realF = globalThis.fetch;
+  globalThis.fetch = async (input) => {
+    const url = typeof input === 'string' ? input : input.url;
+    if (url.endsWith('/api/mcp-resources.json')) {
+      return new Response(JSON.stringify({ version: '1.0', total: 0, resources: [] }), { status: 200 });
+    }
+    return new Response('', { status: 502 });
+  };
+  try {
+    const res = await callHandler(new Request('https://sebastienrousseau.com/mcp/v1/list_resources'));
+    assert.equal(res.status, 200);
+    assert.match(res.headers.get('Content-Type'), /application\/json/);
+    const body = await res.json();
+    assert.deepEqual(body.resources, []);
+  } finally {
+    globalThis.fetch = realF;
+  }
+});
+
+// ---------------------------------------------------------------------------
 // isPageNavigation
 // ---------------------------------------------------------------------------
 

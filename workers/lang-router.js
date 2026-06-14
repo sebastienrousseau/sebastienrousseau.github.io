@@ -196,6 +196,10 @@ export function isPageNavigation(pathname) {
 // sibling module; lang-router checks them first so the Fediverse
 // endpoints take precedence over locale routing and CSP rewriting.
 import { tryActivityPub } from './activitypub.js';
+// MCP (Model Context Protocol) routes — read-only API exposing the
+// editorial corpus to AI clients. Static manifest + JSONL feeds drive
+// every response; no KV, no D1, Edge-cache immutable.
+import { tryMCP } from './mcp.js';
 
 export default {
   async fetch(request, env, ctx) {
@@ -205,6 +209,10 @@ export default {
     // an AP route, in which case we fall through to the existing flow.
     const apResponse = await tryActivityPub(request);
     if (apResponse) return apResponse;
+    // MCP handler — fields /mcp/v1/list_resources / read_resource /
+    // search. Locale routing doesn't apply (these are API endpoints).
+    const mcpResponse = await tryMCP(request);
+    if (mcpResponse) return mcpResponse;
 
     // Only act on GET / HEAD page navigation; everything else still gets
     // security headers via the pass-through wrapper.

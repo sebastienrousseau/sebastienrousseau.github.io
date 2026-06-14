@@ -198,6 +198,17 @@ if command -v node >/dev/null 2>&1; then
     --test-coverage-functions=100 \
     --test-coverage-include='workers/activitypub.js' \
     workers/test_activitypub.mjs
+  # MCP sibling — exposes the corpus over /mcp/v1/* as a read-only API.
+  # Same exhaustive-coverage gate; hermetic (stubs globalThis.fetch for
+  # manifest + JSONL). 100/100/100 mandatory because the route is the
+  # discovery surface that AI clients hit.
+  node --test \
+    --experimental-test-coverage \
+    --test-coverage-lines=100 \
+    --test-coverage-branches=100 \
+    --test-coverage-functions=100 \
+    --test-coverage-include='workers/mcp.js' \
+    workers/test_mcp.mjs
 fi
 
 # Deployment is the public/ Pages artifact uploaded by CI

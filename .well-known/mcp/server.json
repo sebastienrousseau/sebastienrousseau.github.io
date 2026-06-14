@@ -1,0 +1,42 @@
+{
+  "$schema": "https://modelcontextprotocol.io/schemas/server-info.json",
+  "name": "sebastienrousseau.com — editorial corpus",
+  "description": "Read-only MCP server exposing every published article on sebastienrousseau.com (banking technology, applied AI, ISO 20022, post-quantum cryptography, cloud-native finance, payments). License: CC-BY-4.0.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Sebastien Rousseau",
+    "url": "https://sebastienrousseau.com/about/"
+  },
+  "license": "CC-BY-4.0",
+  "transport": {
+    "type": "http",
+    "endpoint": "https://sebastienrousseau.com/mcp/v1/",
+    "capabilities": {
+      "resources": {
+        "listChanged": false,
+        "subscribe": false
+      },
+      "tools": {
+        "listChanged": false
+      }
+    }
+  },
+  "resources": {
+    "list": "https://sebastienrousseau.com/mcp/v1/list_resources",
+    "read": "https://sebastienrousseau.com/mcp/v1/read_resource?uri=<canonical-or-mcp-uri>",
+    "search": "https://sebastienrousseau.com/mcp/v1/search?q=<query>&tag=<canonical-slug>",
+    "uriScheme": "mcp+article://sebastienrousseau.com/<slug>",
+    "mimeType": "text/markdown",
+    "manifest": "https://sebastienrousseau.com/api/mcp-resources.json",
+    "rag": {
+      "full": "https://sebastienrousseau.com/feed.jsonl",
+      "perTag": "https://sebastienrousseau.com/tags/<slug>/feed.jsonl"
+    }
+  },
+  "attribution": {
+    "required": true,
+    "policy": "https://sebastienrousseau.com/.well-known/ai.txt",
+    "canonicalLink": "Every cited fragment must preserve the article's canonical URL in the citation. See ai.txt for the full Allow / Require / Do not policy."
+  },
+  "contact": "https://sebastienrousseau.com/contact/"
+}
