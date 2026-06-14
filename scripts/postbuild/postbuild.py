@@ -808,6 +808,7 @@ from postbuild_lib.article_furniture import (  # noqa: F401 — re-exports
     inject_lang_switcher,
     inject_mermaid,
     inject_nav_active,
+    inject_oembed_link,
     inject_prev_next_nav,
     inject_pullquotes,
     inject_reuse_panel,
@@ -907,6 +908,7 @@ class _PostbuildCounters:
         "mermaid_patched",
         "nav_patched",
         "newsarticle_patched",
+        "oembed_links_set",
         "og_patched",
         "pullquotes_set",
         "redundant_titles_stripped",
@@ -1141,6 +1143,7 @@ def _apply_article_passes(html: str, page: Path, ctr: _PostbuildCounters) -> str
     # Wrap-foot stack — order matters: each _WRAP_CLOSE_RE.sub inserts
     # BEFORE </div></main>, so the LAST pass ends up closest to it.
     # We want: syndicate (top) → cite → reuse → byline (bottom).
+    out = _bump(inject_oembed_link, out, ctr, "oembed_links_set")
     out = _bump(inject_syndication_panel, out, ctr, "syndicate_panels_set")
     out = _bump(inject_cite_popover, out, ctr, "cite_panels_set")
     out = _bump(inject_reuse_panel, out, ctr, "reuse_panels_set")
@@ -1482,6 +1485,7 @@ def main() -> None:
         f"{c.footnotes_set} got footnotes, "
         f"{c.share_rails_set} got share rail, "
         f"{c.syndicate_panels_set} got syndicate panel, "
+        f"{c.oembed_links_set} got oEmbed link, "
         f"{c.action_rails_set} got action rail, "
         f"{c.cite_panels_set} got cite popover, "
         f"{c.reuse_panels_set} got reuse panel, "

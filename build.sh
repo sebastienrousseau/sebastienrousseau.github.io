@@ -125,6 +125,10 @@ python3 scripts/generators/build_tag_landings.py
 # skeleton) and before build_translations (so the locale variants the
 # generator emits don't get clobbered).
 python3 scripts/generators/build_listings.py
+# Static oEmbed JSON per article (build-time, zero-Worker pattern).
+# Notion / Discord / Slack / WordPress / Atlassian use this for the
+# rich link card when readers paste-share a sebastienrousseau.com URL.
+python3 scripts/generators/build_oembed.py
 python3 scripts/generators/build_translations/__main__.py
 python3 scripts/generators/build_lang_feeds.py
 python3 scripts/generators/build_agent_api.py
