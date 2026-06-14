@@ -17,6 +17,7 @@
   "Byline": "Автор",
   "Share": "Поделиться",
   "Share.x": "Поделиться в X",
+  "Share.bluesky": "Поделиться в Bluesky",
   "Share.linkedin": "Поделиться в LinkedIn",
   "Share.facebook": "Поделиться в Facebook",
   "Share.whatsapp": "Поделиться в WhatsApp",
@@ -26,9 +27,14 @@
   "Action.listen": "Слушать",
   "Action.cite": "Цитировать",
   "Cite.heading": "Цитировать эту статью",
+  "Cite.copy": "Скопировать цитирование",
   "Reuse.heading": "Опубликовать заново",
   "Reuse.license": "Эта статья распространяется по лицензии",
   "Reuse.attribution": "При повторной публикации требуется указание канонической ссылки.",
+  "Reuse.copy": "Скопировать фрагмент для перепубликации",
   "Footnotes.heading": "Примечания",
-  "Footnotes.return": "Вернуться к тексту"
+  "Footnotes.return": "Вернуться к тексту",
+  "Syndicate.heading": "Перепубликовать эту статью",
+  "Syndicate.medium": "Скопировать формат для Medium",
+  "Syndicate.mastodon": "Скопировать формат для Mastodon"
 }

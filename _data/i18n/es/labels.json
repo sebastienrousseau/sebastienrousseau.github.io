@@ -17,6 +17,7 @@
   "Byline": "Firma",
   "Share": "Compartir",
   "Share.x": "Compartir en X",
+  "Share.bluesky": "Compartir en Bluesky",
   "Share.linkedin": "Compartir en LinkedIn",
   "Share.facebook": "Compartir en Facebook",
   "Share.whatsapp": "Compartir en WhatsApp",
@@ -26,9 +27,14 @@
   "Action.listen": "Escuchar",
   "Action.cite": "Citar",
   "Cite.heading": "Citar este artículo",
+  "Cite.copy": "Copiar cita",
   "Reuse.heading": "Volver a publicar este artículo",
   "Reuse.license": "Este artículo se publica bajo",
   "Reuse.attribution": "La republicación requiere atribución a la URL canónica.",
+  "Reuse.copy": "Copiar fragmento de republicación",
   "Footnotes.heading": "Notas al pie",
-  "Footnotes.return": "Volver al texto"
+  "Footnotes.return": "Volver al texto",
+  "Syndicate.heading": "Republicar este artículo",
+  "Syndicate.medium": "Copiar formato para Medium",
+  "Syndicate.mastodon": "Copiar formato para Mastodon"
 }

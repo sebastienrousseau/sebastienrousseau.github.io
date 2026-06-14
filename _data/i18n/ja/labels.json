@@ -17,6 +17,7 @@
   "Byline": "署名",
   "Share": "共有",
   "Share.x": "Xで共有",
+  "Share.bluesky": "Blueskyで共有",
   "Share.linkedin": "LinkedInで共有",
   "Share.facebook": "Facebookで共有",
   "Share.whatsapp": "WhatsAppで共有",
@@ -26,9 +27,14 @@
   "Action.listen": "聴く",
   "Action.cite": "引用",
   "Cite.heading": "この記事を引用",
+  "Cite.copy": "引用をコピー",
   "Reuse.heading": "この記事を転載",
   "Reuse.license": "本記事のライセンスは",
   "Reuse.attribution": "転載の際は正規URLへの帰属表示が必要です。",
+  "Reuse.copy": "転載用スニペットをコピー",
   "Footnotes.heading": "脚注",
-  "Footnotes.return": "本文に戻る"
+  "Footnotes.return": "本文に戻る",
+  "Syndicate.heading": "この記事を転載する",
+  "Syndicate.medium": "Medium用フォーマットをコピー",
+  "Syndicate.mastodon": "Mastodon用フォーマットをコピー"
 }

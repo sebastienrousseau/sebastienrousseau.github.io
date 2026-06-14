@@ -17,6 +17,7 @@
   "Byline": "Tanda Tangan",
   "Share": "Bagikan",
   "Share.x": "Bagikan ke X",
+  "Share.bluesky": "Bagikan di Bluesky",
   "Share.linkedin": "Bagikan ke LinkedIn",
   "Share.facebook": "Bagikan ke Facebook",
   "Share.whatsapp": "Bagikan ke WhatsApp",
@@ -26,9 +27,14 @@
   "Action.listen": "Dengar",
   "Action.cite": "Kutip",
   "Cite.heading": "Kutip artikel ini",
+  "Cite.copy": "Salin kutipan",
   "Reuse.heading": "Terbitkan ulang artikel ini",
   "Reuse.license": "Artikel ini berlisensi",
   "Reuse.attribution": "Penerbitan ulang memerlukan atribusi ke URL kanonis.",
+  "Reuse.copy": "Salin cuplikan penerbitan ulang",
   "Footnotes.heading": "Catatan kaki",
-  "Footnotes.return": "Kembali ke teks"
+  "Footnotes.return": "Kembali ke teks",
+  "Syndicate.heading": "Terbitkan ulang artikel ini",
+  "Syndicate.medium": "Salin format untuk Medium",
+  "Syndicate.mastodon": "Salin format untuk Mastodon"
 }

@@ -17,6 +17,7 @@
   "Byline": "Assinatura",
   "Share": "Compartilhar",
   "Share.x": "Compartilhar no X",
+  "Share.bluesky": "Compartilhar no Bluesky",
   "Share.linkedin": "Compartilhar no LinkedIn",
   "Share.facebook": "Compartilhar no Facebook",
   "Share.whatsapp": "Compartilhar no WhatsApp",
@@ -26,9 +27,14 @@
   "Action.listen": "Ouvir",
   "Action.cite": "Citar",
   "Cite.heading": "Citar este artigo",
+  "Cite.copy": "Copiar citação",
   "Reuse.heading": "Republicar este artigo",
   "Reuse.license": "Este artigo está licenciado sob",
   "Reuse.attribution": "A republicação exige atribuição à URL canônica.",
+  "Reuse.copy": "Copiar trecho para republicação",
   "Footnotes.heading": "Notas de rodapé",
-  "Footnotes.return": "Voltar ao texto"
+  "Footnotes.return": "Voltar ao texto",
+  "Syndicate.heading": "Republicar este artigo",
+  "Syndicate.medium": "Copiar formato para Medium",
+  "Syndicate.mastodon": "Copiar formato para Mastodon"
 }

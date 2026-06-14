@@ -17,6 +17,7 @@
   "Byline": "Autorenzeile",
   "Share": "Teilen",
   "Share.x": "Auf X teilen",
+  "Share.bluesky": "Auf Bluesky teilen",
   "Share.linkedin": "Auf LinkedIn teilen",
   "Share.facebook": "Auf Facebook teilen",
   "Share.whatsapp": "Auf WhatsApp teilen",
@@ -26,9 +27,14 @@
   "Action.listen": "Anhören",
   "Action.cite": "Zitieren",
   "Cite.heading": "Diesen Artikel zitieren",
+  "Cite.copy": "Zitation kopieren",
   "Reuse.heading": "Diesen Artikel republizieren",
   "Reuse.license": "Dieser Artikel ist lizenziert unter",
   "Reuse.attribution": "Eine Republikation erfordert Attribution zur kanonischen URL.",
+  "Reuse.copy": "Republikationsausschnitt kopieren",
   "Footnotes.heading": "Fußnoten",
-  "Footnotes.return": "Zurück zum Text"
+  "Footnotes.return": "Zurück zum Text",
+  "Syndicate.heading": "Diesen Artikel weiterveröffentlichen",
+  "Syndicate.medium": "Format für Medium kopieren",
+  "Syndicate.mastodon": "Format für Mastodon kopieren"
 }

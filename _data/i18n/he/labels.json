@@ -17,6 +17,7 @@
   "Byline": "חתימה",
   "Share": "שתפו",
   "Share.x": "שתפו ב-X",
+  "Share.bluesky": "שתף ב-Bluesky",
   "Share.linkedin": "שתפו ב-LinkedIn",
   "Share.facebook": "שתפו בפייסבוק",
   "Share.whatsapp": "שתפו בוואטסאפ",
@@ -26,9 +27,14 @@
   "Action.listen": "האזינו",
   "Action.cite": "ציטוט",
   "Cite.heading": "ציטוט הכתבה",
+  "Cite.copy": "העתק ציטוט",
   "Reuse.heading": "פרסום מחדש של הכתבה",
   "Reuse.license": "כתבה זו מפורסמת ברישיון",
   "Reuse.attribution": "פרסום מחדש מחייב ייחוס לכתובת ה-URL הקאנונית.",
+  "Reuse.copy": "העתק קטע לפרסום מחדש",
   "Footnotes.heading": "הערות שוליים",
-  "Footnotes.return": "חזרה לטקסט"
+  "Footnotes.return": "חזרה לטקסט",
+  "Syndicate.heading": "פרסם מחדש מאמר זה",
+  "Syndicate.medium": "העתק בפורמט Medium",
+  "Syndicate.mastodon": "העתק בפורמט Mastodon"
 }

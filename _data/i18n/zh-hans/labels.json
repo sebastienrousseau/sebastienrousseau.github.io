@@ -17,6 +17,7 @@
   "Byline": "署名",
   "Share": "分享",
   "Share.x": "在 X 上分享",
+  "Share.bluesky": "分享到 Bluesky",
   "Share.linkedin": "在 LinkedIn 上分享",
   "Share.facebook": "在 Facebook 上分享",
   "Share.whatsapp": "在 WhatsApp 上分享",
@@ -26,9 +27,14 @@
   "Action.listen": "收听",
   "Action.cite": "引用",
   "Cite.heading": "引用本文",
+  "Cite.copy": "复制引用",
   "Reuse.heading": "重新发布本文",
   "Reuse.license": "本文采用以下许可协议",
   "Reuse.attribution": "重新发布需注明原始 URL 出处。",
+  "Reuse.copy": "复制转载片段",
   "Footnotes.heading": "脚注",
-  "Footnotes.return": "返回正文"
+  "Footnotes.return": "返回正文",
+  "Syndicate.heading": "转载本文",
+  "Syndicate.medium": "复制 Medium 格式",
+  "Syndicate.mastodon": "复制 Mastodon 格式"
 }

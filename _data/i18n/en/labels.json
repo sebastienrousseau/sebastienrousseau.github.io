@@ -17,6 +17,7 @@
   "Byline": "Byline",
   "Share": "Share",
   "Share.x": "Share on X",
+  "Share.bluesky": "Share on Bluesky",
   "Share.linkedin": "Share on LinkedIn",
   "Share.facebook": "Share on Facebook",
   "Share.whatsapp": "Share on WhatsApp",
@@ -26,9 +27,14 @@
   "Action.listen": "Listen",
   "Action.cite": "Cite",
   "Cite.heading": "Cite this article",
+  "Cite.copy": "Copy citation",
   "Reuse.heading": "Republish this article",
   "Reuse.license": "This article is licensed under",
   "Reuse.attribution": "Republication requires attribution to the canonical URL.",
+  "Reuse.copy": "Copy republish snippet",
   "Footnotes.heading": "Footnotes",
-  "Footnotes.return": "Return to text"
+  "Footnotes.return": "Return to text",
+  "Syndicate.heading": "Cross-post this article",
+  "Syndicate.medium": "Copy formatted for Medium",
+  "Syndicate.mastodon": "Copy formatted for Mastodon"
 }

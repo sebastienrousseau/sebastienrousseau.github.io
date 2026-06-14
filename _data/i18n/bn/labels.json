@@ -17,6 +17,7 @@
   "Byline": "বাইলাইন",
   "Share": "শেয়ার করুন",
   "Share.x": "X-এ শেয়ার করুন",
+  "Share.bluesky": "Bluesky-তে শেয়ার করুন",
   "Share.linkedin": "LinkedIn-এ শেয়ার করুন",
   "Share.facebook": "Facebook-এ শেয়ার করুন",
   "Share.whatsapp": "WhatsApp-এ শেয়ার করুন",
@@ -26,9 +27,14 @@
   "Action.listen": "শুনুন",
   "Action.cite": "উদ্ধৃত করুন",
   "Cite.heading": "এই নিবন্ধটি উদ্ধৃত করুন",
+  "Cite.copy": "উদ্ধৃতি কপি করুন",
   "Reuse.heading": "এই নিবন্ধটি পুনঃপ্রকাশ করুন",
   "Reuse.license": "এই নিবন্ধটি লাইসেন্স করা হয়েছে",
   "Reuse.attribution": "পুনঃপ্রকাশনার জন্য মূল URL-এর কৃতিত্ব আবশ্যক।",
+  "Reuse.copy": "পুনঃপ্রকাশ স্নিপেট কপি করুন",
   "Footnotes.heading": "পাদটীকা",
-  "Footnotes.return": "পাঠ্যে ফিরে যান"
+  "Footnotes.return": "পাঠ্যে ফিরে যান",
+  "Syndicate.heading": "এই নিবন্ধটি ক্রস-পোস্ট করুন",
+  "Syndicate.medium": "Medium-এর জন্য ফরম্যাট কপি করুন",
+  "Syndicate.mastodon": "Mastodon-এর জন্য ফরম্যাট কপি করুন"
 }

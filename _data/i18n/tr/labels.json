@@ -17,6 +17,7 @@
   "Byline": "İmza",
   "Share": "Paylaş",
   "Share.x": "X'te paylaş",
+  "Share.bluesky": "Bluesky'da paylaş",
   "Share.linkedin": "LinkedIn'de paylaş",
   "Share.facebook": "Facebook'ta paylaş",
   "Share.whatsapp": "WhatsApp'ta paylaş",
@@ -26,9 +27,14 @@
   "Action.listen": "Dinle",
   "Action.cite": "Alıntıla",
   "Cite.heading": "Bu makaleyi alıntıla",
+  "Cite.copy": "Atfı kopyala",
   "Reuse.heading": "Bu makaleyi yeniden yayınla",
   "Reuse.license": "Bu makale şu lisans altında yayınlanmıştır",
   "Reuse.attribution": "Yeniden yayın, kanonik URL'ye atıfta bulunulmasını gerektirir.",
+  "Reuse.copy": "Yeniden yayın parçacığını kopyala",
   "Footnotes.heading": "Dipnotlar",
-  "Footnotes.return": "Metne dön"
+  "Footnotes.return": "Metne dön",
+  "Syndicate.heading": "Bu makaleyi yeniden yayınla",
+  "Syndicate.medium": "Medium için biçimi kopyala",
+  "Syndicate.mastodon": "Mastodon için biçimi kopyala"
 }

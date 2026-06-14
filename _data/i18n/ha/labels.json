@@ -17,6 +17,7 @@
   "Byline": "Sa hannu",
   "Share": "Raba",
   "Share.x": "Raba akan X",
+  "Share.bluesky": "Raba a kan Bluesky",
   "Share.linkedin": "Raba akan LinkedIn",
   "Share.facebook": "Raba akan Facebook",
   "Share.whatsapp": "Raba akan WhatsApp",
@@ -26,9 +27,14 @@
   "Action.listen": "Saurara",
   "Action.cite": "Buga",
   "Cite.heading": "Buga wannan labari",
+  "Cite.copy": "Kwafa ƙididdiga",
   "Reuse.heading": "Sake buga wannan labari",
   "Reuse.license": "An lasisin wannan labari a karkashin",
   "Reuse.attribution": "Sake bugawa na bukatar nuna asalin URL na asali.",
+  "Reuse.copy": "Kwafa guntun sake bugawa",
   "Footnotes.heading": "Bayanan kasa",
-  "Footnotes.return": "Komawa zuwa rubutu"
+  "Footnotes.return": "Komawa zuwa rubutu",
+  "Syndicate.heading": "Sake buga wannan labarin",
+  "Syndicate.medium": "Kwafa tsarin Medium",
+  "Syndicate.mastodon": "Kwafa tsarin Mastodon"
 }

@@ -17,6 +17,7 @@
   "Byline": "기명",
   "Share": "공유",
   "Share.x": "X에 공유",
+  "Share.bluesky": "Bluesky에 공유",
   "Share.linkedin": "LinkedIn에 공유",
   "Share.facebook": "Facebook에 공유",
   "Share.whatsapp": "WhatsApp에 공유",
@@ -26,9 +27,14 @@
   "Action.listen": "듣기",
   "Action.cite": "인용",
   "Cite.heading": "이 기사 인용",
+  "Cite.copy": "인용 복사",
   "Reuse.heading": "이 기사 재게시",
   "Reuse.license": "이 기사의 라이선스는",
   "Reuse.attribution": "재게시 시 정규 URL 출처 표시가 필요합니다.",
+  "Reuse.copy": "재게시 스니펫 복사",
   "Footnotes.heading": "각주",
-  "Footnotes.return": "본문으로 돌아가기"
+  "Footnotes.return": "본문으로 돌아가기",
+  "Syndicate.heading": "이 기사 재게시하기",
+  "Syndicate.medium": "Medium용 형식 복사",
+  "Syndicate.mastodon": "Mastodon용 형식 복사"
 }

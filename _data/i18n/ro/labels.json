@@ -17,6 +17,7 @@
   "Byline": "Semnătură",
   "Share": "Partajează",
   "Share.x": "Partajează pe X",
+  "Share.bluesky": "Distribuie pe Bluesky",
   "Share.linkedin": "Partajează pe LinkedIn",
   "Share.facebook": "Partajează pe Facebook",
   "Share.whatsapp": "Partajează pe WhatsApp",
@@ -26,9 +27,14 @@
   "Action.listen": "Ascultă",
   "Action.cite": "Citează",
   "Cite.heading": "Citează acest articol",
+  "Cite.copy": "Copiază citarea",
   "Reuse.heading": "Republică acest articol",
   "Reuse.license": "Acest articol este licențiat sub",
   "Reuse.attribution": "Republicarea necesită atribuirea la URL-ul canonic.",
+  "Reuse.copy": "Copiază fragmentul de republicare",
   "Footnotes.heading": "Note de subsol",
-  "Footnotes.return": "Înapoi la text"
+  "Footnotes.return": "Înapoi la text",
+  "Syndicate.heading": "Republică acest articol",
+  "Syndicate.medium": "Copiază formatul pentru Medium",
+  "Syndicate.mastodon": "Copiază formatul pentru Mastodon"
 }

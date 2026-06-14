@@ -17,6 +17,7 @@
   "Byline": "Tác giả",
   "Share": "Chia sẻ",
   "Share.x": "Chia sẻ trên X",
+  "Share.bluesky": "Chia sẻ trên Bluesky",
   "Share.linkedin": "Chia sẻ trên LinkedIn",
   "Share.facebook": "Chia sẻ trên Facebook",
   "Share.whatsapp": "Chia sẻ trên WhatsApp",
@@ -26,9 +27,14 @@
   "Action.listen": "Nghe",
   "Action.cite": "Trích dẫn",
   "Cite.heading": "Trích dẫn bài này",
+  "Cite.copy": "Sao chép trích dẫn",
   "Reuse.heading": "Đăng lại bài này",
   "Reuse.license": "Bài viết này được cấp phép theo",
   "Reuse.attribution": "Đăng lại yêu cầu ghi nguồn đến URL chính tắc.",
+  "Reuse.copy": "Sao chép đoạn trích đăng lại",
   "Footnotes.heading": "Chú thích",
-  "Footnotes.return": "Quay lại văn bản"
+  "Footnotes.return": "Quay lại văn bản",
+  "Syndicate.heading": "Đăng lại bài viết này",
+  "Syndicate.medium": "Sao chép định dạng cho Medium",
+  "Syndicate.mastodon": "Sao chép định dạng cho Mastodon"
 }

@@ -17,6 +17,7 @@
   "Byline": "Iforukọsilẹ",
   "Share": "Pin",
   "Share.x": "Pin lori X",
+  "Share.bluesky": "Pín lori Bluesky",
   "Share.linkedin": "Pin lori LinkedIn",
   "Share.facebook": "Pin lori Facebook",
   "Share.whatsapp": "Pin lori WhatsApp",
@@ -26,9 +27,14 @@
   "Action.listen": "Gbọ",
   "Action.cite": "Tọka",
   "Cite.heading": "Tọka àpilẹkọ yìí",
+  "Cite.copy": "Daakọ ìtọ́kasí",
   "Reuse.heading": "Tun àpilẹkọ yìí jade",
   "Reuse.license": "A ti fun àpilẹkọ yìí ni iwe-ẹri labẹ",
   "Reuse.attribution": "Atunjade nilo idanimọ si URL akọkọ.",
+  "Reuse.copy": "Daakọ ìpín fún àtúntẹ̀",
   "Footnotes.heading": "Awọn akọsilẹ isalẹ",
-  "Footnotes.return": "Pada si ọrọ"
+  "Footnotes.return": "Pada si ọrọ",
+  "Syndicate.heading": "Tẹ àpilẹ̀kọ yìí jáde lẹ́ẹ̀kan sí i",
+  "Syndicate.medium": "Daakọ ọ̀nà fún Medium",
+  "Syndicate.mastodon": "Daakọ ọ̀nà fún Mastodon"
 }
