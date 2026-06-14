@@ -237,6 +237,36 @@ def _card_share_rail(url: str, title: str, desc: str) -> str:
     )
 
 
+def _extract_excerpt(text: str) -> str:
+    """Return the post's excerpt or fall back to description."""
+    excerpt_m = _EXCERPT_FM_RE.search(text)
+    if excerpt_m:
+        return excerpt_m.group(1)
+    desc_m = _DESC_FM_RE.search(text)
+    return desc_m.group(1) if desc_m else ""
+
+
+def _extract_banner(text: str, title: str) -> tuple[str, str]:
+    """Return (banner_url, banner_alt) — banner_alt falls back to title."""
+    banner_m = _BANNER_FM_RE.search(text)
+    banner_alt_m = _BANNER_ALT_FM_RE.search(text)
+    banner = banner_m.group(1) if banner_m else _DEFAULT_BANNER
+    banner_alt = banner_alt_m.group(1) if banner_alt_m else title
+    return banner, banner_alt
+
+
+def _parse_raw_tags(tags_line: str) -> list[str]:
+    """Split a `tags:` frontmatter line into stripped, non-empty tag
+    strings."""
+    return [
+        t for t in (
+            raw.strip().strip('"').strip("'").strip()
+            for raw in tags_line.split(",")
+        )
+        if t
+    ]
+
+
 def _post_meta(path: Path) -> tuple[str, str, str, str, list[str], str, str] | None:
     """Return (title, iso-date, slug, excerpt, [raw tag strings],
     banner, banner_alt) or None."""
@@ -246,21 +276,12 @@ def _post_meta(path: Path) -> tuple[str, str, str, str, list[str], str, str] | N
         return None
     title_m = _TITLE_FM_RE.search(text)
     title = title_m.group(1) if title_m else path.stem
-    excerpt_m = _EXCERPT_FM_RE.search(text)
-    desc_m = _DESC_FM_RE.search(text)
-    excerpt = (
-        excerpt_m.group(1)
-        if excerpt_m
-        else (desc_m.group(1) if desc_m else "")
-    )
-    banner_m = _BANNER_FM_RE.search(text)
-    banner_alt_m = _BANNER_ALT_FM_RE.search(text)
-    banner = banner_m.group(1) if banner_m else _DEFAULT_BANNER
-    banner_alt = banner_alt_m.group(1) if banner_alt_m else title
+    excerpt = _extract_excerpt(text)
+    banner, banner_alt = _extract_banner(text, title)
     stem_m = _DATED_SLUG_RE.match(path.stem)
     iso_date = stem_m.group(1) if stem_m else ""
-    raw_tags = [t.strip().strip('"').strip("'").strip() for t in tags_m.group(1).split(",")]
-    return title, iso_date, path.stem, excerpt, [t for t in raw_tags if t], banner, banner_alt
+    raw_tags = _parse_raw_tags(tags_m.group(1))
+    return title, iso_date, path.stem, excerpt, raw_tags, banner, banner_alt
 
 
 def _canonical_set(raw_tags: list[str], amap: dict[str, str]) -> set[str]:
@@ -562,6 +583,46 @@ def _load_locale_article_slugs(lang: str) -> dict[str, str]:
     return {k: v for k, v in arts.items() if isinstance(v, str) and v}
 
 
+def _load_fr_to_en_slug_map(lang: str) -> dict[str, str]:
+    """Return ``{locale_slug: en_slug}`` from
+    ``_data/i18n/<lang>/slugs.json``. Returns {} on missing/malformed
+    file."""
+    import json
+
+    slugs_path = ROOT / "_data" / "i18n" / lang / "slugs.json"
+    if not slugs_path.is_file():
+        return {}
+    try:
+        data = json.loads(slugs_path.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return {}
+    return {
+        locale_slug: en_slug
+        for en_slug, locale_slug in (data.get("articles") or {}).items()
+        if isinstance(locale_slug, str) and locale_slug
+    }
+
+
+def _locale_post_card_fields(path: Path) -> tuple[str, str, str, str] | None:
+    """Extract (stem, title, excerpt, banner) from one locale post.
+    Returns None when the post has no `title:` frontmatter."""
+    text = path.read_text(encoding="utf-8", errors="ignore")
+    title_m = _TITLE_FM_RE.search(text)
+    if not title_m:
+        return None
+    excerpt_m = _EXCERPT_FM_RE.search(text)
+    desc_m = _DESC_FM_RE.search(text)
+    banner_m = _BANNER_FM_RE.search(text)
+    title = title_m.group(1)
+    excerpt = (
+        excerpt_m.group(1)
+        if excerpt_m
+        else (desc_m.group(1) if desc_m else "")
+    )
+    banner = banner_m.group(1) if banner_m else _DEFAULT_BANNER
+    return path.stem, title, excerpt, banner
+
+
 def _load_locale_post_index(lang: str) -> dict[str, tuple[str, str, str, str]]:
     """Return ``{en_slug: (locale_slug, locale_title, locale_excerpt,
     locale_banner)}`` for every dated post in ``_posts/<lang>/``. Same
@@ -569,38 +630,16 @@ def _load_locale_post_index(lang: str) -> dict[str, tuple[str, str, str, str]]:
     here to keep build_tag_landings importable without forcing a
     cross-module import. Posts present only in EN fall back to the
     EN card content at render time."""
-    import json
-
     src = ROOT / "_posts" / lang
     if not src.is_dir():
         return {}
-    fr_to_en: dict[str, str] = {}
-    slugs_path = ROOT / "_data" / "i18n" / lang / "slugs.json"
-    if slugs_path.is_file():
-        try:
-            data = json.loads(slugs_path.read_text(encoding="utf-8"))
-            for en_slug, locale_slug in (data.get("articles") or {}).items():
-                if isinstance(locale_slug, str) and locale_slug:
-                    fr_to_en[locale_slug] = en_slug
-        except (OSError, ValueError):
-            pass
+    fr_to_en = _load_fr_to_en_slug_map(lang)
     out: dict[str, tuple[str, str, str, str]] = {}
     for path in sorted(src.glob("*.md")):
-        stem = path.stem
-        text = path.read_text(encoding="utf-8", errors="ignore")
-        title_m = _TITLE_FM_RE.search(text)
-        excerpt_m = _EXCERPT_FM_RE.search(text)
-        desc_m = _DESC_FM_RE.search(text)
-        banner_m = _BANNER_FM_RE.search(text)
-        if not title_m:
+        fields = _locale_post_card_fields(path)
+        if fields is None:
             continue
-        title = title_m.group(1)
-        excerpt = (
-            excerpt_m.group(1)
-            if excerpt_m
-            else (desc_m.group(1) if desc_m else "")
-        )
-        banner = banner_m.group(1) if banner_m else _DEFAULT_BANNER
+        stem, title, excerpt, banner = fields
         en_slug = fr_to_en.get(stem, stem)
         out[en_slug] = (stem, title, excerpt, banner)
     return out
