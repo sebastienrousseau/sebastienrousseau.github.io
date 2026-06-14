@@ -122,6 +122,15 @@ document.addEventListener("change", function (event) {
     if (!target || target.tagName !== "SELECT") return;
     var which = target.getAttribute("data-filter-target");
     if (!which) return;
+    // Navigate-mode selects (e.g. Year on the paged listing) jump to a
+    // dedicated archive URL instead of mutating filter attributes —
+    // see _render_filter_form() for why.
+    if (target.getAttribute("data-filter-mode") === "navigate") {
+        var base = target.getAttribute("data-navigate-base") || "/articles";
+        var v = target.value;
+        window.location.href = v ? base + "/" + v + "/" : base + "/";
+        return;
+    }
     var list = document.querySelector(".tag-landing-list");
     if (!list) return;
     if (target.value) {

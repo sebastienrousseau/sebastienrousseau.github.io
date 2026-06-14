@@ -432,14 +432,17 @@ def _translate_chrome_for(lang: str, html: str) -> str:
     """Run the EN shell through ``build_translations.translate_chrome``
     bound to ``lang`` — translates nav, footer, search labels, aria
     attributes, language menu, dates. Keeps the body content (which
-    is generator-emitted EN text) untouched. Falls back to the
-    untranslated HTML on any import error so the build still emits
-    something usable."""
-    try:
-        from scripts.generators.build_translations import _state as _bt_state
-        from scripts.generators.build_translations._chrome import translate_chrome
-    except Exception:
-        return html
+    is generator-emitted EN text) untouched. Raises ``RuntimeError`` if
+    the package isn't importable so silent EN-chrome leaks don't ship."""
+    # Ensure repo root is on sys.path even when this module is invoked
+    # as a script (`python3 scripts/generators/build_tag_landings.py`) —
+    # otherwise the `scripts.generators...` package path won't resolve
+    # and the import would have to fall back to untranslated chrome.
+    import sys as _sys
+    if str(ROOT) not in _sys.path:
+        _sys.path.insert(0, str(ROOT))
+    from scripts.generators.build_translations import _state as _bt_state
+    from scripts.generators.build_translations._chrome import translate_chrome
     _bt_state.bind_lang(lang)
     return translate_chrome(html)
 

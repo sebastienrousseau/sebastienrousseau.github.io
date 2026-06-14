@@ -199,6 +199,7 @@ def _render_card(
 def _render_filter_form(
     pillar_options: list[tuple[str, str]],
     year_options: list[str],
+    nav_base: str = "/articles",
 ) -> str:
     """Two native <select>s + an empty-state region. main.js wires the
     `change` event to update data-filter-* attributes on the list."""
@@ -213,13 +214,23 @@ def _render_filter_form(
     # target (selects fire JS change events that mutate the list's
     # data attributes), and a form-without-submit-button trips
     # WCAG H32.2 AAA. The role keeps SR announcement as "search".
+    #
+    # The Year selector navigates rather than filtering in place: the
+    # paged listing only shows the current page's 24 cards, so a
+    # client-side year filter on page 1 would always miss the corpus's
+    # older articles. `data-filter-mode="navigate"` tells main.js to
+    # jump to `<nav_base>/<year>/` (the dedicated year archive) instead
+    # of mutating data-filter-year. Category stays client-side because
+    # categories are mixed across years on every page.
     return (
         '<div class="listing-filters" role="search" aria-label="Filter articles">'
         '<label>Category'
         f'<select data-filter-target="category" name="category">{pillar_opts}</select>'
         '</label>'
         '<label>Year'
-        f'<select data-filter-target="year" name="year">{year_opts}</select>'
+        f'<select data-filter-target="year" data-filter-mode="navigate" '
+        f'data-navigate-base="{nav_base}" '
+        f'name="year">{year_opts}</select>'
         '</label>'
         '</div>'
     )
@@ -277,11 +288,11 @@ def _render_listing_body(
     cards = "".join(_render_card(*p) for p in page_posts)
     pagination = _render_pagination(page, total_pages, base_path)
     pillar_options = [(p, PILLAR_LABELS[p]) for p in PILLAR_ORDER]
-    filter_form = _render_filter_form(pillar_options, all_years)
+    filter_form = _render_filter_form(pillar_options, all_years, nav_base=base_path)
     return (
         f'<div class="wrap report-wrap">'
         f'<header class="tag-landing-hero">'
-        f'<p class="eyebrow">ARCHIVE</p>'
+        f'<p class="eyebrow">FEED</p>'
         f"<h1>{_esc(title)}</h1>"
         f'<p class="tag-landing-meta">{page_label} · '
         f'<span id="listing-count">{len(page_posts)}</span> visible</p>'
@@ -349,12 +360,17 @@ def _translate_chrome_for(lang: str, html: str) -> str:
     """Apply build_translations.translate_chrome bound to ``lang`` —
     translates nav, footer, search labels, aria attributes, language
     menu, dates. Body content (which we emit ourselves) is left alone.
-    Falls back to the untranslated HTML on import error."""
-    try:
-        from scripts.generators.build_translations import _state as _bt_state
-        from scripts.generators.build_translations._chrome import translate_chrome
-    except Exception:
-        return html
+    Raises ``RuntimeError`` if the package isn't importable so silent
+    EN-chrome leaks don't ship."""
+    # Ensure repo root is on sys.path even when this module is invoked
+    # as a script (`python3 scripts/generators/build_listings.py`) —
+    # otherwise the `scripts.generators...` package path won't resolve
+    # and the import would have to fall back to untranslated chrome.
+    import sys as _sys
+    if str(ROOT) not in _sys.path:
+        _sys.path.insert(0, str(ROOT))
+    from scripts.generators.build_translations import _state as _bt_state
+    from scripts.generators.build_translations._chrome import translate_chrome
     _bt_state.bind_lang(lang)
     return translate_chrome(html)
 
@@ -408,22 +424,58 @@ def _group_by_year(
     return groups
 
 
+def _render_year_filter_form(
+    pillar_options: list[tuple[str, str]],
+    year_options: list[str],
+    current_year: str,
+    nav_base: str = "/articles",
+) -> str:
+    """Filter form for year archives. Year select defaults to the
+    current archive's year and exposes "All articles" as the way out —
+    picking it navigates back to ``<nav_base>/``."""
+    pillar_opts = '<option value="">All categories</option>' + "".join(
+        f'<option value="{slug}">{_esc(label)}</option>'
+        for slug, label in pillar_options
+    )
+    year_opts = '<option value="">All years</option>' + "".join(
+        f'<option value="{y}"{" selected" if y == current_year else ""}>{y}</option>'
+        for y in year_options
+    )
+    return (
+        '<div class="listing-filters" role="search" aria-label="Filter articles">'
+        '<label>Category'
+        f'<select data-filter-target="category" name="category">{pillar_opts}</select>'
+        '</label>'
+        '<label>Year'
+        f'<select data-filter-target="year" data-filter-mode="navigate" '
+        f'data-navigate-base="{nav_base}" '
+        f'name="year">{year_opts}</select>'
+        '</label>'
+        '</div>'
+    )
+
+
 def _render_year_body(
     year: str,
     posts_for_year: list[tuple[str, str, str, str, list[str]]],
+    all_years: list[str],
 ) -> str:
     cards = "".join(_render_card(*p) for p in posts_for_year)
     n = len(posts_for_year)
+    pillar_options = [(p, PILLAR_LABELS[p]) for p in PILLAR_ORDER]
+    filter_form = _render_year_filter_form(pillar_options, all_years, year)
     return (
         f'<div class="wrap report-wrap">'
         f'<header class="tag-landing-hero">'
-        f'<p class="eyebrow">ARCHIVE</p>'
+        f'<p class="eyebrow"><a href="/articles/">&larr; All articles</a></p>'
         f"<h1>Articles — {year}</h1>"
         f'<p class="tag-landing-meta">{n} article{"s" if n != 1 else ""}</p>'
         f"</header>"
+        f"{filter_form}"
         f'<section class="tag-landing-list" aria-label="Articles published in {year}">'
         f"{cards}"
         f"</section>"
+        f'<p class="listing-empty" role="status">No articles match the current filters.</p>'
         f"</div>"
     )
 
@@ -433,6 +485,7 @@ def _write_year_archives(
     posts: list[tuple[str, str, str, str, list[str]]],
 ) -> tuple[int, int]:
     by_year = _group_by_year(posts)
+    all_years = sorted(by_year.keys(), reverse=True)
     en_pages: list[tuple[str, str]] = []
     for year, year_posts in sorted(by_year.items(), reverse=True):
         canonical = f"{_BASE_URL}/articles/{year}/"
@@ -444,7 +497,9 @@ def _write_year_archives(
         )
         out = _swap_head(template, title, desc, canonical)
         out = _AP_HERO_BLOCK_RE.sub("", out, count=1)
-        out = _MAIN_RE.sub(rf"\1{_render_year_body(year, year_posts)}\3", out, count=1)
+        out = _MAIN_RE.sub(
+            rf"\1{_render_year_body(year, year_posts, all_years)}\3", out, count=1
+        )
         out_path = PUBLIC / "articles" / year / "index.html"
         out_path.parent.mkdir(parents=True, exist_ok=True)
         out_path.write_text(out, encoding="utf-8")
