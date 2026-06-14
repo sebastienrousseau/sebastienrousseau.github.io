@@ -488,39 +488,30 @@ def _write_locale_landings(
     return written
 
 
-def _render_category_body(
-    pillar: str,
-    taxonomy: dict,
-    posts: dict[str, list[tuple[str, str, str, str]]],
+def _render_category_tag_item(
+    slug: str,
+    entry: dict,
+    n: int,
 ) -> str:
-    """Render the body of a /categories/<pillar>/ landing — a hero
-    with the pillar deck, the canonical tags belonging to the pillar
-    (each linked to /tags/<slug>/, with article count), and a
-    "recent across this pillar" card list."""
-    pillar_slugs = [
-        slug for slug, e in taxonomy.items() if e.get("category") == pillar
-    ]
-    pillar_slugs.sort(key=lambda s: -len(posts.get(s, [])))
-    tag_items = []
-    for slug in pillar_slugs:
-        n = len(posts.get(slug, []))
-        if n < 1:
-            continue
-        entry = taxonomy[slug]
-        meta = (
-            f' <span class="meta">— {n} article{"s" if n != 1 else ""}</span>'
-        )
-        head = f'<strong>{_esc(entry["name"])}</strong>{meta}'
-        # Tags below the landing threshold are listed (with count + deck)
-        # but not linked — their `/tags/<slug>/` page is not emitted, so
-        # the link would 404 and fail audit_links --strict-internal.
-        if n >= _LANDING_THRESHOLD:
-            head = f'<a href="/tags/{slug}/">{head}</a>'
-        tag_items.append(
-            f"<li>{head}<p>{_esc(entry['description'].strip())}</p></li>"
-        )
-    # Cross-pillar recent posts: collect unique recent posts that
-    # touch any canonical in this pillar, dedupe by slug, newest first.
+    """One ``<li>`` for the category page's tag list.
+
+    Tags below the landing threshold are listed (with count + deck) but
+    not linked — their ``/tags/<slug>/`` page is not emitted, so a link
+    would 404 and fail audit_links --strict-internal."""
+    meta = f' <span class="meta">— {n} article{"s" if n != 1 else ""}</span>'
+    head = f'<strong>{_esc(entry["name"])}</strong>{meta}'
+    if n >= _LANDING_THRESHOLD:
+        head = f'<a href="/tags/{slug}/">{head}</a>'
+    return f"<li>{head}<p>{_esc(entry['description'].strip())}</p></li>"
+
+
+def _category_recent_posts(
+    pillar_slugs: list[str],
+    posts: dict[str, list[tuple[str, str, str, str]]],
+    n: int = 12,
+) -> list[tuple[str, str, str, str]]:
+    """Collect recent posts across every canonical in the pillar,
+    dedupe by slug, return the newest ``n``."""
     seen: set[str] = set()
     recent: list[tuple[str, str, str, str]] = []
     for slug in pillar_slugs:
@@ -530,7 +521,28 @@ def _render_category_body(
             seen.add(entry[2])
             recent.append(entry)
     recent.sort(key=lambda p: p[1] or "0000", reverse=True)
-    recent = recent[:12]
+    return recent[:n]
+
+
+def _render_category_body(
+    pillar: str,
+    taxonomy: dict,
+    posts: dict[str, list[tuple[str, str, str, str]]],
+) -> str:
+    """Render the body of a /categories/<pillar>/ landing — a hero
+    with the pillar deck, the canonical tags belonging to the pillar
+    (each linked to /tags/<slug>/ when landing-eligible, with article
+    count), and a "recent across this pillar" card list."""
+    pillar_slugs = [
+        slug for slug, e in taxonomy.items() if e.get("category") == pillar
+    ]
+    pillar_slugs.sort(key=lambda s: -len(posts.get(s, [])))
+    tag_items = [
+        _render_category_tag_item(slug, taxonomy[slug], len(posts.get(slug, [])))
+        for slug in pillar_slugs
+        if len(posts.get(slug, [])) >= 1
+    ]
+    recent = _category_recent_posts(pillar_slugs, posts)
     return (
         f'<div class="wrap report-wrap">'
         f'<header class="tag-landing-hero">'

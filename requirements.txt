@@ -5,3 +5,7 @@
 markdown-it-py>=3,<4
 rjsmin>=1.2,<2
 rcssmin>=1.2,<2
+# Canonical taxonomy (_data/taxonomy.yml) drives build_tags + the per-tag
+# landings, paged listings, RAG corpus, and the editorial check_taxonomy
+# audit. PyYAML is the only YAML parser these generators need.
+PyYAML>=6,<7
