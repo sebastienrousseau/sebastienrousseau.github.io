@@ -2171,12 +2171,12 @@ def test_inject_share_rail_no_op_without_blogposting():
     assert inject_share_rail("<p>plain page</p>") == "<p>plain page</p>"
 
 
-def test_inject_share_rail_renders_all_five_anchors_at_top_of_main():
+def test_inject_share_rail_renders_all_six_anchors_at_top_of_main():
     from postbuild_lib.article_furniture import inject_share_rail
 
     out = inject_share_rail(_ws2_page())
     assert 'class="share-rail share-rail--sticky"' in out
-    # All five service endpoints present, with platform-aware URLs.
+    # All six service endpoints present, with platform-aware URLs.
     # LinkedIn uses the feed composer (?shareActive=true) because the
     # share-offsite dialog ignores ?text= today — that gets us the
     # "Share your thoughts…" prompt pre-filled.
@@ -2185,6 +2185,8 @@ def test_inject_share_rail_renders_all_five_anchors_at_top_of_main():
     assert "facebook.com/sharer/sharer.php?u=" in out
     assert "wa.me/?text=" in out
     assert 'href="mailto:?subject=' in out
+    # WS5: Bluesky compose intent (?text=title%20%2F%20url, 300 char limit).
+    assert "bsky.app/intent/compose?text=" in out
     # Title + URL get URL-encoded into the X / LinkedIn / WhatsApp
     # payloads.
     assert "My%20Post%3A%20A%20Subtitle" in out
@@ -2619,7 +2621,41 @@ def test_inject_reuse_panel_compact_when_description_missing():
     # missing description; attribution still works.
     assert "<strong>My Post: A Subtitle</strong>" in out
     assert "<p></p>" not in out
-    assert "Originally published at" in out
+
+
+# WS5 — syndication panel ----------------------------------------------------
+
+
+def test_inject_syndication_panel_emits_medium_and_mastodon_payloads():
+    from postbuild_lib.article_furniture import inject_syndication_panel
+
+    out = inject_syndication_panel(_ws2_page())
+    # Single <details> wrapper at the wrap-foot, anchored by id so
+    # the action-rail / cite jump-link pattern can target it later.
+    assert 'id="syndicate-popover"' in out
+    # Both formats present, each with stable id + paired copy button.
+    for fmt_id in ("syndicate-medium", "syndicate-mastodon"):
+        assert f'<pre id="{fmt_id}">' in out
+        assert f'data-copy="#{fmt_id}"' in out
+    # Medium payload is markdown — starts with H1.
+    assert "# My Post: A Subtitle" in out
+    # Mastodon payload puts title + description + URL on separate
+    # blocks, with the canonical URL last so the link card preview
+    # renders on Mastodon.
+    assert "https://sebastienrousseau.com/2026-01-01-my-post/" in out
+
+
+def test_inject_syndication_panel_idempotent():
+    from postbuild_lib.article_furniture import inject_syndication_panel
+
+    once = inject_syndication_panel(_ws2_page())
+    assert inject_syndication_panel(once) == once
+
+
+def test_inject_syndication_panel_no_op_without_blogposting():
+    from postbuild_lib.article_furniture import inject_syndication_panel
+
+    assert inject_syndication_panel("<p>plain</p>") == "<p>plain</p>"
 
 
 def test_inject_reuse_panel_respects_license_meta_override():

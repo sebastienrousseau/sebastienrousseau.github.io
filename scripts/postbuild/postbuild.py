@@ -816,6 +816,7 @@ from postbuild_lib.article_furniture import (  # noqa: F401 — re-exports
     inject_sigstore_attestation,
     inject_sources_list,
     inject_speculation_rules,
+    inject_syndication_panel,
     inject_table_labels,
     slugify,
     strip_duplicate_body_h1,
@@ -916,6 +917,7 @@ class _PostbuildCounters:
         "softwaresourcecode_patched",
         "sources_patched",
         "sri_patched",
+        "syndicate_panels_set",
         "tables_carded",
         "techarticle_patched",
         "theme_inlined",
@@ -1138,7 +1140,8 @@ def _apply_article_passes(html: str, page: Path, ctr: _PostbuildCounters) -> str
     out = _bump(inject_action_rail, out, ctr, "action_rails_set")
     # Wrap-foot stack — order matters: each _WRAP_CLOSE_RE.sub inserts
     # BEFORE </div></main>, so the LAST pass ends up closest to it.
-    # We want: cite (top) → reuse → byline (bottom).
+    # We want: syndicate (top) → cite → reuse → byline (bottom).
+    out = _bump(inject_syndication_panel, out, ctr, "syndicate_panels_set")
     out = _bump(inject_cite_popover, out, ctr, "cite_panels_set")
     out = _bump(inject_reuse_panel, out, ctr, "reuse_panels_set")
     out = _bump(inject_byline_strap, out, ctr, "byline_straps_set")
@@ -1478,6 +1481,7 @@ def main() -> None:
         f"{c.pullquotes_set} got pull-quotes, "
         f"{c.footnotes_set} got footnotes, "
         f"{c.share_rails_set} got share rail, "
+        f"{c.syndicate_panels_set} got syndicate panel, "
         f"{c.action_rails_set} got action rail, "
         f"{c.cite_panels_set} got cite popover, "
         f"{c.reuse_panels_set} got reuse panel, "

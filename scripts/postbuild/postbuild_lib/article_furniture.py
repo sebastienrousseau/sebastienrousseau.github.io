@@ -598,6 +598,27 @@ _SVG_EMAIL = (
     '<path d="M2 3h12c.55 0 1 .45 1 1v8c0 .55-.45 1-1 1H2c-.55 0-1-.45-1-1V4c0-.55.45-1 1-1zm6 5.'
     '18L13.18 4H2.82L8 8.18zM2 5.46V12h12V5.46L8 9.5 2 5.46z"/></svg>'
 )
+_SVG_BLUESKY = (
+    '<svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">'
+    '<path d="M3.2 2.5c1.5.6 3.2 1.9 4.3 4.3c.3.7.6 1.5.8 2.1c.2-.7.5-1.4.8-2.1c1.1-2.4 2.8-3.7 4.3-4.3'
+    'c1.7-.7 2.5.2 2.5 2.6c0 1.4-.5 4.2-.8 5.1c-.4 1.2-1.4 1.5-2.4 1.4c1.6.3 2 1.2 1 2.1c-1.9 1.7-2.7-.4-2.9'
+    '-.9c0-.1-.1-.1-.1-.1c-.1 0-.1.1-.2.1c-.2.5-1.1 2.6-3 .9c-1-.9-.6-1.8 1-2.1c-1.1.1-2-.2-2.4-1.4c-.3'
+    '-.9-.8-3.7-.8-5.1c0-2.4.8-3.3 2.5-2.6z"/></svg>'
+)
+_SVG_MASTODON = (
+    '<svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">'
+    '<path d="M14.5 3.6c-.6-1-1.8-1.7-3.2-1.9C9 1.4 6.9 1.4 4.7 1.7c-1.4.2-2.6 1-3.2 1.9C.9 4.5.6 5.8.6 7.2'
+    'v3.4c0 1.6 1 3 2.4 3.3l5.2.6V13c-.9 0-1.7-.2-2.4-.6c-1.1-.6-1.7-1.7-1.9-2.9l-.1-.5c.8.4 1.7.6 2.6.6c.5 0 '
+    '1-.1 1.4-.2c.5-.1.9-.3 1.3-.5v2.4h.7v-3.6c0-.7-.5-1.3-1.2-1.3c-.4 0-.7.2-.9.4l-.4.7l-.4-.7c-.2-.2-.5-.4'
+    '-.9-.4c-.7 0-1.2.6-1.2 1.3v3.6h.7V8.6c.4.2.8.4 1.3.5c.4.1.9.2 1.4.2c.9 0 1.8-.2 2.6-.6l-.1.5c-.2 1.2-.8'
+    ' 2.3-1.9 2.9c-.7.4-1.5.6-2.4.6v1.5l5.2-.6c1.4-.3 2.4-1.7 2.4-3.3V7.2c0-1.4-.3-2.7-.9-3.6z"/></svg>'
+)
+_SVG_MEDIUM = (
+    '<svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">'
+    '<path d="M1.5 3.5c0-.2-.1-.4-.2-.5L.5 2.2v-.2h2.7l2.1 4.7L7.2 2h2.6v.2l-.8.8c-.1.1-.1.2-.1.3v6.4'
+    'c0 .1 0 .2.1.3l.8.8v.2H6v-.2l.8-.8c.1-.1.1-.1.1-.3V4.6L4.7 11h-.3L2 4.6v4.4c0 .2.1.5.2.6l1 1.3v.2'
+    'H.2v-.2l1.1-1.3c.1-.2.2-.4.2-.6V3.5z"/></svg>'
+)
 
 
 def inject_eyebrow(html: str) -> str:
@@ -741,16 +762,101 @@ def _share_rail_items(payload: dict[str, str], labels: dict[str, str]) -> str:
             labels.get("Share.email", "Share by email"),
             _SVG_EMAIL,
         )
+        + _share_li(
+            # Bluesky's compose intent accepts ?text= with title+URL —
+            # 300 char post limit so we send title + URL like X.
+            f"https://bsky.app/intent/compose?text={_url_quote(x_text, safe='')}",
+            labels.get("Share.bluesky", "Share on Bluesky"),
+            _SVG_BLUESKY,
+        )
     )
+
+
+def _syndication_payloads(payload: dict[str, str]) -> dict[str, str]:
+    """Return pre-formatted text payloads for platforms that don't
+    accept ?text= compose intents — Medium (markdown import), Mastodon
+    (no universal share URL across instances). The reader copies and
+    pastes into the platform of their choice."""
+    url, title, desc = payload["url"], payload["title"], payload["desc"]
+    # Medium import-style markdown — Medium's web importer reads the
+    # first H1 + body. The canonical link goes at the top so the
+    # Medium copy preserves the canonical URL.
+    medium_md = "\n\n".join(
+        p
+        for p in (
+            f"# {title}",
+            f"> Originally published at [{url}]({url})",
+            desc,
+            f"Read the full article on sebastienrousseau.com: {url}",
+        )
+        if p
+    )
+    # Mastodon toot — 500 char limit on mastodon.social. Title +
+    # truncated description + URL.
+    desc_trunc = desc[:300].rstrip()
+    if len(desc) > 300:
+        desc_trunc += "…"
+    mastodon = "\n\n".join(p for p in (title, desc_trunc, url) if p)
+    return {"medium": medium_md, "mastodon": mastodon}
+
+
+def _render_syndication_panel(payload: dict[str, str], labels: dict[str, str]) -> str:
+    """Inline collapsible at the article foot with copy buttons for
+    Medium + Mastodon. Each pre block has a stable id so main.js's
+    existing [data-copy] handler wires the clipboard."""
+    payloads = _syndication_payloads(payload)
+    blocks = []
+    label_map = {
+        "medium": labels.get("Syndicate.medium", "Format for Medium"),
+        "mastodon": labels.get("Syndicate.mastodon", "Format for Mastodon"),
+    }
+    copy_label = _esc(labels.get("Cite.copy", "Copy"))
+    for key, body in payloads.items():
+        target_id = f"syndicate-{key}"
+        blocks.append(
+            f'<div class="cite-format">'
+            f"<h3>{_esc(label_map[key])}</h3>"
+            f'<pre id="{target_id}">{_esc(body)}</pre>'
+            f'<button type="button" class="copy-btn" data-copy="#{target_id}" '
+            f'aria-label="{_esc(label_map[key], quote=True)} — {copy_label}">'
+            f"{copy_label}</button>"
+            f"</div>"
+        )
+    heading = _esc(labels.get("Syndicate.heading", "Syndicate this article"))
+    return (
+        f'<details class="cite-popover" id="syndicate-popover">'
+        f"<summary>{heading}</summary>"
+        + "".join(blocks)
+        + "</details>"
+    )
+
+
+def inject_syndication_panel(html: str) -> str:
+    """Append a syndication payload panel at the wrap-div close —
+    pre-formatted blocks for Medium import + Mastodon, each with a
+    copy button. Bluesky has a compose-intent URL so it joins the
+    share rail directly; Medium and Mastodon have no universal share
+    URL so the panel is the only path. BlogPosting pages only;
+    idempotent."""
+    if '"@type":"BlogPosting"' not in html:
+        return html
+    if 'id="syndicate-popover"' in html:
+        return html
+    payload = _share_payload(html)
+    if payload is None:
+        return html
+    panel = _render_syndication_panel(payload, _labels(html))
+    return _WRAP_CLOSE_RE.sub(panel + r"\1", html, count=1)
 
 
 def inject_share_rail(html: str) -> str:
     """Render an FT-style vertical share rail (X / LinkedIn / Facebook
-    / WhatsApp / email) at the top of the article body. CSS makes it
-    ``position: sticky`` on >=64em and flows it inline on mobile.
-    Anchors only — no inline JavaScript, CSP-safe. The clipboard
-    'copy link' button + cross-post payload generators land later in
-    WS5. BlogPosting pages only; idempotent."""
+    / WhatsApp / email / Bluesky) at the top of the article body. CSS
+    makes it ``position: sticky`` on >=64em and flows it inline on
+    mobile. Anchors only — no inline JavaScript, CSP-safe.
+    Medium / Mastodon payloads ship via inject_syndication_panel at
+    the wrap-div close (no universal share URL). BlogPosting pages
+    only; idempotent."""
     if '"@type":"BlogPosting"' not in html:
         return html
     if 'class="share-rail share-rail--sticky"' in html:
