@@ -1,0 +1,43 @@
+# Fly.io app config for the WeasyPrint PDF render service.
+#
+# Deploy: `fly launch --copy-config --name pdf-render --org personal`
+# (or `fly deploy` once the app already exists).
+#
+# Free tier: 3 shared-cpu-1x machines x 256 MB RAM, auto-stop when
+# idle for 5 min, auto-start on inbound request. First render after
+# idle warms the machine (~600ms cold start + ~1s render). Repeats
+# hit the Cloudflare Edge cache (Cache-Control: immutable, 24 h)
+# and never touch this service.
+#
+# Region: lhr (London, closest to Sebastien). Add more regions only
+# if the carbon budget for each new machine is worth the latency
+# saving — usually it isn't, since the Edge cache dominates.
+
+app = "pdf-render"
+primary_region = "lhr"
+
+[build]
+  dockerfile = "Dockerfile"
+
+[env]
+  ORIGIN_BASE = "https://sebastienrousseau.com"
+  PORT = "8080"
+
+[http_service]
+  internal_port = 8080
+  force_https = true
+  auto_stop_machines = "stop"
+  auto_start_machines = true
+  min_machines_running = 0  # free-tier — wake on demand
+  processes = ["app"]
+
+  [[http_service.checks]]
+    interval = "30s"
+    timeout = "5s"
+    grace_period = "20s"
+    method = "GET"
+    path = "/healthz"
+
+[[vm]]
+  size = "shared-cpu-1x"
+  memory = "256mb"

@@ -87,6 +87,24 @@ test('MCP /mcp/v1/list_resources short-circuits locale routing', async () => {
   }
 });
 
+test('PDF /api/pdf/<slug>.pdf short-circuits locale routing', async () => {
+  const realF = globalThis.fetch;
+  globalThis.fetch = async (input) => {
+    const url = typeof input === 'string' ? input : input.url;
+    if (url.includes('/render?slug=')) {
+      return new Response(new Uint8Array([0x25, 0x50, 0x44, 0x46]), { status: 200 });
+    }
+    return new Response('', { status: 502 });
+  };
+  try {
+    const res = await callHandler(new Request('https://sebastienrousseau.com/api/pdf/2026-06-08-banking-resilience-index.pdf'));
+    assert.equal(res.status, 200);
+    assert.equal(res.headers.get('Content-Type'), 'application/pdf');
+  } finally {
+    globalThis.fetch = realF;
+  }
+});
+
 // ---------------------------------------------------------------------------
 // isPageNavigation
 // ---------------------------------------------------------------------------

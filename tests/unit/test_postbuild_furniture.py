@@ -169,12 +169,16 @@ def test_render_tag_badges_empty_returns_empty_string():
     assert _render_tag_badges([], LABELS_EN) == ""
 
 
-def test_render_tag_badges_en_links_to_per_tag_landings():
+def test_render_tag_badges_en_links_to_per_tag_landings(monkeypatch):
+    from postbuild_lib import article_furniture as af
     from postbuild_lib.article_furniture import LABELS_EN, _render_tag_badges
 
     # WS3: tag chips now point at the new per-tag landing pages
     # (/tags/<slug>/) instead of the legacy /tags/index.html#h3-…
-    # anchor on the retired monolith.
+    # anchor on the retired monolith. The _has_landing gate skips the
+    # link wrapper for sub-threshold tags (no landing on disk); pretend
+    # every tag has a landing so we exercise the link-emission path.
+    monkeypatch.setattr(af, "_has_landing", lambda slug, lang="en": True)
     out = _render_tag_badges(["quantum", "ISO 20022"], LABELS_EN, lang="en")
     assert '<a href="/tags/quantum/"' in out
     assert '<a href="/tags/iso-20022/"' in out
@@ -182,21 +186,39 @@ def test_render_tag_badges_en_links_to_per_tag_landings():
     assert 'aria-label="Topics"' in out
 
 
-def test_render_tag_badges_fr_uses_etiquettes_prefix():
+def test_render_tag_badges_fr_uses_etiquettes_prefix(monkeypatch):
+    from postbuild_lib import article_furniture as af
     from postbuild_lib.article_furniture import LABELS_FR, _render_tag_badges
 
+    monkeypatch.setattr(af, "_has_landing", lambda slug, lang="en": True)
     out = _render_tag_badges(["quantique"], LABELS_FR, lang="fr")
     assert '<a href="/fr/etiquettes/quantique/"' in out
 
 
-def test_render_tag_badges_ja_uses_tagu_prefix():
+def test_render_tag_badges_ja_uses_tagu_prefix(monkeypatch):
     """Spot-check a CJK locale to confirm the localised tags-path map
     covers the full hreflang chain, not just FR."""
+    from postbuild_lib import article_furniture as af
     from postbuild_lib.article_furniture import _render_tag_badges
 
+    monkeypatch.setattr(af, "_has_landing", lambda slug, lang="en": True)
     labels = {"Topics": "トピック"}
     out = _render_tag_badges(["AI"], labels, lang="ja")
     assert '<a href="/ja/tagu/ai/"' in out
+
+
+def test_render_tag_badges_falls_back_to_span_when_no_landing(monkeypatch):
+    """Sub-threshold canonicals (< 3 posts) + non-canonical raw aliases
+    have no landing page emitted by build_tag_landings. Linking to
+    /tags/<slug>/ would 404 the strict-internal audit, so the chip
+    renders as plain <span> instead."""
+    from postbuild_lib import article_furniture as af
+    from postbuild_lib.article_furniture import LABELS_EN, _render_tag_badges
+
+    monkeypatch.setattr(af, "_has_landing", lambda slug, lang="en": False)
+    out = _render_tag_badges(["KyberLib"], LABELS_EN, lang="en")
+    assert '<span class="article-tag">KyberLib</span>' in out
+    assert "<a " not in out
 
 
 def test_render_meta_bar_includes_author_and_dates():
@@ -2470,9 +2492,13 @@ def test_inject_action_rail_renders_save_pdf_and_cite_buttons_at_top_of_main():
 
     out = inject_action_rail(_ws2_page())
     assert 'class="action-rail action-rail--sticky"' in out
-    # Save PDF is a <button data-print> — main.js delegates to
-    # window.print() so the @media print stylesheet drives output.
-    assert "<button type=\"button\" data-print>" in out
+    # Save PDF is an anchor to /api/pdf/<slug>.pdf — the lang-router
+    # Worker forwards to the Fly.io WeasyPrint service. main.js HEAD-
+    # probes the route and falls back to window.print() if 503.
+    assert 'href="/api/pdf/2026-01-01-my-post.pdf"' in out
+    assert 'download="2026-01-01-my-post.pdf"' in out
+    assert 'data-print-fallback' in out
+    assert 'type="application/pdf"' in out
     # Cite anchors to the popover injected later in the pipeline.
     assert 'href="#cite-popover"' in out
     # Listen is intentionally absent until Phase 2 TTS ships.
@@ -2492,8 +2518,8 @@ def test_inject_action_rail_idempotent():
 def test_inject_action_rail_no_op_when_canonical_missing():
     from postbuild_lib.article_furniture import inject_action_rail
 
-    # Save PDF is a data-print <button>; the canonical is still required
-    # as the BlogPosting gate signal — no canonical → no rail.
+    # Save PDF needs the slug parsed from the canonical URL to point at
+    # /api/pdf/<slug>.pdf; no canonical → no slug → no rail.
     head = _WS2_HEAD.replace(
         '<link rel="canonical" href="https://sebastienrousseau.com/2026-01-01-my-post/">',
         "",

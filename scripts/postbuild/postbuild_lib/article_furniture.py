@@ -279,21 +279,39 @@ _TAGS_PATH_BY_LANG: dict[str, str] = {
 }
 
 
+_LANDING_PUBLIC = Path(__file__).resolve().parents[3] / "public"
+
+
+def _has_landing(slug: str, lang: str = "en") -> bool:
+    """True iff ``public/<locale-tags-prefix>/<slug>/index.html`` exists
+    on disk. Built by build_tag_landings.py only for canonical tags with
+    at least ``_LANDING_THRESHOLD`` posts (currently 3), so this lets the
+    chip strip skip the link wrapper for sub-threshold tags rather than
+    emitting a /tags/<slug>/ link that would 404 the strict-internal
+    link audit."""
+    prefix = _TAGS_PATH_BY_LANG.get(lang, "/tags").lstrip("/")
+    return (_LANDING_PUBLIC / prefix / slug / "index.html").is_file()
+
+
 def _render_tag_badges(keywords: list[str], labels: dict[str, str], lang: str = "en") -> str:
-    """Render the hero tag-chip strip. Links point at the new per-tag
-    landings ``/<locale-tags>/<slug>/`` (WS3) rather than the legacy
-    ``/tags/index.html#h3-<slug>`` anchor on the retired monolith.
-    Unknown tags fall back to the cover page (no per-tag landing yet —
-    the cover has the anchor list)."""
+    """Render the hero tag-chip strip. Links point at the per-tag
+    landings ``/<locale-tags>/<slug>/`` (WS3) when one exists; tags
+    with no landing (sub-threshold canonicals + non-canonical aliases)
+    render as plain ``<span>`` chips so the audit doesn't flag a 404."""
     if not keywords:
         return ""
     prefix = _TAGS_PATH_BY_LANG.get(lang, "/tags")
-    badges = "".join(
-        f'<a href="{prefix}/{slugify(k)}/" class="article-tag" rel="tag">{k}</a>'
-        for k in keywords
-    )
+    badges_html: list[str] = []
+    for k in keywords:
+        slug = slugify(k)
+        if _has_landing(slug, lang):
+            badges_html.append(
+                f'<a href="{prefix}/{slug}/" class="article-tag" rel="tag">{k}</a>'
+            )
+        else:
+            badges_html.append(f'<span class="article-tag">{k}</span>')
     aria = labels.get("Topics", "Topics")
-    return f'<nav class="article-tags" aria-label="{aria}">{badges}</nav>'
+    return f'<nav class="article-tags" aria-label="{aria}">{"".join(badges_html)}</nav>'
 
 
 def _render_meta_bar(
@@ -1087,23 +1105,31 @@ def inject_action_rail(html: str) -> str:
     """Render the floating ``.action-rail--sticky`` with Save PDF + Cite
     at the top of the article body. The CSS positions it on the right
     edge on >=64em viewports and as a sticky bottom bar on <48em.
-    Anchors only — Save PDF carries ``data-print`` so the main.js
-    delegate calls ``window.print()`` immediately (the browser's
-    "Save as PDF" sink uses our @media print stylesheet). The Listen
-    button is intentionally absent until Phase 2 TTS lands — placeholder
-    buttons that don't work were worse than no buttons. Cite jumps to
-    the popover. BlogPosting pages only; idempotent."""
+
+    Save PDF is an anchor to ``/api/pdf/<slug>.pdf`` — the Cloudflare
+    Worker (workers/pdf-proxy.js) forwards to the Fly.io WeasyPrint
+    service and Edge-caches the response immutable for 24h. The
+    ``download`` attribute hints the browser to save rather than
+    navigate. A ``data-print-fallback`` hook on the same anchor lets
+    main.js fall back to ``window.print()`` if the route ever 503s
+    (e.g. local dev without the Worker).
+
+    Cite jumps to the popover. BlogPosting pages only; idempotent."""
     if '"@type":"BlogPosting"' not in html:
         return html
     if 'class="action-rail action-rail--sticky"' in html:
         return html
-    if not _slug_from_canonical(html):
+    slug = _slug_from_canonical(html)
+    if not slug:
         return html
     labels = _labels(html)
     aria = _esc(labels.get("Action.aria", "Article actions"), quote=True)
+    pdf_href = f"/api/pdf/{slug}.pdf"
     items = (
-        f'<li><button type="button" data-print>{_SVG_DOWNLOAD}'
-        f'<span>{_esc(labels.get("Action.savePdf", "Save PDF"))}</span></button></li>'
+        f'<li><a href="{pdf_href}" download="{slug}.pdf" '
+        f'data-print-fallback rel="alternate" type="application/pdf">'
+        f'{_SVG_DOWNLOAD}'
+        f'<span>{_esc(labels.get("Action.savePdf", "Save PDF"))}</span></a></li>'
         f'<li><a href="#cite-popover">{_SVG_QUOTE}'
         f'<span>{_esc(labels.get("Action.cite", "Cite"))}</span></a></li>'
     )

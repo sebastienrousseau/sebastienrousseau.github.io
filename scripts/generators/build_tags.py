@@ -107,7 +107,9 @@ def _walk_posts(taxonomy: dict) -> tuple[
     counts: collections.Counter[str] = collections.Counter()
     posts: dict[str, list[tuple[str, str, str]]] = collections.defaultdict(list)
     for path in sorted((ROOT / "_posts").glob("*.md")):
-        if path.name in {"tags.md", "categories.md"}:
+        # Skip non-article markdown: hub pages, the homepage (index.md),
+        # and anything else without a YYYY-MM-DD date prefix.
+        if not _DATED_SLUG_RE.match(path.stem):
             continue
         meta = _post_meta(path)
         if not meta:

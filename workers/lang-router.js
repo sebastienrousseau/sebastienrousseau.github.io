@@ -200,6 +200,10 @@ import { tryActivityPub } from './activitypub.js';
 // editorial corpus to AI clients. Static manifest + JSONL feeds drive
 // every response; no KV, no D1, Edge-cache immutable.
 import { tryMCP } from './mcp.js';
+// PDF proxy — /api/pdf/<slug>.pdf forwards to the Fly.io WeasyPrint
+// service. Edge-cache immutable for 24h so repeat reads never touch
+// Fly. Falls back to client-side window.print() when 503.
+import { tryPDF } from './pdf-proxy.js';
 
 export default {
   async fetch(request, env, ctx) {
@@ -213,6 +217,10 @@ export default {
     // search. Locale routing doesn't apply (these are API endpoints).
     const mcpResponse = await tryMCP(request);
     if (mcpResponse) return mcpResponse;
+    // PDF proxy — /api/pdf/<slug>.pdf. Validated + forwarded to Fly,
+    // Edge cached immutable for 24h.
+    const pdfResponse = await tryPDF(request);
+    if (pdfResponse) return pdfResponse;
 
     // Only act on GET / HEAD page navigation; everything else still gets
     // security headers via the pass-through wrapper.

@@ -209,6 +209,16 @@ if command -v node >/dev/null 2>&1; then
     --test-coverage-functions=100 \
     --test-coverage-include='workers/mcp.js' \
     workers/test_mcp.mjs
+  # PDF proxy sibling — forwards /api/pdf/<slug>.pdf to the Fly.io
+  # WeasyPrint service and Edge-caches the response. Same 100/100/100
+  # gate; hermetic.
+  node --test \
+    --experimental-test-coverage \
+    --test-coverage-lines=100 \
+    --test-coverage-branches=100 \
+    --test-coverage-functions=100 \
+    --test-coverage-include='workers/pdf-proxy.js' \
+    workers/test_pdf_proxy.mjs
 fi
 
 # Deployment is the public/ Pages artifact uploaded by CI

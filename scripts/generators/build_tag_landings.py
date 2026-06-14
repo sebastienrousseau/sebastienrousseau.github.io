@@ -209,7 +209,11 @@ def _walk(taxonomy: dict) -> tuple[
         collections.Counter
     )
     for path in sorted((ROOT / "_posts").glob("*.md")):
-        if path.name in {"tags.md", "categories.md"}:
+        # Skip non-article markdown: hub pages (tags.md / categories.md),
+        # the homepage (index.md), and anything else without a YYYY-MM-DD
+        # date prefix. Without the prefix we'd otherwise emit cards
+        # pointing at `/index/` etc. (an obvious broken-link smell).
+        if not _DATED_SLUG_RE.match(path.stem):
             continue
         _ingest_post(path, amap, posts, cooccur)
     for c in posts:
@@ -239,17 +243,29 @@ def _render_article_cards(posts_for_tag: list[tuple[str, str, str, str]]) -> str
 
 
 def _render_related_tags(
-    cooccur: collections.Counter[str], taxonomy: dict, slug: str, n: int = 6
+    cooccur: collections.Counter[str],
+    taxonomy: dict,
+    slug: str,
+    posts: dict[str, list[tuple[str, str, str, str]]],
+    n: int = 6,
 ) -> str:
-    """Render the top-N co-occurring canonical tags as chip links."""
-    top = cooccur.most_common(n)
-    if not top:
+    """Render the top-N co-occurring canonical tags as chip links.
+
+    Filters out canonicals whose post count is below ``_LANDING_THRESHOLD``
+    — those don't have a landing page, so linking to them would 404 and
+    fail the strict-internal link audit."""
+    eligible = [
+        (other, cnt)
+        for other, cnt in cooccur.most_common()
+        if len(posts.get(other, [])) >= _LANDING_THRESHOLD
+    ][:n]
+    if not eligible:
         return ""
     chips = "".join(
         f'<a href="/tags/{other}/" class="related-tag-chip">'
         f'{_esc(taxonomy[other]["name"])} '
         f'<span class="meta">{cnt}</span></a>'
-        for other, cnt in top
+        for other, cnt in eligible
     )
     return (
         f'<nav aria-labelledby="related-tags-h2-{slug}" class="related-tags">'
@@ -311,6 +327,7 @@ def _render_landing_body(
     posts_for_tag: list[tuple[str, str, str, str]],
     cooccur: collections.Counter[str],
     taxonomy: dict,
+    posts: dict[str, list[tuple[str, str, str, str]]],
 ) -> str:
     n = len(posts_for_tag)
     pillar = entry.get("category", "leadership").upper()
@@ -325,7 +342,7 @@ def _render_landing_body(
         f'<section class="tag-landing-list" aria-label="Articles tagged {_esc(entry["name"])}">'
         f"{_render_article_cards(posts_for_tag)}"
         f"</section>"
-        + _render_related_tags(cooccur, taxonomy, slug)
+        + _render_related_tags(cooccur, taxonomy, slug, posts)
         + "</div>"
     )
 
@@ -337,6 +354,7 @@ def _render_landing_html(
     posts_for_tag: list[tuple[str, str, str, str]],
     cooccur: collections.Counter[str],
     taxonomy: dict,
+    posts: dict[str, list[tuple[str, str, str, str]]],
 ) -> str:
     """Take the /tags/index.html cover as the shell skeleton, swap the
     <main> body, title, description, canonical, og:* meta, and inject
@@ -344,7 +362,7 @@ def _render_landing_html(
     url = f"{_BASE_URL}/tags/{slug}/"
     title = f'{entry["name"]} — Articles by topic'
     desc = entry["description"].strip()
-    body = _render_landing_body(slug, entry, posts_for_tag, cooccur, taxonomy)
+    body = _render_landing_body(slug, entry, posts_for_tag, cooccur, taxonomy, posts)
     out = template
     out = _TITLE_RE.sub(f"<title>{_esc(title)}</title>", out, count=1)
     out = _DESC_RE.sub(
@@ -643,7 +661,8 @@ def _write_landings(
         if len(ps) < _LANDING_THRESHOLD:
             continue
         page_html = _render_landing_html(
-            template, slug, entry, ps, cooccur.get(slug, collections.Counter()), taxonomy
+            template, slug, entry, ps,
+            cooccur.get(slug, collections.Counter()), taxonomy, posts,
         )
         out_path = PUBLIC / "tags" / slug / "index.html"
         out_path.parent.mkdir(parents=True, exist_ok=True)

@@ -289,6 +289,7 @@ _BODY_FURNITURE_RE = re.compile(
 _CRUMBS_NAV_RE = re.compile(r'<nav class="crumbs"[\s\S]*?</nav>')
 _EYEBROW_RE = re.compile(r'<p class="eyebrow"[\s\S]*?</p>')
 _SHARE_RAIL_RE = re.compile(r'<nav class="share-rail[^"]*"[\s\S]*?</nav>')
+_ACTION_RAIL_RE = re.compile(r'<nav class="action-rail action-rail--sticky"[\s\S]*?</nav>')
 _BYLINE_STRAP_RE = re.compile(r'<p class="byline-strap"[\s\S]*?</p>')
 _SYNDICATE_PANEL_RE = re.compile(
     r'<details class="cite-popover" id="syndicate-popover"[\s\S]*?</details>'
@@ -312,6 +313,7 @@ def _strip_postbuild_furniture(shell: str) -> str:
     out = _CRUMBS_NAV_RE.sub("", shell)
     out = _EYEBROW_RE.sub("", out)
     out = _SHARE_RAIL_RE.sub("", out)
+    out = _ACTION_RAIL_RE.sub("", out)
     out = _SYNDICATE_PANEL_RE.sub("", out)
     out = _BYLINE_STRAP_RE.sub("", out)
     out = _DECK_CLASS_RE.sub('<p class="sub">', out)
