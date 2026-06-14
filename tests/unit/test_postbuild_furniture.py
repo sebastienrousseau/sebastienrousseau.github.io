@@ -2806,3 +2806,64 @@ def test_parse_iso_date_returns_none_for_unrecognised_format():
     assert _parse_iso_date("not-a-date") is None
     assert _parse_iso_date("2026-13-40") is None  # invalid month + day
     assert _parse_iso_date("") is None
+
+
+def test_inject_oembed_link_no_op_when_canonical_resolves_to_empty_slug():
+    """A bare-`/` canonical (no slug) → bare slug empty → the function
+    short-circuits with the original HTML rather than emit
+    `/oembed/.json`."""
+    from postbuild_lib.article_furniture import inject_oembed_link
+
+    head_empty_slug = _WS2_HEAD.replace(
+        'href="https://sebastienrousseau.com/2026-01-01-my-post/"',
+        'href="/"',
+    )
+    page = _ws2_page(head=head_empty_slug)
+    assert inject_oembed_link(page) == page
+
+
+def test_share_payload_strips_index_html_canonical_suffix():
+    """`_share_payload` reuses the same /index.html-suffix strip as
+    inject_oembed_link so the share-rail's pre-filled X/LinkedIn/
+    WhatsApp/email links carry the clean trailing-slash canonical."""
+    from postbuild_lib.article_furniture import _share_payload
+
+    head_with_index = _WS2_HEAD.replace(
+        'href="https://sebastienrousseau.com/2026-01-01-my-post/"',
+        'href="https://sebastienrousseau.com/2026-01-01-my-post/index.html"',
+    )
+    page = _ws2_page(head=head_with_index)
+    payload = _share_payload(page)
+    assert payload is not None
+    assert payload["url"] == "https://sebastienrousseau.com/2026-01-01-my-post/"
+
+
+def test_syndication_payload_truncates_description_at_300_chars():
+    """Mastodon's 500-char toot budget caps the description at 300 chars
+    + an ellipsis so the title + URL still fit. Exercises the
+    `if len(desc) > 300: desc_trunc += "…"` branch."""
+    from postbuild_lib.article_furniture import _syndication_payloads
+
+    long_desc = "x" * 350
+    payload = {
+        "url": "https://sebastienrousseau.com/2026-01-01-my-post/",
+        "title": "My Post",
+        "desc": long_desc,
+    }
+    out = _syndication_payloads(payload)
+    assert out["mastodon"].endswith("…\n\nhttps://sebastienrousseau.com/2026-01-01-my-post/")
+    # Truncated to 300 chars + ellipsis (not the full 350).
+    assert "x" * 350 not in out["mastodon"]
+    assert "x" * 300 in out["mastodon"]
+
+
+def test_write_ai_txt_returns_false_when_content_unchanged(tmp_path):
+    """Second call to write_ai_txt with identical content returns False
+    so the postbuild summary line reports "unchanged". Exercises the
+    `if cur == new: return False` branch in output.py."""
+    from postbuild_lib.output import write_ai_txt
+
+    # First write — file didn't exist, so it returns True.
+    assert write_ai_txt(tmp_path) is True
+    # Second write — same content, returns False.
+    assert write_ai_txt(tmp_path) is False
