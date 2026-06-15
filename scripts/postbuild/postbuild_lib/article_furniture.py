@@ -1205,10 +1205,18 @@ def inject_cite_popover(html: str) -> str:
     (BibTeX / RIS / Vancouver / Chicago / APA). The action-rail's
     "Cite" button jumps here. WS5 will wire copy-to-clipboard
     buttons + main.js handlers; for now readers select-all + copy
-    from the <pre>. BlogPosting pages only; idempotent."""
+    from the <pre>. BlogPosting pages only; idempotent.
+
+    Idempotency gates on the ``id="cite-popover"`` anchor rather than
+    the class — `inject_syndication_panel` runs first and also uses
+    ``class="cite-popover"`` for shared FT styling (with
+    ``id="syndicate-popover"``). Without the ID-based gate, the
+    syndicate-popover's class match short-circuits this injector and
+    the action-rail's ``href="#cite-popover"`` resolves to no target
+    (pa11y WCAG2AAA NoSuchID)."""
     if '"@type":"BlogPosting"' not in html:
         return html
-    if 'class="cite-popover"' in html:
+    if 'id="cite-popover"' in html:
         return html
     url_m = _CANONICAL_RE.search(html)
     title_m = _OG_TITLE_RE.search(html)
