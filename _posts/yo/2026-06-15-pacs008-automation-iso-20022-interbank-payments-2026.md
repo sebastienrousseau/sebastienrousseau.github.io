@@ -1,25 +1,28 @@
 ---
+
+# Front Matter (YAML)
+
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "Òṣìṣẹ́ ọ́fíìsì pẹ̀lú olùrànlọ́wọ́ ohùn àti laptop — àpẹẹrẹ àwọn ìránṣẹ́ ìsanwó láàárín àwọn báńkì tó ní ètò, tó ṣe é kà fún ẹ̀rọ, tí àdàṣe pacs.008 ń mú di ṣíṣe ìṣàmúlò"
 banner_height: "1597"
 banner_width: "2584"
-banner: "https://cloudcdn.pro/stocks/images/akande-voice-assistant-office.webp"
+banner: "https://cloudcdn.pro/stocks/images/tyler-prahm-lmV3gJSAgbo.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "Okudu 15, 2026"
-description: "pacs008 pèsè ìpìlẹ̀ Python orisun ṣiṣi fún àdàṣe àwọn ìránṣẹ́ ISO 20022 FI-to-FI gbígbé awin onibara ní àkókò ìsanwó láàárín àwọn báńkì."
+description: "pacs008 jẹ́ ìwé-ìkàwé Python orisun ṣiṣi tó ń ṣe àdàṣe ìṣẹ̀dá àti ìfọwọsì ìránṣẹ́ ISO 20022 pacs.008 FI-to-FI gbígbé awin onibara — àdírẹ́sì tó ní ètò, ìfìpamọ́ BAH head.001, ìfọwọsì BIC/LEI/IBAN, ìwádìí UETR OpenTelemetry — tí a kọ́ fún ọjọ́ ìparí SWIFT November 2026."
 format-detection: "telephone=no"
 hreflang: "yo"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
-id: "https://sebastienrousseau.com/yo/2026-06-15-pacs008-automation-iso-20022-interbank-payments-2026"
+id: "https://sebastienrousseau.com/2026-06-15-pacs008-automation-iso-20022-interbank-payments-2026"
 image_alt: "Àwòrán Aláwọ̀ Dúdú àti Funfun ti Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
 image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
-keywords: "pacs008, ISO 20022 pacs.008, gbígbé awin onibara FI-to-FI, ìsanwó láàárín àwọn báńkì, àdírẹ́sì tó ní ètò, ìsanwó òṣùnwọ̀n"
-language: "yo"
+keywords: "pacs008, ISO 20022 pacs.008, gbígbé awin onibara FI-to-FI, àdírẹ́sì tó ní ètò, SWIFT CBPR+, BAH head.001, TARGET2, CHAPS, Fedwire, DORA, BCBS 239, Basel III, UETR, ìfọwọsì LEI, SEPA VoP"
+language: "yo-NG"
 last_reviewed: "2026-06-15"
 layout: "report"
 locale: "yo_NG"
@@ -30,22 +33,24 @@ logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau
 menu: ""
 measurementID: "G-169G4ET5HQ"
 name: "Sebastien Rousseau"
-permalink: "https://sebastienrousseau.com/yo/2026-06-15-pacs008-automation-iso-20022-interbank-payments-2026"
+permalink: "https://sebastienrousseau.com/2026-06-15-pacs008-automation-iso-20022-interbank-payments-2026"
 rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
 schema: "FAQPage, Article"
-seo_title: "Àdàṣe pacs.008 fún Àkókò ISO 20022 ní 2026"
+seo_title: "Àdàṣe pacs.008 fún Àkókò ISO 20022"
 short_name: "sebastienrousseau"
 subtitle: "Ìránṣẹ́ pacs.008 ni ibi tí dátà ìsanwó láàárín àwọn báńkì, àdírẹ́sì tó ní ètò, ìbámu, ìṣàrọ́, àti iṣẹ́ ìpinnu ti pàdé."
 tags: "pacs008, ISO 20022, ìsanwó láàárín àwọn báńkì, ìsanwó òṣùnwọ̀n, Python"
 theme-color: "0, 83, 191"
 title: "Kíkọ́ Àdàṣe pacs.008 fún Àkókò Interbank ISO 20022 ní 2026"
-url: "https://sebastienrousseau.com/yo/2026-06-15-pacs008-automation-iso-20022-interbank-payments-2026"
+url: "https://sebastienrousseau.com/2026-06-15-pacs008-automation-iso-20022-interbank-payments-2026"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
+
+# RSS - The RSS feed front matter (YAML).
 atom_link: "https://sebastienrousseau.com/2026-06-15-pacs008-automation-iso-20022-interbank-payments-2026/rss.xml"
 category: "Finance"
-docs: "https://validator.w3.org/feed/docs/rss2.html"
+docs: https://validator.w3.org/feed/docs/rss2.html
 generator: "Static Site Generator (SSG) (version 0.0.26)"
 item_description: "pacs008 pèsè ìpìlẹ̀ Python orisun ṣiṣi fún àdàṣe àwọn ìránṣẹ́ ISO 20022 FI-to-FI gbígbé awin onibara ní àkókò ìsanwó láàárín àwọn báńkì."
 item_guid: "https://sebastienrousseau.com/2026-06-15-pacs008-automation-iso-20022-interbank-payments-2026/rss.xml"
@@ -58,6 +63,8 @@ pub_date: "Mon, 15 Jun 2026 06:06:06 +0000"
 ttl: "60"
 type: "article"
 webmaster: "contact@sebastienrousseau.com"
+
+# Apple - The Apple front matter (YAML).
 apple_mobile_web_app_orientations: "portrait"
 apple_touch_icon_sizes: "192x192"
 apple-mobile-web-app-capable: "yes"
@@ -65,143 +72,203 @@ apple-mobile-web-app-status-bar-inset: "black"
 apple-mobile-web-app-status-bar-style: "black-translucent"
 apple-mobile-web-app-title: "Àdàṣe pacs.008 fún ISO 20022"
 apple-touch-fullscreen: "yes"
+
+# MS Application - The MS Application front matter (YAML).
+
 msapplication-navbutton-color: "0, 83, 191"
+
+# Twitter Card - The Twitter Card front matter (YAML).
+
 twitter_card: "summary_large_image"
 twitter_creator: "@wwdseb"
 twitter_description: "pacs008 pèsè ìpìlẹ̀ Python orisun ṣiṣi fún àdàṣe àwọn ìránṣẹ́ ISO 20022 FI-to-FI gbígbé awin onibara ní àkókò ìsanwó láàárín àwọn báńkì."
 twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 twitter_image_alt: "Logo ti Sebastien Rousseau"
 twitter_site: "@wwdseb"
-twitter_title: "Àdàṣe pacs.008 fún Àkókò ISO 20022 ní 2026"
+twitter_title: "Àdàṣe pacs.008 fún Àkókò ISO 20022"
 twitter_url: "https://sebastienrousseau.com/2026-06-15-pacs008-automation-iso-20022-interbank-payments-2026"
-excerpt: "pacs008 jẹ́ irinṣẹ́ Python orisun ṣiṣi tó ń mú àwọn ìránṣẹ́ ISO 20022 FI-to-FI gbígbé awin onibara di ṣíṣe ìṣàmúlò — àwọn àdírẹ́sì tó ní ètò, ìfọwọsì, ìṣàrọ́, ìbámu, àti ọjọ́ ìparí SWIFT November 2026 ti wà gẹ́gẹ́ bí àwọn ààyò ìpìlẹ̀."
+
+excerpt: "pacs008 jẹ́ irinṣẹ́ Python orisun ṣiṣi tó ń mú àwọn ìránṣẹ́ ISO 20022 FI-to-FI gbígbé awin onibara di ṣíṣe ìṣàmúlò — àdírẹ́sì tó ní ètò, ìfọwọsì, ìṣàrọ́, àwọn ìkọ́ ìbámu, àti ọjọ́ ìparí SWIFT November 2026 ti wà gẹ́gẹ́ bí àwọn ààyò ìpìlẹ̀."
+
+# Humans.txt - The Humans.txt front matter (YAML).
 author_website: "https://sebastienrousseau.com"
 author_twitter: "@wwdseb"
 author_location: "London, UK"
-thanks: "Thanks for reading!"
+thanks: "Ẹ ṣé fún kíkà!"
 site_last_updated: "2026-06-15"
 site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 site_software: "Static Site Generator, Rust"
+
 ---
 
-# Kíkọ́ Àdàṣe pacs.008 fún Àkókò Interbank ISO 20022 ní 2026
+# Àdàṣe Ìsanwó Interbank ISO 20022 pacs.008 pẹ̀lú Python Orisun Ṣiṣi ní 2026
+
 
 <!-- lead-start -->
 <aside class="post-lead" aria-label="Àkótán àpilẹ̀kọ">
-<p class="post-lead-tldr"><strong>TL;DR.</strong> pacs.008 ni ìránṣẹ́ ISO 20022 gbígbé awin onibara tí àwọn báńkì ń fi ránṣẹ́ síra wọn — ìpele ìṣàmúlò níbi tí ìṣíkiri ISO 20022 ti di iṣẹ́ gangan. pacs008 (ìwé-ìkàwé Python orisun ṣiṣi) ń mú un di ṣíṣe ìṣàmúlò: ìmúṣiṣẹ́ àdírẹ́sì tó ní ètò, ìfọwọsì aṣojú àti ẹgbẹ́, àwọn ààyò ìpìlẹ̀ tí ó mọ ìṣàrọ́, àti ọ̀nà tó ṣe kedere sí ọjọ́ ìparí àdírẹ́sì láìní ètò SWIFT November 2026.</p>
+<p class="post-lead-tldr"><strong>TL;DR.</strong> Lábẹ́ àwọn ìtọ́sọ́nà SWIFT CBPR+, November 14, 2026 Ààlà Àdírẹ́sì Tó Ní Ètò ń yọ àwọn àdírẹ́sì ìfìránṣẹ́ láìní ètò kúrò ní TARGET2, CHAPS, Fedwire, Lynx, àti SEPA. pacs008 jẹ́ ìwé-ìkàwé Python orisun ṣiṣi tó ń ṣe àdàṣe ìṣẹ̀dá àti ìfọwọsì ìránṣẹ́ ISO 20022 FI-to-FI gbígbé awin onibara (pacs.008), tó ń fi àwọn ìsanwó pamọ́ sínú Business Application Headers (BAH head.001), tó sì ń sin ìbámu àdírẹ́sì tó ní ètò sínú ọ̀nà dátà kí ìránṣẹ́ tó kàn nẹ́tíwọ́kì ìpinnu.</p>
 <p class="post-lead-heading"><strong>Àwọn àyọkà pàtàkì</strong></p>
 <ul class="post-lead-takeaways">
-  <li><strong>pacs.008 ni ibi tí ISO 20022 ti di gidi.</strong> Gbígbé awin onibara láàárín àwọn FI ń ṣiṣẹ́ lórí ìránṣẹ́ yìí — ìṣàrọ́, ìbámu, ìwádìí, àti owó wíwà gbogbo wọn dá lórí rẹ̀.</li>
-  <li><strong>Ìfọwọsì ni ọjà náà.</strong> Ṣíṣe XML rọrùn; gbígba dátà ẹgbẹ́, àdírẹ́sì, àkántì, àti aṣojú tó ní ètò ní pípé ni iṣẹ́ líle.</li>
-  <li><strong>Ọjọ́ ìparí àdírẹ́sì láìní ètò November 2026 jẹ́ ti iṣẹ́, kìí ṣe ti àbá-èrò.</strong> Àmì SWIFT ń sọ dátà ìsanwó tó ní ètò di ààyò ìgbà kúkúrú, kìí ṣe ìṣòro 2027.</li>
-  <li><strong>Orisun ṣiṣi ni ohun èlò ìgbẹ́kẹ̀lé.</strong> Àwọn báńkì lè ṣàyẹ̀wò gbogbo òfin ìfọwọsì, gbogbo àfihàn pápá, gbogbo ààyò ìpìlẹ̀ ìṣàrọ́.</li>
-  <li><strong>Àdàṣe gé owó ìwọ̀n àtúnṣe kù.</strong> Gbogbo pacs.008 tí kò pé ń dá òṣùnwọ̀n ìwádìí sílẹ̀ — irinṣẹ́ tó ní ètò gẹ́gẹ́ bí ìpìlẹ̀ ń dín ìrù yẹn kù.</li>
+  <li><strong>Ọjọ́ Ìparí Àdírẹ́sì Tó Ní Ètò kò ní ìṣípadà.</strong> Lẹ́yìn November 14, 2026, a yọ àwọn òbìrìkítí àdírẹ́sì láìní ètò kúrò. pacs008 ń fi agbára mú àwọn ẹ̀yà àdírẹ́sì ìfìránṣẹ́ tó ní ètò (<code>&lt;TwnNm&gt;</code>, <code>&lt;Ctry&gt;</code>, <code>&lt;PstCd&gt;</code>) ní àkójọpọ̀ dátà láti dáàbò bo ìkọ̀sílẹ̀ ní ààlà.</li>
+  <li><strong>Ìṣọ̀kan ìṣàrọ́ ìránṣẹ́.</strong> Ó ń fi èrò ìsanwó pacs.008 ìpìlẹ̀ pamọ́ sínú òbìrìkítí Business Application Header (head.001) tó bá ìbámu mu, tó sì ń pèsè àpẹẹrẹ ìṣiṣẹ́ ìpadàbọ̀ òṣùnwọ̀n.</li>
+  <li><strong>Ìjásí àlgorithm.</strong> Àwọn olùfọwọsì tí a sin sí inú fún BICs àti Legal Entity Identifiers (LEIs) ní lílo ìṣirò òṣùnwọ̀n ISO 7064 Modulo 97-10.</li>
+  <li><strong>Ìwádìí tó bá DORA mu.</strong> Ìfàyàrá OpenTelemetry kíkún tó dá lórí Unique End-to-End Transaction Reference (UETR) fún àkọsílẹ̀ àyẹ̀wò àkókò gangan àti àmì àyẹ̀wò ìpamọ́.</li>
+  <li><strong>Ìpamọ́ ojúṣe ìṣàkóso ní ipele bọ́ọ̀dù.</strong> Ó ń bá ìdájú ìránṣẹ́ interbank mu pẹ̀lú DORA Àpilẹ̀kọ 5, ìròyìn BCBS 239, àti àfipamọ́ owó ewu ìṣiṣẹ́ Basel III.</li>
 </ul>
+<p class="post-lead-related"><strong>Àwọn àpilẹ̀kọ tó jẹ mọ́ ọn:</strong> <a href="https://sebastienrousseau.com/2026-05-19-global-wholesale-payments-economics-2026">Ìsanwó Òṣùnwọ̀n Àgbáyé ní 2026: ISO 20022, Ìmúlò RTGS, àti Ọrọ̀-ajé Ìbárasọ̀rọ̀</a>, <a href="https://sebastienrousseau.com/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026">AI gẹ́gẹ́ bí Ètò Ìṣiṣẹ́ Ìsanwó: Jìbìtì, Ìṣàrọ́, Ìfaradà, àti Ìbámu ní 2026</a>, <a href="https://sebastienrousseau.com/2026-05-12-iso-20022-pacs008-structured-address-deadline">Ọjọ́ Ìparí Àdírẹ́sì Tó Ní Ètò pacs.008 November 2026: Èèdì Oṣù Mẹ́fà</a>.</p>
 </aside>
 <!-- lead-end -->
 
-Ìránṣẹ́ pacs.008 jẹ́ ọ̀kan nínú àwọn ohun èlò pàtàkì jùlọ tí ó ṣe ìṣàmúlò ní àkókò interbank ISO 20022. Ó gbé gbígbé awin onibara láàárín àwọn ilé-ìṣirò owó, dídára rẹ̀ sì ń kan ìṣàrọ́, ìbámu, ìwádìí, owó wíwà, ìdúró, àti ìrírí oníbàátì. pacs008 wúlò nítorí ó mú ìránṣẹ́ yẹn di ṣíṣe ìṣàmúlò.
+Ìsopọ̀ aafo láàárín dátà ìnáwó àtijọ́ àti ìfìránṣẹ́ interbank tó ní ètò nípasẹ̀ ọ̀nà Python tí a lè ṣàyẹ̀wò, tí a sì fọwọsi pẹ̀lú àwòkọ́ṣe.
 
-Ipilẹ̀ ìtọ́kasí orisun ṣiṣi fún àpilẹ̀kọ yìí ni [pacs008 ⧉](https://github.com/sebastienrousseau/pacs008 "pacs008"). Ìpamọ́ náà ni a fi sípò gẹ́gẹ́ bí: ìwé-ìkàwé Python fún àdàṣe àwọn ìránṣẹ́ XML ISO 20022 pacs.008 FI-to-FI gbígbé awin onibara.
-
----
-
-> **Àkótán Àlàṣẹ / Àwọn Àyọkà Pàtàkì**
->
-> - **pacs.008 jẹ́ ipilẹ̀ sí gbígbé awin onibara láàárín àwọn báńkì.** Ó jẹ́ ìpele ìránṣẹ́ tó ṣe ìṣàmúlò níbi tí ìṣíkiri ISO 20022 ti di òtítọ́ iṣẹ́.
-> - **Àdàṣe gbọ́dọ̀ ní ìfọwọsì nínú.** Ṣíṣe XML kò tó bí dátà ẹgbẹ́, àdírẹ́sì, àkántì, àti aṣojú tó ní ètò bá rẹ̀wẹ̀sì.
-> - **November 2026 ń gbé ìnira sókè.** Àmì àdírẹ́sì láìní ètò SWIFT ń sọ dátà ìsanwó tó ní ètò di ààyò ìgbà kúkúrú.
-> - **Àpẹẹrẹ orisun ṣiṣi lè yára ẹ̀kọ́.** Àwọn olùṣèlò nílò àwọn àwòkọ́ṣe tí a lè ṣàyẹ̀wò àti ìṣẹ̀dá ìránṣẹ́ tí a lè dán wò.
-> - **Iṣẹ́ náà bá olórí èrò ìsanwó òṣùnwọ̀n mu.** Ó so ìkọ̀wé ISO 20022 rẹ pọ̀ mọ́ ìpamọ́ tí a lè ṣe ìṣàmúlò.
->
----
+Ipilẹ̀ ìtọ́kasí orisun ṣiṣi fún àpilẹ̀kọ yìí ni [pacs008 ⧉](https://github.com/sebastienrousseau/pacs008 "pacs008 — ìwé-ìkàwé Python orisun ṣiṣi"). A ti fi ìpamọ́ náà sí gẹ́gẹ́ bí ìwé-ìkàwé Python fún àdàṣe àwọn ìránṣẹ́ XML ISO 20022 pacs.008 FI-to-FI gbígbé awin onibara.
 
 ## Ìdí Tí Iṣẹ́ Orisun Ṣiṣi Yìí Fi Ṣe Pàtàkì ní 2026
 
-Iye ìlànà ti orisun ṣiṣi ní 2026 kò sí mọ́ ní ààlà sí ìfihàn, ìtúnlò, tàbí ìfẹ́ olùṣèlò. Fún àwọn báńkì àti ilé-ìṣirò owó, ìpilẹ̀ orisun ṣiṣi ti di ọ̀nà láti ṣàyẹ̀wò àwọn àbá-èrò, dán àwọn ìṣàkóso wò, dín àìmọ́gbọ́n olùpèsè kù, kí a sì sọ àwọn ìjásí ìkọ́lé di kóòdù tí a lè kà, ya, fi agbára kún, kí a sì ṣiṣẹ́ rẹ̀. Àwọn iṣẹ́ tó wúlò jùlọ kìí ṣe ìfihàn lásán. Wọ́n jẹ́ àwọn ìṣàmúlò ìtọ́kasí tó fi hàn bí ààbò, ìráyé, ìṣiṣẹ́, ìbámu, àti ìrírí olùṣèlò ṣe bá ara wọn mu.
+Ìpilẹ̀ ìpinnu ìsanwó interbank àgbáyé ń kọjá ìmúlò tó jinlẹ̀ jùlọ ní ìdá-ìdá ọgọ́rùn-ún ọdún.
 
-Èyí ni èèdì tí ó yẹ kí a fi wo pacs008. Kìí ṣe ìpamọ́ lásán; ó jẹ́ ìjásí àpẹẹrẹ tó dájú. Ó sọ pé ìpilẹ̀ pàtàkì gbọ́dọ̀ jẹ́ ṣíṣe àyẹ̀wò, ṣíṣe àkópọ̀, kíkọsílẹ̀, ṣíṣe ìdánwò, àti òye sí àwọn ènìyàn tí ó gbára lé wọn. Ní iṣẹ́ ìnáwó, ìyẹn ṣe pàtàkì nítorí àwọn ètò ń jókòó sí àkójọpọ̀ AI agéntì, ìsanwó àkókò gangan, ìmọ̀ ìpamọ́ post-quantum, ìfaradà cloud-native, dátà tó ní ètò, àti ẹ̀rí ìṣàkóso.
+Ní Okudu 2026, ẹ̀ka iṣẹ́ ìnáwó ti súnmọ́ **Ààlà Àdírẹ́sì Tó Ní Ètò SWIFT November 14, 2026**. Láti ọjọ́ yẹn lọ, àwọn ìtọ́sọ́nà SWIFT CBPR+, pẹ̀lú TARGET2, CHAPS, Fedwire, àti Lynx ti Canada, yóò yọ àwọn ìlà àdírẹ́sì ìfìránṣẹ́ láìní ètò kúrò ní gbangba (èyí tó ń lò `<AdrLine>` nìkan nínú àwọn òbìrìkítí `<PstlAdr>`). Gbogbo àwọn ilé-ìṣirò owó tó ń kópa gbọ́dọ̀ fi àwọn àdírẹ́sì ránṣẹ́ yálà ní ìṣàkójọpọ̀ híbírídì (`<TwnNm>` àti `<Ctry>` tó ní ètò, pẹ̀lú àwọn ẹ̀yà `<AdrLine>` méjì jùlọ fún àwọn àlàyé tó kù) tàbí ní ìṣàkójọpọ̀ tó ní ètò gbangba (àwọn ẹ̀yà ọ̀tọ̀ọ̀tọ̀ fún orúkọ òpópó, nọ́mbà ilé, àti kóòdù ìfìránṣẹ́). A óò kọ ìránṣẹ́ èyíkéyìí tí kò bá pàdé àwọn òṣùnwọ̀n yìí sílẹ̀ ní ààlà nẹ́tíwọ́kì.
 
-## Èèdì Ìkọ́lé
+Fún àwọn ilé-ìṣirò owó, ìṣíkiri yìí ń dá àwọn ìnira ìṣiṣẹ́ ńlá sílẹ̀:
+
+1. **Ìjìyà ìkọ̀sílẹ̀ ààlà.** Àwọn ìsanwó tí kò bá pàdé àwọn ìtọ́kasí àdírẹ́sì tó ní ètò yóò pàdé ìkọ̀sílẹ̀ nẹ́tíwọ́kì lójú ẹsẹ̀, tó ń dá ìdúró ìṣòwò, ìdíwọ́ owó wíwà, àti àfọwọ́ ìṣiṣẹ́ sílẹ̀.
+2. **SEPA Verification of Payee (VoP).** Ó ń ṣe àṣẹ pé gbogbo àwọn Payment Service Providers (PSPs) nínú àgbègbè SEPA gbọ́dọ̀ fọwọsi ìbáramu láàárín orúkọ olùgbà àti IBAN kí wọn tó ṣe àwọn gbígbé awin, èyí tó ń fi ẹnu-ọ̀nà ìfọwọsì mìíràn kún ìbẹ̀rẹ̀ ìránṣẹ́.
+
+[pacs008](https://github.com/sebastienrousseau/pacs008) ń yanjú ìṣòro yìí. Ó jẹ́ ìwé-ìkàwé Python orisun ṣiṣi tó fẹ́rẹ̀ẹ́, tó ń ṣe àdàṣe ìyípadà dátà ìnáwó òṣùwọ̀n sí àwọn ìránṣẹ́ gbígbé awin onibara interbank ISO 20022 pacs.008 tí a ti fọwọsi gbangba, tí ó sì bá àwòkọ́ṣe mu. Nípa pípa aafo dátà àtijọ́-sí-tó-ní-ètò, pacs008 ń pèsè Return on Resilience (RoR) tó ga, ó ń pa owó iṣẹ́ wíwà mọ́, ó sì ń dáàbò bo ìṣiṣẹ́ àkókò gangan kọjá àwọn ọ̀nà àgbáyé.
+
+## Èèdì Ìkọ́lé pacs008 ní 2026
+
+A ti gbé ìwé-ìkàwé pacs008 kalẹ̀ gẹ́gẹ́ bí ẹ̀rọ ìfọwọsì àti ìṣẹ̀dá tí a kò sopọ̀, tí ó ń ṣe ìdáńdé pé a kọ́, a fi agbára kún, a sì fi àwọn dátà òṣùwọ̀n pamọ́ sínú àwọn òbìrìkítí òṣùnwọ̀n:
 
 | Ìpele | Ìpinnu Àpẹẹrẹ | Ìdí Tí Ó Fi Ṣe Pàtàkì | Ewu Bí A Kò Bá Ṣàkóso |
 |---|---|---|---|
-| **Ìránṣẹ́** | pacs.008 FI-to-FI gbígbé awin onibara | Ìbárasọ̀rọ̀ ìsanwó interbank pàtàkì | Ìtọ́ni ìsanwó tí kò pé tàbí tí kò tọ́ |
-| **Dátà** | Olùdá, olùgbà, aṣojú, àkántì, iye, owó, àdírẹ́sì | Pinnu ìṣàrọ́ àti dídára ìbámu | Ìkọ̀sílẹ̀ àti ìwádìí |
-| **Ìfọwọsì** | Ìbáwí pápá àti àwòkọ́ṣe ISO 20022 | Dín àtúnṣe iṣẹ́ kù | XML tí kò pé tó dà bí àdàṣe |
-| **Ìṣọ̀kan** | Ẹ̀rọ ìsanwó, atúnṣe báńkì, àwòkọ́ṣe ìdánwò | Mú ìṣẹ̀dá ìránṣẹ́ di iṣẹ́-ṣíṣe | Ìwé-ìkàwé tí ó dá-níbi sí àwọn iṣẹ́ gidi |
-| **Ìṣàkóso** | Àkọsílẹ̀, àpẹẹrẹ, ìṣàkóso, àti ìdánwò àtúnṣe | Ṣe àtìlẹ́yìn fún àyẹ̀wò àti àpẹẹrẹ ìṣíkiri | Ìyípadà ìránṣẹ́ tí a kò mọ̀ |
+| **Ìpele Ìkọsí** | Ìkọsí CSV, JSON, SQLite, àti Parquet | Ó pàdé àwọn ẹgbẹ́ ìṣọ̀kan báńkì níbi tí dátà wọn ti wà tẹ́lẹ̀, tó ń dáàbò bo ìṣíkiri pẹpẹ. | Ìkọsí àwọn ẹrù dátà òṣùwọ̀n, tí a kò fọwọsi, tàbí tí a ti bàjẹ́. |
+| **Ìpele Ìfọwọsì** | Ìfọwọsì ṣáájú-òfo lòdì sí àwọn àwòkọ́ṣe XSD òṣèlú àti àwọn òfin iṣẹ́ àdáyé | Ó dá ìṣiṣẹ́ dúró, ó sì ń fi àwọn àṣìṣe hàn kí a tó fi fáìlì ìsanwó ránṣẹ́ sí nẹ́tíwọ́kì ìpinnu. | Àwọn fáìlì XML tí kò pé tí ń dá ìkọ̀sílẹ̀ nẹ́tíwọ́kì lójú ẹsẹ̀ àti ìdúró ìpinnu sílẹ̀. |
+| **Ìpele Òbìrìkítí BAH** | Àdàṣe ìfìpamọ́ Business Application Header (head.001) | Ó ń sọ ìṣàrọ́ àti ìfìránṣẹ́ ìránṣẹ́ di òṣùnwọ̀n nípa àmì `<MsgDefIdr>`. | Fífi àwọn ẹrù pacs.008 òṣùwọ̀n ránṣẹ́ láìsí òbìrìkítí òde tí a nílò, tó ń mú kí ètò kọ̀ wọ́n sílẹ̀. |
+| **Ìpele Serialization** | Àtìlẹ́yìn XML òṣùnwọ̀n àti JSON tó bá ISO mu (TS 23029) | Ó jẹ́ kí ìyípadà tààrà àárín àwọn ẹrù XML àti JSON ṣeé ṣe, tó ń ṣe àtìlẹ́yìn fún REST API òde-òní àti ṣíṣàn Kafka. | Àwọn àpẹẹrẹ dátà tó ya ìpin tó ń tako àwọn ìtọ́sọ́nà ISO òṣèlú. |
+| **Ìpele Observability** | Ìfàyàrá OpenTelemetry tó dá lórí UETR | Ó ń mú àwọn ọ̀nà ìṣiṣẹ́ àti àkọsílẹ̀ tí a ṣàlàyé, tó ń pèsè agbára àyẹ̀wò àkókò gangan. | Àwọn aafo ìfàyàrá tí ń dí ìríran ìṣiṣẹ́ àti àyẹ̀wò lọ́nà. |
 
-## Àwọn Àmì Láti Tọ́jú
+## Àwọn Àmì Interbank àti Àwọn Ìpàdé Òfin Pàtàkì
 
-| Àmì | Ohun Tí Ó Túmọ̀ Sí | Ìtọ́kasí |
-|---|---|---|
-| **Ìpamọ́ pacs008** | Iṣẹ́ náà fojúsùn àdàṣe gbígbé awin onibara FI-to-FI ISO 20022 | [pacs008 ⧉](https://github.com/sebastienrousseau/pacs008 "ìpamọ́ pacs008") |
-| **Àmì SWIFT November 2026** | Ìmúratán àdírẹ́sì tó ní ètò di ọjọ́ ìparí dídára ìsanwó | [SWIFT ⧉](https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed "Àmì ISO 20022 SWIFT") |
-| **Iye dátà ISO 20022** | Dátà ìsanwó tó ní ètò ń dá iye ìbámu àti àlàyé sílẹ̀ | [SWIFT ISO 20022 ⧉](https://www.swift.com/standards/iso-20022 "SWIFT ISO 20022") |
-| **Ìṣàmúlò Python** | Iṣẹ́ náà wà ní àárọ̀ fún àwọn olùṣèlò ìsanwó àti ẹgbẹ́ irinṣẹ́ iṣẹ́ | [pacs008 ⧉](https://github.com/sebastienrousseau/pacs008 "ìpamọ́ pacs008") |
-| **Ìfojúsùn interbank** | Ìpamọ́ náà bá iṣẹ́ ìsanwó òṣùnwọ̀n àti ìbárasọ̀rọ̀ mu | [pacs008 ⧉](https://github.com/sebastienrousseau/pacs008 "ìpamọ́ pacs008") |
+Láti fi ìfaradà ìṣiṣẹ́ ìṣòwò hàn, àwọn olùṣàkóso imọ̀-ẹ̀rọ àgbà àti ewu gbọ́dọ̀ tọ́jú àwọn àmì ìbámu pàtó, tí a lè wọn:
 
-## Ìdí Tí pacs.008 Fi Tọ́ Sí Àpilẹ̀kọ Tirẹ̀
+| Àmì | Òṣùnwọ̀n / Ìwọ̀n Ìṣiṣẹ́ | Ìtọ́kasí G20 / SWIFT / DORA | Ìṣàmúlò Pẹpẹ Imọ̀-ẹ̀rọ |
+|---|---|---|---|
+| **Ìbámu Àdírẹ́sì Tó Ní Ètò** | % àwọn ìránṣẹ́ pacs.008 tí ó ń lo àwọn pápá `<PstlAdr>` tó ní ètò gbangba pẹ̀lú `<TwnNm>` àti `<Ctry>` tí a tọ́ka sí. | Ọjọ́ Ìparí SWIFT SR 2026 | Àwọn àyẹ̀wò àwòkọ́ṣe ṣáájú-òfo nínú pacs008 tó ń kọ àwọn ìlà àdírẹ́sì láìní ètò sílẹ̀. |
+| **SEPA Verification of Payee** | Ìfọwọsì ìbáramu láàárín orúkọ olùgbà àti IBAN kí ìṣiṣẹ́ ìránṣẹ́ tó bẹ̀rẹ̀. | Òfin SEPA VoP | Àwọn kíláàsì olùrànlọ́wọ́ VoP tí a sin sí inú tó ń ṣe àwọn ìbéèrè ìfọwọsì ṣáájú lórí IBAN/BIC. |
+| **Ìṣọ̀kan BAH head.001** | Ìdá àwọn ẹrù ìsanwó tó ń jáde tí a fi pamọ́ ní àṣeyọrí sínú Business Application Headers. | Àwọn Ìtọ́sọ́nà TARGET2 / CBPR+ | Ètò ìfìpamọ́ BAH tó ń kọ òbìrìkítí XML òde sílẹ̀ lọ́nà àdàṣe. |
+| **Òṣùnwọ̀n Modulo LEI** | Ìfọwọsì àmì-tó-yà ISO 7064 Modulo 97-10 lórí àwọn òbìrìkítí `<LEI>` olùdá àti olùgbà. | Àṣẹ Bank of England | Olùyẹ̀wò àlgorithm tó ń jẹ́rìí sí ìjásí àmì-ìdánimọ̀ ẹ̀yà-20. |
+| **Ìjásí Ìfàyàrá UETR** | 100% ti àwọn ìsanwó tí a ṣẹ̀dá ni a fi Unique End-to-End Transaction Reference tó tọ́ kún. | Àwọn Ìtọ́kasí UETR SWIFT | Ìṣẹ̀dá àdàṣe àti ìfàyàrá ti àmì-ìtọ́kasí UUIDv4 tó ní ẹ̀yà-36. |
 
-pain.001 ń bẹ̀rẹ̀ ìtọ́ni ìsanwó láti ọ̀dọ̀ onibara sí báńkì. pacs.008 ń gbé gbígbé awin onibara interbank. Ìyẹn jẹ́ kí ó wà ní ipo gangan ti ìṣàn iṣẹ́ láàárín àwọn báńkì. Bí ìránṣẹ́ pacs.008 bá rẹ̀wẹ̀sì, ìwádìí ìsanwó, àyẹ̀wò ìfòfindè, ìṣàrọ́, àti ìdúró máa jìyà.
+## Ìdí Tí Python Fi Jẹ́ Ọ̀nà Ìbẹ̀rẹ̀ Tó Bá Àdàṣe Interbank Mu
 
-## Àdírẹ́sì Tó Ní Ètò Gẹ́gẹ́ Bí Ààlà Àpẹẹrẹ
+Àwọn ìpamọ́ ìsanwó òde-òní àti àwọn ẹgbẹ́ iṣẹ́ ìṣàkóso owó ní 2026 gbára lé Python lọ́pọ̀ fún ìyípadà dátà, ìṣàpẹẹrẹ ìnáwó, àti ìṣọ̀kan ibi-ìpamọ́ dátà ERP.
 
-Yíyọ àwọn àdírẹ́sì láìní ètò kúrò ní November 2026 yẹ kí a tọ́jú gẹ́gẹ́ bí ààlà imọ̀-ẹ̀rọ, kìí ṣe àkọsílẹ̀ ìbámu lásán. Àwọn ìfilọ́lẹ̀ ìsanwó nílò láti gba dátà ẹgbẹ́ tó ní ètò ní orísun, dán an wò ní kíákíá, kí a sì pa á mọ́ títí dé ìṣẹ̀dá ìránṣẹ́.
+Nípa lílo ìwé-ìkàwé Python orisun ṣiṣi, àwọn ilé-ìṣirò owó ń jẹ àǹfààní ńlá:
 
-## Ìtàn Olùṣèlò
+1. **Ẹrù ìmọ̀ kéré àti ìbárasọ̀rọ̀ ga.** Python ń ṣiṣẹ́ gẹ́gẹ́ bí afárá tó so àwọn nǹkan pọ̀. Ó ń jẹ́ kí àwọn olùṣèlò kọ àwọn ìwé-ìṣirò rọrùn tó ń fa àwọn ìtọ́ni ìsanwó òṣùwọ̀n láti àwọn ibi-ìpamọ́ dátà àtijọ́, tó ń fọwọsi wọ́n lòdì sí àwọn òfin ìṣiṣẹ́ báńkì àgbáyé tó nira, tó sì ń tú XML tó bá ìbámu mu jáde nínú ọ̀nà iṣẹ́ ọ̀kan tí a so pọ̀.
+2. **Ìparẹ́ àwọn olùyípadà "black-box" tí kò ṣàlàyé.** Àwọn ọ̀nà báńkì òṣèlú máa ń gba owó ìwé-àṣẹ ńlá fún àwọn olùyípadà fáìlì ìsanwó àdáyé. Àwọn olùyípadà yẹn jẹ́ àwọn àpòti dúdú òṣèlú, èyí tó ń mú kí ó ṣòro fún àwọn ẹgbẹ́ ààbò láti ṣàyẹ̀wò bí a ṣe ń ṣiṣẹ́ dátà tàbí ibi tí a ti pa àwọn kọ́kọ́rọ́ mọ́. Ìwé-ìkàwé orisun ṣiṣi, tó ṣeé ṣàyẹ̀wò bíi pacs008 ń ṣe ìdáńdé ìfihàn kóòdù kíkún.
+3. **Ìṣọ̀kan CI/CD tó rọrùn.** pacs008 ń wọ̀ tààrà sí inú àwọn ìpamọ́ ìṣọ̀kan àti ìṣàfilọ́lẹ̀ tó ń bá a lọ, tó ń jẹ́ kí àwọn olùṣèlò ṣe àdàṣe ìdánwò fáìlì ìsanwó gẹ́gẹ́ bí ara àyè ìfilọ́lẹ̀ sọ́fíítìwérì wọn.
 
-Àpilẹ̀kọ pacs.008 tó dára gbọ́dọ̀ ní àwòkọ́ṣe ìrò olùṣèlò: kọ́ ohun ìsanwó, fọwọsi àwọn pápá pàtàkì, ṣe XML, ṣe àyẹ̀wò àwòkọ́ṣe, dán wò pẹ̀lú àwọn àkókò tó dúró fún ọ̀rọ̀ náà, kí a sì so àbájáde pọ̀ mọ́ àwọn ọ̀nà báńkì tàbí àwọn ọ̀nà ìpilẹ̀ ọjà.
+## Ṣíṣe Ìpèsè Ọ̀nà Interbank Tó Ní Àlọ́
 
-## Kínní Èyí Túmọ̀ Sí Nípa Àwùjọ
+Ààlà pàtàkì kan ní ìpinnu interbank ni "ìṣẹ̀dá òbìrìkítí láìní ìṣàkóso" — ṣíṣe àwọn fáìlì láìsí àyè ìfọwọsì tó ní ààlà tó kedere. A ti ṣe àpẹẹrẹ pacs008 láti ṣiṣẹ́ gẹ́gẹ́ bí ẹ̀rọ ìfọwọsì ìpìlẹ̀ nínú ọ̀nà ìṣòwò onípele-pupọ̀ tí a ṣàkóso ní gbígbóná.
 
-### Fún Àwọn Olórí Imọ̀-ẹ̀rọ Báńkì
+Ọ̀nà ìṣiṣẹ́ tó wà nísàlẹ̀ ń fi hàn bí dátà ìṣòwò òṣùwọ̀n ṣe ń kọjá inú ọ̀nà pacs008 láti ṣẹ̀dá fáìlì pacs.008 tó ní ààbò ìpamọ́, tó bá àwòkọ́ṣe mu, tí a fi pamọ́ sínú òbìrìkítí BAH:
 
-Ìbéèrè náà ni bóyá iṣẹ́ náà lè ṣe ìrànlọ́wọ́ láti yí ìnira ìlànà padà di àpẹẹrẹ tí a lè ṣe. Iye náà tó lágbára jùlọ nígbà tí ìpamọ́ bá fún àwọn ẹgbẹ́ ní ohun gangan láti ṣàyẹ̀wò: àtúnṣe, ìṣèrò, àwọn ìdánwò, ààlà ààbò, àwọn àbá ìṣètò, àti àwọn ipò ìkùnà.
+```mermaid
+graph TD
+    subgraph Raw_Corporate_Data_Ingestion [Raw Corporate Data Ingestion]
+        A1[ERP Ingestion / CSV File] --> Ingest[Ingestion Interface]
+        A2[Clearing DB / SQLite / Parquet] --> Ingest
+        A3[FastAPI REST API / JSON] --> Ingest
+    end
+    subgraph pacs008_Validation_Core [pacs008 Validation Core]
+        Ingest --> B{Pre-Flight Field Checker}
+        B -->|Invalid BIC / IBAN / LEI| C[Halt & Generate Error Log]
+        B -->|Data Complete| D[Address Restructuring Engine]
+        D -->|Compile Address to structured tags| E[XML Generator Engine]
+        E -->|Wrap in head.001 BAH| F[XSD Conformance Evaluator]
+    end
+    subgraph Secure_Interbank_Transmission [Secure Interbank Transmission]
+        F -->|Schema Validation Fails| G[Halt & Reject Batch]
+        F -->|Schema Validated 100%| H[Symmetric Encryption / GPG Signer]
+        H -->|Encrypted head.001 + pacs.008| I[TARGET2 / CHAPS Gateway]
+    end
+    style B fill:#fef2f2,stroke:#ef4444,stroke-width:1px
+    style F fill:#eff6ff,stroke:#3b82f6,stroke-width:2px
+    style I fill:#f0fdf4,stroke:#22c55e,stroke-width:2px
+```
 
-### Fún Àwọn Ẹgbẹ́ Ààbò àti Ewu
+## Ìwé-Ìṣiṣẹ́ Bọ́ọ̀dù àti Ojúṣe Ìṣàkóso
 
-A gbọ́dọ̀ ṣàyẹ̀wò iṣẹ́ náà kìí ṣe fún àwọn ẹ̀yà nìkan ṣùgbọ́n fún ẹ̀rí ìṣàkóso. Ìpilẹ̀ ìnáwó orisun ṣiṣi tó wúlò ń fi hàn bí ìdánimọ̀, àṣírí, ìfọwọsì, àkọsílẹ̀ àyẹ̀wò, àwọn ààlà, ìfọwọ́sí, orísun, àti ìpadàbọ̀ ṣe ní láti ṣiṣẹ́.
+Àdàṣe ìsanwó interbank jẹ́ ìṣòro ìṣàkóso ewu àti ìṣèlú-ilé-iṣẹ́ ní ipele bọ́ọ̀dù. Àwọn olùṣàkóso àgbà gbọ́dọ̀ kojú dídára dátà ìṣòwò nípasẹ̀ ojú ojúṣe àti ìdín ewu ìṣiṣẹ́ kù:
 
-### Fún Àwọn Olùṣèlò àti Ẹlẹ́rọ̀ Pẹpẹ
+- **DORA Àpilẹ̀kọ 5 (Ojúṣe Bọ́ọ̀dù).** Ó fi ojúṣe tààrà, ti ara ẹni lé àwọn ọmọ ẹgbẹ́ bọ́ọ̀dù lórí ìfaradà àti ààbò ìṣiṣẹ́ ICT ti ilé-iṣẹ́. Nítorí pé ìpinnu interbank jẹ́ iṣẹ́ ilé-iṣẹ́ pàtàkì, àwọn bọ́ọ̀dù gbọ́dọ̀ fi hàn pé wọ́n ti ṣe àwọn ìṣàkóso ìṣòwò tó lágbára, tí a fọwọsi, tí a sì ṣe àdàṣe láti dáàbò bo àwọn ìdíwọ́ ìṣiṣẹ́ tàbí àwọn ìsanwó tí ó ń dúró.
+- **BCBS 239 (Àkójọpọ̀ Dátà Ewu àti Ìròyìn).** Ó ń béèrè pé kí ìròyìn ìṣòwò ìnáwó dájú, kí ó pé, kí a sì ṣẹ̀dá rẹ̀ ní àkókò gangan. pacs008 ń ràn àwọn ilé-ìṣirò owó lọ́wọ́ láti ṣe àṣeyọrí ìbámu BCBS 239 nípa ṣíṣe ìdáńdé pé dátà ìsanwó ní ètò mímọ́ tí a sì fọwọsi ní orísun, tó ń pa àwọn aafo dátà àti àwọn àṣìṣe ìbárasọ̀rọ̀ àfọwọ́ tó ń yọ àwọn spreadsheet àtijọ́ lẹ́nu kúrò.
+- **Ìdín Owó Ewu Ìṣiṣẹ́ kù (Basel III).** Lábẹ́ àwọn ìtọ́sọ́nà Basel III, oṣuwọn àṣìṣe ìsanwó tó ga àti ẹrù àfọwọ́sí àfọwọ́ ń mú kí àwọn ìbéèrè owó ewu ìṣiṣẹ́ báńkì pọ̀ sí i, èyí tó ń di owó tí a lè lò fún awin tàbí ìnáwó. Àdàṣe ọ̀nà ìsanwó ń dín àwọn ìṣanwó owó yẹn kù tààrà, tó ń pa iye iwé-ìṣirò mọ́.
 
-Ìdánwò tó ṣe pàtàkì jùlọ ni bóyá iṣẹ́ náà ń dín ẹrù ìmọ̀ kù láìfi àwọn ohun pàtàkì pa mọ́. Orisun ṣiṣi tó dára gbọ́dọ̀ sọ ọ̀nà tó ní ààbò di ọ̀nà tó rọrùn jùlọ, kí ó sì jẹ́ kí àwọn ẹlẹ́rọ̀ tó ní ìrírí ní agbára láti lóye àti ṣe àyípadà sí ìṣàmúlò náà.
+## Kínní Èyí Túmọ̀ Sí Nípa Irú Báńkì
 
-### Fún Àwọn Olùdàrapọ̀
+### Àwọn Báńkì Pàtàkì Ètò Àgbáyé (G-SIBs)
 
-Àǹfààní ni láti fún iṣẹ́ náà lágbára níbi tí àwọn ilé-iṣẹ́ gidi nílò ìdánilójú: àkọsílẹ̀, àpẹẹrẹ, ìdánwò ìbámu, ìfagbára CI, àwòkọ́ṣe ìhalẹ̀, àwọn ìròyìn ìṣiṣẹ́, àyẹ̀wò ìráyé, àti àwọn ìtọ́sọ́nà ìṣọ̀kan.
+Àwọn G-SIBs ń ṣàkóso àwọn iye ìṣòwò ilé-iṣẹ́ ńlá, tó kọjá ààlà. Ìnira ìpìlẹ̀ wọn ni àtúnṣe dátà àtijọ́ láìní ètò kí ó tó dé nẹ́tíwọ́kì ìpinnu. Nípa fífi pacs008 sí inú àwọn ọ̀nà báńkì ilé-iṣẹ́ wọn, àwọn G-SIBs lè pèsè àwọn irinṣẹ́ ìfọwọsì àdàṣe fún àwọn oníbàátì ilé-iṣẹ́ wọn, tó ń dín ẹrù àtúnṣe ìsanwó àfọwọ́ kù, tó sì ń dáàbò bo ìṣiṣẹ́ àkókò gangan kọjá nẹ́tíwọ́kì SWIFT.
 
-## Ìparí
+### Àwọn Báńkì Ìṣòwò àti Ilé-iṣẹ́
 
-Ìdí láti kọ̀wé nípa pacs008 ni pé ó yí ìṣòro ilé-iṣẹ́ gbigbòòrò sí ohun gangan. Ní 2026, àwọn báńkì kò nílò èdè ìyípadà àbá-èrò mọ́. Wọ́n nílò àwọn ètò tí a lè ṣàyẹ̀wò tó fi hàn bí a ti lè kọ́, dáàbò, dán, kí a sì ṣàkóso ìpilẹ̀ òde-òní. Orisun ṣiṣi ni ọ̀nà tó ní ìgbẹ́kẹ̀lé jùlọ láti sọ ìjásí yẹn di hàn.
+Fún àwọn báńkì ìṣòwò, dídára dátà ìsanwó jẹ́ àyà ìdánilójú ìjà. Nípa fífi irinṣẹ́ ìfọwọsì orisun ṣiṣi, tó ṣeé ṣàyẹ̀wò bíi pacs008 fún àwọn oníbàátì ìṣàkóso owó ilé-iṣẹ́, àwọn báńkì wọnyí lè yára ìṣàkóso onibara, dín ìkọ̀sílẹ̀ fáìlì ìsanwó kù, kí wọ́n sì kọ́ ìgbẹ́kẹ̀lé oníbàátì nípasẹ̀ oṣuwọn ìṣiṣẹ́ tààrà tó ga.
+
+### Àwọn Báńkì Àgbègbè àti Kéékèèké
+
+Àwọn báńkì àgbègbè gbọ́dọ̀ pa ìbámu pẹ̀lú àwọn òṣùnwọ̀n ìsanwó àgbáyé mọ́ láìsí àwọn ìnáwó imọ̀-ẹ̀rọ ńlá ti G-SIBs. pacs008 ń pèsè ọ̀nà tó fẹ́rẹ̀ẹ́, tó wọ́pọ̀, tó sì bá ìbámu mu gbangba, tí ó dá lórí Python, tó ń jẹ́ kí àwọn ilé-ìṣirò kéékèèké pèsè agbára ìbẹ̀rẹ̀ ìsanwó òde-òní tó ní ètò láìsí àwọn ìwé-àṣẹ middleware òṣèlú tó wọ́n.
+
+## Ìparí: Ìwé-Òpópó Ìpinnu Interbank
+
+Ọjọ́ ìparí àdírẹ́sì tó ní ètò SWIFT November 2026 tó ń bọ̀ jẹ́ ààlà lílera fún àwọn iṣẹ́ ìṣàkóso owó ilé-iṣẹ́. Gbígbára lé àwọn spreadsheet àtijọ́, ìfikún dátà àfọwọ́, àti àwọn fáìlì ìsanwó láìní ètò jẹ́ ewu iṣẹ́ ṣíṣe.
+
+Láti dáàbò bo ìtẹ̀síwájú ìṣòwò àti dín ẹrù ìṣiṣẹ́ kù, àwọn olùṣàkóso imọ̀-ẹ̀rọ àti ìnáwó àgbà gbọ́dọ̀ ṣe ìwé-òpópó ìpinnu kedere lónìí:
+
+1. **Fi agbára mú ìfọwọsì ní orísun.** Ṣe àṣẹ pé gbogbo àwọn ìtọ́ni ìsanwó gbọ́dọ̀ ní ìfọwọsì àti ìṣàkójọpọ̀ gẹ́gẹ́ bí àwọn àwòkọ́ṣe XSD ISO 20022 òṣèlú kí ó tó jáde kúrò ní àwọn ààlà ERP ilé-iṣẹ́.
+2. **Ṣàyẹ̀wò ọ̀nà dátà.** Yí ọ̀nà padà kúrò ní ìṣiṣẹ́ spreadsheet àfọwọ́, kí o sì fi àwọn iṣẹ́ Python àdàṣe, tó ṣeé ṣàyẹ̀wò sí ipò ní lílo pacs008.
+3. **Ṣe àdàṣe ààbò híbírídì.** Ṣe ìdáńdé pé a fi àmì sí àwọn fáìlì ìsanwó tí a ṣẹ̀dá, tí a sì fi pamọ́ kí a tó fi ránṣẹ́, tó ń pàdé ìfojúsùn nẹ́tíwọ́kì zero-trust.
+4. **Bá àwọn ààyò ìṣàkóso mu.** Ṣe ìròyìn àwọn òṣùnwọ̀n àdàṣe ìsanwó àti dídára dátà sí bọ́ọ̀dù lọ́nà ìṣètò, kí o sì fi ìnáwó hàn gẹ́gẹ́ bí ètò ìdín ewu ìṣiṣẹ́ pàtàkì lábẹ́ DORA.
 
 ## Àwọn Ìbéèrè Tí A Ń Béèrè Léraléra
 
-**Kínní pacs.008?**
+**Ǹjẹ́ pacs008 bá àwọn òfin àdírẹ́sì SWIFT SR 2026 tó ń bọ̀ mu?**
 
-pacs.008 jẹ́ ìránṣẹ́ ISO 20022 FI-to-FI gbígbé awin onibara tí a ń lò láàárín àwọn ilé-ìṣirò owó.
+Bẹ́ẹ̀ ni. A ti ṣe àpẹẹrẹ pacs008 láti ṣe àtìlẹ́yìn fún àmì àdírẹ́sì tó ní ètò SWIFT November 2026 tó lera, tó ń fi agbára mú ìpínyà àwọn ẹ̀yà àdírẹ́sì ìfìránṣẹ́ (ìlú, orílẹ̀-èdè, kóòdù ìfìránṣẹ́) sí àwọn pápá XML ISO 20022 tí a tọ́ka sí.
 
-**Báwo ni ó ṣe yàtọ̀ sí pain.001?**
+**Ǹjẹ́ pacs008 lè fi àwọn ẹrù ìsanwó pamọ́ sínú Business Application Headers?**
 
-pain.001 jẹ́ ìbẹ̀rẹ̀ ìsanwó láti ọ̀dọ̀ onibara sí báńkì lọ́pọ̀ ìgbà, nígbà tí pacs.008 jẹ́ ìránṣẹ́ gbígbé awin onibara láàárín báńkì.
+Bẹ́ẹ̀ ni. Nítorí pé pacs008 ń ṣe àtìlẹ́yìn ìfìpamọ́ Business Application Header (BAH head.001) ní àkójọpọ̀, ó ń kọ òbìrìkítí òde tí a nílò fún àwọn nẹ́tíwọ́kì TARGET2, CHAPS, àti CBPR+ sílẹ̀ lọ́nà àdàṣe.
 
-**Ìdí tí àdírẹ́sì tó ní ètò fi ṣe pàtàkì?**
+**Ìdí tí ó fi yẹ kí a fẹ́ ìwé-ìkàwé orisun ṣiṣi ju àwọn olùyípadà fáìlì òṣèlú?**
 
-Àwọn pápá àdírẹ́sì tó ní ètò ń dín ìṣèyèméjì kù, ń mú àyẹ̀wò ìbámu dára si, ó sì ń ṣe ìrànlọ́wọ́ láti pàdé àwọn ìbéèrè nẹ́tíwọ́kì ìsanwó.
+Àwọn olùyípadà òṣèlú jẹ́ àpòti dúdú tí kò ṣàlàyé, èyí tó ń mú kí àyẹ̀wò ààbò ṣòro láti ṣe. Ìwé-ìkàwé orisun ṣiṣi, tí a ti ṣàyẹ̀wò nípasẹ̀ àwọn ọmọ ẹgbẹ́ bíi pacs008 ń pèsè ìfihàn kóòdù kíkún, tó ń jẹ́ kí àwọn ẹgbẹ́ ààbò fọwọsi pé kò sí dátà ìsanwó tó ní ìmọ̀-ìjìnlẹ̀ tí a ń fihàn lákòókò ìṣiṣẹ́.
 
-**Ta ni ó yẹ kí ó ka àpilẹ̀kọ yìí?**
+**Àwọn àmì-ìdánimọ̀ wo ni pacs008 ń fọwọsi?**
 
-Àwọn àpẹẹrẹ ìsanwó, àwọn olùṣèlò ISO 20022, àwọn ẹgbẹ́ iṣẹ́ báńkì, àwọn olùkọ́ fintech, àti àwọn ẹgbẹ́ ọjà báńkì ìṣòwò.
+pacs008 wá pẹ̀lú àwọn olùfọwọsì tí a sin sí inú fún Bank Identifier Codes (BICs) àti Legal Entity Identifiers (LEIs) ní lílo ìṣirò òṣùnwọ̀n ISO 7064 Modulo 97-10, pẹ̀lú ìfọwọsì àmì-tó-yà IBAN àti àwọn àyẹ̀wò ìyàtọ̀ UETR.
 
 ## Àwọn Ìtọ́kasí
 
-- GitHub, (2026). [Ìpamọ́ pacs008 ⧉](https://github.com/sebastienrousseau/pacs008 "Ìpamọ́ pacs008").
-- SWIFT, (2026). [Àmì àdírẹ́sì tó ní ètò ISO 20022 November 2026 ⧉](https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed "Àmì àdírẹ́sì tó ní ètò ISO 20022 November 2026").
-- SWIFT, (2026). [Àkótán ISO 20022 ⧉](https://www.swift.com/standards/iso-20022 "Àkótán ISO 20022").
+- SWIFT, (2024). *ISO 20022 November 2026 Structured Address Milestone*. La Hulpe: SWIFT. Wà ní: [Àmì ISO 20022 SWIFT ⧉](https://www.swift.com/standards/iso-20022/iso-20022-bytes/call-action-november-2026 "Àmì ISO 20022 SWIFT").
+- Basel Committee on Banking Supervision (BCBS), (2013). *Principles for effective risk data aggregation and risk reporting (BCBS 239)*. Basel: Bank for International Settlements. Wà ní: [Àwọn Àṣàrò BCBS 239 ⧉](https://www.bis.org/publ/bcbs239.htm "Àwọn àṣàrò BCBS 239").
+- European Parliament and Council of the European Union, (2022). *Regulation (EU) 2022/2554 on digital operational resilience for the financial sector (DORA)*. Brussels: Official Journal of the European Union. Wà ní: [Òfin DORA ⧉](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554 "Òfin DORA").
+- GitHub, (2026). *Ìpamọ́ orisun ṣiṣi pacs008*. Wà ní: [Ìpamọ́ pacs008 ⧉](https://github.com/sebastienrousseau/pacs008 "Ìpamọ́ pacs008").
+
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Nípa Onkọ̀wé"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Onímọ̀ ẹ̀rọ bánkì àgbà tí ó ń kọ nípa AI tí a lo, ìgbékalẹ̀ ìsanwó, owó tókènì, ISO 20022, ààbò post-quantum, iṣẹ́ ìnáwó cloud-native, ìpilẹ̀ orisun ṣiṣi, àti àwọn ọjà oníbàátì tí a ṣàkóso.</span><span class="author-credentials">Ọdún 20+ kọjá HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profaìlì kíkún</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Nípa Onkọ̀wé"><img alt="Àwòrán Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Onímọ̀ ẹ̀rọ báńkì àgbà tó ń kọ nípa AI tí a lò, ìṣíkiri ISO 20022, ìpamọ́ post-quantum fún iṣẹ́ ìnáwó, àti ìmúlò ìpilẹ̀ ti àwọn ìsanwó òṣùnwọ̀n.</span><span class="author-credentials">Ọdún 20+ kọjá HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profaìlì kíkún</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Àyẹ̀wò tó kẹ́yìn <time datetime="2026-06-15">2026-06-15</time>.</p>
+<aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Àwọn àpilẹ̀kọ tó jẹ mọ́ ọn</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-19-global-wholesale-payments-economics-2026" class="related-media" aria-label="Ìsanwó Òṣùnwọ̀n Àgbáyé ní 2026: ISO 20022, Ìmúlò RTGS, àti Ọrọ̀-ajé Ìbárasọ̀rọ̀" tabindex="-1"><img alt="Àwòrán ìkọ́lé ìsanwó òṣùnwọ̀n àgbáyé fún 2026 tó ń fi ISO 20022, ìmúlò RTGS, àwọn ọ̀nà kọjá ààlà, àwọn àkókò owó wíwà, àti àwọn ìdánwò ìpinnu DLT hàn" src="https://cloudcdn.pro/stocks/images/meiying-ng-OrwkD-iWgqg.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-19-global-wholesale-payments-economics-2026">Ìsanwó Òṣùnwọ̀n Àgbáyé ní 2026: ISO 20022, Ìmúlò RTGS, àti Ọrọ̀-ajé Ìbárasọ̀rọ̀</a></h3><p><time datetime="2026-05-19">2026-05-19</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026" class="related-media" aria-label="AI gẹ́gẹ́ bí Ètò Ìṣiṣẹ́ Ìsanwó: Jìbìtì, Ìṣàrọ́, Ìfaradà, àti Ìbámu ní 2026" tabindex="-1"><img alt="Àwòrán ètò ìṣiṣẹ́ ìsanwó AI tó ń fi ìṣirò jìbìtì, ìṣàrọ́ ọ̀nà-pupọ̀, àsọtẹ́lẹ̀ owó wíwà, dátà ISO 20022, àyẹ̀wò ìbámu, àti àtúnṣe ìjásí hàn" src="https://cloudcdn.pro/api/transform?url=/stocks/images/corporate-finance.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026">AI gẹ́gẹ́ bí Ètò Ìṣiṣẹ́ Ìsanwó: Jìbìtì, Ìṣàrọ́, Ìfaradà, àti Ìbámu ní 2026</a></h3><p><time datetime="2026-05-27">2026-05-27</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-12-iso-20022-pacs008-structured-address-deadline" class="related-media" aria-label="Ọjọ́ Ìparí Àdírẹ́sì Tó Ní Ètò pacs.008 November 2026: Èèdì Oṣù Mẹ́fà" tabindex="-1"><img alt="Àwòrán àdírẹ́sì tó ní ètò ISO 20022 pacs.008 — àwọn pápá ìránṣẹ́ ìsanwó kọjá ààlà pẹ̀lú TwnNm àti Ctry tí a tọ́ka sí" src="https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-12-iso-20022-pacs008-structured-address-deadline">Ọjọ́ Ìparí Àdírẹ́sì Tó Ní Ètò pacs.008 November 2026: Èèdì Oṣù Mẹ́fà</a></h3><p><time datetime="2026-05-12">2026-05-12</time></p></footer></article>
+</div>
+</aside>
 <!-- enrich-end -->
