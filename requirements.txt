@@ -2,10 +2,10 @@
 # Keep this list minimal — every package here runs in CI and locally on
 # every build. Dev tooling (ruff, pytest) is pinned in CI workflows
 # directly so it doesn't drift with the build deps.
-markdown-it-py>=3,<4
-rjsmin>=1.2,<2
-rcssmin>=1.2,<2
+markdown-it-py>=4.2.0,<5
+rjsmin>=1.2.5,<2
+rcssmin>=1.2.2,<2
 # Canonical taxonomy (_data/taxonomy.yml) drives build_tags + the per-tag
 # landings, paged listings, RAG corpus, and the editorial check_taxonomy
 # audit. PyYAML is the only YAML parser these generators need.
-PyYAML>=6,<7
+PyYAML>=6.0.3,<7
