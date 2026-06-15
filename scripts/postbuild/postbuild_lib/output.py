@@ -285,6 +285,38 @@ def build_llms_txt() -> str:
     out.append(f"- [French RSS]({base}/fr/rss.xml)")
     out.append(f"- [French sitemap]({base}/fr/news-sitemap.xml)")
     out.append("")
+    out.append("## RAG corpus + oEmbed (machine-readable surfaces)")
+    out.append("")
+    out.append(
+        f"- [/feed.jsonl]({base}/feed.jsonl) — full editorial corpus, "
+        f"newline-delimited JSON, one record per article with title, "
+        f"summary, body_markdown, body_text, tags, pillars, license."
+    )
+    out.append(
+        f"- [/tags/<slug>/feed.jsonl]({base}/tags/iso-20022/feed.jsonl) — "
+        f"per-canonical-tag subsets (51 tags today; substitute any "
+        f"canonical slug from taxonomy.yml)."
+    )
+    out.append(
+        f"- [/oembed/<slug>.json]({base}/oembed/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026.json) — "
+        f"static oEmbed metadata per article. Notion / Discord / Slack / "
+        f"WordPress / Atlassian consume this directly."
+    )
+    out.append(
+        "- [/tags/](https://sebastienrousseau.com/tags/) — curated "
+        "6-pillar editorial cover with featured tags and per-tag "
+        "collapsible article lists."
+    )
+    out.append(
+        f"- [/categories/<pillar>/]({base}/categories/ai/) — per-pillar "
+        f"landing pages (ai, payments, infra, policy, open-source, "
+        f"leadership) with the tags + recent articles in each."
+    )
+    out.append(
+        f"- [/.well-known/ai.txt]({base}/.well-known/ai.txt) — AI usage "
+        f"policy (attribution + license terms)."
+    )
+    out.append("")
     out.append("## Areas of expertise")
     out.append("")
     out.append("- Applied artificial intelligence in banking")
@@ -315,6 +347,86 @@ def build_llms_txt() -> str:
 def write_llms_txt(public: Path) -> bool:
     target = public / "llms.txt"
     new = build_llms_txt()
+    cur = target.read_text(encoding="utf-8") if target.is_file() else ""
+    if cur == new:
+        return False
+    target.write_text(new, encoding="utf-8")
+    return True
+
+
+def build_ai_txt() -> str:
+    """Render `/.well-known/ai.txt` — AI usage policy. Format follows
+    the emerging ai.txt convention used by Substack, GitHub, and
+    several IETF drafts. Tells AI clients what they can and can't do
+    with the content, while keeping the corpus broadly available for
+    summarisation + citation under CC-BY-4.0.
+    """
+    base = "https://sebastienrousseau.com"
+    lines = [
+        "# AI usage policy for sebastienrousseau.com",
+        "# Format: emerging ai.txt convention (ai.txt @ /.well-known/).",
+        "# Last reviewed: 2026-06-13",
+        "",
+        "Author: Sebastien Rousseau",
+        f"Site: {base}/",
+        "License: CC-BY-4.0",
+        "",
+        "## Allow",
+        "",
+        "- Indexing for AI search (Perplexity, You.com, ChatGPT Search,",
+        "  Bing Copilot, Google AI Overviews, Brave Leo).",
+        "- Summarisation in answers to user questions.",
+        "- Citation in generative AI output, provided the canonical URL",
+        "  is preserved in the citation.",
+        "- Use in RAG pipelines, vector stores, and MCP servers (see",
+        f"  the RAG-ready corpus at {base}/feed.jsonl).",
+        "- Training of derivative AI models, provided each training",
+        "  example carries the canonical URL and CC-BY-4.0 attribution",
+        "  in metadata, AND the resulting model's documentation lists",
+        "  this domain as a training source.",
+        "",
+        "## Require",
+        "",
+        "- Attribution: include the canonical article URL in answers,",
+        "  summaries, and any derived content (CC-BY-4.0 §3.a.A).",
+        "- Attribution: include the author name (Sebastien Rousseau)",
+        "  in cited material (CC-BY-4.0 §3.a.B).",
+        "- License: indicate CC-BY-4.0 when material is republished",
+        "  or used in derivative works (CC-BY-4.0 §3.a.D).",
+        "",
+        "## Do not",
+        "",
+        "- Strip the canonical URL or author attribution from derived",
+        "  content.",
+        "- Misrepresent the editorial position by selectively quoting",
+        "  out of context.",
+        "- Use the content for ad-targeting profile-building unrelated",
+        "  to the editorial subject matter.",
+        "",
+        "## Contact",
+        "",
+        "Sebastien Rousseau (London, UK)",
+        f"- Site: {base}/contact/",
+        "- LinkedIn: https://www.linkedin.com/in/sebastienrousseau/",
+        "",
+        "## Machine-readable surfaces",
+        "",
+        f"- {base}/feed.jsonl                    — full editorial corpus, RAG-ready",
+        f"- {base}/tags/<slug>/feed.jsonl        — per-canonical-tag subsets",
+        f"- {base}/oembed/<slug>.json            — per-article oEmbed metadata",
+        f"- {base}/.well-known/llm.txt           — LLM site index",
+        f"- {base}/llms.txt                      — same content at root for crawler compat",
+        f"- {base}/llms-ctx.txt                  — terse agent-context companion",
+        f"- {base}/llms-full.txt                 — full corpus dump as plain text",
+        "",
+    ]
+    return "\n".join(lines)
+
+
+def write_ai_txt(public: Path) -> bool:
+    target = public / ".well-known" / "ai.txt"
+    new = build_ai_txt()
+    target.parent.mkdir(parents=True, exist_ok=True)
     cur = target.read_text(encoding="utf-8") if target.is_file() else ""
     if cur == new:
         return False

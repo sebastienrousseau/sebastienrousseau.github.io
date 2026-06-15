@@ -169,21 +169,56 @@ def test_render_tag_badges_empty_returns_empty_string():
     assert _render_tag_badges([], LABELS_EN) == ""
 
 
-def test_render_tag_badges_en_uses_tags_prefix():
+def test_render_tag_badges_en_links_to_per_tag_landings(monkeypatch):
+    from postbuild_lib import article_furniture as af
     from postbuild_lib.article_furniture import LABELS_EN, _render_tag_badges
 
+    # WS3: tag chips now point at the new per-tag landing pages
+    # (/tags/<slug>/) instead of the legacy /tags/index.html#h3-…
+    # anchor on the retired monolith. The _has_landing gate skips the
+    # link wrapper for sub-threshold tags (no landing on disk); pretend
+    # every tag has a landing so we exercise the link-emission path.
+    monkeypatch.setattr(af, "_has_landing", lambda slug, lang="en": True)
     out = _render_tag_badges(["quantum", "ISO 20022"], LABELS_EN, lang="en")
-    assert "/tags/index.html#h3-quantum" in out
-    assert "/tags/index.html#h3-iso-20022" in out
+    assert '<a href="/tags/quantum/"' in out
+    assert '<a href="/tags/iso-20022/"' in out
     assert 'rel="tag"' in out
     assert 'aria-label="Topics"' in out
 
 
-def test_render_tag_badges_fr_uses_etiquettes_prefix():
+def test_render_tag_badges_fr_uses_etiquettes_prefix(monkeypatch):
+    from postbuild_lib import article_furniture as af
     from postbuild_lib.article_furniture import LABELS_FR, _render_tag_badges
 
+    monkeypatch.setattr(af, "_has_landing", lambda slug, lang="en": True)
     out = _render_tag_badges(["quantique"], LABELS_FR, lang="fr")
-    assert "/fr/etiquettes/index.html#h3-quantique" in out
+    assert '<a href="/fr/etiquettes/quantique/"' in out
+
+
+def test_render_tag_badges_ja_uses_tagu_prefix(monkeypatch):
+    """Spot-check a CJK locale to confirm the localised tags-path map
+    covers the full hreflang chain, not just FR."""
+    from postbuild_lib import article_furniture as af
+    from postbuild_lib.article_furniture import _render_tag_badges
+
+    monkeypatch.setattr(af, "_has_landing", lambda slug, lang="en": True)
+    labels = {"Topics": "トピック"}
+    out = _render_tag_badges(["AI"], labels, lang="ja")
+    assert '<a href="/ja/tagu/ai/"' in out
+
+
+def test_render_tag_badges_falls_back_to_span_when_no_landing(monkeypatch):
+    """Sub-threshold canonicals (< 3 posts) + non-canonical raw aliases
+    have no landing page emitted by build_tag_landings. Linking to
+    /tags/<slug>/ would 404 the strict-internal audit, so the chip
+    renders as plain <span> instead."""
+    from postbuild_lib import article_furniture as af
+    from postbuild_lib.article_furniture import LABELS_EN, _render_tag_badges
+
+    monkeypatch.setattr(af, "_has_landing", lambda slug, lang="en": False)
+    out = _render_tag_badges(["KyberLib"], LABELS_EN, lang="en")
+    assert '<span class="article-tag">KyberLib</span>' in out
+    assert "<a " not in out
 
 
 def test_render_meta_bar_includes_author_and_dates():
@@ -1823,3 +1858,1012 @@ def test_inject_lang_switcher_is_idempotent():
         af._alternates_for_en_slug = real
         af._resolve_en_slug = real_resolve
     assert once == twice
+
+
+# ---------------------------------------------------------------------------
+# inject_breadcrumbs — visible trail mirroring the BreadcrumbList JSON-LD
+# ---------------------------------------------------------------------------
+
+_CRUMB_BASE = "https://sebastienrousseau.com"
+_CRUMB_LD = (
+    '<script type="application/ld+json">{"@graph":[{"@type":"BlogPosting"},'
+    '{"@type":"BreadcrumbList","itemListElement":['
+    '{"@type":"ListItem","position":1,"name":"Home","item":"https://sebastienrousseau.com/"},'
+    '{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/articles/"},'
+    '{"@type":"ListItem","position":3,"name":"My Post","item":"https://sebastienrousseau.com/2026-01-01-my-post/"}'
+    "]}]}</script>"
+)
+_CRUMB_HERO = '<section class="ap-hero"><h1>My Post</h1></section>'
+
+
+def _crumb_page(ld: str = _CRUMB_LD, lang: str = "en-GB") -> str:
+    return f'<html lang="{lang}"><head>{ld}</head><body>{_CRUMB_HERO}<main></main></body></html>'
+
+
+def test_inject_breadcrumbs_no_op_without_blogposting():
+    from postbuild_lib.article_furniture import inject_breadcrumbs
+
+    html = "<p>plain page, no BlogPosting graph</p>"
+    assert inject_breadcrumbs(html) == html
+
+
+def test_inject_breadcrumbs_renders_trail_above_hero():
+    from postbuild_lib.article_furniture import inject_breadcrumbs
+
+    out = inject_breadcrumbs(_crumb_page())
+    assert '<nav class="crumbs" aria-label="Breadcrumb"><ol>' in out
+    assert '<li><a href="/">Home</a></li>' in out
+    assert '<li><a href="/articles/">Articles</a></li>' in out
+    assert '<a href="/2026-01-01-my-post/" aria-current="page">My Post</a>' in out
+    assert out.index('class="crumbs"') < out.index('class="ap-hero"')
+
+
+def test_inject_breadcrumbs_idempotent():
+    from postbuild_lib.article_furniture import inject_breadcrumbs
+
+    once = inject_breadcrumbs(_crumb_page())
+    assert inject_breadcrumbs(once) == once
+
+
+def test_inject_breadcrumbs_localizes_aria_label_french():
+    from postbuild_lib.article_furniture import inject_breadcrumbs
+
+    out = inject_breadcrumbs(_crumb_page(lang="fr-FR"))
+    assert 'aria-label="Fil d&#x27;Ariane"' in out
+
+
+def test_inject_breadcrumbs_escapes_title_html():
+    from postbuild_lib.article_furniture import inject_breadcrumbs
+
+    ld = _CRUMB_LD.replace("My Post", "Q&A <Rust>")
+    out = inject_breadcrumbs(_crumb_page(ld))
+    # The visible anchor escapes the JSON-LD name; the raw <Rust> stays
+    # only inside the (legitimately unescaped) JSON-LD script block.
+    assert 'aria-current="page">Q&amp;A &lt;Rust&gt;</a>' in out
+    assert ">Q&A <Rust></a>" not in out
+
+
+def test_inject_breadcrumbs_no_op_when_trail_not_three_levels():
+    from postbuild_lib.article_furniture import inject_breadcrumbs
+
+    ld = (
+        '<script type="application/ld+json">{"@graph":[{"@type":"BlogPosting"},'
+        '{"@type":"BreadcrumbList","itemListElement":['
+        '{"@type":"ListItem","position":1,"name":"Home","item":"https://sebastienrousseau.com/"}'
+        "]}]}</script>"
+    )
+    html = _crumb_page(ld)
+    assert inject_breadcrumbs(html) == html
+
+
+def test_breadcrumb_items_skips_malformed_and_non_breadcrumb_blocks():
+    from postbuild_lib.article_furniture import _breadcrumb_items
+
+    html = (
+        '<script type="application/ld+json">{"@type":"WebSite"}</script>'
+        '<script type="application/ld+json">{"BreadcrumbList" oops}</script>'
+        '<script type="application/ld+json">["BreadcrumbList"]</script>'
+    )
+    assert _breadcrumb_items(html) == []
+
+
+def test_breadcrumb_items_requires_dict_entries_with_string_fields():
+    from postbuild_lib.article_furniture import _breadcrumb_items
+
+    ld = (
+        '<script type="application/ld+json">'
+        '{"@type":"BreadcrumbList","itemListElement":['
+        '{"@type":"ListItem","position":1,"name":"Home","item":"https://sebastienrousseau.com/"},'
+        "null,"
+        '{"@type":"ListItem","position":3,"name":"T","item":"https://sebastienrousseau.com/t/"}'
+        "]}</script>"
+    )
+    assert _breadcrumb_items(ld) == []
+    ld_bad_name = ld.replace("null", '{"@type":"ListItem","position":2,"name":7,"item":"x"}')
+    assert _breadcrumb_items(ld_bad_name) == []
+
+
+def test_breadcrumb_items_handles_non_list_itemlist_and_non_dict_nodes():
+    from postbuild_lib.article_furniture import _breadcrumb_items
+
+    html = (
+        '<script type="application/ld+json">'
+        '{"@graph":["BreadcrumbList",'
+        '{"@type":"BreadcrumbList","itemListElement":"BreadcrumbList"}]}'
+        "</script>"
+    )
+    assert _breadcrumb_items(html) == []
+
+
+def test_breadcrumb_items_root_relativizes_and_keeps_external_urls():
+    from postbuild_lib.article_furniture import _breadcrumb_items
+
+    ld = (
+        '<script type="application/ld+json">'
+        '{"@type":"BreadcrumbList","itemListElement":['
+        '{"@type":"ListItem","position":1,"name":"Home","item":"https://sebastienrousseau.com"},'
+        '{"@type":"ListItem","position":2,"name":"Ext","item":"https://example.com/x/"},'
+        '{"@type":"ListItem","position":3,"name":"T","item":"https://sebastienrousseau.com/t/"}'
+        "]}</script>"
+    )
+    assert _breadcrumb_items(ld) == [
+        ("Home", "/"),
+        ("Ext", "https://example.com/x/"),
+        ("T", "/t/"),
+    ]
+
+
+# ---------------------------------------------------------------------------
+# inject_table_labels — data-label card-collapse stamping
+# ---------------------------------------------------------------------------
+
+_TBL_LD = '<script type="application/ld+json">{"@type":"BlogPosting"}</script>'
+
+
+def _tbl_page(table: str) -> str:
+    return f"<html>{_TBL_LD}<main>{table}</main></html>"
+
+
+_TBL = (
+    '<table class="table"><thead><tr><th>Layer</th><th>Why <em>It</em> Matters</th></tr></thead>'
+    "<tbody><tr><td>HSM</td><td>keys</td></tr>"
+    "<tr><td>API</td><td>contracts</td></tr></tbody></table>"
+)
+
+
+def test_inject_table_labels_no_op_without_blogposting():
+    from postbuild_lib.article_furniture import inject_table_labels
+
+    html = f"<html><main>{_TBL}</main></html>"
+    assert inject_table_labels(html) == html
+
+
+def test_inject_table_labels_stamps_labels_and_class():
+    from postbuild_lib.article_furniture import inject_table_labels
+
+    out = inject_table_labels(_tbl_page(_TBL))
+    assert '<table class="table--cards table">' in out
+    assert '<td data-label="Layer">HSM</td>' in out
+    # inline markup in the header is stripped from the label
+    assert '<td data-label="Why It Matters">keys</td>' in out
+    assert '<td data-label="Layer">API</td>' in out
+
+
+def test_inject_table_labels_idempotent():
+    from postbuild_lib.article_furniture import inject_table_labels
+
+    once = inject_table_labels(_tbl_page(_TBL))
+    assert inject_table_labels(once) == once
+
+
+def test_inject_table_labels_adds_class_to_bare_table():
+    from postbuild_lib.article_furniture import inject_table_labels
+
+    bare = _TBL.replace('<table class="table">', "<table>")
+    out = inject_table_labels(_tbl_page(bare))
+    assert '<table class="table--cards">' in out
+
+
+def test_inject_table_labels_no_op_without_thead_or_headers():
+    from postbuild_lib.article_furniture import inject_table_labels
+
+    headless = "<table><tbody><tr><td>x</td></tr></tbody></table>"
+    empty_th = "<table><thead><tr><th> </th></tr></thead><tbody><tr><td>x</td></tr></tbody></table>"
+    page = _tbl_page(headless + empty_th)
+    assert inject_table_labels(page) == page
+
+
+def test_inject_table_labels_extra_or_unlabelled_cells_left_bare():
+    from postbuild_lib.article_furniture import inject_table_labels
+
+    tbl = (
+        "<table><thead><tr><th>A</th><th></th></tr></thead>"
+        "<tbody><tr><td>1</td><td>2</td><td>3</td></tr></tbody></table>"
+    )
+    out = inject_table_labels(_tbl_page(tbl))
+    assert '<td data-label="A">1</td>' in out
+    # empty header → cell 2 unlabelled; cell 3 beyond the header count
+    assert "<td>2</td><td>3</td>" in out
+
+
+def test_inject_table_labels_escapes_header_text():
+    from postbuild_lib.article_furniture import inject_table_labels
+
+    tbl = (
+        '<table><thead><tr><th>Q&amp;A "quote"</th></tr></thead>'
+        "<tbody><tr><td>x</td></tr></tbody></table>"
+    )
+    out = inject_table_labels(_tbl_page(tbl))
+    assert 'data-label="Q&amp;A &quot;quote&quot;"' in out
+
+
+def test_inject_table_labels_handles_multiple_tables():
+    from postbuild_lib.article_furniture import inject_table_labels
+
+    out = inject_table_labels(_tbl_page(_TBL + _TBL.replace("Layer", "Signal")))
+    assert out.count("table--cards") == 2
+    assert '<td data-label="Signal">HSM</td>' in out
+
+
+# ---------------------------------------------------------------------------
+# WS2 — FT-tier editorial composition (eyebrow, deck, share-rail, byline-strap)
+# ---------------------------------------------------------------------------
+
+_WS2_HEAD = (
+    '<link rel="canonical" href="https://sebastienrousseau.com/2026-01-01-my-post/">'
+    '<meta property="og:title" content="My Post: A Subtitle">'
+    '<meta name="description" content="A brief description of the article.">'
+    '<meta name="keywords" content="AI, payments, post-quantum cryptography">'
+    '<script type="application/ld+json">'
+    '{"@type":"BlogPosting","keywords":"AI, payments, post-quantum cryptography"}'
+    "</script>"
+)
+_WS2_BODY = (
+    '<section class="ap-hero"><h1>My Post</h1>'
+    '<p class="sub">Standfirst sentence.</p></section>'
+    '<main id="main" class="content ap-section">'
+    '<div class="wrap report-wrap"><p>body</p></div></main>'
+)
+
+
+def _ws2_page(lang: str = "en-GB", head: str = _WS2_HEAD, body: str = _WS2_BODY) -> str:
+    return f'<html lang="{lang}"><head>{head}</head><body>{body}</body></html>'
+
+
+# inject_eyebrow ------------------------------------------------------------
+
+
+def test_inject_eyebrow_no_op_without_blogposting():
+    from postbuild_lib.article_furniture import inject_eyebrow
+
+    assert inject_eyebrow("<p>plain page</p>") == "<p>plain page</p>"
+
+
+def test_inject_eyebrow_renders_first_keyword_uppercased_above_h1():
+    from postbuild_lib.article_furniture import inject_eyebrow
+
+    out = inject_eyebrow(_ws2_page())
+    assert '<p class="eyebrow">AI</p><h1>' in out
+    # ordering: hero opens → eyebrow → h1
+    assert out.index('class="eyebrow"') < out.index("<h1>")
+
+
+def test_inject_eyebrow_idempotent():
+    from postbuild_lib.article_furniture import inject_eyebrow
+
+    once = inject_eyebrow(_ws2_page())
+    assert inject_eyebrow(once) == once
+
+
+def test_inject_eyebrow_no_op_when_keywords_meta_missing():
+    from postbuild_lib.article_furniture import inject_eyebrow
+
+    head_no_keywords = _WS2_HEAD.replace(
+        '"keywords":"AI, payments, post-quantum cryptography"', '"keywords":""'
+    )
+    page = _ws2_page(head=head_no_keywords)
+    assert inject_eyebrow(page) == page
+
+
+def test_inject_eyebrow_escapes_html_in_section_label():
+    from postbuild_lib.article_furniture import inject_eyebrow
+
+    head = _WS2_HEAD.replace(
+        '"keywords":"AI, payments, post-quantum cryptography"',
+        '"keywords":"Q&amp;A &lt;Rust&gt;, payments"',
+    )
+    out = inject_eyebrow(_ws2_page(head=head))
+    # The raw "<Rust>" angle brackets must never reach the rendered
+    # eyebrow markup; html.escape catches anything that didn't already
+    # arrive entity-encoded from the JSON-LD.
+    assert "<Rust>" not in out
+    assert 'class="eyebrow"' in out
+
+
+# inject_deck ---------------------------------------------------------------
+
+
+def test_inject_deck_no_op_without_blogposting():
+    from postbuild_lib.article_furniture import inject_deck
+
+    assert inject_deck("<p>plain page</p>") == "<p>plain page</p>"
+
+
+def test_inject_deck_promotes_sub_class_to_sub_deck():
+    from postbuild_lib.article_furniture import inject_deck
+
+    out = inject_deck(_ws2_page())
+    assert '<p class="sub deck">Standfirst sentence.</p>' in out
+    assert out.count('class="sub deck"') == 1
+
+
+def test_inject_deck_idempotent():
+    from postbuild_lib.article_furniture import inject_deck
+
+    once = inject_deck(_ws2_page())
+    assert inject_deck(once) == once
+
+
+# inject_share_rail ---------------------------------------------------------
+
+
+def test_inject_share_rail_no_op_without_blogposting():
+    from postbuild_lib.article_furniture import inject_share_rail
+
+    assert inject_share_rail("<p>plain page</p>") == "<p>plain page</p>"
+
+
+def test_inject_share_rail_renders_all_six_anchors_at_top_of_main():
+    from postbuild_lib.article_furniture import inject_share_rail
+
+    out = inject_share_rail(_ws2_page())
+    assert 'class="share-rail share-rail--sticky"' in out
+    # All six service endpoints present, with platform-aware URLs.
+    # LinkedIn uses the feed composer (?shareActive=true) because the
+    # share-offsite dialog ignores ?text= today — that gets us the
+    # "Share your thoughts…" prompt pre-filled.
+    assert "twitter.com/intent/tweet?text=" in out
+    assert "linkedin.com/feed/?shareActive=true&amp;text=" in out
+    assert "facebook.com/sharer/sharer.php?u=" in out
+    assert "wa.me/?text=" in out
+    assert 'href="mailto:?subject=' in out
+    # WS5: Bluesky compose intent (?text=title%20%2F%20url, 300 char limit).
+    assert "bsky.app/intent/compose?text=" in out
+    # Title + URL get URL-encoded into the X / LinkedIn / WhatsApp
+    # payloads.
+    assert "My%20Post%3A%20A%20Subtitle" in out
+    # Description renders into the LinkedIn pre-fill so the share
+    # dialog opens with a complete card (title + description + URL),
+    # which is what the user expects when they click "Share on
+    # LinkedIn" — empty share dialogs get closed.
+    assert "A%20brief%20description%20of%20the%20article" in out
+    # Rail sits inside main's wrap-div, before the body paragraph
+    assert out.index("share-rail--sticky") < out.index("<p>body</p>")
+
+
+def test_inject_share_rail_idempotent():
+    from postbuild_lib.article_furniture import inject_share_rail
+
+    once = inject_share_rail(_ws2_page())
+    assert inject_share_rail(once) == once
+
+
+def test_inject_share_rail_no_op_when_canonical_missing():
+    from postbuild_lib.article_furniture import inject_share_rail
+
+    head = _WS2_HEAD.replace(
+        '<link rel="canonical" href="https://sebastienrousseau.com/2026-01-01-my-post/">',
+        "",
+    )
+    page = _ws2_page(head=head)
+    assert inject_share_rail(page) == page
+
+
+# inject_byline_strap -------------------------------------------------------
+
+
+def test_inject_byline_strap_no_op_without_blogposting():
+    from postbuild_lib.article_furniture import inject_byline_strap
+
+    assert inject_byline_strap("<p>plain page</p>") == "<p>plain page</p>"
+
+
+def test_inject_byline_strap_renders_inside_wrap_div_above_closing_main():
+    from postbuild_lib.article_furniture import inject_byline_strap
+
+    out = inject_byline_strap(_ws2_page())
+    assert 'class="byline-strap"' in out
+    assert "SEBASTIEN ROUSSEAU" in out
+    assert "FOUNDER · ENGINEER" in out
+    # Sits INSIDE the wrap-div (immediately before </div></main>) so the
+    # later inject_prev_next_nav pass — which anchors on </div>\s*</main>
+    # — still matches and the pagination ends up below the byline.
+    assert '</p></div></main>' in out
+    assert out.index('class="byline-strap"') < out.rindex("</div>")
+
+
+def test_inject_byline_strap_idempotent():
+    from postbuild_lib.article_furniture import inject_byline_strap
+
+    once = inject_byline_strap(_ws2_page())
+    assert inject_byline_strap(once) == once
+
+
+def test_inject_byline_strap_french_role_when_html_lang_fr():
+    from postbuild_lib.article_furniture import inject_byline_strap
+
+    out = inject_byline_strap(_ws2_page(lang="fr-FR"))
+    assert "FONDATEUR · INGÉNIEUR" in out
+    assert 'href="/fr/a-propos/index.html"' in out
+
+
+# ---------------------------------------------------------------------------
+# WS2 commit 6 — pull-quotes, section rules, footnotes
+# ---------------------------------------------------------------------------
+
+# inject_pullquotes ---------------------------------------------------------
+
+
+def test_inject_pullquotes_no_op_without_blogposting():
+    from postbuild_lib.article_furniture import inject_pullquotes
+
+    assert inject_pullquotes("<p>plain page</p>") == "<p>plain page</p>"
+
+
+def test_inject_pullquotes_promotes_blockquote_pull_to_aside():
+    from postbuild_lib.article_furniture import inject_pullquotes
+
+    body = (
+        '<section class="ap-hero"><h1>T</h1></section>'
+        '<main id="main"><div class="wrap">'
+        '<p>Body.</p>'
+        '<blockquote class="pull">A quotable claim.</blockquote>'
+        '<p>More body.</p>'
+        '</div></main>'
+    )
+    out = inject_pullquotes(_ws2_page(body=body))
+    assert '<aside class="pull-quote">A quotable claim.</aside>' in out
+    assert 'class="pull">' not in out  # original blockquote removed
+
+
+def test_inject_pullquotes_idempotent():
+    from postbuild_lib.article_furniture import inject_pullquotes
+
+    body = (
+        '<section class="ap-hero"><h1>T</h1></section>'
+        '<main id="main"><div class="wrap">'
+        '<blockquote class="pull">Q.</blockquote>'
+        '</div></main>'
+    )
+    once = inject_pullquotes(_ws2_page(body=body))
+    assert inject_pullquotes(once) == once
+
+
+def test_inject_pullquotes_handles_multiple_per_article():
+    from postbuild_lib.article_furniture import inject_pullquotes
+
+    body = (
+        '<section class="ap-hero"><h1>T</h1></section>'
+        '<main id="main"><div class="wrap">'
+        '<blockquote class="pull">First.</blockquote>'
+        '<p>x</p>'
+        '<blockquote class="pull">Second.</blockquote>'
+        '</div></main>'
+    )
+    out = inject_pullquotes(_ws2_page(body=body))
+    assert out.count('class="pull-quote"') == 2
+
+
+def test_inject_pullquotes_ignores_plain_blockquotes():
+    from postbuild_lib.article_furniture import inject_pullquotes
+
+    body = (
+        '<section class="ap-hero"><h1>T</h1></section>'
+        '<main id="main"><div class="wrap">'
+        '<blockquote>Plain.</blockquote>'
+        '</div></main>'
+    )
+    out = inject_pullquotes(_ws2_page(body=body))
+    assert 'class="pull-quote"' not in out
+    assert '<blockquote>Plain.</blockquote>' in out
+
+
+# inject_section_rules ------------------------------------------------------
+
+
+def _ws2_body_with_h2s(n: int) -> str:
+    heads = "".join(f'<h2 id="h2-s{i}">Section {i}</h2><p>x</p>' for i in range(n))
+    return (
+        '<section class="ap-hero"><h1>T</h1></section>'
+        '<main id="main"><div class="wrap">'
+        + heads
+        + '</div></main>'
+    )
+
+
+def test_inject_section_rules_no_op_without_blogposting():
+    from postbuild_lib.article_furniture import inject_section_rules
+
+    assert inject_section_rules("<p>plain page</p>") == "<p>plain page</p>"
+
+
+def test_inject_section_rules_no_op_below_threshold():
+    from postbuild_lib.article_furniture import inject_section_rules
+
+    page = _ws2_page(body=_ws2_body_with_h2s(5))
+    assert inject_section_rules(page) == page
+
+
+def test_inject_section_rules_inserts_for_six_or_more_h2s_skipping_first():
+    from postbuild_lib.article_furniture import inject_section_rules
+
+    out = inject_section_rules(_ws2_page(body=_ws2_body_with_h2s(6)))
+    # 6 prose h2s → 5 rules (before h2#2..h2#6, first one skipped).
+    assert out.count('class="section-rule"') == 5
+    # No rule precedes the first h2.
+    assert out.index('id="h2-s0"') < out.index('class="section-rule"')
+
+
+def test_inject_section_rules_idempotent():
+    from postbuild_lib.article_furniture import inject_section_rules
+
+    once = inject_section_rules(_ws2_page(body=_ws2_body_with_h2s(6)))
+    assert inject_section_rules(once) == once
+
+
+def test_inject_section_rules_ignores_h2_without_id_attribute():
+    from postbuild_lib.article_furniture import inject_section_rules
+
+    # 6 bare <h2>s (no id) — these are ToC / Sources / aside headings.
+    # inject_anchor_links_and_toc didn't run, so no prose h2 has an id.
+    bare = (
+        '<section class="ap-hero"><h1>T</h1></section>'
+        '<main id="main"><div class="wrap">'
+        + ("<h2>X</h2><p>p</p>" * 6)
+        + '</div></main>'
+    )
+    page = _ws2_page(body=bare)
+    assert inject_section_rules(page) == page
+
+
+# inject_footnotes ----------------------------------------------------------
+
+
+def test_inject_footnotes_no_op_without_blogposting():
+    from postbuild_lib.article_furniture import inject_footnotes
+
+    assert inject_footnotes("<p>plain page</p>") == "<p>plain page</p>"
+
+
+def test_inject_footnotes_no_op_without_markers():
+    from postbuild_lib.article_furniture import inject_footnotes
+
+    page = _ws2_page()  # default body has no [^n] markers
+    assert inject_footnotes(page) == page
+
+
+def test_inject_footnotes_no_op_when_marker_without_definition():
+    from postbuild_lib.article_furniture import inject_footnotes
+
+    body = (
+        '<section class="ap-hero"><h1>T</h1></section>'
+        '<main id="main"><div class="wrap">'
+        '<p>Claim with [^1] marker but no definition.</p>'
+        '</div></main>'
+    )
+    page = _ws2_page(body=body)
+    assert inject_footnotes(page) == page
+
+
+def test_inject_footnotes_wraps_markers_and_emits_section():
+    from postbuild_lib.article_furniture import inject_footnotes
+
+    body = (
+        '<section class="ap-hero"><h1>T</h1></section>'
+        '<main id="main"><div class="wrap">'
+        '<p>Claim one [^1] and claim two [^2].</p>'
+        '<p>[^1]: First footnote.</p>'
+        '<p>[^2]: Second footnote.</p>'
+        '</div></main>'
+    )
+    out = inject_footnotes(_ws2_page(body=body))
+    # Markers wrapped as superscript anchor links.
+    assert '<sup class="footnote-ref"><a href="#fn-1" id="fnref-1">1</a></sup>' in out
+    assert '<sup class="footnote-ref"><a href="#fn-2" id="fnref-2">2</a></sup>' in out
+    # Footnotes section emitted with the two definitions.
+    assert 'class="footnotes"' in out
+    assert '<li id="fn-1">First footnote.' in out
+    assert '<li id="fn-2">Second footnote.' in out
+    # Definition lines stripped from body.
+    assert "[^1]: First footnote." not in out
+    # Section anchored inside wrap-div so build_translations replaces it.
+    assert out.rindex('class="footnotes"') < out.rindex("</div></main>")
+
+
+def test_inject_footnotes_idempotent():
+    from postbuild_lib.article_furniture import inject_footnotes
+
+    body = (
+        '<section class="ap-hero"><h1>T</h1></section>'
+        '<main id="main"><div class="wrap">'
+        '<p>Claim [^1].</p><p>[^1]: A note.</p>'
+        '</div></main>'
+    )
+    once = inject_footnotes(_ws2_page(body=body))
+    assert inject_footnotes(once) == once
+
+
+# ---------------------------------------------------------------------------
+# WS2 commit 7 — action rail, cite popover, reuse panel
+# ---------------------------------------------------------------------------
+
+
+# inject_action_rail --------------------------------------------------------
+
+
+def test_inject_action_rail_no_op_without_blogposting():
+    from postbuild_lib.article_furniture import inject_action_rail
+
+    assert inject_action_rail("<p>plain page</p>") == "<p>plain page</p>"
+
+
+def test_inject_action_rail_renders_save_pdf_and_cite_buttons_at_top_of_main():
+    from postbuild_lib.article_furniture import inject_action_rail
+
+    out = inject_action_rail(_ws2_page())
+    assert 'class="action-rail action-rail--sticky"' in out
+    # Save PDF is an anchor to /api/pdf/<slug>.pdf — the lang-router
+    # Worker forwards to the Fly.io WeasyPrint service. main.js HEAD-
+    # probes the route and falls back to window.print() if 503.
+    assert 'href="/api/pdf/2026-01-01-my-post.pdf"' in out
+    assert 'download="2026-01-01-my-post.pdf"' in out
+    assert 'data-print-fallback' in out
+    assert 'type="application/pdf"' in out
+    # Cite anchors to the popover injected later in the pipeline.
+    assert 'href="#cite-popover"' in out
+    # Listen is intentionally absent until Phase 2 TTS ships.
+    assert "#audio-player" not in out
+    assert "Listen" not in out
+    # Sits inside the wrap-div, before the body paragraph
+    assert out.index("action-rail--sticky") < out.index("<p>body</p>")
+
+
+def test_inject_action_rail_idempotent():
+    from postbuild_lib.article_furniture import inject_action_rail
+
+    once = inject_action_rail(_ws2_page())
+    assert inject_action_rail(once) == once
+
+
+def test_inject_action_rail_no_op_when_canonical_missing():
+    from postbuild_lib.article_furniture import inject_action_rail
+
+    # Save PDF needs the slug parsed from the canonical URL to point at
+    # /api/pdf/<slug>.pdf; no canonical → no slug → no rail.
+    head = _WS2_HEAD.replace(
+        '<link rel="canonical" href="https://sebastienrousseau.com/2026-01-01-my-post/">',
+        "",
+    )
+    page = _ws2_page(head=head)
+    assert inject_action_rail(page) == page
+
+
+# inject_cite_popover -------------------------------------------------------
+
+
+def test_inject_cite_popover_no_op_without_blogposting():
+    from postbuild_lib.article_furniture import inject_cite_popover
+
+    assert inject_cite_popover("<p>plain page</p>") == "<p>plain page</p>"
+
+
+def test_inject_cite_popover_emits_meta_and_all_five_formats_with_copy_buttons():
+    from postbuild_lib.article_furniture import inject_cite_popover
+
+    head = _WS2_HEAD.replace(
+        '"@type":"BlogPosting","keywords":"AI, payments, post-quantum cryptography"',
+        '"@type":"BlogPosting","keywords":"AI","datePublished":"2026-06-12T00:00:00Z","dateModified":"2026-06-12T00:00:00Z"',
+    )
+    out = inject_cite_popover(_ws2_page(head=head))
+    assert 'class="cite-popover"' in out and 'id="cite-popover"' in out
+    # Meta header — title + description surface above the format blocks
+    # so the reader sees what they're committing to citing/sharing.
+    assert 'class="cite-meta"' in out
+    assert "<strong>My Post: A Subtitle</strong>" in out
+    assert "<p>A brief description of the article.</p>" in out
+    # All 5 format headings present
+    for fmt in ("BibTeX", "RIS", "Vancouver", "Chicago", "APA"):
+        assert f"<h3>{fmt}</h3>" in out
+    # Each <pre> has a stable id and a paired copy button so main.js
+    # can wire the clipboard handler via [data-copy].
+    for fid in ("cite-bibtex", "cite-ris", "cite-vancouver", "cite-chicago", "cite-apa"):
+        assert f'<pre id="{fid}">' in out
+        assert f'data-copy="#{fid}"' in out
+    # 5 copy buttons, one per format.
+    assert out.count('class="copy-btn"') == 5
+    # BibTeX key + author surface in the rendered citation
+    assert "rousseau2026" in out
+    assert "Rousseau, Sebastien" in out
+    # Canonical URL surfaces in every block
+    assert out.count("https://sebastienrousseau.com/2026-01-01-my-post/") >= 5
+
+
+def test_inject_cite_popover_skips_description_paragraph_when_meta_missing():
+    from postbuild_lib.article_furniture import inject_cite_popover
+
+    head = _WS2_HEAD.replace(
+        '<meta name="description" content="A brief description of the article.">',
+        "",
+    )
+    out = inject_cite_popover(_ws2_page(head=head))
+    # Title still renders; the <p> description block is omitted rather
+    # than empty so the popover stays compact when an article has no
+    # description meta.
+    assert 'class="cite-meta"' in out
+    assert "<strong>My Post: A Subtitle</strong>" in out
+    assert "<p></p>" not in out
+
+
+def test_inject_cite_popover_idempotent():
+    from postbuild_lib.article_furniture import inject_cite_popover
+
+    once = inject_cite_popover(_ws2_page())
+    assert inject_cite_popover(once) == once
+
+
+def test_inject_cite_popover_no_op_when_canonical_missing():
+    from postbuild_lib.article_furniture import inject_cite_popover
+
+    head = _WS2_HEAD.replace(
+        '<link rel="canonical" href="https://sebastienrousseau.com/2026-01-01-my-post/">',
+        "",
+    )
+    page = _ws2_page(head=head)
+    assert inject_cite_popover(page) == page
+
+
+# inject_reuse_panel --------------------------------------------------------
+
+
+def test_inject_reuse_panel_no_op_without_blogposting():
+    from postbuild_lib.article_furniture import inject_reuse_panel
+
+    assert inject_reuse_panel("<p>plain page</p>") == "<p>plain page</p>"
+
+
+def test_inject_reuse_panel_emits_share_card_with_title_description_license():
+    from postbuild_lib.article_furniture import inject_reuse_panel
+
+    out = inject_reuse_panel(_ws2_page())
+    assert 'class="reuse"' in out
+    assert 'rel="license"' in out
+    assert 'href="https://creativecommons.org/licenses/by/4.0/"' in out
+    # Visible share-card preview — title + description above the
+    # licence + attribution lines, like the cite popover.
+    assert 'class="reuse-meta"' in out
+    assert "<strong>My Post: A Subtitle</strong>" in out
+    assert "<p>A brief description of the article.</p>" in out
+    # Multi-line attribution payload includes title + description so
+    # what the reader copies is a complete share card, not a one-liner.
+    assert "My Post: A Subtitle\n\nA brief description of the article." in out
+    assert "Originally published at https://sebastienrousseau.com/2026-01-01-my-post/" in out
+    assert "by Sebastien Rousseau" in out
+    assert "Licensed under CC-BY-4.0" in out
+    # Copy button paired with the attribution <pre> for main.js to wire.
+    assert '<pre id="reuse-attribution">' in out
+    assert 'data-copy="#reuse-attribution"' in out
+    assert 'class="copy-btn"' in out
+
+
+def test_inject_reuse_panel_compact_when_description_missing():
+    from postbuild_lib.article_furniture import inject_reuse_panel
+
+    head = _WS2_HEAD.replace(
+        '<meta name="description" content="A brief description of the article.">',
+        "",
+    )
+    out = inject_reuse_panel(_ws2_page(head=head))
+    # Title still renders in the preview; no empty <p></p> for the
+    # missing description; attribution still works.
+    assert "<strong>My Post: A Subtitle</strong>" in out
+    assert "<p></p>" not in out
+
+
+# WS5 — syndication panel ----------------------------------------------------
+
+
+def test_inject_syndication_panel_emits_medium_and_mastodon_payloads():
+    from postbuild_lib.article_furniture import inject_syndication_panel
+
+    out = inject_syndication_panel(_ws2_page())
+    # Single <details> wrapper at the wrap-foot, anchored by id so
+    # the action-rail / cite jump-link pattern can target it later.
+    assert 'id="syndicate-popover"' in out
+    # Both formats present, each with stable id + paired copy button.
+    for fmt_id in ("syndicate-medium", "syndicate-mastodon"):
+        assert f'<pre id="{fmt_id}">' in out
+        assert f'data-copy="#{fmt_id}"' in out
+    # Medium payload is markdown — starts with H1.
+    assert "# My Post: A Subtitle" in out
+    # Mastodon payload puts title + description + URL on separate
+    # blocks, with the canonical URL last so the link card preview
+    # renders on Mastodon.
+    assert "https://sebastienrousseau.com/2026-01-01-my-post/" in out
+
+
+def test_inject_syndication_panel_idempotent():
+    from postbuild_lib.article_furniture import inject_syndication_panel
+
+    once = inject_syndication_panel(_ws2_page())
+    assert inject_syndication_panel(once) == once
+
+
+def test_inject_syndication_panel_no_op_without_blogposting():
+    from postbuild_lib.article_furniture import inject_syndication_panel
+
+    assert inject_syndication_panel("<p>plain</p>") == "<p>plain</p>"
+
+
+def test_inject_reuse_panel_respects_license_meta_override():
+    from postbuild_lib.article_furniture import inject_reuse_panel
+
+    head = _WS2_HEAD + '<meta name="license" content="CC-BY-SA-4.0">'
+    out = inject_reuse_panel(_ws2_page(head=head))
+    assert 'href="https://creativecommons.org/licenses/by-sa/4.0/"' in out
+    assert "Licensed under CC-BY-SA-4.0" in out
+
+
+def test_inject_reuse_panel_unknown_license_falls_back_to_default():
+    from postbuild_lib.article_furniture import inject_reuse_panel
+
+    head = _WS2_HEAD + '<meta name="license" content="bogus-license">'
+    out = inject_reuse_panel(_ws2_page(head=head))
+    # Falls back to the safe CC-BY-4.0 default rather than emitting a
+    # broken licence URL — the allow-list is the gate.
+    assert 'href="https://creativecommons.org/licenses/by/4.0/"' in out
+
+
+def test_inject_reuse_panel_all_rights_reserved_omits_rel_license_url():
+    from postbuild_lib.article_furniture import inject_reuse_panel
+
+    head = _WS2_HEAD + '<meta name="license" content="All-Rights-Reserved">'
+    out = inject_reuse_panel(_ws2_page(head=head))
+    assert "All rights reserved" in out
+    # No rel=license anchor → can't claim a CC URL for an ARR article.
+    assert 'rel="license"' not in out
+
+
+def test_inject_reuse_panel_idempotent():
+    from postbuild_lib.article_furniture import inject_reuse_panel
+
+    once = inject_reuse_panel(_ws2_page())
+    assert inject_reuse_panel(once) == once
+
+
+# ---------------------------------------------------------------------------
+# inject_oembed_link, _has_landing, _parse_iso_date — coverage gap fills
+# ---------------------------------------------------------------------------
+
+
+def test_inject_oembed_link_emits_alternate_link_in_head():
+    """The oEmbed discovery `<link rel="alternate">` carries the per-
+    article /oembed/<slug>.json URL so Notion / Slack / Discord can fetch
+    the rich card metadata. BlogPosting pages only; idempotent."""
+    from postbuild_lib.article_furniture import inject_oembed_link
+
+    out = inject_oembed_link(_ws2_page())
+    assert 'application/json+oembed' in out
+    assert 'href="https://sebastienrousseau.com/oembed/2026-01-01-my-post.json"' in out
+    # The previous oEmbed link sat inside <head>.
+    assert out.index('application/json+oembed') < out.index("</head>")
+
+
+def test_inject_oembed_link_no_op_without_blogposting():
+    from postbuild_lib.article_furniture import inject_oembed_link
+
+    plain = "<html><head></head><body>x</body></html>"
+    assert inject_oembed_link(plain) == plain
+
+
+def test_inject_oembed_link_idempotent():
+    from postbuild_lib.article_furniture import inject_oembed_link
+
+    once = inject_oembed_link(_ws2_page())
+    assert inject_oembed_link(once) == once
+
+
+def test_inject_oembed_link_no_op_when_canonical_or_title_missing():
+    from postbuild_lib.article_furniture import inject_oembed_link
+
+    head_no_canonical = _WS2_HEAD.replace(
+        '<link rel="canonical" href="https://sebastienrousseau.com/2026-01-01-my-post/">',
+        "",
+    )
+    page = _ws2_page(head=head_no_canonical)
+    assert inject_oembed_link(page) == page
+
+
+def test_inject_oembed_link_handles_index_html_canonical_suffix():
+    """Canonical URLs that end with `/index.html` (older slug shape)
+    still resolve to the same bare slug — `/oembed/<slug>.json` should
+    not contain `index.html` in the filename."""
+    from postbuild_lib.article_furniture import inject_oembed_link
+
+    head_with_index = _WS2_HEAD.replace(
+        'href="https://sebastienrousseau.com/2026-01-01-my-post/"',
+        'href="https://sebastienrousseau.com/2026-01-01-my-post/index.html"',
+    )
+    page = _ws2_page(head=head_with_index)
+    out = inject_oembed_link(page)
+    assert 'href="https://sebastienrousseau.com/oembed/2026-01-01-my-post.json"' in out
+
+
+def test_has_landing_returns_false_for_missing_path(tmp_path, monkeypatch):
+    """Direct call to _has_landing — exercises the Path.is_file() probe
+    without the per-test monkeypatch the tag-badges tests use."""
+    from postbuild_lib import article_furniture as af
+
+    monkeypatch.setattr(af, "_LANDING_PUBLIC", tmp_path)
+    assert af._has_landing("never-emitted-tag", "en") is False
+
+
+def test_has_landing_returns_true_for_existing_path(tmp_path, monkeypatch):
+    from postbuild_lib import article_furniture as af
+
+    landing = tmp_path / "tags" / "post-quantum-cryptography" / "index.html"
+    landing.parent.mkdir(parents=True, exist_ok=True)
+    landing.write_text("<html>tag landing</html>")
+    monkeypatch.setattr(af, "_LANDING_PUBLIC", tmp_path)
+    assert af._has_landing("post-quantum-cryptography", "en") is True
+
+
+def test_parse_iso_date_returns_none_for_unrecognised_format():
+    """The third format pattern (`%Y-%m-%d`) is the last fallback;
+    strings that don't match any pattern return None — exercises the
+    `except ValueError: continue` branches + the final `return None`."""
+    from postbuild_lib.article_furniture import _parse_iso_date
+
+    assert _parse_iso_date("not-a-date") is None
+    assert _parse_iso_date("2026-13-40") is None  # invalid month + day
+    assert _parse_iso_date("") is None
+
+
+def test_inject_oembed_link_no_op_when_canonical_resolves_to_empty_slug():
+    """A bare-`/` canonical (no slug) → bare slug empty → the function
+    short-circuits with the original HTML rather than emit
+    `/oembed/.json`."""
+    from postbuild_lib.article_furniture import inject_oembed_link
+
+    head_empty_slug = _WS2_HEAD.replace(
+        'href="https://sebastienrousseau.com/2026-01-01-my-post/"',
+        'href="/"',
+    )
+    page = _ws2_page(head=head_empty_slug)
+    assert inject_oembed_link(page) == page
+
+
+def test_share_payload_strips_index_html_canonical_suffix():
+    """`_share_payload` reuses the same /index.html-suffix strip as
+    inject_oembed_link so the share-rail's pre-filled X/LinkedIn/
+    WhatsApp/email links carry the clean trailing-slash canonical."""
+    from postbuild_lib.article_furniture import _share_payload
+
+    head_with_index = _WS2_HEAD.replace(
+        'href="https://sebastienrousseau.com/2026-01-01-my-post/"',
+        'href="https://sebastienrousseau.com/2026-01-01-my-post/index.html"',
+    )
+    page = _ws2_page(head=head_with_index)
+    payload = _share_payload(page)
+    assert payload is not None
+    assert payload["url"] == "https://sebastienrousseau.com/2026-01-01-my-post/"
+
+
+def test_syndication_payload_truncates_description_at_300_chars():
+    """Mastodon's 500-char toot budget caps the description at 300 chars
+    + an ellipsis so the title + URL still fit. Exercises the
+    `if len(desc) > 300: desc_trunc += "…"` branch."""
+    from postbuild_lib.article_furniture import _syndication_payloads
+
+    long_desc = "x" * 350
+    payload = {
+        "url": "https://sebastienrousseau.com/2026-01-01-my-post/",
+        "title": "My Post",
+        "desc": long_desc,
+    }
+    out = _syndication_payloads(payload)
+    assert out["mastodon"].endswith("…\n\nhttps://sebastienrousseau.com/2026-01-01-my-post/")
+    # Truncated to 300 chars + ellipsis (not the full 350).
+    assert "x" * 350 not in out["mastodon"]
+    assert "x" * 300 in out["mastodon"]
+
+
+def test_write_ai_txt_returns_false_when_content_unchanged(tmp_path):
+    """Second call to write_ai_txt with identical content returns False
+    so the postbuild summary line reports "unchanged". Exercises the
+    `if cur == new: return False` branch in output.py."""
+    from postbuild_lib.output import write_ai_txt
+
+    # First write — file didn't exist, so it returns True.
+    assert write_ai_txt(tmp_path) is True
+    # Second write — same content, returns False.
+    assert write_ai_txt(tmp_path) is False

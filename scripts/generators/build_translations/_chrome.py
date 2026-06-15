@@ -253,7 +253,7 @@ def _patch_jsonld_scripts(
 
 def _swap_breadcrumb(html: str, slug: str, title: str) -> str:
     """Patch the BreadcrumbList JSON-LD on the page to point at /fr/{slug}/
-    and localize the labels (Home → Accueil, Articles → Articles)."""
+    and localize the labels (Home → labels.json "Home", Articles → Articles)."""
 
     def patch_node(node: dict) -> bool:
         if node.get("@type") != "BreadcrumbList":
@@ -266,7 +266,7 @@ def _swap_breadcrumb(html: str, slug: str, title: str) -> str:
                 continue
             pos = item.get("position")
             if pos == 1:
-                item["name"] = "Accueil"
+                item["name"] = st.I18N_FR.get("Home", "Home")
                 item["item"] = f"{st.BASE}/"
             elif pos == 2:
                 item["name"] = "Articles"

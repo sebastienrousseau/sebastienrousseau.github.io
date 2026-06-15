@@ -111,6 +111,167 @@ document.addEventListener("click", function (event) {
 });
 
 /**
+ * Listing filter — `/articles/` page <select>s update data-filter-*
+ * attributes on the .tag-landing-list container. CSS in the layout
+ * uses attribute selectors to hide non-matching cards. Empty value
+ * means "show all". Updates a counter + empty-state marker so screen
+ * readers can announce the filtered count.
+ */
+document.addEventListener("change", function (event) {
+    var target = event.target;
+    if (!target || target.tagName !== "SELECT") return;
+    var which = target.getAttribute("data-filter-target");
+    if (!which) return;
+    // Navigate-mode selects (e.g. Year on the paged listing) jump to a
+    // dedicated archive URL instead of mutating filter attributes —
+    // see _render_filter_form() for why.
+    if (target.getAttribute("data-filter-mode") === "navigate") {
+        var base = target.getAttribute("data-navigate-base") || "/articles";
+        var v = target.value;
+        window.location.href = v ? base + "/" + v + "/" : base + "/";
+        return;
+    }
+    var list = document.querySelector(".tag-landing-list");
+    if (!list) return;
+    if (target.value) {
+        list.setAttribute("data-filter-" + which, target.value);
+    } else {
+        list.removeAttribute("data-filter-" + which);
+    }
+    // Empty-state: after each filter change, count VISIBLE cards via
+    // getBoundingClientRect (cheaper than getComputedStyle); flip a
+    // marker that the CSS shows in a sibling `.listing-empty` block.
+    var visible = 0;
+    Array.prototype.forEach.call(list.children, function (card) {
+        if (card.offsetParent !== null) visible++;
+    });
+    if (visible === 0) {
+        list.setAttribute("data-empty", "1");
+    } else {
+        list.removeAttribute("data-empty");
+    }
+    var counter = document.getElementById("listing-count");
+    if (counter) {
+        counter.textContent = visible;
+    }
+});
+
+/**
+ * Action-rail "Save PDF" — two handlers:
+ *
+ *   [data-print]            — button that opens the browser print
+ *                              dialog directly (no server route).
+ *   [data-print-fallback]   — anchor to /api/pdf/<slug>.pdf; we let the
+ *                              browser navigate by default, but if the
+ *                              Worker route returns a non-PDF (e.g. 503
+ *                              when the Fly.io machine is down), fall
+ *                              back to window.print() so the user still
+ *                              gets a PDF via the @media print stylesheet.
+ *
+ * Either way the PDF that drops out respects our @media print stylesheet
+ * (transparent inline code, sources-as-footnotes, links shown inline).
+ */
+document.addEventListener("click", function (event) {
+    var trigger = event.target.closest("[data-print]");
+    if (!trigger) return;
+    event.preventDefault();
+    window.print();
+});
+
+document.addEventListener("click", function (event) {
+    var trigger = event.target.closest("[data-print-fallback]");
+    if (!trigger) return;
+    var href = trigger.getAttribute("href");
+    if (!href) {
+        event.preventDefault();
+        window.print();
+        return;
+    }
+    // Probe the PDF route with HEAD; if it's a real PDF, let the
+    // browser navigate. Otherwise prevent navigation and fall back.
+    event.preventDefault();
+    fetch(href, { method: "HEAD" })
+        .then(function (res) {
+            var ct = (res.headers.get("Content-Type") || "").toLowerCase();
+            if (res.ok && ct.indexOf("application/pdf") !== -1) {
+                window.location.href = href;
+            } else {
+                window.print();
+            }
+        })
+        .catch(function () {
+            window.print();
+        });
+});
+
+/**
+ * Copy-to-clipboard handler — single delegate for every [data-copy]
+ * button inside the cite popover (BibTeX / RIS / Vancouver / Chicago /
+ * APA) and the reuse / republish panel. The target is the CSS selector
+ * in data-copy, typically "#cite-bibtex" or "#reuse-attribution". On
+ * success we flip data-copied="1" for 2s so the CSS can render a
+ * "Copied ✓" affordance; on failure (Clipboard API unavailable,
+ * insecure context) we fall back to a transient textarea + execCommand.
+ */
+document.addEventListener("click", function (event) {
+    var btn = event.target.closest("[data-copy]");
+    if (!btn) return;
+    event.preventDefault();
+    var target = document.querySelector(btn.getAttribute("data-copy"));
+    if (!target) return;
+    var text = target.innerText || target.textContent || "";
+    var done = function () {
+        btn.setAttribute("data-copied", "1");
+        setTimeout(function () { btn.removeAttribute("data-copied"); }, 2000);
+    };
+    if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(text).then(done).catch(function () {
+            fallbackCopy(text, done);
+        });
+    } else {
+        fallbackCopy(text, done);
+    }
+});
+
+/**
+ * Per-card "Copy link" — every .card-share-rail emits a
+ * <button data-copy-link="https://…/<slug>/"> so readers can paste the
+ * canonical URL anywhere. Same Clipboard API + textarea fallback as the
+ * cite popover handler above. data-copied="1" flips for 2s so CSS can
+ * render a "Copied ✓" affordance on top of the icon.
+ */
+document.addEventListener("click", function (event) {
+    var btn = event.target.closest("[data-copy-link]");
+    if (!btn) return;
+    event.preventDefault();
+    var text = btn.getAttribute("data-copy-link");
+    if (!text) return;
+    var done = function () {
+        btn.setAttribute("data-copied", "1");
+        setTimeout(function () { btn.removeAttribute("data-copied"); }, 2000);
+    };
+    if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(text).then(done).catch(function () {
+            fallbackCopy(text, done);
+        });
+    } else {
+        fallbackCopy(text, done);
+    }
+});
+
+function fallbackCopy(text, done) {
+    var ta = document.createElement("textarea");
+    ta.value = text;
+    ta.setAttribute("readonly", "");
+    ta.style.cssText = "position:fixed;top:-9999px;left:-9999px";
+    document.body.appendChild(ta);
+    ta.select();
+    try { document.execCommand("copy"); done(); }
+    catch (err) { console.warn("copy fallback failed", err); }
+    document.body.removeChild(ta);
+}
+
+/**
  * Back-to-top floating button. Reveals after the user scrolls past one viewport
  * height and scrolls smoothly to the top on click.
  */

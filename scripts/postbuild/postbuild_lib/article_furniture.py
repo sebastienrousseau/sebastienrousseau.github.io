@@ -23,9 +23,14 @@ constants + author identity constants only.
 
 from __future__ import annotations
 
+import json as _json
 import re
 import sys
+from datetime import datetime as _datetime
+from html import escape as _esc
+from html import unescape as _unesc
 from pathlib import Path
+from urllib.parse import quote as _url_quote
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[3]))
 import _lang_registry as _lr  # type: ignore[import-not-found]
@@ -85,7 +90,11 @@ AUTHOR_AVATAR = "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
 AUTHOR_URL = "/about/index.html"
 
 _HERO_RE = re.compile(
-    r'(<section class="ap-hero">\s*<h1>[^<]*</h1>\s*(?:<p class="sub">[^<]*</p>\s*)?)(</section>)',
+    r'(<section class="ap-hero">\s*'
+    r'(?:<p class="eyebrow">[^<]*</p>\s*)?'
+    r'<h1>[^<]*</h1>\s*'
+    r'(?:<p class="sub[^"]*">[^<]*</p>\s*)?'
+    r")(</section>)",
     re.IGNORECASE,
 )
 _MAIN_RE = re.compile(
@@ -99,7 +108,12 @@ _WORDCOUNT_RE = re.compile(r'"wordCount":(\d+)')
 _HEADING_RE = re.compile(r'<(h[23])(?:\s+id="[^"]*")?>([\s\S]*?)</\1>', re.IGNORECASE)
 _OUTBOUND_LINK_RE = re.compile(r'<a\b[^>]*\bhref="(https?://[^"]+)"', re.IGNORECASE)
 _DATED_SLUG_RE = re.compile(r"^(\d{4}-\d{2}-\d{2})-")
-_H1_RE = re.compile(r'<section class="ap-hero">\s*<h1>([^<]+)</h1>', re.IGNORECASE)
+_H1_RE = re.compile(
+    r'<section class="ap-hero">\s*'
+    r'(?:<p class="eyebrow">[^<]*</p>\s*)?'
+    r"<h1>([^<]+)</h1>",
+    re.IGNORECASE,
+)
 _HTML_LANG_DETECT_RE = re.compile(r'<html\b[^>]*\blang="([^"]+)"', re.IGNORECASE)
 
 
@@ -124,6 +138,8 @@ LABELS_EN: dict[str, str] = {
     "Link to": "Link to",
     "Table of contents": "Table of contents",
     "Topics": "Topics",
+    "Home": "Home",
+    "Breadcrumb": "Breadcrumb",
 }
 LABELS_FR: dict[str, str] = {
     "Published": "Publié le",
@@ -138,6 +154,8 @@ LABELS_FR: dict[str, str] = {
     "Link to": "Lien vers",
     "Table of contents": "Table des matières",
     "Topics": "Sujets",
+    "Home": "Accueil",
+    "Breadcrumb": "Fil d'Ariane",
 }
 
 
@@ -229,16 +247,71 @@ def _fmt_date(iso_or_rfc: str, french: bool = False) -> str:
     return iso_or_rfc
 
 
+_TAGS_PATH_BY_LANG: dict[str, str] = {
+    "en": "/tags",
+    "ar": "/ar/wusum",
+    "bn": "/bn/tag",
+    "cs": "/cs/stitky",
+    "de": "/de/etiketten",
+    "es": "/es/etiquetas",
+    "fil": "/fil/mga-tag",
+    "fr": "/fr/etiquettes",
+    "ha": "/ha/tags",
+    "he": "/he/tagim",
+    "hi": "/hi/tag",
+    "id": "/id/label",
+    "it": "/it/etichette",
+    "ja": "/ja/tagu",
+    "ko": "/ko/taegeu",
+    "nl": "/nl/labels",
+    "pl": "/pl/tagi",
+    "pt-br": "/pt-br/etiquetas",
+    "ro": "/ro/etichete",
+    "ru": "/ru/tegi",
+    "sv": "/sv/taggar",
+    "th": "/th/thaek",
+    "tr": "/tr/etiketler",
+    "uk": "/uk/tegy",
+    "vi": "/vi/the",
+    "yo": "/yo/awon-ami",
+    "zh-hans": "/zh-hans/biaoqian",
+    "zh-hant": "/zh-hant/biaoqian-tw",
+}
+
+
+_LANDING_PUBLIC = Path(__file__).resolve().parents[3] / "public"
+
+
+def _has_landing(slug: str, lang: str = "en") -> bool:
+    """True iff ``public/<locale-tags-prefix>/<slug>/index.html`` exists
+    on disk. Built by build_tag_landings.py only for canonical tags with
+    at least ``_LANDING_THRESHOLD`` posts (currently 3), so this lets the
+    chip strip skip the link wrapper for sub-threshold tags rather than
+    emitting a /tags/<slug>/ link that would 404 the strict-internal
+    link audit."""
+    prefix = _TAGS_PATH_BY_LANG.get(lang, "/tags").lstrip("/")
+    return (_LANDING_PUBLIC / prefix / slug / "index.html").is_file()
+
+
 def _render_tag_badges(keywords: list[str], labels: dict[str, str], lang: str = "en") -> str:
+    """Render the hero tag-chip strip. Links point at the per-tag
+    landings ``/<locale-tags>/<slug>/`` (WS3) when one exists; tags
+    with no landing (sub-threshold canonicals + non-canonical aliases)
+    render as plain ``<span>`` chips so the audit doesn't flag a 404."""
     if not keywords:
         return ""
-    prefix = "/fr/etiquettes/index.html" if lang == "fr" else "/tags/index.html"
-    badges = "".join(
-        f'<a href="{prefix}#h3-{slugify(k)}" class="article-tag" rel="tag">{k}</a>'
-        for k in keywords
-    )
+    prefix = _TAGS_PATH_BY_LANG.get(lang, "/tags")
+    badges_html: list[str] = []
+    for k in keywords:
+        slug = slugify(k)
+        if _has_landing(slug, lang):
+            badges_html.append(
+                f'<a href="{prefix}/{slug}/" class="article-tag" rel="tag">{k}</a>'
+            )
+        else:
+            badges_html.append(f'<span class="article-tag">{k}</span>')
     aria = labels.get("Topics", "Topics")
-    return f'<nav class="article-tags" aria-label="{aria}">{badges}</nav>'
+    return f'<nav class="article-tags" aria-label="{aria}">{"".join(badges_html)}</nav>'
 
 
 def _render_meta_bar(
@@ -355,6 +428,917 @@ def inject_article_furniture(html: str) -> str:
     if not fragment:
         return html
     return _HERO_RE.sub(rf"\1{fragment}\2", html, count=1)
+
+
+_LDJSON_BLOCK_RE = re.compile(
+    r'<script type="application/ld\+json"[^>]*>([\s\S]*?)</script>',
+    re.IGNORECASE,
+)
+_BASE_URL = "https://sebastienrousseau.com"
+
+
+def _relativize(url: str) -> str:
+    if url.startswith(_BASE_URL):
+        return url[len(_BASE_URL) :] or "/"
+    return url
+
+
+def _trail_from_node(node: object) -> list[tuple[str, str]]:
+    """Extract a 3-level ``(name, root-relative href)`` trail from one
+    JSON-LD node; empty list when the node isn't a well-formed
+    ``BreadcrumbList``."""
+    if not isinstance(node, dict) or node.get("@type") != "BreadcrumbList":
+        return []
+    raw = node.get("itemListElement")
+    if not isinstance(raw, list) or len(raw) != 3:
+        return []
+    items: list[tuple[str, str]] = []
+    for entry in raw:
+        if not isinstance(entry, dict):
+            return []
+        name, url = entry.get("name"), entry.get("item")
+        if not (isinstance(name, str) and isinstance(url, str)):
+            return []
+        items.append((name, _relativize(url)))
+    return items
+
+
+def _breadcrumb_items(html: str) -> list[tuple[str, str]]:
+    """Return the article's ``BreadcrumbList`` as ``[(name, href), …]``
+    with hrefs made root-relative. Empty list when no 3-level trail is
+    found (listing / static pages) or the JSON-LD is malformed."""
+    for m in _LDJSON_BLOCK_RE.finditer(html):
+        if '"BreadcrumbList"' not in m.group(1):
+            continue
+        try:
+            data = _json.loads(m.group(1))
+        except ValueError:
+            continue
+        nodes = data.get("@graph", [data]) if isinstance(data, dict) else []
+        for node in nodes:
+            items = _trail_from_node(node)
+            if items:
+                return items
+    return []
+
+
+def inject_oembed_link(html: str) -> str:
+    """Inject the `<link rel="alternate" type="application/json+oembed">`
+    discovery link in the article's `<head>`. The href points at the
+    static `/oembed/<slug>.json` file generated by
+    `scripts/generators/build_oembed.py`. BlogPosting pages only;
+    idempotent."""
+    if '"@type":"BlogPosting"' not in html:
+        return html
+    if 'application/json+oembed' in html:
+        return html
+    canonical_m = _CANONICAL_RE.search(html)
+    title_m = _OG_TITLE_RE.search(html)
+    if not (canonical_m and title_m):
+        return html
+    url = canonical_m.group(1)
+    # Strip /index.html, then drop the leading site domain to get the
+    # bare slug. Canonicals look like https://sebastienrousseau.com/
+    # <slug>/index.html or https://…/<slug>/.
+    if url.endswith("/index.html"):
+        url = url[: -len("/index.html")] + "/"
+    bare = url.rstrip("/").rsplit("/", 1)[-1] or None
+    if not bare:
+        return html
+    title = _unesc(title_m.group(1))
+    oembed_href = f"{_BASE_URL}/oembed/{bare}.json"
+    link = (
+        f'<link rel="alternate" type="application/json+oembed" '
+        f'href="{_esc(oembed_href, quote=True)}" '
+        f'title="{_esc(title, quote=True)}">'
+    )
+    return html.replace("</head>", f"{link}</head>", 1)
+
+
+def inject_breadcrumbs(html: str) -> str:
+    """Render a visible breadcrumb trail mirroring the page's 3-level
+    ``BreadcrumbList`` JSON-LD (Home > Articles > Title), inserted
+    directly above the H1 hero. Names and URLs come from the JSON-LD —
+    already localized by build_translations — so the visible UI can
+    never drift from the structured-data markup."""
+    if '"@type":"BlogPosting"' not in html:
+        return html
+    if 'class="crumbs"' in html:
+        return html
+    items = _breadcrumb_items(html)
+    if not items:
+        return html
+    aria = _esc(_labels(html).get("Breadcrumb", "Breadcrumb"), quote=True)
+    parts = []
+    for i, (name, url) in enumerate(items):
+        current = ' aria-current="page"' if i == 2 else ""
+        parts.append(f'<li><a href="{_esc(url, quote=True)}"{current}>{_esc(name)}</a></li>')
+    nav = f'<nav class="crumbs" aria-label="{aria}"><ol>{"".join(parts)}</ol></nav>'
+    return html.replace('<section class="ap-hero">', f'{nav}<section class="ap-hero">', 1)
+
+
+_TABLE_BLOCK_RE = re.compile(r"<table\b[^>]*>[\s\S]*?</table>", re.IGNORECASE)
+_THEAD_RE = re.compile(r"<thead\b[\s\S]*?</thead>", re.IGNORECASE)
+_TH_TEXT_RE = re.compile(r"<th\b[^>]*>([\s\S]*?)</th>", re.IGNORECASE)
+_TR_RE = re.compile(r"<tr\b[\s\S]*?</tr>", re.IGNORECASE)
+_TD_OPEN_RE = re.compile(r"<td\b", re.IGNORECASE)
+_TABLE_OPEN_RE = re.compile(r"<table\b([^>]*)>", re.IGNORECASE)
+_TAG_STRIP_RE = re.compile(r"<[^>]+>")
+
+
+def _card_label_table(table: str) -> str:
+    """Stamp ``data-label="<column header>"`` on every body ``<td>`` and
+    tag the table ``table--cards`` so CSS can collapse it into stacked
+    cards below 48em. No-op for headerless tables or on re-runs."""
+    if "data-label=" in table or "table--cards" in table:
+        return table
+    head_m = _THEAD_RE.search(table)
+    if not head_m:
+        return table
+    # th text arrives entity-encoded from ssg; unescape before re-escaping
+    # so CSS attr() renders "Q&A", not a raw "&amp;" entity.
+    headers = [
+        _esc(_unesc(_TAG_STRIP_RE.sub("", m.group(1)).strip()), quote=True)
+        for m in _TH_TEXT_RE.finditer(head_m.group(0))
+    ]
+    if not any(headers):
+        return table
+
+    def label_row(row_m: re.Match[str]) -> str:
+        cell = -1
+
+        def label_td(td_m: re.Match[str]) -> str:
+            nonlocal cell
+            cell += 1
+            if cell >= len(headers) or not headers[cell]:
+                return td_m.group(0)
+            return f'<td data-label="{headers[cell]}"'
+
+        return _TD_OPEN_RE.sub(label_td, row_m.group(0))
+
+    body = _TR_RE.sub(label_row, table[head_m.end() :])
+
+    def add_class(open_m: re.Match[str]) -> str:
+        attrs = open_m.group(1)
+        if 'class="' in attrs:
+            return f"<table{attrs}>".replace('class="', 'class="table--cards ', 1)
+        return f'<table{attrs} class="table--cards">'
+
+    head = _TABLE_OPEN_RE.sub(add_class, table[: head_m.end()], count=1)
+    return head + body
+
+
+def inject_table_labels(html: str) -> str:
+    """Make every article table mobile-fluid: per-cell ``data-label``
+    attributes (mirroring the column headers) + a ``table--cards``
+    class for the card-collapse CSS. BlogPosting pages only."""
+    if '"@type":"BlogPosting"' not in html:
+        return html
+    return _TABLE_BLOCK_RE.sub(lambda m: _card_label_table(m.group(0)), html)
+
+
+# ---------------------------------------------------------------------------
+# WS2 — FT-tier editorial composition
+# ---------------------------------------------------------------------------
+# Pure additive HTML — no <script> or <style> tags, CSP-safe. Each pass is
+# BlogPosting-gated, idempotent, and only reads from data already in the
+# built page (canonical URL, og:title, JSON-LD keywords). The translation
+# pipeline's _strip_postbuild_furniture in build_translations/_article.py
+# strips each tag from EN shells before locale re-render so locale pages
+# get re-injected with locale-correct strings, not EN leaks.
+
+_CANONICAL_RE = re.compile(r'<link\s+rel="canonical"\s+href="([^"]+)"', re.IGNORECASE)
+_OG_TITLE_RE = re.compile(r'<meta\s+property="og:title"\s+content="([^"]+)"', re.IGNORECASE)
+_DESCRIPTION_RE = re.compile(r'<meta\s+name="description"\s+content="([^"]+)"', re.IGNORECASE)
+_AP_HERO_OPEN_RE = re.compile(r'(<section class="ap-hero">)(\s*)(<h1>)', re.IGNORECASE)
+_SUB_PARA_RE = re.compile(r'<p class="sub">', re.IGNORECASE)
+_WRAP_CLOSE_RE = re.compile(r"(</div>\s*</main>)", re.IGNORECASE)
+
+# 16x16 monochrome SVG glyphs — currentColor so .share-rail can theme them.
+_SVG_X = (
+    '<svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">'
+    '<path d="M9.52 6.88L14.86 1h-1.42L8.83 6.07 4.94 1H.78l5.6 7.7L.78 15h1.42l4.78-5.27L11.07 15'
+    'h4.16L9.52 6.88zM2.71 2.07h1.83l7.61 10.51h-1.83L2.71 2.07z"/></svg>'
+)
+_SVG_LI = (
+    '<svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">'
+    '<path d="M13.6 13.6h-2.37V9.93c0-.87-.02-2-1.22-2-1.22 0-1.4.95-1.4 1.93v3.74H6.24V6.04h2.27'
+    'v1.04h.03c.32-.6 1.09-1.22 2.25-1.22 2.4 0 2.85 1.58 2.85 3.64v4.1zM3.56 5C2.81 5 2.2 4.39 '
+    '2.2 3.64S2.81 2.28 3.56 2.28s1.36.61 1.36 1.36S4.31 5 3.56 5zm1.18 8.6H2.39V6.04h2.36V13.6z"/'
+    '></svg>'
+)
+_SVG_FB = (
+    '<svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">'
+    '<path d="M9 14H6.5V8.5H5V6h1.5V4.5C6.5 3.07 7.07 2 9.07 2H10.5v2.5H9.43c-.38 0-.43.14-.43.43V'
+    '6h1.5L10 8.5H9V14z"/></svg>'
+)
+_SVG_WA = (
+    '<svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">'
+    '<path d="M8 1C4.13 1 1 4.13 1 8c0 1.27.34 2.46.93 3.5L1 15l3.6-.93C5.62 14.66 6.79 15 8 15c3'
+    '.87 0 7-3.13 7-7s-3.13-7-7-7zm0 12.7c-1.06 0-2.05-.29-2.9-.78l-.2-.12-2.13.56.57-2.08-.13-.21'
+    'A5.69 5.69 0 012.3 8c0-3.14 2.56-5.7 5.7-5.7s5.7 2.56 5.7 5.7-2.56 5.7-5.7 5.7zm3.1-4.27c-.17'
+    '-.08-1-.5-1.16-.55-.16-.06-.27-.08-.39.08-.11.17-.44.55-.54.66-.1.11-.2.13-.37.04-.17-.08-.71'
+    '-.26-1.36-.83a5.04 5.04 0 01-.94-1.17c-.1-.17-.01-.26.07-.34.07-.07.17-.2.25-.3.08-.1.11-.17'
+    '.16-.28.06-.11.03-.21-.01-.3-.05-.08-.39-.94-.53-1.28-.14-.34-.28-.29-.39-.3-.1-.01-.21-.01-'
+    '.32-.01a.61.61 0 00-.45.21c-.15.17-.59.58-.59 1.4 0 .83.61 1.63.69 1.74.08.12 1.2 1.83 2.91 '
+    '2.57.41.18.72.28.97.36.4.13.78.11 1.07.07.33-.05 1-.41 1.14-.8.14-.4.14-.74.1-.81-.04-.07-.16'
+    '-.11-.32-.19z"/></svg>'
+)
+_SVG_EMAIL = (
+    '<svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">'
+    '<path d="M2 3h12c.55 0 1 .45 1 1v8c0 .55-.45 1-1 1H2c-.55 0-1-.45-1-1V4c0-.55.45-1 1-1zm6 5.'
+    '18L13.18 4H2.82L8 8.18zM2 5.46V12h12V5.46L8 9.5 2 5.46z"/></svg>'
+)
+_SVG_BLUESKY = (
+    '<svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">'
+    '<path d="M3.2 2.5c1.5.6 3.2 1.9 4.3 4.3c.3.7.6 1.5.8 2.1c.2-.7.5-1.4.8-2.1c1.1-2.4 2.8-3.7 4.3-4.3'
+    'c1.7-.7 2.5.2 2.5 2.6c0 1.4-.5 4.2-.8 5.1c-.4 1.2-1.4 1.5-2.4 1.4c1.6.3 2 1.2 1 2.1c-1.9 1.7-2.7-.4-2.9'
+    '-.9c0-.1-.1-.1-.1-.1c-.1 0-.1.1-.2.1c-.2.5-1.1 2.6-3 .9c-1-.9-.6-1.8 1-2.1c-1.1.1-2-.2-2.4-1.4c-.3'
+    '-.9-.8-3.7-.8-5.1c0-2.4.8-3.3 2.5-2.6z"/></svg>'
+)
+_SVG_MASTODON = (
+    '<svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">'
+    '<path d="M14.5 3.6c-.6-1-1.8-1.7-3.2-1.9C9 1.4 6.9 1.4 4.7 1.7c-1.4.2-2.6 1-3.2 1.9C.9 4.5.6 5.8.6 7.2'
+    'v3.4c0 1.6 1 3 2.4 3.3l5.2.6V13c-.9 0-1.7-.2-2.4-.6c-1.1-.6-1.7-1.7-1.9-2.9l-.1-.5c.8.4 1.7.6 2.6.6c.5 0 '
+    '1-.1 1.4-.2c.5-.1.9-.3 1.3-.5v2.4h.7v-3.6c0-.7-.5-1.3-1.2-1.3c-.4 0-.7.2-.9.4l-.4.7l-.4-.7c-.2-.2-.5-.4'
+    '-.9-.4c-.7 0-1.2.6-1.2 1.3v3.6h.7V8.6c.4.2.8.4 1.3.5c.4.1.9.2 1.4.2c.9 0 1.8-.2 2.6-.6l-.1.5c-.2 1.2-.8'
+    ' 2.3-1.9 2.9c-.7.4-1.5.6-2.4.6v1.5l5.2-.6c1.4-.3 2.4-1.7 2.4-3.3V7.2c0-1.4-.3-2.7-.9-3.6z"/></svg>'
+)
+_SVG_MEDIUM = (
+    '<svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">'
+    '<path d="M1.5 3.5c0-.2-.1-.4-.2-.5L.5 2.2v-.2h2.7l2.1 4.7L7.2 2h2.6v.2l-.8.8c-.1.1-.1.2-.1.3v6.4'
+    'c0 .1 0 .2.1.3l.8.8v.2H6v-.2l.8-.8c.1-.1.1-.1.1-.3V4.6L4.7 11h-.3L2 4.6v4.4c0 .2.1.5.2.6l1 1.3v.2'
+    'H.2v-.2l1.1-1.3c.1-.2.2-.4.2-.6V3.5z"/></svg>'
+)
+
+
+def inject_eyebrow(html: str) -> str:
+    """Render an FT-style eyebrow caption (``<p class="eyebrow">``)
+    immediately above the H1 hero. The label is the article's first
+    keyword, upper-cased — mirroring how the FT promotes a single
+    editorial section per article (FEATURES / OPINION / ANALYSIS).
+    BlogPosting pages only; idempotent."""
+    if '"@type":"BlogPosting"' not in html:
+        return html
+    if 'class="eyebrow"' in html:
+        return html
+    keywords, _date_pub, _date_mod, _wc = _extract_article_metadata(html)
+    if not keywords:
+        return html
+    section = keywords[0].upper()
+    eyebrow = f'<p class="eyebrow">{_esc(section)}</p>'
+    return _AP_HERO_OPEN_RE.sub(rf"\1\2{eyebrow}\3", html, count=1)
+
+
+def inject_deck(html: str) -> str:
+    """Promote the existing ``<p class="sub">`` hero excerpt to the
+    FT-style ``.deck`` standfirst. The excerpt is already populated
+    from the article's frontmatter; this pass just signals 'editorial
+    standfirst' so the .deck CSS applies. BlogPosting pages only;
+    idempotent."""
+    if '"@type":"BlogPosting"' not in html:
+        return html
+    if 'class="sub deck"' in html:
+        return html
+    return _SUB_PARA_RE.sub('<p class="sub deck">', html, count=1)
+
+
+def _byline_role(is_fr: bool) -> str:
+    return "FONDATEUR · INGÉNIEUR" if is_fr else "FOUNDER · ENGINEER"
+
+
+def inject_byline_strap(html: str) -> str:
+    """Render an FT-style byline strap (``NAME · ROLE`` in caps) at the
+    foot of the article body, INSIDE the wrap-div so it ends up
+    immediately before the prev/next pagination (which the later
+    ``inject_prev_next_nav`` pass anchors on ``</div>\\s*</main>``).
+    The strap signals the editorial credit attached to the foregoing
+    piece — the same gesture FT Professional uses to close a Features
+    post. BlogPosting pages only; idempotent."""
+    if '"@type":"BlogPosting"' not in html:
+        return html
+    if 'class="byline-strap"' in html:
+        return html
+    labels = _labels(html)
+    is_fr = _is_french(html)
+    author_url = "/fr/a-propos/index.html" if is_fr else AUTHOR_URL
+    role = _byline_role(is_fr)
+    aria = _esc(labels.get("Byline", "Byline"), quote=True)
+    strap = (
+        f'<p class="byline-strap" aria-label="{aria}">'
+        f'<a href="{author_url}">{_esc(AUTHOR_NAME.upper())}</a>'
+        f' <span class="sep" aria-hidden="true">·</span> '
+        f"<span>{_esc(role)}</span></p>"
+    )
+    return _WRAP_CLOSE_RE.sub(strap + r"\1", html, count=1)
+
+
+def _share_li(href: str, label: str, glyph: str) -> str:
+    return (
+        f'<li><a href="{_esc(href, quote=True)}" rel="noopener noreferrer" '
+        f'aria-label="{_esc(label, quote=True)}">{glyph}</a></li>'
+    )
+
+
+def _share_payload(html: str) -> dict[str, str] | None:
+    """Extract canonical URL + og:title + meta description and return
+    the per-platform pre-fill strings the share rail needs. Returns
+    None if canonical or title is missing."""
+    url_m = _CANONICAL_RE.search(html)
+    title_m = _OG_TITLE_RE.search(html)
+    if not (url_m and title_m):
+        return None
+    url = url_m.group(1)
+    # Strip the /index.html canonical suffix so previews carry a clean
+    # trailing-slash URL — browsers resolve either.
+    if url.endswith("/index.html"):
+        url = url[: -len("/index.html")] + "/"
+    title = _unesc(title_m.group(1))
+    desc_m = _DESCRIPTION_RE.search(html)
+    desc = _unesc(desc_m.group(1)) if desc_m else ""
+    return {
+        "url": url,
+        "title": title,
+        "desc": desc,
+    }
+
+
+def _share_rail_items(payload: dict[str, str], labels: dict[str, str]) -> str:
+    """Render the 5 share-rail <li> anchors. Per-platform pre-fill
+    strategy (the richer the prompt, the more likely the reader
+    actually shares — empty share dialogs get closed):
+
+    * **X** — 280 char limit; title + URL fits, description usually
+      doesn't, so it's omitted and the OG meta card carries the
+      visual preview.
+    * **LinkedIn** — the share-offsite dialog ignores ``?text=`` today,
+      so we open the feed composer (``?shareActive=true``) with
+      title + description + URL pre-filled. That's the
+      "Share your thoughts…" prompt the FT pattern lives in.
+    * **Facebook** — stripped all ``?quote=`` support in 2017. Only
+      the URL gets through; OG meta drives the preview card.
+    * **WhatsApp + email** — no length cap, so they get the full
+      title + description + URL share-card payload.
+    """
+    url, title, desc = payload["url"], payload["title"], payload["desc"]
+    x_text = f"{title}\n\n{url}"
+    wa_text = "\n\n".join(p for p in (title, desc, url) if p)
+    email_body = "\n\n".join(p for p in (desc, f"Read more: {url}") if p)
+    li_text = "\n\n".join(p for p in (title, desc, url) if p)
+    enc_url = _url_quote(url, safe="")
+    enc_title = _url_quote(title, safe="")
+    return (
+        _share_li(
+            f"https://twitter.com/intent/tweet?text={_url_quote(x_text, safe='')}",
+            labels.get("Share.x", "Share on X"),
+            _SVG_X,
+        )
+        + _share_li(
+            f"https://www.linkedin.com/feed/?shareActive=true&text={_url_quote(li_text, safe='')}",
+            labels.get("Share.linkedin", "Share on LinkedIn"),
+            _SVG_LI,
+        )
+        + _share_li(
+            f"https://www.facebook.com/sharer/sharer.php?u={enc_url}",
+            labels.get("Share.facebook", "Share on Facebook"),
+            _SVG_FB,
+        )
+        + _share_li(
+            f"https://wa.me/?text={_url_quote(wa_text, safe='')}",
+            labels.get("Share.whatsapp", "Share on WhatsApp"),
+            _SVG_WA,
+        )
+        + _share_li(
+            f"mailto:?subject={enc_title}&body={_url_quote(email_body, safe='')}",
+            labels.get("Share.email", "Share by email"),
+            _SVG_EMAIL,
+        )
+        + _share_li(
+            # Bluesky's compose intent accepts ?text= with title+URL —
+            # 300 char post limit so we send title + URL like X.
+            f"https://bsky.app/intent/compose?text={_url_quote(x_text, safe='')}",
+            labels.get("Share.bluesky", "Share on Bluesky"),
+            _SVG_BLUESKY,
+        )
+    )
+
+
+def _syndication_payloads(payload: dict[str, str]) -> dict[str, str]:
+    """Return pre-formatted text payloads for platforms that don't
+    accept ?text= compose intents — Medium (markdown import), Mastodon
+    (no universal share URL across instances). The reader copies and
+    pastes into the platform of their choice."""
+    url, title, desc = payload["url"], payload["title"], payload["desc"]
+    # Medium import-style markdown — Medium's web importer reads the
+    # first H1 + body. The canonical link goes at the top so the
+    # Medium copy preserves the canonical URL.
+    medium_md = "\n\n".join(
+        p
+        for p in (
+            f"# {title}",
+            f"> Originally published at [{url}]({url})",
+            desc,
+            f"Read the full article on sebastienrousseau.com: {url}",
+        )
+        if p
+    )
+    # Mastodon toot — 500 char limit on mastodon.social. Title +
+    # truncated description + URL.
+    desc_trunc = desc[:300].rstrip()
+    if len(desc) > 300:
+        desc_trunc += "…"
+    mastodon = "\n\n".join(p for p in (title, desc_trunc, url) if p)
+    return {"medium": medium_md, "mastodon": mastodon}
+
+
+def _render_syndication_panel(payload: dict[str, str], labels: dict[str, str]) -> str:
+    """Inline collapsible at the article foot with copy buttons for
+    Medium + Mastodon. Each pre block has a stable id so main.js's
+    existing [data-copy] handler wires the clipboard."""
+    payloads = _syndication_payloads(payload)
+    blocks = []
+    label_map = {
+        "medium": labels.get("Syndicate.medium", "Format for Medium"),
+        "mastodon": labels.get("Syndicate.mastodon", "Format for Mastodon"),
+    }
+    copy_label = _esc(labels.get("Cite.copy", "Copy"))
+    for key, body in payloads.items():
+        target_id = f"syndicate-{key}"
+        blocks.append(
+            f'<div class="cite-format">'
+            f"<h3>{_esc(label_map[key])}</h3>"
+            f'<pre id="{target_id}">{_esc(body)}</pre>'
+            f'<button type="button" class="copy-btn" data-copy="#{target_id}" '
+            f'aria-label="{_esc(label_map[key], quote=True)} — {copy_label}">'
+            f"{copy_label}</button>"
+            f"</div>"
+        )
+    heading = _esc(labels.get("Syndicate.heading", "Syndicate this article"))
+    return (
+        f'<details class="cite-popover" id="syndicate-popover">'
+        f"<summary>{heading}</summary>"
+        + "".join(blocks)
+        + "</details>"
+    )
+
+
+def inject_syndication_panel(html: str) -> str:
+    """Append a syndication payload panel at the wrap-div close —
+    pre-formatted blocks for Medium import + Mastodon, each with a
+    copy button. Bluesky has a compose-intent URL so it joins the
+    share rail directly; Medium and Mastodon have no universal share
+    URL so the panel is the only path. BlogPosting pages only;
+    idempotent."""
+    if '"@type":"BlogPosting"' not in html:
+        return html
+    if 'id="syndicate-popover"' in html:
+        return html
+    payload = _share_payload(html)
+    if payload is None:
+        return html
+    panel = _render_syndication_panel(payload, _labels(html))
+    return _WRAP_CLOSE_RE.sub(panel + r"\1", html, count=1)
+
+
+def inject_share_rail(html: str) -> str:
+    """Render an FT-style vertical share rail (X / LinkedIn / Facebook
+    / WhatsApp / email / Bluesky) at the top of the article body. CSS
+    makes it ``position: sticky`` on >=64em and flows it inline on
+    mobile. Anchors only — no inline JavaScript, CSP-safe.
+    Medium / Mastodon payloads ship via inject_syndication_panel at
+    the wrap-div close (no universal share URL). BlogPosting pages
+    only; idempotent."""
+    if '"@type":"BlogPosting"' not in html:
+        return html
+    if 'class="share-rail share-rail--sticky"' in html:
+        return html
+    payload = _share_payload(html)
+    if payload is None:
+        return html
+    items = _share_rail_items(payload, _labels(html))
+    aria = _esc(_labels(html).get("Share", "Share"), quote=True)
+    rail = (
+        f'<nav class="share-rail share-rail--sticky" aria-label="{aria}">'
+        f"<ul>{items}</ul></nav>"
+    )
+    return _MAIN_RE.sub(rf"\1{rail}\2\3", html, count=1)
+
+
+# ---------------------------------------------------------------------------
+# WS2 — pull-quotes, section rules, footnotes
+# ---------------------------------------------------------------------------
+
+_PULL_BLOCKQUOTE_RE = re.compile(
+    r'<blockquote\b[^>]*\bclass="[^"]*\bpull\b[^"]*"[^>]*>([\s\S]*?)</blockquote>',
+    re.IGNORECASE,
+)
+# inject_anchor_links_and_toc stamps id="h2-..." on every PROSE h2
+# (the ones with slugified anchors). The ToC / Lead / Sources asides
+# use bare <h2> with no id, so this scoped regex naturally skips them.
+_H2_WITH_ID_RE = re.compile(r'<h2\s+id="[^"]*"[^>]*>', re.IGNORECASE)
+_MIN_H2_FOR_RULES = 6
+_FOOTNOTE_MARKER_RE = re.compile(r"\[\^(\d+)\]")
+_FOOTNOTE_DEF_RE = re.compile(r"\[\^(\d+)\]:\s*([^\n<]+)")
+
+
+def inject_pullquotes(html: str) -> str:
+    """Promote ``<blockquote class="pull">…</blockquote>`` blocks to
+    ``<aside class="pull-quote">…</aside>`` so the FT-style serif italic
+    + oversized opening-quote CSS (WS1 commit 2) applies. The marker
+    class is opt-in — authors who don't want a pull-quote keep the
+    plain blockquote. BlogPosting pages only; idempotent."""
+    if '"@type":"BlogPosting"' not in html:
+        return html
+    if 'class="pull-quote"' in html:
+        return html
+    return _PULL_BLOCKQUOTE_RE.sub(
+        lambda m: f'<aside class="pull-quote">{m.group(1)}</aside>',
+        html,
+    )
+
+
+def inject_section_rules(html: str) -> str:
+    """Insert ``<hr class="section-rule" aria-hidden="true">`` BEFORE
+    every prose ``<h2 id="...">`` after the first, on long-read
+    articles with at least 6 such headings. Targets the anchored body
+    headings stamped by ``inject_anchor_links_and_toc`` — so the
+    aside-only headings (Contents, Lead, Sources) are skipped, and
+    short pieces don't get visually overloaded with rules. Skipping
+    the first H2 preserves the natural break from the hero section.
+    BlogPosting pages only; idempotent."""
+    if '"@type":"BlogPosting"' not in html:
+        return html
+    if 'class="section-rule"' in html:
+        return html
+    headings = list(_H2_WITH_ID_RE.finditer(html))
+    if len(headings) < _MIN_H2_FOR_RULES:
+        return html
+    rule = '<hr class="section-rule" aria-hidden="true">'
+    out = html
+    # Walk back-to-front so earlier offsets stay valid as we splice.
+    for match in reversed(headings[1:]):
+        start = match.start()
+        out = out[:start] + rule + out[start:]
+    return out
+
+
+def _footnote_list_items(definitions: list[tuple[str, str]], labels: dict[str, str]) -> str:
+    backref_label = labels.get("Footnotes.return", "Return to text")
+    items = []
+    for n, body in definitions:
+        items.append(
+            f'<li id="fn-{n}">{body} '
+            f'<a class="footnote-back" href="#fnref-{n}" '
+            f'aria-label="{_esc(backref_label, quote=True)}">↩</a></li>'
+        )
+    return "".join(items)
+
+
+def inject_footnotes(html: str) -> str:
+    """Convert literal markdown footnote markers (``[^n]`` in text and
+    ``[^n]: …`` at the article foot) into HTML: each in-text marker
+    becomes a numbered ``<sup><a>`` link, and the collected definitions
+    surface as a ``<section class="footnotes">`` block immediately
+    inside the wrap-div close. Shokunin SSG doesn't expand footnotes,
+    so we do it at postbuild. BlogPosting pages only; idempotent."""
+    if '"@type":"BlogPosting"' not in html:
+        return html
+    if 'class="footnotes"' in html:
+        return html
+    if "[^" not in html:
+        return html
+    definitions = _FOOTNOTE_DEF_RE.findall(html)
+    if not definitions:
+        return html
+    # Strip the literal "[^n]: definition" lines from the body — they're
+    # about to be moved into the <section class="footnotes"> block.
+    body_no_defs = _FOOTNOTE_DEF_RE.sub("", html)
+    # Wrap remaining "[^n]" markers in <sup><a> superscript links.
+    def _sup(m: re.Match[str]) -> str:
+        n = m.group(1)
+        return (
+            f'<sup class="footnote-ref"><a href="#fn-{n}" id="fnref-{n}">{n}</a></sup>'
+        )
+
+    body_marked = _FOOTNOTE_MARKER_RE.sub(_sup, body_no_defs)
+    labels = _labels(html)
+    heading = _esc(labels.get("Footnotes.heading", "Footnotes"), quote=True)
+    items = _footnote_list_items(definitions, labels)
+    section = (
+        f'<section class="footnotes" aria-labelledby="footnotes-heading">'
+        f'<h2 id="footnotes-heading">{heading}</h2>'
+        f"<ol>{items}</ol></section>"
+    )
+    return _WRAP_CLOSE_RE.sub(section + r"\1", body_marked, count=1)
+
+
+# ---------------------------------------------------------------------------
+# WS2 — action rail, cite popover, reuse / republish panel
+# ---------------------------------------------------------------------------
+
+_LICENSE_RE = re.compile(r'<meta\s+name="license"\s+content="([^"]+)"', re.IGNORECASE)
+_LICENSE_DEFAULT = "CC-BY-4.0"
+_LICENSE_LABELS: dict[str, str] = {
+    "CC-BY-4.0": "Creative Commons Attribution 4.0 International",
+    "CC-BY-SA-4.0": "Creative Commons Attribution-ShareAlike 4.0 International",
+    "CC-BY-NC-SA-4.0": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0",
+    "CC-BY-ND-4.0": "Creative Commons Attribution-NoDerivatives 4.0 International",
+    "All-Rights-Reserved": "All rights reserved",
+}
+_LICENSE_URLS: dict[str, str] = {
+    "CC-BY-4.0": "https://creativecommons.org/licenses/by/4.0/",
+    "CC-BY-SA-4.0": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "CC-BY-NC-SA-4.0": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "CC-BY-ND-4.0": "https://creativecommons.org/licenses/by-nd/4.0/",
+}
+
+_AUTHOR_LAST = "Rousseau"
+_AUTHOR_FIRST = "Sebastien"
+_AUTHOR_INITIAL = "S."
+
+# 14x14 monochrome SVG glyphs (currentColor fill) for the action rail.
+_SVG_DOWNLOAD = (
+    '<svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">'
+    '<path d="M7.3 1.5h1.4v6l1.95-1.95.99.99L8 9.18 4.36 5.54l.99-.99L7.3 6.5v-5zM2 13h12v1.5H2V13z"/>'
+    "</svg>"
+)
+_SVG_HEADPHONES = (
+    '<svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">'
+    '<path d="M8 2C4.7 2 2 4.7 2 8v3a1.5 1.5 0 001.5 1.5h1V8h-1V8c0-2 1.5-4 3.5-4s3.5 1.5 3.5 4v4.5'
+    'h1c.8 0 1.5-.7 1.5-1.5V8c0-3.3-2.7-6-6-6z"/>'
+    "</svg>"
+)
+_SVG_QUOTE = (
+    '<svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">'
+    '<path d="M3 4.5h3.5v3.5H5c0 1.5.5 2.5 1.5 3v1c-2 0-3.5-2-3.5-4V4.5zm6.5 0H13v3.5h-1.5'
+    'c0 1.5.5 2.5 1.5 3v1c-2 0-3.5-2-3.5-4V4.5z"/>'
+    "</svg>"
+)
+
+
+def _slug_from_canonical(html: str) -> str | None:
+    """Return the bare slug from the canonical URL. Canonical URLs on
+    this site always end with ``/<slug>/index.html``; strip that suffix
+    before taking the last path segment so PDF / oEmbed routes get
+    ``/api/pdf/<slug>.pdf`` and not ``/api/pdf/index.html.pdf``."""
+    m = _CANONICAL_RE.search(html)
+    if not m:
+        return None
+    url = m.group(1)
+    for suffix in ("/index.html", "/"):
+        if url.endswith(suffix):
+            url = url[: -len(suffix)]
+            break
+    return url.rsplit("/", 1)[-1] or None
+
+
+def _license_id(html: str) -> str:
+    m = _LICENSE_RE.search(html)
+    if m:
+        candidate = m.group(1).strip()
+        if candidate in _LICENSE_LABELS:
+            return candidate
+    return _LICENSE_DEFAULT
+
+
+def inject_action_rail(html: str) -> str:
+    """Render the floating ``.action-rail--sticky`` with Save PDF + Cite
+    at the top of the article body. The CSS positions it on the right
+    edge on >=64em viewports and as a sticky bottom bar on <48em.
+
+    Save PDF is an anchor to ``/api/pdf/<slug>.pdf`` — the Cloudflare
+    Worker (workers/pdf-proxy.js) forwards to the Fly.io WeasyPrint
+    service and Edge-caches the response immutable for 24h. The
+    ``download`` attribute hints the browser to save rather than
+    navigate. A ``data-print-fallback`` hook on the same anchor lets
+    main.js fall back to ``window.print()`` if the route ever 503s
+    (e.g. local dev without the Worker).
+
+    Cite jumps to the popover. BlogPosting pages only; idempotent."""
+    if '"@type":"BlogPosting"' not in html:
+        return html
+    if 'class="action-rail action-rail--sticky"' in html:
+        return html
+    slug = _slug_from_canonical(html)
+    if not slug:
+        return html
+    labels = _labels(html)
+    aria = _esc(labels.get("Action.aria", "Article actions"), quote=True)
+    pdf_href = f"/api/pdf/{slug}.pdf"
+    items = (
+        f'<li><a href="{pdf_href}" download="{slug}.pdf" '
+        f'data-print-fallback rel="alternate" type="application/pdf">'
+        f'{_SVG_DOWNLOAD}'
+        f'<span>{_esc(labels.get("Action.savePdf", "Save PDF"))}</span></a></li>'
+        f'<li><a href="#cite-popover">{_SVG_QUOTE}'
+        f'<span>{_esc(labels.get("Action.cite", "Cite"))}</span></a></li>'
+    )
+    rail = (
+        f'<nav class="action-rail action-rail--sticky" aria-label="{aria}">'
+        f"<ul>{items}</ul></nav>"
+    )
+    return _MAIN_RE.sub(rf"\1{rail}\2\3", html, count=1)
+
+
+def _parse_iso_date(date_str: str) -> _datetime | None:
+    if not date_str:
+        return None
+    for fmt in ("%Y-%m-%dT%H:%M:%S%z", "%Y-%m-%dT%H:%M:%S.%f%z", "%Y-%m-%d"):
+        try:
+            return _datetime.strptime(date_str, fmt)
+        except ValueError:
+            continue
+    return None
+
+
+def _first_word(title: str) -> str:
+    m = re.search(r"\w+", title)
+    return m.group(0).lower() if m else "post"
+
+
+def _citation_blocks(title: str, url: str, date_str: str) -> dict[str, str]:
+    """Render the 5 academic citation formats from article metadata."""
+    dt = _parse_iso_date(date_str)
+    year = str(dt.year) if dt else "n.d."
+    month_short = dt.strftime("%b") if dt else ""
+    month_long = dt.strftime("%B") if dt else ""
+    day = str(dt.day) if dt else ""
+    author_lastfirst = f"{_AUTHOR_LAST}, {_AUTHOR_FIRST}"
+    author_vancouver = f"{_AUTHOR_LAST} {_AUTHOR_INITIAL[0]}"
+    author_apa = f"{_AUTHOR_LAST}, {_AUTHOR_INITIAL}"
+    bib_key = f"{_AUTHOR_LAST.lower()}{year}{_first_word(title)}"
+    bibtex = (
+        f"@online{{{bib_key},\n"
+        f"  author  = {{{author_lastfirst}}},\n"
+        f"  title   = {{{{{title}}}}},\n"
+        f"  year    = {{{year}}},\n"
+        f"  url     = {{{url}}},\n"
+        f"  urldate = {{{year}}}\n"
+        f"}}"
+    )
+    ris = (
+        f"TY  - GEN\n"
+        f"AU  - {author_lastfirst}\n"
+        f"TI  - {title}\n"
+        f"PY  - {year}\n"
+        f"UR  - {url}\n"
+        f"ER  -"
+    )
+    vancouver = (
+        f"{author_vancouver}. {title}. sebastienrousseau.com. "
+        f"{year} {month_short} {day}. Available from: {url}"
+    )
+    chicago = f'{author_lastfirst}. "{title}." sebastienrousseau.com. {month_long} {day}, {year}. {url}.'
+    apa = f"{author_apa} ({year}, {month_long} {day}). {title}. sebastienrousseau.com. {url}"
+    return {
+        "BibTeX": bibtex,
+        "RIS": ris,
+        "Vancouver": vancouver,
+        "Chicago": chicago,
+        "APA": apa,
+    }
+
+
+def inject_cite_popover(html: str) -> str:
+    """Append a zero-JS ``<details class="cite-popover" id="cite-popover">``
+    block at the wrap-div close, with one ``<pre>`` per citation format
+    (BibTeX / RIS / Vancouver / Chicago / APA). The action-rail's
+    "Cite" button jumps here. WS5 will wire copy-to-clipboard
+    buttons + main.js handlers; for now readers select-all + copy
+    from the <pre>. BlogPosting pages only; idempotent.
+
+    Idempotency gates on the ``id="cite-popover"`` anchor rather than
+    the class — `inject_syndication_panel` runs first and also uses
+    ``class="cite-popover"`` for shared FT styling (with
+    ``id="syndicate-popover"``). Without the ID-based gate, the
+    syndicate-popover's class match short-circuits this injector and
+    the action-rail's ``href="#cite-popover"`` resolves to no target
+    (pa11y WCAG2AAA NoSuchID)."""
+    if '"@type":"BlogPosting"' not in html:
+        return html
+    if 'id="cite-popover"' in html:
+        return html
+    url_m = _CANONICAL_RE.search(html)
+    title_m = _OG_TITLE_RE.search(html)
+    if not (url_m and title_m):
+        return html
+    url = url_m.group(1)
+    title = _unesc(title_m.group(1))
+    _kw, date_pub, _dm, _wc = _extract_article_metadata(html)
+    formats = _citation_blocks(title, url, date_pub)
+    labels = _labels(html)
+    copy_label = _esc(labels.get("Cite.copy", "Copy"))
+    # Meta header — title + description give the reader context before
+    # they commit to a citation format. Description comes from the
+    # canonical <meta name="description"> the article already carries.
+    desc_m = _DESCRIPTION_RE.search(html)
+    desc = _unesc(desc_m.group(1)) if desc_m else ""
+    # Heading-skip-safe: the cite popover is a <details> disclosure
+    # widget whose <summary> already serves as the accessible name.
+    # An <h3> here under the article's body <h2>s would still parse,
+    # but inside a closed <details> the screen-reader heading tree
+    # gets confusing. Use a <p class="cite-title"> with strong text
+    # — same visual weight, no heading-skip claim.
+    meta_block = (
+        f'<header class="cite-meta">'
+        f'<p class="cite-title"><strong>{_esc(title)}</strong></p>'
+        + (f"<p>{_esc(desc)}</p>" if desc else "")
+        + "</header>"
+    )
+    blocks = []
+    for name, body in formats.items():
+        target_id = f"cite-{name.lower()}"
+        blocks.append(
+            f'<div class="cite-format"><h3>{_esc(name)}</h3>'
+            f'<pre id="{target_id}">{_esc(body)}</pre>'
+            f'<button type="button" class="copy-btn" data-copy="#{target_id}" '
+            f'aria-label="{_esc(name, quote=True)} — {copy_label}">{copy_label}</button>'
+            f"</div>"
+        )
+    popover = (
+        f'<details class="cite-popover" id="cite-popover">'
+        f'<summary>{_esc(labels.get("Cite.heading", "Cite this article"))}</summary>'
+        + meta_block
+        + "".join(blocks)
+        + "</details>"
+    )
+    return _WRAP_CLOSE_RE.sub(popover + r"\1", html, count=1)
+
+
+def inject_reuse_panel(html: str) -> str:
+    """Append a republish / reuse panel at the wrap-div close: licence
+    statement, machine-readable ``rel="license"`` link, attribution
+    snippet in a ``<pre>``. License id comes from
+    ``<meta name="license">`` (or defaults to CC-BY-4.0) and must be
+    on the allow-list; unknown ids fall back to the default rather
+    than emitting a broken licence URL. BlogPosting pages only;
+    idempotent."""
+    if '"@type":"BlogPosting"' not in html:
+        return html
+    if 'class="reuse"' in html:
+        return html
+    url_m = _CANONICAL_RE.search(html)
+    title_m = _OG_TITLE_RE.search(html)
+    if not (url_m and title_m):
+        return html
+    url = url_m.group(1)
+    title = _unesc(title_m.group(1))
+    license_id = _license_id(html)
+    license_label = _LICENSE_LABELS[license_id]
+    license_url = _LICENSE_URLS.get(license_id)
+    labels = _labels(html)
+    if license_url:
+        license_a = f'<a rel="license" href="{license_url}">{_esc(license_label)}</a>'
+    else:
+        license_a = _esc(license_label)
+    # Description for the visible share-card preview AND the multi-line
+    # attribution payload. Falls back to "" when the article has no
+    # meta description (rare; default articles do).
+    desc_m = _DESCRIPTION_RE.search(html)
+    desc = _unesc(desc_m.group(1)) if desc_m else ""
+    # Same heading-skip-safe pattern as the cite popover: the panel's
+    # <h2 id="reuse-heading"> ("Republish this article") IS the
+    # section heading; the title preview is a strong paragraph, not
+    # another h-level inside it.
+    meta_block = (
+        f'<header class="reuse-meta">'
+        f'<p class="reuse-title"><strong>{_esc(title)}</strong></p>'
+        + (f"<p>{_esc(desc)}</p>" if desc else "")
+        + "</header>"
+    )
+    # Richer multi-line attribution so the pasted block reads as a
+    # complete share card, not a one-liner. Title + description give
+    # republishers immediate context; URL + author + licence carry
+    # the legal attribution requirement. The visible URL drops the
+    # /index.html canonical suffix so the share payload reads
+    # naturally — browsers resolve either form.
+    share_url = url[: -len("/index.html")] + "/" if url.endswith("/index.html") else url
+    attribution_lines = [title]
+    if desc:
+        attribution_lines.extend(["", desc])
+    attribution_lines.extend(
+        [
+            "",
+            f"Originally published at {share_url} by {_AUTHOR_FIRST} {_AUTHOR_LAST}.",
+            f"Licensed under {license_id}.",
+        ]
+    )
+    attribution = "\n".join(attribution_lines)
+    copy_label = _esc(labels.get("Reuse.copy", "Copy attribution"))
+    panel = (
+        f'<section class="reuse" aria-labelledby="reuse-heading">'
+        f'<h2 id="reuse-heading">'
+        f'{_esc(labels.get("Reuse.heading", "Republish this article"))}</h2>'
+        + meta_block
+        + f"<p>{_esc(labels.get('Reuse.license', 'This article is licensed under'))} "
+        + f"{license_a}. "
+        + f"{_esc(labels.get('Reuse.attribution', 'Republication requires attribution to the canonical URL.'))}</p>"
+        + f'<pre id="reuse-attribution">{_esc(attribution)}</pre>'
+        + '<button type="button" class="copy-btn" data-copy="#reuse-attribution" '
+        + f'aria-label="{copy_label}">{copy_label}</button>'
+        + "</section>"
+    )
+    return _WRAP_CLOSE_RE.sub(panel + r"\1", html, count=1)
 
 
 _OG_IMAGE_RE = re.compile(

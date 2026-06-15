@@ -95,6 +95,18 @@
         --max:980px;
         --max-wide:1440px;
         --radius:18px;
+        /* FT-tier editorial tokens. --paper is the warm article surface
+           separate from --bg (which keeps the chrome cool-neutral);
+           --ink-deep is the dark-navy card background (.card--editorial)
+           that stays dark in BOTH themes; --rule and --eyebrow are
+           paper-tuned accents; --measure-article + --leading-article
+           govern the article body column. No consumers in this commit. */
+        --paper:#ffffff;
+        --ink-deep:#0d1b2a;
+        --rule:#e0e0e0;
+        --eyebrow:#0d1b2a;
+        --measure-article:62ch;
+        --leading-article:1.65;
         color-scheme: light dark;
         /* Named typography abstraction — every font-family in the
            stylesheet reads from these three vars. Values are system
@@ -121,6 +133,13 @@
         --border:#3a3a3c;
         --shadow:0 1px 0 rgba(255,255,255,.05);
         --shadow-lift:0 18px 40px -10px rgba(0,0,0,.7);
+        /* Dark-mode pairs for the FT-tier tokens. --paper goes inky;
+           --ink-deep inverts to off-white so .card--editorial keeps the
+           same dark-card-on-light-card-bg gesture that defines FT. */
+        --paper:#0b0b0d;
+        --ink-deep:#f2efe6;
+        --rule:#2a2a2c;
+        --eyebrow:#f2efe6;
       }
       @media (prefers-color-scheme: dark){
         html:not([data-theme="light"]){
@@ -133,22 +152,323 @@
           --bg-alt:#1d1d1f;
           --card:#161617;
           --border:#3a3a3c;
+          --paper:#0b0b0d;
+          --ink-deep:#f2efe6;
+          --rule:#2a2a2c;
+          --eyebrow:#f2efe6;
         }
+      }
+      /* ---------- Glass surface tokens + utilities. Opaque --card
+         fallback first; promoted to translucent glass only when the
+         engine supports backdrop-filter AND the user hasn't asked for
+         reduced transparency. Body text never sits on glass surfaces
+         (HTMLCS can't compute contrast through translucency — the same
+         constraint that keeps .ap-nav opaque). ---------- */
+      :root{
+        --glass-bg:oklch(1 0 0 / .55);
+        --glass-edge:oklch(1 0 0 / .15);
+        --glass-shadow:0 8px 32px rgba(0,0,0,.12);
+      }
+      [data-theme="dark"]{--glass-bg:oklch(0.17 0.01 250 / .55);--glass-shadow:0 8px 32px rgba(0,0,0,.5)}
+      @media (prefers-color-scheme: dark){html:not([data-theme="light"]){--glass-bg:oklch(0.17 0.01 250 / .55);--glass-shadow:0 8px 32px rgba(0,0,0,.5)}}
+      .glass,.glass-premium{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow)}
+      @supports (backdrop-filter: blur(1px)){
+        @media (prefers-reduced-transparency: no-preference){
+          .glass{background:var(--glass-bg);backdrop-filter:blur(20px) saturate(160%);-webkit-backdrop-filter:blur(20px) saturate(160%);border-color:var(--glass-edge);box-shadow:var(--glass-shadow)}
+          .glass-premium{background:var(--glass-bg);backdrop-filter:blur(24px) saturate(1.6);-webkit-backdrop-filter:blur(24px) saturate(1.6);border-color:transparent;box-shadow:inset 0 1px oklch(1 0 0 / .15),inset 0 -1px oklch(0 0 0 / .10),var(--glass-shadow)}
+        }
+      }
+      @media (prefers-contrast: more){.glass,.glass-premium{background:var(--card);backdrop-filter:none;-webkit-backdrop-filter:none;border-color:var(--border)}}
+      /* Light-sweep hover for pill CTAs — hover-capable, motion-tolerant
+         pointers only; paint-only transform on an overlay. */
+      @media (hover:hover) and (prefers-reduced-motion: no-preference){
+        .btn-sweep{position:relative;overflow:hidden}
+        /* Decorative sweep gradient — opacity:0 at rest so axe-core can
+           cleanly compute the underlying button contrast without the
+           gradient overlay tripping its "needs further review" heuristic.
+           Only fades + sweeps in on hover/focus. */
+        .btn-sweep::after{content:"";position:absolute;inset:0;background:linear-gradient(105deg,transparent 40%,rgba(255,255,255,.35) 50%,transparent 60%);transform:translateX(-120%);opacity:0;transition:transform .6s ease,opacity .15s ease;pointer-events:none}
+        .btn-sweep:hover::after,.btn-sweep:focus-visible::after{transform:translateX(120%);opacity:1}
       }
       *{box-sizing:border-box}
       html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
       body{
-        margin:0;background:var(--bg);color:var(--ink);
+        margin:0;background:var(--paper);color:var(--ink);
         font-family:var(--type-body);
         font-size:17px;line-height:1.47059;letter-spacing:-.022em;
         -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;
       }
       img{max-width:100%;height:auto;display:block}
       .reading-progress{position:fixed;top:0;left:0;width:100%;height:3px;background:var(--accent, #0056b3);transform:scaleX(0);transform-origin:0 50%;z-index:9999;pointer-events:none;will-change:transform;transition:transform .12s linear}
+      /* Soft glow on the progress bar; engines without color-mix drop
+         the declaration harmlessly. The bar itself stays JS-driven
+         (main.js) — it tracks the <main> article, not the document, and
+         keeps aria-valuenow in sync, which scroll(root) couldn't. */
+      .reading-progress{box-shadow:0 0 12px color-mix(in srgb,var(--accent) 55%,transparent)}
+      /* Zero-JS scroll-driven nav elevation (Chromium 115+) — paint-only
+         box-shadow over the first 150px of scroll, no CLS impact. */
+      @media (prefers-reduced-motion: no-preference){
+        @supports (animation-timeline: scroll()){
+          .ap-nav{animation:nav-elevate linear both;animation-timeline:scroll(root);animation-range:0 150px}
+        }
+      }
+      @keyframes nav-elevate{to{box-shadow:0 8px 24px -12px rgba(0,0,0,.22)}}
       .topic-breadcrumb{font-size:13px;color:var(--ink-mute, #6e6e73);margin:0 auto 16px;max-width:var(--max-wide);padding:0 var(--pad-x)}
       .topic-breadcrumb a{color:var(--ink-mute, #6e6e73)}
       .topic-breadcrumb a:hover{color:var(--accent, #0056b3)}
+      /* Visible breadcrumb trail — injected by postbuild above the H1 hero
+         on every BlogPosting page; mirrors the BreadcrumbList JSON-LD. */
+      .crumbs{max-width:var(--max-wide);margin:0 auto;padding:14px var(--pad-x) 0;font-size:13px}
+      .crumbs ol{list-style:none;display:flex;flex-wrap:wrap;align-items:center;margin:0;padding:0}
+      .crumbs li{display:inline-flex;align-items:center;min-height:24px}
+      .crumbs li+li::before{content:"\203A";margin:0 8px;color:var(--ink-mute, #6e6e73)}
+      [dir="rtl"] .crumbs li+li::before{content:"\2039"}
+      .crumbs a{color:var(--ink-mute, #6e6e73);padding:2px 0}
+      .crumbs a:hover{color:var(--accent, #0056b3);opacity:1}
+      .crumbs a[aria-current="page"]{color:var(--ink, #111);font-weight:500}
       .topic-lede{font-size:18px;line-height:1.5;color:var(--ink-soft);max-width:760px;margin:8px auto 0}
+      /* ---------- FT-tier editorial components. Pure additive classes —
+         no global selector poisoning. Body type-scale tightening is
+         scoped to main.content so the homepage hero (which is NOT an
+         article) keeps its current display sizing. h1 stays at hero
+         scale on .ap-hero; WS2 wires the eyebrow/deck/byline-strap
+         injectors that compose around it. ---------- */
+      .eyebrow{font-family:var(--type-body);font-size:.8125rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--eyebrow);margin:0 0 12px;line-height:1.2}
+      .eyebrow a{color:inherit;text-decoration:none}
+      .eyebrow a:hover{color:var(--accent);opacity:1}
+      .deck{font-family:var(--type-body);font-size:clamp(1.0625rem,1.4vw,1.25rem);line-height:1.5;color:var(--ink-soft);max-width:var(--measure-article);margin:8px 0 24px;text-wrap:pretty}
+      .deck a{color:inherit;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
+      .byline-strap{font-family:var(--type-body);font-size:.75rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-mute);margin:0 0 8px;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+      .byline-strap a{color:inherit;text-decoration:none}
+      .byline-strap a:hover{color:var(--accent);opacity:1}
+      .byline-strap .sep{color:var(--ink-mute);user-select:none}
+      aside.pull-quote{font-family:var(--type-display);font-style:italic;font-size:clamp(1.25rem,2vw,1.625rem);line-height:1.4;color:var(--ink-deep);max-width:var(--measure-article);margin:32px 0;padding:0 0 0 32px;position:relative;text-wrap:balance}
+      aside.pull-quote::before{content:"\201C";position:absolute;inset-inline-start:0;top:-12px;font-size:3rem;line-height:1;color:var(--rule);font-family:var(--type-display)}
+      aside.pull-quote cite{display:block;margin-top:12px;font-style:normal;font-family:var(--type-body);font-size:.75rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-mute)}
+      aside.pull-quote cite::before{content:"\2014\00a0"}
+      hr.section-rule{border:0;border-top:1px solid var(--rule);max-width:var(--measure-article);margin:32px 0}
+      /* Share + action rails. Both: outer <nav> is a positioning shell,
+         inner <ul> is the flex flow with list-style: none. Without the
+         ul scope, default disc bullets showed through. */
+      .share-rail{margin:0 0 24px}
+      .share-rail>ul{display:flex;gap:8px;padding:0;margin:0;list-style:none}
+      .share-rail li{margin:0;list-style:none}
+      .share-rail a,.share-rail button{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:50%;border:1px solid var(--border);background:var(--paper);color:var(--ink-mute);cursor:pointer;text-decoration:none;transition:color .2s ease,border-color .2s ease,background .2s ease}
+      .share-rail a:hover,.share-rail button:hover{color:var(--ink-deep);border-color:var(--ink-deep);background:var(--bg);opacity:1}
+      .share-rail svg{width:16px;height:16px;display:block;fill:currentColor}
+      @media (min-width:64em){
+        .share-rail--sticky{position:fixed;inset-inline-start:24px;top:calc(var(--nav-h) + 96px);z-index:50;margin:0}
+        .share-rail--sticky>ul{flex-direction:column}
+      }
+      .share-rail--card a,.share-rail--card button{width:28px;height:28px;color:var(--paper);border-color:transparent;background:transparent}
+      .share-rail--card a:hover,.share-rail--card button:hover{color:var(--paper);border-color:var(--paper);background:transparent}
+      .share-rail--card svg{width:14px;height:14px}
+      .action-rail{margin:0 0 24px}
+      .action-rail>ul{display:flex;gap:8px;padding:0;margin:0;list-style:none}
+      .action-rail li{margin:0;list-style:none}
+      .action-rail a,.action-rail button{display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:12px 18px;min-height:44px;min-width:44px;border:1px solid var(--border);background:var(--paper);color:var(--ink-deep);border-radius:999px;text-decoration:none;font-size:.75rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;font-family:var(--type-body);transition:border-color .2s ease,background .2s ease,color .2s ease}
+      .action-rail a:hover,.action-rail button:hover{border-color:var(--ink-deep);background:var(--ink-deep);color:var(--paper);opacity:1}
+      .action-rail svg{width:14px;height:14px;display:block;fill:currentColor}
+      @media (min-width:64em){
+        .action-rail--sticky{position:fixed;inset-inline-end:24px;top:calc(var(--nav-h) + 96px);z-index:50;margin:0}
+        .action-rail--sticky>ul{flex-direction:column}
+      }
+      @media (max-width:47.9375em){
+        .action-rail--sticky{position:fixed;inset-inline:0;bottom:0;background:var(--paper);border-top:1px solid var(--rule);z-index:50;border-radius:0;margin:0;padding:12px}
+        .action-rail--sticky>ul{justify-content:center}
+        .action-rail--sticky a,.action-rail--sticky button{flex:1 1 0;max-width:160px}
+      }
+      /* Clipboard copy buttons inside cite popover + reuse panel —
+         small ghost-pill style, gives a 2s visual confirmation via
+         [data-copied] flipped by main.js. */
+      .copy-btn{display:inline-flex;align-items:center;gap:6px;margin-top:8px;padding:10px 16px;min-height:44px;border:1px solid var(--border);background:transparent;color:var(--ink-deep);border-radius:999px;font-size:.75rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;font-family:var(--type-body);transition:border-color .2s ease,background .2s ease,color .2s ease}
+      .copy-btn:hover{border-color:var(--ink-deep);background:var(--ink-deep);color:var(--paper)}
+      .copy-btn[data-copied="1"]{border-color:var(--ink-deep);background:var(--ink-deep);color:var(--paper)}
+      .copy-btn[data-copied="1"]::after{content:" ✓"}
+      .card--editorial{display:flex;flex-direction:column;gap:8px;background:var(--ink-deep);color:var(--paper);padding:24px;border:none;border-radius:0;box-shadow:none;text-decoration:none}
+      .card--editorial:hover{opacity:1}
+      .card--editorial .eyebrow{color:var(--paper);opacity:.7}
+      .card--editorial h2,.card--editorial h3{color:var(--paper);font-family:var(--type-body);font-weight:700;letter-spacing:-.01em;margin:0}
+      .card--editorial p{color:var(--paper);opacity:.85;font-size:.9375rem;line-height:1.5;margin:0;max-width:none}
+      /* Cite-this popover — zero-JS <details> with one <pre> per
+         citation format (BibTeX / RIS / Vancouver / Chicago / APA).
+         WS5 wires the copy-button JS; for now readers select-all
+         + copy from the <pre>. */
+      details.cite-popover{max-width:var(--measure-article);margin:32px 0;border:1px solid var(--rule);background:var(--paper);padding:0}
+      details.cite-popover>summary{padding:14px 18px;font-family:var(--type-body);font-size:.75rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-deep);cursor:pointer;list-style:none}
+      details.cite-popover>summary::-webkit-details-marker{display:none}
+      details.cite-popover>summary::after{content:"+";float:inline-end;font-weight:400;font-size:1rem}
+      details.cite-popover[open]>summary::after{content:"\2212"}
+      /* Meta header — article title + description shown above the
+         citation format blocks so the reader sees what they're about
+         to cite or share. */
+      details.cite-popover .cite-meta{padding:14px 18px 0;border-top:1px solid var(--rule)}
+      details.cite-popover .cite-meta .cite-title{font-family:var(--type-display);font-size:1.125rem;font-weight:600;margin:0 0 8px;color:var(--ink-deep);line-height:1.3;text-transform:none;letter-spacing:0;max-width:none}
+      details.cite-popover .cite-meta .cite-title strong{font-weight:600}
+      details.cite-popover .cite-meta p{font-family:var(--type-body);font-size:.9375rem;line-height:1.5;color:var(--ink-soft);margin:0 0 12px;max-width:none}
+      details.cite-popover .cite-format{padding:0 18px 14px;border-top:1px solid var(--rule)}
+      details.cite-popover .cite-format h3{font-family:var(--type-body);font-size:.6875rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-mute);margin:14px 0 8px}
+      details.cite-popover pre{margin:0;padding:12px;background:var(--bg);border:1px solid var(--rule);font-family:var(--type-mono);font-size:.8125rem;line-height:1.5;color:var(--ink);overflow-x:auto;white-space:pre-wrap;word-break:break-word}
+      /* Reuse / republish panel — CC-BY-4.0 by default, frontmatter
+         "license:" overrides. WS5 wires the clipboard copy button. */
+      section.reuse{max-width:var(--measure-article);margin:32px 0;padding:18px;border:1px solid var(--rule);background:var(--paper)}
+      section.reuse h2{font-family:var(--type-body);font-size:.875rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-deep);margin:0 0 8px}
+      section.reuse .reuse-meta{margin:0 0 14px;padding-top:8px;border-top:1px solid var(--rule)}
+      section.reuse .reuse-meta .reuse-title{font-family:var(--type-display);font-size:1.125rem;font-weight:600;margin:8px 0;color:var(--ink-deep);line-height:1.3;text-transform:none;letter-spacing:0;max-width:none}
+      section.reuse .reuse-meta .reuse-title strong{font-weight:600}
+      section.reuse .reuse-meta p{font-family:var(--type-body);font-size:.9375rem;line-height:1.5;color:var(--ink-soft);margin:0 0 8px;max-width:none}
+      section.reuse p{font-family:var(--type-body);font-size:.9375rem;line-height:1.5;color:var(--ink-soft);margin:0 0 8px;max-width:none}
+      section.reuse a{color:var(--ink-deep);text-decoration:underline}
+      section.reuse pre{margin:8px 0 0;padding:12px;background:var(--bg);border:1px solid var(--rule);font-family:var(--type-mono);font-size:.8125rem;line-height:1.4;color:var(--ink);overflow-x:auto;white-space:pre-wrap;word-break:break-word}
+      /* /tags/ cover — curated pillar grid + featured-tag cards +
+         per-pillar canonical list. Replaces the legacy 482KB
+         monolithic anchor list. Per-tag landing pages at
+         /tags/<slug>/ ship in WS3 commit 3. */
+      .tag-pillar-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin:24px 0 36px}
+      .tag-pillar-card{display:block;padding:18px;border:1px solid var(--rule);background:var(--paper);color:var(--ink);text-decoration:none;transition:border-color .2s ease}
+      .tag-pillar-card:hover{border-color:var(--ink-deep);opacity:1}
+      .tag-pillar-card .eyebrow{margin-bottom:6px}
+      .tag-pillar-card .tag-pillar-count{font-family:var(--type-body);font-size:1rem;font-weight:700;margin:0 0 6px;color:var(--ink-deep);max-width:none}
+      .tag-pillar-card .tag-pillar-count strong{font-weight:700}
+      .tag-pillar-card p{font-family:var(--type-body);font-size:.875rem;line-height:1.45;color:var(--ink-soft);margin:0;max-width:none}
+      .tag-featured{margin:36px 0}
+      .tag-featured h2{font-family:var(--type-body);font-size:.875rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-deep);margin:0 0 12px}
+      .tag-featured-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:8px}
+      .tag-featured-card{display:block;padding:12px 14px;border:1px solid var(--rule);background:var(--paper);color:var(--ink);text-decoration:none;transition:border-color .2s ease,color .2s ease}
+      .tag-featured-card:hover{border-color:var(--ink-deep);opacity:1}
+      .tag-featured-card strong{font-family:var(--type-body);font-size:.9375rem;font-weight:600;color:var(--ink-deep);letter-spacing:0;display:block}
+      .tag-featured-card .meta{font-family:var(--type-body);font-size:.75rem;color:var(--ink-mute);margin-top:4px;display:block}
+      .tag-pillar-section{margin:48px 0;padding-top:24px;border-top:1px solid var(--rule)}
+      .tag-pillar-section h2{font-family:var(--type-display);font-size:clamp(1.625rem,2.6vw,2rem);margin:0 0 8px;color:var(--ink-deep)}
+      .tag-pillar-section .deck{margin:0 0 18px;color:var(--ink-soft)}
+      .tag-list{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px}
+      .tag-list li{padding:14px;border:1px solid var(--rule);background:var(--paper);scroll-margin-top:calc(var(--nav-h) + 16px)}
+      .tag-list li strong{font-family:var(--type-body);font-weight:700;color:var(--ink-deep)}
+      .tag-list li .meta{font-family:var(--type-body);font-size:.75rem;color:var(--ink-mute)}
+      .tag-list li p{font-family:var(--type-body);font-size:.875rem;line-height:1.45;color:var(--ink-soft);margin:6px 0 0;max-width:none}
+      /* Per-tag article lists — collapsible, newest first. Restores
+         the browse-by-tag deep-link affordance the old monolith had,
+         but on demand so the cover stays scannable. */
+      details.tag-posts{margin:10px 0 0}
+      details.tag-posts>summary{font-family:var(--type-body);font-size:.75rem;font-weight:600;letter-spacing:.04em;color:var(--ink-deep);cursor:pointer;list-style:none;padding:6px 0;border-top:1px dashed var(--rule)}
+      details.tag-posts>summary::-webkit-details-marker{display:none}
+      details.tag-posts>summary::after{content:" — view ▾";color:var(--ink-mute)}
+      details.tag-posts[open]>summary::after{content:" — hide ▴"}
+      details.tag-posts>ul{list-style:none;margin:8px 0 0;padding:0;display:flex;flex-direction:column;gap:6px;font-size:.875rem;line-height:1.4}
+      details.tag-posts>ul li{padding:0;background:transparent;border:0}
+      details.tag-posts a{color:var(--ink-deep)}
+      details.tag-posts time{color:var(--ink-mute);font-size:.75rem;margin-inline-start:6px}
+      /* Per-tag landing page (/tags/<slug>/) — hero + article cards
+         + related-tags nav. Built by scripts/generators/build_tag_landings.py
+         after ssg has run. */
+      header.tag-landing-hero{margin:24px 0 32px;padding-bottom:24px;border-bottom:1px solid var(--rule)}
+      header.tag-landing-hero h1{font-family:var(--type-display);font-size:clamp(2rem,3.5vw,2.75rem);font-weight:600;margin:0 0 12px;color:var(--ink-deep);max-width:var(--measure-article)}
+      header.tag-landing-hero .deck{margin:0 0 12px}
+      header.tag-landing-hero .tag-landing-meta{font-family:var(--type-body);font-size:.75rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-mute);margin:0}
+      section.tag-landing-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:18px;margin:0 0 48px;list-style:none;padding:0}
+      article.tag-landing-card{padding:18px;border:1px solid var(--rule);background:var(--paper);transition:border-color .2s ease}
+      article.tag-landing-card:hover{border-color:var(--ink-deep)}
+      article.tag-landing-card h2{font-family:var(--type-body);font-size:1rem;font-weight:700;margin:0 0 6px;line-height:1.3;color:var(--ink-deep);letter-spacing:0;text-transform:none}
+      article.tag-landing-card h2 a{color:var(--ink-deep);text-decoration:none}
+      article.tag-landing-card h2 a:hover{text-decoration:underline}
+      article.tag-landing-card .card-date{display:block;font-family:var(--type-body);font-size:.75rem;color:var(--ink-mute);margin:0 0 6px}
+      article.tag-landing-card .card-excerpt{font-family:var(--type-body);font-size:.875rem;line-height:1.45;color:var(--ink-soft);margin:0;max-width:none}
+      /* FT-tier card variant — image-left, dark-navy body. Used by
+         /articles/, year archives, per-tag landings, per-category
+         landings. Reverts to single-column at <40em (mobile). */
+      article.tag-landing-card.tag-landing-card--ft{display:grid;grid-template-columns:1fr;gap:0;padding:0;border:0;background:transparent;overflow:hidden}
+      article.tag-landing-card--ft .card-media{display:block;background:var(--ink-deep);overflow:hidden;aspect-ratio:1/1}
+      article.tag-landing-card--ft .card-media img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .3s ease}
+      article.tag-landing-card--ft:hover .card-media img{transform:scale(1.03)}
+      article.tag-landing-card--ft .card-body{background:var(--ink-deep);color:var(--paper);padding:22px 24px 22px;display:flex;flex-direction:column;justify-content:space-between}
+      article.tag-landing-card--ft .card-body .eyebrow.card-eyebrow{color:var(--paper);opacity:1;margin:0 0 14px;font-size:.6875rem;font-weight:700;letter-spacing:.12em}
+      article.tag-landing-card--ft .card-body h2{color:var(--paper);font-family:var(--type-body);font-size:1.375rem;line-height:1.2;font-weight:600;letter-spacing:-.01em;margin:0 0 12px}
+      article.tag-landing-card--ft .card-body h2 a{color:var(--paper)}
+      article.tag-landing-card--ft .card-body h2 a:hover{text-decoration:underline}
+      /* The card-date is intentionally hidden inside the FT-tier card —
+         FT-style cards lead with eyebrow + headline + excerpt, not a date.
+         Date remains in the DOM (and in the structured JSON-LD) for SEO
+         + accessibility, just hidden from sighted readers. */
+      article.tag-landing-card--ft .card-body .card-date{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+      article.tag-landing-card--ft .card-body .card-excerpt{color:var(--paper);opacity:.88;font-size:.9375rem;line-height:1.55;margin:0;max-width:none}
+      /* Per-card share rail — 6 monochrome 14px glyphs in a row, each in a
+         28px box. Border + icon use a hand-mixed semi-transparent variant
+         of `--paper` so both render correctly in light AND dark mode
+         (where the card body is light cream, --paper switches to near-
+         black, and a hardcoded rgba(255,255,255,…) border would vanish).
+         Selectors are double-classed (`.tag-landing-card .card-share-rail`)
+         so they beat the page's `main.content a{color:var(--link-color)}`
+         (0,1,2) specificity — without this, the icons inherit the page
+         link color (light grey in dark mode → invisible on cream cards).
+         AAA-contrast: icon at full --paper on var(--ink-deep) clears 12:1
+         in both themes. */
+      .tag-landing-card .card-share-rail{margin:20px 0 0;padding:18px 0 0;border-top:1px solid color-mix(in srgb,var(--paper) 18%,transparent)}
+      .tag-landing-card .card-share-rail ul{display:flex;flex-wrap:wrap;gap:6px;margin:0;padding:0;list-style:none}
+      .tag-landing-card .card-share-rail li{margin:0}
+      .tag-landing-card .card-share-rail a,.tag-landing-card .card-share-rail button{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;padding:0;border:1px solid color-mix(in srgb,var(--paper) 55%,transparent);background:transparent;color:var(--paper);border-radius:2px;text-decoration:none;cursor:pointer;transition:background .15s ease,border-color .15s ease}
+      .tag-landing-card .card-share-rail a:hover,.tag-landing-card .card-share-rail button:hover{background:color-mix(in srgb,var(--paper) 14%,transparent);border-color:var(--paper)}
+      .tag-landing-card .card-share-rail a:focus-visible,.tag-landing-card .card-share-rail button:focus-visible{outline:2px solid var(--paper);outline-offset:2px}
+      .tag-landing-card .card-share-rail svg{width:14px;height:14px;fill:currentColor}
+      /* Copied-state — flips for 2s after the Clipboard API resolves. */
+      .tag-landing-card .card-share-rail button[data-copied="1"]{background:var(--paper);color:var(--ink-deep);border-color:var(--paper)}
+      /* Featured card — newest article on page 1 of /articles/ spans the
+         full grid row and switches to landscape (image left, body right) so
+         it reads as the lead story (the FT "featured" pattern). */
+      article.tag-landing-card--featured{grid-column:1 / -1}
+      @media (min-width:48em){
+        article.tag-landing-card--ft{grid-template-columns:1fr 1fr}
+        article.tag-landing-card--ft .card-media{aspect-ratio:auto;min-height:100%}
+        article.tag-landing-card--featured{grid-template-columns:3fr 2fr}
+        article.tag-landing-card--featured .card-body{padding:32px 36px}
+        article.tag-landing-card--featured .card-body h2{font-size:1.75rem;line-height:1.2}
+        article.tag-landing-card--featured .card-body .card-excerpt{font-size:1rem}
+      }
+      nav.related-tags{padding:18px;border:1px solid var(--rule);background:var(--paper);margin:32px 0}
+      nav.related-tags h2{font-family:var(--type-body);font-size:.875rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-deep);margin:0 0 8px}
+      nav.related-tags p{font-family:var(--type-body);font-size:.875rem;color:var(--ink-soft);margin:0 0 12px}
+      nav.related-tags .related-tags-grid{display:flex;flex-wrap:wrap;gap:8px}
+      nav.related-tags a.related-tag-chip{display:inline-flex;align-items:center;gap:6px;padding:8px 14px;min-height:44px;border:1px solid var(--rule);background:transparent;color:var(--ink-deep);text-decoration:none;border-radius:999px;font-family:var(--type-body);font-size:.875rem;transition:border-color .2s ease,background .2s ease}
+      nav.related-tags a.related-tag-chip:hover{border-color:var(--ink-deep);background:var(--ink-deep);color:var(--paper)}
+      nav.related-tags a.related-tag-chip .meta{font-size:.75rem;opacity:.7}
+      /* Paged article listings — /articles/, /articles/page/N/.
+         Pagination nav at the bottom mirrors the FT pattern 1 2 3 … N. */
+      nav.page-nav{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:8px;margin:48px 0 24px;font-family:var(--type-body);font-size:.875rem}
+      nav.page-nav .page-nav-pages{display:flex;flex-wrap:wrap;gap:4px}
+      nav.page-nav a,nav.page-nav .page-nav-num{display:inline-flex;align-items:center;justify-content:center;min-width:44px;min-height:44px;padding:0 12px;border:1px solid var(--rule);background:var(--paper);color:var(--ink-deep);text-decoration:none;transition:border-color .2s ease,background .2s ease,color .2s ease}
+      nav.page-nav a:hover{border-color:var(--ink-deep);background:var(--ink-deep);color:var(--paper)}
+      nav.page-nav .page-nav-num.is-current{background:var(--ink-deep);color:var(--paper);border-color:var(--ink-deep);font-weight:700}
+      nav.page-nav .page-nav-prev,nav.page-nav .page-nav-next{padding:0 18px;font-weight:600;letter-spacing:.04em}
+      /* Filter controls — native <select> over the listing grid, no JS.
+         Uses `:has()` to hide cards that don't match the chosen
+         category. Two selects per /articles/ page: category + year. */
+      .listing-filters{display:flex;flex-wrap:wrap;gap:14px;margin:0 0 24px;padding:0}
+      .listing-filters label{display:inline-flex;flex-direction:column;gap:4px;font-family:var(--type-body);font-size:.6875rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-mute)}
+      .listing-filters select{font-family:var(--type-body);font-size:1rem;padding:10px 14px;min-height:44px;border:1px solid var(--rule);background:var(--paper);color:var(--ink-deep);cursor:pointer;min-width:200px}
+      .listing-filters select:focus-visible{outline:2px solid var(--ink-deep);outline-offset:2px}
+      /* Filter logic: main.js updates data-filter-category /
+         data-filter-year attributes on .tag-landing-list. CSS uses
+         attribute selectors to hide non-matching cards. Empty value
+         means "show all". */
+      section.tag-landing-list[data-filter-category="ai"] article:not([data-category~="ai"]),
+      section.tag-landing-list[data-filter-category="payments"] article:not([data-category~="payments"]),
+      section.tag-landing-list[data-filter-category="infra"] article:not([data-category~="infra"]),
+      section.tag-landing-list[data-filter-category="policy"] article:not([data-category~="policy"]),
+      section.tag-landing-list[data-filter-category="open-source"] article:not([data-category~="open-source"]),
+      section.tag-landing-list[data-filter-category="leadership"] article:not([data-category~="leadership"]){display:none}
+      section.tag-landing-list[data-filter-year] article[data-year]:not([data-year]){display:none}
+      section.tag-landing-list[data-filter-year="2026"] article:not([data-year="2026"]),
+      section.tag-landing-list[data-filter-year="2025"] article:not([data-year="2025"]),
+      section.tag-landing-list[data-filter-year="2024"] article:not([data-year="2024"]),
+      section.tag-landing-list[data-filter-year="2023"] article:not([data-year="2023"]),
+      section.tag-landing-list[data-filter-year="2018"] article:not([data-year="2018"]){display:none}
+      .listing-empty{display:none;font-family:var(--type-body);color:var(--ink-mute);text-align:center;padding:32px;border:1px dashed var(--rule)}
+      section.tag-landing-list[data-empty="1"] + .listing-empty{display:block}
+      /* Article body type-scale: tighten in-body H2/H3/P/UL/OL only.
+         h1 stays in .ap-hero at its current scale. */
+      main.content :is(h2){font-size:clamp(1.625rem,2.6vw,2rem);line-height:1.2;letter-spacing:-.01em;margin:calc(var(--leading-article) * 2em) 0 .5em;max-width:var(--measure-article)}
+      main.content :is(h3){font-size:clamp(1.25rem,1.6vw,1.4rem);line-height:1.3;margin:1.5em 0 .5em;max-width:var(--measure-article)}
+      main.content :is(p,li){font-size:clamp(1.0625rem,1.05vw,1.125rem);line-height:var(--leading-article)}
+      main.content p,main.content ul,main.content ol{max-width:var(--measure-article)}
       @media (prefers-reduced-motion: reduce){.reading-progress{transition:none}}
       a{color:var(--accent);text-decoration:none;transition:opacity .2s ease}
       a:hover{opacity:.72}
@@ -159,7 +479,114 @@
 
       h1,h2,h3,h4,h5,h6{font-family:var(--type-display);font-weight:600;letter-spacing:-.015em;margin:0;color:inherit;text-wrap:balance}
       p,li{text-wrap:pretty}
-      @media print{nav,header,footer,.ap-search,.ap-lang,.skip,.gh-stats-row,.setup-finale,.share-block,.related-section,.speculation-rules{display:none!important}main{max-width:none!important;padding:0!important}body{background:#fff!important;color:#000!important;font-size:11pt;line-height:1.45}a{color:#000;text-decoration:underline}a[href^="http"]:after{content:" (" attr(href) ")";font-size:9pt;color:#444}img{max-width:100%!important;page-break-inside:avoid}h1,h2,h3{page-break-after:avoid}pre,blockquote{page-break-inside:avoid;border-left:2px solid #000/* rtl-safe-ignore — print stylesheet */}}
+      /* ---------- FT-tier print stylesheet. Removes interactive chrome,
+         forces serif body, surfaces footnote and source text inline,
+         shows the URL after every external link, and adds a print
+         masthead from .eyebrow + h1. @page sets the source URL in the
+         running footer for citation-ready output. ---------- */
+      @media print{
+        @page{size:A4;margin:18mm 16mm;@bottom-left{content:"sebastienrousseau.com";font-family:serif;font-size:9pt;color:#555}@bottom-right{content:counter(page) " / " counter(pages);font-family:serif;font-size:9pt;color:#555}}
+        nav,header.ap-nav,.ap-nav,footer,.ap-search,.ap-lang,.skip,.ap-progress,.reading-progress,.gh-stats-row,.setup-finale,.share-block,.share-rail,.share-rail--sticky,.share-rail--card,.action-rail,.action-rail--sticky,.related-section,.speculation-rules,.crumbs,.topic-breadcrumb,.glass-premium,.btn-sweep::after,.theme-toggle{display:none!important}
+        html,body{background:#fff!important;color:#000!important;font-family:Georgia,"Times New Roman",Times,serif!important;font-size:11pt;line-height:1.45}
+        main,main.content{max-width:none!important;padding:0!important;display:block!important}
+        .ap-hero,section.ap-hero{padding:0!important;background:transparent!important}
+        .eyebrow{color:#000!important;font-family:Georgia,Times,serif!important;font-size:9pt;letter-spacing:.12em;text-transform:uppercase;margin:0 0 6pt}
+        .deck{color:#222!important;font-family:Georgia,Times,serif!important;font-size:12pt;max-width:none}
+        .byline-strap{color:#444!important;font-family:Georgia,Times,serif!important;font-size:9pt;letter-spacing:.06em}
+        h1,h2,h3,h4,h5,h6{font-family:Georgia,Times,serif!important;color:#000!important;page-break-after:avoid;text-wrap:initial}
+        h1{font-size:24pt;line-height:1.15;margin:0 0 8pt}
+        h2{font-size:16pt;margin:18pt 0 6pt}
+        h3{font-size:13pt;margin:14pt 0 4pt}
+        p,li{color:#000!important;max-width:none;orphans:3;widows:3}
+        a{color:#000!important;text-decoration:underline}
+        a[href^="http"]::after,a[href^="/"]::after{content:" (" attr(href) ")";font-size:9pt;color:#444}
+        a[href^="#"]::after,nav.crumbs a::after,.footnotes a::after{content:""!important}
+        img,figure{max-width:100%!important;page-break-inside:avoid}
+        pre,blockquote,aside.pull-quote,table{page-break-inside:avoid}
+        aside.pull-quote{font-style:italic;color:#000!important;border-left:2pt solid #000/* rtl-safe-ignore — print stylesheet */;padding:0 0 0 12pt;margin:12pt 0;font-family:Georgia,Times,serif!important}
+        aside.pull-quote::before{content:""!important}
+        hr.section-rule{border-top:1pt solid #000;margin:18pt 0}
+        .footnotes{font-size:9pt;color:#000!important;border-top:1pt solid #000;margin-top:18pt;padding-top:6pt}
+        .footnotes li{margin-bottom:3pt}
+        .article-sources,.article-sources-list,.sources{font-size:9pt;color:#000!important;page-break-before:auto}
+        .reuse,.cite-popover{display:none!important}
+        details[open] summary,details summary{display:none!important}
+        details[open]>*:not(summary){display:block!important}
+        /* Reset the screen `main.content pre / code` background pill +
+           border-radius so the print-mode <pre> doesn't render as a
+           double-nested rounded blob. Specificity-matching the screen
+           rule (main.content pre) is the only reliable way; the bare
+           `pre { … }` rule below loses the cascade. Inline <code> in
+           print uses no background or border — keeping the existing
+           pill makes inline tokens look like clickable pills on
+           paper, which is wrong. */
+        main.content pre,main.content pre>code,main.content code{
+          background:transparent!important;
+          border-radius:0!important;
+          color:#000!important;
+        }
+        main.content code{padding:0 2pt!important;font-family:"Courier New",Courier,monospace!important;font-size:9pt!important}
+        main.content pre{
+          padding:6pt 0 6pt 10pt!important;
+          border:0!important;
+          border-inline-start:2pt solid #000!important;
+          font-family:"Courier New",Courier,monospace!important;
+          font-size:9pt!important;
+          line-height:1.45!important;
+          white-space:pre-wrap;
+          word-break:break-word;
+        }
+        /* shokunin's syntect highlighter wraps code blocks as
+           `<pre><code><pre style="background-color:#…;">…</pre></code></pre>`
+           — the inner <pre> inherits the print rule above and so
+           emits a SECOND left rule beside the outer one. Strip
+           styling from any nested pre, and force the per-token
+           rainbow `<span style="color:#…">`s to use the inherited
+           black colour (illegible otherwise on a black-rule layout). */
+        main.content pre pre{
+          border:0!important;
+          padding:0!important;
+          margin:0!important;
+          background:transparent!important;
+        }
+        main.content pre span,main.content code span{
+          color:#000!important;
+          background:transparent!important;
+        }
+        /* Same neutralisation for the cite popover / reuse panel
+           <pre> blocks — they ship with --bg / --paper backgrounds
+           and a 1px border that print as visible boxes. */
+        details.cite-popover pre,section.reuse pre{
+          background:transparent!important;
+          border:0!important;
+          border-inline-start:2pt solid #000!important;
+          border-radius:0!important;
+          padding:6pt 0 6pt 10pt!important;
+          color:#000!important;
+        }
+      }
+      /* prefers-contrast: more — push the FT-tier components to AAA
+         contrast minimums. The eyebrow + byline-strap default to muted
+         tokens for editorial restraint; high-contrast mode promotes
+         them to --ink. The deck moves from --ink-soft to --ink. The
+         share-rail and action-rail gain heavier borders. */
+      @media (prefers-contrast: more){
+        .eyebrow{color:var(--ink)}
+        .deck{color:var(--ink)}
+        .byline-strap{color:var(--ink)}
+        .share-rail a,.share-rail button,.action-rail a,.action-rail button{border-width:2px;color:var(--ink);border-color:var(--ink)}
+        aside.pull-quote{color:var(--ink)}
+        aside.pull-quote::before{color:var(--ink)}
+        hr.section-rule{border-top-width:2px;border-top-color:var(--ink)}
+      }
+      /* prefers-reduced-transparency: reduce — explicit fallback. The
+         glass + glass-premium rules above are already gated on a
+         no-preference query, so they don't apply here; this block
+         also drops the .card--editorial 24% paper-bg overlay (if
+         any) and any other translucent overlay we add later. */
+      @media (prefers-reduced-transparency: reduce){
+        .glass,.glass-premium{background:var(--card)!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important;border-color:var(--border)!important;box-shadow:var(--shadow)!important}
+      }
 
       .skip{position:absolute;left:-9999px;top:-9999px}
       .skip:focus{left:12px;top:12px;background:var(--ink);color:#fff;padding:10px 16px;z-index:300;border-radius:8px}
@@ -172,8 +599,8 @@
          compute contrast through a translucent layer and falls back to NaN,
          which fails WCAG AAA in automated audits. Solid bg also performs
          marginally better (no compositor layer). */
-      .ap-nav{position:sticky;top:0;z-index:100;height:var(--nav-h);background:var(--bg);border-bottom:1px solid var(--border)}
-      [data-theme="dark"] .ap-nav{background:var(--bg);border-bottom-color:var(--border)}
+      .ap-nav{position:sticky;top:0;z-index:100;height:var(--nav-h);background:var(--paper);border-bottom:1px solid var(--border)}
+      [data-theme="dark"] .ap-nav{background:var(--paper);border-bottom-color:var(--border)}
       /* Grid: brand on the left, menu perfectly centred, utilities on the right.
          The outer cols are 1fr each so the menu always sits in the viewport centre
          regardless of how wide the brand or the right group becomes. */
@@ -185,7 +612,13 @@
       .ap-menu a:hover{opacity:1}.ap-brand[aria-current="page"]{color:var(--accent)}.ap-menu a[aria-current="page"],.ap-menu a.active{opacity:1;color:var(--accent);font-weight:600;position:relative}.ap-menu a[aria-current="page"]::after,.ap-menu a.active::after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:2px;background:var(--accent);border-radius:1px}
       .ap-nav-right{justify-self:end;display:inline-flex;align-items:center;gap:6px}
       .ap-cta-mini{font-size:12px;font-weight:500;color:#fff;background:var(--accent);padding:10px 16px;min-height:44px;border-radius:980px;line-height:1;box-sizing:border-box;display:inline-flex;align-items:center;gap:4px;white-space:nowrap;transition:opacity .15s ease}
-      .ap-cta-mini:hover{opacity:.88;color:#fff}[data-theme=dark] .ap-cta-mini,html:not([data-theme=light]) .ap-cta-mini{color:#000}[data-theme=dark] .ap-cta-mini:hover,html:not([data-theme=light]) .ap-cta-mini:hover{color:#000}
+      .ap-cta-mini:hover{opacity:.88;color:#fff}
+      /* Dark-theme inversion — needs to gate on actual dark rendering
+         (data-theme=dark explicit OR prefers-color-scheme:dark with no
+         explicit light override) so light-mode users don't get black
+         text on the dark-blue accent (~2.4:1, fails AA). */
+      [data-theme=dark] .ap-cta-mini,[data-theme=dark] .ap-cta-mini:hover{color:#000}
+      @media (prefers-color-scheme:dark){html:not([data-theme=light]) .ap-cta-mini,html:not([data-theme=light]) .ap-cta-mini:hover{color:#000}}
 
       /* In-nav search button. Triggers Static Site Generator's search modal via main.js. */
       .ap-search{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:0 10px;background:transparent;border:1px solid transparent;border-radius:22px;color:var(--ink);cursor:pointer;transition:background .15s,border-color .15s}
@@ -300,6 +733,16 @@
       main table tr:last-child td{border-bottom:none}
       main table code{background:var(--cl-grey-100, #f1f3f7);padding:1px 5px;border-radius:4px;font-size:12.5px}
       @media (max-width:640px){main table{font-size:13.5px}main table th,main table td{padding:10px 12px;min-width:140px}}
+      /* Card-collapse for labelled article tables below 48em — postbuild
+         stamps data-label="<column header>" on every td (.table--cards). */
+      @media (max-width:47.9375em){
+        main table.table--cards thead{position:absolute;clip-path:inset(50%);height:1px;width:1px;overflow:hidden;white-space:nowrap}
+        main table.table--cards tbody,main table.table--cards tr{display:block}
+        main table.table--cards tr{margin:0 0 14px;border:1px solid var(--cl-grey-200, #e3e6ed);border-radius:12px;overflow:hidden}
+        main table.table--cards td{display:grid;grid-template-columns:minmax(7rem,35%) 1fr;gap:4px 12px;min-width:0;padding:9px 14px}
+        main table.table--cards td::before{content:attr(data-label);font-weight:600;font-size:12px;color:var(--ink-mute, #6e6e73)}
+        main table.table--cards td:last-child{border-bottom:none}
+      }
       /* ---------- Article hero banner (figure inserted by postbuild from
          frontmatter `banner:`). LCP-relevant: must be the first image
          after the H1. fetchpriority="high" set inline by the postbuild
@@ -857,7 +1300,7 @@
             <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
             <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
           </button>
-          <div class="ap-lang" aria-label="Language">
+          <div class="ap-lang" role="group" aria-label="Language">
             <button type="button" class="ap-lang-toggle" aria-label="EN, Change language" aria-expanded="false" aria-haspopup="menu" title="Change language">
               <span class="ap-lang-globe" aria-hidden="true">🌐</span>
               <span class="ap-lang-current">EN</span>
@@ -959,12 +1402,12 @@
         </form>
         <div class="legal">
           <span>{{copyright}}</span>
-          <div class="social" aria-label="Social links">
+          <nav class="social" aria-label="Social links">
             <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on Twitter / X"><img src="{{cdn}}/common/images/buttons/x-black.svg" alt="Sebastien Rousseau on Twitter X" width="18" height="18" /></a>
             <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on LinkedIn"><img src="{{cdn}}/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau on LinkedIn" width="18" height="18" /></a>
             <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on Medium"><img src="{{cdn}}/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau on Medium" width="18" height="18" /></a>
             <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on YouTube"><img src="{{cdn}}/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau on YouTube" width="18" height="18" /></a>
-          </div>
+          </nav>
           <p>
             <a href="/accessibility/index.html">Accessibility</a> ·
             <a href="/privacy/index.html">Privacy</a> ·

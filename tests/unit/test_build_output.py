@@ -235,8 +235,15 @@ def _resolve_internal(page: Path, url: str) -> Path:
 def test_page_internal_links_resolve(page: Path):
     html = page.read_text(encoding="utf-8", errors="ignore")
     misses: list[str] = []
+    # Routes served by workers/lang-router.js at request time (WS5+) —
+    # PDF proxy, webmention POST, MCP JSON-RPC. No static asset exists
+    # for them in public/, so the resolver must skip the prefixes.
+    # Kept in sync with audit_links.WORKER_ROUTES.
+    worker_route_prefixes = ("/api/pdf/", "/api/webmention", "/mcp/v1/")
     for raw in _extract_urls(html):
         if not _looks_internal(raw):
+            continue
+        if any(raw.startswith(p) for p in worker_route_prefixes):
             continue
         target = _resolve_internal(page, raw)
         if not target.is_file():

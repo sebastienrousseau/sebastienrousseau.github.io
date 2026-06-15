@@ -1,0 +1,762 @@
+# ----------------------------------------------------------------- #
+# Canonical tag taxonomy for sebastienrousseau.com                  #
+# ----------------------------------------------------------------- #
+#
+# Source of truth for /tags/<slug>/ landing pages, per-tag RSS/Atom/
+# JSON Feed/news-sitemap, /categories/<cat>/ pages, and the article-
+# foot tag strip (inject_tag_strip, WS2 commit 7 follow-up).
+#
+# Curation rules (per ~/Drop/editorial-overhaul-plan.md §4 WS3):
+#
+# 1. Every post's `tags:` frontmatter string MUST resolve through
+#    aliases to exactly one canonical slug below. Orphans fail CI
+#    (test_taxonomy_parity.py in WS3 commit 10).
+#
+# 2. Canonical tags with **<3 posts** after alias-collapse do NOT
+#    get a /tags/<slug>/ landing page; they're surfaced as anchors
+#    on the /tags/ cover only. Keeps the URL set ≈ 28 × ~30 = ~840
+#    pages instead of 500+ near-empty tags.
+#
+# 3. Each entry's `category` puts it under one of six pillars
+#    (ai, payments, infra, policy, open-source, leadership). The
+#    /categories/<pillar>/ landings aggregate every tag in that
+#    pillar.
+#
+# 4. Per locale, `slugs.json` carries the localised path segment
+#    (e.g. fr: post-quantum-cryptography → cryptographie-post-quantique).
+#    Slugs here are EN-canonical; locale forks live in
+#    _data/i18n/<lang>/slugs.json under tags.<canonical>.
+#
+# Audit baseline (2026-06-13):
+#   89 posts, 618 raw tag tokens, 503 singletons.
+#   Top 12 canonical tags cover ~80 % of tagged content.
+#
+# Fields:
+#   name         — Display name (capitalised as it appears in body
+#                  text and the tag landing h1)
+#   plural       — Plural for headings ("12 articles tagged
+#                  Stablecoins")
+#   description  — 1–2 line summary that appears on the tag landing
+#                  page's deck and feeds out to the per-tag RSS
+#                  channel description
+#   aliases      — Spellings / casings / synonyms collapsed into
+#                  this canonical at build time
+#   category     — One of { ai | payments | infra | policy |
+#                  open-source | leadership }
+#
+# ----------------------------------------------------------------- #
+
+# =========================== AI =================================== #
+
+ai:
+  name: AI
+  plural: AI
+  description: >
+    Applied AI in financial services — model deployment, governance,
+    AI agents, LLM tooling, and the AI infrastructure that runs in
+    banking environments.
+  aliases:
+    - AI
+    - ai
+    - Artificial Intelligence
+    - artificial-intelligence
+    - AI Trends
+    - applied AI
+  category: ai
+
+agentic-ai:
+  name: Agentic AI
+  plural: Agentic AI
+  description: >
+    Autonomous AI agents in payments, treasury, and back-office
+    banking — consent, liability, audit trails, and protocol
+    interoperability.
+  aliases:
+    - Agentic AI
+    - agentic AI
+    - agentic-ai
+    - AI agents
+    - agentic
+  category: ai
+
+llm:
+  name: LLM
+  plural: LLMs
+  description: >
+    Large language models in financial workflows — fine-tuning, RAG,
+    prompt engineering, on-device LLMs, and inference cost economics.
+  aliases:
+    - LLM
+    - llm
+    - LLMs
+    - large language models
+  category: ai
+
+generative-ai:
+  name: Generative AI
+  plural: Generative AI
+  description: >
+    Generative models for banking — code, content, search,
+    simulation — and the engineering required to ship them safely.
+  aliases:
+    - generative AI
+    - generative-ai
+    - GenAI
+    - exploring generative AI
+  category: ai
+
+ai-governance:
+  name: AI governance
+  plural: AI governance
+  description: >
+    Model risk, EU AI Act conformity, NIST AI RMF, board-level
+    accountability, third-party AI vendors, and the compliance
+    stack for AI in banks.
+  aliases:
+    - AI governance
+    - ai-governance
+    - AI Governance
+    - model risk management
+  category: ai
+
+# ========================= PAYMENTS =============================== #
+
+iso-20022:
+  name: ISO 20022
+  plural: ISO 20022
+  description: >
+    Wholesale and retail payments migration to ISO 20022 — pacs.008,
+    pain.001, camt messaging, CBPR+, and the data-rich rail.
+  aliases:
+    - ISO 20022
+    - iso-20022
+    - ISO20022
+    - ISO 20022 payments
+    - structured address
+    - structured addresses
+    - SR2025
+  category: payments
+
+cross-border-payments:
+  name: Cross-border payments
+  plural: Cross-border payments
+  description: >
+    FX, correspondent banking, multi-rail routing, G20 roadmap
+    targets, and the cost-plus-speed dimensions of moving money
+    across borders.
+  aliases:
+    - cross-border payments
+    - cross border payments
+    - cross-border
+    - international payments
+  category: payments
+
+stablecoins:
+  name: Stablecoins
+  plural: Stablecoins
+  description: >
+    Issuance, reserves, redemption, regulation, and the role of
+    stablecoins as a settlement asset alongside bank deposits.
+  aliases:
+    - stablecoins
+    - stablecoin
+    - USDC
+    - PYUSD
+  category: payments
+
+tokenised-deposits:
+  name: Tokenised deposits
+  plural: Tokenised deposits
+  description: >
+    Bank-issued deposit tokens, atomic settlement, programmable
+    balance-sheet, and the policy framing around tokenised
+    commercial bank money.
+  aliases:
+    - tokenised deposits
+    - tokenized deposits
+    - deposit tokens
+    - programmable money
+    - programmable deposits
+  category: payments
+
+cbdc:
+  name: CBDC
+  plural: CBDC
+  description: >
+    Wholesale and retail central bank digital currencies — design
+    choices, project status, and the policy debate.
+  aliases:
+    - CBDC
+    - central bank digital currency
+  category: payments
+
+real-time-payments:
+  name: Real-time payments
+  plural: Real-time payments
+  description: >
+    RTP, FedNow, SEPA Instant, UK Faster Payments — instant rail
+    mechanics, liquidity, fraud, and pricing.
+  aliases:
+    - real-time payments
+    - RTP
+    - FedNow
+    - instant payments
+    - SEPA Instant
+    - Faster Payments
+  category: payments
+
+a2a-payments:
+  name: A2A payments
+  plural: A2A payments
+  description: >
+    Account-to-account rails, open banking payment initiation, and
+    the agentic-payments use cases that ride them.
+  aliases:
+    - A2A
+    - account-to-account
+    - A2A payments
+    - account to account
+  category: payments
+
+open-banking:
+  name: Open banking
+  plural: Open banking
+  description: >
+    PSD2, PSD3, CMA9, FDX — open banking APIs, payment initiation,
+    and the data-portability fabric.
+  aliases:
+    - open banking
+    - Open banking
+    - PSD2
+    - PSD3
+  category: payments
+
+rtgs:
+  name: RTGS
+  plural: RTGS
+  description: >
+    Real-time gross settlement systems — RTGS Renewal (UK),
+    TARGET2/T2, Fedwire, and the operational windows banks integrate
+    against.
+  aliases:
+    - RTGS
+    - real-time gross settlement
+    - TARGET2
+    - T2
+  category: payments
+
+swift:
+  name: SWIFT
+  plural: SWIFT
+  description: >
+    Messaging, GPI, payment pre-validation, and SWIFT's evolving
+    role in the multi-rail world.
+  aliases:
+    - SWIFT
+    - Swift
+    - SWIFT GPI
+  category: payments
+
+cbpr-plus:
+  name: CBPR+
+  plural: CBPR+
+  description: >
+    Cross-Border Payments and Reporting Plus — the SWIFT ISO 20022
+    usage guidelines for correspondent banking.
+  aliases:
+    - CBPR+
+    - CBPR plus
+    - CBPR+
+  category: payments
+
+wholesale-payments:
+  name: Wholesale payments
+  plural: Wholesale payments
+  description: >
+    Interbank, large-value, market infrastructure payments — the
+    wholesale side of banking infrastructure economics.
+  aliases:
+    - wholesale payments
+    - wholesale
+  category: payments
+
+pacs-008:
+  name: pacs.008
+  plural: pacs.008
+  description: >
+    The customer credit transfer message at the heart of cross-border
+    ISO 20022 — schema, validation, automation, and orchestration.
+  aliases:
+    - pacs.008
+    - pacs008
+    - pacs.008 automation
+  category: payments
+
+pain-001:
+  name: pain.001
+  plural: pain.001
+  description: >
+    Customer payment initiation message — corporate payment factories,
+    validation, and the migration off MT101.
+  aliases:
+    - pain001
+    - pain.001
+    - pain-001
+  category: payments
+
+payments-automation:
+  name: Payments automation
+  plural: Payments automation
+  description: >
+    Payment file creation, validation, exception handling, and the
+    engineering side of payment ops.
+  aliases:
+    - payment automation
+    - payments automation
+    - payment files
+    - pain message
+    - pain messages
+    - pacs message
+  category: payments
+
+agentic-payments:
+  name: Agentic payments
+  plural: Agentic payments
+  description: >
+    AI agents initiating payments — consent, liability, fraud
+    controls, audit, and the new payment UX.
+  aliases:
+    - agentic payments
+  category: payments
+
+programmable-liquidity:
+  name: Programmable liquidity
+  plural: Programmable liquidity
+  description: >
+    Real-time treasury, intraday liquidity orchestration, programmable
+    balance-sheet, and the agentic-treasury stack.
+  aliases:
+    - programmable liquidity
+    - treasury programmability
+    - autonomous treasury
+  category: payments
+
+multi-rail:
+  name: Multi-rail
+  plural: Multi-rail
+  description: >
+    Routing each payment by cost, finality, and liquidity — the
+    multi-rail orchestration stack.
+  aliases:
+    - multi-rail
+    - multi rail
+    - rail orchestration
+  category: payments
+
+payments:
+  name: Payments
+  plural: Payments
+  description: >
+    Broad coverage of payment systems, rails, and the economics of
+    moving money — sits above the rail-specific canonicals as the
+    catch-all editorial entry point.
+  aliases:
+    - payments
+    - Payments
+  category: payments
+
+treasury:
+  name: Treasury
+  plural: Treasury
+  description: >
+    Corporate and bank treasury operations — liquidity management,
+    cash forecasting, FX hedging, and the operating model that
+    sits behind real-time treasury. The agentic / autonomous-
+    treasury angle lives under the more specific
+    ``programmable-liquidity`` canonical.
+  aliases:
+    - treasury
+    - Treasury
+    - treasury management
+    - corporate treasury
+  category: payments
+
+digital-assets:
+  name: Digital assets
+  plural: Digital assets
+  description: >
+    Tokenised assets, custody, settlement infrastructure, and the
+    institutional adoption of digital-asset rails alongside
+    traditional finance.
+  aliases:
+    - digital assets
+    - digital-assets
+    - cryptocurrency
+    - crypto
+  category: payments
+
+decentralised-finance:
+  name: Decentralised finance
+  plural: Decentralised finance
+  description: >
+    DeFi protocols, smart-contract risk, on-chain liquidity, and
+    where banks integrate (or intentionally don't) with the DeFi
+    stack.
+  aliases:
+    - decentralised finance
+    - decentralized finance
+    - DeFi
+    - defi
+  category: payments
+
+# ============================ INFRA =============================== #
+
+post-quantum-cryptography:
+  name: Post-quantum cryptography
+  plural: Post-quantum cryptography
+  description: >
+    NIST PQ standards, harvest-now-decrypt-later threat, hybrid
+    handshakes, and the migration of banking cryptography to
+    lattice-based primitives.
+  aliases:
+    - post-quantum cryptography
+    - PQC
+    - post-quantum
+    - PQ crypto
+    - quantum-safe cryptography
+    - quantum safe cryptography
+    - quantum cryptography
+    - QKD
+    - quantum key distribution
+  category: infra
+
+blockchain:
+  name: Blockchain
+  plural: Blockchain
+  description: >
+    Distributed ledger technology in financial infrastructure —
+    consensus, validators, smart-contract execution, and where the
+    primitive shows up in banking.
+  aliases:
+    - blockchain
+    - Blockchain
+    - distributed ledger
+    - DLT
+    - smart contracts
+    - Ethereum
+  category: infra
+
+ml-kem:
+  name: ML-KEM
+  plural: ML-KEM
+  description: >
+    FIPS 203 — the standardised post-quantum key encapsulation
+    mechanism (formerly CRYSTALS-Kyber).
+  aliases:
+    - ML-KEM
+    - ML KEM
+    - CRYSTALS-Kyber
+    - Kyber
+    - FIPS 203
+  category: infra
+
+ml-dsa:
+  name: ML-DSA
+  plural: ML-DSA
+  description: >
+    FIPS 204 — the standardised post-quantum digital signature
+    algorithm (formerly CRYSTALS-Dilithium).
+  aliases:
+    - ML-DSA
+    - ML DSA
+    - CRYSTALS-Dilithium
+    - Dilithium
+    - FIPS 204
+  category: infra
+
+crypto-agility:
+  name: Crypto-agility
+  plural: Crypto-agility
+  description: >
+    Inventorying cryptographic assets, defining a migration path,
+    and shipping replaceable crypto boundaries in production code.
+  aliases:
+    - crypto-agility
+    - cryptographic agility
+    - crypto agility
+  category: infra
+
+cryptography:
+  name: Cryptography
+  plural: Cryptography
+  description: >
+    Applied cryptography in banking — hashes, signatures, KEMs, key
+    management, and the cryptographic primitives that secure the
+    rails.
+  aliases:
+    - cryptography
+    - applied cryptography
+  category: infra
+
+quantum-computing:
+  name: Quantum computing
+  plural: Quantum computing
+  description: >
+    Hardware progress, quantum algorithms, the timeline-to-threat,
+    and where quantum compute crosses paths with banking workloads.
+  aliases:
+    - quantum computing
+    - quantum
+    - quantum technology
+  category: infra
+
+hndl:
+  name: Harvest now, decrypt later
+  plural: Harvest now, decrypt later
+  description: >
+    The HNDL threat model — adversaries capturing encrypted traffic
+    today to decrypt once quantum hardware is available.
+  aliases:
+    - HNDL
+    - harvest now decrypt later
+    - store now decrypt later
+  category: infra
+
+cloud-native-banking:
+  name: Cloud-native banking
+  plural: Cloud-native banking
+  description: >
+    Kubernetes, service mesh, multi-region resilience, and the
+    cloud-native architecture patterns banks are adopting under DORA.
+  aliases:
+    - cloud native banking
+    - cloud-native banking
+    - cloud native
+  category: infra
+
+sovereign-cloud:
+  name: Sovereign cloud
+  plural: Sovereign cloud
+  description: >
+    Data-residency, regulatory-region cloud, and the architectural
+    trade-offs of running banking workloads inside sovereign
+    boundaries.
+  aliases:
+    - sovereign cloud
+    - data sovereignty
+  category: infra
+
+platform-engineering:
+  name: Platform engineering
+  plural: Platform engineering
+  description: >
+    Internal developer platforms, golden paths, paved roads — how
+    banking technology orgs ship engineering productivity.
+  aliases:
+    - platform engineering
+  category: infra
+
+operational-resilience:
+  name: Operational resilience
+  plural: Operational resilience
+  description: >
+    Important business services, impact tolerances, severe-but-
+    plausible scenarios, and the operational-resilience programme
+    banks must run.
+  aliases:
+    - operational resilience
+  category: infra
+
+cybersecurity:
+  name: Cybersecurity
+  plural: Cybersecurity
+  description: >
+    Operational security in banking — threats, controls, incident
+    response, and the regulatory expectations around resilience.
+  aliases:
+    - cybersecurity
+    - security
+    - cyber security
+  category: infra
+
+edge-computing:
+  name: Edge computing
+  plural: Edge computing
+  description: >
+    Edge workers, anti-fraud at the edge, CDN-as-platform — the
+    role of edge compute in financial workloads.
+  aliases:
+    - edge computing
+    - edge
+    - CDN
+  category: infra
+
+# =========================== POLICY =============================== #
+
+dora:
+  name: DORA
+  plural: DORA
+  description: >
+    Digital Operational Resilience Act — register of information,
+    ICT third-party risk, threat-led penetration testing, and the
+    operational resilience programme banks must run.
+  aliases:
+    - DORA
+    - Digital Operational Resilience Act
+  category: policy
+
+eu-ai-act:
+  name: EU AI Act
+  plural: EU AI Act
+  description: >
+    Implementation guidance, supervisory expectations, high-risk
+    system classification, and the conformity-assessment burden the
+    Act puts on banks.
+  aliases:
+    - EU AI Act
+    - eu-ai-act
+    - AI Act
+  category: policy
+
+nist:
+  name: NIST
+  plural: NIST
+  description: >
+    NIST standards relevant to banking — FIPS 203/204, AI RMF,
+    SP 800/1800 series — and the supervisory adoption patterns
+    around them.
+  aliases:
+    - NIST
+    - National Institute of Standards and Technology
+  category: policy
+
+third-party-risk:
+  name: Third-party risk
+  plural: Third-party risk
+  description: >
+    ICT third-party risk under DORA, EBA outsourcing guidelines,
+    and the supervisory expectation around critical-vendor
+    concentration.
+  aliases:
+    - third-party risk
+    - third party risk
+    - ICT third-party risk
+    - vendor risk
+  category: policy
+
+# ======================== OPEN-SOURCE ============================ #
+
+open-source:
+  name: Open source
+  plural: Open source
+  description: >
+    Open-source software in regulated banking — supply-chain risk,
+    attestations, contribution policy, and the OSS projects banks
+    rely on.
+  aliases:
+    - open source
+    - open-source
+    - OSS
+  category: open-source
+
+rust:
+  name: Rust
+  plural: Rust
+  description: >
+    Rust in banking infrastructure — memory safety, performance,
+    and the ecosystem of crates relevant to financial workloads.
+  aliases:
+    - Rust
+    - rust
+  category: open-source
+
+mcp:
+  name: MCP
+  plural: MCP
+  description: >
+    Model Context Protocol — how AI clients discover and consume
+    banking content as structured resources.
+  aliases:
+    - MCP
+    - Model Context Protocol
+  category: open-source
+
+static-site-generator:
+  name: Static site generator
+  plural: Static site generators
+  description: >
+    Static-site-generation patterns for editorial publishing —
+    performance, security, and the build pipeline.
+  aliases:
+    - static site generator
+    - SSG
+    - shokunin
+    - static site generators
+  category: open-source
+
+# ========================= LEADERSHIP ============================ #
+
+technology-strategy:
+  name: Technology strategy
+  plural: Technology strategy
+  description: >
+    Bank CTO / CIO concerns — make-vs-buy, build-vs-partner,
+    organisational design, and the strategic technology agenda.
+  aliases:
+    - Technology
+    - technology strategy
+    - tech strategy
+  category: leadership
+
+innovation:
+  name: Innovation
+  plural: Innovation
+  description: >
+    Editorial coverage of strategic technology shifts in banking —
+    what's coming, who's shipping it, and what it changes.
+  aliases:
+    - Innovation
+    - innovation
+  category: leadership
+
+research:
+  name: Research
+  plural: Research
+  description: >
+    Original analysis, indices, and benchmarks — the data work that
+    backs the editorial position.
+  aliases:
+    - Research
+    - research
+  category: leadership
+
+banking:
+  name: Banking
+  plural: Banking
+  description: >
+    The banking industry as the editorial subject — what's
+    changing, why, and what it means for technology, payments,
+    risk, and the operating model.
+  aliases:
+    - Banking
+    - banking
+    - Finance
+    - finance
+    - financial services
+  category: leadership
+
+# ----------------------------------------------------------------- #
+# End of taxonomy. ~45 canonical tags across 6 pillars.             #
+# Long-tail singleton tags from the audit (503 in total at         #
+# 2026-06-13) are NOT included here — they must either be folded   #
+# into one of the canonicals above via aliases (preferred) or      #
+# dropped from post frontmatter.                                   #
+#                                                                  #
+# Process for adding a new canonical:                              #
+#   1. Add the entry here with name/plural/description/aliases/    #
+#      category.                                                   #
+#   2. Rebuild — test_taxonomy_parity.py (WS3 commit 10) will      #
+#      catch any orphan post tags that need an alias.              #
+#   3. Add per-locale slug under _data/i18n/<lang>/slugs.json's   #
+#      `tags.<canonical>` key.                                     #
+# ----------------------------------------------------------------- #

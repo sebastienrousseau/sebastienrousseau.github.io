@@ -44,6 +44,17 @@ HEAD_BLOCKED = {
     "www.hsbc.com",
 }
 
+# Routes that the consolidated workers/lang-router.js handles at request
+# time (WS5+ scope) — no static asset exists for them in public/, so the
+# strict-internal audit must not treat them as broken. They're served by
+# the Edge Worker; the WS5 PR adds the route handlers + a smoke test for
+# each. See ~/Drop/editorial-overhaul-plan.md §4 WS5/WS6.
+WORKER_ROUTES: tuple[str, ...] = (
+    "/api/pdf/",
+    "/api/webmention",
+    "/mcp/v1/",
+)
+
 
 def collect_hrefs(public: Path) -> set[str]:
     pat = re.compile(r'href="([^"#?]+)(?:[#?][^"]*)?"|href=([^ >#?]+)(?:[#?][^ >]*)?')
@@ -60,6 +71,8 @@ def collect_hrefs(public: Path) -> set[str]:
 def check_internal(href: str, public: Path) -> bool:
     if not href.startswith("/"):
         return True  # leave non-absolute alone here
+    if any(href.startswith(p) for p in WORKER_ROUTES):
+        return True  # served by lang-router worker at request time
     target = public / href.lstrip("/")
     if target.is_file():
         return True

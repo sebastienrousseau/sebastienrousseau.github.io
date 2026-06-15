@@ -23,6 +23,7 @@ import base64
 import hashlib
 import re
 import sys
+from collections.abc import Callable
 from pathlib import Path
 
 import rcssmin
@@ -792,18 +793,32 @@ from postbuild_lib.article_furniture import (  # noqa: F401 — re-exports
     build_fr_title_index,
     build_post_nav_index,
     hoist_body_link_stylesheets,
+    inject_action_rail,
     inject_anchor_links_and_toc,
     inject_article_furniture,
+    inject_breadcrumbs,
+    inject_byline_strap,
     inject_citations,
+    inject_cite_popover,
+    inject_deck,
+    inject_eyebrow,
+    inject_footnotes,
     inject_hero_banner,
     inject_hreflang,
     inject_lang_switcher,
     inject_mermaid,
     inject_nav_active,
+    inject_oembed_link,
     inject_prev_next_nav,
+    inject_pullquotes,
+    inject_reuse_panel,
+    inject_section_rules,
+    inject_share_rail,
     inject_sigstore_attestation,
     inject_sources_list,
     inject_speculation_rules,
+    inject_syndication_panel,
+    inject_table_labels,
     slugify,
     strip_duplicate_body_h1,
 )
@@ -831,6 +846,7 @@ from postbuild_lib.output import (  # noqa: F401 — re-exports
     fix_xml_feeds,
     refresh_sitemap_lastmod,
     shrink_news_sitemap,
+    write_ai_txt,
     write_humans,
     write_json_feed,
     write_llms_ctx_txt,
@@ -867,12 +883,19 @@ class _PostbuildCounters:
 
     __slots__ = (
         "about_patched",
+        "action_rails_set",
         "anchor_patched",
         "asset_fp_patched",
         "body_h1_stripped",
+        "byline_straps_set",
         "cdn_wrapped",
         "citation_patched",
+        "cite_panels_set",
+        "crumbs_patched",
         "csp_patched",
+        "decks_set",
+        "eyebrows_set",
+        "footnotes_set",
         "furniture_patched",
         "howto_patched",
         "hreflang_patched",
@@ -886,12 +909,19 @@ class _PostbuildCounters:
         "mermaid_patched",
         "nav_patched",
         "newsarticle_patched",
+        "oembed_links_set",
         "og_patched",
+        "pullquotes_set",
         "redundant_titles_stripped",
+        "reuse_panels_set",
+        "section_rules_set",
+        "share_rails_set",
         "social_patched",
         "softwaresourcecode_patched",
         "sources_patched",
         "sri_patched",
+        "syndicate_panels_set",
+        "tables_carded",
         "techarticle_patched",
         "theme_inlined",
         "wc_patched",
@@ -1076,39 +1106,49 @@ def _apply_schema_subtype_passes(
     return out
 
 
+def _bump(fn: Callable[[str], str], html: str, ctr: _PostbuildCounters, attr: str) -> str:
+    """Run a one-arg HTML→HTML injector, bump ``ctr.<attr>`` if the page
+    actually changed, return the new HTML. Centralises the
+    ``prev = out; out = fn(out); if out != prev: ctr.X += 1`` pattern
+    so ``_apply_article_passes`` stays at CC ≤ B as new WS2/WS3 passes
+    are added."""
+    out = fn(html)
+    if out != html:
+        setattr(ctr, attr, getattr(ctr, attr) + 1)
+    return out
+
+
 def _apply_article_passes(html: str, page: Path, ctr: _PostbuildCounters) -> str:
     """Article-furniture + body-content injection passes."""
-    prev = html
-    out = inject_article_furniture(html)
-    if out != prev:
-        ctr.furniture_patched += 1
+    out = _bump(inject_eyebrow, html, ctr, "eyebrows_set")
+    out = _bump(inject_deck, out, ctr, "decks_set")
+    out = _bump(inject_article_furniture, out, ctr, "furniture_patched")
+    out = _bump(inject_breadcrumbs, out, ctr, "crumbs_patched")
+    out = _bump(inject_table_labels, out, ctr, "tables_carded")
     # Hero banner (figure pulled from the article's og:image). Runs after
     # furniture so its anchor regex sees the post-furniture document, and
     # before the lang switcher so the switcher slots in after the banner.
     out = inject_hero_banner(out)
     out = inject_sigstore_attestation(out, page.parent.name)
-    prev = out
-    out = inject_anchor_links_and_toc(out)
-    if out != prev:
-        ctr.anchor_patched += 1
-    prev = out
-    out = strip_duplicate_body_h1(out)
-    if out != prev:
-        ctr.body_h1_stripped += 1
+    out = _bump(inject_anchor_links_and_toc, out, ctr, "anchor_patched")
+    out = _bump(inject_section_rules, out, ctr, "section_rules_set")
+    out = _bump(strip_duplicate_body_h1, out, ctr, "body_h1_stripped")
     out = _convert_faq_to_qa(out)
-    prev = out
-    out = inject_citations(out)
-    if out != prev:
-        ctr.citation_patched += 1
-    prev = out
-    out = inject_sources_list(out)
-    if out != prev:
-        ctr.sources_patched += 1
-    prev = out
-    out2 = inject_mermaid(out)
-    if out2 != prev:
-        ctr.mermaid_patched += 1
-        out = out2
+    out = _bump(inject_pullquotes, out, ctr, "pullquotes_set")
+    out = _bump(inject_citations, out, ctr, "citation_patched")
+    out = _bump(inject_sources_list, out, ctr, "sources_patched")
+    out = _bump(inject_mermaid, out, ctr, "mermaid_patched")
+    out = _bump(inject_footnotes, out, ctr, "footnotes_set")
+    out = _bump(inject_share_rail, out, ctr, "share_rails_set")
+    out = _bump(inject_action_rail, out, ctr, "action_rails_set")
+    # Wrap-foot stack — order matters: each _WRAP_CLOSE_RE.sub inserts
+    # BEFORE </div></main>, so the LAST pass ends up closest to it.
+    # We want: syndicate (top) → cite → reuse → byline (bottom).
+    out = _bump(inject_oembed_link, out, ctr, "oembed_links_set")
+    out = _bump(inject_syndication_panel, out, ctr, "syndicate_panels_set")
+    out = _bump(inject_cite_popover, out, ctr, "cite_panels_set")
+    out = _bump(inject_reuse_panel, out, ctr, "reuse_panels_set")
+    out = _bump(inject_byline_strap, out, ctr, "byline_straps_set")
     return out
 
 
@@ -1365,6 +1405,7 @@ def _finalize_build() -> tuple[int, bool, bool, bool, int, int, int, int]:
     llms_written = write_llms_txt(PUBLIC)
     llms_ctx_written = write_llms_ctx_txt(PUBLIC)
     llms_full_written = write_llms_full_txt(PUBLIC)
+    ai_written = write_ai_txt(PUBLIC)
     write_json_feed(PUBLIC)
     feed_urls_patched = fix_xml_feed_urls(PUBLIC)
     xml_patched = fix_xml_feeds(PUBLIC)
@@ -1376,6 +1417,7 @@ def _finalize_build() -> tuple[int, bool, bool, bool, int, int, int, int]:
         llms_written,
         llms_ctx_written,
         llms_full_written,
+        ai_written,
         feed_urls_patched,
         xml_patched,
         feeds_deduped,
@@ -1405,6 +1447,7 @@ def main() -> None:
         llms_written,
         llms_ctx_written,
         llms_full_written,
+        ai_written,
         feed_urls_patched,
         xml_patched,
         feeds_deduped,
@@ -1437,6 +1480,20 @@ def main() -> None:
         f"{c.wc_patched} got wordCount, "
         f"{c.about_patched} got about/mentions entities, "
         f"{c.furniture_patched} got tag badges + meta bar, "
+        f"{c.crumbs_patched} got visible breadcrumbs, "
+        f"{c.tables_carded} got card-collapse tables, "
+        f"{c.eyebrows_set} got FT eyebrow, "
+        f"{c.decks_set} got FT deck, "
+        f"{c.section_rules_set} got section rules, "
+        f"{c.pullquotes_set} got pull-quotes, "
+        f"{c.footnotes_set} got footnotes, "
+        f"{c.share_rails_set} got share rail, "
+        f"{c.syndicate_panels_set} got syndicate panel, "
+        f"{c.oembed_links_set} got oEmbed link, "
+        f"{c.action_rails_set} got action rail, "
+        f"{c.cite_panels_set} got cite popover, "
+        f"{c.reuse_panels_set} got reuse panel, "
+        f"{c.byline_straps_set} got byline strap, "
         f"{c.langswitch_patched} got inline language rail, "
         f"{c.anchor_patched} got anchor links + ToC, "
         f"{c.body_h1_stripped} got duplicate body H1 stripped, "
@@ -1456,7 +1513,8 @@ def main() -> None:
         f"robots.txt {'updated' if robots_written else 'unchanged'}, "
         f"llms.txt {'updated' if llms_written else 'unchanged'}, "
         f"llms-ctx.txt {'updated' if llms_ctx_written else 'unchanged'}, "
-        f"llms-full.txt {'updated' if llms_full_written else 'unchanged'}; "
+        f"llms-full.txt {'updated' if llms_full_written else 'unchanged'}, "
+        f"ai.txt {'updated' if ai_written else 'unchanged'}; "
         f"patched {len(pages) - len(failures)}, failed {len(failures)}"
     )
     if failures:

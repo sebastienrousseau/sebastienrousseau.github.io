@@ -39,6 +39,10 @@ cp -R _posts _posts_build
 python3 scripts/postbuild/regen_slug_maps.py
 python3 scripts/postbuild/regen_homepage.py --dir _posts_build
 python3 scripts/postbuild/post_enrich.py --dir _posts_build
+# Rewrite the /tags/ cover page from _data/taxonomy.yml so the
+# editorial pillar grid replaces the legacy monolithic anchor list.
+# Lenient on missing taxonomy (WS3 commit 1 must have shipped first).
+python3 scripts/generators/build_tags.py --dir _posts_build
 
 # Compile the site from the temporary directory instead of _posts
 ssg -n=docs -c=_posts_build -t=_layouts -o=public
@@ -111,12 +115,31 @@ for f in public/main.*.js public/sw.*.js public/theme-init.*.js public/highlight
 done
 
 python3 scripts/generators/build_topics.py
+# Per-tag landing pages — reads the ssg-emitted /tags/index.html as
+# template skeleton + the canonical taxonomy, and writes
+# /tags/<slug>/index.html per landing-eligible canonical (>=3 posts).
+# Locale forks land in a follow-up WS3 commit.
+python3 scripts/generators/build_tag_landings.py
+# Paged article listings — /articles/page/N/ + locale forks. Must run
+# after ssg has produced /articles/index.html (used as template
+# skeleton) and before build_translations (so the locale variants the
+# generator emits don't get clobbered).
+python3 scripts/generators/build_listings.py
+# Static oEmbed JSON per article (build-time, zero-Worker pattern).
+# Notion / Discord / Slack / WordPress / Atlassian use this for the
+# rich link card when readers paste-share a sebastienrousseau.com URL.
+python3 scripts/generators/build_oembed.py
 python3 scripts/generators/build_translations/__main__.py
 python3 scripts/generators/build_lang_feeds.py
 python3 scripts/generators/build_agent_api.py
 python3 scripts/generators/build_lead_magnets.py
 python3 scripts/generators/build_news_sitemap.py
 python3 scripts/postbuild/postbuild.py
+# RAG-ready corpus export — JSONL one-object-per-article + per-tag
+# subsets. Consumed by Claude / ChatGPT / Perplexity / LangChain etc.
+# Runs after postbuild so body_text reflects the final article HTML
+# (table-card data-labels stamped, breadcrumb chrome injected, etc.).
+python3 scripts/seo_and_audit/build_rag_corpus.py
 # Rewrite the in-page language switcher so each .ap-lang-item link
 # points to the localised URL of THIS page (per the page's own
 # hreflang alternates), not just /<lang>/. Without this, clicking
@@ -175,6 +198,27 @@ if command -v node >/dev/null 2>&1; then
     --test-coverage-functions=100 \
     --test-coverage-include='workers/activitypub.js' \
     workers/test_activitypub.mjs
+  # MCP sibling — exposes the corpus over /mcp/v1/* as a read-only API.
+  # Same exhaustive-coverage gate; hermetic (stubs globalThis.fetch for
+  # manifest + JSONL). 100/100/100 mandatory because the route is the
+  # discovery surface that AI clients hit.
+  node --test \
+    --experimental-test-coverage \
+    --test-coverage-lines=100 \
+    --test-coverage-branches=100 \
+    --test-coverage-functions=100 \
+    --test-coverage-include='workers/mcp.js' \
+    workers/test_mcp.mjs
+  # PDF proxy sibling — forwards /api/pdf/<slug>.pdf to the Fly.io
+  # WeasyPrint service and Edge-caches the response. Same 100/100/100
+  # gate; hermetic.
+  node --test \
+    --experimental-test-coverage \
+    --test-coverage-lines=100 \
+    --test-coverage-branches=100 \
+    --test-coverage-functions=100 \
+    --test-coverage-include='workers/pdf-proxy.js' \
+    workers/test_pdf_proxy.mjs
 fi
 
 # Deployment is the public/ Pages artifact uploaded by CI
