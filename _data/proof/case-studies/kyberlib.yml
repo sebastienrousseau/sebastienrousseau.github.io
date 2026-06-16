@@ -1,0 +1,53 @@
+slug: kyberlib
+title: "KyberLib — production-grade ML-KEM in Rust"
+banner: "https://cloudcdn.pro/stocks/images/kyberlib.webp"
+banner_alt: "Quantum-safe cryptographic key exchange — symbolising the FIPS 203 ML-KEM migration in banking"
+role: "Author and maintainer"
+period: "2023 – present"
+status: "Production, actively maintained"
+
+problem: >
+  Banks face a November 14, 2026 SWIFT structured-address cutover and
+  a longer NIST post-quantum migration window. Existing PQC implementations
+  ship as policy papers, lab code, or proprietary HSM black boxes — none
+  of which a payments architect can read, test, or sign.
+
+what_i_built: >
+  KyberLib turns FIPS 203 ML-KEM (CRYSTALS-Kyber) into inspectable Rust.
+  Hybrid classical-plus-quantum handshakes, no_std compilation for HSM
+  embedding, crypto-agile abstraction boundaries, and the DORA Article 5
+  governance evidence boards now need to support PQC migration without
+  taking on opaque vendor risk.
+
+rigour:
+  - metric: "Cryptographic standard"
+    value: "FIPS 203 (ML-KEM, formerly CRYSTALS-Kyber)"
+  - metric: "Hybrid handshake support"
+    value: "Classical TLS + ML-KEM-768 X25519MLKEM768 mode"
+  - metric: "Compilation"
+    value: "no_std — embeds in HSMs, secure enclaves, embedded targets"
+  - metric: "Crypto-agility"
+    value: "Abstraction boundaries enable algorithm swap without API change"
+  - metric: "License"
+    value: "Apache-2.0 / MIT"
+
+validation:
+  - "Cited in EPAA Quantum-Safe Payments white paper (September 2025)"
+  - "Featured in the 2026-06-12 article: KyberLib and the Post-Quantum Banking Migration"
+  - "Aligned to NIST FIPS 203 / 204 / 205 publication track"
+
+standards:
+  - "FIPS 203 (ML-KEM)"
+  - "NIST SP 1800-38"
+  - "DORA Article 5"
+
+links:
+  repo: "https://github.com/sebastienrousseau/kyberlib"
+  crates: "https://crates.io/crates/kyberlib"
+  docs: "https://docs.rs/kyberlib"
+
+related_articles:
+  - "2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026"
+  - "2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats"
+
+signed: true

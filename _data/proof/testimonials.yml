@@ -1,0 +1,25 @@
+# Testimonials — strict permissions discipline.
+#
+# Authority is conferred, not claimed. We do NOT publish testimonials
+# without:
+#   1. Explicit written permission from the quoted person.
+#   2. Real attribution (name + role + organisation).
+#   3. A linkable public source where one exists (LinkedIn recommendation,
+#      podcast appearance, conference quote, public review).
+#
+# Empty by design. Outreach is a separate workstream — quotes land here
+# only after consent is captured. NEVER fabricate a quote, even as a
+# placeholder. NEVER include `aggregateRating` JSON-LD on this site; we
+# do not run a self-applied 5-star rating scheme.
+#
+# Schema:
+#   id:         short slug used to reference from case studies
+#   quote:      the verbatim quote (1-3 sentences)
+#   author:     real name
+#   role:       job title at time of quote
+#   org:        organisation (or "<Bank>" if NDA-scoped)
+#   source:     public URL (LinkedIn recommendation, etc.) or null
+#   context:    case-study slug this quote supports (optional)
+#   permission: true (mandatory — we log consent separately)
+
+items: []

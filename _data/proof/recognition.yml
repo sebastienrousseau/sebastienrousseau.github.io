@@ -1,0 +1,48 @@
+# Recognition / Press — externally verifiable items only.
+#
+# Authority is conferred, not claimed. Every entry below must be backed by a
+# linkable, dated artefact a sceptic could independently check. New entries
+# enter as PRs: add the YAML block, then add the matching item to the JSON-LD
+# `award` / `memberOf` / `subjectOf` block in postbuild_lib/schemas.py.
+#
+# Schema (required fields):
+#   type:        paper | press | feature | working-group | award | citation
+#   title:       canonical title
+#   org:         publishing or awarding organisation
+#   date:        ISO 8601 (yyyy-mm or yyyy-mm-dd)
+#   url:         direct link to the public artefact (PDF, page, episode)
+#   role:        contributor / author / member (where applicable)
+#   logo:        relative path inside cloudcdn/logos/ (optional)
+
+items:
+  - type: paper
+    title: "Quantum-Safe Payments: Why the Payments Industry Must Act Now"
+    org: "Emerging Payments Association Asia"
+    date: "2025-09"
+    role: "Contributor, Quantum-Safe Cryptography Working Group"
+    url: "https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf"
+    logo: "emergingpaymentsasia"
+
+  - type: working-group
+    title: "Quantum-Safe Cryptography Working Group"
+    org: "Emerging Payments Association Asia"
+    date: "2025-01"
+    role: "Member"
+    url: "https://emergingpaymentsasia.org/"
+    logo: "emergingpaymentsasia"
+
+  - type: feature
+    title: "Banking On Quantum"
+    org: "sebastienrousseau.com"
+    date: "2024-01"
+    role: "Author"
+    url: "https://sebastienrousseau.com/"
+    logo: "sebastienrousseau"
+
+  - type: feature
+    title: "Banking On AI"
+    org: "sebastienrousseau.com"
+    date: "2025-05"
+    role: "Author"
+    url: "https://sebastienrousseau.com/"
+    logo: "sebastienrousseau"
