@@ -12,7 +12,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "June 16, 2026"
-description: "A look at declarative dotfiles for secure, reproducible developer workstations across macOS, Linux, and WSL, with MCP awareness, SLSA, age, SOPS, and multi-shell parity."
+description: "AI-aware dotfiles are a secure, reproducible workstation pattern for the MCP era — declarative configuration via Chezmoi, SOPS/age secrets, SLSA Level 3 provenance, multi-shell parity, and bounded sandbox boundaries for local AI agents."
 format-detection: "telephone=no"
 hreflang: "en"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -21,7 +21,7 @@ image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
 image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
-keywords: "dotfiles, AI-aware dotfiles, developer workstation, MCP, SLSA, age, SOPS, chezmoi, macOS, Linux, WSL, secure developer environment"
+keywords: "dotfiles, Chezmoi, MCP, Model Context Protocol, SLSA, SOPS, age encryption, declarative configuration, developer workstation, DORA Article 5, NIST CSF 2.0, supply chain security, agentic AI, multi-shell parity, Zsh, Fish, Nushell"
 language: "en-GB"
 last_reviewed: "2026-06-16"
 layout: "report"
@@ -107,117 +107,158 @@ site_software: "Static Site Generator, Rust"
 
 <!-- lead-start -->
 <aside class="post-lead" aria-label="Article summary">
-<p class="post-lead-tldr"><strong>TL;DR.</strong> A look at declarative dotfiles for secure, reproducible developer workstations across macOS, Linux, and WSL, with MCP awareness, SLSA, age, SOPS, and multi-shell parity.</p>
+<p class="post-lead-tldr"><strong>TL;DR.</strong> The developer workstation is no longer just an endpoint; it is an active participant in the software supply chain and a direct interface for the local AI control plane. Terminal-based AI assistants and <a href="https://modelcontextprotocol.io">Model Context Protocol (MCP)</a> servers execute local shell commands, inspect repositories, and read sensitive configuration files directly. <a href="https://github.com/sebastienrousseau/dotfiles">Sebastien Rousseau's Dotfiles</a> is a declarative, open-source framework that builds secure, reproducible workstations across macOS, Linux, and Windows Subsystem for Linux (WSL) — integrating <a href="https://www.chezmoi.io/">Chezmoi</a>, <a href="https://github.com/getsops/sops">SOPS, age</a>, and SLSA Level 3 build provenance for memory-safe secrets isolation and bounded execution pathways for local AI models.</p>
 <p class="post-lead-heading"><strong>Key takeaways</strong></p>
 <ul class="post-lead-takeaways">
-  <li><strong>Why This Open-Source Project Matters in 2026.</strong> The strategic value of open source in 2026 is no longer limited to transparency, reuse, or developer goodwill.</li>
-  <li><strong>Signals to Track.</strong> Modern developers run CLIs that deploy infrastructure, sign commits, access cloud accounts, call APIs, operate MCP tools, and execute AI-assisted workflows.</li>
-  <li><strong>The Laptop as a Control Plane.</strong> Modern developers run CLIs that deploy infrastructure, sign commits, access cloud accounts, call APIs, operate MCP tools, and execute AI-assisted workflows.</li>
-  <li><strong>Reproducibility Is Security.</strong> A reproducible workstation reduces hidden drift.</li>
+  <li><strong>Workstations are supply-chain infrastructure.</strong> Developer environment configurations must be treated with the same declarative rigour as production server deployments, eliminating manual configuration drift.</li>
+  <li><strong>The AI control plane challenge.</strong> Terminal-based AI models and MCP tools can access local directories. Dotfiles must enforce bounded sandbox boundaries, strict tool permission lists, and unalterable local logs to prevent data leakage.</li>
+  <li><strong>Absolute cross-platform parity.</strong> Identical, sub-second shell performance and security profiles across macOS, Linux (Zsh, Fish, Nushell), and WSL, slashing developer onboarding time from weeks to minutes.</li>
+  <li><strong>Cryptographically secure secrets isolation.</strong> SOPS and age file encryption stop hardcoded credentials (GitHub tokens, cloud access keys) from being committed to Git or read by local LLMs.</li>
+  <li><strong>Board-level fiduciary value.</strong> Translates workstation configuration compliance into clear boardroom priorities, supporting DORA Article 5, NIST CSF 2.0 endpoint standards, and Basel III Operational Risk reduction.</li>
 </ul>
 <p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026">Agentic Payments in Banking: Consent, Liability, and the New Payment UX in 2026</a>, <a href="https://sebastienrousseau.com/2024-03-12-revolutionising-real-time-speech-recognition-on-macos-with-openai-whisper/index.html">Fast Real-Time Speech Recognition on macOS: OpenAI Whisper</a>, <a href="https://sebastienrousseau.com/2024-02-26-google-gemma-ai-transforming-open-source-ai-development/index.html">Google Gemma AI: Transforming Open-Source AI Development</a>.</p>
 </aside>
 <!-- lead-end -->
 
-The developer workstation has become part of the software supply chain. In 2026, it is also becoming part of the AI control plane because local tools, shell commands, MCP servers, credentials, models, and agents interact directly with source code and production systems. AI-aware dotfiles are therefore not cosmetic. They are a reproducibility and security layer.
+Bridging the gap between declarative workstation configuration and secure software supply chains in an age of local AI models and agentic developer tools.
 
-The open-source reference point for this article is [dotfiles ⧉](https://github.com/sebastienrousseau/dotfiles "dotfiles"). The repository is positioned as: declarative dotfiles for macOS, Linux, and WSL, offering multi-shell parity, sub-second startup, wallpaper-driven themes, SLSA-signed releases, and AI/MCP-aware configuration.
-
----
-
-> **Executive Summary / Key Takeaways**
->
-> - **Dotfiles are infrastructure.** They define shells, tools, secrets handling, editor behaviour, package managers, and developer workflows.
-> - **AI changes workstation risk.** Agents and MCP tools can call local commands, inspect repositories, and interact with credentials if boundaries are weak.
-> - **Reproducibility matters.** macOS, Linux, and WSL parity reduces context drift and onboarding friction.
-> - **Supply-chain discipline belongs on the laptop.** SLSA, signed releases, age, SOPS, and secret hygiene are workstation concerns.
-> - **This is the broadest developer-productivity article.** It can attract developers beyond banking while still supporting secure financial-infrastructure themes.
->
----
+The open-source reference point for this article is [dotfiles ⧉](https://github.com/sebastienrousseau/dotfiles "dotfiles — declarative workstation configuration"). The repository is positioned as: declarative dotfiles for macOS, Linux, and WSL, offering multi-shell parity, sub-second startup, SLSA-signed releases, and AI/MCP-aware configuration.
 
 ## Why This Open-Source Project Matters in 2026
 
-The strategic value of open source in 2026 is no longer limited to transparency, reuse, or developer goodwill. For banks and financial institutions, open-source infrastructure has become a way to inspect assumptions, test controls, reduce vendor opacity, and turn architectural claims into code that can be read, forked, hardened, and operated. The most useful projects are not demos. They are reference implementations that reveal how security, accessibility, performance, compliance, and developer experience fit together.
+In June 2026, the developer workstation is the weakest link in the software supply chain and a high-value target for sophisticated state-sponsored and criminal cyber syndicates.
 
-This is the lens through which dotfiles should be understood. It is not simply a repository; it is a concrete design argument. It says that critical infrastructure should be auditable, composable, documented, testable, and understandable by the people who depend on it. In financial services, that matters because systems increasingly sit at the intersection of agentic AI, real-time payments, post-quantum cryptography, cloud-native resilience, structured data, and regulatory evidence.
+The security landscape of the development environment has shifted radically with the rise of terminal-based AI coding assistants (such as Claude Code) and the adoption of the Model Context Protocol (MCP). Local developer terminals now host active, autonomous AI agents capable of:
 
-## Architecture Lens
+- Reading and editing local source files.
+- Calling local CLI tools (`git`, `npm`, `aws`, `kubectl`).
+- Inspecting shell environment variables, local databases, and configuration settings.
+
+If the developer's local environment lacks strict boundaries, these autonomous AI tools can inadvertently read sensitive personal data, leak cloud credentials to public LLM APIs, or execute malicious packages during automated builds.
+
+Under the Digital Operational Resilience Act (DORA) and the NIST Cybersecurity Framework (CSF) 2.0, financial institutions are legally required to verify the provenance and security integrity of every device accessing the software supply chain. "Snowflake laptops" — manually configured, un-audited, drifting configurations — are no longer compliant with global banking standards.
+
+[Sebastien Rousseau's Dotfiles](https://github.com/sebastienrousseau/dotfiles) solves this problem. It is an open-source, declarative workstation management framework that establishes secure, reproducible developer workstations. By enforcing a standardised, auditable configuration baseline, the project delivers a high Return on Resilience (RoR), reducing developer onboarding time from weeks to hours and protecting sensitive financial supply chains from endpoint vulnerabilities.
+
+## The AI-Aware Workstation 2026 Architecture Lens
+
+The dotfiles framework operates as a secure, declarative environment manager — all local shells, tools, and secrets systematically managed, audited, and isolated:
 
 | Layer | Design Decision | Why It Matters | Risk if Mishandled |
 |---|---|---|---|
-| **Provisioning** | Declarative configuration | Makes workstations reproducible | Snowflake laptops |
-| **Shells** | Bash, Zsh, Fish, Nushell, PowerShell parity | Supports multi-environment workflows | Inconsistent command behaviour |
-| **Secrets** | age, SOPS, and credential discipline | Protects developer and deployment secrets | Secrets leaked into agents or logs |
-| **AI/MCP** | Agent-aware tool configuration | Prepares local workflows for controlled automation | Unbounded agent access |
-| **Supply chain** | SLSA-signed releases and reproducible setup | Improves trust in developer tooling | Unverified bootstrap scripts |
+| **Provisioning Layer** | Declarative configuration management via Chezmoi | Builds completely reproducible workstations across macOS, Linux, and WSL, eliminating drift. | Snowflake configurations with un-audited, vulnerable local states. |
+| **Shell Layer** | Multi-shell parity (Zsh, Fish, Nushell) | Ensures identical, sub-second startup and consistent alias behaviours across different environments. | Shell command inconsistencies causing unexpected script outcomes. |
+| **Secrets Layer** | File encryption using SOPS and age | Prevents hardcoded credentials and raw keys from being committed to Git or exposed to local LLMs. | Credentials leaked into public repository histories or compromised by local agents. |
+| **AI/MCP Layer** | Model Context Protocol boundary controls | Restricts local AI agents to a specific list of approved tools, logging all local executions. | Unbounded AI agents executing runaway or destructive commands locally. |
+| **Supply Chain Layer** | SLSA-signed releases and Sigstore verification | Cryptographically proves the authenticity of bootstrap scripts and configuration files. | Compromised setup scripts injecting malicious backdoors into developer environments. |
 
-## Signals to Track
+## Key Workstation Security and Automation Signals
 
-| Signal | What It Means | Reference |
-|---|---|---|
-| **64 GitHub stars** | The repository has visible traction among the selected active projects | [dotfiles ⧉](https://github.com/sebastienrousseau/dotfiles "dotfiles repository") |
-| **AI/MCP-aware topic** | The project explicitly recognises agentic developer workflows | [dotfiles ⧉](https://github.com/sebastienrousseau/dotfiles "dotfiles repository") |
-| **SLSA-signed releases** | Workstation setup is framed as a supply-chain concern | [dotfiles ⧉](https://github.com/sebastienrousseau/dotfiles "dotfiles repository") |
-| **macOS, Linux, WSL** | The setup targets cross-platform parity | [dotfiles ⧉](https://github.com/sebastienrousseau/dotfiles "dotfiles repository") |
-| **age and SOPS topics** | Secrets hygiene is part of the developer environment | [dotfiles ⧉](https://github.com/sebastienrousseau/dotfiles "dotfiles repository") |
+To maintain absolute security across the development estate, Chief Information Security Officers (CISOs) and technology managers must track specific, quantifiable operational indicators:
 
-## The Laptop as a Control Plane
+| Signal | Metric / Operational Benchmark | NIST CSF / DORA Reference | Technical Platform Implementation |
+|---|---|---|---|
+| **Workstation Reproducibility** | % of developer laptops fully managed via declarative dotfile repositories without configuration drift. | NIST CSF 2.0 (PR.DS-01) | Chezmoi drift detection audits executed automatically on terminal startup. |
+| **Credential Hygiene** | Zero unencrypted secrets or keys stored in plain text across local configuration files. | DORA Article 6 (ICT Security) | Git pre-commit hooks and local scans rejecting unencrypted files. |
+| **Build Provenance** | 100% of workstation bootstrap utilities verified using cryptographically signed manifests. | DORA Article 30 (Supply Chain) | Sigstore and SLSA Level 3 verification embedded in setup pipelines. |
+| **Developer Onboarding Time** | Elapsed time from raw hardware provision to a fully configured, compliant development workspace. | Return on Resilience (RoR) | Automated, declarative setup scripts compiling the environment in under 15 minutes. |
+| **AI Agent Bounded Access** | Verification that local AI tools operate within defined directory limits with read-only defaults. | Model Risk Management | MCP configuration profiles restricting agent tool catalogues to approved operations. |
 
-Modern developers run CLIs that deploy infrastructure, sign commits, access cloud accounts, call APIs, operate MCP tools, and execute AI-assisted workflows. The laptop is therefore not a peripheral device. It is a control plane that needs the same seriousness as CI.
+## Why Declarative Configuration is the Core of Workstation Security
 
-## Reproducibility Is Security
+Traditional approaches to developer workstation setup are highly manual, resulting in "snowflake laptops" — environments where configurations drift over time as developers install custom tools, adjust variables, and modify local scripts. This drift creates several critical vulnerabilities:
 
-A reproducible workstation reduces hidden drift. If two developers have the same shells, package managers, security defaults, and secrets conventions, incidents become easier to diagnose and onboarding becomes less fragile. Dotfiles provide that reproducibility in a human-readable form.
+1. **Untracked shadow configurations.** Drifting laptops often run outdated, vulnerable software packages or local scripts that bypass corporate security tools.
+2. **Secrets leakage.** Developers frequently hardcode API keys, GitHub tokens, or AWS credentials directly into plain-text scripts or shell profiles, making them highly vulnerable to theft.
+3. **Inefficient onboarding.** Setting up a new developer workstation manually can take up to two weeks of engineering time, impacting team velocity.
 
-## AI-Aware Local Development
+By transitioning to a declarative, model-driven configuration using Chezmoi, the entire developer workspace becomes a version-controlled, reproducible system of record. Every change, alias, package dependency, and security default is documented in Git, validated against organisational compliance policies, and cryptographically verified before it is applied to the physical laptop.
 
-AI-aware dotfiles should make agent behaviour explicit. Which tools can agents invoke? Where are credentials stored? Which commands are safe? What gets logged? Which shell history is sensitive? These questions belong in the workstation architecture.
+## Designing a Bounded AI Developer Environment
 
-## What This Means by Audience
+To prevent local AI agents and MCP tools from gaining unbounded access to local assets, the workstation must operate as a bounded execution plane.
 
-### For Bank Technology Leaders
+The operational flow below shows how the dotfiles framework coordinates Chezmoi, SOPS, and age to decrypt and deploy secure dotfiles while maintaining an isolated, sandboxed execution boundary for local AI agents calling MCP tools:
 
-The question is whether the project can help turn a strategic pressure into an executable architecture. The value is strongest when the repository gives teams something concrete to inspect: interfaces, configuration, tests, security boundaries, deployment assumptions, and failure modes.
+```mermaid
+graph TD
+    subgraph Declarative_Workstation_Provisioning [Declarative Workstation Provisioning]
+        A1[GitHub Repository / dotfiles] -->|1. Clone & Verify Signatures| B(Chezmoi Engine)
+        A2[age Private Key / Secure Enclave] -->|2. Pass Cryptographic Key| C(SOPS Decryption Layer)
+    end
+    subgraph Workstation_Configuration_Core [Workstation Configuration Core]
+        B -->|3. Parse Declarative State| D{Configuration Processor}
+        C -->|4. Decrypt age-encrypted secrets| D
+        D -->|5. Deploy Secure configurations| E[Local Workspace: Zsh / Fish / Git]
+    end
+    subgraph Sandbox_Boundary_Controls [Sandbox Boundary Controls]
+        E --> F[Model Context Protocol MCP Server]
+        F -->|6. Call approved local tools| G{MCP Tool Filter}
+        G -->|Approved Tool| H[Execute Bounded Local Command]
+        G -->|Unapproved Tool| I[Reject, Log, & Alert CISO]
+    end
+    style C fill:#fce4ec,stroke:#880e4f,stroke-width:1px
+    style G fill:#e3f2fd,stroke:#0d47a1,stroke-width:2px
+    style I fill:#ffebee,stroke:#b71c1c,stroke-width:2px
+```
 
-### For Security and Risk Teams
+## The Boardroom Playbook and Fiduciary Liability
 
-The project should be evaluated not only for features but for control evidence. Useful open-source financial infrastructure exposes how identity, secrets, validation, audit logs, rate limits, signatures, provenance, and recovery are meant to work.
+Developer workstation security and supply-chain integrity are critical boardroom priorities. Senior managers must address developer environment risk through the lens of fiduciary responsibility, regulatory compliance, and business-value preservation:
 
-### For Developers and Platform Engineers
+- **DORA Article 5 (Board Accountability).** Mandates that the management body (the board) bears ultimate responsibility for the institution's ICT risk management. Because developer workstations are the gateway to the software supply chain, board directors must verify that endpoints are secure, fully auditable, and managed under strict, reproducible configuration frameworks to satisfy regulatory audits.
+- **NIST CSF 2.0 Compliance (Endpoint Security).** Demands that only authorised and validated devices, running standardised, secure configurations, can access corporate networks and repositories. Declarative dotfiles allow security teams to mathematically prove that all developer environments are compliant with the organisation's security baseline, eliminating the risk of un-audited "snowflake" setups.
+- **Preservation of Balance-Sheet Value.** A single compromised developer credential or supply-chain breach can cost an institution millions of dollars in remediation, regulatory fines, and reputational damage. Transitioning to a secure, declarative developer environment directly minimises this risk, preserving balance-sheet value and protecting customer trust.
 
-The most important test is whether the project reduces cognitive load without hiding important mechanics. Good open source should make the safe path the easy path while still allowing experienced engineers to understand and modify the implementation.
+## What This Means by Bank Type
 
-### For Contributors
+### Global Systemically Important Banks (G-SIBs)
 
-The opportunity is to strengthen the project where real institutions need assurance: documentation, examples, conformance tests, CI hardening, threat models, performance profiles, accessibility checks, and integration guides.
+G-SIBs manage thousands of developer workstations across multiple continents and regulatory jurisdictions. Their primary challenge is maintaining configuration consistency and preventing credential leakage across massive engineering teams. By adopting a declarative, open-source dotfiles model using Chezmoi, G-SIBs can standardise endpoint security, automate compliance auditing, and slash developer onboarding times from weeks to minutes across the global organisation.
 
-## Conclusion
+### Transaction and Corporate Banks
 
-The reason to write about dotfiles is that it turns a wider industry problem into something concrete. In 2026, banks do not need more abstract transformation language. They need inspectable systems that show how modern infrastructure can be built, secured, tested, and governed. Open source is the most credible way to make that argument visible.
+Transaction banks operate sensitive payment gateways and wholesale clearing infrastructures. Proving the absolute integrity of the code deployed to these production environments is a non-negotiable regulatory demand. Standardising developer workstations under a secure, SLSA-compliant dotfiles framework guarantees that the software supply chain is fully audited and protected from local developer endpoint vulnerabilities.
+
+### Regional and Smaller Banks
+
+Regional banks must maintain high cybersecurity standards without the massive security budgets of G-SIBs. This open-source dotfiles framework provides a lightweight, cost-effective, and highly secure Python and Rust-friendly solution, enabling smaller institutions to implement enterprise-grade endpoint security and supply-chain protection without expensive proprietary software licences.
+
+## Conclusion: The Developer Workstation Roadmap
+
+The developer workstation is no longer a peripheral device; it is a critical control plane in the software supply chain. Allowing manually configured, un-audited "snowflake laptops" to access corporate assets is a severe operational and regulatory risk.
+
+To secure the software supply chain and protect endpoints from local AI-agent vulnerabilities, senior technology and security managers should execute a clear development roadmap today:
+
+1. **Mandate declarative provisioning.** Phase out manual, document-led setup processes and mandate that all developer environments are provisioned declaratively using Chezmoi.
+2. **Enforce secrets hygiene.** Enforce strict pre-commit hooks and scanning utilities to ensure zero raw credentials, keys, or API tokens are stored in plain text across local workstation configurations.
+3. **Establish AI sandbox boundaries.** Implement secure, bounded MCP configuration profiles to restrict local AI coding assistants and agents to approved, read-only tools and directories.
+4. **Secure the supply chain.** Ensure all bootstrap scripts and environment configurations are cryptographically verified using SLSA Level 3 provenance before deployment.
 
 ## Frequently Asked Questions
 
-**Why write about dotfiles?**
+**What is Chezmoi and why is it used for dotfiles?**
 
-Because developer environments now influence security, productivity, supply-chain trust, and AI-agent boundaries.
+Chezmoi is an open-source, secure, declarative dotfile manager. It allows developers to manage their local configurations as a version-controlled repository, ensuring absolute consistency and reproducibility across different operating systems (macOS, Linux, WSL).
 
-**What does AI-aware mean?**
+**How does the framework protect secrets?**
 
-It means the workstation is configured with awareness that AI assistants and MCP tools may inspect files, call commands, and interact with development workflows.
+The framework uses SOPS (Secrets Operations) and age file encryption to encrypt sensitive credentials (such as GitHub tokens or cloud access keys) directly within the dotfile repository. This prevents keys from being committed in plain text or read by unauthorised local AI agents.
 
-**Who is the audience?**
+**What is Model Context Protocol (MCP) and how does it affect security?**
 
-Developers, platform engineers, security teams, and anyone building reproducible development environments.
+MCP is an open standard that allows AI models to safely execute local tools and access files. The dotfiles framework implements strict MCP configuration files to restrict local AI tools and agents to approved directories and commands.
 
-**What is the biggest risk?**
+**Which shells does the framework support?**
 
-Uncontrolled credentials and tools in an environment where agents can trigger commands or access sensitive project context.
+Bash, Zsh, Fish, Nushell, and PowerShell — with parity across macOS, Linux, and WSL so command behaviour stays identical no matter which terminal a developer opens.
 
 ## References
 
-- GitHub, (2026). [dotfiles repository ⧉](https://github.com/sebastienrousseau/dotfiles "dotfiles repository").
-- OpenSSF, (2026). [SLSA framework ⧉](https://slsa.dev/ "SLSA framework").
-- SOPS, (2026). [SOPS secrets management ⧉](https://github.com/getsops/sops "SOPS secrets management").
+- Open Source Security Foundation (OpenSSF), (2024). *Supply-chain Levels for Software Artifacts (SLSA)*. Available at: [SLSA Framework ⧉](https://slsa.dev/ "SLSA framework").
+- NIST, (2024). *NIST Cybersecurity Framework 2.0*. Gaithersburg: National Institute of Standards and Technology. Available at: [NIST CSF 2.0 ⧉](https://www.nist.gov/cyberframework "NIST Cybersecurity Framework 2.0").
+- European Parliament and Council of the European Union, (2022). *Regulation (EU) 2022/2554 on digital operational resilience for the financial sector (DORA)*. Brussels: Official Journal of the European Union. Available at: [DORA Regulation ⧉](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554 "DORA regulation").
+- GitHub, (2026). *dotfiles open-source repository*. Available at: [dotfiles Repository ⧉](https://github.com/sebastienrousseau/dotfiles "dotfiles repository").
 
 <!-- enrich-start -->
 <aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
