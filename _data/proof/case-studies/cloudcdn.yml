@@ -1,0 +1,54 @@
+slug: cloudcdn
+title: "CloudCDN — open-source blueprint for the AI-native edge"
+banner: "https://cloudcdn.pro/stocks/images/cloudcdn-blueprint.webp"
+banner_alt: "AI-native edge infrastructure — symbolising the zero-trust MCP gateway, atomic Durable Objects rate limiting, and WebAuthn passkey perimeter that CloudCDN ships as a reference implementation"
+role: "Author and maintainer"
+period: "2024 – present"
+status: "Production, actively maintained"
+
+problem: >
+  As AI agents and MCP tools start calling edge APIs at scale, banks
+  need a perimeter that survives autonomous traffic without trading
+  away DORA-grade audit evidence. Existing CDNs offer either marketing
+  language or opaque plans — neither produces the reference
+  implementation a security team can read, fork, and sign.
+
+what_i_built: >
+  An open-source, zero-trust MCP gateway with 42 tools, atomic Durable
+  Objects rate limiting, WebAuthn passkey perimeter, signed URLs, and
+  SLSA Level 3 build provenance. 3,185 tests at 100 % coverage,
+  mapped to DORA Article 5, BCBS 239 risk-data aggregation, and
+  Basel III operational risk capital.
+
+rigour:
+  - metric: "Tests"
+    value: "3,185 tests at 100 % line, branch, and function coverage"
+  - metric: "Supply-chain provenance"
+    value: "SLSA Level 3 build provenance + Sigstore signing"
+  - metric: "MCP tools shipped"
+    value: "42 tools — every call audit-logged with structured evidence"
+  - metric: "Rate limiting"
+    value: "Atomic Durable Objects (no race conditions, no double-counts)"
+  - metric: "Authentication"
+    value: "WebAuthn passkeys + signed URLs"
+  - metric: "License"
+    value: "Apache-2.0 / MIT"
+
+validation:
+  - "Featured in the 2026-06-11 article: CloudCDN — An Open-Source Blueprint for the AI-Native Edge"
+  - "Mapped to DORA Article 5, BCBS 239, Basel III operational risk"
+
+standards:
+  - "SLSA Level 3"
+  - "WebAuthn (FIDO2)"
+  - "DORA Article 5"
+  - "BCBS 239"
+
+links:
+  repo: "https://github.com/sebastienrousseau/cloudcdn"
+  site: "https://cloudcdn.pro"
+
+related_articles:
+  - "2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026"
+
+signed: true

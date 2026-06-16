@@ -114,6 +114,13 @@ for f in public/main.*.js public/sw.*.js public/theme-init.*.js public/highlight
   cp -f "$f" "public/$short"
 done
 
+# Authority Playbook surfaces — fetch externally verifiable metrics first
+# (graceful fallback if any single fetch errors) so the case-study templates
+# can render aggregate numbers from the same source the homepage does.
+python3 scripts/seo_and_audit/fetch_metrics.py
+# Outcome-led case studies — reads `_data/proof/case-studies/*.yml` and
+# forks the FT-tier `/articles/index.html` shell as template skeleton.
+python3 scripts/generators/build_case_studies.py
 python3 scripts/generators/build_topics.py
 # Per-tag landing pages — reads the ssg-emitted /tags/index.html as
 # template skeleton + the canonical taxonomy, and writes

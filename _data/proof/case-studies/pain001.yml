@@ -1,0 +1,54 @@
+slug: pain001
+title: "pain001 — automating ISO 20022 payment files"
+banner: "https://cloudcdn.pro/stocks/images/ben-o-bro-wpU4veNGnHg.webp"
+banner_alt: "Aerial view of the City of London at dusk — symbolising structured payment file automation under ISO 20022"
+role: "Author and maintainer"
+period: "2023 – present"
+status: "Production, actively maintained"
+
+problem: >
+  The global MT → MX migration forces every bank and corporate treasury
+  to produce structured pain.001 messages. Most teams hand-roll brittle
+  XML or buy opaque proprietary translators. Both routes ship payment
+  errors into clearing networks and leave no audit trail.
+
+what_i_built: >
+  An open-source Python library that generates validated ISO 20022
+  pain.001 (Customer Credit Transfer Initiation) messages from CSV /
+  SQLite / Parquet. Pre-flight XSD validation, IBAN / BIC checksums,
+  PII masking, and full XSD schema conformance — all inside a Python
+  workflow that drops into existing ERP and treasury pipelines.
+
+# Engineering rigour metrics — verifiable from the repository.
+# Adoption metrics live in metrics.json (fetched at build time from
+# pypistats and pepy). Never fabricate adopter counts.
+rigour:
+  - metric: "ISO 20022 messages supported"
+    value: "pain.001 (Customer Credit Transfer Initiation)"
+  - metric: "Schema conformance"
+    value: "Official XSD validation pre-flight on every message"
+  - metric: "Validators shipped"
+    value: "IBAN check-digit + BIC + LEI checksum (ISO 7064 Modulo 97-10)"
+  - metric: "License"
+    value: "Apache-2.0 / MIT — free to use, fork, audit"
+
+# Adoption / external validation — externally verifiable items only.
+validation:
+  - "Cited in EPAA Quantum-Safe Payments white paper (September 2025)"
+  - "Featured in articles published on sebastienrousseau.com since 2023-09"
+
+standards:
+  - "ISO 20022 pain.001"
+  - "SWIFT CBPR+"
+  - "SEPA"
+
+links:
+  repo: "https://github.com/sebastienrousseau/pain001"
+  site: "https://pain001.com"
+  pypi: "https://pypi.org/project/pain001/"
+  stats: "https://pypistats.org/packages/pain001"
+
+related_articles:
+  - "2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001"
+
+signed: true

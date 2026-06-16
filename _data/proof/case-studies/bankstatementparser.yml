@@ -1,0 +1,51 @@
+slug: bankstatementparser
+title: "BankStatementParser — unified transaction intelligence for treasury"
+banner: "https://cloudcdn.pro/stocks/images/ricardo-gomez-angel-Oj6tP8NlvFo.webp"
+banner_alt: "Modern finance office at night — symbolising unified transaction intelligence across CAMT, MT940, OFX, and CSV bank statement formats"
+role: "Author and maintainer"
+period: "2024 – present"
+status: "Production, actively maintained"
+
+problem: >
+  Corporate treasury teams receive bank statements in CAMT, PAIN.001,
+  MT940, OFX, CSV, and scanned PDFs from dozens of banks. Each format
+  carries different field semantics, encodings, and ambiguities.
+  Most teams hand-build brittle per-bank parsers, blocking real-time
+  cash forecasting, fraud detection, and audit-ready reconciliation.
+
+what_i_built: >
+  An open-source Python toolkit that unifies every common bank
+  statement format into a single, normalised transaction stream.
+  Schema-validated CAMT / MT940 / PAIN parsers, OCR fallback for
+  scanned PDFs, deterministic field mapping, and SR 11-7-grade audit
+  evidence for every transformation step.
+
+rigour:
+  - metric: "Formats supported"
+    value: "CAMT (.052, .053, .054), MT940, OFX, CSV, scanned PDF (OCR)"
+  - metric: "Normalisation target"
+    value: "Single unified transaction record schema"
+  - metric: "Audit trail"
+    value: "Per-field provenance — source format + parser version logged per row"
+  - metric: "License"
+    value: "Apache-2.0 / MIT"
+
+validation:
+  - "Featured in the 2026-06-14 article: From Bank Statements to Unified Transaction Intelligence"
+  - "Designed to satisfy BCBS 239 risk-data aggregation requirements"
+
+standards:
+  - "ISO 20022 CAMT"
+  - "SWIFT MT940"
+  - "OFX"
+  - "BCBS 239"
+
+links:
+  repo: "https://github.com/sebastienrousseau/bankstatementparser"
+  pypi: "https://pypi.org/project/bankstatementparser/"
+  stats: "https://pypistats.org/packages/bankstatementparser"
+
+related_articles:
+  - "2026-06-14-bankstatementparser-transaction-intelligence-treasury-open-source-2026"
+
+signed: true

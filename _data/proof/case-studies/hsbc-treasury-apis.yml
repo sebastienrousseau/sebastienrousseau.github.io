@@ -1,0 +1,49 @@
+slug: hsbc-treasury-apis
+title: "HSBC Treasury APIs — payments and Banking-as-a-Service"
+banner: "https://cloudcdn.pro/stocks/images/hsbc-treasury.webp"
+banner_alt: "Tier-1 commercial bank trading floor — symbolising the treasury API platform shipped under HSBC's Commercial &amp; Investment Bank programme"
+role: "Senior product / technology lead"
+period: "Multi-year programme at HSBC Commercial & Investment Bank"
+status: "Live in production at a Tier-1 global bank"
+
+# NDA scope: describe scope and engineering shape, not internal commercial
+# numbers we are not free to disclose. External validators below stay
+# verifiable: public role / public LinkedIn record / public bank disclosures.
+problem: >
+  Corporate treasury teams demand programmable access to cash management,
+  liquidity, and payments rails inside a Tier-1 bank — without giving up
+  the regulatory evidence layer the bank itself has to produce.
+
+what_i_built: >
+  Led product and technology workstreams for HSBC's treasury APIs and
+  Banking-as-a-Service programme inside the Commercial & Investment Bank,
+  shipping production payment, balance, and liquidity APIs against the
+  bank's regulatory perimeter. Worked across architecture, vendor
+  integration, supervisory evidence, and the operational-resilience
+  controls that DORA and SR 11-7 now mandate.
+
+# Engineering rigour — described, not quantified with internal numbers.
+rigour:
+  - metric: "Role scope"
+    value: "Senior product / technology leadership inside CIB"
+  - metric: "Regulatory perimeter"
+    value: "FCA / PRA-regulated payments platform"
+  - metric: "Integration surface"
+    value: "Treasury APIs, balance / cash management, BaaS distribution"
+  - metric: "Audience"
+    value: "Corporate treasurers at multinational and Tier-2 banks"
+
+validation:
+  - "Public role at HSBC Commercial & Investment Bank — verifiable via LinkedIn"
+  - "Programme scope referenced in About / Experience section"
+
+# No standards block — programme spans many internal standards we are not
+# free to enumerate publicly.
+
+links:
+  bank: "https://www.hsbc.com/"
+  linkedin: "https://www.linkedin.com/in/sebastienrousseau/"
+
+related_articles: []
+
+signed: true

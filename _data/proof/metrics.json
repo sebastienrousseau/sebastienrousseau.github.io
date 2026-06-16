@@ -1,0 +1,40 @@
+{
+  "$generated_at": "2026-06-16T16:57:06+00:00",
+  "stats": [
+    {
+      "key": "years_payments",
+      "label": "Years in payments and banking technology",
+      "value": 19,
+      "format": "plain",
+      "source": "About page — HSBC / PayPal / Barclays / Shazam / AKQA / Virgin Group"
+    },
+    {
+      "key": "articles_signed",
+      "label": "Signed, dated articles published",
+      "value": 73,
+      "format": "plain",
+      "source": "_posts/ — every article Sigstore-signed"
+    },
+    {
+      "key": "downloads_total",
+      "label": "Open-source package downloads (PyPI + crates.io)",
+      "value": 167823,
+      "format": "compact",
+      "source": "pypistats.org + crates.io"
+    },
+    {
+      "key": "github_stars",
+      "label": "GitHub stars across owned repositories",
+      "value": 676,
+      "format": "compact",
+      "source": "api.github.com/users/sebastienrousseau/repos"
+    },
+    {
+      "key": "github_forks",
+      "label": "GitHub forks across owned repositories",
+      "value": 110,
+      "format": "compact",
+      "source": "api.github.com/users/sebastienrousseau/repos"
+    }
+  ]
+}
