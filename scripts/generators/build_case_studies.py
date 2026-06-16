@@ -133,7 +133,7 @@ def _render_links(links: dict[str, str]) -> str:
         return ""
     order = (
         "repo", "site", "pypi", "crates", "docs", "stats",
-        "qtonic_evaluation", "bank", "linkedin",
+        "qtonic_evaluation", "qgram_adopter", "bank", "linkedin",
     )
     label_map = {
         "repo": "GitHub repository",
@@ -143,6 +143,7 @@ def _render_links(links: dict[str, str]) -> str:
         "docs": "Docs.rs",
         "stats": "PyPI download stats",
         "qtonic_evaluation": "Qtonic Quantum Lab independent evaluation",
+        "qgram_adopter": "QGram (Quantum2pi) — KyberLib adopter",
         "bank": "HSBC",
         "linkedin": "LinkedIn",
     }

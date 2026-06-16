@@ -36,6 +36,7 @@ validation:
   - "Featured in the 2026-06-12 article: KyberLib and the Post-Quantum Banking Migration"
   - "Aligned to NIST FIPS 203 / 204 / 205 publication track"
   - "Evaluated by Qtonic Quantum Lab — independent post-quantum cryptography evaluation registry, ~182 PQC libraries assessed (top 44%, no vendor pay-for-inclusion)"
+  - "Adopted by QGram (Quantum2pi) — a post-quantum end-to-end-encrypted peer-to-peer messenger that uses KyberLib for message encryption (verifiable at f6s.com/software/qgram)"
 
 standards:
   - "FIPS 203 (ML-KEM)"
@@ -47,6 +48,7 @@ links:
   crates: "https://crates.io/crates/kyberlib"
   docs: "https://docs.rs/kyberlib"
   qtonic_evaluation: "https://qtonicquantum.com/lab/solutions/kyberlib"
+  qgram_adopter: "https://www.f6s.com/software/qgram"
 
 related_articles:
   - "2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026"
