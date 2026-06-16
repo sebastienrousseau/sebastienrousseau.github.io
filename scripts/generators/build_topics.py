@@ -321,6 +321,26 @@ _OG_DESC_RE = re.compile(r'(<meta\s+property="og:description"\s+content=")[^"]*(
 _OG_URL_RE = re.compile(r'(<meta\s+property="og:url"\s+content=")[^"]*(")', re.IGNORECASE)
 _CANONICAL_RE = re.compile(r'(<link\s+rel="canonical"\s+href=")[^"]*(")', re.IGNORECASE)
 _NEWSROOM_RE = re.compile(r'<section class="newsroom">[\s\S]*?</section>', re.IGNORECASE)
+# After the editorial-overhaul, /articles/ no longer has `<section class="newsroom">`.
+# Instead its <main> body is a `<div class="wrap report-wrap">…</div>` containing
+# the FT-tier hero + filter form + card list. The topics generator swaps the
+# whole wrap-div in that case so topics don't end up cloning the articles
+# listing wholesale.
+_MAIN_WRAP_RE = re.compile(
+    r'(<main\b[^>]*>\s*)<div class="wrap[^"]*">[\s\S]*?</div>(\s*</main>)',
+    re.IGNORECASE,
+)
+
+
+def _swap_main_body(shell: str, body: str) -> str:
+    """Swap the listing body inside the shell's <main>. Tries the legacy
+    `<section class="newsroom">` swap first (no-op now since /articles/
+    moved off newsroom markup), then falls back to replacing the entire
+    `<main>`'s wrap-div with the topics body."""
+    out, n = _NEWSROOM_RE.subn(body, shell, count=1)
+    if n:
+        return out
+    return _MAIN_WRAP_RE.sub(rf'\1<div class="wrap report-wrap">{body}</div>\2', shell, count=1)
 _LDJSON_BLOCKS_RE = re.compile(
     r'<script type="application/ld\+json">[\s\S]*?</script>', re.IGNORECASE
 )
@@ -450,7 +470,7 @@ def render_topic(slug: str, spec: dict[str, object], shell: str) -> tuple[str, s
     ldjson = _build_topic_jsonld(slug, title, lede, slugs, post_titles)
 
     out = _strip_extra_jsonld(shell)
-    out = _NEWSROOM_RE.sub(body, out, count=1)
+    out = _swap_main_body(out, body)
 
     page_title = f"{title} — Sebastien Rousseau"
     out = _TITLE_RE.sub(f"<title>{html.escape(page_title)}</title>", out, count=1)
@@ -514,7 +534,7 @@ def render_hub(shell: str) -> tuple[str, str]:
         "</section>"
     )
     out = _strip_extra_jsonld(shell)
-    out = _NEWSROOM_RE.sub(body, out, count=1)
+    out = _swap_main_body(out, body)
     title = "Topics — Sebastien Rousseau"
     desc = "Curated topic clusters covering post-quantum cryptography, ISO 20022, applied AI in banking, Rust open source, and digital assets."
     out = _TITLE_RE.sub(f"<title>{html.escape(title)}</title>", out, count=1)
