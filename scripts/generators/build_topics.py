@@ -168,6 +168,137 @@ TOPICS: dict[str, dict[str, object]] = {
             "2018-01-01-bitcoin-the-year-in-review",
         ],
     },
+    "agentic-ai-banking": {
+        "title": "Agentic AI in Banking",
+        "banner": "https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp",
+        "lede": (
+            "Agent control planes, deterministic semantic routing, OPA policy "
+            "gates, immutable WORM audit logs, and the SR 11-7 / SS1/23 model-risk "
+            "lens that turns autonomous workflows into supervisory-ready evidence."
+        ),
+        "slugs": [
+            "2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026",
+            "2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026",
+            "2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026",
+            "2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026",
+            "2026-05-17-agentic-engineering-banks-blueprint-2026",
+        ],
+    },
+    "treasury-automation": {
+        "title": "Treasury Automation",
+        "banner": "https://cloudcdn.pro/stocks/images/tyler-prahm-lmV3gJSAgbo.webp",
+        "lede": (
+            "Programmable liquidity, autonomous treasury, ISO 20022 payment "
+            "engines, and the open-source toolkits that turn CAMT / pacs.008 / "
+            "MT940 / pain.001 into auditable, board-grade transaction "
+            "intelligence for corporate treasury teams."
+        ),
+        "slugs": [
+            "2026-06-15-pacs008-automation-iso-20022-interbank-payments-2026",
+            "2026-06-14-bankstatementparser-transaction-intelligence-treasury-open-source-2026",
+            "2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026",
+            "2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026",
+            "2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001",
+        ],
+    },
+    "operational-resilience-dora": {
+        "title": "Operational Resilience & DORA",
+        "banner": "https://cloudcdn.pro/stocks/images/freeman-zhou-oV9hp8wXkPE.webp",
+        "lede": (
+            "DORA Article 5 board accountability, BCBS 239 risk-data aggregation, "
+            "third-party concentration risk, exit testing, and the engineering "
+            "controls that turn operational resilience from a compliance project "
+            "into a supervisor-ready scoreboard."
+        ),
+        "slugs": [
+            "2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026",
+            "2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026",
+            "2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026",
+            "2026-05-16-best-cloud-infrastructure-architecture-2026",
+        ],
+    },
+    "stablecoins-tokenisation": {
+        "title": "Stablecoins & Tokenisation",
+        "banner": "https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp",
+        "lede": (
+            "Tokenised deposits, money-market funds, wholesale CBDC pilots, "
+            "BlackRock's BRSRV/BSTBL, the GENIUS Act, and the engineering choices "
+            "behind making programmable money work inside regulated balance "
+            "sheets."
+        ),
+        "slugs": [
+            "2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026",
+            "2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026",
+            "2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026",
+            "2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026",
+            "2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026",
+            "2026-05-21-tokenised-deposits-banking-services-status-2026",
+            "2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf",
+        ],
+    },
+    "generative-ai-llms": {
+        "title": "Generative AI & LLMs",
+        "banner": "https://cloudcdn.pro/stocks/images/hector-j-rivas-1FxMET2U5dU-unsplash.webp",
+        "lede": (
+            "Foundation models, multimodal LLMs (Gemini, Gemma, Mistral, MM1), "
+            "prompt engineering, and the open-source releases that shape what "
+            "banks can build inside their own data perimeter."
+        ),
+        "slugs": [
+            "2024-03-18-advancing-ai-with-multimodal-llms-insights-from-mm1",
+            "2024-03-04-le-chat-by-mistral-ai-a-new-era-in-conversational-ai",
+            "2024-02-26-google-gemma-ai-transforming-open-source-ai-development",
+            "2024-02-19-unlocking-gemini-google-ai-revolution-explained",
+            "2024-01-23-advancements-in-ai-prompt-engineering",
+            "2024-01-01-ai-trends-2024-insights-and-predictions-for-the-future",
+            "2023-11-12-exploring-generative-ai",
+        ],
+    },
+    "voice-speech-ai": {
+        "title": "Voice & Speech AI",
+        "banner": "https://cloudcdn.pro/stocks/images/akande-voice-assistant-office.webp",
+        "lede": (
+            "Voice cloning, real-time speech recognition (Whisper), executive "
+            "voice assistants, and the audio-intelligence stack reshaping the "
+            "private-banking client experience."
+        ),
+        "slugs": [
+            "2024-04-01-openvoice-leading-innovation-in-voice-cloning-technology",
+            "2024-03-12-revolutionising-real-time-speech-recognition-on-macos-with-openai-whisper",
+            "2024-02-12-akande-voice-assistant-revolutionising-personal-and-executive-assistance",
+            "2024-01-29-ai-powered-audio-insights-analysis-translations",
+        ],
+    },
+    "ai-governance-regulation": {
+        "title": "AI Governance & Regulation",
+        "banner": "https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp",
+        "lede": (
+            "EU AI Act conformity, SR 11-7 model risk, board-level accountability, "
+            "auditability of autonomous workflows, and the regulatory frame for "
+            "AI inside Tier-1 banks."
+        ),
+        "slugs": [
+            "2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026",
+            "2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026",
+            "2024-02-13-eus-ai-act-shaping-the-future-of-global-ai-regulation",
+        ],
+    },
+    "wholesale-payments-rails": {
+        "title": "Wholesale Payments Rails",
+        "banner": "https://cloudcdn.pro/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp",
+        "lede": (
+            "Multi-rail strategy across cards, A2A, RTP, FedNow, open banking, "
+            "and stablecoin corridors. Wholesale economics, settlement finality, "
+            "and the BIS Project Agorá cross-border atomicity model."
+        ),
+        "slugs": [
+            "2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026",
+            "2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026",
+            "2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026",
+            "2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026",
+            "2026-05-19-global-wholesale-payments-economics-2026",
+        ],
+    },
 }
 
 
