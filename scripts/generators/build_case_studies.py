@@ -131,7 +131,10 @@ def _render_list(heading: str, items: list[str], css_class: str) -> str:
 def _render_links(links: dict[str, str]) -> str:
     if not links:
         return ""
-    order = ("repo", "site", "pypi", "crates", "docs", "stats", "bank", "linkedin")
+    order = (
+        "repo", "site", "pypi", "crates", "docs", "stats",
+        "qtonic_evaluation", "bank", "linkedin",
+    )
     label_map = {
         "repo": "GitHub repository",
         "site": "Project site",
@@ -139,6 +142,7 @@ def _render_links(links: dict[str, str]) -> str:
         "crates": "crates.io",
         "docs": "Docs.rs",
         "stats": "PyPI download stats",
+        "qtonic_evaluation": "Qtonic Quantum Lab independent evaluation",
         "bank": "HSBC",
         "linkedin": "LinkedIn",
     }

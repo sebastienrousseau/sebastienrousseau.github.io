@@ -35,6 +35,7 @@ validation:
   - "Cited in EPAA Quantum-Safe Payments white paper (September 2025)"
   - "Featured in the 2026-06-12 article: KyberLib and the Post-Quantum Banking Migration"
   - "Aligned to NIST FIPS 203 / 204 / 205 publication track"
+  - "Evaluated by Qtonic Quantum Lab — independent post-quantum cryptography evaluation registry, ~182 PQC libraries assessed (top 44%, no vendor pay-for-inclusion)"
 
 standards:
   - "FIPS 203 (ML-KEM)"
@@ -45,6 +46,7 @@ links:
   repo: "https://github.com/sebastienrousseau/kyberlib"
   crates: "https://crates.io/crates/kyberlib"
   docs: "https://docs.rs/kyberlib"
+  qtonic_evaluation: "https://qtonicquantum.com/lab/solutions/kyberlib"
 
 related_articles:
   - "2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026"
