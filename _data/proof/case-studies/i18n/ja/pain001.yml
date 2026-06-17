@@ -1,0 +1,48 @@
+title: "pain001 — ISO 20022 決済ファイルの自動化"
+banner_alt: "夕暮れの航空都市景観 — グローバルなクリアリング・ネットワーク全体における ISO 20022 構造化決済ファイル自動化を象徴"
+sector: "オープンソース・企業トレジャリー・ISO 20022"
+role: "作者およびメンテナー"
+status: "本番稼働中、継続メンテナンス"
+
+outcome_highlights:
+  - value: "pain.001"
+    label: "顧客信用振替開始 (Customer Credit Transfer Initiation)"
+  - value: "XSD-validated"
+    label: "すべてのメッセージで事前検証を実施"
+  - value: "IBAN + BIC + LEI"
+    label: "ISO 7064 Modulo 97-10 チェックサム"
+  - value: "Apache-2.0 / MIT"
+    label: "自由に利用、フォーク、監査が可能"
+
+pull_quote: >
+  「EPAA Quantum-Safe Payments ホワイトペーパー (2025 年 9 月) にて引用。
+  初日からオープンソースで監査済み — ERP とクリアリング・ネットワークの
+  間に独自仕様のトランスレーターを介在させません。」
+
+problem: >
+  グローバルな MT → MX 移行により、すべての銀行および企業トレジャリーは
+  構造化された pain.001 メッセージの生成を迫られています。多くのチームは
+  脆弱な XML を手作業で生成するか、不透明な独自仕様のトランスレーターを
+  購入しています。いずれの経路も、決済エラーをクリアリング・ネットワークへ
+  送り込み、監査証跡を残しません。
+
+what_i_built: >
+  CSV / SQLite / Parquet から検証済みの ISO 20022 pain.001 (顧客信用振替
+  開始) メッセージを生成する、オープンソースの Python ライブラリです。
+  事前 XSD 検証、IBAN / BIC チェックサム、PII マスキング、完全な XSD
+  スキーマ適合 — これらすべてを、既存の ERP およびトレジャリー・
+  パイプラインに組み込める Python ワークフローの中で提供します。
+
+rigour:
+  - metric: "対応する ISO 20022 メッセージ"
+    value: "pain.001 (顧客信用振替開始)"
+  - metric: "スキーマ適合性"
+    value: "すべてのメッセージに対する公式 XSD 検証の事前実施"
+  - metric: "提供バリデーター"
+    value: "IBAN チェックディジット、BIC、LEI チェックサム (ISO 7064 Modulo 97-10)"
+  - metric: "ライセンス"
+    value: "Apache-2.0 / MIT — 自由に利用、フォーク、監査が可能"
+
+validation:
+  - "EPAA Quantum-Safe Payments ホワイトペーパー (2025 年 9 月) にて引用"
+  - "2023 年 9 月以降、sebastienrousseau.com に公開された記事にて取り上げられました"

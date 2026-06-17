@@ -1,0 +1,47 @@
+title: "BankStatementParser — pinag-isang transaction intelligence para sa treasury"
+banner_alt: "Modernong finance office sa gabi — sumisimbolo sa pinag-isang transaction intelligence sa mga format na CAMT, MT940, OFX, at CSV ng bank statement"
+sector: "Open-source · Corporate treasury · Risk-data aggregation"
+role: "May-akda at maintainer"
+status: "Produksiyon, aktibong pinapanatili"
+
+outcome_highlights:
+  - label: "CAMT (.052/.053/.054), MT940, OFX, CSV, OCR PDF"
+  - label: "Provenance: source format at parser version naka-log"
+  - label: "Naka-align sa risk-data aggregation ng BCBS 239"
+  - label: "Libreng gamitin, i-fork, at i-audit"
+
+pull_quote: >
+  "Schema-validated na CAMT / MT940 / PAIN parsers, OCR fallback para sa
+  na-scan na mga PDF, deterministic field mapping, audit evidence sa
+  antas ng SR 11-7 — bawat transformation step ay naitala at
+  reproducible."
+
+problem: >
+  Tumatanggap ang mga corporate treasury team ng bank statement sa CAMT,
+  PAIN.001, MT940, OFX, CSV, at scanned PDF mula sa dosenang bangko.
+  Bawat format ay may sariling field semantics, encoding, at
+  ambiguity. Karamihan sa mga team ay nagtatayo ng marupok na
+  per-bank parser nang manu-mano, kaya hadlang ito sa real-time
+  cash forecasting, fraud detection, at audit-ready reconciliation.
+
+what_i_built: >
+  Isang open-source Python toolkit na nag-uunify sa bawat karaniwang
+  format ng bank statement tungo sa iisang normalised transaction
+  stream. Schema-validated na CAMT / MT940 / PAIN parsers, OCR
+  fallback para sa scanned PDF, deterministic field mapping, at
+  audit evidence sa antas ng SR 11-7 para sa bawat transformation
+  step.
+
+rigour:
+  - metric: "Mga sinusuportahang format"
+    value: "CAMT (.052, .053, .054), MT940, OFX, CSV, scanned PDF (OCR)"
+  - metric: "Normalisation target"
+    value: "Isang pinag-isang transaction record schema"
+  - metric: "Audit trail"
+    value: "Per-field provenance — source format at parser version naka-log bawat row"
+  - metric: "Lisensya"
+    value: "Apache-2.0 / MIT"
+
+validation:
+  - "Itinampok sa artikulo ng 2026-06-14: From Bank Statements to Unified Transaction Intelligence"
+  - "Idinisenyo upang tumugon sa mga rekisito ng risk-data aggregation ng BCBS 239"

@@ -1,0 +1,50 @@
+title: "pain001 — tự động hoá tệp thanh toán ISO 20022"
+banner_alt: "Cảnh thành phố nhìn từ trên cao lúc hoàng hôn — biểu trưng cho việc tự động hoá tệp thanh toán có cấu trúc theo ISO 20022 xuyên suốt các mạng thanh toán bù trừ toàn cầu"
+sector: "Mã nguồn mở · Ngân quỹ doanh nghiệp · ISO 20022"
+role: "Tác giả và người duy trì dự án"
+status: "Đang vận hành thực tế, được duy trì tích cực"
+
+outcome_highlights:
+  - value: "pain.001"
+    label: "Khởi tạo lệnh chuyển tiền khách hàng"
+  - value: "XSD-validated"
+    label: "Kiểm tra trước cho mọi thông điệp"
+  - value: "IBAN + BIC + LEI"
+    label: "Tổng kiểm tra ISO 7064 Modulo 97-10"
+  - value: "Apache-2.0 / MIT"
+    label: "Miễn phí sử dụng, sao chép, kiểm toán"
+
+pull_quote: >
+  "Được trích dẫn trong sách trắng EPAA Quantum-Safe Payments (tháng 9
+  năm 2025). Mã nguồn mở, được kiểm toán ngay từ ngày đầu — không có
+  trình chuyển đổi độc quyền nào nằm giữa hệ thống ERP và mạng thanh
+  toán bù trừ."
+
+problem: >
+  Quá trình chuyển đổi toàn cầu từ MT sang MX buộc mọi ngân hàng và bộ
+  phận ngân quỹ doanh nghiệp phải tạo ra các thông điệp pain.001 có
+  cấu trúc. Phần lớn các nhóm tự viết tay XML dễ vỡ hoặc mua trình
+  chuyển đổi độc quyền mờ đục. Cả hai con đường đều đẩy lỗi thanh toán
+  vào mạng bù trừ và không để lại dấu vết kiểm toán nào.
+
+what_i_built: >
+  Một thư viện Python mã nguồn mở sinh ra các thông điệp pain.001
+  (Customer Credit Transfer Initiation) ISO 20022 đã được xác thực từ
+  CSV / SQLite / Parquet. Kiểm tra XSD trước khi gửi, tổng kiểm tra
+  IBAN / BIC, che dữ liệu cá nhân và tuân thủ đầy đủ lược đồ XSD — tất
+  cả nằm trong một quy trình Python tích hợp được vào các đường ống
+  ERP và ngân quỹ hiện có.
+
+rigour:
+  - metric: "Thông điệp ISO 20022 hỗ trợ"
+    value: "pain.001 (Customer Credit Transfer Initiation)"
+  - metric: "Tuân thủ lược đồ"
+    value: "Xác thực XSD chính thức trước khi gửi cho mọi thông điệp"
+  - metric: "Bộ xác thực được triển khai"
+    value: "Tổng kiểm tra IBAN, BIC và LEI (ISO 7064 Modulo 97-10)"
+  - metric: "Giấy phép"
+    value: "Apache-2.0 / MIT — miễn phí sử dụng, sao chép, kiểm toán"
+
+validation:
+  - "Được trích dẫn trong sách trắng EPAA Quantum-Safe Payments (tháng 9 năm 2025)"
+  - "Được giới thiệu trong các bài viết đăng trên sebastienrousseau.com từ tháng 9 năm 2023"

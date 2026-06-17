@@ -1,0 +1,46 @@
+title: "APIs de Tesouraria do HSBC — pagamentos e Banking-as-a-Service"
+banner_alt: "Skyline da City de Londres — simbolizando a plataforma de APIs de tesouraria entregue no programa do Commercial & Investment Bank do HSBC"
+sector: "Banco comercial Tier-1 · Tesouraria corporativa · Pagamentos regulados"
+role: "Líder sênior de produto / tecnologia"
+status: "Em produção em um banco global Tier-1"
+
+outcome_highlights:
+  - label: "Banco global, Commercial & Investment Bank"
+  - label: "Perímetro de pagamentos regulado"
+  - label: "Caixa programável, liquidez e trilhos de pagamentos"
+  - label: "Liderança sênior de produto + tecnologia"
+
+pull_quote: >
+  "Entreguei em produção APIs de pagamento, saldo e liquidez dentro do
+  perímetro regulatório do banco — abrangendo arquitetura, integração
+  de fornecedores, evidência supervisória e os controles de resiliência
+  operacional que DORA e SR 11-7 agora exigem."
+
+problem: >
+  As equipes de tesouraria corporativa exigem acesso programável a
+  gestão de caixa, liquidez e trilhos de pagamentos dentro de um
+  banco Tier-1 — sem abrir mão da camada de evidência regulatória
+  que o próprio banco precisa produzir.
+
+what_i_built: >
+  Liderei os workstreams de produto e tecnologia para as APIs de
+  tesouraria e o programa de Banking-as-a-Service do HSBC dentro do
+  Commercial & Investment Bank, entregando em produção APIs de
+  pagamento, saldo e liquidez dentro do perímetro regulatório do
+  banco. Atuei em arquitetura, integração de fornecedores, evidência
+  supervisória e nos controles de resiliência operacional que DORA e
+  SR 11-7 agora exigem.
+
+rigour:
+  - metric: "Escopo do papel"
+    value: "Liderança sênior de produto / tecnologia dentro do CIB"
+  - metric: "Perímetro regulatório"
+    value: "Plataforma de pagamentos regulada pela FCA / PRA"
+  - metric: "Superfície de integração"
+    value: "APIs de tesouraria, gestão de saldos / caixa, distribuição BaaS"
+  - metric: "Público"
+    value: "Tesoureiros corporativos em multinacionais e bancos Tier-2"
+
+validation:
+  - "Papel público no HSBC Commercial & Investment Bank — verificável via LinkedIn"
+  - "Escopo do programa referenciado na seção Sobre / Experiência"

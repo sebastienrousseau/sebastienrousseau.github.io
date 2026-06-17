@@ -302,6 +302,56 @@ TOPICS: dict[str, dict[str, object]] = {
 }
 
 
+# Pillar grouping for the /topics/ hub. Each pillar has a name + one-line
+# lede; the 14 topics fall under exactly one pillar. Apple-HIG principle:
+# selective, well-grouped choices reduce hesitation. Edit the mapping
+# below when the taxonomy shifts.
+PILLARS: list[dict[str, object]] = [
+    {
+        "slug": "cryptography-resilience",
+        "name": "Cryptography & resilience",
+        "lede": "Post-quantum migration, DORA-grade operational resilience, and the governance framework around AI in financial services.",
+        "topics": [
+            "post-quantum-cryptography",
+            "operational-resilience-dora",
+            "ai-governance-regulation",
+        ],
+    },
+    {
+        "slug": "payments-money",
+        "name": "Payments & money",
+        "lede": "ISO 20022 migration, wholesale settlement, stablecoins, tokenised deposits, and the corporate treasury function around them.",
+        "topics": [
+            "iso-20022-payments",
+            "wholesale-payments-rails",
+            "stablecoins-tokenisation",
+            "treasury-automation",
+        ],
+    },
+    {
+        "slug": "ai-cloud",
+        "name": "AI & cloud",
+        "lede": "Applied AI, agentic systems, generative models, voice and speech AI — and the cloud-native banking platforms that host them.",
+        "topics": [
+            "applied-ai-banking",
+            "agentic-ai-banking",
+            "generative-ai-llms",
+            "voice-speech-ai",
+            "cloud-native-banking",
+        ],
+    },
+    {
+        "slug": "open-source-craft",
+        "name": "Open source & craft",
+        "lede": "Rust libraries, blockchain primitives, and the open-source engineering discipline behind them.",
+        "topics": [
+            "rust-open-source",
+            "blockchain-digital-assets",
+        ],
+    },
+]
+
+
 def read_frontmatter(slug: str) -> dict[str, str]:
     """Parse a post's YAML frontmatter into a flat dict. Returns {} if
     the slug doesn't resolve to a file — callers warn/exit on that case."""
@@ -621,48 +671,89 @@ def render_topic(slug: str, spec: dict[str, object], shell: str) -> tuple[str, s
     return f"topics/{slug}/index.html", out
 
 
-def render_hub(shell: str) -> tuple[str, str]:
-    """Topic-hub page: /topics/index.html listing every topic."""
-    cards: list[str] = []
-    for slug, spec in TOPICS.items():
-        title = html.escape(str(spec["title"]))
-        lede = html.escape(str(spec["lede"]))
-        banner = html.escape(str(spec.get("banner") or ""))
-        count = len(spec["slugs"])  # type: ignore[arg-type]
-        url = f"/topics/{slug}/index.html"
-        if banner:
-            media = (
-                f'<a class="newsroom-card-media" href="{url}" aria-label="{title}">'
-                f'<img src="{banner}" alt="{title} — topic banner" '
-                f'loading="lazy" decoding="async" '
-                f'width="800" height="800"></a>'
-            )
-        else:
-            media = (
-                f'<a class="newsroom-card-media" href="{url}" aria-label="{title}" '
-                'style="background:linear-gradient(135deg,var(--cl-grey-100,#f1f3f7),var(--cl-grey-200,#e3e6ed));aspect-ratio:1/1"></a>'
-            )
-        cards.append(
-            '<article class="newsroom-card">' + media + '<div class="newsroom-card-body">'
-            '<span class="newsroom-eyebrow">PILLAR · TOPIC</span>'
-            f'<h3><a href="{url}">{title}</a></h3>'
-            f'<p class="newsroom-excerpt">{lede}</p>'
-            f'<p class="newsroom-meta">{count} article(s)</p>'
-            "</div>"
-            "</article>"
+def _render_topic_card(topic_slug: str) -> str:
+    """Render a single topic card for the hub. Returns empty string if
+    the slug is missing from TOPICS — surfaces a build warning instead."""
+    spec = TOPICS.get(topic_slug)
+    if not spec:
+        sys.stderr.write(f"build_topics: PILLARS references unknown topic {topic_slug!r}\n")
+        return ""
+    title = html.escape(str(spec["title"]))
+    lede = html.escape(str(spec["lede"]))
+    banner = html.escape(str(spec.get("banner") or ""))
+    count = len(spec["slugs"])  # type: ignore[arg-type]
+    url = f"/topics/{topic_slug}/index.html"
+    if banner:
+        media = (
+            f'<a class="newsroom-card-media" href="{url}" aria-label="{title}">'
+            f'<img src="{banner}" alt="{title} — topic banner" '
+            f'loading="lazy" decoding="async" '
+            f'width="800" height="800"></a>'
         )
+    else:
+        media = (
+            f'<a class="newsroom-card-media" href="{url}" aria-label="{title}" '
+            'style="background:linear-gradient(135deg,var(--cl-grey-100,#f1f3f7),var(--cl-grey-200,#e3e6ed));aspect-ratio:1/1"></a>'
+        )
+    return (
+        '<article class="newsroom-card">' + media + '<div class="newsroom-card-body">'
+        '<span class="newsroom-eyebrow">PILLAR · TOPIC</span>'
+        f'<h3><a href="{url}">{title}</a></h3>'
+        f'<p class="newsroom-excerpt">{lede}</p>'
+        f'<p class="newsroom-meta">{count} article(s)</p>'
+        "</div>"
+        "</article>"
+    )
+
+
+def render_hub(shell: str) -> tuple[str, str]:
+    """Topic-hub page: /topics/index.html grouped by pillar."""
+    total_topics = sum(len(p["topics"]) for p in PILLARS)  # type: ignore[arg-type]
+    total_articles = sum(len(spec["slugs"]) for spec in TOPICS.values())  # type: ignore[arg-type]
+
+    # Pillar groups — each pillar gets a header + a 3-up card grid.
+    pillar_sections: list[str] = []
+    for pillar in PILLARS:
+        pillar_slug = html.escape(str(pillar["slug"]))
+        pillar_name = html.escape(str(pillar["name"]))
+        pillar_lede = html.escape(str(pillar["lede"]))
+        cards = "".join(_render_topic_card(t) for t in pillar["topics"])  # type: ignore[arg-type]
+        pillar_sections.append(
+            f'<section class="topic-pillar" id="pillar-{pillar_slug}" data-reveal>'
+            '<header class="topic-pillar-head">'
+            f'<p class="newsroom-kicker">PILLAR</p>'
+            f'<h2>{pillar_name}</h2>'
+            f'<p class="topic-pillar-lede">{pillar_lede}</p>'
+            '</header>'
+            f'<div class="newsroom-grid">{cards}</div>'
+            "</section>"
+        )
+
+    # Pillar quick-nav (chips). Anchor links into each section — Apple-HIG
+    # selective navigation, no full filter UI for 14 items.
+    chips = "".join(
+        f'<a class="topic-chip" href="#pillar-{html.escape(str(p["slug"]))}">{html.escape(str(p["name"]))}</a>'
+        for p in PILLARS
+    )
+
     body = (
-        '<section class="newsroom">'
+        '<section class="newsroom topic-hub">'
         '<nav aria-label="Breadcrumb" class="topic-breadcrumb">'
         '<a href="/">Home</a> &middot; <span>Topics</span></nav>'
-        '<header class="newsroom-section-head">'
+        '<header class="newsroom-section-head topic-hub-head" data-reveal>'
         '<p class="newsroom-kicker">PILLARS</p>'
         "<h1>Topics</h1>"
-        '<p class="topic-lede">Curated topic clusters — pick a thread and follow it through the archive.</p>'
+        '<p class="topic-lede">Four pillars, fourteen topic clusters, every dated article — '
+        'pick a thread and follow it through the archive.</p>'
+        f'<nav class="topic-chips" aria-label="Jump to pillar">{chips}</nav>'
         "</header>"
-        '<h2 class="visually-hidden">All topics</h2>'
-        '<div class="newsroom-grid">' + "".join(cards) + "</div>"
-        "</section>"
+        '<section class="proof-rail topic-proof" aria-label="Topics at a glance">'
+        f'<div class="kpi-cell"><span class="kpi-cell-value">{len(PILLARS)}</span><span class="kpi-cell-label">Pillars</span></div>'
+        f'<div class="kpi-cell"><span class="kpi-cell-value">{total_topics}</span><span class="kpi-cell-label">Topic clusters</span></div>'
+        f'<div class="kpi-cell"><span class="kpi-cell-value">{total_articles}</span><span class="kpi-cell-label">Articles indexed</span></div>'
+        '</section>'
+        + "".join(pillar_sections)
+        + "</section>"
     )
     out = _strip_extra_jsonld(shell)
     out = _swap_main_body(out, body)

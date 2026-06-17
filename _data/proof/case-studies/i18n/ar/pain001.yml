@@ -1,0 +1,47 @@
+title: "pain001 — أتمتة ملفات المدفوعات وفق ISO 20022"
+banner_alt: "منظر جوي لمدينة عند الغسق — يرمز إلى أتمتة ملفات المدفوعات البنيوية وفق ISO 20022 عبر شبكات المقاصة العالمية"
+sector: "مفتوح المصدر · خزانة الشركات · ISO 20022"
+role: "المؤلف والمشرف على المشروع"
+status: "قيد الإنتاج، صيانة مستمرة"
+
+pull_quote: >
+  "مُقتبَسة في الورقة البيضاء EPAA Quantum-Safe Payments (سبتمبر 2025).
+  مفتوحة المصدر، مُدقَّقة منذ اليوم الأول — لا مُترجِم مملوك بين نظام
+  ERP لديك وشبكة المقاصة."
+
+problem: >
+  يُجبِر الترحيل العالمي من MT إلى MX كل بنك وخزانة شركة على إنتاج رسائل
+  pain.001 البنيوية. تلجأ معظم الفِرَق إلى صياغة XML هشَّة يدوياً أو شراء
+  مُترجِمات مملوكة غامضة. وكلا المسارين يُمرِّر أخطاء المدفوعات إلى
+  شبكات المقاصة ولا يترك مسار تدقيق.
+
+what_i_built: >
+  مكتبة Python مفتوحة المصدر تُولِّد رسائل pain.001 (Customer Credit
+  Transfer Initiation) وفق ISO 20022 مُتحقَّق منها انطلاقاً من CSV
+  أو SQLite أو Parquet. تحقق XSD قبلي، وفحوصات IBAN / BIC،
+  وإخفاء بيانات PII، ومطابقة كاملة لمخطَّط XSD — كل ذلك ضمن سير عمل
+  Python يندمج مع خطوط أنابيب ERP والخزانة القائمة.
+
+outcome_highlights:
+  - value: "pain.001"
+    label: "Customer Credit Transfer Initiation"
+  - value: "XSD-validated"
+    label: "تحقق قبلي على كل رسالة"
+  - value: "IBAN + BIC + LEI"
+    label: "فحوصات اختبارية ISO 7064 Modulo 97-10"
+  - value: "Apache-2.0 / MIT"
+    label: "حرة الاستخدام والاشتقاق والتدقيق"
+
+rigour:
+  - metric: "رسائل ISO 20022 المدعومة"
+    value: "pain.001 (Customer Credit Transfer Initiation)"
+  - metric: "مطابقة المخطَّط"
+    value: "تحقق XSD رسمي قبلي على كل رسالة"
+  - metric: "المُتحقِّقات المُسلَّمة"
+    value: "رقم تحقق IBAN + فحوصات BIC + LEI (ISO 7064 Modulo 97-10)"
+  - metric: "الترخيص"
+    value: "Apache-2.0 / MIT — حرة الاستخدام والاشتقاق والتدقيق"
+
+validation:
+  - "مُقتبَسة في الورقة البيضاء EPAA Quantum-Safe Payments (سبتمبر 2025)"
+  - "أُبرِزت في مقالات نُشِرت على sebastienrousseau.com منذ 2023-09"

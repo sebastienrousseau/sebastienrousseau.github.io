@@ -1,0 +1,52 @@
+title: "KyberLib — Rust 기반 프로덕션급 ML-KEM"
+banner_alt: "양자 안전 암호 키 교환 — 은행권의 FIPS 203 ML-KEM 마이그레이션을 상징"
+sector: "오픈소스 · 은행 · 표준"
+role: "저자 및 메인테이너"
+status: "프로덕션, 적극적으로 유지 관리 중"
+
+outcome_highlights:
+  - value: "FIPS 203"
+    label: "NIST 출판 트랙 정합"
+  - value: "Top 44 %"
+    label: "약 182개 PQC 라이브러리 중 상위권 (Qtonic Lab)"
+  - value: "no_std"
+    label: "HSM 및 보안 엔클레이브 내장 가능"
+  - value: "1 adopter"
+    label: "QGram (Quantum2pi) 포스트 양자 메신저"
+
+pull_quote: >
+  "독립 포스트 양자 암호 레지스트리인 Qtonic Quantum Lab의 평가를 받았으며,
+  종단 간 암호화 메시징을 위해 QGram (Quantum2pi)에 채택되었습니다.
+  두 가지 모두 본인을 거치지 않고 검증 가능합니다."
+
+problem: >
+  은행은 2026년 11월 14일 SWIFT 구조화 주소 전환과 그보다 긴 NIST
+  포스트 양자 마이그레이션 기간에 직면해 있습니다. 기존 PQC 구현은
+  정책 문서, 연구실 코드 또는 독점 HSM 블랙박스의 형태로 제공되며 —
+  결제 아키텍트가 읽고, 테스트하고, 서명할 수 있는 것은 없습니다.
+
+what_i_built: >
+  KyberLib은 FIPS 203 ML-KEM (CRYSTALS-Kyber)을 검사 가능한 Rust로
+  구현합니다. 고전-양자 하이브리드 핸드셰이크, HSM 임베딩을 위한
+  no_std 컴파일, 암호 민첩성을 갖춘 추상화 경계, 그리고 이사회가
+  불투명한 벤더 리스크를 떠안지 않고 PQC 마이그레이션을 지원하는 데
+  필요한 DORA Article 5 거버넌스 증거를 제공합니다.
+
+rigour:
+  - metric: "암호 표준"
+    value: "FIPS 203 (ML-KEM, 구 CRYSTALS-Kyber)"
+  - metric: "하이브리드 핸드셰이크 지원"
+    value: "고전 TLS + ML-KEM-768 X25519MLKEM768 모드"
+  - metric: "컴파일"
+    value: "no_std — HSM, 보안 엔클레이브, 임베디드 타깃에 내장"
+  - metric: "암호 민첩성"
+    value: "추상화 경계를 통해 API 변경 없이 알고리즘 교체 가능"
+  - metric: "라이선스"
+    value: "Apache-2.0 / MIT"
+
+validation:
+  - "EPAA 양자 안전 결제 백서에 인용됨 (2025년 9월)"
+  - "2026년 6월 12일 기사 게재: KyberLib와 포스트 양자 은행 마이그레이션"
+  - "NIST FIPS 203 / 204 / 205 출판 트랙에 정합"
+  - "Qtonic Quantum Lab의 평가 — 약 182개 PQC 라이브러리를 평가한 독립 포스트 양자 암호 평가 레지스트리 (상위 44%, 벤더 유료 등재 없음)"
+  - "QGram (Quantum2pi) 채택 — 메시지 암호화에 KyberLib를 사용하는 포스트 양자 종단 간 암호화 P2P 메신저 (f6s.com/software/qgram에서 검증 가능)"

@@ -1,0 +1,54 @@
+title: "CloudCDN — open-source blauwdruk voor de AI-native edge"
+banner_alt: "AI-native edge-infrastructuur — symbool voor de zero-trust MCP-gateway, atomaire Durable Objects-rate limiting en WebAuthn-passkeyperimeter die CloudCDN als referentie-implementatie levert"
+sector: "Open source · Edge · AI-infrastructuur"
+role: "Auteur en beheerder"
+status: "In productie, actief onderhouden"
+
+outcome_highlights:
+  - value: "3.185 tests"
+    label: "100 % dekking van regels, branches en functies"
+  - value: "SLSA L3"
+    label: "Buildherkomst + Sigstore-ondertekening"
+  - value: "42 MCP-tools"
+    label: "Elke aanroep gelogd met gestructureerd auditbewijs"
+  - value: "DORA / BCBS 239"
+    label: "Gekoppeld aan artikel 5 + aggregatie van risicogegevens"
+
+pull_quote: >
+  "Een open-source referentie-implementatie die een securityteam kan
+  lezen, forken en ondertekenen — in plaats van een marketing-pdf.
+  Atomaire Durable Objects-rate limiting, WebAuthn-perimeter en
+  SLSA L3-herkomst."
+
+problem: >
+  Naarmate AI-agents en MCP-tools op schaal edge-API's aanroepen,
+  hebben banken een perimeter nodig die autonoom verkeer aankan zonder
+  in te leveren op auditbewijs op DORA-niveau. Bestaande CDN's bieden
+  ofwel marketingteksten ofwel ondoorzichtige abonnementen — geen van
+  beide levert de referentie-implementatie die een securityteam kan
+  lezen, forken en ondertekenen.
+
+what_i_built: >
+  Een open-source, zero-trust MCP-gateway met 42 tools, atomaire
+  Durable Objects-rate limiting, WebAuthn-passkeyperimeter, getekende
+  URL's en buildherkomst op SLSA Level 3. 3.185 tests bij 100 %
+  dekking, gekoppeld aan DORA artikel 5, BCBS 239-aggregatie van
+  risicogegevens en Basel III-kapitaal voor operationeel risico.
+
+rigour:
+  - metric: "Tests"
+    value: "3.185 tests bij 100 % dekking van regels, branches en functies"
+  - metric: "Herkomst toeleveringsketen"
+    value: "Buildherkomst op SLSA Level 3 + Sigstore-ondertekening"
+  - metric: "Uitgeleverde MCP-tools"
+    value: "42 tools — elke aanroep gelogd met gestructureerd auditbewijs"
+  - metric: "Rate limiting"
+    value: "Atomaire Durable Objects (geen race conditions, geen dubbele tellingen)"
+  - metric: "Authenticatie"
+    value: "WebAuthn-passkeys + getekende URL's"
+  - metric: "Licentie"
+    value: "Apache-2.0 / MIT"
+
+validation:
+  - "Behandeld in het artikel van 2026-06-11: CloudCDN — An Open-Source Blueprint for the AI-Native Edge"
+  - "Gekoppeld aan DORA artikel 5, BCBS 239 en Basel III operationeel risico"

@@ -1,0 +1,52 @@
+title: "HSBC Treasury APIs — paiements et Banking-as-a-Service"
+banner_alt: "Skyline de la City de Londres — symbolisant la plateforme d'API de trésorerie livrée dans le cadre du programme Commercial &amp; Investment Bank de HSBC"
+sector: "Banque commerciale Tier-1 · Trésorerie d'entreprise · Paiements régulés"
+role: "Responsable senior produit / technologie"
+status: "En production dans une banque mondiale Tier-1"
+
+outcome_highlights:
+  - value: "Tier-1"
+    label: "Banque mondiale, Commercial & Investment Bank"
+  - value: "FCA / PRA"
+    label: "Périmètre de paiements régulé"
+  - value: "Trésorerie / BaaS"
+    label: "Cash programmable, liquidité, rails de paiement"
+  - value: "Pluriannuel"
+    label: "Direction senior produit et technologie"
+
+pull_quote: >
+  « Livraison en production d'API de paiement, de solde et de liquidité
+  conformes au périmètre réglementaire de la banque — couvrant
+  l'architecture, l'intégration des fournisseurs, les preuves de
+  supervision et les contrôles de résilience opérationnelle désormais
+  imposés par DORA et SR 11-7. »
+
+problem: >
+  Les équipes de trésorerie d'entreprise exigent un accès programmable
+  à la gestion de trésorerie, à la liquidité et aux rails de paiement
+  au sein d'une banque Tier-1 — sans renoncer à la couche de preuves
+  réglementaires que la banque elle-même doit produire.
+
+what_i_built: >
+  Direction des chantiers produit et technologie pour les API de
+  trésorerie et le programme Banking-as-a-Service de HSBC au sein de
+  Commercial & Investment Bank, avec livraison en production d'API de
+  paiement, de solde et de liquidité conformes au périmètre
+  réglementaire de la banque. Intervention transverse sur l'architecture,
+  l'intégration des fournisseurs, les preuves de supervision et les
+  contrôles de résilience opérationnelle désormais imposés par DORA et
+  SR 11-7.
+
+rigour:
+  - metric: "Périmètre du rôle"
+    value: "Direction senior produit / technologie au sein de CIB"
+  - metric: "Périmètre réglementaire"
+    value: "Plateforme de paiements régulée FCA / PRA"
+  - metric: "Surface d'intégration"
+    value: "API de trésorerie, gestion de solde / cash, distribution BaaS"
+  - metric: "Audience"
+    value: "Trésoriers d'entreprise dans les multinationales et banques Tier-2"
+
+validation:
+  - "Rôle public chez HSBC Commercial & Investment Bank — vérifiable via LinkedIn"
+  - "Périmètre du programme référencé dans la section About / Expérience"

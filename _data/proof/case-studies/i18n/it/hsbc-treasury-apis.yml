@@ -1,0 +1,50 @@
+title: "API di tesoreria HSBC — pagamenti e Banking-as-a-Service"
+banner_alt: "Skyline della City di Londra — a simboleggiare la piattaforma di API di tesoreria rilasciata nell'ambito del programma Commercial &amp; Investment Bank di HSBC"
+sector: "Banca commerciale Tier-1 · Tesoreria aziendale · Pagamenti regolamentati"
+role: "Responsabile senior prodotto / tecnologia"
+status: "In produzione presso una banca globale Tier-1"
+
+outcome_highlights:
+  - value: "Tier-1"
+    label: "Banca globale, Commercial & Investment Bank"
+  - value: "FCA / PRA"
+    label: "Perimetro dei pagamenti regolamentato"
+  - value: "Tesoreria / BaaS"
+    label: "Cassa programmabile, liquidità, binari di pagamento"
+  - value: "Pluriennale"
+    label: "Leadership senior di prodotto e tecnologia"
+
+pull_quote: >
+  «Rilasciate in produzione API di pagamento, saldo e liquidità sul
+  perimetro regolamentare della banca — coprendo architettura,
+  integrazione fornitori, evidenze di vigilanza e i controlli di
+  resilienza operativa che DORA e SR 11-7 oggi impongono.»
+
+problem: >
+  I team di tesoreria aziendale richiedono accesso programmabile alla
+  gestione della cassa, alla liquidità e ai binari di pagamento
+  all'interno di una banca Tier-1 — senza rinunciare al livello di
+  evidenza regolamentare che la banca stessa deve produrre.
+
+what_i_built: >
+  Ho guidato i flussi di lavoro di prodotto e tecnologia per le API di
+  tesoreria di HSBC e il programma Banking-as-a-Service all'interno del
+  Commercial & Investment Bank, rilasciando in produzione API di
+  pagamento, saldo e liquidità sul perimetro regolamentare della banca.
+  Ho lavorato su architettura, integrazione fornitori, evidenze di
+  vigilanza e i controlli di resilienza operativa che DORA e SR 11-7
+  oggi impongono.
+
+rigour:
+  - metric: "Ambito del ruolo"
+    value: "Leadership senior di prodotto / tecnologia all'interno di CIB"
+  - metric: "Perimetro regolamentare"
+    value: "Piattaforma di pagamenti regolamentata da FCA / PRA"
+  - metric: "Superficie di integrazione"
+    value: "API di tesoreria, gestione di saldi e cassa, distribuzione BaaS"
+  - metric: "Pubblico"
+    value: "Tesorieri aziendali presso multinazionali e banche Tier-2"
+
+validation:
+  - "Ruolo pubblico presso HSBC Commercial & Investment Bank — verificabile tramite LinkedIn"
+  - "Ambito del programma richiamato nella sezione Chi sono / Esperienza"

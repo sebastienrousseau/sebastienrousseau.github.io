@@ -1,0 +1,55 @@
+title: "CloudCDN — open-source plán pro edge nativně připravený na AI"
+banner_alt: "Edge infrastruktura nativně připravená na AI — symbolizuje zero-trust MCP bránu, atomické omezování rychlosti přes Durable Objects a perimetr s WebAuthn passkeys, který CloudCDN dodává jako referenční implementaci"
+sector: "Open-source · Edge · AI infrastruktura"
+role: "Autor a správce projektu"
+status: "Produkční nasazení, aktivně udržováno"
+
+outcome_highlights:
+  - value: "3,185 tests"
+    label: "100% pokrytí řádků, větví a funkcí"
+  - value: "SLSA L3"
+    label: "Důkaz původu sestavení + podepsání Sigstore"
+  - value: "42 MCP tools"
+    label: "Každé volání auditně logováno se strukturovanými důkazy"
+  - value: "DORA / BCBS 239"
+    label: "Mapováno na článek 5 + agregaci rizikových dat"
+
+pull_quote: >
+  "Open-source referenční implementace, kterou si bezpečnostní tým může
+  přečíst, forkovat a podepsat — místo marketingového PDF. Atomické
+  omezování rychlosti přes Durable Objects, perimetr s WebAuthn, důkaz
+  původu SLSA L3."
+
+problem: >
+  S tím, jak AI agenti a MCP nástroje začínají ve velkém volat edge API,
+  potřebují banky perimetr, který přežije autonomní provoz, aniž by
+  obětoval auditní důkazy úrovně DORA. Stávající CDN nabízejí buď
+  marketingová prohlášení, nebo neprůhledné plány — ani jedno nevytvoří
+  referenční implementaci, kterou by si bezpečnostní tým mohl přečíst,
+  forkovat a podepsat.
+
+what_i_built: >
+  Open-source zero-trust MCP brána se 42 nástroji, atomickým omezováním
+  rychlosti přes Durable Objects, perimetrem s WebAuthn passkeys,
+  podepsanými URL a důkazem původu sestavení na úrovni SLSA Level 3.
+  3 185 testů se 100% pokrytím, mapováno na DORA článek 5, agregaci
+  rizikových dat BCBS 239 a kapitálové požadavky Basel III na
+  operační riziko.
+
+rigour:
+  - metric: "Testy"
+    value: "3 185 testů se 100% pokrytím řádků, větví a funkcí"
+  - metric: "Důkaz původu dodavatelského řetězce"
+    value: "Důkaz původu sestavení SLSA Level 3 + podepsání Sigstore"
+  - metric: "Dodané MCP nástroje"
+    value: "42 nástrojů — každé volání auditně logováno se strukturovanými důkazy"
+  - metric: "Omezování rychlosti"
+    value: "Atomické Durable Objects (žádné race conditions, žádné dvojí započtení)"
+  - metric: "Autentizace"
+    value: "WebAuthn passkeys + podepsané URL"
+  - metric: "Licence"
+    value: "Apache-2.0 / MIT"
+
+validation:
+  - "Představeno v článku z 11. 6. 2026: CloudCDN — An Open-Source Blueprint for the AI-Native Edge"
+  - "Mapováno na DORA článek 5, BCBS 239, operační riziko Basel III"

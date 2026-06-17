@@ -1,0 +1,46 @@
+title: "HSBC 트레저리 API — 결제 및 Banking-as-a-Service"
+banner_alt: "런던 시티 스카이라인 — HSBC Commercial & Investment Bank 프로그램 하에 출시된 트레저리 API 플랫폼을 상징"
+sector: "Tier-1 상업은행 · 기업 트레저리 · 규제 대상 결제"
+role: "시니어 프로덕트 / 기술 리드"
+status: "Tier-1 글로벌 은행에서 프로덕션 운영 중"
+
+outcome_highlights:
+  - value: "Tier-1"
+    label: "글로벌 은행, Commercial & Investment Bank"
+  - value: "FCA / PRA"
+    label: "규제 대상 결제 경계"
+  - value: "Treasury / BaaS"
+    label: "프로그래머블 현금, 유동성, 결제 레일"
+  - value: "Multi-year"
+    label: "시니어 프로덕트 + 기술 리더십"
+
+pull_quote: >
+  "은행의 규제 경계에 대응하는 프로덕션 결제, 잔액, 유동성 API를
+  출시 — 아키텍처, 벤더 통합, 감독 증거, 그리고 DORA와 SR 11-7이
+  현재 의무화하는 운영 복원력 통제 전반에 걸쳐 진행했습니다."
+
+problem: >
+  기업 트레저리 팀은 Tier-1 은행 내부의 현금 관리, 유동성, 결제 레일에
+  대한 프로그래머블 액세스를 요구합니다 — 동시에 은행 자체가 생산해야
+  하는 규제 증거 계층을 포기하지 않으면서 말입니다.
+
+what_i_built: >
+  HSBC Commercial & Investment Bank 내부에서 트레저리 API와
+  Banking-as-a-Service 프로그램의 프로덕트 및 기술 워크스트림을
+  이끌며, 은행의 규제 경계에 대응하는 프로덕션 결제, 잔액, 유동성
+  API를 출시했습니다. 아키텍처, 벤더 통합, 감독 증거, 그리고 DORA와
+  SR 11-7이 현재 의무화하는 운영 복원력 통제 전반에 걸쳐 작업했습니다.
+
+rigour:
+  - metric: "역할 범위"
+    value: "CIB 내부의 시니어 프로덕트 / 기술 리더십"
+  - metric: "규제 경계"
+    value: "FCA / PRA 규제 대상 결제 플랫폼"
+  - metric: "통합 표면"
+    value: "트레저리 API, 잔액 / 현금 관리, BaaS 유통"
+  - metric: "고객"
+    value: "다국적 기업 트레저러 및 Tier-2 은행"
+
+validation:
+  - "HSBC Commercial & Investment Bank의 공개 직책 — LinkedIn으로 검증 가능"
+  - "프로그램 범위는 About / Experience 섹션에 언급됨"

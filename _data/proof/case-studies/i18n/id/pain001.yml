@@ -1,0 +1,48 @@
+title: "pain001 — otomatisasi file pembayaran ISO 20022"
+banner_alt: "Lanskap kota dari udara saat senja — melambangkan otomatisasi file pembayaran terstruktur di bawah ISO 20022 lintas jaringan kliring global"
+sector: "Sumber terbuka · Treasury korporat · ISO 20022"
+role: "Penulis dan pengelola"
+status: "Produksi, dikelola aktif"
+
+outcome_highlights:
+  - value: "pain.001"
+    label: "Customer Credit Transfer Initiation"
+  - value: "XSD-validated"
+    label: "Pre-flight pada setiap pesan"
+  - value: "IBAN + BIC + LEI"
+    label: "Checksum ISO 7064 Modulo 97-10"
+  - value: "Apache-2.0 / MIT"
+    label: "Bebas digunakan, di-fork, diaudit"
+
+pull_quote: >
+  "Dikutip dalam white paper EPAA Quantum-Safe Payments (September 2025).
+  Sumber terbuka, diaudit sejak hari pertama — tanpa translator
+  proprietari antara ERP Anda dan jaringan kliring."
+
+problem: >
+  Migrasi MT → MX global memaksa setiap bank dan treasury korporat untuk
+  menghasilkan pesan pain.001 terstruktur. Sebagian besar tim merakit
+  XML rapuh secara manual atau membeli translator proprietari yang
+  buram. Kedua jalur tersebut mengirim kesalahan pembayaran ke jaringan
+  kliring dan tidak meninggalkan jejak audit.
+
+what_i_built: >
+  Pustaka Python sumber terbuka yang menghasilkan pesan pain.001 ISO
+  20022 (Customer Credit Transfer Initiation) tervalidasi dari CSV /
+  SQLite / Parquet. Validasi XSD pre-flight, checksum IBAN / BIC,
+  masking PII, dan kesesuaian skema XSD penuh — semuanya di dalam alur
+  kerja Python yang menyatu dengan jalur ERP dan treasury yang ada.
+
+rigour:
+  - metric: "Pesan ISO 20022 yang didukung"
+    value: "pain.001 (Customer Credit Transfer Initiation)"
+  - metric: "Kesesuaian skema"
+    value: "Validasi XSD resmi pre-flight pada setiap pesan"
+  - metric: "Validator yang dikirim"
+    value: "Check-digit IBAN + checksum BIC + LEI (ISO 7064 Modulo 97-10)"
+  - metric: "Lisensi"
+    value: "Apache-2.0 / MIT — bebas digunakan, di-fork, diaudit"
+
+validation:
+  - "Dikutip dalam white paper EPAA Quantum-Safe Payments (September 2025)"
+  - "Ditampilkan dalam artikel yang dipublikasikan di sebastienrousseau.com sejak 2023-09"

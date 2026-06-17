@@ -1,0 +1,53 @@
+title: "KyberLib — ML-KEM ìpele-ìmújáde nínú Rust"
+banner_alt: "Ìpààrọ̀ kọ́kọ́rọ́ cryptographic tí ó lágbára sí ìṣirò kuáńtù — ó dúró fún ìṣílọ FIPS 203 ML-KEM nínú báńkì"
+sector: "Orísun ṣíṣí · Báńkì · Àwọn ìlànà"
+role: "Òǹkọ̀wé àti olùtọ́jú"
+status: "Ń ṣiṣẹ́ ní ìmújáde, ó ń gba ìtọ́jú lójoojúmọ́"
+
+outcome_highlights:
+  - value: "FIPS 203"
+    label: "A so mọ́ ọ̀nà ìtẹ̀jáde NIST"
+  - value: "Top 44 %"
+    label: "Nínú àwọn ilé-ìkàwé PQC bí 182 (Qtonic Lab)"
+  - value: "no_std"
+    label: "Ó wọnú HSMs + àwọn enclave tí ó ní ààbò"
+  - value: "1 adopter"
+    label: "Oníránṣẹ́ lẹ́yìn-kuáńtù QGram (Quantum2pi)"
+
+pull_quote: >
+  "Qtonic Quantum Lab ṣàyẹ̀wò rẹ̀ — àkọsílẹ̀ aládàáṣe ti cryptography
+  lẹ́yìn-kuáńtù — QGram (Quantum2pi) sì gbà á fún ìránṣẹ́ tí a fi
+  ìpamọ́ ìparí-sí-ìparí. A lè jẹ́rìí àwọn méjèèjì láì kọjá ọwọ́ mi."
+
+problem: >
+  Àwọn báńkì dojúkọ ìyípadà àdírẹ́sì tí a ṣètò SWIFT ní ọjọ́ 14 oṣù
+  November 2026 àti àkókò ìṣílọ lẹ́yìn-kuáńtù NIST tí ó gùn jù. Àwọn
+  ìmúṣẹ PQC tí ó wà lọ́wọ́lọ́wọ́ ń jáde gẹ́gẹ́ bí àwọn ìwé ìlànà, kóòdù
+  ilé-ẹ̀kọ́, tàbí àpótí dúdú HSM tí ó jẹ́ ohun-ìní — kò sí ìkankan tí
+  ayàwòrán ìsanwó lè kà, dán-wò, tàbí fọwọ́sí.
+
+what_i_built: >
+  KyberLib sọ FIPS 203 ML-KEM (CRYSTALS-Kyber) di Rust tí a lè ṣàyẹ̀wò.
+  Ìbáṣepọ̀ alárapọ̀ ti àṣà-pẹ̀lú-kuáńtù, àkójọpọ̀ no_std fún ìfibọnú
+  HSM, àwọn ààlà abstraction tí ó ní irọ̀rùn-crypto, àti ẹ̀rí ìṣàkóso
+  Àpilẹ̀kọ 5 DORA tí àwọn bọ́ọ̀dù nílò nísinsìnyí láti ti ìṣílọ PQC lẹ́yìn
+  láìgbà ewu olùtà tí kò ṣíkàrà mọ́ra.
+
+rigour:
+  - metric: "Ìlànà cryptographic"
+    value: "FIPS 203 (ML-KEM, tí a mọ̀ tẹ́lẹ̀ sí CRYSTALS-Kyber)"
+  - metric: "Àtìlẹ́yìn ìbáṣepọ̀ alárapọ̀"
+    value: "TLS àṣà + ipò X25519MLKEM768 ML-KEM-768"
+  - metric: "Àkójọpọ̀"
+    value: "no_std — ó wọnú HSMs, àwọn enclave tí ó ní ààbò, àwọn àfojúsùn tí a fibọnú"
+  - metric: "Irọ̀rùn-crypto"
+    value: "Àwọn ààlà abstraction ń fún ní àyè láti pààrọ̀ algorithm láì yí API padà"
+  - metric: "Iwé-àṣẹ"
+    value: "Apache-2.0 / MIT"
+
+validation:
+  - "A tọ́ka sí i nínú ìwé funfun EPAA Quantum-Safe Payments (oṣù September 2025)"
+  - "A ṣàfihàn rẹ̀ nínú àpilẹ̀kọ 2026-06-12: KyberLib and the Post-Quantum Banking Migration"
+  - "A so mọ́ ọ̀nà ìtẹ̀jáde NIST FIPS 203 / 204 / 205"
+  - "Qtonic Quantum Lab ṣàyẹ̀wò rẹ̀ — àkọsílẹ̀ àyẹ̀wò aládàáṣe ti cryptography lẹ́yìn-kuáńtù, àwọn ilé-ìkàwé PQC bí 182 ni a ṣe ìṣirò (top 44%, kò sí owó-ìsanwó fún ìfibọnú láti ọ̀dọ̀ olùtà)"
+  - "QGram (Quantum2pi) gbà á — oníránṣẹ́ peer-to-peer lẹ́yìn-kuáńtù tí a fi ìpamọ́ ìparí-sí-ìparí tí ó ń lò KyberLib fún ìpamọ́ ìránṣẹ́ (a lè jẹ́rìí rẹ̀ ní f6s.com/software/qgram)"

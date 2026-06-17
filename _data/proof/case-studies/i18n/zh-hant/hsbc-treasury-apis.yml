@@ -1,0 +1,67 @@
+slug: hsbc-treasury-apis
+title: "HSBC 財資 API — 支付與 Banking-as-a-Service"
+banner: "https://cloudcdn.pro/stocks/images/ben-o-bro-wpU4veNGnHg.webp"
+banner_alt: "倫敦金融城天際線——象徵在 HSBC 企業及投資銀行業務內所推動的財資 API 平台"
+category: "Banking-as-a-Service"
+category_slug: "banking-as-a-service"
+kicker: "TIER-1 BANK · TREASURY · BAAS"
+sector: "一級商業銀行・企業財資・受監管支付"
+role: "資深產品及技術主管"
+period: "Multi-year programme at HSBC Commercial & Investment Bank"
+status: "已於一級全球性銀行上線生產環境"
+
+outcome_highlights:
+  - value: "Tier-1"
+    label: "全球性銀行，企業及投資銀行業務"
+  - value: "FCA / PRA"
+    label: "受監管支付業務邊界"
+  - value: "Treasury / BaaS"
+    label: "可程式化現金、流動性及支付軌道"
+  - value: "Multi-year"
+    label: "多年期資深產品及技術主管"
+
+pull_quote: >
+  「依本行監管邊界，落地交付了生產環境的支付、餘額及流動性
+  API——橫跨架構設計、廠商整合、監管證據及 DORA 與
+  SR 11-7 所要求的營運韌性控制。」
+
+# NDA scope: describe scope and engineering shape, not internal commercial
+# numbers we are not free to disclose. External validators below stay
+# verifiable: public role / public LinkedIn record / public bank disclosures.
+problem: >
+  企業財資團隊要求在一級銀行內取得可程式化方式存取現金管
+  理、流動性與支付軌道——同時不能犧牲銀行本身必須產出的
+  監管證據層。
+
+what_i_built: >
+  於 HSBC 企業及投資銀行業務內主導財資 API 與
+  Banking-as-a-Service 計畫的產品及技術工作流，依本行
+  監管邊界落地交付生產環境的支付、餘額及流動性 API。工作
+  範圍涵蓋架構設計、廠商整合、監管證據，以及 DORA 與
+  SR 11-7 所要求的營運韌性控制。
+
+# Engineering rigour — described, not quantified with internal numbers.
+rigour:
+  - metric: "角色範疇"
+    value: "於 CIB 內擔任資深產品及技術主管"
+  - metric: "監管邊界"
+    value: "受 FCA / PRA 監管之支付平台"
+  - metric: "整合面"
+    value: "財資 API、餘額及現金管理、BaaS 對外分發"
+  - metric: "受眾"
+    value: "跨國企業及二級銀行之企業財資人員"
+
+validation:
+  - "於 HSBC 企業及投資銀行業務之公開職務——可透過 LinkedIn 驗證"
+  - "計畫範圍於個人簡介／經歷段落內公開引述"
+
+# No standards block — programme spans many internal standards we are not
+# free to enumerate publicly.
+
+links:
+  bank: "https://www.hsbc.com/"
+  linkedin: "https://www.linkedin.com/in/sebastienrousseau/"
+
+related_articles: []
+
+signed: true

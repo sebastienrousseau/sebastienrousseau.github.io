@@ -1,0 +1,49 @@
+title: "pain001 — automatizarea fișierelor de plată ISO 20022"
+banner_alt: "Peisaj urban aerian în amurg — simbolizând automatizarea fișierelor de plată structurate sub ISO 20022 în rețelele globale de compensare"
+sector: "Open-source · Trezorerie corporativă · ISO 20022"
+role: "Autor și mentenant"
+status: "În producție, întreținut activ"
+
+outcome_highlights:
+  - value: "pain.001"
+    label: "Customer Credit Transfer Initiation"
+  - value: "Validat XSD"
+    label: "Pre-flight pentru fiecare mesaj"
+  - value: "IBAN + BIC + LEI"
+    label: "Sume de control ISO 7064 Modulo 97-10"
+  - value: "Apache-2.0 / MIT"
+    label: "Liber de utilizat, de modificat, de auditat"
+
+pull_quote: >
+  „Citat în documentul EPAA Quantum-Safe Payments (septembrie 2025).
+  Open-source, auditat din prima zi — fără translator proprietar între
+  ERP-ul dumneavoastră și rețeaua de compensare.”
+
+problem: >
+  Migrarea globală MT → MX obligă fiecare bancă și fiecare trezorerie
+  corporativă să producă mesaje pain.001 structurate. Majoritatea
+  echipelor scriu XML fragil manual sau cumpără translatoare
+  proprietare opace. Ambele căi trimit erori de plată în rețelele de
+  compensare și nu lasă nicio pistă de audit.
+
+what_i_built: >
+  O bibliotecă Python open-source care generează mesaje ISO 20022
+  pain.001 (Customer Credit Transfer Initiation) validate, din CSV /
+  SQLite / Parquet. Validare XSD pre-flight, sume de control IBAN /
+  BIC, mascare a datelor cu caracter personal și conformitate completă
+  cu schema XSD — toate într-un flux Python care se integrează în
+  pipeline-urile ERP și de trezorerie existente.
+
+rigour:
+  - metric: "Mesaje ISO 20022 acceptate"
+    value: "pain.001 (Customer Credit Transfer Initiation)"
+  - metric: "Conformitate cu schema"
+    value: "Validare oficială XSD pre-flight pentru fiecare mesaj"
+  - metric: "Validatoare livrate"
+    value: "Cifră de control IBAN + sumă de control BIC + LEI (ISO 7064 Modulo 97-10)"
+  - metric: "Licență"
+    value: "Apache-2.0 / MIT — liber de utilizat, de modificat, de auditat"
+
+validation:
+  - "Citat în documentul EPAA Quantum-Safe Payments (septembrie 2025)"
+  - "Prezentat în articole publicate pe sebastienrousseau.com începând cu septembrie 2023"

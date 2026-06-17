@@ -1,0 +1,53 @@
+title: "KyberLib — ML-KEM de calitate producție în Rust"
+banner_alt: "Schimb de chei criptografice rezistente la calcul cuantic — simbolizând migrarea bancară către FIPS 203 ML-KEM"
+sector: "Open-source · Sector bancar · Standarde"
+role: "Autor și mentenant"
+status: "În producție, întreținut activ"
+
+outcome_highlights:
+  - value: "FIPS 203"
+    label: "Aliniat la traseul de publicare NIST"
+  - value: "Top 44 %"
+    label: "Din ~182 de biblioteci PQC (Qtonic Lab)"
+  - value: "no_std"
+    label: "Se integrează în HSM-uri și enclave securizate"
+  - value: "1 adoptant"
+    label: "Mesageria post-cuantică QGram (Quantum2pi)"
+
+pull_quote: >
+  „Evaluat de Qtonic Quantum Lab — registru independent de criptografie
+  post-cuantică — și adoptat de QGram (Quantum2pi) pentru mesagerie
+  criptată end-to-end. Ambele sunt verificabile fără a trece prin mine.”
+
+problem: >
+  Băncile se confruntă cu trecerea SWIFT la adrese structurate pe
+  14 noiembrie 2026 și cu o fereastră mai lungă de migrare post-cuantică
+  NIST. Implementările PQC existente sunt livrate ca documente de
+  politică, cod de laborator sau cutii negre HSM proprietare — niciuna
+  pe care un arhitect de plăți să o poată citi, testa sau semna.
+
+what_i_built: >
+  KyberLib transformă FIPS 203 ML-KEM (CRYSTALS-Kyber) în Rust
+  inspectabil. Strângeri de mână hibride clasic + cuantic, compilare
+  no_std pentru integrare în HSM, granițe de abstractizare cripto-agile
+  și dovezile de guvernanță cerute de Articolul 5 din DORA pentru a
+  susține migrarea PQC fără a-și asuma un risc opac de furnizor.
+
+rigour:
+  - metric: "Standard criptografic"
+    value: "FIPS 203 (ML-KEM, fost CRYSTALS-Kyber)"
+  - metric: "Suport pentru strângere de mână hibridă"
+    value: "TLS clasic + modul ML-KEM-768 X25519MLKEM768"
+  - metric: "Compilare"
+    value: "no_std — se integrează în HSM-uri, enclave securizate și ținte embedded"
+  - metric: "Cripto-agilitate"
+    value: "Granițele de abstractizare permit schimbarea algoritmului fără modificarea API"
+  - metric: "Licență"
+    value: "Apache-2.0 / MIT"
+
+validation:
+  - "Citat în documentul EPAA Quantum-Safe Payments (septembrie 2025)"
+  - "Prezentat în articolul din 12.06.2026: KyberLib și migrarea bancară post-cuantică"
+  - "Aliniat la traseul de publicare NIST FIPS 203 / 204 / 205"
+  - "Evaluat de Qtonic Quantum Lab — registru independent de evaluare a criptografiei post-cuantice, cu ~182 de biblioteci PQC analizate (top 44 %, fără plată pentru includere)"
+  - "Adoptat de QGram (Quantum2pi) — un mesager peer-to-peer post-cuantic, criptat end-to-end, care folosește KyberLib pentru criptarea mesajelor (verificabil la f6s.com/software/qgram)"

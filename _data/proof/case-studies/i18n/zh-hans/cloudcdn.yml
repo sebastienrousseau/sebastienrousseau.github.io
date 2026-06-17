@@ -1,0 +1,49 @@
+title: "CloudCDN——面向 AI 原生边缘的开源蓝图"
+banner_alt: "AI 原生边缘基础设施——象征 CloudCDN 作为参考实现交付的零信任 MCP 网关、原子化 Durable Objects 限流以及 WebAuthn 通行密钥边界"
+sector: "开源 · 边缘计算 · AI 基础设施"
+role: "作者与维护者"
+status: "生产环境运行，持续维护"
+
+outcome_highlights:
+  - value: "3,185 tests"
+    label: "行、分支、函数覆盖率均达 100%"
+  - value: "SLSA L3"
+    label: "构建溯源 + Sigstore 签名"
+  - value: "42 MCP tools"
+    label: "每一次调用均带结构化证据审计留痕"
+  - value: "DORA / BCBS 239"
+    label: "对齐第 5 条与风险数据聚合"
+
+pull_quote: >
+  「安全团队可读、可复刻、可签名的开源参考实现——而非一份营销 PDF。原子化
+  Durable Objects 限流、WebAuthn 边界、SLSA L3 构建溯源。」
+
+problem: >
+  随着 AI 代理与 MCP 工具开始以规模化方式调用边缘 API，银行需要一道既能承
+  受自主流量、又不牺牲 DORA 级审计证据的边界。现有 CDN 要么停留在营销语言，
+  要么提供不透明的方案——两者都无法交付安全团队可读、可复刻、可签名的参考
+  实现。
+
+what_i_built: >
+  一套开源、零信任的 MCP 网关，内置 42 项工具、原子化 Durable Objects 限流、
+  WebAuthn 通行密钥边界、签名 URL 以及 SLSA Level 3 构建溯源。3,185 项测试，
+  覆盖率 100%，对齐 DORA 第 5 条、BCBS 239 风险数据聚合以及 Basel III 操作
+  风险资本要求。
+
+rigour:
+  - metric: "测试"
+    value: "3,185 项测试，行、分支、函数覆盖率均达 100%"
+  - metric: "供应链溯源"
+    value: "SLSA Level 3 构建溯源 + Sigstore 签名"
+  - metric: "交付的 MCP 工具"
+    value: "42 项工具——每一次调用均带结构化证据审计留痕"
+  - metric: "限流"
+    value: "原子化 Durable Objects（无竞争条件，无重复计数）"
+  - metric: "身份认证"
+    value: "WebAuthn 通行密钥 + 签名 URL"
+  - metric: "许可证"
+    value: "Apache-2.0 / MIT"
+
+validation:
+  - "入选 2026-06-11 文章《CloudCDN——面向 AI 原生边缘的开源蓝图》"
+  - "对齐 DORA 第 5 条、BCBS 239 与 Basel III 操作风险"

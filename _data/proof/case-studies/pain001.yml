@@ -1,10 +1,29 @@
 slug: pain001
 title: "pain001 — automating ISO 20022 payment files"
-banner: "https://cloudcdn.pro/stocks/images/ben-o-bro-wpU4veNGnHg.webp"
-banner_alt: "Aerial view of the City of London at dusk — symbolising structured payment file automation under ISO 20022"
+banner: "https://cloudcdn.pro/stocks/images/tyler-prahm-lmV3gJSAgbo.webp"
+banner_alt: "Aerial cityscape at dusk — symbolising structured payment file automation under ISO 20022 across global clearing networks"
+category: "Payments"
+category_slug: "payments"
+kicker: "ISO 20022 · PAIN.001 · MT→MX MIGRATION"
+sector: "Open-source · Corporate treasury · ISO 20022"
 role: "Author and maintainer"
 period: "2023 – present"
 status: "Production, actively maintained"
+
+outcome_highlights:
+  - value: "pain.001"
+    label: "Customer Credit Transfer Initiation"
+  - value: "XSD-validated"
+    label: "Pre-flight on every message"
+  - value: "IBAN + BIC + LEI"
+    label: "ISO 7064 Modulo 97-10 checksums"
+  - value: "Apache-2.0 / MIT"
+    label: "Free to use, fork, audit"
+
+pull_quote: >
+  "Cited in the EPAA Quantum-Safe Payments white paper (September 2025).
+  Open-source, audited from day one — no proprietary translator between
+  your ERP and the clearing network."
 
 problem: >
   The global MT → MX migration forces every bank and corporate treasury

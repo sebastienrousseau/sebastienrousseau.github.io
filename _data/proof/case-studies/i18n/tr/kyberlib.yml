@@ -1,0 +1,51 @@
+title: "KyberLib — Rust'ta üretim seviyesinde ML-KEM"
+banner_alt: "Kuantum güvenli kriptografik anahtar değişimi — bankacılıkta FIPS 203 ML-KEM göçünü simgeliyor"
+sector: "Açık kaynak · Bankacılık · Standartlar"
+role: "Yazar ve sürdürücü"
+status: "Üretimde, etkin biçimde bakımı sürüyor"
+
+outcome_highlights:
+  - label: "NIST yayın hattına uyumlu"
+  - label: "Yaklaşık 182 PQC kütüphanesi arasında (Qtonic Lab)"
+  - label: "HSM'lere ve güvenli enklavlara gömülebilir"
+  - label: "QGram (Quantum2pi) kuantum sonrası mesajlaşma"
+
+pull_quote: >
+  "Bağımsız kuantum sonrası kriptografi kayıt sistemi Qtonic Quantum
+  Lab tarafından değerlendirildi ve uçtan uca şifreli mesajlaşma
+  için QGram (Quantum2pi) tarafından benimsendi. Her ikisi de
+  benden bağımsız olarak doğrulanabilir."
+
+problem: >
+  Bankalar, 14 Kasım 2026 tarihli SWIFT yapılandırılmış adres geçişi
+  ile daha uzun bir NIST kuantum sonrası göç penceresiyle karşı
+  karşıya. Mevcut PQC uygulamaları politika belgesi, laboratuvar
+  kodu ya da tescilli HSM kara kutusu olarak geliyor — hiçbirini bir
+  ödeme mimarı okuyup test edip imzalayamaz.
+
+what_i_built: >
+  KyberLib, FIPS 203 ML-KEM'i (CRYSTALS-Kyber) incelenebilir Rust
+  koduna dönüştürür. Hibrit klasik artı kuantum güvenli el sıkışmalar,
+  HSM gömme için no_std derleme, kripto-çevik soyutlama sınırları ve
+  yönetim kurullarının opak satıcı riskini üstlenmeden PQC göçünü
+  desteklemek için artık ihtiyaç duyduğu DORA Madde 5 yönetişim
+  kanıtı.
+
+rigour:
+  - metric: "Kriptografik standart"
+    value: "FIPS 203 (ML-KEM, eski adıyla CRYSTALS-Kyber)"
+  - metric: "Hibrit el sıkışma desteği"
+    value: "Klasik TLS + ML-KEM-768 X25519MLKEM768 modu"
+  - metric: "Derleme"
+    value: "no_std — HSM'lere, güvenli enklavlara ve gömülü hedeflere yerleşir"
+  - metric: "Kripto-çeviklik"
+    value: "Soyutlama sınırları, API değişikliği olmadan algoritma değişimine olanak tanır"
+  - metric: "Lisans"
+    value: "Apache-2.0 / MIT"
+
+validation:
+  - "EPAA Quantum-Safe Payments teknik raporunda atıf aldı (Eylül 2025)"
+  - "2026-06-12 tarihli makalede yer aldı: KyberLib ve Bankacılığın Kuantum Sonrası Göçü"
+  - "NIST FIPS 203 / 204 / 205 yayın hattıyla hizalandı"
+  - "Bağımsız kuantum sonrası kriptografi değerlendirme kayıt sistemi Qtonic Quantum Lab tarafından değerlendirildi; yaklaşık 182 PQC kütüphanesi incelendi (ilk %44, satıcıdan ücret karşılığı listeleme yok)"
+  - "QGram (Quantum2pi) tarafından benimsendi — mesaj şifrelemesi için KyberLib kullanan kuantum sonrası, uçtan uca şifreli, eşler arası bir mesajlaşma uygulaması (f6s.com/software/qgram üzerinden doğrulanabilir)"

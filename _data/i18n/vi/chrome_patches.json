@@ -284,6 +284,14 @@
     [
       "<a href=\"/contact/index\\.html\">Get in touch</a>",
       "<a href=\"/contact/index.html\">Liên hệ với tôi</a>"
+    ],
+    [
+      "<li><a href=\"?/case-studies/index\\.html\"?>Case studies</a></li>",
+      "<li><a href=\"/vi/nghien-cuu-tinh-huong/index.html\">Nghiên cứu tình huống</a></li>"
+    ],
+    [
+      "<a href=\"?/case-studies/index\\.html\"?>Case studies</a>",
+      "<a href=\"/vi/nghien-cuu-tinh-huong/index.html\">Nghiên cứu tình huống</a>"
     ]
   ]
 }

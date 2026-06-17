@@ -1,0 +1,73 @@
+slug: cloudcdn
+title: "CloudCDN — AI 原生邊緣運算的開源藍圖"
+banner: "https://cloudcdn.pro/stocks/images/alis-po-IdVNRv-5wJo.webp"
+banner_alt: "AI 原生邊緣基礎設施——象徵 CloudCDN 作為參考實作所提供的零信任 MCP 閘道、Durable Objects 原子化速率限制及 WebAuthn 通行金鑰邊界"
+category: "Infrastructure"
+category_slug: "infrastructure"
+kicker: "MCP · ZERO-TRUST · DORA"
+sector: "開源軟體・邊緣運算・AI 基礎設施"
+role: "作者及維護者"
+period: "2024 – present"
+status: "已上線生產環境，持續維護中"
+
+outcome_highlights:
+  - value: "3,185 tests"
+    label: "行數、分支與函式覆蓋率均達 100%"
+  - value: "SLSA L3"
+    label: "建置溯源加上 Sigstore 簽章"
+  - value: "42 MCP tools"
+    label: "每一次呼叫皆以結構化證據完整記錄稽核軌跡"
+  - value: "DORA / BCBS 239"
+    label: "對應 DORA 第 5 條與風險資料彙整要求"
+
+pull_quote: >
+  「一份安全團隊可閱讀、可分叉、可簽章的開源參考實作
+  ——取代行銷 PDF。具備 Durable Objects 原子化速率限制、
+  WebAuthn 邊界，以及 SLSA L3 建置溯源。」
+
+problem: >
+  隨著 AI 代理與 MCP 工具開始大規模呼叫邊緣 API，銀行
+  需要一道能承受自主流量、同時保有符合 DORA 等級稽核證
+  據的防護邊界。現有 CDN 廠商所提供者，不是行銷話術便
+  是不透明的方案——兩者均無法產出安全團隊可閱讀、可分
+  叉、可簽章的參考實作。
+
+what_i_built: >
+  一套開源、零信任架構的 MCP 閘道，內建 42 個工具、
+  Durable Objects 原子化速率限制、WebAuthn 通行金鑰邊
+  界、簽章 URL 及 SLSA Level 3 建置溯源。具 3,185 項測
+  試、100% 覆蓋率，並對應 DORA 第 5 條、BCBS 239 風險
+  資料彙整及 Basel III 作業風險資本要求。
+
+rigour:
+  - metric: "測試"
+    value: "3,185 項測試，行數、分支與函式覆蓋率均達 100%"
+  - metric: "供應鏈溯源"
+    value: "SLSA Level 3 建置溯源加上 Sigstore 簽章"
+  - metric: "MCP 工具數量"
+    value: "42 個工具——每一次呼叫皆以結構化證據完整記錄稽核軌跡"
+  - metric: "速率限制"
+    value: "Durable Objects 原子化機制（無競爭條件、無重複計數）"
+  - metric: "身分驗證"
+    value: "WebAuthn 通行金鑰加上簽章 URL"
+  - metric: "授權條款"
+    value: "Apache-2.0 / MIT"
+
+validation:
+  - "獲選為 2026-06-11 專文題材：《CloudCDN — AI 原生邊緣運算的開源藍圖》"
+  - "對應 DORA 第 5 條、BCBS 239 及 Basel III 作業風險要求"
+
+standards:
+  - "SLSA Level 3"
+  - "WebAuthn (FIDO2)"
+  - "DORA Article 5"
+  - "BCBS 239"
+
+links:
+  repo: "https://github.com/sebastienrousseau/cloudcdn"
+  site: "https://cloudcdn.pro"
+
+related_articles:
+  - "2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026"
+
+signed: true

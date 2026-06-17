@@ -1,0 +1,49 @@
+title: "HSBC Treasury APIs — platby a Banking-as-a-Service"
+banner_alt: "Panorama City of London — symbolizuje treasury API platformu dodanou v rámci programu HSBC Commercial &amp; Investment Bank"
+sector: "Komerční banka úrovně Tier-1 · Korporátní treasury · Regulované platby"
+role: "Senior product / technology lead"
+status: "V produkci v globální bance úrovně Tier-1"
+
+outcome_highlights:
+  - value: "Tier-1"
+    label: "Globální banka, Commercial & Investment Bank"
+  - value: "FCA / PRA"
+    label: "Regulovaný perimetr plateb"
+  - value: "Treasury / BaaS"
+    label: "Programovatelné cash, likvidita, platební infrastruktura"
+  - value: "Multi-year"
+    label: "Senior product + technology leadership"
+
+pull_quote: >
+  "Dodal jsem produkční API pro platby, zůstatky a likviditu v rámci
+  regulatorního perimetru banky — napříč architekturou, integrací
+  dodavatelů, dohledovými důkazy a kontrolami provozní odolnosti, které
+  nyní vyžadují DORA a SR 11-7."
+
+problem: >
+  Korporátní treasury týmy vyžadují programovatelný přístup k cash
+  managementu, likviditě a platební infrastruktuře uvnitř banky úrovně
+  Tier-1 — aniž by se vzdaly vrstvy regulatorních důkazů, kterou musí
+  produkovat samotná banka.
+
+what_i_built: >
+  Vedl jsem produktové a technologické workstreamy pro program treasury
+  API a Banking-as-a-Service v HSBC Commercial & Investment Bank,
+  dodával jsem produkční API pro platby, zůstatky a likviditu v rámci
+  regulatorního perimetru banky. Pracoval jsem napříč architekturou,
+  integrací dodavatelů, dohledovými důkazy a kontrolami provozní
+  odolnosti, které nyní vyžadují DORA a SR 11-7.
+
+rigour:
+  - metric: "Rozsah role"
+    value: "Senior product / technology leadership uvnitř CIB"
+  - metric: "Regulatorní perimetr"
+    value: "Platební platforma regulovaná FCA / PRA"
+  - metric: "Integrační plocha"
+    value: "Treasury API, zůstatky / cash management, distribuce BaaS"
+  - metric: "Cílová skupina"
+    value: "Korporátní treasureři v nadnárodních a Tier-2 bankách"
+
+validation:
+  - "Veřejná role v HSBC Commercial & Investment Bank — ověřitelné přes LinkedIn"
+  - "Rozsah programu uveden v sekci About / Experience"

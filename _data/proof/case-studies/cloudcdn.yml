@@ -1,10 +1,29 @@
 slug: cloudcdn
 title: "CloudCDN — open-source blueprint for the AI-native edge"
-banner: "https://cloudcdn.pro/stocks/images/cloudcdn-blueprint.webp"
+banner: "https://cloudcdn.pro/stocks/images/alis-po-IdVNRv-5wJo.webp"
 banner_alt: "AI-native edge infrastructure — symbolising the zero-trust MCP gateway, atomic Durable Objects rate limiting, and WebAuthn passkey perimeter that CloudCDN ships as a reference implementation"
+category: "Infrastructure"
+category_slug: "infrastructure"
+kicker: "MCP · ZERO-TRUST · DORA"
+sector: "Open-source · Edge · AI infrastructure"
 role: "Author and maintainer"
 period: "2024 – present"
 status: "Production, actively maintained"
+
+outcome_highlights:
+  - value: "3,185 tests"
+    label: "100 % line, branch, function coverage"
+  - value: "SLSA L3"
+    label: "Build provenance + Sigstore signing"
+  - value: "42 MCP tools"
+    label: "Every call audit-logged with structured evidence"
+  - value: "DORA / BCBS 239"
+    label: "Mapped to Article 5 + risk-data aggregation"
+
+pull_quote: >
+  "An open-source reference implementation a security team can read, fork,
+  and sign — instead of a marketing PDF. Atomic Durable Objects rate
+  limiting, WebAuthn perimeter, SLSA L3 provenance."
 
 problem: >
   As AI agents and MCP tools start calling edge APIs at scale, banks

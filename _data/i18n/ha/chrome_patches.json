@@ -284,6 +284,14 @@
     [
       "<a href=\"/contact/index\\.html\">Get in touch</a>",
       "<a href=\"/ha/tuntube-mu/index.html\">Tuntube mu</a>"
+    ],
+    [
+      "<li><a href=\"?/case-studies/index\\.html\"?>Case studies</a></li>",
+      "<li><a href=\"/ha/nazarin-shari-a/index.html\">Nazarin shari'a</a></li>"
+    ],
+    [
+      "<a href=\"?/case-studies/index\\.html\"?>Case studies</a>",
+      "<a href=\"/ha/nazarin-shari-a/index.html\">Nazarin shari'a</a>"
     ]
   ]
 }

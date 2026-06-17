@@ -1,10 +1,30 @@
 slug: hsbc-treasury-apis
 title: "HSBC Treasury APIs — payments and Banking-as-a-Service"
-banner: "https://cloudcdn.pro/stocks/images/hsbc-treasury.webp"
-banner_alt: "Tier-1 commercial bank trading floor — symbolising the treasury API platform shipped under HSBC's Commercial &amp; Investment Bank programme"
+banner: "https://cloudcdn.pro/stocks/images/ben-o-bro-wpU4veNGnHg.webp"
+banner_alt: "City of London skyline — symbolising the treasury API platform shipped under HSBC's Commercial &amp; Investment Bank programme"
+category: "Banking-as-a-Service"
+category_slug: "banking-as-a-service"
+kicker: "TIER-1 BANK · TREASURY · BAAS"
+sector: "Tier-1 commercial bank · Corporate treasury · Regulated payments"
 role: "Senior product / technology lead"
 period: "Multi-year programme at HSBC Commercial & Investment Bank"
 status: "Live in production at a Tier-1 global bank"
+
+outcome_highlights:
+  - value: "Tier-1"
+    label: "Global bank, Commercial & Investment Bank"
+  - value: "FCA / PRA"
+    label: "Regulated payments perimeter"
+  - value: "Treasury / BaaS"
+    label: "Programmable cash, liquidity, payments rails"
+  - value: "Multi-year"
+    label: "Senior product + technology leadership"
+
+pull_quote: >
+  "Shipped production payment, balance, and liquidity APIs against the
+  bank's regulatory perimeter — across architecture, vendor integration,
+  supervisory evidence, and the operational-resilience controls DORA and
+  SR 11-7 now mandate."
 
 # NDA scope: describe scope and engineering shape, not internal commercial
 # numbers we are not free to disclose. External validators below stay

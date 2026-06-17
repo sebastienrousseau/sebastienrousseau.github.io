@@ -1,0 +1,53 @@
+title: "CloudCDN — blueprint sumber terbuka untuk edge AI-native"
+banner_alt: "Infrastruktur edge AI-native — melambangkan gateway MCP zero-trust, rate limiting Durable Objects atomik, dan perimeter passkey WebAuthn yang dikirim CloudCDN sebagai implementasi referensi"
+sector: "Sumber terbuka · Edge · Infrastruktur AI"
+role: "Penulis dan pengelola"
+status: "Produksi, dikelola aktif"
+
+outcome_highlights:
+  - value: "3,185 tests"
+    label: "Cakupan 100 % baris, cabang, dan fungsi"
+  - value: "SLSA L3"
+    label: "Provenans build + penandatanganan Sigstore"
+  - value: "42 MCP tools"
+    label: "Setiap panggilan tercatat audit dengan bukti terstruktur"
+  - value: "DORA / BCBS 239"
+    label: "Dipetakan ke Pasal 5 + agregasi data risiko"
+
+pull_quote: >
+  "Implementasi referensi sumber terbuka yang dapat dibaca, di-fork, dan
+  ditandatangani tim keamanan — bukan PDF pemasaran. Rate limiting
+  Durable Objects atomik, perimeter WebAuthn, provenans SLSA L3."
+
+problem: >
+  Saat agen AI dan tool MCP mulai memanggil API edge dalam skala besar,
+  bank membutuhkan perimeter yang bertahan menghadapi trafik otonom
+  tanpa mengorbankan bukti audit setara DORA. CDN yang ada hanya
+  menawarkan bahasa pemasaran atau paket buram — keduanya tidak
+  menghasilkan implementasi referensi yang dapat dibaca, di-fork, dan
+  ditandatangani tim keamanan.
+
+what_i_built: >
+  Gateway MCP zero-trust sumber terbuka dengan 42 tool, rate limiting
+  Durable Objects atomik, perimeter passkey WebAuthn, signed URL, dan
+  provenans build SLSA Level 3. 3.185 tes dengan cakupan 100 %,
+  dipetakan ke DORA Pasal 5, agregasi data risiko BCBS 239, dan modal
+  risiko operasional Basel III.
+
+rigour:
+  - metric: "Tes"
+    value: "3.185 tes dengan cakupan 100 % baris, cabang, dan fungsi"
+  - metric: "Provenans rantai pasok"
+    value: "Provenans build SLSA Level 3 + penandatanganan Sigstore"
+  - metric: "Tool MCP yang dikirim"
+    value: "42 tool — setiap panggilan tercatat audit dengan bukti terstruktur"
+  - metric: "Rate limiting"
+    value: "Durable Objects atomik (tanpa race condition, tanpa hitungan ganda)"
+  - metric: "Autentikasi"
+    value: "Passkey WebAuthn + signed URL"
+  - metric: "Lisensi"
+    value: "Apache-2.0 / MIT"
+
+validation:
+  - "Ditampilkan dalam artikel 11-06-2026: CloudCDN — Blueprint Sumber Terbuka untuk Edge AI-Native"
+  - "Dipetakan ke DORA Pasal 5, BCBS 239, risiko operasional Basel III"

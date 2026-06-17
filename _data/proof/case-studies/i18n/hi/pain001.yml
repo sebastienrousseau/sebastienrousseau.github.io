@@ -1,0 +1,74 @@
+slug: pain001
+title: "pain001 — ISO 20022 भुगतान फ़ाइलों का स्वचालन"
+banner: "https://cloudcdn.pro/stocks/images/tyler-prahm-lmV3gJSAgbo.webp"
+banner_alt: "गोधूलि में हवाई शहर का दृश्य — वैश्विक क्लियरिंग नेटवर्क में ISO 20022 के तहत संरचित भुगतान फ़ाइल स्वचालन का प्रतीक"
+category: "Payments"
+category_slug: "payments"
+kicker: "ISO 20022 · PAIN.001 · MT→MX MIGRATION"
+sector: "ओपन-सोर्स · कॉर्पोरेट ट्रेज़री · ISO 20022"
+role: "लेखक एवं अनुरक्षक"
+period: "2023 – present"
+status: "उत्पादन में, सक्रिय रूप से अनुरक्षित"
+
+outcome_highlights:
+  - value: "pain.001"
+    label: "Customer Credit Transfer Initiation"
+  - value: "XSD-validated"
+    label: "प्रत्येक संदेश पर प्री-फ़्लाइट"
+  - value: "IBAN + BIC + LEI"
+    label: "ISO 7064 मोडुलो 97-10 चेकसम"
+  - value: "Apache-2.0 / MIT"
+    label: "उपयोग, फोर्क और ऑडिट के लिए निःशुल्क"
+
+pull_quote: >
+  "EPAA Quantum-Safe Payments श्वेत पत्र (सितंबर 2025) में उद्धृत।
+  ओपन-सोर्स, पहले दिन से ऑडिट किया गया — आपके ERP और क्लियरिंग नेटवर्क
+  के बीच कोई स्वामित्व अनुवादक नहीं।"
+
+problem: >
+  वैश्विक MT → MX माइग्रेशन प्रत्येक बैंक और कॉर्पोरेट ट्रेज़री को
+  संरचित pain.001 संदेश उत्पन्न करने के लिए बाध्य करता है। अधिकांश
+  टीमें नाज़ुक XML हाथ से बनाती हैं या अपारदर्शी स्वामित्व अनुवादक
+  खरीदती हैं। दोनों मार्ग क्लियरिंग नेटवर्क में भुगतान त्रुटियाँ भेजते
+  हैं और कोई ऑडिट ट्रेल नहीं छोड़ते।
+
+what_i_built: >
+  एक ओपन-सोर्स Python लाइब्रेरी जो CSV / SQLite / Parquet से सत्यापित
+  ISO 20022 pain.001 (Customer Credit Transfer Initiation) संदेश उत्पन्न
+  करती है। प्री-फ़्लाइट XSD सत्यापन, IBAN / BIC चेकसम, PII मास्किंग,
+  और पूर्ण XSD स्कीमा अनुरूपता — सब कुछ एक Python वर्कफ़्लो के अंदर
+  जो मौजूदा ERP और ट्रेज़री पाइपलाइनों में सीधे एकीकृत होता है।
+
+# Engineering rigour metrics — verifiable from the repository.
+# Adoption metrics live in metrics.json (fetched at build time from
+# pypistats and pepy). Never fabricate adopter counts.
+rigour:
+  - metric: "समर्थित ISO 20022 संदेश"
+    value: "pain.001 (Customer Credit Transfer Initiation)"
+  - metric: "स्कीमा अनुरूपता"
+    value: "प्रत्येक संदेश पर आधिकारिक XSD सत्यापन प्री-फ़्लाइट"
+  - metric: "प्रदान किए गए सत्यापनकर्ता"
+    value: "IBAN चेक-डिजिट + BIC + LEI चेकसम (ISO 7064 मोडुलो 97-10)"
+  - metric: "लाइसेंस"
+    value: "Apache-2.0 / MIT — उपयोग, फोर्क और ऑडिट के लिए निःशुल्क"
+
+# Adoption / external validation — externally verifiable items only.
+validation:
+  - "EPAA Quantum-Safe Payments श्वेत पत्र (सितंबर 2025) में उद्धृत"
+  - "2023-09 से sebastienrousseau.com पर प्रकाशित लेखों में प्रस्तुत"
+
+standards:
+  - "ISO 20022 pain.001"
+  - "SWIFT CBPR+"
+  - "SEPA"
+
+links:
+  repo: "https://github.com/sebastienrousseau/pain001"
+  site: "https://pain001.com"
+  pypi: "https://pypi.org/project/pain001/"
+  stats: "https://pypistats.org/packages/pain001"
+
+related_articles:
+  - "2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001"
+
+signed: true

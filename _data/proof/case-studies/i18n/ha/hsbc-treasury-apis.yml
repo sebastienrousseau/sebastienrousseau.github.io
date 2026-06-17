@@ -1,0 +1,48 @@
+title: "HSBC Treasury APIs — biyan kuɗi da Banking-as-a-Service"
+banner_alt: "Sararin samaniyar City of London — alama ce ta dandalin API na ma'aikatar kuɗi wanda aka kawo a ƙarƙashin shirin Bankin Kasuwanci da Saka Hannun Jari na HSBC"
+sector: "Bankin kasuwanci na matakin farko · Ma'aikatar kuɗi ta kamfani · Biyan kuɗi da aka tsara"
+role: "Babban shugaban samfur / fasaha"
+status: "Yana aiki cikin samarwa a babban bankin duniya na matakin farko"
+
+outcome_highlights:
+  - value: "Tier-1"
+    label: "Babban bankin duniya, Bankin Kasuwanci da Saka Hannun Jari"
+  - value: "FCA / PRA"
+    label: "Kewayen biyan kuɗi da aka tsara"
+  - value: "Treasury / BaaS"
+    label: "Kuɗi mai shirye-shirye, ruwa, hanyoyin biyan kuɗi"
+  - value: "Multi-year"
+    label: "Jagorancin babban samfur + fasaha"
+
+pull_quote: >
+  "Na kawo APIs na samarwa don biyan kuɗi, ma'auni, da ruwa a kan kewayen
+  tsari na banki — a faɗin gine-gine, haɗin gwiwar mai sayarwa, shaidar
+  kulawa, da kulawar juriya na aiki da DORA da SR 11-7 ke buƙata yanzu."
+
+problem: >
+  Ƙungiyoyin ma'aikatar kuɗi na kamfanoni suna buƙatar damar shirye-shirye
+  zuwa kula da kuɗi, ruwa, da hanyoyin biyan kuɗi a cikin babban bankin
+  matakin farko — ba tare da rasa shimfiɗar shaidar tsari wanda bankin
+  kansa ke buƙatar samarwa ba.
+
+what_i_built: >
+  Na jagoranci ɓangarorin samfur da fasaha don APIs na ma'aikatar kuɗi na
+  HSBC da shirin Banking-as-a-Service a cikin Bankin Kasuwanci da Saka
+  Hannun Jari, ina kawo APIs na samarwa don biyan kuɗi, ma'auni, da ruwa
+  a kan kewayen tsari na banki. Na yi aiki a faɗin gine-gine, haɗin
+  gwiwar mai sayarwa, shaidar kulawa, da kulawar juriya na aiki da DORA
+  da SR 11-7 ke buƙata yanzu.
+
+rigour:
+  - metric: "Iyakar matsayi"
+    value: "Jagorancin babban samfur / fasaha cikin CIB"
+  - metric: "Kewayen tsari"
+    value: "Dandalin biyan kuɗi da FCA / PRA ke tsarawa"
+  - metric: "Saman haɗin gwiwa"
+    value: "Treasury APIs, ma'auni / kula da kuɗi, rabon BaaS"
+  - metric: "Masu sauraro"
+    value: "Masu kula da kuɗi na kamfanoni masu yawan ƙasashe da bankuna na matakin biyu"
+
+validation:
+  - "Matsayi na jama'a a HSBC Commercial & Investment Bank — ana iya tabbatarwa ta hanyar LinkedIn"
+  - "An ambato iyakar shirin a sashin About / Experience"

@@ -106,6 +106,25 @@ site_software: "Static Site Generator, Rust"
 <a class="pill ghost" href="/contact/index.html">Get in touch</a>
 </p>
 
+<section class="proof-rail projects-proof" aria-label="Open source by the numbers">
+<div class="kpi-cell">
+  <span class="kpi-cell-value">168k</span>
+  <span class="kpi-cell-label">Open-source downloads</span>
+</div>
+<div class="kpi-cell">
+  <span class="kpi-cell-value">677</span>
+  <span class="kpi-cell-label">GitHub stars</span>
+</div>
+<div class="kpi-cell">
+  <span class="kpi-cell-value">73</span>
+  <span class="kpi-cell-label">Sigstore-signed articles</span>
+</div>
+<div class="kpi-cell">
+  <span class="kpi-cell-value">19</span>
+  <span class="kpi-cell-label">Years shipping in production</span>
+</div>
+</section>
+
 <section class="setup-three" aria-labelledby="setup-three-heading"><header class="setup-three-head"><p class="setup-three-kicker">WHAT IS INSIDE</p><h2 id="setup-three-heading" class="setup-three-headline">Three areas of practice. <span class="setup-three-headline-soft">One philosophy.</span></h2></header><div class="setup-three-grid"><article class="setup-card">
 <span class="setup-card-icon"><img alt="pain001 logo" src="https://cloudcdn.pro/clients/pain001/v1/logos/pain001.svg" loading="lazy" decoding="async" width="80" height="80" /></span>
 <h3 class="setup-card-title">Payments and settlement.</h3>

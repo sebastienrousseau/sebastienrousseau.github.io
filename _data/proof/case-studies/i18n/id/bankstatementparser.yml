@@ -1,0 +1,49 @@
+title: "BankStatementParser — intelijen transaksi terpadu untuk treasury"
+banner_alt: "Kantor keuangan modern di malam hari — melambangkan intelijen transaksi terpadu lintas format rekening koran CAMT, MT940, OFX, dan CSV"
+sector: "Sumber terbuka · Treasury korporat · Agregasi data risiko"
+role: "Penulis dan pengelola"
+status: "Produksi, dikelola aktif"
+
+outcome_highlights:
+  - value: "6 formats"
+    label: "CAMT (.052/.053/.054), MT940, OFX, CSV, OCR PDF"
+  - value: "Per-field"
+    label: "Provenans: format sumber + versi parser tercatat"
+  - value: "BCBS 239"
+    label: "Selaras dengan agregasi data risiko"
+  - value: "Apache-2.0 / MIT"
+    label: "Bebas digunakan, di-fork, diaudit"
+
+pull_quote: >
+  "Parser CAMT / MT940 / PAIN tervalidasi skema, fallback OCR untuk PDF
+  hasil pindai, pemetaan kolom deterministik, bukti audit setara SR 11-7
+  — setiap langkah transformasi tercatat dan dapat direproduksi."
+
+problem: >
+  Tim treasury korporat menerima rekening koran dalam format CAMT,
+  PAIN.001, MT940, OFX, CSV, dan PDF hasil pindai dari puluhan bank.
+  Setiap format membawa semantik kolom, encoding, dan ambiguitas yang
+  berbeda. Sebagian besar tim membangun parser per-bank yang rapuh
+  secara manual, menghambat peramalan kas real-time, deteksi fraud,
+  dan rekonsiliasi siap audit.
+
+what_i_built: >
+  Toolkit Python sumber terbuka yang menyatukan setiap format rekening
+  koran bank yang umum menjadi satu aliran transaksi yang dinormalisasi.
+  Parser CAMT / MT940 / PAIN tervalidasi skema, fallback OCR untuk PDF
+  hasil pindai, pemetaan kolom deterministik, dan bukti audit setara
+  SR 11-7 untuk setiap langkah transformasi.
+
+rigour:
+  - metric: "Format yang didukung"
+    value: "CAMT (.052, .053, .054), MT940, OFX, CSV, PDF hasil pindai (OCR)"
+  - metric: "Target normalisasi"
+    value: "Skema catatan transaksi tunggal yang terpadu"
+  - metric: "Jejak audit"
+    value: "Provenans per kolom — format sumber + versi parser tercatat per baris"
+  - metric: "Lisensi"
+    value: "Apache-2.0 / MIT"
+
+validation:
+  - "Ditampilkan dalam artikel 14-06-2026: Dari Rekening Koran ke Intelijen Transaksi Terpadu"
+  - "Dirancang untuk memenuhi persyaratan agregasi data risiko BCBS 239"

@@ -1,0 +1,48 @@
+title: "pain001 — ìṣe-aládàáṣe àwọn fáìlì ìsanwó ISO 20022"
+banner_alt: "Wíwo ìlú ńlá láti òkè ní alẹ́ — ó dúró fún ìṣe-aládàáṣe fáìlì ìsanwó tí a ṣètò lábẹ́ ISO 20022 kọjá àwọn nẹ́tíwọ́ọ̀kì ìkọsí àgbáyé"
+sector: "Orísun ṣíṣí · Ìṣúra ilé-iṣẹ́ · ISO 20022"
+role: "Òǹkọ̀wé àti olùtọ́jú"
+status: "Ń ṣiṣẹ́ ní ìmújáde, ó ń gba ìtọ́jú lójoojúmọ́"
+
+outcome_highlights:
+  - value: "pain.001"
+    label: "Ìbẹ̀rẹ̀ Ìfìjímọ́ Ìwó Onibara"
+  - value: "XSD-validated"
+    label: "Àyẹ̀wò ṣáájú-ìfìjáde lórí ìránṣẹ́ kọ̀ọ̀kan"
+  - value: "IBAN + BIC + LEI"
+    label: "Àwọn àyẹ̀wò ISO 7064 Modulo 97-10"
+  - value: "Apache-2.0 / MIT"
+    label: "Òfẹ́ láti lò, fọ́ọ̀kì, àti ṣàyẹ̀wò"
+
+pull_quote: >
+  "A tọ́ka sí i nínú ìwé funfun EPAA Quantum-Safe Payments (oṣù
+  September 2025). Orísun-ṣíṣí, a ti ṣàyẹ̀wò rẹ̀ láti ọjọ́ kìíní —
+  kò sí olùtumọ̀ ohun-ìní láàárín ERP rẹ àti nẹ́tíwọ́ọ̀kì ìkọsí."
+
+problem: >
+  Ìṣílọ MT → MX àgbáyé fipá mú gbogbo báńkì àti ìṣúra ilé-iṣẹ́ láti
+  pèsè àwọn ìránṣẹ́ pain.001 tí a ṣètò. Ọ̀pọ̀ àwọn ẹgbẹ́ ń kọ XML
+  aláìdúró pẹ̀lú ọwọ́ tàbí kí wọ́n ra àwọn olùtumọ̀ ohun-ìní tí kò
+  ṣíkàrà. Ọ̀nà méjèèjì ń tì àwọn àṣìṣe ìsanwó sínú àwọn nẹ́tíwọ́ọ̀kì
+  ìkọsí, wọn kò sì fi ipa-ọ̀nà ìṣàyẹ̀wò sílẹ̀.
+
+what_i_built: >
+  Ilé-ìkàwé Python orísun-ṣíṣí tí ó ń pèsè àwọn ìránṣẹ́ ISO 20022
+  pain.001 (Ìbẹ̀rẹ̀ Ìfìjímọ́ Ìwó Onibara) tí a ti fọwọ́sí láti CSV /
+  SQLite / Parquet. Àyẹ̀wò XSD ṣáájú-ìfìjáde, àwọn àyẹ̀wò IBAN / BIC,
+  bíbo PII, àti ìbámu pípé pẹ̀lú schema XSD — gbogbo rẹ̀ nínú iṣẹ́ṣiṣẹ́
+  Python tí ó wọ inú ERP àti àwọn ìpèsè ìṣúra tí ó ti wà.
+
+rigour:
+  - metric: "Àwọn ìránṣẹ́ ISO 20022 tí a tì lẹ́yìn"
+    value: "pain.001 (Ìbẹ̀rẹ̀ Ìfìjímọ́ Ìwó Onibara)"
+  - metric: "Ìbámu pẹ̀lú schema"
+    value: "Àyẹ̀wò XSD ìfọwọ́sí ṣáájú-ìfìjáde lórí ìránṣẹ́ kọ̀ọ̀kan"
+  - metric: "Àwọn olùfọwọ́sí tí a pèsè"
+    value: "Nọ́mbà àyẹ̀wò IBAN + BIC + LEI (ISO 7064 Modulo 97-10)"
+  - metric: "Iwé-àṣẹ"
+    value: "Apache-2.0 / MIT — òfẹ́ láti lò, fọ́ọ̀kì, àti ṣàyẹ̀wò"
+
+validation:
+  - "A tọ́ka sí i nínú ìwé funfun EPAA Quantum-Safe Payments (oṣù September 2025)"
+  - "A ṣàfihàn rẹ̀ nínú àwọn àpilẹ̀kọ tí a tẹ̀jáde lórí sebastienrousseau.com láti 2023-09"

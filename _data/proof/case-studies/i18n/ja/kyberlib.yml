@@ -1,0 +1,52 @@
+title: "KyberLib — Rust 製の本番品質 ML-KEM"
+banner_alt: "耐量子暗号鍵交換 — 銀行業界における FIPS 203 ML-KEM 移行を象徴"
+sector: "オープンソース・銀行・標準規格"
+role: "作者およびメンテナー"
+status: "本番稼働中、継続メンテナンス"
+
+outcome_highlights:
+  - value: "FIPS 203"
+    label: "NIST 発行トラックに整合"
+  - value: "Top 44 %"
+    label: "約 182 の PQC ライブラリ中 (Qtonic Lab)"
+  - value: "no_std"
+    label: "HSM および セキュア・エンクレーブに組み込み可能"
+  - value: "1 adopter"
+    label: "QGram (Quantum2pi) 耐量子メッセンジャー"
+
+pull_quote: >
+  「Qtonic Quantum Lab — 独立系の耐量子暗号レジストリ — による評価を受け、
+  QGram (Quantum2pi) によりエンドツーエンド暗号化メッセージング向けに採用
+  されました。いずれも私を介さずに検証可能です。」
+
+problem: >
+  銀行は 2026 年 11 月 14 日の SWIFT 構造化アドレス切替、そしてより長期の
+  NIST 耐量子移行ウィンドウに直面しています。既存の PQC 実装は、政策文書、
+  研究室コード、または独自仕様の HSM ブラックボックスとして提供されており、
+  決済アーキテクトが読み、テストし、署名できるものはありません。
+
+what_i_built: >
+  KyberLib は FIPS 203 ML-KEM (CRYSTALS-Kyber) を検査可能な Rust に
+  変換します。古典+量子のハイブリッド・ハンドシェイク、HSM 組み込み
+  向けの no_std コンパイル、暗号アジリティを実現する抽象化境界、そして
+  不透明なベンダーリスクを負うことなく PQC 移行を支えるために取締役会が
+  必要とする DORA 第 5 条ガバナンス証跡を提供します。
+
+rigour:
+  - metric: "暗号標準"
+    value: "FIPS 203 (ML-KEM、旧 CRYSTALS-Kyber)"
+  - metric: "ハイブリッド・ハンドシェイク対応"
+    value: "古典 TLS + ML-KEM-768 X25519MLKEM768 モード"
+  - metric: "コンパイル"
+    value: "no_std — HSM、セキュア・エンクレーブ、組み込みターゲットに組み込み可能"
+  - metric: "暗号アジリティ"
+    value: "抽象化境界により API 変更なしでアルゴリズム差し替えが可能"
+  - metric: "ライセンス"
+    value: "Apache-2.0 / MIT"
+
+validation:
+  - "EPAA Quantum-Safe Payments ホワイトペーパー (2025 年 9 月) にて引用"
+  - "2026-06-12 公開記事『KyberLib and the Post-Quantum Banking Migration』にて取り上げられました"
+  - "NIST FIPS 203 / 204 / 205 発行トラックに整合"
+  - "Qtonic Quantum Lab により評価 — 独立系の耐量子暗号評価レジストリ、約 182 の PQC ライブラリを評価 (上位 44 %、ベンダーによる掲載料金なし)"
+  - "QGram (Quantum2pi) により採用 — メッセージ暗号化に KyberLib を使用する耐量子エンドツーエンド暗号化ピアツーピア・メッセンジャー (f6s.com/software/qgram にて検証可能)"

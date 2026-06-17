@@ -1,0 +1,50 @@
+title: "CloudCDN — open-source blueprint para sa AI-native edge"
+banner_alt: "AI-native edge infrastructure — sumisimbolo sa zero-trust MCP gateway, atomic Durable Objects rate limiting, at WebAuthn passkey perimeter na inihahatid ng CloudCDN bilang reference implementation"
+sector: "Open-source · Edge · AI infrastructure"
+role: "May-akda at maintainer"
+status: "Produksiyon, aktibong pinapanatili"
+
+outcome_highlights:
+  - label: "100 % line, branch, function coverage"
+  - label: "Build provenance + Sigstore signing"
+  - label: "Bawat call ay audit-logged kasama ang structured evidence"
+  - label: "Naka-map sa Article 5 + risk-data aggregation"
+
+pull_quote: >
+  "Isang open-source reference implementation na kayang basahin, i-fork,
+  at pirmahan ng security team — sa halip na marketing PDF. Atomic
+  Durable Objects rate limiting, WebAuthn perimeter, SLSA L3 provenance."
+
+problem: >
+  Habang nagsisimulang tawagan ng AI agents at MCP tools ang edge APIs
+  sa malaking sukat, kailangan ng mga bangko ng perimeter na
+  makakatagal sa autonomous traffic nang hindi isinusuko ang audit
+  evidence sa antas ng DORA. Ang mga umiiral na CDN ay nag-aalok ng
+  marketing language o ng malabong plan — wala sa kanila ang
+  gumagawa ng reference implementation na kayang basahin, i-fork, at
+  pirmahan ng security team.
+
+what_i_built: >
+  Isang open-source, zero-trust MCP gateway na may 42 tools, atomic
+  Durable Objects rate limiting, WebAuthn passkey perimeter, signed
+  URLs, at SLSA Level 3 build provenance. 3,185 tests sa 100 %
+  coverage, naka-map sa DORA Article 5, risk-data aggregation ng
+  BCBS 239, at operational risk capital ng Basel III.
+
+rigour:
+  - metric: "Mga test"
+    value: "3,185 tests sa 100 % line, branch, at function coverage"
+  - metric: "Supply-chain provenance"
+    value: "SLSA Level 3 build provenance + Sigstore signing"
+  - metric: "Naihatid na MCP tools"
+    value: "42 tools — bawat call ay audit-logged kasama ang structured evidence"
+  - metric: "Rate limiting"
+    value: "Atomic Durable Objects (walang race conditions, walang double-counts)"
+  - metric: "Authentication"
+    value: "WebAuthn passkeys + signed URLs"
+  - metric: "Lisensya"
+    value: "Apache-2.0 / MIT"
+
+validation:
+  - "Itinampok sa artikulo ng 2026-06-11: CloudCDN — An Open-Source Blueprint for the AI-Native Edge"
+  - "Naka-map sa DORA Article 5, BCBS 239, at operational risk ng Basel III"

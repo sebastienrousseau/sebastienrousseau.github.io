@@ -1,0 +1,48 @@
+title: "pain001 — automatizace platebních souborů ISO 20022"
+banner_alt: "Letecký pohled na město za soumraku — symbolizuje automatizaci strukturovaných platebních souborů podle ISO 20022 napříč globálními clearingovými sítěmi"
+sector: "Open-source · Korporátní treasury · ISO 20022"
+role: "Autor a správce projektu"
+status: "Produkční nasazení, aktivně udržováno"
+
+outcome_highlights:
+  - value: "pain.001"
+    label: "Customer Credit Transfer Initiation"
+  - value: "XSD-validated"
+    label: "Pre-flight kontrola u každé zprávy"
+  - value: "IBAN + BIC + LEI"
+    label: "Kontrolní součty ISO 7064 Modulo 97-10"
+  - value: "Apache-2.0 / MIT"
+    label: "Volné k použití, forkování, auditu"
+
+pull_quote: >
+  "Citováno v bílé knize EPAA Quantum-Safe Payments (září 2025).
+  Open-source, auditovatelné od prvního dne — žádný proprietární
+  překladač mezi vaším ERP a clearingovou sítí."
+
+problem: >
+  Globální migrace MT → MX nutí každou banku a korporátní treasury
+  produkovat strukturované zprávy pain.001. Většina týmů buď ručně píše
+  křehké XML, nebo nakupuje neprůhledné proprietární překladače. Obě
+  cesty posílají platební chyby do clearingových sítí a nezanechávají
+  žádnou auditní stopu.
+
+what_i_built: >
+  Open-source Python knihovna, která generuje validované zprávy
+  ISO 20022 pain.001 (Customer Credit Transfer Initiation) z CSV /
+  SQLite / Parquet. Pre-flight XSD validace, kontrolní součty IBAN /
+  BIC, maskování PII a plná shoda se schématem XSD — to vše uvnitř
+  Python workflow, který zapadne do stávajících ERP a treasury pipeline.
+
+rigour:
+  - metric: "Podporované zprávy ISO 20022"
+    value: "pain.001 (Customer Credit Transfer Initiation)"
+  - metric: "Shoda se schématem"
+    value: "Oficiální XSD validace pre-flight u každé zprávy"
+  - metric: "Dodané validátory"
+    value: "Kontrolní číslice IBAN + BIC + kontrolní součet LEI (ISO 7064 Modulo 97-10)"
+  - metric: "Licence"
+    value: "Apache-2.0 / MIT — volné k použití, forkování, auditu"
+
+validation:
+  - "Citováno v bílé knize EPAA Quantum-Safe Payments (září 2025)"
+  - "Představeno v článcích publikovaných na sebastienrousseau.com od září 2023"

@@ -1,0 +1,45 @@
+title: "pain001 — automatisering av ISO 20022-betalningsfiler"
+banner_alt: "Stadssiluett från luften i skymning — bild för automatisering av strukturerade betalningsfiler enligt ISO 20022 över globala clearingnätverk"
+sector: "Öppen källkod · Corporate treasury · ISO 20022"
+role: "Författare och underhållare"
+status: "I produktion, aktivt underhållen"
+
+outcome_highlights:
+  - label: "Customer Credit Transfer Initiation"
+  - label: "Förkontroll av varje meddelande"
+  - label: "Kontrollsummor enligt ISO 7064 Modulo 97-10"
+  - label: "Fri att använda, forka och granska"
+
+pull_quote: >
+  "Citerad i EPAA:s Quantum-Safe Payments-vitbok (september 2025).
+  Öppen källkod, granskningsbar från dag ett — ingen proprietär
+  översättare mellan ditt affärssystem och clearingnätverket."
+
+problem: >
+  Den globala MT-till-MX-migreringen tvingar varje bank och varje
+  corporate treasury att producera strukturerade PAIN.001-meddelanden.
+  De flesta team handrullar skör XML eller köper ogenomskinliga
+  proprietära översättare. Bägge vägarna skickar betalningsfel in i
+  clearingnätverken och lämnar inget granskningsspår.
+
+what_i_built: >
+  Ett Python-bibliotek med öppen källkod som genererar validerade
+  ISO 20022 PAIN.001-meddelanden (Customer Credit Transfer Initiation)
+  från CSV, SQLite eller Parquet. XSD-förvalidering, IBAN- och
+  BIC-kontrollsummor, PII-maskering och fullständig XSD-schemaöverensstämmelse
+  — allt inuti ett Python-arbetsflöde som hakar in i befintliga
+  affärssystem- och treasury-pipelines.
+
+rigour:
+  - metric: "ISO 20022-meddelanden som stöds"
+    value: "PAIN.001 (Customer Credit Transfer Initiation)"
+  - metric: "Schemaöverensstämmelse"
+    value: "Officiell XSD-förvalidering på varje meddelande"
+  - metric: "Levererade validatorer"
+    value: "IBAN-kontrollsiffra, BIC- och LEI-kontrollsumma (ISO 7064 Modulo 97-10)"
+  - metric: "Licens"
+    value: "Apache-2.0 / MIT — fri att använda, forka och granska"
+
+validation:
+  - "Citerad i EPAA:s Quantum-Safe Payments-vitbok (september 2025)"
+  - "Behandlad i artiklar på sebastienrousseau.com sedan september 2023"

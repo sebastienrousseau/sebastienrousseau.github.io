@@ -1,0 +1,49 @@
+title: "BankStatementParser — jednotná transakční inteligence pro treasury"
+banner_alt: "Moderní finanční kancelář v noci — symbolizuje jednotnou transakční inteligenci napříč formáty bankovních výpisů CAMT, MT940, OFX a CSV"
+sector: "Open-source · Korporátní treasury · Agregace rizikových dat"
+role: "Autor a správce projektu"
+status: "Produkční nasazení, aktivně udržováno"
+
+outcome_highlights:
+  - value: "6 formats"
+    label: "CAMT (.052/.053/.054), MT940, OFX, CSV, OCR PDF"
+  - value: "Per-field"
+    label: "Sledování původu: zdrojový formát + verze parseru zaznamenány"
+  - value: "BCBS 239"
+    label: "V souladu s agregací rizikových dat"
+  - value: "Apache-2.0 / MIT"
+    label: "Volné k použití, forkování, auditu"
+
+pull_quote: >
+  "Parsery CAMT / MT940 / PAIN validované proti schématu, OCR záloha pro
+  skenovaná PDF, deterministické mapování polí, auditní důkazy úrovně
+  SR 11-7 — každý krok transformace zaznamenán a reprodukovatelný."
+
+problem: >
+  Korporátní treasury týmy přijímají bankovní výpisy ve formátech CAMT,
+  PAIN.001, MT940, OFX, CSV a jako skenovaná PDF od desítek bank. Každý
+  formát nese odlišnou sémantiku polí, kódování a nejednoznačnosti.
+  Většina týmů ručně staví křehké parsery pro každou banku zvlášť, což
+  blokuje cash forecasting v reálném čase, detekci podvodů a auditně
+  připravenou rekonciliaci.
+
+what_i_built: >
+  Open-source Python sada, která sjednocuje každý běžný formát
+  bankovního výpisu do jediného normalizovaného toku transakcí. Parsery
+  CAMT / MT940 / PAIN validované proti schématu, OCR záloha pro
+  skenovaná PDF, deterministické mapování polí a auditní důkazy úrovně
+  SR 11-7 pro každý krok transformace.
+
+rigour:
+  - metric: "Podporované formáty"
+    value: "CAMT (.052, .053, .054), MT940, OFX, CSV, skenované PDF (OCR)"
+  - metric: "Cíl normalizace"
+    value: "Jednotné sjednocené schéma záznamu transakce"
+  - metric: "Auditní stopa"
+    value: "Sledování původu na úrovni pole — zdrojový formát + verze parseru zaznamenány u každého řádku"
+  - metric: "Licence"
+    value: "Apache-2.0 / MIT"
+
+validation:
+  - "Představeno v článku z 14. 6. 2026: From Bank Statements to Unified Transaction Intelligence"
+  - "Navrženo tak, aby splňovalo požadavky BCBS 239 na agregaci rizikových dat"

@@ -317,6 +317,30 @@ function fallbackCopy(text, done) {
 })();
 
 /**
+ * Scroll-reveal for [data-reveal] elements (Apple-HIG primitive).
+ * Fades + slides up on first intersection. Separate from .reveal so the
+ * existing landing-page reveal-on-scroll behaviour stays untouched.
+ */
+(function () {
+    "use strict";
+    var targets = document.querySelectorAll("[data-reveal]");
+    if (!targets.length) return;
+    if (typeof IntersectionObserver !== "function") {
+        targets.forEach(function (el) { el.classList.add("is-revealed"); });
+        return;
+    }
+    var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("is-revealed");
+                io.unobserve(entry.target);
+            }
+        });
+    }, { rootMargin: "0px 0px -8% 0px", threshold: 0.08 });
+    targets.forEach(function (el) { io.observe(el); });
+})();
+
+/**
  * Light / dark theme toggle.
  * The initial theme is set in <head> by theme-init.js before paint. This handler
  * flips the data-theme attribute and persists the choice in localStorage. We

@@ -284,6 +284,14 @@
     [
       "<a href=\"/contact/index\\.html\">Get in touch</a>",
       "<a href=\"/yo/kan-si-wa/index.html\">Kàn sí wa</a>"
+    ],
+    [
+      "<li><a href=\"?/case-studies/index\\.html\"?>Case studies</a></li>",
+      "<li><a href=\"/yo/iwadi-apeere/index.html\">Iwadi àpẹẹrẹ</a></li>"
+    ],
+    [
+      "<a href=\"?/case-studies/index\\.html\"?>Case studies</a>",
+      "<a href=\"/yo/iwadi-apeere/index.html\">Iwadi àpẹẹrẹ</a>"
     ]
   ]
 }

@@ -1,0 +1,45 @@
+title: "BankStatementParser — enhetlig transaktionsintelligens för treasury"
+banner_alt: "Modernt finanskontor om natten — bild för enhetlig transaktionsintelligens över kontoutdragsformaten CAMT, MT940, OFX och CSV"
+sector: "Öppen källkod · Corporate treasury · Aggregering av riskdata"
+role: "Författare och underhållare"
+status: "I produktion, aktivt underhållen"
+
+outcome_highlights:
+  - label: "CAMT (.052/.053/.054), MT940, OFX, CSV, OCR-PDF"
+  - label: "Härkomst per fält: källformat och parserversion loggas"
+  - label: "Linjerad med aggregering av riskdata enligt BCBS 239"
+  - label: "Fri att använda, forka och granska"
+
+pull_quote: >
+  "Schemavaliderade parsrar för CAMT, MT940 och PAIN, OCR-fallback för
+  skannade PDF-filer, deterministisk fältmappning och granskningsbevis
+  på SR 11-7-nivå — varje transformationssteg loggat och reproducerbart."
+
+problem: >
+  Corporate treasury-team tar emot kontoutdrag i CAMT, PAIN.001, MT940,
+  OFX, CSV och som skannade PDF-filer från dussintals banker. Varje
+  format har egen fältsemantik, egen kodning och egna tvetydigheter.
+  De flesta team handbygger sköra bankspecifika parsrar, vilket blockerar
+  kassaprognoser i realtid, bedrägeridetektion och granskningsfärdig
+  avstämning.
+
+what_i_built: >
+  Ett Python-verktyg med öppen källkod som förenar alla vanliga
+  kontoutdragsformat till en enda normaliserad transaktionsström.
+  Schemavaliderade parsrar för CAMT, MT940 och PAIN, OCR-fallback för
+  skannade PDF-filer, deterministisk fältmappning och granskningsbevis
+  på SR 11-7-nivå för varje transformationssteg.
+
+rigour:
+  - metric: "Format som stöds"
+    value: "CAMT (.052, .053, .054), MT940, OFX, CSV, skannad PDF (OCR)"
+  - metric: "Normaliseringsmål"
+    value: "Ett enhetligt schema för transaktionspost"
+  - metric: "Granskningsspår"
+    value: "Härkomst per fält — källformat och parserversion loggas per rad"
+  - metric: "Licens"
+    value: "Apache-2.0 / MIT"
+
+validation:
+  - "Behandlad i artikeln från 2026-06-14: Från kontoutdrag till enhetlig transaktionsintelligens"
+  - "Utformad för att uppfylla kraven på aggregering av riskdata enligt BCBS 239"

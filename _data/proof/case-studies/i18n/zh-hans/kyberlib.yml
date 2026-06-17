@@ -1,0 +1,50 @@
+title: "KyberLib——基于 Rust 的生产级 ML-KEM 实现"
+banner_alt: "抗量子密钥交换——象征银行业 FIPS 203 ML-KEM 迁移进程"
+sector: "开源 · 银行业 · 标准"
+role: "作者与维护者"
+status: "生产环境运行，持续维护"
+
+outcome_highlights:
+  - value: "FIPS 203"
+    label: "对齐 NIST 发布路线"
+  - value: "Top 44 %"
+    label: "约 182 个 PQC 库中位列前 44%（Qtonic Lab 评估）"
+  - value: "no_std"
+    label: "可嵌入 HSM 与安全飞地"
+  - value: "1 adopter"
+    label: "QGram（Quantum2pi）后量子即时通讯"
+
+pull_quote: >
+  「经 Qtonic Quantum Lab——独立后量子密码学评估登记机构——评估，并被
+  QGram（Quantum2pi）端到端加密通讯采用。两项均可绕开本人独立查证。」
+
+problem: >
+  银行业正面临 2026 年 11 月 14 日 SWIFT 结构化地址切换截止日，以及更长的
+  NIST 后量子迁移窗口。现有 PQC 实现要么停留在政策白皮书与实验室代码层面，
+  要么以专有 HSM 黑盒形态交付——支付架构师既无法阅读、亦无法测试，更无法
+  签名背书。
+
+what_i_built: >
+  KyberLib 将 FIPS 203 ML-KEM（CRYSTALS-Kyber）转化为可被审阅的 Rust 实现。
+  支持经典与抗量子混合握手，提供 no_std 编译以适配 HSM 嵌入，给出密码敏捷
+  的抽象边界，并附带 DORA 第 5 条要求的治理证据，让董事会能够在不承担不
+  透明厂商风险的前提下推进 PQC 迁移。
+
+rigour:
+  - metric: "密码学标准"
+    value: "FIPS 203（ML-KEM，原 CRYSTALS-Kyber）"
+  - metric: "混合握手支持"
+    value: "经典 TLS + ML-KEM-768 X25519MLKEM768 模式"
+  - metric: "编译"
+    value: "no_std——可嵌入 HSM、安全飞地与嵌入式目标"
+  - metric: "密码敏捷性"
+    value: "抽象边界支持在不更动 API 的前提下替换算法"
+  - metric: "许可证"
+    value: "Apache-2.0 / MIT"
+
+validation:
+  - "EPAA 抗量子支付白皮书（2025 年 9 月）引用"
+  - "入选 2026-06-12 文章《KyberLib 与后量子银行业迁移》"
+  - "对齐 NIST FIPS 203 / 204 / 205 发布路线"
+  - "经 Qtonic Quantum Lab 评估——独立后量子密码学评估登记机构，已评估约 182 个 PQC 库（位列前 44%，无厂商付费入榜）"
+  - "被 QGram（Quantum2pi）采用——一款使用 KyberLib 进行消息加密的后量子端到端加密点对点通讯应用（可在 f6s.com/software/qgram 查证）"

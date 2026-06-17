@@ -1,0 +1,50 @@
+title: "CloudCDN — yapay zekâ doğumlu edge için açık kaynak şablon"
+banner_alt: "Yapay zekâ doğumlu edge altyapısı — CloudCDN'nin referans uygulama olarak sunduğu sıfır güven MCP geçidi, atomik Durable Objects oran sınırlaması ve WebAuthn passkey çevresini simgeliyor"
+sector: "Açık kaynak · Edge · Yapay zekâ altyapısı"
+role: "Yazar ve sürdürücü"
+status: "Üretimde, etkin biçimde bakımı sürüyor"
+
+outcome_highlights:
+  - label: "%100 satır, dal ve fonksiyon kapsama"
+  - label: "Yapı kökeni ve Sigstore imzalama"
+  - label: "Her çağrı yapısal kanıtla denetim kaydında"
+  - label: "DORA Madde 5 ve risk verisi toplama ile eşlendi"
+
+pull_quote: >
+  "Güvenlik ekibinin okuyabileceği, çatallayabileceği ve
+  imzalayabileceği açık kaynak bir referans uygulama — pazarlama
+  PDF'si değil. Atomik Durable Objects oran sınırlaması, WebAuthn
+  çevresi, SLSA L3 kökeni."
+
+problem: >
+  Yapay zekâ ajanları ve MCP araçları edge API'lerini ölçekli biçimde
+  çağırmaya başlarken bankalar, DORA seviyesinde denetim kanıtını
+  feda etmeden otonom trafiği taşıyabilecek bir çevre güvenliğine
+  ihtiyaç duyuyor. Mevcut CDN'ler ya pazarlama dili ya da kapalı
+  planlar sunuyor — hiçbiri güvenlik ekibinin okuyup çatallayıp
+  imzalayabileceği referans uygulamayı üretmiyor.
+
+what_i_built: >
+  42 araçlı, atomik Durable Objects oran sınırlamalı, WebAuthn
+  passkey çevreli, imzalı URL'li ve SLSA Seviye 3 yapı kökenli, açık
+  kaynaklı bir sıfır güven MCP geçidi. %100 kapsamayla 3.185 test;
+  DORA Madde 5, BCBS 239 risk verisi toplama ve Basel III operasyonel
+  risk sermayesi ile eşlendi.
+
+rigour:
+  - metric: "Testler"
+    value: "%100 satır, dal ve fonksiyon kapsamasında 3.185 test"
+  - metric: "Tedarik zinciri kökeni"
+    value: "SLSA Seviye 3 yapı kökeni ve Sigstore imzalama"
+  - metric: "Sunulan MCP araçları"
+    value: "42 araç — her çağrı yapısal kanıtla denetim kaydında"
+  - metric: "Oran sınırlama"
+    value: "Atomik Durable Objects (yarış durumu yok, çift sayım yok)"
+  - metric: "Kimlik doğrulama"
+    value: "WebAuthn passkey'ler ve imzalı URL'ler"
+  - metric: "Lisans"
+    value: "Apache-2.0 / MIT"
+
+validation:
+  - "2026-06-11 tarihli makalede yer aldı: CloudCDN — Yapay Zekâ Doğumlu Edge için Açık Kaynak Şablon"
+  - "DORA Madde 5, BCBS 239 ve Basel III operasyonel risk ile eşlendi"

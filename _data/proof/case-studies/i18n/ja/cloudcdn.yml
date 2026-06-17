@@ -1,0 +1,52 @@
+title: "CloudCDN — AI ネイティブ・エッジのためのオープンソース設計図"
+banner_alt: "AI ネイティブ・エッジ・インフラストラクチャ — CloudCDN がリファレンス実装として提供するゼロトラスト MCP ゲートウェイ、原子的な Durable Objects レート制限、WebAuthn パスキー境界を象徴"
+sector: "オープンソース・エッジ・AI インフラストラクチャ"
+role: "作者およびメンテナー"
+status: "本番稼働中、継続メンテナンス"
+
+outcome_highlights:
+  - value: "3,185 tests"
+    label: "行・分岐・関数カバレッジ 100 %"
+  - value: "SLSA L3"
+    label: "ビルド・プロベナンスと Sigstore 署名"
+  - value: "42 MCP tools"
+    label: "すべての呼び出しを構造化された証跡として監査ログ記録"
+  - value: "DORA / BCBS 239"
+    label: "第 5 条およびリスクデータ集約要件にマッピング"
+
+pull_quote: >
+  「マーケティング PDF ではなく、セキュリティチームが読み、フォークし、
+  署名できるオープンソースのリファレンス実装です。原子的な Durable
+  Objects レート制限、WebAuthn 境界、SLSA L3 プロベナンス。」
+
+problem: >
+  AI エージェントと MCP ツールが大規模にエッジ API を呼び出し始める中、
+  銀行は DORA 水準の監査証跡を犠牲にすることなく、自律的なトラフィックに
+  耐えうる境界を必要としています。既存の CDN はマーケティング言語か
+  不透明なプランのいずれかしか提供せず、セキュリティチームが読み、
+  フォークし、署名できるリファレンス実装を提供するものはありません。
+
+what_i_built: >
+  オープンソースのゼロトラスト MCP ゲートウェイで、42 個のツール、原子的な
+  Durable Objects レート制限、WebAuthn パスキー境界、署名付き URL、
+  SLSA Level 3 のビルド・プロベナンスを備えています。3,185 件のテストを
+  カバレッジ 100 % で実施し、DORA 第 5 条、BCBS 239 リスクデータ集約、
+  バーゼル III オペレーショナル・リスク資本にマッピングされています。
+
+rigour:
+  - metric: "テスト"
+    value: "3,185 件のテスト、行・分岐・関数カバレッジ 100 %"
+  - metric: "サプライチェーン・プロベナンス"
+    value: "SLSA Level 3 ビルド・プロベナンスと Sigstore 署名"
+  - metric: "提供 MCP ツール数"
+    value: "42 ツール — すべての呼び出しを構造化された証跡として監査ログ記録"
+  - metric: "レート制限"
+    value: "原子的な Durable Objects (競合状態なし、二重カウントなし)"
+  - metric: "認証"
+    value: "WebAuthn パスキーと署名付き URL"
+  - metric: "ライセンス"
+    value: "Apache-2.0 / MIT"
+
+validation:
+  - "2026-06-11 公開記事『CloudCDN — An Open-Source Blueprint for the AI-Native Edge』にて取り上げられました"
+  - "DORA 第 5 条、BCBS 239、バーゼル III オペレーショナル・リスクにマッピング"

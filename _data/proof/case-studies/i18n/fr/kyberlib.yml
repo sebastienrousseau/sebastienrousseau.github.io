@@ -1,0 +1,55 @@
+title: "KyberLib — ML-KEM de qualité production en Rust"
+banner_alt: "Échange de clés cryptographiques résistant au quantique — symbolisant la migration ML-KEM FIPS 203 dans la banque"
+sector: "Open source · Banque · Standards"
+role: "Auteur et mainteneur"
+status: "En production, activement maintenu"
+
+outcome_highlights:
+  - value: "FIPS 203"
+    label: "Aligné sur la trajectoire de publication NIST"
+  - value: "Top 44 %"
+    label: "Sur environ 182 bibliothèques PQC (Qtonic Lab)"
+  - value: "no_std"
+    label: "Embarquable dans les HSM et enclaves sécurisées"
+  - value: "1 adopteur"
+    label: "Messagerie post-quantique QGram (Quantum2pi)"
+
+pull_quote: >
+  « Évaluée par Qtonic Quantum Lab — registre indépendant de cryptographie
+  post-quantique — et adoptée par QGram (Quantum2pi) pour la messagerie
+  chiffrée de bout en bout. Les deux sont vérifiables sans passer par moi. »
+
+problem: >
+  Les banques font face à une bascule SWIFT d'adresses structurées au
+  14 novembre 2026 et à une fenêtre plus longue de migration
+  post-quantique NIST. Les implémentations PQC existantes se présentent
+  sous forme de notes de politique, de code de laboratoire ou de boîtes
+  noires HSM propriétaires — aucune qu'un architecte paiements ne puisse
+  lire, tester ou signer.
+
+what_i_built: >
+  KyberLib transforme ML-KEM FIPS 203 (CRYSTALS-Kyber) en Rust
+  inspectable. Handshakes hybrides classique + quantique, compilation
+  no_std pour l'embarquement HSM, frontières d'abstraction crypto-agiles
+  et les preuves de gouvernance article 5 de DORA dont les conseils ont
+  désormais besoin pour soutenir la migration PQC sans s'exposer à un
+  risque fournisseur opaque.
+
+rigour:
+  - metric: "Standard cryptographique"
+    value: "FIPS 203 (ML-KEM, anciennement CRYSTALS-Kyber)"
+  - metric: "Prise en charge du handshake hybride"
+    value: "TLS classique + mode ML-KEM-768 X25519MLKEM768"
+  - metric: "Compilation"
+    value: "no_std — embarquable dans HSM, enclaves sécurisées et cibles embarquées"
+  - metric: "Crypto-agilité"
+    value: "Les frontières d'abstraction permettent un changement d'algorithme sans modification d'API"
+  - metric: "Licence"
+    value: "Apache-2.0 / MIT"
+
+validation:
+  - "Citée dans le livre blanc EPAA Quantum-Safe Payments (septembre 2025)"
+  - "Présentée dans l'article du 2026-06-12 : KyberLib and the Post-Quantum Banking Migration"
+  - "Alignée sur la trajectoire de publication NIST FIPS 203 / 204 / 205"
+  - "Évaluée par Qtonic Quantum Lab — registre indépendant d'évaluation de cryptographie post-quantique, environ 182 bibliothèques PQC évaluées (top 44 %, aucun paiement fournisseur pour inclusion)"
+  - "Adoptée par QGram (Quantum2pi) — messagerie pair-à-pair post-quantique chiffrée de bout en bout qui utilise KyberLib pour le chiffrement des messages (vérifiable sur f6s.com/software/qgram)"

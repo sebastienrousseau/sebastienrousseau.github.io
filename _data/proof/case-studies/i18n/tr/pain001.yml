@@ -1,0 +1,44 @@
+title: "pain001 — ISO 20022 ödeme dosyalarının otomasyonu"
+banner_alt: "Alacakaranlıkta hava perspektifinden şehir manzarası — küresel takas ağlarında ISO 20022 kapsamında yapılandırılmış ödeme dosyası otomasyonunu simgeliyor"
+sector: "Açık kaynak · Kurumsal hazine · ISO 20022"
+role: "Yazar ve sürdürücü"
+status: "Üretimde, etkin biçimde bakımı sürüyor"
+
+outcome_highlights:
+  - label: "Müşteri Kredi Transferi Başlatma"
+  - label: "Her mesajda uçuş öncesi doğrulama"
+  - label: "ISO 7064 Modulo 97-10 sağlama toplamları"
+  - label: "Serbest kullanım, çatallama ve denetim"
+
+pull_quote: >
+  "EPAA Quantum-Safe Payments teknik raporunda atıf aldı (Eylül 2025).
+  Açık kaynak, ilk günden denetlenmiş — ERP'niz ile takas ağı arasında
+  tescilli bir çevirmen yok."
+
+problem: >
+  Küresel MT → MX göçü, her bankayı ve kurumsal hazineyi
+  yapılandırılmış pain.001 mesajları üretmeye zorluyor. Çoğu ekip
+  kırılgan XML'i elle yazıyor ya da kapalı kutu tescilli çevirmenler
+  satın alıyor. Her iki yol da takas ağlarına ödeme hataları
+  gönderiyor ve denetim izi bırakmıyor.
+
+what_i_built: >
+  CSV / SQLite / Parquet'ten doğrulanmış ISO 20022 pain.001 (Müşteri
+  Kredi Transferi Başlatma) mesajları üreten açık kaynak bir Python
+  kütüphanesi. Uçuş öncesi XSD doğrulaması, IBAN / BIC sağlama
+  toplamları, PII maskeleme ve eksiksiz XSD şema uyumu — tümü mevcut
+  ERP ve hazine boru hatlarına yerleşen bir Python iş akışı içinde.
+
+rigour:
+  - metric: "Desteklenen ISO 20022 mesajları"
+    value: "pain.001 (Müşteri Kredi Transferi Başlatma)"
+  - metric: "Şema uyumu"
+    value: "Her mesajda uçuş öncesi resmi XSD doğrulaması"
+  - metric: "Sunulan doğrulayıcılar"
+    value: "IBAN kontrol hanesi + BIC + LEI sağlama toplamı (ISO 7064 Modulo 97-10)"
+  - metric: "Lisans"
+    value: "Apache-2.0 / MIT — serbest kullanım, çatallama, denetim"
+
+validation:
+  - "EPAA Quantum-Safe Payments teknik raporunda atıf aldı (Eylül 2025)"
+  - "2023-09'dan bu yana sebastienrousseau.com'da yayımlanan makalelerde yer aldı"

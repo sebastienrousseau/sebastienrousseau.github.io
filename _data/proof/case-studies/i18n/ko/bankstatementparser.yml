@@ -1,0 +1,47 @@
+title: "BankStatementParser — 트레저리를 위한 통합 거래 인텔리전스"
+banner_alt: "야간의 현대적 금융 사무실 — CAMT, MT940, OFX, CSV 은행 명세서 형식 전반에 걸친 통합 거래 인텔리전스를 상징"
+sector: "오픈소스 · 기업 트레저리 · 리스크 데이터 집계"
+role: "저자 및 메인테이너"
+status: "프로덕션, 적극적으로 유지 관리 중"
+
+outcome_highlights:
+  - value: "6 formats"
+    label: "CAMT (.052/.053/.054), MT940, OFX, CSV, OCR PDF"
+  - value: "Per-field"
+    label: "출처 기록: 원본 형식 및 파서 버전 로깅"
+  - value: "BCBS 239"
+    label: "리스크 데이터 집계 정합"
+  - value: "Apache-2.0 / MIT"
+    label: "자유롭게 사용, 포크, 감사 가능"
+
+pull_quote: >
+  "스키마 검증된 CAMT / MT940 / PAIN 파서, 스캔된 PDF용 OCR 폴백,
+  결정론적 필드 매핑, SR 11-7 수준의 감사 증거 — 모든 변환
+  단계가 기록되고 재현 가능합니다."
+
+problem: >
+  기업 트레저리 팀은 수십 개의 은행으로부터 CAMT, PAIN.001,
+  MT940, OFX, CSV 및 스캔된 PDF 형식으로 은행 명세서를 수신합니다.
+  각 형식은 서로 다른 필드 의미론, 인코딩, 모호성을 수반합니다.
+  대부분의 팀은 은행별로 취약한 파서를 수작업으로 구축하며,
+  이는 실시간 현금 예측, 사기 탐지, 감사 가능한 조정 작업을 가로막습니다.
+
+what_i_built: >
+  모든 일반적인 은행 명세서 형식을 단일 정규화된 거래 스트림으로
+  통합하는 오픈소스 Python 툴킷입니다. 스키마 검증된 CAMT / MT940 /
+  PAIN 파서, 스캔된 PDF용 OCR 폴백, 결정론적 필드 매핑, 그리고
+  모든 변환 단계에 대한 SR 11-7 수준의 감사 증거를 제공합니다.
+
+rigour:
+  - metric: "지원 형식"
+    value: "CAMT (.052, .053, .054), MT940, OFX, CSV, 스캔 PDF (OCR)"
+  - metric: "정규화 대상"
+    value: "단일 통합 거래 레코드 스키마"
+  - metric: "감사 추적"
+    value: "필드별 출처 기록 — 원본 형식 및 파서 버전을 행 단위로 로깅"
+  - metric: "라이선스"
+    value: "Apache-2.0 / MIT"
+
+validation:
+  - "2026년 6월 14일 기사 게재: 은행 명세서에서 통합 거래 인텔리전스로"
+  - "BCBS 239 리스크 데이터 집계 요건을 충족하도록 설계됨"

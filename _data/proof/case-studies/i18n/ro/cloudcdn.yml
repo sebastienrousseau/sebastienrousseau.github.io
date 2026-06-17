@@ -1,0 +1,55 @@
+title: "CloudCDN — un model open-source pentru marginea nativ AI"
+banner_alt: "Infrastructură de margine nativ AI — simbolizând gateway-ul MCP zero-trust, limitarea atomică a ratei prin Durable Objects și perimetrul cu chei de acces WebAuthn pe care CloudCDN îl livrează ca implementare de referință"
+sector: "Open-source · Margine · Infrastructură AI"
+role: "Autor și mentenant"
+status: "În producție, întreținut activ"
+
+outcome_highlights:
+  - value: "3.185 de teste"
+    label: "100 % acoperire pe linii, ramuri și funcții"
+  - value: "SLSA L3"
+    label: "Proveniență a build-ului + semnare Sigstore"
+  - value: "42 de instrumente MCP"
+    label: "Fiecare apel înregistrat în audit cu dovezi structurate"
+  - value: "DORA / BCBS 239"
+    label: "Mapat la Articolul 5 și la agregarea datelor de risc"
+
+pull_quote: >
+  „O implementare de referință open-source pe care o echipă de securitate
+  o poate citi, modifica și semna — în loc de un PDF de marketing.
+  Limitare atomică a ratei prin Durable Objects, perimetru WebAuthn,
+  proveniență SLSA L3.”
+
+problem: >
+  Pe măsură ce agenții AI și instrumentele MCP încep să apeleze API-uri
+  de margine la scară, băncile au nevoie de un perimetru care să reziste
+  traficului autonom fără a sacrifica dovezile de audit la nivel DORA.
+  CDN-urile existente oferă fie limbaj de marketing, fie planuri opace
+  — niciuna nu produce implementarea de referință pe care o echipă de
+  securitate o poate citi, modifica și semna.
+
+what_i_built: >
+  Un gateway MCP open-source, zero-trust, cu 42 de instrumente, limitare
+  atomică a ratei prin Durable Objects, perimetru cu chei de acces
+  WebAuthn, URL-uri semnate și proveniență a build-ului SLSA Nivel 3.
+  3.185 de teste cu acoperire de 100 %, mapate la Articolul 5 din DORA,
+  la agregarea datelor de risc BCBS 239 și la capitalul de risc
+  operațional Basel III.
+
+rigour:
+  - metric: "Teste"
+    value: "3.185 de teste cu acoperire de 100 % pe linii, ramuri și funcții"
+  - metric: "Proveniență în lanțul de aprovizionare"
+    value: "Proveniență a build-ului SLSA Nivel 3 + semnare Sigstore"
+  - metric: "Instrumente MCP livrate"
+    value: "42 de instrumente — fiecare apel înregistrat în audit cu dovezi structurate"
+  - metric: "Limitare a ratei"
+    value: "Durable Objects atomice (fără condiții de cursă, fără numărări duble)"
+  - metric: "Autentificare"
+    value: "Chei de acces WebAuthn + URL-uri semnate"
+  - metric: "Licență"
+    value: "Apache-2.0 / MIT"
+
+validation:
+  - "Prezentat în articolul din 11.06.2026: CloudCDN — un model open-source pentru marginea nativ AI"
+  - "Mapat la Articolul 5 din DORA, BCBS 239, riscul operațional Basel III"

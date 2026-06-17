@@ -16,7 +16,8 @@
     "404": "404",
     "offline": "bez-soedineniya",
     "thanks": "spasibo",
-    "articles": "stati"
+    "articles": "stati",
+    "case-studies": "kejs-stadi"
   },
   "articles": {
     "2018-01-01-bitcoin-the-year-in-review": "2018-01-01-bitcoin-itogi-goda",

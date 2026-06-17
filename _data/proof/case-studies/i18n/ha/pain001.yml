@@ -1,0 +1,49 @@
+title: "pain001 — sarrafa fayilolin biyan kuɗi na ISO 20022 ta atomatik"
+banner_alt: "Hangen birni daga sama da dare — alama ce ta sarrafa fayilolin biyan kuɗi mai tsari a ƙarƙashin ISO 20022 a tsakanin hanyoyin tsabtacewa na duniya"
+sector: "Buɗaɗɗen tushe · Ma'aikatar kuɗi ta kamfani · ISO 20022"
+role: "Marubuci kuma mai kula"
+status: "Yana aiki cikin samarwa, ana kula da shi a kullum"
+
+outcome_highlights:
+  - value: "pain.001"
+    label: "Fara Canja Wurin Bashi na Abokin Ciniki"
+  - value: "XSD-validated"
+    label: "Bincike kafin tashi a kowane saƙo"
+  - value: "IBAN + BIC + LEI"
+    label: "ISO 7064 Modulo 97-10 cak"
+  - value: "Apache-2.0 / MIT"
+    label: "Kyauta don amfani, fork, da bincike"
+
+pull_quote: >
+  "An ambato shi a takardar fararen takarda ta EPAA Quantum-Safe Payments
+  (Satumba 2025). Buɗaɗɗen tushe, an bincika tun rana ta farko — babu mai
+  fassara mai mallaka tsakanin ERP ɗinka da hanyar sadarwa ta tsabtacewa."
+
+problem: >
+  Ƙaurar duniya daga MT zuwa MX ta tilasta wa kowane banki da ma'aikatar
+  kuɗi ta kamfani su samar da saƙonnin pain.001 masu tsari. Yawancin
+  ƙungiyoyi suna gina XML mai rauni da hannu ko siyan masu fassara masu
+  mallaka marasa fahimta. Hanyoyi biyu suna aika kurakuran biyan kuɗi
+  cikin hanyoyin tsabtacewa kuma sun bar babu hanyar bincike.
+
+what_i_built: >
+  Ɗakin karatu na Python na buɗaɗɗen tushe wanda ke samar da saƙonnin
+  pain.001 (Fara Canja Wurin Bashi na Abokin Ciniki) na ISO 20022 da aka
+  tabbatar daga CSV / SQLite / Parquet. Tabbatarwar XSD kafin tashi,
+  cak na IBAN / BIC, ɓoye PII, da cikakkiyar daidaitawa da tsarin XSD —
+  duk a cikin tafarkin Python wanda ke shiga cikin tafarkin ERP da
+  ma'aikatar kuɗi da ke akwai.
+
+rigour:
+  - metric: "Saƙonnin ISO 20022 da aka tallafa"
+    value: "pain.001 (Fara Canja Wurin Bashi na Abokin Ciniki)"
+  - metric: "Daidaitawa da tsari"
+    value: "Tabbatarwar XSD ta hukuma kafin tashi a kowane saƙo"
+  - metric: "Masu tabbatarwa da aka kawo"
+    value: "Cak na lambar IBAN + BIC + LEI (ISO 7064 Modulo 97-10)"
+  - metric: "Lasisi"
+    value: "Apache-2.0 / MIT — kyauta don amfani, fork, da bincike"
+
+validation:
+  - "An ambato shi a takardar fararen takarda ta EPAA Quantum-Safe Payments (Satumba 2025)"
+  - "An nuna shi a labaran da aka buga a sebastienrousseau.com tun 2023-09"

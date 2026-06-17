@@ -1,0 +1,44 @@
+title: "BankStatementParser——面向司库的统一交易情报引擎"
+banner_alt: "夜幕下的现代金融办公场景——象征 CAMT、MT940、OFX 与 CSV 银行对账单格式的统一交易情报"
+sector: "开源 · 企业司库 · 风险数据聚合"
+role: "作者与维护者"
+status: "生产环境运行，持续维护"
+
+outcome_highlights:
+  - value: "6 formats"
+    label: "CAMT（.052/.053/.054）、MT940、OFX、CSV、OCR PDF"
+  - value: "Per-field"
+    label: "逐字段溯源：源格式与解析器版本均留痕"
+  - value: "BCBS 239"
+    label: "对齐风险数据聚合要求"
+  - value: "Apache-2.0 / MIT"
+    label: "可自由使用、复刻、审计"
+
+pull_quote: >
+  「带模式校验的 CAMT / MT940 / PAIN 解析器，针对扫描 PDF 的 OCR 回退路径，
+  确定性字段映射，符合 SR 11-7 审计取证要求——每一步转换均可记录、可复现。」
+
+problem: >
+  企业司库团队每日从数十家银行接收 CAMT、PAIN.001、MT940、OFX、CSV 以及扫描
+  PDF 形态的对账单。各格式在字段语义、编码方式与歧义处理上各异。多数团队仍
+  在为每家银行手工搭建脆弱的解析器，阻碍了实时现金预测、欺诈检测与可审计
+  的对账流程。
+
+what_i_built: >
+  一套开源 Python 工具集，将常见银行对账单格式统一汇入单一规范化的交易流。
+  内置带模式校验的 CAMT / MT940 / PAIN 解析器、针对扫描 PDF 的 OCR 回退路径、
+  确定性字段映射，以及覆盖每一步转换、符合 SR 11-7 审计取证标准的证据链。
+
+rigour:
+  - metric: "支持的格式"
+    value: "CAMT（.052、.053、.054）、MT940、OFX、CSV、扫描 PDF（OCR）"
+  - metric: "规范化目标"
+    value: "单一统一交易记录模式"
+  - metric: "审计轨迹"
+    value: "逐字段溯源——每行均记录源格式与解析器版本"
+  - metric: "许可证"
+    value: "Apache-2.0 / MIT"
+
+validation:
+  - "入选 2026-06-14 文章《从银行对账单到统一交易情报》"
+  - "面向 BCBS 239 风险数据聚合要求设计"

@@ -1,0 +1,49 @@
+title: "CloudCDN — Open-Source-Blaupause für den KI-nativen Edge"
+banner_alt: "KI-native Edge-Infrastruktur — Sinnbild für das Zero-Trust-MCP-Gateway, die atomare Durable-Objects-Ratenbegrenzung und den WebAuthn-Passkey-Perimeter, den CloudCDN als Referenzimplementierung bereitstellt"
+sector: "Open Source · Edge · KI-Infrastruktur"
+role: "Autor und Maintainer"
+status: "Produktiv im Einsatz, aktiv gepflegt"
+
+outcome_highlights:
+  - label: "100 % Zeilen-, Branch- und Funktionsabdeckung"
+  - label: "Build-Provenienz und Sigstore-Signierung"
+  - label: "Jeder Aufruf mit strukturierten Nachweisen audit-protokolliert"
+  - label: "Abgebildet auf Artikel 5 und Risikodaten-Aggregation"
+
+pull_quote: >
+  „Eine Open-Source-Referenzimplementierung, die ein Security-Team lesen,
+  forken und signieren kann — statt eines Marketing-PDFs. Atomare
+  Durable-Objects-Ratenbegrenzung, WebAuthn-Perimeter, SLSA-L3-Provenienz."
+
+problem: >
+  Sobald KI-Agenten und MCP-Tools Edge-APIs in großem Maßstab aufrufen,
+  brauchen Banken einen Perimeter, der autonomen Verkehr aushält, ohne
+  Audit-Nachweise auf DORA-Niveau aufzugeben. Bestehende CDNs liefern
+  entweder Marketingsprache oder undurchsichtige Tarifmodelle — keines
+  davon produziert eine Referenzimplementierung, die ein Security-Team
+  lesen, forken und signieren kann.
+
+what_i_built: >
+  Ein Open-Source-Zero-Trust-MCP-Gateway mit 42 Tools, atomarer
+  Durable-Objects-Ratenbegrenzung, WebAuthn-Passkey-Perimeter, signierten
+  URLs und SLSA-Level-3-Build-Provenienz. 3.185 Tests bei 100 % Abdeckung,
+  abgebildet auf DORA Artikel 5, Risikodaten-Aggregation gemäß BCBS 239
+  und das operationelle Risikokapital nach Basel III.
+
+rigour:
+  - metric: "Tests"
+    value: "3.185 Tests bei 100 % Zeilen-, Branch- und Funktionsabdeckung"
+  - metric: "Lieferketten-Provenienz"
+    value: "SLSA-Level-3-Build-Provenienz und Sigstore-Signierung"
+  - metric: "Ausgelieferte MCP-Tools"
+    value: "42 Tools — jeder Aufruf mit strukturierten Nachweisen audit-protokolliert"
+  - metric: "Ratenbegrenzung"
+    value: "Atomare Durable Objects (keine Race Conditions, keine Doppelzählungen)"
+  - metric: "Authentifizierung"
+    value: "WebAuthn-Passkeys und signierte URLs"
+  - metric: "Lizenz"
+    value: "Apache-2.0 / MIT"
+
+validation:
+  - "Behandelt im Artikel vom 11.06.2026: CloudCDN — eine Open-Source-Blaupause für den KI-nativen Edge"
+  - "Abgebildet auf DORA Artikel 5, BCBS 239 und das operationelle Risiko nach Basel III"

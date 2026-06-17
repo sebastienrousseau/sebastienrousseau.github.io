@@ -1,0 +1,55 @@
+title: "KyberLib — ML-KEM van productiekwaliteit in Rust"
+banner_alt: "Kwantumbestendige cryptografische sleuteluitwisseling — symbool voor de FIPS 203 ML-KEM-migratie in de bankensector"
+sector: "Open source · Bankwezen · Standaarden"
+role: "Auteur en beheerder"
+status: "In productie, actief onderhouden"
+
+outcome_highlights:
+  - value: "FIPS 203"
+    label: "Afgestemd op het NIST-publicatietraject"
+  - value: "Top 44 %"
+    label: "Van circa 182 PQC-bibliotheken (Qtonic Lab)"
+  - value: "no_std"
+    label: "Embedt in HSM's en beveiligde enclaves"
+  - value: "1 adopter"
+    label: "Post-kwantum messenger QGram (Quantum2pi)"
+
+pull_quote: >
+  "Geëvalueerd door Qtonic Quantum Lab — onafhankelijk register voor
+  post-kwantumcryptografie — en in gebruik genomen door QGram
+  (Quantum2pi) voor end-to-end-versleutelde berichten. Beide
+  verifieerbaar zonder tussenkomst van mij."
+
+problem: >
+  Banken staan voor een SWIFT-overgang naar gestructureerde adressen
+  op 14 november 2026 en een langer NIST-migratievenster naar
+  post-kwantumcryptografie. Bestaande PQC-implementaties komen als
+  beleidsnota's, labcode of propriëtaire HSM-black boxes — geen
+  daarvan kan een betalingsarchitect lezen, testen of ondertekenen.
+
+what_i_built: >
+  KyberLib maakt van FIPS 203 ML-KEM (CRYSTALS-Kyber) inspecteerbare
+  Rust. Hybride handshakes met klassieke en kwantumprimitieven,
+  no_std-compilatie voor inbedding in HSM's, crypto-agile
+  abstractiegrenzen en het DORA artikel 5-governancebewijs dat
+  raden van bestuur nu nodig hebben om PQC-migratie te ondersteunen
+  zonder ondoorzichtig leveranciersrisico aan te gaan.
+
+rigour:
+  - metric: "Cryptografische standaard"
+    value: "FIPS 203 (ML-KEM, voorheen CRYSTALS-Kyber)"
+  - metric: "Ondersteuning hybride handshake"
+    value: "Klassiek TLS + ML-KEM-768 X25519MLKEM768-modus"
+  - metric: "Compilatie"
+    value: "no_std — embedt in HSM's, beveiligde enclaves en embedded targets"
+  - metric: "Crypto-agility"
+    value: "Abstractiegrenzen maken algoritmewisseling mogelijk zonder API-wijziging"
+  - metric: "Licentie"
+    value: "Apache-2.0 / MIT"
+
+validation:
+  - "Geciteerd in de EPAA Quantum-Safe Payments-whitepaper (september 2025)"
+  - "Behandeld in het artikel van 2026-06-12: KyberLib and the Post-Quantum Banking Migration"
+  - "Afgestemd op het NIST-publicatietraject FIPS 203 / 204 / 205"
+  - "Geëvalueerd door Qtonic Quantum Lab — onafhankelijk evaluatieregister voor post-kwantumcryptografie, circa 182 PQC-bibliotheken beoordeeld (top 44 %, geen betaalde opname door leveranciers)"
+  - "In gebruik genomen door QGram (Quantum2pi) — een peer-to-peer messenger met end-to-end-versleuteling op post-kwantumbasis die KyberLib gebruikt voor berichtversleuteling (verifieerbaar op f6s.com/software/qgram)"

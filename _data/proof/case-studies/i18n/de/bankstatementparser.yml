@@ -1,0 +1,45 @@
+title: "BankStatementParser — vereinheitlichte Transaktionsintelligenz für das Treasury"
+banner_alt: "Modernes Finanzbüro bei Nacht — Sinnbild für vereinheitlichte Transaktionsintelligenz über CAMT-, MT940-, OFX- und CSV-Kontoauszugsformate hinweg"
+sector: "Open Source · Corporate Treasury · Risikodaten-Aggregation"
+role: "Autor und Maintainer"
+status: "Produktiv im Einsatz, aktiv gepflegt"
+
+outcome_highlights:
+  - label: "CAMT (.052/.053/.054), MT940, OFX, CSV, OCR-PDF"
+  - label: "Provenienz: Quellformat und Parser-Version pro Feld protokolliert"
+  - label: "Konform zur Risikodaten-Aggregation gemäß BCBS 239"
+  - label: "Frei nutzbar, forkbar, prüfbar"
+
+pull_quote: >
+  „Schema-validierte CAMT-/MT940-/PAIN-Parser, OCR-Fallback für gescannte
+  PDFs, deterministisches Field Mapping, Audit-Nachweise auf SR 11-7-Niveau —
+  jeder Transformationsschritt protokolliert und reproduzierbar."
+
+problem: >
+  Corporate-Treasury-Teams erhalten Kontoauszüge in den Formaten CAMT,
+  PAIN.001, MT940, OFX, CSV und als gescannte PDFs von Dutzenden Banken.
+  Jedes Format bringt eigene Feldsemantik, eigene Kodierungen und eigene
+  Mehrdeutigkeiten mit. Die meisten Teams bauen fragile bankenspezifische
+  Parser von Hand und blockieren damit Echtzeit-Cashforecasting,
+  Betrugserkennung und prüfungsfeste Abstimmung.
+
+what_i_built: >
+  Ein Open-Source-Python-Toolkit, das jedes gängige Kontoauszugsformat in
+  einen einzigen, normalisierten Transaktionsstrom überführt. Schema-validierte
+  CAMT-/MT940-/PAIN-Parser, OCR-Fallback für gescannte PDFs, deterministisches
+  Field Mapping und Audit-Nachweise auf SR 11-7-Niveau für jeden
+  Transformationsschritt.
+
+rigour:
+  - metric: "Unterstützte Formate"
+    value: "CAMT (.052, .053, .054), MT940, OFX, CSV, gescannte PDFs (OCR)"
+  - metric: "Normalisierungsziel"
+    value: "Ein einziges, vereinheitlichtes Transaktions-Datensatzschema"
+  - metric: "Audit-Trail"
+    value: "Provenienz pro Feld — Quellformat und Parser-Version je Zeile protokolliert"
+  - metric: "Lizenz"
+    value: "Apache-2.0 / MIT"
+
+validation:
+  - "Behandelt im Artikel vom 14.06.2026: Von Kontoauszügen zu vereinheitlichter Transaktionsintelligenz"
+  - "Konzipiert zur Erfüllung der Anforderungen an die Risikodaten-Aggregation nach BCBS 239"

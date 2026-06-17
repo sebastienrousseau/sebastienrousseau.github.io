@@ -1,0 +1,52 @@
+title: "CloudCDN — พิมพ์เขียวโอเพนซอร์สสำหรับ edge ยุค AI"
+banner_alt: "โครงสร้างพื้นฐาน edge ยุค AI — สื่อถึงเกตเวย์ MCP แบบ zero-trust การจำกัดอัตราด้วย Durable Objects แบบอะตอมิก และขอบเขต WebAuthn passkey ที่ CloudCDN ส่งมอบเป็น reference implementation"
+sector: "โอเพนซอร์ส · Edge · โครงสร้างพื้นฐาน AI"
+role: "ผู้เขียนและผู้ดูแลโครงการ"
+status: "ใช้งานจริง อยู่ระหว่างการดูแลอย่างต่อเนื่อง"
+
+outcome_highlights:
+  - value: "3,185 tests"
+    label: "ความครอบคลุมบรรทัด สาขา และฟังก์ชัน 100 %"
+  - value: "SLSA L3"
+    label: "ที่มาของการสร้าง + การลงนาม Sigstore"
+  - value: "42 MCP tools"
+    label: "ทุกการเรียกถูกบันทึกพร้อมหลักฐานเชิงโครงสร้าง"
+  - value: "DORA / BCBS 239"
+    label: "แมปกับมาตรา 5 + การรวบรวมข้อมูลความเสี่ยง"
+
+pull_quote: >
+  "Reference implementation แบบโอเพนซอร์สที่ทีมความปลอดภัยอ่าน ปรับแก้
+  และลงนามได้ — แทนที่จะเป็น PDF การตลาด การจำกัดอัตราด้วย Durable
+  Objects แบบอะตอมิก ขอบเขต WebAuthn และที่มาระดับ SLSA L3"
+
+problem: >
+  เมื่อ AI agents และเครื่องมือ MCP เริ่มเรียก API ที่ edge ในระดับขนาดใหญ่
+  ธนาคารจำเป็นต้องมีขอบเขตที่ทนต่อทราฟฟิกอัตโนมัติได้โดยไม่ละทิ้งหลักฐาน
+  การตรวจสอบระดับ DORA CDN ที่มีอยู่ในตลาดเสนอเพียงภาษาการตลาดหรือแผน
+  ที่ไม่โปร่งใส — ทั้งสองทางไม่ได้สร้าง reference implementation ที่
+  ทีมความปลอดภัยอ่าน ปรับแก้ และลงนามได้
+
+what_i_built: >
+  เกตเวย์ MCP แบบ zero-trust โอเพนซอร์สพร้อมเครื่องมือ 42 รายการ
+  การจำกัดอัตราด้วย Durable Objects แบบอะตอมิก ขอบเขต WebAuthn passkey
+  signed URLs และที่มาของการสร้างระดับ SLSA Level 3 พร้อมการทดสอบ
+  3,185 รายการที่ความครอบคลุม 100 % แมปกับ DORA มาตรา 5 การรวบรวม
+  ข้อมูลความเสี่ยง BCBS 239 และทุนความเสี่ยงปฏิบัติการ Basel III
+
+rigour:
+  - metric: "การทดสอบ"
+    value: "3,185 รายการที่ความครอบคลุมบรรทัด สาขา และฟังก์ชัน 100 %"
+  - metric: "ที่มาของห่วงโซ่อุปทาน"
+    value: "ที่มาของการสร้างระดับ SLSA Level 3 + การลงนาม Sigstore"
+  - metric: "เครื่องมือ MCP ที่ส่งมอบ"
+    value: "42 รายการ — ทุกการเรียกถูกบันทึกพร้อมหลักฐานเชิงโครงสร้าง"
+  - metric: "การจำกัดอัตรา"
+    value: "Durable Objects แบบอะตอมิก (ไม่มี race condition ไม่มีการนับซ้ำ)"
+  - metric: "การยืนยันตัวตน"
+    value: "WebAuthn passkeys + signed URLs"
+  - metric: "ใบอนุญาต"
+    value: "Apache-2.0 / MIT"
+
+validation:
+  - "นำเสนอในบทความวันที่ 2026-06-11: CloudCDN — An Open-Source Blueprint for the AI-Native Edge"
+  - "แมปกับ DORA มาตรา 5, BCBS 239, ความเสี่ยงปฏิบัติการ Basel III"

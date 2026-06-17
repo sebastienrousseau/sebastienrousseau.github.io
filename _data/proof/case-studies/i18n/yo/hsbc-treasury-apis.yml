@@ -1,0 +1,46 @@
+title: "Àwọn API Ìṣúra HSBC — ìsanwó àti Báńkì-gẹ́gẹ́-bí-Iṣẹ́"
+banner_alt: "Ojú ọ̀run Ìlú London — ó dúró fún ìpèsè API ìṣúra tí a pèsè lábẹ́ ètò Báńkì Òwò àti Ìdókòwò HSBC"
+sector: "Báńkì òwò Ìpele-1 · Ìṣúra ilé-iṣẹ́ · Ìsanwó tí a ṣe ìṣàkóso"
+role: "Aṣáájú olórí ọjà / ìmọ̀-ẹ̀rọ"
+status: "Ń ṣiṣẹ́ ní ìmújáde nínú báńkì àgbáyé Ìpele-1"
+
+outcome_highlights:
+  - value: "Tier-1"
+    label: "Báńkì àgbáyé, Báńkì Òwò àti Ìdókòwò"
+  - value: "FCA / PRA"
+    label: "Ààlà ìsanwó tí a ṣe ìṣàkóso"
+  - value: "Treasury / BaaS"
+    label: "Owó-ńlá tí a lè ṣètò, ìṣàn-owó, ọ̀nà ìsanwó"
+  - value: "Multi-year"
+    label: "Aṣáájú olórí ọjà + ìmọ̀-ẹ̀rọ"
+
+pull_quote: >
+  "A pèsè àwọn API ìsanwó, ìwọ̀n owó, àti ìṣàn-owó ní ìmújáde lòdì sí
+  ààlà ìṣàkóso báńkì — kọjá ìpilẹ̀-ọ̀nà, ìṣọ̀kan olùtà, ẹ̀rí ìṣèyẹ̀wò,
+  àti àwọn ìṣàkóso ìfaradà-iṣẹ́ tí DORA àti SR 11-7 ti béèrè nísinsìnyí."
+
+problem: >
+  Àwọn ẹgbẹ́ ìṣúra ilé-iṣẹ́ ń béèrè ìwọlé tí a lè ṣètò sí ìṣàkóso owó,
+  ìṣàn-owó, àti ọ̀nà ìsanwó nínú báńkì Ìpele-1 — láìjáde ipele ẹ̀rí
+  ìṣàkóso tí báńkì fúnra rẹ̀ gbọ́dọ̀ pèsè jáde.
+
+what_i_built: >
+  Mo darí àwọn iṣẹ́ ọjà àti ìmọ̀-ẹ̀rọ fún àwọn API ìṣúra HSBC àti ètò
+  Báńkì-gẹ́gẹ́-bí-Iṣẹ́ nínú Báńkì Òwò àti Ìdókòwò, mo sì pèsè àwọn API
+  ìsanwó, ìwọ̀n owó, àti ìṣàn-owó ní ìmújáde lòdì sí ààlà ìṣàkóso báńkì.
+  Mo ṣiṣẹ́ kọjá ìpilẹ̀-ọ̀nà, ìṣọ̀kan olùtà, ẹ̀rí ìṣèyẹ̀wò, àti àwọn
+  ìṣàkóso ìfaradà-iṣẹ́ tí DORA àti SR 11-7 ti béèrè nísinsìnyí.
+
+rigour:
+  - metric: "Ààlà ipa"
+    value: "Aṣáájú olórí ọjà / ìmọ̀-ẹ̀rọ nínú CIB"
+  - metric: "Ààlà ìṣàkóso"
+    value: "Ìpèsè ìsanwó tí FCA / PRA ń ṣe ìṣàkóso"
+  - metric: "Ipele ìṣọ̀kan"
+    value: "Àwọn API ìṣúra, ìwọ̀n / ìṣàkóso owó, pípín BaaS"
+  - metric: "Olùgbẹ́bọ̀"
+    value: "Àwọn olùtọ́jú ìṣúra ilé-iṣẹ́ lórílẹ̀ púpọ̀ àti àwọn báńkì Ìpele-2"
+
+validation:
+  - "Ipa gbangba ní HSBC Commercial & Investment Bank — a lè jẹ́rìí rẹ̀ nípasẹ̀ LinkedIn"
+  - "Ààlà ètò ni a tọ́ka sí ní apá About / Experience"

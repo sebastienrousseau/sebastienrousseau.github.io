@@ -1,0 +1,48 @@
+title: "BankStatementParser — inteligência unificada de transações para tesouraria"
+banner_alt: "Escritório financeiro moderno à noite — simbolizando a inteligência unificada de transações nos formatos de extratos bancários CAMT, MT940, OFX e CSV"
+sector: "Código aberto · Tesouraria corporativa · Agregação de dados de risco"
+role: "Autor e mantenedor"
+status: "Em produção, mantido ativamente"
+
+outcome_highlights:
+  - label: "CAMT (.052/.053/.054), MT940, OFX, CSV, PDF com OCR"
+  - label: "Proveniência: formato de origem + versão do parser registrados"
+  - label: "Aderente à agregação de dados de risco"
+  - label: "Uso, fork e auditoria livres"
+
+pull_quote: >
+  "Parsers CAMT / MT940 / PAIN validados por schema, fallback OCR para
+  PDFs digitalizados, mapeamento de campos determinístico e evidência
+  de auditoria de grau SR 11-7 — cada etapa de transformação registrada
+  e reproduzível."
+
+problem: >
+  As equipes de tesouraria corporativa recebem extratos bancários nos
+  formatos CAMT, PAIN.001, MT940, OFX, CSV e PDFs digitalizados de
+  dezenas de bancos. Cada formato carrega semânticas de campo,
+  codificações e ambiguidades distintas. A maioria das equipes constrói
+  manualmente parsers frágeis por banco, bloqueando a previsão de
+  caixa em tempo real, a detecção de fraudes e a reconciliação pronta
+  para auditoria.
+
+what_i_built: >
+  Um toolkit Python de código aberto que unifica todos os formatos
+  comuns de extrato bancário em um único fluxo de transações
+  normalizado. Parsers CAMT / MT940 / PAIN validados por schema,
+  fallback OCR para PDFs digitalizados, mapeamento de campos
+  determinístico e evidência de auditoria de grau SR 11-7 para cada
+  etapa de transformação.
+
+rigour:
+  - metric: "Formatos suportados"
+    value: "CAMT (.052, .053, .054), MT940, OFX, CSV, PDF digitalizado (OCR)"
+  - metric: "Alvo de normalização"
+    value: "Schema único e unificado de registro de transações"
+  - metric: "Trilha de auditoria"
+    value: "Proveniência por campo — formato de origem + versão do parser registrados por linha"
+  - metric: "Licença"
+    value: "Apache-2.0 / MIT"
+
+validation:
+  - "Destaque no artigo de 14/06/2026: From Bank Statements to Unified Transaction Intelligence"
+  - "Projetado para atender aos requisitos de agregação de dados de risco do BCBS 239"

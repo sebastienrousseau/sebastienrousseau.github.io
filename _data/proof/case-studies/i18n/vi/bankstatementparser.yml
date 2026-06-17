@@ -1,0 +1,50 @@
+title: "BankStatementParser — trí tuệ giao dịch hợp nhất cho ngân quỹ"
+banner_alt: "Văn phòng tài chính hiện đại về đêm — biểu trưng cho trí tuệ giao dịch hợp nhất xuyên suốt các định dạng sao kê ngân hàng CAMT, MT940, OFX và CSV"
+sector: "Mã nguồn mở · Ngân quỹ doanh nghiệp · Tổng hợp dữ liệu rủi ro"
+role: "Tác giả và người duy trì dự án"
+status: "Đang vận hành thực tế, được duy trì tích cực"
+
+outcome_highlights:
+  - value: "6 formats"
+    label: "CAMT (.052/.053/.054), MT940, OFX, CSV, OCR PDF"
+  - value: "Per-field"
+    label: "Nguồn gốc dữ liệu: ghi nhật ký định dạng nguồn và phiên bản trình phân tích"
+  - value: "BCBS 239"
+    label: "Tuân thủ tổng hợp dữ liệu rủi ro"
+  - value: "Apache-2.0 / MIT"
+    label: "Miễn phí sử dụng, sao chép, kiểm toán"
+
+pull_quote: >
+  "Trình phân tích CAMT / MT940 / PAIN được xác thực theo lược đồ, cơ chế
+  dự phòng OCR cho PDF quét, ánh xạ trường có tính tất định, bằng chứng
+  kiểm toán đạt chuẩn SR 11-7 — mọi bước biến đổi đều được ghi lại và
+  có thể tái lập."
+
+problem: >
+  Các bộ phận ngân quỹ doanh nghiệp tiếp nhận sao kê ngân hàng dưới định
+  dạng CAMT, PAIN.001, MT940, OFX, CSV và PDF quét từ hàng chục ngân
+  hàng. Mỗi định dạng có ngữ nghĩa trường, mã hoá và điểm mơ hồ khác
+  nhau. Phần lớn các nhóm tự xây trình phân tích riêng cho từng ngân
+  hàng — vốn dễ vỡ — khiến việc dự báo dòng tiền theo thời gian thực,
+  phát hiện gian lận và đối chiếu sẵn sàng kiểm toán bị tắc nghẽn.
+
+what_i_built: >
+  Bộ công cụ Python mã nguồn mở hợp nhất mọi định dạng sao kê ngân hàng
+  phổ biến thành một luồng giao dịch duy nhất đã được chuẩn hoá. Bao gồm
+  trình phân tích CAMT / MT940 / PAIN xác thực theo lược đồ, cơ chế dự
+  phòng OCR cho PDF quét, ánh xạ trường có tính tất định, và bằng chứng
+  kiểm toán đạt chuẩn SR 11-7 cho mọi bước biến đổi.
+
+rigour:
+  - metric: "Định dạng hỗ trợ"
+    value: "CAMT (.052, .053, .054), MT940, OFX, CSV, PDF quét (OCR)"
+  - metric: "Đích chuẩn hoá"
+    value: "Lược đồ bản ghi giao dịch hợp nhất duy nhất"
+  - metric: "Dấu vết kiểm toán"
+    value: "Nguồn gốc theo từng trường — ghi nhật ký định dạng nguồn và phiên bản trình phân tích cho mỗi dòng"
+  - metric: "Giấy phép"
+    value: "Apache-2.0 / MIT"
+
+validation:
+  - "Được giới thiệu trong bài viết ngày 2026-06-14: From Bank Statements to Unified Transaction Intelligence"
+  - "Thiết kế để đáp ứng yêu cầu tổng hợp dữ liệu rủi ro theo BCBS 239"

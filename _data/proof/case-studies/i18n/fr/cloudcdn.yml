@@ -1,0 +1,54 @@
+title: "CloudCDN — schéma directeur open source pour le edge natif IA"
+banner_alt: "Infrastructure edge native IA — symbolisant la passerelle MCP zero-trust, la limitation de débit atomique par Durable Objects et le périmètre WebAuthn par passkeys que CloudCDN livre en implémentation de référence"
+sector: "Open source · Edge · Infrastructure IA"
+role: "Auteur et mainteneur"
+status: "En production, activement maintenu"
+
+outcome_highlights:
+  - value: "3 185 tests"
+    label: "100 % de couverture lignes, branches et fonctions"
+  - value: "SLSA L3"
+    label: "Provenance de build et signature Sigstore"
+  - value: "42 outils MCP"
+    label: "Chaque appel journalisé avec preuves structurées"
+  - value: "DORA / BCBS 239"
+    label: "Cartographié sur l'article 5 et l'agrégation des données de risque"
+
+pull_quote: >
+  « Une implémentation de référence open source qu'une équipe sécurité
+  peut lire, forker et signer — au lieu d'un PDF marketing. Limitation
+  de débit atomique par Durable Objects, périmètre WebAuthn,
+  provenance SLSA L3. »
+
+problem: >
+  À mesure que les agents IA et les outils MCP commencent à appeler des
+  API edge à grande échelle, les banques ont besoin d'un périmètre qui
+  survit au trafic autonome sans sacrifier les preuves d'audit de niveau
+  DORA. Les CDN existants proposent soit du langage marketing, soit des
+  plans opaques — aucun ne produit l'implémentation de référence qu'une
+  équipe sécurité peut lire, forker et signer.
+
+what_i_built: >
+  Une passerelle MCP open source zero-trust avec 42 outils, limitation de
+  débit atomique par Durable Objects, périmètre WebAuthn par passkeys,
+  URL signées et provenance de build SLSA niveau 3. 3 185 tests à 100 %
+  de couverture, cartographiés sur l'article 5 de DORA, l'agrégation des
+  données de risque BCBS 239 et le capital de risque opérationnel Bâle III.
+
+rigour:
+  - metric: "Tests"
+    value: "3 185 tests à 100 % de couverture lignes, branches et fonctions"
+  - metric: "Provenance de la chaîne d'approvisionnement"
+    value: "Provenance de build SLSA niveau 3 et signature Sigstore"
+  - metric: "Outils MCP livrés"
+    value: "42 outils — chaque appel journalisé avec preuves structurées"
+  - metric: "Limitation de débit"
+    value: "Durable Objects atomiques (aucune condition de course, aucun double comptage)"
+  - metric: "Authentification"
+    value: "Passkeys WebAuthn et URL signées"
+  - metric: "Licence"
+    value: "Apache-2.0 / MIT"
+
+validation:
+  - "Présenté dans l'article du 2026-06-11 : CloudCDN — An Open-Source Blueprint for the AI-Native Edge"
+  - "Cartographié sur l'article 5 de DORA, BCBS 239 et le risque opérationnel Bâle III"

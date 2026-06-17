@@ -1,0 +1,43 @@
+title: "pain001 — אוטומציה של קבצי תשלום ISO 20022"
+banner_alt: "נוף עירוני מהאוויר בשעת בין-ערביים — מסמל אוטומציה של קבצי תשלום מובנים תחת ISO 20022 ברשתות סליקה גלובליות"
+sector: "קוד פתוח · גזברות תאגידית · ISO 20022"
+role: "מחבר ומתחזק"
+status: "בייצור, מתוחזק באופן פעיל"
+
+outcome_highlights:
+  - label: "Customer Credit Transfer Initiation"
+  - label: "אימות מקדים לכל מסר"
+  - label: "סכומי ביקורת ISO 7064 Modulo 97-10"
+  - label: "חופשי לשימוש, פיצול וביקורת"
+
+pull_quote: >
+  "צוטטה ב-EPAA Quantum-Safe Payments white paper (ספטמבר 2025).
+  קוד פתוח, מבוקר מהיום הראשון — ללא מתרגם קנייני בין מערכת ה-ERP
+  שלך לרשת הסליקה."
+
+problem: >
+  הגירת ה-MT → MX הגלובלית מחייבת כל בנק וגזברות תאגידית לייצר
+  מסרי pain.001 מובנים. רוב הצוותים מייצרים ידנית XML שביר או רוכשים
+  מתרגמים קנייניים אטומים. שני המסלולים מזרימים שגיאות תשלום לרשתות
+  הסליקה ואינם משאירים מסלול ביקורת.
+
+what_i_built: >
+  ספריית Python בקוד פתוח המייצרת מסרי ISO 20022 pain.001 מאומתים
+  (Customer Credit Transfer Initiation) מ-CSV / SQLite / Parquet.
+  אימות XSD מקדים, סכומי ביקורת IBAN / BIC, מיסוך PII והתאמה מלאה
+  לסכמת XSD — הכול בתוך זרימת עבודה ב-Python המשתלבת בצנרות ERP
+  וגזברות קיימות.
+
+rigour:
+  - metric: "מסרי ISO 20022 נתמכים"
+    value: "pain.001 (Customer Credit Transfer Initiation)"
+  - metric: "התאמה לסכמה"
+    value: "אימות XSD רשמי מקדים לכל מסר"
+  - metric: "מאמתים שסופקו"
+    value: "ספרת ביקורת IBAN + סכום ביקורת BIC + LEI (ISO 7064 Modulo 97-10)"
+  - metric: "רישיון"
+    value: "Apache-2.0 / MIT — חופשי לשימוש, פיצול וביקורת"
+
+validation:
+  - "צוטטה ב-EPAA Quantum-Safe Payments white paper (ספטמבר 2025)"
+  - "הופיעה במאמרים שפורסמו ב-sebastienrousseau.com מאז ספטמבר 2023"

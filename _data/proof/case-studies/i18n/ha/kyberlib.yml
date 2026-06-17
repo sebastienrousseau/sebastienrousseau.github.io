@@ -1,0 +1,55 @@
+title: "KyberLib — ML-KEM mai matsayin samarwa cikin Rust"
+banner_alt: "Musayar maɓallin cryptographic mai aminci ga ƙididdigar ƙididdiga — alama ce ta ƙaurar FIPS 203 ML-KEM cikin banki"
+sector: "Buɗaɗɗen tushe · Banki · Ka'idoji"
+role: "Marubuci kuma mai kula"
+status: "Yana aiki cikin samarwa, ana kula da shi a kullum"
+
+outcome_highlights:
+  - value: "FIPS 203"
+    label: "An daidaita da hanyar bugawa ta NIST"
+  - value: "Top 44 %"
+    label: "Daga ~182 ɗakunan karatu na PQC (Qtonic Lab)"
+  - value: "no_std"
+    label: "Yana shiga cikin HSMs + masu kariya"
+  - value: "1 adopter"
+    label: "QGram (Quantum2pi) manzon bayan-ƙididdigar"
+
+pull_quote: >
+  "Qtonic Quantum Lab ya gwada shi — rajistar cryptography ta bayan-ƙididdigar
+  mai zaman kanta — kuma QGram (Quantum2pi) ya karɓe shi don aika saƙo da aka
+  ɓoye gaba-da-gaba. Ana iya tabbatar da duka biyun ba tare da na shiga ciki ba."
+
+problem: >
+  Bankuna suna fuskantar yankewar adireshin SWIFT mai tsari a ranar 14 ga
+  Nuwamba, 2026 da kuma tagar ƙaurar bayan-ƙididdigar NIST mai tsawo.
+  Aiwatar da PQC da ke akwai suna zuwa a matsayin takardun manufofi, lambar
+  dakin gwaje-gwaje, ko akwatunan baƙar fata na HSM masu mallaka — babu
+  ɗayansu wanda mai gine-ginen biyan kuɗi zai iya karantawa, gwadawa, ko sa
+  hannu.
+
+what_i_built: >
+  KyberLib yana sauya FIPS 203 ML-KEM (CRYSTALS-Kyber) zuwa Rust da ake
+  iya bincika. Musafiha na gauraye na yau da kullum tare da ƙididdigar
+  ƙididdiga, tarawar no_std don shiga HSM, iyakokin abstraction masu sassauci
+  na crypto, da shaidar mulki ta DORA Mataki na 5 wanda hukumomi ke buƙata
+  yanzu don tallafawa ƙaurar PQC ba tare da ɗaukar haɗarin mai sayarwa
+  maras fahimta ba.
+
+rigour:
+  - metric: "Ka'idar cryptographic"
+    value: "FIPS 203 (ML-KEM, da aka sani da CRYSTALS-Kyber)"
+  - metric: "Tallafin musafiha mai gauraye"
+    value: "TLS na yau da kullum + ML-KEM-768 yanayin X25519MLKEM768"
+  - metric: "Tarawa"
+    value: "no_std — yana shiga cikin HSMs, masu kariya, na'urori masu ɗaure"
+  - metric: "Sassauci na crypto"
+    value: "Iyakokin abstraction suna ba da damar canza algorithm ba tare da canza API ba"
+  - metric: "Lasisi"
+    value: "Apache-2.0 / MIT"
+
+validation:
+  - "An ambato shi a takardar fararen takarda ta EPAA Quantum-Safe Payments (Satumba 2025)"
+  - "An nuna shi a labarin 2026-06-12: KyberLib and the Post-Quantum Banking Migration"
+  - "An daidaita da hanyar bugawa ta NIST FIPS 203 / 204 / 205"
+  - "Qtonic Quantum Lab ya gwada shi — rajistar gwajin cryptography ta bayan-ƙididdigar mai zaman kanta, an tantance kusan ɗakunan karatu 182 na PQC (top kashi 44, babu biyan kuɗi don shigarwa)"
+  - "QGram (Quantum2pi) ya karɓe shi — manzon tsakanin abokai na bayan-ƙididdigar wanda aka ɓoye gaba-da-gaba wanda ke amfani da KyberLib don ɓoye saƙo (ana iya tabbatarwa a f6s.com/software/qgram)"

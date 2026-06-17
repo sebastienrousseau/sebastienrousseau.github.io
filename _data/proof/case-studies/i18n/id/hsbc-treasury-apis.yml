@@ -1,0 +1,49 @@
+title: "HSBC Treasury APIs — pembayaran dan Banking-as-a-Service"
+banner_alt: "Panorama langit City of London — melambangkan platform API treasury yang dikirim di bawah program Commercial & Investment Bank HSBC"
+sector: "Bank komersial Tier-1 · Treasury korporat · Pembayaran teregulasi"
+role: "Pimpinan senior produk / teknologi"
+status: "Live di produksi pada bank global Tier-1"
+
+outcome_highlights:
+  - value: "Tier-1"
+    label: "Bank global, Commercial & Investment Bank"
+  - value: "FCA / PRA"
+    label: "Perimeter pembayaran teregulasi"
+  - value: "Treasury / BaaS"
+    label: "Kas programatik, likuiditas, rel pembayaran"
+  - value: "Multi-year"
+    label: "Kepemimpinan senior produk + teknologi"
+
+pull_quote: >
+  "Mengirim API pembayaran, saldo, dan likuiditas ke produksi di dalam
+  perimeter regulasi bank — mencakup arsitektur, integrasi vendor, bukti
+  supervisi, dan kontrol ketahanan operasional yang kini diwajibkan DORA
+  dan SR 11-7."
+
+problem: >
+  Tim treasury korporat menuntut akses programatik ke manajemen kas,
+  likuiditas, dan rel pembayaran di dalam bank Tier-1 — tanpa
+  mengorbankan lapisan bukti regulasi yang harus dihasilkan bank itu
+  sendiri.
+
+what_i_built: >
+  Memimpin alur kerja produk dan teknologi untuk program API treasury
+  dan Banking-as-a-Service HSBC di dalam Commercial & Investment Bank,
+  mengirim API pembayaran, saldo, dan likuiditas ke produksi di dalam
+  perimeter regulasi bank. Bekerja lintas arsitektur, integrasi vendor,
+  bukti supervisi, dan kontrol ketahanan operasional yang kini
+  diwajibkan DORA dan SR 11-7.
+
+rigour:
+  - metric: "Cakupan peran"
+    value: "Kepemimpinan senior produk / teknologi di dalam CIB"
+  - metric: "Perimeter regulasi"
+    value: "Platform pembayaran yang diregulasi FCA / PRA"
+  - metric: "Permukaan integrasi"
+    value: "API treasury, manajemen saldo / kas, distribusi BaaS"
+  - metric: "Audiens"
+    value: "Treasurer korporat di perusahaan multinasional dan bank Tier-2"
+
+validation:
+  - "Peran publik di HSBC Commercial & Investment Bank — dapat diverifikasi melalui LinkedIn"
+  - "Cakupan program dirujuk di bagian About / Experience"

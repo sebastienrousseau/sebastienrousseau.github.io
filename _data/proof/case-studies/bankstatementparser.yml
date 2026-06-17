@@ -2,9 +2,28 @@ slug: bankstatementparser
 title: "BankStatementParser — unified transaction intelligence for treasury"
 banner: "https://cloudcdn.pro/stocks/images/ricardo-gomez-angel-Oj6tP8NlvFo.webp"
 banner_alt: "Modern finance office at night — symbolising unified transaction intelligence across CAMT, MT940, OFX, and CSV bank statement formats"
+category: "Payments"
+category_slug: "payments"
+kicker: "CAMT · MT940 · OFX · TREASURY"
+sector: "Open-source · Corporate treasury · Risk-data aggregation"
 role: "Author and maintainer"
 period: "2024 – present"
 status: "Production, actively maintained"
+
+outcome_highlights:
+  - value: "6 formats"
+    label: "CAMT (.052/.053/.054), MT940, OFX, CSV, OCR PDF"
+  - value: "Per-field"
+    label: "Provenance: source format + parser version logged"
+  - value: "BCBS 239"
+    label: "Risk-data aggregation aligned"
+  - value: "Apache-2.0 / MIT"
+    label: "Free to use, fork, audit"
+
+pull_quote: >
+  "Schema-validated CAMT / MT940 / PAIN parsers, OCR fallback for scanned
+  PDFs, deterministic field mapping, SR 11-7-grade audit evidence — every
+  transformation step recorded and reproducible."
 
 problem: >
   Corporate treasury teams receive bank statements in CAMT, PAIN.001,
