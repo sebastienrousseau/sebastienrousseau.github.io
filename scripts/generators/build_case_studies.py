@@ -1332,7 +1332,10 @@ def _render_index_body(
     filter_bar = (
         '<section class="cs-stage cs-hub-filter" data-stage id="hub-grid">'
         '<div class="cs-stage-row">'
-        '<form class="cs-filter-bar" role="search">'
+        # Filter is CSS-only via radio inputs + :has() — no form submission.
+        # Using <form> here trips pa11y's H32.2 (no submit button); a
+        # <div role="search"> carries the same semantics for AT users.
+        '<div class="cs-filter-bar" role="search">'
         '<details class="cs-dropdown">'
         '<summary class="cs-dropdown-summary" '
         f'aria-label="{_esc(lbl["Filter by category"])}">'
@@ -1348,7 +1351,7 @@ def _render_index_body(
         + '</fieldset>'
         '</details>'
         + f'<span class="cs-filter-meta">{_esc(lbl["count"].format(n=len(studies)))}</span>'
-        '</form>'
+        '</div>'
     )
 
     cards: list[str] = []
