@@ -227,6 +227,27 @@ def _load_overlay(lang: str, slug: str) -> dict:
         return {}
 
 
+_OVERLAY_KEEP_EN = frozenset({
+    "slug", "banner", "category_slug", "links",
+    "related_articles", "signed", "period",
+    "outcome_highlights_keep_values", "standards",
+})
+_OVERLAY_LIST_FIELDS = frozenset({"outcome_highlights", "rigour"})
+
+
+def _merge_list_of_dicts(base: list, overlay_rows: list) -> list[dict]:
+    """Zip overlay rows over base rows so a translator can override
+    just the prose ``label`` / ``metric`` keys without restating
+    ``value``."""
+    merged: list[dict] = []
+    for i, base_row in enumerate(list(base) or []):
+        row = dict(base_row) if isinstance(base_row, dict) else {}
+        if i < len(overlay_rows) and isinstance(overlay_rows[i], dict):
+            row.update(overlay_rows[i])
+        merged.append(row)
+    return merged
+
+
 def _merge_overlay(study: dict, overlay: dict) -> dict:
     """Return a copy of ``study`` with fields from ``overlay`` substituted.
     List-of-dicts fields (outcome_highlights, rigour) are zipped index-by-
@@ -236,25 +257,11 @@ def _merge_overlay(study: dict, overlay: dict) -> dict:
     if not overlay:
         return study
     out = dict(study)
-    _KEEP_EN = {
-        "slug", "banner", "category_slug", "links",
-        "related_articles", "signed", "period",
-        "outcome_highlights_keep_values", "standards",
-    }
     for key, val in overlay.items():
-        if key in _KEEP_EN:
+        if key in _OVERLAY_KEEP_EN:
             continue
-        if key in ("outcome_highlights", "rigour") and isinstance(val, list):
-            # Merge inner dicts index-by-index so a translator can override
-            # just the "label"/"metric" prose without restating "value".
-            base = list(study.get(key) or [])
-            merged: list[dict] = []
-            for i, base_row in enumerate(base):
-                row = dict(base_row) if isinstance(base_row, dict) else {}
-                if i < len(val) and isinstance(val[i], dict):
-                    row.update(val[i])
-                merged.append(row)
-            out[key] = merged
+        if key in _OVERLAY_LIST_FIELDS and isinstance(val, list):
+            out[key] = _merge_list_of_dicts(study.get(key) or [], val)
         else:
             out[key] = val
     return out
@@ -532,38 +539,41 @@ def _build_breadcrumb_jsonld(
     }
 
 
+_BCP47_OVERRIDES = {
+    "en": "en-GB", "fr": "fr-FR", "de": "de-DE", "es": "es-ES",
+    "it": "it-IT", "ja": "ja-JP", "ko": "ko-KR", "ru": "ru-RU",
+}
+
+
+def _source_code_entity(study: dict, links: dict, person_id: str) -> dict | None:
+    """Schema.org SoftwareSourceCode node for a repo-linked study."""
+    if not (links.get("repo") or links.get("crates") or links.get("pypi")):
+        return None
+    language = "Rust" if links.get("crates") else ("Python" if links.get("pypi") else None)
+    entity = {
+        "@type": "SoftwareSourceCode",
+        "name": study.get("title", study["slug"]),
+        "codeRepository": links.get("repo"),
+        "programmingLanguage": language,
+        "license": "https://www.apache.org/licenses/LICENSE-2.0",
+        "author": {"@type": "Person", "@id": person_id},
+    }
+    return {k: v for k, v in entity.items() if v is not None}
+
+
 def _build_article_jsonld(
     study: dict, lbl: dict[str, str], lang: str, url_segment: str,
 ) -> dict:
-    bcp47 = {
-        "en": "en-GB", "fr": "fr-FR", "de": "de-DE", "es": "es-ES",
-        "it": "it-IT", "ja": "ja-JP", "ko": "ko-KR", "ru": "ru-RU",
-    }.get(lang, lang)
+    bcp47 = _BCP47_OVERRIDES.get(lang, lang)
     url = _BASE_URL + _study_url(lang, url_segment, study["slug"])
     person_id = f"{_BASE_URL}/#person"
-    main_entity: dict | None = None
-    about: list[dict] = []
     links = study.get("links", {}) or {}
-    if links.get("repo") or links.get("crates") or links.get("pypi"):
-        main_entity = {
-            "@type": "SoftwareSourceCode",
-            "name": study.get("title", study["slug"]),
-            "codeRepository": links.get("repo"),
-            "programmingLanguage": (
-                "Rust" if links.get("crates") else (
-                    "Python" if links.get("pypi") else None
-                )
-            ),
-            "license": "https://www.apache.org/licenses/LICENSE-2.0",
-            "author": {"@type": "Person", "@id": person_id},
-        }
-        main_entity = {k: v for k, v in main_entity.items() if v is not None}
-    if "bank" in links:
-        about.append({
-            "@type": "Organization",
-            "name": "HSBC Holdings plc",
-            "url": links["bank"],
-        })
+    main_entity = _source_code_entity(study, links, person_id)
+    about = [{
+        "@type": "Organization",
+        "name": "HSBC Holdings plc",
+        "url": links["bank"],
+    }] if "bank" in links else []
     article: dict = {
         "@context": "https://schema.org",
         "@type": "Article",
@@ -902,43 +912,103 @@ def _render_more_studies_stage(
     )
 
 
-def _render_side_panel(study: dict, lbl: dict[str, str], lang: str) -> str:
-    """FT-style left rail: customer + role + period + status + sector +
-    standards + verifiable links + share."""
-    role = study.get("role", "")
-    period = study.get("period", "")
-    status = study.get("status", "")
-    sector = study.get("sector", "")
-    standards = study.get("standards", []) or []
-    links = study.get("links", {}) or {}
+_SHARE_SVG = {
+    "x": (
+        '<svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">'
+        '<path d="M9.52 6.88L14.86 1h-1.42L8.83 6.07 4.94 1H.78l5.6 7.7L.78 15h1.42l4.78-5.27L11.07 15h4.16L9.52 6.88zM2.71 2.07h1.83l7.61 10.51h-1.83L2.71 2.07z"/>'
+        '</svg>'
+    ),
+    "li": (
+        '<svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">'
+        '<path d="M13.6 13.6h-2.37V9.93c0-.87-.02-2-1.22-2-1.22 0-1.4.95-1.4 1.93v3.74H6.24V6.04h2.27v1.04h.03c.32-.6 1.09-1.22 2.25-1.22 2.4 0 2.85 1.58 2.85 3.64v4.1zM3.56 5C2.81 5 2.2 4.39 2.2 3.64S2.81 2.28 3.56 2.28s1.36.61 1.36 1.36S4.31 5 3.56 5zm1.18 8.6H2.39V6.04h2.36V13.6z"/>'
+        '</svg>'
+    ),
+    "fb": (
+        '<svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">'
+        '<path d="M9 14H6.5V8.5H5V6h1.5V4.5C6.5 3.07 7.07 2 9.07 2H10.5v2.5H9.43c-.38 0-.43.14-.43.43V6h1.5L10 8.5H9V14z"/>'
+        '</svg>'
+    ),
+    "mail": (
+        '<svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">'
+        '<path d="M2 3h12c.55 0 1 .45 1 1v8c0 .55-.45 1-1 1H2c-.55 0-1-.45-1-1V4c0-.55.45-1 1-1zm6 5.18L13.18 4H2.82L8 8.18zM2 5.46V12h12V5.46L8 9.5 2 5.46z"/>'
+        '</svg>'
+    ),
+}
 
+
+def _render_side_meta(study: dict, lbl: dict[str, str]) -> str:
+    """Role / Period / Status / Sector dt-dd rows for the sidebar."""
     rows = []
-    if role:
-        rows.append(
-            '<div class="cs-side-section">'
-            f'<dt>{_esc(lbl["Role"])}</dt>'
-            f'<dd>{_esc(role)}</dd></div>'
-        )
-    if period:
-        rows.append(
-            '<div class="cs-side-section">'
-            f'<dt>{_esc(lbl["Period"])}</dt>'
-            f'<dd>{_esc(period)}</dd></div>'
-        )
-    if status:
-        rows.append(
-            '<div class="cs-side-section">'
-            f'<dt>{_esc(lbl["Status"])}</dt>'
-            f'<dd>{_esc(status)}</dd></div>'
-        )
-    if sector:
-        rows.append(
-            '<div class="cs-side-section">'
-            f'<dt>{_esc(lbl["Sector"])}</dt>'
-            f'<dd>{_esc(sector)}</dd></div>'
-        )
-    meta_dl = f'<dl class="cs-side-meta">{"".join(rows)}</dl>' if rows else ""
+    for field, label_key in (("role", "Role"), ("period", "Period"),
+                              ("status", "Status"), ("sector", "Sector")):
+        value = study.get(field, "")
+        if value:
+            rows.append(
+                '<div class="cs-side-section">'
+                f'<dt>{_esc(lbl[label_key])}</dt>'
+                f'<dd>{_esc(value)}</dd></div>'
+            )
+    return f'<dl class="cs-side-meta">{"".join(rows)}</dl>' if rows else ""
 
+
+def _render_side_links(links: dict, lbl: dict[str, str]) -> str:
+    """Verifiable-links block — _LINK_ORDER first, remainder appended."""
+    if not links:
+        return ""
+    link_rows: list[str] = []
+    seen: set[str] = set()
+    for key in _LINK_ORDER:
+        if key in links and key not in seen:
+            seen.add(key)
+            link_rows.append(
+                f'<li><a href="{_esc(links[key])}" rel="noopener noreferrer">'
+                f'{_esc(_LINK_LABELS.get(key, key))}</a></li>'
+            )
+    for key, val in links.items():
+        if key not in seen:
+            link_rows.append(
+                f'<li><a href="{_esc(val)}" rel="noopener noreferrer">{_esc(key)}</a></li>'
+            )
+    return (
+        '<div class="cs-side-section cs-side-links">'
+        f'<h3>{_esc(lbl["Verifiable links"])}</h3>'
+        f'<ul>{"".join(link_rows)}</ul></div>'
+    )
+
+
+def _render_share_block(study: dict, lbl: dict[str, str], lang: str) -> str:
+    """Article-style share rail (44×44 circular SVG icons)."""
+    import urllib.parse as _up
+
+    full_url = f"{_BASE_URL}{_study_url(lang, '', study['slug'])}"
+    enc_url = _up.quote(full_url, safe="")
+    enc_title = _up.quote(study.get("title", study["slug"]), safe="")
+    enc_mail_body = _up.quote(f"Read more: {full_url}", safe="")
+    return (
+        '<div class="cs-side-section cs-side-share-block">'
+        f'<h3>{_esc(lbl["Share"])}</h3>'
+        '<nav class="share-rail" aria-label="Share">'
+        '<ul>'
+        f'<li><a href="https://twitter.com/intent/tweet?url={enc_url}&amp;text={enc_title}" '
+        f'rel="noopener noreferrer" target="_blank" '
+        f'aria-label="{_esc(lbl["Share on X"])}">{_SHARE_SVG["x"]}</a></li>'
+        f'<li><a href="https://www.linkedin.com/sharing/share-offsite/?url={enc_url}" '
+        f'rel="noopener noreferrer" target="_blank" '
+        f'aria-label="{_esc(lbl["Share on LinkedIn"])}">{_SHARE_SVG["li"]}</a></li>'
+        f'<li><a href="https://www.facebook.com/sharer/sharer.php?u={enc_url}" '
+        f'rel="noopener noreferrer" target="_blank" '
+        f'aria-label="Share on Facebook">{_SHARE_SVG["fb"]}</a></li>'
+        f'<li><a href="mailto:?subject={enc_title}&amp;body={enc_mail_body}" '
+        f'rel="noopener noreferrer" '
+        f'aria-label="Share by email">{_SHARE_SVG["mail"]}</a></li>'
+        '</ul></nav>'
+        '</div>'
+    )
+
+
+def _render_side_panel(study: dict, lbl: dict[str, str], lang: str) -> str:
+    """FT-style left rail: meta dl + standards + verifiable links + share."""
+    standards = study.get("standards", []) or []
     standards_block = ""
     if standards:
         pills = "".join(f"<li>{_esc(s)}</li>" for s in standards)
@@ -947,91 +1017,12 @@ def _render_side_panel(study: dict, lbl: dict[str, str], lang: str) -> str:
             f'<h3>{_esc(lbl["Aligned standards"])}</h3>'
             f'<ul>{pills}</ul></div>'
         )
-
-    links_block = ""
-    if links:
-        link_rows: list[str] = []
-        seen: set[str] = set()
-        for key in _LINK_ORDER:
-            if key in links and key not in seen:
-                seen.add(key)
-                link_rows.append(
-                    f'<li><a href="{_esc(links[key])}" rel="noopener noreferrer">'
-                    f'{_esc(_LINK_LABELS.get(key, key))}</a></li>'
-                )
-        for key, val in links.items():
-            if key not in seen:
-                link_rows.append(
-                    f'<li><a href="{_esc(val)}" rel="noopener noreferrer">{_esc(key)}</a></li>'
-                )
-        links_block = (
-            '<div class="cs-side-section cs-side-links">'
-            f'<h3>{_esc(lbl["Verifiable links"])}</h3>'
-            f'<ul>{"".join(link_rows)}</ul></div>'
-        )
-
-    # Share rail — articles' .share-rail pattern (44×44 circular SVG
-    # icons). Six channels mirror the article-page rail so the case study
-    # offers the same surface to readers.
-    import urllib.parse as _up
-
-    full_url = f"{_BASE_URL}{_study_url(lang, '', study['slug'])}"
-    enc_url = _up.quote(full_url, safe="")
-    title_str = study.get("title", study["slug"])
-    enc_title = _up.quote(title_str, safe="")
-    enc_subject = enc_title
-    enc_mail_body = _up.quote(f"Read more: {full_url}", safe="")
-
-    # SVG paths reused verbatim from the article share rail so case
-    # studies inherit the exact same visual language.
-    svg_x = (
-        '<svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">'
-        '<path d="M9.52 6.88L14.86 1h-1.42L8.83 6.07 4.94 1H.78l5.6 7.7L.78 15h1.42l4.78-5.27L11.07 15h4.16L9.52 6.88zM2.71 2.07h1.83l7.61 10.51h-1.83L2.71 2.07z"/>'
-        '</svg>'
-    )
-    svg_li = (
-        '<svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">'
-        '<path d="M13.6 13.6h-2.37V9.93c0-.87-.02-2-1.22-2-1.22 0-1.4.95-1.4 1.93v3.74H6.24V6.04h2.27v1.04h.03c.32-.6 1.09-1.22 2.25-1.22 2.4 0 2.85 1.58 2.85 3.64v4.1zM3.56 5C2.81 5 2.2 4.39 2.2 3.64S2.81 2.28 3.56 2.28s1.36.61 1.36 1.36S4.31 5 3.56 5zm1.18 8.6H2.39V6.04h2.36V13.6z"/>'
-        '</svg>'
-    )
-    svg_fb = (
-        '<svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">'
-        '<path d="M9 14H6.5V8.5H5V6h1.5V4.5C6.5 3.07 7.07 2 9.07 2H10.5v2.5H9.43c-.38 0-.43.14-.43.43V6h1.5L10 8.5H9V14z"/>'
-        '</svg>'
-    )
-    svg_mail = (
-        '<svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">'
-        '<path d="M2 3h12c.55 0 1 .45 1 1v8c0 .55-.45 1-1 1H2c-.55 0-1-.45-1-1V4c0-.55.45-1 1-1zm6 5.18L13.18 4H2.82L8 8.18zM2 5.46V12h12V5.46L8 9.5 2 5.46z"/>'
-        '</svg>'
-    )
-
-    share_block = (
-        '<div class="cs-side-section cs-side-share-block">'
-        f'<h3>{_esc(lbl["Share"])}</h3>'
-        '<nav class="share-rail" aria-label="Share">'
-        '<ul>'
-        f'<li><a href="https://twitter.com/intent/tweet?url={enc_url}&amp;text={enc_title}" '
-        f'rel="noopener noreferrer" target="_blank" '
-        f'aria-label="{_esc(lbl["Share on X"])}">{svg_x}</a></li>'
-        f'<li><a href="https://www.linkedin.com/sharing/share-offsite/?url={enc_url}" '
-        f'rel="noopener noreferrer" target="_blank" '
-        f'aria-label="{_esc(lbl["Share on LinkedIn"])}">{svg_li}</a></li>'
-        f'<li><a href="https://www.facebook.com/sharer/sharer.php?u={enc_url}" '
-        f'rel="noopener noreferrer" target="_blank" '
-        f'aria-label="Share on Facebook">{svg_fb}</a></li>'
-        f'<li><a href="mailto:?subject={enc_subject}&amp;body={enc_mail_body}" '
-        f'rel="noopener noreferrer" '
-        f'aria-label="Share by email">{svg_mail}</a></li>'
-        '</ul></nav>'
-        '</div>'
-    )
-
     return (
         '<aside class="cs-side" aria-label="Story details">'
-        + meta_dl
+        + _render_side_meta(study, lbl)
         + standards_block
-        + links_block
-        + share_block
+        + _render_side_links(study.get("links", {}) or {}, lbl)
+        + _render_share_block(study, lbl, lang)
         + '</aside>'
     )
 
@@ -1094,82 +1085,77 @@ def _render_inline_related_articles(
     return f'<ul class="cs-side-links cs-related-rows" role="list">{"".join(items)}</ul>'
 
 
+def _prose_section(headline_html: str, body_html: str, anchor: str = "") -> str:
+    """Emit one <section> with a stage-headline + body HTML."""
+    open_tag = f'<section id="{anchor}">' if anchor else "<section>"
+    return f'{open_tag}<h2 class="cs-stage-headline">{headline_html}</h2>{body_html}</section>'
+
+
+def _deck_html(study: dict) -> str:
+    """Pull-quote deck used as standfirst above the numbered sections."""
+    deck = (study.get("pull_quote", "") or "").strip().strip('"').strip("“").strip("”")
+    return f'<p class="cs-deck-intro">{_esc(deck)}</p>' if deck else ""
+
+
+def _prose_body_for(study: dict, lbl: dict[str, str], lang: str,
+                    article_slug_map: dict[str, str], field: str) -> str:
+    """Render the body HTML for one of the named sections.
+
+    The keys mirror the YAML field names so the section table below can
+    drive the whole render with one lookup per row."""
+    value = study.get(field)
+    if not value:
+        return ""
+    if field in ("problem", "what_i_built"):
+        return f'<p>{_esc(value)}</p>'
+    if field == "outcome_highlights":
+        return _render_inline_outcomes(value)
+    if field == "rigour":
+        return _render_inline_rigour(value, lbl)
+    if field == "validation":
+        return _render_inline_validation(value)
+    if field == "related_articles":
+        return _render_inline_related_articles(value, lbl, lang, article_slug_map)
+    return ""
+
+
+# Ordered (field, label-key, stage-number-or-zero, anchor) tuples driving
+# the right-column section render. Stage number 0 means "no NN — prefix".
+_MAIN_SECTIONS: tuple[tuple[str, str, int, str], ...] = (
+    ("problem", "Problem", 1, "story"),
+    ("what_i_built", "What I built", 2, ""),
+    ("outcome_highlights", "By the numbers", 0, ""),
+    ("rigour", "Engineering rigour", 3, ""),
+    ("validation", "Independently verified", 4, ""),
+    ("related_articles", "Related articles", 0, ""),
+)
+
+
+def _render_main_body_parts(
+    study: dict, lbl: dict[str, str], lang: str, article_slug_map: dict[str, str],
+) -> list[str]:
+    """Build the ordered narrative sections for the right column."""
+    parts: list[str] = []
+    deck = _deck_html(study)
+    if deck:
+        parts.append(deck)
+    for field, label_key, stage, anchor in _MAIN_SECTIONS:
+        body = _prose_body_for(study, lbl, lang, article_slug_map, field)
+        if not body:
+            continue
+        prefix = _stage_n(stage) if stage else ""
+        parts.append(_prose_section(f'{prefix}{_esc(lbl[label_key])}', body, anchor=anchor))
+    return parts
+
+
 def _render_body_two_col(
     study: dict, lbl: dict[str, str], lang: str, url_segment: str,
     article_slug_map: dict[str, str],
 ) -> str:
-    """FT customer-story two-column body: sticky left rail (meta +
-    standards + verifiable links + share) + right prose column with
-    numbered sections, inline outcomes, pull quote, rigour, validation."""
-
-    deck = (study.get("pull_quote", "") or "").strip().strip('"').strip("“").strip("”")
-    problem = study.get("problem", "") or ""
-    what_i_built = study.get("what_i_built", "") or ""
-    outcomes = study.get("outcome_highlights", []) or []
-    rigour = study.get("rigour", []) or []
-    validation = study.get("validation", []) or []
-    related = study.get("related_articles", []) or []
-
+    """FT customer-story two-column body: sticky left rail + right prose column."""
     side = _render_side_panel(study, lbl, lang)
-
-    # RIGHT main body — narrative sections. Each section uses a single
-    # h2 that carries the stage number as an inline span; we collapsed
-    # the previous "eyebrow + duplicate h2" pattern after user feedback.
-    main_parts: list[str] = []
-    # Intro deck (use the pull-quote as a standfirst if no other intro)
-    if deck:
-        main_parts.append(f'<p class="cs-deck-intro">{_esc(deck)}</p>')
-    # 01 The Challenge
-    if problem:
-        main_parts.append(
-            '<section id="story">'
-            f'<h2 class="cs-stage-headline">{_stage_n(1)}{_esc(lbl["Problem"])}</h2>'
-            f'<p>{_esc(problem)}</p>'
-            '</section>'
-        )
-    # 02 The Approach
-    if what_i_built:
-        main_parts.append(
-            '<section>'
-            f'<h2 class="cs-stage-headline">{_stage_n(2)}{_esc(lbl["What I built"])}</h2>'
-            f'<p>{_esc(what_i_built)}</p>'
-            '</section>'
-        )
-    # By the numbers (inline outcomes) — no stage number prefix
-    if outcomes:
-        main_parts.append(
-            '<section>'
-            f'<h2 class="cs-stage-headline">{_esc(lbl["By the numbers"])}</h2>'
-            + _render_inline_outcomes(outcomes)
-            + '</section>'
-        )
-    # 03 Engineering rigour
-    if rigour:
-        main_parts.append(
-            '<section>'
-            f'<h2 class="cs-stage-headline">{_stage_n(3)}{_esc(lbl["Engineering rigour"])}</h2>'
-            + _render_inline_rigour(rigour, lbl)
-            + '</section>'
-        )
-    # 04 Independently verified
-    if validation:
-        main_parts.append(
-            '<section>'
-            f'<h2 class="cs-stage-headline">{_stage_n(4)}{_esc(lbl["Independently verified"])}</h2>'
-            + _render_inline_validation(validation)
-            + '</section>'
-        )
-    # Related articles (inline at end) — no stage number prefix
-    if related:
-        main_parts.append(
-            '<section>'
-            f'<h2 class="cs-stage-headline">{_esc(lbl["Related articles"])}</h2>'
-            + _render_inline_related_articles(related, lbl, lang, article_slug_map)
-            + '</section>'
-        )
-
+    main_parts = _render_main_body_parts(study, lbl, lang, article_slug_map)
     main_body = f'<div class="cs-body-main">{"".join(main_parts)}</div>'
-
     return (
         '<section class="cs-stage cs-body-stage" data-stage>'
         '<div class="cs-stage-row cs-body-grid">'
@@ -1205,6 +1191,42 @@ def _render_body(
     )
 
 
+def _collect_categories(studies: list[dict]) -> list[tuple[str, str]]:
+    """Unique (slug, display-name) pairs over the studies, preserving order."""
+    categories: list[tuple[str, str]] = []
+    seen: set[str] = set()
+    for s in studies:
+        slug = s.get("category_slug", "")
+        if slug and slug not in seen:
+            seen.add(slug)
+            categories.append((slug, s.get("category", "") or slug))
+    return categories
+
+
+def _filter_dropdown_html(
+    categories: list[tuple[str, str]], lbl: dict[str, str],
+) -> tuple[str, str]:
+    """Return (summary_swap_spans, radio_input_block) for the CSS-only
+    category filter."""
+    summary_swaps = (
+        f'<span class="cs-dd-label cs-dd-label--all">{_esc(lbl["All categories"])}</span>'
+        + "".join(
+            f'<span class="cs-dd-label cs-dd-label--{_esc(slug)}">{_esc(name)}</span>'
+            for slug, name in categories
+        )
+    )
+    radio_options = (
+        '<input type="radio" id="csf-all" name="csfilter" value="" checked>'
+        f'<label for="csf-all">{_esc(lbl["All categories"])}</label>'
+        + "".join(
+            f'<input type="radio" id="csf-{_esc(slug)}" name="csfilter" value="{_esc(slug)}">'
+            f'<label for="csf-{_esc(slug)}">{_esc(name)}</label>'
+            for slug, name in categories
+        )
+    )
+    return summary_swaps, radio_options
+
+
 def _render_index_body(
     studies: list[dict], lbl: dict[str, str], lang: str, url_segment: str,
 ) -> str:
@@ -1227,36 +1249,8 @@ def _render_index_body(
     # Pick a hero banner from the first study so the hub feels editorial.
     hero_banner = studies[0].get("banner", "")
 
-    # Categories represented across all studies.
-    categories: list[tuple[str, str]] = []
-    seen_cats: set[str] = set()
-    for s in studies:
-        cat = s.get("category", "")
-        slug = s.get("category_slug", "")
-        if slug and slug not in seen_cats:
-            seen_cats.add(slug)
-            categories.append((slug, cat or slug))
-
-    # CSS-only dropdown — <details> + radios inside. :has(input:checked)
-    # drives both the filter selection and the summary label swap.
-    summary_swaps = (
-        f'<span class="cs-dd-label cs-dd-label--all">{_esc(lbl["All categories"])}</span>'
-    )
-    for slug, name in categories:
-        summary_swaps += (
-            f'<span class="cs-dd-label cs-dd-label--{_esc(slug)}">{_esc(name)}</span>'
-        )
-    radio_options = (
-        '<input type="radio" id="csf-all" name="csfilter" value="" checked>'
-        f'<label for="csf-all">{_esc(lbl["All categories"])}</label>'
-    )
-    for slug, name in categories:
-        rid = f"csf-{slug}"
-        radio_options += (
-            f'<input type="radio" id="{_esc(rid)}" name="csfilter" '
-            f'value="{_esc(slug)}">'
-            f'<label for="{_esc(rid)}">{_esc(name)}</label>'
-        )
+    categories = _collect_categories(studies)
+    summary_swaps, radio_options = _filter_dropdown_html(categories, lbl)
 
     metric_items = "".join(
         '<div class="cs-hub-metric">'
