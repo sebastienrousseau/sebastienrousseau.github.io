@@ -1,0 +1,46 @@
+title: "BankStatementParser — hazine için birleşik işlem zekâsı"
+banner_alt: "Gece çalışan modern finans ofisi — CAMT, MT940, OFX ve CSV banka ekstre formatları arasında birleşik işlem zekâsını simgeliyor"
+sector: "Açık kaynak · Kurumsal hazine · Risk verisi toplama"
+role: "Yazar ve sürdürücü"
+status: "Üretimde, etkin biçimde bakımı sürüyor"
+
+outcome_highlights:
+  - label: "CAMT (.052/.053/.054), MT940, OFX, CSV, OCR PDF"
+  - label: "Köken: kaynak format ve ayrıştırıcı sürümü kayıt altında"
+  - label: "BCBS 239 risk verisi toplama ile uyumlu"
+  - label: "Serbest kullanım, çatallama ve denetim"
+
+pull_quote: >
+  "Şema doğrulamalı CAMT / MT940 / PAIN ayrıştırıcıları, taranmış PDF'ler
+  için OCR yedeği, deterministik alan eşlemesi ve SR 11-7 seviyesinde
+  denetim kanıtı — her dönüşüm adımı kayıt altında ve yeniden
+  üretilebilir."
+
+problem: >
+  Kurumsal hazine ekipleri onlarca bankadan CAMT, PAIN.001, MT940, OFX,
+  CSV ve taranmış PDF biçiminde banka ekstresi alır. Her formatın alan
+  anlamları, kodlamaları ve belirsizlikleri farklıdır. Çoğu ekip
+  bankaya özgü kırılgan ayrıştırıcıları elle inşa eder; bu da gerçek
+  zamanlı nakit tahmini, dolandırıcılık tespiti ve denetime hazır
+  mutabakatı engeller.
+
+what_i_built: >
+  Her yaygın banka ekstresi formatını tek bir normalize edilmiş işlem
+  akışında birleştiren açık kaynaklı bir Python araç takımı. Şema
+  doğrulamalı CAMT / MT940 / PAIN ayrıştırıcıları, taranmış PDF'ler
+  için OCR yedeği, deterministik alan eşlemesi ve her dönüşüm adımı
+  için SR 11-7 seviyesinde denetim kanıtı.
+
+rigour:
+  - metric: "Desteklenen formatlar"
+    value: "CAMT (.052, .053, .054), MT940, OFX, CSV, taranmış PDF (OCR)"
+  - metric: "Normalizasyon hedefi"
+    value: "Tek birleşik işlem kaydı şeması"
+  - metric: "Denetim izi"
+    value: "Alan bazında köken — her satıra kaynak format ve ayrıştırıcı sürümü işleniyor"
+  - metric: "Lisans"
+    value: "Apache-2.0 / MIT"
+
+validation:
+  - "2026-06-14 tarihli makalede yer aldı: Banka Ekstresinden Birleşik İşlem Zekâsına"
+  - "BCBS 239 risk verisi toplama gereksinimlerini karşılayacak şekilde tasarlandı"

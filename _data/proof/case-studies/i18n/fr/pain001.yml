@@ -1,0 +1,50 @@
+title: "pain001 — automatisation des fichiers de paiement ISO 20022"
+banner_alt: "Vue aérienne d'une métropole au crépuscule — symbolisant l'automatisation des fichiers de paiement structurés sous ISO 20022 à travers les réseaux de compensation mondiaux"
+sector: "Open source · Trésorerie d'entreprise · ISO 20022"
+role: "Auteur et mainteneur"
+status: "En production, activement maintenu"
+
+outcome_highlights:
+  - value: "pain.001"
+    label: "Customer Credit Transfer Initiation"
+  - value: "Validé XSD"
+    label: "Pré-vol sur chaque message"
+  - value: "IBAN + BIC + LEI"
+    label: "Sommes de contrôle ISO 7064 Modulo 97-10"
+  - value: "Apache-2.0 / MIT"
+    label: "Libre d'usage, de fork et d'audit"
+
+pull_quote: >
+  « Citée dans le livre blanc EPAA Quantum-Safe Payments (septembre 2025).
+  Open source, auditée dès le premier jour — aucun traducteur
+  propriétaire entre votre ERP et le réseau de compensation. »
+
+problem: >
+  La migration mondiale MT → MX oblige chaque banque et chaque trésorerie
+  d'entreprise à produire des messages pain.001 structurés. La plupart
+  des équipes écrivent du XML fragile à la main ou achètent des
+  traducteurs propriétaires opaques. Les deux voies envoient des erreurs
+  de paiement dans les réseaux de compensation et ne laissent aucune
+  piste d'audit.
+
+what_i_built: >
+  Une bibliothèque Python open source qui génère des messages ISO 20022
+  pain.001 (Customer Credit Transfer Initiation) validés à partir de
+  CSV / SQLite / Parquet. Validation XSD pré-vol, sommes de contrôle
+  IBAN / BIC, masquage des données personnelles et conformité complète
+  au schéma XSD — le tout dans un workflow Python qui s'intègre aux
+  pipelines ERP et trésorerie existants.
+
+rigour:
+  - metric: "Messages ISO 20022 pris en charge"
+    value: "pain.001 (Customer Credit Transfer Initiation)"
+  - metric: "Conformité au schéma"
+    value: "Validation officielle XSD pré-vol sur chaque message"
+  - metric: "Validateurs livrés"
+    value: "Chiffre de contrôle IBAN + somme de contrôle BIC + LEI (ISO 7064 Modulo 97-10)"
+  - metric: "Licence"
+    value: "Apache-2.0 / MIT — libre d'usage, de fork et d'audit"
+
+validation:
+  - "Citée dans le livre blanc EPAA Quantum-Safe Payments (septembre 2025)"
+  - "Présentée dans des articles publiés sur sebastienrousseau.com depuis 2023-09"

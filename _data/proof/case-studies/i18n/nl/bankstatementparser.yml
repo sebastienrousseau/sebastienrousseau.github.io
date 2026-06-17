@@ -1,0 +1,50 @@
+title: "BankStatementParser — uniforme transactie-intelligentie voor treasury"
+banner_alt: "Modern financieel kantoor bij nacht — symbool voor uniforme transactie-intelligentie over CAMT-, MT940-, OFX- en CSV-bankafschriftformaten heen"
+sector: "Open source · Corporate treasury · Aggregatie van risicogegevens"
+role: "Auteur en beheerder"
+status: "In productie, actief onderhouden"
+
+outcome_highlights:
+  - value: "6 formaten"
+    label: "CAMT (.052/.053/.054), MT940, OFX, CSV, OCR-PDF"
+  - value: "Per veld"
+    label: "Herkomst: bronformaat + parserversie vastgelegd"
+  - value: "BCBS 239"
+    label: "Afgestemd op aggregatie van risicogegevens"
+  - value: "Apache-2.0 / MIT"
+    label: "Vrij te gebruiken, te forken en te auditen"
+
+pull_quote: >
+  "Schema-gevalideerde CAMT-/MT940-/PAIN-parsers, OCR-terugval voor
+  gescande PDF's, deterministische veldmapping en auditbewijs op
+  SR 11-7-niveau — elke transformatiestap geregistreerd en
+  reproduceerbaar."
+
+problem: >
+  Corporate-treasuryteams ontvangen bankafschriften in CAMT, PAIN.001,
+  MT940, OFX, CSV en gescande PDF's van tientallen banken. Elk
+  formaat hanteert andere veldsemantiek, codering en ambiguïteiten.
+  De meeste teams bouwen handmatig broze parsers per bank, wat
+  realtime kasprognoses, fraudedetectie en auditklare reconciliatie
+  blokkeert.
+
+what_i_built: >
+  Een open-source Python-toolkit die elk gangbaar bankafschriftformaat
+  samenbrengt in één genormaliseerde transactiestroom.
+  Schema-gevalideerde CAMT-/MT940-/PAIN-parsers, OCR-terugval voor
+  gescande PDF's, deterministische veldmapping en auditbewijs op
+  SR 11-7-niveau voor elke transformatiestap.
+
+rigour:
+  - metric: "Ondersteunde formaten"
+    value: "CAMT (.052, .053, .054), MT940, OFX, CSV, gescande PDF (OCR)"
+  - metric: "Normalisatiedoel"
+    value: "Eén uniform schema voor transactierecords"
+  - metric: "Audittrail"
+    value: "Herkomst per veld — bronformaat + parserversie per regel vastgelegd"
+  - metric: "Licentie"
+    value: "Apache-2.0 / MIT"
+
+validation:
+  - "Behandeld in het artikel van 2026-06-14: From Bank Statements to Unified Transaction Intelligence"
+  - "Ontworpen om te voldoen aan de BCBS 239-eisen voor aggregatie van risicogegevens"

@@ -1,10 +1,31 @@
 slug: kyberlib
 title: "KyberLib — production-grade ML-KEM in Rust"
-banner: "https://cloudcdn.pro/stocks/images/kyberlib.webp"
+banner: "https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp"
 banner_alt: "Quantum-safe cryptographic key exchange — symbolising the FIPS 203 ML-KEM migration in banking"
+category: "Post-quantum cryptography"
+category_slug: "post-quantum-cryptography"
+kicker: "FIPS 203 · ML-KEM · BANKING MIGRATION"
+sector: "Open-source · Banking · Standards"
 role: "Author and maintainer"
 period: "2023 – present"
 status: "Production, actively maintained"
+
+# Headline numbers shown in the per-study "by the numbers" strip.
+# Every value is verifiable from links below (NIST, Qtonic Lab, F6S).
+outcome_highlights:
+  - value: "FIPS 203"
+    label: "NIST publication track aligned"
+  - value: "Top 44 %"
+    label: "Of ~182 PQC libraries (Qtonic Lab)"
+  - value: "no_std"
+    label: "Embeds in HSMs + secure enclaves"
+  - value: "1 adopter"
+    label: "QGram (Quantum2pi) post-quantum messenger"
+
+pull_quote: >
+  "Evaluated by Qtonic Quantum Lab — independent post-quantum cryptography
+  registry — and adopted by QGram (Quantum2pi) for end-to-end-encrypted
+  messaging. Both verifiable without going through me."
 
 problem: >
   Banks face a November 14, 2026 SWIFT structured-address cutover and
@@ -35,6 +56,8 @@ validation:
   - "Cited in EPAA Quantum-Safe Payments white paper (September 2025)"
   - "Featured in the 2026-06-12 article: KyberLib and the Post-Quantum Banking Migration"
   - "Aligned to NIST FIPS 203 / 204 / 205 publication track"
+  - "Evaluated by Qtonic Quantum Lab — independent post-quantum cryptography evaluation registry, ~182 PQC libraries assessed (top 44%, no vendor pay-for-inclusion)"
+  - "Adopted by QGram (Quantum2pi) — a post-quantum end-to-end-encrypted peer-to-peer messenger that uses KyberLib for message encryption (verifiable at f6s.com/software/qgram)"
 
 standards:
   - "FIPS 203 (ML-KEM)"
@@ -45,6 +68,8 @@ links:
   repo: "https://github.com/sebastienrousseau/kyberlib"
   crates: "https://crates.io/crates/kyberlib"
   docs: "https://docs.rs/kyberlib"
+  qtonic_evaluation: "https://qtonicquantum.com/lab/solutions/kyberlib"
+  qgram_adopter: "https://www.f6s.com/software/qgram"
 
 related_articles:
   - "2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026"

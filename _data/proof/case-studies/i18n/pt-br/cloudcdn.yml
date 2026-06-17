@@ -1,0 +1,51 @@
+title: "CloudCDN — blueprint de código aberto para a edge AI-native"
+banner_alt: "Infraestrutura de edge AI-native — simbolizando o gateway MCP zero-trust, o rate limiting atômico em Durable Objects e o perímetro de passkeys WebAuthn que o CloudCDN entrega como implementação de referência"
+sector: "Código aberto · Edge · Infraestrutura de IA"
+role: "Autor e mantenedor"
+status: "Em produção, mantido ativamente"
+
+outcome_highlights:
+  - label: "100% de cobertura de linhas, ramos e funções"
+  - label: "Proveniência de build + assinatura Sigstore"
+  - label: "Cada chamada com log de auditoria e evidência estruturada"
+  - label: "Mapeado ao Artigo 5 + agregação de dados de risco"
+
+pull_quote: >
+  "Uma implementação de referência em código aberto que uma equipe de
+  segurança consegue ler, fazer fork e assinar — em vez de um PDF de
+  marketing. Rate limiting atômico em Durable Objects, perímetro
+  WebAuthn, proveniência SLSA L3."
+
+problem: >
+  À medida que agentes de IA e ferramentas MCP começam a chamar APIs
+  de edge em escala, os bancos precisam de um perímetro que resista
+  ao tráfego autônomo sem abrir mão da evidência de auditoria de grau
+  DORA. As CDNs existentes oferecem linguagem de marketing ou planos
+  opacos — nenhuma produz a implementação de referência que uma
+  equipe de segurança consegue ler, fazer fork e assinar.
+
+what_i_built: >
+  Um gateway MCP zero-trust de código aberto com 42 ferramentas,
+  rate limiting atômico em Durable Objects, perímetro de passkeys
+  WebAuthn, URLs assinadas e proveniência de build SLSA Nível 3.
+  3.185 testes com 100% de cobertura, mapeados ao Artigo 5 do DORA,
+  à agregação de dados de risco do BCBS 239 e ao capital de risco
+  operacional de Basileia III.
+
+rigour:
+  - metric: "Testes"
+    value: "3.185 testes com 100% de cobertura de linhas, ramos e funções"
+  - metric: "Proveniência da cadeia de suprimentos"
+    value: "Proveniência de build SLSA Nível 3 + assinatura Sigstore"
+  - metric: "Ferramentas MCP entregues"
+    value: "42 ferramentas — cada chamada com log de auditoria e evidência estruturada"
+  - metric: "Rate limiting"
+    value: "Durable Objects atômicos (sem condições de corrida, sem dupla contagem)"
+  - metric: "Autenticação"
+    value: "Passkeys WebAuthn + URLs assinadas"
+  - metric: "Licença"
+    value: "Apache-2.0 / MIT"
+
+validation:
+  - "Destaque no artigo de 11/06/2026: CloudCDN — An Open-Source Blueprint for the AI-Native Edge"
+  - "Mapeado ao Artigo 5 do DORA, BCBS 239 e risco operacional de Basileia III"

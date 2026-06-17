@@ -1,0 +1,49 @@
+title: "pain001 — automatización de archivos de pago ISO 20022"
+banner_alt: "Vista aérea de la ciudad al atardecer — simboliza la automatización de archivos de pago estructurados bajo ISO 20022 en redes de compensación globales"
+sector: "Código abierto · Tesorería corporativa · ISO 20022"
+role: "Autor y mantenedor"
+status: "En producción, mantenido activamente"
+
+outcome_highlights:
+  - value: "pain.001"
+    label: "Customer Credit Transfer Initiation"
+  - value: "XSD-validated"
+    label: "Validación previa en cada mensaje"
+  - value: "IBAN + BIC + LEI"
+    label: "Sumas de verificación ISO 7064 Módulo 97-10"
+  - value: "Apache-2.0 / MIT"
+    label: "De uso libre, bifurcable y auditable"
+
+pull_quote: >
+  "Citada en el documento técnico EPAA Quantum-Safe Payments (septiembre de
+  2025). Código abierto, auditada desde el primer día: sin traductor
+  propietario entre su ERP y la red de compensación."
+
+problem: >
+  La migración global MT a MX obliga a cada banco y tesorería corporativa a
+  producir mensajes pain.001 estructurados. La mayoría de los equipos
+  escribe a mano XML frágil o compra traductores propietarios opacos. Ambas
+  vías introducen errores de pago en las redes de compensación y no dejan
+  pista de auditoría.
+
+what_i_built: >
+  Una librería Python de código abierto que genera mensajes ISO 20022
+  pain.001 (Customer Credit Transfer Initiation) validados a partir de
+  CSV / SQLite / Parquet. Validación XSD previa al vuelo, sumas de
+  verificación IBAN / BIC, enmascarado de PII y conformidad total con el
+  esquema XSD, todo dentro de un flujo Python que se integra en los
+  pipelines existentes de ERP y tesorería.
+
+rigour:
+  - metric: "Mensajes ISO 20022 compatibles"
+    value: "pain.001 (Customer Credit Transfer Initiation)"
+  - metric: "Conformidad de esquema"
+    value: "Validación XSD oficial previa al vuelo en cada mensaje"
+  - metric: "Validadores incluidos"
+    value: "Dígito de control IBAN, BIC y suma de verificación LEI (ISO 7064 Módulo 97-10)"
+  - metric: "Licencia"
+    value: "Apache-2.0 / MIT — de uso libre, bifurcable y auditable"
+
+validation:
+  - "Citada en el documento técnico EPAA Quantum-Safe Payments (septiembre de 2025)"
+  - "Destacada en artículos publicados en sebastienrousseau.com desde septiembre de 2023"

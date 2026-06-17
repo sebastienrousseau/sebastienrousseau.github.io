@@ -1,0 +1,53 @@
+title: "KyberLib — ML-KEM produkční kvality v Rustu"
+banner_alt: "Kvantově odolná kryptografická výměna klíčů — symbolizuje migraci na FIPS 203 ML-KEM v bankovnictví"
+sector: "Open-source · Bankovnictví · Standardy"
+role: "Autor a správce projektu"
+status: "Produkční nasazení, aktivně udržováno"
+
+outcome_highlights:
+  - value: "FIPS 203"
+    label: "V souladu s publikační dráhou NIST"
+  - value: "Top 44 %"
+    label: "Z ~182 PQC knihoven (Qtonic Lab)"
+  - value: "no_std"
+    label: "Vestavitelné do HSM + bezpečných enkláv"
+  - value: "1 adopter"
+    label: "QGram (Quantum2pi) post-kvantový messenger"
+
+pull_quote: >
+  "Vyhodnoceno laboratoří Qtonic Quantum Lab — nezávislým registrem
+  post-kvantové kryptografie — a přijato projektem QGram (Quantum2pi)
+  pro koncové šifrování zpráv. Obojí ověřitelné bez jakékoli mé účasti."
+
+problem: >
+  Banky čelí přechodu na strukturované adresy SWIFT k 14. listopadu 2026
+  a delšímu migračnímu oknu NIST pro post-kvantovou kryptografii.
+  Stávající PQC implementace přicházejí jako policy papers, laboratorní
+  kód nebo proprietární black-boxy HSM — žádný z nich není architektem
+  plateb čitelný, testovatelný ani podepsatelný.
+
+what_i_built: >
+  KyberLib převádí FIPS 203 ML-KEM (CRYSTALS-Kyber) do inspektovatelného
+  Rustu. Hybridní klasické-plus-kvantové handshakes, kompilace v no_std
+  pro vestavění do HSM, krypto-agilní abstrakční hranice a důkazy
+  governance dle článku 5 DORA, které správní rady nyní potřebují pro
+  podporu PQC migrace bez převzetí neprůhledného dodavatelského rizika.
+
+rigour:
+  - metric: "Kryptografický standard"
+    value: "FIPS 203 (ML-KEM, dříve CRYSTALS-Kyber)"
+  - metric: "Podpora hybridního handshake"
+    value: "Klasický TLS + ML-KEM-768 v režimu X25519MLKEM768"
+  - metric: "Kompilace"
+    value: "no_std — vestavitelné do HSM, bezpečných enkláv, embedded cílů"
+  - metric: "Krypto-agilita"
+    value: "Abstrakční hranice umožňují záměnu algoritmu bez změny API"
+  - metric: "Licence"
+    value: "Apache-2.0 / MIT"
+
+validation:
+  - "Citováno v bílé knize EPAA Quantum-Safe Payments (září 2025)"
+  - "Představeno v článku z 12. 6. 2026: KyberLib and the Post-Quantum Banking Migration"
+  - "V souladu s publikační dráhou NIST FIPS 203 / 204 / 205"
+  - "Vyhodnoceno laboratoří Qtonic Quantum Lab — nezávislý hodnotící registr post-kvantové kryptografie, posouzeno ~182 PQC knihoven (horních 44 %, bez placeného zařazení dodavatelů)"
+  - "Přijato projektem QGram (Quantum2pi) — post-kvantovým peer-to-peer messengerem s koncovým šifrováním, který používá KyberLib pro šifrování zpráv (ověřitelné na f6s.com/software/qgram)"

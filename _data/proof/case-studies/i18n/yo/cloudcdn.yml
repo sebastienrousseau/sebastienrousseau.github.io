@@ -1,0 +1,52 @@
+title: "CloudCDN — àwòkọ́ṣe orísun-ṣíṣí fún etí AI-ìbílẹ̀"
+banner_alt: "Ìpìlẹ̀ etí AI-ìbílẹ̀ — ó dúró fún ẹnu-ọ̀nà MCP aláìní-ìgbẹ́kẹ̀lé, ààlà ìfilọ́jú Durable Objects tó dájú, àti ààlà passkey WebAuthn tí CloudCDN ń pèsè gẹ́gẹ́ bí ìmúṣẹ ìtọ́ka"
+sector: "Orísun ṣíṣí · Etí · Ìpìlẹ̀ AI"
+role: "Òǹkọ̀wé àti olùtọ́jú"
+status: "Ń ṣiṣẹ́ ní ìmújáde, ó ń gba ìtọ́jú lójoojúmọ́"
+
+outcome_highlights:
+  - value: "3,185 tests"
+    label: "Ìbólékè ìlà, ẹ̀ka, iṣẹ́ ní 100 %"
+  - value: "SLSA L3"
+    label: "Ìpilẹ̀ṣẹ̀ ìmújáde + ìfọwọ́sí Sigstore"
+  - value: "42 MCP tools"
+    label: "Gbogbo ìpè ni a kọ sí ìwé pẹ̀lú ẹ̀rí tí a ṣètò"
+  - value: "DORA / BCBS 239"
+    label: "A so mọ́ Àpilẹ̀kọ 5 + ìkójọ data ewu"
+
+pull_quote: >
+  "Ìmúṣẹ ìtọ́ka orísun-ṣíṣí tí ẹgbẹ́ ààbò lè kà, fọ́ọ̀kì, kí wọ́n sì
+  fọwọ́sí — kì í ṣe PDF ìpolówó. Ààlà ìfilọ́jú Durable Objects tó dájú,
+  ààlà WebAuthn, ìpilẹ̀ṣẹ̀ SLSA L3."
+
+problem: >
+  Bí àwọn aṣojú AI àti irinṣẹ́ MCP ṣe bẹ̀rẹ̀ sí pe àwọn API etí ní iye
+  ńlá, àwọn báńkì nílò ààlà tí ó lè dúró fún ìjò ọkọ̀ aládàáṣe láìjáde
+  ẹ̀rí ìṣàyẹ̀wò ti ìpele DORA. Àwọn CDN tí ó wà lọ́wọ́lọ́wọ́ ń pèsè boya
+  èdè ìpolówó tàbí àwọn ètò tí kò ṣíkàrà — kò sí ọ̀kan tí ó ń mú ìmúṣẹ
+  ìtọ́ka tí ẹgbẹ́ ààbò lè kà, fọ́ọ̀kì, kí wọ́n sì fọwọ́sí jáde.
+
+what_i_built: >
+  Ẹnu-ọ̀nà MCP orísun-ṣíṣí, aláìní-ìgbẹ́kẹ̀lé pẹ̀lú irinṣẹ́ 42, ààlà
+  ìfilọ́jú Durable Objects tó dájú, ààlà passkey WebAuthn, àwọn URL tí
+  a fọwọ́sí, àti ìpilẹ̀ṣẹ̀ ìmújáde SLSA Ìpele 3. Àdánwò 3,185 ní ìbólékè
+  100 %, tí a so mọ́ Àpilẹ̀kọ 5 DORA, ìkójọ data ewu BCBS 239, àti
+  olú-ìní ewu ìmúṣẹ Basel III.
+
+rigour:
+  - metric: "Àdánwò"
+    value: "Àdánwò 3,185 ní ìbólékè ìlà, ẹ̀ka, àti iṣẹ́ ti 100 %"
+  - metric: "Ìpilẹ̀ṣẹ̀ ẹ̀wọ̀n ìpèsè"
+    value: "Ìpilẹ̀ṣẹ̀ ìmújáde SLSA Ìpele 3 + ìfọwọ́sí Sigstore"
+  - metric: "Irinṣẹ́ MCP tí a pèsè"
+    value: "Irinṣẹ́ 42 — gbogbo ìpè ni a kọ sí ìwé pẹ̀lú ẹ̀rí tí a ṣètò"
+  - metric: "Ààlà ìfilọ́jú"
+    value: "Durable Objects tó dájú (kò sí ìjà ipò, kò sí ìka-ìlọ́pọ̀)"
+  - metric: "Ìjẹ́rìí"
+    value: "Àwọn passkey WebAuthn + àwọn URL tí a fọwọ́sí"
+  - metric: "Iwé-àṣẹ"
+    value: "Apache-2.0 / MIT"
+
+validation:
+  - "A ṣàfihàn rẹ̀ nínú àpilẹ̀kọ 2026-06-11: CloudCDN — An Open-Source Blueprint for the AI-Native Edge"
+  - "A so mọ́ Àpilẹ̀kọ 5 DORA, BCBS 239, àti ewu ìmúṣẹ Basel III"

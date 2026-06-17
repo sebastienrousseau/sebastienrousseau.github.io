@@ -1,0 +1,46 @@
+title: "pain001 — pag-automate ng mga payment file na ISO 20022"
+banner_alt: "Aerial cityscape sa takipsilim — sumisimbolo sa structured payment file automation sa ilalim ng ISO 20022 sa mga global clearing network"
+sector: "Open-source · Corporate treasury · ISO 20022"
+role: "May-akda at maintainer"
+status: "Produksiyon, aktibong pinapanatili"
+
+outcome_highlights:
+  - label: "Customer Credit Transfer Initiation"
+  - label: "Pre-flight sa bawat mensahe"
+  - label: "ISO 7064 Modulo 97-10 checksums"
+  - label: "Libreng gamitin, i-fork, at i-audit"
+
+pull_quote: >
+  "Binanggit sa EPAA Quantum-Safe Payments white paper (Setyembre 2025).
+  Open-source, na-audit mula sa unang araw — walang proprietary
+  translator sa pagitan ng inyong ERP at ng clearing network."
+
+problem: >
+  Pinipilit ng global MT → MX migration ang bawat bangko at corporate
+  treasury na lumikha ng structured pain.001 messages. Karamihan sa
+  mga team ay manu-manong nagsusulat ng marupok na XML o bumibili
+  ng malabong proprietary translator. Pareho silang nagdadala ng
+  payment errors sa mga clearing network at hindi nag-iiwan ng
+  audit trail.
+
+what_i_built: >
+  Isang open-source Python library na gumagawa ng validated ISO 20022
+  pain.001 (Customer Credit Transfer Initiation) messages mula sa
+  CSV / SQLite / Parquet. Pre-flight XSD validation, IBAN / BIC
+  checksums, PII masking, at buong XSD schema conformance — lahat
+  sa loob ng Python workflow na pumapasok nang diretso sa umiiral
+  na ERP at treasury pipelines.
+
+rigour:
+  - metric: "Mga sinusuportahang mensahe ng ISO 20022"
+    value: "pain.001 (Customer Credit Transfer Initiation)"
+  - metric: "Schema conformance"
+    value: "Opisyal na XSD validation pre-flight sa bawat mensahe"
+  - metric: "Mga inihatid na validator"
+    value: "IBAN check-digit + BIC + LEI checksum (ISO 7064 Modulo 97-10)"
+  - metric: "Lisensya"
+    value: "Apache-2.0 / MIT — libreng gamitin, i-fork, at i-audit"
+
+validation:
+  - "Binanggit sa EPAA Quantum-Safe Payments white paper (Setyembre 2025)"
+  - "Itinampok sa mga artikulo sa sebastienrousseau.com mula 2023-09"

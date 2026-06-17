@@ -100,6 +100,4 @@ site_software: "Static Site Generator, Rust"
 
 ---
 
-This page has a comprehensive list of the most popular and critically acclaimed playlists on Spotify, covering a wide range of genres. Whether you're a fan of old-school jazz, soulful hip-hop, or modern r&b, you'll find a playlist here that fits your taste.
-
-## Latest Music
+What I listen to while I write. Five tonal lanes — soul and jazz for the long read, morning and mood for the slow start, electronic for the push, hip-hop for the rewrite, and a thread of global rhythms throughout. Updated as the rotation shifts.

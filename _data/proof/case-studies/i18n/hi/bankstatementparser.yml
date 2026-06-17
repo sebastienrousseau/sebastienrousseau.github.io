@@ -1,0 +1,71 @@
+slug: bankstatementparser
+title: "BankStatementParser — ट्रेज़री के लिए एकीकृत लेनदेन इंटेलिजेंस"
+banner: "https://cloudcdn.pro/stocks/images/rryoji-iwata-a-qsFZimp1M.webp"
+banner_alt: "रात्रि में आधुनिक वित्त कार्यालय — CAMT, MT940, OFX और CSV बैंक स्टेटमेंट प्रारूपों में एकीकृत लेनदेन इंटेलिजेंस का प्रतीक"
+category: "Payments"
+category_slug: "payments"
+kicker: "CAMT · MT940 · OFX · TREASURY"
+sector: "ओपन-सोर्स · कॉर्पोरेट ट्रेज़री · जोखिम-डेटा एकत्रीकरण"
+role: "लेखक एवं अनुरक्षक"
+period: "2024 – present"
+status: "उत्पादन में, सक्रिय रूप से अनुरक्षित"
+
+outcome_highlights:
+  - value: "6 formats"
+    label: "CAMT (.052/.053/.054), MT940, OFX, CSV, OCR PDF"
+  - value: "Per-field"
+    label: "उद्गम-प्रमाण: स्रोत प्रारूप + पार्सर संस्करण लॉग किया गया"
+  - value: "BCBS 239"
+    label: "जोखिम-डेटा एकत्रीकरण के अनुरूप"
+  - value: "Apache-2.0 / MIT"
+    label: "उपयोग, फोर्क और ऑडिट के लिए निःशुल्क"
+
+pull_quote: >
+  "स्कीमा-सत्यापित CAMT / MT940 / PAIN पार्सर, स्कैन की गई PDF के लिए OCR
+  फ़ॉलबैक, नियतात्मक फ़ील्ड मैपिंग, SR 11-7-स्तरीय ऑडिट प्रमाण — प्रत्येक
+  रूपांतरण चरण दर्ज और पुनरुत्पादनीय।"
+
+problem: >
+  कॉर्पोरेट ट्रेज़री टीमें दर्जनों बैंकों से CAMT, PAIN.001, MT940, OFX,
+  CSV और स्कैन की गई PDF में बैंक स्टेटमेंट प्राप्त करती हैं। प्रत्येक
+  प्रारूप में भिन्न फ़ील्ड शब्दार्थ, एन्कोडिंग और अस्पष्टताएँ होती हैं।
+  अधिकांश टीमें प्रति-बैंक नाज़ुक पार्सर हाथ से बनाती हैं, जिससे
+  वास्तविक-समय नकदी पूर्वानुमान, धोखाधड़ी का पता लगाना और ऑडिट-तैयार
+  समाधान अवरुद्ध हो जाता है।
+
+what_i_built: >
+  एक ओपन-सोर्स Python टूलकिट जो हर सामान्य बैंक स्टेटमेंट प्रारूप को एक
+  ही, सामान्यीकृत लेनदेन धारा में एकीकृत करता है। स्कीमा-सत्यापित CAMT /
+  MT940 / PAIN पार्सर, स्कैन की गई PDF के लिए OCR फ़ॉलबैक, नियतात्मक
+  फ़ील्ड मैपिंग, और प्रत्येक रूपांतरण चरण के लिए SR 11-7-स्तरीय ऑडिट
+  प्रमाण।
+
+rigour:
+  - metric: "समर्थित प्रारूप"
+    value: "CAMT (.052, .053, .054), MT940, OFX, CSV, स्कैन की गई PDF (OCR)"
+  - metric: "सामान्यीकरण लक्ष्य"
+    value: "एकल एकीकृत लेनदेन रिकॉर्ड स्कीमा"
+  - metric: "ऑडिट ट्रेल"
+    value: "प्रति-फ़ील्ड उद्गम-प्रमाण — प्रति पंक्ति स्रोत प्रारूप + पार्सर संस्करण लॉग किया गया"
+  - metric: "लाइसेंस"
+    value: "Apache-2.0 / MIT"
+
+validation:
+  - "2026-06-14 के लेख में प्रस्तुत: बैंक स्टेटमेंट से एकीकृत लेनदेन इंटेलिजेंस तक"
+  - "BCBS 239 जोखिम-डेटा एकत्रीकरण आवश्यकताओं को पूरा करने के लिए डिज़ाइन किया गया"
+
+standards:
+  - "ISO 20022 CAMT"
+  - "SWIFT MT940"
+  - "OFX"
+  - "BCBS 239"
+
+links:
+  repo: "https://github.com/sebastienrousseau/bankstatementparser"
+  pypi: "https://pypi.org/project/bankstatementparser/"
+  stats: "https://pypistats.org/packages/bankstatementparser"
+
+related_articles:
+  - "2026-06-14-bankstatementparser-transaction-intelligence-treasury-open-source-2026"
+
+signed: true

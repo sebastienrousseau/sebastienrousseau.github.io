@@ -1,0 +1,50 @@
+title: "BankStatementParser — intelligenza unificata delle transazioni per il tesoreria"
+banner_alt: "Ufficio finanziario moderno di notte — a simboleggiare l'intelligenza unificata delle transazioni attraverso i formati di rendiconto bancario CAMT, MT940, OFX e CSV"
+sector: "Open source · Tesoreria aziendale · Aggregazione dei dati di rischio"
+role: "Autore e manutentore"
+status: "In produzione, attivamente mantenuto"
+
+outcome_highlights:
+  - value: "6 formati"
+    label: "CAMT (.052/.053/.054), MT940, OFX, CSV, PDF OCR"
+  - value: "Per campo"
+    label: "Provenienza: formato sorgente e versione del parser registrati"
+  - value: "BCBS 239"
+    label: "Allineato all'aggregazione dei dati di rischio"
+  - value: "Apache-2.0 / MIT"
+    label: "Liberamente utilizzabile, modificabile, verificabile"
+
+pull_quote: >
+  «Parser CAMT / MT940 / PAIN convalidati a schema, fallback OCR per i
+  PDF scansionati, mappatura deterministica dei campi, evidenze di audit
+  conformi a SR 11-7 — ogni passaggio di trasformazione è registrato e
+  riproducibile.»
+
+problem: >
+  I team di tesoreria aziendale ricevono rendiconti bancari in CAMT,
+  PAIN.001, MT940, OFX, CSV e PDF scansionati da decine di banche. Ogni
+  formato porta semantiche di campo, codifiche e ambiguità differenti.
+  La maggior parte dei team costruisce a mano parser fragili e specifici
+  per banca, bloccando la previsione di cassa in tempo reale, il
+  rilevamento delle frodi e la riconciliazione conforme agli audit.
+
+what_i_built: >
+  Un toolkit Python open source che unifica ogni formato comune di
+  rendiconto bancario in un singolo flusso di transazioni normalizzato.
+  Parser CAMT / MT940 / PAIN convalidati a schema, fallback OCR per i
+  PDF scansionati, mappatura deterministica dei campi ed evidenze di
+  audit conformi a SR 11-7 per ogni passaggio di trasformazione.
+
+rigour:
+  - metric: "Formati supportati"
+    value: "CAMT (.052, .053, .054), MT940, OFX, CSV, PDF scansionato (OCR)"
+  - metric: "Obiettivo di normalizzazione"
+    value: "Singolo schema unificato di record di transazione"
+  - metric: "Pista di audit"
+    value: "Provenienza per campo — formato sorgente e versione del parser registrati per ogni riga"
+  - metric: "Licenza"
+    value: "Apache-2.0 / MIT"
+
+validation:
+  - "Presentato nell'articolo del 14/06/2026: Dai rendiconti bancari all'intelligenza unificata delle transazioni"
+  - "Progettato per soddisfare i requisiti di aggregazione dei dati di rischio BCBS 239"

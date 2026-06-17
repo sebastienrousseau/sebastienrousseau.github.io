@@ -1,0 +1,45 @@
+title: "BankStatementParser — zunifikowana analityka transakcji dla skarbu"
+banner_alt: "Nowoczesne biuro finansowe nocą — symbolizuje zunifikowaną analitykę transakcji w formatach wyciągów bankowych CAMT, MT940, OFX i CSV"
+sector: "Open source · Skarb korporacyjny · Agregacja danych ryzyka"
+role: "Autor i opiekun projektu"
+status: "Produkcja, aktywnie utrzymywane"
+
+outcome_highlights:
+  - label: "CAMT (.052/.053/.054), MT940, OFX, CSV, OCR PDF"
+  - label: "Proweniencja: format źródłowy i wersja parsera rejestrowane"
+  - label: "Zgodne z agregacją danych ryzyka BCBS 239"
+  - label: "Wolne do użytku, forkowania i audytu"
+
+pull_quote: >
+  "Parsery CAMT / MT940 / PAIN walidowane względem schematu, awaryjna ścieżka
+  OCR dla skanowanych PDF, deterministyczne mapowanie pól oraz dowody
+  audytowe klasy SR 11-7 — każdy krok transformacji zapisany i odtwarzalny."
+
+problem: >
+  Zespoły skarbu korporacyjnego otrzymują wyciągi bankowe w formatach CAMT,
+  PAIN.001, MT940, OFX, CSV oraz jako skanowane PDF z dziesiątek banków.
+  Każdy format niesie inną semantykę pól, kodowanie i niejednoznaczności.
+  Większość zespołów buduje ręcznie kruche parsery per bank, co blokuje
+  prognozowanie gotówki w czasie rzeczywistym, wykrywanie nadużyć
+  i uzgodnienia gotowe do audytu.
+
+what_i_built: >
+  Otwartoźródłowy zestaw narzędzi w Pythonie, który ujednolica każdy
+  popularny format wyciągu bankowego w jednolity, znormalizowany strumień
+  transakcji. Parsery CAMT / MT940 / PAIN walidowane względem schematu,
+  awaryjna ścieżka OCR dla skanowanych PDF, deterministyczne mapowanie
+  pól oraz dowody audytowe klasy SR 11-7 dla każdego kroku transformacji.
+
+rigour:
+  - metric: "Obsługiwane formaty"
+    value: "CAMT (.052, .053, .054), MT940, OFX, CSV, skanowany PDF (OCR)"
+  - metric: "Cel normalizacji"
+    value: "Jednolity schemat rekordu transakcji"
+  - metric: "Ślad audytowy"
+    value: "Proweniencja per pole — format źródłowy i wersja parsera rejestrowane na każdy wiersz"
+  - metric: "Licencja"
+    value: "Apache-2.0 / MIT"
+
+validation:
+  - "Opisane w artykule z 14.06.2026: From Bank Statements to Unified Transaction Intelligence"
+  - "Zaprojektowane tak, aby spełniać wymagania agregacji danych ryzyka BCBS 239"

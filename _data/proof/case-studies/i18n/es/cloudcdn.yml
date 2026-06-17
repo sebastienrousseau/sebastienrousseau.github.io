@@ -1,0 +1,55 @@
+title: "CloudCDN — plano de código abierto para el edge nativo en IA"
+banner_alt: "Infraestructura edge nativa en IA — simboliza la pasarela MCP de confianza cero, la limitación atómica con Durable Objects y el perímetro WebAuthn con claves de acceso que CloudCDN distribuye como implementación de referencia"
+sector: "Código abierto · Edge · Infraestructura de IA"
+role: "Autor y mantenedor"
+status: "En producción, mantenido activamente"
+
+outcome_highlights:
+  - value: "3,185 tests"
+    label: "100 % de cobertura de líneas, ramas y funciones"
+  - value: "SLSA L3"
+    label: "Procedencia de compilación y firma Sigstore"
+  - value: "42 MCP tools"
+    label: "Cada llamada registrada en auditoría con evidencia estructurada"
+  - value: "DORA / BCBS 239"
+    label: "Mapeado al Artículo 5 y a la agregación de datos de riesgo"
+
+pull_quote: >
+  "Una implementación de referencia de código abierto que un equipo de
+  seguridad puede leer, bifurcar y firmar, en lugar de un PDF de marketing.
+  Limitación atómica con Durable Objects, perímetro WebAuthn y procedencia
+  SLSA L3."
+
+problem: >
+  A medida que los agentes de IA y las herramientas MCP empiezan a invocar
+  API edge a escala, los bancos necesitan un perímetro que resista el
+  tráfico autónomo sin renunciar a la evidencia de auditoría exigida por
+  DORA. Los CDN existentes ofrecen lenguaje de marketing o planes opacos:
+  ninguno produce la implementación de referencia que un equipo de
+  seguridad pueda leer, bifurcar y firmar.
+
+what_i_built: >
+  Una pasarela MCP de confianza cero, de código abierto, con 42
+  herramientas, limitación atómica con Durable Objects, perímetro WebAuthn
+  con claves de acceso, URL firmadas y procedencia de compilación SLSA
+  Nivel 3. 3.185 pruebas con 100 % de cobertura, mapeadas al Artículo 5 de
+  DORA, a la agregación de datos de riesgo BCBS 239 y al capital de riesgo
+  operacional de Basilea III.
+
+rigour:
+  - metric: "Pruebas"
+    value: "3.185 pruebas con 100 % de cobertura de líneas, ramas y funciones"
+  - metric: "Procedencia de la cadena de suministro"
+    value: "Procedencia de compilación SLSA Nivel 3 y firma Sigstore"
+  - metric: "Herramientas MCP entregadas"
+    value: "42 herramientas — cada llamada registrada en auditoría con evidencia estructurada"
+  - metric: "Limitación de tasa"
+    value: "Durable Objects atómicos (sin condiciones de carrera ni doble conteo)"
+  - metric: "Autenticación"
+    value: "Claves de acceso WebAuthn y URL firmadas"
+  - metric: "Licencia"
+    value: "Apache-2.0 / MIT"
+
+validation:
+  - "Destacado en el artículo del 11-06-2026: CloudCDN — un plano de código abierto para el edge nativo en IA"
+  - "Mapeado al Artículo 5 de DORA, BCBS 239 y al riesgo operacional de Basilea III"

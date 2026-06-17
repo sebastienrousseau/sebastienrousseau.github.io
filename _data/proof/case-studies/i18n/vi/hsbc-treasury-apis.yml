@@ -1,0 +1,50 @@
+title: "HSBC Treasury APIs — thanh toán và Banking-as-a-Service"
+banner_alt: "Đường chân trời City of London — biểu trưng cho nền tảng API ngân quỹ được triển khai trong khuôn khổ chương trình Ngân hàng Thương mại và Đầu tư của HSBC"
+sector: "Ngân hàng thương mại Tier-1 · Ngân quỹ doanh nghiệp · Thanh toán được quản lý"
+role: "Lãnh đạo sản phẩm / công nghệ cấp cao"
+status: "Đang vận hành thực tế tại một ngân hàng toàn cầu Tier-1"
+
+outcome_highlights:
+  - value: "Tier-1"
+    label: "Ngân hàng toàn cầu, khối Ngân hàng Thương mại và Đầu tư"
+  - value: "FCA / PRA"
+    label: "Vành đai thanh toán được quản lý"
+  - value: "Treasury / BaaS"
+    label: "Tiền mặt có thể lập trình, thanh khoản, kênh thanh toán"
+  - value: "Multi-year"
+    label: "Lãnh đạo sản phẩm và công nghệ cấp cao"
+
+pull_quote: >
+  "Đã đưa vào vận hành các API thanh toán, số dư và thanh khoản trong
+  vành đai pháp lý của ngân hàng — xuyên suốt kiến trúc, tích hợp nhà
+  cung cấp, bằng chứng giám sát và các biện pháp kiểm soát khả năng
+  phục hồi vận hành mà DORA và SR 11-7 hiện đang yêu cầu."
+
+problem: >
+  Các bộ phận ngân quỹ doanh nghiệp đòi hỏi quyền truy cập có thể lập
+  trình vào quản lý tiền mặt, thanh khoản và kênh thanh toán bên trong
+  một ngân hàng Tier-1 — mà không phải đánh đổi lớp bằng chứng pháp lý
+  mà chính ngân hàng phải tạo ra.
+
+what_i_built: >
+  Dẫn dắt các luồng công việc về sản phẩm và công nghệ cho chương trình
+  Treasury APIs và Banking-as-a-Service của HSBC trong khối Ngân hàng
+  Thương mại và Đầu tư, đưa các API thanh toán, số dư và thanh khoản
+  vào vận hành thực tế trong vành đai pháp lý của ngân hàng. Phối hợp
+  xuyên suốt kiến trúc, tích hợp nhà cung cấp, bằng chứng giám sát và
+  các biện pháp kiểm soát khả năng phục hồi vận hành mà DORA và SR
+  11-7 hiện đang yêu cầu.
+
+rigour:
+  - metric: "Phạm vi vai trò"
+    value: "Lãnh đạo sản phẩm / công nghệ cấp cao trong khối CIB"
+  - metric: "Vành đai pháp lý"
+    value: "Nền tảng thanh toán chịu sự quản lý của FCA / PRA"
+  - metric: "Bề mặt tích hợp"
+    value: "API ngân quỹ, quản lý số dư / tiền mặt, phân phối BaaS"
+  - metric: "Đối tượng phục vụ"
+    value: "Giám đốc ngân quỹ tại các tập đoàn đa quốc gia và ngân hàng Tier-2"
+
+validation:
+  - "Vai trò công khai tại HSBC Commercial & Investment Bank — có thể kiểm chứng qua LinkedIn"
+  - "Phạm vi chương trình được tham chiếu trong phần About / Experience"

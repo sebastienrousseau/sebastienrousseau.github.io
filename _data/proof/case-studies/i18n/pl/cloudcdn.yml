@@ -1,0 +1,51 @@
+title: "CloudCDN — otwartoźródłowy wzorzec dla brzegu sieci ery AI"
+banner_alt: "Infrastruktura brzegowa ery AI — symbolizuje bramę MCP zero trust, atomowe ograniczanie przepustowości w Durable Objects oraz perymetr WebAuthn passkey, które CloudCDN dostarcza jako implementację referencyjną"
+sector: "Open source · Brzeg sieci · Infrastruktura AI"
+role: "Autor i opiekun projektu"
+status: "Produkcja, aktywnie utrzymywane"
+
+outcome_highlights:
+  - label: "100 % pokrycia linii, gałęzi i funkcji"
+  - label: "Proweniencja buildu + podpis Sigstore"
+  - label: "Każde wywołanie audytowane z dowodem strukturalnym"
+  - label: "Zmapowane na Artykuł 5 i agregację danych ryzyka"
+
+pull_quote: >
+  "Otwartoźródłowa implementacja referencyjna, którą zespół bezpieczeństwa
+  może przeczytać, sforkować i podpisać — zamiast marketingowego PDF.
+  Atomowe ograniczanie przepustowości w Durable Objects, perymetr
+  WebAuthn, proweniencja SLSA L3."
+
+problem: >
+  Gdy agenci AI i narzędzia MCP zaczynają na masową skalę wywoływać API
+  brzegowe, banki potrzebują perymetru, który wytrzyma ruch autonomiczny
+  bez utraty dowodów audytowych klasy DORA. Istniejące CDN-y oferują
+  albo język marketingowy, albo nieprzejrzyste plany — żadne z tych
+  rozwiązań nie produkuje implementacji referencyjnej, którą zespół
+  bezpieczeństwa może przeczytać, sforkować i podpisać.
+
+what_i_built: >
+  Otwartoźródłowa brama MCP w modelu zero trust z 42 narzędziami,
+  atomowym ograniczaniem przepustowości w Durable Objects, perymetrem
+  WebAuthn passkey, podpisanymi URL-ami i proweniencją buildu SLSA
+  Level 3. 3 185 testów przy 100 % pokryciu, zmapowane na DORA
+  Artykuł 5, agregację danych ryzyka BCBS 239 oraz kapitał z tytułu
+  ryzyka operacyjnego według Bazylei III.
+
+rigour:
+  - metric: "Testy"
+    value: "3 185 testów przy 100 % pokryciu linii, gałęzi i funkcji"
+  - metric: "Proweniencja łańcucha dostaw"
+    value: "Proweniencja buildu SLSA Level 3 + podpis Sigstore"
+  - metric: "Dostarczone narzędzia MCP"
+    value: "42 narzędzia — każde wywołanie audytowane z dowodem strukturalnym"
+  - metric: "Ograniczanie przepustowości"
+    value: "Atomowe Durable Objects (bez warunków wyścigu, bez podwójnego liczenia)"
+  - metric: "Uwierzytelnianie"
+    value: "Klucze WebAuthn passkey + podpisane URL-e"
+  - metric: "Licencja"
+    value: "Apache-2.0 / MIT"
+
+validation:
+  - "Opisane w artykule z 11.06.2026: CloudCDN — An Open-Source Blueprint for the AI-Native Edge"
+  - "Zmapowane na DORA Artykuł 5, BCBS 239, ryzyko operacyjne Bazylei III"

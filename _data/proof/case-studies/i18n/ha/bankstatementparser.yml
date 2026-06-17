@@ -1,0 +1,50 @@
+title: "BankStatementParser — haɗaɗɗiyar fahimtar mu'amaloli ga ma'aikatar kuɗi"
+banner_alt: "Ofishin kuɗi na zamani da dare — alama ce ta haɗaɗɗiyar fahimtar mu'amaloli a tsakanin tsarurrukan bayanan banki na CAMT, MT940, OFX, da CSV"
+sector: "Buɗaɗɗen tushe · Ma'aikatar kuɗi ta kamfani · Tara bayanan haɗari"
+role: "Marubuci kuma mai kula"
+status: "Yana aiki cikin samarwa, ana kula da shi a kullum"
+
+outcome_highlights:
+  - value: "6 formats"
+    label: "CAMT (.052/.053/.054), MT940, OFX, CSV, OCR PDF"
+  - value: "Per-field"
+    label: "Asalin bayanai: an yi rajistar tsarin tushe da nau'in parser"
+  - value: "BCBS 239"
+    label: "An daidaita da tara bayanan haɗari"
+  - value: "Apache-2.0 / MIT"
+    label: "Kyauta don amfani, fork, da bincike"
+
+pull_quote: >
+  "Parsers na CAMT / MT940 / PAIN da aka tabbatar da tsarin, OCR a matsayin
+  madadin don PDF da aka sikanin, taswirar fili mai tabbaci, shaidar bincike
+  mai matsayin SR 11-7 — kowane mataki na canji an yi rajistarsa kuma yana
+  iya sake faruwa."
+
+problem: >
+  Ƙungiyoyin ma'aikatar kuɗi na kamfanoni suna karɓar bayanan banki a tsarin
+  CAMT, PAIN.001, MT940, OFX, CSV, da PDF da aka sikanin daga bankuna da
+  dama. Kowane tsari yana ɗauke da ma'anonin fili daban-daban, hanyoyin
+  ɓoyewa, da rashin tabbas. Yawancin ƙungiyoyi suna gina parsers masu rauni
+  ga kowane banki da hannu, abin da ke hana hasashen kuɗi a ainihin lokaci,
+  gano zamba, da daidaitawa wadda ta dace da bincike.
+
+what_i_built: >
+  Kayan aikin Python na buɗaɗɗen tushe wanda ke haɗa kowane tsarin bayanan
+  banki na yau da kullum cikin rafi guda ɗaya na mu'amaloli da aka tsara.
+  Parsers na CAMT / MT940 / PAIN da aka tabbatar da tsarin, OCR a matsayin
+  madadin don PDF da aka sikanin, taswirar fili mai tabbaci, da shaidar
+  bincike mai matsayin SR 11-7 ga kowane mataki na canji.
+
+rigour:
+  - metric: "Tsarurrukan da aka tallafa"
+    value: "CAMT (.052, .053, .054), MT940, OFX, CSV, PDF da aka sikanin (OCR)"
+  - metric: "Manufar daidaitawa"
+    value: "Tsari guda ɗaya da aka haɗa na bayanan mu'amala"
+  - metric: "Hanyar bincike"
+    value: "Asalin kowane fili — an yi rajistar tsarin tushe da nau'in parser kowane layi"
+  - metric: "Lasisi"
+    value: "Apache-2.0 / MIT"
+
+validation:
+  - "An nuna shi a labarin 2026-06-14: From Bank Statements to Unified Transaction Intelligence"
+  - "An tsara shi don cika buƙatun tara bayanan haɗari na BCBS 239"

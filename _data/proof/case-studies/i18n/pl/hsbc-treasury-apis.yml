@@ -1,0 +1,45 @@
+title: "HSBC Treasury APIs — płatności i Banking-as-a-Service"
+banner_alt: "Panorama City of London — symbolizuje platformę API skarbu dostarczoną w ramach programu HSBC Commercial & Investment Bank"
+sector: "Bank komercyjny Tier-1 · Skarb korporacyjny · Regulowane płatności"
+role: "Senior lead produktu / technologii"
+status: "Wdrożone produkcyjnie w globalnym banku Tier-1"
+
+outcome_highlights:
+  - label: "Bank globalny, Commercial & Investment Bank"
+  - label: "Regulowany perymetr płatności"
+  - label: "Programowalna gotówka, płynność, szyny płatnicze"
+  - label: "Senior leadership produktowo-technologiczny"
+
+pull_quote: >
+  "Wdrożone produkcyjnie API płatności, sald i płynności wewnątrz
+  regulacyjnego perymetru banku — w architekturze, integracji
+  z dostawcami, dowodach nadzorczych oraz kontrolach odporności
+  operacyjnej, których wymagają teraz DORA i SR 11-7."
+
+problem: >
+  Zespoły skarbu korporacyjnego oczekują programowalnego dostępu do
+  zarządzania gotówką, płynnością i szynami płatniczymi wewnątrz banku
+  Tier-1 — bez rezygnacji z warstwy dowodów regulacyjnych, którą sam
+  bank musi produkować.
+
+what_i_built: >
+  Prowadzenie strumieni produktowych i technologicznych dla programu
+  treasury APIs i Banking-as-a-Service w HSBC Commercial & Investment
+  Bank — dostarczenie produkcyjnych API płatności, sald i płynności
+  wewnątrz regulacyjnego perymetru banku. Praca obejmowała
+  architekturę, integrację z dostawcami, dowody nadzorcze oraz
+  kontrole odporności operacyjnej wymagane teraz przez DORA i SR 11-7.
+
+rigour:
+  - metric: "Zakres roli"
+    value: "Senior leadership produktowo-technologiczny wewnątrz CIB"
+  - metric: "Perymetr regulacyjny"
+    value: "Platforma płatności regulowana przez FCA / PRA"
+  - metric: "Powierzchnia integracji"
+    value: "Treasury APIs, salda / zarządzanie gotówką, dystrybucja BaaS"
+  - metric: "Odbiorcy"
+    value: "Skarbnicy korporacyjni w multinarodowych korporacjach i bankach Tier-2"
+
+validation:
+  - "Publiczna rola w HSBC Commercial & Investment Bank — weryfikowalna przez LinkedIn"
+  - "Zakres programu wskazany w sekcji About / Experience"

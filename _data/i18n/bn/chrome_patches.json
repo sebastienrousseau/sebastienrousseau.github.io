@@ -284,6 +284,14 @@
     [
       "<a href=\"/contact/index\\.html\">Get in touch</a>",
       "<a href=\"/bn/jogajog/index.html\">যোগাযোগ</a>"
+    ],
+    [
+      "<li><a href=\"?/case-studies/index\\.html\"?>Case studies</a></li>",
+      "<li><a href=\"/bn/case-studies/index.html\">কেস স্টাডিজ</a></li>"
+    ],
+    [
+      "<a href=\"?/case-studies/index\\.html\"?>Case studies</a>",
+      "<a href=\"/bn/case-studies/index.html\">কেস স্টাডিজ</a>"
     ]
   ]
 }

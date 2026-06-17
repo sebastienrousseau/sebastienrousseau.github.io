@@ -1,0 +1,73 @@
+slug: pain001
+title: "pain001 — ISO 20022 支付檔案自動化"
+banner: "https://cloudcdn.pro/stocks/images/tyler-prahm-lmV3gJSAgbo.webp"
+banner_alt: "黃昏時分的鳥瞰城市景觀——象徵 ISO 20022 架構下、跨全球清算網絡的結構化支付檔案自動化"
+category: "Payments"
+category_slug: "payments"
+kicker: "ISO 20022 · PAIN.001 · MT→MX MIGRATION"
+sector: "開源軟體・企業財資・ISO 20022"
+role: "作者及維護者"
+period: "2023 – present"
+status: "已上線生產環境，持續維護中"
+
+outcome_highlights:
+  - value: "pain.001"
+    label: "客戶信用轉帳發起訊息"
+  - value: "XSD-validated"
+    label: "每一筆訊息均經發送前驗證"
+  - value: "IBAN + BIC + LEI"
+    label: "ISO 7064 Modulo 97-10 檢核碼"
+  - value: "Apache-2.0 / MIT"
+    label: "可自由使用、分叉與審計"
+
+pull_quote: >
+  「獲 EPAA《抗量子支付》白皮書引用（2025 年 9 月）。
+  開源、自發布日起即可稽核——無須在 ERP 與清算網絡之
+  間夾入任何專有翻譯器。」
+
+problem: >
+  全球 MT → MX 遷移迫使每一家銀行與企業財資皆須產出
+  結構化的 pain.001 訊息。多數團隊不是自行拼湊脆弱的
+  XML，便是採購不透明的專有翻譯器。兩條路線皆會把支
+  付錯誤送入清算網絡，且未留下任何稽核軌跡。
+
+what_i_built: >
+  一套開源 Python 函式庫，能由 CSV / SQLite / Parquet
+  產出已驗證的 ISO 20022 pain.001（客戶信用轉帳發起）
+  訊息。內建發送前 XSD 驗證、IBAN / BIC 檢核碼、PII
+  遮罩，及完整的 XSD 結構符合性——所有功能皆封裝於可
+  直接嵌入既有 ERP 與財資工作流的 Python 流程內。
+
+# Engineering rigour metrics — verifiable from the repository.
+# Adoption metrics live in metrics.json (fetched at build time from
+# pypistats and pepy). Never fabricate adopter counts.
+rigour:
+  - metric: "支援 ISO 20022 訊息"
+    value: "pain.001（客戶信用轉帳發起）"
+  - metric: "結構符合性"
+    value: "每一筆訊息皆於發送前以官方 XSD 驗證"
+  - metric: "內建驗證器"
+    value: "IBAN 檢核位元、BIC 與 LEI 檢核碼（ISO 7064 Modulo 97-10）"
+  - metric: "授權條款"
+    value: "Apache-2.0 / MIT——可自由使用、分叉與審計"
+
+# Adoption / external validation — externally verifiable items only.
+validation:
+  - "獲 EPAA《抗量子支付》白皮書引用（2025 年 9 月）"
+  - "自 2023 年 9 月起，多次獲 sebastienrousseau.com 專文引用"
+
+standards:
+  - "ISO 20022 pain.001"
+  - "SWIFT CBPR+"
+  - "SEPA"
+
+links:
+  repo: "https://github.com/sebastienrousseau/pain001"
+  site: "https://pain001.com"
+  pypi: "https://pypi.org/project/pain001/"
+  stats: "https://pypistats.org/packages/pain001"
+
+related_articles:
+  - "2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001"
+
+signed: true

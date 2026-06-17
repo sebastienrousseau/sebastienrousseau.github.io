@@ -1,0 +1,50 @@
+title: "pain001 — ISO 20022-betalingsbestanden automatiseren"
+banner_alt: "Stadsgezicht vanuit de lucht bij schemering — symbool voor geautomatiseerde gestructureerde betalingsbestanden onder ISO 20022 over wereldwijde clearingnetwerken"
+sector: "Open source · Corporate treasury · ISO 20022"
+role: "Auteur en beheerder"
+status: "In productie, actief onderhouden"
+
+outcome_highlights:
+  - value: "pain.001"
+    label: "Customer Credit Transfer Initiation"
+  - value: "XSD-gevalideerd"
+    label: "Pre-flight bij elk bericht"
+  - value: "IBAN + BIC + LEI"
+    label: "ISO 7064 Modulo 97-10-checksums"
+  - value: "Apache-2.0 / MIT"
+    label: "Vrij te gebruiken, te forken en te auditen"
+
+pull_quote: >
+  "Geciteerd in de EPAA Quantum-Safe Payments-whitepaper (september
+  2025). Open source en vanaf dag één geaudit — geen propriëtaire
+  vertaler tussen uw ERP en het clearingnetwerk."
+
+problem: >
+  De wereldwijde MT → MX-migratie dwingt elke bank en corporate
+  treasury tot het produceren van gestructureerde pain.001-berichten.
+  De meeste teams schrijven broze XML met de hand of kopen
+  ondoorzichtige propriëtaire vertalers. Beide routes leveren
+  betalingsfouten af in clearingnetwerken en laten geen audittrail
+  achter.
+
+what_i_built: >
+  Een open-source Python-bibliotheek die gevalideerde ISO 20022
+  pain.001-berichten (Customer Credit Transfer Initiation) genereert
+  vanuit CSV / SQLite / Parquet. Pre-flight XSD-validatie, IBAN-/BIC-
+  checksums, PII-maskering en volledige conformiteit aan het
+  XSD-schema — alles binnen een Python-workflow die direct aansluit
+  op bestaande ERP- en treasury-pipelines.
+
+rigour:
+  - metric: "Ondersteunde ISO 20022-berichten"
+    value: "pain.001 (Customer Credit Transfer Initiation)"
+  - metric: "Schemaconformiteit"
+    value: "Officiële XSD-validatie pre-flight bij elk bericht"
+  - metric: "Geleverde validators"
+    value: "IBAN-controlecijfer + BIC- + LEI-checksum (ISO 7064 Modulo 97-10)"
+  - metric: "Licentie"
+    value: "Apache-2.0 / MIT — vrij te gebruiken, te forken en te auditen"
+
+validation:
+  - "Geciteerd in de EPAA Quantum-Safe Payments-whitepaper (september 2025)"
+  - "Behandeld in artikelen op sebastienrousseau.com sinds 2023-09"

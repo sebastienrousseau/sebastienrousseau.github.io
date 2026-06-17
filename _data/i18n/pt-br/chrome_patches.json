@@ -284,6 +284,14 @@
     [
       "<a href=\"/contact/index\\.html\">Get in touch</a>",
       "<a href=\"/contact/index.html\">Entrar em contato</a>"
+    ],
+    [
+      "<li><a href=\"?/case-studies/index\\.html\"?>Case studies</a></li>",
+      "<li><a href=\"/pt-br/estudos-de-caso/index.html\">Estudos de caso</a></li>"
+    ],
+    [
+      "<a href=\"?/case-studies/index\\.html\"?>Case studies</a>",
+      "<a href=\"/pt-br/estudos-de-caso/index.html\">Estudos de caso</a>"
     ]
   ]
 }

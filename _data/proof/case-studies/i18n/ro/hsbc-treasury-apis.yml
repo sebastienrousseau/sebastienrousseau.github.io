@@ -1,0 +1,50 @@
+title: "API-urile de trezorerie HSBC — plăți și Banking-as-a-Service"
+banner_alt: "Panorama City of London — simbolizând platforma de API-uri de trezorerie livrată în cadrul programului Commercial & Investment Bank al HSBC"
+sector: "Bancă comercială Tier-1 · Trezorerie corporativă · Plăți reglementate"
+role: "Lider senior de produs și tehnologie"
+status: "În producție la o bancă globală Tier-1"
+
+outcome_highlights:
+  - value: "Tier-1"
+    label: "Bancă globală, Commercial & Investment Bank"
+  - value: "FCA / PRA"
+    label: "Perimetru de plăți reglementat"
+  - value: "Trezorerie / BaaS"
+    label: "Numerar, lichiditate și canale de plată programabile"
+  - value: "Multianual"
+    label: "Conducere senior de produs și tehnologie"
+
+pull_quote: >
+  „Am livrat în producție API-uri de plăți, solduri și lichiditate în
+  perimetrul reglementat al băncii — acoperind arhitectura, integrarea
+  furnizorilor, dovezile pentru supraveghere și controalele de
+  reziliență operațională impuse acum de DORA și SR 11-7.”
+
+problem: >
+  Echipele de trezorerie corporativă cer acces programatic la gestiunea
+  numerarului, la lichiditate și la canalele de plată din interiorul
+  unei bănci Tier-1 — fără a renunța la stratul de dovezi de
+  reglementare pe care banca însăși trebuie să îl producă.
+
+what_i_built: >
+  Am condus liniile de lucru de produs și tehnologie pentru API-urile
+  de trezorerie și programul Banking-as-a-Service din cadrul Commercial
+  & Investment Bank al HSBC, livrând în producție API-uri de plăți,
+  solduri și lichiditate în perimetrul reglementat al băncii. Am
+  acoperit arhitectura, integrarea furnizorilor, dovezile pentru
+  supraveghere și controalele de reziliență operațională impuse acum
+  de DORA și SR 11-7.
+
+rigour:
+  - metric: "Aria rolului"
+    value: "Conducere senior de produs și tehnologie în cadrul CIB"
+  - metric: "Perimetru de reglementare"
+    value: "Platformă de plăți reglementată FCA / PRA"
+  - metric: "Suprafață de integrare"
+    value: "API-uri de trezorerie, solduri / gestiunea numerarului, distribuție BaaS"
+  - metric: "Public"
+    value: "Trezorieri corporativi din multinaționale și bănci Tier-2"
+
+validation:
+  - "Rol public la HSBC Commercial & Investment Bank — verificabil prin LinkedIn"
+  - "Aria programului menționată în secțiunea Despre / Experiență"

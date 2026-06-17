@@ -1,0 +1,44 @@
+title: "pain001 — Automatisierung von ISO-20022-Zahlungsdateien"
+banner_alt: "Stadtansicht aus der Luft in der Dämmerung — Sinnbild für die Automatisierung strukturierter Zahlungsdateien unter ISO 20022 über globale Clearing-Netzwerke hinweg"
+sector: "Open Source · Corporate Treasury · ISO 20022"
+role: "Autor und Maintainer"
+status: "Produktiv im Einsatz, aktiv gepflegt"
+
+outcome_highlights:
+  - label: "Customer Credit Transfer Initiation"
+  - label: "Vorabprüfung jeder Nachricht"
+  - label: "Prüfsummen nach ISO 7064 Modulo 97-10"
+  - label: "Frei nutzbar, forkbar, prüfbar"
+
+pull_quote: >
+  „Zitiert im EPAA-Whitepaper Quantum-Safe Payments (September 2025).
+  Open Source, vom ersten Tag an auditierbar — kein proprietärer Übersetzer
+  zwischen Ihrem ERP und dem Clearing-Netzwerk."
+
+problem: >
+  Die globale MT-zu-MX-Migration zwingt jede Bank und jede Corporate
+  Treasury zur Erzeugung strukturierter PAIN.001-Nachrichten. Die meisten
+  Teams basteln fragiles XML zusammen oder kaufen undurchsichtige
+  proprietäre Übersetzer ein. Beide Wege schleusen Zahlungsfehler in die
+  Clearing-Netzwerke und hinterlassen keinen Audit-Trail.
+
+what_i_built: >
+  Eine Open-Source-Python-Bibliothek, die validierte ISO-20022-PAIN.001-Nachrichten
+  (Customer Credit Transfer Initiation) aus CSV, SQLite oder Parquet erzeugt.
+  Vorab-XSD-Validierung, IBAN-/BIC-Prüfsummen, PII-Maskierung und vollständige
+  XSD-Schemakonformität — alles innerhalb eines Python-Workflows, der sich
+  in bestehende ERP- und Treasury-Pipelines einklinkt.
+
+rigour:
+  - metric: "Unterstützte ISO-20022-Nachrichten"
+    value: "PAIN.001 (Customer Credit Transfer Initiation)"
+  - metric: "Schemakonformität"
+    value: "Offizielle XSD-Vorabvalidierung jeder Nachricht"
+  - metric: "Mitgelieferte Validatoren"
+    value: "IBAN-Prüfziffer, BIC- und LEI-Prüfsumme (ISO 7064 Modulo 97-10)"
+  - metric: "Lizenz"
+    value: "Apache-2.0 / MIT — frei nutzbar, forkbar, prüfbar"
+
+validation:
+  - "Zitiert im EPAA-Whitepaper Quantum-Safe Payments (September 2025)"
+  - "Behandelt in Artikeln auf sebastienrousseau.com seit September 2023"

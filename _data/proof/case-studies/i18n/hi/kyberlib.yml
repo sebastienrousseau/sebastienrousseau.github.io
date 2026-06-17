@@ -1,0 +1,79 @@
+slug: kyberlib
+title: "KyberLib — Rust में उत्पादन-स्तरीय ML-KEM"
+banner: "https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp"
+banner_alt: "क्वांटम-सुरक्षित क्रिप्टोग्राफ़िक कुंजी विनिमय — बैंकिंग में FIPS 203 ML-KEM माइग्रेशन का प्रतीक"
+category: "Post-quantum cryptography"
+category_slug: "post-quantum-cryptography"
+kicker: "FIPS 203 · ML-KEM · BANKING MIGRATION"
+sector: "ओपन-सोर्स · बैंकिंग · मानक"
+role: "लेखक एवं अनुरक्षक"
+period: "2023 – present"
+status: "उत्पादन में, सक्रिय रूप से अनुरक्षित"
+
+# Headline numbers shown in the per-study "by the numbers" strip.
+# Every value is verifiable from links below (NIST, Qtonic Lab, F6S).
+outcome_highlights:
+  - value: "FIPS 203"
+    label: "NIST प्रकाशन ट्रैक के अनुरूप"
+  - value: "Top 44 %"
+    label: "~182 PQC लाइब्रेरियों में से (Qtonic Lab)"
+  - value: "no_std"
+    label: "HSMs + सुरक्षित एन्क्लेव में एम्बेड होता है"
+  - value: "1 adopter"
+    label: "QGram (Quantum2pi) पोस्ट-क्वांटम मैसेंजर"
+
+pull_quote: >
+  "Qtonic Quantum Lab — स्वतंत्र पोस्ट-क्वांटम क्रिप्टोग्राफ़ी रजिस्ट्री —
+  द्वारा मूल्यांकित, और QGram (Quantum2pi) द्वारा एंड-टू-एंड एन्क्रिप्टेड
+  मैसेजिंग के लिए अपनाया गया। दोनों मेरे माध्यम से गए बिना सत्यापन योग्य।"
+
+problem: >
+  बैंकों के सामने 14 नवंबर, 2026 की SWIFT संरचित-पता कटओवर और एक लंबी
+  NIST पोस्ट-क्वांटम माइग्रेशन विंडो है। मौजूदा PQC कार्यान्वयन नीति
+  पत्रों, प्रयोगशाला कोड, या स्वामित्व HSM ब्लैक बॉक्स के रूप में आते
+  हैं — जिनमें से किसी को भी एक भुगतान आर्किटेक्ट पढ़, परीक्षण या
+  हस्ताक्षर नहीं कर सकता।
+
+what_i_built: >
+  KyberLib FIPS 203 ML-KEM (CRYSTALS-Kyber) को निरीक्षण-योग्य Rust में
+  बदल देता है। हाइब्रिड शास्त्रीय-प्लस-क्वांटम हैंडशेक, HSM एम्बेडिंग के
+  लिए no_std संकलन, क्रिप्टो-चपल अमूर्तन सीमाएँ, और DORA अनुच्छेद 5
+  गवर्नेंस प्रमाण जिनकी बोर्डों को अब अपारदर्शी विक्रेता जोखिम लिए
+  बिना PQC माइग्रेशन का समर्थन करने के लिए आवश्यकता है।
+
+rigour:
+  - metric: "क्रिप्टोग्राफ़िक मानक"
+    value: "FIPS 203 (ML-KEM, पूर्व में CRYSTALS-Kyber)"
+  - metric: "हाइब्रिड हैंडशेक समर्थन"
+    value: "शास्त्रीय TLS + ML-KEM-768 X25519MLKEM768 मोड"
+  - metric: "संकलन"
+    value: "no_std — HSMs, सुरक्षित एन्क्लेव, एम्बेडेड लक्ष्यों में एम्बेड होता है"
+  - metric: "क्रिप्टो-चपलता"
+    value: "अमूर्तन सीमाएँ API परिवर्तन के बिना एल्गोरिथम स्वैप सक्षम करती हैं"
+  - metric: "लाइसेंस"
+    value: "Apache-2.0 / MIT"
+
+validation:
+  - "EPAA Quantum-Safe Payments श्वेत पत्र (सितंबर 2025) में उद्धृत"
+  - "2026-06-12 के लेख में प्रस्तुत: KyberLib और पोस्ट-क्वांटम बैंकिंग माइग्रेशन"
+  - "NIST FIPS 203 / 204 / 205 प्रकाशन ट्रैक के अनुरूप"
+  - "Qtonic Quantum Lab द्वारा मूल्यांकित — स्वतंत्र पोस्ट-क्वांटम क्रिप्टोग्राफ़ी मूल्यांकन रजिस्ट्री, ~182 PQC लाइब्रेरियों का आकलन (शीर्ष 44%, कोई विक्रेता शुल्क-समावेशन नहीं)"
+  - "QGram (Quantum2pi) द्वारा अपनाया गया — एक पोस्ट-क्वांटम एंड-टू-एंड एन्क्रिप्टेड पीयर-टू-पीयर मैसेंजर जो संदेश एन्क्रिप्शन के लिए KyberLib का उपयोग करता है (f6s.com/software/qgram पर सत्यापन योग्य)"
+
+standards:
+  - "FIPS 203 (ML-KEM)"
+  - "NIST SP 1800-38"
+  - "DORA Article 5"
+
+links:
+  repo: "https://github.com/sebastienrousseau/kyberlib"
+  crates: "https://crates.io/crates/kyberlib"
+  docs: "https://docs.rs/kyberlib"
+  qtonic_evaluation: "https://qtonicquantum.com/lab/solutions/kyberlib"
+  qgram_adopter: "https://www.f6s.com/software/qgram"
+
+related_articles:
+  - "2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026"
+  - "2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats"
+
+signed: true

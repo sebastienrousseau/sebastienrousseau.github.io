@@ -1,0 +1,74 @@
+slug: cloudcdn
+title: "CloudCDN — AI-नेटिव एज के लिए ओपन-सोर्स ब्लूप्रिंट"
+banner: "https://cloudcdn.pro/stocks/images/alis-po-IdVNRv-5wJo.webp"
+banner_alt: "AI-नेटिव एज अवसंरचना — शून्य-विश्वास MCP गेटवे, परमाणु Durable Objects रेट लिमिटिंग, और WebAuthn पासकी परिधि का प्रतीक जिसे CloudCDN एक संदर्भ कार्यान्वयन के रूप में प्रस्तुत करता है"
+category: "Infrastructure"
+category_slug: "infrastructure"
+kicker: "MCP · ZERO-TRUST · DORA"
+sector: "ओपन-सोर्स · एज · AI अवसंरचना"
+role: "लेखक एवं अनुरक्षक"
+period: "2024 – present"
+status: "उत्पादन में, सक्रिय रूप से अनुरक्षित"
+
+outcome_highlights:
+  - value: "3,185 tests"
+    label: "100 % लाइन, शाखा, फ़ंक्शन कवरेज"
+  - value: "SLSA L3"
+    label: "बिल्ड उद्गम-प्रमाण + Sigstore हस्ताक्षर"
+  - value: "42 MCP tools"
+    label: "प्रत्येक कॉल संरचित प्रमाण के साथ ऑडिट-लॉग की गई"
+  - value: "DORA / BCBS 239"
+    label: "अनुच्छेद 5 + जोखिम-डेटा एकत्रीकरण से मैप किया गया"
+
+pull_quote: >
+  "एक ओपन-सोर्स संदर्भ कार्यान्वयन जिसे सुरक्षा टीम पढ़, फोर्क और
+  हस्ताक्षर कर सकती है — मार्केटिंग PDF के बजाय। परमाणु Durable Objects
+  रेट लिमिटिंग, WebAuthn परिधि, SLSA L3 उद्गम-प्रमाण।"
+
+problem: >
+  जैसे-जैसे AI एजेंट और MCP टूल बड़े पैमाने पर एज APIs को कॉल करना
+  शुरू करते हैं, बैंकों को एक ऐसी परिधि की आवश्यकता है जो DORA-स्तर
+  के ऑडिट प्रमाण से समझौता किए बिना स्वायत्त ट्रैफ़िक को संभाल सके।
+  मौजूदा CDNs या तो मार्केटिंग भाषा या अपारदर्शी योजनाएँ प्रस्तुत
+  करते हैं — कोई भी ऐसा संदर्भ कार्यान्वयन प्रदान नहीं करता जिसे
+  सुरक्षा टीम पढ़, फोर्क और हस्ताक्षर कर सके।
+
+what_i_built: >
+  42 टूल वाला एक ओपन-सोर्स, शून्य-विश्वास MCP गेटवे, परमाणु Durable
+  Objects रेट लिमिटिंग, WebAuthn पासकी परिधि, हस्ताक्षरित URLs, और
+  SLSA Level 3 बिल्ड उद्गम-प्रमाण। 100 % कवरेज पर 3,185 परीक्षण,
+  DORA अनुच्छेद 5, BCBS 239 जोखिम-डेटा एकत्रीकरण, और Basel III
+  परिचालन जोखिम पूँजी से मैप किया गया।
+
+rigour:
+  - metric: "परीक्षण"
+    value: "100 % लाइन, शाखा और फ़ंक्शन कवरेज पर 3,185 परीक्षण"
+  - metric: "आपूर्ति-शृंखला उद्गम-प्रमाण"
+    value: "SLSA Level 3 बिल्ड उद्गम-प्रमाण + Sigstore हस्ताक्षर"
+  - metric: "प्रदान किए गए MCP टूल"
+    value: "42 टूल — प्रत्येक कॉल संरचित प्रमाण के साथ ऑडिट-लॉग की गई"
+  - metric: "रेट लिमिटिंग"
+    value: "परमाणु Durable Objects (कोई रेस कंडीशन नहीं, कोई दोहरी-गणना नहीं)"
+  - metric: "प्रमाणीकरण"
+    value: "WebAuthn पासकी + हस्ताक्षरित URLs"
+  - metric: "लाइसेंस"
+    value: "Apache-2.0 / MIT"
+
+validation:
+  - "2026-06-11 के लेख में प्रस्तुत: CloudCDN — AI-नेटिव एज के लिए एक ओपन-सोर्स ब्लूप्रिंट"
+  - "DORA अनुच्छेद 5, BCBS 239, Basel III परिचालन जोखिम से मैप किया गया"
+
+standards:
+  - "SLSA Level 3"
+  - "WebAuthn (FIDO2)"
+  - "DORA Article 5"
+  - "BCBS 239"
+
+links:
+  repo: "https://github.com/sebastienrousseau/cloudcdn"
+  site: "https://cloudcdn.pro"
+
+related_articles:
+  - "2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026"
+
+signed: true

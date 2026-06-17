@@ -1,0 +1,46 @@
+title: "HSBC Treasury APIs — payments at Banking-as-a-Service"
+banner_alt: "City of London skyline — sumisimbolo sa treasury API platform na inihatid sa ilalim ng programa ng HSBC Commercial & Investment Bank"
+sector: "Tier-1 commercial bank · Corporate treasury · Regulated payments"
+role: "Senior product / technology lead"
+status: "Live sa produksiyon sa isang Tier-1 global bank"
+
+outcome_highlights:
+  - label: "Global bank, Commercial & Investment Bank"
+  - label: "Regulated payments perimeter"
+  - label: "Programmable cash, liquidity, at payments rails"
+  - label: "Senior product at technology leadership"
+
+pull_quote: >
+  "Naihatid sa produksiyon ang payment, balance, at liquidity APIs laban
+  sa regulatory perimeter ng bangko — sa arkitektura, vendor integration,
+  supervisory evidence, at sa operational-resilience controls na
+  inaatas na ngayon ng DORA at SR 11-7."
+
+problem: >
+  Hinihingi ng mga corporate treasury team ang programmable access sa
+  cash management, liquidity, at payments rails sa loob ng isang
+  Tier-1 bank — nang hindi isinusuko ang regulatory evidence layer
+  na kailangan din mismong gawin ng bangko.
+
+what_i_built: >
+  Pinangunahan ang product at technology workstreams para sa treasury
+  APIs at Banking-as-a-Service programme ng HSBC sa loob ng
+  Commercial & Investment Bank, kasabay ng paghahatid sa produksiyon
+  ng payment, balance, at liquidity APIs laban sa regulatory perimeter
+  ng bangko. Nagtrabaho sa arkitektura, vendor integration, supervisory
+  evidence, at sa operational-resilience controls na inaatas na ngayon
+  ng DORA at SR 11-7.
+
+rigour:
+  - metric: "Saklaw ng tungkulin"
+    value: "Senior product / technology leadership sa loob ng CIB"
+  - metric: "Regulatory perimeter"
+    value: "FCA / PRA-regulated payments platform"
+  - metric: "Integration surface"
+    value: "Treasury APIs, balance / cash management, BaaS distribution"
+  - metric: "Awdyens"
+    value: "Corporate treasurers sa mga multinational at Tier-2 bank"
+
+validation:
+  - "Pampublikong tungkulin sa HSBC Commercial & Investment Bank — mabe-verify sa LinkedIn"
+  - "Saklaw ng programa ay binanggit sa seksiyong About / Experience"

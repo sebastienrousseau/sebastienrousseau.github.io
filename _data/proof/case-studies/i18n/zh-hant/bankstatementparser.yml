@@ -1,0 +1,70 @@
+slug: bankstatementparser
+title: "BankStatementParser — 為企業財資打造的統一交易情報"
+banner: "https://cloudcdn.pro/stocks/images/rryoji-iwata-a-qsFZimp1M.webp"
+banner_alt: "夜幕下的現代化金融辦公室——象徵 CAMT、MT940、OFX 及 CSV 銀行對帳單格式之間的統一交易情報"
+category: "Payments"
+category_slug: "payments"
+kicker: "CAMT · MT940 · OFX · TREASURY"
+sector: "開源軟體・企業財資・風險資料彙整"
+role: "作者及維護者"
+period: "2024 – present"
+status: "已上線生產環境，持續維護中"
+
+outcome_highlights:
+  - value: "6 formats"
+    label: "CAMT（.052/.053/.054）、MT940、OFX、CSV、OCR PDF"
+  - value: "Per-field"
+    label: "逐欄位來源追溯：記錄原始格式與解析器版本"
+  - value: "BCBS 239"
+    label: "符合風險資料彙整要求"
+  - value: "Apache-2.0 / MIT"
+    label: "可自由使用、分叉與審計"
+
+pull_quote: >
+  「經 schema 驗證的 CAMT / MT940 / PAIN.001 解析器，掃描 PDF
+  的 OCR 備援機制，具決定論性的欄位映射，以及達 SR 11-7
+  等級的稽核證據——每一個轉換步驟均完整記錄並可重現。」
+
+problem: >
+  企業財資團隊每日須從數十家銀行接收 CAMT、PAIN.001、MT940、
+  OFX、CSV 及掃描 PDF 等多種格式的對帳單。各種格式的欄位語
+  義、編碼與歧義皆不相同。多數團隊只能自行打造脆弱的逐行
+  解析器，導致即時現金預測、舞弊偵測與可稽核的對帳作業均
+  受阻。
+
+what_i_built: >
+  一套開源 Python 工具組，能將所有常見的銀行對帳單格式整
+  併為單一、標準化的交易資料流。內建經 schema 驗證的 CAMT /
+  MT940 / PAIN.001 解析器、掃描 PDF 的 OCR 備援機制、具決定
+  論性的欄位映射，並為每一個轉換步驟提供達 SR 11-7 等級的
+  稽核證據。
+
+rigour:
+  - metric: "支援格式"
+    value: "CAMT（.052、.053、.054）、MT940、OFX、CSV、掃描 PDF（OCR）"
+  - metric: "標準化目標"
+    value: "單一統一交易紀錄 schema"
+  - metric: "稽核軌跡"
+    value: "逐欄位來源追溯——每一筆資料皆記錄原始格式與解析器版本"
+  - metric: "授權條款"
+    value: "Apache-2.0 / MIT"
+
+validation:
+  - "獲選為 2026-06-14 專文題材：《從銀行對帳單到企業財資的統一交易情報》"
+  - "設計上即符合 BCBS 239 風險資料彙整要求"
+
+standards:
+  - "ISO 20022 CAMT"
+  - "SWIFT MT940"
+  - "OFX"
+  - "BCBS 239"
+
+links:
+  repo: "https://github.com/sebastienrousseau/bankstatementparser"
+  pypi: "https://pypi.org/project/bankstatementparser/"
+  stats: "https://pypistats.org/packages/bankstatementparser"
+
+related_articles:
+  - "2026-06-14-bankstatementparser-transaction-intelligence-treasury-open-source-2026"
+
+signed: true

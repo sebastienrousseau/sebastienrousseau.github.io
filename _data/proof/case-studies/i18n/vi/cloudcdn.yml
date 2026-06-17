@@ -1,0 +1,54 @@
+title: "CloudCDN — bản thiết kế mã nguồn mở cho biên hạ tầng AI-native"
+banner_alt: "Hạ tầng biên AI-native — biểu trưng cho cổng MCP zero-trust, giới hạn tần suất nguyên tử bằng Durable Objects và vành đai WebAuthn passkey mà CloudCDN cung cấp như một bản triển khai tham chiếu"
+sector: "Mã nguồn mở · Biên · Hạ tầng AI"
+role: "Tác giả và người duy trì dự án"
+status: "Đang vận hành thực tế, được duy trì tích cực"
+
+outcome_highlights:
+  - value: "3,185 tests"
+    label: "Bao phủ 100% dòng, nhánh và hàm"
+  - value: "SLSA L3"
+    label: "Nguồn gốc bản dựng và ký bằng Sigstore"
+  - value: "42 MCP tools"
+    label: "Mọi lời gọi đều được ghi nhật ký kiểm toán với bằng chứng có cấu trúc"
+  - value: "DORA / BCBS 239"
+    label: "Ánh xạ tới Điều 5 và tổng hợp dữ liệu rủi ro"
+
+pull_quote: >
+  "Một bản triển khai tham chiếu mã nguồn mở mà đội ngũ an ninh có thể
+  đọc, sao chép và ký — thay vì một tài liệu PDF tiếp thị. Giới hạn tần
+  suất nguyên tử bằng Durable Objects, vành đai WebAuthn, nguồn gốc
+  SLSA L3."
+
+problem: >
+  Khi các tác nhân AI và công cụ MCP bắt đầu gọi API biên ở quy mô lớn,
+  ngân hàng cần một vành đai chịu được lưu lượng tự hành mà không phải
+  đánh đổi bằng chứng kiểm toán đạt chuẩn DORA. Các CDN hiện hành chỉ
+  cung cấp ngôn ngữ tiếp thị hoặc kế hoạch mờ đục — không bên nào tạo
+  ra bản triển khai tham chiếu mà đội ngũ an ninh có thể đọc, sao chép
+  và ký.
+
+what_i_built: >
+  Một cổng MCP zero-trust mã nguồn mở với 42 công cụ, giới hạn tần suất
+  nguyên tử bằng Durable Objects, vành đai WebAuthn passkey, URL có chữ
+  ký và nguồn gốc bản dựng SLSA Cấp 3. 3.185 bài kiểm thử với độ bao
+  phủ 100%, ánh xạ tới Điều 5 của DORA, tổng hợp dữ liệu rủi ro BCBS
+  239 và vốn rủi ro vận hành Basel III.
+
+rigour:
+  - metric: "Bài kiểm thử"
+    value: "3.185 bài kiểm thử với độ bao phủ 100% dòng, nhánh và hàm"
+  - metric: "Nguồn gốc chuỗi cung ứng"
+    value: "Nguồn gốc bản dựng SLSA Cấp 3 và ký bằng Sigstore"
+  - metric: "Công cụ MCP triển khai"
+    value: "42 công cụ — mọi lời gọi đều được ghi nhật ký kiểm toán với bằng chứng có cấu trúc"
+  - metric: "Giới hạn tần suất"
+    value: "Durable Objects nguyên tử (không tranh chấp, không đếm trùng)"
+  - metric: "Xác thực"
+    value: "Passkey WebAuthn và URL có chữ ký"
+  - metric: "Giấy phép"
+    value: "Apache-2.0 / MIT"
+
+validation:
+  - "Được giới thiệu trong bài viết ngày 2026-06-11: CloudCDN — An Open-Source Blueprint for the AI-Native Edge"
+  - "Ánh xạ tới Điều 5 của DORA, BCBS 239, rủi ro vận hành Basel III"

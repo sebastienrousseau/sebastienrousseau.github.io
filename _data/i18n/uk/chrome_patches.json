@@ -284,6 +284,14 @@
     [
       "<a href=\"/contact/index\\.html\">Get in touch</a>",
       "<a href=\"/contact/index.html\">Зв’язатися зі мною</a>"
+    ],
+    [
+      "<li><a href=\"?/case-studies/index\\.html\"?>Case studies</a></li>",
+      "<li><a href=\"/uk/kejs-stadi/index.html\">Кейс-стаді</a></li>"
+    ],
+    [
+      "<a href=\"?/case-studies/index\\.html\"?>Case studies</a>",
+      "<a href=\"/uk/kejs-stadi/index.html\">Кейс-стаді</a>"
     ]
   ]
 }

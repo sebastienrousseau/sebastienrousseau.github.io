@@ -428,6 +428,54 @@ def setup_hero_block() -> str:
 </p>"""
 
 
+def proof_rail_block() -> str:
+    """Apple-HIG proof rail. Reads _data/proof/metrics.json so the numbers
+    stay in sync with the case-studies hub and the home-page stats. If the
+    metrics file is missing or unreadable, render zero values rather than
+    breaking the build — postbuild link audit will surface the issue."""
+    import json
+
+    metrics_path = ROOT / "_data" / "proof" / "metrics.json"
+    stats = {}
+    try:
+        payload = json.loads(metrics_path.read_text())
+        for entry in payload.get("stats", []):
+            stats[entry["key"]] = entry
+    except (OSError, ValueError, KeyError):
+        stats = {}
+
+    def _fmt(key: str, fallback: str) -> str:
+        entry = stats.get(key)
+        if not entry:
+            return fallback
+        value = entry["value"]
+        fmt = entry.get("format", "plain")
+        if fmt == "compact" and isinstance(value, int | float):
+            n = float(value)
+            if n >= 1_000_000:
+                return f"{n / 1_000_000:.1f}M".replace(".0M", "M")
+            if n >= 1_000:
+                return f"{n / 1_000:.0f}k"
+            return str(int(n))
+        return str(value)
+
+    downloads = _fmt("downloads_total", "168k")
+    stars = _fmt("github_stars", "677")
+    articles = _fmt("articles_signed", "73")
+    years = _fmt("years_payments", "20")
+    # Split each kpi-cell across multiple lines — SSG's custom-block parser
+    # treats single-line <div class="x-y"> as a shortcode and replaces the
+    # body with an error alert. Multi-line divs pass through as raw HTML.
+    return (
+        '<section class="proof-rail projects-proof" aria-label="Open source by the numbers">\n'
+        f'<div class="kpi-cell">\n  <span class="kpi-cell-value">{downloads}</span>\n  <span class="kpi-cell-label">Open-source downloads</span>\n</div>\n'
+        f'<div class="kpi-cell">\n  <span class="kpi-cell-value">{stars}</span>\n  <span class="kpi-cell-label">GitHub stars</span>\n</div>\n'
+        f'<div class="kpi-cell">\n  <span class="kpi-cell-value">{articles}</span>\n  <span class="kpi-cell-label">Sigstore-signed articles</span>\n</div>\n'
+        f'<div class="kpi-cell">\n  <span class="kpi-cell-value">{years}</span>\n  <span class="kpi-cell-label">Years shipping in production</span>\n</div>\n'
+        "</section>"
+    )
+
+
 def setup_three_block() -> str:
     cards = [
         f"""<article class="setup-card">
@@ -514,6 +562,7 @@ def main() -> None:
 
     body_parts = [
         setup_hero_block(),
+        proof_rail_block(),
         setup_three_block(),
         '<section class="newsroom" id="catalog">',
     ]

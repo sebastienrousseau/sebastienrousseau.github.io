@@ -1,0 +1,50 @@
+title: "BankStatementParser — inteligență unificată a tranzacțiilor pentru trezorerie"
+banner_alt: "Birou financiar modern pe timp de noapte — simbolizând inteligența unificată a tranzacțiilor în formatele de extras bancar CAMT, MT940, OFX și CSV"
+sector: "Open-source · Trezorerie corporativă · Agregarea datelor de risc"
+role: "Autor și mentenant"
+status: "În producție, întreținut activ"
+
+outcome_highlights:
+  - value: "6 formate"
+    label: "CAMT (.052/.053/.054), MT940, OFX, CSV, PDF OCR"
+  - value: "Pe câmp"
+    label: "Proveniență: formatul sursă și versiunea parserului înregistrate"
+  - value: "BCBS 239"
+    label: "Aliniat la agregarea datelor de risc"
+  - value: "Apache-2.0 / MIT"
+    label: "Liber de utilizat, de modificat, de auditat"
+
+pull_quote: >
+  „Parsere CAMT / MT940 / PAIN validate la schemă, alternativă OCR pentru
+  PDF-urile scanate, mapare deterministă a câmpurilor, dovezi de audit
+  la nivelul SR 11-7 — fiecare pas de transformare este înregistrat
+  și reproductibil.”
+
+problem: >
+  Echipele de trezorerie corporativă primesc extrase bancare în CAMT,
+  PAIN.001, MT940, OFX, CSV și PDF-uri scanate de la zeci de bănci.
+  Fiecare format aduce semantici de câmp, codificări și ambiguități
+  diferite. Majoritatea echipelor construiesc manual parsere fragile,
+  specifice fiecărei bănci, blocând prognoza de numerar în timp real,
+  detectarea fraudelor și reconcilierea pregătită pentru audit.
+
+what_i_built: >
+  Un set de instrumente Python open-source care unifică fiecare format
+  obișnuit de extras bancar într-un flux unic, normalizat, de tranzacții.
+  Parsere CAMT / MT940 / PAIN validate la schemă, alternativă OCR pentru
+  PDF-urile scanate, mapare deterministă a câmpurilor și dovezi de audit
+  la nivelul SR 11-7 pentru fiecare pas de transformare.
+
+rigour:
+  - metric: "Formate acceptate"
+    value: "CAMT (.052, .053, .054), MT940, OFX, CSV, PDF scanat (OCR)"
+  - metric: "Țintă de normalizare"
+    value: "Schemă unică, unificată, de înregistrare a tranzacțiilor"
+  - metric: "Pistă de audit"
+    value: "Proveniență pe câmp — formatul sursă și versiunea parserului înregistrate pentru fiecare rând"
+  - metric: "Licență"
+    value: "Apache-2.0 / MIT"
+
+validation:
+  - "Prezentat în articolul din 14.06.2026: De la extrasele bancare la inteligența unificată a tranzacțiilor"
+  - "Proiectat pentru a îndeplini cerințele BCBS 239 de agregare a datelor de risc"

@@ -1,0 +1,69 @@
+slug: hsbc-treasury-apis
+title: "HSBC ट्रेज़री APIs — भुगतान और Banking-as-a-Service"
+banner: "https://cloudcdn.pro/stocks/images/ben-o-bro-wpU4veNGnHg.webp"
+banner_alt: "लंदन शहर का क्षितिज — HSBC के Commercial & Investment Bank कार्यक्रम के तहत प्रदान किए गए ट्रेज़री API प्लेटफ़ॉर्म का प्रतीक"
+category: "Banking-as-a-Service"
+category_slug: "banking-as-a-service"
+kicker: "TIER-1 BANK · TREASURY · BAAS"
+sector: "टियर-1 वाणिज्यिक बैंक · कॉर्पोरेट ट्रेज़री · विनियमित भुगतान"
+role: "वरिष्ठ उत्पाद / प्रौद्योगिकी प्रमुख"
+period: "Multi-year programme at HSBC Commercial & Investment Bank"
+status: "टियर-1 वैश्विक बैंक में उत्पादन में सक्रिय"
+
+outcome_highlights:
+  - value: "Tier-1"
+    label: "वैश्विक बैंक, Commercial & Investment Bank"
+  - value: "FCA / PRA"
+    label: "विनियमित भुगतान परिधि"
+  - value: "Treasury / BaaS"
+    label: "प्रोग्रामेबल नकदी, तरलता, भुगतान रेल"
+  - value: "Multi-year"
+    label: "वरिष्ठ उत्पाद + प्रौद्योगिकी नेतृत्व"
+
+pull_quote: >
+  "बैंक की नियामक परिधि के विरुद्ध उत्पादन भुगतान, बैलेंस और तरलता APIs
+  प्रदान की — आर्किटेक्चर, विक्रेता एकीकरण, पर्यवेक्षी प्रमाण और
+  परिचालन-लचीलापन नियंत्रणों में जिन्हें DORA और SR 11-7 अब अनिवार्य
+  करते हैं।"
+
+# NDA scope: describe scope and engineering shape, not internal commercial
+# numbers we are not free to disclose. External validators below stay
+# verifiable: public role / public LinkedIn record / public bank disclosures.
+problem: >
+  कॉर्पोरेट ट्रेज़री टीमें एक टियर-1 बैंक के अंदर नकदी प्रबंधन, तरलता
+  और भुगतान रेल तक प्रोग्रामेबल पहुँच की माँग करती हैं — उस नियामक
+  प्रमाण परत को छोड़े बिना जिसे बैंक को स्वयं तैयार करना होता है।
+
+what_i_built: >
+  Commercial & Investment Bank के अंदर HSBC के ट्रेज़री APIs और
+  Banking-as-a-Service कार्यक्रम के उत्पाद और प्रौद्योगिकी कार्यधाराओं
+  का नेतृत्व किया, बैंक की नियामक परिधि के विरुद्ध उत्पादन भुगतान,
+  बैलेंस और तरलता APIs प्रदान कीं। आर्किटेक्चर, विक्रेता एकीकरण,
+  पर्यवेक्षी प्रमाण और परिचालन-लचीलापन नियंत्रणों में काम किया जिन्हें
+  DORA और SR 11-7 अब अनिवार्य करते हैं।
+
+# Engineering rigour — described, not quantified with internal numbers.
+rigour:
+  - metric: "भूमिका का दायरा"
+    value: "CIB के अंदर वरिष्ठ उत्पाद / प्रौद्योगिकी नेतृत्व"
+  - metric: "नियामक परिधि"
+    value: "FCA / PRA-विनियमित भुगतान प्लेटफ़ॉर्म"
+  - metric: "एकीकरण सतह"
+    value: "ट्रेज़री APIs, बैलेंस / नकदी प्रबंधन, BaaS वितरण"
+  - metric: "लक्षित श्रोता"
+    value: "बहुराष्ट्रीय और टियर-2 बैंकों में कॉर्पोरेट ट्रेज़ररर्स"
+
+validation:
+  - "HSBC Commercial & Investment Bank में सार्वजनिक भूमिका — LinkedIn के माध्यम से सत्यापन योग्य"
+  - "कार्यक्रम का दायरा About / Experience अनुभाग में संदर्भित"
+
+# No standards block — programme spans many internal standards we are not
+# free to enumerate publicly.
+
+links:
+  bank: "https://www.hsbc.com/"
+  linkedin: "https://www.linkedin.com/in/sebastienrousseau/"
+
+related_articles: []
+
+signed: true

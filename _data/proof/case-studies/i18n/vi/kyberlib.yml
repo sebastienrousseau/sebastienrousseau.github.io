@@ -1,0 +1,55 @@
+title: "KyberLib — ML-KEM cấp độ sản xuất bằng Rust"
+banner_alt: "Trao đổi khoá mật mã an toàn lượng tử — biểu trưng cho quá trình chuyển đổi sang FIPS 203 ML-KEM trong ngành ngân hàng"
+sector: "Mã nguồn mở · Ngân hàng · Tiêu chuẩn"
+role: "Tác giả và người duy trì dự án"
+status: "Đang vận hành thực tế, được duy trì tích cực"
+
+outcome_highlights:
+  - value: "FIPS 203"
+    label: "Đồng nhịp với lộ trình công bố của NIST"
+  - value: "Top 44 %"
+    label: "Trong khoảng 182 thư viện PQC (Qtonic Lab)"
+  - value: "no_std"
+    label: "Nhúng được vào HSM và secure enclave"
+  - value: "1 adopter"
+    label: "Trình nhắn tin hậu lượng tử QGram (Quantum2pi)"
+
+pull_quote: >
+  "Được Qtonic Quantum Lab — sổ đăng ký mật mã hậu lượng tử độc lập —
+  đánh giá, và được QGram (Quantum2pi) chọn dùng cho nhắn tin mã hoá
+  đầu-cuối. Cả hai đều có thể kiểm chứng mà không cần thông qua tôi."
+
+problem: >
+  Các ngân hàng phải đối mặt với mốc chuyển đổi địa chỉ có cấu trúc của
+  SWIFT vào ngày 14 tháng 11 năm 2026, cùng với cửa sổ chuyển đổi hậu
+  lượng tử dài hơn của NIST. Các triển khai PQC hiện có lại xuất hiện
+  dưới dạng tài liệu chính sách, mã thử nghiệm trong phòng lab, hoặc
+  hộp đen HSM độc quyền — không loại nào để một kiến trúc sư thanh
+  toán có thể đọc, kiểm thử hay ký.
+
+what_i_built: >
+  KyberLib chuyển FIPS 203 ML-KEM (CRYSTALS-Kyber) thành mã Rust có
+  thể kiểm tra được. Bắt tay lai cổ điển + lượng tử, biên dịch no_std
+  để nhúng vào HSM, ranh giới trừu tượng cho phép linh hoạt thay đổi
+  thuật toán, và bằng chứng quản trị theo Điều 5 của DORA mà các hội
+  đồng cần để hỗ trợ chuyển đổi PQC mà không phải gánh chịu rủi ro nhà
+  cung cấp mờ đục.
+
+rigour:
+  - metric: "Tiêu chuẩn mật mã"
+    value: "FIPS 203 (ML-KEM, trước đây là CRYSTALS-Kyber)"
+  - metric: "Hỗ trợ bắt tay lai"
+    value: "TLS cổ điển + chế độ ML-KEM-768 X25519MLKEM768"
+  - metric: "Biên dịch"
+    value: "no_std — nhúng được vào HSM, secure enclave và mục tiêu nhúng"
+  - metric: "Linh hoạt mật mã"
+    value: "Ranh giới trừu tượng cho phép thay thuật toán mà không đổi API"
+  - metric: "Giấy phép"
+    value: "Apache-2.0 / MIT"
+
+validation:
+  - "Được trích dẫn trong sách trắng EPAA Quantum-Safe Payments (tháng 9 năm 2025)"
+  - "Được giới thiệu trong bài viết ngày 2026-06-12: KyberLib and the Post-Quantum Banking Migration"
+  - "Đồng nhịp với lộ trình công bố của NIST FIPS 203 / 204 / 205"
+  - "Được Qtonic Quantum Lab đánh giá — sổ đăng ký đánh giá mật mã hậu lượng tử độc lập, khoảng 182 thư viện PQC được khảo sát (top 44%, không thu phí để có mặt)"
+  - "Được QGram (Quantum2pi) chọn dùng — trình nhắn tin ngang hàng mã hoá đầu-cuối hậu lượng tử sử dụng KyberLib để mã hoá tin nhắn (kiểm chứng tại f6s.com/software/qgram)"

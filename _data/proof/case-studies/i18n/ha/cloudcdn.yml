@@ -1,0 +1,53 @@
+title: "CloudCDN — taswirar buɗaɗɗen tushe don gefen AI-na asali"
+banner_alt: "Ababen more rayuwa na gefen AI-na asali — alama ce ta ƙofar MCP marar amincewa, iyakancewar Durable Objects ta atomic, da kewayen WebAuthn passkey da CloudCDN ke kawowa a matsayin samfurin tunani"
+sector: "Buɗaɗɗen tushe · Gefe · Ababen more rayuwa na AI"
+role: "Marubuci kuma mai kula"
+status: "Yana aiki cikin samarwa, ana kula da shi a kullum"
+
+outcome_highlights:
+  - value: "3,185 tests"
+    label: "Kashi 100 na layi, reshe, da rufin aiki"
+  - value: "SLSA L3"
+    label: "Asalin gini + sa hannu na Sigstore"
+  - value: "42 MCP tools"
+    label: "Kowane kira an yi rajistar bincikensa da shaida ta tsari"
+  - value: "DORA / BCBS 239"
+    label: "An daidaita da Mataki na 5 + tara bayanan haɗari"
+
+pull_quote: >
+  "Samfurin tunani na buɗaɗɗen tushe wanda ƙungiyar tsaro za ta iya karantawa,
+  fork, da sa hannu — maimakon PDF na talla. Iyakancewar Durable Objects ta
+  atomic, kewayen WebAuthn, asalin SLSA L3."
+
+problem: >
+  Yayin da wakilan AI da kayan aikin MCP ke fara kiran APIs na gefe a sikeli,
+  bankuna suna buƙatar kewaye wanda zai iya tsayayya da zirga-zirgar 'yancin
+  kai ba tare da rasa shaidar bincike na matsayin DORA ba. CDNs da ke akwai
+  suna ba da harshen talla ko tsare-tsare marasa fahimta — ba ɗayansu da ke
+  samar da samfurin tunani wanda ƙungiyar tsaro za ta iya karantawa, fork,
+  da sa hannu ba.
+
+what_i_built: >
+  Ƙofar MCP ta buɗaɗɗen tushe, marar amincewa tare da kayan aiki 42,
+  iyakancewar Durable Objects ta atomic, kewayen WebAuthn passkey, URLs da
+  aka sa hannu, da asalin gini na SLSA Mataki na 3. Gwaje-gwaje 3,185 a
+  kashi 100 na rufi, an daidaita da DORA Mataki na 5, tara bayanan haɗari
+  na BCBS 239, da babban birni na haɗarin aiki na Basel III.
+
+rigour:
+  - metric: "Gwaje-gwaje"
+    value: "Gwaje-gwaje 3,185 a kashi 100 na layi, reshe, da rufin aiki"
+  - metric: "Asalin sarƙar samarwa"
+    value: "Asalin gini na SLSA Mataki na 3 + sa hannu na Sigstore"
+  - metric: "Kayan aikin MCP da aka kawo"
+    value: "Kayan aiki 42 — kowane kira an yi rajistar bincikensa da shaida ta tsari"
+  - metric: "Iyakancewa"
+    value: "Atomic Durable Objects (babu rikicin tsere, babu ƙidaya biyu)"
+  - metric: "Tabbatarwa"
+    value: "WebAuthn passkeys + URLs da aka sa hannu"
+  - metric: "Lasisi"
+    value: "Apache-2.0 / MIT"
+
+validation:
+  - "An nuna shi a labarin 2026-06-11: CloudCDN — An Open-Source Blueprint for the AI-Native Edge"
+  - "An daidaita da DORA Mataki na 5, BCBS 239, haɗarin aiki na Basel III"

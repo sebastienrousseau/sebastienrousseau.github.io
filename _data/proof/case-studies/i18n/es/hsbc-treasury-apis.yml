@@ -1,0 +1,49 @@
+title: "API de tesorería de HSBC — pagos y Banking-as-a-Service"
+banner_alt: "Horizonte de la City de Londres — simboliza la plataforma de API de tesorería desplegada bajo el programa del Commercial & Investment Bank de HSBC"
+sector: "Banco comercial Tier-1 · Tesorería corporativa · Pagos regulados"
+role: "Responsable senior de producto y tecnología"
+status: "En producción en un banco global Tier-1"
+
+outcome_highlights:
+  - value: "Tier-1"
+    label: "Banco global, Commercial & Investment Bank"
+  - value: "FCA / PRA"
+    label: "Perímetro de pagos regulado"
+  - value: "Treasury / BaaS"
+    label: "Tesorería programable, liquidez y rieles de pago"
+  - value: "Multi-year"
+    label: "Liderazgo senior de producto y tecnología"
+
+pull_quote: >
+  "Puesta en producción de API de pagos, saldos y liquidez contra el
+  perímetro regulatorio del banco, abarcando arquitectura, integración con
+  proveedores, evidencia supervisora y los controles de resiliencia
+  operacional que DORA y SR 11-7 ahora exigen."
+
+problem: >
+  Los equipos de tesorería corporativa exigen acceso programable a la
+  gestión de caja, la liquidez y los rieles de pago dentro de un banco
+  Tier-1, sin renunciar a la capa de evidencia regulatoria que el propio
+  banco debe producir.
+
+what_i_built: >
+  Lideré los frentes de producto y tecnología del programa de API de
+  tesorería y Banking-as-a-Service de HSBC dentro del Commercial &
+  Investment Bank, poniendo en producción API de pagos, saldos y liquidez
+  contra el perímetro regulatorio del banco. Trabajé en arquitectura,
+  integración con proveedores, evidencia supervisora y los controles de
+  resiliencia operacional que DORA y SR 11-7 ahora exigen.
+
+rigour:
+  - metric: "Alcance del rol"
+    value: "Liderazgo senior de producto y tecnología dentro de CIB"
+  - metric: "Perímetro regulatorio"
+    value: "Plataforma de pagos regulada por FCA / PRA"
+  - metric: "Superficie de integración"
+    value: "API de tesorería, gestión de saldos y caja, distribución BaaS"
+  - metric: "Audiencia"
+    value: "Tesoreros corporativos en multinacionales y bancos Tier-2"
+
+validation:
+  - "Rol público en HSBC Commercial & Investment Bank — verificable en LinkedIn"
+  - "Alcance del programa referenciado en la sección Acerca de / Experiencia"

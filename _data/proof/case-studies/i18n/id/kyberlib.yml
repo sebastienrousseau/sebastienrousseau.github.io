@@ -1,0 +1,53 @@
+title: "KyberLib — ML-KEM kelas produksi di Rust"
+banner_alt: "Pertukaran kunci kriptografis tahan kuantum — melambangkan migrasi ML-KEM FIPS 203 di perbankan"
+sector: "Sumber terbuka · Perbankan · Standar"
+role: "Penulis dan pengelola"
+status: "Produksi, dikelola aktif"
+
+outcome_highlights:
+  - value: "FIPS 203"
+    label: "Selaras dengan jalur publikasi NIST"
+  - value: "Top 44 %"
+    label: "Dari ~182 pustaka PQC (Qtonic Lab)"
+  - value: "no_std"
+    label: "Tertanam di HSM + secure enclave"
+  - value: "1 adopter"
+    label: "Messenger pasca-kuantum QGram (Quantum2pi)"
+
+pull_quote: >
+  "Dievaluasi oleh Qtonic Quantum Lab — registri independen kriptografi
+  pasca-kuantum — dan diadopsi QGram (Quantum2pi) untuk pesan terenkripsi
+  end-to-end. Keduanya dapat diverifikasi tanpa melalui saya."
+
+problem: >
+  Bank menghadapi cutover alamat terstruktur SWIFT pada 14 November 2026
+  dan jendela migrasi pasca-kuantum NIST yang lebih panjang. Implementasi
+  PQC yang ada dikirim sebagai makalah kebijakan, kode laboratorium, atau
+  kotak hitam HSM proprietari — tidak satu pun yang dapat dibaca, diuji,
+  atau ditandatangani oleh arsitek pembayaran.
+
+what_i_built: >
+  KyberLib mengubah ML-KEM FIPS 203 (CRYSTALS-Kyber) menjadi Rust yang
+  dapat diinspeksi. Handshake hibrid klasik-plus-kuantum, kompilasi
+  no_std untuk penyematan HSM, batas abstraksi crypto-agile, dan bukti
+  tata kelola DORA Pasal 5 yang kini dibutuhkan dewan direksi untuk
+  mendukung migrasi PQC tanpa menanggung risiko vendor yang buram.
+
+rigour:
+  - metric: "Standar kriptografi"
+    value: "FIPS 203 (ML-KEM, sebelumnya CRYSTALS-Kyber)"
+  - metric: "Dukungan handshake hibrid"
+    value: "TLS klasik + mode ML-KEM-768 X25519MLKEM768"
+  - metric: "Kompilasi"
+    value: "no_std — tertanam di HSM, secure enclave, dan target embedded"
+  - metric: "Crypto-agility"
+    value: "Batas abstraksi memungkinkan pertukaran algoritma tanpa mengubah API"
+  - metric: "Lisensi"
+    value: "Apache-2.0 / MIT"
+
+validation:
+  - "Dikutip dalam white paper EPAA Quantum-Safe Payments (September 2025)"
+  - "Ditampilkan dalam artikel 12-06-2026: KyberLib and the Post-Quantum Banking Migration"
+  - "Selaras dengan jalur publikasi NIST FIPS 203 / 204 / 205"
+  - "Dievaluasi oleh Qtonic Quantum Lab — registri evaluasi kriptografi pasca-kuantum independen, ~182 pustaka PQC dinilai (top 44 %, tanpa bayar-untuk-inklusi dari vendor)"
+  - "Diadopsi oleh QGram (Quantum2pi) — messenger peer-to-peer terenkripsi end-to-end pasca-kuantum yang menggunakan KyberLib untuk enkripsi pesan (dapat diverifikasi di f6s.com/software/qgram)"

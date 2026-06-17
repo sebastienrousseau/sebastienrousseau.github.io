@@ -1,0 +1,51 @@
+title: "BankStatementParser — inteligencia unificada de transacciones para tesorería"
+banner_alt: "Oficina financiera moderna de noche — simboliza la inteligencia unificada de transacciones en formatos de extractos bancarios CAMT, MT940, OFX y CSV"
+sector: "Código abierto · Tesorería corporativa · Agregación de datos de riesgo"
+role: "Autor y mantenedor"
+status: "En producción, mantenido activamente"
+
+outcome_highlights:
+  - value: "6 formats"
+    label: "CAMT (.052/.053/.054), MT940, OFX, CSV, OCR PDF"
+  - value: "Per-field"
+    label: "Procedencia: formato origen y versión del analizador registrados"
+  - value: "BCBS 239"
+    label: "Alineado con la agregación de datos de riesgo"
+  - value: "Apache-2.0 / MIT"
+    label: "De uso libre, bifurcable y auditable"
+
+pull_quote: >
+  "Analizadores CAMT / MT940 / PAIN validados por esquema, alternativa OCR
+  para PDF escaneados, mapeo de campos determinista y evidencia de auditoría
+  con calidad SR 11-7: cada paso de transformación queda registrado y es
+  reproducible."
+
+problem: >
+  Los equipos de tesorería corporativa reciben extractos bancarios en CAMT,
+  PAIN.001, MT940, OFX, CSV y PDF escaneados de decenas de bancos. Cada
+  formato impone semántica de campos, codificaciones y ambigüedades
+  distintas. La mayoría de los equipos construye a mano analizadores
+  frágiles por banco, bloqueando la previsión de caja en tiempo real, la
+  detección de fraude y la conciliación lista para auditoría.
+
+what_i_built: >
+  Un conjunto de herramientas Python de código abierto que unifica todos los
+  formatos habituales de extracto bancario en un flujo único y normalizado
+  de transacciones. Analizadores CAMT / MT940 / PAIN validados por esquema,
+  alternativa OCR para PDF escaneados, mapeo de campos determinista y
+  evidencia de auditoría con calidad SR 11-7 para cada paso de
+  transformación.
+
+rigour:
+  - metric: "Formatos compatibles"
+    value: "CAMT (.052, .053, .054), MT940, OFX, CSV, PDF escaneado (OCR)"
+  - metric: "Objetivo de normalización"
+    value: "Esquema único y unificado de registro de transacciones"
+  - metric: "Pista de auditoría"
+    value: "Procedencia por campo: formato origen y versión del analizador registrados por fila"
+  - metric: "Licencia"
+    value: "Apache-2.0 / MIT"
+
+validation:
+  - "Destacado en el artículo del 14-06-2026: De los extractos bancarios a la inteligencia unificada de transacciones"
+  - "Diseñado para satisfacer los requisitos de agregación de datos de riesgo de BCBS 239"

@@ -1,0 +1,44 @@
+title: "HSBC Treasury APIs — betalningar och Banking-as-a-Service"
+banner_alt: "Skyline över City of London — bild för den treasury-API-plattform som levererades inom HSBC:s Commercial & Investment Bank-program"
+sector: "Tier 1-affärsbank · Corporate treasury · Reglerade betalningar"
+role: "Senior produkt- och teknikledning"
+status: "I produktion vid en global Tier 1-bank"
+
+outcome_highlights:
+  - label: "Global bank, Commercial & Investment Bank"
+  - label: "Reglerad betalningsperimeter"
+  - label: "Programmerbar likviditet, kassa och betalningsskenor"
+  - label: "Senior produkt- och teknikledning"
+
+pull_quote: >
+  "Levererade produktiva API:er för betalningar, saldon och likviditet
+  mot bankens regulatoriska perimeter — över arkitektur, leverantörsintegration,
+  tillsynsbevis och de operativa motståndskraftskontroller som DORA och
+  SR 11-7 nu kräver."
+
+problem: >
+  Corporate treasury-team kräver programmerbar åtkomst till cash management,
+  likviditet och betalningsskenor inuti en Tier 1-bank — utan att ge upp
+  det regulatoriska bevisskikt som banken själv måste producera.
+
+what_i_built: >
+  Ledde produkt- och teknikspår för HSBC:s treasury-API:er och
+  Banking-as-a-Service-program inom Commercial & Investment Bank, och
+  levererade produktiva API:er för betalningar, saldon och likviditet
+  mot bankens regulatoriska perimeter. Arbetade tvärs över arkitektur,
+  leverantörsintegration, tillsynsbevis och de operativa
+  motståndskraftskontroller som DORA och SR 11-7 nu kräver.
+
+rigour:
+  - metric: "Rollens omfattning"
+    value: "Senior produkt- och teknikledning inom CIB"
+  - metric: "Regulatorisk perimeter"
+    value: "FCA-/PRA-reglerad betalningsplattform"
+  - metric: "Integrationsyta"
+    value: "Treasury-API:er, saldo- och cash management, BaaS-distribution"
+  - metric: "Målgrupp"
+    value: "Corporate treasurers vid multinationella koncerner och Tier 2-banker"
+
+validation:
+  - "Offentlig roll vid HSBC Commercial & Investment Bank — verifierbar via LinkedIn"
+  - "Programmets omfattning refererad i avsnittet Om / Erfarenhet"

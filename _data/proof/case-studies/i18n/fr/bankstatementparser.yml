@@ -1,0 +1,51 @@
+title: "BankStatementParser — intelligence unifiée des transactions pour la trésorerie"
+banner_alt: "Salle de marchés moderne de nuit — symbolisant l'intelligence unifiée des transactions à travers les formats de relevés bancaires CAMT, MT940, OFX et CSV"
+sector: "Open source · Trésorerie d'entreprise · Agrégation des données de risque"
+role: "Auteur et mainteneur"
+status: "En production, activement maintenu"
+
+outcome_highlights:
+  - value: "6 formats"
+    label: "CAMT (.052/.053/.054), MT940, OFX, CSV, PDF OCR"
+  - value: "Per-field"
+    label: "Traçabilité : format source et version du parseur journalisés"
+  - value: "BCBS 239"
+    label: "Aligné sur l'agrégation des données de risque"
+  - value: "Apache-2.0 / MIT"
+    label: "Libre d'usage, de fork et d'audit"
+
+pull_quote: >
+  « Parseurs CAMT / MT940 / PAIN validés par schéma, repli OCR pour les
+  PDF numérisés, mappage déterministe des champs, preuves d'audit de
+  niveau SR 11-7 — chaque étape de transformation enregistrée et
+  reproductible. »
+
+problem: >
+  Les équipes de trésorerie d'entreprise reçoivent des relevés bancaires
+  en CAMT, PAIN.001, MT940, OFX, CSV et PDF numérisés depuis des dizaines
+  de banques. Chaque format porte une sémantique de champs, un encodage
+  et des ambiguïtés différents. La plupart des équipes construisent
+  manuellement des parseurs fragiles par banque, ce qui bloque la
+  prévision de trésorerie en temps réel, la détection de la fraude et
+  la réconciliation prête pour l'audit.
+
+what_i_built: >
+  Une boîte à outils Python open source qui unifie tous les formats
+  courants de relevés bancaires en un flux unique et normalisé de
+  transactions. Parseurs CAMT / MT940 / PAIN validés par schéma, repli
+  OCR pour les PDF numérisés, mappage déterministe des champs et preuves
+  d'audit de niveau SR 11-7 pour chaque étape de transformation.
+
+rigour:
+  - metric: "Formats pris en charge"
+    value: "CAMT (.052, .053, .054), MT940, OFX, CSV, PDF numérisé (OCR)"
+  - metric: "Cible de normalisation"
+    value: "Schéma unique unifié d'enregistrement de transaction"
+  - metric: "Piste d'audit"
+    value: "Traçabilité par champ — format source et version du parseur journalisés par ligne"
+  - metric: "Licence"
+    value: "Apache-2.0 / MIT"
+
+validation:
+  - "Présenté dans l'article du 2026-06-14 : From Bank Statements to Unified Transaction Intelligence"
+  - "Conçu pour satisfaire aux exigences d'agrégation des données de risque BCBS 239"

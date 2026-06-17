@@ -102,5 +102,4 @@ site_software: "Static Site Generator, Rust"
 
 ---
 
-I will only use your personal information to protect your privacy. The data
-collected in the form below is solely for the purpose of answering your enquiry.
+Consulting, advisory, speaking and editorial enquiries are welcome. A short note about your context — bank, role, the question you're trying to answer — gets a faster, sharper reply than a generic introduction. Your information is used solely to respond to this enquiry.

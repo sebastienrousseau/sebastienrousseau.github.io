@@ -284,6 +284,14 @@
     [
       "<a href=\"/contact/index\\.html\">Get in touch</a>",
       "<a href=\"/zh-hant/lianxi-tw/index.html\">聯絡我</a>"
+    ],
+    [
+      "<li><a href=\"?/case-studies/index\\.html\"?>Case studies</a></li>",
+      "<li><a href=\"/zh-hant/anli-yanjiu/index.html\">案例研究</a></li>"
+    ],
+    [
+      "<a href=\"?/case-studies/index\\.html\"?>Case studies</a>",
+      "<a href=\"/zh-hant/anli-yanjiu/index.html\">案例研究</a>"
     ]
   ]
 }

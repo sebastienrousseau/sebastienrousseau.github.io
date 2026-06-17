@@ -1,0 +1,45 @@
+title: "pain001 — automatizando arquivos de pagamento ISO 20022"
+banner_alt: "Vista aérea da cidade ao entardecer — simbolizando a automação de arquivos de pagamento estruturados sob ISO 20022 em redes de compensação globais"
+sector: "Código aberto · Tesouraria corporativa · ISO 20022"
+role: "Autor e mantenedor"
+status: "Em produção, mantido ativamente"
+
+outcome_highlights:
+  - label: "Customer Credit Transfer Initiation"
+  - label: "Pré-validação em cada mensagem"
+  - label: "Checksums ISO 7064 Módulo 97-10"
+  - label: "Uso, fork e auditoria livres"
+
+pull_quote: >
+  "Citada no white paper EPAA Quantum-Safe Payments (setembro de 2025).
+  Código aberto, auditada desde o primeiro dia — sem tradutor
+  proprietário entre seu ERP e a rede de compensação."
+
+problem: >
+  A migração global MT → MX obriga cada banco e cada tesouraria
+  corporativa a produzir mensagens pain.001 estruturadas. A maioria
+  das equipes escreve XML frágil à mão ou compra tradutores
+  proprietários opacos. Ambos os caminhos enviam erros de pagamento
+  para as redes de compensação e não deixam trilha de auditoria.
+
+what_i_built: >
+  Uma biblioteca Python de código aberto que gera mensagens ISO 20022
+  pain.001 (Customer Credit Transfer Initiation) validadas a partir
+  de CSV / SQLite / Parquet. Pré-validação XSD, checksums de IBAN /
+  BIC, mascaramento de PII e conformidade total com o schema XSD —
+  tudo dentro de um workflow Python que se encaixa em pipelines
+  existentes de ERP e tesouraria.
+
+rigour:
+  - metric: "Mensagens ISO 20022 suportadas"
+    value: "pain.001 (Customer Credit Transfer Initiation)"
+  - metric: "Conformidade de schema"
+    value: "Validação XSD oficial pré-execução em cada mensagem"
+  - metric: "Validadores entregues"
+    value: "Dígito verificador de IBAN + checksum de BIC + LEI (ISO 7064 Módulo 97-10)"
+  - metric: "Licença"
+    value: "Apache-2.0 / MIT — uso, fork e auditoria livres"
+
+validation:
+  - "Citada no white paper EPAA Quantum-Safe Payments (setembro de 2025)"
+  - "Destaque em artigos publicados em sebastienrousseau.com desde setembro de 2023"

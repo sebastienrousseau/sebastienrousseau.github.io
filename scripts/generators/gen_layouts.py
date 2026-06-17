@@ -219,61 +219,101 @@ def contact_layout() -> str:
       <p class="sub">{{subtitle}}</p>
     </section>
 
+    <section class="proof-rail contact-promise" aria-label="What to expect" data-reveal>
+      <div class="kpi-cell"><span class="kpi-cell-value">&lt; 48 h</span><span class="kpi-cell-label">Typical first response</span></div>
+      <div class="kpi-cell"><span class="kpi-cell-value">London</span><span class="kpi-cell-label">Time zone · UK + EU + APAC overlap</span></div>
+      <div class="kpi-cell"><span class="kpi-cell-value">Tier-1</span><span class="kpi-cell-label">Banking · payments · post-quantum</span></div>
+    </section>
+
     <main id="main" class="content ap-section" aria-label="main">
       <div class="wrap contact-wrap">
-        <p class="lede">{{content}}</p>
-        <form class="ap-form" action="https://formspree.io/f/{{form-id}}" method="POST">
-          <div class="ap-form-row">
-            <label for="sender">Name</label>
-            <input type="text" id="sender" name="name" autocomplete="name" required />
+        <div class="contact-layout" data-reveal>
+          <div class="contact-form-col">
+            <p class="lede">{{content}}</p>
+            <form class="ap-form" action="https://formspree.io/f/{{form-id}}" method="POST">
+              <div class="ap-form-row">
+                <label for="sender">Name</label>
+                <input type="text" id="sender" name="name" autocomplete="name" required />
+              </div>
+              <div class="ap-form-row">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" autocomplete="email" required />
+              </div>
+              <div class="ap-form-row">
+                <label for="subject">Subject</label>
+                <select id="subject" name="subject" required aria-label="Select a subject">
+                  <option value="">Choose a subject</option>
+                  <option value="business">Consulting / advisory engagement</option>
+                  <option value="press">Press, podcast or speaking</option>
+                  <option value="papers">White paper / research collaboration</option>
+                  <option value="product">Open-source project question</option>
+                  <option value="feedback">Editorial feedback</option>
+                  <option value="support">Product support</option>
+                  <option value="general">Something else</option>
+                </select>
+              </div>
+              <div class="ap-form-row">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="6" required placeholder="A line about your bank, your role, and the question you're trying to answer."></textarea>
+              </div>
+              <div class="ap-form-row">
+                <label class="visually-hidden" for="g-recaptcha-response">Google reCAPTCHA</label>
+                <div class="g-recaptcha" data-sitekey="{{recaptcha}}"></div>
+              </div>
+              <div class="ap-form-row ap-form-actions">
+                <button type="submit" class="pill no-chev">Send message</button>
+              </div>
+            </form>
           </div>
-          <div class="ap-form-row">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" autocomplete="email" required />
-          </div>
-          <div class="ap-form-row">
-            <label for="subject">Subject</label>
-            <select id="subject" name="subject" required aria-label="Select a subject">
-              <option value="">Choose a subject</option>
-              <option value="press">Advertising / press enquiries</option>
-              <option value="business">Business enquiries</option>
-              <option value="feedback">Feedback / feature request</option>
-              <option value="general">General questions</option>
-              <option value="papers">Request instant access</option>
-              <option value="product">Product questions</option>
-              <option value="support">Product support</option>
-            </select>
-          </div>
-          <div class="ap-form-row">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="6" required placeholder="How can I help?"></textarea>
-          </div>
-          <div class="ap-form-row">
-            <label class="visually-hidden" for="g-recaptcha-response">Google reCAPTCHA</label>
-            <div class="g-recaptcha" data-sitekey="{{recaptcha}}"></div>
-          </div>
-          <div class="ap-form-row ap-form-actions">
-            <button type="submit" class="pill no-chev">Send message</button>
-          </div>
-        </form>
+          <aside class="contact-aside" aria-label="Other ways to reach Sebastien">
+            <h2 class="contact-aside-title">Faster paths</h2>
+            <ul class="contact-aside-list">
+              <li>
+                <span class="contact-aside-eyebrow">Direct</span>
+                <a href="mailto:contact@sebastienrousseau.com">contact@sebastienrousseau.com</a>
+              </li>
+              <li>
+                <span class="contact-aside-eyebrow">Verified</span>
+                <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external me noopener">LinkedIn · sebastienrousseau</a>
+              </li>
+              <li>
+                <span class="contact-aside-eyebrow">Editorial</span>
+                <a href="https://news.bankingonquantum.com" rel="external noopener">Banking On Quantum · newsletter</a>
+              </li>
+            </ul>
+            <p class="contact-aside-note">If your question is already covered in the <a href="/papers/index.html">papers FAQ</a> or a <a href="/case-studies/index.html">case study</a>, link to it — that saves a round trip.</p>
+          </aside>
+        </div>
       </div>
     </main>
 
 """
-    contact_css = """      .contact-wrap{max-width:680px}
-      .contact-wrap .lede{font-size:18px;color:var(--ink-mute);margin:0 0 36px;line-height:1.5}
+    contact_css = """      .contact-wrap{max-width:var(--max-wide)}
+      .contact-wrap .lede{font-size:clamp(17px,1.6vw,19px);color:var(--ink-mute);margin:0 0 36px;line-height:1.5}
+      .contact-promise{max-width:var(--max-wide);margin-block:0}
+      .contact-layout{display:grid;grid-template-columns:1fr;gap:48px;padding-block:clamp(48px,6vw,80px)}
+      @media (min-width:64em){.contact-layout{grid-template-columns:minmax(0,1fr) 320px;gap:64px;align-items:start}}
+      .contact-form-col{min-width:0;max-width:680px}
       .ap-form{display:flex;flex-direction:column;gap:20px}
       .ap-form-row{display:flex;flex-direction:column;gap:6px}
       .ap-form-row label{font-size:13px;font-weight:600;color:var(--ink);letter-spacing:-.005em}
       .ap-form input[type=text],.ap-form input[type=email],.ap-form select,.ap-form textarea{
         font-family:inherit;font-size:16px;line-height:1.4;color:var(--ink);
-        background:#fff;border:1px solid var(--border);border-radius:12px;
-        padding:12px 14px;width:100%;transition:border-color .15s,box-shadow .15s;
+        background:var(--paper);border:1px solid var(--border);border-radius:12px;
+        padding:14px 16px;width:100%;min-height:48px;transition:border-color .15s,box-shadow .15s;
       }
-      .ap-form textarea{min-height:140px;resize:vertical}
+      .ap-form textarea{min-height:160px;resize:vertical}
       .ap-form input:focus,.ap-form select:focus,.ap-form textarea:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 4px rgba(var(--accent-rgb),.15)}
       .ap-form-actions{align-items:flex-start;margin-top:8px}
       .ap-form button.pill{font-size:16px;padding:14px 28px;border:none;cursor:pointer}
+      .contact-aside{padding:28px 28px 32px;background:var(--card);border:1px solid var(--rule);border-radius:var(--radius);position:sticky;top:calc(var(--nav-h) + 24px)}
+      .contact-aside-title{font-family:var(--type-body);font-size:12.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-mute);margin:0 0 18px}
+      .contact-aside-list{list-style:none;margin:0 0 20px;padding:0;display:flex;flex-direction:column;gap:18px}
+      .contact-aside-list li{display:flex;flex-direction:column;gap:4px}
+      .contact-aside-eyebrow{font-family:var(--type-body);font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-mute)}
+      .contact-aside-list a{font-size:15px;font-weight:500;color:var(--ink-deep);text-decoration:none;line-height:1.35;word-break:break-word}
+      .contact-aside-list a:hover{color:var(--accent);text-decoration:underline;text-underline-offset:3px}
+      .contact-aside-note{font-size:13.5px;line-height:1.5;color:var(--ink-mute);margin:0;padding-block-start:18px;border-block-start:1px solid var(--rule)}
 """
     html = TOP + body + BOTTOM
     html = html.replace("    </style>", contact_css + "    </style>")
@@ -464,8 +504,19 @@ def _playlist_featured() -> str:
 </article>"""
 
 
+def _section_slug(kicker: str) -> str:
+    """Stable anchor slug for a playlist section header (e.g. 'SOUL & JAZZ' -> 'soul-jazz')."""
+    import re as _re
+
+    return _re.sub(r"[^a-z0-9]+", "-", kicker.lower()).strip("-")
+
+
 def _playlist_section(kicker: str, title: str, lede, items) -> str:
-    head = f'<header class="newsroom-section-head"><p class="newsroom-kicker">{kicker}</p><h2>{title}</h2>'
+    anchor = _section_slug(kicker)
+    head = (
+        f'<header class="newsroom-section-head" id="lane-{anchor}" data-reveal>'
+        f'<p class="newsroom-kicker">{kicker}</p><h2>{title}</h2>'
+    )
     if lede:
         head += f'<p class="newsroom-lede">{lede}</p>'
     head += "</header>"
@@ -477,17 +528,25 @@ def playlist_layout() -> str:
     sections_html = "\n\n".join(
         _playlist_section(key, title, link, items) for key, title, link, items in PLAYLISTS_SECTIONS
     )
+    # Lane chip nav (Apple-HIG selective navigation): one chip per
+    # section, anchor-jumps to lane-<slug>. Mirrors /topics/ pattern.
+    chip_html = "".join(
+        f'<a class="playlist-chip" href="#lane-{_section_slug(key)}">{title}</a>'
+        for key, title, _link, _items in PLAYLISTS_SECTIONS
+    )
     body = f"""    <section class="ap-hero">
+      <span class="ap-hero-eyebrow">Playlists</span>
       <h1>{{{{name}}}}</h1>
       <p class="sub">{{{{subtitle}}}}</p>
     </section>
 
     <main id="main" class="content ap-section" aria-label="main">
       <div class="wrap" style="max-width:var(--max-wide)">
-        <div class="playlist-intro">{{{{content}}}}</div>
+        <div class="playlist-intro" data-reveal>{{{{content}}}}</div>
+        <nav class="playlist-chips" aria-label="Jump to a lane">{chip_html}</nav>
         <section class="newsroom">
 
-          <header class="newsroom-section-head"><p class="newsroom-kicker">FEATURED</p><h2>Latest playlist</h2></header>
+          <header class="newsroom-section-head" data-reveal><p class="newsroom-kicker">FEATURED</p><h2>Latest playlist</h2></header>
 
           {_playlist_featured()}
 
@@ -498,8 +557,12 @@ def playlist_layout() -> str:
     </main>
 
 """
-    playlist_css = """      .playlist-intro{max-width:760px;margin:0 auto 40px;text-align:center;font-size:clamp(18px,2vw,22px);line-height:1.45;color:var(--ink-mute)}
+    playlist_css = """      .playlist-intro{max-width:680px;margin:0 auto 32px;text-align:center;font-size:clamp(17px,1.6vw,20px);line-height:1.5;color:var(--ink-mute)}
       .playlist-intro p{margin:0}
+      .playlist-chips{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:0 auto 48px;max-width:780px}
+      .playlist-chip{display:inline-flex;align-items:center;min-height:36px;padding:8px 18px;border:1px solid var(--rule);border-radius:999px;font-family:var(--type-body);font-size:13px;font-weight:600;color:var(--ink-deep);text-decoration:none;background:var(--paper);transition:background .15s,border-color .15s}
+      .playlist-chip:hover,.playlist-chip:focus-visible{background:var(--card);border-color:var(--ink-mute)}
+      .newsroom-section-head[id^=lane-]{scroll-margin-block-start:calc(var(--nav-h) + 16px)}
       .spotify-frame{border-radius:12px;border:0;display:block;width:100%}
       .playlist-card .newsroom-card-body{padding:22px 24px 22px}
       .playlist-card .newsroom-excerpt{margin-bottom:16px}

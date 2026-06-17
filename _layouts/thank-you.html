@@ -463,6 +463,395 @@
       section.tag-landing-list[data-filter-year="2018"] article:not([data-year="2018"]){display:none}
       .listing-empty{display:none;font-family:var(--type-body);color:var(--ink-mute);text-align:center;padding:32px;border:1px dashed var(--rule)}
       section.tag-landing-list[data-empty="1"] + .listing-empty{display:block}
+      /* ---------- Case-study composition — AKQA-tier staged editorial.
+         Used by /case-studies/ hub and /case-studies/<slug>/ per-study
+         pages and every /<lang>/<localised>/ locale fork. Self-contained
+         CSS — build_case_studies.py only emits semantic stage markup.
+         Each "stage" is a full-bleed section with generous vertical
+         rhythm, numbered eyebrow, optional dark inversion, and a
+         scroll-driven fade-up reveal (animation-timeline: view()).
+         ------------------------------------------------------------- */
+      /* Case-study palette — white paper, black ink + black accent.
+         Tokens scoped to .case-study-wrap so the rest of the site keeps
+         its own theme. WCAG 2.2 AAA contrasts (all ≥ 7:1 on body text):
+           ink   #0b0c12 on paper #fff  = 21.0 : 1 AAA
+           soft  #2a2b34 on paper #fff  = 13.6 : 1 AAA
+           mute  #4a4b56 on paper #fff  =  9.0 : 1 AAA
+           accent #000   on paper #fff  = 21.0 : 1 AAA
+         Dark mode all mirror to ≥ 7:1.
+         The --cs-dark* tokens DO NOT flip — they're for FT-style dark
+         editorial panels (cards, hero) that stay navy in both modes. */
+      .case-study-wrap{
+        --cs-paper:#ffffff;
+        --cs-paper-soft:#f6f6f7;
+        --cs-card:#ffffff;
+        --cs-ink:#0b0c12;
+        --cs-ink-soft:#2a2b34;
+        --cs-ink-mute:#4a4b56;       /* 9:1 — AAA for normal text */
+        --cs-rule:#dadde2;
+        --cs-rule-soft:#eaecef;
+        --cs-accent:#000000;
+        --cs-accent-soft:#2a2b34;
+        --cs-dark:#14151f;            /* always dark — for FT editorial cards */
+        --cs-dark-fg:#ffffff;
+        --cs-dark-fg-soft:rgba(255,255,255,.88);
+        --cs-dark-fg-mute:rgba(255,255,255,.78);
+        max-width:none;margin:0;padding:0;width:100%;
+        background:var(--cs-paper);color:var(--cs-ink);
+      }
+      /* Dark — fires for either system preference OR user toggle. Same
+         AAA bar: ≥ 7:1 contrast on every text token. */
+      @media (prefers-color-scheme:dark){html:not([data-theme="light"]) .case-study-wrap{
+        --cs-paper:#0b0c12;--cs-paper-soft:#13141a;--cs-card:#181a22;
+        --cs-ink:#f3f5f8;--cs-ink-soft:#cfd2da;--cs-ink-mute:#aab0bd;  /* mute 7.5:1 */
+        --cs-rule:#2a2d36;--cs-rule-soft:#1f222b;
+        --cs-accent:#ffffff;--cs-accent-soft:#cfd2da;
+      }}
+      [data-theme="dark"] .case-study-wrap{
+        --cs-paper:#0b0c12;--cs-paper-soft:#13141a;--cs-card:#181a22;
+        --cs-ink:#f3f5f8;--cs-ink-soft:#cfd2da;--cs-ink-mute:#aab0bd;
+        --cs-rule:#2a2d36;--cs-rule-soft:#1f222b;
+        --cs-accent:#ffffff;--cs-accent-soft:#cfd2da;
+      }
+      /* Reset the article wrap padding so the page goes edge-to-edge.
+         Critical: kill main's top padding/margin so the dark hero sits
+         flush against the site header (no peeking black strip above). */
+      main.content:has(.case-study-wrap){padding:0;margin:0;background:var(--cs-paper,#fff)}
+      .case-study-wrap > section:first-child,.case-study-wrap .cs-hero{margin-block-start:0}
+      /* STAGE — every section is one of these. FT pattern: generous
+         vertical rhythm, contained 1100px row, calmer padding than AKQA. */
+      .cs-stage{position:relative;padding:clamp(56px,7vw,88px) clamp(24px,5vw,56px)}
+      .cs-stage-row{max-width:1100px;margin:0 auto;width:100%}
+      .cs-stage-row--narrow{max-width:740px}
+      .cs-stage-row--mid{max-width:880px}
+      /* Numbered eyebrow — "01 — THE CHALLENGE" pinned above each H2 */
+      .cs-stage-no{font-family:var(--type-body);font-size:.6875rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--cs-accent);margin:0 0 18px;display:block}
+      /* Single-line stage headline with inline accent-coloured number
+         prefix. Replaces the old "01 — eyebrow + duplicated h2" pattern.
+         The H2 carries the section size; the prefix sits inline in the
+         accent colour, scaled +14% so it tracks the heading optically. */
+      .cs-stage-headline{font-family:var(--type-display);font-size:clamp(1.625rem,2.6vw,2.25rem);line-height:1.1;font-weight:600;letter-spacing:-.016em;color:var(--cs-ink);margin:0 0 22px;max-width:none;text-wrap:balance}
+      .cs-stage-headline > span[aria-hidden="true"]{color:var(--cs-accent);font-weight:600;font-feature-settings:"tnum" 1,"lnum" 1;letter-spacing:-.012em}
+      /* Big H2 used by story stages */
+      .cs-stage h2{font-family:var(--type-display);font-size:clamp(1.875rem,3.5vw,3rem);line-height:1.08;font-weight:600;letter-spacing:-.016em;color:var(--cs-ink);margin:0 0 24px;max-width:none;text-wrap:balance}
+      .cs-stage h2 + p,.cs-stage h2 + ul,.cs-stage h2 + ol,.cs-stage h2 + figure{margin-top:0}
+      .cs-stage p{font-family:var(--type-body);font-size:clamp(1.0625rem,1.2vw,1.1875rem);line-height:1.6;color:var(--cs-ink);margin:0 0 18px;max-width:680px}
+      .cs-stage .cs-stage-row--narrow p{max-width:none}
+
+      /* === HERO — FT-style full-bleed image with overlay text + CTA.
+         HSBC-views aesthetic: the banner image is the dominant visual,
+         the overlay is a soft bottom gradient (no top dimming) to keep
+         text legible without flattening the photograph. === */
+      .cs-hero{position:relative;color:#fff;background:#0a1a3a;padding:0;min-height:min(78svh,640px);display:grid;align-items:end;overflow:hidden;border:0;margin:0}
+      /* The .cs-hero-media is a <figure>; UA default margin would push
+         the image inside it down, exposing the black bg above. Force
+         everything to fill. */
+      .cs-hero-media,.cs-hero figure.cs-hero-media{position:absolute;inset:0;z-index:0;margin:0;padding:0;width:100%;height:100%;display:block}
+      .cs-hero-media img,.cs-hero figure.cs-hero-media img{display:block;width:100%;height:100%;object-fit:cover;margin:0;vertical-align:bottom}
+      /* Lighter overlay — bottom-anchored gradient only, soft text scrim
+         keeps WCAG AAA contrast on the H1/deck without painting over the
+         photograph. */
+      .cs-hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.05) 0,rgba(0,0,0,.15) 40%,rgba(0,0,0,.65) 100%);z-index:1}
+      .cs-hero > .cs-stage-row{position:relative;z-index:2;display:block;padding:clamp(48px,7vw,80px) clamp(24px,5vw,56px);max-width:1100px;margin:0 auto;width:100%}
+      .cs-hero-text{display:flex;flex-direction:column;max-width:780px}
+      /* Opaque text colours over the dark hero photo. pa11y can't
+         compute contrast through rgba() alpha + photo background, so
+         we use solid #fff (with subtle CSS opacity for the muted
+         breadcrumb separators where needed). */
+      .cs-hero .cs-breadcrumb{color:#fff;margin:0 0 36px;font-size:.6875rem;letter-spacing:.14em;text-transform:uppercase}
+      .cs-hero .cs-breadcrumb a{color:#fff;text-decoration:none}
+      .cs-hero .cs-breadcrumb a:hover{color:#fff;text-decoration:underline}
+      .cs-hero .cs-breadcrumb [aria-current="page"]{color:#fff;font-weight:700}
+      .cs-hero .cs-kicker{display:inline-block;font-family:var(--type-body);font-size:.6875rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#fff;background:none;padding:0;margin:0 0 22px;border:0;align-self:start}
+      .cs-hero h1{font-family:var(--type-display);font-size:clamp(2.25rem,5vw,3.75rem);line-height:1.02;font-weight:600;letter-spacing:-.02em;color:#fff;margin:0 0 28px;text-wrap:balance;max-width:920px}
+      .cs-hero .cs-deck{font-family:var(--type-display);font-size:clamp(1rem,1.4vw,1.25rem);line-height:1.4;color:#fff;font-weight:400;margin:0 0 32px;max-width:680px}
+      .cs-hero .cs-byline{display:none}
+      .cs-hero-cta{display:inline-flex;align-items:center;gap:10px;padding:14px 28px;font-family:var(--type-body);font-size:.8125rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#000;background:#fff;border:2px solid #fff;text-decoration:none;cursor:pointer;transition:transform .2s ease,background .2s ease,color .2s ease;min-height:44px;align-self:start;line-height:1.2}
+      .cs-hero-cta:hover{background:transparent;color:#fff;transform:translateY(-1px)}
+      .cs-hero-cta:focus-visible{outline:3px solid #fff;outline-offset:3px}
+      .cs-scroll-cue{display:none}
+
+      /* === FT customer-story BODY — sticky left rail + right prose === */
+      .cs-body-stage{padding-block:clamp(56px,7vw,96px) clamp(56px,7vw,96px);background:var(--cs-paper)}
+      .cs-body-grid{display:grid;grid-template-columns:1fr;gap:36px;max-width:1100px;margin:0 auto;width:100%}
+      @media (min-width:920px){.cs-body-grid{grid-template-columns:260px minmax(0,1fr);gap:72px;align-items:start}}
+      /* LEFT rail */
+      .cs-side{display:flex;flex-direction:column;gap:0}
+      @media (min-width:920px){.cs-side{position:sticky;top:24px;align-self:start}}
+      /* Sidebar typography — HSBC-views quietness. Section labels are
+         small, muted, single-line; values sit close beneath them; the
+         section spacing breathes a little more than before so the meta
+         rail reads as a calm reference column, not a list of headlines. */
+      .cs-side-section{padding-block:20px 20px;border-block-start:1px solid var(--cs-rule);display:flex;flex-direction:column;gap:10px}
+      .cs-side-section:first-child{border-block-start:0;padding-block-start:0}
+      .cs-side-section dt,.cs-side-section h3,.cs-side-section .cs-side-heading{font-family:var(--type-body);font-size:.6875rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--cs-ink-mute);margin:0;line-height:1.2}
+      .cs-side-section dd,.cs-side-section p{font-family:var(--type-body);font-size:.875rem;line-height:1.5;color:var(--cs-ink);margin:0;font-weight:500}
+      .cs-side-section ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px}
+      .cs-side-section.cs-side-standards ul{flex-direction:row;flex-wrap:wrap;gap:6px}
+      .cs-side-standards li{display:inline-flex;font-family:var(--type-body);font-size:.6875rem;font-weight:600;color:var(--cs-ink);background:var(--cs-paper-soft);border:1px solid var(--cs-rule);padding:5px 10px;letter-spacing:.02em}
+      .cs-side-links li{margin:0;padding:0}
+      .cs-side-links a{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:10px 0;font-family:var(--type-body);font-size:.8125rem;font-weight:500;color:var(--cs-ink);text-decoration:none;line-height:1.4;border-block-end:1px solid var(--cs-rule-soft)}
+      .cs-side-links li:last-child a{border-block-end:0}
+      .cs-side-links a::after{content:"→";font-weight:700;color:var(--cs-ink-mute);transition:transform .2s ease,color .2s ease;flex:0 0 auto}
+      .cs-side-links a:hover{color:var(--cs-accent)}
+      .cs-side-links a:hover::after{transform:translateX(3px);color:var(--cs-accent)}
+      /* Article-style share rail inside the case-study sidebar — circular
+         44×44 icons matching .share-rail elsewhere on the site. The
+         <h3>Share</h3> sits above so the rail is properly labelled. */
+      .cs-side-share-block .share-rail{margin:0}
+      .cs-side-share-block .share-rail>ul{display:flex;gap:8px;padding:0;margin:0;list-style:none;flex-wrap:wrap}
+      .cs-side-share-block .share-rail li{margin:0;list-style:none}
+      .cs-side-share-block .share-rail a{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:50%;border:1px solid var(--cs-rule);background:var(--cs-paper);color:var(--cs-ink-mute);text-decoration:none;transition:color .2s ease,border-color .2s ease,background .2s ease}
+      .cs-side-share-block .share-rail a:hover{color:var(--cs-ink);border-color:var(--cs-ink);background:var(--cs-card)}
+      .cs-side-share-block .share-rail svg{width:16px;height:16px;display:block;fill:currentColor}
+      /* RIGHT main */
+      .cs-body-main{display:flex;flex-direction:column;gap:0;min-width:0}
+      .cs-body-main .cs-deck-intro{font-family:var(--type-display);font-size:clamp(1.25rem,2.2vw,1.625rem);line-height:1.4;color:var(--cs-ink);margin:0 0 48px;font-weight:400;max-width:none;font-style:italic;border-inline-start:3px solid var(--cs-accent);padding-inline-start:24px}
+      .cs-body-main > section{margin:0 0 56px}
+      .cs-body-main > section:last-child{margin-bottom:0}
+      .cs-body-main > section h2{font-family:var(--type-display);font-size:clamp(1.5rem,2.5vw,2.125rem);line-height:1.1;font-weight:600;letter-spacing:-.014em;color:var(--cs-ink);margin:0 0 24px;padding-block-end:16px;border-block-end:1px solid var(--cs-rule);max-width:none}
+      .cs-body-main > section .cs-stage-no{font-family:var(--type-body);font-size:.625rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--cs-accent);margin:0 0 10px;display:block}
+      .cs-body-main > section p{font-family:var(--type-body);font-size:1.0625rem;line-height:1.7;color:var(--cs-ink);margin:0 0 18px;max-width:none}
+      .cs-body-main > section:not(:last-child){border-block-end:0;padding-block-end:0}
+      /* Inline outcomes */
+      .cs-outcomes-inline{margin:0 0 56px;padding:32px 0;display:grid;grid-template-columns:1fr;gap:28px 32px;border-block:1px solid var(--cs-rule)}
+      @media (min-width:560px){.cs-outcomes-inline{grid-template-columns:repeat(2,1fr)}}
+      .cs-outcomes-inline > div{display:flex;flex-direction:column;gap:6px;margin:0}
+      .cs-outcomes-inline dt{font-family:var(--type-display);font-size:clamp(1.5rem,3vw,2.25rem);font-weight:600;letter-spacing:-.018em;color:var(--cs-accent);line-height:1;margin:0;order:1}
+      .cs-outcomes-inline dd{font-family:var(--type-body);font-size:.8125rem;line-height:1.45;color:var(--cs-ink-soft);margin:0;order:2;max-width:28ch}
+      /* Inline pull quote */
+      .cs-pull-inline{margin:0 0 56px;padding:32px 0;border-block:1px solid var(--cs-rule)}
+      .cs-pull-inline p{font-family:var(--type-display);font-size:clamp(1.25rem,2.4vw,1.75rem);line-height:1.3;font-style:italic;color:var(--cs-ink);margin:0;max-width:none}
+      .cs-pull-inline p::before{content:open-quote;font-size:1.4em;line-height:0;vertical-align:-.18em;color:var(--cs-accent);font-style:normal;margin-inline-end:.05em}
+      .cs-pull-inline cite{font-family:var(--type-body);font-size:.75rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--cs-ink-mute);font-style:normal;display:block;margin-block-start:14px}
+      /* Inline rigour table — definition rows */
+      .cs-rigour-rows{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:0;border-block-start:1px solid var(--cs-rule)}
+      .cs-rigour-rows li{display:grid;grid-template-columns:1fr;gap:6px;padding:16px 0;border-block-end:1px solid var(--cs-rule)}
+      @media (min-width:680px){.cs-rigour-rows li{grid-template-columns:200px minmax(0,1fr);gap:24px;align-items:start}}
+      .cs-rigour-rows .cs-rigour-signal{font-family:var(--type-body);font-size:.625rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--cs-accent);margin:0;padding-block-start:2px}
+      .cs-rigour-rows .cs-rigour-value{font-family:var(--type-body);font-size:.9375rem;line-height:1.5;color:var(--cs-ink);margin:0;font-weight:500}
+      /* Inline validation list */
+      .cs-validation-inline{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:14px}
+      .cs-validation-inline li{position:relative;padding:18px 22px 18px 56px;background:var(--cs-paper-soft);border-inline-start:3px solid var(--cs-accent);font-family:var(--type-body);font-size:.9375rem;line-height:1.55;color:var(--cs-ink)}
+      .cs-validation-inline li::before{content:"";position:absolute;inset-inline-start:18px;top:18px;width:22px;height:22px;border-radius:50%;background:var(--cs-accent);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E");background-size:13px;background-repeat:no-repeat;background-position:center}
+      /* === META BAR — clean strip under hero === */
+      .cs-meta-bar{padding-block:clamp(24px,3vw,36px);background:var(--cs-paper);border-block-end:1px solid var(--cs-rule)}
+      .cs-meta-bar ul{display:flex;flex-wrap:wrap;gap:14px 36px;margin:0;padding:0;list-style:none}
+      .cs-meta-bar li{font-family:var(--type-body);font-size:.875rem;color:var(--cs-ink);display:inline-flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+      .cs-meta-bar li strong{font-family:var(--type-body);font-size:.625rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--cs-ink-mute)}
+
+      /* === OUTCOMES — FT pink huge numbers row === */
+      .cs-outcomes{padding-block:clamp(48px,6vw,80px);background:var(--cs-paper)}
+      .cs-outcomes dl{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:0;margin:0;padding:0}
+      .cs-outcome{display:flex;flex-direction:column;gap:10px;padding:8px 28px 8px 0;margin:0;border-inline-end:1px solid var(--cs-rule);position:relative}
+      .cs-outcome:last-child{border-inline-end:0}
+      .cs-outcome dt{font-family:var(--type-display);font-size:clamp(2.25rem,4.5vw,3.5rem);line-height:1;font-weight:600;letter-spacing:-.022em;color:var(--cs-accent);margin:0;order:1;text-wrap:balance}
+      .cs-outcome dd{font-family:var(--type-body);font-size:.875rem;line-height:1.45;color:var(--cs-ink-soft);margin:0;order:2;max-width:28ch;padding-block-start:6px;border-block-start:1px solid var(--cs-rule)}
+
+      /* === QUOTE STAGE — italic serif, navy, FT-pink left rule === */
+      .cs-quote{padding-block:clamp(56px,7vw,96px);background:var(--cs-paper)}
+      .cs-quote blockquote{margin:0;padding:0 0 0 clamp(20px,3vw,40px);max-width:920px;margin-inline:auto;border-inline-start:3px solid var(--cs-accent)}
+      .cs-quote blockquote p{font-family:var(--type-display);font-size:clamp(1.375rem,2.6vw,2.25rem);line-height:1.25;color:var(--cs-ink);margin:0 0 20px;font-style:italic;letter-spacing:-.008em;font-weight:400;max-width:none;text-wrap:balance}
+      .cs-quote blockquote cite{font-family:var(--type-body);font-size:.75rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--cs-ink-mute);font-style:normal}
+
+      /* === STORY STAGES — FT 2-column with left rail for stage no === */
+      .cs-story{padding-block:clamp(48px,6vw,80px);background:var(--cs-paper)}
+      .cs-story:nth-of-type(even){background:var(--cs-paper-soft)}
+      .cs-story p{font-size:clamp(1.0625rem,1.2vw,1.1875rem);line-height:1.7;color:var(--cs-ink);max-width:680px;margin:0 0 18px}
+      .cs-story .cs-stage-row{display:grid;grid-template-columns:1fr;gap:16px}
+      @media (min-width:920px){.cs-story .cs-stage-row{grid-template-columns:200px minmax(0,1fr);gap:64px;align-items:start}}
+      .cs-story .cs-stage-head{align-self:start;display:flex;flex-direction:column;gap:8px}
+      .cs-story .cs-stage-no{margin:0 0 6px;color:var(--cs-accent)}
+      .cs-story h2{font-size:clamp(1.625rem,2.4vw,2.125rem);margin:0 0 20px;color:var(--cs-ink)}
+
+      /* === RIGOUR STAGE — clean rows with FT-pink keys === */
+      .cs-rigour{padding-block:clamp(48px,6vw,80px);background:var(--cs-paper)}
+      .cs-rigour-grid{display:grid;grid-template-columns:1fr;gap:0;margin:24px 0 0;padding:0;list-style:none;border-block-start:1px solid var(--cs-rule)}
+      @media (min-width:760px){.cs-rigour-grid{grid-template-columns:repeat(2,1fr);column-gap:48px}}
+      .cs-rigour-card{display:flex;flex-direction:column;gap:6px;padding:22px 0;border-block-end:1px solid var(--cs-rule);background:none;border-inline-start:0;border-inline-end:0;border-block-start:0}
+      .cs-rigour-card:hover{transform:none}
+      .cs-rigour-card-signal{font-family:var(--type-body);font-size:.625rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--cs-accent);margin:0}
+      .cs-rigour-card-value{font-family:var(--type-body);font-size:1rem;line-height:1.45;color:var(--cs-ink);margin:0;font-weight:500}
+
+      /* === VALIDATION — light cards on cream, check glyph in FT pink === */
+      .cs-validation{padding-block:clamp(48px,6vw,80px);background:var(--cs-paper-soft)}
+      .cs-validation ul{list-style:none;margin:24px 0 0;padding:0;display:grid;grid-template-columns:1fr;gap:14px}
+      @media (min-width:760px){.cs-validation ul{grid-template-columns:1fr 1fr;gap:18px}}
+      .cs-validation li{font-family:var(--type-body);font-size:1rem;line-height:1.55;color:var(--cs-ink);padding:22px 24px 22px 60px;background:var(--cs-card);border:1px solid var(--cs-rule);position:relative}
+      .cs-validation li::before{content:"";position:absolute;inset-inline-start:22px;top:24px;width:22px;height:22px;border-radius:50%;background:var(--cs-accent);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E");background-size:13px;background-repeat:no-repeat;background-position:center}
+
+      /* === STANDARDS — clean pills === */
+      .cs-standards{padding-block:clamp(48px,6vw,80px);background:var(--cs-paper)}
+      .cs-standards-pills{display:flex;flex-wrap:wrap;gap:8px;margin:24px 0 0;padding:0;list-style:none}
+      .cs-standards-pills li{display:inline-flex;align-items:center;font-family:var(--type-body);font-size:.8125rem;font-weight:600;color:var(--cs-ink);background:var(--cs-card);border:1px solid var(--cs-rule);padding:10px 16px;letter-spacing:.02em}
+
+      /* === LINKS — full-width row list === */
+      .cs-links{padding-block:clamp(48px,6vw,80px);background:var(--cs-paper-soft)}
+      .cs-links-grid{margin:24px 0 0;padding:0;list-style:none;border-block-start:1px solid var(--cs-rule);display:flex;flex-direction:column}
+      .cs-links-grid li{margin:0;padding:0;border-block-end:1px solid var(--cs-rule)}
+      .cs-links-grid a{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:20px 4px;font-family:var(--type-body);font-size:1.0625rem;font-weight:500;color:var(--cs-ink);text-decoration:none;transition:color .2s ease,padding-inline-start .2s ease;line-height:1.4}
+      .cs-links-grid a:hover{color:var(--cs-accent);padding-inline-start:8px}
+      .cs-links-grid a::after{content:"→";font-family:var(--type-body);font-weight:700;color:var(--cs-ink-mute);transition:transform .2s ease,color .2s ease}
+      .cs-links-grid a:hover::after{transform:translateX(4px);color:var(--cs-accent)}
+
+      /* === CTA CLOSER — paper, dark navy button === */
+      .cs-cta{padding-block:clamp(80px,10vw,140px);background:var(--cs-paper);text-align:center;border-block-start:1px solid var(--cs-rule)}
+      .cs-cta .cs-stage-row{display:flex;flex-direction:column;align-items:center;max-width:760px}
+      .cs-cta .cs-stage-no{color:var(--cs-accent)}
+      .cs-cta h2{font-size:clamp(1.875rem,3.5vw,2.75rem);color:var(--cs-ink);margin:0 0 20px;max-width:680px;text-wrap:balance}
+      .cs-cta p{color:var(--cs-ink-soft);max-width:560px;margin:0 0 32px;font-size:clamp(1rem,1.3vw,1.125rem);line-height:1.55}
+      /* CTA — solid ink button with paper text + visible border. Hover
+         inverts to paper bg + ink text + ink border so the click target
+         stays high-contrast in both states (21:1 either way). */
+      .cs-cta-btn{display:inline-flex;align-items:center;gap:12px;padding:18px 32px;font-family:var(--type-body);font-size:.875rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--cs-paper);background:var(--cs-ink);border:2px solid var(--cs-ink);text-decoration:none;cursor:pointer;transition:transform .2s ease,background .2s ease,color .2s ease;min-height:48px;line-height:1.2}
+      .cs-cta-btn:hover{background:var(--cs-paper);color:var(--cs-ink);transform:translateY(-1px)}
+      .cs-cta-btn:focus-visible{outline:3px solid var(--cs-ink);outline-offset:3px}
+      .cs-cta-btn::after{content:"→";font-weight:700;transition:transform .2s ease}
+      .cs-cta-btn:hover::after{transform:translateX(3px)}
+
+      /* === MORE CASE STUDIES — FT-style horizontal cards === */
+      .cs-more{padding-block:clamp(56px,7vw,96px);background:var(--cs-paper)}
+      .cs-more h2{font-size:clamp(1.5rem,2.4vw,2.125rem);margin:0 0 32px}
+      .cs-more-grid{display:grid;grid-template-columns:1fr;gap:20px;margin:0;padding:0;list-style:none}
+      @media (min-width:760px){.cs-more-grid{grid-template-columns:repeat(2,1fr);gap:24px}}
+      @media (min-width:1080px){.cs-more-grid{grid-template-columns:repeat(4,1fr)}}
+      .cs-more-card{position:relative;display:flex;flex-direction:column;background:var(--cs-card);color:var(--cs-ink);overflow:hidden;border:1px solid var(--cs-rule);min-height:0;aspect-ratio:auto;transition:border-color .2s ease,transform .2s ease,box-shadow .2s ease}
+      .cs-more-card::after{content:none}
+      .cs-more-card:hover{border-color:var(--cs-ink);transform:translateY(-2px);box-shadow:0 16px 36px -24px color-mix(in srgb,var(--cs-ink) 50%,transparent)}
+      .cs-more-card-media{display:block;background:var(--cs-paper-soft);aspect-ratio:16/10;overflow:hidden;position:relative}
+      .cs-more-card-bg{display:block;width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+      .cs-more-card:hover .cs-more-card-bg{transform:scale(1.05)}
+      .cs-more-card-body{position:relative;z-index:2;margin-top:0;padding:20px 22px 22px;display:flex;flex-direction:column;gap:8px;background:var(--cs-card)}
+      .cs-more-card-kicker{font-family:var(--type-body);font-size:.625rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--cs-accent);opacity:1;margin:0}
+      .cs-more-card-title{font-family:var(--type-display);font-size:1.0625rem;line-height:1.25;font-weight:600;letter-spacing:-.012em;color:var(--cs-ink);margin:0;text-wrap:balance}
+      .cs-more-card-title a{color:inherit;text-decoration:none}
+      .cs-more-card-title a::after{content:"";position:absolute;inset:0;z-index:2}
+      .cs-more-card:has(a:focus-visible){outline:2px solid var(--cs-accent);outline-offset:3px}
+
+      /* === HUB HERO — same full-bleed FT pattern as per-study === */
+      .cs-hub-hero{position:relative;background:#000;color:#fff;padding:0;min-height:min(66svh,520px);display:grid;align-items:end;overflow:hidden;border:0}
+      .cs-hub-hero > .cs-stage-row{position:relative;z-index:2;display:block;padding:clamp(48px,7vw,80px) clamp(24px,5vw,56px);max-width:1100px;margin:0 auto;width:100%}
+
+      .cs-hub-metrics-bar{padding-block:clamp(28px,4vw,48px);background:var(--cs-paper);border-block-end:1px solid var(--cs-rule)}
+      .cs-hub-metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:0}
+      .cs-hub-metric{display:flex;flex-direction:column;gap:6px;padding:0 20px 0 0;margin:0;border-inline-end:1px solid var(--cs-rule)}
+      .cs-hub-metric:last-child{border-inline-end:0}
+      .cs-hub-metric dt{font-family:var(--type-body);font-size:.625rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--cs-ink-mute);margin:0;order:2}
+      .cs-hub-metric dd{font-family:var(--type-display);font-size:clamp(1.625rem,2.6vw,2.25rem);font-weight:600;letter-spacing:-.014em;color:var(--cs-accent);margin:0;line-height:1;order:1}
+
+      /* Filter — FT-style dropdown via <details> + radios. CSS-only. */
+      .cs-hub-filter{padding-block:clamp(20px,2vw,32px);background:var(--cs-paper)}
+      .cs-filter-bar{display:flex;flex-wrap:wrap;align-items:center;gap:14px;margin:0;padding:0;background:none;border:0;width:100%}
+      .cs-dropdown{position:relative;min-width:280px}
+      .cs-dropdown > summary{list-style:none;cursor:pointer;padding:14px 44px 14px 18px;border:1px solid var(--cs-rule);background:var(--cs-card);font-family:var(--type-body);font-size:.875rem;font-weight:500;color:var(--cs-ink);position:relative;display:flex;align-items:center;gap:6px;min-height:44px;transition:border-color .15s ease}
+      .cs-dropdown > summary::-webkit-details-marker{display:none}
+      .cs-dropdown > summary::after{content:"";position:absolute;inset-inline-end:18px;top:50%;width:8px;height:8px;border-inline-end:2px solid var(--cs-ink);border-block-end:2px solid var(--cs-ink);transform:translateY(-65%) rotate(45deg);transition:transform .2s ease}
+      .cs-dropdown[open] > summary::after{transform:translateY(-25%) rotate(-135deg)}
+      .cs-dropdown > summary:hover{border-color:var(--cs-ink)}
+      .cs-dropdown > summary:focus-visible{outline:2px solid var(--cs-ink);outline-offset:2px}
+      .cs-dd-prefix{color:var(--cs-ink-mute);font-weight:400}
+      /* Hide all dropdown-summary labels by default — the matching one
+         is revealed via :has(input:checked) below. */
+      .cs-dd-label{display:none}
+      .cs-dropdown:has(input[value=""]:checked) .cs-dd-label--all,
+      .cs-dropdown:has(input[value="payments"]:checked) .cs-dd-label--payments,
+      .cs-dropdown:has(input[value="infrastructure"]:checked) .cs-dd-label--infrastructure,
+      .cs-dropdown:has(input[value="banking-as-a-service"]:checked) .cs-dd-label--banking-as-a-service,
+      .cs-dropdown:has(input[value="post-quantum-cryptography"]:checked) .cs-dd-label--post-quantum-cryptography{display:inline;color:var(--cs-ink);font-weight:600}
+      /* The menu panel — absolutely positioned beneath summary */
+      .cs-dropdown-menu{position:absolute;inset-block-start:calc(100% + 4px);inset-inline-start:0;inset-inline-end:auto;min-width:100%;background:var(--cs-card);border:1px solid var(--cs-rule);z-index:20;display:flex;flex-direction:column;margin:0;padding:0;box-shadow:0 12px 28px -16px color-mix(in srgb,var(--cs-ink) 35%,transparent)}
+      .cs-dropdown-menu input[type="radio"]{position:absolute!important;left:-9999px;width:1px;height:1px;overflow:hidden;opacity:0}
+      .cs-dropdown-menu label{display:block;padding:12px 18px;cursor:pointer;font-family:var(--type-body);font-size:.875rem;color:var(--cs-ink);transition:background .12s ease,color .12s ease;min-height:44px;line-height:1.4}
+      .cs-dropdown-menu label:hover{background:var(--cs-paper-soft)}
+      .cs-dropdown-menu input[type="radio"]:checked + label{background:var(--cs-ink);color:var(--cs-paper);font-weight:600}
+      .cs-dropdown-menu input[type="radio"]:focus-visible + label{outline:2px solid var(--cs-ink);outline-offset:-2px}
+      .visually-hidden{position:absolute!important;left:-9999px;width:1px;height:1px;overflow:hidden}
+      .cs-filter-meta{margin-inline-start:auto;font-family:var(--type-body);font-size:.625rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--cs-ink-mute);padding-block:14px}
+      /* CSS-only filter — when the matching radio is :checked, hide the
+         cards whose data-category mismatches. The radios live inside
+         .cs-hub-filter; :has() lets us scope sibling-tree changes. */
+      .cs-hub-filter:has(input[name="csfilter"][value="payments"]:checked) ~ .cs-grid-stage .cs-grid > article:not([data-category="payments"]),
+      .cs-hub-filter:has(input[name="csfilter"][value="post-quantum-cryptography"]:checked) ~ .cs-grid-stage .cs-grid > article:not([data-category="post-quantum-cryptography"]),
+      .cs-hub-filter:has(input[name="csfilter"][value="infrastructure"]:checked) ~ .cs-grid-stage .cs-grid > article:not([data-category="infrastructure"]),
+      .cs-hub-filter:has(input[name="csfilter"][value="banking-as-a-service"]:checked) ~ .cs-grid-stage .cs-grid > article:not([data-category="banking-as-a-service"]){display:none}
+
+      /* === FT-style hub card grid — image-left + dark-panel-right.
+         First card spans 2 columns (FT featured-card pattern). === */
+      .cs-grid{display:grid;grid-template-columns:1fr;gap:24px;margin:24px 0 0;padding:0;list-style:none}
+      @media (min-width:920px){.cs-grid{grid-template-columns:repeat(2,1fr);gap:28px}}
+      .cs-grid > article{position:relative;display:grid;grid-template-columns:1fr;background:var(--cs-ink);color:var(--cs-paper);overflow:hidden;border:1px solid var(--cs-ink);transition:transform .2s ease,box-shadow .2s ease;min-height:0;min-height:300px}
+      .cs-grid > article:hover{transform:translateY(-3px);box-shadow:0 22px 40px -22px color-mix(in srgb,var(--cs-ink) 50%,transparent)}
+      @media (min-width:560px){.cs-grid > article{grid-template-columns:minmax(0,1fr) minmax(0,1.2fr)}}
+      @media (min-width:920px){
+        /* Featured first card spans both columns + bigger photo. */
+        .cs-grid > article:first-child{grid-column:1 / -1;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);min-height:380px}
+        .cs-grid > article:first-child .cs-card-title{font-size:clamp(1.5rem,2.2vw,1.875rem)}
+        .cs-grid > article:first-child .cs-card-body{padding:40px 44px 36px}
+      }
+      .cs-card-media{display:block;background:var(--cs-ink);overflow:hidden;position:relative;min-height:220px}
+      .cs-card-media img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .4s ease}
+      .cs-grid > article:hover .cs-card-media img{transform:scale(1.04)}
+      .cs-card-kicker{position:static;top:auto;inset-inline-start:auto;font-family:var(--type-body);font-size:.625rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.78);background:none;padding:0;border:0;margin:0}
+      .cs-card-body{padding:28px 32px 30px;display:flex;flex-direction:column;flex:1;gap:14px;min-width:0;background:var(--cs-ink)}
+      .cs-card-title,.cs-card-body h2{font-family:var(--type-display);font-size:clamp(1.25rem,1.7vw,1.5rem);line-height:1.18;font-weight:600;letter-spacing:-.012em;color:#fff;margin:0;text-wrap:balance;hyphens:none;word-break:normal;overflow-wrap:break-word}
+      .cs-card-body h2 a{color:#fff;text-decoration:none}
+      .cs-card-body h2 a::after{content:"";position:absolute;inset:0;z-index:1}
+      .cs-card-body h2 a:focus-visible{outline:none}
+      .cs-grid > article:has(h2 a:focus-visible){outline:3px solid var(--cs-accent);outline-offset:3px}
+      .cs-card-excerpt{font-family:var(--type-body);font-size:.9375rem;line-height:1.55;color:rgba(255,255,255,.84);margin:0;flex:1;hyphens:none}
+      .cs-card-meta{display:none}
+
+      /* === Scroll-driven stage reveals — gentle === */
+      @supports (animation-timeline:view()){
+        .cs-stage[data-stage]:not(.cs-hero):not(.cs-hub-hero){animation:cs-stage-reveal linear both;animation-timeline:view();animation-range:entry 0% cover 18%}
+      }
+      @keyframes cs-stage-reveal{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+      @media (prefers-reduced-motion:reduce){
+        .cs-stage[data-stage]{animation:none!important;opacity:1!important;transform:none!important}
+        .cs-grid > article,.cs-card-media img,.cs-more-card,.cs-cta-btn,.cs-more-card-bg{transition:none!important}
+      }
+      /* AAA contrast — bump muted tones when prefers-contrast:more */
+      @media (prefers-contrast:more){
+        .case-study-wrap{--cs-ink-mute:#1f1f28;--cs-ink-soft:#0b0c12}
+      }
+      /* Beat the site-wide `main.content a{color:var(--link-color)}` rule
+         (specificity 0,1,1) which would otherwise paint every link inside
+         the wrap with the global theme accent — breaking the local AAA
+         contrast we just set. We're already inside <main class="content">
+         so the high-specificity prefix wins everywhere.
+
+         Pa11y AAA caught this as a 2.47:1 contrast failure on .cs-cta-btn.
+         These overrides land the right colour for every link state, then
+         the inherit baseline keeps body links matching their container. */
+      main.content .case-study-wrap a{color:inherit}
+      main.content .case-study-wrap .cs-cta-btn{color:var(--cs-paper)}
+      main.content .case-study-wrap .cs-cta-btn:hover{color:var(--cs-ink)}
+      main.content .case-study-wrap .cs-breadcrumb a{color:var(--cs-ink-mute)}
+      main.content .case-study-wrap .cs-breadcrumb a:hover{color:var(--cs-accent)}
+      main.content .case-study-wrap .cs-links-grid a{color:var(--cs-ink)}
+      main.content .case-study-wrap .cs-links-grid a:hover{color:var(--cs-accent)}
+      /* Dark editorial cards — fixed navy panel that does NOT flip in
+         dark mode. Without these high-specificity rules the cards
+         inherit cs-ink/cs-paper which swap, leaving the excerpts
+         rendering near-invisible. */
+      main.content .case-study-wrap .cs-grid > article{background:var(--cs-dark);color:var(--cs-dark-fg)}
+      main.content .case-study-wrap .cs-grid .cs-card-body{background:var(--cs-dark)}
+      main.content .case-study-wrap .cs-grid .cs-card-kicker{color:var(--cs-dark-fg-mute)}
+      main.content .case-study-wrap .cs-grid .cs-card-title,
+      main.content .case-study-wrap .cs-grid .cs-card-body h2{color:var(--cs-dark-fg)}
+      main.content .case-study-wrap .cs-grid .cs-card-title a,
+      main.content .case-study-wrap .cs-grid .cs-card-body h2 a{color:var(--cs-dark-fg)}
+      main.content .case-study-wrap .cs-grid .cs-card-excerpt{color:var(--cs-dark-fg-soft)}
+      main.content .case-study-wrap .cs-more-card-title a{color:var(--cs-ink)}
+      /* Hero — over the dark photo overlay, every text + link is paper.
+         Use .cs-hero a.cs-hero-cta (specificity 0,0,4,2) so it beats
+         the .cs-hero a (0,0,3,2) rule for the CTA's inverted palette. */
+      main.content .case-study-wrap .cs-hero h1{color:#fff}
+      main.content .case-study-wrap .cs-hero a{color:#fff}
+      main.content .case-study-wrap .cs-hero .cs-hero-cta,
+      main.content .case-study-wrap .cs-hero a.cs-hero-cta{color:#000;background:#fff;border-color:#fff}
+      main.content .case-study-wrap .cs-hero .cs-hero-cta:hover,
+      main.content .case-study-wrap .cs-hero a.cs-hero-cta:hover{color:#fff;background:transparent;border-color:#fff}
       /* Article body type-scale: tighten in-body H2/H3/P/UL/OL only.
          h1 stays in .ap-hero at its current scale. */
       main.content :is(h2){font-size:clamp(1.625rem,2.6vw,2rem);line-height:1.2;letter-spacing:-.01em;margin:calc(var(--leading-article) * 2em) 0 .5em;max-width:var(--measure-article)}
@@ -662,15 +1051,106 @@
         .ap-nav:has(.ap-toggle:checked) .ap-menu{display:flex;flex-direction:column;position:absolute;top:var(--nav-h);left:0;right:0;background:var(--bg);padding:18px 22px;gap:14px;border-bottom:1px solid var(--border);justify-content:flex-start;text-align:center;z-index:99}
       }
 
-      /* ---------- Hero ---------- */
-      .ap-hero{padding:84px var(--pad-x) 64px;text-align:center;background:var(--card);position:relative;overflow:hidden}
-      .ap-hero h1{font-size:clamp(40px,5.5vw,64px);line-height:1.07;margin:0 auto 12px;max-width:900px}
+      /* ---------- Hero ----------
+         Apple-HIG aligned: radical breathing room (120–160px vertical on
+         desktop, scales fluidly), tight optical centring, optional portrait
+         + eyebrow + CTA row so non-home pages can match the home-hero
+         density without forking the shell. ---------- */
+      .ap-hero{padding:clamp(72px,12vw,160px) var(--pad-x) clamp(56px,8vw,112px);text-align:center;background:var(--card);position:relative;overflow:hidden}
+      .ap-hero h1{font-size:clamp(40px,5.5vw,64px);line-height:1.07;margin:0 auto 12px;max-width:900px;letter-spacing:-.02em}
       .ap-hero .sub{font-size:clamp(20px,2.3vw,28px);font-weight:400;color:var(--ink-mute);margin:0 auto 28px;max-width:760px;line-height:1.25}
-      .ap-hero .cta{display:inline-flex;gap:20px;flex-wrap:wrap;justify-content:center}
+      .ap-hero .cta{display:inline-flex;gap:20px;flex-wrap:wrap;justify-content:center;margin-top:8px}
       .ap-hero .portrait{width:120px;height:120px;border-radius:50%;margin:0 auto 24px;object-fit:cover;box-shadow:0 10px 30px -10px rgba(0,0,0,.25)}
       .ap-hero figure.hero-figure{margin:48px auto 0;max-width:var(--max-wide);border-radius:var(--radius);overflow:hidden}
       .ap-hero figure.hero-figure img{width:100%;height:auto;border-radius:var(--radius);box-shadow:0 30px 60px -20px rgba(0,0,0,.18)}
       .ap-hero figure.hero-figure[data-empty=""]{display:none}
+      /* Hero with optional portrait + eyebrow used by About, Contact,
+         Playlists, Topics, Thanks etc. so each landing inherits the
+         centred Apple-style hero rhythm. */
+      .ap-hero .ap-hero-portrait{display:block;width:96px;height:96px;margin:0 auto 28px;border-radius:50%;object-fit:cover;box-shadow:0 12px 32px -12px rgba(0,0,0,.25)}
+      .ap-hero .ap-hero-eyebrow{display:inline-block;font-family:var(--type-body);font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--eyebrow,var(--accent));margin:0 0 18px}
+      .ap-hero .ap-hero-deck{font-size:clamp(18px,1.8vw,21px);line-height:1.5;color:var(--ink-mute);max-width:680px;margin:0 auto 36px}
+
+      /* ---------- Proof rail ----------
+         Reused across About, Projects, Topics. Mirrors the case-studies
+         hub metrics bar (cs-meta-strip) so visual rhythm matches across
+         the funnel. Pure CSS-grid auto-fit, no JS. ---------- */
+      .proof-rail{max-width:var(--max-wide);margin:0 auto;padding:48px var(--pad-x);display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:32px;border-block:1px solid var(--rule);text-align:center}
+      .proof-rail .kpi-cell{display:flex;flex-direction:column;gap:6px}
+      .proof-rail .kpi-cell-value{font-family:var(--type-display);font-size:clamp(28px,3vw,40px);font-weight:600;line-height:1.05;letter-spacing:-.02em;color:var(--ink-deep)}
+      .proof-rail .kpi-cell-label{font-family:var(--type-body);font-size:12.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-mute)}
+
+      /* ---------- Narrative section ----------
+         Paired text + visual block. Apple-style "problem → solution"
+         storytelling: full-width, alternating image side, generous
+         padding, captions optional. ---------- */
+      .narrative-section{padding:clamp(72px,10vw,128px) var(--pad-x);background:var(--bg)}
+      .narrative-section.alt{background:var(--card)}
+      .narrative-section .narrative-wrap{max-width:var(--max-wide);margin:0 auto;display:grid;grid-template-columns:1fr;gap:48px;align-items:center}
+      @media (min-width:64em){.narrative-section .narrative-wrap{grid-template-columns:1fr 1fr;gap:80px}.narrative-section.reverse .narrative-wrap>*:first-child{order:2}}
+      .narrative-section .narrative-eyebrow{font-family:var(--type-body);font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--eyebrow,var(--accent));margin:0 0 14px}
+      .narrative-section .narrative-head{font-family:var(--type-display);font-size:clamp(28px,3.4vw,42px);line-height:1.1;letter-spacing:-.02em;margin:0 0 18px;color:var(--ink-deep);max-width:18ch}
+      .narrative-section .narrative-body{font-size:clamp(16.5px,1.4vw,18px);line-height:1.55;color:var(--ink-soft);max-width:48ch;margin:0 0 24px}
+      .narrative-section .narrative-body p{margin:0 0 14px}
+      .narrative-section .narrative-body p:last-child{margin:0}
+      .narrative-section .narrative-visual{display:flex;justify-content:center}
+      .narrative-section .narrative-visual img{width:100%;height:auto;border-radius:var(--radius);box-shadow:0 24px 48px -16px rgba(0,0,0,.18)}
+
+      /* ---------- Story CTA (onward journey) ----------
+         3-card "where to next" rail used on Thanks, Link, Report,
+         and the foot of utility pages. Selective choices > exhaustive
+         menu (Apple HIG principle #5). ---------- */
+      .story-cta{max-width:var(--max-wide);margin:0 auto;padding:clamp(56px,8vw,96px) var(--pad-x)}
+      .story-cta .story-head{text-align:center;margin:0 auto 48px;max-width:640px}
+      .story-cta .story-eyebrow{font-family:var(--type-body);font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--eyebrow,var(--accent));margin:0 0 12px}
+      .story-cta .story-title{font-family:var(--type-display);font-size:clamp(24px,2.6vw,32px);line-height:1.15;letter-spacing:-.015em;margin:0;color:var(--ink-deep)}
+      .story-cta .story-grid{display:grid;gap:24px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+      .story-cta .story-card{display:flex;flex-direction:column;gap:10px;padding:32px 28px;background:var(--card);border:1px solid var(--rule);border-radius:var(--radius);text-decoration:none;color:var(--ink-deep);transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease}
+      .story-cta .story-card:hover{transform:translateY(-2px);border-color:var(--ink-mute);box-shadow:0 16px 32px -16px rgba(0,0,0,.12)}
+      .story-cta .story-card-eyebrow{font-family:var(--type-body);font-size:11.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-mute)}
+      .story-cta .story-card-title{font-family:var(--type-display);font-size:1.25rem;font-weight:600;line-height:1.25;letter-spacing:-.01em;margin:0;color:var(--ink-deep)}
+      .story-cta .story-card-body{font-size:14.5px;line-height:1.5;color:var(--ink-soft);margin:0;flex:1}
+      .story-cta .story-card-link{font-family:var(--type-body);font-size:12.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--accent,var(--link-color));margin-top:6px}
+      .story-cta .story-card:hover .story-card-link::after{margin-inline-start:8px}
+      .story-cta .story-card-link::after{content:" ›";transition:margin-inline-start .2s ease}
+
+      /* ---------- Scroll reveal opt-in ----------
+         Elements marked data-reveal start at 0 opacity + 12px translate
+         and fade in when the IntersectionObserver in main.js adds
+         .is-revealed. Reduced-motion users skip the animation. ---------- */
+      [data-reveal]{opacity:0;transform:translateY(12px);transition:opacity .6s ease,transform .6s ease;will-change:opacity,transform}
+      [data-reveal].is-revealed{opacity:1;transform:none}
+      @media (prefers-reduced-motion:reduce){[data-reveal]{opacity:1;transform:none;transition:none}}
+
+      /* ---------- Topics hub: pillar grouping + chip nav ---------- */
+      .topic-hub .topic-hub-head{margin-block-end:clamp(40px,5vw,72px)}
+      .topic-hub .topic-lede{max-width:640px;margin-inline:auto;font-size:clamp(17px,1.6vw,19px);line-height:1.5;color:var(--ink-mute)}
+      .topic-chips{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:28px auto 0;max-width:780px}
+      .topic-chip{display:inline-flex;align-items:center;min-height:36px;padding:8px 18px;border:1px solid var(--rule);border-radius:999px;font-family:var(--type-body);font-size:13px;font-weight:600;letter-spacing:.02em;color:var(--ink-deep);text-decoration:none;background:var(--paper);transition:background .15s,border-color .15s,color .15s}
+      .topic-chip:hover,.topic-chip:focus-visible{background:var(--card);border-color:var(--ink-mute);color:var(--ink-deep)}
+      .topic-proof{margin:clamp(28px,4vw,48px) auto;border-block:1px solid var(--rule)}
+      .topic-pillar{padding-block:clamp(48px,6vw,80px);scroll-margin-block-start:calc(var(--nav-h) + 16px)}
+      .topic-pillar + .topic-pillar{border-block-start:1px solid var(--rule)}
+      .topic-pillar-head{text-align:center;margin-block-end:clamp(28px,4vw,48px)}
+      .topic-pillar-head h2{font-family:var(--type-display);font-size:clamp(28px,3.2vw,40px);line-height:1.1;letter-spacing:-.02em;margin:6px 0 14px}
+      .topic-pillar-lede{max-width:580px;margin:0 auto;font-size:16px;line-height:1.5;color:var(--ink-mute)}
+
+      /* ---------- About page extras ----------
+         Brand rail label sits above the existing .brands flex row to give
+         it Apple-style context ("Trusted across") instead of a bare logo
+         strip. The identifiers <details> is a low-noise disclosure for the
+         dense credential block so the page stays scannable. ---------- */
+      .about-brand-rail{max-width:var(--max-wide);margin:0 auto;padding:48px var(--pad-x);border-block:1px solid var(--rule);text-align:center}
+      .about-brand-rail-label{font-family:var(--type-body);font-size:12.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-mute);margin:0 0 24px}
+      .about-brand-rail .brands{margin:0;padding:0;display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:32px}
+      details.about-identifiers{max-width:760px;margin:32px auto 64px;padding:0 var(--pad-x);font-size:14.5px;color:var(--ink-soft)}
+      details.about-identifiers>summary{cursor:pointer;font-family:var(--type-body);font-size:12.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-mute);padding:14px 0;border-block:1px solid var(--rule);list-style:none}
+      details.about-identifiers>summary::-webkit-details-marker{display:none}
+      details.about-identifiers>summary::after{content:" +";float:inline-end;font-weight:400}
+      details.about-identifiers[open]>summary::after{content:" −"}
+      details.about-identifiers .author-ids{display:grid;grid-template-columns:max-content 1fr;gap:6px 24px;margin:18px 0}
+      details.about-identifiers .author-ids dt{font-weight:600;color:var(--ink-deep)}
+      details.about-identifiers .author-ids dd{margin:0}
 
       /* ---------- Article furniture: tag badges, meta bar, ToC, anchor
          links, author bio. Injected by scripts/postbuild.py on every
@@ -1286,6 +1766,7 @@
             <li><a href="/about/index.html">About</a></li>
             <li><a href="/articles/index.html">Articles</a></li>
             <li><a href="/papers/index.html">Papers</a></li>
+            <li><a href="/case-studies/index.html">Case studies</a></li>
             <li><a href="/topics/index.html">Topics</a></li>
             <li><a href="/projects/index.html">Projects</a></li>
             <li><a href="/playlists/index.html">Playlists</a></li>

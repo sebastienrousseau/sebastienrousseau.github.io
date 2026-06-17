@@ -1,0 +1,46 @@
+title: "HSBC Hazine API'leri — ödemeler ve hizmet olarak bankacılık"
+banner_alt: "Londra finans merkezi silüeti — HSBC'nin Ticari ve Yatırım Bankası programı kapsamında sunulan hazine API platformunu simgeliyor"
+sector: "Tier-1 ticari banka · Kurumsal hazine · Düzenlenmiş ödemeler"
+role: "Kıdemli ürün ve teknoloji lideri"
+status: "Tier-1 küresel bir bankada üretimde"
+
+outcome_highlights:
+  - label: "Küresel banka, Ticari ve Yatırım Bankası"
+  - label: "Düzenlenmiş ödemeler çevresi"
+  - label: "Programlanabilir nakit, likidite ve ödeme şeritleri"
+  - label: "Kıdemli ürün ve teknoloji liderliği"
+
+pull_quote: >
+  "Bankanın düzenleyici çevresinde üretim seviyesinde ödeme, bakiye
+  ve likidite API'leri sunuldu — mimariden satıcı entegrasyonuna,
+  denetim kanıtından DORA ve SR 11-7'nin artık zorunlu kıldığı
+  operasyonel dayanıklılık kontrollerine kadar."
+
+problem: >
+  Kurumsal hazine ekipleri, Tier-1 bir bankanın içinde nakit yönetimi,
+  likidite ve ödeme şeritlerine programlanabilir erişim talep ediyor
+  — bankanın kendisinin üretmek zorunda olduğu düzenleyici kanıt
+  katmanından vazgeçmeden.
+
+what_i_built: >
+  HSBC'nin Ticari ve Yatırım Bankası içindeki hazine API'leri ve
+  hizmet olarak bankacılık programının ürün ve teknoloji iş
+  kollarını yönettim; bankanın düzenleyici çevresinde üretim
+  seviyesinde ödeme, bakiye ve likidite API'leri sundum. Mimari,
+  satıcı entegrasyonu, denetim kanıtı ve DORA ile SR 11-7'nin artık
+  zorunlu kıldığı operasyonel dayanıklılık kontrolleri boyunca
+  çalıştım.
+
+rigour:
+  - metric: "Rol kapsamı"
+    value: "CIB içinde kıdemli ürün ve teknoloji liderliği"
+  - metric: "Düzenleyici çevre"
+    value: "FCA / PRA tarafından düzenlenen ödeme platformu"
+  - metric: "Entegrasyon yüzeyi"
+    value: "Hazine API'leri, bakiye ve nakit yönetimi, BaaS dağıtımı"
+  - metric: "Hedef kitle"
+    value: "Çok uluslu şirketlerin ve Tier-2 bankaların hazine yöneticileri"
+
+validation:
+  - "HSBC Ticari ve Yatırım Bankası'nda kamuya açık rol — LinkedIn üzerinden doğrulanabilir"
+  - "Program kapsamı Hakkımda / Deneyim bölümünde belirtildi"

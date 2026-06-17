@@ -1,0 +1,78 @@
+slug: kyberlib
+title: "KyberLib — 以 Rust 打造的生產級 ML-KEM"
+banner: "https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp"
+banner_alt: "抗量子密碼金鑰交換——象徵銀行業 FIPS 203 ML-KEM 的遷移之路"
+category: "Post-quantum cryptography"
+category_slug: "post-quantum-cryptography"
+kicker: "FIPS 203 · ML-KEM · BANKING MIGRATION"
+sector: "開源軟體・銀行業・標準制定"
+role: "作者及維護者"
+period: "2023 – present"
+status: "已上線生產環境，持續維護中"
+
+# Headline numbers shown in the per-study "by the numbers" strip.
+# Every value is verifiable from links below (NIST, Qtonic Lab, F6S).
+outcome_highlights:
+  - value: "FIPS 203"
+    label: "對齊 NIST 發行軌道"
+  - value: "Top 44 %"
+    label: "於約 182 套 PQC 函式庫中（Qtonic Lab 評估）"
+  - value: "no_std"
+    label: "可內嵌於 HSM 及安全 enclave"
+  - value: "1 adopter"
+    label: "QGram（Quantum2pi）抗量子訊息應用程式"
+
+pull_quote: >
+  「經 Qtonic Quantum Lab——獨立的抗量子密碼登錄處——評估，
+  並由 QGram（Quantum2pi）端對端加密訊息應用程式採用。兩
+  項驗證均可於本人之外獨立查證。」
+
+problem: >
+  銀行業正面臨 2026 年 11 月 14 日 SWIFT 結構化地址切換期
+  限，以及更長的 NIST 抗量子遷移窗口。現有 PQC 實作多以
+  政策論文、實驗室程式或專有 HSM 黑盒形式發布——三者均
+  不便支付架構師閱讀、測試或簽章。
+
+what_i_built: >
+  KyberLib 將 FIPS 203 ML-KEM（CRYSTALS-Kyber）轉化為可
+  檢視的 Rust 實作。內建傳統加抗量子的混合握手、可供 HSM
+  內嵌的 no_std 編譯模式、加密敏捷性抽象邊界，以及董事會在
+  推動 PQC 遷移時、規避不透明廠商風險所需之 DORA 第 5 條
+  治理證據。
+
+rigour:
+  - metric: "密碼學標準"
+    value: "FIPS 203（ML-KEM，前稱 CRYSTALS-Kyber）"
+  - metric: "混合握手支援"
+    value: "傳統 TLS 加 ML-KEM-768 X25519MLKEM768 模式"
+  - metric: "編譯"
+    value: "no_std——可內嵌於 HSM、安全 enclave 及嵌入式裝置"
+  - metric: "加密敏捷性"
+    value: "抽象邊界使演算法替換不影響 API"
+  - metric: "授權條款"
+    value: "Apache-2.0 / MIT"
+
+validation:
+  - "獲 EPAA《抗量子支付》白皮書引用（2025 年 9 月）"
+  - "獲選為 2026-06-12 專文題材：《KyberLib 與抗量子銀行業遷移》"
+  - "對齊 NIST FIPS 203 / 204 / 205 發行軌道"
+  - "經 Qtonic Quantum Lab 評估——獨立的抗量子密碼評估登錄處，已評估約 182 套 PQC 函式庫（前 44%，廠商不得付費收錄）"
+  - "由 QGram（Quantum2pi）採用——一款使用 KyberLib 進行訊息加密的抗量子端對端加密 P2P 訊息應用程式（可於 f6s.com/software/qgram 查證）"
+
+standards:
+  - "FIPS 203 (ML-KEM)"
+  - "NIST SP 1800-38"
+  - "DORA Article 5"
+
+links:
+  repo: "https://github.com/sebastienrousseau/kyberlib"
+  crates: "https://crates.io/crates/kyberlib"
+  docs: "https://docs.rs/kyberlib"
+  qtonic_evaluation: "https://qtonicquantum.com/lab/solutions/kyberlib"
+  qgram_adopter: "https://www.f6s.com/software/qgram"
+
+related_articles:
+  - "2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026"
+  - "2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats"
+
+signed: true

@@ -1,0 +1,48 @@
+title: "pain001 — ISO 20022 결제 파일 자동화"
+banner_alt: "황혼의 도시 항공 전경 — 글로벌 청산 네트워크 전반에 걸친 ISO 20022 기반 구조화 결제 파일 자동화를 상징"
+sector: "오픈소스 · 기업 트레저리 · ISO 20022"
+role: "저자 및 메인테이너"
+status: "프로덕션, 적극적으로 유지 관리 중"
+
+outcome_highlights:
+  - value: "pain.001"
+    label: "Customer Credit Transfer Initiation"
+  - value: "XSD-validated"
+    label: "모든 메시지에 대한 사전 검증"
+  - value: "IBAN + BIC + LEI"
+    label: "ISO 7064 Modulo 97-10 체크섬"
+  - value: "Apache-2.0 / MIT"
+    label: "자유롭게 사용, 포크, 감사 가능"
+
+pull_quote: >
+  "EPAA 양자 안전 결제 백서에 인용됨 (2025년 9월). 오픈소스로 첫날부터
+  감사 가능합니다 — ERP와 청산 네트워크 사이에 독점 변환기가 끼어들지
+  않습니다."
+
+problem: >
+  글로벌 MT → MX 마이그레이션은 모든 은행과 기업 트레저리가 구조화된
+  pain.001 메시지를 생성하도록 강제합니다. 대부분의 팀은 취약한 XML을
+  수작업으로 생성하거나 불투명한 독점 변환기를 구매합니다. 두 경로
+  모두 결제 오류를 청산 네트워크로 흘려보내며 감사 추적을 남기지
+  않습니다.
+
+what_i_built: >
+  CSV / SQLite / Parquet에서 검증된 ISO 20022 pain.001 (Customer Credit
+  Transfer Initiation) 메시지를 생성하는 오픈소스 Python 라이브러리입니다.
+  사전 XSD 검증, IBAN / BIC 체크섬, PII 마스킹, 그리고 완전한 XSD 스키마
+  준수 — 모두 기존 ERP 및 트레저리 파이프라인에 통합되는 Python
+  워크플로우 내부에서 제공됩니다.
+
+rigour:
+  - metric: "지원되는 ISO 20022 메시지"
+    value: "pain.001 (Customer Credit Transfer Initiation)"
+  - metric: "스키마 준수"
+    value: "모든 메시지에 대한 공식 XSD 검증 사전 수행"
+  - metric: "제공되는 검증기"
+    value: "IBAN 검사 숫자 + BIC + LEI 체크섬 (ISO 7064 Modulo 97-10)"
+  - metric: "라이선스"
+    value: "Apache-2.0 / MIT — 자유롭게 사용, 포크, 감사 가능"
+
+validation:
+  - "EPAA 양자 안전 결제 백서에 인용됨 (2025년 9월)"
+  - "2023년 9월 이후 sebastienrousseau.com에 게재된 기사에 소개됨"

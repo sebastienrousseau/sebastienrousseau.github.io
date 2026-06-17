@@ -100,19 +100,117 @@ site_software: "Static Site Generator, Rust"
 
 ---
 
-![Black and White Portrait of Sebastien Rousseau](https://cloudcdn.pro/stocks/images/sebastien-rousseau.png).class=\"about-portrait rounded-circle\"
+<section class="proof-rail" aria-label="Track record at a glance" data-reveal>
+  <div class="kpi-cell">
+    <span class="kpi-cell-value">20</span>
+    <span class="kpi-cell-label">Years in payments &amp; banking tech</span>
+  </div>
+  <div class="kpi-cell">
+    <span class="kpi-cell-value">73</span>
+    <span class="kpi-cell-label">Sigstore-signed research articles</span>
+  </div>
+  <div class="kpi-cell">
+    <span class="kpi-cell-value">168k</span>
+    <span class="kpi-cell-label">Open-source downloads (PyPI · crates.io)</span>
+  </div>
+  <div class="kpi-cell">
+    <span class="kpi-cell-value">FIPS 203</span>
+    <span class="kpi-cell-label">NIST track · ML-KEM implementation</span>
+  </div>
+</section>
 
-## Biography
+<section class="narrative-section" aria-labelledby="about-work" data-reveal>
+  <div class="narrative-wrap">
+    <div>
+      <p class="narrative-eyebrow">The work</p>
+      <h2 id="about-work" class="narrative-head">Payments that move trillions, infrastructure that has to be right.</h2>
+      <div class="narrative-body">
+        <p>Senior payments leader at HSBC Commercial &amp; Investment Bank, working on Treasury APIs, Banking-as-a-Service, and the ISO 20022 wholesale rails that settle correspondent payments at scale.</p>
+        <p>Twenty years across Tier-1 banks (HSBC, PayPal, Barclays) and consumer technology (Shazam, AKQA, Virgin) — the same product-engineering discipline applied to retail, wholesale and now post-quantum.</p>
+      </div>
+      <a class="pill" href="/case-studies/index.html">See the case studies ›</a>
+    </div>
+    <figure class="narrative-visual">
+      <img src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" alt="Portrait of Sebastien Rousseau" width="480" height="480" loading="eager" fetchpriority="high" decoding="async" />
+    </figure>
+  </div>
+</section>
 
-Sebastien Rousseau is a Senior Technical and Business Leader with over 20 years of experience in payments technology and the future of digital finance. He is passionate about crafting the next generation of banking and digital payment products through the strategic integration of Artificial Intelligence (AI), Post-Quantum Cryptography (PQC), and Blockchain Technology.
+<section class="narrative-section alt reverse" aria-labelledby="about-research" data-reveal>
+  <div class="narrative-wrap">
+    <div>
+      <p class="narrative-eyebrow">The research</p>
+      <h2 id="about-research" class="narrative-head">Banking research, signed and dated. Every article verifiable.</h2>
+      <div class="narrative-body">
+        <p>Applied AI, ISO 20022, post-quantum cryptography. Every piece written for senior architects and CTOs who need to make architectural calls — not press releases.</p>
+        <p>Cited in the EPAA <em>Quantum-Safe Payments</em> white paper (Sept 2025). Editor of <em>Banking On Quantum</em> and <em>Banking On AI</em>. Member of the EPAA Quantum-Safe Cryptography Working Group.</p>
+      </div>
+      <a class="pill" href="/articles/index.html">Read the research ›</a>
+    </div>
+    <figure class="narrative-visual">
+      <img src="https://cloudcdn.pro/stocks/images/marko-blazevic-X3a-9JaeUXc.webp" alt="Detail of a quantum hardware enclosure — symbolising post-quantum cryptography in banking" width="640" height="480" loading="lazy" decoding="async" />
+    </figure>
+  </div>
+</section>
 
-As a Senior Product Manager at HSBC, Sebastien has successfully led the development and launch of several innovative products and services. These include the HSBC Treasury APIs and the HSBC Banking-as-a-Service (BaaS) offering. These corporate global solutions aim to provide a seamless digital experience to HSBC’s customers.
+<section class="narrative-section" aria-labelledby="about-output" data-reveal>
+  <div class="narrative-wrap">
+    <div>
+      <p class="narrative-eyebrow">The output</p>
+      <h2 id="about-output" class="narrative-head">Open source the standards bodies and lab evaluators can actually read.</h2>
+      <div class="narrative-body">
+        <p><strong>KyberLib</strong> — production-grade ML-KEM in Rust, evaluated by Qtonic Quantum Lab, adopted by QGram.</p>
+        <p><strong>pain001</strong> — ISO 20022 payment-file automation. <strong>BankStatementParser</strong> — unified transaction intelligence. <strong>CloudCDN</strong> — AI-native edge blueprint.</p>
+      </div>
+      <a class="pill ghost" href="/projects/index.html">See all open source ›</a>
+    </div>
+    <figure class="narrative-visual">
+      <img src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg" alt="Sebastien Rousseau logo mark" width="320" height="320" loading="lazy" decoding="async" />
+    </figure>
+  </div>
+</section>
 
-Before joining HSBC, Sebastien played a key role in designing and delivering operational improvements on a number of complex mobile projects. He worked with Barclays Bank PLC, Shazam Entertainment Limited, and PayPal Inc. He started his career at AKQA, London, where he led the mobile technology division. He supported key global client accounts including Nike, RBS, MTV, GAP, Nokia, and Target, successfully driving innovative mobile projects and digital experiences.
+<section class="about-brand-rail" aria-label="Brands Sebastien has worked with" data-reveal>
+  <p class="about-brand-rail-label">Trusted across</p>
+  <div class="brands">
+    <img alt="HSBC logo" class="brand-logo" decoding="async" height="32" loading="lazy" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/hsbc.webp" width="120" />
+    <img alt="PayPal logo" class="brand-logo" decoding="async" height="32" loading="lazy" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/paypal.webp" width="120" />
+    <img alt="Barclays logo" class="brand-logo" decoding="async" height="32" loading="lazy" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/barclays.webp" width="120" />
+    <img alt="Shazam logo" class="brand-logo" decoding="async" height="32" loading="lazy" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/shazam.webp" width="120" />
+    <img alt="AKQA logo" class="brand-logo" decoding="async" height="32" loading="lazy" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/akqa.webp" width="120" />
+    <img alt="Virgin logo" class="brand-logo" decoding="async" height="32" loading="lazy" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/virgin.webp" width="120" />
+  </div>
+</section>
 
-Sebastien’s diverse experience in banking, financial services, communications, creative, and media has given him a profound understanding of how Information Technology (IT) can be a force multiplier for business and customer benefits. He is an experienced strategic and operational leader with cross-platform product design, engineering, and solution architecture skills. He is an active contributor to the open source community and is consistently at the forefront of financial innovation.
+<section class="story-cta" aria-labelledby="about-onward" data-reveal>
+  <header class="story-head">
+    <p class="story-eyebrow">Where to next</p>
+    <h2 id="about-onward" class="story-title">Pick the surface that fits your question.</h2>
+  </header>
+  <div class="story-grid">
+    <a class="story-card" href="/articles/index.html">
+      <span class="story-card-eyebrow">Research notes</span>
+      <h3 class="story-card-title">Read the articles</h3>
+      <p class="story-card-body">73 signed, dated pieces on applied AI, ISO 20022, and post-quantum cryptography.</p>
+      <span class="story-card-link">Browse</span>
+    </a>
+    <a class="story-card" href="/case-studies/index.html">
+      <span class="story-card-eyebrow">Proof</span>
+      <h3 class="story-card-title">See the case studies</h3>
+      <p class="story-card-body">Five evidence-first builds, every metric verifiable without going through me.</p>
+      <span class="story-card-link">Explore</span>
+    </a>
+    <a class="story-card" href="/contact/index.html">
+      <span class="story-card-eyebrow">Conversation</span>
+      <h3 class="story-card-title">Get in touch</h3>
+      <p class="story-card-body">Consulting, speaking, advisory. Tier-1 banking technology engagements only.</p>
+      <span class="story-card-link">Start</span>
+    </a>
+  </div>
+</section>
 
-## Identifiers and credentials
+<details class="about-identifiers">
+<summary>Identifiers, credentials &amp; bot policy</summary>
 
 <dl class="author-ids">
 <dt>ORCID iD</dt>
@@ -125,33 +223,6 @@ Sebastien’s diverse experience in banking, financial services, communications,
 <dd><a href="https://emergingpaymentsasia.org/" rel="external noopener">Emerging Payments Association Asia · Quantum-Safe Cryptography Working Group</a></dd>
 </dl>
 
-## Featured in
+<p>All crawlers welcome — search engines, social link-preview, SEO, AI retrieval and AI training — under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY-4.0</a>. Operational detail (named crawler categories, machine-readable surfaces, opt-out path) lives at <a href="/editorial/#bot-policy"><code>/editorial/#bot-policy</code></a>; machine-actionable rules at <a href="/robots.txt"><code>/robots.txt</code></a> and <a href="/llms.txt"><code>/llms.txt</code></a>.</p>
 
-<ul class="featured-in">
-<li><a href="https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf" rel="external noopener"><strong>EPAA</strong> · Quantum-Safe Payments white paper · Sept 2025</a></li>
-<li><a href="https://news.bankingonquantum.com" rel="external noopener"><strong>Banking On Quantum</strong> · weekly post-quantum cryptography newsletter</a></li>
-<li><a href="https://bankingonai.co/" rel="external noopener"><strong>Banking On AI</strong> · publisher and editor on applied AI in banking</a></li>
-<li><a href="https://pain001.com" rel="external noopener"><strong>pain001</strong> · maintainer · ISO 20022 payment automation library</a></li>
-<li><a href="https://kyberlib.com" rel="external noopener"><strong>KyberLib</strong> · author · Rust implementation of NIST FIPS 203</a></li>
-</ul>
-
-## Experience
-
-Brands Sebastien has worked with along the way.
-
-<div class="brands">
-<img alt="HSBC logo" class="brand-logo" decoding="async" height="32" loading="lazy" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/hsbc.webp" width="120" />
-<img alt="PayPal logo" class="brand-logo" decoding="async" height="32" loading="lazy" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/paypal.webp" width="120" />
-<img alt="Barclays logo" class="brand-logo" decoding="async" height="32" loading="lazy" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/barclays.webp" width="120" />
-<img alt="Shazam logo" class="brand-logo" decoding="async" height="32" loading="lazy" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/shazam.webp" width="120" />
-<img alt="AKQA logo" class="brand-logo" decoding="async" height="32" loading="lazy" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/akqa.webp" width="120" />
-<img alt="Virgin logo" class="brand-logo" decoding="async" height="32" loading="lazy" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/virgin.webp" width="120" />
-</div>
-
-![divider][divider].class=\"m-10 w-100\"
-
-## Bot policy
-
-All crawlers welcome — search engines, social link-preview, SEO, AI retrieval and AI training — under [CC BY-4.0](https://creativecommons.org/licenses/by/4.0/). Operational detail (named crawler categories, machine-readable surfaces, opt-out path) lives at [`/editorial/#bot-policy`](/editorial/#bot-policy); machine-actionable rules at [`/robots.txt`](/robots.txt) and [`/llms.txt`](/llms.txt).
-
-[divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Divider"
+</details>

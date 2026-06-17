@@ -1,0 +1,44 @@
+title: "pain001——自动化 ISO 20022 支付报文文件"
+banner_alt: "黄昏时分的城市鸟瞰——象征全球清算网络下 ISO 20022 结构化支付文件的自动化"
+sector: "开源 · 企业司库 · ISO 20022"
+role: "作者与维护者"
+status: "生产环境运行，持续维护"
+
+outcome_highlights:
+  - value: "pain.001"
+    label: "客户付款发起报文"
+  - value: "XSD-validated"
+    label: "每条报文均预先通过 XSD 校验"
+  - value: "IBAN + BIC + LEI"
+    label: "ISO 7064 Modulo 97-10 校验码"
+  - value: "Apache-2.0 / MIT"
+    label: "可自由使用、复刻、审计"
+
+pull_quote: >
+  「获 EPAA 抗量子支付白皮书（2025 年 9 月）引用。开源，从第一天起即接受
+  审计——ERP 与清算网络之间不再夹一层专有翻译器。」
+
+problem: >
+  全球 MT → MX 迁移迫使每一家银行与企业司库都必须产出结构化的 pain.001
+  报文。多数团队仍在手工拼装脆弱的 XML，或采购不透明的专有翻译器。两条路径
+  都会把支付错误直接送入清算网络，且不留审计轨迹。
+
+what_i_built: >
+  一个开源 Python 库，可从 CSV / SQLite / Parquet 数据源生成经校验的
+  ISO 20022 pain.001（客户付款发起）报文。内置预先 XSD 校验、IBAN 与 BIC
+  校验码、PII 掩码以及完整 XSD 模式合规——全部封装在一个可嵌入既有 ERP 与
+  司库管道的 Python 工作流中。
+
+rigour:
+  - metric: "支持的 ISO 20022 报文"
+    value: "pain.001（客户付款发起）"
+  - metric: "模式合规"
+    value: "每条报文均经官方 XSD 预先校验"
+  - metric: "随附校验器"
+    value: "IBAN 校验位 + BIC + LEI 校验码（ISO 7064 Modulo 97-10）"
+  - metric: "许可证"
+    value: "Apache-2.0 / MIT——可自由使用、复刻、审计"
+
+validation:
+  - "EPAA 抗量子支付白皮书（2025 年 9 月）引用"
+  - "自 2023 年 9 月起持续在 sebastienrousseau.com 文章中获引述"

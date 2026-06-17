@@ -1,0 +1,49 @@
+title: "CloudCDN — öppen ritning för den AI-nativa edgen"
+banner_alt: "AI-nativ edge-infrastruktur — bild för den zero trust-MCP-gateway, atomära Durable Objects-frekvensbegränsning och WebAuthn-passkey-perimeter som CloudCDN levererar som referensimplementation"
+sector: "Öppen källkod · Edge · AI-infrastruktur"
+role: "Författare och underhållare"
+status: "I produktion, aktivt underhållen"
+
+outcome_highlights:
+  - label: "100 % rad-, gren- och funktionstäckning"
+  - label: "Byggets härkomst och Sigstore-signering"
+  - label: "Varje anrop granskningsloggat med strukturerade bevis"
+  - label: "Avbildad mot artikel 5 och aggregering av riskdata"
+
+pull_quote: >
+  "En referensimplementation med öppen källkod som ett säkerhetsteam kan
+  läsa, forka och signera — i stället för en marknadsförings-PDF. Atomär
+  Durable Objects-frekvensbegränsning, WebAuthn-perimeter, SLSA L3-härkomst."
+
+problem: >
+  När AI-agenter och MCP-verktyg börjar anropa edge-API:er i stor skala
+  behöver banker en perimeter som klarar autonom trafik utan att offra
+  granskningsbevis på DORA-nivå. Befintliga CDN:er erbjuder antingen
+  marknadsspråk eller ogenomskinliga prisplaner — ingen av dem
+  producerar en referensimplementation som ett säkerhetsteam kan läsa,
+  forka och signera.
+
+what_i_built: >
+  En zero trust-MCP-gateway med öppen källkod, 42 verktyg, atomär
+  Durable Objects-frekvensbegränsning, WebAuthn-passkey-perimeter,
+  signerade URL:er och byggets härkomst på SLSA-nivå 3. 3 185 tester
+  vid 100 % täckning, avbildad mot DORA artikel 5, aggregering av
+  riskdata enligt BCBS 239 och operativt riskkapital enligt Basel III.
+
+rigour:
+  - metric: "Tester"
+    value: "3 185 tester vid 100 % rad-, gren- och funktionstäckning"
+  - metric: "Härkomst i leveranskedjan"
+    value: "Byggets härkomst på SLSA-nivå 3 och Sigstore-signering"
+  - metric: "Levererade MCP-verktyg"
+    value: "42 verktyg — varje anrop granskningsloggat med strukturerade bevis"
+  - metric: "Frekvensbegränsning"
+    value: "Atomära Durable Objects (inga race conditions, inga dubbelräkningar)"
+  - metric: "Autentisering"
+    value: "WebAuthn-passkeys och signerade URL:er"
+  - metric: "Licens"
+    value: "Apache-2.0 / MIT"
+
+validation:
+  - "Behandlad i artikeln från 2026-06-11: CloudCDN — en öppen ritning för den AI-nativa edgen"
+  - "Avbildad mot DORA artikel 5, BCBS 239 och operativ risk enligt Basel III"

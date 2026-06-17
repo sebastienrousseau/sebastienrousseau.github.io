@@ -1,0 +1,52 @@
+title: "CloudCDN — AI 네이티브 엣지를 위한 오픈소스 청사진"
+banner_alt: "AI 네이티브 엣지 인프라 — CloudCDN이 참조 구현으로 제공하는 제로 트러스트 MCP 게이트웨이, 원자적 Durable Objects 속도 제한, WebAuthn 패스키 경계를 상징"
+sector: "오픈소스 · 엣지 · AI 인프라"
+role: "저자 및 메인테이너"
+status: "프로덕션, 적극적으로 유지 관리 중"
+
+outcome_highlights:
+  - value: "3,185 tests"
+    label: "라인, 분기, 함수 커버리지 100 %"
+  - value: "SLSA L3"
+    label: "빌드 출처 증명 + Sigstore 서명"
+  - value: "42 MCP tools"
+    label: "모든 호출이 구조화된 증거와 함께 감사 로깅됨"
+  - value: "DORA / BCBS 239"
+    label: "Article 5 및 리스크 데이터 집계에 매핑"
+
+pull_quote: >
+  "마케팅 PDF가 아니라 보안 팀이 읽고, 포크하고, 서명할 수 있는
+  오픈소스 참조 구현입니다. 원자적 Durable Objects 속도 제한,
+  WebAuthn 경계, SLSA L3 출처 증명을 제공합니다."
+
+problem: >
+  AI 에이전트와 MCP 도구가 엣지 API를 대규모로 호출하기 시작함에 따라,
+  은행은 DORA 수준의 감사 증거를 포기하지 않으면서 자율 트래픽을
+  견뎌낼 수 있는 경계를 필요로 합니다. 기존 CDN은 마케팅 문구나
+  불투명한 요금제만을 제공할 뿐 — 보안 팀이 읽고, 포크하고,
+  서명할 수 있는 참조 구현은 제공하지 못합니다.
+
+what_i_built: >
+  42개 도구, 원자적 Durable Objects 속도 제한, WebAuthn 패스키 경계,
+  서명된 URL, SLSA Level 3 빌드 출처 증명을 갖춘 오픈소스 제로 트러스트
+  MCP 게이트웨이입니다. 100 % 커버리지의 3,185개 테스트를 보유하며,
+  DORA Article 5, BCBS 239 리스크 데이터 집계, Basel III 운영 리스크
+  자본 요건에 매핑되어 있습니다.
+
+rigour:
+  - metric: "테스트"
+    value: "라인, 분기, 함수 커버리지 100 %의 3,185개 테스트"
+  - metric: "공급망 출처 증명"
+    value: "SLSA Level 3 빌드 출처 증명 + Sigstore 서명"
+  - metric: "제공되는 MCP 도구"
+    value: "42개 도구 — 모든 호출이 구조화된 증거와 함께 감사 로깅됨"
+  - metric: "속도 제한"
+    value: "원자적 Durable Objects (경쟁 조건 없음, 중복 카운트 없음)"
+  - metric: "인증"
+    value: "WebAuthn 패스키 + 서명된 URL"
+  - metric: "라이선스"
+    value: "Apache-2.0 / MIT"
+
+validation:
+  - "2026년 6월 11일 기사 게재: CloudCDN — AI 네이티브 엣지를 위한 오픈소스 청사진"
+  - "DORA Article 5, BCBS 239, Basel III 운영 리스크에 매핑"

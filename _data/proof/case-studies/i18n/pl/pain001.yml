@@ -1,0 +1,45 @@
+title: "pain001 — automatyzacja plików płatniczych ISO 20022"
+banner_alt: "Panorama miasta o zmierzchu z lotu ptaka — symbolizuje automatyzację strukturyzowanych plików płatniczych ISO 20022 w globalnych sieciach rozliczeniowych"
+sector: "Open source · Skarb korporacyjny · ISO 20022"
+role: "Autor i opiekun projektu"
+status: "Produkcja, aktywnie utrzymywane"
+
+outcome_highlights:
+  - label: "Customer Credit Transfer Initiation"
+  - label: "Walidacja wstępna dla każdego komunikatu"
+  - label: "Sumy kontrolne ISO 7064 Modulo 97-10"
+  - label: "Wolne do użytku, forkowania i audytu"
+
+pull_quote: >
+  "Cytowane w białej księdze EPAA Quantum-Safe Payments (wrzesień 2025).
+  Open source, audytowane od pierwszego dnia — bez zastrzeżonego
+  translatora między systemem ERP a siecią rozliczeniową."
+
+problem: >
+  Globalna migracja MT → MX zmusza każdy bank i skarbnika korporacyjnego
+  do produkowania strukturyzowanych komunikatów pain.001. Większość
+  zespołów ręcznie składa kruchy XML albo kupuje nieprzejrzyste
+  zastrzeżone translatory. Obie drogi wprowadzają błędy płatnicze do
+  sieci rozliczeniowych i nie zostawiają śladu audytowego.
+
+what_i_built: >
+  Otwartoźródłowa biblioteka Pythona generująca walidowane komunikaty
+  ISO 20022 pain.001 (Customer Credit Transfer Initiation) z plików
+  CSV / SQLite / Parquet. Walidacja XSD przed wysyłką, sumy kontrolne
+  IBAN / BIC, maskowanie danych osobowych oraz pełna zgodność ze
+  schematem XSD — wszystko w przepływie Pythona wpinającym się
+  w istniejące pipeline’y ERP i skarbu.
+
+rigour:
+  - metric: "Obsługiwane komunikaty ISO 20022"
+    value: "pain.001 (Customer Credit Transfer Initiation)"
+  - metric: "Zgodność ze schematem"
+    value: "Oficjalna walidacja XSD przed wysyłką każdego komunikatu"
+  - metric: "Dostarczone walidatory"
+    value: "Cyfra kontrolna IBAN + suma kontrolna BIC + LEI (ISO 7064 Modulo 97-10)"
+  - metric: "Licencja"
+    value: "Apache-2.0 / MIT — wolne do użytku, forkowania i audytu"
+
+validation:
+  - "Cytowane w białej księdze EPAA Quantum-Safe Payments (wrzesień 2025)"
+  - "Opisane w artykułach publikowanych na sebastienrousseau.com od września 2023"

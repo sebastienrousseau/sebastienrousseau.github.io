@@ -1,0 +1,50 @@
+title: "BankStatementParser — ìmọ̀ ìbálò àpapọ̀ fún ìṣúra ilé-iṣẹ́"
+banner_alt: "Ọ́fíìsì ìṣúná òde-òní ní alẹ́ — ó dúró fún ìmọ̀ ìbálò àpapọ̀ kọjá àwọn fọ́máàtì ìwé ìròyìn báńkì CAMT, MT940, OFX àti CSV"
+sector: "Orísun ṣíṣí · Ìṣúra ilé-iṣẹ́ · Ìkójọ data ewu"
+role: "Òǹkọ̀wé àti olùtọ́jú"
+status: "Ń ṣiṣẹ́ ní ìmújáde, ó ń gba ìtọ́jú lójoojúmọ́"
+
+outcome_highlights:
+  - value: "6 formats"
+    label: "CAMT (.052/.053/.054), MT940, OFX, CSV, OCR PDF"
+  - value: "Per-field"
+    label: "Ìpilẹ̀ṣẹ̀: fọ́máàtì orísun + ẹ̀dà parser ni a kọ sílẹ̀"
+  - value: "BCBS 239"
+    label: "Tó bá ìkójọ data ewu mu"
+  - value: "Apache-2.0 / MIT"
+    label: "Òfẹ́ láti lò, fọ́ọ̀kì, àti ṣàyẹ̀wò"
+
+pull_quote: >
+  "Àwọn parser CAMT / MT940 / PAIN tí a fọwọ́sí pẹ̀lú schema, OCR gẹ́gẹ́
+  bí àtìlẹ́yìn fún àwọn PDF tí a wòye, ìṣàkọsílẹ̀ pápá tó dájú, ẹ̀rí
+  ìṣàyẹ̀wò ti ìpele SR 11-7 — gbogbo ìgbésẹ̀ ìyípadà ni a kọ sílẹ̀ tí ó sì
+  lè tún ṣe."
+
+problem: >
+  Àwọn ẹgbẹ́ ìṣúra ilé-iṣẹ́ ń gba àwọn ìwé ìròyìn báńkì ní CAMT, PAIN.001,
+  MT940, OFX, CSV, àti àwọn PDF tí a wòye láti ọ̀dọ̀ àwọn báńkì púpọ̀.
+  Fọ́máàtì kọ̀ọ̀kan ní àwọn ìtumọ̀ pápá, ìfọ̀rọ̀wérọ̀, àti àìṣe-dájú tí ó yàtọ̀.
+  Ọ̀pọ̀ àwọn ẹgbẹ́ ń kọ àwọn parser aláìdúró fún báńkì kọ̀ọ̀kan pẹ̀lú ọwọ́,
+  èyí tí ó dí ìsọtẹ́lẹ̀ owó-ńlá lẹ́sẹ̀kẹsẹ̀, ìwárí jìbìtì, àti ìṣàtúnṣe tí
+  ó múra sílẹ̀ fún ìṣàyẹ̀wò.
+
+what_i_built: >
+  Ohun-èlò Python orísun-ṣíṣí tí ó kó gbogbo fọ́máàtì ìwé ìròyìn báńkì
+  pọ̀ sínú ìṣàn ìbálò kan tí a ṣe déédéé. Àwọn parser CAMT / MT940 / PAIN
+  tí a fọwọ́sí pẹ̀lú schema, OCR gẹ́gẹ́ bí àtìlẹ́yìn fún àwọn PDF tí a wòye,
+  ìṣàkọsílẹ̀ pápá tó dájú, àti ẹ̀rí ìṣàyẹ̀wò ti ìpele SR 11-7 fún gbogbo
+  ìgbésẹ̀ ìyípadà.
+
+rigour:
+  - metric: "Àwọn fọ́máàtì tí a tì lẹ́yìn"
+    value: "CAMT (.052, .053, .054), MT940, OFX, CSV, PDF tí a wòye (OCR)"
+  - metric: "Àfojúsùn ìṣe-déédéé"
+    value: "Schema ìgbasílẹ̀ ìbálò àpapọ̀ kan ṣoṣo"
+  - metric: "Ipa-ọ̀nà ìṣàyẹ̀wò"
+    value: "Ìpilẹ̀ṣẹ̀ pápá kọ̀ọ̀kan — fọ́máàtì orísun + ẹ̀dà parser ni a kọ sílẹ̀ fún ọ̀wọ́ kọ̀ọ̀kan"
+  - metric: "Iwé-àṣẹ"
+    value: "Apache-2.0 / MIT"
+
+validation:
+  - "A ṣàfihàn rẹ̀ nínú àpilẹ̀kọ 2026-06-14: From Bank Statements to Unified Transaction Intelligence"
+  - "A ṣe ìdánilẹ́kọ̀ọ́ rẹ̀ láti ní ìbámu pẹ̀lú àwọn ohun tí BCBS 239 béèrè fún ìkójọ data ewu"
