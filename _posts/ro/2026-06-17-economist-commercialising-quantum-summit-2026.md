@@ -136,7 +136,7 @@ Liderii tehnologici din întreprinderi trebuie să mapeze maturitatea cuantică 
 ### Tabelul 1: lentila strategică Commercialising Quantum 2026
 
 | Strat | Focus corporativ | Cronologie / orizont | Risc corporativ principal |
-| :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- |
 | **Hardware și compilator** | Selectarea între abordări concurente (supraconductoare, ioni capcanați, atomi neutri, fotonică) | 3 – 5 ani (toleranță la erori) | Blocarea într-o arhitectură fără viitor sau pariul timpuriu pe o singură platformă. |
 | **Întărirea criptografică** | Descoperirea și inventarierea dependențelor criptografice; migrarea la NIST ML-KEM | Imediat (migrare activă) | Breșe sistemice de date și eșecuri de conformitate sub DORA și NIST CSF 2.0. |
 | **Senzori cuantici** | Implementarea navigării independente de GPS, ceasuri ultra-stabile și gravimetre | 1 – 2 ani (comercial imediat) | Perturbarea operațională a logisticii, transportului maritim și rețelelor energetice din cauza bruiajului GPS. |
@@ -150,7 +150,7 @@ Liderii tehnologici trebuie să monitorizeze metrici de piață și de reglement
 ### Tabelul 2: semnale cuantice cheie și declanșatoare pentru consiliu
 
 | Semnal | Metrică cantitativă | Referință de reglementare / politică | Prioritate de platformă acționabilă |
-| :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- |
 | **Valul de finanțare cuantică** | 1,3 miliarde dolari atrași la nivel global în primele cinci luni din 2026 | Return on Resilience (RoR) | Mutarea bugetelor de la pilotaje speculative la încărcături de lucru hibride cuantic-clasic „fără regrete". |
 | **Expunerea la decriptarea datelor** | 100% din datele criptate transmise prin canale publice expuse recoltării SNDL | DORA Articolul 6 (securitate ICT) | Implementarea instrumentelor de descoperire criptografică pentru identificarea cheilor RSA/ECC vulnerabile în întreaga organizație. |
 | **Infrastructură suverană** | Alocare de 2,5 miliarde lire pentru Strategia Națională Cuantică a Regatului Unit | UK Quantum Missions / Lord Vallance | Stabilirea de parteneriate locale cu supercluster-uri naționale precum NQCC. |

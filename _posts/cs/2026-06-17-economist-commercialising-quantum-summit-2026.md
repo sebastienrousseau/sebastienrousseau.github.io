@@ -136,7 +136,7 @@ Lídři podnikových technologií musí zmapovat kvantovou zralost napříč pě
 ### Tabulka 1: Strategická optika Commercialising Quantum 2026
 
 | Vrstva | Korporátní zaměření | Časová osa / horizont | Klíčové korporátní riziko |
-| :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- |
 | **Hardware a kompilátor** | Volba mezi konkurenčními přístupy (supravodivé, iontové pasti, neutrální atomy, fotonika) | 3 – 5 let (odolnost proti chybám) | Uzamčení do slepé architektury nebo příliš brzká sázka na jedinou platformu. |
 | **Kryptografické zpevnění** | Objevení a inventarizace kryptografických závislostí; migrace na NIST ML-KEM | Okamžité (aktivní migrace) | Systémové úniky dat a selhání compliance podle DORA a NIST CSF 2.0. |
 | **Kvantové snímání** | Nasazení navigace nezávislé na GPS, ultra-stabilních hodin a gravimetrů | 1 – 2 roky (okamžitá komercializace) | Provozní narušení logistiky, lodní dopravy a energetických sítí kvůli rušení GPS. |
@@ -150,7 +150,7 @@ Lídři technologií musí monitorovat konkrétní, kvantifikovatelné tržní a
 ### Tabulka 2: Klíčové kvantové signály a spouštěče pro představenstvo
 
 | Signál | Kvantitativní metrika | Regulatorní / politická reference | Akční platformová priorita |
-| :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- |
 | **Nárůst kvantového financování** | 1,3 miliardy USD získaných globálně v prvních pěti měsících 2026 | Return on Resilience (RoR) | Přesunout rozpočty ze spekulativních pilotů na „bez lítosti" hybridní kvantově-klasické workloady. |
 | **Expozice dešifrování dat** | 100 % šifrovaných dat přenášených veřejnými kanály vystaveno sběru SNDL | DORA článek 6 (bezpečnost ICT) | Implementovat nástroje kryptografického objevování k identifikaci zranitelných RSA/ECC klíčů napříč infrastrukturou. |
 | **Suverénní infrastruktura** | 2,5 miliardy GBP alokovaných v britské Národní kvantové strategii | UK Quantum Missions / Lord Vallance | Navázat lokální partnerství s národními superklastry, jako je NQCC. |

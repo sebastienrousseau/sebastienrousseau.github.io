@@ -136,7 +136,7 @@ Kurumsal teknoloji liderleri, zaman ufuklarını ve bilanço risklerini değerle
 ### Tablo 1: Commercialising Quantum 2026 stratejik merceği
 
 | Katman | Kurumsal odak | Zaman çizelgesi / ufuk | Temel kurumsal risk |
-| :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- |
 | **Donanım ve derleyici** | Rakip yaklaşımlar arasında seçim (süperiletken, tuzaklanmış iyonlar, nötr atomlar, fotonik) | 3 – 5 yıl (hata düzeltme) | Çıkmaz bir mimariye kilitlenmek veya tek bir platforma çok erken yatırım yapmak. |
 | **Kriptografik sertleştirme** | Kriptografik bağımlılıkların keşfi ve envanteri; NIST ML-KEM göçü | Derhal (aktif göç) | DORA ve NIST CSF 2.0 kapsamında sistemik veri ihlalleri ve uyumluluk başarısızlıkları. |
 | **Kuantum algılama** | GPS bağımsız navigasyon, ultra kararlı saatler ve gravimetrelerin konuşlandırılması | 1 – 2 yıl (derhal ticari) | GPS karıştırması nedeniyle lojistik, denizcilik ve enerji şebekelerinde operasyonel aksama. |
@@ -150,7 +150,7 @@ Teknoloji liderleri, kuantum yatırımlarına yön vermek için belirli, ölçü
 ### Tablo 2: Temel kuantum sinyalleri ve yönetim kurulu tetikleyicileri
 
 | Sinyal | Nicel gösterge | Düzenleyici / politika referansı | Uygulanabilir platform önceliği |
-| :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- |
 | **Kuantum finansman dalgası** | 2026'nın ilk beş ayında küresel olarak toplanan 1,3 milyar dolar | Dayanıklılık Getirisi (RoR) | Bütçeleri spekülatif pilotlardan "pişman olunmayacak" hibrit kuantum-klasik iş yüklerine kaydırın. |
 | **Veri şifre çözme riski** | Açık kanallar üzerinden iletilen şifreli verilerin %100'ü SNDL hasadına maruz | DORA Madde 6 (BİT güvenliği) | Mülkün tamamında savunmasız RSA/ECC anahtarlarını tespit etmek için kriptografik keşif araçları uygulayın. |
 | **Egemen altyapı** | 2,5 milyar sterlinlik Birleşik Krallık Ulusal Kuantum Stratejisi tahsisi | UK Quantum Missions / Lord Vallance | NQCC gibi ulusal süperkümelerle yerel ortaklıklar kurun. |

@@ -136,7 +136,7 @@ Shugabannin fasaha na kamfani dole ne su tsara balagar quantum a fadin laushi bi
 ### Teburi 1: Tabaron dabaru na Commercialising Quantum 2026
 
 | Laushi | Mai da hankali na kamfani | Jadawalin lokaci | Babban haɗari na kamfani |
-| :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- |
 | **Hardware da compiler** | Zaɓi tsakanin hanyoyi masu gasa (superconducting, trapped ions, neutral atoms, photonics) | Shekaru 3 – 5 (juriya ga kuskure) | Kulle a cikin gine-gine maras ƙarewa ko goyon bayan dandali ɗaya da wuri. |
 | **Ƙarfafa cryptography** | Gano da lissafin abubuwan da suka dogara da cryptography; ƙaura zuwa NIST ML-KEM | Nan take (ƙaura mai aiki) | Karya bayanai na tsari da gazawar bin doka a ƙarƙashin DORA da NIST CSF 2.0. |
 | **Quantum sensing** | Tura kewayawa mai zaman kanta daga GPS, agogo masu kwanciyar hankali, da gravimeters | Shekaru 1 – 2 (kasuwanci nan take) | Tsangwama na aiki na logistics, jigilar kaya, da grids na makamashi saboda toshe GPS. |
@@ -150,7 +150,7 @@ Shugabannin fasaha dole ne su lura da takamaiman ma'auni na kasuwa da na doka do
 ### Teburi 2: Manyan alamomi na quantum da abubuwan da ke haifar da hukumar
 
 | Alama | Ma'auni mai yawa | Nuni na doka / manufa | Fifikon dandali mai aiki |
-| :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- |
 | **Karuwar tallafi na quantum** | $1.3 biliyan da aka tara a duniya a cikin watanni biyar na farko na 2026 | Return on Resilience (RoR) | Sauya kasafin kuɗi daga matukin jirgi mai zato zuwa aikin hybrid quantum-classical "marasa nadama". |
 | **Bayyanar buɗewar bayanai** | 100% na bayanan da aka rufa wa ido waɗanda aka watsa ta hanyoyin sadarwa na jama'a sun fallasa ga girbin SNDL | DORA Article 6 (tsaron ICT) | Aiwatar da kayan aikin gano cryptography don gano maɓallan RSA/ECC masu rauni a fadin gidan. |
 | **Abubuwan more rayuwa masu mulkin kai** | £2.5 biliyan na rabon UK National Quantum Strategy | UK Quantum Missions / Lord Vallance | Kafa abokan haɗin gwiwa na gida tare da superclusters na ƙasa kamar NQCC. |

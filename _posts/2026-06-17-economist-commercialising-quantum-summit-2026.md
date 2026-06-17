@@ -136,7 +136,7 @@ Enterprise technology leaders must map quantum maturity across five distinct ope
 ### Table 1: The Commercialising Quantum 2026 strategic lens
 
 | Layer | Corporate focus | Timeline / horizon | Key corporate risk |
-| :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- |
 | **Hardware & compiler** | Selecting between competing approaches (superconducting, trapped ions, neutral atoms, photonics) | 3 – 5 years (fault-tolerance) | Locking into a dead-end architecture or backing a single platform too early. |
 | **Cryptographic hardening** | Discovery and inventory of cryptographic dependencies; migration to NIST ML-KEM | Immediate (active migration) | Systemic data breaches and compliance failures under DORA and NIST CSF 2.0. |
 | **Quantum sensing** | Deployment of GPS-independent navigation, ultra-stable clocks, and gravimeters | 1 – 2 years (immediate commercial) | Operational disruption of logistics, shipping, and energy grids due to GPS jamming. |
@@ -150,7 +150,7 @@ Technology leaders must monitor specific, quantifiable market and regulatory met
 ### Table 2: Key quantum signals and boardroom triggers
 
 | Signal | Quantitative metric | Regulatory / policy reference | Actionable platform priority |
-| :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- |
 | **Quantum funding surge** | $1.3 billion raised globally in the first five months of 2026 | Return on Resilience (RoR) | Shift budgets from speculative pilots to "no-regrets" hybrid quantum-classical workloads. |
 | **Data decryption exposure** | 100% of encrypted data transmitted over public channels exposed to SNDL harvesting | DORA Article 6 (ICT security) | Implement cryptographic discovery tools to identify vulnerable RSA/ECC keys across the estate. |
 | **Sovereign infrastructure** | £2.5 billion UK National Quantum Strategy allocation | UK Quantum Missions / Lord Vallance | Establish local partnerships with national superclusters like the NQCC. |

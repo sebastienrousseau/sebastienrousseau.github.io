@@ -136,7 +136,7 @@ Los líderes tecnológicos empresariales deben mapear la madurez cuántica en ci
 ### Tabla 1: La lente estratégica Commercialising Quantum 2026
 
 | Capa | Foco corporativo | Horizonte temporal | Riesgo corporativo clave |
-| :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- |
 | **Hardware y compilador** | Elegir entre enfoques rivales (superconductores, iones atrapados, átomos neutros, fotónica) | 3 – 5 años (tolerancia a fallos) | Quedar atrapado en una arquitectura sin salida o apostar demasiado pronto por una sola plataforma. |
 | **Hardening criptográfico** | Descubrimiento e inventario de dependencias criptográficas; migración a NIST ML-KEM | Inmediato (migración activa) | Brechas de datos sistémicas y fallos de cumplimiento bajo DORA y NIST CSF 2.0. |
 | **Sensado cuántico** | Despliegue de navegación independiente de GPS, relojes ultraestables y gravímetros | 1 – 2 años (comercial inmediato) | Interrupción operativa de logística, transporte marítimo y redes eléctricas por inhibición de GPS. |
@@ -150,7 +150,7 @@ Los líderes tecnológicos deben monitorizar métricas de mercado y regulatorias
 ### Tabla 2: Señales cuánticas clave y disparadores para el consejo
 
 | Señal | Métrica cuantitativa | Referencia regulatoria / política | Prioridad accionable de plataforma |
-| :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- |
 | **Aluvión de financiación cuántica** | 1.300 millones de dólares levantados a nivel global en los cinco primeros meses de 2026 | Return on Resilience (RoR) | Reorientar presupuestos desde pilotos especulativos hacia cargas híbridas cuántico-clásicas «sin remordimientos». |
 | **Exposición al descifrado de datos** | 100% de los datos cifrados transmitidos por canales públicos expuestos a la recolección SNDL | DORA artículo 6 (seguridad TIC) | Desplegar herramientas de descubrimiento criptográfico para identificar claves vulnerables RSA/ECC en todo el parque. |
 | **Infraestructura soberana** | 2.500 millones de libras asignados a la UK National Quantum Strategy | UK Quantum Missions / Lord Vallance | Establecer alianzas locales con superclusters nacionales como el NQCC. |

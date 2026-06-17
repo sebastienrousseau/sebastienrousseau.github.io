@@ -136,7 +136,7 @@ Líderes de tecnologia corporativa precisam mapear a maturidade quântica em cin
 ### Tabela 1: a lente estratégica Commercialising Quantum 2026
 
 | Camada | Foco corporativo | Prazo / horizonte | Principal risco corporativo |
-| :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- |
 | **Hardware e compilador** | Escolha entre abordagens concorrentes (supercondutores, íons aprisionados, átomos neutros, fotônica) | 3 – 5 anos (tolerância a falhas) | Travar-se em arquitetura sem saída ou apostar cedo demais em uma única plataforma. |
 | **Endurecimento criptográfico** | Descoberta e inventário de dependências criptográficas; migração para NIST ML-KEM | Imediato (migração ativa) | Vazamentos sistêmicos de dados e falhas de compliance sob DORA e NIST CSF 2.0. |
 | **Sensoriamento quântico** | Implantação de navegação independente de GPS, relógios ultraestáveis e gravímetros | 1 – 2 anos (comercial imediato) | Disrupção operacional de logística, navegação marítima e redes de energia por jamming de GPS. |
@@ -150,7 +150,7 @@ Líderes de tecnologia precisam monitorar métricas de mercado e regulatórias e
 ### Tabela 2: sinais quânticos-chave e gatilhos de conselho
 
 | Sinal | Métrica quantitativa | Referência regulatória / política | Prioridade acionável de plataforma |
-| :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- |
 | **Surto de funding quântico** | US$ 1,3 bilhão captados globalmente nos primeiros cinco meses de 2026 | Return on Resilience (RoR) | Realocar orçamentos de pilotos especulativos para cargas híbridas quântico-clássicas "sem arrependimento". |
 | **Exposição à descriptografia de dados** | 100% dos dados criptografados transmitidos em canais públicos expostos à coleta SNDL | DORA Artigo 6 (segurança ICT) | Implementar ferramentas de descoberta criptográfica para identificar chaves RSA/ECC vulneráveis em todo o parque. |
 | **Infraestrutura soberana** | Alocação de £2,5 bilhões da UK National Quantum Strategy | UK Quantum Missions / Lord Vallance | Estabelecer parcerias locais com superclusters nacionais como o NQCC. |

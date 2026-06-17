@@ -136,7 +136,7 @@ Liderzy technologii przedsiębiorstwa muszą zmapować dojrzałość kwantową n
 ### Tabela 1: Strategiczna soczewka Commercialising Quantum 2026
 
 | Warstwa | Cel korporacyjny | Horyzont czasowy | Kluczowe ryzyko korporacyjne |
-| :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- |
 | **Sprzęt i kompilator** | Wybór między konkurencyjnymi podejściami (nadprzewodzące, jony pułapkowane, atomy neutralne, fotonika) | 3–5 lat (odporność na błędy) | Zablokowanie się w architekturze bez przyszłości lub zbyt wczesne postawienie na jedną platformę. |
 | **Wzmacnianie kryptograficzne** | Wykrywanie i inwentaryzacja zależności kryptograficznych; migracja do NIST ML-KEM | Natychmiast (aktywna migracja) | Systemowe naruszenia danych i niezgodność z DORA i NIST CSF 2.0. |
 | **Sensoryka kwantowa** | Wdrażanie nawigacji niezależnej od GPS, ultrastabilnych zegarów i grawimetrów | 1–2 lata (natychmiastowa komercyjna) | Zakłócenia operacyjne logistyki, żeglugi i sieci energetycznych z powodu zagłuszania GPS. |
@@ -150,7 +150,7 @@ Liderzy technologii muszą monitorować konkretne, mierzalne wskaźniki rynkowe 
 ### Tabela 2: Kluczowe sygnały kwantowe i wyzwalacze dla zarządu
 
 | Sygnał | Metryka ilościowa | Odniesienie regulacyjne / polityczne | Priorytet platformy do działania |
-| :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- |
 | **Fala finansowania kwantowego** | 1,3 mld USD pozyskane globalnie w pierwszych pięciu miesiącach 2026 | Return on Resilience (RoR) | Przekierować budżety ze spekulatywnych pilotów na hybrydowe obciążenia kwantowo-klasyczne „bez żalu”. |
 | **Ekspozycja na deszyfrowanie danych** | 100% danych szyfrowanych przesyłanych kanałami publicznymi narażone na zbieranie SNDL | DORA art. 6 (bezpieczeństwo ICT) | Wdrożyć narzędzia wykrywania kryptografii w celu identyfikacji podatnych kluczy RSA/ECC w całym majątku. |
 | **Suwerenna infrastruktura** | Alokacja 2,5 mld GBP w ramach UK National Quantum Strategy | UK Quantum Missions / Lord Vallance | Nawiązać lokalne partnerstwa z krajowymi superklastrami, takimi jak NQCC. |

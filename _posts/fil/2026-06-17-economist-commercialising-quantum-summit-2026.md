@@ -136,7 +136,7 @@ Dapat i-map ng mga enterprise technology leader ang quantum maturity sa limang m
 ### Table 1: Ang strategic lens ng Commercialising Quantum 2026
 
 | Layer | Focus ng korporasyon | Timeline / horizon | Pangunahing panganib sa korporasyon |
-| :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- |
 | **Hardware at compiler** | Pagpili sa mga magkakaribal na approach (superconducting, trapped ions, neutral atoms, photonics) | 3 – 5 taon (fault-tolerance) | Pagkalock sa dead-end architecture o maagang pagsuporta sa isang platform lamang. |
 | **Cryptographic hardening** | Pagtuklas at imbentaryo ng mga cryptographic dependency; migration tungo sa NIST ML-KEM | Agad (aktibong migration) | Mga systemic data breach at compliance failure sa ilalim ng DORA at NIST CSF 2.0. |
 | **Quantum sensing** | Deployment ng GPS-independent navigation, ultra-stable na mga orasan, at gravimeter | 1 – 2 taon (agarang komersyal) | Operational disruption ng logistics, shipping, at mga energy grid dahil sa GPS jamming. |
@@ -150,7 +150,7 @@ Dapat subaybayan ng mga technology leader ang mga tiyak at masusukat na market a
 ### Table 2: Mga pangunahing quantum signal at boardroom trigger
 
 | Signal | Quantitative metric | Regulatory / policy reference | Actionable platform priority |
-| :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- |
 | **Quantum funding surge** | $1.3 bilyon ang nalikom sa buong mundo sa unang limang buwan ng 2026 | Return on Resilience (RoR) | Ilipat ang badyet mula sa mga speculative pilot tungo sa "no-regrets" na hybrid quantum-classical na workload. |
 | **Pagkalantad sa data decryption** | 100% ng encrypted data na ipinadala sa public channel ay nakalantad sa SNDL harvesting | DORA Article 6 (ICT security) | Ipatupad ang cryptographic discovery tool upang matukoy ang mga vulnerable na RSA/ECC key sa buong estate. |
 | **Sovereign infrastructure** | £2.5 bilyon na alokasyon ng UK National Quantum Strategy | UK Quantum Missions / Lord Vallance | Magtatag ng lokal na partnership sa mga national supercluster gaya ng NQCC. |

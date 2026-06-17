@@ -136,7 +136,7 @@ Les dirigeants technologiques d'entreprise doivent cartographier la maturité qu
 ### Tableau 1 : le prisme stratégique Commercialising Quantum 2026
 
 | Couche | Priorité corporate | Horizon temporel | Principal risque corporate |
-| :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- |
 | **Matériel et compilateur** | Choix entre approches concurrentes (supraconducteurs, ions piégés, atomes neutres, photonique) | 3 – 5 ans (tolérance aux fautes) | Verrouillage sur une architecture sans issue ou pari trop précoce sur une plateforme unique. |
 | **Durcissement cryptographique** | Découverte et inventaire des dépendances cryptographiques ; migration vers NIST ML-KEM | Immédiat (migration active) | Brèches systémiques de données et défaut de conformité DORA et NIST CSF 2.0. |
 | **Capteurs quantiques** | Déploiement de la navigation indépendante du GPS, d'horloges ultra-stables et de gravimètres | 1 – 2 ans (commercial immédiat) | Perturbation opérationnelle de la logistique, du transport maritime et des réseaux énergétiques liée au brouillage GPS. |
@@ -150,7 +150,7 @@ Les responsables technologie doivent suivre des métriques précises et quantifi
 ### Tableau 2 : signaux quantiques clés et déclencheurs pour le conseil
 
 | Signal | Métrique quantitative | Référence réglementaire / politique | Priorité plateforme actionnable |
-| :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- |
 | **Afflux de financement quantique** | 1,3 Md$ levés au niveau mondial sur les cinq premiers mois de 2026 | Return on Resilience (RoR) | Réorienter les budgets des pilotes spéculatifs vers des charges hybrides quantique-classique « sans regret ». |
 | **Exposition au déchiffrement de données** | 100 % des données chiffrées transmises sur canaux publics exposées au harvesting SNDL | DORA article 6 (sécurité TIC) | Mettre en œuvre des outils de découverte cryptographique pour identifier les clés RSA / ECC vulnérables sur le parc. |
 | **Infrastructure souveraine** | Enveloppe de 2,5 Md£ de la stratégie nationale britannique pour le quantique | UK Quantum Missions / Lord Vallance | Établir des partenariats locaux avec des superclusters nationaux comme le NQCC. |

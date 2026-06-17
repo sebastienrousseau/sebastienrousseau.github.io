@@ -136,7 +136,7 @@ I leader tecnologici aziendali devono mappare la maturità quantistica su cinque
 ### Tabella 1: la lente strategica Commercialising Quantum 2026
 
 | Strato | Focus aziendale | Orizzonte temporale | Rischio aziendale chiave |
-| :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- |
 | **Hardware e compilatore** | Scelta tra approcci concorrenti (superconduttori, ioni intrappolati, atomi neutri, fotonica) | 3 – 5 anni (fault-tolerance) | Vincolarsi a un'architettura senza prospettive o puntare troppo presto su una sola piattaforma. |
 | **Hardening crittografico** | Discovery e inventario delle dipendenze crittografiche; migrazione a NIST ML-KEM | Immediato (migrazione attiva) | Violazioni sistemiche dei dati e mancata conformità a DORA e NIST CSF 2.0. |
 | **Quantum sensing** | Dispiegamento di navigazione GPS-independent, orologi ultra-stabili e gravimetri | 1 – 2 anni (commerciale immediato) | Disruption operativa di logistica, shipping e reti energetiche a causa del jamming GPS. |
@@ -150,7 +150,7 @@ I leader tecnologici devono monitorare metriche di mercato e regolamentari speci
 ### Tabella 2: segnali quantistici chiave e trigger per il consiglio
 
 | Segnale | Metrica quantitativa | Riferimento regolamentare / di policy | Priorità d'azione di piattaforma |
-| :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- |
 | **Impennata dei finanziamenti quantistici** | 1,3 miliardi di dollari raccolti a livello globale nei primi cinque mesi del 2026 | Return on Resilience (RoR) | Spostare i budget dai piloti speculativi ai carichi di lavoro ibridi quantum-classical "no-regrets". |
 | **Esposizione alla decifratura dei dati** | 100% dei dati cifrati trasmessi su canali pubblici esposti all'harvesting SNDL | DORA Articolo 6 (sicurezza ICT) | Implementare strumenti di cryptographic discovery per identificare chiavi RSA/ECC vulnerabili in tutto il parco. |
 | **Infrastruttura sovrana** | Stanziamento di 2,5 miliardi di sterline della UK National Quantum Strategy | UK Quantum Missions / Lord Vallance | Stabilire partnership locali con i supercluster nazionali come l'NQCC. |

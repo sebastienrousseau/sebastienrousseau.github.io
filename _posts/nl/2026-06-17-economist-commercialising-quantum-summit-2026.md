@@ -136,7 +136,7 @@ Technologieleiders in het bedrijfsleven moeten kwantumvolwassenheid in kaart bre
 ### Tabel 1: De strategische bril van Commercialising Quantum 2026
 
 | Laag | Bedrijfsfocus | Tijdspad / horizon | Belangrijkste bedrijfsrisico |
-| :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- |
 | **Hardware en compiler** | Keuze tussen concurrerende benaderingen (supergeleidend, gevangen ionen, neutrale atomen, fotonica) | 3 – 5 jaar (fout-tolerantie) | Vastlopen in een doodlopende architectuur of te vroeg op één platform inzetten. |
 | **Cryptografische verharding** | Inventarisatie en in kaart brengen van cryptografische afhankelijkheden; migratie naar NIST ML-KEM | Onmiddellijk (actieve migratie) | Systemische datalekken en compliance-tekortkomingen onder DORA en NIST CSF 2.0. |
 | **Kwantumsensing** | Uitrol van GPS-onafhankelijke navigatie, ultrastabiele klokken en gravimeters | 1 – 2 jaar (onmiddellijk commercieel) | Operationele verstoring van logistiek, scheepvaart en energienetwerken door GPS-jamming. |
@@ -150,7 +150,7 @@ Technologieleiders moeten specifieke, kwantificeerbare markt- en regelgevingsind
 ### Tabel 2: Belangrijke kwantumsignalen en bestuurskamertriggers
 
 | Signaal | Kwantitatieve metriek | Regelgevende / beleidsreferentie | Actiegerichte platformprioriteit |
-| :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- |
 | **Kwantumfinancieringsgolf** | $1,3 miljard wereldwijd opgehaald in de eerste vijf maanden van 2026 | Return on Resilience (RoR) | Verschuif budgetten van speculatieve pilots naar "no-regrets" hybride kwantum-klassieke workloads. |
 | **Blootstelling aan dataontsleuteling** | 100% van de versleutelde data verzonden via publieke kanalen is blootgesteld aan SNDL-harvesting | DORA Artikel 6 (ICT-security) | Implementeer cryptografische discovery-tools om kwetsbare RSA-/ECC-sleutels in het gehele landschap te identificeren. |
 | **Soevereine infrastructuur** | £2,5 miljard allocatie binnen de UK National Quantum Strategy | UK Quantum Missions / Lord Vallance | Bouw lokale partnerschappen met nationale superclusters zoals het NQCC. |

@@ -136,7 +136,7 @@ Các nhà lãnh đạo công nghệ doanh nghiệp phải ánh xạ độ trư�
 ### Bảng 1: Lăng kính chiến lược Commercialising Quantum 2026
 
 | Lớp | Trọng tâm doanh nghiệp | Mốc / chân trời | Rủi ro doanh nghiệp chính |
-| :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- |
 | **Phần cứng & trình biên dịch** | Lựa chọn giữa các hướng tiếp cận cạnh tranh (siêu dẫn, ion bẫy, nguyên tử trung hoà, photonic) | 3 – 5 năm (chịu lỗi) | Bị khoá vào kiến trúc ngõ cụt hoặc đặt cược vào một nền tảng duy nhất quá sớm. |
 | **Tăng cường mật mã** | Phát hiện và kiểm kê các phụ thuộc mật mã; di trú sang NIST ML-KEM | Tức thì (đang di trú) | Vi phạm dữ liệu mang tính hệ thống và thất bại tuân thủ theo DORA và NIST CSF 2.0. |
 | **Cảm biến lượng tử** | Triển khai định vị không phụ thuộc GPS, đồng hồ siêu ổn định và máy đo trọng lực | 1 – 2 năm (thương mại tức thì) | Gián đoạn vận hành logistics, vận tải biển và lưới năng lượng do nhiễu GPS. |
@@ -150,7 +150,7 @@ Các nhà lãnh đạo công nghệ phải theo dõi các chỉ số thị trư�
 ### Bảng 2: Các tín hiệu lượng tử và kích hoạt hội đồng quản trị chính
 
 | Tín hiệu | Chỉ số định lượng | Tham chiếu pháp lý / chính sách | Ưu tiên nền tảng hành động |
-| :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- |
 | **Làn sóng tài trợ lượng tử** | 1,3 tỷ USD huy động trên toàn cầu trong năm tháng đầu năm 2026 | Lợi tức Khả năng chống chịu (RoR) | Chuyển ngân sách từ các thử nghiệm suy đoán sang tải công việc lượng tử-cổ điển lai "không hối tiếc". |
 | **Mức độ phơi nhiễm giải mã dữ liệu** | 100% dữ liệu mã hoá truyền qua kênh công cộng phơi nhiễm trước thu hoạch SNDL | DORA Điều 6 (bảo mật ICT) | Triển khai công cụ phát hiện mật mã để xác định khoá RSA/ECC dễ tổn thương trên toàn hệ thống. |
 | **Hạ tầng có chủ quyền** | Phân bổ 2,5 tỷ bảng cho Chiến lược Lượng tử Quốc gia Vương quốc Anh | Sứ mệnh Lượng tử Vương quốc Anh / Lord Vallance | Thiết lập quan hệ đối tác địa phương với các siêu cụm quốc gia như NQCC. |

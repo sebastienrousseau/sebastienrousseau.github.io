@@ -136,7 +136,7 @@ Síwájú sí i, cybersecurity post-quantum kìí ṣe ìbéèrè ìbámu ọj�
 ### Tábìlì 1: Ojú ìlànà Commercialising Quantum 2026
 
 | Ìpele | Ìfojúsùn àjọṣe | Àkókò / ìpòsí | Ewu àjọṣe pàtàkì |
-| :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- |
 | **Hardware & compiler** | Yíyàn láàárín àwọn ọ̀nà tí ń dije (superconducting, trapped ions, neutral atoms, photonics) | 3 – 5 ọdún (fault-tolerance) | Títì sí ìṣètò tí kò ní àbájáde tàbí ríràn sí pẹpẹ kan ní àkọ́kọ́. |
 | **Ìmúgbóná cryptographic** | Àwárí àti àkójọ àwọn ìgbáralé cryptographic; ìṣíkiri sí NIST ML-KEM | Lẹ́sẹ̀kẹsẹ̀ (ìṣíkiri tó ń ṣiṣẹ́) | Àwọn ìfọ́jú dátà ìṣẹ̀dá àti àwọn àbájáde ìbámu lábẹ́ DORA àti NIST CSF 2.0. |
 | **Quantum sensing** | Gbígbé ìrìnnà aláìní GPS, agogo tó dúró ṣinṣin, àti gravimeter kalẹ̀ | 1 – 2 ọdún (ìṣòwò lẹ́sẹ̀kẹsẹ̀) | Ìdààmú ìṣiṣẹ́ ti logistics, ọkọ̀, àti ètò agbára nítorí ìdíwọ́ GPS. |
@@ -150,7 +150,7 @@ Síwájú sí i, cybersecurity post-quantum kìí ṣe ìbéèrè ìbámu ọj�
 ### Tábìlì 2: Àwọn àmì quantum pàtàkì àti àwọn ìfẹ́ ìgbìmọ̀ olórí
 
 | Àmì | Àpẹẹrẹ pípé | Ìtọ́kasí ìlànà / ìjọba | Pàtàkì pẹpẹ ìṣe |
-| :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- |
 | **Ìfowó quantum tí ń jó** | $1.3 bílíọ̀nù tí a kórè kárí ayé ní oṣù márùn-ún àkọ́kọ́ ti 2026 | Return on Resilience (RoR) | Yí ètò ìnáwó padà láti àwọn pilot àròsọ sí àwọn iṣẹ́ híbíríìdì quantum-classical "aláìní àbámọ̀". |
 | **Àfihàn ìfọ́jú dátà** | 100% ti dátà tí a fi ìpamọ́ ránṣẹ́ kọjá àwọn ọnà gbangba ní àfihàn sí ìkórè SNDL | DORA Article 6 (ààbò ICT) | Gbé àwọn irinṣẹ́ àwárí cryptographic kalẹ̀ láti dá àwọn kọ́kọ́rọ́ RSA/ECC aláìlera kọjá ohun ìní mọ̀. |
 | **Ètò amọ̀ ọba** | £2.5 bílíọ̀nù ìpín UK National Quantum Strategy | UK Quantum Missions / Lord Vallance | Mú àwọn ìbáṣepọ̀ àdúgbò pẹ̀lú àwọn supercluster orílẹ̀-èdè bíi NQCC dìde. |

@@ -136,7 +136,7 @@ Technologieverantwortliche im Unternehmen müssen die Quantum-Reife über fünf 
 ### Tabelle 1: Die strategische Linse von Commercialising Quantum 2026
 
 | Ebene | Fokus im Unternehmen | Zeithorizont | Zentrales Unternehmensrisiko |
-| :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- |
 | **Hardware & Compiler** | Auswahl zwischen konkurrierenden Ansätzen (supraleitend, Ionenfallen, neutrale Atome, Photonik) | 3 – 5 Jahre (Fehlertoleranz) | Festlegung auf eine Sackgassen-Architektur oder zu früher Wette auf eine Einzelplattform. |
 | **Kryptografische Härtung** | Discovery und Inventarisierung kryptografischer Abhängigkeiten; Migration zu NIST ML-KEM | Unmittelbar (aktive Migration) | Systemische Datenschutzverletzungen und Compliance-Versagen unter DORA und NIST CSF 2.0. |
 | **Quantum Sensing** | Einsatz GPS-unabhängiger Navigation, hochstabiler Uhren und Gravimeter | 1 – 2 Jahre (unmittelbar kommerziell) | Operative Disruption von Logistik, Schifffahrt und Energienetzen durch GPS-Störungen. |
@@ -150,7 +150,7 @@ Technologieverantwortliche müssen spezifische, quantifizierbare Markt- und Regu
 ### Tabelle 2: Wichtige Quantum-Signale und Vorstandsauslöser
 
 | Signal | Quantitative Kennzahl | Regulatorischer Bezug | Plattform-Priorität (Handlung) |
-| :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- |
 | **Quantum-Finanzierungsschub** | 1,3 Mrd. USD weltweit in den ersten fünf Monaten 2026 eingesammelt | Return on Resilience (RoR) | Budgets von spekulativen Piloten auf „No-Regrets\"-Hybrid-Quanten-klassische Workloads umlenken. |
 | **Entschlüsselungs-Exponierung** | 100 % der über öffentliche Kanäle übertragenen verschlüsselten Daten sind dem SNDL-Harvesting ausgesetzt | DORA Artikel 6 (IKT-Sicherheit) | Kryptografische Discovery-Werkzeuge einsetzen, um verwundbare RSA-/ECC-Schlüssel im gesamten Bestand zu identifizieren. |
 | **Souveräne Infrastruktur** | 2,5 Mrd. £ Allokation der UK National Quantum Strategy | UK Quantum Missions / Lord Vallance | Lokale Partnerschaften mit nationalen Superclustern wie dem NQCC aufbauen. |

@@ -136,7 +136,7 @@ Ledare inom företagsteknik måste kartlägga kvantmognad över fem distinkta op
 ### Tabell 1: Det strategiska perspektivet för Commercialising Quantum 2026
 
 | Lager | Företagsfokus | Tidslinje / horisont | Främsta företagsrisk |
-| :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- |
 | **Hårdvara och kompilator** | Val mellan konkurrerande angreppssätt (supraledande, jonfällor, neutrala atomer, fotonik) | 3 – 5 år (feltolerans) | Inlåsning i en återvändsarkitektur eller satsning på en enda plattform alltför tidigt. |
 | **Kryptografisk härdning** | Inventering av kryptografiska beroenden; migration till NIST ML-KEM | Omedelbar (aktiv migration) | Systemiska dataintrång och bristande efterlevnad under DORA och NIST CSF 2.0. |
 | **Kvantsensing** | Driftsättning av GPS-oberoende navigering, ultrastabila klockor och gravimetrar | 1 – 2 år (omedelbar kommersiell) | Operativ störning av logistik, sjöfart och energinät på grund av GPS-störning. |
@@ -150,7 +150,7 @@ Teknikledare måste övervaka specifika, kvantifierbara marknads- och regelmått
 ### Tabell 2: Centrala kvantsignaler och styrelseutlösare
 
 | Signal | Kvantitativt mått | Regelverk / policyreferens | Operativ plattformsprioritet |
-| :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- |
 | **Boom i kvantfinansiering** | 1,3 miljarder dollar globalt insamlat under de fem första månaderna av 2026 | Return on Resilience (RoR) | Flytta budgetar från spekulativa piloter till hybrida kvant-klassiska arbetslaster "utan ånger". |
 | **Exponering för dekryptering** | 100 % av krypterad data som överförs i publika kanaler exponerad för SNDL-skördning | DORA Artikel 6 (IKT-säkerhet) | Implementera verktyg för kryptografisk inventering för att identifiera sårbara RSA/ECC-nycklar i hela beståndet. |
 | **Suverän infrastruktur** | 2,5 miljarder pund i UK National Quantum Strategy-anslag | UK Quantum Missions / Lord Vallance | Etablera lokala partnerskap med nationella superkluster som NQCC. |

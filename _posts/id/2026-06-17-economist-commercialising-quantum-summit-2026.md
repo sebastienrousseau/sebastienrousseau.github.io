@@ -136,7 +136,7 @@ Para pemimpin teknologi enterprise harus memetakan kematangan kuantum di lima la
 ### Tabel 1: Lensa strategis Commercialising Quantum 2026
 
 | Lapisan | Fokus korporat | Cakrawala waktu | Risiko korporat utama |
-| :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- |
 | **Perangkat keras & kompiler** | Memilih di antara pendekatan yang bersaing (superkonduktor, ion terjebak, atom netral, fotonik) | 3 – 5 tahun (toleransi kesalahan) | Terkunci pada arsitektur buntu atau mendukung satu platform terlalu dini. |
 | **Penguatan kriptografis** | Penemuan dan inventarisasi dependensi kriptografis; migrasi ke NIST ML-KEM | Segera (migrasi aktif) | Pelanggaran data sistemik dan kegagalan kepatuhan di bawah DORA dan NIST CSF 2.0. |
 | **Penginderaan kuantum** | Penerapan navigasi independen GPS, jam ultra-stabil, dan gravimeter | 1 – 2 tahun (komersial segera) | Disrupsi operasional logistik, pelayaran, dan jaringan energi akibat jamming GPS. |
@@ -150,7 +150,7 @@ Para pemimpin teknologi harus memantau metrik pasar dan regulasi yang spesifik d
 ### Tabel 2: Sinyal utama kuantum dan pemicu ruang dewan
 
 | Sinyal | Metrik kuantitatif | Rujukan regulasi / kebijakan | Prioritas platform yang dapat ditindaklanjuti |
-| :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- |
 | **Lonjakan pendanaan kuantum** | $1,3 miliar terkumpul global pada lima bulan pertama 2026 | Return on Resilience (RoR) | Geser anggaran dari uji coba spekulatif ke beban kerja hibrida kuantum-klasik "tanpa-penyesalan". |
 | **Eksposur dekripsi data** | 100% data terenkripsi yang ditransmisikan melalui saluran publik terpapar pemanenan SNDL | DORA Pasal 6 (Keamanan TIK) | Terapkan alat penemuan kriptografis untuk mengidentifikasi kunci RSA/ECC rentan di seluruh estat. |
 | **Infrastruktur berdaulat** | Alokasi £2,5 miliar UK National Quantum Strategy | UK Quantum Missions / Lord Vallance | Bangun kemitraan lokal dengan supercluster nasional seperti NQCC. |
