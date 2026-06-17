@@ -579,6 +579,15 @@ def _build_article_jsonld(
     # turn json.dumps's \n back into a literal newline, which breaks
     # test_page_inline_jsonld_is_valid_json.
     description = " ".join((study.get("problem", "") or "").split())[:200]
+    # Schema.org Article requires datePublished. Case studies don't carry
+    # a single launch date so derive one from the YAML ``period`` start
+    # year (e.g. "2023 – present" → "2023-01-01"). Falls back to the
+    # case-studies hub launch date when period is non-numeric.
+    period = str(study.get("period", "")).strip()
+    period_year_match = re.match(r"\s*(\d{4})", period)
+    date_published = (
+        f"{period_year_match.group(1)}-01-01" if period_year_match else "2025-09-01"
+    )
     article: dict = {
         "@context": "https://schema.org",
         "@type": "Article",
@@ -588,6 +597,8 @@ def _build_article_jsonld(
         "url": url,
         "articleSection": lbl["Case study"],
         "inLanguage": bcp47,
+        "datePublished": date_published,
+        "dateModified": "2026-06-17",
         "isPartOf": {
             "@type": "CollectionPage",
             "@id": _BASE_URL + _hub_url(lang, url_segment) + "#collection",
