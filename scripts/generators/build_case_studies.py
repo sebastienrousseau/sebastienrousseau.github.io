@@ -574,12 +574,17 @@ def _build_article_jsonld(
         "name": "HSBC Holdings plc",
         "url": links["bank"],
     }] if "bank" in links else []
+    # Collapse YAML folded-scalar newlines so JSON-LD stays a single
+    # logical line. Postbuild HTML transforms apply unescape passes that
+    # turn json.dumps's \n back into a literal newline, which breaks
+    # test_page_inline_jsonld_is_valid_json.
+    description = " ".join((study.get("problem", "") or "").split())[:200]
     article: dict = {
         "@context": "https://schema.org",
         "@type": "Article",
         "@id": url + "#article",
         "headline": study.get("title", study["slug"]),
-        "description": (study.get("problem", "") or "")[:200],
+        "description": description,
         "url": url,
         "articleSection": lbl["Case study"],
         "inLanguage": bcp47,
