@@ -871,19 +871,16 @@ def _contact_slug(lang: str) -> str:
         return _CONTACT_SLUG_CACHE[lang]
     slug_path = ROOT / "_data" / "i18n" / lang / "slugs.json"
     slug = "contact"
-    try:
+    import contextlib
+
+    with contextlib.suppress(OSError, ValueError):
         slug = json.loads(slug_path.read_text()).get("static", {}).get("contact", "contact")
-    except (OSError, ValueError):
-        pass
     _CONTACT_SLUG_CACHE[lang] = slug
     return slug
 
 
 def _render_cta_stage(lbl: dict[str, str], lang: str) -> str:
-    if lang == "en":
-        contact = "/contact/"
-    else:
-        contact = f"/{lang}/{_contact_slug(lang)}/"
+    contact = "/contact/" if lang == "en" else f"/{lang}/{_contact_slug(lang)}/"
     return (
         '<section class="cs-stage cs-cta" data-stage>'
         '<div class="cs-stage-row">'
