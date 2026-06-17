@@ -648,7 +648,6 @@ def _render_hero_stage(
     if deck.startswith('"') and deck.endswith('"'):
         deck = deck[1:-1]
     banner = study.get("banner", "")
-    banner_alt = study.get("banner_alt", title)
     breadcrumb = _render_breadcrumb(lbl, lang, url_segment, title)
 
     media_html = ""
@@ -876,7 +875,6 @@ def _render_more_studies_stage(
         title = s.get("title", slug)
         kicker = s.get("kicker", lbl["eyebrow"])
         banner = s.get("banner", "")
-        banner_alt = s.get("banner_alt", title)
         href = _study_url(lang, url_segment, slug)
         media_html = ""
         if banner:
@@ -981,7 +979,6 @@ def _render_side_panel(study: dict, lbl: dict[str, str], lang: str) -> str:
     enc_url = _up.quote(full_url, safe="")
     title_str = study.get("title", study["slug"])
     enc_title = _up.quote(title_str, safe="")
-    enc_body = _up.quote(f"{title_str}\n\n{full_url}", safe="")
     enc_subject = enc_title
     enc_mail_body = _up.quote(f"Read more: {full_url}", safe="")
 
@@ -1229,7 +1226,6 @@ def _render_index_body(
 
     # Pick a hero banner from the first study so the hub feels editorial.
     hero_banner = studies[0].get("banner", "")
-    hero_banner_alt = studies[0].get("banner_alt", "")
 
     # Categories represented across all studies.
     categories: list[tuple[str, str]] = []
@@ -1338,7 +1334,6 @@ def _render_index_body(
         excerpt = (problem.strip()[:200].rstrip() + "…") if problem else ""
         banner = s.get("banner", "")
         banner_alt = s.get("banner_alt", title)
-        sector = s.get("sector", "")
         href = _study_url(lang, url_segment, slug)
 
         media_html = ""
