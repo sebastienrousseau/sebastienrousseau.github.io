@@ -420,7 +420,7 @@ def _render_rail_links(links: dict[str, str], lbl: dict[str, str]) -> str:
             )
     return (
         '<div class="cs-rail-links">'
-        f'<h3>{_esc(lbl["Verifiable links"])}</h3>'
+        f'<p class="cs-side-heading">{_esc(lbl["Verifiable links"])}</p>'
         f'<ul>{"".join(rows)}</ul></div>'
     )
 
@@ -435,7 +435,7 @@ def _render_share_rail(url: str, title: str, lbl: dict[str, str]) -> str:
     li_href = f"https://www.linkedin.com/sharing/share-offsite/?url={enc_url}"
     return (
         '<div class="cs-rail-share-block">'
-        f'<h3>{_esc(lbl["Share"])}</h3>'
+        f'<p class="cs-side-heading">{_esc(lbl["Share"])}</p>'
         '<div class="cs-rail-share">'
         f'<a href="{x_href}" rel="noopener noreferrer" target="_blank" '
         f'aria-label="{_esc(lbl["Share on X"])}" title="{_esc(lbl["Share on X"])}">X</a>'
@@ -1004,7 +1004,7 @@ def _render_side_links(links: dict, lbl: dict[str, str]) -> str:
             )
     return (
         '<div class="cs-side-section cs-side-links">'
-        f'<h3>{_esc(lbl["Verifiable links"])}</h3>'
+        f'<p class="cs-side-heading">{_esc(lbl["Verifiable links"])}</p>'
         f'<ul>{"".join(link_rows)}</ul></div>'
     )
 
@@ -1019,7 +1019,7 @@ def _render_share_block(study: dict, lbl: dict[str, str], lang: str) -> str:
     enc_mail_body = _up.quote(f"Read more: {full_url}", safe="")
     return (
         '<div class="cs-side-section cs-side-share-block">'
-        f'<h3>{_esc(lbl["Share"])}</h3>'
+        f'<p class="cs-side-heading">{_esc(lbl["Share"])}</p>'
         '<nav class="share-rail" aria-label="Share">'
         '<ul>'
         f'<li><a href="https://twitter.com/intent/tweet?url={enc_url}&amp;text={enc_title}" '
@@ -1047,7 +1047,7 @@ def _render_side_panel(study: dict, lbl: dict[str, str], lang: str) -> str:
         pills = "".join(f"<li>{_esc(s)}</li>" for s in standards)
         standards_block = (
             '<div class="cs-side-section cs-side-standards">'
-            f'<h3>{_esc(lbl["Aligned standards"])}</h3>'
+            f'<p class="cs-side-heading">{_esc(lbl["Aligned standards"])}</p>'
             f'<ul>{pills}</ul></div>'
         )
     return (

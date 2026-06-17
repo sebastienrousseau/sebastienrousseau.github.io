@@ -554,13 +554,17 @@
       .cs-hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.05) 0,rgba(0,0,0,.15) 40%,rgba(0,0,0,.65) 100%);z-index:1}
       .cs-hero > .cs-stage-row{position:relative;z-index:2;display:block;padding:clamp(48px,7vw,80px) clamp(24px,5vw,56px);max-width:1100px;margin:0 auto;width:100%}
       .cs-hero-text{display:flex;flex-direction:column;max-width:780px}
-      .cs-hero .cs-breadcrumb{color:rgba(255,255,255,.8);margin:0 0 36px;font-size:.6875rem;letter-spacing:.14em;text-transform:uppercase}
-      .cs-hero .cs-breadcrumb a{color:rgba(255,255,255,.8);text-decoration:none}
+      /* Opaque text colours over the dark hero photo. pa11y can't
+         compute contrast through rgba() alpha + photo background, so
+         we use solid #fff (with subtle CSS opacity for the muted
+         breadcrumb separators where needed). */
+      .cs-hero .cs-breadcrumb{color:#fff;margin:0 0 36px;font-size:.6875rem;letter-spacing:.14em;text-transform:uppercase}
+      .cs-hero .cs-breadcrumb a{color:#fff;text-decoration:none}
       .cs-hero .cs-breadcrumb a:hover{color:#fff;text-decoration:underline}
       .cs-hero .cs-breadcrumb [aria-current="page"]{color:#fff;font-weight:700}
-      .cs-hero .cs-kicker{display:inline-block;font-family:var(--type-body);font-size:.6875rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#fff;background:none;padding:0;margin:0 0 22px;border:0;align-self:start;opacity:.95}
+      .cs-hero .cs-kicker{display:inline-block;font-family:var(--type-body);font-size:.6875rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#fff;background:none;padding:0;margin:0 0 22px;border:0;align-self:start}
       .cs-hero h1{font-family:var(--type-display);font-size:clamp(2.25rem,5vw,3.75rem);line-height:1.02;font-weight:600;letter-spacing:-.02em;color:#fff;margin:0 0 28px;text-wrap:balance;max-width:920px}
-      .cs-hero .cs-deck{font-family:var(--type-display);font-size:clamp(1rem,1.4vw,1.25rem);line-height:1.4;color:rgba(255,255,255,.92);font-weight:400;margin:0 0 32px;max-width:680px}
+      .cs-hero .cs-deck{font-family:var(--type-display);font-size:clamp(1rem,1.4vw,1.25rem);line-height:1.4;color:#fff;font-weight:400;margin:0 0 32px;max-width:680px}
       .cs-hero .cs-byline{display:none}
       .cs-hero-cta{display:inline-flex;align-items:center;gap:10px;padding:14px 28px;font-family:var(--type-body);font-size:.8125rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#000;background:#fff;border:2px solid #fff;text-decoration:none;cursor:pointer;transition:transform .2s ease,background .2s ease,color .2s ease;min-height:44px;align-self:start;line-height:1.2}
       .cs-hero-cta:hover{background:transparent;color:#fff;transform:translateY(-1px)}
@@ -580,7 +584,7 @@
          rail reads as a calm reference column, not a list of headlines. */
       .cs-side-section{padding-block:20px 20px;border-block-start:1px solid var(--cs-rule);display:flex;flex-direction:column;gap:10px}
       .cs-side-section:first-child{border-block-start:0;padding-block-start:0}
-      .cs-side-section dt,.cs-side-section h3{font-family:var(--type-body);font-size:.6875rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--cs-ink-mute);margin:0;line-height:1.2}
+      .cs-side-section dt,.cs-side-section h3,.cs-side-section .cs-side-heading{font-family:var(--type-body);font-size:.6875rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--cs-ink-mute);margin:0;line-height:1.2}
       .cs-side-section dd,.cs-side-section p{font-family:var(--type-body);font-size:.875rem;line-height:1.5;color:var(--cs-ink);margin:0;font-weight:500}
       .cs-side-section ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px}
       .cs-side-section.cs-side-standards ul{flex-direction:row;flex-wrap:wrap;gap:6px}
