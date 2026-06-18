@@ -1050,6 +1050,13 @@
         .ap-burger{display:inline-flex;align-items:center;justify-content:center;cursor:pointer;font-size:18px;color:var(--ink);width:44px;height:44px;user-select:none}
         .ap-nav:has(.ap-toggle:checked) .ap-menu{display:flex;flex-direction:column;position:absolute;top:var(--nav-h);left:0;right:0;background:var(--bg);padding:18px 22px;gap:14px;border-bottom:1px solid var(--border);justify-content:flex-start;text-align:center;z-index:99}
       }
+      /* Tight phones: hide the language switcher chip from the header to
+         declutter the row. The 27-locale menu is large; visitors can
+         still switch language via the footer links or browser settings
+         until the burger opens. */
+      @media (max-width:640px){
+        .ap-lang{display:none}
+      }
 
       /* ---------- Hero ----------
          Apple-HIG aligned: radical breathing room (120–160px vertical on
@@ -1698,8 +1705,28 @@
       .proj-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px;text-align:start}
       @media (max-width:980px){.proj-grid{grid-template-columns:repeat(2,1fr)}}
       @media (max-width:600px){.proj-grid{grid-template-columns:1fr}}
-      .proj-card{background:var(--card);border-radius:22px;display:flex;flex-direction:column;overflow:hidden;transition:transform .25s ease,box-shadow .25s ease;box-shadow:var(--shadow)}
-      .proj-card:hover{transform:translateY(-3px);box-shadow:0 18px 40px -16px rgba(0,0,0,.18)}
+      /* ---------- For-decision-makers grid ----------
+         Three risk-themed cards (Compliance · Cost reduction · Strategic
+         hedging) above the open-source portfolio. Translates technical
+         work into board-level vocabulary. ---------- */
+      .dm-grid{display:grid;grid-template-columns:1fr;gap:20px;margin:32px auto 0;max-width:1100px}
+      @media (min-width:760px){.dm-grid{grid-template-columns:repeat(3,1fr);gap:24px}}
+      .dm-card{background:var(--card);border:1px solid var(--rule);border-radius:18px;padding:28px 28px 26px;display:flex;flex-direction:column;text-align:start;transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease}
+      .dm-card:hover{transform:translateY(-3px);border-color:var(--ink-mute);box-shadow:0 18px 36px -18px rgba(0,0,0,.14)}
+      .dm-card .dm-tag{font-family:var(--type-body);font-size:11.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--accent,var(--link-color));margin:0 0 12px}
+      .dm-card .dm-h{font-family:var(--type-display);font-size:1.25rem;line-height:1.2;font-weight:600;letter-spacing:-.01em;color:var(--ink-deep);margin:0 0 12px}
+      .dm-card p{font-size:14.5px;line-height:1.55;color:var(--ink-soft);margin:0 0 18px;flex:1}
+      .dm-card .dm-link{font-family:var(--type-body);font-size:12.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--accent,var(--link-color));text-decoration:none}
+      .dm-card .dm-link:hover{text-decoration:underline;text-underline-offset:3px}
+
+      .proj-card{background:var(--card);border-radius:22px;display:flex;flex-direction:column;overflow:hidden;transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease;box-shadow:var(--shadow);border:1px solid transparent}
+      .proj-card:hover{transform:translateY(-4px);box-shadow:0 24px 48px -16px rgba(0,0,0,.2);border-color:var(--ink-mute)}
+      /* On hover, lift the GitHub stats row into focus — pulls the
+         "★ stars · last commit" data forward so the open-source projects
+         feel "alive" instead of static documentation cards. */
+      .proj-card .gh-stats-row{transition:color .25s ease,transform .25s ease}
+      .proj-card:hover .gh-stats-row{color:var(--ink-deep);transform:translateY(-1px)}
+      .proj-card:hover .gh-stat{border-color:var(--ink-mute)}
       .proj-card-media{aspect-ratio:5/3;background:#fff;display:flex;align-items:center;justify-content:center;padding:24px;overflow:hidden;border-bottom:1px solid var(--border)}
       /* Force every logo into the same 200×56 bounding box. object-fit:contain preserves
          aspect ratio inside that box, so a square mark and a wide wordmark visually agree. */
@@ -1964,7 +1991,7 @@
           </div>
         </div>
         <form class="ap-newsletter" action="/contact/" method="get" aria-label="Newsletter signup">
-          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — research notes on payments, AI &amp; post-quantum crypto. No spam.</label>
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Monthly briefings on the intersection of AI, ISO 20022, and quantum-safe payments — written for senior banking architects making the call. No spam, unsubscribe in one click.</label>
           <div class="ap-newsletter-row">
             <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="you@bank.com" />
             <input type="hidden" name="subject" value="newsletter" />
