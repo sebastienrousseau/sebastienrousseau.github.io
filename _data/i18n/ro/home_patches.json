@@ -312,6 +312,30 @@
     [
       ">Built for the edge\\. Architected for uncompromising resilience\\. Powering the next generation of global payments\\.</p>",
       ">Construit pentru edge. Arhitecturat pentru reziliență fără compromisuri. Alimentând următoarea generație de plăți globale.</p>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>Hand-authoring <strong>ISO 20022 pain\\.001</strong> is fragile under SEPA and SWIFT cutovers\\.</dd></div><div><dt>Approach</dt><dd>Schema-driven Python that maps CSV or SQLite into validated payment XML\\.</dd></div><div><dt>Outcome</dt><dd>Ops ship pain\\.001 in minutes; the audit trail survives the migration\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> ISO 20022 · SEPA \\+ SWIFT</p>",
+      "<dl class=pao><div><dt>Problemă</dt><dd>Codificarea manuală a mesajelor <strong>ISO 20022 pain.001</strong> este fragilă în contextul migrărilor SEPA și SWIFT.</dd></div><div><dt>Abordare</dt><dd>Bibliotecă Python bazată pe schemă care mapează CSV sau SQLite în XML de plată validat.</dd></div><div><dt>Rezultat</dt><dd>Operațiunile emit pain.001 în câteva minute; pista de audit supraviețuiește migrării.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> ISO 20022 · SEPA + SWIFT</p>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>FI-to-FI credit transfers fail audit when XSD, IBAN and PII rules diverge\\.</dd></div><div><dt>Approach</dt><dd>One library: JSON Schema, XSD, IBAN across 75 countries, GDPR-grade masking\\.</dd></div><div><dt>Outcome</dt><dd>Cross-border credit transfers that pass first-time at the regulator\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> 75 countries · IBAN</p>",
+      "<dl class=pao><div><dt>Problemă</dt><dd>Transferurile de credit FI-to-FI nu trec auditul când regulile XSD, IBAN și PII diferă.</dd></div><div><dt>Abordare</dt><dd>O singură bibliotecă: JSON Schema, XSD, IBAN în 75 de țări, mascare la nivel GDPR.</dd></div><div><dt>Rezultat</dt><dd>Transferuri de credit transfrontaliere care trec prima oară la autoritatea de reglementare.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> 75 țări · IBAN</p>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>Statement formats trap reconciliation teams in manual rekeying\\.</dd></div><div><dt>Approach</dt><dd>One Python toolkit that normalises multi-format statements with audit-grade lineage\\.</dd></div><div><dt>Outcome</dt><dd>Reconciliation runs without bespoke per-bank glue code\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> Multi-format · Audit-grade</p>",
+      "<dl class=pao><div><dt>Problemă</dt><dd>Formatele extraselor de cont blochează echipele de reconciliere în reintroducerea manuală a datelor.</dd></div><div><dt>Abordare</dt><dd>Un set de instrumente Python care normalizează extrasele în mai multe formate cu trasabilitate de audit.</dd></div><div><dt>Rezultat</dt><dd>Reconcilierea rulează fără cod specific per bancă.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> Multi-format · Grad de audit</p>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>Pre-PQC hashing libraries leave credential stores quantum-exposed\\.</dd></div><div><dt>Approach</dt><dd>Memory-safe Rust hash and digest library with a post-quantum posture\\.</dd></div><div><dt>Outcome</dt><dd>Drop-in secure hashing for services planning PQC migration\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> Memory-safe · Rust</p>",
+      "<dl class=pao><div><dt>Problemă</dt><dd>Bibliotecile de hashing pre-PQC lasă depozitele de credențiale expuse la amenințări cuantice.</dd></div><div><dt>Abordare</dt><dd>Bibliotecă Rust cu hash și digest sigură la nivel de memorie, cu o postură post-quantum.</dd></div><div><dt>Rezultat</dt><dd>Hashing securizat tip drop-in pentru serviciile care planifică migrarea PQC.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> Siguranță la memorie · Rust</p>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>Tier-1 banks carry harvest-now-decrypt-later exposure on every TLS session\\.</dd></div><div><dt>Approach</dt><dd>Pure-Rust <strong>CRYSTALS-Kyber</strong> \\(NIST FIPS 203\\) that plugs into existing auth flows\\.</dd></div><div><dt>Outcome</dt><dd>Post-quantum key exchange in production-grade Rust, independently validated\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> NIST FIPS 203</p>",
+      "<dl class=pao><div><dt>Problemă</dt><dd>Băncile Tier-1 sunt expuse riscului harvest-now-decrypt-later la fiecare sesiune TLS.</dd></div><div><dt>Abordare</dt><dd><strong>CRYSTALS-Kyber</strong> pur în Rust (NIST FIPS 203), integrat în fluxurile de autentificare existente.</dd></div><div><dt>Rezultat</dt><dd>Schimb de chei post-quantum în Rust de nivel producție, validat independent.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> NIST FIPS 203</p>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>AI, MCP and config pipelines run on YAML parsers with C-backed UB and silent spec drift\\.</dd></div><div><dt>Approach</dt><dd>Pure-Rust YAML 1\\.2 across library, CLI, LSP, MCP and WASM — zero unsafe, full spec\\.</dd></div><div><dt>Outcome</dt><dd>YAML pipelines that stop being the supply-chain weak link\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> 406 \\/ 406 spec · 0 unsafe</p>",
+      "<dl class=pao><div><dt>Problemă</dt><dd>Fluxurile AI, MCP și de configurare rulează pe parsere YAML cu UB din C și derivă silențioasă față de specificație.</dd></div><div><dt>Abordare</dt><dd>YAML 1.2 pur în Rust — bibliotecă, CLI, LSP, MCP și WASM — zero unsafe, conformitate completă cu specificația.</dd></div><div><dt>Rezultat</dt><dd>Fluxurile YAML încetează să mai fie veriga slabă a lanțului de aprovizionare software.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> 406 / 406 specificație · 0 unsafe</p>"
     ]
   ]
 }

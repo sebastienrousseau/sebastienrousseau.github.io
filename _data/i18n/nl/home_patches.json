@@ -312,6 +312,30 @@
     [
       ">Read the white paper</a>",
       ">Lees de whitepaper</a>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>Hand-authoring <strong>ISO 20022 pain\\.001</strong> is fragile under SEPA and SWIFT cutovers\\.</dd></div><div><dt>Approach</dt><dd>Schema-driven Python that maps CSV or SQLite into validated payment XML\\.</dd></div><div><dt>Outcome</dt><dd>Ops ship pain\\.001 in minutes; the audit trail survives the migration\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> ISO 20022 · SEPA \\+ SWIFT</p>",
+      "<dl class=pao><div><dt>Probleem</dt><dd>Handmatig samenstellen van <strong>ISO 20022 pain.001</strong> is foutgevoelig bij SEPA- en SWIFT-overgangen.</dd></div><div><dt>Aanpak</dt><dd>Schemagestuurde Python die CSV of SQLite omzet naar gevalideerd betalings-XML.</dd></div><div><dt>Resultaat</dt><dd>Operationeel teams leveren pain.001 in minuten; het auditspoor overleeft de migratie.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> ISO 20022 · SEPA + SWIFT</p>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>FI-to-FI credit transfers fail audit when XSD, IBAN and PII rules diverge\\.</dd></div><div><dt>Approach</dt><dd>One library: JSON Schema, XSD, IBAN across 75 countries, GDPR-grade masking\\.</dd></div><div><dt>Outcome</dt><dd>Cross-border credit transfers that pass first-time at the regulator\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> 75 countries · IBAN</p>",
+      "<dl class=pao><div><dt>Probleem</dt><dd>FI-to-FI creditoverboekingen falen de audit wanneer XSD-, IBAN- en PII-regels uiteenlopen.</dd></div><div><dt>Aanpak</dt><dd>Één bibliotheek: JSON Schema, XSD, IBAN in 75 landen, GDPR-waardige maskering.</dd></div><div><dt>Resultaat</dt><dd>Grensoverschrijdende creditoverboekingen die bij de toezichthouder direct worden goedgekeurd.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> 75 landen · IBAN</p>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>Statement formats trap reconciliation teams in manual rekeying\\.</dd></div><div><dt>Approach</dt><dd>One Python toolkit that normalises multi-format statements with audit-grade lineage\\.</dd></div><div><dt>Outcome</dt><dd>Reconciliation runs without bespoke per-bank glue code\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> Multi-format · Audit-grade</p>",
+      "<dl class=pao><div><dt>Probleem</dt><dd>Rekeningafschriftformaten dwingen reconciliatieteams tot handmatige herverwerking.</dd></div><div><dt>Aanpak</dt><dd>Één Python-toolkit die meerformatige afschriften normaliseert met auditwaardige herkomstregistratie.</dd></div><div><dt>Resultaat</dt><dd>Reconciliatie verloopt zonder maatwerkcode per bank.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> Multi-formaat · Auditgraad</p>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>Pre-PQC hashing libraries leave credential stores quantum-exposed\\.</dd></div><div><dt>Approach</dt><dd>Memory-safe Rust hash and digest library with a post-quantum posture\\.</dd></div><div><dt>Outcome</dt><dd>Drop-in secure hashing for services planning PQC migration\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> Memory-safe · Rust</p>",
+      "<dl class=pao><div><dt>Probleem</dt><dd>Pre-PQC hashing-bibliotheken laten credentialopslag kwetsbaar voor quantumaanvallen.</dd></div><div><dt>Aanpak</dt><dd>Geheugensveilige Rust-hash- en digestbibliotheek met een post-quantum standpunt.</dd></div><div><dt>Resultaat</dt><dd>Directe vervanging voor veilige hashing in diensten die een PQC-migratie plannen.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> Geheugensveilig · Rust</p>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>Tier-1 banks carry harvest-now-decrypt-later exposure on every TLS session\\.</dd></div><div><dt>Approach</dt><dd>Pure-Rust <strong>CRYSTALS-Kyber</strong> \\(NIST FIPS 203\\) that plugs into existing auth flows\\.</dd></div><div><dt>Outcome</dt><dd>Post-quantum key exchange in production-grade Rust, independently validated\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> NIST FIPS 203</p>",
+      "<dl class=pao><div><dt>Probleem</dt><dd>Tier-1-banken lopen harvest-now-decrypt-later-risico op elke TLS-sessie.</dd></div><div><dt>Aanpak</dt><dd>Puur-Rust <strong>CRYSTALS-Kyber</strong> (NIST FIPS 203) dat naadloos integreert in bestaande authenticatiestromen.</dd></div><div><dt>Resultaat</dt><dd>Post-quantum sleuteluitwisseling in productieklaar Rust, onafhankelijk gevalideerd.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> NIST FIPS 203</p>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>AI, MCP and config pipelines run on YAML parsers with C-backed UB and silent spec drift\\.</dd></div><div><dt>Approach</dt><dd>Pure-Rust YAML 1\\.2 across library, CLI, LSP, MCP and WASM — zero unsafe, full spec\\.</dd></div><div><dt>Outcome</dt><dd>YAML pipelines that stop being the supply-chain weak link\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> 406 \\/ 406 spec · 0 unsafe</p>",
+      "<dl class=pao><div><dt>Probleem</dt><dd>AI-, MCP- en configuratiepijplijnen draaien op YAML-parsers met C-gebaseerde UB en stille specificatiedrift.</dd></div><div><dt>Aanpak</dt><dd>Puur-Rust YAML 1.2 in bibliotheek, CLI, LSP, MCP en WASM — nul unsafe, volledige specificatie.</dd></div><div><dt>Resultaat</dt><dd>YAML-pijplijnen die niet langer de zwakke schakel in de toeleveringsketen zijn.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> 406 / 406 specificatie · 0 unsafe</p>"
     ]
   ]
 }

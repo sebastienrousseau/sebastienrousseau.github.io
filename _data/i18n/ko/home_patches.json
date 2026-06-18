@@ -312,6 +312,30 @@
     [
       ">Read the white paper</a>",
       ">백서 읽기</a>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>Hand-authoring <strong>ISO 20022 pain\\.001</strong> is fragile under SEPA and SWIFT cutovers\\.</dd></div><div><dt>Approach</dt><dd>Schema-driven Python that maps CSV or SQLite into validated payment XML\\.</dd></div><div><dt>Outcome</dt><dd>Ops ship pain\\.001 in minutes; the audit trail survives the migration\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> ISO 20022 · SEPA \\+ SWIFT</p>",
+      "<dl class=pao><div><dt>문제</dt><dd><strong>ISO 20022 pain.001</strong>을 수작업으로 작성하면 SEPA 및 SWIFT 전환 시 오류가 발생하기 쉽습니다.</dd></div><div><dt>접근 방식</dt><dd>CSV 또는 SQLite를 검증된 결제 XML로 매핑하는 스키마 기반 Python.</dd></div><div><dt>성과</dt><dd>운영팀이 pain.001을 수 분 내에 처리하며, 감사 추적은 마이그레이션 후에도 유지됩니다.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>영향</span> ISO 20022 · SEPA + SWIFT</p>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>FI-to-FI credit transfers fail audit when XSD, IBAN and PII rules diverge\\.</dd></div><div><dt>Approach</dt><dd>One library: JSON Schema, XSD, IBAN across 75 countries, GDPR-grade masking\\.</dd></div><div><dt>Outcome</dt><dd>Cross-border credit transfers that pass first-time at the regulator\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> 75 countries · IBAN</p>",
+      "<dl class=pao><div><dt>문제</dt><dd>XSD, IBAN 및 PII 규정이 상이할 경우 FI-to-FI 신용 이체가 감사를 통과하지 못합니다.</dd></div><div><dt>접근 방식</dt><dd>75개국의 JSON Schema, XSD, IBAN, GDPR 수준의 마스킹을 단일 라이브러리로 제공.</dd></div><div><dt>성과</dt><dd>규제 기관의 첫 심사를 통과하는 크로스보더 신용 이체.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>영향</span> 75개국 · IBAN</p>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>Statement formats trap reconciliation teams in manual rekeying\\.</dd></div><div><dt>Approach</dt><dd>One Python toolkit that normalises multi-format statements with audit-grade lineage\\.</dd></div><div><dt>Outcome</dt><dd>Reconciliation runs without bespoke per-bank glue code\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> Multi-format · Audit-grade</p>",
+      "<dl class=pao><div><dt>문제</dt><dd>계좌 명세서 형식이 달라 조정 팀이 수동 재입력 작업에 묶입니다.</dd></div><div><dt>접근 방식</dt><dd>감사 수준의 계보와 함께 다양한 형식의 명세서를 정규화하는 단일 Python 툴킷.</dd></div><div><dt>성과</dt><dd>은행별 맞춤 연결 코드 없이 조정 작업을 처리합니다.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>영향</span> 다중 형식 · 감사 수준</p>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>Pre-PQC hashing libraries leave credential stores quantum-exposed\\.</dd></div><div><dt>Approach</dt><dd>Memory-safe Rust hash and digest library with a post-quantum posture\\.</dd></div><div><dt>Outcome</dt><dd>Drop-in secure hashing for services planning PQC migration\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> Memory-safe · Rust</p>",
+      "<dl class=pao><div><dt>문제</dt><dd>PQC 이전의 해싱 라이브러리는 자격 증명 저장소를 양자 위협에 노출시킵니다.</dd></div><div><dt>접근 방식</dt><dd>post-quantum 대비 자세를 갖춘 메모리 안전 Rust 해시 및 다이제스트 라이브러리.</dd></div><div><dt>성과</dt><dd>PQC 전환을 계획 중인 서비스에 즉시 적용 가능한 안전한 해싱.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>영향</span> 메모리 안전 · Rust</p>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>Tier-1 banks carry harvest-now-decrypt-later exposure on every TLS session\\.</dd></div><div><dt>Approach</dt><dd>Pure-Rust <strong>CRYSTALS-Kyber</strong> \\(NIST FIPS 203\\) that plugs into existing auth flows\\.</dd></div><div><dt>Outcome</dt><dd>Post-quantum key exchange in production-grade Rust, independently validated\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> NIST FIPS 203</p>",
+      "<dl class=pao><div><dt>문제</dt><dd>Tier-1 은행은 모든 TLS 세션에서 harvest-now-decrypt-later 위협에 노출되어 있습니다.</dd></div><div><dt>접근 방식</dt><dd>기존 인증 흐름에 연동되는 순수 Rust 기반 <strong>CRYSTALS-Kyber</strong> (NIST FIPS 203).</dd></div><div><dt>성과</dt><dd>독립적으로 검증된 프로덕션 수준 Rust의 post-quantum 키 교환.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>영향</span> NIST FIPS 203</p>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>AI, MCP and config pipelines run on YAML parsers with C-backed UB and silent spec drift\\.</dd></div><div><dt>Approach</dt><dd>Pure-Rust YAML 1\\.2 across library, CLI, LSP, MCP and WASM — zero unsafe, full spec\\.</dd></div><div><dt>Outcome</dt><dd>YAML pipelines that stop being the supply-chain weak link\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> 406 \\/ 406 spec · 0 unsafe</p>",
+      "<dl class=pao><div><dt>문제</dt><dd>AI, MCP 및 설정 파이프라인이 C 기반 UB와 묵시적 스펙 편차를 가진 YAML 파서 위에서 실행됩니다.</dd></div><div><dt>접근 방식</dt><dd>라이브러리, CLI, LSP, MCP, WASM 전반에 걸친 순수 Rust YAML 1.2 — unsafe 코드 없음, 완전한 스펙 준수.</dd></div><div><dt>성과</dt><dd>공급망의 취약 고리가 되지 않는 YAML 파이프라인.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>영향</span> 406 / 406 스펙 · 0 unsafe</p>"
     ]
   ]
 }

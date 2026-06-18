@@ -312,6 +312,30 @@
     [
       ">Read the white paper</a>",
       ">Beyaz kitabı oku</a>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>Hand-authoring <strong>ISO 20022 pain\\.001</strong> is fragile under SEPA and SWIFT cutovers\\.</dd></div><div><dt>Approach</dt><dd>Schema-driven Python that maps CSV or SQLite into validated payment XML\\.</dd></div><div><dt>Outcome</dt><dd>Ops ship pain\\.001 in minutes; the audit trail survives the migration\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> ISO 20022 · SEPA \\+ SWIFT</p>",
+      "<dl class=pao><div><dt>Sorun</dt><dd><strong>ISO 20022 pain.001</strong> mesajlarını elle oluşturmak, SEPA ve SWIFT geçiş dönemlerinde hata riskini artırır.</dd></div><div><dt>Yaklaşım</dt><dd>CSV veya SQLite verilerini doğrulanmış ödeme XML'ine dönüştüren şema güdümlü Python altyapısı.</dd></div><div><dt>Sonuç</dt><dd>Operasyon ekipleri pain.001 mesajlarını dakikalar içinde üretir; denetim izi geçiş sonrasında da geçerliliğini korur.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Etki</span> ISO 20022 · SEPA + SWIFT</p>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>FI-to-FI credit transfers fail audit when XSD, IBAN and PII rules diverge\\.</dd></div><div><dt>Approach</dt><dd>One library: JSON Schema, XSD, IBAN across 75 countries, GDPR-grade masking\\.</dd></div><div><dt>Outcome</dt><dd>Cross-border credit transfers that pass first-time at the regulator\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> 75 countries · IBAN</p>",
+      "<dl class=pao><div><dt>Sorun</dt><dd>XSD, IBAN ve PII kuralları farklılaştığında FI-to-FI kredi transferleri denetimden geçemez.</dd></div><div><dt>Yaklaşım</dt><dd>75 ülkede JSON Schema, XSD, IBAN doğrulaması ve GDPR düzeyinde maskeleme sunan tek kütüphane.</dd></div><div><dt>Sonuç</dt><dd>Sınır ötesi kredi transferleri düzenleyici denetimden ilk seferinde geçer.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Etki</span> 75 ülke · IBAN</p>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>Statement formats trap reconciliation teams in manual rekeying\\.</dd></div><div><dt>Approach</dt><dd>One Python toolkit that normalises multi-format statements with audit-grade lineage\\.</dd></div><div><dt>Outcome</dt><dd>Reconciliation runs without bespoke per-bank glue code\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> Multi-format · Audit-grade</p>",
+      "<dl class=pao><div><dt>Sorun</dt><dd>Ekstre formatları, mutabakat ekiplerini manuel veri girişine mahkûm eder.</dd></div><div><dt>Yaklaşım</dt><dd>Denetim düzeyinde köken kaydıyla çoklu format ekstrelerini normalleştiren tek Python araç seti.</dd></div><div><dt>Sonuç</dt><dd>Mutabakat süreci, banka bazında özel entegrasyon kodu olmaksızın çalışır.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Etki</span> Çoklu format · Denetim düzeyinde</p>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>Pre-PQC hashing libraries leave credential stores quantum-exposed\\.</dd></div><div><dt>Approach</dt><dd>Memory-safe Rust hash and digest library with a post-quantum posture\\.</dd></div><div><dt>Outcome</dt><dd>Drop-in secure hashing for services planning PQC migration\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> Memory-safe · Rust</p>",
+      "<dl class=pao><div><dt>Sorun</dt><dd>PQC öncesi karma kütüphaneleri, kimlik bilgisi depolarını kuantum tehdidine açık bırakır.</dd></div><div><dt>Yaklaşım</dt><dd>post-quantum duruşuyla bellek güvenli Rust karma ve özet kütüphanesi.</dd></div><div><dt>Sonuç</dt><dd>PQC geçişini planlayan servisler için hazır, güvenli karma altyapısı.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Etki</span> Bellek güvenli · Rust</p>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>Tier-1 banks carry harvest-now-decrypt-later exposure on every TLS session\\.</dd></div><div><dt>Approach</dt><dd>Pure-Rust <strong>CRYSTALS-Kyber</strong> \\(NIST FIPS 203\\) that plugs into existing auth flows\\.</dd></div><div><dt>Outcome</dt><dd>Post-quantum key exchange in production-grade Rust, independently validated\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> NIST FIPS 203</p>",
+      "<dl class=pao><div><dt>Sorun</dt><dd>Tier-1 bankalar, her TLS oturumunda harvest-now-decrypt-later riskini taşımaktadır.</dd></div><div><dt>Yaklaşım</dt><dd>Mevcut kimlik doğrulama akışlarına entegre olan saf Rust <strong>CRYSTALS-Kyber</strong> (NIST FIPS 203) uygulaması.</dd></div><div><dt>Sonuç</dt><dd>Üretim kalitesinde Rust ile post-quantum anahtar değişimi; bağımsız olarak doğrulanmıştır.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Etki</span> NIST FIPS 203</p>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>AI, MCP and config pipelines run on YAML parsers with C-backed UB and silent spec drift\\.</dd></div><div><dt>Approach</dt><dd>Pure-Rust YAML 1\\.2 across library, CLI, LSP, MCP and WASM — zero unsafe, full spec\\.</dd></div><div><dt>Outcome</dt><dd>YAML pipelines that stop being the supply-chain weak link\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> 406 \\/ 406 spec · 0 unsafe</p>",
+      "<dl class=pao><div><dt>Sorun</dt><dd>AI, MCP ve yapılandırma süreçleri, C tabanlı UB içeren ve sessiz spec sapmaları gösteren YAML ayrıştırıcıları üzerinde çalışır.</dd></div><div><dt>Yaklaşım</dt><dd>Kütüphane, CLI, LSP, MCP ve WASM genelinde saf Rust YAML 1.2 — sıfır güvensiz kod, tam spec uyumluluğu.</dd></div><div><dt>Sonuç</dt><dd>YAML süreçleri, tedarik zincirinin zayıf halkası olmaktan çıkar.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Etki</span> 406 / 406 spec · 0 güvensiz</p>"
     ]
   ]
 }

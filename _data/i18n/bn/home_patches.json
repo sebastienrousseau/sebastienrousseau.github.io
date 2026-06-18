@@ -312,6 +312,30 @@
     [
       ">Built for the edge\\. Architected for uncompromising resilience\\. Powering the next generation of global payments\\.</p>",
       ">এজের জন্য নির্মিত। আপসহীন স্থিতিস্থাপকতার জন্য পরিকল্পিত। বিশ্বব্যাপী পেমেন্টের পরবর্তী প্রজন্মকে শক্তি যোগাচ্ছে।</p>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>Hand-authoring <strong>ISO 20022 pain\\.001</strong> is fragile under SEPA and SWIFT cutovers\\.</dd></div><div><dt>Approach</dt><dd>Schema-driven Python that maps CSV or SQLite into validated payment XML\\.</dd></div><div><dt>Outcome</dt><dd>Ops ship pain\\.001 in minutes; the audit trail survives the migration\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> ISO 20022 · SEPA \\+ SWIFT</p>",
+      "<dl class=pao><div><dt>সমস্যা</dt><dd>SEPA এবং SWIFT রূপান্তরের সময় <strong>ISO 20022 pain.001</strong> হাতে তৈরি করা ঝুঁকিপূর্ণ।</dd></div><div><dt>পদ্ধতি</dt><dd>CSV বা SQLite থেকে যাচাইকৃত পেমেন্ট XML-এ রূপান্তরকারী Schema-চালিত Python।</dd></div><div><dt>ফলাফল</dt><dd>অপারেশন দল মিনিটের মধ্যে pain.001 প্রেরণ করে; অডিট ট্রেইল মাইগ্রেশনের পরেও অক্ষুণ্ণ থাকে।</dd></div></dl><p class=proj-metric><span class=proj-metric-label>প্রভাব</span> ISO 20022 · SEPA + SWIFT</p>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>FI-to-FI credit transfers fail audit when XSD, IBAN and PII rules diverge\\.</dd></div><div><dt>Approach</dt><dd>One library: JSON Schema, XSD, IBAN across 75 countries, GDPR-grade masking\\.</dd></div><div><dt>Outcome</dt><dd>Cross-border credit transfers that pass first-time at the regulator\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> 75 countries · IBAN</p>",
+      "<dl class=pao><div><dt>সমস্যা</dt><dd>XSD, IBAN এবং PII নিয়ম ভিন্ন হলে FI-to-FI ক্রেডিট ট্রান্সফার অডিটে ব্যর্থ হয়।</dd></div><div><dt>পদ্ধতি</dt><dd>একটি লাইব্রেরি: ৭৫টি দেশে JSON Schema, XSD, IBAN এবং GDPR-মানের মাস্কিং।</dd></div><div><dt>ফলাফল</dt><dd>ক্রস-বর্ডার ক্রেডিট ট্রান্সফার যা প্রথমবারেই নিয়ন্ত্রকের কাছে পাস হয়।</dd></div></dl><p class=proj-metric><span class=proj-metric-label>প্রভাব</span> ৭৫টি দেশ · IBAN</p>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>Statement formats trap reconciliation teams in manual rekeying\\.</dd></div><div><dt>Approach</dt><dd>One Python toolkit that normalises multi-format statements with audit-grade lineage\\.</dd></div><div><dt>Outcome</dt><dd>Reconciliation runs without bespoke per-bank glue code\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> Multi-format · Audit-grade</p>",
+      "<dl class=pao><div><dt>সমস্যা</dt><dd>স্টেটমেন্ট ফরম্যাট রিকনসিলিয়েশন দলকে ম্যানুয়াল পুনরায় এন্ট্রিতে আটকে রাখে।</dd></div><div><dt>পদ্ধতি</dt><dd>একটি Python টুলকিট যা অডিট-মানের বংশপরম্পরা সহ বহু-ফরম্যাট স্টেটমেন্ট স্বাভাবিক করে।</dd></div><div><dt>ফলাফল</dt><dd>রিকনসিলিয়েশন প্রতিটি ব্যাংকের জন্য কাস্টম গ্লু কোড ছাড়াই চলে।</dd></div></dl><p class=proj-metric><span class=proj-metric-label>প্রভাব</span> বহু-ফরম্যাট · অডিট-মান</p>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>Pre-PQC hashing libraries leave credential stores quantum-exposed\\.</dd></div><div><dt>Approach</dt><dd>Memory-safe Rust hash and digest library with a post-quantum posture\\.</dd></div><div><dt>Outcome</dt><dd>Drop-in secure hashing for services planning PQC migration\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> Memory-safe · Rust</p>",
+      "<dl class=pao><div><dt>সমস্যা</dt><dd>Pre-PQC হ্যাশিং লাইব্রেরি ক্রেডেনশিয়াল স্টোরকে কোয়ান্টাম-উন্মুক্ত রাখে।</dd></div><div><dt>পদ্ধতি</dt><dd>post-quantum অবস্থান সহ মেমোরি-নিরাপদ Rust হ্যাশ ও ডাইজেস্ট লাইব্রেরি।</dd></div><div><dt>ফলাফল</dt><dd>PQC মাইগ্রেশন পরিকল্পনাকারী সেবাগুলোর জন্য ড্রপ-ইন নিরাপদ হ্যাশিং।</dd></div></dl><p class=proj-metric><span class=proj-metric-label>প্রভাব</span> মেমোরি-নিরাপদ · Rust</p>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>Tier-1 banks carry harvest-now-decrypt-later exposure on every TLS session\\.</dd></div><div><dt>Approach</dt><dd>Pure-Rust <strong>CRYSTALS-Kyber</strong> \\(NIST FIPS 203\\) that plugs into existing auth flows\\.</dd></div><div><dt>Outcome</dt><dd>Post-quantum key exchange in production-grade Rust, independently validated\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> NIST FIPS 203</p>",
+      "<dl class=pao><div><dt>সমস্যা</dt><dd>Tier-1 ব্যাংকগুলো প্রতিটি TLS সেশনে harvest-now-decrypt-later ঝুঁকি বহন করে।</dd></div><div><dt>পদ্ধতি</dt><dd>বিদ্যমান অথ ফ্লোতে সংযুক্ত pure-Rust <strong>CRYSTALS-Kyber</strong> (NIST FIPS 203)।</dd></div><div><dt>ফলাফল</dt><dd>প্রোডাকশন-মানের Rust-এ post-quantum কী এক্সচেঞ্জ, স্বাধীনভাবে যাচাইকৃত।</dd></div></dl><p class=proj-metric><span class=proj-metric-label>প্রভাব</span> NIST FIPS 203</p>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>AI, MCP and config pipelines run on YAML parsers with C-backed UB and silent spec drift\\.</dd></div><div><dt>Approach</dt><dd>Pure-Rust YAML 1\\.2 across library, CLI, LSP, MCP and WASM — zero unsafe, full spec\\.</dd></div><div><dt>Outcome</dt><dd>YAML pipelines that stop being the supply-chain weak link\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> 406 \\/ 406 spec · 0 unsafe</p>",
+      "<dl class=pao><div><dt>সমস্যা</dt><dd>AI, MCP এবং কনফিগ পাইপলাইন C-ব্যাকড UB এবং নীরব স্পেক বিচ্যুতি সহ YAML পার্সারে চলে।</dd></div><div><dt>পদ্ধতি</dt><dd>লাইব্রেরি, CLI, LSP, MCP এবং WASM জুড়ে pure-Rust YAML 1.2 — শূন্য unsafe, সম্পূর্ণ স্পেক।</dd></div><div><dt>ফলাফল</dt><dd>YAML পাইপলাইন যা সাপ্লাই-চেইনের দুর্বল লিঙ্ক হওয়া বন্ধ করে।</dd></div></dl><p class=proj-metric><span class=proj-metric-label>প্রভাব</span> 406 / 406 স্পেক · 0 unsafe</p>"
     ]
   ]
 }

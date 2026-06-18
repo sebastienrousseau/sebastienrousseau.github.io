@@ -312,6 +312,30 @@
     [
       ">Read the white paper</a>",
       ">Đọc sách trắng</a>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>Hand-authoring <strong>ISO 20022 pain\\.001</strong> is fragile under SEPA and SWIFT cutovers\\.</dd></div><div><dt>Approach</dt><dd>Schema-driven Python that maps CSV or SQLite into validated payment XML\\.</dd></div><div><dt>Outcome</dt><dd>Ops ship pain\\.001 in minutes; the audit trail survives the migration\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> ISO 20022 · SEPA \\+ SWIFT</p>",
+      "<dl class=pao><div><dt>Vấn đề</dt><dd>Soạn thủ công <strong>ISO 20022 pain.001</strong> dễ xảy ra lỗi trong các đợt chuyển đổi SEPA và SWIFT.</dd></div><div><dt>Phương pháp</dt><dd>Python hướng schema ánh xạ CSV hoặc SQLite thành XML thanh toán đã được xác thực.</dd></div><div><dt>Kết quả</dt><dd>Bộ phận vận hành phát hành pain.001 trong vài phút; dấu vết kiểm toán tồn tại sau di chuyển.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Tác động</span> ISO 20022 · SEPA + SWIFT</p>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>FI-to-FI credit transfers fail audit when XSD, IBAN and PII rules diverge\\.</dd></div><div><dt>Approach</dt><dd>One library: JSON Schema, XSD, IBAN across 75 countries, GDPR-grade masking\\.</dd></div><div><dt>Outcome</dt><dd>Cross-border credit transfers that pass first-time at the regulator\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> 75 countries · IBAN</p>",
+      "<dl class=pao><div><dt>Vấn đề</dt><dd>Chuyển tiền tín dụng FI-to-FI không qua được kiểm toán khi quy tắc XSD, IBAN và PII mâu thuẫn nhau.</dd></div><div><dt>Phương pháp</dt><dd>Một thư viện duy nhất: JSON Schema, XSD, IBAN trên 75 quốc gia, che giấu dữ liệu chuẩn GDPR.</dd></div><div><dt>Kết quả</dt><dd>Chuyển tiền tín dụng xuyên biên giới vượt qua cơ quan quản lý ngay lần đầu.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Tác động</span> 75 quốc gia · IBAN</p>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>Statement formats trap reconciliation teams in manual rekeying\\.</dd></div><div><dt>Approach</dt><dd>One Python toolkit that normalises multi-format statements with audit-grade lineage\\.</dd></div><div><dt>Outcome</dt><dd>Reconciliation runs without bespoke per-bank glue code\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> Multi-format · Audit-grade</p>",
+      "<dl class=pao><div><dt>Vấn đề</dt><dd>Các định dạng sao kê nhốt đội ngũ đối soát vào công việc nhập liệu thủ công.</dd></div><div><dt>Phương pháp</dt><dd>Một bộ công cụ Python chuẩn hoá sao kê đa định dạng với nguồn gốc dữ liệu cấp kiểm toán.</dd></div><div><dt>Kết quả</dt><dd>Đối soát chạy mà không cần mã kết nối riêng cho từng ngân hàng.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Tác động</span> Đa định dạng · Cấp kiểm toán</p>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>Pre-PQC hashing libraries leave credential stores quantum-exposed\\.</dd></div><div><dt>Approach</dt><dd>Memory-safe Rust hash and digest library with a post-quantum posture\\.</dd></div><div><dt>Outcome</dt><dd>Drop-in secure hashing for services planning PQC migration\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> Memory-safe · Rust</p>",
+      "<dl class=pao><div><dt>Vấn đề</dt><dd>Các thư viện băm tiền PQC để lộ kho thông tin xác thực trước rủi ro lượng tử.</dd></div><div><dt>Phương pháp</dt><dd>Thư viện băm và tóm lược Rust an toàn bộ nhớ với tư thế post-quantum.</dd></div><div><dt>Kết quả</dt><dd>Hàm băm bảo mật thay thế trực tiếp cho các dịch vụ đang lên kế hoạch di chuyển PQC.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Tác động</span> An toàn bộ nhớ · Rust</p>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>Tier-1 banks carry harvest-now-decrypt-later exposure on every TLS session\\.</dd></div><div><dt>Approach</dt><dd>Pure-Rust <strong>CRYSTALS-Kyber</strong> \\(NIST FIPS 203\\) that plugs into existing auth flows\\.</dd></div><div><dt>Outcome</dt><dd>Post-quantum key exchange in production-grade Rust, independently validated\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> NIST FIPS 203</p>",
+      "<dl class=pao><div><dt>Vấn đề</dt><dd>Các ngân hàng Tier-1 chịu rủi ro harvest-now-decrypt-later trên mọi phiên TLS.</dd></div><div><dt>Phương pháp</dt><dd><strong>CRYSTALS-Kyber</strong> thuần Rust (NIST FIPS 203) tích hợp vào luồng xác thực hiện có.</dd></div><div><dt>Kết quả</dt><dd>Trao đổi khóa post-quantum trong Rust cấp sản xuất, được xác thực độc lập.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Tác động</span> NIST FIPS 203</p>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>AI, MCP and config pipelines run on YAML parsers with C-backed UB and silent spec drift\\.</dd></div><div><dt>Approach</dt><dd>Pure-Rust YAML 1\\.2 across library, CLI, LSP, MCP and WASM — zero unsafe, full spec\\.</dd></div><div><dt>Outcome</dt><dd>YAML pipelines that stop being the supply-chain weak link\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> 406 \\/ 406 spec · 0 unsafe</p>",
+      "<dl class=pao><div><dt>Vấn đề</dt><dd>Các pipeline AI, MCP và cấu hình chạy trên bộ phân tích YAML có UB nền C và sai lệch đặc tả âm thầm.</dd></div><div><dt>Phương pháp</dt><dd>YAML 1.2 thuần Rust trên thư viện, CLI, LSP, MCP và WASM — không có unsafe, đầy đủ đặc tả.</dd></div><div><dt>Kết quả</dt><dd>Các pipeline YAML không còn là mắt xích yếu trong chuỗi cung ứng.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Tác động</span> 406 / 406 đặc tả · 0 unsafe</p>"
     ]
   ]
 }

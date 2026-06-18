@@ -312,6 +312,30 @@
     [
       ">Read the white paper</a>",
       ">Basahin ang white paper</a>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>Hand-authoring <strong>ISO 20022 pain\\.001</strong> is fragile under SEPA and SWIFT cutovers\\.</dd></div><div><dt>Approach</dt><dd>Schema-driven Python that maps CSV or SQLite into validated payment XML\\.</dd></div><div><dt>Outcome</dt><dd>Ops ship pain\\.001 in minutes; the audit trail survives the migration\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> ISO 20022 · SEPA \\+ SWIFT</p>",
+      "<dl class=pao><div><dt>Problema</dt><dd>Ang mano-manong paggawa ng <strong>ISO 20022 pain.001</strong> ay pabigat sa ilalim ng SEPA at SWIFT na cutover.</dd></div><div><dt>Diskarte</dt><dd>Schema-driven na Python na nagma-map ng CSV o SQLite sa validated na payment XML.</dd></div><div><dt>Resulta</dt><dd>Naipapadala ng Ops ang pain.001 sa loob ng ilang minuto; nananatiling buo ang audit trail matapos ang migration.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Epekto</span> ISO 20022 · SEPA + SWIFT</p>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>FI-to-FI credit transfers fail audit when XSD, IBAN and PII rules diverge\\.</dd></div><div><dt>Approach</dt><dd>One library: JSON Schema, XSD, IBAN across 75 countries, GDPR-grade masking\\.</dd></div><div><dt>Outcome</dt><dd>Cross-border credit transfers that pass first-time at the regulator\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> 75 countries · IBAN</p>",
+      "<dl class=pao><div><dt>Problema</dt><dd>Nabibigo ang FI-to-FI credit transfers sa audit kapag nagkakaiba ang XSD, IBAN, at PII rules.</dd></div><div><dt>Diskarte</dt><dd>Isang library: JSON Schema, XSD, IBAN sa 75 na bansa, masking na may GDPR-grade.</dd></div><div><dt>Resulta</dt><dd>Cross-border credit transfers na pumapasa sa unang pagsubok sa regulator.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Epekto</span> 75 bansa · IBAN</p>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>Statement formats trap reconciliation teams in manual rekeying\\.</dd></div><div><dt>Approach</dt><dd>One Python toolkit that normalises multi-format statements with audit-grade lineage\\.</dd></div><div><dt>Outcome</dt><dd>Reconciliation runs without bespoke per-bank glue code\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> Multi-format · Audit-grade</p>",
+      "<dl class=pao><div><dt>Problema</dt><dd>Nagtutrap ang mga format ng statement sa mga reconciliation team sa manu-manong pag-rekey.</dd></div><div><dt>Diskarte</dt><dd>Isang Python toolkit na nag-no-normalize ng multi-format na mga statement na may audit-grade lineage.</dd></div><div><dt>Resulta</dt><dd>Tumatakbo ang reconciliation nang walang bespoke na glue code para sa bawat bangko.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Epekto</span> Multi-format · Audit-grade</p>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>Pre-PQC hashing libraries leave credential stores quantum-exposed\\.</dd></div><div><dt>Approach</dt><dd>Memory-safe Rust hash and digest library with a post-quantum posture\\.</dd></div><div><dt>Outcome</dt><dd>Drop-in secure hashing for services planning PQC migration\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> Memory-safe · Rust</p>",
+      "<dl class=pao><div><dt>Problema</dt><dd>Iniiwan ng Pre-PQC hashing libraries ang mga credential store na quantum-exposed.</dd></div><div><dt>Diskarte</dt><dd>Memory-ligtas na Rust hash at digest library na may post-quantum na postura.</dd></div><div><dt>Resulta</dt><dd>Drop-in na secure hashing para sa mga serbisyong nagpaplano ng PQC migration.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Epekto</span> Memory-ligtas · Rust</p>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>Tier-1 banks carry harvest-now-decrypt-later exposure on every TLS session\\.</dd></div><div><dt>Approach</dt><dd>Pure-Rust <strong>CRYSTALS-Kyber</strong> \\(NIST FIPS 203\\) that plugs into existing auth flows\\.</dd></div><div><dt>Outcome</dt><dd>Post-quantum key exchange in production-grade Rust, independently validated\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> NIST FIPS 203</p>",
+      "<dl class=pao><div><dt>Problema</dt><dd>Ang mga Tier-1 na bangko ay may harvest-now-decrypt-later na exposure sa bawat TLS session.</dd></div><div><dt>Diskarte</dt><dd>Pure-Rust <strong>CRYSTALS-Kyber</strong> (NIST FIPS 203) na naka-plug sa mga umiiral na auth flow.</dd></div><div><dt>Resulta</dt><dd>Post-quantum key exchange sa production-grade na Rust, independyenteng na-validate.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Epekto</span> NIST FIPS 203</p>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>AI, MCP and config pipelines run on YAML parsers with C-backed UB and silent spec drift\\.</dd></div><div><dt>Approach</dt><dd>Pure-Rust YAML 1\\.2 across library, CLI, LSP, MCP and WASM — zero unsafe, full spec\\.</dd></div><div><dt>Outcome</dt><dd>YAML pipelines that stop being the supply-chain weak link\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> 406 \\/ 406 spec · 0 unsafe</p>",
+      "<dl class=pao><div><dt>Problema</dt><dd>Ang AI, MCP at config pipelines ay tumatakbo sa mga YAML parser na may C-backed UB at tahimik na spec drift.</dd></div><div><dt>Diskarte</dt><dd>Pure-Rust YAML 1.2 sa library, CLI, LSP, MCP at WASM — zero unsafe, buong spec.</dd></div><div><dt>Resulta</dt><dd>Mga YAML pipeline na hindi na magiging mahinang link ng supply chain.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Epekto</span> 406 / 406 spec · 0 unsafe</p>"
     ]
   ]
 }

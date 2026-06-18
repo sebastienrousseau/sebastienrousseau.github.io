@@ -312,6 +312,30 @@
     [
       ">Read the white paper</a>",
       ">श्वेत-पत्र पढ़ें</a>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>Hand-authoring <strong>ISO 20022 pain\\.001</strong> is fragile under SEPA and SWIFT cutovers\\.</dd></div><div><dt>Approach</dt><dd>Schema-driven Python that maps CSV or SQLite into validated payment XML\\.</dd></div><div><dt>Outcome</dt><dd>Ops ship pain\\.001 in minutes; the audit trail survives the migration\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> ISO 20022 · SEPA \\+ SWIFT</p>",
+      "<dl class=pao><div><dt>समस्या</dt><dd>SEPA और SWIFT cutover के दौरान <strong>ISO 20022 pain.001</strong> को manually author करना error-prone है।</dd></div><div><dt>दृष्टिकोण</dt><dd>Schema-driven Python जो CSV या SQLite को validated payment XML में map करता है।</dd></div><div><dt>परिणाम</dt><dd>Ops टीम pain.001 मिनटों में ship करती है; audit trail migration के बाद भी intact रहता है।</dd></div></dl><p class=proj-metric><span class=proj-metric-label>प्रभाव</span> ISO 20022 · SEPA + SWIFT</p>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>FI-to-FI credit transfers fail audit when XSD, IBAN and PII rules diverge\\.</dd></div><div><dt>Approach</dt><dd>One library: JSON Schema, XSD, IBAN across 75 countries, GDPR-grade masking\\.</dd></div><div><dt>Outcome</dt><dd>Cross-border credit transfers that pass first-time at the regulator\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> 75 countries · IBAN</p>",
+      "<dl class=pao><div><dt>समस्या</dt><dd>FI-to-FI credit transfers तब audit में fail होते हैं जब XSD, IBAN और PII rules में divergence हो।</dd></div><div><dt>दृष्टिकोण</dt><dd>एक library: JSON Schema, XSD, IBAN across 75 countries, GDPR-grade masking।</dd></div><div><dt>परिणाम</dt><dd>Cross-border credit transfers जो regulator के पास पहली बार में pass हों।</dd></div></dl><p class=proj-metric><span class=proj-metric-label>प्रभाव</span> 75 देश · IBAN</p>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>Statement formats trap reconciliation teams in manual rekeying\\.</dd></div><div><dt>Approach</dt><dd>One Python toolkit that normalises multi-format statements with audit-grade lineage\\.</dd></div><div><dt>Outcome</dt><dd>Reconciliation runs without bespoke per-bank glue code\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> Multi-format · Audit-grade</p>",
+      "<dl class=pao><div><dt>समस्या</dt><dd>Statement formats reconciliation teams को manual rekeying में फँसाते हैं।</dd></div><div><dt>दृष्टिकोण</dt><dd>एक Python toolkit जो multi-format statements को audit-grade lineage के साथ normalise करता है।</dd></div><div><dt>परिणाम</dt><dd>Reconciliation बिना per-bank glue code के चलती है।</dd></div></dl><p class=proj-metric><span class=proj-metric-label>प्रभाव</span> Multi-format · Audit-grade</p>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>Pre-PQC hashing libraries leave credential stores quantum-exposed\\.</dd></div><div><dt>Approach</dt><dd>Memory-safe Rust hash and digest library with a post-quantum posture\\.</dd></div><div><dt>Outcome</dt><dd>Drop-in secure hashing for services planning PQC migration\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> Memory-safe · Rust</p>",
+      "<dl class=pao><div><dt>समस्या</dt><dd>Pre-PQC hashing libraries credential stores को quantum exposure के सामने छोड़ देती हैं।</dd></div><div><dt>दृष्टिकोण</dt><dd>Memory-safe Rust hash और digest library जिसकी post-quantum posture है।</dd></div><div><dt>परिणाम</dt><dd>PQC migration plan करने वाली services के लिए drop-in secure hashing।</dd></div></dl><p class=proj-metric><span class=proj-metric-label>प्रभाव</span> Memory-safe · Rust</p>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>Tier-1 banks carry harvest-now-decrypt-later exposure on every TLS session\\.</dd></div><div><dt>Approach</dt><dd>Pure-Rust <strong>CRYSTALS-Kyber</strong> \\(NIST FIPS 203\\) that plugs into existing auth flows\\.</dd></div><div><dt>Outcome</dt><dd>Post-quantum key exchange in production-grade Rust, independently validated\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> NIST FIPS 203</p>",
+      "<dl class=pao><div><dt>समस्या</dt><dd>Tier-1 banks हर TLS session पर harvest-now-decrypt-later exposure उठाते हैं।</dd></div><div><dt>दृष्टिकोण</dt><dd>Pure-Rust <strong>CRYSTALS-Kyber</strong> (NIST FIPS 203) जो existing auth flows में plug होता है।</dd></div><div><dt>परिणाम</dt><dd>Production-grade Rust में post-quantum key exchange, independently validated।</dd></div></dl><p class=proj-metric><span class=proj-metric-label>प्रभाव</span> NIST FIPS 203</p>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>AI, MCP and config pipelines run on YAML parsers with C-backed UB and silent spec drift\\.</dd></div><div><dt>Approach</dt><dd>Pure-Rust YAML 1\\.2 across library, CLI, LSP, MCP and WASM — zero unsafe, full spec\\.</dd></div><div><dt>Outcome</dt><dd>YAML pipelines that stop being the supply-chain weak link\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> 406 \\/ 406 spec · 0 unsafe</p>",
+      "<dl class=pao><div><dt>समस्या</dt><dd>AI, MCP और config pipelines C-backed UB और silent spec drift वाले YAML parsers पर चलते हैं।</dd></div><div><dt>दृष्टिकोण</dt><dd>Pure-Rust YAML 1.2 — library, CLI, LSP, MCP और WASM में — zero unsafe, full spec।</dd></div><div><dt>परिणाम</dt><dd>YAML pipelines जो supply-chain weak link बनना बंद करें।</dd></div></dl><p class=proj-metric><span class=proj-metric-label>प्रभाव</span> 406 / 406 spec · 0 unsafe</p>"
     ]
   ]
 }
