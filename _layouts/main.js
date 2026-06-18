@@ -312,7 +312,7 @@ function fallbackCopy(text, done) {
                 io.unobserve(entry.target);
             }
         });
-    }, { rootMargin: "0px 0px -10% 0px", threshold: 0.05 });
+    }, { rootMargin: ["0px", "0px", "-10%", "0px"].join(" "), threshold: 0.05 });
     targets.forEach(function (el) { io.observe(el); });
 })();
 
@@ -336,7 +336,7 @@ function fallbackCopy(text, done) {
                 io.unobserve(entry.target);
             }
         });
-    }, { rootMargin: "0px 0px -8% 0px", threshold: 0.08 });
+    }, { rootMargin: ["0px", "0px", "-8%", "0px"].join(" "), threshold: 0.08 });
     targets.forEach(function (el) { io.observe(el); });
 })();
 
