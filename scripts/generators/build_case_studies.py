@@ -673,7 +673,9 @@ def _render_hero_stage(
     deck = study.get("pull_quote", "").strip()
     if deck.startswith('"') and deck.endswith('"'):
         deck = deck[1:-1]
-    banner = study.get("banner", "")
+    # Per-study hero may override the card thumbnail via `hero_banner`.
+    # Falls through to the standard `banner` field when unset.
+    banner = study.get("hero_banner") or study.get("banner", "")
     breadcrumb = _render_breadcrumb(lbl, lang, url_segment, title)
 
     media_html = ""
