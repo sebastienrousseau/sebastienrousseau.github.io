@@ -175,13 +175,11 @@ jobs:
             echo "pa11y-cache: full cache hit, skipping pa11y-ci run"
             exit 0
           fi
-          # GitHub-hosted ubuntu-latest runners have 4 vCPUs; pa11y-ci's
-          # default concurrency is 2. Bumping to 4 roughly halves the
-          # wall-clock on a full cache miss (2,300 URLs went from
-          # ~2h 19m at concurrency 2 to ~1h with 4). Chromium handles
-          # 4 parallel tabs fine on a 4-vCPU runner.
+          # Concurrency is baked into the .pa11yci config (top-level
+          # ``concurrency`` key, set in build_pa11yci_config) — pa11y-ci
+          # accepts it as a config option, not a CLI flag.
           set +e
-          pa11y-ci -c .pa11yci --concurrency 4 --reporter json > pa11y.json
+          pa11y-ci -c .pa11yci --reporter json > pa11y.json
           rc=$?
           set -e
           if [ "$rc" -eq 0 ]; then
