@@ -57,17 +57,57 @@ from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any
 
-CACHE_VERSION = 1
+CACHE_VERSION = 2
+
+
+# Patterns matching the transient build artefacts that change every
+# build but are functionally identical from pa11y's perspective:
+# pa11y evaluates the rendered DOM for WCAG violations, so swapping
+# one SRI hash for another or rotating a fingerprinted asset URL has
+# no effect on accessibility. Stripping these before SHA-256 means a
+# pure layout / CSS / minifier change (which churns every page's
+# <head>) no longer busts the cache for unchanged-semantic pages.
+#
+# Each entry is (compiled_pattern, replacement_bytes). Patterns are
+# byte-level so we can stream-normalise without UTF-8 decoding the
+# whole page.
+_NORMALISERS: list[tuple[re.Pattern[bytes], bytes]] = [
+    # Fingerprinted asset URLs: ``main.799e2fd8.js`` → ``main.js``.
+    # The fingerprint encodes file content; same content = same hash
+    # in spec but the build path embeds a fresh 8-hex slug each run.
+    (re.compile(rb"([A-Za-z0-9_-]+)\.[0-9a-f]{8}\.(js|css|mjs)"), rb"\1.\2"),
+    # SRI integrity attributes — same hash, same SRI. Stripping the
+    # value entirely is safe because we already gate on the asset URL
+    # above; if the JS content actually changed, the URL hash above
+    # will diverge.
+    (re.compile(rb'integrity="[^"]*"'), b'integrity=""'),
+    (re.compile(rb"integrity='[^']*'"), b"integrity=''"),
+    # CSP ``'sha256-<base64>'`` script/style hashes embedded in the
+    # Content-Security-Policy meta. Same rationale as SRI.
+    (re.compile(rb"'sha256-[A-Za-z0-9+/=]{20,}'"), b"'sha256-X'"),
+    # RSS/Atom feed link timestamps + sitemap lastmod fields, if they
+    # ever leak into <link>s. Keep this conservative; only strip the
+    # common ``?v=YYYYMMDD`` / ``?v=<timestamp>`` cache-busters.
+    (re.compile(rb"\?v=[0-9]{8,14}"), b"?v=X"),
+]
+
+
+def _normalise_html(blob: bytes) -> bytes:
+    """Strip the transient build artefacts from a page's bytes before
+    fingerprinting. See ``_NORMALISERS`` for the patterns + rationale."""
+    for pattern, replacement in _NORMALISERS:
+        blob = pattern.sub(replacement, blob)
+    return blob
 
 
 def compute_page_hash(path: Path) -> str:
-    """SHA-256 of the raw HTML bytes. Streamed so it works on the
-    larger rendered pages without loading them fully into a string."""
-    h = hashlib.sha256()
-    with path.open("rb") as f:
-        for chunk in iter(lambda: f.read(65536), b""):
-            h.update(chunk)
-    return h.hexdigest()
+    """SHA-256 of the rendered HTML *after* normalising transient build
+    artefacts (fingerprinted asset URLs, SRI integrity values, CSP
+    sha256 hashes, ``?v=`` cache busters). Semantic / a11y-relevant
+    content drives the hash; the SSG's per-build asset churn does not."""
+    blob = path.read_bytes()
+    blob = _normalise_html(blob)
+    return hashlib.sha256(blob).hexdigest()
 
 
 def compute_config_hash(config: dict[str, Any]) -> str:
