@@ -312,6 +312,30 @@
     [
       ">Read the white paper</a>",
       ">閱讀白皮書</a>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>Hand-authoring <strong>ISO 20022 pain\\.001</strong> is fragile under SEPA and SWIFT cutovers\\.</dd></div><div><dt>Approach</dt><dd>Schema-driven Python that maps CSV or SQLite into validated payment XML\\.</dd></div><div><dt>Outcome</dt><dd>Ops ship pain\\.001 in minutes; the audit trail survives the migration\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> ISO 20022 · SEPA \\+ SWIFT</p>",
+      "<dl class=pao><div><dt>問題</dt><dd>在 SEPA 與 SWIFT 切換期間，手工撰寫 <strong>ISO 20022 pain.001</strong> 極易出錯。</dd></div><div><dt>方法</dt><dd>以結構描述驅動的 Python，將 CSV 或 SQLite 對應並驗證為支付 XML。</dd></div><div><dt>成果</dt><dd>營運團隊可於數分鐘內產出 pain.001，稽核日誌在遷移後依然完整。</dd></div></dl><p class=proj-metric><span class=proj-metric-label>影響</span> ISO 20022 · SEPA + SWIFT</p>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>FI-to-FI credit transfers fail audit when XSD, IBAN and PII rules diverge\\.</dd></div><div><dt>Approach</dt><dd>One library: JSON Schema, XSD, IBAN across 75 countries, GDPR-grade masking\\.</dd></div><div><dt>Outcome</dt><dd>Cross-border credit transfers that pass first-time at the regulator\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> 75 countries · IBAN</p>",
+      "<dl class=pao><div><dt>問題</dt><dd>當 XSD、IBAN 與 PII 規則不一致時，FI-to-FI 貸記轉帳將無法通過稽核。</dd></div><div><dt>方法</dt><dd>單一函式庫：涵蓋 75 個國家的 JSON Schema、XSD、IBAN，以及符合 GDPR 標準的資料遮蔽。</dd></div><div><dt>成果</dt><dd>跨境貸記轉帳首次提交即通過監管機關審查。</dd></div></dl><p class=proj-metric><span class=proj-metric-label>影響</span> 75 個國家 · IBAN</p>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>Statement formats trap reconciliation teams in manual rekeying\\.</dd></div><div><dt>Approach</dt><dd>One Python toolkit that normalises multi-format statements with audit-grade lineage\\.</dd></div><div><dt>Outcome</dt><dd>Reconciliation runs without bespoke per-bank glue code\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> Multi-format · Audit-grade</p>",
+      "<dl class=pao><div><dt>問題</dt><dd>對帳格式迫使對帳團隊陷入大量手動重新輸入作業。</dd></div><div><dt>方法</dt><dd>單一 Python 工具套件，以稽核等級的資料血緣關係標準化多種格式的對帳單。</dd></div><div><dt>成果</dt><dd>對帳作業無需為每家銀行撰寫客製化黏合程式碼。</dd></div></dl><p class=proj-metric><span class=proj-metric-label>影響</span> 多格式 · 稽核等級</p>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>Pre-PQC hashing libraries leave credential stores quantum-exposed\\.</dd></div><div><dt>Approach</dt><dd>Memory-safe Rust hash and digest library with a post-quantum posture\\.</dd></div><div><dt>Outcome</dt><dd>Drop-in secure hashing for services planning PQC migration\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> Memory-safe · Rust</p>",
+      "<dl class=pao><div><dt>問題</dt><dd>Pre-PQC 雜湊函式庫使憑證儲存庫暴露於量子攻擊風險之中。</dd></div><div><dt>方法</dt><dd>記憶體安全的 Rust 雜湊與摘要函式庫，具備後量子安全態勢。</dd></div><div><dt>成果</dt><dd>為規劃 PQC 遷移的服務提供即插即用的安全雜湊能力。</dd></div></dl><p class=proj-metric><span class=proj-metric-label>影響</span> 記憶體安全 · Rust</p>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>Tier-1 banks carry harvest-now-decrypt-later exposure on every TLS session\\.</dd></div><div><dt>Approach</dt><dd>Pure-Rust <strong>CRYSTALS-Kyber</strong> \\(NIST FIPS 203\\) that plugs into existing auth flows\\.</dd></div><div><dt>Outcome</dt><dd>Post-quantum key exchange in production-grade Rust, independently validated\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> NIST FIPS 203</p>",
+      "<dl class=pao><div><dt>問題</dt><dd>Tier-1 銀行在每個 TLS 連線上均承擔 harvest-now-decrypt-later 的曝險。</dd></div><div><dt>方法</dt><dd>純 Rust 實作的 <strong>CRYSTALS-Kyber</strong>（NIST FIPS 203），可直接嵌入現有驗證流程。</dd></div><div><dt>成果</dt><dd>在生產等級的 Rust 環境中實現後量子金鑰交換，並經獨立驗證。</dd></div></dl><p class=proj-metric><span class=proj-metric-label>影響</span> NIST FIPS 203</p>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>AI, MCP and config pipelines run on YAML parsers with C-backed UB and silent spec drift\\.</dd></div><div><dt>Approach</dt><dd>Pure-Rust YAML 1\\.2 across library, CLI, LSP, MCP and WASM — zero unsafe, full spec\\.</dd></div><div><dt>Outcome</dt><dd>YAML pipelines that stop being the supply-chain weak link\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> 406 \\/ 406 spec · 0 unsafe</p>",
+      "<dl class=pao><div><dt>問題</dt><dd>AI、MCP 及組態管道依賴以 C 為後端、存在未定義行為且規格靜默漂移的 YAML 解析器。</dd></div><div><dt>方法</dt><dd>純 Rust 實作的 YAML 1.2，涵蓋函式庫、CLI、LSP、MCP 與 WASM——零 unsafe，完整規格符合。</dd></div><div><dt>成果</dt><dd>YAML 管道不再是供應鏈的薄弱環節。</dd></div></dl><p class=proj-metric><span class=proj-metric-label>影響</span> 406 / 406 規格 · 0 unsafe</p>"
     ]
   ]
 }

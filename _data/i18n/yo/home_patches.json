@@ -312,6 +312,30 @@
     [
       ">Built for the edge\\. Architected for uncompromising resilience\\. Powering the next generation of global payments\\.</p>",
       ">A kọ́ ọ́ fún edge. A ṣe e fún ìfaradà tí kò ní ìbámu. Ń ru ìran tókàn ti ìsanwó kárí ayé sókè.</p>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>Hand-authoring <strong>ISO 20022 pain\\.001</strong> is fragile under SEPA and SWIFT cutovers\\.</dd></div><div><dt>Approach</dt><dd>Schema-driven Python that maps CSV or SQLite into validated payment XML\\.</dd></div><div><dt>Outcome</dt><dd>Ops ship pain\\.001 in minutes; the audit trail survives the migration\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> ISO 20022 · SEPA \\+ SWIFT</p>",
+      "<dl class=pao><div><dt>Ìṣòro</dt><dd>Kíkọ <strong>ISO 20022 pain.001</strong> pẹ̀lú ọwọ́ jẹ́ ewu nígbà tí SEPA àti SWIFT bá yí padà.</dd></div><div><dt>Ọ̀nà Àbájáde</dt><dd>Python tí ó gbára lé ìlànà tí ó ń yí CSV tàbí SQLite padà sí XML ìsanwó tí a ti ṣàyẹ̀wò.</dd></div><div><dt>Àbájáde</dt><dd>Àwọn ẹgbẹ́ iṣẹ́ ń pín pain.001 jáde ní ìṣẹ́jú díẹ̀; ìrékọjá ìgbẹ́kẹ̀lé gbé ayẹ̀wò ìgbékalẹ̀ já.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Ipa</span> ISO 20022 · SEPA + SWIFT</p>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>FI-to-FI credit transfers fail audit when XSD, IBAN and PII rules diverge\\.</dd></div><div><dt>Approach</dt><dd>One library: JSON Schema, XSD, IBAN across 75 countries, GDPR-grade masking\\.</dd></div><div><dt>Outcome</dt><dd>Cross-border credit transfers that pass first-time at the regulator\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> 75 countries · IBAN</p>",
+      "<dl class=pao><div><dt>Ìṣòro</dt><dd>Gbigbe owó láti ilé-iṣẹ́ ìfowópamọ́ sí ilé-iṣẹ́ mìíràn kúnfò ayẹ̀wò nígbà tí XSD, IBAN àti àwọn òfin PII bá yàtọ̀.</dd></div><div><dt>Ọ̀nà Àbájáde</dt><dd>Ìwé-ìkàwé kan ṣoṣo: JSON Schema, XSD, IBAN káàkiri orílẹ̀-èdè 75, ifarakoko tó dọ́gba pẹ̀lú GDPR.</dd></div><div><dt>Àbájáde</dt><dd>Gbigbe owó l'áàgbélé àgbáyé tí ó kọjá ìgbàdánwò àkọ́kọ́ níwájú àwọn alárégbèéfà.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Ipa</span> Orílẹ̀-èdè 75 · IBAN</p>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>Statement formats trap reconciliation teams in manual rekeying\\.</dd></div><div><dt>Approach</dt><dd>One Python toolkit that normalises multi-format statements with audit-grade lineage\\.</dd></div><div><dt>Outcome</dt><dd>Reconciliation runs without bespoke per-bank glue code\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> Multi-format · Audit-grade</p>",
+      "<dl class=pao><div><dt>Ìṣòro</dt><dd>Àwọn ìpínlẹ̀ àkọ́sílẹ̀ ń di àwọn ẹgbẹ́ isọdi-owó mọ́ nínú tíì ọwọ́ fọn tún.</dd></div><div><dt>Ọ̀nà Àbájáde</dt><dd>Àpòpọ̀ irinṣẹ́ Python kan tí ó ṣe àdéédé àwọn àkọ́sílẹ̀ onírúurú ìpínlẹ̀ pẹ̀lú ẹsẹ ìrékọjá tí ó dọ́gba pẹ̀lú ayẹ̀wò.</dd></div><div><dt>Àbájáde</dt><dd>Isọdi-owó ń ṣiṣẹ́ láìsí kóòdù àkànṣe fún olùfowópamọ́ kọ̀ọ̀kan.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Ipa</span> Onírúurú ìpínlẹ̀ · Dọ́gba-ayẹ̀wò</p>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>Pre-PQC hashing libraries leave credential stores quantum-exposed\\.</dd></div><div><dt>Approach</dt><dd>Memory-safe Rust hash and digest library with a post-quantum posture\\.</dd></div><div><dt>Outcome</dt><dd>Drop-in secure hashing for services planning PQC migration\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> Memory-safe · Rust</p>",
+      "<dl class=pao><div><dt>Ìṣòro</dt><dd>Àwọn ìwé-ìkàwé hashing tó ṣíwájú PQC fi àwọn ibi ìpamọ́ àṣírí sílẹ̀ gẹ́gẹ́ bí ohun tí ìmọ̀-ẹ̀rọ kuatomu lè gbógun ti.</dd></div><div><dt>Ọ̀nà Àbájáde</dt><dd>Ìwé-ìkàwé hash àti digest Rust tó ní ààbò ìrántí pẹ̀lú ìdúró post-quantum.</dd></div><div><dt>Àbájáde</dt><dd>Hashing ààbò tó rọ́rùn láti fi dípò èkejì fún àwọn iṣẹ́ tó ń gbèrò lọ ní PQC.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Ipa</span> Ìrántí-ààbò · Rust</p>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>Tier-1 banks carry harvest-now-decrypt-later exposure on every TLS session\\.</dd></div><div><dt>Approach</dt><dd>Pure-Rust <strong>CRYSTALS-Kyber</strong> \\(NIST FIPS 203\\) that plugs into existing auth flows\\.</dd></div><div><dt>Outcome</dt><dd>Post-quantum key exchange in production-grade Rust, independently validated\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> NIST FIPS 203</p>",
+      "<dl class=pao><div><dt>Ìṣòro</dt><dd>Àwọn ilé-iṣẹ́ ìfowópamọ́ Tier-1 ní ewu harvest-now-decrypt-later lórí gbogbo ìpínyà TLS.</dd></div><div><dt>Ọ̀nà Àbájáde</dt><dd><strong>CRYSTALS-Kyber</strong> Rust tó mọ́ (NIST FIPS 203) tí ó ń wọ inú àwọn ṣíṣàn ìdánimọ̀ tó wà tẹ́lẹ̀.</dd></div><div><dt>Àbájáde</dt><dd>Pàṣípààrọ̀ kọ́kọ́rọ́ post-quantum nínú Rust tó dọ́gba pẹ̀lú ìṣelọpọ́, tí a ti ṣàyẹ̀wò ní àìgbára.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Ipa</span> NIST FIPS 203</p>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>AI, MCP and config pipelines run on YAML parsers with C-backed UB and silent spec drift\\.</dd></div><div><dt>Approach</dt><dd>Pure-Rust YAML 1\\.2 across library, CLI, LSP, MCP and WASM — zero unsafe, full spec\\.</dd></div><div><dt>Outcome</dt><dd>YAML pipelines that stop being the supply-chain weak link\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> 406 \\/ 406 spec · 0 unsafe</p>",
+      "<dl class=pao><div><dt>Ìṣòro</dt><dd>AI, MCP àti àwọn ìṣàn ìtúpalẹ̀ ń ṣiṣẹ́ lórí àwọn àtúpalẹ̀ YAML tó ní UB tó gbára lé C àti ìyípadà àpẹẹrẹ tó farasin.</dd></div><div><dt>Ọ̀nà Àbájáde</dt><dd>YAML 1.2 Rust tó mọ́ káàkiri ìwé-ìkàwé, CLI, LSP, MCP àti WASM — zero unsafe, àpẹẹrẹ kíkún.</dd></div><div><dt>Àbájáde</dt><dd>Àwọn ìṣàn YAML tí ó dáwọ́ jẹ́ ọ̀nà àìlágbára nínú ìgbọràn ẹ̀rọ-ìpèsè.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Ipa</span> 406 / 406 àpẹẹrẹ · 0 unsafe</p>"
     ]
   ]
 }

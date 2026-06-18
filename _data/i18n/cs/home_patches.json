@@ -312,6 +312,30 @@
     [
       ">Read the white paper</a>",
       ">Číst bílou knihu</a>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>Hand-authoring <strong>ISO 20022 pain\\.001</strong> is fragile under SEPA and SWIFT cutovers\\.</dd></div><div><dt>Approach</dt><dd>Schema-driven Python that maps CSV or SQLite into validated payment XML\\.</dd></div><div><dt>Outcome</dt><dd>Ops ship pain\\.001 in minutes; the audit trail survives the migration\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> ISO 20022 · SEPA \\+ SWIFT</p>",
+      "<dl class=pao><div><dt>Problém</dt><dd>Ruční tvorba zpráv <strong>ISO 20022 pain.001</strong> je nespolehlivá při přechodu na SEPA a SWIFT.</dd></div><div><dt>Přístup</dt><dd>Python řízený schématem, který mapuje CSV nebo SQLite do validovaného platebního XML.</dd></div><div><dt>Výsledek</dt><dd>Provozní týmy odesílají pain.001 v řádu minut; auditní stopa přežije migraci.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Dopad</span> ISO 20022 · SEPA + SWIFT</p>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>FI-to-FI credit transfers fail audit when XSD, IBAN and PII rules diverge\\.</dd></div><div><dt>Approach</dt><dd>One library: JSON Schema, XSD, IBAN across 75 countries, GDPR-grade masking\\.</dd></div><div><dt>Outcome</dt><dd>Cross-border credit transfers that pass first-time at the regulator\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> 75 countries · IBAN</p>",
+      "<dl class=pao><div><dt>Problém</dt><dd>Mezibankovní úvěrové převody FI-to-FI neobstojí při auditu, když se rozcházejí pravidla XSD, IBAN a PII.</dd></div><div><dt>Přístup</dt><dd>Jediná knihovna: JSON Schema, XSD, IBAN pro 75 zemí a maskování na úrovni GDPR.</dd></div><div><dt>Výsledek</dt><dd>Přeshraniční úvěrové převody, které regulátorem projdou napoprvé.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Dopad</span> 75 zemí · IBAN</p>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>Statement formats trap reconciliation teams in manual rekeying\\.</dd></div><div><dt>Approach</dt><dd>One Python toolkit that normalises multi-format statements with audit-grade lineage\\.</dd></div><div><dt>Outcome</dt><dd>Reconciliation runs without bespoke per-bank glue code\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> Multi-format · Audit-grade</p>",
+      "<dl class=pao><div><dt>Problém</dt><dd>Formáty výpisů uvězňují rekonciliační týmy v ručním přepisování dat.</dd></div><div><dt>Přístup</dt><dd>Jednotná sada nástrojů v Pythonu, která normalizuje výpisy v různých formátech s auditovatelnou stopou.</dd></div><div><dt>Výsledek</dt><dd>Rekonciliace probíhá bez bankovně specifického lepicího kódu.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Dopad</span> Více formátů · Auditní kvalita</p>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>Pre-PQC hashing libraries leave credential stores quantum-exposed\\.</dd></div><div><dt>Approach</dt><dd>Memory-safe Rust hash and digest library with a post-quantum posture\\.</dd></div><div><dt>Outcome</dt><dd>Drop-in secure hashing for services planning PQC migration\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> Memory-safe · Rust</p>",
+      "<dl class=pao><div><dt>Problém</dt><dd>Knihovny hashování před érou PQC ponechávají úložiště přihlašovacích údajů kvantově exponovaná.</dd></div><div><dt>Přístup</dt><dd>Paměťově bezpečná knihovna hashů a výtahů v Rust s post-quantum orientací.</dd></div><div><dt>Výsledek</dt><dd>Náhradní bezpečné hashování pro služby plánující migraci na PQC.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Dopad</span> Paměťově bezpečné · Rust</p>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>Tier-1 banks carry harvest-now-decrypt-later exposure on every TLS session\\.</dd></div><div><dt>Approach</dt><dd>Pure-Rust <strong>CRYSTALS-Kyber</strong> \\(NIST FIPS 203\\) that plugs into existing auth flows\\.</dd></div><div><dt>Outcome</dt><dd>Post-quantum key exchange in production-grade Rust, independently validated\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> NIST FIPS 203</p>",
+      "<dl class=pao><div><dt>Problém</dt><dd>Tier-1 banky nesou riziko harvest-now-decrypt-later u každé TLS relace.</dd></div><div><dt>Přístup</dt><dd>Pure-Rust implementace <strong>CRYSTALS-Kyber</strong> (NIST FIPS 203), která se zapojí do stávajících autentizačních toků.</dd></div><div><dt>Výsledek</dt><dd>Post-quantum výměna klíčů v Rust na produkční úrovni, nezávisle ověřená.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Dopad</span> NIST FIPS 203</p>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>AI, MCP and config pipelines run on YAML parsers with C-backed UB and silent spec drift\\.</dd></div><div><dt>Approach</dt><dd>Pure-Rust YAML 1\\.2 across library, CLI, LSP, MCP and WASM — zero unsafe, full spec\\.</dd></div><div><dt>Outcome</dt><dd>YAML pipelines that stop being the supply-chain weak link\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> 406 \\/ 406 spec · 0 unsafe</p>",
+      "<dl class=pao><div><dt>Problém</dt><dd>Pipeliny AI, MCP a konfigurace běží na YAML parserech s UB podloženým v C a tichým odchýlením od specifikace.</dd></div><div><dt>Přístup</dt><dd>Pure-Rust YAML 1.2 pro knihovnu, CLI, LSP, MCP a WASM — nula unsafe, plná specifikace.</dd></div><div><dt>Výsledek</dt><dd>YAML pipeliny, které přestávají být slabým článkem dodavatelského řetězce.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Dopad</span> 406 / 406 specifikace · 0 unsafe</p>"
     ]
   ]
 }
