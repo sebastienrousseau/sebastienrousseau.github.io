@@ -106,6 +106,34 @@ site_software: "Static Site Generator, Rust"
 
 ---
 
+<section class="feat reveal" aria-labelledby="for-decision-makers">
+<div class="wrap">
+<p class="feat-eyebrow">For decision makers</p>
+<h2 id="for-decision-makers" class="feat-headline center">Where this work shows up<br />on the balance sheet.</h2>
+<p class="feat-sub center">The open-source libraries below aren&rsquo;t research curios. Each one maps to a board-level risk a Tier-1 bank is being asked to evidence under DORA, BCBS 239, Basel III or NIST CSF 2.0 — and shaves real cost off the audit trail that satisfies the regulator.</p>
+<div class="dm-grid">
+<article class="dm-card">
+<p class="dm-tag">Compliance</p>
+<h3 class="dm-h">DORA Article 5 &amp; BCBS 239 evidence</h3>
+<p>Lossless parsing, signed releases and structured ISO 20022 outputs mean the configuration and payment files that move money are auditable end-to-end. Less to defend in your next supervisory exam.</p>
+<a class="dm-link" href="/case-studies/index.html">See the case studies &rsaquo;</a>
+</article>
+<article class="dm-card">
+<p class="dm-tag">Cost reduction</p>
+<h3 class="dm-h">Open source over proprietary licensing</h3>
+<p>Apache-2.0 / MIT replaces six- and seven-figure vendor contracts on pain.001 generation, statement parsing and edge security tooling. Audit-grade quality without the per-seat fee.</p>
+<a class="dm-link" href="/projects/index.html">Browse the projects &rsaquo;</a>
+</article>
+<article class="dm-card">
+<p class="dm-tag">Strategic hedging</p>
+<h3 class="dm-h">Post-quantum cryptography readiness</h3>
+<p>KyberLib gives your team an inspectable, NIST FIPS 203-aligned implementation of ML-KEM today &mdash; ready for the SWIFT structured-address cutover and the longer harvest-now-decrypt-later horizon.</p>
+<a class="dm-link" href="/articles/index.html">Read the research &rsaquo;</a>
+</article>
+</div>
+</div>
+</section>
+
 <section class="feat alt reveal" aria-labelledby="practice">
 <div class="wrap">
 <p class="feat-eyebrow">Authored &amp; maintained</p>
