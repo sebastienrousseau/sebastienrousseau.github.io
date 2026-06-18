@@ -140,7 +140,7 @@ site_software: "Static Site Generator, Rust"
 <h2 id="practice" class="feat-headline center">Open source for the<br />future of finance.</h2>
 <p class="feat-sub center">A portfolio of Python, Rust and JavaScript libraries I created and maintain. Open source, free to use, and applied to wholesale payments, cross-border settlement, financial data and quantum-resistant cryptography.</p>
 
-<svg aria-hidden="true" focusable="false" style="position:absolute;width:0;height:0;overflow:hidden" xmlns="http://www.w3.org/2000/svg">
+<svg class="svg-defs" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
 <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 4 6v6c0 5 3.5 8.5 8 10 4.5-1.5 8-5 8-10V6l-8-3Z"/><path d="m9 12 2 2 4-4"/></symbol>
 <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
 <symbol id="i-infinity" viewBox="0 0 24 24"><path d="M7 9c-2 0-3.5 1.5-3.5 3.5S5 16 7 16c2 0 3-1.5 5-3.5s3-3.5 5-3.5 3.5 1.5 3.5 3.5S19 16 17 16c-2 0-3-1.5-5-3.5"/></symbol>
