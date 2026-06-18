@@ -268,6 +268,11 @@ def build_pa11yci_config(urls: list[str], hide_elements: str) -> dict[str, Any]:
     JSON written to disk AND the config-hash used to detect config
     drift."""
     return {
+        # Top-level pa11y-ci option (not a pa11y option), so it sits
+        # outside ``defaults``. Default is 2; GitHub-hosted ubuntu-latest
+        # has 4 vCPUs, so 4 parallel Chromium tabs roughly halves the
+        # wall-clock on full cache misses without OOMing the runner.
+        "concurrency": 4,
         "defaults": {
             "standard": "WCAG2AAA",
             "timeout": 20000,
