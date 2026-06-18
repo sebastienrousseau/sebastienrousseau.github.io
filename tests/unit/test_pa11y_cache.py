@@ -47,6 +47,99 @@ def test_compute_page_hash_changes_with_content(tmp_path: Path) -> None:
     assert pc.compute_page_hash(a) != pc.compute_page_hash(b)
 
 
+def test_compute_page_hash_normalises_fingerprinted_assets(tmp_path: Path) -> None:
+    """A page whose only diff between two builds is the asset
+    fingerprint (``main.<hash>.js``) must produce the same cache key,
+    otherwise every layout-touching commit busts the whole cache."""
+    a = tmp_path / "a.html"
+    a.write_text(
+        '<html><head>'
+        '<script src="/main.799e2fd8.js"></script>'
+        '<link rel="stylesheet" href="/main.799e2fd8.css">'
+        '</head><body><h1>Hi</h1></body></html>',
+        encoding="utf-8",
+    )
+    b = tmp_path / "b.html"
+    b.write_text(
+        '<html><head>'
+        '<script src="/main.f085a635.js"></script>'
+        '<link rel="stylesheet" href="/main.f085a635.css">'
+        '</head><body><h1>Hi</h1></body></html>',
+        encoding="utf-8",
+    )
+    assert pc.compute_page_hash(a) == pc.compute_page_hash(b)
+
+
+def test_compute_page_hash_normalises_integrity_attribute(tmp_path: Path) -> None:
+    """SRI integrity hashes rotate every build; they're not pa11y-
+    relevant, so they shouldn't bust the cache."""
+    a = tmp_path / "a.html"
+    a.write_text(
+        '<html><head><link href="/m.css" '
+        'integrity="sha256-abc123def456ghi789jkl012mno345pqrs678="></head>'
+        "<body>Hi</body></html>",
+        encoding="utf-8",
+    )
+    b = tmp_path / "b.html"
+    b.write_text(
+        '<html><head><link href="/m.css" '
+        'integrity="sha256-zzz999yyy888xxx777www666vvv555uuu444==="></head>'
+        "<body>Hi</body></html>",
+        encoding="utf-8",
+    )
+    assert pc.compute_page_hash(a) == pc.compute_page_hash(b)
+
+
+def test_compute_page_hash_normalises_csp_sha256_hashes(tmp_path: Path) -> None:
+    """CSP inline-script/style hashes rotate every build; identical
+    rationale to SRI."""
+    a = tmp_path / "a.html"
+    a.write_text(
+        "<html><head>"
+        "<meta http-equiv=Content-Security-Policy content=\"script-src 'self' "
+        "'sha256-abcdefghij1234567890ABCDEFGH+/=='\"></head>"
+        "<body>Hi</body></html>",
+        encoding="utf-8",
+    )
+    b = tmp_path / "b.html"
+    b.write_text(
+        "<html><head>"
+        "<meta http-equiv=Content-Security-Policy content=\"script-src 'self' "
+        "'sha256-zzzzzzzzzz9999999999AAAAAAAAA+/=='\"></head>"
+        "<body>Hi</body></html>",
+        encoding="utf-8",
+    )
+    assert pc.compute_page_hash(a) == pc.compute_page_hash(b)
+
+
+def test_compute_page_hash_normalises_query_cache_busters(tmp_path: Path) -> None:
+    """``?v=20260618`` style cache-busters on asset hrefs shouldn't
+    invalidate the pa11y cache."""
+    a = tmp_path / "a.html"
+    a.write_text('<link href="/x.css?v=20260618">', encoding="utf-8")
+    b = tmp_path / "b.html"
+    b.write_text('<link href="/x.css?v=20260601">', encoding="utf-8")
+    assert pc.compute_page_hash(a) == pc.compute_page_hash(b)
+
+
+def test_compute_page_hash_still_changes_on_semantic_diff(tmp_path: Path) -> None:
+    """The normaliser must NOT swallow real content changes — a
+    different heading text must still produce a different hash."""
+    a = tmp_path / "a.html"
+    a.write_text(
+        '<html><head><script src="/main.aaaaaaaa.js"></script></head>'
+        "<body><h1>Original</h1></body></html>",
+        encoding="utf-8",
+    )
+    b = tmp_path / "b.html"
+    b.write_text(
+        '<html><head><script src="/main.aaaaaaaa.js"></script></head>'
+        "<body><h1>Updated</h1></body></html>",
+        encoding="utf-8",
+    )
+    assert pc.compute_page_hash(a) != pc.compute_page_hash(b)
+
+
 def test_compute_config_hash_ignores_urls() -> None:
     """The config hash MUST be stable across runs even though the URL
     list changes — otherwise the fingerprint would invalidate the cache
