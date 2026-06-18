@@ -148,7 +148,7 @@ site_software: "Static Site Generator, Rust"
       <a class="pill" href="/articles/index.html">Read the research ›</a>
     </div>
     <figure class="narrative-visual">
-      <img src="https://cloudcdn.pro/stocks/images/marko-blazevic-X3a-9JaeUXc.webp" alt="Detail of a quantum hardware enclosure — symbolising post-quantum cryptography in banking" width="640" height="480" loading="lazy" decoding="async" />
+      <img src="https://cloudcdn.pro/stocks/images/quantum-computer-room.webp" alt="Quantum computer room with cryogenic dilution refrigerator — symbolising post-quantum cryptography research and banking infrastructure" width="640" height="480" loading="lazy" decoding="async" />
     </figure>
   </div>
 </section>
@@ -165,7 +165,7 @@ site_software: "Static Site Generator, Rust"
       <a class="pill ghost" href="/projects/index.html">See all open source ›</a>
     </div>
     <figure class="narrative-visual">
-      <img src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg" alt="Sebastien Rousseau logo mark" width="320" height="320" loading="lazy" decoding="async" />
+      <img src="https://cloudcdn.pro/stocks/images/planet-volumes-C7HhKTLk8Fc-unsplash.webp" alt="Earth from space at night, city lights tracing global financial corridors — symbolising open-source infrastructure shipped across regulated markets" width="640" height="480" loading="lazy" decoding="async" />
     </figure>
   </div>
 </section>
