@@ -140,76 +140,118 @@ site_software: "Static Site Generator, Rust"
 <h2 id="practice" class="feat-headline center">Open source for the<br />future of finance.</h2>
 <p class="feat-sub center">A portfolio of Python, Rust and JavaScript libraries I created and maintain. Open source, free to use, and applied to wholesale payments, cross-border settlement, financial data and quantum-resistant cryptography.</p>
 
+<svg aria-hidden="true" focusable="false" style="position:absolute;width:0;height:0;overflow:hidden" xmlns="http://www.w3.org/2000/svg">
+<symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 4 6v6c0 5 3.5 8.5 8 10 4.5-1.5 8-5 8-10V6l-8-3Z"/><path d="m9 12 2 2 4-4"/></symbol>
+<symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+<symbol id="i-infinity" viewBox="0 0 24 24"><path d="M7 9c-2 0-3.5 1.5-3.5 3.5S5 16 7 16c2 0 3-1.5 5-3.5s3-3.5 5-3.5 3.5 1.5 3.5 3.5S19 16 17 16c-2 0-3-1.5-5-3.5"/></symbol>
+</svg>
+
 <div class="proj-grid">
 
 <article class="proj-card">
+<svg class="proj-card-glyph" aria-hidden="true" focusable="false"><use href="#i-clock"/></svg>
 <a class="proj-card-media" href="https://pain001.com" aria-label="pain001. Learn more">
 <img alt="pain001 logo. Open-source ISO 20022 payment file automation by Sebastien Rousseau" src="https://cloudcdn.pro/clients/pain001/v1/logos/pain001.svg" loading="lazy" decoding="async" width="400" height="240" />
 </a>
 <div class="proj-card-body">
 <span class="proj-card-tag">Python · Payments</span>
 <h3>pain001</h3>
-<p>A Python library that automates <strong>ISO 20022 pain.001</strong> payment file creation from CSV or SQLite. Built for the global migration from MT/MX to structured messages across SWIFT, SEPA and major schemes.</p>
+<dl class="pao">
+<div><dt>Problem</dt><dd>Hand-authoring <strong>ISO 20022 pain.001</strong> is fragile under SEPA and SWIFT cutovers.</dd></div>
+<div><dt>Approach</dt><dd>Schema-driven Python that maps CSV or SQLite into validated payment XML.</dd></div>
+<div><dt>Outcome</dt><dd>Ops ship pain.001 in minutes; the audit trail survives the migration.</dd></div>
+</dl>
+<p class="proj-metric"><span class="proj-metric-label">Impact</span> ISO 20022 · SEPA + SWIFT</p>
 <a class="pill ghost" href="https://pain001.com">Learn about pain001</a>
 </div>
 </article>
 
 <article class="proj-card">
+<svg class="proj-card-glyph" aria-hidden="true" focusable="false"><use href="#i-shield"/></svg>
 <a class="proj-card-media" href="https://pacs008.com/" aria-label="pacs008. Learn more">
 <img alt="pacs008 logo. Open-source ISO 20022 pacs.008 toolkit by Sebastien Rousseau" src="https://cloudcdn.pro/clients/pacs008/v1/logos/pacs008.svg" loading="lazy" decoding="async" width="400" height="240" />
 </a>
 <div class="proj-card-body">
 <span class="proj-card-tag">Python · Cross-border</span>
 <h3>pacs008</h3>
-<p>Generate, validate and deliver <strong>ISO 20022 pacs.008</strong> FI-to-FI customer credit transfer messages. JSON Schema, XSD validation, IBAN across 75 countries, GDPR/PCI-DSS-compliant PII masking.</p>
+<dl class="pao">
+<div><dt>Problem</dt><dd>FI-to-FI credit transfers fail audit when XSD, IBAN and PII rules diverge.</dd></div>
+<div><dt>Approach</dt><dd>One library: JSON Schema, XSD, IBAN across 75 countries, GDPR-grade masking.</dd></div>
+<div><dt>Outcome</dt><dd>Cross-border credit transfers that pass first-time at the regulator.</dd></div>
+</dl>
+<p class="proj-metric"><span class="proj-metric-label">Impact</span> 75 countries · IBAN</p>
 <a class="pill ghost" href="https://pacs008.com/">Learn about pacs008</a>
 </div>
 </article>
 
 <article class="proj-card">
+<svg class="proj-card-glyph" aria-hidden="true" focusable="false"><use href="#i-clock"/></svg>
 <a class="proj-card-media" href="https://bankstatementparser.com/" aria-label="Bank Statement Parser. Learn more">
 <img alt="Bank Statement Parser logo. Open-source finance toolkit by Sebastien Rousseau" src="https://cloudcdn.pro/clients/bankstatementparser/v1/logos/bankstatementparser.svg" loading="lazy" decoding="async" width="400" height="240" />
 </a>
 <div class="proj-card-body">
 <span class="proj-card-tag">Python · Finance</span>
 <h3>Bank Statement Parser</h3>
-<p>A finance-grade Python toolkit that turns multi-format bank statements into structured data. Designed for the realities of real-world statement files and the audit demands of regulated environments.</p>
+<dl class="pao">
+<div><dt>Problem</dt><dd>Statement formats trap reconciliation teams in manual rekeying.</dd></div>
+<div><dt>Approach</dt><dd>One Python toolkit that normalises multi-format statements with audit-grade lineage.</dd></div>
+<div><dt>Outcome</dt><dd>Reconciliation runs without bespoke per-bank glue code.</dd></div>
+</dl>
+<p class="proj-metric"><span class="proj-metric-label">Impact</span> Multi-format · Audit-grade</p>
 <a class="pill ghost" href="https://bankstatementparser.com/">Learn about Bank Statement Parser</a>
 </div>
 </article>
 
 <article class="proj-card">
+<svg class="proj-card-glyph" aria-hidden="true" focusable="false"><use href="#i-shield"/></svg>
 <a class="proj-card-media" href="https://github.com/sebastienrousseau/hsh" aria-label="Hash HSH. Learn more">
 <img alt="Hash HSH logo. Open-source Rust hash library by Sebastien Rousseau" src="https://cloudcdn.pro/clients/hsh/v1/logos/hsh.svg" loading="lazy" decoding="async" width="400" height="240" />
 </a>
 <div class="proj-card-body">
 <span class="proj-card-tag">Rust · Security</span>
 <h3>Hash (HSH)</h3>
-<p>A Rust library implementing <strong>secure hash and digest algorithms</strong> for password encryption and verification. Designed with a quantum-resistant posture for the post-PQC era of authentication.</p>
+<dl class="pao">
+<div><dt>Problem</dt><dd>Pre-PQC hashing libraries leave credential stores quantum-exposed.</dd></div>
+<div><dt>Approach</dt><dd>Memory-safe Rust hash and digest library with a post-quantum posture.</dd></div>
+<div><dt>Outcome</dt><dd>Drop-in secure hashing for services planning PQC migration.</dd></div>
+</dl>
+<p class="proj-metric"><span class="proj-metric-label">Impact</span> Memory-safe · Rust</p>
 <a class="pill ghost" href="https://github.com/sebastienrousseau/hsh">Learn about HSH</a>
 </div>
 </article>
 
 <article class="proj-card">
+<svg class="proj-card-glyph" aria-hidden="true" focusable="false"><use href="#i-infinity"/></svg>
 <a class="proj-card-media" href="https://kyberlib.com/" aria-label="KyberLib. Learn more">
 <img alt="KyberLib logo. Open-source Rust CRYSTALS-Kyber library by Sebastien Rousseau" src="https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg" loading="lazy" decoding="async" width="400" height="240" />
 </a>
 <div class="proj-card-body">
 <span class="proj-card-tag">Rust · Quantum</span>
 <h3>KyberLib</h3>
-<p>A robust Rust implementation of <strong>CRYSTALS-Kyber</strong>, the NIST FIPS 203 standard for general-purpose post-quantum encryption. The foundation for quantum-resistant payment authentication.</p>
+<dl class="pao">
+<div><dt>Problem</dt><dd>Tier-1 banks carry harvest-now-decrypt-later exposure on every TLS session.</dd></div>
+<div><dt>Approach</dt><dd>Pure-Rust <strong>CRYSTALS-Kyber</strong> (NIST FIPS 203) that plugs into existing auth flows.</dd></div>
+<div><dt>Outcome</dt><dd>Post-quantum key exchange in production-grade Rust, independently validated.</dd></div>
+</dl>
+<p class="proj-metric"><span class="proj-metric-label">Impact</span> NIST FIPS 203</p>
 <a class="pill ghost" href="https://kyberlib.com/">Learn about KyberLib</a>
 </div>
 </article>
 
 <article class="proj-card">
+<svg class="proj-card-glyph" aria-hidden="true" focusable="false"><use href="#i-shield"/></svg>
 <a class="proj-card-media" href="https://github.com/sebastienrousseau/noyalib" aria-label="noyalib. Learn more">
 <img alt="noyalib logo. Open-source pure-Rust YAML 1.2 ecosystem by Sebastien Rousseau" src="https://cloudcdn.pro/clients/noyalib/v1/logos/noyalib.svg" loading="lazy" decoding="async" width="400" height="240" />
 </a>
 <div class="proj-card-body">
 <span class="proj-card-tag">Rust · YAML</span>
 <h3>noyalib</h3>
-<p>A <strong>pure-Rust YAML 1.2 ecosystem</strong>. Zero unsafe, 100% spec compliance (406 / 406 official suite), streaming-first serde, lossless CST and JSON-Schema validation. Library + CLI (noyafmt, noyavalidate) + LSP + MCP + WASM bindings.</p>
+<dl class="pao">
+<div><dt>Problem</dt><dd>AI, MCP and config pipelines run on YAML parsers with C-backed UB and silent spec drift.</dd></div>
+<div><dt>Approach</dt><dd>Pure-Rust YAML 1.2 across library, CLI, LSP, MCP and WASM — zero unsafe, full spec.</dd></div>
+<div><dt>Outcome</dt><dd>YAML pipelines that stop being the supply-chain weak link.</dd></div>
+</dl>
+<p class="proj-metric"><span class="proj-metric-label">Impact</span> 406 / 406 spec · 0 unsafe</p>
 <a class="pill ghost" href="https://github.com/sebastienrousseau/noyalib">Learn about noyalib</a>
 </div>
 </article>
