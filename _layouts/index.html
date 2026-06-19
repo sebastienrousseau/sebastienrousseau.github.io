@@ -104,8 +104,13 @@
         --paper:#ffffff;
         /* Newsroom paper: warm cream surface for the "From the desk"
            cards. Distinct from --paper (page-wide body bg) so we don't
-           tint the whole site. AAA: #f3ede1 vs --ink (#1d1d1f) = 13.5:1. */
-        --paper-card:#f3ede1;
+           tint the whole site. Lightened from #f3ede1 to #f6f1e7 so
+           --ink-mute (#505058) clears AAA's 7:1 contrast threshold
+           (now 7.09:1) on every layout that uses .newsroom-card —
+           the scoped override in _layouts/index.html doesn't reach
+           topic / article / projects layouts where the same cards
+           render. Contrast vs --ink-deep, --ink-soft, --ink: all 9+. */
+        --paper-card:#f6f1e7;
         --ink-deep:#0d1b2a;
         --rule:#e0e0e0;
         --eyebrow:#0d1b2a;
