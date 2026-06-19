@@ -1623,6 +1623,13 @@
          and the open-source grid read as one engineered system. */
       .newsroom-card{background:var(--paper-card);border:1px solid var(--border);border-radius:6px;overflow:hidden;display:flex;flex-direction:column;box-shadow:none;transition:border-color .25s ease}
       .newsroom-card:hover{transform:none;box-shadow:none;border-color:var(--ink-deep)}
+      /* AAA contrast scope. --ink-mute (#505058) on --paper-card (#f3ede1)
+         is 6.85:1 — below WCAG 2.2 AAA's 7:1 for normal text. Promote the
+         eyebrow + meta to --ink-soft (#3a3a3c) inside .newsroom-card so
+         the same tokens carry their stronger contrast where the
+         background is warmer-than-white. */
+      .newsroom-card .newsroom-eyebrow,
+      .newsroom-card .newsroom-meta{color:var(--ink-soft)}
       /* TL;DR pulled-quote row. Mono badge prefix + one-sentence body.
          Replaces the long descriptive paragraph so each card reads in
          under three seconds. */
