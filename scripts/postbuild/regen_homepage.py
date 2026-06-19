@@ -210,6 +210,16 @@ def _excerpt_for(fm: dict[str, str]) -> str:
     return fm.get("excerpt") or fm.get("subtitle") or fm.get("description") or fm.get("title", "")
 
 
+def _tldr_for(fm: dict[str, str]) -> str:
+    """TL;DR preference order: description → subtitle → excerpt → title.
+
+    Description is the SEO-tuned 140-160 char punchline at the top of
+    the frontmatter — exactly the right shape for a homepage card's
+    one-line summary. Falls back to subtitle (editorial) or excerpt
+    (longer) if a post lacks a description."""
+    return fm.get("description") or fm.get("subtitle") or fm.get("excerpt") or fm.get("title", "")
+
+
 def _esc(s: str) -> str:
     """Escape user text for HTML, idempotent w.r.t. already-escaped
     ampersands. Frontmatter is hand-authored Markdown and sometimes
@@ -225,7 +235,7 @@ def _render_card(slug: str, year: int, month: int, day: int, fm: dict[str, str])
     banner = fm.get("banner", "")
     banner_alt = fm.get("banner_alt", title)
     eyebrow = _eyebrow_from_tags(fm.get("tags", "")) or "Banking · Technology"
-    excerpt = _excerpt_for(fm)
+    tldr = _tldr_for(fm)
     return (
         f'<article class="newsroom-card">\n'
         f'<a class="newsroom-card-media" href="{href}" title="{_esc(title)}">\n'
@@ -235,7 +245,7 @@ def _render_card(slug: str, year: int, month: int, day: int, fm: dict[str, str])
         f'<span class="newsroom-eyebrow">{_esc(eyebrow)}</span>\n'
         f'<h3><a href="{href}">{_esc(title)}</a></h3>\n'
         f'<p class="newsroom-meta"><time datetime="{date_iso}">{_display_date(year, month, day)}</time></p>\n'
-        f'<p class="newsroom-excerpt">{_esc(excerpt)}</p>\n'
+        f'<p class="newsroom-tldr"><span class="newsroom-tldr-label">TL;DR</span> {_esc(tldr)}</p>\n'
         f"</div>\n"
         f"</article>"
     )
