@@ -706,6 +706,15 @@ function fallbackCopy(text, done) {
             "pre.mermaid svg .edgePath .path { stroke: var(--ink-mute, #3a3a3e) !important; }",
             "pre.mermaid svg .edgeLabel rect { fill: var(--card, #ffffff) !important; }",
             "pre.mermaid svg .edgeLabel text, pre.mermaid svg .edgeLabel tspan { fill: var(--ink, #111111) !important; }",
+            // Mermaid v10 renders edge labels through <foreignObject> with
+            // HTML <span>s that inherit a default mid-gray colour (≈ 6.5:1
+            // contrast vs the white edge-label rect). Force the same dark
+            // ink as the SVG-targeted rule so the labels clear WCAG 2.2
+            // AAA on every Mermaid diagram on the site. The ``\x20`` escape
+            // preserves the descendant-combinator space through the SSG's
+            // CSS-aware string minifier, which otherwise collapses spaces
+            // between selectors and class tokens.
+            ".edgeLabel\x20span,.edgeLabel\x20div,.edgeLabel\x20p,.edgeLabel{color:var(--ink,#111111)!important;background-color:var(--card,#ffffff)!important;}",
             "pre.mermaid svg marker { fill: var(--ink-mute, #3a3a3e) !important; stroke: none !important; }"
         ].join("\n");
         document.head.appendChild(style);
