@@ -147,7 +147,7 @@ TOPICS: dict[str, dict[str, object]] = {
             "2023-11-05-mathematical-and-cryptographic-constants-for-rust-security",
             "2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries",
             "2023-10-16-protecting-data-in-the-quantum-age-the-hash-library-hsh",
-            "2023-10-09-shokunin-the-fastest-rust-based-static-site-generator",
+            "2023-10-09-the-fastest-rust-based-static-site-generator",
         ],
     },
     "blockchain-digital-assets": {

@@ -161,7 +161,7 @@ def derive_key_takeaways(body: str, max_items: int = 4) -> list[str]:  # noqa: C
             return False
         paragraph = " ".join(paragraph_lines)
         paragraph = strip_md(paragraph)
-        # Remove the trailing Shokunin attribute syntax `.class=\"…\"`.
+        # Remove the trailing Static Site Generator attribute syntax `.class=\"…\"`.
         paragraph = re.sub(r"\s*\.class=\\.+$", "", paragraph)
         # First sentence boundary.
         m = re.search(r"[.!?](?=\s|$)", paragraph)

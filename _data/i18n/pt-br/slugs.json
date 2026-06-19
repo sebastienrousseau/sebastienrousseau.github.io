@@ -11,8 +11,7 @@
     "privacy": "privacidade",
     "terms": "termos",
     "playlists": "listas-de-reproducao",
-    "made-with-static-site-generator": "feito-com-gerador-de-sites-estaticos",
-    "made-with-shokunin": "feito-com-shokunin",
+    "made-with-static-site-generator": "feito-com-static-site-generator",
     "404": "404",
     "offline": "sem-conexao",
     "thanks": "obrigado",
@@ -27,7 +26,7 @@
     "2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution": "2018-02-04-nova-criptomoeda-e-solucao-de-pagamento-mais-rapida",
     "2018-02-15-the-making-of-the-express-transaction-credits-platform": "2018-02-15-criacao-da-plataforma-express-transaction-credits",
     "2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001": "2023-09-29-automatizar-arquivos-de-pagamento-iso-20022-com-pain001",
-    "2023-10-09-shokunin-the-fastest-rust-based-static-site-generator": "2023-10-09-shokunin-o-gerador-de-sites-estaticos-rust-mais-rapido",
+    "2023-10-09-the-fastest-rust-based-static-site-generator": "2023-10-09-o-gerador-de-sites-estaticos-rust-mais-rapido",
     "2023-10-16-protecting-data-in-the-quantum-age-the-hash-library-hsh": "2023-10-16-proteger-dados-na-era-quantica-biblioteca-de-hash-hsh",
     "2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries": "2023-10-26-libmake-gerador-de-codigo-para-bibliotecas-rust",
     "2023-11-05-mathematical-and-cryptographic-constants-for-rust-security": "2023-11-05-constantes-matematicas-e-criptograficas-para-rust",
@@ -92,6 +91,8 @@
     "2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026": "2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026",
     "2026-06-14-bankstatementparser-transaction-intelligence-treasury-open-source-2026": "2026-06-14-bankstatementparser-transaction-intelligence-treasury-open-source-2026",
     "2026-06-15-pacs008-automation-iso-20022-interbank-payments-2026": "2026-06-15-pacs008-automation-iso-20022-interbank-payments-2026",
-    "2026-06-16-ai-aware-dotfiles-secure-reproducible-workstation-2026": "2026-06-16-ai-aware-dotfiles-secure-reproducible-workstation-2026"
+    "2026-06-16-ai-aware-dotfiles-secure-reproducible-workstation-2026": "2026-06-16-ai-aware-dotfiles-secure-reproducible-workstation-2026",
+    "2026-06-17-economist-commercialising-quantum-summit-2026": "2026-06-17-economist-commercialising-quantum-summit-2026",
+    "2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026": "2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026"
   }
 }

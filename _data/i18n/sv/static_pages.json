@@ -30,17 +30,17 @@
     "description": "Kontakta Sebastien Rousseau för rådgivning kring betaltransformation, migrering till ISO 20022 eller postkvantstrategi.",
     "keywords": "kontakt, rådgivning, betalningar, ISO 20022, postkvantkryptografi"
   },
-  "made-with-shokunin": {
-    "title": "Gjord med Shokunin — Sebastien Rousseau",
+  "made-with-static-site-generator": {
+    "title": "Gjord med Static Site Generator — Sebastien Rousseau",
     "subtitle": "Upptäck hur du använder nästa generations statiska sajtgenerator.",
-    "description": "Den här sajten är byggd med Shokunin, en statisk sajtgenerator i Rust optimerad för prestanda och SEO.",
-    "keywords": "Shokunin, SSG, Rust, prestanda, SEO"
+    "description": "Den här sajten är byggd med Static Site Generator, en statisk sajtgenerator i Rust optimerad för prestanda och SEO.",
+    "keywords": "Static Site Generator, SSG, Rust, prestanda, SEO"
   },
   "made-with-static-site-generator": {
     "title": "Gjord med Static Site Generator — Sebastien Rousseau",
     "subtitle": "Upptäck hur du använder nästa generations statiska sajtgenerator.",
-    "description": "Den här sajten genereras med Shokunin, en blixtsnabb statisk sajtgenerator skriven i Rust.",
-    "keywords": "Shokunin, statisk sajtgenerator, Rust, prestanda"
+    "description": "Den här sajten genereras med Static Site Generator, en blixtsnabb statisk sajtgenerator skriven i Rust.",
+    "keywords": "Static Site Generator, statisk sajtgenerator, Rust, prestanda"
   },
   "offline": {
     "title": "Offline — Sebastien Rousseau",

@@ -195,7 +195,7 @@ def write_robots(public: Path) -> bool:
 # 6a-ii. humans.txt + security.txt — copy the source files into public/
 # ---------------------------------------------------------------------------
 #
-# Shokunin emits empty placeholder humans.txt + security.txt at the site root
+# Static Site Generator emits empty placeholder humans.txt + security.txt at the site root
 # regardless of source. The canonical RFC-9116 disclosure file lives at
 # /.well-known/security.txt and the human-readable colophon at /humans.txt
 # — both authored in the repo root. This pass copies them through so they
@@ -661,7 +661,7 @@ def write_llms_full_txt(public: Path) -> bool:
 
 
 # ---------------------------------------------------------------------------
-# 6c. XML feed URL rewrite — repair Shokunin RSS/Atom/news-sitemap output
+# 6c. XML feed URL rewrite — repair Static Site Generator RSS/Atom/news-sitemap output
 # ---------------------------------------------------------------------------
 
 
@@ -680,7 +680,7 @@ def _build_title_index() -> dict[str, str]:
     Walks both the top-level English ``_posts/*.md`` AND every
     per-language subtree ``_posts/<lang>/*.md`` so the per-entry rewrite
     in :func:`fix_xml_feed_urls` can find a URL for translated titles
-    too. Without the per-language pass, Shokunin's atom feed would keep
+    too. Without the per-language pass, Static Site Generator's atom feed would keep
     `<link href=".meta/<lang>/">` placeholders for every translation.
     """
     idx: dict[str, str] = {}
@@ -745,7 +745,7 @@ def _patch_block(block: str, title_index: dict[str, str]) -> str:
         return block
 
     # Replace any URL inside this block that either has a localhost host or
-    # has /.meta/ anywhere in its path — that's the Shokunin bug signature.
+    # has /.meta/ anywhere in its path — that's the Static Site Generator bug signature.
     bad_url = (
         r"https?://"
         r"(?:"
@@ -765,7 +765,7 @@ def _patch_block(block: str, title_index: dict[str, str]) -> str:
 
 
 def fix_xml_feed_urls(public: Path) -> int:
-    """Repair localhost/.meta/ URLs Shokunin sometimes bakes into the
+    """Repair localhost/.meta/ URLs Static Site Generator sometimes bakes into the
     RSS / Atom / news-sitemap output."""
     title_index = _build_title_index()
     if not title_index:
@@ -784,7 +784,7 @@ def fix_xml_feed_urls(public: Path) -> int:
             text = _NEWS_URL_RE.sub(lambda m: _patch_block(m.group(0), title_index), text)
 
         # Strip any residual <url>…</url> block whose <loc> still has the
-        # dev-artefact /.meta/ path — those entries come from Shokunin
+        # dev-artefact /.meta/ path — those entries come from Static Site Generator
         # processing the nested _posts/fr/ directory and don't belong in
         # the news-sitemap.
         text = re.sub(
@@ -820,7 +820,7 @@ def escape_xml_ampersands(text: str) -> str:
     """Repair XML feed ampersands two ways:
 
     1. Un-double-escape ``&amp;<entity>;`` back to ``&<entity>;``
-       (Shokunin's bug on the RSS channel-level <title>).
+       (Static Site Generator's bug on the RSS channel-level <title>).
     2. Replace bare ``&`` with ``&amp;``, leaving valid entity
        references alone.
 
@@ -1214,7 +1214,7 @@ _STATIC_SLUGS = (
     "accessibility",
     "privacy",
     "terms",
-    "made-with-shokunin",
+    "made-with-static-site-generator",
     "made-with-static-site-generator",
     "resources-pacs008-checklist",
 )
@@ -1285,7 +1285,7 @@ def _lang_sitemap_urls(code: str, lastmod_index: dict[str, str]) -> list[tuple[s
 
 
 def _splice_fr_urls(xml: str, lastmod_index: dict[str, str]) -> str:
-    """Splice every missing EN + non-EN URL into Shokunin's sitemap.xml,
+    """Splice every missing EN + non-EN URL into Static Site Generator's sitemap.xml,
     which ships empty. Idempotent — re-runs don't dupe."""
     existing_locs = {m.group(1).strip() for m in _LOC_RE.finditer(xml)}
     seen: set[str] = set()

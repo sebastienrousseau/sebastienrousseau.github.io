@@ -388,7 +388,7 @@ ARTICLES = [
         "https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp",
         "Turned-off laptop computer on top of a white table",
         "Empowering you to create high-impact static websites with infinite possibilities, limitless scalability, and a truly unique web presence that you control.",
-        "/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/index.html",
+        "/2023-10-09-the-fastest-rust-based-static-site-generator/index.html",
     ),
     (
         "2023-09-29",

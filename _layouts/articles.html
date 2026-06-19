@@ -102,6 +102,10 @@
            paper-tuned accents; --measure-article + --leading-article
            govern the article body column. No consumers in this commit. */
         --paper:#ffffff;
+        /* Newsroom paper: warm cream surface for the "From the desk"
+           cards. Distinct from --paper (page-wide body bg) so we don't
+           tint the whole site. AAA: #f3ede1 vs --ink (#1d1d1f) = 13.5:1. */
+        --paper-card:#f3ede1;
         --ink-deep:#0d1b2a;
         --rule:#e0e0e0;
         --eyebrow:#0d1b2a;
@@ -137,6 +141,7 @@
            --ink-deep inverts to off-white so .card--editorial keeps the
            same dark-card-on-light-card-bg gesture that defines FT. */
         --paper:#0b0b0d;
+        --paper-card:#1c1a17;
         --ink-deep:#f2efe6;
         --rule:#2a2a2c;
         --eyebrow:#f2efe6;
@@ -153,6 +158,7 @@
           --card:#161617;
           --border:#3a3a3c;
           --paper:#0b0b0d;
+        --paper-card:#1c1a17;
           --ink-deep:#f2efe6;
           --rule:#2a2a2c;
           --eyebrow:#f2efe6;
@@ -925,7 +931,7 @@
           white-space:pre-wrap;
           word-break:break-word;
         }
-        /* shokunin's syntect highlighter wraps code blocks as
+        /* static-site-generator's syntect highlighter wraps code blocks as
            `<pre><code><pre style="background-color:#…;">…</pre></code></pre>`
            — the inner <pre> inherits the print rule above and so
            emits a SECOND left rule beside the outer one. Strip
@@ -1611,8 +1617,24 @@
          answer text to half the container. Force it back to full width. */
       .qa-a p{margin:0;font-size:15.5px;line-height:1.6;color:var(--ink-soft);max-width:none}
       .qa-a p + p{margin-top:12px}
-      .newsroom-card{background:var(--card);border-radius:18px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 1px 0 rgba(0,0,0,.06);transition:transform .25s ease,box-shadow .25s ease}
-      .newsroom-card:hover{transform:translateY(-3px);box-shadow:0 16px 34px -16px rgba(0,0,0,.16)}
+      /* Paper-aesthetic newsroom cards. Warm cream surface, 1px solid
+         hairline border, sharp 6px radius, no drop shadow. Pairs with
+         the tactile-brutalist proj-cards above so the editorial grid
+         and the open-source grid read as one engineered system. */
+      .newsroom-card{background:var(--paper-card);border:1px solid var(--border);border-radius:6px;overflow:hidden;display:flex;flex-direction:column;box-shadow:none;transition:border-color .25s ease}
+      .newsroom-card:hover{transform:none;box-shadow:none;border-color:var(--ink-deep)}
+      /* AAA contrast scope. --ink-mute (#505058) on --paper-card (#f3ede1)
+         is 6.85:1 — below WCAG 2.2 AAA's 7:1 for normal text. Promote the
+         eyebrow + meta to --ink-soft (#3a3a3c) inside .newsroom-card so
+         the same tokens carry their stronger contrast where the
+         background is warmer-than-white. */
+      .newsroom-card .newsroom-eyebrow,
+      .newsroom-card .newsroom-meta{color:var(--ink-soft)}
+      /* TL;DR pulled-quote row. Mono badge prefix + one-sentence body.
+         Replaces the long descriptive paragraph so each card reads in
+         under three seconds. */
+      .newsroom-card-body .newsroom-tldr{font-size:14.5px;line-height:1.55;color:var(--ink);margin:0 0 18px;flex:1;display:flex;align-items:flex-start;gap:10px;flex-wrap:wrap}
+      .newsroom-tldr-label{flex:0 0 auto;font-family:var(--type-mono,ui-monospace,monospace);font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-deep);padding:4px 8px;border:1px solid var(--ink-deep);border-radius:2px;line-height:1.2;position:relative;top:2px}
       .newsroom-card-media{display:block;background:var(--bg-alt);overflow:hidden;aspect-ratio:1/1;position:relative;font-size:0;line-height:0}
       .newsroom-card-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .6s ease;border-radius:0;margin:0;display:block}
       .newsroom-card:hover .newsroom-card-media img{transform:scale(1.04)}
@@ -1719,26 +1741,44 @@
       .dm-card .dm-link{font-family:var(--type-body);font-size:12.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--accent,var(--link-color));text-decoration:none}
       .dm-card .dm-link:hover{text-decoration:underline;text-underline-offset:3px}
 
-      .proj-card{background:var(--card);border-radius:22px;display:flex;flex-direction:column;overflow:hidden;transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease;box-shadow:var(--shadow);border:1px solid transparent}
-      .proj-card:hover{transform:translateY(-4px);box-shadow:0 24px 48px -16px rgba(0,0,0,.2);border-color:var(--ink-mute)}
-      /* On hover, lift the GitHub stats row into focus — pulls the
-         "★ stars · last commit" data forward so the open-source projects
-         feel "alive" instead of static documentation cards. */
-      .proj-card .gh-stats-row{transition:color .25s ease,transform .25s ease}
-      .proj-card:hover .gh-stats-row{color:var(--ink-deep);transform:translateY(-1px)}
+      /* Inline-symbol-defs SVG holder. Hides the <symbol> definitions block
+         without using an inline style attribute (CSP style-src 'self' blocks
+         inline styles on the homepage). */
+      .svg-defs{position:absolute;width:0;height:0;overflow:hidden}
+      /* Tactile-brutalist project cards: 1px solid border, no drop shadow,
+         sharp 6px radius, hover via border-color only (no transform/lift).
+         Sets the open-source grid apart from the softer "decision-maker"
+         block above it — engineered precision over polished marketing. */
+      .proj-card{background:var(--card);border-radius:6px;display:flex;flex-direction:column;overflow:hidden;transition:border-color .25s ease;box-shadow:none;border:1px solid var(--border);position:relative}
+      .proj-card:hover{transform:none;box-shadow:none;border-color:var(--ink-deep)}
+      .proj-card .gh-stats-row{transition:color .25s ease}
+      .proj-card:hover .gh-stats-row{color:var(--ink-deep)}
       .proj-card:hover .gh-stat{border-color:var(--ink-mute)}
       .proj-card-media{aspect-ratio:5/3;background:#fff;display:flex;align-items:center;justify-content:center;padding:24px;overflow:hidden;border-bottom:1px solid var(--border)}
-      /* Force every logo into the same 200×56 bounding box. object-fit:contain preserves
-         aspect ratio inside that box, so a square mark and a wide wordmark visually agree. */
       .proj-card-media img{width:200px;height:56px;max-width:70%;max-height:60%;object-fit:contain;object-position:center;transition:transform .4s ease}
-      .proj-card:hover .proj-card-media img{transform:scale(1.05)}
+      .proj-card:hover .proj-card-media img{transform:scale(1.04)}
       .proj-card.photo .proj-card-media{padding:0;background:var(--bg-alt);border-bottom:0}
       .proj-card.photo .proj-card-media img{width:100%;height:100%;object-fit:cover;max-width:none;max-height:none}
       .proj-card-body{padding:24px 28px 28px;display:flex;flex-direction:column;flex:1}
       .proj-card-tag{display:inline-block;font-size:11px;font-weight:600;color:var(--accent);letter-spacing:.06em;text-transform:uppercase;margin-bottom:8px}
-      .proj-card h3{font-size:22px;line-height:1.15;font-weight:600;letter-spacing:-.01em;margin:0 0 8px;color:var(--ink)}
-      .proj-card p{font-size:14px;line-height:1.5;color:var(--ink-mute);margin:0 0 18px;flex:1}
-      .proj-card .pill{align-self:flex-start;font-size:13px;padding:9px 16px;margin-block-end:8px}
+      .proj-card h3{font-size:22px;line-height:1.15;font-weight:600;letter-spacing:-.01em;margin:0 0 12px;color:var(--ink)}
+      .proj-card p{font-size:14px;line-height:1.5;color:var(--ink-mute);margin:0 0 18px}
+      .proj-card .pill{align-self:flex-start;font-size:13px;padding:9px 16px;margin-block-end:8px;margin-block-start:auto}
+      /* Glyph badge — top-right of card, signals project domain
+         (Shield = security, Clock = ops/performance, Infinity = future-proofing). */
+      .proj-card-glyph{position:absolute;top:14px;right:14px;width:20px;height:20px;color:var(--ink-mute);stroke:currentColor;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;pointer-events:none;z-index:1}
+      .proj-card:hover .proj-card-glyph{color:var(--accent)}
+      /* Problem-Approach-Outcome dl. Three stacked rows with a small
+         mono-typed label and a one-line value. Borders between rows
+         reinforce the tactile aesthetic. */
+      .proj-card .pao{margin:0 0 16px;padding:0;display:flex;flex-direction:column;gap:0;flex:1 1 auto}
+      .proj-card .pao>div{padding:10px 0;border-top:1px solid var(--border)}
+      .proj-card .pao>div:first-child{border-top:0;padding-top:4px}
+      .proj-card .pao dt{font-family:var(--type-mono,ui-monospace,monospace);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-mute);font-weight:700;margin:0 0 4px}
+      .proj-card .pao dd{margin:0;font-size:13.5px;line-height:1.5;color:var(--ink)}
+      /* Outcome metric badge. Mono caps, hairline border, sharp 2px radius. */
+      .proj-card .proj-metric{display:inline-flex;align-items:center;gap:8px;align-self:flex-start;margin:0 0 18px;padding:6px 10px;border:1px solid var(--ink-deep);border-radius:2px;font-family:var(--type-mono,ui-monospace,monospace);font-size:11px;letter-spacing:.04em;color:var(--ink-deep);background:transparent;font-weight:700;text-transform:uppercase}
+      .proj-card .proj-metric-label{font-size:10px;color:var(--ink-mute);font-weight:700}
 
       /* About-page portrait. Markdown-author image, shown above the bio */
       .about-portrait{display:block;width:220px;height:220px;margin:0 auto 32px;border-radius:50%;object-fit:cover;box-shadow:0 14px 40px -16px rgba(0,0,0,.25)}

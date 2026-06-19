@@ -86,7 +86,7 @@ def _render_one_lang(code: str) -> int:
     written += static_written
 
     # Per-language search index — visible text of every rendered page,
-    # loaded by the Shokunin search palette when the visitor is in
+    # loaded by the Static Site Generator search palette when the visitor is in
     # /<code>/.
     search_entries = _build_fr_search_index()
     (st.OUT / "search-index.json").write_text(

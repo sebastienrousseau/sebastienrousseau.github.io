@@ -30,17 +30,17 @@
     "description": "טופס יצירת קשר מקצועי עבור Sebastien Rousseau: ייעוץ, שיחות, שיתופי פעולה.",
     "keywords": "יצירת קשר, Sebastien Rousseau, ייעוץ, שיחות"
   },
-  "made-with-shokunin": {
-    "title": "נוצר עם Shokunin — Sebastien Rousseau",
-    "subtitle": "אתר זה נבנה עם מחולל האתרים הסטטי Shokunin, כתוב בשפת Rust.",
-    "description": "אתר זה נבנה עם Shokunin, מחולל אתרים סטטי מהיר ומאובטח בשפת Rust.",
-    "keywords": "Shokunin, מחולל אתרים סטטי, Rust, SSG"
+  "made-with-static-site-generator": {
+    "title": "נוצר עם Static Site Generator — Sebastien Rousseau",
+    "subtitle": "אתר זה נבנה עם מחולל האתרים הסטטי Static Site Generator, כתוב בשפת Rust.",
+    "description": "אתר זה נבנה עם Static Site Generator, מחולל אתרים סטטי מהיר ומאובטח בשפת Rust.",
+    "keywords": "Static Site Generator, מחולל אתרים סטטי, Rust, SSG"
   },
   "made-with-static-site-generator": {
     "title": "נוצר עם Static Site Generator — Sebastien Rousseau",
-    "subtitle": "אתר זה נבנה עם מחולל האתרים הסטטי Shokunin בשפת Rust.",
-    "description": "אתר זה נבנה עם Shokunin, מחולל אתרים סטטי בשפת Rust.",
-    "keywords": "מחולל אתרים סטטי, Shokunin, Rust"
+    "subtitle": "אתר זה נבנה עם מחולל האתרים הסטטי Static Site Generator בשפת Rust.",
+    "description": "אתר זה נבנה עם Static Site Generator, מחולל אתרים סטטי בשפת Rust.",
+    "keywords": "מחולל אתרים סטטי, Static Site Generator, Rust"
   },
   "offline": {
     "title": "אתם במצב לא מקוון — Sebastien Rousseau",

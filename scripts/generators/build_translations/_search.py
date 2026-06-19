@@ -1,5 +1,5 @@
 """Search index (per-language) — walks the rendered language tree and
-builds the entries consumed by the Shokunin search palette."""
+builds the entries consumed by the Static Site Generator search palette."""
 
 from __future__ import annotations
 

@@ -78,7 +78,7 @@ keywords: "Static Site Generator, 靜態網站生成器, SSG, Rust, Markdown, SE
 
 立即免費 [**試用 Static Site Generator ⧉**][00]，親眼見證不同！
 
-[00]: https://shokunin.com/ "Static Site Generator：最快的基於 Rust 的靜態網站生成器（SSG）"
+[00]: https://static-site-generator.com/ "Static Site Generator：最快的基於 Rust 的靜態網站生成器（SSG）"
 [01]: https://www.w3.org/WAI/standards-guidelines/wcag/ "Web 內容可訪問性指南（WCAG）"
 [02]: https://www.access-board.gov/ada/ "美國殘疾人法案（ADA）"
 [03]: https://www.rust-lang.org/ "Rust 程式語言"

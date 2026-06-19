@@ -105,6 +105,8 @@ site_software: "Static Site Generator, Rust"
 # From Bank Statements to Unified Transaction Intelligence: Building an Open-Source Parser for Treasury Teams
 
 
+
+
 <!-- lead-start -->
 <aside class="post-lead" aria-label="Article summary">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> BankStatementParser turns CAMT, PAIN.001, CSV, OFX/QFX, MT940, and scanned PDFs into unified transaction models for treasury and finance workflows.</p>
@@ -115,13 +117,13 @@ site_software: "Static Site Generator, Rust"
   <li><strong>The Real Problem Is Format Fragmentation.</strong> Treasury teams do not live in a clean API world.</li>
   <li><strong>Why Unified Transaction Models Matter.</strong> Once statements are normalised into a shared transaction model, the same downstream logic can support reconciliation, categorisation, cash forecasting, anomaly detection, and reporting.</li>
 </ul>
-<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/index.html">AI Prompt Engineering 2024: Techniques That Work</a>.</p>
+<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026">The Autonomous Treasury Index in 2026: Agentic Treasury, Programmable Liquidity, Tokenised Deposits, and Real-Time Cash Control</a>, <a href="https://sebastienrousseau.com/2026-05-11-lucy-besson-knowledge-transfer-ai-quantum/index.html">Lucy's Flash Drive Revisited: AI, Quantum & Knowledge</a>, <a href="https://sebastienrousseau.com/2024-03-18-advancing-ai-with-multimodal-llms-insights-from-mm1/index.html">Advancing AI with Multimodal LLMs: Insights from MM1</a>.</p>
 </aside>
 <!-- lead-end -->
 
 Bank statements are not just documents; they are operational evidence. For finance and treasury teams, the challenge is turning heterogeneous statements into a consistent transaction model that can power reconciliation, cash visibility, categorisation, analytics, and audit. BankStatementParser is the open-source project that makes that problem concrete.
 
-The open-source reference point for this article is [bankstatementparser ⧉](https://github.com/sebastienrousseau/bankstatementparser "bankstatementparser"). The repository is positioned as: a Python parser for CAMT, PAIN.001, CSV, OFX/QFX, MT940, and PDFs, including deterministic ISO 20022 parsers, LLM fallback for PDFs, vision for scans, balance verification, categorisation, and interactive review mode.
+The open-source reference point for this article is [bankstatementparser ⧉](https://github.com/sebastienrousseau/bankstatementparser "bankstatementparser"). The repository is positioned as: a Python parser for CAMT, PAIN.001, CSV, OFX/QFX, MT940, and PDFs, including deterministic [ISO 20022](/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html) parsers, LLM fallback for PDFs, vision for scans, balance verification, categorisation, and interactive review mode.
 
 ---
 
@@ -219,11 +221,13 @@ Balance verification, because it catches extraction and parsing errors before th
 
 <!-- enrich-start -->
 <aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
-<p class="post-reviewed">Last reviewed <time datetime="2026-06-14">2026-06-14</time>.</p>
+<p class="post-reviewed">Last reviewed <time datetime="2026-06-19">2026-06-19</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Related reading</h2>
 <div class="related-grid">
-<article class="related-card"><a href="https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/index.html" class="related-media" aria-label="AI Prompt Engineering 2024: Techniques That Work" tabindex="-1"><img alt="A man analysing data on screens" src="https://cloudcdn.pro/stocks/images/ai-prompt-engineering-modern-office.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/index.html">AI Prompt Engineering 2024: Techniques That Work</a></h3><p><time datetime="2024-01-23">2024-01-23</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026" class="related-media" aria-label="The Autonomous Treasury Index in 2026: Agentic Treasury, Programmable Liquidity, Tokenised Deposits, and Real-Time Cash Control" tabindex="-1"><img alt="Abstract architectural photograph used as the visual key for the 2026 Autonomous Treasury Index — measuring agentic treasury workflows, programmable liquidity, tokenised deposits, real-time payments, and automated cash control" src="https://cloudcdn.pro/stocks/images/christopher-burns-Kj2SaNHG-hg.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026">The Autonomous Treasury Index in 2026: Agentic Treasury, Programmable Liquidity, Tokenised Deposits, and Real-Time Cash Control</a></h3><p><time datetime="2026-06-07">2026-06-07</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-11-lucy-besson-knowledge-transfer-ai-quantum/index.html" class="related-media" aria-label="Lucy's Flash Drive Revisited: AI, Quantum & Knowledge" tabindex="-1"><img alt="Abstract visualisation of neural networks and quantum atomic arrays. A black computer forming from rearranging particles" src="https://cloudcdn.pro/stocks/images/lucy-knowledge-transfer-banner.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-11-lucy-besson-knowledge-transfer-ai-quantum/index.html">Lucy's Flash Drive Revisited: AI, Quantum & Knowledge</a></h3><p><time datetime="2026-05-11">2026-05-11</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2024-03-18-advancing-ai-with-multimodal-llms-insights-from-mm1/index.html" class="related-media" aria-label="Advancing AI with Multimodal LLMs: Insights from MM1" tabindex="-1"><img alt="Banner for the Apple MM1" src="https://cloudcdn.pro/stocks/images/mm1-visual.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2024-03-18-advancing-ai-with-multimodal-llms-insights-from-mm1/index.html">Advancing AI with Multimodal LLMs: Insights from MM1</a></h3><p><time datetime="2024-03-18">2024-03-18</time></p></footer></article>
 </div>
 </aside>
 <!-- enrich-end -->

@@ -10,12 +10,12 @@
 /* THANKS */
   Anthropic Claude — editorial + translation collaboration.
   Cloudflare Workers — edge routing + CSP enforcement.
-  Shokunin SSG — Rust-based static site generator.
+  Static Site Generator (SSG) — Rust-based static site generator.
   Inter, Newsreader, JetBrains Mono — open-source variable typefaces.
 
 /* SITE */
   Last update: 2026-06-04
   Standards: HTML5, CSS3, RSS, Atom, JSON Feed, schema.org JSON-LD
-  Components: Shokunin SSG, Cloudflare Workers, GitHub Pages
+  Components: Static Site Generator (SSG), Cloudflare Workers, GitHub Pages
   Software: Rust, Python 3.12, Node 24
   Languages: 28 (English canonical, 27 native translations)

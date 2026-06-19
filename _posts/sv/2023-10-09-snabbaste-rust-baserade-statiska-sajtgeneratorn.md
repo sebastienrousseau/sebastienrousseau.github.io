@@ -3,17 +3,12 @@ title: "Static Site Generator: el generador de sitios estáticos más rápido ba
 subtitle: "Un SSG ultrarrápido, accesible y optimizado para SEO, escrito en Rust"
 description: "Cree sitios estáticos de alto impacto, escalables hasta el infinito y enteramente bajo su control, gracias a Static Site Generator: un SSG ultrarrápido escrito en Rust."
 date: "October 9, 2023"
-language: "cs-CZ"
-locale: "cs_CZ"
+language: "sv-SE"
+locale: "sv_SE"
 banner: "https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp"
 banner_alt: "Ordenador portátil apagado sobre una mesa blanca con un vaso de agua a la izquierda y un bolígrafo, un cuaderno y una planta a la derecha"
 keywords: "Static Site Generator, generador de sitios estáticos, SSG, Rust, rendimiento, SEO, accesibilidad, WCAG, ADA, PWA, Markdown, GFM, Atom, RSS"
 ---
-
-
-> **TL;DR.** Tento článek je DRAFT překlad původně španělského zdroje, čekající na revizi rodilým mluvčím. Hlavní obsah, příklady a citace zůstávají ve španělštině; pouze záhlaví/frontmatter byly přepnuty na češtinu.
-
-**Klíčové body**
 
 ![Ordenador portátil apagado sobre una mesa blanca con un vaso de agua a la izquierda y un bolígrafo, un cuaderno y una planta a la derecha](https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp).class=\"img-fluid clearfix\"
 
@@ -83,7 +78,7 @@ Cada funcionalidad refleja valores como simplicidad, fiabilidad y escalabilidad.
 
 [**Pruebe Static Site Generator ⧉**][00] gratis hoy y compruebe la diferencia.
 
-[00]: https://shokunin.com/ "Static Site Generator, el generador de sitios estáticos más rápido basado en Rust"
+[00]: https://static-site-generator.com/ "Static Site Generator, el generador de sitios estáticos más rápido basado en Rust"
 [01]: https://www.w3.org/WAI/standards-guidelines/wcag/ "Web Content Accessibility Guidelines (WCAG)"
 [02]: https://www.access-board.gov/ada/ "Americans with Disabilities Act (ADA)"
 [03]: https://www.rust-lang.org/ "Rust Programming Language"

@@ -5,13 +5,13 @@ description: "Static Site Generator は Rust で書かれた静的サイトジ�
 date: "October 9, 2023"
 language: "ja-JP"
 locale: "ja_JP"
-banner: "https://cloudcdn.pro/stocks/images/shokunin-banner.webp"
+banner: "https://cloudcdn.pro/clients/static-site-generator/v1/banners/banner-static-site-generator.svg"
 banner_alt: "Static Site Generator プロジェクトのバナー"
 keywords: "Static Site Generator, SSG, 静的サイトジェネレータ, Rust, パフォーマンス, SEO, JSON-LD, アクセシビリティ"
 last_reviewed: "2026-05-11"
 ---
 
-![Static Site Generator プロジェクトのバナー](https://cloudcdn.pro/stocks/images/shokunin-banner.webp).class=\"img-fluid clearfix\"
+![Static Site Generator プロジェクトのバナー](https://cloudcdn.pro/clients/static-site-generator/v1/banners/banner-static-site-generator.svg).class=\"img-fluid clearfix\"
 
 ## インサイト
 

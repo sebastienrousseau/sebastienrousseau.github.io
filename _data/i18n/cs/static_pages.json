@@ -30,17 +30,17 @@
     "description": "Kontaktujte Sebastiena Rousseaua ohledně konzultací o transformaci plateb, migraci ISO 20022 nebo postkvantové strategii.",
     "keywords": "kontakt, konzultace, platby, ISO 20022, postkvantová kryptografie"
   },
-  "made-with-shokunin": {
-    "title": "Vytvořeno se Shokuninem — Sebastien Rousseau",
+  "made-with-static-site-generator": {
+    "title": "Vytvořeno se Static Site Generatorem — Sebastien Rousseau",
     "subtitle": "Objevte, jak používat statický generátor nové generace.",
-    "description": "Tento web je vytvořen se Shokuninem, statickým generátorem v Rustu optimalizovaným pro výkon a SEO.",
-    "keywords": "Shokunin, SSG, Rust, výkon, SEO"
+    "description": "Tento web je vytvořen se Static Site Generatorem, statickým generátorem v Rustu optimalizovaným pro výkon a SEO.",
+    "keywords": "Static Site Generator, SSG, Rust, výkon, SEO"
   },
   "made-with-static-site-generator": {
     "title": "Vytvořeno se Static Site Generator — Sebastien Rousseau",
     "subtitle": "Objevte, jak používat statický generátor nové generace.",
-    "description": "Tento web je generován pomocí Shokunina, rychlého statického generátoru psaného v Rustu.",
-    "keywords": "Shokunin, statický generátor, Rust, výkon"
+    "description": "Tento web je generován pomocí Static Site Generatora, rychlého statického generátoru psaného v Rustu.",
+    "keywords": "Static Site Generator, statický generátor, Rust, výkon"
   },
   "offline": {
     "title": "Offline — Sebastien Rousseau",

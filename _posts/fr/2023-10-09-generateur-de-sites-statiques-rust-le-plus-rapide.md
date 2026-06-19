@@ -78,7 +78,7 @@ Prêt à créer en quelques minutes un site statique haute performance qui boost
 
 [**Essayez Static Site Generator ⧉**][00] gratuitement aujourd'hui et constatez la différence !
 
-[00]: https://shokunin.com/ "Static Site Generator, le générateur de sites statiques le plus rapide basé sur Rust"
+[00]: https://static-site-generator.com/ "Static Site Generator, le générateur de sites statiques le plus rapide basé sur Rust"
 [01]: https://www.w3.org/WAI/standards-guidelines/wcag/ "Web Content Accessibility Guidelines (WCAG)"
 [02]: https://www.access-board.gov/ada/ "Americans with Disabilities Act (ADA)"
 [03]: https://www.rust-lang.org/ "Rust Programming Language"

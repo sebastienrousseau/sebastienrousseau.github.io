@@ -30,17 +30,17 @@
     "description": "決済変革、ISO 20022 移行、ポスト量子戦略のコンサルティングについて Sebastien Rousseau にお問い合わせください。",
     "keywords": "お問い合わせ, コンサルティング, 決済, ISO 20022, ポスト量子暗号"
   },
-  "made-with-shokunin": {
-    "title": "Shokunin で作成 — Sebastien Rousseau",
+  "made-with-static-site-generator": {
+    "title": "Static Site Generator で作成 — Sebastien Rousseau",
     "subtitle": "次世代の静的サイトジェネレータの活用方法をご紹介します。",
-    "description": "このサイトはパフォーマンスと SEO を最適化した Rust 製静的サイトジェネレータ Shokunin で構築されています。",
-    "keywords": "Shokunin, SSG, Rust, パフォーマンス, SEO"
+    "description": "このサイトはパフォーマンスと SEO を最適化した Rust 製静的サイトジェネレータ Static Site Generator で構築されています。",
+    "keywords": "Static Site Generator, SSG, Rust, パフォーマンス, SEO"
   },
   "made-with-static-site-generator": {
     "title": "Static Site Generator で作成 — Sebastien Rousseau",
     "subtitle": "次世代の静的サイトジェネレータの活用方法をご紹介します。",
-    "description": "このサイトは Rust で書かれた高速な静的サイトジェネレータ Shokunin で生成されています。",
-    "keywords": "Shokunin, 静的サイトジェネレータ, Rust, パフォーマンス"
+    "description": "このサイトは Rust で書かれた高速な静的サイトジェネレータ Static Site Generator で生成されています。",
+    "keywords": "Static Site Generator, 静的サイトジェネレータ, Rust, パフォーマンス"
   },
   "offline": {
     "title": "オフライン — Sebastien Rousseau",

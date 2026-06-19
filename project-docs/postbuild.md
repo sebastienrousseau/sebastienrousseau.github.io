@@ -3,7 +3,7 @@
 > Last Updated: June 4, 2026
 
 The postbuild script is a single-page orchestrator that applies eighteen independent changes to every rendered page.
-These tasks run inside the Shokunin static site generator after the main HTML compile step finishes.
+These tasks run inside the Static Site Generator static site generator after the main HTML compile step finishes.
 
 ## Contents
 

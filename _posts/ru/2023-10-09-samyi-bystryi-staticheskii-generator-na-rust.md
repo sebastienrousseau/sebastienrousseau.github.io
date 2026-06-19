@@ -5,7 +5,7 @@ description: "Static Site Generator — это статический генер
 date: "October 9, 2023"
 language: "ru-RU"
 locale: "ru_RU"
-banner: "https://cloudcdn.pro/stocks/images/shokunin-banner.webp"
+banner: "https://cloudcdn.pro/clients/static-site-generator/v1/banners/banner-static-site-generator.svg"
 banner_alt: "Логотип и баннер Static Site Generator (SSG)"
 keywords: "Static Site Generator, статический генератор сайтов, Rust, SSG, производительность, SEO, JSON-LD, доступность, open source"
 ---

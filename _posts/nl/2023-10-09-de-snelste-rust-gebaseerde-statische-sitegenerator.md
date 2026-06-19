@@ -77,7 +77,7 @@ Bereit, in wenigen minuten een performante statische Website tot pasellen, de uw
 
 [**Probieren Sie Static Site Generator ⧉**][00] nog heute kostenfrei uit en ervaren Sie de Unterschied!
 
-[00]: https://shokunin.com/ "Static Site Generator, de snelste Rust-basierte Static Site Generator (SSG)"
+[00]: https://static-site-generator.com/ "Static Site Generator, de snelste Rust-basierte Static Site Generator (SSG)"
 [01]: https://www.w3.org/WAI/standards-guidelines/wcag/ "Web Content Accessibility Guidelines (WCAG)"
 [02]: https://www.access-board.gov/ada/ "Americans with Disabilities Act (ADA)"
 [03]: https://www.rust-lang.org/ "Rust Programming Language"

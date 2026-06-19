@@ -30,17 +30,17 @@
     "description": "نموذج تواصل مهني لسيباستيان روسو: استشارات، محادثات، تعاون.",
     "keywords": "تواصل, سيباستيان روسو, استشارات, محادثات"
   },
-  "made-with-shokunin": {
-    "title": "مصنوع باستخدام Shokunin — سيباستيان روسو",
-    "subtitle": "هذا الموقع مبني بمولّد المواقع الثابت Shokunin، مكتوب بلغة Rust.",
-    "description": "بُني هذا الموقع باستخدام Shokunin، مولّد مواقع ثابت سريع وآمن مكتوب بلغة Rust.",
-    "keywords": "Shokunin, مولّد مواقع ثابت, Rust, SSG"
+  "made-with-static-site-generator": {
+    "title": "مصنوع باستخدام Static Site Generator — سيباستيان روسو",
+    "subtitle": "هذا الموقع مبني بمولّد المواقع الثابت Static Site Generator، مكتوب بلغة Rust.",
+    "description": "بُني هذا الموقع باستخدام Static Site Generator، مولّد مواقع ثابت سريع وآمن مكتوب بلغة Rust.",
+    "keywords": "Static Site Generator, مولّد مواقع ثابت, Rust, SSG"
   },
   "made-with-static-site-generator": {
     "title": "مصنوع بمولّد مواقع ثابت — سيباستيان روسو",
-    "subtitle": "هذا الموقع مبني بمولّد مواقع ثابت Shokunin بلغة Rust.",
-    "description": "بُني هذا الموقع باستخدام Shokunin، مولّد مواقع ثابت بلغة Rust.",
-    "keywords": "مولّد مواقع ثابت, Shokunin, Rust"
+    "subtitle": "هذا الموقع مبني بمولّد مواقع ثابت Static Site Generator بلغة Rust.",
+    "description": "بُني هذا الموقع باستخدام Static Site Generator، مولّد مواقع ثابت بلغة Rust.",
+    "keywords": "مولّد مواقع ثابت, Static Site Generator, Rust"
   },
   "offline": {
     "title": "أنت غير متصل — سيباستيان روسو",

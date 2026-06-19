@@ -57,14 +57,14 @@
   "made-with-static-site-generator": {
     "title": "Tạo bằng Static Site Generator — Sebastien Rousseau",
     "subtitle": "Khám phá cách sử dụng bộ tạo trang tĩnh thế hệ mới.",
-    "description": "Website này được tạo bằng Shokunin, bộ tạo trang tĩnh tốc độ cao viết bằng Rust.",
-    "keywords": "Shokunin, bộ tạo trang tĩnh, Rust, hiệu năng"
+    "description": "Website này được tạo bằng Static Site Generator, bộ tạo trang tĩnh tốc độ cao viết bằng Rust.",
+    "keywords": "Static Site Generator, bộ tạo trang tĩnh, Rust, hiệu năng"
   },
-  "made-with-shokunin": {
-    "title": "Tạo bằng Shokunin — Sebastien Rousseau",
+  "made-with-static-site-generator": {
+    "title": "Tạo bằng Static Site Generator — Sebastien Rousseau",
     "subtitle": "Khám phá cách sử dụng bộ tạo trang tĩnh thế hệ mới.",
-    "description": "Website này được tạo bằng Shokunin, bộ tạo trang tĩnh Rust tối ưu cho hiệu năng và SEO.",
-    "keywords": "Shokunin, SSG, Rust, hiệu năng, SEO"
+    "description": "Website này được tạo bằng Static Site Generator, bộ tạo trang tĩnh Rust tối ưu cho hiệu năng và SEO.",
+    "keywords": "Static Site Generator, SSG, Rust, hiệu năng, SEO"
   },
   "playlists": {
     "title": "Danh sách phát — Sebastien Rousseau",

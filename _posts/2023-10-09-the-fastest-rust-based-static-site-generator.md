@@ -17,7 +17,7 @@ description: "Empowering you to create high-impact static websites with infinite
 format-detection: "telephone=no"
 hreflang: "en"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
-id: "https://sebastienrousseau.com/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/index.html"
+id: "https://sebastienrousseau.com/2023-10-09-the-fastest-rust-based-static-site-generator/index.html"
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
@@ -33,7 +33,7 @@ logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau
 menu: "active"
 measurementID: "G-169G4ET5HQ"
 name: "Sebastien Rousseau"
-permalink: "https://sebastienrousseau.com/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/index.html"
+permalink: "https://sebastienrousseau.com/2023-10-09-the-fastest-rust-based-static-site-generator/index.html"
 rating: "general"
 referrer: "no-referrer"
 revisit-after: "7 days"
@@ -43,17 +43,17 @@ subtitle: "Static Site Generator, the fastest Rust-based static site generator f
 tags: "pain001, ISO 20022, payment automation, cost reduction, payments, payment files, pain message, DORA, post-quantum cryptography, AI, tokenised deposits, Rust, cloud native banking, cross-border payments, stablecoins"
 theme-color: "0, 67, 165"
 title: "Static Site Generator: Fastest Rust-Based SSG"
-url: "https://sebastienrousseau.com/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/index.html"
+url: "https://sebastienrousseau.com/2023-10-09-the-fastest-rust-based-static-site-generator/index.html"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
 # RSS - The RSS feed front matter (YAML).
-atom_link: "https://sebastienrousseau.com/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/rss.xml"
+atom_link: "https://sebastienrousseau.com/2023-10-09-the-fastest-rust-based-static-site-generator/rss.xml"
 category: "Open Source"
 docs: "https://validator.w3.org/feed/docs/rss2.html"
 generator: "Static Site Generator (SSG) (version 0.0.26)"
 item_description: "Empowering you to create high-impact static websites with infinite possibilities, limitless scalability, and a truly unique web presence that you control."
-item_guid: "https://sebastienrousseau.com/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/rss.xml"
-item_link: "https://sebastienrousseau.com/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/rss.xml"
+item_guid: "https://sebastienrousseau.com/2023-10-09-the-fastest-rust-based-static-site-generator/rss.xml"
+item_link: "https://sebastienrousseau.com/2023-10-09-the-fastest-rust-based-static-site-generator/rss.xml"
 item_pub_date: "Mon, 09 Oct 2023 05:13:00 +0000"
 item_title: "Static Site Generator, the fastest Rust-based Static Site Generator (SSG)"
 last_build_date: "Mon, 09 Oct 2023 05:13:00 +0000"
@@ -85,10 +85,10 @@ twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastie
 twitter_image_alt: "Logo of Sebastien Rousseau"
 twitter_site: "@wwdseb"
 twitter_title: "Static Site Generator, the fastest Rust-based Static Site Generator (SSG)"
-twitter_url: "https://sebastienrousseau.com/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/index.html"
+twitter_url: "https://sebastienrousseau.com/2023-10-09-the-fastest-rust-based-static-site-generator/index.html"
 
 # Humans.txt - The Humans.txt front matter (YAML).
-author_website: "https://sebastienrousseau.com/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/index.html"
+author_website: "https://sebastienrousseau.com/2023-10-09-the-fastest-rust-based-static-site-generator/index.html"
 author_twitter: "@wwdseb"
 author_location: "London, UK"
 thanks: "Thanks for reading!"
@@ -194,7 +194,7 @@ If you have any questions, please don't hesitate to contact me via [LinkedIn ⧉
 
 [**❬ Back to Articles**][09]
 
-[00]: https://shokunin.com/ "Static Site Generator, the fastest Rust-based Static Site Generator (SSG)"
+[00]: https://static-site-generator.com/ "Static Site Generator, the fastest Rust-based Static Site Generator (SSG)"
 [01]: https://www.w3.org/WAI/standards-guidelines/wcag/ "Web Content Accessibility Guidelines (WCAG)"
 [02]: https://www.access-board.gov/ada/ "Americans with Disabilities Act (ADA)"
 [03]: https://www.rust-lang.org/ "Rust Programming Language"
@@ -209,7 +209,7 @@ If you have any questions, please don't hesitate to contact me via [LinkedIn ⧉
 
 <!-- enrich-start -->
 <aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
-<p class="post-reviewed">Last reviewed <time datetime="2026-06-12">2026-06-12</time>.</p>
+<p class="post-reviewed">Last reviewed <time datetime="2026-06-19">2026-06-19</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Related reading</h2>
 <div class="related-grid">

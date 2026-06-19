@@ -5,12 +5,12 @@ description: 'Static Site Generator là bộ tạo trang tĩnh viết bằng Rus
 date: 'October 9, 2023'
 language: 'vi-VN'
 locale: 'vi_VN'
-banner: 'https://cloudcdn.pro/clients/shokunin/v1/banners/banner-shokunin.svg'
+banner: 'https://cloudcdn.pro/clients/static-site-generator/v1/banners/banner-static-site-generator.svg'
 banner_alt: 'Biểu ngữ Static Site Generator'
 keywords: 'Static Site Generator, SSG, Rust, bộ tạo trang tĩnh, hiệu năng, SEO, JSON-LD, mã nguồn mở'
 ---
 
-![Biểu ngữ Static Site Generator](https://cloudcdn.pro/clients/shokunin/v1/banners/banner-shokunin.svg).class=\"img-fluid clearfix\"
+![Biểu ngữ Static Site Generator](https://cloudcdn.pro/clients/static-site-generator/v1/banners/banner-static-site-generator.svg).class=\"img-fluid clearfix\"
 
 > **TL;DR.** Static Site Generator là bộ tạo trang tĩnh (SSG) viết bằng Rust, được thiết kế để mang lại tốc độ build cực nhanh, an toàn bộ nhớ và hỗ trợ tích hợp cho SEO, khả năng tiếp cận và JSON-LD.
 >
@@ -83,7 +83,7 @@ my-site/
 
 ## Mã nguồn
 
-Static Site Generator được phát hành theo giấy phép Apache-2.0. Mã nguồn có sẵn trên [GitHub ⧉](https://github.com/sebastienrousseau/shokunin "Static Site Generator trên GitHub").
+Static Site Generator được phát hành theo giấy phép Apache-2.0. Mã nguồn có sẵn trên [GitHub ⧉](https://github.com/sebastienrousseau/static-site-generator "Static Site Generator trên GitHub").
 
 ## Kết luận
 

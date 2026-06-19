@@ -13,7 +13,7 @@ Pass 1 — Schema.org JSON-LD inside *.html
 
 Pass 2 — XML feeds (*.xml)
   - XML well-formedness via xml.etree (catches bare `&` regressions, the
-    Shokunin RSS double-escape, malformed nesting, etc.)
+    Static Site Generator RSS double-escape, malformed nesting, etc.)
   - RSS feeds: every channel has title + link + description, every item
     has title + link
   - Atom feeds: feed-level id + title + updated; every entry has id +
@@ -280,7 +280,7 @@ def _localname(tag: str) -> str:
     return tag.rsplit("}", 1)[-1]
 
 
-# A URL is "tainted" if it's the kind of regression Shokunin keeps shipping:
+# A URL is "tainted" if it's the kind of regression Static Site Generator keeps shipping:
 # localhost host, IPv4 loopback, or a `/.meta/` artefact path. These are the
 # exact patterns the postbuild URL-repair pass rewrites — this check is the
 # loud failure surface for when that repair stops working.

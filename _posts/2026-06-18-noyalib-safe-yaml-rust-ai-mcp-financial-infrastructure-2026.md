@@ -104,6 +104,22 @@ site_software: "Static Site Generator, Rust"
 
 # Why YAML Needs a Safer Rust Stack for AI, MCP, and Financial Infrastructure in 2026
 
+
+
+<!-- lead-start -->
+<aside class="post-lead" aria-label="Article summary">
+<p class="post-lead-tldr"><strong>TL;DR.</strong> NoyaLib, a zero-unsafe Rust YAML 1.2 parser with 406/406 spec compliance, JSON-Schema validation, lossless CST and MCP/WASM bindings for financial infrastructure.</p>
+<p class="post-lead-heading"><strong>Key takeaways</strong></p>
+<ul class="post-lead-takeaways">
+  <li><strong>Quick answer.</strong> What is NoyaLib in one sentence?</li>
+  <li><strong>Executive summary.</strong> YAML looks humble until an ambiguous parse or schema violation breaks a multi-billion-dollar production clearing system.</li>
+  <li><strong>01. Why a Safer Rust YAML Stack Matters in 2026.</strong> In June 2026, enterprise IT infrastructures are highly distributed and increasingly automated.</li>
+  <li><strong>02. The NoyaLib 2026 Architecture Lens.</strong> The NoyaLib ecosystem operates as a secure, lossless configuration parser.</li>
+</ul>
+<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026">CloudCDN: An Open-Source Blueprint for the AI-Native Edge in 2026</a>, <a href="https://sebastienrousseau.com/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026">KyberLib and the Post-Quantum Banking Migration in 2026: From Standards to Code</a>, <a href="https://sebastienrousseau.com/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026">Agentic Payments in Banking: Consent, Liability, and the New Payment UX in 2026</a>.</p>
+</aside>
+<!-- lead-end -->
+
 A safer Rust YAML stack matters because YAML now carries CI/CD pipelines, Kubernetes manifests, [Open Policy Agent](https://www.openpolicyagent.org/) rules, and Model Context Protocol (MCP) tool registries — and a single ambiguous parse can break a clearing system, misconfigure a security group, or hand a local AI agent the wrong permissions. [NoyaLib](https://github.com/sebastienrousseau/noyalib) is a pure-Rust, zero-unsafe [YAML 1.2](https://yaml.org/spec/1.2.2/) parsing and validation ecosystem engineered to make that infrastructure safe by default.
 
 ## Quick answer
@@ -257,3 +273,16 @@ DORA Article 5 puts ICT-risk accountability on the board; BCBS 239 demands data-
 - **Basel Committee on Banking Supervision, (2017).** *Basel III: finalising post-crisis reforms*. Basel: Bank for International Settlements. Available at: [Basel III standards](https://www.bis.org/bcbs/publ/d424.htm).
 - **Anthropic, (2025).** *Model Context Protocol (MCP) specification*. Available at: [Model Context Protocol](https://modelcontextprotocol.io/).
 - **GitHub, (2026).** *noyalib open-source repository*. Available at: [NoyaLib repository](https://github.com/sebastienrousseau/noyalib).
+
+<!-- enrich-start -->
+<aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<p class="post-reviewed">Last reviewed <time datetime="2026-06-19">2026-06-19</time>.</p>
+<aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Related reading</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026" class="related-media" aria-label="CloudCDN: An Open-Source Blueprint for the AI-Native Edge in 2026" tabindex="-1"><img alt="Glowing data-centre rack stack at night — symbolising the inspectable, agent-controllable, open-source edge that CloudCDN is built on" src="https://cloudcdn.pro/stocks/images/alis-po-IdVNRv-5wJo.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026">CloudCDN: An Open-Source Blueprint for the AI-Native Edge in 2026</a></h3><p><time datetime="2026-06-11">2026-06-11</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026" class="related-media" aria-label="KyberLib and the Post-Quantum Banking Migration in 2026: From Standards to Code" tabindex="-1"><img alt="Aerial view of the City of London at dusk — symbolising the post-quantum migration banks must run from NIST standards into inspectable cryptographic code" src="https://cloudcdn.pro/stocks/images/ben-o-bro-wpU4veNGnHg.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026">KyberLib and the Post-Quantum Banking Migration in 2026: From Standards to Code</a></h3><p><time datetime="2026-06-12">2026-06-12</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026" class="related-media" aria-label="Agentic Payments in Banking: Consent, Liability, and the New Payment UX in 2026" tabindex="-1"><img alt="Agentic payments architecture diagram showing AI agents, consent mandates, tokenised credentials, card networks, banks, merchants, and audit trails" src="https://cloudcdn.pro/api/transform?url=/stocks/images/ai-robot.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026">Agentic Payments in Banking: Consent, Liability, and the New Payment UX in 2026</a></h3><p><time datetime="2026-05-23">2026-05-23</time></p></footer></article>
+</div>
+</aside>
+<!-- enrich-end -->

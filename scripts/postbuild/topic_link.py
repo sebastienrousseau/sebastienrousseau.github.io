@@ -48,7 +48,7 @@ ENTITY_MAP: list[tuple[list[str], str]] = [
         ["DateTime (DTT)", "DTT library"],
         "2023-12-04-mastering-date-and-time-in-rust-with-the-dtt-library",
     ),
-    (["Shokunin"], "2023-10-09-shokunin-the-fastest-rust-based-static-site-generator"),
+    (["Static Site Generator"], "2023-10-09-the-fastest-rust-based-static-site-generator"),
     (["OpenVoice"], "2024-04-01-openvoice-leading-innovation-in-voice-cloning-technology"),
     (
         ["Akande"],

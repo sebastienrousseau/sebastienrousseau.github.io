@@ -36,7 +36,7 @@ Generator stron statycznych zoptymalizowany pod kątem wydajności, dostępnośc
 
 Pełna wersja techniczna tego artykułu, ze wszystkimi szczegółami, danymi liczbowymi, odniesieniami źródłowymi i przykładami kodu, jest dostępna w wersji angielskiej. Polska edycja ma charakter wstępny i jest sukcesywnie uzupełniana po weryfikacji przez rodzimego użytkownika.
 
-Aby zapoznać się z pełną treścią, proszę zajrzeć do [wersji angielskiej](/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/index.html) artykułu.
+Aby zapoznać się z pełną treścią, proszę zajrzeć do [wersji angielskiej](/2023-10-09-the-fastest-rust-based-static-site-generator/index.html) artykułu.
 
 ## Odniesienia
 

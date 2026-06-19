@@ -22,7 +22,7 @@ def test_escape_xml_preserves_existing_amp_entity():
 
 
 def test_escape_xml_undoes_double_escape():
-    # Shokunin's bug — &amp;amp; should collapse back to &amp;.
+    # Static Site Generator's bug — &amp;amp; should collapse back to &amp;.
     assert pb.escape_xml_ampersands("AI &amp;amp; Payments") == "AI &amp; Payments"
 
 
@@ -38,7 +38,7 @@ def test_escape_xml_numeric_entities_preserved():
 # ---------------------------------------------------------------------------
 # XML feed URL repair — `_patch_block` lookup-by-title path
 # Regression guard for #32: an earlier refactor (#31) rewrote _patch_block
-# to slug-extract from the URL itself. Shokunin emits ``.../.meta/`` for
+# to slug-extract from the URL itself. Static Site Generator emits ``.../.meta/`` for
 # every per-item link, so the regex fell back to the home URL on every
 # match — producing 50 duplicate <guid>/<link> values per feed.
 # ---------------------------------------------------------------------------
@@ -1364,7 +1364,7 @@ def test_splice_fr_urls_no_op_when_all_candidates_already_present(tmp_path, monk
         "accessibility",
         "privacy",
         "terms",
-        "made-with-shokunin",
+        "made-with-static-site-generator",
         "made-with-static-site-generator",
         "resources-pacs008-checklist",
     )
@@ -1463,7 +1463,7 @@ def test_shrink_news_sitemap_rewrites_long_title(tmp_path):
 
 # ---------------------------------------------------------------------------
 # Localhost URL scrub — `scrub_localhost_urls`
-# Guards the SEO/canonical regression: Shokunin bakes the dev-server URL
+# Guards the SEO/canonical regression: Static Site Generator bakes the dev-server URL
 # into <link rel="canonical"> and the Atom-feed alternate; if it ships,
 # Lighthouse SEO fails ("Document does not have a valid rel=canonical").
 # ---------------------------------------------------------------------------

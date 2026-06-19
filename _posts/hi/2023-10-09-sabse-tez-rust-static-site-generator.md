@@ -89,7 +89,7 @@ Cada funcionalidad refleja मूल्य जैसे simplicidad, fiabilidad 
 
 [**Pruebe Static Site Generator ⧉**][00] gratis आज और compruebe वह diferencia.
 
-[00]: https://shokunin.com/ "Static Site Generator, वह generador का sitios estáticos अधिक तेज़ basado में Rust"
+[00]: https://static-site-generator.com/ "Static Site Generator, वह generador का sitios estáticos अधिक तेज़ basado में Rust"
 [01]: https://www.w3.org/WAI/standards-guidelines/wcag/ "Web Content Accessibility Guidelines (WCAG)"
 [02]: https://www.access-board.gov/ada/ "Americans with Disabilities Act (ADA)"
 [03]: https://www.rust-lang.org/ "Rust Programming Language"

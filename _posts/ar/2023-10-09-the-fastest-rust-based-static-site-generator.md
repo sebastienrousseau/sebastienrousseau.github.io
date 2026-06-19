@@ -1,11 +1,11 @@
 ---
 title: "Static Site Generator: أسرع مولّد للمواقع الساكنة قائمٌ على Rust"
-tags: "pain001, ISO 20022, payment automation, cost reduction, payments, payment files, pain message, DORA, קריפטוגרפיה פוסט-קוונטית, AI, פיקדונות מתואדים, Rust, בנקאות ענן-נייטיב, תשלומים חוצי גבולות, סטייבלקוינים"
+tags: "pain001, ISO 20022, payment automation, cost reduction, payments, payment files, pain message, DORA, التشفير ما بعد الكمي, AI, الودائع المرمَّزة, Rust, البنوك السحابية الأصيلة، Kubernetes، DORA، المؤسسات المالية، OpenShift، Portworx، سيادة السحابة، المرونة التشغيلية، التعافي من الكوارث، التعايش بين الأجهزة الافتراضية والحاويات، أعباء عمل الذكاء الاصطناعي، مخاطر الطرف الثالث، الاعتماد على السحابة, المدفوعات عبر الحدود, stablecoins"
 subtitle: "مولّدُ SSG فائق السرعة، يَسِير الوصول ومُحسَّن لمحرّكات البحث، مكتوبٌ بلغة Rust"
 description: "أنشئ مواقع ساكنة عالية الأثر، قابلة للتوسّع بلا حدود وتحت سيطرتك الكاملة، بفضل Static Site Generator — مولّد SSG فائق السرعة مكتوب بلغة Rust."
 date: "October 9, 2023"
-language: "he-IL"
-locale: "he_IL"
+language: "ar"
+locale: "ar_SA"
 banner: "https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp"
 banner_alt: "حاسوب محمول مُطفأ فوق طاولة بيضاء، وإلى اليسار كأس ماء، وإلى اليمين قلم ودفتر ملاحظات ونبتة"
 keywords: "Static Site Generator, مولّد المواقع الساكنة, SSG, Rust, الأداء, SEO, الوصول الميسّر, WCAG, ADA, PWA, Markdown, GFM, Atom, RSS"
@@ -79,7 +79,7 @@ keywords: "Static Site Generator, مولّد المواقع الساكنة, SSG,
 
 [**جرّب Static Site Generator ⧉**][00] مجّاناً اليوم ولاحظ الفرق!
 
-[00]: https://shokunin.com/ "Static Site Generator, the fastest Rust-based Static Site Generator (SSG)"
+[00]: https://static-site-generator.com/ "Static Site Generator, the fastest Rust-based Static Site Generator (SSG)"
 [01]: https://www.w3.org/WAI/standards-guidelines/wcag/ "Web Content Accessibility Guidelines (WCAG)"
 [02]: https://www.access-board.gov/ada/ "Americans with Disabilities Act (ADA)"
 [03]: https://www.rust-lang.org/ "Rust Programming Language"

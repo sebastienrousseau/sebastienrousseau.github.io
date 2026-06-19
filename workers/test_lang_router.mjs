@@ -22,6 +22,7 @@ import handler, {
   withSecurityHeaders,
   CSP_DIRECTIVES,
   SECURITY_HEADERS,
+  trySlugRedirects,
 } from './lang-router.js';
 
 // ---------------------------------------------------------------------------
@@ -561,6 +562,75 @@ test('handler: formspree.io is allowlisted by every response CSP', async () => {
 // activitypub.js module owns its own coverage; this only verifies the
 // router's truthy fast-path branch.
 // ---------------------------------------------------------------------------
+
+// ---------------------------------------------------------------------------
+// Shokunin → Static Site Generator rebrand: permanent slug redirects.
+// ---------------------------------------------------------------------------
+
+test('trySlugRedirects: EN 2023-10-09 article slug → strips shokunin-', () => {
+  const res = trySlugRedirects(new URL('https://x.example/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/'));
+  assert.equal(res.status, 301);
+  assert.equal(
+    new URL(res.headers.get('location')).pathname,
+    '/2023-10-09-the-fastest-rust-based-static-site-generator/',
+  );
+});
+
+test('trySlugRedirects: locale-prefixed 2023-10-09 article redirects', () => {
+  const res = trySlugRedirects(new URL('https://x.example/fr/2023-10-09-shokunin-generateur-de-sites-statiques-rust-le-plus-rapide/'));
+  assert.equal(res.status, 301);
+  assert.equal(
+    new URL(res.headers.get('location')).pathname,
+    '/fr/2023-10-09-generateur-de-sites-statiques-rust-le-plus-rapide/',
+  );
+});
+
+test('trySlugRedirects: /made-with-shokunin/ → /made-with-static-site-generator/', () => {
+  const res = trySlugRedirects(new URL('https://x.example/made-with-shokunin/'));
+  assert.equal(res.status, 301);
+  assert.equal(
+    new URL(res.headers.get('location')).pathname,
+    '/made-with-static-site-generator/',
+  );
+});
+
+test('trySlugRedirects: bare /made-with-shokunin (no trailing slash) also redirects', () => {
+  const res = trySlugRedirects(new URL('https://x.example/made-with-shokunin'));
+  assert.equal(res.status, 301);
+  assert.equal(
+    new URL(res.headers.get('location')).pathname,
+    '/made-with-static-site-generator/',
+  );
+});
+
+test('trySlugRedirects: locale credit page (concu-avec-shokunin) redirects', () => {
+  const res = trySlugRedirects(new URL('https://x.example/fr/concu-avec-shokunin/'));
+  assert.equal(res.status, 301);
+  assert.equal(
+    new URL(res.headers.get('location')).pathname,
+    '/fr/concu-avec-static-site-generator/',
+  );
+});
+
+test('trySlugRedirects: unrelated paths pass through (null)', () => {
+  assert.equal(trySlugRedirects(new URL('https://x.example/')), null);
+  assert.equal(trySlugRedirects(new URL('https://x.example/about/')), null);
+  assert.equal(trySlugRedirects(new URL('https://x.example/2023-10-09-the-fastest-rust-based-static-site-generator/')), null);
+  // No false positive on an article that simply contains the word "shokunin"
+  // somewhere downstream of the date.
+  assert.equal(trySlugRedirects(new URL('https://x.example/2024-01-01-not-shokunin-related/')), null);
+});
+
+test('handler: shokunin URL redirects via the rebrand layer', async () => {
+  resetLog();
+  const res = await callHandler(makeRequest('https://sebastienrousseau.com/made-with-shokunin/'));
+  assert.equal(res.status, 301);
+  assert.equal(
+    new URL(res.headers.get('location')).pathname,
+    '/made-with-static-site-generator/',
+  );
+  assert.equal(passThroughLog.length, 0, 'rebrand redirects must not hit origin');
+});
 
 test('handler: /actor delegates to ActivityPub handler, skips locale + CSP path', async () => {
   resetLog();

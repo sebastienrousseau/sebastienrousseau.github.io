@@ -3,7 +3,7 @@
 > Last Updated: June 4, 2026
 
 This guide provides the code, settings, and setup details to achieve perfect web speed and search scores.
-We build the Sebastien Rousseau web site using vanilla HTML, CSS, and JS, compiled with the Shokunin static site builder and delivered via Cloudflare Workers.
+We build the Sebastien Rousseau web site using vanilla HTML, CSS, and JS, compiled with the Static Site Generator static site builder and delivered via Cloudflare Workers.
 
 ## Contents
 

@@ -118,7 +118,7 @@ If you have any questions, please don't hesitate to contact me via [LinkedIn ⧉
 
 [**❬ Back to Articles**][09]
 
-[00]: https://shokunin.com/ "Static Site Generator, the fastest Rust-based Static Site Generator (SSG)"
+[00]: https://static-site-generator.com/ "Static Site Generator, the fastest Rust-based Static Site Generator (SSG)"
 [01]: https://www.w3.org/WAI/standards-guidelines/wcag/ "Web Content Accessibility Guidelines (WCAG)"
 [02]: https://www.access-board.gov/ada/ "Americans with Disabilities Act (ADA)"
 [03]: https://www.rust-lang.org/ "Rust Programming Language"

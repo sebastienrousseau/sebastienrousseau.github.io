@@ -59,7 +59,7 @@ CRATES_PACKAGES = (
     "kyberlib",
     "dtt",
     "rustlogs",
-    "shokunin",
+    "static-site-generator",
     "libmake",
     "hsh",
 )

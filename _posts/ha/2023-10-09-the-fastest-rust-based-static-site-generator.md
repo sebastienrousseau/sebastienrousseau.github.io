@@ -1,14 +1,14 @@
 ---
 title: "Static Site Generator: Fastest Rust-Based SSG"
-tags: "pain001, ISO 20022, payment automation, cost reduction, payments, payment files, pain message, DORA, criptografie post-cuantică, AI, depozite tokenizate, Rust, banking cloud native, plăți transfrontaliere, stablecoinuri"
-subtitle: "Static Site Generator, cel mai rapid generator de site-uri statice bazat pe Rust pentru site-uri web cu impact ridicat."
-description: "Vă oferim posibilitatea de a crea site-uri web statice cu impact ridicat, cu posibilități infinite, scalabilitate nelimitată și o prezență web cu adevărat unică pe care o controlați."
+tags: "pain001, ISO 20022, payment automation, cost reduction, payments, payment files, pain message, DORA, post-quantum cryptography, AI, tokenised deposits, Rust, cloud native banking, biyan kuɗi na cross-border, stablecoins"
+subtitle: "Static Site Generator, mafi sauri Rust-based static site generator don gidajen yanar gizo masu tasiri sosai."
+description: "Yana ba ku damar ƙirƙirar gidajen yanar gizo na tsaye masu tasiri tare da yiwuwar da ba ta iyaka, girma marar iyaka, da kasancewar yanar gizo ta musamman da kuke sarrafawa."
 date: "Oct 09, 2023"
-language: "ro-RO"
-locale: "ro_RO"
+language: "ha-NG"
+locale: "ha_NG"
 banner: "https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp"
-banner_alt: "Laptop oprit pe o masă albă cu un pahar cu apă în stânga și un pix, un carnet și o plantă în dreapta"
-keywords: "pain001, iso 20022, automatizarea plăților, reducerea costurilor, procesarea plăților, fișiere de plată, inițierea plăților, pain message, pain message standards, pain message validation"
+banner_alt: "Kwamfuta mai allon da aka kashe a saman teburin fari tare da gilashi na ruwa a hagu da alkalami, littafin rubutu da tsiro a dama"
+keywords: "pain001, iso 20022, automation na biyan kuɗi, rage kashe kuɗi, sarrafa biyan kuɗi, fayilolin biyan kuɗi, fara biyan kuɗi, pain message, pain message standards, pain message validation"
 ---
 
 ![Turned off laptop computer on top of a white table with a glass of water on the left and a pen, notepad and plant on the right](https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp).class="img-fluid clearfix"
@@ -17,12 +17,12 @@ keywords: "pain001, iso 20022, automatizarea plăților, reducerea costurilor, p
 
 > **TL;DR.** Empowering you to create high-impact static websites with infinite possibilities, limitless scalability, and a truly unique web presence that you control.
 >
-> **Concluzii cheie**
+> **Mahimman Bayanai**
 >
-> - DRAFT translation: this article is a Română stub generated from the English source. Body text is intentionally left in English until a native reviewer signs off.
+> - DRAFT translation: this article is a Hausa stub generated from the English source. Body text is intentionally left in English until a native reviewer signs off.
 > - Source title: *Static Site Generator: Fastest Rust-Based SSG*.
 > - Source subtitle: *Static Site Generator, the fastest Rust-based static site generator for high-impact websites.*.
-> - Editorial note: replace this block with hand-translated copy before flipping `active=True` for ro in `scripts/_lang_registry.py`.
+> - Editorial note: replace this block with hand-translated copy before flipping `active=True` for ha in `scripts/_lang_registry.py`.
 
 ---
 
@@ -118,7 +118,7 @@ If you have any questions, please don't hesitate to contact me via [LinkedIn ⧉
 
 [**❬ Back to Articles**][09]
 
-[00]: https://shokunin.com/ "Static Site Generator, the fastest Rust-based Static Site Generator (SSG)"
+[00]: https://static-site-generator.com/ "Static Site Generator, the fastest Rust-based Static Site Generator (SSG)"
 [01]: https://www.w3.org/WAI/standards-guidelines/wcag/ "Web Content Accessibility Guidelines (WCAG)"
 [02]: https://www.access-board.gov/ada/ "Americans with Disabilities Act (ADA)"
 [03]: https://www.rust-lang.org/ "Rust Programming Language"

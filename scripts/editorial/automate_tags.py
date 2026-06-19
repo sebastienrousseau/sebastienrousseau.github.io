@@ -159,7 +159,7 @@ INFERENCE_RULES = {
         r"\btokenized\s*deposits\b",
         r"\bdeposit\s*tokens\b",
     ],
-    "Rust": [r"\brust\b", r"\bcargo\b", r"\bshokunin\b", r"\blibmake\b", r"\brustlogs\b"],
+    "Rust": [r"\brust\b", r"\bcargo\b", r"\bstatic-site-generator\b", r"\blibmake\b", r"\brustlogs\b"],
     "open source": [r"\bopen\s*source\b", r"\bopen-source\b", r"\boss\b"],
     "platform engineering": [
         r"\bplatform\s*engineering\b",

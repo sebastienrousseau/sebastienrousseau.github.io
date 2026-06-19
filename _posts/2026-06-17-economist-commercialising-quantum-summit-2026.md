@@ -104,6 +104,22 @@ site_software: "Static Site Generator, Rust"
 
 # From Qubits to Profits: Strategic Takeaways from the Economist's 5th Annual Commercialising Quantum Global 2026 Summit
 
+
+
+<!-- lead-start -->
+<aside class="post-lead" aria-label="Article summary">
+<p class="post-lead-tldr"><strong>TL;DR.</strong> Boardroom takeaways from the Economist Impact 5th Annual Commercialising Quantum Global 2026 summit — $1.3B funding surge, no-regrets hybrid stacks, post-quantum cryptography migration urgency, quantum sensing commercialisation, and HSBC's directive that waiting is an unforced error.</p>
+<p class="post-lead-heading"><strong>Key takeaways</strong></p>
+<ul class="post-lead-takeaways">
+  <li><strong>01. Why the 2026 Summit Matters to the Boardroom.</strong> The 2026 edition of the Economist's Commercialising Quantum Global summit marked a permanent shift in how the corporate world evaluates deep tech.</li>
+  <li><strong>02. The Commercialising Quantum 2026 Strategic Lens.</strong> Enterprise technology leaders must map quantum maturity across five distinct operational layers, evaluating timeline horizons and balance-sheet risks.</li>
+  <li><strong>03. Key Quantum Signals and Boardroom Triggers.</strong> Technology leaders must monitor specific, quantifiable market and regulatory metrics to guide their quantum investments.</li>
+  <li><strong>04. Deep-Dive into the Core Summit Themes.</strong> Venture capital funding has experienced significant acceleration, raising $1.3 billion in the first five months of 2026 alone.</li>
+</ul>
+<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html">Quantum Key Distribution Revolutionising Security in Banking</a>, <a href="https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html">CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age</a>, <a href="https://sebastienrousseau.com/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026">KyberLib and the Post-Quantum Banking Migration in 2026: From Standards to Code</a>.</p>
+</aside>
+<!-- lead-end -->
+
 Enterprise readiness, post-quantum cryptography migrations, hybrid compute stacks, and the emerging commercial landscape of quantum sensing and networking.
 
 **TL;DR.** The 5th Annual Commercialising Quantum Global 2026 conference, hosted by Economist Impact on June 16–17, 2026, at the Business Design Centre in London, gathered over 1,100 global leaders across enterprise, finance, policy, and research. The central theme marked a clear structural pivot: quantum technology has transitioned from speculative laboratory science to practical, hybrid enterprise workflows. Backed by $1.3 billion in venture capital raised in the first five months of 2026 alone, the boardroom discussion is no longer focused on counting physical qubits, but on establishing "no-regrets" hybrid compute stacks, securing digital assets against the "harvest-now, decrypt-later" (SNDL) cryptographic threat, and deploying near-term quantum sensing systems for GPS-independent navigation.
@@ -242,4 +258,17 @@ According to Philip Intallura at the summit, HSBC has outperformed models curren
 - **Economist Impact, (2026).** *5th Annual Commercialising Quantum Global 2026.* Live conference proceedings, June 16–17, 2026. London: Business Design Centre. Available at: [Economist Impact](https://events.economist.com/commercialising-quantum/).
 - **National Institute of Standards and Technology (NIST), (2024).** *First Three Finalized Post-Quantum Encryption Standards (FIPS 203, 204, and 205).* Gaithersburg: U.S. Department of Commerce. Available at: [NIST Standards](https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards).
 - **European Parliament and Council of the European Union, (2022).** *Regulation (EU) 2022/2554 on digital operational resilience for the financial sector (DORA).* Brussels: Official Journal of the European Union. Available at: [DORA Regulation](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554).
-- **SWIFT, (2024).** *ISO 20022 November 2026 Structured Address Milestone.* La Hulpe: SWIFT. Available at: [SWIFT ISO 20022 milestone](https://www.swift.com/standards/iso-20022/iso-20022-bytes/call-action-november-2026).
+- **SWIFT, (2024).** *[ISO 20022](/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html) November 2026 Structured Address Milestone.* La Hulpe: SWIFT. Available at: [SWIFT ISO 20022 milestone](https://www.swift.com/standards/iso-20022/iso-20022-bytes/call-action-november-2026).
+
+<!-- enrich-start -->
+<aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<p class="post-reviewed">Last reviewed <time datetime="2026-06-19">2026-06-19</time>.</p>
+<aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Related reading</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html" class="related-media" aria-label="Quantum Key Distribution Revolutionising Security in Banking" tabindex="-1"><img alt="HSBC From the Docks" src="https://cloudcdn.pro/stocks/images/hsbc-from-the-docks.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html">Quantum Key Distribution Revolutionising Security in Banking</a></h3><p><time datetime="2023-12-11">2023-12-11</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html" class="related-media" aria-label="CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age" tabindex="-1"><img alt="A modern, sleek quantum computer" src="https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html">CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age</a></h3><p><time datetime="2023-11-19">2023-11-19</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026" class="related-media" aria-label="KyberLib and the Post-Quantum Banking Migration in 2026: From Standards to Code" tabindex="-1"><img alt="Aerial view of the City of London at dusk — symbolising the post-quantum migration banks must run from NIST standards into inspectable cryptographic code" src="https://cloudcdn.pro/stocks/images/ben-o-bro-wpU4veNGnHg.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026">KyberLib and the Post-Quantum Banking Migration in 2026: From Standards to Code</a></h3><p><time datetime="2026-06-12">2026-06-12</time></p></footer></article>
+</div>
+</aside>
+<!-- enrich-end -->

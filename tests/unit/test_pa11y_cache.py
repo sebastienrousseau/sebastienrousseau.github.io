@@ -292,15 +292,10 @@ def test_page_is_spotify_iframe_scdn_variant() -> None:
 # ---------------------------------------------------------------------------
 
 
-def test_page_should_skip_made_with_shokunin() -> None:
-    """The Shokunin credit page is generated boilerplate; its a11y
-    surface is already exercised by every other page on the site."""
-    html = "<html><body><p>Made with Shokunin.</p></body></html>"
-    assert pc.page_should_skip(html, "made-with-shokunin/index.html")
-
-
-def test_page_should_skip_made_with_ssg() -> None:
-    """Same rationale for the SSG credit page."""
+def test_page_should_skip_made_with_static_site_generator() -> None:
+    """The Static Site Generator credit page is generated boilerplate;
+    its a11y surface is already exercised by every other page on the
+    site, so pa11y can skip it."""
     html = "<html><body><p>Made with Static Site Generator.</p></body></html>"
     assert pc.page_should_skip(html, "made-with-static-site-generator/index.html")
 
@@ -323,8 +318,8 @@ def test_page_should_skip_locale_prefixed_made_with_not_skipped() -> None:
     """The zero-value list is anchored on bare EN slugs — a locale-
     prefixed equivalent (if one ever existed) would NOT be skipped
     until someone explicitly extends the list."""
-    html = "<html><body><p>Made with Shokunin.</p></body></html>"
-    assert not pc.page_should_skip(html, "fr/made-with-shokunin/index.html")
+    html = "<html><body><p>Made with Static Site Generator.</p></body></html>"
+    assert not pc.page_should_skip(html, "fr/made-with-static-site-generator/index.html")
 
 
 # ---------------------------------------------------------------------------

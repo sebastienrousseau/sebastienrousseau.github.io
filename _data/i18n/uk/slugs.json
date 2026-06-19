@@ -11,8 +11,7 @@
     "privacy": "konfidentsiynist",
     "terms": "umovy",
     "playlists": "pleylysty",
-    "made-with-static-site-generator": "stvoreno-statychnym-generatorom",
-    "made-with-shokunin": "stvoreno-z-shokunin",
+    "made-with-static-site-generator": "stvoreno-z-static-site-generator",
     "404": "404",
     "offline": "ofliyn",
     "thanks": "dyakuyu",
@@ -27,7 +26,7 @@
     "2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution": "2018-02-04-nova-kryptovaluta-shvydshe-rishennia-dlia-platezhiv",
     "2018-02-15-the-making-of-the-express-transaction-credits-platform": "2018-02-15-stvorennia-platformy-express-transaction-credits",
     "2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001": "2023-09-29-avtomatyzatsiya-platizhnykh-faylov-iso-20022-z-pain001",
-    "2023-10-09-shokunin-the-fastest-rust-based-static-site-generator": "2023-10-09-shokunin-naishvydshyi-rust-statychnyy-henerator",
+    "2023-10-09-the-fastest-rust-based-static-site-generator": "2023-10-09-naishvydshyi-rust-statychnyy-henerator",
     "2023-10-16-protecting-data-in-the-quantum-age-the-hash-library-hsh": "2023-10-16-zakhyst-danykh-u-kvantovu-eru-biblioteka-hash-hsh",
     "2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries": "2023-10-26-libmake-henerator-kodu-dlya-rust-bibliotek",
     "2023-11-05-mathematical-and-cryptographic-constants-for-rust-security": "2023-11-05-matematychni-ta-kryptohrafichni-konstanty-dlya-rust",
@@ -92,6 +91,8 @@
     "2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026": "2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026",
     "2026-06-14-bankstatementparser-transaction-intelligence-treasury-open-source-2026": "2026-06-14-bankstatementparser-transaction-intelligence-treasury-open-source-2026",
     "2026-06-15-pacs008-automation-iso-20022-interbank-payments-2026": "2026-06-15-pacs008-automation-iso-20022-interbank-payments-2026",
-    "2026-06-16-ai-aware-dotfiles-secure-reproducible-workstation-2026": "2026-06-16-ai-aware-dotfiles-secure-reproducible-workstation-2026"
+    "2026-06-16-ai-aware-dotfiles-secure-reproducible-workstation-2026": "2026-06-16-ai-aware-dotfiles-secure-reproducible-workstation-2026",
+    "2026-06-17-economist-commercialising-quantum-summit-2026": "2026-06-17-economist-commercialising-quantum-summit-2026",
+    "2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026": "2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026"
   }
 }

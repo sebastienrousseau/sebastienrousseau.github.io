@@ -83,7 +83,7 @@ stats.html
 .claude/*
 !.claude/commands/
 
-# --- Shokunin build output (deployed as a CI Pages artifact, never tracked) ---
+# --- Static Site Generator build output (deployed as a CI Pages artifact, never tracked) ---
 public/
 
 # --- legacy GitHub Pages mirror, retired 2026-06-10 ---
