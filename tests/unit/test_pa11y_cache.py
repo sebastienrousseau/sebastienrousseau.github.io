@@ -288,6 +288,46 @@ def test_page_is_spotify_iframe_scdn_variant() -> None:
 
 
 # ---------------------------------------------------------------------------
+# page_should_skip — composite skip predicate (zero-value + iframe)
+# ---------------------------------------------------------------------------
+
+
+def test_page_should_skip_made_with_shokunin() -> None:
+    """The Shokunin credit page is generated boilerplate; its a11y
+    surface is already exercised by every other page on the site."""
+    html = "<html><body><p>Made with Shokunin.</p></body></html>"
+    assert pc.page_should_skip(html, "made-with-shokunin/index.html")
+
+
+def test_page_should_skip_made_with_ssg() -> None:
+    """Same rationale for the SSG credit page."""
+    html = "<html><body><p>Made with Static Site Generator.</p></body></html>"
+    assert pc.page_should_skip(html, "made-with-static-site-generator/index.html")
+
+
+def test_page_should_skip_normal_content_page() -> None:
+    """Editorial pages must NOT be on the skip list — they carry
+    unique semantic content that pa11y has to validate."""
+    html = "<html><body><h1>Real article</h1></body></html>"
+    assert not pc.page_should_skip(html, "2026-06-18-real-article/index.html")
+
+
+def test_page_should_skip_spotify_iframe_via_compound_predicate() -> None:
+    """Spotify iframe detection still routes through page_should_skip
+    even when the relpath isn't on the explicit zero-value list."""
+    html = '<html><body><iframe src="https://open.spotify.com/embed/x"></iframe></body></html>'
+    assert pc.page_should_skip(html, "playlists/foo/index.html")
+
+
+def test_page_should_skip_locale_prefixed_made_with_not_skipped() -> None:
+    """The zero-value list is anchored on bare EN slugs — a locale-
+    prefixed equivalent (if one ever existed) would NOT be skipped
+    until someone explicitly extends the list."""
+    html = "<html><body><p>Made with Shokunin.</p></body></html>"
+    assert not pc.page_should_skip(html, "fr/made-with-shokunin/index.html")
+
+
+# ---------------------------------------------------------------------------
 # partition_pages — the heart of the cache decision
 # ---------------------------------------------------------------------------
 

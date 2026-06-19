@@ -220,6 +220,33 @@ def page_is_spotify_iframe(html: str) -> bool:
     return "open.spotify.com" in html or "scdn.co" in html
 
 
+# Relative paths (POSIX) of pages whose content is generated boilerplate
+# with no original editorial signal — running pa11y on them only
+# duplicates checks already performed against the layout templates that
+# generate them. Skipping them costs nothing and trims the sweep.
+_ZERO_VALUE_RELPATHS: frozenset[str] = frozenset(
+    {
+        # Credit pages for the SSG (Static Site Generator) and the
+        # Shokunin theme — single short paragraph plus the standard
+        # site chrome. Whatever a11y signal they carry is already
+        # exercised on every other page in the site.
+        "made-with-shokunin/index.html",
+        "made-with-static-site-generator/index.html",
+    }
+)
+
+
+def page_should_skip(html: str, rel: str) -> bool:
+    """True when ``rel`` (the public/-relative path of an index.html)
+    is on the explicit zero-value list, OR when the page embeds a
+    Spotify iframe (Puppeteer races the load). The cache layer treats
+    both reasons identically: mark as ``skipped``, don't fingerprint,
+    don't sweep."""
+    if rel in _ZERO_VALUE_RELPATHS:
+        return True
+    return page_is_spotify_iframe(html)
+
+
 def partition_pages(
     public_dir: Path,
     cache: dict[str, Any],
@@ -233,8 +260,10 @@ def partition_pages(
       * ``cache_hits`` — (path, current_hash) for pages whose stored
         hash matches AND fingerprint matches. These get marked
         ``status="pass"`` without running pa11y.
-      * ``skipped`` — relpaths that embed a Spotify iframe; pa11y can't
-        check them reliably.
+      * ``skipped`` — relpaths the cache layer ignored: either they
+        embed a Spotify iframe (pa11y can't check them reliably) or
+        they live on the explicit zero-value list (boilerplate credit
+        pages whose a11y signal is already exercised by the layout).
 
     The function is pure-ish: it reads disk and the cache dict but
     mutates neither. The caller decides what to do with each list.
@@ -252,7 +281,7 @@ def partition_pages(
             html = path.read_text(encoding="utf-8", errors="ignore")
         except OSError:
             continue
-        if page_is_spotify_iframe(html):
+        if page_should_skip(html, rel):
             skipped.append(rel)
             continue
         h = compute_page_hash(path)
