@@ -57,7 +57,7 @@ from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any
 
-CACHE_VERSION = 2
+CACHE_VERSION = 3
 
 
 # Patterns matching the transient build artefacts that change every
@@ -76,6 +76,14 @@ _NORMALISERS: list[tuple[re.Pattern[bytes], bytes]] = [
     # The fingerprint encodes file content; same content = same hash
     # in spec but the build path embeds a fresh 8-hex slug each run.
     (re.compile(rb"([A-Za-z0-9_-]+)\.[0-9a-f]{8}\.(js|css|mjs)"), rb"\1.\2"),
+    # CSP-bundled stylesheets/scripts where the hash IS the filename
+    # (no name prefix), e.g. ``_csp/97f63c950cabc48b.css``. The SSG's
+    # CSP plugin emits these per-build; identical bundled content
+    # still produces a stable hash, but a layout-touching PR rotates
+    # which bundle is referenced from every page's <head>. Without
+    # this rule, the cache would miss across the whole site for any
+    # CSS-only edit.
+    (re.compile(rb"_csp/[0-9a-f]{16,}\.(css|js|mjs)"), rb"_csp/X.\1"),
     # SRI integrity attributes — same hash, same SRI. Stripping the
     # value entirely is safe because we already gate on the asset URL
     # above; if the JS content actually changed, the URL hash above
