@@ -15,18 +15,15 @@ permissions:
   contents: read
 
 jobs:
-  build-audit-deploy:
+  # =========================================================================
+  # Stage 1 — build the site, run all the cheap checks, then partition the
+  # pa11y URL set into the shard configs the matrix consumes next.
+  # =========================================================================
+  build:
+    name: Build + smoke tests + partition
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      pages: write
-      id-token: write
-    # The `github-pages` environment has "Deployment branches: main only"
-    # protection. Applying it to the whole job blocks every PR run at the
-    # 2-second mark before any step executes. Bind it only when this run
-    # is actually going to deploy (main push) so PRs can still get a real
-    # build / lint / test / Lighthouse / pa11y signal.
-    environment: ${{ github.ref == 'refs/heads/main' && 'github-pages' || '' }}
+    outputs:
+      pa11y-needed: ${{ steps.partition.outputs.pa11y-needed }}
     steps:
       - uses: actions/checkout@v6
 
@@ -142,24 +139,18 @@ jobs:
       - name: JSON-LD + feed validation
         run: python3 scripts/seo_and_audit/validate_jsonld.py --base-dir public
 
-      - name: Install pa11y-ci & Lighthouse CI
-        run: npm install -g pa11y-ci@^3 @lhci/cli@0.14.x
-
-      - name: Restore pa11y hash cache
-        id: pa11y-cache
-        uses: actions/cache@v5
+      - name: Restore pa11y hash cache (read only)
+        # Restore the cache so partition can decide what's already cached.
+        # The actual save happens in the `finalise` job after pa11y passes.
+        uses: actions/cache/restore@v5
         with:
           path: _data/pa11y-cache.json
           key: pa11y-cache-v1-${{ runner.os }}-${{ github.run_id }}
           restore-keys: |
             pa11y-cache-v1-${{ runner.os }}-
 
-      - name: Serve public/
-        run: |
-          npx http-server public -p 8000 --silent &
-          sleep 2
-
       - name: Pre — partition pages against cache
+        id: partition
         run: |
           python3 scripts/seo_and_audit/pa11y_cache.py pre \
             --public-dir public \
@@ -167,33 +158,219 @@ jobs:
             --pa11yci-out .pa11yci \
             --manifest-out .pa11y-cache-manifest.json \
             --base-url http://127.0.0.1:8000
-
-      - name: Run pa11y-ci on the delta only
-        run: |
           n=$(python3 -c "import json; print(len(json.load(open('.pa11yci'))['urls']))")
+          echo "delta_urls=${n}"
+          if [ "$n" -gt 0 ]; then
+            echo "pa11y-needed=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "pa11y-needed=false" >> "$GITHUB_OUTPUT"
+            echo "pa11y-cache: full cache hit, matrix will be skipped"
+          fi
+
+      - name: Upload build artifact (public/ + pa11y configs + cache)
+        uses: actions/upload-artifact@v5
+        with:
+          name: build-output
+          path: |
+            public
+            .pa11yci
+            .pa11y-cache-manifest.json
+            _data/pa11y-cache.json
+          retention-days: 1
+          include-hidden-files: true
+
+  # =========================================================================
+  # Stage 2 — fan out pa11y across 4 parallel runners. Each shard takes 1/4
+  # of the delta URLs, runs pa11y, uploads its JSON result. Skipped entirely
+  # when the partition step reported a full cache hit.
+  # =========================================================================
+  pa11y:
+    name: pa11y shard ${{ matrix.shard }}/4
+    needs: build
+    if: needs.build.outputs.pa11y-needed == 'true'
+    runs-on: ubuntu-latest
+    strategy:
+      # Keep all shards going even if one fails, so a single bad URL doesn't
+      # mask issues on the other three. We still aggregate exit codes in the
+      # finalise job.
+      fail-fast: false
+      matrix:
+        shard: [1, 2, 3, 4]
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Download build artifact
+        uses: actions/download-artifact@v5
+        with:
+          name: build-output
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: 'pip'
+
+      - name: Setup Node
+        uses: actions/setup-node@v6
+        with:
+          node-version: "22"
+
+      - name: Install pa11y-ci
+        run: npm install -g pa11y-ci@^3
+
+      - name: Serve public/
+        run: |
+          npx http-server public -p 8000 --silent &
+          sleep 2
+
+      - name: Filter .pa11yci to shard ${{ matrix.shard }}
+        # Round-robin partition: URL i goes to shard (i % 4) + 1. Stable
+        # across runs so cache + manifest stay coherent; balanced because
+        # URLs are sorted by relpath and locale/article counts are even.
+        run: |
+          python3 - <<'PY'
+          import json
+          shard = ${{ matrix.shard }}
+          total = 4
+          with open(".pa11yci") as f:
+              cfg = json.load(f)
+          all_urls = cfg["urls"]
+          cfg["urls"] = [u for i, u in enumerate(all_urls) if (i % total) == (shard - 1)]
+          with open(".pa11yci.shard", "w") as f:
+              json.dump(cfg, f, indent=2)
+          print(f"shard {shard}/{total}: {len(cfg['urls'])} of {len(all_urls)} URLs")
+          PY
+
+      - name: Run pa11y-ci on this shard
+        run: |
+          n=$(python3 -c "import json; print(len(json.load(open('.pa11yci.shard'))['urls']))")
           if [ "$n" -eq 0 ]; then
-            echo "pa11y-cache: full cache hit, skipping pa11y-ci run"
+            echo "empty shard"
+            echo '{"total":0,"passes":0,"errors":0,"results":{}}' > pa11y.shard.json
             exit 0
           fi
-          # Concurrency is baked into the .pa11yci config (top-level
-          # ``concurrency`` key, set in build_pa11yci_config) — pa11y-ci
-          # accepts it as a config option, not a CLI flag.
           set +e
-          pa11y-ci -c .pa11yci --reporter json > pa11y.json
+          pa11y-ci -c .pa11yci.shard --reporter json > pa11y.shard.json
           rc=$?
           set -e
           if [ "$rc" -eq 0 ]; then
             exit 0
           fi
-          python3 scripts/seo_and_audit/pa11y_retry_flakes.py pa11y.json
+          # Best-effort flake retry on this shard's results. The shard
+          # still fails if real errors remain after the retry, blocking
+          # finalise from updating the cache.
+          python3 scripts/seo_and_audit/pa11y_retry_flakes.py pa11y.shard.json
 
-      - name: Post — update cache for next run
-        if: success()
+      - name: Upload pa11y shard result
+        if: always()
+        uses: actions/upload-artifact@v5
+        with:
+          name: pa11y-shard-${{ matrix.shard }}
+          path: pa11y.shard.json
+          retention-days: 1
+
+  # =========================================================================
+  # Stage 3 — merge pa11y shard results, run Lighthouse, update the cache,
+  # and deploy on main. Runs even if the matrix was skipped (full cache
+  # hit) so Lighthouse + deploy still happen.
+  # =========================================================================
+  finalise:
+    name: Merge pa11y, Lighthouse, deploy
+    needs: [build, pa11y]
+    if: always() && needs.build.result == 'success' && (needs.pa11y.result == 'success' || needs.pa11y.result == 'skipped')
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    # The `github-pages` environment has "Deployment branches: main only"
+    # protection. Applying it to the whole job blocks every PR run at the
+    # 2-second mark before any step executes. Bind it only when this run
+    # is actually going to deploy (main push) so PRs can still get a real
+    # build / lint / test / Lighthouse / pa11y signal.
+    environment: ${{ github.ref == 'refs/heads/main' && 'github-pages' || '' }}
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: 'pip'
+
+      - name: Setup Node
+        uses: actions/setup-node@v6
+        with:
+          node-version: "22"
+
+      - name: Install Lighthouse CI
+        run: npm install -g @lhci/cli@0.14.x
+
+      - name: Download build artifact
+        uses: actions/download-artifact@v5
+        with:
+          name: build-output
+
+      - name: Download pa11y shard results
+        if: needs.pa11y.result == 'success'
+        uses: actions/download-artifact@v5
+        with:
+          pattern: pa11y-shard-*
+          merge-multiple: true
+          path: pa11y-shards/
+
+      - name: Merge pa11y shard results
+        if: needs.pa11y.result == 'success'
+        run: |
+          python3 - <<'PY'
+          import json, glob
+          merged = {"total": 0, "passes": 0, "errors": 0, "results": {}}
+          for path in sorted(glob.glob("pa11y-shards/pa11y.shard.json")) + \
+                      sorted(glob.glob("pa11y-shards/pa11y.shard.*.json")):
+              with open(path) as f:
+                  d = json.load(f)
+              merged["total"]  += d.get("total", 0)
+              merged["passes"] += d.get("passes", 0)
+              merged["errors"] += d.get("errors", 0)
+              for k, v in d.get("results", {}).items():
+                  merged["results"][k] = v
+          # download-artifact with merge-multiple may consolidate into one
+          # file per shard at the same name — handle both layouts.
+          if not merged["total"]:
+              for path in sorted(glob.glob("pa11y-shards/**/pa11y.shard.json", recursive=True)):
+                  with open(path) as f:
+                      d = json.load(f)
+                  merged["total"]  += d.get("total", 0)
+                  merged["passes"] += d.get("passes", 0)
+                  merged["errors"] += d.get("errors", 0)
+                  for k, v in d.get("results", {}).items():
+                      merged["results"][k] = v
+          with open("pa11y.json", "w") as f:
+              json.dump(merged, f)
+          print(f"merged: {merged['total']} URLs, {merged['errors']} errors")
+          if merged["errors"] > 0:
+              raise SystemExit("pa11y errors remain after merge")
+          PY
+
+      - name: Post — update pa11y cache for next run
+        if: needs.pa11y.result == 'success'
         run: |
           python3 scripts/seo_and_audit/pa11y_cache.py post \
             --public-dir public \
             --cache _data/pa11y-cache.json \
             --manifest .pa11y-cache-manifest.json
+
+      - name: Save pa11y hash cache
+        if: needs.pa11y.result == 'success' || needs.pa11y.result == 'skipped'
+        uses: actions/cache/save@v5
+        with:
+          path: _data/pa11y-cache.json
+          key: pa11y-cache-v1-${{ runner.os }}-${{ github.run_id }}
+
+      - name: Serve public/
+        run: |
+          npx http-server public -p 8000 --silent &
+          sleep 2
 
       - name: Run Lighthouse CI
         run: lhci autorun
