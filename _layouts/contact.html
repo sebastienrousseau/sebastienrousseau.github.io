@@ -809,7 +809,6 @@
       .cs-card-body h2 a::after{content:"";position:absolute;inset:0;z-index:1}
       .cs-card-body h2 a:focus-visible{outline:none}
       .cs-grid > article:has(h2 a:focus-visible){outline:3px solid var(--cs-accent);outline-offset:3px}
-      @supports not selector(:has(a)){.cs-card-body h2 a:focus-visible{outline:3px solid var(--cs-accent);outline-offset:3px}}
       .cs-card-excerpt{font-family:var(--type-body);font-size:.9375rem;line-height:1.55;color:#f5f5f5;margin:0;flex:1;hyphens:none}
       .cs-card-meta{display:none}
 
@@ -1838,8 +1837,7 @@
         padding:14px 16px;width:100%;min-height:48px;transition:border-color .15s,box-shadow .15s;
       }
       .ap-form textarea{min-height:160px;resize:vertical}
-      .ap-form select option,.ap-form select optgroup{color:#0a0a0a;background:#ffffff}
-      .ap-form input:focus-visible,.ap-form select:focus-visible,.ap-form textarea:focus-visible{outline:none;border-color:var(--accent);box-shadow:0 0 0 4px rgba(var(--accent-rgb),.15)}
+      .ap-form input:focus,.ap-form select:focus,.ap-form textarea:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 4px rgba(var(--accent-rgb),.15)}
       .ap-form-actions{align-items:flex-start;margin-top:8px}
       .ap-form button.pill{font-size:16px;padding:14px 28px;border:none;cursor:pointer}
       .contact-aside{padding:28px 28px 32px;background:var(--card);border:1px solid var(--rule);border-radius:var(--radius);position:sticky;top:calc(var(--nav-h) + 24px)}
@@ -1938,7 +1936,7 @@
       <div class="kpi-cell"><span class="kpi-cell-value">Tier-1</span><span class="kpi-cell-label">Banking · payments · post-quantum</span></div>
     </section>
 
-    <main id="main" class="content ap-section">
+    <main id="main" class="content ap-section" aria-label="main">
       <div class="wrap contact-wrap">
         <div class="contact-layout" data-reveal>
           <div class="contact-form-col">
@@ -1954,7 +1952,7 @@
               </div>
               <div class="ap-form-row">
                 <label for="subject">Subject</label>
-                <select id="subject" name="subject" required>
+                <select id="subject" name="subject" required aria-label="Select a subject">
                   <option value="">Choose a subject</option>
                   <option value="business">Consulting / advisory engagement</option>
                   <option value="press">Press, podcast or speaking</option>

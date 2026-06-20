@@ -105,21 +105,45 @@ site_software: "Static Site Generator, Rust"
 <header class="newsroom-section-head"><p class="newsroom-kicker">FEATURED</p><h2>Latest story</h2></header>
 
 <article class="newsroom-featured">
-<a class="newsroom-featured-media" href="/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/index.html" title="Why YAML Needs a Safer Rust Stack for AI, MCP, and Financial Infrastructure in 2026">
-<img alt="Architectural geometry under dramatic light — symbolising NoyaLib's role as the load-bearing safe Rust YAML parser beneath CI, Kubernetes, MCP, and financial-services configuration" src="https://cloudcdn.pro/stocks/images/ken-cheung-KonWFWUaAuk.webp" loading="eager" fetchpriority="high" decoding="async" width="800" height="800" />
+<a class="newsroom-featured-media" href="/2026-06-20-http-handle-zero-dependency-edge-ingress-banking-rust-2026/index.html" title="http-handle: High-Performance, Zero-Dependency Edge Ingress for Banking in 2026">
+<img alt="Abstract circuit-board cityscape at night — visualising the banking edge where kernel-level zero-copy transfers, mTLS handshakes, and JWT validation converge in a single statically linked binary" src="https://cloudcdn.pro/stocks/images/bit-cloud-GlqbGLCPnQ4.webp" loading="eager" fetchpriority="high" decoding="async" width="800" height="800" />
 </a>
 <div class="newsroom-featured-body">
-<span class="newsroom-eyebrow">Safer Rust Yaml Parser · Noyalib · Yaml 1.2</span>
-<h3><a href="/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/index.html" title="Why YAML Needs a Safer Rust Stack for AI, MCP, and Financial Infrastructure in 2026">Why YAML Needs a Safer Rust Stack for AI, MCP, and Financial Infrastructure in 2026</a></h3>
-<p class="newsroom-meta"><time datetime="2026-06-18">June 18, 2026</time> · Sebastien Rousseau</p>
-<p>NoyaLib is a safer Rust YAML stack — zero unsafe blocks, 406/406 YAML 1.2 spec compliance, lossless Concrete Syntax Tree, JSON-Schema (Draft 2020-12) validation, and MCP/WASM bindings — engineered for AI agents, Kubernetes, CI/CD, and the configuration control plane behind financial infrastructure.</p>
-<p><a class="pill ghost" href="/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/index.html" title="Why YAML Needs a Safer Rust Stack for AI, MCP, and Financial Infrastructure in 2026">Read the full story</a></p>
+<span class="newsroom-eyebrow">Http-Handle · Rust · Banking</span>
+<h3><a href="/2026-06-20-http-handle-zero-dependency-edge-ingress-banking-rust-2026/index.html" title="http-handle: High-Performance, Zero-Dependency Edge Ingress for Banking in 2026">http-handle: High-Performance, Zero-Dependency Edge Ingress for Banking in 2026</a></h3>
+<p class="newsroom-meta"><time datetime="2026-06-20">June 20, 2026</time> · Sebastien Rousseau</p>
+<p>The banking edge has a dependency problem. Every Nginx or Envoy instance that routes traffic between a client and a core banking service carries a dependency tree: OpenSSL builds, Lua modules,…</p>
+<p><a class="pill ghost" href="/2026-06-20-http-handle-zero-dependency-edge-ingress-banking-rust-2026/index.html" title="http-handle: High-Performance, Zero-Dependency Edge Ingress for Banking in 2026">Read the full story</a></p>
 </div>
 </article>
 
 <header class="newsroom-section-head"><p class="newsroom-kicker">ARCHIVE</p><h2>All news stories and articles</h2></header>
 
 <div class="newsroom-grid">
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026/index.html" title="Turning Markdown into Accessible, SEO-Ready, Structured HTML with Rust in 2026">
+<img alt="Architectural geometry under structured light — symbolising HTML Generator's role as a compile-gated Markdown-to-HTML pipeline for accessible, SEO-ready, sandboxed publishing infrastructure" src="https://cloudcdn.pro/api/transform?url=/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Html-Generator · Rust · Markdown</span>
+<h3><a href="/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026/index.html" title="Turning Markdown into Accessible, SEO-Ready, Structured HTML with Rust in 2026">Turning Markdown into Accessible, SEO-Ready, Structured HTML with Rust in 2026</a></h3>
+<p class="newsroom-meta"><time datetime="2026-06-20">June 20, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">In 2026, web content is consumed as much by AI search crawlers, LLM-backed search engines, and Retrieval-Augmented Generation (RAG) pipelines as by human readers. Flat or malformed HTML…</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/index.html" title="Why YAML Needs a Safer Rust Stack for AI, MCP, and Financial Infrastructure in 2026">
+<img alt="Architectural geometry under dramatic light — symbolising NoyaLib's role as the load-bearing safe Rust YAML parser beneath CI, Kubernetes, MCP, and financial-services configuration" src="https://cloudcdn.pro/stocks/images/ken-cheung-KonWFWUaAuk.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Safer Rust Yaml Parser · Noyalib · Yaml 1.2</span>
+<h3><a href="/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/index.html" title="Why YAML Needs a Safer Rust Stack for AI, MCP, and Financial Infrastructure in 2026">Why YAML Needs a Safer Rust Stack for AI, MCP, and Financial Infrastructure in 2026</a></h3>
+<p class="newsroom-meta"><time datetime="2026-06-18">June 18, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">NoyaLib is a safer Rust YAML stack — zero unsafe blocks, 406/406 YAML 1.2 spec compliance, lossless Concrete Syntax Tree, JSON-Schema (Draft 2020-12) validation, and MCP/WASM bindings — engineered for AI agents, Kubernetes, CI/CD, and the configuration control plane behind financial infrastructure.</p>
+</div>
+</article>
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-06-17-economist-commercialising-quantum-summit-2026/index.html" title="From Qubits to Profits: Strategic Takeaways from the Economist's 5th Annual Commercialising Quantum Global 2026 Summit">

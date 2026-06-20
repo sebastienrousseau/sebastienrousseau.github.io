@@ -1825,7 +1825,7 @@
       .playlist-intro{max-width:680px;margin:0 auto 32px;text-align:center;font-size:clamp(17px,1.6vw,20px);line-height:1.5;color:var(--ink-mute)}
       .playlist-intro p{margin:0}
       .playlist-chips{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:0 auto 48px;max-width:780px}
-      .playlist-chip{display:inline-flex;align-items:center;min-height:44px;padding:8px 18px;border:1px solid var(--rule);border-radius:999px;font-family:var(--type-body);font-size:13px;font-weight:600;color:var(--ink-deep);text-decoration:none;background:var(--paper);transition:background .15s,border-color .15s}
+      .playlist-chip{display:inline-flex;align-items:center;min-height:36px;padding:8px 18px;border:1px solid var(--rule);border-radius:999px;font-family:var(--type-body);font-size:13px;font-weight:600;color:var(--ink-deep);text-decoration:none;background:var(--paper);transition:background .15s,border-color .15s}
       .playlist-chip:hover,.playlist-chip:focus-visible{background:var(--card);border-color:var(--ink-mute)}
       .newsroom-section-head[id^=lane-]{scroll-margin-block-start:calc(var(--nav-h) + 16px)}
       .spotify-frame{border-radius:12px;border:0;display:block;width:100%}
@@ -1916,7 +1916,7 @@
       <p class="sub">{{subtitle}}</p>
     </section>
 
-    <main id="main" class="content ap-section">
+    <main id="main" class="content ap-section" aria-label="main">
       <div class="wrap" style="max-width:var(--max-wide)">
         <div class="playlist-intro" data-reveal>{{content}}</div>
         <nav class="playlist-chips" aria-label="Jump to a lane"><a class="playlist-chip" href="#lane-soul-jazz">Soulful, jazz and downtempo</a><a class="playlist-chip" href="#lane-morning-mood">Energy and tone</a><a class="playlist-chip" href="#lane-electronic">Disco, house and workout</a><a class="playlist-chip" href="#lane-hip-hop">Rap, R&B and beats</a><a class="playlist-chip" href="#lane-global">World rhythms</a></nav>
