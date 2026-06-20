@@ -105,15 +105,15 @@ excerpt: "The banking edge has a dependency problem. Every Nginx or Envoy instan
 
 
 
-<!-- lead-start -->
+<!-- lead-start: manual -->
 <aside class="post-lead" aria-label="Article summary">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> http-handle is a statically linked Rust binary that delivers 180,000 requests per second at the banking edge with zero runtime dependencies, integrated mTLS and JWT validation, ALPN-negotiated HTTP/2 and HTTP/3, and OTLP observability — closing the security and resilience gaps that Nginx and Envoy leave open.</p>
 <p class="post-lead-heading"><strong>Key takeaways</strong></p>
 <ul class="post-lead-takeaways">
-  <li><strong>Quick answer.</strong> What is http-handle in one sentence?</li>
-  <li><strong>Executive summary.</strong> Banks have run Nginx and Envoy at their edge for a decade.</li>
-  <li><strong>01. The Heavy Proxy Problem in Banking.</strong> Nginx and Envoy built the modern internet's edge.</li>
-  <li><strong>02. The http-handle 2026 Architecture Lens.</strong> The binary is structured as five interdependent layers, each designed to eliminate a specific category of risk that traditional proxy architectures accumulate.</li>
+  <li><strong>The heavy proxy problem.</strong> Nginx and Envoy carry dependency trees that expand the CVE surface and complicate DORA ICT-risk remediation cycles.</li>
+  <li><strong>Zero-copy performance at scale.</strong> Pre-serialised mmap cache blocks and <code>sendfile(2)</code> kernel transfers sustain 180,000 req/s on ARM64 with sub-millisecond proxy overhead.</li>
+  <li><strong>Security at the socket, not the application.</strong> mTLS client verification, JWT validation, and RBAC evaluation complete before any backend resource is allocated to the request.</li>
+  <li><strong>Regulatory alignment built in.</strong> The reduced attack surface and auditable single-binary deployment directly address DORA Articles 5 and 6, Basel III operational risk, and SM&amp;CR accountability chains.</li>
 </ul>
 <p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html">CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age</a>, <a href="https://sebastienrousseau.com/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026">Turning Markdown into Accessible, SEO-Ready, Structured HTML with Rust in 2026</a>, <a href="https://sebastienrousseau.com/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026">KyberLib and the Post-Quantum Banking Migration in 2026: From Standards to Code</a>.</p>
 </aside>
