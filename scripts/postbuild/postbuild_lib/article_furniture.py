@@ -837,7 +837,7 @@ def _generate_linkedin_post(
     parts += ["", question, "", f"→ {url}"]
     if hashtags:
         parts += ["", hashtags]
-    parts += ["", f"Sebastien Rousseau | CC-BY-4.0"]
+    parts += ["", "Sebastien Rousseau | CC-BY-4.0"]
     return "\n".join(parts)
 
 
