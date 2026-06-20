@@ -37,5 +37,8 @@
   "Syndicate.heading": "Cross-post this article",
   "Syndicate.medium": "Copy formatted for Medium",
   "Syndicate.mastodon": "Copy formatted for Mastodon",
+  "Syndicate.linkedin": "Copy formatted for LinkedIn",
+  "Syndicate.linkedin_intro": "Here are the key strategic takeaways:",
+  "Syndicate.linkedin_question": "What is your organisation's approach to the challenges outlined in this piece?",
   "Case studies": "Case studies"
 }

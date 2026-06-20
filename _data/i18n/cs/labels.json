@@ -37,5 +37,8 @@
   "Syndicate.heading": "Publikovat tento článek jinde",
   "Syndicate.medium": "Kopírovat formát pro Medium",
   "Syndicate.mastodon": "Kopírovat formát pro Mastodon",
+  "Syndicate.linkedin": "Zkopírovat formátované pro LinkedIn",
+  "Syndicate.linkedin_intro": "Zde jsou klíčové strategické poznatky:",
+  "Syndicate.linkedin_question": "Jaký je přístup vaší organizace k výzvám popsaným v tomto článku?",
   "Case studies": "Případové studie"
 }

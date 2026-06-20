@@ -37,5 +37,8 @@
   "Syndicate.heading": "Diesen Artikel weiterveröffentlichen",
   "Syndicate.medium": "Format für Medium kopieren",
   "Syndicate.mastodon": "Format für Mastodon kopieren",
+  "Syndicate.linkedin": "Formatiert für LinkedIn kopieren",
+  "Syndicate.linkedin_intro": "Hier sind die wichtigsten strategischen Erkenntnisse:",
+  "Syndicate.linkedin_question": "Wie geht Ihre Organisation mit den in diesem Beitrag beschriebenen Herausforderungen um?",
   "Case studies": "Fallstudien"
 }

@@ -37,5 +37,8 @@
   "Syndicate.heading": "Перепубликовать эту статью",
   "Syndicate.medium": "Скопировать формат для Medium",
   "Syndicate.mastodon": "Скопировать формат для Mastodon",
+  "Syndicate.linkedin": "Копировать в формате для LinkedIn",
+  "Syndicate.linkedin_intro": "Вот ключевые стратегические выводы:",
+  "Syndicate.linkedin_question": "Каков подход вашей организации к вызовам, описанным в этой статье?",
   "Case studies": "Кейс-стади"
 }

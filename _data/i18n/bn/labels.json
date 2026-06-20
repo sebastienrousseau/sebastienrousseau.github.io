@@ -37,5 +37,8 @@
   "Syndicate.heading": "এই নিবন্ধটি ক্রস-পোস্ট করুন",
   "Syndicate.medium": "Medium-এর জন্য ফরম্যাট কপি করুন",
   "Syndicate.mastodon": "Mastodon-এর জন্য ফরম্যাট কপি করুন",
+  "Syndicate.linkedin": "LinkedIn-এর জন্য বিন্যাসিত কপি করুন",
+  "Syndicate.linkedin_intro": "এখানে মূল কৌশলগত টেকওয়েগুলি রয়েছে:",
+  "Syndicate.linkedin_question": "এই নিবন্ধে উল্লিখিত চ্যালেঞ্জগুলির প্রতি আপনার প্রতিষ্ঠানের পদ্ধতি কী?",
   "Case studies": "কেস স্টাডিজ"
 }

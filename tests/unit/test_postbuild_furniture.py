@@ -2652,15 +2652,15 @@ def test_inject_reuse_panel_compact_when_description_missing():
 # WS5 — syndication panel ----------------------------------------------------
 
 
-def test_inject_syndication_panel_emits_medium_and_mastodon_payloads():
+def test_inject_syndication_panel_emits_medium_mastodon_linkedin_payloads():
     from postbuild_lib.article_furniture import inject_syndication_panel
 
     out = inject_syndication_panel(_ws2_page())
     # Single <details> wrapper at the wrap-foot, anchored by id so
     # the action-rail / cite jump-link pattern can target it later.
     assert 'id="syndicate-popover"' in out
-    # Both formats present, each with stable id + paired copy button.
-    for fmt_id in ("syndicate-medium", "syndicate-mastodon"):
+    # All three formats present, each with stable id + paired copy button.
+    for fmt_id in ("syndicate-medium", "syndicate-mastodon", "syndicate-linkedin"):
         assert f'<pre id="{fmt_id}">' in out
         assert f'data-copy="#{fmt_id}"' in out
     # Medium payload is markdown — starts with H1.
@@ -2669,6 +2669,9 @@ def test_inject_syndication_panel_emits_medium_and_mastodon_payloads():
     # blocks, with the canonical URL last so the link card preview
     # renders on Mastodon.
     assert "https://sebastienrousseau.com/2026-01-01-my-post/" in out
+    # LinkedIn block contains the CC-BY footer and the first-comment note.
+    assert "Licensed under CC-BY-4.0" in out
+    assert "[Link to the full piece in the first comment]" in out
 
 
 def test_inject_syndication_panel_idempotent():
@@ -2850,7 +2853,7 @@ def test_syndication_payload_truncates_description_at_300_chars():
         "title": "My Post",
         "desc": long_desc,
     }
-    out = _syndication_payloads(payload)
+    out = _syndication_payloads(payload, html="", labels={})
     assert out["mastodon"].endswith("…\n\nhttps://sebastienrousseau.com/2026-01-01-my-post/")
     # Truncated to 300 chars + ellipsis (not the full 350).
     assert "x" * 350 not in out["mastodon"]

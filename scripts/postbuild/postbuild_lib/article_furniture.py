@@ -611,6 +611,12 @@ _CANONICAL_RE = re.compile(r'<link\s+rel="canonical"\s+href="([^"]+)"', re.IGNOR
 _OG_TITLE_RE = re.compile(r'<meta\s+property="og:title"\s+content="([^"]+)"', re.IGNORECASE)
 _DESCRIPTION_RE = re.compile(r'<meta\s+name="description"\s+content="([^"]+)"', re.IGNORECASE)
 _AP_HERO_OPEN_RE = re.compile(r'(<section class="ap-hero">)(\s*)(<h1>)', re.IGNORECASE)
+_LEAD_TAKEAWAYS_RE = re.compile(
+    r'<ul\s+class="post-lead-takeaways">(.*?)</ul>', re.IGNORECASE | re.DOTALL
+)
+_LI_CONTENT_RE = re.compile(r'<li>(.*?)</li>', re.IGNORECASE | re.DOTALL)
+_HTML_TAGS_RE = re.compile(r'<[^>]+>')
+_BODY_QUESTION_RE = re.compile(r'<p(?:\s[^>]*)?>([^<]{50,300}?\?)\s*</p>', re.IGNORECASE)
 _SUB_PARA_RE = re.compile(r'<p class="sub">', re.IGNORECASE)
 _WRAP_CLOSE_RE = re.compile(r"(</div>\s*</main>)", re.IGNORECASE)
 
@@ -740,6 +746,113 @@ def _share_li(href: str, label: str, glyph: str) -> str:
     )
 
 
+def _strip_html_tags(text: str) -> str:
+    return _unesc(_HTML_TAGS_RE.sub("", text)).strip()
+
+
+def _extract_lead_takeaways_text(html: str) -> list[str]:
+    """Return plain-text bullet strings from the lead block takeaways list."""
+    m = _LEAD_TAKEAWAYS_RE.search(html)
+    if not m:
+        return []
+    items = []
+    for li in _LI_CONTENT_RE.findall(m.group(1)):
+        text = _strip_html_tags(li)
+        if text:
+            items.append(text)
+    return items[:5]
+
+
+def _extract_body_question(html: str) -> str:
+    """Return the first short question-paragraph found in the article body."""
+    for m in _BODY_QUESTION_RE.finditer(html):
+        text = _strip_html_tags(m.group(1)).strip()
+        if text.endswith("?"):
+            return text
+    return ""
+
+
+def _keywords_to_hashtags(html: str, max_n: int = 5) -> list[str]:
+    """Convert JSON-LD BlogPosting keywords to #CamelCase hashtags."""
+    m = _keywords_re.search(html)
+    if not m or not m.group(1):
+        return []
+    seen: set[str] = set()
+    result: list[str] = []
+    for tag in m.group(1).split(","):
+        tag = tag.strip()
+        if not tag:
+            continue
+        words = tag.replace("-", " ").replace("_", " ").replace("/", " ").split()
+        hashtag = "#" + "".join(w.capitalize() for w in words)
+        if hashtag not in seen:
+            seen.add(hashtag)
+            result.append(hashtag)
+        if len(result) >= max_n:
+            break
+    return result
+
+
+def _generate_linkedin_post(
+    payload: dict[str, str], html: str, labels: dict[str, str]
+) -> str:
+    """Build a copy-ready LinkedIn post from article metadata and lead block.
+
+    Structure (mirrors the Readable Framework the editorial team uses):
+      Hook      — article title on its own line
+      Opening   — first 1-2 sentences of the meta description
+      Takeaways — bullet list extracted from the lead block (3-5 items)
+      CTA       — engagement question found in the body or a locale fallback
+      Link note — placeholder for the first-comment link
+      Footer    — canonical URL + CC-BY-4.0 attribution
+      Hashtags  — up to 5 #CamelCase tags from JSON-LD keywords
+    """
+    url, title, desc = payload["url"], payload["title"], payload["desc"]
+
+    # Opening: first two short sentences of the description, max ~220 chars
+    sentences = desc.replace("—", "-").split(". ")
+    opening = sentences[0].rstrip(".")
+    if len(sentences) > 1 and len(opening) < 120:
+        second = sentences[1].rstrip(".")
+        if len(opening) + len(second) + 2 < 220:
+            opening = f"{opening}. {second}"
+    opening = opening.rstrip(".") + "."
+
+    # Bullet takeaways from lead block
+    takeaways = _extract_lead_takeaways_text(html)
+    intro = labels.get("Syndicate.linkedin_intro", "Here are the key strategic takeaways:")
+    bullets = "\n".join(f"- {t}" for t in takeaways)
+
+    # Engagement question: first short question-paragraph in body, else label fallback
+    question = _extract_body_question(html) or labels.get(
+        "Syndicate.linkedin_question",
+        "What is your organisation's approach to the challenges outlined in this piece?",
+    )
+
+    # Attribution footer
+    footer = (
+        f"Originally published at {url} by Sebastien Rousseau. "
+        "Licensed under CC-BY-4.0."
+    )
+
+    hashtags = " ".join(_keywords_to_hashtags(html))
+
+    parts: list[str] = [title, "", opening]
+    if takeaways:
+        parts += ["", intro, "", bullets]
+    parts += [
+        "",
+        question,
+        "",
+        "[Link to the full piece in the first comment]",
+        "",
+        footer,
+    ]
+    if hashtags:
+        parts += ["", hashtags]
+    return "\n".join(parts)
+
+
 def _share_payload(html: str) -> dict[str, str] | None:
     """Extract canonical URL + og:title + meta description and return
     the per-platform pre-fill strings the share rail needs. Returns
@@ -823,11 +936,14 @@ def _share_rail_items(payload: dict[str, str], labels: dict[str, str]) -> str:
     )
 
 
-def _syndication_payloads(payload: dict[str, str]) -> dict[str, str]:
+def _syndication_payloads(
+    payload: dict[str, str], html: str, labels: dict[str, str]
+) -> dict[str, str]:
     """Return pre-formatted text payloads for platforms that don't
     accept ?text= compose intents — Medium (markdown import), Mastodon
-    (no universal share URL across instances). The reader copies and
-    pastes into the platform of their choice."""
+    (no universal share URL across instances), LinkedIn (structured
+    thought-leadership post). The reader copies and pastes into the
+    platform of their choice."""
     url, title, desc = payload["url"], payload["title"], payload["desc"]
     # Medium import-style markdown — Medium's web importer reads the
     # first H1 + body. The canonical link goes at the top so the
@@ -848,18 +964,22 @@ def _syndication_payloads(payload: dict[str, str]) -> dict[str, str]:
     if len(desc) > 300:
         desc_trunc += "…"
     mastodon = "\n\n".join(p for p in (title, desc_trunc, url) if p)
-    return {"medium": medium_md, "mastodon": mastodon}
+    linkedin = _generate_linkedin_post(payload, html, labels)
+    return {"medium": medium_md, "mastodon": mastodon, "linkedin": linkedin}
 
 
-def _render_syndication_panel(payload: dict[str, str], labels: dict[str, str]) -> str:
+def _render_syndication_panel(
+    payload: dict[str, str], labels: dict[str, str], html: str
+) -> str:
     """Inline collapsible at the article foot with copy buttons for
-    Medium + Mastodon. Each pre block has a stable id so main.js's
-    existing [data-copy] handler wires the clipboard."""
-    payloads = _syndication_payloads(payload)
+    Medium, Mastodon, and LinkedIn. Each pre block has a stable id so
+    main.js's existing [data-copy] handler wires the clipboard."""
+    payloads = _syndication_payloads(payload, html, labels)
     blocks = []
     label_map = {
         "medium": labels.get("Syndicate.medium", "Format for Medium"),
         "mastodon": labels.get("Syndicate.mastodon", "Format for Mastodon"),
+        "linkedin": labels.get("Syndicate.linkedin", "Copy formatted for LinkedIn"),
     }
     copy_label = _esc(labels.get("Cite.copy", "Copy"))
     for key, body in payloads.items():
@@ -884,11 +1004,11 @@ def _render_syndication_panel(payload: dict[str, str], labels: dict[str, str]) -
 
 def inject_syndication_panel(html: str) -> str:
     """Append a syndication payload panel at the wrap-div close —
-    pre-formatted blocks for Medium import + Mastodon, each with a
-    copy button. Bluesky has a compose-intent URL so it joins the
-    share rail directly; Medium and Mastodon have no universal share
-    URL so the panel is the only path. BlogPosting pages only;
-    idempotent."""
+    pre-formatted blocks for Medium import, Mastodon, and LinkedIn,
+    each with a copy button. Bluesky has a compose-intent URL so it
+    joins the share rail directly; Medium, Mastodon, and LinkedIn have
+    no universal share URL so the panel is the only path. BlogPosting
+    pages only; idempotent."""
     if '"@type":"BlogPosting"' not in html:
         return html
     if 'id="syndicate-popover"' in html:
@@ -896,7 +1016,7 @@ def inject_syndication_panel(html: str) -> str:
     payload = _share_payload(html)
     if payload is None:
         return html
-    panel = _render_syndication_panel(payload, _labels(html))
+    panel = _render_syndication_panel(payload, _labels(html), html)
     return _WRAP_CLOSE_RE.sub(panel + r"\1", html, count=1)
 
 

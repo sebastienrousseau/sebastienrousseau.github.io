@@ -37,5 +37,8 @@
   "Syndicate.heading": "Перепублікувати цю статтю",
   "Syndicate.medium": "Скопіювати формат для Medium",
   "Syndicate.mastodon": "Скопіювати формат для Mastodon",
+  "Syndicate.linkedin": "Копіювати відформатоване для LinkedIn",
+  "Syndicate.linkedin_intro": "Ось ключові стратегічні висновки:",
+  "Syndicate.linkedin_question": "Яким є підхід вашої організації до викликів, описаних у цій статті?",
   "Case studies": "Кейс-стаді"
 }

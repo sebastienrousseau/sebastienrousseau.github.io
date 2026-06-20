@@ -37,5 +37,8 @@
   "Syndicate.heading": "Återpublicera denna artikel",
   "Syndicate.medium": "Kopiera format för Medium",
   "Syndicate.mastodon": "Kopiera format för Mastodon",
+  "Syndicate.linkedin": "Kopiera formaterat för LinkedIn",
+  "Syndicate.linkedin_intro": "Här är de viktigaste strategiska lärdomarna:",
+  "Syndicate.linkedin_question": "Hur hanterar din organisation de utmaningar som beskrivs i denna artikel?",
   "Case studies": "Fallstudier"
 }

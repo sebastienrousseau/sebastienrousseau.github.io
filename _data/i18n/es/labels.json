@@ -37,5 +37,8 @@
   "Syndicate.heading": "Republicar este artículo",
   "Syndicate.medium": "Copiar formato para Medium",
   "Syndicate.mastodon": "Copiar formato para Mastodon",
+  "Syndicate.linkedin": "Copiar formateado para LinkedIn",
+  "Syndicate.linkedin_intro": "Estos son los puntos estratégicos clave:",
+  "Syndicate.linkedin_question": "¿Cuál es el enfoque de su organización ante los desafíos descritos en este artículo?",
   "Case studies": "Casos de estudio"
 }

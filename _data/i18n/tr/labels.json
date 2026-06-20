@@ -37,5 +37,8 @@
   "Syndicate.heading": "Bu makaleyi yeniden yayınla",
   "Syndicate.medium": "Medium için biçimi kopyala",
   "Syndicate.mastodon": "Mastodon için biçimi kopyala",
+  "Syndicate.linkedin": "LinkedIn için biçimlendirilmiş kopyala",
+  "Syndicate.linkedin_intro": "İşte temel stratejik çıkarımlar:",
+  "Syndicate.linkedin_question": "Kuruluşunuzun bu yazıda belirtilen zorluklara yaklaşımı nedir?",
   "Case studies": "Vaka çalışmaları"
 }

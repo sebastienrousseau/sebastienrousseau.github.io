@@ -37,5 +37,8 @@
   "Syndicate.heading": "เผยแพร่บทความนี้ซ้ำ",
   "Syndicate.medium": "คัดลอกรูปแบบสำหรับ Medium",
   "Syndicate.mastodon": "คัดลอกรูปแบบสำหรับ Mastodon",
+  "Syndicate.linkedin": "คัดลอกที่จัดรูปแบบสำหรับ LinkedIn",
+  "Syndicate.linkedin_intro": "นี่คือประเด็นเชิงกลยุทธ์ที่สำคัญ:",
+  "Syndicate.linkedin_question": "แนวทางขององค์กรของคุณในการรับมือกับความท้าทายที่ระบุไว้ในบทความนี้คืออะไร?",
   "Case studies": "กรณีศึกษา"
 }

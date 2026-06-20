@@ -37,5 +37,8 @@
   "Syndicate.heading": "轉載本文",
   "Syndicate.medium": "複製 Medium 格式",
   "Syndicate.mastodon": "複製 Mastodon 格式",
+  "Syndicate.linkedin": "複製 LinkedIn 格式",
+  "Syndicate.linkedin_intro": "以下是關鍵策略要點：",
+  "Syndicate.linkedin_question": "貴組織如何應對本文所述的挑戰？",
   "Case studies": "案例研究"
 }

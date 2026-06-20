@@ -37,5 +37,8 @@
   "Syndicate.heading": "この記事を転載する",
   "Syndicate.medium": "Medium用フォーマットをコピー",
   "Syndicate.mastodon": "Mastodon用フォーマットをコピー",
+  "Syndicate.linkedin": "LinkedIn用にフォーマットしてコピー",
+  "Syndicate.linkedin_intro": "主要な戦略的ポイントをまとめます：",
+  "Syndicate.linkedin_question": "この記事で述べた課題に対して、貴組織はどのようなアプローチをとっていますか？",
   "Case studies": "事例研究"
 }

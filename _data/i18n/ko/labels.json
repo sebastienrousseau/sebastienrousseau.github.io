@@ -37,5 +37,8 @@
   "Syndicate.heading": "이 기사 재게시하기",
   "Syndicate.medium": "Medium용 형식 복사",
   "Syndicate.mastodon": "Mastodon용 형식 복사",
+  "Syndicate.linkedin": "LinkedIn용 형식으로 복사",
+  "Syndicate.linkedin_intro": "주요 전략적 시사점은 다음과 같습니다:",
+  "Syndicate.linkedin_question": "이 글에서 다룬 과제에 대한 귀 조직의 접근 방식은 무엇입니까?",
   "Case studies": "사례 연구"
 }
