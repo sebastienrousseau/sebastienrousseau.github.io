@@ -33,7 +33,7 @@ PUBLIC = Path("public")
 # 4. og:image / twitter:image rewrite
 # ---------------------------------------------------------------------------
 
-# Shokunin's auto-generated og:image scans the body and picks up the first
+# Static Site Generator's auto-generated og:image scans the body and picks up the first
 # <img> tag, which is often a decorative divider.svg or a body inline image
 # rather than the article banner. The result: link previews on Twitter,
 # LinkedIn, Slack, etc. show a one-pixel line instead of the article's
@@ -319,7 +319,7 @@ def fix_social_image(html: str) -> str:
         html = sub_attr(r'(<meta\s+property="og:image:width"\s+content=)"[^"]*"', width, html)
     if height:
         html = sub_attr(r'(<meta\s+property="og:image:height"\s+content=)"[^"]*"', height, html)
-    # Force summary_large_image on real BlogPosting pages. Shokunin emits
+    # Force summary_large_image on real BlogPosting pages. Static Site Generator emits
     # `summary` for some posts despite the frontmatter saying otherwise,
     # losing the large banner preview on every share.
     html = sub_attr(
@@ -457,7 +457,7 @@ def inject_howto(page: Path, html: str) -> str:
 #
 # Browser allocates a placeholder of size width×height before the
 # bytes arrive; without those attrs the layout reflows once the
-# image lands → cumulative layout shift. Shokunin's Markdown
+# image lands → cumulative layout shift. Static Site Generator's Markdown
 # pipeline doesn't probe remote dimensions, so every Markdown img
 # ships unsized. Stamp them at postbuild time.
 #
@@ -474,7 +474,7 @@ _IMG_SRC_RE = re.compile(r"""\bsrc=["']?([^"'\s>]+)""", re.IGNORECASE)
 _IMG_DIMS: dict[str, tuple[int, int]] = {
     "https://cloudcdn.pro/clients/common/images/elements/divider.svg": (40, 6),
     "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg": (160, 40),
-    "https://cloudcdn.pro/clients/shokunin/v1/banners/banner-shokunin.svg": (1200, 675),
+    "https://cloudcdn.pro/clients/static-site-generator/v1/banners/banner-static-site-generator.svg": (1200, 675),
     # Personal portrait — 162×162 native, used at small sizes everywhere.
     "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png": (162, 162),
 }
@@ -549,7 +549,7 @@ def stamp_image_dimensions(html: str) -> tuple[str, int]:  # noqa: C901 — per-
 # 4b. Open Graph completeness
 # ---------------------------------------------------------------------------
 #
-# Shokunin emits `og:title`, `og:description`, `og:type` but skips
+# Static Site Generator emits `og:title`, `og:description`, `og:type` but skips
 # `og:image`, `og:url`, `og:locale`, `og:site_name` — every social
 # share renders without a preview image and without locale routing.
 # Back-fill them from data the page already carries: the BlogPosting

@@ -3,7 +3,7 @@
 > Last Updated: June 4, 2026
 
 This repository houses the static-site pipeline for the Sebastien Rousseau web site, which compiles research on applied AI, payments, and keys in twenty-eight languages.
-We build the site using the Shokunin static site generator and run automated postbuild scripts to optimize the pages.
+We build the site using the Static Site Generator static site generator and run automated postbuild scripts to optimize the pages.
 
 ## Contents
 

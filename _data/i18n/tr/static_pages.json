@@ -30,17 +30,17 @@
     "description": "Ödemelerin dönüşümü, ISO 20022 geçişi veya post-kuantum stratejisi konusunda danışmanlık için Sebastien Rousseau ile iletişime geçin.",
     "keywords": "iletişim, danışmanlık, ödemeler, ISO 20022, post-kuantum kriptografi"
   },
-  "made-with-shokunin": {
-    "title": "Shokunin ile yapıldı — Sebastien Rousseau",
+  "made-with-static-site-generator": {
+    "title": "Static Site Generator ile yapıldı — Sebastien Rousseau",
     "subtitle": "Yeni nesil statik site jeneratörünü nasıl kullanacağınızı keşfedin.",
-    "description": "Bu site, performans ve SEO için optimize edilmiş bir Rust tabanlı statik site jeneratörü olan Shokunin ile yapılmıştır.",
-    "keywords": "Shokunin, SSG, Rust, performans, SEO"
+    "description": "Bu site, performans ve SEO için optimize edilmiş bir Rust tabanlı statik site jeneratörü olan Static Site Generator ile yapılmıştır.",
+    "keywords": "Static Site Generator, SSG, Rust, performans, SEO"
   },
   "made-with-static-site-generator": {
     "title": "Static Site Generator ile yapıldı — Sebastien Rousseau",
     "subtitle": "Yeni nesil statik site jeneratörünü nasıl kullanacağınızı keşfedin.",
-    "description": "Bu site, Rust ile yazılmış hızlı bir statik site jeneratörü olan Shokunin ile üretilmiştir.",
-    "keywords": "Shokunin, statik site jeneratörü, Rust, performans"
+    "description": "Bu site, Rust ile yazılmış hızlı bir statik site jeneratörü olan Static Site Generator ile üretilmiştir.",
+    "keywords": "Static Site Generator, statik site jeneratörü, Rust, performans"
   },
   "offline": {
     "title": "Çevrimdışı — Sebastien Rousseau",

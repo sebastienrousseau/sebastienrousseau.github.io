@@ -128,5 +128,5 @@ the duplicate-strip pass before injecting fresh hreflang links was a
 no-op. The regex is now `<link …rel=alternate…hreflang=…/?>` with
 attribute-order-insensitive lookahead. Build report still shows 264
 paired pages; what dropped is the duplicate
-`<link rel="alternate" hreflang>` Shokunin emits — `/about/` is now
+`<link rel="alternate" hreflang>` Static Site Generator emits — `/about/` is now
 1 hreflang link, was 2.

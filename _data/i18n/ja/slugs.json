@@ -11,8 +11,7 @@
     "privacy": "puraibashi",
     "terms": "riyou-kiyaku",
     "playlists": "pureirisuto",
-    "made-with-static-site-generator": "sutaitikku-saito-jenereta-de-sakusei",
-    "made-with-shokunin": "shokunin-de-sakusei",
+    "made-with-static-site-generator": "static-site-generator-de-sakusei",
     "404": "404",
     "offline": "ofurain",
     "thanks": "arigatou",
@@ -27,7 +26,7 @@
     "2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution": "2018-02-04-arata-na-ankouka-tsuuka-to-koukousoku-kessai-no-shourai",
     "2018-02-15-the-making-of-the-express-transaction-credits-platform": "2018-02-15-express-transaction-credits-puratto-foomu-no-kaihatsu",
     "2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001": "2023-09-29-pain001-de-iso-20022-junkyo-kessai-fairu-no-jidouka",
-    "2023-10-09-shokunin-the-fastest-rust-based-static-site-generator": "2023-10-09-shokunin-saisoku-no-rust-sei-shizen-saito-jenereta",
+    "2023-10-09-the-fastest-rust-based-static-site-generator": "2023-10-09-saisoku-no-rust-sei-shizen-saito-jenereta",
     "2023-10-16-protecting-data-in-the-quantum-age-the-hash-library-hsh": "2023-10-16-ryoushi-jidai-no-deeta-hogo-hsh-hash-raiburari",
     "2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries": "2023-10-26-libmake-rust-raiburari-no-koodo-jenereta",
     "2023-11-05-mathematical-and-cryptographic-constants-for-rust-security": "2023-11-05-rust-no-tame-no-suugaku-to-ankouka-teisuu",
@@ -92,6 +91,9 @@
     "2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026": "2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026",
     "2026-06-14-bankstatementparser-transaction-intelligence-treasury-open-source-2026": "2026-06-14-bankstatementparser-transaction-intelligence-treasury-open-source-2026",
     "2026-06-15-pacs008-automation-iso-20022-interbank-payments-2026": "2026-06-15-pacs008-automation-iso-20022-interbank-payments-2026",
-    "2026-06-16-ai-aware-dotfiles-secure-reproducible-workstation-2026": "2026-06-16-ai-aware-dotfiles-secure-reproducible-workstation-2026"
+    "2026-06-16-ai-aware-dotfiles-secure-reproducible-workstation-2026": "2026-06-16-ai-aware-dotfiles-secure-reproducible-workstation-2026",
+    "2026-06-17-economist-commercialising-quantum-summit-2026": "2026-06-17-economist-commercialising-quantum-summit-2026",
+    "2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026": "2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026",
+    "2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026": "2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026"
   }
 }

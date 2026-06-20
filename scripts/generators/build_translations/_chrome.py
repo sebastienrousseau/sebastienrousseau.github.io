@@ -178,7 +178,7 @@ def rewrite_static_links(html: str) -> str:
 def localize_feed_links(html: str) -> str:
     """Point the page's feed links at the current language's feed
     shadows. Covers absolute, root-relative, and any prod/preview host
-    variants Shokunin may have emitted into the shell."""
+    variants Static Site Generator may have emitted into the shell."""
     html = re.sub(
         r'href="(?:https?://[^/"]+)?/atom\.xml"',
         f'href="/{st.LANG_CODE}/atom.xml"',

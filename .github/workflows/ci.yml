@@ -216,7 +216,12 @@ jobs:
           node-version: "22"
 
       - name: Install pa11y-ci
-        run: npm install -g pa11y-ci@^3
+        # Pa11y-ci v4 ships with the modern pa11y v8 + axe-core. v3
+        # used an older contrast calculator whose sRGB → luminance
+        # precision disagreed with current pa11y/axe by ~0.2 ratio
+        # points, masking AAA-passing colour pairs as failures on
+        # certain warm bg tones (--paper-card on /<lang>/<topics>/).
+        run: npm install -g pa11y-ci@^4
 
       - name: Serve public/
         run: |

@@ -2,7 +2,7 @@
 
 > Last Updated: June 4, 2026
 
-This guide shows the build steps of the Shokunin site builder for the Sebastien Rousseau web site.
+This guide shows the build steps of the Static Site Generator site builder for the Sebastien Rousseau web site.
 
 ## Contents
 

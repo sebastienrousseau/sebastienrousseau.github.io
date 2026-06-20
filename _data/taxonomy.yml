@@ -690,7 +690,7 @@ static-site-generator:
   aliases:
     - static site generator
     - SSG
-    - shokunin
+    - static-site-generator
     - static site generators
   category: open-source
 

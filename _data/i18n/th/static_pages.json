@@ -30,17 +30,17 @@
     "description": "ติดต่อ Sebastien Rousseau สำหรับการให้คำปรึกษาด้านการปฏิรูปการชำระเงิน การย้าย ISO 20022 หรือกลยุทธ์หลังควอนตัม",
     "keywords": "ติดต่อ, การให้คำปรึกษา, การชำระเงิน, ISO 20022, การเข้ารหัสหลังควอนตัม"
   },
-  "made-with-shokunin": {
-    "title": "สร้างด้วย Shokunin — Sebastien Rousseau",
+  "made-with-static-site-generator": {
+    "title": "สร้างด้วย Static Site Generator — Sebastien Rousseau",
     "subtitle": "ค้นพบวิธีใช้ตัวสร้างเว็บไซต์รุ่นใหม่",
-    "description": "เว็บไซต์นี้สร้างด้วย Shokunin ตัวสร้างไซต์แบบ static ใน Rust ที่ปรับให้เหมาะสมสำหรับประสิทธิภาพและ SEO",
-    "keywords": "Shokunin, SSG, Rust, ประสิทธิภาพ, SEO"
+    "description": "เว็บไซต์นี้สร้างด้วย Static Site Generator ตัวสร้างไซต์แบบ static ใน Rust ที่ปรับให้เหมาะสมสำหรับประสิทธิภาพและ SEO",
+    "keywords": "Static Site Generator, SSG, Rust, ประสิทธิภาพ, SEO"
   },
   "made-with-static-site-generator": {
     "title": "สร้างด้วย Static Site Generator — Sebastien Rousseau",
     "subtitle": "ค้นพบวิธีใช้ตัวสร้างเว็บไซต์รุ่นใหม่",
-    "description": "เว็บไซต์นี้สร้างขึ้นด้วย Shokunin ตัวสร้างไซต์แบบ static ที่รวดเร็วและเขียนใน Rust",
-    "keywords": "Shokunin, ตัวสร้างไซต์แบบ static, Rust, ประสิทธิภาพ"
+    "description": "เว็บไซต์นี้สร้างขึ้นด้วย Static Site Generator ตัวสร้างไซต์แบบ static ที่รวดเร็วและเขียนใน Rust",
+    "keywords": "Static Site Generator, ตัวสร้างไซต์แบบ static, Rust, ประสิทธิภาพ"
   },
   "offline": {
     "title": "ออฟไลน์ — Sebastien Rousseau",

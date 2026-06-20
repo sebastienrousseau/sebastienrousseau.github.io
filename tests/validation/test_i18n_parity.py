@@ -60,7 +60,7 @@ REQUIRED_STATIC_SLUGS = (
     "terms",
     "playlists",
     "made-with-static-site-generator",
-    "made-with-shokunin",
+    "made-with-static-site-generator",
     "404",
     "offline",
     "thanks",

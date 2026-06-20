@@ -105,21 +105,81 @@ site_software: "Static Site Generator, Rust"
 <header class="newsroom-section-head"><p class="newsroom-kicker">FEATURED</p><h2>Latest story</h2></header>
 
 <article class="newsroom-featured">
-<a class="newsroom-featured-media" href="/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/index.html" title="KyberLib and the Post-Quantum Banking Migration in 2026: From Standards to Code">
-<img alt="Aerial view of the City of London at dusk — symbolising the post-quantum migration banks must run from NIST standards into inspectable cryptographic code" src="https://cloudcdn.pro/stocks/images/ben-o-bro-wpU4veNGnHg.webp" loading="eager" fetchpriority="high" decoding="async" width="800" height="800" />
+<a class="newsroom-featured-media" href="/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/index.html" title="Why YAML Needs a Safer Rust Stack for AI, MCP, and Financial Infrastructure in 2026">
+<img alt="Architectural geometry under dramatic light — symbolising NoyaLib's role as the load-bearing safe Rust YAML parser beneath CI, Kubernetes, MCP, and financial-services configuration" src="https://cloudcdn.pro/stocks/images/ken-cheung-KonWFWUaAuk.webp" loading="eager" fetchpriority="high" decoding="async" width="800" height="800" />
 </a>
 <div class="newsroom-featured-body">
-<span class="newsroom-eyebrow">Kyberlib · Post-Quantum Cryptography · Quantum-Safe Banking</span>
-<h3><a href="/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/index.html" title="KyberLib and the Post-Quantum Banking Migration in 2026: From Standards to Code">KyberLib and the Post-Quantum Banking Migration in 2026: From Standards to Code</a></h3>
-<p class="newsroom-meta"><time datetime="2026-06-12">June 12, 2026</time> · Sebastien Rousseau</p>
-<p>KyberLib turns the post-quantum banking migration from policy paper into inspectable Rust — FIPS 203 ML-KEM key encapsulation, hybrid classical-plus-quantum handshakes, no_std compilation for HSMs, crypto-agile abstraction boundaries, and the DORA Article 5 governance evidence boards now need.</p>
-<p><a class="pill ghost" href="/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/index.html" title="KyberLib and the Post-Quantum Banking Migration in 2026: From Standards to Code">Read the full story</a></p>
+<span class="newsroom-eyebrow">Safer Rust Yaml Parser · Noyalib · Yaml 1.2</span>
+<h3><a href="/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/index.html" title="Why YAML Needs a Safer Rust Stack for AI, MCP, and Financial Infrastructure in 2026">Why YAML Needs a Safer Rust Stack for AI, MCP, and Financial Infrastructure in 2026</a></h3>
+<p class="newsroom-meta"><time datetime="2026-06-18">June 18, 2026</time> · Sebastien Rousseau</p>
+<p>NoyaLib is a safer Rust YAML stack — zero unsafe blocks, 406/406 YAML 1.2 spec compliance, lossless Concrete Syntax Tree, JSON-Schema (Draft 2020-12) validation, and MCP/WASM bindings — engineered for AI agents, Kubernetes, CI/CD, and the configuration control plane behind financial infrastructure.</p>
+<p><a class="pill ghost" href="/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/index.html" title="Why YAML Needs a Safer Rust Stack for AI, MCP, and Financial Infrastructure in 2026">Read the full story</a></p>
 </div>
 </article>
 
 <header class="newsroom-section-head"><p class="newsroom-kicker">ARCHIVE</p><h2>All news stories and articles</h2></header>
 
 <div class="newsroom-grid">
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-06-17-economist-commercialising-quantum-summit-2026/index.html" title="From Qubits to Profits: Strategic Takeaways from the Economist's 5th Annual Commercialising Quantum Global 2026 Summit">
+<img alt="Stage view from the Economist Impact 5th Annual Commercialising Quantum Global 2026 summit in London — symbolising quantum technology's transition from physics research to enterprise-ready workflows" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau-20260617-5th-commercialising-quantum-2.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Quantum · Post-Quantum Cryptography · Nist Ml-Kem</span>
+<h3><a href="/2026-06-17-economist-commercialising-quantum-summit-2026/index.html" title="From Qubits to Profits: Strategic Takeaways from the Economist's 5th Annual Commercialising Quantum Global 2026 Summit">From Qubits to Profits: Strategic Takeaways from the Economist's 5th Annual Commercialising Quantum Global 2026 Summit</a></h3>
+<p class="newsroom-meta"><time datetime="2026-06-17">June 17, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">The Economist Impact 5th Annual Commercialising Quantum Global 2026 summit confirmed quantum's pivot to enterprise workflows: $1.3B raised in five months, post-quantum cryptography is a board-level fiduciary issue under SNDL harvesting, quantum sensing is shipping today for GPS-independent navigation, and HSBC's Philip</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-06-16-ai-aware-dotfiles-secure-reproducible-workstation-2026/index.html" title="AI-Aware Dotfiles in 2026: Building a Secure, Reproducible Developer Workstation for MCP, SLSA, and Multi-Shell Parity">
+<img alt="Developer workstation in low light — symbolising AI-aware, reproducible, secure dotfiles for MCP servers, SLSA signing, age/SOPS secrets, and multi-shell parity" src="https://cloudcdn.pro/stocks/images/almas-salakhov-Vq2ap8aFFEs.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Dotfiles · Developer Tools · Mcp</span>
+<h3><a href="/2026-06-16-ai-aware-dotfiles-secure-reproducible-workstation-2026/index.html" title="AI-Aware Dotfiles in 2026: Building a Secure, Reproducible Developer Workstation for MCP, SLSA, and Multi-Shell Parity">AI-Aware Dotfiles in 2026: Building a Secure, Reproducible Developer Workstation for MCP, SLSA, and Multi-Shell Parity</a></h3>
+<p class="newsroom-meta"><time datetime="2026-06-16">June 16, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">AI-aware dotfiles in 2026 treat the developer workstation as supply-chain infrastructure — declarative chezmoi-managed configuration with MCP awareness, SLSA-signed releases, age/SOPS secrets, sub-second startup, and macOS/Linux/WSL parity.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-06-15-pacs008-automation-iso-20022-interbank-payments-2026/index.html" title="Building pacs.008 Automation for the ISO 20022 Interbank Era in 2026">
+<img alt="Office worker with voice assistant and laptop — symbolising the structured, machine-readable interbank payment messages that pacs.008 automation makes programmable" src="https://cloudcdn.pro/stocks/images/tyler-prahm-lmV3gJSAgbo.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Pacs008 · Iso 20022 · Interbank Payments</span>
+<h3><a href="/2026-06-15-pacs008-automation-iso-20022-interbank-payments-2026/index.html" title="Building pacs.008 Automation for the ISO 20022 Interbank Era in 2026">Building pacs.008 Automation for the ISO 20022 Interbank Era in 2026</a></h3>
+<p class="newsroom-meta"><time datetime="2026-06-15">June 15, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">pacs008 is an open-source Python toolkit that makes ISO 20022 FI-to-FI customer credit transfer messages programmable — structured addresses, validation, routing, compliance hooks, and the SWIFT November 2026 deadline baked in as defaults.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-06-14-bankstatementparser-transaction-intelligence-treasury-open-source-2026/index.html" title="From Bank Statements to Unified Transaction Intelligence: Building an Open-Source Parser for Treasury Teams">
+<img alt="Modern finance office workspace at night — symbolising the unified transaction intelligence that BankStatementParser builds from CAMT, PAIN.001, MT940, OFX, CSV, and scanned PDFs" src="https://cloudcdn.pro/stocks/images/ricardo-gomez-angel-Oj6tP8NlvFo.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Bankstatementparser · Treasury · Bank Statements</span>
+<h3><a href="/2026-06-14-bankstatementparser-transaction-intelligence-treasury-open-source-2026/index.html" title="From Bank Statements to Unified Transaction Intelligence: Building an Open-Source Parser for Treasury Teams">From Bank Statements to Unified Transaction Intelligence: Building an Open-Source Parser for Treasury Teams</a></h3>
+<p class="newsroom-meta"><time datetime="2026-06-14">June 14, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">BankStatementParser is an open-source Python toolkit that turns CAMT, PAIN.001, MT940, OFX/QFX, CSV, and scanned PDFs into a unified transaction model treasury can audit — deterministic parsers, LLM fallback, OCR, balance verification, and review.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/index.html" title="KyberLib and the Post-Quantum Banking Migration in 2026: From Standards to Code">
+<img alt="Aerial view of the City of London at dusk — symbolising the post-quantum migration banks must run from NIST standards into inspectable cryptographic code" src="https://cloudcdn.pro/stocks/images/ben-o-bro-wpU4veNGnHg.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Kyberlib · Post-Quantum Cryptography · Quantum-Safe Banking</span>
+<h3><a href="/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026/index.html" title="KyberLib and the Post-Quantum Banking Migration in 2026: From Standards to Code">KyberLib and the Post-Quantum Banking Migration in 2026: From Standards to Code</a></h3>
+<p class="newsroom-meta"><time datetime="2026-06-12">June 12, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">KyberLib turns the post-quantum banking migration from policy paper into inspectable Rust — FIPS 203 ML-KEM key encapsulation, hybrid classical-plus-quantum handshakes, no_std compilation for HSMs, crypto-agile abstraction boundaries, and the DORA Article 5 governance evidence boards now need.</p>
+</div>
+</article>
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/index.html" title="CloudCDN: An Open-Source Blueprint for the AI-Native Edge in 2026">
@@ -806,12 +866,12 @@ site_software: "Static Site Generator, Rust"
 </article>
 
 <article class="newsroom-card">
-<a class="newsroom-card-media" href="/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/index.html" title="Static Site Generator: the fastest Rust-based SSG">
+<a class="newsroom-card-media" href="/2023-10-09-the-fastest-rust-based-static-site-generator/index.html" title="Static Site Generator: the fastest Rust-based SSG">
 <img alt="Turned off laptop computer on top of a white table with a glass of water on the left and a pen, notepad and plant on the right" src="https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Open source · Rust</span>
-<h3><a href="/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/index.html" title="Static Site Generator: the fastest Rust-based SSG">Static Site Generator: the fastest Rust-based SSG</a></h3>
+<h3><a href="/2023-10-09-the-fastest-rust-based-static-site-generator/index.html" title="Static Site Generator: the fastest Rust-based SSG">Static Site Generator: the fastest Rust-based SSG</a></h3>
 <p class="newsroom-meta"><time datetime="2023-10-09">October 9, 2023</time> · Sebastien Rousseau</p>
 <p class="newsroom-excerpt">Empowering you to create high-impact static websites with infinite possibilities, limitless scalability, and a truly unique web presence that you control.</p>
 </div>

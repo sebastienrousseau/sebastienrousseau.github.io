@@ -108,7 +108,7 @@ site_software: "Static Site Generator, Rust"
 
 ---
 
-<img alt="The Static Site Generator Banner" src="https://cloudcdn.pro/clients/shokunin/v1/banners/banner-shokunin.svg" class="w-50 p-3 me-3 float-end" />
+<img alt="The Static Site Generator Banner" src="https://cloudcdn.pro/clients/static-site-generator/v1/banners/banner-static-site-generator.svg" class="w-50 p-3 me-3 float-end" />
 
 ## Embrace Static Site Generator for Effortless Website Creation
 
@@ -121,4 +121,4 @@ Static Site Generator's intuitive interface empowers both novices and seasoned d
 [Embark on your website journey today and witness the transformative power of Static Site Generator! ❯][00]
 
 [00]: https://github.com/sebastienrousseau/static-site-generator "Static Site Generator: The Fastest Rust-Based Static Site Generator (SSG)"
-[01]: https://cloudcdn.pro/clients/shokunin/v1/banners/banner-shokunin.svg "Made with Static Site Generator, the fastest Rust-based Static Site Generator (SSG)"
+[01]: https://cloudcdn.pro/clients/static-site-generator/v1/banners/banner-static-site-generator.svg "Made with Static Site Generator, the fastest Rust-based Static Site Generator (SSG)"

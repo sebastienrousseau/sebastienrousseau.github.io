@@ -30,17 +30,17 @@
     "description": "결제 변혁, ISO 20022 이행, 포스트 양자 전략 컨설팅에 관하여 Sebastien Rousseau에게 문의하여 주십시오.",
     "keywords": "문의하기, 컨설팅, 결제, ISO 20022, 포스트 양자 암호"
   },
-  "made-with-shokunin": {
-    "title": "Shokunin으로 제작 — Sebastien Rousseau",
+  "made-with-static-site-generator": {
+    "title": "Static Site Generator으로 제작 — Sebastien Rousseau",
     "subtitle": "차세대 정적 사이트 생성기를 활용하는 방법을 안내합니다.",
-    "description": "본 사이트는 성능과 SEO에 최적화된 Rust 기반 정적 사이트 생성기 Shokunin으로 구축되었습니다.",
-    "keywords": "Shokunin, SSG, Rust, 성능, SEO"
+    "description": "본 사이트는 성능과 SEO에 최적화된 Rust 기반 정적 사이트 생성기 Static Site Generator으로 구축되었습니다.",
+    "keywords": "Static Site Generator, SSG, Rust, 성능, SEO"
   },
   "made-with-static-site-generator": {
     "title": "Static Site Generator로 제작 — Sebastien Rousseau",
     "subtitle": "차세대 정적 사이트 생성기를 활용하는 방법을 안내합니다.",
-    "description": "본 사이트는 Rust로 작성된 고속 정적 사이트 생성기 Shokunin으로 생성되었습니다.",
-    "keywords": "Shokunin, 정적 사이트 생성기, Rust, 성능"
+    "description": "본 사이트는 Rust로 작성된 고속 정적 사이트 생성기 Static Site Generator으로 생성되었습니다.",
+    "keywords": "Static Site Generator, 정적 사이트 생성기, Rust, 성능"
   },
   "offline": {
     "title": "오프라인 — Sebastien Rousseau",

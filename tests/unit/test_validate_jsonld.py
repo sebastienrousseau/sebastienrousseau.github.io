@@ -173,7 +173,7 @@ def test_feed_rss_catches_duplicate_guid(tmp_path):
 
 
 def test_feed_rss_invalid_xml_caught(tmp_path):
-    # Bare `&` in title — the exact regression Shokunin shipped.
+    # Bare `&` in title — the exact regression Static Site Generator shipped.
     bad = RSS_GOOD.replace("<title>A Post</title>", "<title>A & Post</title>")
     p = write(tmp_path, "rss.xml", bad)
     errors, _ = v.validate_feed(p)
@@ -288,7 +288,7 @@ def test_meta_csp_no_script_src_directive_fails():
 
 
 def test_meta_csp_attribute_order_does_not_matter():
-    # Shokunin's minifier sometimes emits `content=` before `http-equiv=`.
+    # Static Site Generator's minifier sometimes emits `content=` before `http-equiv=`.
     # Both orderings must be recognised.
     html = """<!doctype html>
 <html><head>

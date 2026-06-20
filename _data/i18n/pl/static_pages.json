@@ -30,17 +30,17 @@
     "description": "Proszę skontaktować się z Sebastienem Rousseau w sprawie doradztwa w transformacji płatności, migracji na ISO 20022 lub strategii postkwantowej.",
     "keywords": "kontakt, doradztwo, płatności, ISO 20022, kryptografia postkwantowa"
   },
-  "made-with-shokunin": {
-    "title": "Stworzone w Shokunin — Sebastien Rousseau",
+  "made-with-static-site-generator": {
+    "title": "Stworzone w Static Site Generator — Sebastien Rousseau",
     "subtitle": "Proszę odkryć, jak korzystać z generatora stron statycznych nowej generacji.",
-    "description": "Ta strona została stworzona w Shokunin, generatorze stron statycznych napisanym w Rust, zoptymalizowanym pod kątem wydajności i SEO.",
-    "keywords": "Shokunin, SSG, Rust, wydajność, SEO"
+    "description": "Ta strona została stworzona w Static Site Generator, generatorze stron statycznych napisanym w Rust, zoptymalizowanym pod kątem wydajności i SEO.",
+    "keywords": "Static Site Generator, SSG, Rust, wydajność, SEO"
   },
   "made-with-static-site-generator": {
     "title": "Stworzone statycznym generatorem — Sebastien Rousseau",
     "subtitle": "Proszę odkryć, jak korzystać z generatora stron statycznych nowej generacji.",
-    "description": "Ta strona została wygenerowana w Shokunin, szybkim generatorze stron statycznych napisanym w Rust.",
-    "keywords": "Shokunin, generator stron statycznych, Rust, wydajność"
+    "description": "Ta strona została wygenerowana w Static Site Generator, szybkim generatorze stron statycznych napisanym w Rust.",
+    "keywords": "Static Site Generator, generator stron statycznych, Rust, wydajność"
   },
   "offline": {
     "title": "Offline — Sebastien Rousseau",

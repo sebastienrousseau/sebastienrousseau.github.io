@@ -30,17 +30,17 @@
     "description": "Свяжитесь с Sebastien Rousseau по вопросам консалтинга в области трансформации платежей, миграции на ISO 20022 или постквантовой стратегии.",
     "keywords": "контакты, консалтинг, платежи, ISO 20022, постквантовая криптография"
   },
-  "made-with-shokunin": {
-    "title": "Сделано с Shokunin — Sebastien Rousseau",
+  "made-with-static-site-generator": {
+    "title": "Сделано с Static Site Generator — Sebastien Rousseau",
     "subtitle": "Узнайте, как использовать статический генератор сайтов нового поколения.",
-    "description": "Этот сайт сделан с помощью Shokunin — статического генератора сайтов на Rust, оптимизированного для производительности и SEO.",
-    "keywords": "Shokunin, SSG, Rust, производительность, SEO"
+    "description": "Этот сайт сделан с помощью Static Site Generator — статического генератора сайтов на Rust, оптимизированного для производительности и SEO.",
+    "keywords": "Static Site Generator, SSG, Rust, производительность, SEO"
   },
   "made-with-static-site-generator": {
     "title": "Сделано со Static Site Generator — Sebastien Rousseau",
     "subtitle": "Узнайте, как использовать статический генератор сайтов нового поколения.",
-    "description": "Этот сайт создан с помощью Shokunin — быстрого статического генератора сайтов, написанного на Rust.",
-    "keywords": "Shokunin, статический генератор сайтов, Rust, производительность"
+    "description": "Этот сайт создан с помощью Static Site Generator — быстрого статического генератора сайтов, написанного на Rust.",
+    "keywords": "Static Site Generator, статический генератор сайтов, Rust, производительность"
   },
   "offline": {
     "title": "Нет соединения — Sebastien Rousseau",

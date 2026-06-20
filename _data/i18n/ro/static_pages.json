@@ -35,18 +35,18 @@
     "keywords": "contact, consulting, payments, ISO 20022, post-quantum cryptography",
     "_draft": true
   },
-  "made-with-shokunin": {
-    "title": "Made with Shokunin — Sebastien Rousseau",
+  "made-with-static-site-generator": {
+    "title": "Made with Static Site Generator — Sebastien Rousseau",
     "subtitle": "Discover the next-generation static site generator.",
-    "description": "This site is made with Shokunin, a Rust-based static site generator optimised for performance and SEO.",
-    "keywords": "Shokunin, SSG, Rust, performance, SEO",
+    "description": "This site is made with Static Site Generator, a Rust-based static site generator optimised for performance and SEO.",
+    "keywords": "Static Site Generator, SSG, Rust, performance, SEO",
     "_draft": true
   },
   "made-with-static-site-generator": {
     "title": "Made with Static Site Generator — Sebastien Rousseau",
     "subtitle": "Discover the next-generation static site generator.",
-    "description": "This site is generated with Shokunin, a fast Rust-based static site generator.",
-    "keywords": "Shokunin, static site generator, Rust, performance",
+    "description": "This site is generated with Static Site Generator, a fast Rust-based static site generator.",
+    "keywords": "Static Site Generator, static site generator, Rust, performance",
     "_draft": true
   },
   "offline": {

@@ -2,13 +2,13 @@
 
 > Last Updated: June 4, 2026
 
-Every dated article on this Shokunin static site is signed using Sigstore, and this runbook explains how to setup, use, and check these signatures.
+Every dated article on this Static Site Generator static site is signed using Sigstore, and this runbook explains how to setup, use, and check these signatures.
 
 The signing pass — `scripts/security/sigstore_sign.py` — is wired into the build script. It is a no-op until `_data/sigstore/config.json` exists, which means the build stays green for any writer without a key setup. Signatures only get made on the machine that holds the private key.
 
 ## Why sign content
 
-Signatures check the truth and safety of published articles across the Sebastien Rousseau web platform, which is built on the Shokunin static site generator.
+Signatures check the truth and safety of published articles across the Sebastien Rousseau web platform, which is built on the Static Site Generator static site generator.
 
 - **Tamper proof.** A reader can prove that the files they got are the files the author signed, protecting against edge server changes.
 - **Source proof.** The signature ties the article to an identity, which helps when AI search engines or web crawlers read your articles.
@@ -91,7 +91,7 @@ The output should confirm the signature, but if the content was changed after si
 
 ## Operational notes
 
-Operational steps for the Shokunin static site generator define how signatures are managed during automated builds.
+Operational steps for the Static Site Generator static site generator define how signatures are managed during automated builds.
 
 - **Re-signing on rebuild is expected.** Every full build re-renders every page, which produces fresh files and new signatures.
 - **Footer link.** The site footer carries a check link, which points users to the main explanation page.

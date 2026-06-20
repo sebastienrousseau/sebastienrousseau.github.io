@@ -205,6 +205,47 @@ import { tryMCP } from './mcp.js';
 // Fly. Falls back to client-side window.print() when 503.
 import { tryPDF } from './pdf-proxy.js';
 
+// Permanent slug redirects shipped with the Shokunin → Static Site
+// Generator rebrand. Returns a 301 Response when the URL matches the
+// rename patterns, or null when it doesn't. Preserves SEO continuity
+// for incoming links that still point at the old slugs.
+//
+// Two pattern families are handled:
+//   * 2023-10-09 article: ``/(<lang>/)?2023-10-09-shokunin-<rest>``
+//     redirects to the same path with the ``shokunin-`` segment
+//     dropped (matches the rename in PR #N).
+//   * ``made-with-shokunin`` credit page + its 27 localized slug
+//     variants (each suffixed with ``-shokunin``) redirect to the
+//     ``-static-site-generator`` equivalent.
+export function trySlugRedirects(url) {
+  const path = url.pathname;
+  // 2023-10-09 article rename — strip the literal ``shokunin-`` token
+  // that follows the date in every locale's filename.
+  const ARTICLE_RE = /^(\/(?:[a-z]{2}(?:-[a-z]+)?\/)?)2023-10-09-shokunin-/;
+  if (ARTICLE_RE.test(path)) {
+    const redirected = new URL(url);
+    redirected.pathname = path.replace("2023-10-09-shokunin-", "2023-10-09-");
+    return Response.redirect(redirected.toString(), 301);
+  }
+  // ``made-with-shokunin`` (EN) and any localized variant ending in
+  // ``-shokunin`` or ``-shokunin/`` (e.g. ``concu-avec-shokunin``,
+  // ``gemaakt-met-shokunin``, ``hecho-con-shokunin``) redirect to
+  // the ``-static-site-generator`` form.
+  if (path === "/made-with-shokunin" || path === "/made-with-shokunin/") {
+    const redirected = new URL(url);
+    redirected.pathname = "/made-with-static-site-generator/";
+    return Response.redirect(redirected.toString(), 301);
+  }
+  const LOCALE_CREDIT_RE = /^(\/[a-z]{2}(?:-[a-z]+)?\/)([^/]+)-shokunin\/?$/;
+  const m = path.match(LOCALE_CREDIT_RE);
+  if (m) {
+    const redirected = new URL(url);
+    redirected.pathname = `${m[1]}${m[2]}-static-site-generator/`;
+    return Response.redirect(redirected.toString(), 301);
+  }
+  return null;
+}
+
 export default {
   async fetch(request, env, ctx) {
     const url = new URL(request.url);
@@ -221,6 +262,13 @@ export default {
     // Edge cached immutable for 24h.
     const pdfResponse = await tryPDF(request);
     if (pdfResponse) return pdfResponse;
+    // Permanent slug redirects from the Shokunin → Static Site
+    // Generator rebrand. Runs before locale routing so the redirect
+    // target hits the language flow on the new path.
+    const renameRedirect = trySlugRedirects(url);
+    if (renameRedirect) {
+      return withSecurityHeaders(renameRedirect, request);
+    }
 
     // Only act on GET / HEAD page navigation; everything else still gets
     // security headers via the pass-through wrapper.

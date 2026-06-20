@@ -30,17 +30,17 @@
     "description": "भुगतान-रूपांतरण परामर्श, ISO 20022 माइग्रेशन या पोस्ट-क्वांटम रणनीति के लिए Sebastien Rousseau से संपर्क करें।",
     "keywords": "संपर्क, परामर्श, भुगतान, ISO 20022, पोस्ट-क्वांटम क्रिप्टोग्राफी"
   },
-  "made-with-shokunin": {
-    "title": "Shokunin से बनाया गया — Sebastien Rousseau",
+  "made-with-static-site-generator": {
+    "title": "Static Site Generator से बनाया गया — Sebastien Rousseau",
     "subtitle": "अगली पीढ़ी के स्टैटिक-साइट जेनरेटर का उपयोग करना सीखें।",
-    "description": "यह साइट Shokunin से बनी है — प्रदर्शन और SEO के लिए अनुकूलित Rust-आधारित स्टैटिक-साइट जेनरेटर।",
-    "keywords": "Shokunin, SSG, Rust, प्रदर्शन, SEO"
+    "description": "यह साइट Static Site Generator से बनी है — प्रदर्शन और SEO के लिए अनुकूलित Rust-आधारित स्टैटिक-साइट जेनरेटर।",
+    "keywords": "Static Site Generator, SSG, Rust, प्रदर्शन, SEO"
   },
   "made-with-static-site-generator": {
     "title": "Static Site Generator से बनाया गया — Sebastien Rousseau",
     "subtitle": "अगली पीढ़ी के स्टैटिक-साइट जेनरेटर का उपयोग करना सीखें।",
-    "description": "यह साइट Shokunin से जेनरेट होती है — Rust में लिखा गया एक तेज़ स्टैटिक-साइट जेनरेटर।",
-    "keywords": "Shokunin, स्टैटिक-साइट जेनरेटर, Rust, प्रदर्शन"
+    "description": "यह साइट Static Site Generator से जेनरेट होती है — Rust में लिखा गया एक तेज़ स्टैटिक-साइट जेनरेटर।",
+    "keywords": "Static Site Generator, स्टैटिक-साइट जेनरेटर, Rust, प्रदर्शन"
   },
   "offline": {
     "title": "ऑफ़लाइन — Sebastien Rousseau",

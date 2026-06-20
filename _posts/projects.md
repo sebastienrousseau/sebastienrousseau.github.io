@@ -108,15 +108,15 @@ site_software: "Static Site Generator, Rust"
 
 <section class="proof-rail projects-proof" aria-label="Open source by the numbers">
 <div class="kpi-cell">
-  <span class="kpi-cell-value">168k</span>
+  <span class="kpi-cell-value">169k</span>
   <span class="kpi-cell-label">Open-source downloads</span>
 </div>
 <div class="kpi-cell">
-  <span class="kpi-cell-value">677</span>
+  <span class="kpi-cell-value">676</span>
   <span class="kpi-cell-label">GitHub stars</span>
 </div>
 <div class="kpi-cell">
-  <span class="kpi-cell-value">73</span>
+  <span class="kpi-cell-value">75</span>
   <span class="kpi-cell-label">Sigstore-signed articles</span>
 </div>
 <div class="kpi-cell">
@@ -291,7 +291,7 @@ site_software: "Static Site Generator, Rust"
 
 <article class="newsroom-card">
 <a class="newsroom-card-media logo" href="https://github.com/sebastienrousseau/static-site-generator" title="Static Site Generator">
-<img alt="Banner for the Static Site Generator" src="https://cloudcdn.pro/clients/shokunin/v1/logos/shokunin.svg" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Banner for the Static Site Generator" src="https://cloudcdn.pro/clients/static-site-generator/v1/logos/static-site-generator.svg" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Rust · SSG</span>

@@ -141,7 +141,7 @@ CATEGORIES = [
             P(
                 "Rust · SSG",
                 "Static Site Generator",
-                "https://cloudcdn.pro/clients/shokunin/v1/logos/shokunin.svg",
+                "https://cloudcdn.pro/clients/static-site-generator/v1/logos/static-site-generator.svg",
                 "Banner for the Static Site Generator",
                 "A secure-by-default static site generator in Rust. WCAG AAA validation, CSP/SRI hardening, local LLM content pipeline, WebAssembly target, and 28-locale i18n.",
                 "https://github.com/sebastienrousseau/static-site-generator",

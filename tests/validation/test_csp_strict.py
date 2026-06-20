@@ -35,7 +35,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 PUBLIC = ROOT / "public"
 
-# Two orderings of the meta tag's attributes — Shokunin's minifier emits
+# Two orderings of the meta tag's attributes — Static Site Generator's minifier emits
 # `content` either before or after `http-equiv` depending on page kind.
 _CSP_META_RE_HTTP_FIRST = re.compile(
     r'<meta\b[^>]*?http-equiv=["\']?Content-Security-Policy["\']?[^>]*?'
@@ -52,7 +52,7 @@ _CSP_META_RE_CONTENT_FIRST = re.compile(
 def _extract_csp(html: str) -> str | None:
     """Pull the CSP content string out of the meta tag, tolerating the
     fact that the value itself contains apostrophes (`'self'`, `'none'`,
-    `'unsafe-…'`) and that Shokunin's minifier may swap the
+    `'unsafe-…'`) and that Static Site Generator's minifier may swap the
     attribute order. We match the opening quote with a backreference so
     inner apostrophes aren't mistaken for the closing quote."""
     m = _CSP_META_RE_HTTP_FIRST.search(html) or _CSP_META_RE_CONTENT_FIRST.search(html)

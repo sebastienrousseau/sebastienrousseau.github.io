@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Emit per-language XML + JSON Feed 1.1 feeds under ``public/<lang>/``.
 
-Shokunin's main ``rss.xml`` / ``atom.xml`` / ``news-sitemap.xml`` only
+Static Site Generator's main ``rss.xml`` / ``atom.xml`` / ``news-sitemap.xml`` only
 cover the English ``_posts/*.md``. This script mirrors the same shape
 for every non-English language whose ``active=True`` Language entry
 lives in :mod:`_lang_registry`, so feed readers and Google News see
@@ -130,7 +130,7 @@ def _parse_date_localised(s: str) -> datetime | None:
 
 def parse_date(s: str) -> datetime:
     """Parse a frontmatter date string ('October 26, 2023' or '2023-10-26')
-    to a tz-aware UTC datetime at 06:06:06 (mirrors Shokunin's RSS time)."""
+    to a tz-aware UTC datetime at 06:06:06 (mirrors Static Site Generator's RSS time)."""
     s = (s or "").strip()
     d = (_parse_date_strptime(s) or _parse_date_localised(s)) if s else None
     if d is None:

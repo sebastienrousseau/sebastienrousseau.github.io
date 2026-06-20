@@ -77,7 +77,7 @@ def test_write_llms_ctx_txt_writes_when_changed(tmp_path):
 
 # ---------------------------------------------------------------------------
 # write_humans + write_security_txt — copy-through emitters that survive
-# Shokunin's empty-placeholder auxiliary files.
+# Static Site Generator's empty-placeholder auxiliary files.
 # ---------------------------------------------------------------------------
 
 
@@ -91,7 +91,7 @@ def test_write_humans_copies_source_into_public(tmp_path):
     public.mkdir()
     body = "/* TEAM */\n  Author: Sebastien Rousseau\n"
     (source_root / "humans.txt").write_text(body, encoding="utf-8")
-    # Empty placeholder, as Shokunin would emit.
+    # Empty placeholder, as Static Site Generator would emit.
     (public / "humans.txt").write_text("", encoding="utf-8")
 
     assert write_humans(public, source_root) is True

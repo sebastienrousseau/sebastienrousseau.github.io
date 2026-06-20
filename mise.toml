@@ -16,7 +16,7 @@ rust   = "stable"
 "npm:pa11y-ci"    = "3"
 "npm:http-server" = "14"
 
-# ssg (Shokunin) is installed from crates.io rather than via mise.
+# ssg (Static Site Generator) is installed from crates.io rather than via mise.
 # It tracks the latest published version on crates.io — keep here
 # documented for reproducibility, not for `mise install` to act on.
 #

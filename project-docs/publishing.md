@@ -3,7 +3,7 @@
 > Last Updated: June 4, 2026
 
 This guide explains how an article moves from a local Markdown file to a live page in twenty-eight languages.
-We use the Shokunin static site generator and automated postbuild scripts to compile the pages for the Sebastien Rousseau web platform.
+We use the Static Site Generator static site generator and automated postbuild scripts to compile the pages for the Sebastien Rousseau web platform.
 
 ## Contents
 
@@ -35,7 +35,7 @@ You must install Rust, python, and the site generator before you can build and p
 We also use git for commit signing and a local terminal assistant for translations.
 
 - Python: version 3.11 or higher
-- Rust: cargo packages with the Shokunin site builder
+- Rust: cargo packages with the Static Site Generator site builder
 - WASM: compiler tools for the lab pages
 - Git: signing keys loaded in your local agent
 - Client: terminal window to run local commands

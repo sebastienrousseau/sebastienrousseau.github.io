@@ -30,17 +30,17 @@
     "description": "Professional contact form para kay Sebastien Rousseau: consulting, mga usapan, mga kolaborasyon.",
     "keywords": "contact, Sebastien Rousseau, consulting, mga usapan"
   },
-  "made-with-shokunin": {
-    "title": "Ginawa sa Shokunin — Sebastien Rousseau",
-    "subtitle": "Ang site na ito ay ginawa sa Shokunin static site generator, nakasulat sa Rust.",
-    "description": "Ang site na ito ay ginawa sa Shokunin, isang mabilis at secure na static site generator sa Rust.",
-    "keywords": "Shokunin, static site generator, Rust, SSG"
+  "made-with-static-site-generator": {
+    "title": "Ginawa sa Static Site Generator — Sebastien Rousseau",
+    "subtitle": "Ang site na ito ay ginawa sa Static Site Generator static site generator, nakasulat sa Rust.",
+    "description": "Ang site na ito ay ginawa sa Static Site Generator, isang mabilis at secure na static site generator sa Rust.",
+    "keywords": "Static Site Generator, static site generator, Rust, SSG"
   },
   "made-with-static-site-generator": {
     "title": "Ginawa sa Static Site Generator — Sebastien Rousseau",
-    "subtitle": "Ang site na ito ay ginawa sa Shokunin static site generator sa Rust.",
-    "description": "Ang site na ito ay ginawa sa Shokunin, isang static site generator sa Rust.",
-    "keywords": "static site generator, Shokunin, Rust"
+    "subtitle": "Ang site na ito ay ginawa sa Static Site Generator static site generator sa Rust.",
+    "description": "Ang site na ito ay ginawa sa Static Site Generator, isang static site generator sa Rust.",
+    "keywords": "static site generator, Static Site Generator, Rust"
   },
   "offline": {
     "title": "Offline ka — Sebastien Rousseau",

@@ -57,14 +57,14 @@
   "made-with-static-site-generator": {
     "title": "Dibuat dengan Static Site Generator — Sebastien Rousseau",
     "subtitle": "Découvrez comment utiliser le générateur de sites statiques de nouvelle génération.",
-    "description": "Ce site est généré avec Shokunin, un générateur de sites statiques rapide écrit en Rust.",
-    "keywords": "Shokunin, générateur de sites statiques, Rust, performance"
+    "description": "Ce site est généré avec Static Site Generator, un générateur de sites statiques rapide écrit en Rust.",
+    "keywords": "Static Site Generator, générateur de sites statiques, Rust, performance"
   },
-  "made-with-shokunin": {
-    "title": "Dibuat dengan Shokunin — Sebastien Rousseau",
+  "made-with-static-site-generator": {
+    "title": "Dibuat dengan Static Site Generator — Sebastien Rousseau",
     "subtitle": "Découvrez comment utiliser le générateur de sites statiques de nouvelle génération.",
-    "description": "Ce site est conçu avec Shokunin, un générateur de sites statiques en Rust optimisé pour la performance et le SEO.",
-    "keywords": "Shokunin, SSG, Rust, performance, SEO"
+    "description": "Ce site est conçu avec Static Site Generator, un générateur de sites statiques en Rust optimisé pour la performance et le SEO.",
+    "keywords": "Static Site Generator, SSG, Rust, performance, SEO"
   },
   "playlists": {
     "title": "Daftar putar — Sebastien Rousseau",

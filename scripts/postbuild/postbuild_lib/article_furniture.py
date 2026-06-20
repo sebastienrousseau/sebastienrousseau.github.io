@@ -999,7 +999,7 @@ def inject_footnotes(html: str) -> str:
     ``[^n]: …`` at the article foot) into HTML: each in-text marker
     becomes a numbered ``<sup><a>`` link, and the collected definitions
     surface as a ``<section class="footnotes">`` block immediately
-    inside the wrap-div close. Shokunin SSG doesn't expand footnotes,
+    inside the wrap-div close. Static Site Generator (SSG) doesn't expand footnotes,
     so we do it at postbuild. BlogPosting pages only; idempotent."""
     if '"@type":"BlogPosting"' not in html:
         return html

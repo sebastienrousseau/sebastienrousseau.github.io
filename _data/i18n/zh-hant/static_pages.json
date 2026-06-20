@@ -30,17 +30,17 @@
     "description": "聯絡 Sebastien Rousseau，諮詢支付轉型、ISO 20022 遷移或後量子戰略。",
     "keywords": "聯絡, 諮詢, 支付, ISO 20022, 後量子密碼學"
   },
-  "made-with-shokunin": {
-    "title": "使用 Shokunin 構建 — Sebastien Rousseau",
+  "made-with-static-site-generator": {
+    "title": "使用 Static Site Generator 構建 — Sebastien Rousseau",
     "subtitle": "瞭解如何使用新一代靜態站點生成器。",
-    "description": "本站使用 Shokunin 構建——一款針對效能和 SEO 最佳化的 Rust 靜態站點生成器。",
-    "keywords": "Shokunin, SSG, Rust, 效能, SEO"
+    "description": "本站使用 Static Site Generator 構建——一款針對效能和 SEO 最佳化的 Rust 靜態站點生成器。",
+    "keywords": "Static Site Generator, SSG, Rust, 效能, SEO"
   },
   "made-with-static-site-generator": {
     "title": "使用 Static Site Generator 構建 — Sebastien Rousseau",
     "subtitle": "瞭解如何使用新一代靜態站點生成器。",
-    "description": "本站由 Shokunin 生成——一款用 Rust 編寫的高速靜態站點生成器。",
-    "keywords": "Shokunin, 靜態站點生成器, Rust, 效能"
+    "description": "本站由 Static Site Generator 生成——一款用 Rust 編寫的高速靜態站點生成器。",
+    "keywords": "Static Site Generator, 靜態站點生成器, Rust, 效能"
   },
   "offline": {
     "title": "離線 — Sebastien Rousseau",

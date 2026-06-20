@@ -57,14 +57,14 @@
   "made-with-static-site-generator": {
     "title": "Gemaakt met Static Site Generator — Sebastien Rousseau",
     "subtitle": "Ontdek de statische sitegenerator van de volgende generatie.",
-    "description": "Deze website wordt gegenereerd met Shokunin, een snelle statische sitegenerator geschreven in Rust.",
-    "keywords": "Shokunin, statische sitegenerator, Rust, prestaties"
+    "description": "Deze website wordt gegenereerd met Static Site Generator, een snelle statische sitegenerator geschreven in Rust.",
+    "keywords": "Static Site Generator, statische sitegenerator, Rust, prestaties"
   },
-  "made-with-shokunin": {
-    "title": "Gemaakt met Shokunin — Sebastien Rousseau",
+  "made-with-static-site-generator": {
+    "title": "Gemaakt met Static Site Generator — Sebastien Rousseau",
     "subtitle": "Ontdek de statische sitegenerator van de volgende generatie.",
-    "description": "Deze website is gemaakt met Shokunin, een statische sitegenerator in Rust, geoptimaliseerd voor prestaties en SEO.",
-    "keywords": "Shokunin, SSG, Rust, prestaties, SEO"
+    "description": "Deze website is gemaakt met Static Site Generator, een statische sitegenerator in Rust, geoptimaliseerd voor prestaties en SEO.",
+    "keywords": "Static Site Generator, SSG, Rust, prestaties, SEO"
   },
   "playlists": {
     "title": "Afspeellijsten — Sebastien Rousseau",

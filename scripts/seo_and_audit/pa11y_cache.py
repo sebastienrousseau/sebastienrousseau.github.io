@@ -226,11 +226,10 @@ def page_is_spotify_iframe(html: str) -> bool:
 # generate them. Skipping them costs nothing and trims the sweep.
 _ZERO_VALUE_RELPATHS: frozenset[str] = frozenset(
     {
-        # Credit pages for the SSG (Static Site Generator) and the
-        # Shokunin theme — single short paragraph plus the standard
-        # site chrome. Whatever a11y signal they carry is already
-        # exercised on every other page in the site.
-        "made-with-shokunin/index.html",
+        # Credit page for the Static Site Generator — single short
+        # paragraph plus the standard site chrome. Whatever a11y
+        # signal it carries is already exercised on every other page
+        # in the site, so pa11y can skip it.
         "made-with-static-site-generator/index.html",
     }
 )
