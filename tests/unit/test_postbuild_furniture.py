@@ -2669,9 +2669,9 @@ def test_inject_syndication_panel_emits_medium_mastodon_linkedin_payloads():
     # blocks, with the canonical URL last so the link card preview
     # renders on Mastodon.
     assert "https://sebastienrousseau.com/2026-01-01-my-post/" in out
-    # LinkedIn block contains the CC-BY footer and the first-comment note.
-    assert "Licensed under CC-BY-4.0" in out
-    assert "[Link to the full piece in the first comment]" in out
+    # LinkedIn block contains the URL arrow link and CC-BY attribution.
+    assert "→ https://sebastienrousseau.com/2026-01-01-my-post/" in out
+    assert "Sebastien Rousseau | CC-BY-4.0" in out
 
 
 def test_inject_syndication_panel_idempotent():

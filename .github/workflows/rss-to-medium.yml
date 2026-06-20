@@ -1,0 +1,65 @@
+name: rss-to-medium
+
+# Runs after every push to main (site deploy) and daily at 08:00 UTC
+# as a safety net for any push that landed outside business hours.
+#
+# Prerequisites:
+#   1. Go to medium.com → Settings → Integration Tokens → generate a token
+#   2. Add it as a repository secret named MEDIUM_TOKEN
+#      (GitHub repo → Settings → Secrets and variables → Actions → New secret)
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: '0 8 * * *'
+  workflow_dispatch:
+
+concurrency:
+  group: rss-to-medium
+  cancel-in-progress: false
+
+permissions:
+  contents: write   # needed to commit the updated state file
+
+jobs:
+  draft:
+    runs-on: ubuntu-latest
+    # Skip entirely if the secret is not configured yet
+    if: ${{ secrets.MEDIUM_TOKEN != '' }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Restore Medium state cache
+        uses: actions/cache@v4
+        with:
+          path: .github/medium-state.json
+          key: medium-state-${{ github.run_id }}
+          restore-keys: medium-state-
+
+      - name: Build site
+        run: ./build.sh
+        env:
+          # Sigstore signing is not available in CI — skip it cleanly
+          SIGSTORE_SKIP: '1'
+
+      - name: Draft new articles on Medium
+        env:
+          MEDIUM_TOKEN: ${{ secrets.MEDIUM_TOKEN }}
+        run: python3 scripts/rss_to_medium.py
+
+      - name: Commit updated state
+        run: |
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git add .github/medium-state.json || true
+          git diff --cached --quiet && echo "state unchanged" && exit 0
+          git commit -m "chore(medium): update draft state [skip ci]"
+          git push

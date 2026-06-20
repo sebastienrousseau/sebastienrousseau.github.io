@@ -829,27 +829,15 @@ def _generate_linkedin_post(
         "What is your organisation's approach to the challenges outlined in this piece?",
     )
 
-    # Attribution footer
-    footer = (
-        f"Originally published at {url} by Sebastien Rousseau. "
-        "Licensed under CC-BY-4.0."
-    )
-
     hashtags = " ".join(_keywords_to_hashtags(html))
 
     parts: list[str] = [title, "", opening]
     if takeaways:
         parts += ["", intro, "", bullets]
-    parts += [
-        "",
-        question,
-        "",
-        "[Link to the full piece in the first comment]",
-        "",
-        footer,
-    ]
+    parts += ["", question, "", f"→ {url}"]
     if hashtags:
         parts += ["", hashtags]
+    parts += ["", f"Sebastien Rousseau | CC-BY-4.0"]
     return "\n".join(parts)
 
 
