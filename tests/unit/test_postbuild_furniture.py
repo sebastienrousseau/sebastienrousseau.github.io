@@ -2687,6 +2687,109 @@ def test_inject_syndication_panel_no_op_without_blogposting():
     assert inject_syndication_panel("<p>plain</p>") == "<p>plain</p>"
 
 
+# LinkedIn helper coverage ---------------------------------------------------
+
+
+def test_strip_html_tags_removes_markup_and_unescapes():
+    from postbuild_lib.article_furniture import _strip_html_tags
+
+    assert _strip_html_tags("<strong>Bold</strong> &amp; plain") == "Bold & plain"
+
+
+def test_extract_lead_takeaways_text_returns_plain_bullets():
+    from postbuild_lib.article_furniture import _extract_lead_takeaways_text
+
+    html = (
+        '<ul class="post-lead-takeaways">'
+        "<li><strong>First point.</strong> Extra detail.</li>"
+        "<li>Second point.</li>"
+        "</ul>"
+    )
+    items = _extract_lead_takeaways_text(html)
+    assert len(items) == 2
+    assert "First point." in items[0]
+    assert items[1] == "Second point."
+
+
+def test_extract_lead_takeaways_text_empty_when_no_list():
+    from postbuild_lib.article_furniture import _extract_lead_takeaways_text
+
+    assert _extract_lead_takeaways_text("<p>no list here</p>") == []
+
+
+def test_extract_body_question_finds_first_question_paragraph():
+    from postbuild_lib.article_furniture import _extract_body_question
+
+    # Paragraph must be 50-300 chars and end with ?
+    question = "How should financial institutions approach post-quantum migration in their payment stacks?"
+    html = f"<p>Some background statement about the topic.</p><p>{question}</p>"
+    assert _extract_body_question(html) == question
+
+
+def test_keywords_to_hashtags_skips_empty_segments():
+    from postbuild_lib.article_furniture import _keywords_to_hashtags
+
+    # Double-comma produces an empty segment that must be skipped (line 785)
+    html = (
+        '{"@type":"BlogPosting","keywords":"post-quantum,, payments"}'
+    )
+    result = _keywords_to_hashtags(html)
+    assert "#PostQuantum" in result
+    assert "#Payments" in result
+    assert "" not in result
+
+
+def test_keywords_to_hashtags_caps_at_max_n():
+    from postbuild_lib.article_furniture import _keywords_to_hashtags
+
+    # 7 distinct keywords → must stop at max_n=5 (line 792 break)
+    html = (
+        '{"@type":"BlogPosting",'
+        '"keywords":"alpha,beta,gamma,delta,epsilon,zeta,eta"}'
+    )
+    result = _keywords_to_hashtags(html)
+    assert len(result) == 5
+
+
+def test_generate_linkedin_post_merges_two_sentences_and_includes_takeaways():
+    from postbuild_lib.article_furniture import inject_syndication_panel
+
+    # Description with two short sentences (lines 816-818)
+    two_sentence_desc = (
+        "First sentence about the topic. "
+        "Second sentence that adds context."
+    )
+    head = (
+        '<link rel="canonical" href="https://sebastienrousseau.com/2026-01-01-my-post/">'
+        '<meta property="og:title" content="My Post: A Subtitle">'
+        f'<meta name="description" content="{two_sentence_desc}">'
+        '<meta name="keywords" content="AI, payments">'
+        '<script type="application/ld+json">'
+        '{"@type":"BlogPosting","keywords":"AI, payments"}'
+        "</script>"
+    )
+    # Body with a takeaways list (line 836) and a question paragraph
+    question = "How should financial institutions approach post-quantum migration in core payment systems?"
+    body = (
+        '<section class="ap-hero"><h1>My Post</h1></section>'
+        '<main id="main" class="content ap-section"><div class="wrap">'
+        '<ul class="post-lead-takeaways">'
+        "<li>First takeaway point for banks.</li>"
+        "<li>Second takeaway point for fintechs.</li>"
+        "</ul>"
+        f"<p>{question}</p>"
+        "</div></main>"
+    )
+    out = inject_syndication_panel(f'<html lang="en-GB"><head>{head}</head><body>{body}</body></html>')
+    # Two-sentence opening
+    assert "First sentence about the topic. Second sentence that adds context." in out
+    # Takeaway bullets present (line 836 branch)
+    assert "- First takeaway point for banks." in out
+    assert "- Second takeaway point for fintechs." in out
+    # Engagement question from body
+    assert question in out
+
+
 def test_inject_reuse_panel_respects_license_meta_override():
     from postbuild_lib.article_furniture import inject_reuse_panel
 
