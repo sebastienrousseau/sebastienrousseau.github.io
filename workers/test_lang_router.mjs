@@ -18,6 +18,10 @@ import handler, {
   isPageNavigation,
   getCookie,
   ACTIVE_LANGS,
+  ACTIVE_LANGS_FALLBACK,
+  getActiveLangs,
+  _resetActiveLangsCache,
+  recordRedirect,
   buildCspHeader,
   withSecurityHeaders,
   CSP_DIRECTIVES,
@@ -180,6 +184,159 @@ test('ACTIVE_LANGS includes the 27 site languages', () => {
   for (const l of ['fr', 'pt-br', 'zh-hans', 'zh-hant', 'fil', 'uk', 'yo']) {
     assert.ok(ACTIVE_LANGS.has(l), `expected ${l} in ACTIVE_LANGS`);
   }
+});
+
+test('ACTIVE_LANGS_FALLBACK is the same Set as ACTIVE_LANGS', () => {
+  assert.equal(ACTIVE_LANGS, ACTIVE_LANGS_FALLBACK);
+});
+
+// ---------------------------------------------------------------------------
+// getActiveLangs — ASSETS-binding-aware lookup with fallback
+// ---------------------------------------------------------------------------
+
+test('getActiveLangs: no env → fallback set', async () => {
+  _resetActiveLangsCache();
+  const set = await getActiveLangs(undefined);
+  assert.ok(set.has('fr'));
+  assert.ok(set.has('zh-hans'));
+});
+
+test('getActiveLangs: env without ASSETS → fallback set', async () => {
+  _resetActiveLangsCache();
+  const set = await getActiveLangs({});
+  assert.ok(set.has('fr'));
+});
+
+test('getActiveLangs: ASSETS returns valid payload → uses loaded set', async () => {
+  _resetActiveLangsCache();
+  const env = {
+    ASSETS: {
+      fetch: async () => new Response(JSON.stringify({
+        version: 1, active: ['en', 'fr', 'kl'],
+      }), { status: 200, headers: { 'content-type': 'application/json' } }),
+    },
+  };
+  const set = await getActiveLangs(env);
+  assert.ok(set.has('fr'));
+  assert.ok(set.has('kl'), 'loaded set should include the test locale');
+  assert.ok(!set.has('en'), 'EN is excluded from active subtrees');
+});
+
+test('getActiveLangs: cached after first hydration', async () => {
+  _resetActiveLangsCache();
+  let calls = 0;
+  const env = {
+    ASSETS: {
+      fetch: async () => {
+        calls += 1;
+        return new Response(JSON.stringify({ active: ['fr'] }), { status: 200 });
+      },
+    },
+  };
+  await getActiveLangs(env);
+  await getActiveLangs(env);
+  assert.equal(calls, 1);
+});
+
+test('getActiveLangs: ASSETS fetch throws → falls back', async () => {
+  _resetActiveLangsCache();
+  const env = { ASSETS: { fetch: async () => { throw new Error('binding down'); } } };
+  const set = await getActiveLangs(env);
+  assert.equal(set, ACTIVE_LANGS_FALLBACK);
+});
+
+test('getActiveLangs: ASSETS returns non-ok → falls back', async () => {
+  _resetActiveLangsCache();
+  const env = { ASSETS: { fetch: async () => new Response('not found', { status: 404 }) } };
+  const set = await getActiveLangs(env);
+  assert.equal(set, ACTIVE_LANGS_FALLBACK);
+});
+
+test('getActiveLangs: ASSETS payload missing active array → falls back', async () => {
+  _resetActiveLangsCache();
+  const env = {
+    ASSETS: { fetch: async () => new Response(JSON.stringify({ version: 1 }), { status: 200 }) },
+  };
+  const set = await getActiveLangs(env);
+  assert.equal(set, ACTIVE_LANGS_FALLBACK);
+});
+
+test('getActiveLangs: ASSETS payload with empty active → falls back', async () => {
+  _resetActiveLangsCache();
+  const env = {
+    ASSETS: { fetch: async () => new Response(JSON.stringify({ active: [] }), { status: 200 }) },
+  };
+  const set = await getActiveLangs(env);
+  assert.equal(set, ACTIVE_LANGS_FALLBACK);
+});
+
+test('getActiveLangs: env.ASSETS.fetch not a function → falls back', async () => {
+  _resetActiveLangsCache();
+  const env = { ASSETS: { fetch: 'oops' } };
+  const set = await getActiveLangs(env);
+  assert.equal(set, ACTIVE_LANGS_FALLBACK);
+});
+
+test('getActiveLangs: ASSETS.fetch returns falsy → falls back', async () => {
+  _resetActiveLangsCache();
+  const env = { ASSETS: { fetch: async () => null } };
+  const set = await getActiveLangs(env);
+  assert.equal(set, ACTIVE_LANGS_FALLBACK);
+});
+
+// ---------------------------------------------------------------------------
+// recordRedirect — Analytics Engine telemetry, fire-and-forget
+// ---------------------------------------------------------------------------
+
+test('recordRedirect: no env.AE → no-op (no throw)', () => {
+  assert.doesNotThrow(() => recordRedirect(new Request('https://x/'), {}, { waitUntil: () => {} }, 'en', 'fr'));
+});
+
+test('recordRedirect: no ctx.waitUntil → no-op (no throw)', () => {
+  const env = { AE: { writeDataPoint: () => { throw new Error('should not be called'); } } };
+  assert.doesNotThrow(() => recordRedirect(new Request('https://x/'), env, {}, 'en', 'fr'));
+});
+
+test('recordRedirect: AE bound + waitUntil → emits a data point', async () => {
+  const captured = [];
+  const env = { AE: { writeDataPoint: (dp) => captured.push(dp) } };
+  let pending = null;
+  const ctx = { waitUntil: (p) => { pending = p; } };
+  const req = new Request('https://sebastienrousseau.com/', {
+    cf: { country: 'FR' },
+  });
+  recordRedirect(req, env, ctx, 'en', 'fr');
+  if (pending) await pending;
+  assert.equal(captured.length, 1);
+  assert.equal(captured[0].blobs[0], 'redirect');
+  assert.equal(captured[0].blobs[2], 'en');
+  assert.equal(captured[0].blobs[3], 'fr');
+  assert.equal(captured[0].indexes[0], 'fr');
+});
+
+test('recordRedirect: AE writeDataPoint throws → swallowed', () => {
+  const env = { AE: { writeDataPoint: () => { throw new Error('boom'); } } };
+  const ctx = { waitUntil: () => {} };
+  assert.doesNotThrow(() => recordRedirect(new Request('https://x/'), env, ctx, 'en', 'fr'));
+});
+
+test('recordRedirect: null request → falls back to ?? country', () => {
+  const captured = [];
+  const env = { AE: { writeDataPoint: (dp) => captured.push(dp) } };
+  const ctx = { waitUntil: () => {} };
+  assert.doesNotThrow(() => recordRedirect(null, env, ctx, 'en', 'fr'));
+  assert.equal(captured.length, 1);
+  assert.equal(captured[0].blobs[1], '??');
+});
+
+test('recordRedirect: request.cf present but country missing → ??', () => {
+  const captured = [];
+  const env = { AE: { writeDataPoint: (dp) => captured.push(dp) } };
+  const ctx = { waitUntil: () => {} };
+  const req = new Request('https://x/');
+  Object.defineProperty(req, 'cf', { value: {} });  // cf present, country undefined
+  recordRedirect(req, env, ctx, 'en', 'fr');
+  assert.equal(captured[0].blobs[1], '??');
 });
 
 // ---------------------------------------------------------------------------

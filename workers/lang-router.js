@@ -28,6 +28,14 @@
  * Sub-50ms target — no fetches beyond the origin pass-through, no KV,
  * no compute beyond header parsing and a Headers copy.
  *
+ * Storage strategy — Cloudflare Free-tier policy:
+ *   - Active-language set ships baked-in (ACTIVE_LANGS_FALLBACK below) and
+ *     optionally hydrates from the `ASSETS` binding (worker-assets/lang-
+ *     registry.json, emitted by scripts/build_worker_assets.py).
+ *   - Locale-redirect telemetry goes to Workers Analytics Engine via the
+ *     `AE` binding when present. Never to KV — see banned anti-patterns in
+ *     project-docs/adr/0001-kv-free-tier-policy.md.
+ *
  * Deploy: Cloudflare dashboard → Workers & Pages → create application →
  * paste this file → routes:
  *     sebastienrousseau.com/*
@@ -39,14 +47,58 @@
  */
 
 // Active non-EN languages with rendered subtrees in the deployed site. Keep this list in
-// sync with `scripts/_lang_registry.py`'s `active=True` entries. If a
+// sync with `scripts/lib/_lang_registry.py`'s `active=True` entries. If a
 // language ships static pages they get routed here; otherwise the Worker
 // falls through to the EN tree.
-export const ACTIVE_LANGS = new Set([
+//
+// This is the in-code fallback. The runtime path tries to load
+// `worker-assets/lang-registry.json` via the ASSETS binding first; on miss
+// or fetch failure it falls back to this set so the Worker keeps routing
+// even when the binding is misconfigured. Hydrated once per isolate.
+export const ACTIVE_LANGS_FALLBACK = new Set([
   'ar', 'bn', 'cs', 'de', 'es', 'fil', 'fr', 'ha', 'he', 'hi', 'id',
   'it', 'ja', 'ko', 'nl', 'pl', 'pt-br', 'ro', 'ru', 'sv', 'th', 'tr',
   'uk', 'vi', 'yo', 'zh-hans', 'zh-hant',
 ]);
+// Backwards-compatible export — tests and any external caller import this
+// name. Always equals the in-code fallback; the runtime lookup uses
+// `getActiveLangs(env)` to consult ASSETS first.
+export const ACTIVE_LANGS = ACTIVE_LANGS_FALLBACK;
+
+// Per-isolate cache. Hydrated on first invocation that has env.ASSETS.
+// Wrapped in an object so tests can clear it between cases via
+// `_resetActiveLangsCache()`. Not part of the supported runtime API.
+const _runtimeCache = { activeLangs: null };
+
+export function _resetActiveLangsCache() {
+  _runtimeCache.activeLangs = null;
+}
+
+/**
+ * Return the active-language Set for this request. Tries the ASSETS
+ * binding first (deploy-time source of truth, zero KV cost); falls back
+ * to ACTIVE_LANGS_FALLBACK on miss. Cached for the isolate lifetime so
+ * subsequent requests don't re-fetch.
+ */
+export async function getActiveLangs(env) {
+  if (_runtimeCache.activeLangs) return _runtimeCache.activeLangs;
+  if (env && env.ASSETS && typeof env.ASSETS.fetch === 'function') {
+    try {
+      const res = await env.ASSETS.fetch(new Request('https://assets/lang-registry.json'));
+      if (res && res.ok) {
+        const payload = await res.json();
+        if (Array.isArray(payload.active) && payload.active.length > 0) {
+          _runtimeCache.activeLangs = new Set(payload.active.filter(c => c !== 'en'));
+          return _runtimeCache.activeLangs;
+        }
+      }
+    } catch {
+      // Swallow — fall through to baked-in fallback.
+    }
+  }
+  _runtimeCache.activeLangs = ACTIVE_LANGS_FALLBACK;
+  return _runtimeCache.activeLangs;
+}
 
 const COOKIE = 'pref-lang';
 // 30 days — long enough to be sticky, short enough to honour later changes.
@@ -192,6 +244,12 @@ export function isPageNavigation(pathname) {
   return true;
 }
 
+// WriteCoalescer Durable Object — re-exported so the COALESCER binding
+// declared in wrangler.toml resolves to this script. No caller wired yet;
+// the export is the contract the DO runtime needs to find the class.
+// See project-docs/adr/0001-kv-free-tier-policy.md §2.3.
+export { WriteCoalescer } from './write-coalescer.js';
+
 // ActivityPub routes (webfinger / actor / inbox / outbox) live in a
 // sibling module; lang-router checks them first so the Fediverse
 // endpoints take precedence over locale routing and CSP rewriting.
@@ -246,6 +304,29 @@ export function trySlugRedirects(url) {
   return null;
 }
 
+/**
+ * Emit a locale-redirect data point to Workers Analytics Engine if the
+ * `AE` binding is wired. Fire-and-forget under `ctx.waitUntil()` — never
+ * blocks the response. No-op when env.AE or ctx.waitUntil is missing
+ * (tests, local dev, unconfigured Worker). Per Free-tier policy this
+ * REPLACES any KV-based pageview counter — see
+ * project-docs/adr/0001-kv-free-tier-policy.md.
+ */
+export function recordRedirect(request, env, ctx, fromLang, toLang) {
+  if (!env || !env.AE || typeof env.AE.writeDataPoint !== 'function') return;
+  if (!ctx || typeof ctx.waitUntil !== 'function') return;
+  const country = (request && request.cf && request.cf.country) || '??';
+  try {
+    ctx.waitUntil(Promise.resolve(env.AE.writeDataPoint({
+      blobs: ['redirect', String(country), String(fromLang), String(toLang)],
+      doubles: [1],
+      indexes: [String(toLang)],
+    })));
+  } catch {
+    // AE binding is mocked or wrong shape — swallow.
+  }
+}
+
 export default {
   async fetch(request, env, ctx) {
     const url = new URL(request.url);
@@ -278,15 +359,19 @@ export default {
     if (!isPageNavigation(url.pathname)) {
       return withSecurityHeaders(await fetch(request), request);
     }
+    // Active-language set — hydrated once per isolate from the ASSETS
+    // binding when present, baked-in otherwise.
+    const activeLangs = await getActiveLangs(env);
     // Visitor has chosen — respect that choice forever (until cookie expires).
     const cookieHeader = request.headers.get('Cookie');
     const prefLang = getCookie(cookieHeader, COOKIE);
     if (prefLang === 'en') {
       return withSecurityHeaders(await fetch(request), request);
     }
-    if (prefLang && ACTIVE_LANGS.has(prefLang)) {
+    if (prefLang && activeLangs.has(prefLang)) {
       const redirected = new URL(url);
       redirected.pathname = `/${prefLang}${url.pathname === '/' ? '/' : url.pathname}`;
+      recordRedirect(request, env, ctx, 'en', prefLang);
       return withSecurityHeaders(Response.redirect(redirected.toString(), 302), request);
     }
     // Honour `?lang=xx` as a one-off override (no cookie set — the user
@@ -295,11 +380,12 @@ export default {
     if (overrideLang === 'en') {
       return withSecurityHeaders(await fetch(request), request);
     }
-    if (overrideLang && ACTIVE_LANGS.has(overrideLang.toLowerCase())) {
+    if (overrideLang && activeLangs.has(overrideLang.toLowerCase())) {
       const redirected = new URL(url);
       redirected.pathname = `/${overrideLang.toLowerCase()}${url.pathname === '/' ? '/' : url.pathname}`;
       redirected.searchParams.delete('lang');
       const cookieValue = `${COOKIE}=${overrideLang.toLowerCase()}; Path=/; Max-Age=${COOKIE_MAX_AGE}; SameSite=Lax; Secure`;
+      recordRedirect(request, env, ctx, 'en', overrideLang.toLowerCase());
       return withSecurityHeaders(
         Response.redirect(redirected.toString(), 302),
         request,

@@ -11,3 +11,43 @@ compatibility_date = "2026-05-16"
 #
 # The Worker pre-empts the GitHub Pages origin: if it issues a 302 it never
 # reaches origin; otherwise the request passes through unchanged.
+#
+# ----------------------------------------------------------------------------
+# Bindings — Cloudflare KV Free-tier strategy
+# ----------------------------------------------------------------------------
+# Policy: project-docs/adr/0001-kv-free-tier-policy.md
+#
+# Storage-tier picker (first "yes" wins):
+#   1. Deploy-time computable → [assets]                (zero runtime cost)
+#   2. Telemetry / counters   → [[analytics_engine_datasets]]
+#   3. Single-writer state    → [[durable_objects.bindings]]
+#   4. Runtime read-heavy KV  → [[kv_namespaces]]       (last resort)
+#
+# All bindings below must be created in the Cloudflare dashboard before
+# they resolve at runtime. The Worker handles missing bindings gracefully —
+# lang-router.js falls back to a hard-coded list if env.ASSETS is undefined.
+
+# Deploy-time static assets — slug maps, lang registry, anything generatable
+# at build time. Built by `scripts/build_worker_assets.py`.
+[assets]
+directory = "../worker-assets"
+binding = "ASSETS"
+
+# Workers Analytics Engine — append-only telemetry, 100,000 data points/day
+# free, 3-month retention, queryable with SQL. Replaces "counter" KV writes.
+[[analytics_engine_datasets]]
+binding = "AE"
+dataset = "sebastien_pageviews"
+
+# WriteCoalescer Durable Object — collapse bursty writes into one KV PUT
+# per logical key per flush window. SQLite-backed (free tier; KV-backed
+# DO storage is paid-only). Scaffolded but no caller yet — wire from the
+# first feature that needs runtime mutation.
+[[durable_objects.bindings]]
+name = "COALESCER"
+class_name = "WriteCoalescer"
+script_name = "lang-router"
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["WriteCoalescer"]

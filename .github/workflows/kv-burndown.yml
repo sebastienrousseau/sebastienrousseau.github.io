@@ -1,0 +1,97 @@
+name: kv-burndown
+
+# Weekly Cloudflare KV write-quota burndown.
+#
+# Pulls the trailing-7-day KV write count via the Cloudflare GraphQL API and
+# posts the result as a comment on the tracking issue. Alerts (exits 1) when
+# any 24 h window exceeded 70 % of the 1,000 writes/day Free-tier budget.
+#
+# Policy: project-docs/adr/0001-kv-free-tier-policy.md
+#
+# Required repository secrets:
+#   CLOUDFLARE_API_TOKEN — token with "Account › Account Analytics › Read"
+#   CLOUDFLARE_ACCOUNT_ID — the account tag (32-hex)
+#
+# Required repository variable (optional):
+#   KV_BURNDOWN_ISSUE — issue number for the sticky comment (defaults to none;
+#                       missing variable just prints to the run log).
+on:
+  schedule:
+    # Mondays 06:00 UTC. After the weekend; before the weekly /publish-today.
+    - cron: "0 6 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  burndown:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Query Cloudflare GraphQL — KV writes per day, 7 d
+        id: query
+        env:
+          CF_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CF_ACCOUNT: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          set -euo pipefail
+          if [ -z "${CF_TOKEN:-}" ] || [ -z "${CF_ACCOUNT:-}" ]; then
+            echo "::warning::Cloudflare token/account not set — skipping burndown."
+            echo "skip=1" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          since=$(date -u -d "7 days ago" +%Y-%m-%dT00:00:00Z 2>/dev/null \
+            || date -u -v-7d +%Y-%m-%dT00:00:00Z)
+          payload=$(jq -nc \
+            --arg account "$CF_ACCOUNT" \
+            --arg since "$since" \
+            '{
+              query: "query($account: String!, $since: Time!) { viewer { accounts(filter: { accountTag: $account }) { kvOperationsAdaptiveGroups(filter: { datetime_geq: $since, actionType: \"write\" }, limit: 1000, orderBy: [datetime_DESC]) { sum { requests } dimensions { datetimeDay namespaceId } } } } }",
+              variables: { account: $account, since: $since }
+            }')
+          curl --silent --show-error --fail \
+            -H "Authorization: Bearer $CF_TOKEN" \
+            -H "Content-Type: application/json" \
+            --data "$payload" \
+            https://api.cloudflare.com/client/v4/graphql > graphql.json
+          # Aggregate: max writes in any single day across all namespaces.
+          max_writes=$(jq -r '
+            [ .data.viewer.accounts[0].kvOperationsAdaptiveGroups[]?
+              | { day: .dimensions.datetimeDay, writes: .sum.requests }
+            ]
+            | group_by(.day)
+            | map({ day: .[0].day, total: ([.[].writes] | add) })
+            | (max_by(.total) // { day: "n/a", total: 0 })
+            | "\(.day) \(.total)"
+          ' graphql.json)
+          echo "max=$max_writes" >> "$GITHUB_OUTPUT"
+          echo "Peak day in last 7d: $max_writes (writes)"
+
+      - name: Comment on tracking issue
+        if: steps.query.outputs.skip != '1' && vars.KV_BURNDOWN_ISSUE != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE: ${{ vars.KV_BURNDOWN_ISSUE }}
+          PEAK: ${{ steps.query.outputs.max }}
+        run: |
+          set -euo pipefail
+          body=$(printf '### KV burndown — week of %s\n\nPeak day in trailing 7 d: **%s writes**\n\nBudget: 1,000 / day. Alert threshold: 700 / day.\n\nADR: [`project-docs/adr/0001-kv-free-tier-policy.md`](../blob/main/project-docs/adr/0001-kv-free-tier-policy.md)\n' "$(date -u +%Y-%m-%d)" "$PEAK")
+          gh issue comment "$ISSUE" --body "$body"
+
+      - name: Enforce 70 % budget
+        if: steps.query.outputs.skip != '1'
+        env:
+          PEAK: ${{ steps.query.outputs.max }}
+        run: |
+          set -euo pipefail
+          # Parse "YYYY-MM-DD N" → N
+          writes=$(echo "$PEAK" | awk '{print $2}')
+          writes=${writes:-0}
+          if [ "$writes" -ge 700 ]; then
+            echo "::error::KV writes peaked at $writes/day in trailing 7d (>=70 % of 1,000)."
+            exit 1
+          fi
+          echo "ok: peak $writes/day stays under 70 % budget."

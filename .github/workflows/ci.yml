@@ -86,6 +86,9 @@ jobs:
       - name: Naming conventions check
         run: python3 scripts/dev/check_naming_conventions.py
 
+      - name: Cloudflare KV write audit (Free-tier policy)
+        run: bash scripts/dev/check_kv_writes.sh
+
       - name: Cyclomatic complexity (radon)
         run: |
           radon cc scripts/postbuild/postbuild.py scripts/postbuild/postbuild_lib/ scripts/generators/ scripts/lib/ -a -s
