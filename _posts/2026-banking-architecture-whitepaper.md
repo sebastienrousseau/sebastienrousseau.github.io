@@ -172,7 +172,7 @@ Deploy a rail-agnostic control plane that treats SWIFT CBPR+, A2A / PSD3, and to
 
 ## Architectural briefing — download the PDF
 
-Need to share this framework with internal security, treasury, or architecture-review teams? The three reports have been synthesised into a single, high-fidelity PDF briefing — designed for Architecture Review Boards (ARB), DORA compliance committees, and C-level planning sessions. **Version:** June 2026. **Format:** US-letter print-ready, single-column NeurIPS-derived preprint style, 7 pages.
+Need to share this framework with internal security, treasury, or architecture-review teams? The reports have been synthesised into a single PDF briefing — designed for Architecture Review Boards (ARB), DORA compliance committees, and C-level planning sessions. Includes empirical anchors (RedCompass Labs 200-bank readiness survey, McKinsey Global Payments Report), multi-jurisdictional regulatory mapping (DORA, Fed SR 21-14, OCC, MAS TRM, HKMA C-RAF, APRA CPS 230), an explicit threat model with NIST FIPS 203/204/205 post-quantum migration, Basel LCR/NSFR/intraday-liquidity treatment of tokenised settlement, a comparative posture matrix against vendor core-banking, API-first, and CBDC-rail-led alternatives, and a 10-item programme risk register. **Version:** June 2026. **Format:** US-letter print-ready, single-column arxiv-style preprint, 12 pages.
 
 <p class="cta-actions"><a class="pill primary no-chev" href="https://cloudcdn.pro/stocks/documents/2026-banking-architecture-whitepaper.pdf" rel="noopener" title="Download the 2026 Banking Architecture Whitepaper (PDF)">Download the PDF briefing</a> <a class="pill ghost no-chev" href="/papers" title="See all published white papers and research">All white papers</a></p>
 
