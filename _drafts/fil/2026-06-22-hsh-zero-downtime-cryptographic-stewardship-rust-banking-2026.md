@@ -122,6 +122,18 @@ Upang maunawaan ang pangangailangan ng isang framework tulad ng hsh, dapat unawa
 
 **Ang C-library supply chain.** Sa kasaysayan, umaasa ang banking middleware sa mga library tulad ng `argonautica` o raw C binding para sa hashing. Ang mga library na ito ay may dalang nakatago na supply-chain risk: ang isang memory-buffer overflow lamang sa authentication module ay maaaring humantong sa remote code execution (RCE) sa pinaka-privileged na layer ng banking stack.
 
+### Paghahambing ng algorithm — hardware resistance at tuning surface
+
+Ang tatlong algorithm na realistikong nakakaharap ng isang bangko sa isang migration corpus ay hindi gaanong nagkakaiba sa pagpili ng cryptographic primitive — nagkakaiba sila sa kung paano sila tumatanda sa ilalim ng hardware pressure. Ibinubuod ng talahanayan sa ibaba ang praktikal na postura.
+
+| Algorithm | Memory-hard | GPU / ASIC resistance | Tuning surface | 2026 status |
+| ---- | ---- | ---- | ---- | ---- |
+| **PBKDF2** | Hindi | Mababa — nag-ve-vectorise sa GPU; sub-millisecond bawat hula sa commodity hardware. | Iteration count lamang. | Legacy. Tinatanggap lamang bilang verify-side fallback habang nasa migration. |
+| **scrypt** | Oo (katamtaman) | Katamtaman — tinatalo ng memory cost ang mga simpleng GPU farm; ASIC-amortisable sa malaking sukat. | `N` (CPU/memory), `r` (block size), `p` (parallelism). | Deprecated para sa greenfield. Aktibo sa mga migration corpus. |
+| **Argon2id** | Oo (mataas) | Mataas — memory- at time-hard; lumalaban sa side-channel at TMTO attack. | Memory cost (`m`), time cost (`t`), parallelism (`p`), secret (pepper). | Inirerekomendang default. OWASP, NIST SP 800-63B-4 draft, FedRAMP. |
+
+Makitid ang takeaway para sa migration plan: ang PBKDF2 ay isang *verify-side* state, hindi isang *write-side* destination. Bawat matagumpay na login sa isang PBKDF2 record ay dapat magprodyus ng isang Argon2id record sa labasan.
+
 ## 02. Ang Architecture Lens ng hsh 2026
 
 Ang framework ay nakabuo sa limang core layer, bawat isa ay inihandog upang ibsan ang isang tiyak na kategorya ng operational risk.
@@ -148,11 +160,93 @@ Kapag isinumite ng isang user ang kanilang credential, binabasa ng hsh ang naka-
 
 Ang prosesong ito ay ganap na transparent sa end-user. Epektibong nagmi-migrate ito ng mga pinaka-aktibong account patungo sa pinakamataas na security tier sa unang araw, kapansin-pansing pinapaliit ang attack surface ng bangko nang organiko sa paglipas ng panahon.
 
+### Implementation pattern — `verify_and_upgrade` dispatch
+
+Maliit ang integration surface sa loob ng isang authentication service. Nananatili ang legacy code path bilang fallback; ang bagong code path ang dispatcher.
+
+```rust
+use hsh::{Hasher, UpgradeResult};
+
+struct UserRecord {
+    username: String,
+    password_hash: String, // PHC string
+}
+
+async fn authenticate(user: UserRecord, password_attempt: &str) -> Result<bool, AuthError> {
+    let hasher = Hasher::new();
+    match hasher.verify_and_upgrade(password_attempt, &user.password_hash) {
+        Ok(UpgradeResult::Verified(is_valid)) => Ok(is_valid),
+        Ok(UpgradeResult::Upgraded(new_hash)) => {
+            db::update_user_hash(&user.username, new_hash).await?;
+            Ok(true)
+        }
+        Err(_) => Err(AuthError::InvalidCredentials),
+    }
+}
+```
+
+Mahalaga ang tatlong katangian:
+
+- **State-awareness.** Ina-inspect ng `verify_and_upgrade` ang PHC string prefix. Kung legacy ang algorithm marker, awtomatikong tina-trigger ng framework ang re-hash laban sa naka-configure na Argon2id policy. Walang branching sa calling code.
+- **Atomicity.** Ang re-hashing ay nangyayari lamang matapos magtagumpay ang legacy verification, sa loob ng parehong authentication event. Walang hiwalay na batch job, walang naka-iskedyul na migration window, at walang destructive na bulk migration na ibabalik.
+- **Persistence.** Dala ng `UpgradeResult::Upgraded` variant ang bagong PHC string. Pina-persist ito ng application sa pamamagitan ng parehong data path na umiiral na para sa legacy record — walang parallel write surface, walang two-phase write protocol.
+
+**Mga failure mode.** Kung mabigo ang database write o panandaliang hindi maabot ang KMS sa panahon ng upgrade write, matagumpay pa rin ang session laban sa legacy hash at nananatili ang record sa lumang algorithm. Sinusubukan muli ng susunod na matagumpay na login ang upgrade. Walang half-migrated na state at walang nakikita ng user na pagkabigo — monotonic ang migration sa mga login event, at ang per-record na halaga ng isang nabigong upgrade ay eksaktong isang karagdagang retry sa susunod na login.
+
 ## 04. Peppered Hashes sa pamamagitan ng HSM / KMS Interlock
 
 Ang standard na password hashing ay nagpoprotekta laban sa direktang database leak, ngunit kung makukuha ng isang attacker ang database (mga hash at salt), maaari silang magsagawa ng offline cracking.
 
 Nagpapakilala ang hsh ng matatag na "peppered" security layer. Sa pamamagitan ng pag-integrate sa mga Hardware Security Module (HSM) o cloud-native na Key Management Service (KMS), ang panghuling Argon2id output ay cryptographically binabalot ng isang high-entropy na key na hindi kailanman umaalis sa secure na hardware boundary. Kung ma-exfiltrate ang user database, ang attacker ay may hawak lamang na encrypted blob. Hindi nila maaaring simulan ang pag-crack ng mga password nang hindi rin nilalabag ang physically isolated na HSM infrastructure ng bangko.
+
+### Implementation pattern — HSM-backed peppered Argon2id
+
+Ang pepper ay nagmumula sa HSM sa oras ng request, hindi mula sa configuration file. Kinukunsumo ito ng `Argon2::new_with_secret` sa pamamagitan ng secret parameter ng algorithm, hindi sa pamamagitan ng string concatenation.
+
+```rust
+use argon2::{
+    Argon2, Algorithm, Version, Params,
+    PasswordHasher, PasswordVerifier,
+    password_hash::{PasswordHash, SaltString, rand_core::OsRng},
+};
+
+async fn authenticate_with_hsm(
+    user: UserRecord,
+    password_attempt: &str,
+) -> Result<bool, AuthError> {
+    let pepper = hsm::client::get_secret("production-password-pepper").await?;
+    let hasher = Argon2::new_with_secret(
+        &pepper,
+        Algorithm::Argon2id,
+        Version::V0x13,
+        Params::default(),
+    )
+    .map_err(|_| AuthError::Internal)?;
+
+    let parsed = PasswordHash::new(&user.password_hash)
+        .map_err(|_| AuthError::InvalidCredentials)?;
+    if hasher.verify_password(password_attempt.as_bytes(), &parsed).is_ok() {
+        if is_legacy_hash(&user.password_hash) {
+            let new_hash = hasher
+                .hash_password(
+                    password_attempt.as_bytes(),
+                    &SaltString::generate(&mut OsRng),
+                )
+                .map_err(|_| AuthError::Internal)?
+                .to_string();
+            db::update_user_hash(&user.username, new_hash).await?;
+        }
+        return Ok(true);
+    }
+    Err(AuthError::InvalidCredentials)
+}
+```
+
+Tatlong DORA-aligned na konsekwensya ang lumilitaw mula sa hugis na ito:
+
+- **Ang key rotation bilang key-management problem.** Ang pepper ay nakatira sa likod ng HSM/KMS boundary, hindi sa database. Nagiging key-management change ang rotation, hindi isang re-hashing campaign sa buong user estate. Ang mga bagong hash ay umuugnay sa kasalukuyang pepper version; ang mga lumang hash ay nagve-verify sa ilalim ng kanilang bound version hanggang sa natural silang mag-upgrade.
+- **Separation of duties.** Ang service identity na nagbabasa ng pepper ay dapat auditable at least-privileged. Ang isang buong database exfiltration nang walang katumbas na HSM grant ay hindi nagbibigay ng anumang ma-crack. Ang isang HSM-grant compromise nang walang database ay hindi nagbibigay ng anumang ma-address. Nahahanggahan ang blast radius ng alinmang single failure.
+- **Iwasan ang length extension at concat bug.** Ang paggamit sa secret parameter ng Argon2 sa halip na string concatenation ay nag-aalis ng isang buong klase ng mga cryptographic gotcha — length-extension, mis-typed UTF-8 concatenation, salt/pepper-ordering bug — mula sa implementation surface.
 
 ## 05. Regulatory Alignment: DORA, Basel III, at SM&CR
 

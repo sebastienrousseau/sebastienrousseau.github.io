@@ -122,6 +122,18 @@ twitter_image_alt: "Sebastien Rousseau 黑白肖像"
 
 **C 库供应链。**历史上，银行中间件依赖 `argonautica` 或原生 C 绑定来做哈希。这些库带有隐藏的供应链风险：身份验证模块中一次内存缓冲区溢出，就可能在银行栈最高权限层引发远程代码执行（RCE）。
 
+### 算法对照——硬件抗性与可调表面
+
+银行在迁移语料中实际遇到的三种算法，差异并不在密码学原语的选择，而在它们如何在硬件压力下老化。下表汇总了实际姿态。
+
+| Algorithm | Memory-hard | GPU / ASIC resistance | Tuning surface | 2026 status |
+| ---- | ---- | ---- | ---- | ---- |
+| **PBKDF2** | 否 | 低——可在 GPU 上向量化；商用硬件每次猜测亚毫秒。 | 仅迭代次数。 | 遗留。仅可作为迁移期间的校验侧回退。 |
+| **scrypt** | 是（适中） | 中——内存成本可击退简单 GPU 集群；大规模下可被 ASIC 摊薄。 | `N`（CPU/内存）、`r`（块大小）、`p`（并行度）。 | 新建项目已弃用。仍活跃于迁移语料。 |
+| **Argon2id** | 是（高） | 高——内存与时间双重困难；抗侧信道与 TMTO 攻击。 | 内存成本（`m`）、时间成本（`t`）、并行度（`p`）、秘密值（pepper）。 | 推荐默认。OWASP、NIST SP 800-63B-4 草案、FedRAMP。 |
+
+迁移计划的结论收窄而明确：PBKDF2 是*校验侧*状态，而非*写入侧*目标。每一次成功登录到 PBKDF2 记录，都应在出口产出一条 Argon2id 记录。
+
 ## 02. 2026 年 hsh 架构视角
 
 该框架按五个核心层组织，每一层都为缓释一类特定运营风险而设计。
@@ -148,11 +160,93 @@ twitter_image_alt: "Sebastien Rousseau 黑白肖像"
 
 整个过程对终端用户完全透明。它在第一天就把最活跃账户迁移到最高安全等级，并随时间推移有机地大幅压缩银行的攻击面。
 
+### 实现模式——`verify_and_upgrade` 派发
+
+身份验证服务内的集成表面很小。遗留代码路径保留作为回退；新代码路径就是派发器。
+
+```rust
+use hsh::{Hasher, UpgradeResult};
+
+struct UserRecord {
+    username: String,
+    password_hash: String, // PHC string
+}
+
+async fn authenticate(user: UserRecord, password_attempt: &str) -> Result<bool, AuthError> {
+    let hasher = Hasher::new();
+    match hasher.verify_and_upgrade(password_attempt, &user.password_hash) {
+        Ok(UpgradeResult::Verified(is_valid)) => Ok(is_valid),
+        Ok(UpgradeResult::Upgraded(new_hash)) => {
+            db::update_user_hash(&user.username, new_hash).await?;
+            Ok(true)
+        }
+        Err(_) => Err(AuthError::InvalidCredentials),
+    }
+}
+```
+
+三项性质值得关注：
+
+- **状态感知。**`verify_and_upgrade` 检查 PHC 字符串前缀。若算法标记为遗留，框架便自动按配置的 Argon2id 策略触发再哈希。调用方代码无需分支。
+- **原子性。**再哈希仅在遗留校验成功后、同一身份验证事件内发生。没有单独的批处理作业，没有调度迁移窗口，也没有需要回滚的破坏性批量迁移。
+- **持久化。**`UpgradeResult::Upgraded` 变体携带新的 PHC 字符串。应用通过原本就服务于遗留记录的同一数据路径持久化——无平行写入面，无两阶段写入协议。
+
+**失败模式。**若数据库写入失败或 KMS 在升级写入期间短暂不可达，会话仍然凭遗留哈希成功，记录保持在旧算法上。下一次成功登录会重试升级。不存在半迁移状态，也没有用户可见的失败——迁移在登录事件之间单调推进，单条记录失败升级的代价恰好是下次登录多一次重试。
+
 ## 04. 通过 HSM / KMS 互锁实现加椒哈希
 
 标准口令哈希可防御对数据库的直接泄露，但若攻击者同时拿到数据库（哈希与盐），即可执行离线破解。
 
 hsh 引入了稳健的 "加椒" 安全层。通过与硬件安全模块（HSM）或云原生密钥管理服务（KMS）集成，最终的 Argon2id 输出会被一把永不离开安全硬件边界的高熵密钥以密码学方式封装。即便用户数据库被外泄，攻击者拿到的也只是加密斑点。在不同时攻破银行物理隔离的 HSM 基础设施前，他们无法开始破解口令。
+
+### 实现模式——HSM 支持的加椒 Argon2id
+
+pepper 在请求时从 HSM 取得，而非来自配置文件。`Argon2::new_with_secret` 通过算法的秘密参数消费它，而非通过字符串拼接。
+
+```rust
+use argon2::{
+    Argon2, Algorithm, Version, Params,
+    PasswordHasher, PasswordVerifier,
+    password_hash::{PasswordHash, SaltString, rand_core::OsRng},
+};
+
+async fn authenticate_with_hsm(
+    user: UserRecord,
+    password_attempt: &str,
+) -> Result<bool, AuthError> {
+    let pepper = hsm::client::get_secret("production-password-pepper").await?;
+    let hasher = Argon2::new_with_secret(
+        &pepper,
+        Algorithm::Argon2id,
+        Version::V0x13,
+        Params::default(),
+    )
+    .map_err(|_| AuthError::Internal)?;
+
+    let parsed = PasswordHash::new(&user.password_hash)
+        .map_err(|_| AuthError::InvalidCredentials)?;
+    if hasher.verify_password(password_attempt.as_bytes(), &parsed).is_ok() {
+        if is_legacy_hash(&user.password_hash) {
+            let new_hash = hasher
+                .hash_password(
+                    password_attempt.as_bytes(),
+                    &SaltString::generate(&mut OsRng),
+                )
+                .map_err(|_| AuthError::Internal)?
+                .to_string();
+            db::update_user_hash(&user.username, new_hash).await?;
+        }
+        return Ok(true);
+    }
+    Err(AuthError::InvalidCredentials)
+}
+```
+
+由此衍生出三项契合 DORA 的后果：
+
+- **把密钥轮换变为密钥管理问题。**pepper 留在 HSM/KMS 边界之内，而非数据库中。轮换成为一次密钥管理变更，而不是对整个用户体量发起的再哈希运动。新哈希绑定到当前 pepper 版本；旧哈希在自然升级前以其绑定版本进行校验。
+- **职责分离。**读取 pepper 的服务身份必须可审计且最小权限。无对应 HSM 授权的完整数据库外泄一无所得，无可破解的内容。无数据库的 HSM 授权失陷一无所获，无可发起的对象。任一单点失败的爆炸半径都被限定。
+- **避免长度扩展与拼接缺陷。**使用 Argon2 的秘密参数而非字符串拼接，将一整类密码学陷阱——长度扩展、误类型 UTF-8 拼接、盐/椒次序缺陷——从实现表面移除。
 
 ## 05. 监管对齐：DORA、Basel III 与 SM&CR
 

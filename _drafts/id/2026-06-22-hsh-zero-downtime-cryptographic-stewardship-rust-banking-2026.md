@@ -122,6 +122,18 @@ Untuk memahami perlunya kerangka seperti hsh, seseorang harus memahami siklus hi
 
 **Rantai pasok pustaka C.** Secara historis, middleware perbankan mengandalkan pustaka seperti `argonautica` atau binding C mentah untuk hashing. Pustaka ini membawa risiko rantai pasok tersembunyi: satu buffer overflow memori di modul autentikasi dapat menyebabkan remote code execution (RCE) di lapisan paling berhak dari tumpukan perbankan.
 
+### Perbandingan algoritma — resistensi perangkat keras dan permukaan penyetelan
+
+Tiga algoritma yang realistis ditemui bank dalam korpus migrasi berbeda lebih sedikit dalam pilihan primitif kriptografi dan lebih banyak dalam cara mereka menua di bawah tekanan perangkat keras. Tabel di bawah merangkum postur praktisnya.
+
+| Algorithm | Memory-hard | GPU / ASIC resistance | Tuning surface | 2026 status |
+| ---- | ---- | ---- | ---- | ---- |
+| **PBKDF2** | Tidak | Rendah — tervektorisasi pada GPU; sub-milidetik per tebakan pada perangkat keras komoditas. | Hanya jumlah iterasi. | Warisan. Dapat diterima hanya sebagai fallback sisi-verifikasi selama migrasi. |
+| **scrypt** | Ya (sedang) | Sedang — biaya memori mengalahkan ladang GPU sederhana; dapat di-ASIC-amortisasi pada skala besar. | `N` (CPU/memori), `r` (ukuran blok), `p` (paralelisme). | Tidak disarankan untuk greenfield. Aktif di korpus migrasi. |
+| **Argon2id** | Ya (tinggi) | Tinggi — memory-hard dan time-hard; menahan serangan side-channel dan TMTO. | Biaya memori (`m`), biaya waktu (`t`), paralelisme (`p`), rahasia (pepper). | Default yang direkomendasikan. OWASP, draf NIST SP 800-63B-4, FedRAMP. |
+
+Kesimpulan untuk rencana migrasi sempit: PBKDF2 adalah keadaan *sisi-verifikasi*, bukan tujuan *sisi-tulis*. Setiap login berhasil pada catatan PBKDF2 harus menghasilkan catatan Argon2id pada jalan keluarnya.
+
 ## 02. Lensa Arsitektur hsh 2026
 
 Kerangka ini terstruktur dalam lima lapisan inti, masing-masing direkayasa untuk memitigasi kategori risiko operasional tertentu.
@@ -148,11 +160,93 @@ Ketika pengguna mengirimkan kredensial mereka, hsh membaca string Password Hashi
 
 Proses ini sepenuhnya transparan bagi pengguna akhir. Ia secara efektif memigrasikan akun-akun yang paling aktif ke tingkat keamanan tertinggi pada hari pertama, mengurangi permukaan serangan bank secara organik dari waktu ke waktu.
 
+### Pola implementasi — dispatch `verify_and_upgrade`
+
+Permukaan integrasi di dalam layanan autentikasi kecil. Jalur kode warisan tetap sebagai fallback; jalur kode baru adalah dispatcher.
+
+```rust
+use hsh::{Hasher, UpgradeResult};
+
+struct UserRecord {
+    username: String,
+    password_hash: String, // PHC string
+}
+
+async fn authenticate(user: UserRecord, password_attempt: &str) -> Result<bool, AuthError> {
+    let hasher = Hasher::new();
+    match hasher.verify_and_upgrade(password_attempt, &user.password_hash) {
+        Ok(UpgradeResult::Verified(is_valid)) => Ok(is_valid),
+        Ok(UpgradeResult::Upgraded(new_hash)) => {
+            db::update_user_hash(&user.username, new_hash).await?;
+            Ok(true)
+        }
+        Err(_) => Err(AuthError::InvalidCredentials),
+    }
+}
+```
+
+Tiga properti penting:
+
+- **Kesadaran-keadaan.** `verify_and_upgrade` memeriksa prefix string PHC. Jika penanda algoritma adalah warisan, kerangka memicu re-hash secara otomatis terhadap kebijakan Argon2id yang dikonfigurasi. Tidak ada percabangan di kode pemanggil.
+- **Atomisitas.** Re-hashing terjadi hanya setelah verifikasi warisan berhasil, di dalam peristiwa autentikasi yang sama. Tidak ada pekerjaan batch terpisah, tidak ada jendela migrasi terjadwal, dan tidak ada migrasi massal destruktif untuk di-rollback.
+- **Persistensi.** Varian `UpgradeResult::Upgraded` membawa string PHC baru. Aplikasi mempersistensikannya melalui jalur data yang sama yang sudah ada untuk catatan warisan — tidak ada permukaan tulis paralel, tidak ada protokol tulis dua-fase.
+
+**Mode kegagalan.** Jika tulisan basis data gagal atau KMS sesaat tidak dapat dijangkau saat tulisan peningkatan, sesi tetap berhasil terhadap hash warisan dan catatan tetap pada algoritma lama. Login berhasil berikutnya mencoba kembali peningkatan tersebut. Tidak ada keadaan setengah-termigrasi dan tidak ada kegagalan yang terlihat oleh pengguna — migrasi monoton lintas peristiwa login, dan biaya per-catatan dari peningkatan yang gagal tepat satu percobaan tambahan pada login berikutnya.
+
 ## 04. Hash Ber-Pepper melalui Interlock HSM / KMS
 
 Hashing kata sandi standar melindungi dari kebocoran basis data langsung, tetapi jika penyerang memperoleh basis data (hash dan salt), mereka dapat mengeksekusi cracking offline.
 
 hsh memperkenalkan lapisan keamanan "ber-pepper" yang kokoh. Dengan mengintegrasikan Hardware Security Module (HSM) atau Key Management Service (KMS) cloud-native, output Argon2id akhir dibungkus secara kriptografis dengan kunci ber-entropi tinggi yang tidak pernah meninggalkan batas perangkat keras yang aman. Jika basis data pengguna diekfiltrasi, penyerang hanya memiliki blob terenkripsi. Mereka tidak dapat mulai memecahkan kata sandi tanpa juga menembus infrastruktur HSM bank yang terisolasi secara fisik.
+
+### Pola implementasi — Argon2id ber-pepper yang didukung HSM
+
+Pepper bersumber dari HSM pada waktu permintaan, bukan dari file konfigurasi. `Argon2::new_with_secret` mengonsumsinya melalui parameter rahasia algoritma, bukan melalui konkatenasi string.
+
+```rust
+use argon2::{
+    Argon2, Algorithm, Version, Params,
+    PasswordHasher, PasswordVerifier,
+    password_hash::{PasswordHash, SaltString, rand_core::OsRng},
+};
+
+async fn authenticate_with_hsm(
+    user: UserRecord,
+    password_attempt: &str,
+) -> Result<bool, AuthError> {
+    let pepper = hsm::client::get_secret("production-password-pepper").await?;
+    let hasher = Argon2::new_with_secret(
+        &pepper,
+        Algorithm::Argon2id,
+        Version::V0x13,
+        Params::default(),
+    )
+    .map_err(|_| AuthError::Internal)?;
+
+    let parsed = PasswordHash::new(&user.password_hash)
+        .map_err(|_| AuthError::InvalidCredentials)?;
+    if hasher.verify_password(password_attempt.as_bytes(), &parsed).is_ok() {
+        if is_legacy_hash(&user.password_hash) {
+            let new_hash = hasher
+                .hash_password(
+                    password_attempt.as_bytes(),
+                    &SaltString::generate(&mut OsRng),
+                )
+                .map_err(|_| AuthError::Internal)?
+                .to_string();
+            db::update_user_hash(&user.username, new_hash).await?;
+        }
+        return Ok(true);
+    }
+    Err(AuthError::InvalidCredentials)
+}
+```
+
+Tiga konsekuensi yang selaras dengan DORA muncul dari bentuk ini:
+
+- **Rotasi kunci sebagai masalah manajemen-kunci.** Pepper hidup di balik batas HSM/KMS, bukan di basis data. Rotasi menjadi perubahan manajemen-kunci, bukan kampanye re-hashing di seluruh estat pengguna. Hash baru mengikat ke versi pepper saat ini; hash lama diverifikasi di bawah versi yang terikat hingga mereka meningkat secara alami.
+- **Pemisahan tugas.** Identitas layanan yang membaca pepper harus dapat diaudit dan berhak-sekecil-mungkin. Eksfiltrasi basis data penuh tanpa grant HSM yang bersesuaian tidak menghasilkan apa pun yang dapat dipecahkan. Kompromi grant HSM tanpa basis data tidak menghasilkan apa pun yang dapat ditujukan. Radius ledakan dari kegagalan tunggal mana pun terbatas.
+- **Menghindari bug length extension dan konkat.** Menggunakan parameter rahasia Argon2 alih-alih konkatenasi string menghilangkan seluruh kelas jebakan kriptografi — length-extension, konkatenasi UTF-8 yang salah-ketik, bug urutan salt/pepper — dari permukaan implementasi.
 
 ## 05. Penyelarasan Regulasi: DORA, Basel III, dan SM&CR
 

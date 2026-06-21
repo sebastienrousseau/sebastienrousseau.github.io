@@ -122,6 +122,18 @@ Láti ní òye ìnílò ìpilẹ̀ bíi hsh, ẹnìkan gbọ́dọ̀ ní òye ì
 
 **Ẹ̀wọ̀n ìpèsè ilé-ìkàwé C.** Ní ìtàn, middleware báńkì ti gbáralé àwọn ilé-ìkàwé bíi `argonautica` tàbí àwọn ìsopọ̀ C aláìmọ́ fún hashing. Àwọn ilé-ìkàwé wọ̀nyí ń gbé ewu ẹ̀wọ̀n-ìpèsè ìparọ́rọ́: buffer-overflow ìrántí kan ṣoṣo nínú module ìmúdájú lè yọrí sí remote code execution (RCE) ní ìpele aládájú jùlọ ti stack báńkì.
 
+### Ìfiwéra algorithm — ìdúró ohun-èlò àti ipò àtúntò
+
+Àwọn algorithm mẹ́ta tí báńkì máa ń pàdé ní ojúlówó nínú corpus ìṣíkiri yàtọ̀ síra díẹ̀ ní yíyàn primitive cryptographic, ṣùgbọ́n wọ́n yàtọ̀ gan-an ní bí wọ́n ṣe ń dàgbà lábẹ́ ìfipá ohun-èlò. Tábìlì tó wà nísàlẹ̀ ń ṣe ìsọnísókí ipò ojúlówó.
+
+| Algorithm | Memory-hard | GPU / ASIC resistance | Tuning surface | 2026 status |
+| ---- | ---- | ---- | ---- | ---- |
+| **PBKDF2** | Rárá | Kéré — ó ń vectorise lórí GPU; kéré sí millisecond fún àbámu lórí ohun-èlò commodity. | Iye iteration nìkan. | Ìbílẹ̀. Ó tẹ́wọ́gbà gẹ́gẹ́ bí fallback ẹgbẹ́-verify nígbà ìṣíkiri nìkan. |
+| **scrypt** | Bẹ́ẹ̀ni (níwọ̀nba) | Àárín — iye owó ìrántí ń ṣẹ́gun àwọn oko GPU rírọrùn; ó ṣeé fún ASIC ní àpapọ̀. | `N` (CPU/ìrántí), `r` (iye block), `p` (parallelism). | A ti fẹ̀yìntì fún greenfield. Ó ṣì ń ṣiṣẹ́ nínú àwọn corpus ìṣíkiri. |
+| **Argon2id** | Bẹ́ẹ̀ni (gíga) | Gíga — ó le ní ìrántí àti àkókò; ó ń kọjú àwọn ìkọlù side-channel àti TMTO. | Iye owó ìrántí (`m`), iye owó àkókò (`t`), parallelism (`p`), aṣírí (pepper). | Aláyípadà tó tọ́ ṣe ìṣèdá. OWASP, NIST SP 800-63B-4 draft, FedRAMP. |
+
+Àyọkà fún ètò ìṣíkiri kéré: PBKDF2 jẹ́ ipò *ẹgbẹ́-verify*, kì í ṣe ojú-ọ̀nà *ẹgbẹ́-write*. Login tó ṣaṣeyọrí kọ̀ọ̀kan lórí àkọsílẹ̀ PBKDF2 gbọ́dọ̀ ṣe àkọsílẹ̀ Argon2id ní jíjáde.
+
 ## 02. Ojú Ìṣètò hsh 2026
 
 A ti ṣe ìpilẹ̀ náà kọjá àwọn ìpele pàtàkì márùn-ún, gbogbo wọn ni a ṣe láti dín ìpín ewu ìṣiṣẹ́ kan-pàtó kù.
@@ -148,11 +160,93 @@ Nígbà tí olùlò bá fi àwọn ẹrí wọn jíṣẹ́, hsh ń ka string Pa
 
 Ìṣàn yìí jẹ́ aláìlọ́nà sí olùlò ìparí. Ó ń ṣíkiri àwọn àkáǹtì tó ṣiṣẹ́ jùlọ sí ìpele ààbò tó ga jùlọ ní ọjọ́ kìíní, ó ń dín ipò ìkọlù báńkì kù gan-an ní ọ̀nà aládàṣe lórí àkókò.
 
+### Àpẹẹrẹ ìṣèdá — dispatch `verify_and_upgrade`
+
+Ojú ìṣopọ̀ inú iṣẹ́ ìmúdájú kéré. Ọ̀nà kóòdù ìbílẹ̀ ṣì wà gẹ́gẹ́ bí fallback; ọ̀nà kóòdù tuntun ni dispatcher.
+
+```rust
+use hsh::{Hasher, UpgradeResult};
+
+struct UserRecord {
+    username: String,
+    password_hash: String, // PHC string
+}
+
+async fn authenticate(user: UserRecord, password_attempt: &str) -> Result<bool, AuthError> {
+    let hasher = Hasher::new();
+    match hasher.verify_and_upgrade(password_attempt, &user.password_hash) {
+        Ok(UpgradeResult::Verified(is_valid)) => Ok(is_valid),
+        Ok(UpgradeResult::Upgraded(new_hash)) => {
+            db::update_user_hash(&user.username, new_hash).await?;
+            Ok(true)
+        }
+        Err(_) => Err(AuthError::InvalidCredentials),
+    }
+}
+```
+
+Àwọn ohun-ìní mẹ́ta ṣe pàtàkì:
+
+- **Ìmọ̀-ipò.** `verify_and_upgrade` ń yẹ ìbẹ̀rẹ̀ string PHC wò. Tí àmì algorithm bá jẹ́ ìbílẹ̀, ìpilẹ̀ náà ń mú re-hash dìde lórí lódì sí ìlànà Argon2id tí a ṣètò. Kò sí branching nínú kóòdù tó ń pè ní.
+- **Atomicity.** Re-hashing ń ṣẹlẹ̀ nìkan lẹ́yìn tí ìmúdájú ìbílẹ̀ bá ṣaṣeyọrí, nínú ìṣẹ̀lẹ̀ ìmúdájú kan-náà. Kò sí iṣẹ́ batch tó yà sọ́tọ̀, kò sí ferese ìṣíkiri tí a ṣètò, àti kò sí ìṣíkiri bulky tí ń ba run láti yí padà.
+- **Ìfimúró.** Variant `UpgradeResult::Upgraded` ń gbé string PHC tuntun. Ohun-èlò ń pa á mọ́ nípasẹ̀ ọ̀nà dátà kan-náà tó ti wà tẹ́lẹ̀ fún àkọsílẹ̀ ìbílẹ̀ — kò sí ojú-ọ̀nà write parallel, kò sí ètò write àpá-méjì.
+
+**Àwọn ipò àìṣàṣeyọrí.** Tí write dátábáàsì bá kùnà tàbí KMS kò ṣeé dé fún àkókò díẹ̀ nígbà write ìgbéga, ìpàdé ṣì ń ṣaṣeyọrí lòdì sí hash ìbílẹ̀, àkọsílẹ̀ sì ṣì ń wà lórí algorithm àtijọ́. Login tó ṣaṣeyọrí tó tẹ̀lé e ń gbìyànjú ìgbéga lẹ́ẹ̀kansí. Kò sí ipò tí a ti ṣíkiri níwọ̀nba àti kò sí àìṣàṣeyọrí tí olùlò lè rí — ìṣíkiri jẹ́ monotonic kọjá àwọn ìṣẹ̀lẹ̀ login, iye owó fún àkọsílẹ̀ kọ̀ọ̀kan fún ìgbéga tó kùnà sì jẹ́ àtúngbìyànjú kan ṣoṣo lórí login tó tẹ̀lé e.
+
 ## 04. Hash Peppered nípasẹ̀ Ìlọ́pọ̀ HSM / KMS
 
 Hashing ọ̀rọ̀-ìgbàláàyè àpẹẹrẹ ń dáàbò bo lòdì sí ìjò dátábáàsì tààrà, ṣùgbọ́n tí akolù bá rí dátábáàsì méjèèjì (àwọn hash àti àwọn salt), wọ́n lè ṣe brute-force aláìlí-ayélujára.
 
 hsh ń mú ìpele ààbò "peppered" tó lágbára wá. Nípa dída pọ̀ pẹ̀lú Hardware Security Modules (HSM) tàbí àwọn Iṣẹ́ Ìṣàkóso Bọtìnnì (KMS) cloud-native, a ń di àbájáde Argon2id ìparí pẹ̀lú kọ́kọ́rọ́ àpọ́nlé tó gíga tí kò fi ààlà ohun-èlò aláìléwu sílẹ̀. Tí a bá yọ dátábáàsì olùlò jáde, akolù ní àwọn blob ìpamọ́ nìkan. Wọn kò lè bẹ̀rẹ̀ sí ní fọ́ àwọn ọ̀rọ̀-ìgbàláàyè láìsí pé wọ́n tún wọlé sí apẹrẹ HSM tí a fi sí ààlà ti ara báńkì.
+
+### Àpẹẹrẹ ìṣèdá — Argon2id peppered tí HSM ń tì lẹ́yìn
+
+A ń rí pepper láti HSM ní àkókò ìbéèrè, kì í ṣe láti inú fáìlì ìṣètò. `Argon2::new_with_secret` ń jẹ ẹ́ nípasẹ̀ parameter aṣírí algorithm, kì í ṣe nípasẹ̀ ìjùmọ̀sọ̀rọ̀ string.
+
+```rust
+use argon2::{
+    Argon2, Algorithm, Version, Params,
+    PasswordHasher, PasswordVerifier,
+    password_hash::{PasswordHash, SaltString, rand_core::OsRng},
+};
+
+async fn authenticate_with_hsm(
+    user: UserRecord,
+    password_attempt: &str,
+) -> Result<bool, AuthError> {
+    let pepper = hsm::client::get_secret("production-password-pepper").await?;
+    let hasher = Argon2::new_with_secret(
+        &pepper,
+        Algorithm::Argon2id,
+        Version::V0x13,
+        Params::default(),
+    )
+    .map_err(|_| AuthError::Internal)?;
+
+    let parsed = PasswordHash::new(&user.password_hash)
+        .map_err(|_| AuthError::InvalidCredentials)?;
+    if hasher.verify_password(password_attempt.as_bytes(), &parsed).is_ok() {
+        if is_legacy_hash(&user.password_hash) {
+            let new_hash = hasher
+                .hash_password(
+                    password_attempt.as_bytes(),
+                    &SaltString::generate(&mut OsRng),
+                )
+                .map_err(|_| AuthError::Internal)?
+                .to_string();
+            db::update_user_hash(&user.username, new_hash).await?;
+        }
+        return Ok(true);
+    }
+    Err(AuthError::InvalidCredentials)
+}
+```
+
+Àbájáde mẹ́ta tó bámu pẹ̀lú DORA ń yọ jáde láti inú apẹrẹ yìí:
+
+- **Yíyí kọ́kọ́rọ́ padà gẹ́gẹ́ bí ìṣòro ìṣàkóso-kọ́kọ́rọ́.** Pepper ń gbé lẹ́yìn ààlà HSM/KMS, kì í ṣe nínú dátábáàsì. Yíyípadà di ìyípadà ìṣàkóso-kọ́kọ́rọ́, kì í ṣe ìpolówó re-hashing kọjá ohun-ìní olùlò. Àwọn hash tuntun ń di mọ́ ìpele pepper lọ́wọ́lọ́wọ́; àwọn hash àtijọ́ ń verify lábẹ́ ìpele tí wọ́n dìmọ́ títí tí wọ́n ó fi gòkè ní ọ̀nà aládàṣe.
+- **Pípín àwọn iṣẹ́.** Idanimọ̀ iṣẹ́ tó ń ka pepper gbọ́dọ̀ jẹ́ aṣèyẹ̀wò àti aláṣẹ kéréjùlọ. Ìyọ dátábáàsì jáde pẹ̀lú láìsí grant HSM tó bámu kò mú ohun aláàrá kankan wá. Ìfọwọ́rọ́gba grant-HSM láìsí dátábáàsì kò mú ohun tó ṣeé dé kankan wá. Ààlà ìbúgbàù àìṣàṣeyọrí ẹnì kọ̀ọ̀kan ní bound.
+- **Yẹra fún àwọn àìlera length-extension àti concat.** Lílo parameter aṣírí Argon2 dípò ìjùmọ̀sọ̀rọ̀ string ń yọ ẹ̀yà àwọn àìlera cryptographic gbogbo — length-extension, ìjùmọ̀sọ̀rọ̀ UTF-8 tí ó wà ní àìtọ́, àwọn àìlera ìtò salt/pepper — kúrò ní ojú ìṣèdá.
 
 ## 05. Ìbámu Ìlànà: DORA, Basel III, àti SM&CR
 

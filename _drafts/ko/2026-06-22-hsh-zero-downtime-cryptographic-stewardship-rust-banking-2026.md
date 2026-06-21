@@ -122,6 +122,18 @@ hsh 같은 프레임워크의 필요성을 이해하려면, 비밀번호 해시�
 
 **C 라이브러리 공급망.** 역사적으로 뱅킹 미들웨어는 해싱을 위해 `argonautica` 같은 라이브러리나 원시 C 바인딩에 의존해 왔습니다. 이 라이브러리들은 숨겨진 공급망 리스크를 안고 있습니다. 인증 모듈 내의 단일 메모리 버퍼 오버플로가 뱅킹 스택의 가장 높은 권한 계층에서 원격 코드 실행 (RCE)으로 이어질 수 있습니다.
 
+### 알고리즘 비교 — 하드웨어 저항성과 튜닝 표면
+
+이전 코퍼스에서 은행이 현실적으로 마주하는 세 알고리즘은 암호 프리미티브 선택보다는 하드웨어 압력 아래에서 어떻게 노후화되는가에서 더 큰 차이를 보입니다. 아래 표는 실무적 태세를 요약합니다.
+
+| Algorithm | 메모리 하드 | GPU / ASIC 저항성 | 튜닝 표면 | 2026 상태 |
+| ---- | ---- | ---- | ---- | ---- |
+| **PBKDF2** | 아니오 | 낮음 — GPU에서 벡터화됨; 상용 하드웨어에서 추측당 1밀리초 미만. | 반복 횟수만. | 레거시. 이전 도중 검증 측 폴백으로만 허용. |
+| **scrypt** | 예 (보통) | 중간 — 메모리 비용이 단순 GPU 농장은 막지만, 대규모에서 ASIC로 상각 가능. | `N` (CPU/메모리), `r` (블록 크기), `p` (병렬성). | 신규 구축에서는 비권장. 이전 코퍼스에서는 활성. |
+| **Argon2id** | 예 (높음) | 높음 — 메모리 및 시간 하드; 사이드 채널과 TMTO 공격에 저항. | 메모리 비용 (`m`), 시간 비용 (`t`), 병렬성 (`p`), 시크릿 (페퍼). | 권장 기본값. OWASP, NIST SP 800-63B-4 초안, FedRAMP. |
+
+이전 계획에 대한 시사점은 좁습니다. PBKDF2는 *검증 측* 상태이지 *기록 측* 목적지가 아닙니다. PBKDF2 레코드에서의 모든 성공적 로그인은 그 길에 Argon2id 레코드를 생성해야 합니다.
+
 ## 02. hsh 2026 아키텍처 렌즈
 
 이 프레임워크는 다섯 개의 핵심 계층으로 구성되며, 각 계층은 특정 범주의 운영 리스크를 완화하도록 설계되었습니다.
@@ -148,11 +160,93 @@ hsh 같은 프레임워크의 필요성을 이해하려면, 비밀번호 해시�
 
 이 과정은 최종 사용자에게 완전히 투명합니다. 결과적으로 가장 활발한 계정들이 첫날에 최고 보안 계층으로 이전되며, 시간이 지남에 따라 은행의 공격면이 자연스럽게 극적으로 줄어듭니다.
 
+### 구현 패턴 — `verify_and_upgrade` 디스패치
+
+인증 서비스 내부의 통합 표면은 작습니다. 레거시 코드 경로는 폴백으로 남고, 새 코드 경로가 디스패처가 됩니다.
+
+```rust
+use hsh::{Hasher, UpgradeResult};
+
+struct UserRecord {
+    username: String,
+    password_hash: String, // PHC string
+}
+
+async fn authenticate(user: UserRecord, password_attempt: &str) -> Result<bool, AuthError> {
+    let hasher = Hasher::new();
+    match hasher.verify_and_upgrade(password_attempt, &user.password_hash) {
+        Ok(UpgradeResult::Verified(is_valid)) => Ok(is_valid),
+        Ok(UpgradeResult::Upgraded(new_hash)) => {
+            db::update_user_hash(&user.username, new_hash).await?;
+            Ok(true)
+        }
+        Err(_) => Err(AuthError::InvalidCredentials),
+    }
+}
+```
+
+세 가지 속성이 중요합니다.
+
+- **상태 인식.** `verify_and_upgrade`는 PHC 문자열 접두어를 검사합니다. 알고리즘 마커가 레거시이면, 프레임워크는 구성된 Argon2id 정책에 대해 재해싱을 자동으로 트리거합니다. 호출 측 코드에는 분기가 없습니다.
+- **원자성.** 재해싱은 레거시 검증이 성공한 뒤에만, 동일한 인증 이벤트 안에서 일어납니다. 별도의 배치 작업도, 예약된 이전 창도, 되돌릴 파괴적 대량 이전도 없습니다.
+- **영속화.** `UpgradeResult::Upgraded` 변형은 새 PHC 문자열을 담습니다. 애플리케이션은 레거시 레코드에 대해 이미 존재하는 동일한 데이터 경로를 통해 그것을 영속화합니다 — 병렬 기록 표면도, 2단계 기록 프로토콜도 없습니다.
+
+**실패 모드.** 업그레이드 기록 도중 데이터베이스 기록이 실패하거나 KMS가 잠시 도달 불가능해지더라도, 세션은 레거시 해시에 대해 여전히 성공하고 레코드는 옛 알고리즘에 머뭅니다. 다음 성공적 로그인이 업그레이드를 재시도합니다. 절반만 이전된 상태도 사용자에게 보이는 실패도 없습니다 — 이전은 로그인 이벤트에 걸쳐 단조롭게 진행되며, 실패한 업그레이드의 레코드당 비용은 정확히 다음 로그인에서의 한 번의 추가 재시도입니다.
+
 ## 04. HSM / KMS 인터록을 통한 페퍼링된 해시
 
 표준 비밀번호 해싱은 직접적인 데이터베이스 유출에 대해 보호하지만, 공격자가 데이터베이스(해시와 솔트)를 모두 확보하면 오프라인 해독을 실행할 수 있습니다.
 
 hsh는 견고한 "페퍼링된" 보안 계층을 도입합니다. Hardware Security Module (HSM)이나 클라우드 네이티브 Key Management Service (KMS)와 통합함으로써, 최종 Argon2id 출력은 보안 하드웨어 경계를 결코 벗어나지 않는 고엔트로피 키로 암호학적으로 래핑됩니다. 사용자 데이터베이스가 유출되더라도, 공격자가 확보하는 것은 암호화된 블롭뿐입니다. 은행의 물리적으로 격리된 HSM 인프라까지 침해하지 않고는 비밀번호 해독을 시작할 수 없습니다.
+
+### 구현 패턴 — HSM 기반 페퍼링된 Argon2id
+
+페퍼는 구성 파일이 아니라 요청 시점에 HSM에서 조달됩니다. `Argon2::new_with_secret`은 문자열 연결이 아니라 알고리즘의 시크릿 매개변수를 통해 그것을 소비합니다.
+
+```rust
+use argon2::{
+    Argon2, Algorithm, Version, Params,
+    PasswordHasher, PasswordVerifier,
+    password_hash::{PasswordHash, SaltString, rand_core::OsRng},
+};
+
+async fn authenticate_with_hsm(
+    user: UserRecord,
+    password_attempt: &str,
+) -> Result<bool, AuthError> {
+    let pepper = hsm::client::get_secret("production-password-pepper").await?;
+    let hasher = Argon2::new_with_secret(
+        &pepper,
+        Algorithm::Argon2id,
+        Version::V0x13,
+        Params::default(),
+    )
+    .map_err(|_| AuthError::Internal)?;
+
+    let parsed = PasswordHash::new(&user.password_hash)
+        .map_err(|_| AuthError::InvalidCredentials)?;
+    if hasher.verify_password(password_attempt.as_bytes(), &parsed).is_ok() {
+        if is_legacy_hash(&user.password_hash) {
+            let new_hash = hasher
+                .hash_password(
+                    password_attempt.as_bytes(),
+                    &SaltString::generate(&mut OsRng),
+                )
+                .map_err(|_| AuthError::Internal)?
+                .to_string();
+            db::update_user_hash(&user.username, new_hash).await?;
+        }
+        return Ok(true);
+    }
+    Err(AuthError::InvalidCredentials)
+}
+```
+
+이 형태에서 DORA에 정렬된 세 가지 결과가 도출됩니다.
+
+- **키 관리 문제로서의 키 회전.** 페퍼는 데이터베이스가 아니라 HSM/KMS 경계 뒤에 살아 있습니다. 회전은 사용자 자산 전반의 재해싱 캠페인이 아니라 키 관리 변경이 됩니다. 새 해시는 현재 페퍼 버전에 결속되고, 옛 해시는 자연스럽게 업그레이드될 때까지 결속된 버전 아래에서 검증됩니다.
+- **직무 분리.** 페퍼를 읽는 서비스 신원은 감사 가능하고 최소 권한이어야 합니다. 해당 HSM 권한 없이 데이터베이스를 완전히 유출해도 해독 가능한 것은 나오지 않습니다. 데이터베이스 없이 HSM 권한만 침해해도 조준 가능한 것은 나오지 않습니다. 어느 한쪽 단일 실패의 폭발 반경은 한정됩니다.
+- **길이 확장과 연결 버그 회피.** 문자열 연결 대신 Argon2의 시크릿 매개변수를 사용함으로써 길이 확장, 잘못 타이핑된 UTF-8 연결, 솔트/페퍼 순서 버그 등 한 부류 전체의 암호학적 함정이 구현 표면에서 제거됩니다.
 
 ## 05. 규제 정렬: DORA, Basel III, SM&CR
 

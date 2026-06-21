@@ -122,6 +122,18 @@ Para entender la necesidad de un framework como hsh hay que entender el ciclo de
 
 **La cadena de suministro de librerías C.** Históricamente, el middleware bancario ha dependido de librerías como `argonautica` o de bindings directos a C para el hashing. Estas librerías arrastran un riesgo oculto de cadena de suministro: un único buffer overflow en el módulo de autenticación puede derivar en ejecución remota de código (RCE) en la capa más privilegiada del stack bancario.
 
+### Comparativa de algoritmos — resistencia hardware y superficie de ajuste
+
+Los tres algoritmos que un banco encuentra de forma realista en un corpus de migración se diferencian menos por la elección de la primitiva criptográfica y más por cómo envejecen bajo presión del hardware. La tabla siguiente resume la postura práctica.
+
+| Algoritmo | Memory-hard | Resistencia GPU / ASIC | Superficie de ajuste | Estado en 2026 |
+| ---- | ---- | ---- | ---- | ---- |
+| **PBKDF2** | No | Baja — vectoriza sobre GPU; sub-milisegundo por intento en hardware de consumo. | Solo número de iteraciones. | Legado. Aceptable únicamente como fallback en el lado de verificación durante la migración. |
+| **scrypt** | Sí (modesto) | Media — el coste de memoria frena granjas GPU simples; amortizable en ASIC a escala. | `N` (CPU/memoria), `r` (tamaño de bloque), `p` (paralelismo). | Depreciado para greenfield. Activo en corpus de migración. |
+| **Argon2id** | Sí (alto) | Alta — duro en memoria y en tiempo; resiste ataques de canal lateral y TMTO. | Coste de memoria (`m`), coste de tiempo (`t`), paralelismo (`p`), secreto (pepper). | Predeterminado recomendado. OWASP, borrador NIST SP 800-63B-4, FedRAMP. |
+
+La conclusión para el plan de migración es estrecha: PBKDF2 es un estado *del lado de verificación*, no un destino *del lado de escritura*. Cada login exitoso sobre un registro PBKDF2 debe producir un registro Argon2id a la salida.
+
 ## 02. La lente de arquitectura hsh 2026
 
 El framework se estructura en cinco capas principales, cada una diseñada para mitigar una categoría específica de riesgo operativo.
@@ -148,11 +160,93 @@ Cuando un usuario envía sus credenciales, hsh lee la cadena Password Hashing Co
 
 El proceso es totalmente transparente para el usuario final. Migra eficazmente las cuentas más activas al nivel de seguridad más alto desde el día uno, reduciendo de forma orgánica y drástica la superficie de ataque del banco con el tiempo.
 
+### Patrón de implementación — despacho `verify_and_upgrade`
+
+La superficie de integración dentro de un servicio de autenticación es reducida. La ruta de código legada permanece como fallback; la nueva ruta de código es el despachador.
+
+```rust
+use hsh::{Hasher, UpgradeResult};
+
+struct UserRecord {
+    username: String,
+    password_hash: String, // PHC string
+}
+
+async fn authenticate(user: UserRecord, password_attempt: &str) -> Result<bool, AuthError> {
+    let hasher = Hasher::new();
+    match hasher.verify_and_upgrade(password_attempt, &user.password_hash) {
+        Ok(UpgradeResult::Verified(is_valid)) => Ok(is_valid),
+        Ok(UpgradeResult::Upgraded(new_hash)) => {
+            db::update_user_hash(&user.username, new_hash).await?;
+            Ok(true)
+        }
+        Err(_) => Err(AuthError::InvalidCredentials),
+    }
+}
+```
+
+Tres propiedades importan:
+
+- **Consciencia de estado.** `verify_and_upgrade` inspecciona el prefijo de la cadena PHC. Si el marcador de algoritmo es legado, el framework dispara el re-hash de forma automática contra la política Argon2id configurada. Sin ramificaciones en el código que invoca.
+- **Atomicidad.** El re-hash ocurre solo después de que la verificación legada tenga éxito, dentro del mismo evento de autenticación. No hay batch job aparte, no hay ventana de migración planificada y no hay migración masiva destructiva que revertir.
+- **Persistencia.** La variante `UpgradeResult::Upgraded` transporta la nueva cadena PHC. La aplicación la persiste por la misma ruta de datos que ya existe para el registro legado — sin superficie de escritura paralela, sin protocolo de escritura en dos fases.
+
+**Modos de fallo.** Si la escritura en base de datos falla o el KMS queda brevemente inalcanzable durante la escritura del upgrade, la sesión sigue siendo exitosa contra el hash legado y el registro permanece en el algoritmo antiguo. El siguiente login exitoso reintenta el upgrade. No hay estado migrado a medias y no hay fallo visible para el usuario — la migración es monótona a lo largo de los eventos de login, y el coste por registro de un upgrade fallido es exactamente un reintento extra en el próximo login.
+
 ## 04. Hashes con pepper vía interlock HSM / KMS
 
 El hashing de contraseñas estándar protege frente a fugas directas de base de datos, pero si un atacante obtiene tanto la base de datos (hashes y salts), puede ejecutar cracking offline.
 
 hsh introduce una capa de seguridad robusta de «peppering». Al integrarse con Hardware Security Modules (HSM) o con servicios cloud-native de gestión de claves (KMS), la salida final de Argon2id se envuelve criptográficamente con una clave de alta entropía que nunca abandona la frontera de hardware seguro. Si la base de datos de usuarios se exfiltra, el atacante solo dispone de blobs cifrados. No puede empezar a romper contraseñas sin vulnerar también la infraestructura HSM físicamente aislada del banco.
+
+### Patrón de implementación — Argon2id con pepper respaldado por HSM
+
+El pepper se obtiene del HSM en el momento de la petición, no de un archivo de configuración. `Argon2::new_with_secret` lo consume a través del parámetro secret del algoritmo, no mediante concatenación de cadenas.
+
+```rust
+use argon2::{
+    Argon2, Algorithm, Version, Params,
+    PasswordHasher, PasswordVerifier,
+    password_hash::{PasswordHash, SaltString, rand_core::OsRng},
+};
+
+async fn authenticate_with_hsm(
+    user: UserRecord,
+    password_attempt: &str,
+) -> Result<bool, AuthError> {
+    let pepper = hsm::client::get_secret("production-password-pepper").await?;
+    let hasher = Argon2::new_with_secret(
+        &pepper,
+        Algorithm::Argon2id,
+        Version::V0x13,
+        Params::default(),
+    )
+    .map_err(|_| AuthError::Internal)?;
+
+    let parsed = PasswordHash::new(&user.password_hash)
+        .map_err(|_| AuthError::InvalidCredentials)?;
+    if hasher.verify_password(password_attempt.as_bytes(), &parsed).is_ok() {
+        if is_legacy_hash(&user.password_hash) {
+            let new_hash = hasher
+                .hash_password(
+                    password_attempt.as_bytes(),
+                    &SaltString::generate(&mut OsRng),
+                )
+                .map_err(|_| AuthError::Internal)?
+                .to_string();
+            db::update_user_hash(&user.username, new_hash).await?;
+        }
+        return Ok(true);
+    }
+    Err(AuthError::InvalidCredentials)
+}
+```
+
+De esta forma se desprenden tres consecuencias alineadas con DORA:
+
+- **Rotación de claves como problema de gestión de claves.** El pepper vive detrás de la frontera HSM/KMS, no en la base de datos. La rotación se vuelve un cambio de gestión de claves, no una campaña de re-hash en todo el parque de usuarios. Los nuevos hashes se vinculan a la versión actual del pepper; los hashes antiguos se verifican bajo su versión vinculada hasta que se actualicen de forma natural.
+- **Segregación de funciones.** La identidad de servicio que lee el pepper debe ser auditable y de mínimo privilegio. Una exfiltración completa de base de datos sin el permiso HSM correspondiente no entrega nada crackeable. Un compromiso del permiso HSM sin la base de datos no entrega nada direccionable. El radio de impacto de cualquiera de los dos fallos aislados queda acotado.
+- **Evitar fallos de extensión de longitud y de concatenación.** Usar el parámetro secret de Argon2 en lugar de concatenación de cadenas elimina toda una clase de errores criptográficos — extensión de longitud, concatenación UTF-8 mal tipada, fallos de orden de salt/pepper — de la superficie de implementación.
 
 ## 05. Alineación regulatoria: DORA, Basel III y SM&CR
 

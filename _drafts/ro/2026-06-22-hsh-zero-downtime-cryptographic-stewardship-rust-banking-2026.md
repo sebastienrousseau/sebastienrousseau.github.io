@@ -122,6 +122,18 @@ Pentru a înțelege necesitatea unui cadru precum hsh, trebuie să înțelegem c
 
 **Lanțul de aprovizionare al bibliotecilor C.** Istoric, middleware-ul bancar s-a bazat pe biblioteci precum `argonautica` sau pe binding-uri C brute pentru hashing. Aceste biblioteci poartă un risc ascuns de lanț de aprovizionare: o singură depășire de buffer de memorie în modulul de autentificare poate duce la execuție de cod la distanță (RCE) la cel mai privilegiat strat al stivei bancare.
 
+### Comparație de algoritmi — rezistență hardware și suprafață de reglare
+
+Cei trei algoritmi pe care o bancă îi întâlnește realist într-un corpus de migrare diferă mai puțin în alegerea primitivei criptografice și mai mult în modul în care îmbătrânesc sub presiunea hardware-ului. Tabelul de mai jos sintetizează postura practică.
+
+| Algorithm | Memory-hard | GPU / ASIC resistance | Tuning surface | 2026 status |
+| ---- | ---- | ---- | ---- | ---- |
+| **PBKDF2** | No | Low — vectorises on GPU; sub-millisecond per guess on commodity hardware. | Iteration count only. | Legacy. Acceptable only as a verify-side fallback during migration. |
+| **scrypt** | Yes (modest) | Medium — memory cost defeats simple GPU farms; ASIC-amortisable at scale. | `N` (CPU/memory), `r` (block size), `p` (parallelism). | Deprecated for greenfield. Active in migration corpora. |
+| **Argon2id** | Yes (high) | High — memory- and time-hard; resists side-channel and TMTO attacks. | Memory cost (`m`), time cost (`t`), parallelism (`p`), secret (pepper). | Recommended default. OWASP, NIST SP 800-63B-4 draft, FedRAMP. |
+
+Concluzia pentru planul de migrare este îngustă: PBKDF2 este o stare *de partea verificării*, nu o destinație *de partea scrierii*. Fiecare autentificare reușită pe o înregistrare PBKDF2 ar trebui să producă o înregistrare Argon2id la ieșire.
+
 ## 02. Lentila arhitecturală hsh 2026
 
 Cadrul este structurat pe cinci straturi de bază, fiecare proiectat pentru a atenua o categorie specifică de risc operațional.
@@ -148,11 +160,93 @@ Când un utilizator își trimite credențialele, hsh citește șirul Password H
 
 Acest proces este complet transparent pentru utilizatorul final. Migrează efectiv cele mai active conturi la cel mai înalt nivel de securitate din prima zi, reducând dramatic suprafața de atac a băncii în mod organic, în timp.
 
+### Tipar de implementare — dispatch `verify_and_upgrade`
+
+Suprafața de integrare în interiorul unui serviciu de autentificare este mică. Calea de cod moștenită rămâne ca fallback; noua cale de cod este dispecerul.
+
+```rust
+use hsh::{Hasher, UpgradeResult};
+
+struct UserRecord {
+    username: String,
+    password_hash: String, // PHC string
+}
+
+async fn authenticate(user: UserRecord, password_attempt: &str) -> Result<bool, AuthError> {
+    let hasher = Hasher::new();
+    match hasher.verify_and_upgrade(password_attempt, &user.password_hash) {
+        Ok(UpgradeResult::Verified(is_valid)) => Ok(is_valid),
+        Ok(UpgradeResult::Upgraded(new_hash)) => {
+            db::update_user_hash(&user.username, new_hash).await?;
+            Ok(true)
+        }
+        Err(_) => Err(AuthError::InvalidCredentials),
+    }
+}
+```
+
+Trei proprietăți contează:
+
+- **Conștiență de stare.** `verify_and_upgrade` inspectează prefixul șirului PHC. Dacă marcatorul de algoritm este moștenit, cadrul declanșează automat re-hashing-ul împotriva politicii Argon2id configurate. Fără ramificări în codul apelant.
+- **Atomicitate.** Re-hashing-ul se întâmplă doar după ce verificarea moștenită reușește, în interiorul aceluiași eveniment de autentificare. Nu există un job batch separat, nicio fereastră de migrare programată și nicio migrare în masă distructivă de derulat înapoi.
+- **Persistență.** Varianta `UpgradeResult::Upgraded` poartă noul șir PHC. Aplicația îl persistă prin aceeași cale de date care există deja pentru înregistrarea moștenită — nicio suprafață de scriere paralelă, niciun protocol de scriere în două faze.
+
+**Moduri de eșec.** Dacă scrierea în baza de date eșuează sau KMS-ul este temporar inaccesibil în timpul scrierii actualizării, sesiunea reușește totuși împotriva hash-ului moștenit, iar înregistrarea rămâne pe vechiul algoritm. Următoarea autentificare reușită reia actualizarea. Nu există stare migrată pe jumătate și niciun eșec vizibil utilizatorului — migrarea este monotonă între evenimentele de autentificare, iar costul per înregistrare al unei actualizări eșuate este exact o reluare suplimentară la următoarea autentificare.
+
 ## 04. Hash-uri „peppered" prin interblocare HSM / KMS
 
 Hashing-ul standard al parolelor protejează împotriva scurgerilor directe ale bazei de date, dar dacă un atacator obține atât baza de date (hash-uri, cât și sare), poate executa spargere offline.
 
 hsh introduce un strat robust de securitate „peppered". Prin integrarea cu Module Hardware de Securitate (HSM) sau cu servicii cloud-native de gestionare a cheilor (KMS), ieșirea Argon2id finală este împachetată criptografic cu o cheie de entropie ridicată care nu părăsește niciodată frontiera hardware sigură. Dacă baza de date a utilizatorilor este exfiltrată, atacatorul deține doar blob-uri criptate. Nu poate începe să spargă parole fără să spargă și infrastructura HSM izolată fizic a băncii.
+
+### Tipar de implementare — Argon2id „peppered" susținut de HSM
+
+Pepper-ul este obținut de la HSM în momentul cererii, nu dintr-un fișier de configurare. `Argon2::new_with_secret` îl consumă prin parametrul secret al algoritmului, nu prin concatenare de șiruri.
+
+```rust
+use argon2::{
+    Argon2, Algorithm, Version, Params,
+    PasswordHasher, PasswordVerifier,
+    password_hash::{PasswordHash, SaltString, rand_core::OsRng},
+};
+
+async fn authenticate_with_hsm(
+    user: UserRecord,
+    password_attempt: &str,
+) -> Result<bool, AuthError> {
+    let pepper = hsm::client::get_secret("production-password-pepper").await?;
+    let hasher = Argon2::new_with_secret(
+        &pepper,
+        Algorithm::Argon2id,
+        Version::V0x13,
+        Params::default(),
+    )
+    .map_err(|_| AuthError::Internal)?;
+
+    let parsed = PasswordHash::new(&user.password_hash)
+        .map_err(|_| AuthError::InvalidCredentials)?;
+    if hasher.verify_password(password_attempt.as_bytes(), &parsed).is_ok() {
+        if is_legacy_hash(&user.password_hash) {
+            let new_hash = hasher
+                .hash_password(
+                    password_attempt.as_bytes(),
+                    &SaltString::generate(&mut OsRng),
+                )
+                .map_err(|_| AuthError::Internal)?
+                .to_string();
+            db::update_user_hash(&user.username, new_hash).await?;
+        }
+        return Ok(true);
+    }
+    Err(AuthError::InvalidCredentials)
+}
+```
+
+Din această formă decurg trei consecințe aliniate cu DORA:
+
+- **Rotația cheii ca problemă de management al cheilor.** Pepper-ul trăiește în spatele frontierei HSM/KMS, nu în baza de date. Rotația devine o schimbare de management al cheilor, nu o campanie de re-hashing pe întregul parc de utilizatori. Hash-urile noi se leagă de versiunea curentă a pepper-ului; hash-urile vechi se verifică sub versiunea lor legată până când se actualizează în mod natural.
+- **Separarea atribuțiilor.** Identitatea de serviciu care citește pepper-ul trebuie să fie auditabilă și cu privilegii minime. O exfiltrare completă a bazei de date fără grantul HSM corespunzător nu produce nimic ce poate fi spart. Un compromis al grantului HSM fără baza de date nu produce nimic adresabil. Raza de impact a oricăruia dintre eșecurile singulare este limitată.
+- **Evitarea bug-urilor de extensie a lungimii și de concatenare.** Folosirea parametrului secret al Argon2 în locul concatenării de șiruri elimină o întreagă clasă de capcane criptografice — extensia lungimii, concatenarea UTF-8 greșit tipizată, bug-urile de ordonare a sării/pepper-ului — din suprafața de implementare.
 
 ## 05. Alinierea de reglementare: DORA, Basel III și SM&CR
 

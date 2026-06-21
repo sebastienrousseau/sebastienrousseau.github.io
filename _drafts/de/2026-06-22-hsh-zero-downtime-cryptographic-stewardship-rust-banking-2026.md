@@ -122,6 +122,18 @@ Um die Notwendigkeit eines Frameworks wie hsh zu verstehen, muss man den Lebensz
 
 **Die C-Bibliotheks-Lieferkette.** Historisch stützte sich Banking-Middleware für Hashing auf Bibliotheken wie `argonautica` oder rohe C-Bindings. Diese Bibliotheken tragen ein verstecktes Lieferkettenrisiko: Ein einziger Memory-Buffer-Overflow im Authentifizierungsmodul kann zu Remote Code Execution (RCE) auf der privilegiertesten Schicht des Banking-Stacks führen.
 
+### Algorithmenvergleich — Hardware-Resistenz und Tuning-Fläche
+
+Die drei Algorithmen, denen eine Bank in einem Migrationsbestand realistisch begegnet, unterscheiden sich weniger in der Wahl der kryptografischen Primitive als darin, wie sie unter Hardware-Druck altern. Die folgende Tabelle fasst die praktische Lage zusammen.
+
+| Algorithmus | Speicherhart | GPU-/ASIC-Resistenz | Tuning-Fläche | Status 2026 |
+| ---- | ---- | ---- | ---- | ---- |
+| **PBKDF2** | Nein | Niedrig — vektorisiert auf GPU; Sub-Millisekunden pro Rateversuch auf Standard-Hardware. | Nur Iterationszahl. | Legacy. Nur als Verify-seitiger Fallback während der Migration vertretbar. |
+| **scrypt** | Ja (moderat) | Mittel — Speicherkosten besiegen einfache GPU-Farmen; bei Skalierung ASIC-amortisierbar. | `N` (CPU/Speicher), `r` (Blockgröße), `p` (Parallelität). | Für Greenfield nicht mehr empfohlen. In Migrationsbeständen aktiv. |
+| **Argon2id** | Ja (hoch) | Hoch — speicher- und zeithart; widersteht Seitenkanal- und TMTO-Angriffen. | Speicherkosten (`m`), Zeitkosten (`t`), Parallelität (`p`), Geheimnis (Pepper). | Empfohlener Standard. OWASP, NIST SP 800-63B-4 (Entwurf), FedRAMP. |
+
+Die Schlussfolgerung für den Migrationsplan ist eng gefasst: PBKDF2 ist ein *Verify-seitiger* Zustand, kein *Write-seitiges* Ziel. Jeder erfolgreiche Login auf einem PBKDF2-Datensatz sollte beim Verlassen einen Argon2id-Datensatz erzeugen.
+
 ## 02. Die Architektur-Linse von hsh 2026
 
 Das Framework ist über fünf Kernschichten strukturiert, jede gebaut, um eine spezifische Kategorie operativer Risiken zu mindern.
@@ -148,11 +160,93 @@ Wenn ein Nutzer seine Credentials einreicht, liest hsh den gespeicherten Passwor
 
 Dieser Vorgang ist für den Endnutzer vollständig transparent. Er migriert die aktivsten Konten faktisch am ersten Tag auf die höchste Sicherheitsstufe und reduziert die Angriffsfläche der Bank organisch und massiv über die Zeit.
 
+### Implementierungsmuster — `verify_and_upgrade`-Dispatch
+
+Die Integrationsfläche innerhalb eines Authentifizierungsdienstes ist klein. Der Legacy-Codepfad bleibt als Fallback bestehen; der neue Codepfad ist der Dispatcher.
+
+```rust
+use hsh::{Hasher, UpgradeResult};
+
+struct UserRecord {
+    username: String,
+    password_hash: String, // PHC string
+}
+
+async fn authenticate(user: UserRecord, password_attempt: &str) -> Result<bool, AuthError> {
+    let hasher = Hasher::new();
+    match hasher.verify_and_upgrade(password_attempt, &user.password_hash) {
+        Ok(UpgradeResult::Verified(is_valid)) => Ok(is_valid),
+        Ok(UpgradeResult::Upgraded(new_hash)) => {
+            db::update_user_hash(&user.username, new_hash).await?;
+            Ok(true)
+        }
+        Err(_) => Err(AuthError::InvalidCredentials),
+    }
+}
+```
+
+Drei Eigenschaften sind entscheidend:
+
+- **Zustandsbewusstsein.** `verify_and_upgrade` inspiziert das Präfix des PHC-Strings. Ist der Algorithmus-Marker Legacy, löst das Framework das Re-Hashing automatisch gegen die konfigurierte Argon2id-Policy aus. Keine Verzweigung im aufrufenden Code.
+- **Atomarität.** Re-Hashing geschieht erst nach erfolgreicher Legacy-Verifikation, innerhalb desselben Authentifizierungsereignisses. Es gibt keinen separaten Batch-Job, kein geplantes Migrationsfenster und keine destruktive Massendaten-Migration, die zurückgerollt werden müsste.
+- **Persistenz.** Die Variante `UpgradeResult::Upgraded` trägt den neuen PHC-String. Die Anwendung persistiert ihn über denselben Datenpfad, der für den Legacy-Datensatz bereits besteht — keine parallele Schreibfläche, kein Zwei-Phasen-Schreibprotokoll.
+
+**Fehlermodi.** Schlägt der Datenbankschreibvorgang fehl oder ist das KMS während des Upgrade-Schreibens kurzzeitig nicht erreichbar, gelingt die Sitzung weiterhin gegen den Legacy-Hash und der Datensatz verbleibt auf dem alten Algorithmus. Der nächste erfolgreiche Login wiederholt das Upgrade. Es gibt keinen halbmigrierten Zustand und keinen für Nutzer sichtbaren Ausfall — die Migration ist über Login-Ereignisse hinweg monoton, und die Kosten pro Datensatz für ein gescheitertes Upgrade betragen genau einen zusätzlichen Versuch beim nächsten Login.
+
 ## 04. Gepepperte Hashes über HSM-/KMS-Interlock
 
 Standard-Passwort-Hashing schützt gegen direkte Datenbank-Leaks; gewinnt ein Angreifer jedoch sowohl Hashes als auch Salts, lässt sich Offline-Cracking ausführen.
 
 hsh führt eine robuste „Pepper"-Sicherheitsschicht ein. Durch Integration mit Hardware Security Modules (HSMs) oder Cloud-nativen Key-Management-Services (KMS) wird die finale Argon2id-Ausgabe kryptografisch mit einem hochentropischen Schlüssel umhüllt, der die sichere Hardware-Grenze nie verlässt. Wird die Nutzerdatenbank exfiltriert, besitzt der Angreifer nur verschlüsselte Blobs. Er kann mit dem Cracken der Passwörter nicht beginnen, ohne zugleich die physisch isolierte HSM-Infrastruktur der Bank zu brechen.
+
+### Implementierungsmuster — HSM-gestütztes gepeppertes Argon2id
+
+Der Pepper wird zur Anfragezeit aus dem HSM bezogen, nicht aus einer Konfigurationsdatei. `Argon2::new_with_secret` nimmt ihn über den Secret-Parameter des Algorithmus entgegen, nicht per String-Konkatenation.
+
+```rust
+use argon2::{
+    Argon2, Algorithm, Version, Params,
+    PasswordHasher, PasswordVerifier,
+    password_hash::{PasswordHash, SaltString, rand_core::OsRng},
+};
+
+async fn authenticate_with_hsm(
+    user: UserRecord,
+    password_attempt: &str,
+) -> Result<bool, AuthError> {
+    let pepper = hsm::client::get_secret("production-password-pepper").await?;
+    let hasher = Argon2::new_with_secret(
+        &pepper,
+        Algorithm::Argon2id,
+        Version::V0x13,
+        Params::default(),
+    )
+    .map_err(|_| AuthError::Internal)?;
+
+    let parsed = PasswordHash::new(&user.password_hash)
+        .map_err(|_| AuthError::InvalidCredentials)?;
+    if hasher.verify_password(password_attempt.as_bytes(), &parsed).is_ok() {
+        if is_legacy_hash(&user.password_hash) {
+            let new_hash = hasher
+                .hash_password(
+                    password_attempt.as_bytes(),
+                    &SaltString::generate(&mut OsRng),
+                )
+                .map_err(|_| AuthError::Internal)?
+                .to_string();
+            db::update_user_hash(&user.username, new_hash).await?;
+        }
+        return Ok(true);
+    }
+    Err(AuthError::InvalidCredentials)
+}
+```
+
+Aus dieser Form ergeben sich drei DORA-konforme Konsequenzen:
+
+- **Schlüsselrotation als Key-Management-Problem.** Der Pepper lebt hinter der HSM-/KMS-Grenze, nicht in der Datenbank. Rotation wird zu einem Key-Management-Vorgang, nicht zu einer Re-Hashing-Kampagne über den gesamten Nutzerbestand. Neue Hashes binden an die aktuelle Pepper-Version; alte Hashes verifizieren unter ihrer gebundenen Version, bis sie auf natürlichem Weg aktualisiert werden.
+- **Funktionstrennung.** Die Service-Identität, die den Pepper liest, muss auditierbar und minimal privilegiert sein. Eine vollständige Datenbank-Exfiltration ohne den entsprechenden HSM-Grant liefert nichts Knackbares. Eine Kompromittierung des HSM-Grants ohne die Datenbank liefert nichts Adressierbares. Der Wirkungsradius eines einzelnen Ausfalls ist begrenzt.
+- **Length-Extension- und Konkatenationsfehler vermeiden.** Die Nutzung des Argon2-Secret-Parameters anstelle von String-Konkatenation entfernt eine ganze Klasse kryptografischer Fallstricke — Length-Extension, falsch typisierte UTF-8-Konkatenation, Reihenfolgenfehler zwischen Salt und Pepper — vollständig aus der Implementierungsfläche.
 
 ## 05. Regulatorische Ausrichtung: DORA, Basel III und SM&CR
 

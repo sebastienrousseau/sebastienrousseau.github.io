@@ -122,6 +122,18 @@ twitter_image_alt: "Black and White Portrait of Sebastien Rousseau"
 
 **שרשרת האספקה של ספריות C.** היסטורית, middleware בנקאי הסתמך על ספריות כמו `argonautica` או כריכות C גולמיות עבור hashing. ספריות אלה נושאות סיכון נסתר של שרשרת אספקה: גלישת חוצץ-זיכרון יחידה במודול האימות עלולה להוביל לביצוע קוד מרחוק (RCE) בשכבה המורשתית ביותר של הערימה הבנקאית.
 
+### השוואת אלגוריתמים — עמידות חומרה ומשטח כוונון
+
+שלושת האלגוריתמים שבנק נתקל בהם באופן מציאותי בקורפוס הגירה נבדלים פחות בבחירת הפרימיטיב הקריפטוגרפי ויותר באופן שבו הם מתיישנים תחת לחץ חומרה. הטבלה שלהלן מסכמת את התנוחה המעשית.
+
+| Algorithm | Memory-hard | GPU / ASIC resistance | Tuning surface | 2026 status |
+| ---- | ---- | ---- | ---- | ---- |
+| **PBKDF2** | No | Low — vectorises on GPU; sub-millisecond per guess on commodity hardware. | Iteration count only. | Legacy. Acceptable only as a verify-side fallback during migration. |
+| **scrypt** | Yes (modest) | Medium — memory cost defeats simple GPU farms; ASIC-amortisable at scale. | `N` (CPU/memory), `r` (block size), `p` (parallelism). | Deprecated for greenfield. Active in migration corpora. |
+| **Argon2id** | Yes (high) | High — memory- and time-hard; resists side-channel and TMTO attacks. | Memory cost (`m`), time cost (`t`), parallelism (`p`), secret (pepper). | Recommended default. OWASP, NIST SP 800-63B-4 draft, FedRAMP. |
+
+המסקנה לתוכנית ההגירה צרה: PBKDF2 הוא מצב *צד-אימות*, לא יעד *צד-כתיבה*. כל כניסה מוצלחת על רשומת PBKDF2 צריכה להפיק רשומת Argon2id ביציאה.
+
 ## 02. עדשת ארכיטקטורת hsh 2026
 
 המסגרת בנויה על פני חמש שכבות ליבה, כל אחת מהונדסת להפחתת קטגוריה ספציפית של סיכון תפעולי.
@@ -148,11 +160,93 @@ twitter_image_alt: "Black and White Portrait of Sebastien Rousseau"
 
 תהליך זה שקוף לחלוטין למשתמש הקצה. הוא למעשה מהגר את החשבונות הפעילים ביותר לדרג האבטחה הגבוה ביותר ביום הראשון, ומצמצם דרמטית את משטח התקיפה של הבנק באופן אורגני לאורך זמן.
 
+### תבנית מימוש — שיגור `verify_and_upgrade`
+
+משטח האינטגרציה בתוך שירות אימות הוא קטן. נתיב הקוד המורשתי נשאר כ-fallback; נתיב הקוד החדש הוא ה-dispatcher.
+
+```rust
+use hsh::{Hasher, UpgradeResult};
+
+struct UserRecord {
+    username: String,
+    password_hash: String, // PHC string
+}
+
+async fn authenticate(user: UserRecord, password_attempt: &str) -> Result<bool, AuthError> {
+    let hasher = Hasher::new();
+    match hasher.verify_and_upgrade(password_attempt, &user.password_hash) {
+        Ok(UpgradeResult::Verified(is_valid)) => Ok(is_valid),
+        Ok(UpgradeResult::Upgraded(new_hash)) => {
+            db::update_user_hash(&user.username, new_hash).await?;
+            Ok(true)
+        }
+        Err(_) => Err(AuthError::InvalidCredentials),
+    }
+}
+```
+
+שלוש תכונות חשובות:
+
+- **מודעות-מצב.** `verify_and_upgrade` בוחנת את תחילית מחרוזת ה-PHC. אם סמן האלגוריתם הוא מורשתי, המסגרת מפעילה את ה-rehash אוטומטית מול מדיניות ה-Argon2id המוגדרת. אין הסתעפויות בקוד הקורא.
+- **אטומיות.** Rehashing מתרחש רק לאחר שאימות מורשתי מצליח, בתוך אותו אירוע אימות עצמו. אין משימת batch נפרדת, אין חלון הגירה מתוזמן, ואין הגירה הרסנית בכמות גדולה לשחזר ממנה.
+- **התמדה.** הווריאנט `UpgradeResult::Upgraded` נושא את מחרוזת ה-PHC החדשה. היישום מקיים אותה דרך אותו נתיב נתונים שכבר קיים עבור הרשומה המורשתית — אין משטח כתיבה מקבילי, אין פרוטוקול כתיבה דו-שלבי.
+
+**מצבי כשל.** אם כתיבת מסד הנתונים נכשלת או ה-KMS אינו זמין לרגע במהלך כתיבת השדרוג, המפגש עדיין מצליח מול ה-hash המורשתי והרשומה נשארת על האלגוריתם הישן. הכניסה המוצלחת הבאה תנסה את השדרוג שוב. אין מצב מהגר-חלקית ואין כשל הנראה למשתמש — ההגירה מונוטונית על פני אירועי כניסה, והעלות לרשומה של שדרוג שנכשל היא בדיוק ניסיון נוסף אחד בכניסה הבאה.
+
 ## 04. Hashes מותבלים-Pepper דרך נעילת HSM / KMS
 
 hashing סטנדרטי של סיסמאות מגן מפני דליפות ישירות של מסד הנתונים, אך אם תוקף משיג את מסד הנתונים (hashes ו-salts), הוא יכול לבצע פיצוח אופליין.
 
 hsh מציגה שכבת אבטחה חזקה של "peppered". על ידי שילוב עם Hardware Security Modules (HSMs) או Key Management Services (KMS) ענן-ילידיים, פלט ה-Argon2id הסופי נעטף קריפטוגרפית באמצעות מפתח בעל אנטרופיה גבוהה שלעולם אינו עוזב את גבול החומרה המאובטחת. אם מסד נתוני המשתמשים מוחלץ, התוקף מחזיק רק blobs מוצפנים. הוא אינו יכול להתחיל לפצח סיסמאות מבלי לפרוץ גם לתשתית ה-HSM המבודדת פיזית של הבנק.
+
+### תבנית מימוש — Argon2id מותבל-pepper מגובה-HSM
+
+ה-pepper נשלף מה-HSM בזמן הבקשה, לא מקובץ תצורה. `Argon2::new_with_secret` צורך אותו דרך פרמטר הסוד של האלגוריתם, ולא באמצעות שרשור מחרוזות.
+
+```rust
+use argon2::{
+    Argon2, Algorithm, Version, Params,
+    PasswordHasher, PasswordVerifier,
+    password_hash::{PasswordHash, SaltString, rand_core::OsRng},
+};
+
+async fn authenticate_with_hsm(
+    user: UserRecord,
+    password_attempt: &str,
+) -> Result<bool, AuthError> {
+    let pepper = hsm::client::get_secret("production-password-pepper").await?;
+    let hasher = Argon2::new_with_secret(
+        &pepper,
+        Algorithm::Argon2id,
+        Version::V0x13,
+        Params::default(),
+    )
+    .map_err(|_| AuthError::Internal)?;
+
+    let parsed = PasswordHash::new(&user.password_hash)
+        .map_err(|_| AuthError::InvalidCredentials)?;
+    if hasher.verify_password(password_attempt.as_bytes(), &parsed).is_ok() {
+        if is_legacy_hash(&user.password_hash) {
+            let new_hash = hasher
+                .hash_password(
+                    password_attempt.as_bytes(),
+                    &SaltString::generate(&mut OsRng),
+                )
+                .map_err(|_| AuthError::Internal)?
+                .to_string();
+            db::update_user_hash(&user.username, new_hash).await?;
+        }
+        return Ok(true);
+    }
+    Err(AuthError::InvalidCredentials)
+}
+```
+
+שלוש השלכות מותאמות-DORA נובעות מצורה זו:
+
+- **רוטציית מפתח כבעיית ניהול-מפתחות.** ה-pepper שוכן מאחורי גבול ה-HSM/KMS, לא במסד הנתונים. רוטציה הופכת לשינוי ניהול-מפתחות, לא לקמפיין rehashing על פני נחלת המשתמשים. Hashes חדשים נקשרים לגרסת ה-pepper הנוכחית; hashes ישנים מאומתים תחת הגרסה הקשורה שלהם עד שישודרגו באופן טבעי.
+- **הפרדת תפקידים.** זהות השירות הקוראת את ה-pepper חייבת להיות ניתנת-לביקורת ובעלת הרשאות מינימליות. חילוץ מלא של מסד הנתונים ללא ה-grant המתאים של ה-HSM אינו מניב דבר הניתן-לפיצוח. חיווט HSM שנפרץ ללא מסד הנתונים אינו מניב דבר הניתן-לטיפול. רדיוס ההדף של כל כשל יחיד תחום.
+- **הימנעות מבאגי הרחבת אורך ושרשור.** השימוש בפרמטר הסוד של Argon2 במקום בשרשור מחרוזות מסיר מחלקה שלמה של מלכודות קריפטוגרפיות — הרחבת-אורך, שרשור UTF-8 שגוי-טיפוס, באגי סדר salt/pepper — ממשטח המימוש.
 
 ## 05. התאמה רגולטורית: DORA, Basel III ו-SM&CR
 

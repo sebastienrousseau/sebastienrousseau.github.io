@@ -122,6 +122,18 @@ Theo [Đạo luật Khả năng chống chịu vận hành kỹ thuật số (DO
 
 **Chuỗi cung ứng thư viện C.** Trong lịch sử, phần mềm trung gian ngân hàng đã dựa vào các thư viện như `argonautica` hoặc các binding C thô cho băm. Các thư viện này mang một rủi ro chuỗi cung ứng ẩn: một lần tràn bộ đệm bộ nhớ duy nhất trong module xác thực có thể dẫn tới thực thi mã từ xa (RCE) ở lớp đặc quyền nhất của stack ngân hàng.
 
+### So sánh thuật toán — kháng phần cứng và bề mặt tinh chỉnh
+
+Ba thuật toán mà một ngân hàng thực tế gặp phải trong một kho di trú khác nhau ít về lựa chọn nguyên hàm mật mã và nhiều hơn về cách chúng già đi dưới áp lực phần cứng. Bảng dưới đây tóm tắt tư thế thực tiễn.
+
+| Algorithm | Memory-hard | GPU / ASIC resistance | Tuning surface | 2026 status |
+| ---- | ---- | ---- | ---- | ---- |
+| **PBKDF2** | No | Low — vectorises on GPU; sub-millisecond per guess on commodity hardware. | Iteration count only. | Legacy. Acceptable only as a verify-side fallback during migration. |
+| **scrypt** | Yes (modest) | Medium — memory cost defeats simple GPU farms; ASIC-amortisable at scale. | `N` (CPU/memory), `r` (block size), `p` (parallelism). | Deprecated for greenfield. Active in migration corpora. |
+| **Argon2id** | Yes (high) | High — memory- and time-hard; resists side-channel and TMTO attacks. | Memory cost (`m`), time cost (`t`), parallelism (`p`), secret (pepper). | Recommended default. OWASP, NIST SP 800-63B-4 draft, FedRAMP. |
+
+Kết luận cho kế hoạch di trú rất hẹp: PBKDF2 là một trạng thái *bên xác minh*, không phải một đích đến *bên ghi*. Mỗi lần đăng nhập thành công trên một bản ghi PBKDF2 nên tạo ra một bản ghi Argon2id trên đường ra.
+
 ## 02. Lăng kính kiến trúc hsh 2026
 
 Khuôn khổ được cấu trúc trên năm lớp lõi, mỗi lớp được thiết kế để giảm thiểu một loại rủi ro vận hành cụ thể.
@@ -148,11 +160,93 @@ Khi một người dùng gửi thông tin xác thực, hsh đọc chuỗi Passwo
 
 Quy trình này hoàn toàn trong suốt với người dùng cuối. Nó di trú hiệu quả các tài khoản hoạt động nhất sang tầng bảo mật cao nhất ngay ngày đầu tiên, giảm đáng kể bề mặt tấn công của ngân hàng theo cách hữu cơ theo thời gian.
 
+### Mẫu triển khai — điều phối `verify_and_upgrade`
+
+Bề mặt tích hợp bên trong một dịch vụ xác thực rất nhỏ. Đường mã kế thừa vẫn ở lại như một dự phòng; đường mã mới là bộ điều phối.
+
+```rust
+use hsh::{Hasher, UpgradeResult};
+
+struct UserRecord {
+    username: String,
+    password_hash: String, // PHC string
+}
+
+async fn authenticate(user: UserRecord, password_attempt: &str) -> Result<bool, AuthError> {
+    let hasher = Hasher::new();
+    match hasher.verify_and_upgrade(password_attempt, &user.password_hash) {
+        Ok(UpgradeResult::Verified(is_valid)) => Ok(is_valid),
+        Ok(UpgradeResult::Upgraded(new_hash)) => {
+            db::update_user_hash(&user.username, new_hash).await?;
+            Ok(true)
+        }
+        Err(_) => Err(AuthError::InvalidCredentials),
+    }
+}
+```
+
+Ba thuộc tính quan trọng:
+
+- **Nhận biết trạng thái.** `verify_and_upgrade` kiểm tra tiền tố chuỗi PHC. Nếu dấu thuật toán là kế thừa, khuôn khổ kích hoạt việc băm lại tự động theo chính sách Argon2id đã cấu hình. Không có phân nhánh trong mã gọi.
+- **Tính nguyên tử.** Việc băm lại chỉ xảy ra sau khi xác minh kế thừa thành công, bên trong cùng một sự kiện xác thực. Không có công việc lô riêng biệt, không có cửa sổ di trú đã lên lịch, và không có di trú khối phá huỷ để hoàn nguyên.
+- **Bền vững hoá.** Biến thể `UpgradeResult::Upgraded` mang chuỗi PHC mới. Ứng dụng bền vững hoá nó qua cùng đường dữ liệu đã tồn tại cho bản ghi kế thừa — không có bề mặt ghi song song, không có giao thức ghi hai pha.
+
+**Chế độ thất bại.** Nếu việc ghi cơ sở dữ liệu thất bại hoặc KMS tạm thời không thể truy cập trong quá trình ghi nâng cấp, phiên vẫn thành công đối với băm kế thừa và bản ghi vẫn ở thuật toán cũ. Lần đăng nhập thành công kế tiếp thử lại việc nâng cấp. Không có trạng thái di trú nửa chừng và không có thất bại nhìn thấy được đối với người dùng — di trú đơn điệu xuyên suốt các sự kiện đăng nhập, và chi phí cho mỗi bản ghi của một nâng cấp thất bại đúng bằng một lần thử lại bổ sung ở lần đăng nhập kế tiếp.
+
 ## 04. Băm peppered qua khoá liên động HSM / KMS
 
 Băm mật khẩu tiêu chuẩn bảo vệ chống lại rò rỉ cơ sở dữ liệu trực tiếp, nhưng nếu kẻ tấn công có được cả cơ sở dữ liệu (băm và salt), họ có thể thực thi bẻ khoá ngoại tuyến.
 
 hsh giới thiệu một lớp bảo mật "peppered" mạnh mẽ. Bằng cách tích hợp với Hardware Security Module (HSM) hoặc các dịch vụ quản lý khoá (KMS) cloud-native, kết quả Argon2id cuối cùng được bao bọc về mặt mật mã bằng một khoá entropy cao không bao giờ rời khỏi ranh giới phần cứng an toàn. Nếu cơ sở dữ liệu người dùng bị trích xuất, kẻ tấn công chỉ sở hữu các blob đã mã hoá. Họ không thể bắt đầu bẻ khoá mật khẩu mà không đồng thời xâm nhập hạ tầng HSM cách ly vật lý của ngân hàng.
+
+### Mẫu triển khai — Argon2id peppered được HSM hậu thuẫn
+
+Pepper được lấy từ HSM tại thời điểm yêu cầu, không phải từ một tệp cấu hình. `Argon2::new_with_secret` tiêu thụ nó qua tham số secret của thuật toán, không phải qua nối chuỗi.
+
+```rust
+use argon2::{
+    Argon2, Algorithm, Version, Params,
+    PasswordHasher, PasswordVerifier,
+    password_hash::{PasswordHash, SaltString, rand_core::OsRng},
+};
+
+async fn authenticate_with_hsm(
+    user: UserRecord,
+    password_attempt: &str,
+) -> Result<bool, AuthError> {
+    let pepper = hsm::client::get_secret("production-password-pepper").await?;
+    let hasher = Argon2::new_with_secret(
+        &pepper,
+        Algorithm::Argon2id,
+        Version::V0x13,
+        Params::default(),
+    )
+    .map_err(|_| AuthError::Internal)?;
+
+    let parsed = PasswordHash::new(&user.password_hash)
+        .map_err(|_| AuthError::InvalidCredentials)?;
+    if hasher.verify_password(password_attempt.as_bytes(), &parsed).is_ok() {
+        if is_legacy_hash(&user.password_hash) {
+            let new_hash = hasher
+                .hash_password(
+                    password_attempt.as_bytes(),
+                    &SaltString::generate(&mut OsRng),
+                )
+                .map_err(|_| AuthError::Internal)?
+                .to_string();
+            db::update_user_hash(&user.username, new_hash).await?;
+        }
+        return Ok(true);
+    }
+    Err(AuthError::InvalidCredentials)
+}
+```
+
+Ba hệ quả thẳng hàng với DORA xuất phát từ hình thái này:
+
+- **Xoay vòng khoá như một vấn đề quản lý khoá.** Pepper sống đằng sau ranh giới HSM/KMS, không phải trong cơ sở dữ liệu. Xoay vòng trở thành một thay đổi quản lý khoá, không phải một chiến dịch băm lại trên toàn bộ điền sản người dùng. Các băm mới ràng buộc với phiên bản pepper hiện hành; các băm cũ xác minh dưới phiên bản đã ràng buộc của chúng cho đến khi chúng nâng cấp một cách tự nhiên.
+- **Phân tách nhiệm vụ.** Định danh dịch vụ đọc pepper phải có thể kiểm toán và có đặc quyền tối thiểu. Một sự cố trích xuất toàn bộ cơ sở dữ liệu mà không có quyền HSM tương ứng không đem lại gì có thể bẻ khoá. Một sự cố tổn hại quyền HSM mà không có cơ sở dữ liệu không đem lại gì có thể giải quyết. Bán kính tác động của bất kỳ thất bại đơn lẻ nào đều bị giới hạn.
+- **Tránh lỗi length-extension và nối chuỗi.** Sử dụng tham số secret của Argon2 thay vì nối chuỗi loại bỏ cả một lớp cạm bẫy mật mã — length-extension, nối UTF-8 sai kiểu, lỗi thứ tự salt/pepper — khỏi bề mặt triển khai.
 
 ## 05. Thẳng hàng pháp lý: DORA, Basel III và SM&CR
 

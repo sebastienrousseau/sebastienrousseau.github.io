@@ -122,6 +122,18 @@ Don fahimtar buƙatar tari kamar hsh, dole ne mutum ya fahimci tsawon rayuwar pa
 
 **Jerin samar da C-library.** A tarihi, middleware na banki ya dogara ga libraries kamar `argonautica` ko ɗanyen C bindings don hashing. Waɗannan libraries suna ɗauke da haɗarin jerin samar da kayayyaki na ɓoye: buffer overflow ɗaya na ƙwaƙwalwa a cikin sashin tabbatar da gaskiya na iya haifar da remote code execution (RCE) a layin mafi ƙwararru na tarin banki.
 
+### Kwatancen algorithm — juriya na kayan aiki da farfajiyar daidaitawa
+
+Algorithms guda uku da bankin zai gamu da su a aikace a cikin tarin ƙaura sun bambanta ƙasa da zaɓin primitive na cryptography kuma fiye da yadda suke tsufa a ƙarƙashin matsi na kayan aiki. Tebur ɗin da ke ƙasa ya taƙaita matsayin aikace-aikace.
+
+| Algorithm | Memory-hard | GPU / ASIC resistance | Tuning surface | 2026 status |
+| ---- | ---- | ---- | ---- | ---- |
+| **PBKDF2** | A'a | Ƙanƙanci — yana vectorise akan GPU; ƙasa da millisecond kowane tsammani akan kayan aiki na yau da kullum. | Ƙidayar iteration kawai. | Na gado. Ana yarda kawai a matsayin fallback na verify-side yayin ƙaura. |
+| **scrypt** | Eh (matsakaici) | Matsakaici — kuɗin ƙwaƙwalwa ya doke gonakin GPU masu sauƙi; ana iya amortise ASIC a girma. | `N` (CPU/memory), `r` (girman block), `p` (parallelism). | An gushe ga greenfield. Yana aiki a tarin ƙaura. |
+| **Argon2id** | Eh (high) | High — memory- da time-hard; yana tsayayya da harin side-channel da TMTO. | Kuɗin ƙwaƙwalwa (`m`), kuɗin lokaci (`t`), parallelism (`p`), asiri (pepper). | Tsoho da aka ba da shawarar. OWASP, NIST SP 800-63B-4 draft, FedRAMP. |
+
+Abin da za a ɗauka don tsarin ƙaura kunkuntar ne: PBKDF2 wani yanayi ne na *verify-side*, ba *write-side* makoma ba. Kowace shiga mai nasara akan rikodin PBKDF2 ya kamata ya samar da rikodin Argon2id a fitar.
+
 ## 02. Tabaron Gine-ginen hsh na 2026
 
 An tsara tari a cikin laushi na asali biyar, kowanne an ƙera shi don rage takamaiman nau'in haɗari na aiki.
@@ -148,11 +160,93 @@ Lokacin da mai amfani ya gabatar da shaidunsa, hsh yana karanta string na Passwo
 
 Wannan tsari ya fi gaba ɗaya a fili ga mai amfani na ƙarshe. Yana ƙaurar manyan asusu masu aiki zuwa matakin tsaro mafi koli a rana ɗaya, yana rage ƙofar harin banki na halitta a kan lokaci.
 
+### Tsarin aiwatarwa — `verify_and_upgrade` dispatch
+
+Farfajiyar haɗawa a cikin sabis na tabbatar da gaskiya ƙarami ne. Hanyar code na gado ta kasance a matsayin fallback; sabuwar hanyar code ita ce dispatcher.
+
+```rust
+use hsh::{Hasher, UpgradeResult};
+
+struct UserRecord {
+    username: String,
+    password_hash: String, // PHC string
+}
+
+async fn authenticate(user: UserRecord, password_attempt: &str) -> Result<bool, AuthError> {
+    let hasher = Hasher::new();
+    match hasher.verify_and_upgrade(password_attempt, &user.password_hash) {
+        Ok(UpgradeResult::Verified(is_valid)) => Ok(is_valid),
+        Ok(UpgradeResult::Upgraded(new_hash)) => {
+            db::update_user_hash(&user.username, new_hash).await?;
+            Ok(true)
+        }
+        Err(_) => Err(AuthError::InvalidCredentials),
+    }
+}
+```
+
+Kaddarori uku suna da mahimmanci:
+
+- **Saninya na yanayi.** `verify_and_upgrade` yana duba prefix na PHC string. Idan alamar algorithm ɗin ta gado ce, tari ɗin yana fara sake-hashing ta atomatik a kan manufar Argon2id da aka saita. Babu reshe a cikin code mai kira.
+- **Atomicity.** Sake-hashing yana faruwa ne kawai bayan tabbatar da gado ya yi nasara, a cikin abu ɗaya na tabbatar da gaskiya. Babu wani aikin batch daban, babu taga ƙaura da aka tsara, kuma babu ƙaurar bulk mai lalata don juyawa baya.
+- **Tabbatarwa.** Bambancin `UpgradeResult::Upgraded` yana ɗauke da sabon PHC string. Aikace-aikacen yana tabbatar da shi ta hanyar bayanai iri ɗaya da ke akwai don rikodin gado — babu farfajiyar rubuta a layi ɗaya, babu yarjejeniyar rubutawa mataki biyu.
+
+**Hanyoyin gazawa.** Idan rubutun database ya gaza ko KMS bai isa ba a takaice yayin rubutun haɓakawa, zaman har yanzu yana yin nasara a kan hash na gado kuma rikodin yana kasancewa akan tsohon algorithm. Shiga mai nasara na gaba yana sake gwada haɓakawa. Babu yanayin rabin-ƙaurar kuma babu gazawa mai gani ga mai amfani — ƙaurar tana monotonic a fadin abubuwan shiga, kuma kuɗin kowane rikodi na gazawar haɓakawa shine kawai sake gwadawa ɗaya akan shiga ta gaba.
+
 ## 04. Hashes Masu Peppered ta hanyar HSM / KMS Interlock
 
 Hashing na password na yau da kullum yana karewa daga zubar bayanai na database kai tsaye, amma idan maharin ya sami duka database (hashes da salts), zai iya aiwatar da fashin offline.
 
 hsh yana gabatar da laushin tsaro mai ƙarfi na "peppered". Ta hanyar haɗawa da Hardware Security Modules (HSMs) ko Key Management Services (KMS) na cloud-native, ana naɗe samar da Argon2id na ƙarshe a cryptography tare da maɓalli mai babban entropy wanda ba ya barin iyakar kayan aiki masu aminci. Idan an fitar da database na mai amfani, maharin yana da blobs masu encrypted kawai. Ba zai iya fara fashin passwords ba tare da kuma cin amana ga kayan aikin HSM na banki da aka ware a zahiri ba.
+
+### Tsarin aiwatarwa — Argon2id mai peppered da HSM ke goyon baya
+
+Ana samun pepper daga HSM a lokacin buƙata, ba daga fayil ɗin saiti ba. `Argon2::new_with_secret` yana cinye shi ta hanyar ma'aunin sirri na algorithm, ba ta haɗakar string ba.
+
+```rust
+use argon2::{
+    Argon2, Algorithm, Version, Params,
+    PasswordHasher, PasswordVerifier,
+    password_hash::{PasswordHash, SaltString, rand_core::OsRng},
+};
+
+async fn authenticate_with_hsm(
+    user: UserRecord,
+    password_attempt: &str,
+) -> Result<bool, AuthError> {
+    let pepper = hsm::client::get_secret("production-password-pepper").await?;
+    let hasher = Argon2::new_with_secret(
+        &pepper,
+        Algorithm::Argon2id,
+        Version::V0x13,
+        Params::default(),
+    )
+    .map_err(|_| AuthError::Internal)?;
+
+    let parsed = PasswordHash::new(&user.password_hash)
+        .map_err(|_| AuthError::InvalidCredentials)?;
+    if hasher.verify_password(password_attempt.as_bytes(), &parsed).is_ok() {
+        if is_legacy_hash(&user.password_hash) {
+            let new_hash = hasher
+                .hash_password(
+                    password_attempt.as_bytes(),
+                    &SaltString::generate(&mut OsRng),
+                )
+                .map_err(|_| AuthError::Internal)?
+                .to_string();
+            db::update_user_hash(&user.username, new_hash).await?;
+        }
+        return Ok(true);
+    }
+    Err(AuthError::InvalidCredentials)
+}
+```
+
+Sakamako uku da suka dace da DORA suna fitowa daga wannan siffa:
+
+- **Juyawar maɓalli a matsayin matsalar sarrafa-maɓalli.** Pepper yana zaune a baya iyakar HSM/KMS, ba a cikin database ba. Juyawa ya zama canjin sarrafa-maɓalli, ba yaƙin sake-hashing a fadin gidan masu amfani ba. Sabbin hashes suna ɗaure da sigar pepper ta yanzu; tsoffin hashes suna tabbatarwa a ƙarƙashin sigar da aka ɗaure har sai sun haɓaka a zahiri.
+- **Rabuwar ayyuka.** Asalin sabis ɗin da ke karanta pepper dole ne a iya bita kuma a sami iyaka mafi ƙarancin gata. Cikakken fitarwar database ba tare da daidai grant na HSM ba ba ya samar da komai mai fasawa. Cin amana na HSM-grant ba tare da database ba ba ya samar da komai mai magancewa. Radius ɗin fashewar kowace gazawar ɗaya ya iyakance.
+- **Guji bug ɗin tsawaita tsayi da haɗawa.** Yin amfani da ma'aunin sirri na Argon2 maimakon haɗakar string yana cire dukan rukunin gotchas na cryptography — tsawaita-tsayi, haɗakar UTF-8 mai-rashin daidaitawa, bug ɗin tsarin salt/pepper — daga farfajiyar aiwatarwa.
 
 ## 05. Daidaita Doka: DORA, Basel III, da SM&CR
 

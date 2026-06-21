@@ -122,6 +122,18 @@ twitter_image_alt: "Sebastien Rousseau 的黑白肖像"
 
 **C 語言函式庫供應鏈。**過去,銀行中介軟體常依賴 `argonautica` 等函式庫或原生 C 綁定來處理雜湊。這些函式庫帶有隱性的供應鏈風險:身分驗證模組中單一的記憶體緩衝區溢位,即可在銀行堆疊最高權限層導致遠端程式碼執行(RCE)。
 
+### 演算法比較——硬體抗性與調校面
+
+銀行在遷移作業中實際遇到的三種演算法,差異不在於密碼學基元的選擇,而在於它們承受硬體壓力時的老化方式。下表彙整實務態勢。
+
+| Algorithm | 記憶體高耗 | GPU / ASIC 抗性 | 調校面 | 2026 狀態 |
+| ---- | ---- | ---- | ---- | ---- |
+| **PBKDF2** | 否 | 低——可於 GPU 上向量化;在通用硬體上每次猜測耗時不到一毫秒。 | 僅迭代次數。 | 已成舊式。僅可作為遷移期間驗證端的後備。 |
+| **scrypt** | 是(中等) | 中等——記憶體成本可擊退簡單的 GPU 農場;具規模時可被 ASIC 攤銷。 | `N`(CPU/記憶體)、`r`(區塊大小)、`p`(平行度)。 | 對於新建系統已不建議。仍活躍於遷移語料中。 |
+| **Argon2id** | 是(高) | 高——同時為記憶體高耗與時間高耗;可抵抗側通道與 TMTO 攻擊。 | 記憶體成本(`m`)、時間成本(`t`)、平行度(`p`)、秘密值(pepper)。 | 建議的預設值。OWASP、NIST SP 800-63B-4 草案、FedRAMP。 |
+
+遷移計畫的結論很窄:PBKDF2 是*驗證端*狀態,而非*寫入端*目的地。每一筆 PBKDF2 紀錄上的成功登入,離開時都應產出一筆 Argon2id 紀錄。
+
 ## 02. hsh 2026 架構視角
 
 此框架由五個核心分層構成,每一層皆為緩解某一類營運風險而設計。
@@ -148,11 +160,93 @@ twitter_image_alt: "Sebastien Rousseau 的黑白肖像"
 
 此流程對終端使用者完全透明。它有效地讓最活躍的帳號於首日即遷移至最高資安等級,在時間推進中有機地大幅削減銀行的受攻擊面。
 
+### 實作模式——`verify_and_upgrade` 分派
+
+於身分驗證服務內的整合面積很小。舊路徑保留為後備,新路徑就是分派器。
+
+```rust
+use hsh::{Hasher, UpgradeResult};
+
+struct UserRecord {
+    username: String,
+    password_hash: String, // PHC string
+}
+
+async fn authenticate(user: UserRecord, password_attempt: &str) -> Result<bool, AuthError> {
+    let hasher = Hasher::new();
+    match hasher.verify_and_upgrade(password_attempt, &user.password_hash) {
+        Ok(UpgradeResult::Verified(is_valid)) => Ok(is_valid),
+        Ok(UpgradeResult::Upgraded(new_hash)) => {
+            db::update_user_hash(&user.username, new_hash).await?;
+            Ok(true)
+        }
+        Err(_) => Err(AuthError::InvalidCredentials),
+    }
+}
+```
+
+有三項屬性至關重要:
+
+- **狀態感知。**`verify_and_upgrade` 檢視 PHC 字串前綴。若演算法標記為舊式,框架便會依據設定的 Argon2id 政策自動觸發重新雜湊。呼叫端程式碼無需任何分支判斷。
+- **原子性。**重新雜湊只在舊式驗證成功之後、於同一身分驗證事件內進行。沒有獨立的批次任務、沒有排定的遷移時間窗、也沒有需要復原的破壞性大規模遷移。
+- **持久化。**`UpgradeResult::Upgraded` 變體攜帶新的 PHC 字串。應用程式透過原本就存在於舊紀錄的同一條資料路徑加以持久化——無需平行寫入面、無需兩階段寫入協定。
+
+**失敗模式。**若資料庫寫入失敗,或 KMS 在升級寫入期間短暫無法連線,該登入仍會以舊式雜湊驗證成功,紀錄則繼續維持於舊演算法。下一次成功登入會重試升級。系統不會出現半遷移狀態,使用者也看不到任何失敗——遷移在多次登入事件間具備單調性,每一筆紀錄一次升級失敗的代價,正好就是下次登入時多一次重試。
+
 ## 04. 經由 HSM / KMS 互鎖的 peppered 雜湊
 
 標準的密碼雜湊可防範直接的資料庫外洩,但若攻擊者同時取得資料庫(雜湊與 salt),便可執行離線破解。
 
 hsh 引入穩健的「peppered」資安層。透過與硬體安全模組(HSM)或雲端原生金鑰管理服務(KMS)整合,最終的 Argon2id 輸出會以一把絕不離開安全硬體邊界的高熵金鑰進行密碼學包裝。若使用者資料庫被外洩,攻擊者僅持有加密後的 blob。除非同時攻破銀行物理隔離的 HSM 基礎建設,否則他們無法著手破解密碼。
+
+### 實作模式——HSM 後盾的 peppered Argon2id
+
+pepper 於請求時自 HSM 取得,而非來自設定檔。`Argon2::new_with_secret` 透過演算法的秘密參數消費它,而非以字串串接方式注入。
+
+```rust
+use argon2::{
+    Argon2, Algorithm, Version, Params,
+    PasswordHasher, PasswordVerifier,
+    password_hash::{PasswordHash, SaltString, rand_core::OsRng},
+};
+
+async fn authenticate_with_hsm(
+    user: UserRecord,
+    password_attempt: &str,
+) -> Result<bool, AuthError> {
+    let pepper = hsm::client::get_secret("production-password-pepper").await?;
+    let hasher = Argon2::new_with_secret(
+        &pepper,
+        Algorithm::Argon2id,
+        Version::V0x13,
+        Params::default(),
+    )
+    .map_err(|_| AuthError::Internal)?;
+
+    let parsed = PasswordHash::new(&user.password_hash)
+        .map_err(|_| AuthError::InvalidCredentials)?;
+    if hasher.verify_password(password_attempt.as_bytes(), &parsed).is_ok() {
+        if is_legacy_hash(&user.password_hash) {
+            let new_hash = hasher
+                .hash_password(
+                    password_attempt.as_bytes(),
+                    &SaltString::generate(&mut OsRng),
+                )
+                .map_err(|_| AuthError::Internal)?
+                .to_string();
+            db::update_user_hash(&user.username, new_hash).await?;
+        }
+        return Ok(true);
+    }
+    Err(AuthError::InvalidCredentials)
+}
+```
+
+由此架構衍生出三項與 DORA 對齊的後果:
+
+- **金鑰輪替成為金鑰管理問題。**pepper 駐留於 HSM/KMS 邊界之後,而非資料庫之中。輪替成為金鑰管理變更,而非橫掃使用者群的重新雜湊行動。新雜湊綁定當前 pepper 版本;舊雜湊則於其綁定版本下完成驗證,直到它們自然升級。
+- **職責分離。**讀取 pepper 的服務身分必須可稽核且具最小權限。完整資料庫外洩若未同時取得對應的 HSM 授權,即無任何可破解內容;HSM 授權若被攻破而未取得資料庫,則無任何可定址對象。任一單點失效的爆炸半徑都受到約束。
+- **避免長度延伸與串接 bug。**採用 Argon2 的秘密參數而非字串串接,將一整類密碼學陷阱——長度延伸、UTF-8 串接型別錯誤、salt/pepper 排序 bug——自實作面排除。
 
 ## 05. 監理對應:DORA、Basel III 與 SM&CR
 

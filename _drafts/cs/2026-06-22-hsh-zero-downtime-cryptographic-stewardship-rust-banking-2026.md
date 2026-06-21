@@ -122,6 +122,18 @@ Pochopit nezbytnost rámce jako hsh znamená pochopit životní cyklus hashe hes
 
 **Dodavatelský řetězec C-knihoven.** Bankovní middleware se historicky spoléhal na knihovny jako `argonautica` nebo přímá C bindingy pro hashování. Tyto knihovny nesou skryté riziko dodavatelského řetězce: jediné přetečení paměťového bufferu v autentizačním modulu může vést ke vzdálenému spuštění kódu (RCE) v nejvíce privilegované vrstvě bankovního stacku.
 
+### Srovnání algoritmů — odolnost vůči hardwaru a prostor pro ladění
+
+Tři algoritmy, na které banka v migračním korpusu reálně narazí, se liší méně volbou kryptografické primitivy a více tím, jak stárnou pod tlakem hardwaru. Tabulka níže shrnuje praktickou pozici.
+
+| Algoritmus | Memory-hard | Odolnost vůči GPU / ASIC | Prostor pro ladění | Stav v roce 2026 |
+| ---- | ---- | ---- | ---- | ---- |
+| **PBKDF2** | Ne | Nízká — vektorizuje se na GPU; sub-milisekundový čas na odhad na běžném hardwaru. | Pouze počet iterací. | Legacy. Přípustný pouze jako verify-side fallback během migrace. |
+| **scrypt** | Ano (mírně) | Střední — paměťová náročnost poráží jednoduché GPU farmy; ve velkém měřítku amortizovatelný ASIC. | `N` (CPU/paměť), `r` (velikost bloku), `p` (paralelismus). | Pro nové nasazení zastaralý. Aktivní v migračních korpusech. |
+| **Argon2id** | Ano (silně) | Vysoká — paměťově i časově náročný; odolný vůči postranním kanálům a TMTO útokům. | Paměťová cena (`m`), časová cena (`t`), paralelismus (`p`), tajemství (pepper). | Doporučený výchozí stav. OWASP, NIST SP 800-63B-4 draft, FedRAMP. |
+
+Závěr pro migrační plán je úzký: PBKDF2 je stav *verify-side*, nikoli destinace *write-side*. Každé úspěšné přihlášení proti záznamu PBKDF2 by mělo na cestě ven vyprodukovat záznam Argon2id.
+
 ## 02. Architektonická optika hsh 2026
 
 Rámec je strukturován v pěti jádrových vrstvách. Každá je navržena tak, aby zmírnila konkrétní kategorii provozního rizika.
@@ -148,11 +160,93 @@ Když uživatel odešle své přihlašovací údaje, hsh přečte uložený řet
 
 Tento proces je zcela transparentní pro koncového uživatele. Účinně migruje nejaktivnější účty do nejvyšší bezpečnostní úrovně už první den a organicky dramaticky zmenšuje útočný povrch banky v čase.
 
+### Implementační vzor — dispatch `verify_and_upgrade`
+
+Integrační plocha uvnitř autentizační služby je malá. Starší kódová cesta zůstává jako fallback; nová kódová cesta je dispatcher.
+
+```rust
+use hsh::{Hasher, UpgradeResult};
+
+struct UserRecord {
+    username: String,
+    password_hash: String, // PHC string
+}
+
+async fn authenticate(user: UserRecord, password_attempt: &str) -> Result<bool, AuthError> {
+    let hasher = Hasher::new();
+    match hasher.verify_and_upgrade(password_attempt, &user.password_hash) {
+        Ok(UpgradeResult::Verified(is_valid)) => Ok(is_valid),
+        Ok(UpgradeResult::Upgraded(new_hash)) => {
+            db::update_user_hash(&user.username, new_hash).await?;
+            Ok(true)
+        }
+        Err(_) => Err(AuthError::InvalidCredentials),
+    }
+}
+```
+
+Záleží na třech vlastnostech:
+
+- **Stavová vědomost.** `verify_and_upgrade` zkoumá prefix PHC řetězce. Pokud je marker algoritmu starší, rámec automaticky spustí přehashování proti nakonfigurované politice Argon2id. Žádné větvení ve volajícím kódu.
+- **Atomicita.** Přehashování se odehrává teprve po úspěšné verifikaci starší verze, uvnitř stejné autentizační události. Žádná samostatná dávková úloha, žádné plánované migrační okno a žádná destruktivní hromadná migrace, kterou by bylo nutné vracet zpět.
+- **Persistence.** Varianta `UpgradeResult::Upgraded` nese nový PHC řetězec. Aplikace jej perzistuje stejnou datovou cestou, jaká už pro starší záznam existuje — žádná paralelní zápisová plocha, žádný dvoufázový zápisový protokol.
+
+**Režimy selhání.** Pokud během upgrade zápisu selže databáze nebo je KMS krátkodobě nedostupné, relace stále uspěje proti staršímu hashi a záznam zůstane na starém algoritmu. Příští úspěšné přihlášení upgrade zopakuje. Neexistuje žádný napůl migrovaný stav a žádné selhání viditelné pro uživatele — migrace je napříč přihlašovacími událostmi monotónní a cena selhaného upgradu na jeden záznam je přesně jedno opakování při příštím přihlášení.
+
 ## 04. Peppered hashe přes HSM / KMS interlock
 
 Standardní hashování hesel chrání proti přímým únikům databáze. Pokud však útočník získá databázi celou (hashe i soli), může provádět offline prolamování.
 
 hsh zavádí robustní vrstvu „peppered" zabezpečení. Integrací s Hardware Security Moduly (HSM) nebo cloud-native Key Management Services (KMS) je výstup Argon2id kryptograficky zabalen vysoce entropickým klíčem, který nikdy neopouští hranici zabezpečeného hardwaru. Pokud je uživatelská databáze exfiltrována, útočník vlastní pouze zašifrované bloby. Bez prolomení fyzicky izolované HSM infrastruktury banky nemůže začít prolamovat hesla.
+
+### Implementační vzor — HSM-podporovaný peppered Argon2id
+
+Pepper je čerpán z HSM v okamžiku požadavku, nikoli z konfiguračního souboru. `Argon2::new_with_secret` jej konzumuje prostřednictvím parametru tajemství algoritmu, nikoli řetězcovou konkatenací.
+
+```rust
+use argon2::{
+    Argon2, Algorithm, Version, Params,
+    PasswordHasher, PasswordVerifier,
+    password_hash::{PasswordHash, SaltString, rand_core::OsRng},
+};
+
+async fn authenticate_with_hsm(
+    user: UserRecord,
+    password_attempt: &str,
+) -> Result<bool, AuthError> {
+    let pepper = hsm::client::get_secret("production-password-pepper").await?;
+    let hasher = Argon2::new_with_secret(
+        &pepper,
+        Algorithm::Argon2id,
+        Version::V0x13,
+        Params::default(),
+    )
+    .map_err(|_| AuthError::Internal)?;
+
+    let parsed = PasswordHash::new(&user.password_hash)
+        .map_err(|_| AuthError::InvalidCredentials)?;
+    if hasher.verify_password(password_attempt.as_bytes(), &parsed).is_ok() {
+        if is_legacy_hash(&user.password_hash) {
+            let new_hash = hasher
+                .hash_password(
+                    password_attempt.as_bytes(),
+                    &SaltString::generate(&mut OsRng),
+                )
+                .map_err(|_| AuthError::Internal)?
+                .to_string();
+            db::update_user_hash(&user.username, new_hash).await?;
+        }
+        return Ok(true);
+    }
+    Err(AuthError::InvalidCredentials)
+}
+```
+
+Z tohoto tvaru vyplývají tři důsledky sladěné s DORA:
+
+- **Rotace klíčů jako problém správy klíčů.** Pepper žije za hranicí HSM/KMS, nikoli v databázi. Rotace se stává změnou ve správě klíčů, nikoli kampaní přehashování napříč uživatelskou základnou. Nové hashe se vážou na aktuální verzi pepperu; staré hashe se verifikují pod svou vázanou verzí, dokud přirozeně neproběhne jejich upgrade.
+- **Oddělení povinností.** Servisní identita, která pepper čte, musí být auditovatelná a s nejmenšími nutnými oprávněními. Plná exfiltrace databáze bez odpovídajícího HSM grantu nepřinese nic prolomitelného. Kompromitace HSM grantu bez databáze nepřinese nic adresovatelného. Dopadový rádius kteréhokoli jednotlivého selhání je ohraničený.
+- **Eliminace length-extension a konkatenačních chyb.** Použití parametru tajemství v Argon2 namísto řetězcové konkatenace odstraňuje z implementační plochy celou třídu kryptografických nástrah — length-extension, špatně typované UTF-8 konkatenace, chyby v pořadí salt/pepper.
 
 ## 05. Regulatorní soulad: DORA, Basel III a SM&CR
 

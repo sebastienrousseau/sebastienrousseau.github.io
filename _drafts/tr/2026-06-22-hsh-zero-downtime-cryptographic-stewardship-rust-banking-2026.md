@@ -122,6 +122,18 @@ hsh gibi bir çerçevenin gerekliliğini anlamak için bir parola özetinin yaş
 
 **C kütüphanesi tedarik zinciri.** Tarihsel olarak bankacılık ara yazılımı özetleme için `argonautica` gibi kütüphanelere veya ham C bağlamalarına dayandı. Bu kütüphaneler gizli bir tedarik zinciri riski taşır: kimlik doğrulama modülündeki tek bir bellek arabelleği taşması bankacılık yığınının en ayrıcalıklı katmanında uzaktan kod yürütmeye (RCE) yol açabilir.
 
+### Algoritma karşılaştırması — donanım direnci ve ayar yüzeyi
+
+Bir bankanın bir göç korpusunda gerçekçi olarak karşılaştığı üç algoritma, kriptografik primitif seçimi açısından değil, donanım baskısı altında nasıl yaşlandıkları açısından farklılaşır. Aşağıdaki tablo pratik duruşu özetler.
+
+| Algorithm | Memory-hard | GPU / ASIC resistance | Tuning surface | 2026 status |
+| ---- | ---- | ---- | ---- | ---- |
+| **PBKDF2** | Hayır | Düşük — GPU'da vektörleşir; tüketici donanımında tahmin başına alt milisaniye. | Yalnızca iterasyon sayısı. | Eski. Yalnızca göç sırasında doğrulama tarafı yedeği olarak kabul edilebilir. |
+| **scrypt** | Evet (orta) | Orta — bellek maliyeti basit GPU çiftliklerini bozar; ölçekte ASIC ile amorti edilebilir. | `N` (CPU/bellek), `r` (blok boyutu), `p` (paralellik). | Yeni projelerde önerilmez. Göç korpuslarında aktif. |
+| **Argon2id** | Evet (yüksek) | Yüksek — bellek- ve zaman-zor; yan kanal ve TMTO saldırılarına direnir. | Bellek maliyeti (`m`), zaman maliyeti (`t`), paralellik (`p`), gizli (pepper). | Önerilen varsayılan. OWASP, NIST SP 800-63B-4 taslağı, FedRAMP. |
+
+Göç planı için çıkarım dardır: PBKDF2 bir *doğrulama tarafı* durumudur, bir *yazma tarafı* hedefi değildir. Bir PBKDF2 kaydında her başarılı oturum açma, çıkışta bir Argon2id kaydı üretmelidir.
+
 ## 02. hsh 2026 Mimari Merceği
 
 Çerçeve, her biri belirli bir operasyonel risk kategorisini azaltacak şekilde tasarlanmış beş çekirdek katman üzerinde yapılandırılmıştır.
@@ -148,11 +160,93 @@ Bir kullanıcı kimlik bilgilerini gönderdiğinde hsh, depolanmış Parola Öze
 
 Bu süreç son kullanıcı için tamamen şeffaftır. En aktif hesapları birinci günde en yüksek güvenlik kademesine taşır; bankanın saldırı yüzeyini zaman içinde organik olarak çarpıcı biçimde küçültür.
 
+### Uygulama deseni — `verify_and_upgrade` dağıtımı
+
+Bir kimlik doğrulama servisi içindeki entegrasyon yüzeyi küçüktür. Eski kod yolu yedek olarak kalır; yeni kod yolu dağıtıcıdır.
+
+```rust
+use hsh::{Hasher, UpgradeResult};
+
+struct UserRecord {
+    username: String,
+    password_hash: String, // PHC string
+}
+
+async fn authenticate(user: UserRecord, password_attempt: &str) -> Result<bool, AuthError> {
+    let hasher = Hasher::new();
+    match hasher.verify_and_upgrade(password_attempt, &user.password_hash) {
+        Ok(UpgradeResult::Verified(is_valid)) => Ok(is_valid),
+        Ok(UpgradeResult::Upgraded(new_hash)) => {
+            db::update_user_hash(&user.username, new_hash).await?;
+            Ok(true)
+        }
+        Err(_) => Err(AuthError::InvalidCredentials),
+    }
+}
+```
+
+Üç özellik önemlidir:
+
+- **Durum farkındalığı.** `verify_and_upgrade`, PHC dizesi önekini inceler. Algoritma işaretleyicisi eski ise çerçeve, yapılandırılmış Argon2id politikasına karşı yeniden özetlemeyi otomatik olarak tetikler. Çağıran kodda dallanma yoktur.
+- **Atomiklik.** Yeniden özetleme yalnızca eski doğrulama başarılı olduktan sonra, aynı kimlik doğrulama olayı içinde gerçekleşir. Ayrı bir toplu iş, planlanmış bir göç penceresi veya geri alınacak yıkıcı bir toplu göç yoktur.
+- **Kalıcılık.** `UpgradeResult::Upgraded` çeşidi yeni PHC dizesini taşır. Uygulama bunu, eski kayıt için zaten var olan aynı veri yolundan kalıcı hale getirir — paralel yazma yüzeyi yok, iki aşamalı yazma protokolü yok.
+
+**Hata modları.** Yükseltme yazımı sırasında veritabanı yazımı başarısız olursa veya KMS kısa süreliğine erişilemez kalırsa oturum yine de eski özete karşı başarılı olur ve kayıt eski algoritmada kalır. Bir sonraki başarılı oturum açma yükseltmeyi yeniden dener. Yarı göç edilmiş bir durum ve kullanıcıya görünür bir başarısızlık yoktur — göç, oturum açma olayları boyunca monotondur ve başarısız bir yükseltmenin kayıt başına maliyeti, bir sonraki oturum açmada tam olarak bir ek deneme kadardır.
+
 ## 04. HSM / KMS Kilitlemesi ile Peppered Özetler
 
 Standart parola özetleme doğrudan veritabanı sızıntılarına karşı korur; ancak bir saldırgan hem veritabanını (özetleri ve tuzları) ele geçirirse çevrimdışı kırma gerçekleştirebilir.
 
 hsh sağlam bir "peppered" güvenlik katmanı sunar. Donanım Güvenlik Modülleri (HSM'ler) veya bulut yerel Anahtar Yönetim Hizmetleri (KMS) ile entegre olarak son Argon2id çıktısı, güvenli donanım sınırından asla çıkmayan yüksek entropili bir anahtarla kriptografik olarak sarılır. Kullanıcı veritabanı dışarı sızdırılırsa saldırgan yalnızca şifreli bloblara sahip olur. Bankanın fiziksel olarak izole edilmiş HSM altyapısını da ihlal etmeden parolaları kırmaya başlayamaz.
+
+### Uygulama deseni — HSM destekli peppered Argon2id
+
+Pepper, istek anında HSM'den alınır, bir yapılandırma dosyasından değil. `Argon2::new_with_secret` onu, dize birleştirmesi yoluyla değil, algoritmanın gizli parametresi aracılığıyla tüketir.
+
+```rust
+use argon2::{
+    Argon2, Algorithm, Version, Params,
+    PasswordHasher, PasswordVerifier,
+    password_hash::{PasswordHash, SaltString, rand_core::OsRng},
+};
+
+async fn authenticate_with_hsm(
+    user: UserRecord,
+    password_attempt: &str,
+) -> Result<bool, AuthError> {
+    let pepper = hsm::client::get_secret("production-password-pepper").await?;
+    let hasher = Argon2::new_with_secret(
+        &pepper,
+        Algorithm::Argon2id,
+        Version::V0x13,
+        Params::default(),
+    )
+    .map_err(|_| AuthError::Internal)?;
+
+    let parsed = PasswordHash::new(&user.password_hash)
+        .map_err(|_| AuthError::InvalidCredentials)?;
+    if hasher.verify_password(password_attempt.as_bytes(), &parsed).is_ok() {
+        if is_legacy_hash(&user.password_hash) {
+            let new_hash = hasher
+                .hash_password(
+                    password_attempt.as_bytes(),
+                    &SaltString::generate(&mut OsRng),
+                )
+                .map_err(|_| AuthError::Internal)?
+                .to_string();
+            db::update_user_hash(&user.username, new_hash).await?;
+        }
+        return Ok(true);
+    }
+    Err(AuthError::InvalidCredentials)
+}
+```
+
+Bu yapıdan DORA ile hizalı üç sonuç doğar:
+
+- **Anahtar yönetim sorunu olarak anahtar rotasyonu.** Pepper, veritabanında değil HSM/KMS sınırının arkasında yaşar. Rotasyon, kullanıcı tabanı genelinde bir yeniden özetleme kampanyası değil, bir anahtar yönetim değişikliği haline gelir. Yeni özetler mevcut pepper sürümüne bağlanır; eski özetler doğal olarak yükseltilene kadar bağlı oldukları sürüm altında doğrulanır.
+- **Görevlerin ayrılması.** Pepper'ı okuyan servis kimliği denetlenebilir ve en az ayrıcalıklı olmalıdır. Karşılık gelen HSM hibesi olmadan tam bir veritabanı sızdırması kırılabilir hiçbir şey üretmez. Veritabanı olmadan bir HSM hibesi ele geçirme adreslenebilir hiçbir şey üretmez. Tek bir hatanın patlama yarıçapı sınırlıdır.
+- **Length extension ve concat hatalarından kaçınma.** Dize birleştirmesi yerine Argon2'nin gizli parametresinin kullanılması, bütün bir kriptografik tuzak sınıfını — uzunluk-uzatma, yanlış yazılmış UTF-8 birleştirmesi, salt/pepper sıralama hataları — uygulama yüzeyinden kaldırır.
 
 ## 05. Düzenleyici Uyum: DORA, Basel III ve SM&CR
 

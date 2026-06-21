@@ -122,6 +122,18 @@ hsh のようなフレームワークの必要性を理解するには、パス�
 
 **C ライブラリのサプライチェーン。**歴史的に、銀行ミドルウェアはハッシュ用に `argonautica` のようなライブラリや生の C バインディングに依存してきました。これらのライブラリには隠れたサプライチェーンリスクが潜んでいます。認証モジュール内のたった一つのメモリバッファオーバーフローが、銀行スタックの最も特権的な層でリモートコード実行 (RCE) を招き得ます。
 
+### アルゴリズム比較 — ハードウェア耐性とチューニング面
+
+銀行が移行コーパスで現実的に遭遇する三つのアルゴリズムは、暗号プリミティブの選択というより、ハードウェア圧力下でどのように老いるかという点で違いがあります。下表は実務的な姿勢をまとめたものです。
+
+| Algorithm | メモリハード | GPU / ASIC 耐性 | チューニング面 | 2026 年の状況 |
+| ---- | ---- | ---- | ---- | ---- |
+| **PBKDF2** | いいえ | 低 — GPU 上でベクトル化され、コモディティハードウェアでは推測あたりサブミリ秒。 | 反復回数のみ。 | レガシー。移行期間中の検証側フォールバックとしてのみ許容。 |
+| **scrypt** | はい (中程度) | 中 — メモリコストが単純な GPU ファームを退ける。大規模では ASIC 償却可能。 | `N` (CPU/メモリ)、`r` (ブロックサイズ)、`p` (並列度)。 | グリーンフィールドでは非推奨。移行コーパスでは現役。 |
+| **Argon2id** | はい (高) | 高 — メモリハードかつタイムハード。サイドチャネルおよび TMTO 攻撃に耐性。 | メモリコスト (`m`)、時間コスト (`t`)、並列度 (`p`)、シークレット (ペッパー)。 | 推奨デフォルト。OWASP、NIST SP 800-63B-4 ドラフト、FedRAMP。 |
+
+移行計画にとっての要点は明快です。PBKDF2 は*検証側*の状態であって、*書き込み側*の終点ではありません。PBKDF2 レコード上で成功したすべてのログインは、退出時に Argon2id レコードを生成すべきです。
+
 ## 02. hsh 2026 アーキテクチャレンズ
 
 このフレームワークは 5 つのコア層にまたがって構成され、それぞれが特定のカテゴリのオペレーショナルリスクを低減するよう設計されています。
@@ -148,11 +160,93 @@ hsh のようなフレームワークの必要性を理解するには、パス�
 
 このプロセスはエンドユーザーに対して完全に透過的です。最もアクティブなアカウントを初日に最高セキュリティ層へ効果的に移行し、銀行の攻撃面を時間とともに有機的かつ劇的に縮小します。
 
+### 実装パターン — `verify_and_upgrade` ディスパッチ
+
+認証サービス内部での統合面は小さく済みます。レガシーのコード経路はフォールバックとしてそのまま残り、新しいコード経路がディスパッチャとして機能します。
+
+```rust
+use hsh::{Hasher, UpgradeResult};
+
+struct UserRecord {
+    username: String,
+    password_hash: String, // PHC string
+}
+
+async fn authenticate(user: UserRecord, password_attempt: &str) -> Result<bool, AuthError> {
+    let hasher = Hasher::new();
+    match hasher.verify_and_upgrade(password_attempt, &user.password_hash) {
+        Ok(UpgradeResult::Verified(is_valid)) => Ok(is_valid),
+        Ok(UpgradeResult::Upgraded(new_hash)) => {
+            db::update_user_hash(&user.username, new_hash).await?;
+            Ok(true)
+        }
+        Err(_) => Err(AuthError::InvalidCredentials),
+    }
+}
+```
+
+重要な性質は三点です。
+
+- **状態認識性。**`verify_and_upgrade` は PHC 文字列のプレフィックスを検査します。アルゴリズム標識がレガシーであれば、フレームワークは設定済みの Argon2id ポリシーに対して再ハッシュを自動的にトリガーします。呼び出し側のコードに分岐は不要です。
+- **アトミック性。**再ハッシュはレガシー検証の成功後、同一の認証イベント内でのみ発生します。別のバッチジョブも、スケジュール化された移行ウィンドウも、ロールバックすべき破壊的な一括移行もありません。
+- **永続化。**`UpgradeResult::Upgraded` バリアントは新しい PHC 文字列を保持します。アプリケーションは、レガシーレコードに対してすでに存在するのと同じデータ経路を通じてそれを永続化します — 並行書き込み面も、二相書き込みプロトコルもありません。
+
+**失敗モード。**アップグレード書き込み中にデータベース書き込みが失敗するか、KMS が一時的に到達不能になった場合でも、セッションはレガシーハッシュに対して成功し、レコードは旧アルゴリズムに留まります。次回の成功ログインがアップグレードを再試行します。半移行状態もユーザーに見える失敗もありません — 移行はログインイベント全体で単調進行し、失敗したアップグレード 1 件あたりのコストは、次回ログイン時のちょうど 1 回の追加リトライに収まります。
+
 ## 04. HSM / KMS インターロックを介したペッパリング済みハッシュ
 
 標準的なパスワードハッシュは直接的なデータベース漏洩から保護しますが、攻撃者がデータベース (ハッシュおよびソルト) を入手すれば、オフラインクラックを実行できます。
 
 hsh は堅牢な「ペッパリング」セキュリティ層を導入します。Hardware Security Module (HSM) またはクラウドネイティブな Key Management Service (KMS) と統合することで、最終的な Argon2id の出力は、安全なハードウェア境界から決して離れない高エントロピー鍵で暗号学的にラップされます。ユーザーデータベースが流出しても、攻撃者が手にするのは暗号化された塊だけです。銀行の物理的に隔離された HSM インフラを併せて侵害しない限り、パスワードのクラックを開始することはできません。
+
+### 実装パターン — HSM 由来のペッパリング済み Argon2id
+
+ペッパーはリクエスト時に HSM から取得され、設定ファイルから取得されるわけではありません。`Argon2::new_with_secret` は文字列連結ではなく、アルゴリズムのシークレットパラメータを通じてそれを消費します。
+
+```rust
+use argon2::{
+    Argon2, Algorithm, Version, Params,
+    PasswordHasher, PasswordVerifier,
+    password_hash::{PasswordHash, SaltString, rand_core::OsRng},
+};
+
+async fn authenticate_with_hsm(
+    user: UserRecord,
+    password_attempt: &str,
+) -> Result<bool, AuthError> {
+    let pepper = hsm::client::get_secret("production-password-pepper").await?;
+    let hasher = Argon2::new_with_secret(
+        &pepper,
+        Algorithm::Argon2id,
+        Version::V0x13,
+        Params::default(),
+    )
+    .map_err(|_| AuthError::Internal)?;
+
+    let parsed = PasswordHash::new(&user.password_hash)
+        .map_err(|_| AuthError::InvalidCredentials)?;
+    if hasher.verify_password(password_attempt.as_bytes(), &parsed).is_ok() {
+        if is_legacy_hash(&user.password_hash) {
+            let new_hash = hasher
+                .hash_password(
+                    password_attempt.as_bytes(),
+                    &SaltString::generate(&mut OsRng),
+                )
+                .map_err(|_| AuthError::Internal)?
+                .to_string();
+            db::update_user_hash(&user.username, new_hash).await?;
+        }
+        return Ok(true);
+    }
+    Err(AuthError::InvalidCredentials)
+}
+```
+
+この形から、DORA と整合する三つの帰結が導かれます。
+
+- **鍵ローテーションは鍵管理問題として扱える。**ペッパーは HSM/KMS 境界の内側に置かれ、データベースには置かれません。ローテーションはユーザー全体に対する再ハッシュ作戦ではなく、鍵管理上の変更になります。新規ハッシュは現行のペッパーバージョンに紐づき、旧ハッシュは自然なアップグレードまで紐づくバージョン下で検証されます。
+- **職務分離。**ペッパーを読み取るサービス ID は監査可能かつ最小権限でなければなりません。対応する HSM の付与権限を伴わないデータベースの完全な流出からは、クラック可能なものは何も得られません。データベースを伴わない HSM 付与権限の侵害からは、アドレス可能なものは何も得られません。いずれの単一障害も、その被害半径は限定されます。
+- **長さ拡張および連結バグの回避。**文字列連結ではなく Argon2 のシークレットパラメータを使用することで、暗号上の落とし穴のクラス一式 — 長さ拡張、誤った型付けの UTF-8 連結、ソルト/ペッパー順序のバグ — が実装面から取り除かれます。
 
 ## 05. 規制整合:DORA、Basel III、SM&CR
 
