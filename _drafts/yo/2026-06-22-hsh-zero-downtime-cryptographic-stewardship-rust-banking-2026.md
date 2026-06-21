@@ -160,6 +160,27 @@ Nígbà tí olùlò bá fi àwọn ẹrí wọn jíṣẹ́, hsh ń ka string Pa
 
 Ìṣàn yìí jẹ́ aláìlọ́nà sí olùlò ìparí. Ó ń ṣíkiri àwọn àkáǹtì tó ṣiṣẹ́ jùlọ sí ìpele ààbò tó ga jùlọ ní ọjọ́ kìíní, ó ń dín ipò ìkọlù báńkì kù gan-an ní ọ̀nà aládàṣe lórí àkókò.
 
+Ìlà ìṣẹ̀lẹ̀ tó wà nísàlẹ̀ ń fi ohun tó ń ṣẹlẹ̀ hàn nígbà ìṣẹ̀lẹ̀ login kan ṣoṣo nígbà tí àkọsílẹ̀ tí a fi pamọ́ bá wà lórí algorithm ìbílẹ̀. Olùlò kò rí ohunkóhun tó yí padà; ohun-ìní ìmúdájú báńkì ń lágbára sí i ní àkọsílẹ̀ kan.
+
+```mermaid
+sequenceDiagram
+    actor User
+    participant Frontend
+    participant Auth as Authentication Service (hsh)
+    participant DB as Database
+    User->>Frontend: Submit username + password
+    Frontend->>Auth: authenticate(user, password)
+    Auth->>DB: SELECT password_hash FROM users
+    DB-->>Auth: PHC string (legacy: PBKDF2)
+    Note over Auth: Detect legacy algorithm prefix
+    Auth->>Auth: verify(password, legacy_hash)
+    Note over Auth: Re-hash with Argon2id
+    Auth->>DB: UPDATE password_hash = new PHC
+    DB-->>Auth: write confirmed
+    Auth-->>Frontend: 200 OK
+    Frontend-->>User: Login successful
+```
+
 ### Àpẹẹrẹ ìṣèdá — dispatch `verify_and_upgrade`
 
 Ojú ìṣopọ̀ inú iṣẹ́ ìmúdájú kéré. Ọ̀nà kóòdù ìbílẹ̀ ṣì wà gẹ́gẹ́ bí fallback; ọ̀nà kóòdù tuntun ni dispatcher.
@@ -198,6 +219,24 @@ async fn authenticate(user: UserRecord, password_attempt: &str) -> Result<bool, 
 Hashing ọ̀rọ̀-ìgbàláàyè àpẹẹrẹ ń dáàbò bo lòdì sí ìjò dátábáàsì tààrà, ṣùgbọ́n tí akolù bá rí dátábáàsì méjèèjì (àwọn hash àti àwọn salt), wọ́n lè ṣe brute-force aláìlí-ayélujára.
 
 hsh ń mú ìpele ààbò "peppered" tó lágbára wá. Nípa dída pọ̀ pẹ̀lú Hardware Security Modules (HSM) tàbí àwọn Iṣẹ́ Ìṣàkóso Bọtìnnì (KMS) cloud-native, a ń di àbájáde Argon2id ìparí pẹ̀lú kọ́kọ́rọ́ àpọ́nlé tó gíga tí kò fi ààlà ohun-èlò aláìléwu sílẹ̀. Tí a bá yọ dátábáàsì olùlò jáde, akolù ní àwọn blob ìpamọ́ nìkan. Wọn kò lè bẹ̀rẹ̀ sí ní fọ́ àwọn ọ̀rọ̀-ìgbàláàyè láìsí pé wọ́n tún wọlé sí apẹrẹ HSM tí a fi sí ààlà ti ara báńkì.
+
+Àwòrán ìṣètò tó wà nísàlẹ̀ ń tọ́ ọ̀nà aṣírí náà. Pepper kì í dé inú dátábáàsì rárá; dátábáàsì kì í gbé ohunkóhun tó ṣeé dé fún ara rẹ̀. Àwọn ìpamọ́ méjèèjì lè kùnà ní ọ̀tọ̀ọ̀tọ̀ — ètò náà ń pàdánù ìkọ̀kọ̀ nìkan tí àwọn méjèèjì bá kùnà papọ̀.
+
+```mermaid
+sequenceDiagram
+    participant App as Application Server
+    participant HSM as HSM (Hardware Security Module)
+    participant DB as Database
+    Note over HSM: Pepper sealed in hardware<br/>never exits boundary
+    App->>HSM: get_secret("production-password-pepper")
+    HSM-->>App: pepper (in-memory, request-scoped)
+    Note over App: Argon2::new_with_secret(&pepper, ...)
+    App->>App: hash(password + salt) consuming pepper
+    Note over App: Pepper consumed via secret param<br/>not via string concat
+    App->>DB: STORE PHC string (uncrackable blob)
+    Note over App: Pepper dropped from memory
+    Note over DB,HSM: DB breach alone yields<br/>nothing crackable
+```
 
 ### Àpẹẹrẹ ìṣèdá — Argon2id peppered tí HSM ń tì lẹ́yìn
 

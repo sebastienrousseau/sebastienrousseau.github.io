@@ -160,6 +160,27 @@ Lokacin da mai amfani ya gabatar da shaidunsa, hsh yana karanta string na Passwo
 
 Wannan tsari ya fi gaba ɗaya a fili ga mai amfani na ƙarshe. Yana ƙaurar manyan asusu masu aiki zuwa matakin tsaro mafi koli a rana ɗaya, yana rage ƙofar harin banki na halitta a kan lokaci.
 
+Jerin da ke ƙasa yana nuna abin da ke faruwa yayin abu ɗaya na shiga lokacin da rikodin da aka adana yana kan algorithm na gado. Mai amfani ba ya ganin canji; gidan tabbatar da gaskiya na banki yana ƙarfafa da rikodi ɗaya.
+
+```mermaid
+sequenceDiagram
+    actor User
+    participant Frontend
+    participant Auth as Authentication Service (hsh)
+    participant DB as Database
+    User->>Frontend: Submit username + password
+    Frontend->>Auth: authenticate(user, password)
+    Auth->>DB: SELECT password_hash FROM users
+    DB-->>Auth: PHC string (legacy: PBKDF2)
+    Note over Auth: Detect legacy algorithm prefix
+    Auth->>Auth: verify(password, legacy_hash)
+    Note over Auth: Re-hash with Argon2id
+    Auth->>DB: UPDATE password_hash = new PHC
+    DB-->>Auth: write confirmed
+    Auth-->>Frontend: 200 OK
+    Frontend-->>User: Login successful
+```
+
 ### Tsarin aiwatarwa — `verify_and_upgrade` dispatch
 
 Farfajiyar haɗawa a cikin sabis na tabbatar da gaskiya ƙarami ne. Hanyar code na gado ta kasance a matsayin fallback; sabuwar hanyar code ita ce dispatcher.
@@ -198,6 +219,24 @@ Kaddarori uku suna da mahimmanci:
 Hashing na password na yau da kullum yana karewa daga zubar bayanai na database kai tsaye, amma idan maharin ya sami duka database (hashes da salts), zai iya aiwatar da fashin offline.
 
 hsh yana gabatar da laushin tsaro mai ƙarfi na "peppered". Ta hanyar haɗawa da Hardware Security Modules (HSMs) ko Key Management Services (KMS) na cloud-native, ana naɗe samar da Argon2id na ƙarshe a cryptography tare da maɓalli mai babban entropy wanda ba ya barin iyakar kayan aiki masu aminci. Idan an fitar da database na mai amfani, maharin yana da blobs masu encrypted kawai. Ba zai iya fara fashin passwords ba tare da kuma cin amana ga kayan aikin HSM na banki da aka ware a zahiri ba.
+
+Zane na gine-gine da ke ƙasa yana bin hanyar sirri. Pepper ba ya taɓa shiga database; database ba ya riƙe wani abu mai iya warwarewa shi kaɗai. Ɗakunan ajiya biyu na iya gaza da kansu — tsarin yana rasa sirri kawai idan duka biyu sun gaza tare.
+
+```mermaid
+sequenceDiagram
+    participant App as Application Server
+    participant HSM as HSM (Hardware Security Module)
+    participant DB as Database
+    Note over HSM: Pepper sealed in hardware<br/>never exits boundary
+    App->>HSM: get_secret("production-password-pepper")
+    HSM-->>App: pepper (in-memory, request-scoped)
+    Note over App: Argon2::new_with_secret(&pepper, ...)
+    App->>App: hash(password + salt) consuming pepper
+    Note over App: Pepper consumed via secret param<br/>not via string concat
+    App->>DB: STORE PHC string (uncrackable blob)
+    Note over App: Pepper dropped from memory
+    Note over DB,HSM: DB breach alone yields<br/>nothing crackable
+```
 
 ### Tsarin aiwatarwa — Argon2id mai peppered da HSM ke goyon baya
 

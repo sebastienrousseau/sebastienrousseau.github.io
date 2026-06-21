@@ -160,6 +160,27 @@ twitter_image_alt: "Чёрно-белый портрет Себастьяна Р
 
 Процесс полностью прозрачен для конечного пользователя. Он эффективно мигрирует самые активные учётные записи на высший уровень безопасности в первый же день, резко сокращая поверхность атаки банка органически со временем.
 
+Диаграмма ниже показывает, что происходит при одном логин-событии, когда сохранённая запись лежит на устаревшем алгоритме. Пользователь не видит никаких изменений; парк аутентификации банка укрепляется на одну запись.
+
+```mermaid
+sequenceDiagram
+    actor User
+    participant Frontend
+    participant Auth as Authentication Service (hsh)
+    participant DB as Database
+    User->>Frontend: Submit username + password
+    Frontend->>Auth: authenticate(user, password)
+    Auth->>DB: SELECT password_hash FROM users
+    DB-->>Auth: PHC string (legacy: PBKDF2)
+    Note over Auth: Detect legacy algorithm prefix
+    Auth->>Auth: verify(password, legacy_hash)
+    Note over Auth: Re-hash with Argon2id
+    Auth->>DB: UPDATE password_hash = new PHC
+    DB-->>Auth: write confirmed
+    Auth-->>Frontend: 200 OK
+    Frontend-->>User: Login successful
+```
+
 ### Шаблон реализации — диспетчеризация `verify_and_upgrade`
 
 Поверхность интеграции внутри сервиса аутентификации невелика. Устаревший путь кода остаётся как fallback; новый путь — это диспетчер.
@@ -198,6 +219,24 @@ async fn authenticate(user: UserRecord, password_attempt: &str) -> Result<bool, 
 Стандартное хеширование паролей защищает от прямых утечек базы, но если атакующий получает и базу (хеши и соли), он может выполнить офлайн-взлом.
 
 hsh вводит надёжный слой безопасности «с перцем». Интегрируясь с Hardware Security Modules (HSM) или облачно-нативными Key Management Services (KMS), финальный вывод Argon2id криптографически оборачивается ключом с высокой энтропией, который никогда не покидает безопасную аппаратную границу. Если база пользователей эксфильтрована, атакующий владеет лишь зашифрованными блобами. Начать взлом паролей он не может, не пробив физически изолированную HSM-инфраструктуру банка.
+
+Архитектурная диаграмма ниже трассирует путь секрета. Перец никогда не оседает в базе; база никогда не хранит ничего, адресуемого сама по себе. Два хранилища могут отказывать независимо — система теряет конфиденциальность только при их одновременном отказе.
+
+```mermaid
+sequenceDiagram
+    participant App as Application Server
+    participant HSM as HSM (Hardware Security Module)
+    participant DB as Database
+    Note over HSM: Pepper sealed in hardware<br/>never exits boundary
+    App->>HSM: get_secret("production-password-pepper")
+    HSM-->>App: pepper (in-memory, request-scoped)
+    Note over App: Argon2::new_with_secret(&pepper, ...)
+    App->>App: hash(password + salt) consuming pepper
+    Note over App: Pepper consumed via secret param<br/>not via string concat
+    App->>DB: STORE PHC string (uncrackable blob)
+    Note over App: Pepper dropped from memory
+    Note over DB,HSM: DB breach alone yields<br/>nothing crackable
+```
 
 ### Шаблон реализации — Argon2id с перцем из HSM
 

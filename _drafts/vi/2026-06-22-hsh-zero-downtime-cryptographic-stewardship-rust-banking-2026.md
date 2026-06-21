@@ -160,6 +160,27 @@ Khi một người dùng gửi thông tin xác thực, hsh đọc chuỗi Passwo
 
 Quy trình này hoàn toàn trong suốt với người dùng cuối. Nó di trú hiệu quả các tài khoản hoạt động nhất sang tầng bảo mật cao nhất ngay ngày đầu tiên, giảm đáng kể bề mặt tấn công của ngân hàng theo cách hữu cơ theo thời gian.
 
+Sơ đồ tuần tự dưới đây cho thấy điều gì xảy ra trong một sự kiện đăng nhập đơn lẻ khi bản ghi đã lưu thuộc về một thuật toán kế thừa. Người dùng không thấy gì thay đổi; điền sản xác thực của ngân hàng được củng cố thêm một bản ghi.
+
+```mermaid
+sequenceDiagram
+    actor User
+    participant Frontend
+    participant Auth as Authentication Service (hsh)
+    participant DB as Database
+    User->>Frontend: Submit username + password
+    Frontend->>Auth: authenticate(user, password)
+    Auth->>DB: SELECT password_hash FROM users
+    DB-->>Auth: PHC string (legacy: PBKDF2)
+    Note over Auth: Detect legacy algorithm prefix
+    Auth->>Auth: verify(password, legacy_hash)
+    Note over Auth: Re-hash with Argon2id
+    Auth->>DB: UPDATE password_hash = new PHC
+    DB-->>Auth: write confirmed
+    Auth-->>Frontend: 200 OK
+    Frontend-->>User: Login successful
+```
+
 ### Mẫu triển khai — điều phối `verify_and_upgrade`
 
 Bề mặt tích hợp bên trong một dịch vụ xác thực rất nhỏ. Đường mã kế thừa vẫn ở lại như một dự phòng; đường mã mới là bộ điều phối.
@@ -198,6 +219,24 @@ Ba thuộc tính quan trọng:
 Băm mật khẩu tiêu chuẩn bảo vệ chống lại rò rỉ cơ sở dữ liệu trực tiếp, nhưng nếu kẻ tấn công có được cả cơ sở dữ liệu (băm và salt), họ có thể thực thi bẻ khoá ngoại tuyến.
 
 hsh giới thiệu một lớp bảo mật "peppered" mạnh mẽ. Bằng cách tích hợp với Hardware Security Module (HSM) hoặc các dịch vụ quản lý khoá (KMS) cloud-native, kết quả Argon2id cuối cùng được bao bọc về mặt mật mã bằng một khoá entropy cao không bao giờ rời khỏi ranh giới phần cứng an toàn. Nếu cơ sở dữ liệu người dùng bị trích xuất, kẻ tấn công chỉ sở hữu các blob đã mã hoá. Họ không thể bắt đầu bẻ khoá mật khẩu mà không đồng thời xâm nhập hạ tầng HSM cách ly vật lý của ngân hàng.
+
+Sơ đồ kiến trúc dưới đây vẽ lại đường đi của bí mật. Pepper không bao giờ rơi vào cơ sở dữ liệu; cơ sở dữ liệu không bao giờ giữ bất cứ thứ gì có thể giải quyết được một mình. Hai kho có thể thất bại độc lập — hệ thống chỉ mất tính bảo mật nếu cả hai cùng thất bại.
+
+```mermaid
+sequenceDiagram
+    participant App as Application Server
+    participant HSM as HSM (Hardware Security Module)
+    participant DB as Database
+    Note over HSM: Pepper sealed in hardware<br/>never exits boundary
+    App->>HSM: get_secret("production-password-pepper")
+    HSM-->>App: pepper (in-memory, request-scoped)
+    Note over App: Argon2::new_with_secret(&pepper, ...)
+    App->>App: hash(password + salt) consuming pepper
+    Note over App: Pepper consumed via secret param<br/>not via string concat
+    App->>DB: STORE PHC string (uncrackable blob)
+    Note over App: Pepper dropped from memory
+    Note over DB,HSM: DB breach alone yields<br/>nothing crackable
+```
 
 ### Mẫu triển khai — Argon2id peppered được HSM hậu thuẫn
 

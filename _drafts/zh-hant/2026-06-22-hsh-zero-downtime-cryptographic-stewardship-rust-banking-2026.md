@@ -160,6 +160,27 @@ twitter_image_alt: "Sebastien Rousseau 的黑白肖像"
 
 此流程對終端使用者完全透明。它有效地讓最活躍的帳號於首日即遷移至最高資安等級,在時間推進中有機地大幅削減銀行的受攻擊面。
 
+下方序列圖呈現當已儲存紀錄仍處於舊式演算法時,單次登入事件中所發生的流程。使用者看不到任何變化,而銀行的身分驗證資產則多了一筆強化紀錄。
+
+```mermaid
+sequenceDiagram
+    actor User
+    participant Frontend
+    participant Auth as Authentication Service (hsh)
+    participant DB as Database
+    User->>Frontend: Submit username + password
+    Frontend->>Auth: authenticate(user, password)
+    Auth->>DB: SELECT password_hash FROM users
+    DB-->>Auth: PHC string (legacy: PBKDF2)
+    Note over Auth: Detect legacy algorithm prefix
+    Auth->>Auth: verify(password, legacy_hash)
+    Note over Auth: Re-hash with Argon2id
+    Auth->>DB: UPDATE password_hash = new PHC
+    DB-->>Auth: write confirmed
+    Auth-->>Frontend: 200 OK
+    Frontend-->>User: Login successful
+```
+
 ### 實作模式——`verify_and_upgrade` 分派
 
 於身分驗證服務內的整合面積很小。舊路徑保留為後備,新路徑就是分派器。
@@ -198,6 +219,24 @@ async fn authenticate(user: UserRecord, password_attempt: &str) -> Result<bool, 
 標準的密碼雜湊可防範直接的資料庫外洩,但若攻擊者同時取得資料庫(雜湊與 salt),便可執行離線破解。
 
 hsh 引入穩健的「peppered」資安層。透過與硬體安全模組(HSM)或雲端原生金鑰管理服務(KMS)整合,最終的 Argon2id 輸出會以一把絕不離開安全硬體邊界的高熵金鑰進行密碼學包裝。若使用者資料庫被外洩,攻擊者僅持有加密後的 blob。除非同時攻破銀行物理隔離的 HSM 基礎建設,否則他們無法著手破解密碼。
+
+下方架構圖追蹤秘密的流向。pepper 永遠不會落地於資料庫,資料庫本身也不持有任何可單獨定址的內容。兩個儲存體可彼此獨立失效——唯有兩者同時失效,系統才會喪失機密性。
+
+```mermaid
+sequenceDiagram
+    participant App as Application Server
+    participant HSM as HSM (Hardware Security Module)
+    participant DB as Database
+    Note over HSM: Pepper sealed in hardware<br/>never exits boundary
+    App->>HSM: get_secret("production-password-pepper")
+    HSM-->>App: pepper (in-memory, request-scoped)
+    Note over App: Argon2::new_with_secret(&pepper, ...)
+    App->>App: hash(password + salt) consuming pepper
+    Note over App: Pepper consumed via secret param<br/>not via string concat
+    App->>DB: STORE PHC string (uncrackable blob)
+    Note over App: Pepper dropped from memory
+    Note over DB,HSM: DB breach alone yields<br/>nothing crackable
+```
 
 ### 實作模式——HSM 後盾的 peppered Argon2id
 

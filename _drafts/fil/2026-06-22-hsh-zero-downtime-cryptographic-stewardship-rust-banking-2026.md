@@ -160,6 +160,27 @@ Kapag isinumite ng isang user ang kanilang credential, binabasa ng hsh ang naka-
 
 Ang prosesong ito ay ganap na transparent sa end-user. Epektibong nagmi-migrate ito ng mga pinaka-aktibong account patungo sa pinakamataas na security tier sa unang araw, kapansin-pansing pinapaliit ang attack surface ng bangko nang organiko sa paglipas ng panahon.
 
+Ipinapakita ng sequence sa ibaba kung ano ang nangyayari sa isang login event kapag ang naka-store na record ay nasa isang legacy algorithm. Walang nakikitang pagbabago ang user; lumalakas ng isang record ang authentication estate ng bangko.
+
+```mermaid
+sequenceDiagram
+    actor User
+    participant Frontend
+    participant Auth as Authentication Service (hsh)
+    participant DB as Database
+    User->>Frontend: Submit username + password
+    Frontend->>Auth: authenticate(user, password)
+    Auth->>DB: SELECT password_hash FROM users
+    DB-->>Auth: PHC string (legacy: PBKDF2)
+    Note over Auth: Detect legacy algorithm prefix
+    Auth->>Auth: verify(password, legacy_hash)
+    Note over Auth: Re-hash with Argon2id
+    Auth->>DB: UPDATE password_hash = new PHC
+    DB-->>Auth: write confirmed
+    Auth-->>Frontend: 200 OK
+    Frontend-->>User: Login successful
+```
+
 ### Implementation pattern — `verify_and_upgrade` dispatch
 
 Maliit ang integration surface sa loob ng isang authentication service. Nananatili ang legacy code path bilang fallback; ang bagong code path ang dispatcher.
@@ -198,6 +219,24 @@ Mahalaga ang tatlong katangian:
 Ang standard na password hashing ay nagpoprotekta laban sa direktang database leak, ngunit kung makukuha ng isang attacker ang database (mga hash at salt), maaari silang magsagawa ng offline cracking.
 
 Nagpapakilala ang hsh ng matatag na "peppered" security layer. Sa pamamagitan ng pag-integrate sa mga Hardware Security Module (HSM) o cloud-native na Key Management Service (KMS), ang panghuling Argon2id output ay cryptographically binabalot ng isang high-entropy na key na hindi kailanman umaalis sa secure na hardware boundary. Kung ma-exfiltrate ang user database, ang attacker ay may hawak lamang na encrypted blob. Hindi nila maaaring simulan ang pag-crack ng mga password nang hindi rin nilalabag ang physically isolated na HSM infrastructure ng bangko.
+
+Sinusubaybayan ng architecture diagram sa ibaba ang landas ng sikreto. Hindi kailanman dumadaong ang pepper sa database; walang hawak ang database na sa kanyang sarili ay ma-a-address. Maaaring mabigo nang independiyente ang dalawang store — nawawalan lamang ang sistema ng confidentiality kung magkasamang mabigo ang dalawa.
+
+```mermaid
+sequenceDiagram
+    participant App as Application Server
+    participant HSM as HSM (Hardware Security Module)
+    participant DB as Database
+    Note over HSM: Pepper sealed in hardware<br/>never exits boundary
+    App->>HSM: get_secret("production-password-pepper")
+    HSM-->>App: pepper (in-memory, request-scoped)
+    Note over App: Argon2::new_with_secret(&pepper, ...)
+    App->>App: hash(password + salt) consuming pepper
+    Note over App: Pepper consumed via secret param<br/>not via string concat
+    App->>DB: STORE PHC string (uncrackable blob)
+    Note over App: Pepper dropped from memory
+    Note over DB,HSM: DB breach alone yields<br/>nothing crackable
+```
 
 ### Implementation pattern — HSM-backed peppered Argon2id
 

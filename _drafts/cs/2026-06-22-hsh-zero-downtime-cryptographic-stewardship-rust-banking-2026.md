@@ -160,6 +160,27 @@ Když uživatel odešle své přihlašovací údaje, hsh přečte uložený řet
 
 Tento proces je zcela transparentní pro koncového uživatele. Účinně migruje nejaktivnější účty do nejvyšší bezpečnostní úrovně už první den a organicky dramaticky zmenšuje útočný povrch banky v čase.
 
+Sekvence níže ukazuje, co se odehrává během jediné přihlašovací události, když je uložený záznam na starším algoritmu. Uživatel nevidí žádnou změnu; autentizační prostředí banky se posiluje o jeden záznam.
+
+```mermaid
+sequenceDiagram
+    actor User
+    participant Frontend
+    participant Auth as Authentication Service (hsh)
+    participant DB as Database
+    User->>Frontend: Submit username + password
+    Frontend->>Auth: authenticate(user, password)
+    Auth->>DB: SELECT password_hash FROM users
+    DB-->>Auth: PHC string (legacy: PBKDF2)
+    Note over Auth: Detect legacy algorithm prefix
+    Auth->>Auth: verify(password, legacy_hash)
+    Note over Auth: Re-hash with Argon2id
+    Auth->>DB: UPDATE password_hash = new PHC
+    DB-->>Auth: write confirmed
+    Auth-->>Frontend: 200 OK
+    Frontend-->>User: Login successful
+```
+
 ### Implementační vzor — dispatch `verify_and_upgrade`
 
 Integrační plocha uvnitř autentizační služby je malá. Starší kódová cesta zůstává jako fallback; nová kódová cesta je dispatcher.
@@ -198,6 +219,24 @@ Záleží na třech vlastnostech:
 Standardní hashování hesel chrání proti přímým únikům databáze. Pokud však útočník získá databázi celou (hashe i soli), může provádět offline prolamování.
 
 hsh zavádí robustní vrstvu „peppered" zabezpečení. Integrací s Hardware Security Moduly (HSM) nebo cloud-native Key Management Services (KMS) je výstup Argon2id kryptograficky zabalen vysoce entropickým klíčem, který nikdy neopouští hranici zabezpečeného hardwaru. Pokud je uživatelská databáze exfiltrována, útočník vlastní pouze zašifrované bloby. Bez prolomení fyzicky izolované HSM infrastruktury banky nemůže začít prolamovat hesla.
+
+Architektonický diagram níže sleduje cestu tajemství. Pepper se nikdy nedostane do databáze; databáze sama o sobě nedrží nic adresovatelného. Obě úložiště mohou selhat nezávisle — systém ztrácí důvěrnost pouze tehdy, selžou-li obě současně.
+
+```mermaid
+sequenceDiagram
+    participant App as Application Server
+    participant HSM as HSM (Hardware Security Module)
+    participant DB as Database
+    Note over HSM: Pepper sealed in hardware<br/>never exits boundary
+    App->>HSM: get_secret("production-password-pepper")
+    HSM-->>App: pepper (in-memory, request-scoped)
+    Note over App: Argon2::new_with_secret(&pepper, ...)
+    App->>App: hash(password + salt) consuming pepper
+    Note over App: Pepper consumed via secret param<br/>not via string concat
+    App->>DB: STORE PHC string (uncrackable blob)
+    Note over App: Pepper dropped from memory
+    Note over DB,HSM: DB breach alone yields<br/>nothing crackable
+```
 
 ### Implementační vzor — HSM-podporovaný peppered Argon2id
 

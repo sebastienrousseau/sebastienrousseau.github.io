@@ -160,6 +160,27 @@ Când un utilizator își trimite credențialele, hsh citește șirul Password H
 
 Acest proces este complet transparent pentru utilizatorul final. Migrează efectiv cele mai active conturi la cel mai înalt nivel de securitate din prima zi, reducând dramatic suprafața de atac a băncii în mod organic, în timp.
 
+Secvența de mai jos arată ce se întâmplă în timpul unui singur eveniment de autentificare atunci când înregistrarea stocată este pe un algoritm moștenit. Utilizatorul nu vede nicio schimbare; parcul de autentificare al băncii se consolidează cu o înregistrare.
+
+```mermaid
+sequenceDiagram
+    actor User
+    participant Frontend
+    participant Auth as Authentication Service (hsh)
+    participant DB as Database
+    User->>Frontend: Submit username + password
+    Frontend->>Auth: authenticate(user, password)
+    Auth->>DB: SELECT password_hash FROM users
+    DB-->>Auth: PHC string (legacy: PBKDF2)
+    Note over Auth: Detect legacy algorithm prefix
+    Auth->>Auth: verify(password, legacy_hash)
+    Note over Auth: Re-hash with Argon2id
+    Auth->>DB: UPDATE password_hash = new PHC
+    DB-->>Auth: write confirmed
+    Auth-->>Frontend: 200 OK
+    Frontend-->>User: Login successful
+```
+
 ### Tipar de implementare — dispatch `verify_and_upgrade`
 
 Suprafața de integrare în interiorul unui serviciu de autentificare este mică. Calea de cod moștenită rămâne ca fallback; noua cale de cod este dispecerul.
@@ -198,6 +219,24 @@ Trei proprietăți contează:
 Hashing-ul standard al parolelor protejează împotriva scurgerilor directe ale bazei de date, dar dacă un atacator obține atât baza de date (hash-uri, cât și sare), poate executa spargere offline.
 
 hsh introduce un strat robust de securitate „peppered". Prin integrarea cu Module Hardware de Securitate (HSM) sau cu servicii cloud-native de gestionare a cheilor (KMS), ieșirea Argon2id finală este împachetată criptografic cu o cheie de entropie ridicată care nu părăsește niciodată frontiera hardware sigură. Dacă baza de date a utilizatorilor este exfiltrată, atacatorul deține doar blob-uri criptate. Nu poate începe să spargă parole fără să spargă și infrastructura HSM izolată fizic a băncii.
+
+Diagrama de arhitectură de mai jos urmărește calea secretului. Pepper-ul nu ajunge niciodată în baza de date; baza de date nu deține niciodată ceva exploatabil în sine. Cele două depozite pot eșua independent — sistemul își pierde confidențialitatea doar dacă ambele eșuează împreună.
+
+```mermaid
+sequenceDiagram
+    participant App as Application Server
+    participant HSM as HSM (Hardware Security Module)
+    participant DB as Database
+    Note over HSM: Pepper sealed in hardware<br/>never exits boundary
+    App->>HSM: get_secret("production-password-pepper")
+    HSM-->>App: pepper (in-memory, request-scoped)
+    Note over App: Argon2::new_with_secret(&pepper, ...)
+    App->>App: hash(password + salt) consuming pepper
+    Note over App: Pepper consumed via secret param<br/>not via string concat
+    App->>DB: STORE PHC string (uncrackable blob)
+    Note over App: Pepper dropped from memory
+    Note over DB,HSM: DB breach alone yields<br/>nothing crackable
+```
 
 ### Tipar de implementare — Argon2id „peppered" susținut de HSM
 

@@ -160,6 +160,27 @@ hsh 같은 프레임워크의 필요성을 이해하려면, 비밀번호 해시�
 
 이 과정은 최종 사용자에게 완전히 투명합니다. 결과적으로 가장 활발한 계정들이 첫날에 최고 보안 계층으로 이전되며, 시간이 지남에 따라 은행의 공격면이 자연스럽게 극적으로 줄어듭니다.
 
+아래 시퀀스는 저장된 레코드가 레거시 알고리즘에 있을 때 단일 로그인 이벤트에서 무엇이 일어나는지를 보여 줍니다. 사용자에게는 아무 변화도 보이지 않지만, 은행의 인증 자산은 레코드 하나만큼 강해집니다.
+
+```mermaid
+sequenceDiagram
+    actor User
+    participant Frontend
+    participant Auth as Authentication Service (hsh)
+    participant DB as Database
+    User->>Frontend: Submit username + password
+    Frontend->>Auth: authenticate(user, password)
+    Auth->>DB: SELECT password_hash FROM users
+    DB-->>Auth: PHC string (legacy: PBKDF2)
+    Note over Auth: Detect legacy algorithm prefix
+    Auth->>Auth: verify(password, legacy_hash)
+    Note over Auth: Re-hash with Argon2id
+    Auth->>DB: UPDATE password_hash = new PHC
+    DB-->>Auth: write confirmed
+    Auth-->>Frontend: 200 OK
+    Frontend-->>User: Login successful
+```
+
 ### 구현 패턴 — `verify_and_upgrade` 디스패치
 
 인증 서비스 내부의 통합 표면은 작습니다. 레거시 코드 경로는 폴백으로 남고, 새 코드 경로가 디스패처가 됩니다.
@@ -198,6 +219,24 @@ async fn authenticate(user: UserRecord, password_attempt: &str) -> Result<bool, 
 표준 비밀번호 해싱은 직접적인 데이터베이스 유출에 대해 보호하지만, 공격자가 데이터베이스(해시와 솔트)를 모두 확보하면 오프라인 해독을 실행할 수 있습니다.
 
 hsh는 견고한 "페퍼링된" 보안 계층을 도입합니다. Hardware Security Module (HSM)이나 클라우드 네이티브 Key Management Service (KMS)와 통합함으로써, 최종 Argon2id 출력은 보안 하드웨어 경계를 결코 벗어나지 않는 고엔트로피 키로 암호학적으로 래핑됩니다. 사용자 데이터베이스가 유출되더라도, 공격자가 확보하는 것은 암호화된 블롭뿐입니다. 은행의 물리적으로 격리된 HSM 인프라까지 침해하지 않고는 비밀번호 해독을 시작할 수 없습니다.
+
+아래 아키텍처 다이어그램은 시크릿의 경로를 추적합니다. 페퍼는 결코 데이터베이스에 안착하지 않으며, 데이터베이스는 단독으로 조준 가능한 어떤 것도 보유하지 않습니다. 두 저장소는 독립적으로 실패할 수 있으며 — 시스템은 둘이 함께 실패할 때에만 기밀성을 잃습니다.
+
+```mermaid
+sequenceDiagram
+    participant App as Application Server
+    participant HSM as HSM (Hardware Security Module)
+    participant DB as Database
+    Note over HSM: Pepper sealed in hardware<br/>never exits boundary
+    App->>HSM: get_secret("production-password-pepper")
+    HSM-->>App: pepper (in-memory, request-scoped)
+    Note over App: Argon2::new_with_secret(&pepper, ...)
+    App->>App: hash(password + salt) consuming pepper
+    Note over App: Pepper consumed via secret param<br/>not via string concat
+    App->>DB: STORE PHC string (uncrackable blob)
+    Note over App: Pepper dropped from memory
+    Note over DB,HSM: DB breach alone yields<br/>nothing crackable
+```
 
 ### 구현 패턴 — HSM 기반 페퍼링된 Argon2id
 

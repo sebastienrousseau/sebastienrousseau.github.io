@@ -160,6 +160,27 @@ twitter_image_alt: "Black and White Portrait of Sebastien Rousseau"
 
 תהליך זה שקוף לחלוטין למשתמש הקצה. הוא למעשה מהגר את החשבונות הפעילים ביותר לדרג האבטחה הגבוה ביותר ביום הראשון, ומצמצם דרמטית את משטח התקיפה של הבנק באופן אורגני לאורך זמן.
 
+הרצף שלהלן מראה מה מתרחש במהלך אירוע כניסה בודד כאשר הרשומה המאוחסנת נמצאת על אלגוריתם מורשתי. המשתמש אינו רואה כל שינוי; מצבת האימות של הבנק מתחזקת ברשומה אחת.
+
+```mermaid
+sequenceDiagram
+    actor User
+    participant Frontend
+    participant Auth as Authentication Service (hsh)
+    participant DB as Database
+    User->>Frontend: Submit username + password
+    Frontend->>Auth: authenticate(user, password)
+    Auth->>DB: SELECT password_hash FROM users
+    DB-->>Auth: PHC string (legacy: PBKDF2)
+    Note over Auth: Detect legacy algorithm prefix
+    Auth->>Auth: verify(password, legacy_hash)
+    Note over Auth: Re-hash with Argon2id
+    Auth->>DB: UPDATE password_hash = new PHC
+    DB-->>Auth: write confirmed
+    Auth-->>Frontend: 200 OK
+    Frontend-->>User: Login successful
+```
+
 ### תבנית מימוש — שיגור `verify_and_upgrade`
 
 משטח האינטגרציה בתוך שירות אימות הוא קטן. נתיב הקוד המורשתי נשאר כ-fallback; נתיב הקוד החדש הוא ה-dispatcher.
@@ -198,6 +219,24 @@ async fn authenticate(user: UserRecord, password_attempt: &str) -> Result<bool, 
 hashing סטנדרטי של סיסמאות מגן מפני דליפות ישירות של מסד הנתונים, אך אם תוקף משיג את מסד הנתונים (hashes ו-salts), הוא יכול לבצע פיצוח אופליין.
 
 hsh מציגה שכבת אבטחה חזקה של "peppered". על ידי שילוב עם Hardware Security Modules (HSMs) או Key Management Services (KMS) ענן-ילידיים, פלט ה-Argon2id הסופי נעטף קריפטוגרפית באמצעות מפתח בעל אנטרופיה גבוהה שלעולם אינו עוזב את גבול החומרה המאובטחת. אם מסד נתוני המשתמשים מוחלץ, התוקף מחזיק רק blobs מוצפנים. הוא אינו יכול להתחיל לפצח סיסמאות מבלי לפרוץ גם לתשתית ה-HSM המבודדת פיזית של הבנק.
+
+תרשים הארכיטקטורה שלהלן מתחקה אחר נתיב הסוד. ה-pepper לעולם אינו נוחת במסד הנתונים; מסד הנתונים לעולם אינו מחזיק דבר הניתן לפיצוח בפני עצמו. שני המאגרים יכולים להיכשל באופן עצמאי — המערכת מאבדת חיסיון רק אם שניהם נכשלים יחד.
+
+```mermaid
+sequenceDiagram
+    participant App as Application Server
+    participant HSM as HSM (Hardware Security Module)
+    participant DB as Database
+    Note over HSM: Pepper sealed in hardware<br/>never exits boundary
+    App->>HSM: get_secret("production-password-pepper")
+    HSM-->>App: pepper (in-memory, request-scoped)
+    Note over App: Argon2::new_with_secret(&pepper, ...)
+    App->>App: hash(password + salt) consuming pepper
+    Note over App: Pepper consumed via secret param<br/>not via string concat
+    App->>DB: STORE PHC string (uncrackable blob)
+    Note over App: Pepper dropped from memory
+    Note over DB,HSM: DB breach alone yields<br/>nothing crackable
+```
 
 ### תבנית מימוש — Argon2id מותבל-pepper מגובה-HSM
 

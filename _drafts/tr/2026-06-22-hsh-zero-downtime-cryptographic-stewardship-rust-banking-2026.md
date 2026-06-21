@@ -160,6 +160,27 @@ Bir kullanıcı kimlik bilgilerini gönderdiğinde hsh, depolanmış Parola Öze
 
 Bu süreç son kullanıcı için tamamen şeffaftır. En aktif hesapları birinci günde en yüksek güvenlik kademesine taşır; bankanın saldırı yüzeyini zaman içinde organik olarak çarpıcı biçimde küçültür.
 
+Aşağıdaki sıra diyagramı, saklanan kayıt eski bir algoritma üzerindeyken tek bir oturum açma olayında neler olduğunu gösterir. Kullanıcı hiçbir değişiklik görmez; bankanın kimlik doğrulama envanteri bir kayıt kadar güçlenir.
+
+```mermaid
+sequenceDiagram
+    actor User
+    participant Frontend
+    participant Auth as Authentication Service (hsh)
+    participant DB as Database
+    User->>Frontend: Submit username + password
+    Frontend->>Auth: authenticate(user, password)
+    Auth->>DB: SELECT password_hash FROM users
+    DB-->>Auth: PHC string (legacy: PBKDF2)
+    Note over Auth: Detect legacy algorithm prefix
+    Auth->>Auth: verify(password, legacy_hash)
+    Note over Auth: Re-hash with Argon2id
+    Auth->>DB: UPDATE password_hash = new PHC
+    DB-->>Auth: write confirmed
+    Auth-->>Frontend: 200 OK
+    Frontend-->>User: Login successful
+```
+
 ### Uygulama deseni — `verify_and_upgrade` dağıtımı
 
 Bir kimlik doğrulama servisi içindeki entegrasyon yüzeyi küçüktür. Eski kod yolu yedek olarak kalır; yeni kod yolu dağıtıcıdır.
@@ -198,6 +219,24 @@ async fn authenticate(user: UserRecord, password_attempt: &str) -> Result<bool, 
 Standart parola özetleme doğrudan veritabanı sızıntılarına karşı korur; ancak bir saldırgan hem veritabanını (özetleri ve tuzları) ele geçirirse çevrimdışı kırma gerçekleştirebilir.
 
 hsh sağlam bir "peppered" güvenlik katmanı sunar. Donanım Güvenlik Modülleri (HSM'ler) veya bulut yerel Anahtar Yönetim Hizmetleri (KMS) ile entegre olarak son Argon2id çıktısı, güvenli donanım sınırından asla çıkmayan yüksek entropili bir anahtarla kriptografik olarak sarılır. Kullanıcı veritabanı dışarı sızdırılırsa saldırgan yalnızca şifreli bloblara sahip olur. Bankanın fiziksel olarak izole edilmiş HSM altyapısını da ihlal etmeden parolaları kırmaya başlayamaz.
+
+Aşağıdaki mimari diyagram gizli anahtarın izlediği yolu çıkarır. Pepper veritabanına asla düşmez; veritabanı tek başına adreslenebilir hiçbir şey tutmaz. İki depo bağımsız olarak başarısız olabilir — sistem gizliliğini yalnızca her ikisi birlikte başarısız olursa kaybeder.
+
+```mermaid
+sequenceDiagram
+    participant App as Application Server
+    participant HSM as HSM (Hardware Security Module)
+    participant DB as Database
+    Note over HSM: Pepper sealed in hardware<br/>never exits boundary
+    App->>HSM: get_secret("production-password-pepper")
+    HSM-->>App: pepper (in-memory, request-scoped)
+    Note over App: Argon2::new_with_secret(&pepper, ...)
+    App->>App: hash(password + salt) consuming pepper
+    Note over App: Pepper consumed via secret param<br/>not via string concat
+    App->>DB: STORE PHC string (uncrackable blob)
+    Note over App: Pepper dropped from memory
+    Note over DB,HSM: DB breach alone yields<br/>nothing crackable
+```
 
 ### Uygulama deseni — HSM destekli peppered Argon2id
 

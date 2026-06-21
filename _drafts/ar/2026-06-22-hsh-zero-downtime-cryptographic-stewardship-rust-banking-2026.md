@@ -160,6 +160,27 @@ twitter_image_alt: "صورة بالأبيض والأسود لـ Sebastien Rousse
 
 هذه العملية شفافة كلياً للمستخدم النهائي. وهي تُرحِّل فعلياً الحسابات الأكثر نشاطاً إلى أعلى طبقة أمنية في اليوم الأول، فتُقلِّص بشكل لافت سطح الهجوم لدى المصرف عضوياً عبر الزمن.
 
+يُبيِّن التسلسل أدناه ما يحدث أثناء حدث تسجيل دخول واحد حين يكون السجل المُخزَّن على خوارزمية قديمة. لا يرى المستخدم أي تغيير؛ بينما يتعزَّز عقار المصادقة لدى المصرف بسجل واحد إضافي.
+
+```mermaid
+sequenceDiagram
+    actor User
+    participant Frontend
+    participant Auth as Authentication Service (hsh)
+    participant DB as Database
+    User->>Frontend: Submit username + password
+    Frontend->>Auth: authenticate(user, password)
+    Auth->>DB: SELECT password_hash FROM users
+    DB-->>Auth: PHC string (legacy: PBKDF2)
+    Note over Auth: Detect legacy algorithm prefix
+    Auth->>Auth: verify(password, legacy_hash)
+    Note over Auth: Re-hash with Argon2id
+    Auth->>DB: UPDATE password_hash = new PHC
+    DB-->>Auth: write confirmed
+    Auth-->>Frontend: 200 OK
+    Frontend-->>User: Login successful
+```
+
 ### نمط التطبيق — إرسال `verify_and_upgrade`
 
 سطح التكامل داخل خدمة المصادقة صغير. يبقى مسار الشيفرة القديم كاحتياطي؛ ومسار الشيفرة الجديد هو المُرسِل.
@@ -198,6 +219,24 @@ async fn authenticate(user: UserRecord, password_attempt: &str) -> Result<bool, 
 تجزئة كلمات المرور القياسية تحمي من تسرُّبات قواعد البيانات المباشرة، لكن إن استحوذ المهاجم على القاعدة (التجزئات والملح معاً)، استطاع تنفيذ الكسر دون اتصال.
 
 يُقدِّم hsh طبقة أمنية "مُتبَّلة" متينة. فبالتكامل مع وحدات أمن العتاد (HSMs) أو خدمات إدارة المفاتيح (KMS) السحابية الأصيلة، يُغلَّف خرج Argon2id النهائي تشفيرياً بمفتاح عالي الإنتروبيا لا يغادر حدود العتاد الآمنة أبداً. وإن سُرِّبت قاعدة بيانات المستخدمين، فلا يحوز المهاجم إلا كتلاً مشفَّرة. ولا يستطيع البدء بكسر كلمات المرور دون اختراق البنية التحتية لـ HSM المعزولة فيزيائياً لدى المصرف أيضاً.
+
+يتتبَّع مخطَّط المعمارية أدناه مسار السر. لا يهبط التتبيل في قاعدة البيانات أبداً؛ ولا تحتفظ قاعدة البيانات بأي شيء قابل للعنونة بمفرده. يستطيع المخزنان أن يفشلا بشكل مستقل — ولا يفقد النظام السرية إلا إذا فشلا معاً.
+
+```mermaid
+sequenceDiagram
+    participant App as Application Server
+    participant HSM as HSM (Hardware Security Module)
+    participant DB as Database
+    Note over HSM: Pepper sealed in hardware<br/>never exits boundary
+    App->>HSM: get_secret("production-password-pepper")
+    HSM-->>App: pepper (in-memory, request-scoped)
+    Note over App: Argon2::new_with_secret(&pepper, ...)
+    App->>App: hash(password + salt) consuming pepper
+    Note over App: Pepper consumed via secret param<br/>not via string concat
+    App->>DB: STORE PHC string (uncrackable blob)
+    Note over App: Pepper dropped from memory
+    Note over DB,HSM: DB breach alone yields<br/>nothing crackable
+```
 
 ### نمط التطبيق — Argon2id مُتبَّل ومدعوم بـ HSM
 

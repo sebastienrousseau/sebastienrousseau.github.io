@@ -160,6 +160,27 @@ hsh जैसे ढाँचे की आवश्यकता को सम�
 
 यह प्रक्रिया अंतिम-उपयोगकर्ता के लिए पूरी तरह पारदर्शी है। यह सबसे सक्रिय खातों को प्रथम दिन से ही उच्चतम सुरक्षा स्तर पर प्रभावी रूप से माइग्रेट कर देती है, समय के साथ बैंक की हमले की सतह को नाटकीय रूप से जैविक तरीक़े से कम करती है।
 
+नीचे का अनुक्रम यह दिखाता है कि एकल लॉगिन घटना के दौरान क्या होता है जब संग्रहीत रिकॉर्ड लीगेसी एल्गोरिथम पर है। उपयोगकर्ता को कुछ भी बदला हुआ दिखाई नहीं देता; बैंक का प्रमाणीकरण आधार एक रिकॉर्ड से सुदृढ़ हो जाता है।
+
+```mermaid
+sequenceDiagram
+    actor User
+    participant Frontend
+    participant Auth as Authentication Service (hsh)
+    participant DB as Database
+    User->>Frontend: Submit username + password
+    Frontend->>Auth: authenticate(user, password)
+    Auth->>DB: SELECT password_hash FROM users
+    DB-->>Auth: PHC string (legacy: PBKDF2)
+    Note over Auth: Detect legacy algorithm prefix
+    Auth->>Auth: verify(password, legacy_hash)
+    Note over Auth: Re-hash with Argon2id
+    Auth->>DB: UPDATE password_hash = new PHC
+    DB-->>Auth: write confirmed
+    Auth-->>Frontend: 200 OK
+    Frontend-->>User: Login successful
+```
+
 ### कार्यान्वयन पैटर्न — `verify_and_upgrade` डिस्पैच
 
 प्रमाणीकरण सेवा के अंदर एकीकरण सतह छोटी है। लीगेसी कोड पथ fallback के रूप में बना रहता है; नया कोड पथ डिस्पैचर है।
@@ -198,6 +219,24 @@ async fn authenticate(user: UserRecord, password_attempt: &str) -> Result<bool, 
 मानक पासवर्ड हैशिंग प्रत्यक्ष डेटाबेस लीक से सुरक्षा देती है, परंतु यदि हमलावर डेटाबेस (हैश और saltों दोनों) हासिल कर ले, तो वह ऑफ़लाइन क्रैकिंग निष्पादित कर सकता है।
 
 hsh एक सुदृढ़ "peppered" सुरक्षा परत प्रस्तुत करता है। Hardware Security Modules (HSMs) या क्लाउड-नेटिव Key Management Services (KMS) के साथ एकीकरण द्वारा, अंतिम Argon2id आउटपुट को क्रिप्टोग्राफ़िक रूप से एक उच्च-एन्ट्रॉपी कुंजी से लपेटा जाता है, जो सुरक्षित हार्डवेयर सीमा से कभी बाहर नहीं निकलती। यदि उपयोगकर्ता डेटाबेस बहिर्निकाला जाए, तो हमलावर के पास केवल एन्क्रिप्टेड blobs होते हैं। वह बैंक के भौतिक रूप से पृथक्कृत HSM अवसंरचना को भी भंग किए बिना पासवर्ड क्रैक करना शुरू नहीं कर सकता।
+
+नीचे का आर्किटेक्चर आरेख गोपनीय पथ का अनुरेखण करता है। pepper कभी डेटाबेस में नहीं उतरता; डेटाबेस स्वयं कुछ भी पता-योग्य नहीं रखता। दोनों भंडार स्वतंत्र रूप से विफल हो सकते हैं — प्रणाली केवल तभी गोपनीयता खोती है जब दोनों एक साथ विफल हों।
+
+```mermaid
+sequenceDiagram
+    participant App as Application Server
+    participant HSM as HSM (Hardware Security Module)
+    participant DB as Database
+    Note over HSM: Pepper sealed in hardware<br/>never exits boundary
+    App->>HSM: get_secret("production-password-pepper")
+    HSM-->>App: pepper (in-memory, request-scoped)
+    Note over App: Argon2::new_with_secret(&pepper, ...)
+    App->>App: hash(password + salt) consuming pepper
+    Note over App: Pepper consumed via secret param<br/>not via string concat
+    App->>DB: STORE PHC string (uncrackable blob)
+    Note over App: Pepper dropped from memory
+    Note over DB,HSM: DB breach alone yields<br/>nothing crackable
+```
 
 ### कार्यान्वयन पैटर्न — HSM-समर्थित peppered Argon2id
 

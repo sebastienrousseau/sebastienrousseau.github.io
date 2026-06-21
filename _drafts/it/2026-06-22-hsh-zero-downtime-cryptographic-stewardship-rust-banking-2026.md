@@ -160,6 +160,27 @@ Quando un utente invia le proprie credenziali, hsh legge la stringa Password Has
 
 Il processo è completamente trasparente per l'utente finale. Di fatto migra al livello di sicurezza più alto gli account più attivi dal primo giorno, riducendo in modo significativo e organico la superficie d'attacco della banca nel tempo.
 
+La sequenza seguente mostra cosa accade durante un singolo evento di login quando il record memorizzato si trova su un algoritmo legacy. L'utente non percepisce alcuna differenza; il parco di autenticazione della banca si rafforza di un record.
+
+```mermaid
+sequenceDiagram
+    actor User
+    participant Frontend
+    participant Auth as Authentication Service (hsh)
+    participant DB as Database
+    User->>Frontend: Submit username + password
+    Frontend->>Auth: authenticate(user, password)
+    Auth->>DB: SELECT password_hash FROM users
+    DB-->>Auth: PHC string (legacy: PBKDF2)
+    Note over Auth: Detect legacy algorithm prefix
+    Auth->>Auth: verify(password, legacy_hash)
+    Note over Auth: Re-hash with Argon2id
+    Auth->>DB: UPDATE password_hash = new PHC
+    DB-->>Auth: write confirmed
+    Auth-->>Frontend: 200 OK
+    Frontend-->>User: Login successful
+```
+
 ### Pattern di implementazione — dispatch `verify_and_upgrade`
 
 La superficie di integrazione all'interno di un servizio di autenticazione è ridotta. Il percorso di codice legacy resta come fallback; il nuovo percorso è il dispatcher.
@@ -198,6 +219,24 @@ Tre proprietà sono rilevanti:
 L'hashing standard delle password protegge dalle violazioni dirette del database, ma se un attaccante ottiene sia il database (hash e salt), può eseguire cracking offline.
 
 hsh introduce un robusto strato di sicurezza "peppered". Integrandosi con Hardware Security Module (HSM) o servizi cloud-native di Key Management (KMS), l'output finale di Argon2id viene incapsulato crittograficamente con una chiave ad alta entropia che non lascia mai il confine hardware sicuro. Se il database utenti viene esfiltrato, l'attaccante possiede solo blob cifrati. Non può iniziare a decifrare le password senza violare anche l'infrastruttura HSM fisicamente isolata della banca.
+
+Il diagramma di architettura sottostante traccia il percorso del segreto. Il pepper non finisce mai nel database; il database non conserva mai nulla di indirizzabile da solo. I due store possono guastarsi in modo indipendente — il sistema perde la riservatezza solo se entrambi cedono insieme.
+
+```mermaid
+sequenceDiagram
+    participant App as Application Server
+    participant HSM as HSM (Hardware Security Module)
+    participant DB as Database
+    Note over HSM: Pepper sealed in hardware<br/>never exits boundary
+    App->>HSM: get_secret("production-password-pepper")
+    HSM-->>App: pepper (in-memory, request-scoped)
+    Note over App: Argon2::new_with_secret(&pepper, ...)
+    App->>App: hash(password + salt) consuming pepper
+    Note over App: Pepper consumed via secret param<br/>not via string concat
+    App->>DB: STORE PHC string (uncrackable blob)
+    Note over App: Pepper dropped from memory
+    Note over DB,HSM: DB breach alone yields<br/>nothing crackable
+```
 
 ### Pattern di implementazione — Argon2id peppered con HSM
 

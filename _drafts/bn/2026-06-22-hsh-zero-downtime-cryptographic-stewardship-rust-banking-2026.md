@@ -160,6 +160,27 @@ hsh-এর মতো একটি ফ্রেমওয়ার্কের প
 
 এই প্রক্রিয়া শেষ-ব্যবহারকারীর কাছে সম্পূর্ণ স্বচ্ছ। এটি কার্যকরভাবে সবচেয়ে সক্রিয় অ্যাকাউন্টগুলোকে প্রথম দিনেই সর্বোচ্চ নিরাপত্তা স্তরে স্থানান্তরিত করে — সময়ের সঙ্গে স্বাভাবিকভাবে ব্যাংকের আক্রমণ পৃষ্ঠ নাটকীয়ভাবে কমিয়ে আনে।
 
+নিচের সিকোয়েন্স দেখায় একটি একক লগইন ঘটনার সময় কী ঘটে — যখন সংরক্ষিত রেকর্ড একটি লিগ্যাসি অ্যালগরিদমে আছে। ব্যবহারকারী কোনো পরিবর্তন দেখেন না; ব্যাংকের অথেনটিকেশন এস্টেট এক রেকর্ড পরিমাণে শক্তিশালী হয়।
+
+```mermaid
+sequenceDiagram
+    actor User
+    participant Frontend
+    participant Auth as Authentication Service (hsh)
+    participant DB as Database
+    User->>Frontend: Submit username + password
+    Frontend->>Auth: authenticate(user, password)
+    Auth->>DB: SELECT password_hash FROM users
+    DB-->>Auth: PHC string (legacy: PBKDF2)
+    Note over Auth: Detect legacy algorithm prefix
+    Auth->>Auth: verify(password, legacy_hash)
+    Note over Auth: Re-hash with Argon2id
+    Auth->>DB: UPDATE password_hash = new PHC
+    DB-->>Auth: write confirmed
+    Auth-->>Frontend: 200 OK
+    Frontend-->>User: Login successful
+```
+
 ### বাস্তবায়ন প্যাটার্ন — `verify_and_upgrade` ডিসপ্যাচ
 
 একটি অথেনটিকেশন সার্ভিসের ভিতরে ইন্টিগ্রেশন পৃষ্ঠ ছোট। লিগ্যাসি কোড পথ ফলব্যাক হিসেবেই থাকে; নতুন কোড পথটিই ডিসপ্যাচার।
@@ -198,6 +219,24 @@ async fn authenticate(user: UserRecord, password_attempt: &str) -> Result<bool, 
 স্ট্যান্ডার্ড পাসওয়ার্ড হ্যাশিং সরাসরি ডেটাবেস ফাঁসের বিরুদ্ধে রক্ষা করে — কিন্তু আক্রমণকারী যদি ডেটাবেস (হ্যাশ ও সল্ট) উভয়ই হাতে পায়, তারা অফলাইন ক্র্যাকিং চালাতে পারে।
 
 hsh একটি দৃঢ় "পেপার্ড" নিরাপত্তা স্তর প্রবর্তন করে। Hardware Security Module (HSM) বা ক্লাউড-নেটিভ Key Management Service (KMS)-এর সঙ্গে সংহত করে, চূড়ান্ত Argon2id আউটপুট একটি উচ্চ-এনট্রপি কী দিয়ে ক্রিপ্টোগ্রাফিকভাবে মোড়ানো হয় — যে কী কখনও নিরাপদ হার্ডওয়্যার সীমানা ছাড়ে না। যদি ব্যবহারকারী ডেটাবেস বের করে নেওয়া হয়, আক্রমণকারী শুধুমাত্র এনক্রিপ্টেড ব্লব ধারণ করে। তারা ব্যাংকের শারীরিকভাবে বিচ্ছিন্ন HSM পরিকাঠামোতে ভঙ্গ না করে পাসওয়ার্ড ক্র্যাকিং শুরু করতে পারে না।
+
+নিচের আর্কিটেকচার ডায়াগ্রামটি গোপনীয় পথ অনুসরণ করে। পেপার কখনও ডেটাবেসে নামে না; ডেটাবেস নিজে থেকে অ্যাড্রেসেবল কিছু ধারণ করে না। দুটি স্টোর স্বাধীনভাবে ব্যর্থ হতে পারে — সিস্টেম কেবল তখনই গোপনীয়তা হারায় যখন দুটি একসঙ্গে ব্যর্থ হয়।
+
+```mermaid
+sequenceDiagram
+    participant App as Application Server
+    participant HSM as HSM (Hardware Security Module)
+    participant DB as Database
+    Note over HSM: Pepper sealed in hardware<br/>never exits boundary
+    App->>HSM: get_secret("production-password-pepper")
+    HSM-->>App: pepper (in-memory, request-scoped)
+    Note over App: Argon2::new_with_secret(&pepper, ...)
+    App->>App: hash(password + salt) consuming pepper
+    Note over App: Pepper consumed via secret param<br/>not via string concat
+    App->>DB: STORE PHC string (uncrackable blob)
+    Note over App: Pepper dropped from memory
+    Note over DB,HSM: DB breach alone yields<br/>nothing crackable
+```
 
 ### বাস্তবায়ন প্যাটার্ন — HSM-সমর্থিত পেপার্ড Argon2id
 

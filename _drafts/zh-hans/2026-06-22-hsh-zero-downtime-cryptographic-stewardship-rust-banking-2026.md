@@ -160,6 +160,27 @@ twitter_image_alt: "Sebastien Rousseau 黑白肖像"
 
 整个过程对终端用户完全透明。它在第一天就把最活跃账户迁移到最高安全等级，并随时间推移有机地大幅压缩银行的攻击面。
 
+下方时序图展示了当存储记录仍在遗留算法上时，单次登录事件内部发生的全过程。用户感知不到任何变化；银行的身份验证资产却悄然增强了一条记录。
+
+```mermaid
+sequenceDiagram
+    actor User
+    participant Frontend
+    participant Auth as Authentication Service (hsh)
+    participant DB as Database
+    User->>Frontend: Submit username + password
+    Frontend->>Auth: authenticate(user, password)
+    Auth->>DB: SELECT password_hash FROM users
+    DB-->>Auth: PHC string (legacy: PBKDF2)
+    Note over Auth: Detect legacy algorithm prefix
+    Auth->>Auth: verify(password, legacy_hash)
+    Note over Auth: Re-hash with Argon2id
+    Auth->>DB: UPDATE password_hash = new PHC
+    DB-->>Auth: write confirmed
+    Auth-->>Frontend: 200 OK
+    Frontend-->>User: Login successful
+```
+
 ### 实现模式——`verify_and_upgrade` 派发
 
 身份验证服务内的集成表面很小。遗留代码路径保留作为回退；新代码路径就是派发器。
@@ -198,6 +219,24 @@ async fn authenticate(user: UserRecord, password_attempt: &str) -> Result<bool, 
 标准口令哈希可防御对数据库的直接泄露，但若攻击者同时拿到数据库（哈希与盐），即可执行离线破解。
 
 hsh 引入了稳健的 "加椒" 安全层。通过与硬件安全模块（HSM）或云原生密钥管理服务（KMS）集成，最终的 Argon2id 输出会被一把永不离开安全硬件边界的高熵密钥以密码学方式封装。即便用户数据库被外泄，攻击者拿到的也只是加密斑点。在不同时攻破银行物理隔离的 HSM 基础设施前，他们无法开始破解口令。
+
+下方架构图描绘了秘密的流转路径。pepper 永远不会落到数据库里；数据库本身也不持有任何可单独取用的内容。两个存储可独立失效——只有当二者同时被攻破时，系统才会损失机密性。
+
+```mermaid
+sequenceDiagram
+    participant App as Application Server
+    participant HSM as HSM (Hardware Security Module)
+    participant DB as Database
+    Note over HSM: Pepper sealed in hardware<br/>never exits boundary
+    App->>HSM: get_secret("production-password-pepper")
+    HSM-->>App: pepper (in-memory, request-scoped)
+    Note over App: Argon2::new_with_secret(&pepper, ...)
+    App->>App: hash(password + salt) consuming pepper
+    Note over App: Pepper consumed via secret param<br/>not via string concat
+    App->>DB: STORE PHC string (uncrackable blob)
+    Note over App: Pepper dropped from memory
+    Note over DB,HSM: DB breach alone yields<br/>nothing crackable
+```
 
 ### 实现模式——HSM 支持的加椒 Argon2id
 

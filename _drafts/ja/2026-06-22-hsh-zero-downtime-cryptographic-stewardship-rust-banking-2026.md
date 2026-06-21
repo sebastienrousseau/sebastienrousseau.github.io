@@ -160,6 +160,27 @@ hsh のようなフレームワークの必要性を理解するには、パス�
 
 このプロセスはエンドユーザーに対して完全に透過的です。最もアクティブなアカウントを初日に最高セキュリティ層へ効果的に移行し、銀行の攻撃面を時間とともに有機的かつ劇的に縮小します。
 
+以下のシーケンスは、保存されたレコードがレガシーアルゴリズム上にある状態で単一のログインイベントが発生したときに何が起きるかを示しています。ユーザーには何の変化も見えませんが、銀行の認証基盤はレコード 1 件分だけ強化されます。
+
+```mermaid
+sequenceDiagram
+    actor User
+    participant Frontend
+    participant Auth as Authentication Service (hsh)
+    participant DB as Database
+    User->>Frontend: Submit username + password
+    Frontend->>Auth: authenticate(user, password)
+    Auth->>DB: SELECT password_hash FROM users
+    DB-->>Auth: PHC string (legacy: PBKDF2)
+    Note over Auth: Detect legacy algorithm prefix
+    Auth->>Auth: verify(password, legacy_hash)
+    Note over Auth: Re-hash with Argon2id
+    Auth->>DB: UPDATE password_hash = new PHC
+    DB-->>Auth: write confirmed
+    Auth-->>Frontend: 200 OK
+    Frontend-->>User: Login successful
+```
+
 ### 実装パターン — `verify_and_upgrade` ディスパッチ
 
 認証サービス内部での統合面は小さく済みます。レガシーのコード経路はフォールバックとしてそのまま残り、新しいコード経路がディスパッチャとして機能します。
@@ -198,6 +219,24 @@ async fn authenticate(user: UserRecord, password_attempt: &str) -> Result<bool, 
 標準的なパスワードハッシュは直接的なデータベース漏洩から保護しますが、攻撃者がデータベース (ハッシュおよびソルト) を入手すれば、オフラインクラックを実行できます。
 
 hsh は堅牢な「ペッパリング」セキュリティ層を導入します。Hardware Security Module (HSM) またはクラウドネイティブな Key Management Service (KMS) と統合することで、最終的な Argon2id の出力は、安全なハードウェア境界から決して離れない高エントロピー鍵で暗号学的にラップされます。ユーザーデータベースが流出しても、攻撃者が手にするのは暗号化された塊だけです。銀行の物理的に隔離された HSM インフラを併せて侵害しない限り、パスワードのクラックを開始することはできません。
+
+以下のアーキテクチャ図は秘密情報の経路を辿るものです。ペッパーはデータベースに着地することはなく、データベースは単独でアドレス可能なものを一切保持しません。両ストアは独立して障害となり得ます — システムが機密性を失うのは、両者が同時に侵害された場合に限られます。
+
+```mermaid
+sequenceDiagram
+    participant App as Application Server
+    participant HSM as HSM (Hardware Security Module)
+    participant DB as Database
+    Note over HSM: Pepper sealed in hardware<br/>never exits boundary
+    App->>HSM: get_secret("production-password-pepper")
+    HSM-->>App: pepper (in-memory, request-scoped)
+    Note over App: Argon2::new_with_secret(&pepper, ...)
+    App->>App: hash(password + salt) consuming pepper
+    Note over App: Pepper consumed via secret param<br/>not via string concat
+    App->>DB: STORE PHC string (uncrackable blob)
+    Note over App: Pepper dropped from memory
+    Note over DB,HSM: DB breach alone yields<br/>nothing crackable
+```
 
 ### 実装パターン — HSM 由来のペッパリング済み Argon2id
 

@@ -160,6 +160,27 @@ twitter_image_alt: "ภาพถ่ายขาวดำของ Sebastien Rous
 
 กระบวนการนี้โปร่งใสอย่างสมบูรณ์ต่อผู้ใช้ปลายทาง มันย้ายบัญชีที่ใช้งานมากที่สุดไปยังชั้นความปลอดภัยสูงสุดอย่างมีประสิทธิภาพในวันแรก ลดพื้นผิวการโจมตีของธนาคารอย่างต่อเนื่องตามธรรมชาติเมื่อเวลาผ่านไป
 
+ลำดับด้านล่างแสดงสิ่งที่เกิดขึ้นระหว่างเหตุการณ์ล็อกอินครั้งเดียว เมื่อเรกคอร์ดที่จัดเก็บไว้อยู่บนอัลกอริทึมเลกาซี ผู้ใช้ไม่เห็นการเปลี่ยนแปลงใด ๆ; ฐานยืนยันตัวตนของธนาคารแข็งแกร่งขึ้นทีละหนึ่งเรกคอร์ด
+
+```mermaid
+sequenceDiagram
+    actor User
+    participant Frontend
+    participant Auth as Authentication Service (hsh)
+    participant DB as Database
+    User->>Frontend: Submit username + password
+    Frontend->>Auth: authenticate(user, password)
+    Auth->>DB: SELECT password_hash FROM users
+    DB-->>Auth: PHC string (legacy: PBKDF2)
+    Note over Auth: Detect legacy algorithm prefix
+    Auth->>Auth: verify(password, legacy_hash)
+    Note over Auth: Re-hash with Argon2id
+    Auth->>DB: UPDATE password_hash = new PHC
+    DB-->>Auth: write confirmed
+    Auth-->>Frontend: 200 OK
+    Frontend-->>User: Login successful
+```
+
 ### รูปแบบการนำไปใช้ — การ dispatch ด้วย `verify_and_upgrade`
 
 พื้นผิวการบูรณาการภายในบริการยืนยันตัวตนนั้นเล็ก เส้นทางโค้ดเลกาซียังคงอยู่ในฐานะตัวสำรอง; เส้นทางโค้ดใหม่คือ dispatcher
@@ -198,6 +219,24 @@ async fn authenticate(user: UserRecord, password_attempt: &str) -> Result<bool, 
 การแฮชรหัสผ่านมาตรฐานป้องกันการรั่วไหลของฐานข้อมูลโดยตรง แต่ถ้าผู้โจมตีได้ทั้งฐานข้อมูล (แฮชและ salt) พวกเขาสามารถดำเนินการถอดรหัสแบบออฟไลน์ได้
 
 hsh แนะนำชั้นความปลอดภัยแบบ "pepper" ที่แข็งแกร่ง ด้วยการบูรณาการกับ Hardware Security Modules (HSM) หรือ Key Management Services (KMS) แบบ cloud-native เอาต์พุต Argon2id สุดท้ายถูกห่อเชิงเข้ารหัสด้วยกุญแจที่มีเอนโทรปีสูง ซึ่งไม่เคยออกจากขอบเขตฮาร์ดแวร์ที่ปลอดภัย ถ้าฐานข้อมูลผู้ใช้ถูก exfiltrate ผู้โจมตีจะครอบครองเพียง blob ที่ถูกเข้ารหัสเท่านั้น พวกเขาไม่สามารถเริ่มถอดรหัสผ่านได้ โดยไม่ละเมิดโครงสร้างพื้นฐาน HSM ที่แยกทางกายภาพของธนาคาร
+
+แผนภาพสถาปัตยกรรมด้านล่างสืบเส้นทางของความลับ pepper ไม่เคยตกอยู่ในฐานข้อมูล; ฐานข้อมูลไม่เคยถือสิ่งใดที่สามารถจัดการได้ด้วยตัวเอง คลังทั้งสองสามารถล้มเหลวอย่างอิสระต่อกัน — ระบบจะสูญเสียความลับก็ต่อเมื่อทั้งสองล้มเหลวพร้อมกันเท่านั้น
+
+```mermaid
+sequenceDiagram
+    participant App as Application Server
+    participant HSM as HSM (Hardware Security Module)
+    participant DB as Database
+    Note over HSM: Pepper sealed in hardware<br/>never exits boundary
+    App->>HSM: get_secret("production-password-pepper")
+    HSM-->>App: pepper (in-memory, request-scoped)
+    Note over App: Argon2::new_with_secret(&pepper, ...)
+    App->>App: hash(password + salt) consuming pepper
+    Note over App: Pepper consumed via secret param<br/>not via string concat
+    App->>DB: STORE PHC string (uncrackable blob)
+    Note over App: Pepper dropped from memory
+    Note over DB,HSM: DB breach alone yields<br/>nothing crackable
+```
 
 ### รูปแบบการนำไปใช้ — Argon2id ที่ pepper หนุนด้วย HSM
 

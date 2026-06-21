@@ -160,6 +160,27 @@ Ketika pengguna mengirimkan kredensial mereka, hsh membaca string Password Hashi
 
 Proses ini sepenuhnya transparan bagi pengguna akhir. Ia secara efektif memigrasikan akun-akun yang paling aktif ke tingkat keamanan tertinggi pada hari pertama, mengurangi permukaan serangan bank secara organik dari waktu ke waktu.
 
+Diagram urutan di bawah ini menunjukkan apa yang terjadi selama satu peristiwa login ketika catatan yang tersimpan berada pada algoritma warisan. Pengguna tidak melihat ada yang berubah; estat autentikasi bank menguat sebanyak satu catatan.
+
+```mermaid
+sequenceDiagram
+    actor User
+    participant Frontend
+    participant Auth as Authentication Service (hsh)
+    participant DB as Database
+    User->>Frontend: Submit username + password
+    Frontend->>Auth: authenticate(user, password)
+    Auth->>DB: SELECT password_hash FROM users
+    DB-->>Auth: PHC string (legacy: PBKDF2)
+    Note over Auth: Detect legacy algorithm prefix
+    Auth->>Auth: verify(password, legacy_hash)
+    Note over Auth: Re-hash with Argon2id
+    Auth->>DB: UPDATE password_hash = new PHC
+    DB-->>Auth: write confirmed
+    Auth-->>Frontend: 200 OK
+    Frontend-->>User: Login successful
+```
+
 ### Pola implementasi — dispatch `verify_and_upgrade`
 
 Permukaan integrasi di dalam layanan autentikasi kecil. Jalur kode warisan tetap sebagai fallback; jalur kode baru adalah dispatcher.
@@ -198,6 +219,24 @@ Tiga properti penting:
 Hashing kata sandi standar melindungi dari kebocoran basis data langsung, tetapi jika penyerang memperoleh basis data (hash dan salt), mereka dapat mengeksekusi cracking offline.
 
 hsh memperkenalkan lapisan keamanan "ber-pepper" yang kokoh. Dengan mengintegrasikan Hardware Security Module (HSM) atau Key Management Service (KMS) cloud-native, output Argon2id akhir dibungkus secara kriptografis dengan kunci ber-entropi tinggi yang tidak pernah meninggalkan batas perangkat keras yang aman. Jika basis data pengguna diekfiltrasi, penyerang hanya memiliki blob terenkripsi. Mereka tidak dapat mulai memecahkan kata sandi tanpa juga menembus infrastruktur HSM bank yang terisolasi secara fisik.
+
+Diagram arsitektur di bawah ini menelusuri jalur rahasia. Pepper tidak pernah mendarat di basis data; basis data tidak pernah menyimpan apa pun yang dapat dialamatkan sendiri. Kedua penyimpanan dapat gagal secara independen — sistem hanya kehilangan kerahasiaan jika keduanya gagal bersamaan.
+
+```mermaid
+sequenceDiagram
+    participant App as Application Server
+    participant HSM as HSM (Hardware Security Module)
+    participant DB as Database
+    Note over HSM: Pepper sealed in hardware<br/>never exits boundary
+    App->>HSM: get_secret("production-password-pepper")
+    HSM-->>App: pepper (in-memory, request-scoped)
+    Note over App: Argon2::new_with_secret(&pepper, ...)
+    App->>App: hash(password + salt) consuming pepper
+    Note over App: Pepper consumed via secret param<br/>not via string concat
+    App->>DB: STORE PHC string (uncrackable blob)
+    Note over App: Pepper dropped from memory
+    Note over DB,HSM: DB breach alone yields<br/>nothing crackable
+```
 
 ### Pola implementasi — Argon2id ber-pepper yang didukung HSM
 
