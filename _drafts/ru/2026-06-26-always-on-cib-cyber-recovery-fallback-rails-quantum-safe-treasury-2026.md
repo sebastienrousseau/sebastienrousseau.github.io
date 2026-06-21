@@ -1,0 +1,176 @@
+---
+
+# Front Matter (YAML)
+
+author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
+banner_alt: "Тросы стального вантового моста в свете грозы — символ резервных запасных рельсов, киберустойчивого восстановления и квантово-безопасного казначейства, поддерживающих корпоративно-инвестиционный банк (CIB) в режиме always-on под DORA"
+banner_height: "1597"
+banner_width: "2584"
+banner: "https://cloudcdn.pro/stocks/images/roman-synkevych-vXInUOv1n84.webp"
+cdn: "https://cloudcdn.pro"
+charset: "UTF-8"
+cname: "sebastienrousseau.com"
+copyright: "© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved."
+date: "26 июня 2026"
+description: "CIB в режиме always-on в 2026 году: хранилища киберустойчивого восстановления, ISO 20022 запасные рельсы через RTGS, мгновенные и токенизированные сети, FHE, QKD и PQC, SLA квантово-безопасного казначейства под DORA."
+format-detection: "telephone=no"
+hreflang: "ru"
+icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
+id: "https://sebastienrousseau.com/2026-06-26-always-on-cib-cyber-recovery-fallback-rails-quantum-safe-treasury-2026"
+image_alt: "Чёрно-белый портрет Себастьяна Руссо"
+image_height: "162"
+image_width: "162"
+image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+keywords: "киберустойчивое восстановление, запасные рельсы, операционная устойчивость, DORA, квантово-безопасное казначейство, контингентность, мульти-рельсовая архитектура, FHE, QKD, PQC, ICT риск третьих сторон, CIB, ISO 20022, RTGS, FedNow, SEPA Instant, RTP, T2, CHAPS, FIPS 203, FIPS 204, RTO, RPO, Basel III, SR 11-7, SM&CR"
+language: "ru-RU"
+last_reviewed: "2026-06-26"
+layout: "report"
+locale: "ru_RU"
+logo_alt: "Логотип Себастьяна Руссо"
+logo_height: "44"
+logo_width: "44"
+logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
+menu: ""
+measurementID: "G-169G4ET5HQ"
+name: "Sebastien Rousseau"
+permalink: "https://sebastienrousseau.com/2026-06-26-always-on-cib-cyber-recovery-fallback-rails-quantum-safe-treasury-2026"
+rating: "general"
+referrer: "no-referrer"
+robots: "index, follow"
+schema: "FAQPage, Article"
+seo_title: "Always-On CIB: киберустойчивое восстановление и квантово-безопасное казначейство"
+short_name: "sebastienrousseau"
+subtitle: "Хранилища киберустойчивого восстановления, запасные рельсы ISO 20022 через RTGS, мгновенные и токенизированные сети и контроли квантово-безопасного казначейства переосмысливают корпоративно-инвестиционный банкинг — от логики аварийного восстановления к операционной модели always-on уровня совета директоров под DORA."
+tags: "киберустойчивое восстановление, запасные рельсы, операционная устойчивость, DORA, квантово-безопасное казначейство, контингентность, мульти-рельсовая архитектура, FHE, QKD, PQC, ICT риск третьих сторон, CIB"
+theme-color: "0, 83, 191"
+title: "Always-On CIB: киберустойчивое восстановление, запасные рельсы и квантово-безопасное казначейство"
+url: "https://sebastienrousseau.com/2026-06-26-always-on-cib-cyber-recovery-fallback-rails-quantum-safe-treasury-2026"
+viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
+
+# RSS - The RSS feed front matter (YAML).
+atom_link: "https://sebastienrousseau.com/2026-06-26-always-on-cib-cyber-recovery-fallback-rails-quantum-safe-treasury-2026/rss.xml"
+category: "Technology"
+docs: https://validator.w3.org/feed/docs/rss2.html
+generator: "Static Site Generator (SSG) (version 0.0.26)"
+item_description: "CIB в режиме always-on в 2026 году: хранилища киберустойчивого восстановления, ISO 20022 запасные рельсы через RTGS, мгновенные и токенизированные сети, FHE, QKD и PQC, SLA квантово-безопасного казначейства под DORA."
+item_guid: "https://sebastienrousseau.com/2026-06-26-always-on-cib-cyber-recovery-fallback-rails-quantum-safe-treasury-2026/rss.xml"
+item_link: "https://sebastienrousseau.com/2026-06-26-always-on-cib-cyber-recovery-fallback-rails-quantum-safe-treasury-2026/rss.xml"
+item_pub_date: "Fri, 26 Jun 2026 07:07:07 +0000"
+item_title: "Always-On CIB: киберустойчивое восстановление, запасные рельсы и квантово-безопасное казначейство"
+last_build_date: "Fri, 26 Jun 2026 06:06:06 +0000"
+managing_editor: "contact@sebastienrousseau.com (Sebastien Rousseau)"
+pub_date: "Fri, 26 Jun 2026 07:07:07 +0000"
+ttl: "60"
+type: "article"
+webmaster: "contact@sebastienrousseau.com"
+
+# Apple - The Apple front matter (YAML).
+apple_mobile_web_app_orientations: "portrait"
+apple_touch_icon_sizes: "192x192"
+apple-mobile-web-app-capable: "yes"
+apple-mobile-web-app-status-bar-inset: "black"
+apple-mobile-web-app-status-bar-style: "black-translucent"
+apple-mobile-web-app-title: "Always-On CIB: киберустойчивое восстановление и квантовое казначейство"
+apple-touch-fullscreen: "yes"
+
+# MS Application - The MS Application front matter (YAML).
+
+msapplication-navbutton-color: "0, 83, 191"
+
+# Twitter Card - The Twitter Card front matter (YAML).
+
+twitter_card: "summary_large_image"
+twitter_creator: "@wwdseb"
+twitter_description: "CIB в режиме always-on в 2026 году: хранилища киберустойчивого восстановления, ISO 20022 запасные рельсы через RTGS, мгновенные и токенизированные сети, FHE, QKD и PQC, SLA квантово-безопасного казначейства под DORA."
+twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
+twitter_image_alt: "Логотип Себастьяна Руссо"
+twitter_site: "@wwdseb"
+twitter_title: "Always-On CIB: киберустойчивое восстановление и квантово-безопасное казначейство"
+twitter_url: "https://sebastienrousseau.com/2026-06-26-always-on-cib-cyber-recovery-fallback-rails-quantum-safe-treasury-2026"
+
+excerpt: "Корпоративно-инвестиционные банки теперь рассматривают киберустойчивое восстановление, запасные рельсы ISO 20022 через RTGS, мгновенные и токенизированные сети и контроли квантово-безопасного казначейства как единую операционную модель always-on — ответ уровня совета директоров на статьи 5 и 6 DORA, на FHE, QKD и PQC и на концентрационный риск ICT третьих сторон."
+
+# Humans.txt - The Humans.txt front matter (YAML).
+author_website: "https://sebastienrousseau.com"
+author_twitter: "@wwdseb"
+author_location: "London, UK"
+thanks: "Спасибо за прочтение!"
+site_last_updated: "2026-06-26"
+site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
+site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
+site_software: "Static Site Generator, Rust"
+
+---
+
+# Always-On CIB: киберустойчивое восстановление, запасные рельсы и квантово-безопасное казначейство
+
+<!-- lead-start -->
+<aside class="post-lead" aria-label="Краткое содержание статьи">
+<p class="post-lead-tldr"><strong>TL;DR.</strong> Корпоративно-инвестиционный банкинг в 2026 году оценивается по поведению в режиме always-on во время киберинцидента. Хранилища киберустойчивого восстановления, запасные рельсы ISO 20022 через RTGS, мгновенные и токенизированные сети и контроли квантово-безопасного казначейства теперь сведены на одну операционную диаграмму — и её подписывает совет директоров.</p>
+<p class="post-lead-heading"><strong>Ключевые выводы</strong></p>
+<ul class="post-lead-takeaways">
+  <li><strong>Аварийное восстановление снято с повестки.</strong> Статьи 5 и 6 DORA требуют непрерывного сервиса, а не окон восстановления.</li>
+  <li><strong>Устойчивость теперь — криптографический примитив.</strong> FHE, QKD и PQC лежат в основе доверия при переключении, а не только конфиденциальности.</li>
+  <li><strong>Запасные рельсы — это архитектура, а не служебная записка.</strong> Казначейства CIB маршрутизируют поток через RTGS, мгновенные, токенизированные и внешние сети на ISO 20022.</li>
+  <li><strong>Совет директоров отчитывается по RTO и RPO в минутах.</strong> SLA казначейства приходят на смену повествовательным заявлениям об устойчивости.</li>
+</ul>
+<p class="post-lead-related"><strong>Связанное чтение:</strong> <a href="https://sebastienrousseau.com/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026">Индекс банковской устойчивости 2026: ИИ, облако, квантовые технологии, платежи и риск третьих сторон</a>, <a href="https://sebastienrousseau.com/2023-12-25-revolutionising-finance-with-ai-enhanced-quantum-algorithms">Финансы, ИИ и квантовые алгоритмы: ранние основания</a>.</p>
+</aside>
+<!-- lead-end -->
+
+В 03:14 UTC во вторник банк уровня tier-one CIB фиксирует обрыв основного канала RTGS. Триггер — не разрыв оптики. Это детонация программы-вымогателя внутри ICT третьей стороны, которая обслуживает его шлюз к рыночной инфраструктуре. За шесть минут платёжная вышка управления банка перенаправляет поток USD высокой стоимости на вторичного провайдера RTGS, поток GBP — на CHAPS через адаптер контингентности, а корпоративный поток EUR — на T2 через резервное соглашение об участии. SEPA Instant, FedNow и RTP абсорбируют розничный и низкостоимостный коммерческий объём. Казначейство подтверждает, что хранилище киберустойчивого восстановления опечатано, дневные пакеты pacs.008 чисто воспроизводятся на запасном рельсе, а панель совета директоров переходит с зелёного на жёлтый — но не на красный. Эта постановка задачи прямо заимствована из [плейбука контингентных рельсов 2026 года](https://tradetreasurypayments.com/articles/automation-contingency-rails-iso-20022-and-stablecoins-the-2026-trends-reshaping-corporate-finance-and-b2b-payments "Автоматизация, контингентные рельсы, ISO 20022 и стейблкоины — тренды 2026 года, перекраивающие корпоративные финансы и B2B-платежи"), который оптовые банки теперь воспринимают как базовую планку, а не как стремление.
+
+Суть проста. Always-on CIB больше не маркетинговая фраза. Это регулируемая, измеримая, криптографически обеспеченная операционная модель.
+
+## 01. От DR к «always on» — рамка статей 5/6 DORA
+
+Аварийное восстановление как организующая идея исчерпано. [Статья 5 DORA](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554 "Регламент (ЕС) 2022/2554 — Акт о цифровой операционной устойчивости") возлагает управление ICT-риском на орган управления как неделегируемую обязанность. [Статья 6 DORA](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554 "Регламент (ЕС) 2022/2554 — Статья 6, рамка управления ICT-риском") затем требует документированной рамки управления ICT-риском, охватывающей обнаружение, реагирование, восстановление и обучение. Вместе с капиталом под операционный риск по [Basel III](https://www.bis.org/bcbs/publ/d424.htm "Basel III: завершение пост-кризисных реформ") и британским режимом [SM&CR](https://www.bankofengland.co.uk/prudential-regulation/authorisations/senior-managers-regime-approvals "Режим старших менеджеров и сертификации") сигнал советам директоров CIB прямой. Цели по времени восстановления и точке восстановления должны быть выражены в минутах, подтверждены живыми тестами и привязаны к поимённо названным старшим менеджерам.
+
+Сдвиг в языке имеет значение. «Восстановить сервис» предполагает, что сервис остановился. Always-on предполагает, что деградация обнаруживается, локализуется и обходится без остановки клиентского потока. Это и есть стандарт, который совместно навязывают [ожидания PRA Великобритании SS1/21 «Операционная устойчивость»](https://www.bankofengland.co.uk/prudential-regulation/publication/2021/march/operational-resilience-impact-tolerances-for-important-business-services-ss "PRA SS1/21 Операционная устойчивость") и DORA, и это единственный стандарт, который казначейство CIB в 2026 году может правдоподобно предложить корпоративному клиенту из Fortune 100.
+
+## 02. FHE, QKD и PQC как примитивы устойчивости — не только средства конфиденциальности
+
+Криптография теперь — часть стека устойчивости, а не параллельный проект по безопасности. Значение имеют три примитива.
+
+**FHE** позволяет банку вычислять над зашифрованными позициями казначейства внутри хранилища киберустойчивого восстановления, не раскрывая открытый текст. Когда продуктивная среда под подозрением, аналитика, сверка и предторговые проверки могут продолжаться на зашифрованной копии. [Доклад BIS «Project Leap: квантовая защита финансовой системы»](https://www.bis.org/publ/bppdf/bispap158.htm "BIS Papers No 158 — Project Leap") прямо подкрепляет операционный аргумент — контроли конфиденциальности и контроли устойчивости сходятся на одних и тех же примитивах.
+
+**QKD** обеспечивает теоретико-информационное распределение ключей между ЦОД, несущими нагрузки always-on. Это не замена PQC. Это дополнительный слой для тех немногих каналов, где гарантия обмена ключами физического уровня оправдывает свою цену. Более ранняя статья автора — [QKD в оптовом банкинге: где ключи уровня физики действительно окупаются](https://sebastienrousseau.com/2026-04-18-qkd-wholesale-banking-physics-grade-keys-2026 "QKD в оптовом банкинге") — задаёт границы.
+
+**PQC**, в частности [FIPS 203](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.203.pdf "FIPS 203 — Module-Lattice-Based Key-Encapsulation Mechanism") и [FIPS 204](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.204.pdf "FIPS 204 — Module-Lattice-Based Digital Signature Standard"), теперь подписывает манифесты запасных рельсов, снимки хранилища киберустойчивого восстановления и междоменные цепочки доверия между основными и контингентными участниками. CIB в 2026 году, подписывающий артефакты переключения классическим RSA, докладывает регулятору о собственном дефекте. [Статья о FHE в банковской аналитике](https://sebastienrousseau.com/2026-05-29-fhe-banking-analytics-confidential-compute-2026 "FHE в банковской аналитике") приводила тот же аргумент в аналитической плоскости — аргумент устойчивости его чисто продолжает в плоскость восстановления.
+
+## 03. Шаблоны проектирования запасных рельсов — ISO 20022 через RTGS, мгновенные, токенизированные и внешние сети
+
+Запасной рельс — это не таблица контактных номеров. Это маршрутизируемый, протестированный, нативный для ISO 20022 альтернативный путь с собственной ликвидностью, собственными участниками и собственной отрепетированной процедурой переключения.
+
+В чертежах CIB сегодня доминируют четыре шаблона.
+
+- **Двойное участие в RTGS.** Поток USD, обычно идущий через Fedwire, держит «горячее» вторичное соединение — CHIPS для высокостоимостного коммерческого потока или банк-корреспондент с независимым подключением к Fedwire. GBP держит CHAPS плюс соглашение о контингентном участии в Bank of England. EUR держит T2 плюс резервное соглашение о прямом участии через другую ICT третью сторону.
+- **Замена мгновенного рельса.** Там, где корпоративный поток допускает более низкие потранзакционные потолки, SEPA Instant, FedNow и RTP несут платежи, пока высокостоимостный рельс опечатан. Платёжная вышка казначейства применяет динамическую маршрутизацию по диапазонам сумм — всё в пределах потолка мгновенного рельса идёт мгновенно; остальное стоит в очереди до возобновления RTGS.
+- **Токенизированные расчётные сети.** Пилоты оптового CBDC, регулируемые сети стейблкоинов и платформы токенизированных депозитов теперь входят в периметр как третий уровень запасных рельсов для межбанковских обязательств. Они не эквивалентны окончательности расчёта в RTGS, но они покупают часы, а часы — это и есть то, что нужно киберустойчивому восстановлению.
+- **Обход внешней сетью.** Когда точка отказа — собственная ICT третья сторона банка, сообщения ISO 20022 pacs.008 и pacs.009 идут через заранее согласованного корреспондента, подключённого независимо. Концентрационный риск внутри единственного ICT-вендора — тихий убийца; этот шаблон его устраняет.
+
+ISO 20022 — это то, что делает всё это архитектурой, а не импровизацией. Тот же `pacs.008`, тот же блок `<RmtInf><Strd>`, тот же `EndToEndId`, на другом рельсе. Казначейская платформа валидирует против единой схемы, а слой маршрутизации выбирает рельс.
+
+## 04. SLA казначейства и отчётность совету директоров — измеримые метрики устойчивости
+
+Советы директоров теперь задают четыре вопроса и ждут численных ответов.
+
+1. **Какое RTO по валюте?** Высокостоимостные USD, GBP, EUR, JPY: минуты, не часы. Мгновенные рельсы: секунды.
+2. **Какое RPO по валюте?** Частота снимков хранилища киберустойчивого восстановления, выраженная в минутах утраченной экономической стоимости в худшем сценарии момента детонации.
+3. **Каков запас ликвидности на запасных рельсах?** Предварительно зафондированные остатки у вторичных участников, размером на абсорбцию 24-часового сбоя основного рельса при пиковом дневном объёме.
+4. **Каково покрытие подписи PQC на артефактах восстановления?** Доля снимков хранилища, манифестов и междоменных якорей доверия, подписанных под FIPS 203 / FIPS 204.
+
+Это и есть метрики, которые чисто ложатся на доказательную базу статьи 6 DORA, на заявления об ответственности старших менеджеров в рамках SM&CR и на управление модельным риском по [SR 11-7](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 — Руководство по управлению модельным риском") над логикой маршрутизации, которая решает, какой рельс побеждает. Совету директоров не нужен нарратив; ему нужен квартальный график с жёстким минимумом.
+
+## Заключение
+
+Устойчивость CIB в 2026 году — это операционная система, а не план восстановления. Хранилища киберустойчивого восстановления опечатывают данные. FHE, QKD и PQC обеспечивают доверие на пути переключения. Запасные рельсы ISO 20022 несут поток через RTGS, мгновенные, токенизированные и внешние сети. SLA казначейства отчитываются о результате в минутах, которые совет директоров может защитить перед регулятором в понедельник утром.
+
+Работа конкретна. Инвентаризируйте ICT третьи стороны на каждом платёжном рельсе. Поднимите хранилище киберустойчивого восстановления со снимками, подписанными PQC. Договоритесь о вторичных участиях в RTGS и о замене мгновенными рельсами. Свяжите решения маршрутизации через единую схему ISO 20022. Тестируйте переключение под живой нагрузкой, ежеквартально, на глазах у совета директоров.
+
+Always-on — не лозунг. Это число на панели, подписанное старшим менеджером, валидированное регулятором и построенное на криптографии, которая выживет в день, когда появится противник с квантовыми возможностями.
+
+<!-- enrich-start -->
+<aside class="author-card" aria-label="Об авторе"><img alt="Портрет Себастьяна Руссо" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Старший банковский технолог, пишущий о прикладном ИИ, миграции на ISO 20022, постквантовой криптографии для финансовых услуг и структурной трансформации оптовых платежей.</span><span class="author-credentials">20+ лет в HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Полный профиль</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<p class="post-reviewed">Последняя проверка <time datetime="2026-06-26">2026-06-26</time>.</p>
+<!-- enrich-end -->
