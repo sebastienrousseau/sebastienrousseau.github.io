@@ -103,7 +103,7 @@ site_software: "Static Site Generator, Rust"
 <section class="proof-rail" aria-label="Track record at a glance" data-reveal>
   <div class="kpi-cell">
     <span class="kpi-cell-value">20</span>
-    <span class="kpi-cell-label">Years in payments &amp; banking tech</span>
+    <span class="kpi-cell-label">Years in payments and banking tech</span>
   </div>
   <div class="kpi-cell">
     <span class="kpi-cell-value">73</span>
