@@ -134,7 +134,7 @@ Nọ́mbà yẹn — 44% gẹ́gẹ́ bí ìwádìí ilé-iṣẹ́ tuntun — n
 
 ## 02. ISO gẹ́gẹ́ bí àsìkò data fún àwọn aṣojú
 
-Iṣẹ́ tí ó wúni lórí nínú ìṣúra 2026 wà lókè àpẹẹrẹ. Àwọn ẹnjini omi owó tí a lè ṣàṣàlọ́ṣẹ́, àwọn olùdára-jùlọ kírẹ́dìtì ọjọ́, àti àwọn ìṣàn iṣẹ́ ìṣúra aṣojú gbogbo wọn dá lórí data ìsanwó tí ó jẹ́ kíkàá-fún-ẹ̀rọ, tí a sì ti fọwọ́sí àpẹẹrẹ rẹ̀. MT103 kò lè pèsè rẹ̀. pacs.008 lè.
+Iṣẹ́ tí ó wúni lórí nínú ìṣúra 2026 wà lókè àpẹẹrẹ. Àwọn ẹnjini omi owó tí a lè ṣàṣàlọ́ṣẹ́, àwọn olùdára-jùlọ kírẹ́dìtì ọjọ́, àti àwọn ìṣàn iṣẹ́ ìṣúra aṣojú gbogbo wọn dá lórí data ìsanwó tí ó jẹ́ kíkàá-fún-ẹ̀rọ, tí a sì ti fọwọ́sí àpẹẹrẹ rẹ̀. Ní àwọn ọ̀rọ̀ ìṣe, ìṣúra aṣojú máa ń mú ìdúró omi owó inú-ọjọ́ dára jùlọ ní àdáṣiṣẹ́ nípa kíkójọ àwọn kóòdù `<Purp>` ti a tò àti data ìránṣẹ́ pẹ̀lú àwọn àìní ìnáwó àkókò-tòótọ́ — gbígbé owó, fífà lórí àwọn ìlà kírẹ́dìtì, tàbí dídí ìṣẹ́ ṣíṣe padà láìsí ènìyàn nínú ìṣàn náà. MT103 kò lè pèsè rẹ̀. pacs.008 lè.
 
 [Ìjábọ̀ BIS CPMI lórí ìṣòkan ISO 20022 fún àwọn ìsanwó kọjá-orílẹ̀-èdè](https://www.bis.org/cpmi/publ/d230.pdf "BIS CPMI: àwọn ìbéèrè data ISO 20022 tí a ti ṣòkan") tẹ ìbéèrè ìránṣẹ́-àti-data kanan jáde ní 2023. Àfikún 2026 ṣe àyẹ̀wò kanan pẹ̀lú eyín tí ó mú: ìṣòkan kì í ṣe ìṣèdúró mọ́, ó jẹ́ ìṣàájú fún àwọn ojú [ọ̀nà àwọn ìsanwó kọjá-orílẹ̀-èdè G20](https://www.bis.org/cpmi/publ/d193.htm "BIS CPMI: ọ̀nà àwọn ìsanwó kọjá-orílẹ̀-èdè G20") lórí owó, ìyára, ìmọ́lẹ̀, àti ìṣàkóso. Láìsí àwọn kóòdù `<Purp>` ti a tò, àwọn àdírẹ́sì ti a tò, àti ìránṣẹ́ ti a tò, aṣojú kò ní ohun tí yóò fi ronú lé. Ó ní ọ̀rọ̀ òfìfo.
 

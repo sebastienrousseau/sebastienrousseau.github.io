@@ -134,7 +134,7 @@ Tare-tare alheri ne. Ya ƙare.
 
 ## 02. ISO a matsayin tushen bayanai don wakilai
 
-Aikin ban sha'awa a baitulmalin 2026 yana zaune sama da tsarin. Injinan kuɗi masu shirye-shirye, masu inganta lamuni a cikin rana, da kwararar baitulmalin wakilci duk sun dogara da bayanan biyan kuɗi masu karantawa ta inji, masu inganci ta tsari. MT103 ba zai iya samar da shi ba. pacs.008 zai iya.
+Aikin ban sha'awa a baitulmalin 2026 yana zaune sama da tsarin. Injinan kuɗi masu shirye-shirye, masu inganta lamuni a cikin rana, da kwararar baitulmalin wakilci duk sun dogara da bayanan biyan kuɗi masu karantawa ta inji, masu inganci ta tsari. A aikace, baitulmali na wakilci yana inganta matsayin lamuni a cikin rana ta atomatik ta hanyar daidaita lambobin `<Purp>` masu tsari da bayanan aikawa da bukatun kuɗaɗen lokaci na ainihi — yana motsa kuɗi, yana zana kan layukan bashi, ko yana riƙe da aiwatarwa ba tare da ɗan adam a cikin madauki ba. MT103 ba zai iya samar da shi ba. pacs.008 zai iya.
 
 [Rahoton BIS CPMI akan jituwa na ISO 20022 don biyan kuɗi tsakanin ƙasashe](https://www.bis.org/cpmi/publ/d230.pdf "BIS CPMI: bukatun bayanan ISO 20022 da aka daidaita") ya buga bukatun saƙo da bayanai na canonical a 2023. Ƙarin na 2026 yana yin batun ɗaya da haƙori mai kaifi: jituwa ba shawara ba ce kuma, sharadi ne na farko don manufofin [taswirar biyan kuɗi tsakanin ƙasashe ta G20](https://www.bis.org/cpmi/publ/d193.htm "BIS CPMI: taswirar biyan kuɗi tsakanin ƙasashe ta G20") akan farashi, sauri, bayyananne, da samun damar. Ba tare da lambobin `<Purp>` masu tsari ba, adireshin tsararru, da aikawa mai tsari, wakili ba shi da abin da zai yi tunani akai. Yana da rubutu.
 

@@ -134,7 +134,7 @@ Koexistence byla projevem zdvořilosti. Skončila.
 
 ## 02. ISO jako datová vrstva pro agenty
 
-Zajímavá práce v treasury 2026 sedí nad schématem. Engines programovatelné likvidity, optimalizátory vnitrodenního úvěru i workflow agentního treasury — všechny závisí na strojově čitelných, schématem validovaných platebních datech. MT103 je dodat nemůže. pacs.008 ano.
+Zajímavá práce v treasury 2026 sedí nad schématem. Engines programovatelné likvidity, optimalizátory vnitrodenního úvěru i workflow agentního treasury — všechny závisí na strojově čitelných, schématem validovaných platebních datech. V praktické rovině agentní treasury automaticky optimalizuje vnitrodenní pozice likvidity tím, že rekonciluje strukturované kódy `<Purp>` a remitenční data proti reálnému stavu potřeb financování — přesouvá hotovost, čerpá z úvěrových linek, nebo zadržuje exekuci bez člověka ve smyčce. MT103 je dodat nemůže. pacs.008 ano.
 
 [Zpráva BIS CPMI o harmonizaci ISO 20022 pro přeshraniční platby](https://www.bis.org/cpmi/publ/d230.pdf "BIS CPMI: harmonizované datové požadavky ISO 20022") publikovala kanonickou sadu zpráv a datových požadavků v roce 2023. Dodatek z roku 2026 sděluje totéž ostřeji: harmonizace už není doporučením, je předpokladem pro cíle [G20 roadmapu přeshraničních plateb](https://www.bis.org/cpmi/publ/d193.htm "BIS CPMI: G20 roadmap přeshraničních plateb") v oblasti nákladů, rychlosti, transparentnosti a přístupu. Bez strukturovaných kódů `<Purp>`, strukturovaných adres a strukturované remitence nemá agent o čem uvažovat. Má jen prózu.
 

@@ -134,7 +134,7 @@ Koeksistensi adalah kesopanan. Itu sudah berakhir.
 
 ## 02. ISO sebagai substrat data untuk agen
 
-Pekerjaan menarik dalam treasury 2026 berada di atas skema. Mesin likuiditas terprogram, pengoptimal kredit intraday, dan alur kerja treasury agentik semuanya bergantung pada data pembayaran yang dapat dibaca mesin dan tervalidasi skema. MT103 tidak dapat memasoknya. pacs.008 bisa.
+Pekerjaan menarik dalam treasury 2026 berada di atas skema. Mesin likuiditas terprogram, pengoptimal kredit intraday, dan alur kerja treasury agentik semuanya bergantung pada data pembayaran yang dapat dibaca mesin dan tervalidasi skema. Secara praktis, treasury agentik secara otomatis mengoptimalkan pemosisian likuiditas intraday dengan merekonsiliasi kode `<Purp>` terstruktur dan data remitansi terhadap kebutuhan pendanaan real-time — memindahkan kas, menarik dari lini kredit, atau menahan eksekusi tanpa campur tangan manusia. MT103 tidak dapat memasoknya. pacs.008 bisa.
 
 [Laporan BIS CPMI tentang harmonisasi ISO 20022 untuk pembayaran lintas-batas](https://www.bis.org/cpmi/publ/d230.pdf "BIS CPMI: persyaratan data ISO 20022 yang diharmonisasi") menerbitkan set persyaratan pesan-dan-data kanonik pada 2023. Suplemen 2026 menyampaikan poin yang sama dengan gigi yang lebih tajam: harmonisasi bukan lagi rekomendasi, ia adalah prasyarat untuk target [peta jalan pembayaran lintas-batas G20](https://www.bis.org/cpmi/publ/d193.htm "BIS CPMI: peta jalan pembayaran lintas-batas G20") tentang biaya, kecepatan, transparansi, dan akses. Tanpa kode `<Purp>` terstruktur, alamat terstruktur, dan remitansi terstruktur, agen tidak memiliki apa pun untuk dipikirkan. Ia hanya memiliki prosa.
 

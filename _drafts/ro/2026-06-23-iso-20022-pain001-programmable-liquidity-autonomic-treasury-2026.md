@@ -134,7 +134,7 @@ Coexistența a fost o curtoazie. S-a terminat.
 
 ## 02. ISO ca substrat de date pentru agenți
 
-Munca interesantă în trezoreria 2026 se află deasupra schemei. Motoarele de lichiditate programabilă, optimizatoarele de credit intraday și fluxurile agentice de trezorerie depind toate de date de plată care pot fi citite de mașini, validate prin schemă. MT103 nu le poate furniza. pacs.008 poate.
+Munca interesantă în trezoreria 2026 se află deasupra schemei. Motoarele de lichiditate programabilă, optimizatoarele de credit intraday și fluxurile agentice de trezorerie depind toate de date de plată care pot fi citite de mașini, validate prin schemă. În termeni practici, o trezorerie agentică optimizează automat poziționarea lichidității intraday prin reconcilierea codurilor `<Purp>` structurate și a datelor de remitere cu nevoile de finanțare în timp real — mutând numerar, trăgând pe liniile de credit sau reținând execuția fără un om în buclă. MT103 nu le poate furniza. pacs.008 poate.
 
 [Raportul BIS CPMI privind armonizarea ISO 20022 pentru plățile transfrontaliere](https://www.bis.org/cpmi/publ/d230.pdf "BIS CPMI: cerințe armonizate de date ISO 20022") a publicat setul canonic de cerințe de mesaj și date în 2023. Suplimentul din 2026 reia același punct cu dinți mai ascuțiți: armonizarea nu mai este o recomandare, este o precondiție pentru obiectivele [foii de parcurs G20 pentru plăți transfrontaliere](https://www.bis.org/cpmi/publ/d193.htm "BIS CPMI: foaia de parcurs G20 pentru plăți transfrontaliere") privind costul, viteza, transparența și accesul. Fără coduri `<Purp>` structurate, adrese structurate și remitere structurată, un agent nu are nimic pe care să raționeze. Are proză.
 

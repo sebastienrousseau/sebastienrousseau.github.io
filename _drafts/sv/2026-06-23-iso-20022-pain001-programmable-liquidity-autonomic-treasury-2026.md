@@ -134,7 +134,7 @@ Samexistens var en artighet. Den är över.
 
 ## 02. ISO som datasubstrat för agenter
 
-Det intressanta arbetet i 2026 års treasury sitter ovanför schemat. Motorer för programmerbar likviditet, optimerare för intradagskredit och agentiska treasury-flöden är alla beroende av maskinläsbara, schemavaliderade betalningsdata. MT103 kan inte leverera det. pacs.008 kan.
+Det intressanta arbetet i 2026 års treasury sitter ovanför schemat. Motorer för programmerbar likviditet, optimerare för intradagskredit och agentiska treasury-flöden är alla beroende av maskinläsbara, schemavaliderade betalningsdata. I praktiken optimerar en agentisk treasury automatiskt intradagslikviditetens positionering genom att stämma av strukturerade `<Purp>`-koder och remittensdata mot finansieringsbehov i realtid — och flytta kontanter, dra på kreditlinor eller hålla tillbaka exekvering utan en människa i loopen. MT103 kan inte leverera det. pacs.008 kan.
 
 [BIS CPMI-rapporten om ISO 20022-harmonisering för gränsöverskridande betalningar](https://www.bis.org/cpmi/publ/d230.pdf "BIS CPMI: harmoniserade ISO 20022-datakrav") publicerade den kanoniska kravbilden för meddelanden och data 2023. 2026 års tillägg gör samma poäng med skarpare tänder: harmonisering är inte längre en rekommendation, det är en förutsättning för målen i [G20:s färdplan för gränsöverskridande betalningar](https://www.bis.org/cpmi/publ/d193.htm "BIS CPMI: G20:s färdplan för gränsöverskridande betalningar") om kostnad, hastighet, transparens och åtkomst. Utan strukturerade `<Purp>`-koder, strukturerade adresser och strukturerad remittens har en agent inget att resonera över. Den har prosa.
 

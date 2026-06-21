@@ -134,7 +134,7 @@ Coexistence was a courtesy. It is over.
 
 ## 02. ISO as data substrate for agents
 
-The interesting work in 2026 treasury sits above the schema. Programmable liquidity engines, intraday-credit optimisers, and agentic treasury workflows all depend on machine-readable, schema-validated payment data. MT103 cannot supply it. pacs.008 can.
+The interesting work in 2026 treasury sits above the schema. Programmable liquidity engines, intraday-credit optimisers, and agentic treasury workflows all depend on machine-readable, schema-validated payment data. In practical terms, an agentic treasury automatically optimises intraday liquidity positioning by reconciling structured `<Purp>` codes and remittance data against real-time funding needs — moving cash, drawing on credit lines, or holding back execution without a human in the loop. MT103 cannot supply it. pacs.008 can.
 
 The [BIS CPMI report on ISO 20022 harmonisation for cross-border payments](https://www.bis.org/cpmi/publ/d230.pdf "BIS CPMI: harmonised ISO 20022 data requirements") published the canonical message-and-data requirements set in 2023. The 2026 supplement makes the same point with sharper teeth: harmonisation is no longer a recommendation, it is a precondition for the [G20 cross-border payments roadmap](https://www.bis.org/cpmi/publ/d193.htm "BIS CPMI: G20 cross-border payments roadmap") targets on cost, speed, transparency, and access. Without structured `<Purp>` codes, structured addresses, and structured remittance, an agent has nothing to reason over. It has prose.
 

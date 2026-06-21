@@ -134,7 +134,7 @@ Cùng tồn tại là một sự lịch thiệp. Nó đã kết thúc.
 
 ## 02. ISO như nền dữ liệu cho tác nhân
 
-Công việc thú vị trong kho bạc năm 2026 nằm trên schema. Các engine thanh khoản lập trình được, các bộ tối ưu tín dụng trong ngày và các quy trình kho bạc tác nhân đều phụ thuộc vào dữ liệu thanh toán đọc được bằng máy, đã xác thực schema. MT103 không thể cung cấp. pacs.008 thì có thể.
+Công việc thú vị trong kho bạc năm 2026 nằm trên schema. Các engine thanh khoản lập trình được, các bộ tối ưu tín dụng trong ngày và các quy trình kho bạc tác nhân đều phụ thuộc vào dữ liệu thanh toán đọc được bằng máy, đã xác thực schema. Trên thực tế, một kho bạc tác nhân tự động tối ưu hoá việc bố trí thanh khoản trong ngày bằng cách đối chiếu các mã `<Purp>` có cấu trúc và dữ liệu chuyển khoản với nhu cầu cấp vốn theo thời gian thực — di chuyển tiền mặt, rút trên hạn mức tín dụng, hoặc giữ lại việc thực thi mà không cần con người trong vòng lặp. MT103 không thể cung cấp. pacs.008 thì có thể.
 
 [Báo cáo BIS CPMI về hài hoà hoá ISO 20022 cho thanh toán xuyên biên giới](https://www.bis.org/cpmi/publ/d230.pdf "BIS CPMI: yêu cầu dữ liệu ISO 20022 hài hoà") đã công bố bộ yêu cầu thông điệp-và-dữ liệu canonical năm 2023. Phụ lục 2026 nhấn mạnh cùng quan điểm với răng sắc hơn: hài hoà hoá không còn là khuyến nghị, đó là điều kiện tiên quyết cho các mục tiêu của [lộ trình thanh toán xuyên biên giới G20](https://www.bis.org/cpmi/publ/d193.htm "BIS CPMI: lộ trình thanh toán xuyên biên giới G20") về chi phí, tốc độ, minh bạch và quyền tiếp cận. Không có mã `<Purp>` có cấu trúc, địa chỉ có cấu trúc và chuyển khoản có cấu trúc, một tác nhân không có gì để suy luận. Nó chỉ có văn bản.
 

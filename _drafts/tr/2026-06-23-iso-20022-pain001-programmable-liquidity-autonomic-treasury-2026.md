@@ -134,7 +134,7 @@ Birlikte yaşam bir nezaketti. Sona erdi.
 
 ## 02. Ajanlar için veri tabanı olarak ISO
 
-2026 hazinesinde ilginç iş şemanın üzerinde yer alıyor. Programlanabilir likidite motorları, gün içi kredi optimize edicileri ve ajansal hazine iş akışlarının tümü makine tarafından okunabilir, şema-doğrulamalı ödeme verisine bağlıdır. MT103 bunu sağlayamaz. pacs.008 sağlayabilir.
+2026 hazinesinde ilginç iş şemanın üzerinde yer alıyor. Programlanabilir likidite motorları, gün içi kredi optimize edicileri ve ajansal hazine iş akışlarının tümü makine tarafından okunabilir, şema-doğrulamalı ödeme verisine bağlıdır. Pratik anlamda, ajansal bir hazine, yapılandırılmış `<Purp>` kodlarını ve havale verisini gerçek zamanlı fonlama ihtiyaçlarıyla mutabakat ederek gün içi likidite konumlandırmasını otomatik olarak optimize eder — nakit aktararak, kredi limitlerine başvurarak veya insan müdahalesi olmaksızın yürütmeyi geri çekerek. MT103 bunu sağlayamaz. pacs.008 sağlayabilir.
 
 [Sınır ötesi ödemeler için ISO 20022 uyumlaştırması üzerine BIS CPMI raporu](https://www.bis.org/cpmi/publ/d230.pdf "BIS CPMI: uyumlaştırılmış ISO 20022 veri gereksinimleri") 2023'te kanonik mesaj ve veri gereksinim setini yayımladı. 2026 eki aynı noktayı daha sert dişlerle vurguluyor: uyumlaştırma artık bir tavsiye değildir, [G20 sınır ötesi ödemeler yol haritası](https://www.bis.org/cpmi/publ/d193.htm "BIS CPMI: G20 sınır ötesi ödemeler yol haritası") hedeflerinin maliyet, hız, şeffaflık ve erişim üzerindeki önkoşuludur. Yapılandırılmış `<Purp>` kodları, yapılandırılmış adresler ve yapılandırılmış havale olmadan bir ajanın muhakeme edecek hiçbir şeyi olmaz. Düz metni olur.
 

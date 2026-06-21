@@ -134,7 +134,7 @@ La coesistenza era una cortesia. È finita.
 
 ## 02. ISO come substrato dati per gli agenti
 
-Il lavoro interessante nel treasury del 2026 si colloca sopra lo schema. I motori di liquidità programmabile, gli ottimizzatori di credito intraday e i workflow di treasury agentico dipendono tutti da dati di pagamento leggibili a macchina e validati da schema. MT103 non può fornirli. pacs.008 sì.
+Il lavoro interessante nel treasury del 2026 si colloca sopra lo schema. I motori di liquidità programmabile, gli ottimizzatori di credito intraday e i workflow di treasury agentico dipendono tutti da dati di pagamento leggibili a macchina e validati da schema. In pratica, un treasury agentico ottimizza automaticamente il posizionamento di liquidità intraday riconciliando codici `<Purp>` strutturati e dati di rimessa con i fabbisogni di funding in tempo reale — spostando cassa, attingendo a linee di credito o trattenendo l'esecuzione senza intervento umano. MT103 non può fornirli. pacs.008 sì.
 
 Il [rapporto BIS CPMI sull'armonizzazione ISO 20022 per i pagamenti cross-border](https://www.bis.org/cpmi/publ/d230.pdf "BIS CPMI: requisiti di dati ISO 20022 armonizzati") ha pubblicato l'insieme canonico dei requisiti di messaggio e dato nel 2023. Il supplemento 2026 ribadisce lo stesso punto con denti più affilati: l'armonizzazione non è più una raccomandazione, è una precondizione per gli obiettivi della [roadmap G20 sui pagamenti cross-border](https://www.bis.org/cpmi/publ/d193.htm "BIS CPMI: roadmap G20 sui pagamenti cross-border") su costo, velocità, trasparenza e accesso. Senza codici `<Purp>` strutturati, indirizzi strutturati e rimessa strutturata, un agente non ha nulla su cui ragionare. Ha prosa.
 

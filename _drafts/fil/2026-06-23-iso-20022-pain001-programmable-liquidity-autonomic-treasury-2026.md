@@ -134,7 +134,7 @@ Ang coexistence ay isang courtesy. Tapos na.
 
 ## 02. Ang ISO bilang data substrate para sa mga agent
 
-Ang kawili-wiling gawain sa treasury sa 2026 ay nasa itaas ng schema. Umaasa lahat ng programmable liquidity engine, intraday-credit optimiser, at agentic treasury workflow sa machine-readable at schema-validated payment data. Hindi ito kayang ibigay ng MT103. Kaya ito ng pacs.008.
+Ang kawili-wiling gawain sa treasury sa 2026 ay nasa itaas ng schema. Umaasa lahat ng programmable liquidity engine, intraday-credit optimiser, at agentic treasury workflow sa machine-readable at schema-validated payment data. Sa praktikal na pananalita, awtomatikong ino-optimise ng isang agentic treasury ang intraday liquidity positioning sa pamamagitan ng pagre-reconcile ng mga structured na `<Purp>` code at remittance data laban sa real-time na pangangailangan sa pondo — naglilipat ng cash, gumagamit ng credit line, o nagpipigil sa execution nang walang taong namamagitan. Hindi ito kayang ibigay ng MT103. Kaya ito ng pacs.008.
 
 Inilathala ng [BIS CPMI report on ISO 20022 harmonisation for cross-border payments](https://www.bis.org/cpmi/publ/d230.pdf "BIS CPMI: harmonised ISO 20022 data requirements") ang canonical message-and-data requirements set noong 2023. Mas matalas ang ngipin ng 2026 supplement sa parehong puntong ito: hindi na rekomendasyon ang harmonisation, ito ay precondition para sa mga target ng [G20 cross-border payments roadmap](https://www.bis.org/cpmi/publ/d193.htm "BIS CPMI: G20 cross-border payments roadmap") sa cost, speed, transparency, at access. Walang structured `<Purp>` code, structured address, at structured remittance, walang maipangangatwiranan ang isang agent. Prosa lamang ang mayroon ito.
 

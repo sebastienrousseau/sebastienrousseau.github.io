@@ -134,7 +134,7 @@ Coëxistentie was een hoffelijkheid. Die is voorbij.
 
 ## 02. ISO als datasubstraat voor agenten
 
-Het interessante werk in treasury 2026 zit boven het schema. Programmeerbare liquiditeitsengines, intraday-credit-optimalisatoren en agentic treasury-werkstromen zijn alle afhankelijk van machine-leesbare, schema-gevalideerde betalingsdata. MT103 kan die niet leveren. pacs.008 wel.
+Het interessante werk in treasury 2026 zit boven het schema. Programmeerbare liquiditeitsengines, intraday-credit-optimalisatoren en agentic treasury-werkstromen zijn alle afhankelijk van machine-leesbare, schema-gevalideerde betalingsdata. In de praktijk optimaliseert een agentic treasury automatisch de intraday-liquiditeitspositionering door gestructureerde `<Purp>`-codes en remittance-data te reconciliëren tegen real-time financieringsbehoeften — door cash te verplaatsen, kredietlijnen aan te spreken of executie tegen te houden zonder een mens in de loop. MT103 kan die niet leveren. pacs.008 wel.
 
 Het [BIS CPMI-rapport over ISO 20022-harmonisatie voor grensoverschrijdende betalingen](https://www.bis.org/cpmi/publ/d230.pdf "BIS CPMI: geharmoniseerde ISO 20022-datavereisten") publiceerde in 2023 de canonieke set vereisten voor bericht en data. Het supplement van 2026 maakt hetzelfde punt met scherpere tanden: harmonisatie is geen aanbeveling meer, het is een voorwaarde voor de doelstellingen van de [G20-routekaart voor grensoverschrijdende betalingen](https://www.bis.org/cpmi/publ/d193.htm "BIS CPMI: G20-routekaart voor grensoverschrijdende betalingen") op het gebied van kosten, snelheid, transparantie en toegang. Zonder gestructureerde `<Purp>`-codes, gestructureerde adressen en gestructureerde remittance heeft een agent niets om over te redeneren. Hij heeft proza.
 

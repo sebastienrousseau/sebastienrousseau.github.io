@@ -134,7 +134,7 @@ Koexistenz war eine Höflichkeit. Sie ist vorbei.
 
 ## 02. ISO als Datensubstrat für Agenten
 
-Die interessante Arbeit in der Treasury 2026 sitzt oberhalb des Schemas. Programmierbare Liquiditäts-Engines, Intraday-Kredit-Optimierer und agentische Treasury-Workflows hängen alle von maschinenlesbaren, schema-validierten Zahlungsdaten ab. MT103 kann sie nicht liefern. pacs.008 kann es.
+Die interessante Arbeit in der Treasury 2026 sitzt oberhalb des Schemas. Programmierbare Liquiditäts-Engines, Intraday-Kredit-Optimierer und agentische Treasury-Workflows hängen alle von maschinenlesbaren, schema-validierten Zahlungsdaten ab. In der Praxis optimiert eine agentische Treasury die Intraday-Liquiditätspositionierung automatisch, indem sie strukturierte `<Purp>`-Codes und Verwendungszweckdaten gegen den Echtzeit-Finanzierungsbedarf abgleicht — verschiebt Cash, zieht Kreditlinien oder hält die Ausführung zurück, ohne dass ein Mensch in der Schleife sitzt. MT103 kann sie nicht liefern. pacs.008 kann es.
 
 Der [BIS-CPMI-Bericht zur ISO-20022-Harmonisierung für grenzüberschreitende Zahlungen](https://www.bis.org/cpmi/publ/d230.pdf "BIS CPMI: harmonised ISO 20022 data requirements") hat 2023 das kanonische Set an Nachrichten- und Datenanforderungen veröffentlicht. Der Nachtrag 2026 macht denselben Punkt mit schärferen Zähnen: Harmonisierung ist keine Empfehlung mehr, sondern eine Voraussetzung für die Ziele der [G20-Roadmap für grenzüberschreitende Zahlungen](https://www.bis.org/cpmi/publ/d193.htm "BIS CPMI: G20 cross-border payments roadmap") bei Kosten, Geschwindigkeit, Transparenz und Zugang. Ohne strukturierte `<Purp>`-Codes, strukturierte Adressen und strukturierten Verwendungszweck hat ein Agent nichts zu reasonieren. Er hat Prosa.
 

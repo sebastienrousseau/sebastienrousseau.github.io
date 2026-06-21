@@ -134,7 +134,7 @@ A coexistência foi uma cortesia. Acabou.
 
 ## 02. ISO como substrato de dados para agentes
 
-O trabalho interessante na tesouraria de 2026 fica acima do schema. Engines de liquidez programável, otimizadores de crédito intradiário e fluxos de tesouraria agentic dependem todos de dados de pagamento legíveis por máquina e validados por schema. MT103 não consegue fornecer isso. pacs.008 consegue.
+O trabalho interessante na tesouraria de 2026 fica acima do schema. Engines de liquidez programável, otimizadores de crédito intradiário e fluxos de tesouraria agentic dependem todos de dados de pagamento legíveis por máquina e validados por schema. Na prática, uma tesouraria agentic otimiza automaticamente o posicionamento de liquidez intradiária reconciliando códigos `<Purp>` estruturados e dados de remessa contra necessidades de funding em tempo real — movimentando caixa, sacando linhas de crédito ou segurando a execução sem humano no circuito. MT103 não consegue fornecer isso. pacs.008 consegue.
 
 O [relatório do BIS CPMI sobre harmonização do ISO 20022 para pagamentos transfronteiriços](https://www.bis.org/cpmi/publ/d230.pdf "BIS CPMI: requisitos de dados ISO 20022 harmonizados") publicou o conjunto canônico de requisitos de mensagem e dados em 2023. O suplemento de 2026 reforça a mesma tese: harmonização deixou de ser recomendação e virou pré-condição para as metas do [roadmap do G20 para pagamentos transfronteiriços](https://www.bis.org/cpmi/publ/d193.htm "BIS CPMI: roadmap do G20 para pagamentos transfronteiriços") em custo, velocidade, transparência e acesso. Sem códigos `<Purp>` estruturados, endereços estruturados e remessa estruturada, o agente não tem sobre o que raciocinar. Tem prosa.
 

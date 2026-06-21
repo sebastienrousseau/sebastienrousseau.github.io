@@ -134,7 +134,7 @@ Koegzystencja była uprzejmością. Skończyła się.
 
 ## 02. ISO jako substrat danych dla agentów
 
-Ciekawa praca w treasury 2026 leży powyżej schematu. Silniki programowalnej płynności, optymalizatory kredytu śróddziennego i agentowe procesy treasury wszystkie zależą od czytelnych maszynowo, walidowanych względem schematu danych płatniczych. MT103 nie jest w stanie ich dostarczyć. pacs.008 jest.
+Ciekawa praca w treasury 2026 leży powyżej schematu. Silniki programowalnej płynności, optymalizatory kredytu śróddziennego i agentowe procesy treasury wszystkie zależą od czytelnych maszynowo, walidowanych względem schematu danych płatniczych. W praktyce agentowy treasury automatycznie optymalizuje pozycjonowanie płynności śróddziennej, uzgadniając ustrukturyzowane kody `<Purp>` i dane remitencyjne z bieżącymi potrzebami finansowania — przesuwając gotówkę, sięgając po linie kredytowe lub wstrzymując wykonanie bez człowieka w pętli. MT103 nie jest w stanie ich dostarczyć. pacs.008 jest.
 
 [Raport BIS CPMI o harmonizacji ISO 20022 dla płatności transgranicznych](https://www.bis.org/cpmi/publ/d230.pdf "BIS CPMI: zharmonizowane wymagania danych ISO 20022") opublikował kanoniczny zestaw wymagań komunikatu-i-danych w 2023 roku. Uzupełnienie z 2026 stawia ten sam punkt z ostrzejszymi zębami: harmonizacja nie jest już rekomendacją, jest warunkiem wstępnym dla celów [mapy drogowej G20 dla płatności transgranicznych](https://www.bis.org/cpmi/publ/d193.htm "BIS CPMI: mapa drogowa G20 dla płatności transgranicznych") w zakresie kosztu, szybkości, przejrzystości i dostępu. Bez ustrukturyzowanych kodów `<Purp>`, ustrukturyzowanych adresów i ustrukturyzowanej remitencji agent nie ma o czym rozumować. Ma prozę.
 
