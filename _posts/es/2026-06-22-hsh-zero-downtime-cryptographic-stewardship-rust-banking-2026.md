@@ -1,0 +1,170 @@
+---
+# Front Matter (YAML)
+author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
+banner_alt: "Estructura abstracta de bóveda criptográfica iluminada por luz azul y dorada — visualiza la frontera segura y con memoria a salvo donde los hashes de contraseña legados se actualizan a Argon2id en tiempo real"
+banner_height: "1597"
+banner_width: "2584"
+banner: "https://cloudcdn.pro/stocks/images/crypto-vault-XyZ1bLQnP9.webp"
+cdn: "https://cloudcdn.pro"
+charset: "UTF-8"
+cname: "sebastienrousseau.com"
+copyright: "© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved."
+date: "22 de junio de 2026"
+description: "hsh: framework criptográfico en Rust puro que migra hashes de contraseña legados a Argon2id sin downtime, con peppering HSM y sin FFI en C."
+format-detection: "telephone=no"
+hreflang: "es"
+icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
+id: "https://sebastienrousseau.com/2026-06-22-hsh-zero-downtime-cryptographic-stewardship-rust-banking-2026"
+image_alt: "Retrato en blanco y negro de Sebastien Rousseau"
+image_height: "162"
+image_width: "162"
+image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+keywords: "hsh, criptografía en Rust, hashing de contraseñas, Argon2id, seguridad bancaria, interlock HSM, cumplimiento DORA, Basel III, migración sin downtime, seguridad de memoria, PBKDF2, scrypt, cyber recovery"
+language: "es-ES"
+last_reviewed: "2026-06-22"
+layout: "report"
+locale: "es_ES"
+logo_alt: "Logo de Sebastien Rousseau"
+logo_height: "44"
+logo_width: "44"
+logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
+measurementID: "G-169G4ET5HQ"
+name: "Sebastien Rousseau"
+permalink: "https://sebastienrousseau.com/2026-06-22-hsh-zero-downtime-cryptographic-stewardship-rust-banking-2026"
+rating: "general"
+referrer: "no-referrer"
+robots: "index, follow"
+schema: "FAQPage, Article"
+seo_title: "hsh: custodia criptográfica sin downtime en Rust para banca"
+short_name: "sebastienrousseau"
+subtitle: "Cómo un framework criptográfico en Rust puro permite a la banca actualizar sin fricciones contraseñas legadas a Argon2id con interlocks HSM — y qué significa para el cumplimiento de DORA y Basel III."
+tags: "hsh, Rust, banca, criptografía, Argon2id, HSM, DORA, Basel-III, seguridad, open-source, resiliencia-operativa"
+theme-color: "0, 83, 191"
+title: "Asegurar la gestión de contraseñas en la banca corporativa: hashing multialgoritmo y upgrades con hsh"
+url: "https://sebastienrousseau.com/2026-06-22-hsh-zero-downtime-cryptographic-stewardship-rust-banking-2026"
+viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
+
+# RSS
+atom_link: "https://sebastienrousseau.com/2026-06-22-hsh-zero-downtime-cryptographic-stewardship-rust-banking-2026/rss.xml"
+category: "Technology"
+generator: "Static Site Generator (SSG) (version 0.0.40)"
+item_description: "hsh: framework criptográfico en Rust puro que migra hashes de contraseña legados a Argon2id sin downtime, con peppering HSM y sin FFI en C."
+item_pub_date: "Mon, 22 Jun 2026 07:07:07 +0000"
+item_title: "Asegurar la gestión de contraseñas en la banca corporativa: hashing multialgoritmo y upgrades con hsh"
+pub_date: "Mon, 22 Jun 2026 07:07:07 +0000"
+type: "article"
+
+# Twitter Card
+twitter_card: "summary_large_image"
+twitter_creator: "@wwdseb"
+twitter_description: "hsh permite a la banca tier-1 migrar hashes de contraseña legados a Argon2id sin downtime, con interlocks HSM y Rust seguro en memoria."
+twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
+twitter_title: "hsh: custodia criptográfica sin downtime en Rust"
+twitter_url: "https://sebastienrousseau.com/2026-06-22-hsh-zero-downtime-cryptographic-stewardship-rust-banking-2026"
+
+excerpt: "En la era del descifrado acelerado por GPU y de los mandatos de DORA, la podredumbre criptográfica es un riesgo sistémico. Cada hash PBKDF2 o scrypt heredado que reposa en una base de datos bancaria es una cuenta atrás hacia el compromiso. hsh introduce upgrades sin downtime y seguros en memoria..."
+
+# Added by fix_hsh_frontmatter.py (template completeness)
+apple_mobile_web_app_orientations: "portrait"
+apple_touch_icon_sizes: "192x192"
+apple-mobile-web-app-capable: "yes"
+apple-mobile-web-app-status-bar-inset: "black"
+apple-mobile-web-app-status-bar-style: "black-translucent"
+apple-touch-fullscreen: "yes"
+author_location: "London, United Kingdom"
+author_twitter: "@wwdseb"
+author_website: "https://sebastienrousseau.com"
+docs: https://validator.w3.org/feed/docs/rss2.html
+item_guid: "https://sebastienrousseau.com/2026-06-22-hsh-zero-downtime-cryptographic-stewardship-rust-banking-2026/rss.xml"
+item_link: "https://sebastienrousseau.com/2026-06-22-hsh-zero-downtime-cryptographic-stewardship-rust-banking-2026/rss.xml"
+last_build_date: "Mon, 22 Jun 2026 06:06:06 +0000"
+managing_editor: "contact@sebastienrousseau.com (Sebastien Rousseau)"
+menu: "active"
+msapplication-navbutton-color: "0, 83, 191"
+site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
+site_last_updated: "2023-07-05"
+site_software: "Static Site Generator, Rust"
+site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
+ttl: "60"
+twitter_site: "@wwdseb"
+webmaster: "contact@sebastienrousseau.com"
+apple-mobile-web-app-title: "hsh: Rust password hashing"
+thanks: "¡Gracias por leer!"
+twitter_image_alt: "Retrato en blanco y negro de Sebastien Rousseau"
+---
+
+# Asegurar la gestión de contraseñas en la banca corporativa: hashing multialgoritmo y upgrades con hsh
+
+<aside class="post-lead" aria-label="Resumen del artículo">
+<p class="post-lead-tldr"><strong>TL;DR.</strong> <a href="https://github.com/sebastienrousseau/hsh">hsh</a> es un framework criptográfico open source en Rust puro que permite a la banca tier-1 migrar hashes de contraseña legados a estándares modernos como Argon2id sin interrumpir el servicio. Al integrar peppering respaldado por HSM e imponer seguridad de memoria estricta sin wrappers FFI en C, cierra las vulnerabilidades de podredumbre criptográfica que amenazan directamente el cumplimiento de DORA y Basel III.</p>
+<p class="post-lead-heading"><strong>Conclusiones clave</strong></p>
+<ul class="post-lead-takeaways">
+  <li><strong>El problema de la podredumbre criptográfica.</strong> Los algoritmos legados como PBKDF2 se debilitan exponencialmente a medida que el hardware se acelera, ampliando la superficie de ataque ante campañas de credential-stuffing y de fuerza bruta offline.</li>
+  <li><strong>Migración sin downtime.</strong> El patrón <code>verify_and_upgrade</code> rehashea las credenciales de usuario de forma transparente durante los eventos de login estándar, eliminando el riesgo operativo de las migraciones masivas de base de datos.</li>
+  <li><strong>Interlock hardware y peppering.</strong> Los hashes se envuelven mediante Hardware Security Modules (HSM) o arquitecturas KMS en la nube, garantizando que una brecha de la base de datos por sí sola no entregue contraseñas candidatas crackeables.</li>
+  <li><strong>Seguridad de memoria como línea base regulatoria.</strong> Reescrito íntegramente en Rust seguro y reforzado con higiene estricta de dependencias, hsh elimina los riesgos de buffer overflow y de cadena de suministro inherentes a las librerías criptográficas legadas en C.</li>
+</ul>
+<p class="post-lead-related"><strong>Lecturas relacionadas:</strong> <a href="https://sebastienrousseau.com/2026-06-20-http-handle-zero-dependency-edge-ingress-banking-rust-2026">http-handle: ingress edge sin dependencias y de alto rendimiento para banca en 2026</a>, <a href="https://sebastienrousseau.com/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/index.html">El índice de tesorería autónoma en 2026</a>.</p>
+</aside>
+La mayor parte de la autenticación en banca corporativa sigue descansando sobre una capa de contraseñas endurecida frente a un modelo de amenazas de 2018. El hardware que la rompe ha avanzado. A medida que las granjas de GPU escalan y los ordenadores cuánticos criptográficamente relevantes (CRQC) se aproximan, el hashing legado — PBKDF2, scrypt temprano — se degrada con cada hora de cómputo que los atacantes invierten en la cola de cracking offline. La degradación es silenciosa: nada en la base de datos de producción avisa de que el hash que ayer era fuerte ya no lo es.
+
+Bajo el [Reglamento de Resiliencia Operativa Digital (DORA)](https://eur-lex.europa.eu/eli/reg/2022/2554/oj), dejar activos criptográficos legados sin rotar en producción ya no es deuda técnica. Es responsabilidad regulatoria nombrada.
+
+[hsh](https://github.com/sebastienrousseau/hsh) cierra esa brecha. Un framework en Rust puro, gestiona múltiples formatos de hash en paralelo y actualiza credenciales débiles en vuelo durante las sesiones de login activas. La infraestructura de autenticación se alinea con los mandatos de resiliencia de 2026 sin ventana de mantenimiento, sin reseteo forzado y sin un solo segundo de downtime.
+
+## 01. El problema de la podredumbre criptográfica en banca
+
+Para entender la necesidad de un framework como hsh hay que entender el ciclo de vida de un hash de contraseña. Los algoritmos no envejecen con elegancia; se degradan en proporción al hardware disponible para romperlos.
+
+**La brecha de aceleración ASIC/GPU.** Algoritmos como PBKDF2 se diseñaron para ser computacionalmente costosos en CPU. Hoy, los atacantes usan GPU altamente paralelizadas para ejecutar ataques de diccionario offline. Un hash legado generado en 2018 es radicalmente más débil frente a un adversario de 2026.
+
+**El riesgo de la migración big-bang.** Cuando un CISO decide actualizar de PBKDF2 a un algoritmo memory-hard como Argon2id, no puede invertir los hashes para reencriptarlos. Las soluciones tradicionales —forzar el reseteo de contraseñas de millones de usuarios— provocan fricción masiva al cliente y riesgo operativo.
+
+**La cadena de suministro de librerías C.** Históricamente, el middleware bancario ha dependido de librerías como `argonautica` o de bindings directos a C para el hashing. Estas librerías arrastran un riesgo oculto de cadena de suministro: un único buffer overflow en el módulo de autenticación puede derivar en ejecución remota de código (RCE) en la capa más privilegiada del stack bancario.
+
+## 02. La lente de arquitectura hsh 2026
+
+El framework se estructura en cinco capas principales, cada una diseñada para mitigar una categoría específica de riesgo operativo.
+
+### Tabla 1: capas de arquitectura de hsh y mitigación de riesgos
+
+| Capa | Decisión de diseño | Por qué importa | Riesgo si se gestiona mal |
+| ---- | ---- | ---- | ---- |
+| **Primitivas criptográficas** | Formato unificado PHC String que soporta Argon2id, scrypt y PBKDF2 | Aporta resistencia best-in-class frente a ataques GPU manteniendo compatibilidad hacia atrás. | Silos de datos; algoritmos débiles que permiten más de 100 000 millones de intentos por segundo offline. |
+| **Motor de políticas** | Despacho `verify_and_upgrade` | Automatiza la transición de políticas legadas a modernas de forma dinámica en el login. | Podredumbre de seguridad; usuarios activos atrapados en tipos de hash legados fáciles de romper. |
+| **Interlock hardware** | Capacidades de «peppering» con HSM y KMS en la nube | Asegura que una brecha de base de datos por sí sola no exponga contraseñas candidatas. | Ataques de fuerza bruta offline exitosos tras una brecha por inyección SQL. |
+| **Higiene de seguridad** | Imposición de `deny.toml` y Rust puro | Bloquea por completo FFI inseguro y dependencias externas en C no fiables. | Ataques catastróficos de cadena de suministro y CVE de corrupción de memoria. |
+
+## 03. La ruta de rehash sin downtime
+
+El patrón `verify_and_upgrade` resuelve la migración de datos mediante un sistema de despacho inteligente y consciente del estado que no requiere downtime de base de datos.
+
+Cuando un usuario envía sus credenciales, hsh lee la cadena Password Hashing Competition (PHC) almacenada. Si contiene un hash legado (por ejemplo, una configuración PBKDF2 obsoleta), el sistema ejecuta el siguiente flujo:
+
+1. **Identificación:** parsea el algoritmo legado y sus parámetros específicos.
+2. **Verificación:** valida la contraseña candidata contra el hash legado.
+3. **Upgrade en tiempo real:** tras una coincidencia exitosa, toma la contraseña candidata en texto plano en memoria y computa de inmediato un nuevo hash usando la política altamente segura Argon2id.
+4. **Persistencia:** devuelve la nueva cadena PHC a la aplicación bancaria, que sobrescribe el registro legado en la base de datos.
+
+El proceso es totalmente transparente para el usuario final. Migra eficazmente las cuentas más activas al nivel de seguridad más alto desde el día uno, reduciendo de forma orgánica y drástica la superficie de ataque del banco con el tiempo.
+
+## 04. Hashes con pepper vía interlock HSM / KMS
+
+El hashing de contraseñas estándar protege frente a fugas directas de base de datos, pero si un atacante obtiene tanto la base de datos (hashes y salts), puede ejecutar cracking offline.
+
+hsh introduce una capa de seguridad robusta de «peppering». Al integrarse con Hardware Security Modules (HSM) o con servicios cloud-native de gestión de claves (KMS), la salida final de Argon2id se envuelve criptográficamente con una clave de alta entropía que nunca abandona la frontera de hardware seguro. Si la base de datos de usuarios se exfiltra, el atacante solo dispone de blobs cifrados. No puede empezar a romper contraseñas sin vulnerar también la infraestructura HSM físicamente aislada del banco.
+
+## 05. Alineación regulatoria: DORA, Basel III y SM&CR
+
+- **DORA artículos 5 y 6:** exigen que las entidades financieras mantengan marcos de gestión del riesgo TIC. Una estrategia que dependa de hashes de contraseña sin rotar y con una década de antigüedad viola estos principios. hsh aporta un mecanismo documentado y automatizado para elevar de forma continua las protecciones criptográficas.
+- **Basel III:** vincula el capital regulatorio a la probabilidad y severidad de los eventos de pérdida. Al implementar Argon2id con interlock HSM, la severidad de una brecha de base de datos se reduce drásticamente, sustentando argumentos cuantificables a favor de una menor asignación de capital por riesgo operacional.
+- **Responsabilidad SM&CR:** aprobar una arquitectura que remedia activamente la podredumbre criptográfica proporciona a los altos directivos nombrados una cadena verificable y documentable de reducción de riesgo.
+
+## Conclusión
+
+El hashing de contraseñas deploy-and-forget se ha acabado. DORA ha desplazado la pasividad criptográfica de deuda técnica a responsabilidad regulatoria nombrada, y la curva del hardware se inclina más cada año. La contribución de hsh no es un algoritmo más fuerte — Argon2id lleva años disponible. La contribución es la maquinaria operativa para migrar a él sin planificar downtime, sin forzar reseteos de usuario y sin confiar en shims FFI en C la ruta de autenticación del banco.
+
+El [código fuente de hsh](https://github.com/sebastienrousseau/hsh) está disponible bajo licencia dual MIT y Apache 2.0.
+
+<aside class="author-card" aria-label="Sobre el autor"><img alt="Retrato de Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Tecnólogo bancario sénior que escribe sobre IA aplicada, migración a ISO 20022, criptografía postcuántica para servicios financieros y la transformación estructural de los pagos mayoristas.</span><span class="author-credentials">Más de 20 años en HSBC Commercial &amp; Investment Bank, PayPal, Barclays y Shazam. <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<p class="post-reviewed">Última revisión <time datetime="2026-06-22">2026-06-22</time>.</p>
