@@ -109,7 +109,7 @@ site_software: "Static Site Generator, Rust"
 <p class="book-eyebrow">WHITEPAPER · BANKING ARCHITECTURE</p>
 <h2 class="book-title"><a href="/2026-banking-architecture-whitepaper/index.html" title="2026 Banking Architecture: A Framework for Operational Resilience">2026 Banking Architecture: A Framework for Operational Resilience</a></h2>
 <p class="book-meta"><time datetime="2026-06-21">June 2026</time> &middot; Sebastien Rousseau</p>
-<p class="book-meta book-meta-faint">English &middot; PDF/A-4f &middot; ~179 KB &middot; Free download</p>
+<p class="book-meta book-meta-faint">English &middot; PDF/A-4f &middot; 6 pages &middot; ~179 KB &middot; Free download</p>
 <p class="book-excerpt">A three-pillar architectural framework for Tier-1 CIB and corporate treasury teams in 2026 — cryptographic stewardship, ISO 20022 as the autonomic data substrate, and rail-agnostic multi-rail orchestration. Aggregates the hsh, pain.001, and cross-border articles into a single Resilience Trinity briefing designed for Architecture Review Boards, DORA compliance committees, and C-level planning sessions. Includes a sequential three-phase implementation roadmap aligned with the November 2026 SWIFT MT/MX cut-over and the 2026 DORA reporting cycle.</p>
 <p class="book-actions"><a class="pill primary no-chev" href="https://cloudcdn.pro/stocks/documents/2026-banking-architecture-whitepaper.pdf" rel="noopener" title="Download the 2026 Banking Architecture Whitepaper (PDF)">Download the PDF</a> <a class="pill ghost no-chev" href="/2026-banking-architecture-whitepaper/index.html" title="Read the companion landing page">Read the framework</a></p>
 </div>
