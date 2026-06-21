@@ -172,7 +172,7 @@ Deploy a rail-agnostic control plane that treats SWIFT CBPR+, A2A / PSD3, and to
 
 ## Architectural briefing — download the PDF
 
-Need to share this framework with internal security, treasury, or architecture-review teams? The three reports have been synthesised into a single, high-fidelity PDF briefing — designed for Architecture Review Boards (ARB), DORA compliance committees, and C-level planning sessions. **Version:** June 2026. **Format:** A4 print-ready, two-column, tagged PDF/A-4f with PDF/UA-2 accessibility.
+Need to share this framework with internal security, treasury, or architecture-review teams? The three reports have been synthesised into a single, high-fidelity PDF briefing — designed for Architecture Review Boards (ARB), DORA compliance committees, and C-level planning sessions. **Version:** June 2026. **Format:** US-letter print-ready, single-column NeurIPS-derived preprint style, 7 pages.
 
 <p class="cta-actions"><a class="pill primary no-chev" href="https://cloudcdn.pro/stocks/documents/2026-banking-architecture-whitepaper.pdf" rel="noopener" title="Download the 2026 Banking Architecture Whitepaper (PDF)">Download the PDF briefing</a> <a class="pill ghost no-chev" href="/papers" title="See all published white papers and research">All white papers</a></p>
 
