@@ -150,6 +150,21 @@ Ang praktikal na konsekwensya para sa corporate treasury:
 - **Nakakaligtas ang remittance data sa hop.** Ang structured remittance fields (`<RmtInf><Strd>`) ay dumadaan sa correspondent legs nang walang truncation. Tumataas ang auto-reconciliation rates dahil hindi na nawawala ang data sa rail boundary.
 - **Auditable na ang sanctions screening.** Ang structured `<Dbtr>` / `<Cdtr>` / `<DbtrAgt>` / `<CdtrAgt>` fields na may LEI references ang pumapalit sa free-text name screening. Bumababa ang hit rates. Lumiliit ang investigation queues.
 
+Sinusundan ng diagram sa ibaba ang isang pain.001 sa ingress ng bangko, papasok sa policy-as-code orchestrator, at palabas sa kung anumang rail ang hinihingi ng corridor at ticket size — isang mensahe, maraming rails, walang re-mapping.
+
+```mermaid
+flowchart LR
+    Corp[Corporate ERP] -->|pain.001 ISO 20022| Ingress[Bank Ingress<br/>schema-validate]
+    Ingress --> Router{Orchestrator<br/>policy-as-code}
+    Router -->|high-value cross-border| Swift[SWIFT CBPR+<br/>pacs.008]
+    Router -->|domestic instant| A2A[A2A / Open Finance<br/>PSD3 / FedNow / SEPA Inst]
+    Router -->|in-network corridor| Token[Tokenised Deposit<br/>permissioned ledger]
+    Swift --> Settle[Settlement<br/>pacs.002 status]
+    A2A --> Settle
+    Token --> Settle
+    Settle --> Recon[Auto-reconciliation<br/>structured RmtInf]
+```
+
 Ang halaga ng consistency na ito ay engineering discipline. Permisibo ang ISO 20022. Dalawang bangko ay maaaring ganap na CBPR+ compliant at gumawa pa rin ng pacs.008 messages na nagkakaiba sa field usage, character set, at remittance-data structure. Ang CIB na nananalo sa cross-border sa 2026 ay nagpapatupad ng mas mahigpit na message profile kaysa sa kinakailangan ng standard — at tinatanggihan sa parse, hindi sa settlement.
 
 ## 03. Tokenised deposits at stable rails

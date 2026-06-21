@@ -150,6 +150,21 @@ Kurumsal hazine için pratik sonuç:
 - **Havale verisi sıçramayı hayatta atlatır.** Yapılandırılmış havale alanları (`<RmtInf><Strd>`) muhabir ayaklarda kesilmeden taşınır. Veri ray sınırında kaybolmadığı için otomatik mutabakat oranları yükselir.
 - **Yaptırım taraması denetlenebilir hâle gelir.** LEI referanslarıyla yapılandırılmış `<Dbtr>` / `<Cdtr>` / `<DbtrAgt>` / `<CdtrAgt>` alanları, serbest metin ad taramasının yerini alır. Eşleşme oranı düşer. Soruşturma kuyrukları daralır.
 
+Aşağıdaki diyagram, tek bir pain.001'i bankanın giriş noktasından, kod olarak politika orkestratörüne ve oradan koridor ile tutar büyüklüğünün gerektirdiği raya kadar izler — tek mesaj, çok ray, yeniden eşleştirme yok.
+
+```mermaid
+flowchart LR
+    Corp[Corporate ERP] -->|pain.001 ISO 20022| Ingress[Bank Ingress<br/>schema-validate]
+    Ingress --> Router{Orchestrator<br/>policy-as-code}
+    Router -->|high-value cross-border| Swift[SWIFT CBPR+<br/>pacs.008]
+    Router -->|domestic instant| A2A[A2A / Open Finance<br/>PSD3 / FedNow / SEPA Inst]
+    Router -->|in-network corridor| Token[Tokenised Deposit<br/>permissioned ledger]
+    Swift --> Settle[Settlement<br/>pacs.002 status]
+    A2A --> Settle
+    Token --> Settle
+    Settle --> Recon[Auto-reconciliation<br/>structured RmtInf]
+```
+
 Bu tutarlılığın bedeli mühendislik disiplinidir. ISO 20022 müsamahakârdır. İki banka tamamen CBPR+ uyumlu olabilir ve yine de alan kullanımı, karakter seti ve havale veri yapısı bakımından farklı pacs.008 mesajları üretebilir. 2026'da sınır ötesinde kazanan CIB, standardın gerektirdiğinden daha katı bir mesaj profilini uygular — ve takasta değil ayrıştırmada reddeder.
 
 ## 03. Tokenleştirilmiş mevduatlar ve sabit raylar

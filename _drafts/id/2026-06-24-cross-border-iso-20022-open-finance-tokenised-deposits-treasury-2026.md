@@ -150,6 +150,21 @@ Konsekuensi praktis untuk treasury korporasi:
 - **Data remittance bertahan melewati hop.** Field remittance terstruktur (`<RmtInf><Strd>`) terbawa melewati kaki koresponden tanpa pemangkasan. Tingkat rekonsiliasi otomatis naik karena data tidak lagi hilang di batas rel.
 - **Penyaringan sanksi menjadi dapat diaudit.** Field terstruktur `<Dbtr>` / `<Cdtr>` / `<DbtrAgt>` / `<CdtrAgt>` dengan referensi LEI menggantikan penyaringan nama teks bebas. Tingkat hit turun. Antrean investigasi mengecil.
 
+Diagram di bawah ini menelusuri satu pain.001 melalui ingress bank, masuk ke orkestrator policy-as-code, dan keluar ke rel mana pun yang dituntut oleh koridor dan ukuran tiket — satu pesan, banyak rel, tanpa pemetaan ulang.
+
+```mermaid
+flowchart LR
+    Corp[Corporate ERP] -->|pain.001 ISO 20022| Ingress[Bank Ingress<br/>schema-validate]
+    Ingress --> Router{Orchestrator<br/>policy-as-code}
+    Router -->|high-value cross-border| Swift[SWIFT CBPR+<br/>pacs.008]
+    Router -->|domestic instant| A2A[A2A / Open Finance<br/>PSD3 / FedNow / SEPA Inst]
+    Router -->|in-network corridor| Token[Tokenised Deposit<br/>permissioned ledger]
+    Swift --> Settle[Settlement<br/>pacs.002 status]
+    A2A --> Settle
+    Token --> Settle
+    Settle --> Recon[Auto-reconciliation<br/>structured RmtInf]
+```
+
 Biaya konsistensi ini adalah disiplin rekayasa. ISO 20022 bersifat permisif. Dua bank dapat sepenuhnya patuh CBPR+ namun tetap menghasilkan pesan pacs.008 yang berbeda dalam penggunaan field, set karakter, dan struktur data remittance. CIB yang menang dalam lintas batas pada 2026 menegakkan profil pesan yang lebih ketat dari yang disyaratkan standar — dan menolak pada parse, bukan pada settlement.
 
 ## 03. Tokenised deposits dan rel stabil

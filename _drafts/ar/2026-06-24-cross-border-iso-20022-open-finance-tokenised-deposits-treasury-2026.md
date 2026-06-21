@@ -150,6 +150,21 @@ CIB الذي يبيع عرضاً متعدد القضبان في 2026 يبيع ا
 - **بيانات التحويل تنجو من القفزة.** حقول التحويل المُهيكَلة (`<RmtInf><Strd>`) تمر عبر سيقان المراسلة دون اقتطاع. ومعدلات المطابقة الآلية ترتفع لأن البيانات لم تَعُد تضيع عند حدود القضيب.
 - **فحص العقوبات يصبح قابلاً للتدقيق.** حقول `<Dbtr>` / `<Cdtr>` / `<DbtrAgt>` / `<CdtrAgt>` المُهيكَلة بمراجع LEI تحل محل فحص الأسماء بنص حر. ومعدلات الإصابة تنخفض. وطوابير التحقيق تتقلَّص.
 
+المخطط أدناه يتتبَّع رسالة pain.001 واحدة عبر مدخل البنك، إلى منسِّق السياسة-ككود، ثم خروجاً إلى أيِّ قضيب يفرضه الممر وحجم التذكرة — رسالة واحدة، قضبان متعددة، دون إعادة تخطيط.
+
+```mermaid
+flowchart LR
+    Corp[Corporate ERP] -->|pain.001 ISO 20022| Ingress[Bank Ingress<br/>schema-validate]
+    Ingress --> Router{Orchestrator<br/>policy-as-code}
+    Router -->|high-value cross-border| Swift[SWIFT CBPR+<br/>pacs.008]
+    Router -->|domestic instant| A2A[A2A / Open Finance<br/>PSD3 / FedNow / SEPA Inst]
+    Router -->|in-network corridor| Token[Tokenised Deposit<br/>permissioned ledger]
+    Swift --> Settle[Settlement<br/>pacs.002 status]
+    A2A --> Settle
+    Token --> Settle
+    Settle --> Recon[Auto-reconciliation<br/>structured RmtInf]
+```
+
 ثمن هذا الاتساق هو الانضباط الهندسي. ISO 20022 متساهل. يمكن لبنكين أن يكونا متوافقين تماماً مع CBPR+ ومع ذلك يُنتجان رسائل pacs.008 تختلف في استخدام الحقول، ومجموعة الأحرف، وبنية بيانات التحويل. CIB الذي يفوز في عابر الحدود في 2026 يفرض ملف رسائل أصرم مما يتطلبه المعيار — ويرفض عند التحليل، لا عند التسوية.
 
 ## 03. الودائع المُرمَّزة والقضبان المستقرة

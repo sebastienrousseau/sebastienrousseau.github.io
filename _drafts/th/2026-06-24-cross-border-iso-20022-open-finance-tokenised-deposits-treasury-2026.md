@@ -150,6 +150,21 @@ CIB ที่ขายข้อเสนอแบบหลายรางใน�
 - **ข้อมูลเรมิตแทนซ์รอดข้ามฮอป** ฟิลด์เรมิตแทนซ์เชิงโครงสร้าง (`<RmtInf><Strd>`) พ่วงต่อขาคอเรสปอนเดนต์โดยไม่ถูกตัดทอน อัตรากระทบยอดอัตโนมัติพุ่งขึ้น เพราะข้อมูลไม่หายที่ขอบเขตของราง
 - **การคัดกรองมาตรการลงโทษตรวจสอบย้อนหลังได้** ฟิลด์ `<Dbtr>` / `<Cdtr>` / `<DbtrAgt>` / `<CdtrAgt>` ที่มีโครงสร้างพร้อมการอ้างอิง LEI แทนที่การคัดกรองชื่อแบบข้อความอิสระ อัตราการตรวจพบเท็จลดลง คิวการตรวจสอบหดตัว
 
+แผนภาพด้านล่างไล่ตาม pain.001 หนึ่งข้อความผ่านอินเกรสของธนาคาร เข้าสู่ออเคสเตรเตอร์แบบ policy-as-code และออกไปยังรางที่คอร์ริดอร์และขนาดรายการกำหนด — ข้อความเดียว หลายราง ไม่ต้องแมปใหม่
+
+```mermaid
+flowchart LR
+    Corp[Corporate ERP] -->|pain.001 ISO 20022| Ingress[Bank Ingress<br/>schema-validate]
+    Ingress --> Router{Orchestrator<br/>policy-as-code}
+    Router -->|high-value cross-border| Swift[SWIFT CBPR+<br/>pacs.008]
+    Router -->|domestic instant| A2A[A2A / Open Finance<br/>PSD3 / FedNow / SEPA Inst]
+    Router -->|in-network corridor| Token[Tokenised Deposit<br/>permissioned ledger]
+    Swift --> Settle[Settlement<br/>pacs.002 status]
+    A2A --> Settle
+    Token --> Settle
+    Settle --> Recon[Auto-reconciliation<br/>structured RmtInf]
+```
+
 ราคาของความสอดคล้องนี้คือวินัยทางวิศวกรรม ISO 20022 ผ่อนปรน สองธนาคารสามารถปฏิบัติตาม CBPR+ อย่างเต็มที่และยังคงผลิตข้อความ pacs.008 ที่แตกต่างกันในการใช้ฟิลด์ ชุดอักขระ และโครงสร้างข้อมูลเรมิตแทนซ์ CIB ที่จะชนะการชำระเงินข้ามพรมแดนในปี 2026 บังคับใช้โปรไฟล์ข้อความที่เคร่งครัดกว่ามาตรฐานกำหนด — และปฏิเสธในขั้นพาร์ส ไม่ใช่ที่ขั้นชำระดุล
 
 ## 03. เงินฝากแบบโทเค็นและรางที่เสถียร

@@ -150,6 +150,21 @@ site_software: "Static Site Generator, Rust"
 - **汇款数据穿越中转。**结构化汇款字段（`<RmtInf><Strd>`）穿过代理行链路而不被截断。自动对账率上升，因为数据不再在轨道边界丢失。
 - **制裁筛查变得可审计。**带 LEI 引用的结构化 `<Dbtr>` / `<Cdtr>` / `<DbtrAgt>` / `<CdtrAgt>` 字段取代自由文本姓名筛查。命中率下降。调查队列缩短。
 
+下图追踪一条 pain.001 从银行入口进入策略即代码编排器，再按走廊与票面规模流向相应轨道——一条消息，多条轨道，无须重新映射。
+
+```mermaid
+flowchart LR
+    Corp[Corporate ERP] -->|pain.001 ISO 20022| Ingress[Bank Ingress<br/>schema-validate]
+    Ingress --> Router{Orchestrator<br/>policy-as-code}
+    Router -->|high-value cross-border| Swift[SWIFT CBPR+<br/>pacs.008]
+    Router -->|domestic instant| A2A[A2A / Open Finance<br/>PSD3 / FedNow / SEPA Inst]
+    Router -->|in-network corridor| Token[Tokenised Deposit<br/>permissioned ledger]
+    Swift --> Settle[Settlement<br/>pacs.002 status]
+    A2A --> Settle
+    Token --> Settle
+    Settle --> Recon[Auto-reconciliation<br/>structured RmtInf]
+```
+
 这种一致性的代价是工程纪律。ISO 20022 是宽松的。两家银行可以同时完全符合 CBPR+，但产出的 pacs.008 消息在字段使用、字符集与汇款数据结构上仍各不相同。2026 年要在跨境业务上胜出的 CIB，会强制执行比标准更严格的消息画像——并在解析阶段拒收，而不是在结算阶段。
 
 ## 03. 代币化存款与稳定轨道

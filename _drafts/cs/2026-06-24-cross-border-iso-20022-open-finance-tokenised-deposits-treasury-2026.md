@@ -150,6 +150,21 @@ Praktický důsledek pro korporátní treasury:
 - **Remitenční data přežijí přeskok.** Strukturovaná remitenční pole (`<RmtInf><Strd>`) projdou korespondenčními nohami bez ořezání. Míra automatické rekonciliace stoupá, protože data se na hranici railu už neztrácejí.
 - **Sankční screening se stává auditovatelným.** Strukturovaná pole `<Dbtr>` / `<Cdtr>` / `<DbtrAgt>` / `<CdtrAgt>` s odkazy LEI nahrazují screening jmen ve volném textu. Míra zásahů klesá. Vyšetřovací fronty se zkracují.
 
+Diagram níže sleduje jedinou pain.001 přes ingress banky, do orchestrátoru policy-as-code a ven na rail, který diktuje koridor a velikost transakce — jedna zpráva, mnoho railů, žádné přemapování.
+
+```mermaid
+flowchart LR
+    Corp[Corporate ERP] -->|pain.001 ISO 20022| Ingress[Bank Ingress<br/>schema-validate]
+    Ingress --> Router{Orchestrator<br/>policy-as-code}
+    Router -->|high-value cross-border| Swift[SWIFT CBPR+<br/>pacs.008]
+    Router -->|domestic instant| A2A[A2A / Open Finance<br/>PSD3 / FedNow / SEPA Inst]
+    Router -->|in-network corridor| Token[Tokenised Deposit<br/>permissioned ledger]
+    Swift --> Settle[Settlement<br/>pacs.002 status]
+    A2A --> Settle
+    Token --> Settle
+    Settle --> Recon[Auto-reconciliation<br/>structured RmtInf]
+```
+
 Cenou této konzistence je inženýrská disciplína. ISO 20022 je permisivní. Dvě banky mohou být plně v souladu s CBPR+ a přesto produkovat zprávy pacs.008, které se liší v použití polí, znakové sadě a struktuře remitenčních dat. CIB, která vyhrává na přeshraničních platbách v roce 2026, vynucuje přísnější profil zpráv, než standard vyžaduje — a odmítá při parsování, ne při zúčtování.
 
 ## 03. Tokenizované depozity a stabilní raily

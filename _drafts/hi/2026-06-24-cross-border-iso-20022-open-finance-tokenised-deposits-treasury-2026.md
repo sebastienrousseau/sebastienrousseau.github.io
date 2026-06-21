@@ -150,6 +150,21 @@ BIS के भुगतान और बाज़ार अवसंरचना
 - **रेमिटेंस डेटा हॉप के पार जीवित रहता है।** संरचित रेमिटेंस फ़ील्ड (`<RmtInf><Strd>`) संवाददाता चरणों के पार बिना छंटनी के पहुँचते हैं। ऑटो-मिलान दरें इसलिए बढ़ती हैं क्योंकि डेटा अब रेल सीमा पर खोता नहीं।
 - **प्रतिबंध स्क्रीनिंग ऑडिट-योग्य बन जाती है।** LEI संदर्भों के साथ संरचित `<Dbtr>` / `<Cdtr>` / `<DbtrAgt>` / `<CdtrAgt>` फ़ील्ड फ़्री-टेक्स्ट नाम स्क्रीनिंग का स्थान लेते हैं। हिट दरें गिरती हैं। जाँच पंक्तियाँ सिकुड़ती हैं।
 
+नीचे दिया गया आरेख एक ही pain.001 को बैंक के इनग्रेस से होकर, पॉलिसी-ऐज़-कोड ऑर्केस्ट्रेटर में, और कॉरिडोर तथा टिकट आकार जिस भी रेल की माँग करें उस पर बाहर — एक संदेश, अनेक रेल, कोई पुनः-मैपिंग नहीं — के मार्ग को दर्शाता है।
+
+```mermaid
+flowchart LR
+    Corp[Corporate ERP] -->|pain.001 ISO 20022| Ingress[Bank Ingress<br/>schema-validate]
+    Ingress --> Router{Orchestrator<br/>policy-as-code}
+    Router -->|high-value cross-border| Swift[SWIFT CBPR+<br/>pacs.008]
+    Router -->|domestic instant| A2A[A2A / Open Finance<br/>PSD3 / FedNow / SEPA Inst]
+    Router -->|in-network corridor| Token[Tokenised Deposit<br/>permissioned ledger]
+    Swift --> Settle[Settlement<br/>pacs.002 status]
+    A2A --> Settle
+    Token --> Settle
+    Settle --> Recon[Auto-reconciliation<br/>structured RmtInf]
+```
+
 इस सुसंगति की कीमत अभियांत्रिकी अनुशासन है। ISO 20022 अनुमेय है। दो बैंक पूरी तरह CBPR+ अनुपालक हो सकते हैं और फिर भी ऐसे pacs.008 संदेश तैयार कर सकते हैं जो फ़ील्ड उपयोग, वर्ण सेट और रेमिटेंस-डेटा संरचना में भिन्न होते हैं। 2026 में सीमा-पार पर जीतने वाला CIB मानक से अधिक सख्त संदेश प्रोफ़ाइल लागू करता है — और निपटान पर नहीं, पार्स पर अस्वीकार करता है।
 
 ## 03. टोकनीकृत जमा और स्थिर रेल

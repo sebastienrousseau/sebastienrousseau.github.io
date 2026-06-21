@@ -150,6 +150,21 @@ Consecința practică pentru trezoreria corporativă:
 - **Datele de remitență supraviețuiesc transferului.** Câmpurile structurate de remitență (`<RmtInf><Strd>`) trec prin etapele corespondente fără trunchiere. Ratele de auto-reconciliere cresc deoarece datele nu mai sunt pierdute la limita șinei.
 - **Screening-ul sancțiunilor devine auditabil.** Câmpurile structurate `<Dbtr>` / `<Cdtr>` / `<DbtrAgt>` / `<CdtrAgt>` cu referințe LEI înlocuiesc screening-ul de nume în text liber. Ratele de potrivire scad. Cozile de investigație se micșorează.
 
+Diagrama de mai jos urmărește un singur pain.001 prin ingressul băncii, în orchestratorul policy-as-code și apoi spre șina pe care o cer coridorul și dimensiunea biletului — un mesaj, mai multe șine, fără remapare.
+
+```mermaid
+flowchart LR
+    Corp[Corporate ERP] -->|pain.001 ISO 20022| Ingress[Bank Ingress<br/>schema-validate]
+    Ingress --> Router{Orchestrator<br/>policy-as-code}
+    Router -->|high-value cross-border| Swift[SWIFT CBPR+<br/>pacs.008]
+    Router -->|domestic instant| A2A[A2A / Open Finance<br/>PSD3 / FedNow / SEPA Inst]
+    Router -->|in-network corridor| Token[Tokenised Deposit<br/>permissioned ledger]
+    Swift --> Settle[Settlement<br/>pacs.002 status]
+    A2A --> Settle
+    Token --> Settle
+    Settle --> Recon[Auto-reconciliation<br/>structured RmtInf]
+```
+
 Costul acestei consistențe este disciplina de inginerie. ISO 20022 este permisiv. Două bănci pot fi pe deplin conforme CBPR+ și totuși să producă mesaje pacs.008 care diferă în utilizarea câmpurilor, setul de caractere și structura datelor de remitență. CIB-ul care câștigă la transfrontalier în 2026 impune un profil de mesaj mai strict decât cere standardul — și respinge la parsare, nu la decontare.
 
 ## 03. Depozite tokenizate și șine stabile

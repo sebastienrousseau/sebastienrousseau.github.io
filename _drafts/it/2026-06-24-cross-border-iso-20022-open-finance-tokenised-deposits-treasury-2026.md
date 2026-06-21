@@ -150,6 +150,21 @@ Le conseguenze pratiche per il treasury aziendale:
 - **I dati di rimessa sopravvivono al salto.** I campi di rimessa strutturati (`<RmtInf><Strd>`) attraversano le tratte corrispondenti senza troncamenti. I tassi di auto-riconciliazione salgono perché il dato non si perde più al confine del rail.
 - **Lo screening sanzioni diventa auditabile.** I campi strutturati `<Dbtr>` / `<Cdtr>` / `<DbtrAgt>` / `<CdtrAgt>` con riferimenti LEI sostituiscono lo screening in testo libero dei nomi. I tassi di hit calano. Le code di indagine si riducono.
 
+Il diagramma seguente traccia un singolo pain.001 attraverso l'ingress della banca, dentro l'orchestratore policy-as-code e fuori verso il rail che corridoio e taglio di ticket impongono — un messaggio, molti rail, nessuna rimappatura.
+
+```mermaid
+flowchart LR
+    Corp[Corporate ERP] -->|pain.001 ISO 20022| Ingress[Bank Ingress<br/>schema-validate]
+    Ingress --> Router{Orchestrator<br/>policy-as-code}
+    Router -->|high-value cross-border| Swift[SWIFT CBPR+<br/>pacs.008]
+    Router -->|domestic instant| A2A[A2A / Open Finance<br/>PSD3 / FedNow / SEPA Inst]
+    Router -->|in-network corridor| Token[Tokenised Deposit<br/>permissioned ledger]
+    Swift --> Settle[Settlement<br/>pacs.002 status]
+    A2A --> Settle
+    Token --> Settle
+    Settle --> Recon[Auto-reconciliation<br/>structured RmtInf]
+```
+
 Il prezzo di questa consistenza è la disciplina ingegneristica. ISO 20022 è permissivo. Due banche possono essere pienamente conformi a CBPR+ e produrre comunque messaggi pacs.008 che differiscono per uso dei campi, set di caratteri e struttura dei dati di rimessa. Il CIB che vince sul transfrontaliero nel 2026 impone un profilo di messaggio più stretto di quanto lo standard richieda — e rigetta in fase di parse, non in fase di regolamento.
 
 ## 03. Depositi tokenizzati e rail stabili

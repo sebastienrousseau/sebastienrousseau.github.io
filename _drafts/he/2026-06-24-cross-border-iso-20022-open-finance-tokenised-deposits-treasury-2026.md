@@ -150,6 +150,21 @@ site_software: "Static Site Generator, Rust"
 - **נתוני העברה שורדים את הקפיצה.** שדות העברה מובנים (`<RmtInf><Strd>`) עוברים את רגלי הכתב ללא קיצוץ. שיעורי התאמה אוטומטית עולים כי הנתונים כבר אינם הולכים לאיבוד בגבול המסילה.
 - **סינון סנקציות הופך לבר-ביקורת.** שדות `<Dbtr>` / `<Cdtr>` / `<DbtrAgt>` / `<CdtrAgt>` מובנים עם הפניות LEI מחליפים סינון שם בטקסט חופשי. שיעורי הפגיעות יורדים. תורי החקירה מצטמצמים.
 
+התרשים שלהלן עוקב אחר pain.001 בודד דרך כניסת הבנק, אל מתזמר המדיניות-כקוד, והחוצה למסילה שהמסדרון וגודל העסקה דורשים — הודעה אחת, מסילות רבות, ללא מיפוי מחדש.
+
+```mermaid
+flowchart LR
+    Corp[Corporate ERP] -->|pain.001 ISO 20022| Ingress[Bank Ingress<br/>schema-validate]
+    Ingress --> Router{Orchestrator<br/>policy-as-code}
+    Router -->|high-value cross-border| Swift[SWIFT CBPR+<br/>pacs.008]
+    Router -->|domestic instant| A2A[A2A / Open Finance<br/>PSD3 / FedNow / SEPA Inst]
+    Router -->|in-network corridor| Token[Tokenised Deposit<br/>permissioned ledger]
+    Swift --> Settle[Settlement<br/>pacs.002 status]
+    A2A --> Settle
+    Token --> Settle
+    Settle --> Recon[Auto-reconciliation<br/>structured RmtInf]
+```
+
 המחיר של עקביות זו הוא משמעת הנדסית. ISO 20022 מתיר. שני בנקים יכולים להיות תואמים מלאים ל-CBPR+ ועדיין להפיק הודעות pacs.008 שונות בשימוש בשדה, בערכת תווים ובמבנה נתוני העברה. ה-CIB המנצח בחוצה-גבולות ב-2026 אוכף פרופיל הודעה מחמיר יותר מהנדרש בתקן — ודוחה בפיענוח, לא בסליקה.
 
 ## 03. פיקדונות מתויגים ומסילות יציבות

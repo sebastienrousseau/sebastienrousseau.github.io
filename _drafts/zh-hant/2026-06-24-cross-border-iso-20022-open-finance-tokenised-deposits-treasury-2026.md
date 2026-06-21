@@ -150,6 +150,21 @@ site_software: "Static Site Generator, Rust"
 - **匯款資訊得以跨段保全。**結構化匯款欄位(`<RmtInf><Strd>`)可貫穿代理行段而不被截斷。自動對帳率因此提升,因為資料不再於軌道交界處遺失。
 - **制裁掃描可被稽核。**附 LEI 參照的結構化 `<Dbtr>` / `<Cdtr>` / `<DbtrAgt>` / `<CdtrAgt>` 欄位,取代了自由文字的姓名比對。命中率下降。調查隊列縮短。
 
+下圖追蹤單一筆 pain.001 自銀行入口進入,流經政策即程式碼編排器,再依走廊與金額所需,送往對應的軌道——一則訊息、多條軌道、無須重新對應。
+
+```mermaid
+flowchart LR
+    Corp[Corporate ERP] -->|pain.001 ISO 20022| Ingress[Bank Ingress<br/>schema-validate]
+    Ingress --> Router{Orchestrator<br/>policy-as-code}
+    Router -->|high-value cross-border| Swift[SWIFT CBPR+<br/>pacs.008]
+    Router -->|domestic instant| A2A[A2A / Open Finance<br/>PSD3 / FedNow / SEPA Inst]
+    Router -->|in-network corridor| Token[Tokenised Deposit<br/>permissioned ledger]
+    Swift --> Settle[Settlement<br/>pacs.002 status]
+    A2A --> Settle
+    Token --> Settle
+    Settle --> Recon[Auto-reconciliation<br/>structured RmtInf]
+```
+
 維繫這份一致性,所付出的代價是工程紀律。ISO 20022 是寬鬆的。兩家銀行皆可完全符合 CBPR+,而其 pacs.008 訊息在欄位用法、字元集與匯款資訊結構上仍可能不同。2026 年在跨境市場勝出的 CIB,會強制執行一套比標準更嚴格的訊息規格——並於剖析階段就拒絕,而非於清算階段才退回。
 
 ## 03. 代幣化存款與穩定軌道

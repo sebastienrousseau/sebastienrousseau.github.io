@@ -150,6 +150,21 @@ Sakamako mai amfani ga kuɗin kamfani:
 - **Bayanan remittance suna tsira a tsalle.** Filayen remittance masu tsari (`<RmtInf><Strd>`) suna wucewa ta sassan correspondent ba tare da yankewa ba. Ƙimar daidaita kai tsaye tana tashi saboda an dakatar da ɓarnar bayanai a iyakar layi.
 - **Binciken takunkumi ya zama mai iya audit.** Filayen `<Dbtr>` / `<Cdtr>` / `<DbtrAgt>` / `<CdtrAgt>` masu tsari tare da nassoshin LEI suna maye gurbin binciken sunan rubutu kyauta. Ƙimar buga tana faɗuwa. Layukan bincike suna ragewa.
 
+Hoton da ke ƙasa yana bin pain.001 ɗaya ta hanyar ingress na banki, zuwa cikin orchestrator na policy-as-code, kuma zuwa ga duk wani layi da corridor da girman tikiti ke buƙata — saƙo ɗaya, layi da yawa, ba sake taswira ba.
+
+```mermaid
+flowchart LR
+    Corp[Corporate ERP] -->|pain.001 ISO 20022| Ingress[Bank Ingress<br/>schema-validate]
+    Ingress --> Router{Orchestrator<br/>policy-as-code}
+    Router -->|high-value cross-border| Swift[SWIFT CBPR+<br/>pacs.008]
+    Router -->|domestic instant| A2A[A2A / Open Finance<br/>PSD3 / FedNow / SEPA Inst]
+    Router -->|in-network corridor| Token[Tokenised Deposit<br/>permissioned ledger]
+    Swift --> Settle[Settlement<br/>pacs.002 status]
+    A2A --> Settle
+    Token --> Settle
+    Settle --> Recon[Auto-reconciliation<br/>structured RmtInf]
+```
+
 Kuɗin daidaiton wannan shi ne horon injiniyanci. ISO 20022 yana ba da damar. Bankuna biyu na iya zama cikakke CBPR+ compliant kuma su samar da saƙonnin pacs.008 da suka bambanta a amfani da filaye, character set, da tsarin bayanan remittance. CIB da ke nasara akan ƙetare iyaka a 2026 yana aiwatar da bayanan saƙo mai tsanani fiye da yadda ma'aunin ke buƙata — kuma yana ƙin yarda akan parse, ba akan tsabtacewa ba.
 
 ## 03. Tokenised deposits da hanyoyin tabbatacce

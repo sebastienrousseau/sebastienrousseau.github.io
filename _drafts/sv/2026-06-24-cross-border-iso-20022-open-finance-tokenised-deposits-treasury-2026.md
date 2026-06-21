@@ -150,6 +150,21 @@ Den praktiska konsekvensen för företagstreasury:
 - **Remitteringsdata överlever hoppet.** Strukturerade remitteringsfält (`<RmtInf><Strd>`) bärs genom korrespondentben utan trunkering. Auto-avstämningsgraden stiger eftersom data inte längre går förlorad vid spårgränsen.
 - **Sanktionsscreening blir granskningsbar.** Strukturerade `<Dbtr>`/`<Cdtr>`/`<DbtrAgt>`/`<CdtrAgt>`-fält med LEI-referenser ersätter screening av fritextnamn. Träffgraden faller. Utredningsköerna krymper.
 
+Diagrammet nedan följer en enskild pain.001 genom bankens ingress, in i policy-as-code-orkestratorn, och ut till det spår som korridoren och biljettstorleken kräver — ett meddelande, många spår, ingen omkartning.
+
+```mermaid
+flowchart LR
+    Corp[Corporate ERP] -->|pain.001 ISO 20022| Ingress[Bank Ingress<br/>schema-validate]
+    Ingress --> Router{Orchestrator<br/>policy-as-code}
+    Router -->|high-value cross-border| Swift[SWIFT CBPR+<br/>pacs.008]
+    Router -->|domestic instant| A2A[A2A / Open Finance<br/>PSD3 / FedNow / SEPA Inst]
+    Router -->|in-network corridor| Token[Tokenised Deposit<br/>permissioned ledger]
+    Swift --> Settle[Settlement<br/>pacs.002 status]
+    A2A --> Settle
+    Token --> Settle
+    Settle --> Recon[Auto-reconciliation<br/>structured RmtInf]
+```
+
 Kostnaden för denna konsekvens är teknisk disciplin. ISO 20022 är tillåtande. Två banker kan vara fullt CBPR+-efterlevande och fortfarande producera pacs.008-meddelanden som skiljer sig i fältanvändning, teckenuppsättning och remitteringsdatastruktur. Den CIB som vinner på gränsöverskridande 2026 tvingar fram en striktare meddelandeprofil än standarden kräver — och avvisar vid parsning, inte vid avveckling.
 
 ## 03. Tokeniserade depositioner och stabila spår

@@ -150,6 +150,21 @@ Die praktische Konsequenz für die Firmenkunden-Treasury:
 - **Remittance-Daten überleben den Hop.** Strukturierte Remittance-Felder (`<RmtInf><Strd>`) tragen durch Korrespondenz-Beine ohne Trunkierung. Auto-Reconciliation-Raten steigen, weil die Daten nicht mehr an der Schienengrenze verloren gehen.
 - **Sanktions-Screening wird prüfbar.** Strukturierte `<Dbtr>`-/`<Cdtr>`-/`<DbtrAgt>`-/`<CdtrAgt>`-Felder mit LEI-Referenzen ersetzen Freitext-Namens-Screening. Trefferraten sinken. Untersuchungs-Queues schrumpfen.
 
+Das folgende Diagramm verfolgt eine einzelne pain.001 durch die Ingress-Schicht der Bank, hinein in den Policy-as-Code-Orchestrator und hinaus auf die Schiene, die Korridor und Ticketgröße verlangen — eine Nachricht, viele Schienen, kein Re-Mapping.
+
+```mermaid
+flowchart LR
+    Corp[Corporate ERP] -->|pain.001 ISO 20022| Ingress[Bank Ingress<br/>schema-validate]
+    Ingress --> Router{Orchestrator<br/>policy-as-code}
+    Router -->|high-value cross-border| Swift[SWIFT CBPR+<br/>pacs.008]
+    Router -->|domestic instant| A2A[A2A / Open Finance<br/>PSD3 / FedNow / SEPA Inst]
+    Router -->|in-network corridor| Token[Tokenised Deposit<br/>permissioned ledger]
+    Swift --> Settle[Settlement<br/>pacs.002 status]
+    A2A --> Settle
+    Token --> Settle
+    Settle --> Recon[Auto-reconciliation<br/>structured RmtInf]
+```
+
 Die Kosten dieser Konsistenz heißen Engineering-Disziplin. ISO 20022 ist permissiv. Zwei Banken können vollständig CBPR+-konform sein und dennoch pacs.008-Nachrichten produzieren, die sich in Feldnutzung, Zeichensatz und Remittance-Datenstruktur unterscheiden. Die CIB, die 2026 grenzüberschreitend gewinnt, erzwingt ein strikteres Nachrichtenprofil als der Standard verlangt — und weist beim Parsen ab, nicht beim Settlement.
 
 ## 03. Tokenisierte Einlagen und stabile Rails

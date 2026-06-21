@@ -150,6 +150,21 @@ BIS 결제·시장 인프라 위원회(CPMI)는 [국경 간 결제 향상을 위
 - **송금 데이터가 홉을 살아남습니다.** 구조화된 송금 필드(`<RmtInf><Strd>`)는 절단 없이 코레스폰던트 구간을 통과합니다. 데이터가 더 이상 레일 경계에서 손실되지 않기 때문에 자동 정합성 비율이 올라갑니다.
 - **제재 스크리닝이 감사 가능해집니다.** LEI 참조가 있는 구조화된 `<Dbtr>` / `<Cdtr>` / `<DbtrAgt>` / `<CdtrAgt>` 필드가 자유 텍스트 명칭 스크리닝을 대체합니다. 적중률이 떨어집니다. 조사 큐가 줄어듭니다.
 
+아래 다이어그램은 단일 pain.001이 은행의 인그레스를 거쳐 정책 기반 코드 오케스트레이터로 들어가고, 회랑과 티켓 사이즈가 요구하는 레일로 나가는 흐름을 추적합니다 — 하나의 메시지, 다수의 레일, 재매핑 없음.
+
+```mermaid
+flowchart LR
+    Corp[Corporate ERP] -->|pain.001 ISO 20022| Ingress[Bank Ingress<br/>schema-validate]
+    Ingress --> Router{Orchestrator<br/>policy-as-code}
+    Router -->|high-value cross-border| Swift[SWIFT CBPR+<br/>pacs.008]
+    Router -->|domestic instant| A2A[A2A / Open Finance<br/>PSD3 / FedNow / SEPA Inst]
+    Router -->|in-network corridor| Token[Tokenised Deposit<br/>permissioned ledger]
+    Swift --> Settle[Settlement<br/>pacs.002 status]
+    A2A --> Settle
+    Token --> Settle
+    Settle --> Recon[Auto-reconciliation<br/>structured RmtInf]
+```
+
 이 일관성의 비용은 엔지니어링 규율입니다. ISO 20022는 허용적입니다. 두 은행이 모두 완벽히 CBPR+ 준수 상태일 수 있으면서도 필드 사용, 문자 집합, 송금 데이터 구조가 서로 다른 pacs.008 메시지를 만들어낼 수 있습니다. 2026년 국경 간에서 이기는 CIB는 표준이 요구하는 것보다 더 엄격한 메시지 프로파일을 강제하고, 결제가 아니라 파싱 단계에서 거절합니다.
 
 ## 03. 토큰화 예금과 안정 레일

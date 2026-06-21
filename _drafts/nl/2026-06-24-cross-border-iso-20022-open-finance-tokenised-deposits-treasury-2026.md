@@ -150,6 +150,21 @@ Het praktische gevolg voor corporate treasury:
 - **Remittance-data overleeft de hop.** Gestructureerde remittance-velden (`<RmtInf><Strd>`) gaan door correspondentpoten heen zonder afkappen. Auto-reconciliatiepercentages stijgen omdat de data niet langer verloren gaat aan de railgrens.
 - **Sanctiescreening wordt auditeerbaar.** Gestructureerde `<Dbtr>` / `<Cdtr>` / `<DbtrAgt>` / `<CdtrAgt>`-velden met LEI-referenties vervangen vrije-tekst-naamscreening. Hit-rates dalen. Onderzoekswachtrijen krimpen.
 
+Het onderstaande diagram volgt één pain.001 door de ingress van de bank, in de policy-as-code-orchestrator, en uit naar welke rail de corridor en ticketgrootte ook eisen — één bericht, meerdere rails, geen hermapping.
+
+```mermaid
+flowchart LR
+    Corp[Corporate ERP] -->|pain.001 ISO 20022| Ingress[Bank Ingress<br/>schema-validate]
+    Ingress --> Router{Orchestrator<br/>policy-as-code}
+    Router -->|high-value cross-border| Swift[SWIFT CBPR+<br/>pacs.008]
+    Router -->|domestic instant| A2A[A2A / Open Finance<br/>PSD3 / FedNow / SEPA Inst]
+    Router -->|in-network corridor| Token[Tokenised Deposit<br/>permissioned ledger]
+    Swift --> Settle[Settlement<br/>pacs.002 status]
+    A2A --> Settle
+    Token --> Settle
+    Settle --> Recon[Auto-reconciliation<br/>structured RmtInf]
+```
+
 De kostprijs van deze consistentie is engineeringdiscipline. ISO 20022 is permissief. Twee banken kunnen volledig CBPR+-compliant zijn en toch pacs.008-berichten produceren die verschillen in veldgebruik, tekenset en structuur van remittance-data. De CIB die in 2026 wint op cross-border dwingt een striktere berichtprofiel af dan de standaard vereist — en wijst af op parse, niet op settlement.
 
 ## 03. Tokenised deposits en stable rails

@@ -150,6 +150,21 @@ Hệ quả thực tiễn với ngân quỹ doanh nghiệp:
 - **Dữ liệu chuyển khoản sống sót qua từng chặng.** Các trường chuyển khoản có cấu trúc (`<RmtInf><Strd>`) đi xuyên các chặng đại lý mà không bị cắt cụt. Tỷ lệ đối soát tự động tăng vì dữ liệu không còn mất ở ranh giới đường ray.
 - **Sàng lọc lệnh trừng phạt có thể kiểm toán.** Các trường có cấu trúc `<Dbtr>` / `<Cdtr>` / `<DbtrAgt>` / `<CdtrAgt>` cùng tham chiếu LEI thay thế sàng lọc tên dạng văn bản tự do. Tỷ lệ trùng giảm. Hàng đợi điều tra co lại.
 
+Sơ đồ dưới đây lần theo một pain.001 duy nhất qua cổng tiếp nhận của ngân hàng, vào bộ điều phối policy-as-code, rồi ra đường ray mà hành lang và quy mô giao dịch đòi hỏi — một tin nhắn, nhiều đường ray, không ánh xạ lại.
+
+```mermaid
+flowchart LR
+    Corp[Corporate ERP] -->|pain.001 ISO 20022| Ingress[Bank Ingress<br/>schema-validate]
+    Ingress --> Router{Orchestrator<br/>policy-as-code}
+    Router -->|high-value cross-border| Swift[SWIFT CBPR+<br/>pacs.008]
+    Router -->|domestic instant| A2A[A2A / Open Finance<br/>PSD3 / FedNow / SEPA Inst]
+    Router -->|in-network corridor| Token[Tokenised Deposit<br/>permissioned ledger]
+    Swift --> Settle[Settlement<br/>pacs.002 status]
+    A2A --> Settle
+    Token --> Settle
+    Settle --> Recon[Auto-reconciliation<br/>structured RmtInf]
+```
+
 Cái giá của sự nhất quán này là kỷ luật kỹ thuật. ISO 20022 cho phép linh hoạt. Hai ngân hàng có thể đều tuân thủ CBPR+ đầy đủ và vẫn tạo ra các tin nhắn pacs.008 khác nhau về cách dùng trường, tập ký tự và cấu trúc dữ liệu chuyển khoản. CIB thắng cuộc trên xuyên biên giới năm 2026 áp dụng một profile tin nhắn nghiêm ngặt hơn chuẩn yêu cầu — và từ chối tại bước phân tích, không phải tại bước thanh toán.
 
 ## 03. Tiền gửi token hoá và đường ray ổn định

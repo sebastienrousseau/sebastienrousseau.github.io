@@ -150,6 +150,21 @@ BIS 決済・市場インフラ委員会 (CPMI) は、[クロスボーダー決�
 - **送金データはホップを生き残ります。**構造化された送金フィールド (`<RmtInf><Strd>`) はコルレスレッグを切り詰めなく通過します。データがレール境界で失われなくなるため、自動消し込み率が上昇します。
 - **制裁スクリーニングは監査可能になります。**LEI 参照付きの構造化された `<Dbtr>` / `<Cdtr>` / `<DbtrAgt>` / `<CdtrAgt>` フィールドが、フリーテキスト名スクリーニングを置き換えます。ヒット率は下がります。調査キューは縮みます。
 
+以下の図は、銀行のイングレスから policy-as-code オーケストレーターを経て、コリドーと取引サイズが要求するレールへと一本の pain.001 をたどります — 一つのメッセージ、複数のレール、再マッピングなしです。
+
+```mermaid
+flowchart LR
+    Corp[Corporate ERP] -->|pain.001 ISO 20022| Ingress[Bank Ingress<br/>schema-validate]
+    Ingress --> Router{Orchestrator<br/>policy-as-code}
+    Router -->|high-value cross-border| Swift[SWIFT CBPR+<br/>pacs.008]
+    Router -->|domestic instant| A2A[A2A / Open Finance<br/>PSD3 / FedNow / SEPA Inst]
+    Router -->|in-network corridor| Token[Tokenised Deposit<br/>permissioned ledger]
+    Swift --> Settle[Settlement<br/>pacs.002 status]
+    A2A --> Settle
+    Token --> Settle
+    Settle --> Recon[Auto-reconciliation<br/>structured RmtInf]
+```
+
 この一貫性のコストはエンジニアリング規律です。ISO 20022 は寛容です。二つの銀行が完全に CBPR+ 準拠でありながら、フィールド利用、文字セット、送金データ構造が異なる pacs.008 メッセージを生成し得ます。2026 年にクロスボーダーで勝つ CIB は、標準が要求するよりも厳格なメッセージプロファイルを強制し、決済時ではなくパース時に拒否します。
 
 ## 03. トークン化預金と安定的なレール

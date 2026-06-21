@@ -150,6 +150,21 @@ site_software: "Static Site Generator, Rust"
 - **রেমিট্যান্স ডেটা হপ থেকে বাঁচে।** কাঠামোগত রেমিট্যান্স ক্ষেত্র (`<RmtInf><Strd>`) কারেসপন্ডেন্ট লেগ জুড়ে ছাঁটাই ছাড়াই বহন করে। অটো-পুনর্মিলন হার বাড়ে কারণ ডেটা আর রেল সীমানায় হারিয়ে যায় না।
 - **নিষেধাজ্ঞা স্ক্রিনিং অডিটযোগ্য হয়।** LEI রেফারেন্সসহ কাঠামোগত `<Dbtr>` / `<Cdtr>` / `<DbtrAgt>` / `<CdtrAgt>` ক্ষেত্র মুক্ত-পাঠ্য নাম স্ক্রিনিংকে প্রতিস্থাপন করে। হিট রেট পড়ে। তদন্ত সারি সংকুচিত হয়।
 
+নিচের ডায়াগ্রামটি একটি একক pain.001-কে ব্যাংকের ইনগ্রেস হয়ে, পলিসি-অ্যাজ-কোড অর্কেস্ট্রেটরে, এবং করিডোর ও টিকেট সাইজ যে রেল দাবি করে সেখানে বের হওয়া পর্যন্ত অনুসরণ করে — এক বার্তা, বহু রেল, কোনো পুনঃম্যাপিং নেই।
+
+```mermaid
+flowchart LR
+    Corp[Corporate ERP] -->|pain.001 ISO 20022| Ingress[Bank Ingress<br/>schema-validate]
+    Ingress --> Router{Orchestrator<br/>policy-as-code}
+    Router -->|high-value cross-border| Swift[SWIFT CBPR+<br/>pacs.008]
+    Router -->|domestic instant| A2A[A2A / Open Finance<br/>PSD3 / FedNow / SEPA Inst]
+    Router -->|in-network corridor| Token[Tokenised Deposit<br/>permissioned ledger]
+    Swift --> Settle[Settlement<br/>pacs.002 status]
+    A2A --> Settle
+    Token --> Settle
+    Settle --> Recon[Auto-reconciliation<br/>structured RmtInf]
+```
+
 এই সামঞ্জস্যের খরচ হল প্রকৌশল শৃঙ্খলা। ISO 20022 অনুমতিমূলক। দুটি ব্যাংক সম্পূর্ণ CBPR+ কমপ্লায়েন্ট হতে পারে এবং এখনও pacs.008 বার্তা তৈরি করতে পারে যেগুলো ক্ষেত্র ব্যবহার, ক্যারেক্টার সেট ও রেমিট্যান্স-ডেটা কাঠামোয় ভিন্ন। ২০২৬-এ আন্তঃসীমান্তে যে CIB জেতে সে স্ট্যান্ডার্ডের চেয়ে কঠোর একটি বার্তা প্রোফাইল প্রয়োগ করে — এবং পার্সে প্রত্যাখ্যান করে, নিষ্পত্তিতে নয়।
 
 ## ০৩. টোকেনাইজড ডিপোজিট এবং স্থিতিশীল রেল

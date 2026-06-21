@@ -150,6 +150,21 @@ La consecuencia práctica para la tesorería corporativa:
 - **Los datos de remesa sobreviven al salto.** Los campos de remesa estructurados (`<RmtInf><Strd>`) atraviesan los tramos corresponsales sin truncamiento. Las tasas de conciliación automática suben porque el dato deja de perderse en la frontera del rail.
 - **El cribado de sanciones se vuelve auditable.** Los campos estructurados `<Dbtr>` / `<Cdtr>` / `<DbtrAgt>` / `<CdtrAgt>` con referencias LEI sustituyen al cribado de nombres en texto libre. Los hits caen. Las colas de investigación se reducen.
 
+El diagrama siguiente sigue un pain.001 a través del ingreso del banco, hacia el orquestador de policy-as-code y hasta el rail que exigen el corredor y el tamaño del ticket — un mensaje, varios rails, sin re-mapeo.
+
+```mermaid
+flowchart LR
+    Corp[Corporate ERP] -->|pain.001 ISO 20022| Ingress[Bank Ingress<br/>schema-validate]
+    Ingress --> Router{Orchestrator<br/>policy-as-code}
+    Router -->|high-value cross-border| Swift[SWIFT CBPR+<br/>pacs.008]
+    Router -->|domestic instant| A2A[A2A / Open Finance<br/>PSD3 / FedNow / SEPA Inst]
+    Router -->|in-network corridor| Token[Tokenised Deposit<br/>permissioned ledger]
+    Swift --> Settle[Settlement<br/>pacs.002 status]
+    A2A --> Settle
+    Token --> Settle
+    Settle --> Recon[Auto-reconciliation<br/>structured RmtInf]
+```
+
 El coste de esta consistencia es disciplina de ingeniería. ISO 20022 es permisivo. Dos bancos pueden ser plenamente conformes con CBPR+ y aun así producir mensajes pacs.008 que difieren en uso de campos, conjunto de caracteres y estructura de los datos de remesa. El CIB que gana en transfronterizo en 2026 impone un perfil de mensaje más estricto que el que exige el estándar — y rechaza en el parseo, no en la liquidación.
 
 ## 03. Depósitos tokenizados y rails estables

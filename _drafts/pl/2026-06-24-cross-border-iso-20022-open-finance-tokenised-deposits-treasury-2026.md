@@ -150,6 +150,21 @@ Praktyczne konsekwencje dla treasury korporacyjnego:
 - **Dane remitencji przeżywają hop.** Ustrukturyzowane pola remitencji (`<RmtInf><Strd>`) przechodzą przez nogi korespondenckie bez ucięcia. Wskaźniki auto-rekoncyliacji rosną, bo dane nie giną już na granicy toru.
 - **Sankcyjny screening staje się audytowalny.** Ustrukturyzowane pola `<Dbtr>` / `<Cdtr>` / `<DbtrAgt>` / `<CdtrAgt>` z referencjami LEI zastępują screening po wolnym tekście. Wskaźniki trafień spadają. Kolejki śledcze się kurczą.
 
+Diagram poniżej śledzi pojedynczy pain.001 przez wejście banku, do orkiestratora policy-as-code i dalej do tego toru, którego wymaga korytarz i wielkość transakcji — jeden komunikat, wiele torów, bez przemapowywania.
+
+```mermaid
+flowchart LR
+    Corp[Corporate ERP] -->|pain.001 ISO 20022| Ingress[Bank Ingress<br/>schema-validate]
+    Ingress --> Router{Orchestrator<br/>policy-as-code}
+    Router -->|high-value cross-border| Swift[SWIFT CBPR+<br/>pacs.008]
+    Router -->|domestic instant| A2A[A2A / Open Finance<br/>PSD3 / FedNow / SEPA Inst]
+    Router -->|in-network corridor| Token[Tokenised Deposit<br/>permissioned ledger]
+    Swift --> Settle[Settlement<br/>pacs.002 status]
+    A2A --> Settle
+    Token --> Settle
+    Settle --> Recon[Auto-reconciliation<br/>structured RmtInf]
+```
+
 Kosztem tej spójności jest dyscyplina inżynierska. ISO 20022 jest permisywne. Dwa banki mogą być w pełni zgodne z CBPR+, a wciąż produkować komunikaty pacs.008 różniące się użyciem pól, zestawem znaków i strukturą danych remitencji. CIB, który wygrywa na transgranicznym w 2026, wymusza ostrzejszy profil komunikatu, niż wymaga standard — i odrzuca na parsowaniu, nie na rozliczeniu.
 
 ## 03. Tokenizowane depozyty i stabilne tory

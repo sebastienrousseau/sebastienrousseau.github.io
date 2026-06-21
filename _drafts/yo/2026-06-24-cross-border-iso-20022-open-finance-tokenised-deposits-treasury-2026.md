@@ -150,6 +150,21 @@ CIB tí ó ń ta èrò ọ̀nà-pípọ̀ ní 2026 ń ta ìṣètò — kì í �
 - **Dátà remittance ń yè kọjá ìfò.** Àwọn agọ́ remittance tí ó ní ètò (`<RmtInf><Strd>`) ń gbé kọjá àwọn ẹsẹ̀ oníbára láìní ge kúkurú. Iye ìbámu aládàṣe ń dìde nítorí pé a kì í pàdánù dátà ní ààlà ọ̀nà.
 - **Ṣíṣàyẹ̀wò ìṣèyà di ohun tó ṣeé wádìí.** Àwọn agọ́ `<Dbtr>` / `<Cdtr>` / `<DbtrAgt>` / `<CdtrAgt>` tí ó ní ètò pẹ̀lú àwọn ìtọ́kasí LEI ń rọ́pò ìṣẹ́jú-fọwọ́sí orúkọ ọ̀rọ̀-aláìní-ètò. Iye ìkún ń dín. Ìlà ìwádìí ń wó.
 
+Àwòrán tó wà nísàlẹ̀ ń tọpa pain.001 kan ṣoṣo kọjá ẹ̀nu-ọ̀nà báńkì, sínú olùṣètò policy-as-code, àti jáde sí ọ̀nà yòówù tí ojú-ọ̀nà àti ìwọ̀n tikẹ́ẹ̀tì béèrè — ìránṣẹ́ kan, ọ̀nà púpọ̀, láìní tún-pa sọ.
+
+```mermaid
+flowchart LR
+    Corp[Corporate ERP] -->|pain.001 ISO 20022| Ingress[Bank Ingress<br/>schema-validate]
+    Ingress --> Router{Orchestrator<br/>policy-as-code}
+    Router -->|high-value cross-border| Swift[SWIFT CBPR+<br/>pacs.008]
+    Router -->|domestic instant| A2A[A2A / Open Finance<br/>PSD3 / FedNow / SEPA Inst]
+    Router -->|in-network corridor| Token[Tokenised Deposit<br/>permissioned ledger]
+    Swift --> Settle[Settlement<br/>pacs.002 status]
+    A2A --> Settle
+    Token --> Settle
+    Settle --> Recon[Auto-reconciliation<br/>structured RmtInf]
+```
+
 Iye owó ìṣòkan yìí ni ìjùmọ̀ṣe ìmọ̀-ẹ̀rọ. ISO 20022 ń yọ̀nda. Báńkì méjì lè jẹ́ tó bá CBPR+ mu pátápátá, kí wọ́n sì ṣì gbé àwọn ìránṣẹ́ pacs.008 tó yàtọ̀ ní ìlò agọ́, èdè-àpẹẹrẹ, àti ìṣètò dátà remittance. CIB tí ó ń borí lórí ọ̀rọ̀ kọjá ààlà ní 2026 ń fipá-mu àpẹẹrẹ ìránṣẹ́ tó le ju ohun tí àpẹẹrẹ béèrè — tí ó sì ń kọ ní parse, kì í ṣe ní ìparí.
 
 ## 03. Àwọn ìfipamọ́ tokenised àti àwọn ọ̀nà tó dúró
