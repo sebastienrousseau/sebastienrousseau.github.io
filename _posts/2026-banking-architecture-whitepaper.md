@@ -170,11 +170,11 @@ Deploy a rail-agnostic control plane that treats SWIFT CBPR+, A2A / PSD3, and to
 <p><strong>Sebastien Rousseau</strong> is a senior banking technologist with 20+ years of experience across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, and Shazam. He specialises in applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments. He writes at <a href="https://sebastienrousseau.com">sebastienrousseau.com</a> and publishes the <a href="https://news.bankingonquantum.com" rel="external noopener">Banking On Quantum</a> newsletter.</p>
 </aside>
 
-## Architectural briefing — request the PDF
+## Architectural briefing — download the PDF
 
-Need to share this framework with internal security, treasury, or architecture-review teams? The three reports have been synthesised into a single, high-fidelity PDF briefing — designed for Architecture Review Boards (ARB), DORA compliance committees, and C-level planning sessions. **Version:** June 2026. **Format:** A4 print-ready, 12 pages.
+Need to share this framework with internal security, treasury, or architecture-review teams? The three reports have been synthesised into a single, high-fidelity PDF briefing — designed for Architecture Review Boards (ARB), DORA compliance committees, and C-level planning sessions. **Version:** June 2026. **Format:** A4 print-ready, two-column, tagged PDF/A-4f with PDF/UA-2 accessibility.
 
-<p class="cta-actions"><a class="pill primary no-chev" href="/contact" title="Request the 2026 Banking Architecture Whitepaper PDF briefing">Request the PDF briefing</a> <a class="pill ghost no-chev" href="/papers" title="See all published white papers and research">All white papers</a></p>
+<p class="cta-actions"><a class="pill primary no-chev" href="https://cloudcdn.pro/stocks/documents/2026-banking-architecture-whitepaper.pdf" rel="noopener" title="Download the 2026 Banking Architecture Whitepaper (PDF)">Download the PDF briefing</a> <a class="pill ghost no-chev" href="/papers" title="See all published white papers and research">All white papers</a></p>
 
 ## Internal review summary
 
@@ -210,6 +210,6 @@ A modular modernisation strategy built on three pillars.
 
 This framework transitions banking infrastructure from a maintenance-heavy cost centre to a programmable, resilient, audit-ready treasury machine. The three referenced articles detail the technical implementation for each pillar, including code-level patterns, sequence flows, and the multi-rail orchestration trace.
 
-<p class="cta-actions"><a class="pill primary no-chev" href="/contact" title="Request the 2026 Banking Architecture Whitepaper PDF briefing">Request the PDF briefing</a></p>
+<p class="cta-actions"><a class="pill primary no-chev" href="https://cloudcdn.pro/stocks/documents/2026-banking-architecture-whitepaper.pdf" rel="noopener" title="Download the 2026 Banking Architecture Whitepaper (PDF)">Download the PDF briefing</a></p>
 
 <p class="post-distribution"><small><em>Distribution note. This document is intended for internal use by technology and risk-architecture teams evaluating modernisation roadmaps. For live code implementations and repository access, see the digital appendix at <a href="https://sebastienrousseau.com">sebastienrousseau.com</a>.</em></small></p>
