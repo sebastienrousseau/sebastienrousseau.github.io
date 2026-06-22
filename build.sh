@@ -114,6 +114,34 @@ for f in public/main.*.js public/sw.*.js public/theme-init.*.js public/highlight
   cp -f "$f" "public/$short"
 done
 
+# Append WCAG 2.2 AAA contrast overrides to highlight.css.
+#
+# The SSG bundles Base16 Ocean Dark as the syntect theme; its token
+# palette does not all clear 7:1 against its own bg (#2b303b). pa11y
+# under WCAG2AAA flags the comment colour (#65737e on #2b303b = 2.71:1)
+# and the error colour (#bf616a on #2b303b = 3.62:1) plus a handful of
+# others sitting between 4 and 6 against the same bg.
+#
+# Fix at the rendered-asset level: force the inner <pre style="bg=#2b303b">
+# wrapper to pure black (max contrast headroom), then brighten the two
+# tokens that still fall short. All other Base16 colours pass 7:1 on
+# pure black already. Idempotent: skipped if the override block is
+# already present. Both the bare name and the fingerprinted variant get
+# patched so SRI recomputation in postbuild.py produces a hash that
+# matches what the browser actually fetches.
+for css in public/highlight.css public/highlight.*.css; do
+  [[ -f "$css" ]] || continue
+  if ! grep -q 'pre code pre\[style\*="2b303b"\]' "$css"; then
+    cat >> "$css" <<'CSS'
+
+/* AAA contrast overrides for syntect Base16 Ocean Dark token colours. */
+pre code pre[style*="2b303b"]{background-color:#000!important}
+pre code pre[style*="2b303b"] span[style*="65737e"]{color:#aab8cc!important}
+pre code pre[style*="2b303b"] span[style*="bf616a"]{color:#ff8a93!important}
+CSS
+  fi
+done
+
 # Authority Playbook surfaces — fetch externally verifiable metrics first
 # (graceful fallback if any single fetch errors) so the case-study templates
 # can render aggregate numbers from the same source the homepage does.
