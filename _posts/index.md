@@ -305,6 +305,18 @@ site_software: "Static Site Generator, Rust"
 <div class="newsroom-grid feat-latest-grid">
 
 <article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-06-23-iso-20022-pain001-programmable-liquidity-autonomic-treasury-2026/index.html" title="From Pain.001 to Programmable Liquidity: ISO 20022 as the Autonomic Nervous System of Treasury in 2026">
+<img alt="Steel arteries of a modern clearing centre at dawn — symbolising ISO 20022 pain.001 and pacs.008 as the autonomic nervous system carrying programmable liquidity across global treasury, SWIFT MX, and CBPR+ rails" src="https://cloudcdn.pro/stocks/images/markus-spiske-FXFz-sW0uwo.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">ISO 20022 · Programmable Liquidity · CIB Treasury</span>
+<h3><a href="/2026-06-23-iso-20022-pain001-programmable-liquidity-autonomic-treasury-2026/index.html">From Pain.001 to Programmable Liquidity: ISO 20022 as the Autonomic Nervous System of Treasury in 2026</a></h3>
+<p class="newsroom-meta"><time datetime="2026-06-23">June 23, 2026</time></p>
+<p class="newsroom-excerpt">Five months before the November 2026 SWIFT MT/MX cut-over, 44% of banks are off-track. pain.001 has stopped being a wire format and become the heartbeat of a programmable liquidity stack — what an ISO-first canonical schema, reject-on-parse ingress, and pacs.008-native settlement look like in production.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-06-22-hsh-zero-downtime-cryptographic-stewardship-rust-banking-2026/index.html" title="Securing Password Management in Enterprise Banking: Multi-Algorithm Hashing and Upgrades with hsh">
 <img alt="Close-up of a developer terminal scrolling Rust compiler output — the visible discipline of a memory-safe, audit-able cryptographic substrate beneath an enterprise banking authentication estate" src="https://cloudcdn.pro/stocks/images/rustlogs.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
@@ -361,18 +373,6 @@ site_software: "Static Site Generator, Rust"
 <h3><a href="/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/index.html">The Wholesale Payments Index in 2026: ISO 20022, Tokenised Deposits, Real-Time Rails, and Cross-Border Settlement</a></h3>
 <p class="newsroom-meta"><time datetime="2026-06-06">June 6, 2026</time></p>
 <p class="newsroom-excerpt">An index framework for measuring wholesale-payments readiness in 2026: ISO 20022 structured-address compliance ahead of SWIFT's November 2026 milestone, tokenised-deposit settlement, BIS Project Agorá cross-border atomicity, real-time rail orchestration, and liquidity efficiency. Four percentages — structured-data completeness, rail-routing optimality, settlement-finality lag, and Agorá-corridor coverage — turn payment-operations posture into supervisory-ready evidence.</p>
-</div>
-</article>
-
-<article class="newsroom-card">
-<a class="newsroom-card-media" href="/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/index.html" title="The Cloud Native Banking Index in 2026: DORA, Platform Engineering, Sovereign Cloud, and Operational Resilience">
-<img alt="Circuit-board pattern resolving into a cityscape skyline — the visual register chosen for cloud-native banking: platform-engineering primitives stitched into the bank's operational fabric." src="https://cloudcdn.pro/api/transform?url=/stocks/images/quang-nguyen-vinh-2649403.webp&w=1600&format=webp&q=85" loading="lazy" decoding="async" width="600" height="600" />
-</a>
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Cloud Native Banking · DORA · Platform Engineering</span>
-<h3><a href="/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/index.html">The Cloud Native Banking Index in 2026: DORA, Platform Engineering, Sovereign Cloud, and Operational Resilience</a></h3>
-<p class="newsroom-meta"><time datetime="2026-06-05">June 5, 2026</time></p>
-<p class="newsroom-excerpt">An engineering blueprint for cloud-native banking in DORA audit phase. Five platform-engineering primitives — Kubernetes paved roads, Backstage portal, GitOps via ArgoCD, Open Policy Agent admission, OpenTelemetry end-to-end — produce Article 8 register evidence at the speed of the pipeline. Tested exit-execution annually for CTPP-dependent CIFs against BIA-derived RTO targets. Sovereign-cloud options (AWS European Sovereign Cloud, Microsoft EU Data Boundary, Bleu, Thales / S3NS) addressed as engineering decisions, not branding.</p>
 </div>
 </article>
 
