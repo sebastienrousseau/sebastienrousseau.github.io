@@ -305,6 +305,18 @@ site_software: "Static Site Generator, Rust"
 <div class="newsroom-grid feat-latest-grid">
 
 <article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-06-22-hsh-zero-downtime-cryptographic-stewardship-rust-banking-2026/index.html" title="Securing Password Management in Enterprise Banking: Multi-Algorithm Hashing and Upgrades with hsh">
+<img alt="Close-up of a developer terminal scrolling Rust compiler output — the visible discipline of a memory-safe, audit-able cryptographic substrate beneath an enterprise banking authentication estate" src="https://cloudcdn.pro/stocks/images/rustlogs.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Cryptographic Stewardship · Rust · Banking</span>
+<h3><a href="/2026-06-22-hsh-zero-downtime-cryptographic-stewardship-rust-banking-2026/index.html">Securing Password Management in Enterprise Banking: Multi-Algorithm Hashing and Upgrades with hsh</a></h3>
+<p class="newsroom-meta"><time datetime="2026-06-22">June 22, 2026</time></p>
+<p class="newsroom-excerpt">hsh is an open-source pure-Rust framework that migrates legacy password hashes to Argon2id with zero downtime via verify_and_upgrade, HSM-interlocked peppering, and a memory-safe supply chain — closing the cryptographic rot that DORA Article 5 now treats as board-accountable liability.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/index.html" title="CloudCDN: An Open-Source Blueprint for the AI-Native Edge in 2026">
 <img alt="Glowing data-centre rack stack at night — symbolising the inspectable, agent-controllable, open-source edge that CloudCDN is built on" src="https://cloudcdn.pro/stocks/images/alis-po-IdVNRv-5wJo.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
@@ -361,18 +373,6 @@ site_software: "Static Site Generator, Rust"
 <h3><a href="/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/index.html">The Cloud Native Banking Index in 2026: DORA, Platform Engineering, Sovereign Cloud, and Operational Resilience</a></h3>
 <p class="newsroom-meta"><time datetime="2026-06-05">June 5, 2026</time></p>
 <p class="newsroom-excerpt">An engineering blueprint for cloud-native banking in DORA audit phase. Five platform-engineering primitives — Kubernetes paved roads, Backstage portal, GitOps via ArgoCD, Open Policy Agent admission, OpenTelemetry end-to-end — produce Article 8 register evidence at the speed of the pipeline. Tested exit-execution annually for CTPP-dependent CIFs against BIA-derived RTO targets. Sovereign-cloud options (AWS European Sovereign Cloud, Microsoft EU Data Boundary, Bleu, Thales / S3NS) addressed as engineering decisions, not branding.</p>
-</div>
-</article>
-
-<article class="newsroom-card">
-<a class="newsroom-card-media" href="/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html" title="The Quantum-Safe Banking Index in 2026: Post-Quantum Cryptography, QKD, Crypto-Agility, and Harvest-Now-Decrypt-Later Risk">
-<img alt="The Quantum-Safe Banking Index 2026 index diagram for banks and financial institutions in 2026" src="https://cloudcdn.pro/api/transform?url=/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
-</a>
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Quantum Cryptography · Post-Quantum Cryptography · QKD</span>
-<h3><a href="/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html">The Quantum-Safe Banking Index in 2026: Post-Quantum Cryptography, QKD, Crypto-Agility, and Harvest-Now-Decrypt-Later Risk</a></h3>
-<p class="newsroom-meta"><time datetime="2026-06-04">June 4, 2026</time></p>
-<p class="newsroom-excerpt">An index framework for measuring quantum-safe banking readiness in 2026: cryptographic bill of materials, hybrid TLS deployment, NIST FIPS 203 / 204 / 205 migration progress, crypto-agility primitives, and harvest-now-decrypt-later exposure across long-lived confidential data. The Board-Level Quantum Scorecard defines four exact percentages — inventory completeness, HNDL exposure, NIST migration progress, crypto-agility readiness — that turn project statuses into supervisory-ready evidence.</p>
 </div>
 </article>
 

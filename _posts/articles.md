@@ -105,21 +105,33 @@ site_software: "Static Site Generator, Rust"
 <header class="newsroom-section-head"><p class="newsroom-kicker">FEATURED</p><h2>Latest story</h2></header>
 
 <article class="newsroom-featured">
-<a class="newsroom-featured-media" href="/2026-06-20-http-handle-zero-dependency-edge-ingress-banking-rust-2026/index.html" title="http-handle: High-Performance, Zero-Dependency Edge Ingress for Banking in 2026">
-<img alt="Abstract circuit-board cityscape at night — visualising the banking edge where kernel-level zero-copy transfers, mTLS handshakes, and JWT validation converge in a single statically linked binary" src="https://cloudcdn.pro/stocks/images/bit-cloud-GlqbGLCPnQ4.webp" loading="eager" fetchpriority="high" decoding="async" width="800" height="800" />
+<a class="newsroom-featured-media" href="/2026-06-22-hsh-zero-downtime-cryptographic-stewardship-rust-banking-2026/index.html" title="Securing Password Management in Enterprise Banking: Multi-Algorithm Hashing and Upgrades with hsh">
+<img alt="Close-up of a developer terminal scrolling Rust compiler output — the visible discipline of a memory-safe, audit-able cryptographic substrate beneath an enterprise banking authentication estate" src="https://cloudcdn.pro/stocks/images/rustlogs.webp" loading="eager" fetchpriority="high" decoding="async" width="800" height="800" />
 </a>
 <div class="newsroom-featured-body">
-<span class="newsroom-eyebrow">Http-Handle · Rust · Banking</span>
-<h3><a href="/2026-06-20-http-handle-zero-dependency-edge-ingress-banking-rust-2026/index.html" title="http-handle: High-Performance, Zero-Dependency Edge Ingress for Banking in 2026">http-handle: High-Performance, Zero-Dependency Edge Ingress for Banking in 2026</a></h3>
-<p class="newsroom-meta"><time datetime="2026-06-20">June 20, 2026</time> · Sebastien Rousseau</p>
-<p>The banking edge has a dependency problem. Every Nginx or Envoy instance that routes traffic between a client and a core banking service carries a dependency tree: OpenSSL builds, Lua modules,…</p>
-<p><a class="pill ghost" href="/2026-06-20-http-handle-zero-dependency-edge-ingress-banking-rust-2026/index.html" title="http-handle: High-Performance, Zero-Dependency Edge Ingress for Banking in 2026">Read the full story</a></p>
+<span class="newsroom-eyebrow">Hsh · Rust · Banking</span>
+<h3><a href="/2026-06-22-hsh-zero-downtime-cryptographic-stewardship-rust-banking-2026/index.html" title="Securing Password Management in Enterprise Banking: Multi-Algorithm Hashing and Upgrades with hsh">Securing Password Management in Enterprise Banking: Multi-Algorithm Hashing and Upgrades with hsh</a></h3>
+<p class="newsroom-meta"><time datetime="2026-06-22">June 22, 2026</time> · Sebastien Rousseau</p>
+<p>In the era of GPU-accelerated decryption and DORA mandates, cryptographic rot is a systemic risk. Every legacy PBKDF2 or scrypt hash resting in a banking database is a countdown to compromise. hsh changes the paradigm with zero-downtime, memory-safe upgrades...</p>
+<p><a class="pill ghost" href="/2026-06-22-hsh-zero-downtime-cryptographic-stewardship-rust-banking-2026/index.html" title="Securing Password Management in Enterprise Banking: Multi-Algorithm Hashing and Upgrades with hsh">Read the full story</a></p>
 </div>
 </article>
 
 <header class="newsroom-section-head"><p class="newsroom-kicker">ARCHIVE</p><h2>All news stories and articles</h2></header>
 
 <div class="newsroom-grid">
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-06-20-http-handle-zero-dependency-edge-ingress-banking-rust-2026/index.html" title="http-handle: High-Performance, Zero-Dependency Edge Ingress for Banking in 2026">
+<img alt="Abstract circuit-board cityscape at night — visualising the banking edge where kernel-level zero-copy transfers, mTLS handshakes, and JWT validation converge in a single statically linked binary" src="https://cloudcdn.pro/stocks/images/bit-cloud-GlqbGLCPnQ4.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Http-Handle · Rust · Banking</span>
+<h3><a href="/2026-06-20-http-handle-zero-dependency-edge-ingress-banking-rust-2026/index.html" title="http-handle: High-Performance, Zero-Dependency Edge Ingress for Banking in 2026">http-handle: High-Performance, Zero-Dependency Edge Ingress for Banking in 2026</a></h3>
+<p class="newsroom-meta"><time datetime="2026-06-20">June 20, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">The banking edge has a dependency problem. Every Nginx or Envoy instance that routes traffic between a client and a core banking service carries a dependency tree: OpenSSL builds, Lua modules,…</p>
+</div>
+</article>
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026/index.html" title="Turning Markdown into Accessible, SEO-Ready, Structured HTML with Rust in 2026">
