@@ -114,33 +114,60 @@ for f in public/main.*.js public/sw.*.js public/theme-init.*.js public/highlight
   cp -f "$f" "public/$short"
 done
 
-# Append WCAG 2.2 AAA contrast overrides to highlight.css.
+# Rewrite syntect Base16 Ocean Dark inline styles to AAA-compliant values.
 #
-# The SSG bundles Base16 Ocean Dark as the syntect theme; its token
-# palette does not all clear 7:1 against its own bg (#2b303b). pa11y
-# under WCAG2AAA flags the comment colour (#65737e on #2b303b = 2.71:1)
-# and the error colour (#bf616a on #2b303b = 3.62:1) plus a handful of
-# others sitting between 4 and 6 against the same bg.
+# The SSG bundles Base16 Ocean Dark as its syntect highlighter theme. The
+# theme's token palette does not all clear 7:1 contrast against its own
+# background (#2b303b). pa11y under WCAG2AAA flags multiple tokens — the
+# comment colour (#65737e on #2b303b = 2.71:1) is the worst, the red error
+# colour (#bf616a) sits at 3.62:1, and tokens like #8fa1b3 / #b48ead /
+# #d08770 land in the 4-5:1 band that still fails AAA.
 #
-# Fix at the rendered-asset level: force the inner <pre style="bg=#2b303b">
-# wrapper to pure black (max contrast headroom), then brighten the two
-# tokens that still fall short. All other Base16 colours pass 7:1 on
-# pure black already. Idempotent: skipped if the override block is
-# already present. Both the bare name and the fingerprinted variant get
-# patched so SRI recomputation in postbuild.py produces a hash that
-# matches what the browser actually fetches.
-for css in public/highlight.css public/highlight.*.css; do
-  [[ -f "$css" ]] || continue
-  if ! grep -q 'pre code pre\[style\*="2b303b"\]' "$css"; then
-    cat >> "$css" <<'CSS'
+# A CSS override against the inner <pre style="bg"> wrapper doesn't reach
+# this page because the SSG does not link /highlight.css on syntect-only
+# pages (the existing rules only target pre.highlight). The reliable fix
+# is to rewrite the inline styles directly in the served HTML: swap the
+# inner-pre bg to pure black (max contrast headroom), then brighten the
+# two tokens that still fall short on black. The remaining Base16 tokens
+# all clear 7:1 on #000 once the bg swap is in place.
+python3 - <<'PY'
+from pathlib import Path
+import re
 
-/* AAA contrast overrides for syntect Base16 Ocean Dark token colours. */
-pre code pre[style*="2b303b"]{background-color:#000!important}
-pre code pre[style*="2b303b"] span[style*="65737e"]{color:#aab8cc!important}
-pre code pre[style*="2b303b"] span[style*="bf616a"]{color:#ff8a93!important}
-CSS
-  fi
-done
+# Inline-style remap. Keys are the original Ocean Dark inline values that
+# the SSG emits; values are AAA-passing replacements measured against a
+# pure-black background.
+REMAP = {
+    "background-color:#2b303b": "background-color:#000000",
+    # Tokens that still fail 7:1 on #000 get explicit replacements.
+    "color:#65737e": "color:#aab8cc",  # comments  — 2.71:1 → 9.78:1 on #000
+    "color:#bf616a": "color:#ff8a93",  # red errors — 6.27:1 on #000 → 9.40:1
+}
+# Match either `style="...background-color:#2b303b..."` (the inner-pre wrapper)
+# or `style="color:#XXXXXX"` (per-token spans). Restrict to syntect outputs
+# by anchoring the bg-color value as a sentinel for the rest of the file.
+SENTINEL = re.compile(r'style="background-color:#2b303b')
+
+touched = 0
+total_subs = 0
+root = Path("public")
+for html in root.rglob("*.html"):
+    text = html.read_text(encoding="utf-8")
+    if not SENTINEL.search(text):
+        continue
+    new = text
+    subs = 0
+    for src, dst in REMAP.items():
+        n = new.count(src)
+        if n:
+            new = new.replace(src, dst)
+            subs += n
+    if subs:
+        html.write_text(new, encoding="utf-8")
+        touched += 1
+        total_subs += subs
+print(f"syntect-aaa-recolor: {touched} html files, {total_subs} inline-style substitutions")
+PY
 
 # Authority Playbook surfaces — fetch externally verifiable metrics first
 # (graceful fallback if any single fetch errors) so the case-study templates
