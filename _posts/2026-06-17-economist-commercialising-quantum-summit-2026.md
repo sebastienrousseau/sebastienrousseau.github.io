@@ -113,6 +113,7 @@ site_software: "Static Site Generator, Rust"
 
 
 
+
 <!-- lead-start -->
 <aside class="post-lead" aria-label="Article summary">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Boardroom takeaways from the Economist Impact 5th Annual Commercialising Quantum Global 2026 summit — $1.3B funding surge, no-regrets hybrid stacks, post-quantum cryptography migration urgency, quantum sensing commercialisation, and HSBC's directive that waiting is an unforced error.</p>

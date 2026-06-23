@@ -114,6 +114,7 @@ site_software: "Static Site Generator, Rust"
 
 
 
+
 <!-- lead-start -->
 <aside class="post-lead" aria-label="Article summary">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Pacs008 is an open-source Python library that automates ISO 20022 pacs.008 FI-to-FI customer credit transfer generation and validation — structured addresses, BAH head.001 wrapping, BIC/LEI/IBAN checksums, OpenTelemetry UETR tracing — built for the November 2026 SWIFT cutover.</p>

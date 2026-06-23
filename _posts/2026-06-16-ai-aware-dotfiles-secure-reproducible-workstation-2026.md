@@ -114,6 +114,7 @@ site_software: "Static Site Generator, Rust"
 
 
 
+
 <!-- lead-start -->
 <aside class="post-lead" aria-label="Article summary">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> AI-aware dotfiles are a secure, reproducible workstation pattern for the MCP era — declarative configuration via Chezmoi, SOPS/age secrets, SLSA Level 3 provenance, multi-shell parity, and bounded sandbox boundaries for local AI agents.</p>

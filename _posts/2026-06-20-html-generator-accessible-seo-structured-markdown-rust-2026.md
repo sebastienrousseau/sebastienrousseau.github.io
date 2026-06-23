@@ -110,6 +110,7 @@ excerpt: "In 2026, web content is consumed as much by AI search crawlers, LLM-ba
 
 
 
+
 <!-- lead-start -->
 <aside class="post-lead" aria-label="Article summary">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> HTML Generator is a Rust library that turns Markdown into WCAG-compliant, SEO-ready, JSON-LD-enriched HTML — accessibility-as-code, MathML and Mermaid support, and WebAssembly-sandboxed execution for safe enterprise publishing.</p>
