@@ -118,6 +118,7 @@ site_software: "Static Site Generator, Rust"
 
 
 
+
 <!-- lead-start -->
 <aside class="post-lead" aria-label="Article summary">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> A 2026 banking resilience index combining AI risk, cloud concentration, quantum-safe security, payment continuity, and critical third-party dependency.</p>

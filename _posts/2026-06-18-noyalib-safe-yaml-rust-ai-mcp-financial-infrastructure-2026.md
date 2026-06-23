@@ -113,6 +113,7 @@ site_software: "Static Site Generator, Rust"
 
 
 
+
 <!-- lead-start -->
 <aside class="post-lead" aria-label="Article summary">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> NoyaLib, a zero-unsafe Rust YAML 1.2 parser with 406/406 spec compliance, JSON-Schema validation, lossless CST and MCP/WASM bindings for financial infrastructure.</p>

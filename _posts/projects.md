@@ -116,7 +116,7 @@ site_software: "Static Site Generator, Rust"
   <span class="kpi-cell-label">GitHub stars</span>
 </div>
 <div class="kpi-cell">
-  <span class="kpi-cell-value">78</span>
+  <span class="kpi-cell-value">79</span>
   <span class="kpi-cell-label">Sigstore-signed articles</span>
 </div>
 <div class="kpi-cell">
