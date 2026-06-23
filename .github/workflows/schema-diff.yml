@@ -27,20 +27,20 @@ jobs:
       # behaviour, not the fetch depth. ci.yml's single-checkout pattern
       # works fine on v7, so the bump stays everywhere else.
       - name: Checkout HEAD
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           path: head
           fetch-depth: 0
 
       - name: Checkout base
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           ref: ${{ github.event.pull_request.base.sha }}
           path: base
           fetch-depth: 1
 
       - name: Cache cargo registry + git + ssg
-        uses: actions/cache@v5
+        uses: actions/cache@v6
         with:
           path: |
             ~/.cargo/registry
