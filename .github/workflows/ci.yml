@@ -25,13 +25,13 @@ jobs:
     outputs:
       pa11y-needed: ${{ steps.partition.outputs.pa11y-needed }}
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
 
       - name: Install Rust toolchain (cached)
         uses: dtolnay/rust-toolchain@stable
 
       - name: Cache cargo registry + git
-        uses: actions/cache@v5
+        uses: actions/cache@v6
         with:
           path: |
             ~/.cargo/registry
@@ -145,7 +145,7 @@ jobs:
       - name: Restore pa11y hash cache (read only)
         # Restore the cache so partition can decide what's already cached.
         # The actual save happens in the `finalise` job after pa11y passes.
-        uses: actions/cache/restore@v5
+        uses: actions/cache/restore@v6
         with:
           path: _data/pa11y-cache.json
           key: pa11y-cache-v1-${{ runner.os }}-${{ github.run_id }}
@@ -171,7 +171,7 @@ jobs:
           fi
 
       - name: Upload build artifact (public/ + pa11y configs + cache)
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v7
         with:
           name: build-output
           path: |
@@ -200,10 +200,10 @@ jobs:
       matrix:
         shard: [1, 2, 3, 4]
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
 
       - name: Download build artifact
-        uses: actions/download-artifact@v5
+        uses: actions/download-artifact@v8
         with:
           name: build-output
 
@@ -271,7 +271,7 @@ jobs:
 
       - name: Upload pa11y shard result
         if: always()
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v7
         with:
           name: pa11y-shard-${{ matrix.shard }}
           path: pa11y.shard.json
@@ -298,7 +298,7 @@ jobs:
     # build / lint / test / Lighthouse / pa11y signal.
     environment: ${{ github.ref == 'refs/heads/main' && 'github-pages' || '' }}
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
 
       - name: Setup Python
         uses: actions/setup-python@v6
@@ -315,13 +315,13 @@ jobs:
         run: npm install -g @lhci/cli@0.14.x
 
       - name: Download build artifact
-        uses: actions/download-artifact@v5
+        uses: actions/download-artifact@v8
         with:
           name: build-output
 
       - name: Download pa11y shard results
         if: needs.pa11y.result == 'success'
-        uses: actions/download-artifact@v5
+        uses: actions/download-artifact@v8
         with:
           pattern: pa11y-shard-*
           merge-multiple: true
@@ -370,7 +370,7 @@ jobs:
 
       - name: Save pa11y hash cache
         if: needs.pa11y.result == 'success' || needs.pa11y.result == 'skipped'
-        uses: actions/cache/save@v5
+        uses: actions/cache/save@v6
         with:
           path: _data/pa11y-cache.json
           key: pa11y-cache-v1-${{ runner.os }}-${{ github.run_id }}
