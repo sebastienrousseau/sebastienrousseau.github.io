@@ -17,24 +17,27 @@ jobs:
   diff:
     runs-on: ubuntu-latest
     steps:
+      # Pinned to actions/checkout v6 here (NOT v7). v7 broke the
+      # specific multi-checkout pattern this workflow uses (head/ +
+      # base/ subdirectories): the SSG `extract metadata` post-
+      # processing step fails with "No valid front matter found" on
+      # every PR opened after PR #243 bumped checkout v6→v7 across all
+      # workflows. PR #246's first attempt (fetch-depth: 0 with v7) did
+      # not fix it — the failure is structural to the v7 multi-checkout
+      # behaviour, not the fetch depth. ci.yml's single-checkout pattern
+      # works fine on v7, so the bump stays everywhere else.
       - name: Checkout HEAD
-        uses: actions/checkout@v7
+        uses: actions/checkout@v6
         with:
           path: head
           fetch-depth: 0
 
       - name: Checkout base
-        uses: actions/checkout@v7
+        uses: actions/checkout@v6
         with:
           ref: ${{ github.event.pull_request.base.sha }}
           path: base
-          # actions/checkout v7 broke the combination of `ref: <SHA>` +
-          # `path: <dir>` + `fetch-depth: 1`: the resulting base/ tree
-          # left the SSG unable to extract frontmatter on every PR
-          # opened after 2026-06-23 (when v6→v7 landed via PR #243).
-          # Full clone sidesteps the v7 quirk and only costs a few
-          # seconds on a runner with the cargo cache warm.
-          fetch-depth: 0
+          fetch-depth: 1
 
       - name: Cache cargo registry + git + ssg
         uses: actions/cache@v5
