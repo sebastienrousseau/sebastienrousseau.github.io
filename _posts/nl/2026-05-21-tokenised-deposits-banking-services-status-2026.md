@@ -102,6 +102,8 @@ excerpt: "Diensten rond getokeniseerde deposito's verschuiven in 2026 van onderz
 </aside>
 <!-- lead-end -->
 
+> **Samenvatting.** Getokeniseerde deposito's in 2026 zijn pre-schaal maar niet langer theoretisch: de Britse multibankpilot loopt tot medio 2026 met HSBC, NatWest, Lloyds, Barclays, Nationwide en Santander, terwijl JPMorgan's Kinexys ~2 miljard dollar per dag aan wholesale-afwikkeling verwerkt en HSBC de breedste multi-track-stack draait — TDS in vijf jurisdicties, Orion onder de DIGIT-pilot, getokeniseerd goud en post-quantumcryptografie van Quantinuum. De FDIC classificeert ze als depositoverplichtingen op DLT en onderscheidt ze expliciet van betalings-stablecoins, terwijl de BIS de stablecoin-markt op circa 315 miljard dollar schat — concurrentiedruk die het tempo bepaalt. Wat overblijft zijn drie bindende restricties: interoperabiliteit tussen gefragmenteerde DLT-stacks, juridische finaliteit over jurisdicties heen en yield-economie die bepaalt of getokeniseerde wallets corporate-saldi vasthouden of verliezen aan de eerste concurrent die wél rente betaalt.
+
 Getokeniseerde deposito's worden het belangrijkste antwoord van de banksector op stablecoins in het domein van digitaal geld. Ze behouden de depositorelatie met de commerciële bank en maken tegelijkertijd programmeerbaarheid, digitale wallets, atomaire afwikkeling en workflows voor getokeniseerde activa mogelijk. Lloyds Banking Group stelt dat digitale activa in het Verenigd Koninkrijk in 2026 mainstream worden en wijst getokeniseerde deposito's, digitale gilts en de Great British Tokenised Deposits aan als actieve sectorinitiatieven ([Lloyds Banking Group](https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html "Digital assets in 2026")).
 
 Dit stuk is afgebakend tot de wholesale-, institutionele en corporate-treasury-laag — het deel van het deposit-token-verhaal waar pilots live zijn en bancaire producten zich vormen. Retail getokeniseerde deposito's bestaan als onderzoekslijn en binnen de retailomhulling van de HSBC Gold Token, maar de inflectie van 2026 vindt plaats in transaction banking, niet in de dagelijkse betalingen aan consumenten.
@@ -289,10 +291,6 @@ Toezichthouders moeten het juridische karakter, de behandeling van depositoverze
 
 Bedrijven moeten niet wachten op een universeel netwerk. Ze zouden moeten beginnen met het in kaart brengen van use cases waarin programmeerbaar bankgeld fraude, afwikkelingsvertraging, reconciliatiewerk of vastzittende liquiditeit kan verminderen. **Action item:** pilot één concrete flow met meetbare KPI's — grensoverschrijdende liquiditeits-sweeps, intradaagse onderpandmobiliteit of DvP voor getokeniseerde gilts zijn de drie kandidaten met het hoogste signaal — en instrumenteer deze met de vragen rond faalmodi in gedachten (wat gebeurt er als het smart contract pauzeert; hoe gedraagt de getokeniseerde leg zich in een stress-scenario ten opzichte van de conventionele leg).
 
-## Conclusie
-
-Getokeniseerde deposito's staan in 2026 waar realtime betalingen een decennium geleden stonden: vanzelfsprekend in waarde, ongelijkmatig in implementatie en gegated door netwerkcoördinatie. De pilots draaien, de toonaangevende bankstacks (JPMorgan's Kinexys, HSBC's TDS + Orion, het Britse multibankprogramma) zijn productiewaardig binnen hun eigen perimeter, regulatoire categorieën verharden (FDIC, BIS, HKMA), en de technologiestack is geen bindende restrictie meer. Wat overblijft, is interoperabiliteit, juridische finaliteit en yield-economie — drie problemen die de sector kan oplossen, maar alleen als de banken 2026-2027 als standaard-bepalend venster behandelen. Het risico is niet dat getokeniseerde deposito's er niet komen; het is dat ze komen als twaalf onverenigbare walled gardens.
-
 ## Veelgestelde vragen
 
 **Zijn getokeniseerde deposito's hetzelfde als stablecoins?**
@@ -315,7 +313,11 @@ De technologie zelf is klaar. Schaal wordt geblokkeerd door drie niet-technische
 
 Een gedeelde kroon. JPMorgan is de onbetwiste leider in productievolume, met Kinexys by J.P. Morgan (formerly Onyx) dat de orde van 2 miljard dollar per dag aan wholesale corporate-transacties verwerkt ([JPMorgan](https://www.jpmorgan.com/kinexys "Kinexys by JPMorgan")). HSBC heeft de structureel meest diverse multi-track-stack: de HSBC Tokenised Deposit Service in Hongkong, Singapore, het Verenigd Koninkrijk, Luxemburg en de Verenigde Staten in USD/GBP/EUR/HKD/SGD; HSBC Orion als aangewezen infrastructuur voor de UK Digital Gilt Instrument (DIGIT)-pilot; de HSBC Gold Token die toegewezen fysieke goudstaven tokeniseert; aangevuld met cross-netwerk atomaire afwikkeling getest op Canton en Project Ensemble en post-quantum cryptografische beveiliging geïmplementeerd met Quantinuum ([HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")). De Britse multi-bank-pilot is de meest geloofwaardige live test van interbancaire interoperabiliteit.
 
-## Bronnen
+## Conclusie
+
+Getokeniseerde deposito's staan in 2026 waar realtime betalingen een decennium geleden stonden: vanzelfsprekend in waarde, ongelijkmatig in implementatie en gegated door netwerkcoördinatie. De pilots draaien, de toonaangevende bankstacks (JPMorgan's Kinexys, HSBC's TDS + Orion, het Britse multibankprogramma) zijn productiewaardig binnen hun eigen perimeter, regulatoire categorieën verharden (FDIC, BIS, HKMA), en de technologiestack is geen bindende restrictie meer. Wat overblijft, is interoperabiliteit, juridische finaliteit en yield-economie — drie problemen die de sector kan oplossen, maar alleen als de banken 2026-2027 als standaard-bepalend venster behandelen. Het risico is niet dat getokeniseerde deposito's er niet komen; het is dat ze komen als twaalf onverenigbare walled gardens.
+
+## Referenties
 
 - Lloyds Banking Group, (2026). [Digital assets in 2026: building the future of finance in the UK ⧉](https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html "Digital assets in 2026").
 - HSBC, (2026). [HSBC Tokenised Deposit Service ⧉](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service").

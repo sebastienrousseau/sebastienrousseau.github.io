@@ -108,7 +108,7 @@ Este texto se centra en la capa mayorista, institucional y de tesorería corpora
 
 ---
 
-> **Resumen ejecutivo / Conclusiones clave**
+> **Resumen ejecutivo / Puntos clave**
 >
 > - **Estado del mercado.** Los depósitos tokenizados en 2026 son pre-escala pero ya no son teóricos: hay pilotos en marcha, las propuestas bancarias se están definiendo y el programa multibancario del Reino Unido se extiende hasta mediados de 2026 con HSBC, NatWest, Lloyds, Barclays, Nationwide y Santander probando pagos en marketplaces, refinanciación hipotecaria y liquidación de activos digitales ([Lloyds Banking Group](https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html "Digital assets in 2026")).
 > - **Presión competitiva.** Las stablecoins son grandes y crecen (el BIS estima una capitalización de ~315.000 millones de dólares, ~98 % denominado en dólares a principios de abril de 2026) y fuerzan el calendario del deposit token. Ganan en alcance de ecosistema abierto, liquidez cripto-nativa y minorista global; los depósitos tokenizados ganan en confort regulatorio, seguro de depósitos y flujo de trabajo de tesorería ([BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate")).

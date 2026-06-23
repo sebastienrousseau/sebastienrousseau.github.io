@@ -111,7 +111,7 @@ excerpt: "2026年的代币化存款服务正从研究阶段迈向银行试点和
 
 ---
 
-> **执行摘要／主要要点**
+> **执行摘要。**
 >
 > - **市场状况。** 2026年的代币化存款仍处于规模化之前，但已不再停留在理论：试点已上线，银行方案正在成形，英国的多银行计划运行至2026年中期，HSBC、NatWest、Lloyds、Barclays、Nationwide和Santander正在测试市场支付、再抵押贷款和数字资产结算（[Lloyds Banking Group](https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html "Digital assets in 2026")）。
 > - **竞争压力。** 稳定币规模庞大且不断增长（BIS估计2026年4月初市值约3,150亿美元，约98%以USD计价），加快了存款代币的时间表。稳定币在开放生态触达、加密原生流动性和全球零售层面占优；代币化存款则在监管确定性、存款保险和司库工作流方面占优（[BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate")）。
