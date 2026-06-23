@@ -28,7 +28,13 @@ jobs:
         with:
           ref: ${{ github.event.pull_request.base.sha }}
           path: base
-          fetch-depth: 1
+          # actions/checkout v7 broke the combination of `ref: <SHA>` +
+          # `path: <dir>` + `fetch-depth: 1`: the resulting base/ tree
+          # left the SSG unable to extract frontmatter on every PR
+          # opened after 2026-06-23 (when v6→v7 landed via PR #243).
+          # Full clone sidesteps the v7 quirk and only costs a few
+          # seconds on a runner with the cargo cache warm.
+          fetch-depth: 0
 
       - name: Cache cargo registry + git + ssg
         uses: actions/cache@v5
