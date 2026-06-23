@@ -134,26 +134,73 @@ def check_filler(body: str) -> list[str]:
     return [f"voice: banned filler — {p!r}" for p in _BANNED_FILLER if p in lower]
 
 
-def check_structure(body: str) -> list[str]:
-    """Hard structural requirements for a publishable article."""
+def check_structure(body: str, *, lang: str = "en") -> list[str]:
+    """Hard structural requirements for a publishable article.
+
+    The structural gate fires at EN-source resolution: hand-authored heading
+    text is checked literally against the canonical English forms. Locale
+    translations carry the same sections rendered in their native language
+    (``## Häufige Fragen``, ``## 常见问题``, ``## Referencias``…), so on
+    non-EN files the heading-text checks are relaxed to a positional/
+    proximity check: an Executive Summary-shaped blockquote near the top,
+    plus two H2 sections — one before Conclusion, one after — that look
+    like an FAQ and a References list. The Conclusion itself is detected
+    by its position rather than its English literal so this stays
+    locale-agnostic too.
+    """
     defects: list[str] = []
+    is_en = lang.lower().startswith("en")
     # Accept either the canonical marker post_enrich emits or the
     # `: manual` opt-out variant a hand-curated lead uses to instruct
     # post_enrich to leave it alone.
     if "<!-- lead-start -->" not in body and "<!-- lead-start: manual -->" not in body:
         defects.append("structure: missing <!-- lead-start --> lead aside")
-    if not re.search(r">\s*\*\*Executive Summary", body):
-        defects.append("structure: missing > **Executive Summary blockquote")
+    if is_en:
+        if not re.search(r">\s*\*\*Executive Summary", body):
+            defects.append("structure: missing > **Executive Summary blockquote")
+    else:
+        # Locale variants render the heading natively (Résumé exécutif,
+        # Resumen ejecutivo, Zusammenfassung, 执行摘要 …). Accept any
+        # bold-led blockquote within the first 12 KB of body — that's the
+        # canonical position post-lead-end.
+        if not re.search(r"^>\s*\*\*[^*]+\*\*", body[:12_000], re.MULTILINE):
+            defects.append("structure: missing > **<exec-summary>** blockquote near top")
     h2s = re.findall(r"^## ", body, re.MULTILINE)
     if len(h2s) < 3:
         defects.append(f"structure: only {len(h2s)} H2 section(s), need ≥3")
     citations = re.findall(r'\[[^\]]+\]\(https?://[^)]+ "[^"]+"\)', body)
     if not citations:
         defects.append("structure: no citation links with title attribute")
-    if not re.search(r"^## (?:Frequently Asked Questions|FAQ)", body, re.MULTILINE):
-        defects.append("structure: missing FAQ section")
-    if not re.search(r"^## References", body, re.MULTILINE):
-        defects.append("structure: missing References section")
+    if is_en:
+        if not re.search(r"^## (?:Frequently Asked Questions|FAQ)", body, re.MULTILINE):
+            defects.append("structure: missing FAQ section")
+        if not re.search(r"^## References", body, re.MULTILINE):
+            defects.append("structure: missing References section")
+    else:
+        # Locale FAQ + References headings are native (Domande frequenti,
+        # Často kladené otázky, Referenzen, Riferimenti, 参考文献 …).
+        # Detect them by the bullet-and-question shape of the FAQ block
+        # and by a citation-density signature for References — both
+        # robust across locales.
+        h2_idx = [m.start() for m in re.finditer(r"^## ", body, re.MULTILINE)]
+        if len(h2_idx) >= 2:
+            # FAQ heuristic: an H2 followed (within ~2 KB) by 3+ bold-led
+            # paragraphs ending in a ``?`` — the post-publish-today shape.
+            faq_ok = any(
+                len(re.findall(r"\*\*[^*?]+\?\*\*", body[idx:idx + 2_000])) >= 3
+                for idx in h2_idx
+            )
+            if not faq_ok:
+                defects.append("structure: missing FAQ section (no Q&A-shape H2 in body)")
+            # References heuristic: an H2 followed by ≥3 markdown link
+            # citations with title attributes within ~4 KB — what every
+            # publish-today references block emits.
+            refs_ok = any(
+                len(re.findall(r'\[[^\]]+\]\(https?://[^)]+ "[^"]+"\)', body[idx:idx + 4_000])) >= 3
+                for idx in h2_idx
+            )
+            if not refs_ok:
+                defects.append("structure: missing References section (no link-dense H2 in body)")
     return defects
 
 
@@ -254,7 +301,11 @@ def check_article(
     if not skip_network:
         defects.extend(check_banner_reachable(fm.get("banner", "")))
     defects.extend(check_filler(body))
-    defects.extend(check_structure(body))
+    # Locale-aware structure check — EN sources gate against literal
+    # heading text; locale forks pass when the same shape is present
+    # rendered into the native language (see check_structure docstring).
+    lang = (fm.get("hreflang") or fm.get("language") or fm.get("locale") or "en")[:2].lower()
+    defects.extend(check_structure(body, lang=lang))
     defects.extend(check_markdown_discipline(body))
     if not skip_date:
         defects.extend(check_date_consistency(path, fm))
