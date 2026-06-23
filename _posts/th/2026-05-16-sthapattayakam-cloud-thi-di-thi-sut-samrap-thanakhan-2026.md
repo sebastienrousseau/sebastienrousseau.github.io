@@ -5,7 +5,7 @@ description: "สถาปัตยกรรมคลาวด์ในปี 20
 date: "May 16, 2026"
 language: "th-TH"
 locale: "th_TH"
-banner: "https://cloudcdn.pro/stock/images/cloud-architecture-2026-banner.webp"
+banner: "https://cloudcdn.pro/stocks/images/getty-images-dqHskSJDfe4.webp"
 banner_alt: "แผนภาพสถาปัตยกรรมคลาวด์หกเสาหลักสำหรับปี 2026 — AI-native, multi-cloud, serverless, edge, DevSecOps และการออกแบบที่ยั่งยืน พร้อมการซ้อนทับงานวิจัย CloudCDN edge"
 keywords: "สถาปัตยกรรมคลาวด์ 2026, โครงสร้างพื้นฐาน AI-native, multi-cloud, sovereign cloud, US CLOUD Act, Bleu, S3NS, AWS European Sovereign Cloud, sovereign AI, open-weight models, Llama 4, Mistral, confidential computing, serverless, edge computing, WebAssembly, Wasm, eBPF, Cilium, Tetragon, LEO satellite edge, DevSecOps, ศูนย์ข้อมูลที่ยั่งยืน, grid-aware computing, liquid cooling, Small Modular Reactor, SMR, นิวเคลียร์, Three Mile Island, Kairos Power, X-Energy, silicon photonics, AWS Bedrock, Google Vertex AI, Azure OpenAI Service, agentic commerce, multi-agent swarms, agentic unit economics, cryptographic agent identity, SPIFFE, SPIRE, algorithmic contagion, RAG poisoning, ความมั่นคง vector database, JPMorgan, Citi, GNN, deepfake fraud, HNDL, post-quantum cryptography, ML-KEM, ML-DSA, crypto-agility, QKD, Basel IV, cloud concentration risk, MCP security, CloudCDN, Sebastien Rousseau"
 ---
