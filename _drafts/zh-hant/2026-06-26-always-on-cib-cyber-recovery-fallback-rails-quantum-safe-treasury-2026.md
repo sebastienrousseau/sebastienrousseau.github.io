@@ -20,7 +20,7 @@ id: "https://sebastienrousseau.com/2026-06-26-always-on-cib-cyber-recovery-fallb
 image_alt: "Sebastien Rousseau 的黑白肖像"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "網路復原, 備援軌道, 營運韌性, DORA, 量子安全財務管理, 應變計畫, 多軌道, FHE, QKD, PQC, ICT 第三方風險, CIB, ISO 20022, RTGS, FedNow, SEPA Instant, RTP, T2, CHAPS, FIPS 203, FIPS 204, RTO, RPO, Basel III, SR 11-7, SM&CR"
 language: "zh-Hant"
 last_reviewed: "2026-06-26"
@@ -174,6 +174,6 @@ ISO 20022 之所以讓這一切能以架構而非即興方式運作,關鍵在此
 持續不停機不是口號,而是儀表板上的一個數字,由高階管理人背書、由監理機關驗證,並建構在足以撐過量子能力對手現身那一天的密碼學之上。
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="作者簡介"><img alt="Sebastien Rousseau 的肖像" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">資深銀行科技人,撰文聚焦於應用 AI、ISO 20022 遷移、金融服務的後量子密碼學,以及批發支付的結構性轉型。</span><span class="author-credentials">逾 20 年資歷,橫跨 HSBC 企業與投資銀行、PayPal、Barclays、Shazam、AKQA、Virgin Group。<a href="/about/index.html">完整簡介</a>&middot;<a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a>&middot;<a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="作者簡介"><img alt="Sebastien Rousseau 的肖像" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">資深銀行科技人,撰文聚焦於應用 AI、ISO 20022 遷移、金融服務的後量子密碼學,以及批發支付的結構性轉型。</span><span class="author-credentials">逾 20 年資歷,橫跨 HSBC 企業與投資銀行、PayPal、Barclays、Shazam、AKQA、Virgin Group。<a href="/about/index.html">完整簡介</a>&middot;<a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a>&middot;<a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">最後審閱日期 <time datetime="2026-06-26">2026-06-26</time>。</p>
 <!-- enrich-end -->

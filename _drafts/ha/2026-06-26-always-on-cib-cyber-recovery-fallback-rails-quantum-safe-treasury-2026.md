@@ -20,7 +20,7 @@ id: "https://sebastienrousseau.com/2026-06-26-always-on-cib-cyber-recovery-fallb
 image_alt: "Hoton baki da fari na Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "cyber recovery, fallback rails, juriya na aiki, DORA, treasury mai aminci ga quantum, contingency, multi-rail, FHE, QKD, PQC, ICT haɗarin ɓangare na uku, CIB, ISO 20022, RTGS, FedNow, SEPA Instant, RTP, T2, CHAPS, FIPS 203, FIPS 204, RTO, RPO, Basel III, SR 11-7, SM&CR"
 language: "ha-NG"
 last_reviewed: "2026-06-26"
@@ -174,7 +174,7 @@ Aikin yana da kankare. Lissafi ɓangarorin ICT na uku akan kowane rail na biya. 
 Aiki koyaushe ba taken ba ne. Lamba ce a kan dashboard, mai sa hannu daga babban manaja, tabbatacce daga mai sarrafawa, kuma an gina shi a kan cryptography wanda ya tsira a ranar da mai gaba mai iya quantum ya bayyana.
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Game da marubucin"><img alt="Hoton Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Babban masanin fasahar banki yana rubutu akan AI mai aiki, ƙaurawar ISO 20022, post-quantum cryptography don sabis na kuɗi, da canjin tsari na biyan kuɗi na wholesale.</span><span class="author-credentials">Shekaru 20+ a fadin HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Cikakken bayanin martaba</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Game da marubucin"><img alt="Hoton Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Babban masanin fasahar banki yana rubutu akan AI mai aiki, ƙaurawar ISO 20022, post-quantum cryptography don sabis na kuɗi, da canjin tsari na biyan kuɗi na wholesale.</span><span class="author-credentials">Shekaru 20+ a fadin HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Cikakken bayanin martaba</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">An sake duba na ƙarshe <time datetime="2026-06-26">2026-06-26</time>.</p>
 <!-- enrich-end -->
 </content>

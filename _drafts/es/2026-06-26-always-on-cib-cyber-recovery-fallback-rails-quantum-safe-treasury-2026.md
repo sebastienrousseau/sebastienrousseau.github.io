@@ -20,7 +20,7 @@ id: "https://sebastienrousseau.com/2026-06-26-always-on-cib-cyber-recovery-fallb
 image_alt: "Retrato en blanco y negro de Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "recuperación cibernética, vías de respaldo, resiliencia operacional, DORA, tesorería cuántico-segura, contingencia, multi-rail, FHE, QKD, PQC, riesgo ICT de terceros, CIB, ISO 20022, RTGS, FedNow, SEPA Instant, RTP, T2, CHAPS, FIPS 203, FIPS 204, RTO, RPO, Basel III, SR 11-7, SM&CR"
 language: "es-ES"
 last_reviewed: "2026-06-26"
@@ -174,6 +174,6 @@ El trabajo es concreto. Inventariar los terceros ICT en cada vía de pago. Levan
 Siempre operativo no es un eslogan. Es un número en un panel, firmado por un directivo senior, validado por un regulador y construido sobre criptografía que sobrevive el día en que aparece un adversario con capacidad cuántica.
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Sobre el autor"><img alt="Retrato de Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Tecnólogo bancario senior que escribe sobre IA aplicada, migración a ISO 20022, criptografía post-cuántica para servicios financieros y la transformación estructural de los pagos mayoristas.</span><span class="author-credentials">Más de 20 años entre HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA y Virgin Group. <a href="/about/index.html">Perfil completo</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Sobre el autor"><img alt="Retrato de Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Tecnólogo bancario senior que escribe sobre IA aplicada, migración a ISO 20022, criptografía post-cuántica para servicios financieros y la transformación estructural de los pagos mayoristas.</span><span class="author-credentials">Más de 20 años entre HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA y Virgin Group. <a href="/about/index.html">Perfil completo</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Última revisión <time datetime="2026-06-26">2026-06-26</time>.</p>
 <!-- enrich-end -->

@@ -20,7 +20,7 @@ id: "https://sebastienrousseau.com/2026-06-26-always-on-cib-cyber-recovery-fallb
 image_alt: "Sebastien Rousseau'nun siyah beyaz portresi"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "siber kurtarma, fallback rayları, operasyonel dayanıklılık, DORA, kuantum güvenli hazine, acil durum, çoklu ray, FHE, QKD, PQC, ICT üçüncü taraf riski, CIB, ISO 20022, RTGS, FedNow, SEPA Instant, RTP, T2, CHAPS, FIPS 203, FIPS 204, RTO, RPO, Basel III, SR 11-7, SM&CR"
 language: "tr-TR"
 last_reviewed: "2026-06-26"
@@ -174,6 +174,6 @@ Bunlar, DORA Madde 6 kanıtına, SM&CR üst yönetici sorumluluk beyanlarına ve
 Her zaman açık bir slogan değildir. Bir panoda bir sayıdır, üst yönetici tarafından imzalanır, düzenleyici tarafından doğrulanır ve kuantum yetkin bir saldırganın ortaya çıktığı günü hayatta tutan kriptografi üzerine inşa edilir.
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Yazar hakkında"><img alt="Sebastien Rousseau'nun portresi" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Uygulamalı AI, ISO 20022 göçü, finansal hizmetler için post-kuantum kriptografi ve toptan ödemelerin yapısal dönüşümü üzerine yazan üst düzey bir bankacılık teknoloğu.</span><span class="author-credentials">HSBC Ticari ve Yatırım Bankası, PayPal, Barclays, Shazam, AKQA, Virgin Group genelinde 20+ yıl. <a href="/about/index.html">Tam profil</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Yazar hakkında"><img alt="Sebastien Rousseau'nun portresi" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Uygulamalı AI, ISO 20022 göçü, finansal hizmetler için post-kuantum kriptografi ve toptan ödemelerin yapısal dönüşümü üzerine yazan üst düzey bir bankacılık teknoloğu.</span><span class="author-credentials">HSBC Ticari ve Yatırım Bankası, PayPal, Barclays, Shazam, AKQA, Virgin Group genelinde 20+ yıl. <a href="/about/index.html">Tam profil</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Son inceleme <time datetime="2026-06-26">2026-06-26</time>.</p>
 <!-- enrich-end -->
