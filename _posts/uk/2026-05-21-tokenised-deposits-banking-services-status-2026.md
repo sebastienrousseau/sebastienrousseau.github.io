@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/uk/2026-05-21-tokenised-deposits-banking-serv
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "токенізовані депозити 2026, tokenized deposits banking, депозитні токени, Great British Tokenised Deposits, Lloyds цифрові активи, stablecoins, комерційні банківські гроші, BIS stablecoins, Project Agora, уніфікований реєстр, Deutsche Bank цифрові гроші, CBDC, токенізовані гроші, цифрові гаманці, tokenised gilts"
 language: "uk"
 last_reviewed: "2026-05-21"
@@ -325,7 +325,7 @@ HSBC не ігнорує напрям стейблкоїнів повністю.
 - FDIC, (2026). [Вимоги та стандарти Закону GENIUS — запропоноване правило ⧉](https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted "FDIC proposed rule").
 - Cambridge Centre for Alternative Finance, (2026). [Токенізовані гроші: сценарії використання, сумісність та регулювання ⧉](https://www.jbs.cam.ac.uk/wp-content/uploads/2026/02/2026-ccaf-tokenised-money-use-cases-interoperability-and-regulation.pdf "Tokenised money report").
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Про автора"><img alt="Портрет Себастьяна Руссо" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Себастьян Руссо</a></strong><span class="author-card-bio">Старший банківський технолог, пише про прикладний ШІ, міграцію на ISO 20022, постквантову криптографію для фінансових послуг та структурну трансформацію оптових платежів.</span><span class="author-credentials">Понад 20 років у HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Повний профіль</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Про автора"><img alt="Портрет Себастьяна Руссо" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Себастьян Руссо</a></strong><span class="author-card-bio">Старший банківський технолог, пише про прикладний ШІ, міграцію на ISO 20022, постквантову криптографію для фінансових послуг та структурну трансформацію оптових платежів.</span><span class="author-credentials">Понад 20 років у HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Повний профіль</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Останній перегляд <time datetime="2026-05-21">2026-05-21</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Пов’язане читання</h2>

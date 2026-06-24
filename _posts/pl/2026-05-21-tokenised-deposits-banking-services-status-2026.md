@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/pl/2026-05-21-tokenised-deposits-banking-serv
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "tokenizowane depozyty 2026, tokenized deposits banking, deposit tokens, Great British Tokenised Deposits, Lloyds digital assets, stablecoins, pieniądz banku komercyjnego, BIS stablecoins, Project Agora, unified ledger, Deutsche Bank digital money, CBDC, tokenizowany pieniądz, cyfrowe portfele, tokenised gilts"
 language: "pl"
 last_reviewed: "2026-05-21"
@@ -325,7 +325,7 @@ Podzielona korona. JPMorgan jest niekwestionowanym liderem pod względem wolumen
 - FDIC, (2026). [Wymogi i standardy ustawy GENIUS — projekt zasad ⧉](https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted "FDIC proposed rule").
 - Cambridge Centre for Alternative Finance, (2026). [Pieniądz tokenizowany: przypadki użycia, interoperacyjność i regulacje ⧉](https://www.jbs.cam.ac.uk/wp-content/uploads/2026/02/2026-ccaf-tokenised-money-use-cases-interoperability-and-regulation.pdf "Tokenised money report").
 <!-- enrich-start -->
-<aside class="author-card" aria-label="O autorze"><img alt="Portret Sebastiena Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Starszy technolog bankowy, pisze o stosowanej sztucznej inteligencji, migracji do ISO 20022, kryptografii postkwantowej dla usług finansowych oraz strukturalnej transformacji płatności hurtowych.</span><span class="author-credentials">Ponad 20 lat doświadczenia w HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Pełny profil</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="O autorze"><img alt="Portret Sebastiena Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Starszy technolog bankowy, pisze o stosowanej sztucznej inteligencji, migracji do ISO 20022, kryptografii postkwantowej dla usług finansowych oraz strukturalnej transformacji płatności hurtowych.</span><span class="author-credentials">Ponad 20 lat doświadczenia w HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Pełny profil</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Ostatnia weryfikacja <time datetime="2026-05-21">2026-05-21</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Powiązane lektury</h2>

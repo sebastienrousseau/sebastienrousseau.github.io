@@ -20,7 +20,7 @@ id: "https://sebastienrousseau.com/2026-05-24-uk-payments-forward-plan-stablecoi
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "UK Payments Forward Plan 2026, stablecoins UK, tokenised deposits UK, open banking FCA, PSR FCA consolidation, AI agent payments UK, Wholesale Digital Markets Champion, Chris Woolard, payment services regulation"
 language: "en-GB"
 excerpt: "The UK Payments Forward Plan and April 2026 policy package set out a single framework for traditional payments, stablecoins, tokenised deposits, open banking, and agentic payments. The strategic question for banks is design discipline: which data, rails, controls, liabilities, and client workflows belong together — and how to evidence the orchestration to regulators."
@@ -271,7 +271,7 @@ Success should be measured by unit economics, resilience evidence, data quality,
 - Global Government Finance, (2026). [UK wholesale digital markets champion ⧉](https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/ "UK wholesale digital markets champion").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Last reviewed <time datetime="2026-06-23">2026-06-23</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Related reading</h2>

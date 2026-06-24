@@ -20,7 +20,7 @@ id: "https://sebastienrousseau.com/zh-hans/2026-05-16-2026-zuijia-yun-jichu-jiag
 image_alt: "Sebastien Rousseau 的黑白肖像"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "2026 云架构, AI 原生基础设施, 多云, 主权云, 美国 CLOUD 法案, Bleu, S3NS, AWS European Sovereign Cloud, 主权 AI, 开权重模型, Llama 4, Mistral, 机密计算, 无服务器, 边缘计算, WebAssembly, Wasm, eBPF, Cilium, Tetragon, LEO 卫星边缘, Starlink Enterprise, DevSecOps, 可持续数据中心, 电网感知计算, 液体冷却, 小型模块化反应堆, SMR, 核能, Three Mile Island, Kairos Power, X-Energy, 硅光子学, 共封装光学, NVIDIA Spectrum-X, AWS Bedrock, Google Vertex AI, Azure OpenAI Service, 代理式商业, 多代理群, 代理式单位经济学, 代理 FinOps, 密码代理身份, SPIFFE, SPIRE, 算法传染, RAG 中毒, 向量数据库安全, 数据溯源, Pinecone, Qdrant, Weaviate, Milvus, 代理式混沌工程, 数据引力, 出口 FinOps, HPC, GPU 存储, 持续财库, 无国界流动性, 实时支付, CBDC, eCNY, DREX, e-Rupee, BIS Project Agora, 数字欧元, 合成数据生成, 摩根大通多云, 花旗现代化, 图神经网络, 深度伪造欺诈, 现在收集未来解密, HNDL, 后量子密码学, ML-KEM, ML-DSA, 密码敏捷性, 量子密钥分发, QKD, Basel IV, 云集中风险, 操作风险 RWA, MCP 安全, 提示注入, 供应链攻击, CloudCDN, Cloudflare Workers, Durable Objects, WCAG-AA, Sebastien Rousseau"
 language: "zh-Hans"
 last_reviewed: "2026-05-16"

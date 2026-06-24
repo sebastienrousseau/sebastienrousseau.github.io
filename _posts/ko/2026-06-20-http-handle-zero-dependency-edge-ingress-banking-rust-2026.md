@@ -20,7 +20,7 @@ id: "https://sebastienrousseau.com/2026-06-20-http-handle-zero-dependency-edge-i
 image_alt: "Sebastien Rousseau의 흑백 초상화"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "http-handle, Rust 엣지 인그레스, 의존성 없는 프록시, 뱅킹 인프라, mTLS JWT, sendfile 제로 복사, ALPN HTTP3, DORA 컴플라이언스, 바젤 III, OTLP 관찰 가능성, 정적 바이너리, ARM64 뱅킹, 제로 트러스트 뱅킹, 경량 인그레스, Rust 뱅킹 보안"
 language: "ko-KR"
 last_reviewed: "2026-06-20"
@@ -316,7 +316,7 @@ Internet Engineering Task Force (2014). *RFC 7301: Transport Layer Security (TLS
 OpenTelemetry Authors (2024). *OpenTelemetry Protocol Specification (OTLP)*. Available at: [https://opentelemetry.io/docs/specs/otlp/](https://opentelemetry.io/docs/specs/otlp/)
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">응용 AI, ISO 20022 마이그레이션, 금융 서비스를 위한 포스트 양자 암호화, 도매 결제의 구조적 변환에 대해 저술하는 시니어 뱅킹 기술자.</span><span class="author-credentials">HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group에서 20년 이상. <a href="/about/index.html">전체 프로필</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">응용 AI, ISO 20022 마이그레이션, 금융 서비스를 위한 포스트 양자 암호화, 도매 결제의 구조적 변환에 대해 저술하는 시니어 뱅킹 기술자.</span><span class="author-credentials">HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group에서 20년 이상. <a href="/about/index.html">전체 프로필</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">최종 검토 <time datetime="2026-06-20">2026-06-20</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">관련 읽기</h2>

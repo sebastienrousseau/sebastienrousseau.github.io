@@ -18,7 +18,7 @@ id: "https://sebastienrousseau.com/es/2026-06-06-wholesale-payments-index-iso200
 image_alt: "Retrato en blanco y negro de Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "pagos mayoristas 2026, ISO 20022, depósitos tokenizados, Project Agorá, pagos transfronterizos, pagos en tiempo real, dirección estructurada, calidad de datos de pago"
 language: "es-ES"
 last_reviewed: "2026-06-06"
@@ -243,6 +243,6 @@ Medir preparación de datos estructurados, rechazos de pago, coste de reparació
 - Deutsche Bank, (2026). [Dinero digital: stablecoins, depósitos tokenizados y CBDC ⧉](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Dinero digital: stablecoins, depósitos tokenizados y CBDC").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Acerca del autor"><img alt="Retrato de Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Tecnólogo bancario sénior, escribe sobre IA aplicada, infraestructura de pagos, dinero tokenizado, ISO 20022, seguridad poscuántica, servicios financieros nativos en la nube y mercados digitales regulados.</span><span class="author-credentials">Más de 20 años en HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Perfil completo</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Acerca del autor"><img alt="Retrato de Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Tecnólogo bancario sénior, escribe sobre IA aplicada, infraestructura de pagos, dinero tokenizado, ISO 20022, seguridad poscuántica, servicios financieros nativos en la nube y mercados digitales regulados.</span><span class="author-credentials">Más de 20 años en HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Perfil completo</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Última revisión <time datetime="2026-06-06">2026-06-06</time>.</p>
 <!-- enrich-end -->

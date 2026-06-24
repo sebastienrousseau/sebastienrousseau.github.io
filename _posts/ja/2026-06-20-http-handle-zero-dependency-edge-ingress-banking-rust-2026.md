@@ -20,7 +20,7 @@ id: "https://sebastienrousseau.com/2026-06-20-http-handle-zero-dependency-edge-i
 image_alt: "Sebastien Rousseauの白黒ポートレート"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "http-handle, Rustエッジイングレス, 依存関係ゼロプロキシ, バンキングインフラ, mTLS JWT, sendfileゼロコピー, ALPN HTTP3, DORAコンプライアンス, バーゼルIII, OTLPオブザーバビリティ, 静的バイナリ, ARM64バンキング, ゼロトラストバンキング, 軽量イングレス, Rustバンキングセキュリティ"
 language: "ja-JP"
 last_reviewed: "2026-06-20"
@@ -316,7 +316,7 @@ Internet Engineering Task Force (2014). *RFC 7301: Transport Layer Security (TLS
 OpenTelemetry Authors (2024). *OpenTelemetry Protocol Specification (OTLP)*. Available at: [https://opentelemetry.io/docs/specs/otlp/](https://opentelemetry.io/docs/specs/otlp/)
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">応用AI、ISO 20022移行、金融サービス向けポスト量子暗号、ホールセール決済の構造的変革について執筆するシニアバンキングテクノロジスト。</span><span class="author-credentials">HSBC Commercial &amp; Investment Bank、PayPal、Barclays、Shazam、AKQA、Virgin Groupで20年以上。 <a href="/about/index.html">完全なプロフィール</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">応用AI、ISO 20022移行、金融サービス向けポスト量子暗号、ホールセール決済の構造的変革について執筆するシニアバンキングテクノロジスト。</span><span class="author-credentials">HSBC Commercial &amp; Investment Bank、PayPal、Barclays、Shazam、AKQA、Virgin Groupで20年以上。 <a href="/about/index.html">完全なプロフィール</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">最終レビュー <time datetime="2026-06-20">2026-06-20</time>。</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">関連記事</h2>

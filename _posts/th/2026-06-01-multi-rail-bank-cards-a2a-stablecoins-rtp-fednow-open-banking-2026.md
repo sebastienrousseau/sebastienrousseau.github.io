@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/th/2026-06-01-multi-rail-bank-cards-a2a-stabl
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "เลเยอร์ orchestration การชำระเงิน, FedNow vs RTP, FedNow vs ACH, การชำระบัญชี stablecoin, การชำระบัญชีแบบ atomic ด้วย USDC, ISO 20022 pacs.008, การโอนระหว่างบัญชี A2A, Open Banking APIs, สภาพคล่อง pre-funded, กับดักสภาพคล่อง 24/7, multi-rail bank 2026, เอนจินกำหนดเส้นทางการชำระเงิน, การกระทบยอด ERP"
 language: "th"
 last_reviewed: "2026-06-01"
@@ -263,7 +263,7 @@ site_software: "Static Site Generator, Rust"
 - Circle Internet Financial, (2026). [USDC Treasury & Reserves ⧉](https://www.circle.com/transparency "Circle transparency")
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="เกี่ยวกับผู้เขียน"><img alt="ภาพเหมือนของ Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">นักเทคโนโลยีธนาคารอาวุโสที่เขียนเกี่ยวกับ AI ประยุกต์ การย้ายระบบ ISO 20022 คริปโทกราฟีหลังควอนตัมสำหรับบริการทางการเงิน และการเปลี่ยนแปลงเชิงโครงสร้างของการชำระเงินค้าส่ง</span><span class="author-credentials">มากกว่า 20 ปีที่ HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">โปรไฟล์เต็ม</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="เกี่ยวกับผู้เขียน"><img alt="ภาพเหมือนของ Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">นักเทคโนโลยีธนาคารอาวุโสที่เขียนเกี่ยวกับ AI ประยุกต์ การย้ายระบบ ISO 20022 คริปโทกราฟีหลังควอนตัมสำหรับบริการทางการเงิน และการเปลี่ยนแปลงเชิงโครงสร้างของการชำระเงินค้าส่ง</span><span class="author-credentials">มากกว่า 20 ปีที่ HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">โปรไฟล์เต็ม</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">ตรวจสอบล่าสุด <time datetime="2026-06-01">2026-06-01</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">อ่านที่เกี่ยวข้อง</h2>

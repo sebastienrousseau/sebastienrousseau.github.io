@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/vi/2026-05-26-magnifica-humanitas-ai-quantum-
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "Magnifica Humanitas, Pope Leo XIV, thông điệp AI, đạo đức trí tuệ nhân tạo, đạo đức điện toán lượng tử, Rerum Novarum, Tháp Babel, công nghệ không trung tính, chủ nghĩa siêu nhân, chủ nghĩa hậu nhân, phẩm giá con người, mô thức công nghệ, tàu hỏa ô tô hạt nhân internet, lịch sử hoảng loạn đạo đức công nghệ, Lucy chuyển giao tri thức, hy vọng AI, EU AI Act, DORA, Anthropic, Sebastien Rousseau"
 language: "vi"
 layout: "report"
@@ -243,6 +243,6 @@ Lạc quan, nhưng không ngây thơ. Lập luận là tương lai của AI và 
 - Ascension Press, (2026). [Hướng dẫn đầy đủ về thông điệp đầu tiên của Giáo hoàng Lêô: Magnifica Humanitas ⧉](https://ascensionpress.com/blogs/articles/a-complete-guide-to-pope-leo-s-encyclical-magnificent-humanitas "Ascension — Guide to Magnifica Humanitas"). Ascension Press.
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Về tác giả"><img alt="Chân dung Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Chuyên gia công nghệ ngân hàng cấp cao, viết về AI ứng dụng, hạ tầng thanh toán, tiền được mã hóa token, ISO 20022, an ninh hậu lượng tử, dịch vụ tài chính cloud-native và thị trường số được quản lý.</span><span class="author-credentials">Hơn 20 năm kinh nghiệm tại HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Hồ sơ đầy đủ</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Về tác giả"><img alt="Chân dung Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Chuyên gia công nghệ ngân hàng cấp cao, viết về AI ứng dụng, hạ tầng thanh toán, tiền được mã hóa token, ISO 20022, an ninh hậu lượng tử, dịch vụ tài chính cloud-native và thị trường số được quản lý.</span><span class="author-credentials">Hơn 20 năm kinh nghiệm tại HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Hồ sơ đầy đủ</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Đã rà soát gần nhất <time datetime="2026-05-27">2026-05-27</time>.</p>
 <!-- enrich-end -->

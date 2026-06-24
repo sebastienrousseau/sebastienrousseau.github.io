@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/yo/2026-05-24-uk-payments-forward-plan-stable
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "UK Payments Forward Plan 2026, stablecoins UK, àwọn ìfowópamọ́ tókènì UK, ẹnu-ọ̀nà bankì FCA, ìṣọ̀kan PSR FCA, ìsanwó AI agent UK, Wholesale Digital Markets Champion, Chris Woolard, ìṣàkóso iṣẹ́-ìsanwó"
 language: "yo"
 excerpt: "UK Payments Forward Plan àti àkójọpọ̀ ìlànà April 2026 ṣe àlàyé àwòṣe ìṣọ̀kan kan fún ìsanwó ìbílẹ̀, stablecoins, àwọn ìfowópamọ́ tókènì, ẹnu-ọ̀nà bankì, àti ìsanwó alábòójútó. Ìbéèrè ìṣẹ̀ètò fún àwọn báńkì ni ìbáwí ìgbékalẹ̀: àwọn dátà, ọ̀nà, ìdarí, ojúṣe, àti ìṣàn iṣẹ́ oníbàárà wo ni ó yẹ kí ó wà papọ̀ — àti bí a ṣe lè jẹ́rìí ìpalọ́gun náà fún àwọn alábòójútó."
@@ -201,6 +201,6 @@ A gbọ́dọ̀ wọ̀n àṣeyọrí nípa ọrọ̀-ajé ọ̀kan-sí-ọ̀kan
 - Global Government Finance, (2026). [UK wholesale digital markets champion ⧉](https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/ "UK wholesale digital markets champion").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Nípa òǹkọ̀wé"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Onímọ̀ ẹ̀rọ báńkì àgbà tí ó ń kọ nípa AI tí a lo, ìgbékalẹ̀ ìsanwó, owó tókènì, ISO 20022, ààbò post-quantum, iṣẹ́ ìnáwó cloud-native, àti àwọn ọjà oníbàátì tí a ṣàkóso.</span><span class="author-credentials">Ọdún 20+ kọjá HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profaìlì kíkún</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Nípa òǹkọ̀wé"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Onímọ̀ ẹ̀rọ báńkì àgbà tí ó ń kọ nípa AI tí a lo, ìgbékalẹ̀ ìsanwó, owó tókènì, ISO 20022, ààbò post-quantum, iṣẹ́ ìnáwó cloud-native, àti àwọn ọjà oníbàátì tí a ṣàkóso.</span><span class="author-credentials">Ọdún 20+ kọjá HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profaìlì kíkún</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Àyẹ̀wò tó kẹ́yìn <time datetime="2026-05-24">2026-05-24</time>.</p>
 <!-- enrich-end -->

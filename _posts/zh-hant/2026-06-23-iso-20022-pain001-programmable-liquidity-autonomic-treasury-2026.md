@@ -20,7 +20,7 @@ id: "https://sebastienrousseau.com/2026-06-23-iso-20022-pain001-programmable-liq
 image_alt: "Sebastien Rousseau 的黑白肖像"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "ISO 20022, pain.001, pacs.008, MX, SWIFT, CBPR+, 可程式化流動性, 自律式國庫, BIS CPMI, 結構化地址, DORA, 代理式 AI, 跨境支付, CIB, MT103, MT202, RTGS, Basel III, SR 11-7, 國庫 API"
 language: "zh-Hant"
 last_reviewed: "2026-06-23"
@@ -250,6 +250,6 @@ RedCompass Labs(2025)。《下一步?2026 年起的 ISO 20022 截止期限》。
 SWIFT(2024)。《跨境支付與報告增強(CBPR+)使用指引》。取自:[https://www.swift.com/standards/iso-20022/iso-20022-programme](https://www.swift.com/standards/iso-20022/iso-20022-programme "SWIFT CBPR+ 使用指引")
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="關於作者"><img alt="Sebastien Rousseau 的肖像" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">資深銀行科技人,撰寫應用 AI、ISO 20022 遷移、金融服務後量子密碼學,以及批發支付結構性轉型相關主題。</span><span class="author-credentials">逾 20 年資歷,橫跨 HSBC 商業與投資銀行、PayPal、Barclays、Shazam、AKQA、Virgin Group。<a href="/about/index.html">完整個人檔案</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="關於作者"><img alt="Sebastien Rousseau 的肖像" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">資深銀行科技人,撰寫應用 AI、ISO 20022 遷移、金融服務後量子密碼學,以及批發支付結構性轉型相關主題。</span><span class="author-credentials">逾 20 年資歷,橫跨 HSBC 商業與投資銀行、PayPal、Barclays、Shazam、AKQA、Virgin Group。<a href="/about/index.html">完整個人檔案</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">最後審閱日期 <time datetime="2026-06-23">2026-06-23</time>。</p>
 <!-- enrich-end -->

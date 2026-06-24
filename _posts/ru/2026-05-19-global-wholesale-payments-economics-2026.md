@@ -19,7 +19,7 @@ id: "https://sebastienrousseau.com/ru/2026-05-19-global-wholesale-payments-econo
 image_alt: "Чёрно-белый портрет Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "оптовые платежи 2026, экономика мировых платежей, ISO 20022, RTGS, трансграничные платежи, BIS CPMI, FSB, Swift CBPR+, дорожная карта G20, валовые расчёты в реальном времени, Project Agorá, Project Mandala, Project Nexus, интероперабельность платежей, корреспондентский банкинг, фрагментация платежей, оптовая CBDC"
 language: "ru"
 last_reviewed: "2026-05-19"

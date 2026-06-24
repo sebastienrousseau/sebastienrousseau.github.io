@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/ja/2026-05-30-uk-wholesale-digital-markets-to
 image_alt: "Sebastien Rousseau のモノクロ・ポートレート"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "英国ホールセール・デジタル市場 2026, Wholesale Digital Markets Champion, トークン化ギルト, UK gilts, DLT 決済, BoE DSS サンドボックス, Project Guardian, SDX, Project Agorá, アトミック決済, トークン化現金, シティ"
 language: "ja"
 excerpt: "英国 Wholesale Digital Markets Champion 制度は、トークン化ギルト、DLT 決済、デジタル・ホールセール金融を国家競争力プロジェクトに位置づける。2026 年の戦略課題は設計規律であり、どのトークン化資産をどのプラットフォームに載せ、決済リスクをどのようにエビデンス化し、シンガポール・スイス・フランクフルトに対しシティのホールセール役割をどう防衛するかが問われる。"
@@ -235,7 +235,7 @@ Regulated Liability Network は、複数の規制対象機関が発行するト�
 - Global Government Finance, (2026). [英国ホールセール・デジタル市場チャンピオン ⧉](https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/ "UK wholesale digital markets champion").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="著者について"><img alt="Sebastien Rousseau のポートレート" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">応用 AI、ISO 20022 移行、金融サービスにおけるポスト量子暗号、ホールセール決済の構造的変革について執筆するシニア銀行テクノロジスト。</span><span class="author-credentials">HSBC コマーシャル&amp;インベストメントバンク、PayPal、Barclays、Shazam、AKQA、Virgin Group を横断する 20 年以上の経験。<a href="/about/index.html">プロフィール全体</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="著者について"><img alt="Sebastien Rousseau のポートレート" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">応用 AI、ISO 20022 移行、金融サービスにおけるポスト量子暗号、ホールセール決済の構造的変革について執筆するシニア銀行テクノロジスト。</span><span class="author-credentials">HSBC コマーシャル&amp;インベストメントバンク、PayPal、Barclays、Shazam、AKQA、Virgin Group を横断する 20 年以上の経験。<a href="/about/index.html">プロフィール全体</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">最終確認 <time datetime="2026-05-30">2026-05-30</time>。</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">関連記事</h2>

@@ -20,7 +20,7 @@ id: "https://sebastienrousseau.com/2026-06-20-http-handle-zero-dependency-edge-i
 image_alt: "Àwòrán dúdú àti funfun ti Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "http-handle, Rust edge ingress, proxy laisi gbára, àkúnya bankì, mTLS JWT, sendfile zero-copy, ALPN HTTP3, ìbámu DORA, Basel III, akiyesi OTLP, binary ìpépe, ARM64 bankì, zero trust bankì, ingress ìwúwo kékeré, aabo bankì Rust"
 language: "yo-NG"
 last_reviewed: "2026-06-20"

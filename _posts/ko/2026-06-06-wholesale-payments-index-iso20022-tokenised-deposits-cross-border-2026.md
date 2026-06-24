@@ -18,7 +18,7 @@ id: "https://sebastienrousseau.com/ko/2026-06-06-wholesale-payments-index-iso200
 image_alt: "Sebastien Rousseau의 흑백 인물 사진"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "거액 결제 2026, ISO 20022, 토큰화 예금, Project Agorá, 국경 간 결제, 실시간 결제, 구조화 주소 데이터, 결제 데이터 품질"
 language: "ko-KR"
 last_reviewed: "2026-06-06"
@@ -243,6 +243,6 @@ sequenceDiagram
 - Deutsche Bank, (2026). [Digital Money: stablecoins, tokenised deposits and CBDCs ⧉](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money: stablecoins, tokenised deposits and CBDCs").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="저자 소개"><img alt="Sebastien Rousseau의 인물 사진" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">응용 AI, 결제 인프라, 토큰화 자금, ISO 20022, 양자내성 보안, 클라우드 네이티브 금융 서비스, 규제 디지털 시장에 관해 집필하는 시니어 뱅킹 기술 전문가입니다.</span><span class="author-credentials">HSBC 상업·투자은행, PayPal, Barclays, Shazam, AKQA, Virgin Group을 아우르는 20년 이상의 경력. <a href="/about/index.html">전체 프로필</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="저자 소개"><img alt="Sebastien Rousseau의 인물 사진" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">응용 AI, 결제 인프라, 토큰화 자금, ISO 20022, 양자내성 보안, 클라우드 네이티브 금융 서비스, 규제 디지털 시장에 관해 집필하는 시니어 뱅킹 기술 전문가입니다.</span><span class="author-credentials">HSBC 상업·투자은행, PayPal, Barclays, Shazam, AKQA, Virgin Group을 아우르는 20년 이상의 경력. <a href="/about/index.html">전체 프로필</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">최종 검토 <time datetime="2026-06-06">2026-06-06</time>.</p>
 <!-- enrich-end -->

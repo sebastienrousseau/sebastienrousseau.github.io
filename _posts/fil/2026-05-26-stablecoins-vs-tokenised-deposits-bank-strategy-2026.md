@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/fil/2026-05-26-stablecoins-vs-tokenised-depos
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "stablecoins 2026, tokenized deposits, deposito ng bangko, GENIUS Act, JPM Coin, deposit tokens, reserba ng stablecoin, pondo ng bangko, digital na pera"
 language: "fil"
 excerpt: "Nagsasanib ang stablecoins at tokenized deposits sa programmable settlement ngunit naiiba pa rin sa balance sheet, legal, likido, at modelo ng tiwala. Ang 2026 estratehikong tanong para sa mga bangko ay disiplina sa disenyo — aling modelo ng pera ang magdadala ng aling workflow ng kliyente — at paano ipagtatanggol ang deposit franchise, settlement role, at regulated brand laban sa kompetisyon ng pribadong issuer."
@@ -201,6 +201,6 @@ Dapat sukatin ang tagumpay sa pamamagitan ng unit economics, ebidensya ng resili
 - GOV.UK, (2026). [UK fintech backed to embrace future payments technology ⧉](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Tungkol sa may-akda"><img alt="Larawan ni Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior na teknologist sa pagbabangko na sumusulat tungkol sa applied AI, imprastraktura ng pagbabayad, tokenisadong pera, ISO 20022, post-quantum security, cloud-native na serbisyong pinansyal, at regulado digital markets.</span><span class="author-credentials">Mahigit 20 taon sa HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Buong profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Tungkol sa may-akda"><img alt="Larawan ni Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior na teknologist sa pagbabangko na sumusulat tungkol sa applied AI, imprastraktura ng pagbabayad, tokenisadong pera, ISO 20022, post-quantum security, cloud-native na serbisyong pinansyal, at regulado digital markets.</span><span class="author-credentials">Mahigit 20 taon sa HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Buong profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Huling sinuri <time datetime="2026-05-26">2026-05-26</time>.</p>
 <!-- enrich-end -->

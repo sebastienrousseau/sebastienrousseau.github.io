@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/sv/2026-05-28-digital-assets-tokenisation-sta
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "digitala tillgångar 2026, tokeniserade reala tillgångar, stablecoins bank, tokeniserade insättningar, förvaring digitala tillgångar, DLT bank, avvecklingsinfrastruktur, säkerhetsmobilitet, programmerbara pengar, bankstrategi digitala tillgångar"
 language: "sv"
 excerpt: "Digitala tillgångar är inte längre en innovationssatsning. De är en arkitekturfråga för avveckling, förvaring och balansräkning. Krypto är en tillgångsklass på cirka 3 biljoner dollar, stablecoins har nått ~300 miljarder dollar, och tokeniserade reala tillgångar växte ~300 % under 2025. Bankernas strategiska uppgift 2026 är inte om de ska engagera sig, utan hur de utformar infrastruktur, kontroller och styrning för en värld där pengar, tillgångar och avveckling blir programmerbara."
@@ -305,7 +305,7 @@ Genom intäkter som fångats från adresserbara pooler, kostnad för drift med d
 - Sebastien Rousseau, (2026). [Agentisk ingenjörskonst för banker ⧉](https://sebastienrousseau.com/2026-05-17-agentic-engineering-banks-blueprint-2026 "Agentisk ingenjörskonst").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Om författaren"><img alt="Porträtt av Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior bankteknikspecialist som skriver om tillämpad AI, betalningsinfrastruktur, tokeniserade pengar, ISO 20022, postkvantsäkerhet, molnbaserade finansiella tjänster och reglerade digitala marknader.</span><span class="author-credentials">20+ år inom HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Fullständig profil</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Om författaren"><img alt="Porträtt av Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior bankteknikspecialist som skriver om tillämpad AI, betalningsinfrastruktur, tokeniserade pengar, ISO 20022, postkvantsäkerhet, molnbaserade finansiella tjänster och reglerade digitala marknader.</span><span class="author-credentials">20+ år inom HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Fullständig profil</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Senast granskad <time datetime="2026-05-28">2026-05-28</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Relaterad läsning</h2>

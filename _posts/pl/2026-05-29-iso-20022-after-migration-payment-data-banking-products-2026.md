@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/pl/2026-05-29-iso-20022-after-migration-payme
 image_alt: "Czarno-biały portret Sebastiena Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "ISO 20022 2026, adres strukturalny, CBPR+, produkty danych płatniczych, kody celu płatności, treasury korporacyjne, uzgadnianie, sankcyjne screening, wykrywanie fraudów"
 language: "pl"
 excerpt: "ISO 20022 po migracji to nie zamknięcie projektu, lecz początek szansy na produkty danych. Adresy strukturalne, kody celu, dane faktur i bogate zdarzenia statusowe stają się produktami uzgadniania, fraudów, płynności i zgodności. Pytanie 2026 to dyscyplina projektowa: które dane płatnicze niosą który proces klienta, wycenione dla której korporacji."
@@ -201,6 +201,6 @@ Sukces należy mierzyć ekonomiką jednostkową, dowodami odporności, jakości�
 - J.P. Morgan, (2026). [Payments Outlook: Five Trends Powering Payments in 2026 ⧉](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="O autorze"><img alt="Portret Sebastiena Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist piszący o stosowanej AI, infrastrukturze płatniczej, pieniądzu tokenizowanym, ISO 20022, bezpieczeństwie post-kwantowym, cloud-native usługach finansowych i regulowanych rynkach cyfrowych.</span><span class="author-credentials">Ponad 20 lat doświadczenia w HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Pełny profil</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="O autorze"><img alt="Portret Sebastiena Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist piszący o stosowanej AI, infrastrukturze płatniczej, pieniądzu tokenizowanym, ISO 20022, bezpieczeństwie post-kwantowym, cloud-native usługach finansowych i regulowanych rynkach cyfrowych.</span><span class="author-credentials">Ponad 20 lat doświadczenia w HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Pełny profil</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Ostatnia weryfikacja <time datetime="2026-05-29">2026-05-29</time>.</p>
 <!-- enrich-end -->

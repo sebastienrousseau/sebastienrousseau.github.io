@@ -20,7 +20,7 @@ id: "https://sebastienrousseau.com/2026-06-16-ai-aware-dotfiles-secure-reproduci
 image_alt: "ภาพถ่ายขาวดำของ Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "dotfiles, Chezmoi, MCP, Model Context Protocol, SLSA, SOPS, การเข้ารหัส age, คอนฟิกเชิงประกาศ, เวิร์กสเตชันนักพัฒนา, DORA Article 5, NIST CSF 2.0, ความปลอดภัยห่วงโซ่อุปทาน, AI เชิงเอเจนต์, ความเข้ากันได้หลายเชลล์, Zsh, Fish, Nushell"
 language: "th-TH"
 last_reviewed: "2026-06-16"
@@ -261,7 +261,7 @@ Bash, Zsh, Fish, Nushell และ PowerShell — ด้วยความเข
 - GitHub, (2026). *dotfiles open-source repository*. ดูได้ที่: [ที่เก็บโค้ด dotfiles ⧉](https://github.com/sebastienrousseau/dotfiles "ที่เก็บโค้ด dotfiles").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="เกี่ยวกับผู้เขียน"><img alt="ภาพถ่ายของ Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">นักเทคโนโลยีธนาคารอาวุโส เขียนเกี่ยวกับ AI ประยุกต์ การย้ายระบบไป ISO 20022 การเข้ารหัสหลังควอนตัมสำหรับบริการทางการเงิน และการเปลี่ยนแปลงเชิงโครงสร้างของการชำระเงินรายใหญ่</span><span class="author-credentials">ประสบการณ์กว่า 20 ปี ที่ HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group <a href="/about/index.html">โปรไฟล์เต็ม</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="เกี่ยวกับผู้เขียน"><img alt="ภาพถ่ายของ Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">นักเทคโนโลยีธนาคารอาวุโส เขียนเกี่ยวกับ AI ประยุกต์ การย้ายระบบไป ISO 20022 การเข้ารหัสหลังควอนตัมสำหรับบริการทางการเงิน และการเปลี่ยนแปลงเชิงโครงสร้างของการชำระเงินรายใหญ่</span><span class="author-credentials">ประสบการณ์กว่า 20 ปี ที่ HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group <a href="/about/index.html">โปรไฟล์เต็ม</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">ทบทวนล่าสุด <time datetime="2026-06-16">2026-06-16</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">อ่านเพิ่มเติม</h2>

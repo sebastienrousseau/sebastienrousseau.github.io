@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/es/2026-06-04-quantum-safe-banking-index-pqc-
 image_alt: "Retrato en blanco y negro de Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "banca quantum-safe 2026, criptografía poscuántica bancos, NIST FIPS 203, ML-KEM, ML-DSA, SLH-DSA, criptoagilidad, QKD banca"
 language: "es-ES"
 last_reviewed: "2026-06-04"
@@ -241,6 +241,6 @@ No. El NIST ha animado a los administradores a empezar a integrar los primeros e
 - NIST, (2026). [Primeros tres estándares finalizados de cifrado poscuántico ⧉](https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards "Primeros tres estándares finalizados de cifrado poscuántico").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Acerca del autor"><img alt="Retrato de Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Tecnólogo bancario sénior, escribe sobre IA aplicada, infraestructura de pagos, dinero tokenizado, ISO 20022, seguridad poscuántica, servicios financieros nativos en la nube y mercados digitales regulados.</span><span class="author-credentials">Más de 20 años en HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Perfil completo</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Acerca del autor"><img alt="Retrato de Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Tecnólogo bancario sénior, escribe sobre IA aplicada, infraestructura de pagos, dinero tokenizado, ISO 20022, seguridad poscuántica, servicios financieros nativos en la nube y mercados digitales regulados.</span><span class="author-credentials">Más de 20 años en HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Perfil completo</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Última revisión <time datetime="2026-06-04">2026-06-04</time>.</p>
 <!-- enrich-end -->

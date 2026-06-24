@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/pl/2026-06-03-agentic-ai-index-banks-autonomy
 image_alt: "Czarno-biały portret Sebastiena Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "agentowa AI bankowość 2026, agenci AI banki, ład AI usługi finansowe, autonomiczne przepływy bankowe, zarządzanie ryzykiem modeli, audytowalność AI"
 language: "pl"
 last_reviewed: "2026-06-03"
@@ -266,6 +266,6 @@ Cztery liczby na przepływ pracy: poziom autonomii, kompletność śladu audytow
 - Cloud Native Computing Foundation, (2018). [Open Policy Agent (OPA) ⧉](https://www.openpolicyagent.org/ "Open Policy Agent — kontrola oparta na politykach dla środowisk cloud native").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="O autorze"><img alt="Portret Sebastiena Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist piszący o stosowanej AI, infrastrukturze płatności, pieniądzu tokenizowanym, ISO 20022, bezpieczeństwie postkwantowym, usługach finansowych cloud-native i regulowanych rynkach cyfrowych.</span><span class="author-credentials">Ponad 20 lat doświadczenia w HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Pełny profil</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="O autorze"><img alt="Portret Sebastiena Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist piszący o stosowanej AI, infrastrukturze płatności, pieniądzu tokenizowanym, ISO 20022, bezpieczeństwie postkwantowym, usługach finansowych cloud-native i regulowanych rynkach cyfrowych.</span><span class="author-credentials">Ponad 20 lat doświadczenia w HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Pełny profil</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Ostatnia weryfikacja <time datetime="2026-06-03">2026-06-03</time>.</p>
 <!-- enrich-end -->

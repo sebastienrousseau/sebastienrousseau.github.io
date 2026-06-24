@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/zh-hant/2026-05-29-iso-20022-after-migration-
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "ISO 20022 2026, 結構化地址, CBPR+, 支付資料產品, 用途代碼, 企業財資, 對帳, 制裁篩查, 詐欺偵測, pacs.008, pain.001"
 language: "zh-hant"
 excerpt: "ISO 20022 遷移之後並非專案結案,而是支付資料產品商機的起點。結構化地址、用途代碼、發票明細與豐富的狀態事件,將轉化為對帳、詐欺、流動性與合規產品。2026 年的關鍵問題是設計紀律:哪一筆支付資料承載哪一條客戶工作流,並針對哪一類企業客戶定價。"
@@ -201,6 +201,6 @@ ISO 20022 遷移之後最終是一個架構問題。勝出的機構不會是試�
 - J.P. Morgan, (2026). [Payments Outlook: Five Trends Powering Payments in 2026 ⧉](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="關於作者"><img alt="Sebastien Rousseau 肖像" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">資深銀行技術專家,撰寫主題涵蓋應用 AI、支付基礎建設、代幣化貨幣、ISO 20022、後量子安全、雲端原生金融服務,以及受監管的數位市場。</span><span class="author-credentials">在 HSBC Commercial &amp; Investment Bank、PayPal、Barclays、Shazam、AKQA、Virgin Group 擁有 20 多年經驗。<a href="/about/index.html">完整簡介</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau/" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="關於作者"><img alt="Sebastien Rousseau 肖像" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">資深銀行技術專家,撰寫主題涵蓋應用 AI、支付基礎建設、代幣化貨幣、ISO 20022、後量子安全、雲端原生金融服務,以及受監管的數位市場。</span><span class="author-credentials">在 HSBC Commercial &amp; Investment Bank、PayPal、Barclays、Shazam、AKQA、Virgin Group 擁有 20 多年經驗。<a href="/about/index.html">完整簡介</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau/" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">最近審閱 <time datetime="2026-05-29">2026-05-29</time>。</p>
 <!-- enrich-end -->

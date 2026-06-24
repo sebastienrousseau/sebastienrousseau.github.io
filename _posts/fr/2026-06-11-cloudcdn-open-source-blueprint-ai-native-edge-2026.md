@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/fr/2026-06-11-cloudcdn-open-source-feuille-de
 image_alt: "Portrait en noir et blanc de Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "CloudCDN, edge nativement IA, CDN open source, serveur MCP, Cloudflare Workers, Durable Objects, zéro confiance, WebAuthn, URLs signées, SLSA Level 3, DORA, plan de contrôle edge"
 language: "fr"
 last_reviewed: "2026-06-11"
@@ -269,6 +269,6 @@ Non. Les CDN propriétaires à code fermé s'appuient sur la sécurité par l'ob
 - GitHub, (2026). [Dépôt cloudcdn.pro ⧉](https://github.com/sebastienrousseau/cloudcdn.pro "Dépôt cloudcdn.pro").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="À propos de l'auteur"><img alt="Portrait de Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Technologue bancaire senior, écrivant sur l'IA appliquée, les infrastructures de paiement, la monnaie tokenisée, ISO 20022, la sécurité post-quantique, les services financiers cloud-native et les marchés numériques régulés.</span><span class="author-credentials">Plus de 20 ans à HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profil complet</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="À propos de l'auteur"><img alt="Portrait de Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Technologue bancaire senior, écrivant sur l'IA appliquée, les infrastructures de paiement, la monnaie tokenisée, ISO 20022, la sécurité post-quantique, les services financiers cloud-native et les marchés numériques régulés.</span><span class="author-credentials">Plus de 20 ans à HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profil complet</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Dernière révision <time datetime="2026-06-11">11 juin 2026</time>.</p>
 <!-- enrich-end -->

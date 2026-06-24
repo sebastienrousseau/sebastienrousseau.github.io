@@ -20,7 +20,7 @@ id: "https://sebastienrousseau.com/2026-06-17-economist-commercialising-quantum-
 image_alt: "Potret Hitam Putih Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "Commercialising Quantum Global 2026, KTT Economist Impact, kriptografi pasca-kuantum, NIST ML-KEM, harvest-now decrypt-later, SNDL, HSBC kuantum, Philip Intallura, penginderaan kuantum, navigasi independen GPS, NQCC, EU Quantum Act, Quantcore, hadiah qBIG, Lord Vallance, hibrida kuantum-klasik, DORA Pasal 6"
 language: "id-ID"
 last_reviewed: "2026-06-17"

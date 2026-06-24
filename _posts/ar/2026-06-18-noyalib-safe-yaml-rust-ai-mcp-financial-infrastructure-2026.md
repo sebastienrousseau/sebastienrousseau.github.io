@@ -20,7 +20,7 @@ id: "https://sebastienrousseau.com/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-fina
 image_alt: "صورة بالأبيض والأسود لـ Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "مُحلِّل YAML بلغة Rust أكثر أماناً, NoyaLib, مطابقة مواصفات YAML 1.2, Rust بصفر unsafe, التحقق وفق JSON-Schema, شجرة CST عديمة الفقد, MCP, Model Context Protocol, WebAssembly, مانيفستات Kubernetes, تهيئة CI/CD, DORA المادة 5, BCBS 239, مخاطر تشغيلية بازل III, البنية التحتية المالية, أمن التهيئة, أمن سلسلة توريد البرمجيات"
 language: "ar"
 last_reviewed: "2026-06-18"

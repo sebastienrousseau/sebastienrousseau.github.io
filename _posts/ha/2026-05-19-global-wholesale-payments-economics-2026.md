@@ -19,7 +19,7 @@ id: "https://sebastienrousseau.com/ha/2026-05-19-global-wholesale-payments-econo
 image_alt: "Hoton baƙi-da-fari na Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "biyan kuɗi na manyan ƙimomi 2026, tattalin arzikin biyan kuɗi a duniya, ISO 20022, RTGS, biyan kuɗi tsakanin ƙasashe, BIS CPMI, FSB, Swift CBPR+, taswirar G20, sasantawa ta gaba-ɗaya cikin lokaci, Project Agorá, Project Mandala, Project Nexus, haɗakar tsare-tsaren biyan kuɗi, bankunan haɗin gwiwa, rarrabuwar biyan kuɗi, CBDC na manyan ƙimomi"
 language: "ha"
 last_reviewed: "2026-05-19"

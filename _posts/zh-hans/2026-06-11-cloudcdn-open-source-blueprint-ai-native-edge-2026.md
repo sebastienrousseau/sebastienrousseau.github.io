@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/zh-hans/2026-06-11-cloudcdn-open-source-bluep
 image_alt: "Sebastien Rousseau 黑白肖像"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "CloudCDN, AI 原生边缘, 开源 CDN, MCP 服务器, Cloudflare Workers, Durable Objects, 零信任, WebAuthn, 签名 URL, SLSA Level 3, DORA, 边缘控制平面"
 language: "zh-hans"
 last_reviewed: "2026-06-11"
@@ -265,6 +265,6 @@ G-SIB 在多个司法辖区处理巨量交易。优先事项是用单一、统�
 - GitHub, (2026). [cloudcdn.pro 仓库 ⧉](https://github.com/sebastienrousseau/cloudcdn.pro "cloudcdn.pro 仓库").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="关于作者"><img alt="Sebastien Rousseau 肖像" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">资深银行技术专家，撰写关于应用型人工智能、支付基础设施、令牌化货币、ISO 20022、后量子安全、云原生金融服务与受监管数字市场的文章。</span><span class="author-credentials">在 HSBC 商业与投资银行、PayPal、Barclays、Shazam、AKQA、Virgin 集团积累二十余年经验。<a href="/about/index.html">完整简介</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="关于作者"><img alt="Sebastien Rousseau 肖像" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">资深银行技术专家，撰写关于应用型人工智能、支付基础设施、令牌化货币、ISO 20022、后量子安全、云原生金融服务与受监管数字市场的文章。</span><span class="author-credentials">在 HSBC 商业与投资银行、PayPal、Barclays、Shazam、AKQA、Virgin 集团积累二十余年经验。<a href="/about/index.html">完整简介</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">最近审阅 <time datetime="2026-06-11">2026-06-11</time>。</p>
 <!-- enrich-end -->

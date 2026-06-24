@@ -20,7 +20,7 @@ id: "https://sebastienrousseau.com/2026-06-16-ai-aware-dotfiles-secure-reproduci
 image_alt: "Ritratto in bianco e nero di Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "dotfiles, Chezmoi, MCP, Model Context Protocol, SLSA, SOPS, cifratura age, configurazione dichiarativa, postazione sviluppatore, DORA Articolo 5, NIST CSF 2.0, sicurezza catena di fornitura, AI agentica, parità multi-shell, Zsh, Fish, Nushell"
 language: "it-IT"
 last_reviewed: "2026-06-16"
@@ -261,7 +261,7 @@ Bash, Zsh, Fish, Nushell e PowerShell, con parità su macOS, Linux e WSL, in mod
 - GitHub, (2026). *repository open source dotfiles*. Disponibile su: [Repository dotfiles ⧉](https://github.com/sebastienrousseau/dotfiles "repository dotfiles").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Informazioni sull'autore"><img alt="Ritratto di Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist. Scrive di AI applicata, migrazione ISO 20022, crittografia post-quantistica per i servizi finanziari e trasformazione strutturale dei pagamenti wholesale.</span><span class="author-credentials">Oltre 20 anni tra HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profilo completo</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Informazioni sull'autore"><img alt="Ritratto di Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist. Scrive di AI applicata, migrazione ISO 20022, crittografia post-quantistica per i servizi finanziari e trasformazione strutturale dei pagamenti wholesale.</span><span class="author-credentials">Oltre 20 anni tra HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profilo completo</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Ultima revisione <time datetime="2026-06-16">2026-06-16</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Letture correlate</h2>

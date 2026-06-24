@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/uk/2026-05-28-dora-ai-act-data-sovereignty-ba
 image_alt: "Чорно-білий портрет Себастьяна Руссо"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "DORA 2026, EU AI Act 2026, суверенітет даних банки, операційна стійкість, концентраційний ризик хмари, комплаєнс ШІ у фінансах, високий ризик ШІ"
 language: "uk"
 excerpt: "DORA, EU AI Act, GDPR, концентраційний ризик хмари та суверенітет даних збираються в єдиний стек банківського комплаєнсу 2026 року. Стратегічне питання — дисципліна архітектури: комплаєнс, управління ШІ, докази стійкості ІКТ та вибір суверенних даних мають працювати як одна архітектура, а не п'ять паралельних програм."
@@ -201,6 +201,6 @@ DORA, EU AI Act і суверенітет даних — це, по суті, п
 - GOV.UK, (2026). [UK fintech backed to embrace future payments technology ⧉](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Про автора"><img alt="Портрет Себастьяна Руссо" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Себастьян Руссо</a></strong><span class="author-card-bio">Старший банківський технолог, пише про прикладний ШІ, інфраструктуру платежів, токенізовані гроші, ISO 20022, постквантову безпеку, хмарно-орієнтовані фінансові послуги та регульовані цифрові ринки.</span><span class="author-credentials">Понад 20 років у HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Повний профіль</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Про автора"><img alt="Портрет Себастьяна Руссо" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Себастьян Руссо</a></strong><span class="author-card-bio">Старший банківський технолог, пише про прикладний ШІ, інфраструктуру платежів, токенізовані гроші, ISO 20022, постквантову безпеку, хмарно-орієнтовані фінансові послуги та регульовані цифрові ринки.</span><span class="author-credentials">Понад 20 років у HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Повний профіль</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Останній перегляд <time datetime="2026-05-28">2026-05-28</time>.</p>
 <!-- enrich-end -->

@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/id/2026-06-01-multi-rail-bank-cards-a2a-stabl
 image_alt: "Potret Hitam Putih Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "lapisan orkestrasi pembayaran, FedNow vs RTP, FedNow vs ACH, penyelesaian stablecoin, penyelesaian atomik USDC, ISO 20022 pacs.008, account-to-account A2A, API Open Banking, likuiditas pra-pendanaan, jebakan likuiditas 24/7, bank multi-rel 2026, mesin perutean pembayaran, rekonsiliasi ERP"
 language: "id"
 last_reviewed: "2026-06-01"
@@ -263,7 +263,7 @@ Bergantung pada volume peserta. Bank yang melihat aliran keluar pembayaran insta
 - Circle Internet Financial, (2026). [USDC Treasury & Reserves ⧉](https://www.circle.com/transparency "Circle transparency").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Tentang penulis"><img alt="Potret Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Teknolog perbankan senior yang menulis tentang AI terapan, migrasi ISO 20022, kriptografi pasca-kuantum untuk layanan keuangan, dan transformasi struktural pembayaran grosir.</span><span class="author-credentials">Lebih dari 20 tahun pengalaman di HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profil lengkap</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Tentang penulis"><img alt="Potret Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Teknolog perbankan senior yang menulis tentang AI terapan, migrasi ISO 20022, kriptografi pasca-kuantum untuk layanan keuangan, dan transformasi struktural pembayaran grosir.</span><span class="author-credentials">Lebih dari 20 tahun pengalaman di HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profil lengkap</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Terakhir ditinjau <time datetime="2026-06-01">2026-06-01</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Bacaan terkait</h2>

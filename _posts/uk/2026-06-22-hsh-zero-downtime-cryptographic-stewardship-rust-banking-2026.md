@@ -18,7 +18,7 @@ id: "https://sebastienrousseau.com/2026-06-22-hsh-zero-downtime-cryptographic-st
 image_alt: "Чорно-білий портрет Себастьяна Руссо"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "hsh, Rust-криптографія, хешування паролів, Argon2id, банківська безпека, HSM-інтерлок, відповідність DORA, Basel III, міграція з нульовим простоєм, безпека пам'яті, PBKDF2, scrypt, кіберстійкість"
 language: "uk-UA"
 last_reviewed: "2026-06-22"
@@ -336,6 +336,6 @@ National Institute of Standards and Technology (2024). *Initial Public Draft —
 OWASP Foundation (2024). *Password Storage Cheat Sheet*. Доступно за: [https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html](https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html "OWASP Password Storage Cheat Sheet")
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Про автора"><img alt="Портрет Себастьяна Руссо" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Старший банківський технолог, який пише про прикладний AI, міграцію ISO 20022, постквантову криптографію для фінансових послуг та структурну трансформацію оптових платежів.</span><span class="author-credentials">Понад 20 років у HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Повний профіль</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Про автора"><img alt="Портрет Себастьяна Руссо" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Старший банківський технолог, який пише про прикладний AI, міграцію ISO 20022, постквантову криптографію для фінансових послуг та структурну трансформацію оптових платежів.</span><span class="author-credentials">Понад 20 років у HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Повний профіль</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Востаннє переглянуто <time datetime="2026-06-22">2026-06-22</time>.</p>
 <!-- enrich-end -->

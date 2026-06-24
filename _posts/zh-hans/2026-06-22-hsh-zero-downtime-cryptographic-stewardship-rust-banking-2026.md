@@ -18,7 +18,7 @@ id: "https://sebastienrousseau.com/2026-06-22-hsh-zero-downtime-cryptographic-st
 image_alt: "Sebastien Rousseau 黑白肖像"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "hsh, Rust 密码学, 口令哈希, Argon2id, 银行安全, HSM 互锁, DORA 合规, Basel III, 零停机迁移, 内存安全, PBKDF2, scrypt, 网络恢复"
 language: "zh-Hans"
 last_reviewed: "2026-06-22"
@@ -336,6 +336,6 @@ Biryukov, A.、Dinu, D.、Khovratovich, D. 与 Josefsson, S.（2021）。《RFC 
 OWASP 基金会（2024）。《Password Storage Cheat Sheet》。可访问：[https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html](https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html "OWASP 口令存储速查表")
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="关于作者"><img alt="Sebastien Rousseau 肖像" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">资深银行技术专家，撰写应用 AI、ISO 20022 迁移、面向金融服务的后量子密码学，以及批发支付的结构性转型。</span><span class="author-credentials">20 年以上 HSBC 商业与投资银行、PayPal、Barclays、Shazam、AKQA、Virgin Group 经验。<a href="/about/index.html">完整简介</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="关于作者"><img alt="Sebastien Rousseau 肖像" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">资深银行技术专家，撰写应用 AI、ISO 20022 迁移、面向金融服务的后量子密码学，以及批发支付的结构性转型。</span><span class="author-credentials">20 年以上 HSBC 商业与投资银行、PayPal、Barclays、Shazam、AKQA、Virgin Group 经验。<a href="/about/index.html">完整简介</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">最近审阅 <time datetime="2026-06-22">2026-06-22</time>。</p>
 <!-- enrich-end -->

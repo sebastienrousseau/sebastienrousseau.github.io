@@ -20,7 +20,7 @@ id: "https://sebastienrousseau.com/2026-06-16-ai-aware-dotfiles-secure-reproduci
 image_alt: "セバスチャン・ルソーのモノクロ・ポートレート"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "dotfiles, Chezmoi, MCP, Model Context Protocol, SLSA, SOPS, age 暗号化, 宣言的構成, 開発者ワークステーション, DORA 第5条, NIST CSF 2.0, サプライチェーン・セキュリティ, エージェント型 AI, マルチシェル互換性, Zsh, Fish, Nushell"
 language: "ja-JP"
 last_reviewed: "2026-06-16"
@@ -261,7 +261,7 @@ Bash、Zsh、Fish、Nushell、PowerShell です。macOS、Linux、WSL を横断�
 - GitHub, (2026). *dotfiles オープンソース・リポジトリ*. 入手先: [dotfiles リポジトリ ⧉](https://github.com/sebastienrousseau/dotfiles "dotfiles リポジトリ").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="著者について"><img alt="セバスチャン・ルソーのポートレート" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">応用 AI、ISO 20022 移行、金融サービス向けポスト量子暗号、ホールセール決済の構造変革について執筆するシニア銀行テクノロジスト。</span><span class="author-credentials">HSBC コマーシャル&amp;インベストメント・バンク、PayPal、Barclays、Shazam、AKQA、Virgin Group での 20 年以上の経験。<a href="/about/index.html">プロフィール詳細</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="著者について"><img alt="セバスチャン・ルソーのポートレート" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">応用 AI、ISO 20022 移行、金融サービス向けポスト量子暗号、ホールセール決済の構造変革について執筆するシニア銀行テクノロジスト。</span><span class="author-credentials">HSBC コマーシャル&amp;インベストメント・バンク、PayPal、Barclays、Shazam、AKQA、Virgin Group での 20 年以上の経験。<a href="/about/index.html">プロフィール詳細</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">最終確認日 <time datetime="2026-06-16">2026-06-16</time>。</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">関連記事</h2>

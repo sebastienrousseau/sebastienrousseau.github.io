@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/ja/2026-05-31-post-quantum-payments-infrastru
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "耐量子計算機暗号, PQC決済, 暗号アジリティ, Harvest Now Decrypt Later, HNDL, NIST耐量子標準, ML-KEM, ML-DSA, FIPS 203, FIPS 204, 決済レール移行, ISO 20022 PQC, SWIFT MT置換, HSM, PKI崩壊, 運用レジリエンス, Quantum Computing Cybersecurity Preparedness Act"
 language: "ja"
 excerpt: "今収穫し後で復号(HNDL)は、本日 TLS で保護された決済メッセージを、明日の復号済みエクスポージャーへ変えます。ML-KEM と ML-DSA は既存レールが想定した RSA/ECC 鍵より一桁大きく、後付け対応はパケット断片化、レイテンシ、HSM 枯渇を引き起こします。2026 年のアーキテクチャ判断は、規制の期限が切れる前に、後付けか置換かを選ぶことです。"
@@ -264,7 +264,7 @@ SLH-DSA(SPHINCS+ の標準化版)はハッシュベースであり、利用で�
 - Bank of England(PRA), (2024). [SS1/21 — 業務継続耐性:重要業務サービスの影響許容度 ⧉](https://www.bankofengland.co.uk/prudential-regulation/publication/2024/march/operational-resilience-impact-tolerances-for-important-business-services "PRA SS1/21").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="著者について"><img alt="Sebastien Rousseau のポートレート" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">応用 AI、ISO 20022 移行、金融サービスにおけるポスト量子暗号、ホールセール決済の構造的変革について執筆するシニア銀行テクノロジスト。</span><span class="author-credentials">HSBC コマーシャル&amp;インベストメントバンク、PayPal、Barclays、Shazam、AKQA、Virgin Group を横断する 20 年以上の経験。<a href="/about/index.html">プロフィール全体</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="著者について"><img alt="Sebastien Rousseau のポートレート" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">応用 AI、ISO 20022 移行、金融サービスにおけるポスト量子暗号、ホールセール決済の構造的変革について執筆するシニア銀行テクノロジスト。</span><span class="author-credentials">HSBC コマーシャル&amp;インベストメントバンク、PayPal、Barclays、Shazam、AKQA、Virgin Group を横断する 20 年以上の経験。<a href="/about/index.html">プロフィール全体</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">最終確認 <time datetime="2026-05-31">2026-05-31</time>。</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">関連記事</h2>

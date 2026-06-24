@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/zh-hant/2026-05-22-uk-acid-jazz-renewal-artis
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "英國酸性爵士 2026, Acid Jazz Records, Brand New Heavies, Galliano, James Taylor Quartet, Ronnie Scott’s, Bangs and Talbot, Chris Bangs, Mick Talbot, Smokin Aces, Mostly Jazz Funk Soul Festival, Cymande, Soul II Soul, Jordan Rakei, 英國爵士復興, jazz funk 爵士放克, soul jazz 靈魂爵士, 倫敦爵士演出"
 language: "zh-hant"
 excerpt: "2026年英國酸性爵士復興橫跨廠牌發行、第一波樂手現場演出與音樂節節目——Acid Jazz Records、Bangs & Talbot、The Brand New Heavies、Galliano、James Taylor Quartet 與 Mostly Jazz Funk & Soul Festival 同步活躍。"
@@ -231,6 +231,6 @@ The Brand New Heavies 與 Galliano 在 The Glasshouse 的演出，以及 The Jam
 - Mostly Jazz Funk & Soul Festival，（2026年）。[Mostly Jazz Funk & Soul Festival 2026 ⧉](https://mostlyjazz.co.uk "Mostly Jazz Funk & Soul Festival")。
 - Marlbank，（2026年）。[2026年迄今英國最佳爵士專輯 ⧉](https://marlbank.net/top-jazz-in-2026/top-uk-jazz-albums-in-2026-so-far/ "Top UK jazz albums in 2026 so far")。
 <!-- enrich-start -->
-<aside class="author-card" aria-label="關於作者"><img alt="Sebastien Rousseau 肖像" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">撰寫應用 AI、ISO 20022 遷移、面向金融服務的後量子密碼以及大額支付結構性變革的資深銀行技術專家。</span><span class="author-credentials">在 HSBC Commercial & Investment Bank、PayPal、Barclays、Shazam、AKQA、Virgin Group 擁有 20 多年經驗。<a href="/about/index.html">完整簡介</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="關於作者"><img alt="Sebastien Rousseau 肖像" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">撰寫應用 AI、ISO 20022 遷移、面向金融服務的後量子密碼以及大額支付結構性變革的資深銀行技術專家。</span><span class="author-credentials">在 HSBC Commercial & Investment Bank、PayPal、Barclays、Shazam、AKQA、Virgin Group 擁有 20 多年經驗。<a href="/about/index.html">完整簡介</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">最後審閱 <time datetime="2026-05-22">2026-05-22</time>。</p>
 <!-- enrich-end -->

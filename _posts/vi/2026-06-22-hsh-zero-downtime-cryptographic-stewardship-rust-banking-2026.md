@@ -18,7 +18,7 @@ id: "https://sebastienrousseau.com/2026-06-22-hsh-zero-downtime-cryptographic-st
 image_alt: "Chân dung đen trắng của Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "hsh, mật mã Rust, băm mật khẩu, Argon2id, bảo mật ngân hàng, khoá liên động HSM, tuân thủ DORA, Basel III, di trú zero-downtime, an toàn bộ nhớ, PBKDF2, scrypt, phục hồi sau tấn công mạng"
 language: "vi-VN"
 last_reviewed: "2026-06-22"
@@ -336,6 +336,6 @@ National Institute of Standards and Technology (2024). *Initial Public Draft —
 OWASP Foundation (2024). *Password Storage Cheat Sheet*. Có sẵn tại: [https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html](https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html "OWASP Password Storage Cheat Sheet")
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Về tác giả"><img alt="Chân dung Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Chuyên gia công nghệ ngân hàng cấp cao viết về AI ứng dụng, di trú ISO 20022, mật mã hậu lượng tử cho dịch vụ tài chính và sự chuyển đổi cấu trúc của thanh toán bán buôn.</span><span class="author-credentials">Hơn 20 năm tại HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Hồ sơ đầy đủ</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Về tác giả"><img alt="Chân dung Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Chuyên gia công nghệ ngân hàng cấp cao viết về AI ứng dụng, di trú ISO 20022, mật mã hậu lượng tử cho dịch vụ tài chính và sự chuyển đổi cấu trúc của thanh toán bán buôn.</span><span class="author-credentials">Hơn 20 năm tại HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Hồ sơ đầy đủ</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Đã rà soát lần cuối <time datetime="2026-06-22">2026-06-22</time>.</p>
 <!-- enrich-end -->

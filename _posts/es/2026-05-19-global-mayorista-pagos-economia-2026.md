@@ -19,7 +19,7 @@ id: "https://sebastienrousseau.com/es/2026-05-19-global-mayorista-pagos-economia
 image_alt: "Retrato en blanco y negro de Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "pagos mayoristas 2026, economía de los pagos mundiales, ISO 20022, RTGS, pagos transfronterizos, BIS CPMI, FSB, Swift CBPR+, hoja de ruta G20, liquidación bruta en tiempo real, Project Agorá, Project Mandala, Project Nexus, interoperabilidad de pagos, banca corresponsal, fragmentación de pagos, CBDC mayorista"
 language: "es"
 last_reviewed: "2026-05-19"

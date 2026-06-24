@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/uk/2026-05-24-uk-payments-forward-plan-stable
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "UK Payments Forward Plan 2026, стейблкоїни Велика Британія, токенізовані депозити, відкритий банкінг FCA, консолідація PSR FCA, агентські платежі, Wholesale Digital Markets Champion, Chris Woolard, регулювання платіжних послуг"
 language: "uk"
 excerpt: "UK Payments Forward Plan і пакет політик квітня 2026 формують єдину рамку для класичних платежів, стейблкоїнів, токенізованих депозитів, відкритого банкінгу та агентських платежів. Стратегічне питання для банків — дисципліна дизайну: які дані, канали, контролі, відповідальності та клієнтські сценарії належать разом і як підтвердити оркестрування регуляторам."
@@ -201,6 +201,6 @@ UK Payments Forward Plan 2026 — це по суті питання архіте
 - Global Government Finance, (2026). [UK wholesale digital markets champion ⧉](https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/ "UK wholesale digital markets champion").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Про автора"><img alt="Портрет Себастьяна Руссо" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Себастьян Руссо</a></strong><span class="author-card-bio">Старший банківський технолог, пише про прикладний ШІ, інфраструктуру платежів, токенізовані гроші, ISO 20022, постквантову безпеку, хмарно-орієнтовані фінансові послуги та регульовані цифрові ринки.</span><span class="author-credentials">Понад 20 років у HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Повний профіль</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Про автора"><img alt="Портрет Себастьяна Руссо" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Себастьян Руссо</a></strong><span class="author-card-bio">Старший банківський технолог, пише про прикладний ШІ, інфраструктуру платежів, токенізовані гроші, ISO 20022, постквантову безпеку, хмарно-орієнтовані фінансові послуги та регульовані цифрові ринки.</span><span class="author-credentials">Понад 20 років у HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Повний профіль</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Останній перегляд <time datetime="2026-05-24">2026-05-24</time>.</p>
 <!-- enrich-end -->

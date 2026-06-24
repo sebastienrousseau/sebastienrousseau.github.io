@@ -19,7 +19,7 @@ id: "https://sebastienrousseau.com/bn/2026-05-19-global-wholesale-payments-econo
 image_alt: "Sebastien Rousseau-এর সাদা-কালো প্রতিকৃতি"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "পাইকারি পেমেন্ট ২০২৬, বৈশ্বিক পেমেন্ট অর্থনীতি, ISO 20022, RTGS, সীমান্ত-পার পেমেন্ট, BIS CPMI, FSB, Swift CBPR+, G20 রোডম্যাপ, রিয়েল টাইম গ্রস সেটেলমেন্ট, Project Agora, Project Mandala, Project Nexus, পেমেন্ট আন্তঃকার্যকারিতা, করেসপনডেন্ট ব্যাংকিং, পেমেন্ট খণ্ডায়ন, পাইকারি CBDC"
 language: "bn"
 last_reviewed: "2026-05-19"

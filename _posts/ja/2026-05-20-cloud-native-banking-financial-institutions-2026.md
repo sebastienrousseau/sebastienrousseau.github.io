@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/ja/2026-05-20-cloud-native-banking-financial-
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "クラウドネイティブバンキング2026, Kubernetes銀行, 金融機関クラウド, DORA 2026, クラウドレジリエンス, Red Hat OpenShift, Portworx, VM コンテナ共存, 銀行クラウド主権, 金融サービスクラウド依存, 運用レジリエンス, disaster recovery, クラウド移行戦略, AIバンキングワークロード"
 language: "ja"
 last_reviewed: "2026-05-20"
@@ -214,6 +214,6 @@ FMI（Financial Market Infrastructures）はとりわけレジリエンスの証
 - Red Hat、(2026)。[銀行向けデジタル主権 ⧉](https://www.redhat.com/en/resources/cloud-sovereignty-for-banks-overview "銀行向けクラウド主権")。
 - Thought Machine、(2026)。[クラウドネイティブ・コアバンキング・ソフトウェア ⧉](https://www.thoughtmachine.net "Thought Machine Vault")。
 <!-- enrich-start -->
-<aside class="author-card" aria-label="著者について"><img alt="Sebastien Rousseau のポートレート" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">応用 AI、ISO 20022 移行、金融サービス向けポスト量子暗号、ホールセール決済の構造的変革について執筆するシニア銀行テクノロジスト。</span><span class="author-credentials">HSBC コマーシャル&amp;インベストメントバンク、PayPal、Barclays、Shazam、AKQA、Virgin Group を横断する 20 年以上の経験。<a href="/about/index.html">プロフィール全体</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="著者について"><img alt="Sebastien Rousseau のポートレート" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">応用 AI、ISO 20022 移行、金融サービス向けポスト量子暗号、ホールセール決済の構造的変革について執筆するシニア銀行テクノロジスト。</span><span class="author-credentials">HSBC コマーシャル&amp;インベストメントバンク、PayPal、Barclays、Shazam、AKQA、Virgin Group を横断する 20 年以上の経験。<a href="/about/index.html">プロフィール全体</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">最終レビュー <time datetime="2026-05-20">2026-05-20</time>。</p>
 <!-- enrich-end -->

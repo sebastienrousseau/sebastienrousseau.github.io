@@ -20,7 +20,7 @@ id: "https://sebastienrousseau.com/2026-05-28-digital-assets-tokenisation-stable
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "digital assets 2026, tokenised real-world assets, stablecoins banking, tokenised deposits, digital asset custody, DLT banking, settlement infrastructure, collateral mobility, programmable money, bank strategy digital assets"
 language: "en-GB"
 excerpt: "Digital assets are no longer an innovation bet. They are a settlement, custody, and balance-sheet architecture question. Crypto is a ~$3 trillion asset class, stablecoins have reached ~$300 billion, and tokenised real-world assets grew ~300% in 2025. The strategic task for banks in 2026 is not whether to engage but how to design infrastructure, controls, and governance for a world where money, assets, and settlement become programmable."
@@ -372,7 +372,7 @@ By revenue captured from addressable pools, cost of dual-rail operation, control
 - Sebastien Rousseau, (2026). [Agentic Engineering for Banks ⧉](https://sebastienrousseau.com/2026-05-17-agentic-engineering-banks-blueprint-2026 "Agentic Engineering").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Last reviewed <time datetime="2026-06-23">2026-06-23</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Related reading</h2>

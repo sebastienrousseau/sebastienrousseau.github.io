@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/ar/2026-05-28-dora-ai-act-data-sovereignty-ba
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "DORA 2026، قانون الذكاء الاصطناعي الأوروبي 2026، سيادة البيانات للمصارف، المرونة التشغيلية، مخاطر التركيز السحابي، امتثال الذكاء الاصطناعي في الخدمات المالية، الذكاء الاصطناعي عالي المخاطر"
 language: "ar"
 excerpt: "تتقارب DORA وقانون الذكاء الاصطناعي الأوروبي وGDPR ومخاطر التركيز السحابي وسيادة البيانات في حزمة امتثال موحدة للمصارف عام 2026. السؤال الاستراتيجي هو انضباط التصميم — تشغيل الامتثال وحوكمة الذكاء الاصطناعي وأدلة مرونة تكنولوجيا المعلومات والاتصالات وخيارات البيانات السيادية ضمن هندسة واحدة، لا خمسة برامج متوازية."
@@ -201,6 +201,6 @@ site_software: "Static Site Generator, Rust"
 - GOV.UK, (2026). [UK fintech backed to embrace future payments technology ⧉](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="نبذة عن المؤلف"><img alt="صورة شخصية لسيباستيان روسو" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">سيباستيان روسو</a></strong><span class="author-card-bio">تقني مصرفي أول يكتب عن الذكاء الاصطناعي التطبيقي، والبنية التحتية للمدفوعات، والنقد المُرمَّز، وISO 20022، والأمن ما بعد الكمومي، والخدمات المالية السحابية الأصل، والأسواق الرقمية المُنظَّمة.</span><span class="author-credentials">أكثر من 20 عاماً من الخبرة لدى HSBC للخدمات المصرفية التجارية والاستثمارية، وPayPal، وBarclays، وShazam، وAKQA، ومجموعة Virgin. <a href="/about/index.html">الملف الكامل</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="نبذة عن المؤلف"><img alt="صورة شخصية لسيباستيان روسو" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">سيباستيان روسو</a></strong><span class="author-card-bio">تقني مصرفي أول يكتب عن الذكاء الاصطناعي التطبيقي، والبنية التحتية للمدفوعات، والنقد المُرمَّز، وISO 20022، والأمن ما بعد الكمومي، والخدمات المالية السحابية الأصل، والأسواق الرقمية المُنظَّمة.</span><span class="author-credentials">أكثر من 20 عاماً من الخبرة لدى HSBC للخدمات المصرفية التجارية والاستثمارية، وPayPal، وBarclays، وShazam، وAKQA، ومجموعة Virgin. <a href="/about/index.html">الملف الكامل</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">آخر مراجعة <time datetime="2026-05-28">2026-05-28</time>.</p>
 <!-- enrich-end -->

@@ -20,7 +20,7 @@ id: "https://sebastienrousseau.com/2026-06-17-economist-commercialising-quantum-
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "Commercialising Quantum Global 2026, Economist Impact 정상회의, 양자내성 암호, NIST ML-KEM, harvest-now decrypt-later, SNDL, HSBC 양자, Philip Intallura, 양자 센싱, GPS 독립 항법, NQCC, EU Quantum Act, Quantcore, qBIG 상, Lord Vallance, 하이브리드 양자-고전, DORA Article 6"
 language: "ko-KR"
 last_reviewed: "2026-06-17"

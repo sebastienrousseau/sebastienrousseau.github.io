@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/tr/2026-05-22-uk-acid-jazz-renewal-artists-co
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "İngiltere acid jazz 2026, Acid Jazz Records, Brand New Heavies, Galliano, James Taylor Quartet, Ronnie Scott’s, Bangs and Talbot, Chris Bangs, Mick Talbot, Smokin Aces, Mostly Jazz Funk Soul Festival, Cymande, Soul II Soul, Jordan Rakei, İngiltere jazz canlanması, jazz funk, soul jazz, Londra jazz konserleri"
 language: "tr"
 excerpt: "2026 İngiltere acid jazz yenilenmesi plak şirketi yayınlarını, ilk kuşak isimlerinin canlı konserlerini ve festival programlamayı kapsıyor — Acid Jazz Records, Bangs & Talbot, The Brand New Heavies, Galliano, James Taylor Quartet ve Mostly Jazz Funk & Soul Festival'in tamamı aynı anda sahnede."
@@ -231,6 +231,6 @@ Bağlantı groove’dadır, katı tür etiketlemesinde değil. Mostly Jazz Funk 
 - Mostly Jazz Funk & Soul Festival, (2026). [Mostly Jazz Funk & Soul Festival 2026 ⧉](https://mostlyjazz.co.uk "Mostly Jazz Funk & Soul Festival").
 - Marlbank, (2026). [2026’nın en iyi İngiliz caz albümleri ⧉](https://marlbank.net/top-jazz-in-2026/top-uk-jazz-albums-in-2026-so-far/ "2026’nın en iyi İngiliz caz albümleri").
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Yazar hakkında"><img alt="Sebastien Rousseau’nun portresi" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Uygulamalı yapay zeka, ISO 20022 göçü, finansal hizmetler için post-kuantum kriptografi ve toptan ödemelerin yapısal dönüşümü üzerine yazan kıdemli bankacılık teknoloğu.</span><span class="author-credentials">HSBC Ticari ve Yatırım Bankası, PayPal, Barclays, Shazam, AKQA ve Virgin Group’ta 20+ yıl. <a href="/about/index.html">Tam profil</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Yazar hakkında"><img alt="Sebastien Rousseau’nun portresi" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Uygulamalı yapay zeka, ISO 20022 göçü, finansal hizmetler için post-kuantum kriptografi ve toptan ödemelerin yapısal dönüşümü üzerine yazan kıdemli bankacılık teknoloğu.</span><span class="author-credentials">HSBC Ticari ve Yatırım Bankası, PayPal, Barclays, Shazam, AKQA ve Virgin Group’ta 20+ yıl. <a href="/about/index.html">Tam profil</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Son inceleme <time datetime="2026-05-22">2026-05-22</time>.</p>
 <!-- enrich-end -->

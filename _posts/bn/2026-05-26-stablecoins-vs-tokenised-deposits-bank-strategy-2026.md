@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/bn/2026-05-26-stablecoins-vs-tokenised-deposi
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "স্টেবলকয়েন ২০২৬, টোকেনাইজড আমানত, ব্যাংক আমানত, GENIUS Act, JPM Coin, ডিপোজিট টোকেন, স্টেবলকয়েন রিজার্ভ, ব্যাংক ফান্ডিং, ডিজিটাল অর্থ"
 language: "bn"
 excerpt: "স্টেবলকয়েন ও টোকেনাইজড আমানত প্রোগ্রামেবল নিষ্পত্তিতে অভিসারী হলেও ব্যালেন্স শিট, আইনি, তারল্য ও আস্থার মডেলে আলাদা থাকছে। ২০২৬ সালে ব্যাংকের কৌশলগত প্রশ্ন ডিজাইন শৃঙ্খলা — কোন অর্থ মডেল কোন ক্লায়েন্ট ওয়ার্কফ্লো বহন করবে — এবং কীভাবে আমানত ফ্র্যাঞ্চাইজ, নিষ্পত্তি ভূমিকা ও নিয়ন্ত্রিত ব্র্যান্ড ব্যক্তিগত ইস্যুকারীর প্রতিযোগিতা থেকে রক্ষা করা যাবে।"
@@ -201,6 +201,6 @@ site_software: "Static Site Generator, Rust"
 - GOV.UK, (2026). [UK fintech backed to embrace future payments technology ⧉](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="লেখক সম্পর্কে"><img alt="সেবাস্তিয়ান রুসোর প্রতিকৃতি" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">সেবাস্তিয়ান রুসো</a></strong><span class="author-card-bio">সিনিয়র ব্যাংকিং প্রযুক্তিবিদ, প্রয়োগ-ভিত্তিক এআই, পেমেন্ট পরিকাঠামো, টোকেনাইজড অর্থ, ISO 20022, পোস্ট-কোয়ান্টাম নিরাপত্তা, ক্লাউড-নেটিভ আর্থিক পরিষেবা ও নিয়ন্ত্রিত ডিজিটাল বাজার সম্পর্কে লেখেন।</span><span class="author-credentials">HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group-এ ২০+ বছরের অভিজ্ঞতা। <a href="/about/index.html">সম্পূর্ণ প্রোফাইল</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="লেখক সম্পর্কে"><img alt="সেবাস্তিয়ান রুসোর প্রতিকৃতি" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">সেবাস্তিয়ান রুসো</a></strong><span class="author-card-bio">সিনিয়র ব্যাংকিং প্রযুক্তিবিদ, প্রয়োগ-ভিত্তিক এআই, পেমেন্ট পরিকাঠামো, টোকেনাইজড অর্থ, ISO 20022, পোস্ট-কোয়ান্টাম নিরাপত্তা, ক্লাউড-নেটিভ আর্থিক পরিষেবা ও নিয়ন্ত্রিত ডিজিটাল বাজার সম্পর্কে লেখেন।</span><span class="author-credentials">HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group-এ ২০+ বছরের অভিজ্ঞতা। <a href="/about/index.html">সম্পূর্ণ প্রোফাইল</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">সর্বশেষ পর্যালোচনা <time datetime="2026-05-26">2026-05-26</time>।</p>
 <!-- enrich-end -->

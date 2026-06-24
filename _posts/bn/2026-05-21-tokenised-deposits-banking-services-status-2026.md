@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/bn/2026-05-21-tokenised-deposits-banking-serv
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "টোকেনাইজড ডিপোজিট ২০২৬, tokenized deposits banking, deposit tokens, Great British Tokenised Deposits, Lloyds digital assets, stablecoins, বাণিজ্যিক ব্যাংক অর্থ, BIS stablecoins, Project Agora, unified ledger, Deutsche Bank digital money, CBDC, টোকেনাইজড অর্থ, ডিজিটাল ওয়ালেট, tokenised gilts"
 language: "bn"
 last_reviewed: "2026-05-21"
@@ -325,7 +325,7 @@ FDIC-এর ২০২৬-এর প্রস্তাবিত নিয়ম �
 - FDIC, (২০২৬). [GENIUS আইনের প্রয়োজনীয়তা ও মানদণ্ড প্রস্তাবিত নিয়ম ⧉](https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted "FDIC proposed rule")।
 - Cambridge Centre for Alternative Finance, (২০২৬). [টোকেনাইজড অর্থ: ব্যবহারের ক্ষেত্র, আন্তঃচালনযোগ্যতা এবং নিয়ন্ত্রণ ⧉](https://www.jbs.cam.ac.uk/wp-content/uploads/2026/02/2026-ccaf-tokenised-money-use-cases-interoperability-and-regulation.pdf "Tokenised money report")।
 <!-- enrich-start -->
-<aside class="author-card" aria-label="লেখক সম্পর্কে"><img alt="সেবাস্তিয়ান রুসোর প্রতিকৃতি" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">সেবাস্তিয়ান রুসো</a></strong><span class="author-card-bio">সিনিয়র ব্যাংকিং প্রযুক্তিবিদ, প্রয়োগ-ভিত্তিক এআই, ISO 20022 মাইগ্রেশন, আর্থিক পরিষেবার জন্য পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি এবং পাইকারি পেমেন্টের কাঠামোগত রূপান্তর সম্পর্কে লেখেন।</span><span class="author-credentials">HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group-এ ২০+ বছরের অভিজ্ঞতা। <a href="/about/index.html">সম্পূর্ণ প্রোফাইল</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="লেখক সম্পর্কে"><img alt="সেবাস্তিয়ান রুসোর প্রতিকৃতি" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">সেবাস্তিয়ান রুসো</a></strong><span class="author-card-bio">সিনিয়র ব্যাংকিং প্রযুক্তিবিদ, প্রয়োগ-ভিত্তিক এআই, ISO 20022 মাইগ্রেশন, আর্থিক পরিষেবার জন্য পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি এবং পাইকারি পেমেন্টের কাঠামোগত রূপান্তর সম্পর্কে লেখেন।</span><span class="author-credentials">HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group-এ ২০+ বছরের অভিজ্ঞতা। <a href="/about/index.html">সম্পূর্ণ প্রোফাইল</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">সর্বশেষ পর্যালোচনা <time datetime="2026-05-21">2026-05-21</time>।</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">সম্পর্কিত পঠন</h2>

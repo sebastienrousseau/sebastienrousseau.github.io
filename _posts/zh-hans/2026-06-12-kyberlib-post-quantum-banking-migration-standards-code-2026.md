@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/zh-hans/2026-06-12-kyberlib-post-quantum-bank
 image_alt: "Sebastien Rousseau 黑白肖像"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "KyberLib, 后量子密码学, ML-KEM, FIPS 203, CRYSTALS-Kyber, 加密敏捷性, 混合密钥交换, Rust 密码学, SNDL, DORA, NIST SP 1800-38, 量子安全银行"
 language: "zh-hans"
 last_reviewed: "2026-06-12"
@@ -262,6 +262,6 @@ G-SIB 运营着以遗留系统为主的交易资产，其约束瓶颈在于发�
 - GitHub, (2026). [kyberlib 开源仓库 ⧉](https://github.com/sebastienrousseau/kyberlib "kyberlib 仓库").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="关于作者"><img alt="Sebastien Rousseau 肖像" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">资深银行技术专家，撰写关于应用型人工智能、支付基础设施、令牌化货币、ISO 20022、后量子安全、云原生金融服务、开源基础设施与受监管数字市场的文章。</span><span class="author-credentials">在 HSBC 商业与投资银行、PayPal、Barclays、Shazam、AKQA、Virgin 集团积累二十余年经验。<a href="/about/index.html">完整简介</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="关于作者"><img alt="Sebastien Rousseau 肖像" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">资深银行技术专家，撰写关于应用型人工智能、支付基础设施、令牌化货币、ISO 20022、后量子安全、云原生金融服务、开源基础设施与受监管数字市场的文章。</span><span class="author-credentials">在 HSBC 商业与投资银行、PayPal、Barclays、Shazam、AKQA、Virgin 集团积累二十余年经验。<a href="/about/index.html">完整简介</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">最近审阅 <time datetime="2026-06-12">2026-06-12</time>。</p>
 <!-- enrich-end -->

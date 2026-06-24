@@ -20,7 +20,7 @@ id: "https://sebastienrousseau.com/2026-06-16-ai-aware-dotfiles-secure-reproduci
 image_alt: "Portret alb-negru al lui Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "dotfiles, Chezmoi, MCP, Model Context Protocol, SLSA, SOPS, criptare age, configurație declarativă, stație de lucru pentru dezvoltator, DORA Articolul 5, NIST CSF 2.0, securitatea lanțului de aprovizionare, AI agentic, paritate multi-shell, Zsh, Fish, Nushell"
 language: "ro-RO"
 last_reviewed: "2026-06-16"
@@ -261,7 +261,7 @@ Bash, Zsh, Fish, Nushell și PowerShell — cu paritate pe macOS, Linux și WSL,
 - GitHub, (2026). *Depozitul open-source dotfiles*. Disponibil la: [Depozitul dotfiles ⧉](https://github.com/sebastienrousseau/dotfiles "depozitul dotfiles").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Despre autor"><img alt="Portret al lui Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Tehnolog bancar senior care scrie despre AI aplicat, migrarea ISO 20022, criptografia post-cuantică pentru serviciile financiare și transformarea structurală a plăților wholesale.</span><span class="author-credentials">Peste 20 de ani de experiență la HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profil complet</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Despre autor"><img alt="Portret al lui Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Tehnolog bancar senior care scrie despre AI aplicat, migrarea ISO 20022, criptografia post-cuantică pentru serviciile financiare și transformarea structurală a plăților wholesale.</span><span class="author-credentials">Peste 20 de ani de experiență la HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profil complet</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Ultima revizuire <time datetime="2026-06-16">2026-06-16</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Lecturi conexe</h2>
