@@ -20,7 +20,7 @@ id: "https://sebastienrousseau.com/ko/2026-05-16-2026-choeseon-keulaeudeu-infra-
 image_alt: "Sebastien Rousseau의 흑백 초상화"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "2026 클라우드 아키텍처, AI 네이티브 인프라, 멀티클라우드, 소버린 클라우드, US CLOUD Act, Bleu, S3NS, AWS European Sovereign Cloud, 소버린 AI, 오픈 가중치 모델, Llama 4, Mistral, 컨피덴셜 컴퓨팅, 서버리스, 엣지 컴퓨팅, WebAssembly, Wasm, eBPF, Cilium, Tetragon, LEO 위성 엣지, Starlink Enterprise, DevSecOps, 지속 가능한 데이터센터, 그리드 인식 컴퓨팅, 액체 냉각, 소형 모듈식 원자로, SMR, 원자력, Three Mile Island, Kairos Power, X-Energy, 실리콘 포토닉스, 공동 패키지 광학, NVIDIA Spectrum-X, AWS Bedrock, Google Vertex AI, Azure OpenAI Service, 에이전트 상거래, 다중 에이전트 스웜, 에이전트 단위 경제학, 에이전트 FinOps, 암호학적 에이전트 신원, SPIFFE, SPIRE, 알고리즘 전염, RAG 포이즈닝, 벡터 데이터베이스 보안, 데이터 출처, Pinecone, Qdrant, Weaviate, Milvus, 에이전트 카오스 엔지니어링, 데이터 중력, 이그레스 FinOps, HPC, GPU 스토리지, 연속 트레저리, 국경 없는 유동성, 실시간 결제, CBDC, eCNY, DREX, e-Rupee, BIS Project Agora, 디지털 유로, 합성 데이터 생성, JPMorgan 멀티클라우드, Citi 현대화, 그래프 신경망, 딥페이크 사기, 지금 수확 나중 해독, HNDL, 포스트양자 암호, ML-KEM, ML-DSA, 암호 민첩성, 양자 키 분배, QKD, Basel IV, 클라우드 집중 위험, 운영 위험 RWA, MCP 보안, 프롬프트 주입, 공급망 공격, CloudCDN, Cloudflare Workers, Durable Objects, WCAG-AA, Sebastien Rousseau"
 language: "ko-KR"
 last_reviewed: "2026-05-16"

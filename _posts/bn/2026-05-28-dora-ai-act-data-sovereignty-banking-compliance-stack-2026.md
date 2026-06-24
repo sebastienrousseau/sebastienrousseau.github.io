@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/bn/2026-05-28-dora-ai-act-data-sovereignty-ba
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "DORA ২০২৬, EU AI আইন ২০২৬, ব্যাংকের ডেটা সার্বভৌমত্ব, পরিচালনাগত স্থিতিস্থাপকতা, ক্লাউড ঘনত্ব ঝুঁকি, আর্থিক পরিষেবা AI কমপ্লায়েন্স, উচ্চ-ঝুঁকি AI"
 language: "bn"
 excerpt: "DORA, EU AI আইন, GDPR, ক্লাউড ঘনত্ব ঝুঁকি ও ডেটা সার্বভৌমত্ব ২০২৬-এ ব্যাংকগুলির জন্য একক কমপ্লায়েন্স স্ট্যাকে একীভূত হচ্ছে। কৌশলগত প্রশ্ন হল নকশার শৃঙ্খলা — কমপ্লায়েন্স, AI গভর্নেন্স, ICT-স্থিতিস্থাপকতার প্রমাণ ও সার্বভৌম-ডেটা পছন্দকে পাঁচটি সমান্তরাল কর্মসূচি নয়, একটি স্থাপত্য হিসেবে পরিচালনা করা।"
@@ -201,6 +201,6 @@ DORA, EU AI আইন ও ডেটা সার্বভৌমত্ব শে�
 - GOV.UK, (2026). [UK fintech backed to embrace future payments technology ⧉](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="লেখক সম্পর্কে"><img alt="সেবাস্তিয়ান রুসোর প্রতিকৃতি" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">সেবাস্তিয়ান রুসো</a></strong><span class="author-card-bio">সিনিয়র ব্যাংকিং প্রযুক্তিবিদ, প্রয়োগ-ভিত্তিক এআই, পেমেন্ট পরিকাঠামো, টোকেনাইজড অর্থ, ISO 20022, পোস্ট-কোয়ান্টাম নিরাপত্তা, ক্লাউড-নেটিভ আর্থিক পরিষেবা ও নিয়ন্ত্রিত ডিজিটাল বাজার সম্পর্কে লেখেন।</span><span class="author-credentials">HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group-এ ২০+ বছরের অভিজ্ঞতা। <a href="/about/index.html">সম্পূর্ণ প্রোফাইল</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="লেখক সম্পর্কে"><img alt="সেবাস্তিয়ান রুসোর প্রতিকৃতি" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">সেবাস্তিয়ান রুসো</a></strong><span class="author-card-bio">সিনিয়র ব্যাংকিং প্রযুক্তিবিদ, প্রয়োগ-ভিত্তিক এআই, পেমেন্ট পরিকাঠামো, টোকেনাইজড অর্থ, ISO 20022, পোস্ট-কোয়ান্টাম নিরাপত্তা, ক্লাউড-নেটিভ আর্থিক পরিষেবা ও নিয়ন্ত্রিত ডিজিটাল বাজার সম্পর্কে লেখেন।</span><span class="author-credentials">HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group-এ ২০+ বছরের অভিজ্ঞতা। <a href="/about/index.html">সম্পূর্ণ প্রোফাইল</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">সর্বশেষ পর্যালোচনা <time datetime="2026-05-28">2026-05-28</time>।</p>
 <!-- enrich-end -->

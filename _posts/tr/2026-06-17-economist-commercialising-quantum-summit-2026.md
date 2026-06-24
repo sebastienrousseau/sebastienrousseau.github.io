@@ -20,7 +20,7 @@ id: "https://sebastienrousseau.com/2026-06-17-economist-commercialising-quantum-
 image_alt: "Sebastien Rousseau'nun siyah beyaz portresi"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "Commercialising Quantum Global 2026, Economist Impact zirvesi, post-kuantum kriptografi, NIST ML-KEM, şimdi topla sonra çöz, SNDL, HSBC kuantum, Philip Intallura, kuantum algılama, GPS bağımsız navigasyon, NQCC, AB Kuantum Yasası, Quantcore, qBIG ödülü, Lord Vallance, hibrit kuantum-klasik, DORA Madde 6"
 language: "tr-TR"
 last_reviewed: "2026-06-17"

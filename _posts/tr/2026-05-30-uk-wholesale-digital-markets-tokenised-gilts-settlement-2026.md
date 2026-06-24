@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/tr/2026-05-30-uk-wholesale-digital-markets-to
 image_alt: "Sebastien Rousseau'nun Siyah Beyaz Portresi"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "Birleşik Krallık toptan dijital piyasalar 2026, Chris Woolard, tokenleştirilmiş gilt, tokenleştirilmiş toptan finans, dijital piyasalar şampiyonu, DSS, FCA, BoE, RTGS, atomik DvP, gün içi repo, teminat hareketliliği"
 language: "tr"
 excerpt: "Birleşik Krallık'ın Toptan Dijital Piyasalar Şampiyonu rolü; tokenleştirilmiş gilt'leri, DLT mutabakatını ve dijital toptan finansı ulusal rekabet gücü projesine dönüştürür. 2026'nın stratejik sorusu tasarım disiplinidir — hangi tokenleştirilmiş varlık hangi platforma oturur, mutabakat riski nasıl kanıtlanır ve City'nin toptan piyasa rolü Singapur, İsviçre ve Frankfurt'a karşı nasıl savunulur."
@@ -235,7 +235,7 @@ Teminat fonlamasında kazanılan baz puanlar. Gün içi likidite tamponunda azal
 - Global Government Finance, (2026). [Birleşik Krallık toptan dijital piyasalar şampiyonu ⧉](https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/ "Birleşik Krallık toptan dijital piyasalar şampiyonu").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Yazar hakkında"><img alt="Sebastien Rousseau'nun portresi" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Uygulamalı yapay zeka, ISO 20022 göçü, finansal hizmetler için post-kuantum kriptografi ve toptan ödemelerin yapısal dönüşümü üzerine yazan kıdemli bankacılık teknoloğu.</span><span class="author-credentials">HSBC Ticari ve Yatırım Bankası, PayPal, Barclays, Shazam, AKQA ve Virgin Group'ta 20+ yıl. <a href="/about/index.html">Tam profil</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Yazar hakkında"><img alt="Sebastien Rousseau'nun portresi" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Uygulamalı yapay zeka, ISO 20022 göçü, finansal hizmetler için post-kuantum kriptografi ve toptan ödemelerin yapısal dönüşümü üzerine yazan kıdemli bankacılık teknoloğu.</span><span class="author-credentials">HSBC Ticari ve Yatırım Bankası, PayPal, Barclays, Shazam, AKQA ve Virgin Group'ta 20+ yıl. <a href="/about/index.html">Tam profil</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Son inceleme <time datetime="2026-05-30">2026-05-30</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">İlgili okumalar</h2>

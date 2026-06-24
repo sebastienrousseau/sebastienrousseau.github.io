@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/yo/2026-05-26-stablecoins-vs-tokenised-deposi
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "stablecoins 2026, àwọn ìfowópamọ́ tókènì, ìfowópamọ́ bánkì, GENIUS Act, JPM Coin, deposit tokens, àkójọpọ̀ stablecoin, ìnáwó bánkì, owó oníkàmẹ́rà"
 language: "yo"
 excerpt: "Stablecoins àti àwọn ìfowópamọ́ tókènì ń péjọ ní àyíká ìpinnu owó tó lè ṣètò ṣùgbọ́n wọ́n yàtọ̀ síra lórí ìwé ìṣirò, òfin, owó tó ń sàn, àti àwòṣe ìgbẹ́kẹ̀lé. Ìbéèrè ìmọ̀ràn 2026 fún àwọn bánkì ni ìbáwí àpẹrẹ — àwòṣe owó wo ni ó gbé ìṣàn iṣẹ́ oníbàárà wo — àti bí a ṣe ń dáàbò bo ètò ìfowópamọ́, ipa ìpinnu owó, àti àmì oníṣàkóso lòdì sí ìdíje àwọn olùgbé jáde aládàáni."
@@ -201,6 +201,6 @@ A gbọ́dọ̀ wọn àṣeyọrí nípasẹ̀ ọrọ̀-ajé ẹyọkan, ẹ̀
 - GOV.UK, (2026). [UK fintech backed to embrace future payments technology ⧉](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Nípa òǹkọ̀wé"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Onímọ̀ ẹ̀rọ bánkì àgbà tí ó ń kọ nípa AI tí a lo, ìgbékalẹ̀ ìsanwó, owó tókènì, ISO 20022, ààbò post-quantum, iṣẹ́ ìnáwó cloud-native, àti àwọn ọjà oníbàátì tí a ṣàkóso.</span><span class="author-credentials">Ọdún 20+ kọjá HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profaìlì kíkún</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Nípa òǹkọ̀wé"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Onímọ̀ ẹ̀rọ bánkì àgbà tí ó ń kọ nípa AI tí a lo, ìgbékalẹ̀ ìsanwó, owó tókènì, ISO 20022, ààbò post-quantum, iṣẹ́ ìnáwó cloud-native, àti àwọn ọjà oníbàátì tí a ṣàkóso.</span><span class="author-credentials">Ọdún 20+ kọjá HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profaìlì kíkún</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Àyẹ̀wò tó kẹ́yìn <time datetime="2026-05-26">2026-05-26</time>.</p>
 <!-- enrich-end -->

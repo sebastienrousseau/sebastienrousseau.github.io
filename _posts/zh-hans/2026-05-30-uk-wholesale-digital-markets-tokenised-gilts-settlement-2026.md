@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/zh-hans/2026-05-30-uk-wholesale-digital-marke
 image_alt: "Sebastien Rousseau 黑白肖像"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "英国批发数字市场 2026, Chris Woolard, 代币化国债, 代币化批发金融, 数字市场协调者, 英国代币化, 结算"
 language: "zh-hans"
 excerpt: "英国批发数字市场协调者(Champion)角色把代币化国债、基于 DLT 的结算与数字批发金融升格为国家竞争力工程。银行 2026 年的战略命题是设计纪律——哪些代币化资产置于哪个平台、结算风险如何取证,以及伦敦金融城批发地位如何抵御 Singapore、Switzerland 与 Frankfurt 的争夺。"
@@ -235,7 +235,7 @@ DSS 是 FCA 与英格兰银行联合主持的监管制度,允许机构在针对 
 - Global Government Finance,(2026)。[英国批发数字市场协调者 ⧉](https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/ "英国批发数字市场协调者")。
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="关于作者"><img alt="Sebastien Rousseau 肖像" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">资深银行技术专家,撰写关于应用型人工智能、ISO 20022 迁移、金融服务后量子密码学,以及批发支付结构性转型的文章。</span><span class="author-credentials">在 HSBC 商业与投资银行、PayPal、Barclays、Shazam、AKQA、Virgin 集团积累二十余年经验。<a href="/about/index.html">完整简介</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="关于作者"><img alt="Sebastien Rousseau 肖像" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">资深银行技术专家,撰写关于应用型人工智能、ISO 20022 迁移、金融服务后量子密码学,以及批发支付结构性转型的文章。</span><span class="author-credentials">在 HSBC 商业与投资银行、PayPal、Barclays、Shazam、AKQA、Virgin 集团积累二十余年经验。<a href="/about/index.html">完整简介</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">最近审阅 <time datetime="2026-05-30">2026-05-30</time>。</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">延伸阅读</h2>

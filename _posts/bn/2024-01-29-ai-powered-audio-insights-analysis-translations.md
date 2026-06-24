@@ -18,7 +18,7 @@ id: "https://sebastienrousseau.com/bn/2024-01-29-ai-powered-audio-insights-analy
 image_alt: "A black and white photo of Sebastien Rousseau"
 image_height: "161"
 image_width: "161"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "Azure Cognitive Services, speech-to-text, নিউরাল অ্যাকুস্টিক মডেল, Azure Text Analytics, প্রাকৃতিক ভাষা প্রক্রিয়াকরণ, সেন্টিমেন্ট বিশ্লেষণ, CherryPy, ব্যাচ ট্রান্সক্রিপশন API, বহুভাষিক ASR, Azure Translator, অডিও ট্রান্সক্রিপশন, Python অডিও প্রক্রিয়াকরণ"
 language: "bn"
 layout: "report"
@@ -270,7 +270,7 @@ Azure Batch Transcription API ২.৫ ঘণ্টা পর্যন্ত WAV,
 [00]: https://audioanalyser.co/ "Audio Analyser — Azure-সমর্থিত বাক্ বিশ্লেষণ সরঞ্জাম"
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Last reviewed <time datetime="2026-05-24">2026-05-24</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Related reading</h2>

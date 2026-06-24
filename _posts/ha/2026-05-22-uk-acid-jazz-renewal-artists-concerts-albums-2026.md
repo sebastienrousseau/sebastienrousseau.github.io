@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/ha/2026-05-22-uk-acid-jazz-renewal-artists-co
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "acid jazz na UK 2026, Acid Jazz Records, Brand New Heavies, Galliano, James Taylor Quartet, Ronnie Scott's, Bangs and Talbot, Chris Bangs, Mick Talbot, Smokin Aces, Mostly Jazz Funk Soul Festival, Cymande, Soul II Soul, Jordan Rakei, farfaɗowar jazz ta UK, jazz funk, soul jazz, wasannin jazz na London"
 language: "ha"
 excerpt: "Farfaɗowar acid jazz ta UK a 2026 ba ta neman tsohon lokaci ba — ta kasance muhalli mai rai inda Acid Jazz Records, tsofaffin mawaka, bukukuwan jazz funk, da ƙaramar mawaka masu sha'awar groove suke aiki a lokaci ɗaya."
@@ -231,6 +231,6 @@ Haɗin ita ce groove, ba tsattsauran lakaban nau'in kiɗa ba. Bukukuwa kamar Mos
 - Mostly Jazz Funk & Soul Festival, (2026). [Mostly Jazz Funk & Soul Festival 2026 ⧉](https://mostlyjazz.co.uk "Mostly Jazz Funk & Soul Festival").
 - Marlbank, (2026). [Top UK jazz albums in 2026 so far ⧉](https://marlbank.net/top-jazz-in-2026/top-uk-jazz-albums-in-2026-so-far/ "Top UK jazz albums in 2026 so far").
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Game da marubucin"><img alt="Hoton Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Babban masanin fasahar banki yana rubutu kan amfani da AI, ƙaura na ISO 20022, sirrin bayan ƙididdiga don sabis na kuɗi, da kuma canjin tsarin biyan kuɗi na manyan-manya.</span><span class="author-credentials">Shekaru 20+ a HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Cikakken bayani</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Game da marubucin"><img alt="Hoton Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Babban masanin fasahar banki yana rubutu kan amfani da AI, ƙaura na ISO 20022, sirrin bayan ƙididdiga don sabis na kuɗi, da kuma canjin tsarin biyan kuɗi na manyan-manya.</span><span class="author-credentials">Shekaru 20+ a HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Cikakken bayani</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">An sake duba ta ƙarshe <time datetime="2026-05-22">2026-05-22</time>.</p>
 <!-- enrich-end -->

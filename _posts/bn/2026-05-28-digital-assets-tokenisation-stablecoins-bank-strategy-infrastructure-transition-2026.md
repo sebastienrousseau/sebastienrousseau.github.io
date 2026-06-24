@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/bn/2026-05-28-digital-assets-tokenisation-sta
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "ডিজিটাল সম্পদ ২০২৬, টোকেনাইজড রিয়েল-ওয়ার্ল্ড অ্যাসেট, স্টেবলকয়েন ব্যাংকিং, টোকেনাইজড আমানত, ডিজিটাল সম্পদ কাস্টডি, DLT ব্যাংকিং, সেটেলমেন্ট পরিকাঠামো, কোল্যাটারাল মোবিলিটি, প্রোগ্রামযোগ্য মুদ্রা, ব্যাংক কৌশল ডিজিটাল সম্পদ"
 language: "bn"
 excerpt: "ডিজিটাল সম্পদ আর উদ্ভাবন বাজি নয়; এটি সেটেলমেন্ট, কাস্টডি ও ব্যালেন্স শিট স্থাপত্যের প্রশ্ন। ক্রিপ্টো একটি ~3 ট্রিলিয়ন ডলারের সম্পদ শ্রেণি, স্টেবলকয়েন ~300 বিলিয়ন ডলারে পৌঁছেছে এবং টোকেনাইজড রিয়েল-ওয়ার্ল্ড অ্যাসেট 2025 সালে প্রায় 300% বৃদ্ধি পেয়েছে। ২০২৬ সালে ব্যাংকের কৌশলগত কাজ অংশ নেওয়া কি না তা নয়, বরং এমন এক জগতের জন্য পরিকাঠামো, নিয়ন্ত্রণ ও গভর্নেন্স ডিজাইন করা যেখানে অর্থ, সম্পদ ও সেটেলমেন্ট প্রোগ্রামযোগ্য হয়ে উঠছে।"
@@ -307,7 +307,7 @@ BCG একটি দশ-পদক্ষেপের নির্দেশিক�
 - Sebastien Rousseau, (2026). [ব্যাংকের জন্য এজেন্টিক ইঞ্জিনিয়ারিং ⧉](https://sebastienrousseau.com/2026-05-17-agentic-engineering-banks-blueprint-2026 "Agentic Engineering")।
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="লেখক সম্পর্কে"><img alt="সেবাস্তিয়ান রুসোর প্রতিকৃতি" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">সেবাস্তিয়ান রুসো</a></strong><span class="author-card-bio">সিনিয়র ব্যাংকিং প্রযুক্তিবিদ, প্রয়োগ-ভিত্তিক এআই, পেমেন্ট পরিকাঠামো, টোকেনাইজড অর্থ, ISO 20022, পোস্ট-কোয়ান্টাম নিরাপত্তা, ক্লাউড-নেটিভ আর্থিক পরিষেবা ও নিয়ন্ত্রিত ডিজিটাল বাজার সম্পর্কে লেখেন।</span><span class="author-credentials">HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group-এ ২০+ বছরের অভিজ্ঞতা। <a href="/about/index.html">সম্পূর্ণ প্রোফাইল</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="লেখক সম্পর্কে"><img alt="সেবাস্তিয়ান রুসোর প্রতিকৃতি" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">সেবাস্তিয়ান রুসো</a></strong><span class="author-card-bio">সিনিয়র ব্যাংকিং প্রযুক্তিবিদ, প্রয়োগ-ভিত্তিক এআই, পেমেন্ট পরিকাঠামো, টোকেনাইজড অর্থ, ISO 20022, পোস্ট-কোয়ান্টাম নিরাপত্তা, ক্লাউড-নেটিভ আর্থিক পরিষেবা ও নিয়ন্ত্রিত ডিজিটাল বাজার সম্পর্কে লেখেন।</span><span class="author-credentials">HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group-এ ২০+ বছরের অভিজ্ঞতা। <a href="/about/index.html">সম্পূর্ণ প্রোফাইল</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">সর্বশেষ পর্যালোচনা <time datetime="2026-05-28">28 মে 2026</time>।</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">সম্পর্কিত পঠন</h2>

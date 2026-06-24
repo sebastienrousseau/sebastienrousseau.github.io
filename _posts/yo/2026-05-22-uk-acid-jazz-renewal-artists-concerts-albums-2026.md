@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/yo/2026-05-22-uk-acid-jazz-renewal-artists-co
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "UK acid jazz 2026, Acid Jazz Records, Brand New Heavies, Galliano, James Taylor Quartet, Ronnie Scott's, Bangs and Talbot, Chris Bangs, Mick Talbot, Smokin Aces, Mostly Jazz Funk Soul Festival, Cymande, Soul II Soul, Jordan Rakei, ìsọjí jazz UK, jazz funk, soul jazz, àwọn ere orin jazz London"
 language: "yo"
 excerpt: "Ìsọjí acid jazz UK ní 2026 kì í ṣe ìrántí ìgbàanì — ó jẹ́ ẹ̀dá alààyè tí Acid Jazz Records, àwọn olórin ìpele àkọ́kọ́, àwọn àjọ̀dún jazz-funk, àti àwọn músíṣẹ̀ bọ́ọ̀rọ̀ tí groove ń darí wọn ń ṣiṣẹ́ papọ̀ lọ́kan ṣoṣo."
@@ -231,6 +231,6 @@ The Brand New Heavies pẹ̀lú Galliano ní The Glasshouse àti The James Taylo
 - Mostly Jazz Funk & Soul Festival, (2026). [Mostly Jazz Funk & Soul Festival 2026 ⧉](https://mostlyjazz.co.uk "Mostly Jazz Funk & Soul Festival").
 - Marlbank, (2026). [Top UK jazz albums in 2026 so far ⧉](https://marlbank.net/top-jazz-in-2026/top-uk-jazz-albums-in-2026-so-far/ "Àwọn Àbúm Jazz UK Tó Ga Jùlọ ní 2026 Títí Báyìí").
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Nípa òǹkọ̀wé"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Onímọ̀ ẹ̀rọ báńkì àgbà tí ó ń kọ nípa AI tí a lo, ìgbépadà ISO 20022, cryptography post-quantum fún àwọn iṣẹ́ ìnáwó, àti ìyípadà ìgbékalẹ̀ àwọn ìsanwó gbogbo.</span><span class="author-credentials">Ọdún 20+ kọjá HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profaìlì kíkún</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Nípa òǹkọ̀wé"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Onímọ̀ ẹ̀rọ báńkì àgbà tí ó ń kọ nípa AI tí a lo, ìgbépadà ISO 20022, cryptography post-quantum fún àwọn iṣẹ́ ìnáwó, àti ìyípadà ìgbékalẹ̀ àwọn ìsanwó gbogbo.</span><span class="author-credentials">Ọdún 20+ kọjá HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profaìlì kíkún</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Àtúnyẹwò tó kẹ́hìn <time datetime="2026-05-22">2026-05-22</time>.</p>
 <!-- enrich-end -->

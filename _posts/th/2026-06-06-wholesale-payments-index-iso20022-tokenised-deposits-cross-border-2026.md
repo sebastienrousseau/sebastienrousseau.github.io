@@ -18,7 +18,7 @@ id: "https://sebastienrousseau.com/th/2026-06-06-wholesale-payments-index-iso200
 image_alt: "ภาพเหมือนขาวดำของ Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "การชำระเงินขายส่ง 2026, ISO 20022, เงินฝากแบบโทเคน, Project Agorá, การชำระเงินข้ามพรมแดน, การชำระเงินเรียลไทม์, ข้อมูลที่อยู่แบบมีโครงสร้าง, คุณภาพข้อมูลการชำระเงิน"
 language: "th-TH"
 last_reviewed: "2026-06-06"
@@ -243,6 +243,6 @@ Fintech และผู้ให้บริการโครงสร้าง
 - Deutsche Bank, (2026). [เงินดิจิทัล: stablecoin เงินฝากแบบโทเคน และ CBDC ⧉](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money: stablecoins, tokenised deposits and CBDCs").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="เกี่ยวกับผู้เขียน"><img alt="ภาพเหมือนของ Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">นักเทคโนโลยีธนาคารอาวุโสที่เขียนเกี่ยวกับ AI ประยุกต์ โครงสร้างพื้นฐานการชำระเงิน เงินที่ถูก tokenise ISO 20022 ความปลอดภัยหลังควอนตัม บริการการเงินแบบ cloud-native และตลาดดิจิทัลที่อยู่ใต้การกำกับดูแล</span><span class="author-credentials">มากกว่า 20 ปีที่ HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">โปรไฟล์เต็ม</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="เกี่ยวกับผู้เขียน"><img alt="ภาพเหมือนของ Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">นักเทคโนโลยีธนาคารอาวุโสที่เขียนเกี่ยวกับ AI ประยุกต์ โครงสร้างพื้นฐานการชำระเงิน เงินที่ถูก tokenise ISO 20022 ความปลอดภัยหลังควอนตัม บริการการเงินแบบ cloud-native และตลาดดิจิทัลที่อยู่ใต้การกำกับดูแล</span><span class="author-credentials">มากกว่า 20 ปีที่ HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">โปรไฟล์เต็ม</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">ตรวจสอบล่าสุด <time datetime="2026-06-06">2026-06-06</time>.</p>
 <!-- enrich-end -->

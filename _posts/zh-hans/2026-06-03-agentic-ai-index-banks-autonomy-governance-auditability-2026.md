@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/zh-hans/2026-06-03-agentic-ai-index-banks-aut
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "智能体 AI 银行 2026, AI 智能体 银行, 金融服务 AI 治理, 自主银行工作流, 模型风险管理, AI 可审计性"
 language: "zh-hans"
 last_reviewed: "2026-06-03"
@@ -266,6 +266,6 @@ ROI 最高的工作流是支付修复、KYC 文档抽取、司库服务 FAQ 拦�
 - 云原生计算基金会, (2018). [Open Policy Agent(OPA)⧉](https://www.openpolicyagent.org/ "Open Policy Agent——面向云原生环境的策略化控制")。
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="关于作者"><img alt="Sebastien Rousseau 肖像" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">资深银行技术专家,撰写关于应用型人工智能、支付基础设施、代币化货币、ISO 20022、后量子安全、云原生金融服务,以及受监管数字市场的文章。</span><span class="author-credentials">在 HSBC 商业与投资银行、PayPal、Barclays、Shazam、AKQA、Virgin 集团积累二十余年经验。<a href="/about/index.html">完整简介</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="关于作者"><img alt="Sebastien Rousseau 肖像" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">资深银行技术专家,撰写关于应用型人工智能、支付基础设施、代币化货币、ISO 20022、后量子安全、云原生金融服务,以及受监管数字市场的文章。</span><span class="author-credentials">在 HSBC 商业与投资银行、PayPal、Barclays、Shazam、AKQA、Virgin 集团积累二十余年经验。<a href="/about/index.html">完整简介</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">最近审阅 <time datetime="2026-06-03">2026-06-03</time>。</p>
 <!-- enrich-end -->

@@ -20,7 +20,7 @@ id: "https://sebastienrousseau.com/2026-06-24-cross-border-iso-20022-open-financ
 image_alt: "Sebastien Rousseau 的黑白肖像"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "跨境支付, ISO 20022, 開放金融, PSD3, FiDA, 代幣化存款, 穩定幣, A2A, 企業財資, CIB, Nexi, Mastercard, 多軌, pacs.008, pain.001, SWIFT, FedNow, SEPA Instant, RTP, CBPR+"
 language: "zh-Hant"
 last_reviewed: "2026-06-24"
@@ -242,6 +242,6 @@ International Organization for Standardization (2020). *ISO 17442 Financial serv
 SWIFT (2024). *Cross-Border Payments and Reporting Plus (CBPR+) usage guidelines*. Available at: [https://www.swift.com/standards/iso-20022/iso-20022-programme](https://www.swift.com/standards/iso-20022/iso-20022-programme "SWIFT CBPR+ usage guidelines")
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="About the author"><img alt="Sebastien Rousseau 的肖像" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">資深銀行科技人,長期撰文探討應用 AI、ISO 20022 遷移、金融服務的後量子密碼學,以及批發支付的結構性轉型。</span><span class="author-credentials">逾 20 年資歷,橫跨 HSBC 商業銀行暨投資銀行、PayPal、Barclays、Shazam、AKQA、Virgin Group。<a href="/about/index.html">完整檔案</a>&middot;<a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a>&middot;<a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="About the author"><img alt="Sebastien Rousseau 的肖像" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">資深銀行科技人,長期撰文探討應用 AI、ISO 20022 遷移、金融服務的後量子密碼學,以及批發支付的結構性轉型。</span><span class="author-credentials">逾 20 年資歷,橫跨 HSBC 商業銀行暨投資銀行、PayPal、Barclays、Shazam、AKQA、Virgin Group。<a href="/about/index.html">完整檔案</a>&middot;<a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a>&middot;<a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">最後審閱於 <time datetime="2026-06-24">2026-06-24</time>。</p>
 <!-- enrich-end -->

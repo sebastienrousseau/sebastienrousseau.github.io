@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/pl/2026-05-30-uk-wholesale-digital-markets-to
 image_alt: "Czarno-bialy portret Sebastiena Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "hurtowe rynki cyfrowe UK 2026, Wholesale Digital Markets Champion, Chris Woolard, tokenizowane gilty, BoE DSS, Project Guardian, SDX, Project Agora, tokenizacja, rozliczenie DLT"
 language: "pl"
 excerpt: "Rola Wholesale Digital Markets Champion zamienia tokenizowane gilty, rozliczenie oparte na DLT i hurtowe finanse cyfrowe w narodowy projekt konkurencyjnosci. Strategiczne pytanie 2026 roku dla bankow to dyscyplina projektowa — ktore tokenizowane aktywa siedza na ktorej platformie, jak udokumentowac ryzyko rozliczenia i jak obronic role hurtowa City of London przed Singapurem, Szwajcaria i Frankfurtem."
@@ -235,7 +235,7 @@ Punkty bazowe zaoszczędzone na finansowaniu zabezpieczeń. Redukcja bufora pły
 - Global Government Finance, (2026). [Koordynator hurtowych rynków cyfrowych UK ⧉](https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/ "Koordynator hurtowych rynków cyfrowych UK").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="O autorze"><img alt="Portret Sebastiena Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist piszący o stosowanej AI, migracji ISO 20022, kryptografii post-kwantowej dla usług finansowych i strukturalnej transformacji płatności hurtowych.</span><span class="author-credentials">Ponad 20 lat doświadczenia w HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Pełny profil</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="O autorze"><img alt="Portret Sebastiena Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist piszący o stosowanej AI, migracji ISO 20022, kryptografii post-kwantowej dla usług finansowych i strukturalnej transformacji płatności hurtowych.</span><span class="author-credentials">Ponad 20 lat doświadczenia w HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Pełny profil</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Ostatnia weryfikacja <time datetime="2026-05-30">2026-05-30</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Powiązane lektury</h2>

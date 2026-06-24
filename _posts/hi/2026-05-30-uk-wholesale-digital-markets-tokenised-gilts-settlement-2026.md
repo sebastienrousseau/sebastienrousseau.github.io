@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/hi/2026-05-30-uk-wholesale-digital-markets-to
 image_alt: "सेबास्तियन रूसो का श्वेत-श्याम चित्र"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "थोक डिजिटल बाजार 2026, Wholesale Digital Markets Champion, UK gilts, टोकनीकृत गिल्ट्स, DLT निपटान, BoE DSS, Project Guardian, SDX, Project Agorá, City of London"
 language: "hi"
 excerpt: "यूके का Wholesale Digital Markets Champion पद टोकनीकृत गिल्ट्स, DLT-आधारित निपटान और डिजिटल थोक वित्त को राष्ट्रीय प्रतिस्पर्धात्मकता परियोजना बनाता है। 2026 का रणनीतिक प्रश्न डिज़ाइन अनुशासन है — कौन-सी टोकनीकृत परिसंपत्ति किस प्लेटफ़ॉर्म पर बैठेगी, निपटान जोखिम का साक्ष्य कैसे दिया जाएगा, और सिंगापुर, स्विट्ज़रलैंड एवं फ्रैंकफर्ट के विरुद्ध City की थोक भूमिका कैसे सुरक्षित होगी।"
@@ -235,7 +235,7 @@ Regulated Liability Network कई विनियमित संस्था�
 - Global Government Finance, (2026). [यूके थोक डिजिटल बाजार चैम्पियन ⧉](https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/ "यूके थोक डिजिटल बाजार चैम्पियन")।
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="लेखक के बारे में"><img alt="सेबास्तियन रूसो का चित्र" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">सेबास्तियन रूसो</a></strong><span class="author-card-bio">वरिष्ठ बैंकिंग प्रौद्योगिकीविद् जो प्रयोज्य AI, ISO 20022 माइग्रेशन, वित्तीय सेवाओं के लिए पोस्ट-क्वांटम क्रिप्टोग्राफी और थोक भुगतान के संरचनात्मक रूपांतरण पर लिखते हैं।</span><span class="author-credentials">HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group में 20+ वर्षों का अनुभव। <a href="/about/index.html">पूर्ण प्रोफ़ाइल</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="लेखक के बारे में"><img alt="सेबास्तियन रूसो का चित्र" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">सेबास्तियन रूसो</a></strong><span class="author-card-bio">वरिष्ठ बैंकिंग प्रौद्योगिकीविद् जो प्रयोज्य AI, ISO 20022 माइग्रेशन, वित्तीय सेवाओं के लिए पोस्ट-क्वांटम क्रिप्टोग्राफी और थोक भुगतान के संरचनात्मक रूपांतरण पर लिखते हैं।</span><span class="author-credentials">HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group में 20+ वर्षों का अनुभव। <a href="/about/index.html">पूर्ण प्रोफ़ाइल</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">अंतिम समीक्षा <time datetime="2026-05-30">2026-05-30</time>।</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">संबंधित पठन</h2>

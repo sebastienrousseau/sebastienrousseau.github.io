@@ -19,7 +19,7 @@ id: "https://sebastienrousseau.com/it/2026-05-19-globali-wholesale-pagamenti-eco
 image_alt: "Ritratto in bianco e nero di Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "pagamenti wholesale 2026, economia dei pagamenti globali, ISO 20022, RTGS, pagamenti transfrontalieri, BIS CPMI, FSB, Swift CBPR+, roadmap G20, regolamento lordo in tempo reale, Project Agorá, Project Mandala, Project Nexus, interoperabilità dei pagamenti, corrispondenza bancaria, frammentazione dei pagamenti, CBDC wholesale"
 language: "it"
 last_reviewed: "2026-05-19"

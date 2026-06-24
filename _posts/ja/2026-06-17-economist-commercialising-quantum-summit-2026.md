@@ -20,7 +20,7 @@ id: "https://sebastienrousseau.com/2026-06-17-economist-commercialising-quantum-
 image_alt: "セバスチャン・ルソーのモノクロ・ポートレート"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "Commercialising Quantum Global 2026, Economist Impact サミット, ポスト量子暗号, NIST ML-KEM, harvest-now decrypt-later, SNDL, HSBC 量子, Philip Intallura, 量子センシング, GPS 非依存ナビゲーション, NQCC, EU 量子法, Quantcore, qBIG 賞, Lord Vallance, ハイブリッド量子古典, DORA 第 6 条"
 language: "ja-JP"
 last_reviewed: "2026-06-17"

@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/ha/2026-05-30-uk-wholesale-digital-markets-to
 image_alt: "Hoton Baki da Fari na Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "Kasuwannin dijital na yawa Birtaniya 2026, Wholesale Digital Markets Champion, Chris Woolard, gilts tokenised, UK gilts, DLT settlement, BoE DSS, Project Guardian, SDX, Project Agorá, GOV.UK, HM Treasury, Bank of England, City of London, sasantawa"
 language: "ha"
 excerpt: "Matsayin Zakara na Kasuwannin Dijital na Yawa na Birtaniya yana mai da gilts da aka mai da su zuwa tokens, sasantawa ta DLT, da kuɗin yawa na dijital zuwa aikin ƙarfin gasa na ƙasa. Tambayar dabaru ta 2026 ga bankuna ita ce horon zane — wane kadarorin tokenised ke kan wace dandali, yadda ake nuna shaidar haɗarin sasantawa, da kuma yadda za a kare matsayin yawa na City of London akan Singapore, Switzerland, da Frankfurt."
@@ -235,7 +235,7 @@ Maki na asali da aka tara akan tallafin lamuni. Ragewar rufin ruwa na cikin yini
 - Global Government Finance, (2026). [Zakaran kasuwannin dijital na babba na Birtaniya ⧉](https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/ "Zakaran kasuwannin dijital na babba na Birtaniya").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Game da marubucin"><img alt="Hoton Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Babban masanin fasahar banki yana rubutu kan amfani da AI, ƙaurar ISO 20022, cryptography na bayan ƙididdiga ga sabis na kuɗi, da sauye-sauyen tsarin na biyan kuɗi na babba.</span><span class="author-credentials">Shekaru 20+ a HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Cikakken bayani</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Game da marubucin"><img alt="Hoton Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Babban masanin fasahar banki yana rubutu kan amfani da AI, ƙaurar ISO 20022, cryptography na bayan ƙididdiga ga sabis na kuɗi, da sauye-sauyen tsarin na biyan kuɗi na babba.</span><span class="author-credentials">Shekaru 20+ a HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Cikakken bayani</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Bita ta ƙarshe <time datetime="2026-05-30">2026-05-30</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Karatun da ya shafi haka</h2>

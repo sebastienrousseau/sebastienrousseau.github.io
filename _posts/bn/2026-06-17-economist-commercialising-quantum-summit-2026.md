@@ -20,7 +20,7 @@ id: "https://sebastienrousseau.com/2026-06-17-economist-commercialising-quantum-
 image_alt: "সেবাস্তিয়ান রুসোর সাদা-কালো প্রতিকৃতি"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "Commercialising Quantum Global 2026, Economist Impact সম্মেলন, পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, NIST ML-KEM, harvest-now decrypt-later, SNDL, HSBC কোয়ান্টাম, Philip Intallura, কোয়ান্টাম সেন্সিং, GPS-নিরপেক্ষ নেভিগেশন, NQCC, EU Quantum Act, Quantcore, qBIG পুরস্কার, Lord Vallance, হাইব্রিড কোয়ান্টাম-ক্লাসিক্যাল, DORA Article 6"
 language: "bn-IN"
 last_reviewed: "2026-06-17"

@@ -20,7 +20,7 @@ id: "https://sebastienrousseau.com/2026-06-16-ai-aware-dotfiles-secure-reproduci
 image_alt: "Sebastien Rousseau 黑白肖像"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "dotfiles, Chezmoi, MCP, Model Context Protocol, SLSA, SOPS, age 加密, 声明式配置, 开发者工作站, DORA 第 5 条, NIST CSF 2.0, 供应链安全, 智能体 AI, 多 shell 一致性, Zsh, Fish, Nushell"
 language: "zh-Hans"
 last_reviewed: "2026-06-16"
@@ -261,7 +261,7 @@ Bash、Zsh、Fish、Nushell 与 PowerShell——并在 macOS、Linux 与 WSL 上
 - GitHub, (2026). *dotfiles 开源仓库*. Available at: [dotfiles 仓库 ⧉](https://github.com/sebastienrousseau/dotfiles "dotfiles 仓库").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="作者简介"><img alt="Sebastien Rousseau 肖像" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">资深银行技术专家，长期撰写关于应用型 AI、ISO 20022 迁移、面向金融服务的后量子密码学以及批发支付结构性变革的文章。</span><span class="author-credentials">在 HSBC 商业与投资银行、PayPal、Barclays、Shazam、AKQA、Virgin 集团累计 20 余年经验。<a href="/about/index.html">完整简介</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="作者简介"><img alt="Sebastien Rousseau 肖像" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">资深银行技术专家，长期撰写关于应用型 AI、ISO 20022 迁移、面向金融服务的后量子密码学以及批发支付结构性变革的文章。</span><span class="author-credentials">在 HSBC 商业与投资银行、PayPal、Barclays、Shazam、AKQA、Virgin 集团累计 20 余年经验。<a href="/about/index.html">完整简介</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">最近审阅 <time datetime="2026-06-16">2026-06-16</time>。</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">延伸阅读</h2>

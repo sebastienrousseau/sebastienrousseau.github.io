@@ -20,7 +20,7 @@ id: "https://sebastienrousseau.com/2026-06-17-economist-commercialising-quantum-
 image_alt: "Hoton Sebastien Rousseau a baki da fari"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "Commercialising Quantum Global 2026, taron Economist Impact, cryptography post-quantum, NIST ML-KEM, harvest-now decrypt-later, SNDL, HSBC quantum, Philip Intallura, quantum sensing, kewayawa mai zaman kanta daga GPS, NQCC, EU Quantum Act, Quantcore, qBIG prize, Lord Vallance, hybrid quantum-classical, DORA Article 6"
 language: "ha-NG"
 last_reviewed: "2026-06-17"

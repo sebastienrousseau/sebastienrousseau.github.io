@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/cs/2026-05-30-uk-wholesale-digital-markets-to
 image_alt: "Černobílý portrét Sebastiena Rousseaua"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "velkoobchodní digitální trhy UK 2026, Chris Woolard, tokenizované gilty, tokenizované velkoobchodní finance, Wholesale Digital Markets Champion, tokenizace UK, vypořádání, BoE DSS, Project Guardian, SDX, Project Agorá, atomické vypořádání"
 language: "cs"
 excerpt: "Britská role Wholesale Digital Markets Champion činí z tokenizovaných giltů, vypořádání na bázi DLT a digitálních velkoobchodních financí národní projekt konkurenceschopnosti. Strategickou otázkou roku 2026 pro banky je disciplína návrhu — která tokenizovaná aktiva patří na kterou platformu, jak doložit riziko vypořádání a jak obhájit velkoobchodní roli City of London proti Singapuru, Švýcarsku a Frankfurtu."
@@ -238,7 +238,7 @@ Bazické body ušetřené na financování zajištění. Snížení vnitrodenní
 - Global Government Finance, (2026). [Britský Wholesale Digital Markets Champion ⧉](https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/ "Britský Wholesale Digital Markets Champion").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="O autorovi"><img alt="Portrét Sebastiena Rousseaua" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Seniorní bankovní technolog, který píše o aplikované AI, migraci ISO 20022, postkvantové kryptografii pro finanční služby a strukturální transformaci velkoobchodních plateb.</span><span class="author-credentials">Více než 20 let zkušeností napříč HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA a Virgin Group. <a href="/about/index.html">Úplný profil</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="O autorovi"><img alt="Portrét Sebastiena Rousseaua" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Seniorní bankovní technolog, který píše o aplikované AI, migraci ISO 20022, postkvantové kryptografii pro finanční služby a strukturální transformaci velkoobchodních plateb.</span><span class="author-credentials">Více než 20 let zkušeností napříč HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA a Virgin Group. <a href="/about/index.html">Úplný profil</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Naposledy ověřeno <time datetime="2026-05-30">2026-05-30</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Související čtení</h2>

@@ -20,7 +20,7 @@ id: "https://sebastienrousseau.com/2026-06-20-http-handle-zero-dependency-edge-i
 image_alt: "Sebastien Rousseau 黑白肖像"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "http-handle, Rust 邊緣入口, 零依賴代理, 銀行基礎設施, mTLS JWT, sendfile 零複製, ALPN HTTP3, DORA 合規, 巴塞爾III, OTLP 可觀察性, 靜態二進位, ARM64 銀行, 零信任銀行, 輕量級入口, Rust 銀行安全"
 language: "zh-Hant-TW"
 last_reviewed: "2026-06-20"
@@ -316,7 +316,7 @@ Internet Engineering Task Force (2014). *RFC 7301: Transport Layer Security (TLS
 OpenTelemetry Authors (2024). *OpenTelemetry Protocol Specification (OTLP)*. Available at: [https://opentelemetry.io/docs/specs/otlp/](https://opentelemetry.io/docs/specs/otlp/)
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="關於作者"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">高階銀行業技術專家，專注於應用 AI、ISO 20022 遷移、金融服務的後量子密碼學以及批發支付的結構性變革。</span><span class="author-credentials">20 餘年經驗，跨越滙豐商業與投資銀行、PayPal、巴克萊、Shazam、AKQA、維珍集團。 <a href="/about/index.html">完整簡介</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="關於作者"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">高階銀行業技術專家，專注於應用 AI、ISO 20022 遷移、金融服務的後量子密碼學以及批發支付的結構性變革。</span><span class="author-credentials">20 餘年經驗，跨越滙豐商業與投資銀行、PayPal、巴克萊、Shazam、AKQA、維珍集團。 <a href="/about/index.html">完整簡介</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">最後審閱 <time datetime="2026-06-20">2026-06-20</time>。</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">相關閱讀</h2>

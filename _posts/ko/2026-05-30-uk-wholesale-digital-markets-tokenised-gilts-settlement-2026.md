@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/ko/2026-05-30-uk-wholesale-digital-markets-to
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "영국 도매 디지털 시장 2026, Wholesale Digital Markets Champion, 토큰화 길트, UK gilts, DLT 결제, BoE DSS, Project Guardian, SDX, Project Agorá, HM Treasury, Bank of England, City of London"
 language: "ko"
 excerpt: "영국 Wholesale Digital Markets Champion 직책은 토큰화 길트, DLT 결제, 디지털 도매 금융을 국가 경쟁력 프로젝트로 격상시킵니다. 2026년 은행권의 전략 질문은 설계 규율 — 어떤 토큰화 자산이 어느 플랫폼에 올라가는지, 결제 리스크를 어떻게 증거로 남기는지, 싱가포르·스위스·프랑크푸르트에 맞서 시티의 도매 역할을 어떻게 방어할지입니다."
@@ -235,7 +235,7 @@ Regulated Liability Network는 복수의 규제 기관이 발행하는 토큰화
 - Global Government Finance, (2026). [영국 도매 디지털 시장 챔피언 ⧉](https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/ "영국 도매 디지털 시장 챔피언").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="저자 소개"><img alt="Sebastien Rousseau의 인물 사진" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">응용 AI, ISO 20022 마이그레이션, 금융 서비스용 양자내성 암호, 도매 결제의 구조적 전환에 관해 집필하는 시니어 뱅킹 기술 전문가입니다.</span><span class="author-credentials">HSBC 상업·투자은행, PayPal, Barclays, Shazam, AKQA, Virgin Group을 아우르는 20년 이상의 경력. <a href="/about/index.html">전체 프로필</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="저자 소개"><img alt="Sebastien Rousseau의 인물 사진" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">응용 AI, ISO 20022 마이그레이션, 금융 서비스용 양자내성 암호, 도매 결제의 구조적 전환에 관해 집필하는 시니어 뱅킹 기술 전문가입니다.</span><span class="author-credentials">HSBC 상업·투자은행, PayPal, Barclays, Shazam, AKQA, Virgin Group을 아우르는 20년 이상의 경력. <a href="/about/index.html">전체 프로필</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">최종 검토 <time datetime="2026-05-30">2026-05-30</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">관련 읽을거리</h2>

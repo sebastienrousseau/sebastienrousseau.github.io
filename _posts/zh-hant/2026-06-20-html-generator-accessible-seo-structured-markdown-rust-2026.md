@@ -20,7 +20,7 @@ id: "https://sebastienrousseau.com/2026-06-20-html-generator-accessible-seo-stru
 image_alt: "Sebastien Rousseau 的黑白肖像"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "html-generator, Rust Markdown 轉 HTML, 程式碼即無障礙, WCAG 2.1 AA, SEO 就緒 HTML, JSON-LD, MathML, Mermaid, WebAssembly, EAA, DORA, ADA Title III, 無障礙發布, 沙盒解析, 開放原始碼"
 language: "zh-Hant"
 last_reviewed: "2026-06-20"
@@ -282,6 +282,6 @@ G-SIBs 管理龐大的多語言公開資產，在多個司法管轄區發布數�
 - GitHub，2026年。[HTML Generator 儲存庫 ⧉](https://github.com/sebastienrousseau/html-generator "HTML Generator open-source repository")。
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="關於作者"><img alt="Sebastien Rousseau 的肖像" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">資深銀行科技作家，專注於應用 AI、支付基礎設施、代幣化貨幣、ISO 20022、後量子安全、雲端原生金融服務、開放原始碼基礎設施與受監管數位市場。</span><span class="author-credentials">20 餘年橫跨滙豐商業及投資銀行、PayPal、巴克萊、Shazam、AKQA、維珍集團。<a href="/about/index.html">完整簡介</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="關於作者"><img alt="Sebastien Rousseau 的肖像" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">資深銀行科技作家，專注於應用 AI、支付基礎設施、代幣化貨幣、ISO 20022、後量子安全、雲端原生金融服務、開放原始碼基礎設施與受監管數位市場。</span><span class="author-credentials">20 餘年橫跨滙豐商業及投資銀行、PayPal、巴克萊、Shazam、AKQA、維珍集團。<a href="/about/index.html">完整簡介</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">最後審閱日期 <time datetime="2026-06-20">2026-06-20</time>。</p>
 <!-- enrich-end -->

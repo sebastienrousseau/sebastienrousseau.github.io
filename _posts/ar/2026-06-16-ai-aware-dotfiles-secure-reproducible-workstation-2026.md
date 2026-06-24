@@ -20,7 +20,7 @@ id: "https://sebastienrousseau.com/2026-06-16-ai-aware-dotfiles-secure-reproduci
 image_alt: "صورة بالأبيض والأسود لـ Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "dotfiles, Chezmoi, MCP, Model Context Protocol, SLSA, SOPS, age encryption, تكوين تصريحي, محطة عمل المطور, DORA Article 5, NIST CSF 2.0, أمن سلسلة التوريد, الذكاء الاصطناعي الوكيلي, تكافؤ متعدد الأصداف, Zsh, Fish, Nushell"
 language: "ar"
 last_reviewed: "2026-06-16"
@@ -261,7 +261,7 @@ Bash، Zsh، Fish، Nushell، وPowerShell — مع تكافؤ عبر macOS وLi
 - GitHub، (2026). *مستودع dotfiles مفتوح المصدر*. متاح في: [مستودع dotfiles ⧉](https://github.com/sebastienrousseau/dotfiles "مستودع dotfiles").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="نبذة عن المؤلف"><img alt="صورة شخصية لـ Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">تقني مصرفي أول يكتب في الذكاء الاصطناعي التطبيقي، وترحيل ISO 20022، والتشفير ما بعد الكمومي للخدمات المالية، والتحول الهيكلي لمدفوعات الجملة.</span><span class="author-credentials">أكثر من 20 عاماً عبر HSBC Commercial &amp; Investment Bank، وPayPal، وBarclays، وShazam، وAKQA، ومجموعة Virgin. <a href="/about/index.html">الملف الكامل</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="نبذة عن المؤلف"><img alt="صورة شخصية لـ Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">تقني مصرفي أول يكتب في الذكاء الاصطناعي التطبيقي، وترحيل ISO 20022، والتشفير ما بعد الكمومي للخدمات المالية، والتحول الهيكلي لمدفوعات الجملة.</span><span class="author-credentials">أكثر من 20 عاماً عبر HSBC Commercial &amp; Investment Bank، وPayPal، وBarclays، وShazam، وAKQA، ومجموعة Virgin. <a href="/about/index.html">الملف الكامل</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">آخر مراجعة <time datetime="2026-06-16">2026-06-16</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">قراءات ذات صلة</h2>

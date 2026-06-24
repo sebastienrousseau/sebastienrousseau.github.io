@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/sv/2026-05-30-uk-wholesale-digital-markets-to
 image_alt: "Svartvitt porträtt av Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "digitala grossistmarknader Storbritannien 2026, Wholesale Digital Markets Champion, tokeniserade gilts, tokeniserad grossistfinansiering, DSS, intradagsrepo, atomär DvP, City i London, avveckling"
 language: "sv"
 excerpt: "Storbritanniens Wholesale Digital Markets Champion gör tokeniserade gilts, DLT-baserad avveckling och digital grossistfinansiering till ett nationellt konkurrenskraftsprojekt. Den strategiska frågan för banker 2026 är designdisciplin — vilka tokeniserade tillgångar som hör hemma på vilken plattform, hur avvecklingsrisk bevisas och hur Citys grossistroll försvaras mot Singapore, Schweiz och Frankfurt."
@@ -238,7 +238,7 @@ Baspunkter sparade på säkerhetsfinansiering. Reducering av intradagslikviditet
 - Global Government Finance, (2026). [Storbritanniens champion för digitala grossistmarknader ⧉](https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/ "Champion för digitala grossistmarknader").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Om författaren"><img alt="Porträtt av Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banktechnolog som skriver om tillämpad AI, ISO 20022-migrering, postkvant-kryptografi för finansiella tjänster och den strukturella transformationen av grossistbetalningar.</span><span class="author-credentials">Över 20 år inom HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Fullständig profil</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Om författaren"><img alt="Porträtt av Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banktechnolog som skriver om tillämpad AI, ISO 20022-migrering, postkvant-kryptografi för finansiella tjänster och den strukturella transformationen av grossistbetalningar.</span><span class="author-credentials">Över 20 år inom HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Fullständig profil</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Senast granskad <time datetime="2026-05-30">2026-05-30</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Läs vidare</h2>

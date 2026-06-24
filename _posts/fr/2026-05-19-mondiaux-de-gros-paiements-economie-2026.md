@@ -19,7 +19,7 @@ id: "https://sebastienrousseau.com/fr/2026-05-19-mondiaux-de-gros-paiements-econ
 image_alt: "Portrait noir et blanc de Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "paiements de gros 2026, économie des paiements mondiaux, ISO 20022, RTGS, paiements transfrontaliers, BIS CPMI, FSB, Swift CBPR+, feuille de route G20, règlement brut en temps réel, Project Agorá, Project Mandala, Project Nexus, interopérabilité des paiements, banque correspondante, fragmentation des paiements, CBDC de gros"
 language: "fr"
 last_reviewed: "2026-05-19"

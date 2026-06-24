@@ -18,7 +18,7 @@ id: "https://sebastienrousseau.com/2026-06-22-hsh-zero-downtime-cryptographic-st
 image_alt: "صورة بالأبيض والأسود لـ Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "hsh, تشفير Rust, تجزئة كلمات المرور, Argon2id, الأمن المصرفي, تعشيق HSM, الامتثال لـ DORA, Basel III, ترحيل بصفر توقف, أمان الذاكرة, PBKDF2, scrypt, التعافي السيبراني"
 language: "ar"
 last_reviewed: "2026-06-22"
@@ -336,6 +336,6 @@ Biryukov, A., Dinu, D., Khovratovich, D., and Josefsson, S. (2021). *RFC 9106: �
 مؤسسة OWASP (2024). *ورقة مرجعية لتخزين كلمات المرور*. متاح في: [https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html](https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html "ورقة OWASP المرجعية لتخزين كلمات المرور")
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="عن المؤلف"><img alt="صورة شخصية لـ Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">تقني مصرفي أول يكتب في الذكاء الاصطناعي التطبيقي، وترحيل ISO 20022، والتشفير ما بعد الكمي للخدمات المالية، والتحوُّل البنيوي لمدفوعات الجملة.</span><span class="author-credentials">أكثر من 20 عاماً عبر HSBC Commercial &amp; Investment Bank وPayPal وBarclays وShazam وAKQA وVirgin Group. <a href="/about/index.html">الملف الكامل</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="عن المؤلف"><img alt="صورة شخصية لـ Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">تقني مصرفي أول يكتب في الذكاء الاصطناعي التطبيقي، وترحيل ISO 20022، والتشفير ما بعد الكمي للخدمات المالية، والتحوُّل البنيوي لمدفوعات الجملة.</span><span class="author-credentials">أكثر من 20 عاماً عبر HSBC Commercial &amp; Investment Bank وPayPal وBarclays وShazam وAKQA وVirgin Group. <a href="/about/index.html">الملف الكامل</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">آخر مراجعة <time datetime="2026-06-22">2026-06-22</time>.</p>
 <!-- enrich-end -->
