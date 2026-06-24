@@ -20,7 +20,7 @@ id: "https://sebastienrousseau.com/2026-06-25-quantum-dawn-cib-kyberlib-quantum-
 image_alt: "Sebastien Rousseau 黑白肖像"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "后量子密码学, PQC, KyberLib, ML-KEM, ML-DSA, FIPS 203, FIPS 204, 量子韧性支付, CIB, BIS, G7 网络专家组, 密码敏捷性, HNDL, CRQC, CBOM, 先收割后解密, 混合密钥交换, 银行业, 大额支付, 贸易融资, 托管, DORA, Basel III, SM&CR"
 language: "zh-Hans"
 last_reviewed: "2026-06-25"
@@ -163,6 +163,6 @@ BIS《[*Quantum Dawn* 论文](https://www.bis.org/publ/bppdf/bispap158.htm "BIS 
 从 CBOM 开始。包装每一处原语。先迁移最长的尾部。在它旁边签上你的名字。
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="About the author"><img alt="Sebastien Rousseau 肖像" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">资深银行业技术专家，撰写应用 AI、ISO 20022 迁移、金融服务后量子密码学，以及大额支付结构性转型相关文章。</span><span class="author-credentials">在汇丰商业与投资银行、PayPal、巴克莱、Shazam、AKQA、Virgin Group 拥有 20 多年经验。<a href="/about/index.html">完整简介</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="About the author"><img alt="Sebastien Rousseau 肖像" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">资深银行业技术专家，撰写应用 AI、ISO 20022 迁移、金融服务后量子密码学，以及大额支付结构性转型相关文章。</span><span class="author-credentials">在汇丰商业与投资银行、PayPal、巴克莱、Shazam、AKQA、Virgin Group 拥有 20 多年经验。<a href="/about/index.html">完整简介</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">最后审阅 <time datetime="2026-06-25">2026-06-25</time>。</p>
 <!-- enrich-end -->

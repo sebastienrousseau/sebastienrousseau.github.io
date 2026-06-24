@@ -20,7 +20,7 @@ id: "https://sebastienrousseau.com/2026-06-25-quantum-dawn-cib-kyberlib-quantum-
 image_alt: "صورة بالأبيض والأسود لـ Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "التشفير بعد الكم, PQC, KyberLib, ML-KEM, ML-DSA, FIPS 203, FIPS 204, مدفوعات صامدة كمياً, CIB, BIS, مجموعة خبراء السيبرانية في G7, مرونة التشفير, HNDL, CRQC, CBOM, الحصاد الآن والفك لاحقاً, تبادل مفاتيح هجين, المصرفية, المدفوعات بالجملة, تمويل التجارة, الحفظ, DORA, Basel III, SM&CR"
 language: "ar-SA"
 last_reviewed: "2026-06-25"
@@ -163,6 +163,6 @@ site_software: "Static Site Generator, Rust"
 ابدأ بـ CBOM. غلِّف كل أولية. انقل أطول الذيول أولاً. وقِّع اسمك عليه.
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="عن المؤلف"><img alt="صورة شخصية لـ Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">تقني مصرفي أول يكتب عن الذكاء الاصطناعي التطبيقي، والانتقال إلى ISO 20022، والتشفير بعد الكم للخدمات المالية، والتحول البنيوي للمدفوعات بالجملة.</span><span class="author-credentials">أكثر من 20 عاماً عبر HSBC Commercial &amp; Investment Bank، وPayPal، وBarclays، وShazam، وAKQA، وVirgin Group. <a href="/about/index.html">الملف الكامل</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="عن المؤلف"><img alt="صورة شخصية لـ Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">تقني مصرفي أول يكتب عن الذكاء الاصطناعي التطبيقي، والانتقال إلى ISO 20022، والتشفير بعد الكم للخدمات المالية، والتحول البنيوي للمدفوعات بالجملة.</span><span class="author-credentials">أكثر من 20 عاماً عبر HSBC Commercial &amp; Investment Bank، وPayPal، وBarclays، وShazam، وAKQA، وVirgin Group. <a href="/about/index.html">الملف الكامل</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">آخر مراجعة <time datetime="2026-06-25">2026-06-25</time>.</p>
 <!-- enrich-end -->

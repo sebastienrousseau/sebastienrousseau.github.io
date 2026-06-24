@@ -20,7 +20,7 @@ id: "https://sebastienrousseau.com/2026-06-25-quantum-dawn-cib-kyberlib-quantum-
 image_alt: "Sebastien Rousseau'nun siyah beyaz portresi"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "kuantum sonrası kriptografi, PQC, KyberLib, ML-KEM, ML-DSA, FIPS 203, FIPS 204, kuantuma dayanıklı ödemeler, CIB, BIS, G7 Siber Uzman Grubu, kripto-çeviklik, HNDL, CRQC, CBOM, harvest now decrypt later, hibrit anahtar değişimi, bankacılık, toptan ödemeler, ticaret finansmanı, saklama, DORA, Basel III, SM&CR"
 language: "tr-TR"
 last_reviewed: "2026-06-25"
@@ -163,6 +163,6 @@ Kuantum sonrası geçiş artık ilkelliklerin var olup olmadığı sorusu değil
 CBOM ile başlayın. Her ilkelliği sarın. Önce en uzun kuyrukları taşıyın. Adınızı altına atın.
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Yazar hakkında"><img alt="Sebastien Rousseau'nun portresi" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Uygulamalı AI, ISO 20022 geçişi, finansal hizmetler için kuantum sonrası kriptografi ve toptan ödemelerin yapısal dönüşümü üzerine yazan kıdemli bankacılık teknolojisti.</span><span class="author-credentials">HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group genelinde 20+ yıl. <a href="/about/index.html">Tam profil</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Yazar hakkında"><img alt="Sebastien Rousseau'nun portresi" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Uygulamalı AI, ISO 20022 geçişi, finansal hizmetler için kuantum sonrası kriptografi ve toptan ödemelerin yapısal dönüşümü üzerine yazan kıdemli bankacılık teknolojisti.</span><span class="author-credentials">HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group genelinde 20+ yıl. <a href="/about/index.html">Tam profil</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Son incelenme <time datetime="2026-06-25">2026-06-25</time>.</p>
 <!-- enrich-end -->

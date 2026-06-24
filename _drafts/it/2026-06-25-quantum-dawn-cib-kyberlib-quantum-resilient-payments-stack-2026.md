@@ -20,7 +20,7 @@ id: "https://sebastienrousseau.com/2026-06-25-quantum-dawn-cib-kyberlib-quantum-
 image_alt: "Ritratto in bianco e nero di Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "crittografia post-quantistica, PQC, KyberLib, ML-KEM, ML-DSA, FIPS 203, FIPS 204, pagamenti resistenti al quantum, CIB, BIS, G7 Cyber Expert Group, crypto-agility, HNDL, CRQC, CBOM, harvest now decrypt later, scambio di chiavi ibrido, banche, pagamenti wholesale, trade finance, custodia, DORA, Basel III, SM&CR"
 language: "it-IT"
 last_reviewed: "2026-06-25"
@@ -163,6 +163,6 @@ La transizione post-quantistica non è più una questione di esistenza dei primi
 Si parte dalla CBOM. Si avvolge ogni primitivo. Si migrano per prime le code più lunghe. Si firma con il proprio nome.
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Informazioni sull'autore"><img alt="Ritratto di Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist che scrive su AI applicata, migrazione ISO 20022, crittografia post-quantistica per i servizi finanziari e la trasformazione strutturale dei pagamenti wholesale.</span><span class="author-credentials">Oltre 20 anni in HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profilo completo</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Informazioni sull'autore"><img alt="Ritratto di Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist che scrive su AI applicata, migrazione ISO 20022, crittografia post-quantistica per i servizi finanziari e la trasformazione strutturale dei pagamenti wholesale.</span><span class="author-credentials">Oltre 20 anni in HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profilo completo</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Ultima revisione <time datetime="2026-06-25">2026-06-25</time>.</p>
 <!-- enrich-end -->

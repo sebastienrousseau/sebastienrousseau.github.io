@@ -20,7 +20,7 @@ id: "https://sebastienrousseau.com/2026-06-25-quantum-dawn-cib-kyberlib-quantum-
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "post-quantum cryptography, PQC, KyberLib, ML-KEM, ML-DSA, FIPS 203, FIPS 204, quantum-resilient payments, CIB, BIS, G7 Cyber Expert Group, crypto-agility, HNDL, CRQC, CBOM, harvest now decrypt later, hybrid key exchange, banking, wholesale payments, trade finance, custody, DORA, Basel III, SM&CR"
 language: "fil-PH"
 last_reviewed: "2026-06-25"
@@ -163,6 +163,6 @@ Hindi na tanong ng post-quantum transition kung umiiral ang primitives. Umiiral 
 Magsimula sa CBOM. Balutin ang bawat primitive. Unahing i-migrate ang pinakamahahabang tail. Lagdaan ito sa pangalan.
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Tungkol sa may-akda"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist na sumusulat tungkol sa applied AI, ISO 20022 migration, post-quantum cryptography para sa financial services, at sa structural transformation ng wholesale payments.</span><span class="author-credentials">20+ taon sa HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Buong profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Tungkol sa may-akda"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist na sumusulat tungkol sa applied AI, ISO 20022 migration, post-quantum cryptography para sa financial services, at sa structural transformation ng wholesale payments.</span><span class="author-credentials">20+ taon sa HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Buong profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Huling sinuri noong <time datetime="2026-06-25">2026-06-25</time>.</p>
 <!-- enrich-end -->
