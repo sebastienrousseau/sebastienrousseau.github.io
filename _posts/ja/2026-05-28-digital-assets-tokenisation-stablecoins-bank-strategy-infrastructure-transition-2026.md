@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/ja/2026-05-28-digital-assets-tokenisation-sta
 image_alt: "Sebastien Rousseau の白黒ポートレート"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "デジタル資産 2026, トークン化された現実資産, ステーブルコイン 銀行, トークン化預金, デジタル資産カストディ, DLT 銀行, 決済インフラ, 担保の移動性, プログラマブル・マネー, 銀行戦略 デジタル資産"
 language: "ja"
 excerpt: "デジタル資産はもはやイノベーションへの賭けではありません。決済、カストディ、バランスシートのアーキテクチャに関する問いです。暗号資産は約3兆ドルの資産クラス、ステーブルコインは約3,000億ドルに達し、トークン化された現実資産は2025年に約300%成長しました。2026年の銀行に問われるのは関与の是非ではなく、マネー、資産、決済がプログラマブルになる世界に向けてインフラ、統制、ガバナンスをどう設計するかです。"
@@ -307,7 +307,7 @@ BCG は10ステップのガイドで結論しています。これを次の12カ
 - Sebastien Rousseau, (2026). [銀行のためのエージェント型エンジニアリング ⧉](https://sebastienrousseau.com/2026-05-17-agentic-engineering-banks-blueprint-2026 "Agentic Engineering")。
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="著者について"><img alt="Sebastien Rousseau のポートレート" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">応用 AI、ISO 20022 移行、金融サービス向けポスト量子暗号、ホールセール決済の構造変革について執筆するシニア銀行テクノロジスト。</span><span class="author-credentials">HSBC コマーシャル&amp;インベストメントバンク、PayPal、Barclays、Shazam、AKQA、Virgin Group を横断する 20 年以上の経験。<a href="/about/index.html">プロフィール全体</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="著者について"><img alt="Sebastien Rousseau のポートレート" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">応用 AI、ISO 20022 移行、金融サービス向けポスト量子暗号、ホールセール決済の構造変革について執筆するシニア銀行テクノロジスト。</span><span class="author-credentials">HSBC コマーシャル&amp;インベストメントバンク、PayPal、Barclays、Shazam、AKQA、Virgin Group を横断する 20 年以上の経験。<a href="/about/index.html">プロフィール全体</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">最終確認 <time datetime="2026-05-28">2026-05-28</time>。</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">関連記事</h2>

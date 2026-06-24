@@ -18,7 +18,7 @@ id: "https://sebastienrousseau.com/ha/2026-06-06-wholesale-payments-index-iso200
 image_alt: "Hoton Baki da Fari na Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "biyan kuɗi na wholesale 2026, ISO 20022, tokenised deposits, Project Agora, biyan kuɗi na cross-border, biyan kuɗi na ainihin-lokaci, bayanan structured address, ingancin bayanan biyan kuɗi"
 language: "ha-NG"
 last_reviewed: "2026-06-06"
@@ -243,6 +243,6 @@ Auna shirin bayanan da aka tsara, ƙin biyan kuɗi, farashin gyara, lokacin sett
 - Deutsche Bank, (2026). [Digital Money: stablecoins, tokenised deposits and CBDCs ⧉](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money: stablecoins, tokenised deposits and CBDCs").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Game da marubucin"><img alt="Hoton Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Babban masanin fasahar banki da ke rubuce-rubuce kan AI mai amfani, kayan aikin biyan kuɗi, kuɗin tokenised, ISO 20022, tsaron post-quantum, hidimomin kuɗi na cloud-native, da kasuwannin dijital da aka tsara.</span><span class="author-credentials">Fiye da shekaru 20 a HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Cikakken bayani</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Game da marubucin"><img alt="Hoton Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Babban masanin fasahar banki da ke rubuce-rubuce kan AI mai amfani, kayan aikin biyan kuɗi, kuɗin tokenised, ISO 20022, tsaron post-quantum, hidimomin kuɗi na cloud-native, da kasuwannin dijital da aka tsara.</span><span class="author-credentials">Fiye da shekaru 20 a HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Cikakken bayani</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">An yi bita ta ƙarshe <time datetime="2026-06-06">2026-06-06</time>.</p>
 <!-- enrich-end -->

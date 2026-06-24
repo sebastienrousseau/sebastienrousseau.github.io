@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/zh-hans/2026-05-31-post-quantum-payments-infr
 image_alt: "Sebastien Rousseau 的黑白肖像"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "后量子密码学, PQC 支付, 密码敏捷性, 现收割后解密, HNDL, NIST 后量子标准, ML-KEM, ML-DSA, FIPS 203, FIPS 204, 支付通道迁移, ISO 20022 PQC, SWIFT MT 替换, HSM, PKI 崩塌, 运营韧性, Quantum Computing Cybersecurity Preparedness Act"
 language: "zh-hans"
 excerpt: "现收割后解密把今天受 TLS 保护的支付报文,变成明天被解密后的暴露。ML-KEM 与 ML-DSA 比传统通道当年适配的 RSA 与 ECC 密钥大一个数量级——改造会触发分片、延迟与 HSM 耗尽。2026 年的架构决定,是在监管时钟走完之前打补丁,还是替换。"
@@ -264,7 +264,7 @@ SLH-DSA(SPHINCS+ 的标准化版本)是基于哈希的,因此只依赖哈希函�
 - Bank of England(PRA),(2024)。[SS1/21 — Operational resilience: Impact tolerances for important business services ⧉](https://www.bankofengland.co.uk/prudential-regulation/publication/2024/march/operational-resilience-impact-tolerances-for-important-business-services "PRA SS1/21")。
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="关于作者"><img alt="Sebastien Rousseau 肖像" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">资深银行技术专家,撰写关于应用型人工智能、ISO 20022 迁移、金融服务后量子密码学,以及批发支付结构性转型的文章。</span><span class="author-credentials">在 HSBC 商业与投资银行、PayPal、Barclays、Shazam、AKQA、Virgin 集团积累二十余年经验。<a href="/about/index.html">完整简介</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="关于作者"><img alt="Sebastien Rousseau 肖像" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">资深银行技术专家,撰写关于应用型人工智能、ISO 20022 迁移、金融服务后量子密码学,以及批发支付结构性转型的文章。</span><span class="author-credentials">在 HSBC 商业与投资银行、PayPal、Barclays、Shazam、AKQA、Virgin 集团积累二十余年经验。<a href="/about/index.html">完整简介</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">最近审阅 <time datetime="2026-05-31">2026-05-31</time>。</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">延伸阅读</h2>

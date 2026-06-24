@@ -20,7 +20,7 @@ id: "https://sebastienrousseau.com/2026-06-20-http-handle-zero-dependency-edge-i
 image_alt: "Ảnh chân dung đen trắng của Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "http-handle, Rust edge ingress, proxy không phụ thuộc, cơ sở hạ tầng ngân hàng, mTLS JWT, sendfile zero-copy, ALPN HTTP3, tuân thủ DORA, Basel III, khả năng quan sát OTLP, nhị phân tĩnh, ARM64 ngân hàng, zero trust ngân hàng, ingress nhẹ, bảo mật ngân hàng Rust"
 language: "vi-VN"
 last_reviewed: "2026-06-20"

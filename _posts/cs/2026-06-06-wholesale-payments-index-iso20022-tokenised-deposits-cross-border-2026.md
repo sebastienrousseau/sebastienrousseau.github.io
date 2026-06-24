@@ -18,7 +18,7 @@ id: "https://sebastienrousseau.com/cs/2026-06-06-wholesale-payments-index-iso200
 image_alt: "Černobílý portrét Sebastiena Rousseaua"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "velkoobchodní platby 2026, ISO 20022, tokenizované vklady, Project Agorá, přeshraniční platby, okamžité platby, strukturovaná adresní data, kvalita platebních dat"
 language: "cs-CZ"
 last_reviewed: "2026-06-06"
@@ -243,6 +243,6 @@ Měřte připravenost strukturovaných dat, zamítnuté platby, náklady na repa
 - Deutsche Bank, (2026). [Digital Money: stablecoins, tokenised deposits and CBDCs ⧉](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money: stablecoins, tokenised deposits and CBDCs").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="O autorovi"><img alt="Portrét Sebastiena Rousseaua" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior bankovní technolog píšící o aplikované AI, platební infrastruktuře, tokenizovaných penězích, ISO 20022, post-kvantové bezpečnosti, cloud-native finančních službách a regulovaných digitálních trzích.</span><span class="author-credentials">20+ let napříč HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Úplný profil</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="O autorovi"><img alt="Portrét Sebastiena Rousseaua" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior bankovní technolog píšící o aplikované AI, platební infrastruktuře, tokenizovaných penězích, ISO 20022, post-kvantové bezpečnosti, cloud-native finančních službách a regulovaných digitálních trzích.</span><span class="author-credentials">20+ let napříč HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Úplný profil</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Naposledy revidováno <time datetime="2026-06-06">2026-06-06</time>.</p>
 <!-- enrich-end -->

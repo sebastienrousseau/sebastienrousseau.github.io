@@ -393,15 +393,110 @@ _IMG_FETCHPRI_RE = re.compile(
 )
 
 
-def _build_cdn_transform_url(path: str, width: int, quality: int) -> str:
-    """Build the canonical /api/transform URL for a CDN path."""
-    from urllib.parse import quote
+# Pre-generated responsive-variant widths emitted by the CDN's image
+# ingestion pipeline. CDN policy (2026-06-23): /api/transform requires
+# authentication; public pages must use these pre-gen variants instead
+# (named `<original-stem>-<width>.webp` next to the original).
+_VARIANT_WIDTHS = (320, 640, 1200, 1920)
+# Paths under these prefixes have pre-generated variants. Paths
+# elsewhere (logos, client artwork, ad-hoc uploads) pass through as
+# the bare CDN URL — no variant swap, no transform call.
+_VARIANT_PREFIXES = ("/stocks/images/",)
 
-    # safe='/' so the leading slash + nested slashes stay intact; the CDN
-    # handler rejects %2F-escaped slashes by treating them as literal in
-    # the path.
-    encoded_path = quote(path, safe="/")
-    return f"{_CDN_TRANSFORM_PREFIX}url={encoded_path}&w={width}&format=webp&q={quality}"
+
+def _snap_to_variant(width: int) -> int:
+    """Snap a requested width up to the next available pre-gen variant.
+
+    Snapping UP rather than DOWN keeps quality good on high-DPI devices;
+    the alternative (snap down to keep bandwidth low) makes large
+    layouts look blurry on retina screens. The CDN serves WebP so
+    bandwidth cost of going up one size is small."""
+    for v in _VARIANT_WIDTHS:
+        if width <= v:
+            return v
+    return _VARIANT_WIDTHS[-1]
+
+
+# Match an already-suffixed variant filename:
+#   foo-1200.webp  → group(1)="foo", group(2)="1200"
+#   foo-640.webp   → group(1)="foo", group(2)="640"
+# Only the exact 4 widths from _VARIANT_WIDTHS, anchored to .webp end.
+_VARIANT_SUFFIX_RE = re.compile(
+    r"^(.+)-(320|640|1200|1920)\.webp$"
+)
+
+
+def _build_cdn_transform_url(path: str, width: int, quality: int) -> str:
+    """Rewrite a CDN path to its pre-generated responsive variant.
+
+    Was previously a thin wrapper over the CDN's /api/transform endpoint
+    (``?url=…&w=…&format=webp&q=…``). The CDN's 2026-06-23 hardening
+    closed that endpoint to the public — every wrapped <img> on the
+    public site began returning 404, with the API's own error message
+    explicitly prescribing pre-gen variants as the fix:
+
+        Public pages should use the pre-generated
+        /stocks/.../-{320,640,1200,1920}.webp variants instead.
+
+    For paths under a known variant prefix (``/stocks/images/``), snaps
+    the requested width up to the nearest available pre-gen and returns
+    ``<CDN-host>/stocks/images/<stem>-<width>.webp``. For everything
+    else (e.g. ``/clients/…`` logos that don't have variants), returns
+    the bare original URL — strictly better than a 404 and matches the
+    CDN's stated policy.
+
+    Idempotent: if ``path`` is already a variant (``foo-1200.webp``)
+    pass it through unchanged so the postbuild's multiple wrap passes
+    don't compound the suffix (``foo-1200-1200.webp``).
+
+    ``quality`` is ignored — variant generation happened at ingestion
+    time with the CDN's policy-set quality and is no longer per-call
+    tunable. Kept in the signature for callsite compatibility."""
+    del quality  # variant quality is fixed at ingestion time
+    if not any(path.startswith(p) for p in _VARIANT_PREFIXES):
+        return f"{_CDN_HOST}{path}"
+    if not path.endswith(".webp"):
+        # Non-webp paths under /stocks/images/ (e.g. .png originals)
+        # don't have webp variants under the same naming convention.
+        # Fall back to the bare CDN URL.
+        return f"{_CDN_HOST}{path}"
+    # Already a variant? Pass through.
+    if _VARIANT_SUFFIX_RE.match(path[len("/stocks/images/"):]):
+        return f"{_CDN_HOST}{path}"
+    variant_w = _snap_to_variant(width)
+    stem = path[: -len(".webp")]
+    return f"{_CDN_HOST}{stem}-{variant_w}.webp"
+
+
+# Match a fully-formed /api/transform URL we want to rewrite in-place.
+# This catches transform URLs persisted in markdown source (post_enrich
+# emitted them before the 2026-06-23 CDN hardening) so they don't survive
+# from old _posts/*.md through ssg rendering into served HTML.
+_PERSISTED_TRANSFORM_RE = re.compile(
+    re.escape(_CDN_HOST)
+    + r"/api/transform\?url=(?P<path>/[^&\"' ]+)(?:&[^\"' ]*?w=(?P<w>\d+))?[^\"' ]*"
+)
+
+
+def _rewrite_persisted_transform(match: re.Match[str]) -> str:
+    """Convert a persisted /api/transform URL into the equivalent pre-gen
+    variant. Used as a single in-place sweep across rendered HTML to clean
+    up references the postbuild wrap pass didn't catch (markdown-embedded
+    related-card srcs, OpenGraph meta content, JSON feed url fields)."""
+    path = match.group("path")
+    try:
+        width = int(match.group("w") or 1200)
+    except (TypeError, ValueError):
+        width = 1200
+    return _build_cdn_transform_url(path, width, 80)
+
+
+def rewrite_persisted_transforms(html: str) -> tuple[str, int]:
+    """Replace every ``https://cloudcdn.pro/api/transform?url=…`` URL in
+    ``html`` with its pre-gen variant equivalent. Returns
+    ``(new_html, n_rewrites)``."""
+    new_html, n = _PERSISTED_TRANSFORM_RE.subn(_rewrite_persisted_transform, html)
+    return new_html, n
 
 
 def _img_attr_src(attrs: str) -> str | None:
@@ -1064,6 +1159,13 @@ def _apply_seo_passes(html: str, page: Path, ctr: _PostbuildCounters) -> str:
     # against the wrapped URL so preload + img src agree byte-for-byte.
     out, n_cdn = wrap_cdn_images_in_transform(out)
     ctr.cdn_wrapped += n_cdn
+    # Clean up any /api/transform URLs persisted in markdown (related-
+    # card srcs, OpenGraph meta, feed metadata) that wrap_cdn_images_…
+    # leaves alone because it only touches bare CDN paths. After CDN's
+    # 2026-06-23 hardening these would 404; rewrite them to pre-gen
+    # variants too.
+    out, n_unwrap = rewrite_persisted_transforms(out)
+    ctr.cdn_wrapped += n_unwrap
     out, n_pl = inject_lcp_preload(out)
     ctr.lcp_preloaded += n_pl
     prev = out

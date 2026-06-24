@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/vi/2026-05-28-digital-assets-tokenisation-sta
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "tài sản kỹ thuật số 2026, RWA token hoá, stablecoin ngân hàng, tiền gửi token hoá, lưu ký tài sản kỹ thuật số, DLT ngân hàng, hạ tầng quyết toán, tính di động tài sản đảm bảo, tiền có thể lập trình, chiến lược ngân hàng tài sản kỹ thuật số"
 language: "vi"
 excerpt: "Tài sản kỹ thuật số không còn là một cược đổi mới. Đây là câu hỏi về kiến trúc quyết toán, lưu ký và bảng cân đối kế toán. Crypto là một lớp tài sản ~3 nghìn tỷ đô la, stablecoin đã đạt ~300 tỷ đô la, và tài sản thực được token hoá tăng ~300% trong năm 2025. Nhiệm vụ chiến lược của ngân hàng năm 2026 không phải là có tham gia hay không mà là thiết kế hạ tầng, kiểm soát và quản trị thế nào cho một thế giới mà tiền, tài sản và quyết toán đều có thể lập trình."
@@ -307,7 +307,7 @@ Bằng doanh thu thu được từ các nguồn có thể tiếp cận, chi phí
 - Sebastien Rousseau, (2026). [Kỹ thuật agentic cho ngân hàng ⧉](https://sebastienrousseau.com/2026-05-17-agentic-engineering-banks-blueprint-2026 "Kỹ thuật agentic").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Về tác giả"><img alt="Chân dung Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Chuyên gia công nghệ ngân hàng cấp cao, viết về AI ứng dụng, di chuyển ISO 20022, mật mã hậu lượng tử cho dịch vụ tài chính và sự chuyển đổi cấu trúc của thanh toán bán buôn.</span><span class="author-credentials">Hơn 20 năm kinh nghiệm tại HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Hồ sơ đầy đủ</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Về tác giả"><img alt="Chân dung Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Chuyên gia công nghệ ngân hàng cấp cao, viết về AI ứng dụng, di chuyển ISO 20022, mật mã hậu lượng tử cho dịch vụ tài chính và sự chuyển đổi cấu trúc của thanh toán bán buôn.</span><span class="author-credentials">Hơn 20 năm kinh nghiệm tại HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Hồ sơ đầy đủ</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Đã rà soát gần nhất <time datetime="2026-05-28">28 tháng 5 năm 2026</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Đọc liên quan</h2>

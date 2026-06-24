@@ -19,7 +19,7 @@ id: "https://sebastienrousseau.com/sv/2026-05-19-global-wholesale-payments-econo
 image_alt: "Svartvitt porträtt av Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "stora betalningar 2026, global betalningsekonomi, ISO 20022, RTGS, gränsöverskridande betalningar, BIS CPMI, FSB, Swift CBPR+, G20-färdplan, avveckling i realtid på bruttobasis, Project Agorá, Project Mandala, Project Nexus, interoperabilitet för betalningar, korrespondentbank, fragmentering av betalningar, grossist-CBDC"
 language: "sv"
 last_reviewed: "2026-05-19"

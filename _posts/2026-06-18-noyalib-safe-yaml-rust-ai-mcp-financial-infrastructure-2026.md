@@ -20,7 +20,7 @@ id: "https://sebastienrousseau.com/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-fina
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "safer Rust YAML parser, NoyaLib, YAML 1.2 spec compliance, zero-unsafe Rust, JSON-Schema validation, lossless Concrete Syntax Tree, CST, MCP, Model Context Protocol, WebAssembly, Kubernetes manifests, CI/CD configuration, DORA Article 5, BCBS 239, Basel III operational risk, financial infrastructure, configuration security, software supply chain"
 language: "en-GB"
 last_reviewed: "2026-06-18"
@@ -103,6 +103,12 @@ site_software: "Static Site Generator, Rust"
 ---
 
 # Why YAML Needs a Safer Rust Stack for AI, MCP, and Financial Infrastructure in 2026
+
+
+
+
+
+
 
 
 
@@ -277,13 +283,13 @@ DORA Article 5 puts ICT-risk accountability on the board; BCBS 239 demands data-
 - **GitHub, (2026).** *noyalib open-source repository*. Available at: [NoyaLib repository](https://github.com/sebastienrousseau/noyalib).
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
-<p class="post-reviewed">Last reviewed <time datetime="2026-06-20">2026-06-20</time>.</p>
+<aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<p class="post-reviewed">Last reviewed <time datetime="2026-06-23">2026-06-23</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Related reading</h2>
 <div class="related-grid">
 <article class="related-card"><a href="https://sebastienrousseau.com/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026" class="related-media" aria-label="CloudCDN: An Open-Source Blueprint for the AI-Native Edge in 2026" tabindex="-1"><img alt="Glowing data-centre rack stack at night — symbolising the inspectable, agent-controllable, open-source edge that CloudCDN is built on" src="https://cloudcdn.pro/stocks/images/alis-po-IdVNRv-5wJo.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026">CloudCDN: An Open-Source Blueprint for the AI-Native Edge in 2026</a></h3><p><time datetime="2026-06-11">2026-06-11</time></p></footer></article>
-<article class="related-card"><a href="https://sebastienrousseau.com/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026" class="related-media" aria-label="Turning Markdown into Accessible, SEO-Ready, Structured HTML with Rust in 2026" tabindex="-1"><img alt="Architectural geometry under structured light — symbolising HTML Generator's role as a compile-gated Markdown-to-HTML pipeline for accessible, SEO-ready, sandboxed publishing infrastructure" src="https://cloudcdn.pro/api/transform?url=/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026">Turning Markdown into Accessible, SEO-Ready, Structured HTML with Rust in 2026</a></h3><p><time datetime="2026-06-20">2026-06-20</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026" class="related-media" aria-label="Turning Markdown into Accessible, SEO-Ready, Structured HTML with Rust in 2026" tabindex="-1"><img alt="Architectural geometry under structured light — symbolising HTML Generator's role as a compile-gated Markdown-to-HTML pipeline for accessible, SEO-ready, sandboxed publishing infrastructure" src="https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash-1200.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026">Turning Markdown into Accessible, SEO-Ready, Structured HTML with Rust in 2026</a></h3><p><time datetime="2026-06-20">2026-06-20</time></p></footer></article>
 <article class="related-card"><a href="https://sebastienrousseau.com/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026" class="related-media" aria-label="KyberLib and the Post-Quantum Banking Migration in 2026: From Standards to Code" tabindex="-1"><img alt="Aerial view of the City of London at dusk — symbolising the post-quantum migration banks must run from NIST standards into inspectable cryptographic code" src="https://cloudcdn.pro/stocks/images/ben-o-bro-wpU4veNGnHg.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026">KyberLib and the Post-Quantum Banking Migration in 2026: From Standards to Code</a></h3><p><time datetime="2026-06-12">2026-06-12</time></p></footer></article>
 </div>
 </aside>

@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/yo/2026-05-28-digital-assets-tokenisation-sta
 image_alt: "Àwòrán Aláwọ̀ Dúdú àti Funfun ti Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "àwọn dúkìá dijítà 2026, RWA tí a ti tokeníní, stablecoins bánkì, ìfowópamọ́ tí a ti tokeníní, ìṣọ́ dúkìá dijítà, DLT bánkì, ìkọ́lé ìsanwó ìparí, ìṣipopadà collateral, owó alágbára-ètò, ìlànà bánkì àwọn dúkìá dijítà"
 language: "yo"
 excerpt: "Àwọn dúkìá dijítà ti di ìbéèrè ìkọ́lé ìsanwó ìparí, ìṣọ́, àti ìwé ìwọ̀ntúnwọ̀nsì — kìí ṣe ìmúdàgbà mọ́. Crypto jẹ́ ipele dúkìá ~$3 trillion, stablecoins ti dé ~$300 billion, àti àwọn dúkìá gidi tí a ti tokeníní (RWA) dàgbà ~300% ní 2025. Iṣẹ́ ìlànà fún àwọn bánkì ní 2026 kìí ṣe bóyá láti darapọ̀, ṣùgbọ́n báwo ni a ṣe lè ṣètò ìpilẹ̀ṣẹ̀, ìṣàkóso, àti ìjọba fún ayé kan níbi tí owó, dúkìá, àti ìsanwó ìparí ti di alágbára-ètò."
@@ -305,7 +305,7 @@ Nípa owó-wíwọlé tí a gbà láti àdúpọ̀ tí a lè dé, iye owó iṣ�
 - Sebastien Rousseau, (2026). [Ìṣe-Aṣojú Fún Bánkì ⧉](https://sebastienrousseau.com/yo/2026-05-17-agentic-engineering-banks-blueprint-2026 "Ìṣe-Aṣojú").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Nípa Òǹkọ̀wé"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Onímọ̀ ẹ̀rọ bánkì àgbà tí ó ń kọ nípa AI tí a lo, ìṣílọ ISO 20022, cryptography post-quantum fún iṣẹ́ ìnáwó, àti ìyípadà ìkọ́lé ti ìsanwó òṣèlú-tóóbí.</span><span class="author-credentials">Ọdún 20+ kọjá HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profaìlì kíkún</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Nípa Òǹkọ̀wé"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Onímọ̀ ẹ̀rọ bánkì àgbà tí ó ń kọ nípa AI tí a lo, ìṣílọ ISO 20022, cryptography post-quantum fún iṣẹ́ ìnáwó, àti ìyípadà ìkọ́lé ti ìsanwó òṣèlú-tóóbí.</span><span class="author-credentials">Ọdún 20+ kọjá HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profaìlì kíkún</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Àyẹ̀wò tó kẹ́yìn <time datetime="2026-05-28">2026-05-28</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Àwọn àpilẹ̀kọ tó so mọ́</h2>

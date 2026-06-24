@@ -19,7 +19,7 @@ id: "https://sebastienrousseau.com/ko/2026-05-19-global-wholesale-payments-econo
 image_alt: "Sebastien Rousseau 흑백 초상"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "거액결제 2026, 글로벌 결제 경제학, ISO 20022, RTGS, 국경 간 결제, BIS CPMI, FSB, Swift CBPR+, G20 로드맵, 거액결제시스템, Project Agorá, Project Mandala, Project Nexus, 결제 상호운용성, 코레스 은행, 결제 분절화, 거액 CBDC"
 language: "ko"
 last_reviewed: "2026-05-19"

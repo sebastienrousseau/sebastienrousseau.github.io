@@ -20,7 +20,7 @@ id: "https://sebastienrousseau.com/2026-06-20-http-handle-zero-dependency-edge-i
 image_alt: "Black at White na Larawan ni Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "http-handle, Rust edge ingress, zero dependency proxy, imprastraktura ng bangko, mTLS JWT, sendfile zero-copy, ALPN HTTP3, DORA compliance, Basel III, OTLP observability, static binary, ARM64 banking, zero trust banking, magaan na ingress, Rust banking security"
 language: "fil-PH"
 last_reviewed: "2026-06-20"
