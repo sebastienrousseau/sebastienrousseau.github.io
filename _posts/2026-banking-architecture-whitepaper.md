@@ -114,7 +114,7 @@ The 2026 banking landscape is defined by three forces moving in parallel.
 
 The Digital Operational Resilience Act has elevated legacy cryptographic debt — specifically stagnant, un-rotated password hashes and supply-chain-exposed C dependencies — from a hygiene concern into a board-accountable regulatory liability.
 
-The November 2026 SWIFT MT/MX cut-over renders MT103-based translation strategies obsolete. Banks still emitting unstructured remittance and address data will be surcharged on every message and cut off from MX-only correspondents. By the most recent industry survey, 44% of banks are off-track.
+The November 2026 SWIFT MT/MX cut-over renders MT103-based translation strategies obsolete. Banks still emitting unstructured remittance and address data will be surcharged on every message and cut off from MX-only correspondents. **RedCompass Labs' 200-bank ISO 20022 readiness survey finds 44 % of respondents off-track for the cut-over.** With procurement, vendor selection, and parallel running ahead, a 12-month runway is already a 3-month gap for the unprepared.
 
 The rise of multi-rail liquidity — SWIFT CBPR+, PSD3 / A2A, and tokenised deposits — has shifted the competitive question from "which bank do we use" to "which rail does this payment go down, and under what policy". The orchestration layer, not the rail, is now where margin lives.
 
@@ -148,6 +148,17 @@ We propose a three-pillar framework for modernising the core banking stack: **ha
 
 **Key read.** [Cross-Border 2026: ISO 20022, Open Finance and Tokenised Deposits in Corporate Treasury](https://sebastienrousseau.com/2026-06-24-cross-border-iso-20022-open-finance-tokenised-deposits-treasury-2026 "Cross-Border 2026 — Open Finance, Tokenised Deposits, and Multi-Rail Treasury")
 
+**A worked example.** A €4.2 M corporate payment from London to a Spanish supplier, T+2 acceptable, investment-grade counterparty, no FX leg. The policy-as-code engine evaluates four inputs against a rail matrix:
+
+| Rail | Eligible | Settlement | Cost per leg | Liquidity impact | Selected |
+| --- | --- | --- | --- | --- | --- |
+| SEPA CT Inst | yes | T+0 (≤10 s) | €0.20 | nostro debit, immediate | — |
+| SEPA CT | yes | T+1 | €0.20 | nostro debit, T+1 | **✓** |
+| SWIFT CBPR+ | yes | T+0–T+2 | €15 | correspondent leg | — |
+| Tokenised deposit | no | n/a | n/a | counterparty not on-network | — |
+
+The agent never sees the rail selection. It receives the result — "SEPA CT chosen, audit trail attached, settlement T+1" — and continues the conversation. The audit, model-risk, and DORA Article 5 accountability stay with the policy layer, where they are review-defensible. Change the corridor to GBP → SGD or the ticket size to €40 K, and the same matrix selects CBPR+ or SEPA CT Inst respectively, without any change to the agent prompt.
+
 ## Architectural implementation roadmap
 
 Three sequential phases. Each is independently valuable; together they compose the Resilience Trinity end-to-end.
@@ -164,6 +175,16 @@ Align internal API contracts with canonical ISO 20022 schemas to ensure data fid
 
 Deploy a rail-agnostic control plane that treats SWIFT CBPR+, A2A / PSD3, and tokenised deposits as commodity execution venues governed by policy-as-code. Document credit-exposure profiles per rail per corridor. Bind the agent to the policy, not the rail. Wire SR 11-7 model-risk governance and DORA Article 5 accountability into the orchestration layer, not the model.
 
+## Agentic treasury — what the architecture actually enables
+
+The three pillars converge in one operational pattern: a treasury agent that can reason over context and execute payments, but only within boundaries the architecture itself enforces.
+
+Pillar I makes the credentials, signing keys, and HSM-interlocked secrets defensible — a precondition for any non-human principal in the payment chain. Pillar II gives the agent something to reason over: structured `<PstlAdr>`, `<Purp>`, `<RmtInf>`, and LEI-anchored counterparty references — not unstructured remittance prose that an LLM has to guess at. Pillar III draws the line: the agent can request a payment; the policy-as-code engine decides which rail, what limit, what hedging tail, and what audit attribution applies.
+
+This separation is not a UX choice. It is the SR 11-7 model-risk boundary and the DORA Article 5 accountability line, drawn at the place where governance can actually inspect the decision. A bank that gets this right ships agents that pass model-risk review on day one because the agent's authority is scoped, the policy is versioned, and the trace is replayable. A bank that doesn't ships an agent that selects rails, sets its own limits, and writes its own audit log — and ships it directly into a regulatory finding.
+
+The 2027 conversation will not be about "do we deploy AI in treasury". It will be about "where did we draw the line, who signed the policy, and how do we prove it to the regulator". The architecture above is the line.
+
 ## About the author
 
 <aside class="author-card">
@@ -173,6 +194,14 @@ Deploy a rail-agnostic control plane that treats SWIFT CBPR+, A2A / PSD3, and to
 ## Architectural briefing — download the PDF
 
 Need to share this framework with internal security, treasury, or architecture-review teams? The reports have been synthesised into a single PDF briefing — designed for Architecture Review Boards (ARB), DORA compliance committees, and C-level planning sessions. Includes empirical anchors (RedCompass Labs 200-bank readiness survey, McKinsey Global Payments Report), multi-jurisdictional regulatory mapping (DORA, Fed SR 21-14, OCC, MAS TRM, HKMA C-RAF, APRA CPS 230), an explicit threat model with NIST FIPS 203/204/205 post-quantum migration, Basel LCR/NSFR/intraday-liquidity treatment of tokenised settlement, a comparative posture matrix against vendor core-banking, API-first, and CBDC-rail-led alternatives, and a 10-item programme risk register. **Version:** June 2026. **Format:** US-letter print-ready, single-column arxiv-style preprint, 16 pages.
+
+### Three risks from the programme register
+
+The PDF's 10-item programme risk register is calibrated to the explicit deltas boards have flagged versus the 2024 / 2025 cycles. Three deserve naming here:
+
+1. **Vendor concentration in the policy-as-code stack.** The orchestration layer is the new single point of leverage. Concentration on one vendor for policy expression, decision logging, and rail abstraction creates a DORA Article 28 critical-ICT-third-party exposure that risk committees are now actively questioning. The mitigation is a two-vendor strategy with policy portability tested annually, not the cheaper single-vendor track.
+2. **Silent MT-to-MX data loss.** Banks emitting MT103 with truncated address or remittance data ingest cleanly into MX channels — but the structured fields stay empty. The downstream consequence (failed sanctions screening, missed AML triggers, reconciliation breaks) surfaces 30–90 days post cut-over, well past the change-window forensics. The register quantifies the expected back-book remediation cost per €1 bn of payment flow.
+3. **Agent action attribution.** When an LLM-backed treasury agent triggers a payment chain, three principals can claim ownership — the model owner, the rail provider, the policy author. Without an explicit attribution decision baked into the orchestration layer, the bank inherits all three liabilities. The register defines the attribution tree and the SR 11-7 evidence chain required to defend it.
 
 <p class="cta-actions"><a class="pill primary no-chev" href="https://cloudcdn.pro/stocks/documents/2026-banking-architecture-whitepaper.pdf" rel="noopener" title="Download the 2026 Banking Architecture Whitepaper (PDF)">Download the PDF briefing</a> <a class="pill ghost no-chev" href="/papers" title="See all published white papers and research">All white papers</a></p>
 
