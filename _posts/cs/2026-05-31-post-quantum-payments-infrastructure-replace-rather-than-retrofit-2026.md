@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/cs/2026-05-31-post-quantum-payments-infrastru
 image_alt: "Černobílý portrét Sebastiena Rousseaua"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "postkvantová kryptografie, PQC platby, krypto-agilita, sklízej nyní dešifruj později, HNDL, NIST postkvantové standardy, ML-KEM, ML-DSA, FIPS 203, FIPS 204, migrace platebních kolejnic, ISO 20022 PQC, náhrada SWIFT MT, HSM, kolaps PKI, provozní odolnost, Quantum Computing Cybersecurity Preparedness Act"
 language: "cs"
 excerpt: "Sklízej-nyní-dešifruj-později mění dnešní platební zprávy chráněné TLS v zítřejší dešifrovanou expozici. ML-KEM a ML-DSA jsou o řád větší než klíče RSA a ECC, pro něž byly starší kolejnice dimenzovány — úprava vyvolává fragmentaci, latenci a vyčerpání HSM. Architektonická volba roku 2026 zní, zda záplatovat, nebo nahradit, než vyprší regulační lhůta."
@@ -264,7 +264,7 @@ Podřízená certifikační autorita schopná PQC, integrovaná do stávající 
 - Bank of England (PRA), (2024). [SS1/21 — Operational resilience: Impact tolerances for important business services ⧉](https://www.bankofengland.co.uk/prudential-regulation/publication/2024/march/operational-resilience-impact-tolerances-for-important-business-services "PRA SS1/21").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="O autorovi"><img alt="Portrét Sebastiena Rousseaua" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Seniorní bankovní technolog, který píše o aplikované AI, migraci ISO 20022, postkvantové kryptografii pro finanční služby a strukturální transformaci velkoobchodních plateb.</span><span class="author-credentials">Více než 20 let zkušeností napříč HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA a Virgin Group. <a href="/about/index.html">Úplný profil</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="O autorovi"><img alt="Portrét Sebastiena Rousseaua" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Seniorní bankovní technolog, který píše o aplikované AI, migraci ISO 20022, postkvantové kryptografii pro finanční služby a strukturální transformaci velkoobchodních plateb.</span><span class="author-credentials">Více než 20 let zkušeností napříč HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA a Virgin Group. <a href="/about/index.html">Úplný profil</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Naposledy ověřeno <time datetime="2026-05-31">2026-05-31</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Související čtení</h2>

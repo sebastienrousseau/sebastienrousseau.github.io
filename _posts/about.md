@@ -21,7 +21,7 @@ id: "https://sebastienrousseau.com/about"
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "payments technology, digital finance, artificial intelligence, post-quantum cryptography, blockchain technology, strategic leadership, operational leadership, cross-platform product design, engineering, solution architecture"
 last_reviewed: "2026-05-14"
 language: "en-GB"
@@ -131,7 +131,7 @@ site_software: "Static Site Generator, Rust"
       <a class="pill" href="/case-studies/index.html">See the case studies ›</a>
     </div>
     <figure class="narrative-visual">
-      <img src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" alt="Portrait of Sebastien Rousseau" width="480" height="480" loading="eager" fetchpriority="high" decoding="async" />
+      <img src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" alt="Portrait of Sebastien Rousseau" width="480" height="480" loading="eager" fetchpriority="high" decoding="async" />
     </figure>
   </div>
 </section>

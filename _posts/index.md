@@ -21,7 +21,7 @@ id: "https://sebastienrousseau.com"
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "banking, financial services, artificial intelligence, post-quantum cryptography, blockchain technology, transformation, innovation, technology, future, Sebastien Rousseau"
 last_reviewed: "2026-05-14"
 language: "en-GB"
@@ -305,6 +305,42 @@ site_software: "Static Site Generator, Rust"
 <div class="newsroom-grid feat-latest-grid">
 
 <article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-06-24-cross-border-iso-20022-open-finance-tokenised-deposits-treasury-2026/index.html" title="Cross-Border 2026: ISO 20022, Open Finance and Tokenised Deposits in Corporate Treasury">
+<img alt="Container ships threading a narrow strait at dusk — symbolising the four-rail cross-border corporate-treasury architecture binding SWIFT CBPR+, A2A under PSD3, bank-issued tokenised deposits, and regulated stablecoins into one orchestrated payment flow" src="https://cloudcdn.pro/stocks/images/viktor-forgacs-KxVRDiFdTVo.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Cross-Border · ISO 20022 · Tokenised Deposits</span>
+<h3><a href="/2026-06-24-cross-border-iso-20022-open-finance-tokenised-deposits-treasury-2026/index.html">Cross-Border 2026: ISO 20022, Open Finance and Tokenised Deposits in Corporate Treasury</a></h3>
+<p class="newsroom-meta"><time datetime="2026-06-24">June 24, 2026</time></p>
+<p class="newsroom-excerpt">Cross-border treasury in 2026 is a four-rail engineering problem. PSD3 + FiDA open the data perimeter; the November SWIFT cut-over makes CBPR+ pacs.008 the only viable interbank format; tokenised deposits and regulated stablecoins handle the wholesale leg in near T+0. The CIB that wins engineers the orchestration layer above all four.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-06-23-iso-20022-pain001-programmable-liquidity-autonomic-treasury-2026/index.html" title="From Pain.001 to Programmable Liquidity: ISO 20022 as the Autonomic Nervous System of Treasury in 2026">
+<img alt="Steel arteries of a modern clearing centre at dawn — symbolising ISO 20022 pain.001 and pacs.008 as the autonomic nervous system carrying programmable liquidity across global treasury, SWIFT MX, and CBPR+ rails" src="https://cloudcdn.pro/stocks/images/markus-spiske-FXFz-sW0uwo.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">ISO 20022 · Programmable Liquidity · CIB Treasury</span>
+<h3><a href="/2026-06-23-iso-20022-pain001-programmable-liquidity-autonomic-treasury-2026/index.html">From Pain.001 to Programmable Liquidity: ISO 20022 as the Autonomic Nervous System of Treasury in 2026</a></h3>
+<p class="newsroom-meta"><time datetime="2026-06-23">June 23, 2026</time></p>
+<p class="newsroom-excerpt">Five months before the November 2026 SWIFT MT/MX cut-over, 44% of banks are off-track. pain.001 has stopped being a wire format and become the heartbeat of a programmable liquidity stack — what an ISO-first canonical schema, reject-on-parse ingress, and pacs.008-native settlement look like in production.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-06-22-hsh-zero-downtime-cryptographic-stewardship-rust-banking-2026/index.html" title="Securing Password Management in Enterprise Banking: Multi-Algorithm Hashing and Upgrades with hsh">
+<img alt="Close-up of a developer terminal scrolling Rust compiler output — the visible discipline of a memory-safe, audit-able cryptographic substrate beneath an enterprise banking authentication estate" src="https://cloudcdn.pro/stocks/images/rustlogs.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Cryptographic Stewardship · Rust · Banking</span>
+<h3><a href="/2026-06-22-hsh-zero-downtime-cryptographic-stewardship-rust-banking-2026/index.html">Securing Password Management in Enterprise Banking: Multi-Algorithm Hashing and Upgrades with hsh</a></h3>
+<p class="newsroom-meta"><time datetime="2026-06-22">June 22, 2026</time></p>
+<p class="newsroom-excerpt">hsh is an open-source pure-Rust framework that migrates legacy password hashes to Argon2id with zero downtime via verify_and_upgrade, HSM-interlocked peppering, and a memory-safe supply chain — closing the cryptographic rot that DORA Article 5 now treats as board-accountable liability.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/index.html" title="CloudCDN: An Open-Source Blueprint for the AI-Native Edge in 2026">
 <img alt="Glowing data-centre rack stack at night — symbolising the inspectable, agent-controllable, open-source edge that CloudCDN is built on" src="https://cloudcdn.pro/stocks/images/alis-po-IdVNRv-5wJo.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
@@ -337,42 +373,6 @@ site_software: "Static Site Generator, Rust"
 <h3><a href="/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/index.html">The Autonomous Treasury Index in 2026: Agentic Treasury, Programmable Liquidity, Tokenised Deposits, and Real-Time Cash Control</a></h3>
 <p class="newsroom-meta"><time datetime="2026-06-07">June 7, 2026</time></p>
 <p class="newsroom-excerpt">A 2026 autonomous treasury readiness index — measuring agentic treasury workflows, programmable liquidity coverage, tokenised deposit integration, real-time payment orchestration, and automated cash control as one operating-model fabric.</p>
-</div>
-</article>
-
-<article class="newsroom-card">
-<a class="newsroom-card-media" href="/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/index.html" title="The Wholesale Payments Index in 2026: ISO 20022, Tokenised Deposits, Real-Time Rails, and Cross-Border Settlement">
-<img alt="Visual register for the wholesale-payments shift in 2026 — messaging migration giving way to programmable settlement across ISO 20022, tokenised deposits, real-time rails, and cross-border atomicity." src="https://cloudcdn.pro/stocks/images/miquel-parera-NsXLehhHx1Q.webp" loading="lazy" decoding="async" width="600" height="600" />
-</a>
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Wholesale Payments · ISO 20022 · Tokenised Deposits</span>
-<h3><a href="/2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026/index.html">The Wholesale Payments Index in 2026: ISO 20022, Tokenised Deposits, Real-Time Rails, and Cross-Border Settlement</a></h3>
-<p class="newsroom-meta"><time datetime="2026-06-06">June 6, 2026</time></p>
-<p class="newsroom-excerpt">An index framework for measuring wholesale-payments readiness in 2026: ISO 20022 structured-address compliance ahead of SWIFT's November 2026 milestone, tokenised-deposit settlement, BIS Project Agorá cross-border atomicity, real-time rail orchestration, and liquidity efficiency. Four percentages — structured-data completeness, rail-routing optimality, settlement-finality lag, and Agorá-corridor coverage — turn payment-operations posture into supervisory-ready evidence.</p>
-</div>
-</article>
-
-<article class="newsroom-card">
-<a class="newsroom-card-media" href="/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/index.html" title="The Cloud Native Banking Index in 2026: DORA, Platform Engineering, Sovereign Cloud, and Operational Resilience">
-<img alt="Circuit-board pattern resolving into a cityscape skyline — the visual register chosen for cloud-native banking: platform-engineering primitives stitched into the bank's operational fabric." src="https://cloudcdn.pro/api/transform?url=/stocks/images/quang-nguyen-vinh-2649403.webp&w=1600&format=webp&q=85" loading="lazy" decoding="async" width="600" height="600" />
-</a>
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Cloud Native Banking · DORA · Platform Engineering</span>
-<h3><a href="/2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026/index.html">The Cloud Native Banking Index in 2026: DORA, Platform Engineering, Sovereign Cloud, and Operational Resilience</a></h3>
-<p class="newsroom-meta"><time datetime="2026-06-05">June 5, 2026</time></p>
-<p class="newsroom-excerpt">An engineering blueprint for cloud-native banking in DORA audit phase. Five platform-engineering primitives — Kubernetes paved roads, Backstage portal, GitOps via ArgoCD, Open Policy Agent admission, OpenTelemetry end-to-end — produce Article 8 register evidence at the speed of the pipeline. Tested exit-execution annually for CTPP-dependent CIFs against BIA-derived RTO targets. Sovereign-cloud options (AWS European Sovereign Cloud, Microsoft EU Data Boundary, Bleu, Thales / S3NS) addressed as engineering decisions, not branding.</p>
-</div>
-</article>
-
-<article class="newsroom-card">
-<a class="newsroom-card-media" href="/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html" title="The Quantum-Safe Banking Index in 2026: Post-Quantum Cryptography, QKD, Crypto-Agility, and Harvest-Now-Decrypt-Later Risk">
-<img alt="The Quantum-Safe Banking Index 2026 index diagram for banks and financial institutions in 2026" src="https://cloudcdn.pro/api/transform?url=/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
-</a>
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Quantum Cryptography · Post-Quantum Cryptography · QKD</span>
-<h3><a href="/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026/index.html">The Quantum-Safe Banking Index in 2026: Post-Quantum Cryptography, QKD, Crypto-Agility, and Harvest-Now-Decrypt-Later Risk</a></h3>
-<p class="newsroom-meta"><time datetime="2026-06-04">June 4, 2026</time></p>
-<p class="newsroom-excerpt">An index framework for measuring quantum-safe banking readiness in 2026: cryptographic bill of materials, hybrid TLS deployment, NIST FIPS 203 / 204 / 205 migration progress, crypto-agility primitives, and harvest-now-decrypt-later exposure across long-lived confidential data. The Board-Level Quantum Scorecard defines four exact percentages — inventory completeness, HNDL exposure, NIST migration progress, crypto-agility readiness — that turn project statuses into supervisory-ready evidence.</p>
 </div>
 </article>
 

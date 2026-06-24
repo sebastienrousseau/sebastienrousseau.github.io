@@ -18,7 +18,7 @@ id: "https://sebastienrousseau.com/vi/2026-06-06-wholesale-payments-index-iso200
 image_alt: "Chân dung trắng đen của Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "thanh toán bán buôn 2026, ISO 20022, tiền gửi được mã hóa, Project Agorá, thanh toán xuyên biên giới, thanh toán thời gian thực, dữ liệu địa chỉ có cấu trúc, chất lượng dữ liệu thanh toán"
 language: "vi-VN"
 last_reviewed: "2026-06-06"
@@ -243,6 +243,6 @@ Không ở mọi nơi. Stablecoin có thể vẫn hữu ích trong một số b�
 - Deutsche Bank, (2026). [Tiền số: stablecoin, tiền gửi được mã hóa và CBDC ⧉](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Tiền số: stablecoin, tiền gửi được mã hóa và CBDC").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Về tác giả"><img alt="Chân dung Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Chuyên gia công nghệ ngân hàng cấp cao, viết về AI ứng dụng, hạ tầng thanh toán, tiền token hoá, ISO 20022, an ninh hậu lượng tử, dịch vụ tài chính cloud-native và thị trường số được quản lý.</span><span class="author-credentials">Hơn 20 năm kinh nghiệm tại HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Hồ sơ đầy đủ</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Về tác giả"><img alt="Chân dung Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Chuyên gia công nghệ ngân hàng cấp cao, viết về AI ứng dụng, hạ tầng thanh toán, tiền token hoá, ISO 20022, an ninh hậu lượng tử, dịch vụ tài chính cloud-native và thị trường số được quản lý.</span><span class="author-credentials">Hơn 20 năm kinh nghiệm tại HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Hồ sơ đầy đủ</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Rà soát lần cuối <time datetime="2026-06-06">2026-06-06</time>.</p>
 <!-- enrich-end -->

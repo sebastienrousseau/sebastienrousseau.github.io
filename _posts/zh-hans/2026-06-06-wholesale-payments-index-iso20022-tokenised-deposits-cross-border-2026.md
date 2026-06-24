@@ -18,7 +18,7 @@ id: "https://sebastienrousseau.com/zh-hans/2026-06-06-wholesale-payments-index-i
 image_alt: "Sebastien Rousseau 黑白肖像"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "2026 大额支付, ISO 20022, 代币化存款, Project Agorá, 跨境支付, 实时支付, 结构化地址数据, 支付数据质量"
 language: "zh-Hans"
 last_reviewed: "2026-06-06"
@@ -243,6 +243,6 @@ sequenceDiagram
 - 德意志银行,(2026)。[数字货币:关于稳定币、代币化存款与 CBDC 的视角 ⧉](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money: stablecoins, tokenised deposits and CBDCs")。
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="作者简介"><img alt="Sebastien Rousseau 肖像" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">资深银行技术人,长期撰写应用 AI、支付基础设施、代币化货币、ISO 20022、后量子安全、云原生金融服务与受监管数字市场。</span><span class="author-credentials">20 余年履历横跨 HSBC 商业与投资银行、PayPal、Barclays、Shazam、AKQA、Virgin Group。<a href="/about/index.html">完整简介</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="作者简介"><img alt="Sebastien Rousseau 肖像" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">资深银行技术人,长期撰写应用 AI、支付基础设施、代币化货币、ISO 20022、后量子安全、云原生金融服务与受监管数字市场。</span><span class="author-credentials">20 余年履历横跨 HSBC 商业与投资银行、PayPal、Barclays、Shazam、AKQA、Virgin Group。<a href="/about/index.html">完整简介</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">最后审阅 <time datetime="2026-06-06">2026-06-06</time>。</p>
 <!-- enrich-end -->

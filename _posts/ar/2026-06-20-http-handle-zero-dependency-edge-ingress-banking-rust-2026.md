@@ -20,7 +20,7 @@ id: "https://sebastienrousseau.com/2026-06-20-http-handle-zero-dependency-edge-i
 image_alt: "صورة بالأبيض والأسود لسيباستيان روسو"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "http-handle، حافة Rust، وكيل بلا تبعيات، بنية تحتية مصرفية، mTLS JWT، sendfile نقل بدون نسخ، ALPN HTTP3، امتثال DORA، بازل III، قابلية مراقبة OTLP، ثنائي ثابت، ARM64 مصرفي، أمان بدون ثقة مصرفي، دخول خفيف الوزن، أمان Rust المصرفي"
 language: "ar-SA"
 last_reviewed: "2026-06-20"

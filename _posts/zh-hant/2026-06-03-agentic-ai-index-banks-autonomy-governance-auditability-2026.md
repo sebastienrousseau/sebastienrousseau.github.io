@@ -3,7 +3,7 @@ author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "2026年銀行業 Agentic AI 指數圖示，面向 2026 年的銀行與金融機構"
 banner_height: "571"
 banner_width: "1425"
-banner: "https://cloudcdn.pro/api/transform?url=/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp&w=1200&format=webp&q=80"
+banner: "https://cloudcdn.pro/stocks/images/alev-takil-7ojyp-IXW7w-unsplash-1200.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/zh-hant/2026-06-03-agentic-ai-index-banks-aut
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "智能體 AI 銀行 2026, 銀行 AI 智能體, 金融服務 AI 治理, 銀行自主工作流程, 模型風險管理, AI 可稽核性, SR 11-7, ISO 20022"
 language: "zh-hant"
 last_reviewed: "2026-06-03"
@@ -266,6 +266,6 @@ Open Policy Agent(或同等品)坐在驗證器與 API 之間。策略以 Git 版
 - Cloud Native Computing Foundation, (2018). [Open Policy Agent (OPA) ⧉](https://www.openpolicyagent.org/ "Open Policy Agent —— 雲端原生環境的策略式控制").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="關於作者"><img alt="Sebastien Rousseau 的肖像" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">資深銀行科技人,長期撰寫應用 AI、支付基礎建設、代幣化貨幣、ISO 20022、後量子安全、雲端原生金融服務與受監理數位市場等主題。</span><span class="author-credentials">在 HSBC 商業與投資銀行、PayPal、Barclays、Shazam、AKQA、Virgin Group 等機構累積 20 年以上經驗。<a href="/about/index.html">完整檔案</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="關於作者"><img alt="Sebastien Rousseau 的肖像" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">資深銀行科技人,長期撰寫應用 AI、支付基礎建設、代幣化貨幣、ISO 20022、後量子安全、雲端原生金融服務與受監理數位市場等主題。</span><span class="author-credentials">在 HSBC 商業與投資銀行、PayPal、Barclays、Shazam、AKQA、Virgin Group 等機構累積 20 年以上經驗。<a href="/about/index.html">完整檔案</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">最後審閱 <time datetime="2026-06-03">2026-06-03</time>。</p>
 <!-- enrich-end -->

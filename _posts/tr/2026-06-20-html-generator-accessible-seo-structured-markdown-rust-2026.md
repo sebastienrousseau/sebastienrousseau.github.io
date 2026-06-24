@@ -6,7 +6,7 @@ author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "Yapısal ışık altında mimari geometri — HTML Generator'ın erişilebilir, SEO'ya hazır, sandbox ortamında yayımlama altyapısı için derleme kapılı bir Markdown'dan HTML'e dönüşüm hattı olarak rolünü simgeler"
 banner_height: "1597"
 banner_width: "2584"
-banner: "https://cloudcdn.pro/api/transform?url=/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp&w=1200&format=webp&q=80"
+banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash-1200.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
@@ -20,7 +20,7 @@ id: "https://sebastienrousseau.com/2026-06-20-html-generator-accessible-seo-stru
 image_alt: "Sebastien Rousseau'nun Siyah Beyaz Portresi"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "html-generator, Rust Markdown'dan HTML'e, erişilebilirlik-as-code, WCAG 2.1 AA, SEO'ya hazır HTML, JSON-LD, MathML, Mermaid, WebAssembly, EAA, DORA, ADA Title III, erişilebilir yayımlama, sandbox ayrıştırma, açık kaynak"
 language: "tr-TR"
 last_reviewed: "2026-06-20"
@@ -282,6 +282,6 @@ Statik site oluşturucular, dokümantasyon ekipleri, teknik yazarlar, Rust geli�
 - GitHub, 2026. [HTML Generator deposu ⧉](https://github.com/sebastienrousseau/html-generator "HTML Generator open-source repository").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Yazar hakkında"><img alt="Sebastien Rousseau Portresi" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Uygulamalı AI, ödeme altyapısı, tokenize para, ISO 20022, kuantum sonrası güvenlik, cloud-native finansal hizmetler, açık kaynak altyapısı ve düzenlenmiş dijital piyasalar üzerine yazan kıdemli bankacılık teknoloji uzmanı.</span><span class="author-credentials">HSBC Ticari &amp; Yatırım Bankası, PayPal, Barclays, Shazam, AKQA, Virgin Group'ta 20+ yıl. <a href="/about/index.html">Tam profil</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Yazar hakkında"><img alt="Sebastien Rousseau Portresi" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Uygulamalı AI, ödeme altyapısı, tokenize para, ISO 20022, kuantum sonrası güvenlik, cloud-native finansal hizmetler, açık kaynak altyapısı ve düzenlenmiş dijital piyasalar üzerine yazan kıdemli bankacılık teknoloji uzmanı.</span><span class="author-credentials">HSBC Ticari &amp; Yatırım Bankası, PayPal, Barclays, Shazam, AKQA, Virgin Group'ta 20+ yıl. <a href="/about/index.html">Tam profil</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Son inceleme tarihi <time datetime="2026-06-20">2026-06-20</time>.</p>
 <!-- enrich-end -->

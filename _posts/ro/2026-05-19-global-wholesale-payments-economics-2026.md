@@ -19,7 +19,7 @@ id: "https://sebastienrousseau.com/ro/2026-05-19-global-wholesale-payments-econo
 image_alt: "Portret alb-negru al lui Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "plăți cu ridicata 2026, economia plăților mondiale, ISO 20022, RTGS, plăți transfrontaliere, BIS CPMI, FSB, Swift CBPR+, foaia de parcurs G20, decontare brută în timp real, Project Agorá, Project Mandala, Project Nexus, interoperabilitatea plăților, bănci corespondente, fragmentarea plăților, CBDC cu ridicata"
 language: "ro"
 last_reviewed: "2026-05-19"

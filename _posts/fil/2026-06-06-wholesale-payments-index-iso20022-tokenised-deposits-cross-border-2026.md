@@ -18,7 +18,7 @@ id: "https://sebastienrousseau.com/fil/2026-06-06-wholesale-payments-index-iso20
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "wholesale payments 2026, ISO 20022, tokenised deposits, Project Agora, cross border payments, real time payments, structured address data, kalidad ng payment data"
 language: "fil-PH"
 last_reviewed: "2026-06-06"
@@ -243,7 +243,7 @@ Sukatin ang kahandaan ng structured-data, mga payment reject, repair cost, oras 
 - Deutsche Bank, (2026). [Digital Money: stablecoins, tokenised deposits and CBDCs ⧉](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money: stablecoins, tokenised deposits and CBDCs").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Tungkol sa may-akda"><img alt="Larawan ni Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior na teknologist sa pagbabangko na sumusulat tungkol sa applied AI, payments infrastructure, tokenised money, ISO 20022, post-quantum security, cloud-native financial services, at mga regulated digital market.</span><span class="author-credentials">Mahigit 20 taon sa HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Buong profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Tungkol sa may-akda"><img alt="Larawan ni Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior na teknologist sa pagbabangko na sumusulat tungkol sa applied AI, payments infrastructure, tokenised money, ISO 20022, post-quantum security, cloud-native financial services, at mga regulated digital market.</span><span class="author-credentials">Mahigit 20 taon sa HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Buong profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Huling pagsusuri <time datetime="2026-06-06">2026-06-06</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Karagdagang babasahin</h2>

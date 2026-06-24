@@ -19,7 +19,7 @@ id: "https://sebastienrousseau.com/vi/2026-05-19-global-wholesale-payments-econo
 image_alt: "Chân dung đen trắng của Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "thanh toán bán buôn 2026, kinh tế học thanh toán toàn cầu, ISO 20022, RTGS, thanh toán xuyên biên giới, BIS CPMI, FSB, Swift CBPR+, lộ trình G20, thanh toán tổng tức thời, Project Agorá, Project Mandala, Project Nexus, khả năng tương tác thanh toán, ngân hàng đại lý, phân mảnh thanh toán, CBDC bán buôn"
 language: "vi"
 last_reviewed: "2026-05-19"

@@ -3,7 +3,7 @@ author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "स्टेबलकॉइन, टोकनीकृत जमा, वाणिज्यिक बैंक मुद्रा, रिज़र्व परिसंपत्तियाँ, वॉलेट, निपटान, तरलता और बैंक बैलेंस शीट दिखाने वाला तुलनात्मक आरेख"
 banner_height: "571"
 banner_width: "1425"
-banner: "https://cloudcdn.pro/api/transform?url=/stocks/images/pixabay-210547.webp&w=1200&format=webp&q=80"
+banner: "https://cloudcdn.pro/stocks/images/pixabay-210547-1200.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/hi/2026-05-26-stablecoins-vs-tokenised-deposi
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "स्टेबलकॉइन 2026, टोकनीकृत जमा, बैंक जमा, GENIUS Act, JPM Coin, डिपॉज़िट टोकन, स्टेबलकॉइन रिज़र्व, बैंक फंडिंग, डिजिटल मुद्रा"
 language: "hi"
 excerpt: "स्टेबलकॉइन और टोकनीकृत जमा प्रोग्रामेबल निपटान पर अभिसरित होते हैं, परंतु बैलेंस शीट, विधिक, तरलता और भरोसे के मॉडल पर भिन्न रहते हैं। बैंकों के लिए 2026 का रणनीतिक प्रश्न डिज़ाइन अनुशासन है — कौन-सा मुद्रा मॉडल किस ग्राहक कार्यप्रवाह को धारण करता है — तथा निजी जारीकर्ता प्रतिस्पर्धा के विरुद्ध जमा फ्रैंचाइज़ी, निपटान भूमिका और विनियमित ब्रांड की रक्षा कैसे की जाए।"
@@ -201,6 +201,6 @@ site_software: "Static Site Generator, Rust"
 - GOV.UK, (2026). [UK fintech backed to embrace future payments technology ⧉](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed")।
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="लेखक के बारे में"><img alt="सेबास्तियन रूसो का चित्र" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">सेबास्तियन रूसो</a></strong><span class="author-card-bio">वरिष्ठ बैंकिंग प्रौद्योगिकीविद् जो प्रयोज्य AI, भुगतान अवसंरचना, टोकनीकृत मुद्रा, ISO 20022, पोस्ट-क्वांटम सुरक्षा, क्लाउड-नेटिव वित्तीय सेवाओं और विनियमित डिजिटल बाज़ारों पर लिखते हैं।</span><span class="author-credentials">HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group में 20+ वर्षों का अनुभव। <a href="/about/index.html">पूर्ण प्रोफ़ाइल</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="लेखक के बारे में"><img alt="सेबास्तियन रूसो का चित्र" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">सेबास्तियन रूसो</a></strong><span class="author-card-bio">वरिष्ठ बैंकिंग प्रौद्योगिकीविद् जो प्रयोज्य AI, भुगतान अवसंरचना, टोकनीकृत मुद्रा, ISO 20022, पोस्ट-क्वांटम सुरक्षा, क्लाउड-नेटिव वित्तीय सेवाओं और विनियमित डिजिटल बाज़ारों पर लिखते हैं।</span><span class="author-credentials">HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group में 20+ वर्षों का अनुभव। <a href="/about/index.html">पूर्ण प्रोफ़ाइल</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">अंतिम समीक्षा <time datetime="2026-05-26">2026-05-26</time>।</p>
 <!-- enrich-end -->

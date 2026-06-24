@@ -20,7 +20,7 @@ id: "https://sebastienrousseau.com/2026-06-20-http-handle-zero-dependency-edge-i
 image_alt: "ภาพถ่ายขาวดำของ Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "http-handle, Rust edge ingress, พร็อกซีไร้การพึ่งพา, โครงสร้างพื้นฐานธนาคาร, mTLS JWT, sendfile zero-copy, ALPN HTTP3, การปฏิบัติตาม DORA, Basel III, การสังเกตการณ์ OTLP, ไบนารีสแตติก, ARM64 banking, zero trust banking, ingress น้ำหนักเบา, ความปลอดภัยธนาคาร Rust"
 language: "th-TH"
 last_reviewed: "2026-06-20"

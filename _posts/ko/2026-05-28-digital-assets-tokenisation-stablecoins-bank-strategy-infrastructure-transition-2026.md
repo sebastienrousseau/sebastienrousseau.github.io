@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/ko/2026-05-28-digital-assets-tokenisation-sta
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "디지털 자산 2026, 토큰화된 실물자산, 스테이블코인 은행, 토큰화 예금, 디지털 자산 수탁, DLT 뱅킹, 결제 인프라, 담보 이동성, 프로그래밍 가능한 화폐, 은행 디지털 자산 전략"
 language: "ko"
 excerpt: "디지털 자산은 더 이상 혁신 베팅이 아닙니다. 결제, 수탁, 대차대조표 아키텍처의 문제입니다. 가상자산은 약 3조 달러 규모의 자산군이고, 스테이블코인은 약 3,000억 달러에 이르렀으며, 토큰화된 실물자산은 2025년에 약 300% 성장했습니다. 2026년 은행의 전략적 과제는 참여 여부가 아니라, 화폐·자산·결제가 프로그래밍 가능해진 세계에 맞춘 인프라·통제·거버넌스 설계 방식입니다."
@@ -307,7 +307,7 @@ BCG는 10단계 가이드로 마무리합니다. 이를 향후 12개월의 즉�
 - Sebastien Rousseau, (2026). [은행을 위한 에이전틱 엔지니어링 ⧉](https://sebastienrousseau.com/2026-05-17-agentic-engineering-banks-blueprint-2026 "에이전틱 엔지니어링").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="저자 소개"><img alt="Sebastien Rousseau의 인물 사진" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">응용 AI, 결제 인프라, 토큰화 화폐, ISO 20022, 양자내성 보안, 클라우드 네이티브 금융 서비스, 규제 디지털 시장에 관해 집필하는 시니어 뱅킹 기술 전문가입니다.</span><span class="author-credentials">HSBC 상업·투자은행, PayPal, Barclays, Shazam, AKQA, Virgin Group을 아우르는 20년 이상의 경력. <a href="/about/index.html">전체 프로필</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="저자 소개"><img alt="Sebastien Rousseau의 인물 사진" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">응용 AI, 결제 인프라, 토큰화 화폐, ISO 20022, 양자내성 보안, 클라우드 네이티브 금융 서비스, 규제 디지털 시장에 관해 집필하는 시니어 뱅킹 기술 전문가입니다.</span><span class="author-credentials">HSBC 상업·투자은행, PayPal, Barclays, Shazam, AKQA, Virgin Group을 아우르는 20년 이상의 경력. <a href="/about/index.html">전체 프로필</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">최종 검토 <time datetime="2026-05-28">2026-05-28</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">관련 글</h2>

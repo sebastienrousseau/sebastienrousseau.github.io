@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/uk/2026-05-28-digital-assets-tokenisation-sta
 image_alt: "Чорно-білий портрет Себастьяна Руссо"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "цифрові активи 2026, токенізовані реальні активи, стейблкоїни банкінг, токенізовані депозити, зберігання цифрових активів, DLT у банкінгу, інфраструктура розрахунку, мобільність забезпечення, програмовані гроші, банківська стратегія цифрових активів"
 language: "uk"
 excerpt: "Цифрові активи — це вже не інноваційне парі, а питання архітектури розрахунку, зберігання та балансу. Криптовалюти — це клас активів ~3 трлн доларів, стейблкоїни досягли ~300 млрд доларів, а токенізовані реальні активи зросли ~300% у 2025 році. Стратегічне завдання банків у 2026 році — не «брати участь чи ні», а спроєктувати інфраструктуру, контролі та керування для світу, де гроші, активи й розрахунок стають програмованими."
@@ -307,7 +307,7 @@ BCG завершує десятикроковим керівництвом. Ск
 - Sebastien Rousseau, (2026). [Агентна інженерія для банків ⧉](https://sebastienrousseau.com/2026-05-17-agentic-engineering-banks-blueprint-2026 "Агентна інженерія").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Про автора"><img alt="Портрет Себастьяна Руссо" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Себастьян Руссо</a></strong><span class="author-card-bio">Старший банківський технолог, пише про прикладний ШІ, міграцію ISO 20022, постквантову криптографію для фінансових послуг і структурну трансформацію оптових платежів.</span><span class="author-credentials">Понад 20 років у HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Повний профіль</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Про автора"><img alt="Портрет Себастьяна Руссо" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Себастьян Руссо</a></strong><span class="author-card-bio">Старший банківський технолог, пише про прикладний ШІ, міграцію ISO 20022, постквантову криптографію для фінансових послуг і структурну трансформацію оптових платежів.</span><span class="author-credentials">Понад 20 років у HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Повний профіль</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Останній перегляд <time datetime="2026-05-28">2026-05-28</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Дотичні матеріали</h2>

@@ -3,7 +3,7 @@ author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "Programmable liquidity architecture diagram showing treasury systems, AI forecasting, tokenised deposits, real-time rails, stablecoins, virtual accounts, FX, and collateral mobility"
 banner_height: "571"
 banner_width: "1425"
-banner: "https://cloudcdn.pro/api/transform?url=/stocks/images/alex-knight-2EJCSULRwC8.webp&w=1200&format=webp&q=80"
+banner: "https://cloudcdn.pro/stocks/images/alex-knight-2EJCSULRwC8-1200.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/ar/2026-05-25-programmable-liquidity-ai-token
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "السيولة القابلة للبرمجة 2026, تنسيق الخزينة, الذكاء الاصطناعي في الخزينة, الودائع المرمَّزة, السيولة في الوقت الفعلي, العملات المستقرة, مسارات الدفع المتعددة, الحسابات الافتراضية, الخدمات المصرفية للمعاملات, ISO 20022"
 language: "ar"
 excerpt: "السيولة القابلة للبرمجة في 2026 تربط التنبؤ بالذكاء الاصطناعي والودائع المرمَّزة ومسارات الدفع في الوقت الفعلي والحسابات الافتراضية والعملات المستقرة وأنظمة TMS في طبقة تنسيق واحدة لرأس المال العامل. والسؤال الاستراتيجي للبنوك هو انضباط التصميم: أيّ البيانات والمسارات والضوابط والالتزامات وتدفقات عمل العملاء يجب أن تجتمع — وكيف يُقدَّم الدليل على هذا التنسيق للعملاء والمشرفين."
@@ -201,6 +201,6 @@ site_software: "Static Site Generator, Rust"
 - Oliver Wyman، (2026). [Digital assets reshaping the future of wholesale banking ⧉](https://www.oliverwyman.com/our-expertise/insights/2026/may/digital-assets-future-wholesale-banking.html "Digital assets reshaping wholesale banking").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="نبذة عن المؤلف"><img alt="صورة شخصية لسيباستيان روسو" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">سيباستيان روسو</a></strong><span class="author-card-bio">تقني مصرفي أول يكتب عن الذكاء الاصطناعي التطبيقي، والبنية التحتية للمدفوعات، والنقد المُرمَّز، وISO 20022، والأمن ما بعد الكمومي، والخدمات المالية السحابية الأصل، والأسواق الرقمية المُنظَّمة.</span><span class="author-credentials">أكثر من 20 عاماً من الخبرة لدى HSBC للخدمات المصرفية التجارية والاستثمارية، وPayPal، وBarclays، وShazam، وAKQA، ومجموعة Virgin. <a href="/about/index.html">الملف الكامل</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="نبذة عن المؤلف"><img alt="صورة شخصية لسيباستيان روسو" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">سيباستيان روسو</a></strong><span class="author-card-bio">تقني مصرفي أول يكتب عن الذكاء الاصطناعي التطبيقي، والبنية التحتية للمدفوعات، والنقد المُرمَّز، وISO 20022، والأمن ما بعد الكمومي، والخدمات المالية السحابية الأصل، والأسواق الرقمية المُنظَّمة.</span><span class="author-credentials">أكثر من 20 عاماً من الخبرة لدى HSBC للخدمات المصرفية التجارية والاستثمارية، وPayPal، وBarclays، وShazam، وAKQA، ومجموعة Virgin. <a href="/about/index.html">الملف الكامل</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">آخر مراجعة <time datetime="2026-05-25">2026-05-25</time>.</p>
 <!-- enrich-end -->

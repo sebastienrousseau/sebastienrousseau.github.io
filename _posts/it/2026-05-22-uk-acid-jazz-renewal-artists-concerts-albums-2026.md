@@ -3,7 +3,7 @@ author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "Collage del rinnovamento dell'acid jazz nel Regno Unito nel 2026, con organo Hammond, vinili, Ronnie Scott's, Acid Jazz Records, palchi dei festival jazz-funk e cultura groove londinese"
 banner_height: "571"
 banner_width: "1425"
-banner: "https://cloudcdn.pro/api/transform?url=/stocks/images/aperture-vintage-SshYpuf607g.webp&w=1200&format=webp&q=80"
+banner: "https://cloudcdn.pro/stocks/images/aperture-vintage-SshYpuf607g-1200.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/it/2026-05-22-uk-acid-jazz-renewal-artists-co
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "UK acid jazz 2026, Acid Jazz Records, Brand New Heavies, Galliano, James Taylor Quartet, Ronnie Scott’s, Bangs and Talbot, Chris Bangs, Mick Talbot, Smokin Aces, Mostly Jazz Funk Soul Festival, Cymande, Soul II Soul, Jordan Rakei, rinascita jazz UK, jazz funk, soul jazz, concerti jazz Londra"
 language: "it"
 excerpt: "Il rinnovamento dell'acid jazz UK nel 2026 abbraccia uscite discografiche, date live di artisti di prima generazione e programmazione festival — Acid Jazz Records, Bangs & Talbot, The Brand New Heavies, Galliano, James Taylor Quartet e Mostly Jazz Funk & Soul Festival sono tutti attivi contemporaneamente."
@@ -231,6 +231,6 @@ Il collegamento è il groove, non la classificazione rigida dei generi. Festival
 - Mostly Jazz Funk & Soul Festival, (2026). [Mostly Jazz Funk & Soul Festival 2026 ⧉](https://mostlyjazz.co.uk "Mostly Jazz Funk & Soul Festival").
 - Marlbank, (2026). [I migliori album jazz britannici del 2026 finora ⧉](https://marlbank.net/top-jazz-in-2026/top-uk-jazz-albums-in-2026-so-far/ "I migliori album jazz britannici del 2026 finora").
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Informazioni sull’autore"><img alt="Ritratto di Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist, scrive di IA applicata, migrazione a ISO 20022, crittografia post-quantum per i servizi finanziari e trasformazione strutturale dei pagamenti wholesale.</span><span class="author-credentials">Oltre 20 anni in HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profilo completo</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Informazioni sull’autore"><img alt="Ritratto di Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist, scrive di IA applicata, migrazione a ISO 20022, crittografia post-quantum per i servizi finanziari e trasformazione strutturale dei pagamenti wholesale.</span><span class="author-credentials">Oltre 20 anni in HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profilo completo</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Ultima revisione <time datetime="2026-05-22">2026-05-22</time>.</p>
 <!-- enrich-end -->

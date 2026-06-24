@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/id/2026-05-20-cloud-native-banking-financial-
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "perbankan cloud native 2026, Kubernetes bank, cloud lembaga keuangan, DORA 2026, ketahanan cloud, Red Hat OpenShift, Portworx, koeksistensi VM kontainer, kedaulatan cloud bank, ketergantungan cloud layanan keuangan, ketahanan operasional, pemulihan bencana, strategi keluar cloud, beban kerja AI perbankan"
 language: "id"
 last_reviewed: "2026-05-20"
@@ -214,6 +214,6 @@ Kesalahan terbesar adalah mengadopsi kontainer tanpa kontrol platform. Jika Kube
 - Red Hat, (2026). [Kedaulatan digital untuk bank ⧉](https://www.redhat.com/en/resources/cloud-sovereignty-for-banks-overview "Kedaulatan cloud untuk bank").
 - Thought Machine, (2026). [Perangkat lunak perbankan inti cloud-native ⧉](https://www.thoughtmachine.net "Thought Machine Vault").
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Tentang penulis"><img alt="Potret Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Teknolog perbankan senior yang menulis tentang AI terapan, migrasi ISO 20022, kriptografi pasca-kuantum untuk jasa keuangan, dan transformasi struktural pembayaran grosir.</span><span class="author-credentials">Lebih dari 20 tahun di HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profil lengkap</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Tentang penulis"><img alt="Potret Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Teknolog perbankan senior yang menulis tentang AI terapan, migrasi ISO 20022, kriptografi pasca-kuantum untuk jasa keuangan, dan transformasi struktural pembayaran grosir.</span><span class="author-credentials">Lebih dari 20 tahun di HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profil lengkap</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Terakhir ditinjau <time datetime="2026-05-20">2026-05-20</time>.</p>
 <!-- enrich-end -->

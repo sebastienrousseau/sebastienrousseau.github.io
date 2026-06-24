@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/fil/2026-06-11-cloudcdn-open-source-blueprint
 image_alt: "Black and white na portrait ni Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "CloudCDN, AI-native edge, open-source CDN, MCP server, Cloudflare Workers, Durable Objects, zero trust, WebAuthn, signed URLs, SLSA Level 3, DORA, edge control plane"
 language: "fil"
 last_reviewed: "2026-06-11"
@@ -265,6 +265,6 @@ Hindi. Ang mga proprietary at closed-source na CDN ay umaasa sa security through
 - GitHub, (2026). [Repository ng cloudcdn.pro ⧉](https://github.com/sebastienrousseau/cloudcdn.pro "Repository ng cloudcdn.pro").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Tungkol sa may-akda"><img alt="Larawan ni Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior na teknologist sa pagbabangko na sumusulat tungkol sa applied AI, imprastraktura ng pagbabayad, tokenisadong pera, ISO 20022, post-quantum security, cloud-native na serbisyong pinansyal, open-source na imprastraktura, at regulado digital markets.</span><span class="author-credentials">Mahigit 20 taon sa HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Buong profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Tungkol sa may-akda"><img alt="Larawan ni Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior na teknologist sa pagbabangko na sumusulat tungkol sa applied AI, imprastraktura ng pagbabayad, tokenisadong pera, ISO 20022, post-quantum security, cloud-native na serbisyong pinansyal, open-source na imprastraktura, at regulado digital markets.</span><span class="author-credentials">Mahigit 20 taon sa HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Buong profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Huling sinuri <time datetime="2026-06-11">2026-06-11</time>.</p>
 <!-- enrich-end -->

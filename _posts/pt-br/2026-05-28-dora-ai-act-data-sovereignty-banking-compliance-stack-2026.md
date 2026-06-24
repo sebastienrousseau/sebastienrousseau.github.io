@@ -3,7 +3,7 @@ author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "Diagrama da stack de conformidade mostrando resiliência DORA, transparência do EU AI Act, soberania de dados, risco de concentração em nuvem, logs de auditoria, governança de modelos e provedores terceirizados"
 banner_height: "571"
 banner_width: "1425"
-banner: "https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&w=1200&format=webp&q=80"
+banner: "https://cloudcdn.pro/stocks/images/akande-voice-assistant-office-1200.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/pt-br/2026-05-28-dora-ai-act-data-sovereignty
 image_alt: "Retrato em preto e branco de Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "DORA 2026, EU AI Act 2026, soberania de dados bancos, resiliência operacional, risco de concentração em nuvem, conformidade de IA em serviços financeiros, IA de alto risco"
 language: "pt-br"
 excerpt: "DORA, EU AI Act, GDPR, risco de concentração em nuvem e soberania de dados convergem em uma stack de conformidade única para bancos em 2026. A questão estratégica é disciplina de arquitetura — conduzir conformidade, governança de IA, evidências de resiliência de TIC e escolhas de dados soberanos como uma arquitetura, não cinco programas paralelos."
@@ -201,6 +201,6 @@ O sucesso deve ser medido por economia unitária, evidência de resiliência, qu
 - GOV.UK, (2026). [UK fintech backed to embrace future payments technology ⧉](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Sobre o autor"><img alt="Retrato de Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Tecnólogo bancário sênior, escreve sobre IA aplicada, infraestrutura de pagamentos, moeda tokenizada, ISO 20022, segurança pós-quântica, serviços financeiros cloud-native e mercados digitais regulados.</span><span class="author-credentials">Mais de 20 anos no HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Perfil completo</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Sobre o autor"><img alt="Retrato de Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Tecnólogo bancário sênior, escreve sobre IA aplicada, infraestrutura de pagamentos, moeda tokenizada, ISO 20022, segurança pós-quântica, serviços financeiros cloud-native e mercados digitais regulados.</span><span class="author-credentials">Mais de 20 anos no HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Perfil completo</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Última revisão <time datetime="2026-05-28">2026-05-28</time>.</p>
 <!-- enrich-end -->

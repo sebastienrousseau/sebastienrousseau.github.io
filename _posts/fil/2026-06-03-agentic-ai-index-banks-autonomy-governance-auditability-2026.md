@@ -3,7 +3,7 @@ author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "Diagram ng The Agentic AI Index for Banks 2026 para sa mga bangko at institusyong pinansyal sa 2026"
 banner_height: "571"
 banner_width: "1425"
-banner: "https://cloudcdn.pro/api/transform?url=/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp&w=1200&format=webp&q=80"
+banner: "https://cloudcdn.pro/stocks/images/alev-takil-7ojyp-IXW7w-unsplash-1200.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/fil/2026-06-03-agentic-ai-index-banks-autonom
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "agentic AI banking 2026, mga AI agent sa bangko, AI governance sa financial services, autonomous banking workflows, model risk management, AI auditability"
 language: "fil"
 last_reviewed: "2026-06-03"
@@ -266,6 +266,6 @@ Apat na numero bawat workflow: autonomy tier, audit-trace completeness, reversal
 - Cloud Native Computing Foundation, (2018). [Open Policy Agent (OPA) ⧉](https://www.openpolicyagent.org/ "Open Policy Agent — policy-based na kontrol para sa cloud native environments").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Tungkol sa may-akda"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist na sumusulat tungkol sa applied AI, payments infrastructure, tokenised money, ISO 20022, post-quantum security, cloud-native financial services, at regulated digital markets.</span><span class="author-credentials">20+ taon sa HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Buong profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Tungkol sa may-akda"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist na sumusulat tungkol sa applied AI, payments infrastructure, tokenised money, ISO 20022, post-quantum security, cloud-native financial services, at regulated digital markets.</span><span class="author-credentials">20+ taon sa HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Buong profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Huling sinuri <time datetime="2026-06-03">2026-06-03</time>.</p>
 <!-- enrich-end -->

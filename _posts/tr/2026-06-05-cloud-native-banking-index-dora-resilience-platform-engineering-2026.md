@@ -3,7 +3,7 @@ author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "Bir şehir silüetine dönüşen devre kartı deseni — bulut-yerel bankacılık için seçilen görsel sicil: bankanın operasyonel dokusuna işlenmiş platform mühendisliği primitifleri."
 banner_height: "571"
 banner_width: "1425"
-banner: "https://cloudcdn.pro/api/transform?url=/stocks/images/quang-nguyen-vinh-2649403.webp&w=1600&format=webp&q=85"
+banner: "https://cloudcdn.pro/stocks/images/quang-nguyen-vinh-2649403-1920.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/tr/2026-06-05-cloud-native-banking-index-dora
 image_alt: "Sebastien Rousseau'nun siyah-beyaz portresi"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "bulut-yerel bankacılık 2026, DORA bankalar, bulut yoğunlaşma riski, platform mühendisliği bankalar, BİT üçüncü taraf riski, bulut çıkış stratejisi, egemen bulut, Kubernetes"
 language: "tr-TR"
 last_reviewed: "2026-06-05"
@@ -282,6 +282,6 @@ Tanımlanmış bir CTPP'ye bağımlı CIF başına yıllık uçtan uca çıkış
 - Cloud Native Computing Foundation, (2019). [OpenTelemetry ⧉](https://opentelemetry.io/ "OpenTelemetry").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Yazar hakkında"><img alt="Sebastien Rousseau'nun portresi" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Uygulamalı yapay zekâ, ödeme altyapısı, tokenize para, ISO 20022, kuantum-sonrası güvenlik, bulut-yerel finansal hizmetler ve düzenlenmiş dijital piyasalar üzerine yazan kıdemli bankacılık teknoloğu.</span><span class="author-credentials">HSBC Ticari ve Yatırım Bankacılığı, PayPal, Barclays, Shazam, AKQA, Virgin Group'ta 20+ yıl. <a href="/about/index.html">Tam profil</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Yazar hakkında"><img alt="Sebastien Rousseau'nun portresi" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Uygulamalı yapay zekâ, ödeme altyapısı, tokenize para, ISO 20022, kuantum-sonrası güvenlik, bulut-yerel finansal hizmetler ve düzenlenmiş dijital piyasalar üzerine yazan kıdemli bankacılık teknoloğu.</span><span class="author-credentials">HSBC Ticari ve Yatırım Bankacılığı, PayPal, Barclays, Shazam, AKQA, Virgin Group'ta 20+ yıl. <a href="/about/index.html">Tam profil</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Son inceleme <time datetime="2026-06-05">2026-06-05</time>.</p>
 <!-- enrich-end -->

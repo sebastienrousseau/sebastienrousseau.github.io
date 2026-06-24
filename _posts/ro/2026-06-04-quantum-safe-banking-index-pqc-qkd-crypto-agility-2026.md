@@ -3,7 +3,7 @@ author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "Diagramă a Indexului Băncii Sigure Cuantic 2026 pentru bănci și instituții financiare în 2026"
 banner_height: "571"
 banner_width: "1425"
-banner: "https://cloudcdn.pro/api/transform?url=/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp&w=1200&format=webp&q=80"
+banner: "https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash-1200.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/ro/2026-06-04-quantum-safe-banking-index-pqc-
 image_alt: "Portret alb-negru al lui Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "bănci sigure cuantic 2026, criptografie post-cuantică bănci, NIST FIPS 203, ML-KEM, ML-DSA, SLH-DSA, agilitate criptografică, QKD bancar"
 language: "ro-RO"
 last_reviewed: "2026-06-04"
@@ -241,6 +241,6 @@ Nu. NIST i-a încurajat pe administratori să înceapă integrarea primelor stan
 - NIST, (2026). [Primele trei standarde finalizate de criptare post-cuantică ⧉](https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards "Primele trei standarde finalizate de criptare post-cuantică").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Despre autor"><img alt="Portret al lui Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Tehnolog bancar senior care scrie despre AI aplicat, infrastructura plăților, banii tokenizați, ISO 20022, securitatea post-cuantică, serviciile financiare cloud-native și piețele digitale reglementate.</span><span class="author-credentials">Peste 20 de ani de experiență la HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profil complet</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Despre autor"><img alt="Portret al lui Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Tehnolog bancar senior care scrie despre AI aplicat, infrastructura plăților, banii tokenizați, ISO 20022, securitatea post-cuantică, serviciile financiare cloud-native și piețele digitale reglementate.</span><span class="author-credentials">Peste 20 de ani de experiență la HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profil complet</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Ultima revizuire <time datetime="2026-06-04">2026-06-04</time>.</p>
 <!-- enrich-end -->

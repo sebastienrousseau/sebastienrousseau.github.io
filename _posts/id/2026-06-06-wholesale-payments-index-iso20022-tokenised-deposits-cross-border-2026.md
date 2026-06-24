@@ -18,7 +18,7 @@ id: "https://sebastienrousseau.com/id/2026-06-06-wholesale-payments-index-iso200
 image_alt: "Potret Hitam Putih Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "pembayaran grosir 2026, ISO 20022, simpanan tertokenisasi, Project Agora, pembayaran lintas batas, pembayaran real-time, data alamat terstruktur, kualitas data pembayaran"
 language: "id-ID"
 last_reviewed: "2026-06-06"
@@ -243,6 +243,6 @@ Ukur kesiapan data terstruktur, reject pembayaran, biaya repair, waktu setelmen,
 - Deutsche Bank, (2026). [Uang Digital: stablecoin, simpanan tertokenisasi, dan CBDC ⧉](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Uang Digital: stablecoin, simpanan tertokenisasi, dan CBDC").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Tentang penulis"><img alt="Potret Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Teknolog perbankan senior yang menulis tentang AI terapan, infrastruktur pembayaran, uang tertokenisasi, ISO 20022, keamanan pasca-kuantum, layanan keuangan cloud-native, dan pasar digital teregulasi.</span><span class="author-credentials">Lebih dari 20 tahun pengalaman di HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profil lengkap</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Tentang penulis"><img alt="Potret Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Teknolog perbankan senior yang menulis tentang AI terapan, infrastruktur pembayaran, uang tertokenisasi, ISO 20022, keamanan pasca-kuantum, layanan keuangan cloud-native, dan pasar digital teregulasi.</span><span class="author-credentials">Lebih dari 20 tahun pengalaman di HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profil lengkap</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Terakhir ditinjau <time datetime="2026-06-06">2026-06-06</time>.</p>
 <!-- enrich-end -->

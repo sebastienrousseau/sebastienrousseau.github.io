@@ -20,7 +20,7 @@ id: "https://sebastienrousseau.com/2026-06-17-economist-commercialising-quantum-
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "Commercialising Quantum Global 2026, Economist Impact summit, post-quantum cryptography, NIST ML-KEM, harvest-now decrypt-later, SNDL, HSBC quantum, Philip Intallura, quantum sensing, GPS-independent navigation, NQCC, EU Quantum Act, Quantcore, qBIG prize, Lord Vallance, hybrid quantum-classical, DORA Article 6"
 language: "fil-PH"
 last_reviewed: "2026-06-17"

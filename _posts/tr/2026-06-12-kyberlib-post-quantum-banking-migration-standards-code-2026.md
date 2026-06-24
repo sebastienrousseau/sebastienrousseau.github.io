@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/tr/2026-06-12-kyberlib-post-quantum-banking-m
 image_alt: "Sebastien Rousseau'nun siyah beyaz portresi"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "KyberLib, kuantum sonrası kriptografi, ML-KEM, FIPS 203, CRYSTALS-Kyber, kripto-çeviklik, hibrit anahtar değişimi, Rust kriptografi, şimdi sakla sonra çöz, DORA, NIST SP 1800-38, kuantum güvenli bankacılık"
 language: "tr"
 last_reviewed: "2026-06-12"
@@ -263,6 +263,6 @@ Hibrit zarflar, oturum anahtarını hem klasik hem de kuantum sonrası bir sırd
 - GitHub, (2026). [kyberlib açık kaynak deposu ⧉](https://github.com/sebastienrousseau/kyberlib "kyberlib deposu").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Yazar Hakkında"><img alt="Sebastien Rousseau'nun portresi" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Uygulamalı yapay zeka, ödeme altyapısı, tokenleştirilmiş para, ISO 20022, kuantum sonrası güvenlik, bulut yerel finansal hizmetler, açık kaynak altyapı ve düzenlenmiş dijital piyasalar üzerine yazan kıdemli bankacılık teknoloğu.</span><span class="author-credentials">HSBC Ticari ve Yatırım Bankası, PayPal, Barclays, Shazam, AKQA ve Virgin Group'ta 20+ yıl. <a href="/about/index.html">Tam profil</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Yazar Hakkında"><img alt="Sebastien Rousseau'nun portresi" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Uygulamalı yapay zeka, ödeme altyapısı, tokenleştirilmiş para, ISO 20022, kuantum sonrası güvenlik, bulut yerel finansal hizmetler, açık kaynak altyapı ve düzenlenmiş dijital piyasalar üzerine yazan kıdemli bankacılık teknoloğu.</span><span class="author-credentials">HSBC Ticari ve Yatırım Bankası, PayPal, Barclays, Shazam, AKQA ve Virgin Group'ta 20+ yıl. <a href="/about/index.html">Tam profil</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Son inceleme <time datetime="2026-06-12">2026-06-12</time>.</p>
 <!-- enrich-end -->

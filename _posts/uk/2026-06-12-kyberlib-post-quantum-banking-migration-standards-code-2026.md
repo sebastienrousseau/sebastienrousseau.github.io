@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/uk/2026-06-12-kyberlib-post-quantum-banking-m
 image_alt: "Чорно-білий портрет Себастьяна Руссо"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "KyberLib, постквантова криптографія, ML-KEM, FIPS 203, CRYSTALS-Kyber, криптоагільність, гібридний обмін ключами, криптографія на Rust, store now decrypt later, DORA, NIST SP 1800-38, квантово-стійкий банкінг"
 language: "uk"
 excerpt: "KyberLib перетворює постквантову банківську міграцію з політичних документів на перевіряний Rust — інкапсуляція ключів ML-KEM за FIPS 203, гібридні класично-постквантові handshake, компіляція no_std для HSM, криптоагільні межі абстракції та докази управління за статтею 5 DORA, потрібні радам."
@@ -263,6 +263,6 @@ G-SIB експлуатують транзакційні системи з вел
 - GitHub, (2026). [Відкритий репозиторій kyberlib ⧉](https://github.com/sebastienrousseau/kyberlib "Репозиторій kyberlib").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Про автора"><img alt="Портрет Себастьяна Руссо" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Себастьян Руссо</a></strong><span class="author-card-bio">Старший банківський технолог, пише про прикладний ШІ, інфраструктуру платежів, токенізовані гроші, ISO 20022, постквантову безпеку, хмарно-орієнтовані фінансові послуги, відкриту інфраструктуру та регульовані цифрові ринки.</span><span class="author-credentials">Понад 20 років у HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Повний профіль</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Про автора"><img alt="Портрет Себастьяна Руссо" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Себастьян Руссо</a></strong><span class="author-card-bio">Старший банківський технолог, пише про прикладний ШІ, інфраструктуру платежів, токенізовані гроші, ISO 20022, постквантову безпеку, хмарно-орієнтовані фінансові послуги, відкриту інфраструктуру та регульовані цифрові ринки.</span><span class="author-credentials">Понад 20 років у HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Повний профіль</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Останній перегляд <time datetime="2026-06-12">2026-06-12</time>.</p>
 <!-- enrich-end -->

@@ -19,7 +19,7 @@ id: "https://sebastienrousseau.com/cs/2026-05-19-global-wholesale-payments-econo
 image_alt: "Černobílý portrét Sebastiena Rousseaua"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "velkoobjemové platby 2026, ekonomika světových plateb, ISO 20022, RTGS, přeshraniční platby, BIS CPMI, FSB, Swift CBPR+, cestovní mapa G20, zúčtování v reálném čase, Project Agorá, Project Mandala, Project Nexus, interoperabilita plateb, korespondenční bankovnictví, fragmentace plateb, velkoobjemová CBDC"
 language: "cs"
 last_reviewed: "2026-05-19"

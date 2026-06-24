@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/zh-hans/2026-06-02-banking-infrastructure-ind
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "banking infrastructure index 2026, 银行基础设施指数, agentic AI banking, 自主式 AI 银行, quantum safe banking, 量子安全, cloud native banking, 云原生银行, wholesale payments, 批发支付, ISO 20022, DORA, Project Agora, tokenised deposits, 代币化存款"
 language: "zh-hans"
 last_reviewed: "2026-06-02"
@@ -217,6 +217,6 @@ AI Index 给出的关键启示是:能力与可靠性并非同一件事。AI 系�
 - 欧洲银行业管理局,(2026)。[数字运营韧性法案(DORA) ⧉](https://www.eba.europa.eu/activities/direct-supervision-and-oversight/digital-operational-resilience-act "数字运营韧性法案")。
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="关于作者"><img alt="Sebastien Rousseau 肖像" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">资深银行技术专家,撰写关于应用型人工智能、支付基础设施、代币化货币、ISO 20022、后量子安全、云原生金融服务,以及受监管数字市场的文章。</span><span class="author-credentials">在 HSBC 商业与投资银行、PayPal、Barclays、Shazam、AKQA、Virgin 集团积累二十余年经验。<a href="/about/index.html">完整简介</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="关于作者"><img alt="Sebastien Rousseau 肖像" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">资深银行技术专家,撰写关于应用型人工智能、支付基础设施、代币化货币、ISO 20022、后量子安全、云原生金融服务,以及受监管数字市场的文章。</span><span class="author-credentials">在 HSBC 商业与投资银行、PayPal、Barclays、Shazam、AKQA、Virgin 集团积累二十余年经验。<a href="/about/index.html">完整简介</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">最近审阅 <time datetime="2026-06-02">2026-06-02</time>。</p>
 <!-- enrich-end -->

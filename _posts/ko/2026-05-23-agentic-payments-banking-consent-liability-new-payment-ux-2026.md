@@ -3,7 +3,7 @@ author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "AI 에이전트, 동의 위임, 토큰화 자격증명, 카드 네트워크, 은행, 가맹점, 감사 추적을 표시한 에이전트 결제 아키텍처 다이어그램"
 banner_height: "571"
 banner_width: "1425"
-banner: "https://cloudcdn.pro/api/transform?url=/stocks/images/ai-robot.webp&w=1200&format=webp&q=80"
+banner: "https://cloudcdn.pro/stocks/images/ai-robot-1200.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/ko/2026-05-23-agentic-payments-banking-consen
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "에이전트 결제 2026, AI 에이전트 결제, Mastercard Agent Pay, Rabobank AI 결제, AP2, A2A, x402, MCP, 머신 결제 프로토콜, 결제 동의, Regulation E, EFTA, 결제 책임, 검증 가능한 의도, 토큰화, 패스키, 뱅킹 UX, AI 커머스"
 language: "ko"
 excerpt: "에이전트 결제는 2026년 개념에서 실거래로 넘어섰습니다 — Mastercard와 Rabobank가 Agent Pay로 네덜란드 AI 에이전트 결제를 실행했고, AP2 방식 암호학적 동의 위임이 부상하며, HM Treasury는 결제 서비스 규제의 적응을 예고했습니다. 뱅킹 아키텍처의 핵심 과제는 동의·신원·책임·결제 전 증거입니다."
@@ -203,6 +203,6 @@ J.P. Morgan은 에이전트 커머스가 반복적이고 저위험인 범주에�
 - J.P. Morgan, (2026). [Payments Outlook: Five Trends Powering Payments in 2026 ⧉](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="저자 소개"><img alt="Sebastien Rousseau의 인물 사진" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">응용 AI, 결제 인프라, 토큰화 화폐, ISO 20022, 양자내성 보안, 클라우드 네이티브 금융 서비스, 규제 디지털 시장에 관해 집필하는 시니어 뱅킹 기술 전문가입니다.</span><span class="author-credentials">HSBC 상업·투자은행, PayPal, Barclays, Shazam, AKQA, Virgin Group을 아우르는 20년 이상의 경력. <a href="/about/index.html">전체 프로필</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="저자 소개"><img alt="Sebastien Rousseau의 인물 사진" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">응용 AI, 결제 인프라, 토큰화 화폐, ISO 20022, 양자내성 보안, 클라우드 네이티브 금융 서비스, 규제 디지털 시장에 관해 집필하는 시니어 뱅킹 기술 전문가입니다.</span><span class="author-credentials">HSBC 상업·투자은행, PayPal, Barclays, Shazam, AKQA, Virgin Group을 아우르는 20년 이상의 경력. <a href="/about/index.html">전체 프로필</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">최종 검토 <time datetime="2026-05-23">2026-05-23</time>.</p>
 <!-- enrich-end -->

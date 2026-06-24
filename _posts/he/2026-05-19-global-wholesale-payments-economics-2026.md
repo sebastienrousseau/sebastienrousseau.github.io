@@ -19,7 +19,7 @@ id: "https://sebastienrousseau.com/he/2026-05-19-global-wholesale-payments-econo
 image_alt: "דיוקן בשחור-לבן של Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "תשלומי סיטונאות 2026, כלכלת תשלומים גלובלית, ISO 20022, RTGS, תשלומים חוצי-גבולות, BIS CPMI, FSB, Swift CBPR+, מפת הדרכים של G20, סילוק ברוטו בזמן אמת, Project Agorá, Project Mandala, Project Nexus, יכולת פעולה הדדית בתשלומים, בנקאות קורספונדנטית, פיצול בתשלומים, CBDC סיטונאי"
 language: "he"
 last_reviewed: "2026-05-19"

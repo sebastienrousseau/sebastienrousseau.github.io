@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/bn/2026-05-26-magnifica-humanitas-ai-quantum-
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "Magnifica Humanitas, Pope Leo XIV, AI বিশ্বপত্র, কৃত্রিম বুদ্ধিমত্তা নৈতিকতা, কোয়ান্টাম কম্পিউটিং নৈতিকতা, Rerum Novarum, বাবেলের মিনার, প্রযুক্তি নিরপেক্ষ নয়, ট্রান্সহিউম্যানিজম, পোস্টহিউম্যানিজম, মানব মর্যাদা, প্রযুক্তিগত প্যারাডাইম, ট্রেন গাড়ি পারমাণবিক ইন্টারনেট, প্রযুক্তি ইতিহাসে নৈতিক উদ্বেগ, Lucy জ্ঞান স্থানান্তর, AI আশা, EU AI Act, DORA, Anthropic, Sebastien Rousseau"
 language: "bn"
 layout: "report"
@@ -243,6 +243,6 @@ site_software: "Static Site Generator, Rust"
 - Ascension Press, (২০২৬)। [পোপ লিও-র প্রথম বিশ্বপত্রের সম্পূর্ণ গাইড: Magnifica Humanitas ⧉](https://ascensionpress.com/blogs/articles/a-complete-guide-to-pope-leo-s-encyclical-magnificent-humanitas "Ascension — Guide to Magnifica Humanitas")। Ascension Press।
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="লেখক সম্পর্কে"><img alt="সেবাস্তিয়ান রুসোর প্রতিকৃতি" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">সেবাস্তিয়ান রুসো</a></strong><span class="author-card-bio">সিনিয়র ব্যাংকিং প্রযুক্তিবিদ, প্রয়োগ-ভিত্তিক এআই, পেমেন্ট পরিকাঠামো, টোকেনাইজড অর্থ, ISO 20022, পোস্ট-কোয়ান্টাম নিরাপত্তা, ক্লাউড-নেটিভ আর্থিক পরিষেবা ও নিয়ন্ত্রিত ডিজিটাল বাজার সম্পর্কে লেখেন।</span><span class="author-credentials">HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group-এ ২০+ বছরের অভিজ্ঞতা। <a href="/about/index.html">সম্পূর্ণ প্রোফাইল</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="লেখক সম্পর্কে"><img alt="সেবাস্তিয়ান রুসোর প্রতিকৃতি" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">সেবাস্তিয়ান রুসো</a></strong><span class="author-card-bio">সিনিয়র ব্যাংকিং প্রযুক্তিবিদ, প্রয়োগ-ভিত্তিক এআই, পেমেন্ট পরিকাঠামো, টোকেনাইজড অর্থ, ISO 20022, পোস্ট-কোয়ান্টাম নিরাপত্তা, ক্লাউড-নেটিভ আর্থিক পরিষেবা ও নিয়ন্ত্রিত ডিজিটাল বাজার সম্পর্কে লেখেন।</span><span class="author-credentials">HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group-এ ২০+ বছরের অভিজ্ঞতা। <a href="/about/index.html">সম্পূর্ণ প্রোফাইল</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">সর্বশেষ পর্যালোচনা <time datetime="2026-05-26">2026-05-26</time>।</p>
 <!-- enrich-end -->

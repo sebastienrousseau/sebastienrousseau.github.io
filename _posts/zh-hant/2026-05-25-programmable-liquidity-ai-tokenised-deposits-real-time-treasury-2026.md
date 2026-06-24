@@ -3,7 +3,7 @@ author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "Programmable liquidity architecture diagram showing treasury systems, AI forecasting, tokenised deposits, real-time rails, stablecoins, virtual accounts, FX, and collateral mobility"
 banner_height: "571"
 banner_width: "1425"
-banner: "https://cloudcdn.pro/api/transform?url=/stocks/images/alex-knight-2EJCSULRwC8.webp&w=1200&format=webp&q=80"
+banner: "https://cloudcdn.pro/stocks/images/alex-knight-2EJCSULRwC8-1200.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/zh-hant/2026-05-25-programmable-liquidity-ai-
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "可程式化流動性 2026, 資金管理編排, AI 資金管理, 代幣化存款, 即時流動性, 穩定幣資金管理, 多軌道支付, 虛擬帳戶, 交易銀行, 抵押品移動性, programmable liquidity, tokenised deposits, ISO 20022, Standard Chartered, J.P. Morgan, Oliver Wyman"
 language: "zh-hant"
 excerpt: "2026 年的可程式化流動性,把 AI 預測、代幣化存款、即時軌道、虛擬帳戶、穩定幣與 TMS 整合成單一營運資金編排層。銀行的策略命題是設計紀律:哪些資料、軌道、控制、負債與客戶工作流屬於同一層,以及如何向客戶與監管機構證明該編排。"
@@ -201,6 +201,6 @@ site_software: "Static Site Generator, Rust"
 - Oliver Wyman, (2026). [Digital assets reshaping the future of wholesale banking ⧉](https://www.oliverwyman.com/our-expertise/insights/2026/may/digital-assets-future-wholesale-banking.html "Digital assets reshaping wholesale banking").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="關於作者"><img alt="Sebastien Rousseau 肖像" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">資深銀行技術專家,撰寫主題涵蓋應用 AI、支付基礎建設、代幣化貨幣、ISO 20022、後量子安全、雲端原生金融服務,以及受監管的數位市場。</span><span class="author-credentials">在 HSBC Commercial &amp; Investment Bank、PayPal、Barclays、Shazam、AKQA、Virgin Group 擁有 20 多年經驗。<a href="/about/index.html">完整簡介</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="關於作者"><img alt="Sebastien Rousseau 肖像" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">資深銀行技術專家,撰寫主題涵蓋應用 AI、支付基礎建設、代幣化貨幣、ISO 20022、後量子安全、雲端原生金融服務,以及受監管的數位市場。</span><span class="author-credentials">在 HSBC Commercial &amp; Investment Bank、PayPal、Barclays、Shazam、AKQA、Virgin Group 擁有 20 多年經驗。<a href="/about/index.html">完整簡介</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">最近審閱 <time datetime="2026-05-25">2026-05-25</time>。</p>
 <!-- enrich-end -->

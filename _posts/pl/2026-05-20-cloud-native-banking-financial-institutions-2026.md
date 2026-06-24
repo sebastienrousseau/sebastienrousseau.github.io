@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/pl/2026-05-20-cloud-native-banking-financial-
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "cloud native banking 2026, Kubernetes banki, instytucje finansowe chmura, DORA 2026, odporność chmury, Red Hat OpenShift, Portworx, współistnienie VM kontener, suwerenność chmury bankowej, uzależnienie od chmury w usługach finansowych, odporność operacyjna, odtwarzanie po awarii, strategia wyjścia z chmury, obciążenia AI w bankowości"
 language: "pl"
 last_reviewed: "2026-05-20"
@@ -214,6 +214,6 @@ Największym błędem jest przyjmowanie kontenerów bez kontroli platformowych. 
 - Red Hat, (2026). [Suwerenność cyfrowa dla banków ⧉](https://www.redhat.com/en/resources/cloud-sovereignty-for-banks-overview "Suwerenność chmury dla banków").
 - Thought Machine, (2026). [Oprogramowanie bankowości podstawowej cloud native ⧉](https://www.thoughtmachine.net "Thought Machine Vault").
 <!-- enrich-start -->
-<aside class="author-card" aria-label="O autorze"><img alt="Portret Sebastiena Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Doświadczony technolog bankowy piszący o stosowanym AI, migracji ISO 20022, kryptografii post-kwantowej dla usług finansowych oraz strukturalnej transformacji płatności hurtowych.</span><span class="author-credentials">Ponad 20 lat doświadczenia w HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Pełny profil</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="O autorze"><img alt="Portret Sebastiena Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Doświadczony technolog bankowy piszący o stosowanym AI, migracji ISO 20022, kryptografii post-kwantowej dla usług finansowych oraz strukturalnej transformacji płatności hurtowych.</span><span class="author-credentials">Ponad 20 lat doświadczenia w HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Pełny profil</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Ostatnia weryfikacja: <time datetime="2026-05-20">2026-05-20</time>.</p>
 <!-- enrich-end -->

@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/vi/2026-05-20-cloud-native-banking-financial-
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "cloud native banking 2026, Kubernetes ngân hàng, tổ chức tài chính đám mây, DORA 2026, khả năng phục hồi đám mây, Red Hat OpenShift, Portworx, cùng tồn tại VM container, chủ quyền đám mây ngân hàng, phụ thuộc đám mây dịch vụ tài chính, khả năng phục hồi hoạt động, khắc phục thảm họa, chiến lược thoát đám mây, khối lượng công việc AI ngân hàng"
 language: "vi"
 last_reviewed: "2026-05-20"
@@ -214,6 +214,6 @@ Sai lầm lớn nhất là áp dụng container mà không có kiểm soát ở 
 - Red Hat, (2026). [Chủ quyền số cho ngân hàng ⧉](https://www.redhat.com/en/resources/cloud-sovereignty-for-banks-overview "Chủ quyền đám mây cho ngân hàng").
 - Thought Machine, (2026). [Phần mềm core banking cloud native ⧉](https://www.thoughtmachine.net "Thought Machine Vault").
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Về tác giả"><img alt="Chân dung Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Chuyên gia công nghệ ngân hàng cấp cao, viết về AI ứng dụng, di trú ISO 20022, mật mã hậu lượng tử cho dịch vụ tài chính và sự chuyển dịch cấu trúc của thanh toán bán buôn.</span><span class="author-credentials">Hơn 20 năm kinh nghiệm tại HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Hồ sơ đầy đủ</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Về tác giả"><img alt="Chân dung Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Chuyên gia công nghệ ngân hàng cấp cao, viết về AI ứng dụng, di trú ISO 20022, mật mã hậu lượng tử cho dịch vụ tài chính và sự chuyển dịch cấu trúc của thanh toán bán buôn.</span><span class="author-credentials">Hơn 20 năm kinh nghiệm tại HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Hồ sơ đầy đủ</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Rà soát lần cuối <time datetime="2026-05-20">2026-05-20</time>.</p>
 <!-- enrich-end -->

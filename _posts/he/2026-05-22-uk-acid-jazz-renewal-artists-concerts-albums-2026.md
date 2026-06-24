@@ -3,7 +3,7 @@ author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "קולאז' של התחדשות האסיד ג'אז הבריטי לשנת 2026 עם עוגב המונד, ויניל, רוני סקוט'ס, Acid Jazz Records, במות פסטיבל ג'אז-פאנק ותרבות הגרוב הלונדונית"
 banner_height: "571"
 banner_width: "1425"
-banner: "https://cloudcdn.pro/api/transform?url=/stocks/images/aperture-vintage-SshYpuf607g.webp&w=1200&format=webp&q=80"
+banner: "https://cloudcdn.pro/stocks/images/aperture-vintage-SshYpuf607g-1200.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/he/2026-05-22-uk-acid-jazz-renewal-artists-co
 image_alt: "דיוקן שחור-לבן של סבסטיאן רוסו"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "אסיד ג'אז בריטי 2026, Acid Jazz Records, Brand New Heavies, Galliano, James Taylor Quartet, רוני סקוט'ס, Bangs and Talbot, Chris Bangs, Mick Talbot, Smokin Aces, Mostly Jazz Funk Soul Festival, Cymande, Soul II Soul, Jordan Rakei, תחייה של ג'אז בריטי, ג'אז-פאנק, סול-ג'אז, קונצרטי ג'אז בלונדון"
 language: "he"
 excerpt: "תחיית האסיד ג'אז הבריטי ב-2026 אינה נוסטלגיה — מדובר במערכת אקולוגית חיה שבה Acid Jazz Records, אמני הגל הראשון, פסטיבלי ג'אז-פאנק ומוזיקאים צעירים מוכווני גרוב פעילים בו-זמנית."
@@ -231,6 +231,6 @@ The Brand New Heavies עם Galliano ב-The Glasshouse ו-The James Taylor Quarte
 - Mostly Jazz Funk & Soul Festival, (2026). [פסטיבל Mostly Jazz Funk & Soul 2026 ⧉](https://mostlyjazz.co.uk "Mostly Jazz Funk & Soul Festival").
 - Marlbank, (2026). [אלבומי הג'אז הבריטי המובילים של 2026 עד כה ⧉](https://marlbank.net/top-jazz-in-2026/top-uk-jazz-albums-in-2026-so-far/ "Top UK jazz albums in 2026 so far").
 <!-- enrich-start -->
-<aside class="author-card" aria-label="על המחבר"><img alt="דיוקן של סבסטיאן רוסו" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">סבסטיאן רוסו</a></strong><span class="author-card-bio">טכנולוג בנקאי בכיר הכותב על בינה מלאכותית יישומית, על המעבר ל-ISO 20022, על קריפטוגרפיה פוסט-קוונטית לשירותים פיננסיים ועל השינוי המבני של תשלומי הסיטונאות.</span><span class="author-credentials">למעלה מ-20 שנים ב-HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">פרופיל מלא</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="על המחבר"><img alt="דיוקן של סבסטיאן רוסו" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">סבסטיאן רוסו</a></strong><span class="author-card-bio">טכנולוג בנקאי בכיר הכותב על בינה מלאכותית יישומית, על המעבר ל-ISO 20022, על קריפטוגרפיה פוסט-קוונטית לשירותים פיננסיים ועל השינוי המבני של תשלומי הסיטונאות.</span><span class="author-credentials">למעלה מ-20 שנים ב-HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">פרופיל מלא</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">נסקר לאחרונה <time datetime="2026-05-22">2026-05-22</time>.</p>
 <!-- enrich-end -->

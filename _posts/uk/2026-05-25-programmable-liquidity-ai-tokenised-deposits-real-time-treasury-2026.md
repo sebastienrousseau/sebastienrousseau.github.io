@@ -3,7 +3,7 @@ author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "Схема архітектури програмованої ліквідності: казначейські системи, ШІ-прогнозування, токенізовані депозити, канали у реальному часі, стейблкоїни, віртуальні рахунки, FX та мобільність застави"
 banner_height: "571"
 banner_width: "1425"
-banner: "https://cloudcdn.pro/api/transform?url=/stocks/images/alex-knight-2EJCSULRwC8.webp&w=1200&format=webp&q=80"
+banner: "https://cloudcdn.pro/stocks/images/alex-knight-2EJCSULRwC8-1200.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/uk/2026-05-25-programmable-liquidity-ai-token
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "програмована ліквідність 2026, оркестрація казначейства, ШІ-казначейство, токенізовані депозити, ліквідність у реальному часі, стейблкоїни казначейство, мультиканальні платежі, віртуальні рахунки, транзакційний банкінг, мобільність застави"
 language: "uk"
 excerpt: "Програмована ліквідність у 2026 році об'єднує ШІ-прогнозування, токенізовані депозити, канали у реальному часі, віртуальні рахунки, стейблкоїни та TMS в один шар оркестрації оборотного капіталу. Стратегічне питання для банків — дисципліна проєктування: які дані, канали, контролі, зобов'язання та клієнтські процеси належать разом і як засвідчити оркестрацію клієнтам і наглядовим органам."
@@ -201,6 +201,6 @@ site_software: "Static Site Generator, Rust"
 - Oliver Wyman, (2026). [Digital assets reshaping the future of wholesale banking ⧉](https://www.oliverwyman.com/our-expertise/insights/2026/may/digital-assets-future-wholesale-banking.html "Digital assets reshaping wholesale banking").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Про автора"><img alt="Портрет Себастьяна Руссо" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Себастьян Руссо</a></strong><span class="author-card-bio">Старший банківський технолог, пише про прикладний ШІ, інфраструктуру платежів, токенізовані гроші, ISO 20022, постквантову безпеку, хмарно-орієнтовані фінансові послуги та регульовані цифрові ринки.</span><span class="author-credentials">Понад 20 років у HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Повний профіль</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Про автора"><img alt="Портрет Себастьяна Руссо" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Себастьян Руссо</a></strong><span class="author-card-bio">Старший банківський технолог, пише про прикладний ШІ, інфраструктуру платежів, токенізовані гроші, ISO 20022, постквантову безпеку, хмарно-орієнтовані фінансові послуги та регульовані цифрові ринки.</span><span class="author-credentials">Понад 20 років у HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Повний профіль</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Останній перегляд <time datetime="2026-05-25">2026-05-25</time>.</p>
 <!-- enrich-end -->

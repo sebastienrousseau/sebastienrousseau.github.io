@@ -3,7 +3,7 @@ author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "Diagram indeksu Quantum-Safe Banking Index 2026 dla banków i instytucji finansowych w 2026 r."
 banner_height: "571"
 banner_width: "1425"
-banner: "https://cloudcdn.pro/api/transform?url=/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp&w=1200&format=webp&q=80"
+banner: "https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash-1200.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/pl/2026-06-04-quantum-safe-banking-index-pqc-
 image_alt: "Czarno-biały portret Sebastiena Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "quantum-safe banking 2026, kryptografia postkwantowa banki, NIST FIPS 203, ML-KEM, ML-DSA, SLH-DSA, krypto-zwinność, QKD bankowość"
 language: "pl-PL"
 last_reviewed: "2026-06-04"
@@ -241,6 +241,6 @@ Nie. NIST zachęca administratorów, by rozpocząć integrację pierwszych final
 - NIST, (2026). [Pierwsze trzy sfinalizowane standardy szyfrowania postkwantowego ⧉](https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards "First three finalized post-quantum encryption standards").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="O autorze"><img alt="Portret Sebastiena Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist piszący o stosowanej AI, infrastrukturze płatności, tokenizowanym pieniądzu, ISO 20022, bezpieczeństwie postkwantowym, cloud-native usługach finansowych i regulowanych rynkach cyfrowych.</span><span class="author-credentials">Ponad 20 lat doświadczenia w HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Pełny profil</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="O autorze"><img alt="Portret Sebastiena Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist piszący o stosowanej AI, infrastrukturze płatności, tokenizowanym pieniądzu, ISO 20022, bezpieczeństwie postkwantowym, cloud-native usługach finansowych i regulowanych rynkach cyfrowych.</span><span class="author-credentials">Ponad 20 lat doświadczenia w HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Pełny profil</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Ostatnia weryfikacja <time datetime="2026-06-04">2026-06-04</time>.</p>
 <!-- enrich-end -->

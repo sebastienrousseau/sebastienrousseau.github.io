@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/hi/2026-05-20-cloud-native-banking-financial-
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "क्लाउड नेटिव बैंकिंग 2026, Kubernetes बैंक, वित्तीय संस्थान क्लाउड, DORA 2026, क्लाउड लचीलापन, Red Hat OpenShift, Portworx, VM कंटेनर सहअस्तित्व, बैंक क्लाउड संप्रभुता, वित्तीय सेवाएं क्लाउड निर्भरता, परिचालन लचीलापन, आपदा पुनर्प्राप्ति, क्लाउड निकास रणनीति, AI बैंकिंग वर्कलोड"
 language: "hi"
 last_reviewed: "2026-05-20"
@@ -214,6 +214,6 @@ FMI (वित्तीय बाज़ार अवसंरचनाओं) �
 - Red Hat, (2026). [बैंकों के लिए डिजिटल संप्रभुता ⧉](https://www.redhat.com/en/resources/cloud-sovereignty-for-banks-overview "बैंकों के लिए क्लाउड संप्रभुता")।
 - Thought Machine, (2026). [क्लाउड-नेटिव कोर बैंकिंग सॉफ़्टवेयर ⧉](https://www.thoughtmachine.net "Thought Machine Vault")।
 <!-- enrich-start -->
-<aside class="author-card" aria-label="लेखक के बारे में"><img alt="सेबेस्टियन रूसो का चित्र" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">वरिष्ठ बैंकिंग प्रौद्योगिकीविद् जो लागू AI, ISO 20022 माइग्रेशन, वित्तीय सेवाओं के लिए पोस्ट-क्वांटम क्रिप्टोग्राफी, और थोक भुगतान के संरचनात्मक परिवर्तन पर लिखते हैं।</span><span class="author-credentials">HSBC वाणिज्यिक एवं निवेश बैंक, PayPal, Barclays, Shazam, AKQA, Virgin Group में 20+ वर्षों का अनुभव। <a href="/about/index.html">पूर्ण प्रोफ़ाइल</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="लेखक के बारे में"><img alt="सेबेस्टियन रूसो का चित्र" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">वरिष्ठ बैंकिंग प्रौद्योगिकीविद् जो लागू AI, ISO 20022 माइग्रेशन, वित्तीय सेवाओं के लिए पोस्ट-क्वांटम क्रिप्टोग्राफी, और थोक भुगतान के संरचनात्मक परिवर्तन पर लिखते हैं।</span><span class="author-credentials">HSBC वाणिज्यिक एवं निवेश बैंक, PayPal, Barclays, Shazam, AKQA, Virgin Group में 20+ वर्षों का अनुभव। <a href="/about/index.html">पूर्ण प्रोफ़ाइल</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">अंतिम समीक्षा <time datetime="2026-05-20">2026-05-20</time>।</p>
 <!-- enrich-end -->

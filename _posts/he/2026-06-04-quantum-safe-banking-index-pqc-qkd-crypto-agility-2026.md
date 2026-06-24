@@ -3,7 +3,7 @@ author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "תרשים מדד הבנקאות הקוונטית-בטוחה 2026 לבנקים ולמוסדות פיננסיים בשנת 2026"
 banner_height: "571"
 banner_width: "1425"
-banner: "https://cloudcdn.pro/api/transform?url=/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp&w=1200&format=webp&q=80"
+banner: "https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash-1200.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/he/2026-06-04-quantum-safe-banking-index-pqc-
 image_alt: "פורטרט שחור-לבן של Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "בנקאות קוונטית-בטוחה 2026, קריפטוגרפיה פוסט-קוונטית לבנקים, NIST FIPS 203, ML-KEM, ML-DSA, SLH-DSA, גמישות קריפטוגרפית, QKD בבנקאות"
 language: "he-IL"
 last_reviewed: "2026-06-04"
@@ -241,6 +241,6 @@ flowchart LR
 - NIST, (2026). [שלושת תקני ההצפנה הפוסט-קוונטית הסופיים הראשונים ⧉](https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards "שלושת תקני ההצפנה הפוסט-קוונטית הסופיים הראשונים").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="אודות המחבר"><img alt="פורטרט של Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">טכנולוג בנקאות בכיר הכותב על AI יישומי, תשתיות תשלומים, כסף מתוסמל, ISO 20022, אבטחה פוסט-קוונטית, שירותים פיננסיים ענן-מקוריים ושווקים דיגיטליים מפוקחים.</span><span class="author-credentials">20+ שנים ב-HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">פרופיל מלא</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="אודות המחבר"><img alt="פורטרט של Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">טכנולוג בנקאות בכיר הכותב על AI יישומי, תשתיות תשלומים, כסף מתוסמל, ISO 20022, אבטחה פוסט-קוונטית, שירותים פיננסיים ענן-מקוריים ושווקים דיגיטליים מפוקחים.</span><span class="author-credentials">20+ שנים ב-HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">פרופיל מלא</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">נסקר לאחרונה <time datetime="2026-06-04">2026-06-04</time>.</p>
 <!-- enrich-end -->
