@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/zh-hant/2026-05-30-uk-wholesale-digital-marke
 image_alt: "Sebastien Rousseau 黑白肖像"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "英國批發數位市場 2026, Wholesale Digital Markets Champion, UK gilts, 代幣化金邊債, tokenised gilts, DLT 清算, BoE DSS, Project Guardian, SDX, Project Agorá, HM Treasury, Bank of England, City of London"
 language: "zh-hant"
 excerpt: "英國「批發數位市場推動者」一職把代幣化金邊債、DLT 清算與數位批發金融變成國家競爭力工程。2026 年的董事會問題是設計紀律——哪些代幣化資產該落在哪個平台、清算風險如何舉證,以及如何在新加坡 Project Guardian、瑞士 SDX、法蘭克福與 Project Agorá 的夾擊下守住倫敦金融城的批發特許經營。"
@@ -235,7 +235,7 @@ Regulated Liability Network 是供多家受監管機構發行代幣化商業銀�
 - Global Government Finance, (2026). [英國批發數位市場推動者 ⧉](https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/ "英國批發數位市場推動者").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="關於作者"><img alt="Sebastien Rousseau 肖像" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">資深銀行技術專家,撰寫主題涵蓋應用 AI、ISO 20022 遷移、金融服務後量子密碼學,以及批發支付的結構性轉型。</span><span class="author-credentials">在 HSBC Commercial &amp; Investment Bank、PayPal、Barclays、Shazam、AKQA、Virgin Group 擁有 20 多年經驗。<a href="/about/index.html">完整簡介</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="關於作者"><img alt="Sebastien Rousseau 肖像" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">資深銀行技術專家,撰寫主題涵蓋應用 AI、ISO 20022 遷移、金融服務後量子密碼學,以及批發支付的結構性轉型。</span><span class="author-credentials">在 HSBC Commercial &amp; Investment Bank、PayPal、Barclays、Shazam、AKQA、Virgin Group 擁有 20 多年經驗。<a href="/about/index.html">完整簡介</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">最近審閱 <time datetime="2026-05-30">2026-05-30</time>。</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">延伸閱讀</h2>

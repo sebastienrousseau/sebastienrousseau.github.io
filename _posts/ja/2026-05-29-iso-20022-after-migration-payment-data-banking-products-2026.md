@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/ja/2026-05-29-iso-20022-after-migration-payme
 image_alt: "Sebastien Rousseau のモノクロのポートレート"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "ISO 20022 2026, 構造化アドレス, CBPR+, 決済データ・プロダクト, 目的コード, コーポレート・トレジャリー, 照合, 制裁スクリーニング, 不正検知, pacs.008, pain.001, SWIFT gpi"
 language: "ja"
 excerpt: "ISO 20022 移行後はプロジェクトの完了ではなく、決済データ・プロダクトの好機の始まりです。構造化アドレス、目的コード、請求明細、リッチなステータスが照合、不正、流動性、コンプライアンス・プロダクトに進化します。2026 年の問いは設計の規律です。どの決済データがどの顧客ワークフローを担い、どのコーポレート向けに価格付けされるのか。"
@@ -201,6 +201,6 @@ ISO 20022 移行後とは、突き詰めればアーキテクチャの問いで�
 - J.P. Morgan, (2026). [Payments Outlook: Five Trends Powering Payments in 2026 ⧉](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="著者について"><img alt="Sebastien Rousseau のポートレート" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">応用 AI、決済インフラ、トークン化マネー、ISO 20022、ポスト量子セキュリティ、クラウドネイティブな金融サービス、規制対象デジタル市場について執筆するシニア銀行テクノロジスト。</span><span class="author-credentials">HSBC コマーシャル&amp;インベストメントバンク、PayPal、Barclays、Shazam、AKQA、Virgin Group を横断する 20 年以上の経験。<a href="/about/index.html">プロフィール全体</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="著者について"><img alt="Sebastien Rousseau のポートレート" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">応用 AI、決済インフラ、トークン化マネー、ISO 20022、ポスト量子セキュリティ、クラウドネイティブな金融サービス、規制対象デジタル市場について執筆するシニア銀行テクノロジスト。</span><span class="author-credentials">HSBC コマーシャル&amp;インベストメントバンク、PayPal、Barclays、Shazam、AKQA、Virgin Group を横断する 20 年以上の経験。<a href="/about/index.html">プロフィール全体</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">最終確認 <time datetime="2026-05-29">2026-05-29</time>。</p>
 <!-- enrich-end -->

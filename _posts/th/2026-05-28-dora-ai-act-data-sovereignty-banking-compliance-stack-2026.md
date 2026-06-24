@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/th/2026-05-28-dora-ai-act-data-sovereignty-ba
 image_alt: "ภาพเหมือนขาวดำของ Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "DORA 2026, กฎหมาย AI ของ EU 2026, อธิปไตยข้อมูลของธนาคาร, ความยืดหยุ่นการปฏิบัติงาน, ความเสี่ยงการกระจุกตัวของคลาวด์, การปฏิบัติตามกฎ AI บริการการเงิน, AI ความเสี่ยงสูง"
 language: "th"
 excerpt: "DORA กฎหมาย AI ของ EU GDPR ความเสี่ยงการกระจุกตัวของคลาวด์ และอธิปไตยข้อมูลหลอมรวมเป็นสแต็คการปฏิบัติตามกฎเดียวสำหรับธนาคารในปี 2026 คำถามเชิงกลยุทธ์คือวินัยในการออกแบบ — เดินการปฏิบัติตามกฎ การกำกับดูแล AI หลักฐานความยืดหยุ่น ICT และทางเลือกอธิปไตยข้อมูลเป็นสถาปัตยกรรมเดียว ไม่ใช่ห้าโครงการขนาน"
@@ -201,6 +201,6 @@ DORA กฎหมาย AI ของ EU และอธิปไตยข้อ�
 - GOV.UK, (2026). [UK fintech backed to embrace future payments technology ⧉](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="เกี่ยวกับผู้เขียน"><img alt="ภาพเหมือนของ Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">นักเทคโนโลยีธนาคารอาวุโสที่เขียนเกี่ยวกับ AI ประยุกต์ โครงสร้างพื้นฐานการชำระเงิน เงินที่ผ่านการทำโทเคน ISO 20022 ความปลอดภัยหลังควอนตัม บริการทางการเงินแบบ cloud-native และตลาดดิจิทัลที่อยู่ภายใต้การกำกับดูแล</span><span class="author-credentials">มากกว่า 20 ปีที่ HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">โปรไฟล์เต็ม</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="เกี่ยวกับผู้เขียน"><img alt="ภาพเหมือนของ Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">นักเทคโนโลยีธนาคารอาวุโสที่เขียนเกี่ยวกับ AI ประยุกต์ โครงสร้างพื้นฐานการชำระเงิน เงินที่ผ่านการทำโทเคน ISO 20022 ความปลอดภัยหลังควอนตัม บริการทางการเงินแบบ cloud-native และตลาดดิจิทัลที่อยู่ภายใต้การกำกับดูแล</span><span class="author-credentials">มากกว่า 20 ปีที่ HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">โปรไฟล์เต็ม</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">ตรวจสอบล่าสุด <time datetime="2026-05-28">2026-05-28</time>.</p>
 <!-- enrich-end -->

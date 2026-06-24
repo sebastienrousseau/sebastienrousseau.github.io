@@ -18,7 +18,7 @@ id: "https://sebastienrousseau.com/2026-06-22-hsh-zero-downtime-cryptographic-st
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "hsh, Rust 암호, 비밀번호 해싱, Argon2id, 뱅킹 보안, HSM 인터록, DORA 준수, Basel III, 무중단 이전, 메모리 안전성, PBKDF2, scrypt, 사이버 복구"
 language: "ko-KR"
 last_reviewed: "2026-06-22"
@@ -336,6 +336,6 @@ National Institute of Standards and Technology (2024). *Initial Public Draft —
 OWASP Foundation (2024). *Password Storage Cheat Sheet*. Available at: [https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html](https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html "OWASP Password Storage Cheat Sheet")
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="저자 소개"><img alt="Sebastien Rousseau의 초상" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">응용 AI, ISO 20022 이전, 금융 서비스용 양자내성 암호, 도매 결제의 구조적 변화에 대해 글을 쓰는 시니어 뱅킹 기술자.</span><span class="author-credentials">HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group에서 20년 이상. <a href="/about/index.html">전체 프로필</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="저자 소개"><img alt="Sebastien Rousseau의 초상" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">응용 AI, ISO 20022 이전, 금융 서비스용 양자내성 암호, 도매 결제의 구조적 변화에 대해 글을 쓰는 시니어 뱅킹 기술자.</span><span class="author-credentials">HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group에서 20년 이상. <a href="/about/index.html">전체 프로필</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">최종 검토 <time datetime="2026-06-22">2026-06-22</time>.</p>
 <!-- enrich-end -->

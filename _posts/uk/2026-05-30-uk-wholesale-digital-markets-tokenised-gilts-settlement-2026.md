@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/uk/2026-05-30-uk-wholesale-digital-markets-to
 image_alt: "Чорно-білий портрет Себастьяна Руссо"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "оптові цифрові ринки 2026, Wholesale Digital Markets Champion, токенізовані гілти, UK gilts, DLT-розрахунок, BoE DSS, Project Guardian, SDX, Project Agorá, HM Treasury, Bank of England, City of London"
 language: "uk"
 excerpt: "Роль Wholesale Digital Markets Champion перетворює токенізовані гілти, DLT-розрахунок та цифрові оптові фінанси на національний проєкт конкурентоспроможності. Стратегічне питання 2026 року для банків — дисципліна архітектури: які токенізовані активи на якій платформі, як підтверджується ризик розрахунку та як захистити оптову роль Сіті від Сінгапуру, Швейцарії та Франкфурта."
@@ -238,7 +238,7 @@ Regulated Liability Network — це модель спільного реєст�
 - Global Government Finance, (2026). [Чемпіон оптових цифрових ринків Великої Британії ⧉](https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/ "UK wholesale digital markets champion").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Про автора"><img alt="Портрет Себастьяна Руссо" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Себастьян Руссо</a></strong><span class="author-card-bio">Старший банківський технолог, пише про прикладний ШІ, міграцію ISO 20022, постквантову криптографію для фінансових послуг і структурну трансформацію оптових платежів.</span><span class="author-credentials">Понад 20 років у HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Повний профіль</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Про автора"><img alt="Портрет Себастьяна Руссо" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Себастьян Руссо</a></strong><span class="author-card-bio">Старший банківський технолог, пише про прикладний ШІ, міграцію ISO 20022, постквантову криптографію для фінансових послуг і структурну трансформацію оптових платежів.</span><span class="author-credentials">Понад 20 років у HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Повний профіль</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Останнє оновлення <time datetime="2026-05-30">2026-05-30</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Дотичне читання</h2>

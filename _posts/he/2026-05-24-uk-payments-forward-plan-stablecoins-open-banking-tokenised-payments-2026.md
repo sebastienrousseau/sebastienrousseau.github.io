@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/he/2026-05-24-uk-payments-forward-plan-stable
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "UK Payments Forward Plan 2026, סטייבלקוינים בריטניה, פיקדונות מתורמזים בריטניה, בנקאות פתוחה FCA, איחוד PSR FCA, תשלומי סוכני AI בריטניה, Wholesale Digital Markets Champion, Chris Woolard, רגולציית שירותי תשלום"
 language: "he"
 excerpt: "UK Payments Forward Plan וחבילת המדיניות של אפריל 2026 משרטטים מסגרת אחת לתשלומים מסורתיים, סטייבלקוינים, פיקדונות מתורמזים, בנקאות פתוחה ותשלומים אגנטיים. השאלה האסטרטגית לבנקים היא משמעת תכן: אילו נתונים, ערוצים, בקרות, חבויות ותהליכי לקוח שייכים יחדיו — וכיצד להוכיח את התזמור (orchestration) לרגולטורים."
@@ -201,6 +201,6 @@ UK Payments Forward Plan ב-2026 הוא בסופו של דבר שאלה ארכי
 - Global Government Finance, (2026). [UK wholesale digital markets champion ⧉](https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/ "UK wholesale digital markets champion").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="על המחבר"><img alt="דיוקן של סבסטיאן רוסו" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">סבסטיאן רוסו</a></strong><span class="author-card-bio">טכנולוג בנקאי בכיר הכותב על בינה מלאכותית יישומית, תשתיות תשלומים, כסף בטוקנים, ISO 20022, אבטחה פוסט-קוונטית, שירותים פיננסיים cloud-native ושווקים דיגיטליים מפוקחים.</span><span class="author-credentials">למעלה מ-20 שנים ב-HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">פרופיל מלא</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="על המחבר"><img alt="דיוקן של סבסטיאן רוסו" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">סבסטיאן רוסו</a></strong><span class="author-card-bio">טכנולוג בנקאי בכיר הכותב על בינה מלאכותית יישומית, תשתיות תשלומים, כסף בטוקנים, ISO 20022, אבטחה פוסט-קוונטית, שירותים פיננסיים cloud-native ושווקים דיגיטליים מפוקחים.</span><span class="author-credentials">למעלה מ-20 שנים ב-HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">פרופיל מלא</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">נבדק לאחרונה <time datetime="2026-05-24">2026-05-24</time>.</p>
 <!-- enrich-end -->

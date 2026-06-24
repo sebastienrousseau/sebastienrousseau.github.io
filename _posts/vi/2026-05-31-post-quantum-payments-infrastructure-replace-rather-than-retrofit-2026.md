@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/vi/2026-05-31-post-quantum-payments-infrastru
 image_alt: "Chân dung đen trắng của Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "mật mã hậu lượng tử, PQC thanh toán, linh hoạt mật mã, thu thập-bây-giờ-giải-mã-sau, HNDL, chuẩn hậu lượng tử NIST, ML-KEM, ML-DSA, FIPS 203, FIPS 204, di trú đường ray thanh toán, ISO 20022 PQC, thay thế SWIFT MT, HSM, sụp đổ PKI, khả năng phục hồi vận hành, Đạo luật Chuẩn bị An ninh Mạng Điện toán Lượng tử"
 language: "vi"
 excerpt: "Thu thập-bây-giờ-giải-mã-sau biến thông điệp thanh toán được TLS bảo vệ hôm nay thành rủi ro phơi bày của ngày mai. ML-KEM và ML-DSA lớn hơn khóa RSA và ECC một bậc — điều chỉnh kích hoạt phân mảnh, độ trễ và cạn kiệt HSM. Quyết định kiến trúc 2026 là vá hay thay thế trước khi đồng hồ quản lý hết giờ."
@@ -264,7 +264,7 @@ Một tổ chức cấp chứng chỉ phụ có khả năng PQC, tích hợp và
 - Bank of England (PRA), (2024). [SS1/21 — Operational resilience: Impact tolerances for important business services ⧉](https://www.bankofengland.co.uk/prudential-regulation/publication/2024/march/operational-resilience-impact-tolerances-for-important-business-services "PRA SS1/21").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Về tác giả"><img alt="Chân dung Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Chuyên gia công nghệ ngân hàng cấp cao, viết về AI ứng dụng, di trú ISO 20022, mật mã hậu lượng tử cho dịch vụ tài chính và cuộc chuyển đổi cấu trúc của thanh toán bán buôn.</span><span class="author-credentials">Hơn 20 năm kinh nghiệm tại HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Hồ sơ đầy đủ</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Về tác giả"><img alt="Chân dung Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Chuyên gia công nghệ ngân hàng cấp cao, viết về AI ứng dụng, di trú ISO 20022, mật mã hậu lượng tử cho dịch vụ tài chính và cuộc chuyển đổi cấu trúc của thanh toán bán buôn.</span><span class="author-credentials">Hơn 20 năm kinh nghiệm tại HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Hồ sơ đầy đủ</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Lần xem xét gần nhất <time datetime="2026-05-31">2026-05-31</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Đọc thêm</h2>

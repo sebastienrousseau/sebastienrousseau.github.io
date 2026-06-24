@@ -19,7 +19,7 @@ id: "https://sebastienrousseau.com/yo/2026-05-19-global-wholesale-payments-econo
 image_alt: "Àwòrán Sebastien Rousseau ní dúdú àti funfun"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "sísanwó pàtàkì 2026, ètò-ọrọ̀ sísanwó kárí-ayé, ISO 20022, RTGS, sísanwó tí ó dá orílẹ̀-èdè kọjá, BIS CPMI, FSB, Swift CBPR+, ọ̀nà-àtọ́ka G20, ìsanwó pátápátá ní àkókò gidi, Project Agorá, Project Mandala, Project Nexus, ìbárapọ̀-iṣẹ́ sísanwó, báńkì alábàákẹ́gbẹ́, ìpínyà sísanwó, CBDC pàtàkì"
 language: "yo"
 last_reviewed: "2026-05-19"

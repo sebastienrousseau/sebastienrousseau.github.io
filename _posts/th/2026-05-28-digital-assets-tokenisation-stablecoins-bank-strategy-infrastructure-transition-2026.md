@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/th/2026-05-28-digital-assets-tokenisation-sta
 image_alt: "ภาพเหมือนขาวดำของ Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "สินทรัพย์ดิจิทัล 2026, สินทรัพย์โลกจริงที่ถูกโทเค็นไนซ์, สเตเบิลคอยน์ของธนาคาร, เงินฝากโทเค็น, การคัสโตดีสินทรัพย์ดิจิทัล, DLT ของธนาคาร, โครงสร้างพื้นฐานการชำระบัญชี, การเคลื่อนย้ายหลักประกัน, เงินที่โปรแกรมได้, กลยุทธ์สินทรัพย์ดิจิทัลของธนาคาร"
 language: "th"
 excerpt: "สินทรัพย์ดิจิทัลไม่ใช่การเดิมพันด้านนวัตกรรมอีกต่อไป แต่เป็นคำถามสถาปัตยกรรมของการชำระบัญชี การคัสโตดี และงบดุล คริปโตเป็นสินทรัพย์ระดับ ~3 ล้านล้านดอลลาร์ สเตเบิลคอยน์แตะ ~3 แสนล้านดอลลาร์ และสินทรัพย์โลกจริงที่ถูกโทเค็นไนซ์เติบโต ~300% ในปี 2025 ภารกิจเชิงกลยุทธ์ของธนาคารในปี 2026 ไม่ใช่ว่าจะเข้าร่วมหรือไม่ แต่จะออกแบบโครงสร้างพื้นฐาน การควบคุม และการกำกับดูแลอย่างไรในโลกที่เงิน สินทรัพย์ และการชำระบัญชีโปรแกรมได้"
@@ -307,7 +307,7 @@ BCG สรุปด้วยคู่มือสิบขั้นตอน ก
 - Sebastien Rousseau, (2026). [วิศวกรรมเชิงตัวแทนสำหรับธนาคาร ⧉](https://sebastienrousseau.com/2026-05-17-agentic-engineering-banks-blueprint-2026 "วิศวกรรมเชิงตัวแทน")
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="เกี่ยวกับผู้เขียน"><img alt="ภาพเหมือนของ Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">นักเทคโนโลยีธนาคารอาวุโสที่เขียนเกี่ยวกับ AI ประยุกต์ การย้าย ISO 20022 การเข้ารหัสหลังควอนตัมสำหรับบริการการเงิน และการเปลี่ยนแปลงเชิงโครงสร้างของการชำระเงินขายส่ง</span><span class="author-credentials">มากกว่า 20 ปีที่ HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">โปรไฟล์เต็ม</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="เกี่ยวกับผู้เขียน"><img alt="ภาพเหมือนของ Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">นักเทคโนโลยีธนาคารอาวุโสที่เขียนเกี่ยวกับ AI ประยุกต์ การย้าย ISO 20022 การเข้ารหัสหลังควอนตัมสำหรับบริการการเงิน และการเปลี่ยนแปลงเชิงโครงสร้างของการชำระเงินขายส่ง</span><span class="author-credentials">มากกว่า 20 ปีที่ HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">โปรไฟล์เต็ม</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">ตรวจสอบล่าสุด <time datetime="2026-05-28">28 พฤษภาคม 2026</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">อ่านที่เกี่ยวข้อง</h2>

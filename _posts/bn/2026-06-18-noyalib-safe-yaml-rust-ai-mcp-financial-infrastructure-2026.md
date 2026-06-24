@@ -20,7 +20,7 @@ id: "https://sebastienrousseau.com/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-fina
 image_alt: "সেবাস্তিয়ান রুসোর সাদা-কালো প্রতিকৃতি"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "নিরাপদ Rust YAML পার্সার, NoyaLib, YAML 1.2 স্পেক কমপ্লায়েন্স, zero-unsafe Rust, JSON-Schema যাচাই, লসলেস Concrete Syntax Tree, CST, MCP, Model Context Protocol, WebAssembly, Kubernetes ম্যানিফেস্ট, CI/CD কনফিগারেশন, DORA Article 5, BCBS 239, Basel III পরিচালন ঝুঁকি, আর্থিক পরিকাঠামো, কনফিগারেশন নিরাপত্তা, সফটওয়্যার সরবরাহ শৃঙ্খল"
 language: "bn-IN"
 last_reviewed: "2026-06-18"

@@ -20,7 +20,7 @@ id: "https://sebastienrousseau.com/2026-06-17-economist-commercialising-quantum-
 image_alt: "صورة بالأبيض والأسود لـ Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "تسويق الكم عالمياً 2026, قمة Economist Impact, التشفير ما بعد الكمومي, NIST ML-KEM, الحصاد الآن وفك التشفير لاحقاً, SNDL, الكم في HSBC, Philip Intallura, استشعار الكم, الملاحة المستقلة عن GPS, NQCC, قانون الكم الأوروبي, Quantcore, جائزة qBIG, Lord Vallance, هجين كمومي-كلاسيكي, DORA Article 6"
 language: "ar"
 last_reviewed: "2026-06-17"

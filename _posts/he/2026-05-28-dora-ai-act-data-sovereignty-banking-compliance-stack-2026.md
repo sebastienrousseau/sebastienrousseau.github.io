@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/he/2026-05-28-dora-ai-act-data-sovereignty-ba
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "DORA 2026, חוק הבינה המלאכותית של האיחוד האירופי 2026, ריבונות נתונים לבנקים, חוסן תפעולי, סיכון ריכוז ענן, ציות AI בשירותים פיננסיים, AI בסיכון גבוה, חוסן ICT, סיכון צד שלישי, GDPR, ESMA, ENISA, NIS2"
 language: "he"
 excerpt: "DORA, חוק הבינה המלאכותית של האיחוד האירופי, GDPR, סיכון ריכוז ענן וריבונות נתונים מתכנסים ב-2026 לערימת ציות אחת לבנקים. השאלה האסטרטגית היא משמעת תכנון — הרצת ציות, ממשל AI, ראיות חוסן ICT ובחירות ריבונות נתונים כארכיטקטורה אחת ולא כחמש תוכניות מקבילות."
@@ -201,6 +201,6 @@ DORA, חוק הבינה המלאכותית של האיחוד האירופי ור
 - GOV.UK, (2026). [UK fintech backed to embrace future payments technology ⧉](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="על המחבר"><img alt="דיוקן של סבסטיאן רוסו" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">סבסטיאן רוסו</a></strong><span class="author-card-bio">טכנולוג בנקאי בכיר הכותב על בינה מלאכותית יישומית, תשתיות תשלומים, כסף בטוקנים, ISO 20022, אבטחה פוסט-קוונטית, שירותים פיננסיים cloud-native ושווקים דיגיטליים מפוקחים.</span><span class="author-credentials">למעלה מ-20 שנים ב-HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">פרופיל מלא</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="על המחבר"><img alt="דיוקן של סבסטיאן רוסו" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">סבסטיאן רוסו</a></strong><span class="author-card-bio">טכנולוג בנקאי בכיר הכותב על בינה מלאכותית יישומית, תשתיות תשלומים, כסף בטוקנים, ISO 20022, אבטחה פוסט-קוונטית, שירותים פיננסיים cloud-native ושווקים דיגיטליים מפוקחים.</span><span class="author-credentials">למעלה מ-20 שנים ב-HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">פרופיל מלא</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">נבדק לאחרונה <time datetime="2026-05-28">2026-05-28</time>.</p>
 <!-- enrich-end -->

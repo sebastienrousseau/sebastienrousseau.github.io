@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/bn/2026-05-30-uk-wholesale-digital-markets-to
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "যুক্তরাজ্য পাইকারি ডিজিটাল বাজার ২০২৬, Wholesale Digital Markets Champion, UK gilts, টোকেনাইজড গিল্টস, DLT নিষ্পত্তি, BoE DSS, Project Guardian, SDX, Project Agorá, HM Treasury, Bank of England, City of London"
 language: "bn"
 excerpt: "Wholesale Digital Markets Champion ভূমিকা UK gilts টোকেনাইজেশন, DLT-ভিত্তিক নিষ্পত্তি এবং ডিজিটাল পাইকারি অর্থব্যবস্থাকে জাতীয় প্রতিযোগিতার প্রকল্পে পরিণত করেছে। ২০২৬-এ ব্যাংকগুলির কৌশলগত প্রশ্ন হল ডিজাইন শৃঙ্খলা — কোন টোকেনাইজড সম্পদ কোন প্ল্যাটফর্মে বসে, নিষ্পত্তির ঝুঁকি কীভাবে প্রমাণ হয়, এবং Singapore, Switzerland ও Frankfurt-এর বিরুদ্ধে City of London-এর পাইকারি ভূমিকা কীভাবে রক্ষা করা হয়।"
@@ -235,7 +235,7 @@ Regulated Liability Network একাধিক নিয়ন্ত্রিত
 - Global Government Finance, (2026). [যুক্তরাজ্যের পাইকারি ডিজিটাল বাজার চ্যাম্পিয়ন ⧉](https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/ "যুক্তরাজ্যের পাইকারি ডিজিটাল বাজার চ্যাম্পিয়ন")।
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="লেখক সম্পর্কে"><img alt="সেবাস্তিয়ান রুসোর প্রতিকৃতি" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">সেবাস্তিয়ান রুসো</a></strong><span class="author-card-bio">সিনিয়র ব্যাংকিং প্রযুক্তিবিদ, প্রয়োগ-ভিত্তিক AI, ISO 20022 মাইগ্রেশন, আর্থিক পরিষেবার জন্য পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি এবং পাইকারি পেমেন্টের কাঠামোগত রূপান্তর নিয়ে লেখেন।</span><span class="author-credentials">HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group-এ ২০+ বছরের অভিজ্ঞতা। <a href="/about/index.html">সম্পূর্ণ প্রোফাইল</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="লেখক সম্পর্কে"><img alt="সেবাস্তিয়ান রুসোর প্রতিকৃতি" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">সেবাস্তিয়ান রুসো</a></strong><span class="author-card-bio">সিনিয়র ব্যাংকিং প্রযুক্তিবিদ, প্রয়োগ-ভিত্তিক AI, ISO 20022 মাইগ্রেশন, আর্থিক পরিষেবার জন্য পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি এবং পাইকারি পেমেন্টের কাঠামোগত রূপান্তর নিয়ে লেখেন।</span><span class="author-credentials">HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group-এ ২০+ বছরের অভিজ্ঞতা। <a href="/about/index.html">সম্পূর্ণ প্রোফাইল</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">সর্বশেষ পর্যালোচনা <time datetime="2026-05-30">2026-05-30</time>।</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">সম্পর্কিত পঠন</h2>

@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/he/2026-05-31-post-quantum-payments-infrastru
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "קריפטוגרפיה פוסט-קוונטית, תשלומי PQC, גמישות קריפטוגרפית, איסוף-עכשיו-פענוח-מאוחר-יותר, HNDL, תקני NIST פוסט-קוונטיים, ML-KEM, ML-DSA, FIPS 203, FIPS 204, הגירת ערוצי תשלומים, ISO 20022 PQC, החלפת SWIFT MT, HSM, קריסת PKI, חוסן תפעולי, Quantum Computing Cybersecurity Preparedness Act"
 language: "he"
 excerpt: "איסוף-עכשיו-פענוח-מאוחר-יותר הופך הודעות תשלום מוגנות-TLS של היום לחשיפה מפוענחת של מחר. ML-KEM ו-ML-DSA גדולים בסדר גודל ממפתחות RSA ו-ECC שעבורם הוגדרו הערוצים המורשתיים — התאמה גוררת פיצול, השהיה ומיצוי HSM. ההחלטה הארכיטקטונית של 2026 היא אם לטלא או להחליף לפני שהשעון הרגולטורי יאזל."
@@ -264,7 +264,7 @@ SLH-DSA (הגרסה המתוקננת של SPHINCS+) הוא מבוסס-Hash ול�
 - Bank of England (PRA), (2024). [SS1/21 — Operational resilience: Impact tolerances for important business services ⧉](https://www.bankofengland.co.uk/prudential-regulation/publication/2024/march/operational-resilience-impact-tolerances-for-important-business-services "PRA SS1/21").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="אודות המחבר"><img alt="פורטרט של Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">טכנולוג בנקאות בכיר הכותב על AI יישומי, הגירת ISO 20022, קריפטוגרפיה פוסט-קוונטית לשירותים פיננסיים והשינוי המבני של תשלומים סיטונאיים.</span><span class="author-credentials">20+ שנים ב-HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">פרופיל מלא</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="אודות המחבר"><img alt="פורטרט של Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">טכנולוג בנקאות בכיר הכותב על AI יישומי, הגירת ISO 20022, קריפטוגרפיה פוסט-קוונטית לשירותים פיננסיים והשינוי המבני של תשלומים סיטונאיים.</span><span class="author-credentials">20+ שנים ב-HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">פרופיל מלא</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">נסקר לאחרונה <time datetime="2026-05-31">2026-05-31</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">קריאה נוספת</h2>

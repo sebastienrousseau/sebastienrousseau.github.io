@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/ro/2026-05-30-uk-wholesale-digital-markets-to
 image_alt: "Portret alb-negru al lui Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "piețe digitale de gros Regatul Unit 2026, Chris Woolard, gilts tokenizați, finanță de gros tokenizată, Wholesale Digital Markets Champion, tokenizare UK, decontare, DLT, BoE DSS, Project Guardian, SDX, Project Agorá, City of London"
 language: "ro"
 excerpt: "Rolul Wholesale Digital Markets Champion al Regatului Unit transformă gilts tokenizați, decontarea pe bază de DLT și finanța digitală de gros într-un proiect național de competitivitate. Întrebarea strategică a anului 2026 pentru bănci este disciplina de design: care active tokenizate stau pe care platformă, cum se dovedește riscul de decontare și cum se apără rolul de gros al City-ului împotriva Singapore, Elveția și Frankfurt."
@@ -238,7 +238,7 @@ Puncte de bază economisite la finanțarea colateralului. Reducerea tamponului d
 - Global Government Finance, (2026). [Champion-ul britanic al piețelor digitale de gros ⧉](https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/ "Champion-ul britanic al piețelor digitale de gros").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Despre autor"><img alt="Portret al lui Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Tehnolog bancar senior care scrie despre AI aplicat, migrarea ISO 20022, criptografia post-cuantică pentru servicii financiare și transformarea structurală a plăților de gros.</span><span class="author-credentials">Peste 20 de ani de experiență la HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profil complet</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Despre autor"><img alt="Portret al lui Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Tehnolog bancar senior care scrie despre AI aplicat, migrarea ISO 20022, criptografia post-cuantică pentru servicii financiare și transformarea structurală a plăților de gros.</span><span class="author-credentials">Peste 20 de ani de experiență la HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profil complet</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Ultima revizuire <time datetime="2026-05-30">2026-05-30</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Lectură conexă</h2>

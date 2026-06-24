@@ -19,7 +19,7 @@ id: "https://sebastienrousseau.com/th/2026-05-19-global-wholesale-payments-econo
 image_alt: "ภาพถ่ายขาวดำของ Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "การชำระเงินขายส่ง 2026, เศรษฐศาสตร์การชำระเงินระดับโลก, ISO 20022, RTGS, การชำระเงินข้ามพรมแดน, BIS CPMI, FSB, Swift CBPR+, แผนแม่บท G20, การชำระดุลรวมแบบทันเวลา, Project Agorá, Project Mandala, Project Nexus, การทำงานร่วมกันได้ของการชำระเงิน, ธนาคารตัวแทน, การกระจัดกระจายของการชำระเงิน, CBDC ขายส่ง"
 language: "th"
 last_reviewed: "2026-05-19"

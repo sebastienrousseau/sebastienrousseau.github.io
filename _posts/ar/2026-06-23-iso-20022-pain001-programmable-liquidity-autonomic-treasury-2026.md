@@ -20,7 +20,7 @@ id: "https://sebastienrousseau.com/2026-06-23-iso-20022-pain001-programmable-liq
 image_alt: "صورة بالأبيض والأسود لـ Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "ISO 20022, pain.001, pacs.008, MX, SWIFT, CBPR+, السيولة القابلة للبرمجة, الخزينة المستقلة, BIS CPMI, العناوين المُهيكَلة, DORA, الذكاء الاصطناعي الوكيلي, المدفوعات عبر الحدود, CIB, MT103, MT202, RTGS, Basel III, SR 11-7, واجهات الخزينة"
 language: "ar-SA"
 last_reviewed: "2026-06-23"
@@ -250,6 +250,6 @@ RedCompass Labs (2025). *What now? ISO 20022 deadlines in 2026 onwards*. متا�
 SWIFT (2024). *Cross-Border Payments and Reporting Plus (CBPR+) usage guidelines*. متاح على: [https://www.swift.com/standards/iso-20022/iso-20022-programme](https://www.swift.com/standards/iso-20022/iso-20022-programme "SWIFT CBPR+ usage guidelines")
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="نبذة عن الكاتب"><img alt="صورة شخصية لـ Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">تقني مصرفي أول يكتب عن الذكاء الاصطناعي التطبيقي، وترحيل ISO 20022، والتشفير ما بعد الكمي للخدمات المالية، والتحوُّل الهيكلي في مدفوعات الجملة.</span><span class="author-credentials">أكثر من 20 عاماً في HSBC Commercial &amp; Investment Bank، وPayPal، وBarclays، وShazam، وAKQA، وVirgin Group. <a href="/about/index.html">الملف الكامل</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="نبذة عن الكاتب"><img alt="صورة شخصية لـ Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">تقني مصرفي أول يكتب عن الذكاء الاصطناعي التطبيقي، وترحيل ISO 20022، والتشفير ما بعد الكمي للخدمات المالية، والتحوُّل الهيكلي في مدفوعات الجملة.</span><span class="author-credentials">أكثر من 20 عاماً في HSBC Commercial &amp; Investment Bank، وPayPal، وBarclays، وShazam، وAKQA، وVirgin Group. <a href="/about/index.html">الملف الكامل</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">آخر مراجعة <time datetime="2026-06-23">2026-06-23</time>.</p>
 <!-- enrich-end -->

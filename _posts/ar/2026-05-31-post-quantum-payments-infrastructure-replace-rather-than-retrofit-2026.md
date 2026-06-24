@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/ar/2026-05-31-post-quantum-payments-infrastru
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "التشفير ما بعد الكمي, مدفوعات PQC, المرونة التشفيرية, الجمع الآن وفك التشفير لاحقًا, HNDL, معايير NIST ما بعد الكمية, ML-KEM, ML-DSA, FIPS 203, FIPS 204, ترحيل قنوات المدفوعات, ISO 20022 PQC, استبدال SWIFT MT, HSM, انهيار PKI, الصمود التشغيلي, قانون التأهب للأمن السيبراني للحوسبة الكمية"
 language: "ar"
 excerpt: "الجمع الآن وفك التشفير لاحقًا يحوِّل رسائل المدفوعات المحمية بـTLS اليوم إلى انكشاف مفكوك الشيفرة غدًا. ML-KEM وML-DSA أكبر بمرتبة كاملة من مفاتيح RSA وECC التي صُمِّمت من أجلها القنوات القديمة — التحديث يولِّد التجزئة وتأخر الاستجابة واستنزاف HSM. القرار المعماري لعام 2026 هو: ترقيع أم استبدال قبل انقضاء الساعة التنظيمية."
@@ -264,7 +264,7 @@ SLH-DSA (النسخة المعيارية من SPHINCS+) قائمة على الد
 - Bank of England (PRA), (2024). [SS1/21 — الصمود التشغيلي: حدود الأثر للخدمات التجارية المهمة ⧉](https://www.bankofengland.co.uk/prudential-regulation/publication/2024/march/operational-resilience-impact-tolerances-for-important-business-services "PRA SS1/21").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="نبذة عن المؤلف"><img alt="صورة شخصية لسيباستيان روسو" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">سيباستيان روسو</a></strong><span class="author-card-bio">تقني مصرفي أول يكتب عن الذكاء الاصطناعي التطبيقي، وترحيل ISO 20022، والتشفير ما بعد الكمومي للخدمات المالية، والتحوُّل البنيوي لمدفوعات الجملة.</span><span class="author-credentials">أكثر من 20 عاماً من الخبرة لدى HSBC للخدمات المصرفية التجارية والاستثمارية، وPayPal، وBarclays، وShazam، وAKQA، ومجموعة Virgin. <a href="/about/index.html">الملف الكامل</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="نبذة عن المؤلف"><img alt="صورة شخصية لسيباستيان روسو" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">سيباستيان روسو</a></strong><span class="author-card-bio">تقني مصرفي أول يكتب عن الذكاء الاصطناعي التطبيقي، وترحيل ISO 20022، والتشفير ما بعد الكمومي للخدمات المالية، والتحوُّل البنيوي لمدفوعات الجملة.</span><span class="author-credentials">أكثر من 20 عاماً من الخبرة لدى HSBC للخدمات المصرفية التجارية والاستثمارية، وPayPal، وBarclays، وShazam، وAKQA، ومجموعة Virgin. <a href="/about/index.html">الملف الكامل</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">آخر مراجعة <time datetime="2026-05-31">2026-05-31</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">قراءات ذات صلة</h2>

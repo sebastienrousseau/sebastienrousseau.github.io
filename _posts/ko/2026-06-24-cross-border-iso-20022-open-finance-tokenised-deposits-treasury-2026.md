@@ -20,7 +20,7 @@ id: "https://sebastienrousseau.com/2026-06-24-cross-border-iso-20022-open-financ
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "국경 간 결제, ISO 20022, 오픈 파이낸스, PSD3, FiDA, 토큰화 예금, 스테이블코인, A2A, 트레저리, CIB, Nexi, Mastercard, 멀티 레일, pacs.008, pain.001, SWIFT, FedNow, SEPA Instant, RTP, CBPR+"
 language: "ko-KR"
 last_reviewed: "2026-06-24"
@@ -242,6 +242,6 @@ SWIFT는 사라지지 않습니다 — 롱테일을 떠받칩니다. 은행 발�
 SWIFT (2024). *국경 간 결제 및 보고 플러스 (CBPR+) 사용 가이드라인*. 다음에서 이용 가능: [https://www.swift.com/standards/iso-20022/iso-20022-programme](https://www.swift.com/standards/iso-20022/iso-20022-programme "SWIFT CBPR+ usage guidelines")
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="About the author"><img alt="Sebastien Rousseau 초상" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">응용 AI, ISO 20022 마이그레이션, 금융 서비스용 포스트 양자 암호, 도매 결제의 구조적 전환에 대해 글을 쓰는 시니어 뱅킹 기술자.</span><span class="author-credentials">HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group에 걸친 20년 이상의 경력. <a href="/about/index.html">전체 프로필</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="About the author"><img alt="Sebastien Rousseau 초상" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">응용 AI, ISO 20022 마이그레이션, 금융 서비스용 포스트 양자 암호, 도매 결제의 구조적 전환에 대해 글을 쓰는 시니어 뱅킹 기술자.</span><span class="author-credentials">HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group에 걸친 20년 이상의 경력. <a href="/about/index.html">전체 프로필</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">최종 검토일 <time datetime="2026-06-24">2026-06-24</time>.</p>
 <!-- enrich-end -->

@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/bn/2026-05-23-agentic-payments-banking-consen
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "এজেন্টিক পেমেন্ট ২০২৬, AI agent পেমেন্ট, Mastercard Agent Pay, Rabobank AI পেমেন্ট, AP2, A2A, x402, MCP, machine payments protocol, পেমেন্ট সম্মতি, Regulation E, EFTA, পেমেন্ট দায়, যাচাইযোগ্য অভিপ্রায়, টোকেনাইজেশন, পাসকি, ব্যাংকিং UX, AI বাণিজ্য"
 language: "bn"
 excerpt: "২০২৬ সালে এজেন্টিক পেমেন্ট ধারণা থেকে লাইভ লেনদেনে উত্তীর্ণ হয়েছে — Mastercard ও Rabobank নেদারল্যান্ডসে Agent Pay-এর মাধ্যমে একটি AI agent পেমেন্ট সম্পাদন করেছে, AP2-ধাঁচের ক্রিপ্টোগ্রাফিক সম্মতির আদেশ উদ্ভূত হচ্ছে, এবং HM Treasury বলছে পেমেন্ট-পরিষেবা নিয়ন্ত্রণ অভিযোজিত হতেই হবে। ব্যাংকিং স্থাপত্যের প্রশ্ন হলো সম্মতি, পরিচয়, দায় ও নিষ্পত্তি-পূর্ব প্রমাণ।"
@@ -203,6 +203,6 @@ J.P. Morgan আশা করে এজেন্টিক বাণিজ্য �
 - J.P. Morgan, (২০২৬)। [Payments Outlook: Five Trends Powering Payments in 2026 ⧉](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook")।
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="লেখক সম্পর্কে"><img alt="সেবাস্তিয়ান রুসোর প্রতিকৃতি" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">সেবাস্তিয়ান রুসো</a></strong><span class="author-card-bio">সিনিয়র ব্যাংকিং প্রযুক্তিবিদ, প্রয়োগ-ভিত্তিক এআই, পেমেন্ট পরিকাঠামো, টোকেনাইজড অর্থ, ISO 20022, পোস্ট-কোয়ান্টাম নিরাপত্তা, ক্লাউড-নেটিভ আর্থিক পরিষেবা ও নিয়ন্ত্রিত ডিজিটাল বাজার সম্পর্কে লেখেন।</span><span class="author-credentials">HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group-এ ২০+ বছরের অভিজ্ঞতা। <a href="/about/index.html">সম্পূর্ণ প্রোফাইল</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="লেখক সম্পর্কে"><img alt="সেবাস্তিয়ান রুসোর প্রতিকৃতি" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">সেবাস্তিয়ান রুসো</a></strong><span class="author-card-bio">সিনিয়র ব্যাংকিং প্রযুক্তিবিদ, প্রয়োগ-ভিত্তিক এআই, পেমেন্ট পরিকাঠামো, টোকেনাইজড অর্থ, ISO 20022, পোস্ট-কোয়ান্টাম নিরাপত্তা, ক্লাউড-নেটিভ আর্থিক পরিষেবা ও নিয়ন্ত্রিত ডিজিটাল বাজার সম্পর্কে লেখেন।</span><span class="author-credentials">HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group-এ ২০+ বছরের অভিজ্ঞতা। <a href="/about/index.html">সম্পূর্ণ প্রোফাইল</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">সর্বশেষ পর্যালোচনা <time datetime="2026-05-23">2026-05-23</time>।</p>
 <!-- enrich-end -->

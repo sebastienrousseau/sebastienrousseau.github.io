@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/ar/2026-05-30-uk-wholesale-digital-markets-to
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "الأسواق الرقمية للجملة 2026، سندات gilt المرمَّزة، تسوية DLT، منسق الأسواق الرقمية، Wholesale Digital Markets Champion، BoE DSS، FCA، RTGS، إعادة الشراء خلال اليوم، HQLA، DvP الذري، Canton، RLN، سيتي لندن"
 language: "ar"
 excerpt: "دور منسق الأسواق الرقمية للجملة في المملكة المتحدة يجعل من سندات gilt المرمَّزة، والتسوية المعتمدة على DLT، وتمويل الجملة الرقمي، مشروعَ تنافسية وطنياً. السؤال الاستراتيجي للمصارف في 2026 هو انضباط التصميم: أيُّ الأصول المرمَّزة تجلس على أيِّ منصَّة، وكيف تُوثَّق أدلة مخاطر التسوية، وكيف يُدافَع عن دور سيتي لندن للجملة في مواجهة سنغافورة وسويسرا وفرانكفورت."
@@ -235,7 +235,7 @@ Regulated Liability Network نموذج دفتر مشترك للنقد التجا
 - Global Government Finance, (2026). [منسق الأسواق الرقمية للجملة في المملكة المتحدة ⧉](https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/ "منسق الأسواق الرقمية للجملة في المملكة المتحدة").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="نبذة عن المؤلف"><img alt="صورة شخصية لسيباستيان روسو" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">سيباستيان روسو</a></strong><span class="author-card-bio">تقني مصرفي أول يكتب عن الذكاء الاصطناعي التطبيقي، وترحيل ISO 20022، والتشفير ما بعد الكمومي للخدمات المالية، والتحوُّل البنيوي لمدفوعات الجملة.</span><span class="author-credentials">أكثر من 20 عاماً من الخبرة لدى HSBC للخدمات المصرفية التجارية والاستثمارية، وPayPal، وBarclays، وShazam، وAKQA، ومجموعة Virgin. <a href="/about/index.html">الملف الكامل</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="نبذة عن المؤلف"><img alt="صورة شخصية لسيباستيان روسو" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">سيباستيان روسو</a></strong><span class="author-card-bio">تقني مصرفي أول يكتب عن الذكاء الاصطناعي التطبيقي، وترحيل ISO 20022، والتشفير ما بعد الكمومي للخدمات المالية، والتحوُّل البنيوي لمدفوعات الجملة.</span><span class="author-credentials">أكثر من 20 عاماً من الخبرة لدى HSBC للخدمات المصرفية التجارية والاستثمارية، وPayPal، وBarclays، وShazam، وAKQA، ومجموعة Virgin. <a href="/about/index.html">الملف الكامل</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">آخر مراجعة <time datetime="2026-05-30">2026-05-30</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">قراءات ذات صلة</h2>

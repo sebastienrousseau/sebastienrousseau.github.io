@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/es/2026-05-30-uk-mayorista-digital-markets-to
 image_alt: "Retrato en blanco y negro de Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "mercados digitales mayoristas Reino Unido 2026, Chris Woolard, gilts tokenizados, finanzas mayoristas tokenizadas, campeón de mercados digitales, tokenización Reino Unido, liquidación"
 language: "es"
 excerpt: "El rol de Campeón de Mercados Digitales Mayoristas del Reino Unido convierte los gilts tokenizados, la liquidación sobre DLT y las finanzas mayoristas digitales en un proyecto de competitividad nacional. La pregunta estratégica de 2026 para los bancos es disciplina de diseño: qué activos tokenizados residen en qué plataforma, cómo se evidencia el riesgo de liquidación y cómo defender el papel mayorista de la City frente a Singapur, Suiza y Fráncfort."
@@ -235,7 +235,7 @@ Puntos básicos ahorrados en financiación del colateral. Reducción del colchó
 - Global Government Finance, (2026). [Campeón de mercados digitales mayoristas del Reino Unido ⧉](https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/ "Campeón de mercados digitales mayoristas del Reino Unido").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Acerca del autor"><img alt="Retrato de Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Tecnólogo bancario sénior, escribe sobre IA aplicada, migración ISO 20022, criptografía postcuántica para servicios financieros y la transformación estructural de los pagos mayoristas.</span><span class="author-credentials">Más de 20 años en HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Perfil completo</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Acerca del autor"><img alt="Retrato de Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Tecnólogo bancario sénior, escribe sobre IA aplicada, migración ISO 20022, criptografía postcuántica para servicios financieros y la transformación estructural de los pagos mayoristas.</span><span class="author-credentials">Más de 20 años en HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Perfil completo</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Última revisión <time datetime="2026-05-30">2026-05-30</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Lecturas relacionadas</h2>

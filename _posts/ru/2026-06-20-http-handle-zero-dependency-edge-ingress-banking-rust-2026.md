@@ -20,7 +20,7 @@ id: "https://sebastienrousseau.com/2026-06-20-http-handle-zero-dependency-edge-i
 image_alt: "Чёрно-белый портрет Себастьена Руссо"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "http-handle, Rust edge ingress, прокси без зависимостей, банковская инфраструктура, mTLS JWT, sendfile zero-copy, ALPN HTTP3, соответствие DORA, Базель III, наблюдаемость OTLP, статический бинарный файл, ARM64 банкинг, zero trust банкинг, лёгкий ingress, безопасность банковских систем Rust"
 language: "ru-RU"
 last_reviewed: "2026-06-20"

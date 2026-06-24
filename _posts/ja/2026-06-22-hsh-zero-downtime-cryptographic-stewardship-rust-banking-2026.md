@@ -18,7 +18,7 @@ id: "https://sebastienrousseau.com/2026-06-22-hsh-zero-downtime-cryptographic-st
 image_alt: "セバスチャン・ルソーのモノクロ・ポートレート"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "hsh, Rust 暗号, パスワードハッシュ, Argon2id, 銀行セキュリティ, HSM インターロック, DORA 適合, Basel III, ゼロダウンタイム移行, メモリ安全性, PBKDF2, scrypt, サイバーリカバリ"
 language: "ja-JP"
 last_reviewed: "2026-06-22"
@@ -336,6 +336,6 @@ Biryukov, A., Dinu, D., Khovratovich, D., および Josefsson, S. (2021)。*RFC 
 OWASP Foundation (2024)。*Password Storage Cheat Sheet*。入手先: [https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html](https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html "OWASP Password Storage Cheat Sheet")
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="著者について"><img alt="セバスチャン・ルソーのポートレート" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">応用 AI、ISO 20022 移行、金融サービス向けポスト量子暗号、ホールセール決済の構造変革について執筆するシニア銀行テクノロジスト。</span><span class="author-credentials">HSBC コマーシャル&インベストメントバンク、PayPal、Barclays、Shazam での 20 年超の経験。<a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="著者について"><img alt="セバスチャン・ルソーのポートレート" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">応用 AI、ISO 20022 移行、金融サービス向けポスト量子暗号、ホールセール決済の構造変革について執筆するシニア銀行テクノロジスト。</span><span class="author-credentials">HSBC コマーシャル&インベストメントバンク、PayPal、Barclays、Shazam での 20 年超の経験。<a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">最終レビュー <time datetime="2026-06-22">2026-06-22</time>。</p>
 <!-- enrich-end -->

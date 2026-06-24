@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/de/2026-05-27-ai-operating-system-zahlungsver
 image_alt: "Schwarz-Weiß-Porträt von Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "KI-Zahlungsverkehr 2026, Zahlungsbetrug, Payment Routing, Echtzeit-Betrugsabwehr, ISO 20022 KI, Resilienz im Zahlungsverkehr, Transaktionsanalyse, Liquiditätsprognose"
 language: "de"
 excerpt: "Das KI-Betriebssystem für den Zahlungsverkehr 2026 verbindet Betrug, Routing, Resilienz und Compliance zu einer Entscheidungsschicht in Workflow-Geschwindigkeit. Die strategische Frage für Banken ist Designdisziplin — welche KI-Kontrollen in welchem Workflow in Echtzeit laufen — nicht welches Punktwerkzeug zu pilotieren ist."
@@ -201,6 +201,6 @@ Erfolg sollte an Stückkostenökonomie, Resilienz-Nachweisen, Datenqualität, Ku
 - Standard Chartered, (2026). [Six forces shaping Treasury in 2026 ⧉](https://www.sc.com/en/news/corporate-investment-banking/six-forces-shaping-treasury-in-2026/ "Six forces shaping Treasury in 2026").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Über den Autor"><img alt="Porträt von Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior Banking-Technologe mit Schwerpunkt auf angewandter KI, Zahlungsinfrastruktur, tokenisiertem Geld, ISO 20022, Post-Quanten-Sicherheit, Cloud-nativen Finanzdienstleistungen und regulierten digitalen Märkten.</span><span class="author-credentials">20+ Jahre bei HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Vollständiges Profil</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Über den Autor"><img alt="Porträt von Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior Banking-Technologe mit Schwerpunkt auf angewandter KI, Zahlungsinfrastruktur, tokenisiertem Geld, ISO 20022, Post-Quanten-Sicherheit, Cloud-nativen Finanzdienstleistungen und regulierten digitalen Märkten.</span><span class="author-credentials">20+ Jahre bei HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Vollständiges Profil</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Zuletzt geprüft <time datetime="2026-05-27">2026-05-27</time>.</p>
 <!-- enrich-end -->

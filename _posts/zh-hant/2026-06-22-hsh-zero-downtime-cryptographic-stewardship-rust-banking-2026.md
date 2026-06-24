@@ -18,7 +18,7 @@ id: "https://sebastienrousseau.com/2026-06-22-hsh-zero-downtime-cryptographic-st
 image_alt: "Sebastien Rousseau 的黑白肖像"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "hsh, Rust 密碼學, 密碼雜湊, Argon2id, 銀行資安, HSM 互鎖, DORA 法遵, Basel III, 零停機遷移, 記憶體安全, PBKDF2, scrypt, 網路復原"
 language: "zh-Hant"
 last_reviewed: "2026-06-22"
@@ -336,6 +336,6 @@ Biryukov, A.、Dinu, D.、Khovratovich, D. 與 Josefsson, S.(2021)。《RFC 9106
 OWASP 基金會(2024)。《密碼儲存秘笈》。取自:[https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html](https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html "OWASP Password Storage Cheat Sheet")
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="關於作者"><img alt="Sebastien Rousseau 的肖像" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">資深銀行科技人,撰寫應用 AI、ISO 20022 遷移、金融服務後量子密碼學,以及躉售支付結構性轉型相關主題。</span><span class="author-credentials">於匯豐商業與投資銀行、PayPal、Barclays、Shazam、AKQA、Virgin Group 等機構累計逾 20 年經驗。<a href="/about/index.html">完整檔案</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="關於作者"><img alt="Sebastien Rousseau 的肖像" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">資深銀行科技人,撰寫應用 AI、ISO 20022 遷移、金融服務後量子密碼學,以及躉售支付結構性轉型相關主題。</span><span class="author-credentials">於匯豐商業與投資銀行、PayPal、Barclays、Shazam、AKQA、Virgin Group 等機構累計逾 20 年經驗。<a href="/about/index.html">完整檔案</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">最後審閱於 <time datetime="2026-06-22">2026-06-22</time>。</p>
 <!-- enrich-end -->
