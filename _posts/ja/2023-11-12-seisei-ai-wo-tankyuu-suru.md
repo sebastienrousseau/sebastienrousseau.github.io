@@ -5,13 +5,13 @@ description: "生成 AI が画像、テキスト、音声、コードでどの�
 date: "November 12, 2023"
 language: "ja-JP"
 locale: "ja_JP"
-banner: "https://cloudcdn.pro/stocks/images/possessed-photography-jIBMSMs4_kA-unsplash.webp"
+banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp"
 banner_alt: "AI と人間の対話を表す抽象的なビジュアル"
 keywords: "生成 AI, LLM, 大規模言語モデル, 拡散モデル, GPT, Claude, Gemini, エンタープライズ AI"
 last_reviewed: "2026-05-11"
 ---
 
-![AI と人間の対話を表す抽象的なビジュアル](https://cloudcdn.pro/stocks/images/possessed-photography-jIBMSMs4_kA-unsplash.webp).class=\"img-fluid clearfix\"
+![AI と人間の対話を表す抽象的なビジュアル](https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp).class=\"img-fluid clearfix\"
 
 ## インサイト
 

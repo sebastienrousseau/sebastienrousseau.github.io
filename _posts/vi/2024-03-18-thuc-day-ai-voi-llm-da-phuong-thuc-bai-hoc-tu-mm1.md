@@ -5,12 +5,12 @@ description: 'Phân tích bài báo MM1 của Apple — kiến trúc, chiến l�
 date: 'March 18, 2024'
 language: 'vi-VN'
 locale: 'vi_VN'
-banner: 'https://cloudcdn.pro/stocks/images/mm1-banner.webp'
+banner: 'https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp'
 banner_alt: 'Sơ đồ trừu tượng của một LLM đa phương thức'
 keywords: 'MM1, Apple, LLM, đa phương thức, hình ảnh, văn bản, học máy, kiến trúc, huấn luyện trước'
 ---
 
-![MM1 LLM đa phương thức](https://cloudcdn.pro/stocks/images/mm1-banner.webp).class=\"img-fluid clearfix\"
+![MM1 LLM đa phương thức](https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp).class=\"img-fluid clearfix\"
 
 > **TL;DR.** Bài báo MM1 của Apple cung cấp một phân tích chi tiết về việc xây dựng các mô hình ngôn ngữ lớn đa phương thức (MLLM). Các bài học chính: trộn lẫn các loại dữ liệu là quan trọng, các bộ mã hoá hình ảnh nhỏ hoạt động tốt và các khả năng mới nổi xuất hiện ở quy mô.
 >

@@ -5,7 +5,7 @@ description: "エージェンティック・エンジニアリングの実用的
 date: "May 17, 2026"
 language: "ja-JP"
 locale: "ja_JP"
-banner: "https://cloudcdn.pro/stocks/images/possessed-photography-jIBMSMs4_kA-unsplash.webp"
+banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp"
 banner_alt: "AI エージェントオーケストレーションの抽象的なビジュアル"
 keywords: "エージェンティック AI, エージェント, AI オーケストレーション, MCP, AIBOM, EU AI 法, 銀行ソフトウェア, Bedrock Agents, Vertex AI Agent Builder, Azure AI Foundry"
 last_reviewed: "2026-05-17"

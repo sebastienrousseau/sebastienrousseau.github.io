@@ -5,7 +5,7 @@ description: "Новый квантовый алгоритм решает клю
 date: "April 15, 2024"
 language: "ru-RU"
 locale: "ru_RU"
-banner: "https://cloudcdn.pro/stocks/images/quantum-lattice-attack.webp"
+banner: "https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp"
 banner_alt: "Квантовый алгоритм против решётчатой криптографии"
 keywords: "квантовый алгоритм, LWE, Learning With Errors, решётчатая криптография, ML-KEM, постквантовая безопасность, исследования"
 ---

@@ -5,13 +5,13 @@ description: "金融サービスを再構築し、新たなビジネスモデル
 date: "January 2, 2018"
 language: "ja-JP"
 locale: "ja_JP"
-banner: "https://cloudcdn.pro/stocks/images/clint-adair-BW0vK-FA3eg-unsplash.webp"
+banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp"
 banner_alt: "夜のネットワーク化された都市のスカイライン"
 keywords: "ブロックチェーン, 分散型台帳, 暗号資産, スマートコントラクト, トークン化, フィンテック, 信頼, 透明性"
 last_reviewed: "2026-05-11"
 ---
 
-![夜のネットワーク化された都市のスカイライン](https://cloudcdn.pro/stocks/images/clint-adair-BW0vK-FA3eg-unsplash.webp).class=\"img-fluid clearfix\"
+![夜のネットワーク化された都市のスカイライン](https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp).class=\"img-fluid clearfix\"
 
 ## インサイト
 

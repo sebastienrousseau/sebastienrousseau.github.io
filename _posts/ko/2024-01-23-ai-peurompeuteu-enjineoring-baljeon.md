@@ -5,13 +5,13 @@ description: "AI 프롬프트 엔지니어링의 최신 발전. Chain-of-thought
 date: "January 23, 2024"
 language: "ko-KR"
 locale: "ko_KR"
-banner: "https://cloudcdn.pro/stocks/images/markus-spiske-466ENaLuhLY-unsplash.webp"
+banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp"
 banner_alt: "코드 에디터를 사용하는 개발자"
 keywords: "프롬프트 엔지니어링, AI, LLM, chain-of-thought, RAG, 도구 사용, 에이전트, 워크플로"
 last_reviewed: "2026-05-16"
 ---
 
-![코드 에디터를 사용하는 개발자](https://cloudcdn.pro/stocks/images/markus-spiske-466ENaLuhLY-unsplash.webp).class=\"img-fluid clearfix\"
+![코드 에디터를 사용하는 개발자](https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp).class=\"img-fluid clearfix\"
 
 ## 통찰
 

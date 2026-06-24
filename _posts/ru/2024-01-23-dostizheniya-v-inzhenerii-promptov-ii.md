@@ -5,7 +5,7 @@ description: "Современные техники prompt-инжиниринг�
 date: "January 23, 2024"
 language: "ru-RU"
 locale: "ru_RU"
-banner: "https://cloudcdn.pro/stocks/images/prompt-engineering.webp"
+banner: "https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp"
 banner_alt: "Инженерия промптов: визуализация техник работы с LLM"
 keywords: "prompt-инжиниринг, LLM, chain-of-thought, few-shot, RAG, retrieval-augmented generation, структурированные ответы, JSON mode"
 ---

@@ -5,13 +5,13 @@ description: "Akande、自然な対話、PDF 要約、効率的なキャッシ�
 date: "February 12, 2024"
 language: "ja-JP"
 locale: "ja_JP"
-banner: "https://cloudcdn.pro/stocks/images/wesley-tingey-snNHKZ-mGfE-unsplash.webp"
+banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp"
 banner_alt: "AI アシスタントとのデジタル対話"
 keywords: "Akande, 音声アシスタント, GPT, OpenAI, 役員支援, PDF, AI"
 last_reviewed: "2026-05-11"
 ---
 
-![AI アシスタントとのデジタル対話](https://cloudcdn.pro/stocks/images/wesley-tingey-snNHKZ-mGfE-unsplash.webp).class=\"img-fluid clearfix\"
+![AI アシスタントとのデジタル対話](https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp).class=\"img-fluid clearfix\"
 
 ## インサイト
 

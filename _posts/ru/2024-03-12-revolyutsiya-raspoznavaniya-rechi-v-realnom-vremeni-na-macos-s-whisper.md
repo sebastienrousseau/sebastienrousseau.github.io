@@ -5,7 +5,7 @@ description: "Система транскрипции речи в текст в 
 date: "March 12, 2024"
 language: "ru-RU"
 locale: "ru_RU"
-banner: "https://cloudcdn.pro/stocks/images/whisper-mps.webp"
+banner: "https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp"
 banner_alt: "Распознавание речи на macOS с Whisper и Metal Performance Shaders"
 keywords: "Whisper, OpenAI, MPS, Metal Performance Shaders, macOS, Apple Silicon, M1 Max, распознавание речи в реальном времени, ASR"
 ---

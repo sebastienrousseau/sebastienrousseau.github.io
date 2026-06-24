@@ -5,12 +5,12 @@ description: 'Gemini là phản ứng của Google đối với GPT-4. Cách nó
 date: 'February 19, 2024'
 language: 'vi-VN'
 locale: 'vi_VN'
-banner: 'https://cloudcdn.pro/stocks/images/gemini-banner.webp'
+banner: 'https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp'
 banner_alt: 'Logo Gemini của Google'
 keywords: 'Gemini, Google, AI, LLM, đa phương thức, GPT-4, cạnh tranh, mô hình ngôn ngữ'
 ---
 
-![Logo Gemini](https://cloudcdn.pro/stocks/images/gemini-banner.webp).class=\"img-fluid clearfix\"
+![Logo Gemini](https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp).class=\"img-fluid clearfix\"
 
 > **TL;DR.** Gemini là một họ mô hình AI đa phương thức của Google, được thiết kế để cạnh tranh trực tiếp với GPT-4. Điểm khác biệt chính: được huấn luyện đa phương thức từ đầu (không phải các mô hình được ghép lại sau đó), cửa sổ ngữ cảnh dài (1M+ token trong Gemini 1.5).
 >

@@ -5,12 +5,12 @@ description: 'KyberLib — triển khai Rust thuần tuý của CRYSTALS-Kyber (
 date: 'November 28, 2023'
 language: 'vi-VN'
 locale: 'vi_VN'
-banner: 'https://cloudcdn.pro/stocks/images/kyberlib-banner.webp'
+banner: 'https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp'
 banner_alt: 'Biểu ngữ KyberLib'
 keywords: 'KyberLib, Rust, CRYSTALS-Kyber, ML-KEM, FIPS 203, hậu lượng tử, mật mã, mã nguồn mở'
 ---
 
-![Biểu ngữ KyberLib](https://cloudcdn.pro/stocks/images/kyberlib-banner.webp).class=\"img-fluid clearfix\"
+![Biểu ngữ KyberLib](https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp).class=\"img-fluid clearfix\"
 
 > **TL;DR.** `kyberlib` là triển khai Rust thuần tuý của CRYSTALS-Kyber (ML-KEM, FIPS 203). Nó cung cấp một API đơn giản, an toàn bộ nhớ cho mã hoá khoá kháng lượng tử, được thiết kế cho các ứng dụng tài chính và bảo mật.
 >

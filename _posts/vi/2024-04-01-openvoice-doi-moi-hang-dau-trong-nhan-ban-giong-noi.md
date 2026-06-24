@@ -5,12 +5,12 @@ description: 'OpenVoice của MyShell mở khoá việc nhân bản giọng nói
 date: 'April 1, 2024'
 language: 'vi-VN'
 locale: 'vi_VN'
-banner: 'https://cloudcdn.pro/stocks/images/openvoice-banner.webp'
+banner: 'https://cloudcdn.pro/stocks/images/rustlogs.webp'
 banner_alt: 'Sóng giọng nói và biểu tượng AI'
 keywords: 'OpenVoice, nhân bản giọng nói, TTS, MyShell, AI, deepfake, đạo đức, hỗ trợ tiếp cận'
 ---
 
-![Nhân bản giọng nói AI](https://cloudcdn.pro/stocks/images/openvoice-banner.webp).class=\"img-fluid clearfix\"
+![Nhân bản giọng nói AI](https://cloudcdn.pro/stocks/images/rustlogs.webp).class=\"img-fluid clearfix\"
 
 > **TL;DR.** OpenVoice là một hệ thống nhân bản giọng nói mã nguồn mở của MyShell có khả năng sao chép giọng nói của một người từ chỉ một mẫu vài giây và tổng hợp lời nói mới với giọng đó.
 >

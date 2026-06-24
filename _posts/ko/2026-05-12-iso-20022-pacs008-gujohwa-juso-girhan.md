@@ -5,7 +5,7 @@ description: "이행이 지연된 은행은 거부 및 운영상의 마찰에 �
 date: "May 12, 2026"
 language: "ko-KR"
 locale: "ko_KR"
-banner: "https://cloudcdn.pro/stocks/images/possessed-photography-jIBMSMs4_kA-unsplash.webp"
+banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp"
 banner_alt: "SWIFT 결제 메시지 구조화"
 keywords: "ISO 20022, pacs.008, 구조화 주소, SWIFT CBPR+, 2026년 11월, 결제 이행, 도매 결제"
 last_reviewed: "2026-05-16"

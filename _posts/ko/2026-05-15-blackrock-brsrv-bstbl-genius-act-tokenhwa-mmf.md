@@ -5,7 +5,7 @@ description: "GENIUS Act 하에서 스테이블코인은 수익을 지급할 수
 date: "May 15, 2026"
 language: "ko-KR"
 locale: "ko_KR"
-banner: "https://cloudcdn.pro/stocks/images/lukasz-radziejewski-vy0xwgGd2BU-unsplash.webp"
+banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp"
 banner_alt: "토큰화 머니마켓펀드 구조"
 keywords: "BlackRock, BRSRV, BSTBL, GENIUS Act, 토큰화 MMF, 스테이블코인, 머니마켓펀드, 디지털 자산"
 last_reviewed: "2026-05-16"

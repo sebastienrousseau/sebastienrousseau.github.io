@@ -5,7 +5,7 @@ description: "Закон ЕС об ИИ устанавливает первый 
 date: "February 13, 2024"
 language: "ru-RU"
 locale: "ru_RU"
-banner: "https://cloudcdn.pro/stocks/images/eu-ai-act.webp"
+banner: "https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp"
 banner_alt: "Закон ЕС об ИИ: визуализация регуляторного ландшафта"
 keywords: "Закон ЕС об ИИ, EU AI Act, регулирование ИИ, риск-ориентированный подход, высокорисковые системы, GPAI, штрафы, банки"
 ---

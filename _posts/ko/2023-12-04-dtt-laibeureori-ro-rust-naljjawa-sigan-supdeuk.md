@@ -5,13 +5,13 @@ description: "dtt는 파싱, 포맷, 시간대 조작을 위한 포괄적 날짜
 date: "December 4, 2023"
 language: "ko-KR"
 locale: "ko_KR"
-banner: "https://cloudcdn.pro/stocks/images/luca-bravo-VowIH4-VlIw-unsplash.webp"
+banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp"
 banner_alt: "유리 건물 위의 시계"
 keywords: "dtt, 날짜, 시간, Rust, 시간대, RFC 3339, ISO 8601, 라이브러리, 파싱, 포맷"
 last_reviewed: "2026-05-16"
 ---
 
-![유리 건물 위의 시계](https://cloudcdn.pro/stocks/images/luca-bravo-VowIH4-VlIw-unsplash.webp).class=\"img-fluid clearfix\"
+![유리 건물 위의 시계](https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp).class=\"img-fluid clearfix\"
 
 ## 통찰
 

@@ -5,13 +5,13 @@ description: "Google의 Gemini AI 모델, 그 능력, 아키텍처, AI 산업에
 date: "February 19, 2024"
 language: "ko-KR"
 locale: "ko_KR"
-banner: "https://cloudcdn.pro/stocks/images/possessed-photography-jIBMSMs4_kA-unsplash.webp"
+banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp"
 banner_alt: "AI의 진화를 표현하는 추상적 비주얼"
 keywords: "Gemini, Google AI, 멀티모달, LLM, GPT, AI 모델, Bard, Vertex AI"
 last_reviewed: "2026-05-16"
 ---
 
-![AI의 진화를 표현하는 추상적 비주얼](https://cloudcdn.pro/stocks/images/possessed-photography-jIBMSMs4_kA-unsplash.webp).class=\"img-fluid clearfix\"
+![AI의 진화를 표현하는 추상적 비주얼](https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp).class=\"img-fluid clearfix\"
 
 ## 통찰
 

@@ -5,7 +5,7 @@ description: "에이전트 AI는 이미 은행 운영을 재편하고 있습니�
 date: "May 17, 2026"
 language: "ko-KR"
 locale: "ko_KR"
-banner: "https://cloudcdn.pro/stocks/images/aron-visuals-bN5XdU-bap4-unsplash.webp"
+banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp"
 banner_alt: "은행 운영에서의 AI 에이전트"
 keywords: "에이전트 AI, AI 에이전트, 은행 자동화, MCP, 멀티 에이전트, 에이전트형 상거래, AI 거버넌스, AI 보안"
 last_reviewed: "2026-05-16"

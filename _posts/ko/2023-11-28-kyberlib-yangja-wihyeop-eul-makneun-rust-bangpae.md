@@ -5,13 +5,13 @@ description: "kyberlib는 NIST FIPS 203 표준 CRYSTALS-Kyber의 Rust 구현으�
 date: "November 28, 2023"
 language: "ko-KR"
 locale: "ko_KR"
-banner: "https://cloudcdn.pro/stocks/images/markus-spiske-Skf7HxARcoc-unsplash.webp"
+banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp"
 banner_alt: "보호를 표현하는 이진 코드와 방패"
 keywords: "kyberlib, CRYSTALS-Kyber, Rust, ML-KEM, FIPS 203, 키 캡슐화, 포스트 양자 암호, 양자 내성"
 last_reviewed: "2026-05-16"
 ---
 
-![보호를 표현하는 이진 코드와 방패](https://cloudcdn.pro/stocks/images/markus-spiske-Skf7HxARcoc-unsplash.webp).class=\"img-fluid clearfix\"
+![보호를 표현하는 이진 코드와 방패](https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp).class=\"img-fluid clearfix\"
 
 ## 통찰
 

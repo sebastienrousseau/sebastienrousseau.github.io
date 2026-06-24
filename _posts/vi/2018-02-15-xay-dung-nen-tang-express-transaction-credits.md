@@ -5,12 +5,12 @@ description: 'Quá trình thiết kế và xây dựng Express Transaction Credi
 date: 'February 15, 2018'
 language: 'vi-VN'
 locale: 'vi_VN'
-banner: 'https://cloudcdn.pro/stocks/images/etc-build.webp'
+banner: 'https://cloudcdn.pro/stocks/images/sebastienrousseau.webp'
 banner_alt: 'Một sơ đồ kiến trúc của một nền tảng blockchain'
 keywords: 'Express Transaction Credits, blockchain, kiến trúc, đồng thuận, phát triển, kỹ thuật, fintech'
 ---
 
-![Sơ đồ kiến trúc nền tảng blockchain](https://cloudcdn.pro/stocks/images/etc-build.webp).class=\"img-fluid clearfix\"
+![Sơ đồ kiến trúc nền tảng blockchain](https://cloudcdn.pro/stocks/images/sebastienrousseau.webp).class=\"img-fluid clearfix\"
 
 > **TL;DR.** Xây dựng một nền tảng blockchain cho thanh toán đòi hỏi đánh đổi cẩn thận giữa thông lượng, độ trễ, bảo mật và phi tập trung. Bài viết này ghi lại các quyết định thiết kế đằng sau Express Transaction Credits.
 >

@@ -5,12 +5,12 @@ description: 'Cách IBM Qiskit và biến đổi Fourier lượng tử định h
 date: 'January 8, 2024'
 language: 'vi-VN'
 locale: 'vi_VN'
-banner: 'https://cloudcdn.pro/stocks/images/qiskit-banner.webp'
+banner: 'https://cloudcdn.pro/stocks/images/rustlogs.webp'
 banner_alt: 'Sơ đồ mạch lượng tử với cửa Fourier'
 keywords: 'IBM Qiskit, QFT, biến đổi Fourier lượng tử, tỉ lệ tín dụng, rủi ro, tài chính, lượng tử'
 ---
 
-![Mạch lượng tử với QFT](https://cloudcdn.pro/stocks/images/qiskit-banner.webp).class=\"img-fluid clearfix\"
+![Mạch lượng tử với QFT](https://cloudcdn.pro/stocks/images/rustlogs.webp).class=\"img-fluid clearfix\"
 
 > **TL;DR.** Biến đổi Fourier Lượng tử (QFT) là nền tảng của nhiều thuật toán lượng tử mạnh mẽ. Trong tài chính, nó có thể tăng tốc các tính toán xác suất quan trọng cho phân tích rủi ro tín dụng.
 >

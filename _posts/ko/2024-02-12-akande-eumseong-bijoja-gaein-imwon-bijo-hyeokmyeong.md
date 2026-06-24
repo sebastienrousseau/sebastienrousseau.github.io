@@ -5,13 +5,13 @@ description: "Akande, 자연스러운 대화, PDF 요약, 효율적인 캐싱을
 date: "February 12, 2024"
 language: "ko-KR"
 locale: "ko_KR"
-banner: "https://cloudcdn.pro/stocks/images/wesley-tingey-snNHKZ-mGfE-unsplash.webp"
+banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp"
 banner_alt: "AI 비서와의 디지털 대화"
 keywords: "Akande, 음성 비서, GPT, OpenAI, 임원 지원, PDF, AI"
 last_reviewed: "2026-05-16"
 ---
 
-![AI 비서와의 디지털 대화](https://cloudcdn.pro/stocks/images/wesley-tingey-snNHKZ-mGfE-unsplash.webp).class=\"img-fluid clearfix\"
+![AI 비서와의 디지털 대화](https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp).class=\"img-fluid clearfix\"
 
 ## 통찰
 

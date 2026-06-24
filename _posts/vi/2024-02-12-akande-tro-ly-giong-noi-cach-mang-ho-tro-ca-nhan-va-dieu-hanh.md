@@ -5,12 +5,12 @@ description: 'Akande — trợ lý giọng nói tiên tiến sử dụng GPT c�
 date: 'February 12, 2024'
 language: 'vi-VN'
 locale: 'vi_VN'
-banner: 'https://cloudcdn.pro/stocks/images/akande-banner.webp'
+banner: 'https://cloudcdn.pro/stocks/images/rustlogs.webp'
 banner_alt: 'Sóng giọng nói và biểu tượng trợ lý AI'
 keywords: 'Akande, trợ lý giọng nói, AI, GPT, OpenAI, tóm tắt PDF, năng suất, mã nguồn mở'
 ---
 
-![Akande trợ lý AI](https://cloudcdn.pro/stocks/images/akande-banner.webp).class=\"img-fluid clearfix\"
+![Akande trợ lý AI](https://cloudcdn.pro/stocks/images/rustlogs.webp).class=\"img-fluid clearfix\"
 
 > **TL;DR.** Akande là một trợ lý giọng nói mã nguồn mở sử dụng GPT của OpenAI cho tương tác ngôn ngữ tự nhiên, tóm tắt PDF và quản lý lịch — được thiết kế đặc biệt cho lãnh đạo cấp cao và các nhà điều hành.
 >
