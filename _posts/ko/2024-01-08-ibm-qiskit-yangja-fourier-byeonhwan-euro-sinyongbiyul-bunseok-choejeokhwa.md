@@ -5,13 +5,13 @@ description: "IBM Qiskit과 양자 푸리에 변환이 금융의 신용 비율 �
 date: "January 8, 2024"
 language: "ko-KR"
 locale: "ko_KR"
-banner: "https://cloudcdn.pro/stocks/images/markus-spiske-FXFz-sW0uwo-unsplash.webp"
+banner: "https://cloudcdn.pro/stocks/images/markus-spiske-FXFz-sW0uwo.webp"
 banner_alt: "양자 회로도"
 keywords: "IBM Qiskit, 양자 푸리에 변환, QFT, 신용 비율, 양자 금융, 양자 컴퓨팅, 포트폴리오 분석"
 last_reviewed: "2026-05-16"
 ---
 
-![양자 회로도](https://cloudcdn.pro/stocks/images/markus-spiske-FXFz-sW0uwo-unsplash.webp).class=\"img-fluid clearfix\"
+![양자 회로도](https://cloudcdn.pro/stocks/images/markus-spiske-FXFz-sW0uwo.webp).class=\"img-fluid clearfix\"
 
 ## 통찰
 
