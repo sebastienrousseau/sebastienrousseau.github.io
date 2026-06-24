@@ -20,7 +20,7 @@ id: "https://sebastienrousseau.com/2026-06-28-open-source-finos-cloud-native-cib
 image_alt: "Чёрно-белый портрет Себастьяна Руссо"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "open source в банкинге, FINOS, Linux Foundation, cloud-native CIB, Rust в банкинге, модернизация, Morgan Stanley open source, JPMorgan open source, PSD3, открытые финансы, FiDA, безопасность цепочки поставок, SBOM, CycloneDX, SPDX, SLSA, sigstore, CNCF, OSSF, лицензия MIT, Apache 2.0, BSD-3-Clause, DORA, Basel III, MCP"
 language: "ru-RU"
 last_reviewed: "2026-06-28"
@@ -178,6 +178,6 @@ CIB-стек в 2026 году открыт по умолчанию. Не из и
 Open source больше не вопрос модернизации. Это ответ модернизации.
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Об авторе"><img alt="Портрет Себастьяна Руссо" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Старший банковский технолог, пишущий о прикладном ИИ, миграции на ISO 20022, постквантовой криптографии для финансовых сервисов и структурной трансформации оптовых платежей.</span><span class="author-credentials">20+ лет в HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Полный профиль</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Об авторе"><img alt="Портрет Себастьяна Руссо" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Старший банковский технолог, пишущий о прикладном ИИ, миграции на ISO 20022, постквантовой криптографии для финансовых сервисов и структурной трансформации оптовых платежей.</span><span class="author-credentials">20+ лет в HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Полный профиль</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Последняя проверка <time datetime="2026-06-28">2026-06-28</time>.</p>
 <!-- enrich-end -->

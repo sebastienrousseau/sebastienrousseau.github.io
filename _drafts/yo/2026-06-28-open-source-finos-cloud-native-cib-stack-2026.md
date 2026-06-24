@@ -20,7 +20,7 @@ id: "https://sebastienrousseau.com/2026-06-28-open-source-finos-cloud-native-cib
 image_alt: "Àwòrán Aláwọ̀ Dúdú àti Funfun ti Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "báńkì orísun-ìmọ̀, FINOS, Linux Foundation, CIB cloud-native, báńkì Rust, ìsàgbéga, Morgan Stanley orísun-ìmọ̀, JPMorgan orísun-ìmọ̀, PSD3, ìnáwó tó ṣí sílẹ̀, FiDA, ààbò ẹ̀wọ̀n-ìpèsè, SBOM, CycloneDX, SPDX, SLSA, sigstore, CNCF, OSSF, ìwé-àṣẹ MIT, Apache 2.0, BSD-3-Clause, DORA, Basel III, MCP"
 language: "yo-NG"
 last_reviewed: "2026-06-28"
@@ -178,6 +178,6 @@ Fún àwọn olórí ìmọ̀-ẹ̀rọ, ìtumọ̀ rẹ̀ mú jù. Yan àwọn 
 Orísun-ìmọ̀ kì í ṣe ìbéèrè ìsàgbéga mọ́. Ó jẹ́ ìdáhùn ìsàgbéga.
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Nípa olùkọ̀wé"><img alt="Àwòrán Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Onímọ̀-ẹ̀rọ báńkì àgbà tó ń kọ̀wé nípa AI ìmúṣẹ, ìṣíkiri ISO 20022, cryptography post-quantum fún àwọn iṣẹ́ ìnáwó, àti ìyípadà ìpilẹ̀ ti àwọn ìsanwó wholesale.</span><span class="author-credentials">Ọdún 20+ kọjá HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profáìlì pípé</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Nípa olùkọ̀wé"><img alt="Àwòrán Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Onímọ̀-ẹ̀rọ báńkì àgbà tó ń kọ̀wé nípa AI ìmúṣẹ, ìṣíkiri ISO 20022, cryptography post-quantum fún àwọn iṣẹ́ ìnáwó, àti ìyípadà ìpilẹ̀ ti àwọn ìsanwó wholesale.</span><span class="author-credentials">Ọdún 20+ kọjá HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profáìlì pípé</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Tí a tún yẹ̀wò kẹ́yìn <time datetime="2026-06-28">2026-06-28</time>.</p>
 <!-- enrich-end -->

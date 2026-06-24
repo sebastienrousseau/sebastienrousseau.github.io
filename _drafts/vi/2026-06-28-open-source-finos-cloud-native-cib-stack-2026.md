@@ -20,7 +20,7 @@ id: "https://sebastienrousseau.com/2026-06-28-open-source-finos-cloud-native-cib
 image_alt: "Chân dung đen trắng của Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "mã nguồn mở ngân hàng, FINOS, Linux Foundation, CIB cloud-native, Rust ngân hàng, hiện đại hoá, Morgan Stanley mã nguồn mở, JPMorgan mã nguồn mở, PSD3, open finance, FiDA, bảo mật chuỗi cung ứng, SBOM, CycloneDX, SPDX, SLSA, sigstore, CNCF, OSSF, giấy phép MIT, Apache 2.0, BSD-3-Clause, DORA, Basel III, MCP"
 language: "vi-VN"
 last_reviewed: "2026-06-28"
@@ -178,6 +178,6 @@ Stack CIB năm 2026 mặc định là mở. Không phải vì ý thức hệ, m�
 Mã nguồn mở không còn là câu hỏi hiện đại hoá. Đó là câu trả lời hiện đại hoá.
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Về tác giả"><img alt="Chân dung Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Chuyên gia công nghệ ngân hàng cao cấp viết về AI ứng dụng, di trú ISO 20022, mật mã hậu lượng tử cho dịch vụ tài chính và chuyển đổi cấu trúc của thanh toán bán buôn.</span><span class="author-credentials">Hơn 20 năm trải qua HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Hồ sơ đầy đủ</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Về tác giả"><img alt="Chân dung Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Chuyên gia công nghệ ngân hàng cao cấp viết về AI ứng dụng, di trú ISO 20022, mật mã hậu lượng tử cho dịch vụ tài chính và chuyển đổi cấu trúc của thanh toán bán buôn.</span><span class="author-credentials">Hơn 20 năm trải qua HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Hồ sơ đầy đủ</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Rà soát lần cuối <time datetime="2026-06-28">2026-06-28</time>.</p>
 <!-- enrich-end -->

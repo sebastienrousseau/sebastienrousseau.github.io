@@ -20,7 +20,7 @@ id: "https://sebastienrousseau.com/2026-06-28-open-source-finos-cloud-native-cib
 image_alt: "Svartvitt porträtt av Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "öppen källkod i bank, FINOS, Linux Foundation, molnbaserad CIB, Rust i bank, modernisering, Morgan Stanley öppen källkod, JPMorgan öppen källkod, PSD3, öppen finans, FiDA, leveranskedjesäkerhet, SBOM, CycloneDX, SPDX, SLSA, sigstore, CNCF, OSSF, MIT-licens, Apache 2.0, BSD-3-Clause, DORA, Basel III, MCP"
 language: "sv-SE"
 last_reviewed: "2026-06-28"
@@ -178,6 +178,6 @@ För teknikledare är implikationen skarpare. Välj de bärande lagren — ingre
 Öppen källkod är inte längre moderniseringsfrågan. Den är moderniseringssvaret.
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Om författaren"><img alt="Porträtt av Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banktekniker som skriver om tillämpad AI, migration till ISO 20022, postkvantkryptografi för finansiella tjänster och den strukturella omvandlingen av storbetalningar.</span><span class="author-credentials">20+ år tvärs över HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Fullständig profil</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Om författaren"><img alt="Porträtt av Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banktekniker som skriver om tillämpad AI, migration till ISO 20022, postkvantkryptografi för finansiella tjänster och den strukturella omvandlingen av storbetalningar.</span><span class="author-credentials">20+ år tvärs över HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Fullständig profil</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Senast granskad <time datetime="2026-06-28">2026-06-28</time>.</p>
 <!-- enrich-end -->

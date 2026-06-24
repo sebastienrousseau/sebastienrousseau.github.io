@@ -20,7 +20,7 @@ id: "https://sebastienrousseau.com/2026-06-28-open-source-finos-cloud-native-cib
 image_alt: "Schwarz-Weiß-Porträt von Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "Open-Source-Banking, FINOS, Linux Foundation, Cloud-nativer CIB-Stack, Rust im Banking, Modernisierung, Morgan Stanley Open Source, JPMorgan Open Source, PSD3, Open Finance, FiDA, Lieferkettensicherheit, SBOM, CycloneDX, SPDX, SLSA, sigstore, CNCF, OSSF, MIT-Lizenz, Apache 2.0, BSD-3-Clause, DORA, Basel III, MCP"
 language: "de-DE"
 last_reviewed: "2026-06-28"
@@ -178,6 +178,6 @@ Für Engineering-Verantwortliche ist die Implikation schärfer. Wählen Sie die 
 Open Source ist nicht mehr die Modernisierungs-Frage. Open Source ist die Modernisierungs-Antwort.
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Über den Autor"><img alt="Porträt von Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior Banking Technologist; schreibt über angewandte KI, ISO-20022-Migration, Post-Quanten-Kryptografie für Finanzdienstleister und den strukturellen Umbau des Wholesale-Zahlungsverkehrs.</span><span class="author-credentials">20+ Jahre bei HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Vollständiges Profil</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Über den Autor"><img alt="Porträt von Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior Banking Technologist; schreibt über angewandte KI, ISO-20022-Migration, Post-Quanten-Kryptografie für Finanzdienstleister und den strukturellen Umbau des Wholesale-Zahlungsverkehrs.</span><span class="author-credentials">20+ Jahre bei HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Vollständiges Profil</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Zuletzt geprüft <time datetime="2026-06-28">2026-06-28</time>.</p>
 <!-- enrich-end -->

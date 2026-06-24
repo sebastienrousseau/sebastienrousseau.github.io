@@ -20,7 +20,7 @@ id: "https://sebastienrousseau.com/2026-06-28-open-source-finos-cloud-native-cib
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "오픈소스 뱅킹, FINOS, Linux Foundation, 클라우드 네이티브 CIB, Rust 뱅킹, 모더나이제이션, Morgan Stanley 오픈소스, JPMorgan 오픈소스, PSD3, 오픈 파이낸스, FiDA, 공급망 보안, SBOM, CycloneDX, SPDX, SLSA, sigstore, CNCF, OSSF, MIT 라이선스, Apache 2.0, BSD-3-Clause, DORA, Basel III, MCP"
 language: "ko-KR"
 last_reviewed: "2026-06-28"
@@ -178,6 +178,6 @@ Consultancy.uk의 2026년 플랫폼 성장을 위한 오픈 뱅킹 오케스트�
 오픈소스는 더 이상 모더나이제이션 질문이 아닙니다. 모더나이제이션 답입니다.
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="저자 소개"><img alt="Sebastien Rousseau의 초상화" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">응용 AI, ISO 20022 이전, 금융 서비스용 양자내성 암호, 도매 결제의 구조적 변혁에 관해 집필하는 시니어 뱅킹 기술자.</span><span class="author-credentials">HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group에서 20년 이상의 경력. <a href="/about/index.html">전체 프로필</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="저자 소개"><img alt="Sebastien Rousseau의 초상화" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">응용 AI, ISO 20022 이전, 금융 서비스용 양자내성 암호, 도매 결제의 구조적 변혁에 관해 집필하는 시니어 뱅킹 기술자.</span><span class="author-credentials">HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group에서 20년 이상의 경력. <a href="/about/index.html">전체 프로필</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">최종 검토 <time datetime="2026-06-28">2026-06-28</time>.</p>
 <!-- enrich-end -->

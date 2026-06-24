@@ -20,7 +20,7 @@ id: "https://sebastienrousseau.com/2026-06-28-open-source-finos-cloud-native-cib
 image_alt: "Retrato em preto e branco de Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "open source bancário, FINOS, Linux Foundation, CIB cloud-native, Rust em bancos, modernização, Morgan Stanley open source, JPMorgan open source, PSD3, open finance, FiDA, segurança de cadeia de suprimentos, SBOM, CycloneDX, SPDX, SLSA, sigstore, CNCF, OSSF, licença MIT, Apache 2.0, BSD-3-Clause, DORA, Basel III, MCP"
 language: "pt-BR"
 last_reviewed: "2026-06-28"
@@ -178,6 +178,6 @@ Para líderes de engenharia, a implicação é mais afiada. Escolha as camadas q
 Open source não é mais a pergunta da modernização. É a resposta da modernização.
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Sobre o autor"><img alt="Retrato de Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Tecnólogo bancário sênior, escrevendo sobre AI aplicada, migração ISO 20022, criptografia pós-quântica para serviços financeiros e a transformação estrutural dos pagamentos wholesale.</span><span class="author-credentials">Mais de 20 anos em HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Perfil completo</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Sobre o autor"><img alt="Retrato de Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Tecnólogo bancário sênior, escrevendo sobre AI aplicada, migração ISO 20022, criptografia pós-quântica para serviços financeiros e a transformação estrutural dos pagamentos wholesale.</span><span class="author-credentials">Mais de 20 anos em HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Perfil completo</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Última revisão <time datetime="2026-06-28">2026-06-28</time>.</p>
 <!-- enrich-end -->

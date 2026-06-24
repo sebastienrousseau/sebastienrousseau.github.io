@@ -20,7 +20,7 @@ id: "https://sebastienrousseau.com/2026-06-28-open-source-finos-cloud-native-cib
 image_alt: "সেবাস্তিয়ান রুসোর সাদা-কালো প্রতিকৃতি"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "ওপেন সোর্স ব্যাংকিং, FINOS, Linux Foundation, ক্লাউড-নেটিভ CIB, Rust ব্যাংকিং, আধুনিকায়ন, Morgan Stanley ওপেন সোর্স, JPMorgan ওপেন সোর্স, PSD3, ওপেন ফাইন্যান্স, FiDA, সরবরাহ-শৃঙ্খল নিরাপত্তা, SBOM, CycloneDX, SPDX, SLSA, sigstore, CNCF, OSSF, MIT লাইসেন্স, Apache 2.0, BSD-3-Clause, DORA, Basel III, MCP"
 language: "bn-BD"
 last_reviewed: "2026-06-28"
@@ -178,6 +178,6 @@ Consultancy.uk-র প্ল্যাটফর্ম বৃদ্ধির জ�
 ওপেন সোর্স আর আধুনিকায়ন প্রশ্ন নয়। এটি আধুনিকায়ন উত্তর।
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="লেখক সম্পর্কে"><img alt="সেবাস্তিয়ান রুসোর প্রতিকৃতি" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">সিনিয়র ব্যাংকিং প্রযুক্তিবিদ, ফলিত AI, ISO 20022 স্থানান্তর, আর্থিক সেবার জন্য পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি এবং পাইকারি পেমেন্টের কাঠামোগত রূপান্তর বিষয়ে লেখেন।</span><span class="author-credentials">HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group জুড়ে ২০+ বছর। <a href="/about/index.html">পূর্ণ প্রোফাইল</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="লেখক সম্পর্কে"><img alt="সেবাস্তিয়ান রুসোর প্রতিকৃতি" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">সিনিয়র ব্যাংকিং প্রযুক্তিবিদ, ফলিত AI, ISO 20022 স্থানান্তর, আর্থিক সেবার জন্য পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি এবং পাইকারি পেমেন্টের কাঠামোগত রূপান্তর বিষয়ে লেখেন।</span><span class="author-credentials">HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group জুড়ে ২০+ বছর। <a href="/about/index.html">পূর্ণ প্রোফাইল</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">সর্বশেষ পর্যালোচনা <time datetime="2026-06-28">2026-06-28</time>।</p>
 <!-- enrich-end -->

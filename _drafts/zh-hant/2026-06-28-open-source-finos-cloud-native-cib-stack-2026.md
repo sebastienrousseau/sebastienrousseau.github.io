@@ -20,7 +20,7 @@ id: "https://sebastienrousseau.com/2026-06-28-open-source-finos-cloud-native-cib
 image_alt: "Sebastien Rousseau 的黑白肖像"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "開源銀行, FINOS, Linux Foundation, 雲端原生 CIB, Rust 銀行, 現代化, Morgan Stanley 開源, JPMorgan 開源, PSD3, 開放金融, FiDA, 供應鏈安全, SBOM, CycloneDX, SPDX, SLSA, sigstore, CNCF, OSSF, MIT 授權, Apache 2.0, BSD-3-Clause, DORA, Basel III, MCP"
 language: "zh-Hant"
 last_reviewed: "2026-06-28"
@@ -178,6 +178,6 @@ Consultancy.uk 的 2026 年「為平台成長協調開放銀行」展望,從業�
 開源已不再是現代化的「問題」,而是現代化的「答案」。
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="關於作者"><img alt="Sebastien Rousseau 的肖像" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">資深銀行科技人,專注於應用 AI、ISO 20022 遷移、金融服務後量子密碼學,以及批發支付結構性轉型的撰述。</span><span class="author-credentials">20 餘年資歷,橫跨 HSBC 商業與投資銀行、PayPal、Barclays、Shazam、AKQA、Virgin Group。<a href="/about/index.html">完整檔案</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="關於作者"><img alt="Sebastien Rousseau 的肖像" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">資深銀行科技人,專注於應用 AI、ISO 20022 遷移、金融服務後量子密碼學,以及批發支付結構性轉型的撰述。</span><span class="author-credentials">20 餘年資歷,橫跨 HSBC 商業與投資銀行、PayPal、Barclays、Shazam、AKQA、Virgin Group。<a href="/about/index.html">完整檔案</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">最後審閱於 <time datetime="2026-06-28">2026-06-28</time>。</p>
 <!-- enrich-end -->
