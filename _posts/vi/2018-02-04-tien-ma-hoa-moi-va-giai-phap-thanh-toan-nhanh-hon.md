@@ -5,12 +5,12 @@ description: 'Hé lộ Express Transaction Credits — một đồng tiền mã 
 date: 'February 4, 2018'
 language: 'vi-VN'
 locale: 'vi_VN'
-banner: 'https://cloudcdn.pro/stocks/images/etc-banner.webp'
+banner: 'https://cloudcdn.pro/stocks/images/sebastienrousseau.webp'
 banner_alt: 'Một sơ đồ trừu tượng về một mạng thanh toán nhanh'
 keywords: 'tiền mã hoá, thanh toán nhanh, Express Transaction Credits, ETC, blockchain, giao dịch tức thời, Layer 2'
 ---
 
-![Sơ đồ trừu tượng của mạng thanh toán nhanh](https://cloudcdn.pro/stocks/images/etc-banner.webp).class=\"img-fluid clearfix\"
+![Sơ đồ trừu tượng của mạng thanh toán nhanh](https://cloudcdn.pro/stocks/images/sebastienrousseau.webp).class=\"img-fluid clearfix\"
 
 > **TL;DR.** Express Transaction Credits (ETC) là một đề xuất tiền mã hoá tập trung vào tốc độ giao dịch và chi phí thấp, được thiết kế để giải quyết các giới hạn thông lượng của các blockchain công khai thế hệ đầu tiên.
 >

@@ -5,13 +5,13 @@ description: "Rust의 수학적·암호적 상수 라이브러리. ECC, PQC, 암
 date: "November 5, 2023"
 language: "ko-KR"
 locale: "ko_KR"
-banner: "https://cloudcdn.pro/stocks/images/antoine-dautry-_zsL306fDck-unsplash.webp"
+banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp"
 banner_alt: "책상에서 작업 중인 수학 방정식"
 keywords: "암호 상수, 수학, Rust, ECC, RSA, NIST 곡선, PQC, 보안, mathconst"
 last_reviewed: "2026-05-16"
 ---
 
-![책상에서 작업 중인 수학 방정식](https://cloudcdn.pro/stocks/images/antoine-dautry-_zsL306fDck-unsplash.webp).class=\"img-fluid clearfix\"
+![책상에서 작업 중인 수학 방정식](https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp).class=\"img-fluid clearfix\"
 
 ## 통찰
 

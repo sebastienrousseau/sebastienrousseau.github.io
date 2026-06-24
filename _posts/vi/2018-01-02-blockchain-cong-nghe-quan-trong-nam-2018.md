@@ -5,12 +5,12 @@ description: 'Blockchain định hình lại tin cậy số, hợp đồng thôn
 date: 'January 2, 2018'
 language: 'vi-VN'
 locale: 'vi_VN'
-banner: 'https://cloudcdn.pro/stocks/images/blockchain-banner.webp'
+banner: 'https://cloudcdn.pro/stocks/images/digital-nodes.webp'
 banner_alt: 'Một mạng lưới khối được liên kết với nhau tạo thành một sổ cái phân tán'
 keywords: 'blockchain, sổ cái phân tán, hợp đồng thông minh, Ethereum, DLT, mã hoá, tin cậy, tài chính, doanh nghiệp'
 ---
 
-![Mạng lưới khối liên kết tạo thành sổ cái phân tán](https://cloudcdn.pro/stocks/images/blockchain-banner.webp).class=\"img-fluid clearfix\"
+![Mạng lưới khối liên kết tạo thành sổ cái phân tán](https://cloudcdn.pro/stocks/images/digital-nodes.webp).class=\"img-fluid clearfix\"
 
 > **TL;DR.** Blockchain định nghĩa lại tin cậy số, hợp đồng và giá trị. Năm 2018 là năm các sổ cái phân tán bước qua giai đoạn thử nghiệm để bắt đầu định hình hạ tầng tài chính, chuỗi cung ứng và quản trị dữ liệu.
 >

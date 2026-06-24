@@ -5,13 +5,13 @@ description: "Rust の数学的・暗号的定数ライブラリ。ECC、PQC、�
 date: "November 5, 2023"
 language: "ja-JP"
 locale: "ja_JP"
-banner: "https://cloudcdn.pro/stocks/images/antoine-dautry-_zsL306fDck-unsplash.webp"
+banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp"
 banner_alt: "デスクで作業中の数学方程式"
 keywords: "暗号定数, 数学, Rust, ECC, RSA, NIST 曲線, PQC, セキュリティ, mathconst"
 last_reviewed: "2026-05-11"
 ---
 
-![デスクで作業中の数学方程式](https://cloudcdn.pro/stocks/images/antoine-dautry-_zsL306fDck-unsplash.webp).class=\"img-fluid clearfix\"
+![デスクで作業中の数学方程式](https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp).class=\"img-fluid clearfix\"
 
 ## インサイト
 

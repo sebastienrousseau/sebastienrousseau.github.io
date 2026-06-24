@@ -5,13 +5,13 @@ description: "libmake は、高品質な Rust ライブラリを迅速に作成�
 date: "October 26, 2023"
 language: "ja-JP"
 locale: "ja_JP"
-banner: "https://cloudcdn.pro/stocks/images/danial-igdery-FCHlYvR5gJI-unsplash.webp"
+banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp"
 banner_alt: "コードエディタを使用する開発者"
 keywords: "libmake, コードジェネレータ, Rust, Cargo, ライブラリ, テンプレート, 開発者ツール, ベストプラクティス"
 last_reviewed: "2026-05-11"
 ---
 
-![コードエディタを使用する開発者](https://cloudcdn.pro/stocks/images/danial-igdery-FCHlYvR5gJI-unsplash.webp).class=\"img-fluid clearfix\"
+![コードエディタを使用する開発者](https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp).class=\"img-fluid clearfix\"
 
 ## インサイト
 

@@ -5,7 +5,7 @@ description: "С ноября 2026 года SWIFT CBPR+ отклоняет не�
 date: "May 12, 2026"
 language: "ru-RU"
 locale: "ru_RU"
-banner: "https://cloudcdn.pro/stocks/images/iso-20022-pacs008-deadline.webp"
+banner: "https://cloudcdn.pro/stocks/images/getty-images-dqHskSJDfe4.webp"
 banner_alt: "ISO 20022 pacs.008: срок по структурированным адресам"
 keywords: "ISO 20022, pacs.008, структурированный адрес, SWIFT CBPR+, ноябрь 2026, трансграничные платежи, миграция, регуляторный дедлайн"
 ---

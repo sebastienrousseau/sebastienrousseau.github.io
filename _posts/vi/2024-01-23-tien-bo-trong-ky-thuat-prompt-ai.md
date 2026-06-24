@@ -5,12 +5,12 @@ description: 'Kỹ thuật prompt đã trưởng thành thành một ngành kỹ
 date: 'January 23, 2024'
 language: 'vi-VN'
 locale: 'vi_VN'
-banner: 'https://cloudcdn.pro/stocks/images/prompt-engineering-banner.webp'
+banner: 'https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp'
 banner_alt: 'Sơ đồ trừu tượng của các kỹ thuật prompt'
 keywords: 'kỹ thuật prompt, LLM, chain of thought, ReAct, RAG, few-shot, GPT, Claude'
 ---
 
-![Kỹ thuật prompt](https://cloudcdn.pro/stocks/images/prompt-engineering-banner.webp).class=\"img-fluid clearfix\"
+![Kỹ thuật prompt](https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp).class=\"img-fluid clearfix\"
 
 > **TL;DR.** Kỹ thuật prompt đã chuyển từ thử-và-sai sang một ngành kỹ thuật có phương pháp. Các kỹ thuật mới — Chain-of-Thought, ReAct, Retrieval-Augmented Generation — cải thiện đáng kể hiệu quả của LLM cho các tác vụ phức tạp.
 >

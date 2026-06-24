@@ -5,7 +5,7 @@ description: "Le Chat, Mistral'in Avrupalı modellerinin gücünü açıklığa 
 date: "March 04, 2024"
 language: "tr-TR"
 locale: "tr_TR"
-banner: "https://cloudcdn.pro/stocks/images/abstract-digitale-art-of-a-cat.webp"
+banner: "https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp"
 banner_alt: "Le Chat arayüzü"
 keywords: "Le Chat, Mistral AI, konuşma tabanlı yapay zeka, LLM, Avrupa, açık kaynak"
 ---

@@ -5,13 +5,13 @@ description: "pain001은 ISO 20022 pain.001 결제 파일 생성을 자동화하
 date: "September 29, 2023"
 language: "ko-KR"
 locale: "ko_KR"
-banner: "https://cloudcdn.pro/stocks/images/markus-spiske-iar-afB0QQw-unsplash.webp"
+banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp"
 banner_alt: "터미널상의 구조화 데이터 행"
 keywords: "ISO 20022, pain.001, ISO 20022 이행, SWIFT, SEPA, 결제 자동화, Python, 오픈소스, 국경 간 송금"
 last_reviewed: "2026-05-16"
 ---
 
-![터미널상의 구조화 데이터 행](https://cloudcdn.pro/stocks/images/markus-spiske-iar-afB0QQw-unsplash.webp).class=\"img-fluid clearfix\"
+![터미널상의 구조화 데이터 행](https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp).class=\"img-fluid clearfix\"
 
 ## 통찰
 

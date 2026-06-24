@@ -5,13 +5,13 @@ description: "EU AI 법이 세계 AI 규제를 어떻게 형성하고 기업의 
 date: "February 13, 2024"
 language: "ko-KR"
 locale: "ko_KR"
-banner: "https://cloudcdn.pro/stocks/images/guillaume-perigois-0NRkVddA1fw-unsplash.webp"
+banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp"
 banner_alt: "브뤼셀 EU 의회"
 keywords: "EU AI 법, AI 규제, 거버넌스, 위험 분류, 규정 준수, GDPR, AI 감독"
 last_reviewed: "2026-05-16"
 ---
 
-![브뤼셀 EU 의회](https://cloudcdn.pro/stocks/images/guillaume-perigois-0NRkVddA1fw-unsplash.webp).class=\"img-fluid clearfix\"
+![브뤼셀 EU 의회](https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp).class=\"img-fluid clearfix\"
 
 ## 통찰
 

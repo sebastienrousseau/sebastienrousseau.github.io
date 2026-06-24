@@ -5,7 +5,7 @@ description: "Агентная инженерия — переход от LLM-ч
 date: "May 17, 2026"
 language: "ru-RU"
 locale: "ru_RU"
-banner: "https://cloudcdn.pro/stocks/images/agentic-engineering-banks.webp"
+banner: "https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp"
 banner_alt: "Агентная инженерия: план для банков на 2026 год"
 keywords: "агентная инженерия, LLM-агенты, agentic commerce, банковские агенты, MCP, autonomous finance, identity, унит-экономика агентов"
 ---

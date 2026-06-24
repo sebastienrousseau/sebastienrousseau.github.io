@@ -5,7 +5,7 @@ description: "libmake — это open-source генератор кода, сок
 date: "October 26, 2023"
 language: "ru-RU"
 locale: "ru_RU"
-banner: "https://cloudcdn.pro/stocks/images/libmake-banner.webp"
+banner: "https://cloudcdn.pro/stocks/images/rustlogs.webp"
 banner_alt: "Логотип и баннер libmake"
 keywords: "libmake, генерация кода, Rust, шаблоны, инструменты разработчика, open source, продуктивность, CLI"
 ---

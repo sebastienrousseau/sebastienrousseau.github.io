@@ -5,12 +5,12 @@ description: 'Vai trò biến đổi của AI bên trong các thuật toán lư�
 date: 'December 25, 2023'
 language: 'vi-VN'
 locale: 'vi_VN'
-banner: 'https://cloudcdn.pro/stocks/images/quantum-ai-banner.webp'
+banner: 'https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp'
 banner_alt: 'Sự kết hợp trừu tượng của các thuật toán AI và lượng tử'
 keywords: 'AI, lượng tử, thuật toán, tài chính, ngân hàng, định giá, tối ưu hoá, Monte Carlo, QAOA'
 ---
 
-![AI và lượng tử](https://cloudcdn.pro/stocks/images/quantum-ai-banner.webp).class=\"img-fluid clearfix\"
+![AI và lượng tử](https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp).class=\"img-fluid clearfix\"
 
 > **TL;DR.** Sự kết hợp giữa AI và tính toán lượng tử mở ra các phương pháp mới cho các bài toán tài chính cốt lõi — định giá phái sinh, tối ưu hoá danh mục, quản lý rủi ro — vượt xa khả năng của các cách tiếp cận cổ điển hoặc thuần lượng tử.
 >

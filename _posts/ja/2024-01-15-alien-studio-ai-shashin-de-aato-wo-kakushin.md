@@ -5,13 +5,13 @@ description: "Alien Studio が AI 駆動の写真とアートで創造的な表�
 date: "January 15, 2024"
 language: "ja-JP"
 locale: "ja_JP"
-banner: "https://cloudcdn.pro/stocks/images/aron-visuals-bN5XdU-bap4-unsplash.webp"
+banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp"
 banner_alt: "AI が生成した抽象的なアート"
 keywords: "Alien Studio, AI 写真, 拡散モデル, Stable Diffusion, Midjourney, AI アート, クリエイティブ AI"
 last_reviewed: "2026-05-11"
 ---
 
-![AI が生成した抽象的なアート](https://cloudcdn.pro/stocks/images/aron-visuals-bN5XdU-bap4-unsplash.webp).class=\"img-fluid clearfix\"
+![AI が生成した抽象的なアート](https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp).class=\"img-fluid clearfix\"
 
 ## インサイト
 

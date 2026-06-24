@@ -5,7 +5,7 @@ description: "Библиотека математических и крипто�
 date: "November 5, 2023"
 language: "ru-RU"
 locale: "ru_RU"
-banner: "https://cloudcdn.pro/stocks/images/constants-banner.webp"
+banner: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 banner_alt: "Математические и криптографические константы — баннер библиотеки"
 keywords: "константы, Rust, криптография, математика, безопасность, простые числа, π, e, эллиптические кривые"
 ---

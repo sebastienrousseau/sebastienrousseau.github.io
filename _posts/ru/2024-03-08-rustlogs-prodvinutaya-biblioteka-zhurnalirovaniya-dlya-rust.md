@@ -5,7 +5,7 @@ description: "RustLogs — это продвинутая библиотека ж
 date: "March 8, 2024"
 language: "ru-RU"
 locale: "ru_RU"
-banner: "https://cloudcdn.pro/stocks/images/rustlogs-banner.webp"
+banner: "https://cloudcdn.pro/stocks/images/rustlogs.webp"
 banner_alt: "RustLogs — баннер библиотеки журналирования"
 keywords: "RustLogs, журналирование, логирование, Rust, структурированное логирование, OpenTelemetry, наблюдаемость, производительность"
 ---

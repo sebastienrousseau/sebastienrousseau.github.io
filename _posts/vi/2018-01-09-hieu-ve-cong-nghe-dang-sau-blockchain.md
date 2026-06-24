@@ -5,12 +5,12 @@ description: 'Cách blockchain hoạt động: băm mật mã, cây Merkle, cơ 
 date: 'January 9, 2018'
 language: 'vi-VN'
 locale: 'vi_VN'
-banner: 'https://cloudcdn.pro/stocks/images/blockchain-tech.webp'
+banner: 'https://cloudcdn.pro/stocks/images/digital-nodes.webp'
 banner_alt: 'Sơ đồ kỹ thuật của một sổ cái phân tán với các khối được liên kết'
 keywords: 'blockchain, băm mật mã, cây Merkle, đồng thuận, proof-of-work, sổ cái phân tán, mật mã, tài chính'
 ---
 
-![Sơ đồ kỹ thuật của một sổ cái phân tán](https://cloudcdn.pro/stocks/images/blockchain-tech.webp).class=\"img-fluid clearfix\"
+![Sơ đồ kỹ thuật của một sổ cái phân tán](https://cloudcdn.pro/stocks/images/digital-nodes.webp).class=\"img-fluid clearfix\"
 
 > **TL;DR.** Blockchain dựa trên ba khối xây dựng kỹ thuật: hàm băm mật mã, cây Merkle để tổng hợp giao dịch và cơ chế đồng thuận để các nút phân tán đồng ý về trạng thái sổ cái.
 >

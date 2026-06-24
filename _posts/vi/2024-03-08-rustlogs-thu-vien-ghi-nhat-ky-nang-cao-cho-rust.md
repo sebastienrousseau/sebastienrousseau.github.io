@@ -5,12 +5,12 @@ description: 'RustLogs — thư viện ghi nhật ký Rust cho ứng dụng cấ
 date: 'March 8, 2024'
 language: 'vi-VN'
 locale: 'vi_VN'
-banner: 'https://cloudcdn.pro/stocks/images/rustlogs-banner.webp'
+banner: 'https://cloudcdn.pro/stocks/images/rustlogs.webp'
 banner_alt: 'Sơ đồ trừu tượng của một hệ thống ghi nhật ký'
 keywords: 'RustLogs, Rust, ghi nhật ký, có cấu trúc, JSON, hiệu năng, doanh nghiệp, quan sát'
 ---
 
-![Hệ thống ghi nhật ký](https://cloudcdn.pro/stocks/images/rustlogs-banner.webp).class=\"img-fluid clearfix\"
+![Hệ thống ghi nhật ký](https://cloudcdn.pro/stocks/images/rustlogs.webp).class=\"img-fluid clearfix\"
 
 > **TL;DR.** `rustlogs` là thư viện ghi nhật ký Rust được thiết kế cho các ứng dụng cấp doanh nghiệp: ghi nhật ký có cấu trúc, nhiều mức độ ưu tiên, hỗ trợ nhiều kênh và an toàn thread.
 >

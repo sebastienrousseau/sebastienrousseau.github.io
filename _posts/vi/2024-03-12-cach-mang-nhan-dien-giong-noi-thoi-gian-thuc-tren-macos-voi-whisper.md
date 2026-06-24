@@ -5,12 +5,12 @@ description: 'Một hệ thống nhận dạng giọng nói thời gian thực t
 date: 'March 12, 2024'
 language: 'vi-VN'
 locale: 'vi_VN'
-banner: 'https://cloudcdn.pro/stocks/images/whisper-macos-banner.webp'
+banner: 'https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp'
 banner_alt: 'Sóng giọng nói với biểu tượng macOS'
 keywords: 'Whisper, macOS, Metal, Apple Silicon, nhận dạng giọng nói, thời gian thực, OpenAI, M1, M2'
 ---
 
-![Whisper trên macOS](https://cloudcdn.pro/stocks/images/whisper-macos-banner.webp).class=\"img-fluid clearfix\"
+![Whisper trên macOS](https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp).class=\"img-fluid clearfix\"
 
 > **TL;DR.** Một hệ thống phiên âm giọng nói thành văn bản thời gian thực tận dụng OpenAI Whisper và tăng tốc GPU Metal Performance Shaders trên macOS để đạt được độ trễ dưới một giây, 8-12x tốc độ thời gian thực trên M1 Max.
 >

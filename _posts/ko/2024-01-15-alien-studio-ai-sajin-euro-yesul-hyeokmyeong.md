@@ -5,13 +5,13 @@ description: "Alien Studio가 AI 기반 사진과 예술로 창의적 표현을 
 date: "January 15, 2024"
 language: "ko-KR"
 locale: "ko_KR"
-banner: "https://cloudcdn.pro/stocks/images/aron-visuals-bN5XdU-bap4-unsplash.webp"
+banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp"
 banner_alt: "AI가 생성한 추상적 예술"
 keywords: "Alien Studio, AI 사진, 확산 모델, Stable Diffusion, Midjourney, AI 아트, 크리에이티브 AI"
 last_reviewed: "2026-05-16"
 ---
 
-![AI가 생성한 추상적 예술](https://cloudcdn.pro/stocks/images/aron-visuals-bN5XdU-bap4-unsplash.webp).class=\"img-fluid clearfix\"
+![AI가 생성한 추상적 예술](https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp).class=\"img-fluid clearfix\"
 
 ## 통찰
 

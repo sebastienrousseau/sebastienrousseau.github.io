@@ -5,12 +5,12 @@ description: 'AI biến đổi từng giai đoạn của quảng cáo — sáng 
 date: 'February 8, 2024'
 language: 'vi-VN'
 locale: 'vi_VN'
-banner: 'https://cloudcdn.pro/stocks/images/ai-advertising-banner.webp'
+banner: 'https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp'
 banner_alt: 'Sơ đồ trừu tượng của marketing AI'
 keywords: 'AI, quảng cáo, marketing, cá nhân hoá, sáng tạo, nhắm mục tiêu, đo lường, marketing tự động'
 ---
 
-![Quảng cáo AI](https://cloudcdn.pro/stocks/images/ai-advertising-banner.webp).class=\"img-fluid clearfix\"
+![Quảng cáo AI](https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp).class=\"img-fluid clearfix\"
 
 > **TL;DR.** AI đang biến đổi từng giai đoạn của quảng cáo: sáng tạo (mô hình tạo sinh), nhắm mục tiêu (dự đoán hành vi), tối ưu hoá (đặt giá thầu thời gian thực) và đo lường (phân bổ đa kênh). Marketers ngày nay đang điều phối các pipeline AI thay vì các chiến dịch tĩnh.
 >

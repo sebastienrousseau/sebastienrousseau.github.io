@@ -5,12 +5,12 @@ description: 'Kỹ thuật agentic — sử dụng các tác tử AI tự chủ 
 date: 'May 17, 2026'
 language: 'vi-VN'
 locale: 'vi_VN'
-banner: 'https://cloudcdn.pro/stocks/images/agentic-banking-banner.webp'
+banner: 'https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp'
 banner_alt: 'Sơ đồ các tác tử AI làm việc trong hạ tầng ngân hàng'
 keywords: 'tác tử AI, kỹ thuật agentic, ngân hàng, tự động hoá, Claude, GPT, MCP, hành động, 2026'
 ---
 
-![Kỹ thuật agentic trong ngân hàng](https://cloudcdn.pro/stocks/images/agentic-banking-banner.webp).class=\"img-fluid clearfix\"
+![Kỹ thuật agentic trong ngân hàng](https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp).class=\"img-fluid clearfix\"
 
 > **TL;DR.** Kỹ thuật agentic — sử dụng các tác tử AI tự chủ để hoàn thành các tác vụ phức tạp nhiều bước — đã chuyển từ trình diễn ý tưởng năm 2024 sang triển khai sản xuất năm 2026. Bản thiết kế này phác hoạ cách các đội kỹ thuật ngân hàng tích hợp các tác tử một cách an toàn và có quản trị.
 >

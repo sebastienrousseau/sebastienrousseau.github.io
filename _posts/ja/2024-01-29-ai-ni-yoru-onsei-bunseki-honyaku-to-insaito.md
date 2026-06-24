@@ -5,13 +5,13 @@ description: "OpenAI Whisper、リアルタイム音声テキスト変換、多�
 date: "January 29, 2024"
 language: "ja-JP"
 locale: "ja_JP"
-banner: "https://cloudcdn.pro/stocks/images/icons8-team-r-enAOPw8Rs-unsplash.webp"
+banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp"
 banner_alt: "波形を持つマイク"
 keywords: "AI, 音声認識, 音声テキスト変換, Whisper, 翻訳, 多言語, オーディオインサイト"
 last_reviewed: "2026-05-11"
 ---
 
-![波形を持つマイク](https://cloudcdn.pro/stocks/images/icons8-team-r-enAOPw8Rs-unsplash.webp).class=\"img-fluid clearfix\"
+![波形を持つマイク](https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp).class=\"img-fluid clearfix\"
 
 ## インサイト
 

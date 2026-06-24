@@ -5,7 +5,7 @@ description: "Структурная угроза, которую квантов
 date: "September 1, 2025"
 language: "ru-RU"
 locale: "ru_RU"
-banner: "https://cloudcdn.pro/stocks/images/quantum-safe-payments.webp"
+banner: "https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp"
 banner_alt: "Квантово-устойчивые платежи: white paper EPAA"
 keywords: "квантово-устойчивые платежи, EPAA, PQC миграция, white paper, harvest-now-decrypt-later, оптовые платежи, регуляторы, NIST"
 ---

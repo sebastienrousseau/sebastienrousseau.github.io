@@ -5,13 +5,13 @@ description: "完全準同型暗号が銀行・金融サービスにおけるデ
 date: "March 25, 2024"
 language: "ja-JP"
 locale: "ja_JP"
-banner: "https://cloudcdn.pro/stocks/images/markus-spiske-iar-afB0QQw-unsplash.webp"
+banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp"
 banner_alt: "暗号化されたデータと量子コンピュータ"
 keywords: "完全準同型暗号, FHE, 量子安全, 銀行, プライバシー, クラウド計算, ML-FHE"
 last_reviewed: "2026-05-11"
 ---
 
-![暗号化されたデータと量子コンピュータ](https://cloudcdn.pro/stocks/images/markus-spiske-iar-afB0QQw-unsplash.webp).class=\"img-fluid clearfix\"
+![暗号化されたデータと量子コンピュータ](https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp).class=\"img-fluid clearfix\"
 
 ## インサイト
 

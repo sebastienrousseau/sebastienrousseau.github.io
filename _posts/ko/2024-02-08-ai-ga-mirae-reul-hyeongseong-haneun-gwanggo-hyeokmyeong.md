@@ -5,13 +5,13 @@ description: "AI가 광고의 미래를 형성하는 방식과, 업계가 마주
 date: "February 8, 2024"
 language: "ko-KR"
 locale: "ko_KR"
-banner: "https://cloudcdn.pro/stocks/images/joshua-earle-yEfPDcKR1uM-unsplash.webp"
+banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp"
 banner_alt: "AI와 광고를 표현한 비주얼"
 keywords: "AI, 광고, 개인화, 생성 AI, 윤리, 프라이버시, 딥페이크"
 last_reviewed: "2026-05-16"
 ---
 
-![AI와 광고를 표현한 비주얼](https://cloudcdn.pro/stocks/images/joshua-earle-yEfPDcKR1uM-unsplash.webp).class=\"img-fluid clearfix\"
+![AI와 광고를 표현한 비주얼](https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp).class=\"img-fluid clearfix\"
 
 ## 통찰
 

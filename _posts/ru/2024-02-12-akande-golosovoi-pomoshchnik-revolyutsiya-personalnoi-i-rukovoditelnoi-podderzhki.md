@@ -5,7 +5,7 @@ description: "Akande — продвинутый голосовой помощн�
 date: "February 12, 2024"
 language: "ru-RU"
 locale: "ru_RU"
-banner: "https://cloudcdn.pro/stocks/images/akande-banner.webp"
+banner: "https://cloudcdn.pro/stocks/images/rustlogs.webp"
 banner_alt: "Akande — баннер голосового ассистента"
 keywords: "Akande, голосовой помощник, GPT, ИИ-ассистент, OpenAI, продуктивность, кэширование, PDF-суммаризация, open source"
 ---

@@ -5,7 +5,7 @@ description: "hsh — это Rust-библиотека, реализующая �
 date: "October 16, 2023"
 language: "ru-RU"
 locale: "ru_RU"
-banner: "https://cloudcdn.pro/stocks/images/hsh-banner.webp"
+banner: "https://cloudcdn.pro/stocks/images/rustlogs.webp"
 banner_alt: "Криптографическая визуализация: хеш-функции в квантовую эпоху"
 keywords: "hsh, хеширование, дайджест, Rust, постквантовая криптография, аутентификация, безопасность паролей, SHA, BLAKE2"
 ---
