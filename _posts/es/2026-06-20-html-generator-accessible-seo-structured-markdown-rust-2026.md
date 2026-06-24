@@ -6,7 +6,7 @@ author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "Geometría arquitectónica bajo luz estructurada — símbolo del papel de HTML Generator como pipeline Markdown a HTML controlado por compilador para infraestructura de publicación accesible, lista para SEO y en sandbox"
 banner_height: "1597"
 banner_width: "2584"
-banner: "https://cloudcdn.pro/api/transform?url=/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp&w=1200&format=webp&q=80"
+banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash-1200.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
@@ -20,7 +20,7 @@ id: "https://sebastienrousseau.com/2026-06-20-html-generator-accessible-seo-stru
 image_alt: "Retrato en blanco y negro de Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "html-generator, Rust Markdown a HTML, accesibilidad como código, WCAG 2.1 AA, HTML listo para SEO, JSON-LD, MathML, Mermaid, WebAssembly, EAA, DORA, ADA Title III, publicación accesible, análisis en sandbox, código abierto"
 language: "es-ES"
 last_reviewed: "2026-06-20"
@@ -282,6 +282,6 @@ Constructores de sitios estáticos, equipos de documentación, redactores técni
 - GitHub, 2026. [Repositorio HTML Generator ⧉](https://github.com/sebastienrousseau/html-generator "HTML Generator open-source repository").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Sobre el autor"><img alt="Retrato de Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Tecnólogo bancario senior que escribe sobre IA aplicada, infraestructura de pagos, dinero tokenizado, ISO 20022, seguridad poscuántica, servicios financieros nativo en la nube, infraestructura de código abierto y mercados digitales regulados.</span><span class="author-credentials">Más de 20 años en HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Perfil completo</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Sobre el autor"><img alt="Retrato de Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Tecnólogo bancario senior que escribe sobre IA aplicada, infraestructura de pagos, dinero tokenizado, ISO 20022, seguridad poscuántica, servicios financieros nativo en la nube, infraestructura de código abierto y mercados digitales regulados.</span><span class="author-credentials">Más de 20 años en HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Perfil completo</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Última revisión <time datetime="2026-06-20">2026-06-20</time>.</p>
 <!-- enrich-end -->

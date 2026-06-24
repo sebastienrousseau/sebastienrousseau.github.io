@@ -6,7 +6,7 @@ author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "Architektonická geometrie pod strukturovaným světlem — symbolizující roli HTML Generator jako kompilátorem řízeného pipeline pro převod Markdown na HTML v přístupné, SEO-ready a sandboxované publikační infrastruktuře"
 banner_height: "1597"
 banner_width: "2584"
-banner: "https://cloudcdn.pro/api/transform?url=/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp&w=1200&format=webp&q=80"
+banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash-1200.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
@@ -20,7 +20,7 @@ id: "https://sebastienrousseau.com/2026-06-20-html-generator-accessible-seo-stru
 image_alt: "Černobílý portrét Sebastiena Rousseaua"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "html-generator, Rust Markdown na HTML, přístupnost jako kód, WCAG 2.1 AA, SEO-ready HTML, JSON-LD, MathML, Mermaid, WebAssembly, EAA, DORA, ADA Title III, přístupné publikování, sandboxované parsování, open source"
 language: "cs-CZ"
 last_reviewed: "2026-06-20"
@@ -282,6 +282,6 @@ Tvůrcům statických webů, dokumentačním týmům, technickým autorům, Rust
 - GitHub, 2026. [Repozitář HTML Generator ⧉](https://github.com/sebastienrousseau/html-generator "Open-source repozitář HTML Generator").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="O autorovi"><img alt="Portrét Sebastiena Rousseaua" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Vedoucí bankovní technolog píšící o aplikované AI, platební infrastruktuře, tokenizovaných penězích, ISO 20022, post-kvantové bezpečnosti, cloud-nativních finančních službách, open-source infrastruktuře a regulovaných digitálních trzích.</span><span class="author-credentials">20+ let napříč HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Úplný profil</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="O autorovi"><img alt="Portrét Sebastiena Rousseaua" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Vedoucí bankovní technolog píšící o aplikované AI, platební infrastruktuře, tokenizovaných penězích, ISO 20022, post-kvantové bezpečnosti, cloud-nativních finančních službách, open-source infrastruktuře a regulovaných digitálních trzích.</span><span class="author-credentials">20+ let napříč HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Úplný profil</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Naposledy zkontrolováno <time datetime="2026-06-20">2026-06-20</time>.</p>
 <!-- enrich-end -->

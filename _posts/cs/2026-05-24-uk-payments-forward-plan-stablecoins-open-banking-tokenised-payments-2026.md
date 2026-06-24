@@ -3,7 +3,7 @@ author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "Diagram modernizace platebního systému ve Spojeném království zobrazující stablecoiny, tokenizované vklady, open banking, AI agenty, regulaci FCA, konsolidaci PSR a velkoobchodní digitální trhy"
 banner_height: "571"
 banner_width: "1425"
-banner: "https://cloudcdn.pro/api/transform?url=/stocks/images/riccardo-oliva-C5DLhUkEWfM.webp&w=1200&format=webp&q=80"
+banner: "https://cloudcdn.pro/stocks/images/riccardo-oliva-C5DLhUkEWfM-1200.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/cs/2026-05-24-uk-payments-forward-plan-stable
 image_alt: "Černobílý portrét Sebastiena Rousseaua"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "UK Payments Forward Plan 2026, stablecoiny UK, tokenizované vklady UK, open banking FCA, konsolidace PSR FCA, agentní platby UK, Wholesale Digital Markets Champion, Chris Woolard, regulace platebních služeb"
 language: "cs"
 excerpt: "UK Payments Forward Plan a balíček politik z dubna 2026 vytyčují jednotný regulační perimetr pro tradiční platby, stablecoiny, tokenizované vklady, open banking a agentní platby. Strategická otázka pro britské banky se posunula od „který produkt spustit\" k „kterou architekturu orchestrovat\" — propojit politiku, produkt, data, volbu railu, rizikové kontroly a důkazy do jednoho provozního modelu, který regulátoři dokáží dohlížet a klienti používat. Vítězí instituce, které k rozhodování o real-time fraudu, likviditě, compliance, vypořádání a provozním riziku přistupují jako k jednomu návrhovému problému."
@@ -201,6 +201,6 @@ Banka by měla začít s workflow, kde existuje měřitelná hodnota — rychlej
 - Global Government Finance, (2026). [UK wholesale digital markets champion ⧉](https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/ "UK wholesale digital markets champion").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="O autorovi"><img alt="Portrét Sebastiena Rousseaua" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Seniorní bankovní technolog, který se věnuje aplikované AI, platební infrastruktuře, tokenizovaným penězům, ISO 20022, postkvantové bezpečnosti, cloud-native finančním službám a regulovaným digitálním trhům.</span><span class="author-credentials">Více než 20 let zkušeností napříč HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA a Virgin Group. <a href="/about/index.html">Úplný profil</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="O autorovi"><img alt="Portrét Sebastiena Rousseaua" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Seniorní bankovní technolog, který se věnuje aplikované AI, platební infrastruktuře, tokenizovaným penězům, ISO 20022, postkvantové bezpečnosti, cloud-native finančním službám a regulovaným digitálním trhům.</span><span class="author-credentials">Více než 20 let zkušeností napříč HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA a Virgin Group. <a href="/about/index.html">Úplný profil</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Naposledy zkontrolováno <time datetime="2026-05-24">2026-05-24</time>.</p>
 <!-- enrich-end -->

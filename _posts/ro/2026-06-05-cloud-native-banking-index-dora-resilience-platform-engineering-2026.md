@@ -3,7 +3,7 @@ author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "Tipar de placă cu circuite care se transformă într-o panoramă urbană — registrul vizual ales pentru cloud-native banking: primitivele de ingineria platformei integrate în țesătura operațională a băncii."
 banner_height: "571"
 banner_width: "1425"
-banner: "https://cloudcdn.pro/api/transform?url=/stocks/images/quang-nguyen-vinh-2649403.webp&w=1600&format=webp&q=85"
+banner: "https://cloudcdn.pro/stocks/images/quang-nguyen-vinh-2649403-1920.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/ro/2026-06-05-cloud-native-banking-index-dora
 image_alt: "Portret alb-negru al lui Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "cloud native banking 2026, DORA bănci, risc de concentrare cloud, ingineria platformei bănci, risc terți TIC, strategie de ieșire cloud, cloud suveran"
 language: "ro-RO"
 last_reviewed: "2026-06-05"
@@ -282,6 +282,6 @@ Testare de execuție de ieșire end-to-end anuală per CIF dependent de un CTPP 
 - Cloud Native Computing Foundation, (2019). [OpenTelemetry ⧉](https://opentelemetry.io/ "OpenTelemetry").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Despre autor"><img alt="Portretul lui Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Tehnolog bancar senior care scrie despre AI aplicat, infrastructura plăților, banii tokenizați, ISO 20022, securitatea post-cuantică, serviciile financiare cloud-native și piețele digitale reglementate.</span><span class="author-credentials">Peste 20 de ani la HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profil complet</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Despre autor"><img alt="Portretul lui Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Tehnolog bancar senior care scrie despre AI aplicat, infrastructura plăților, banii tokenizați, ISO 20022, securitatea post-cuantică, serviciile financiare cloud-native și piețele digitale reglementate.</span><span class="author-credentials">Peste 20 de ani la HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profil complet</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Ultima revizuire <time datetime="2026-06-05">2026-06-05</time>.</p>
 <!-- enrich-end -->

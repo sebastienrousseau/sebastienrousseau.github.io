@@ -19,7 +19,7 @@ id: "https://sebastienrousseau.com/id/2026-05-19-global-wholesale-payments-econo
 image_alt: "Potret Hitam Putih Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "pembayaran wholesale 2026, ekonomi pembayaran global, ISO 20022, RTGS, pembayaran lintas batas, BIS CPMI, FSB, Swift CBPR+, peta jalan G20, real time gross settlement, Project Agorá, Project Mandala, Project Nexus, interoperabilitas pembayaran, correspondent banking, fragmentasi pembayaran, CBDC wholesale"
 language: "id"
 last_reviewed: "2026-05-19"

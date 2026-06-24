@@ -19,7 +19,7 @@ id: "https://sebastienrousseau.com/pl/2026-05-19-global-wholesale-payments-econo
 image_alt: "Czarno-biały portret Sebastiena Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "płatności hurtowe 2026, ekonomia płatności globalnych, ISO 20022, RTGS, płatności transgraniczne, BIS CPMI, FSB, Swift CBPR+, mapa drogowa G20, rozrachunek brutto w czasie rzeczywistym, Project Agorá, Project Mandala, Project Nexus, interoperacyjność płatności, bankowość korespondencka, fragmentacja płatności, hurtowy CBDC"
 language: "pl"
 last_reviewed: "2026-05-19"

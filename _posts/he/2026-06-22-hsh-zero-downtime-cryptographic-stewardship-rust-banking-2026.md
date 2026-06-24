@@ -1,0 +1,341 @@
+---
+# Front Matter (YAML)
+author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
+banner_alt: "תקריב של טרמינל מפתח המגלגל פלט מהדר Rust — המשמעת הגלויה של תשתית קריפטוגרפית בטוחת-זיכרון וניתנת-לביקורת מתחת לנחלת אימות בנקאית ארגונית"
+banner_height: "1597"
+banner_width: "2584"
+banner: "https://cloudcdn.pro/stocks/images/rustlogs.webp"
+cdn: "https://cloudcdn.pro"
+charset: "UTF-8"
+cname: "sebastienrousseau.com"
+copyright: "© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved."
+date: "22 ביוני 2026"
+description: "hsh הוא מסגרת קריפטוגרפית בטהור-Rust המאפשרת לבנקים בדרג-1 להגר hashes מורשתיים של סיסמאות ל-Argon2id ללא השבתה, עם peppering מבוסס HSM וביטול פגיעויות זיכרון ב-FFI מבוסס-C, ועונה על דרישות החוסן של DORA."
+format-detection: "telephone=no"
+hreflang: "he"
+icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
+id: "https://sebastienrousseau.com/2026-06-22-hsh-zero-downtime-cryptographic-stewardship-rust-banking-2026"
+image_alt: "Black and White Portrait of Sebastien Rousseau"
+image_height: "162"
+image_width: "162"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
+keywords: "hsh, קריפטוגרפיה ב-Rust, hashing של סיסמאות, Argon2id, אבטחה בנקאית, נעילת HSM, תאימות DORA, Basel III, הגירה ללא השבתה, בטיחות זיכרון, PBKDF2, scrypt, התאוששות סייבר"
+language: "he-IL"
+last_reviewed: "2026-06-22"
+layout: "report"
+locale: "he_IL"
+logo_alt: "Logo for Sebastien Rousseau"
+logo_height: "44"
+logo_width: "44"
+logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
+measurementID: "G-169G4ET5HQ"
+name: "Sebastien Rousseau"
+permalink: "https://sebastienrousseau.com/2026-06-22-hsh-zero-downtime-cryptographic-stewardship-rust-banking-2026"
+rating: "general"
+referrer: "no-referrer"
+robots: "index, follow"
+schema: "FAQPage, Article"
+seo_title: "hsh: ניהול קריפטוגרפי ללא השבתה ב-Rust לבנקאות"
+short_name: "sebastienrousseau"
+subtitle: "כיצד מסגרת קריפטוגרפית בטהור-Rust מאפשרת לבנקים לשדרג חלקית סיסמאות מורשתיות ל-Argon2id עם נעילות HSM — ומה המשמעות לתאימות DORA ו-Basel III."
+tags: "hsh, Rust, בנקאות, קריפטוגרפיה, Argon2id, HSM, DORA, Basel-III, אבטחה, קוד פתוח, חוסן תפעולי"
+theme-color: "0, 83, 191"
+title: "אבטחת ניהול סיסמאות בבנקאות ארגונית: Hashing רב-אלגוריתמי ושדרוגים עם hsh"
+url: "https://sebastienrousseau.com/2026-06-22-hsh-zero-downtime-cryptographic-stewardship-rust-banking-2026"
+viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
+
+# RSS
+atom_link: "https://sebastienrousseau.com/2026-06-22-hsh-zero-downtime-cryptographic-stewardship-rust-banking-2026/rss.xml"
+category: "Technology"
+generator: "Static Site Generator (SSG) (version 0.0.40)"
+item_description: "hsh הוא מסגרת קריפטוגרפית בטהור-Rust המאפשרת לבנקים בדרג-1 להגר hashes מורשתיים של סיסמאות ל-Argon2id ללא השבתה, עם peppering מבוסס HSM וביטול פגיעויות זיכרון ב-FFI מבוסס-C, ועונה על דרישות החוסן של DORA."
+item_pub_date: "Mon, 22 Jun 2026 07:07:07 +0000"
+item_title: "אבטחת ניהול סיסמאות בבנקאות ארגונית: Hashing רב-אלגוריתמי ושדרוגים עם hsh"
+pub_date: "Mon, 22 Jun 2026 07:07:07 +0000"
+type: "article"
+
+# Twitter Card
+twitter_card: "summary_large_image"
+twitter_creator: "@wwdseb"
+twitter_description: "hsh מאפשר לבנקים בדרג-1 להגר hashes מורשתיים של סיסמאות ל-Argon2id ללא השבתה, עם נעילות HSM ובטיחות-זיכרון של Rust."
+twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
+twitter_title: "hsh: ניהול קריפטוגרפי ללא השבתה ב-Rust"
+twitter_url: "https://sebastienrousseau.com/2026-06-22-hsh-zero-downtime-cryptographic-stewardship-rust-banking-2026"
+
+excerpt: "בעידן של פיענוח מואץ-GPU ודרישות DORA, ריקבון קריפטוגרפי הוא סיכון מערכתי. כל hash מורשתי של PBKDF2 או scrypt השוכן במסד נתונים בנקאי הוא ספירה לאחור לפריצה. hsh מציג שדרוגים בטוחי-זיכרון וללא השבתה..."
+
+# Added by fix_hsh_frontmatter.py (template completeness)
+apple_mobile_web_app_orientations: "portrait"
+apple_touch_icon_sizes: "192x192"
+apple-mobile-web-app-capable: "yes"
+apple-mobile-web-app-status-bar-inset: "black"
+apple-mobile-web-app-status-bar-style: "black-translucent"
+apple-touch-fullscreen: "yes"
+author_location: "London, United Kingdom"
+author_twitter: "@wwdseb"
+author_website: "https://sebastienrousseau.com"
+docs: https://validator.w3.org/feed/docs/rss2.html
+item_guid: "https://sebastienrousseau.com/2026-06-22-hsh-zero-downtime-cryptographic-stewardship-rust-banking-2026/rss.xml"
+item_link: "https://sebastienrousseau.com/2026-06-22-hsh-zero-downtime-cryptographic-stewardship-rust-banking-2026/rss.xml"
+last_build_date: "Mon, 22 Jun 2026 06:06:06 +0000"
+managing_editor: "contact@sebastienrousseau.com (Sebastien Rousseau)"
+menu: "active"
+msapplication-navbutton-color: "0, 83, 191"
+site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
+site_last_updated: "2023-07-05"
+site_software: "Static Site Generator, Rust"
+site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
+ttl: "60"
+twitter_site: "@wwdseb"
+webmaster: "contact@sebastienrousseau.com"
+apple-mobile-web-app-title: "hsh: Rust password hashing"
+thanks: "תודה שקראת!"
+twitter_image_alt: "Black and White Portrait of Sebastien Rousseau"
+---
+
+# אבטחת ניהול סיסמאות בבנקאות ארגונית: Hashing רב-אלגוריתמי ושדרוגים עם hsh
+
+<!-- lead-start: manual -->
+<aside class="post-lead" aria-label="Article summary">
+<p class="post-lead-tldr"><strong>TL;DR.</strong> <a href="https://github.com/sebastienrousseau/hsh">hsh</a> היא מסגרת קריפטוגרפית בקוד פתוח ובטהור-Rust המאפשרת לבנקים בדרג-1 להגר hashes מורשתיים של סיסמאות לתקנים מודרניים כמו Argon2id ללא הפסקת שירות. על ידי שילוב peppering מגובה-HSM ואכיפת בטיחות-זיכרון קפדנית ללא עטיפות FFI מבוססות-C, היא סוגרת את פרצות הריקבון הקריפטוגרפי המאיימות ישירות על תאימות DORA ו-Basel III.</p>
+<p class="post-lead-heading"><strong>תובנות מפתח</strong></p>
+<ul class="post-lead-takeaways">
+  <li><strong>בעיית הריקבון הקריפטוגרפי.</strong> אלגוריתמים מורשתיים כמו PBKDF2 נחלשים אקספוננציאלית ככל שהחומרה מאיצה, ומרחיבים את משטח התקיפה למתקפות מילוי-אישורים ולקמפיינים אופליין של brute-force.</li>
+  <li><strong>הגירה ללא השבתה.</strong> תבנית <code>verify_and_upgrade</code> מבצעת rehash שקוף לאישורי משתמשים במהלך אירועי כניסה רגילים, ומבטלת את הסיכון התפעולי של הגירות מסד נתונים בכמות גדולה.</li>
+  <li><strong>נעילת חומרה ו-peppering.</strong> Hashes נעטפים באמצעות Hardware Security Modules (HSMs) או ארכיטקטורות KMS ענניות, ומבטיחים שפריצה למסד נתונים לבדה לא תניב סיסמאות מועמדות הניתנות לפיצוח.</li>
+  <li><strong>בטיחות-זיכרון כקו בסיס רגולטורי.</strong> נכתבה מחדש כולה ב-Rust בטוח ונאכפת באמצעות הקפדה קפדנית על תלויות, hsh מסלקת את סיכוני גלישת החוצץ ושרשרת האספקה הטבועים בספריות קריפטוגרפיות מורשתיות מבוססות-C.</li>
+</ul>
+<p class="post-lead-related"><strong>קריאה קשורה:</strong> <a href="https://sebastienrousseau.com/2026-06-20-http-handle-zero-dependency-edge-ingress-banking-rust-2026">http-handle: כניסת קצה בעלת ביצועים גבוהים וללא תלויות לבנקאות ב-2026</a>, <a href="https://sebastienrousseau.com/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/index.html">מדד הגזברות האוטונומית ב-2026</a>.</p>
+</aside>
+<!-- lead-end -->
+
+> **תקציר מנהלים.** אימות בנקאי שנבנה מול מודל איום של 2018 אינו עוד מתאים לתכליתו תחת המשטר הרגולטורי של 2026. פיצוח מואץ-GPU, צפיפות ASIC, ואופק הפוסט-קוונטי המתקרב קרסו את שולי הבטיחות של PBKDF2 ושל scrypt עם פרמטרים מוקדמים; DORA סעיף 5 הפך את הריקבון הזה לאחריות שניתן לתבוע ממנה את הדירקטוריון. hsh, מסגרת בקוד פתוח בטהור-Rust, מטפלת בבעיה בשלוש שכבות במקביל: dispatcher של `verify_and_upgrade` שמבצע rehash לאישור מאוחסן לפרמטרים נוכחיים של Argon2id בכל כניסה מוצלחת ללא חלון תחזוקה; שכבת peppering נעולה-HSM או KMS שמבטיחה שפריצה למסד נתונים לבדה לא תניב דבר הניתן-לפיצוח; ושרשרת אספקה בטוחת-זיכרון שמסלקת את משטח התקיפה של FFI הטבוע בספריות קריפטוגרפיות מגובות-C. התוצאה היא תשתית העונה על DORA, על משמעת הסיכון התפעולי של Basel III, על אחריות המנהל הבכיר של SM&CR, ועל אופק ההגירה הפוסט-קוונטי של NIST IR 8547 — ללא תוכנית האיפוס ההמוני שנדרשה היסטורית כדי לשדרג נחלת אימות.
+
+מרבית האימות בבנקאות הארגונית עדיין נשען על שכבת סיסמה שהוקשחה למודל איום של 2018. החומרה השוברת אותה התקדמה. ככל שחוות GPU מתרחבות ומחשבים קוונטיים רלוונטיים קריפטוגרפית (CRQCs) מתקרבים, hashing מורשתי — PBKDF2, scrypt מוקדם — מתפורר עם כל שעת חישוב שהתוקפים מוציאים על תור הפיצוח האופליין. הריקבון שקט: שום דבר במסד הנתונים הייצורי לא מספר לך שה-hash שהיה חזק אתמול אינו כזה היום.
+
+תחת [Digital Operational Resilience Act (DORA)](https://eur-lex.europa.eu/eli/reg/2022/2554/oj "תקנה (EU) 2022/2554 — חוק החוסן התפעולי הדיגיטלי"), השארת נכסים קריפטוגרפיים מורשתיים, שלא הוחלפו, בייצור אינה עוד חוב טכני. זוהי אחריות רגולטורית מוגדרת.
+
+[hsh](https://github.com/sebastienrousseau/hsh "hsh — מסגרת hashing של סיסמאות בטהור-Rust") סוגרת את הפער. מסגרת בטהור-Rust, היא מנהלת מספר פורמטי hash זה לצד זה ומשדרגת אישורים חלשים תוך כדי תנועה במהלך מפגשי כניסה פעילים. תשתית האימות מתיישרת עם דרישות החוסן של 2026 ללא חלון תחזוקה, ללא איפוס כפוי וללא שנייה אחת של השבתה.
+
+## 01. בעיית הריקבון הקריפטוגרפי בבנקאות
+
+כדי להבין את הצורך במסגרת כמו hsh, יש להבין את מחזור החיים של hash סיסמה. אלגוריתמים אינם מתיישנים בחן; הם מתפוררים יחסית לחומרה הזמינה לשבירתם.
+
+**פער ההאצה של ASIC/GPU.** אלגוריתמים כמו PBKDF2 תוכננו להיות יקרים חישובית עבור CPUs. כיום, תוקפים משתמשים ב-GPUs מקביליים במידה רבה לביצוע מתקפות מילון אופליין. hash מורשתי שנוצר ב-2018 חלש בהרבה כנגד יריב של 2026.
+
+**סיכון הגירת ה-big-bang.** כאשר CISO מחליט לשדרג מ-PBKDF2 לאלגוריתם קשה-זיכרון כמו Argon2id, הוא אינו יכול להפוך את ה-hashes כדי להצפינם מחדש. פתרונות מסורתיים — אכיפת איפוס סיסמה למיליוני משתמשים — גורמים לחיכוך עצום עם הלקוחות ולסיכון תפעולי.
+
+**שרשרת האספקה של ספריות C.** היסטורית, middleware בנקאי הסתמך על ספריות כמו `argonautica` או כריכות C גולמיות עבור hashing. ספריות אלה נושאות סיכון נסתר של שרשרת אספקה: גלישת חוצץ-זיכרון יחידה במודול האימות עלולה להוביל לביצוע קוד מרחוק (RCE) בשכבה המורשתית ביותר של הערימה הבנקאית.
+
+### השוואת אלגוריתמים — עמידות חומרה ומשטח כוונון
+
+שלושת האלגוריתמים שבנק נתקל בהם באופן מציאותי בקורפוס הגירה נבדלים פחות בבחירת הפרימיטיב הקריפטוגרפי ויותר באופן שבו הם מתיישנים תחת לחץ חומרה. הטבלה שלהלן מסכמת את התנוחה המעשית.
+
+| Algorithm | Memory-hard | GPU / ASIC resistance | Tuning surface | 2026 status |
+| ---- | ---- | ---- | ---- | ---- |
+| **PBKDF2** | No | Low — vectorises on GPU; sub-millisecond per guess on commodity hardware. | Iteration count only. | Legacy. Acceptable only as a verify-side fallback during migration. |
+| **scrypt** | Yes (modest) | Medium — memory cost defeats simple GPU farms; ASIC-amortisable at scale. | `N` (CPU/memory), `r` (block size), `p` (parallelism). | Deprecated for greenfield. Active in migration corpora. |
+| **Argon2id** | Yes (high) | High — memory- and time-hard; resists side-channel and TMTO attacks. | Memory cost (`m`), time cost (`t`), parallelism (`p`), secret (pepper). | Recommended default. OWASP, NIST SP 800-63B-4 draft, FedRAMP. |
+
+המסקנה לתוכנית ההגירה צרה: PBKDF2 הוא מצב *צד-אימות*, לא יעד *צד-כתיבה*. כל כניסה מוצלחת על רשומת PBKDF2 צריכה להפיק רשומת Argon2id ביציאה.
+
+## 02. עדשת ארכיטקטורת hsh 2026
+
+המסגרת בנויה על פני חמש שכבות ליבה, כל אחת מהונדסת להפחתת קטגוריה ספציפית של סיכון תפעולי.
+
+### טבלה 1: שכבות ארכיטקטורת hsh והפחתת סיכונים
+
+| שכבה | החלטת תכנון | מדוע זה חשוב | סיכון אם מטופל באופן שגוי |
+| ---- | ---- | ---- | ---- |
+| **פרימיטיבים קריפטוגרפיים** | פורמט מחרוזת PHC מאוחד התומך ב-Argon2id, scrypt ו-PBKDF2 | מספק עמידות מהשורה הראשונה למתקפות GPU תוך שמירה על תאימות לאחור. | סילוסי נתונים; אלגוריתמים חלשים המאפשרים 100B+ ניחושים לשנייה אופליין. |
+| **מנוע מדיניות** | שיגור `verify_and_upgrade` | מאוטומט את המעבר ממדיניות מורשתית למודרנית באופן דינמי בכניסה. | ריקבון אבטחה; משתמשים פעילים שנשארים על סוגי hash מורשתיים הניתנים לפיצוח בקלות. |
+| **נעילת חומרה** | יכולות "peppering" של HSM ו-Cloud KMS | מבטיחה שפריצה למסד נתונים לבדה אינה חושפת סיסמאות מועמדות. | מתקפות brute-force אופליין המצליחות לאחר פריצת SQL injection. |
+| **היגיינת אבטחה** | אכיפת `deny.toml` ו-Rust טהור | חוסם FFI לא מאובטח ותלויות C חיצוניות לא מהימנות לחלוטין. | מתקפות שרשרת אספקה הרסניות ו-CVEs של שחיתות זיכרון. |
+
+## 03. נתיב ה-Rehash ללא השבתה
+
+תבנית `verify_and_upgrade` פותרת הגירת נתונים באמצעות מערכת שיגור חכמה ומודעת-מצב הדורשת אפס השבתה למסד הנתונים.
+
+כאשר משתמש שולח את האישורים שלו, hsh קוראת את מחרוזת ה-Password Hashing Competition (PHC) המאוחסנת. אם היא מכילה hash מורשתי (לדוגמה, תצורת PBKDF2 מיושנת), המערכת מבצעת את הזרימה הבאה:
+
+1. **זיהוי:** מנתחת את האלגוריתם המורשתי ואת הפרמטרים הספציפיים שלו.
+2. **אימות:** מאמתת את סיסמת המועמד מול ה-hash המורשתי.
+3. **שדרוג בזמן אמת:** עם התאמה מוצלחת, היא נוטלת את סיסמת המועמד הגלויה בזיכרון ומחשבת מיד hash חדש באמצעות מדיניות Argon2id המאובטחת ביותר.
+4. **התמדה:** היא מחזירה את מחרוזת ה-PHC החדשה ליישום הבנקאי, אשר דורסת את הרשומה המורשתית במסד הנתונים.
+
+תהליך זה שקוף לחלוטין למשתמש הקצה. הוא למעשה מהגר את החשבונות הפעילים ביותר לדרג האבטחה הגבוה ביותר ביום הראשון, ומצמצם דרמטית את משטח התקיפה של הבנק באופן אורגני לאורך זמן.
+
+הרצף שלהלן מראה מה מתרחש במהלך אירוע כניסה בודד כאשר הרשומה המאוחסנת נמצאת על אלגוריתם מורשתי. המשתמש אינו רואה כל שינוי; מצבת האימות של הבנק מתחזקת ברשומה אחת.
+
+```mermaid
+sequenceDiagram
+    actor User
+    participant Frontend
+    participant Auth as Authentication Service (hsh)
+    participant DB as Database
+    User->>Frontend: Submit username + password
+    Frontend->>Auth: authenticate(user, password)
+    Auth->>DB: SELECT password_hash FROM users
+    DB-->>Auth: PHC string (legacy: PBKDF2)
+    Note over Auth: Detect legacy algorithm prefix
+    Auth->>Auth: verify(password, legacy_hash)
+    Note over Auth: Re-hash with Argon2id
+    Auth->>DB: UPDATE password_hash = new PHC
+    DB-->>Auth: write confirmed
+    Auth-->>Frontend: 200 OK
+    Frontend-->>User: Login successful
+```
+
+### תבנית מימוש — שיגור `verify_and_upgrade`
+
+משטח האינטגרציה בתוך שירות אימות הוא קטן. נתיב הקוד המורשתי נשאר כ-fallback; נתיב הקוד החדש הוא ה-dispatcher.
+
+```rust
+use hsh::{Hasher, UpgradeResult};
+
+struct UserRecord {
+    username: String,
+    password_hash: String, // PHC string
+}
+
+async fn authenticate(user: UserRecord, password_attempt: &str) -> Result<bool, AuthError> {
+    let hasher = Hasher::new();
+    match hasher.verify_and_upgrade(password_attempt, &user.password_hash) {
+        Ok(UpgradeResult::Verified(is_valid)) => Ok(is_valid),
+        Ok(UpgradeResult::Upgraded(new_hash)) => {
+            db::update_user_hash(&user.username, new_hash).await?;
+            Ok(true)
+        }
+        Err(_) => Err(AuthError::InvalidCredentials),
+    }
+}
+```
+
+שלוש תכונות חשובות:
+
+- **מודעות-מצב.** `verify_and_upgrade` בוחנת את תחילית מחרוזת ה-PHC. אם סמן האלגוריתם הוא מורשתי, המסגרת מפעילה את ה-rehash אוטומטית מול מדיניות ה-Argon2id המוגדרת. אין הסתעפויות בקוד הקורא.
+- **אטומיות.** Rehashing מתרחש רק לאחר שאימות מורשתי מצליח, בתוך אותו אירוע אימות עצמו. אין משימת batch נפרדת, אין חלון הגירה מתוזמן, ואין הגירה הרסנית בכמות גדולה לשחזר ממנה.
+- **התמדה.** הווריאנט `UpgradeResult::Upgraded` נושא את מחרוזת ה-PHC החדשה. היישום מקיים אותה דרך אותו נתיב נתונים שכבר קיים עבור הרשומה המורשתית — אין משטח כתיבה מקבילי, אין פרוטוקול כתיבה דו-שלבי.
+
+**מצבי כשל.** אם כתיבת מסד הנתונים נכשלת או ה-KMS אינו זמין לרגע במהלך כתיבת השדרוג, המפגש עדיין מצליח מול ה-hash המורשתי והרשומה נשארת על האלגוריתם הישן. הכניסה המוצלחת הבאה תנסה את השדרוג שוב. אין מצב מהגר-חלקית ואין כשל הנראה למשתמש — ההגירה מונוטונית על פני אירועי כניסה, והעלות לרשומה של שדרוג שנכשל היא בדיוק ניסיון נוסף אחד בכניסה הבאה.
+
+## 04. Hashes מותבלים-Pepper דרך נעילת HSM / KMS
+
+hashing סטנדרטי של סיסמאות מגן מפני דליפות ישירות של מסד הנתונים, אך אם תוקף משיג את מסד הנתונים (hashes ו-salts), הוא יכול לבצע פיצוח אופליין.
+
+hsh מציגה שכבת אבטחה חזקה של "peppered". על ידי שילוב עם Hardware Security Modules (HSMs) או Key Management Services (KMS) ענן-ילידיים, פלט ה-Argon2id הסופי נעטף קריפטוגרפית באמצעות מפתח בעל אנטרופיה גבוהה שלעולם אינו עוזב את גבול החומרה המאובטחת. אם מסד נתוני המשתמשים מוחלץ, התוקף מחזיק רק blobs מוצפנים. הוא אינו יכול להתחיל לפצח סיסמאות מבלי לפרוץ גם לתשתית ה-HSM המבודדת פיזית של הבנק.
+
+תרשים הארכיטקטורה שלהלן מתחקה אחר נתיב הסוד. ה-pepper לעולם אינו נוחת במסד הנתונים; מסד הנתונים לעולם אינו מחזיק דבר הניתן לפיצוח בפני עצמו. שני המאגרים יכולים להיכשל באופן עצמאי — המערכת מאבדת חיסיון רק אם שניהם נכשלים יחד.
+
+```mermaid
+sequenceDiagram
+    participant App as Application Server
+    participant HSM as HSM (Hardware Security Module)
+    participant DB as Database
+    Note over HSM: Pepper sealed in hardware<br/>never exits boundary
+    App->>HSM: get_secret("production-password-pepper")
+    HSM-->>App: pepper (in-memory, request-scoped)
+    Note over App: Argon2::new_with_secret(&pepper, ...)
+    App->>App: hash(password + salt) consuming pepper
+    Note over App: Pepper consumed via secret param<br/>not via string concat
+    App->>DB: STORE PHC string (uncrackable blob)
+    Note over App: Pepper dropped from memory
+    Note over DB,HSM: DB breach alone yields<br/>nothing crackable
+```
+
+### תבנית מימוש — Argon2id מותבל-pepper מגובה-HSM
+
+ה-pepper נשלף מה-HSM בזמן הבקשה, לא מקובץ תצורה. `Argon2::new_with_secret` צורך אותו דרך פרמטר הסוד של האלגוריתם, ולא באמצעות שרשור מחרוזות.
+
+```rust
+use argon2::{
+    Argon2, Algorithm, Version, Params,
+    PasswordHasher, PasswordVerifier,
+    password_hash::{PasswordHash, SaltString, rand_core::OsRng},
+};
+
+async fn authenticate_with_hsm(
+    user: UserRecord,
+    password_attempt: &str,
+) -> Result<bool, AuthError> {
+    let pepper = hsm::client::get_secret("production-password-pepper").await?;
+    let hasher = Argon2::new_with_secret(
+        &pepper,
+        Algorithm::Argon2id,
+        Version::V0x13,
+        Params::default(),
+    )
+    .map_err(|_| AuthError::Internal)?;
+
+    let parsed = PasswordHash::new(&user.password_hash)
+        .map_err(|_| AuthError::InvalidCredentials)?;
+    if hasher.verify_password(password_attempt.as_bytes(), &parsed).is_ok() {
+        if is_legacy_hash(&user.password_hash) {
+            let new_hash = hasher
+                .hash_password(
+                    password_attempt.as_bytes(),
+                    &SaltString::generate(&mut OsRng),
+                )
+                .map_err(|_| AuthError::Internal)?
+                .to_string();
+            db::update_user_hash(&user.username, new_hash).await?;
+        }
+        return Ok(true);
+    }
+    Err(AuthError::InvalidCredentials)
+}
+```
+
+שלוש השלכות מותאמות-DORA נובעות מצורה זו:
+
+- **רוטציית מפתח כבעיית ניהול-מפתחות.** ה-pepper שוכן מאחורי גבול ה-HSM/KMS, לא במסד הנתונים. רוטציה הופכת לשינוי ניהול-מפתחות, לא לקמפיין rehashing על פני נחלת המשתמשים. Hashes חדשים נקשרים לגרסת ה-pepper הנוכחית; hashes ישנים מאומתים תחת הגרסה הקשורה שלהם עד שישודרגו באופן טבעי.
+- **הפרדת תפקידים.** זהות השירות הקוראת את ה-pepper חייבת להיות ניתנת-לביקורת ובעלת הרשאות מינימליות. חילוץ מלא של מסד הנתונים ללא ה-grant המתאים של ה-HSM אינו מניב דבר הניתן-לפיצוח. חיווט HSM שנפרץ ללא מסד הנתונים אינו מניב דבר הניתן-לטיפול. רדיוס ההדף של כל כשל יחיד תחום.
+- **הימנעות מבאגי הרחבת אורך ושרשור.** השימוש בפרמטר הסוד של Argon2 במקום בשרשור מחרוזות מסיר מחלקה שלמה של מלכודות קריפטוגרפיות — הרחבת-אורך, שרשור UTF-8 שגוי-טיפוס, באגי סדר salt/pepper — ממשטח המימוש.
+
+## 05. התאמה רגולטורית: DORA, Basel III ו-SM&CR
+
+- **DORA סעיפים 5 ו-6:** דורש מישויות פיננסיות לתחזק מסגרות לניהול סיכון ICT. אסטרטגיה המסתמכת על hashes של סיסמאות שלא הוחלפו, בני עשור, מפרה עקרונות אלה. hsh מספקת מנגנון מתועד ואוטומטי להעלאה רציפה של הגנות קריפטוגרפיות.
+- **Basel III:** מקשר הון רגולטורי להסתברות ולחומרה של אירועי הפסד. על ידי יישום Argon2id עם נעילת HSM, חומרת פריצת מסד הנתונים מצטמצמת דרמטית, ותומכת בטיעונים ניתנים-לכימות להקצאה נמוכה יותר של הון סיכון תפעולי.
+- **אחריות SM&CR:** אישור ארכיטקטורה המתקנת באופן פעיל ריקבון קריפטוגרפי מספק למנהלים בכירים ששמותיהם מצוינים שרשרת ניתנת-לאימות וניתנת-לתיעוד של הפחתת סיכון.
+
+## שאלות נפוצות
+
+**האם hsh מוכן לייצור עבור נתיב אימות בנקאי בדרג-1?**
+הספרייה היא קוד פתוח, מתועדת, ומפעילה Argon2id דרך אותו crate של `argon2` שמהווה את הבסיס למערכת ה-hashing של סיסמאות של RustCrypto. אימוץ בדרג-1 עוקב אחר בדיקת הנאותות של הבנק עצמו: סקירת קוד עצמאית, אישור בנייה הניתנת-לשחזור, נעיצת עץ תלויות, בדיקת אינטגרציה עם ספק HSM, ואישור סיכון תפעולי. hsh מספקת את התשתית; הבנק מאשר את הפריסה.
+
+**כיצד `verify_and_upgrade` נמנע מסיכון ההגירה ההמונית?**
+המאמת בוחן את מחרוזת ה-PHC בזמן הניתוח, מריץ את האלגוריתם המורשתי כדי לאמת את הסיסמה, ו — אם האלגוריתם המאוחסן או סט הפרמטרים מתחת לרצפה הנוכחית — מבצע rehash לטקסט הגלוי תחת Argon2id עם ה-pepper המקושר של ה-HSM וכותב את מחרוזת ה-PHC החדשה בחזרה אטומית. המשתמש חווה כניסה רגילה. הנחלה מתחזקת ברשומה אחת לכל אימות מוצלח. ללא קמפיין איפוס, ללא חלון תחזוקה, ללא אירוע סיכון תפעולי.
+
+**מה קורה לחשבונות רדומים שלעולם אינם מתחברים?**
+רשומות שלעולם אינן מתאמתות לעולם אינן עוברות rehash. בנקים מטפלים בכך באמצעות שתי מדיניויות משלימות: סף רדמות מתועד (לעיתים קרובות 18–24 חודשים) שלאחריו החשבון מסובב באופן מנהלי תחת קמפיין איפוס מבוקר, וריצת rehash סינתטית במהלך תחזוקה מתוזמנת עבור חשבונות בקבוצות מוגדרות (ערך גבוה, הרשאה גבוהה, מפוקח). שתיהן הן מדיניויות, לא התנהגויות ספרייה; hsh מתעד את החלטת השיגור בטלמטריית ביקורת כך שהבעלים התפעולי יוכל להוכיח כיסוי.
+
+**האם ה-pepper של ה-HSM מכניס נקודת כשל יחידה בנתיב האימות?**
+אותו HSM שחותם על הודעות תשלום ומסובב מפתחות מגובי-KMS נמצא בנתיב. הסיכון זהה לתנוחה הקיימת של הבנק; hsh יורש אותו ולא מציג אותו. מיתון הוא סטנדרטי: זוגות HSM ב-HA, אזורי KMS חמים-חלופיים, שליפת pepper מוגבלת-בקשה עם חוזר מעגלי לנפילה למצב קריאה-בלבד, וספר ריצה תפעולי מפורש לאי-זמינות HSM. ה-pepper הוא פרמטר הסוד של `argon2`, נצרך בתהליך ונופל מהזיכרון לאחר השימוש.
+
+**היכן יושבת hsh ביחס להגירה הפוסט-קוונטית?**
+hsh היא מסגרת hashing של סיסמאות וסודות, לא פרימיטיב לאינקפסולציית מפתחות או חתימה. מעבר ה-PQC המתועד ב-[NIST IR 8547](https://csrc.nist.gov/pubs/ir/8547/ipd "מעבר לתקני קריפטוגרפיה פוסט-קוונטית") מכוון לכינון מפתחות (ML-KEM, FIPS 203) ולחתימות (ML-DSA, FIPS 204; SLH-DSA, FIPS 205). שכבת ה-hashing שעליה hsh מכסה היא במידה רבה אורתוגונלית להגירה זו. השניים מתכנסים ברמת התשתית — שניהם רוצים שרשרת אספקה קריפטוגרפית בטוחת-זיכרון, ניתנת-לביקורת, ובניה הניתנת-לשחזור — וזו בדיוק התנוחה ש-hsh מאפשרת היום.
+
+## סיכום
+
+hashing של סיסמאות בשיטת deploy-and-forget הסתיים. DORA העבירה את הפסיביות הקריפטוגרפית מחוב טכני לאחריות רגולטורית מוגדרת, ועקומת החומרה נעשית תלולה יותר מדי שנה. תרומתה של hsh אינה אלגוריתם חזק יותר — Argon2id זמין כבר שנים. התרומה היא המכניזציה התפעולית להגירה אליו ללא תזמון השבתה, ללא אכיפת איפוסי משתמשים וללא מתן אמון בעטיפות FFI מבוססות-C בנתיב האימות של הבנק.
+
+[קוד המקור של hsh](https://github.com/sebastienrousseau/hsh "hsh — מסגרת hashing של סיסמאות בטהור-Rust, רישיון כפול MIT ו-Apache 2.0") זמין תחת רישיון כפול MIT ו-Apache 2.0.
+
+## הפניות
+
+Basel Committee on Banking Supervision (2011). *Basel III: A global regulatory framework for more resilient banks and banking systems*. Bank for International Settlements. זמין בכתובת: [https://www.bis.org/publ/bcbs189.pdf](https://www.bis.org/publ/bcbs189.pdf "Basel III: A global regulatory framework for more resilient banks and banking systems")
+
+Biryukov, A., Dinu, D., Khovratovich, D., and Josefsson, S. (2021). *RFC 9106: Argon2 Memory-Hard Function for Password Hashing and Proof-of-Work Applications*. Internet Engineering Task Force. זמין בכתובת: [https://datatracker.ietf.org/doc/html/rfc9106](https://datatracker.ietf.org/doc/html/rfc9106 "RFC 9106 — Argon2 Memory-Hard Function for Password Hashing")
+
+European Parliament and Council (2022). *Regulation (EU) 2022/2554 on digital operational resilience for the financial sector (DORA)*. זמין בכתובת: [https://eur-lex.europa.eu/eli/reg/2022/2554/oj](https://eur-lex.europa.eu/eli/reg/2022/2554/oj "Regulation (EU) 2022/2554 — DORA")
+
+Financial Conduct Authority (2015). *Senior Managers and Certification Regime (SM&CR)*. זמין בכתובת: [https://www.fca.org.uk/firms/senior-managers-certification-regime](https://www.fca.org.uk/firms/senior-managers-certification-regime "Senior Managers and Certification Regime")
+
+National Institute of Standards and Technology (2024). *Initial Public Draft — Transition to Post-Quantum Cryptography Standards (NIST IR 8547)*. זמין בכתובת: [https://csrc.nist.gov/pubs/ir/8547/ipd](https://csrc.nist.gov/pubs/ir/8547/ipd "NIST IR 8547 — Transition to Post-Quantum Cryptography Standards")
+
+OWASP Foundation (2024). *Password Storage Cheat Sheet*. זמין בכתובת: [https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html](https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html "OWASP Password Storage Cheat Sheet")
+
+<!-- enrich-start -->
+<aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">טכנולוג בנקאות בכיר הכותב על AI יישומי, הגירת ISO 20022, קריפטוגרפיה פוסט-קוונטית לשירותים פיננסיים והשינוי המבני של תשלומים סיטונאיים.</span><span class="author-credentials">20+ שנים על פני HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam. <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<p class="post-reviewed">נסקר לאחרונה <time datetime="2026-06-22">2026-06-22</time>.</p>
+<!-- enrich-end -->

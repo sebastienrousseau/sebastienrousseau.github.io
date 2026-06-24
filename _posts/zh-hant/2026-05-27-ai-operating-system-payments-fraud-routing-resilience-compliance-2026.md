@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/zh-hant/2026-05-27-ai-operating-system-paymen
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "AI 支付 2026, 支付詐騙, 支付路由, 即時詐騙防範, ISO 20022 AI, 支付韌性, 交易分析, 現金流預測"
 language: "zh-hant"
 excerpt: "2026 年支付的 AI 作業系統,將詐騙、路由、韌性與法遵串接成單一的工作流速度決策層。銀行的策略課題是設計紀律——哪些 AI 控制即時運行於哪些工作流——而非選擇哪個單點工具來試行。"
@@ -201,6 +201,6 @@ site_software: "Static Site Generator, Rust"
 - Standard Chartered, (2026). [Six forces shaping Treasury in 2026 ⧉](https://www.sc.com/en/news/corporate-investment-banking/six-forces-shaping-treasury-in-2026/ "Six forces shaping Treasury in 2026").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="關於作者"><img alt="Sebastien Rousseau 肖像" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">資深銀行技術專家,撰寫主題涵蓋應用 AI、支付基礎建設、代幣化貨幣、ISO 20022、後量子安全、雲端原生金融服務,以及受監管的數位市場。</span><span class="author-credentials">在 HSBC Commercial &amp; Investment Bank、PayPal、Barclays、Shazam、AKQA、Virgin Group 擁有 20 多年經驗。<a href="/about/index.html">完整簡介</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau/" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="關於作者"><img alt="Sebastien Rousseau 肖像" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">資深銀行技術專家,撰寫主題涵蓋應用 AI、支付基礎建設、代幣化貨幣、ISO 20022、後量子安全、雲端原生金融服務,以及受監管的數位市場。</span><span class="author-credentials">在 HSBC Commercial &amp; Investment Bank、PayPal、Barclays、Shazam、AKQA、Virgin Group 擁有 20 多年經驗。<a href="/about/index.html">完整簡介</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau/" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">最近審閱 <time datetime="2026-05-27">2026-05-27</time>。</p>
 <!-- enrich-end -->

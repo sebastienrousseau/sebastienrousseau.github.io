@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/ha/2026-05-31-post-quantum-payments-infrastru
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "cryptography bayan quantum, biyan PQC, saurin crypto, tara-yanzu-warware-baya, HNDL, ƙa'idodin bayan quantum na NIST, ML-KEM, ML-DSA, FIPS 203, FIPS 204, ƙaurar hanyar biya, ISO 20022 PQC, maye gurbin SWIFT MT, HSM, faɗuwar PKI, juriya na aiki, Quantum Computing Cybersecurity Preparedness Act"
 language: "ha"
 excerpt: "Tara-yanzu-warware-baya yana mai da saƙonnin biya na yau da TLS ke karewa zuwa fallasa da za a warware gobe. ML-KEM da ML-DSA sun ninka maɓallan RSA da ECC da tsofaffin hanyoyi ke ƙididdige su sau goma — daidaitawa tana haifar da tarwatsewa, jinkiri, da ƙarewar HSM. Yankin ginin 2026 shi ne ko a daidaita ko a maye gurbi kafin agogon tsari ya ƙare."
@@ -264,7 +264,7 @@ Hukumar shaida ƙasa mai iya PQC, da aka haɗa cikin PKI na yanzu, wadda za ta i
 - Bank of England (PRA), (2024). [SS1/21 — Operational resilience: Impact tolerances for important business services ⧉](https://www.bankofengland.co.uk/prudential-regulation/publication/2024/march/operational-resilience-impact-tolerances-for-important-business-services "PRA SS1/21").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Game da Marubuci"><img alt="Hoton Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Babban masanin fasahar banki yana rubutu kan amfani da AI, ƙaurar ISO 20022, cryptography bayan quantum ga sabis na kuɗi, da sauye-sauyen tsarin na biyan kuɗi na babba.</span><span class="author-credentials">Shekaru 20+ a HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Cikakken bayani</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Game da Marubuci"><img alt="Hoton Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Babban masanin fasahar banki yana rubutu kan amfani da AI, ƙaurar ISO 20022, cryptography bayan quantum ga sabis na kuɗi, da sauye-sauyen tsarin na biyan kuɗi na babba.</span><span class="author-credentials">Shekaru 20+ a HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Cikakken bayani</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Bita ta ƙarshe <time datetime="2026-05-31">2026-05-31</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Karatun da ya shafi haka</h2>

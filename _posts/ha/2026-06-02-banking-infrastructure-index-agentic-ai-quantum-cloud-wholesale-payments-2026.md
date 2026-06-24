@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/ha/2026-06-02-banking-infrastructure-index-ag
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "index na tsarin banki 2026, agentic AI banking, banking tsaron quantum, na-asalin-girgije banking, biyan kuɗi na babba, ISO 20022, DORA, Project Agora, tokenised deposits"
 language: "ha"
 last_reviewed: "2026-06-02"
@@ -217,6 +217,6 @@ Kowace shekara don kwatance dabaru, tare da sabuntawa na ciki na kowane kashi uk
 - European Banking Authority, (2026). [Dokar Juriya ta Aiki ta Dijital ⧉](https://www.eba.europa.eu/activities/direct-supervision-and-oversight/digital-operational-resilience-act "Dokar Juriya ta Aiki ta Dijital").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Game da Marubuci"><img alt="Hoton Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Babban masanin fasahar banki yana rubutu kan amfani da AI, ƙaurar ISO 20022, cryptography bayan quantum ga sabis na kuɗi, da sauye-sauyen tsarin na biyan kuɗi na babba.</span><span class="author-credentials">Shekaru 20+ a HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Cikakken bayani</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Game da Marubuci"><img alt="Hoton Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Babban masanin fasahar banki yana rubutu kan amfani da AI, ƙaurar ISO 20022, cryptography bayan quantum ga sabis na kuɗi, da sauye-sauyen tsarin na biyan kuɗi na babba.</span><span class="author-credentials">Shekaru 20+ a HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Cikakken bayani</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Bita ta ƙarshe <time datetime="2026-06-02">2026-06-02</time>.</p>
 <!-- enrich-end -->

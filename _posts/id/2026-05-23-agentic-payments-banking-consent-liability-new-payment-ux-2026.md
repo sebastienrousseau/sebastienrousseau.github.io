@@ -3,7 +3,7 @@ author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "Diagram arsitektur pembayaran agentik yang menunjukkan AI agent, mandat persetujuan, kredensial yang ditokenisasi, jaringan kartu, bank, merchant, dan jejak audit"
 banner_height: "571"
 banner_width: "1425"
-banner: "https://cloudcdn.pro/api/transform?url=/stocks/images/ai-robot.webp&w=1200&format=webp&q=80"
+banner: "https://cloudcdn.pro/stocks/images/ai-robot-1200.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/id/2026-05-23-agentic-payments-banking-consen
 image_alt: "Potret Hitam Putih Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "pembayaran agentik 2026, pembayaran AI agent, Mastercard Agent Pay, pembayaran AI Rabobank, AP2, A2A, x402, MCP, machine payments protocol, mandat persetujuan pembayaran, Regulation E, EFTA, tanggung jawab pembayaran, niat yang dapat diverifikasi, tokenisasi, kunci akses, UX perbankan, perdagangan AI"
 language: "id"
 excerpt: "Pembayaran agentik melintasi konsep ke transaksi langsung pada 2026 — Mastercard dan Rabobank mengeksekusi pembayaran AI agent di Belanda melalui Agent Pay, mandat kriptografis bergaya AP2 bermunculan, dan HM Treasury menyatakan regulasi jasa pembayaran harus menyesuaikan. Pertanyaan arsitektur perbankan adalah persetujuan, identitas, tanggung jawab, dan bukti pra-penyelesaian."
@@ -203,6 +203,6 @@ Bank sebaiknya memulai dengan kasus penggunaan berisiko rendah, bernilai rendah,
 - J.P. Morgan, (2026). [Payments Outlook: Five Trends Powering Payments in 2026 ⧉](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Tentang penulis"><img alt="Potret Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Teknolog perbankan senior yang menulis tentang AI terapan, infrastruktur pembayaran, uang yang ditokenisasi, ISO 20022, keamanan pasca-kuantum, layanan keuangan cloud-native, dan pasar digital teregulasi.</span><span class="author-credentials">Lebih dari 20 tahun pengalaman di HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profil lengkap</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Tentang penulis"><img alt="Potret Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Teknolog perbankan senior yang menulis tentang AI terapan, infrastruktur pembayaran, uang yang ditokenisasi, ISO 20022, keamanan pasca-kuantum, layanan keuangan cloud-native, dan pasar digital teregulasi.</span><span class="author-credentials">Lebih dari 20 tahun pengalaman di HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profil lengkap</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Terakhir ditinjau <time datetime="2026-05-23">2026-05-23</time>.</p>
 <!-- enrich-end -->

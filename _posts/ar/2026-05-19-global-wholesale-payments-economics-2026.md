@@ -19,7 +19,7 @@ id: "https://sebastienrousseau.com/ar/2026-05-19-global-wholesale-payments-econo
 image_alt: "صورة شخصية بالأبيض والأسود لسيباستيان روسو"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "المدفوعات بالجملة 2026, اقتصاديات المدفوعات العالمية, ISO 20022, RTGS, المدفوعات العابرة للحدود, BIS CPMI, FSB, Swift CBPR+, خارطة طريق مجموعة العشرين, التسوية الإجمالية الفورية, Project Agora, Project Mandala, Project Nexus, قابلية التشغيل البيني للمدفوعات, البنوك المراسلة, تشظّي المدفوعات, العملات الرقمية للبنوك المركزية بالجملة"
 language: "ar"
 last_reviewed: "2026-05-19"

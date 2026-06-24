@@ -3,7 +3,7 @@ author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "電路板紋路逐漸幻化為城市天際線 —— 為雲端原生銀行所選擇的視覺基調:把平台工程基本元件縫進銀行的營運織理。"
 banner_height: "571"
 banner_width: "1425"
-banner: "https://cloudcdn.pro/api/transform?url=/stocks/images/quang-nguyen-vinh-2649403.webp&w=1600&format=webp&q=85"
+banner: "https://cloudcdn.pro/stocks/images/quang-nguyen-vinh-2649403-1920.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/zh-hant/2026-06-05-cloud-native-banking-index
 image_alt: "Sebastien Rousseau 的黑白肖像"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "雲端原生銀行 2026, DORA 銀行, 雲端集中風險, 銀行平台工程, ICT 第三方風險, 雲端退場策略, 主權雲, FIPS 203, ML-KEM, ISO 20022, Kubernetes"
 language: "zh-Hant"
 last_reviewed: "2026-06-05"
@@ -282,6 +282,6 @@ DORA 雲端韌性已進入稽核階段。2024 至 2025 年所做的平台工程�
 - Cloud Native Computing Foundation,(2019 年)。[OpenTelemetry ⧉](https://opentelemetry.io/ "OpenTelemetry")。
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="關於作者"><img alt="Sebastien Rousseau 的肖像" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">資深銀行科技人,長期撰寫應用 AI、支付基礎建設、代幣化貨幣、ISO 20022、後量子安全、雲端原生金融服務與受監理數位市場等主題。</span><span class="author-credentials">在 HSBC 商業與投資銀行、PayPal、Barclays、Shazam、AKQA、Virgin Group 等機構累積 20 年以上經驗。<a href="/about/index.html">完整檔案</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="關於作者"><img alt="Sebastien Rousseau 的肖像" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">資深銀行科技人,長期撰寫應用 AI、支付基礎建設、代幣化貨幣、ISO 20022、後量子安全、雲端原生金融服務與受監理數位市場等主題。</span><span class="author-credentials">在 HSBC 商業與投資銀行、PayPal、Barclays、Shazam、AKQA、Virgin Group 等機構累積 20 年以上經驗。<a href="/about/index.html">完整檔案</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">最後審閱 <time datetime="2026-06-05">2026-06-05</time>。</p>
 <!-- enrich-end -->

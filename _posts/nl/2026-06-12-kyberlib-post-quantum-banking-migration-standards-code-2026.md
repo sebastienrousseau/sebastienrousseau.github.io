@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/nl/2026-06-12-kyberlib-post-quantum-banking-m
 image_alt: "Zwart-witportret van Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "KyberLib, post-quantum-cryptografie, ML-KEM, FIPS 203, CRYSTALS-Kyber, crypto-agility, hybride sleuteluitwisseling, Rust-cryptografie, store now decrypt later, DORA, NIST SP 1800-38, quantum-veilig bankieren"
 language: "nl"
 last_reviewed: "2026-05-29"
@@ -263,6 +263,6 @@ Hybride enveloppen leiden de sessiesleutel af van zowel een klassiek als een pos
 - GitHub, (2026). [kyberlib open source-repository ⧉](https://github.com/sebastienrousseau/kyberlib "kyberlib-repository").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Over de auteur"><img alt="Portret van Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist, schrijft over toegepaste AI, betalingsinfrastructuur, getokeniseerd geld, ISO 20022, post-kwantumbeveiliging, cloud-native financiële dienstverlening en gereguleerde digitale markten.</span><span class="author-credentials">Meer dan 20 jaar bij HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Volledig profiel</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Over de auteur"><img alt="Portret van Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist, schrijft over toegepaste AI, betalingsinfrastructuur, getokeniseerd geld, ISO 20022, post-kwantumbeveiliging, cloud-native financiële dienstverlening en gereguleerde digitale markten.</span><span class="author-credentials">Meer dan 20 jaar bij HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Volledig profiel</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Laatst beoordeeld <time datetime="2026-05-29">2026-05-29</time>.</p>
 <!-- enrich-end -->

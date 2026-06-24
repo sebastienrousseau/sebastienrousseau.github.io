@@ -20,7 +20,7 @@ id: "https://sebastienrousseau.com/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-fina
 image_alt: "Àwòrán Aláwọ̀ Dúdú àti Funfun ti Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "YAML parser Rust aláìléwu, NoyaLib, ìbámu YAML 1.2, Rust aláìní unsafe, ìfọwọ́sí JSON Schema, Concrete Syntax Tree aláìpàdánù, CST, MCP, Model Context Protocol, WebAssembly, àwọn manifest Kubernetes, ìṣètò CI/CD, DORA Article 5, BCBS 239, ewu ìṣiṣẹ́ Basel III, àwọn iṣẹ́ ìnáwó, ààbò ìṣètò, ààbò ẹ̀wọ̀n ìpèsè software"
 language: "yo-NG"
 last_reviewed: "2026-06-18"

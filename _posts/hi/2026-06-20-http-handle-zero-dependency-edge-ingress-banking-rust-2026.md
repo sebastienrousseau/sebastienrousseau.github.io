@@ -20,7 +20,7 @@ id: "https://sebastienrousseau.com/2026-06-20-http-handle-zero-dependency-edge-i
 image_alt: "सेबेस्टियन रूसो का श्वेत-श्याम चित्र"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "http-handle, Rust एज इनग्रेस, ज़ीरो डिपेंडेंसी प्रॉक्सी, बैंकिंग इन्फ्रास्ट्रक्चर, mTLS JWT, sendfile ज़ीरो-कॉपी, ALPN HTTP3, DORA अनुपालन, बेसल III, OTLP अवलोकनीयता, स्टैटिक बाइनरी, ARM64 बैंकिंग, ज़ीरो ट्रस्ट बैंकिंग, लाइटवेट इनग्रेस, Rust बैंकिंग सुरक्षा"
 language: "hi-IN"
 last_reviewed: "2026-06-20"

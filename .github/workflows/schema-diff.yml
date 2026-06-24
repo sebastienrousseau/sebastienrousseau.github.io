@@ -17,6 +17,15 @@ jobs:
   diff:
     runs-on: ubuntu-latest
     steps:
+      # Pinned to actions/checkout v6 here (NOT v7). v7 broke the
+      # specific multi-checkout pattern this workflow uses (head/ +
+      # base/ subdirectories): the SSG `extract metadata` post-
+      # processing step fails with "No valid front matter found" on
+      # every PR opened after PR #243 bumped checkout v6→v7 across all
+      # workflows. PR #246's first attempt (fetch-depth: 0 with v7) did
+      # not fix it — the failure is structural to the v7 multi-checkout
+      # behaviour, not the fetch depth. ci.yml's single-checkout pattern
+      # works fine on v7, so the bump stays everywhere else.
       - name: Checkout HEAD
         uses: actions/checkout@v6
         with:

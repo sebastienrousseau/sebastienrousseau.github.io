@@ -20,7 +20,7 @@ id: "https://sebastienrousseau.com/2026-06-17-economist-commercialising-quantum-
 image_alt: "Chân dung đen trắng của Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "Commercialising Quantum Global 2026, hội nghị Economist Impact, mật mã hậu lượng tử, NIST ML-KEM, thu hoạch ngay giải mã sau, SNDL, lượng tử HSBC, Philip Intallura, cảm biến lượng tử, định vị không phụ thuộc GPS, NQCC, Đạo luật Lượng tử EU, Quantcore, giải thưởng qBIG, Lord Vallance, lượng tử-cổ điển lai, DORA Điều 6"
 language: "vi-VN"
 last_reviewed: "2026-06-17"

@@ -134,26 +134,73 @@ def check_filler(body: str) -> list[str]:
     return [f"voice: banned filler — {p!r}" for p in _BANNED_FILLER if p in lower]
 
 
-def check_structure(body: str) -> list[str]:
-    """Hard structural requirements for a publishable article."""
+def _check_locale_structure(body: str) -> list[str]:
+    """Locale-flavour structural checks. EN-only checks live in their
+    own branch in ``check_structure``; this helper handles the shape-
+    based detection used for translated forks.
+
+    Locale articles carry the canonical sections in their target language
+    (``## Häufige Fragen``, ``## Riferimenti``, ``> **Résumé exécutif``,
+    ``## 参考文献``, …) so heading-text matching is replaced by:
+      - A bold-led blockquote within the first ~12 KB (Executive Summary
+        position post-`<!-- lead-end -->`).
+      - An H2 with ≥3 ``**…?**`` Q-shape paragraphs (FAQ shape).
+      - An H2 with ≥3 ``[…](URL "title")`` citation links (References
+        shape).
+    """
     defects: list[str] = []
+    if not re.search(r"^>\s*\*\*[^*]+\*\*", body[:12_000], re.MULTILINE):
+        defects.append("structure: missing > **<exec-summary>** blockquote near top")
+    h2_idx = [m.start() for m in re.finditer(r"^## ", body, re.MULTILINE)]
+    if len(h2_idx) < 2:
+        return defects
+    faq_ok = any(
+        len(re.findall(r"\*\*[^*?]+\?\*\*", body[idx:idx + 2_000])) >= 3
+        for idx in h2_idx
+    )
+    if not faq_ok:
+        defects.append("structure: missing FAQ section (no Q&A-shape H2 in body)")
+    refs_ok = any(
+        len(re.findall(r'\[[^\]]+\]\(https?://[^)]+ "[^"]+"\)', body[idx:idx + 4_000])) >= 3
+        for idx in h2_idx
+    )
+    if not refs_ok:
+        defects.append("structure: missing References section (no link-dense H2 in body)")
+    return defects
+
+
+def check_structure(body: str, *, lang: str = "en") -> list[str]:
+    """Hard structural requirements for a publishable article.
+
+    The structural gate fires at EN-source resolution: hand-authored heading
+    text is checked literally against the canonical English forms. Locale
+    translations carry the same sections rendered in their native language
+    (``## Häufige Fragen``, ``## 常见问题``, ``## Referencias``…), so on
+    non-EN files the heading-text checks are relaxed to a positional/
+    proximity check — see ``_check_locale_structure``.
+    """
+    defects: list[str] = []
+    is_en = lang.lower().startswith("en")
     # Accept either the canonical marker post_enrich emits or the
     # `: manual` opt-out variant a hand-curated lead uses to instruct
     # post_enrich to leave it alone.
     if "<!-- lead-start -->" not in body and "<!-- lead-start: manual -->" not in body:
         defects.append("structure: missing <!-- lead-start --> lead aside")
-    if not re.search(r">\s*\*\*Executive Summary", body):
-        defects.append("structure: missing > **Executive Summary blockquote")
     h2s = re.findall(r"^## ", body, re.MULTILINE)
     if len(h2s) < 3:
         defects.append(f"structure: only {len(h2s)} H2 section(s), need ≥3")
     citations = re.findall(r'\[[^\]]+\]\(https?://[^)]+ "[^"]+"\)', body)
     if not citations:
         defects.append("structure: no citation links with title attribute")
-    if not re.search(r"^## (?:Frequently Asked Questions|FAQ)", body, re.MULTILINE):
-        defects.append("structure: missing FAQ section")
-    if not re.search(r"^## References", body, re.MULTILINE):
-        defects.append("structure: missing References section")
+    if is_en:
+        if not re.search(r">\s*\*\*Executive Summary", body):
+            defects.append("structure: missing > **Executive Summary blockquote")
+        if not re.search(r"^## (?:Frequently Asked Questions|FAQ)", body, re.MULTILINE):
+            defects.append("structure: missing FAQ section")
+        if not re.search(r"^## References", body, re.MULTILINE):
+            defects.append("structure: missing References section")
+    else:
+        defects.extend(_check_locale_structure(body))
     return defects
 
 
@@ -254,7 +301,11 @@ def check_article(
     if not skip_network:
         defects.extend(check_banner_reachable(fm.get("banner", "")))
     defects.extend(check_filler(body))
-    defects.extend(check_structure(body))
+    # Locale-aware structure check — EN sources gate against literal
+    # heading text; locale forks pass when the same shape is present
+    # rendered into the native language (see check_structure docstring).
+    lang = (fm.get("hreflang") or fm.get("language") or fm.get("locale") or "en")[:2].lower()
+    defects.extend(check_structure(body, lang=lang))
     defects.extend(check_markdown_discipline(body))
     if not skip_date:
         defects.extend(check_date_consistency(path, fm))

@@ -3,7 +3,7 @@ author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "英国批发数字市场示意图:代币化国债、结算、数字资产、代币化存款、监管协调与资本市场基础设施"
 banner_height: "571"
 banner_width: "1425"
-banner: "https://cloudcdn.pro/api/transform?url=/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp&w=1200&format=webp&q=80"
+banner: "https://cloudcdn.pro/stocks/images/luke-ellis-craven-yCsk1q2Eq0o-1200.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/zh-hans/2026-05-30-uk-wholesale-digital-marke
 image_alt: "Sebastien Rousseau 黑白肖像"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "英国批发数字市场 2026, Chris Woolard, 代币化国债, 代币化批发金融, 数字市场协调者, 英国代币化, 结算"
 language: "zh-hans"
 excerpt: "英国批发数字市场协调者(Champion)角色把代币化国债、基于 DLT 的结算与数字批发金融升格为国家竞争力工程。银行 2026 年的战略命题是设计纪律——哪些代币化资产置于哪个平台、结算风险如何取证,以及伦敦金融城批发地位如何抵御 Singapore、Switzerland 与 Frankfurt 的争夺。"
@@ -235,14 +235,14 @@ DSS 是 FCA 与英格兰银行联合主持的监管制度,允许机构在针对 
 - Global Government Finance,(2026)。[英国批发数字市场协调者 ⧉](https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/ "英国批发数字市场协调者")。
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="关于作者"><img alt="Sebastien Rousseau 肖像" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">资深银行技术专家,撰写关于应用型人工智能、ISO 20022 迁移、金融服务后量子密码学,以及批发支付结构性转型的文章。</span><span class="author-credentials">在 HSBC 商业与投资银行、PayPal、Barclays、Shazam、AKQA、Virgin 集团积累二十余年经验。<a href="/about/index.html">完整简介</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="关于作者"><img alt="Sebastien Rousseau 肖像" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">资深银行技术专家,撰写关于应用型人工智能、ISO 20022 迁移、金融服务后量子密码学,以及批发支付结构性转型的文章。</span><span class="author-credentials">在 HSBC 商业与投资银行、PayPal、Barclays、Shazam、AKQA、Virgin 集团积累二十余年经验。<a href="/about/index.html">完整简介</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">最近审阅 <time datetime="2026-05-30">2026-05-30</time>。</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">延伸阅读</h2>
 <div class="related-grid">
 <article class="related-card"><a href="https://sebastienrousseau.com/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026" class="related-media" aria-label="2026 年数字资产:银行无法再延迟的基础设施切换" tabindex="-1"><img alt="数字资产基础设施示意图:代币化实物资产、稳定币、代币化存款、托管、结算、担保品流动性与银行平台层" src="https://cloudcdn.pro/stocks/images/corporate-finance.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026">2026 年数字资产:银行无法再延迟的基础设施切换</a></h3><p><time datetime="2026-05-28">2026-05-28</time></p></footer></article>
-<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026" class="related-media" aria-label="2026 年可编程流动性:AI、代币化存款与实时财资编排" tabindex="-1"><img alt="可编程流动性架构示意图:财资系统、AI 预测、代币化存款、实时支付通道、稳定币、虚拟账户、FX 与担保品流动性" src="https://cloudcdn.pro/api/transform?url=/stocks/images/alex-knight-2EJCSULRwC8.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026">2026 年可编程流动性:AI、代币化存款与实时财资编排</a></h3><p><time datetime="2026-05-25">2026-05-25</time></p></footer></article>
-<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026" class="related-media" aria-label="2026 年英国支付前瞻计划:稳定币、开放银行、代币化存款与代理型支付" tabindex="-1"><img alt="英国支付现代化示意图:稳定币、代币化存款、开放银行、AI 代理、FCA 监管、PSR 整合与批发数字市场" src="https://cloudcdn.pro/api/transform?url=/stocks/images/riccardo-oliva-C5DLhUkEWfM.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026">2026 年英国支付前瞻计划:稳定币、开放银行、代币化存款与代理型支付</a></h3><p><time datetime="2026-05-24">2026-05-24</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026" class="related-media" aria-label="2026 年可编程流动性:AI、代币化存款与实时财资编排" tabindex="-1"><img alt="可编程流动性架构示意图:财资系统、AI 预测、代币化存款、实时支付通道、稳定币、虚拟账户、FX 与担保品流动性" src="https://cloudcdn.pro/stocks/images/alex-knight-2EJCSULRwC8-1200.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026">2026 年可编程流动性:AI、代币化存款与实时财资编排</a></h3><p><time datetime="2026-05-25">2026-05-25</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026" class="related-media" aria-label="2026 年英国支付前瞻计划:稳定币、开放银行、代币化存款与代理型支付" tabindex="-1"><img alt="英国支付现代化示意图:稳定币、代币化存款、开放银行、AI 代理、FCA 监管、PSR 整合与批发数字市场" src="https://cloudcdn.pro/stocks/images/riccardo-oliva-C5DLhUkEWfM-1200.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026">2026 年英国支付前瞻计划:稳定币、开放银行、代币化存款与代理型支付</a></h3><p><time datetime="2026-05-24">2026-05-24</time></p></footer></article>
 </div>
 </aside>
 <!-- enrich-end -->

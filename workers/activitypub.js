@@ -35,7 +35,7 @@ const ACTOR_URL = `${BASE}/actor`;
 const INBOX_URL = `${BASE}/inbox`;
 const OUTBOX_URL = `${BASE}/outbox`;
 const PROFILE_URL = `${BASE}/about/`;
-const ICON_URL = 'https://cloudcdn.pro/stocks/images/sebastien-rousseau.png';
+const ICON_URL = 'https://cloudcdn.pro/stocks/images/sebastienrousseau.webp';
 
 const ACCT = `acct:${ACTOR_USERNAME}@${DOMAIN}`;
 

@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/ro/2026-05-26-magnifica-humanitas-ai-quantum-
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "Magnifica Humanitas, Pope Leo XIV, enciclică despre IA, etica inteligenței artificiale, etica calculului cuantic, Rerum Novarum, Turnul Babel, tehnologia nu este niciodată neutră, transumanism, postumanism, demnitate umană, paradigmă tehnologică, tren automobil energie nucleară internet, istoria panicii morale față de tehnologie, transfer de cunoștințe Lucy, speranța IA, EU AI Act, DORA, Anthropic, Sebastien Rousseau"
 language: "ro"
 layout: "report"
@@ -243,6 +243,6 @@ Optimist, dar nu naiv. Argumentul este că viitorul IA și al calculului cuantic
 - Ascension Press, (2026). [Un ghid complet al primei enciclice a Papei Leon: Magnifica Humanitas ⧉](https://ascensionpress.com/blogs/articles/a-complete-guide-to-pope-leo-s-encyclical-magnificent-humanitas "Ascension — Guide to Magnifica Humanitas"). Ascension Press.
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Despre autor"><img alt="Portret al lui Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Tehnolog bancar senior care scrie despre AI aplicat, infrastructura plăților, banii tokenizați, ISO 20022, securitatea post-cuantică, serviciile financiare cloud-native și piețele digitale reglementate.</span><span class="author-credentials">Peste 20 de ani de experiență la HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profil complet</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Despre autor"><img alt="Portret al lui Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Tehnolog bancar senior care scrie despre AI aplicat, infrastructura plăților, banii tokenizați, ISO 20022, securitatea post-cuantică, serviciile financiare cloud-native și piețele digitale reglementate.</span><span class="author-credentials">Peste 20 de ani de experiență la HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profil complet</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Ultima revizuire <time datetime="2026-05-27">2026-05-27</time>.</p>
 <!-- enrich-end -->

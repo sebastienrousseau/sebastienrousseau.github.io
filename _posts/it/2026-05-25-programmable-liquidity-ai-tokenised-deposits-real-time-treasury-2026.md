@@ -3,7 +3,7 @@ author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "Diagramma dell'architettura di liquidità programmabile con sistemi di tesoreria, previsione di cassa AI, depositi tokenizzati, binari in tempo reale, stablecoin, conti virtuali, FX e mobilità del collaterale"
 banner_height: "571"
 banner_width: "1425"
-banner: "https://cloudcdn.pro/api/transform?url=/stocks/images/alex-knight-2EJCSULRwC8.webp&w=1200&format=webp&q=80"
+banner: "https://cloudcdn.pro/stocks/images/alex-knight-2EJCSULRwC8-1200.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/it/2026-05-25-programmable-liquidity-ai-token
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "liquidità programmabile 2026, orchestrazione di tesoreria, AI tesoreria, depositi tokenizzati, liquidità in tempo reale, stablecoin tesoreria, pagamenti multi-binario, conti virtuali, transaction banking, mobilità del collaterale"
 language: "it"
 excerpt: "La liquidità programmabile nel 2026 connette previsione di cassa AI, depositi tokenizzati, binari in tempo reale, conti virtuali, stablecoin e TMS in un unico livello di orchestrazione per il capitale circolante. La questione strategica per le banche è disciplina di progettazione: quali dati, binari, controlli, passività e flussi di lavoro dei clienti vanno insieme — e come dimostrare l'orchestrazione a clienti e autorità di vigilanza."
@@ -201,6 +201,6 @@ Il successo si misura con economia unitaria, prove di resilienza, qualità del d
 - Oliver Wyman, (2026). [Digital assets reshaping the future of wholesale banking ⧉](https://www.oliverwyman.com/our-expertise/insights/2026/may/digital-assets-future-wholesale-banking.html "Digital assets reshaping wholesale banking").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Informazioni sull'autore"><img alt="Ritratto di Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist. Scrive di AI applicata, infrastrutture di pagamento, moneta tokenizzata, ISO 20022, sicurezza post-quantistica, servizi finanziari cloud-native e mercati digitali regolamentati.</span><span class="author-credentials">Oltre 20 anni tra HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profilo completo</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Informazioni sull'autore"><img alt="Ritratto di Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist. Scrive di AI applicata, infrastrutture di pagamento, moneta tokenizzata, ISO 20022, sicurezza post-quantistica, servizi finanziari cloud-native e mercati digitali regolamentati.</span><span class="author-credentials">Oltre 20 anni tra HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profilo completo</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Ultima revisione <time datetime="2026-05-25">2026-05-25</time>.</p>
 <!-- enrich-end -->

@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/he/2026-05-20-cloud-native-banking-financial-
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "בנקאות ענן-נייטיב 2026, Kubernetes בנקים, ענן מוסדות פיננסיים, DORA 2026, חוסן ענן, Red Hat OpenShift, Portworx, דו-קיום VM ומכולות, ריבונות ענן בנקים, תלות שירותים פיננסיים בענן, חוסן תפעולי, התאוששות מאסון, אסטרטגיית יציאה מענן, עומסי AI בבנקאות"
 language: "he"
 last_reviewed: "2026-05-20"
@@ -230,6 +230,6 @@ Kubernetes מעניק לבנקים אוטומציית פריסה, אלסטיות
 - Red Hat, (2026). [ריבונות דיגיטלית לבנקים ⧉](https://www.redhat.com/en/resources/cloud-sovereignty-for-banks-overview "ריבונות ענן לבנקים").
 - Thought Machine, (2026). [תוכנת בנקאות ליבה cloud-native ⧉](https://www.thoughtmachine.net "Thought Machine Vault").
 <!-- enrich-start -->
-<aside class="author-card" aria-label="אודות המחבר"><img alt="דיוקן של סבסטיאן רוסו" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">סבסטיאן רוסו</a></strong><span class="author-card-bio">בכיר בטכנולוגיה בנקאית, כותב על AI יישומי, הגירה ל-ISO 20022, קריפטוגרפיה פוסט-קוונטית לשירותים פיננסיים והשינוי המבני בתשלומי הסיטונאות.</span><span class="author-credentials">למעלה מ-20 שנות ניסיון ב-HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA ו-Virgin Group. <a href="/about/index.html">פרופיל מלא</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="אודות המחבר"><img alt="דיוקן של סבסטיאן רוסו" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">סבסטיאן רוסו</a></strong><span class="author-card-bio">בכיר בטכנולוגיה בנקאית, כותב על AI יישומי, הגירה ל-ISO 20022, קריפטוגרפיה פוסט-קוונטית לשירותים פיננסיים והשינוי המבני בתשלומי הסיטונאות.</span><span class="author-credentials">למעלה מ-20 שנות ניסיון ב-HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA ו-Virgin Group. <a href="/about/index.html">פרופיל מלא</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">נסקר לאחרונה <time datetime="2026-05-20">2026-05-20</time>.</p>
 <!-- enrich-end -->

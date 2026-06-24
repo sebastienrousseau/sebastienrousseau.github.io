@@ -3,7 +3,7 @@ author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "Zane mai kwatanci wanda yake nuna stablecoins, adibassu da aka mai da su zuwa tokens, kuɗin bankin kasuwanci, kadarorin adibas, wallets, sasantawa, ruwa-ruwa, da daftar daidaitawa na bankuna"
 banner_height: "571"
 banner_width: "1425"
-banner: "https://cloudcdn.pro/api/transform?url=/stocks/images/pixabay-210547.webp&w=1200&format=webp&q=80"
+banner: "https://cloudcdn.pro/stocks/images/pixabay-210547-1200.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/ha/2026-05-26-stablecoins-vs-tokenised-deposi
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "stablecoins 2026, tokenised deposits, adibassun banki, GENIUS Act, JPM Coin, deposit tokens, ajiyar stablecoin, kuɗin banki, kuɗin dijital"
 language: "ha"
 excerpt: "Stablecoins da adibassu da aka mai da su zuwa tokens suna haɗuwa kan sasantawa wadda za a iya tsara amma sun bambanta kan daftar daidaitawa, doka, ruwa-ruwa, da samfuran amana. Tambayar dabarun 2026 ga bankuna ita ce horon zane — wane samfurin kuɗi ke ɗauke da wane aikin abokin ciniki — da yadda za a kare kasuwancin adibassu, matsayin sasantawa, da alamar da aka tsara daga gasar masu fitarwa masu zaman kansu."
@@ -201,6 +201,6 @@ Ya kamata a auna nasara ta hanyar tattalin arziƙin unit, shaidar juriya, inganc
 - GOV.UK, (2026). [UK fintech backed to embrace future payments technology ⧉](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Game da marubucin"><img alt="Hoton Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Babban masanin fasahar banki yana rubutu kan amfani da AI, ababen more rayuwa na biyan kuɗi, kuɗin tokenised, ISO 20022, tsaron bayan ƙididdiga, sabis na kuɗi na cloud-native, da kasuwannin dijital da aka tsara.</span><span class="author-credentials">Shekaru 20+ a HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Cikakken bayani</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Game da marubucin"><img alt="Hoton Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Babban masanin fasahar banki yana rubutu kan amfani da AI, ababen more rayuwa na biyan kuɗi, kuɗin tokenised, ISO 20022, tsaron bayan ƙididdiga, sabis na kuɗi na cloud-native, da kasuwannin dijital da aka tsara.</span><span class="author-credentials">Shekaru 20+ a HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Cikakken bayani</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Bita ta ƙarshe <time datetime="2026-05-26">2026-05-26</time>.</p>
 <!-- enrich-end -->

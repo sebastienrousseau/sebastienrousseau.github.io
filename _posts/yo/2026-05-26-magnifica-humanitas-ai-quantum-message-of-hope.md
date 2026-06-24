@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/yo/2026-05-26-magnifica-humanitas-ai-quantum-
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "Magnifica Humanitas, Pope Leo XIV, ìwé encyclical AI, ìṣe ẹ̀tọ́ ti artificial intelligence, ìṣe ẹ̀tọ́ ti quantum computing, Rerum Novarum, Ilé-ìṣọ́ Babel, ìmọ̀-ẹ̀rọ kì í ṣe àìdásí-tọ̀mọ́pọ̀, transhumanism, posthumanism, iyì ènìyàn, àpèjúwe ìmọ̀-ẹ̀rọ, ọkọ̀-ojú-irin ọkọ̀-ayọ́kẹ́lẹ́ agbára iparun internet, ìtàn ìbẹ̀rù ìwà ti ìmọ̀-ẹ̀rọ, gbígbé ìmọ̀ Lucy, ìrètí AI, EU AI Act, DORA, Anthropic, Sebastien Rousseau"
 language: "yo"
 layout: "report"
@@ -243,6 +243,6 @@ Lórí ìkójọpọ̀ agbára. Àkíyèsí ìwé pẹpẹrẹ póòpù pé "àw
 - Ascension Press, (2026). [Ìtọ́nisọ́nà Pípé Sí Ìwé Pẹpẹrẹ Póòpù Àkọ́kọ́ ti Póòpù Leo: Magnifica Humanitas ⧉](https://ascensionpress.com/blogs/articles/a-complete-guide-to-pope-leo-s-encyclical-magnificent-humanitas "Ascension — Guide to Magnifica Humanitas"). Ascension Press.
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Nípa òǹkọ̀wé"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Onímọ̀ ẹ̀rọ bánkì àgbà tí ó ń kọ nípa AI tí a lo, ìgbékalẹ̀ ìsanwó, owó tókènì, ISO 20022, ààbò post-quantum, iṣẹ́ ìnáwó cloud-native, àti àwọn ọjà oníbàátì tí a ṣàkóso.</span><span class="author-credentials">Ọdún 20+ kọjá HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profaìlì kíkún</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Nípa òǹkọ̀wé"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Onímọ̀ ẹ̀rọ bánkì àgbà tí ó ń kọ nípa AI tí a lo, ìgbékalẹ̀ ìsanwó, owó tókènì, ISO 20022, ààbò post-quantum, iṣẹ́ ìnáwó cloud-native, àti àwọn ọjà oníbàátì tí a ṣàkóso.</span><span class="author-credentials">Ọdún 20+ kọjá HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profaìlì kíkún</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Àyẹ̀wò tó kẹ́yìn <time datetime="2026-05-27">2026-05-27</time>.</p>
 <!-- enrich-end -->

@@ -18,7 +18,7 @@ id: "https://sebastienrousseau.com/yo/2026-06-06-wholesale-payments-index-iso200
 image_alt: "Àwòrán Dúdú àti Funfun ti Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "ìsanwó ńlá 2026, ISO 20022, tokenised deposits, Project Agora, ìsanwó kọjá-ààlà, ìsanwó àkókò-gangan, data àdírẹ́sì ìṣèlú, ìpé data ìsanwó"
 language: "yo-NG"
 last_reviewed: "2026-06-06"
@@ -243,6 +243,6 @@ Wọn ìmúrasílẹ̀ data-ìṣèlú, ìkọsílẹ̀ ìsanwó, ìnáwó àtú
 - Deutsche Bank, (2026). [Digital Money: stablecoins, tokenised deposits and CBDCs ⧉](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money: stablecoins, tokenised deposits and CBDCs").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Nípa olùkọ̀wé"><img alt="Àwòrán Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Onímọ̀-ẹ̀rọ bánkì agbà tí ń kọ̀wé lórí AI tí a fìmúlò, àtìlẹ́yìn ìsanwó, owó tokenised, ISO 20022, ààbò post-quantum, iṣẹ́ ìnáwó cloud-native, àti ọjà digital tí a ṣàkóso.</span><span class="author-credentials">Ọdún 20+ kọjá HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profaili kíkún</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Nípa olùkọ̀wé"><img alt="Àwòrán Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Onímọ̀-ẹ̀rọ bánkì agbà tí ń kọ̀wé lórí AI tí a fìmúlò, àtìlẹ́yìn ìsanwó, owó tokenised, ISO 20022, ààbò post-quantum, iṣẹ́ ìnáwó cloud-native, àti ọjà digital tí a ṣàkóso.</span><span class="author-credentials">Ọdún 20+ kọjá HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profaili kíkún</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Àyẹ̀wò ìkẹyìn <time datetime="2026-06-06">2026-06-06</time>.</p>
 <!-- enrich-end -->

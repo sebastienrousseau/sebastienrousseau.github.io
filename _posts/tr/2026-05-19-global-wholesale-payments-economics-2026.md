@@ -19,7 +19,7 @@ id: "https://sebastienrousseau.com/tr/2026-05-19-global-wholesale-payments-econo
 image_alt: "Sebastien Rousseau'nun siyah beyaz portresi"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "toptan ödemeler 2026, küresel ödemeler ekonomisi, ISO 20022, RTGS, sınır ötesi ödemeler, BIS CPMI, FSB, Swift CBPR+, G20 yol haritası, gerçek zamanlı brüt mutabakat, Project Agorá, Project Mandala, Project Nexus, ödeme birlikte çalışabilirliği, muhabir bankacılık, ödeme parçalanması, toptan CBDC"
 language: "tr"
 last_reviewed: "2026-05-19"

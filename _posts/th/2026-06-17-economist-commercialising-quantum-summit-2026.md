@@ -20,7 +20,7 @@ id: "https://sebastienrousseau.com/2026-06-17-economist-commercialising-quantum-
 image_alt: "ภาพถ่ายขาวดำของ Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "Commercialising Quantum Global 2026, การประชุม Economist Impact, การเข้ารหัสหลังควอนตัม, NIST ML-KEM, harvest-now decrypt-later, SNDL, HSBC ควอนตัม, Philip Intallura, ควอนตัมเซนซิง, การนำทางอิสระจาก GPS, NQCC, EU Quantum Act, Quantcore, รางวัล qBIG, Lord Vallance, ไฮบริดควอนตัม-คลาสสิก, DORA Article 6"
 language: "th-TH"
 last_reviewed: "2026-06-17"
