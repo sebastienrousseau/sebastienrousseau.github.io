@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/ru/2026-05-26-magnifica-humanitas-ai-quantum-
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "Magnifica Humanitas, Папа Лев XIV, энциклика об ИИ, этика искусственного интеллекта, этика квантовых вычислений, Rerum Novarum, Вавилонская башня, технология никогда не нейтральна, трансгуманизм, постгуманизм, человеческое достоинство, технологическая парадигма, поезд автомобиль ядерная энергия интернет, моральная паника история технологий, Lucy передача знаний, надежда ИИ, EU AI Act, DORA, Anthropic, Sebastien Rousseau"
 language: "ru"
 layout: "report"
@@ -243,6 +243,6 @@ site_software: "Static Site Generator, Rust"
 - Ascension Press, (2026). [Полное руководство по первой энциклике Папы Льва: Magnifica Humanitas ⧉](https://ascensionpress.com/blogs/articles/a-complete-guide-to-pope-leo-s-encyclical-magnificent-humanitas "Ascension — Guide to Magnifica Humanitas"). Ascension Press.
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Об авторе"><img alt="Портрет Себастьяна Руссо" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Себастьян Руссо</a></strong><span class="author-card-bio">Старший банковский технолог, пишет о прикладном ИИ, платёжной инфраструктуре, токенизированных деньгах, ISO 20022, постквантовой безопасности, облачных финансовых сервисах и регулируемых цифровых рынках.</span><span class="author-credentials">Более 20 лет в HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Полный профиль</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Об авторе"><img alt="Портрет Себастьяна Руссо" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Себастьян Руссо</a></strong><span class="author-card-bio">Старший банковский технолог, пишет о прикладном ИИ, платёжной инфраструктуре, токенизированных деньгах, ISO 20022, постквантовой безопасности, облачных финансовых сервисах и регулируемых цифровых рынках.</span><span class="author-credentials">Более 20 лет в HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Полный профиль</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Последняя проверка <time datetime="2026-05-27">2026-05-27</time>.</p>
 <!-- enrich-end -->

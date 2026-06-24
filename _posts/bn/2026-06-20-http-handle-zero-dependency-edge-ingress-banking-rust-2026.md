@@ -20,7 +20,7 @@ id: "https://sebastienrousseau.com/2026-06-20-http-handle-zero-dependency-edge-i
 image_alt: "সেবাস্তিয়েন রুসোর সাদা-কালো প্রতিকৃতি"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "http-handle, Rust এজ ইনগ্রেস, জিরো ডিপেন্ডেন্সি প্রক্সি, ব্যাংকিং ইনফ্রাস্ট্রাকচার, mTLS JWT, sendfile জিরো-কপি, ALPN HTTP3, DORA কমপ্লায়েন্স, বাজেল III, OTLP অবজার্ভেবিলিটি, স্ট্যাটিক বাইনারি, ARM64 ব্যাংকিং, জিরো ট্রাস্ট ব্যাংকিং, লাইটওয়েট ইনগ্রেস, Rust ব্যাংকিং সিকিউরিটি"
 language: "bn-BD"
 last_reviewed: "2026-06-20"

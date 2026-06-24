@@ -720,6 +720,55 @@ function fallbackCopy(text, done) {
         document.head.appendChild(style);
 
         await mod.default.run({ querySelector: "pre.mermaid" });
+
+        // Dedupe duplicate id attributes across multiple Mermaid SVGs on
+        // the same page. Mermaid 10 emits stable IDs (`arrowhead`,
+        // `crosshead`, `filled-head`, `sequencenumber`, `computer`,
+        // `database`, `clock`, …) in each diagram's <defs>, which
+        // collide when more than one diagram lives on the page and
+        // produce a WCAG 2.2 AAA Principle 4.1.1 F77 duplicate-id
+        // failure under pa11y. Walk every rendered SVG, prefix any
+        // duplicate ID with the diagram index, and rewrite same-SVG
+        // url(#…) and href="#…" references so the renamed markers
+        // still resolve.
+        try {
+            var seen = Object.create(null);
+            var svgs = document.querySelectorAll("pre.mermaid svg");
+            svgs.forEach(function (svg, idx) {
+                var rename = Object.create(null);
+                var nodes = svg.querySelectorAll("[id]");
+                nodes.forEach(function (n) {
+                    var orig = n.getAttribute("id");
+                    if (!orig) return;
+                    if (!seen[orig]) { seen[orig] = true; return; }
+                    var fresh = "m" + idx + "-" + orig;
+                    n.setAttribute("id", fresh);
+                    rename[orig] = fresh;
+                });
+                if (Object.keys(rename).length === 0) return;
+                // Fix up url(#orig) / #orig / xlink:href="#orig" inside
+                // this SVG so renamed markers keep resolving.
+                svg.querySelectorAll("*").forEach(function (el) {
+                    for (var i = 0; i < el.attributes.length; i++) {
+                        var attr = el.attributes[i];
+                        var v = attr.value;
+                        if (!v) continue;
+                        Object.keys(rename).forEach(function (orig) {
+                            var fresh = rename[orig];
+                            if (v.indexOf("url(#" + orig + ")") !== -1) {
+                                v = v.split("url(#" + orig + ")").join("url(#" + fresh + ")");
+                            }
+                            if (v === "#" + orig) {
+                                v = "#" + fresh;
+                            }
+                        });
+                        if (v !== attr.value) attr.value = v;
+                    }
+                });
+            });
+        } catch (dedupErr) {
+            console.warn("mermaid id dedup failed", dedupErr);
+        }
     } catch (err) {
         console.warn("mermaid load failed", err);
     }

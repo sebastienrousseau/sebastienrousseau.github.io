@@ -20,7 +20,7 @@ id: "https://sebastienrousseau.com/2026-06-17-economist-commercialising-quantum-
 image_alt: "Чорно-білий портрет Себастьяна Руссо"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "Commercialising Quantum Global 2026, саміт Economist Impact, постквантова криптографія, NIST ML-KEM, harvest-now decrypt-later, SNDL, квантова програма HSBC, Philip Intallura, квантовий сенсинг, GPS-незалежна навігація, NQCC, EU Quantum Act, Quantcore, премія qBIG, Lord Vallance, гібридний квантово-класичний, DORA Article 6"
 language: "uk-UA"
 last_reviewed: "2026-06-17"

@@ -6,7 +6,7 @@ author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "هندسة معمارية هندسية تحت إضاءة منظّمة — ترمز إلى دور HTML Generator بوصفه خط أنابيب مُحكَم التحويل من Markdown إلى HTML لبنية تحتية نشر آمنة وخاضعة للامتثال"
 banner_height: "1597"
 banner_width: "2584"
-banner: "https://cloudcdn.pro/api/transform?url=/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp&w=1200&format=webp&q=80"
+banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash-1200.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
@@ -20,7 +20,7 @@ id: "https://sebastienrousseau.com/2026-06-20-html-generator-accessible-seo-stru
 image_alt: "صورة بالأبيض والأسود لسيباستيان روسو"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "html-generator، Rust تحويل Markdown إلى HTML، إمكانية الوصول في الكود، WCAG 2.1 AA، HTML محسَّن لمحركات البحث، JSON-LD، MathML، Mermaid، WebAssembly، EAA، DORA، ADA Title III، النشر الشامل، التحليل في بيئة معزولة، مفتوح المصدر"
 language: "ar-SA"
 last_reviewed: "2026-06-20"
@@ -282,6 +282,6 @@ graph TD
 - GitHub، 2026. [مستودع HTML Generator ⧉](https://github.com/sebastienrousseau/html-generator "HTML Generator open-source repository").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="نبذة عن الكاتب"><img alt="صورة سيباستيان روسو" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">خبير تقنية مصرفية بارز يكتب عن تطبيقات الذكاء الاصطناعي وبنية تحتية للمدفوعات والنقود الرمزية وISO 20022 والأمن ما بعد الكمومي والخدمات المالية سحابية الأصل والبنية التحتية مفتوحة المصدر والأسواق الرقمية الخاضعة للتنظيم.</span><span class="author-credentials">أكثر من 20 عاماً في HSBC Commercial &amp; Investment Bank وPayPal وBarclays وShazam وAKQA وVirgin Group. <a href="/about/index.html">الملف الكامل</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="نبذة عن الكاتب"><img alt="صورة سيباستيان روسو" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">خبير تقنية مصرفية بارز يكتب عن تطبيقات الذكاء الاصطناعي وبنية تحتية للمدفوعات والنقود الرمزية وISO 20022 والأمن ما بعد الكمومي والخدمات المالية سحابية الأصل والبنية التحتية مفتوحة المصدر والأسواق الرقمية الخاضعة للتنظيم.</span><span class="author-credentials">أكثر من 20 عاماً في HSBC Commercial &amp; Investment Bank وPayPal وBarclays وShazam وAKQA وVirgin Group. <a href="/about/index.html">الملف الكامل</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">آخر مراجعة <time datetime="2026-06-20">2026-06-20</time>.</p>
 <!-- enrich-end -->

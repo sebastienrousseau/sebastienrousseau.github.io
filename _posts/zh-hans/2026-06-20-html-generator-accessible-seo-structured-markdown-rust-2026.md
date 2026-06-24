@@ -6,7 +6,7 @@ author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "结构化光线下的建筑几何造型——象征 HTML Generator 作为可访问、SEO 就绪、沙盒化发布基础设施的编译门控 Markdown 转 HTML 管道所扮演的角色"
 banner_height: "1597"
 banner_width: "2584"
-banner: "https://cloudcdn.pro/api/transform?url=/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp&w=1200&format=webp&q=80"
+banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash-1200.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
@@ -20,7 +20,7 @@ id: "https://sebastienrousseau.com/2026-06-20-html-generator-accessible-seo-stru
 image_alt: "Sebastien Rousseau 的黑白肖像"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "html-generator, Rust Markdown 转 HTML, 可访问性即代码, WCAG 2.1 AA, SEO 就绪 HTML, JSON-LD, MathML, Mermaid, WebAssembly, EAA, DORA, ADA Title III, 无障碍发布, 沙盒解析, 开源"
 language: "zh-Hans"
 last_reviewed: "2026-06-20"
@@ -282,6 +282,6 @@ G-SIBs 运营着庞大的多语言公共资产，在多个司法管辖区发布�
 - GitHub, 2026. [HTML Generator repository ⧉](https://github.com/sebastienrousseau/html-generator "HTML Generator 开源仓库").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="关于作者"><img alt="Sebastien Rousseau 肖像" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">资深银行技术专家，专注于应用 AI、支付基础设施、代币化货币、ISO 20022、后量子安全、云原生金融服务、开源基础设施与受监管数字市场的研究与写作。</span><span class="author-credentials">逾 20 年跨 HSBC 商业与投资银行、PayPal、Barclays、Shazam、AKQA、Virgin Group 从业经验。<a href="/about/index.html">完整简介</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="关于作者"><img alt="Sebastien Rousseau 肖像" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">资深银行技术专家，专注于应用 AI、支付基础设施、代币化货币、ISO 20022、后量子安全、云原生金融服务、开源基础设施与受监管数字市场的研究与写作。</span><span class="author-credentials">逾 20 年跨 HSBC 商业与投资银行、PayPal、Barclays、Shazam、AKQA、Virgin Group 从业经验。<a href="/about/index.html">完整简介</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">最后审阅时间 <time datetime="2026-06-20">2026-06-20</time>。</p>
 <!-- enrich-end -->

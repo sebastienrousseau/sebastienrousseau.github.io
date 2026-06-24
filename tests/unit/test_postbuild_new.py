@@ -508,29 +508,36 @@ def test_bulk_minify_css_returns_zero_on_empty_public(tmp_path: Path, monkeypatc
 
 
 # ---------------------------------------------------------------------------
-# wrap_cdn_images_in_transform — CloudCDN /api/transform wrapping pass
+# wrap_cdn_images_in_transform — CloudCDN responsive-variant rewriting pass
+#
+# CDN policy change on 2026-06-23 closed /api/transform to public traffic
+# (returns 401). Public pages now use pre-generated variants named
+# <stem>-{320,640,1200,1920}.webp under /stocks/images/. wrap_cdn_images_in_
+# transform now emits those variant URLs instead of transform-URLs. The
+# function name is retained to minimise downstream blast radius.
 # ---------------------------------------------------------------------------
 
 
-def test_wrap_cdn_images_rewrites_webp_to_transform_url():
+def test_wrap_cdn_images_rewrites_webp_to_variant_url():
     html = '<img src="https://cloudcdn.pro/stocks/images/foo.webp" width="600">'
     out, n = pb.wrap_cdn_images_in_transform(html)
     assert n == 1
-    assert "/api/transform?url=/stocks/images/foo.webp" in out
-    assert "w=1200" in out  # 2× the rendered width
-    assert "format=webp" in out
-    assert "q=80" in out
+    # 600 rendered × 2 = 1200, which is itself a variant width.
+    assert "src=\"https://cloudcdn.pro/stocks/images/foo-1200.webp\"" in out
+    assert "/api/transform" not in out
 
 
-def test_wrap_cdn_images_uses_higher_quality_for_lcp_hero():
+def test_wrap_cdn_images_lcp_hero_still_picks_variant():
+    """Variant quality is fixed at ingestion time, so fetchpriority=high
+    no longer changes the emitted URL. The variant width is what matters."""
     html = (
         '<img src="https://cloudcdn.pro/stocks/images/hero.webp" '
         'width="400" fetchpriority="high">'
     )
     out, n = pb.wrap_cdn_images_in_transform(html)
     assert n == 1
-    assert "q=85" in out
-    assert "q=80" not in out
+    # 400 × 2 = 800, snapped up to the 1200 variant.
+    assert "src=\"https://cloudcdn.pro/stocks/images/hero-1200.webp\"" in out
 
 
 def test_wrap_cdn_images_skips_svg_sources():
@@ -562,29 +569,31 @@ def test_wrap_cdn_images_skips_non_cdn_origin():
     assert (out, n) == (html, 0)
 
 
-def test_wrap_cdn_images_defaults_to_w_1200_when_no_width_attr():
-    """No width= attribute → default base of 600, 2× = 1200, capped at 1600."""
+def test_wrap_cdn_images_defaults_to_1200_variant_when_no_width():
+    """No width= attribute → default base of 600, 2× = 1200, matches the
+    1200 variant exactly."""
     html = '<img src="https://cloudcdn.pro/stocks/images/foo.webp">'
     out, n = pb.wrap_cdn_images_in_transform(html)
     assert n == 1
-    assert "w=1200" in out
+    assert "src=\"https://cloudcdn.pro/stocks/images/foo-1200.webp\"" in out
 
 
-def test_wrap_cdn_images_caps_width_at_1600():
+def test_wrap_cdn_images_snaps_oversized_to_1920_variant():
+    """A request for 2000×2=4000 snaps to the largest variant (1920)."""
     html = '<img src="https://cloudcdn.pro/stocks/images/banner.webp" width="2000">'
     out, n = pb.wrap_cdn_images_in_transform(html)
     assert n == 1
-    assert "w=1600" in out
+    assert "src=\"https://cloudcdn.pro/stocks/images/banner-1920.webp\"" in out
 
 
-def test_wrap_cdn_images_floors_width_at_200():
-    """Very small width attributes (e.g. icons) get floored to 200 so we
-    don't request an unhelpfully tiny render."""
+def test_wrap_cdn_images_tiny_widths_snap_to_320_variant():
+    """Very small width attributes (e.g. icons) snap up to the smallest
+    pre-generated variant (320)."""
     html = '<img src="https://cloudcdn.pro/stocks/images/icon.webp" width="40">'
     out, n = pb.wrap_cdn_images_in_transform(html)
     assert n == 1
-    # 40*2 = 80, floored to 200.
-    assert "w=200" in out
+    # 40 × 2 = 80; snap up to the 320 variant (smallest pre-gen).
+    assert "src=\"https://cloudcdn.pro/stocks/images/icon-320.webp\"" in out
 
 
 def test_wrap_cdn_images_handles_unquoted_attrs():
@@ -593,14 +602,15 @@ def test_wrap_cdn_images_handles_unquoted_attrs():
     html = "<img src=https://cloudcdn.pro/stocks/images/foo.webp width=600>"
     out, n = pb.wrap_cdn_images_in_transform(html)
     assert n == 1
-    assert "/api/transform" in out
+    assert "foo-1200.webp" in out
+    assert "/api/transform" not in out
 
 
 def test_wrap_cdn_images_strips_existing_query_string():
     html = '<img src="https://cloudcdn.pro/stocks/images/foo.webp?v=1" width="600">'
     out, n = pb.wrap_cdn_images_in_transform(html)
     assert n == 1
-    assert "url=/stocks/images/foo.webp&" in out
+    assert "foo-1200.webp" in out
     assert "v=1" not in out
 
 
@@ -611,49 +621,80 @@ def test_wrap_cdn_images_skips_tag_with_no_src():
 
 
 def test_wrap_cdn_images_handles_jpg_and_png_extensions():
+    """Non-webp paths under /stocks/images/ don't have webp variants under
+    the same naming convention. Fall back to the bare CDN URL — strictly
+    better than a 404 and matches the CDN policy."""
     html = (
         '<img src="https://cloudcdn.pro/stocks/images/a.jpg" width="300">'
         '<img src="https://cloudcdn.pro/stocks/images/b.png" width="300">'
         '<img src="https://cloudcdn.pro/stocks/images/c.jpeg" width="300">'
     )
-    _, n = pb.wrap_cdn_images_in_transform(html)
+    out, n = pb.wrap_cdn_images_in_transform(html)
     assert n == 3
+    # All three return the bare CDN URL.
+    assert "https://cloudcdn.pro/stocks/images/a.jpg" in out
+    assert "https://cloudcdn.pro/stocks/images/b.png" in out
 
 
-def test_build_cdn_transform_url_encodes_path_segments():
-    """Path components with spaces, %, and other unsafe chars must be
-    percent-encoded; the leading / and inter-segment / stay intact."""
-    out = pb._build_cdn_transform_url("/stocks/has space.webp", 400, 80)
-    assert "/api/transform?url=/stocks/has%20space.webp" in out
-    assert "&w=400&format=webp&q=80" in out
+def test_build_cdn_transform_url_emits_variant_path():
+    """The renamed-in-spirit helper now emits ``<stem>-<width>.webp``.
+    Width 400 → snap to 640 variant."""
+    out = pb._build_cdn_transform_url("/stocks/images/foo.webp", 400, 80)
+    assert out == "https://cloudcdn.pro/stocks/images/foo-640.webp"
+
+
+def test_build_cdn_transform_url_idempotent_on_existing_variant():
+    """A path that's already a variant (foo-1200.webp) passes through
+    unchanged so the postbuild's multi-pass pipeline doesn't compound
+    suffixes to foo-1200-1200.webp."""
+    out = pb._build_cdn_transform_url("/stocks/images/foo-1200.webp", 600, 80)
+    assert out == "https://cloudcdn.pro/stocks/images/foo-1200.webp"
+
+
+def test_build_cdn_transform_url_falls_through_for_non_stocks_paths():
+    """`/clients/*` paths (logos) don't have pre-gen variants — they pass
+    through as the bare CDN URL."""
+    out = pb._build_cdn_transform_url("/clients/v1/logos/akqa.webp", 400, 80)
+    assert out == "https://cloudcdn.pro/clients/v1/logos/akqa.webp"
 
 
 def test_wrap_cdn_images_also_rewrites_preload_link_href():
     """``<link rel="preload" as="image" href="...">`` carrying a bare
-    CDN URL was a regression source — the template-emitted preload
-    pointed at the raw 350 KB PNG while the corresponding <img> used the
-    transform-wrapped URL, so the browser fetched both. Wrap pass now
-    rewrites the preload too."""
+    CDN URL is rewritten the same way as `<img>` srcs — points at the
+    pre-gen variant equivalent."""
     html = (
         '<link rel="preload" as="image" '
-        'href="https://cloudcdn.pro/stocks/images/hero.png" fetchpriority="high">'
+        'href="https://cloudcdn.pro/stocks/images/hero.webp" fetchpriority="high">'
     )
     out, n = pb.wrap_cdn_images_in_transform(html)
     assert n == 1
-    assert "/api/transform?url=/stocks/images/hero.png" in out
-    # fetchpriority=high on a preload is the LCP signal — q=85.
-    assert "q=85" in out
+    assert "hero-1200.webp" in out
+    assert "/api/transform" not in out
 
 
 def test_wrap_cdn_preload_handles_reverse_attribute_order():
     """SSG's minifier may emit ``as=image`` before ``rel=preload``."""
     html = (
         "<link as=image fetchpriority=high "
-        "href=https://cloudcdn.pro/stocks/images/hero.png rel=preload>"
+        "href=https://cloudcdn.pro/stocks/images/hero.webp rel=preload>"
     )
     out, n = pb.wrap_cdn_images_in_transform(html)
     assert n == 1
-    assert "/api/transform?url=/stocks/images/hero.png" in out
+    assert "hero-1200.webp" in out
+
+
+def test_rewrite_persisted_transforms_unwraps_api_transform_urls():
+    """``rewrite_persisted_transforms`` cleans up any /api/transform URLs
+    that survived into rendered HTML (e.g. from markdown-persisted
+    related-card srcs, OpenGraph meta) → emits the variant equivalent."""
+    html = (
+        '<img src="https://cloudcdn.pro/api/transform?url='
+        '/stocks/images/foo.webp&w=1200&format=webp&q=80">'
+    )
+    out, n = pb.rewrite_persisted_transforms(html)
+    assert n == 1
+    assert "foo-1200.webp" in out
+    assert "/api/transform" not in out
 
 
 def test_wrap_cdn_preload_skips_svg_passthrough():

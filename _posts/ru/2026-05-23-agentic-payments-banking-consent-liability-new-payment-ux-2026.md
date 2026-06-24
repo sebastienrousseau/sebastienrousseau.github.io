@@ -3,7 +3,7 @@ author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "Схема архитектуры агентских платежей: ИИ-агенты, мандаты на согласие, токенизированные учётные данные, карточные сети, банки, продавцы и аудиторские следы"
 banner_height: "571"
 banner_width: "1425"
-banner: "https://cloudcdn.pro/api/transform?url=/stocks/images/ai-robot.webp&w=1200&format=webp&q=80"
+banner: "https://cloudcdn.pro/stocks/images/ai-robot-1200.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/ru/2026-05-23-agentic-payments-banking-consen
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "агентские платежи 2026, платежи AI-агентов, Mastercard Agent Pay, платёж Rabobank AI, AP2, A2A, x402, MCP, протокол машинных платежей, согласие на платёж, Regulation E, EFTA, ответственность за платёж, проверяемое намерение, токенизация, ключи доступа, банковский UX, AI-коммерция"
 language: "ru"
 excerpt: "Агентские платежи перешли от концепции к реальной транзакции в 2026 году — Mastercard и Rabobank провели платёж AI-агента в Нидерландах через Agent Pay, появляются криптографические мандаты в духе AP2, а HM Treasury заявляет о необходимости адаптации регулирования. Архитектурный вопрос для банков — согласие, идентификация, ответственность и доказательства до расчёта."
@@ -203,6 +203,6 @@ J.P. Morgan ожидает, что агентская коммерция нач�
 - J.P. Morgan, (2026). [Payments Outlook: Five Trends Powering Payments in 2026 ⧉](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Об авторе"><img alt="Портрет Себастьяна Руссо" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Себастьян Руссо</a></strong><span class="author-card-bio">Старший банковский технолог, пишет о прикладном ИИ, платёжной инфраструктуре, токенизированных деньгах, ISO 20022, постквантовой безопасности, облачных финансовых сервисах и регулируемых цифровых рынках.</span><span class="author-credentials">Более 20 лет в HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Полный профиль</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Об авторе"><img alt="Портрет Себастьяна Руссо" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Себастьян Руссо</a></strong><span class="author-card-bio">Старший банковский технолог, пишет о прикладном ИИ, платёжной инфраструктуре, токенизированных деньгах, ISO 20022, постквантовой безопасности, облачных финансовых сервисах и регулируемых цифровых рынках.</span><span class="author-credentials">Более 20 лет в HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Полный профиль</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Последняя проверка <time datetime="2026-05-23">2026-05-23</time>.</p>
 <!-- enrich-end -->

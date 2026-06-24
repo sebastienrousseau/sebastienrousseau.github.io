@@ -19,7 +19,7 @@ id: "https://sebastienrousseau.com/pt-br/2026-05-19-globais-atacado-pagamentos-e
 image_alt: "Retrato em preto e branco de Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "pagamentos de atacado 2026, economia dos pagamentos globais, ISO 20022, RTGS, pagamentos transfronteiriços, BIS CPMI, FSB, Swift CBPR+, roteiro do G20, liquidação bruta em tempo real, Project Agorá, Project Mandala, Project Nexus, interoperabilidade de pagamentos, banco correspondente, fragmentação de pagamentos, CBDC de atacado"
 language: "pt-br"
 last_reviewed: "2026-05-19"

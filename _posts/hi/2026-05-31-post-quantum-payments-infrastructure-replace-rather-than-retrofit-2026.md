@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/hi/2026-05-31-post-quantum-payments-infrastru
 image_alt: "सेबास्तियन रूसो का श्वेत-श्याम चित्र"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "पोस्ट-क्वांटम क्रिप्टोग्राफी, PQC भुगतान, क्रिप्टो-चपलता, अभी-संग्रह-बाद-में-डिक्रिप्ट, HNDL, NIST पोस्ट-क्वांटम मानक, ML-KEM, ML-DSA, FIPS 203, FIPS 204, भुगतान रेल माइग्रेशन, ISO 20022 PQC, SWIFT MT प्रतिस्थापन, HSM, PKI पतन, परिचालन लचीलापन, Quantum Computing Cybersecurity Preparedness Act"
 language: "hi"
 excerpt: "अभी-संग्रह-बाद-में-डिक्रिप्ट आज के TLS-संरक्षित भुगतान संदेशों को कल के डिक्रिप्ट किए गए जोखिम में बदल देता है। ML-KEM और ML-DSA, विरासत रेलों के लिए मापे गए RSA और ECC कुंजियों से एक क्रम बड़े हैं — अनुकूलन विखंडन, विलंबता और HSM थकावट को जन्म देता है। 2026 का आर्किटेक्चरल निर्णय यह है कि नियामक घड़ी समाप्त होने से पहले पैच करें या प्रतिस्थापित करें।"
@@ -264,7 +264,7 @@ SLH-DSA (SPHINCS+ का मानकीकृत संस्करण) है�
 - Bank of England (PRA), (2024). [SS1/21 — Operational resilience: Impact tolerances for important business services ⧉](https://www.bankofengland.co.uk/prudential-regulation/publication/2024/march/operational-resilience-impact-tolerances-for-important-business-services "PRA SS1/21").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="लेखक के बारे में"><img alt="सेबास्तियन रूसो का चित्र" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">सेबास्तियन रूसो</a></strong><span class="author-card-bio">वरिष्ठ बैंकिंग प्रौद्योगिकीविद् जो प्रयोज्य AI, ISO 20022 माइग्रेशन, वित्तीय सेवाओं के लिए पोस्ट-क्वांटम क्रिप्टोग्राफी और थोक भुगतान के संरचनात्मक रूपांतरण पर लिखते हैं।</span><span class="author-credentials">HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group में 20+ वर्षों का अनुभव। <a href="/about/index.html">पूर्ण प्रोफ़ाइल</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="लेखक के बारे में"><img alt="सेबास्तियन रूसो का चित्र" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">सेबास्तियन रूसो</a></strong><span class="author-card-bio">वरिष्ठ बैंकिंग प्रौद्योगिकीविद् जो प्रयोज्य AI, ISO 20022 माइग्रेशन, वित्तीय सेवाओं के लिए पोस्ट-क्वांटम क्रिप्टोग्राफी और थोक भुगतान के संरचनात्मक रूपांतरण पर लिखते हैं।</span><span class="author-credentials">HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group में 20+ वर्षों का अनुभव। <a href="/about/index.html">पूर्ण प्रोफ़ाइल</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">अंतिम समीक्षा <time datetime="2026-05-31">2026-05-31</time>।</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">संबंधित पठन</h2>

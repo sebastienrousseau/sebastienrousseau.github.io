@@ -6,7 +6,7 @@ author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "Tsarin gine-gine a ƙarƙashin haske mai tsari — yana alama da rawar HTML Generator a matsayin bututun sarrafa Markdown zuwa HTML da aka kebe don buga abubuwa masu sauƙin isa, shirye don SEO, da amintacce"
 banner_height: "1597"
 banner_width: "2584"
-banner: "https://cloudcdn.pro/api/transform?url=/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp&w=1200&format=webp&q=80"
+banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash-1200.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
@@ -20,7 +20,7 @@ id: "https://sebastienrousseau.com/2026-06-20-html-generator-accessible-seo-stru
 image_alt: "Hoton Baƙar Fata da Fari na Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "html-generator, Rust Markdown zuwa HTML, sauƙin isa a matsayin code, WCAG 2.1 AA, HTML shirye don SEO, JSON-LD, MathML, Mermaid, WebAssembly, EAA, DORA, ADA Title III, buga mai sauƙin isa, sarrafa lafiyayye, buɗaɗɗen tushe"
 language: "ha-NG"
 last_reviewed: "2026-06-20"
@@ -282,6 +282,6 @@ Masu gina gidajen yanar gizo na tsaye, ƙungiyoyin takardu, marubuta masu fasaha
 - GitHub, 2026. [Ma'ajiyar HTML Generator ⧉](https://github.com/sebastienrousseau/html-generator "HTML Generator open-source repository").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Game da marubucin"><img alt="Hoton Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Ƙwararren fasaha na banki yana rubutu akan AI da aka aiwatar, ababen more rayuwa na biyan kuɗi, kuɗin da aka tokenize, ISO 20022, tsaron bayan-quantum, ayyukan kuɗi na cloud-native, ababen more rayuwa na buɗaɗɗen tushe, da kasuwar dijital da aka tsara.</span><span class="author-credentials">Shekaru 20+ a fadin HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Cikakken bayani</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Game da marubucin"><img alt="Hoton Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Ƙwararren fasaha na banki yana rubutu akan AI da aka aiwatar, ababen more rayuwa na biyan kuɗi, kuɗin da aka tokenize, ISO 20022, tsaron bayan-quantum, ayyukan kuɗi na cloud-native, ababen more rayuwa na buɗaɗɗen tushe, da kasuwar dijital da aka tsara.</span><span class="author-credentials">Shekaru 20+ a fadin HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Cikakken bayani</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">An karshe duba <time datetime="2026-06-20">2026-06-20</time>.</p>
 <!-- enrich-end -->

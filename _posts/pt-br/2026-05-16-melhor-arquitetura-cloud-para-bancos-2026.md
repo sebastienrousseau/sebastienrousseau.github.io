@@ -5,7 +5,7 @@ description: 'A arquitetura cloud em 2026 cristalizou-se em torno de seis pilare
 date: "May 16, 2026"
 language: 'pt-BR'
 locale: 'pt_BR'
-banner: 'https://cloudcdn.pro/stock/images/cloud-architecture-2026-banner.webp'
+banner: 'https://cloudcdn.pro/stocks/images/getty-images-dqHskSJDfe4.webp'
 banner_alt: 'Diagrama de arquitetura cloud de seis pilares para 2026: AI-native, multicloud, serverless, edge, DevSecOps e design sustentável, com camada de pesquisa edge CloudCDN'
 seo_title: 'A melhor arquitetura cloud para bancos em 2026: um blueprint'
 twitter_title: 'A melhor arquitetura cloud para bancos em 2026: um blueprint'

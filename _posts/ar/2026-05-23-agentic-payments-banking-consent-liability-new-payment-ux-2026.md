@@ -3,7 +3,7 @@ author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "مخطط معمارية المدفوعات الوكيلة يُظهر وكلاء الذكاء الاصطناعي وتفويضات الموافقة وبيانات الاعتماد المُرمَّزة وشبكات البطاقات والبنوك والتجار ومسارات التدقيق"
 banner_height: "571"
 banner_width: "1425"
-banner: "https://cloudcdn.pro/api/transform?url=/stocks/images/ai-robot.webp&w=1200&format=webp&q=80"
+banner: "https://cloudcdn.pro/stocks/images/ai-robot-1200.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/ar/2026-05-23-agentic-payments-banking-consen
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "المدفوعات الوكيلة 2026، مدفوعات وكلاء الذكاء الاصطناعي، Mastercard Agent Pay، مدفوعات Rabobank بالذكاء الاصطناعي، AP2، A2A، x402، MCP، بروتوكول مدفوعات الآلات، موافقة الدفع، Regulation E، EFTA، مسؤولية الدفع، النية القابلة للتحقق، الترميز، مفاتيح المرور، تجربة الدفع المصرفية، تجارة الذكاء الاصطناعي"
 language: "ar"
 excerpt: "عبرت المدفوعات الوكيلة في 2026 من المفهوم إلى المعاملة الحية — نفّذت Mastercard وRabobank مدفوعة وكيل ذكاء اصطناعي في هولندا عبر Agent Pay، وتفويضات تشفيرية على نسق AP2 تظهر، وتقول HM Treasury إن تنظيم خدمات الدفع يجب أن يتكيّف. السؤال المعماري المصرفي هو الموافقة والهوية والمسؤولية ودليل ما قبل التسوية."
@@ -203,6 +203,6 @@ site_software: "Static Site Generator, Rust"
 - J.P. Morgan، (2026). [Payments Outlook: Five Trends Powering Payments in 2026 ⧉](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="نبذة عن المؤلف"><img alt="صورة شخصية لسيباستيان روسو" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">سيباستيان روسو</a></strong><span class="author-card-bio">تقني مصرفي أول يكتب عن الذكاء الاصطناعي التطبيقي، والبنية التحتية للمدفوعات، والنقد المُرمَّز، وISO 20022، والأمن ما بعد الكمومي، والخدمات المالية السحابية الأصل، والأسواق الرقمية المُنظَّمة.</span><span class="author-credentials">أكثر من 20 عاماً من الخبرة لدى HSBC للخدمات المصرفية التجارية والاستثمارية، وPayPal، وBarclays، وShazam، وAKQA، ومجموعة Virgin. <a href="/about/index.html">الملف الكامل</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="نبذة عن المؤلف"><img alt="صورة شخصية لسيباستيان روسو" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">سيباستيان روسو</a></strong><span class="author-card-bio">تقني مصرفي أول يكتب عن الذكاء الاصطناعي التطبيقي، والبنية التحتية للمدفوعات، والنقد المُرمَّز، وISO 20022، والأمن ما بعد الكمومي، والخدمات المالية السحابية الأصل، والأسواق الرقمية المُنظَّمة.</span><span class="author-credentials">أكثر من 20 عاماً من الخبرة لدى HSBC للخدمات المصرفية التجارية والاستثمارية، وPayPal، وBarclays، وShazam، وAKQA، ومجموعة Virgin. <a href="/about/index.html">الملف الكامل</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">آخر مراجعة <time datetime="2026-05-23">2026-05-23</time>.</p>
 <!-- enrich-end -->

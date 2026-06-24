@@ -3,7 +3,7 @@ author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "Leiterplattenmuster, das sich zu einer Stadtsilhouette auflöst — das visuelle Register für Cloud-natives Banking: Plattform-Engineering-Primitive, eingewebt in das operative Gefüge der Bank."
 banner_height: "571"
 banner_width: "1425"
-banner: "https://cloudcdn.pro/api/transform?url=/stocks/images/quang-nguyen-vinh-2649403.webp&w=1600&format=webp&q=85"
+banner: "https://cloudcdn.pro/stocks/images/quang-nguyen-vinh-2649403-1920.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/de/2026-06-05-cloud-native-banking-index-dora
 image_alt: "Schwarz-Weiß-Porträt von Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "Cloud-natives Banking 2026, DORA Banken, Cloud-Konzentrationsrisiko, Plattform-Engineering Banken, IKT-Drittparteienrisiko, Cloud-Exit-Strategie, souveräne Cloud, FIPS 203, ML-KEM, ISO 20022, Kubernetes"
 language: "de-DE"
 last_reviewed: "2026-06-05"
@@ -282,6 +282,6 @@ Jährliches End-to-End-Exit-Ausführungstesting je CIF, das von einem designiert
 - Cloud Native Computing Foundation, (2019). [OpenTelemetry ⧉](https://opentelemetry.io/ "OpenTelemetry").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Über den Autor"><img alt="Porträt von Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior Banking-Technologe, der über angewandte KI, Zahlungsverkehrsinfrastruktur, tokenisiertes Geld, ISO 20022, Post-Quanten-Sicherheit, Cloud-native Finanzdienstleistungen und regulierte digitale Märkte schreibt.</span><span class="author-credentials">Mehr als 20 Jahre Erfahrung bei HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA und Virgin Group. <a href="/about/index.html">Vollständiges Profil</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Über den Autor"><img alt="Porträt von Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior Banking-Technologe, der über angewandte KI, Zahlungsverkehrsinfrastruktur, tokenisiertes Geld, ISO 20022, Post-Quanten-Sicherheit, Cloud-native Finanzdienstleistungen und regulierte digitale Märkte schreibt.</span><span class="author-credentials">Mehr als 20 Jahre Erfahrung bei HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA und Virgin Group. <a href="/about/index.html">Vollständiges Profil</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Zuletzt geprüft <time datetime="2026-06-05">2026-06-05</time>.</p>
 <!-- enrich-end -->

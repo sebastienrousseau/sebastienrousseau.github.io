@@ -3,7 +3,7 @@ author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "תרשים ארכיטקטורת תשלומים אגנטיים: סוכני AI, מנדטי הסכמה, אישורים בטוקנים, רשתות כרטיסים, בנקים, סוחרים ומסלולי ביקורת"
 banner_height: "571"
 banner_width: "1425"
-banner: "https://cloudcdn.pro/api/transform?url=/stocks/images/ai-robot.webp&w=1200&format=webp&q=80"
+banner: "https://cloudcdn.pro/stocks/images/ai-robot-1200.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/he/2026-05-23-agentic-payments-banking-consen
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "תשלומים אגנטיים 2026, תשלומי סוכני AI, Mastercard Agent Pay, תשלום Rabobank AI, AP2, A2A, x402, MCP, פרוטוקול תשלומי מכונה, הסכמת תשלום, Regulation E, EFTA, אחריות תשלום, כוונה בת-אימות, המרה לטוקנים, מפתחות גישה, UX בנקאי, מסחר AI"
 language: "he"
 excerpt: "תשלומים אגנטיים חצו את הסף מקונספט לעסקה חיה ב-2026 — Mastercard ו-Rabobank ביצעו בהולנד תשלום סוכן AI דרך Agent Pay, מנדטים קריפטוגרפיים בסגנון AP2 צצים, ו-HM Treasury קובע שרגולציית שירותי התשלום חייבת להסתגל. שאלת הארכיטקטורה הבנקאית היא הסכמה, זהות, אחריות וראיה טרום-סליקה."
@@ -203,6 +203,6 @@ J.P. Morgan צופה שמסחר אגנטי יחל בקטגוריות חוזרו�
 - J.P. Morgan, (2026). [Payments Outlook: Five Trends Powering Payments in 2026 ⧉](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="על המחבר"><img alt="דיוקן של סבסטיאן רוסו" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">סבסטיאן רוסו</a></strong><span class="author-card-bio">טכנולוג בנקאי בכיר הכותב על בינה מלאכותית יישומית, תשתיות תשלומים, כסף בטוקנים, ISO 20022, אבטחה פוסט-קוונטית, שירותים פיננסיים cloud-native ושווקים דיגיטליים מפוקחים.</span><span class="author-credentials">למעלה מ-20 שנים ב-HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">פרופיל מלא</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="על המחבר"><img alt="דיוקן של סבסטיאן רוסו" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">סבסטיאן רוסו</a></strong><span class="author-card-bio">טכנולוג בנקאי בכיר הכותב על בינה מלאכותית יישומית, תשתיות תשלומים, כסף בטוקנים, ISO 20022, אבטחה פוסט-קוונטית, שירותים פיננסיים cloud-native ושווקים דיגיטליים מפוקחים.</span><span class="author-credentials">למעלה מ-20 שנים ב-HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">פרופיל מלא</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">נבדק לאחרונה <time datetime="2026-05-23">2026-05-23</time>.</p>
 <!-- enrich-end -->

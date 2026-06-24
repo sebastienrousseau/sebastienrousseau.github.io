@@ -20,7 +20,7 @@ id: "https://sebastienrousseau.com/2026-06-20-http-handle-zero-dependency-edge-i
 image_alt: "דיוקן בשחור-לבן של סבסטיאן רוסו"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "http-handle, כניסה לקצה Rust, פרוקסי ללא תלויות, תשתית בנקאית, mTLS JWT, sendfile אפס-העתקה, ALPN HTTP3, ציות DORA, באזל III, תצפית OTLP, בינארי סטטי, ARM64 בנקאי, אפס אמון בנקאי, כניסה קלת-משקל, אבטחת Rust בנקאי"
 language: "he-IL"
 last_reviewed: "2026-06-20"

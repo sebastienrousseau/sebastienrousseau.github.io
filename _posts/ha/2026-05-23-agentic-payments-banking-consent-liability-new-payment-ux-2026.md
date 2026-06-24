@@ -3,7 +3,7 @@ author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "Zane na gine-ginen biyan kuɗi ta wakili yana nuna AI agents, umarnin yarda, tokenised credentials, hanyoyin sadarwar kati, bankuna, 'yan kasuwa, da bayanan binciken"
 banner_height: "571"
 banner_width: "1425"
-banner: "https://cloudcdn.pro/api/transform?url=/stocks/images/ai-robot.webp&w=1200&format=webp&q=80"
+banner: "https://cloudcdn.pro/stocks/images/ai-robot-1200.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/ha/2026-05-23-agentic-payments-banking-consen
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "biyan kuɗi ta wakili 2026, biyan AI agent, Mastercard Agent Pay, biyan AI na Rabobank, AP2, A2A, x402, MCP, machine payments protocol, yardar biyan kuɗi, Regulation E, EFTA, alhakin biyan kuɗi, niyya mai tabbas, tokenisation, passkeys, UX na banki, kasuwancin AI"
 language: "ha"
 excerpt: "Biyan kuɗi ta wakili a 2026 ba ra'ayi ba ne kuma: Mastercard da Rabobank sun aiwatar da hada-hada kai tsaye a Netherlands inda AI agent ya fara biyan kuɗi ta Mastercard Agent Pay ba tare da taɓa bayanan kati ba. Umarnin sa hannu masu salon AP2, x402, A2A, MCP da MPP suna fitowa a matsayin Layer na protocol, yayin da EFTA, Regulation E da dokar sabis na biyan kuɗi ta UK har yanzu ba a sabunta su don hada-hada na wakili masu zaman kansu ba. Bankuna yanzu suna buƙatar gine-ginen yarda + sa hannu + alhaki da ke samar da shaida kafin sasantawa — ba tsaron rikici na baya-bayan nan ba."
@@ -203,6 +203,6 @@ Bankuna su fara da amfani mai iyaka, ƙaramin haɗari, ƙaramin daraja inda za a
 - J.P. Morgan, (2026). [Payments Outlook: Five Trends Powering Payments in 2026 ⧉](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Game da marubucin"><img alt="Hoton Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Babban masanin fasahar banki yana rubutu kan amfani da AI, ababen more rayuwa na biyan kuɗi, kuɗin tokenised, ISO 20022, tsaron bayan ƙididdiga, sabis na kuɗi na cloud-native, da kasuwannin dijital da aka tsara.</span><span class="author-credentials">Shekaru 20+ a HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Cikakken bayani</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Game da marubucin"><img alt="Hoton Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Babban masanin fasahar banki yana rubutu kan amfani da AI, ababen more rayuwa na biyan kuɗi, kuɗin tokenised, ISO 20022, tsaron bayan ƙididdiga, sabis na kuɗi na cloud-native, da kasuwannin dijital da aka tsara.</span><span class="author-credentials">Shekaru 20+ a HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Cikakken bayani</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Bita ta ƙarshe <time datetime="2026-05-23">2026-05-23</time>.</p>
 <!-- enrich-end -->

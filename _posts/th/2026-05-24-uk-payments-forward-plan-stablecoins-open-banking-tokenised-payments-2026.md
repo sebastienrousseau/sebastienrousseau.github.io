@@ -3,7 +3,7 @@ author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "ไดอะแกรมการปรับปรุงระบบการชำระเงินของสหราชอาณาจักร แสดง stablecoins, tokenised deposits, open banking, AI agents, กฎระเบียบ FCA, การรวม PSR และตลาดดิจิทัลขายส่ง"
 banner_height: "571"
 banner_width: "1425"
-banner: "https://cloudcdn.pro/api/transform?url=/stocks/images/riccardo-oliva-C5DLhUkEWfM.webp&w=1200&format=webp&q=80"
+banner: "https://cloudcdn.pro/stocks/images/riccardo-oliva-C5DLhUkEWfM-1200.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/th/2026-05-24-uk-payments-forward-plan-stable
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "UK Payments Forward Plan 2026, สเตเบิลคอยน์ UK, เงินฝากแบบโทเคน, โอเพนแบงกิ้ง FCA, การควบรวม PSR FCA, การชำระเงินแบบเอเจนต์ UK, Wholesale Digital Markets Champion, Chris Woolard, การกำกับดูแลบริการชำระเงิน"
 language: "th"
 excerpt: "UK Payments Forward Plan และชุดนโยบายเดือนเมษายน 2026 วางกรอบเดียวสำหรับการชำระเงินทั่วไป สเตเบิลคอยน์ เงินฝากแบบโทเคน โอเพนแบงกิ้ง และการชำระเงินแบบเอเจนต์ คำถามเชิงกลยุทธ์ของธนาคารคือวินัยในการออกแบบ ข้อมูล ช่องทาง การควบคุม ความรับผิด และเวิร์กโฟลว์ของลูกค้าใดที่ควรอยู่ด้วยกัน และจะนำเสนอหลักฐานการประสานงานต่อหน่วยงานกำกับดูแลอย่างไร"
@@ -201,6 +201,6 @@ UK Payments Forward Plan ในปี 2026 ในที่สุดแล้ว�
 - Global Government Finance, (2026). [UK wholesale digital markets champion ⧉](https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/ "UK wholesale digital markets champion").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="เกี่ยวกับผู้เขียน"><img alt="ภาพเหมือนของ Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">นักเทคโนโลยีธนาคารอาวุโสที่เขียนเกี่ยวกับ AI ประยุกต์ โครงสร้างพื้นฐานการชำระเงิน เงินที่ผ่านการทำโทเคน ISO 20022 ความปลอดภัยหลังควอนตัม บริการทางการเงินแบบ cloud-native และตลาดดิจิทัลที่อยู่ภายใต้การกำกับดูแล</span><span class="author-credentials">มากกว่า 20 ปีที่ HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">โปรไฟล์เต็ม</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="เกี่ยวกับผู้เขียน"><img alt="ภาพเหมือนของ Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">นักเทคโนโลยีธนาคารอาวุโสที่เขียนเกี่ยวกับ AI ประยุกต์ โครงสร้างพื้นฐานการชำระเงิน เงินที่ผ่านการทำโทเคน ISO 20022 ความปลอดภัยหลังควอนตัม บริการทางการเงินแบบ cloud-native และตลาดดิจิทัลที่อยู่ภายใต้การกำกับดูแล</span><span class="author-credentials">มากกว่า 20 ปีที่ HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">โปรไฟล์เต็ม</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">ตรวจสอบล่าสุด <time datetime="2026-05-24">2026-05-24</time>.</p>
 <!-- enrich-end -->

@@ -21,7 +21,7 @@ id: "https://sebastienrousseau.com/projects"
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "AI voice assistant, Audio analysis, Quantum cryptography, Post-quantum cryptography, ISO 20022 payment, Bank statement parser, Static site generator, Password generator, Rust library, Rust logging library"
 last_reviewed: "2026-05-14"
 language: "en-GB"
@@ -108,7 +108,7 @@ site_software: "Static Site Generator, Rust"
 
 <section class="proof-rail projects-proof" aria-label="Open source by the numbers">
 <div class="kpi-cell">
-  <span class="kpi-cell-value">170k</span>
+  <span class="kpi-cell-value">171k</span>
   <span class="kpi-cell-label">Open-source downloads</span>
 </div>
 <div class="kpi-cell">
@@ -116,7 +116,7 @@ site_software: "Static Site Generator, Rust"
   <span class="kpi-cell-label">GitHub stars</span>
 </div>
 <div class="kpi-cell">
-  <span class="kpi-cell-value">77</span>
+  <span class="kpi-cell-value">79</span>
   <span class="kpi-cell-label">Sigstore-signed articles</span>
 </div>
 <div class="kpi-cell">

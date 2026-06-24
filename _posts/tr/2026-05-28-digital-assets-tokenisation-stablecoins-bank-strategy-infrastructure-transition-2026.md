@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/tr/2026-05-28-digital-assets-tokenisation-sta
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "dijital varlıklar 2026, tokenize gerçek dünya varlıkları, stablecoinler bankacılık, tokenize mevduatlar, dijital varlık saklama, DLT bankacılık, takas altyapısı, teminat hareketliliği, programlanabilir para, dijital varlık banka stratejisi"
 language: "tr"
 excerpt: "Dijital varlıklar artık inovasyon bahsi değildir. Takas, saklama ve bilanço mimarisi sorusudur. Kripto ~3 trilyon dolarlık bir varlık sınıfı, stablecoinler ~300 milyar dolara ulaştı ve tokenize gerçek dünya varlıkları 2025'te ~%300 büyüdü. Bankalar için 2026'daki stratejik görev katılıp katılmamak değil, paranın, varlıkların ve takasın programlanabilir hale geldiği bir dünya için altyapıyı, kontrolleri ve yönetişimi nasıl tasarlayacağıdır."
@@ -307,7 +307,7 @@ Adreslenebilir havuzlardan yakalanan gelir, çift raylı işletim maliyeti, kont
 <!-- enrich-start -->
 ## Yazar Hakkında
 
-<aside class="author-card" aria-label="Yazar hakkında"><img alt="Sebastien Rousseau'nun portresi" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Uygulamalı yapay zeka, ödeme altyapısı, tokenleştirilmiş para, ISO 20022, post-kuantum güvenlik, bulut yerel finansal hizmetler ve düzenlenmiş dijital piyasalar üzerine yazan kıdemli bankacılık teknoloğu.</span><span class="author-credentials">HSBC Ticari ve Yatırım Bankası, PayPal, Barclays, Shazam, AKQA ve Virgin Group'ta 20+ yıl. <a href="/about/index.html">Tam profil</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Yazar hakkında"><img alt="Sebastien Rousseau'nun portresi" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Uygulamalı yapay zeka, ödeme altyapısı, tokenleştirilmiş para, ISO 20022, post-kuantum güvenlik, bulut yerel finansal hizmetler ve düzenlenmiş dijital piyasalar üzerine yazan kıdemli bankacılık teknoloğu.</span><span class="author-credentials">HSBC Ticari ve Yatırım Bankası, PayPal, Barclays, Shazam, AKQA ve Virgin Group'ta 20+ yıl. <a href="/about/index.html">Tam profil</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Son inceleme <time datetime="2026-05-28">28 Mayıs 2026</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">İlgili okumalar</h2>

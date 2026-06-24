@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/ko/2026-05-31-post-quantum-payments-infrastru
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "양자내성암호, PQC 결제, 암호 민첩성, 지금 수집 나중에 복호화, HNDL, NIST 양자내성 표준, ML-KEM, ML-DSA, FIPS 203, FIPS 204, 결제 레일 마이그레이션, ISO 20022 PQC, SWIFT MT 대체, HSM, PKI 붕괴, 운영 회복력, Quantum Computing Cybersecurity Preparedness Act"
 language: "ko"
 excerpt: "지금 수집 나중에 복호화(HNDL)는 오늘의 TLS 보호 결제 메시지를 내일의 복호화 노출로 바꿉니다. ML-KEM·ML-DSA는 레거시 레일이 설계 기준으로 삼은 RSA·ECC 키보다 한 자릿수 더 크며, 개조는 단편화·지연·HSM 고갈을 유발합니다. 2026년의 아키텍처 결정은 규제 시계가 다하기 전에 패치하느냐 대체하느냐입니다."
@@ -264,7 +264,7 @@ SLH-DSA(SPHINCS+의 표준화 버전)는 해시 기반이며 따라서 가장 �
 - Bank of England (PRA), (2024). [SS1/21 — Operational resilience: Impact tolerances for important business services ⧉](https://www.bankofengland.co.uk/prudential-regulation/publication/2024/march/operational-resilience-impact-tolerances-for-important-business-services "PRA SS1/21").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="저자 소개"><img alt="Sebastien Rousseau의 인물 사진" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">응용 AI, ISO 20022 마이그레이션, 금융 서비스용 양자내성 암호, 도매 결제의 구조적 전환에 관해 집필하는 시니어 뱅킹 기술 전문가입니다.</span><span class="author-credentials">HSBC 상업·투자은행, PayPal, Barclays, Shazam, AKQA, Virgin Group을 아우르는 20년 이상의 경력. <a href="/about/index.html">전체 프로필</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="저자 소개"><img alt="Sebastien Rousseau의 인물 사진" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">응용 AI, ISO 20022 마이그레이션, 금융 서비스용 양자내성 암호, 도매 결제의 구조적 전환에 관해 집필하는 시니어 뱅킹 기술 전문가입니다.</span><span class="author-credentials">HSBC 상업·투자은행, PayPal, Barclays, Shazam, AKQA, Virgin Group을 아우르는 20년 이상의 경력. <a href="/about/index.html">전체 프로필</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">최종 검토 <time datetime="2026-05-31">2026-05-31</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">관련 읽을거리</h2>

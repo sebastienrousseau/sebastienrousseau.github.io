@@ -3,7 +3,7 @@ author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "Diagram stosu zgodnosci pokazujacy odpornosc DORA, transparentnosc EU AI Act, suwerennosc danych, ryzyko koncentracji chmury, logi audytowe, nadzor nad modelami i dostawcow trzecich"
 banner_height: "571"
 banner_width: "1425"
-banner: "https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant-office.webp&w=1200&format=webp&q=80"
+banner: "https://cloudcdn.pro/stocks/images/akande-voice-assistant-office-1200.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/pl/2026-05-28-dora-ai-act-data-sovereignty-ba
 image_alt: "Czarno-bialy portret Sebastiena Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "DORA 2026, EU AI Act 2026, suwerennosc danych banki, odpornosc operacyjna, ryzyko koncentracji chmury, zgodnosc AI w uslugach finansowych, AI wysokiego ryzyka"
 language: "pl"
 excerpt: "DORA, EU AI Act, RODO, ryzyko koncentracji chmury i suwerennosc danych laczy sie w 2026 roku w jeden stos zgodnosci dla bankow. Strategiczne pytanie to dyscyplina projektowania — prowadzenie zgodnosci, nadzoru nad AI, dowodow odpornosci ICT i decyzji o suwerennosci danych jako jedna architektura, a nie piec rownoleglych programow."
@@ -201,6 +201,6 @@ Sukces należy mierzyć ekonomiką jednostkową, dowodami odporności, jakości�
 - GOV.UK, (2026). [UK fintech backed to embrace future payments technology ⧉](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="O autorze"><img alt="Portret Sebastiena Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist piszący o stosowanej AI, infrastrukturze płatniczej, pieniądzu tokenizowanym, ISO 20022, bezpieczeństwie post-kwantowym, cloud-native usługach finansowych i regulowanych rynkach cyfrowych.</span><span class="author-credentials">Ponad 20 lat doświadczenia w HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Pełny profil</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="O autorze"><img alt="Portret Sebastiena Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist piszący o stosowanej AI, infrastrukturze płatniczej, pieniądzu tokenizowanym, ISO 20022, bezpieczeństwie post-kwantowym, cloud-native usługach finansowych i regulowanych rynkach cyfrowych.</span><span class="author-credentials">Ponad 20 lat doświadczenia w HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Pełny profil</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Ostatnia weryfikacja <time datetime="2026-05-28">2026-05-28</time>.</p>
 <!-- enrich-end -->
