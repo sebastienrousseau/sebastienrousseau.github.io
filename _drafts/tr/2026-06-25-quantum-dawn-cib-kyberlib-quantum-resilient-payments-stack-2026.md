@@ -138,6 +138,14 @@ Pratik biçim tanıdıktır. Kod tabanının bir anahtar kapsülleme mekanizmas�
 
 Hibrit, geçiş için varsayılan seçimdir. NIST kılavuzu ve [IETF hibrit anahtar değişimi taslakları](https://datatracker.ietf.org/doc/draft-ietf-tls-hybrid-design/ "IETF taslağı — TLS 1.3'te hibrit anahtar değişimi"), PQC uygulamaları yalnız başına ayakta durabilecek kadar saha saati biriktirene dek ihtiyatlı yolun aynı el sıkışmada klasik artı PQC olduğunu kabul ediyor. Bankalar, tek bir ilkelliğin yirmi beş yıl boyunca kriptanalize dayanacağına bahis yapacak konumda değil. Hibrit çalıştırmak, her şeyi günlüğe kaydetmek ve klasik bacağı daha sonra düşürme seçeneğini elinde tutmak konumundalar.
 
+### Hibrit vergisi — kripto-çevikliğin gerçek maliyeti
+
+Hibrit doğru karardır. Bedava değildir. X25519MLKEM768 taşıyan bir hibrit TLS 1.3 ClientHello, ~150 bytes yerine yaklaşık 1.2 KB'a çıkar; bir ML-DSA-65 imzası, ECDSA-P256 için 64 bytes'a karşılık ~3.3 KB tutar; işlem başına CPU yükü, hibrit bacağın klasik bacağın yanında oturduğu her noktada kabaca iki katına çıkar. Mutabakat kararlarının 5-10 ms pencerelerinin içinde alındığı toptan takas hatlarında, eklenen handshake-RTT maliyeti ve mesaj başına imzalama gecikmesi yuvarlama hatası değildir — kapasite planlamasına modellenmek ve operatörün taahhüt ettiği SLA'da adlandırılmak zorundadır. Yönetim kurulu belgesi, yalnızca algoritma seçimini değil, her geçiş kilometre taşında beklenen verim ve kuyruk gecikmesi etkisini de yayımlamalıdır. Ölçülmüş bir taban çizgisi olmadan hibrite giren bankalar, maliyeti ilk olay incelemesi sırasında öğrenirler.
+
+### Tedarikçi gerçeği — HSM ve KMS bağımlılığı
+
+KyberLib, ilkellikleri saf Rust'ta kanıtlar. Bir Tier-1 bankanın içindeki üretim kriptografi yolu saf Rust'ta çalışmaz — ticari HSM'ler (Thales, Entrust, Utimaco) ve aynı tedarikçi sağlanan modülleri saran bulut anahtar yönetim hizmetleri (AWS KMS, Azure Key Vault, Google Cloud KMS) üzerinden çalışır. Bu modüllerde PQC yetenekli ürün yazılımı şu anda sevkiyatta; geçiş planının ayakta kalıp kalmayacağı, bankanın özgül HSM filosu ile KMS katmanının FIPS 203 / FIPS 204 algoritmalarını sertifikalı, uygulama yığınının kullandığı API yüzeyinde açıkta ve bankanın standartlaştırdığı ürün yazılımı izinde destekli olarak taşıyıp taşımadığına bağlıdır. Bu bağımlılık, CBOM'a ve program risk kayıt defterine, çeyrek bazında adlandırılmış tedarikçi taahhütleriyle birlikte girer. Tedarikçi ürün yazılımı taahhüdü içermeyen bir PQC planı, tek bir tedarikçi gecikmiş bir PQC izi duyurduğu an kayan bir plandır.
+
 ## 03. Ödemelerde ve CIB iş akışlarında PQC
 
 Geçiş sırası tek tip değildir. Toptan ödemeler, repo, saklama ve ticaret finansmanı, imzalanmış talimatlar geriye dönük olarak sahteleştirilirse en uzun gizlilik kuyruklarını, en büyük tek işlem değerlerini ve en akut karşı taraf riskini taşır. Önce bunlar gider.

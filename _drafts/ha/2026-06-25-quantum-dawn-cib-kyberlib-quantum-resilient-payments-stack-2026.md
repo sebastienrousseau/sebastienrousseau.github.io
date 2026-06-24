@@ -138,6 +138,14 @@ Siffar mai amfani da ita sananne ne. Duk wani inda lambar ke taɓa key-encapsula
 
 Hybrid shi ne tsohuwar sauyawa. Jagorancin NIST da [zane-zane na IETF hybrid key-exchange](https://datatracker.ietf.org/doc/draft-ietf-tls-hybrid-design/ "Daftarin IETF — Hybrid key exchange a TLS 1.3") sun yarda cewa hanyar da ta dace ita ce classical-plus-PQC akan handshake ɗaya har sai aiwatarwar PQC ta tara isasshen lokutan filin don tsayawa kanta. Banki ba su a matsayin da za su saka caca akan primitive guda yana rayuwa ta cryptanalysis na shekaru ashirin da biyar. Suna a matsayin da za su gudanar da hybrid, su shigar da komai, kuma su riƙe zaɓin sauke ɓangaren classical daga baya.
 
+### Harajin hybrid — ainihin farashin crypto-agility
+
+Hybrid shi ne zaɓi madaidaici. Ba shi da kyauta. ClientHello na hybrid TLS 1.3 mai ɗauke da X25519MLKEM768 yana gudana kusan 1.2 KB maimakon ~150 bytes; sa hannun ML-DSA-65 shi ne ~3.3 KB idan aka kwatanta da 64 bytes na ECDSA-P256; aikin CPU kowace ma'amala kusan ya ninka duk inda ƙafar hybrid take zaune kusa da na classical. Akan layuƙan wholesale clearing inda hukunce-hukuncen settlement ke zaune cikin tagogi na 5-10 ms, ƙarin farashin handshake-RTT da latency na sa hannu kowane saƙo ba su zama kurakurai na zagayawa ba — dole ne a tsara su cikin capacity planning kuma a ambace su a cikin SLA da mai aiki ya yi alkawari. Takarda ta hukumar ya kamata ta buga tasirin throughput da tail latency da ake tsammani a kowane matakin ƙaura, ba kawai zaɓin algorithm ba. Banki da suka shiga hybrid ba tare da ma'auni mai aunawa ba suna gano farashin a lokacin bita na lamarin farko.
+
+### Hakikanin masu sayarwa — dogaro da HSM da KMS
+
+KyberLib ya tabbatar da primitives a Rust kawai. Hanyar crypto ta samarwa a cikin banki na Tier-1 ba ta gudana a Rust kawai — tana gudana ta HSMs na kasuwanci (Thales, Entrust, Utimaco) da kuma ta cloud key-management services (AWS KMS, Azure Key Vault, Google Cloud KMS) waɗanda ke nannade modules ɗaya da mai sayarwa ya samar. Firmware mai iya PQC akan waɗannan modules na fitowa; ko shirin ƙaura zai tsaya yana dogara akan ko jirgin HSM na musamman na banki da matakin KMS suna da algorithms na FIPS 203 / FIPS 204 da aka tabbatar, an fallasa su a saman API da tarin aikace-aikacen ke amfani da shi, kuma ana tallafa musu akan hanyar firmware da banki ya tsara. Wannan dogaro ya na cikin CBOM da kuma akan programme risk register, tare da alkawuran mai sayarwa masu suna ta kowace kwata. Shirin PQC ba tare da alkawari na firmware na mai sayarwa ba shi ne shirin da ke zamewa lokacin da mai samarwa ɗaya ya sanar da jinkirin hanyar PQC.
+
 ## 03. PQC a biyan kuɗi da hanyoyin aiki na CIB
 
 Tsarin ƙaura ba shi da iri ɗaya. Biyan kuɗi na manyan ma'amaloli, repo, custody da kuɗin kasuwanci suna ɗauke da mafi tsayi na sirri, mafi girman ƙimar ma'amala ɗaya, da mafi kaifi na fallasa ga abokan ma'amala idan aka jabunta umarnin da aka sa hannu daga baya. Sun fara.

@@ -138,6 +138,14 @@ Den praktiska formen är välbekant. Varje plats där kodbasen rör en mekanism 
 
 Hybrid är den övergångsstandard som gäller. NIST:s riktlinjer och [IETF:s utkast om hybrid nyckelutbyte](https://datatracker.ietf.org/doc/draft-ietf-tls-hybrid-design/ "IETF draft — Hybrid key exchange in TLS 1.3") accepterar att den försiktiga vägen är klassisk-plus-PQC i samma handskakning tills PQC-implementationer har samlat tillräckligt många fälttimmar för att stå för sig själva. Banker är inte i en position att satsa på att en enskild primitiv överlever kryptanalys i tjugofem år. De är i en position att köra hybrid, logga allt och behålla optionen att senare släppa det klassiska benet.
 
+### Hybridskatten — vad krypto-agility faktiskt kostar
+
+Hybrid är rätt beslut. Det är inte gratis. En hybrid TLS 1.3 ClientHello som bär X25519MLKEM768 ligger på ungefär 1.2 KB i stället för ~150 bytes; en ML-DSA-65-signatur är ~3.3 KB mot 64 bytes för ECDSA-P256; CPU-arbetet per transaktion fördubblas i praktiken där hybridbenet sitter bredvid ett klassiskt. På grossistclearingens rails, där avvecklingsbeslut ligger inom fönster på 5-10 ms, är den extra handskakningens RTT-kostnad och signeringslatensen per meddelande inga avrundningsfel — de måste modelleras in i kapacitetsplaneringen och namnges i den SLA operatören förbinder sig till. Styrelseunderlaget bör publicera förväntad genomströmning och svanslatens vid varje migrationsmilstolpe, inte bara algoritmvalet. Banker som går in i hybrid utan en mätt baslinje får reda på kostnaden under den första incidentutredningen.
+
+### Leverantörsverklighet — HSM- och KMS-beroendet
+
+KyberLib bevisar primitiverna i ren Rust. Den produktionssatta kryptovägen inuti en Tier-1-bank körs inte i ren Rust — den går genom kommersiella HSM:er (Thales, Entrust, Utimaco) och genom molnens nyckelhanteringstjänster (AWS KMS, Azure Key Vault, Google Cloud KMS) som omsluter samma leverantörsledda moduler. PQC-kapabel fast programvara på dessa moduler börjar levereras; huruvida migrationsplanen håller beror på om bankens specifika HSM-flotta och KMS-nivå har FIPS 203- och FIPS 204-algoritmerna certifierade, exponerade i det API-skikt applikationsstacken använder, och stödda på den firmware-spår banken har standardiserat. Det beroendet hör hemma i CBOM och på programmets riskregister, med namngivna leverantörsåtaganden per kvartal. En PQC-plan utan ett leverantörsåtagande för fast programvara är en plan som glider i samma stund en enda leverantör annonserar ett försenat PQC-spår.
+
 ## 03. PQC i betalningar och CIB-arbetsflöden
 
 Migrationsordningen är inte enhetlig. Partihandelsbetalningar, repo, custody och handelsfinansiering bär de längsta konfidentialitetssvansarna, de största värdena per enskild transaktion och den mest akuta motpartsexponeringen om signerade instruktioner förfalskas retroaktivt. De går först.

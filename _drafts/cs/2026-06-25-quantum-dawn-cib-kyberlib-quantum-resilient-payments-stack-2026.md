@@ -138,6 +138,14 @@ Praktická podoba je známá. Každé místo, kde se codebase dotýká mechanism
 
 Hybrid je přechodový výchozí stav. Pokyny NIST i [IETF drafty pro hybridní výměnu klíčů](https://datatracker.ietf.org/doc/draft-ietf-tls-hybrid-design/ "IETF draft — Hybrid key exchange in TLS 1.3") akceptují, že rozumnou cestou je klasika plus PQC na tomtéž handshake, dokud implementace PQC nenahromadí dostatek hodin v terénu, aby stály samy o sobě. Banky si nemohou dovolit vsadit na to, že jediné primitivum přežije kryptoanalýzu pětadvacet let. Mohou si dovolit provozovat hybrid, vše logovat a ponechat si opci klasickou nohu později odstavit.
 
+### Hybridní daň — skutečné náklady krypto-agility
+
+Hybrid je správná volba. Není zadarmo. Hybridní TLS 1.3 ClientHello nesoucí X25519MLKEM768 má zhruba 1.2 KB místo ~150 bytes; podpis ML-DSA-65 měří ~3.3 KB oproti 64 bytes u ECDSA-P256; výkon CPU na transakci se zhruba zdvojnásobuje všude, kde hybridní noha sedí vedle klasické. Na rails velkoobchodního clearingu, kde rozhodnutí o vypořádání sedí uvnitř oken 5-10 ms, není přidaný náklad handshake RTT a podpisová latence na zprávu zaokrouhlovací chybou — musí být zamodelován do plánování kapacity a pojmenován v SLA, k němuž se operátor zavazuje. Materiál pro představenstvo by měl publikovat očekávaný dopad na propustnost a ocasovou latenci v každém migračním milníku, ne jen volbu algoritmu. Banky, které jdou do hybridu bez změřené baseline, se o nákladu dozvědí až při prvním incidentním přezkumu.
+
+### Realita dodavatelů — závislost na HSM a KMS
+
+KyberLib dokazuje primitiva v čistém Rustu. Produkční kryptografická cesta uvnitř Tier-1 banky v čistém Rustu neběží — vede přes komerční HSM (Thales, Entrust, Utimaco) a přes cloudové služby správy klíčů (AWS KMS, Azure Key Vault, Google Cloud KMS), které obalují tytéž moduly od dodavatelů. PQC-schopný firmware na těchto modulech se dodává; zda migrační plán obstojí, závisí na tom, zda konkrétní flotila HSM v bance a úroveň KMS mají algoritmy FIPS 203 / FIPS 204 certifikované, vystavené v API povrchu, který používá aplikační stack, a podporované na firmware větvi, kterou si banka standardizovala. Tato závislost patří do CBOM a do registru rizik programu, se jmenovanými závazky dodavatelů po kvartálech. PQC plán bez závazku k dodavatelskému firmware je plán, který klouže ve chvíli, kdy jediný dodavatel ohlásí zpožděnou PQC větev.
+
 ## 03. PQC v platbách a CIB workflows
 
 Pořadí migrace není jednotné. Velkoobchodní platby, repo, custody a trade finance mají nejdelší ocasy důvěrnosti, nejvyšší jednotransakční hodnoty a nejostřejší protistranovou expozici, pokud by podepsané instrukce byly zpětně padělány. Jdou jako první.

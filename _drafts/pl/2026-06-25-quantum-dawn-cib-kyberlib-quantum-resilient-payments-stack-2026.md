@@ -138,6 +138,14 @@ Praktyczna forma jest znana. Każde miejsce w kodzie, w którym dotyka się mech
 
 Tryb hybrydowy jest przejściowym domyślnym wyborem. Wytyczne NIST oraz [szkice IETF dotyczące hybrydowej wymiany kluczy](https://datatracker.ietf.org/doc/draft-ietf-tls-hybrid-design/ "IETF draft — Hybrid key exchange in TLS 1.3") przyjmują, że ostrożną ścieżką jest klasyka-plus-PQC w jednym handshake'u do czasu, aż implementacje PQC zbiorą wystarczająco wiele godzin pracy, by stać samodzielnie. Banki nie są w pozycji, by stawiać na przetrwanie jednego prymitywu pod kryptoanalizą przez 25 lat. Są w pozycji, by uruchomić tryb hybrydowy, logować wszystko i zachować opcję wyłączenia klasycznej nogi później.
 
+### Podatek hybrydowy — rzeczywisty koszt krypto-zwinności
+
+Hybryda jest właściwą decyzją. Nie jest darmowa. Hybrydowy ClientHello TLS 1.3 niosący X25519MLKEM768 waży ok. 1.2 KB zamiast ~150 bytes; podpis ML-DSA-65 to ~3.3 KB wobec 64 bytes dla ECDSA-P256; pracę CPU na transakcję mniej więcej podwaja się wszędzie tam, gdzie noga hybrydowa siedzi obok klasycznej. Na railach rozliczania hurtowego, gdzie decyzje o rozliczeniu zapadają w oknach 5-10 ms, dodatkowy koszt handshake-RTT i opóźnienie podpisywania per komunikat nie są błędem zaokrąglenia — muszą zostać wmodelowane w planowanie wydajności i nazwane w SLA, do którego operator się zobowiązuje. Materiał dla zarządu powinien publikować spodziewany wpływ na przepustowość i opóźnienie ogonowe na każdym kamieniu milowym migracji, a nie tylko wybór algorytmu. Banki, które wchodzą w hybrydę bez zmierzonej linii bazowej, dowiadują się o koszcie podczas pierwszego przeglądu incydentu.
+
+### Rzeczywistość dostawców — zależność od HSM i KMS
+
+KyberLib udowadnia działanie prymitywów w czystym Rust. Produkcyjna ścieżka kryptograficzna w banku Tier-1 nie działa w czystym Rust — biegnie przez komercyjne HSM-y (Thales, Entrust, Utimaco) oraz przez chmurowe usługi zarządzania kluczami (AWS KMS, Azure Key Vault, Google Cloud KMS), które otaczają te same dostarczane przez producentów moduły. Firmware z obsługą PQC na tych modułach jest dostarczany; to, czy plan migracji się utrzyma, zależy od tego, czy konkretna flota HSM i poziom KMS w banku mają algorytmy FIPS 203 / FIPS 204 certyfikowane, wystawione w API używanym przez stos aplikacyjny oraz wspierane na ścieżce firmware, którą bank ustandaryzował. Ta zależność należy do CBOM i do rejestru ryzyk programu, z imiennie wskazanymi zobowiązaniami dostawców na kwartał. Plan PQC bez zobowiązania dotyczącego firmware'u dostawcy to plan, który ślizga się w momencie, gdy pojedynczy dostawca ogłasza opóźnioną ścieżkę PQC.
+
 ## 03. PQC w płatnościach i przepływach CIB
 
 Kolejność migracji nie jest jednolita. Płatności hurtowe, repo, custody i finansowanie handlu mają najdłuższe ogony poufności, największe wartości pojedynczej transakcji oraz najostrzejszą ekspozycję kontrahentową, gdy podpisane instrukcje zostaną sfałszowane retrospektywnie. Ruszają pierwsze.

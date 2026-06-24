@@ -138,6 +138,14 @@ Tọ́jú KyberLib gẹ́gẹ́ bí ẹ̀rí pé àwọn ìpilẹ̀ ń ṣiṣ�
 
 Hybrid ni àpẹrẹ ìyípadà. Ìtọ́sọ́nà NIST àti [àwọn àkọsílẹ̀ hybrid key-exchange IETF](https://datatracker.ietf.org/doc/draft-ietf-tls-hybrid-design/ "IETF draft — Hybrid key exchange in TLS 1.3") gba pé ọ̀nà tó múnúdùn ni classical-plus-PQC lórí handshake kan náà títí àwọn ìmúṣe PQC yóò fi ní àwọn wákàtí ojú ọjà tó tó láti dúró nìkan. Àwọn báńkì kò wà ní ipò láti tẹ̀tẹ̀ lórí ìpilẹ̀ kan ṣoṣo láti yè cryptanalysis fún ọdún márùn-mẹ́ẹ̀ẹ́dọ́gbọ̀n. Wọ́n wà ní ipò láti ṣe hybrid, ṣe àkọsílẹ̀ gbogbo nǹkan, kí wọ́n sì pa ìyàn mọ́ láti yọ ẹsẹ̀ classical kúrò lẹ́yìn.
 
+### Owó-orí hybrid — iye gidi ti crypto-agility
+
+Hybrid ni ìpinnu tó tọ́. Kò sì jẹ́ ọ̀fẹ́. ClientHello TLS 1.3 hybrid tó gbé X25519MLKEM768 ń ṣiṣẹ́ tó 1.2 KB dípò ~150 bytes; àmì ML-DSA-65 jẹ́ ~3.3 KB lòdì sí 64 bytes fún ECDSA-P256; iṣẹ́ CPU ìṣirò-kọ̀ọ̀kan fẹ́rẹ̀ pọ̀ ní ìlọ́po méjì níbikíbi tí ẹsẹ̀ hybrid bá jókòó lẹ́gbẹ̀ẹ́ ti classical kan. Lórí àwọn ọ̀nà wholesale clearing tí àwọn ìpinnu settlement ti jókòó nínú àwọn fèrèsé 5-10 ms, àfikún iye handshake-RTT àti ìdúró-àkókò àmì-ìfọwọ́sí ìṣirò-kọ̀ọ̀kan kì í ṣe àṣìṣe yíká — wọ́n gbọ́dọ̀ jẹ́ tí a fi sí ètò capacity planning, kí a sì sọ wọn ní orúkọ nínú SLA tí olùṣiṣẹ́ bá fọwọ́sí. Ìwé ìgbìmọ̀ olórí gbọ́dọ̀ tẹ ipa throughput àti tail latency tí a retí jáde ní ìbámu ìṣíkiri kọ̀ọ̀kan, kì í ṣe yíyàn àpẹrẹ nìkan. Àwọn báńkì tí ó wọ inú hybrid láìsí ìpilẹ̀ tí a wọ̀n ń mọ̀ nípa iye náà lákòókò àyẹ̀wò ìṣẹ̀lẹ̀ àkọ́kọ́.
+
+### Òtítọ́ olutaja — ìgbẹ́kẹ̀lé HSM àti KMS
+
+KyberLib fi ìpilẹ̀ hàn ní Rust pípé. Ọ̀nà crypto ìṣẹ̀dá inú báńkì Tier-1 kò ṣiṣẹ́ ní Rust pípé — ó ń ṣiṣẹ́ kọjá àwọn HSM ìṣòwò (Thales, Entrust, Utimaco) àti kọjá àwọn iṣẹ́ ìṣàkóso-bọtìnnì òfúrufú (AWS KMS, Azure Key Vault, Google Cloud KMS) tí ń bo àwọn modulu kan náà tí olutaja pèsè. firmware tí ó lè ṣe PQC lórí àwọn modulu wọ̀nyẹn ń jáde; bóyá àpẹrẹ ìṣíkiri náà yóò dúró dá lórí bóyá ọ̀wọ́ HSM pàtó ti báńkì àti ìpele KMS rẹ̀ ní àwọn àpẹrẹ FIPS 203 / FIPS 204 tí a ti fọwọ́sí, tí a fi hàn lórí ojú API tí àkójọpọ̀ ohun-èlò ìṣàmúlò ń lò, àti tí a ti ṣètìlẹ́yìn lórí ọ̀wọ́ firmware tí báńkì ti dárúkọ. Ìgbẹ́kẹ̀lé yẹn jẹ́ ti CBOM àti ti programme risk register, pẹ̀lú àwọn ìfọwọ́sí olutaja tí ó ní orúkọ ní gbogbo ìkẹjọ. Àpẹrẹ PQC láìsí ìfọwọ́sí firmware olutaja jẹ́ àpẹrẹ tí ó ń yọ kúrò nígbà tí olùpèsè kan bá kéde ọ̀nà PQC tí ó pẹ́.
+
 ## 03. PQC nínú ìsanwó àti àwọn iṣẹ́ CIB
 
 Ìto ìṣíkiri kì í ṣe ohun kan náà fún gbogbo. Ìsanwó wholesale, repo, custody àti ìnáwó ìṣòwò ní àwọn ìrù ìbòsí tó gùnjù, iye ìṣirò-kan tó tóbi jùlọ, àti ìfihàn olùbáṣepọ̀ tó gbóná jùlọ tí àwọn ìtọ́kasí tí a fọwọ́sí bá jẹ́ àyíká lẹ́yìn. Wọ́n ń kọ́ kọ́kọ́.

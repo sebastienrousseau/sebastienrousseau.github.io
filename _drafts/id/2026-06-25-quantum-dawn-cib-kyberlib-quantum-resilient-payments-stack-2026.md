@@ -138,6 +138,14 @@ Bentuk praktisnya familier. Setiap tempat basis kode menyentuh mekanisme enkapsu
 
 Hibrida adalah default transisi. Panduan NIST dan [draf pertukaran kunci hibrida IETF](https://datatracker.ietf.org/doc/draft-ietf-tls-hybrid-design/ "IETF draft — Hybrid key exchange in TLS 1.3") menerima bahwa jalur prudent adalah klasik-plus-PQC pada handshake yang sama hingga implementasi PQC menumpuk cukup jam lapangan untuk berdiri sendiri. Bank tidak berada dalam posisi bertaruh pada primitif tunggal yang bertahan terhadap kriptanalisis selama dua puluh lima tahun. Mereka berada dalam posisi menjalankan hibrida, mencatat segalanya, dan mempertahankan opsi untuk melepas kaki klasik nanti.
 
+### Pajak hibrida — biaya nyata dari kripto-kelincahan
+
+Hibrida adalah keputusan yang tepat. Ia tidak gratis. Sebuah TLS 1.3 ClientHello hibrida yang membawa X25519MLKEM768 berukuran sekitar 1.2 KB ketimbang ~150 bytes; tanda tangan ML-DSA-65 berukuran ~3.3 KB versus 64 bytes untuk ECDSA-P256; beban CPU per-transaksi kira-kira berlipat ganda di mana pun kaki hibrida duduk di samping kaki klasik. Pada rel kliring grosir di mana keputusan penyelesaian duduk dalam jendela 5-10 ms, tambahan biaya handshake-RTT dan latensi penandatanganan per-pesan bukanlah kesalahan pembulatan — keduanya harus dimodelkan ke dalam perencanaan kapasitas dan disebutkan dalam SLA yang dikomitmenkan operator. Makalah dewan harus mempublikasikan dampak throughput dan tail latency yang diharapkan pada setiap tonggak migrasi, bukan hanya pilihan algoritma. Bank yang memasuki hibrida tanpa baseline terukur baru mengetahui biayanya selama tinjauan insiden pertama.
+
+### Realitas vendor — ketergantungan HSM dan KMS
+
+KyberLib membuktikan primitif dalam Rust murni. Jalur kripto produksi di dalam bank Tier-1 tidak berjalan dalam Rust murni — ia berjalan melalui HSM komersial (Thales, Entrust, Utimaco) dan melalui layanan manajemen kunci awan (AWS KMS, Azure Key Vault, Google Cloud KMS) yang membungkus modul yang sama yang dipasok vendor. Firmware berkemampuan PQC pada modul-modul tersebut sudah dikirim; apakah rencana migrasi bertahan tergantung pada apakah armada HSM spesifik bank dan tingkat KMS-nya memiliki algoritma FIPS 203 / FIPS 204 yang tersertifikasi, terekspos dalam permukaan API yang digunakan stack aplikasi, dan didukung pada jalur firmware yang telah distandardisasi bank. Ketergantungan itu termasuk dalam CBOM dan dalam daftar risiko program, dengan komitmen vendor yang disebut namanya per kuartal. Rencana PQC tanpa komitmen firmware vendor adalah rencana yang tergelincir begitu satu pemasok mengumumkan jalur PQC yang tertunda.
+
 ## 03. PQC dalam pembayaran dan alur kerja CIB
 
 Urutan migrasi tidak seragam. Pembayaran grosir, repo, kustodi, dan trade finance membawa ekor kerahasiaan terpanjang, nilai transaksi tunggal terbesar, dan paparan counterparty paling akut jika instruksi yang ditandatangani dipalsukan secara retrospektif. Mereka lebih dulu.

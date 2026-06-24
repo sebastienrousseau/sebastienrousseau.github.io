@@ -138,6 +138,14 @@ The practical shape is familiar. Every place the codebase touches a key-encapsul
 
 Hybrid is the transitional default. NIST guidance and the [IETF hybrid key-exchange drafts](https://datatracker.ietf.org/doc/draft-ietf-tls-hybrid-design/ "IETF draft — Hybrid key exchange in TLS 1.3") accept that the prudent path is classical-plus-PQC on the same handshake until PQC implementations have accumulated enough field hours to stand alone. Banks are not in a position to bet on a single primitive surviving cryptanalysis for twenty-five years. They are in a position to run hybrid, log everything, and retain the option to drop the classical leg later.
 
+### The hybrid tax — what crypto-agility actually costs
+
+Hybrid is the right call. It is not free. A hybrid TLS 1.3 ClientHello carrying X25519MLKEM768 runs roughly 1.2 KB instead of ~150 bytes; an ML-DSA-65 signature is ~3.3 KB versus 64 bytes for ECDSA-P256; per-transaction CPU work roughly doubles wherever the hybrid leg sits beside a classical one. On wholesale-clearing rails where settlement decisions sit inside 5-10 ms windows, the added handshake-RTT cost and per-message signing latency are not rounding errors — they have to be modelled into capacity planning and named in the SLA the operator commits to. The board paper should publish the expected throughput and tail-latency impact at each migration milestone, not just the algorithm choice. Banks that go into hybrid without a measured baseline find out about the cost during the first incident review.
+
+### Vendor reality — the HSM and KMS dependency
+
+KyberLib proves the primitives in pure Rust. The production crypto path inside a Tier-1 bank does not run in pure Rust — it runs through commercial HSMs (Thales, Entrust, Utimaco) and through cloud key-management services (AWS KMS, Azure Key Vault, Google Cloud KMS) that wrap the same vendor-supplied modules. PQC-capable firmware on those modules is shipping; whether the migration plan holds depends on whether the bank's specific HSM fleet and KMS tier have the FIPS 203 / FIPS 204 algorithms certified, exposed in the API surface the application stack uses, and supported on the firmware track the bank has standardised. That dependency belongs in the CBOM and on the programme risk register, with named vendor commitments by quarter. A PQC plan without a vendor-firmware commitment is a plan that slips the moment a single supplier announces a delayed PQC track.
+
 ## 03. PQC in payments and CIB workflows
 
 The migration order is not uniform. Wholesale payments, repo, custody and trade finance carry the longest confidentiality tails, the largest single-transaction values, and the most acute counterparty exposure if signed instructions are forged retrospectively. They go first.
