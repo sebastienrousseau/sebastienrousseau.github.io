@@ -20,7 +20,7 @@ id: "https://sebastienrousseau.com/2026-06-27-agentic-treasury-co-pilots-autonom
 image_alt: "Àwòrán Aláwọ̀ Dúdú àti Funfun ti Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "AI agentic, co-pilot iléèrè, iléèrè aládàṣe, àsọtẹ́lẹ̀ owó, ìṣàkóso owó-omi, báńkì agentic, ìṣàkóso, SR 11-7, DORA, EU AI Act, CIB, ISO 20022, pacs.008, RTGS, SWIFT, MCP, ìṣàkóso ewu mọ́dẹ̀lì, MRM"
 language: "yo-NG"
 last_reviewed: "2026-06-27"
@@ -183,6 +183,6 @@ Iṣẹ́ tó wúni-lórí ní 2026 kì í ṣe mọ́dẹ̀lì. Pẹpẹ ìṣ�
 Fún àyíká àpilẹ̀ṣẹ̀, wo [Atọ́ka Iléèrè Aládàṣe](https://sebastienrousseau.com/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/ "Atọ́ka Iléèrè Aládàṣe 2026") àti, fún ìgbékalẹ̀ ìṣàkóso, [Atọ́ka AI Agentic fún Àwọn Báńkì](https://sebastienrousseau.com/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/ "Atọ́ka AI Agentic fún Àwọn Báńkì 2026").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="About the author"><img alt="Àwòrán Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Olùṣe-iṣẹ́ ìmọ̀-ẹ̀rọ báńkì àgbà tí ó ń kọ lórí AI tí a lò, ìṣíkiri ISO 20022, cryptography lẹ́yìn-quantum fún àwọn iṣẹ́ ìnáwó, àti ìyípadà ètò ti àwọn ìsanwó wholesale.</span><span class="author-credentials">Ọdún 20+ kọjá HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profaili kíkún</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="About the author"><img alt="Àwòrán Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Olùṣe-iṣẹ́ ìmọ̀-ẹ̀rọ báńkì àgbà tí ó ń kọ lórí AI tí a lò, ìṣíkiri ISO 20022, cryptography lẹ́yìn-quantum fún àwọn iṣẹ́ ìnáwó, àti ìyípadà ètò ti àwọn ìsanwó wholesale.</span><span class="author-credentials">Ọdún 20+ kọjá HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profaili kíkún</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Last reviewed <time datetime="2026-06-27">2026-06-27</time>.</p>
 <!-- enrich-end -->

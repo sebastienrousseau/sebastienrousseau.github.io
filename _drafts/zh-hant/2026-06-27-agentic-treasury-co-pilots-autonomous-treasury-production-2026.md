@@ -20,7 +20,7 @@ id: "https://sebastienrousseau.com/2026-06-27-agentic-treasury-co-pilots-autonom
 image_alt: "Sebastien Rousseau 的黑白肖像"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "代理式 AI, 財資副駕駛, 自主財資, 現金預測, 流動性管理, 代理式銀行, 治理, SR 11-7, DORA, EU AI Act, CIB, ISO 20022, pacs.008, RTGS, SWIFT, MCP, 模型風險管理, MRM"
 language: "zh-Hant"
 last_reviewed: "2026-06-27"
@@ -183,6 +183,6 @@ site_software: "Static Site Generator, Rust"
 上游脈絡,請見[《自主財資指數》](https://sebastienrousseau.com/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/ "2026 自主財資指數");治理框架,請見[《銀行業代理式 AI 指數》](https://sebastienrousseau.com/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/ "2026 銀行業代理式 AI 指數")。
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="關於作者"><img alt="Sebastien Rousseau 的肖像" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">資深銀行技術專家,撰寫應用 AI、ISO 20022 遷移、金融服務後量子密碼學,以及大額支付的結構性轉型。</span><span class="author-credentials">於 HSBC 企業與投資銀行、PayPal、Barclays、Shazam、AKQA、Virgin Group 任職逾 20 年。<a href="/about/index.html">完整介紹</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="關於作者"><img alt="Sebastien Rousseau 的肖像" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">資深銀行技術專家,撰寫應用 AI、ISO 20022 遷移、金融服務後量子密碼學,以及大額支付的結構性轉型。</span><span class="author-credentials">於 HSBC 企業與投資銀行、PayPal、Barclays、Shazam、AKQA、Virgin Group 任職逾 20 年。<a href="/about/index.html">完整介紹</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">最後審閱於 <time datetime="2026-06-27">2026-06-27</time>。</p>
 <!-- enrich-end -->

@@ -20,7 +20,7 @@ id: "https://sebastienrousseau.com/2026-06-27-agentic-treasury-co-pilots-autonom
 image_alt: "Hoton Sebastien Rousseau a baki da fari"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "agentic AI, treasury co-pilots, autonomous treasury, hasashen kuɗi, sarrafa liquidity, agentic banking, gudanarwa, SR 11-7, DORA, EU AI Act, CIB, ISO 20022, pacs.008, RTGS, SWIFT, MCP, sarrafa haɗarin samfuri, MRM"
 language: "ha-NG"
 last_reviewed: "2026-06-27"
@@ -183,6 +183,6 @@ Aikin mai ban sha'awa a 2026 ba samfurin ba ne. Sashin sarrafawa ne a kewayen sa
 Don mahallin sama, duba [Autonomous Treasury Index](https://sebastienrousseau.com/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/ "Autonomous Treasury Index 2026") kuma, don tsarin gudanarwa, [Agentic AI Index for Banks](https://sebastienrousseau.com/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/ "Agentic AI Index for Banks 2026").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Game da marubucin"><img alt="Hoton Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Babban masanin fasahar banki yana rubutu akan AI da aka yi amfani da shi, ƙaurar ISO 20022, post-quantum cryptography don sabis na kuɗi, da canjin tsari na biya na manyan ma'amaloli.</span><span class="author-credentials">Sama da shekaru 20 a fadin HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Cikakken bayani</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Game da marubucin"><img alt="Hoton Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Babban masanin fasahar banki yana rubutu akan AI da aka yi amfani da shi, ƙaurar ISO 20022, post-quantum cryptography don sabis na kuɗi, da canjin tsari na biya na manyan ma'amaloli.</span><span class="author-credentials">Sama da shekaru 20 a fadin HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Cikakken bayani</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">An sake duba shi karshe <time datetime="2026-06-27">2026-06-27</time>.</p>
 <!-- enrich-end -->

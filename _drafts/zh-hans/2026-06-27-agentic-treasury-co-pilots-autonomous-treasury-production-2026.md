@@ -20,7 +20,7 @@ id: "https://sebastienrousseau.com/2026-06-27-agentic-treasury-co-pilots-autonom
 image_alt: "Sebastien Rousseau 黑白肖像"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "智能体 AI, 司库副驾, 自治司库, 现金预测, 流动性管理, 智能体银行业, 治理, SR 11-7, DORA, EU AI Act, CIB, ISO 20022, pacs.008, RTGS, SWIFT, MCP, 模型风险管理, MRM"
 language: "zh-Hans"
 last_reviewed: "2026-06-27"
@@ -183,6 +183,6 @@ site_software: "Static Site Generator, Rust"
 上游脉络见 [自治司库指数](https://sebastienrousseau.com/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/ "The Autonomous Treasury Index 2026")，治理框架见 [银行业智能体 AI 指数](https://sebastienrousseau.com/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/ "The Agentic AI Index for Banks 2026")。
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="About the author"><img alt="Sebastien Rousseau 肖像" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">资深银行业技术专家，长期撰写应用 AI、ISO 20022 迁移、面向金融服务的后量子密码学，以及批发支付的结构性转型。</span><span class="author-credentials">在 HSBC 商业及投资银行、PayPal、Barclays、Shazam、AKQA、Virgin Group 累计超过 20 年经验。<a href="/about/index.html">完整简介</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="About the author"><img alt="Sebastien Rousseau 肖像" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">资深银行业技术专家，长期撰写应用 AI、ISO 20022 迁移、面向金融服务的后量子密码学，以及批发支付的结构性转型。</span><span class="author-credentials">在 HSBC 商业及投资银行、PayPal、Barclays、Shazam、AKQA、Virgin Group 累计超过 20 年经验。<a href="/about/index.html">完整简介</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">最近复核 <time datetime="2026-06-27">2026-06-27</time>。</p>
 <!-- enrich-end -->
