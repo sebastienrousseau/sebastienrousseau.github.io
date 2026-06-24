@@ -18,7 +18,7 @@ id: "https://sebastienrousseau.com/2026-06-29-post-quantum-security-scorecard-bo
 image_alt: "Chân dung đen trắng của Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "mật mã hậu lượng tử, thẻ điểm PQC, NIST FIPS 203, NIST FIPS 204, CBOM, HNDL, quản trị ngân hàng, crypto-agility, KyberLib, tuân thủ DORA, SM&CR, khả năng chống chịu lượng tử"
 language: "vi-VN"
 last_reviewed: "2026-06-29"
@@ -175,5 +175,5 @@ Con số quan trọng nhất là Phơi nhiễm HNDL. Mọi bản ghi mã hoá k�
 
 [KyberLib](https://sebastienrousseau.com/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026) và các thư viện cùng cấp biến điều này từ một đợt viết lại nền tảng nhiều năm thành một thay đổi cấu hình. Việc của hội đồng không phải là viết mã. Việc của hội đồng là yêu cầu Chỉ số sẵn sàng Crypto-Agility — tỷ lệ ứng dụng lõi đứng sau một giao diện mật mã trừu tượng hoá — vượt mốc 85 % trong vòng mười hai tháng, và đọc thẻ điểm hàng quý.
 
-<aside class="author-card" aria-label="Về tác giả"><img alt="Chân dung Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Chuyên gia công nghệ ngân hàng cấp cao viết về AI ứng dụng, di trú ISO 20022, mật mã hậu lượng tử cho dịch vụ tài chính và chuyển dịch cấu trúc của thanh toán bán buôn.</span><span class="author-credentials">20+ năm tại HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam. <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Về tác giả"><img alt="Chân dung Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Chuyên gia công nghệ ngân hàng cấp cao viết về AI ứng dụng, di trú ISO 20022, mật mã hậu lượng tử cho dịch vụ tài chính và chuyển dịch cấu trúc của thanh toán bán buôn.</span><span class="author-credentials">20+ năm tại HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam. <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Rà soát lần cuối <time datetime="2026-06-29">2026-06-29</time>.</p>

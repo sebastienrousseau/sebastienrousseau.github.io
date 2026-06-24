@@ -18,7 +18,7 @@ id: "https://sebastienrousseau.com/2026-06-29-post-quantum-security-scorecard-bo
 image_alt: "Portrait en noir et blanc de Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "cryptographie post-quantique, tableau de bord PQC, NIST FIPS 203, NIST FIPS 204, CBOM, HNDL, gouvernance bancaire, agilité cryptographique, KyberLib, conformité DORA, SM&CR, résilience quantique"
 language: "fr-FR"
 last_reviewed: "2026-06-29"
@@ -175,5 +175,5 @@ Le chiffre qui compte le plus est l'exposition HNDL. Chaque enregistrement chiff
 
 [KyberLib](https://sebastienrousseau.com/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026) et ses pairs font passer ce dossier d'une réécriture de plateforme pluriannuelle à un changement de configuration. Le travail du conseil n'est pas d'écrire le code. Le travail du conseil est d'exiger que le Crypto-Agility Readiness Index — la part des applications centrales placées derrière une interface cryptographique abstraite — franchisse les 85 % en douze mois, et de lire le tableau de bord trimestriel.
 
-<aside class="author-card" aria-label="À propos de l'auteur"><img alt="Portrait de Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Technologue bancaire senior écrivant sur l'IA appliquée, la migration ISO 20022, la cryptographie post-quantique pour les services financiers et la transformation structurelle des paiements de gros.</span><span class="author-credentials">Plus de 20 ans chez HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam. <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="À propos de l'auteur"><img alt="Portrait de Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Technologue bancaire senior écrivant sur l'IA appliquée, la migration ISO 20022, la cryptographie post-quantique pour les services financiers et la transformation structurelle des paiements de gros.</span><span class="author-credentials">Plus de 20 ans chez HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam. <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Dernière revue <time datetime="2026-06-29">2026-06-29</time>.</p>

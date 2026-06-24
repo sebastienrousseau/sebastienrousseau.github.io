@@ -18,7 +18,7 @@ id: "https://sebastienrousseau.com/2026-06-29-post-quantum-security-scorecard-bo
 image_alt: "ภาพถ่ายขาวดำของ Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "การเข้ารหัสหลังควอนตัม, สกอร์การ์ด PQC, NIST FIPS 203, NIST FIPS 204, CBOM, HNDL, ธรรมาภิบาลธนาคาร, crypto-agility, KyberLib, การปฏิบัติตาม DORA, SM&CR, ความยืดหยุ่นต่อควอนตัม"
 language: "th-TH"
 last_reviewed: "2026-06-29"
@@ -175,5 +175,5 @@ graph TD
 
 [KyberLib](https://sebastienrousseau.com/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026) และไลบรารีพันธมิตรเปลี่ยนเรื่องนี้จากการเขียนแพลตฟอร์มใหม่หลายปีให้กลายเป็นการเปลี่ยนค่าคอนฟิก งานของคณะกรรมการไม่ใช่การเขียนโค้ด งานของคณะกรรมการคือเรียกร้องให้ Crypto-Agility Readiness Index — สัดส่วนแอปพลิเคชันหลักที่อยู่หลังอินเทอร์เฟซเข้ารหัสแบบนามธรรม — ขยับผ่าน 85% ภายในสิบสองเดือน และอ่านสกอร์การ์ดรายไตรมาส
 
-<aside class="author-card" aria-label="About the author"><img alt="ภาพบุคคลของ Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">นักเทคโนโลยีธนาคารอาวุโส เขียนเรื่อง AI ที่นำไปใช้จริง การย้าย ISO 20022 การเข้ารหัสหลังควอนตัมสำหรับบริการทางการเงิน และการเปลี่ยนแปลงเชิงโครงสร้างของการชำระเงินขายส่ง</span><span class="author-credentials">ประสบการณ์มากกว่า 20 ปีใน HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="About the author"><img alt="ภาพบุคคลของ Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">นักเทคโนโลยีธนาคารอาวุโส เขียนเรื่อง AI ที่นำไปใช้จริง การย้าย ISO 20022 การเข้ารหัสหลังควอนตัมสำหรับบริการทางการเงิน และการเปลี่ยนแปลงเชิงโครงสร้างของการชำระเงินขายส่ง</span><span class="author-credentials">ประสบการณ์มากกว่า 20 ปีใน HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">ตรวจทานล่าสุด <time datetime="2026-06-29">2026-06-29</time></p>

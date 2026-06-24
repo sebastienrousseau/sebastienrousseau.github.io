@@ -18,7 +18,7 @@ id: "https://sebastienrousseau.com/2026-06-29-post-quantum-security-scorecard-bo
 image_alt: "Sebastien Rousseau'nun siyah beyaz portresi"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "post-kuantum kriptografi, PQC karnesi, NIST FIPS 203, NIST FIPS 204, CBOM, HNDL, bankacılık yönetişimi, kripto-çeviklik, KyberLib, DORA uyumu, SM&CR, kuantum dayanıklılığı"
 language: "tr-TR"
 last_reviewed: "2026-06-29"
@@ -175,5 +175,5 @@ En önemli rakam HNDL Maruziyeti'dir. Bugün bir toptan ödeme arşivinde duran 
 
 [KyberLib](https://sebastienrousseau.com/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026) ve benzerleri, bunu çok yıllı bir platform yeniden yazımından bir yapılandırma değişikliğine indirger. Yönetim kurulunun işi kodu yazmak değildir. Yönetim kurulunun işi, Kripto-Çeviklik Hazırlık Endeksi'nin — soyutlanmış bir kriptografik arayüzün arkasındaki çekirdek uygulamaların payı — on iki ay içinde %85'i geçmesini talep etmek ve üç ayda bir karneyi okumaktır.
 
-<aside class="author-card" aria-label="Yazar hakkında"><img alt="Sebastien Rousseau'nun portresi" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Uygulamalı yapay zeka, ISO 20022 göçü, finansal hizmetler için post-kuantum kriptografi ve toptan ödemelerin yapısal dönüşümü üzerine yazan kıdemli bankacılık teknoloğu.</span><span class="author-credentials">HSBC Ticari & Yatırım Bankacılığı, PayPal, Barclays, Shazam genelinde 20+ yıl. <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Yazar hakkında"><img alt="Sebastien Rousseau'nun portresi" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Uygulamalı yapay zeka, ISO 20022 göçü, finansal hizmetler için post-kuantum kriptografi ve toptan ödemelerin yapısal dönüşümü üzerine yazan kıdemli bankacılık teknoloğu.</span><span class="author-credentials">HSBC Ticari & Yatırım Bankacılığı, PayPal, Barclays, Shazam genelinde 20+ yıl. <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Son inceleme <time datetime="2026-06-29">2026-06-29</time>.</p>

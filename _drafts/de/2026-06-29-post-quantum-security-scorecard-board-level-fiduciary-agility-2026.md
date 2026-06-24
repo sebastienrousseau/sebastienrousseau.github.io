@@ -18,7 +18,7 @@ id: "https://sebastienrousseau.com/2026-06-29-post-quantum-security-scorecard-bo
 image_alt: "Schwarz-Weiß-Porträt von Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "Post-Quanten-Kryptografie, PQC-Scorecard, NIST FIPS 203, NIST FIPS 204, CBOM, HNDL, Banken-Governance, Krypto-Agilität, KyberLib, DORA-Compliance, SM&CR, Quantenresilienz"
 language: "de-DE"
 last_reviewed: "2026-06-29"
@@ -175,5 +175,5 @@ Die wichtigste Zahl ist HNDL Exposure. Jeder mit Legacy-Krypto verschlüsselte D
 
 [KyberLib](https://sebastienrousseau.com/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026) und seinesgleichen machen aus einer mehrjährigen Plattform-Neuentwicklung eine Konfigurationsänderung. Es ist nicht Aufgabe des Vorstands, den Code zu schreiben. Aufgabe des Vorstands ist es zu verlangen, dass der Crypto-Agility Readiness Index — der Anteil der Kernanwendungen hinter einer abstrahierten kryptografischen Schnittstelle — binnen zwölf Monaten die 85-%-Marke überschreitet, und den Quartals-Scorecard zu lesen.
 
-<aside class="author-card" aria-label="Über den Autor"><img alt="Porträt von Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior Banking Technologist, schreibt über angewandte KI, ISO-20022-Migration, Post-Quanten-Kryptografie für Finanzdienstleistungen und die strukturelle Transformation des Wholesale-Zahlungsverkehrs.</span><span class="author-credentials">20+ Jahre bei HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam. <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Über den Autor"><img alt="Porträt von Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior Banking Technologist, schreibt über angewandte KI, ISO-20022-Migration, Post-Quanten-Kryptografie für Finanzdienstleistungen und die strukturelle Transformation des Wholesale-Zahlungsverkehrs.</span><span class="author-credentials">20+ Jahre bei HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam. <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Zuletzt überprüft <time datetime="2026-06-29">2026-06-29</time>.</p>

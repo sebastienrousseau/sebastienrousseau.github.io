@@ -18,7 +18,7 @@ id: "https://sebastienrousseau.com/2026-06-29-post-quantum-security-scorecard-bo
 image_alt: "Svartvitt porträtt av Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "postkvantkryptografi, PQC-scorecard, NIST FIPS 203, NIST FIPS 204, CBOM, HNDL, bankstyrning, kryptoagilitet, KyberLib, DORA-efterlevnad, SM&CR, kvantresiliens"
 language: "sv-SE"
 last_reviewed: "2026-06-29"
@@ -175,5 +175,5 @@ Det tal som betyder mest är HNDL Exposure. Varje äldre krypterad post som idag
 
 [KyberLib](https://sebastienrousseau.com/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026) och dess motsvarigheter förvandlar detta från en flerårig plattformsomskrivning till en konfigurationsändring. Styrelsens uppgift är inte att skriva koden. Styrelsens uppgift är att kräva att Crypto-Agility Readiness Index — andelen kärnapplikationer bakom ett abstraherat kryptografiskt gränssnitt — passerar 85 % inom tolv månader, och att läsa det kvartalsvisa scorecardet.
 
-<aside class="author-card" aria-label="Om författaren"><img alt="Porträtt av Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banktekniker som skriver om tillämpad AI, ISO 20022-migration, postkvantkryptografi för finansiella tjänster och den strukturella omvandlingen av wholesale-betalningar.</span><span class="author-credentials">20+ års erfarenhet från HSBC Commercial & Investment Bank, PayPal, Barclays och Shazam. <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Om författaren"><img alt="Porträtt av Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banktekniker som skriver om tillämpad AI, ISO 20022-migration, postkvantkryptografi för finansiella tjänster och den strukturella omvandlingen av wholesale-betalningar.</span><span class="author-credentials">20+ års erfarenhet från HSBC Commercial & Investment Bank, PayPal, Barclays och Shazam. <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Senast granskad <time datetime="2026-06-29">2026-06-29</time>.</p>

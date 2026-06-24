@@ -18,7 +18,7 @@ id: "https://sebastienrousseau.com/2026-06-29-post-quantum-security-scorecard-bo
 image_alt: "Portret alb-negru al lui Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "criptografie post-cuantică, scorecard PQC, NIST FIPS 203, NIST FIPS 204, CBOM, HNDL, guvernanță bancară, agilitate criptografică, KyberLib, conformitate DORA, SM&CR, reziliență cuantică"
 language: "ro-RO"
 last_reviewed: "2026-06-29"
@@ -175,5 +175,5 @@ Cifra care contează cel mai mult este expunerea HNDL. Fiecare evidență cripta
 
 [KyberLib](https://sebastienrousseau.com/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026) și colegele sale transformă această problemă dintr-o rescriere de platformă pe mai mulți ani într-o modificare de configurare. Sarcina consiliului nu este să scrie codul. Sarcina consiliului este să ceară ca Crypto-Agility Readiness Index — proporția aplicațiilor de bază aflate în spatele unei interfețe criptografice abstractizate — să treacă pragul de 85 % în douăsprezece luni și să citească scorecard-ul trimestrial.
 
-<aside class="author-card" aria-label="Despre autor"><img alt="Portret al lui Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Tehnolog bancar senior care scrie despre AI aplicată, migrarea ISO 20022, criptografia post-cuantică pentru servicii financiare și transformarea structurală a plăților wholesale.</span><span class="author-credentials">Peste 20 de ani la HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam. <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Despre autor"><img alt="Portret al lui Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Tehnolog bancar senior care scrie despre AI aplicată, migrarea ISO 20022, criptografia post-cuantică pentru servicii financiare și transformarea structurală a plăților wholesale.</span><span class="author-credentials">Peste 20 de ani la HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam. <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Revizuit ultima dată <time datetime="2026-06-29">2026-06-29</time>.</p>

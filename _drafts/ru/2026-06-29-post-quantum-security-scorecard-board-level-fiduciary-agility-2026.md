@@ -18,7 +18,7 @@ id: "https://sebastienrousseau.com/2026-06-29-post-quantum-security-scorecard-bo
 image_alt: "Чёрно-белый портрет Себастьяна Руссо"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "постквантовая криптография, PQC scorecard, NIST FIPS 203, NIST FIPS 204, CBOM, HNDL, банковское управление, крипто-гибкость, KyberLib, соответствие DORA, SM&CR, квантовая устойчивость"
 language: "ru-RU"
 last_reviewed: "2026-06-29"
@@ -175,5 +175,5 @@ graph TD
 
 [KyberLib](https://sebastienrousseau.com/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026 "KyberLib — постквантовая миграция банков в 2026 году") и аналогичные библиотеки превращают это из многолетнего переписывания платформы в изменение конфигурации. Задача совета директоров — не писать код. Задача совета — потребовать, чтобы Crypto-Agility Readiness Index — доля основных приложений за абстрагированным криптографическим интерфейсом — прошёл отметку 85 % за двенадцать месяцев, и читать ежеквартальный scorecard.
 
-<aside class="author-card" aria-label="Об авторе"><img alt="Портрет Себастьяна Руссо" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Старший банковский технолог, пишущий о прикладном ИИ, миграции на ISO 20022, постквантовой криптографии для финансовых сервисов и структурной трансформации оптовых платежей.</span><span class="author-credentials">20+ лет в HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam. <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Об авторе"><img alt="Портрет Себастьяна Руссо" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Старший банковский технолог, пишущий о прикладном ИИ, миграции на ISO 20022, постквантовой криптографии для финансовых сервисов и структурной трансформации оптовых платежей.</span><span class="author-credentials">20+ лет в HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam. <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Последняя проверка <time datetime="2026-06-29">2026-06-29</time>.</p>

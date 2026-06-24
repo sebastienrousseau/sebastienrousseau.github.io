@@ -18,7 +18,7 @@ id: "https://sebastienrousseau.com/2026-06-29-post-quantum-security-scorecard-bo
 image_alt: "Zwart-witportret van Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "post-kwantum cryptografie, PQC-scorecard, NIST FIPS 203, NIST FIPS 204, CBOM, HNDL, bankgovernance, crypto-agility, KyberLib, DORA-naleving, SM&CR, kwantumweerbaarheid"
 language: "nl-NL"
 last_reviewed: "2026-06-29"
@@ -175,5 +175,5 @@ Het belangrijkste cijfer is HNDL-blootstelling. Elk verouderd versleuteld record
 
 [KyberLib](https://sebastienrousseau.com/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026) en zijn tegenhangers veranderen dit van een meerjarige platformherschrijving in een configuratiewijziging. De taak van het bestuur is niet om de code te schrijven. De taak van het bestuur is te eisen dat de Crypto-Agility Readiness Index — het aandeel kerntoepassingen achter een geabstraheerde cryptografische interface — binnen twaalf maanden door de 85% gaat, en de kwartaalscorecard te lezen.
 
-<aside class="author-card" aria-label="Over de auteur"><img alt="Portret van Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banktechnoloog die schrijft over toegepaste AI, ISO 20022-migratie, post-kwantum cryptografie voor financiële dienstverlening en de structurele transformatie van wholesale-betalingen.</span><span class="author-credentials">Meer dan 20 jaar bij HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam. <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Over de auteur"><img alt="Portret van Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banktechnoloog die schrijft over toegepaste AI, ISO 20022-migratie, post-kwantum cryptografie voor financiële dienstverlening en de structurele transformatie van wholesale-betalingen.</span><span class="author-credentials">Meer dan 20 jaar bij HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam. <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Laatst beoordeeld op <time datetime="2026-06-29">2026-06-29</time>.</p>

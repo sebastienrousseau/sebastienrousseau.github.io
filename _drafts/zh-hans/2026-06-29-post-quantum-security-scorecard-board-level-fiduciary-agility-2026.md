@@ -18,7 +18,7 @@ id: "https://sebastienrousseau.com/2026-06-29-post-quantum-security-scorecard-bo
 image_alt: "Sebastien Rousseau 黑白肖像"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "后量子密码学, PQC 记分卡, NIST FIPS 203, NIST FIPS 204, CBOM, HNDL, 银行治理, 密码敏捷性, KyberLib, DORA 合规, SM&CR, 量子韧性"
 language: "zh-Hans"
 last_reviewed: "2026-06-29"
@@ -175,5 +175,5 @@ graph TD
 
 [KyberLib](https://sebastienrousseau.com/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026) 及同类库把这件事从多年的平台重写降格为一次配置变更。董事会的职责不是写代码。董事会的职责是要求密码敏捷就绪指数——即位于抽象密码接口之后的核心应用占比——在十二个月内穿越 85% 线，并按季度阅读记分卡。
 
-<aside class="author-card" aria-label="关于作者"><img alt="Sebastien Rousseau 肖像" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">资深银行业技术专家，长期撰文论述应用 AI、ISO 20022 迁移、面向金融服务的后量子密码学，以及大额支付的结构性转型。</span><span class="author-credentials">在汇丰商业与投资银行、PayPal、巴克莱、Shazam 等机构积累 20 年以上经验。<a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="关于作者"><img alt="Sebastien Rousseau 肖像" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">资深银行业技术专家，长期撰文论述应用 AI、ISO 20022 迁移、面向金融服务的后量子密码学，以及大额支付的结构性转型。</span><span class="author-credentials">在汇丰商业与投资银行、PayPal、巴克莱、Shazam 等机构积累 20 年以上经验。<a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">最后审阅 <time datetime="2026-06-29">2026-06-29</time>。</p>

@@ -18,7 +18,7 @@ id: "https://sebastienrousseau.com/2026-06-29-post-quantum-security-scorecard-bo
 image_alt: "সেবাস্তিয়ান রুসোর সাদা-কালো প্রতিকৃতি"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, PQC স্কোরকার্ড, NIST FIPS 203, NIST FIPS 204, CBOM, HNDL, ব্যাঙ্কিং গভর্নেন্স, ক্রিপ্টো-অ্যাজিলিটি, KyberLib, DORA সম্মতি, SM&CR, কোয়ান্টাম স্থিতিস্থাপকতা"
 language: "bn-BD"
 last_reviewed: "2026-06-29"
@@ -175,5 +175,5 @@ graph TD
 
 [KyberLib](https://sebastienrousseau.com/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026) ও এর সমকক্ষরা এটিকে একটি বহু-বছরের প্ল্যাটফর্ম পুনর্লিখন থেকে কনফিগারেশন পরিবর্তনে রূপান্তরিত করে। বোর্ডের কাজ কোড লেখা নয়। বোর্ডের কাজ হল দাবি করা যে ক্রিপ্টো-অ্যাজিলিটি রেডিনেস ইনডেক্স — একটি অ্যাবস্ট্র্যাক্টেড ক্রিপ্টোগ্রাফিক ইন্টারফেসের পিছনে থাকা কোর অ্যাপ্লিকেশনের অংশ — বারো মাসের মধ্যে ৮৫%-এ পৌঁছায়, এবং ত্রৈমাসিক স্কোরকার্ড পড়া।
 
-<aside class="author-card" aria-label="লেখক সম্পর্কে"><img alt="সেবাস্তিয়ান রুসোর প্রতিকৃতি" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">সিনিয়র ব্যাঙ্কিং প্রযুক্তিবিদ — প্রয়োগিক AI, ISO 20022 স্থানান্তর, আর্থিক পরিষেবার জন্য পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি এবং পাইকারি পেমেন্টের কাঠামোগত রূপান্তরের উপর লেখেন।</span><span class="author-credentials">HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam-এ ২০+ বছরের অভিজ্ঞতা। <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="লেখক সম্পর্কে"><img alt="সেবাস্তিয়ান রুসোর প্রতিকৃতি" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">সিনিয়র ব্যাঙ্কিং প্রযুক্তিবিদ — প্রয়োগিক AI, ISO 20022 স্থানান্তর, আর্থিক পরিষেবার জন্য পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি এবং পাইকারি পেমেন্টের কাঠামোগত রূপান্তরের উপর লেখেন।</span><span class="author-credentials">HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam-এ ২০+ বছরের অভিজ্ঞতা। <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">সর্বশেষ পর্যালোচিত <time datetime="2026-06-29">2026-06-29</time>।</p>

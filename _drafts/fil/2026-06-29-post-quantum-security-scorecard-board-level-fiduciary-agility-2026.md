@@ -18,7 +18,7 @@ id: "https://sebastienrousseau.com/2026-06-29-post-quantum-security-scorecard-bo
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "post-quantum cryptography, PQC scorecard, NIST FIPS 203, NIST FIPS 204, CBOM, HNDL, banking governance, crypto-agility, KyberLib, DORA compliance, SM&CR, quantum resilience"
 language: "fil-PH"
 last_reviewed: "2026-06-29"
@@ -175,5 +175,5 @@ Ang numerong pinakamahalaga ay ang HNDL Exposure. Bawat legacy-encrypted record 
 
 [KyberLib](https://sebastienrousseau.com/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026) at ang mga katulad nito ay nagpapalit nito mula sa isang multi-year platform rewrite tungong isang configuration change. Ang trabaho ng board ay hindi ang magsulat ng code. Ang trabaho ng board ay igiit na ang Crypto-Agility Readiness Index — ang bahagi ng mga core application sa likod ng abstracted cryptographic interface — ay lumagpas sa 85% sa loob ng labindalawang buwan, at basahin ang quarterly scorecard.
 
-<aside class="author-card" aria-label="Tungkol sa awtor"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist na nagsusulat tungkol sa applied AI, ISO 20022 migration, post-quantum cryptography para sa financial services, at ang structural transformation ng wholesale payments.</span><span class="author-credentials">20+ taon sa HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam. <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Tungkol sa awtor"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist na nagsusulat tungkol sa applied AI, ISO 20022 migration, post-quantum cryptography para sa financial services, at ang structural transformation ng wholesale payments.</span><span class="author-credentials">20+ taon sa HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam. <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Huling sinuri <time datetime="2026-06-29">2026-06-29</time>.</p>

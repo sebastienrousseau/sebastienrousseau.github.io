@@ -18,7 +18,7 @@ id: "https://sebastienrousseau.com/2026-06-29-post-quantum-security-scorecard-bo
 image_alt: "セバスチャン・ルソーのモノクロ・ポートレート"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "ポスト量子暗号, PQC スコアカード, NIST FIPS 203, NIST FIPS 204, CBOM, HNDL, 銀行ガバナンス, 暗号アジリティ, KyberLib, DORA コンプライアンス, SM&CR, 量子レジリエンス"
 language: "ja-JP"
 last_reviewed: "2026-06-29"
@@ -175,5 +175,5 @@ Tier-1 銀行の暗号資産はもはや CISO の関心事ではありません�
 
 [KyberLib](https://sebastienrousseau.com/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026) とその同類は、これを複数年にわたるプラットフォームの書き直しから構成変更へと転換します。取締役会の仕事はコードを書くことではありません。取締役会の仕事は、暗号アジリティ準備指数 — 抽象化された暗号インターフェイスの背後にある中核アプリケーションの割合 — が 12 か月以内に 85 % を超えて推移するよう要求し、四半期ごとのスコアカードを読むことです。
 
-<aside class="author-card" aria-label="著者について"><img alt="セバスチャン・ルソーのポートレート" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">応用 AI、ISO 20022 移行、金融サービス向けポスト量子暗号、卸売決済の構造的変革について執筆する上級銀行テクノロジスト。</span><span class="author-credentials">HSBC 商業・投資銀行、PayPal、Barclays、Shazam で 20 年以上の経験。<a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="著者について"><img alt="セバスチャン・ルソーのポートレート" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">応用 AI、ISO 20022 移行、金融サービス向けポスト量子暗号、卸売決済の構造的変革について執筆する上級銀行テクノロジスト。</span><span class="author-credentials">HSBC 商業・投資銀行、PayPal、Barclays、Shazam で 20 年以上の経験。<a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">最終レビュー <time datetime="2026-06-29">2026-06-29</time>。</p>

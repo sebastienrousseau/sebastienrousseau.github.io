@@ -18,7 +18,7 @@ id: "https://sebastienrousseau.com/2026-06-29-post-quantum-security-scorecard-bo
 image_alt: "Hoton Sebastien Rousseau a baki da fari"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "cryptography na post-quantum, katin maki na PQC, NIST FIPS 203, NIST FIPS 204, CBOM, HNDL, gudanar da banki, crypto-agility, KyberLib, bin DORA, SM&CR, juriya na quantum"
 language: "ha-NG"
 last_reviewed: "2026-06-29"
@@ -175,5 +175,5 @@ Lambar da ta fi muhimmanci ita ce Bayyanar HNDL. Kowane rikodin da aka rufa da l
 
 [KyberLib](https://sebastienrousseau.com/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026) da takwarorinsa suna juya wannan daga sake rubuta dandali na shekaru da yawa zuwa canjin tsari. Aikin hukumar ba shine rubuta lambar ba. Aikin hukumar shi ne neman cewa Index na Shirye-shiryen Crypto-Agility — kashi na aikace-aikacen core a bayan interface na cryptographic da aka abstract — ya wuce 85 % a cikin watanni goma sha biyu, kuma a karanta katin maki na kwata-kwata.
 
-<aside class="author-card" aria-label="About the author"><img alt="Hoton Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Babban masanin fasahar banki yana rubutu akan AI da aka aiwatar, ƙaurar ISO 20022, cryptography na post-quantum don ayyukan kuɗi, da canjin tsari na biyan ma'amala.</span><span class="author-credentials">Shekaru 20+ a fadin HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam. <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="About the author"><img alt="Hoton Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Babban masanin fasahar banki yana rubutu akan AI da aka aiwatar, ƙaurar ISO 20022, cryptography na post-quantum don ayyukan kuɗi, da canjin tsari na biyan ma'amala.</span><span class="author-credentials">Shekaru 20+ a fadin HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam. <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">An sake duba shi a ƙarshe <time datetime="2026-06-29">2026-06-29</time>.</p>

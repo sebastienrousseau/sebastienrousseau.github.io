@@ -18,7 +18,7 @@ id: "https://sebastienrousseau.com/2026-06-29-post-quantum-security-scorecard-bo
 image_alt: "Àwòrán Aláwọ̀ Dúdú àti Funfun ti Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "cryptography lẹ́yìn-quantum, ìwé-ìdíwọ̀n PQC, NIST FIPS 203, NIST FIPS 204, CBOM, HNDL, ìṣàkóso báńkì, crypto-agility, KyberLib, ìbámu DORA, SM&CR, resilience quantum"
 language: "yo-NG"
 last_reviewed: "2026-06-29"
@@ -175,5 +175,5 @@ Nọ́ńbà tó ṣe pàtàkì jùlọ ni HNDL Exposure. Gbogbo ìwé encrypted-
 
 [KyberLib](https://sebastienrousseau.com/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026) àti àwọn ojúgbà rẹ̀ ń yí èyí padà láti ìkọ pẹpẹ-ọdún púpọ̀ sí ìyípadà ìṣètò. Iṣẹ́ ìgbìmọ̀ olórí kì í ṣe kíkọ kóòdù náà. Iṣẹ́ ìgbìmọ̀ olórí ni láti béèrè pé Crypto-Agility Readiness Index — ìpín àwọn ohun-èlò pàtàkì lẹ́yìn ojú-iṣẹ́ cryptography abstract — kọjá 85 % nínú oṣù méjìlá, kí ó sì ka ìwé-ìdíwọ̀n oníṣẹ̀rúkẹ́rin.
 
-<aside class="author-card" aria-label="Nípa òǹkọ̀wé"><img alt="Àwòrán Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Olùmọ̀ràn ìmọ̀-ẹ̀rọ báńkì àgbà tó ń kọ̀wé lórí AI tó wúlò, ìṣíkiri ISO 20022, cryptography lẹ́yìn-quantum fún àwọn iṣẹ́ ìnáwó, àti ìyípadà ètò ti àwọn ìsanwó wholesale.</span><span class="author-credentials">Ó ti lo ọdún 20+ kọjá HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam. <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Nípa òǹkọ̀wé"><img alt="Àwòrán Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Olùmọ̀ràn ìmọ̀-ẹ̀rọ báńkì àgbà tó ń kọ̀wé lórí AI tó wúlò, ìṣíkiri ISO 20022, cryptography lẹ́yìn-quantum fún àwọn iṣẹ́ ìnáwó, àti ìyípadà ètò ti àwọn ìsanwó wholesale.</span><span class="author-credentials">Ó ti lo ọdún 20+ kọjá HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam. <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Àyẹ̀wò ìkẹyìn <time datetime="2026-06-29">2026-06-29</time>.</p>

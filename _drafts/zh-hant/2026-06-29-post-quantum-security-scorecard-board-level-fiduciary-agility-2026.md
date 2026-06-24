@@ -18,7 +18,7 @@ id: "https://sebastienrousseau.com/2026-06-29-post-quantum-security-scorecard-bo
 image_alt: "Sebastien Rousseau 的黑白肖像"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "後量子密碼學, PQC 計分卡, NIST FIPS 203, NIST FIPS 204, CBOM, HNDL, 銀行治理, 密碼學敏捷性, KyberLib, DORA 合規, SM&CR, 量子韌性"
 language: "zh-Hant"
 last_reviewed: "2026-06-29"
@@ -175,5 +175,5 @@ graph TD
 
 [KyberLib](https://sebastienrousseau.com/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026) 及其同類函式庫,將此從多年期的平台改寫,轉化為一次組態變更。董事會的職責不是寫程式。董事會的職責是要求密碼學敏捷性準備度指數——亦即位於抽象化密碼學介面之後的核心應用占比——於十二個月內穿越 85%,並逐季閱讀計分卡。
 
-<aside class="author-card" aria-label="關於作者"><img alt="Sebastien Rousseau 的肖像" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">資深銀行科技人,專注於應用 AI、ISO 20022 遷移、金融服務後量子密碼學,以及批發支付的結構性轉型。</span><span class="author-credentials">逾 20 年資歷,橫跨 HSBC 商業與投資銀行、PayPal、Barclays、Shazam。<a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="關於作者"><img alt="Sebastien Rousseau 的肖像" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">資深銀行科技人,專注於應用 AI、ISO 20022 遷移、金融服務後量子密碼學,以及批發支付的結構性轉型。</span><span class="author-credentials">逾 20 年資歷,橫跨 HSBC 商業與投資銀行、PayPal、Barclays、Shazam。<a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">最後審閱日期 <time datetime="2026-06-29">2026-06-29</time>。</p>
