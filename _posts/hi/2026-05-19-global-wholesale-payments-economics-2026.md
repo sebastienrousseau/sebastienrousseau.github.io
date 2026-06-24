@@ -19,7 +19,7 @@ id: "https://sebastienrousseau.com/hi/2026-05-19-global-wholesale-payments-econo
 image_alt: "Sebastien Rousseau का श्वेत-श्याम चित्र"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "थोक भुगतान 2026, वैश्विक भुगतान अर्थशास्त्र, ISO 20022, RTGS, सीमा-पार भुगतान, BIS CPMI, FSB, Swift CBPR+, G20 रोडमैप, वास्तविक समय सकल निपटान, Project Agora, Project Mandala, Project Nexus, भुगतान अंतर-संचालनीयता, संवाददाता बैंकिंग, भुगतान विखंडन, थोक CBDC"
 language: "hi"
 last_reviewed: "2026-05-19"

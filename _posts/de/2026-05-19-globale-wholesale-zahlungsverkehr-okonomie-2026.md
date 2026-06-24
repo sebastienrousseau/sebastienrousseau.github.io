@@ -19,7 +19,7 @@ id: "https://sebastienrousseau.com/de/2026-05-19-globale-wholesale-zahlungsverke
 image_alt: "Schwarz-Weiß-Porträt von Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "Wholesale-Zahlungsverkehr 2026, Ökonomie des globalen Zahlungsverkehrs, ISO 20022, RTGS, grenzüberschreitende Zahlungen, BIS CPMI, FSB, Swift CBPR+, G20-Fahrplan, Echtzeit-Bruttoabwicklung, Project Agorá, Project Mandala, Project Nexus, Zahlungsverkehrs-Interoperabilität, Korrespondenzbankgeschäft, Zahlungsverkehrs-Fragmentierung, Wholesale-CBDC"
 language: "de"
 last_reviewed: "2026-05-19"

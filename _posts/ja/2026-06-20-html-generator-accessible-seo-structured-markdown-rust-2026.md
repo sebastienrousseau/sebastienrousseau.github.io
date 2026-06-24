@@ -6,7 +6,7 @@ author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "構造化された光の下の建築的幾何学 — アクセシブルでSEO対応のサンドボックス型パブリッシング・インフラのために、コンパイル制御型Markdown-to-HTMLパイプラインとしてのHTML Generatorの役割を象徴しています"
 banner_height: "1597"
 banner_width: "2584"
-banner: "https://cloudcdn.pro/api/transform?url=/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp&w=1200&format=webp&q=80"
+banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash-1200.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
@@ -20,7 +20,7 @@ id: "https://sebastienrousseau.com/2026-06-20-html-generator-accessible-seo-stru
 image_alt: "Sebastien Rousseauのモノクローム・ポートレート"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "html-generator, Rust Markdown to HTML, アクセシビリティ・アズ・コード, WCAG 2.1 AA, SEO対応HTML, JSON-LD, MathML, Mermaid, WebAssembly, EAA, DORA, ADA Title III, アクセシブル・パブリッシング, サンドボックス型パーシング, オープンソース"
 language: "ja-JP"
 last_reviewed: "2026-06-20"
@@ -282,6 +282,6 @@ G-SIBは、複数の法域にわたって何千もの調査論文、規制当局
 - GitHub, 2026. [HTML Generatorリポジトリ ⧉](https://github.com/sebastienrousseau/html-generator "HTML Generator open-source repository")。
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="著者について"><img alt="Sebastien Rousseauのポートレート" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">応用AI、決済インフラ、トークン化マネー、ISO 20022、ポスト量子セキュリティ、クラウドネイティブ金融サービス、オープンソース・インフラ、規制デジタル市場について執筆するシニア・バンキング・テクノロジスト。</span><span class="author-credentials">HSBC商業・投資銀行、PayPal、Barclays、Shazam、AKQA、Virgin Groupにわたる20年以上の経験。 <a href="/about/index.html">フルプロフィール</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="著者について"><img alt="Sebastien Rousseauのポートレート" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">応用AI、決済インフラ、トークン化マネー、ISO 20022、ポスト量子セキュリティ、クラウドネイティブ金融サービス、オープンソース・インフラ、規制デジタル市場について執筆するシニア・バンキング・テクノロジスト。</span><span class="author-credentials">HSBC商業・投資銀行、PayPal、Barclays、Shazam、AKQA、Virgin Groupにわたる20年以上の経験。 <a href="/about/index.html">フルプロフィール</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">最終レビュー日 <time datetime="2026-06-20">2026-06-20</time>。</p>
 <!-- enrich-end -->

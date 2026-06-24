@@ -3,7 +3,7 @@ author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "ISO 20022 পেমেন্ট ডেটা পণ্যের চিত্র — কাঠামোগত ঠিকানা, উদ্দেশ্য কোড, মিলকরণ, জালিয়াতি শনাক্তকরণ, তারল্য পূর্বাভাস, নিষেধাজ্ঞা স্ক্রিনিং ও অ্যানালিটিক্স পণ্য"
 banner_height: "571"
 banner_width: "1425"
-banner: "https://cloudcdn.pro/api/transform?url=/stocks/images/humphrey-muleba-1660004.webp&w=1200&format=webp&q=80"
+banner: "https://cloudcdn.pro/stocks/images/humphrey-muleba-1660004-1200.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/bn/2026-05-29-iso-20022-after-migration-payme
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "ISO 20022 2026, কাঠামোগত ঠিকানা, CBPR+, পেমেন্ট ডেটা পণ্য, উদ্দেশ্য কোড, কর্পোরেট ট্রেজারি, মিলকরণ, নিষেধাজ্ঞা স্ক্রিনিং, জালিয়াতি শনাক্তকরণ, pacs.008, pain.001, SWIFT gpi, SEPA Instant, FedNow"
 language: "bn"
 excerpt: "ISO 20022 মাইগ্রেশনের পরে কাজ শেষ হয় না — শুরু হয় পেমেন্ট ডেটা পণ্যের সুযোগ। কাঠামোগত ঠিকানা, উদ্দেশ্য কোড, ইনভয়েস বিবরণ ও সমৃদ্ধ স্ট্যাটাস ইভেন্ট থেকে মিলকরণ, জালিয়াতি, তারল্য ও কমপ্লায়েন্স পণ্য তৈরি হয়। ২০২৬-এর প্রশ্ন হল নকশার শৃঙ্খলা: কোন পেমেন্ট ডেটা কোন গ্রাহক ওয়ার্কফ্লোকে চালায় এবং কোন কর্পোরেটের জন্য মূল্য নির্ধারিত হয়।"
@@ -201,6 +201,6 @@ ISO 20022 মাইগ্রেশনের পরে শেষ পর্যন�
 - J.P. Morgan, (2026). [Payments Outlook: Five Trends Powering Payments in 2026 ⧉](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="লেখক সম্পর্কে"><img alt="সেবাস্তিয়ান রুসোর প্রতিকৃতি" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">সেবাস্তিয়ান রুসো</a></strong><span class="author-card-bio">সিনিয়র ব্যাংকিং প্রযুক্তিবিদ, প্রয়োগ-ভিত্তিক এআই, পেমেন্ট পরিকাঠামো, টোকেনাইজড অর্থ, ISO 20022, পোস্ট-কোয়ান্টাম নিরাপত্তা, ক্লাউড-নেটিভ আর্থিক পরিষেবা ও নিয়ন্ত্রিত ডিজিটাল বাজার সম্পর্কে লেখেন।</span><span class="author-credentials">HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group-এ ২০+ বছরের অভিজ্ঞতা। <a href="/about/index.html">সম্পূর্ণ প্রোফাইল</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="লেখক সম্পর্কে"><img alt="সেবাস্তিয়ান রুসোর প্রতিকৃতি" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">সেবাস্তিয়ান রুসো</a></strong><span class="author-card-bio">সিনিয়র ব্যাংকিং প্রযুক্তিবিদ, প্রয়োগ-ভিত্তিক এআই, পেমেন্ট পরিকাঠামো, টোকেনাইজড অর্থ, ISO 20022, পোস্ট-কোয়ান্টাম নিরাপত্তা, ক্লাউড-নেটিভ আর্থিক পরিষেবা ও নিয়ন্ত্রিত ডিজিটাল বাজার সম্পর্কে লেখেন।</span><span class="author-credentials">HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group-এ ২০+ বছরের অভিজ্ঞতা। <a href="/about/index.html">সম্পূর্ণ প্রোফাইল</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">সর্বশেষ পর্যালোচনা <time datetime="2026-05-29">2026-05-29</time>।</p>
 <!-- enrich-end -->

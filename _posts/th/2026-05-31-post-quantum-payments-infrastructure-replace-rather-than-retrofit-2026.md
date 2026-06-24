@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/th/2026-05-31-post-quantum-payments-infrastru
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "การเข้ารหัสยุคหลังควอนตัม, PQC การชำระเงิน, ความคล่องตัวด้านการเข้ารหัส, เก็บเกี่ยวตอนนี้-ถอดรหัสภายหลัง, HNDL, มาตรฐาน NIST หลังควอนตัม, ML-KEM, ML-DSA, FIPS 203, FIPS 204, การย้ายราง การชำระเงิน, ISO 20022 PQC, การแทนที่ SWIFT MT, HSM, การล่มสลายของ PKI, ความยืดหยุ่นในการดำเนินงาน"
 language: "th"
 excerpt: "เก็บเกี่ยวตอนนี้-ถอดรหัสภายหลังเปลี่ยนข้อความการชำระเงินที่ป้องกันด้วย TLS วันนี้ ให้กลายเป็นข้อมูลรั่วไหลที่ถูกถอดรหัสในวันข้างหน้า ML-KEM และ ML-DSA มีขนาดใหญ่กว่ากุญแจ RSA และ ECC ที่ราง ดั้งเดิมถูกออกแบบให้รองรับ เป็นลำดับขนาด — การปรับเปลี่ยนกระตุ้นการแยกย่อย ความหน่วง และการหมดทรัพยากร HSM การตัดสินใจเชิงสถาปัตยกรรมในปี 2026 คือจะแก้ไขเฉพาะหน้าหรือแทนที่ก่อนนาฬิกาเชิงกำกับดูแลจะหมดเวลา"
@@ -264,7 +264,7 @@ SLH-DSA (เวอร์ชั่นมาตรฐานของ SPHINCS+) อ
 - Bank of England (PRA), (2024). [SS1/21 — Operational resilience: Impact tolerances for important business services ⧉](https://www.bankofengland.co.uk/prudential-regulation/publication/2024/march/operational-resilience-impact-tolerances-for-important-business-services "PRA SS1/21").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="เกี่ยวกับผู้เขียน"><img alt="ภาพเหมือนของ Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">นักเทคโนโลยีธนาคารอาวุโสที่เขียนเกี่ยวกับ AI ประยุกต์ การย้ายระบบ ISO 20022 การเข้ารหัสยุคหลังควอนตัมสำหรับบริการทางการเงิน และการเปลี่ยนแปลงเชิงโครงสร้างของการชำระเงินขายส่ง</span><span class="author-credentials">มากกว่า 20 ปีที่ HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">โปรไฟล์เต็ม</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="เกี่ยวกับผู้เขียน"><img alt="ภาพเหมือนของ Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">นักเทคโนโลยีธนาคารอาวุโสที่เขียนเกี่ยวกับ AI ประยุกต์ การย้ายระบบ ISO 20022 การเข้ารหัสยุคหลังควอนตัมสำหรับบริการทางการเงิน และการเปลี่ยนแปลงเชิงโครงสร้างของการชำระเงินขายส่ง</span><span class="author-credentials">มากกว่า 20 ปีที่ HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">โปรไฟล์เต็ม</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">ตรวจสอบล่าสุด <time datetime="2026-05-31">2026-05-31</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">อ่านเพิ่มเติม</h2>

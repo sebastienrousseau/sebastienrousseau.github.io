@@ -20,7 +20,7 @@ id: "https://sebastienrousseau.com/2026-06-20-http-handle-zero-dependency-edge-i
 image_alt: "Hoton Baki da Fari na Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "http-handle, Rust edge ingress, proxy ba tare da dogaro ba, ababen more rayuwa na banki, mTLS JWT, sendfile zero-copy, ALPN HTTP3, bin doka DORA, Basel III, lura OTLP, binary na tsaye, ARM64 banki, zero trust banki, ingress mai sauƙi, tsaro Rust na banki"
 language: "ha-NG"
 last_reviewed: "2026-06-20"

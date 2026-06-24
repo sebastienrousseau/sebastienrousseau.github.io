@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/tr/2026-05-31-post-quantum-payments-infrastru
 image_alt: "Sebastien Rousseau'nun Siyah Beyaz Portresi"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "kuantum sonrası kriptografi, PQC ödemeler, kripto-çeviklik, şimdi topla sonra çöz, HNDL, NIST kuantum sonrası standartlar, ML-KEM, ML-DSA, FIPS 203, FIPS 204, ödeme rayı göçü, ISO 20022 PQC, SWIFT MT değiştirme, HSM, PKI çöküşü, operasyonel dayanıklılık, Quantum Computing Cybersecurity Preparedness Act"
 language: "tr"
 excerpt: "Şimdi topla-sonra çöz, bugünün TLS korumalı ödeme mesajlarını yarının çözülmüş ifşasına dönüştürür. ML-KEM ve ML-DSA, eski rayların boyutlandırıldığı RSA ve ECC anahtarlarından bir kat daha büyüktür — uyarlama parçalanmayı, gecikmeyi ve HSM tükenmesini tetikler. 2026'nın mimari kararı, düzenleyici saat dolmadan yamamak mı yoksa değiştirmek mi olduğudur."
@@ -264,7 +264,7 @@ PQC yetenekli, mevcut PKI'ye entegre, üretim güvenini bozmadan çift algoritma
 - Bank of England (PRA), (2024). [SS1/21 — Operasyonel dayanıklılık: Önemli iş hizmetleri için etki toleransları ⧉](https://www.bankofengland.co.uk/prudential-regulation/publication/2024/march/operational-resilience-impact-tolerances-for-important-business-services "PRA SS1/21").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Yazar hakkında"><img alt="Sebastien Rousseau'nun portresi" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Uygulamalı yapay zeka, ISO 20022 göçü, finansal hizmetler için post-kuantum kriptografi ve toptan ödemelerin yapısal dönüşümü üzerine yazan kıdemli bankacılık teknoloğu.</span><span class="author-credentials">HSBC Ticari ve Yatırım Bankası, PayPal, Barclays, Shazam, AKQA ve Virgin Group'ta 20+ yıl. <a href="/about/index.html">Tam profil</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Yazar hakkında"><img alt="Sebastien Rousseau'nun portresi" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Uygulamalı yapay zeka, ISO 20022 göçü, finansal hizmetler için post-kuantum kriptografi ve toptan ödemelerin yapısal dönüşümü üzerine yazan kıdemli bankacılık teknoloğu.</span><span class="author-credentials">HSBC Ticari ve Yatırım Bankası, PayPal, Barclays, Shazam, AKQA ve Virgin Group'ta 20+ yıl. <a href="/about/index.html">Tam profil</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Son inceleme <time datetime="2026-05-31">2026-05-31</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">İlgili okumalar</h2>

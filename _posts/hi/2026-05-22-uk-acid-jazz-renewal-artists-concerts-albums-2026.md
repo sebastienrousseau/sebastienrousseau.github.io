@@ -3,7 +3,7 @@ author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "2026 के UK acid jazz पुनर्जागरण का कोलाज — Hammond ऑर्गन, विनाइल रिकॉर्ड, Ronnie Scott's, Acid Jazz Records, jazz-funk फेस्टिवल स्टेज और लंदन की ग्रूव संस्कृति के साथ"
 banner_height: "571"
 banner_width: "1425"
-banner: "https://cloudcdn.pro/api/transform?url=/stocks/images/aperture-vintage-SshYpuf607g.webp&w=1200&format=webp&q=80"
+banner: "https://cloudcdn.pro/stocks/images/aperture-vintage-SshYpuf607g-1200.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/hi/2026-05-22-uk-acid-jazz-renewal-artists-co
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "UK एसिड जैज़ 2026, Acid Jazz Records, Brand New Heavies, Galliano, James Taylor Quartet, Ronnie Scott’s, Bangs and Talbot, Chris Bangs, Mick Talbot, Smokin Aces, Mostly Jazz Funk Soul Festival, Cymande, Soul II Soul, Jordan Rakei, UK जैज़ पुनरुत्थान, jazz funk, soul jazz, लंदन जैज़ संगीत कार्यक्रम"
 language: "hi"
 excerpt: "2026 में UK एसिड जैज़ पुनरुत्थान लेबल रिलीज़, पहली पीढ़ी के कलाकारों की लाइव तारीखों और उत्सव कार्यक्रमों में फैला है — Acid Jazz Records, Bangs & Talbot, The Brand New Heavies, Galliano, James Taylor Quartet और Mostly Jazz Funk & Soul Festival सभी एक साथ सक्रिय हैं।"
@@ -231,6 +231,6 @@ The Glasshouse में The Brand New Heavies के साथ Galliano और 
 - Mostly Jazz Funk & Soul Festival, (2026). [Mostly Jazz Funk & Soul Festival 2026 ⧉](https://mostlyjazz.co.uk "Mostly Jazz Funk & Soul Festival")।
 - Marlbank, (2026). [2026 में अब तक के शीर्ष UK जैज़ एल्बम ⧉](https://marlbank.net/top-jazz-in-2026/top-uk-jazz-albums-in-2026-so-far/ "2026 में अब तक के शीर्ष UK जैज़ एल्बम")।
 <!-- enrich-start -->
-<aside class="author-card" aria-label="लेखक के बारे में"><img alt="सेबास्तियन रूसो का चित्र" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">सेबास्तियन रूसो</a></strong><span class="author-card-bio">वरिष्ठ बैंकिंग प्रौद्योगिकीविद् जो प्रयोज्य AI, ISO 20022 प्रवास, वित्तीय सेवाओं के लिए पोस्ट-क्वांटम क्रिप्टोग्राफी, और थोक भुगतानों के संरचनात्मक परिवर्तन पर लिखते हैं।</span><span class="author-credentials">HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group में 20+ वर्षों का अनुभव। <a href="/about/index.html">पूर्ण प्रोफ़ाइल</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="लेखक के बारे में"><img alt="सेबास्तियन रूसो का चित्र" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">सेबास्तियन रूसो</a></strong><span class="author-card-bio">वरिष्ठ बैंकिंग प्रौद्योगिकीविद् जो प्रयोज्य AI, ISO 20022 प्रवास, वित्तीय सेवाओं के लिए पोस्ट-क्वांटम क्रिप्टोग्राफी, और थोक भुगतानों के संरचनात्मक परिवर्तन पर लिखते हैं।</span><span class="author-credentials">HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group में 20+ वर्षों का अनुभव। <a href="/about/index.html">पूर्ण प्रोफ़ाइल</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">अंतिम समीक्षा <time datetime="2026-05-22">2026-05-22</time>।</p>
 <!-- enrich-end -->

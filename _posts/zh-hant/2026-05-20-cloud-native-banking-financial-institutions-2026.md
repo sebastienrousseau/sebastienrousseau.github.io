@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/zh-hant/2026-05-20-cloud-native-banking-finan
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "雲原生銀行2026, Kubernetes銀行, 金融機構雲端, DORA 2026, 雲端韌性, Red Hat OpenShift, Portworx, 虛擬機容器共存, 銀行雲端主權, 金融服務雲端依賴, 營運韌性, 災難復原, 雲端退出策略, AI銀行工作負載"
 language: "zh-hant"
 last_reviewed: "2026-05-20"
@@ -214,6 +214,6 @@ FMI（金融市場基礎設施，Financial Market Infrastructure）首要需求�
 - Red Hat, (2026). [Digital sovereignty for banks ⧉](https://www.redhat.com/en/resources/cloud-sovereignty-for-banks-overview "Cloud sovereignty for banks").
 - Thought Machine, (2026). [Cloud-native core banking software ⧉](https://www.thoughtmachine.net "Thought Machine Vault").
 <!-- enrich-start -->
-<aside class="author-card" aria-label="關於作者"><img alt="Sebastien Rousseau 的肖像" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">資深銀行科技專家，長期撰寫應用 AI、ISO 20022 遷移、金融服務後量子密碼學，以及躉售支付結構性轉型等主題。</span><span class="author-credentials">在 HSBC Commercial &amp; Investment Bank、PayPal、Barclays、Shazam、AKQA 與 Virgin Group 累積超過 20 年資歷。<a href="/about/index.html">完整個人檔案</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="關於作者"><img alt="Sebastien Rousseau 的肖像" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">資深銀行科技專家，長期撰寫應用 AI、ISO 20022 遷移、金融服務後量子密碼學，以及躉售支付結構性轉型等主題。</span><span class="author-credentials">在 HSBC Commercial &amp; Investment Bank、PayPal、Barclays、Shazam、AKQA 與 Virgin Group 累積超過 20 年資歷。<a href="/about/index.html">完整個人檔案</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">最後審閱於 <time datetime="2026-05-20">2026-05-20</time>。</p>
 <!-- enrich-end -->

@@ -19,7 +19,7 @@ id: "https://sebastienrousseau.com/ja/2026-05-19-global-wholesale-payments-econo
 image_alt: "セバスチャン・ルソーのモノクロ・ポートレート"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "ホールセール決済 2026, グローバル決済経済学, ISO 20022, RTGS, クロスボーダー決済, BIS CPMI, FSB, Swift CBPR+, G20ロードマップ, 即時グロス決済, Project Agorá, Project Mandala, Project Nexus, 決済の相互運用性, コルレス銀行業務, 決済の分断, ホールセールCBDC"
 language: "ja"
 last_reviewed: "2026-05-19"

@@ -3,7 +3,7 @@ author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "Diagramma dell'architettura dei pagamenti agentici con agenti IA, mandati di consenso, credenziali tokenizzate, circuiti carte, banche, commercianti e tracciati di audit"
 banner_height: "571"
 banner_width: "1425"
-banner: "https://cloudcdn.pro/api/transform?url=/stocks/images/ai-robot.webp&w=1200&format=webp&q=80"
+banner: "https://cloudcdn.pro/stocks/images/ai-robot-1200.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/it/2026-05-23-agentic-pagamenti-banking-conse
 image_alt: "Ritratto in bianco e nero di Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "pagamenti agentici 2026, pagamenti agenti IA, Mastercard Agent Pay, pagamento IA Rabobank, AP2, A2A, x402, MCP, machine payments protocol, consenso ai pagamenti, Regulation E, EFTA, responsabilità nei pagamenti, intento verificabile, tokenizzazione, passkey, UX bancaria, commercio IA"
 language: "it"
 excerpt: "Nel 2026 i pagamenti agentici non sono più un concetto: Mastercard e Rabobank hanno eseguito nei Paesi Bassi una transazione reale in cui un agente IA (intelligenza artificiale) ha disposto il pagamento tramite Mastercard Agent Pay senza mai accedere ai dati della carta. Mandati crittografici in stile AP2, x402, A2A, MCP e MPP emergono come strato protocollare, mentre EFTA, Regulation E e la normativa britannica sui servizi di pagamento non sono ancora state aggiornate per le transazioni con agenti autonomi. Le banche hanno ora bisogno di un'architettura consenso + identità + responsabilità che produca prova pre-regolamento, non difesa retrospettiva sulle contestazioni."
@@ -203,6 +203,6 @@ Le banche devono partire da casi d'uso a basso rischio, basso valore e delimitat
 - J.P. Morgan, (2026). [Payments Outlook: Five Trends Powering Payments in 2026 ⧉](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Informazioni sull'autore"><img alt="Ritratto di Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist, scrive di IA applicata, infrastrutture di pagamento, denaro tokenizzato, ISO 20022, sicurezza post-quantum, servizi finanziari cloud-native e mercati digitali regolamentati.</span><span class="author-credentials">Oltre 20 anni in HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profilo completo</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Informazioni sull'autore"><img alt="Ritratto di Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist, scrive di IA applicata, infrastrutture di pagamento, denaro tokenizzato, ISO 20022, sicurezza post-quantum, servizi finanziari cloud-native e mercati digitali regolamentati.</span><span class="author-credentials">Oltre 20 anni in HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profilo completo</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Ultima revisione <time datetime="2026-05-23">2026-05-23</time>.</p>
 <!-- enrich-end -->

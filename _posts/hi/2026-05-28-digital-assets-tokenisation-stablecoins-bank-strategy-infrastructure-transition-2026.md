@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/hi/2026-05-28-digital-assets-tokenisation-sta
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "डिजिटल संपत्तियाँ 2026, टोकनाइज़्ड रियल-वर्ल्ड एसेट्स, स्टेबलकॉइन्स बैंकिंग, टोकनाइज़्ड जमा, डिजिटल संपत्ति कस्टडी, DLT बैंकिंग, निपटान अवसंरचना, संपार्श्विक गतिशीलता, प्रोग्राम-योग्य मुद्रा, बैंक रणनीति डिजिटल संपत्तियाँ"
 language: "hi"
 excerpt: "डिजिटल संपत्तियाँ अब नवाचार दांव नहीं रहीं। यह निपटान, कस्टडी और बैलेंस शीट संरचना का प्रश्न है। क्रिप्टो ~3 ट्रिलियन डॉलर का परिसंपत्ति वर्ग है, स्टेबलकॉइन्स ~300 अरब डॉलर तक पहुँच चुके हैं और टोकनाइज़्ड रियल-वर्ल्ड एसेट्स 2025 में ~300% बढ़े। 2026 में बैंकों का रणनीतिक कार्य भागीदारी का प्रश्न नहीं, बल्कि उस दुनिया के लिए अवसंरचना, नियंत्रण और शासन डिज़ाइन करना है जहाँ धन, संपत्ति और निपटान प्रोग्राम-योग्य बन रहे हैं।"
@@ -305,7 +305,7 @@ BCG दस-चरणीय मार्गदर्शिका के साथ
 - सेबास्तियन रूसो, (2026). [बैंकों के लिए एजेंटिक इंजीनियरिंग ⧉](https://sebastienrousseau.com/2026-05-17-agentic-engineering-banks-blueprint-2026 "एजेंटिक इंजीनियरिंग")।
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="लेखक के बारे में"><img alt="सेबास्तियन रूसो का चित्र" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">सेबास्तियन रूसो</a></strong><span class="author-card-bio">वरिष्ठ बैंकिंग प्रौद्योगिकीविद् जो प्रयोज्य AI, भुगतान अवसंरचना, टोकनीकृत मुद्रा, ISO 20022, पोस्ट-क्वांटम सुरक्षा, क्लाउड-नेटिव वित्तीय सेवाओं और विनियमित डिजिटल बाज़ारों पर लिखते हैं।</span><span class="author-credentials">HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group में 20+ वर्षों का अनुभव। <a href="/about/index.html">पूर्ण प्रोफ़ाइल</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="लेखक के बारे में"><img alt="सेबास्तियन रूसो का चित्र" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">सेबास्तियन रूसो</a></strong><span class="author-card-bio">वरिष्ठ बैंकिंग प्रौद्योगिकीविद् जो प्रयोज्य AI, भुगतान अवसंरचना, टोकनीकृत मुद्रा, ISO 20022, पोस्ट-क्वांटम सुरक्षा, क्लाउड-नेटिव वित्तीय सेवाओं और विनियमित डिजिटल बाज़ारों पर लिखते हैं।</span><span class="author-credentials">HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group में 20+ वर्षों का अनुभव। <a href="/about/index.html">पूर्ण प्रोफ़ाइल</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">अंतिम समीक्षा <time datetime="2026-05-28">2026-05-28</time>।</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">संबंधित पठन</h2>

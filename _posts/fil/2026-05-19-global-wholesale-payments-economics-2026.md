@@ -19,7 +19,7 @@ id: "https://sebastienrousseau.com/fil/2026-05-19-global-wholesale-payments-econ
 image_alt: "Itim at Puting Larawan ni Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "wholesale na bayad 2026, ekonomiya ng pandaigdigang bayad, ISO 20022, RTGS, cross-border na bayad, BIS CPMI, FSB, Swift CBPR+, G20 roadmap, real time gross settlement, Project Agorá, Project Mandala, Project Nexus, interoperability ng bayad, correspondent banking, fragmentation ng bayad, wholesale CBDC"
 language: "fil"
 last_reviewed: "2026-05-19"

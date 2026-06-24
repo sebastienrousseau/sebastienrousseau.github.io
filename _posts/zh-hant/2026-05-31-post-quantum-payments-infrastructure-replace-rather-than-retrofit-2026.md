@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/zh-hant/2026-05-31-post-quantum-payments-infr
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "後量子密碼學, PQC 支付, 密碼敏捷性, 現收割後解密, HNDL, NIST 後量子標準, ML-KEM, ML-DSA, FIPS 203, FIPS 204, 支付管道遷移, ISO 20022 PQC, SWIFT MT 替換, HSM, PKI 崩潰, 營運韌性, Quantum Computing Cybersecurity Preparedness Act"
 language: "zh-hant"
 excerpt: "現收割後解密把今天受 TLS 保護的支付訊息變成明天的解密曝險。ML-KEM 與 ML-DSA 比傳統管道為其設計的 RSA 與 ECC 金鑰大一個量級——改造會觸發分片、延遲與 HSM 耗竭。2026 年的架構決定是:在監管時鐘耗盡前,要打補丁還是要替換。"
@@ -264,7 +264,7 @@ SLH-DSA (SPHINCS+ 的標準化版本) 是雜湊型,因此只仰賴雜湊函數�
 - Bank of England (PRA), (2024). [SS1/21 — Operational resilience: Impact tolerances for important business services ⧉](https://www.bankofengland.co.uk/prudential-regulation/publication/2024/march/operational-resilience-impact-tolerances-for-important-business-services "PRA SS1/21").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="關於作者"><img alt="Sebastien Rousseau 肖像" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">資深銀行技術專家,撰寫主題涵蓋應用 AI、ISO 20022 遷移、金融服務後量子密碼學,以及批發支付的結構性轉型。</span><span class="author-credentials">在 HSBC Commercial &amp; Investment Bank、PayPal、Barclays、Shazam、AKQA、Virgin Group 擁有 20 多年經驗。<a href="/about/index.html">完整簡介</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="關於作者"><img alt="Sebastien Rousseau 肖像" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">資深銀行技術專家,撰寫主題涵蓋應用 AI、ISO 20022 遷移、金融服務後量子密碼學,以及批發支付的結構性轉型。</span><span class="author-credentials">在 HSBC Commercial &amp; Investment Bank、PayPal、Barclays、Shazam、AKQA、Virgin Group 擁有 20 多年經驗。<a href="/about/index.html">完整簡介</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">最近審閱 <time datetime="2026-05-31">2026-05-31</time>。</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">延伸閱讀</h2>

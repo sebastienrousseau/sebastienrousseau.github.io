@@ -17,7 +17,7 @@ id: "https://sebastienrousseau.com/bn/2026-05-20-cloud-native-banking-financial-
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "ক্লাউড নেটিভ ব্যাংকিং ২০২৬, Kubernetes ব্যাংক, আর্থিক প্রতিষ্ঠান ক্লাউড, DORA 2026, ক্লাউড রেজিলিয়েন্স, Red Hat OpenShift, Portworx, VM কন্টেইনার সহাবস্থান, ব্যাংক ক্লাউড সার্বভৌমত্ব, আর্থিক সেবা ক্লাউড নির্ভরতা, অপারেশনাল রেজিলিয়েন্স, দুর্যোগ পুনরুদ্ধার, ক্লাউড এক্সিট স্ট্র্যাটেজি, AI ব্যাংকিং ওয়ার্কলোড"
 language: "bn"
 last_reviewed: "2026-05-20"
@@ -230,6 +230,6 @@ FMI (Financial Market Infrastructure)-গুলির সর্বোপরি �
 - Red Hat, (২০২৬)। [ব্যাংকের জন্য ডিজিটাল সার্বভৌমত্ব ⧉](https://www.redhat.com/en/resources/cloud-sovereignty-for-banks-overview "ব্যাংকের জন্য ক্লাউড সার্বভৌমত্ব")।
 - Thought Machine, (২০২৬)। [ক্লাউড-নেটিভ কোর ব্যাংকিং সফটওয়্যার ⧉](https://www.thoughtmachine.net "Thought Machine Vault")।
 <!-- enrich-start -->
-<aside class="author-card" aria-label="লেখক সম্পর্কে"><img alt="Sebastien Rousseau-এর প্রতিকৃতি" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">প্রয়োগিক AI, ISO 20022 মাইগ্রেশন, আর্থিক পরিষেবার জন্য পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি এবং পাইকারি পেমেন্টের কাঠামোগত রূপান্তর নিয়ে লেখা সিনিয়র ব্যাংকিং প্রযুক্তিবিদ।</span><span class="author-credentials">HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group-জুড়ে ২০+ বছরের অভিজ্ঞতা। <a href="/about/index.html">সম্পূর্ণ প্রোফাইল</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="লেখক সম্পর্কে"><img alt="Sebastien Rousseau-এর প্রতিকৃতি" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">প্রয়োগিক AI, ISO 20022 মাইগ্রেশন, আর্থিক পরিষেবার জন্য পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি এবং পাইকারি পেমেন্টের কাঠামোগত রূপান্তর নিয়ে লেখা সিনিয়র ব্যাংকিং প্রযুক্তিবিদ।</span><span class="author-credentials">HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group-জুড়ে ২০+ বছরের অভিজ্ঞতা। <a href="/about/index.html">সম্পূর্ণ প্রোফাইল</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">সর্বশেষ পর্যালোচনা <time datetime="2026-05-20">২০২৬-০৫-২০</time>।</p>
 <!-- enrich-end -->

@@ -19,7 +19,7 @@ id: "https://sebastienrousseau.com/zh-hant/2026-05-19-global-wholesale-payments-
 image_alt: "Sebastien Rousseau 的黑白肖像"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "2026 大額支付、全球支付經濟學、ISO 20022、RTGS、跨境支付、BIS CPMI、FSB、Swift CBPR+、G20 路線圖、即時總額清算、Project Agorá、Project Mandala、Project Nexus、支付互通性、代理銀行、支付分裂、批發型 CBDC"
 language: "zh-hant"
 last_reviewed: "2026-05-19"

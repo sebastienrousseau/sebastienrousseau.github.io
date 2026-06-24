@@ -20,7 +20,7 @@ id: "https://sebastienrousseau.com/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-fina
 image_alt: "Chân dung đen trắng của Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "trình phân tích YAML Rust an toàn hơn, NoyaLib, tuân thủ đặc tả YAML 1.2, Rust zero-unsafe, xác thực JSON Schema, Concrete Syntax Tree lossless, CST, MCP, Model Context Protocol, WebAssembly, manifest Kubernetes, cấu hình CI/CD, DORA Điều 5, BCBS 239, rủi ro vận hành Basel III, hạ tầng tài chính, bảo mật cấu hình, chuỗi cung ứng phần mềm"
 language: "vi-VN"
 last_reviewed: "2026-06-18"
