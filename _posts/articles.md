@@ -105,21 +105,33 @@ site_software: "Static Site Generator, Rust"
 <header class="newsroom-section-head"><p class="newsroom-kicker">FEATURED</p><h2>Latest story</h2></header>
 
 <article class="newsroom-featured">
-<a class="newsroom-featured-media" href="/2026-06-25-quantum-dawn-cib-kyberlib-quantum-resilient-payments-stack-2026/index.html" title="Quantum Dawn for CIB: From KyberLib to a Quantum-Resilient Payments Stack">
-<img alt="Aerial view of a global financial district at dawn — symbolising the post-quantum dawn for corporate and investment banking and the transition from KyberLib to an enterprise-wide quantum-resilient payments stack" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau-20260617-5th-commercialising-quantum-3.webp" loading="eager" fetchpriority="high" decoding="async" width="800" height="800" />
+<a class="newsroom-featured-media" href="/2026-06-26-post-quantum-banking-resilience-index-eo-14409-fiduciary-crypto-agility-2026/index.html" title="The Post-Quantum Banking Resilience Index in 2026: EO 14409, Global Deadlines, and Fiduciary Cryptographic Agility">
+<img alt="Abstract quantum-blue light field — symbolising the post-quantum banking resilience index and the migration of financial cryptography to ML-KEM, ML-DSA and SLH-DSA" src="https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA-1920.webp" loading="eager" fetchpriority="high" decoding="async" width="800" height="800" />
 </a>
 <div class="newsroom-featured-body">
-<span class="newsroom-eyebrow">Post-Quantum Cryptography · Pqc · Kyberlib</span>
-<h3><a href="/2026-06-25-quantum-dawn-cib-kyberlib-quantum-resilient-payments-stack-2026/index.html" title="Quantum Dawn for CIB: From KyberLib to a Quantum-Resilient Payments Stack">Quantum Dawn for CIB: From KyberLib to a Quantum-Resilient Payments Stack</a></h3>
-<p class="newsroom-meta"><time datetime="2026-06-25">June 25, 2026</time> · Sebastien Rousseau</p>
-<p>BIS Quantum Dawn and the G7 January 2026 PQC roadmap have moved post-quantum cryptography from research to board agenda. This piece extends KyberLib from a toolkit into an enterprise CIB transition programme — covering high-value rails, trade finance, custody, and the disclosures regulators are now asking for.</p>
-<p><a class="pill ghost" href="/2026-06-25-quantum-dawn-cib-kyberlib-quantum-resilient-payments-stack-2026/index.html" title="Quantum Dawn for CIB: From KyberLib to a Quantum-Resilient Payments Stack">Read the full story</a></p>
+<span class="newsroom-eyebrow">Post-Quantum Cryptography · Pqc · Eo 14409</span>
+<h3><a href="/2026-06-26-post-quantum-banking-resilience-index-eo-14409-fiduciary-crypto-agility-2026/index.html" title="The Post-Quantum Banking Resilience Index in 2026: EO 14409, Global Deadlines, and Fiduciary Cryptographic Agility">The Post-Quantum Banking Resilience Index in 2026: EO 14409, Global Deadlines, and Fiduciary Cryptographic Agility</a></h3>
+<p class="newsroom-meta"><time datetime="2026-06-26">June 26, 2026</time> · Sebastien Rousseau</p>
+<p>Executive Order 14409, ANSSI's hard 2030 deadline and DORA Article 5 have moved post-quantum cryptography from a long-range technical goal to an active regulatory mandate. This index converts securing registries, high-frequency ledgers and SWIFT channels into a board-ready 0–5 scorecard that aligns ML-KEM, ML-DSA and S</p>
+<p><a class="pill ghost" href="/2026-06-26-post-quantum-banking-resilience-index-eo-14409-fiduciary-crypto-agility-2026/index.html" title="The Post-Quantum Banking Resilience Index in 2026: EO 14409, Global Deadlines, and Fiduciary Cryptographic Agility">Read the full story</a></p>
 </div>
 </article>
 
 <header class="newsroom-section-head"><p class="newsroom-kicker">ARCHIVE</p><h2>All news stories and articles</h2></header>
 
 <div class="newsroom-grid">
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-06-25-quantum-dawn-cib-kyberlib-quantum-resilient-payments-stack-2026/index.html" title="Quantum Dawn for CIB: From KyberLib to a Quantum-Resilient Payments Stack">
+<img alt="Aerial view of a global financial district at dawn — symbolising the post-quantum dawn for corporate and investment banking and the transition from KyberLib to an enterprise-wide quantum-resilient payments stack" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau-20260617-5th-commercialising-quantum-3.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Post-Quantum Cryptography · Pqc · Kyberlib</span>
+<h3><a href="/2026-06-25-quantum-dawn-cib-kyberlib-quantum-resilient-payments-stack-2026/index.html" title="Quantum Dawn for CIB: From KyberLib to a Quantum-Resilient Payments Stack">Quantum Dawn for CIB: From KyberLib to a Quantum-Resilient Payments Stack</a></h3>
+<p class="newsroom-meta"><time datetime="2026-06-25">June 25, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">BIS Quantum Dawn and the G7 January 2026 PQC roadmap have moved post-quantum cryptography from research to board agenda. This piece extends KyberLib from a toolkit into an enterprise CIB transition programme — covering high-value rails, trade finance, custody, and the disclosures regulators are now asking for.</p>
+</div>
+</article>
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-06-25-global-payments-outlook-agentic-invisible-real-time-2026/index.html" title="The 2026 Global Payments Outlook: Operating Model, Risk, and Revenue in an Agentic, Invisible, Real-Time World">
