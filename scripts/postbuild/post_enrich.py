@@ -399,7 +399,7 @@ def _insert_lead(body_text: str, tldr: str, related: list[dict[str, object]]) ->
 _AUTHOR_CARD_HTML = (
     '<aside class="author-card" aria-label="About the author">'
     '<img alt="Portrait of Sebastien Rousseau" '
-    'src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" '
+    'src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" '
     'width="64" height="64" loading="lazy" decoding="async" />'
     '<span class="author-card-body">'
     '<strong class="author-card-name">'

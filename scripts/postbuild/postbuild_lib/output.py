@@ -611,7 +611,7 @@ def write_json_feed(public: Path) -> bool:
         "home_page_url": f"{base}/",
         "feed_url": f"{base}/feed.json",
         "language": "en-GB",
-        "icon": "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png",
+        "icon": "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp",
         "favicon": "https://cloudcdn.pro/clients/sebastienrousseau/favicon.ico",
         "authors": [{"name": "Sebastien Rousseau", "url": f"{base}/about/"}],
         "items": items,

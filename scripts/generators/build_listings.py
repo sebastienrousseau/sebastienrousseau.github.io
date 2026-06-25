@@ -131,7 +131,7 @@ def _post_pillars(text: str, taxonomy: dict, amap: dict[str, str]) -> list[str]:
     return [p for p in PILLAR_ORDER if p in pillars]
 
 
-_DEFAULT_BANNER = "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+_DEFAULT_BANNER = "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 
 
 # Tiny per-card share rail — 5 monochrome SVG glyphs (X, LinkedIn, Facebook,
