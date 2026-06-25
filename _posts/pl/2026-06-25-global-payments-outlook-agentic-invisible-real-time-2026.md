@@ -91,13 +91,13 @@ site_software: "Static Site Generator, Rust"
 
 <!-- lead-start -->
 <aside class="post-lead" aria-label="Article summary">
-<p class="post-lead-tldr"><strong>TL;DR.</strong> Krajobraz płatności 2026 odszedł od migracji komunikatów na rzecz wielowymiarowego modelu operacyjnego, w którym ryzyko i przychody dyktuje wykonanie w czasie rzeczywistym. Tekst syntetyzuje perspektywy 2026 J.P. Morgan, Global Payments, HSBC oraz Payments Association w czteropunktowy plan operacyjny G-SIB, obejmujący handel agentowy inicjowany przez modele, zawsze dostępne API treasury, tokenizowane ujednolicone księgi w ramach BIS Project Agorá oraz termin 14 listopada 2026 dla adresu ustrukturyzowanego SWIFT.</p>
+<p class="post-lead-tldr"><strong>TL;DR.</strong> Krajobraz płatności 2026 odszedł od migracji komunikatów na rzecz wielowymiarowego modelu operacyjnego, w którym ryzyko i przychody dyktuje wykonanie w czasie rzeczywistym. Tekst syntetyzuje perspektywy 2026 J.P. Morgan, Global Payments, HSBC oraz Payments Association w czteropunktowy plan operacyjny G-SIB, obejmujący handel agentowy inicjowany przez modele, zawsze dostępne API treasury, tokenizowane ujednolicone księgi w ramach BIS Project Agorá oraz termin 14/15 listopada 2026 r. dla adresu ustrukturyzowanego SWIFT.</p>
 <p class="post-lead-heading"><strong>Kluczowe wnioski</strong></p>
 <ul class="post-lead-takeaways">
   <li><strong>Handel agentowy otwiera obszar delegowanej odpowiedzialności.</strong> Autonomiczne agenty AI mają pośredniczyć w 3-5 bilionach USD rocznego handlu do 2030 roku. Banki muszą zdefiniować kontrolę dostępu MCP, delegowanie SCA w ramach PSD3/PSR oraz odpowiedzialność za KYC/AML w wieloagentowych łańcuchach płatniczych.</li>
-  <li><strong>Zawsze dostępna płynność staje się podstawą operacyjną i regulacyjną.</strong> API treasury 24/7 oraz rachunki wirtualne minimalizują zamrożoną gotówkę i podnoszą poziom odporności. W ramach DORA produkty płynnościowe czasu rzeczywistego muszą opierać się na geograficznie nadmiarowej infrastrukturze active-active z dostępnością 99,999%.</li>
+  <li><strong>Zawsze dostępna płynność staje się podstawą operacyjną i regulacyjną.</strong> API treasury 24/7 oraz rachunki wirtualne minimalizują zamrożoną gotówkę i podnoszą poziom odporności. W przypadku API skarbcowych w czasie rzeczywistym o znaczeniu systemowym, dostępność na poziomie pięciu dziewiątek (99,999 %) staje się wewnętrznym celem inżynierskim, który banki same sobie stawiają, aby wykazać przed organami nadzoru odporność na poziomie DORA. Samo DORA nie nakazuje uniwersalnego progu pięciu dziewiątek; obejmuje zarządzanie ryzykiem ICT, zgłaszanie incydentów, testy odporności, ryzyko stron trzecich oraz nadzór nad krytycznymi dostawcami ICT.</li>
   <li><strong>Tokenizacja awansowała do regulowanych ujednoliconych ksiąg.</strong> Project Agorá to największe publiczno-prywatne ramy dla tokenizowanych depozytów banków komercyjnych i rezerw banku centralnego. Banki potrzebują pięcioetapowej ścieżki tokenizacji z jasnym ujęciem prudencjalnym.</li>
-  <li><strong>Przełączenie na adres ustrukturyzowany 14 listopada 2026 ma sztywny termin.</strong> Nieustrukturyzowane pola adresu pocztowego w komunikatach CBPR+ i SEPA wywołają natychmiastowe odrzucenia. Wymagane jest czyste zarządzanie danymi przez zespoły produktu, technologii i compliance.</li>
+  <li><strong>Przełączenie na adres ustrukturyzowany 14/15 listopada 2026 r. ma sztywny termin.</strong> Swift CBPR+ usuwa nieustrukturyzowany blok `<AdrLine>` od 14 listopada 2026 r.; rulebooki EPC SEPA dopuszczają adres nieustrukturyzowany tylko do 15 listopada 2026 r. Wymagane jest czyste zarządzanie danymi przez zespoły produktu, technologii i compliance.</li>
 </ul>
 <p class="post-lead-related"><strong>Powiązane lektury:</strong> <a href="https://sebastienrousseau.com/2026-06-23-iso-20022-pain001-programmable-liquidity-autonomic-treasury-2026">From Pain.001 to Programmable Liquidity: ISO 20022 as the Autonomic Nervous System of Treasury in 2026</a>, <a href="https://sebastienrousseau.com/2026-06-24-cross-border-iso-20022-open-finance-tokenised-deposits-treasury-2026">Cross-Border 2026: ISO 20022, Open Finance and Tokenised Deposits in Corporate Treasury</a>, <a href="https://sebastienrousseau.com/2026-06-25-quantum-dawn-cib-kyberlib-quantum-resilient-payments-stack-2026">Quantum Dawn for CIB: From KyberLib to a Quantum-Resilient Payments Stack</a>.</p>
 </aside>
@@ -112,6 +112,20 @@ Cykl definiują trzy siły, każda odpowiadająca bezpośrednio kwestii na pozio
 - **Wykonanie w czasie rzeczywistym** — prędkość kapitału, z konsekwencjami dla zarządzania płynnością, ryzyka kredytowego, odporności operacyjnej i obrony przed oszustwami.
 
 Stawka finansowa jest istotna. Oszustwa skalują się pod względem szybkości i wyrafinowania; terminy regulacyjne są sztywne; banki, które proaktywnie modernizują systemy rdzeniowe, odblokowują znaczące możliwości przychodów z opłat. Koszt bezczynności jest przeciwny: natychmiastowe odrzucenia transakcji, wąskie gardła operacyjne, kary regulacyjne i szybka erozja udziału w rynku.
+
+## Drabina pewności — co jest datowane, regulowane lub prognozowane
+
+Nie każdy element tego raportu niesie tę samą pewność. Pytanie na poziomie zarządu brzmi, które delty to terminy, które to oczekiwania nadzorcze, a które wciąż pozostają projekcjami rynkowymi — bo odpowiedź zmienia rozmowę budżetową.
+
+| Kategoria | Przykłady |
+| --- | --- |
+| **Twarde terminy** | Przełączenie Swift CBPR+ na adres ustrukturyzowany (14 listopada 2026 r.); rulebooki EPC SEPA (15 listopada 2026 r.) |
+| **Obowiązki regulacyjne** | DORA — ryzyko ICT + testy odporności + nadzór nad stronami trzecimi (UE); delegowanie SCA w ramach PSD3/PSR; MRM zgodnie z SR 11-7 + PRA SS1/23 |
+| **Wysoce prawdopodobne przesunięcia rynkowe** | API skarbcowe czasu rzeczywistego, obrona przed oszustwami sterowana AI, płynność oparta na API, oszustwa biometryczne napędzane deepfake |
+| **Opcje strategiczne** | Depozyty tokenizowane, ujednolicone księgi w ramach Project Agorá, korytarze handlu agentowego, ciągłe FX (Wire 365) |
+| **Prognozy** | `$3-$5 trillion` rocznych przepływów handlu agentowego do 2030 r. (bazowa prognoza McKinsey) |
+
+Dwa górne wiersze traktuj jako fakty compliance, które generują linię budżetową niezależnie od tego, czy bank pochwyci jakąkolwiek część potencjału. Dwa dolne wiersze traktuj jako opcje strategiczne — wysokie przekonanie co do kierunku, ale gdzie moment wykonania jest wyborem zarządu, a nie wpisem w kalendarzu regulatora.
 
 ## Zbieżność globalnych autorytetów płatniczych
 
@@ -204,7 +218,7 @@ Aby uchwycić tę wartość, banki dostarczają **produkty API Treasury-as-a-Ser
 
 ### Odporność operacyjna i DORA
 
-Oferowanie zawsze dostępnej płynności przekształca profil ryzyka banku. Platforma musi utrzymać **99,999% dostępności operacyjnej** przy ciągłym obciążeniu czasu rzeczywistego.
+Oferowanie zawsze dostępnej płynności przekształca profil ryzyka banku. W przypadku API skarbcowych w czasie rzeczywistym o znaczeniu systemowym, dostępność na poziomie pięciu dziewiątek (99,999 %) staje się wewnętrznym celem inżynierskim, który banki same sobie stawiają, aby wykazać przed organami nadzoru odporność na poziomie DORA. Samo DORA nie nakazuje uniwersalnego progu pięciu dziewiątek; obejmuje zarządzanie ryzykiem ICT, zgłaszanie incydentów, testy odporności, ryzyko stron trzecich oraz nadzór nad krytycznymi dostawcami ICT.
 
 W ramach [Digital Operational Resilience Act (DORA)](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554 "Regulation (EU) 2022/2554 — Digital Operational Resilience Act") nie jest to wskaźnik IT — to ścisły wymóg regulacyjny. Regulatorzy oczekują, że banki udowodnią, że powierzchnia API treasury czasu rzeczywistego i baza danych księgi mogą wchłonąć poważne-ale-wiarygodne ataki cybernetyczne, awarie sieci i zakłócenia hyperscalerów bez przerywania krytycznych płatności ani naruszania systemowej płynności. To wymaga geograficznie nadmiarowych architektur baz danych multi-cloud active-active, warstw wykrywania zagrożeń w czasie rzeczywistym i automatycznego failover — widocznych w linii kosztów zmian, nie tylko w teczce audytowej.
 
@@ -216,7 +230,7 @@ Treasury czasu rzeczywistego nie może żyć wewnątrz granicy jednej waluty. G-
 
 Tokenizacja awansowała z odizolowanych pilotów proof-of-concept do skalowanej infrastruktury monetarnej klasy bankowej. Fokus przesunął się z prywatnych stablecoinów i spekulacyjnych kryptoaktywów na **tokenizowane depozyty banków komercyjnych** i **hurtowe cyfrowe waluty banków centralnych (wCBDC)** działające na programowalnych ujednoliconych księgach.
 
-Ramą referencyjną jest [Project Agorá](https://www.bis.org/about/bisih/topics/fmis/agora.htm "BIS Project Agorá — tokenisation of wholesale cross-border payments") — duża współpraca publiczno-prywatna zwołana przez BIS i IIF, obejmująca siedem banków centralnych i ponad 40 prywatnych instytucji finansowych. Projekt bada, jak tokenizowane depozyty banków komercyjnych integrują się z tokenizowanymi hurtowymi CBDC na wspólnej programowalnej księdze, by wyeliminować tarcia rozliczeń transgranicznych, skoordynować kontrole compliance i umożliwić atomową finalność 24/7.
+Ramą referencyjną jest [Project Agorá](https://www.bis.org/about/bisih/topics/fmis/agora.htm "BIS Project Agorá — tokenisation of wholesale cross-border payments") — duża współpraca publiczno-prywatna zwołana przez BIS i IIF, obejmująca **ośmiu banków centralnych** i ponad 40 prywatnych instytucji finansowych (zgodnie ze stroną BIS Agorá, zaktualizowaną 27 maja 2026 r.). Projekt bada, jak tokenizowane depozyty banków komercyjnych integrują się z tokenizowanymi hurtowymi CBDC na wspólnej programowalnej księdze, by wyeliminować tarcia rozliczeń transgranicznych, skoordynować kontrole compliance i umożliwić atomową finalność 24/7.
 
 ### Pięcioetapowa ścieżka tokenizacji
 
@@ -248,7 +262,7 @@ Zamiast konkurować na szynach detalicznych, banki transakcyjne ustanawiają cus
 
 ## Filar 4 — Dane ustrukturyzowane i obrona przed oszustwami
 
-Zgodność infrastrukturalna w 2026 jest zdominowana przez **przełączenie na adres ustrukturyzowany 14 listopada 2026** ustanowione w ramach [SWIFT Standards Release (SR) 2026](https://www.swift.com/standards/iso-20022/removal-unstructured-address "SWIFT — Removal of unstructured address, November 2026"). Od tej daty sieci płatnicze CBPR+ i SEPA przestaną akceptować w pełni nieustrukturyzowane, swobodne bloki adresu pocztowego (`<AdrLine>`) w komunikatach płatniczych. Każdy komunikat transgraniczny lub krajowy zawierający adres nieustrukturyzowany tam, gdzie oczekiwane są elementy ustrukturyzowane, zostanie opóźniony lub odrzucony przez sieć.
+Zgodność infrastrukturalna w 2026 jest zdominowana przez **przełączenie na adres ustrukturyzowany 14/15 listopada 2026 r.** ustanowione w ramach [SWIFT Standards Release (SR) 2026](https://www.swift.com/standards/iso-20022/removal-unstructured-address "SWIFT — Removal of unstructured address, November 2026"). Swift CBPR+ usuwa nieustrukturyzowany blok `<AdrLine>` od 14 listopada 2026 r.; rulebooki EPC SEPA dopuszczają adres nieustrukturyzowany tylko do 15 listopada 2026 r. Każdy komunikat transgraniczny lub krajowy zawierający adres nieustrukturyzowany tam, gdzie oczekiwane są elementy ustrukturyzowane, zostanie opóźniony lub odrzucony przez sieć.
 
 Większość instytucji zna datę. Wiele traktuje to jako powierzchowne ćwiczenie mapowania na warstwie interfejsu. Rzeczywistość to głębsze wyzwanie jakości danych i zarządzania danymi. Aby uniknąć katastrofalnych wskaźników odrzuceń, operacje płatności potrzebują jasnych ram zarządzania międzyfunkcyjnego.
 
@@ -266,7 +280,7 @@ Traktowany jako koszt compliance, program danych ustrukturyzowanych jest drogi. 
 
 ### Warstwowa obrona AI przed oszustwami
 
-W miarę przyspieszania prędkości transakcji do czasu rzeczywistego techniki oszustw się skalują. Najnowsze badania wskazują, że deepfake odpowiadają za około 40% prób oszustw biometrycznych, przy czym syntetyczne media są coraz częściej używane do pokonywania kontroli rozpoznawania głosu i twarzy w przepływach onboardingu i płatności.
+W miarę przyspieszania prędkości transakcji do czasu rzeczywistego techniki oszustw się skalują. [Raport Entrust o oszustwach tożsamościowych 2026](https://www.entrust.com/resources/reports/identity-fraud-report "Entrust 2026 Identity Fraud Report") szacuje deepfake na **jedną na pięć prób oszustwa biometrycznego**; wcześniejsza analiza Entrust umieszczała deepfake na poziomie **40 % prób oszustwa biometrycznego wideo** w szczególności.
 
 Obroną jest **trzywarstwowy model AI antyfraudowy**.
 
@@ -283,7 +297,7 @@ Aby zrealizować cztery filary, organy zarządcze G-SIB i banków regionalnych p
 ### Horyzont 1 — Natychmiastowa zgodność i utwardzenie rdzenia (0-12 miesięcy)
 
 - **Fokus.** Standaryzacja jakości danych ISO 20022 i zabezpieczenie podstawowych ścieżek transakcyjnych czasu rzeczywistego.
-- **Wskaźnik sukcesu (KPI).** Zero odrzuceń adresu nieustrukturyzowanego na SWIFT i SEPA po przełączeniu 14 listopada 2026.
+- **Wskaźnik sukcesu (KPI).** Zero odrzuceń adresu nieustrukturyzowanego na SWIFT i SEPA po przełączeniu 14/15 listopada 2026 r.
 - **Sponsor wykonawczy.** Chief Operating Officer / Head of Payment Operations.
 - **Typ dostarczanego efektu.** Ruch bez żalu. Aktualizacje schematu bazy danych rdzeniowej i silnik walidacji SWIFT SR 2026.
 
@@ -301,19 +315,32 @@ Aby zrealizować cztery filary, organy zarządcze G-SIB i banków regionalnych p
 - **Sponsor wykonawczy.** Group Treasurer / Head of Transaction Banking.
 - **Typ dostarczanego efektu.** Opcja strategiczna. Programowalna infrastruktura księgi, reguły płynności kontraktów smart, adaptery rozliczeń DvP/PvP.
 
+## Co zrobić w poniedziałek rano — sześciopunktowa lista kontrolna dla banków
+
+Mapa trzyhoryzontowa to plan cyklu. Poniższa lista kontrolna to to, co CIO, COO lub Head of Transaction Banking może mieć na stole do końca następnego tygodnia roboczego, niezależnie od tego, jak dojrzała jest reszta programu.
+
+1. **Zinwentaryzuj ekspozycję na adres nieustrukturyzowany** według kanału i typu komunikatu. Każda legacy ścieżka plikowa, każdy legacy endpoint API, każdy korporacyjny ERP, który nadal emituje swobodny tekst `<AdrLine>`. Rezultat: liczba, właściciel i data remediacji na źródło.
+2. **Ustanów taksonomię ryzyka płatności agentowych.** Kategoryzuj przepływy inicjowane nieludzko według metody inicjacji (agent konsumenta, agent akceptanta, agent zakupów korporacyjnych), typu kontrahenta i szyny. Rezultat: jednostronicowa taksonomia i ticket do silnika routingu.
+3. **Zdefiniuj limity polityki delegowanych uprawnień dla płatności inicjowanych przez AI.** Wielopoziomowe limity według wielkości transakcji, kategorii akceptanta, geografii. Rezultat: szkic specyfikacji polityki-jako-kod, którą silnik OPA może egzekwować.
+4. **Zmapuj krytyczne dla DORA API skarbcowe i zależności od stron trzecich.** Które API znajdują się w inwentarzu scenariuszy poważnych-ale-wiarygodnych; od jakich stron trzecich zależą; które kontrakty już spełniają DORA Article 28. Rezultat: wiersz w rejestrze krytycznych dostawców ICT na każde API.
+5. **Zidentyfikuj dwa przypadki użycia depozytów tokenizowanych z mierzalną wartością skarbcową.** Wewnętrzny netting międzyoddziałowy i pojedynczy korytarz przyległy do Project Agorá to realistyczne pierwsze dwa. Rezultat: wymiarowany business case dla każdego, z właścicielem i 90-dniową datą decyzyjną.
+6. **Zbuduj ramę kontroli ryzyka modelu dla oszustw i decyzji agentowych.** Zmapuj każdy model ML w ścieżkach oszustw i płatności agentowych do oczekiwań SR 11-7 / PRA SS1/23: udokumentowany cel, linia danych, wyjaśnialność, monitoring, ścieżka nadpisania. Rezultat: jednostronicowa macierz kontroli MRM na model.
+
+Sensem tej listy nie jest, że którykolwiek z punktów jest nowatorski. Sensem jest, że jest na tyle krótka, by zacząć w tym tygodniu, na tyle obserwowalna, by śledzić na kolejnym komitecie wykonawczym, i strukturalnie zgodna z czterema filarami, by wczesne prace zasilały program, a nie z nim konkurowały.
+
 ## FAQ
 
 **Czy handel agentowy rzeczywiście osiągnie 3-5 bilionów USD do 2030?**
 Bazowa prognoza McKinsey wskazuje na 5 bilionów USD sprzedaży handlu agentowego do 2030, przy zakresie niezależnych prognoz koncentrującym się między 3 a 5 bilionami USD. Wariancja odzwierciedla, jak agresywnie akceptanci dostarczają maszynowo czytelne API checkoutu i jak szybko banki pozwalają agentom transakcjonować w ramach delegowania SCA — wąskie gardło jest po stronie banku i akceptanta, nie po stronie zdolności agenta.
 
-**Czy przełączenie SWIFT 14 listopada 2026 dotyczy również krajowych przepływów SEPA?**
+**Czy przełączenie SWIFT 14/15 listopada 2026 r. dotyczy również krajowych przepływów SEPA?**
 Tak. Wymóg adresu ustrukturyzowanego dotyczy CBPR+ transgranicznych i komunikatów płatniczych SEPA. Banki obsługujące obie szyny potrzebują jednego kanonicznego schematu adresu powyżej interfejsu SWIFT, nie dwóch równoległych mapowań.
 
 **Czy depozyt tokenizowany to to samo co stablecoin?**
 Nie. Depozyt tokenizowany to niezabezpieczone zobowiązanie w bilansie regulowanego banku, z tym samym pokryciem ubezpieczeniem depozytów co depozyt tradycyjny. Stablecoin jest zwykle w pełni rezerwowanym instrumentem emitowanym przez podmiot niebankowy, bez zdolności kreacji kredytu. Projekt Project Agorá zakłada, że depozyty tokenizowane stoją obok hurtowych CBDC na wspólnej programowalnej księdze; stablecoiny nie występują w hurtowej nodze rozliczeniowej.
 
 **Jak Project Agorá odnosi się do istniejących pilotów wCBDC?**
-Agorá to rama integrująca. Krajowe eksperymenty wCBDC obejmują nogę pieniądza banku centralnego; Agorá wprowadza tokenizowane depozyty komercyjne na tę samą programowalną księgę, by rozliczenie transgraniczne było atomowe między obydwoma typami pieniądza. Siedem uczestniczących banków centralnych i ponad 40 prywatnych instytucji czyni go największym publiczno-prywatnym poligonem projektowym dla architektury hurtowego pieniądza tokenizowanego.
+Agorá to rama integrująca. Krajowe eksperymenty wCBDC obejmują nogę pieniądza banku centralnego; Agorá wprowadza tokenizowane depozyty komercyjne na tę samą programowalną księgę, by rozliczenie transgraniczne było atomowe między obydwoma typami pieniądza. Ośmiu uczestniczących banków centralnych i ponad 40 prywatnych instytucji czyni go największym publiczno-prywatnym poligonem projektowym dla architektury hurtowego pieniądza tokenizowanego.
 
 **Jaka jest minimalna postawa zgodności DORA dla API TaaS?**
 Geograficznie nadmiarowe wdrożenie active-active, udokumentowane poważne-ale-wiarygodne scenariusze cyber z nazwanymi właścicielami w ramach SM&CR (UK) i przetestowany failover, który nie przerywa krytycznych płatności. Bez tego produkt TaaS jest zobowiązaniem regulacyjnym zanim stanie się linią przychodową.

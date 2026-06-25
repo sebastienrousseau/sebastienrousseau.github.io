@@ -91,13 +91,13 @@ site_software: "Static Site Generator, Rust"
 
 <!-- lead-start -->
 <aside class="post-lead" aria-label="Article summary">
-<p class="post-lead-tldr"><strong>TL;DR.</strong> 2026 ödeme manzarası, mesajlaşma göçünden risk ve gelirin gerçek zamanlı yürütme tarafından belirlendiği çok boyutlu bir işletim modeline geçti. Bu makale, J.P. Morgan, Global Payments, HSBC ve Payments Association'ın 2026 görünümlerini dört sütunlu bir G-SIB işletim planında sentezler; model tarafından başlatılan ajan tabanlı ticareti, her zaman açık hazine API'lerini, BIS Project Agorá kapsamında tokenize birleşik defterleri ve 14 Kasım 2026 SWIFT yapılandırılmış adres son tarihini kapsar.</p>
+<p class="post-lead-tldr"><strong>TL;DR.</strong> 2026 ödeme manzarası, mesajlaşma göçünden risk ve gelirin gerçek zamanlı yürütme tarafından belirlendiği çok boyutlu bir işletim modeline geçti. Bu makale, J.P. Morgan, Global Payments, HSBC ve Payments Association'ın 2026 görünümlerini dört sütunlu bir G-SIB işletim planında sentezler; model tarafından başlatılan ajan tabanlı ticareti, her zaman açık hazine API'lerini, BIS Project Agorá kapsamında tokenize birleşik defterleri ve 14/15 Kasım 2026 SWIFT ve SEPA yapılandırılmış adres son tarihlerini kapsar (Swift CBPR+: 14 Kasım 2026; EPC SEPA kural kitapları: 15 Kasım 2026).</p>
 <p class="post-lead-heading"><strong>Temel çıkarımlar</strong></p>
 <ul class="post-lead-takeaways">
   <li><strong>Ajan tabanlı ticaret, devredilen sorumluluk sınırını açar.</strong> Özerk AI ajanlarının 2030'a kadar yıllık 3-5 trilyon dolarlık ticarete aracılık etmesi öngörülmektedir. Bankalar, MCP geçit denetimini, PSD3/PSR altında SCA devrini ve çok ajanlı ödeme zincirlerinde KYC/AML sahipliğini tanımlamalıdır.</li>
-  <li><strong>Her zaman açık likidite artık operasyonel ve düzenleyici bir taban çizgisidir.</strong> 7/24 hazine API'leri ve sanal hesaplar sıkışmış nakdi en aza indirir ve dayanıklılık çıtasını yükseltir. DORA kapsamında, gerçek zamanlı likidite ürünleri, %99,999 erişilebilirlik sağlayan coğrafi yedekli, aktif-aktif altyapı tarafından desteklenmelidir.</li>
+  <li><strong>Her zaman açık likidite artık operasyonel ve düzenleyici bir taban çizgisidir.</strong> 7/24 hazine API'leri ve sanal hesaplar sıkışmış nakdi en aza indirir ve dayanıklılık çıtasını yükseltir. Sistemik öneme sahip gerçek zamanlı hazine API'leri için beş dokuz (99,999 %) kullanılabilirlik, bankaların denetçilere DORA seviyesinde dayanıklılığı kanıtlamak üzere kendilerine koyduğu içsel mühendislik hedefi haline gelmektedir. DORA'nın kendisi evrensel bir beş dokuz eşiği öngörmez; BİT risk yönetimini, olay raporlamayı, dayanıklılık testlerini, üçüncü taraf riskini ve kritik BİT sağlayıcılarının denetimini kapsar.</li>
   <li><strong>Tokenizasyon, düzenlenmiş birleşik defterlere yükseldi.</strong> Project Agorá, tokenize ticari banka mevduatları ve merkez bankası rezervleri için en büyük kamu-özel çerçevedir. Bankaların, açık ihtiyati muamele ile beş adımlı bir tokenizasyon yolculuğuna ihtiyacı vardır.</li>
-  <li><strong>14 Kasım 2026 yapılandırılmış adres geçişi sert tarihlidir.</strong> CBPR+ ve SEPA mesajlarındaki yapılandırılmamış posta adresi alanları anında reddedilmeyi tetikleyecektir. Ürün, teknoloji ve uyum ekipleri arasında temiz veri yönetişimi gereklidir.</li>
+  <li><strong>14/15 Kasım 2026 yapılandırılmış adres geçişi sert tarihlidir.</strong> Swift CBPR+ yapılandırılmamış `<AdrLine>` bloğunu 14 Kasım 2026 itibarıyla kaldırır; EPC SEPA kuralları yapılandırılmamış adrese yalnızca 15 Kasım 2026'ya kadar izin verir. Her ikisi de geçişten sonra reddedilmeyi tetikler. Ürün, teknoloji ve uyum ekipleri arasında temiz veri yönetişimi gereklidir.</li>
 </ul>
 <p class="post-lead-related"><strong>İlgili okumalar:</strong> <a href="https://sebastienrousseau.com/2026-06-23-iso-20022-pain001-programmable-liquidity-autonomic-treasury-2026">From Pain.001 to Programmable Liquidity: ISO 20022 as the Autonomic Nervous System of Treasury in 2026</a>, <a href="https://sebastienrousseau.com/2026-06-24-cross-border-iso-20022-open-finance-tokenised-deposits-treasury-2026">Cross-Border 2026: ISO 20022, Open Finance and Tokenised Deposits in Corporate Treasury</a>, <a href="https://sebastienrousseau.com/2026-06-25-quantum-dawn-cib-kyberlib-quantum-resilient-payments-stack-2026">Quantum Dawn for CIB: From KyberLib to a Quantum-Resilient Payments Stack</a>.</p>
 </aside>
@@ -112,6 +112,20 @@ Bu döngüyü üç güç tanımlar ve her biri doğrudan bir üst düzey yöneti
 - **Gerçek zamanlı yürütme** — sermaye hızı; bunun likidite yönetimi, kredi riski, operasyonel dayanıklılık ve dolandırıcılık savunmasına yansıyan sonuçları.
 
 Mali bedeller maddidir. Dolandırıcılık hız ve karmaşıklıkta ölçeklenir; düzenleyici son tarihler serttir; çekirdek sistemlerini proaktif olarak modernize eden bankalar önemli ücret-gelir fırsatlarının kilidini açar. Eylemsizliğin maliyeti tersidir: anlık işlem reddileri, operasyonel darboğazlar, düzenleyici cezalar ve hızlı pazar payı erozyonu.
+
+## Kesinlik merdiveni — neyin tarihli, düzenlenmiş veya tahmini olduğu
+
+Bu rapordaki her madde aynı kesinliği taşımaz. Yönetim kurulu düzeyindeki soru, hangi deltaların son tarih, hangilerinin denetim beklentisi ve hangilerinin hâlâ pazar projeksiyonu olduğudur — çünkü cevap bütçe konuşmasını değiştirir.
+
+| Kategori | Örnekler |
+| --- | --- |
+| **Sert son tarihler** | Swift CBPR+ yapılandırılmış adres geçişi (14 Kasım 2026); EPC SEPA kural kitapları (15 Kasım 2026) |
+| **Düzenleyici yükümlülükler** | DORA BİT riski + dayanıklılık testi + üçüncü taraf denetimi (AB); PSD3/PSR kapsamında SCA devri; SR 11-7 + PRA SS1/23 kapsamında MRM |
+| **Yüksek olasılıklı pazar kaymaları** | Gerçek zamanlı hazine API'leri, AI öncülüğünde dolandırıcılık savunması, API tabanlı likidite, derin sahteciliğe dayalı biyometrik dolandırıcılık |
+| **Stratejik seçenekler** | Tokenize mevduatlar, Project Agorá kapsamında birleşik defterler, ajan tabanlı ticaret koridorları, sürekli FX (Wire 365) |
+| **Tahminler** | 2030'a kadar $3-$5 trillion yıllık ajan tabanlı ticaret akışları (McKinsey taban çizgisi) |
+
+İlk iki satırı, banka herhangi bir yukarı yönlü fırsatı yakalasın ya da yakalamasın bir bütçe kalemini yönlendiren uyum gerçekleri olarak ele alın. Alt iki satırı, yön konusunda yüksek inançlı ancak yürütme zamanlamasının düzenleyici takvim girişi değil, yönetim kurulu seçimi olduğu stratejik seçenekler olarak ele alın.
 
 ## Küresel ödeme otoritelerinin yakınsaması
 
@@ -204,9 +218,9 @@ Bu değeri yakalamak için bankalar, kurumsal ERP'lerin (SAP, Oracle) doğrudan 
 
 ### Operasyonel dayanıklılık ve DORA
 
-Her zaman açık likidite sunmak, bankanın risk profilini dönüştürür. Platform, sürekli, gerçek zamanlı yük altında **%99,999 operasyonel erişilebilirlik** sağlamalıdır.
+Her zaman açık likidite sunmak, bankanın risk profilini dönüştürür. Sistemik öneme sahip gerçek zamanlı hazine API'leri için beş dokuz (99,999 %) kullanılabilirlik, bankaların denetçilere DORA seviyesinde dayanıklılığı kanıtlamak üzere kendilerine koyduğu içsel mühendislik hedefi haline gelmektedir. DORA'nın kendisi evrensel bir beş dokuz eşiği öngörmez; BİT risk yönetimini, olay raporlamayı, dayanıklılık testlerini, üçüncü taraf riskini ve kritik BİT sağlayıcılarının denetimini kapsar.
 
-[Dijital Operasyonel Dayanıklılık Yasası (DORA)](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554 "Regulation (EU) 2022/2554 — Digital Operational Resilience Act") kapsamında bu bir BT KPI'si değildir — katı bir düzenleyici gerekliliktir. Düzenleyiciler, bankaların gerçek zamanlı hazine API yüzeyinin ve defter veritabanının, kritik ödemeleri kesintiye uğratmadan veya sistemik likiditeyi tehlikeye atmadan ciddi-ama-makul siber saldırıları, ağ kesintilerini ve hiperölçekleyici aksaklıklarını absorbe edebileceğini kanıtlamasını bekler. Bu, coğrafi yedekli, aktif-aktif çoklu bulut veritabanı mimarilerini, gerçek zamanlı tehdit algılama katmanlarını ve otomatik yük devretmeyi gerektirir — yalnızca denetim dosyasında değil, değişim maliyet satırında görünür.
+[Dijital Operasyonel Dayanıklılık Yasası (DORA)](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554 "Regulation (EU) 2022/2554 — Digital Operational Resilience Act") kapsamında bu yalnızca bir BT KPI'si değildir — katı bir düzenleyici beklentidir. Düzenleyiciler, bankaların gerçek zamanlı hazine API yüzeyinin ve defter veritabanının, kritik ödemeleri kesintiye uğratmadan veya sistemik likiditeyi tehlikeye atmadan ciddi-ama-makul siber saldırıları, ağ kesintilerini ve hiperölçekleyici aksaklıklarını absorbe edebileceğini kanıtlamasını bekler. Bu, coğrafi yedekli, aktif-aktif çoklu bulut veritabanı mimarilerini, gerçek zamanlı tehdit algılama katmanlarını ve otomatik yük devretmeyi gerektirir — yalnızca denetim dosyasında değil, değişim maliyet satırında görünür.
 
 ### Sürekli FX ve sınır ötesi yenilik
 
@@ -216,7 +230,7 @@ Gerçek zamanlı hazine tek para birimi sınırı içinde yaşayamaz. G-SIB'ler 
 
 Tokenizasyon, izole kavram kanıtı pilotlarından ölçekli, banka düzeyinde parasal altyapıya yükselmiştir. Odak, özel stablecoin'lerden ve spekülatif kripto varlıklardan, programlanabilir birleşik defterler üzerinde çalışan **tokenize ticari banka mevduatlarına** ve **toptan merkez bankası dijital paralarına (wCBDC'ler)** kaymıştır.
 
-Referans çerçevesi [Project Agorá](https://www.bis.org/about/bisih/topics/fmis/agora.htm "BIS Project Agorá — tokenisation of wholesale cross-border payments") — BIS ve IIF tarafından toplanan, yedi merkez bankası ve 40'tan fazla özel finans kuruluşunu içeren büyük bir kamu-özel işbirliğidir. Proje, tokenize ticari banka mevduatlarının sınır ötesi mutabakat sürtünmesini ortadan kaldırmak, uyum kontrollerini koordine etmek ve 7/24 atomik kesinlik sağlamak için paylaşılan programlanabilir bir defter üzerinde tokenize toptan CBDC'lerle nasıl entegre olduğunu araştırır.
+Referans çerçevesi [Project Agorá](https://www.bis.org/about/bisih/topics/fmis/agora.htm "BIS Project Agorá — tokenisation of wholesale cross-border payments") — BIS ve IIF tarafından toplanan, **sekiz merkez bankası** ve 40'tan fazla özel finans kuruluşunu içeren büyük bir kamu-özel işbirliğidir (27 Mayıs 2026'da güncellenen BIS Agorá sayfasına göre). Proje, tokenize ticari banka mevduatlarının sınır ötesi mutabakat sürtünmesini ortadan kaldırmak, uyum kontrollerini koordine etmek ve 7/24 atomik kesinlik sağlamak için paylaşılan programlanabilir bir defter üzerinde tokenize toptan CBDC'lerle nasıl entegre olduğunu araştırır.
 
 ### Beş adımlı tokenizasyon yolculuğu
 
@@ -248,7 +262,7 @@ Tamamen rezerv edilmiş özel stablecoin'ler (USDC, vb.), perakende sınır öte
 
 ## Sütun 4 — Yapılandırılmış veri ve dolandırıcılık savunması
 
-2026'da altyapı uyumu, [SWIFT Standards Release (SR) 2026](https://www.swift.com/standards/iso-20022/removal-unstructured-address "SWIFT — Removal of unstructured address, November 2026") kapsamında belirlenen **14 Kasım 2026 yapılandırılmış adres geçişi** tarafından domine edilir. Bu tarihten itibaren CBPR+ ve SEPA ödeme ağları, ödeme mesajlarında tamamen yapılandırılmamış, serbest metin posta adresi bloklarını (`<AdrLine>`) kabul etmeyi durduracaktır. Yapılandırılmış öğelerin beklendiği yapılandırılmamış adres taşıyan herhangi bir sınır ötesi veya yerel mesaj, ağ tarafından geciktirilecek veya reddedilecektir.
+2026'da altyapı uyumu, **14/15 Kasım 2026 yapılandırılmış adres geçişi** tarafından domine edilir — sınır ötesi ve AB içi raylarda yapılandırılmamış adres yolunu birlikte kapatan iki bitişik son tarih. [SWIFT Standards Release (SR) 2026](https://www.swift.com/standards/iso-20022/removal-unstructured-address "SWIFT — Removal of unstructured address, November 2026") kapsamında Swift CBPR+ yapılandırılmamış `<AdrLine>` bloğunu **14 Kasım 2026** itibarıyla kabul etmeyi durdurur. 2025 EPC SEPA kural kitapları kapsamında yapılandırılmamış adres formatına yalnızca **15 Kasım 2026'ya** kadar izin verilir. Geçişlerden sonra, yapılandırılmış öğelerin beklendiği yapılandırılmamış adres taşıyan herhangi bir sınır ötesi veya yerel mesaj, ağ tarafından geciktirilecek veya reddedilecektir.
 
 Çoğu kuruluş tarihi biliyor. Birçoğu bunu arayüz katmanında yüzeysel bir eşleme alıştırması olarak ele alır. Gerçek, daha derin bir veri kalitesi ve veri yönetişimi zorluğudur. Felaket düzeyinde ret oranlarından kaçınmak için ödeme operasyonlarının net bir çapraz işlevsel yönetişim çerçevesine ihtiyacı vardır.
 
@@ -266,7 +280,7 @@ Bir uyum maliyeti olarak ele alındığında, yapılandırılmış veri program�
 
 ### Katmanlı bir AI dolandırıcılık savunması
 
-İşlem hızları gerçek zamana hızlandıkça dolandırıcılık teknikleri ölçeklenmiştir. Son araştırmalar, derin sahtekarlıkların biyometrik dolandırıcılık girişimlerinin yaklaşık %40'ını oluşturduğunu, sentetik medyanın müşteri kabul ve ödeme akışlarında ses ve yüz tanıma kontrollerini yenmek için giderek daha fazla kullanıldığını gösterir.
+İşlem hızları gerçek zamana hızlandıkça dolandırıcılık teknikleri ölçeklenmiştir. [Entrust 2026 Kimlik Sahteciliği Raporu](https://www.entrust.com/resources/reports/identity-fraud-report "Entrust 2026 Identity Fraud Report") derin sahteleri **beş biyometrik sahtecilik girişiminden birine** yerleştirir; daha önceki Entrust analizi derin sahteleri özellikle **video biyometrik sahtecilik girişimlerinin %40'ına** yerleştiriyordu. Her iki çerçevede de sentetik medya, müşteri kabul ve ödeme akışlarında ses ve yüz tanıma kontrollerini yenmek için artık maddi bir kanaldır.
 
 Savunma, **üç katmanlı bir AI dolandırıcılık modelidir**.
 
@@ -283,7 +297,7 @@ Dört sütun boyunca yürütmek için, G-SIB ve bölgesel banka yönetim organla
 ### Ufuk 1 — Anlık uyum ve çekirdek sağlamlaştırma (0-12 ay)
 
 - **Odak.** ISO 20022 veri kalitesini standartlaştırın ve temel gerçek zamanlı işlem yollarını güvence altına alın.
-- **Başarı göstergesi (KPI).** 14 Kasım 2026 geçişinden sonra SWIFT ve SEPA'da sıfır yapılandırılmamış adres reddi.
+- **Başarı göstergesi (KPI).** 14/15 Kasım 2026 geçişlerinden sonra SWIFT ve SEPA'da sıfır yapılandırılmamış adres reddi.
 - **Yönetici sahibi.** İcra Direktörü / Ödeme Operasyonları Başkanı.
 - **Teslim edilebilir tipi.** Pişman olunmayacak hamle. Çekirdek veritabanı şema güncellemeleri ve SWIFT SR 2026 doğrulama motoru.
 
@@ -301,12 +315,25 @@ Dört sütun boyunca yürütmek için, G-SIB ve bölgesel banka yönetim organla
 - **Yönetici sahibi.** Grup Hazinedarı / İşlem Bankacılığı Başkanı.
 - **Teslim edilebilir tipi.** Stratejik seçenek. Programlanabilir defter altyapısı, akıllı sözleşme likidite kuralları, DvP/PvP mutabakat adaptörleri.
 
+## Pazartesi sabahı yapılacaklar — bankalar için altı maddelik kontrol listesi
+
+Üç ufuklu yol haritası döngü planıdır. Aşağıdaki kontrol listesi, programın geri kalanı ne kadar olgun olursa olsun, bir CIO, COO veya İşlem Bankacılığı Başkanının önümüzdeki çalışma haftasının sonuna kadar masaya koyabileceği şeydir.
+
+1. **Yapılandırılmamış adres maruziyetini envantere alın** — kanal ve mesaj tipi başına. Hâlâ serbest metin `<AdrLine>` üreten her eski dosya yolu, her eski API uç noktası, her kurumsal ERP. Çıktı: kaynak başına bir sayım, bir sahip ve bir iyileştirme tarihi.
+2. **Ajan tabanlı ödeme risk taksonomisi oluşturun.** İnsan dışı başlatılan akışları başlatma yöntemine (tüketici ajanı, satıcı ajanı, kurumsal satın alma ajanı), karşı taraf tipine ve raya göre kategorize edin. Çıktı: tek sayfalık bir taksonomi ve bir yönlendirme motoru bileti.
+3. **AI tarafından başlatılan ödemeler için devredilmiş yetki politika sınırlarını tanımlayın.** İşlem büyüklüğü, satıcı kategorisi, coğrafyaya göre katmanlı sınırlar. Çıktı: OPA motorunun uygulayabileceği bir taslak kod olarak politika spesifikasyonu.
+4. **DORA için kritik hazine API'lerini ve üçüncü taraf bağımlılıklarını haritalayın.** Hangi API'ler ciddi-ama-makul senaryo envanterinde oturuyor; hangi üçüncü taraflara bağımlılar; hangi sözleşmeler zaten DORA Madde 28'i karşılıyor. Çıktı: API başına bir kritik-BİT-üçüncü-taraf kayıt satırı.
+5. **Ölçülebilir hazine değerine sahip iki tokenize mevduat kullanım senaryosu belirleyin.** Şubeler arası dahili netleştirme ve tek bir Project Agorá komşu koridoru gerçekçi ilk ikidir. Çıktı: her biri için sahip ve 90 günlük karar tarihiyle birlikte boyutlandırılmış bir iş gerekçesi.
+6. **Dolandırıcılık ve ajan tabanlı karar verme için bir model risk kontrol çerçevesi oluşturun.** Dolandırıcılık ve ajan tabanlı ödeme yollarındaki her ML modelini SR 11-7 / PRA SS1/23 beklentilerine eşleyin: belgelenmiş amaç, veri soyağacı, açıklanabilirlik, izleme, geçersiz kılma yolu. Çıktı: model başına tek sayfalık bir MRM kontrol matrisi.
+
+Listenin amacı, içindeki herhangi bir maddenin yeni olması değildir. Amaç, bu hafta başlamak için yeterince küçük, bir sonraki yürütme komitesinde takip edilmek için yeterince gözlemlenebilir ve erken işin programa rakip olmak yerine onu beslemesi için dört sütunla yapısal olarak hizalanmış olmasıdır.
+
 ## SSS
 
 **Ajan tabanlı ticaret 2030'a kadar gerçekten 3-5 trilyon dolara ulaşacak mı?**
 McKinsey taban çizgisi, 2030'a kadar 5 trilyon dolar ajan tabanlı ticaret satışlarına işaret ediyor; bir dizi bağımsız tahmin 3 trilyon ile 5 trilyon dolar arasında kümeleniyor. Değişkenlik, satıcıların makine tarafından okunabilir ödeme API'lerini ne kadar agresif bir şekilde sunduğunu ve bankaların ajanların SCA devri altında işlem yapmasına ne kadar hızlı izin verdiğini yansıtır — darboğaz, ajan yeteneği tarafında değil, banka ve satıcı tarafındadır.
 
-**14 Kasım 2026 SWIFT geçişi yerel SEPA akışlarına da uygulanır mı?**
+**14/15 Kasım 2026 geçişleri yerel SEPA akışlarına da uygulanır mı?**
 Evet. Yapılandırılmış adres gereksinimi CBPR+ sınır ötesi ve SEPA ödeme mesajlarına uygulanır. Her iki rayı çalıştıran bankaların, iki paralel eşleme değil, SWIFT arayüzünün üstünde tek bir kanonik adres şemasına ihtiyacı vardır.
 
 **Tokenize mevduat ile stablecoin aynı şey mi?**

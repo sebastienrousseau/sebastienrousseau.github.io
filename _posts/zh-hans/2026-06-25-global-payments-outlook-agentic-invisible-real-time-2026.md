@@ -91,13 +91,13 @@ site_software: "Static Site Generator, Rust"
 
 <!-- lead-start -->
 <aside class="post-lead" aria-label="Article summary">
-<p class="post-lead-tldr"><strong>摘要。</strong>2026 年支付格局已从报文迁移走向多维度运营模型,风险与收入由实时执行决定。本文将 J.P. Morgan、Global Payments、HSBC 与 Payments Association 的 2026 年展望整合为四支柱 G-SIB 运营方案,涵盖模型发起的智能体商务、全时财资 API、BIS Project Agorá 下的通证化统一账本,以及 2026 年 11 月 14 日 SWIFT 结构化地址截止期。</p>
+<p class="post-lead-tldr"><strong>摘要。</strong>2026 年支付格局已从报文迁移走向多维度运营模型,风险与收入由实时执行决定。本文将 J.P. Morgan、Global Payments、HSBC 与 Payments Association 的 2026 年展望整合为四支柱 G-SIB 运营方案,涵盖模型发起的智能体商务、全时财资 API、BIS Project Agorá 下的通证化统一账本,以及 2026 年 11 月 14/15 日 SWIFT 结构化地址截止期。Swift CBPR+ 自 2026 年 11 月 14 日起移除非结构化 `<AdrLine>` 块;EPC SEPA 规则手册仅允许非结构化地址至 2026 年 11 月 15 日。</p>
 <p class="post-lead-heading"><strong>核心结论</strong></p>
 <ul class="post-lead-takeaways">
   <li><strong>智能体商务开启受限授权下的责任新前沿。</strong>预计到 2030 年,自主 AI 智能体将中介每年 3 万亿至 5 万亿美元的商务交易。银行必须明确 MCP 的守门机制、PSD3/PSR 下的 SCA 授权委托,以及多智能体支付链中 KYC/AML 的归属。</li>
-  <li><strong>全时流动性已成为运营与监管基线。</strong>24/7 财资 API 与虚拟账户最大限度减少滞留资金并抬高韧性门槛。在 DORA 下,实时流动性产品必须由地理冗余、双活基础设施支撑,可用性维持在 99.999%。</li>
+  <li><strong>全时流动性已成为运营与监管基线。</strong>24/7 财资 API 与虚拟账户最大限度减少滞留资金并抬高韧性门槛。对于系统性重要的实时财资 API,五个九(99.999 %)可用性正成为银行为向监管机构展示 DORA 级韧性而设定的内部工程目标。DORA 本身并未规定统一的五个九门槛;它涵盖 ICT 风险管理、事件报告、韧性测试、第三方风险以及关键 ICT 提供商的监督。</li>
   <li><strong>通证化已晋升为受监管的统一账本。</strong>Project Agorá 是面向通证化商业银行存款与央行储备的最大公私协作框架。银行需要一条清晰的五步通证化路径,并具备明确的审慎处置安排。</li>
-  <li><strong>2026 年 11 月 14 日的结构化地址切换是硬性截止日期。</strong>CBPR+ 与 SEPA 报文中的非结构化邮政地址字段将触发即时拒付。需要在产品、技术与合规团队之间建立清洁的数据治理。</li>
+  <li><strong>2026 年 11 月 14/15 日的结构化地址切换是硬性截止日期。</strong>Swift CBPR+ 自 2026 年 11 月 14 日起移除非结构化 `<AdrLine>` 块;EPC SEPA 规则手册仅允许非结构化地址至 2026 年 11 月 15 日。CBPR+ 与 SEPA 报文中的非结构化邮政地址字段将触发即时拒付。需要在产品、技术与合规团队之间建立清洁的数据治理。</li>
 </ul>
 <p class="post-lead-related"><strong>延伸阅读:</strong><a href="https://sebastienrousseau.com/2026-06-23-iso-20022-pain001-programmable-liquidity-autonomic-treasury-2026">From Pain.001 to Programmable Liquidity: ISO 20022 as the Autonomic Nervous System of Treasury in 2026</a>、<a href="https://sebastienrousseau.com/2026-06-24-cross-border-iso-20022-open-finance-tokenised-deposits-treasury-2026">Cross-Border 2026: ISO 20022, Open Finance and Tokenised Deposits in Corporate Treasury</a>、<a href="https://sebastienrousseau.com/2026-06-25-quantum-dawn-cib-kyberlib-quantum-resilient-payments-stack-2026">Quantum Dawn for CIB: From KyberLib to a Quantum-Resilient Payments Stack</a>。</p>
 </aside>
@@ -112,6 +112,20 @@ site_software: "Static Site Generator, Rust"
 - **实时执行**——资本周转速度,并由此带动流动性管理、信用风险、运营韧性与欺诈防御的相应变化。
 
 财务影响是实质性的。欺诈在速度与精细度上同步扩张;监管截止日期是硬性的;主动现代化核心系统的银行可释放可观的手续费收入机会。不作为的代价相反:即时交易被拒、运营瓶颈、监管处罚以及市场份额的快速侵蚀。
+
+## 确定性阶梯 — 哪些已定档、哪些已监管、哪些仍是预测
+
+本报告各条目并非具备同等确定性。董事会层面的关键问题是:哪些差距属于截止日期、哪些属于监管期望、哪些仍只是市场预测——因为答案直接决定预算对话的走向。
+
+| 类别 | 示例 |
+| --- | --- |
+| **硬性截止日期** | Swift CBPR+ 结构化地址切换(2026 年 11 月 14 日);EPC SEPA 规则手册(2026 年 11 月 15 日) |
+| **监管义务** | DORA 的 ICT 风险 + 韧性测试 + 第三方监督(欧盟);PSD3/PSR 下的 SCA 授权委托;SR 11-7 与 PRA SS1/23 下的 MRM |
+| **高概率市场变化** | 实时财资 API、AI 主导的欺诈防御、基于 API 的流动性、深度伪造驱动的生物识别欺诈 |
+| **战略期权** | 通证化存款、Project Agorá 下的统一账本、智能体商务通路、持续 FX(Wire 365) |
+| **预测** | 到 2030 年智能体商务年度交易流约 `$3-$5 trillion`(McKinsey 基线) |
+
+将前两行视为合规事实,无论银行是否捕捉到任何上行空间,都会驱动一条预算线。后两行视为战略期权——方向上具备高确信度,但执行时点由董事会选择,而非监管机构的日历安排。
 
 ## 全球支付权威机构的观点汇聚
 
@@ -204,7 +218,7 @@ J.P. Morgan 与 HSBC 均报告,具备先进实时现金与数据能力的企业�
 
 ### 运营韧性与 DORA
 
-提供全时流动性会改变银行的风险画像。在持续、实时负载下,平台必须保持 **99.999% 的运营可用性**。
+提供全时流动性会改变银行的风险画像。对于系统性重要的实时财资 API,五个九(99.999 %)可用性正成为银行为向监管机构展示 DORA 级韧性而设定的内部工程目标。DORA 本身并未规定统一的五个九门槛;它涵盖 ICT 风险管理、事件报告、韧性测试、第三方风险以及关键 ICT 提供商的监督。
 
 在 [Digital Operational Resilience Act (DORA)](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554 "Regulation (EU) 2022/2554 — Digital Operational Resilience Act") 下,这并非 IT KPI,而是严格的监管要求。监管期望银行证明实时财资 API 接口与账本数据库能够吸纳"严重但可置信"的网络攻击、网络中断与超大规模云服务商扰动,同时不中断关键支付或损害系统性流动性。这需要地理冗余的双活多云数据库架构、实时威胁检测层与自动化故障切换——这些反映在变更成本科目上,而不仅仅是审计档案里。
 
@@ -216,7 +230,7 @@ J.P. Morgan 与 HSBC 均报告,具备先进实时现金与数据能力的企业�
 
 通证化已从孤立的概念验证试点跃升为规模化的银行级货币基础设施。重心已从私营稳定币与投机性加密资产转向运行在可编程统一账本上的 **通证化商业银行存款** 与 **批发型央行数字货币(wCBDC)**。
 
-参考框架是 [Project Agorá](https://www.bis.org/about/bisih/topics/fmis/agora.htm "BIS Project Agorá — tokenisation of wholesale cross-border payments")——由 BIS 与 IIF 召集的重大公私合作项目,涵盖 7 家央行与 40 余家私营金融机构。该项目探索通证化商业银行存款如何在共享的可编程账本上与通证化批发 CBDC 集成,以消除跨境结算摩擦、协调合规检查并实现 24/7 原子最终性。
+参考框架是 [Project Agorá](https://www.bis.org/about/bisih/topics/fmis/agora.htm "BIS Project Agorá — tokenisation of wholesale cross-border payments")——由 BIS 与 IIF 召集的重大公私合作项目,涵盖**八家中央银行**与 40 余家私营金融机构(依据 BIS Agorá 页面,2026 年 5 月 27 日更新)。该项目探索通证化商业银行存款如何在共享的可编程账本上与通证化批发 CBDC 集成,以消除跨境结算摩擦、协调合规检查并实现 24/7 原子最终性。
 
 ### 五步通证化路径
 
@@ -248,7 +262,7 @@ J.P. Morgan 与 HSBC 均报告,具备先进实时现金与数据能力的企业�
 
 ## 支柱四——结构化数据与欺诈防御
 
-2026 年的基础设施合规由 [SWIFT Standards Release (SR) 2026](https://www.swift.com/standards/iso-20022/removal-unstructured-address "SWIFT — Removal of unstructured address, November 2026") 下确立的 **2026 年 11 月 14 日结构化地址切换** 主导。自该日起,CBPR+ 与 SEPA 支付网络将停止接受支付报文中完全非结构化、自由文本的邮政地址区块(`<AdrLine>`)。任何在预期为结构化要素之处携带非结构化地址的跨境或本地报文,都将被网络延迟或拒收。
+2026 年的基础设施合规由 [SWIFT Standards Release (SR) 2026](https://www.swift.com/standards/iso-20022/removal-unstructured-address "SWIFT — Removal of unstructured address, November 2026") 下确立的 **2026 年 11 月 14/15 日结构化地址切换** 主导。Swift CBPR+ 自 2026 年 11 月 14 日起移除非结构化 `<AdrLine>` 块;EPC SEPA 规则手册仅允许非结构化地址至 2026 年 11 月 15 日。自该日起,CBPR+ 与 SEPA 支付网络将停止接受支付报文中完全非结构化、自由文本的邮政地址区块(`<AdrLine>`)。任何在预期为结构化要素之处携带非结构化地址的跨境或本地报文,都将被网络延迟或拒收。
 
 多数机构知道该日期。许多机构将其视为接口层的表层映射工作。现实是一项更深层次的数据质量与数据治理挑战。为避免灾难性的拒收率,支付运营需要清晰的跨职能治理框架。
 
@@ -266,7 +280,7 @@ J.P. Morgan 与 HSBC 均报告,具备先进实时现金与数据能力的企业�
 
 ### 分层 AI 欺诈防御
 
-随着交易速度提升至实时,欺诈手段也随之扩展。近期研究显示,深度伪造约占生物识别欺诈尝试的 40 %,合成媒体被越来越多用于击破开户与支付流程中的语音与人脸识别控制。
+随着交易速度提升至实时,欺诈手段也随之扩展。[Entrust 2026 身份欺诈报告](https://www.entrust.com/resources/reports/identity-fraud-report "Entrust 2026 Identity Fraud Report")将深度伪造列为**生物识别欺诈尝试的五分之一**;此前 Entrust 的分析则将深度伪造具体定位于**视频生物识别欺诈尝试的 40 %**。合成媒体被越来越多用于击破开户与支付流程中的语音与人脸识别控制。
 
 防御是一套 **三层 AI 欺诈模型**。
 
@@ -283,7 +297,7 @@ J.P. Morgan 与 HSBC 均报告,具备先进实时现金与数据能力的企业�
 ### 视野一——即时合规与核心加固(0–12 个月)
 
 - **重点。**标准化 ISO 20022 数据质量,并确保基础实时交易路径的安全。
-- **成功指标(KPI)。**在 2026 年 11 月 14 日切换后,SWIFT 与 SEPA 上非结构化地址拒收量为零。
+- **成功指标(KPI)。**在 2026 年 11 月 14/15 日切换后,SWIFT 与 SEPA 上非结构化地址拒收量为零。Swift CBPR+ 自 2026 年 11 月 14 日起移除非结构化 `<AdrLine>` 块;EPC SEPA 规则手册仅允许非结构化地址至 2026 年 11 月 15 日。
 - **执行负责人。**首席运营官 / 支付运营主管。
 - **可交付物类型。**无悔之举。核心数据库模式更新与 SWIFT SR 2026 校验引擎。
 
@@ -301,13 +315,26 @@ J.P. Morgan 与 HSBC 均报告,具备先进实时现金与数据能力的企业�
 - **执行负责人。**集团财务长 / 交易银行主管。
 - **可交付物类型。**战略期权。可编程账本基础设施、智能合约流动性规则、DvP/PvP 结算适配器。
 
+## 周一早上要做什么 — 银行六项清单
+
+三视野路线图是周期计划。下方清单是 CIO、COO 或交易银行主管在下一个工作周结束前可以摆上桌面的内容,无论项目其余部分成熟度如何。
+
+1. **按渠道与报文类型盘点非结构化地址敞口。**每一条遗留文件通路、每一个遗留 API 端点、每一个仍在发出自由文本 `<AdrLine>` 的企业 ERP。产出:每个源头一个数量、一位负责人、一个整改日期。
+2. **建立智能体支付风险分类法。**按发起方式(消费者智能体、商户智能体、企业采购智能体)、对手方类型与通道对非人工发起流进行分类。产出:一页分类表与一张路由引擎工单。
+3. **为 AI 发起的支付定义授权委托策略限额。**按交易金额、商户类别、地理位置分层设限。产出:一份草案策略即代码规范,可被 OPA 引擎执行。
+4. **梳理 DORA 关键财资 API 与第三方依赖。**哪些 API 进入严重但可置信的场景清单;它们依赖哪些第三方;哪些合同已满足 DORA Article 28。产出:每个 API 一行的关键 ICT 第三方登记。
+5. **识别两项具备可衡量财资价值的通证化存款用例。**内部跨分支净额结算与一条 Project Agorá 邻接通路是现实的前两项。产出:每项已规模化的业务论证、附负责人与 90 天决策日期。
+6. **为欺诈与智能体决策建立模型风险控制框架。**将欺诈与智能体支付路径中的每一个 ML 模型映射到 SR 11-7 / PRA SS1/23 的期望:已记录的目的、数据血缘、可解释性、监控、覆盖通路。产出:每个模型一页的 MRM 控制矩阵。
+
+清单的意义不在于其中任何一项是新颖的。意义在于:它小到足以在本周启动、可被下一次执行委员会观察追踪,并在结构上与四支柱对齐,使早期工作哺育主体项目,而非与之竞争。
+
 ## 常见问题
 
 **智能体商务到 2030 年真会达到 3 万亿至 5 万亿美元吗?**
 McKinsey 的基线指向到 2030 年智能体商务销售达 5 万亿美元,独立预测区间集中在 3 万亿至 5 万亿美元之间。差异反映商户多大力度地推出可被机器读取的结账 API,以及银行多快地允许智能体在 SCA 授权委托下交易——瓶颈在银行与商户侧,而非智能体能力侧。
 
-**2026 年 11 月 14 日的 SWIFT 切换是否也适用于本地 SEPA 流?**
-是。结构化地址要求同时适用于 CBPR+ 跨境与 SEPA 支付报文。同时运行两条通道的银行需要在 SWIFT 接口上游建立单一规范化地址模式,而非并行两套映射。
+**2026 年 11 月 14/15 日的 SWIFT 切换是否也适用于本地 SEPA 流?**
+是。Swift CBPR+ 自 2026 年 11 月 14 日起移除非结构化 `<AdrLine>` 块;EPC SEPA 规则手册仅允许非结构化地址至 2026 年 11 月 15 日。结构化地址要求同时适用于 CBPR+ 跨境与 SEPA 支付报文。同时运行两条通道的银行需要在 SWIFT 接口上游建立单一规范化地址模式,而非并行两套映射。
 
 **通证化存款与稳定币相同吗?**
 不同。通证化存款是受监管银行资产负债表上的无担保负债,与传统存款享有同等的存款保险覆盖。稳定币通常是非银行机构发行的全额准备工具,不具备信用创造能力。Project Agorá 的设计假设通证化存款与批发 CBDC 在共享的可编程账本上并存;稳定币不出现在批发结算腿中。

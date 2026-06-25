@@ -91,13 +91,13 @@ site_software: "Static Site Generator, Rust"
 
 <!-- lead-start -->
 <aside class="post-lead" aria-label="Article summary">
-<p class="post-lead-tldr"><strong>TL;DR.</strong> Platební krajina roku 2026 se posunula od migrace zpráv k vícerozměrnému provoznímu modelu, kde riziko a výnosy diktuje vykonávání v reálném čase. Tento text syntetizuje výhledy J.P. Morgan, Global Payments, HSBC a Payments Association na rok 2026 do čtyřpilířového provozního plánu G-SIB, který pokrývá agentní obchod iniciovaný modelem, nepřetržitě dostupná treasury API, tokenizované sjednocené účetní knihy v rámci BIS Project Agorá a termín strukturované adresy SWIFT 14. listopadu 2026.</p>
+<p class="post-lead-tldr"><strong>TL;DR.</strong> Platební krajina roku 2026 se posunula od migrace zpráv k vícerozměrnému provoznímu modelu, kde riziko a výnosy diktuje vykonávání v reálném čase. Tento text syntetizuje výhledy J.P. Morgan, Global Payments, HSBC a Payments Association na rok 2026 do čtyřpilířového provozního plánu G-SIB, který pokrývá agentní obchod iniciovaný modelem, nepřetržitě dostupná treasury API, tokenizované sjednocené účetní knihy v rámci BIS Project Agorá a termíny strukturované adresy SWIFT a SEPA 14./15. listopadu 2026 (Swift CBPR+: 14. listopadu 2026; pravidla EPC SEPA: 15. listopadu 2026).</p>
 <p class="post-lead-heading"><strong>Klíčová zjištění</strong></p>
 <ul class="post-lead-takeaways">
   <li><strong>Agentní obchod otevírá hranici delegované odpovědnosti.</strong> Autonomní AI agenti by měli do roku 2030 zprostředkovat 3–5 bilionů USD ročního obchodu. Banky musí definovat dozor MCP, delegování SCA v rámci PSD3/PSR a vlastnictví KYC/AML v rámci víceagentních platebních řetězců.</li>
-  <li><strong>Nepřetržitě dostupná likvidita je nyní provozní a regulatorní výchozí úrovní.</strong> Treasury API a virtuální účty s režimem 24/7 minimalizují uvízlé prostředky a zvyšují laťku odolnosti. V rámci DORA musí být produkty likvidity v reálném čase podloženy geograficky redundantní infrastrukturou active-active s dostupností 99,999 %.</li>
+  <li><strong>Nepřetržitě dostupná likvidita je nyní provozní a regulatorní výchozí úrovní.</strong> Treasury API a virtuální účty s režimem 24/7 minimalizují uvízlé prostředky a zvyšují laťku odolnosti. Pro systémově významná API treasury v reálném čase se dostupnost pěti devítek (99,999 %) stává interním inženýrským cílem, který si banky stanovují, aby u dohledových orgánů prokázaly odolnost na úrovni DORA. Samotná DORA neukládá univerzální práh pěti devítek; pokrývá řízení ICT rizik, hlášení incidentů, testy odolnosti, riziko třetích stran a dohled nad kritickými ICT poskytovateli.</li>
   <li><strong>Tokenizace dospěla k regulovaným sjednoceným účetním knihám.</strong> Project Agorá je největším veřejno-soukromým rámcem pro tokenizované vklady komerčních bank a rezervy centrálních bank. Banky potřebují pětifázovou cestu tokenizace s explicitním prudenciálním ošetřením.</li>
-  <li><strong>Přepnutí na strukturovanou adresu 14. listopadu 2026 má pevně daný termín.</strong> Nestrukturovaná pole poštovních adres ve zprávách CBPR+ a SEPA spustí okamžitá odmítnutí. Vyžaduje se čisté řízení dat napříč týmy produktu, technologie a compliance.</li>
+  <li><strong>Přepnutí na strukturovanou adresu 14./15. listopadu 2026 má pevně daný termín.</strong> Swift CBPR+ odstraňuje nestrukturovaný blok `<AdrLine>` od 14. listopadu 2026; pravidla EPC SEPA umožňují nestrukturovanou adresu pouze do 15. listopadu 2026. Po přepnutí oba spustí odmítnutí. Vyžaduje se čisté řízení dat napříč týmy produktu, technologie a compliance.</li>
 </ul>
 <p class="post-lead-related"><strong>Související četba:</strong> <a href="https://sebastienrousseau.com/2026-06-23-iso-20022-pain001-programmable-liquidity-autonomic-treasury-2026">Od Pain.001 k programovatelné likviditě: ISO 20022 jako autonomní nervová soustava treasury v roce 2026</a>, <a href="https://sebastienrousseau.com/2026-06-24-cross-border-iso-20022-open-finance-tokenised-deposits-treasury-2026">Přeshraniční rok 2026: ISO 20022, otevřené finance a tokenizované vklady v podnikovém treasury</a>, <a href="https://sebastienrousseau.com/2026-06-25-quantum-dawn-cib-kyberlib-quantum-resilient-payments-stack-2026">Kvantové svítání pro CIB: Od KyberLib ke kvantově odolnému platebnímu zásobníku</a>.</p>
 </aside>
@@ -112,6 +112,20 @@ Tento cyklus definují tři síly, z nichž každá se přímo váže na jednu s
 - **Vykonávání v reálném čase** — rychlost kapitálu, s návaznou změnou řízení likvidity, úvěrového rizika, provozní odolnosti a obrany proti podvodům.
 
 Finanční sázky jsou hmatatelné. Podvody rostou v rychlosti i sofistikovanosti; regulatorní termíny jsou tvrdé; a banky, které proaktivně modernizují své jádrové systémy, otevírají podstatné poplatkové výnosy. Cena nečinnosti je opačná: okamžitá odmítnutí transakcí, provozní úzká místa, regulatorní pokuty a rychlá eroze tržního podílu.
+
+## Žebřík jistoty — co je datováno, regulováno nebo predikováno
+
+Ne každá položka v této zprávě nese stejnou míru jistoty. Otázka na úrovni představenstva zní, které delty jsou termíny, které jsou očekáváními dohledu a které jsou stále tržními projekcemi — protože odpověď mění rozpočtovou konverzaci.
+
+| Kategorie | Příklady |
+| --- | --- |
+| **Pevné termíny** | Přepnutí Swift CBPR+ na strukturovanou adresu (14. listopadu 2026); pravidla EPC SEPA (15. listopadu 2026) |
+| **Regulatorní povinnosti** | ICT rizika DORA + testy odolnosti + dohled nad třetími stranami (EU); delegování SCA v rámci PSD3/PSR; MRM v rámci SR 11-7 + PRA SS1/23 |
+| **Tržní posuny s vysokou pravděpodobností** | API treasury v reálném čase, obrana proti podvodům řízená AI, likvidita založená na API, biometrické podvody řízené deepfaky |
+| **Strategické opce** | Tokenizované vklady, sjednocené účetní knihy v rámci Project Agorá, koridory agentního obchodu, kontinuální FX (Wire 365) |
+| **Predikce** | `$3-$5 trillion` ročních toků agentního obchodu do roku 2030 (základní scénář McKinsey) |
+
+S horními dvěma řádky zacházejte jako s fakty compliance, které vyvolávají rozpočtový řádek bez ohledu na to, zda banka zachytí jakýkoli upside. Se spodními dvěma řádky zacházejte jako se strategickými opcemi — s vysokou jistotou ohledně směru, ale kde je načasování exekuce volbou představenstva, nikoli zápisem v kalendáři regulátora.
 
 ## Sbližování globálních platebních autorit
 
@@ -204,7 +218,7 @@ K získání této hodnoty banky dodávají **API produkty Treasury-as-a-Service
 
 ### Provozní odolnost a DORA
 
-Nabídka nepřetržité likvidity transformuje rizikový profil banky. Platforma musí udržet **99,999% provozní dostupnost** pod nepřetržitou zátěží v reálném čase.
+Nabídka nepřetržité likvidity transformuje rizikový profil banky. Pro systémově významná API treasury v reálném čase se dostupnost pěti devítek (99,999 %) stává interním inženýrským cílem, který si banky stanovují, aby u dohledových orgánů prokázaly odolnost na úrovni DORA. Samotná DORA neukládá univerzální práh pěti devítek; pokrývá řízení ICT rizik, hlášení incidentů, testy odolnosti, riziko třetích stran a dohled nad kritickými ICT poskytovateli.
 
 V rámci [Digital Operational Resilience Act (DORA)](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554 "Regulation (EU) 2022/2554 — Digital Operational Resilience Act") to není IT KPI — je to přísný regulatorní požadavek. Regulátoři očekávají, že banky prokáží, že povrch API treasury v reálném čase a databáze účetní knihy absorbují závažné, ale věrohodné kyberútoky, výpadky sítí a narušení hyperscalerů, aniž by přerušily kritické platby nebo ohrozily systémovou likviditu. To vyžaduje geograficky redundantní, active-active multi-cloud databázové architektury, vrstvy detekce hrozeb v reálném čase a automatizovaný failover — viditelné v řádku nákladů na změny, nejen v auditní dokumentaci.
 
@@ -216,7 +230,7 @@ Treasury v reálném čase nemůže žít uvnitř hranic jediné měny. G-SIB na
 
 Tokenizace dospěla od izolovaných pilotů proof-of-concept ke škálovatelné monetární infrastruktuře na bankovní úrovni. Pozornost se posunula od soukromých stablecoinů a spekulativních kryptoaktiv k **tokenizovaným vkladům komerčních bank** a **velkoobchodním digitálním měnám centrálních bank (wCBDC)** běžícím na programovatelných sjednocených účetních knihách.
 
-Referenčním rámcem je [Project Agorá](https://www.bis.org/about/bisih/topics/fmis/agora.htm "BIS Project Agorá — tokenisation of wholesale cross-border payments") — významná veřejno-soukromá spolupráce svolaná BIS a IIF, zahrnující sedm centrálních bank a více než 40 soukromých finančních institucí. Projekt zkoumá, jak se tokenizované vklady komerčních bank integrují s tokenizovanými velkoobchodními CBDC na sdílené programovatelné účetní knize, aby eliminovaly tření přeshraničního vypořádání, koordinovaly compliance kontroly a umožnily atomickou finalitu 24/7.
+Referenčním rámcem je [Project Agorá](https://www.bis.org/about/bisih/topics/fmis/agora.htm "BIS Project Agorá — tokenisation of wholesale cross-border payments") — významná veřejno-soukromá spolupráce svolaná BIS a IIF, zahrnující **osmi centrálních bank** a více než 40 soukromých finančních institucí (podle stránky BIS Agorá, aktualizováno 27. května 2026). Projekt zkoumá, jak se tokenizované vklady komerčních bank integrují s tokenizovanými velkoobchodními CBDC na sdílené programovatelné účetní knize, aby eliminovaly tření přeshraničního vypořádání, koordinovaly compliance kontroly a umožnily atomickou finalitu 24/7.
 
 ### Pětifázová cesta tokenizace
 
@@ -248,7 +262,7 @@ Místo aby konkurovaly na retailových rails, transakční banky zavádějí cus
 
 ## Pilíř 4 — Strukturovaná data a obrana proti podvodům
 
-Infrastruktura compliance v roce 2026 je dominována **přepnutím na strukturovanou adresu 14. listopadu 2026** zavedeným v rámci [SWIFT Standards Release (SR) 2026](https://www.swift.com/standards/iso-20022/removal-unstructured-address "SWIFT — Removal of unstructured address, November 2026"). Od toho data platební sítě CBPR+ a SEPA přestávají přijímat plně nestrukturované, volně textové bloky poštovních adres (`<AdrLine>`) v platebních zprávách. Jakákoli přeshraniční nebo domácí zpráva nesoucí nestrukturovanou adresu tam, kde se očekávají strukturované prvky, bude sítí zpožděna nebo odmítnuta.
+Infrastruktura compliance v roce 2026 je dominována **přepnutím na strukturovanou adresu 14./15. listopadu 2026** — dvěma sousedními termíny, které společně uzavírají cestu nestrukturované adresy napříč přeshraničními a vnitro-EU kolejemi. V rámci [SWIFT Standards Release (SR) 2026](https://www.swift.com/standards/iso-20022/removal-unstructured-address "SWIFT — Removal of unstructured address, November 2026") Swift CBPR+ odstraňuje nestrukturovaný blok `<AdrLine>` od **14. listopadu 2026**. Pravidla EPC SEPA z roku 2025 umožňují nestrukturovanou adresu pouze do **15. listopadu 2026**. Po přepnutích bude jakákoli přeshraniční nebo domácí zpráva nesoucí nestrukturovanou adresu tam, kde se očekávají strukturované prvky, sítí zpožděna nebo odmítnuta.
 
 Většina institucí termín zná. Mnohé jej považují za povrchní mapovací cvičení na úrovni rozhraní. Realitou je hlubší výzva kvality dat a řízení dat. Aby se vyhnuly katastrofálním mírám odmítnutí, platební operace potřebují jasný cross-funkční rámec řízení.
 
@@ -266,7 +280,7 @@ Brán jako náklad compliance, program strukturovaných dat je drahý. Brán jak
 
 ### Vrstvená AI obrana proti podvodům
 
-Jak se rychlosti transakcí zrychlují k reálnému času, techniky podvodů škálují. Aktuální výzkum naznačuje, že deepfake tvoří asi 40 % pokusů o biometrické podvody, přičemž syntetická média se stále více používají k překonání kontrol hlasu a rozpoznávání obličeje při onboardingu a platebních tocích.
+Jak se rychlosti transakcí zrychlují k reálnému času, techniky podvodů škálují. [Entrust 2026 Identity Fraud Report](https://www.entrust.com/resources/reports/identity-fraud-report "Entrust 2026 Identity Fraud Report") uvádí deepfaky jako **jeden z pěti pokusů o biometrický podvod**; dřívější analýza Entrust umisťovala deepfaky konkrétně na **40 % pokusů o videobiometrický podvod**. V obou rámcích jsou syntetická média nyní materiálním kanálem pro překonání kontrol hlasu a rozpoznávání obličeje při onboardingu a platebních tocích.
 
 Obranou je **třívrstvý AI model proti podvodům**.
 
@@ -283,7 +297,7 @@ K vykonání napříč čtyřmi pilíři by řídicí orgány G-SIB a regionáln
 ### Horizont 1 — Okamžitá compliance a zpevnění jádra (0–12 měsíců)
 
 - **Zaměření.** Standardizovat kvalitu dat ISO 20022 a zabezpečit základní cesty transakcí v reálném čase.
-- **Indikátor úspěchu (KPI).** Nulová odmítnutí kvůli nestrukturované adrese na SWIFT a SEPA po přepnutí 14. listopadu 2026.
+- **Indikátor úspěchu (KPI).** Nulová odmítnutí kvůli nestrukturované adrese na SWIFT a SEPA po přepnutích 14./15. listopadu 2026.
 - **Výkonný vlastník.** Chief Operating Officer / Head of Payment Operations.
 - **Typ deliverable.** No-regrets krok. Aktualizace schématu jádrové databáze a validační engine SWIFT SR 2026.
 
@@ -301,19 +315,32 @@ K vykonání napříč čtyřmi pilíři by řídicí orgány G-SIB a regionáln
 - **Výkonný vlastník.** Group Treasurer / Head of Transaction Banking.
 - **Typ deliverable.** Strategická opce. Programovatelná infrastruktura účetní knihy, pravidla likvidity smart kontraktů, adaptéry vypořádání DvP/PvP.
 
+## Co dělat v pondělí ráno — šestibodový kontrolní seznam pro banky
+
+Tříhorizontová roadmapa je plán cyklu. Kontrolní seznam níže je to, co CIO, COO nebo Head of Transaction Banking mohou mít na stole do konce příštího pracovního týdne, bez ohledu na to, jak je zbytek programu vyzrálý.
+
+1. **Inventarizujte expozici nestrukturované adrese** podle kanálu a typu zprávy. Každá starší souborová cesta, každý starší API endpoint, každé firemní ERP, které stále vydává volně textový `<AdrLine>`. Výstup: počet, vlastník a termín nápravy na zdroj.
+2. **Stanovte taxonomii rizika agentních plateb.** Kategorizujte toky neiniciované člověkem podle metody zahájení (spotřebitelský agent, agent obchodníka, firemní nákupní agent), typu protistrany a koleje. Výstup: jednostránková taxonomie a ticket pro směrovací engine.
+3. **Definujte limity politiky delegované pravomoci pro AI iniciované platby.** Vícestupňové limity podle velikosti transakce, kategorie obchodníka, geografie. Výstup: návrh specifikace politika-jako-kód, který může OPA engine vynucovat.
+4. **Zmapujte DORA-kritická API treasury a závislosti na třetích stranách.** Která API sedí v inventáři závažných-ale-věrohodných scénářů; na kterých třetích stranách závisí; které smlouvy již splňují DORA Article 28. Výstup: řádek registru kritických ICT třetích stran na API.
+5. **Identifikujte dva případy užití tokenizovaných vkladů s měřitelnou treasury hodnotou.** Interní netting mezi pobočkami a jeden koridor přilehlý k Project Agorá jsou realistické první dva. Výstup: ovládnutý business case pro každý, s vlastníkem a 90denním rozhodovacím termínem.
+6. **Vytvořte rámec řízení rizik modelů pro podvody a agentní rozhodování.** Zmapujte každý ML model v cestách podvodů a agentních plateb na očekávání SR 11-7 / PRA SS1/23: dokumentovaný účel, lineage dat, vysvětlitelnost, monitoring, cesta override. Výstup: jednostránková kontrolní matice MRM na model.
+
+Pointou seznamu není, že by cokoli z toho bylo nové. Pointou je, že je dostatečně malý na to, aby bylo možné začít tento týden, dostatečně pozorovatelný, aby bylo možné sledovat ho na příštím výkonném výboru, a strukturálně sladěný se čtyřmi pilíři, takže raná práce krmí program, místo aby s ním soutěžila.
+
 ## FAQ
 
 **Dosáhne agentní obchod skutečně 3–5 bilionů USD do roku 2030?**
 Základní odhad McKinsey ukazuje na 5 bilionů USD v prodejích agentního obchodu do roku 2030, s rozsahem nezávislých prognóz mezi 3 a 5 biliony USD. Variance odráží, jak agresivně obchodníci dodávají strojově čitelná API pokladen a jak rychle banky umožní agentům transagovat v rámci delegování SCA — úzkým hrdlem je strana banky a obchodníka, nikoli schopnosti agenta.
 
-**Vztahuje se přepnutí SWIFT 14. listopadu 2026 také na domácí toky SEPA?**
+**Vztahují se přepnutí 14./15. listopadu 2026 také na domácí toky SEPA?**
 Ano. Požadavek na strukturovanou adresu se vztahuje na CBPR+ přeshraniční a na platební zprávy SEPA. Banky provozující obě koleje potřebují jediné kanonické schéma adresy proti proudu rozhraní SWIFT, nikoli dvě paralelní mapování.
 
 **Je tokenizovaný vklad totéž co stablecoin?**
 Ne. Tokenizovaný vklad je nezajištěný závazek v rozvaze regulované banky se stejným pokrytím pojištění vkladů jako tradiční vklad. Stablecoin je obvykle plně rezervovaný nástroj vydaný nebankou bez schopnosti vytváření úvěru. Design Project Agorá předpokládá, že tokenizované vklady stojí vedle velkoobchodních CBDC na sdílené programovatelné účetní knize; stablecoiny ve velkoobchodní noze vypořádání nefigurují.
 
 **Jak Project Agorá souvisí s existujícími piloty wCBDC?**
-Agorá je integrující rámec. Národní experimenty wCBDC pokrývají nohu peněz centrální banky; Agorá přivádí tokenizované komerční vklady na stejnou programovatelnou účetní knihu, takže přeshraniční vypořádání je atomické napříč oběma typy peněz. Sedm zúčastněných centrálních bank a 40+ soukromých institucí z něj činí největší veřejno-soukromou návrhovou půdu pro architekturu velkoobchodních tokenizovaných peněz.
+Agorá je integrující rámec. Národní experimenty wCBDC pokrývají nohu peněz centrální banky; Agorá přivádí tokenizované komerční vklady na stejnou programovatelnou účetní knihu, takže přeshraniční vypořádání je atomické napříč oběma typy peněz. Osmi zúčastněných centrálních bank a 40+ soukromých institucí z něj činí největší veřejno-soukromou návrhovou půdu pro architekturu velkoobchodních tokenizovaných peněz.
 
 **Jaký je minimální postoj compliance DORA pro TaaS API?**
 Geograficky redundantní nasazení active-active, zdokumentované závažné-ale-věrohodné kyberscénáře s jmenovanými vlastníky v rámci SM&CR (UK) a otestovaný failover, který nepřerušuje kritické platby. Bez toho je produkt TaaS regulatorním závazkem dříve, než je řádkem výnosů.

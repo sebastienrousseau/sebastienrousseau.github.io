@@ -91,13 +91,13 @@ site_software: "Static Site Generator, Rust"
 
 <!-- lead-start -->
 <aside class="post-lead" aria-label="Àkótán àkọsílẹ̀">
-<p class="post-lead-tldr"><strong>TL;DR.</strong> Ilẹ̀-òfin ìsanwó 2026 ti yí padà láti ìṣípòpadà ìránṣẹ́ sí àpẹẹrẹ ìṣiṣẹ́ olópò-ọ̀nà níbi tí ewu àti owó-wíwọlé ti ń jẹ́ ìdarí nípa ìṣe real-time. Àkọsílẹ̀ yìí ṣàkójọ àwọn ìwòye 2026 láti ọ̀dọ̀ J.P. Morgan, Global Payments, HSBC, àti Payments Association sínú ètò ìṣiṣẹ́ G-SIB onígẹ̀rẹ̀ mẹ́rin, tí ó bo agentic commerce tí àwòṣe bẹ̀rẹ̀, treasury APIs always-on, tokenised unified ledgers lábẹ́ BIS Project Agorá, àti àkókò ìparí SWIFT structured-address November 14, 2026.</p>
+<p class="post-lead-tldr"><strong>TL;DR.</strong> Ilẹ̀-òfin ìsanwó 2026 ti yí padà láti ìṣípòpadà ìránṣẹ́ sí àpẹẹrẹ ìṣiṣẹ́ olópò-ọ̀nà níbi tí ewu àti owó-wíwọlé ti ń jẹ́ ìdarí nípa ìṣe real-time. Àkọsílẹ̀ yìí ṣàkójọ àwọn ìwòye 2026 láti ọ̀dọ̀ J.P. Morgan, Global Payments, HSBC, àti Payments Association sínú ètò ìṣiṣẹ́ G-SIB onígẹ̀rẹ̀ mẹ́rin, tí ó bo agentic commerce tí àwòṣe bẹ̀rẹ̀, treasury APIs always-on, tokenised unified ledgers lábẹ́ BIS Project Agorá, àti àkókò ìparí SWIFT structured-address 14/15 November 2026. Swift CBPR+ ń yọ àkójọ `<AdrLine>` aláìpilẹ̀ bẹ̀rẹ̀ láti 14 November 2026; àwọn ìwé ìlana EPC SEPA gba àdírẹ́sì aláìpilẹ̀ títí di 15 November 2026 nìkan.</p>
 <p class="post-lead-heading"><strong>Àwọn kókó pàtàkì</strong></p>
 <ul class="post-lead-takeaways">
   <li><strong>Agentic commerce ṣí ààlà delegated-liability sílẹ̀.</strong> Wọ́n sọ àsọtẹ́lẹ̀ pé Autonomous AI agents yóò darí $3-$5 trillion nínú òwò ọdọọdún ní 2030. Àwọn báńkì gbọ́dọ̀ ṣe àlàyé MCP gatekeeping, SCA delegation lábẹ́ PSD3/PSR, àti ìní KYC/AML nínú àwọn ìkọ́ ìsanwó multi-agent.</li>
-  <li><strong>Always-on liquidity ti di àpẹẹrẹ ìṣiṣẹ́ àti ìlànà báyìí.</strong> Treasury APIs 24/7 àti virtual accounts dín owó tí ó dí kú àti gbé ìgì ìfaradà ga. Lábẹ́ DORA, àwọn ọjà real-time liquidity gbọ́dọ̀ ní àtìlẹ́yìn ti geo-redundant, active-active infrastructure tí ó di 99.999% availability mú.</li>
+  <li><strong>Always-on liquidity ti di àpẹẹrẹ ìṣiṣẹ́ àti ìlànà báyìí.</strong> Treasury APIs 24/7 àti virtual accounts dín owó tí ó dí kú àti gbé ìgì ìfaradà ga. Fún awọn API ìṣirí àkókò-gidi tó ṣe pàtàkì sí ètò, ìwà-ìṣe àbáwọlé five-nines (99.999 %) ń di ìfojúsùn ènjìnà inú tí àwọn bánkì ń tò fún ara wọn láti fi DORA-grade resilience hàn fún àwọn alábòójútó. DORA fúnra rẹ̀ kò pa ààlà five-nines àgbáyé léṣẹ̀; ó bo ìṣàkóso ewu ICT, ìròyìn ìṣẹlẹ̀, àdánwò resilience, ewu ẹgbẹ́ kẹta, àti àbojútó àwọn olùpèsè ICT tí ó pọn dandan.</li>
   <li><strong>Tokenisation ti dé regulated unified ledgers.</strong> Project Agorá ni ìlànà public-private tí ó tóbi jùlọ fún tokenised commercial bank deposits àti central bank reserves. Àwọn báńkì nílò ìrìnàjò tokenisation tí ó ní ìgbésẹ̀ márùn-ún, pẹ̀lú ìtọ́jú prudential tí ó hàn gbangba.</li>
-  <li><strong>Ìparí structured-address November 14, 2026 jẹ́ ọjọ́ kọ́pípa.</strong> Àwọn aaye unstructured postal address nínú àwọn ìránṣẹ́ CBPR+ àti SEPA yóò fa ìkọ̀sílẹ̀ kíákíá. Iṣẹ́ ìṣàkóso àkọsílẹ̀ mímọ́ kọjá àwọn ẹgbẹ́ ọjà, ìmọ̀-ẹ̀rọ, àti compliance ni a nílò.</li>
+  <li><strong>Ìparí structured-address 14/15 November 2026 jẹ́ ọjọ́ kọ́pípa.</strong> Swift CBPR+ ń yọ àkójọ `<AdrLine>` aláìpilẹ̀ bẹ̀rẹ̀ láti 14 November 2026; àwọn ìwé ìlana EPC SEPA gba àdírẹ́sì aláìpilẹ̀ títí di 15 November 2026 nìkan. Àwọn aaye unstructured postal address nínú àwọn ìránṣẹ́ CBPR+ àti SEPA yóò fa ìkọ̀sílẹ̀ kíákíá lẹ́yìn àwọn ọjọ́ wọ̀nyẹn. Iṣẹ́ ìṣàkóso àkọsílẹ̀ mímọ́ kọjá àwọn ẹgbẹ́ ọjà, ìmọ̀-ẹ̀rọ, àti compliance ni a nílò.</li>
 </ul>
 <p class="post-lead-related"><strong>Kíkà tó jọmọ́:</strong> <a href="https://sebastienrousseau.com/2026-06-23-iso-20022-pain001-programmable-liquidity-autonomic-treasury-2026">From Pain.001 to Programmable Liquidity: ISO 20022 as the Autonomic Nervous System of Treasury in 2026</a>, <a href="https://sebastienrousseau.com/2026-06-24-cross-border-iso-20022-open-finance-tokenised-deposits-treasury-2026">Cross-Border 2026: ISO 20022, Open Finance and Tokenised Deposits in Corporate Treasury</a>, <a href="https://sebastienrousseau.com/2026-06-25-quantum-dawn-cib-kyberlib-quantum-resilient-payments-stack-2026">Quantum Dawn for CIB: From KyberLib to a Quantum-Resilient Payments Stack</a>.</p>
 </aside>
@@ -112,6 +112,20 @@ Fún àwọn global transaction banks, àyíká 2026-2028 jẹ́ fèrèsé ìṣ
 - **Real-time execution** — yíyára olú, pẹ̀lú àyípadà sí ìṣàkóso liquidity, ewu credit, ìfaradà ìṣiṣẹ́, àti ìdábò bo fraud.
 
 Ìgbọ̀nwọ́ ìṣúná jẹ́ pàtàkì. Fraud ń gbòòrò sí ní iyára àti ìmọ̀-ìjìnlẹ̀; àwọn àkókò ìparí ìlànà jẹ́ kíkí; àwọn báńkì tí ó ń sọ́nà mọ́ ìmọ̀-òde àwọn ètò ìpilẹ̀ wọn ń ṣí àwọn àǹfààní owó-wíwọlé pàtàkì. Iye iṣẹ́ àìṣiṣẹ́ jẹ́ òdìkejì: ìkọ̀sílẹ̀ ìṣòwò kíákíá, àdìnà ìṣiṣẹ́, ìjìyà ìlànà, àti ìparun ìpín ọjà yáyá.
+
+## Àkàbà ìdánilójú — kí ló ní ọjọ́, kí ló ní òfin, kí ló jẹ́ àsọtẹ́lẹ̀
+
+Kì í ṣe gbogbo nǹkan inú ìjábọ̀ yìí ni ìdánilójú kan náà gbé. Ìbéèrè ipele-board ni èwo nínú àwọn deltas wọ̀nyí ni àwọn ọjọ́ ìparí, èwo ni àwọn ìfojúsọ́nà alábòójútó, àti èwo ni àwọn àsọtẹ́lẹ̀ ọjà síbẹ̀ — nítorí pé ìdáhùn yóò yí ìjíròrò ìnáwó padà.
+
+| Ẹ̀ka | Àwọn àpẹẹrẹ |
+| --- | --- |
+| **Àwọn ọjọ́ ìparí kọ́pípa** | Swift CBPR+ structured-address cut-over (14 November 2026); àwọn ìwé ìlana EPC SEPA (15 November 2026) |
+| **Àwọn ọrọ̀ ìlànà** | DORA ICT risk + resilience testing + third-party oversight (EU); SCA delegation lábẹ́ PSD3/PSR; MRM lábẹ́ SR 11-7 + PRA SS1/23 |
+| **Àwọn ìyípadà ọjà tó ní ìdánilójú gíga** | Real-time treasury APIs, AI-led fraud defense, API-based liquidity, deepfake-driven biometric fraud |
+| **Àwọn àṣàyàn ìmọ̀ràn** | Tokenised deposits, unified ledgers lábẹ́ Project Agorá, agentic-commerce corridors, continuous FX (Wire 365) |
+| **Àwọn àsọtẹ́lẹ̀** | `$3-$5 trillion` nínú ìṣàn agentic-commerce ọdọọdún ní 2030 (McKinsey baseline) |
+
+Tọ́jú àwọn ìlà méjì òkè bí àwọn òtítọ́ compliance tí ó ń darí laini ìnáwó, bóyá báńkì gba èyíkéyìí nínú ìṣèlè-òkè tàbí kò gba. Tọ́jú àwọn ìlà méjì ìsàlẹ̀ bí àwọn àṣàyàn ìmọ̀ràn — ìdánilójú gíga ní ìtọ́sọ́nà, ṣùgbọ́n níbi tí àkókò ìpèsè jẹ́ ìpinnu board dípò ìwé kàlẹ́ǹdà alábòójútó.
 
 ## Ìpàdé àwọn alábojútó ìsanwó àgbáyé
 
@@ -204,7 +218,7 @@ Láti gba iye yẹn, àwọn báńkì ń tu **Treasury-as-a-Service (TaaS) API p
 
 ### Ìfaradà ìṣiṣẹ́ àti DORA
 
-Pípèsè always-on liquidity ń yí ìwà ewu báńkì padà. Ètò gbọ́dọ̀ di **99.999% operational availability** mú lábẹ́ ìbálò ìtẹ̀síwájú, real-time.
+Pípèsè always-on liquidity ń yí ìwà ewu báńkì padà. Fún awọn API ìṣirí àkókò-gidi tó ṣe pàtàkì sí ètò, ìwà-ìṣe àbáwọlé five-nines (99.999 %) ń di ìfojúsùn ènjìnà inú tí àwọn bánkì ń tò fún ara wọn láti fi DORA-grade resilience hàn fún àwọn alábòójútó. DORA fúnra rẹ̀ kò pa ààlà five-nines àgbáyé léṣẹ̀; ó bo ìṣàkóso ewu ICT, ìròyìn ìṣẹlẹ̀, àdánwò resilience, ewu ẹgbẹ́ kẹta, àti àbojútó àwọn olùpèsè ICT tí ó pọn dandan.
 
 Lábẹ́ [Digital Operational Resilience Act (DORA)](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554 "Regulation (EU) 2022/2554 — Digital Operational Resilience Act"), èyí kì í ṣe IT KPI — ó jẹ́ ìbéèrè ìlànà tí ó kíkí. Àwọn alábojútó retí kí àwọn báńkì fihàn pé real-time treasury API surface àti ledger database lè gba àwọn ìkọlù cyber líle ṣùgbọ́n tí ó ṣeé ṣe, ìdiwọ́ nẹtiwọọki, àti ìdiwọ́ hyperscaler láìsí dídìmú àwọn ìsanwó pàtàkì tàbí dídẹ̀tẹ̀ systemic liquidity. Èyí nílò geo-redundant, active-active multi-cloud database architectures, ipele ìmọ̀-irokeke real-time, àti failover aládàáni — tí ó hàn ní laini iye ìyípadà, kì í kàn ṣe nínú àkọsílẹ̀ àyẹ̀wò.
 
@@ -216,7 +230,7 @@ Real-time treasury kò lè gbé nínú ààlà oníowó kan. Àwọn G-SIBs ń �
 
 Tokenisation ti yí padà láti àwọn ìdánwò proof-of-concept tí a yà sí ọ̀tọ̀ sí infrastructure monetary ipele-báńkì tí ó tóbi. Àfojúsùn ti yí padà láti àwọn private stablecoins àti àwọn cryptoassets ìṣèrò sí **tokenised commercial bank deposits** àti **wholesale central bank digital currencies (wCBDCs)** tí ó ń ṣiṣẹ́ lórí programmable unified ledgers.
 
-Ìlànà ìtọ́ka ni [Project Agorá](https://www.bis.org/about/bisih/topics/fmis/agora.htm "BIS Project Agorá — tokenisation of wholesale cross-border payments") — ìfọwọ́sowọ́pọ̀ public-private pàtàkì tí BIS àti IIF pe, tí ó kan àwọn central banks méje àti àwọn ilé-iṣẹ́ ìṣúná àdáni ju 40 lọ. Ètò náà ń ṣàwárí bí àwọn tokenised commercial bank deposits ṣe ń pàdé pẹ̀lú àwọn tokenised wholesale CBDCs lórí shared programmable ledger láti yọ àdìnà ìpín cross-border kúrò, ṣe ìṣètò àwọn àyẹ̀wò compliance, kí o sì jẹ́ kí 24/7 atomic finality ṣeé ṣe.
+Ìlànà ìtọ́ka ni [Project Agorá](https://www.bis.org/about/bisih/topics/fmis/agora.htm "BIS Project Agorá — tokenisation of wholesale cross-border payments") — ìfọwọ́sowọ́pọ̀ public-private pàtàkì tí BIS àti IIF pe, tí ó kan àwọn central banks mẹ́jọ àti àwọn ilé-iṣẹ́ ìṣúná àdáni ju 40 lọ (gẹ́gẹ́ bí ojú-ìwé BIS Agorá, èyí tí a ṣe àtúnṣe ní 27 May 2026). Ètò náà ń ṣàwárí bí àwọn tokenised commercial bank deposits ṣe ń pàdé pẹ̀lú àwọn tokenised wholesale CBDCs lórí shared programmable ledger láti yọ àdìnà ìpín cross-border kúrò, ṣe ìṣètò àwọn àyẹ̀wò compliance, kí o sì jẹ́ kí 24/7 atomic finality ṣeé ṣe.
 
 ### Ìrìnàjò tokenisation oníìgbésẹ̀ márùn-ún
 
@@ -248,7 +262,7 @@ Dípò ìfigagbága lórí retail rails, àwọn transaction banks ń ṣe àfih
 
 ## Gẹ̀rẹ̀ 4 — Àkọsílẹ̀ onígbékalẹ̀ àti ìdábò fraud
 
-Compliance infrastructure ní 2026 jẹ́ ìjọba **November 14, 2026 structured-address cut-over** tí a fi mú lábẹ́ [SWIFT Standards Release (SR) 2026](https://www.swift.com/standards/iso-20022/removal-unstructured-address "SWIFT — Removal of unstructured address, November 2026"). Láti ọjọ́ yẹn, àwọn nẹtiwọọki ìsanwó CBPR+ àti SEPA dúró láti gba àwọn àwòrán postal address free-text unstructured tó kún (`<AdrLine>`) nínú àwọn ìránṣẹ́ ìsanwó. Èyíkéyìí ìránṣẹ́ cross-border tàbí àdúgbò tí ó gbé unstructured address ní ibi tí a ti retí structured elements yóò di dídi tàbí kọ̀sílẹ̀ nípa nẹtiwọọki.
+Compliance infrastructure ní 2026 jẹ́ ìjọba **14/15 November 2026 structured-address cut-over** tí a fi mú lábẹ́ [SWIFT Standards Release (SR) 2026](https://www.swift.com/standards/iso-20022/removal-unstructured-address "SWIFT — Removal of unstructured address, November 2026"). Swift CBPR+ ń yọ àkójọ `<AdrLine>` aláìpilẹ̀ bẹ̀rẹ̀ láti 14 November 2026; àwọn ìwé ìlana EPC SEPA gba àdírẹ́sì aláìpilẹ̀ títí di 15 November 2026 nìkan. Láti àwọn ọjọ́ yẹn, àwọn nẹtiwọọki ìsanwó CBPR+ àti SEPA dúró láti gba àwọn àwòrán postal address free-text unstructured tó kún (`<AdrLine>`) nínú àwọn ìránṣẹ́ ìsanwó. Èyíkéyìí ìránṣẹ́ cross-border tàbí àdúgbò tí ó gbé unstructured address ní ibi tí a ti retí structured elements yóò di dídi tàbí kọ̀sílẹ̀ nípa nẹtiwọọki.
 
 Pupọ̀ àwọn ilé-iṣẹ́ mọ ọjọ́ náà. Pupọ̀ ń tọ́jú rẹ̀ gẹ́gẹ́ bí iṣẹ́ ìṣàkóso ojú-ìwé. Òtítọ́ ni ìṣòro data-quality àti data-governance jíjìn jù. Láti yẹra fún àwọn ìwọ̀n ìkọ̀sílẹ̀ ìparun, ìṣiṣẹ́ ìsanwó nílò ìlànà ìṣàkóso cross-functional tí ó kún.
 
@@ -266,7 +280,7 @@ Bí a bá tọ́jú rẹ̀ gẹ́gẹ́ bí iye compliance, ètò structured-dat
 
 ### Layered AI fraud defense
 
-Bí àwọn iyára ìṣòwò ṣe ń gbòòrò sí real-time, àwọn ọ̀nà fraud ti gbòòrò. Ìwádìí tuntun fihàn pé deepfakes jẹ́ nǹkan bí 40% nínú àwọn ìgbìyànjú biometric fraud, pẹ̀lú synthetic media tí a ń lò sí i láti kọjá àwọn ìdarí voice àti facial-recognition nínú onboarding àti àwọn ìṣàn ìsanwó.
+Bí àwọn iyára ìṣòwò ṣe ń gbòòrò sí real-time, àwọn ọ̀nà fraud ti gbòòrò. [Ìjábọ̀ Ẹlẹ́tan Ìdánimọ̀ 2026 láti ọ̀dọ̀ Entrust](https://www.entrust.com/resources/reports/identity-fraud-report "Entrust 2026 Identity Fraud Report") gbé deepfake sí ìpín **ọ̀kan nínú márùn-ún àwọn ìpàdánù ìdánimọ̀ biometric**; àyẹ̀wò Entrust ti tẹ́lẹ̀ gbé deepfake pàtó sí **40 % ti àwọn ìpàdánù ìdánimọ̀ biometric fídíò**. Bí a bá yan ìpinlẹ̀ èyíkéyìí, synthetic media ti di ìkànnì pàtàkì fún kíkọjá àwọn ìdarí voice àti facial-recognition nínú onboarding àti àwọn ìṣàn ìsanwó.
 
 Ìdábò náà jẹ́ **three-layer AI fraud model**.
 
@@ -283,7 +297,7 @@ Láti ṣe kọjá àwọn gẹ̀rẹ̀ mẹ́rin, àwọn ẹgbẹ́ ìṣàkó
 ### Horizon 1 — Compliance kíákíá àti dídimú ìpilẹ̀ mú (0-12 oṣù)
 
 - **Àfojúsùn.** Ṣe àpẹẹrẹ ISO 20022 data quality kí o sì pa àwọn ọ̀nà transaction real-time ìpilẹ̀ mọ́ ní ààbò.
-- **Àmì àṣeyọrí (KPI).** Zero unstructured-address rejections lórí SWIFT àti SEPA lẹ́yìn ìparí November 14, 2026.
+- **Àmì àṣeyọrí (KPI).** Zero unstructured-address rejections lórí SWIFT àti SEPA lẹ́yìn ìparí 14/15 November 2026 (Swift CBPR+ ń yọ àkójọ `<AdrLine>` aláìpilẹ̀ bẹ̀rẹ̀ láti 14 November 2026; àwọn ìwé ìlana EPC SEPA gba àdírẹ́sì aláìpilẹ̀ títí di 15 November 2026 nìkan).
 - **Olùṣàkóso alaṣẹ.** Chief Operating Officer / Olùdarí Payment Operations.
 - **Irú ìpèsè.** Ìṣiṣẹ́ aláìní-bànújẹ́. Àwọn ìmúdájú core database schema àti SWIFT SR 2026 validation engine.
 
@@ -301,19 +315,32 @@ Láti ṣe kọjá àwọn gẹ̀rẹ̀ mẹ́rin, àwọn ẹgbẹ́ ìṣàkó
 - **Olùṣàkóso alaṣẹ.** Group Treasurer / Olùdarí Transaction Banking.
 - **Irú ìpèsè.** Àṣàyàn ìmọ̀ràn. Programmable ledger infrastructure, smart-contract liquidity rules, àwọn DvP/PvP settlement adapters.
 
+## Kí ló yẹ kí a ṣe ní òwúrọ̀ Ọjọ́bọ̀ — àkójọ ìṣàyẹ̀wò mẹ́fà fún àwọn bánkì
+
+Roadmap onígbéwò mẹ́ta ni ètò àkókò. Àkójọ ìsàlẹ̀ ni ohun tí CIO, COO, tàbí Head of Transaction Banking lè fi sí orí tábìlì kí òpin ọ̀sẹ̀ iṣẹ́ tó ń bọ̀ tó pé, láìka bí ìyókù ìpèsè ti dàgbà sí.
+
+1. **Ṣe àkójọ àwọn ìfihàn unstructured address** ní oríṣi ìkànnì àti ìránṣẹ́. Gbogbo ìpa fáìlì legacy, gbogbo endpoint API legacy, gbogbo ERP corporate tí ó tún ń jáde `<AdrLine>` ọ̀rọ̀-òfẹ́. Àbájáde: iye, olówó, àti ọjọ́ àtúnṣe ní orísun kọ̀ọ̀kan.
+2. **Gbé taxonomy ewu ìsanwó agentic kalẹ̀.** Pín àwọn ìṣàn tí kì í ṣe ènìyàn-bẹ̀rẹ̀ nípa ọ̀nà ìbẹ̀rẹ̀ (consumer agent, merchant agent, corporate procurement agent), oríṣi counterparty, àti rail. Àbájáde: taxonomy ojú-ìwé kan àti tikẹ́ẹ̀tì routing-engine.
+3. **Ṣe àlàyé àwọn ààlà delegated-authority fún àwọn ìsanwó AI-initiated.** Àwọn ààlà oníyẹ̀wù nípa iye ìṣòwò, ìsọ̀rí olùtà, agbègbè. Àbájáde: àwòkọ̀wé policy-as-code tí OPA engine lè mú ṣiṣẹ́.
+4. **Ya àwọn DORA-critical treasury APIs àti àwọn ẹgbẹ́-kẹta tí ó dá lé wọn lórí.** Àwọn API wo ni ó wà nínú àkójọ severe-but-plausible scenario; àwọn ẹgbẹ́-kẹta wo ni wọ́n dá lé lórí; àwọn àdéhùn wo ni ó ti bá DORA Article 28 mu. Àbájáde: ìlà àkójọ critical-ICT-third-party fún API kọ̀ọ̀kan.
+5. **Mọ àwọn àpẹẹrẹ ìlò tokenised-deposit méjì pẹ̀lú iye treasury tí ó ṣeé wọ̀n.** Internal cross-branch netting àti corridor kan tí ó sún mọ́ Project Agorá ni àwọn àkọ́kọ́ méjì gidi. Àbájáde: àròyé ọjà tí a ṣe ìwọ̀n fún ọ̀kọ̀ọ̀kan, pẹ̀lú olówó àti ọjọ́ ìpinnu 90-day.
+6. **Ṣe ètò ìdarí ewu àwòṣe fún fraud àti ìdájọ́ agentic.** Ya gbogbo àwòṣe ML inú àwọn ọ̀nà fraud àti agentic-payment sí àwọn ìfojúsọ́nà SR 11-7 / PRA SS1/23: idi tí a kọsílẹ̀, ìpilẹ̀ṣẹ̀ data, ìṣàlàyé, ìbálò, ọ̀nà override. Àbájáde: matrix ìdarí MRM ojú-ìwé kan fún àwòṣe kọ̀ọ̀kan.
+
+Kókó àkójọ náà kì í ṣe pé èyíkéyìí nínú rẹ̀ jẹ́ tuntun. Kókó náà ni pé ó kéré tó láti bẹ̀rẹ̀ ní ọ̀sẹ̀ yìí, ó hàn tó láti tọpinpin ní ìpàdé alaṣẹ ìgbà tó ń bọ̀, ó sì bá àwọn gẹ̀rẹ̀ mẹ́rin mu ní ìṣètò bẹ́ẹ̀ tí iṣẹ́ àkọ́kọ́ ń bọ́ sí ìpèsè dípò kíkó ọ̀rọ̀ pẹ̀lú rẹ̀.
+
 ## FAQ
 
 **Ṣé agentic commerce yóò dé $3-$5 trillion ní 2030 lóòótọ́?**
 McKinsey baseline ń tọ́ka sí $5 trillion òwò agentic ní 2030, pẹ̀lú àwọn àsọtẹ́lẹ̀ ọ̀tọ̀ọ̀tọ̀ tí ó pèjọ láàrín $3 trillion àti $5 trillion. Ìyàtọ̀ náà fihàn bí àwọn olùtà ṣe ń tu àwọn checkout APIs machine-readable kíkankíkan àti bí àwọn báńkì ṣe ń jẹ́ kí àwọn agents ṣe ìṣòwò lábẹ́ SCA delegation — bottleneck wà ní ẹgbẹ́ báńkì àti olùtà, kì í ṣe ní agbára agent.
 
-**Ṣé SWIFT cut-over November 14, 2026 lò fún àwọn ìṣàn SEPA àdúgbò pẹ̀lú?**
-Bẹ́ẹ̀ ni. Ìbéèrè structured-address lò fún CBPR+ cross-border àti àwọn ìránṣẹ́ ìsanwó SEPA. Àwọn báńkì tí ó ń ṣiṣẹ́ àwọn rails méjèèjì nílò canonical address schema kan lókè ti SWIFT interface, kì í ṣe mappings méjì tí ó jọra.
+**Ṣé SWIFT cut-over 14/15 November 2026 lò fún àwọn ìṣàn SEPA àdúgbò pẹ̀lú?**
+Bẹ́ẹ̀ ni. Swift CBPR+ ń yọ àkójọ `<AdrLine>` aláìpilẹ̀ bẹ̀rẹ̀ láti 14 November 2026; àwọn ìwé ìlana EPC SEPA gba àdírẹ́sì aláìpilẹ̀ títí di 15 November 2026 nìkan. Ìbéèrè structured-address lò fún CBPR+ cross-border àti àwọn ìránṣẹ́ ìsanwó SEPA. Àwọn báńkì tí ó ń ṣiṣẹ́ àwọn rails méjèèjì nílò canonical address schema kan lókè ti SWIFT interface, kì í ṣe mappings méjì tí ó jọra.
 
 **Ṣé tokenised deposit jọ stablecoin?**
 Rárá. Tokenised deposit jẹ́ unsecured liability lórí ìwé balance báńkì tí a ṣàkóso, pẹ̀lú ìbo deposit-insurance kan náà bí deposit ìbílẹ̀. Stablecoin sábà jẹ́ fully-reserved instrument tí a tu láti ọ̀dọ̀ non-bank, láìsí agbára credit-creation. Àpẹẹrẹ Project Agorá ronú pé tokenised deposits sí pẹ̀lú wholesale CBDCs lórí shared programmable ledger; stablecoins kò wà nínú ẹsẹ̀ wholesale settlement.
 
 **Bí Project Agorá ṣe bá àwọn wCBDC pilots tí ó wà ṣiṣẹ́?**
-Agorá ni ìlànà ìparapọ̀. Àwọn àdánwò wCBDC orílẹ̀-èdè bo ẹsẹ̀ central-bank-money; Agorá ń mú tokenised commercial deposits wá lórí programmable ledger kan náà kí ìpín cross-border bá jẹ́ atomic kọjá àwọn ìrú owó méjèèjì. Àwọn central banks méje tí ó ń kópa àti àwọn ilé-iṣẹ́ àdáni 40+ jẹ́ kí ó tóbi jùlọ ní public-private design ground fún àpẹẹrẹ wholesale tokenised money.
+Agorá ni ìlànà ìparapọ̀. Àwọn àdánwò wCBDC orílẹ̀-èdè bo ẹsẹ̀ central-bank-money; Agorá ń mú tokenised commercial deposits wá lórí programmable ledger kan náà kí ìpín cross-border bá jẹ́ atomic kọjá àwọn ìrú owó méjèèjì. Àwọn central banks mẹ́jọ tí ó ń kópa àti àwọn ilé-iṣẹ́ àdáni 40+ jẹ́ kí ó tóbi jùlọ ní public-private design ground fún àpẹẹrẹ wholesale tokenised money.
 
 **Kí ni ìpòlépò DORA compliance kéréjùlọ fún TaaS API?**
 Geo-redundant active-active deployment, severe-but-plausible cyber scenarios tí a ti kọsílẹ̀ pẹ̀lú àwọn olùṣàkóso tí a dárúkọ lábẹ́ SM&CR (UK), àti failover tí a ti dán wò tí kò dìmú àwọn ìsanwó pàtàkì. Láìsí èyí, TaaS product jẹ́ ìlànà liability kí ó tó di laini owó-wíwọlé.

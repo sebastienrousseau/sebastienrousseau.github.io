@@ -91,13 +91,13 @@ site_software: "Static Site Generator, Rust"
 
 <!-- lead-start -->
 <aside class="post-lead" aria-label="Article summary">
-<p class="post-lead-tldr"><strong>TL;DR.</strong> Ang 2026 payments landscape ay lumipat mula sa messaging migration tungo sa isang multi-dimensional operating model kung saan dinidikta ng real-time execution ang risk at revenue. Pinagsasama ng piyesang ito ang 2026 outlook ng J.P. Morgan, Global Payments, HSBC, at Payments Association sa isang four-pillar G-SIB operating plan, sumasaklaw sa model-initiated agentic commerce, always-on treasury APIs, tokenised unified ledgers sa ilalim ng BIS Project Agorá, at ang November 14, 2026 SWIFT structured-address deadline.</p>
+<p class="post-lead-tldr"><strong>TL;DR.</strong> Ang 2026 payments landscape ay lumipat mula sa messaging migration tungo sa isang multi-dimensional operating model kung saan dinidikta ng real-time execution ang risk at revenue. Pinagsasama ng piyesang ito ang 2026 outlook ng J.P. Morgan, Global Payments, HSBC, at Payments Association sa isang four-pillar G-SIB operating plan, sumasaklaw sa model-initiated agentic commerce, always-on treasury APIs, tokenised unified ledgers sa ilalim ng BIS Project Agorá, at ang 14/15 Nobyembre 2026 SWIFT structured-address deadline. Inaalis ng Swift CBPR+ ang unstructured `<AdrLine>` block simula 14 Nobyembre 2026; pinapayagan lamang ng EPC SEPA scheme rulebooks ang unstructured address hanggang 15 Nobyembre 2026.</p>
 <p class="post-lead-heading"><strong>Mga pangunahing punto</strong></p>
 <ul class="post-lead-takeaways">
   <li><strong>Binubuksan ng agentic commerce ang frontier ng delegated liability.</strong> Inaasahang mamamagitan ang autonomous AI agents sa $3-$5 trillion ng taunang commerce pagsapit ng 2030. Kailangang tukuyin ng mga bangko ang MCP gatekeeping, SCA delegation sa ilalim ng PSD3/PSR, at ang pagmamay-ari ng KYC/AML sa loob ng multi-agent payment chains.</li>
-  <li><strong>Ang always-on liquidity ay isa nang operational at regulatory baseline.</strong> Ang 24/7 treasury APIs at virtual accounts ay nagpapaliit ng trapped cash at nagtataas ng bar ng resilience. Sa ilalim ng DORA, ang real-time liquidity products ay dapat suportado ng geo-redundant, active-active infrastructure na may 99.999% availability.</li>
+  <li><strong>Ang always-on liquidity ay isa nang operational at regulatory baseline.</strong> Ang 24/7 treasury APIs at virtual accounts ay nagpapaliit ng trapped cash at nagtataas ng bar ng resilience. Para sa systemically important real-time treasury APIs, five-nines (99.999 %) availability ay nagiging internal engineering target na sinasarili ng mga bangko upang ipakita sa mga supervisor ang DORA-grade resilience. Ang DORA mismo ay hindi nagtatakda ng universal five-nines threshold; sakop nito ang ICT risk management, incident reporting, resilience testing, third-party risk, at oversight ng mga critical ICT providers.</li>
   <li><strong>Ang tokenisation ay lumipat na sa regulated unified ledgers.</strong> Ang Project Agorá ang pinakamalaking public-private framework para sa tokenised commercial bank deposits at central bank reserves. Kailangan ng mga bangko ng limang-hakbang na tokenisation journey, na may malinaw na prudential treatment.</li>
-  <li><strong>Ang November 14, 2026 structured-address cut-over ay may matigas na petsa.</strong> Ang unstructured postal address fields sa CBPR+ at SEPA messages ay mag-uudyok ng agarang rejections. Kailangan ang malinis na data governance sa lahat ng product, technology, at compliance teams.</li>
+  <li><strong>Ang 14/15 Nobyembre 2026 structured-address cut-over ay may matigas na petsa.</strong> Inaalis ng Swift CBPR+ ang unstructured `<AdrLine>` block simula 14 Nobyembre 2026; pinapayagan lamang ng EPC SEPA scheme rulebooks ang unstructured address hanggang 15 Nobyembre 2026. Mag-uudyok ng agarang rejections pagkatapos ng cut-over. Kailangan ang malinis na data governance sa lahat ng product, technology, at compliance teams.</li>
 </ul>
 <p class="post-lead-related"><strong>Kaugnay na babasahin:</strong> <a href="https://sebastienrousseau.com/2026-06-23-iso-20022-pain001-programmable-liquidity-autonomic-treasury-2026">From Pain.001 to Programmable Liquidity: ISO 20022 as the Autonomic Nervous System of Treasury in 2026</a>, <a href="https://sebastienrousseau.com/2026-06-24-cross-border-iso-20022-open-finance-tokenised-deposits-treasury-2026">Cross-Border 2026: ISO 20022, Open Finance and Tokenised Deposits in Corporate Treasury</a>, <a href="https://sebastienrousseau.com/2026-06-25-quantum-dawn-cib-kyberlib-quantum-resilient-payments-stack-2026">Quantum Dawn for CIB: From KyberLib to a Quantum-Resilient Payments Stack</a>.</p>
 </aside>
@@ -112,6 +112,20 @@ Tatlong puwersa ang tumutukoy sa cycle na ito, at bawat isa ay direktang tumutug
 - **Real-time execution** — capital velocity, kasama ang kaakibat na pagbabago sa liquidity management, credit risk, operational resilience, at fraud defense.
 
 Materyal ang mga financial stakes. Ang fraud ay lumalawak sa bilis at pagkasopistikado; matitigas ang regulatory deadlines; at ang mga bangkong proactive na nagmo-modernize ng kanilang core systems ay nagbubukas ng malalaking fee-revenue opportunities. Kabaligtaran ang gastos ng pagwawalang-kibo: agarang transaction rejections, operational bottlenecks, regulatory penalties, at mabilis na pagkawala ng market share.
+
+## Certainty ladder — kung ano ang may petsa, regulated, o forecast
+
+Hindi pareho ang katiyakan ng bawat item sa ulat na ito. Ang tanong sa board-level ay kung aling mga delta ay deadlines, alin ang supervisory expectations, at alin ang market projections pa rin — dahil binabago ng sagot ang budget conversation.
+
+| Kategorya | Mga halimbawa |
+| --- | --- |
+| **Hard deadlines** | Swift CBPR+ structured-address cut-over (14 Nobyembre 2026); EPC SEPA scheme rulebooks (15 Nobyembre 2026) |
+| **Regulatory obligations** | DORA ICT risk + resilience testing + third-party oversight (EU); SCA delegation sa ilalim ng PSD3/PSR; MRM sa ilalim ng SR 11-7 + PRA SS1/23 |
+| **High-probability market shifts** | Real-time treasury APIs, AI-led fraud defense, API-based liquidity, deepfake-driven biometric fraud |
+| **Strategic options** | Tokenised deposits, unified ledgers sa ilalim ng Project Agorá, agentic-commerce corridors, continuous FX (Wire 365) |
+| **Forecasts** | `$3-$5 trillion` ng agentic-commerce annual flows pagsapit ng 2030 (McKinsey baseline) |
+
+Ituring ang unang dalawang row bilang compliance facts na nag-uudyok ng budget line kahit hindi makuha ng bangko ang anumang upside. Ituring ang huling dalawang row bilang strategic options — high-conviction sa direksyon, ngunit ang timing ng execution ay isang pagpili ng board, hindi isang calendar entry ng regulator.
 
 ## Ang convergence ng global payment authorities
 
@@ -204,7 +218,7 @@ Upang mahuli ang halagang iyon, ipinapadala ng mga bangko ang **Treasury-as-a-Se
 
 ### Operational resilience at DORA
 
-Ang pag-aalok ng always-on liquidity ay binabago ang risk profile ng bangko. Dapat hawakan ng platform ang **99.999% operational availability** sa ilalim ng continuous, real-time load.
+Ang pag-aalok ng always-on liquidity ay binabago ang risk profile ng bangko. Para sa systemically important real-time treasury APIs, five-nines (99.999 %) availability ay nagiging internal engineering target na sinasarili ng mga bangko upang ipakita sa mga supervisor ang DORA-grade resilience. Ang DORA mismo ay hindi nagtatakda ng universal five-nines threshold; sakop nito ang ICT risk management, incident reporting, resilience testing, third-party risk, at oversight ng mga critical ICT providers.
 
 Sa ilalim ng [Digital Operational Resilience Act (DORA)](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554 "Regulation (EU) 2022/2554 — Digital Operational Resilience Act"), iyan ay hindi isang IT KPI — ito ay isang mahigpit na regulatory requirement. Inaasahan ng mga regulator na patunayan ng mga bangko na ang real-time treasury API surface at ledger database ay kayang sumipsip ng severe-but-plausible cyberattacks, network outages, at hyperscaler disruptions nang walang pagkagambala sa kritikal na payments o pagsira sa systemic liquidity. Iyon ay nangangailangan ng geo-redundant, active-active multi-cloud database architectures, real-time threat-detection layers, at automated failover — nakikita sa change cost line, hindi lamang sa audit dossier.
 
@@ -216,7 +230,7 @@ Hindi maaaring manirahan ang real-time treasury sa loob ng isang single-currency
 
 Ang tokenisation ay lumipat mula sa nakahiwalay na proof-of-concept pilots tungo sa scaled, bank-grade monetary infrastructure. Lumipat ang focus mula sa private stablecoins at speculative cryptoassets patungo sa **tokenised commercial bank deposits** at **wholesale central bank digital currencies (wCBDCs)** na umaandar sa programmable unified ledgers.
 
-Ang reference framework ay ang [Project Agorá](https://www.bis.org/about/bisih/topics/fmis/agora.htm "BIS Project Agorá — tokenisation of wholesale cross-border payments") — isang mayor public-private collaboration na pinangulo ng BIS at IIF, kinasasangkutan ng pitong central banks at mahigit 40 private financial institutions. Ginagalugad ng proyekto kung paano nag-iintegrate ang tokenised commercial bank deposits sa tokenised wholesale CBDCs sa isang shared programmable ledger upang alisin ang cross-border settlement friction, i-coordinate ang compliance checks, at paganahin ang 24/7 atomic finality.
+Ang reference framework ay ang [Project Agorá](https://www.bis.org/about/bisih/topics/fmis/agora.htm "BIS Project Agorá — tokenisation of wholesale cross-border payments") — isang mayor public-private collaboration na pinangulo ng BIS at IIF, kinasasangkutan ng **walong central banks** at mahigit 40 private financial institutions (ayon sa BIS Agorá page, na-update noong 27 Mayo 2026). Ginagalugad ng proyekto kung paano nag-iintegrate ang tokenised commercial bank deposits sa tokenised wholesale CBDCs sa isang shared programmable ledger upang alisin ang cross-border settlement friction, i-coordinate ang compliance checks, at paganahin ang 24/7 atomic finality.
 
 ### Ang limang-hakbang na tokenisation journey
 
@@ -248,7 +262,7 @@ Sa halip na makipagkumpitensya sa retail rails, nagtatayo ang transaction banks 
 
 ## Pillar 4 — Structured data at fraud defense
 
-Ang infrastructure compliance sa 2026 ay pinangungunahan ng **November 14, 2026 structured-address cut-over** na itinatag sa ilalim ng [SWIFT Standards Release (SR) 2026](https://www.swift.com/standards/iso-20022/removal-unstructured-address "SWIFT — Removal of unstructured address, November 2026"). Mula sa petsang iyon, hihinto ang CBPR+ at SEPA payment networks sa pagtanggap ng ganap na unstructured, free-text postal address blocks (`<AdrLine>`) sa payment messages. Anumang cross-border o domestic message na nagdadala ng unstructured address kung saan inaasahan ang structured elements ay maaantala o tatanggihan ng network.
+Ang infrastructure compliance sa 2026 ay pinangungunahan ng **14/15 Nobyembre 2026 structured-address cut-over**. Inaalis ng Swift CBPR+ ang unstructured `<AdrLine>` block simula 14 Nobyembre 2026; pinapayagan lamang ng EPC SEPA scheme rulebooks ang unstructured address hanggang 15 Nobyembre 2026. Itinatag ito sa ilalim ng [SWIFT Standards Release (SR) 2026](https://www.swift.com/standards/iso-20022/removal-unstructured-address "SWIFT — Removal of unstructured address, November 2026"). Anumang cross-border o domestic message na nagdadala ng unstructured address kung saan inaasahan ang structured elements ay maaantala o tatanggihan ng network pagkatapos ng cut-over.
 
 Alam ng karamihan ng institusyon ang petsa. Marami ang tumatrato dito bilang isang superficial mapping exercise sa interface layer. Ang totoo ay isang mas malalim na data-quality at data-governance challenge. Upang maiwasan ang catastrophic reject rates, kailangan ng payment operations ng malinaw na cross-functional governance frame.
 
@@ -266,7 +280,7 @@ Kapag itinuring bilang compliance cost, ang structured-data programme ay magasto
 
 ### Isang nakalayered na AI fraud defense
 
-Habang bumibilis ang transaction speeds patungo sa real-time, lumalawak na rin ang fraud techniques. Ipinakikita ng kamakailang pananaliksik na ang deepfakes ay umaabot sa humigit-kumulang 40% ng biometric fraud attempts, kung saan ang synthetic media ay lumalago sa paggamit upang talunin ang voice at facial-recognition controls sa onboarding at payment flows.
+Habang bumibilis ang transaction speeds patungo sa real-time, lumalawak na rin ang fraud techniques. Iniulat ng [Entrust 2026 Identity Fraud Report](https://www.entrust.com/resources/reports/identity-fraud-report "Entrust 2026 Identity Fraud Report") na ang deepfakes ay umaabot sa **isa sa limang biometric fraud attempts**; mas naunang Entrust analysis ay naglagay ng deepfakes nang partikular sa **40 % ng video biometric fraud attempts**.
 
 Ang depensa ay isang **three-layer AI fraud model**.
 
@@ -283,7 +297,7 @@ Upang maisakatuparan ang apat na pillar, dapat ayusin ng G-SIB at regional bank 
 ### Horizon 1 — Agarang compliance at core hardening (0-12 buwan)
 
 - **Focus.** I-standardise ang ISO 20022 data quality at i-secure ang batayang real-time transaction paths.
-- **Success indicator (KPI).** Walang unstructured-address rejections sa SWIFT at SEPA pagkatapos ng November 14, 2026 cut-over.
+- **Success indicator (KPI).** Walang unstructured-address rejections sa SWIFT at SEPA pagkatapos ng 14/15 Nobyembre 2026 cut-over.
 - **Executive owner.** Chief Operating Officer / Head of Payment Operations.
 - **Uri ng deliverable.** No-regrets move. Mga update sa core database schema at ang SWIFT SR 2026 validation engine.
 
@@ -301,12 +315,25 @@ Upang maisakatuparan ang apat na pillar, dapat ayusin ng G-SIB at regional bank 
 - **Executive owner.** Group Treasurer / Head of Transaction Banking.
 - **Uri ng deliverable.** Strategic option. Programmable ledger infrastructure, smart-contract liquidity rules, DvP/PvP settlement adapters.
 
+## Anong gagawin Lunes ng umaga — anim-item na checklist para sa mga bangko
+
+Ang three-horizon roadmap ay ang cycle plan. Ang checklist sa ibaba ay kung ano ang maaaring mailatag ng isang CIO, COO, o Head of Transaction Banking sa hapag bago matapos ang susunod na working week, anuman ang mature na antas ng iba pang bahagi ng programme.
+
+1. **Imbentaryo ang unstructured address exposure** ayon sa channel at message type. Bawat legacy file route, bawat legacy API endpoint, bawat corporate ERP na patuloy na naglalabas ng free-text `<AdrLine>`. Output: isang bilang, isang owner, at petsa ng remediation kada source.
+2. **Itaguyod ang isang agentic-payment risk taxonomy.** I-categorise ang non-human-initiated flows ayon sa initiation method (consumer agent, merchant agent, corporate procurement agent), uri ng counterparty, at rail. Output: isang one-page taxonomy at isang routing-engine ticket.
+3. **Tukuyin ang delegated-authority policy limits para sa AI-initiated payments.** Tiered limits ayon sa ticket size, merchant category, at geography. Output: isang draft policy-as-code spec na maipapatupad ng OPA engine.
+4. **I-map ang DORA-critical treasury APIs at third-party dependencies.** Aling APIs ang nasa severe-but-plausible scenario inventory; aling third parties ang umaasa sila; aling mga kontrata ang umaabot na sa DORA Article 28. Output: isang critical-ICT-third-party register row kada API.
+5. **Tukuyin ang dalawang tokenised-deposit use cases na may sukat na treasury value.** Internal cross-branch netting at isang Project-Agorá-adjacent corridor ang makatotohanang unang dalawa. Output: isang nasukat na business case para sa bawat isa, na may owner at 90-day decision date.
+6. **Lumikha ng model-risk control framework para sa fraud at agentic decisioning.** I-map ang bawat ML model sa fraud at agentic-payment paths sa mga inaasahan ng SR 11-7 / PRA SS1/23: dokumentadong layunin, data lineage, explainability, monitoring, at override pathway. Output: isang one-page MRM control matrix kada model.
+
+Ang punto ng listahan ay hindi na ito bago. Ang punto ay ito ay sapat na maliit upang magsimula ngayong linggo, sapat na nakikita upang masubaybayan sa susunod na executive committee, at structurally aligned sa apat na pillar upang ang maagang trabaho ay magpakain sa programme sa halip na makipagkumpitensya rito.
+
 ## FAQ
 
 **Aabot ba talaga ang agentic commerce sa $3-$5 trillion pagsapit ng 2030?**
 Itinuturo ng McKinsey baseline ang $5 trillion sa agentic commerce sales pagsapit ng 2030, kung saan ang hanay ng mga independent forecasts ay nag-iipon sa pagitan ng $3 trillion at $5 trillion. Sinasalamin ng variance kung gaano kaagresibo ang mga merchant sa pag-deploy ng machine-readable checkout APIs at kung gaano kabilis pahihintulutan ng mga bangko ang agents na magtransact sa ilalim ng SCA delegation — ang bottleneck ay nasa banda ng bangko at merchant, hindi sa agent capability.
 
-**Saklaw ba ng November 14, 2026 SWIFT cut-over ang domestic SEPA flows din?**
+**Saklaw ba ng 14/15 Nobyembre 2026 SWIFT cut-over ang domestic SEPA flows din?**
 Oo. Ang structured-address requirement ay nalalapat sa CBPR+ cross-border at sa SEPA payment messages. Ang mga bangkong nagpapatakbo ng parehong rails ay nangangailangan ng iisang canonical address schema sa upstream ng SWIFT interface, hindi dalawang parallel mappings.
 
 **Pareho ba ang tokenised deposit at stablecoin?**

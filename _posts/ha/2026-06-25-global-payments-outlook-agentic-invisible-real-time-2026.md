@@ -91,13 +91,13 @@ site_software: "Static Site Generator, Rust"
 
 <!-- lead-start -->
 <aside class="post-lead" aria-label="Taƙaitaccen labari">
-<p class="post-lead-tldr"><strong>TL;DR.</strong> Yanayin biyan kuɗi na 2026 ya wuce daga ƙaura na messaging zuwa tsarin aiki mai dama da yawa inda haɗari da kuɗin shiga ke ƙayyade ta hanyar aiwatarwa na lokaci-real. Wannan rubutu yana haɗa hangen na J.P. Morgan, Global Payments, HSBC, da Payments Association na 2026 zuwa tsarin aiki na G-SIB mai ginshiƙai huɗu, wanda ya ƙunshi agentic commerce da model ke fara, treasury APIs masu aiki koyaushe, tokenised unified ledgers a ƙarƙashin BIS Project Agorá, da wa'adin structured-address na SWIFT na 14 ga Nuwamba, 2026.</p>
+<p class="post-lead-tldr"><strong>TL;DR.</strong> Yanayin biyan kuɗi na 2026 ya wuce daga ƙaura na messaging zuwa tsarin aiki mai dama da yawa inda haɗari da kuɗin shiga ke ƙayyade ta hanyar aiwatarwa na lokaci-real. Wannan rubutu yana haɗa hangen na J.P. Morgan, Global Payments, HSBC, da Payments Association na 2026 zuwa tsarin aiki na G-SIB mai ginshiƙai huɗu, wanda ya ƙunshi agentic commerce da model ke fara, treasury APIs masu aiki koyaushe, tokenised unified ledgers a ƙarƙashin BIS Project Agorá, da wa'adin structured-address na SWIFT da SEPA na 14/15 Nuwamba 2026 (Swift CBPR+: 14 Nuwamba 2026; littattafan EPC SEPA: 15 Nuwamba 2026).</p>
 <p class="post-lead-heading"><strong>Manyan abubuwan da za a ɗauka</strong></p>
 <ul class="post-lead-takeaways">
   <li><strong>Agentic commerce yana buɗe iyaka na delegated-liability.</strong> Ana hasashen autonomous AI agents za su shiga tsakanin commerce na shekara-shekara kuɗi tiriliyan $3-$5 har zuwa 2030. Banki dole ne su bayyana MCP gatekeeping, wakilcin SCA a ƙarƙashin PSD3/PSR, da mallakar KYC/AML a cikin sarƙoƙin biyan kuɗi na multi-agent.</li>
-  <li><strong>Liquidity mai aiki koyaushe yanzu ita ce ginshiƙin aiki da na tsari.</strong> Treasury APIs na 24/7 da virtual accounts suna rage trapped cash kuma suna ɗaga matakin juriya. A ƙarƙashin DORA, kayayyakin liquidity na lokaci-real dole ne su sami goyon bayan kayan aikin geo-redundant, active-active wanda ke riƙe 99.999% availability.</li>
+  <li><strong>Liquidity mai aiki koyaushe yanzu ita ce ginshiƙin aiki da na tsari.</strong> Treasury APIs na 24/7 da virtual accounts suna rage trapped cash kuma suna ɗaga matakin juriya. Don APIs na ma'ajiyar lokaci-real masu muhimmanci na tsarin, samuwar five-nines (99.999 %) ya zama burin injiniyanci na ciki da bankuna ke gindaya wa kansu domin nuna ƙarfin matakin DORA ga masu kulawa. DORA da kanta ba ta tsara madaidaicin matakin five-nines na duniya ba; tana rufe sarrafa haɗarin ICT, bayar da rahoton aukuwa, gwajin ƙarfi, haɗarin ɓangare na uku, da kulawa kan masu samar da ICT masu muhimmanci.</li>
   <li><strong>Tokenisation ta kammala karatu zuwa unified ledgers da aka tsara.</strong> Project Agorá ita ce mafi girman tsarin public-private don tokenised commercial bank deposits da ajiyar babban banki. Banki suna buƙatar tafiya ta tokenisation matakai biyar, tare da bayyananniyar bi da prudential.</li>
-  <li><strong>Cut-over na structured-address na 14 ga Nuwamba, 2026 yana da kwanan wata mai tsanani.</strong> Filayen postal address marasa tsari a cikin saƙonni na CBPR+ da SEPA za su jawo ƙin yarda nan take. Ana buƙatar tsabtataccen mulkin data a cikin ƙungiyoyin samfur, fasaha, da bin doka.</li>
+  <li><strong>Cut-over na structured-address na 14/15 Nuwamba 2026 yana da kwanan wata mai tsanani.</strong> Swift CBPR+ za ta cire toshe `<AdrLine>` mara tsari daga 14 Nuwamba 2026; littattafan EPC SEPA suna ba da damar adireshin da ba shi da tsari kawai har zuwa 15 Nuwamba 2026. Duka biyu suna jawo ƙin yarda bayan cut-over. Ana buƙatar tsabtataccen mulkin data a cikin ƙungiyoyin samfur, fasaha, da bin doka.</li>
 </ul>
 <p class="post-lead-related"><strong>Karatun da ya shafi wannan:</strong> <a href="https://sebastienrousseau.com/2026-06-23-iso-20022-pain001-programmable-liquidity-autonomic-treasury-2026">Daga Pain.001 zuwa Programmable Liquidity: ISO 20022 a Matsayin Tsarin Jijiya na Autonomic na Treasury a 2026</a>, <a href="https://sebastienrousseau.com/2026-06-24-cross-border-iso-20022-open-finance-tokenised-deposits-treasury-2026">Cross-Border 2026: ISO 20022, Open Finance da Tokenised Deposits a Corporate Treasury</a>, <a href="https://sebastienrousseau.com/2026-06-25-quantum-dawn-cib-kyberlib-quantum-resilient-payments-stack-2026">Quantum Dawn don CIB: Daga KyberLib zuwa Quantum-Resilient Payments Stack</a>.</p>
 </aside>
@@ -112,6 +112,20 @@ Runduna uku suna bayyana wannan zagayowar, kuma kowanne yana taswira kai tsaye z
 - **Aiwatarwa na lokaci-real** — saurin jari, tare da sauyi mai sakamako ga liquidity management, credit risk, operational resilience, da fraud defense.
 
 Hadarin kuɗi yana da gaske. Fraud yana fadada cikin sauri da ƙwarewa; wa'adin tsari yana da tsanani; kuma banki da suka zamanantar da core systems ɗinsu da gaba-gaba suna buɗe damar fee-revenue masu yawa. Tsada na rashin aiki shine kishiyar: ƙin yarda nan take, koshi na aiki, hukunci na tsari, da gushewar kasuwa cikin sauri.
+
+## Tsanin tabbas — abin da yake da kwanan wata, abin da ake tsara wa, abin da ake hasashe
+
+Ba kowane sashe na wannan rahoto ke ɗauke da matakin tabbas iri ɗaya ba. Tambayar matakin hukuma ita ce wane bambance-bambance ne kwanan wata, wane su ne tsammanin masu kulawa, kuma wane su ne har yanzu hasashe na kasuwa — domin amsar tana canza tattaunawar kasafin kuɗi.
+
+| Rukuni | Misalai |
+| --- | --- |
+| **Kwanakin da ba a sassautawa** | Swift CBPR+ structured-address cut-over (14 Nuwamba 2026); littattafan EPC SEPA (15 Nuwamba 2026) |
+| **Wajibcin tsari** | DORA ICT risk + gwajin ƙarfi + kulawa kan ɓangare na uku (EU); wakilcin SCA a ƙarƙashin PSD3/PSR; MRM a ƙarƙashin SR 11-7 + PRA SS1/23 |
+| **Sauye-sauyen kasuwa masu yiwuwa sosai** | Treasury APIs na lokaci-real, kariyar fraud da AI ke jagoranta, liquidity na tushen API, deepfake-driven biometric fraud |
+| **Zaɓuɓɓuka na dabaru** | Tokenised deposits, unified ledgers a ƙarƙashin Project Agorá, corridors na agentic-commerce, continuous FX (Wire 365) |
+| **Hasashe** | `$3-$5 trillion` na agentic-commerce flows na shekara-shekara har zuwa 2030 (McKinsey baseline) |
+
+A ɗauki layuka biyu na sama a matsayin gaskiyar bin doka da ke jawo layin kasafin kuɗi ko ba a kama wani amfani na sama ba. A ɗauki layuka biyu na ƙasa a matsayin zaɓuɓɓuka na dabaru — masu tabbas a jagora, amma inda lokacin aiwatarwa zaɓi ne na hukuma maimakon shigarwa a kalandar mai kulawa.
 
 ## Haɗuwar hukumomin biyan kuɗi na duniya
 
@@ -204,7 +218,7 @@ Don kama wancan ƙimar, banki suna tura **Treasury-as-a-Service (TaaS) API produ
 
 ### Operational resilience da DORA
 
-Bayar da liquidity mai aiki koyaushe yana canza risk profile na banki. Platform dole ne ya riƙe **99.999% operational availability** a ƙarƙashin nauyi mai ci gaba, na lokaci-real.
+Bayar da liquidity mai aiki koyaushe yana canza risk profile na banki. Don APIs na ma'ajiyar lokaci-real masu muhimmanci na tsarin, samuwar five-nines (99.999 %) ya zama burin injiniyanci na ciki da bankuna ke gindaya wa kansu domin nuna ƙarfin matakin DORA ga masu kulawa. DORA da kanta ba ta tsara madaidaicin matakin five-nines na duniya ba; tana rufe sarrafa haɗarin ICT, bayar da rahoton aukuwa, gwajin ƙarfi, haɗarin ɓangare na uku, da kulawa kan masu samar da ICT masu muhimmanci.
 
 A ƙarƙashin [Digital Operational Resilience Act (DORA)](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554 "Regulation (EU) 2022/2554 — Digital Operational Resilience Act"), wancan ba KPI na IT ba ne — buƙatu ne mai tsanani na tsari. Masu kula da tsari suna sa ran banki za su tabbatar cewa real-time treasury API surface da ledger database za su iya ɗaukar cyberattacks masu tsanani-amma-mai yiwuwa, network outages, da hyperscaler disruptions ba tare da katse manyan biyan kuɗi ko lalata systemic liquidity ba. Wancan yana buƙatar geo-redundant, active-active multi-cloud database architectures, real-time threat-detection layers, da automated failover — bayyane a layin tsadar canji, ba kawai a dossier na audit ba.
 
@@ -216,7 +230,7 @@ Real-time treasury ba zai iya rayuwa a cikin iyakar kuɗi guda ba. G-SIBs suna t
 
 Tokenisation ta kammala karatu daga keɓance proof-of-concept pilots zuwa scaled, bank-grade monetary infrastructure. An canza mai da hankali daga private stablecoins da speculative cryptoassets zuwa **tokenised commercial bank deposits** da **wholesale central bank digital currencies (wCBDCs)** masu gudana a kan programmable unified ledgers.
 
-Tsarin tunani shine [Project Agorá](https://www.bis.org/about/bisih/topics/fmis/agora.htm "BIS Project Agorá — tokenisation of wholesale cross-border payments") — babban haɗin gwiwa na public-private wanda BIS da IIF suka taru, ya ƙunshi central banks bakwai da fiye da private financial institutions 40. Aikin yana bincikar yadda tokenised commercial bank deposits ke haɗuwa da tokenised wholesale CBDCs a kan shared programmable ledger don kawar da cross-border settlement friction, daidaita binciken bin doka, da ba da damar 24/7 atomic finality.
+Tsarin tunani shine [Project Agorá](https://www.bis.org/about/bisih/topics/fmis/agora.htm "BIS Project Agorá — tokenisation of wholesale cross-border payments") — babban haɗin gwiwa na public-private wanda BIS da IIF suka taru, ya ƙunshi bankunan tsakiya takwas da fiye da private financial institutions 40 (bisa shafin BIS Agorá, an sabunta a 27 Mayu 2026). Aikin yana bincikar yadda tokenised commercial bank deposits ke haɗuwa da tokenised wholesale CBDCs a kan shared programmable ledger don kawar da cross-border settlement friction, daidaita binciken bin doka, da ba da damar 24/7 atomic finality.
 
 ### Tafiya ta matakai biyar ta tokenisation
 
@@ -248,7 +262,7 @@ Maimakon yin gasa kan retail rails, transaction banks suna kafa custody, suna fi
 
 ## Ginshiƙi 4 — Structured data da fraud defense
 
-Bin doka na kayan aiki a 2026 ta mamaye ta **structured-address cut-over na 14 ga Nuwamba, 2026** wanda aka kafa a ƙarƙashin [SWIFT Standards Release (SR) 2026](https://www.swift.com/standards/iso-20022/removal-unstructured-address "SWIFT — Removal of unstructured address, November 2026"). Daga wancan ranar, CBPR+ da SEPA payment networks za su daina karɓar fully unstructured, free-text postal address blocks (`<AdrLine>`) a saƙonni na biyan kuɗi. Duk saƙon cross-border ko na ciki da ke ɗauke da unstructured address inda ake tsammanin structured elements za a jinkirta ko ƙin yarda ta network.
+Bin doka na kayan aiki a 2026 ta mamaye ta **structured-address cut-over na 14/15 Nuwamba 2026** — kwanaki biyu kusa da juna waɗanda tare suke rufe hanyar adireshin da ba shi da tsari a kan rails na cross-border da na cikin EU. A ƙarƙashin [SWIFT Standards Release (SR) 2026](https://www.swift.com/standards/iso-20022/removal-unstructured-address "SWIFT — Removal of unstructured address, November 2026"), CBPR+ za ta daina karɓar tubalan `<AdrLine>` marasa tsari gabaɗaya daga **14 Nuwamba 2026**. A ƙarƙashin littattafan EPC SEPA na 2025, ana ba da damar adireshin da ba shi da tsari kawai har zuwa **15 Nuwamba 2026**. Bayan cut-overs ɗin, duk saƙon cross-border ko na cikin gida da ke ɗauke da unstructured address inda ake tsammanin structured elements za a jinkirta ko ƙin yarda ta network.
 
 Yawancin cibiyoyi sun san kwanan wata. Da yawa suna kallon shi a matsayin atisaye mai sauƙi na taswira a layer na interface. Hakikanin shine zurfin ƙalubalen data-quality da data-governance. Don guje wa rates na ƙin yarda na masifa, payment operations suna buƙatar tsayayyen tsarin mulki na cross-functional.
 
@@ -266,7 +280,7 @@ Idan an kalle shi a matsayin tsadar bin doka, structured-data programme yana da 
 
 ### Layered AI fraud defense
 
-Yayin da saurin transaction ke hanzarta zuwa lokaci-real, dabarun fraud sun fadada. Bincike na baya-bayan nan yana nuna cewa deepfakes suna lissafin kusan 40% na ƙoƙarin biometric fraud, tare da synthetic media da ake ƙara amfani da shi don kayar da voice da facial-recognition controls a onboarding da payment flows.
+Yayin da saurin transaction ke hanzarta zuwa lokaci-real, dabarun fraud sun fadada. [Rahoton Lalata Tantance Mutum 2026 na Entrust](https://www.entrust.com/resources/reports/identity-fraud-report "Entrust 2026 Identity Fraud Report") ya sanya deepfakes a matsayin **ɗaya cikin biyar na ƙoƙarin lalata biometric**; binciken Entrust na baya ya sanya deepfakes musamman a **40 % na ƙoƙarin lalata biometric na bidiyo**. A kowane fasalin, synthetic media yanzu hanya ce mai muhimmanci ta kayar da voice da facial-recognition controls a onboarding da payment flows.
 
 Kariya ita ce **three-layer AI fraud model**.
 
@@ -283,7 +297,7 @@ Don aiwatar a cikin ginshiƙai huɗu, hukumomin gudanarwa na G-SIB da banki na y
 ### Horizon 1 — Bin doka nan take da ƙarfafa core (watanni 0-12)
 
 - **Mai da hankali.** Daidaita ingancin data na ISO 20022 da tabbatar da hanyoyin transaction na lokaci-real na asali.
-- **Mai nuna nasara (KPI).** Sifili ƙin yarda na unstructured-address a SWIFT da SEPA bayan cut-over na 14 ga Nuwamba, 2026.
+- **Mai nuna nasara (KPI).** Sifili ƙin yarda na unstructured-address a SWIFT da SEPA bayan cut-overs na 14/15 Nuwamba 2026.
 - **Mai mallakar zartarwa.** Chief Operating Officer / Shugaban Payment Operations.
 - **Nau'in mai isar da.** No-regrets move. Sabuntar core database schema da SWIFT SR 2026 validation engine.
 
@@ -301,19 +315,32 @@ Don aiwatar a cikin ginshiƙai huɗu, hukumomin gudanarwa na G-SIB da banki na y
 - **Mai mallakar zartarwa.** Group Treasurer / Shugaban Transaction Banking.
 - **Nau'in mai isar da.** Strategic option. Programmable ledger infrastructure, smart-contract liquidity rules, DvP/PvP settlement adapters.
 
+## Abin yi safiyar Litinin — jerin abubuwa shida ga bankuna
+
+Roadmap na horizons uku shi ne shirin zagayowar. Jerin da ke ƙasa shi ne abin da CIO, COO, ko Shugaban Transaction Banking zai iya samu a tebur kafin ƙarshen mako mai zuwa, ba tare da la'akari da yadda sauran shirin ya girma ba.
+
+1. **Yi ƙididdigar bayyanar adireshi mara tsari** ta hanyar tashar tasha da nau'in saƙo. Kowace hanyar file na legacy, kowace API endpoint na legacy, kowace ERP na corporate da har yanzu ke fitar da `<AdrLine>` mai 'yanci. Sakamako: ƙidaya, mai mallaka, da kwanan watan gyara ga kowace tushe.
+2. **Kafa rabe-raben haɗarin agentic-payment.** Sanya hanyoyin da ba mutum ya fara ba ta hanyar hanyar farawa (consumer agent, merchant agent, corporate procurement agent), nau'in counterparty, da rail. Sakamako: rabe-rabe na shafi guda da tikitin routing-engine.
+3. **Bayyana iyakokin manufofi na delegated-authority don biyan kuɗin da AI ya fara.** Iyakoki masu matakai ta girman tikiti, rukunin merchant, yanki. Sakamako: tsarin manufofi-a-matsayin-code wanda OPA engine zai iya aiwatarwa.
+4. **Tsara APIs na ma'ajiyar masu muhimmanci ga DORA da dogaro kan ɓangare na uku.** Wadanne APIs ne ke a cikin jerin scenarios masu tsanani amma masu yiwuwa; wadanne ɓangare na uku suka dogara da su; wadanne kwangiloli sun riga sun cika DORA Article 28. Sakamako: layi a cikin rajistar critical-ICT-third-party ga kowane API.
+5. **Gano amfani biyu na tokenised-deposit tare da ƙimar ma'ajiya mai aunawa.** Netting na cikin gida tsakanin rassan banki da corridor guda mai kusa da Project Agorá su ne biyu na farko masu yiwuwa. Sakamako: case na kasuwanci da aka ƙididdige ga kowanne, tare da mai mallaka da kwanan wata na yanke shawara na kwanaki 90.
+6. **Ƙirƙira tsarin sarrafa haɗarin ƙirar don fraud da agentic decisioning.** Tsara kowane samfurin ML a cikin hanyoyin fraud da agentic-payment zuwa tsammanin SR 11-7 / PRA SS1/23: maƙasudi da aka rubuta, asalin data, bayyanawa, sa ido, hanyar tsallakawa. Sakamako: matrix na sarrafa MRM na shafi guda ga kowane samfuri.
+
+Manufar jerin ba ita ce wani abu daga cikinsa sabo ba ne. Manufar ita ce karami yana iya farawa wannan makon, mai sa ido yana iya bibiyarsa a kwamiti na zartarwa mai zuwa, kuma yana daidaita tare da ginshiƙai huɗu domin ayyukan farko su ciyar da shirin maimakon yin gasa da shi.
+
 ## FAQ
 
 **Shin agentic commerce za ta isa kuɗi tiriliyan $3-$5 da gaske har zuwa 2030?**
 McKinsey baseline yana nuni zuwa kuɗi tiriliyan $5 cikin agentic commerce sales har zuwa 2030, tare da kewayon hasashe masu zaman kansu suna haɗuwa tsakanin kuɗi tiriliyan $3 da kuɗi tiriliyan $5. Bambancin yana bayyana yadda merchants ke tura machine-readable checkout APIs cikin tsanani da kuma yadda banki ke barin agents su yi transact a ƙarƙashin wakilcin SCA cikin sauri — bottleneck na kan banki da merchant ne, ba na agent capability ba.
 
-**Shin SWIFT cut-over na 14 ga Nuwamba, 2026 yana shafar domestic SEPA flows ma?**
+**Shin cut-overs na 14/15 Nuwamba 2026 suna shafar domestic SEPA flows ma?**
 Eh. Buƙatun structured-address suna shafar CBPR+ cross-border da SEPA payment messages. Banki da ke gudanar da rails biyu suna buƙatar canonical address schema guda ɗaya upstream na SWIFT interface, ba taswira biyu masu daidaitawa ba.
 
 **Shin tokenised deposit iri ɗaya ne da stablecoin?**
 A'a. Tokenised deposit unsecured liability ne a kan balance sheet na regulated bank, tare da daidai deposit-insurance coverage kamar traditional deposit. Stablecoin yawanci kayan aiki ne na fully-reserved da non-bank ke fitarwa, ba tare da credit-creation capacity ba. Ƙirar Project Agorá tana ɗauka cewa tokenised deposits suna zama tare da wholesale CBDCs a kan shared programmable ledger; stablecoins ba sa fitowa a wholesale settlement leg.
 
 **Yaya Project Agorá ke alaƙa da wCBDC pilots da ake ciki?**
-Agorá ita ce tsarin haɗawa. National wCBDC experiments suna rufe central-bank-money leg; Agorá yana kawo tokenised commercial deposits zuwa daidai programmable ledger don cross-border settlement ya zama atomic a cikin nau'ikan kuɗi biyu. Central banks bakwai da ke shiga da private institutions 40+ sun sa ta zama mafi girman public-private design ground don wholesale tokenised money architecture.
+Agorá ita ce tsarin haɗawa. National wCBDC experiments suna rufe central-bank-money leg; Agorá yana kawo tokenised commercial deposits zuwa daidai programmable ledger don cross-border settlement ya zama atomic a cikin nau'ikan kuɗi biyu. Bankunan tsakiya takwas da ke shiga da private institutions 40+ sun sa ta zama mafi girman public-private design ground don wholesale tokenised money architecture.
 
 **Menene mafi ƙarancin matsayin bin doka na DORA don TaaS API?**
 Geo-redundant active-active deployment, tare da rubuce-rubucen cyber scenarios masu tsanani-amma-mai yiwuwa tare da masu mallakar suna a ƙarƙashin SM&CR (UK), da kuma testin failover wanda ba ya katse muhimman biyan kuɗi. Ba tare da wancan ba, TaaS product alhakin tsari ne kafin ya zama layin kuɗin shiga.

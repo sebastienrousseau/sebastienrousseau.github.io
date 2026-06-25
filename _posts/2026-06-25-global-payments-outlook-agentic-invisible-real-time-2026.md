@@ -108,13 +108,13 @@ site_software: "Static Site Generator, Rust"
 
 <!-- lead-start -->
 <aside class="post-lead" aria-label="Article summary">
-<p class="post-lead-tldr"><strong>TL;DR.</strong> The 2026 payments landscape has moved from messaging migration to a multi-dimensional operating model where risk and revenue are dictated by real-time execution. This piece synthesises the J.P. Morgan, Global Payments, HSBC, and Payments Association 2026 outlooks into a four-pillar G-SIB operating plan, covering model-initiated agentic commerce, always-on treasury APIs, tokenised unified ledgers under BIS Project Agorá, and the November 14, 2026 SWIFT structured-address deadline.</p>
+<p class="post-lead-tldr"><strong>TL;DR.</strong> The 2026 payments landscape has moved from messaging migration to a multi-dimensional operating model where risk and revenue are dictated by real-time execution. This piece synthesises the J.P. Morgan, Global Payments, HSBC, and Payments Association 2026 outlooks into a four-pillar G-SIB operating plan, covering model-initiated agentic commerce, always-on treasury APIs, tokenised unified ledgers under BIS Project Agorá, and the 14/15 November 2026 SWIFT and SEPA structured-address deadlines (Swift CBPR+: 14 November 2026; EPC SEPA scheme rulebooks: 15 November 2026).</p>
 <p class="post-lead-heading"><strong>Key takeaways</strong></p>
 <ul class="post-lead-takeaways">
   <li><strong>Agentic commerce opens a delegated-liability frontier.</strong> Autonomous AI agents are projected to mediate $3-$5 trillion in annual commerce by 2030. Banks must define MCP gatekeeping, SCA delegation under PSD3/PSR, and the ownership of KYC/AML inside multi-agent payment chains.</li>
-  <li><strong>Always-on liquidity is now an operational and regulatory baseline.</strong> 24/7 treasury APIs and virtual accounts minimise trapped cash and raise the resilience bar. Under DORA, real-time liquidity products must be backed by geo-redundant, active-active infrastructure that holds 99.999% availability.</li>
+  <li><strong>Always-on liquidity is now an operational and regulatory baseline.</strong> 24/7 treasury APIs and virtual accounts minimise trapped cash and raise the resilience bar. For systemically important real-time treasury APIs, five-nines availability is increasingly the internal engineering target banks set to demonstrate DORA-grade resilience to supervisors — DORA itself prescribes ICT risk management, incident reporting, resilience testing, third-party risk, and oversight rather than a universal five-nines number.</li>
   <li><strong>Tokenisation has graduated to regulated unified ledgers.</strong> Project Agorá is the largest public-private framework for tokenised commercial bank deposits and central bank reserves. Banks need a five-step tokenisation journey, with explicit prudential treatment.</li>
-  <li><strong>The November 14, 2026 structured-address cut-over is hard-dated.</strong> Unstructured postal address fields in CBPR+ and SEPA messages will trigger immediate rejections. Clean data governance across product, technology, and compliance teams is required.</li>
+  <li><strong>The 14/15 November 2026 structured-address cut-over is hard-dated.</strong> Swift CBPR+ removes the unstructured `<AdrLine>` block from 14 November 2026; the EPC SEPA scheme rulebooks permit unstructured address only until 15 November 2026. Both trigger rejections after the cut-over. Clean data governance across product, technology, and compliance teams is required.</li>
 </ul>
 <p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2026-06-23-iso-20022-pain001-programmable-liquidity-autonomic-treasury-2026">From Pain.001 to Programmable Liquidity: ISO 20022 as the Autonomic Nervous System of Treasury in 2026</a>, <a href="https://sebastienrousseau.com/2026-06-24-cross-border-iso-20022-open-finance-tokenised-deposits-treasury-2026">Cross-Border 2026: ISO 20022, Open Finance and Tokenised Deposits in Corporate Treasury</a>, <a href="https://sebastienrousseau.com/2026-06-25-quantum-dawn-cib-kyberlib-quantum-resilient-payments-stack-2026">Quantum Dawn for CIB: From KyberLib to a Quantum-Resilient Payments Stack</a>.</p>
 </aside>
@@ -129,6 +129,20 @@ Three forces define this cycle, and each maps directly to an executive-suite con
 - **Real-time execution** — capital velocity, with consequent change to liquidity management, credit risk, operational resilience, and fraud defense.
 
 The financial stakes are material. Fraud scales in speed and sophistication; regulatory deadlines are hard; and the banks that pro-actively modernise their core systems unlock substantial fee-revenue opportunities. The cost of inaction is the opposite: immediate transaction rejections, operational bottlenecks, regulatory penalties, and rapid market-share erosion.
+
+## Certainty ladder — what is dated, what is regulated, what is forecast
+
+Not every item in this report carries the same certainty. The board-level question is which deltas are deadlines, which are supervisory expectations, and which are still market projections — because the answer changes the budget conversation.
+
+| Category | Examples |
+| --- | --- |
+| **Hard deadlines** | Swift CBPR+ structured-address cut-over (14 November 2026); EPC SEPA scheme rulebooks (15 November 2026) |
+| **Regulatory obligations** | DORA ICT risk + resilience testing + third-party oversight (EU); SCA delegation under PSD3/PSR; MRM under SR 11-7 + PRA SS1/23 |
+| **High-probability market shifts** | Real-time treasury APIs, AI-led fraud defense, API-based liquidity, deepfake-driven biometric fraud |
+| **Strategic options** | Tokenised deposits, unified ledgers under Project Agorá, agentic-commerce corridors, continuous FX (Wire 365) |
+| **Forecasts** | $3-$5 trillion of agentic-commerce annual flows by 2030 (McKinsey baseline) |
+
+Treat the top two rows as compliance facts that drive a budget line whether or not the bank captures any of the upside. Treat the bottom two rows as strategic options — high-conviction in direction, but where execution timing is a board choice rather than a regulator's calendar entry.
 
 ## The convergence of global payment authorities
 
@@ -221,7 +235,7 @@ To capture that value, banks ship **Treasury-as-a-Service (TaaS) API products** 
 
 ### Operational resilience and DORA
 
-Offering always-on liquidity transforms the bank's risk profile. The platform must hold **99.999% operational availability** under continuous, real-time load.
+Offering always-on liquidity transforms the bank's risk profile. For systemically important real-time treasury APIs, **five-nines (99.999 %) availability** is becoming the internal engineering target banks set themselves to demonstrate DORA-grade resilience to supervisors. DORA itself does not prescribe a universal five-nines number; it covers ICT risk management, incident reporting, resilience testing, third-party risk, and oversight of critical ICT providers — but a treasury-API platform that intermittently drops under continuous load will not credibly defend its severe-but-plausible scenario inventory.
 
 Under the [Digital Operational Resilience Act (DORA)](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554 "Regulation (EU) 2022/2554 — Digital Operational Resilience Act"), that is not an IT KPI — it is a strict regulatory requirement. Regulators expect banks to prove that the real-time treasury API surface and ledger database can absorb severe-but-plausible cyberattacks, network outages, and hyperscaler disruptions without interrupting critical payments or compromising systemic liquidity. That requires geo-redundant, active-active multi-cloud database architectures, real-time threat-detection layers, and automated failover — visible in the change cost line, not just the audit dossier.
 
@@ -233,7 +247,7 @@ The real-time treasury cannot live inside a single-currency boundary. G-SIBs are
 
 Tokenisation has graduated from isolated proof-of-concept pilots to scaled, bank-grade monetary infrastructure. Focus has shifted from private stablecoins and speculative cryptoassets to **tokenised commercial bank deposits** and **wholesale central bank digital currencies (wCBDCs)** running on programmable unified ledgers.
 
-The reference framework is [Project Agorá](https://www.bis.org/about/bisih/topics/fmis/agora.htm "BIS Project Agorá — tokenisation of wholesale cross-border payments") — a major public-private collaboration convened by the BIS and IIF, involving seven central banks and over 40 private financial institutions. The project explores how tokenised commercial bank deposits integrate with tokenised wholesale CBDCs on a shared programmable ledger to eliminate cross-border settlement friction, coordinate compliance checks, and enable 24/7 atomic finality.
+The reference framework is [Project Agorá](https://www.bis.org/about/bisih/topics/fmis/agora.htm "BIS Project Agorá — tokenisation of wholesale cross-border payments") — a major public-private collaboration convened by the BIS and IIF, involving **eight central banks** and over 40 private financial institutions (per the BIS Agorá page, updated 27 May 2026). The project explores how tokenised commercial bank deposits integrate with tokenised wholesale CBDCs on a shared programmable ledger to eliminate cross-border settlement friction, coordinate compliance checks, and enable 24/7 atomic finality.
 
 ### The five-step tokenisation journey
 
@@ -265,7 +279,7 @@ Rather than compete on retail rails, transaction banks are establishing custody,
 
 ## Pillar 4 — Structured data and fraud defense
 
-Infrastructure compliance in 2026 is dominated by the **November 14, 2026 structured-address cut-over** established under [SWIFT Standards Release (SR) 2026](https://www.swift.com/standards/iso-20022/removal-unstructured-address "SWIFT — Removal of unstructured address, November 2026"). From that date, CBPR+ and SEPA payment networks stop accepting fully unstructured, free-text postal address blocks (`<AdrLine>`) in payment messages. Any cross-border or domestic message carrying an unstructured address where structured elements are expected will be delayed or rejected by the network.
+Infrastructure compliance in 2026 is dominated by the **14/15 November 2026 structured-address cut-over** — two adjacent deadlines that together close the unstructured-address path across cross-border and intra-EU rails. Under [SWIFT Standards Release (SR) 2026](https://www.swift.com/standards/iso-20022/removal-unstructured-address "SWIFT — Removal of unstructured address, November 2026"), CBPR+ stops accepting fully unstructured `<AdrLine>` blocks from **14 November 2026**. Under the 2025 EPC SEPA scheme rulebooks, unstructured address format is permitted only until **15 November 2026**. After the cut-overs, any cross-border or domestic message carrying an unstructured address where structured elements are expected will be delayed or rejected by the network.
 
 Most institutions know the date. Many treat it as a superficial mapping exercise at the interface layer. The reality is a deeper data-quality and data-governance challenge. To avoid catastrophic reject rates, payment operations need a clear cross-functional governance frame.
 
@@ -283,7 +297,7 @@ Treated as a compliance cost, the structured-data programme is expensive. Treate
 
 ### A layered AI fraud defense
 
-As transaction speeds accelerate to real-time, fraud techniques have scaled. Recent research indicates deepfakes account for around 40 % of biometric fraud attempts, with synthetic media increasingly used to defeat voice and facial-recognition controls in onboarding and payment flows.
+As transaction speeds accelerate to real-time, fraud techniques have scaled. [Entrust's 2026 Identity Fraud Report](https://www.entrust.com/resources/reports/identity-fraud-report "Entrust 2026 Identity Fraud Report") puts deepfakes at **one in five biometric fraud attempts**; earlier Entrust analysis put deepfakes at **40 % of video biometric fraud attempts** specifically. Either framing, synthetic media is now a material channel for defeating voice and facial-recognition controls in onboarding and payment flows.
 
 The defense is a **three-layer AI fraud model**.
 
@@ -300,7 +314,7 @@ To execute across the four pillars, G-SIB and regional bank management bodies sh
 ### Horizon 1 — Immediate compliance and core hardening (0-12 months)
 
 - **Focus.** Standardise ISO 20022 data quality and secure basic real-time transaction paths.
-- **Success indicator (KPI).** Zero unstructured-address rejections on SWIFT and SEPA after the November 14, 2026 cut-over.
+- **Success indicator (KPI).** Zero unstructured-address rejections on SWIFT and SEPA after the 14/15 November 2026 cut-overs.
 - **Executive owner.** Chief Operating Officer / Head of Payment Operations.
 - **Deliverable type.** No-regrets move. Core database schema updates and the SWIFT SR 2026 validation engine.
 
@@ -318,12 +332,25 @@ To execute across the four pillars, G-SIB and regional bank management bodies sh
 - **Executive owner.** Group Treasurer / Head of Transaction Banking.
 - **Deliverable type.** Strategic option. Programmable ledger infrastructure, smart-contract liquidity rules, DvP/PvP settlement adapters.
 
+## What to do Monday morning — a six-item bank checklist
+
+The three-horizon roadmap is the cycle plan. The checklist below is what a CIO, COO, or Head of Transaction Banking can have on the table by end of the next working week, regardless of how mature the rest of the programme is.
+
+1. **Inventory unstructured address exposure** by channel and message type. Every legacy file route, every legacy API endpoint, every corporate ERP that still emits free-text `<AdrLine>`. Output: a count, an owner, and a remediation date per source.
+2. **Establish an agentic-payment risk taxonomy.** Categorise non-human-initiated flows by initiation method (consumer agent, merchant agent, corporate procurement agent), counterparty type, and rail. Output: a one-page taxonomy and a routing-engine ticket.
+3. **Define delegated-authority policy limits for AI-initiated payments.** Tiered limits by ticket size, merchant category, geography. Output: a draft policy-as-code spec the OPA engine can enforce.
+4. **Map DORA-critical treasury APIs and third-party dependencies.** Which APIs sit in the severe-but-plausible scenario inventory; which third parties they depend on; which contracts already meet DORA Article 28. Output: a critical-ICT-third-party register row per API.
+5. **Identify two tokenised-deposit use cases with measurable treasury value.** Internal cross-branch netting and a single Project-Agorá-adjacent corridor are the realistic first two. Output: a sized business case for each, with owner and 90-day decision date.
+6. **Create a model-risk control framework for fraud and agentic decisioning.** Map every ML model in the fraud and agentic-payment paths to SR 11-7 / PRA SS1/23 expectations: documented purpose, data lineage, explainability, monitoring, override pathway. Output: a one-page MRM control matrix per model.
+
+The point of the list is not that any of it is novel. The point is that it is small enough to start this week, observable enough to track at the next executive committee, and structurally aligned with the four pillars so the early work feeds the programme rather than competing with it.
+
 ## FAQ
 
 **Will agentic commerce really reach $3-$5 trillion by 2030?**
 The McKinsey baseline points to $5 trillion in agentic commerce sales by 2030, with a range of independent forecasts clustering between $3 trillion and $5 trillion. The variance reflects how aggressively merchants ship machine-readable checkout APIs and how quickly banks let agents transact under SCA delegation — the bottleneck is on the bank and merchant side, not on the agent capability side.
 
-**Does the November 14, 2026 SWIFT cut-over apply to domestic SEPA flows too?**
+**Do the 14/15 November 2026 cut-overs apply to domestic SEPA flows too?**
 Yes. The structured-address requirement applies to CBPR+ cross-border and to SEPA payment messages. Banks running both rails need a single canonical address schema upstream of the SWIFT interface, not two parallel mappings.
 
 **Is a tokenised deposit the same as a stablecoin?**
