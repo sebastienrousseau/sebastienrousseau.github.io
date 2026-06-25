@@ -468,7 +468,7 @@ def render_card(slug: str, fm: dict[str, str]) -> str:
     """Render a single newsroom-card for the given post slug + frontmatter."""
     title = _field(fm, "title", slug)
     desc = _field(fm, "description")
-    banner = _field(fm, "banner", "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png")
+    banner = _field(fm, "banner", "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp")
     banner_alt = _field(fm, "banner_alt", title)
     keywords = _field(fm, "keywords")
     eyebrow = " · ".join(k.strip().title() for k in keywords.split(",")[:3] if k.strip())

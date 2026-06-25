@@ -326,7 +326,7 @@ def render_json_feed(
         "home_page_url": f"{BASE}/{lang_code}/",
         "feed_url": f"{BASE}/{lang_code}/feed.json",
         "language": bcp47,
-        "icon": "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png",
+        "icon": "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp",
         "favicon": "https://cloudcdn.pro/clients/sebastienrousseau/favicon.ico",
         "authors": [{"name": "Sebastien Rousseau", "url": author_url}],
         "items": items,

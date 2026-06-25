@@ -61,7 +61,7 @@ def _french_author_card() -> str:
     return (
         f'<aside class="author-card" aria-label="{aria}">'
         f'<img alt="{portrait_alt}" '
-        'src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" '
+        'src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" '
         'width="64" height="64" loading="lazy" decoding="async" />'
         '<span class="author-card-body">'
         '<strong class="author-card-name">'

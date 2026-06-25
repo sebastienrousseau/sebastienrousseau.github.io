@@ -86,7 +86,7 @@ CITATION_AUTHORITIES = (
 
 # Author meta shared across every dated post. Single source of truth.
 AUTHOR_NAME = "Sebastien Rousseau"
-AUTHOR_AVATAR = "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+AUTHOR_AVATAR = "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 AUTHOR_URL = "/about/index.html"
 
 _HERO_RE = re.compile(

@@ -182,7 +182,7 @@ def build_person() -> dict[str, object]:
         "givenName": "Sebastien",
         "familyName": "Rousseau",
         "url": BASE + "/",
-        "image": "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png",
+        "image": "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp",
         "jobTitle": "Senior Product Manager",
         "description": (
             "AI, banking and financial services expert. Senior payments leader "
@@ -344,7 +344,7 @@ def build_organization() -> dict[str, object]:
         "logo": {
             "@type": "ImageObject",
             "@id": f"{BASE}/#logo",
-            "url": "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png",
+            "url": "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp",
             "width": "512",
             "height": "512",
             "caption": "Sebastien Rousseau",

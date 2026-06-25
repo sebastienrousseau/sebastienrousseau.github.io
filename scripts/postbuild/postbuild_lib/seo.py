@@ -476,7 +476,7 @@ _IMG_DIMS: dict[str, tuple[int, int]] = {
     "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg": (160, 40),
     "https://cloudcdn.pro/clients/static-site-generator/v1/banners/banner-static-site-generator.svg": (1200, 675),
     # Personal portrait — 162×162 native, used at small sizes everywhere.
-    "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png": (162, 162),
+    "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp": (162, 162),
 }
 
 # URL-prefix → (width, height). Lets us pin entire CDN folders without
@@ -592,7 +592,7 @@ def _resolve_og_banner(html: str, present: set[str]) -> list[str]:
     img_m = _blogposting_image_re.search(html)
     banner = (
         img_m.group(1) if img_m else ""
-    ) or "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+    ) or "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
     out = [f'<meta property="og:image" content="{banner}">']
     if "twitter:image" not in present:
         out.append(f'<meta name="twitter:image" content="{banner}">')
