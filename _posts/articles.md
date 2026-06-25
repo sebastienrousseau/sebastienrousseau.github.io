@@ -122,6 +122,18 @@ site_software: "Static Site Generator, Rust"
 <div class="newsroom-grid">
 
 <article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-06-25-global-payments-outlook-agentic-invisible-real-time-2026/index.html" title="The 2026 Global Payments Outlook: Operating Model, Risk, and Revenue in an Agentic, Invisible, Real-Time World">
+<img alt="Aerial dawn view of a major financial centre at the edge of land and sea — symbolising the convergence of agentic commerce, invisible payments, and real-time treasury infrastructure in the 2026 global payments cycle" src="https://cloudcdn.pro/stocks/images/miquel-parera-NsXLehhHx1Q-1920.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Global Payments Outlook · Agentic Commerce · Mcp</span>
+<h3><a href="/2026-06-25-global-payments-outlook-agentic-invisible-real-time-2026/index.html" title="The 2026 Global Payments Outlook: Operating Model, Risk, and Revenue in an Agentic, Invisible, Real-Time World">The 2026 Global Payments Outlook: Operating Model, Risk, and Revenue in an Agentic, Invisible, Real-Time World</a></h3>
+<p class="newsroom-meta"><time datetime="2026-06-25">June 25, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">The 2026 global payments cycle is defined by three converging forces — agentic commerce, invisible embedded payments, and real-time execution — sitting on top of a tokenised unified ledger under Project Agorá and a hard November 2026 SWIFT structured-address cut-over. This piece synthesises the J.P. Morgan, Global Paym</p>
+</div>
+</article>
+
+<article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-06-24-cross-border-iso-20022-open-finance-tokenised-deposits-treasury-2026/index.html" title="Cross-Border 2026: ISO 20022, Open Finance and Tokenised Deposits in Corporate Treasury">
 <img alt="Container ship at a deepwater port at dawn — symbolising the multi-rail, cross-border movement of corporate value across ISO 20022, open finance, and tokenised-deposit settlement networks in 2026" src="https://cloudcdn.pro/stocks/images/viktor-forgacs-KxVRDiFdTVo.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
