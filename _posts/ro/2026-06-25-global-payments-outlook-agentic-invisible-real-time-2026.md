@@ -91,13 +91,13 @@ site_software: "Static Site Generator, Rust"
 
 <!-- lead-start -->
 <aside class="post-lead" aria-label="Rezumatul articolului">
-<p class="post-lead-tldr"><strong>Pe scurt.</strong> Peisajul plăților în 2026 a trecut de la migrația de mesagerie la un model operațional multidimensional în care riscul și veniturile sunt dictate de execuția în timp real. Această analiză sintetizează perspectivele 2026 ale J.P. Morgan, Global Payments, HSBC și Payments Association într-un plan operațional G-SIB cu patru piloni, acoperind comerțul agentic inițiat de model, API-urile de trezorerie always-on, registrele unificate tokenizate sub BIS Project Agorá și termenul SWIFT pentru adresa structurată de pe 14 noiembrie 2026.</p>
+<p class="post-lead-tldr"><strong>Pe scurt.</strong> Peisajul plăților în 2026 a trecut de la migrația de mesagerie la un model operațional multidimensional în care riscul și veniturile sunt dictate de execuția în timp real. Această analiză sintetizează perspectivele 2026 ale J.P. Morgan, Global Payments, HSBC și Payments Association într-un plan operațional G-SIB cu patru piloni, acoperind comerțul agentic inițiat de model, API-urile de trezorerie always-on, registrele unificate tokenizate sub BIS Project Agorá și termenele SWIFT și SEPA pentru adresa structurată din 14/15 noiembrie 2026 (Swift CBPR+: 14 noiembrie 2026; manualele de reguli ale schemei EPC SEPA: 15 noiembrie 2026).</p>
 <p class="post-lead-heading"><strong>Concluzii cheie</strong></p>
 <ul class="post-lead-takeaways">
   <li><strong>Comerțul agentic deschide o frontieră a răspunderii delegate.</strong> Agenții AI autonomi sunt estimați să intermedieze 3-5 trilioane USD în comerț anual până în 2030. Băncile trebuie să definească gestionarea accesului MCP, delegarea SCA sub PSD3/PSR și proprietatea KYC/AML în lanțurile de plată cu mai mulți agenți.</li>
-  <li><strong>Lichiditatea always-on este acum o linie de bază operațională și de reglementare.</strong> API-urile de trezorerie 24/7 și conturile virtuale reduc numerarul blocat și ridică ștacheta rezilienței. Sub DORA, produsele de lichiditate în timp real trebuie susținute de infrastructură geo-redundantă, activ-activ, care menține o disponibilitate de 99,999 %.</li>
+  <li><strong>Lichiditatea always-on este acum o linie de bază operațională și de reglementare.</strong> API-urile de trezorerie 24/7 și conturile virtuale reduc numerarul blocat și ridică ștacheta rezilienței. Pentru API-urile de trezorerie în timp real cu importanță sistemică, disponibilitatea cinci de nouă (99,999 %) devine ținta de inginerie internă pe care băncile o stabilesc pentru a demonstra supraveghetorilor reziliența la nivel DORA. DORA însăși nu prescrie un prag universal de cinci de nouă; acoperă managementul riscului TIC, raportarea incidentelor, testele de reziliență, riscul terților și supravegherea furnizorilor TIC critici.</li>
   <li><strong>Tokenizarea a trecut la registre unificate reglementate.</strong> Project Agorá este cel mai amplu cadru public-privat pentru depozite tokenizate ale băncilor comerciale și rezerve ale băncilor centrale. Băncile au nevoie de un parcurs de tokenizare în cinci pași, cu un tratament prudențial explicit.</li>
-  <li><strong>Tranziția adresei structurate de pe 14 noiembrie 2026 are dată fermă.</strong> Câmpurile de adresă poștală nestructurate din mesajele CBPR+ și SEPA vor declanșa respingeri imediate. Este necesară o guvernanță curată a datelor între echipele de produs, tehnologie și conformitate.</li>
+  <li><strong>Tranziția adresei structurate de pe 14/15 noiembrie 2026 are dată fermă.</strong> Swift CBPR+ elimină blocul `<AdrLine>` nestructurat începând cu 14 noiembrie 2026; regulile EPC SEPA permit adresa nestructurată doar până la 15 noiembrie 2026. Ambele declanșează respingeri după tranziție. Este necesară o guvernanță curată a datelor între echipele de produs, tehnologie și conformitate.</li>
 </ul>
 <p class="post-lead-related"><strong>Lecturi conexe:</strong> <a href="https://sebastienrousseau.com/2026-06-23-iso-20022-pain001-programmable-liquidity-autonomic-treasury-2026">From Pain.001 to Programmable Liquidity: ISO 20022 as the Autonomic Nervous System of Treasury in 2026</a>, <a href="https://sebastienrousseau.com/2026-06-24-cross-border-iso-20022-open-finance-tokenised-deposits-treasury-2026">Cross-Border 2026: ISO 20022, Open Finance and Tokenised Deposits in Corporate Treasury</a>, <a href="https://sebastienrousseau.com/2026-06-25-quantum-dawn-cib-kyberlib-quantum-resilient-payments-stack-2026">Quantum Dawn for CIB: From KyberLib to a Quantum-Resilient Payments Stack</a>.</p>
 </aside>
@@ -112,6 +112,20 @@ Trei forțe definesc acest ciclu, iar fiecare se mapează direct pe o preocupare
 - **Execuție în timp real** — viteza capitalului, cu schimbări consecvente în managementul lichidității, riscul de credit, reziliența operațională și apărarea împotriva fraudei.
 
 Mizele financiare sunt materiale. Frauda se scalează în viteză și sofisticare; termenele de reglementare sunt ferme; iar băncile care își modernizează proactiv sistemele de bază deblochează oportunități substanțiale de venituri din comisioane. Costul inacțiunii este opus: respingeri imediate de tranzacții, blocaje operaționale, penalizări de reglementare și erodare rapidă a cotei de piață.
+
+## Scara certitudinii — ce este datat, reglementat sau previzionat
+
+Nu fiecare element din acest raport are aceeași certitudine. Întrebarea la nivel de consiliu este care delta-uri sunt termene, care sunt așteptări de supraveghere și care sunt încă proiecții de piață — pentru că răspunsul schimbă conversația despre buget.
+
+| Categorie | Exemple |
+| --- | --- |
+| **Termene ferme** | Tranziția Swift CBPR+ pentru adresa structurată (14 noiembrie 2026); manualele de reguli ale schemei EPC SEPA (15 noiembrie 2026) |
+| **Obligații de reglementare** | DORA: risc TIC + teste de reziliență + supravegherea terților (UE); delegarea SCA sub PSD3/PSR; MRM sub SR 11-7 + PRA SS1/23 |
+| **Schimbări de piață cu probabilitate ridicată** | API-uri de trezorerie în timp real, apărare antifraudă condusă de AI, lichiditate prin API, fraudă biometrică condusă de deepfake-uri |
+| **Opțiuni strategice** | Depozite tokenizate, registre unificate sub Project Agorá, coridoare de comerț agentic, FX continuu (Wire 365) |
+| **Previziuni** | `$3-$5 trillion` fluxuri anuale de comerț agentic până în 2030 (baza McKinsey) |
+
+Tratați primele două rânduri ca fapte de conformitate care impun o linie de buget, indiferent dacă banca captează vreun upside. Tratați ultimele două rânduri ca opțiuni strategice — convingere ridicată în direcție, dar unde calendarul de execuție este o alegere a consiliului, nu o intrare în calendarul autorității de reglementare.
 
 ## Convergența autorităților globale în plăți
 
@@ -204,7 +218,7 @@ Pentru a capta această valoare, băncile livrează **produse API Treasury-as-a-
 
 ### Reziliența operațională și DORA
 
-Oferirea de lichiditate always-on transformă profilul de risc al băncii. Platforma trebuie să mențină **99,999 % disponibilitate operațională** sub sarcină continuă, în timp real.
+Oferirea de lichiditate always-on transformă profilul de risc al băncii. Pentru API-urile de trezorerie în timp real cu importanță sistemică, disponibilitatea cinci de nouă (99,999 %) devine ținta de inginerie internă pe care băncile o stabilesc pentru a demonstra supraveghetorilor reziliența la nivel DORA. DORA însăși nu prescrie un prag universal de cinci de nouă; acoperă managementul riscului TIC, raportarea incidentelor, testele de reziliență, riscul terților și supravegherea furnizorilor TIC critici — dar o platformă API de trezorerie care cade intermitent sub sarcină continuă nu va putea apăra credibil inventarul de scenarii severe-dar-plauzibile.
 
 Sub [Digital Operational Resilience Act (DORA)](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554 "Regulation (EU) 2022/2554 — Digital Operational Resilience Act"), aceasta nu este un KPI IT — este o cerință de reglementare strictă. Autoritățile de reglementare așteaptă ca băncile să demonstreze că suprafața API a trezoreriei în timp real și baza de date a registrului pot absorbi atacuri cibernetice severe-dar-plauzibile, întreruperi de rețea și perturbări ale hyperscaler-elor fără a întrerupe plățile critice sau a compromite lichiditatea sistemică. Acest lucru necesită arhitecturi de baze de date multi-cloud geo-redundante, activ-activ, straturi de detectare a amenințărilor în timp real și failover automat — vizibile pe linia costurilor de schimbare, nu doar în dosarul de audit.
 
@@ -216,7 +230,7 @@ Trezoreria în timp real nu poate trăi într-o limită de o singură monedă. G
 
 Tokenizarea a evoluat de la pilotări izolate de tip dovadă-de-concept la infrastructură monetară scalată, de nivel bancar. Focusul s-a mutat de la stablecoin-uri private și criptoactive speculative la **depozite tokenizate ale băncilor comerciale** și **monede digitale en-gros ale băncilor centrale (wCBDC)** care rulează pe registre unificate programabile.
 
-Cadrul de referință este [Project Agorá](https://www.bis.org/about/bisih/topics/fmis/agora.htm "BIS Project Agorá — tokenisation of wholesale cross-border payments") — o colaborare publică-privată majoră convocată de BIS și IIF, implicând șapte bănci centrale și peste 40 de instituții financiare private. Proiectul explorează cum depozitele tokenizate ale băncilor comerciale se integrează cu wCBDC-urile tokenizate pe un registru programabil comun pentru a elimina frecarea decontării transfrontaliere, a coordona verificările de conformitate și a permite finalitate atomică 24/7.
+Cadrul de referință este [Project Agorá](https://www.bis.org/about/bisih/topics/fmis/agora.htm "BIS Project Agorá — tokenisation of wholesale cross-border payments") — o colaborare publică-privată majoră convocată de BIS și IIF, implicând **opt bănci centrale** și peste 40 de instituții financiare private (conform paginii BIS Agorá, actualizată la 27 mai 2026). Proiectul explorează cum depozitele tokenizate ale băncilor comerciale se integrează cu wCBDC-urile tokenizate pe un registru programabil comun pentru a elimina frecarea decontării transfrontaliere, a coordona verificările de conformitate și a permite finalitate atomică 24/7.
 
 ### Parcursul de tokenizare în cinci pași
 
@@ -248,7 +262,7 @@ Stablecoin-urile private complet rezervate (USDC etc.) continuă să capteze cot
 
 ## Pilonul 4 — Date structurate și apărare împotriva fraudei
 
-Conformitatea infrastructurii în 2026 este dominată de **tranziția adresei structurate din 14 noiembrie 2026** stabilită sub [SWIFT Standards Release (SR) 2026](https://www.swift.com/standards/iso-20022/removal-unstructured-address "SWIFT — Removal of unstructured address, November 2026"). De la acea dată, rețelele de plăți CBPR+ și SEPA încetează să accepte blocuri de adresă poștală complet nestructurate, în text liber (`<AdrLine>`) în mesajele de plată. Orice mesaj transfrontalier sau intern care poartă o adresă nestructurată acolo unde sunt așteptate elemente structurate va fi întârziat sau respins de rețea.
+Conformitatea infrastructurii în 2026 este dominată de **tranziția adresei structurate din 14/15 noiembrie 2026** — două termene adiacente care, împreună, închid calea adresei nestructurate atât pe rutele transfrontaliere, cât și pe cele intra-UE. Sub [SWIFT Standards Release (SR) 2026](https://www.swift.com/standards/iso-20022/removal-unstructured-address "SWIFT — Removal of unstructured address, November 2026"), Swift CBPR+ elimină blocul `<AdrLine>` nestructurat începând cu **14 noiembrie 2026**; regulile EPC SEPA permit adresa nestructurată doar până la **15 noiembrie 2026**. După tranziții, orice mesaj transfrontalier sau intern care poartă o adresă nestructurată acolo unde sunt așteptate elemente structurate va fi întârziat sau respins de rețea.
 
 Majoritatea instituțiilor cunosc data. Multe o tratează ca pe un exercițiu superficial de mapare la nivelul interfeței. Realitatea este o provocare mai profundă de calitate și guvernanță a datelor. Pentru a evita rate catastrofale de respingere, operațiunile de plăți au nevoie de un cadru clar de guvernanță inter-funcțional.
 
@@ -266,7 +280,7 @@ Tratat ca un cost de conformitate, programul de date structurate este scump. Tra
 
 ### O apărare AI împotriva fraudei pe straturi
 
-Pe măsură ce vitezele tranzacțiilor accelerează la timp real, tehnicile de fraudă s-au scalat. Cercetări recente indică faptul că deepfake-urile reprezintă aproximativ 40 % din încercările de fraudă biometrică, cu media sintetică folosită tot mai mult pentru a învinge controalele de recunoaștere vocală și facială în onboarding și fluxurile de plată.
+Pe măsură ce vitezele tranzacțiilor accelerează la timp real, tehnicile de fraudă s-au scalat. [Raportul Entrust privind frauda identității 2026](https://www.entrust.com/resources/reports/identity-fraud-report "Entrust 2026 Identity Fraud Report") plasează deepfake-urile la **unul din cinci tentative de fraudă biometrică**; o analiză Entrust anterioară plasa deepfake-urile specific la **40 % din tentativele de fraudă biometrică video**. Indiferent de încadrare, media sintetică este acum un canal material pentru a învinge controalele de recunoaștere vocală și facială în onboarding și fluxurile de plată.
 
 Apărarea este un **model AI antifraudă pe trei straturi**.
 
@@ -283,7 +297,7 @@ Pentru a executa pe cei patru piloni, organele de conducere ale G-SIB-urilor și
 ### Orizontul 1 — Conformitate imediată și consolidarea nucleului (0-12 luni)
 
 - **Focus.** Standardizarea calității datelor ISO 20022 și securizarea căilor de tranzacții în timp real de bază.
-- **Indicator de succes (KPI).** Zero respingeri pentru adresă nestructurată pe SWIFT și SEPA după tranziția din 14 noiembrie 2026.
+- **Indicator de succes (KPI).** Zero respingeri pentru adresă nestructurată pe SWIFT și SEPA după tranzițiile din 14/15 noiembrie 2026.
 - **Proprietar executiv.** Chief Operating Officer / Șef Operațiuni de Plată.
 - **Tip de livrabil.** Mișcare fără regrete. Actualizări ale schemei bazei de date principale și motorul de validare SWIFT SR 2026.
 
@@ -301,19 +315,32 @@ Pentru a executa pe cei patru piloni, organele de conducere ale G-SIB-urilor și
 - **Proprietar executiv.** Trezorier de Grup / Șef Banking de Tranzacții.
 - **Tip de livrabil.** Opțiune strategică. Infrastructură de registru programabil, reguli de lichiditate prin contracte inteligente, adaptoare de decontare DvP/PvP.
 
+## Ce să faceți luni dimineața — o listă de șase puncte pentru bănci
+
+Foaia de parcurs cu trei orizonturi este planul ciclului. Lista de verificare de mai jos este ceea ce un CIO, COO sau Șef de Banking de Tranzacții poate avea pe masă până la sfârșitul săptămânii lucrătoare următoare, indiferent cât de matur este restul programului.
+
+1. **Inventariați expunerea la adresa nestructurată** pe canal și tip de mesaj. Fiecare rută moștenită de fișier, fiecare endpoint API moștenit, fiecare ERP corporativ care încă emite `<AdrLine>` în text liber. Output: un număr, un proprietar și o dată de remediere pe sursă.
+2. **Stabiliți o taxonomie a riscului plăților agentice.** Categorizați fluxurile neinițiate de om după metoda de inițiere (agent al consumatorului, agent al comerciantului, agent de aprovizionare corporativ), tipul contrapartidei și calea de plată. Output: o taxonomie de o pagină și un tichet pentru motorul de routing.
+3. **Definiți limitele politicii de autoritate delegată pentru plățile inițiate de AI.** Limite ierarhizate după mărimea tranzacției, categoria comerciantului, geografie. Output: o specificație draft de politică-ca-cod pe care motorul OPA o poate aplica.
+4. **Cartografiați API-urile de trezorerie critice pentru DORA și dependențele față de terți.** Care API-uri se află în inventarul de scenarii severe-dar-plauzibile; pe ce terți se bazează; care contracte îndeplinesc deja DORA Article 28. Output: un rând în registrul de terți TIC critici pe API.
+5. **Identificați două cazuri de utilizare a depozitelor tokenizate cu valoare măsurabilă pentru trezorerie.** Netting-ul intern între sucursale și un singur coridor adiacent Project Agorá sunt primele două realiste. Output: un caz de afaceri dimensionat pentru fiecare, cu proprietar și dată de decizie la 90 de zile.
+6. **Creați un cadru de control al riscului modelelor pentru fraudă și decizii agentice.** Mapați fiecare model ML din căile de fraudă și de plată agentică la așteptările SR 11-7 / PRA SS1/23: scop documentat, descendența datelor, explicabilitate, monitorizare, cale de suprareglare. Output: o matrice de control MRM de o pagină pe model.
+
+Scopul listei nu este ca vreun element să fie nou. Scopul este ca lista să fie suficient de mică pentru a începe săptămâna aceasta, suficient de observabilă pentru a fi urmărită la următorul comitet executiv și aliniată structural cu cei patru piloni, astfel încât munca timpurie să alimenteze programul, nu să concureze cu el.
+
 ## Întrebări frecvente
 
 **Va atinge comerțul agentic într-adevăr 3-5 trilioane USD până în 2030?**
 Baza McKinsey indică 5 trilioane USD în vânzări de comerț agentic până în 2030, cu o gamă de prognoze independente grupate între 3 trilioane și 5 trilioane USD. Variația reflectă cât de agresiv livrează comercianții API-uri de checkout citibile de mașini și cât de rapid permit băncile agenților să tranzacționeze sub delegarea SCA — blocajul este pe partea băncii și a comerciantului, nu pe partea capabilității agentului.
 
-**Tranziția SWIFT din 14 noiembrie 2026 se aplică și fluxurilor SEPA interne?**
+**Tranzițiile din 14/15 noiembrie 2026 se aplică și fluxurilor SEPA interne?**
 Da. Cerința adresei structurate se aplică CBPR+ transfrontalier și mesajelor de plată SEPA. Băncile care rulează ambele căi au nevoie de o schemă canonică unică de adresă în amonte de interfața SWIFT, nu de două mapări paralele.
 
 **Este un depozit tokenizat la fel cu un stablecoin?**
 Nu. Un depozit tokenizat este o datorie negarantată în bilanțul unei bănci reglementate, cu aceeași acoperire de asigurare a depozitelor ca un depozit tradițional. Un stablecoin este de obicei un instrument complet rezervat emis de o non-bancă, fără capacitate de creare a creditului. Designul Project Agorá presupune că depozitele tokenizate stau alături de wCBDC-uri pe un registru programabil comun; stablecoin-urile nu apar în piciorul decontării en-gros.
 
 **Cum se raportează Project Agorá la pilotările wCBDC existente?**
-Agorá este cadrul integrator. Experimentele wCBDC naționale acoperă piciorul de bani al băncii centrale; Agorá aduce depozitele comerciale tokenizate pe același registru programabil astfel încât decontarea transfrontalieră să fie atomică între ambele tipuri de bani. Cele șapte bănci centrale participante și peste 40 de instituții private fac din el cel mai amplu teren de proiectare public-privat pentru arhitectura monetară tokenizată en-gros.
+Agorá este cadrul integrator. Experimentele wCBDC naționale acoperă piciorul de bani al băncii centrale; Agorá aduce depozitele comerciale tokenizate pe același registru programabil astfel încât decontarea transfrontalieră să fie atomică între ambele tipuri de bani. Cele opt bănci centrale participante și peste 40 de instituții private fac din el cel mai amplu teren de proiectare public-privat pentru arhitectura monetară tokenizată en-gros.
 
 **Care este poziția minimă de conformitate DORA pentru un API TaaS?**
 Implementare activ-activ geo-redundantă, scenarii cibernetice severe-dar-plauzibile documentate cu proprietari numiți sub SM&CR (UK) și un failover testat care nu întrerupe plățile critice. Fără acestea, produsul TaaS este o răspundere de reglementare înainte de a fi o linie de venituri.

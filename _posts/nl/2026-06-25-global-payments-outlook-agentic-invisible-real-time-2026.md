@@ -91,13 +91,13 @@ site_software: "Static Site Generator, Rust"
 
 <!-- lead-start -->
 <aside class="post-lead" aria-label="Article summary">
-<p class="post-lead-tldr"><strong>TL;DR.</strong> Het betalingslandschap van 2026 is verschoven van een berichtenmigratie naar een meerdimensionaal operationeel model waarin risico en omzet worden bepaald door realtime uitvoering. Dit stuk bundelt de vooruitzichten 2026 van J.P. Morgan, Global Payments, HSBC en de Payments Association tot een G-SIB-operatieplan met vier pijlers: door modellen geïnitieerde agentische handel, altijd beschikbare treasury-API's, getokeniseerde uniforme grootboeken onder BIS Project Agorá en de SWIFT-deadline voor gestructureerde adressen op 14 november 2026.</p>
+<p class="post-lead-tldr"><strong>TL;DR.</strong> Het betalingslandschap van 2026 is verschoven van een berichtenmigratie naar een meerdimensionaal operationeel model waarin risico en omzet worden bepaald door realtime uitvoering. Dit stuk bundelt de vooruitzichten 2026 van J.P. Morgan, Global Payments, HSBC en de Payments Association tot een G-SIB-operatieplan met vier pijlers: door modellen geïnitieerde agentische handel, altijd beschikbare treasury-API's, getokeniseerde uniforme grootboeken onder BIS Project Agorá en de SWIFT-deadline voor gestructureerde adressen op 14/15 november 2026. Swift CBPR+ verwijdert het ongestructureerde `<AdrLine>`-blok vanaf 14 november 2026; de EPC SEPA-rulebooks staan ongestructureerd adres alleen toe tot 15 november 2026.</p>
 <p class="post-lead-heading"><strong>Belangrijkste conclusies</strong></p>
 <ul class="post-lead-takeaways">
   <li><strong>Agentische handel opent een grenslijn van gedelegeerde aansprakelijkheid.</strong> Autonome AI-agenten zullen naar verwachting tegen 2030 voor $3-$5 biljoen aan jaarlijkse handel bemiddelen. Banken moeten MCP-poortwachterschap, SCA-delegatie onder PSD3/PSR en het eigenaarschap van KYC/AML binnen multi-agent betaalketens vastleggen.</li>
-  <li><strong>Altijd beschikbare liquiditeit is nu een operationele en regelgevende basislijn.</strong> 24/7 treasury-API's en virtuele rekeningen minimaliseren vastzittend kasgeld en verhogen de weerbaarheidsdrempel. Onder DORA moeten realtime liquiditeitsproducten worden ondersteund door geo-redundante, actief-actieve infrastructuur met 99.999% beschikbaarheid.</li>
+  <li><strong>Altijd beschikbare liquiditeit is nu een operationele en regelgevende basislijn.</strong> 24/7 treasury-API's en virtuele rekeningen minimaliseren vastzittend kasgeld en verhogen de weerbaarheidsdrempel. Voor systeemkritische realtime-treasury-API's wordt vijf-negen beschikbaarheid (99,999 %) steeds vaker het interne engineeringdoel dat banken stellen om DORA-waardige veerkracht aan toezichthouders aan te tonen. DORA zelf schrijft geen universele vijf-negen norm voor; ze dekt ICT-risicobeheer, incidentrapportage, veerkrachttests, derdenrisico en toezicht op kritische ICT-aanbieders.</li>
   <li><strong>Tokenisatie is opgeschoven naar gereguleerde uniforme grootboeken.</strong> Project Agorá is het grootste publiek-private raamwerk voor getokeniseerde commerciële bankdeposito's en centralebankreserves. Banken hebben een tokenisatietraject in vijf stappen nodig, met expliciete prudentiële behandeling.</li>
-  <li><strong>De overgang naar gestructureerde adressen op 14 november 2026 ligt vast.</strong> Ongestructureerde postadresvelden in CBPR+- en SEPA-berichten leiden tot directe afwijzingen. Schone datagovernance over product-, technologie- en compliance-teams heen is vereist.</li>
+  <li><strong>De overgang naar gestructureerde adressen op 14/15 november 2026 ligt vast.</strong> Swift CBPR+ verwijdert het ongestructureerde `<AdrLine>`-blok vanaf 14 november 2026; de EPC SEPA-rulebooks staan ongestructureerd adres alleen toe tot 15 november 2026. Beide leiden na de overgang tot afwijzingen. Schone datagovernance over product-, technologie- en compliance-teams heen is vereist.</li>
 </ul>
 <p class="post-lead-related"><strong>Verder lezen:</strong> <a href="https://sebastienrousseau.com/2026-06-23-iso-20022-pain001-programmable-liquidity-autonomic-treasury-2026">Van Pain.001 naar programmeerbare liquiditeit: ISO 20022 als het autonome zenuwstelsel van treasury in 2026</a>, <a href="https://sebastienrousseau.com/2026-06-24-cross-border-iso-20022-open-finance-tokenised-deposits-treasury-2026">Grensoverschrijdend 2026: ISO 20022, open finance en getokeniseerde deposito's in corporate treasury</a>, <a href="https://sebastienrousseau.com/2026-06-25-quantum-dawn-cib-kyberlib-quantum-resilient-payments-stack-2026">Kwantumdageraad voor CIB: van KyberLib naar een kwantumweerbare betaalstack</a>.</p>
 </aside>
@@ -112,6 +112,20 @@ Drie krachten bepalen deze cyclus, en elk sluit direct aan op een zorg op direct
 - **Realtime uitvoering** — kapitaalsnelheid, met de daaruit volgende verschuivingen in liquiditeitsbeheer, kredietrisico, operationele weerbaarheid en fraudeverdediging.
 
 De financiële inzet is materieel. Fraude schaalt op in snelheid en verfijning; regelgevende deadlines zijn hard; en de banken die proactief hun kernsystemen moderniseren ontsluiten substantiële kansen voor vergoedingsinkomsten. De kosten van niets doen zijn het omgekeerde: onmiddellijke afwijzing van transacties, operationele knelpunten, regelgevende boetes en snelle marktaandeelerosie.
+
+## Zekerheidsladder — wat is gedateerd, gereguleerd, of voorspelling
+
+Niet elk item in dit rapport draagt dezelfde zekerheid. De boardvraag is welke delta's deadlines zijn, welke toezichtverwachtingen, en welke nog marktprojecties — want het antwoord verandert het budgetgesprek.
+
+| Categorie | Voorbeelden |
+| --- | --- |
+| **Harde deadlines** | Swift CBPR+ overgang naar gestructureerde adressen (14 november 2026); EPC SEPA-rulebooks (15 november 2026) |
+| **Regelgevende verplichtingen** | DORA ICT-risico + veerkrachttests + derdentoezicht (EU); SCA-delegatie onder PSD3/PSR; MRM onder SR 11-7 + PRA SS1/23 |
+| **Marktverschuivingen met hoge waarschijnlijkheid** | Realtime treasury-API's, AI-gestuurde fraudeverdediging, API-gebaseerde liquiditeit, deepfake-gedreven biometrische fraude |
+| **Strategische opties** | Getokeniseerde deposito's, uniforme grootboeken onder Project Agorá, agentische-handelscorridors, continue FX (Wire 365) |
+| **Voorspellingen** | `$3-$5 trillion` aan jaarlijkse agentische-handelsstromen tegen 2030 (McKinsey-basislijn) |
+
+Behandel de bovenste twee rijen als compliancefeiten die een budgetlijn aansturen, ongeacht of de bank een deel van de opwaartse kant pakt. Behandel de onderste twee rijen als strategische opties — hoge overtuiging in richting, maar waar uitvoeringstiming een boardkeuze is in plaats van een agenda-item van de toezichthouder.
 
 ## De convergentie van mondiale betalingsautoriteiten
 
@@ -204,7 +218,7 @@ Om die waarde te oogsten, leveren banken **Treasury-as-a-Service (TaaS) API-prod
 
 ### Operationele weerbaarheid en DORA
 
-Het aanbieden van altijd beschikbare liquiditeit verandert het risicoprofiel van de bank. Het platform moet **99.999% operationele beschikbaarheid** halen onder continue, realtime belasting.
+Het aanbieden van altijd beschikbare liquiditeit verandert het risicoprofiel van de bank. Voor systeemkritische realtime-treasury-API's wordt vijf-negen beschikbaarheid (99,999 %) steeds vaker het interne engineeringdoel dat banken stellen om DORA-waardige veerkracht aan toezichthouders aan te tonen. DORA zelf schrijft geen universele vijf-negen norm voor; ze dekt ICT-risicobeheer, incidentrapportage, veerkrachttests, derdenrisico en toezicht op kritische ICT-aanbieders.
 
 Onder de [Digital Operational Resilience Act (DORA)](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554 "Regulation (EU) 2022/2554 — Digital Operational Resilience Act") is dat geen IT-KPI — het is een strikte regelgevende eis. Toezichthouders verwachten dat banken aantonen dat het oppervlak van de realtime treasury-API's en de grootboekdatabase ernstige-maar-aannemelijke cyberaanvallen, netwerkstoringen en hyperscaler-verstoringen kan absorberen zonder kritische betalingen te onderbreken of systemische liquiditeit in gevaar te brengen. Dat vereist geo-redundante, actief-actieve multi-cloud database-architecturen, realtime detectielagen voor bedreigingen en geautomatiseerde failover — zichtbaar in de changekostenregel, niet alleen in het auditdossier.
 
@@ -216,7 +230,7 @@ De realtime treasury kan niet binnen één valutagrens leven. G-SIB's rollen con
 
 Tokenisatie is opgeschoven van geïsoleerde proof-of-concept-pilots naar geschaalde monetaire infrastructuur van bankniveau. De aandacht is verschoven van private stablecoins en speculatieve cryptoassets naar **getokeniseerde commerciële bankdeposito's** en **wholesale digitale centralebankvaluta's (wCBDC)** die draaien op programmeerbare uniforme grootboeken.
 
-Het referentieraamwerk is [Project Agorá](https://www.bis.org/about/bisih/topics/fmis/agora.htm "BIS Project Agorá — tokenisation of wholesale cross-border payments") — een grote publiek-private samenwerking belegd door de BIS en het IIF, met zeven centrale banken en meer dan 40 private financiële instellingen. Het project onderzoekt hoe getokeniseerde commerciële bankdeposito's integreren met getokeniseerde wholesale CBDC's op een gedeeld programmeerbaar grootboek om grensoverschrijdende settlementwrijving te elimineren, compliancecontroles te coördineren en 24/7 atomaire finaliteit te bereiken.
+Het referentieraamwerk is [Project Agorá](https://www.bis.org/about/bisih/topics/fmis/agora.htm "BIS Project Agorá — tokenisation of wholesale cross-border payments") — een grote publiek-private samenwerking belegd door de BIS en het IIF, met acht centrale banken en meer dan 40 private financiële instellingen (volgens de BIS Agorá-pagina, bijgewerkt op 27 mei 2026). Het project onderzoekt hoe getokeniseerde commerciële bankdeposito's integreren met getokeniseerde wholesale CBDC's op een gedeeld programmeerbaar grootboek om grensoverschrijdende settlementwrijving te elimineren, compliancecontroles te coördineren en 24/7 atomaire finaliteit te bereiken.
 
 ### Het tokenisatietraject in vijf stappen
 
@@ -248,7 +262,7 @@ In plaats van te concurreren op retailrails bouwen transactiebanken bewaarneming
 
 ## Pijler 4 — Gestructureerde data en fraudeverdediging
 
-Infrastructuurcompliance in 2026 wordt gedomineerd door de **overgang naar gestructureerde adressen op 14 november 2026** zoals vastgesteld onder [SWIFT Standards Release (SR) 2026](https://www.swift.com/standards/iso-20022/removal-unstructured-address "SWIFT — Removal of unstructured address, November 2026"). Vanaf die datum accepteren CBPR+- en SEPA-betaalnetwerken geen volledig ongestructureerde, vrije-tekst postadresblokken (`<AdrLine>`) meer in betaalberichten. Elk grensoverschrijdend of binnenlands bericht met een ongestructureerd adres waar gestructureerde elementen worden verwacht, wordt door het netwerk vertraagd of afgewezen.
+Infrastructuurcompliance in 2026 wordt gedomineerd door de **overgang naar gestructureerde adressen op 14/15 november 2026** — twee aangrenzende deadlines die samen het ongestructureerde-adrespad sluiten over grensoverschrijdende en intra-EU rails. Onder [SWIFT Standards Release (SR) 2026](https://www.swift.com/standards/iso-20022/removal-unstructured-address "SWIFT — Removal of unstructured address, November 2026") stopt Swift CBPR+ vanaf **14 november 2026** met het accepteren van volledig ongestructureerde `<AdrLine>`-blokken. Onder de EPC SEPA-rulebooks staat ongestructureerd adres alleen toe tot **15 november 2026**. Na de overgangen wordt elk grensoverschrijdend of binnenlands bericht met een ongestructureerd adres waar gestructureerde elementen worden verwacht, door het netwerk vertraagd of afgewezen.
 
 De meeste instellingen kennen de datum. Velen behandelen het als een oppervlakkige mappingoefening op de interfacelaag. De werkelijkheid is een diepere uitdaging rond datakwaliteit en datagovernance. Om catastrofale afwijzingspercentages te voorkomen, hebben betaaloperaties een helder cross-functioneel governanceraamwerk nodig.
 
@@ -266,7 +280,7 @@ Behandeld als compliancekost is het programma voor gestructureerde data duur. Be
 
 ### Een gelaagde AI-fraudeverdediging
 
-Naarmate transactiesnelheden naar realtime versnellen, schalen ook fraudetechnieken op. Recent onderzoek geeft aan dat deepfakes goed zijn voor circa 40 % van de biometrische fraudepogingen, met synthetische media die in toenemende mate worden ingezet om stem- en gezichtsherkenningscontroles in onboarding- en betaalstromen te omzeilen.
+Naarmate transactiesnelheden naar realtime versnellen, schalen ook fraudetechnieken op. Het [Identity Fraud Report 2026 van Entrust](https://www.entrust.com/resources/reports/identity-fraud-report "Entrust 2026 Identity Fraud Report") plaatst deepfakes op **één op vijf biometrische fraudepogingen**; eerdere Entrust-analyse plaatste deepfakes specifiek op **40 % van de biometrische videopogingen**.
 
 De verdediging is een **drielaags AI-fraudemodel**.
 
@@ -283,7 +297,7 @@ Om over de vier pijlers heen uit te voeren, moeten managementorganen van G-SIB's
 ### Horizon 1 — Directe compliance en kernverharding (0-12 maanden)
 
 - **Focus.** Standaardiseer de datakwaliteit van ISO 20022 en zeker basale realtime transactiepaden.
-- **Succesindicator (KPI).** Nul afwijzingen op ongestructureerde adressen in SWIFT en SEPA na de overgang van 14 november 2026.
+- **Succesindicator (KPI).** Nul afwijzingen op ongestructureerde adressen in SWIFT en SEPA na de overgangen van 14/15 november 2026.
 - **Bestuurlijke eigenaar.** Chief Operating Officer / Head of Payment Operations.
 - **Type oplevering.** No-regrets-zet. Updates van het kerndatabaseschema en de validatiemotor voor SWIFT SR 2026.
 
@@ -301,12 +315,25 @@ Om over de vier pijlers heen uit te voeren, moeten managementorganen van G-SIB's
 - **Bestuurlijke eigenaar.** Group Treasurer / Head of Transaction Banking.
 - **Type oplevering.** Strategische optie. Programmeerbare grootboekinfrastructuur, slimme-contractregels voor liquiditeit, DvP/PvP-settlementadapters.
 
+## Wat te doen op maandagochtend — een zespunts-checklist voor banken
+
+De driehorizon-routekaart is het cyclusplan. De checklist hieronder is wat een CIO, COO of Head of Transaction Banking aan het einde van de volgende werkweek op tafel kan hebben, ongeacht hoe volwassen de rest van het programma is.
+
+1. **Inventariseer blootstelling aan ongestructureerde adressen** per kanaal en berichttype. Elke legacy bestandsroute, elk legacy API-endpoint, elk corporate ERP dat nog vrije-tekst `<AdrLine>` uitstuurt. Output: een telling, een eigenaar en een remediatiedatum per bron.
+2. **Stel een risicotaxonomie voor agentische betalingen op.** Categoriseer niet-menselijk geïnitieerde stromen op initiatiemethode (consumentagent, handelaarsagent, corporate inkoopagent), tegenpartijtype en rail. Output: een eenpagina-taxonomie en een ticket voor de routeringsmotor.
+3. **Definieer beleidslimieten voor gedelegeerde bevoegdheid voor door AI geïnitieerde betalingen.** Gelaagde limieten op transactieomvang, handelaarscategorie, geografie. Output: een conceptspecificatie als policy-as-code die de OPA-motor kan afdwingen.
+4. **Breng DORA-kritische treasury-API's en derdenafhankelijkheden in kaart.** Welke API's vallen onder het ernstige-maar-aannemelijke scenario-inventaris; van welke derden ze afhankelijk zijn; welke contracten al voldoen aan DORA Article 28. Output: een rij in het register kritische ICT-derden per API.
+5. **Identificeer twee gebruikssituaties voor getokeniseerde deposito's met meetbare treasurywaarde.** Intern netting tussen vestigingen en één corridor in de buurt van Project Agorá zijn de realistische eerste twee. Output: een uitgewerkte businesscase per geval, met eigenaar en 90-dagen-beslissingsdatum.
+6. **Bouw een modelrisicocontrolekader voor fraude en agentische besluitvorming.** Koppel elk ML-model in de fraude- en agentische-betaalpaden aan de verwachtingen van SR 11-7 / PRA SS1/23: gedocumenteerd doel, datalineage, verklaarbaarheid, monitoring, overrulepad. Output: een eenpagina-MRM-controlematrix per model.
+
+Het punt van de lijst is niet dat iets ervan nieuw is. Het punt is dat hij klein genoeg is om deze week te beginnen, observeerbaar genoeg om in het volgende uitvoerende comité te volgen, en structureel aligned met de vier pijlers zodat het vroege werk het programma voedt in plaats van ermee concurreert.
+
 ## FAQ
 
 **Bereikt agentische handel echt $3-$5 biljoen tegen 2030?**
 De basislijn van McKinsey wijst op $5 biljoen aan agentische-handelsverkopen tegen 2030, met een reeks onafhankelijke prognoses die clusteren tussen $3 biljoen en $5 biljoen. De variatie weerspiegelt hoe agressief handelaren machine-leesbare afreken-API's uitrollen en hoe snel banken agenten laten transacteren onder SCA-delegatie — het knelpunt zit aan de bank- en handelaarkant, niet aan de capaciteitskant van de agent.
 
-**Geldt de SWIFT-overgang van 14 november 2026 ook voor binnenlandse SEPA-stromen?**
+**Gelden de overgangen van 14/15 november 2026 ook voor binnenlandse SEPA-stromen?**
 Ja. De eis voor gestructureerde adressen geldt voor CBPR+ grensoverschrijdend en voor SEPA-betaalberichten. Banken die beide rails draaien hebben één canoniek adresschema upstream van de SWIFT-interface nodig, geen twee parallelle mappings.
 
 **Is een getokeniseerde deposito hetzelfde als een stablecoin?**

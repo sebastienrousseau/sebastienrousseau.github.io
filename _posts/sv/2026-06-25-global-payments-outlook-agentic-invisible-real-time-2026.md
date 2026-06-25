@@ -91,13 +91,13 @@ site_software: "Static Site Generator, Rust"
 
 <!-- lead-start -->
 <aside class="post-lead" aria-label="Artikelsammanfattning">
-<p class="post-lead-tldr"><strong>TL;DR.</strong> Betalningslandskapet 2026 har gått från meddelandemigrering till en flerdimensionell driftmodell där risk och intäkter dikteras av realtidsutförande. Texten syntetiserar utsikterna för 2026 från J.P. Morgan, Global Payments, HSBC och Payments Association till en G-SIB-driftplan med fyra pelare, som täcker modellinitierad agentbaserad handel, ständigt aktiva treasury-API:er, tokeniserade enhetliga huvudböcker under BIS Project Agorá och SWIFT-deadlinen för strukturerad adress den 14 november 2026.</p>
+<p class="post-lead-tldr"><strong>TL;DR.</strong> Betalningslandskapet 2026 har gått från meddelandemigrering till en flerdimensionell driftmodell där risk och intäkter dikteras av realtidsutförande. Texten syntetiserar utsikterna för 2026 från J.P. Morgan, Global Payments, HSBC och Payments Association till en G-SIB-driftplan med fyra pelare, som täcker modellinitierad agentbaserad handel, ständigt aktiva treasury-API:er, tokeniserade enhetliga huvudböcker under BIS Project Agorá och SWIFT-deadlinen för strukturerad adress den 14/15 november 2026. Swift CBPR+ tar bort det ostrukturerade `<AdrLine>`-blocket från 14 november 2026; EPC SEPA-regelboken tillåter ostrukturerad adress endast till 15 november 2026.</p>
 <p class="post-lead-heading"><strong>Viktiga slutsatser</strong></p>
 <ul class="post-lead-takeaways">
   <li><strong>Agentbaserad handel öppnar en gräns för delegerat ansvar.</strong> Autonoma AI-agenter förväntas förmedla 3-5 biljoner USD i årlig handel senast 2030. Bankerna måste definiera MCP-grindvakteri, SCA-delegering enligt PSD3/PSR och ägarskapet för KYC/AML inom betalningskedjor med flera agenter.</li>
-  <li><strong>Ständigt tillgänglig likviditet är nu en operativ och regulatorisk grundnivå.</strong> Treasury-API:er och virtuella konton dygnet runt minimerar fastlåst kassa och höjer motståndskraftskraven. Enligt DORA måste likviditetsprodukter i realtid stödjas av geo-redundant, aktiv-aktiv infrastruktur som upprätthåller 99,999 % tillgänglighet.</li>
+  <li><strong>Ständigt tillgänglig likviditet är nu en operativ och regulatorisk grundnivå.</strong> Treasury-API:er och virtuella konton dygnet runt minimerar fastlåst kassa och höjer motståndskraftskraven. För systemviktiga realtidstreasury-API:er blir tillgänglighet på fem nior (99,999 %) det interna ingenjörsmålet som banker själva sätter för att visa tillsynsmyndigheter motståndskraft på DORA-nivå. DORA själv föreskriver inget universellt fem-nior-tröskelvärde; det omfattar IKT-riskhantering, incidentrapportering, motståndskraftstester, tredjepartsrisk och tillsyn över kritiska IKT-leverantörer.</li>
   <li><strong>Tokeniseringen har avancerat till reglerade enhetliga huvudböcker.</strong> Project Agorá är det största offentlig-privata ramverket för tokeniserade insättningar hos affärsbanker och centralbanksreserver. Bankerna behöver en tokeniseringsresa i fem steg, med explicit prudentiell behandling.</li>
-  <li><strong>Övergången till strukturerad adress den 14 november 2026 är hårt daterad.</strong> Ostrukturerade postadressfält i CBPR+- och SEPA-meddelanden utlöser omedelbara avvisanden. Ren datastyrning över produkt-, teknik- och regelefterlevnadsteam krävs.</li>
+  <li><strong>Övergången till strukturerad adress den 14/15 november 2026 är hårt daterad.</strong> Swift CBPR+ tar bort det ostrukturerade `<AdrLine>`-blocket från 14 november 2026; EPC SEPA-regelboken tillåter ostrukturerad adress endast till 15 november 2026. Ostrukturerade postadressfält i CBPR+- och SEPA-meddelanden utlöser omedelbara avvisanden. Ren datastyrning över produkt-, teknik- och regelefterlevnadsteam krävs.</li>
 </ul>
 <p class="post-lead-related"><strong>Relaterad läsning:</strong> <a href="https://sebastienrousseau.com/2026-06-23-iso-20022-pain001-programmable-liquidity-autonomic-treasury-2026">From Pain.001 to Programmable Liquidity: ISO 20022 as the Autonomic Nervous System of Treasury in 2026</a>, <a href="https://sebastienrousseau.com/2026-06-24-cross-border-iso-20022-open-finance-tokenised-deposits-treasury-2026">Cross-Border 2026: ISO 20022, Open Finance and Tokenised Deposits in Corporate Treasury</a>, <a href="https://sebastienrousseau.com/2026-06-25-quantum-dawn-cib-kyberlib-quantum-resilient-payments-stack-2026">Quantum Dawn for CIB: From KyberLib to a Quantum-Resilient Payments Stack</a>.</p>
 </aside>
@@ -112,6 +112,20 @@ Tre krafter definierar cykeln, och var och en pekar direkt mot en angelägenhet 
 - **Realtidsutförande** — kapitalets hastighet, med åtföljande förändring av likviditetshantering, kreditrisk, operativ motståndskraft och bedrägeriförsvar.
 
 De finansiella insatserna är väsentliga. Bedrägerier skalar i hastighet och sofistikering, regulatoriska deadlines är hårda, och de banker som proaktivt moderniserar sina kärnsystem frigör betydande avgiftsintäkter. Kostnaden för passivitet är motsatsen: omedelbara transaktionsavvisanden, operativa flaskhalsar, regulatoriska sanktioner och snabb erosion av marknadsandelar.
+
+## Säkerhetsstege — vad är daterat, reglerat eller prognos
+
+Inte varje punkt i rapporten bär samma säkerhet. Frågan på styrelsenivå är vilka deltan som är deadlines, vilka som är tillsynsförväntningar och vilka som fortfarande är marknadsprognoser — svaret förändrar budgetsamtalet.
+
+| Kategori | Exempel |
+| --- | --- |
+| **Hårda deadlines** | Swift CBPR+ övergång till strukturerad adress (14 november 2026); EPC SEPA-regelboken (15 november 2026) |
+| **Regulatoriska skyldigheter** | DORA IKT-risk + motståndskraftstester + tredjepartstillsyn (EU); SCA-delegering enligt PSD3/PSR; MRM enligt SR 11-7 + PRA SS1/23 |
+| **Sannolika marknadsskiften** | Realtidstreasury-API:er, AI-drivet bedrägeriförsvar, API-baserad likviditet, deepfake-driven biometriskt bedrägeri |
+| **Strategiska optioner** | Tokeniserade insättningar, enhetliga huvudböcker under Project Agorá, agentbaserade handelskorridorer, kontinuerlig FX (Wire 365) |
+| **Prognoser** | $3-$5 trillion i agentbaserade årliga handelsflöden senast 2030 (McKinsey-baslinje) |
+
+Behandla de två översta raderna som regelefterlevnadsfakta som driver en budgetpost oavsett om banken fångar någon av uppsidan. Behandla de två nedersta raderna som strategiska optioner — högt konvektion i riktning, men där exekveringstidpunkten är ett styrelsebeslut snarare än en post i tillsynsmyndighetens kalender.
 
 ## Globala betalningsauktoriteters konvergens
 
@@ -204,7 +218,7 @@ För att fånga det värdet levererar bankerna **Treasury-as-a-Service (TaaS) AP
 
 ### Operativ motståndskraft och DORA
 
-Att erbjuda ständigt aktiv likviditet förändrar bankens riskprofil. Plattformen måste upprätthålla **99,999 % operativ tillgänglighet** under kontinuerlig realtidsbelastning.
+Att erbjuda ständigt aktiv likviditet förändrar bankens riskprofil. För systemviktiga realtidstreasury-API:er blir tillgänglighet på fem nior (99,999 %) det interna ingenjörsmålet som banker själva sätter för att visa tillsynsmyndigheter motståndskraft på DORA-nivå. DORA själv föreskriver inget universellt fem-nior-tröskelvärde; det omfattar IKT-riskhantering, incidentrapportering, motståndskraftstester, tredjepartsrisk och tillsyn över kritiska IKT-leverantörer.
 
 Enligt [Digital Operational Resilience Act (DORA)](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554 "Regulation (EU) 2022/2554 — Digital Operational Resilience Act") är det inte en IT-KPI — det är ett strikt regulatoriskt krav. Tillsynsmyndigheter förväntar sig att bankerna bevisar att treasury-API-ytan i realtid och huvudboksdatabasen kan absorbera allvarliga-men-troliga cyberattacker, nätverksavbrott och hyperscaler-störningar utan att avbryta kritiska betalningar eller äventyra systemisk likviditet. Det kräver geo-redundanta, aktiv-aktiv multimoln-databasarkitekturer, hotdetekteringslager i realtid och automatiserad failover — synligt i förändringskostnadsraden, inte enbart i revisionsdokumentationen.
 
@@ -216,7 +230,7 @@ Treasury i realtid kan inte leva inom en valutas gräns. G-SIB-bankerna driftsä
 
 Tokeniseringen har avancerat från isolerade proof-of-concept-piloter till skalad, bankkvalitativ monetär infrastruktur. Fokus har flyttats från privata stablecoins och spekulativa kryptotillgångar till **tokeniserade insättningar hos affärsbanker** och **wholesale central bank digital currencies (wCBDC:er)** som körs på programmerbara enhetliga huvudböcker.
 
-Referensramverket är [Project Agorá](https://www.bis.org/about/bisih/topics/fmis/agora.htm "BIS Project Agorá — tokenisation of wholesale cross-border payments") — ett stort offentlig-privat samarbete sammankallat av BIS och IIF, med sju centralbanker och över 40 privata finansinstitut. Projektet undersöker hur tokeniserade insättningar hos affärsbanker integreras med tokeniserade wholesale-CBDC:er på en delad programmerbar huvudbok för att eliminera friktion i gränsöverskridande avveckling, koordinera regelefterlevnadskontroller och möjliggöra atomär finalitet dygnet runt.
+Referensramverket är [Project Agorá](https://www.bis.org/about/bisih/topics/fmis/agora.htm "BIS Project Agorá — tokenisation of wholesale cross-border payments") — ett stort offentlig-privat samarbete sammankallat av BIS och IIF, med åtta centralbanker och över 40 privata finansinstitut (enligt BIS Agorá-sidan, uppdaterad 27 maj 2026). Projektet undersöker hur tokeniserade insättningar hos affärsbanker integreras med tokeniserade wholesale-CBDC:er på en delad programmerbar huvudbok för att eliminera friktion i gränsöverskridande avveckling, koordinera regelefterlevnadskontroller och möjliggöra atomär finalitet dygnet runt.
 
 ### Tokeniseringsresan i fem steg
 
@@ -248,7 +262,7 @@ Snarare än att konkurrera på detaljhandels-rails etablerar transaktionsbankern
 
 ## Pelare 4 — Strukturerad data och bedrägeriförsvar
 
-Infrastrukturefterlevnad 2026 domineras av **övergången till strukturerad adress den 14 november 2026** som etablerats under [SWIFT Standards Release (SR) 2026](https://www.swift.com/standards/iso-20022/removal-unstructured-address "SWIFT — Removal of unstructured address, November 2026"). Från det datumet slutar CBPR+- och SEPA-betalningsnätverken att acceptera helt ostrukturerade postadressblock i fri text (`<AdrLine>`) i betalningsmeddelanden. Alla gränsöverskridande eller inhemska meddelanden som bär en ostrukturerad adress där strukturerade element förväntas kommer att fördröjas eller avvisas av nätverket.
+Infrastrukturefterlevnad 2026 domineras av **övergången till strukturerad adress den 14/15 november 2026** som etablerats under [SWIFT Standards Release (SR) 2026](https://www.swift.com/standards/iso-20022/removal-unstructured-address "SWIFT — Removal of unstructured address, November 2026"). Swift CBPR+ tar bort det ostrukturerade `<AdrLine>`-blocket från 14 november 2026; EPC SEPA-regelboken tillåter ostrukturerad adress endast till 15 november 2026. Från dessa datum slutar CBPR+- och SEPA-betalningsnätverken att acceptera helt ostrukturerade postadressblock i fri text (`<AdrLine>`) i betalningsmeddelanden. Alla gränsöverskridande eller inhemska meddelanden som bär en ostrukturerad adress där strukturerade element förväntas kommer att fördröjas eller avvisas av nätverket.
 
 De flesta institut känner till datumet. Många behandlar det som en ytlig mappningsövning vid gränssnittslagret. Verkligheten är en djupare utmaning kring datakvalitet och datastyrning. För att undvika katastrofala avvisningsfrekvenser behöver betalningsverksamheten en tydlig tvärfunktionell styrningsram.
 
@@ -266,7 +280,7 @@ Behandlat som en regelefterlevnadskostnad är det strukturerade dataprogrammet d
 
 ### Ett lagerindelat AI-bedrägeriförsvar
 
-När transaktionshastigheterna accelererar till realtid har bedrägeritekniker skalat. Aktuell forskning indikerar att deepfakes står för cirka 40 % av biometriska bedrägeriförsök, där syntetisk media i ökande grad används för att besegra röst- och ansiktsigenkänningskontroller i onboarding- och betalningsflöden.
+När transaktionshastigheterna accelererar till realtid har bedrägeritekniker skalat. [Entrusts identitetsbedrägerirapport 2026](https://www.entrust.com/resources/reports/identity-fraud-report "Entrust 2026 Identity Fraud Report") placerar deepfakes på **ett av fem biometriska bedrägeriförsök**; tidigare Entrust-analys placerade deepfakes specifikt på **40 % av video-biometriska bedrägeriförsök**. Syntetisk media används i ökande grad för att besegra röst- och ansiktsigenkänningskontroller i onboarding- och betalningsflöden.
 
 Försvaret är en **AI-bedrägerimodell i tre lager**.
 
@@ -283,7 +297,7 @@ För att exekvera över de fyra pelarna bör G-SIB- och regionalbanksledningar o
 ### Horisont 1 — Omedelbar regelefterlevnad och kärnhärdning (0-12 månader)
 
 - **Fokus.** Standardisera ISO 20022-datakvalitet och säkra grundläggande transaktionsvägar i realtid.
-- **Framgångsindikator (KPI).** Noll avvisanden av ostrukturerad adress på SWIFT och SEPA efter övergången den 14 november 2026.
+- **Framgångsindikator (KPI).** Noll avvisanden av ostrukturerad adress på SWIFT och SEPA efter övergången den 14/15 november 2026. Swift CBPR+ tar bort det ostrukturerade `<AdrLine>`-blocket från 14 november 2026; EPC SEPA-regelboken tillåter ostrukturerad adress endast till 15 november 2026.
 - **Exekutiv ägare.** Chief Operating Officer / Head of Payment Operations.
 - **Leverabeltyp.** No-regrets-åtgärd. Uppdateringar av databasschemat i kärnan och valideringsmotorn för SWIFT SR 2026.
 
@@ -301,19 +315,32 @@ För att exekvera över de fyra pelarna bör G-SIB- och regionalbanksledningar o
 - **Exekutiv ägare.** Group Treasurer / Head of Transaction Banking.
 - **Leverabeltyp.** Strategiskt optionsval. Programmerbar huvudboksinfrastruktur, likviditetsregler i smarta kontrakt, DvP/PvP-avvecklingsadaptrar.
 
+## Vad man ska göra på måndag morgon — sexpunktslista för banker
+
+Trehorisontsfärdplanen är cykelplanen. Checklistan nedan är vad en CIO, COO eller chef för transaktionsbank kan ha på bordet vid slutet av nästa arbetsvecka, oavsett hur moget resten av programmet är.
+
+1. **Inventera exponering mot ostrukturerad adress** per kanal och meddelandetyp. Varje äldre filväg, varje äldre API-endpoint, varje företags-ERP som fortfarande sänder fritext-`<AdrLine>`. Resultat: en räkning, en ägare och ett åtgärdsdatum per källa.
+2. **Etablera en risktaxonomi för agentbaserade betalningar.** Kategorisera icke-mänskligt initierade flöden efter initieringsmetod (konsumentagent, handlaragent, företagsupphandlingsagent), motpartstyp och rail. Resultat: en ensidig taxonomi och ett ärende till dirigeringsmotorn.
+3. **Definiera policygränser för delegerad befogenhet för AI-initierade betalningar.** Stegvisa gränser efter ärendestorlek, handlarkategori, geografi. Resultat: ett utkast till policy-som-kod-specifikation som OPA-motorn kan upprätthålla.
+4. **Kartlägg DORA-kritiska treasury-API:er och tredjepartsberoenden.** Vilka API:er ligger i scenarioinventeringen för allvarliga-men-troliga händelser; vilka tredje parter de är beroende av; vilka kontrakt som redan uppfyller DORA Article 28. Resultat: en rad i det kritiska IKT-tredjepartsregistret per API.
+5. **Identifiera två användningsfall för tokeniserade insättningar med mätbart treasury-värde.** Intern nettning mellan filialer och en enskild Project-Agorá-närliggande korridor är de realistiska första två. Resultat: ett storleksbestämt affärscase per fall, med ägare och 90-dagars beslutsdatum.
+6. **Skapa en kontrollram för modellrisk för bedrägeri- och agentbaserad beslutsfattning.** Kartlägg varje ML-modell i bedrägeri- och agentbaserade betalningsvägar mot SR 11-7- / PRA SS1/23-förväntningarna: dokumenterat syfte, datalinje, förklarbarhet, övervakning, åsidosättandeväg. Resultat: en ensidig MRM-kontrollmatris per modell.
+
+Listans poäng är inte att något av detta är nyhet. Poängen är att den är liten nog att börja denna vecka, observerbar nog att spåra vid nästa ledningskommitté och strukturellt anpassad till de fyra pelarna så att det tidiga arbetet matar programmet snarare än konkurrerar med det.
+
 ## FAQ
 
 **Kommer agentbaserad handel verkligen att nå 3-5 biljoner USD senast 2030?**
 McKinseys baslinje pekar på 5 biljoner USD i agentbaserad handelsförsäljning senast 2030, med ett intervall av oberoende prognoser som klustras mellan 3 och 5 biljoner USD. Variansen återspeglar hur aggressivt handlare levererar maskinläsbara kassa-API:er och hur snabbt bankerna låter agenter transaktera under SCA-delegering — flaskhalsen ligger på bank- och handlarsidan, inte på agentkapacitetssidan.
 
-**Gäller SWIFT-övergången den 14 november 2026 även inhemska SEPA-flöden?**
-Ja. Kravet på strukturerad adress gäller CBPR+-gränsöverskridande och SEPA-betalningsmeddelanden. Banker som driver båda rails behöver ett enda kanoniskt adressschema uppströms SWIFT-gränssnittet, inte två parallella mappningar.
+**Gäller SWIFT-övergången den 14/15 november 2026 även inhemska SEPA-flöden?**
+Ja. Swift CBPR+ tar bort det ostrukturerade `<AdrLine>`-blocket från 14 november 2026; EPC SEPA-regelboken tillåter ostrukturerad adress endast till 15 november 2026. Kravet på strukturerad adress gäller CBPR+-gränsöverskridande och SEPA-betalningsmeddelanden. Banker som driver båda rails behöver ett enda kanoniskt adressschema uppströms SWIFT-gränssnittet, inte två parallella mappningar.
 
 **Är en tokeniserad insättning samma sak som en stablecoin?**
 Nej. En tokeniserad insättning är en oprioriterad skuld på en reglerad banks balansräkning, med samma insättningsförsäkringsskydd som en traditionell insättning. En stablecoin är typiskt ett fullt reserverat instrument utfärdat av ett icke-bankinstitut, utan kreditskapande kapacitet. Project Agorás design förutsätter att tokeniserade insättningar samexisterar med wholesale-CBDC:er på en delad programmerbar huvudbok, stablecoins ingår inte i wholesale-avvecklingsbenet.
 
 **Hur förhåller sig Project Agorá till befintliga wCBDC-piloter?**
-Agorá är den integrerande ramen. Nationella wCBDC-experiment täcker centralbankspengabenet, Agorá tar in tokeniserade affärsbanksinsättningar på samma programmerbara huvudbok så att gränsöverskridande avveckling är atomär över båda pengatyperna. De sju deltagande centralbankerna och 40+ privata instituten gör det till den största offentlig-privata designarenan för wholesale-arkitekturen för tokeniserade pengar.
+Agorá är den integrerande ramen. Nationella wCBDC-experiment täcker centralbankspengabenet, Agorá tar in tokeniserade affärsbanksinsättningar på samma programmerbara huvudbok så att gränsöverskridande avveckling är atomär över båda pengatyperna. De åtta deltagande centralbankerna och 40+ privata instituten gör det till den största offentlig-privata designarenan för wholesale-arkitekturen för tokeniserade pengar.
 
 **Vad är den minsta DORA-efterlevnadshållningen för ett TaaS-API?**
 Geo-redundant aktiv-aktiv driftsättning, dokumenterade allvarliga-men-troliga cyberscenarier med utpekade ägare under SM&CR (UK), och en testad failover som inte avbryter kritiska betalningar. Utan det är TaaS-produkten en regulatorisk skuld innan den är en intäktsrad.

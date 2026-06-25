@@ -91,13 +91,13 @@ site_software: "Static Site Generator, Rust"
 
 <!-- lead-start -->
 <aside class="post-lead" aria-label="Ringkasan artikel">
-<p class="post-lead-tldr"><strong>TL;DR.</strong> Lanskap pembayaran 2026 telah berpindah dari migrasi messaging menuju model operasi multi-dimensi di mana risiko dan pendapatan ditentukan oleh eksekusi real-time. Artikel ini mensintesis outlook 2026 dari J.P. Morgan, Global Payments, HSBC, dan Payments Association ke dalam rencana operasi G-SIB empat pilar, yang mencakup perdagangan agentik yang diinisiasi model, API tresuri selalu-aktif, buku besar terpadu tertokenisasi di bawah BIS Project Agorá, dan tenggat alamat terstruktur SWIFT 14 November 2026.</p>
+<p class="post-lead-tldr"><strong>TL;DR.</strong> Lanskap pembayaran 2026 telah berpindah dari migrasi messaging menuju model operasi multi-dimensi di mana risiko dan pendapatan ditentukan oleh eksekusi real-time. Artikel ini mensintesis outlook 2026 dari J.P. Morgan, Global Payments, HSBC, dan Payments Association ke dalam rencana operasi G-SIB empat pilar, yang mencakup perdagangan agentik yang diinisiasi model, API tresuri selalu-aktif, buku besar terpadu tertokenisasi di bawah BIS Project Agorá, dan tenggat alamat terstruktur SWIFT dan SEPA 14/15 November 2026 (Swift CBPR+ menghapus blok `<AdrLine>` tidak terstruktur mulai 14 November 2026; aturan EPC SEPA hanya memperbolehkan alamat tidak terstruktur sampai 15 November 2026).</p>
 <p class="post-lead-heading"><strong>Poin-poin utama</strong></p>
 <ul class="post-lead-takeaways">
   <li><strong>Perdagangan agentik membuka batas tanggung jawab yang didelegasikan.</strong> Agen AI otonom diproyeksikan memediasi perdagangan tahunan senilai $3-$5 triliun pada 2030. Bank harus mendefinisikan gatekeeping MCP, delegasi SCA di bawah PSD3/PSR, dan kepemilikan KYC/AML di dalam rantai pembayaran multi-agen.</li>
-  <li><strong>Likuiditas selalu-aktif kini menjadi baseline operasional dan regulatori.</strong> API tresuri 24/7 dan akun virtual meminimalkan kas terjebak dan meningkatkan ambang batas ketahanan. Di bawah DORA, produk likuiditas real-time harus didukung oleh infrastruktur aktif-aktif yang terdistribusi secara geografis dengan ketersediaan 99,999%.</li>
+  <li><strong>Likuiditas selalu-aktif kini menjadi baseline operasional dan regulatori.</strong> API tresuri 24/7 dan akun virtual meminimalkan kas terjebak dan meningkatkan ambang batas ketahanan. Untuk API treasury real-time yang sistemik, ketersediaan lima sembilan (99,999 %) menjadi target rekayasa internal yang ditetapkan bank sendiri untuk menunjukkan ketahanan setara DORA kepada pengawas. DORA sendiri tidak menetapkan ambang lima sembilan universal; ia mencakup manajemen risiko TIK, pelaporan insiden, pengujian ketahanan, risiko pihak ketiga, dan pengawasan penyedia TIK kritis.</li>
   <li><strong>Tokenisasi telah naik kelas ke buku besar terpadu yang teregulasi.</strong> Project Agorá adalah kerangka kerja publik-privat terbesar untuk deposit tertokenisasi bank komersial dan cadangan bank sentral. Bank memerlukan perjalanan tokenisasi lima langkah, dengan perlakuan prudensial yang eksplisit.</li>
-  <li><strong>Peralihan alamat terstruktur 14 November 2026 memiliki tanggal yang tegas.</strong> Field alamat pos tidak terstruktur dalam pesan CBPR+ dan SEPA akan memicu penolakan langsung. Tata kelola data yang bersih lintas tim produk, teknologi, dan kepatuhan diperlukan.</li>
+  <li><strong>Peralihan alamat terstruktur 14/15 November 2026 memiliki tanggal yang tegas.</strong> Swift CBPR+ menghapus blok `<AdrLine>` tidak terstruktur mulai 14 November 2026; aturan EPC SEPA hanya memperbolehkan alamat tidak terstruktur sampai 15 November 2026. Keduanya memicu penolakan setelah peralihan. Tata kelola data yang bersih lintas tim produk, teknologi, dan kepatuhan diperlukan.</li>
 </ul>
 <p class="post-lead-related"><strong>Bacaan terkait:</strong> <a href="https://sebastienrousseau.com/2026-06-23-iso-20022-pain001-programmable-liquidity-autonomic-treasury-2026">From Pain.001 to Programmable Liquidity: ISO 20022 as the Autonomic Nervous System of Treasury in 2026</a>, <a href="https://sebastienrousseau.com/2026-06-24-cross-border-iso-20022-open-finance-tokenised-deposits-treasury-2026">Cross-Border 2026: ISO 20022, Open Finance and Tokenised Deposits in Corporate Treasury</a>, <a href="https://sebastienrousseau.com/2026-06-25-quantum-dawn-cib-kyberlib-quantum-resilient-payments-stack-2026">Quantum Dawn for CIB: From KyberLib to a Quantum-Resilient Payments Stack</a>.</p>
 </aside>
@@ -112,6 +112,20 @@ Tiga kekuatan menentukan siklus ini, dan masing-masing memetakan langsung ke kep
 - **Eksekusi real-time** — kecepatan modal, dengan konsekuensi perubahan pada manajemen likuiditas, risiko kredit, ketahanan operasional, dan pertahanan penipuan.
 
 Taruhan keuangannya material. Penipuan meningkat dalam kecepatan dan kecanggihan; tenggat regulasi bersifat tegas; dan bank yang secara proaktif memodernisasi sistem inti mereka membuka peluang pendapatan biaya yang substansial. Biaya dari ketidakaktifan adalah sebaliknya: penolakan transaksi langsung, hambatan operasional, sanksi regulatori, dan erosi pangsa pasar yang cepat.
+
+## Tangga kepastian — apa yang bertanggal, diatur, atau diprediksi
+
+Tidak setiap poin dalam laporan ini membawa kepastian yang sama. Pertanyaan tingkat dewan adalah delta mana yang merupakan tenggat, mana yang merupakan ekspektasi pengawas, dan mana yang masih proyeksi pasar — karena jawabannya mengubah percakapan anggaran.
+
+| Kategori | Contoh |
+| --- | --- |
+| **Tenggat tegas** | Peralihan alamat terstruktur Swift CBPR+ (14 November 2026); aturan EPC SEPA (15 November 2026) |
+| **Kewajiban regulatori** | Manajemen risiko TIK DORA + pengujian ketahanan + pengawasan pihak ketiga (UE); delegasi SCA di bawah PSD3/PSR; MRM di bawah SR 11-7 + PRA SS1/23 |
+| **Pergeseran pasar berprobabilitas tinggi** | API treasury real-time, pertahanan penipuan berbasis AI, likuiditas berbasis API, penipuan biometrik berbasis deepfake |
+| **Opsi strategis** | Deposit tertokenisasi, buku besar terpadu di bawah Project Agorá, koridor perdagangan agentik, FX berkelanjutan (Wire 365) |
+| **Prakiraan** | Arus tahunan perdagangan agentik `$3-$5 trillion` pada 2030 (baseline McKinsey) |
+
+Perlakukan dua baris teratas sebagai fakta kepatuhan yang menggerakkan baris anggaran apakah bank menangkap upside atau tidak. Perlakukan dua baris bawah sebagai opsi strategis — keyakinan tinggi pada arah, tetapi waktu eksekusi adalah pilihan dewan, bukan entri kalender regulator.
 
 ## Konvergensi otoritas pembayaran global
 
@@ -204,7 +218,7 @@ Untuk menangkap nilai tersebut, bank mengirimkan **produk API Treasury-as-a-Serv
 
 ### Ketahanan operasional dan DORA
 
-Menawarkan likuiditas selalu-aktif mengubah profil risiko bank. Platform harus mempertahankan **ketersediaan operasional 99,999%** di bawah beban real-time berkelanjutan.
+Menawarkan likuiditas selalu-aktif mengubah profil risiko bank. Untuk API treasury real-time yang sistemik, ketersediaan lima sembilan (99,999 %) menjadi target rekayasa internal yang ditetapkan bank sendiri untuk menunjukkan ketahanan setara DORA kepada pengawas. DORA sendiri tidak menetapkan ambang lima sembilan universal; ia mencakup manajemen risiko TIK, pelaporan insiden, pengujian ketahanan, risiko pihak ketiga, dan pengawasan penyedia TIK kritis.
 
 Di bawah [Digital Operational Resilience Act (DORA)](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554 "Regulation (EU) 2022/2554 — Digital Operational Resilience Act"), itu bukan KPI IT — itu adalah persyaratan regulatori yang ketat. Regulator mengharapkan bank membuktikan bahwa permukaan API tresuri real-time dan basis data buku besar dapat menyerap serangan siber severe-but-plausible, pemadaman jaringan, dan gangguan hyperscaler tanpa mengganggu pembayaran kritis atau mengkompromikan likuiditas sistemik. Itu memerlukan arsitektur basis data multi-cloud aktif-aktif yang terdistribusi secara geografis, lapisan deteksi ancaman real-time, dan failover otomatis — terlihat dalam baris biaya perubahan, bukan hanya dossier audit.
 
@@ -216,7 +230,7 @@ Tresuri real-time tidak dapat hidup di dalam batas mata uang tunggal. G-SIB seda
 
 Tokenisasi telah naik kelas dari pilot proof-of-concept terisolasi menuju infrastruktur moneter tingkat-bank yang berskala. Fokus telah bergeser dari stablecoin privat dan kriptoaset spekulatif menuju **deposit tertokenisasi bank komersial** dan **mata uang digital bank sentral grosir (wCBDC)** yang berjalan di buku besar terpadu programabel.
 
-Kerangka kerja rujukannya adalah [Project Agorá](https://www.bis.org/about/bisih/topics/fmis/agora.htm "BIS Project Agorá — tokenisation of wholesale cross-border payments") — kolaborasi publik-privat utama yang dikonvensi oleh BIS dan IIF, melibatkan tujuh bank sentral dan lebih dari 40 institusi keuangan privat. Proyek tersebut mengeksplorasi bagaimana deposit tertokenisasi bank komersial berintegrasi dengan wCBDC tertokenisasi pada buku besar programabel bersama untuk menghilangkan friksi penyelesaian lintas-batas, mengoordinasi pemeriksaan kepatuhan, dan memungkinkan finalitas atomik 24/7.
+Kerangka kerja rujukannya adalah [Project Agorá](https://www.bis.org/about/bisih/topics/fmis/agora.htm "BIS Project Agorá — tokenisation of wholesale cross-border payments") — kolaborasi publik-privat utama yang dikonvensi oleh BIS dan IIF, melibatkan **delapan bank sentral** dan lebih dari 40 institusi keuangan privat (menurut halaman BIS Agorá, diperbarui 27 Mei 2026). Proyek tersebut mengeksplorasi bagaimana deposit tertokenisasi bank komersial berintegrasi dengan wCBDC tertokenisasi pada buku besar programabel bersama untuk menghilangkan friksi penyelesaian lintas-batas, mengoordinasi pemeriksaan kepatuhan, dan memungkinkan finalitas atomik 24/7.
 
 ### Perjalanan tokenisasi lima langkah
 
@@ -248,7 +262,7 @@ Daripada bersaing pada rel ritel, bank transaksi sedang mendirikan custody, mene
 
 ## Pilar 4 — Data terstruktur dan pertahanan penipuan
 
-Kepatuhan infrastruktur pada 2026 didominasi oleh **peralihan alamat terstruktur 14 November 2026** yang ditetapkan di bawah [SWIFT Standards Release (SR) 2026](https://www.swift.com/standards/iso-20022/removal-unstructured-address "SWIFT — Removal of unstructured address, November 2026"). Mulai dari tanggal tersebut, jaringan pembayaran CBPR+ dan SEPA berhenti menerima blok alamat pos teks-bebas yang sepenuhnya tidak terstruktur (`<AdrLine>`) dalam pesan pembayaran. Setiap pesan lintas-batas atau domestik yang membawa alamat tidak terstruktur di mana elemen terstruktur diharapkan akan tertunda atau ditolak oleh jaringan.
+Kepatuhan infrastruktur pada 2026 didominasi oleh **peralihan alamat terstruktur 14/15 November 2026** — dua tenggat yang berdekatan dan bersama-sama menutup jalur alamat tidak terstruktur lintas rel lintas-batas dan intra-UE. Swift CBPR+ menghapus blok `<AdrLine>` tidak terstruktur mulai **14 November 2026** di bawah [SWIFT Standards Release (SR) 2026](https://www.swift.com/standards/iso-20022/removal-unstructured-address "SWIFT — Removal of unstructured address, November 2026"); aturan EPC SEPA hanya memperbolehkan alamat tidak terstruktur sampai **15 November 2026**. Setelah peralihan, setiap pesan lintas-batas atau domestik yang membawa alamat tidak terstruktur di mana elemen terstruktur diharapkan akan tertunda atau ditolak oleh jaringan.
 
 Sebagian besar institusi mengetahui tanggalnya. Banyak yang memperlakukannya sebagai latihan pemetaan superfisial di lapisan antarmuka. Realitasnya adalah tantangan kualitas-data dan tata kelola-data yang lebih dalam. Untuk menghindari tingkat penolakan yang katastrofis, operasi pembayaran memerlukan kerangka tata kelola lintas-fungsi yang jelas.
 
@@ -266,7 +280,7 @@ Diperlakukan sebagai biaya kepatuhan, program data-terstruktur mahal. Diperlakuk
 
 ### Pertahanan penipuan AI berlapis
 
-Saat kecepatan transaksi mempercepat ke real-time, teknik penipuan telah berskala. Riset terkini menunjukkan deepfake menyumbang sekitar 40% upaya penipuan biometrik, dengan media sintetis semakin digunakan untuk mengalahkan kontrol pengenalan suara dan wajah dalam alur onboarding dan pembayaran.
+Saat kecepatan transaksi mempercepat ke real-time, teknik penipuan telah berskala. [Laporan Penipuan Identitas 2026 Entrust](https://www.entrust.com/resources/reports/identity-fraud-report "Entrust 2026 Identity Fraud Report") menempatkan deepfake pada **satu dari lima upaya penipuan biometrik**; analisis Entrust sebelumnya menempatkan deepfake secara spesifik pada **40 % upaya penipuan biometrik video**. Bagaimanapun pembingkaiannya, media sintetis kini merupakan kanal material untuk mengalahkan kontrol pengenalan suara dan wajah dalam alur onboarding dan pembayaran.
 
 Pertahanannya adalah **model penipuan AI tiga-lapisan**.
 
@@ -283,7 +297,7 @@ Untuk mengeksekusi di seluruh empat pilar, badan manajemen G-SIB dan bank region
 ### Horizon 1 — Kepatuhan langsung dan pengerasan inti (0-12 bulan)
 
 - **Fokus.** Menstandarisasi kualitas data ISO 20022 dan mengamankan jalur transaksi real-time dasar.
-- **Indikator keberhasilan (KPI).** Nol penolakan alamat tidak terstruktur pada SWIFT dan SEPA setelah peralihan 14 November 2026.
+- **Indikator keberhasilan (KPI).** Nol penolakan alamat tidak terstruktur pada SWIFT dan SEPA setelah peralihan 14/15 November 2026.
 - **Pemilik eksekutif.** Chief Operating Officer / Head of Payment Operations.
 - **Tipe deliverable.** Langkah tanpa-penyesalan. Pembaruan skema basis data inti dan mesin validasi SWIFT SR 2026.
 
@@ -301,19 +315,32 @@ Untuk mengeksekusi di seluruh empat pilar, badan manajemen G-SIB dan bank region
 - **Pemilik eksekutif.** Group Treasurer / Head of Transaction Banking.
 - **Tipe deliverable.** Opsi strategis. Infrastruktur buku besar programabel, aturan likuiditas smart-contract, adapter penyelesaian DvP/PvP.
 
+## Apa yang harus dilakukan Senin pagi — daftar periksa enam poin untuk bank
+
+Peta jalan tiga-horizon adalah rencana siklus. Daftar periksa di bawah ini adalah apa yang dapat dimiliki CIO, COO, atau Head of Transaction Banking di atas meja pada akhir pekan kerja berikutnya, terlepas dari seberapa matang sisa programnya.
+
+1. **Inventarisasi paparan alamat tidak terstruktur** berdasarkan kanal dan tipe pesan. Setiap rute file warisan, setiap endpoint API warisan, setiap ERP korporat yang masih memancarkan `<AdrLine>` teks-bebas. Output: hitungan, pemilik, dan tanggal remediasi per sumber.
+2. **Tetapkan taksonomi risiko pembayaran agentik.** Kategorisasi arus yang tidak diinisiasi manusia berdasarkan metode inisiasi (agen konsumen, agen pedagang, agen pengadaan korporat), tipe lawan transaksi, dan rel. Output: taksonomi satu halaman dan tiket mesin perutean.
+3. **Definisikan batas kebijakan otoritas terdelegasi untuk pembayaran yang diinisiasi-AI.** Batas berjenjang berdasarkan ukuran tiket, kategori pedagang, geografi. Output: spesifikasi kebijakan-sebagai-kode draf yang dapat ditegakkan mesin OPA.
+4. **Petakan API treasury yang kritis-DORA dan dependensi pihak ketiga.** API mana yang berada dalam inventaris skenario severe-but-plausible; pihak ketiga mana yang menjadi sandarannya; kontrak mana yang sudah memenuhi DORA Article 28. Output: baris register pihak ketiga TIK kritis per API.
+5. **Identifikasi dua kasus penggunaan deposit tertokenisasi dengan nilai treasury yang dapat diukur.** Netting lintas-cabang internal dan satu koridor yang berdekatan dengan Project Agorá adalah dua yang realistis pertama. Output: kasus bisnis berukuran untuk masing-masing, dengan pemilik dan tanggal keputusan 90 hari.
+6. **Buat kerangka kontrol risiko model untuk penipuan dan pengambilan keputusan agentik.** Petakan setiap model ML dalam jalur penipuan dan pembayaran agentik ke ekspektasi SR 11-7 / PRA SS1/23: tujuan terdokumentasi, lineage data, keterjelasan, pemantauan, jalur override. Output: matriks kontrol MRM satu halaman per model.
+
+Poin dari daftar ini bukan bahwa salah satunya baru. Poinnya adalah bahwa ia cukup kecil untuk dimulai minggu ini, cukup teramati untuk dilacak pada komite eksekutif berikutnya, dan secara struktural selaras dengan empat pilar sehingga pekerjaan awal memberi makan program daripada bersaing dengannya.
+
 ## FAQ
 
 **Akankah perdagangan agentik benar-benar mencapai $3-$5 triliun pada 2030?**
 Baseline McKinsey menunjukkan $5 triliun penjualan perdagangan agentik pada 2030, dengan rentang prakiraan independen mengelompok antara $3 triliun dan $5 triliun. Varians mencerminkan seberapa agresif pedagang mengirimkan API checkout yang dapat dibaca mesin dan seberapa cepat bank membiarkan agen bertransaksi di bawah delegasi SCA — kemacetannya ada di sisi bank dan pedagang, bukan di sisi kapabilitas agen.
 
-**Apakah peralihan SWIFT 14 November 2026 berlaku untuk arus SEPA domestik juga?**
+**Apakah peralihan 14/15 November 2026 berlaku untuk arus SEPA domestik juga?**
 Ya. Persyaratan alamat terstruktur berlaku untuk lintas-batas CBPR+ dan untuk pesan pembayaran SEPA. Bank yang menjalankan kedua rel memerlukan skema alamat kanonis tunggal di hulu antarmuka SWIFT, bukan dua pemetaan paralel.
 
 **Apakah deposit tertokenisasi sama dengan stablecoin?**
 Tidak. Deposit tertokenisasi adalah liabilitas tanpa jaminan pada neraca bank teregulasi, dengan cakupan asuransi-deposit yang sama dengan deposit tradisional. Stablecoin biasanya merupakan instrumen dengan cadangan-penuh yang diterbitkan oleh non-bank, tanpa kapasitas penciptaan-kredit. Desain Project Agorá mengasumsikan deposit tertokenisasi duduk bersama wCBDC pada buku besar programabel bersama; stablecoin tidak tampil di leg penyelesaian grosir.
 
 **Bagaimana Project Agorá berhubungan dengan pilot wCBDC yang ada?**
-Agorá adalah kerangka integrasi. Eksperimen wCBDC nasional mencakup leg uang-bank-sentral; Agorá membawa deposit komersial tertokenisasi ke buku besar programabel yang sama sehingga penyelesaian lintas-batas bersifat atomik di kedua jenis uang. Tujuh bank sentral yang berpartisipasi dan 40+ institusi privat menjadikannya lahan desain publik-privat terbesar untuk arsitektur uang tertokenisasi grosir.
+Agorá adalah kerangka integrasi. Eksperimen wCBDC nasional mencakup leg uang-bank-sentral; Agorá membawa deposit komersial tertokenisasi ke buku besar programabel yang sama sehingga penyelesaian lintas-batas bersifat atomik di kedua jenis uang. Delapan bank sentral yang berpartisipasi dan 40+ institusi privat menjadikannya lahan desain publik-privat terbesar untuk arsitektur uang tertokenisasi grosir.
 
 **Apa postur kepatuhan DORA minimum untuk API TaaS?**
 Penyebaran aktif-aktif yang terdistribusi secara geografis, skenario siber severe-but-plausible terdokumentasi dengan pemilik yang dinamai di bawah SM&CR (UK), dan failover yang teruji yang tidak mengganggu pembayaran kritis. Tanpa itu, produk TaaS adalah liabilitas regulatori sebelum menjadi baris pendapatan.
