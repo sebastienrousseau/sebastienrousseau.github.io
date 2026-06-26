@@ -1,4 +1,4 @@
-.PHONY: build serve regenerate audit clean test lint coverage publish-today
+.PHONY: build serve regenerate audit clean test lint typecheck coverage publish-today
 
 # Default target.
 build:
@@ -54,6 +54,10 @@ test:
 lint:
 	@ruff check scripts/ tests/
 	@python3 scripts/dev/check_naming_conventions.py
+
+# Strict mypy over the strict-clean module tier (ratchets outward).
+typecheck:
+	@bash scripts/typecheck.sh
 
 # Unified coverage report — runs every CLI in scripts/ under
 # coverage.py, then runs the pytest suite under the same data file,

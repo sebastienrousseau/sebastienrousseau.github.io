@@ -39,8 +39,8 @@ in `project-docs/audits/baseline-2026-06.md` (Phase −1) via `make metrics`.
 - **0.1b (follow-up)** Apply the same `--dir` safety to the listing writers, remove the `perl -i` layout hack in `make regenerate` by emitting final markup from `gen_layouts.py`, and add a `git diff --exit-code` source-cleanliness guard across all generators.
 
 ## Phase 1 — Make quality gates real & complete
-- **1.1** Promote `tests/validation/` (CSP, hreflang, i18n parity/strings/labels/author, lang-leakage, RTL, sitemap, JSON-LD) to a required CI job.
-- **1.2** Introduce `mypy` (strict on `scripts/lib`, `postbuild_lib`, `build_translations`; ratchet elsewhere). Makes the existing "handled by mypy" comment true.
+- **1.1 — DONE (already gated).** `tests/validation/` (CSP, hreflang, i18n parity/strings/labels/author, lang-leakage, RTL, sitemap, JSON-LD) already gates: `build.sh` runs all 13 under `set -euo pipefail`, and `build.sh` is the CI build step, so a validation failure fails the build job. No new gate needed.
+- **1.2 — DONE (initial tier).** `mypy` (`check_untyped_defs`, `disallow_incomplete_defs`) now gates the strict-clean tier in CI via `scripts/typecheck.sh`: `lib`, `security`, `editorial`, `dev`, `i18n`, `build_translations` (26 files, 0 errors). **Ratchet remaining:** `postbuild_lib` (~74), then `postbuild` / `generators` / `seo_and_audit` (~1 each). Makes the "handled by mypy" comment true.
 - **1.3** Expand coverage past the 2 gated modules to repo-wide ≥90% / libs 100%; prioritise the 19 untested modules by blast radius.
 - **1.4** Golden-file snapshot tests per generator (defends against the "gen_papers silently dropped an entry" class).
 

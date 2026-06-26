@@ -70,6 +70,7 @@ jobs:
       - name: Install Python dev tooling
         run: |
           pip install --quiet 'ruff==0.15.9' pytest radon pytest-cov   # ADR-0002
+          pip install --quiet 'mypy==2.1.0' 'types-PyYAML==6.0.12.20260518'   # ADR-0002
           pip install --quiet -r requirements.txt
 
       - name: Vulnerability scan (pip-audit)
@@ -83,6 +84,11 @@ jobs:
 
       - name: Lint (ruff)
         run: ruff check scripts/ tests/
+
+      - name: Type check (mypy strict tier)
+        # Strict mypy over the strict-clean module tier; ratchets outward as
+        # modules are typed. See scripts/typecheck.sh + improvement-plan Phase 1.2.
+        run: bash scripts/typecheck.sh
 
       - name: Naming conventions check
         run: python3 scripts/dev/check_naming_conventions.py
