@@ -45,8 +45,8 @@ in `project-docs/audits/baseline-2026-06.md` (Phase −1) via `make metrics`.
 - **1.4** Golden-file snapshot tests per generator (defends against the "gen_papers silently dropped an entry" class).
 
 ## Phase 2 — Security & supply-chain to 10/10
-- **2.1** Generate the CycloneDX SBOM that `security.md` already promises (`public/sbom.cdx.json`), validated in CI.
-- **2.2** SLSA build-provenance attestation for the deployed artifact + SBOM.
+- **2.1 — DONE.** CycloneDX SBOM generated + validated in CI (`scripts/security/gen-sbom.sh` → `public/sbom.cdx.json`); `security.md` corrected. Follow-up: hash-pinned deps for per-component hashes. (ADR-0004)
+- **2.2 — DONE.** SLSA build-provenance attestation on the deployed SBOM via `actions/attest-build-provenance` (main only); verifiable with `gh attestation verify`. (ADR-0004)
 - **2.3** OpenSSF Scorecard (≥8), CodeQL (Python/JS), secret scanning + push protection.
 - **2.4** CSP/SRI verification test (no `unsafe-inline`; every inline JSON-LD hash present; every asset SRI matches).
 

@@ -1,4 +1,4 @@
-.PHONY: build serve regenerate audit clean test lint typecheck coverage publish-today
+.PHONY: build serve regenerate audit clean test lint typecheck sbom coverage publish-today
 
 # Default target.
 build:
@@ -58,6 +58,10 @@ lint:
 # Strict mypy over the strict-clean module tier (ratchets outward).
 typecheck:
 	@bash scripts/typecheck.sh
+
+# Generate + validate the CycloneDX SBOM (public/sbom.cdx.json).
+sbom:
+	@bash scripts/security/gen-sbom.sh public/sbom.cdx.json
 
 # Unified coverage report — runs every CLI in scripts/ under
 # coverage.py, then runs the pytest suite under the same data file,
