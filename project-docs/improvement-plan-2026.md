@@ -47,8 +47,8 @@ in `project-docs/audits/baseline-2026-06.md` (Phase −1) via `make metrics`.
 ## Phase 2 — Security & supply-chain to 10/10
 - **2.1 — DONE.** CycloneDX SBOM generated + validated in CI (`scripts/security/gen-sbom.sh` → `public/sbom.cdx.json`); `security.md` corrected. Follow-up: hash-pinned deps for per-component hashes. (ADR-0004)
 - **2.2 — DONE.** SLSA build-provenance attestation on the deployed SBOM via `actions/attest-build-provenance` (main only); verifiable with `gh attestation verify`. (ADR-0004)
-- **2.3** OpenSSF Scorecard (≥8), CodeQL (Python/JS), secret scanning + push protection.
-- **2.4** CSP/SRI verification test (no `unsafe-inline`; every inline JSON-LD hash present; every asset SRI matches).
+- **2.3 — DONE.** CodeQL (`security-and-quality`, Python + JS, path-filtered) + OpenSSF Scorecard (weekly + push to main) workflows added; secret scanning + push protection enabled repo-wide. (ADR-0005) Follow-up: pin actions by SHA to lift the Scorecard score.
+- **2.4 — DONE.** CSP enforcement was already covered by `test_csp_strict.py` (no `unsafe-inline`, inline JSON-LD hashes present); added the missing **SRI correctness** gate `test_sri_integrity.py` (recomputes every integrity hash from file bytes), wired into `build.sh`. (ADR-0005)
 
 ## Phase 3 — Performance / speed to 10/10
 - **3.1** Incremental builds (content-hash skip of unchanged pages; model on the pa11y hash-cache). Target <2 min for a 1-article change.

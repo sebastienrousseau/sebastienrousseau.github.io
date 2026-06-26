@@ -223,6 +223,10 @@ We secure the supply chain using signed git commits and branch protection rules.
 | **CycloneDX SBOM** | Published on every CI deploy at `/sbom.cdx.json` (resolved runtime deps, validated in CI) — ADR-0004 |.
 | **SLSA build provenance** | `actions/attest-build-provenance` attests the deployed SBOM; verify with `gh attestation verify` — ADR-0004 |.
 | **Sigstore attestation** | Optional pass at `scripts/security/sigstore_sign.py` to sign files |.
+| **Static analysis (CodeQL)** | `security-and-quality` queries over Python + JS on code-touching PRs and weekly — ADR-0005 |.
+| **Supply-chain score (OpenSSF Scorecard)** | Weekly + on push to `main`, published to the public Scorecard API — ADR-0005 |.
+| **Secret scanning + push protection** | Enabled repo-wide; push protection blocks commits containing detected secrets |.
+| **SRI correctness gate** | `tests/validation/test_sri_integrity.py` recomputes every integrity hash from file bytes — ADR-0005 |.
 | **Dependency review** | Dependabot watches the requirements file for security warnings |.
 
 ---
