@@ -71,6 +71,7 @@ jobs:
         run: |
           pip install --quiet 'ruff==0.15.9' pytest radon pytest-cov   # ADR-0002
           pip install --quiet 'mypy==2.1.0' 'types-PyYAML==6.0.12.20260518'   # ADR-0002
+          pip install --quiet 'cyclonedx-bom==7.3.0'   # SBOM (ADR-0004)
           pip install --quiet -r requirements.txt
 
       - name: Vulnerability scan (pip-audit)
@@ -148,6 +149,11 @@ jobs:
 
       - name: JSON-LD + feed validation
         run: python3 scripts/seo_and_audit/validate_jsonld.py --base-dir public
+
+      - name: Generate + validate SBOM (CycloneDX)
+        # Emits public/sbom.cdx.json (resolved runtime deps) and ships it in the
+        # build artifact → deploy. ADR-0004 / improvement-plan Phase 2.1.
+        run: bash scripts/security/gen-sbom.sh public/sbom.cdx.json
 
       - name: Restore pa11y hash cache (read only)
         # Restore the cache so partition can decide what's already cached.
@@ -304,6 +310,7 @@ jobs:
       contents: read
       pages: write
       id-token: write
+      attestations: write   # SLSA build provenance for the SBOM (ADR-0004)
     # The `github-pages` environment has "Deployment branches: main only"
     # protection. Applying it to the whole job blocks every PR run at the
     # 2-second mark before any step executes. Bind it only when this run
@@ -407,6 +414,16 @@ jobs:
         run: lhci autorun
         env:
           LHCI_BUILD_CONTEXT__CURRENT_HASH: ${{ github.sha }}
+
+      - name: Attest SBOM build provenance
+        # SLSA build-provenance attestation for the deployed SBOM (main only).
+        # Verifiable with: gh attestation verify public/sbom.cdx.json \
+        #   --repo sebastienrousseau/sebastienrousseau.github.io
+        # ADR-0004 / improvement-plan Phase 2.2.
+        if: github.ref == 'refs/heads/main'
+        uses: actions/attest-build-provenance@v4
+        with:
+          subject-path: public/sbom.cdx.json
 
       - name: Prepare CNAME and .nojekyll
         if: github.ref == 'refs/heads/main'
