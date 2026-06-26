@@ -22,6 +22,7 @@ jobs:
   build:
     name: Build + smoke tests + partition
     runs-on: ubuntu-latest
+    timeout-minutes: 90
     outputs:
       pa11y-needed: ${{ steps.partition.outputs.pa11y-needed }}
     steps:
@@ -45,14 +46,14 @@ jobs:
       - name: Install Static Site Generator (ssg)
         run: |
           if ! command -v ssg >/dev/null 2>&1; then
-            cargo install ssg --locked
+            cargo install ssg --locked --version 0.0.44   # ADR-0002
           fi
 
       - name: Install wasm-pack + wasm32 target
         run: |
           rustup target add wasm32-unknown-unknown
           if ! command -v wasm-pack >/dev/null 2>&1; then
-            curl -sSf https://rustwasm.github.io/wasm-pack/installer/init.sh | sh
+            cargo install wasm-pack --version 0.15.0 --locked   # ADR-0002 (pinned; cached in ~/.cargo/bin)
           fi
 
       - name: Setup Python
@@ -68,7 +69,7 @@ jobs:
 
       - name: Install Python dev tooling
         run: |
-          pip install --quiet 'ruff==0.15.*' pytest radon pytest-cov
+          pip install --quiet 'ruff==0.15.9' pytest radon pytest-cov   # ADR-0002
           pip install --quiet -r requirements.txt
 
       - name: Vulnerability scan (pip-audit)
@@ -229,7 +230,7 @@ jobs:
         # precision disagreed with current pa11y/axe by ~0.2 ratio
         # points, masking AAA-passing colour pairs as failures on
         # certain warm bg tones (--paper-card on /<lang>/<topics>/).
-        run: npm install -g pa11y-ci@^4
+        run: npm install -g pa11y-ci@4.1.1   # ADR-0002
 
       - name: Serve public/
         run: |
@@ -292,6 +293,7 @@ jobs:
     needs: [build, pa11y]
     if: always() && needs.build.result == 'success' && (needs.pa11y.result == 'success' || needs.pa11y.result == 'skipped')
     runs-on: ubuntu-latest
+    timeout-minutes: 45
     permissions:
       contents: read
       pages: write
@@ -317,7 +319,7 @@ jobs:
           node-version: "22"
 
       - name: Install Lighthouse CI
-        run: npm install -g @lhci/cli@0.14.x
+        run: npm install -g @lhci/cli@0.14.0   # ADR-0002
 
       - name: Download build artifact
         uses: actions/download-artifact@v8

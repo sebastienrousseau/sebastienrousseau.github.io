@@ -16,6 +16,7 @@ concurrency:
 jobs:
   diff:
     runs-on: ubuntu-latest
+    timeout-minutes: 60
     steps:
       # Single checkout at the repo root, then build HEAD and BASE from
       # the same working tree by hard-resetting between builds. The old
@@ -43,7 +44,7 @@ jobs:
       - name: Install Static Site Generator (ssg)
         run: |
           if ! command -v ssg >/dev/null 2>&1; then
-            cargo install ssg --locked
+            cargo install ssg --locked --version 0.0.44   # ADR-0002
           fi
 
       - name: Setup Python

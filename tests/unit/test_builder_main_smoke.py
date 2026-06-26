@@ -12,7 +12,9 @@ that's untouchable from a unit test without a vast fixture.
 
 from __future__ import annotations
 
+import hashlib
 import importlib
+import shutil
 import sys
 from pathlib import Path
 
@@ -20,12 +22,32 @@ import pytest
 
 ROOT = Path(__file__).resolve().parent.parent.parent
 PUBLIC = ROOT / "public"
+POSTS = ROOT / "_posts"
 sys.path.insert(0, str(ROOT / "scripts"))
 
 SKIP_IF_NO_BUILD = pytest.mark.skipif(
     not PUBLIC.is_dir() or not (PUBLIC / "index.html").is_file(),
     reason="public/ not built — run ./build.sh first",
 )
+
+
+def _copy_root_posts(tmp_path: Path) -> Path:
+    """Copy the root-level dated posts into an isolated working dir so the
+    in-place enrichers (post_enrich, topic_link) can run with full coverage
+    WITHOUT mutating committed source — see ADR-0003."""
+    work = tmp_path / "_posts"
+    work.mkdir()
+    for md in POSTS.glob("*.md"):
+        shutil.copy2(md, work / md.name)
+    return work
+
+
+def _posts_fingerprint() -> str:
+    h = hashlib.sha256()
+    for p in sorted(POSTS.glob("*.md")):
+        h.update(p.name.encode())
+        h.update(p.read_bytes())
+    return h.hexdigest()
 
 
 def _repair_csp_after_mutating_main():
@@ -45,16 +67,18 @@ def _repair_csp_after_mutating_main():
 
 
 @SKIP_IF_NO_BUILD
-def test_post_enrich_main_runs(capsys, monkeypatch):
-    # post_enrich.main() argparse-reads sys.argv; under pytest, sys.argv
-    # carries pytest's own args. Patch in a clean argv so argparse sees
-    # only the script name and defaults the --dir flag.
-    monkeypatch.setattr("sys.argv", ["post_enrich"])
+def test_post_enrich_main_runs(capsys, monkeypatch, tmp_path):
+    # Run against an isolated copy with the now-required --dir (ADR-0003):
+    # full main() coverage, zero mutation of committed source.
+    work = _copy_root_posts(tmp_path)
+    before = _posts_fingerprint()
+    monkeypatch.setattr("sys.argv", ["post_enrich", "--dir", str(work)])
     import post_enrich
 
     post_enrich.main()
     out = capsys.readouterr().out
     assert "enriched" in out.lower() or "dated post" in out.lower()
+    assert _posts_fingerprint() == before, "post_enrich mutated committed _posts/"
 
 
 @SKIP_IF_NO_BUILD
@@ -133,12 +157,18 @@ def test_gen_articles_main_runs(capsys):
 
 
 @SKIP_IF_NO_BUILD
-def test_topic_link_main_runs(capsys):
+def test_topic_link_main_runs(capsys, monkeypatch, tmp_path):
+    # Run against an isolated copy with the now-required --dir (ADR-0003):
+    # full main() coverage, zero mutation of committed source.
+    work = _copy_root_posts(tmp_path)
+    before = _posts_fingerprint()
+    monkeypatch.setattr("sys.argv", ["topic_link", "--dir", str(work)])
     import topic_link
 
     topic_link.main()
     out = capsys.readouterr().out
     assert "topic_link" in out or "touched" in out.lower()
+    assert _posts_fingerprint() == before, "topic_link mutated committed _posts/"
 
 
 @SKIP_IF_NO_BUILD
