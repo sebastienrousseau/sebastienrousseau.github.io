@@ -192,6 +192,11 @@ jobs:
     needs: build
     if: needs.build.outputs.pa11y-needed == 'true'
     runs-on: ubuntu-latest
+    # A wedged headless-Chrome process can leave pa11y-ci hanging on a
+    # single URL long past its per-URL timeout (observed at 5h+). Bound
+    # the whole shard so a hang fails fast instead of stalling the deploy
+    # indefinitely; a clean shard finishes in ~35 min.
+    timeout-minutes: 50
     strategy:
       # Keep all shards going even if one fails, so a single bad URL doesn't
       # mask issues on the other three. We still aggregate exit codes in the
@@ -332,27 +337,37 @@ jobs:
         run: |
           python3 - <<'PY'
           import json, glob
+
+          def load_report(path):
+              """pa11y-ci --reporter json occasionally writes trailing
+              stdout after its JSON object (a deprecation note, a second
+              flush), producing a file json.load rejects with
+              'Extra data'. Decode the first complete JSON object and
+              ignore any trailing bytes."""
+              text = open(path, encoding="utf-8").read()
+              try:
+                  return json.loads(text)
+              except json.JSONDecodeError:
+                  obj, _ = json.JSONDecoder().raw_decode(text.lstrip())
+                  return obj
+
           merged = {"total": 0, "passes": 0, "errors": 0, "results": {}}
-          for path in sorted(glob.glob("pa11y-shards/pa11y.shard.json")) + \
-                      sorted(glob.glob("pa11y-shards/pa11y.shard.*.json")):
-              with open(path) as f:
-                  d = json.load(f)
+          def absorb(path):
+              d = load_report(path)
               merged["total"]  += d.get("total", 0)
               merged["passes"] += d.get("passes", 0)
               merged["errors"] += d.get("errors", 0)
               for k, v in d.get("results", {}).items():
                   merged["results"][k] = v
+
+          for path in sorted(glob.glob("pa11y-shards/pa11y.shard.json")) + \
+                      sorted(glob.glob("pa11y-shards/pa11y.shard.*.json")):
+              absorb(path)
           # download-artifact with merge-multiple may consolidate into one
           # file per shard at the same name — handle both layouts.
           if not merged["total"]:
               for path in sorted(glob.glob("pa11y-shards/**/pa11y.shard.json", recursive=True)):
-                  with open(path) as f:
-                      d = json.load(f)
-                  merged["total"]  += d.get("total", 0)
-                  merged["passes"] += d.get("passes", 0)
-                  merged["errors"] += d.get("errors", 0)
-                  for k, v in d.get("results", {}).items():
-                      merged["results"][k] = v
+                  absorb(path)
           with open("pa11y.json", "w") as f:
               json.dump(merged, f)
           print(f"merged: {merged['total']} URLs, {merged['errors']} errors")
