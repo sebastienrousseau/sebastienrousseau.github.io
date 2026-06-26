@@ -37,6 +37,7 @@ Pin every build toolchain to an exact version, bump deliberately:
 | `pa11y-ci` | exact `4.1.1` |
 | `@lhci/cli` | exact `0.14.0` |
 | `ruff` | exact `0.15.9` |
+| `mypy` | exact `2.1.0` (+ `types-PyYAML==6.0.12.20260518`) |
 | `wasm-pack` | `cargo install wasm-pack --version 0.15.0 --locked` (no per-release `init.sh` exists) |
 | Node | `22` across `mise.toml` and all workflows |
 
