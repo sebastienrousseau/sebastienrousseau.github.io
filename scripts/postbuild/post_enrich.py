@@ -495,7 +495,16 @@ def main() -> None:
     """
     import argparse
     parser = argparse.ArgumentParser(description="Enrich dated blog posts.")
-    parser.add_argument("--dir", default="_posts", help="Directory containing posts")
+    # `--dir` is REQUIRED, with no default — see ADR-0003. This enricher
+    # rewrites post bodies in place; defaulting to `_posts` meant a bare run
+    # silently corrupted committed source. build.sh passes `--dir _posts_build`
+    # (the build copy); an intentional source write must pass `--dir _posts`.
+    parser.add_argument(
+        "--dir",
+        required=True,
+        help="Directory of posts to enrich (e.g. _posts_build). Required: this "
+        "rewrites files in place, so the target must be explicit (ADR-0003).",
+    )
     args = parser.parse_args()
 
     posts_dir = Path(args.dir)
