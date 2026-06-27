@@ -51,10 +51,11 @@ in `project-docs/audits/baseline-2026-06.md` (Phase −1) via `make metrics`.
 - **2.4 — DONE.** CSP enforcement was already covered by `test_csp_strict.py` (no `unsafe-inline`, inline JSON-LD hashes present); added the missing **SRI correctness** gate `test_sri_integrity.py` (recomputes every integrity hash from file bytes), wired into `build.sh`. (ADR-0005)
 
 ## Phase 3 — Performance / speed to 10/10
-- **3.1** Incremental builds (content-hash skip of unchanged pages; model on the pa11y hash-cache). Target <2 min for a 1-article change.
-- **3.2** Cut CI wall-clock: adaptive pa11y shard count, binary-level caching of ssg/npm/cargo, parallelise independent build-job checks. Target p50 <20 min.
-- **3.3** Promote `lighthouserc.json` thresholds to hard CI assertions (perf ≥0.98, a11y =1.0).
-- **3.4** Runtime asset budget test (fonts preloaded, banner `srcset`+dimensions, JS payload budget, cache headers).
+**Finding (ADR-0006):** real-world perf is already **0.97** (FCP 0.6s, LCP 1.2s, TBT 0, CLS 0, verified against live). The CI "0.76" is a measurement artifact — lhci's `staticDistDir` server has no gzip/cache, unlike Cloudflare. Core Web Vitals are already `error`-gated and green.
+- **3.1 — Out of scope.** True incremental page builds need `ssg` (external Rust binary) support; pa11y is already incremental via its hash cache.
+- **3.2 — DONE (this PR).** Static analysis (ruff/mypy/naming/KV/radon/jscpd) moved to a parallel `static` job → failures surface in minutes, shorter build critical path; pre-build pytest de-duplicated. (ADR-0006) Follow-up: adaptive pa11y shard count.
+- **3.3 — Partly done / by design.** CWV (LCP/TBT/CLS) already hard-gated and accurate in CI; the category score stays `warn` (artifact). Follow-up: a gzip+cache Lighthouse server to make the category hard-gatable at ≥0.95.
+- **3.4 — Follow-up.** Marginal real wins only (site already 0.97): trim `unused-css` (~16 KB) / `unused-js` (~80 KB) / render-blocking CSS (~130 ms); optional per-page weight budget test.
 
 ## Phase 4 — Structural quality & accuracy (refactor)
 - **4.1** Break up the four >1.3k-LOC modules: `article_furniture.py`→`hreflang.py`; `postbuild.py`→`sri.py`; `build_case_studies.py`→`_data/case-studies/i18n.json`; `output.py`→`feeds.py`. Target no module >800 LOC.
