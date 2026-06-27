@@ -30,7 +30,7 @@ jobs:
           node-version: "22"
 
       - name: Install Lighthouse CI
-        run: npm install -g @lhci/cli@0.14.x
+        run: npm install -g @lhci/cli@0.14.0   # ADR-0002
 
       - name: Cache cargo registry + git + ssg
         uses: actions/cache@v5

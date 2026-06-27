@@ -16,8 +16,68 @@ permissions:
 
 jobs:
   # =========================================================================
-  # Stage 1 — build the site, run all the cheap checks, then partition the
-  # pa11y URL set into the shard configs the matrix consumes next.
+  # Stage 0 — fast, source-only static analysis. Runs in PARALLEL with the
+  # build so lint / type / complexity failures surface in ~2-3 min instead of
+  # ~18 min into the build. No ssg / site build needed. improvement-plan 3.2.
+  # =========================================================================
+  static:
+    name: Static analysis (lint, types, complexity)
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: 'pip'
+
+      - name: Setup Node
+        uses: actions/setup-node@v6
+        with:
+          node-version: "22"
+
+      - name: Install tooling
+        run: |
+          pip install --quiet 'ruff==0.15.9' 'mypy==2.1.0' 'types-PyYAML==6.0.12.20260518' radon   # ADR-0002
+          pip install --quiet -r requirements.txt
+
+      - name: Lint (ruff)
+        run: ruff check scripts/ tests/
+
+      - name: Type check (mypy strict tier)
+        # Strict mypy over the strict-clean module tier; ratchets outward as
+        # modules are typed. See scripts/typecheck.sh + improvement-plan Phase 1.2.
+        run: bash scripts/typecheck.sh
+
+      - name: Naming conventions check
+        run: python3 scripts/dev/check_naming_conventions.py
+
+      - name: Cloudflare KV write audit (Free-tier policy)
+        run: bash scripts/dev/check-kv-writes.sh
+
+      - name: Cyclomatic complexity (radon)
+        run: |
+          radon cc scripts/postbuild/postbuild.py scripts/postbuild/postbuild_lib/ scripts/generators/ scripts/lib/ -a -s
+          c_or_worse=$(radon cc scripts/postbuild/postbuild.py scripts/postbuild/postbuild_lib/ scripts/generators/ scripts/lib/ -n C -s 2>&1)
+          if [ -n "$c_or_worse" ]; then
+            echo "::error::C-grade or worse complexity found:"
+            echo "$c_or_worse"
+            exit 1
+          fi
+
+      - name: Code duplication (jscpd)
+        run: |
+          npx --yes jscpd@4 scripts/ tests/ _layouts/ \
+            --min-tokens 50 \
+            --threshold 3 \
+            --reporters console \
+            --silent
+
+  # =========================================================================
+  # Stage 1 — build the site, run the build-dependent checks, then partition
+  # the pa11y URL set into the shard configs the matrix consumes next.
   # =========================================================================
   build:
     name: Build + smoke tests + partition
@@ -68,9 +128,10 @@ jobs:
           node-version: "22"
 
       - name: Install Python dev tooling
+        # Lint/type/complexity tooling lives in the parallel `static` job;
+        # the build job only needs the test runner + SBOM tool + runtime deps.
         run: |
-          pip install --quiet 'ruff==0.15.9' pytest radon pytest-cov   # ADR-0002
-          pip install --quiet 'mypy==2.1.0' 'types-PyYAML==6.0.12.20260518'   # ADR-0002
+          pip install --quiet pytest pytest-cov
           pip install --quiet 'cyclonedx-bom==7.3.0'   # SBOM (ADR-0004)
           pip install --quiet -r requirements.txt
 
@@ -83,48 +144,14 @@ jobs:
           pip install --quiet pip-audit
           pip-audit --strict -r requirements.txt
 
-      - name: Lint (ruff)
-        run: ruff check scripts/ tests/
-
-      - name: Type check (mypy strict tier)
-        # Strict mypy over the strict-clean module tier; ratchets outward as
-        # modules are typed. See scripts/typecheck.sh + improvement-plan Phase 1.2.
-        run: bash scripts/typecheck.sh
-
-      - name: Naming conventions check
-        run: python3 scripts/dev/check_naming_conventions.py
-
-      - name: Cloudflare KV write audit (Free-tier policy)
-        run: bash scripts/dev/check-kv-writes.sh
-
-      - name: Cyclomatic complexity (radon)
-        run: |
-          radon cc scripts/postbuild/postbuild.py scripts/postbuild/postbuild_lib/ scripts/generators/ scripts/lib/ -a -s
-          c_or_worse=$(radon cc scripts/postbuild/postbuild.py scripts/postbuild/postbuild_lib/ scripts/generators/ scripts/lib/ -n C -s 2>&1)
-          if [ -n "$c_or_worse" ]; then
-            echo "::error::C-grade or worse complexity found:"
-            echo "$c_or_worse"
-            exit 1
-          fi
-
-      - name: Code duplication (jscpd)
-        run: |
-          npx --yes jscpd@4 scripts/ tests/ _layouts/ \
-            --min-tokens 50 \
-            --threshold 3 \
-            --reporters console \
-            --silent
-
-      - name: Unit tests (pytest)
-        run: pytest tests/unit/ -ra
-
-      - name: Coverage gate (postbuild_lib must stay at 100 %)
+      - name: Unit tests + coverage gate (postbuild_lib 100 %)
+        # Single pre-build pytest run with the postbuild_lib coverage gate.
         # build_translations is gated post-build below: its smoke suites are
         # SKIP_IF_NO_BUILD-guarded, so a pre-build run can only reach ~92 %.
         run: |
-          pytest tests/unit/ \
+          pytest tests/unit/ -ra \
             --cov=scripts/postbuild/postbuild_lib \
-            --cov-fail-under=100 -q
+            --cov-fail-under=100
 
       - name: Build site
         run: ./build.sh
