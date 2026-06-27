@@ -1,18 +1,28 @@
-# Site build tools
+<h1 align="center">Site build tools</h1>
 
-> Last Updated: June 5, 2026
+<p align="center">
+  Python tooling that compiles, validates, and stages sebastienrousseau.com.
+</p>
 
-This folder holds the build and helper scripts that manage compiling and staging for the Sebastien Rousseau website, and all steps stay clean.
+---
 
-## Folder structure
+## Layout
 
-We group the repository tools into domain folders to keep the build system clean and simple.
+Tools are grouped by domain so each concern stays isolated:
 
-- **cron:** This folder has the daily release schedule routines and installer files for task tools.
-- **dev:** This folder has the local test files and coding helpers used to check the site.
-- **editorial:** This folder has the automated translation tools and page metadata setup.
-- **generators:** This folder houses the site builders that render templates and blog posts.
-- **lib:** This folder holds common Python helper code that runs project activities.
-- **postbuild:** This folder handles HTML tweaks, search tags, and sitemap updates.
-- **security:** This folder holds key setup files and cryptographic signing scripts.
-- **seo_and_audit:** This folder handles link checks, data validation, and text reading ease tools.
+| Folder | Responsibility |
+| :--- | :--- |
+| `cron/` | Local daily-publish scheduling + installers |
+| `dev/` | Lint, naming, and complexity helpers |
+| `editorial/` | Translation + frontmatter automation |
+| `generators/` | Template, listing, feed, and topic builders |
+| `lib/` | Shared helpers (frontmatter, slug, locale registry) |
+| `postbuild/` | HTML rewrites, CSP/SRI, search index, sitemaps |
+| `security/` | Sigstore signing + SBOM |
+| `seo_and_audit/` | Link audit, JSON-LD validation, readability |
+
+## License
+
+Licensed under [Apache-2.0](../LICENSE).
+
+<p align="right"><a href="#site-build-tools">Back to Top</a></p>
