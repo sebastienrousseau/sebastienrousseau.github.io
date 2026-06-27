@@ -51,8 +51,10 @@ python3 scripts/postbuild/post_enrich.py --dir _posts_build
 # Lenient on missing taxonomy (WS3 commit 1 must have shipped first).
 python3 scripts/generators/build_tags.py --dir _posts_build
 
-# Compile the site from the temporary directory instead of _posts
-ssg -n=docs -c=_posts_build -t=_layouts -o=public
+# Compile the site from the temporary directory instead of _posts.
+# ssg >=0.0.44 is subcommand-based (`ssg build`); the legacy top-level
+# `ssg -n=docs -c -t -o` form was removed. Pinned to 0.0.45 (ADR-0002).
+ssg build -c _posts_build -t _layouts -o public
 
 # Clean up the temporary directory
 rm -rf _posts_build

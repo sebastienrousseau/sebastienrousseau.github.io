@@ -20,9 +20,11 @@ rust   = "stable"
 # It tracks the latest published version on crates.io — keep here
 # documented for reproducibility, not for `mise install` to act on.
 #
-#   cargo install ssg --locked --version 0.0.44
+#   cargo install ssg --locked --version 0.0.45
 #
-# Pinned to 0.0.44 across all workflows per ADR-0002; bump deliberately.
+# Pinned to 0.0.45 across all workflows per ADR-0002; bump deliberately.
+# 0.0.45 is subcommand-based (`ssg build`) and auto-escapes template
+# `{{key}}`; layouts use `{{!key}}` for trusted meta-HTML blocks.
 
 [env]
 # Tells Python tooling to honour the repo's pyproject.toml settings.

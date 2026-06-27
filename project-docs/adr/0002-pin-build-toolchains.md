@@ -32,7 +32,7 @@ Pin every build toolchain to an exact version, bump deliberately:
 
 | Tool | Pin |
 |---|---|
-| `ssg` | `0.0.44` (via `cargo install ssg --locked --version 0.0.44`) |
+| `ssg` | `0.0.45` (via `cargo install ssg --locked --version 0.0.45`) |
 | `ruff` | exact `0.15.x` patch |
 | `pa11y-ci` | exact `4.1.1` |
 | `@lhci/cli` | exact `0.14.0` |
