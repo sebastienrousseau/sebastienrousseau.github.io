@@ -98,19 +98,15 @@ jobs:
             ~/.cargo/registry
             ~/.cargo/git
             ~/.cargo/bin
-          # Version is in the key so bumping ssg invalidates the stale cache
-          # rather than letting an old cached binary shadow the pinned version.
-          key: ${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}-ssg-0.0.45
+          key: ${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}-ssg
 
       - name: Add cargo bin to PATH
         run: echo "$HOME/.cargo/bin" >> $GITHUB_PATH
 
       - name: Install Static Site Generator (ssg)
         run: |
-          # Version-aware: a cached binary at the wrong version is replaced,
-          # so the pinned version is always what builds. ADR-0002.
-          if ! ssg --version 2>/dev/null | grep -q '0.0.45'; then
-            cargo install ssg --locked --version 0.0.45 --force   # ADR-0002
+          if ! command -v ssg >/dev/null 2>&1; then
+            cargo install ssg --locked --version 0.0.44   # ADR-0002
           fi
 
       - name: Install wasm-pack + wasm32 target

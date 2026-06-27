@@ -48,15 +48,15 @@ jobs:
             ~/.cargo/registry
             ~/.cargo/git
             ~/.cargo/bin
-          key: ${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}-ssg-0.0.45
+          key: ${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}-ssg
 
       - name: Add cargo bin to PATH
         run: echo "$HOME/.cargo/bin" >> $GITHUB_PATH
 
       - name: Install Static Site Generator (ssg)
         run: |
-          if ! ssg --version 2>/dev/null | grep -q '0.0.45'; then
-            cargo install ssg --locked --version 0.0.45 --force   # ADR-0002
+          if ! command -v ssg >/dev/null 2>&1; then
+            cargo install ssg --locked --version 0.0.44   # ADR-0002
           fi
 
       - name: Setup Python
