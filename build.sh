@@ -35,6 +35,13 @@ SERVE=0
 rm -rf _posts_build
 cp -R _posts _posts_build
 
+# ssg's metadata-extraction pass scans EVERY *.md under the content dir for
+# front matter. Translator/maintainer docs (e.g. _posts/<lang>/README.md) have
+# none, which trips "Failed to extract metadata: No valid front matter found"
+# on ssg >=0.0.44. Strip non-content markdown from the build copy (committed
+# source is untouched).
+find _posts_build -name 'README.md' -delete
+
 # Run homepage rotation and post-enrichment on the temporary directory
 python3 scripts/postbuild/regen_slug_maps.py
 python3 scripts/postbuild/regen_homepage.py --dir _posts_build
