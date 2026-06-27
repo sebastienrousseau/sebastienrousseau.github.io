@@ -46,6 +46,22 @@ CATEGORIES = [
                 "https://pacs008.com/",
             ),
             P(
+                "Python · ISO 20022 suite",
+                "camt053",
+                "https://cloudcdn.pro/clients/camt053/v1/logos/camt053.svg",
+                "Logo for the camt053 bank-statement suite",
+                "Read ISO 20022 camt.053 Bank-to-Customer statements and extract balances, entries, and transaction detail into structured data — with MT940 loading, XLSX export, and IDE (LSP) and AI-assistant (MCP) integrations.",
+                "https://github.com/sebastienrousseau/camt053",
+            ),
+            P(
+                "Python · ISO 20022 suite",
+                "acmt001",
+                "https://cloudcdn.pro/clients/acmt001/v1/logos/acmt001.svg",
+                "Logo for the acmt001 account-management suite",
+                "Enterprise-grade ISO 20022 account-management messaging — open, maintain, close, switch, and verify bank accounts from plain data files, with LSP and MCP tooling for engineering and AI workflows.",
+                "https://github.com/sebastienrousseau/acmt001",
+            ),
+            P(
                 "Python · Finance",
                 "Bank Statement Parser",
                 "https://cloudcdn.pro/clients/bankstatementparser/v1/logos/bankstatementparser.svg",
@@ -322,45 +338,61 @@ def section_block(cat: dict) -> str:
     return head + '\n\n<div class="newsroom-grid">\n\n' + cards + "\n\n</div>"
 
 
-THREE_THEMES = [
+# Three areas of practice — full-bleed alternating image/text panels
+# (Apple "section-content" pattern). Each panel lands on a dedicated
+# success-story page. `reverse` flips the image to the right.
+AREAS = [
     {
-        "icon": "https://cloudcdn.pro/clients/pain001/v1/logos/pain001.svg",
-        "icon_alt": "pain001 logo",
-        "title": "Payments and settlement.",
+        "kicker": "PAYMENTS & ISO 20022",
+        "headline": "Move money in the global standard — without rebuilding your stack.",
         "body": (
-            "ISO 20022 <strong>pain.001</strong> and <strong>pacs.008</strong> "
-            "toolkits, bank-statement parsing, and Rust libraries for the "
-            "migration to structured cross-border messages. Built for SWIFT, "
-            "SEPA, and the real-time payment schemes that come next."
+            "A complete ISO&nbsp;20022 toolchain: initiate payments "
+            "(<strong>pain.001</strong>), clear interbank "
+            "(<strong>pacs.008</strong>), reconcile statements "
+            "(<strong>camt.053</strong>), manage accounts "
+            "(<strong>acmt.001</strong>), and ingest any bank statement — each "
+            "shipped as a suite with IDE (LSP) and AI-assistant (MCP) "
+            "integrations. Built for the banks, PSPs, and corporate treasuries "
+            "facing the CBPR+ and SEPA deadlines."
         ),
-        "cta_label": "Explore payments tools",
-        "cta_href": "#cat-payments",
+        "cta_label": "Read the payments story",
+        "cta_href": "/projects-payments/index.html",
+        "img": "https://cloudcdn.pro/stocks/images/denys-nevozhai-2vmT5_FeMck-1920.webp",
+        "img_alt": "Aerial view of illuminated city interchanges at night — the cross-border rails that move structured payments.",
+        "reverse": False,
     },
     {
-        "icon": "https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg",
-        "icon_alt": "KyberLib logo",
-        "title": "Post-quantum cryptography.",
+        "kicker": "POST-QUANTUM SECURITY",
+        "headline": "Stay safe past the RSA era.",
         "body": (
-            "Rust implementations of <strong>CRYSTALS-Kyber</strong> "
-            "(NIST FIPS&nbsp;203), hash and digest primitives, and "
-            "quantum-resistant building blocks. Protection beyond the RSA "
-            "and elliptic-curve era of financial-grade authentication."
+            "Memory-safe Rust implementations of <strong>ML-KEM / "
+            "CRYSTALS-Kyber</strong> (NIST&nbsp;FIPS&nbsp;203), hashing, and "
+            "quantum-resistant primitives — the building blocks for "
+            "harvest-now-decrypt-later resilience across authentication, "
+            "settlement, and long-lived financial records."
         ),
-        "cta_label": "Explore quantum-safe libraries",
-        "cta_href": "#cat-quantum",
+        "cta_label": "Read the security story",
+        "cta_href": "/projects-post-quantum/index.html",
+        "img": "https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA-1920.webp",
+        "img_alt": "Abstract quantum-blue light field — symbolising post-quantum cryptography for financial systems.",
+        "reverse": True,
     },
     {
-        "icon": "https://cloudcdn.pro/clients/hsh/v1/logos/hsh.svg",
-        "icon_alt": "HSH logo",
-        "title": "Tooling and infrastructure.",
+        "kicker": "DEVELOPER PLATFORM",
+        "headline": "Foundations your engineers can trust.",
         "body": (
-            "Open-source Rust libraries for serialisation, logging, code "
-            "generation, date and time. Plus the <strong>Static Site "
-            "Generator</strong> (SSG) that builds this very site, and the "
-            "developer environment that makes it shippable."
+            "Audited, zero-<code>unsafe</code> Rust libraries — including "
+            "<strong>noyalib</strong> (YAML 1.2 with full serde), the "
+            "<strong>Static Site Generator</strong> behind this very site, and "
+            "primitives for serialisation, logging, and code generation. "
+            "Provenance-signed, SBOM-backed, and ready for regulated supply "
+            "chains."
         ),
-        "cta_label": "Explore developer tools",
-        "cta_href": "#cat-rust",
+        "cta_label": "Read the platform story",
+        "cta_href": "/projects-developer-platform/index.html",
+        "img": "https://cloudcdn.pro/stocks/images/alex-shuper-YYZnrK8NrSw-unsplash-1920.webp",
+        "img_alt": "Clean architectural lines in soft light — symbolising dependable developer-platform foundations.",
+        "reverse": False,
     },
 ]
 
@@ -421,11 +453,24 @@ def setup_hero_block() -> str:
     """Single eyebrow + CTA strip that sits directly below the layout's
     ap-hero (which already carries the page H1 + subtitle via frontmatter).
     Centered, no duplicate headline."""
-    return """<p class="setup-hero-eyebrow">OPEN SOURCE FOR FINANCIAL SERVICES</p>
-<p class="setup-hero-cta">
-<a class="pill" href="#catalog">Browse all projects</a>
-<a class="pill ghost" href="/contact/index.html">Get in touch</a>
-</p>"""
+    # Rotating ending — pure CSS (no JS, CSP-safe). The animation is
+    # aria-hidden; the <p> carries the full phrase as an aria-label for AT.
+    # The first word repeats as a 5th cell so the loop resets seamlessly.
+    words = ["banks.", "financial institutions.", "enterprise.", "small business."]
+    cells = "".join(f"<span>{w}</span>" for w in [*words, words[0]])
+    return (
+        '<p class="setup-hero-eyebrow rotating-title"'
+        ' aria-label="Open source for banks, financial institutions, enterprise and small business.">'
+        '<span class="rotating-title-lead">Open source for</span>'
+        '<span class="rotating-title-mask" aria-hidden="true">'
+        f'<span class="rotating-title-words">{cells}</span>'
+        "</span>"
+        "</p>\n"
+        '<p class="setup-hero-cta">\n'
+        '<a class="pill" href="/contact/index.html">Talk to us</a>\n'
+        '<a class="pill ghost" href="#catalog">Browse all products</a>\n'
+        "</p>"
+    )
 
 
 def proof_rail_block() -> str:
@@ -477,23 +522,34 @@ def proof_rail_block() -> str:
 
 
 def setup_three_block() -> str:
-    cards = [
-        f"""<article class="setup-card">
-<span class="setup-card-icon"><img alt="{t['icon_alt']}" src="{t['icon']}" loading="lazy" decoding="async" width="80" height="80" /></span>
-<h3 class="setup-card-title">{t['title']}</h3>
-<p class="setup-card-body">{t['body']}</p>
-<p class="setup-card-cta"><a href="{t['cta_href']}" class="setup-card-link">{t['cta_label']} <span aria-hidden="true">›</span></a></p>
-</article>"""
-        for t in THREE_THEMES
-    ]
+    """Three full-bleed alternating image/text panels (Apple "section-content"
+    pattern). Each panel lands on a dedicated success-story page. Multi-line
+    markup so SSG's custom-block parser passes it through as raw HTML."""
+    panels = []
+    for a in AREAS:
+        rev = " section-content--reverse" if a["reverse"] else ""
+        panels.append(
+            f'<section class="section-content{rev}">\n'
+            f'<figure class="section-content-media">\n'
+            f'<img alt="{a["img_alt"]}" src="{a["img"]}" '
+            f'loading="lazy" decoding="async" width="1600" height="1000" />\n'
+            f"</figure>\n"
+            f'<div class="section-content-copy">\n'
+            f'<p class="section-content-kicker">{a["kicker"]}</p>\n'
+            f'<h3 class="section-content-headline">{a["headline"]}</h3>\n'
+            f'<p class="section-content-body">{a["body"]}</p>\n'
+            f'<p class="section-content-cta">'
+            f'<a href="{a["cta_href"]}" class="setup-card-link">'
+            f'{a["cta_label"]} <span aria-hidden="true">›</span></a></p>\n'
+            f"</div>\n"
+            f"</section>"
+        )
     return (
         '<section class="setup-three" aria-labelledby="setup-three-heading">'
         '<header class="setup-three-head">'
-        '<p class="setup-three-kicker">WHAT IS INSIDE</p>'
+        '<p class="setup-three-kicker">WHAT WE BUILD</p>'
         '<h2 id="setup-three-heading" class="setup-three-headline">Three areas of practice. <span class="setup-three-headline-soft">One philosophy.</span></h2>'
-        "</header>"
-        '<div class="setup-three-grid">' + "\n".join(cards) + "</div>"
-        "</section>"
+        "</header>" + "\n".join(panels) + "</section>"
     )
 
 

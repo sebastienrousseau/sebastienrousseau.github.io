@@ -100,10 +100,10 @@ site_software: "Static Site Generator, Rust"
 
 ---
 
-<p class="setup-hero-eyebrow">OPEN SOURCE FOR FINANCIAL SERVICES</p>
+<p class="setup-hero-eyebrow rotating-title" aria-label="Open source for banks, financial institutions, enterprise and small business."><span class="rotating-title-lead">Open source for</span><span class="rotating-title-mask" aria-hidden="true"><span class="rotating-title-words"><span>banks.</span><span>financial institutions.</span><span>enterprise.</span><span>small business.</span><span>banks.</span></span></span></p>
 <p class="setup-hero-cta">
-<a class="pill" href="#catalog">Browse all projects</a>
-<a class="pill ghost" href="/contact/index.html">Get in touch</a>
+<a class="pill" href="/contact/index.html">Talk to us</a>
+<a class="pill ghost" href="#catalog">Browse all products</a>
 </p>
 
 <section class="proof-rail projects-proof" aria-label="Open source by the numbers">
@@ -125,24 +125,39 @@ site_software: "Static Site Generator, Rust"
 </div>
 </section>
 
-<section class="setup-three" aria-labelledby="setup-three-heading"><header class="setup-three-head"><p class="setup-three-kicker">WHAT IS INSIDE</p><h2 id="setup-three-heading" class="setup-three-headline">Three areas of practice. <span class="setup-three-headline-soft">One philosophy.</span></h2></header><div class="setup-three-grid"><article class="setup-card">
-<span class="setup-card-icon"><img alt="pain001 logo" src="https://cloudcdn.pro/clients/pain001/v1/logos/pain001.svg" loading="lazy" decoding="async" width="80" height="80" /></span>
-<h3 class="setup-card-title">Payments and settlement.</h3>
-<p class="setup-card-body">ISO 20022 <strong>pain.001</strong> and <strong>pacs.008</strong> toolkits, bank-statement parsing, and Rust libraries for the migration to structured cross-border messages. Built for SWIFT, SEPA, and the real-time payment schemes that come next.</p>
-<p class="setup-card-cta"><a href="#cat-payments" class="setup-card-link">Explore payments tools <span aria-hidden="true">›</span></a></p>
-</article>
-<article class="setup-card">
-<span class="setup-card-icon"><img alt="KyberLib logo" src="https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg" loading="lazy" decoding="async" width="80" height="80" /></span>
-<h3 class="setup-card-title">Post-quantum cryptography.</h3>
-<p class="setup-card-body">Rust implementations of <strong>CRYSTALS-Kyber</strong> (NIST FIPS&nbsp;203), hash and digest primitives, and quantum-resistant building blocks. Protection beyond the RSA and elliptic-curve era of financial-grade authentication.</p>
-<p class="setup-card-cta"><a href="#cat-quantum" class="setup-card-link">Explore quantum-safe libraries <span aria-hidden="true">›</span></a></p>
-</article>
-<article class="setup-card">
-<span class="setup-card-icon"><img alt="HSH logo" src="https://cloudcdn.pro/clients/hsh/v1/logos/hsh.svg" loading="lazy" decoding="async" width="80" height="80" /></span>
-<h3 class="setup-card-title">Tooling and infrastructure.</h3>
-<p class="setup-card-body">Open-source Rust libraries for serialisation, logging, code generation, date and time. Plus the <strong>Static Site Generator</strong> (SSG) that builds this very site, and the developer environment that makes it shippable.</p>
-<p class="setup-card-cta"><a href="#cat-rust" class="setup-card-link">Explore developer tools <span aria-hidden="true">›</span></a></p>
-</article></div></section>
+<section class="setup-three" aria-labelledby="setup-three-heading"><header class="setup-three-head"><p class="setup-three-kicker">WHAT WE BUILD</p><h2 id="setup-three-heading" class="setup-three-headline">Three areas of practice. <span class="setup-three-headline-soft">One philosophy.</span></h2></header><section class="section-content">
+<figure class="section-content-media">
+<img alt="Aerial view of illuminated city interchanges at night — the cross-border rails that move structured payments." src="https://cloudcdn.pro/stocks/images/denys-nevozhai-2vmT5_FeMck-1920.webp" loading="lazy" decoding="async" width="1600" height="1000" />
+</figure>
+<div class="section-content-copy">
+<p class="section-content-kicker">PAYMENTS & ISO 20022</p>
+<h3 class="section-content-headline">Move money in the global standard — without rebuilding your stack.</h3>
+<p class="section-content-body">A complete ISO&nbsp;20022 toolchain: initiate payments (<strong>pain.001</strong>), clear interbank (<strong>pacs.008</strong>), reconcile statements (<strong>camt.053</strong>), manage accounts (<strong>acmt.001</strong>), and ingest any bank statement — each shipped as a suite with IDE (LSP) and AI-assistant (MCP) integrations. Built for the banks, PSPs, and corporate treasuries facing the CBPR+ and SEPA deadlines.</p>
+<p class="section-content-cta"><a href="/projects-payments/index.html" class="setup-card-link">Read the payments story <span aria-hidden="true">›</span></a></p>
+</div>
+</section>
+<section class="section-content section-content--reverse">
+<figure class="section-content-media">
+<img alt="Abstract quantum-blue light field — symbolising post-quantum cryptography for financial systems." src="https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA-1920.webp" loading="lazy" decoding="async" width="1600" height="1000" />
+</figure>
+<div class="section-content-copy">
+<p class="section-content-kicker">POST-QUANTUM SECURITY</p>
+<h3 class="section-content-headline">Stay safe past the RSA era.</h3>
+<p class="section-content-body">Memory-safe Rust implementations of <strong>ML-KEM / CRYSTALS-Kyber</strong> (NIST&nbsp;FIPS&nbsp;203), hashing, and quantum-resistant primitives — the building blocks for harvest-now-decrypt-later resilience across authentication, settlement, and long-lived financial records.</p>
+<p class="section-content-cta"><a href="/projects-post-quantum/index.html" class="setup-card-link">Read the security story <span aria-hidden="true">›</span></a></p>
+</div>
+</section>
+<section class="section-content">
+<figure class="section-content-media">
+<img alt="Clean architectural lines in soft light — symbolising dependable developer-platform foundations." src="https://cloudcdn.pro/stocks/images/alex-shuper-YYZnrK8NrSw-unsplash-1920.webp" loading="lazy" decoding="async" width="1600" height="1000" />
+</figure>
+<div class="section-content-copy">
+<p class="section-content-kicker">DEVELOPER PLATFORM</p>
+<h3 class="section-content-headline">Foundations your engineers can trust.</h3>
+<p class="section-content-body">Audited, zero-<code>unsafe</code> Rust libraries — including <strong>noyalib</strong> (YAML 1.2 with full serde), the <strong>Static Site Generator</strong> behind this very site, and primitives for serialisation, logging, and code generation. Provenance-signed, SBOM-backed, and ready for regulated supply chains.</p>
+<p class="section-content-cta"><a href="/projects-developer-platform/index.html" class="setup-card-link">Read the platform story <span aria-hidden="true">›</span></a></p>
+</div>
+</section></section>
 
 <section class="newsroom" id="catalog">
 
@@ -169,6 +184,28 @@ site_software: "Static Site Generator, Rust"
 <span class="newsroom-eyebrow">Python · ISO 20022</span>
 <h3><a href="https://pacs008.com/" title="pacs008">pacs008</a></h3>
 <p class="newsroom-excerpt">Generate, validate, and deliver ISO 20022 pacs.008 payment messages for FI-to-FI customer credit transfers. JSON Schema + XSD validation, IBAN across 75 countries, GDPR/PCI-DSS-compliant PII masking.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media logo" href="https://github.com/sebastienrousseau/camt053" title="camt053">
+<img alt="Logo for the camt053 bank-statement suite" src="https://cloudcdn.pro/clients/camt053/v1/logos/camt053.svg" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Python · ISO 20022 suite</span>
+<h3><a href="https://github.com/sebastienrousseau/camt053" title="camt053">camt053</a></h3>
+<p class="newsroom-excerpt">Read ISO 20022 camt.053 Bank-to-Customer statements and extract balances, entries, and transaction detail into structured data — with MT940 loading, XLSX export, and IDE (LSP) and AI-assistant (MCP) integrations.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media logo" href="https://github.com/sebastienrousseau/acmt001" title="acmt001">
+<img alt="Logo for the acmt001 account-management suite" src="https://cloudcdn.pro/clients/acmt001/v1/logos/acmt001.svg" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Python · ISO 20022 suite</span>
+<h3><a href="https://github.com/sebastienrousseau/acmt001" title="acmt001">acmt001</a></h3>
+<p class="newsroom-excerpt">Enterprise-grade ISO 20022 account-management messaging — open, maintain, close, switch, and verify bank accounts from plain data files, with LSP and MCP tooling for engineering and AI workflows.</p>
 </div>
 </article>
 
