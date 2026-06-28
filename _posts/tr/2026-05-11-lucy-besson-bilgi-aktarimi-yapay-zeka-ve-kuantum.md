@@ -5,7 +5,7 @@ description: "Yapay zeka ile kuantum hesaplama arasındaki bilgi aktarımı: tem
 date: "May 11, 2026"
 language: "tr-TR"
 locale: "tr_TR"
-banner: "https://cloudcdn.pro/stocks/images/lucy-knowledge-transfer-banner.webp"
+banner: "https://cloudcdn.pro/stocks/images/harald-krichel-scarlett-johansson-8531.webp"
 banner_alt: "Yapay zeka ve kuantum arasındaki bilgi aktarımının görselleştirmesi"
 keywords: "yapay zeka, kuantum, bilgi aktarımı, Lucy Besson, araştırma, makine öğrenmesi"
 ---

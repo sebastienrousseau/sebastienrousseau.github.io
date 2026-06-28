@@ -5,7 +5,7 @@ description: "12 年后重新解读《露西》——贝松对知识迁移到非
 date: "May 11, 2026"
 language: "zh-Hans"
 locale: "zh_CN"
-banner: "https://cloudcdn.pro/stocks/images/lucy-knowledge-transfer-banner.webp"
+banner: "https://cloudcdn.pro/stocks/images/harald-krichel-scarlett-johansson-8531.webp"
 banner_alt: "神经网络与量子原子阵列的抽象可视化。由重新排列的粒子形成的黑色计算机"
 keywords: "露西, 卢克·贝松, AI, 大型语言模型, 量子计算, 中性原子, 全脑模拟, Neuralink, 知识迁移, 基质独立"
 ---
