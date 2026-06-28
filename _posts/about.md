@@ -110,7 +110,7 @@ site_software: "Static Site Generator, Rust"
     <span class="kpi-cell-label">Sigstore-signed research articles</span>
   </div>
   <div class="kpi-cell">
-    <span class="kpi-cell-value">168k</span>
+    <span class="kpi-cell-value">37M</span>
     <span class="kpi-cell-label">Open-source downloads (PyPI · crates.io)</span>
   </div>
   <div class="kpi-cell">
@@ -123,10 +123,10 @@ site_software: "Static Site Generator, Rust"
   <div class="narrative-wrap">
     <div>
       <p class="narrative-eyebrow">The work</p>
-      <h2 id="about-work" class="narrative-head">Payments that move trillions, infrastructure that has to be right.</h2>
+      <h2 id="about-work" class="narrative-head">Wholesale payments infrastructure that has to be correct.</h2>
       <div class="narrative-body">
         <p>Senior payments leader at HSBC Commercial &amp; Investment Bank, working on Treasury APIs, Banking-as-a-Service, and the ISO 20022 wholesale rails that settle correspondent payments at scale.</p>
-        <p>Twenty years across Tier-1 banks (HSBC, PayPal, Barclays) and consumer technology (Shazam, AKQA, Virgin) — the same product-engineering discipline applied to retail, wholesale and now post-quantum.</p>
+        <p>Twenty years across Tier-1 banks (HSBC, PayPal, Barclays) and consumer technology (Shazam, AKQA, Virgin). The same product-engineering discipline now applies to retail, wholesale, and post-quantum work.</p>
       </div>
       <a class="pill" href="/case-studies/index.html">See the case studies ›</a>
     </div>
@@ -142,13 +142,13 @@ site_software: "Static Site Generator, Rust"
       <p class="narrative-eyebrow">The research</p>
       <h2 id="about-research" class="narrative-head">Banking research, signed and dated. Every article verifiable.</h2>
       <div class="narrative-body">
-        <p>Applied AI, ISO 20022, post-quantum cryptography. Every piece written for senior architects and CTOs who need to make architectural calls — not press releases.</p>
+        <p>Applied AI, ISO 20022, post-quantum cryptography. Every piece written for senior architects and CTOs who need to make architectural calls, not read press releases.</p>
         <p>Cited in the EPAA <em>Quantum-Safe Payments</em> white paper (Sept 2025). Editor of <em>Banking On Quantum</em> and <em>Banking On AI</em>. Member of the EPAA Quantum-Safe Cryptography Working Group.</p>
       </div>
       <a class="pill" href="/articles/index.html">Read the research ›</a>
     </div>
     <figure class="narrative-visual">
-      <img src="https://cloudcdn.pro/stocks/images/quantum-computer-room.webp" alt="Quantum computer room with cryogenic dilution refrigerator — symbolising post-quantum cryptography research and banking infrastructure" width="640" height="480" loading="lazy" decoding="async" />
+      <img src="https://cloudcdn.pro/stocks/images/quantum-computer-room.webp" alt="Quantum computer room with cryogenic dilution refrigerator, symbolising post-quantum cryptography research and banking infrastructure" width="640" height="480" loading="lazy" decoding="async" />
     </figure>
   </div>
 </section>
@@ -159,13 +159,13 @@ site_software: "Static Site Generator, Rust"
       <p class="narrative-eyebrow">The output</p>
       <h2 id="about-output" class="narrative-head">Open source the standards bodies and lab evaluators can actually read.</h2>
       <div class="narrative-body">
-        <p><strong>KyberLib</strong> — production-grade ML-KEM in Rust, evaluated by Qtonic Quantum Lab, adopted by QGram.</p>
-        <p><strong>pain001</strong> — ISO 20022 payment-file automation. <strong>BankStatementParser</strong> — unified transaction intelligence. <strong>CloudCDN</strong> — AI-native edge blueprint.</p>
+        <p><strong>KyberLib</strong>: an ML-KEM implementation in Rust, evaluated by Qtonic Quantum Lab and adopted by QGram.</p>
+        <p><strong>pain001</strong>: ISO 20022 payment-file automation. <strong>BankStatementParser</strong>: turns multi-format statements into structured data. <strong>CloudCDN</strong>: an open-source edge CDN blueprint.</p>
       </div>
       <a class="pill ghost" href="/projects/index.html">See all open source ›</a>
     </div>
     <figure class="narrative-visual">
-      <img src="https://cloudcdn.pro/stocks/images/planet-volumes-C7HhKTLk8Fc-unsplash.webp" alt="Earth from space at night, city lights tracing global financial corridors — symbolising open-source infrastructure shipped across regulated markets" width="640" height="480" loading="lazy" decoding="async" />
+      <img src="https://cloudcdn.pro/stocks/images/planet-volumes-C7HhKTLk8Fc-unsplash.webp" alt="Earth from space at night, city lights tracing global financial corridors, symbolising open-source infrastructure shipped across regulated markets" width="640" height="480" loading="lazy" decoding="async" />
     </figure>
   </div>
 </section>
@@ -223,6 +223,6 @@ site_software: "Static Site Generator, Rust"
 <dd><a href="https://emergingpaymentsasia.org/" rel="external noopener">Emerging Payments Association Asia · Quantum-Safe Cryptography Working Group</a></dd>
 </dl>
 
-<p>All crawlers welcome — search engines, social link-preview, SEO, AI retrieval and AI training — under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY-4.0</a>. Operational detail (named crawler categories, machine-readable surfaces, opt-out path) lives at <a href="/editorial/#bot-policy"><code>/editorial/#bot-policy</code></a>; machine-actionable rules at <a href="/robots.txt"><code>/robots.txt</code></a> and <a href="/llms.txt"><code>/llms.txt</code></a>.</p>
+<p>All crawlers are welcome (search engines, social link-preview, SEO, AI retrieval, and AI training) under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY-4.0</a>. Operational detail (named crawler categories, machine-readable surfaces, opt-out path) lives at <a href="/editorial/#bot-policy"><code>/editorial/#bot-policy</code></a>; machine-actionable rules at <a href="/robots.txt"><code>/robots.txt</code></a> and <a href="/llms.txt"><code>/llms.txt</code></a>.</p>
 
 </details>

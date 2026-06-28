@@ -38,7 +38,7 @@ PERSON_REF = '{"@id":"https://sebastienrousseau.com/#person"}'
 SITE_REF = '{"@id":"https://sebastienrousseau.com/#website"}'
 BLOG_REF = (
     '{"@type":"Blog","@id":"https://sebastienrousseau.com/articles/#blog",'
-    '"name":"Sebastien Rousseau — Articles",'
+    '"name":"Articles by Sebastien Rousseau",'
     '"url":"https://sebastienrousseau.com/articles/"}'
 )
 BREADCRUMB = (
@@ -75,7 +75,7 @@ SPEAKABLE = (
 PAPERS_FAQ = (
     ',{"@type":"FAQPage","@id":"{{url}}#faq","mainEntity":['
     '{"@type":"Question","name":"What kind of research and papers do you publish?",'
-    '"acceptedAnswer":{"@type":"Answer","text":"Two strands sit side-by-side. Industry white papers, produced for organisations such as the Emerging Payments Association Asia (EPAA), examine structural shifts to payment infrastructure — most recently the impact of cryptographically-relevant quantum computing on wholesale and real-time settlement rails. Applied research papers, published independently, share reproducible engineering work — for example, real-time speech recognition on macOS using OpenAI Whisper and Metal Performance Shaders."}},'
+    '"acceptedAnswer":{"@type":"Answer","text":"Two strands sit side-by-side. Industry white papers, produced for organisations such as the Emerging Payments Association Asia (EPAA), examine structural shifts to payment infrastructure, most recently the impact of cryptographically-relevant quantum computing on wholesale and real-time settlement rails. Applied research papers, published independently, share reproducible engineering work, for example, real-time speech recognition on macOS using OpenAI Whisper and Metal Performance Shaders."}},'
     '{"@type":"Question","name":"Who is the intended audience?",'
     '"acceptedAnswer":{"@type":"Answer","text":"Heads of payments, CISOs and senior architects in Tier-1 banks, central banks, payment system operators and scheme owners. The applied research is written for engineers and product leaders building on top of large language models, on-device AI, and quantum-resistant cryptography."}},'
     '{"@type":"Question","name":"Are the white papers free to read?",'
@@ -83,7 +83,7 @@ PAPERS_FAQ = (
     '{"@type":"Question","name":"May I cite or quote from these papers?",'
     '"acceptedAnswer":{"@type":"Answer","text":"Yes. Short quotations with attribution are welcome under fair-dealing or fair-use norms. For EPAA papers, cite the EPAA as publisher with the working group, year and PDF URL. For independent research papers, cite as Rousseau, S. (year). Title. Self-published. with the canonical URL."}},'
     '{"@type":"Question","name":"Can I commission a paper or speak at an event?",'
-    '"acceptedAnswer":{"@type":"Answer","text":"Yes — limited, by selection. Commissioned work focuses on wholesale payments, ISO 20022 migration, post-quantum cryptography for financial services, and applied AI in banking. Speaking engagements at industry conferences, central-bank fora, and regulator round-tables are considered case-by-case."}},'
+    '"acceptedAnswer":{"@type":"Answer","text":"Yes, limited and by selection. Commissioned work focuses on wholesale payments, ISO 20022 migration, post-quantum cryptography for financial services, and applied AI in banking. Speaking engagements at industry conferences, central-bank fora, and regulator round-tables are considered case-by-case."}},'
     '{"@type":"Question","name":"How do I follow new publications?",'
     '"acceptedAnswer":{"@type":"Answer","text":"New papers and research notes are announced first through the site RSS feed at /rss.xml and the Banking On Quantum newsletter at news.bankingonquantum.com, which covers post-quantum cryptography, central-bank policy, and the migration roadmap across major payment schemes."}}'
     "]}"
@@ -94,13 +94,13 @@ PAPERS_FAQ = (
 PROJECTS_FAQ = (
     ',{"@type":"FAQPage","@id":"{{url}}#faq","mainEntity":['
     '{"@type":"Question","name":"What licence are these projects released under?",'
-    '"acceptedAnswer":{"@type":"Answer","text":"Most projects are dual-licensed under MIT and Apache-2.0 — the standard for the Rust ecosystem — which gives commercial users explicit patent rights as well as permissive redistribution. A small number of clients\' tools are released under Apache-2.0 only. The licence file at the root of each repository is the authoritative source."}},'
+    '"acceptedAnswer":{"@type":"Answer","text":"Most projects are dual-licensed under MIT and Apache-2.0, the standard for the Rust ecosystem, which gives commercial users explicit patent rights as well as permissive redistribution. A small number of clients\' tools are released under Apache-2.0 only. The licence file at the root of each repository is the authoritative source."}},'
     '{"@type":"Question","name":"Are these projects production-ready?",'
     '"acceptedAnswer":{"@type":"Answer","text":"Many are. pain001 is used by banks and payment-service providers to automate ISO 20022 file creation. KyberLib tracks the NIST FIPS 203 specification and ships test vectors. Each repository\'s README and CI badges will tell you the current status; if you need a specific guarantee for production use, get in touch."}},'
     '{"@type":"Question","name":"How can I contribute or report an issue?",'
     '"acceptedAnswer":{"@type":"Answer","text":"Every project has a public GitHub repository under github.com/sebastienrousseau. Open an issue describing the problem (a minimal reproducer helps) or a pull request linked to an issue. Contributions are governed by the Developer Certificate of Origin and require signed commits."}},'
     '{"@type":"Question","name":"Can I use these libraries in a regulated banking environment?",'
-    '"acceptedAnswer":{"@type":"Answer","text":"Yes, with the usual caveats. The libraries are independent open-source work, not a regulated product. Run your normal supply-chain, security, and dependency-review processes — vendoring through your internal mirror, scanning with SBOM tools, and pinning by Git SHA or cryptographic hash — before deploying to production payment infrastructure."}},'
+    '"acceptedAnswer":{"@type":"Answer","text":"Yes, with the usual caveats. The libraries are independent open-source work, not a regulated product. Run your normal supply-chain, security, and dependency-review processes, such as vendoring through your internal mirror, scanning with SBOM tools, and pinning by Git SHA or cryptographic hash, before deploying to production payment infrastructure."}},'
     '{"@type":"Question","name":"Do you offer commercial support or consulting?",'
     '"acceptedAnswer":{"@type":"Answer","text":"Yes, on a selective basis. Engagements focus on ISO 20022 migration, post-quantum cryptography migration roadmaps, and applied AI in financial services. Get in touch with a short brief, your timeline and any constraints."}},'
     '{"@type":"Question","name":"How do I follow new releases?",'
@@ -212,6 +212,51 @@ def page_layout() -> str:
     return TOP + PAGE_HERO_MAIN + BOTTOM
 
 
+# /projects/ hero: the rotating animated title IS the page H1 (no duplicate
+# block in the body). Static layout markup — not a {{var}}, so unaffected by
+# template escaping. The last word repeats so the CSS loop resets seamlessly.
+PROJECT_HERO_MAIN = """    <section class="ap-hero">
+      <h1 class="rotating-title" aria-label="Open source for banks, financial institutions, enterprise and small business.">
+        <span class="rotating-title-lead">Open source for</span>
+        <span class="rotating-title-mask" aria-hidden="true"><span class="rotating-title-words"><span><span class="rt-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2 9 5H3z"/><path d="M5 10v8m4-8v8m6-8v8m4-8v8M3 21h18"/></svg></span>banks.</span><span><span class="rt-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.5 2.5 3.5 6 3.5 9s-1 6.5-3.5 9c-2.5-2.5-3.5-6-3.5-9s1-6.5 3.5-9Z"/></svg></span>financial institutions.</span><span><span class="rt-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 21V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v17"/><path d="M3 21h18"/><path d="M10 7h4M10 11h4M10 15h4"/></svg></span>enterprise.</span><span><span class="rt-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m4 9 1.2-5h13.6L20 9"/><path d="M5 9v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V9"/><path d="M9 21v-6h6v6"/></svg></span>small business.</span><span><span class="rt-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2 9 5H3z"/><path d="M5 10v8m4-8v8m6-8v8m4-8v8M3 21h18"/></svg></span>banks.</span></span></span>
+      </h1>
+      <p class="sub">{{subtitle}}</p>
+      <p class="ap-hero-cta"><a class="pill" href="/contact/index.html">Talk to us</a> <a class="pill ghost" href="#catalog">Browse all products</a></p>
+    </section>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap">{{content}}</div>
+    </main>
+
+"""
+
+
+def project_layout() -> str:
+    return TOP + PROJECT_HERO_MAIN + BOTTOM
+
+
+# /projects-*/ story pages: apple.com/government-style hero. The banner is a
+# full-bleed image with the title and subtitle overlaid in white over a scrim.
+# It sits outside the content wrap, so it is full width without a 100vw hack.
+STORY_HERO_MAIN = """    <section class="story-hero">
+      <img class="story-hero-img" src="{{banner}}" alt="{{banner_alt}}" loading="eager" fetchpriority="high" decoding="async" />
+      <div class="story-hero-inner">
+        <h1>{{name}}</h1>
+        <p class="story-hero-sub">{{subtitle}}</p>
+      </div>
+    </section>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap">{{content}}</div>
+    </main>
+
+"""
+
+
+def story_layout() -> str:
+    return TOP + STORY_HERO_MAIN + BOTTOM
+
+
 def contact_layout() -> str:
     body = """    <section class="ap-hero">
       <span class="eyebrow">Contact</span>
@@ -281,7 +326,7 @@ def contact_layout() -> str:
                 <a href="https://news.bankingonquantum.com" rel="external noopener">Banking On Quantum · newsletter</a>
               </li>
             </ul>
-            <p class="contact-aside-note">If your question is already covered in the <a href="/papers/index.html">papers FAQ</a> or a <a href="/case-studies/index.html">case study</a>, link to it — that saves a round trip.</p>
+            <p class="contact-aside-note">If your question is already covered in the <a href="/papers/index.html">papers FAQ</a> or a <a href="/case-studies/index.html">case study</a>, link to it, which saves a round trip.</p>
           </aside>
         </div>
       </div>
@@ -589,10 +634,13 @@ def main() -> None:
         "page.html": "default",
         "link.html": "default",
         "thank-you.html": "default",
-        "project.html": "projects",
     }
     for name, kind in kind_map.items():
         write(name, inject_schema(page_html, kind))
+    # /projects/ has its own hero: the rotating animated title is the page H1.
+    write("project.html", inject_schema(project_layout(), "projects"))
+    # /projects-*/ story pages: full-bleed image hero with overlaid title.
+    write("story.html", inject_schema(story_layout(), "default"))
     write("contact.html", inject_schema(contact_layout(), "contact"))
     write("report.html", inject_schema(report_layout(), "report"))
     write("playlist.html", inject_schema(playlist_layout(), "playlist"))

@@ -3,7 +3,7 @@
 # Front Matter (YAML)
 
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
-banner_alt: "Abstract quantum-blue light field — symbolising post-quantum cryptography for financial systems."
+banner_alt: "Abstract blue light field, representing post-quantum cryptography for financial systems."
 banner_height: "1000"
 banner_width: "1600"
 banner: "https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA-1920.webp"
@@ -13,7 +13,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "June 27, 2026"
-description: "Memory-safe Rust implementations of ML-KEM / CRYSTALS-Kyber (NIST FIPS 203), hashing, and quantum-resistant primitives for authentication, settlement, and long-lived financial records."
+description: "Open-source Rust libraries for post-quantum cryptography: ML-KEM (CRYSTALS-Kyber, NIST FIPS 203), hashing, and related primitives for financial systems."
 format-detection: "telephone=no"
 hreflang: "en"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -25,7 +25,7 @@ image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "post-quantum cryptography, ML-KEM, CRYSTALS-Kyber, FIPS 203, KyberLib, hsh, harvest now decrypt later, financial security"
 last_reviewed: "2026-06-27"
 language: "en-GB"
-layout: "page"
+layout: "story"
 locale: "en_GB"
 logo_alt: "Logo for Sebastien Rousseau"
 logo_height: "44"
@@ -33,14 +33,14 @@ logo_width: "44"
 logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 menu: ""
 measurementID: "G-169G4ET5HQ"
-name: "Sebastien Rousseau"
+name: "Security past the RSA era."
 permalink: "https://sebastienrousseau.com/projects-post-quantum"
 rating: "general"
 referrer: "no-referrer"
 revisit-after: "30 days"
 robots: "index, follow"
 short_name: "sebastienrousseau"
-subtitle: "Memory-safe, standards-tracking cryptography for the harvest-now-decrypt-later era."
+subtitle: "Quantum-safe security, applied today. Built on the NIST standards, ready for production."
 tags: "post-quantum cryptography, ML-KEM, FIPS 203, KyberLib, security"
 theme-color: "0, 67, 165"
 title: "Post-quantum security for financial systems."
@@ -52,7 +52,7 @@ atom_link: "https://sebastienrousseau.com/projects-post-quantum/rss.xml"
 category: "Products"
 docs: https://validator.w3.org/feed/docs/rss2.html
 generator: "Static Site Generator (SSG) (version 0.0.26)"
-item_description: "Memory-safe Rust implementations of ML-KEM / CRYSTALS-Kyber (NIST FIPS 203), hashing, and quantum-resistant primitives for authentication, settlement, and long-lived financial records."
+item_description: "Open-source Rust libraries for post-quantum cryptography: ML-KEM (CRYSTALS-Kyber, NIST FIPS 203), hashing, and related primitives for financial systems."
 item_guid: "https://sebastienrousseau.com/projects-post-quantum/rss.xml"
 item_link: "https://sebastienrousseau.com/projects-post-quantum/rss.xml"
 item_pub_date: "Sat, 27 Jun 2026 06:06:06 +0000"
@@ -79,9 +79,9 @@ msapplication-navbutton-color: "0, 67, 165"
 # Twitter Card
 twitter_card: "summary_large_image"
 twitter_creator: "@wwdseb"
-twitter_description: "Memory-safe Rust implementations of ML-KEM / CRYSTALS-Kyber (NIST FIPS 203), hashing, and quantum-resistant primitives for authentication, settlement, and long-lived financial records."
+twitter_description: "Open-source Rust libraries for post-quantum cryptography: ML-KEM (CRYSTALS-Kyber, NIST FIPS 203), hashing, and related primitives for financial systems."
 twitter_image: "https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA-1920.webp"
-twitter_image_alt: "Abstract quantum-blue light field — symbolising post-quantum cryptography for financial systems."
+twitter_image_alt: "Abstract blue light field, representing post-quantum cryptography for financial systems."
 twitter_site: "@wwdseb"
 twitter_title: "Post-quantum security for financial systems."
 twitter_url: "https://sebastienrousseau.com/projects-post-quantum"
@@ -97,50 +97,64 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 site_software: "Static Site Generator, Rust"
 
 ---
+<p class="story-intro">A large quantum computer breaks RSA and elliptic-curve cryptography. Some financial records stay sensitive for decades, so the data captured today is already at risk. These libraries implement the NIST post-quantum standards, so you can start the migration now, on your own schedule.</p>
 
-<p class="story-lede">Adversaries are already harvesting encrypted traffic to decrypt once a cryptographically relevant quantum computer exists. Long-lived financial records — settlement instructions, custody mandates, signed authorisations — need quantum-resistant protection today. These libraries provide the standards-tracking primitives.</p>
+<section class="newsroom" id="tools">
+<header class="cat-section-head"><p class="cat-kicker">THE LIBRARIES</p><h2 class="cat-headline">Standards-tracking primitives.</h2></header>
 
-<section class="newsroom" id="whats-inside">
-<header class="newsroom-section-head"><p class="newsroom-kicker">WHAT'S INSIDE</p><h2>Quantum-resistant building blocks.</h2></header>
-
-<div class="newsroom-grid">
+<div class="newsroom-grid cat-grid">
 
 <article class="newsroom-card">
+<a class="newsroom-card-media logo" href="https://kyberlib.com/" title="KyberLib"><img alt="KyberLib logo" src="https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg" loading="lazy" decoding="async" width="600" height="600" /></a>
 <div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Rust · NIST FIPS 203</span>
-<h3><a href="https://kyberlib.com" title="KyberLib">KyberLib</a></h3>
-<p class="newsroom-excerpt">A memory-safe Rust implementation of ML-KEM / CRYSTALS-Kyber, tracking the NIST FIPS 203 specification with test vectors.</p>
+<h3><a href="https://kyberlib.com/" title="KyberLib">KyberLib</a></h3>
+<p class="newsroom-excerpt">A Rust implementation of CRYSTALS-Kyber, the NIST FIPS 203 standard for post-quantum key encapsulation.</p>
+<p class="newsroom-more"><a href="https://kyberlib.com/" title="KyberLib">Learn more <span aria-hidden="true">›</span></a></p>
 </div>
 </article>
 
 <article class="newsroom-card">
+<a class="newsroom-card-media logo" href="https://github.com/sebastienrousseau/hsh" title="Hash (HSH)"><img alt="Hash (HSH) logo" src="https://cloudcdn.pro/clients/hsh/v1/logos/hsh.svg" loading="lazy" decoding="async" width="600" height="600" /></a>
 <div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Rust · Hashing</span>
-<h3><a href="https://github.com/sebastienrousseau/hsh" title="hsh">hsh</a></h3>
-<p class="newsroom-excerpt">Multi-algorithm password hashing and digest primitives for modern, upgradeable credential storage.</p>
+<h3><a href="https://github.com/sebastienrousseau/hsh" title="Hash (HSH)">Hash (HSH)</a></h3>
+<p class="newsroom-excerpt">Hash and digest algorithms for password storage and verification, written with a quantum-resistant posture in mind.</p>
+<p class="newsroom-more"><a href="https://github.com/sebastienrousseau/hsh" title="Hash (HSH)">Learn more <span aria-hidden="true">›</span></a></p>
 </div>
 </article>
 
 <article class="newsroom-card">
+<a class="newsroom-card-media logo" href="https://password-generator.pro" title="Password Generator Pro"><img alt="Password Generator Pro logo" src="https://cloudcdn.pro/clients/password-generator-pro/v1/logos/password-generator-pro.svg" loading="lazy" decoding="async" width="600" height="600" /></a>
 <div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Rust · Primitives</span>
-<h3><a href="https://github.com/sebastienrousseau/mini-functions" title="mini-functions">mini-functions</a></h3>
-<p class="newsroom-excerpt">A toolkit of audited primitives — claims, hashing, dates, logging — for assembling secure financial-grade services.</p>
+<h3><a href="https://password-generator.pro" title="Password Generator Pro">Password Generator Pro</a></h3>
+<p class="newsroom-excerpt">A command-line tool for generating random passwords, backed by audited cryptographic primitives.</p>
+<p class="newsroom-more"><a href="https://password-generator.pro" title="Password Generator Pro">Learn more <span aria-hidden="true">›</span></a></p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media logo" href="https://github.com/sebastienrousseau/mini-functions" title="Mini Functions"><img alt="Mini Functions logo" src="https://cloudcdn.pro/clients/mini-functions/v1/logos/mini-functions.svg" loading="lazy" decoding="async" width="600" height="600" /></a>
+<div class="newsroom-card-body">
+<h3><a href="https://github.com/sebastienrousseau/mini-functions" title="Mini Functions">Mini Functions</a></h3>
+<p class="newsroom-excerpt">A utility and wrapper-function library for Rust, including hashing and claims primitives.</p>
+<p class="newsroom-more"><a href="https://github.com/sebastienrousseau/mini-functions" title="Mini Functions">Learn more <span aria-hidden="true">›</span></a></p>
 </div>
 </article>
 
 </div>
 </section>
 
-<section class="story-why" aria-label="Why it matters">
-<h2>Why this matters for banks and FIs.</h2>
-<p><strong>Harvest-now-decrypt-later is live.</strong> Data with a 10–25 year confidentiality tail is exposed the moment it is captured — migration cannot wait for a working quantum computer.</p>
-<p><strong>Standards-tracking.</strong> Implementations follow the published NIST FIPS standards, so they map onto regulator and auditor expectations.</p>
-<p><strong>Memory-safe.</strong> Written in Rust with zero <code>unsafe</code> in the hot paths — the supply-chain posture regulated environments now demand.</p>
+<section class="story-why">
+<h2>Why start now</h2>
+<ul class="story-why-list">
+<li>Harvest-now-decrypt-later means the risk begins when data is captured, not when quantum computers arrive.</li>
+<li>The libraries track published NIST standards, so they map onto what auditors and regulators are likely to expect.</li>
+<li>They are written in Rust, which removes a class of memory-safety problems by default.</li>
+</ul>
 </section>
 
-<aside class="setup-finale" aria-label="Get in touch">
-<h2 class="setup-finale-headline">Building on these rails?</h2>
-<p class="setup-finale-lede">Banks, payment-service providers, and enterprises use these tools in production. Tell me what you're shipping.</p>
-<p class="setup-finale-cta"><a class="pill" href="/contact/index.html">Talk to us</a> <a class="pill ghost" href="/projects/index.html">Back to all products</a></p>
+<aside class="setup-finale" aria-label="Contact">
+<p class="setup-finale-eyebrow">CONTACT</p>
+<h2 class="setup-finale-headline">Scoping a migration? Let us talk.</h2>
+<p class="setup-finale-lede">Tell me what you need to protect. I will show you where these primitives fit and what an early step looks like.</p>
+<p class="setup-finale-cta"><a class="pill" href="/contact/index.html">Get in touch</a> <a class="pill ghost" href="/projects/index.html">All projects</a></p>
 </aside>

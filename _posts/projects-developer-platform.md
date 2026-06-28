@@ -3,7 +3,7 @@
 # Front Matter (YAML)
 
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
-banner_alt: "Clean architectural lines in soft light — symbolising dependable developer-platform foundations."
+banner_alt: "Clean architectural lines in soft light, representing dependable developer foundations."
 banner_height: "1000"
 banner_width: "1600"
 banner: "https://cloudcdn.pro/stocks/images/alex-shuper-YYZnrK8NrSw-unsplash-1920.webp"
@@ -13,7 +13,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "June 27, 2026"
-description: "Audited, zero-unsafe Rust libraries — including noyalib (YAML 1.2 with full serde) and the Static Site Generator behind this site — with provenance signing and SBOMs for regulated supply chains."
+description: "Open-source Rust libraries: noyalib (YAML), the static site generator, logging, dates, and scaffolding. Published with SBOMs and Sigstore signatures."
 format-detection: "telephone=no"
 hreflang: "en"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -25,7 +25,7 @@ image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "Rust libraries, noyalib, static site generator, YAML, serde, SBOM, provenance, developer platform, supply chain"
 last_reviewed: "2026-06-27"
 language: "en-GB"
-layout: "page"
+layout: "story"
 locale: "en_GB"
 logo_alt: "Logo for Sebastien Rousseau"
 logo_height: "44"
@@ -33,14 +33,14 @@ logo_width: "44"
 logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 menu: ""
 measurementID: "G-169G4ET5HQ"
-name: "Sebastien Rousseau"
+name: "Foundations for your engineers."
 permalink: "https://sebastienrousseau.com/projects-developer-platform"
 rating: "general"
 referrer: "no-referrer"
 revisit-after: "30 days"
 robots: "index, follow"
 short_name: "sebastienrousseau"
-subtitle: "Audited, zero-unsafe Rust libraries — and the static site generator that builds this very site."
+subtitle: "The audited, signed libraries behind this site. Yours to build on."
 tags: "Rust, noyalib, static site generator, developer platform, supply chain"
 theme-color: "0, 67, 165"
 title: "Developer-platform foundations."
@@ -52,7 +52,7 @@ atom_link: "https://sebastienrousseau.com/projects-developer-platform/rss.xml"
 category: "Products"
 docs: https://validator.w3.org/feed/docs/rss2.html
 generator: "Static Site Generator (SSG) (version 0.0.26)"
-item_description: "Audited, zero-unsafe Rust libraries — including noyalib (YAML 1.2 with full serde) and the Static Site Generator behind this site — with provenance signing and SBOMs for regulated supply chains."
+item_description: "Open-source Rust libraries: noyalib (YAML), the static site generator, logging, dates, and scaffolding. Published with SBOMs and Sigstore signatures."
 item_guid: "https://sebastienrousseau.com/projects-developer-platform/rss.xml"
 item_link: "https://sebastienrousseau.com/projects-developer-platform/rss.xml"
 item_pub_date: "Sat, 27 Jun 2026 06:06:06 +0000"
@@ -79,9 +79,9 @@ msapplication-navbutton-color: "0, 67, 165"
 # Twitter Card
 twitter_card: "summary_large_image"
 twitter_creator: "@wwdseb"
-twitter_description: "Audited, zero-unsafe Rust libraries — including noyalib (YAML 1.2 with full serde) and the Static Site Generator behind this site — with provenance signing and SBOMs for regulated supply chains."
+twitter_description: "Open-source Rust libraries: noyalib (YAML), the static site generator, logging, dates, and scaffolding. Published with SBOMs and Sigstore signatures."
 twitter_image: "https://cloudcdn.pro/stocks/images/alex-shuper-YYZnrK8NrSw-unsplash-1920.webp"
-twitter_image_alt: "Clean architectural lines in soft light — symbolising dependable developer-platform foundations."
+twitter_image_alt: "Clean architectural lines in soft light, representing dependable developer foundations."
 twitter_site: "@wwdseb"
 twitter_title: "Developer-platform foundations."
 twitter_url: "https://sebastienrousseau.com/projects-developer-platform"
@@ -97,58 +97,91 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 site_software: "Static Site Generator, Rust"
 
 ---
+<p class="story-intro">Most of this site is built and signed with these libraries. YAML, logging, dates, scaffolding, the generator itself, and Euxis to scan the code. Each is open source, ships with a software bill of materials and a Sigstore signature, and runs on your own infrastructure. Read every line. Keep it in-house.</p>
 
-<p class="story-lede">The fastest way to ship securely is to build on foundations that are already audited, signed, and reproducible. These libraries power production systems and this site itself — and every release carries provenance for regulated supply chains.</p>
+<section class="newsroom" id="tools">
+<header class="cat-section-head"><p class="cat-kicker">THE LIBRARIES</p><h2 class="cat-headline">The building blocks behind this site.</h2></header>
 
-<section class="newsroom" id="whats-inside">
-<header class="newsroom-section-head"><p class="newsroom-kicker">WHAT'S INSIDE</p><h2>Foundations your engineers can trust.</h2></header>
-
-<div class="newsroom-grid">
+<div class="newsroom-grid cat-grid">
 
 <article class="newsroom-card">
+<a class="newsroom-card-media logo" href="https://github.com/sebastienrousseau/euxis" title="Euxis"><img alt="Euxis logo" src="https://cloudcdn.pro/clients/euxis/v1/logos/euxis.svg" loading="lazy" decoding="async" width="600" height="600" /></a>
 <div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Rust · YAML 1.2</span>
+<h3><a href="https://github.com/sebastienrousseau/euxis" title="Euxis">Euxis</a></h3>
+<p class="newsroom-excerpt">A code security scanner for eight languages, combining static analysis, taint analysis, and LLM verification. Outputs Sigstore-signed SARIF, SBOM, and OpenVEX bundles for supply-chain review.</p>
+<p class="newsroom-more"><a href="https://github.com/sebastienrousseau/euxis" title="Euxis">Learn more <span aria-hidden="true">›</span></a></p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media logo" href="https://github.com/sebastienrousseau/noyalib" title="noyalib"><img alt="noyalib logo" src="https://cloudcdn.pro/clients/noyalib/v1/logos/noyalib.svg" loading="lazy" decoding="async" width="600" height="600" /></a>
+<div class="newsroom-card-body">
 <h3><a href="https://github.com/sebastienrousseau/noyalib" title="noyalib">noyalib</a></h3>
-<p class="newsroom-excerpt">A YAML 1.2 parser and serialiser with full serde integration and zero unsafe code — plus a CLI, LSP, MCP, and WASM build.</p>
+<p class="newsroom-excerpt">A pure-Rust YAML 1.2 implementation with zero unsafe code, serde support, and JSON-Schema validation.</p>
+<p class="newsroom-more"><a href="https://github.com/sebastienrousseau/noyalib" title="noyalib">Learn more <span aria-hidden="true">›</span></a></p>
 </div>
 </article>
 
 <article class="newsroom-card">
+<a class="newsroom-card-media logo" href="https://github.com/sebastienrousseau/static-site-generator" title="Static Site Generator"><img alt="Static Site Generator logo" src="https://cloudcdn.pro/clients/static-site-generator/v1/logos/static-site-generator.svg" loading="lazy" decoding="async" width="600" height="600" /></a>
 <div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Rust · SSG</span>
 <h3><a href="https://github.com/sebastienrousseau/static-site-generator" title="Static Site Generator">Static Site Generator</a></h3>
-<p class="newsroom-excerpt">A secure-by-default static site generator: WCAG AAA validation, CSP/SRI hardening, CycloneDX SBOM, WebAssembly target, and 28-locale i18n.</p>
+<p class="newsroom-excerpt">The generator that builds this site, with WCAG AAA validation and CSP and SRI hardening.</p>
+<p class="newsroom-more"><a href="https://github.com/sebastienrousseau/static-site-generator" title="Static Site Generator">Learn more <span aria-hidden="true">›</span></a></p>
 </div>
 </article>
 
 <article class="newsroom-card">
+<a class="newsroom-card-media logo" href="https://github.com/sebastienrousseau/libmake" title="LibMake"><img alt="LibMake logo" src="https://cloudcdn.pro/clients/libmake/v1/logos/libmake.svg" loading="lazy" decoding="async" width="600" height="600" /></a>
 <div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Rust · Library</span>
-<h3><a href="https://github.com/sebastienrousseau/libmake" title="libmake">libmake</a></h3>
-<p class="newsroom-excerpt">A code generator that scaffolds production-ready Rust libraries — tests, benchmarks, CI, and dual-licence files — from a single command.</p>
+<h3><a href="https://github.com/sebastienrousseau/libmake" title="LibMake">LibMake</a></h3>
+<p class="newsroom-excerpt">A scaffold generator for Rust libraries, emitting tests, benchmarks, and CI configuration.</p>
+<p class="newsroom-more"><a href="https://github.com/sebastienrousseau/libmake" title="LibMake">Learn more <span aria-hidden="true">›</span></a></p>
 </div>
 </article>
 
 <article class="newsroom-card">
+<a class="newsroom-card-media logo" href="https://rustlogs.com/" title="RustLogs (RLG)"><img alt="RustLogs (RLG) logo" src="https://cloudcdn.pro/clients/rlg/v1/logos/rlg.svg" loading="lazy" decoding="async" width="600" height="600" /></a>
 <div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Rust · Library</span>
-<h3><a href="https://github.com/sebastienrousseau/rlg" title="rlg">rlg</a></h3>
-<p class="newsroom-excerpt">A fast, structured, application-level logging library for Rust services.</p>
+<h3><a href="https://rustlogs.com/" title="RustLogs (RLG)">RustLogs (RLG)</a></h3>
+<p class="newsroom-excerpt">A logging library for Rust with structured formats and asynchronous logging.</p>
+<p class="newsroom-more"><a href="https://rustlogs.com/" title="RustLogs (RLG)">Learn more <span aria-hidden="true">›</span></a></p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media logo" href="https://serdeyml.com/" title="Serde YML"><img alt="Serde YML logo" src="https://cloudcdn.pro/clients/serde_yml/v1/logos/serde_yml.svg" loading="lazy" decoding="async" width="600" height="600" /></a>
+<div class="newsroom-card-body">
+<h3><a href="https://serdeyml.com/" title="Serde YML">Serde YML</a></h3>
+<p class="newsroom-excerpt">YAML serialisation and deserialisation for Rust data structures, built on Serde.</p>
+<p class="newsroom-more"><a href="https://serdeyml.com/" title="Serde YML">Learn more <span aria-hidden="true">›</span></a></p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media logo" href="https://github.com/sebastienrousseau/dtt" title="DateTime (DTT)"><img alt="DateTime (DTT) logo" src="https://cloudcdn.pro/clients/dtt/v1/logos/dtt.svg" loading="lazy" decoding="async" width="600" height="600" /></a>
+<div class="newsroom-card-body">
+<h3><a href="https://github.com/sebastienrousseau/dtt" title="DateTime (DTT)">DateTime (DTT)</a></h3>
+<p class="newsroom-excerpt">A date and time library for Rust: ISO 8601 formatting and time-zone handling.</p>
+<p class="newsroom-more"><a href="https://github.com/sebastienrousseau/dtt" title="DateTime (DTT)">Learn more <span aria-hidden="true">›</span></a></p>
 </div>
 </article>
 
 </div>
 </section>
 
-<section class="story-why" aria-label="Why it matters">
-<h2>Why this matters for engineering leaders.</h2>
-<p><strong>Supply-chain ready.</strong> Releases ship with CycloneDX SBOMs and Sigstore signing — the provenance regulated buyers ask for.</p>
-<p><strong>Zero-<code>unsafe</code>.</strong> Memory safety by construction, validated in CI.</p>
-<p><strong>Proven.</strong> The same libraries that build and secure this site are the ones you would adopt.</p>
+<section class="story-why">
+<h2>Why build on them</h2>
+<ul class="story-why-list">
+<li>They are already audited and signed, so your team builds on them instead of maintaining the equivalents in-house.</li>
+<li>Every release ships a CycloneDX SBOM and a Sigstore signature, which helps with supply-chain review.</li>
+<li>The licences are permissive, so commercial use is straightforward.</li>
+</ul>
 </section>
 
-<aside class="setup-finale" aria-label="Get in touch">
-<h2 class="setup-finale-headline">Building on these rails?</h2>
-<p class="setup-finale-lede">Banks, payment-service providers, and enterprises use these tools in production. Tell me what you're shipping.</p>
-<p class="setup-finale-cta"><a class="pill" href="/contact/index.html">Talk to us</a> <a class="pill ghost" href="/projects/index.html">Back to all products</a></p>
+<aside class="setup-finale" aria-label="Contact">
+<p class="setup-finale-eyebrow">CONTACT</p>
+<h2 class="setup-finale-headline">Want to build on them? Let us talk.</h2>
+<p class="setup-finale-lede">Tell me what you are building. I will point you to the right libraries.</p>
+<p class="setup-finale-cta"><a class="pill" href="/contact/index.html">Get in touch</a> <a class="pill ghost" href="/projects/index.html">All projects</a></p>
 </aside>

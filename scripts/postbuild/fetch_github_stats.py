@@ -49,6 +49,7 @@ REPOS: tuple[str, ...] = (
     "sebastienrousseau/libmake",
     "sebastienrousseau/rlg",
     "sebastienrousseau/static-site-generator",
+    "sebastienrousseau/euxis",
     "sebastienrousseau/noyalib",
     "sebastienrousseau/serde_yml",
     "sebastienrousseau/crypto-service",

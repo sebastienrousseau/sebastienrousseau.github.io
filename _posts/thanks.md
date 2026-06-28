@@ -101,7 +101,7 @@ site_software: "Static Site Generator, Rust"
 
 ---
 
-Your message is in. A reply is on its way — typically within 48 hours, often sooner if you've left enough context. In the meantime, three good places to spend the next five minutes.
+Your message is in. A reply is on its way, typically within 48 hours, often sooner if you've left enough context. In the meantime, three good places to spend the next five minutes.
 
 <section class="story-cta thanks-onward" aria-labelledby="thanks-onward" data-reveal>
   <header class="story-head">
@@ -112,7 +112,7 @@ Your message is in. A reply is on its way — typically within 48 hours, often s
     <a class="story-card" href="/articles/index.html">
       <span class="story-card-eyebrow">Research notes</span>
       <h3 class="story-card-title">Read the latest article</h3>
-      <p class="story-card-body">Applied AI, ISO 20022, post-quantum cryptography — written for senior architects making the call.</p>
+      <p class="story-card-body">Applied AI, ISO 20022, post-quantum cryptography, written for senior architects making the call.</p>
       <span class="story-card-link">Browse the archive</span>
     </a>
     <a class="story-card" href="/case-studies/index.html">
@@ -124,7 +124,7 @@ Your message is in. A reply is on its way — typically within 48 hours, often s
     <a class="story-card" href="/playlists/index.html">
       <span class="story-card-eyebrow">Off the clock</span>
       <h3 class="story-card-title">Listen while you read</h3>
-      <p class="story-card-body">Five tonal lanes of music — soul, morning, electronic, hip-hop, global — what plays while these articles get written.</p>
+      <p class="story-card-body">Five tonal lanes of music, soul, morning, electronic, hip-hop, global, what plays while these articles get written.</p>
       <span class="story-card-link">Open the lanes</span>
     </a>
   </div>

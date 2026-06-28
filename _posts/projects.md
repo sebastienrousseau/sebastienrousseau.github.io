@@ -40,7 +40,7 @@ referrer: "no-referrer"
 revisit-after: "7 days"
 robots: "index, follow"
 short_name: "sebastienrousseau"
-subtitle: "Open-source projects in Python, Rust and JavaScript for the future of finance."
+subtitle: "Payments, post-quantum security, and applied AI. Open source, audited, and built to run on your own infrastructure."
 tags: "Artificial Intelligence, Voice Assistant, Audio Analysis, Quantum Computing, Quantum Cryptography, CRYSTALS-Kyber, ISO 20022, Payment Automation, Bank Statement Parsing, Finance, Rust, Static Site Generator, Web Development, Password Generation, Cryptography, Rust Library, Logging, Serialization, YAML, Mersenne Twister"
 theme-color: "0, 67, 165"
 title: "Innovative and Creative Solutions Built with Open Source"
@@ -52,7 +52,7 @@ atom_link: "https://sebastienrousseau.com/projects/rss.xml"
 category: "Technology"
 docs: "https://validator.w3.org/feed/docs/rss2.html"
 generator: "Static Site Generator (SSG) (version 0.0.26)"
-item_description: "Explore my open-source projects and discover how I leverage open-source software to deliver groundbreaking solutions."
+item_description: "Open-source tools for payments, post-quantum security, and applied AI. Built for financial services and designed to run on your own infrastructure."
 item_guid: "https://sebastienrousseau.com/projects/rss.xml"
 item_link: "https://sebastienrousseau.com/projects/rss.xml"
 item_pub_date: "Mon, 01 Apr 2024 06:06:06 +0000"
@@ -81,7 +81,7 @@ msapplication-navbutton-color: "0, 67, 165"
 
 twitter_card: "summary"
 twitter_creator: "@wwdseb"
-twitter_description: "Explore my open-source projects and discover how I leverage open-source software to deliver groundbreaking solutions."
+twitter_description: "Open-source tools for payments, post-quantum security, and applied AI. Built for financial services and designed to run on your own infrastructure."
 twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 twitter_image_alt: "Logo of Sebastien Rousseau"
 twitter_site: "@wwdseb"
@@ -100,23 +100,17 @@ site_software: "Static Site Generator, Rust"
 
 ---
 
-<p class="setup-hero-eyebrow rotating-title" aria-label="Open source for banks, financial institutions, enterprise and small business."><span class="rotating-title-lead">Open source for</span><span class="rotating-title-mask" aria-hidden="true"><span class="rotating-title-words"><span>banks.</span><span>financial institutions.</span><span>enterprise.</span><span>small business.</span><span>banks.</span></span></span></p>
-<p class="setup-hero-cta">
-<a class="pill" href="/contact/index.html">Talk to us</a>
-<a class="pill ghost" href="#catalog">Browse all products</a>
-</p>
-
 <section class="proof-rail projects-proof" aria-label="Open source by the numbers">
 <div class="kpi-cell">
-  <span class="kpi-cell-value">171k</span>
+  <span class="kpi-cell-value">37.1M</span>
   <span class="kpi-cell-label">Open-source downloads</span>
 </div>
 <div class="kpi-cell">
-  <span class="kpi-cell-value">676</span>
+  <span class="kpi-cell-value">663</span>
   <span class="kpi-cell-label">GitHub stars</span>
 </div>
 <div class="kpi-cell">
-  <span class="kpi-cell-value">80</span>
+  <span class="kpi-cell-value">84</span>
   <span class="kpi-cell-label">Sigstore-signed articles</span>
 </div>
 <div class="kpi-cell">
@@ -125,43 +119,43 @@ site_software: "Static Site Generator, Rust"
 </div>
 </section>
 
-<section class="setup-three" aria-labelledby="setup-three-heading"><header class="setup-three-head"><p class="setup-three-kicker">WHAT WE BUILD</p><h2 id="setup-three-heading" class="setup-three-headline">Three areas of practice. <span class="setup-three-headline-soft">One philosophy.</span></h2></header><section class="section-content">
-<figure class="section-content-media">
-<img alt="Aerial view of illuminated city interchanges at night — the cross-border rails that move structured payments." src="https://cloudcdn.pro/stocks/images/denys-nevozhai-2vmT5_FeMck-1920.webp" loading="lazy" decoding="async" width="1600" height="1000" />
+<section class="setup-three" aria-labelledby="setup-three-heading"><header class="setup-three-head"><p class="setup-three-kicker">BUILT FOR FINANCIAL SERVICES</p><h2 id="setup-three-heading" class="setup-three-headline">Three areas of work. <span class="setup-three-headline-soft">Payments, security, and tooling.</span></h2></header><div class="areas-grid"><article class="area-card">
+<figure class="area-card-media">
+<img alt="Aerial view of city interchanges at night, representing cross-border payment rails." src="https://cloudcdn.pro/stocks/images/denys-nevozhai-2vmT5_FeMck-1920.webp" loading="lazy" decoding="async" width="1600" height="1000" />
 </figure>
-<div class="section-content-copy">
-<p class="section-content-kicker">PAYMENTS & ISO 20022</p>
-<h3 class="section-content-headline">Move money in the global standard — without rebuilding your stack.</h3>
-<p class="section-content-body">A complete ISO&nbsp;20022 toolchain: initiate payments (<strong>pain.001</strong>), clear interbank (<strong>pacs.008</strong>), reconcile statements (<strong>camt.053</strong>), manage accounts (<strong>acmt.001</strong>), and ingest any bank statement — each shipped as a suite with IDE (LSP) and AI-assistant (MCP) integrations. Built for the banks, PSPs, and corporate treasuries facing the CBPR+ and SEPA deadlines.</p>
-<p class="section-content-cta"><a href="/projects-payments/index.html" class="setup-card-link">Read the payments story <span aria-hidden="true">›</span></a></p>
+<div class="area-card-body">
+<p class="area-card-kicker">PAYMENTS & ISO 20022</p>
+<h3 class="area-card-headline">Payments in the global <span class="ac">standard.</span></h3>
+<p class="area-card-text">ISO&nbsp;20022 covers the full message lifecycle. These libraries generate <strong>pain.001</strong> initiation files, build and validate <strong>pacs.008</strong> transfers, read <strong>camt.053</strong> statements, and handle <strong>acmt.001</strong> account management, with parsers for older formats. You can adopt one library at a time instead of replacing a core system.</p>
+<p class="area-card-cta"><a href="/projects-payments/index.html">Read the payments story <span aria-hidden="true">›</span></a></p>
 </div>
-</section>
-<section class="section-content section-content--reverse">
-<figure class="section-content-media">
-<img alt="Abstract quantum-blue light field — symbolising post-quantum cryptography for financial systems." src="https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA-1920.webp" loading="lazy" decoding="async" width="1600" height="1000" />
+</article>
+<article class="area-card">
+<figure class="area-card-media">
+<img alt="Abstract blue light field, representing post-quantum cryptography for financial systems." src="https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA-1920.webp" loading="lazy" decoding="async" width="1600" height="1000" />
 </figure>
-<div class="section-content-copy">
-<p class="section-content-kicker">POST-QUANTUM SECURITY</p>
-<h3 class="section-content-headline">Stay safe past the RSA era.</h3>
-<p class="section-content-body">Memory-safe Rust implementations of <strong>ML-KEM / CRYSTALS-Kyber</strong> (NIST&nbsp;FIPS&nbsp;203), hashing, and quantum-resistant primitives — the building blocks for harvest-now-decrypt-later resilience across authentication, settlement, and long-lived financial records.</p>
-<p class="section-content-cta"><a href="/projects-post-quantum/index.html" class="setup-card-link">Read the security story <span aria-hidden="true">›</span></a></p>
+<div class="area-card-body">
+<p class="area-card-kicker">POST-QUANTUM SECURITY</p>
+<h3 class="area-card-headline">Security past the <span class="ac">RSA era.</span></h3>
+<p class="area-card-text">Some financial records stay sensitive for decades, long enough that data captured today could be read once quantum computers mature. These Rust libraries implement <strong>ML-KEM (CRYSTALS-Kyber, NIST&nbsp;FIPS&nbsp;203)</strong> along with hashing and related primitives, so a migration can begin before the deadlines force it.</p>
+<p class="area-card-cta"><a href="/projects-post-quantum/index.html">Read the security story <span aria-hidden="true">›</span></a></p>
 </div>
-</section>
-<section class="section-content">
-<figure class="section-content-media">
-<img alt="Clean architectural lines in soft light — symbolising dependable developer-platform foundations." src="https://cloudcdn.pro/stocks/images/alex-shuper-YYZnrK8NrSw-unsplash-1920.webp" loading="lazy" decoding="async" width="1600" height="1000" />
+</article>
+<article class="area-card">
+<figure class="area-card-media">
+<img alt="Clean architectural lines in soft light, representing dependable developer foundations." src="https://cloudcdn.pro/stocks/images/alex-shuper-YYZnrK8NrSw-unsplash-1920.webp" loading="lazy" decoding="async" width="1600" height="1000" />
 </figure>
-<div class="section-content-copy">
-<p class="section-content-kicker">DEVELOPER PLATFORM</p>
-<h3 class="section-content-headline">Foundations your engineers can trust.</h3>
-<p class="section-content-body">Audited, zero-<code>unsafe</code> Rust libraries — including <strong>noyalib</strong> (YAML 1.2 with full serde), the <strong>Static Site Generator</strong> behind this very site, and primitives for serialisation, logging, and code generation. Provenance-signed, SBOM-backed, and ready for regulated supply chains.</p>
-<p class="section-content-cta"><a href="/projects-developer-platform/index.html" class="setup-card-link">Read the platform story <span aria-hidden="true">›</span></a></p>
+<div class="area-card-body">
+<p class="area-card-kicker">DEVELOPER PLATFORM</p>
+<h3 class="area-card-headline">Foundations for your <span class="ac">engineers.</span></h3>
+<p class="area-card-text">The same Rust libraries that build and secure this site. They include <strong>noyalib</strong> for YAML and the <strong>Static Site Generator</strong> itself, published with CycloneDX SBOMs and Sigstore signatures. Your engineers build on them instead of maintaining the equivalents in-house.</p>
+<p class="area-card-cta"><a href="/projects-developer-platform/index.html">Read the platform story <span aria-hidden="true">›</span></a></p>
 </div>
-</section></section>
+</article></div></section>
 
 <section class="newsroom" id="catalog">
 
-<header class="cat-section-head" id="cat-payments"><p class="cat-kicker">PAYMENTS</p><h2 class="cat-headline">Payments and settlement.</h2><p class="cat-lede">ISO 20022 tooling for the global migration. Pain.001 file generation, pacs.008 cross-border credit transfers, and structured bank-statement parsing.</p></header>
+<header class="cat-section-head" id="cat-payments"><p class="cat-kicker">AUTOMATED FINANCIAL INFRASTRUCTURE</p><h2 class="cat-headline">Financial data, untangled.</h2><p class="cat-lede">Payment files and bank statements, without the friction. These tools generate the full ISO 20022 message lifecycle and parse messy real-world statements with deterministic precision. Bring your CSVs, PDFs, or databases. The data just flows.</p></header>
 
 <div class="newsroom-grid cat-grid">
 
@@ -170,9 +164,9 @@ site_software: "Static Site Generator, Rust"
 <img alt="Banner for the pain001 open-source payments library" src="https://cloudcdn.pro/clients/pain001/v1/logos/pain001.svg" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Featured · Python · ISO 20022</span>
 <h3><a href="https://pain001.com" title="pain001">pain001</a></h3>
-<p class="newsroom-excerpt">A Python library that automates ISO 20022 pain.001 payment file creation from CSV or SQLite. Built for the global migration to structured cross-border messages.</p>
+<p class="newsroom-excerpt">Generates ISO 20022 pain.001 files from CSV or SQLite. Banks and payment providers use it to produce structured credit-transfer messages without rebuilding existing systems.</p>
+<p class="newsroom-more"><a href="https://pain001.com" title="pain001">Learn more <span aria-hidden="true">›</span></a></p>
 </div>
 </article>
 
@@ -181,9 +175,9 @@ site_software: "Static Site Generator, Rust"
 <img alt="Banner for the pacs008 ISO 20022 toolkit" src="https://cloudcdn.pro/clients/pacs008/v1/logos/pacs008.svg" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Python · ISO 20022</span>
 <h3><a href="https://pacs008.com/" title="pacs008">pacs008</a></h3>
-<p class="newsroom-excerpt">Generate, validate, and deliver ISO 20022 pacs.008 payment messages for FI-to-FI customer credit transfers. JSON Schema + XSD validation, IBAN across 75 countries, GDPR/PCI-DSS-compliant PII masking.</p>
+<p class="newsroom-excerpt">Generates, validates, and delivers ISO 20022 pacs.008 messages for bank-to-bank customer credit transfers. Includes JSON Schema and XSD validation, IBAN checks across 75 countries, and PII masking for GDPR and PCI-DSS.</p>
+<p class="newsroom-more"><a href="https://pacs008.com/" title="pacs008">Learn more <span aria-hidden="true">›</span></a></p>
 </div>
 </article>
 
@@ -192,9 +186,9 @@ site_software: "Static Site Generator, Rust"
 <img alt="Logo for the camt053 bank-statement suite" src="https://cloudcdn.pro/clients/camt053/v1/logos/camt053.svg" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Python · ISO 20022 suite</span>
 <h3><a href="https://github.com/sebastienrousseau/camt053" title="camt053">camt053</a></h3>
-<p class="newsroom-excerpt">Read ISO 20022 camt.053 Bank-to-Customer statements and extract balances, entries, and transaction detail into structured data — with MT940 loading, XLSX export, and IDE (LSP) and AI-assistant (MCP) integrations.</p>
+<p class="newsroom-excerpt">Reads ISO 20022 camt.053 bank-to-customer statements and extracts balances, entries, and transaction detail into structured data. Includes MT940 loading, XLSX export, and editor and AI-assistant integrations.</p>
+<p class="newsroom-more"><a href="https://github.com/sebastienrousseau/camt053" title="camt053">Learn more <span aria-hidden="true">›</span></a></p>
 </div>
 </article>
 
@@ -203,9 +197,9 @@ site_software: "Static Site Generator, Rust"
 <img alt="Logo for the acmt001 account-management suite" src="https://cloudcdn.pro/clients/acmt001/v1/logos/acmt001.svg" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Python · ISO 20022 suite</span>
 <h3><a href="https://github.com/sebastienrousseau/acmt001" title="acmt001">acmt001</a></h3>
-<p class="newsroom-excerpt">Enterprise-grade ISO 20022 account-management messaging — open, maintain, close, switch, and verify bank accounts from plain data files, with LSP and MCP tooling for engineering and AI workflows.</p>
+<p class="newsroom-excerpt">ISO 20022 account-management messaging. Opens, maintains, closes, switches, and verifies bank accounts from plain data files, with editor and AI-assistant tooling.</p>
+<p class="newsroom-more"><a href="https://github.com/sebastienrousseau/acmt001" title="acmt001">Learn more <span aria-hidden="true">›</span></a></p>
 </div>
 </article>
 
@@ -214,9 +208,9 @@ site_software: "Static Site Generator, Rust"
 <img alt="Banner for Bank Statement Parser" src="https://cloudcdn.pro/clients/bankstatementparser/v1/logos/bankstatementparser.svg" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Python · Finance</span>
 <h3><a href="https://bankstatementparser.com/" title="Bank Statement Parser">Bank Statement Parser</a></h3>
-<p class="newsroom-excerpt">A finance-grade Python toolkit that turns multi-format bank statements into structured data — for the realities of real-world statement files and the audit demands of regulated environments.</p>
+<p class="newsroom-excerpt">A Python toolkit that turns bank statements in several formats into structured data. Built for messy real-world files and for audit requirements.</p>
+<p class="newsroom-more"><a href="https://bankstatementparser.com/" title="Bank Statement Parser">Learn more <span aria-hidden="true">›</span></a></p>
 </div>
 </article>
 
@@ -225,9 +219,9 @@ site_software: "Static Site Generator, Rust"
 <img alt="Logo for NaluFX, AI-driven cash allocation in Rust" src="https://cloudcdn.pro/clients/nalufx/v1/logos/nalufx.svg" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Rust · Treasury · AI</span>
 <h3><a href="https://github.com/sebastienrousseau/nalufx" title="NaluFX">NaluFX</a></h3>
-<p class="newsroom-excerpt">A Rust application for optimising cash allocation across complex fund structures using AI-driven forecasting. Aimed at treasury, fund accounting, and asset-allocation use cases inside banks and asset managers.</p>
+<p class="newsroom-excerpt">A Rust application for cash allocation across fund structures, using forecasting to inform the split. Aimed at treasury, fund accounting, and asset allocation.</p>
+<p class="newsroom-more"><a href="https://github.com/sebastienrousseau/nalufx" title="NaluFX">Learn more <span aria-hidden="true">›</span></a></p>
 </div>
 </article>
 
@@ -236,15 +230,15 @@ site_software: "Static Site Generator, Rust"
 <img alt="Logo for QRC, a Rust QR-code library" src="https://cloudcdn.pro/clients/qrc/v1/logos/qrc.svg" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Rust · Payments QR</span>
 <h3><a href="https://github.com/sebastienrousseau/qrc" title="QRC">QRC</a></h3>
-<p class="newsroom-excerpt">A Rust library for generating and manipulating QR-code images in multiple formats. Direct payment uses include EPC QR Codes for SEPA Credit Transfers, payment-link QR for merchant collection, and step-up authentication flows.</p>
+<p class="newsroom-excerpt">A Rust library for generating and reading QR codes in several formats. Payment uses include EPC QR codes for SEPA credit transfers, payment links for merchant collection, and step-up authentication.</p>
+<p class="newsroom-more"><a href="https://github.com/sebastienrousseau/qrc" title="QRC">Learn more <span aria-hidden="true">›</span></a></p>
 </div>
 </article>
 
 </div>
 
-<header class="cat-section-head" id="cat-quantum"><p class="cat-kicker">POST-QUANTUM CRYPTOGRAPHY</p><h2 class="cat-headline">Post-quantum cryptography.</h2><p class="cat-lede">Rust implementations of CRYSTALS-Kyber, hash and digest primitives, and quantum-resistant building blocks for financial-grade authentication.</p></header>
+<header class="cat-section-head" id="cat-quantum"><p class="cat-kicker">POST-QUANTUM FINANCIAL SECURITY</p><h2 class="cat-headline">Quantum-safe. Enterprise ready.</h2><p class="cat-lede">Security built for the quantum era, applied today. These libraries track the NIST standards for key encapsulation and hashing, so you can future-proof financial infrastructure long before the threat lands.</p></header>
 
 <div class="newsroom-grid cat-grid">
 
@@ -253,9 +247,9 @@ site_software: "Static Site Generator, Rust"
 <img alt="Banner for KyberLib" src="https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Rust · Quantum</span>
 <h3><a href="https://kyberlib.com/" title="KyberLib">KyberLib</a></h3>
-<p class="newsroom-excerpt">A robust Rust implementation of CRYSTALS-Kyber, the NIST FIPS 203 standard for general-purpose post-quantum key encapsulation.</p>
+<p class="newsroom-excerpt">A Rust implementation of CRYSTALS-Kyber, the NIST FIPS 203 standard for post-quantum key encapsulation.</p>
+<p class="newsroom-more"><a href="https://kyberlib.com/" title="KyberLib">Learn more <span aria-hidden="true">›</span></a></p>
 </div>
 </article>
 
@@ -264,9 +258,9 @@ site_software: "Static Site Generator, Rust"
 <img alt="Banner for the Hash (HSH) Rust library" src="https://cloudcdn.pro/clients/hsh/v1/logos/hsh.svg" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Rust · Security</span>
 <h3><a href="https://github.com/sebastienrousseau/hsh" title="Hash (HSH)">Hash (HSH)</a></h3>
-<p class="newsroom-excerpt">Secure hash and digest algorithms for password encryption and verification, designed with a quantum-resistant posture for the post-PQC era.</p>
+<p class="newsroom-excerpt">Hash and digest algorithms for password storage and verification, written with a quantum-resistant posture in mind.</p>
+<p class="newsroom-more"><a href="https://github.com/sebastienrousseau/hsh" title="Hash (HSH)">Learn more <span aria-hidden="true">›</span></a></p>
 </div>
 </article>
 
@@ -275,26 +269,37 @@ site_software: "Static Site Generator, Rust"
 <img alt="Banner for Password Generator Pro" src="https://cloudcdn.pro/clients/password-generator-pro/v1/logos/password-generator-pro.svg" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Rust · Security</span>
 <h3><a href="https://password-generator.pro" title="Password Generator Pro">Password Generator Pro</a></h3>
-<p class="newsroom-excerpt">A fast, simple, and powerful cross-platform CLI for generating strong, unique, and random passwords backed by audited cryptographic primitives.</p>
+<p class="newsroom-excerpt">A cross-platform command-line tool for generating random passwords, backed by audited cryptographic primitives.</p>
+<p class="newsroom-more"><a href="https://password-generator.pro" title="Password Generator Pro">Learn more <span aria-hidden="true">›</span></a></p>
 </div>
 </article>
 
 </div>
 
-<header class="cat-section-head" id="cat-ai"><p class="cat-kicker">AI AND VOICE</p><h2 class="cat-headline">Applied artificial intelligence.</h2><p class="cat-lede">Open-source AI projects applying speech recognition, natural language, and large language models to real-world finance and productivity problems.</p></header>
+<header class="cat-section-head" id="cat-ai"><p class="cat-kicker">APPLIED AI & EXECUTIVE INTELLIGENCE</p><h2 class="cat-headline">Ask a question. Get the briefing.</h2><p class="cat-lede">AI put to work on everyday operations. Scan code for vulnerabilities, turn a question into a structured briefing, and work by voice. On your terms, without vendor lock-in.</p></header>
 
 <div class="newsroom-grid cat-grid">
+
+<article class="newsroom-card">
+<a class="newsroom-card-media logo" href="https://github.com/sebastienrousseau/euxis" title="Euxis">
+<img alt="Banner for Euxis, an open-source code security scanner" src="https://cloudcdn.pro/clients/euxis/v1/logos/euxis.svg" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<h3><a href="https://github.com/sebastienrousseau/euxis" title="Euxis">Euxis</a></h3>
+<p class="newsroom-excerpt">A code security scanner for eight languages that pairs static and taint analysis with LLM verification to cut false positives. Outputs Sigstore-signed SARIF, SBOM, and OpenVEX bundles for supply-chain review.</p>
+<p class="newsroom-more"><a href="https://github.com/sebastienrousseau/euxis" title="Euxis">Learn more <span aria-hidden="true">›</span></a></p>
+</div>
+</article>
 
 <article class="newsroom-card">
 <a class="newsroom-card-media logo" href="https://akande.co/" title="Àkàndé">
 <img alt="Banner for Àkàndé, an advanced AI voice assistant" src="https://cloudcdn.pro/clients/akande/v1/logos/akande.svg" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
-<span class="newsroom-eyebrow">AI · Voice</span>
 <h3><a href="https://akande.co/" title="Àkàndé">Àkàndé</a></h3>
-<p class="newsroom-excerpt">An advanced voice assistant using OpenAI's GPT for natural interactions, PDF summaries, and efficient caching. Built for both personal and executive use.</p>
+<p class="newsroom-excerpt">A voice assistant built on OpenAI's GPT models, with PDF summaries and response caching. Suitable for personal and executive use.</p>
+<p class="newsroom-more"><a href="https://akande.co/" title="Àkàndé">Learn more <span aria-hidden="true">›</span></a></p>
 </div>
 </article>
 
@@ -303,26 +308,26 @@ site_software: "Static Site Generator, Rust"
 <img alt="Banner for Audio Analyser" src="https://cloudcdn.pro/clients/audioanalyser/v1/logos/audioanalyser.svg" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
-<span class="newsroom-eyebrow">AI · Speech</span>
 <h3><a href="https://audioanalyser.co/" title="Audio Analyser">Audio Analyser</a></h3>
-<p class="newsroom-excerpt">Convert audio to text in real-time using advanced AI speech recognition. Designed to unlock actionable insights from audio data and enhance customer and employee experience.</p>
+<p class="newsroom-excerpt">Converts audio to text in real time using AI speech recognition. Aimed at analysing recorded conversations and meetings.</p>
+<p class="newsroom-more"><a href="https://audioanalyser.co/" title="Audio Analyser">Learn more <span aria-hidden="true">›</span></a></p>
 </div>
 </article>
 
 <article class="newsroom-card">
 <a class="newsroom-card-media logo" href="https://github.com/sebastienrousseau/crypto-service" title="Crypto Service Suite">
-<img alt="Banner for the Crypto Service Suite" src="https://cloudcdn.pro/clients/audioanalyser/v1/logos/audioanalyser.svg" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Banner for the Crypto Service Suite" src="https://cloudcdn.pro/clients/crypto-service/v1/logos/crypto-service.svg" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
-<span class="newsroom-eyebrow">JavaScript · Security</span>
 <h3><a href="https://github.com/sebastienrousseau/crypto-service" title="Crypto Service Suite">Crypto Service Suite</a></h3>
-<p class="newsroom-excerpt">A centralised cryptographic suite that solves common application crypto problems — encryption, tokenisation, transaction authorisation, code signing, and key lifecycle management.</p>
+<p class="newsroom-excerpt">A cryptographic service for common application needs: encryption, tokenisation, transaction authorisation, code signing, and key lifecycle management.</p>
+<p class="newsroom-more"><a href="https://github.com/sebastienrousseau/crypto-service" title="Crypto Service Suite">Learn more <span aria-hidden="true">›</span></a></p>
 </div>
 </article>
 
 </div>
 
-<header class="cat-section-head" id="cat-rust"><p class="cat-kicker">OPEN-SOURCE RUST</p><h2 class="cat-headline">Rust libraries and tooling.</h2><p class="cat-lede">Open-source Rust projects across serialisation, logging, code generation, math, and developer tooling — including the static site generator behind this site.</p></header>
+<header class="cat-section-head" id="cat-rust"><p class="cat-kicker">SOVEREIGN ENTERPRISE TECH</p><h2 class="cat-headline">Your hardware. Your data.</h2><p class="cat-lede">Foundations you can own. Audited, memory-safe Rust libraries that run on your infrastructure and ship with a software bill of materials and a Sigstore signature. Read every line. Vendor it. Keep it in-house.</p></header>
 
 <div class="newsroom-grid cat-grid">
 
@@ -331,9 +336,9 @@ site_software: "Static Site Generator, Rust"
 <img alt="Banner for the Static Site Generator" src="https://cloudcdn.pro/clients/static-site-generator/v1/logos/static-site-generator.svg" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Rust · SSG</span>
 <h3><a href="https://github.com/sebastienrousseau/static-site-generator" title="Static Site Generator">Static Site Generator</a></h3>
-<p class="newsroom-excerpt">A secure-by-default static site generator in Rust. WCAG AAA validation, CSP/SRI hardening, local LLM content pipeline, WebAssembly target, and 28-locale i18n.</p>
+<p class="newsroom-excerpt">A static site generator in Rust, secure by default. It includes WCAG AAA validation, CSP and SRI hardening, a local LLM content pipeline, a WebAssembly target, and 28-locale support.</p>
+<p class="newsroom-more"><a href="https://github.com/sebastienrousseau/static-site-generator" title="Static Site Generator">Learn more <span aria-hidden="true">›</span></a></p>
 </div>
 </article>
 
@@ -342,9 +347,9 @@ site_software: "Static Site Generator, Rust"
 <img alt="Banner for the noyalib Rust YAML 1.2 ecosystem" src="https://cloudcdn.pro/clients/noyalib/v1/logos/noyalib.svg" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Rust · YAML</span>
 <h3><a href="https://github.com/sebastienrousseau/noyalib" title="noyalib">noyalib</a></h3>
-<p class="newsroom-excerpt">Pure-Rust YAML 1.2 ecosystem. Zero unsafe, 100% spec compliance, streaming-first serde, lossless CST, JSON-Schema validation. Library + CLI + LSP + MCP + WASM bindings.</p>
+<p class="newsroom-excerpt">A pure-Rust YAML 1.2 implementation. Zero unsafe code, full spec compliance, streaming serde, a lossless syntax tree, and JSON-Schema validation. Ships as a library, CLI, language server, MCP server, and WASM build.</p>
+<p class="newsroom-more"><a href="https://github.com/sebastienrousseau/noyalib" title="noyalib">Learn more <span aria-hidden="true">›</span></a></p>
 </div>
 </article>
 
@@ -353,9 +358,9 @@ site_software: "Static Site Generator, Rust"
 <img alt="Banner for Serde YML" src="https://cloudcdn.pro/clients/serde_yml/v1/logos/serde_yml.svg" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Rust · Serialisation</span>
 <h3><a href="https://serdeyml.com/" title="Serde YML">Serde YML</a></h3>
-<p class="newsroom-excerpt">Effortless YAML serialisation and deserialisation of Rust data structures, built on the widely used Serde framework.</p>
+<p class="newsroom-excerpt">YAML serialisation and deserialisation for Rust data structures, built on the Serde framework.</p>
+<p class="newsroom-more"><a href="https://serdeyml.com/" title="Serde YML">Learn more <span aria-hidden="true">›</span></a></p>
 </div>
 </article>
 
@@ -364,9 +369,9 @@ site_software: "Static Site Generator, Rust"
 <img alt="Banner for the RustLogs (RLG) library" src="https://cloudcdn.pro/clients/rlg/v1/logos/rlg.svg" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Rust · Logging</span>
 <h3><a href="https://rustlogs.com/" title="RustLogs (RLG)">RustLogs (RLG)</a></h3>
-<p class="newsroom-excerpt">A flexible logging library for Rust with structured log formats, asynchronous logging, and extensive customisation options.</p>
+<p class="newsroom-excerpt">A logging library for Rust with structured formats, asynchronous logging, and configurable output.</p>
+<p class="newsroom-more"><a href="https://rustlogs.com/" title="RustLogs (RLG)">Learn more <span aria-hidden="true">›</span></a></p>
 </div>
 </article>
 
@@ -375,9 +380,9 @@ site_software: "Static Site Generator, Rust"
 <img alt="Banner for LibMake" src="https://cloudcdn.pro/clients/libmake/v1/logos/libmake.svg" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Rust · Tooling</span>
 <h3><a href="https://github.com/sebastienrousseau/libmake" title="LibMake">LibMake</a></h3>
-<p class="newsroom-excerpt">A scaffold generator that quickly helps you create high-quality Rust libraries by emitting pre-filled, opinionated templated files.</p>
+<p class="newsroom-excerpt">A scaffold generator for Rust libraries. It emits pre-filled template files for tests, benchmarks, and CI.</p>
+<p class="newsroom-more"><a href="https://github.com/sebastienrousseau/libmake" title="LibMake">Learn more <span aria-hidden="true">›</span></a></p>
 </div>
 </article>
 
@@ -386,9 +391,9 @@ site_software: "Static Site Generator, Rust"
 <img alt="Banner for the DateTime (DTT) Rust library" src="https://cloudcdn.pro/clients/dtt/v1/logos/dtt.svg" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Rust · Time</span>
 <h3><a href="https://github.com/sebastienrousseau/dtt" title="DateTime (DTT)">DateTime (DTT)</a></h3>
-<p class="newsroom-excerpt">A high-precision date and time library: day of the month, hour of the day, ISO 8601 formatting, time-zone safety, and much more.</p>
+<p class="newsroom-excerpt">A date and time library for Rust: ISO 8601 formatting, time-zone handling, and access to individual date components.</p>
+<p class="newsroom-more"><a href="https://github.com/sebastienrousseau/dtt" title="DateTime (DTT)">Learn more <span aria-hidden="true">›</span></a></p>
 </div>
 </article>
 
@@ -397,9 +402,9 @@ site_software: "Static Site Generator, Rust"
 <img alt="Banner for the Random (VRD) Rust library" src="https://cloudcdn.pro/clients/vrd/v1/logos/vrd.svg" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Rust · Math</span>
 <h3><a href="https://vrdlib.com/" title="Random (VRD)">Random (VRD)</a></h3>
-<p class="newsroom-excerpt">High-quality random number generation based on the Mersenne Twister algorithm, widely used in simulations and games.</p>
+<p class="newsroom-excerpt">Random number generation based on the Mersenne Twister algorithm, used in simulations and games.</p>
+<p class="newsroom-more"><a href="https://vrdlib.com/" title="Random (VRD)">Learn more <span aria-hidden="true">›</span></a></p>
 </div>
 </article>
 
@@ -408,9 +413,9 @@ site_software: "Static Site Generator, Rust"
 <img alt="Banner for the Common (CMN) Rust library" src="https://cloudcdn.pro/clients/cmn/v1/logos/cmn.svg" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Rust · Math</span>
 <h3><a href="https://github.com/sebastienrousseau/cmn" title="Common (CMN)">Common (CMN)</a></h3>
-<p class="newsroom-excerpt">A modern, fast, user-friendly library that makes it easy to access a wide range of mathematical and cryptographic constants.</p>
+<p class="newsroom-excerpt">A Rust library for accessing mathematical and cryptographic constants.</p>
+<p class="newsroom-more"><a href="https://github.com/sebastienrousseau/cmn" title="Common (CMN)">Learn more <span aria-hidden="true">›</span></a></p>
 </div>
 </article>
 
@@ -419,15 +424,15 @@ site_software: "Static Site Generator, Rust"
 <img alt="Banner for the Mini Functions Rust library" src="https://cloudcdn.pro/clients/mini-functions/v1/logos/mini-functions.svg" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Rust · Utility</span>
 <h3><a href="http://minifunctions.com/" title="Mini Functions">Mini Functions</a></h3>
-<p class="newsroom-excerpt">A highly performant utility and wrapper functions library for Rust, designed with optimisation and efficiency in mind.</p>
+<p class="newsroom-excerpt">A utility and wrapper-function library for Rust.</p>
+<p class="newsroom-more"><a href="http://minifunctions.com/" title="Mini Functions">Learn more <span aria-hidden="true">›</span></a></p>
 </div>
 </article>
 
 </div>
 
-<header class="cat-section-head" id="cat-web"><p class="cat-kicker">WEB AND DEVELOPER ENVIRONMENT</p><h2 class="cat-headline">Web, templates and environment.</h2><p class="cat-lede">Starter templates, two industry-focused publications, a CSS framework, and the dotfiles that keep a development environment reproducible.</p></header>
+<header class="cat-section-head" id="cat-web"><p class="cat-kicker">WEB, PUBLISHING & ENVIRONMENT</p><h2 class="cat-headline">Ship it your way.</h2><p class="cat-lede">Templates, a CSS framework, two industry publications, and the reproducible setup that ships them all. The stack this site runs on.</p></header>
 
 <div class="newsroom-grid cat-grid">
 
@@ -436,9 +441,9 @@ site_software: "Static Site Generator, Rust"
 <img alt="Banner for Kaishi, a starter template" src="https://cloudcdn.pro/clients/kaishi/v1/logos/kaishi.svg" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Web · Template</span>
 <h3><a href="https://github.com/sebastienrousseau/kaishi.github.io" title="Kaishi">Kaishi</a></h3>
-<p class="newsroom-excerpt">A Static Site Generator starter template designed for clean, accessible, performant sites — the seed I reach for when shipping new content destinations.</p>
+<p class="newsroom-excerpt">A starter template for the Static Site Generator, set up for clean and accessible sites. The template I use when starting a new site.</p>
+<p class="newsroom-more"><a href="https://github.com/sebastienrousseau/kaishi.github.io" title="Kaishi">Learn more <span aria-hidden="true">›</span></a></p>
 </div>
 </article>
 
@@ -447,9 +452,9 @@ site_software: "Static Site Generator, Rust"
 <img alt="Banner for the Skeletonic Stylus Library" src="https://cloudcdn.pro/clients/skeletonic/v1/logos/skeletonic.svg" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
-<span class="newsroom-eyebrow">CSS · Stylus</span>
 <h3><a href="https://github.com/sebastienrousseau/skeletonic-stylus" title="Skeletonic Stylus">Skeletonic Stylus</a></h3>
-<p class="newsroom-excerpt">A lightweight, modular Stylus library with components and mixins optimised for mobile and web application design. This site is built on top of it.</p>
+<p class="newsroom-excerpt">A modular Stylus library with components and mixins for web and mobile layouts. This site is built on it.</p>
+<p class="newsroom-more"><a href="https://github.com/sebastienrousseau/skeletonic-stylus" title="Skeletonic Stylus">Learn more <span aria-hidden="true">›</span></a></p>
 </div>
 </article>
 
@@ -458,9 +463,9 @@ site_software: "Static Site Generator, Rust"
 <img alt="Banner for the Banking On AI publication" src="https://cloudcdn.pro/clients/bankingonai/v1/logos/bankingonai.svg" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Web · Publication</span>
 <h3><a href="https://bankingonai.co/" title="Banking On AI">Banking On AI</a></h3>
-<p class="newsroom-excerpt">How AI is transforming the banking sector — improved customer service, fraud detection, and streamlined operations for a digital age.</p>
+<p class="newsroom-excerpt">A publication on how banks are applying AI, covering customer service, fraud detection, and operations.</p>
+<p class="newsroom-more"><a href="https://bankingonai.co/" title="Banking On AI">Learn more <span aria-hidden="true">›</span></a></p>
 </div>
 </article>
 
@@ -469,9 +474,9 @@ site_software: "Static Site Generator, Rust"
 <img alt="Banner for the Banking On Quantum publication" src="https://cloudcdn.pro/clients/bankingonquantum/v1/logos/bankingonquantum.svg" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Web · Publication</span>
 <h3><a href="https://bankingonquantum.com/" title="Banking On Quantum">Banking On Quantum</a></h3>
-<p class="newsroom-excerpt">How quantum computing is set to revolutionise banking and finance, from risk analysis to quantum cryptography and beyond.</p>
+<p class="newsroom-excerpt">A publication on quantum computing in banking and finance, from risk analysis to cryptography.</p>
+<p class="newsroom-more"><a href="https://bankingonquantum.com/" title="Banking On Quantum">Learn more <span aria-hidden="true">›</span></a></p>
 </div>
 </article>
 
@@ -480,9 +485,9 @@ site_software: "Static Site Generator, Rust"
 <img alt="Banner for the L90S website" src="https://cloudcdn.pro/clients/l90s/v1/logos/l90s.svg" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Web · Finance</span>
 <h3><a href="https://l90s.com/" title="L90S">L90S</a></h3>
-<p class="newsroom-excerpt">Fractional CFO advisory by a trusted finance leader with 20+ years in tech, guiding companies to sustainable growth, funding, and optimised financial operations.</p>
+<p class="newsroom-excerpt">Fractional CFO advisory from a finance leader with more than 20 years in technology, covering growth, funding, and financial operations.</p>
+<p class="newsroom-more"><a href="https://l90s.com/" title="L90S">Learn more <span aria-hidden="true">›</span></a></p>
 </div>
 </article>
 
@@ -491,9 +496,9 @@ site_software: "Static Site Generator, Rust"
 <img alt="Banner for the Dotfiles project" src="https://cloudcdn.pro/clients/dotfiles/v2/images/logos/dotfiles.svg" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Config · Cross-platform</span>
 <h3><a href="https://dotfiles.io/" title="Dotfiles">Dotfiles</a></h3>
-<p class="newsroom-excerpt">A powerful set of configuration files for macOS, Linux, and Windows — scripts and customised settings to streamline a development workflow.</p>
+<p class="newsroom-excerpt">Configuration files for macOS, Linux, and Windows: scripts and settings for a development workflow.</p>
+<p class="newsroom-more"><a href="https://dotfiles.io/" title="Dotfiles">Learn more <span aria-hidden="true">›</span></a></p>
 </div>
 </article>
 
@@ -503,7 +508,7 @@ site_software: "Static Site Generator, Rust"
 
 <section class="qa" aria-labelledby="projects-qa-heading"><header class="qa-head"><h2 id="projects-qa-heading" class="qa-headline">Questions? <span class="qa-headline-soft">Answers.</span></h2></header><section class="qa-list"><details class="qa-item">
 <summary class="qa-q">What licence are these projects released under?</summary>
-<section class="qa-a"><p>Most projects are dual-licensed under MIT and Apache-2.0 — the standard for the Rust ecosystem — which gives commercial users explicit patent rights as well as permissive redistribution. A small number of clients' tools are released under Apache-2.0 only. The licence file at the root of each repository is the authoritative source.</p></section>
+<section class="qa-a"><p>Most projects are dual-licensed under MIT and Apache-2.0, the standard for the Rust ecosystem, which gives commercial users explicit patent rights as well as permissive redistribution. A small number of clients' tools are released under Apache-2.0 only. The licence file at the root of each repository is the authoritative source.</p></section>
 </details>
 <details class="qa-item">
 <summary class="qa-q">Are these projects production-ready?</summary>
@@ -515,7 +520,7 @@ site_software: "Static Site Generator, Rust"
 </details>
 <details class="qa-item">
 <summary class="qa-q">Can I use these libraries in a regulated banking environment?</summary>
-<section class="qa-a"><p>Yes, with the usual caveats. The libraries are independent open-source work, not a regulated product. Run your normal supply-chain, security, and dependency-review processes — vendoring through your internal mirror, scanning with SBOM tools, and pinning by Git SHA or cryptographic hash — before deploying to production payment infrastructure.</p></section>
+<section class="qa-a"><p>Yes, with the usual caveats. The libraries are independent open-source work, not a regulated product. Run your normal supply-chain, security, and dependency-review processes, such as vendoring through your internal mirror, scanning with SBOM tools, and pinning by Git SHA or cryptographic hash, before deploying to production payment infrastructure.</p></section>
 </details>
 <details class="qa-item">
 <summary class="qa-q">Do you offer commercial support or consulting?</summary>
@@ -527,8 +532,8 @@ site_software: "Static Site Generator, Rust"
 </details></section></section>
 
 <aside class="setup-finale" aria-labelledby="projects-finale-heading">
-<p class="setup-finale-eyebrow">GET IN TOUCH</p>
-<h2 id="projects-finale-heading" class="setup-finale-headline">Have an idea? Let's build it.</h2>
-<p class="setup-finale-lede">Open-source collaboration, commissioned engineering, or a conversation about the future of payments. Whichever fits.</p>
-<p class="setup-finale-cta"><a class="pill" href="/contact/index.html">Start a conversation</a></p>
+<p class="setup-finale-eyebrow">CONTACT</p>
+<h2 id="projects-finale-heading" class="setup-finale-headline">Build on it. Or build it with me.</h2>
+<p class="setup-finale-lede">Planning an ISO 20022 migration, a post-quantum review, or applied AI in production? Tell me what you are building. I will show you where these tools fit.</p>
+<p class="setup-finale-cta"><a class="pill" href="/contact/index.html">Get in touch</a></p>
 </aside>

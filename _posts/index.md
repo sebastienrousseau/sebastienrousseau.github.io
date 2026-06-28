@@ -110,24 +110,24 @@ site_software: "Static Site Generator, Rust"
 <div class="wrap">
 <p class="feat-eyebrow">For decision makers</p>
 <h2 id="for-decision-makers" class="feat-headline center">Where this work shows up<br />on the balance sheet.</h2>
-<p class="feat-sub center">The open-source libraries below aren&rsquo;t research curios. Each one maps to a board-level risk a Tier-1 bank is being asked to evidence under DORA, BCBS 239, Basel III or NIST CSF 2.0 — and shaves real cost off the audit trail that satisfies the regulator.</p>
+<p class="feat-sub center">Open source, built for regulated finance. Each library maps to a risk your board already has to evidence, and it cuts the cost of the audit trail that satisfies the regulator.</p>
 <div class="dm-grid">
 <article class="dm-card">
 <p class="dm-tag">Compliance</p>
 <h3 class="dm-h">DORA Article 5 &amp; BCBS 239 evidence</h3>
-<p>Lossless parsing, signed releases and structured ISO 20022 outputs mean the configuration and payment files that move money are auditable end-to-end. Less to defend in your next supervisory exam.</p>
+<p>Signed releases and structured ISO 20022 output. The configuration and payment files that move money are auditable end to end. Less to defend at your next supervisory exam.</p>
 <a class="dm-link" href="/case-studies/index.html">See the case studies &rsaquo;</a>
 </article>
 <article class="dm-card">
 <p class="dm-tag">Cost reduction</p>
 <h3 class="dm-h">Open source over proprietary licensing</h3>
-<p>Apache-2.0 / MIT replaces six- and seven-figure vendor contracts on pain.001 generation, statement parsing and edge security tooling. Audit-grade quality without the per-seat fee.</p>
+<p>Apache-2.0 and MIT in place of six- and seven-figure vendor contracts, on pain.001 generation, statement parsing, and edge security. Audit-grade quality, no per-seat fee.</p>
 <a class="dm-link" href="/projects/index.html">Browse the projects &rsaquo;</a>
 </article>
 <article class="dm-card">
 <p class="dm-tag">Strategic hedging</p>
 <h3 class="dm-h">Post-quantum cryptography readiness</h3>
-<p>KyberLib gives your team an inspectable, NIST FIPS 203-aligned implementation of ML-KEM today &mdash; ready for the SWIFT structured-address cutover and the longer harvest-now-decrypt-later horizon.</p>
+<p>KyberLib gives your team an inspectable, NIST FIPS 203 implementation of ML-KEM today. Ready for the SWIFT structured-address cutover and the longer harvest-now-decrypt-later horizon.</p>
 <a class="dm-link" href="/articles/index.html">Read the research &rsaquo;</a>
 </article>
 </div>
@@ -138,7 +138,7 @@ site_software: "Static Site Generator, Rust"
 <div class="wrap">
 <p class="feat-eyebrow">Authored &amp; maintained</p>
 <h2 id="practice" class="feat-headline center">Open source for the<br />future of finance.</h2>
-<p class="feat-sub center">A portfolio of Python, Rust and JavaScript libraries I created and maintain. Open source, free to use, and applied to wholesale payments, cross-border settlement, financial data and quantum-resistant cryptography.</p>
+<p class="feat-sub center">Python, Rust, and JavaScript libraries I build and maintain. Open source, free to use, and applied to wholesale payments, cross-border settlement, financial data, and quantum-resistant security.</p>
 
 <svg class="svg-defs" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
 <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 4 6v6c0 5 3.5 8.5 8 10 4.5-1.5 8-5 8-10V6l-8-3Z"/><path d="m9 12 2 2 4-4"/></symbol>
@@ -248,7 +248,7 @@ site_software: "Static Site Generator, Rust"
 <h3>noyalib</h3>
 <dl class="pao">
 <div><dt>Problem</dt><dd>AI, MCP and config pipelines run on YAML parsers with C-backed UB and silent spec drift.</dd></div>
-<div><dt>Approach</dt><dd>Pure-Rust YAML 1.2 across library, CLI, LSP, MCP and WASM — zero unsafe, full spec.</dd></div>
+<div><dt>Approach</dt><dd>Pure-Rust YAML 1.2 across library, CLI, LSP, MCP and WASM, zero unsafe, full spec.</dd></div>
 <div><dt>Outcome</dt><dd>YAML pipelines that stop being the supply-chain weak link.</dd></div>
 </dl>
 <p class="proj-metric"><span class="proj-metric-label">Impact</span> 406 / 406 spec · 0 unsafe</p>
@@ -306,7 +306,7 @@ site_software: "Static Site Generator, Rust"
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-06-24-cross-border-iso-20022-open-finance-tokenised-deposits-treasury-2026/index.html" title="Cross-Border 2026: ISO 20022, Open Finance and Tokenised Deposits in Corporate Treasury">
-<img alt="Container ships threading a narrow strait at dusk — symbolising the four-rail cross-border corporate-treasury architecture binding SWIFT CBPR+, A2A under PSD3, bank-issued tokenised deposits, and regulated stablecoins into one orchestrated payment flow" src="https://cloudcdn.pro/stocks/images/viktor-forgacs-KxVRDiFdTVo.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Container ships threading a narrow strait at dusk, symbolising the four-rail cross-border corporate-treasury architecture binding SWIFT CBPR+, A2A under PSD3, bank-issued tokenised deposits, and regulated stablecoins into one orchestrated payment flow" src="https://cloudcdn.pro/stocks/images/viktor-forgacs-KxVRDiFdTVo.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Cross-Border · ISO 20022 · Tokenised Deposits</span>
@@ -318,61 +318,61 @@ site_software: "Static Site Generator, Rust"
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-06-23-iso-20022-pain001-programmable-liquidity-autonomic-treasury-2026/index.html" title="From Pain.001 to Programmable Liquidity: ISO 20022 as the Autonomic Nervous System of Treasury in 2026">
-<img alt="Steel arteries of a modern clearing centre at dawn — symbolising ISO 20022 pain.001 and pacs.008 as the autonomic nervous system carrying programmable liquidity across global treasury, SWIFT MX, and CBPR+ rails" src="https://cloudcdn.pro/stocks/images/markus-spiske-FXFz-sW0uwo.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Steel arteries of a modern clearing centre at dawn, symbolising ISO 20022 pain.001 and pacs.008 as the autonomic nervous system carrying programmable liquidity across global treasury, SWIFT MX, and CBPR+ rails" src="https://cloudcdn.pro/stocks/images/markus-spiske-FXFz-sW0uwo.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">ISO 20022 · Programmable Liquidity · CIB Treasury</span>
 <h3><a href="/2026-06-23-iso-20022-pain001-programmable-liquidity-autonomic-treasury-2026/index.html">From Pain.001 to Programmable Liquidity: ISO 20022 as the Autonomic Nervous System of Treasury in 2026</a></h3>
 <p class="newsroom-meta"><time datetime="2026-06-23">June 23, 2026</time></p>
-<p class="newsroom-excerpt">Five months before the November 2026 SWIFT MT/MX cut-over, 44% of banks are off-track. pain.001 has stopped being a wire format and become the heartbeat of a programmable liquidity stack — what an ISO-first canonical schema, reject-on-parse ingress, and pacs.008-native settlement look like in production.</p>
+<p class="newsroom-excerpt">Five months before the November 2026 SWIFT MT/MX cut-over, 44% of banks are off-track. pain.001 has stopped being a wire format and become the basis of a programmable liquidity stack. The piece shows what an ISO-first canonical schema, reject-on-parse ingress, and pacs.008-native settlement look like in production.</p>
 </div>
 </article>
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-06-22-hsh-zero-downtime-cryptographic-stewardship-rust-banking-2026/index.html" title="Securing Password Management in Enterprise Banking: Multi-Algorithm Hashing and Upgrades with hsh">
-<img alt="Close-up of a developer terminal scrolling Rust compiler output — the visible discipline of a memory-safe, audit-able cryptographic substrate beneath an enterprise banking authentication estate" src="https://cloudcdn.pro/stocks/images/rustlogs.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Close-up of a developer terminal scrolling Rust compiler output, the visible discipline of a memory-safe, audit-able cryptographic substrate beneath an enterprise banking authentication estate" src="https://cloudcdn.pro/stocks/images/rustlogs.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Cryptographic Stewardship · Rust · Banking</span>
 <h3><a href="/2026-06-22-hsh-zero-downtime-cryptographic-stewardship-rust-banking-2026/index.html">Securing Password Management in Enterprise Banking: Multi-Algorithm Hashing and Upgrades with hsh</a></h3>
 <p class="newsroom-meta"><time datetime="2026-06-22">June 22, 2026</time></p>
-<p class="newsroom-excerpt">hsh is an open-source pure-Rust framework that migrates legacy password hashes to Argon2id with zero downtime via verify_and_upgrade, HSM-interlocked peppering, and a memory-safe supply chain — closing the cryptographic rot that DORA Article 5 now treats as board-accountable liability.</p>
+<p class="newsroom-excerpt">hsh is an open-source pure-Rust framework that migrates legacy password hashes to Argon2id with zero downtime via verify_and_upgrade, HSM-interlocked peppering, and a memory-safe supply chain. It addresses the cryptographic rot that DORA Article 5 now treats as a board-level liability.</p>
 </div>
 </article>
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/index.html" title="CloudCDN: An Open-Source Blueprint for the AI-Native Edge in 2026">
-<img alt="Glowing data-centre rack stack at night — symbolising the inspectable, agent-controllable, open-source edge that CloudCDN is built on" src="https://cloudcdn.pro/stocks/images/alis-po-IdVNRv-5wJo.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Glowing data-centre rack stack at night, symbolising the inspectable, agent-controllable, open-source edge that CloudCDN is built on" src="https://cloudcdn.pro/stocks/images/alis-po-IdVNRv-5wJo.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">CloudCDN · Open Source · CDN</span>
 <h3><a href="/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/index.html">CloudCDN: An Open-Source Blueprint for the AI-Native Edge in 2026</a></h3>
 <p class="newsroom-meta"><time datetime="2026-06-11">June 11, 2026</time></p>
-<p class="newsroom-excerpt">CloudCDN is an open-source, AI-native edge CDN blueprint — MCP-controlled infrastructure, Durable Objects rate limiting, signed URLs, passkeys, accessibility, and 100% test coverage as enforceable defaults, not vendor promises.</p>
+<p class="newsroom-excerpt">CloudCDN is an open-source edge CDN blueprint. It uses MCP-controlled infrastructure, Durable Objects rate limiting, signed URLs, passkeys, accessibility, and full test coverage as enforceable defaults rather than vendor promises.</p>
 </div>
 </article>
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/index.html" title="The Banking Resilience Index in 2026: AI, Cloud, Quantum, Payments, and Third-Party Concentration Risk">
-<img alt="Abstract architectural photograph used as the visual key for the 2026 Banking Resilience Index — combining AI risk, cloud concentration, quantum-safe security, payment continuity, and critical third-party dependency into one operational-resilience scoreboard" src="https://cloudcdn.pro/stocks/images/simone-hutsch-oqlh6RsrYB0.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Abstract architectural photograph used as the visual key for the 2026 Banking Resilience Index, combining AI risk, cloud concentration, quantum-safe security, payment continuity, and critical third-party dependency into one operational-resilience scoreboard" src="https://cloudcdn.pro/stocks/images/simone-hutsch-oqlh6RsrYB0.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Banking Resilience · DORA · AI Risk</span>
 <h3><a href="/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/index.html">The Banking Resilience Index in 2026: AI, Cloud, Quantum, Payments, and Third-Party Concentration Risk</a></h3>
 <p class="newsroom-meta"><time datetime="2026-06-08">June 8, 2026</time></p>
-<p class="newsroom-excerpt">A 2026 banking resilience index — combining AI risk, cloud concentration, quantum-safe migration, payment continuity, and critical third-party dependency into one operational-resilience scoreboard the board and supervisor can both read.</p>
+<p class="newsroom-excerpt">A 2026 banking resilience index, combining AI risk, cloud concentration, quantum-safe migration, payment continuity, and critical third-party dependency into one operational-resilience scoreboard the board and supervisor can both read.</p>
 </div>
 </article>
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/index.html" title="The Autonomous Treasury Index in 2026: Agentic Treasury, Programmable Liquidity, Tokenised Deposits, and Real-Time Cash Control">
-<img alt="Abstract architectural photograph used as the visual key for the 2026 Autonomous Treasury Index — measuring agentic treasury workflows, programmable liquidity, tokenised deposits, real-time payments, and automated cash control" src="https://cloudcdn.pro/stocks/images/christopher-burns-Kj2SaNHG-hg.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Abstract architectural photograph used as the visual key for the 2026 Autonomous Treasury Index, measuring agentic treasury workflows, programmable liquidity, tokenised deposits, real-time payments, and automated cash control" src="https://cloudcdn.pro/stocks/images/christopher-burns-Kj2SaNHG-hg.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Treasury · Agentic AI · Programmable Liquidity</span>
 <h3><a href="/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/index.html">The Autonomous Treasury Index in 2026: Agentic Treasury, Programmable Liquidity, Tokenised Deposits, and Real-Time Cash Control</a></h3>
 <p class="newsroom-meta"><time datetime="2026-06-07">June 7, 2026</time></p>
-<p class="newsroom-excerpt">A 2026 autonomous treasury readiness index — measuring agentic treasury workflows, programmable liquidity coverage, tokenised deposit integration, real-time payment orchestration, and automated cash control as one operating-model fabric.</p>
+<p class="newsroom-excerpt">A 2026 autonomous treasury readiness index, measuring agentic treasury workflows, programmable liquidity coverage, tokenised deposit integration, real-time payment orchestration, and automated cash control as one operating-model fabric.</p>
 </div>
 </article>
 
