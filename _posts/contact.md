@@ -102,4 +102,4 @@ site_software: "Static Site Generator, Rust"
 
 ---
 
-Consulting, advisory, speaking and editorial enquiries are welcome. A short note about your context — bank, role, the question you're trying to answer — gets a faster, sharper reply than a generic introduction. Your information is used solely to respond to this enquiry.
+Consulting, advisory, speaking, and editorial enquiries are welcome. A short note about your context (your organisation, your role, and the question you are trying to answer) gets a more useful reply than a generic introduction. Your details are used only to respond to this enquiry.

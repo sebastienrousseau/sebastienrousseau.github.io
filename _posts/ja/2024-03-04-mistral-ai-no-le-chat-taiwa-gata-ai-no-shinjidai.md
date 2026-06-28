@@ -5,13 +5,13 @@ description: "Mistral AI の Le Chat、ヨーロッパ AI チャンピオンの�
 date: "March 4, 2024"
 language: "ja-JP"
 locale: "ja_JP"
-banner: "https://cloudcdn.pro/stocks/images/eric-prouzet-T2rHb45GnRY-unsplash.webp"
+banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp"
 banner_alt: "ヨーロッパの議事堂のビュー"
 keywords: "Mistral AI, Le Chat, ヨーロッパ AI, LLM, オープンソース, フランス, AI 主権"
 last_reviewed: "2026-05-11"
 ---
 
-![ヨーロッパの議事堂のビュー](https://cloudcdn.pro/stocks/images/eric-prouzet-T2rHb45GnRY-unsplash.webp).class=\"img-fluid clearfix\"
+![ヨーロッパの議事堂のビュー](https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp).class=\"img-fluid clearfix\"
 
 ## インサイト
 

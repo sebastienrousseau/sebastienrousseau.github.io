@@ -5,7 +5,7 @@ description: "ステーブルコインは GENIUS Act の下で利回りを支払
 date: "May 15, 2026"
 language: "ja-JP"
 locale: "ja_JP"
-banner: "https://cloudcdn.pro/stocks/images/luke-chesser-JKUTrJ4vK00-unsplash.webp"
+banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp"
 banner_alt: "金融データのダッシュボード"
 keywords: "BlackRock, BRSRV, BSTBL, GENIUS Act, ステーブルコイン, トークン化, MMF, マネー・マーケット・ファンド, デジタル資産, 利回り, 規制"
 last_reviewed: "2026-05-15"

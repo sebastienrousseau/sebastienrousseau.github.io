@@ -6,12 +6,12 @@ description: "Ọdún méjìlá lẹ́yìn, fíìmù Lucy Besson dà bí ìdánw
 date: "May 11, 2026"
 language: "yo-NG"
 locale: "yo_NG"
-banner: "https://cloudcdn.pro/stocks/images/lucy-knowledge-transfer-banner.webp"
+banner: "https://cloudcdn.pro/stocks/images/harald-krichel-scarlett-johansson-8531.webp"
 banner_alt: "Àwòrán àfọwọ́ya ti àwọn nẹ́tiwọ̀ọ̀kì neuron àti àwọn àrègún atọ́mù kuantọ́mù. Kọ̀ǹpútà dúdú tí ń dára sí i láti inú àwọn pàǹtírí tí a tún ṣètò"
 keywords: "fíìmù Lucy 2014, Luc Besson, gbígbe ìmọ̀, large language models, neutral atom qubits, whole-brain emulation, ìsọfúnni substrate, ìmọ̀ ọgbọ́n AI, ìṣirò kuantọ́mù, ìtọ́jú ìmọ̀"
 ---
 
-![Abstract visualisation of neural networks and quantum atomic arrays. A black computer forming from rearranging particles](https://cloudcdn.pro/stocks/images/lucy-knowledge-transfer-banner.webp).class="img-fluid clearfix"
+![Abstract visualisation of neural networks and quantum atomic arrays. A black computer forming from rearranging particles](https://cloudcdn.pro/stocks/images/harald-krichel-scarlett-johansson-8531.webp).class="img-fluid clearfix"
 
 ---
 

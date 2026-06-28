@@ -5,7 +5,7 @@ description: "Как полностью гомоморфное шифрован�
 date: "March 25, 2024"
 language: "ru-RU"
 locale: "ru_RU"
-banner: "https://cloudcdn.pro/stocks/images/fhe-banking.webp"
+banner: "https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp"
 banner_alt: "Полностью гомоморфное шифрование в банковской квантовой эпохе"
 keywords: "FHE, гомоморфное шифрование, конфиденциальность, банковская безопасность, постквантовая криптография, машинное обучение, частные вычисления"
 ---

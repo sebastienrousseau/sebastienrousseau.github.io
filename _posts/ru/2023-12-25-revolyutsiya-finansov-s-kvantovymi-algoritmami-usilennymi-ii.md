@@ -5,7 +5,7 @@ description: "Преобразующая роль ИИ внутри кванто
 date: "December 25, 2023"
 language: "ru-RU"
 locale: "ru_RU"
-banner: "https://cloudcdn.pro/stocks/images/quantum-ai-finance.webp"
+banner: "https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp"
 banner_alt: "Квантовые алгоритмы с ИИ для финансов"
 keywords: "квантовые алгоритмы, ИИ, финансы, оптимизация портфеля, моделирование рисков, ценообразование производных, VQE, QAOA, гибридные модели"
 ---

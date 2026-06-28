@@ -5,13 +5,13 @@ description: "AI が広告の未来を形作る方法と、業界が直面する
 date: "February 8, 2024"
 language: "ja-JP"
 locale: "ja_JP"
-banner: "https://cloudcdn.pro/stocks/images/joshua-earle-yEfPDcKR1uM-unsplash.webp"
+banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp"
 banner_alt: "AI と広告のビジュアル"
 keywords: "AI, 広告, パーソナライゼーション, 生成 AI, 倫理, プライバシー, ディープフェイク"
 last_reviewed: "2026-05-11"
 ---
 
-![AI と広告のビジュアル](https://cloudcdn.pro/stocks/images/joshua-earle-yEfPDcKR1uM-unsplash.webp).class=\"img-fluid clearfix\"
+![AI と広告のビジュアル](https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp).class=\"img-fluid clearfix\"
 
 ## インサイト
 

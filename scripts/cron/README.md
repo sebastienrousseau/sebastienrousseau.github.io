@@ -1,41 +1,73 @@
-# Local daily-publish automation
+<h1 align="center">Local daily-publish automation</h1>
 
-> Last Updated: June 4, 2026
+<p align="center">
+  Promotes the day's draft, translates 27 locales, and opens a PR — run
+  locally each evening so the output is reviewed before it ships.
+</p>
 
-The automation scripts in this folder handle daily article publication tasks from your local computer, which Sebastien runs manually each evening to check the pages before pushing.
+---
+
+## Contents
+
+- [Why local, not cloud](#why-local-not-cloud) — secrets + signing stay on-device
+- [What it does](#what-it-does) — the publish steps
+- [Install](#install) — register the scheduler
+- [Schedule](#schedule) — when it runs
+- [Cron alternative](#cron-alternative) — fixed-time UTC
+- [Test / verify](#test--verify)
+- [Uninstall](#uninstall)
+- [Troubleshooting](#troubleshooting)
+- [Layout](#layout)
+- [License](#license)
 
 ## Why local, not cloud
 
-We run the publishing tasks locally to keep the API secrets safe on your own machine. The local script uses your GPG keys to sign commits and push changes to the repository.
+Publishing runs locally to keep API secrets off shared infrastructure. The runner uses your GPG key to sign commits and push.
 
 ## What it does
 
-The script pulls the latest code and calls the translation tool to generate the new pages, and it also checks for drafts, runs the tests, and opens a pull request automatically.
+Pulls the latest `main`, promotes today's draft, runs the translation pipeline, runs the test gates, and opens a pull request.
 
 ## Install
 
-Run the install script to setup the task scheduler and register the plist service on your operating system. The script creates the log path and registers the daily schedule.
+```bash
+./scripts/cron/install.sh   # registers the launchd plist + log path
+```
 
 ## Schedule
 
-The scheduler runs the task in the morning to align the release of new content with active publishing times, and running it twice ensures that the posts land at the right time.
+Runs each morning so posts land at peak publishing time.
 
-## Alternative: cron with strict UTC
+## Cron alternative
 
-You can edit your user crontab if you want to run the job at a fixed time. This needs disk access on macOS, so the plist is the best choice.
+Prefer a fixed UTC time? Edit your user crontab. Note macOS needs Full Disk Access for `cron`, so the launchd plist is the recommended path.
 
 ## Test / verify
 
-You can test the tool by running the script and reading the files in the log folder, and if there is no draft, the runner exits with no changes.
+```bash
+./scripts/cron/publish-daily.sh   # exits cleanly with no changes if there is no draft
+```
+
+Logs are written to the registered log folder.
 
 ## Uninstall
 
-To remove the job, run the uninstall script to stop the service and delete the plist settings from your system folder. You must delete the log files by hand if needed.
+```bash
+./scripts/cron/uninstall.sh   # unloads the service + removes the plist
+```
 
-## What can break (and how to debug)
+Delete the log files manually if desired.
 
-The debug table lists common issues like bad paths, git blocks, budget caps, or push errors. Check the logs to see which step failed during the run.
+## Troubleshooting
 
-## Files in this folder
+Common failures: wrong paths, a blocked Git push, budget caps, or signing errors. Check the run log to see which step failed.
 
-This folder holds the plist file, the install scripts, the main runner, and this guide.
+## Layout
+
+The launchd plist, the install/uninstall scripts, the runner, and this guide.
+
+## License
+
+Licensed under [Apache-2.0](../../LICENSE).
+
+<p align="right"><a href="#local-daily-publish-automation">Back to Top</a></p>

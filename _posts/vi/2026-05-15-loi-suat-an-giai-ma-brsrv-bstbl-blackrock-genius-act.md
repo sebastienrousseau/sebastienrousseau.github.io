@@ -5,12 +5,12 @@ description: 'Stablecoin không thể trả lợi suất theo GENIUS Act. Hồ s
 date: 'May 15, 2026'
 language: 'vi-VN'
 locale: 'vi_VN'
-banner: 'https://cloudcdn.pro/stocks/images/blackrock-genius-banner.webp'
+banner: 'https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp'
 banner_alt: 'Logo BlackRock với các biểu tượng stablecoin'
 keywords: 'BlackRock, GENIUS Act, BRSRV, BSTBL, stablecoin, lợi suất, MMF token hoá, BUIDL, USD1, quy định'
 ---
 
-![BlackRock và GENIUS Act](https://cloudcdn.pro/stocks/images/blackrock-genius-banner.webp).class=\"img-fluid clearfix\"
+![BlackRock và GENIUS Act](https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp).class=\"img-fluid clearfix\"
 
 > **TL;DR.** Stablecoin không thể trả lợi suất theo GENIUS Act. Hồ sơ BRSRV và BSTBL của BlackRock năm 2026 hé lộ giải pháp: một quỹ thị trường tiền tệ token hoá chạy song song với một stablecoin được quản lý, cung cấp lợi suất qua một đường ray tuân thủ kế bên — không phải bên trong chính stablecoin.
 >

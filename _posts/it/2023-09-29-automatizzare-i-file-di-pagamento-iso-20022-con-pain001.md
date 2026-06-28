@@ -5,12 +5,12 @@ description: "Pain001 automatizza la creazione di file di pagamento ISO 20022 pa
 date: "September 29, 2023"
 language: "it-IT"
 locale: "it_IT"
-banner: "https://cloudcdn.pro/stocks/images/andrea-di-santis-T3Qen8vVgRc.webp"
+banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp"
 banner_alt: "Laptop spento su un tavolo di legno marrone"
 keywords: "ISO 20022, pain.001, pagamenti, SWIFT, SEPA, Python, automazione, open source"
 ---
 
-![Laptop spento su un tavolo di legno marrone](https://cloudcdn.pro/stocks/images/andrea-di-santis-T3Qen8vVgRc.webp).class=\"img-fluid clearfix\"
+![Laptop spento su un tavolo di legno marrone](https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp).class=\"img-fluid clearfix\"
 
 ---
 

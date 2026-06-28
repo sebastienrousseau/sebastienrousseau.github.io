@@ -85,7 +85,7 @@ ARTICLES = [
         "May 11, 2026",
         "AI · Quantum · Philosophy",
         "Lucy's Flash Drive, Revisited: What Besson Saw About Knowledge Migrating to Machines",
-        "https://cloudcdn.pro/stocks/images/lucy-knowledge-transfer-banner.webp",
+        "https://cloudcdn.pro/stocks/images/harald-krichel-scarlett-johansson-8531.webp",
         "Abstract visualisation of neural networks and quantum atomic arrays. A black computer forming from rearranging particles",
         "Twelve years after its release, Luc Besson's Lucy reads less like pseudo-science and more like a thought experiment about what happens when human knowledge migrates from biological to non-biological substrates.",
         "/2026-05-11-lucy-besson-knowledge-transfer-ai-quantum/index.html",

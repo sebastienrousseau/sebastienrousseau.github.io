@@ -5,12 +5,12 @@ description: 'Một lỗi đã được phát hiện trong thuật toán lượn
 date: 'April 22, 2024'
 language: 'vi-VN'
 locale: 'vi_VN'
-banner: 'https://cloudcdn.pro/stocks/images/lattice-secure-banner.webp'
+banner: 'https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp'
 banner_alt: 'Mạng tinh thể an toàn với khoá mật mã'
 keywords: 'LWE, mạng tinh thể, mật mã, Chen, Kyber, PQC, hậu lượng tử, an toàn'
 ---
 
-![Mạng tinh thể an toàn](https://cloudcdn.pro/stocks/images/lattice-secure-banner.webp).class=\"img-fluid clearfix\"
+![Mạng tinh thể an toàn](https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp).class=\"img-fluid clearfix\"
 
 > **TL;DR.** Một tuần sau khi Yilei Chen công bố một thuật toán lượng tử có khả năng phá vỡ Lattice-LWE, các nhà mật mã đã tìm thấy một lỗi nghiêm trọng. Tuyên bố đã được rút lại; CRYSTALS-Kyber an toàn — bây giờ.
 >

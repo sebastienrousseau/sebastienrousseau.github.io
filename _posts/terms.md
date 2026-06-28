@@ -44,7 +44,7 @@ short_name: "sebastienrousseau"
 subtitle: "Your privacy is important to us."
 tags: "agreement, copyright, intellectual property, liability, limitation, links, privacy, terms, trademark, use, website"
 theme-color: "0, 67, 165"
-title: "Website Terms & Conditions of Use — Sebastien Rousseau"
+title: "Website Terms & Conditions of Use, Sebastien Rousseau"
 url: "https://sebastienrousseau.com/terms"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 

@@ -1,6 +1,6 @@
 ---
 title: "Agentische Engineering für Banken: ein Blueprint 2026 für den Vorstand und die Ingenieure, die ihn bauen werden"
-subtitle: "Agentische KI ist vom Pilot in die Produktion übergegangen. 70 % der Banken setzen sie ein; nur eine von fünf verfügt über ein ausgereiftes Governance-Modell. Gegner agieren mit Maschinengeschwindigkeit, das Altlast-Inventar wurde für die Batch-Annahmen der 1960er Jahre geschrieben, und die „Hochrisiko"-Frist des EU-KI-Gesetzes liegt zwölf Wochen voraus."
+subtitle: "Agentische KI ist vom Pilot in die Produktion übergegangen. 70 % der Banken setzen sie ein; nur eine von fünf verfügt über ein ausgereiftes Governance-Modell. Gegner agieren mit Maschinengeschwindigkeit, das Altlast-Inventar wurde für die Batch-Annahmen der 1960er Jahre geschrieben, und die „Hochrisiko“-Frist des EU-KI-Gesetzes liegt zwölf Wochen voraus."
 description: "Agentische KI hat den Schritt vom Pilot in die Produktion in der globalen Bankbranche vollzogen. 70 % der Institute setzen sie in irgendeiner Form ein; nur eine von fünf verfügt über ein ausgereiftes Governance-Modell. Gleichzeitig agieren autonome Gegner mit Maschinengeschwindigkeit, das COBOL-Altlast-Inventar, mit dem neue Systeme interoperieren müssen, wurde für die Batch-Annahmen der 1960er Jahre geschrieben, und die Hochrisiko-Frist des EU-KI-Gesetzes (2. August 2026) ist zwölf Wochen entfernt. Dies ist die Engineering- und Governance-Position, die eine Bank einnehmen muss."
 date: "May 17, 2026"
 language: "de"

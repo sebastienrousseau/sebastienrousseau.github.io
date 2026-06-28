@@ -5,7 +5,7 @@ description: "Le Chat от Mistral AI — европейское разгово�
 date: "March 4, 2024"
 language: "ru-RU"
 locale: "ru_RU"
-banner: "https://cloudcdn.pro/stocks/images/le-chat-mistral.webp"
+banner: "https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp"
 banner_alt: "Le Chat от Mistral AI: разговорный ИИ"
 keywords: "Le Chat, Mistral AI, разговорный ИИ, LLM, Европа, открытые модели, многоязычность, GDPR"
 ---

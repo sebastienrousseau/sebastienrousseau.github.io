@@ -5,7 +5,7 @@ description: "Обзор 2023 года: как искусственный инт
 date: "December 18, 2023"
 language: "ru-RU"
 locale: "ru_RU"
-banner: "https://cloudcdn.pro/stocks/images/banking-ai-quantum-2023.webp"
+banner: "https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp"
 banner_alt: "ИИ и квантовые вычисления в банке — обзор 2023"
 keywords: "ИИ в банковском деле, квантовые вычисления, обзор 2023, LLM, постквантовая криптография, цифровая трансформация, регулирование"
 ---

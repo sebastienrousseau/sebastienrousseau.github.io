@@ -5,7 +5,7 @@ description: "Анализ блокчейна как технологии, пе�
 date: "January 2, 2018"
 language: "ru-RU"
 locale: "ru_RU"
-banner: "https://cloudcdn.pro/stocks/images/launchpresso-VVMyDDjzkCM.webp"
+banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp"
 banner_alt: "Визуализация блокчейн-сети с узлами и соединениями"
 keywords: "блокчейн, распределённый реестр, смарт-контракты, токенизация, Ethereum, доверие, прозрачность, финансовые услуги, цифровая трансформация"
 ---

@@ -1,0 +1,49 @@
+name: scorecard
+
+# OpenSSF Scorecard — supply-chain security posture score. Results upload to
+# the Security tab (and the public Scorecard API). Target ≥8.
+# improvement-plan-2026.md Phase 2.3 / ADR-0005.
+
+on:
+  branch_protection_rule:
+  schedule:
+    - cron: '22 4 * * 1'
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  analysis:
+    name: Scorecard analysis
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      security-events: write   # upload SARIF to code scanning
+      id-token: write          # publish to the public Scorecard API
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+
+      - name: Run Scorecard
+        uses: ossf/scorecard-action@v2.4.3
+        with:
+          results_file: results.sarif
+          results_format: sarif
+          publish_results: true
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v7
+        with:
+          name: scorecard-results
+          path: results.sarif
+          retention-days: 5
+
+      - name: Upload SARIF to code scanning
+        uses: github/codeql-action/upload-sarif@v3
+        with:
+          sarif_file: results.sarif

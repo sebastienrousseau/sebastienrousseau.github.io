@@ -6,12 +6,12 @@ description: "Doisprezece ani mai târziu, Lucy al lui Besson pare un experiment
 date: "May 11, 2026"
 language: "ro-RO"
 locale: "ro_RO"
-banner: "https://cloudcdn.pro/stocks/images/lucy-knowledge-transfer-banner.webp"
+banner: "https://cloudcdn.pro/stocks/images/harald-krichel-scarlett-johansson-8531.webp"
 banner_alt: "Vizualizare abstractă a rețelelor neuronale și matricelor cuantice de atomi. Un computer negru format din particule rearanjate"
 keywords: "filmul Lucy 2014, Luc Besson, transfer de cunoștințe, large language models, neutral atom qubits, whole-brain emulation, independență de substrat, filozofia AI, computație cuantică, persistența cunoașterii"
 ---
 
-![Abstract visualisation of neural networks and quantum atomic arrays. A black computer forming from rearranging particles](https://cloudcdn.pro/stocks/images/lucy-knowledge-transfer-banner.webp).class="img-fluid clearfix"
+![Abstract visualisation of neural networks and quantum atomic arrays. A black computer forming from rearranging particles](https://cloudcdn.pro/stocks/images/harald-krichel-scarlett-johansson-8531.webp).class="img-fluid clearfix"
 
 ---
 

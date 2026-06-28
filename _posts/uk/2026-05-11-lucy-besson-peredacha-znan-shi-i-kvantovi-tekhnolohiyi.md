@@ -5,12 +5,12 @@ description: "Дванадцять років по тому «Lucy» Бессо�
 date: "May 11, 2026"
 language: "uk-UA"
 locale: "uk_UA"
-banner: "https://cloudcdn.pro/stocks/images/lucy-knowledge-transfer-banner.webp"
+banner: "https://cloudcdn.pro/stocks/images/harald-krichel-scarlett-johansson-8531.webp"
 banner_alt: "Абстрактна візуалізація нейронних мереж та квантових масивів атомів. Чорний комп'ютер, що формується з переставлених частинок"
 keywords: "фільм Lucy 2014, Luc Besson, передача знань, large language models, neutral atom qubits, whole-brain emulation, незалежність від субстрату, філософія AI, квантові обчислення, збереження знань"
 ---
 
-![Abstract visualisation of neural networks and quantum atomic arrays. A black computer forming from rearranging particles](https://cloudcdn.pro/stocks/images/lucy-knowledge-transfer-banner.webp).class=\"img-fluid clearfix\"
+![Abstract visualisation of neural networks and quantum atomic arrays. A black computer forming from rearranging particles](https://cloudcdn.pro/stocks/images/harald-krichel-scarlett-johansson-8531.webp).class=\"img-fluid clearfix\"
 
 > **TL;DR.** Twelve years on, Besson's Lucy reads like a thought experiment about knowledge migrating from flesh to machine — quietly validated by LLMs and qubits.
 >

@@ -5,12 +5,12 @@ description: 'Sách trắng EPAA về mối đe doạ cấu trúc mà tính toá
 date: 'September 1, 2025'
 language: 'vi-VN'
 locale: 'vi_VN'
-banner: 'https://cloudcdn.pro/stocks/images/epaa-banner.webp'
+banner: 'https://cloudcdn.pro/stocks/images/getty-images-dqHskSJDfe4.webp'
 banner_alt: 'Sách trắng Quantum-Safe Payments'
 keywords: 'EPAA, sách trắng, thanh toán, lượng tử, an toàn lượng tử, PQC, hậu lượng tử, hành động phối hợp'
 ---
 
-![Sách trắng Quantum-Safe Payments](https://cloudcdn.pro/stocks/images/epaa-banner.webp).class=\"img-fluid clearfix\"
+![Sách trắng Quantum-Safe Payments](https://cloudcdn.pro/stocks/images/getty-images-dqHskSJDfe4.webp).class=\"img-fluid clearfix\"
 
 > **TL;DR.** Tính toán lượng tử đe doạ nền tảng mật mã của dịch vụ tài chính. Thanh toán — từ thời gian thực đến quyết toán xuyên biên giới — dựa vào các biện pháp bảo vệ mà lượng tử rốt cuộc sẽ làm lỗi thời. Sách trắng EPAA này nêu rõ lý do tại sao ngành phải hành động ngay bây giờ.
 >

@@ -5,7 +5,7 @@ description: "Lucy Besson и подход к передаче знаний на 
 date: "May 11, 2026"
 language: "ru-RU"
 locale: "ru_RU"
-banner: "https://cloudcdn.pro/stocks/images/lucy-besson-knowledge-transfer.webp"
+banner: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 banner_alt: "Lucy Besson: передача знаний в ИИ и квантовых технологиях"
 keywords: "передача знаний, наставничество, ИИ, квантовые технологии, обучение, банковская инженерия, развитие команд"
 ---

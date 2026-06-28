@@ -5,13 +5,13 @@ description: "金融向け量子アルゴリズム内における AI の変革�
 date: "December 25, 2023"
 language: "ja-JP"
 locale: "ja_JP"
-banner: "https://cloudcdn.pro/stocks/images/markus-spiske-FXFz-sW0uwo-unsplash.webp"
+banner: "https://cloudcdn.pro/stocks/images/markus-spiske-FXFz-sW0uwo.webp"
 banner_alt: "量子計算を表す抽象的なビジュアル"
 keywords: "量子アルゴリズム, AI, 機械学習, 金融, ポートフォリオ最適化, リスクモデリング, QAOA, VQE"
 last_reviewed: "2026-05-11"
 ---
 
-![量子計算を表す抽象的なビジュアル](https://cloudcdn.pro/stocks/images/markus-spiske-FXFz-sW0uwo-unsplash.webp).class=\"img-fluid clearfix\"
+![量子計算を表す抽象的なビジュアル](https://cloudcdn.pro/stocks/images/markus-spiske-FXFz-sW0uwo.webp).class=\"img-fluid clearfix\"
 
 ## インサイト
 

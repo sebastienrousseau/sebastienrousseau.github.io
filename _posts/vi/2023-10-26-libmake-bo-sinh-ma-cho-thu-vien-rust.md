@@ -5,12 +5,12 @@ description: 'libmake — một CLI Rust tạo các thư viện Rust mới với
 date: 'October 26, 2023'
 language: 'vi-VN'
 locale: 'vi_VN'
-banner: 'https://cloudcdn.pro/stocks/images/libmake-banner.webp'
+banner: 'https://cloudcdn.pro/stocks/images/rustlogs.webp'
 banner_alt: 'Sơ đồ cấu trúc thư mục của một thư viện Rust'
 keywords: 'libmake, Rust, scaffold, sinh mã, CLI, mã nguồn mở, năng suất, phát triển'
 ---
 
-![Cấu trúc thư mục thư viện Rust](https://cloudcdn.pro/stocks/images/libmake-banner.webp).class=\"img-fluid clearfix\"
+![Cấu trúc thư mục thư viện Rust](https://cloudcdn.pro/stocks/images/rustlogs.webp).class=\"img-fluid clearfix\"
 
 > **TL;DR.** `libmake` là một CLI tạo các dự án thư viện Rust hoàn chỉnh — bao gồm bộ khung mã, các bài kiểm thử, cấu hình CI/CD GitHub Actions, tài liệu và mẫu README — bằng một lệnh duy nhất.
 >

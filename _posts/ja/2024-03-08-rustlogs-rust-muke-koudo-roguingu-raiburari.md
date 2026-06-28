@@ -5,13 +5,13 @@ description: "RustLogs は、本番グレードの Rust アプリケーション
 date: "March 8, 2024"
 language: "ja-JP"
 locale: "ja_JP"
-banner: "https://cloudcdn.pro/stocks/images/luca-bravo-XJXWbfSo2f0-unsplash.webp"
+banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp"
 banner_alt: "コードを示すラップトップ"
 keywords: "RustLogs, Rust, ロギング, 構造化ログ, JSON, トレーシング, 観測可能性, 本番"
 last_reviewed: "2026-05-11"
 ---
 
-![コードを示すラップトップ](https://cloudcdn.pro/stocks/images/luca-bravo-XJXWbfSo2f0-unsplash.webp).class=\"img-fluid clearfix\"
+![コードを示すラップトップ](https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp).class=\"img-fluid clearfix\"
 
 ## インサイト
 

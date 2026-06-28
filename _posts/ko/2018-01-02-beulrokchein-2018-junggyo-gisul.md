@@ -5,13 +5,13 @@ description: "금융 서비스를 재구성하고 새로운 비즈니스 모델�
 date: "January 2, 2018"
 language: "ko-KR"
 locale: "ko_KR"
-banner: "https://cloudcdn.pro/stocks/images/clint-adair-BW0vK-FA3eg-unsplash.webp"
+banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp"
 banner_alt: "야간의 네트워크화된 도시 스카이라인"
 keywords: "블록체인, 분산 원장, 암호자산, 스마트 컨트랙트, 토큰화, 핀테크, 신뢰, 투명성"
 last_reviewed: "2026-05-16"
 ---
 
-![야간의 네트워크화된 도시 스카이라인](https://cloudcdn.pro/stocks/images/clint-adair-BW0vK-FA3eg-unsplash.webp).class=\"img-fluid clearfix\"
+![야간의 네트워크화된 도시 스카이라인](https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp).class=\"img-fluid clearfix\"
 
 ## 통찰
 

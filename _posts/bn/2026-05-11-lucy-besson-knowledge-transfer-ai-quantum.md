@@ -6,12 +6,12 @@ description: "বারো বছর পরে, বেসোঁর Lucy মা�
 date: "May 11, 2026"
 language: "bn-BD"
 locale: "bn_BD"
-banner: "https://cloudcdn.pro/stocks/images/lucy-knowledge-transfer-banner.webp"
+banner: "https://cloudcdn.pro/stocks/images/harald-krichel-scarlett-johansson-8531.webp"
 banner_alt: "নিউরাল নেটওয়ার্ক এবং কোয়ান্টাম অ্যাটমিক অ্যারের বিমূর্ত দৃশ্যায়ন। পুনর্বিন্যস্ত কণা থেকে গড়ে উঠছে একটি কালো কম্পিউটার।"
 keywords: "Lucy 2014 film, Luc Besson, জ্ঞান স্থানান্তর, large language models, neutral atom qubits, whole-brain emulation, substrate independence, AI দর্শন, quantum computing, জ্ঞান সংরক্ষণ"
 ---
 
-![Abstract visualisation of neural networks and quantum atomic arrays. A black computer forming from rearranging particles](https://cloudcdn.pro/stocks/images/lucy-knowledge-transfer-banner.webp).class="img-fluid clearfix"
+![Abstract visualisation of neural networks and quantum atomic arrays. A black computer forming from rearranging particles](https://cloudcdn.pro/stocks/images/harald-krichel-scarlett-johansson-8531.webp).class="img-fluid clearfix"
 
 ---
 

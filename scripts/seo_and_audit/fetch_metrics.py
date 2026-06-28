@@ -48,22 +48,19 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 OUT_PATH = ROOT / "_data" / "proof" / "metrics.json"
 
-# Pinned package list — keep in sync with what's published. Adding a
-# package means: drop the slug here, ensure it's live on PyPI / crates.
+# Pinned PyPI package list — pypistats has no per-account rollup, so we
+# enumerate. Adding a package means: add the slug here, ensure it's live.
 PYPI_PACKAGES = (
     "pain001",
     "bankstatementparser",
     "pacs008",
 )
-CRATES_PACKAGES = (
-    "kyberlib",
-    "dtt",
-    "rustlogs",
-    "static-site-generator",
-    "libmake",
-    "hsh",
-)
+# crates.io downloads are summed across EVERY crate owned by the account
+# (discovered via the users endpoint), so serde_yml and libyml — which
+# dominate the total at ~18M each — are never missed. No hand-maintained
+# crate list to drift out of date.
 GITHUB_USER = "sebastienrousseau"
+CRATES_USER = "sebastienrousseau"
 
 _TIMEOUT = 10
 _HEADERS = {"User-Agent": "sebastienrousseau-site-build/1.0"}
@@ -91,12 +88,22 @@ def _pypi_downloads(pkg: str) -> int:
     return int(data.get("data", {}).get("last_month") or 0)
 
 
-def _crates_downloads(crate: str) -> int:
-    """Return all-time downloads from crates.io. 0 on fetch failure."""
-    data = _http_get_json(f"https://crates.io/api/v1/crates/{crate}")
+def _crates_downloads_all() -> int:
+    """Sum all-time downloads across every crate owned by the account.
+
+    Resolves the account's numeric user id, then lists their crates and
+    sums each crate's all-time download count. 0 on any fetch failure so
+    `_max_value` falls back to the last committed total."""
+    user = _http_get_json(f"https://crates.io/api/v1/users/{CRATES_USER}")
+    uid = (user or {}).get("user", {}).get("id")
+    if not uid:
+        return 0
+    data = _http_get_json(
+        f"https://crates.io/api/v1/crates?user_id={uid}&per_page=100"
+    )
     if not data:
         return 0
-    return int((data.get("crate") or {}).get("downloads") or 0)
+    return sum(int(c.get("downloads") or 0) for c in data.get("crates", []))
 
 
 def _github_repos() -> tuple[int, int]:
@@ -164,7 +171,7 @@ def main() -> int:
     fallback = _load_existing()
 
     pypi_total = sum(_pypi_downloads(p) for p in PYPI_PACKAGES)
-    crates_total = sum(_crates_downloads(c) for c in CRATES_PACKAGES)
+    crates_total = _crates_downloads_all()
     downloads_total = _max_value("downloads_total", pypi_total + crates_total, fallback)
 
     stars, forks = _github_repos()

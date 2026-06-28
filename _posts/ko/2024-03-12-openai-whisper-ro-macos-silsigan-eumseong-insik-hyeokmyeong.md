@@ -5,13 +5,13 @@ description: "OpenAI Whisper와 macOS Metal Performance Shaders GPU 가속으로
 date: "March 12, 2024"
 language: "ko-KR"
 locale: "ko_KR"
-banner: "https://cloudcdn.pro/stocks/images/icons8-team-r-enAOPw8Rs-unsplash.webp"
+banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp"
 banner_alt: "마이크와 음파"
 keywords: "OpenAI Whisper, macOS, Metal Performance Shaders, MPS, 실시간, 음성 인식, Apple Silicon"
 last_reviewed: "2026-05-16"
 ---
 
-![마이크와 음파](https://cloudcdn.pro/stocks/images/icons8-team-r-enAOPw8Rs-unsplash.webp).class=\"img-fluid clearfix\"
+![마이크와 음파](https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp).class=\"img-fluid clearfix\"
 
 ## 통찰
 

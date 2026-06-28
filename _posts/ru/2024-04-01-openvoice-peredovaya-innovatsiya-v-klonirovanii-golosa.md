@@ -5,7 +5,7 @@ description: "OpenVoice — открытая модель клонировани
 date: "April 1, 2024"
 language: "ru-RU"
 locale: "ru_RU"
-banner: "https://cloudcdn.pro/stocks/images/openvoice-banner.webp"
+banner: "https://cloudcdn.pro/stocks/images/rustlogs.webp"
 banner_alt: "OpenVoice — баннер технологии клонирования голоса"
 keywords: "OpenVoice, клонирование голоса, синтез речи, TTS, voice cloning, open source, deepfake, безопасность"
 ---

@@ -1,24 +1,33 @@
-# Web lab demos
+<h1 align="center">Web lab demos</h1>
 
-> Last Updated: June 5, 2026
+<p align="center">
+  Interactive, client-side demos for sebastienrousseau.com — Rust → WebAssembly
+  and vanilla JavaScript, each sandboxed under a strict CSP.
+</p>
 
-This directory houses web lab demos for the Sebastien Rousseau web platform, which features compiled Rust WebAssembly code and client JavaScript tools.
+---
 
 ## Layout
 
-The folder layout puts each demo inside its own directory. JavaScript tools stay in simple folders with basic web assets, while Rust tools contain Cargo files and source code.
+Each demo lives in its own directory. JavaScript demos hold plain web assets; Rust demos add a `Cargo.toml` and `src/`.
 
 ## Build flow
 
-The build script compiles and copies all files when you build the site. The builder runs wasm-pack for Rust code and copies JavaScript files directly.
+`build.sh` compiles and stages every demo: `wasm-pack` for Rust crates, direct copy for JavaScript.
 
-## CSP rules
+## CSP
 
-Each page runs under a tight security policy to keep visitors safe. WebAssembly needs the unsafe-eval rule, while other scripts run without dynamic code rights.
+Each page runs under a tight policy. WebAssembly demos add `'wasm-unsafe-eval'`; JavaScript demos run with no dynamic-code rights.
 
 ## Available labs
 
-We ship several browser tools to show cryptographic ideas.
+| Lab | Stack | What it shows |
+| :--- | :--- | :--- |
+| `hsh-demo` | Rust + WASM | In-browser multi-algorithm hashing |
+| `pqc-key-sizes` | JavaScript | Post-quantum key-size comparison |
 
-- **hsh-demo:** A Rust hashing tool that runs locally in the browser with WebAssembly.
-- **pqc-key-sizes:** A JavaScript tool that computes post-quantum key sizes for comparison.
+## License
+
+Licensed under [Apache-2.0](../LICENSE).
+
+<p align="right"><a href="#web-lab-demos">Back to Top</a></p>

@@ -5,12 +5,12 @@ description: 'Le Chat là chatbot từ Mistral AI, công ty AI hàng đầu củ
 date: 'March 4, 2024'
 language: 'vi-VN'
 locale: 'vi_VN'
-banner: 'https://cloudcdn.pro/stocks/images/mistral-banner.webp'
+banner: 'https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp'
 banner_alt: 'Logo Mistral AI'
 keywords: 'Le Chat, Mistral AI, châu Âu, LLM, ChatGPT, AI chủ quyền, Pháp, mã nguồn mở'
 ---
 
-![Logo Mistral AI](https://cloudcdn.pro/stocks/images/mistral-banner.webp).class=\"img-fluid clearfix\"
+![Logo Mistral AI](https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp).class=\"img-fluid clearfix\"
 
 > **TL;DR.** Le Chat là chatbot AI của Mistral AI, công ty AI hàng đầu của Pháp. Nó cạnh tranh với ChatGPT, được đào tạo với các giá trị châu Âu và đại diện cho một bước quan trọng hướng tới AI chủ quyền của châu Âu.
 >

@@ -5,13 +5,13 @@ description: "AI プロンプトエンジニアリングの最新の進歩。Cha
 date: "January 23, 2024"
 language: "ja-JP"
 locale: "ja_JP"
-banner: "https://cloudcdn.pro/stocks/images/markus-spiske-466ENaLuhLY-unsplash.webp"
+banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp"
 banner_alt: "コードエディタを使用する開発者"
 keywords: "プロンプトエンジニアリング, AI, LLM, chain-of-thought, RAG, ツール使用, エージェント, ワークフロー"
 last_reviewed: "2026-05-11"
 ---
 
-![コードエディタを使用する開発者](https://cloudcdn.pro/stocks/images/markus-spiske-466ENaLuhLY-unsplash.webp).class=\"img-fluid clearfix\"
+![コードエディタを使用する開発者](https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp).class=\"img-fluid clearfix\"
 
 ## インサイト
 

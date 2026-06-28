@@ -5,12 +5,12 @@ description: 'hsh — thư viện Rust triển khai các thuật toán băm và 
 date: 'October 16, 2023'
 language: 'vi-VN'
 locale: 'vi_VN'
-banner: 'https://cloudcdn.pro/stocks/images/hsh-banner.webp'
+banner: 'https://cloudcdn.pro/stocks/images/rustlogs.webp'
 banner_alt: 'Hình ảnh trừu tượng của các hàm băm mật mã'
 keywords: 'hsh, Rust, băm, mật khẩu, mật mã, hậu lượng tử, Argon2, bcrypt, scrypt, an toàn'
 ---
 
-![Hàm băm mật mã](https://cloudcdn.pro/stocks/images/hsh-banner.webp).class=\"img-fluid clearfix\"
+![Hàm băm mật mã](https://cloudcdn.pro/stocks/images/rustlogs.webp).class=\"img-fluid clearfix\"
 
 > **TL;DR.** `hsh` là thư viện Rust triển khai các thuật toán băm và digest an toàn cho mã hoá và xác thực mật khẩu, được thiết kế với tư thế kháng lượng tử cho kỷ nguyên xác thực hậu PQC.
 >

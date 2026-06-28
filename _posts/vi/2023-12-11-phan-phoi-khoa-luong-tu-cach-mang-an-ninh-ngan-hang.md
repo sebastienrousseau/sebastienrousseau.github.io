@@ -5,12 +5,12 @@ description: 'Quantum Key Distribution (QKD) cung cấp bảo mật được đ�
 date: 'December 11, 2023'
 language: 'vi-VN'
 locale: 'vi_VN'
-banner: 'https://cloudcdn.pro/stocks/images/qkd-banner.webp'
+banner: 'https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp'
 banner_alt: 'Sơ đồ giao thoa photon trong một hệ thống QKD'
 keywords: 'QKD, phân phối khoá lượng tử, BB84, mật mã lượng tử, ngân hàng, an ninh tài chính, photon'
 ---
 
-![Sơ đồ QKD](https://cloudcdn.pro/stocks/images/qkd-banner.webp).class=\"img-fluid clearfix\"
+![Sơ đồ QKD](https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp).class=\"img-fluid clearfix\"
 
 > **TL;DR.** Phân phối Khoá Lượng tử (QKD) sử dụng các tính chất của cơ học lượng tử để phân phối khoá mã hoá với bảo mật được đảm bảo về mặt vật lý. Đối với các ngân hàng, nó là một câu trả lời cấu trúc — bổ sung cho PQC — đối với mối đe doạ lượng tử.
 >

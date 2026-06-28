@@ -5,13 +5,13 @@ description: "Google Gemma, 오픈소스 AI 개발을 변혁하는 Gemini 기반
 date: "February 26, 2024"
 language: "ko-KR"
 locale: "ko_KR"
-banner: "https://cloudcdn.pro/stocks/images/markus-spiske-466ENaLuhLY-unsplash.webp"
+banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp"
 banner_alt: "오픈소스 코드"
 keywords: "Gemma, Google, 오픈소스 AI, LLM, Llama, 파인튜닝, 온디바이스 AI"
 last_reviewed: "2026-05-16"
 ---
 
-![오픈소스 코드](https://cloudcdn.pro/stocks/images/markus-spiske-466ENaLuhLY-unsplash.webp).class=\"img-fluid clearfix\"
+![오픈소스 코드](https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp).class=\"img-fluid clearfix\"
 
 ## 통찰
 

@@ -60,3 +60,19 @@ max-complexity = 12
 testpaths = ["tests/unit"]
 addopts = "-ra --tb=short"
 pythonpath = ["scripts"]
+
+[tool.mypy]
+# Real type-checking — see improvement-plan-2026.md Phase 1.2. The strict
+# settings below apply to whatever is passed to mypy; the GATE (which dirs
+# must stay green) is curated in scripts/typecheck.sh, ratcheting outward as
+# modules are cleaned. `check_untyped_defs` is the switch that makes mypy
+# actually inspect this largely-untyped codebase instead of no-op'ing.
+python_version = "3.11"
+ignore_missing_imports = true
+namespace_packages = true
+explicit_package_bases = true
+check_untyped_defs = true
+disallow_incomplete_defs = true
+warn_unused_ignores = true
+warn_redundant_casts = true
+exclude = '^(docs|public|audits)/'

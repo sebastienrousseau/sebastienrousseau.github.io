@@ -5,7 +5,7 @@ description: "Как IBM Qiskit и квантовое преобразовани
 date: "January 8, 2024"
 language: "ru-RU"
 locale: "ru_RU"
-banner: "https://cloudcdn.pro/stocks/images/qiskit-credit-ratio.webp"
+banner: "https://cloudcdn.pro/stocks/images/rustlogs.webp"
 banner_alt: "IBM Qiskit и квантовое преобразование Фурье — анализ кредитного коэффициента"
 keywords: "IBM Qiskit, квантовое преобразование Фурье, QFT, кредитный анализ, банковские риски, квантовая оптимизация, финансовое моделирование"
 ---

@@ -5,7 +5,7 @@ description: "Квантовый риск перешёл из области и�
 date: "May 14, 2026"
 language: "ru-RU"
 locale: "ru_RU"
-banner: "https://cloudcdn.pro/stocks/images/post-quantum-ledger.webp"
+banner: "https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp"
 banner_alt: "Защита книги учёта: постквантовая миграция"
 keywords: "постквантовая миграция, корпоративные финансы, G7, BIS Project Leap, регуляторный мандат, crypto-agility, HSM, банковская инженерия"
 ---

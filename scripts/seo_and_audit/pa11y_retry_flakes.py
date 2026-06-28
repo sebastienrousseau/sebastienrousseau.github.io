@@ -72,6 +72,20 @@ def main(argv: list[str]) -> int:
             f"pa11y: all {len(flaky)} flaky URL(s) passed on retry — "
             "treating overall run as passing.",
         )
+        # Clear the recovered flakes from the on-disk report. The retry
+        # re-runs pa11y against a temp config and never rewrote this file,
+        # so without this the uploaded shard artifact still carries the
+        # flake errors and the finalise merge step fails with
+        # "pa11y errors remain". real_failures was empty above, so once
+        # the flaky URLs are dropped no failing URLs remain.
+        results = report.get("results", {})
+        for url in flaky:
+            results.pop(url, None)
+        report["results"] = results
+        report["errors"] = sum(1 for issues in results.values() if issues)
+        if "total" in report:
+            report["passes"] = report["total"] - report["errors"]
+        Path(argv[1]).write_text(json.dumps(report), encoding="utf-8")
     return rc
 
 
@@ -79,11 +93,19 @@ def _load_report(path: Path) -> dict | None:
     if not path.exists():
         print(f"missing pa11y-ci JSON report at {path}", file=sys.stderr)
         return None
+    text = path.read_text(encoding="utf-8")
     try:
-        return json.loads(path.read_text(encoding="utf-8"))
-    except json.JSONDecodeError as exc:
-        print(f"pa11y-ci JSON not parseable: {exc}", file=sys.stderr)
-        return None
+        return json.loads(text)
+    except json.JSONDecodeError:
+        # pa11y-ci sometimes flushes trailing stdout after its JSON
+        # object ("Extra data"); decode the first complete object and
+        # ignore the rest.
+        try:
+            obj, _ = json.JSONDecoder().raw_decode(text.lstrip())
+            return obj
+        except json.JSONDecodeError as exc:
+            print(f"pa11y-ci JSON not parseable: {exc}", file=sys.stderr)
+            return None
 
 
 def _partition_failures(

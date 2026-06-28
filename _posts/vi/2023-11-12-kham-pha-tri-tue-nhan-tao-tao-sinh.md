@@ -5,12 +5,12 @@ description: 'AI tạo sinh giờ đây tạo ra văn bản, hình ảnh, mã v�
 date: 'November 12, 2023'
 language: 'vi-VN'
 locale: 'vi_VN'
-banner: 'https://cloudcdn.pro/stocks/images/genai-banner.webp'
+banner: 'https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp'
 banner_alt: 'Hình ảnh trừu tượng minh hoạ AI tạo sinh'
 keywords: 'AI tạo sinh, GPT, LLM, diffusion, Stable Diffusion, DALL-E, Midjourney, doanh nghiệp, tự động hoá'
 ---
 
-![AI tạo sinh](https://cloudcdn.pro/stocks/images/genai-banner.webp).class=\"img-fluid clearfix\"
+![AI tạo sinh](https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp).class=\"img-fluid clearfix\"
 
 > **TL;DR.** AI tạo sinh — các mô hình tạo ra văn bản, hình ảnh, mã và âm thanh — đã chuyển từ phòng thí nghiệm nghiên cứu sang các ứng dụng doanh nghiệp trong vòng 18 tháng. Bài viết này khảo sát các kiến trúc, mô hình và trường hợp sử dụng chính.
 >
