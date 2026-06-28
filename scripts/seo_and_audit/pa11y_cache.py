@@ -333,7 +333,12 @@ def build_pa11yci_config(urls: list[str], hide_elements: str) -> dict[str, Any]:
 _DEFAULT_HIDE_ELEMENTS = (
     "#ssg-search-widget, #ssg-search-btn, "
     "iframe[src*='recaptcha'], iframe[src*='google.com/recaptcha'], "
-    "form iframe"
+    "form iframe, "
+    # /projects-*/ story heroes overlay white text on a full-bleed image.
+    # pa11y cannot read an image background and returns NaN contrast; the
+    # text is genuinely legible via the scrim + the solid dark .story-hero
+    # background-color. Hide the image so pa11y measures text vs that solid.
+    ".story-hero-img"
 )
 
 
