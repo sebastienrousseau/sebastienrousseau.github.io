@@ -80,11 +80,12 @@
       :root{
         --accent: rgb({{theme-color}});
         --accent-rgb: {{theme-color}};
-        /* One link colour everywhere: content/prose links track the accent so
-           they match CTAs and "Learn more" links (was Skeletonic's #004caf).
-           Resolves per-mode because --accent is itself light/dark-aware. */
-        --link-color: var(--accent);
-        --link-color-visited: var(--accent);
+        /* One link colour everywhere: a fixed, WCAG-AAA-safe blue (>=7:1 on
+           white) rather than the per-page --accent, since some articles carry a
+           lighter banner-derived accent (e.g. 0,83,191 = 6.23:1) that fails AAA.
+           Visited shares the same colour so links read uniformly site-wide. */
+        --link-color: light-dark(#004caf, #8cc0ff);
+        --link-color-visited: light-dark(#004caf, #8cc0ff);
         --ink:#1d1d1f;            /* 16.5:1 vs bg. AAA */
         --ink-soft:#3a3a3c;        /* 11.3:1 vs bg. AAA */
         --ink-mute:#505058;        /* 7.0:1 vs --bg-alt (alt sections). AAA. */
@@ -1610,7 +1611,7 @@
       .cat-grid .newsroom-card .gh-stats-row,.cat-grid .newsroom-card .gh-commit,.cat-grid .newsroom-card .newsroom-eyebrow{display:none}
       .cat-grid .newsroom-more{order:99;margin-top:2px}
       /* story subpages (/projects-*): apple.com/government-style image hero */
-      .story-hero{position:relative;width:100%;min-height:calc(100vh - var(--nav-h));min-height:calc(100svh - var(--nav-h));display:flex;align-items:center;justify-content:center;overflow:hidden;isolation:isolate;margin-block:0 clamp(36px,5vw,64px)}
+      .story-hero{position:relative;width:100%;min-height:calc(100vh - var(--nav-h));min-height:calc(100svh - var(--nav-h));display:flex;align-items:center;justify-content:center;overflow:hidden;isolation:isolate;margin-block:0 clamp(36px,5vw,64px);background-color:#14161c}
       .story-hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;animation:story-zoom 1.5s cubic-bezier(.2,.6,.2,1) both}
       .story-hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.52),rgba(0,0,0,.3) 45%,rgba(0,0,0,.52));z-index:-1}
       .story-hero-inner{max-width:1000px;padding:clamp(2rem,6vw,4rem) 1.25rem;text-align:center;color:#fff}
