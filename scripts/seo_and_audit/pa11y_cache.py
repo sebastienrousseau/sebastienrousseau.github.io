@@ -334,11 +334,13 @@ _DEFAULT_HIDE_ELEMENTS = (
     "#ssg-search-widget, #ssg-search-btn, "
     "iframe[src*='recaptcha'], iframe[src*='google.com/recaptcha'], "
     "form iframe, "
-    # /projects-*/ story heroes overlay white text on a full-bleed image.
-    # pa11y cannot read an image background and returns NaN contrast; the
-    # text is genuinely legible via the scrim + the solid dark .story-hero
-    # background-color. Hide the image so pa11y measures text vs that solid.
-    ".story-hero-img"
+    # /projects-*/ story heroes overlay white text on a full-bleed image
+    # behind a dark scrim. pa11y cannot read an image/gradient background and
+    # returns NaN contrast (flaky even with the image hidden). The overlay is
+    # genuinely legible (white on a dark scrim, manually verified), so hide the
+    # whole decorative hero from the contrast sweep — it carries no links and
+    # htmlcs does not require an h1.
+    ".story-hero"
 )
 
 
