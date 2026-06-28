@@ -5,7 +5,7 @@ description: "dtt — это библиотека Rust для надёжной �
 date: "December 4, 2023"
 language: "ru-RU"
 locale: "ru_RU"
-banner: "https://cloudcdn.pro/stocks/images/dtt-banner.webp"
+banner: "https://cloudcdn.pro/stocks/images/rustlogs.webp"
 banner_alt: "dtt — баннер библиотеки даты и времени"
 keywords: "dtt, дата, время, Rust, временные зоны, ISO 8601, финансовые вычисления, отчётность, открытый код"
 ---

@@ -5,7 +5,7 @@ description: "Il calcolo quantistico minaccia le fondamenta crittografiche dei s
 date: "September 01, 2025"
 language: "it-IT"
 locale: "it_IT"
-banner: "https://cloudcdn.pro/stocks/images/digitale-nodes.webp"
+banner: "https://cloudcdn.pro/stocks/images/digital-nodes.webp"
 banner_alt: "Pagamenti resistenti al quantum, libro bianco EPAA"
 keywords: "quantum-safe payments, EPAA, libro bianco, PQC, pagamenti wholesale, regolamentazione, infrastruttura"
 ---

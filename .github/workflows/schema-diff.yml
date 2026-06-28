@@ -16,28 +16,18 @@ concurrency:
 jobs:
   diff:
     runs-on: ubuntu-latest
+    timeout-minutes: 60
     steps:
-      # Pinned to actions/checkout v6 here (NOT v7). v7 broke the
-      # specific multi-checkout pattern this workflow uses (head/ +
-      # base/ subdirectories): the SSG `extract metadata` post-
-      # processing step fails with "No valid front matter found" on
-      # every PR opened after PR #243 bumped checkout v6→v7 across all
-      # workflows. PR #246's first attempt (fetch-depth: 0 with v7) did
-      # not fix it — the failure is structural to the v7 multi-checkout
-      # behaviour, not the fetch depth. ci.yml's single-checkout pattern
-      # works fine on v7, so the bump stays everywhere else.
-      - name: Checkout HEAD
-        uses: actions/checkout@v6
+      # Single checkout at the repo root, then build HEAD and BASE from
+      # the same working tree by hard-resetting between builds. The old
+      # multi-checkout pattern (head/ + base/ subdirectories) made the
+      # SSG `extract metadata` phase fail with "No valid front matter
+      # found" — ssg only builds cleanly with CWD at the repo root, which
+      # is exactly the single-checkout pattern ci.yml uses successfully.
+      - name: Checkout (full history)
+        uses: actions/checkout@v7
         with:
-          path: head
           fetch-depth: 0
-
-      - name: Checkout base
-        uses: actions/checkout@v6
-        with:
-          ref: ${{ github.event.pull_request.base.sha }}
-          path: base
-          fetch-depth: 1
 
       - name: Cache cargo registry + git + ssg
         uses: actions/cache@v5
@@ -54,7 +44,7 @@ jobs:
       - name: Install Static Site Generator (ssg)
         run: |
           if ! command -v ssg >/dev/null 2>&1; then
-            cargo install ssg --locked
+            cargo install ssg --locked --version 0.0.44   # ADR-0002
           fi
 
       - name: Setup Python
@@ -69,19 +59,29 @@ jobs:
           node-version: "22"
 
       - name: Install Python build deps
-        run: pip install --quiet -r head/requirements.txt
+        run: pip install --quiet -r requirements.txt
+
+      # Build the PR head first (current working tree), stash the output,
+      # then reset the tree to the PR base SHA and build that. Both builds
+      # run with CWD = repo root and emit to `public/` (the `docs/`
+      # snapshot was retired 2026-06-10).
+      - name: Build HEAD (skip WASM compilation)
+        run: |
+          ./build.sh
+          rm -rf /tmp/head-public
+          mv public /tmp/head-public
 
       - name: Build BASE (skip WASM compilation)
-        working-directory: base
-        run: ./build.sh
-
-      - name: Build HEAD (skip WASM compilation)
-        working-directory: head
-        run: ./build.sh
+        run: |
+          git reset --hard ${{ github.event.pull_request.base.sha }}
+          git clean -fd
+          ./build.sh
+          rm -rf /tmp/base-public
+          mv public /tmp/base-public
 
       - name: Run JSON-LD diff
         run: |
-          python3 head/scripts/seo_and_audit/jsonld_diff.py base/docs head/docs > diff.md
+          python3 scripts/seo_and_audit/jsonld_diff.py /tmp/base-public /tmp/head-public > diff.md
           cat diff.md
 
       - name: Post diff comment

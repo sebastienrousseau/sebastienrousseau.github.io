@@ -5,7 +5,7 @@ description: "EPAA için beyaz kitap: kuantum bilişimin ödeme altyapısı içi
 date: "September 01, 2025"
 language: "tr-TR"
 locale: "tr_TR"
-banner: "https://cloudcdn.pro/stocks/images/digitale-nodes.webp"
+banner: "https://cloudcdn.pro/stocks/images/digital-nodes.webp"
 banner_alt: "Bir ödeme rayının kuantum görselleştirmesi"
 keywords: "kuantum, ödemeler, EPAA, beyaz kitap, post-kuantum, kriptografi, bankacılık"
 ---

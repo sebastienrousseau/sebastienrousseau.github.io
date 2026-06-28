@@ -5,7 +5,7 @@ description: "Gemma — это открытая модель Google, предл�
 date: "February 26, 2024"
 language: "ru-RU"
 locale: "ru_RU"
-banner: "https://cloudcdn.pro/stocks/images/google-gemma.webp"
+banner: "https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp"
 banner_alt: "Google Gemma — баннер открытой модели ИИ"
 keywords: "Google Gemma, open source, LLM, Gemini, локальное развёртывание, банковский ИИ, конфиденциальность, дистилляция знаний"
 ---

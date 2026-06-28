@@ -5,13 +5,13 @@ description: "libmake는 고품질 Rust 라이브러리를 신속히 작성하�
 date: "October 26, 2023"
 language: "ko-KR"
 locale: "ko_KR"
-banner: "https://cloudcdn.pro/stocks/images/danial-igdery-FCHlYvR5gJI-unsplash.webp"
+banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp"
 banner_alt: "코드 에디터를 사용하는 개발자"
 keywords: "libmake, 코드 생성기, Rust, Cargo, 라이브러리, 템플릿, 개발자 도구, 모범 사례"
 last_reviewed: "2026-05-16"
 ---
 
-![코드 에디터를 사용하는 개발자](https://cloudcdn.pro/stocks/images/danial-igdery-FCHlYvR5gJI-unsplash.webp).class=\"img-fluid clearfix\"
+![코드 에디터를 사용하는 개발자](https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp).class=\"img-fluid clearfix\"
 
 ## 통찰
 

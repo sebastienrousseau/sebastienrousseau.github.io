@@ -5,7 +5,7 @@ description: "Um novo artigo sugiere que o algoritmo de Shor poderia ejecutarse 
 date: "April 11, 2026"
 language: "pt-BR"
 locale: "pt_BR"
-banner: "https://cloudcdn.pro/stocks/images/leo_visions-Q_e8ZzhQ2_s-unsplash.webp"
+banner: "https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp"
 banner_alt: "Esquema do umbral de qubits para o algoritmo de Shor. Placa de circuito de computação quântica com reflejos azules"
 keywords: "algoritmo de Shor, qubits, computação quântica, ECC, RSA-2048, átomos neutros reconfigurables, códigos de corrección de errores, CRYSTALS-Kyber, CRYSTALS-Dilithium, PQC, criptografia pós-quântica"
 ---

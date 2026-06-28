@@ -5,13 +5,13 @@ description: "OpenVoice, 오픈소스 음성 복제 기술, 은행 업무의 부
 date: "April 1, 2024"
 language: "ko-KR"
 locale: "ko_KR"
-banner: "https://cloudcdn.pro/stocks/images/icons8-team-r-enAOPw8Rs-unsplash.webp"
+banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp"
 banner_alt: "마이크와 음성을 표현한 비주얼"
 keywords: "OpenVoice, 음성 복제, 음성 AI, 딥페이크, 부정, 은행 인증, 음성 생체 인식"
 last_reviewed: "2026-05-16"
 ---
 
-![마이크와 음성을 표현한 비주얼](https://cloudcdn.pro/stocks/images/icons8-team-r-enAOPw8Rs-unsplash.webp).class=\"img-fluid clearfix\"
+![마이크와 음성을 표현한 비주얼](https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp).class=\"img-fluid clearfix\"
 
 ## 통찰
 

@@ -5,13 +5,13 @@ description: "2023년 AI와 양자 컴퓨팅이 은행 업무에 미친 영향�
 date: "December 18, 2023"
 language: "ko-KR"
 locale: "ko_KR"
-banner: "https://cloudcdn.pro/stocks/images/jc-gellidon-cQ3BneKt5g0-unsplash.webp"
+banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp"
 banner_alt: "런던 금융가의 야경"
 keywords: "AI, 양자 컴퓨팅, 은행, 핀테크, 리스크 관리, 알고리즘 트레이딩, 2023, 검토"
 last_reviewed: "2026-05-16"
 ---
 
-![런던 금융가의 야경](https://cloudcdn.pro/stocks/images/jc-gellidon-cQ3BneKt5g0-unsplash.webp).class=\"img-fluid clearfix\"
+![런던 금융가의 야경](https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp).class=\"img-fluid clearfix\"
 
 ## 통찰
 

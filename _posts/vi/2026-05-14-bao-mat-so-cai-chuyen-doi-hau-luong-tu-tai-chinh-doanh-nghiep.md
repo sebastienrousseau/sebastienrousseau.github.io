@@ -5,12 +5,12 @@ description: 'Cách các nhóm treasury doanh nghiệp chuyển sang mật mã h
 date: 'May 14, 2026'
 language: 'vi-VN'
 locale: 'vi_VN'
-banner: 'https://cloudcdn.pro/stocks/images/treasury-pqc-banner.webp'
+banner: 'https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp'
 banner_alt: 'Sổ cái doanh nghiệp với các khoá mật mã hậu lượng tử'
 keywords: 'PQC, hậu lượng tử, treasury, tài chính doanh nghiệp, sổ cái, chuyển đổi, kiểm kê, NIST, Kyber'
 ---
 
-![Sổ cái doanh nghiệp PQC](https://cloudcdn.pro/stocks/images/treasury-pqc-banner.webp).class=\"img-fluid clearfix\"
+![Sổ cái doanh nghiệp PQC](https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp).class=\"img-fluid clearfix\"
 
 > **TL;DR.** Các nhóm treasury doanh nghiệp đối mặt với một câu hỏi cấp bách: làm thế nào để bảo vệ sổ cái tài chính và dữ liệu giao dịch trong kỷ nguyên hậu lượng tử. Bài viết này phác hoạ một lộ trình thực tế từ kiểm kê đến triển khai sản xuất.
 >

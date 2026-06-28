@@ -316,11 +316,11 @@ def test_inject_tech_article_idempotent_when_scholarly_present():
 
 
 def test_category_label_maps_section_titles():
-    assert sc._category_label("PAYMENTS") == "Finance — Payments"
-    assert sc._category_label("POST-QUANTUM CRYPTOGRAPHY") == "Cryptography — Post-Quantum"
+    assert sc._category_label("PAYMENTS") == "Finance and payments"
+    assert sc._category_label("POST-QUANTUM CRYPTOGRAPHY") == "Post-quantum cryptography"
     assert sc._category_label("AI AND VOICE") == "Artificial Intelligence"
-    assert sc._category_label("OPEN-SOURCE RUST") == "Developer Tools — Rust"
-    assert sc._category_label("WEB AND DEVELOPER ENVIRONMENT") == "Developer Tools — Web"
+    assert sc._category_label("OPEN-SOURCE RUST") == "Developer tools, Rust"
+    assert sc._category_label("WEB AND DEVELOPER ENVIRONMENT") == "Developer tools, web"
     assert sc._category_label("") == "Software Library"
 
 
@@ -388,7 +388,7 @@ def test_build_software_source_code_external_site_links_canonical_repo():
     assert rec is not None
     # External project site (pain001.com) → infer canonical sebastienrousseau GitHub.
     assert rec["codeRepository"] == "https://github.com/sebastienrousseau/pain001"
-    assert rec["applicationCategory"] == "Finance — Payments"
+    assert rec["applicationCategory"] == "Finance and payments"
     assert rec["programmingLanguage"] == "Python"
 
 
@@ -453,8 +453,8 @@ def test_build_projects_source_code_walks_sections():
     assert graph["@type"] == "ItemList"
     assert graph["numberOfItems"] == 3
     cats = [it["item"]["applicationCategory"] for it in graph["itemListElement"]]
-    assert cats[0] == "Finance — Payments"
-    assert cats[2] == "Cryptography — Post-Quantum"
+    assert cats[0] == "Finance and payments"
+    assert cats[2] == "Post-quantum cryptography"
 
 
 def test_build_projects_source_code_falls_back_to_flat_when_no_sections():

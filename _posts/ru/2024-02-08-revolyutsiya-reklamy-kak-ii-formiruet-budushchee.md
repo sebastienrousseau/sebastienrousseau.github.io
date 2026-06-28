@@ -5,7 +5,7 @@ description: "ИИ преобразует рекламную индустрию 
 date: "February 8, 2024"
 language: "ru-RU"
 locale: "ru_RU"
-banner: "https://cloudcdn.pro/stocks/images/ai-advertising.webp"
+banner: "https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp"
 banner_alt: "ИИ в рекламе: визуализация технологического стека"
 keywords: "ИИ в рекламе, programmatic, таргетирование, генеративные креативы, персонализация, RTB, аналитика, маркетинг банков"
 ---

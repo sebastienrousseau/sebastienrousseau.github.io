@@ -5,7 +5,7 @@ description: "kyberlib — это надёжная реализация CRYSTALS
 date: "November 28, 2023"
 language: "ru-RU"
 locale: "ru_RU"
-banner: "https://cloudcdn.pro/stocks/images/kyberlib-banner.webp"
+banner: "https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp"
 banner_alt: "kyberlib — квантово-устойчивый щит, баннер библиотеки"
 keywords: "kyberlib, CRYSTALS-Kyber, ML-KEM, Rust, FIPS 203, постквантовая криптография, инкапсуляция ключей, финансовая безопасность"
 ---

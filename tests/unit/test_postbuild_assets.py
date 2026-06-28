@@ -116,7 +116,7 @@ def test_stamp_image_dimensions_subsequent_images_get_lazy_async():
 
 def test_stamp_image_dimensions_uses_known_size_for_personal_portrait():
     """The personal portrait is registered in _IMG_DIMS as 162×162."""
-    html = '<img src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" alt="x">'
+    html = '<img src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" alt="x">'
     out, _ = pb.stamp_image_dimensions(html)
     assert 'width="162"' in out
     assert 'height="162"' in out
@@ -125,7 +125,7 @@ def test_stamp_image_dimensions_uses_known_size_for_personal_portrait():
 def test_stamp_image_dimensions_idempotent_when_attrs_already_present():
     """Images that already have w/h/loading/decoding aren't rewritten."""
     html = (
-        '<img src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" '
+        '<img src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" '
         'width="162" height="162" loading="lazy" decoding="async" '
         'fetchpriority="high" alt="x">'
     )

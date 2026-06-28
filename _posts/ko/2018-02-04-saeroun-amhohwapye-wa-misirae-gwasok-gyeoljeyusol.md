@@ -5,13 +5,13 @@ description: "새로운 암호자산 프로젝트와, 그것이 보다 빠른 �
 date: "February 4, 2018"
 language: "ko-KR"
 locale: "ko_KR"
-banner: "https://cloudcdn.pro/stocks/images/clay-banks-l9tsdhTDecg-unsplash.webp"
+banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp"
 banner_alt: "도시 가로등의 네온"
 keywords: "암호자산, 결제, 실시간 결제, 토큰, ICO, 블록체인, 핀테크, 국경 간 송금"
 last_reviewed: "2026-05-16"
 ---
 
-![도시 가로등의 네온](https://cloudcdn.pro/stocks/images/clay-banks-l9tsdhTDecg-unsplash.webp).class=\"img-fluid clearfix\"
+![도시 가로등의 네온](https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp).class=\"img-fluid clearfix\"
 
 ## 통찰
 

@@ -5,12 +5,12 @@ description: 'Một thuật toán lượng tử mới giải quyết vấn đề
 date: 'April 15, 2024'
 language: 'vi-VN'
 locale: 'vi_VN'
-banner: 'https://cloudcdn.pro/stocks/images/lattice-quantum-banner.webp'
+banner: 'https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp'
 banner_alt: 'Sơ đồ trừu tượng của mạng tinh thể bị tấn công'
 keywords: 'mạng tinh thể, LWE, lượng tử, Yilei Chen, PQC, Kyber, mật mã, hậu lượng tử'
 ---
 
-![Mạng tinh thể bị tấn công](https://cloudcdn.pro/stocks/images/lattice-quantum-banner.webp).class=\"img-fluid clearfix\"
+![Mạng tinh thể bị tấn công](https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp).class=\"img-fluid clearfix\"
 
 > **TL;DR.** Bài báo của Yilei Chen công bố tháng 4 năm 2024 đề xuất một thuật toán lượng tử có thể giải Lattice-LWE — bài toán cơ sở cho CRYSTALS-Kyber và phần lớn mật mã hậu lượng tử. Nếu đúng, đây sẽ là một cú đánh nghiêm trọng cho NIST PQC.
 >

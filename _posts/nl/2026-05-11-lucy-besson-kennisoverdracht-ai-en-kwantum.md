@@ -5,7 +5,7 @@ description: "Een reflectie op kennisoverdracht in AI en post-kwantumcryptografi
 date: "May 11, 2026"
 language: "nl-NL"
 locale: "nl_NL"
-banner: "https://cloudcdn.pro/stocks/images/lucy-knowledge-transfer-banner.webp"
+banner: "https://cloudcdn.pro/stocks/images/harald-krichel-scarlett-johansson-8531.webp"
 banner_alt: "Portret van Lucy Besson"
 keywords: "Lucy Besson, kennisoverdracht, AI, kwantum, mentorschap, banking"
 ---

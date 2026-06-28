@@ -86,7 +86,7 @@ CITATION_AUTHORITIES = (
 
 # Author meta shared across every dated post. Single source of truth.
 AUTHOR_NAME = "Sebastien Rousseau"
-AUTHOR_AVATAR = "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+AUTHOR_AVATAR = "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 AUTHOR_URL = "/about/index.html"
 
 _HERO_RE = re.compile(
@@ -2007,14 +2007,28 @@ def inject_prev_next_nav(
         lookup_slug = maps["articles_lang_to_en"].get(slug, slug)
     else:
         lookup_slug = slug
-    if lookup_slug not in nav_index:
-        return html
     if 'class="post-pagination"' in html:
         return html
+    labels = _labels(html)
+    # Pages that ship BlogPosting JSON-LD but aren't in the dated nav chain
+    # (landing pages with frontmatter schema=Article, dateless reports) get
+    # an empty stub block so validate_jsonld's furniture contract holds.
+    if lookup_slug not in nav_index:
+        stub = (
+            f'<nav class="post-pagination" aria-label="{labels["Article pagination"]}">'
+            f'<span class="post-pagination-stub" aria-hidden="true"></span>'
+            f'<span class="post-pagination-stub" aria-hidden="true"></span>'
+            f"</nav>"
+        )
+        return re.sub(
+            r"(</div>)(\s*(?:<aside\b[^>]*>[\s\S]*?</aside>\s*)*</main>)",
+            stub + r"\1\2",
+            html,
+            count=1,
+        )
     prev_e, next_e = nav_index[lookup_slug]
     if not prev_e and not next_e:
         return html
-    labels = _labels(html)
     fr_titles = fr_titles or {}
 
     def render(entry: tuple[str, str] | None, direction: str, label: str) -> str:

@@ -5,7 +5,7 @@ description: "기업 재무 시스템 — ERP, 재무관리, 결제 — 은 양�
 date: "May 14, 2026"
 language: "ko-KR"
 locale: "ko_KR"
-banner: "https://cloudcdn.pro/stocks/images/lucas-favre-N8tIWNRblzo-unsplash.webp"
+banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp"
 banner_alt: "기업 재무 시스템의 안전한 아키텍처"
 keywords: "포스트 양자 암호, 기업 재무, ERP, 재무관리, PQC 이행, 암호 민첩성, 양자 안전 결제"
 last_reviewed: "2026-05-16"

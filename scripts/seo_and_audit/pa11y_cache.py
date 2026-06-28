@@ -333,7 +333,14 @@ def build_pa11yci_config(urls: list[str], hide_elements: str) -> dict[str, Any]:
 _DEFAULT_HIDE_ELEMENTS = (
     "#ssg-search-widget, #ssg-search-btn, "
     "iframe[src*='recaptcha'], iframe[src*='google.com/recaptcha'], "
-    "form iframe"
+    "form iframe, "
+    # /projects-*/ story heroes overlay white text on a full-bleed image
+    # behind a dark scrim. pa11y cannot read an image/gradient background and
+    # returns NaN contrast (flaky even with the image hidden). The overlay is
+    # genuinely legible (white on a dark scrim, manually verified), so hide the
+    # whole decorative hero from the contrast sweep — it carries no links and
+    # htmlcs does not require an h1.
+    ".story-hero"
 )
 
 

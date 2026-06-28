@@ -5,12 +5,12 @@ description: 'Alien Studio khám phá nhiếp ảnh AI — cách các mô hình 
 date: 'January 15, 2024'
 language: 'vi-VN'
 locale: 'vi_VN'
-banner: 'https://cloudcdn.pro/stocks/images/alien-studio-banner.webp'
+banner: 'https://cloudcdn.pro/stocks/images/rustlogs.webp'
 banner_alt: 'Một bức ảnh siêu thực được tạo bằng AI'
 keywords: 'AI, nhiếp ảnh, diffusion, Stable Diffusion, Midjourney, DALL-E, nghệ thuật, sáng tạo'
 ---
 
-![Bức ảnh siêu thực được tạo bằng AI](https://cloudcdn.pro/stocks/images/alien-studio-banner.webp).class=\"img-fluid clearfix\"
+![Bức ảnh siêu thực được tạo bằng AI](https://cloudcdn.pro/stocks/images/rustlogs.webp).class=\"img-fluid clearfix\"
 
 > **TL;DR.** Alien Studio là một dự án khám phá cách các mô hình diffusion biến đổi sáng tạo nghệ thuật. Các nghệ sĩ và nhiếp ảnh gia giờ đây có thể tạo ra các hình ảnh trước đây không thể tưởng tượng được, mở rộng định nghĩa của nhiếp ảnh.
 >

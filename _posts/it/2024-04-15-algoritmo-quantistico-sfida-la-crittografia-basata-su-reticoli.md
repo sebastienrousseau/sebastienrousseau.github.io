@@ -5,7 +5,7 @@ description: "Un nuovo algoritmo quantistico risolve un problema crittografico c
 date: "April 15, 2024"
 language: "it-IT"
 locale: "it_IT"
-banner: "https://cloudcdn.pro/stocks/images/digitale-constellation.webp"
+banner: "https://cloudcdn.pro/stocks/images/digital-nodes.webp"
 banner_alt: "Algoritmo quantistico e reticoli"
 keywords: "quantistico, reticoli, LWE, Yilei Chen, Kyber, PQC, vulnerabilità"
 ---

@@ -47,7 +47,7 @@ python3 scripts/generators/gen_layouts.py
 python3 scripts/generators/gen_articles.py
 python3 scripts/generators/gen_projects.py
 python3 scripts/generators/gen_papers.py
-python3 scripts/postbuild/topic_link.py
+python3 scripts/postbuild/topic_link.py --dir _posts
 python3 scripts/generators/build_topics.py
 python3 scripts/generators/build_lang_feeds.py
 python3 scripts/generators/build_agent_api.py

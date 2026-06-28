@@ -5,7 +5,7 @@ description: "È stato individuato un bug nell'algoritmo quantistico di Yilei Ch
 date: "April 22, 2024"
 language: "it-IT"
 locale: "it_IT"
-banner: "https://cloudcdn.pro/stocks/images/digitale-nodes.webp"
+banner: "https://cloudcdn.pro/stocks/images/digital-nodes.webp"
 banner_alt: "Algoritmo quantistico e bug"
 keywords: "quantistico, LWE, Yilei Chen, bug, Kyber, PQC, peer review"
 ---

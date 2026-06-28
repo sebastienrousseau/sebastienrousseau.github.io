@@ -5,13 +5,13 @@ description: "pain001, CSV veya SQLite kaynaklarından başlayarak ISO 20022 uyu
 date: "September 29, 2023"
 language: "tr-TR"
 locale: "tr_TR"
-banner: "https://cloudcdn.pro/stocks/images/andrea-di-santis-T3Qen8vVgRc.webp"
+banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp"
 banner_alt: "Yapılandırılmış ödeme verilerinin ekran görüntüsü"
 keywords: "ISO 20022, pain.001, Python, ödemeler, otomasyon, SEPA, SWIFT, açık kaynak"
 ---
 
 
-![Yapılandırılmış ödeme verilerinin ekran görüntüsü](https://cloudcdn.pro/stocks/images/andrea-di-santis-T3Qen8vVgRc.webp).class=\"img-fluid clearfix\"
+![Yapılandırılmış ödeme verilerinin ekran görüntüsü](https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp).class=\"img-fluid clearfix\"
 
 ---
 

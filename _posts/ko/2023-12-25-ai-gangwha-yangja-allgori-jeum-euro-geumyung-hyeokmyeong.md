@@ -5,13 +5,13 @@ description: "금융용 양자 알고리즘 내 AI의 변혁적 역할을, 수�
 date: "December 25, 2023"
 language: "ko-KR"
 locale: "ko_KR"
-banner: "https://cloudcdn.pro/stocks/images/markus-spiske-FXFz-sW0uwo-unsplash.webp"
+banner: "https://cloudcdn.pro/stocks/images/markus-spiske-FXFz-sW0uwo.webp"
 banner_alt: "양자 계산을 표현하는 추상적 비주얼"
 keywords: "양자 알고리즘, AI, 기계 학습, 금융, 포트폴리오 최적화, 리스크 모델링, QAOA, VQE"
 last_reviewed: "2026-05-16"
 ---
 
-![양자 계산을 표현하는 추상적 비주얼](https://cloudcdn.pro/stocks/images/markus-spiske-FXFz-sW0uwo-unsplash.webp).class=\"img-fluid clearfix\"
+![양자 계산을 표현하는 추상적 비주얼](https://cloudcdn.pro/stocks/images/markus-spiske-FXFz-sW0uwo.webp).class=\"img-fluid clearfix\"
 
 ## 통찰
 

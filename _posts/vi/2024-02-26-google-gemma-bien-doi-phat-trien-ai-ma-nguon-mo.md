@@ -5,12 +5,12 @@ description: 'Gemma là họ mô hình ngôn ngữ mở của Google, được x
 date: 'February 26, 2024'
 language: 'vi-VN'
 locale: 'vi_VN'
-banner: 'https://cloudcdn.pro/stocks/images/gemma-banner.webp'
+banner: 'https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp'
 banner_alt: 'Logo Gemma của Google'
 keywords: 'Gemma, Google, AI mã nguồn mở, LLM, Llama, Mistral, mô hình mở, phát triển'
 ---
 
-![Logo Gemma](https://cloudcdn.pro/stocks/images/gemma-banner.webp).class=\"img-fluid clearfix\"
+![Logo Gemma](https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp).class=\"img-fluid clearfix\"
 
 > **TL;DR.** Gemma là họ mô hình ngôn ngữ mở của Google (2B và 7B tham số), được xây dựng từ cùng nghiên cứu và công nghệ với Gemini. Nó cho phép các nhà phát triển chạy AI cấp doanh nghiệp tại chỗ với giấy phép thân thiện với thương mại.
 >

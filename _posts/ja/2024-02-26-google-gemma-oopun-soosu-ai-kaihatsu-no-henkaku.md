@@ -5,13 +5,13 @@ description: "Google Gemma、オープンソース AI 開発を変革する Gemi
 date: "February 26, 2024"
 language: "ja-JP"
 locale: "ja_JP"
-banner: "https://cloudcdn.pro/stocks/images/markus-spiske-466ENaLuhLY-unsplash.webp"
+banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp"
 banner_alt: "オープンソースコード"
 keywords: "Gemma, Google, オープンソース AI, LLM, Llama, ファインチューニング, デバイス内 AI"
 last_reviewed: "2026-05-11"
 ---
 
-![オープンソースコード](https://cloudcdn.pro/stocks/images/markus-spiske-466ENaLuhLY-unsplash.webp).class=\"img-fluid clearfix\"
+![オープンソースコード](https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp).class=\"img-fluid clearfix\"
 
 ## インサイト
 
