@@ -6,12 +6,12 @@ description: "Shekaru goma sha biyu bayan, fim ɗin Lucy na Besson yana karantaw
 date: "May 11, 2026"
 language: "ha-NG"
 locale: "ha_NG"
-banner: "https://cloudcdn.pro/stocks/images/lucy-knowledge-transfer-banner.webp"
+banner: "https://cloudcdn.pro/stocks/images/harald-krichel-scarlett-johansson-8531.webp"
 banner_alt: "Hoton abstract na neural networks da quantum atomic arrays. Kwamfuta mai baƙar fata tana kafa daga ƙananan barbashi da ke sake tsarawa"
 keywords: "Lucy 2014 film, Luc Besson, ƙaurar ilimi, large language models, neutral atom qubits, whole-brain emulation, substrate independence, falsafar AI, quantum computing, adana ilimi"
 ---
 
-![Abstract visualisation of neural networks and quantum atomic arrays. A black computer forming from rearranging particles](https://cloudcdn.pro/stocks/images/lucy-knowledge-transfer-banner.webp).class="img-fluid clearfix"
+![Abstract visualisation of neural networks and quantum atomic arrays. A black computer forming from rearranging particles](https://cloudcdn.pro/stocks/images/harald-krichel-scarlett-johansson-8531.webp).class="img-fluid clearfix"
 
 ---
 

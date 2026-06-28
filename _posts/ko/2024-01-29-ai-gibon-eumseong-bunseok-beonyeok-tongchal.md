@@ -5,13 +5,13 @@ description: "OpenAI Whisper, 실시간 음성-텍스트 변환, 다국어 번�
 date: "January 29, 2024"
 language: "ko-KR"
 locale: "ko_KR"
-banner: "https://cloudcdn.pro/stocks/images/icons8-team-r-enAOPw8Rs-unsplash.webp"
+banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp"
 banner_alt: "파형을 보여주는 마이크"
 keywords: "AI, 음성 인식, 음성-텍스트 변환, Whisper, 번역, 다국어, 오디오 통찰"
 last_reviewed: "2026-05-16"
 ---
 
-![파형을 보여주는 마이크](https://cloudcdn.pro/stocks/images/icons8-team-r-enAOPw8Rs-unsplash.webp).class=\"img-fluid clearfix\"
+![파형을 보여주는 마이크](https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp).class=\"img-fluid clearfix\"
 
 ## 통찰
 

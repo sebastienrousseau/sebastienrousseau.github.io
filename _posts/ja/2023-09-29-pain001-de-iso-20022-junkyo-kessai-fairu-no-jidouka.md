@@ -5,13 +5,13 @@ description: "pain001 は ISO 20022 pain.001 決済ファイル作成を自動�
 date: "September 29, 2023"
 language: "ja-JP"
 locale: "ja_JP"
-banner: "https://cloudcdn.pro/stocks/images/markus-spiske-iar-afB0QQw-unsplash.webp"
+banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp"
 banner_alt: "ターミナル上の構造化されたデータの行"
 keywords: "ISO 20022, pain.001, ISO 20022 移行, SWIFT, SEPA, 決済自動化, Python, オープンソース, 国際送金"
 last_reviewed: "2026-05-11"
 ---
 
-![ターミナル上の構造化されたデータの行](https://cloudcdn.pro/stocks/images/markus-spiske-iar-afB0QQw-unsplash.webp).class=\"img-fluid clearfix\"
+![ターミナル上の構造化されたデータの行](https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp).class=\"img-fluid clearfix\"
 
 ## インサイト
 

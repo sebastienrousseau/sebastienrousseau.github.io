@@ -5,7 +5,7 @@ description: "Анализ статьи Apple MM1 о мультимодальн�
 date: "March 18, 2024"
 language: "ru-RU"
 locale: "ru_RU"
-banner: "https://cloudcdn.pro/stocks/images/mm1-multimodal-llm.webp"
+banner: "https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp"
 banner_alt: "Мультимодальные LLM: MM1 от Apple"
 keywords: "MM1, Apple, мультимодальные LLM, vision-language, предобучение, in-context learning, эмерджентные способности, исследовательская статья"
 ---

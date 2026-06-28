@@ -1,5 +1,8 @@
 ---
-# Front Matter (YAML)author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
+
+# Front Matter (YAML)
+
+author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "Shor's algorithm qubit threshold diagram. Quantum computing circuit board with blue light patterns"
 banner_height: "571"
 banner_width: "1425"
@@ -42,7 +45,9 @@ tags: "quantum computing, Shor's algorithm, post-quantum cryptography, RSA, elli
 theme-color: "0, 67, 165"
 title: "Quantum Thresholds Are Moving: 10,000-Qubit Shor Risk"
 url: "https://sebastienrousseau.com/2026-04-11-quantum-thresholds-are-moving-again"
-viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"# RSS - The RSS feed front matter (YAML).
+viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
+
+# RSS - The RSS feed front matter (YAML).
 atom_link: "https://sebastienrousseau.com/2026-04-11-quantum-thresholds-are-moving-again/rss.xml"
 category: "Quantum"
 docs: https://validator.w3.org/feed/docs/rss2.html
@@ -57,15 +62,21 @@ managing_editor: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 pub_date: "Thu, 11 Apr 2026 06:06:06 +0000"
 ttl: "60"
 type: "article"
-webmaster: "contact@sebastienrousseau.com"# Apple - The Apple front matter (YAML).
+webmaster: "contact@sebastienrousseau.com"
+
+# Apple - The Apple front matter (YAML).
 apple_mobile_web_app_orientations: "portrait"
 apple_touch_icon_sizes: "192x192"
 apple-mobile-web-app-capable: "yes"
 apple-mobile-web-app-status-bar-inset: "black"
 apple-mobile-web-app-status-bar-style: "black-translucent"
 apple-mobile-web-app-title: "Quantum Thresholds Are Moving Again"
-apple-touch-fullscreen: "yes"# MS Application - The MS Application front matter (YAML).
-msapplication-navbutton-color: "0, 83, 191"# Twitter Card - The Twitter Card front matter (YAML).
+apple-touch-fullscreen: "yes"
+
+# MS Application - The MS Application front matter (YAML).
+msapplication-navbutton-color: "0, 83, 191"
+
+# Twitter Card - The Twitter Card front matter (YAML).
 twitter_card: "summary_large_image"
 twitter_creator: "@wwdseb"
 twitter_description: "A new paper suggests Shor's algorithm could run on as few as 10,000 qubits. The threshold for cryptographically relevant quantum computing is dropping fast."
@@ -74,7 +85,9 @@ twitter_image_alt: "Logo of Sebastien Rousseau"
 twitter_site: "@wwdseb"
 twitter_title: "Quantum Thresholds Are Moving Again"
 twitter_url: "
-https://sebastienrousseau.com/2026-04-11-quantum-thresholds-are-moving-again"# Humans.txt - The Humans.txt front matter (YAML).
+https://sebastienrousseau.com/2026-04-11-quantum-thresholds-are-moving-again"
+
+# Humans.txt - The Humans.txt front matter (YAML).
 author_website: "https://sebastienrousseau.com"
 author_twitter: "@wwdseb"
 author_location: "London, UK"

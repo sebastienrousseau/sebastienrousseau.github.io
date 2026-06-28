@@ -53,7 +53,7 @@ def _render_one_lang(code: str) -> int:
                 "date": fm.get("date", ""),
                 "keywords": fm.get("keywords", ""),
                 "banner": fm.get(
-                    "banner", "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+                    "banner", "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
                 ),
                 "banner_alt": fm.get("banner_alt", fm.get("title", "")),
             }

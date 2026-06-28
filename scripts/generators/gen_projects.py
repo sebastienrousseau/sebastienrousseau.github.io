@@ -25,16 +25,16 @@ def P(*a):
 
 CATEGORIES = [
     {
-        "kicker": "PAYMENTS",
-        "title": "Payments and settlement.",
-        "lede": "ISO 20022 tooling for the global migration. Pain.001 file generation, pacs.008 cross-border credit transfers, and structured bank-statement parsing.",
+        "kicker": "AUTOMATED FINANCIAL INFRASTRUCTURE",
+        "title": "Financial data, untangled.",
+        "lede": "Payment files and bank statements, without the friction. These tools generate the full ISO 20022 message lifecycle and parse messy real-world statements with deterministic precision. Bring your CSVs, PDFs, or databases. The data just flows.",
         "items": [
             P(
                 "Featured · Python · ISO 20022",
                 "pain001",
                 "https://cloudcdn.pro/clients/pain001/v1/logos/pain001.svg",
                 "Banner for the pain001 open-source payments library",
-                "A Python library that automates ISO 20022 pain.001 payment file creation from CSV or SQLite. Built for the global migration to structured cross-border messages.",
+                "Generates ISO 20022 pain.001 files from CSV or SQLite. Banks and payment providers use it to produce structured credit-transfer messages without rebuilding existing systems.",
                 "https://pain001.com",
             ),
             P(
@@ -42,15 +42,31 @@ CATEGORIES = [
                 "pacs008",
                 "https://cloudcdn.pro/clients/pacs008/v1/logos/pacs008.svg",
                 "Banner for the pacs008 ISO 20022 toolkit",
-                "Generate, validate, and deliver ISO 20022 pacs.008 payment messages for FI-to-FI customer credit transfers. JSON Schema + XSD validation, IBAN across 75 countries, GDPR/PCI-DSS-compliant PII masking.",
+                "Generates, validates, and delivers ISO 20022 pacs.008 messages for bank-to-bank customer credit transfers. Includes JSON Schema and XSD validation, IBAN checks across 75 countries, and PII masking for GDPR and PCI-DSS.",
                 "https://pacs008.com/",
+            ),
+            P(
+                "Python · ISO 20022 suite",
+                "camt053",
+                "https://cloudcdn.pro/clients/camt053/v1/logos/camt053.svg",
+                "Logo for the camt053 bank-statement suite",
+                "Reads ISO 20022 camt.053 bank-to-customer statements and extracts balances, entries, and transaction detail into structured data. Includes MT940 loading, XLSX export, and editor and AI-assistant integrations.",
+                "https://github.com/sebastienrousseau/camt053",
+            ),
+            P(
+                "Python · ISO 20022 suite",
+                "acmt001",
+                "https://cloudcdn.pro/clients/acmt001/v1/logos/acmt001.svg",
+                "Logo for the acmt001 account-management suite",
+                "ISO 20022 account-management messaging. Opens, maintains, closes, switches, and verifies bank accounts from plain data files, with editor and AI-assistant tooling.",
+                "https://github.com/sebastienrousseau/acmt001",
             ),
             P(
                 "Python · Finance",
                 "Bank Statement Parser",
                 "https://cloudcdn.pro/clients/bankstatementparser/v1/logos/bankstatementparser.svg",
                 "Banner for Bank Statement Parser",
-                "A finance-grade Python toolkit that turns multi-format bank statements into structured data — for the realities of real-world statement files and the audit demands of regulated environments.",
+                "A Python toolkit that turns bank statements in several formats into structured data. Built for messy real-world files and for audit requirements.",
                 "https://bankstatementparser.com/",
             ),
             P(
@@ -58,7 +74,7 @@ CATEGORIES = [
                 "NaluFX",
                 "https://cloudcdn.pro/clients/nalufx/v1/logos/nalufx.svg",
                 "Logo for NaluFX, AI-driven cash allocation in Rust",
-                "A Rust application for optimising cash allocation across complex fund structures using AI-driven forecasting. Aimed at treasury, fund accounting, and asset-allocation use cases inside banks and asset managers.",
+                "A Rust application for cash allocation across fund structures, using forecasting to inform the split. Aimed at treasury, fund accounting, and asset allocation.",
                 "https://github.com/sebastienrousseau/nalufx",
             ),
             P(
@@ -66,22 +82,22 @@ CATEGORIES = [
                 "QRC",
                 "https://cloudcdn.pro/clients/qrc/v1/logos/qrc.svg",
                 "Logo for QRC, a Rust QR-code library",
-                "A Rust library for generating and manipulating QR-code images in multiple formats. Direct payment uses include EPC QR Codes for SEPA Credit Transfers, payment-link QR for merchant collection, and step-up authentication flows.",
+                "A Rust library for generating and reading QR codes in several formats. Payment uses include EPC QR codes for SEPA credit transfers, payment links for merchant collection, and step-up authentication.",
                 "https://github.com/sebastienrousseau/qrc",
             ),
         ],
     },
     {
-        "kicker": "POST-QUANTUM CRYPTOGRAPHY",
-        "title": "Post-quantum cryptography.",
-        "lede": "Rust implementations of CRYSTALS-Kyber, hash and digest primitives, and quantum-resistant building blocks for financial-grade authentication.",
+        "kicker": "POST-QUANTUM FINANCIAL SECURITY",
+        "title": "Quantum-safe. Enterprise ready.",
+        "lede": "Security built for the quantum era, applied today. These libraries track the NIST standards for key encapsulation and hashing, so you can future-proof financial infrastructure long before the threat lands.",
         "items": [
             P(
                 "Rust · Quantum",
                 "KyberLib",
                 "https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg",
                 "Banner for KyberLib",
-                "A robust Rust implementation of CRYSTALS-Kyber, the NIST FIPS 203 standard for general-purpose post-quantum key encapsulation.",
+                "A Rust implementation of CRYSTALS-Kyber, the NIST FIPS 203 standard for post-quantum key encapsulation.",
                 "https://kyberlib.com/",
             ),
             P(
@@ -89,7 +105,7 @@ CATEGORIES = [
                 "Hash (HSH)",
                 "https://cloudcdn.pro/clients/hsh/v1/logos/hsh.svg",
                 "Banner for the Hash (HSH) Rust library",
-                "Secure hash and digest algorithms for password encryption and verification, designed with a quantum-resistant posture for the post-PQC era.",
+                "Hash and digest algorithms for password storage and verification, written with a quantum-resistant posture in mind.",
                 "https://github.com/sebastienrousseau/hsh",
             ),
             P(
@@ -97,22 +113,30 @@ CATEGORIES = [
                 "Password Generator Pro",
                 "https://cloudcdn.pro/clients/password-generator-pro/v1/logos/password-generator-pro.svg",
                 "Banner for Password Generator Pro",
-                "A fast, simple, and powerful cross-platform CLI for generating strong, unique, and random passwords backed by audited cryptographic primitives.",
+                "A cross-platform command-line tool for generating random passwords, backed by audited cryptographic primitives.",
                 "https://password-generator.pro",
             ),
         ],
     },
     {
-        "kicker": "AI AND VOICE",
-        "title": "Applied artificial intelligence.",
-        "lede": "Open-source AI projects applying speech recognition, natural language, and large language models to real-world finance and productivity problems.",
+        "kicker": "APPLIED AI & EXECUTIVE INTELLIGENCE",
+        "title": "Ask a question. Get the briefing.",
+        "lede": "AI put to work on everyday operations. Scan code for vulnerabilities, turn a question into a structured briefing, and work by voice. On your terms, without vendor lock-in.",
         "items": [
+            P(
+                "AI · Security",
+                "Euxis",
+                "https://cloudcdn.pro/clients/euxis/v1/logos/euxis.svg",
+                "Banner for Euxis, an open-source code security scanner",
+                "A code security scanner for eight languages that pairs static and taint analysis with LLM verification to cut false positives. Outputs Sigstore-signed SARIF, SBOM, and OpenVEX bundles for supply-chain review.",
+                "https://github.com/sebastienrousseau/euxis",
+            ),
             P(
                 "AI · Voice",
                 "Àkàndé",
                 "https://cloudcdn.pro/clients/akande/v1/logos/akande.svg",
                 "Banner for Àkàndé, an advanced AI voice assistant",
-                "An advanced voice assistant using OpenAI's GPT for natural interactions, PDF summaries, and efficient caching. Built for both personal and executive use.",
+                "A voice assistant built on OpenAI's GPT models, with PDF summaries and response caching. Suitable for personal and executive use.",
                 "https://akande.co/",
             ),
             P(
@@ -120,30 +144,30 @@ CATEGORIES = [
                 "Audio Analyser",
                 "https://cloudcdn.pro/clients/audioanalyser/v1/logos/audioanalyser.svg",
                 "Banner for Audio Analyser",
-                "Convert audio to text in real-time using advanced AI speech recognition. Designed to unlock actionable insights from audio data and enhance customer and employee experience.",
+                "Converts audio to text in real time using AI speech recognition. Aimed at analysing recorded conversations and meetings.",
                 "https://audioanalyser.co/",
             ),
             P(
                 "JavaScript · Security",
                 "Crypto Service Suite",
-                "https://cloudcdn.pro/clients/audioanalyser/v1/logos/audioanalyser.svg",
+                "https://cloudcdn.pro/clients/crypto-service/v1/logos/crypto-service.svg",
                 "Banner for the Crypto Service Suite",
-                "A centralised cryptographic suite that solves common application crypto problems — encryption, tokenisation, transaction authorisation, code signing, and key lifecycle management.",
+                "A cryptographic service for common application needs: encryption, tokenisation, transaction authorisation, code signing, and key lifecycle management.",
                 "https://github.com/sebastienrousseau/crypto-service",
             ),
         ],
     },
     {
-        "kicker": "OPEN-SOURCE RUST",
-        "title": "Rust libraries and tooling.",
-        "lede": "Open-source Rust projects across serialisation, logging, code generation, math, and developer tooling — including the static site generator behind this site.",
+        "kicker": "SOVEREIGN ENTERPRISE TECH",
+        "title": "Your hardware. Your data.",
+        "lede": "Foundations you can own. Audited, memory-safe Rust libraries that run on your infrastructure and ship with a software bill of materials and a Sigstore signature. Read every line. Vendor it. Keep it in-house.",
         "items": [
             P(
                 "Rust · SSG",
                 "Static Site Generator",
                 "https://cloudcdn.pro/clients/static-site-generator/v1/logos/static-site-generator.svg",
                 "Banner for the Static Site Generator",
-                "A secure-by-default static site generator in Rust. WCAG AAA validation, CSP/SRI hardening, local LLM content pipeline, WebAssembly target, and 28-locale i18n.",
+                "A static site generator in Rust, secure by default. It includes WCAG AAA validation, CSP and SRI hardening, a local LLM content pipeline, a WebAssembly target, and 28-locale support.",
                 "https://github.com/sebastienrousseau/static-site-generator",
             ),
             P(
@@ -151,7 +175,7 @@ CATEGORIES = [
                 "noyalib",
                 "https://cloudcdn.pro/clients/noyalib/v1/logos/noyalib.svg",
                 "Banner for the noyalib Rust YAML 1.2 ecosystem",
-                "Pure-Rust YAML 1.2 ecosystem. Zero unsafe, 100% spec compliance, streaming-first serde, lossless CST, JSON-Schema validation. Library + CLI + LSP + MCP + WASM bindings.",
+                "A pure-Rust YAML 1.2 implementation. Zero unsafe code, full spec compliance, streaming serde, a lossless syntax tree, and JSON-Schema validation. Ships as a library, CLI, language server, MCP server, and WASM build.",
                 "https://github.com/sebastienrousseau/noyalib",
             ),
             P(
@@ -159,7 +183,7 @@ CATEGORIES = [
                 "Serde YML",
                 "https://cloudcdn.pro/clients/serde_yml/v1/logos/serde_yml.svg",
                 "Banner for Serde YML",
-                "Effortless YAML serialisation and deserialisation of Rust data structures, built on the widely used Serde framework.",
+                "YAML serialisation and deserialisation for Rust data structures, built on the Serde framework.",
                 "https://serdeyml.com/",
             ),
             P(
@@ -167,7 +191,7 @@ CATEGORIES = [
                 "RustLogs (RLG)",
                 "https://cloudcdn.pro/clients/rlg/v1/logos/rlg.svg",
                 "Banner for the RustLogs (RLG) library",
-                "A flexible logging library for Rust with structured log formats, asynchronous logging, and extensive customisation options.",
+                "A logging library for Rust with structured formats, asynchronous logging, and configurable output.",
                 "https://rustlogs.com/",
             ),
             P(
@@ -175,7 +199,7 @@ CATEGORIES = [
                 "LibMake",
                 "https://cloudcdn.pro/clients/libmake/v1/logos/libmake.svg",
                 "Banner for LibMake",
-                "A scaffold generator that quickly helps you create high-quality Rust libraries by emitting pre-filled, opinionated templated files.",
+                "A scaffold generator for Rust libraries. It emits pre-filled template files for tests, benchmarks, and CI.",
                 "https://github.com/sebastienrousseau/libmake",
             ),
             P(
@@ -183,7 +207,7 @@ CATEGORIES = [
                 "DateTime (DTT)",
                 "https://cloudcdn.pro/clients/dtt/v1/logos/dtt.svg",
                 "Banner for the DateTime (DTT) Rust library",
-                "A high-precision date and time library: day of the month, hour of the day, ISO 8601 formatting, time-zone safety, and much more.",
+                "A date and time library for Rust: ISO 8601 formatting, time-zone handling, and access to individual date components.",
                 "https://github.com/sebastienrousseau/dtt",
             ),
             P(
@@ -191,7 +215,7 @@ CATEGORIES = [
                 "Random (VRD)",
                 "https://cloudcdn.pro/clients/vrd/v1/logos/vrd.svg",
                 "Banner for the Random (VRD) Rust library",
-                "High-quality random number generation based on the Mersenne Twister algorithm, widely used in simulations and games.",
+                "Random number generation based on the Mersenne Twister algorithm, used in simulations and games.",
                 "https://vrdlib.com/",
             ),
             P(
@@ -199,7 +223,7 @@ CATEGORIES = [
                 "Common (CMN)",
                 "https://cloudcdn.pro/clients/cmn/v1/logos/cmn.svg",
                 "Banner for the Common (CMN) Rust library",
-                "A modern, fast, user-friendly library that makes it easy to access a wide range of mathematical and cryptographic constants.",
+                "A Rust library for accessing mathematical and cryptographic constants.",
                 "https://github.com/sebastienrousseau/cmn",
             ),
             P(
@@ -207,22 +231,22 @@ CATEGORIES = [
                 "Mini Functions",
                 "https://cloudcdn.pro/clients/mini-functions/v1/logos/mini-functions.svg",
                 "Banner for the Mini Functions Rust library",
-                "A highly performant utility and wrapper functions library for Rust, designed with optimisation and efficiency in mind.",
+                "A utility and wrapper-function library for Rust.",
                 "http://minifunctions.com/",
             ),
         ],
     },
     {
-        "kicker": "WEB AND DEVELOPER ENVIRONMENT",
-        "title": "Web, templates and environment.",
-        "lede": "Starter templates, two industry-focused publications, a CSS framework, and the dotfiles that keep a development environment reproducible.",
+        "kicker": "WEB, PUBLISHING & ENVIRONMENT",
+        "title": "Ship it your way.",
+        "lede": "Templates, a CSS framework, two industry publications, and the reproducible setup that ships them all. The stack this site runs on.",
         "items": [
             P(
                 "Web · Template",
                 "Kaishi",
                 "https://cloudcdn.pro/clients/kaishi/v1/logos/kaishi.svg",
                 "Banner for Kaishi, a starter template",
-                "A Static Site Generator starter template designed for clean, accessible, performant sites — the seed I reach for when shipping new content destinations.",
+                "A starter template for the Static Site Generator, set up for clean and accessible sites. The template I use when starting a new site.",
                 "https://github.com/sebastienrousseau/kaishi.github.io",
             ),
             P(
@@ -230,7 +254,7 @@ CATEGORIES = [
                 "Skeletonic Stylus",
                 "https://cloudcdn.pro/clients/skeletonic/v1/logos/skeletonic.svg",
                 "Banner for the Skeletonic Stylus Library",
-                "A lightweight, modular Stylus library with components and mixins optimised for mobile and web application design. This site is built on top of it.",
+                "A modular Stylus library with components and mixins for web and mobile layouts. This site is built on it.",
                 "https://github.com/sebastienrousseau/skeletonic-stylus",
             ),
             P(
@@ -238,7 +262,7 @@ CATEGORIES = [
                 "Banking On AI",
                 "https://cloudcdn.pro/clients/bankingonai/v1/logos/bankingonai.svg",
                 "Banner for the Banking On AI publication",
-                "How AI is transforming the banking sector — improved customer service, fraud detection, and streamlined operations for a digital age.",
+                "A publication on how banks are applying AI, covering customer service, fraud detection, and operations.",
                 "https://bankingonai.co/",
             ),
             P(
@@ -246,7 +270,7 @@ CATEGORIES = [
                 "Banking On Quantum",
                 "https://cloudcdn.pro/clients/bankingonquantum/v1/logos/bankingonquantum.svg",
                 "Banner for the Banking On Quantum publication",
-                "How quantum computing is set to revolutionise banking and finance, from risk analysis to quantum cryptography and beyond.",
+                "A publication on quantum computing in banking and finance, from risk analysis to cryptography.",
                 "https://bankingonquantum.com/",
             ),
             P(
@@ -254,7 +278,7 @@ CATEGORIES = [
                 "L90S",
                 "https://cloudcdn.pro/clients/l90s/v1/logos/l90s.svg",
                 "Banner for the L90S website",
-                "Fractional CFO advisory by a trusted finance leader with 20+ years in tech, guiding companies to sustainable growth, funding, and optimised financial operations.",
+                "Fractional CFO advisory from a finance leader with more than 20 years in technology, covering growth, funding, and financial operations.",
                 "https://l90s.com/",
             ),
             P(
@@ -262,7 +286,7 @@ CATEGORIES = [
                 "Dotfiles",
                 "https://cloudcdn.pro/clients/dotfiles/v2/images/logos/dotfiles.svg",
                 "Banner for the Dotfiles project",
-                "A powerful set of configuration files for macOS, Linux, and Windows — scripts and customised settings to streamline a development workflow.",
+                "Configuration files for macOS, Linux, and Windows: scripts and settings for a development workflow.",
                 "https://dotfiles.io/",
             ),
         ],
@@ -296,16 +320,18 @@ def featured_block(item: tuple) -> str:
 
 
 def card_block(item: tuple) -> str:
-    eyebrow, title, image, alt, summary, href = item
+    # Apple One-style card: app icon top-left, name, description, "Learn more".
+    # Borderless (styled in index.html). eyebrow is intentionally unused here.
+    _eyebrow, title, image, alt, summary, href = item
     media_cls = "newsroom-card-media logo" if _is_logo(image) else "newsroom-card-media"
     return f"""<article class="newsroom-card">
 <a class="{media_cls}" href="{href}" title="{title}">
 <img alt="{alt}" src="{image}" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
-<span class="newsroom-eyebrow">{eyebrow}</span>
 <h3><a href="{href}" title="{title}">{title}</a></h3>
 <p class="newsroom-excerpt">{summary}</p>
+<p class="newsroom-more"><a href="{href}" title="{title}">Learn more <span aria-hidden="true">›</span></a></p>
 </div>
 </article>"""
 
@@ -322,45 +348,60 @@ def section_block(cat: dict) -> str:
     return head + '\n\n<div class="newsroom-grid">\n\n' + cards + "\n\n</div>"
 
 
-THREE_THEMES = [
+# Three areas of practice — full-bleed alternating image/text panels
+# (Apple "section-content" pattern). Each panel lands on a dedicated
+# success-story page. `reverse` flips the image to the right.
+AREAS = [
     {
-        "icon": "https://cloudcdn.pro/clients/pain001/v1/logos/pain001.svg",
-        "icon_alt": "pain001 logo",
-        "title": "Payments and settlement.",
+        "kicker": "PAYMENTS & ISO 20022",
+        "headline": 'Payments in the global <span class="ac">standard.</span>',
         "body": (
-            "ISO 20022 <strong>pain.001</strong> and <strong>pacs.008</strong> "
-            "toolkits, bank-statement parsing, and Rust libraries for the "
-            "migration to structured cross-border messages. Built for SWIFT, "
-            "SEPA, and the real-time payment schemes that come next."
+            "ISO&nbsp;20022 covers the full message lifecycle. These libraries "
+            "generate <strong>pain.001</strong> initiation files, build and "
+            "validate <strong>pacs.008</strong> transfers, read "
+            "<strong>camt.053</strong> statements, and handle "
+            "<strong>acmt.001</strong> account management, with parsers for "
+            "older formats. You can adopt one library at a time instead of "
+            "replacing a core system."
         ),
-        "cta_label": "Explore payments tools",
-        "cta_href": "#cat-payments",
+        "cta_label": "Read the payments story",
+        "cta_href": "/projects-payments/index.html",
+        "img": "https://cloudcdn.pro/stocks/images/denys-nevozhai-2vmT5_FeMck-1920.webp",
+        "img_alt": "Aerial view of city interchanges at night, representing cross-border payment rails.",
+        "reverse": False,
     },
     {
-        "icon": "https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg",
-        "icon_alt": "KyberLib logo",
-        "title": "Post-quantum cryptography.",
+        "kicker": "POST-QUANTUM SECURITY",
+        "headline": 'Security past the <span class="ac">RSA era.</span>',
         "body": (
-            "Rust implementations of <strong>CRYSTALS-Kyber</strong> "
-            "(NIST FIPS&nbsp;203), hash and digest primitives, and "
-            "quantum-resistant building blocks. Protection beyond the RSA "
-            "and elliptic-curve era of financial-grade authentication."
+            "Some financial records stay sensitive for decades, long enough "
+            "that data captured today could be read once quantum computers "
+            "mature. These Rust libraries implement <strong>ML-KEM "
+            "(CRYSTALS-Kyber, NIST&nbsp;FIPS&nbsp;203)</strong> along with "
+            "hashing and related primitives, so a migration can begin before "
+            "the deadlines force it."
         ),
-        "cta_label": "Explore quantum-safe libraries",
-        "cta_href": "#cat-quantum",
+        "cta_label": "Read the security story",
+        "cta_href": "/projects-post-quantum/index.html",
+        "img": "https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA-1920.webp",
+        "img_alt": "Abstract blue light field, representing post-quantum cryptography for financial systems.",
+        "reverse": True,
     },
     {
-        "icon": "https://cloudcdn.pro/clients/hsh/v1/logos/hsh.svg",
-        "icon_alt": "HSH logo",
-        "title": "Tooling and infrastructure.",
+        "kicker": "DEVELOPER PLATFORM",
+        "headline": 'Foundations for your <span class="ac">engineers.</span>',
         "body": (
-            "Open-source Rust libraries for serialisation, logging, code "
-            "generation, date and time. Plus the <strong>Static Site "
-            "Generator</strong> (SSG) that builds this very site, and the "
-            "developer environment that makes it shippable."
+            "The same Rust libraries that build and secure this site. They "
+            "include <strong>noyalib</strong> for YAML and the <strong>Static "
+            "Site Generator</strong> itself, published with CycloneDX SBOMs and "
+            "Sigstore signatures. Your engineers build on them instead of "
+            "maintaining the equivalents in-house."
         ),
-        "cta_label": "Explore developer tools",
-        "cta_href": "#cat-rust",
+        "cta_label": "Read the platform story",
+        "cta_href": "/projects-developer-platform/index.html",
+        "img": "https://cloudcdn.pro/stocks/images/alex-shuper-YYZnrK8NrSw-unsplash-1920.webp",
+        "img_alt": "Clean architectural lines in soft light, representing dependable developer foundations.",
+        "reverse": False,
     },
 ]
 
@@ -368,8 +409,8 @@ THREE_THEMES = [
 FAQ_ITEMS = [
     (
         "What licence are these projects released under?",
-        "Most projects are dual-licensed under MIT and Apache-2.0 — the standard "
-        "for the Rust ecosystem — which gives commercial users explicit patent "
+        "Most projects are dual-licensed under MIT and Apache-2.0, the standard "
+        "for the Rust ecosystem, which gives commercial users explicit patent "
         "rights as well as permissive redistribution. A small number of clients' "
         "tools are released under Apache-2.0 only. The licence file at the root "
         "of each repository is the authoritative source.",
@@ -395,8 +436,8 @@ FAQ_ITEMS = [
         "Can I use these libraries in a regulated banking environment?",
         "Yes, with the usual caveats. The libraries are independent open-source "
         "work, not a regulated product. Run your normal supply-chain, security, "
-        "and dependency-review processes — vendoring through your internal mirror, "
-        "scanning with SBOM tools, and pinning by Git SHA or cryptographic hash — "
+        "and dependency-review processes, such as vendoring through your internal mirror, "
+        "scanning with SBOM tools, and pinning by Git SHA or cryptographic hash, "
         "before deploying to production payment infrastructure.",
     ),
     (
@@ -421,11 +462,24 @@ def setup_hero_block() -> str:
     """Single eyebrow + CTA strip that sits directly below the layout's
     ap-hero (which already carries the page H1 + subtitle via frontmatter).
     Centered, no duplicate headline."""
-    return """<p class="setup-hero-eyebrow">OPEN SOURCE FOR FINANCIAL SERVICES</p>
-<p class="setup-hero-cta">
-<a class="pill" href="#catalog">Browse all projects</a>
-<a class="pill ghost" href="/contact/index.html">Get in touch</a>
-</p>"""
+    # Rotating ending — pure CSS (no JS, CSP-safe). The animation is
+    # aria-hidden; the <p> carries the full phrase as an aria-label for AT.
+    # The first word repeats as a 5th cell so the loop resets seamlessly.
+    words = ["banks.", "financial institutions.", "enterprise.", "small business."]
+    cells = "".join(f"<span>{w}</span>" for w in [*words, words[0]])
+    return (
+        '<p class="setup-hero-eyebrow rotating-title"'
+        ' aria-label="Open source for banks, financial institutions, enterprise and small business.">'
+        '<span class="rotating-title-lead">Open source for</span>'
+        '<span class="rotating-title-mask" aria-hidden="true">'
+        f'<span class="rotating-title-words">{cells}</span>'
+        "</span>"
+        "</p>\n"
+        '<p class="setup-hero-cta">\n'
+        '<a class="pill" href="/contact/index.html">Talk to us</a>\n'
+        '<a class="pill ghost" href="#catalog">Browse all products</a>\n'
+        "</p>"
+    )
 
 
 def proof_rail_block() -> str:
@@ -477,22 +531,34 @@ def proof_rail_block() -> str:
 
 
 def setup_three_block() -> str:
+    """Three areas of practice as Apple-style cards: large image on top, then
+    kicker + headline (with an accent keyword) + body + CTA below, in a 3-up
+    grid. Multi-line markup so SSG's custom-block parser passes it through as
+    raw HTML. Each card lands on a dedicated success-story page."""
     cards = [
-        f"""<article class="setup-card">
-<span class="setup-card-icon"><img alt="{t['icon_alt']}" src="{t['icon']}" loading="lazy" decoding="async" width="80" height="80" /></span>
-<h3 class="setup-card-title">{t['title']}</h3>
-<p class="setup-card-body">{t['body']}</p>
-<p class="setup-card-cta"><a href="{t['cta_href']}" class="setup-card-link">{t['cta_label']} <span aria-hidden="true">›</span></a></p>
-</article>"""
-        for t in THREE_THEMES
+        f'<article class="area-card">\n'
+        f'<figure class="area-card-media">\n'
+        f'<img alt="{a["img_alt"]}" src="{a["img"]}" '
+        f'loading="lazy" decoding="async" width="1600" height="1000" />\n'
+        f"</figure>\n"
+        f'<div class="area-card-body">\n'
+        f'<p class="area-card-kicker">{a["kicker"]}</p>\n'
+        f'<h3 class="area-card-headline">{a["headline"]}</h3>\n'
+        f'<p class="area-card-text">{a["body"]}</p>\n'
+        f'<p class="area-card-cta">'
+        f'<a href="{a["cta_href"]}">'
+        f'{a["cta_label"]} <span aria-hidden="true">›</span></a></p>\n'
+        f"</div>\n"
+        f"</article>"
+        for a in AREAS
     ]
     return (
         '<section class="setup-three" aria-labelledby="setup-three-heading">'
         '<header class="setup-three-head">'
-        '<p class="setup-three-kicker">WHAT IS INSIDE</p>'
-        '<h2 id="setup-three-heading" class="setup-three-headline">Three areas of practice. <span class="setup-three-headline-soft">One philosophy.</span></h2>'
+        '<p class="setup-three-kicker">BUILT FOR FINANCIAL SERVICES</p>'
+        '<h2 id="setup-three-heading" class="setup-three-headline">Three areas of work. <span class="setup-three-headline-soft">Payments, security, and tooling.</span></h2>'
         "</header>"
-        '<div class="setup-three-grid">' + "\n".join(cards) + "</div>"
+        '<div class="areas-grid">' + "\n".join(cards) + "</div>"
         "</section>"
     )
 
@@ -518,21 +584,21 @@ def faq_block() -> str:
 
 def bottom_cta_block() -> str:
     return """<aside class="setup-finale" aria-labelledby="projects-finale-heading">
-<p class="setup-finale-eyebrow">GET IN TOUCH</p>
-<h2 id="projects-finale-heading" class="setup-finale-headline">Have an idea? Let's build it.</h2>
-<p class="setup-finale-lede">Open-source collaboration, commissioned engineering, or a conversation about the future of payments. Whichever fits.</p>
-<p class="setup-finale-cta"><a class="pill" href="/contact/index.html">Start a conversation</a></p>
+<p class="setup-finale-eyebrow">CONTACT</p>
+<h2 id="projects-finale-heading" class="setup-finale-headline">Build on it. Or build it with me.</h2>
+<p class="setup-finale-lede">Planning an ISO 20022 migration, a post-quantum review, or applied AI in production? Tell me what you are building. I will show you where these tools fit.</p>
+<p class="setup-finale-cta"><a class="pill" href="/contact/index.html">Get in touch</a></p>
 </aside>"""
 
 
 # Map kicker → anchor id used by the three theme cards above to deep-link
 # into the relevant slice of the catalogue further down the page.
 ANCHOR_MAP = {
-    "PAYMENTS": "cat-payments",
-    "POST-QUANTUM CRYPTOGRAPHY": "cat-quantum",
-    "AI AND VOICE": "cat-ai",
-    "OPEN-SOURCE RUST": "cat-rust",
-    "WEB AND DEVELOPER ENVIRONMENT": "cat-web",
+    "AUTOMATED FINANCIAL INFRASTRUCTURE": "cat-payments",
+    "POST-QUANTUM FINANCIAL SECURITY": "cat-quantum",
+    "APPLIED AI & EXECUTIVE INTELLIGENCE": "cat-ai",
+    "SOVEREIGN ENTERPRISE TECH": "cat-rust",
+    "WEB, PUBLISHING & ENVIRONMENT": "cat-web",
 }
 
 
@@ -561,7 +627,8 @@ def main() -> None:
     head = "".join(lines[: delim_idx[1] + 1])
 
     body_parts = [
-        setup_hero_block(),
+        # The hero (rotating animated title + CTAs) now lives in the project
+        # layout's ap-hero, so the body starts with the proof rail.
         proof_rail_block(),
         setup_three_block(),
         '<section class="newsroom" id="catalog">',

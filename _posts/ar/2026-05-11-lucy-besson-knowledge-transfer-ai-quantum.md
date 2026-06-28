@@ -6,7 +6,7 @@ description: "بعد اثني عشر عاماً على إصداره، يُقرأ
 date: "May 11, 2026"
 language: "ar"
 locale: "ar_SA"
-banner: "https://cloudcdn.pro/stocks/images/lucy-knowledge-transfer-banner.webp"
+banner: "https://cloudcdn.pro/stocks/images/harald-krichel-scarlett-johansson-8531.webp"
 banner_alt: "تصوّرٌ مجرّد لشبكاتٍ عصبية ومصفوفات ذرّية كمية. حاسوبٌ أسود يتشكّل من جزيئاتٍ تُعيد ترتيب نفسها"
 keywords: "Lucy، Luc Besson، نقل المعرفة، الذكاء الاصطناعي، LLM، qubits الذرّات المحايدة، محاكاة الدماغ، Neuralink، Eon Systems، Carboncopies، Fromm، استقلال الركيزة، فلسفة الذكاء الاصطناعي"
 ---

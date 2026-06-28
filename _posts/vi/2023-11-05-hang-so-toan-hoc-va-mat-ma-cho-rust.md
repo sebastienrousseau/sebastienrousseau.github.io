@@ -5,12 +5,12 @@ description: 'cmn — thư viện Rust cung cấp các hằng số toán học v
 date: 'November 5, 2023'
 language: 'vi-VN'
 locale: 'vi_VN'
-banner: 'https://cloudcdn.pro/stocks/images/cmn-banner.webp'
+banner: 'https://cloudcdn.pro/stocks/images/getty-images-dqHskSJDfe4.webp'
 banner_alt: 'Hình ảnh trừu tượng của các hằng số toán học'
 keywords: 'Rust, hằng số toán học, mật mã, cmn, độ chính xác cao, tài chính, bảo mật'
 ---
 
-![Hằng số toán học](https://cloudcdn.pro/stocks/images/cmn-banner.webp).class=\"img-fluid clearfix\"
+![Hằng số toán học](https://cloudcdn.pro/stocks/images/getty-images-dqHskSJDfe4.webp).class=\"img-fluid clearfix\"
 
 > **TL;DR.** `cmn` là thư viện Rust tập trung các hằng số toán học và mật mã thường dùng — pi, e, các hằng số mật mã NIST, các giá trị tài chính — với độ chính xác và cách trình bày nhất quán.
 >

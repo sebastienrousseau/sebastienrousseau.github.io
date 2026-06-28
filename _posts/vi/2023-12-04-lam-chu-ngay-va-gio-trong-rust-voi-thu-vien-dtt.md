@@ -5,12 +5,12 @@ description: 'DTT — thư viện Rust cho ngày, giờ, múi giờ, định d�
 date: 'December 4, 2023'
 language: 'vi-VN'
 locale: 'vi_VN'
-banner: 'https://cloudcdn.pro/stocks/images/dtt-banner.webp'
+banner: 'https://cloudcdn.pro/stocks/images/rustlogs.webp'
 banner_alt: 'Đồng hồ và lịch trên nền trừu tượng'
 keywords: 'DTT, Rust, ngày, giờ, múi giờ, parsing, định dạng, tài chính, ISO 8601, RFC 3339'
 ---
 
-![Đồng hồ và lịch](https://cloudcdn.pro/stocks/images/dtt-banner.webp).class=\"img-fluid clearfix\"
+![Đồng hồ và lịch](https://cloudcdn.pro/stocks/images/rustlogs.webp).class=\"img-fluid clearfix\"
 
 > **TL;DR.** `dtt` là thư viện Rust để xử lý ngày, giờ và múi giờ. Nó cung cấp một API đơn giản trên đỉnh các tiêu chuẩn ISO 8601 và RFC 3339, với hỗ trợ chuyên biệt cho các trường hợp sử dụng tài chính (ngày làm việc, lịch ngày nghỉ).
 >

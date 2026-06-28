@@ -5,12 +5,12 @@ description: 'Một bài báo mới cho rằng thuật toán Shor có thể ch�
 date: 'April 11, 2026'
 language: 'vi-VN'
 locale: 'vi_VN'
-banner: 'https://cloudcdn.pro/stocks/images/quantum-thresholds-banner.webp'
+banner: 'https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp'
 banner_alt: 'Sơ đồ qubit và ngưỡng phá vỡ mật mã'
 keywords: 'Shor, qubit, lượng tử, mật mã, RSA, hậu lượng tử, ngưỡng, 10000 qubit, Fujitsu, Riken'
 ---
 
-![Ngưỡng lượng tử](https://cloudcdn.pro/stocks/images/quantum-thresholds-banner.webp).class=\"img-fluid clearfix\"
+![Ngưỡng lượng tử](https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp).class=\"img-fluid clearfix\"
 
 > **TL;DR.** Một bài báo nghiên cứu năm 2026 cho rằng thuật toán Shor có thể chạy với chỉ 10.000 qubit nguyên tử trung tính có thể tái cấu hình — không phải các triệu qubit đã được giả định trong nhiều năm. Ngưỡng cho lượng tử liên quan đến mật mã đang giảm nhanh, và lộ trình PQC phải tăng tốc.
 >

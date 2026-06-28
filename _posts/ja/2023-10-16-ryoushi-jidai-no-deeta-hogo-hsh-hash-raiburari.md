@@ -5,13 +5,13 @@ description: "hsh は量子耐性の姿勢で設計された Rust ハッシュ�
 date: "October 16, 2023"
 language: "ja-JP"
 locale: "ja_JP"
-banner: "https://cloudcdn.pro/stocks/images/markus-spiske-iar-afB0QQw-unsplash.webp"
+banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp"
 banner_alt: "暗号化されたバイナリデータ"
 keywords: "ハッシュ, ダイジェスト, パスワード, Rust, hsh, 量子耐性, ポスト量子暗号, セキュリティ"
 last_reviewed: "2026-05-11"
 ---
 
-![暗号化されたバイナリデータ](https://cloudcdn.pro/stocks/images/markus-spiske-iar-afB0QQw-unsplash.webp).class=\"img-fluid clearfix\"
+![暗号化されたバイナリデータ](https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp).class=\"img-fluid clearfix\"
 
 ## インサイト
 

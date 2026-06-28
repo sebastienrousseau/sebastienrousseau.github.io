@@ -5,12 +5,12 @@ description: 'CRYSTALS-Kyber là thuật toán đóng gói khoá kháng lượng
 date: 'November 19, 2023'
 language: 'vi-VN'
 locale: 'vi_VN'
-banner: 'https://cloudcdn.pro/stocks/images/kyber-banner.webp'
+banner: 'https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp'
 banner_alt: 'Sơ đồ trừu tượng của mạng tinh thể'
 keywords: 'CRYSTALS-Kyber, NIST, FIPS 203, hậu lượng tử, mật mã, KEM, mạng tinh thể, ML-KEM'
 ---
 
-![Mạng tinh thể](https://cloudcdn.pro/stocks/images/kyber-banner.webp).class=\"img-fluid clearfix\"
+![Mạng tinh thể](https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp).class=\"img-fluid clearfix\"
 
 > **TL;DR.** CRYSTALS-Kyber (được tiêu chuẩn hoá thành ML-KEM trong FIPS 203) là cơ chế đóng gói khoá kháng lượng tử đầu tiên được NIST chuẩn hoá. Nó là sự thay thế cho việc trao đổi khoá RSA và Diffie-Hellman trong kỷ nguyên hậu lượng tử.
 >

@@ -5,7 +5,7 @@ description: "Alien Studio — креативный проект, использ
 date: "January 15, 2024"
 language: "ru-RU"
 locale: "ru_RU"
-banner: "https://cloudcdn.pro/stocks/images/alien-studio-banner.webp"
+banner: "https://cloudcdn.pro/stocks/images/rustlogs.webp"
 banner_alt: "Alien Studio: креативные работы, созданные с ИИ"
 keywords: "Alien Studio, ИИ-фотография, генеративные модели, искусство, креативность, Stable Diffusion, Midjourney, prompt-инжиниринг"
 ---

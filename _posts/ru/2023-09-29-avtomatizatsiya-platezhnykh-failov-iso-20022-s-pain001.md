@@ -5,7 +5,7 @@ description: "pain001 — это open-source Python-библиотека для 
 date: "September 29, 2023"
 language: "ru-RU"
 locale: "ru_RU"
-banner: "https://cloudcdn.pro/stocks/images/iso-20022-automation.webp"
+banner: "https://cloudcdn.pro/stocks/images/getty-images-dqHskSJDfe4.webp"
 banner_alt: "Поток платежей ISO 20022 — миграция MT/MX"
 keywords: "ISO 20022, pain.001, SWIFT, SEPA, Python, автоматизация платежей, валидация XML, структурированные сообщения, миграция MT"
 ---

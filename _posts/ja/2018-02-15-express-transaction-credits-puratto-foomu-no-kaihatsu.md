@@ -5,13 +5,13 @@ description: "ブロックチェーンと暗号資産を利用した高速な国
 date: "February 15, 2018"
 language: "ja-JP"
 locale: "ja_JP"
-banner: "https://cloudcdn.pro/stocks/images/joshua-sortino-LqKhnDzSF-8-unsplash.webp"
+banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp"
 banner_alt: "夜の電子回路基板の青いライト"
 keywords: "国際送金, ブロックチェーン, 暗号資産, トークン, スマートコントラクト, 決済プラットフォーム, フィンテック"
 last_reviewed: "2026-05-11"
 ---
 
-![夜の電子回路基板の青いライト](https://cloudcdn.pro/stocks/images/joshua-sortino-LqKhnDzSF-8-unsplash.webp).class=\"img-fluid clearfix\"
+![夜の電子回路基板の青いライト](https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp).class=\"img-fluid clearfix\"
 
 ## インサイト
 

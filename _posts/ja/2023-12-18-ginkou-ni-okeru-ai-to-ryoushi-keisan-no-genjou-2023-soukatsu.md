@@ -5,13 +5,13 @@ description: "2023 年における AI と量子計算が銀行業務にどう影
 date: "December 18, 2023"
 language: "ja-JP"
 locale: "ja_JP"
-banner: "https://cloudcdn.pro/stocks/images/jc-gellidon-cQ3BneKt5g0-unsplash.webp"
+banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp"
 banner_alt: "ロンドンの金融街の夜景"
 keywords: "AI, 量子計算, 銀行, フィンテック, リスク管理, アルゴリズム取引, 2023, レビュー"
 last_reviewed: "2026-05-11"
 ---
 
-![ロンドンの金融街の夜景](https://cloudcdn.pro/stocks/images/jc-gellidon-cQ3BneKt5g0-unsplash.webp).class=\"img-fluid clearfix\"
+![ロンドンの金融街の夜景](https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp).class=\"img-fluid clearfix\"
 
 ## インサイト
 

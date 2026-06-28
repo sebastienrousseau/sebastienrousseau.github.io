@@ -1,4 +1,4 @@
-.PHONY: build serve regenerate audit clean test lint coverage publish-today
+.PHONY: build serve regenerate audit clean test lint typecheck sbom coverage publish-today
 
 # Default target.
 build:
@@ -14,7 +14,8 @@ regenerate:
 	@perl -i -pe 's|<h4>Sebastien Rousseau</h4>|<h2 class="ap-foot-title">Sebastien Rousseau</h2>|g; s|<h4>Writing</h4>|<h2 class="ap-foot-title">Writing</h2>|g; s|<h4>Work</h4>|<h2 class="ap-foot-title">Work</h2>|g; s|<h4>Reach</h4>|<h2 class="ap-foot-title">Reach</h2>|g' _layouts/*.html
 	@python3 scripts/generators/gen_articles.py
 	@python3 scripts/generators/gen_projects.py
-	@python3 scripts/postbuild/topic_link.py
+	@# topic_link rewrites post bodies in place; --dir is explicit (ADR-0003).
+	@python3 scripts/postbuild/topic_link.py --dir _posts
 	@python3 scripts/generators/build_news_sitemap.py
 	@./build.sh
 
@@ -53,6 +54,14 @@ test:
 lint:
 	@ruff check scripts/ tests/
 	@python3 scripts/dev/check_naming_conventions.py
+
+# Strict mypy over the strict-clean module tier (ratchets outward).
+typecheck:
+	@bash scripts/typecheck.sh
+
+# Generate + validate the CycloneDX SBOM (public/sbom.cdx.json).
+sbom:
+	@bash scripts/security/gen-sbom.sh public/sbom.cdx.json
 
 # Unified coverage report — runs every CLI in scripts/ under
 # coverage.py, then runs the pytest suite under the same data file,

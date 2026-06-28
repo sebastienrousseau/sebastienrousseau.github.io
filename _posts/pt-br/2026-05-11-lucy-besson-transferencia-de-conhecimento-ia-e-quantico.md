@@ -5,7 +5,7 @@ description: "Doce anos depois de seu estreno, Lucy de Luc Besson se lee menos c
 date: "May 11, 2026"
 language: "pt-BR"
 locale: "pt_BR"
-banner: "https://cloudcdn.pro/stocks/images/lucy-knowledge-transfer-banner.webp"
+banner: "https://cloudcdn.pro/stocks/images/harald-krichel-scarlett-johansson-8531.webp"
 banner_alt: "Visualización abstracta de redes neurais e arreglos atómicos quânticos. Um computador negro se forma a partir de partículas em reorganización."
 keywords: "Lucy, Luc Besson, transferencia de conhecimento, IA, LLM, qubits de átomos neutros, emulación cerebral, Neuralink, Eon Systems, Carboncopies, Fromm, independencia do sustrato, filosofía de a IA"
 ---

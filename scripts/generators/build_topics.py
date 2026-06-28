@@ -43,7 +43,7 @@ OUT = PUBLIC / "topics"
 TOPICS: dict[str, dict[str, object]] = {
     "post-quantum-cryptography": {
         "title": "Post-Quantum Cryptography",
-        "banner": "https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp",
+        "banner": "https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp",
         "lede": (
             "Lattice-based cryptography, NIST PQC standards, quantum-safe payments, "
             "and the harvest-now-decrypt-later threat. Research notes, open-source "
@@ -91,7 +91,7 @@ TOPICS: dict[str, dict[str, object]] = {
     },
     "cloud-native-banking": {
         "title": "Cloud Native Banking",
-        "banner": "https://cloudcdn.pro/stocks/images/freeman-zhou-oV9hp8wXkPE.webp",
+        "banner": "https://cloudcdn.pro/stocks/images/alis-po-IdVNRv-5wJo.webp",
         "lede": (
             "Kubernetes-based platform engineering for regulated institutions: "
             "DORA-tested operational resilience, VM and container convergence, "
@@ -108,7 +108,7 @@ TOPICS: dict[str, dict[str, object]] = {
         "title": "Applied AI in Banking",
         "banner": "https://cloudcdn.pro/stocks/images/hector-j-rivas-1FxMET2U5dU-unsplash.webp",
         "lede": (
-            "Generative AI, multimodal LLMs, voice, and speech models — and how they "
+            "Generative AI, multimodal LLMs, voice, and speech models, and how they "
             "reshape banking operations, customer service, and product engineering "
             "at Tier-1 institutions."
         ),
@@ -170,7 +170,7 @@ TOPICS: dict[str, dict[str, object]] = {
     },
     "agentic-ai-banking": {
         "title": "Agentic AI in Banking",
-        "banner": "https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp",
+        "banner": "https://cloudcdn.pro/stocks/images/digital-nodes.webp",
         "lede": (
             "Agent control planes, deterministic semantic routing, OPA policy "
             "gates, immutable WORM audit logs, and the SR 11-7 / SS1/23 model-risk "
@@ -203,7 +203,7 @@ TOPICS: dict[str, dict[str, object]] = {
     },
     "operational-resilience-dora": {
         "title": "Operational Resilience & DORA",
-        "banner": "https://cloudcdn.pro/stocks/images/freeman-zhou-oV9hp8wXkPE.webp",
+        "banner": "https://cloudcdn.pro/stocks/images/simone-hutsch-oqlh6RsrYB0.webp",
         "lede": (
             "DORA Article 5 board accountability, BCBS 239 risk-data aggregation, "
             "third-party concentration risk, exit testing, and the engineering "
@@ -219,7 +219,7 @@ TOPICS: dict[str, dict[str, object]] = {
     },
     "stablecoins-tokenisation": {
         "title": "Stablecoins & Tokenisation",
-        "banner": "https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp",
+        "banner": "https://cloudcdn.pro/stocks/images/christopher-burns-Kj2SaNHG-hg.webp",
         "lede": (
             "Tokenised deposits, money-market funds, wholesale CBDC pilots, "
             "BlackRock's BRSRV/BSTBL, the GENIUS Act, and the engineering choices "
@@ -238,7 +238,7 @@ TOPICS: dict[str, dict[str, object]] = {
     },
     "generative-ai-llms": {
         "title": "Generative AI & LLMs",
-        "banner": "https://cloudcdn.pro/stocks/images/hector-j-rivas-1FxMET2U5dU-unsplash.webp",
+        "banner": "https://cloudcdn.pro/stocks/images/mm1-visual.webp",
         "lede": (
             "Foundation models, multimodal LLMs (Gemini, Gemma, Mistral, MM1), "
             "prompt engineering, and the open-source releases that shape what "
@@ -285,7 +285,7 @@ TOPICS: dict[str, dict[str, object]] = {
     },
     "wholesale-payments-rails": {
         "title": "Wholesale Payments Rails",
-        "banner": "https://cloudcdn.pro/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp",
+        "banner": "https://cloudcdn.pro/stocks/images/viktor-forgacs-KxVRDiFdTVo.webp",
         "lede": (
             "Multi-rail strategy across cards, A2A, RTP, FedNow, open banking, "
             "and stablecoin corridors. Wholesale economics, settlement finality, "
@@ -331,7 +331,7 @@ PILLARS: list[dict[str, object]] = [
     {
         "slug": "ai-cloud",
         "name": "AI & cloud",
-        "lede": "Applied AI, agentic systems, generative models, voice and speech AI — and the cloud-native banking platforms that host them.",
+        "lede": "Applied AI, agentic systems, generative models, voice and speech AI, and the cloud-native banking platforms that host them.",
         "topics": [
             "applied-ai-banking",
             "agentic-ai-banking",
@@ -468,7 +468,7 @@ def render_card(slug: str, fm: dict[str, str]) -> str:
     """Render a single newsroom-card for the given post slug + frontmatter."""
     title = _field(fm, "title", slug)
     desc = _field(fm, "description")
-    banner = _field(fm, "banner", "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png")
+    banner = _field(fm, "banner", "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp")
     banner_alt = _field(fm, "banner_alt", title)
     keywords = _field(fm, "keywords")
     eyebrow = " · ".join(k.strip().title() for k in keywords.split(",")[:3] if k.strip())
@@ -686,7 +686,7 @@ def _render_topic_card(topic_slug: str) -> str:
     if banner:
         media = (
             f'<a class="newsroom-card-media" href="{url}" aria-label="{title}">'
-            f'<img src="{banner}" alt="{title} — topic banner" '
+            f'<img src="{banner}" alt="{title} topic banner" '
             f'loading="lazy" decoding="async" '
             f'width="800" height="800"></a>'
         )
@@ -743,8 +743,8 @@ def render_hub(shell: str) -> tuple[str, str]:
         '<header class="newsroom-section-head topic-hub-head" data-reveal>'
         '<p class="newsroom-kicker">PILLARS</p>'
         "<h1>Topics</h1>"
-        '<p class="topic-lede">Four pillars, fourteen topic clusters, every dated article — '
-        'pick a thread and follow it through the archive.</p>'
+        '<p class="topic-lede">Four pillars, fourteen topic clusters, every dated article. '
+        'Pick a thread and follow it through the archive.</p>'
         f'<nav class="topic-chips" aria-label="Jump to pillar">{chips}</nav>'
         "</header>"
         '<section class="proof-rail topic-proof" aria-label="Topics at a glance">'

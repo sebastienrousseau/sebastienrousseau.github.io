@@ -5,13 +5,13 @@ description: "생성 AI가 이미지, 텍스트, 음성, 코드에서 어떻게 
 date: "November 12, 2023"
 language: "ko-KR"
 locale: "ko_KR"
-banner: "https://cloudcdn.pro/stocks/images/possessed-photography-jIBMSMs4_kA-unsplash.webp"
+banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp"
 banner_alt: "AI와 인간의 상호작용을 표현한 추상적 비주얼"
 keywords: "생성 AI, LLM, 대규모 언어 모델, 확산 모델, GPT, Claude, Gemini, 엔터프라이즈 AI"
 last_reviewed: "2026-05-16"
 ---
 
-![AI와 인간의 상호작용을 표현한 추상적 비주얼](https://cloudcdn.pro/stocks/images/possessed-photography-jIBMSMs4_kA-unsplash.webp).class=\"img-fluid clearfix\"
+![AI와 인간의 상호작용을 표현한 추상적 비주얼](https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp).class=\"img-fluid clearfix\"
 
 ## 통찰
 

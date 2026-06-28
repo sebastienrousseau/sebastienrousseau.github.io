@@ -80,6 +80,12 @@
       :root{
         --accent: rgb({{theme-color}});
         --accent-rgb: {{theme-color}};
+        /* One link colour everywhere: a fixed, WCAG-AAA-safe blue (>=7:1 on
+           white) rather than the per-page --accent, since some articles carry a
+           lighter banner-derived accent (e.g. 0,83,191 = 6.23:1) that fails AAA.
+           Visited shares the same colour so links read uniformly site-wide. */
+        --link-color: light-dark(#004caf, #8cc0ff);
+        --link-color-visited: light-dark(#004caf, #8cc0ff);
         --ink:#1d1d1f;            /* 16.5:1 vs bg. AAA */
         --ink-soft:#3a3a3c;        /* 11.3:1 vs bg. AAA */
         --ink-mute:#505058;        /* 7.0:1 vs --bg-alt (alt sections). AAA. */
@@ -363,8 +369,8 @@
       details.tag-posts{margin:10px 0 0}
       details.tag-posts>summary{font-family:var(--type-body);font-size:.75rem;font-weight:600;letter-spacing:.04em;color:var(--ink-deep);cursor:pointer;list-style:none;padding:6px 0;border-top:1px dashed var(--rule)}
       details.tag-posts>summary::-webkit-details-marker{display:none}
-      details.tag-posts>summary::after{content:" — view ▾";color:var(--ink-mute)}
-      details.tag-posts[open]>summary::after{content:" — hide ▴"}
+      details.tag-posts>summary::after{content:" view ▾";color:var(--ink-mute)}
+      details.tag-posts[open]>summary::after{content:" hide ▴"}
       details.tag-posts>ul{list-style:none;margin:8px 0 0;padding:0;display:flex;flex-direction:column;gap:6px;font-size:.875rem;line-height:1.4}
       details.tag-posts>ul li{padding:0;background:transparent;border:0}
       details.tag-posts a{color:var(--ink-deep)}
@@ -1304,7 +1310,7 @@
       .pill.dark:hover{background:#000}
       .pill.light{background:#fff;color:#1d1d1f}
       .pill.lg{padding:15px 28px;font-size:18px}
-      .pill::after{content:"\00A0\203A"}
+      .pill::after{content:"\203A";margin-inline-start:.4em}
       .pill.no-chev::after{content:""}
 
       /* ---------- Sections ---------- */
@@ -1437,6 +1443,13 @@
       /* IntersectionObserver fade-up — main.js toggles .is-in on enter. */
       .reveal{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s ease;will-change:opacity,transform}
       .reveal.is-in{opacity:1;transform:translateY(0)}
+      /* AKQA-style staggered child reveal: cards fade up in sequence once the section enters */
+      .reveal :is(.offer-card,.newsroom-card,.kpi-cell,.area-card){opacity:0;transform:translateY(18px);transition:opacity .55s cubic-bezier(.2,.6,.2,1),transform .55s cubic-bezier(.2,.6,.2,1)}
+      .reveal.is-in :is(.offer-card,.newsroom-card,.kpi-cell,.area-card){opacity:1;transform:none}
+      .reveal.is-in :is(.offer-card,.newsroom-card,.kpi-cell,.area-card):nth-child(2){transition-delay:.09s}
+      .reveal.is-in :is(.offer-card,.newsroom-card,.kpi-cell,.area-card):nth-child(3){transition-delay:.18s}
+      .reveal.is-in :is(.offer-card,.newsroom-card,.kpi-cell,.area-card):nth-child(4){transition-delay:.27s}
+      @media (prefers-reduced-motion:reduce){.reveal :is(.offer-card,.newsroom-card,.kpi-cell,.area-card){opacity:1;transform:none;transition:none}}
       @media (prefers-reduced-motion: reduce){.reveal{opacity:1;transform:none;transition:none}}
 
       /* Per-article enrichment (last-reviewed badge + related-posts grid) */
@@ -1574,12 +1587,100 @@
       /* Catalogue cards: shorter media area than the homepage's 1:1 — keeps
          the page rhythm consistent with the three theme cards above.
          Logos are contained on a white background; stock photos use cover. */
-      .cat-grid .newsroom-card-media{aspect-ratio:5/3}
-      .cat-grid .newsroom-card-media.logo{padding:8% 18%}
-      .cat-grid .newsroom-card-body{padding:20px 22px 24px}
-      .cat-grid .newsroom-card-body h3{font-size:18px;-webkit-line-clamp:2}
-      .cat-grid .newsroom-card-body .newsroom-eyebrow{font-size:10.5px}
-      .cat-grid .newsroom-card-body .newsroom-excerpt{font-size:13.5px;line-height:1.5;-webkit-line-clamp:4;display:-webkit-box;-webkit-box-orient:vertical;overflow:hidden}
+      /* projects: catalogue product cards — Apple One style: app icon top-left,
+         name, description, "Learn more" link. Borderless, on the page bg. */
+      .cat-grid{gap:clamp(30px,3vw,46px) clamp(24px,2.4vw,34px)}
+      .cat-grid .newsroom-card{display:flex;flex-direction:column;align-items:flex-start;background:none;border:none;box-shadow:none;border-radius:0;padding:0;overflow:visible}
+      .cat-grid .newsroom-card:hover{transform:none;box-shadow:none}
+      .cat-grid .newsroom-card-media{width:52px;height:52px;aspect-ratio:1/1;flex:none;margin:0 0 16px;border-radius:12px;overflow:hidden;align-self:flex-start;background:none;border:none}
+      .cat-grid .newsroom-card-media.logo{display:flex;align-items:center;justify-content:center;padding:0}
+      /* position:static — the general media img rule pins imgs absolute/inset:0;
+         static returns it to flow so the logo sits as a clean app-icon tile. */
+      .cat-grid .newsroom-card-media.logo img{position:static;width:auto;height:auto;max-width:100%;max-height:100%;object-fit:contain;transform:none}
+      .cat-grid .newsroom-card-media img{position:static;width:100%;height:100%;object-fit:cover}
+      .cat-grid .newsroom-card:hover .newsroom-card-media img{transform:none}
+      .cat-grid .newsroom-card-body{padding:0;width:100%;display:flex;flex-direction:column;gap:9px}
+      .cat-grid .newsroom-card-body h3{margin:0;font-size:21px;line-height:1.2;font-weight:600;letter-spacing:-.01em;-webkit-line-clamp:none}
+      .cat-grid .newsroom-card-body h3 a{color:var(--ink);text-decoration:none}
+      .cat-grid .newsroom-card-body .newsroom-excerpt{margin:0;font-size:15px;line-height:1.5;color:var(--ink-soft);display:-webkit-box;-webkit-line-clamp:5;-webkit-box-orient:vertical;overflow:hidden}
+      .cat-grid .newsroom-more{margin:0}
+      .cat-grid .newsroom-more a{color:var(--accent);font-size:15px;text-decoration:none}
+      .cat-grid .newsroom-more a:hover{text-decoration:underline;text-underline-offset:3px}
+      /* Apple One look = name + description + "Learn more" only; hide the
+         postbuild-injected GitHub stat badges + commit line in the catalogue. */
+      .cat-grid .newsroom-card .gh-stats-row,.cat-grid .newsroom-card .gh-commit,.cat-grid .newsroom-card .newsroom-eyebrow{display:none}
+      .cat-grid .newsroom-more{order:99;margin-top:2px}
+      /* story subpages (/projects-*): apple.com/government-style image hero */
+      .story-hero{position:relative;width:100%;min-height:calc(100vh - var(--nav-h));min-height:calc(100svh - var(--nav-h));display:flex;align-items:center;justify-content:center;overflow:hidden;isolation:isolate;margin-block:0 clamp(36px,5vw,64px);background-color:#14161c}
+      .story-hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;animation:story-zoom 1.5s cubic-bezier(.2,.6,.2,1) both}
+      .story-hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.52),rgba(0,0,0,.3) 45%,rgba(0,0,0,.52));z-index:-1}
+      .story-hero-inner{max-width:1000px;padding:clamp(2rem,6vw,4rem) 1.25rem;text-align:center;color:#fff}
+      .story-hero-inner h1{color:#fff;max-width:none;font-size:clamp(40px,6vw,76px);line-height:1.04;letter-spacing:-.02em;margin:0 0 .26em;text-shadow:0 1px 30px rgba(0,0,0,.35);animation:ap-fade-up .7s cubic-bezier(.2,.6,.2,1) both}
+      .story-hero-sub{color:rgba(255,255,255,.92);max-width:46ch;margin:0 auto;font-size:clamp(18px,1.8vw,24px);line-height:1.4;text-shadow:0 1px 18px rgba(0,0,0,.4);animation:ap-fade-up .7s cubic-bezier(.2,.6,.2,1) .1s both}
+      @keyframes story-zoom{from{transform:scale(1.08)}to{transform:scale(1)}}
+      /* home "what I build": JPM-style image-left + cards-right offer block */
+      .offer-grid{display:grid;grid-template-columns:38% 1fr;align-items:center;max-width:var(--max-wide);margin-inline:auto;gap:0}
+      .offer-media{margin:0;align-self:stretch;min-height:520px;overflow:hidden}
+      .offer-media img{width:100%;height:100%;object-fit:cover;display:block}
+      .offer-panel{padding:clamp(28px,4vw,64px)}
+      .offer-eyebrow{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);font-weight:600;margin:0 0 8px}
+      .offer-headline{font-size:clamp(28px,4vw,44px);line-height:1.1;letter-spacing:-.02em;color:var(--ink);margin:0 0 clamp(20px,3vw,32px);max-width:none}
+      .offer-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(14px,1.4vw,20px)}
+      .offer-card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:clamp(16px,1.4vw,22px);display:flex;flex-direction:column}
+      .offer-card .offer-icon{width:30px;height:30px;color:var(--accent);margin-bottom:12px;flex:none}
+      .offer-card h3{font-size:18px;line-height:1.2;margin:0 0 8px;color:var(--ink)}
+      .offer-card p{font-size:14px;line-height:1.5;color:var(--ink-soft);margin:0 0 14px;max-width:none}
+      .offer-card .offer-link{margin-top:auto;font-size:14px;font-weight:600;color:var(--accent)}
+      @media (max-width:860px){.offer-grid{grid-template-columns:1fr}.offer-media{min-height:240px;order:-1}.offer-cards{grid-template-columns:1fr}}
+      .story-intro{max-width:none !important;width:100%;font-size:clamp(18px,1.6vw,21px);line-height:1.55;color:var(--ink);margin-block:0 clamp(30px,4vw,48px)}
+      .story-why{margin-block:clamp(36px,5vw,64px)}
+      .story-why h2{font-size:clamp(24px,3vw,32px);line-height:1.15;letter-spacing:-.015em;color:var(--ink);margin:0 0 18px}
+      .story-why-list{list-style:none;padding:0;margin:0;display:grid;gap:14px}
+      .story-why-list li{max-width:none !important;width:100%;font-size:16px;line-height:1.55;color:var(--ink-soft);padding-inline-start:18px;position:relative}
+      .story-why-list li::before{content:"";position:absolute;inset-inline-start:0;top:.6em;width:6px;height:6px;border-radius:50%;background:var(--accent)}
+      /* smooth load-in for hero title, subtitle, and story banner (apple.com/government style) */
+      @keyframes ap-fade-up{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+      .ap-hero h1{animation:ap-fade-up .7s cubic-bezier(.2,.6,.2,1) both}
+      .ap-hero .sub{animation:ap-fade-up .7s cubic-bezier(.2,.6,.2,1) .08s both}
+      .ap-hero .ap-hero-cta{animation:ap-fade-up .7s cubic-bezier(.2,.6,.2,1) .16s both}
+      @media (prefers-reduced-motion:reduce){.ap-hero h1,.ap-hero .sub,.ap-hero .ap-hero-cta,.story-hero-img,.story-hero-inner h1,.story-hero-sub{animation:none}}
+      /* projects: rotating hero title — leads the hero, pure CSS, CSP-safe (polish #2) */
+      .setup-hero-eyebrow.rotating-title{display:flex;flex-direction:column;align-items:center;gap:2px;max-width:none !important;width:100%;margin:0 0 22px;font-size:clamp(20px,2.6vw,30px);font-weight:600;letter-spacing:-.01em;color:var(--ink);text-transform:none}
+      .rotating-title-lead{display:block}
+      .rotating-title-mask{display:block;overflow:hidden;height:1.25em;line-height:1.25em;text-align:center}
+      .rotating-title-words{display:flex;flex-direction:column;animation:rotwords 11s cubic-bezier(.76,0,.24,1) infinite}
+      .rotating-title-words>span{display:flex;align-items:center;justify-content:center;gap:.22em;height:1.25em;line-height:1.25em;white-space:nowrap;color:var(--accent)}
+      /* Apple-style app-icon tiles: vibrant per-word gradient squircle, white
+         glyph, depth shadow + top highlight, gentle breathing animation. */
+      .rt-icon{display:inline-flex;align-items:center;justify-content:center;flex:none;width:1.02em;height:1.02em;border-radius:24%;color:#fff;position:relative;top:-.06em;box-shadow:inset 0 .03em .04em rgba(255,255,255,.55),inset 0 -.04em .06em rgba(0,0,0,.16);animation:rt-float 3.2s ease-in-out infinite}
+      .rt-icon svg{width:56%;height:56%;filter:drop-shadow(0 .01em .02em rgba(0,0,0,.25))}
+      .rotating-title-words>span:nth-child(1) .rt-icon,.rotating-title-words>span:nth-child(5) .rt-icon{background:linear-gradient(135deg,#4c9bff,#1d4ed8)}
+      .rotating-title-words>span:nth-child(2) .rt-icon{background:linear-gradient(135deg,#2bd4d9,#1577d6)}
+      .rotating-title-words>span:nth-child(3) .rt-icon{background:linear-gradient(135deg,#b08cff,#6d28d9)}
+      .rotating-title-words>span:nth-child(4) .rt-icon{background:linear-gradient(135deg,#ffa24c,#f43f5e)}
+      @keyframes rt-float{0%,100%{transform:scale(1)}50%{transform:scale(1.06)}}
+      @media (prefers-reduced-motion:reduce){.rt-icon{animation:none}}
+      @keyframes rotwords{0%,16%{transform:translateY(0)}20%,36%{transform:translateY(-1.25em)}40%,56%{transform:translateY(-2.5em)}60%,76%{transform:translateY(-3.75em)}80%,100%{transform:translateY(-5em)}}
+      @media (prefers-reduced-motion:reduce){.rotating-title-words{animation:none}.rotating-title-words>span:not(:first-child){display:none}}
+      /* projects: rotating title AS the hero H1 (project layout) — display size */
+      .ap-hero h1.rotating-title{display:flex;flex-direction:column;align-items:center;gap:.04em;max-width:none;font-size:clamp(40px,5.5vw,64px);line-height:1.07;letter-spacing:-.02em;text-transform:none}
+      .ap-hero h1.rotating-title .rotating-title-words>span{color:var(--accent)}
+      .ap-hero-cta{max-width:none !important;width:100%;display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin:24px 0 0}
+      /* projects: three areas as Apple-style image-top cards in a 3-up grid */
+      .areas-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(18px,2.4vw,28px);align-items:stretch}
+      @media (max-width:900px){.areas-grid{grid-template-columns:1fr}}
+      .area-card{display:flex;flex-direction:column;background:var(--card);border-radius:22px;overflow:hidden;box-shadow:0 1px 0 rgba(0,0,0,.06);transition:transform .25s ease,box-shadow .25s ease}
+      .area-card:hover{transform:translateY(-3px);box-shadow:0 16px 34px -16px rgba(0,0,0,.16)}
+      .area-card-media{margin:0;aspect-ratio:16/10;overflow:hidden}
+      .area-card-media img{width:100%;height:100%;object-fit:cover;display:block}
+      .area-card-body{display:flex;flex-direction:column;gap:12px;padding:28px 26px 30px;flex:1}
+      .area-card-kicker{max-width:none !important;width:100%;margin:0;font-size:12px;font-weight:600;letter-spacing:.1em;color:var(--ink-mute);text-transform:uppercase}
+      .area-card-headline{margin:0;font-size:clamp(22px,2vw,28px);line-height:1.12;font-weight:600;letter-spacing:-.015em;color:var(--ink)}
+      .area-card-headline .ac{color:var(--accent)}
+      .area-card-text{max-width:none !important;width:100%;margin:0;font-size:15px;line-height:1.55;color:var(--ink-soft);flex:1}
+      .area-card-cta{margin:0}
+      .area-card-cta a{color:var(--accent);font-weight:500;font-size:14.5px;text-decoration:none}
+      .area-card-cta a:hover{text-decoration:underline;text-underline-offset:3px}
       /* Live GitHub repo stats — injected at build time by
          scripts/postbuild.py:inject_github_stats() from
          public/_data/gh-stats.json. Refreshed nightly by the
@@ -1619,9 +1720,10 @@
       .qa-item > summary:hover::after{color:var(--accent);border-color:var(--accent)}
       .qa-item > summary:focus-visible{outline:2px solid var(--accent);outline-offset:4px;border-radius:6px}
       .qa-a{padding:0 4px 24px;max-width:none;width:100%}
-      /* Skeletonic ships a global `p{max-width:65ch}` which would clamp the
-         answer text to half the container. Force it back to full width. */
-      .qa-a p{margin:0;font-size:15.5px;line-height:1.6;color:var(--ink-soft);max-width:none}
+      /* Skeletonic ships `main.content :is(p,…){max-width:65ch}` (specificity
+         0,1,2) which clamps the answer to half the column. Beat it with a more
+         specific selector so the answer fills the FAQ width. */
+      main.content .qa-a p{margin:0;font-size:15.5px;line-height:1.6;color:var(--ink-soft);max-width:none}
       .qa-a p + p{margin-top:12px}
       /* Paper-aesthetic newsroom cards. Warm cream surface, 1px solid
          hairline border, sharp 6px radius, no drop shadow. Pairs with
@@ -1812,10 +1914,10 @@
       main.content blockquote li{margin:6px 0;color:var(--ink-soft)}
       main.content blockquote li strong{color:var(--ink)}
 
-      .brands{display:flex;flex-wrap:nowrap;align-items:center;justify-content:space-between;gap:clamp(16px,3vw,40px);margin:48px 0 16px;padding:48px 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
-      .brand-logo{height:28px;width:auto;max-width:100%;flex:0 1 auto;min-width:0;filter:grayscale(100%);opacity:.5;transition:opacity .25s ease,filter .25s ease;object-fit:contain}
+      .brands{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:clamp(24px,4vw,52px);margin:48px 0 16px;padding:40px 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+      .brand-logo{height:26px;width:auto;max-width:140px;flex:0 0 auto;filter:grayscale(100%);opacity:.62;transition:opacity .25s ease,filter .25s ease;object-fit:contain}
       .brand-logo:hover{filter:grayscale(0);opacity:1}
-      @media (max-width:600px){.brands{gap:14px;padding:32px 0}.brand-logo{height:20px}}
+      @media (max-width:600px){.brands{gap:20px 28px;padding:28px 0}.brand-logo{height:20px}}
 
       /* Static Site Generator auto-injected search widget. Apple-clean override:
          keep just the magnifier glyph as a discreet circular icon top-right. */
@@ -1946,7 +2048,7 @@
           </div>
         </div>
         <form class="ap-newsletter" action="/contact/" method="get" aria-label="Newsletter signup">
-          <label for="ap-newsletter-email" class="ap-newsletter-label">Monthly briefings on the intersection of AI, ISO 20022, and quantum-safe payments — written for senior banking architects making the call. No spam, unsubscribe in one click.</label>
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Monthly briefings on AI, ISO 20022, and quantum-safe payments, written for senior banking architects. No spam, unsubscribe in one click.</label>
           <div class="ap-newsletter-row">
             <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="you@bank.com" />
             <input type="hidden" name="subject" value="newsletter" />
@@ -1966,8 +2068,8 @@
             <a href="/accessibility/index.html">Accessibility</a> ·
             <a href="/privacy/index.html">Privacy</a> ·
             <a href="/terms/index.html">Terms</a> ·
-            <a href="https://www.thegreenwebfoundation.org/green-web-check/?url=sebastienrousseau.com" target="_blank" rel="noopener noreferrer" title="Hosted on 100% renewable energy (Cloudflare) — estimate via Sustainable Web Design v4 model">Carbon: ~0.04 g/visit · green-hosted</a> ·
-            <a href="https://github.com/sebastienrousseau/sebastienrousseau.github.io/blob/main/project-docs/sigstore.md" target="_blank" rel="noopener noreferrer" title="Every dated article is signed with Sigstore — verify the bytes match what was published">Verify signatures</a>
+            <a href="https://www.thegreenwebfoundation.org/green-web-check/?url=sebastienrousseau.com" target="_blank" rel="noopener noreferrer" title="Hosted on 100% renewable energy (Cloudflare), estimated with the Sustainable Web Design v4 model">Carbon: ~0.04 g/visit · green-hosted</a> ·
+            <a href="https://github.com/sebastienrousseau/sebastienrousseau.github.io/blob/main/project-docs/sigstore.md" target="_blank" rel="noopener noreferrer" title="Every dated article is signed with Sigstore. Verify the bytes match what was published">Verify signatures</a>
           </p>
         </div>
       </div>
@@ -2113,7 +2215,7 @@
     </script>
 
         <script type="application/ld+json">
-{"@context":"https://schema.org","@graph":[{"@type":"CollectionPage","name":"{{title}}","description":"{{description}}","url":"{{url}}","inLanguage":"{{hreflang}}","about":"Research papers and white papers on wholesale payments and post-quantum cryptography","author":{"@id":"https://sebastienrousseau.com/#person"},"isPartOf":{"@id":"https://sebastienrousseau.com/#website"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"{{title}}","item":"{{url}}"}]},{"@type":"FAQPage","@id":"{{url}}#faq","mainEntity":[{"@type":"Question","name":"What kind of research and papers do you publish?","acceptedAnswer":{"@type":"Answer","text":"Two strands sit side-by-side. Industry white papers, produced for organisations such as the Emerging Payments Association Asia (EPAA), examine structural shifts to payment infrastructure — most recently the impact of cryptographically-relevant quantum computing on wholesale and real-time settlement rails. Applied research papers, published independently, share reproducible engineering work — for example, real-time speech recognition on macOS using OpenAI Whisper and Metal Performance Shaders."}},{"@type":"Question","name":"Who is the intended audience?","acceptedAnswer":{"@type":"Answer","text":"Heads of payments, CISOs and senior architects in Tier-1 banks, central banks, payment system operators and scheme owners. The applied research is written for engineers and product leaders building on top of large language models, on-device AI, and quantum-resistant cryptography."}},{"@type":"Question","name":"Are the white papers free to read?","acceptedAnswer":{"@type":"Answer","text":"The EPAA Quantum-Safe Payments paper is a free 18.9 MB PDF download from emergingpaymentsasia.org. The independent research paper on real-time speech recognition with OpenAI Whisper and Metal Performance Shaders is licensed and available for individual purchase at $49.00 (English, PDF, ~95 KB). One copy per buyer; downloads are personal-use only."}},{"@type":"Question","name":"May I cite or quote from these papers?","acceptedAnswer":{"@type":"Answer","text":"Yes. Short quotations with attribution are welcome under fair-dealing or fair-use norms. For EPAA papers, cite the EPAA as publisher with the working group, year and PDF URL. For independent research papers, cite as Rousseau, S. (year). Title. Self-published. with the canonical URL."}},{"@type":"Question","name":"Can I commission a paper or speak at an event?","acceptedAnswer":{"@type":"Answer","text":"Yes — limited, by selection. Commissioned work focuses on wholesale payments, ISO 20022 migration, post-quantum cryptography for financial services, and applied AI in banking. Speaking engagements at industry conferences, central-bank fora, and regulator round-tables are considered case-by-case."}},{"@type":"Question","name":"How do I follow new publications?","acceptedAnswer":{"@type":"Answer","text":"New papers and research notes are announced first through the site RSS feed at /rss.xml and the Banking On Quantum newsletter at news.bankingonquantum.com, which covers post-quantum cryptography, central-bank policy, and the migration roadmap across major payment schemes."}}]}]}
+{"@context":"https://schema.org","@graph":[{"@type":"CollectionPage","name":"{{title}}","description":"{{description}}","url":"{{url}}","inLanguage":"{{hreflang}}","about":"Research papers and white papers on wholesale payments and post-quantum cryptography","author":{"@id":"https://sebastienrousseau.com/#person"},"isPartOf":{"@id":"https://sebastienrousseau.com/#website"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"{{title}}","item":"{{url}}"}]},{"@type":"FAQPage","@id":"{{url}}#faq","mainEntity":[{"@type":"Question","name":"What kind of research and papers do you publish?","acceptedAnswer":{"@type":"Answer","text":"Two strands sit side-by-side. Industry white papers, produced for organisations such as the Emerging Payments Association Asia (EPAA), examine structural shifts to payment infrastructure, most recently the impact of cryptographically-relevant quantum computing on wholesale and real-time settlement rails. Applied research papers, published independently, share reproducible engineering work, for example, real-time speech recognition on macOS using OpenAI Whisper and Metal Performance Shaders."}},{"@type":"Question","name":"Who is the intended audience?","acceptedAnswer":{"@type":"Answer","text":"Heads of payments, CISOs and senior architects in Tier-1 banks, central banks, payment system operators and scheme owners. The applied research is written for engineers and product leaders building on top of large language models, on-device AI, and quantum-resistant cryptography."}},{"@type":"Question","name":"Are the white papers free to read?","acceptedAnswer":{"@type":"Answer","text":"The EPAA Quantum-Safe Payments paper is a free 18.9 MB PDF download from emergingpaymentsasia.org. The independent research paper on real-time speech recognition with OpenAI Whisper and Metal Performance Shaders is licensed and available for individual purchase at $49.00 (English, PDF, ~95 KB). One copy per buyer; downloads are personal-use only."}},{"@type":"Question","name":"May I cite or quote from these papers?","acceptedAnswer":{"@type":"Answer","text":"Yes. Short quotations with attribution are welcome under fair-dealing or fair-use norms. For EPAA papers, cite the EPAA as publisher with the working group, year and PDF URL. For independent research papers, cite as Rousseau, S. (year). Title. Self-published. with the canonical URL."}},{"@type":"Question","name":"Can I commission a paper or speak at an event?","acceptedAnswer":{"@type":"Answer","text":"Yes, limited and by selection. Commissioned work focuses on wholesale payments, ISO 20022 migration, post-quantum cryptography for financial services, and applied AI in banking. Speaking engagements at industry conferences, central-bank fora, and regulator round-tables are considered case-by-case."}},{"@type":"Question","name":"How do I follow new publications?","acceptedAnswer":{"@type":"Answer","text":"New papers and research notes are announced first through the site RSS feed at /rss.xml and the Banking On Quantum newsletter at news.bankingonquantum.com, which covers post-quantum cryptography, central-bank policy, and the migration roadmap across major payment schemes."}}]}]}
     </script>
 <script src="/main.js" defer></script>
   </body>

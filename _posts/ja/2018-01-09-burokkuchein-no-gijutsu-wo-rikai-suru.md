@@ -5,13 +5,13 @@ description: "ブロックチェーンを構成する暗号、ネットワーク
 date: "January 9, 2018"
 language: "ja-JP"
 locale: "ja_JP"
-banner: "https://cloudcdn.pro/stocks/images/markus-spiske-466ENaLuhLY-unsplash.webp"
+banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp"
 banner_alt: "ターミナル画面上のコード"
 keywords: "ブロックチェーン, 暗号, ハッシュ, デジタル署名, マークルツリー, 合意, プルーフ・オブ・ワーク, P2P ネットワーク"
 last_reviewed: "2026-05-11"
 ---
 
-![ターミナル画面上のコード](https://cloudcdn.pro/stocks/images/markus-spiske-466ENaLuhLY-unsplash.webp).class=\"img-fluid clearfix\"
+![ターミナル画面上のコード](https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp).class=\"img-fluid clearfix\"
 
 ## インサイト
 

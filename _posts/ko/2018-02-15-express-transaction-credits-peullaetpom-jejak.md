@@ -5,13 +5,13 @@ description: "블록체인과 암호자산을 활용한 고속 국경 간 송금
 date: "February 15, 2018"
 language: "ko-KR"
 locale: "ko_KR"
-banner: "https://cloudcdn.pro/stocks/images/joshua-sortino-LqKhnDzSF-8-unsplash.webp"
+banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp"
 banner_alt: "야간 전자 회로 기판의 파란 빛"
 keywords: "국경 간 송금, 블록체인, 암호자산, 토큰, 스마트 컨트랙트, 결제 플랫폼, 핀테크"
 last_reviewed: "2026-05-16"
 ---
 
-![야간 전자 회로 기판의 파란 빛](https://cloudcdn.pro/stocks/images/joshua-sortino-LqKhnDzSF-8-unsplash.webp).class=\"img-fluid clearfix\"
+![야간 전자 회로 기판의 파란 빛](https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp).class=\"img-fluid clearfix\"
 
 ## 통찰
 

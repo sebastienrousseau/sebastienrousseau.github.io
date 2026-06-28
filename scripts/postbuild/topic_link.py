@@ -188,7 +188,23 @@ def process_post(path: Path) -> int:  # noqa: C901 — Markdown-region walker; b
 
 
 def main() -> None:
-    posts = sorted(p for p in POSTS.glob("*.md") if DATED_NAME.match(p.name))
+    # `--dir` is REQUIRED, with no default — see ADR-0003. This linker rewrites
+    # post bodies in place; defaulting to `_posts` meant a bare run silently
+    # mutated committed source. Callers pass `--dir _posts` (intentional source
+    # write) or `--dir _posts_build` (build copy).
+    import argparse
+
+    parser = argparse.ArgumentParser(description="Inject topic-cluster cross-links into dated posts.")
+    parser.add_argument(
+        "--dir",
+        required=True,
+        help="Directory of posts to link (e.g. _posts). Required: this rewrites "
+        "files in place, so the target must be explicit (ADR-0003).",
+    )
+    args = parser.parse_args()
+    posts_dir = Path(args.dir)
+
+    posts = sorted(p for p in posts_dir.glob("*.md") if DATED_NAME.match(p.name))
     total_links = 0
     touched = 0
     for p in posts:

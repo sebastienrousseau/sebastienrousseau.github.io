@@ -5,7 +5,7 @@ description: "Zwölf Jahre nach seiner Veröffentlichung liest sich Luc Bessons 
 date: "May 11, 2026"
 language: "de"
 locale: "de_DE"
-banner: "https://cloudcdn.pro/stocks/images/lucy-knowledge-transfer-banner.webp"
+banner: "https://cloudcdn.pro/stocks/images/harald-krichel-scarlett-johansson-8531.webp"
 banner_alt: "Abstrakte Visualisierung neuronaler Netze und quantenbasierter Atomanordnungen. Ein schwarzer Computer formt sich aus sich neu anordnenden Teilchen."
 keywords: "Lucy, Luc Besson, Wissenstransfer, KI, LLM, Qubits aus neutralen Atomen, Hirnemulation, Neuralink, Eon Systems, Carboncopies, Fromm, Substratunabhängigkeit, Philosophie der KI"
 ---

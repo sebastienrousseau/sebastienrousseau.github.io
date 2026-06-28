@@ -5,12 +5,12 @@ description: 'Đánh giá tình hình AI và tính toán lượng tử trong ng�
 date: 'December 18, 2023'
 language: 'vi-VN'
 locale: 'vi_VN'
-banner: 'https://cloudcdn.pro/stocks/images/ai-quantum-banner.webp'
+banner: 'https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp'
 banner_alt: 'Sơ đồ trừu tượng kết hợp AI và tính toán lượng tử'
 keywords: 'AI, tính toán lượng tử, ngân hàng, 2023, đánh giá, LLM, GPT, NIST, PQC, dịch vụ tài chính'
 ---
 
-![AI và tính toán lượng tử](https://cloudcdn.pro/stocks/images/ai-quantum-banner.webp).class=\"img-fluid clearfix\"
+![AI và tính toán lượng tử](https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp).class=\"img-fluid clearfix\"
 
 > **TL;DR.** Năm 2023 là năm AI tạo sinh chuyển từ trình diễn ý tưởng sang triển khai sản xuất trong các ngân hàng lớn, và là năm NIST hoàn thiện các tiêu chuẩn PQC đầu tiên. Đánh giá này tổng kết các phát triển và phác hoạ triển vọng cho 2024.
 >

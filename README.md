@@ -1,74 +1,97 @@
-# sebastienrousseau.com
+<!-- SPDX-License-Identifier: Apache-2.0 -->
 
-> Last Updated: June 4, 2026
+<p align="center">
+  <img src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg" alt="sebastienrousseau.com logo" width="128" />
+</p>
 
-This repository houses the static-site pipeline for the Sebastien Rousseau web site, which compiles research on applied AI, payments, and keys in twenty-eight languages.
-We build the site using the Static Site Generator static site generator and run automated postbuild scripts to optimize the pages.
+<h1 align="center">sebastienrousseau.com</h1>
+
+<p align="center">
+  A secure, 28-language static-site pipeline for research on applied AI,
+  payments, and post-quantum cryptography — a Rust SSG core with automated
+  Python generators and postbuild passes.
+</p>
+
+<p align="center">
+  <a href="https://github.com/sebastienrousseau/sebastienrousseau.github.io/actions"><img src="https://img.shields.io/github/actions/workflow/status/sebastienrousseau/sebastienrousseau.github.io/ci.yml?style=for-the-badge&logo=github" alt="Build" /></a>
+  <a href="https://github.com/sebastienrousseau/sebastienrousseau.github.io/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-Apache--2.0-66c2a5?style=for-the-badge" alt="License" /></a>
+  <a href="https://scorecard.dev/viewer/?uri=github.com/sebastienrousseau/sebastienrousseau.github.io"><img src="https://img.shields.io/ossf-scorecard/github.com/sebastienrousseau/sebastienrousseau.github.io?style=for-the-badge&label=OpenSSF%20Scorecard&logo=openssf" alt="OpenSSF Scorecard" /></a>
+</p>
+
+---
 
 ## Contents
 
-This section outlines the main topics and guides in this repository.
+**Getting started**
 
-- [Quick Start](#quick-start)
-- [Repository tour](#repository-tour)
-- [Pipeline overview](#pipeline-overview)
-- [Build stages](#build-stages)
-- [Postbuild passes](#postbuild-passes)
-- [Internationalisation](#internationalisation)
-- [Security posture](#security-posture)
-- [Edge routing Worker](#edge-routing-worker)
-- [WASM labs](#wasm-labs)
-- [Schema.org coverage](#schemaorg-coverage)
-- [AI and agent discovery](#ai-and-agent-discovery)
-- [Development](#development)
-- [CI gates](#ci-gates)
-- [Deployment](#deployment)
+- [Install](#install) — toolchain prerequisites
+- [Quick Start](#quick-start) — clone, build, serve
+- [Layout](#layout) — repository folder map
+
+**Pipeline**
+
+- [Pipeline overview](#pipeline-overview) — source → compile → generate → postbuild → CI
+- [Build stages](#build-stages) — the six generator steps
+- [Postbuild passes](#postbuild-passes) — per-page transforms
+- [Internationalisation](#internationalisation) — 28 locales, translation pipeline, parity gates
+
+**Platform**
+
+- [Security](#security) — CSP/SRI, PQC transport, signed commits, threat model
+- [Edge routing Worker](#edge-routing-worker) — Cloudflare language routing
+- [WASM labs](#wasm-labs) — Rust → WebAssembly demos
+- [Discovery](#discovery) — Schema.org + AI/agent endpoints
+
+**Operational**
+
+- [Development](#development) — local build + test loop
+- [CI gates](#ci-gates) — what blocks a merge
+- [Deployment](#deployment) — GitHub Pages + Cloudflare
+- [Reuse](#reuse) — adapting the pipeline for your own site
 - [Companion docs](#companion-docs)
 - [License](#license)
 
-## Quick Start
+---
 
-You can install the tools and build the site in three simple command line steps.
+## Install
+
+| Tool | Version | Purpose |
+| :--- | :--- | :--- |
+| Rust | stable | Runs the `ssg` static-site compiler |
+| Python | 3.12 | Runs the generators + postbuild passes |
+| Node.js | 22 | Runs the router + accessibility tests |
+| Git | any | Version control + signed commits |
+
+Ensure your commit-signing key is active before building.
+
+## Quick Start
 
 ```bash
 git clone https://github.com/sebastienrousseau/sebastienrousseau.github.io.git
 cd sebastienrousseau.github.io
-cargo install ssg --locked
-pip install -r requirements.txt
-./build.sh
+cargo install ssg --locked        # Rust SSG compiler
+pip install -r requirements.txt   # Python build dependencies
+./build.sh                        # emits public/ across 28 locales
 ```
 
-A clean build finishes in twelve seconds and emits thousands of pages across twenty-eight languages.
+## Layout
 
-| Tool | Setup | Purpose |
-|---|---|---|
-| `Rust` | Stable toolchain | Used to run the static site compiler |
-| `Python` | Version 3.12 | Runs the postbuild scripts |
-| `Node.js` | Version 20 or higher | Runs the router tests |
-| `Git` | Standard client | Handles code version control |
-
-Ensure your signing keys are active before running a build.
-
-## Repository tour
-
-The folder outline separates the source articles, layouts, and python build scripts to keep the workspace clean.
-
-- `_posts/` houses the source articles
-- `_layouts/` holds the page templates
-- `_data/` carries the locale files
-- `scripts/` contains the build scripts
-- `tests/` holds the test suites
-- `project-docs/` contains the guide files
-- `workers/` houses the router code
-- `labs/` holds the Rust → WebAssembly demos
-- `public/` stores the build output (gitignored; deployed as a CI artifact)
-- `sigstore-bundles/` stores the committed article signature bundles
-
-Each folder has a single task to make updates easy.
+| Path | Contents |
+| :--- | :--- |
+| `_posts/` | Source articles (EN + 27 locale subdirs) |
+| `_layouts/` | Page templates |
+| `_data/` | Locale strings + taxonomy |
+| `scripts/` | Build, generator, postbuild, and audit tooling |
+| `tests/` | Unit + validation suites |
+| `project-docs/` | Architecture, CI, security, publishing guides |
+| `workers/` | Cloudflare edge router |
+| `labs/` | Rust → WebAssembly demos |
+| `public/` | Build output (gitignored; deployed as a CI artifact) |
+| `sigstore-bundles/` | Committed article signature bundles |
 
 ## Pipeline overview
 
-The static site build flow translates content and applies security checks in a linear order of stages.
+Source files compile, translate, and pass security checks in a linear order of stages — markdown and locale strings in, optimised HTML, sitemaps, and feeds out.
 
 ```mermaid
 %%{init: {'theme':'neutral'} }%%
@@ -96,11 +119,11 @@ flowchart TB
  end
 
  subgraph CI["CI Gates"]
- G["13 validation gates<br/>(pytest · Pa11y · CSP · RTL)"]
+ G["validation gates<br/>(pytest · Pa11y · CSP · RTL)"]
  end
 
  subgraph OUT["Output"]
- P["public/<br/><i>1850 pages</i>"]
+ P["public/<br/><i>~1,850 pages</i>"]
  end
 
  EN --> COMP
@@ -114,43 +137,26 @@ flowchart TB
  CI --> P
 ```
 
-The pipeline starts with source files and ends with optimized web pages.
-
 ## Build stages
 
-We use six main generator steps to convert English source drafts into fully translated pages.
+Six generator steps turn English source drafts into fully translated pages:
 
-First, the compiler builds the English pages from layout files.
-Second, the topics tool generates topic landing pages.
-Third, the translation tool creates pages for all active locales.
-Fourth, the feed tool writes RSS and Atom feeds.
-Fifth, the agent tool builds JSON feeds for search tools.
-Sixth, the postbuild tool runs final page checks.
-
-## Inputs and outputs
-
-The pipeline reads markdown articles and JSON locale strings to build optimized HTML pages.
-
-The inputs consist of English posts and translation strings in the locale folders.
-The output folder holds the compiled HTML pages, images, sitemaps, and feeds.
+1. **Compile** — `ssg` renders the English pages from templates.
+2. **Topics** — `build_topics.py` generates topic landing pages.
+3. **Translate** — `build_translations.py` renders every active locale.
+4. **Feeds** — `build_lang_feeds.py` writes RSS and Atom feeds.
+5. **Agent API** — `build_agent_api.py` emits JSON feeds for crawlers and search tools.
+6. **Postbuild** — `postbuild.py` runs the final per-page passes.
 
 ## Postbuild passes
 
-The postbuild script runs twenty-five separate checks to update page tags and security rules.
-
-These checks add author metadata, sizes, citation lists, sitemaps, and script hashes.
-Refer to the postbuild guide for details on each optimization pass.
+`postbuild.py` runs ~25 single-page passes that add author metadata, image dimensions, citation lists, sitemaps, and per-page CSP script hashes. See [Postbuild Passes](project-docs/postbuild.md) for each pass.
 
 ## Internationalisation
 
-We support twenty-eight languages by using translation mapping stubs and language checks.
+Twenty-eight languages are active on the live site. The language registry (`scripts/lib/_lang_registry.py`) holds display names and switcher settings; locale strings live under `_data/i18n/<lang>/`.
 
-The registry file holds display names and flag switcher settings.
-All twenty-eight languages are active on the live site.
-
-## Translation pipeline
-
-The translation tool runs in local terminal sessions to translate stubs into active languages.
+`build_translations.py` runs locally to render every active non-English locale from the English page shell:
 
 ```mermaid
 %%{init: {'theme':'neutral'} }%%
@@ -178,40 +184,11 @@ sequenceDiagram
  end
 ```
 
-The script copies the English page content and swaps the menu strings automatically.
+**Parity gates.** Seven checks confirm every active translation matches the reference English page count, author details, and structure. Any failure stops the build.
 
-## Per-language CI gates
+## Security
 
-Seven parity checks confirm that every active translation matches the reference English page count.
-
-These checks verify the language files, author details, and structural elements of the site.
-Any failure stops the build and requires manual repair to pass.
-
-## Security posture
-
-The site implements hybrid keys, strict script content rules, and signed git commits to protect visitors.
-
-We block inline scripts unless they carry a unique hash computed during the build.
-Our defense against supply-chain hacks relies on package lists and asset hashes.
-The edge server preloads transport rules to block security downgrades.
-
-## Edge routing Worker
-
-A Cloudflare Worker handles language routing and sets security response headers on the edge server.
-
-The worker matches visitor headers to route them to their preferred language.
-It also sets security headers for transit safety, referrer rules, permissions, and framing limits.
-
-## WASM labs
-
-We compile Rust crates to WebAssembly to provide interactive tools directly in the user browser.
-
-Each project builds a standalone package that loads safely in the browser.
-These pages run under a strict security policy to execute code safely.
-
-## Threat model
-
-The threat model diagram outlines the security borders and defenses of the platform.
+The site ships hybrid post-quantum TLS, a strict per-page Content-Security-Policy, Subresource Integrity on every asset, and signed Git commits. Inline scripts are allowed only by a build-time SHA-256 hash; supply-chain integrity rests on a CycloneDX SBOM and asset hashes; the edge preloads HSTS to block downgrades. See [Security](project-docs/security.md).
 
 ```mermaid
 %%{init: {'theme':'neutral'} }%%
@@ -237,64 +214,41 @@ graph TB
  TR --> CDN
 ```
 
-The system is hardened against decryption threats, page hijacking, and supply-chain tampering.
+## Edge routing Worker
 
-## Capabilities shipped
+A Cloudflare Worker (`workers/lang-router.js`) matches visitor `Accept-Language` headers to route to the preferred locale, and sets edge response headers for transport security, referrer policy, permissions, and framing.
 
-The live site delivers thousands of fast, secure, and accessible pages to readers.
+## WASM labs
 
-We support variable fonts, edge compression, and pre-load rules to load pages quickly.
-The pages achieve perfect scores in accessibility and SEO checks.
+Rust crates compiled to WebAssembly power interactive, client-side demos. Each demo builds a standalone package that loads under a strict CSP. See [`labs/`](labs/).
 
-## Schema.org coverage
+## Discovery
 
-Every page carries rich schema blocks to help search engines and AI tools index the site.
-
-These blocks define authors, article types, breadcrumbs, and cited sources.
-We check these schemas automatically on every build run.
-
-## AI and agent discovery
-
-We publish plugin specifications and text indices to assist AI crawlers and web clients.
-
-These resources allow AI crawlers to parse the content cleanly.
-The agent endpoints expose articles and topics for search tools.
+Every page carries Schema.org JSON-LD (author, article type, breadcrumbs, cited sources), validated on every build. The site also publishes agent endpoints and text indices (`/api/agents/…`, `/llms-full.txt`) so AI crawlers can parse content and enumerate articles and topics.
 
 ## Development
 
-You can test changes locally by running the build script and checking pages in your browser.
+```bash
+./build.sh          # compile the full site to public/
+./build.sh --serve  # build, then serve public/ on http://127.0.0.1:8000
+make test           # run the unit suite
+```
 
-- Step 1: Run the build script to compile the site.
-- Step 2: Serve the compiled pages on your local host.
-- Step 3: Open the browser page to inspect the layouts.
-- Step 4: Run the test command to verify that all tests stay green.
-
-This ensures that your changes are safe before pushing.
+Build, serve, inspect in the browser, and confirm the tests are green before pushing.
 
 ## CI gates
 
-Thirteen automated tests verify that all files are correct before changes land on the branch.
-
-These gates check the page count, search indexes, layout rules, and alternate links.
-The integration runner blocks any pull request that fails these checks.
+Static analysis (ruff, mypy, complexity, duplication), the unit + validation suites, an internal-link audit, JSON-LD validation, a 4-shard Pa11y accessibility pass, and Lighthouse all run on every pull request. A failing gate blocks the merge. See [CI Gates](project-docs/ci.md).
 
 ## Deployment
 
-The site deploys to GitHub Pages automatically when you push to the main branch.
+Pushing to `main` triggers CI, which builds the site, uploads `public/` as a Pages artifact, and publishes it with `actions/deploy-pages`. Cloudflare sits in front of the GitHub Pages origin as the CDN and edge-security layer.
 
-CI builds the site, uploads `public/` as a Pages artifact, and `actions/deploy-pages` publishes it.
-Cloudflare sits in front of the GitHub Pages origin as the CDN and edge security layer.
+## Reuse
 
-## When this repo is not what you want
-
-You can strip the translation scripts if you only need a single-language site.
-
-The core pipeline works for single-language sites by disabling the active locales.
-You can customize the HTML layouts and CSS files to match your own brand.
+The pipeline works for a single-language site by disabling the active locales in the language registry; the translation scripts can then be removed. Customise `_layouts/` and the CSS to rebrand.
 
 ## Companion docs
-
-The project-docs folder contains detailed guides on architecture, publishing, and security.
 
 - [Architecture](project-docs/architecture.md)
 - [CI Gates](project-docs/ci.md)
@@ -307,10 +261,8 @@ The project-docs folder contains detailed guides on architecture, publishing, an
 - [Daily Publishing](project-docs/daily-publishing.md)
 - [SEO Spec](project-docs/web-performance-seo-spec.md)
 
-Read these files to learn more about the platform setup.
-
 ## License
 
-This project is open source and available under the Apache-2.0 license.
+Licensed under [Apache-2.0](LICENSE). See [CHANGELOG.md](CHANGELOG.md) for release history.
 
-The codebase is free to modify and share for personal or commercial use.
+<p align="right"><a href="#contents">Back to Top</a></p>

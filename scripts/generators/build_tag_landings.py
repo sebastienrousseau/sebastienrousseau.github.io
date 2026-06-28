@@ -106,7 +106,7 @@ _EXCERPT_FM_RE = re.compile(r'^excerpt:\s*"?([^"\n]+?)"?\s*$', re.MULTILINE)
 _DESC_FM_RE = re.compile(r'^description:\s*"?([^"\n]+?)"?\s*$', re.MULTILINE)
 _BANNER_FM_RE = re.compile(r'^banner:\s*"?([^"\n]+?)"?\s*$', re.MULTILINE)
 _BANNER_ALT_FM_RE = re.compile(r'^banner_alt:\s*"?([^"\n]+?)"?\s*$', re.MULTILINE)
-_DEFAULT_BANNER = "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+_DEFAULT_BANNER = "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 _DATED_SLUG_RE = re.compile(r"^(\d{4}-\d{2}-\d{2})-(.+)$")
 _MAIN_RE = re.compile(
     r'(<main\b[^>]*>)([\s\S]*?)(</main>)',
