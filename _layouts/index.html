@@ -1309,7 +1309,7 @@
       .pill.dark:hover{background:#000}
       .pill.light{background:#fff;color:#1d1d1f}
       .pill.lg{padding:15px 28px;font-size:18px}
-      .pill::after{content:"\00A0\203A"}
+      .pill::after{content:"\203A";margin-inline-start:.4em}
       .pill.no-chev::after{content:""}
 
       /* ---------- Sections ---------- */
@@ -1442,6 +1442,13 @@
       /* IntersectionObserver fade-up — main.js toggles .is-in on enter. */
       .reveal{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s ease;will-change:opacity,transform}
       .reveal.is-in{opacity:1;transform:translateY(0)}
+      /* AKQA-style staggered child reveal: cards fade up in sequence once the section enters */
+      .reveal :is(.offer-card,.newsroom-card,.kpi-cell,.area-card){opacity:0;transform:translateY(18px);transition:opacity .55s cubic-bezier(.2,.6,.2,1),transform .55s cubic-bezier(.2,.6,.2,1)}
+      .reveal.is-in :is(.offer-card,.newsroom-card,.kpi-cell,.area-card){opacity:1;transform:none}
+      .reveal.is-in :is(.offer-card,.newsroom-card,.kpi-cell,.area-card):nth-child(2){transition-delay:.09s}
+      .reveal.is-in :is(.offer-card,.newsroom-card,.kpi-cell,.area-card):nth-child(3){transition-delay:.18s}
+      .reveal.is-in :is(.offer-card,.newsroom-card,.kpi-cell,.area-card):nth-child(4){transition-delay:.27s}
+      @media (prefers-reduced-motion:reduce){.reveal :is(.offer-card,.newsroom-card,.kpi-cell,.area-card){opacity:1;transform:none;transition:none}}
       @media (prefers-reduced-motion: reduce){.reveal{opacity:1;transform:none;transition:none}}
 
       /* Per-article enrichment (last-reviewed badge + related-posts grid) */
@@ -1610,6 +1617,20 @@
       .story-hero-inner h1{color:#fff;max-width:none;font-size:clamp(40px,6vw,76px);line-height:1.04;letter-spacing:-.02em;margin:0 0 .26em;text-shadow:0 1px 30px rgba(0,0,0,.35);animation:ap-fade-up .7s cubic-bezier(.2,.6,.2,1) both}
       .story-hero-sub{color:rgba(255,255,255,.92);max-width:46ch;margin:0 auto;font-size:clamp(18px,1.8vw,24px);line-height:1.4;text-shadow:0 1px 18px rgba(0,0,0,.4);animation:ap-fade-up .7s cubic-bezier(.2,.6,.2,1) .1s both}
       @keyframes story-zoom{from{transform:scale(1.08)}to{transform:scale(1)}}
+      /* home "what I build": JPM-style image-left + cards-right offer block */
+      .offer-grid{display:grid;grid-template-columns:38% 1fr;align-items:center;max-width:var(--max-wide);margin-inline:auto;gap:0}
+      .offer-media{margin:0;align-self:stretch;min-height:520px;overflow:hidden}
+      .offer-media img{width:100%;height:100%;object-fit:cover;display:block}
+      .offer-panel{padding:clamp(28px,4vw,64px)}
+      .offer-eyebrow{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);font-weight:600;margin:0 0 8px}
+      .offer-headline{font-size:clamp(28px,4vw,44px);line-height:1.1;letter-spacing:-.02em;color:var(--ink);margin:0 0 clamp(20px,3vw,32px);max-width:none}
+      .offer-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(14px,1.4vw,20px)}
+      .offer-card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:clamp(16px,1.4vw,22px);display:flex;flex-direction:column}
+      .offer-card .offer-icon{width:30px;height:30px;color:var(--accent);margin-bottom:12px;flex:none}
+      .offer-card h3{font-size:18px;line-height:1.2;margin:0 0 8px;color:var(--ink)}
+      .offer-card p{font-size:14px;line-height:1.5;color:var(--ink-soft);margin:0 0 14px;max-width:none}
+      .offer-card .offer-link{margin-top:auto;font-size:14px;font-weight:600;color:var(--accent)}
+      @media (max-width:860px){.offer-grid{grid-template-columns:1fr}.offer-media{min-height:240px;order:-1}.offer-cards{grid-template-columns:1fr}}
       .story-intro{max-width:none !important;width:100%;font-size:clamp(18px,1.6vw,21px);line-height:1.55;color:var(--ink);margin-block:0 clamp(30px,4vw,48px)}
       .story-why{margin-block:clamp(36px,5vw,64px)}
       .story-why h2{font-size:clamp(24px,3vw,32px);line-height:1.15;letter-spacing:-.015em;color:var(--ink);margin:0 0 18px}
@@ -1892,10 +1913,10 @@
       main.content blockquote li{margin:6px 0;color:var(--ink-soft)}
       main.content blockquote li strong{color:var(--ink)}
 
-      .brands{display:flex;flex-wrap:nowrap;align-items:center;justify-content:space-between;gap:clamp(16px,3vw,40px);margin:48px 0 16px;padding:48px 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
-      .brand-logo{height:28px;width:auto;max-width:100%;flex:0 1 auto;min-width:0;filter:grayscale(100%);opacity:.5;transition:opacity .25s ease,filter .25s ease;object-fit:contain}
+      .brands{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:clamp(24px,4vw,52px);margin:48px 0 16px;padding:40px 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+      .brand-logo{height:26px;width:auto;max-width:140px;flex:0 0 auto;filter:grayscale(100%);opacity:.62;transition:opacity .25s ease,filter .25s ease;object-fit:contain}
       .brand-logo:hover{filter:grayscale(0);opacity:1}
-      @media (max-width:600px){.brands{gap:14px;padding:32px 0}.brand-logo{height:20px}}
+      @media (max-width:600px){.brands{gap:20px 28px;padding:28px 0}.brand-logo{height:20px}}
 
       /* Static Site Generator auto-injected search widget. Apple-clean override:
          keep just the magnifier glyph as a discreet circular icon top-right. */
@@ -1984,7 +2005,7 @@
         <img class="hero-portrait" src="{{image}}" alt="{{image_alt}}" width="96" height="96" loading="eager" fetchpriority="high" decoding="async" />
         <p class="feat-eyebrow"><a href="/about/index.html">{{name}}</a></p>
         <h1 id="hero-headline" class="feat-headline center" itemprop="headline">Securing the future of banking<br />with agentic AI<br />and post-quantum cryptography.</h1>
-        <p class="feat-sub center">Built for the edge. Architected for uncompromising resilience. Powering the next generation of global payments.</p>
+        <p class="feat-sub center">Open-source payments, post-quantum security, and applied AI for financial services.</p>
         <div class="feat-cta">
           <a class="pill" href="/articles/index.html">Read latest research</a>
           <a class="pill ghost" href="/contact/index.html">Get in touch</a>

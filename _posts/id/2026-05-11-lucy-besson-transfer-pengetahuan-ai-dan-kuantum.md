@@ -5,12 +5,12 @@ description: "Dua belas tahun berlalu, Lucy karya Besson terasa seperti eksperim
 date: "May 11, 2026"
 language: "id-ID"
 locale: "id_ID"
-banner: "https://cloudcdn.pro/stocks/images/lucy-knowledge-transfer-banner.webp"
+banner: "https://cloudcdn.pro/stocks/images/harald-krichel-scarlett-johansson-8531.webp"
 banner_alt: "Visualisasi abstrak jaringan saraf dan larik atom kuantum. Sebuah komputer hitam terbentuk dari partikel-partikel yang tersusun ulang"
 keywords: "film Lucy 2014, Luc Besson, transfer pengetahuan, large language models, neutral atom qubits, whole-brain emulation, substrate independence, filosofi AI, quantum computing, persistensi pengetahuan"
 ---
 
-![Abstract visualisation of neural networks and quantum atomic arrays. A black computer forming from rearranging particles](https://cloudcdn.pro/stocks/images/lucy-knowledge-transfer-banner.webp).class=\"img-fluid clearfix\"
+![Abstract visualisation of neural networks and quantum atomic arrays. A black computer forming from rearranging particles](https://cloudcdn.pro/stocks/images/harald-krichel-scarlett-johansson-8531.webp).class=\"img-fluid clearfix\"
 
 > **TL;DR.** Twelve years on, Besson's Lucy reads like a thought experiment about knowledge migrating from flesh to machine — quietly validated by LLMs and qubits.
 >

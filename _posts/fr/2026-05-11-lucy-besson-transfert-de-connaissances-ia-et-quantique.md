@@ -5,7 +5,7 @@ description: "Douze ans après sa sortie, Lucy de Luc Besson se lit moins comme 
 date: "May 11, 2026"
 language: "fr"
 locale: "fr_FR"
-banner: "https://cloudcdn.pro/stocks/images/lucy-knowledge-transfer-banner.webp"
+banner: "https://cloudcdn.pro/stocks/images/harald-krichel-scarlett-johansson-8531.webp"
 banner_alt: "Visualisation abstraite de réseaux neuronaux et de réseaux atomiques quantiques. Un ordinateur noir se forme à partir de particules en réarrangement."
 keywords: "Lucy, Luc Besson, transfert de connaissances, IA, LLM, qubits à atomes neutres, émulation cérébrale, Neuralink, Eon Systems, Carboncopies, Fromm, indépendance du support, philosophie de l'IA"
 ---

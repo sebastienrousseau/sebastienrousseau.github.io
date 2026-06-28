@@ -252,7 +252,10 @@ def _render_card(slug: str, year: int, month: int, day: int, fm: dict[str, str])
 
 
 def _collect_top_six() -> list[tuple[str, int, int, int, dict[str, str]]]:
-    """Top 6 by date descending. Returns ``(slug, y, m, d, frontmatter)``."""
+    """Top 3 by date descending. Returns ``(slug, y, m, d, frontmatter)``.
+
+    The home page keeps a single, minimal row of the three newest pieces;
+    the full archive lives at /articles/."""
     rows: list[tuple[str, int, int, int, dict[str, str]]] = []
     for md in POSTS.glob("*.md"):
         m = _DATED_RE.match(md.name)
@@ -266,7 +269,7 @@ def _collect_top_six() -> list[tuple[str, int, int, int, dict[str, str]]]:
             continue
         rows.append((slug, y, mo, d, fm))
     rows.sort(key=lambda r: (r[1], r[2], r[3]), reverse=True)
-    return rows[:6]
+    return rows[:3]
 
 
 def main() -> int:
