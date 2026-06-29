@@ -1,7 +1,4 @@
 ---
-
-# Front Matter (YAML)
-
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "Steel suspension bridge cables under storm light — symbolising redundant fallback rails, cyber recovery and quantum-safe treasury keeping a corporate and investment bank always on under DORA"
 banner_height: "1597"
@@ -14,18 +11,18 @@ copyright: "© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "June 26, 2026"
 description: "Always-on CIB in 2026: cyber recovery vaults, ISO 20022 fallback rails across RTGS, instant and tokenised networks, FHE, QKD and PQC primitives, and quantum-safe treasury SLAs under DORA."
 format-detection: "telephone=no"
-hreflang: "en"
+hreflang: "fr"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
-id: "https://sebastienrousseau.com/2026-06-26-always-on-cib-cyber-recovery-fallback-rails-quantum-safe-treasury-2026"
+id: "https://sebastienrousseau.com/fr/2026-06-26-always-on-cib-cyber-recovery-fallback-rails-quantique-safe-treasury-2026"
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
 image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "cyber recovery, fallback rails, operational resilience, DORA, quantum-safe treasury, contingency, multi-rail, FHE, QKD, PQC, ICT third-party risk, CIB, ISO 20022, RTGS, FedNow, SEPA Instant, RTP, T2, CHAPS, FIPS 203, FIPS 204, RTO, RPO, Basel III, SR 11-7, SM&CR"
-language: "en-GB"
+language: "fr"
 last_reviewed: "2026-06-26"
 layout: "report"
-locale: "en_GB"
+locale: "fr_FR"
 logo_alt: "Logo for Sebastien Rousseau"
 logo_height: "44"
 logo_width: "44"
@@ -33,7 +30,7 @@ logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau
 menu: ""
 measurementID: "G-169G4ET5HQ"
 name: "Sebastien Rousseau"
-permalink: "https://sebastienrousseau.com/2026-06-26-always-on-cib-cyber-recovery-fallback-rails-quantum-safe-treasury-2026"
+permalink: "https://sebastienrousseau.com/fr/2026-06-26-always-on-cib-cyber-recovery-fallback-rails-quantique-safe-treasury-2026"
 rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
@@ -44,13 +41,11 @@ subtitle: "Cyber recovery vaults, ISO 20022 fallback rails across RTGS, instant 
 tags: "cyber recovery, fallback rails, operational resilience, DORA, quantum-safe treasury, contingency, multi-rail, FHE, QKD, PQC, ICT third-party risk, CIB"
 theme-color: "0, 83, 191"
 title: "Always-On CIB: Cyber Recovery, Fallback Rails and Quantum-Safe Treasury"
-url: "https://sebastienrousseau.com/2026-06-26-always-on-cib-cyber-recovery-fallback-rails-quantum-safe-treasury-2026"
+url: "https://sebastienrousseau.com/fr/2026-06-26-always-on-cib-cyber-recovery-fallback-rails-quantique-safe-treasury-2026"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
-
-# RSS - The RSS feed front matter (YAML).
 atom_link: "https://sebastienrousseau.com/2026-06-26-always-on-cib-cyber-recovery-fallback-rails-quantum-safe-treasury-2026/rss.xml"
 category: "Technology"
-docs: https://validator.w3.org/feed/docs/rss2.html
+docs: "https://validator.w3.org/feed/docs/rss2.html"
 generator: "Static Site Generator (SSG) (version 0.0.26)"
 item_description: "Always-on CIB in 2026: cyber recovery vaults, ISO 20022 fallback rails across RTGS, instant and tokenised networks, FHE, QKD and PQC primitives, and quantum-safe treasury SLAs under DORA."
 item_guid: "https://sebastienrousseau.com/2026-06-26-always-on-cib-cyber-recovery-fallback-rails-quantum-safe-treasury-2026/rss.xml"
@@ -63,8 +58,6 @@ pub_date: "Fri, 26 Jun 2026 07:07:07 +0000"
 ttl: "60"
 type: "article"
 webmaster: "contact@sebastienrousseau.com"
-
-# Apple - The Apple front matter (YAML).
 apple_mobile_web_app_orientations: "portrait"
 apple_touch_icon_sizes: "192x192"
 apple-mobile-web-app-capable: "yes"
@@ -72,13 +65,7 @@ apple-mobile-web-app-status-bar-inset: "black"
 apple-mobile-web-app-status-bar-style: "black-translucent"
 apple-mobile-web-app-title: "Always-On CIB: Cyber Recovery & Quantum Treasury"
 apple-touch-fullscreen: "yes"
-
-# MS Application - The MS Application front matter (YAML).
-
 msapplication-navbutton-color: "0, 83, 191"
-
-# Twitter Card - The Twitter Card front matter (YAML).
-
 twitter_card: "summary_large_image"
 twitter_creator: "@wwdseb"
 twitter_description: "Always-on CIB in 2026: cyber recovery vaults, ISO 20022 fallback rails across RTGS, instant and tokenised networks, FHE, QKD and PQC primitives, and quantum-safe treasury SLAs under DORA."
@@ -87,10 +74,7 @@ twitter_image_alt: "Logo of Sebastien Rousseau"
 twitter_site: "@wwdseb"
 twitter_title: "Always-On CIB: Cyber Recovery and Quantum-Safe Treasury"
 twitter_url: "https://sebastienrousseau.com/2026-06-26-always-on-cib-cyber-recovery-fallback-rails-quantum-safe-treasury-2026"
-
 excerpt: "Corporate and investment banks now treat cyber recovery, ISO 20022 fallback rails across RTGS, instant and tokenised networks, and quantum-safe treasury controls as one always-on operating model — the board-grade response to DORA Articles 5 and 6, FHE, QKD and PQC primitives, and ICT third-party concentration risk."
-
-# Humans.txt - The Humans.txt front matter (YAML).
 author_website: "https://sebastienrousseau.com"
 author_twitter: "@wwdseb"
 author_location: "London, UK"
@@ -99,8 +83,11 @@ site_last_updated: "2026-06-26"
 site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 site_software: "Static Site Generator, Rust"
-
 ---
+
+<!-- translation-stub: replace this body in Claude Code -->
+
+> _Translation pending — read the [English original](/2026-06-26-always-on-cib-cyber-recovery-fallback-rails-quantum-safe-treasury-2026/) while we localise._
 
 # Always-On CIB: Cyber Recovery, Fallback Rails and Quantum-Safe Treasury
 
