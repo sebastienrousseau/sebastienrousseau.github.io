@@ -84,54 +84,50 @@ twitter_url: "https://sebastienrousseau.com/2023-10-26-libmake-a-code-generator-
 author_website: "https://sebastienrousseau.com/2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries/index.html"
 author_twitter: "@wwdseb"
 author_location: "London, UK"
-thanks: "Thanks for reading!"
+thanks: "תודה שקראת!"
 site_last_updated: "2023-10-26"
 site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 site_software: "Static Site Generator, Rust"
-excerpt: "LibMake is an open-source Rust CLI tool that generates a complete library scaffold from a single command or a TOML/YAML config file — producing Cargo.toml, a doc-commented src/lib.rs, integration test and benchmark harnesses, and a GitHub Actions CI workflow covering stable/beta/nightly Rust, clippy, rustfmt, and cargo-audit."
+excerpt: "LibMake הוא כלי CLI בקוד פתוח ל-Rust שמייצר שלד ספרייה מלא מפקודה אחת או מקובץ תצורה TOML/YAML — כולל Cargo.toml, קובץ src/lib.rs עם תיעוד, בדיקות אינטגרציה, benchmarks ו-workflow של GitHub Actions עבור stable/beta/nightly Rust, clippy, rustfmt ו-cargo-audit."
 last_reviewed: "2026-05-24"
 ---
 
-<!-- translation-stub: replace this body in Claude Code -->
-
-> _Translation pending — read the [English original](/2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries/) while we localise._
-
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
-<p class="post-lead-tldr"><strong>TL;DR.</strong> <a href="https://github.com/sebastienrousseau/libmake">LibMake</a> is an open-source Rust CLI tool (<code>cargo install libmake</code>) that generates a production-ready library scaffold from CLI flags or a versioned config file (TOML, YAML, JSON, or CSV), producing a complete project structure with Cargo.toml, src/lib.rs, tests/, benches/, and a GitHub Actions CI workflow in a single invocation.</p>
-<p class="post-lead-heading"><strong>Key takeaways</strong></p>
+<aside class="post-lead" aria-label="תקציר המאמר">
+<p class="post-lead-tldr"><strong>תקציר.</strong> <a href="https://github.com/sebastienrousseau/libmake">LibMake</a> הוא כלי CLI בקוד פתוח ל-Rust (<code>cargo install libmake</code>) שמייצר שלד ספרייה מוכן לייצור מדגלי CLI או מקובץ תצורה מנוהל גרסאות (TOML, YAML, JSON או CSV), כולל Cargo.toml, src/lib.rs, tests/, benches/ ו-workflow של GitHub Actions בהפעלה אחת.</p>
+<p class="post-lead-heading"><strong>תובנות מרכזיות</strong></p>
 <ul class="post-lead-takeaways">
-  <li><strong>Complete scaffold, not just a Cargo.toml.</strong> LibMake generates src/lib.rs with pre-populated module doc comments and <code>#![doc = include_str!("../README.md")]</code>, an integration test file, a Criterion benchmark harness, CONTRIBUTING.md, and MIT/Apache-2.0 dual-licence files — everything needed to pass <code>cargo test</code> and <code>cargo bench</code> immediately after generation.</li>
-  <li><strong>Config-file mode enables team-level templates.</strong> Committing a <code>libmake.toml</code> to a repository makes scaffold generation reproducible: every developer runs <code>libmake --config libmake.toml</code> and gets identical structure, enforcing conventions without a shared mental checklist.</li>
-  <li><strong>GitHub Actions workflow covers the full Rust CI matrix.</strong> The generated workflow includes separate jobs for testing on stable, beta, and nightly toolchains, clippy linting with <code>-D warnings</code>, rustfmt format checking, and cargo-audit for dependency vulnerability scanning.</li>
-  <li><strong>Tera templates are user-overridable.</strong> LibMake uses the Tera templating engine internally; custom template directories can be provided via the <code>--template</code> flag, so teams with non-standard directory layouts or additional file requirements are not locked into the default output.</li>
+  <li><strong>שלד מלא, לא רק Cargo.toml.</strong> LibMake מייצר src/lib.rs עם הערות תיעוד מוכנות למודול ו-<code>#![doc = include_str!("../README.md")]</code>, קובץ בדיקות אינטגרציה, harness ל-benchmark של Criterion, CONTRIBUTING.md וקובצי רישוי כפולים MIT/Apache-2.0 — כל מה שצריך כדי לעבור <code>cargo test</code> ו-<code>cargo bench</code> מיד אחרי הייצור.</li>
+  <li><strong>מצב קובץ תצורה מאפשר templates ברמת צוות.</strong> שמירת <code>libmake.toml</code> במאגר הופכת את ייצור השלד לשחזור: כל מפתח מריץ <code>libmake --config libmake.toml</code> ומקבל מבנה זהה, עם אכיפת conventions בלי checklist משותף בראש.</li>
+  <li><strong>Workflow של GitHub Actions מכסה את מטריצת Rust CI המלאה.</strong> ה-workflow שנוצר כולל jobs נפרדים לבדיקות על stable, beta ו-nightly toolchains, linting של clippy עם <code>-D warnings</code>, בדיקת פורמט rustfmt ו-cargo-audit לסריקת חולשות בתלויות.</li>
+  <li><strong>Templates של Tera ניתנים להחלפה על ידי המשתמש.</strong> LibMake משתמש פנימית במנוע Tera; ניתן לספק ספריות template מותאמות דרך הדגל <code>--template</code>, כך שצוותים עם מבני תיקיות לא סטנדרטיים או דרישות קבצים נוספות אינם נעולים לפלט ברירת המחדל.</li>
 </ul>
-<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/">RustLogs (RLG): Structured Logging Library for Rust</a>, <a href="https://sebastienrousseau.com/2018-02-15-the-making-of-the-express-transaction-credits-platform/">The Making of the Express Transaction Credits Platform</a>, <a href="https://sebastienrousseau.com/2024-01-15-alien-studio-revolutionising-art-with-ai-photography/">Alien Studio: My Tech-to-Art Journey in Photography</a>.</p>
+<p class="post-lead-related"><strong>קריאה נוספת:</strong> <a href="https://sebastienrousseau.com/2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/">RustLogs (RLG): ספריית logging מובנה ל-Rust</a>, <a href="https://sebastienrousseau.com/2018-02-15-the-making-of-the-express-transaction-credits-platform/">בניית פלטפורמת Express Transaction Credits</a>, <a href="https://sebastienrousseau.com/2024-01-15-alien-studio-revolutionising-art-with-ai-photography/">Alien Studio: המסע שלי מטכנולוגיה לאמנות בצילום</a>.</p>
 </aside>
 <!-- lead-end -->
 
-> **Executive Summary / Key Takeaways**
+> **סיכום מנהלים / תובנות מרכזיות**
 >
-> - **[LibMake ⧉][00]** is an open-source Rust CLI tool installed via `cargo install libmake` that generates a complete library scaffold from CLI flags or a config file (TOML, YAML, JSON, or CSV), with output covering Cargo.toml, source, tests, benchmarks, documentation, and CI in one invocation.
-> - **The generated project follows Rust API Guidelines** conventions: module-level and item-level doc comments in src/lib.rs, `#![deny(missing_docs)]` in the crate root, and a README wired to the crate documentation via `#![doc = include_str!("../README.md")]`.
-> - **Config-file mode** (`--config libmake.toml`) allows teams to commit a single file that fully specifies their library template — author, licence, categories, Rust edition, MSRV, repository URL — making scaffold generation repeatable and diffable in Git.
-> - **The GitHub Actions workflow** generated by LibMake tests on stable, beta, and nightly Rust toolchains, enforces `clippy -D warnings`, checks `rustfmt`, and runs `cargo-audit` for known CVEs in the dependency tree.
-> - **Tera templates** power the code generation: LibMake ships with a default template set but accepts a custom template directory via `--template`, so non-standard project layouts and additional generated files are supported without forking the tool.
+> - **[LibMake ⧉][00]** הוא כלי CLI בקוד פתוח ל-Rust, המותקן באמצעות `cargo install libmake`, ומייצר שלד ספרייה מלא מדגלי CLI או מקובץ תצורה (TOML, YAML, JSON או CSV), כולל Cargo.toml, source, tests, benchmarks, documentation ו-CI בהפעלה אחת.
+> - **הפרויקט שנוצר פועל לפי conventions של Rust API Guidelines**: הערות תיעוד ברמת מודול וברמת פריט ב-src/lib.rs, `#![deny(missing_docs)]` בשורש ה-crate, ו-README המחובר לתיעוד ה-crate באמצעות `#![doc = include_str!("../README.md")]`.
+> - **מצב קובץ תצורה** (`--config libmake.toml`) מאפשר לצוותים לשמור קובץ אחד שמגדיר במלואו את template הספרייה — מחבר, רישיון, קטגוריות, Rust edition, MSRV וכתובת repository — כך שייצור השלד ניתן לשחזור ולהשוואה ב-Git.
+> - **ה-workflow של GitHub Actions** שנוצר על ידי LibMake מריץ בדיקות על stable, beta ו-nightly Rust toolchains, אוכף `clippy -D warnings`, בודק `rustfmt` ומריץ `cargo-audit` עבור CVEs ידועים בעץ התלויות.
+> - **Templates של Tera** מניעים את ייצור הקוד: LibMake מגיע עם סט templates ברירת מחדל, אך מקבל ספריית templates מותאמת דרך `--template`, כך שמבני פרויקט לא סטנדרטיים וקבצים נוספים נתמכים בלי לפצל את הכלי.
 
-[**LibMake ⧉**][00] is an open-source Rust CLI and library that generates a complete library project scaffold from a single invocation. It targets the gap between `cargo new --lib` (which creates only a minimal Cargo.toml and src/lib.rs) and a production-ready library setup (which requires manually adding doc comments, CI, test harnesses, benchmark structure, CONTRIBUTING.md, and licence files).
+[**LibMake ⧉**][00] הוא CLI וספרייה בקוד פתוח ל-Rust שמייצרים שלד מלא לפרויקט ספרייה בהפעלה אחת. הוא מכוון לפער שבין `cargo new --lib`, שיוצר רק Cargo.toml ו-src/lib.rs מינימליים, לבין setup מוכן לייצור של ספרייה, שמחייב הוספה ידנית של הערות תיעוד, CI, test harnesses, מבנה benchmarks, CONTRIBUTING.md וקובצי רישוי.
 
-This article describes what LibMake generates, how the config-file and CLI modes work, the generated CI structure, and the templating system.
+המאמר מתאר מה LibMake מייצר, כיצד עובדים מצבי קובץ התצורה וה-CLI, מהו מבנה ה-CI שנוצר וכיצד פועלת מערכת ה-templating.
 
-## Installation and Basic Usage
+## התקנה ושימוש בסיסי
 
-LibMake is published on [crates.io](https://crates.io/crates/libmake) and installed via Cargo:
+LibMake מפורסם ב-[crates.io](https://crates.io/crates/libmake) ומותקן באמצעות Cargo:
 
 ```bash
 cargo install libmake
 ```
 
-The minimal CLI invocation generates a named library in the current directory:
+הפעלת CLI מינימלית מייצרת ספרייה בשם שנבחר בתיקייה הנוכחית:
 
 ```bash
 libmake \
@@ -147,11 +143,11 @@ libmake \
   --output "my_library"
 ```
 
-Additional optional flags include `--categories`, `--keywords`, `--homepage`, `--documentation`, `--readme`, and `--build`.
+דגלים אופציונליים נוספים כוללים `--categories`, `--keywords`, `--homepage`, `--documentation`, `--readme` ו-`--build`.
 
-## Config-File Mode
+## מצב קובץ תצורה
 
-For team use, all CLI flags can be expressed in a TOML config file:
+לשימוש צוותי, ניתן לבטא את כל דגלי ה-CLI בקובץ תצורה TOML:
 
 ```toml
 # libmake.toml
@@ -169,17 +165,17 @@ categories  = ["algorithms", "data-structures"]
 keywords    = ["rust", "library"]
 ```
 
-Invoked as:
+מפעילים כך:
 
 ```bash
 libmake --config libmake.toml
 ```
 
-LibMake also accepts JSON, YAML, and CSV config formats via `--config-json`, `--config-yaml`, and `--config-csv` flags respectively. Committing `libmake.toml` to the repository root gives every contributor a reproducible scaffold baseline, and changes to the template configuration are visible in Git diffs.
+LibMake מקבל גם תצורות JSON, YAML ו-CSV דרך הדגלים `--config-json`, `--config-yaml` ו-`--config-csv` בהתאמה. שמירת `libmake.toml` בשורש המאגר נותנת לכל תורם baseline שחזורי לשלד, ושינויים בתצורת ה-template נראים ב-diffs של Git.
 
-## Generated Project Structure
+## מבנה הפרויקט שנוצר
 
-A LibMake invocation creates the following layout:
+הפעלת LibMake יוצרת את המבנה הבא:
 
 ```
 my_library/
@@ -199,15 +195,15 @@ my_library/
 └── README.md
 ```
 
-The generated `src/lib.rs` includes a crate-level doc comment, `#![deny(missing_docs)]`, `#![doc = include_str!("../README.md")]` to pull the README into rustdoc, and a stub public type with an associated doc comment. These choices follow the Rust API Guidelines requirement that all public items have documentation.
+הקובץ `src/lib.rs` שנוצר כולל הערת תיעוד ברמת ה-crate, `#![deny(missing_docs)]`, את `#![doc = include_str!("../README.md")]` כדי למשוך את ה-README לתוך rustdoc, וטיפוס ציבורי stub עם הערת תיעוד משויכת. הבחירות האלה עומדות בדרישה של Rust API Guidelines שכל הפריטים הציבוריים יתועדו.
 
-The generated `benches/lib_benchmarks.rs` uses [Criterion.rs](https://github.com/bheisler/criterion.rs) and requires adding `criterion` as a dev-dependency, which LibMake inserts into `Cargo.toml` automatically.
+הקובץ `benches/lib_benchmarks.rs` שנוצר משתמש ב-[Criterion.rs](https://github.com/bheisler/criterion.rs) ודורש הוספת `criterion` כ-dev-dependency, ש-LibMake מכניס אוטומטית ל-`Cargo.toml`.
 
-## GitHub Actions CI Workflow
+## Workflow של GitHub Actions CI
 
-The generated `.github/workflows/release.yml` runs five jobs on every push and pull request:
+הקובץ `.github/workflows/release.yml` שנוצר מריץ חמישה jobs בכל push ו-pull request:
 
-| Job | Toolchain | What it checks |
+| Job | Toolchain | מה נבדק |
 |---|---|---|
 | `test` | stable, beta, nightly (matrix) | `cargo test --all-features` |
 | `clippy` | stable | `cargo clippy -- -D warnings` |
@@ -215,11 +211,11 @@ The generated `.github/workflows/release.yml` runs five jobs on every push and p
 | `audit` | stable | `cargo audit` (cargo-audit installed in job) |
 | `doc` | stable | `cargo doc --no-deps` (fails on missing docs) |
 
-The nightly job has `continue-on-error: true` so a nightly regression does not block merges, while still surfacing the failure in the workflow run.
+ל-job של nightly יש `continue-on-error: true`, כך שרגרסיה ב-nightly לא חוסמת merges, אך עדיין מציפה את הכשל בהרצת ה-workflow.
 
-## Templating with Tera
+## Templating עם Tera
 
-LibMake uses the [Tera](https://keats.github.io/tera/) template engine — a Jinja2-like syntax for Rust — to render all generated files. Each template receives the full config struct as context:
+LibMake משתמש במנוע ה-template [Tera](https://keats.github.io/tera/) — תחביר דמוי Jinja2 ל-Rust — כדי לרנדר את כל הקבצים שנוצרים. כל template מקבל את מבנה התצורה המלא כ-context:
 
 ```
 {{ name }}            → my_library
@@ -228,29 +224,29 @@ LibMake uses the [Tera](https://keats.github.io/tera/) template engine — a Jin
 {{ description }}     → A Rust library for doing useful things
 ```
 
-Custom template directories are supported via the `--template` flag:
+ספריות template מותאמות נתמכות דרך הדגל `--template`:
 
 ```bash
 libmake --config libmake.toml --template ./my_templates/
 ```
 
-The custom directory must mirror the default template structure (the same filenames). Any file present in the custom directory overrides the corresponding built-in template; files not present in the custom directory fall back to the built-in version. This allows partial overrides — for example, replacing only the CI workflow template while keeping the default src/lib.rs and Cargo.toml templates.
+הספרייה המותאמת חייבת לשקף את מבנה ה-template של ברירת המחדל, עם אותם שמות קבצים. כל קובץ שנמצא בספרייה המותאמת מחליף את ה-template המובנה המקביל; קבצים שאינם קיימים בספרייה המותאמת נופלים חזרה לגרסה המובנית. כך מתאפשרות החלפות חלקיות — למשל החלפת template ה-CI workflow בלבד תוך שמירה על templates ברירת המחדל של src/lib.rs ו-Cargo.toml.
 
-## Frequently Asked Questions
+## שאלות נפוצות
 
-**How does LibMake differ from `cargo new --lib`?**
-`cargo new --lib` creates a minimal project with only `Cargo.toml` and `src/lib.rs` (containing a single `#[cfg(test)]` block). LibMake generates the full structure — integration tests, benchmarks, CI, CONTRIBUTING.md, dual-licence files, and a properly documented src/lib.rs — configured with the project's actual metadata rather than placeholders.
+**במה LibMake שונה מ-`cargo new --lib`?**
+`cargo new --lib` יוצר פרויקט מינימלי עם `Cargo.toml` ו-`src/lib.rs` בלבד, הכולל בלוק `#[cfg(test)]` יחיד. LibMake מייצר את המבנה המלא — בדיקות אינטגרציה, benchmarks, CI, CONTRIBUTING.md, קובצי רישוי כפולים ו-src/lib.rs מתועד כראוי — ומגדיר אותו עם המטא-דאטה האמיתי של הפרויקט במקום placeholders.
 
-**Can LibMake be used with an existing Cargo workspace?**
-LibMake generates a standalone crate directory. To add the generated crate to an existing workspace, add the output path to the workspace `members` array in the root `Cargo.toml`. LibMake does not modify existing workspace files.
+**האם ניתן להשתמש ב-LibMake עם Cargo workspace קיים?**
+LibMake מייצר תיקיית crate עצמאית. כדי להוסיף את ה-crate שנוצר ל-workspace קיים, הוסף את נתיב הפלט למערך `members` של ה-workspace ב-`Cargo.toml` שבשורש. LibMake אינו משנה קובצי workspace קיימים.
 
-**Can I update the scaffold templates after initial generation?**
-LibMake generates files once; it does not track or update previously generated projects. To adopt updated templates, the recommended approach is to re-run LibMake into a temporary directory and diff the result against the existing crate, applying desired changes selectively.
+**האם אפשר לעדכן את templates של השלד אחרי הייצור הראשוני?**
+LibMake מייצר קבצים פעם אחת; הוא אינו עוקב אחרי פרויקטים שנוצרו ואינו מעדכן אותם. כדי לאמץ templates מעודכנים, הגישה המומלצת היא להריץ מחדש את LibMake לתיקייה זמנית ולהשוות את התוצאה מול ה-crate הקיים, תוך יישום סלקטיבי של השינויים הרצויים.
 
-**What Rust editions and MSRV values does LibMake support?**
-LibMake accepts any string for `--edition` and `--rustversion` and writes the values directly to `Cargo.toml`. It does not validate whether the specified edition or MSRV is a real Rust version, so callers are responsible for supplying correct values.
+**אילו Rust editions וערכי MSRV נתמכים ב-LibMake?**
+LibMake מקבל כל מחרוזת עבור `--edition` ו-`--rustversion` וכותב את הערכים ישירות ל-`Cargo.toml`. הוא אינו מאמת אם ה-edition או ה-MSRV שצוינו הם גרסת Rust אמיתית, ולכן האחריות לספק ערכים נכונים היא על מי שמפעיל את הכלי.
 
-## References
+## מקורות
 
 1. Rousseau, S. *LibMake — A code generator to reduce repetitive tasks and build high-quality Rust libraries*. GitHub, 2023. https://github.com/sebastienrousseau/libmake
 2. The Rust Programming Language. *Rust API Guidelines*. GitHub, 2023. https://rust-lang.github.io/api-guidelines/
@@ -260,14 +256,14 @@ LibMake accepts any string for `--edition` and `--rustversion` and writes the va
 [00]: https://github.com/sebastienrousseau/libmake "LibMake — Rust library scaffold generator"
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
-<p class="post-reviewed">Last reviewed <time datetime="2026-05-24">2026-05-24</time>.</p>
+<aside class="author-card" aria-label="על המחבר"><img alt="דיוקן של Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">טכנולוג בנקאות בכיר הכותב על AI יישומי, מעבר ל-ISO 20022, קריפטוגרפיה פוסט-קוונטית לשירותים פיננסיים והטרנספורמציה המבנית של תשלומים סיטונאיים.</span><span class="author-credentials">יותר מ-20 שנה ב-HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA ו-Virgin Group. <a href="/about/index.html">פרופיל מלא</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<p class="post-reviewed">נסקר לאחרונה בתאריך <time datetime="2026-05-24">2026-05-24</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
-<h2 id="related-heading" class="related-heading">Related reading</h2>
+<h2 id="related-heading" class="related-heading">קריאה נוספת</h2>
 <div class="related-grid">
-<article class="related-card"><a href="https://sebastienrousseau.com/2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/" class="related-media" aria-label="RustLogs (RLG): Structured Logging Library for Rust" tabindex="-1"><img alt="Banner for RustLogs (RLG)" src="https://cloudcdn.pro/stocks/images/rustlogs.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/">RustLogs (RLG): Structured Logging Library for Rust</a></h3><p><time datetime="2024-03-08">2024-03-08</time></p></footer></article>
-<article class="related-card"><a href="https://sebastienrousseau.com/2018-02-15-the-making-of-the-express-transaction-credits-platform/" class="related-media" aria-label="The Making of the Express Transaction Credits Platform" tabindex="-1"><img alt="Giant white pillars" src="https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2018-02-15-the-making-of-the-express-transaction-credits-platform/">The Making of the Express Transaction Credits Platform</a></h3><p><time datetime="2018-02-15">2018-02-15</time></p></footer></article>
-<article class="related-card"><a href="https://sebastienrousseau.com/2024-01-15-alien-studio-revolutionising-art-with-ai-photography/" class="related-media" aria-label="Alien Studio: My Tech-to-Art Journey in Photography" tabindex="-1"><img alt="Sunset's muse, a serene glance; beauty in stillness" src="https://cloudcdn.pro/clients/alienstudio/v1/collections/radiance/radiance-08.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2024-01-15-alien-studio-revolutionising-art-with-ai-photography/">Alien Studio: My Tech-to-Art Journey in Photography</a></h3><p><time datetime="2024-01-15">2024-01-15</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/" class="related-media" aria-label="RustLogs (RLG): ספריית logging מובנה ל-Rust" tabindex="-1"><img alt="באנר עבור RustLogs (RLG)" src="https://cloudcdn.pro/stocks/images/rustlogs.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/">RustLogs (RLG): ספריית logging מובנה ל-Rust</a></h3><p><time datetime="2024-03-08">2024-03-08</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2018-02-15-the-making-of-the-express-transaction-credits-platform/" class="related-media" aria-label="בניית פלטפורמת Express Transaction Credits" tabindex="-1"><img alt="עמודים לבנים ענקיים" src="https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2018-02-15-the-making-of-the-express-transaction-credits-platform/">בניית פלטפורמת Express Transaction Credits</a></h3><p><time datetime="2018-02-15">2018-02-15</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2024-01-15-alien-studio-revolutionising-art-with-ai-photography/" class="related-media" aria-label="Alien Studio: המסע שלי מטכנולוגיה לאמנות בצילום" tabindex="-1"><img alt="מוזת שקיעה, מבט שליו; יופי בדממה" src="https://cloudcdn.pro/clients/alienstudio/v1/collections/radiance/radiance-08.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2024-01-15-alien-studio-revolutionising-art-with-ai-photography/">Alien Studio: המסע שלי מטכנולוגיה לאמנות בצילום</a></h3><p><time datetime="2024-01-15">2024-01-15</time></p></footer></article>
 </div>
 </aside>
 <!-- enrich-end -->

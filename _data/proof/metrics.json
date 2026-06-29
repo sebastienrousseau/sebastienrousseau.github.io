@@ -1,5 +1,5 @@
 {
-  "$generated_at": "2026-06-29T06:28:12+00:00",
+  "$generated_at": "2026-06-29T14:16:45+00:00",
   "stats": [
     {
       "key": "years_payments",
@@ -11,7 +11,7 @@
     {
       "key": "articles_signed",
       "label": "Signed, dated articles published",
-      "value": 87,
+      "value": 88,
       "format": "plain",
       "source": "_posts/ — every article Sigstore-signed"
     },

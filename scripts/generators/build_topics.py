@@ -177,6 +177,7 @@ TOPICS: dict[str, dict[str, object]] = {
             "lens that turns autonomous workflows into supervisory-ready evidence."
         ),
         "slugs": [
+            "2026-06-30-agentic-ai-index-banks-measuring-autonomy-2026",
             "2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026",
             "2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026",
             "2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026",
@@ -278,6 +279,7 @@ TOPICS: dict[str, dict[str, object]] = {
             "AI inside Tier-1 banks."
         ),
         "slugs": [
+            "2026-06-30-agentic-ai-index-banks-measuring-autonomy-2026",
             "2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026",
             "2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026",
             "2024-02-13-eus-ai-act-shaping-the-future-of-global-ai-regulation",

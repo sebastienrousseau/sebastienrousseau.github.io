@@ -1,6 +1,6 @@
 ---
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
-banner_alt: "Trading-floor light over a modern bank atrium — symbolising agentic treasury co-pilots rebalancing intraday liquidity inside policy bands, under SR 11-7 and EU AI Act controls"
+banner_alt: "Lumière de salle de marché dans un atrium bancaire moderne, symbolisant des copilotes de trésorerie agentique qui rééquilibrent la liquidité intrajournalière dans des bandes de politique, sous contrôles SR 11-7 et AI Act européen"
 banner_height: "1597"
 banner_width: "2584"
 banner: "https://cloudcdn.pro/stocks/images/sebastien-rousseau-20260617-ai-7.webp"
@@ -9,12 +9,12 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "June 27, 2026"
-description: "Agentic treasury co-pilots are moving from pilots to production in 2026 — ISO 20022 data plus tool-calls, with SR 11-7, DORA, and EU AI Act controls around them."
+description: "Les copilotes de trésorerie agentique passent en production en 2026 : données ISO 20022, appels d'outils, contrôles SR 11-7, DORA et AI Act européen."
 format-detection: "telephone=no"
 hreflang: "fr"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 id: "https://sebastienrousseau.com/fr/2026-06-27-agentique-treasury-co-pilots-autonomous-treasury-production-2026"
-image_alt: "Black and White Portrait of Sebastien Rousseau"
+image_alt: "Portrait en noir et blanc de Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
 image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
@@ -23,7 +23,7 @@ language: "fr"
 last_reviewed: "2026-06-27"
 layout: "report"
 locale: "fr_FR"
-logo_alt: "Logo for Sebastien Rousseau"
+logo_alt: "Logo de Sebastien Rousseau"
 logo_height: "44"
 logo_width: "44"
 logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -35,23 +35,23 @@ rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
 schema: "FAQPage, Article"
-seo_title: "Agentic Treasury 2026: Co-Pilots in Production"
+seo_title: "Trésorerie agentique 2026 : copilotes en production"
 short_name: "sebastienrousseau"
-subtitle: "From the Autonomous Treasury Index to production-grade co-pilots — how CIB treasuries operationalise agentic AI on ISO 20022 data, MCP tool-calls, and SR 11-7-shaped governance in 2026."
-tags: "agentic AI, treasury co-pilots, autonomous treasury, cash forecasting, liquidity, agentic banking, governance, SR 11-7, DORA, EU AI Act, CIB, ISO 20022, MCP"
+subtitle: "De l'Autonomous Treasury Index aux copilotes prêts pour la production : comment les trésoreries CIB opérationnalisent l'IA agentique sur données ISO 20022, appels d'outils MCP et gouvernance structurée par SR 11-7 en 2026."
+tags: "IA agentique, copilotes de trésorerie, trésorerie autonome, prévision de trésorerie, liquidité, banque agentique, gouvernance, SR 11-7, DORA, AI Act européen, CIB, ISO 20022, MCP"
 theme-color: "0, 83, 191"
-title: "Agentic Treasury 2026: From Autonomous Treasury Index to Production-Grade Co-Pilots"
+title: "Trésorerie agentique 2026 : de l'Autonomous Treasury Index aux copilotes de production"
 url: "https://sebastienrousseau.com/fr/2026-06-27-agentique-treasury-co-pilots-autonomous-treasury-production-2026"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 atom_link: "https://sebastienrousseau.com/2026-06-27-agentic-treasury-co-pilots-autonomous-treasury-production-2026/rss.xml"
 category: "Technology"
 docs: "https://validator.w3.org/feed/docs/rss2.html"
 generator: "Static Site Generator (SSG) (version 0.0.26)"
-item_description: "Agentic treasury co-pilots are moving from pilots to production in 2026 — ISO 20022 data plus tool-calls, with SR 11-7, DORA, and EU AI Act controls around them."
+item_description: "Les copilotes de trésorerie agentique passent en production en 2026 : données ISO 20022, appels d'outils, contrôles SR 11-7, DORA et AI Act européen."
 item_guid: "https://sebastienrousseau.com/2026-06-27-agentic-treasury-co-pilots-autonomous-treasury-production-2026/rss.xml"
 item_link: "https://sebastienrousseau.com/2026-06-27-agentic-treasury-co-pilots-autonomous-treasury-production-2026/rss.xml"
 item_pub_date: "Sat, 27 Jun 2026 07:07:07 +0000"
-item_title: "Agentic Treasury 2026: From Autonomous Treasury Index to Production-Grade Co-Pilots"
+item_title: "Trésorerie agentique 2026 : de l'Autonomous Treasury Index aux copilotes de production"
 last_build_date: "Sat, 27 Jun 2026 06:06:06 +0000"
 managing_editor: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 pub_date: "Sat, 27 Jun 2026 07:07:07 +0000"
@@ -63,113 +63,109 @@ apple_touch_icon_sizes: "192x192"
 apple-mobile-web-app-capable: "yes"
 apple-mobile-web-app-status-bar-inset: "black"
 apple-mobile-web-app-status-bar-style: "black-translucent"
-apple-mobile-web-app-title: "Agentic Treasury 2026: Co-Pilots in Production"
+apple-mobile-web-app-title: "Trésorerie agentique 2026 : copilotes en production"
 apple-touch-fullscreen: "yes"
 msapplication-navbutton-color: "0, 83, 191"
 twitter_card: "summary_large_image"
 twitter_creator: "@wwdseb"
-twitter_description: "Agentic treasury co-pilots are moving from pilots to production in 2026 — ISO 20022 data plus tool-calls, with SR 11-7, DORA, and EU AI Act controls around them."
+twitter_description: "Les copilotes de trésorerie agentique passent en production en 2026 : données ISO 20022, appels d'outils, contrôles SR 11-7, DORA et AI Act européen."
 twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
-twitter_image_alt: "Logo of Sebastien Rousseau"
+twitter_image_alt: "Logo de Sebastien Rousseau"
 twitter_site: "@wwdseb"
-twitter_title: "Agentic Treasury 2026: Co-Pilots in Production"
+twitter_title: "Trésorerie agentique 2026 : copilotes en production"
 twitter_url: "https://sebastienrousseau.com/2026-06-27-agentic-treasury-co-pilots-autonomous-treasury-production-2026"
-excerpt: "Agentic treasury co-pilots are moving from controlled pilots into production in 2026. The pattern is consistent across CIB treasuries: agents read ISO 20022 cash data, call bounded tools, and rebalance liquidity inside policy bands — with SR 11-7, DORA, and EU AI Act controls wrapped around them."
+excerpt: "Les copilotes de trésorerie agentique passent des pilotes contrôlés à la production en 2026. Dans les trésoreries CIB, les agents lisent les données ISO 20022, appellent des outils bornés et rééquilibrent la liquidité dans des bandes de politique, avec SR 11-7, DORA et l'AI Act européen en garde-fous."
 author_website: "https://sebastienrousseau.com"
 author_twitter: "@wwdseb"
 author_location: "London, UK"
-thanks: "Thanks for reading!"
+thanks: "Merci de votre lecture !"
 site_last_updated: "2026-06-27"
 site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 site_software: "Static Site Generator, Rust"
 ---
 
-<!-- translation-stub: replace this body in Claude Code -->
-
-> _Translation pending — read the [English original](/2026-06-27-agentic-treasury-co-pilots-autonomous-treasury-production-2026/) while we localise._
-
-# Agentic Treasury 2026: From Autonomous Treasury Index to Production-Grade Co-Pilots
+# Trésorerie agentique 2026 : de l'Autonomous Treasury Index aux copilotes de production
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
-<p class="post-lead-tldr"><strong>TL;DR.</strong> Agentic treasury co-pilots are moving from controlled pilots into production in 2026. The pattern is consistent across CIB treasuries: agents read ISO 20022 cash data, call bounded tools, and rebalance liquidity inside policy bands — with SR 11-7, DORA, and EU AI Act controls wrapped around them.</p>
-<p class="post-lead-heading"><strong>Key takeaways</strong></p>
+<aside class="post-lead" aria-label="Résumé de l'article">
+<p class="post-lead-tldr"><strong>TL;DR.</strong> Les copilotes de trésorerie agentique passent des pilotes contrôlés à la production en 2026. Le schéma est stable dans les trésoreries CIB : les agents lisent les données de trésorerie ISO 20022, appellent des outils bornés et rééquilibrent la liquidité dans des bandes de politique, avec des contrôles SR 11-7, DORA et AI Act européen autour d'eux.</p>
+<p class="post-lead-heading"><strong>Points clés</strong></p>
 <ul class="post-lead-takeaways">
-  <li><strong>Production pattern.</strong> Co-pilots run as bounded MCP tool-callers on ISO 20022 data, with humans approving anything that touches RTGS settlement.</li>
-  <li><strong>Measured impact.</strong> CIB treasuries report 30-50% manual-workload reduction on cash positioning, forecasting, and exception handling.</li>
-  <li><strong>Governance is the moat.</strong> SR 11-7 model risk, DORA Article 5 board accountability, and EU AI Act high-risk classification shape the control plane.</li>
-  <li><strong>Part II.</strong> This piece sits downstream of the Autonomous Treasury Index — index defines the destination, co-pilots are the production unit.</li>
+  <li><strong>Schéma de production.</strong> Les copilotes fonctionnent comme des appelants d'outils MCP bornés sur données ISO 20022, avec validation humaine pour tout ce qui touche au règlement RTGS.</li>
+  <li><strong>Impact mesuré.</strong> Les trésoreries CIB rapportent 30 à 50 % de réduction de la charge manuelle sur le positionnement de trésorerie, la prévision et le traitement des exceptions.</li>
+  <li><strong>La gouvernance fait le fossé.</strong> Le risque de modèle SR 11-7, la responsabilité du conseil au titre de l'article 5 de DORA et la classification à haut risque de l'AI Act européen structurent le plan de contrôle.</li>
+  <li><strong>Partie II.</strong> Cet article prolonge l'Autonomous Treasury Index : l'indice définit la destination, les copilotes sont l'unité de production.</li>
 </ul>
-<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026">The Autonomous Treasury Index: Programmable Liquidity and Tokenised Deposits in 2026</a>, <a href="https://sebastienrousseau.com/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026">The Agentic AI Index for Banks in 2026: Autonomy, Governance, and Auditability</a>.</p>
+<p class="post-lead-related"><strong>À lire aussi :</strong> <a href="https://sebastienrousseau.com/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026">L'Autonomous Treasury Index : liquidité programmable et dépôts tokenisés en 2026</a>, <a href="https://sebastienrousseau.com/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026">L'Agentic AI Index pour les banques en 2026 : autonomie, gouvernance et auditabilité</a>.</p>
 </aside>
 <!-- lead-end -->
 
-A treasury co-pilot in 2026 is not a chatbot bolted onto a cash position screen. It is a bounded agent that reads ISO 20022 statements, projects intraday liquidity, and proposes — or, inside a tight policy envelope, executes — sweeps, FX hedges, and intraday repo. The pattern is the same across Corporate and Investment Banking (CIB) treasuries: agents continuously rebalance liquidity within policy bands, escalating to a human only when a band would be breached or a counterparty limit is close. Practitioner studies put the manual-workload reduction at [30-50% across cash positioning, forecasting, and exception handling](https://assistents.ai/blogs/ai-agent-use-cases-in-banking-2026 "AI agent use cases in banking — 2026 assessment"), and [Capgemini's 2026 banking outlook](https://www.capgemini.com/insights/research-library/banking-top-trends-2026/ "Capgemini — Top trends in banking 2026") names agentic AI in treasury as one of the few use cases where 2026 spend is producing measurable cost-to-serve compression.
+Un copilote de trésorerie en 2026 n'est pas un chatbot greffé sur un écran de position de cash. C'est un agent borné qui lit les relevés [ISO 20022](/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html), projette la liquidité intrajournalière et propose — ou, dans une enveloppe de politique stricte, exécute — des sweeps, des couvertures de change et du repo intrajournalier. Le schéma est le même dans les trésoreries Corporate and Investment Banking (CIB) : les agents rééquilibrent en continu la liquidité dans des bandes de politique, avec escalade humaine uniquement lorsqu'une bande risque d'être franchie ou qu'une limite de contrepartie approche. Les études de praticiens situent la réduction de charge manuelle à [30-50 % sur le positionnement de trésorerie, la prévision et le traitement des exceptions](https://assistents.ai/blogs/ai-agent-use-cases-in-banking-2026 "Cas d'usage des agents IA dans la banque — évaluation 2026"), et les [perspectives bancaires 2026 de Capgemini](https://www.capgemini.com/insights/research-library/banking-top-trends-2026/ "Capgemini — grandes tendances bancaires 2026") classent l'IA agentique en trésorerie parmi les rares cas d'usage où les dépenses 2026 produisent une compression mesurable du coût de service.
 
-This article is the natural Part II of the [Autonomous Treasury Index](https://sebastienrousseau.com/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/). The index defines the destination — programmable liquidity, tokenised deposits, machine-readable policy. Co-pilots are the production unit that gets a CIB treasury there without breaking SR 11-7, DORA, or the EU AI Act.
+Cet article est la partie II naturelle de l'[Autonomous Treasury Index](https://sebastienrousseau.com/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/). L'indice définit la destination : liquidité programmable, dépôts tokenisés, politiques lisibles par machine. Les copilotes sont l'unité de production qui permet à une trésorerie CIB d'y arriver sans casser SR 11-7, DORA ni l'AI Act européen.
 
-## 01. From experiment to production
+## 01. De l'expérimentation à la production
 
-2024–2025 was treasury pilots. 2026 is treasury production.
+2024-2025 était la période des pilotes de trésorerie. 2026 est celle de la production.
 
-[Forrester's Predictions 2026: Banking and Investing](https://www.forrester.com/report/predictions-2026-banking-and-investing/RES185001 "Forrester — Predictions 2026: Banking and Investing") is direct: in 2026, a majority of Tier-1 banks will move at least one agentic use case from sandbox into a live, measured production environment, and treasury is one of the first three to clear that bar. [Capgemini's banking top-trends 2026 report](https://www.capgemini.com/insights/research-library/banking-top-trends-2026/ "Capgemini — Banking top trends 2026") makes the same call from a different angle — agentic AI investment is moving from horizontal productivity experiments into vertical, function-specific deployments, with corporate treasury, payments operations, and KYC remediation taking most of the new 2026 budget.
+Les [prévisions 2026 de Forrester pour la banque et l'investissement](https://www.forrester.com/report/predictions-2026-banking-and-investing/RES185001 "Forrester — prévisions 2026 pour la banque et l'investissement") sont directes : en 2026, une majorité de banques de rang 1 déplacera au moins un cas d'usage agentique du bac à sable vers un environnement de production vivant et mesuré, et la trésorerie fait partie des trois premières fonctions à franchir ce seuil. Le [rapport Capgemini sur les grandes tendances bancaires 2026](https://www.capgemini.com/insights/research-library/banking-top-trends-2026/ "Capgemini — grandes tendances bancaires 2026") formule le même diagnostic sous un autre angle : l'investissement dans l'IA agentique quitte les expérimentations horizontales de productivité pour des déploiements verticaux, spécifiques à une fonction, avec la trésorerie d'entreprise, les opérations de paiement et la remédiation KYC en tête des nouveaux budgets 2026.
 
-What changed? Three things.
+Qu'est-ce qui a changé ? Trois choses.
 
-First, the data layer. ISO 20022 migration completed for most major currencies in November 2025, so cash and payments data arrives in a structured form an agent can reason over without a brittle screen-scrape layer.
+D'abord, la couche de données. La migration ISO 20022 s'est achevée pour la plupart des grandes devises en novembre 2025 ; les données de trésorerie et de paiement arrivent donc sous une forme structurée sur laquelle un agent peut raisonner sans couche fragile de capture d'écran.
 
-Second, the control plane. MCP standardised how agents call tools, and banks now have a defensible answer to the CRO's question: "what can this agent actually do?" The answer is the registry of MCP tools it is bound to, nothing more.
+Ensuite, le plan de contrôle. MCP a standardisé la manière dont les agents appellent les outils, et les banques ont désormais une réponse défendable à la question du CRO : « que peut réellement faire cet agent ? » La réponse tient dans le registre des outils MCP auxquels il est lié, rien de plus.
 
-Third, the regulators stopped being hypothetical. SR 11-7 supervisory guidance was extended to cover non-deterministic models; DORA went live in January 2025; the EU AI Act high-risk classification regime started biting in August 2026.
+Enfin, les régulateurs ont cessé d'être hypothétiques. Les attentes de supervision SR 11-7 ont été étendues aux modèles non déterministes ; DORA est entré en application en janvier 2025 ; le régime de classification à haut risque de l'AI Act européen a commencé à produire ses effets en août 2026.
 
-## 02. The architecture: data + ISO + tool calls
+## 02. L'architecture : données + ISO + appels d'outils
 
-A production treasury co-pilot in 2026 has three layers, in this order.
+Un copilote de trésorerie en production en 2026 a trois couches, dans cet ordre.
 
-**Data.** The agent reads ISO 20022 messages — `camt.052` (intraday statement), `camt.053` (end-of-day), `camt.054` (debit/credit notification) — and pacs.008 customer credit transfers as they flow through the bank's payment rails. The agent reads the structured message and reconciles to the general ledger. [Elire's 2026 treasury AI playbook](https://elire.com/treasurys-ai-playbook-ete-2025/ "Elire — Treasury's AI playbook 2025-2026") frames this as the precondition: if the agent cannot read structured ISO 20022 data, every downstream claim about forecast accuracy is marketing.
+**Données.** L'agent lit les messages ISO 20022 — `camt.052` (relevé intrajournalier), `camt.053` (fin de journée), `camt.054` (notification de débit/crédit) — ainsi que les virements clients pacs.008 lorsqu'ils traversent les rails de paiement de la banque. L'agent lit le message structuré et le rapproche du grand livre. Le [playbook 2026 d'Elire sur l'IA en trésorerie](https://elire.com/treasurys-ai-playbook-ete-2025/ "Elire — playbook IA trésorerie 2025-2026") en fait la condition préalable : si l'agent ne peut pas lire des données ISO 20022 structurées, toute affirmation ultérieure sur la précision des prévisions relève du marketing.
 
-**Reasoning.** A constrained foundation model — typically an internal frontier model with a fine-tuned treasury policy adapter — turns the ISO 20022 reality into a proposed action. The reasoning step never touches a payment rail. It produces a structured tool-call request: "sweep £180m from EUR nostro at BoE-tier counterparty X to GBP RTGS account Y at 14:30 to keep the GBP intraday buffer above the policy floor."
+**Raisonnement.** Un modèle fondation contraint — généralement un modèle frontier interne avec un adaptateur de politique de trésorerie affiné — transforme la réalité ISO 20022 en action proposée. L'étape de raisonnement ne touche jamais un rail de paiement. Elle produit une demande structurée d'appel d'outil : « balayer 180 M£ du nostro EUR chez la contrepartie X de rang BoE vers le compte RTGS GBP Y à 14 h 30 afin de maintenir le coussin intrajournalier GBP au-dessus du plancher de politique ».
 
-**Tool calls.** The agent calls MCP-registered tools. Each tool is a typed, audited function: `propose_sweep`, `simulate_fx_hedge`, `query_limit`, `submit_pacs008_for_human_approval`. The MCP tool is the only path to a real-world effect. SWIFT submission above a configured threshold routes to a human treasurer for sign-off; below threshold, the agent can submit inside a daylight policy band and the action lands in a WORM audit log within the same second.
+**Appels d'outils.** L'agent appelle des outils enregistrés dans MCP. Chaque outil est une fonction typée et auditée : `propose_sweep`, `simulate_fx_hedge`, `query_limit`, `submit_pacs008_for_human_approval`. L'outil MCP est le seul chemin vers un effet réel. Une soumission SWIFT au-dessus d'un seuil configuré est routée vers un trésorier humain pour validation ; en dessous du seuil, l'agent peut soumettre dans une bande de politique diurne et l'action arrive dans un journal d'audit WORM dans la même seconde.
 
-The discipline is that the model never has database write access, never has direct SWIFT credentials, and never reads unstructured screens. The MCP registry is the security boundary, and OPA policies enforce what each agent identity can call.
+La discipline est simple : le modèle n'a jamais d'accès en écriture à la base de données, jamais d'identifiants SWIFT directs et ne lit jamais d'écrans non structurés. Le registre MCP constitue la frontière de sécurité, et les politiques OPA imposent ce que chaque identité d'agent peut appeler.
 
-## 03. Use cases and metrics
+## 03. Cas d'usage et métriques
 
-Three treasury co-pilot use cases are in production at CIB scale in 2026.
+Trois cas d'usage de copilotes de trésorerie sont en production à l'échelle CIB en 2026.
 
-**Cash positioning.** The agent maintains a live intraday cash position across nostro accounts, anticipates in-flight pacs.008 messages, and proposes sweeps to keep buffers inside policy bands. Reported impact: 35-45% reduction in manual reconciliation time, a measured drop in end-of-day buffer over-funding (which improves Net Interest Margin on idle cash), and intraday RTGS overdraft events trending toward zero in pilots that have completed a full quarter.
+**Positionnement de trésorerie.** L'agent maintient une position de trésorerie intrajournalière en direct sur les comptes nostro, anticipe les messages pacs.008 en cours et propose des sweeps pour garder les coussins dans les bandes de politique. Impact rapporté : 35 à 45 % de réduction du temps de rapprochement manuel, baisse mesurée du surfinancement des coussins de fin de journée (ce qui améliore la marge nette d'intérêt sur le cash inactif), et événements de découvert RTGS intrajournalier tendant vers zéro dans les pilotes ayant bouclé un trimestre complet.
 
-**Cash forecasting.** The agent ingests historical ISO 20022 flows, client behavioural signals, and known calendar events (tax dates, dividend dates, bond coupons) and produces a 1-day, 5-day, and 30-day cash forecast with a confidence interval. Mean absolute percentage error on 5-day forecasts has fallen from ~7-9% (regression baseline) to ~3-4% in the better-instrumented CIB treasuries, which materially improves the CFO's funding plan.
+**Prévision de trésorerie.** L'agent ingère les flux ISO 20022 historiques, les signaux comportementaux clients et les événements calendaires connus (dates fiscales, dates de dividendes, coupons obligataires), puis produit une prévision de trésorerie à 1 jour, 5 jours et 30 jours avec intervalle de confiance. L'erreur absolue moyenne en pourcentage sur les prévisions à 5 jours est passée d'environ 7-9 % (base de régression) à environ 3-4 % dans les trésoreries CIB les mieux instrumentées, ce qui améliore matériellement le plan de financement du CFO.
 
-**Exception handling.** The agent triages payment exceptions — failed pacs.008 messages, sanctioned-counterparty hits, mismatched remittance — and proposes the disposition (repair, return, escalate). Triage time has dropped from ~7 minutes (human only) to ~90 seconds (human-in-the-loop), and the human's role moves from data-gathering to decision.
+**Traitement des exceptions.** L'agent trie les exceptions de paiement — messages pacs.008 échoués, alertes de contrepartie sanctionnée, remittance incohérente — et propose le sort à appliquer : réparer, retourner, escalader. Le temps de tri est passé d'environ 7 minutes (humain seul) à environ 90 secondes (human-in-the-loop), et le rôle humain passe de la collecte de données à la décision.
 
-The honest metric is not "tasks automated"; it is "treasurer attention reallocated from data assembly to judgment." That is the number a CFO can defend to the board and a CRO can defend to the regulator.
+La métrique honnête n'est pas « tâches automatisées ». C'est « attention des trésoriers réallouée de l'assemblage de données au jugement ». C'est le chiffre qu'un CFO peut défendre devant le conseil et qu'un CRO peut défendre devant le régulateur.
 
-## 04. Governance, audit, and SR 11-7 fit
+## 04. Gouvernance, audit et alignement SR 11-7
 
-Agentic treasury is a model risk problem before it is a productivity story.
+La trésorerie agentique est un problème de risque de modèle avant d'être une histoire de productivité.
 
-**SR 11-7 and MRM.** Under the Federal Reserve's [SR 11-7 model risk management guidance](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "Federal Reserve — SR 11-7 model risk management"), any model materially affecting financial decisions requires documented development, independent validation, and ongoing performance monitoring. A treasury co-pilot is a model under SR 11-7. MRM owns inventory entry, validation owns challenger testing (does the agent's forecast beat the regression baseline on a held-out window?), and production owns drift monitoring. Banks treating the co-pilot as "just tooling" are mis-classifying the risk.
+**SR 11-7 et MRM.** Selon les [orientations SR 11-7 de la Réserve fédérale sur la gestion du risque de modèle](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "Réserve fédérale — gestion du risque de modèle SR 11-7"), tout modèle ayant un effet matériel sur des décisions financières exige un développement documenté, une validation indépendante et un suivi continu de performance. Un copilote de trésorerie est un modèle au sens de SR 11-7. MRM possède l'inscription à l'inventaire, la validation possède les tests challenger (la prévision de l'agent bat-elle la base de régression sur une fenêtre hors échantillon ?) et la production possède le suivi de dérive. Les banques qui traitent le copilote comme « juste un outil » classent mal le risque.
 
-**DORA.** [Regulation (EU) 2022/2554 (DORA)](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554 "DORA — Digital Operational Resilience Act") Article 5 makes the board ultimately accountable for ICT risk. Treasury co-pilots are ICT systems supporting a critical function — the board must sign off on the risk framework, the third-party provider concentration, and the exit plan. The kill switch (revoke MCP tool access and roll back to human-only operation within minutes) is a DORA control, not a nice-to-have.
+**DORA.** L'[Règlement (UE) 2022/2554 (DORA)](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554 "DORA — règlement sur la résilience opérationnelle numérique") rend, dans son article 5, le conseil ultimement responsable du risque TIC. Les copilotes de trésorerie sont des systèmes TIC soutenant une fonction critique : le conseil doit valider le cadre de risque, la concentration chez les fournisseurs tiers et le plan de sortie. Le kill switch — révoquer l'accès aux outils MCP et revenir à une exploitation uniquement humaine en quelques minutes — est un contrôle DORA, pas un confort.
 
-**EU AI Act.** A treasury co-pilot that influences material financial decisions falls under the high-risk classification, which obliges the bank to maintain a risk-management system, log all operations to OTLP-compliant telemetry, run human oversight, and produce conformity documentation on request. The realistic implementation is full OTLP traces on every agent reasoning step plus WORM-stored tool-call audit logs, and a human reviewer for any action that crosses a policy band.
+**AI Act européen.** Un copilote de trésorerie qui influence des décisions financières matérielles relève de la classification à haut risque. La banque doit donc maintenir un système de gestion des risques, journaliser toutes les opérations dans une télémétrie compatible OTLP, assurer une supervision humaine et produire la documentation de conformité sur demande. La mise en oeuvre réaliste combine des traces OTLP complètes sur chaque étape de raisonnement de l'agent, des journaux d'audit d'appels d'outils stockés en WORM et un réviseur humain pour toute action franchissant une bande de politique.
 
-**Supervisory dialogue.** The Bank of England (BoE) and the Financial Conduct Authority (FCA) have been explicit through 2025-2026 that they expect to see the inventory, the validation evidence, and the kill switch, in that order. The conversation goes well when the CRO can show all three in one room.
+**Dialogue de supervision.** La Bank of England (BoE) et la Financial Conduct Authority (FCA) ont été explicites en 2025-2026 : elles attendent l'inventaire, les preuves de validation et le kill switch, dans cet ordre. La conversation se passe bien lorsque le CRO peut montrer les trois dans la même salle.
 
-The control plane is the moat. A bank that can show its supervisor the MCP registry, the OPA policy file, the WORM audit log, the OTLP trace stream, and the SR 11-7 validation pack — in one sitting — is ready to run treasury co-pilots in production. A bank that cannot is running an unauthorised pilot.
+Le plan de contrôle fait le fossé. Une banque capable de montrer à son superviseur le registre MCP, le fichier de politique OPA, le journal d'audit WORM, le flux de traces OTLP et le dossier de validation SR 11-7 — en une seule séance — est prête à exploiter des copilotes de trésorerie en production. Une banque qui ne le peut pas exécute un pilote non autorisé.
 
 ## Conclusion
 
-The Autonomous Treasury Index defined the destination: programmable liquidity, tokenised deposits, machine-readable policy. This piece is Part II — the production unit that gets a CIB treasury there. The pattern is stable: ISO 20022 data, MCP-bounded tool calls, SR 11-7 governance, DORA accountability, EU AI Act audit. The 2026 treasury co-pilots that survive their first supervisor review have the same shape; the ones that do not are missing the same three things — the MRM validation pack, the kill switch, and the WORM audit log.
+L'Autonomous Treasury Index a défini la destination : liquidité programmable, dépôts tokenisés, politiques lisibles par machine. Cet article est la partie II : l'unité de production qui y amène une trésorerie CIB. Le schéma est stable : données ISO 20022, appels d'outils bornés par MCP, gouvernance SR 11-7, responsabilité DORA, audit AI Act européen. Les copilotes de trésorerie 2026 qui survivent à leur première revue de supervision ont la même forme ; ceux qui échouent manquent les trois mêmes éléments : le dossier de validation MRM, le kill switch et le journal d'audit WORM.
 
-The interesting work in 2026 is not the model. It is the control plane around the model, and the CFO conversation that turns 30-50% manual-workload reduction into a defensible cost-to-serve number.
+Le travail intéressant en 2026 n'est pas le modèle. C'est le plan de contrôle autour du modèle, et la conversation avec le CFO qui transforme 30 à 50 % de réduction de charge manuelle en chiffre défendable de coût de service.
 
-For the upstream context, see the [Autonomous Treasury Index](https://sebastienrousseau.com/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/ "The Autonomous Treasury Index 2026") and, for the governance frame, the [Agentic AI Index for Banks](https://sebastienrousseau.com/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/ "The Agentic AI Index for Banks 2026").
+Pour le contexte amont, voir l'[Autonomous Treasury Index](https://sebastienrousseau.com/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/ "Autonomous Treasury Index 2026") et, pour le cadre de gouvernance, l'[Agentic AI Index pour les banques](https://sebastienrousseau.com/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/ "Agentic AI Index pour les banques 2026").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
-<p class="post-reviewed">Last reviewed <time datetime="2026-06-27">2026-06-27</time>.</p>
+<aside class="author-card" aria-label="À propos de l'auteur"><img alt="Portrait de Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Technologue bancaire senior écrivant sur l'IA appliquée, la migration ISO 20022, la cryptographie post-quantique pour les services financiers et la transformation structurelle des paiements de gros.</span><span class="author-credentials">Plus de 20 ans chez HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA et Virgin Group. <a href="/about/index.html">Profil complet</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<p class="post-reviewed">Dernière révision le <time datetime="2026-06-27">2026-06-27</time>.</p>
 <!-- enrich-end -->
