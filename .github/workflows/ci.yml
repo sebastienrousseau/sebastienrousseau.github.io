@@ -92,7 +92,7 @@ jobs:
         uses: dtolnay/rust-toolchain@stable
 
       - name: Cache cargo registry + git
-        uses: actions/cache@v5
+        uses: actions/cache@v6
         with:
           path: |
             ~/.cargo/registry
@@ -185,7 +185,7 @@ jobs:
       - name: Restore pa11y hash cache (read only)
         # Restore the cache so partition can decide what's already cached.
         # The actual save happens in the `finalise` job after pa11y passes.
-        uses: actions/cache/restore@v5
+        uses: actions/cache/restore@v6
         with:
           path: _data/pa11y-cache.json
           key: pa11y-cache-v1-${{ runner.os }}-${{ github.run_id }}
@@ -427,7 +427,7 @@ jobs:
 
       - name: Save pa11y hash cache
         if: needs.pa11y.result == 'success' || needs.pa11y.result == 'skipped'
-        uses: actions/cache/save@v5
+        uses: actions/cache/save@v6
         with:
           path: _data/pa11y-cache.json
           key: pa11y-cache-v1-${{ runner.os }}-${{ github.run_id }}
