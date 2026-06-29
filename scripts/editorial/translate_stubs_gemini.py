@@ -9,6 +9,7 @@ logic as the Ollama translator.
 from __future__ import annotations
 
 import argparse
+import contextlib
 import http.client
 import json
 import os
@@ -30,8 +31,8 @@ def load_api_key(key_file: Path | None = None) -> str:
         return api_key
     if key_file:
         return key_file.read_text(encoding="utf-8").strip()
-    if key_file := os.environ.get("GEMINI_API_KEY_FILE"):
-        return Path(key_file).read_text(encoding="utf-8").strip()
+    if key_file_env := os.environ.get("GEMINI_API_KEY_FILE"):
+        return Path(key_file_env).read_text(encoding="utf-8").strip()
     return ""
 
 
@@ -71,10 +72,8 @@ def gemini_generate(model: str, prompt: str, timeout: int, api_key: str, retries
             detail = exc.read().decode("utf-8", errors="replace")
             if exc.code == 429 and attempt < retries:
                 retry_seconds = 35
-                try:
+                with contextlib.suppress(KeyError, ValueError, json.JSONDecodeError, TypeError):
                     retry_seconds = int(json.loads(detail)["error"]["details"][-1]["retryDelay"].rstrip("s")) + 2
-                except (KeyError, ValueError, json.JSONDecodeError, TypeError):
-                    pass
                 time.sleep(retry_seconds)
                 continue
             raise RuntimeError(f"Gemini API request failed: HTTP {exc.code}: {detail}") from exc
@@ -89,9 +88,11 @@ def gemini_generate(model: str, prompt: str, timeout: int, api_key: str, retries
     data = json.loads(body)
     parts: list[str] = []
     for candidate in data.get("candidates", []):
-        for part in candidate.get("content", {}).get("parts", []):
-            if text := part.get("text"):
-                parts.append(text)
+        parts.extend(
+            text
+            for part in candidate.get("content", {}).get("parts", [])
+            if (text := part.get("text"))
+        )
     if not parts:
         raise RuntimeError(f"Gemini API returned no text: {body[:1000]}")
     return shared.extract_translation("\n".join(parts))
