@@ -105,21 +105,57 @@ site_software: "Static Site Generator, Rust"
 <header class="newsroom-section-head"><p class="newsroom-kicker">FEATURED</p><h2>Latest story</h2></header>
 
 <article class="newsroom-featured">
-<a class="newsroom-featured-media" href="/2026-06-26-post-quantum-banking-resilience-index-eo-14409-fiduciary-crypto-agility-2026/index.html" title="The Post-Quantum Banking Resilience Index in 2026: EO 14409, Global Deadlines, and Fiduciary Cryptographic Agility">
-<img alt="Abstract quantum-blue light field — symbolising the post-quantum banking resilience index and the migration of financial cryptography to ML-KEM, ML-DSA and SLH-DSA" src="https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA-1920.webp" loading="eager" fetchpriority="high" decoding="async" width="800" height="800" />
+<a class="newsroom-featured-media" href="/2026-06-28-open-source-finos-cloud-native-cib-stack-2026/index.html" title="Open Source, FINOS and the Cloud-Native CIB Stack">
+<img alt="Glass and steel atrium of a corporate-investment-banking trading floor — symbolising the open-source, cloud-native CIB stack now anchored around FINOS, the Linux Foundation and Rust libraries" src="https://cloudcdn.pro/stocks/images/joe-taylor-T3o-XtCfe6U.webp" loading="eager" fetchpriority="high" decoding="async" width="800" height="800" />
 </a>
 <div class="newsroom-featured-body">
-<span class="newsroom-eyebrow">Post-Quantum Cryptography · Pqc · Eo 14409</span>
-<h3><a href="/2026-06-26-post-quantum-banking-resilience-index-eo-14409-fiduciary-crypto-agility-2026/index.html" title="The Post-Quantum Banking Resilience Index in 2026: EO 14409, Global Deadlines, and Fiduciary Cryptographic Agility">The Post-Quantum Banking Resilience Index in 2026: EO 14409, Global Deadlines, and Fiduciary Cryptographic Agility</a></h3>
-<p class="newsroom-meta"><time datetime="2026-06-26">June 26, 2026</time> · Sebastien Rousseau</p>
-<p>Executive Order 14409, ANSSI's hard 2030 deadline and DORA Article 5 have moved post-quantum cryptography from a long-range technical goal to an active regulatory mandate. This index converts securing registries, high-frequency ledgers and SWIFT channels into a board-ready 0–5 scorecard that aligns ML-KEM, ML-DSA and S</p>
-<p><a class="pill ghost" href="/2026-06-26-post-quantum-banking-resilience-index-eo-14409-fiduciary-crypto-agility-2026/index.html" title="The Post-Quantum Banking Resilience Index in 2026: EO 14409, Global Deadlines, and Fiduciary Cryptographic Agility">Read the full story</a></p>
+<span class="newsroom-eyebrow">Open Source Banking · Finos · Linux Foundation</span>
+<h3><a href="/2026-06-28-open-source-finos-cloud-native-cib-stack-2026/index.html" title="Open Source, FINOS and the Cloud-Native CIB Stack">Open Source, FINOS and the Cloud-Native CIB Stack</a></h3>
+<p class="newsroom-meta"><time datetime="2026-06-28">June 28, 2026</time> · Sebastien Rousseau</p>
+<p>Morgan Stanley, JPMorgan and Citi are doubling down on FINOS and the Linux Foundation. A Rust-and-zero-dependency stack — noyalib, http-handle, hsh, KyberLib — shows what the cloud-native CIB stack looks like in 2026 under PSD3, FiDA and DORA.</p>
+<p><a class="pill ghost" href="/2026-06-28-open-source-finos-cloud-native-cib-stack-2026/index.html" title="Open Source, FINOS and the Cloud-Native CIB Stack">Read the full story</a></p>
 </div>
 </article>
 
 <header class="newsroom-section-head"><p class="newsroom-kicker">ARCHIVE</p><h2>All news stories and articles</h2></header>
 
 <div class="newsroom-grid">
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-06-27-agentic-treasury-co-pilots-autonomous-treasury-production-2026/index.html" title="Agentic Treasury 2026: From Autonomous Treasury Index to Production-Grade Co-Pilots">
+<img alt="Trading-floor light over a modern bank atrium — symbolising agentic treasury co-pilots rebalancing intraday liquidity inside policy bands, under SR 11-7 and EU AI Act controls" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau-20260617-ai-7.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Agentic Ai · Treasury Co-Pilots · Autonomous Treasury</span>
+<h3><a href="/2026-06-27-agentic-treasury-co-pilots-autonomous-treasury-production-2026/index.html" title="Agentic Treasury 2026: From Autonomous Treasury Index to Production-Grade Co-Pilots">Agentic Treasury 2026: From Autonomous Treasury Index to Production-Grade Co-Pilots</a></h3>
+<p class="newsroom-meta"><time datetime="2026-06-27">June 27, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Agentic treasury co-pilots are moving from controlled pilots into production in 2026. The pattern is consistent across CIB treasuries: agents read ISO 20022 cash data, call bounded tools, and rebalance liquidity inside policy bands — with SR 11-7, DORA, and EU AI Act controls wrapped around them.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-06-26-post-quantum-banking-resilience-index-eo-14409-fiduciary-crypto-agility-2026/index.html" title="The Post-Quantum Banking Resilience Index in 2026: EO 14409, Global Deadlines, and Fiduciary Cryptographic Agility">
+<img alt="Abstract quantum-blue light field — symbolising the post-quantum banking resilience index and the migration of financial cryptography to ML-KEM, ML-DSA and SLH-DSA" src="https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA-1920.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Post-Quantum Cryptography · Pqc · Eo 14409</span>
+<h3><a href="/2026-06-26-post-quantum-banking-resilience-index-eo-14409-fiduciary-crypto-agility-2026/index.html" title="The Post-Quantum Banking Resilience Index in 2026: EO 14409, Global Deadlines, and Fiduciary Cryptographic Agility">The Post-Quantum Banking Resilience Index in 2026: EO 14409, Global Deadlines, and Fiduciary Cryptographic Agility</a></h3>
+<p class="newsroom-meta"><time datetime="2026-06-26">June 26, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Executive Order 14409, ANSSI's hard 2030 deadline and DORA Article 5 have moved post-quantum cryptography from a long-range technical goal to an active regulatory mandate. This index converts securing registries, high-frequency ledgers and SWIFT channels into a board-ready 0–5 scorecard that aligns ML-KEM, ML-DSA and S</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-06-26-always-on-cib-cyber-recovery-fallback-rails-quantum-safe-treasury-2026/index.html" title="Always-On CIB: Cyber Recovery, Fallback Rails and Quantum-Safe Treasury">
+<img alt="Steel suspension bridge cables under storm light — symbolising redundant fallback rails, cyber recovery and quantum-safe treasury keeping a corporate and investment bank always on under DORA" src="https://cloudcdn.pro/stocks/images/roman-synkevych-vXInUOv1n84.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Cyber Recovery · Fallback Rails · Operational Resilience</span>
+<h3><a href="/2026-06-26-always-on-cib-cyber-recovery-fallback-rails-quantum-safe-treasury-2026/index.html" title="Always-On CIB: Cyber Recovery, Fallback Rails and Quantum-Safe Treasury">Always-On CIB: Cyber Recovery, Fallback Rails and Quantum-Safe Treasury</a></h3>
+<p class="newsroom-meta"><time datetime="2026-06-26">June 26, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Corporate and investment banks now treat cyber recovery, ISO 20022 fallback rails across RTGS, instant and tokenised networks, and quantum-safe treasury controls as one always-on operating model — the board-grade response to DORA Articles 5 and 6, FHE, QKD and PQC primitives, and ICT third-party concentration risk.</p>
+</div>
+</article>
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-06-25-quantum-dawn-cib-kyberlib-quantum-resilient-payments-stack-2026/index.html" title="Quantum Dawn for CIB: From KyberLib to a Quantum-Resilient Payments Stack">
