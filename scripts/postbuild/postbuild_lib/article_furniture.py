@@ -33,10 +33,10 @@ from pathlib import Path
 from urllib.parse import quote as _url_quote
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[3]))
-import _lang_registry as _lr  # type: ignore[import-not-found]
+import _lang_registry as _lr
 
 # _fr_slugs is deprecated
-from postbuild_lib.seo import _keywords_re  # type: ignore[unused-import]
+from postbuild_lib.seo import _keywords_re
 
 PUBLIC = Path("public")
 

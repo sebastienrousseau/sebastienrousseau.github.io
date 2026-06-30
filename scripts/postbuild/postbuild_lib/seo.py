@@ -186,7 +186,7 @@ def _keyword_matches_entity(kw_lower: str, entity_lower: str) -> bool:
 
 
 def _same_as_anchors(
-    ext_url: str, qid: str, canonical_stem: str, own_stem: str | None
+    ext_url: str, qid: str | None, canonical_stem: str | None, own_stem: str | None
 ) -> list[str]:
     """Build the ``sameAs`` list for an entity: authoritative external URL,
     plus Wikidata Q-number anchor, plus the user's canonical post (skipped
@@ -200,7 +200,7 @@ def _same_as_anchors(
 
 
 def _build_entity_node(
-    entity: str, ext_url: str, qid: str, canonical_stem: str, own_stem: str | None
+    entity: str, ext_url: str, qid: str | None, canonical_stem: str | None, own_stem: str | None
 ) -> dict[str, object]:
     same_as = _same_as_anchors(ext_url, qid, canonical_stem, own_stem)
     return {
