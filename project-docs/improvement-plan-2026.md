@@ -66,7 +66,7 @@ in `project-docs/audits/baseline-2026-06.md` (Phase −1) via `make metrics`.
 - **5.1** ADR discipline: backfill ADRs for existing structural decisions (build-copy pipeline, docs→public retirement, pa11y sharding+cache, sigstore), require ADRs for future ones. (Seeded: ADR-0002, ADR-0003.)
 - **5.2** `make bootstrap` one-command onboarding; verified "first build <10 min" in README.
 - **5.3** Runbooks in `project-docs/operations/`: publish, rollback, CI-flake triage, incident response.
-- **5.4** Regenerate `architecture.md` data-flow from the real `build.sh` order; test fails if a generator is added without a doc entry.
+- **5.4 — DONE.** `architecture.md` "build pipeline" section rewritten from the real `build.sh` order (19 generator/postbuild scripts across 4 phases, was a stale "seven stages"). Guard test `tests/unit/test_architecture_doc_current.py` parses `build.sh` for `python3 scripts/...py` steps and fails if any is undocumented — so adding a generator without a doc entry breaks CI.
 
 ---
 
