@@ -1,4 +1,4 @@
-.PHONY: build serve regenerate audit clean test lint typecheck sbom coverage publish-today
+.PHONY: bootstrap build serve regenerate audit clean test lint typecheck sbom coverage publish-today
 
 # Default target.
 build:
@@ -77,6 +77,22 @@ coverage:
 publish-today:
 	@chmod +x scripts/editorial/publish-daily.sh
 	@./scripts/editorial/publish-daily.sh
+
+# One-command onboarding: provision the pinned toolchain + dependencies,
+# then you're ready for `make build`. Idempotent — re-running skips what is
+# already installed. Versions are pinned per ADR-0002 (mise.toml is the
+# canonical toolchain matrix; the dev-tool pins mirror .github/workflows/ci.yml).
+bootstrap:
+	@command -v mise >/dev/null 2>&1 || { echo "mise not found — install it from https://mise.jdx.dev, then re-run 'make bootstrap'"; exit 1; }
+	@echo "==> mise install (python 3.12, node 22, rust, pa11y-ci, http-server)"
+	@mise install
+	@echo "==> ssg static-site compiler (0.0.44, pinned — ADR-0002)"
+	@command -v ssg >/dev/null 2>&1 || cargo install ssg --locked --version 0.0.44
+	@echo "==> python build dependencies"
+	@pip install --quiet -r requirements.txt
+	@echo "==> python dev tools (lint / types / tests / sbom — pinned)"
+	@pip install --quiet 'ruff==0.15.9' 'mypy==2.1.0' 'types-PyYAML==6.0.12.20260518' radon pytest pytest-cov 'cyclonedx-bom==7.3.0'
+	@echo "==> bootstrap complete. Next: make build  (first build target: under 10 min)."
 
 # Wipe build output.
 clean:
