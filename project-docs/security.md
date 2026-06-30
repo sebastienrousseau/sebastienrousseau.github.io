@@ -309,6 +309,13 @@ reproducible (`grep -rwn <name> scripts/ tests/`).
 | `py/multiple-definition` (×2) | `build_case_studies.py`, `translate_stubs_gemini.py` | **Dismissed (false positive):** the "redefined" first assignment is the default kept when the wrapping `contextlib.suppress(...)` block raises — CodeQL does not model `suppress`. |
 | `py/unused-import` (×3) | `postbuild.py` | **Dismissed (used in tests):** these are the documented `# noqa: F401` re-export surface (`from postbuild import slugify`, `pb.compute_word_count`, …) consumed by `tests/unit/test_postbuild_*`. |
 
+**Batch 6 — remaining high/medium CodeQL (done):**
+
+| Alert | Where | Disposition |
+|---|---|---|
+| `js/xss-through-dom` (high) | `_layouts/main.js` | The navigate-mode handler now validates **both** DOM-sourced inputs before they reach `location.href`: the `data-navigate-base` attribute against `^/[a-z0-9/-]+$` and the option value against `^[a-z0-9-]+$`. Either failing falls back to `/articles`. (The earlier batch only guarded the option value; `base` was the live taint.) |
+| `py/log-injection` (medium ×2) | `fly/pdf-render/app.py` | **Dismissed (false positive):** the only logged user value is `slug`, validated against `^[a-z0-9][a-z0-9-]{0,127}$` at every entry sink (`render()` line 115, `_fetch_article_html` line 69) before reaching the `LOG.info` calls, so it provably contains no CR/LF/control characters. CodeQL's taint tracker does not model the regex `fullmatch` as a log-injection sanitizer. |
+
 **Remaining (tracked):** the repo-policy Scorecard
 items (**branch protection, required reviews, code-review** — GitHub
 *settings* only the owner can toggle; this is also Phase 0.4). The `S104`
