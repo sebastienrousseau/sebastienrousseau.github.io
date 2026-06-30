@@ -688,7 +688,7 @@ speculation_re = re.compile(
 # Bare inline <script> blocks (no src, no type) — used for the inlined
 # theme bootstrap. Each one needs its own sha256 in CSP script-src.
 _inline_script_re = re.compile(
-    r"<script(?![^>]*\bsrc=)(?![^>]*\btype=)[^>]*>([\s\S]*?)</script\s*>",
+    r"<script(?![^>]*\bsrc=)(?![^>]*\btype=)[^>]*>([\s\S]*?)</script>",
     re.IGNORECASE,
 )
 

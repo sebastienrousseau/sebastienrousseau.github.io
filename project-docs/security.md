@@ -272,7 +272,7 @@ next scan and, where the code is in the main test scope, by a unit test.
 
 | Alert | Where | Fix |
 |---|---|---|
-| `py/bad-tag-filter` (high ×3) | `_search.py`, `postbuild.py`, `test_lang_no_leakage.py` | Closing tags now tolerate whitespace (`</script\s*>`, `</style\s*>`, `</main\s*>`) so a spaced end tag can't smuggle content past the strip. Unit-locked in `tests/unit/test_search_extract.py`. |
+| `py/bad-tag-filter` (high ×3) | `_search.py`, `postbuild.py`, `test_lang_no_leakage.py` | Dismissed as "won't fix": these regexes strip tags from our **own build-generated HTML** (`public/` output), not untrusted input, so the bypass is not reachable; a full HTML parser is disproportionate for build tooling. `_extract_visible_text` is now unit-covered (`tests/unit/test_search_extract.py`). |
 | `js/xss-through-dom` (high) | `_layouts/main.js` | The tag-filter `<select>` value is validated against `^[a-z0-9-]+$` before it reaches `location.href`; anything else falls back to the base listing. |
 | `js/missing-origin-check` (medium) | `_layouts/sw.js` | The service-worker `message` handler ignores messages whose `event.origin` is not same-origin. |
 | `js/xss-through-exception` (medium) | `labs/hsh-demo/web/demo.js` | The boot-error node is built with `textContent`, so an exception message can never be parsed as HTML. |

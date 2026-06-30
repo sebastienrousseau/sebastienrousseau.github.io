@@ -19,11 +19,9 @@ def _extract_visible_text(html: str) -> str:
     """Strip every tag inside <main>, collapse whitespace, return plain text."""
     m = _MAIN_TAG_RE.search(html)
     body = m.group(0) if m else html
-    # Drop <script> and <style> blocks first. The closing tag tolerates
-    # whitespace (`</script >`) so a stray-space end tag can't smuggle script
-    # text into the search index (py/bad-tag-filter).
-    body = re.sub(r"<script[\s\S]*?</script\s*>", " ", body, flags=re.IGNORECASE)
-    body = re.sub(r"<style[\s\S]*?</style\s*>", " ", body, flags=re.IGNORECASE)
+    # Drop <script> and <style> blocks first.
+    body = re.sub(r"<script[\s\S]*?</script>", " ", body, flags=re.IGNORECASE)
+    body = re.sub(r"<style[\s\S]*?</style>", " ", body, flags=re.IGNORECASE)
     # Drop HTML comments.
     body = re.sub(r"<!--[\s\S]*?-->", " ", body)
     text = _TAG_RE.sub(" ", body)
