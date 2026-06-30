@@ -284,9 +284,21 @@ version as a trailing comment (e.g. `actions/checkout@9c091bb… # v7`),
 clearing the 26 `PinnedDependenciesID` findings. Bump deliberately by
 re-resolving the tag → SHA (ADR-0002 philosophy).
 
-**Remaining (tracked):** the ~60 CodeQL quality notes (unused module-private
-vars / imports / duplicate-definition — being cleared per-symbol after
-confirming each is not cross-module-imported), and the repo-policy Scorecard
+**Batch 4 — unused module-private constants (done):** of the 52
+`py/unused-global-variable` notes, a repo-wide reference scan split them into
+two sets. **13 genuinely dead** module-level constants — whose only repo
+reference was their own definition — were deleted (`_QUOTED_RE`,
+`_DATE_FM_RE`, the four `_BLOGPOSTING_*_RE` regexes, `_CDN_TRANSFORM_PREFIX`,
+`_NAV_LINK_RE`, `_STATIC_EN_TO_FR`, `_SVG_HEADPHONES/_MASTODON/_MEDIUM`, and a
+test-only `_CRUMB_BASE`). The remaining **26 are false positives**: they are
+shared `build_translations/_state.py` state and `_chrome.py` patch regexes
+read by sibling modules via attribute access (`st.FR_TO_EN`, …) or mutated
+through in-function `global` re-declarations — CodeQL's intra-module analysis
+cannot see the cross-module reads, so they are kept and dismissed in
+code-scanning with that rationale. The reference scan that proves the split is
+reproducible (`grep -rwn <name> scripts/ tests/`).
+
+**Remaining (tracked):** the repo-policy Scorecard
 items (**branch protection, required reviews, code-review** — GitHub
 *settings* only the owner can toggle; this is also Phase 0.4). The `S104`
 bind-all in the Fly container is intentional and outside the linted

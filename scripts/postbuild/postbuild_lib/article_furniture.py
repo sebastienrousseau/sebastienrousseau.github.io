@@ -662,22 +662,6 @@ _SVG_BLUESKY = (
     '-.9c0-.1-.1-.1-.1-.1c-.1 0-.1.1-.2.1c-.2.5-1.1 2.6-3 .9c-1-.9-.6-1.8 1-2.1c-1.1.1-2-.2-2.4-1.4c-.3'
     '-.9-.8-3.7-.8-5.1c0-2.4.8-3.3 2.5-2.6z"/></svg>'
 )
-_SVG_MASTODON = (
-    '<svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">'
-    '<path d="M14.5 3.6c-.6-1-1.8-1.7-3.2-1.9C9 1.4 6.9 1.4 4.7 1.7c-1.4.2-2.6 1-3.2 1.9C.9 4.5.6 5.8.6 7.2'
-    'v3.4c0 1.6 1 3 2.4 3.3l5.2.6V13c-.9 0-1.7-.2-2.4-.6c-1.1-.6-1.7-1.7-1.9-2.9l-.1-.5c.8.4 1.7.6 2.6.6c.5 0 '
-    '1-.1 1.4-.2c.5-.1.9-.3 1.3-.5v2.4h.7v-3.6c0-.7-.5-1.3-1.2-1.3c-.4 0-.7.2-.9.4l-.4.7l-.4-.7c-.2-.2-.5-.4'
-    '-.9-.4c-.7 0-1.2.6-1.2 1.3v3.6h.7V8.6c.4.2.8.4 1.3.5c.4.1.9.2 1.4.2c.9 0 1.8-.2 2.6-.6l-.1.5c-.2 1.2-.8'
-    ' 2.3-1.9 2.9c-.7.4-1.5.6-2.4.6v1.5l5.2-.6c1.4-.3 2.4-1.7 2.4-3.3V7.2c0-1.4-.3-2.7-.9-3.6z"/></svg>'
-)
-_SVG_MEDIUM = (
-    '<svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">'
-    '<path d="M1.5 3.5c0-.2-.1-.4-.2-.5L.5 2.2v-.2h2.7l2.1 4.7L7.2 2h2.6v.2l-.8.8c-.1.1-.1.2-.1.3v6.4'
-    'c0 .1 0 .2.1.3l.8.8v.2H6v-.2l.8-.8c.1-.1.1-.1.1-.3V4.6L4.7 11h-.3L2 4.6v4.4c0 .2.1.5.2.6l1 1.3v.2'
-    'H.2v-.2l1.1-1.3c.1-.2.2-.4.2-.6V3.5z"/></svg>'
-)
-
-
 def inject_eyebrow(html: str) -> str:
     """Render an FT-style eyebrow caption (``<p class="eyebrow">``)
     immediately above the H1 hero. The label is the article's first
@@ -1168,12 +1152,6 @@ _AUTHOR_INITIAL = "S."
 _SVG_DOWNLOAD = (
     '<svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">'
     '<path d="M7.3 1.5h1.4v6l1.95-1.95.99.99L8 9.18 4.36 5.54l.99-.99L7.3 6.5v-5zM2 13h12v1.5H2V13z"/>'
-    "</svg>"
-)
-_SVG_HEADPHONES = (
-    '<svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">'
-    '<path d="M8 2C4.7 2 2 4.7 2 8v3a1.5 1.5 0 001.5 1.5h1V8h-1V8c0-2 1.5-4 3.5-4s3.5 1.5 3.5 4v4.5'
-    'h1c.8 0 1.5-.7 1.5-1.5V8c0-3.3-2.7-6-6-6z"/>'
     "</svg>"
 )
 _SVG_QUOTE = (
@@ -1909,12 +1887,6 @@ def _convert_faq_to_qa(html: str) -> str:
     return _FAQ_H2_RE.sub(patch, html)
 
 
-_NAV_LINK_RE = re.compile(
-    r'(<nav\s+aria-label=["\']?Primary["\']?(?:[\s\S]*?</nav>)|<nav\s+aria-label=["\']?[^"\'>]+["\']?(?:[\s\S]*?</nav>))',
-    re.IGNORECASE,
-)
-
-
 def _nav_target_for_en_page(top: str) -> str:
     """Map an EN top-level page slug to its nav-link href."""
     if _DATED_SLUG_RE.match(top):
@@ -2348,9 +2320,6 @@ def _slug_maps(code: str) -> dict[str, dict[str, str]]:
     if code not in _SLUG_MAPS_CACHE:
         _SLUG_MAPS_CACHE[code] = _slug_maps_for(code)
     return _SLUG_MAPS_CACHE[code]
-
-
-_STATIC_EN_TO_FR: dict[str, str] = _lr.load_slugs("fr")["static"]
 
 
 def _translated_slugs_per_lang() -> dict[str, set[str]]:
