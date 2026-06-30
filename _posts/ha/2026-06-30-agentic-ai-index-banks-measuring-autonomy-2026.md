@@ -86,7 +86,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 # Ma’aunin Agentic AI ga Bankuna a 2026: Auna Autonomy
 
-<!-- lead-start -->
+<!-- lead-start: manual -->
 <aside class="post-lead" aria-label="Article summary">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Agentic AI a fannin banki ya zama kayan aikin gudanarwa a 2026: kashi 52% na cibiyoyin kuɗi sun riga sun tura shi, amma kashi 14% kawai ke kiransa mai sauya yanayi. Wannan ma'auni yana rufe wannan gibi ta hanyar auna shiri a fadin sassa shida — matakan cin gashin kai, tsarin shugabanci, hujjar tsari, lissafin tattalin arziki, shirin ƙungiya, da daidaiton tsarin duniya — wanda aka daidaita da SR 11-7, SS1/23, EU AI Act, da kuma sound practices na FSB na Yuni 2026.</p>
 <p class="post-lead-heading"><strong>Mahimman abubuwan da za a ɗauka</strong></p>

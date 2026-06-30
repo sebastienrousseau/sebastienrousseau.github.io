@@ -86,7 +86,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 # El Índice de IA Agéntica para la banca en 2026: medir la autonomía
 
-<!-- lead-start -->
+<!-- lead-start: manual -->
 <aside class="post-lead" aria-label="Resumen del artículo">
 <p class="post-lead-tldr"><strong>En resumen.</strong> La IA agéntica en la banca es infraestructura operativa en 2026: el 52 % de las entidades financieras ya la despliega, pero solo el 14 % la considera transformadora. Este índice cierra esa brecha al puntuar la preparación en seis dimensiones — niveles de autonomía, arquitectura de gobernanza, evidencia regulatoria, rendición de cuentas económica, preparación organizativa y alineamiento regulatorio global — calibradas con SR 11-7, SS1/23, el EU AI Act y las buenas prácticas del FSB de junio de 2026.</p>
 <p class="post-lead-heading"><strong>Conclusiones clave</strong></p>

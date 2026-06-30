@@ -86,7 +86,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 # Agentic AI Index para sa mga Bangko sa 2026: Pagsukat ng Autonomy
 
-<!-- lead-start -->
+<!-- lead-start: manual -->
 <aside class="post-lead" aria-label="Buod ng artikulo">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Ang agentic AI sa pagbabangko ay operational infrastructure na sa 2026: 52% ng mga institusyong pinansiyal ang naka-deploy na nito, ngunit 14% lamang ang naghahalintulad dito bilang transpormatibo. Pinupunan ng index na ito ang puwang na iyon sa pamamagitan ng pag-iskor ng kahandaan sa anim na dimensiyon — autonomy tiers, governance architecture, regulatory evidence, economic accountability, organisational readiness, at global regulatory alignment — na nakakalibrado sa SR 11-7, SS1/23, ang EU AI Act, at ang FSB June 2026 sound practices.</p>
 <p class="post-lead-heading"><strong>Mga pangunahing punto</strong></p>

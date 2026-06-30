@@ -86,7 +86,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 # 2026 年銀行智能體 AI 指數：衡量自主性
 
-<!-- lead-start -->
+<!-- lead-start: manual -->
 <aside class="post-lead" aria-label="文章摘要">
 <p class="post-lead-tldr"><strong>太長不讀（TL;DR）。</strong>銀行業的智能體 AI（agentic AI）在 2026 年已成為營運基礎設施：52% 的金融機構已部署，卻僅有 14% 視其為變革性力量。本指數透過橫跨六大維度——自主性等級、治理架構、法規證據、經濟問責、組織準備度與全球法規一致性——並對齊 SR 11-7、SS1/23、EU AI Act 與 FSB 2026 年 6 月健全實務，來彌合這道落差。</p>
 <p class="post-lead-heading"><strong>重點摘要</strong></p>

@@ -86,7 +86,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 # Index agentní AI pro banky v roce 2026: měření autonomie
 
-<!-- lead-start -->
+<!-- lead-start: manual -->
 <aside class="post-lead" aria-label="Shrnutí článku">
 <p class="post-lead-tldr"><strong>Stručně.</strong> Agentní AI je v bankovnictví v roce 2026 provozní infrastrukturou: 52 % finančních institucí ji již nasazuje, avšak pouze 14 % ji označuje za transformační. Tento index tuto mezeru uzavírá tím, že hodnotí připravenost napříč šesti dimenzemi — úrovně autonomie, architektura správy a řízení, regulatorní důkazy, ekonomická odpovědnost, organizační připravenost a globální regulatorní soulad — kalibrovanými podle SR 11-7, SS1/23, EU AI Act a FSB sound practices z června 2026.</p>
 <p class="post-lead-heading"><strong>Klíčové poznatky</strong></p>

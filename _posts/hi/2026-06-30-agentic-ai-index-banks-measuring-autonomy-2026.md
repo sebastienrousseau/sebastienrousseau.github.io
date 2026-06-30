@@ -86,7 +86,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 # 2026 में बैंकों के लिए Agentic AI Index: Autonomy को मापना
 
-<!-- lead-start -->
+<!-- lead-start: manual -->
 <aside class="post-lead" aria-label="लेख सारांश">
 <p class="post-lead-tldr"><strong>संक्षेप में।</strong> 2026 में बैंकिंग में एजेंटिक AI परिचालन अवसंरचना बन चुका है: 52% वित्तीय संस्थान इसे पहले ही तैनात कर चुके हैं, फिर भी केवल 14% इसे परिवर्तनकारी मानते हैं। यह इंडेक्स उस अंतर को छह आयामों पर तत्परता का स्कोर देकर पाटता है — स्वायत्तता स्तर, गवर्नेंस आर्किटेक्चर, नियामक साक्ष्य, आर्थिक जवाबदेही, संगठनात्मक तत्परता, और वैश्विक नियामक संरेखण — जो SR 11-7, SS1/23, EU AI Act (यूरोपीय संघ AI अधिनियम), और FSB जून 2026 की उचित प्रथाओं (sound practices) के अनुरूप अंशांकित है।</p>
 <p class="post-lead-heading"><strong>मुख्य निष्कर्ष</strong></p>

@@ -86,7 +86,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 # 2026年における銀行向けエージェンティックAIインデックス：自律性を測定する
 
-<!-- lead-start -->
+<!-- lead-start: manual -->
 <aside class="post-lead" aria-label="記事の要約">
 <p class="post-lead-tldr"><strong>要点。</strong> 2026年、銀行業界におけるエージェンティックAIは運用インフラとなりました。金融機関の52%がすでに導入していますが、それを変革的と評価するのはわずか14%にとどまります。本インデックスは、自律性レベル、ガバナンス・アーキテクチャ、規制エビデンス、経済的説明責任、組織的準備態勢、グローバル規制整合性という6つの次元で準備態勢を採点することで、このギャップを埋めます。採点は `SR 11-7`、`SS1/23`、EU AI法（EU AI Act）、そして2026年6月のFSB健全な実務指針に準拠して較正されています。</p>
 <p class="post-lead-heading"><strong>主な要点</strong></p>

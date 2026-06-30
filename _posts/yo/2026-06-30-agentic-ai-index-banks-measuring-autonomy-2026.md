@@ -86,7 +86,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 # Ìtọ́ka Agentic AI fún Banki ní 2026: Wíwọ̀n Autonomy
 
-<!-- lead-start -->
+<!-- lead-start: manual -->
 <aside class="post-lead" aria-label="Akopọ àpilẹ̀kọ">
 <p class="post-lead-tldr"><strong>Ni kukuru.</strong> Agentic AI ninu banki jẹ amayederun iṣẹ ni 2026: 52% ti awọn ile-iṣẹ inawo ti n lo o tẹlẹ, sibẹ 14% nikan ni wọn pe e ni iyipada pataki. Ìtọ́ka yii pa aafo naa nipa fifun imurasilẹ ni ami kọja iwọn mẹfa — ipele autonomy, faaji iṣakoso, ẹri ilana, iṣiro ọrọ-aje, imurasilẹ ajo, ati ibamu ilana agbaye — ti a ṣe ibamu pẹlu SR 11-7, SS1/23, EU AI Act, ati FSB sound practices ti June 2026.</p>
 <p class="post-lead-heading"><strong>Awọn koko pataki</strong></p>
