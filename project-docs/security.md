@@ -298,6 +298,17 @@ cannot see the cross-module reads, so they are kept and dismissed in
 code-scanning with that rationale. The reference scan that proves the split is
 reproducible (`grep -rwn <name> scripts/ tests/`).
 
+**Batch 5 — import / definition / regex quality notes (done):**
+
+| Alert | Where | Disposition |
+|---|---|---|
+| `py/repeated-import` (×2) | `article_furniture.py`, `seo.py` | Removed the redundant in-function `import json as _json`; the module-level import is in scope. |
+| `py/import-and-import-from` (×2) | `article_furniture.py` | Dropped the local `import html as _h` in `_html_unescape` and the Mermaid helper; both now call the module-level `from html import unescape as _unesc`. |
+| `py/constant-conditional-expression` | `test_schemas.py` | Removed a dead `... if False else ...` branch in the idempotence test; the assertion is unchanged. |
+| `py/regex/duplicate-in-character-class` (×2) | `backfill_locale_frontmatter.py` | De-duplicated the Yoruba (24→16) and Latin (118→93) detection character classes; identical code-point coverage, verified by an `ast`-extracted match test. |
+| `py/multiple-definition` (×2) | `build_case_studies.py`, `translate_stubs_gemini.py` | **Dismissed (false positive):** the "redefined" first assignment is the default kept when the wrapping `contextlib.suppress(...)` block raises — CodeQL does not model `suppress`. |
+| `py/unused-import` (×3) | `postbuild.py` | **Dismissed (used in tests):** these are the documented `# noqa: F401` re-export surface (`from postbuild import slugify`, `pb.compute_word_count`, …) consumed by `tests/unit/test_postbuild_*`. |
+
 **Remaining (tracked):** the repo-policy Scorecard
 items (**branch protection, required reviews, code-review** — GitHub
 *settings* only the owner can toggle; this is also Phase 0.4). The `S104`

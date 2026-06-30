@@ -1722,11 +1722,9 @@ def strip_duplicate_body_h1(html: str) -> str:
 
 
 def _html_unescape(s: str) -> str:
-    """Local indirection so the strip-duplicate-H1 helper can mock if
-    needed without polluting the module-level ``html`` alias."""
-    import html as _h
-
-    return _h.unescape(s)
+    """Thin indirection so the strip-duplicate-H1 helper can be patched
+    (``article_furniture._unesc``) in tests if needed."""
+    return _unesc(s)
 
 
 _NON_BODY_ASIDE_RE = re.compile(
@@ -2051,8 +2049,6 @@ def inject_citations(html: str) -> str:
     cites = _extract_citations(html)
     if not cites:
         return html
-    import json as _json
-
     fragment = ',"citation":' + _json.dumps(cites, separators=(",", ":"))
     # Insert just before the "speakable" key in the BlogPosting object.
     return re.sub(
@@ -2087,7 +2083,6 @@ def inject_mermaid(html: str) -> str:
     but only on pages that actually contain a Mermaid block."""
     if "language-mermaid" not in html:
         return html
-    import html as _h
 
     def replace(m: re.Match[str]) -> str:
         # Strip <span> wrappers a syntax highlighter may have added,
@@ -2096,7 +2091,7 @@ def inject_mermaid(html: str) -> str:
         # char (not `&gt;`) — otherwise `->>` arrows fail to parse.
         # Still escape `<` and `&` to keep the surrounding HTML valid.
         inner = re.sub(r"<[^>]+>", "", m.group(1))
-        raw = _h.unescape(inner)
+        raw = _unesc(inner)
         safe = raw.replace("&", "&amp;").replace("<", "&lt;")
         return f'<pre class="mermaid">{safe}</pre>'
 

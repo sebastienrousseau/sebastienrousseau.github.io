@@ -238,8 +238,6 @@ def build_about_graph(html: str) -> str | None:
     matches = _match_entities_for_keywords(keywords, _current_stem(html))
     if not matches:
         return None
-    import json as _json
-
     primary = matches[0]
     rest = matches[1:6]  # cap secondary entities at 5 to keep schema lean
     fragment_parts = [f'"about":{_json.dumps(primary, separators=(",", ":"))}']

@@ -588,11 +588,7 @@ def test_inject_news_article_is_idempotent():
     page = sc.PUBLIC / "2026-06-02-x" / "index.html"
     html = _news_html()
     once = sc.inject_news_article(page, html, now=_FRESH_NOW)
-    twice = (
-        sc.inject_news_article(once, page, now=_FRESH_NOW)
-        if False
-        else sc.inject_news_article(page, once, now=_FRESH_NOW)
-    )
+    twice = sc.inject_news_article(page, once, now=_FRESH_NOW)
     assert once == twice
 
 
