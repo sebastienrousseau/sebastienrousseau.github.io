@@ -86,7 +86,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 # 2026’da Bankalar için Agentic AI Endeksi: Autonomy ölçümü
 
-<!-- lead-start -->
+<!-- lead-start: manual -->
 <aside class="post-lead" aria-label="Makale özeti">
 <p class="post-lead-tldr"><strong>Özet.</strong> Bankacılıkta ajan tabanlı yapay zeka (agentic AI) 2026'da operasyonel altyapıdır: finansal kuruluşların %52'si bunu halihazırda kullanıyor, ancak yalnızca %14'ü dönüştürücü olarak nitelendiriyor. Bu endeks, hazır olma durumunu altı boyutta puanlayarak bu boşluğu kapatır — özerklik seviyeleri, yönetişim mimarisi, düzenleyici kanıt, ekonomik hesap verebilirlik, kurumsal hazırlık ve küresel düzenleyici uyum — ve SR 11-7, SS1/23, EU AI Act (AB Yapay Zeka Yasası) ile FSB (Finansal İstikrar Kurulu) Haziran 2026 sağlam uygulamalarına göre kalibre edilmiştir.</p>
 <p class="post-lead-heading"><strong>Temel çıkarımlar</strong></p>

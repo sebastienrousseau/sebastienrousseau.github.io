@@ -86,7 +86,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 # 2026 年银行 Agentic AI 指数：衡量自主性
 
-<!-- lead-start -->
+<!-- lead-start: manual -->
 <aside class="post-lead" aria-label="文章摘要">
 <p class="post-lead-tldr"><strong>摘要（TL;DR）。</strong> 2026 年，银行业的代理式 AI（agentic AI）已成为运营基础设施：52% 的金融机构已经部署，但仅有 14% 认为它具有变革意义。本指数通过六个维度——自主性等级、治理架构、监管证据、经济问责、组织准备度与全球监管对齐——为这一落差打分，并以 SR 11-7、SS1/23、EU AI Act 以及 FSB 2026 年 6 月稳健实践为校准基准。</p>
 <p class="post-lead-heading"><strong>核心要点</strong></p>

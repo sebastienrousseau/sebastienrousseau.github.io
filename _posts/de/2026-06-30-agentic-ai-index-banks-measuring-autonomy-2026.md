@@ -86,7 +86,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 # Der Agentic-AI-Index für Banken 2026: Autonomie messen
 
-<!-- lead-start -->
+<!-- lead-start: manual -->
 <aside class="post-lead" aria-label="Zusammenfassung des Artikels">
 <p class="post-lead-tldr"><strong>Kurzfassung.</strong> Agentic AI im Bankwesen ist 2026 operative Infrastruktur: 52 % der Finanzinstitute setzen sie bereits ein, doch nur 14 % bezeichnen sie als transformativ. Dieser Index schließt diese Lücke, indem er die Einsatzreife über sechs Dimensionen bewertet — Autonomiestufen, Governance-Architektur, regulatorische Nachweise, ökonomische Rechenschaft, organisatorische Reife und globale regulatorische Ausrichtung — kalibriert auf SR 11-7, SS1/23, den EU AI Act und die FSB-Sound-Practices vom Juni 2026.</p>
 <p class="post-lead-heading"><strong>Wichtigste Erkenntnisse</strong></p>

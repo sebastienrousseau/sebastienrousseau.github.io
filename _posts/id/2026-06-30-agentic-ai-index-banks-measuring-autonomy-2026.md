@@ -86,7 +86,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 # Indeks Agentic AI untuk Bank pada 2026: Mengukur Autonomy
 
-<!-- lead-start -->
+<!-- lead-start: manual -->
 <aside class="post-lead" aria-label="Ringkasan artikel">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Agentic AI di perbankan adalah infrastruktur operasional pada 2026: 52% lembaga keuangan sudah menerapkannya, namun hanya 14% yang menyebutnya transformatif. Indeks ini menutup kesenjangan tersebut dengan menilai kesiapan di enam dimensi — tingkat otonomi, arsitektur tata kelola, bukti regulasi, akuntabilitas ekonomi, kesiapan organisasi, dan keselarasan regulasi global — yang dikalibrasi terhadap SR 11-7, SS1/23, EU AI Act, dan praktik baik (sound practices) FSB Juni 2026.</p>
 <p class="post-lead-heading"><strong>Poin-poin utama</strong></p>

@@ -86,7 +86,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 # Chỉ số AI tác nhân cho ngân hàng năm 2026: Đo lường mức độ tự chủ
 
-<!-- lead-start -->
+<!-- lead-start: manual -->
 <aside class="post-lead" aria-label="Tóm tắt bài viết">
 <p class="post-lead-tldr"><strong>Tóm lược.</strong> AI tác nhân (agentic AI) trong ngân hàng đã trở thành hạ tầng vận hành vào năm 2026: 52% tổ chức tài chính đã triển khai, song chỉ 14% xem đó là yếu tố mang tính chuyển đổi. Chỉ số này thu hẹp khoảng cách đó bằng cách chấm điểm mức độ sẵn sàng trên sáu chiều — cấp độ tự chủ, kiến trúc quản trị, bằng chứng tuân thủ pháp lý, trách nhiệm kinh tế, sự sẵn sàng của tổ chức, và sự đồng bộ pháp lý toàn cầu — hiệu chỉnh theo SR 11-7, SS1/23, EU AI Act và bộ thông lệ tốt (sound practices) của FSB tháng 6 năm 2026.</p>
 <p class="post-lead-heading"><strong>Những điểm chính</strong></p>

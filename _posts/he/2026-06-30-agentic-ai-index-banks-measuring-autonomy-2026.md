@@ -86,7 +86,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 # מדד הבינה המלאכותית הסוכנותית לבנקים בשנת 2026: מדידת אוטונומיה
 
-<!-- lead-start -->
+<!-- lead-start: manual -->
 <aside class="post-lead" aria-label="תקציר המאמר">
 <p class="post-lead-tldr"><strong>תקציר.</strong> בינה מלאכותית סוכנותית בבנקאות היא תשתית תפעולית בשנת 2026: 52% מהמוסדות הפיננסיים כבר מפעילים אותה, אך רק 14% מגדירים אותה כמשנת-משחק. מדד זה סוגר את הפער בכך שהוא מדרג מוכנות בשישה ממדים — רמות אוטונומיה, ארכיטקטורת ממשל, ראיות רגולטוריות, אחריותיות כלכלית, מוכנות ארגונית והתאמה רגולטורית גלובלית — מכויל ל-SR 11-7, ל-SS1/23, ל-EU AI Act ולנהלים המומלצים (sound practices) של FSB מיוני 2026.</p>
 <p class="post-lead-heading"><strong>נקודות מפתח</strong></p>

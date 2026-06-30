@@ -86,7 +86,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 # O índice de Agentic AI para bancos em 2026: medindo autonomia
 
-<!-- lead-start -->
+<!-- lead-start: manual -->
 <aside class="post-lead" aria-label="Resumo do artigo">
 <p class="post-lead-tldr"><strong>Resumo.</strong> A IA agêntica no setor bancário é infraestrutura operacional em 2026: 52% das instituições financeiras já a implantam, mas apenas 14% a consideram transformadora. Este índice fecha essa lacuna ao pontuar a prontidão em seis dimensões — níveis de autonomia, arquitetura de governança, evidência regulatória, responsabilização econômica, prontidão organizacional e alinhamento regulatório global — calibradas para SR 11-7, SS1/23, o EU AI Act e as boas práticas do FSB de junho de 2026.</p>
 <p class="post-lead-heading"><strong>Principais conclusões</strong></p>

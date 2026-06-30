@@ -1,5 +1,5 @@
 {
-  "$generated_at": "2026-06-29T14:16:45+00:00",
+  "$generated_at": "2026-06-30T07:25:17+00:00",
   "stats": [
     {
       "key": "years_payments",
@@ -18,7 +18,7 @@
     {
       "key": "downloads_total",
       "label": "Open-source package downloads (PyPI + crates.io)",
-      "value": 37119948,
+      "value": 37316388,
       "format": "compact",
       "source": "pypistats.org + crates.io"
     },
