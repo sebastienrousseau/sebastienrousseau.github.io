@@ -39,9 +39,10 @@ jobs:
           node-version: "22"
 
       - name: Install tooling
-        run: |
-          pip install --quiet 'ruff==0.15.9' 'mypy==2.1.0' 'types-PyYAML==6.0.12.20260518' radon   # ADR-0002
-          pip install --quiet -r requirements.txt
+        # Hash-pinned dev toolchain + runtime deps from a single lock
+        # (OpenSSF Scorecard Pinned-Dependencies). Edit requirements-dev.txt
+        # then regenerate with scripts/security/lock-deps.sh.
+        run: pip install --quiet --require-hashes -r requirements-dev.lock
 
       - name: Lint (ruff)
         run: ruff check scripts/ tests/
@@ -128,21 +129,19 @@ jobs:
           node-version: "22"
 
       - name: Install Python dev tooling
-        # Lint/type/complexity tooling lives in the parallel `static` job;
-        # the build job only needs the test runner + SBOM tool + runtime deps.
-        run: |
-          pip install --quiet pytest pytest-cov
-          pip install --quiet 'cyclonedx-bom==7.3.0'   # SBOM (ADR-0004)
-          pip install --quiet -r requirements.txt
+        # Hash-pinned: test runner + SBOM tool + pip-audit + runtime deps, all
+        # from the single dev lock (OpenSSF Scorecard Pinned-Dependencies).
+        # Regenerate with scripts/security/lock-deps.sh.
+        run: pip install --quiet --require-hashes -r requirements-dev.lock
 
       - name: Vulnerability scan (pip-audit)
         # Audit the runtime deps in requirements.txt against the OSV / PyPI
         # advisory database. Fails the build on any non-deferred advisory;
         # use `pip-audit --ignore-vuln <id>` in this step's body to defer
         # with a comment justifying the deferral.
-        run: |
-          pip install --quiet pip-audit
-          pip-audit --strict -r requirements.txt
+        # pip-audit itself is installed via the hash-pinned dev lock in the
+        # step above; here we only run it against the runtime deps.
+        run: pip-audit --strict -r requirements.txt
 
       - name: Unit tests + coverage gate (postbuild_lib 100 %)
         # Single pre-build pytest run with the postbuild_lib coverage gate.

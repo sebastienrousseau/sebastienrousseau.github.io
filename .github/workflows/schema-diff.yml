@@ -59,7 +59,7 @@ jobs:
           node-version: "22"
 
       - name: Install Python build deps
-        run: pip install --quiet -r requirements.txt
+        run: pip install --quiet --require-hashes -r requirements.lock
 
       # Build the PR head first (current working tree), stash the output,
       # then reset the tree to the PR base SHA and build that. Both builds
