@@ -12,9 +12,10 @@
 # the site (transparent inline code, sources-as-footnotes, etc.),
 # and lays out left-bound RTL for AR/HE locales correctly.
 #
-# Image: python:3.13-slim. ~110 MB. Free-tier-friendly.
-
-FROM python:3.13-slim
+# Image: python:3.13-slim. ~110 MB. Free-tier-friendly. Pinned by digest
+# (OpenSSF Scorecard Pinned-Dependencies) — bump deliberately by re-resolving
+# the tag: docker buildx imagetools inspect python:3.13-slim.
+FROM python:3.13-slim@sha256:eb43ff125d8d58d7449dcba7d336c23bcac412f526d861db493b9994d8010280
 
 # WeasyPrint needs pango / cairo / gdk-pixbuf at the system level.
 # fonts-noto-color-emoji + fonts-noto-cjk cover every locale on
@@ -35,8 +36,11 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 WORKDIR /srv
 
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+# Install from the hash-pinned lock (every wheel verified by SHA-256;
+# OpenSSF Scorecard Pinned-Dependencies). Regenerate with
+# scripts/security/lock-deps.sh after editing requirements.txt.
+COPY requirements.lock .
+RUN pip install --no-cache-dir --require-hashes -r requirements.lock
 
 COPY app.py .
 
