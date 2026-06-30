@@ -71,7 +71,7 @@ jobs:
           node-version: "22"
 
       - name: Install Python build deps
-        run: pip install --quiet -r requirements.txt
+        run: pip install --quiet --require-hashes -r requirements.lock
 
       - name: Build site
         run: ./build.sh

@@ -88,10 +88,8 @@ bootstrap:
 	@mise install
 	@echo "==> ssg static-site compiler (0.0.44, pinned — ADR-0002)"
 	@command -v ssg >/dev/null 2>&1 || cargo install ssg --locked --version 0.0.44
-	@echo "==> python build dependencies"
-	@pip install --quiet -r requirements.txt
-	@echo "==> python dev tools (lint / types / tests / sbom — pinned)"
-	@pip install --quiet 'ruff==0.15.9' 'mypy==2.1.0' 'types-PyYAML==6.0.12.20260518' radon pytest pytest-cov 'cyclonedx-bom==7.3.0'
+	@echo "==> python build + dev deps (hash-pinned lock — same as CI)"
+	@pip install --quiet --require-hashes -r requirements-dev.lock
 	@echo "==> bootstrap complete. Next: make build  (first build target: under 10 min)."
 
 # Wipe build output.
