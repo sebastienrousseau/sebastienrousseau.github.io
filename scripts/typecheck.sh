@@ -9,7 +9,6 @@
 # "found twice under different module names" namespace-package trap.
 #
 # RATCHET: when a dir below the tier is cleaned, move it up. Outstanding:
-#   - scripts/postbuild/postbuild_lib   (~74 errors)
 #   - scripts/postbuild  /  scripts/generators  /  scripts/seo_and_audit (~1 each)
 set -euo pipefail
 
@@ -26,6 +25,7 @@ run scripts/editorial      scripts/editorial
 run scripts/dev            scripts/dev
 run scripts/i18n           scripts/i18n
 run scripts/generators     -p build_translations
+run scripts/postbuild:scripts/lib  scripts/postbuild/postbuild_lib
 
 if [[ "$fail" -ne 0 ]]; then
   echo "✗ mypy strict tier has errors" >&2

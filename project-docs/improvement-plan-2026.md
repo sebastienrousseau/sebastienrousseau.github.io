@@ -40,7 +40,7 @@ in `project-docs/audits/baseline-2026-06.md` (Phase −1) via `make metrics`.
 
 ## Phase 1 — Make quality gates real & complete
 - **1.1 — DONE (already gated).** `tests/validation/` (CSP, hreflang, i18n parity/strings/labels/author, lang-leakage, RTL, sitemap, JSON-LD) already gates: `build.sh` runs all 13 under `set -euo pipefail`, and `build.sh` is the CI build step, so a validation failure fails the build job. No new gate needed.
-- **1.2 — DONE (initial tier).** `mypy` (`check_untyped_defs`, `disallow_incomplete_defs`) now gates the strict-clean tier in CI via `scripts/typecheck.sh`: `lib`, `security`, `editorial`, `dev`, `i18n`, `build_translations` (26 files, 0 errors). **Ratchet remaining:** `postbuild_lib` (~74), then `postbuild` / `generators` / `seo_and_audit` (~1 each). Makes the "handled by mypy" comment true.
+- **1.2 — DONE (tier + postbuild_lib).** `mypy` (`check_untyped_defs`, `disallow_incomplete_defs`) gates the strict-clean tier in CI via `scripts/typecheck.sh`: `lib`, `security`, `editorial`, `dev`, `i18n`, `build_translations`, and now `postbuild/postbuild_lib` (6 annotation fixes: widened `str | None` entity params, removed 3 dead `type: ignore`, annotated `_dedupe_blocks` callback). **Ratchet remaining:** `postbuild` / `generators` / `seo_and_audit` (~1 each).
 - **1.3** Expand coverage past the 2 gated modules to repo-wide ≥90% / libs 100%; prioritise the 19 untested modules by blast radius.
 - **1.4** Golden-file snapshot tests per generator (defends against the "gen_papers silently dropped an entry" class).
 
