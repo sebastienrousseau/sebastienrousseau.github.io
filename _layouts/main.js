@@ -126,11 +126,16 @@ document.addEventListener("change", function (event) {
     // dedicated archive URL instead of mutating filter attributes —
     // see _render_filter_form() for why.
     if (target.getAttribute("data-filter-mode") === "navigate") {
+        // Both the base path and the option value are DOM-sourced, so both are
+        // validated against strict allow-lists before they reach location.href
+        // — a crafted attribute or option value can never inject a URL
+        // (js/xss-through-dom). Either failing its check falls back to the
+        // safe default listing.
         var base = target.getAttribute("data-navigate-base") || "/articles";
+        if (!/^\/[a-z0-9/-]+$/.test(base)) {
+            base = "/articles";
+        }
         var v = target.value;
-        // Only navigate for a safe slug value; anything else falls back to the
-        // base listing. Stops a crafted option value reaching location.href
-        // (js/xss-through-dom).
         if (v && !/^[a-z0-9-]+$/.test(v)) {
             v = "";
         }
