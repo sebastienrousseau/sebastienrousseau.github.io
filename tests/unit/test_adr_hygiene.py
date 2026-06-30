@@ -60,7 +60,5 @@ def test_templated_adrs_have_core_sections() -> None:
         if num in _NO_TEMPLATE:
             continue
         text = p.read_text(encoding="utf-8")
-        for section in required:
-            if section not in text:
-                missing.append(f"{p.name}: {section}")
+        missing.extend(f"{p.name}: {s}" for s in required if s not in text)
     assert not missing, "ADRs missing required section(s): " + ", ".join(missing)
