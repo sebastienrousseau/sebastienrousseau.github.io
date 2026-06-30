@@ -28,7 +28,7 @@ def _build_en_url_rewriter() -> re.Pattern[str]:
     /fr/<fr-slug>/ inside French page bodies."""
     slugs = "|".join(re.escape(s) for s in sorted(st.EN_TO_FR.keys(), key=len, reverse=True))
     if not slugs:
-        return re.compile(r"$^")
+        return re.compile(r"(?!)")
     return re.compile(_EN_URL_PATTERN_TMPL.format(slugs=slugs))
 
 
@@ -334,7 +334,7 @@ def _en_descs_to_fr() -> tuple[re.Pattern[str], dict[str, str]]:
         mapping[_html.escape(en_desc, quote=True)] = _html.escape(fr_desc, quote=True)
         mapping[_html.escape(en_desc, quote=False)] = _html.escape(fr_desc, quote=False)
     if not mapping:
-        st._EN_DESC_TO_FR_RE_CACHE = re.compile(r"$^")
+        st._EN_DESC_TO_FR_RE_CACHE = re.compile(r"(?!)")
         st._EN_DESC_TO_FR_MAP_CACHE = {}
         return st._EN_DESC_TO_FR_RE_CACHE, st._EN_DESC_TO_FR_MAP_CACHE
     sorted_keys = sorted(mapping.keys(), key=len, reverse=True)
@@ -372,7 +372,7 @@ def _en_titles_to_fr_re() -> re.Pattern[str]:
         if m:
             raw_titles.append(m.group(1))
     if not raw_titles:
-        st._EN_TITLES_TO_FR_RE_CACHE = re.compile(r"$^")
+        st._EN_TITLES_TO_FR_RE_CACHE = re.compile(r"(?!)")
         return st._EN_TITLES_TO_FR_RE_CACHE
     variants: set[str] = set()
     for t in raw_titles:
