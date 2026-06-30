@@ -38,6 +38,8 @@ self.addEventListener("activate", (event) => {
 });
 
 self.addEventListener("message", (event) => {
+  // Only honour messages from same-origin clients (js/missing-origin-check).
+  if (event.origin && event.origin !== self.location.origin) return;
   if (event.data && event.data.action === "skipWaiting") {
     self.skipWaiting();
   }

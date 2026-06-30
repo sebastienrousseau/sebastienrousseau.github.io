@@ -5,13 +5,13 @@ description: "hsh는 양자 내성 자세로 설계된 Rust 해시 라이브러�
 date: "October 16, 2023"
 language: "ko-KR"
 locale: "ko_KR"
-banner: "https://cloudcdn.pro/stocks/images/markus-spiske-iar-afB0QQw-unsplash.webp"
+banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp"
 banner_alt: "암호화된 바이너리 데이터"
 keywords: "해시, 다이제스트, 비밀번호, Rust, hsh, 양자 내성, 포스트 양자 암호, 보안"
 last_reviewed: "2026-05-16"
 ---
 
-![암호화된 바이너리 데이터](https://cloudcdn.pro/stocks/images/markus-spiske-iar-afB0QQw-unsplash.webp).class=\"img-fluid clearfix\"
+![암호화된 바이너리 데이터](https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp).class=\"img-fluid clearfix\"
 
 ## 통찰
 

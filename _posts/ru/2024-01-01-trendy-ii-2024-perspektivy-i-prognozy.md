@@ -5,7 +5,7 @@ description: "Анализ ключевых трендов искусствен�
 date: "January 1, 2024"
 language: "ru-RU"
 locale: "ru_RU"
-banner: "https://cloudcdn.pro/stocks/images/ai-trends-2024.webp"
+banner: "https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp"
 banner_alt: "Тренды ИИ на 2024 год: визуализация"
 keywords: "тренды ИИ, 2024, мультимодальные LLM, малые модели, регулирование ИИ, ответственный ИИ, генеративный ИИ, агенты"
 ---

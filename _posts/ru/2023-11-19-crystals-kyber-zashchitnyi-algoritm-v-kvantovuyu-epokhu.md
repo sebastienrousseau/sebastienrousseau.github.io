@@ -5,7 +5,7 @@ description: "Как CRYSTALS-Kyber — выбранный NIST квантово
 date: "November 19, 2023"
 language: "ru-RU"
 locale: "ru_RU"
-banner: "https://cloudcdn.pro/stocks/images/crystals-kyber-banner.webp"
+banner: "https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp"
 banner_alt: "Постквантовая криптография: визуализация решёток"
 keywords: "CRYSTALS-Kyber, постквантовая криптография, NIST, FIPS 203, ML-KEM, инкапсуляция ключей, решётки, безопасность"
 ---

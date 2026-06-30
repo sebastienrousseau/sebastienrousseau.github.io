@@ -5,12 +5,12 @@ description: 'pain001 — thư viện Python tự động hoá việc tạo tệ
 date: 'September 29, 2023'
 language: 'vi-VN'
 locale: 'vi_VN'
-banner: 'https://cloudcdn.pro/stocks/images/pain001-banner.webp'
+banner: 'https://cloudcdn.pro/stocks/images/getty-images-dqHskSJDfe4.webp'
 banner_alt: 'Sơ đồ luồng dữ liệu thanh toán từ CSV đến XML ISO 20022'
 keywords: 'ISO 20022, pain.001, Python, thanh toán, SWIFT, SEPA, mã nguồn mở, tự động hoá, MT/MX'
 ---
 
-![Luồng dữ liệu từ CSV đến XML ISO 20022](https://cloudcdn.pro/stocks/images/pain001-banner.webp).class=\"img-fluid clearfix\"
+![Luồng dữ liệu từ CSV đến XML ISO 20022](https://cloudcdn.pro/stocks/images/getty-images-dqHskSJDfe4.webp).class=\"img-fluid clearfix\"
 
 > **TL;DR.** `pain001` là một thư viện Python mã nguồn mở tự động hoá việc tạo tệp thanh toán ISO 20022 pain.001 từ CSV hoặc SQLite. Được thiết kế cho cuộc chuyển đổi toàn cầu từ MT/MX sang tin nhắn có cấu trúc trên SWIFT, SEPA và các sơ đồ thanh toán lớn.
 >

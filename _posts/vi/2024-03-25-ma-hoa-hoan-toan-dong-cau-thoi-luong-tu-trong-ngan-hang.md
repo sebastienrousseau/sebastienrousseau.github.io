@@ -5,12 +5,12 @@ description: 'Cách mã hoá hoàn toàn đồng cấu (FHE) cách mạng hoá b
 date: 'March 25, 2024'
 language: 'vi-VN'
 locale: 'vi_VN'
-banner: 'https://cloudcdn.pro/stocks/images/fhe-banner.webp'
+banner: 'https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp'
 banner_alt: 'Sơ đồ trừu tượng của mã hoá hoàn toàn đồng cấu'
 keywords: 'FHE, mã hoá đồng cấu, mật mã, ngân hàng, quyền riêng tư, lattice, mạng tinh thể, hậu lượng tử'
 ---
 
-![Mã hoá hoàn toàn đồng cấu](https://cloudcdn.pro/stocks/images/fhe-banner.webp).class=\"img-fluid clearfix\"
+![Mã hoá hoàn toàn đồng cấu](https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp).class=\"img-fluid clearfix\"
 
 > **TL;DR.** Mã hoá hoàn toàn đồng cấu (FHE) cho phép tính toán trên dữ liệu được mã hoá mà không cần giải mã trước. Đối với các ngân hàng, đây là một sự thay đổi cấu trúc: dữ liệu khách hàng có thể được xử lý bởi các bên thứ ba mà vẫn được bảo vệ về mặt mật mã.
 >

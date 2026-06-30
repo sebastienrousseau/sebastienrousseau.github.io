@@ -5,7 +5,7 @@ description: "Yilei Chen tarafından öne sürülen yeni bir kuantum algoritmas�
 date: "April 15, 2024"
 language: "tr-TR"
 locale: "tr_TR"
-banner: "https://cloudcdn.pro/stocks/images/digitale-constellation.webp"
+banner: "https://cloudcdn.pro/stocks/images/digital-nodes.webp"
 banner_alt: "Kafes tabanlı kriptografinin görselleştirmesi"
 keywords: "kuantum, kafes tabanlı, kriptografi, LWE, post-kuantum, Yilei Chen, araştırma"
 ---

@@ -1042,11 +1042,18 @@ def test_inject_prev_next_nav_no_op_without_blogposting():
     assert inject_prev_next_nav(html, "foo", {"foo": (None, ("x", "X"))}) == html
 
 
-def test_inject_prev_next_nav_no_op_when_slug_not_in_index():
+def test_inject_prev_next_nav_emits_stub_when_slug_not_in_index():
+    # Pages that ship BlogPosting JSON-LD but aren't in the dated nav chain
+    # (landing pages with frontmatter schema=Article, dateless reports) still
+    # need a `.post-pagination` block so validate_jsonld's furniture contract
+    # holds. The block is two stub spans — aria-hidden so it's invisible.
     from postbuild_lib.article_furniture import inject_prev_next_nav
 
     html = _wrap_blogposting("<p>body</p>")
-    assert inject_prev_next_nav(html, "unknown", {}) == html
+    out = inject_prev_next_nav(html, "unknown", {})
+    assert 'class="post-pagination"' in out
+    assert out.count('class="post-pagination-stub"') == 2
+    assert 'aria-hidden="true"' in out
 
 
 def test_inject_prev_next_nav_idempotent_when_pagination_already_present():
@@ -1864,7 +1871,6 @@ def test_inject_lang_switcher_is_idempotent():
 # inject_breadcrumbs — visible trail mirroring the BreadcrumbList JSON-LD
 # ---------------------------------------------------------------------------
 
-_CRUMB_BASE = "https://sebastienrousseau.com"
 _CRUMB_LD = (
     '<script type="application/ld+json">{"@graph":[{"@type":"BlogPosting"},'
     '{"@type":"BreadcrumbList","itemListElement":['

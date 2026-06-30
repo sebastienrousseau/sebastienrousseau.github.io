@@ -5,7 +5,7 @@ description: "Глубокое погружение в технические о
 date: "January 9, 2018"
 language: "ru-RU"
 locale: "ru_RU"
-banner: "https://cloudcdn.pro/stocks/images/launchpresso-VVMyDDjzkCM.webp"
+banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp"
 banner_alt: "Цепь блоков, соединённых криптографическими хешами"
 keywords: "блокчейн, хеширование, SHA-256, цифровые подписи, консенсус, proof-of-work, proof-of-stake, Merkle-дерево, P2P-сеть"
 ---

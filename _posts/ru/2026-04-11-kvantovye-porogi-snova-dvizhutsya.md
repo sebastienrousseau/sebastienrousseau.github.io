@@ -5,7 +5,7 @@ description: "Новая работа предполагает, что алго�
 date: "April 11, 2026"
 language: "ru-RU"
 locale: "ru_RU"
-banner: "https://cloudcdn.pro/stocks/images/quantum-thresholds.webp"
+banner: "https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp"
 banner_alt: "Квантовые пороги: снижение требований к кубитам"
 keywords: "алгоритм Шора, кубиты, криптографически значимые квантовые вычисления, RSA-2048, постквантовая криптография, ML-KEM, миграция"
 ---

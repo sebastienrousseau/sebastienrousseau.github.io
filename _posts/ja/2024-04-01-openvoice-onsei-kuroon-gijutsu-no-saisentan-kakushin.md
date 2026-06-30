@@ -5,13 +5,13 @@ description: "OpenVoice、オープンソース音声クローン技術、銀行
 date: "April 1, 2024"
 language: "ja-JP"
 locale: "ja_JP"
-banner: "https://cloudcdn.pro/stocks/images/icons8-team-r-enAOPw8Rs-unsplash.webp"
+banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp"
 banner_alt: "マイクと音声のビジュアル"
 keywords: "OpenVoice, 音声クローン, 音声 AI, ディープフェイク, 不正, 銀行認証, ボイスバイオメトリクス"
 last_reviewed: "2026-05-11"
 ---
 
-![マイクと音声のビジュアル](https://cloudcdn.pro/stocks/images/icons8-team-r-enAOPw8Rs-unsplash.webp).class=\"img-fluid clearfix\"
+![マイクと音声のビジュアル](https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp).class=\"img-fluid clearfix\"
 
 ## インサイト
 

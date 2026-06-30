@@ -376,7 +376,6 @@ def inject_lcp_preload(html: str) -> tuple[str, int]:
 # ---------------------------------------------------------------------------
 
 _CDN_HOST = "https://cloudcdn.pro"
-_CDN_TRANSFORM_PREFIX = f"{_CDN_HOST}/api/transform?"
 _RASTER_EXT_RE = re.compile(r"\.(?:webp|png|jpg|jpeg)(?:[?#]|$)", re.IGNORECASE)
 _IMG_TAG_TRANSFORM_RE = re.compile(r"<img\b([^>]*)/?>", re.IGNORECASE)
 _IMG_SRC_ANY_RE = re.compile(

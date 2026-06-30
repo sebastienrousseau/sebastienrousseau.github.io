@@ -9,7 +9,7 @@ This guide shows the build steps of the Static Site Generator site builder for t
 This list shows the main topics in this guide.
 
 - [Top-level flow](#top-level-flow)
-- [The seven build stages](#the-seven-build-stages)
+- [The build pipeline](#the-build-pipeline)
 - [`scripts/` inventory](#scripts-inventory)
 - [`postbuild_lib/` modules](#postbuild_lib-modules)
 - [Single-page postbuild orchestration](#single-page-postbuild-orchestration)
@@ -71,40 +71,48 @@ The build is a simple chain where each tool reads files and saves files, which m
 
 ---
 
-## The seven build stages
+## The build pipeline
 
-The build runner uses seven steps to change text drafts into web pages.
+`build.sh` is the single source of truth for build order. It runs three
+phases: listing-regen + enrichment on a throwaway `_posts_build` copy, the
+`ssg` Rust compile, then a chain of post-compile generators and a per-page
+postbuild pass over `public/`. The steps below are in execution order;
+`tests/unit/test_architecture_doc_current.py` fails if a
+`python3 scripts/...py` step is added to `build.sh` without an entry here.
 
-### 1. `ssg` (Static Site Generator)
+### Phase A — pre-compile (operates on the `_posts_build` copy + `_data/`)
 
-The Rust tool reads markdown posts and layout files to build the English pages, and it picks the layout based on the settings in the frontmatter block.
-The frontmatter uses YAML keys between two lines to define the title, description, and keywords.
-To keep the site secure, the tool puts style and script code into files with unique hashes, which the script later replaces with real hashes.
+1. **`scripts/postbuild/regen_slug_maps.py`** — rewrites `_data/i18n/<lang>/slugs.json` from the actual `_posts/<lang>/*.md` filenames (idempotent; keeps EN↔locale slug pairs in sync).
+2. **`scripts/postbuild/regen_homepage.py`** — rewrites the "From the desk" card grid in `index.md` from the most recent dated EN posts.
+3. **`scripts/postbuild/post_enrich.py`** — injects article furniture (lead aside, related-posts, review date) into the build copy. Requires `--dir` (ADR-0003; never mutates committed source by default).
+4. **`scripts/generators/build_tags.py`** — builds the tag taxonomy and per-post tag badges/meta.
 
-### 2. `scripts/generators/build_topics.py`
+### Phase B — `ssg` (Static Site Generator)
 
-Five topic groups organize the articles to build a topic page and language lists, and each group uses a list of article paths and translated titles to write the pages.
+The Rust tool reads the `_posts_build` markdown and `_layouts/` and writes the English pages to `public/`, choosing each layout from the frontmatter. It externalises inline CSS/JS to `/_csp/<hash>` files with placeholder integrity hashes that postbuild later replaces with real SHA-256 values.
 
-### 3. `scripts/generators/build_translations.py`
+### Phase C — post-compile generators (operate on `public/`)
 
-The translation tool builds localized pages for each active language in the registry, and it reads the English pages to swap the main text, menus, footers, and buttons.
-The script translates UI terms, updates links, and sets response headers. The run writes a multilingual directory tree and search files.
+5. **`scripts/seo_and_audit/fetch_metrics.py`** — fetches live crates.io download + GitHub star/fork totals into `_data/proof/metrics.json`.
+6. **`scripts/generators/build_case_studies.py`** — renders the outcome-led case-study pages.
+7. **`scripts/generators/build_topics.py`** — topic-cluster pillar pages and the topic hub from the `TOPICS` taxonomy (per-locale clones generated downstream).
+8. **`scripts/generators/build_tag_landings.py`** — per-tag landing pages.
+9. **`scripts/generators/build_listings.py`** — the `/articles/` index and related listing pages, scanned from `_posts/`.
+10. **`scripts/generators/build_oembed.py`** — oEmbed JSON endpoints for each page.
+11. **`scripts/generators/build_translations/__main__.py`** — the localised page tree for every active language in the registry: swaps body text, chrome, UI strings, hreflang, and search indexes.
+12. **`scripts/generators/build_lang_feeds.py`** — RSS, Atom, news-sitemap, and JSON feeds per language.
+13. **`scripts/generators/build_agent_api.py`** — JSON endpoints exposing articles/topics for AI and search clients.
+14. **`scripts/generators/build_lead_magnets.py`** — compiles source files into PDF resources (checklists, etc.).
+15. **`scripts/generators/build_news_sitemap.py`** — the Google News sitemap.
 
-### 4. `scripts/generators/build_lang_feeds.py`
+### Phase D — postbuild + finalisation
 
-This script creates RSS, Atom, news-sitemap, and JSON feeds for each language. It reads frontmatter records directly from the source markdown files to build the feeds.
+16. **`scripts/postbuild/postbuild.py`** — the per-page optimisation pass: real SRI hashes, per-page CSP JSON-LD hashes, structured data, og/twitter tags, image width/height stamping, asset fingerprinting, breadcrumbs, and the rest of the page furniture.
+17. **`scripts/seo_and_audit/build_rag_corpus.py`** — the RAG/LLM corpus (`feed.jsonl`, per-tag JSONL, MCP resources).
+18. **`scripts/postbuild/fix_lang_switcher.py`** — rewrites the language-switcher hrefs to per-locale targets.
+19. **`scripts/security/sigstore_sign.py`** — signs dated articles with Sigstore (best-effort; skipped when no signing config is present).
 
-### 5. `scripts/generators/build_agent_api.py`
-
-JSON endpoints expose articles and topics for search tools and AI clients. These feeds are linked from the plugin manifests and described by the OpenAPI schema.
-
-### 6. `scripts/generators/build_lead_magnets.py`
-
-This tool compiles source files into PDF resources such as checklists.
-
-### 7. `scripts/postbuild.py`
-
-The postbuild script processes every page to apply optimization steps before saving.
+After these, `build.sh` runs the validation gate (`tests/validation/`) under `set -euo pipefail`, so any CSP/hreflang/i18n/RTL/sitemap/JSON-LD failure fails the build.
 
 ---
 

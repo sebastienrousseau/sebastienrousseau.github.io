@@ -5,7 +5,7 @@ description: "Le Chat è il prodotto di IA conversazionale di Mistral AI, costru
 date: "March 04, 2024"
 language: "it-IT"
 locale: "it_IT"
-banner: "https://cloudcdn.pro/stocks/images/abstract-digitale-art-of-a-cat.webp"
+banner: "https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp"
 banner_alt: "Le Chat di Mistral AI"
 keywords: "Mistral, Le Chat, IA conversazionale, Francia, Europa, sovranità, LLM"
 ---

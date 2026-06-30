@@ -5,7 +5,7 @@ description: "Yilei Chen'in LWE'yi çözmek için kuantum algoritmasında bir ha
 date: "April 22, 2024"
 language: "tr-TR"
 locale: "tr_TR"
-banner: "https://cloudcdn.pro/stocks/images/digitale-nodes.webp"
+banner: "https://cloudcdn.pro/stocks/images/digital-nodes.webp"
 banner_alt: "Kriptografik hatanın soyut görselleştirmesi"
 keywords: "kuantum, kafes tabanlı, kriptografi, LWE, Yilei Chen, hata, post-kuantum"
 ---

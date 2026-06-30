@@ -5,7 +5,7 @@ description: "コーポレート金融サービスのためのポスト量子移
 date: "May 14, 2026"
 language: "ja-JP"
 locale: "ja_JP"
-banner: "https://cloudcdn.pro/stocks/images/markus-spiske-iar-afB0QQw-unsplash.webp"
+banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp"
 banner_alt: "量子安全な暗号化されたデータ"
 keywords: "ポスト量子移行, コーポレート金融, トレジャリー, 台帳, 量子安全, PQC, 暗号アグリティ"
 last_reviewed: "2026-05-14"

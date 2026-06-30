@@ -5,13 +5,13 @@ description: "dtt は、解析、フォーマット、タイムゾーン操作�
 date: "December 4, 2023"
 language: "ja-JP"
 locale: "ja_JP"
-banner: "https://cloudcdn.pro/stocks/images/luca-bravo-VowIH4-VlIw-unsplash.webp"
+banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp"
 banner_alt: "ガラスの建物の上の時計"
 keywords: "dtt, 日付, 時刻, Rust, タイムゾーン, RFC 3339, ISO 8601, ライブラリ, 解析, フォーマット"
 last_reviewed: "2026-05-11"
 ---
 
-![ガラスの建物の上の時計](https://cloudcdn.pro/stocks/images/luca-bravo-VowIH4-VlIw-unsplash.webp).class=\"img-fluid clearfix\"
+![ガラスの建物の上の時計](https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp).class=\"img-fluid clearfix\"
 
 ## インサイト
 

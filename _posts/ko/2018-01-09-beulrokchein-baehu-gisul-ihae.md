@@ -5,13 +5,13 @@ description: "블록체인을 구성하는 암호·네트워크·합의 각 계�
 date: "January 9, 2018"
 language: "ko-KR"
 locale: "ko_KR"
-banner: "https://cloudcdn.pro/stocks/images/markus-spiske-466ENaLuhLY-unsplash.webp"
+banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp"
 banner_alt: "터미널 화면 위의 코드"
 keywords: "블록체인, 암호, 해시, 디지털 서명, 머클 트리, 합의, 작업 증명, P2P 네트워크"
 last_reviewed: "2026-05-16"
 ---
 
-![터미널 화면 위의 코드](https://cloudcdn.pro/stocks/images/markus-spiske-466ENaLuhLY-unsplash.webp).class=\"img-fluid clearfix\"
+![터미널 화면 위의 코드](https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp).class=\"img-fluid clearfix\"
 
 ## 통찰
 

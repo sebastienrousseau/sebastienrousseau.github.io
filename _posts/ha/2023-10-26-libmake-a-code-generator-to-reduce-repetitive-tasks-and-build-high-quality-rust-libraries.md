@@ -10,7 +10,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "Oct 26, 2023"
-description: "LibMake is a Rust CLI tool that generates a complete library scaffold — Cargo.toml, src/lib.rs with doc templates, test and benchmark harnesses, and GitHub Actions CI — from a single command or a versioned TOML/YAML config file."
+description: "LibMake Rust CLI tool ne da ke samar da cikakken library scaffold — Cargo.toml, src/lib.rs tare da doc templates, test da benchmark harnesses, da GitHub Actions CI — daga command guda ko versioned TOML/YAML config file."
 format-detection: "telephone=no"
 hreflang: "ha"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -36,7 +36,7 @@ referrer: "no-referrer"
 revisit-after: "7 days"
 robots: "index, follow"
 short_name: "sebastienrousseau"
-subtitle: "Scaffold a production-ready Rust library with CI, tests, and docs in under 60 seconds"
+subtitle: "Gina production-ready Rust library scaffold tare da CI, tests da docs cikin ƙasa da daƙiƙa 60"
 tags: "LibMake, RustCodeGenerator, CargoScaffold, RustLibraryTemplate, TeraTemplating, GitHubActionsRust, CargoAudit, RustAPIGuidelines, BoilerplateGenerator, RustCI, ISO 20022, post-quantum cryptography, AI, Rust, open source"
 theme-color: "0, 67, 165"
 title: "LibMake: Rust Library Scaffold Generator"
@@ -54,7 +54,7 @@ atom_link: "https://sebastienrousseau.com/2023-10-26-libmake-a-code-generator-to
 category: "Open Source"
 docs: "https://validator.w3.org/feed/docs/rss2.html"
 generator: "Static Site Generator (SSG) (version 0.0.26)"
-item_description: "LibMake is a Rust CLI tool that generates a complete library scaffold — Cargo.toml, src/lib.rs with doc templates, test and benchmark harnesses, and GitHub Actions CI — from a single command or a versioned TOML/YAML config file."
+item_description: "LibMake Rust CLI tool ne da ke samar da cikakken library scaffold — Cargo.toml, src/lib.rs tare da doc templates, test da benchmark harnesses, da GitHub Actions CI — daga command guda ko versioned config file."
 item_guid: "https://sebastienrousseau.com/2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries/rss.xml"
 item_link: "https://sebastienrousseau.com/2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries/rss.xml"
 item_pub_date: "Thu, 26 Oct 2023 11:21:00 +0000"
@@ -75,7 +75,7 @@ apple-touch-fullscreen: "yes"
 msapplication-navbutton-color: "0, 67, 165"
 twitter_card: "summary"
 twitter_creator: "@wwdseb"
-twitter_description: "LibMake is a Rust CLI tool that generates a complete library scaffold — Cargo.toml, src/lib.rs with doc templates, test and benchmark harnesses, and GitHub Actions CI — from a single command or a versioned TOML/YAML config file."
+twitter_description: "LibMake yana samar da Rust library scaffold cikakke daga command guda ko config file: Cargo.toml, src/lib.rs, tests, benchmarks da GitHub Actions CI."
 twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 twitter_image_alt: "Logo of Sebastien Rousseau"
 twitter_site: "@wwdseb"
@@ -84,54 +84,50 @@ twitter_url: "https://sebastienrousseau.com/2023-10-26-libmake-a-code-generator-
 author_website: "https://sebastienrousseau.com/2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries/index.html"
 author_twitter: "@wwdseb"
 author_location: "London, UK"
-thanks: "Thanks for reading!"
+thanks: "Na gode da karantawa!"
 site_last_updated: "2023-10-26"
 site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 site_software: "Static Site Generator, Rust"
-excerpt: "LibMake is an open-source Rust CLI tool that generates a complete library scaffold from a single command or a TOML/YAML config file — producing Cargo.toml, a doc-commented src/lib.rs, integration test and benchmark harnesses, and a GitHub Actions CI workflow covering stable/beta/nightly Rust, clippy, rustfmt, and cargo-audit."
+excerpt: "LibMake Rust CLI tool ne na open-source da ke samar da cikakken library scaffold daga command guda ko TOML/YAML config file — yana ƙirƙirar Cargo.toml, src/lib.rs mai doc comments, integration test da benchmark harnesses, da GitHub Actions CI workflow da ke rufe stable/beta/nightly Rust, clippy, rustfmt da cargo-audit."
 last_reviewed: "2026-05-24"
 ---
 
-<!-- translation-stub: replace this body in Claude Code -->
-
-> _Translation pending — read the [English original](/2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries/) while we localise._
-
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
-<p class="post-lead-tldr"><strong>TL;DR.</strong> <a href="https://github.com/sebastienrousseau/libmake">LibMake</a> is an open-source Rust CLI tool (<code>cargo install libmake</code>) that generates a production-ready library scaffold from CLI flags or a versioned config file (TOML, YAML, JSON, or CSV), producing a complete project structure with Cargo.toml, src/lib.rs, tests/, benches/, and a GitHub Actions CI workflow in a single invocation.</p>
-<p class="post-lead-heading"><strong>Key takeaways</strong></p>
+<aside class="post-lead" aria-label="Takaitaccen labari">
+<p class="post-lead-tldr"><strong>A takaice.</strong> <a href="https://github.com/sebastienrousseau/libmake">LibMake</a> Rust CLI tool ne na open-source (<code>cargo install libmake</code>) da ke samar da production-ready library scaffold daga CLI flags ko versioned config file (TOML, YAML, JSON, ko CSV), yana ƙirƙirar cikakken project structure da Cargo.toml, src/lib.rs, tests/, benches/, da GitHub Actions CI workflow a invocation guda.</p>
+<p class="post-lead-heading"><strong>Mahimman bayanai</strong></p>
 <ul class="post-lead-takeaways">
-  <li><strong>Complete scaffold, not just a Cargo.toml.</strong> LibMake generates src/lib.rs with pre-populated module doc comments and <code>#![doc = include_str!("../README.md")]</code>, an integration test file, a Criterion benchmark harness, CONTRIBUTING.md, and MIT/Apache-2.0 dual-licence files — everything needed to pass <code>cargo test</code> and <code>cargo bench</code> immediately after generation.</li>
-  <li><strong>Config-file mode enables team-level templates.</strong> Committing a <code>libmake.toml</code> to a repository makes scaffold generation reproducible: every developer runs <code>libmake --config libmake.toml</code> and gets identical structure, enforcing conventions without a shared mental checklist.</li>
-  <li><strong>GitHub Actions workflow covers the full Rust CI matrix.</strong> The generated workflow includes separate jobs for testing on stable, beta, and nightly toolchains, clippy linting with <code>-D warnings</code>, rustfmt format checking, and cargo-audit for dependency vulnerability scanning.</li>
-  <li><strong>Tera templates are user-overridable.</strong> LibMake uses the Tera templating engine internally; custom template directories can be provided via the <code>--template</code> flag, so teams with non-standard directory layouts or additional file requirements are not locked into the default output.</li>
+  <li><strong>Cikakken scaffold, ba Cargo.toml kawai ba.</strong> LibMake yana samar da src/lib.rs tare da module doc comments da aka riga aka cika da <code>#![doc = include_str!("../README.md")]</code>, integration test file, Criterion benchmark harness, CONTRIBUTING.md, da MIT/Apache-2.0 dual-licence files — duk abin da ake buƙata don <code>cargo test</code> da <code>cargo bench</code> su wuce nan take bayan generation.</li>
+  <li><strong>Config-file mode yana ba team-level templates dama.</strong> Commit ɗin <code>libmake.toml</code> zuwa repository yana sa scaffold generation ya zama reproducible: kowane developer yana gudu <code>libmake --config libmake.toml</code> kuma yana samun structure iri ɗaya, yana enforce conventions ba tare da shared mental checklist ba.</li>
+  <li><strong>GitHub Actions workflow yana rufe cikakken Rust CI matrix.</strong> Generated workflow yana da jobs daban don testing a stable, beta da nightly toolchains, clippy linting da <code>-D warnings</code>, rustfmt format checking, da cargo-audit don dependency vulnerability scanning.</li>
+  <li><strong>Za a iya override Tera templates.</strong> LibMake yana amfani da Tera templating engine a ciki; ana iya bayar da custom template directories ta <code>--template</code> flag, don haka teams masu non-standard directory layout ko ƙarin file requirements ba sa kullewa a default output.</li>
 </ul>
-<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/">RustLogs (RLG): Structured Logging Library for Rust</a>, <a href="https://sebastienrousseau.com/2018-02-15-the-making-of-the-express-transaction-credits-platform/">The Making of the Express Transaction Credits Platform</a>, <a href="https://sebastienrousseau.com/2024-01-15-alien-studio-revolutionising-art-with-ai-photography/">Alien Studio: My Tech-to-Art Journey in Photography</a>.</p>
+<p class="post-lead-related"><strong>Karin karatu:</strong> <a href="https://sebastienrousseau.com/2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/">RustLogs (RLG): structured logging library don Rust</a>, <a href="https://sebastienrousseau.com/2018-02-15-the-making-of-the-express-transaction-credits-platform/">Yadda aka gina Express Transaction Credits Platform</a>, <a href="https://sebastienrousseau.com/2024-01-15-alien-studio-revolutionising-art-with-ai-photography/">Alien Studio: tafiyata daga fasaha zuwa art a photography</a>.</p>
 </aside>
 <!-- lead-end -->
 
-> **Executive Summary / Key Takeaways**
+> **Takaitaccen bayani / mahimman bayanai**
 >
-> - **[LibMake ⧉][00]** is an open-source Rust CLI tool installed via `cargo install libmake` that generates a complete library scaffold from CLI flags or a config file (TOML, YAML, JSON, or CSV), with output covering Cargo.toml, source, tests, benchmarks, documentation, and CI in one invocation.
-> - **The generated project follows Rust API Guidelines** conventions: module-level and item-level doc comments in src/lib.rs, `#![deny(missing_docs)]` in the crate root, and a README wired to the crate documentation via `#![doc = include_str!("../README.md")]`.
-> - **Config-file mode** (`--config libmake.toml`) allows teams to commit a single file that fully specifies their library template — author, licence, categories, Rust edition, MSRV, repository URL — making scaffold generation repeatable and diffable in Git.
-> - **The GitHub Actions workflow** generated by LibMake tests on stable, beta, and nightly Rust toolchains, enforces `clippy -D warnings`, checks `rustfmt`, and runs `cargo-audit` for known CVEs in the dependency tree.
-> - **Tera templates** power the code generation: LibMake ships with a default template set but accepts a custom template directory via `--template`, so non-standard project layouts and additional generated files are supported without forking the tool.
+> - **[LibMake ⧉][00]** Rust CLI tool ne na open-source da ake install ta `cargo install libmake`, yana samar da cikakken library scaffold daga CLI flags ko config file (TOML, YAML, JSON, ko CSV), tare da output da ya ƙunshi Cargo.toml, source, tests, benchmarks, documentation da CI a invocation guda.
+> - **Generated project yana bin Rust API Guidelines**: module-level da item-level doc comments a src/lib.rs, `#![deny(missing_docs)]` a crate root, da README da aka haɗa da crate documentation ta `#![doc = include_str!("../README.md")]`.
+> - **Config-file mode** (`--config libmake.toml`) yana ba teams damar commit single file da ke ƙayyade library template gaba ɗaya — author, licence, categories, Rust edition, MSRV, repository URL — yana sa scaffold generation repeatable kuma diffable a Git.
+> - **GitHub Actions workflow** da LibMake ke generate yana test a stable, beta da nightly Rust toolchains, yana enforce `clippy -D warnings`, yana check `rustfmt`, kuma yana run `cargo-audit` don known CVEs a dependency tree.
+> - **Tera templates** ne ke sarrafa code generation: LibMake yana zuwa da default template set amma yana karɓar custom template directory ta `--template`, don haka non-standard project layouts da ƙarin generated files suna samun support ba tare da forking tool ba.
 
-[**LibMake ⧉**][00] is an open-source Rust CLI and library that generates a complete library project scaffold from a single invocation. It targets the gap between `cargo new --lib` (which creates only a minimal Cargo.toml and src/lib.rs) and a production-ready library setup (which requires manually adding doc comments, CI, test harnesses, benchmark structure, CONTRIBUTING.md, and licence files).
+[**LibMake ⧉**][00] Rust CLI da library ne na open-source da ke samar da complete library project scaffold daga invocation guda. Yana rufe tazarar da ke tsakanin `cargo new --lib` (wanda ke ƙirƙirar minimal Cargo.toml da src/lib.rs kawai) da production-ready library setup (wanda ke buƙatar ƙara doc comments, CI, test harnesses, benchmark structure, CONTRIBUTING.md da licence files da hannu).
 
-This article describes what LibMake generates, how the config-file and CLI modes work, the generated CI structure, and the templating system.
+Wannan labarin yana bayyana abin da LibMake ke generate, yadda config-file da CLI modes ke aiki, generated CI structure, da templating system.
 
-## Installation and Basic Usage
+## Installation da basic usage
 
-LibMake is published on [crates.io](https://crates.io/crates/libmake) and installed via Cargo:
+An publish LibMake a [crates.io](https://crates.io/crates/libmake), kuma ana install da Cargo:
 
 ```bash
 cargo install libmake
 ```
 
-The minimal CLI invocation generates a named library in the current directory:
+Minimal CLI invocation yana generate named library a current directory:
 
 ```bash
 libmake \
@@ -147,11 +143,11 @@ libmake \
   --output "my_library"
 ```
 
-Additional optional flags include `--categories`, `--keywords`, `--homepage`, `--documentation`, `--readme`, and `--build`.
+Ƙarin optional flags sun haɗa da `--categories`, `--keywords`, `--homepage`, `--documentation`, `--readme`, da `--build`.
 
-## Config-File Mode
+## Config-file mode
 
-For team use, all CLI flags can be expressed in a TOML config file:
+Don team use, ana iya bayyana duk CLI flags a cikin TOML config file:
 
 ```toml
 # libmake.toml
@@ -169,17 +165,17 @@ categories  = ["algorithms", "data-structures"]
 keywords    = ["rust", "library"]
 ```
 
-Invoked as:
+Ana kira da:
 
 ```bash
 libmake --config libmake.toml
 ```
 
-LibMake also accepts JSON, YAML, and CSV config formats via `--config-json`, `--config-yaml`, and `--config-csv` flags respectively. Committing `libmake.toml` to the repository root gives every contributor a reproducible scaffold baseline, and changes to the template configuration are visible in Git diffs.
+LibMake yana kuma karɓar JSON, YAML, da CSV config formats ta `--config-json`, `--config-yaml`, da `--config-csv` flags bi da bi. Commit ɗin `libmake.toml` zuwa repository root yana ba kowane contributor reproducible scaffold baseline, kuma changes zuwa template configuration suna bayyana a Git diffs.
 
-## Generated Project Structure
+## Generated project structure
 
-A LibMake invocation creates the following layout:
+LibMake invocation yana ƙirƙirar layout mai zuwa:
 
 ```
 my_library/
@@ -199,15 +195,15 @@ my_library/
 └── README.md
 ```
 
-The generated `src/lib.rs` includes a crate-level doc comment, `#![deny(missing_docs)]`, `#![doc = include_str!("../README.md")]` to pull the README into rustdoc, and a stub public type with an associated doc comment. These choices follow the Rust API Guidelines requirement that all public items have documentation.
+Generated `src/lib.rs` yana ƙunshe da crate-level doc comment, `#![deny(missing_docs)]`, `#![doc = include_str!("../README.md")]` don jawo README zuwa rustdoc, da stub public type tare da associated doc comment. Waɗannan choices suna bin requirement na Rust API Guidelines cewa duk public items su kasance da documentation.
 
-The generated `benches/lib_benchmarks.rs` uses [Criterion.rs](https://github.com/bheisler/criterion.rs) and requires adding `criterion` as a dev-dependency, which LibMake inserts into `Cargo.toml` automatically.
+Generated `benches/lib_benchmarks.rs` yana amfani da [Criterion.rs](https://github.com/bheisler/criterion.rs) kuma yana buƙatar ƙara `criterion` a matsayin dev-dependency; LibMake yana saka shi cikin `Cargo.toml` ta atomatik.
 
-## GitHub Actions CI Workflow
+## GitHub Actions CI workflow
 
-The generated `.github/workflows/release.yml` runs five jobs on every push and pull request:
+Generated `.github/workflows/release.yml` yana run jobs biyar a kowane push da pull request:
 
-| Job | Toolchain | What it checks |
+| Job | Toolchain | Abin da yake check |
 |---|---|---|
 | `test` | stable, beta, nightly (matrix) | `cargo test --all-features` |
 | `clippy` | stable | `cargo clippy -- -D warnings` |
@@ -215,11 +211,11 @@ The generated `.github/workflows/release.yml` runs five jobs on every push and p
 | `audit` | stable | `cargo audit` (cargo-audit installed in job) |
 | `doc` | stable | `cargo doc --no-deps` (fails on missing docs) |
 
-The nightly job has `continue-on-error: true` so a nightly regression does not block merges, while still surfacing the failure in the workflow run.
+Nightly job yana da `continue-on-error: true`, don haka nightly regression ba ya block merges, amma har yanzu failure yana bayyana a workflow run.
 
-## Templating with Tera
+## Templating da Tera
 
-LibMake uses the [Tera](https://keats.github.io/tera/) template engine — a Jinja2-like syntax for Rust — to render all generated files. Each template receives the full config struct as context:
+LibMake yana amfani da [Tera](https://keats.github.io/tera/) template engine — syntax mai kama da Jinja2 don Rust — don render duk generated files. Kowane template yana karɓar full config struct a matsayin context:
 
 ```
 {{ name }}            → my_library
@@ -228,46 +224,46 @@ LibMake uses the [Tera](https://keats.github.io/tera/) template engine — a Jin
 {{ description }}     → A Rust library for doing useful things
 ```
 
-Custom template directories are supported via the `--template` flag:
+Ana support custom template directories ta `--template` flag:
 
 ```bash
 libmake --config libmake.toml --template ./my_templates/
 ```
 
-The custom directory must mirror the default template structure (the same filenames). Any file present in the custom directory overrides the corresponding built-in template; files not present in the custom directory fall back to the built-in version. This allows partial overrides — for example, replacing only the CI workflow template while keeping the default src/lib.rs and Cargo.toml templates.
+Custom directory dole ya mirror default template structure (filenames iri ɗaya). Duk file da ke cikin custom directory yana override corresponding built-in template; files da ba su cikin custom directory suna fallback zuwa built-in version. Wannan yana ba da partial overrides — misali, maye gurbin CI workflow template kawai yayin da ake barin default src/lib.rs da Cargo.toml templates.
 
-## Frequently Asked Questions
+## Tambayoyin da ake yawan yi
 
-**How does LibMake differ from `cargo new --lib`?**
-`cargo new --lib` creates a minimal project with only `Cargo.toml` and `src/lib.rs` (containing a single `#[cfg(test)]` block). LibMake generates the full structure — integration tests, benchmarks, CI, CONTRIBUTING.md, dual-licence files, and a properly documented src/lib.rs — configured with the project's actual metadata rather than placeholders.
+**Yaya LibMake ya bambanta da `cargo new --lib`?**
+`cargo new --lib` yana ƙirƙirar minimal project da `Cargo.toml` da `src/lib.rs` kaɗai (mai ɗauke da `#[cfg(test)]` block guda). LibMake yana generate full structure — integration tests, benchmarks, CI, CONTRIBUTING.md, dual-licence files, da src/lib.rs mai documentation mai kyau — configured da actual metadata na project maimakon placeholders.
 
-**Can LibMake be used with an existing Cargo workspace?**
-LibMake generates a standalone crate directory. To add the generated crate to an existing workspace, add the output path to the workspace `members` array in the root `Cargo.toml`. LibMake does not modify existing workspace files.
+**Za a iya amfani da LibMake da existing Cargo workspace?**
+LibMake yana generate standalone crate directory. Don ƙara generated crate zuwa existing workspace, a ƙara output path zuwa workspace `members` array a root `Cargo.toml`. LibMake ba ya modify existing workspace files.
 
-**Can I update the scaffold templates after initial generation?**
-LibMake generates files once; it does not track or update previously generated projects. To adopt updated templates, the recommended approach is to re-run LibMake into a temporary directory and diff the result against the existing crate, applying desired changes selectively.
+**Zan iya update scaffold templates bayan initial generation?**
+LibMake yana generate files sau ɗaya; ba ya track ko update projects da aka generate a baya. Don amfani da updated templates, recommended approach shi ne a sake run LibMake cikin temporary directory sannan a diff result da existing crate, a apply changes da ake so selectively.
 
-**What Rust editions and MSRV values does LibMake support?**
-LibMake accepts any string for `--edition` and `--rustversion` and writes the values directly to `Cargo.toml`. It does not validate whether the specified edition or MSRV is a real Rust version, so callers are responsible for supplying correct values.
+**Wane Rust editions da MSRV values LibMake yake support?**
+LibMake yana karɓar kowace string don `--edition` da `--rustversion` kuma yana rubuta values kai tsaye zuwa `Cargo.toml`. Ba ya validate ko specified edition ko MSRV real Rust version ne, don haka callers ne ke da alhakin bayar da correct values.
 
-## References
+## Manazarta
 
-1. Rousseau, S. *LibMake — A code generator to reduce repetitive tasks and build high-quality Rust libraries*. GitHub, 2023. https://github.com/sebastienrousseau/libmake
+1. Rousseau, S. *LibMake — code generator don rage repetitive tasks da gina high-quality Rust libraries*. GitHub, 2023. https://github.com/sebastienrousseau/libmake
 2. The Rust Programming Language. *Rust API Guidelines*. GitHub, 2023. https://rust-lang.github.io/api-guidelines/
 3. The Cargo Book. *Package Layout*. The Rust Programming Language, 2023. https://doc.rust-lang.org/cargo/guide/project-layout.html
-4. Keats, V. et al. *Tera — A template engine inspired by Jinja2 and Django templates*. GitHub, 2023. https://keats.github.io/tera/
+4. Keats, V. et al. *Tera — template engine da Jinja2 da Django templates suka yi tasiri a kansa*. GitHub, 2023. https://keats.github.io/tera/
 
 [00]: https://github.com/sebastienrousseau/libmake "LibMake — Rust library scaffold generator"
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
-<p class="post-reviewed">Last reviewed <time datetime="2026-05-24">2026-05-24</time>.</p>
+<aside class="author-card" aria-label="Game da marubuci"><img alt="Hoton Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Babban masanin fasahar banki da ke rubutu kan AI mai amfani, ISO 20022 migration, post-quantum cryptography don financial services, da structural transformation na wholesale payments.</span><span class="author-credentials">Sama da shekaru 20 a HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Cikakken bayanin martaba</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<p class="post-reviewed">An sake dubawa na ƙarshe <time datetime="2026-05-24">2026-05-24</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
-<h2 id="related-heading" class="related-heading">Related reading</h2>
+<h2 id="related-heading" class="related-heading">Karin karatu</h2>
 <div class="related-grid">
-<article class="related-card"><a href="https://sebastienrousseau.com/2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/" class="related-media" aria-label="RustLogs (RLG): Structured Logging Library for Rust" tabindex="-1"><img alt="Banner for RustLogs (RLG)" src="https://cloudcdn.pro/stocks/images/rustlogs.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/">RustLogs (RLG): Structured Logging Library for Rust</a></h3><p><time datetime="2024-03-08">2024-03-08</time></p></footer></article>
-<article class="related-card"><a href="https://sebastienrousseau.com/2018-02-15-the-making-of-the-express-transaction-credits-platform/" class="related-media" aria-label="The Making of the Express Transaction Credits Platform" tabindex="-1"><img alt="Giant white pillars" src="https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2018-02-15-the-making-of-the-express-transaction-credits-platform/">The Making of the Express Transaction Credits Platform</a></h3><p><time datetime="2018-02-15">2018-02-15</time></p></footer></article>
-<article class="related-card"><a href="https://sebastienrousseau.com/2024-01-15-alien-studio-revolutionising-art-with-ai-photography/" class="related-media" aria-label="Alien Studio: My Tech-to-Art Journey in Photography" tabindex="-1"><img alt="Sunset's muse, a serene glance; beauty in stillness" src="https://cloudcdn.pro/clients/alienstudio/v1/collections/radiance/radiance-08.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2024-01-15-alien-studio-revolutionising-art-with-ai-photography/">Alien Studio: My Tech-to-Art Journey in Photography</a></h3><p><time datetime="2024-01-15">2024-01-15</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/" class="related-media" aria-label="RustLogs (RLG): structured logging library don Rust" tabindex="-1"><img alt="Banner na RustLogs (RLG)" src="https://cloudcdn.pro/stocks/images/rustlogs.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/">RustLogs (RLG): structured logging library don Rust</a></h3><p><time datetime="2024-03-08">2024-03-08</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2018-02-15-the-making-of-the-express-transaction-credits-platform/" class="related-media" aria-label="Yadda aka gina Express Transaction Credits Platform" tabindex="-1"><img alt="Manyan ginshiƙai farare" src="https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2018-02-15-the-making-of-the-express-transaction-credits-platform/">Yadda aka gina Express Transaction Credits Platform</a></h3><p><time datetime="2018-02-15">2018-02-15</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2024-01-15-alien-studio-revolutionising-art-with-ai-photography/" class="related-media" aria-label="Alien Studio: tafiyata daga fasaha zuwa art a photography" tabindex="-1"><img alt="Muse na faɗuwar rana, kallo mai nutsuwa; kyau a cikin shiru" src="https://cloudcdn.pro/clients/alienstudio/v1/collections/radiance/radiance-08.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2024-01-15-alien-studio-revolutionising-art-with-ai-photography/">Alien Studio: tafiyata daga fasaha zuwa art a photography</a></h3><p><time datetime="2024-01-15">2024-01-15</time></p></footer></article>
 </div>
 </aside>
 <!-- enrich-end -->

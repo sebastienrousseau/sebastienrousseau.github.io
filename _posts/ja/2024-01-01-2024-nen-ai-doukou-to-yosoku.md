@@ -5,13 +5,13 @@ description: "2024 年の AI トレンドと予測。エンタープライズ展
 date: "January 1, 2024"
 language: "ja-JP"
 locale: "ja_JP"
-banner: "https://cloudcdn.pro/stocks/images/possessed-photography-jIBMSMs4_kA-unsplash.webp"
+banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp"
 banner_alt: "AI の進化を表す抽象的なビジュアル"
 keywords: "AI トレンド, 2024, エンタープライズ AI, 生成 AI, AI 規制, EU AI 法, マルチモーダル AI"
 last_reviewed: "2026-05-11"
 ---
 
-![AI の進化を表す抽象的なビジュアル](https://cloudcdn.pro/stocks/images/possessed-photography-jIBMSMs4_kA-unsplash.webp).class=\"img-fluid clearfix\"
+![AI の進化を表す抽象的なビジュアル](https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp).class=\"img-fluid clearfix\"
 
 ## インサイト
 

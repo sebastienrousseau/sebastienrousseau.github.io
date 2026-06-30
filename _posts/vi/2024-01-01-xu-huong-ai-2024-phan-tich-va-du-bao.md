@@ -5,12 +5,12 @@ description: 'Các xu hướng AI sẽ định hình 2024: mô hình đa phươn
 date: 'January 1, 2024'
 language: 'vi-VN'
 locale: 'vi_VN'
-banner: 'https://cloudcdn.pro/stocks/images/ai-2024-banner.webp'
+banner: 'https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp'
 banner_alt: 'Sơ đồ trừu tượng của các xu hướng AI 2024'
 keywords: 'AI 2024, xu hướng, dự báo, đa phương thức, tác tử AI, quy định, EU AI Act, LLM'
 ---
 
-![Xu hướng AI 2024](https://cloudcdn.pro/stocks/images/ai-2024-banner.webp).class=\"img-fluid clearfix\"
+![Xu hướng AI 2024](https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp).class=\"img-fluid clearfix\"
 
 > **TL;DR.** Năm 2024 sẽ là năm AI đa phương thức trưởng thành, các tác tử tự chủ nổi lên, các khuôn khổ quy định được củng cố, và các mô hình nhỏ hơn chạy trên thiết bị bắt đầu cạnh tranh với các mô hình lớn hơn.
 >

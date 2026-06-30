@@ -5,7 +5,7 @@ description: "Стейблкоины не могут выплачивать до
 date: "May 15, 2026"
 language: "ru-RU"
 locale: "ru_RU"
-banner: "https://cloudcdn.pro/stocks/images/blackrock-brsrv-bstbl.webp"
+banner: "https://cloudcdn.pro/stocks/images/getty-images-dqHskSJDfe4.webp"
 banner_alt: "BlackRock BRSRV/BSTBL и GENIUS Act: токенизированный MMF"
 keywords: "BlackRock, BRSRV, BSTBL, GENIUS Act, стейблкоины, токенизированный фонд денежного рынка, MMF, регуляторный обход, цифровые активы"
 ---

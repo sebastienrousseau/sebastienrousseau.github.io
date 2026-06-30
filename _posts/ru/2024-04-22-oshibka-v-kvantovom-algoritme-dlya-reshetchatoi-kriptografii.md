@@ -5,7 +5,7 @@ description: "В квантовом алгоритме Yilei Chen для реш�
 date: "April 22, 2024"
 language: "ru-RU"
 locale: "ru_RU"
-banner: "https://cloudcdn.pro/stocks/images/quantum-lattice-bug.webp"
+banner: "https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp"
 banner_alt: "Ошибка в квантовом алгоритме: визуализация"
 keywords: "Yilei Chen, LWE, ошибка в алгоритме, решётчатая криптография, ML-KEM, постквантовая безопасность, академическая проверка"
 ---

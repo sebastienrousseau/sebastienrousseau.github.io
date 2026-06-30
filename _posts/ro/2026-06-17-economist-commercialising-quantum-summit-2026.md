@@ -12,7 +12,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "June 17, 2026"
-description: "Concluziile pentru consiliul de administrație de la summitul Economist Impact al 5-lea Commercialising Quantum Global 2026 — val de finanțare de 1,3 miliarde dolari, stive hibride „fără regrete", urgența migrării la criptografia post-cuantică, comercializarea senzorilor cuantici și directiva HSBC potrivit căreia așteptarea este o eroare forțată."
+description: "Concluziile pentru consiliul de administrație de la summitul Economist Impact al 5-lea Commercialising Quantum Global 2026 — val de finanțare de 1,3 miliarde dolari, stive hibride „fără regrete”, urgența migrării la criptografia post-cuantică, comercializarea senzorilor cuantici și directiva HSBC potrivit căreia așteptarea este o eroare forțată."
 format-detection: "telephone=no"
 hreflang: "ro"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -52,7 +52,7 @@ atom_link: "https://sebastienrousseau.com/2026-06-17-economist-commercialising-q
 category: "Technology"
 docs: https://validator.w3.org/feed/docs/rss2.html
 generator: "Static Site Generator (SSG) (version 0.0.26)"
-item_description: "Concluziile pentru consiliul de administrație de la summitul Economist Impact al 5-lea Commercialising Quantum Global 2026 — val de finanțare de 1,3 miliarde dolari, stive hibride „fără regrete", urgența migrării la criptografia post-cuantică, comercializarea senzorilor cuantici și directiva HSBC potrivit căreia așteptarea este o eroare forțată."
+item_description: "Concluziile pentru consiliul de administrație de la summitul Economist Impact al 5-lea Commercialising Quantum Global 2026 — val de finanțare de 1,3 miliarde dolari, stive hibride „fără regrete”, urgența migrării la criptografia post-cuantică, comercializarea senzorilor cuantici și directiva HSBC potrivit căreia așteptarea este o eroare forțată."
 item_guid: "https://sebastienrousseau.com/2026-06-17-economist-commercialising-quantum-summit-2026/rss.xml"
 item_link: "https://sebastienrousseau.com/2026-06-17-economist-commercialising-quantum-summit-2026/rss.xml"
 item_pub_date: "Wed, 17 Jun 2026 06:06:06 +0000"
@@ -81,7 +81,7 @@ msapplication-navbutton-color: "0, 83, 191"
 
 twitter_card: "summary_large_image"
 twitter_creator: "@wwdseb"
-twitter_description: "Concluziile pentru consiliul de administrație de la summitul Economist Impact al 5-lea Commercialising Quantum Global 2026 — val de finanțare de 1,3 miliarde dolari, stive hibride „fără regrete", urgența migrării la criptografia post-cuantică, comercializarea senzorilor cuantici și directiva HSBC potrivit căreia așteptarea este o eroare forțată."
+twitter_description: "Concluziile pentru consiliul de administrație de la summitul Economist Impact al 5-lea Commercialising Quantum Global 2026 — val de finanțare de 1,3 miliarde dolari, stive hibride „fără regrete”, urgența migrării la criptografia post-cuantică, comercializarea senzorilor cuantici și directiva HSBC potrivit căreia așteptarea este o eroare forțată."
 twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 twitter_image_alt: "Logo al lui Sebastien Rousseau"
 twitter_site: "@wwdseb"
@@ -106,7 +106,7 @@ site_software: "Static Site Generator, Rust"
 
 Pregătirea pentru întreprindere, migrările criptografiei post-cuantice, stivele de calcul hibride și peisajul comercial emergent al senzorilor și rețelelor cuantice.
 
-**Pe scurt.** A 5-a ediție a conferinței anuale Commercialising Quantum Global 2026, găzduită de Economist Impact pe 16–17 iunie 2026 la Business Design Centre din Londra, a reunit peste 1.100 de lideri globali din mediul de întreprindere, finanțe, politici publice și cercetare. Tema centrală a marcat un pivot structural clar: tehnologia cuantică a trecut de la știința speculativă de laborator la fluxuri de lucru practice, hibride, de întreprindere. Susținută de 1,3 miliarde dolari în capital de risc atras numai în primele cinci luni ale lui 2026, discuția din consiliul de administrație nu mai vizează numărarea qubiților fizici, ci stabilirea unor stive de calcul hibride „fără regrete", securizarea activelor digitale împotriva amenințării criptografice „harvest-now, decrypt-later" (SNDL) și implementarea pe termen scurt a sistemelor de senzori cuantici pentru navigare independentă de GPS.
+**Pe scurt.** A 5-a ediție a conferinței anuale Commercialising Quantum Global 2026, găzduită de Economist Impact pe 16–17 iunie 2026 la Business Design Centre din Londra, a reunit peste 1.100 de lideri globali din mediul de întreprindere, finanțe, politici publice și cercetare. Tema centrală a marcat un pivot structural clar: tehnologia cuantică a trecut de la știința speculativă de laborator la fluxuri de lucru practice, hibride, de întreprindere. Susținută de 1,3 miliarde dolari în capital de risc atras numai în primele cinci luni ale lui 2026, discuția din consiliul de administrație nu mai vizează numărarea qubiților fizici, ci stabilirea unor stive de calcul hibride „fără regrete”, securizarea activelor digitale împotriva amenințării criptografice „harvest-now, decrypt-later" (SNDL) și implementarea pe termen scurt a sistemelor de senzori cuantici pentru navigare independentă de GPS.
 
 ## Concluzii principale
 

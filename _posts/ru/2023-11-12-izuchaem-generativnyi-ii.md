@@ -5,7 +5,7 @@ description: "Обзор генеративного ИИ: архитектуры
 date: "November 12, 2023"
 language: "ru-RU"
 locale: "ru_RU"
-banner: "https://cloudcdn.pro/stocks/images/generative-ai-banner.webp"
+banner: "https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp"
 banner_alt: "Визуализация нейронной сети генеративного ИИ"
 keywords: "генеративный ИИ, LLM, трансформеры, GPT, мультимодальность, prompt-инжиниринг, финансовые услуги, ответственный ИИ"
 ---

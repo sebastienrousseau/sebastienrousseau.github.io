@@ -5,13 +5,13 @@ description: "OpenAI Whisper と macOS Metal Performance Shaders GPU アクセ�
 date: "March 12, 2024"
 language: "ja-JP"
 locale: "ja_JP"
-banner: "https://cloudcdn.pro/stocks/images/icons8-team-r-enAOPw8Rs-unsplash.webp"
+banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp"
 banner_alt: "マイクと音波"
 keywords: "OpenAI Whisper, macOS, Metal Performance Shaders, MPS, リアルタイム, 音声認識, Apple Silicon"
 last_reviewed: "2026-05-11"
 ---
 
-![マイクと音波](https://cloudcdn.pro/stocks/images/icons8-team-r-enAOPw8Rs-unsplash.webp).class=\"img-fluid clearfix\"
+![マイクと音波](https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp).class=\"img-fluid clearfix\"
 
 ## インサイト
 

@@ -5,7 +5,7 @@ description: "2026 年 11 月から SWIFT CBPR+ は pacs.008 国際送金メッ�
 date: "May 12, 2026"
 language: "ja-JP"
 locale: "ja_JP"
-banner: "https://cloudcdn.pro/stocks/images/luca-bravo-XJXWbfSo2f0-unsplash.webp"
+banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp"
 banner_alt: "ISO 20022 構造化メッセージのコード"
 keywords: "ISO 20022, pacs.008, SWIFT, CBPR+, 構造化アドレス, 国際送金, 是正, 規制, 銀行コンプライアンス"
 last_reviewed: "2026-05-12"

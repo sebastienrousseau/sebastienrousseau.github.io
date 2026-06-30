@@ -186,7 +186,7 @@ def _keyword_matches_entity(kw_lower: str, entity_lower: str) -> bool:
 
 
 def _same_as_anchors(
-    ext_url: str, qid: str, canonical_stem: str, own_stem: str | None
+    ext_url: str, qid: str | None, canonical_stem: str | None, own_stem: str | None
 ) -> list[str]:
     """Build the ``sameAs`` list for an entity: authoritative external URL,
     plus Wikidata Q-number anchor, plus the user's canonical post (skipped
@@ -200,7 +200,7 @@ def _same_as_anchors(
 
 
 def _build_entity_node(
-    entity: str, ext_url: str, qid: str, canonical_stem: str, own_stem: str | None
+    entity: str, ext_url: str, qid: str | None, canonical_stem: str | None, own_stem: str | None
 ) -> dict[str, object]:
     same_as = _same_as_anchors(ext_url, qid, canonical_stem, own_stem)
     return {
@@ -238,8 +238,6 @@ def build_about_graph(html: str) -> str | None:
     matches = _match_entities_for_keywords(keywords, _current_stem(html))
     if not matches:
         return None
-    import json as _json
-
     primary = matches[0]
     rest = matches[1:6]  # cap secondary entities at 5 to keep schema lean
     fragment_parts = [f'"about":{_json.dumps(primary, separators=(",", ":"))}']
@@ -476,7 +474,7 @@ _IMG_DIMS: dict[str, tuple[int, int]] = {
     "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg": (160, 40),
     "https://cloudcdn.pro/clients/static-site-generator/v1/banners/banner-static-site-generator.svg": (1200, 675),
     # Personal portrait — 162×162 native, used at small sizes everywhere.
-    "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png": (162, 162),
+    "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp": (162, 162),
 }
 
 # URL-prefix → (width, height). Lets us pin entire CDN folders without
@@ -592,7 +590,7 @@ def _resolve_og_banner(html: str, present: set[str]) -> list[str]:
     img_m = _blogposting_image_re.search(html)
     banner = (
         img_m.group(1) if img_m else ""
-    ) or "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+    ) or "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
     out = [f'<meta property="og:image" content="{banner}">']
     if "twitter:image" not in present:
         out.append(f'<meta name="twitter:image" content="{banner}">')

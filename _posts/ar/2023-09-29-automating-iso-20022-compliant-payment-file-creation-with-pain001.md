@@ -10,7 +10,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "Sep 29, 2023"
-description: "pain001 is an open-source Python library that generates ISO 20022 pain.001.001.09 XML payment files from CSV or SQLite data, with automatic XSD validation, control-sum computation, and support for both SEPA SCT and CBPR+ cross-border message formats."
+description: "pain001 مكتبة Python مفتوحة المصدر تولد ملفات دفع XML بصيغة ISO 20022 pain.001.001.09 من CSV أو SQLite، مع تحقق XSD تلقائي، وحساب مجموع التحكم، ودعم تنسيقات SEPA SCT وCBPR+ العابرة للحدود."
 format-detection: "telephone=no"
 hreflang: "ar"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -54,7 +54,7 @@ atom_link: "https://sebastienrousseau.com/2023-09-29-automating-iso-20022-compli
 category: "Payments"
 docs: "https://validator.w3.org/feed/docs/rss2.html"
 generator: "Static Site Generator (SSG) (version 0.0.26)"
-item_description: "pain001 is an open-source Python library that generates ISO 20022 pain.001.001.09 XML payment files from CSV or SQLite data, with automatic XSD validation, control-sum computation, and support for both SEPA SCT and CBPR+ cross-border message formats."
+item_description: "pain001 مكتبة Python مفتوحة المصدر تولد ملفات دفع XML بصيغة ISO 20022 pain.001.001.09 من CSV أو SQLite، مع تحقق XSD تلقائي، وحساب مجموع التحكم، ودعم تنسيقات SEPA SCT وCBPR+ العابرة للحدود."
 item_guid: "https://sebastienrousseau.com/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/rss.xml"
 item_link: "https://sebastienrousseau.com/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/rss.xml"
 item_pub_date: "Fri, 29 Sep 2023 08:57:00 +0000"
@@ -75,7 +75,7 @@ apple-touch-fullscreen: "yes"
 msapplication-navbutton-color: "0, 67, 165"
 twitter_card: "summary"
 twitter_creator: "@wwdseb"
-twitter_description: "pain001 is an open-source Python library that generates ISO 20022 pain.001.001.09 XML payment files from CSV or SQLite data, with automatic XSD validation, control-sum computation, and support for both SEPA SCT and CBPR+ cross-border message formats."
+twitter_description: "pain001 مكتبة Python مفتوحة المصدر تولد ملفات دفع XML بصيغة ISO 20022 pain.001.001.09 من CSV أو SQLite، مع تحقق XSD تلقائي، وحساب مجموع التحكم، ودعم تنسيقات SEPA SCT وCBPR+ العابرة للحدود."
 twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 twitter_image_alt: "Logo of Sebastien Rousseau"
 twitter_site: "@wwdseb"
@@ -84,84 +84,80 @@ twitter_url: "https://sebastienrousseau.com/2023-09-29-automating-iso-20022-comp
 author_website: "https://sebastienrousseau.com/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html"
 author_twitter: "@wwdseb"
 author_location: "London, UK"
-thanks: "Thanks for reading!"
+thanks: "شكرًا لقراءتك!"
 site_last_updated: "2023-09-29"
 site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 site_software: "Static Site Generator, Rust"
-excerpt: "pain001 is an open-source Python library that generates ISO 20022 pain.001.001.09 (CustomerCreditTransferInitiation) XML from CSV or SQLite input, validates output against the XSD schema, and computes CtrlSum and NbOfTxs automatically — supporting both SEPA SCT and CBPR+ cross-border message formats."
+excerpt: "pain001 مكتبة Python مفتوحة المصدر تولد XML بصيغة ISO 20022 pain.001.001.09 من CSV أو SQLite، وتتحقق من المخرجات عبر XSD، وتحسب CtrlSum وNbOfTxs تلقائيًا، مع دعم SEPA SCT وCBPR+."
 last_reviewed: "2026-05-24"
 ---
 
-<!-- translation-stub: replace this body in Claude Code -->
-
-> _Translation pending — read the [English original](/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/) while we localise._
-
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
-<p class="post-lead-tldr"><strong>TL;DR.</strong> <a href="https://pain001.com/">pain001</a> is an open-source Python library that reads payment data from a CSV or SQLite file and generates ISO 20022 pain.001.001.09 (CustomerCreditTransferInitiation) XML, validating the output against the ISO 20022 XSD schema and computing <code>CtrlSum</code> and <code>NbOfTxs</code> automatically. Both SEPA Credit Transfer and CBPR+ cross-border message variants are supported.</p>
-<p class="post-lead-heading"><strong>Key takeaways</strong></p>
+<aside class="post-lead" aria-label="ملخص المقال">
+<p class="post-lead-tldr"><strong>الخلاصة.</strong> <a href="https://pain001.com/">pain001</a> مكتبة Python مفتوحة المصدر تقرأ بيانات الدفع من ملف CSV أو SQLite وتولد XML بصيغة ISO 20022 pain.001.001.09 (CustomerCreditTransferInitiation)، مع التحقق من المخرجات عبر مخطط ISO 20022 XSD وحساب <code>CtrlSum</code> و<code>NbOfTxs</code> تلقائيًا. تدعم المكتبة كلًا من SEPA Credit Transfer ورسائل CBPR+ العابرة للحدود.</p>
+<p class="post-lead-heading"><strong>النقاط الرئيسية</strong></p>
 <ul class="post-lead-takeaways">
-  <li><strong>pain.001.001.09 message structure.</strong> The CustomerCreditTransferInitiation message has three hierarchical blocks: <code>GrpHdr</code> (Group Header, 1 per file), <code>PmtInf</code> (Payment Information, 1..n), and <code>CdtTrfTxInf</code> (Credit Transfer Transaction, 1..n per PmtInf) — pain001 maps CSV columns directly to these blocks.</li>
-  <li><strong>XSD validation at generation time.</strong> pain001 validates each generated XML document against the official ISO 20022 pain.001.001.09 XSD before writing output, catching missing mandatory elements and type violations before the file reaches the bank.</li>
-  <li><strong>CtrlSum is computed automatically.</strong> The control sum (total instructed amount across all transactions) and transaction count are derived programmatically from the input data, removing the common error of a hand-calculated total that diverges from the actual transaction list.</li>
-  <li><strong>SEPA and CBPR+ in a single library.</strong> SEPA Credit Transfer (EPC SCT rulebook, EUR zone) and CBPR+ (SWIFT cross-border payments, mandated from November 2025 for correspondent banks) are both supported via the message-type configuration parameter.</li>
+  <li><strong>بنية رسالة pain.001.001.09.</strong> تتكون رسالة CustomerCreditTransferInitiation من ثلاث كتل هرمية: <code>GrpHdr</code> (Group Header، واحدة لكل ملف)، و<code>PmtInf</code> (Payment Information، من 1 إلى n)، و<code>CdtTrfTxInf</code> (Credit Transfer Transaction، من 1 إلى n لكل PmtInf). يربط pain001 أعمدة CSV مباشرة بهذه الكتل.</li>
+  <li><strong>تحقق XSD وقت التوليد.</strong> يتحقق pain001 من كل مستند XML مولد مقابل مخطط ISO 20022 pain.001.001.09 الرسمي قبل كتابة المخرجات، فيلتقط العناصر الإلزامية المفقودة ومخالفات النوع قبل وصول الملف إلى البنك.</li>
+  <li><strong>يُحسب CtrlSum تلقائيًا.</strong> يُشتق مجموع التحكم، أي إجمالي المبالغ المطلوبة عبر كل المعاملات، وعدد المعاملات برمجيًا من بيانات الإدخال، مما يزيل خطأ شائعًا يتمثل في مجموع محسوب يدويًا لا يطابق قائمة المعاملات الفعلية.</li>
+  <li><strong>SEPA وCBPR+ في مكتبة واحدة.</strong> تدعم المكتبة SEPA Credit Transfer وفق EPC SCT rulebook داخل منطقة EUR، وCBPR+ لمدفوعات SWIFT العابرة للحدود، الإلزامية للبنوك المراسلة من نوفمبر 2025، عبر معامل تهيئة نوع الرسالة.</li>
 </ul>
-<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2023-10-09-the-fastest-rust-based-static-site-generator/">Static Site Generator: Fastest Rust-Based SSG</a>, <a href="https://sebastienrousseau.com/2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution/">Unveiling a New Cryptocurrency and Faster Payment Solution</a>, <a href="https://sebastienrousseau.com/2018-01-09-understanding-the-technology-behind-blockchain/">Understanding the Technology Behind Blockchain</a>.</p>
+<p class="post-lead-related"><strong>قراءة ذات صلة:</strong> <a href="https://sebastienrousseau.com/2023-10-09-the-fastest-rust-based-static-site-generator/">Static Site Generator: أسرع SSG مبني بـ Rust</a>, <a href="https://sebastienrousseau.com/2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution/">عملة مشفرة جديدة وحل دفع أسرع</a>, <a href="https://sebastienrousseau.com/2018-01-09-understanding-the-technology-behind-blockchain/">فهم التقنية وراء blockchain</a>.</p>
 </aside>
 <!-- lead-end -->
 
-> **Executive Summary / Key Takeaways**
+> **ملخص تنفيذي / نقاط رئيسية**
 >
-> - **ISO 20022 pain.001** (CustomerCreditTransferInitiation) is the structured XML message format used to initiate credit transfers under SEPA (EPC SCT rulebook) and CBPR+ (SWIFT's cross-border messaging standard, mandatory for correspondent banks from November 2025).
-> - **[pain001 ⧉][00]** reads payment data from CSV or SQLite, maps rows to the pain.001.001.09 message hierarchy (GrpHdr → PmtInf → CdtTrfTxInf), and renders a conformant XML file via a templated generator — three lines of Python from data to validated XML.
-> - **XSD validation** runs on every generated file before output is written; the library raises a descriptive exception identifying the failing element, cardinality, or type mismatch, so errors are caught at generation time rather than at bank submission.
-> - **CtrlSum and NbOfTxs** are computed from the transaction set, not entered manually — eliminating the single most common payment file rejection cause at SEPA and CBPR+ processing gateways.
-> - Both **SEPA Credit Transfer** (EUR, within the SEPA zone) and **CBPR+** (cross-border, multi-currency) message variants are supported through the `message_type` parameter, with field-level validation differences handled internally.
+> - **ISO 20022 pain.001** (CustomerCreditTransferInitiation) هو تنسيق XML منظم يستخدم لبدء التحويلات الائتمانية ضمن SEPA (EPC SCT rulebook) وCBPR+، معيار رسائل SWIFT العابرة للحدود الإلزامي للبنوك المراسلة من نوفمبر 2025.
+> - تقرأ **[pain001 ⧉][00]** بيانات الدفع من CSV أو SQLite، وتربط الصفوف بهرمية رسالة pain.001.001.09 (GrpHdr -> PmtInf -> CdtTrfTxInf)، ثم تولد ملف XML مطابقًا عبر مولد قائم على template — ثلاث أسطر Python من البيانات إلى XML موثق.
+> - يعمل **تحقق XSD** على كل ملف مولد قبل كتابة المخرجات؛ ترفع المكتبة استثناءً وصفيًا يحدد العنصر الفاشل أو cardinality أو type mismatch، فتُلتقط الأخطاء وقت التوليد بدلًا من مرحلة الإرسال إلى البنك.
+> - يُحسب **CtrlSum وNbOfTxs** من مجموعة المعاملات ولا يُدخلان يدويًا، مما يزيل أكثر أسباب رفض ملفات الدفع شيوعًا في بوابات معالجة SEPA وCBPR+.
+> - تدعم المكتبة كلًا من **SEPA Credit Transfer** (EUR داخل منطقة SEPA) و**CBPR+** (عابر للحدود ومتعدد العملات) عبر معامل `message_type`، مع معالجة اختلافات التحقق على مستوى الحقول داخليًا.
 
-[**pain001 ⧉**][00] is an open-source Python library for generating ISO 20022 payment initiation files. It reads payment data from a structured input (CSV or SQLite), validates the data, renders a conformant pain.001.001.09 XML document, and validates the output against the ISO 20022 XSD schema — all in a single function call.
+[**pain001 ⧉**][00] مكتبة Python مفتوحة المصدر لتوليد ملفات بدء الدفع وفق ISO 20022. تقرأ بيانات الدفع من إدخال منظم (CSV أو SQLite)، وتتحقق من البيانات، وتولد مستند XML مطابقًا بصيغة pain.001.001.09، ثم تتحقق من المخرجات مقابل مخطط ISO 20022 XSD — كل ذلك في استدعاء دالة واحد.
 
-This article describes the ISO 20022 pain.001 message structure, how pain001 maps input data to message elements, the validation pipeline, and the SEPA versus CBPR+ configuration options.
+يصف هذا المقال بنية رسالة ISO 20022 pain.001، وكيف يربط pain001 بيانات الإدخال بعناصر الرسالة، وخط التحقق، وخيارات تهيئة SEPA مقابل CBPR+.
 
-## ISO 20022 pain.001 Message Structure
+## بنية رسالة ISO 20022 pain.001
 
-The ISO 20022 pain.001.001.09 (CustomerCreditTransferInitiation) message has three levels:
+تتكون رسالة ISO 20022 pain.001.001.09 (CustomerCreditTransferInitiation) من ثلاثة مستويات:
 
-**GrpHdr** (Group Header) — one per file:
+**GrpHdr** (Group Header) — كتلة واحدة لكل ملف:
 
-| Element | Description | Example |
+| العنصر | الوصف | مثال |
 |---|---|---|
-| `MsgId` | Unique message identifier | `ACME20240115-001` |
-| `CreDtTm` | Creation date and time | `2024-01-15T09:00:00` |
-| `NbOfTxs` | Total number of transactions | `3` |
-| `CtrlSum` | Sum of all instructed amounts | `15000.00` |
-| `InitgPty/Nm` | Initiating party name | `Acme Corp` |
+| `MsgId` | معرف الرسالة الفريد | `ACME20240115-001` |
+| `CreDtTm` | تاريخ ووقت الإنشاء | `2024-01-15T09:00:00` |
+| `NbOfTxs` | إجمالي عدد المعاملات | `3` |
+| `CtrlSum` | مجموع كل المبالغ المطلوبة | `15000.00` |
+| `InitgPty/Nm` | اسم الطرف المنشئ | `Acme Corp` |
 
-**PmtInf** (Payment Information) — one or more per file, groups transactions by debtor account and payment date:
+**PmtInf** (Payment Information) — كتلة واحدة أو أكثر لكل ملف، وتجمع المعاملات حسب حساب المدين وتاريخ الدفع:
 
-| Element | Description |
+| العنصر | الوصف |
 |---|---|
-| `PmtInfId` | Payment information identifier |
-| `PmtMtd` | Payment method — always `TRF` for credit transfer |
-| `ReqdExctnDt/Dt` | Requested execution date |
-| `Dbtr/Nm` | Debtor (sender) name |
-| `DbtrAcct/Id/IBAN` | Debtor IBAN |
-| `DbtrAgt/FinInstnId/BICFI` | Debtor bank BIC |
+| `PmtInfId` | معرف معلومات الدفع |
+| `PmtMtd` | طريقة الدفع — دائمًا `TRF` للتحويل الائتماني |
+| `ReqdExctnDt/Dt` | تاريخ التنفيذ المطلوب |
+| `Dbtr/Nm` | اسم المدين (المرسل) |
+| `DbtrAcct/Id/IBAN` | رقم IBAN للمدين |
+| `DbtrAgt/FinInstnId/BICFI` | رمز BIC لبنك المدين |
 
-**CdtTrfTxInf** (Credit Transfer Transaction Information) — one or more per PmtInf block:
+**CdtTrfTxInf** (Credit Transfer Transaction Information) — عنصر واحد أو أكثر داخل كل كتلة PmtInf:
 
-| Element | Description |
+| العنصر | الوصف |
 |---|---|
-| `PmtId/EndToEndId` | End-to-end reference (preserved through the chain) |
-| `Amt/InstdAmt` | Instructed amount with currency attribute |
-| `CdtrAgt/FinInstnId/BICFI` | Creditor bank BIC |
-| `Cdtr/Nm` | Creditor (receiver) name |
-| `CdtrAcct/Id/IBAN` | Creditor IBAN |
-| `RmtInf/Ustrd` | Unstructured remittance information (invoice reference etc.) |
+| `PmtId/EndToEndId` | مرجع شامل من البداية إلى النهاية، ويظل محفوظًا عبر السلسلة |
+| `Amt/InstdAmt` | المبلغ المطلوب مع خاصية العملة |
+| `CdtrAgt/FinInstnId/BICFI` | رمز BIC لبنك الدائن |
+| `Cdtr/Nm` | اسم الدائن (المستلم) |
+| `CdtrAcct/Id/IBAN` | رقم IBAN للدائن |
+| `RmtInf/Ustrd` | معلومات تحويل غير مهيكلة، مثل مرجع الفاتورة |
 
-## Generating XML from CSV
+## توليد XML من CSV
 
-A minimal pain001 invocation:
+استدعاء pain001 مبسط:
 
 ```python
 from pain001 import create_xml_v9
@@ -173,20 +169,20 @@ create_xml_v9(
 )
 ```
 
-The CSV file maps column names to message fields. A minimal example:
+يربط ملف CSV أسماء الأعمدة بحقول الرسالة. مثال مبسط:
 
 ```csv
 id,date,nb_of_txs,ctrl_sum,initiating_party_name,debtor_name,debtor_account_IBAN,debtor_agent_BIC,creditor_name,creditor_account_IBAN,creditor_agent_BIC,instd_amt,instd_amt_ccy,end_to_end_id,remittance_info
 1,2024-01-15,1,1000.00,Acme Corp,Acme Corp,GB29NWBK60161331926819,NWBKGB2L,Supplier Ltd,DE89370400440532013000,COBADEFFXXX,1000.00,EUR,ACME20240115001,INV-2024-0042
 ```
 
-The library reads `ctrl_sum` and `nb_of_txs` from the CSV row for single-row files. For multi-row files (multiple transactions in one batch), pain001 computes these values from the transaction set rather than trusting the input values, which prevents mismatches.
+تقرأ المكتبة `ctrl_sum` و`nb_of_txs` من صف CSV في الملفات ذات الصف الواحد. أما في الملفات متعددة الصفوف (عدة معاملات في دفعة واحدة)، فيحسب pain001 هذه القيم من مجموعة المعاملات بدل الاعتماد على قيم الإدخال، مما يمنع حالات عدم التطابق.
 
-The SQLite interface uses the same column-name convention. Pass `data_file_type="sqlite"` and the `data_file` path to a SQLite database file; pain001 reads the `payment` table by default.
+تستخدم واجهة SQLite اصطلاح أسماء الأعمدة نفسه. مرر `data_file_type="sqlite"` ومسار `data_file` إلى ملف قاعدة بيانات SQLite؛ يقرأ pain001 جدول `payment` افتراضيًا.
 
-## Generated XML Structure
+## بنية XML الناتج
 
-A correctly rendered pain.001.001.09 document for the CSV row above:
+مستند pain.001.001.09 مولد بصورة صحيحة لصف CSV أعلاه:
 
 ```xml
 <Document xmlns="urn:iso:std:iso:20022:tech:xsd:pain.001.001.09">
@@ -218,30 +214,30 @@ A correctly rendered pain.001.001.09 document for the CSV row above:
 </Document>
 ```
 
-## XSD Validation Pipeline
+## خط تحقق XSD
 
-After rendering, pain001 validates the output against the ISO 20022 pain.001.001.09 XSD schema. Validation checks:
+بعد التصيير، يتحقق pain001 من المخرجات مقابل مخطط ISO 20022 pain.001.001.09 XSD. يشمل التحقق:
 
-- **Mandatory element presence**: GrpHdr/MsgId, GrpHdr/CreDtTm, GrpHdr/NbOfTxs, GrpHdr/CtrlSum are all required; missing any raises a validation error.
-- **Type constraints**: IBAN format, BIC format (8 or 11 characters), amount precision (maximum 18 digits, 5 decimal places).
-- **Cardinality**: at least one `CdtTrfTxInf` per `PmtInf`; at least one `PmtInf` per document.
-- **Enumeration values**: `PmtMtd` must be `TRF` for credit transfers; `Ccy` must be a valid ISO 4217 currency code.
+- **وجود العناصر الإلزامية**: العناصر GrpHdr/MsgId وGrpHdr/CreDtTm وGrpHdr/NbOfTxs وGrpHdr/CtrlSum كلها مطلوبة؛ غياب أي منها يرفع خطأ تحقق.
+- **قيود النوع**: صيغة IBAN، وصيغة BIC (8 أو 11 حرفًا)، ودقة المبلغ (حتى 18 رقمًا و5 منازل عشرية).
+- **التعددية**: يجب وجود عنصر `CdtTrfTxInf` واحد على الأقل لكل `PmtInf`، وكتلة `PmtInf` واحدة على الأقل في كل مستند.
+- **قيم التعداد**: يجب أن تكون قيمة `PmtMtd` هي `TRF` للتحويلات الائتمانية، ويجب أن تكون `Ccy` رمز عملة صحيحًا وفق ISO 4217.
 
-When validation fails, pain001 raises a `ValidationError` with the lxml error message identifying the failing XPath expression, element name, and constraint. This surfaces misconfigurations at generation time rather than at bank submission, where rejection codes are typically less descriptive.
+عند فشل التحقق، يرفع pain001 استثناء `ValidationError` مع رسالة خطأ lxml التي تحدد تعبير XPath الفاشل واسم العنصر والقيد. بهذه الطريقة تظهر أخطاء التهيئة وقت التوليد بدلًا من مرحلة الإرسال إلى البنك، حيث تكون رموز الرفض عادة أقل وصفًا.
 
-## SEPA vs CBPR+ Configuration
+## تهيئة SEPA مقابل CBPR+
 
-SEPA Credit Transfer (ISO 20022 pain.001.001.09 under the EPC SCT rulebook) and CBPR+ (SWIFT's Cross-Border Payments and Reporting Plus standard) use the same message schema but differ in mandatory field sets and value constraints:
+يستخدم SEPA Credit Transfer (ISO 20022 pain.001.001.09 وفق قواعد EPC SCT) وCBPR+ (معيار SWIFT للمدفوعات والتقارير العابرة للحدود) مخطط الرسالة نفسه، لكنهما يختلفان في مجموعات الحقول الإلزامية وقيود القيم:
 
-| Aspect | SEPA SCT | CBPR+ |
+| الجانب | SEPA SCT | CBPR+ |
 |---|---|---|
-| Currency | EUR only | Multi-currency |
-| IBAN mandatory | Yes | Yes (creditor) |
-| BIC mandatory | No (SEPA zone routing) | Yes |
-| Charge bearer (`ChrgBr`) | `SLEV` | `DEBT`, `CRED`, or `SHAR` |
-| Scope | SEPA zone (36 countries) | Global correspondent banking |
+| العملة | EUR فقط | متعدد العملات |
+| إلزامية IBAN | نعم | نعم (للدائن) |
+| إلزامية BIC | لا (التوجيه داخل منطقة SEPA) | نعم |
+| حامل الرسوم (`ChrgBr`) | `SLEV` | `DEBT` أو `CRED` أو `SHAR` |
+| النطاق | منطقة SEPA (36 دولة) | المصرفية المراسلة عالميًا |
 
-Configure the message type via the `payment_initiation_message_type` parameter:
+هيئ نوع الرسالة عبر معامل `payment_initiation_message_type`:
 
 ```python
 create_xml_v9(
@@ -252,41 +248,41 @@ create_xml_v9(
 )
 ```
 
-CBPR+ compliance became mandatory for SWIFT correspondent banking in November 2023 for inbound messages and November 2025 for outbound. Generating CBPR+-conformant pain.001 files requires that the BIC field is populated and that the `ChrgBr` element is present.
+أصبح الامتثال لـ CBPR+ إلزاميًا في المصرفية المراسلة عبر SWIFT في نوفمبر 2023 للرسائل الواردة، وفي نوفمبر 2025 للرسائل الصادرة. يتطلب توليد ملفات pain.001 متوافقة مع CBPR+ تعبئة حقل BIC ووجود عنصر `ChrgBr`.
 
-## Frequently Asked Questions
+## الأسئلة الشائعة
 
-**What is the difference between pain.001 and pain.008?**
-pain.001 (CustomerCreditTransferInitiation) initiates a credit transfer — the sender's bank debits the sender's account and credits the receiver. pain.008 (CustomerDirectDebitInitiation) initiates a direct debit — the creditor's bank collects funds from the debtor. pain001 the library generates pain.001 files only.
+**ما الفرق بين pain.001 وpain.008؟**
+يبدأ pain.001 (CustomerCreditTransferInitiation) تحويلًا ائتمانيًا؛ يخصم بنك المرسل من حساب المرسل ويضيف المبلغ إلى المستلم. أما pain.008 (CustomerDirectDebitInitiation) فيبدأ خصمًا مباشرًا؛ يجمع بنك الدائن الأموال من المدين. مكتبة pain001 تولد ملفات pain.001 فقط.
 
-**Which ISO 20022 version does pain001 target?**
-The primary target is pain.001.001.09, the version required for CBPR+ and mandated by the EPC for new SEPA implementations. The library also supports pain.001.001.03 (the legacy SEPA version) via the `payment_initiation_message_type` parameter for organisations still using older bank interfaces.
+**أي إصدار من ISO 20022 يستهدفه pain001؟**
+الهدف الأساسي هو pain.001.001.09، وهو الإصدار المطلوب لـ CBPR+ والمفروض من EPC للتطبيقات الجديدة في SEPA. تدعم المكتبة أيضًا pain.001.001.03 (إصدار SEPA القديم) عبر معامل `payment_initiation_message_type` للمنظمات التي ما زالت تستخدم واجهات مصرفية أقدم.
 
-**Can pain001 handle multiple debtor accounts in a single file?**
-Yes. Multiple `PmtInf` blocks with different debtor IBANs can be produced by grouping CSV rows with different debtor account values. pain001 creates one `PmtInf` block per unique (debtor IBAN, execution date) combination, with all matching transactions nested as `CdtTrfTxInf` children.
+**هل يستطيع pain001 التعامل مع عدة حسابات مدينة في ملف واحد؟**
+نعم. يمكن إنتاج عدة كتل `PmtInf` بأرقام IBAN مختلفة للمدينين عن طريق تجميع صفوف CSV ذات قيم حساب مدين مختلفة. ينشئ pain001 كتلة `PmtInf` واحدة لكل تركيبة فريدة من (IBAN المدين، تاريخ التنفيذ)، مع وضع كل المعاملات المطابقة كعناصر فرعية `CdtTrfTxInf`.
 
-**What happens when XSD validation fails?**
-pain001 raises a `pain001.exceptions.ValidationError` with the lxml validation message. The XML file is not written to disk when validation fails, so only valid files reach the output path. Common failure causes are: IBAN in wrong format, BIC not 8 or 11 characters, currency code not in ISO 4217, or missing mandatory elements when a required CSV column is absent.
+**ماذا يحدث عند فشل تحقق XSD؟**
+يرفع pain001 استثناء `pain001.exceptions.ValidationError` مع رسالة تحقق lxml. لا يُكتب ملف XML إلى القرص عند فشل التحقق، لذلك لا تصل إلى مسار الإخراج إلا الملفات الصحيحة. تشمل أسباب الفشل الشائعة: IBAN بصيغة خاطئة، أو BIC ليس 8 أو 11 حرفًا، أو رمز عملة غير موجود في ISO 4217، أو عناصر إلزامية مفقودة عند غياب عمود CSV مطلوب.
 
-## References
+## المراجع
 
-1. European Payments Council. *SEPA Credit Transfer Scheme Customer-to-Bank Implementation Guidelines (v1.1)*. EPC, 2023. https://www.europeanpaymentscouncil.eu/document-library/implementation-guidelines/sepa-credit-transfer-scheme-customer-bank
-2. SWIFT. *CBPR+ Usage Guidelines — Customer Credit Transfer Initiation (pain.001)*. SWIFT Standards, 2023. https://www.swift.com/standards/iso-20022/cbpr-plus-usage-guidelines
-3. ISO. *ISO 20022 — Financial services — Universal financial industry message scheme*. ISO.org, 2023. https://www.iso20022.org/
-4. Rousseau, S. *pain001 — ISO 20022 payment file generator*. GitHub, 2023. https://github.com/sebastienrousseau/pain001
+1. European Payments Council. *إرشادات تنفيذ مخطط SEPA Credit Transfer من العميل إلى البنك (v1.1)*. EPC، 2023. https://www.europeanpaymentscouncil.eu/document-library/implementation-guidelines/sepa-credit-transfer-scheme-customer-bank
+2. SWIFT. *إرشادات استخدام CBPR+ — بدء التحويل الائتماني للعميل (pain.001)*. SWIFT Standards، 2023. https://www.swift.com/standards/iso-20022/cbpr-plus-usage-guidelines
+3. ISO. *ISO 20022 — الخدمات المالية — مخطط الرسائل العالمي للقطاع المالي*. ISO.org، 2023. https://www.iso20022.org/
+4. Rousseau, S. *pain001 — مولد ملفات دفع ISO 20022*. GitHub، 2023. https://github.com/sebastienrousseau/pain001
 
 [00]: https://pain001.com/ "pain001: Automate ISO 20022-Compliant Payment File Creation"
 [01]: https://www.iso20022.org/ "ISO 20022: Universal financial industry message scheme"
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
-<p class="post-reviewed">Last reviewed <time datetime="2026-05-24">2026-05-24</time>.</p>
+<aside class="author-card" aria-label="عن الكاتب"><img alt="صورة شخصية لـ Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">تقني مصرفي أول يكتب عن الذكاء الاصطناعي التطبيقي، وترحيل ISO 20022، والتشفير ما بعد الكمي للخدمات المالية، والتحول البنيوي للمدفوعات بالجملة.</span><span class="author-credentials">أكثر من 20 عامًا عبر HSBC Commercial &amp; Investment Bank وPayPal وBarclays وShazam وAKQA وVirgin Group. <a href="/about/index.html">الملف الكامل</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<p class="post-reviewed">آخر مراجعة في <time datetime="2026-05-24">2026-05-24</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
-<h2 id="related-heading" class="related-heading">Related reading</h2>
+<h2 id="related-heading" class="related-heading">قراءة ذات صلة</h2>
 <div class="related-grid">
-<article class="related-card"><a href="https://sebastienrousseau.com/2023-10-09-the-fastest-rust-based-static-site-generator/" class="related-media" aria-label="Static Site Generator: Fastest Rust-Based SSG" tabindex="-1"><img alt="Turned off laptop computer on top of a white table with a glass of water on the left and a pen, notepad and plant on the right" src="https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2023-10-09-the-fastest-rust-based-static-site-generator/">Static Site Generator: Fastest Rust-Based SSG</a></h3><p><time datetime="2023-10-09">2023-10-09</time></p></footer></article>
-<article class="related-card"><a href="https://sebastienrousseau.com/2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution/" class="related-media" aria-label="Unveiling a New Cryptocurrency and Faster Payment Solution" tabindex="-1"><img alt="Turned off laptop computer on top of brown wooden table" src="https://cloudcdn.pro/stocks/images/laureen-missaire-DBbuhMbAIsQ.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution/">Unveiling a New Cryptocurrency and Faster Payment Solution</a></h3><p><time datetime="2018-02-04">2018-02-04</time></p></footer></article>
-<article class="related-card"><a href="https://sebastienrousseau.com/2018-01-09-understanding-the-technology-behind-blockchain/" class="related-media" aria-label="Understanding the Technology Behind Blockchain" tabindex="-1"><img alt="Turned off laptop computer on top of brown wooden table" src="https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2018-01-09-understanding-the-technology-behind-blockchain/">Understanding the Technology Behind Blockchain</a></h3><p><time datetime="2018-01-09">2018-01-09</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2023-10-09-the-fastest-rust-based-static-site-generator/" class="related-media" aria-label="Static Site Generator: أسرع SSG مبني بـ Rust" tabindex="-1"><img alt="حاسوب محمول مطفأ فوق طاولة بيضاء مع كأس ماء على اليسار وقلم ومفكرة ونبتة على اليمين" src="https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2023-10-09-the-fastest-rust-based-static-site-generator/">Static Site Generator: أسرع SSG مبني بـ Rust</a></h3><p><time datetime="2023-10-09">2023-10-09</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution/" class="related-media" aria-label="عملة مشفرة جديدة وحل دفع أسرع" tabindex="-1"><img alt="حاسوب محمول مطفأ فوق طاولة خشبية بنية" src="https://cloudcdn.pro/stocks/images/laureen-missaire-DBbuhMbAIsQ.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution/">عملة مشفرة جديدة وحل دفع أسرع</a></h3><p><time datetime="2018-02-04">2018-02-04</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2018-01-09-understanding-the-technology-behind-blockchain/" class="related-media" aria-label="فهم التقنية وراء blockchain" tabindex="-1"><img alt="حاسوب محمول مطفأ فوق طاولة خشبية بنية" src="https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2018-01-09-understanding-the-technology-behind-blockchain/">فهم التقنية وراء blockchain</a></h3><p><time datetime="2018-01-09">2018-01-09</time></p></footer></article>
 </div>
 </aside>
 <!-- enrich-end -->

@@ -5,13 +5,13 @@ description: "CRYSTALS-Kyber、NIST FIPS 203 標準、量子時代の暗号通�
 date: "November 19, 2023"
 language: "ja-JP"
 locale: "ja_JP"
-banner: "https://cloudcdn.pro/stocks/images/markus-spiske-FXFz-sW0uwo-unsplash.webp"
+banner: "https://cloudcdn.pro/stocks/images/markus-spiske-FXFz-sW0uwo.webp"
 banner_alt: "暗号鍵を表すマトリックスのコード"
 keywords: "CRYSTALS-Kyber, 量子耐性, 鍵カプセル化, KEM, NIST PQC, 格子ベース暗号, ML-KEM, FIPS 203"
 last_reviewed: "2026-05-11"
 ---
 
-![暗号鍵を表すマトリックスのコード](https://cloudcdn.pro/stocks/images/markus-spiske-FXFz-sW0uwo-unsplash.webp).class=\"img-fluid clearfix\"
+![暗号鍵を表すマトリックスのコード](https://cloudcdn.pro/stocks/images/markus-spiske-FXFz-sW0uwo.webp).class=\"img-fluid clearfix\"
 
 ## インサイト
 

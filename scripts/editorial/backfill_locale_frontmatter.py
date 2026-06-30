@@ -131,7 +131,7 @@ _LATIN_DIACRITICS: dict[str, re.Pattern[str]] = {
         r"[àáảãạăắằẳẵặâấầẩẫậèéẻẽẹêếềểễệìíỉĩịòóỏõọôốồổỗộơớờởỡợùúủũụưứừửữựỳýỷỹỵđÀÁẢÃẠĂẮẰẲẴẶÂẤẦẨẪẬÈÉẺẼẸÊẾỀỂỄỆÌÍỈĨỊÒÓỎÕỌÔỐỒỔỖỘƠỚỜỞỠỢÙÚỦŨỤƯỨỪỬỮỰỲÝỶỸỴĐ]"
     ),
     "sv": re.compile(r"[åäöÅÄÖ]"),
-    "yo": re.compile(r"[àáèéẹ̀ẹ́ẹìíọ̀ọ́ọùúṣẹọṢẸỌ]"),  # tonal vowels
+    "yo": re.compile(r"[àáèéẹ̀́ìíọùúṣṢẸỌ]"),  # tonal vowels
     "ha": re.compile(r"[ɓɗƙƴ]"),  # implosive consonants
 }
 
@@ -751,7 +751,7 @@ _EN_STOPWORDS: frozenset[str] = frozenset(
 def _tokenize(text: str) -> list[str]:
     """Lower-case word tokens; only letter-runs, no punctuation."""
     return re.findall(
-        r"[a-zA-ZàâäéèêëîïôöùûüçÀÂÄÉÈÊËÎÏÔÖÙÛÜÇñÑáíóúüÁÍÓÚÜãõÃÕâêÊßäöüÄÖÜąćęłńóśźżĄĆĘŁŃÓŚŹŻáčďěňřšťůýžíáÁČĎĚŇŘŠŤŮÝŽăâîșțĂÂÎȘȚçğıİöşÇĞÖŞ]+",
+        r"[a-zA-ZàâäéèêëîïôöùûüçÀÂÄÉÈÊËÎÏÔÖÙÛÜÇñÑáíóúÁÍÓÚãõÃÕßąćęłńśźżĄĆĘŁŃŚŹŻčďěňřšťůýžČĎĚŇŘŠŤŮÝŽășțĂȘȚğıİşĞŞ]+",
         text.lower(),
     )
 

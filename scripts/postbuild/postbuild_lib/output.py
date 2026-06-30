@@ -13,11 +13,12 @@ from __future__ import annotations
 import json
 import re
 import sys
+from collections.abc import Callable
 from datetime import UTC, datetime
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[3]))
-import _lang_registry as _lr  # type: ignore[import-not-found]
+import _lang_registry as _lr
 
 
 def _all_active_non_en_langs() -> list[str]:
@@ -611,7 +612,7 @@ def write_json_feed(public: Path) -> bool:
         "home_page_url": f"{base}/",
         "feed_url": f"{base}/feed.json",
         "language": "en-GB",
-        "icon": "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png",
+        "icon": "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp",
         "favicon": "https://cloudcdn.pro/clients/sebastienrousseau/favicon.ico",
         "authors": [{"name": "Sebastien Rousseau", "url": f"{base}/about/"}],
         "items": items,
@@ -873,7 +874,9 @@ _ATOM_LINK_HREF_RE = re.compile(r'<link[^>]*\bhref="([^"]+)"', re.IGNORECASE)
 _LOC_RE = re.compile(r"<loc>([\s\S]*?)</loc>", re.IGNORECASE)
 
 
-def _dedupe_blocks(text: str, block_re: re.Pattern[str], key_fn) -> tuple[str, int]:
+def _dedupe_blocks(
+    text: str, block_re: re.Pattern[str], key_fn: Callable[[str], str]
+) -> tuple[str, int]:
     """Walk ``block_re`` matches in order, keep the first occurrence of each
     ``key_fn(block)`` value, drop subsequent duplicates. Returns (new_text,
     dropped_count). Non-block content is preserved verbatim."""

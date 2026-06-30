@@ -16,72 +16,40 @@ permissions:
 
 jobs:
   # =========================================================================
-  # Stage 1 — build the site, run all the cheap checks, then partition the
-  # pa11y URL set into the shard configs the matrix consumes next.
+  # Stage 0 — fast, source-only static analysis. Runs in PARALLEL with the
+  # build so lint / type / complexity failures surface in ~2-3 min instead of
+  # ~18 min into the build. No ssg / site build needed. improvement-plan 3.2.
   # =========================================================================
-  build:
-    name: Build + smoke tests + partition
+  static:
+    name: Static analysis (lint, types, complexity)
     runs-on: ubuntu-latest
-    outputs:
-      pa11y-needed: ${{ steps.partition.outputs.pa11y-needed }}
+    timeout-minutes: 20
     steps:
-      - uses: actions/checkout@v7
-
-      - name: Install Rust toolchain (cached)
-        uses: dtolnay/rust-toolchain@stable
-
-      - name: Cache cargo registry + git
-        uses: actions/cache@v5
-        with:
-          path: |
-            ~/.cargo/registry
-            ~/.cargo/git
-            ~/.cargo/bin
-          key: ${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}-ssg
-
-      - name: Add cargo bin to PATH
-        run: echo "$HOME/.cargo/bin" >> $GITHUB_PATH
-
-      - name: Install Static Site Generator (ssg)
-        run: |
-          if ! command -v ssg >/dev/null 2>&1; then
-            cargo install ssg --locked
-          fi
-
-      - name: Install wasm-pack + wasm32 target
-        run: |
-          rustup target add wasm32-unknown-unknown
-          if ! command -v wasm-pack >/dev/null 2>&1; then
-            curl -sSf https://rustwasm.github.io/wasm-pack/installer/init.sh | sh
-          fi
+      - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7
 
       - name: Setup Python
-        uses: actions/setup-python@v6
+        uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
         with:
           python-version: "3.12"
           cache: 'pip'
 
       - name: Setup Node
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e # v6
         with:
           node-version: "22"
 
-      - name: Install Python dev tooling
+      - name: Install tooling
         run: |
-          pip install --quiet 'ruff==0.15.*' pytest radon pytest-cov
+          pip install --quiet 'ruff==0.15.9' 'mypy==2.1.0' 'types-PyYAML==6.0.12.20260518' radon   # ADR-0002
           pip install --quiet -r requirements.txt
-
-      - name: Vulnerability scan (pip-audit)
-        # Audit the runtime deps in requirements.txt against the OSV / PyPI
-        # advisory database. Fails the build on any non-deferred advisory;
-        # use `pip-audit --ignore-vuln <id>` in this step's body to defer
-        # with a comment justifying the deferral.
-        run: |
-          pip install --quiet pip-audit
-          pip-audit --strict -r requirements.txt
 
       - name: Lint (ruff)
         run: ruff check scripts/ tests/
+
+      - name: Type check (mypy strict tier)
+        # Strict mypy over the strict-clean module tier; ratchets outward as
+        # modules are typed. See scripts/typecheck.sh + improvement-plan Phase 1.2.
+        run: bash scripts/typecheck.sh
 
       - name: Naming conventions check
         run: python3 scripts/dev/check_naming_conventions.py
@@ -107,16 +75,83 @@ jobs:
             --reporters console \
             --silent
 
-      - name: Unit tests (pytest)
-        run: pytest tests/unit/ -ra
+  # =========================================================================
+  # Stage 1 — build the site, run the build-dependent checks, then partition
+  # the pa11y URL set into the shard configs the matrix consumes next.
+  # =========================================================================
+  build:
+    name: Build + smoke tests + partition
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    outputs:
+      pa11y-needed: ${{ steps.partition.outputs.pa11y-needed }}
+    steps:
+      - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7
 
-      - name: Coverage gate (postbuild_lib must stay at 100 %)
+      - name: Install Rust toolchain (cached)
+        uses: dtolnay/rust-toolchain@4be7066ada62dd38de10e7b70166bc74ed198c30 # stable
+
+      - name: Cache cargo registry + git
+        uses: actions/cache@caa296126883cff596d87d8935842f9db880ef25 # v5
+        with:
+          path: |
+            ~/.cargo/registry
+            ~/.cargo/git
+            ~/.cargo/bin
+          key: ${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}-ssg
+
+      - name: Add cargo bin to PATH
+        run: echo "$HOME/.cargo/bin" >> $GITHUB_PATH
+
+      - name: Install Static Site Generator (ssg)
+        run: |
+          if ! command -v ssg >/dev/null 2>&1; then
+            cargo install ssg --locked --version 0.0.44   # ADR-0002
+          fi
+
+      - name: Install wasm-pack + wasm32 target
+        run: |
+          rustup target add wasm32-unknown-unknown
+          if ! command -v wasm-pack >/dev/null 2>&1; then
+            cargo install wasm-pack --version 0.15.0 --locked   # ADR-0002 (pinned; cached in ~/.cargo/bin)
+          fi
+
+      - name: Setup Python
+        uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: "3.12"
+          cache: 'pip'
+
+      - name: Setup Node
+        uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e # v6
+        with:
+          node-version: "22"
+
+      - name: Install Python dev tooling
+        # Lint/type/complexity tooling lives in the parallel `static` job;
+        # the build job only needs the test runner + SBOM tool + runtime deps.
+        run: |
+          pip install --quiet pytest pytest-cov
+          pip install --quiet 'cyclonedx-bom==7.3.0'   # SBOM (ADR-0004)
+          pip install --quiet -r requirements.txt
+
+      - name: Vulnerability scan (pip-audit)
+        # Audit the runtime deps in requirements.txt against the OSV / PyPI
+        # advisory database. Fails the build on any non-deferred advisory;
+        # use `pip-audit --ignore-vuln <id>` in this step's body to defer
+        # with a comment justifying the deferral.
+        run: |
+          pip install --quiet pip-audit
+          pip-audit --strict -r requirements.txt
+
+      - name: Unit tests + coverage gate (postbuild_lib 100 %)
+        # Single pre-build pytest run with the postbuild_lib coverage gate.
         # build_translations is gated post-build below: its smoke suites are
         # SKIP_IF_NO_BUILD-guarded, so a pre-build run can only reach ~92 %.
         run: |
-          pytest tests/unit/ \
+          pytest tests/unit/ -ra \
             --cov=scripts/postbuild/postbuild_lib \
-            --cov-fail-under=100 -q
+            --cov-fail-under=100
 
       - name: Build site
         run: ./build.sh
@@ -142,10 +177,15 @@ jobs:
       - name: JSON-LD + feed validation
         run: python3 scripts/seo_and_audit/validate_jsonld.py --base-dir public
 
+      - name: Generate + validate SBOM (CycloneDX)
+        # Emits public/sbom.cdx.json (resolved runtime deps) and ships it in the
+        # build artifact → deploy. ADR-0004 / improvement-plan Phase 2.1.
+        run: bash scripts/security/gen-sbom.sh public/sbom.cdx.json
+
       - name: Restore pa11y hash cache (read only)
         # Restore the cache so partition can decide what's already cached.
         # The actual save happens in the `finalise` job after pa11y passes.
-        uses: actions/cache/restore@v5
+        uses: actions/cache/restore@caa296126883cff596d87d8935842f9db880ef25 # v5
         with:
           path: _data/pa11y-cache.json
           key: pa11y-cache-v1-${{ runner.os }}-${{ github.run_id }}
@@ -171,7 +211,7 @@ jobs:
           fi
 
       - name: Upload build artifact (public/ + pa11y configs + cache)
-        uses: actions/upload-artifact@v7
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
         with:
           name: build-output
           path: |
@@ -192,6 +232,11 @@ jobs:
     needs: build
     if: needs.build.outputs.pa11y-needed == 'true'
     runs-on: ubuntu-latest
+    # A wedged headless-Chrome process can leave pa11y-ci hanging on a
+    # single URL long past its per-URL timeout (observed at 5h+). Bound
+    # the whole shard so a hang fails fast instead of stalling the deploy
+    # indefinitely; a clean shard finishes in ~35 min.
+    timeout-minutes: 50
     strategy:
       # Keep all shards going even if one fails, so a single bad URL doesn't
       # mask issues on the other three. We still aggregate exit codes in the
@@ -200,21 +245,21 @@ jobs:
       matrix:
         shard: [1, 2, 3, 4]
     steps:
-      - uses: actions/checkout@v7
+      - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7
 
       - name: Download build artifact
-        uses: actions/download-artifact@v8
+        uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8
         with:
           name: build-output
 
       - name: Setup Python
-        uses: actions/setup-python@v6
+        uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
         with:
           python-version: "3.12"
           cache: 'pip'
 
       - name: Setup Node
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e # v6
         with:
           node-version: "22"
 
@@ -224,7 +269,7 @@ jobs:
         # precision disagreed with current pa11y/axe by ~0.2 ratio
         # points, masking AAA-passing colour pairs as failures on
         # certain warm bg tones (--paper-card on /<lang>/<topics>/).
-        run: npm install -g pa11y-ci@^4
+        run: npm install -g pa11y-ci@4.1.1   # ADR-0002
 
       - name: Serve public/
         run: |
@@ -271,7 +316,7 @@ jobs:
 
       - name: Upload pa11y shard result
         if: always()
-        uses: actions/upload-artifact@v7
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
         with:
           name: pa11y-shard-${{ matrix.shard }}
           path: pa11y.shard.json
@@ -287,10 +332,12 @@ jobs:
     needs: [build, pa11y]
     if: always() && needs.build.result == 'success' && (needs.pa11y.result == 'success' || needs.pa11y.result == 'skipped')
     runs-on: ubuntu-latest
+    timeout-minutes: 45
     permissions:
       contents: read
       pages: write
       id-token: write
+      attestations: write   # SLSA build provenance for the SBOM (ADR-0004)
     # The `github-pages` environment has "Deployment branches: main only"
     # protection. Applying it to the whole job blocks every PR run at the
     # 2-second mark before any step executes. Bind it only when this run
@@ -298,30 +345,30 @@ jobs:
     # build / lint / test / Lighthouse / pa11y signal.
     environment: ${{ github.ref == 'refs/heads/main' && 'github-pages' || '' }}
     steps:
-      - uses: actions/checkout@v7
+      - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7
 
       - name: Setup Python
-        uses: actions/setup-python@v6
+        uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
         with:
           python-version: "3.12"
           cache: 'pip'
 
       - name: Setup Node
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e # v6
         with:
           node-version: "22"
 
       - name: Install Lighthouse CI
-        run: npm install -g @lhci/cli@0.14.x
+        run: npm install -g @lhci/cli@0.14.0   # ADR-0002
 
       - name: Download build artifact
-        uses: actions/download-artifact@v8
+        uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8
         with:
           name: build-output
 
       - name: Download pa11y shard results
         if: needs.pa11y.result == 'success'
-        uses: actions/download-artifact@v8
+        uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8
         with:
           pattern: pa11y-shard-*
           merge-multiple: true
@@ -332,27 +379,37 @@ jobs:
         run: |
           python3 - <<'PY'
           import json, glob
+
+          def load_report(path):
+              """pa11y-ci --reporter json occasionally writes trailing
+              stdout after its JSON object (a deprecation note, a second
+              flush), producing a file json.load rejects with
+              'Extra data'. Decode the first complete JSON object and
+              ignore any trailing bytes."""
+              text = open(path, encoding="utf-8").read()
+              try:
+                  return json.loads(text)
+              except json.JSONDecodeError:
+                  obj, _ = json.JSONDecoder().raw_decode(text.lstrip())
+                  return obj
+
           merged = {"total": 0, "passes": 0, "errors": 0, "results": {}}
-          for path in sorted(glob.glob("pa11y-shards/pa11y.shard.json")) + \
-                      sorted(glob.glob("pa11y-shards/pa11y.shard.*.json")):
-              with open(path) as f:
-                  d = json.load(f)
+          def absorb(path):
+              d = load_report(path)
               merged["total"]  += d.get("total", 0)
               merged["passes"] += d.get("passes", 0)
               merged["errors"] += d.get("errors", 0)
               for k, v in d.get("results", {}).items():
                   merged["results"][k] = v
+
+          for path in sorted(glob.glob("pa11y-shards/pa11y.shard.json")) + \
+                      sorted(glob.glob("pa11y-shards/pa11y.shard.*.json")):
+              absorb(path)
           # download-artifact with merge-multiple may consolidate into one
           # file per shard at the same name — handle both layouts.
           if not merged["total"]:
               for path in sorted(glob.glob("pa11y-shards/**/pa11y.shard.json", recursive=True)):
-                  with open(path) as f:
-                      d = json.load(f)
-                  merged["total"]  += d.get("total", 0)
-                  merged["passes"] += d.get("passes", 0)
-                  merged["errors"] += d.get("errors", 0)
-                  for k, v in d.get("results", {}).items():
-                      merged["results"][k] = v
+                  absorb(path)
           with open("pa11y.json", "w") as f:
               json.dump(merged, f)
           print(f"merged: {merged['total']} URLs, {merged['errors']} errors")
@@ -370,7 +427,7 @@ jobs:
 
       - name: Save pa11y hash cache
         if: needs.pa11y.result == 'success' || needs.pa11y.result == 'skipped'
-        uses: actions/cache/save@v5
+        uses: actions/cache/save@caa296126883cff596d87d8935842f9db880ef25 # v5
         with:
           path: _data/pa11y-cache.json
           key: pa11y-cache-v1-${{ runner.os }}-${{ github.run_id }}
@@ -385,6 +442,16 @@ jobs:
         env:
           LHCI_BUILD_CONTEXT__CURRENT_HASH: ${{ github.sha }}
 
+      - name: Attest SBOM build provenance
+        # SLSA build-provenance attestation for the deployed SBOM (main only).
+        # Verifiable with: gh attestation verify public/sbom.cdx.json \
+        #   --repo sebastienrousseau/sebastienrousseau.github.io
+        # ADR-0004 / improvement-plan Phase 2.2.
+        if: github.ref == 'refs/heads/main'
+        uses: actions/attest-build-provenance@0f67c3f4856b2e3261c31976d6725780e5e4c373 # v4
+        with:
+          subject-path: public/sbom.cdx.json
+
       - name: Prepare CNAME and .nojekyll
         if: github.ref == 'refs/heads/main'
         run: |
@@ -393,15 +460,15 @@ jobs:
 
       - name: Configure Pages
         if: github.ref == 'refs/heads/main'
-        uses: actions/configure-pages@v6
+        uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6
 
       - name: Upload Pages artifact
         if: github.ref == 'refs/heads/main'
-        uses: actions/upload-pages-artifact@v5
+        uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5
         with:
           path: public
 
       - name: Deploy to GitHub Pages
         if: github.ref == 'refs/heads/main'
         id: deployment
-        uses: actions/deploy-pages@v5
+        uses: actions/deploy-pages@cd2ce8fcbc39b97be8ca5fce6e763baed58fa128 # v5

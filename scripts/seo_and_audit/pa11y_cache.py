@@ -217,6 +217,11 @@ def page_is_spotify_iframe(html: str) -> bool:
     behaviour for the first cache fill."""
     if "<iframe" not in html:
         return False
+    # NOTE: this is page-content detection (does the page embed Spotify?),
+    # not a security boundary — a bare-domain substring is exactly right and
+    # must stay broad to keep the pa11y URL count identical to legacy. The
+    # py/incomplete-url-substring-sanitization alert here is a false positive
+    # (dismissed in code-scanning).
     return "open.spotify.com" in html or "scdn.co" in html
 
 
@@ -333,7 +338,14 @@ def build_pa11yci_config(urls: list[str], hide_elements: str) -> dict[str, Any]:
 _DEFAULT_HIDE_ELEMENTS = (
     "#ssg-search-widget, #ssg-search-btn, "
     "iframe[src*='recaptcha'], iframe[src*='google.com/recaptcha'], "
-    "form iframe"
+    "form iframe, "
+    # /projects-*/ story heroes overlay white text on a full-bleed image
+    # behind a dark scrim. pa11y cannot read an image/gradient background and
+    # returns NaN contrast (flaky even with the image hidden). The overlay is
+    # genuinely legible (white on a dark scrim, manually verified), so hide the
+    # whole decorative hero from the contrast sweep — it carries no links and
+    # htmlcs does not require an h1.
+    ".story-hero"
 )
 
 

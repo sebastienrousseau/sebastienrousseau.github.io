@@ -433,15 +433,15 @@ def _category_label(section_title: str) -> str:
     AI agents, not displayed to humans."""
     t = section_title.lower()
     if "payment" in t:
-        return "Finance — Payments"
+        return "Finance and payments"
     if "quantum" in t or "pqc" in t:
-        return "Cryptography — Post-Quantum"
+        return "Post-quantum cryptography"
     if "ai" in t:
         return "Artificial Intelligence"
     if "rust" in t:
-        return "Developer Tools — Rust"
+        return "Developer tools, Rust"
     if "web" in t or "css" in t:
-        return "Developer Tools — Web"
+        return "Developer tools, web"
     return "Software Library"
 
 

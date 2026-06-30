@@ -5,13 +5,13 @@ description: "Apple의 멀티모달 대규모 언어 모델에 관한 MM1 논문
 date: "March 18, 2024"
 language: "ko-KR"
 locale: "ko_KR"
-banner: "https://cloudcdn.pro/stocks/images/possessed-photography-jIBMSMs4_kA-unsplash.webp"
+banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp"
 banner_alt: "AI의 진화를 표현하는 비주얼"
 keywords: "MM1, Apple AI, 멀티모달 LLM, 비전 언어, 사전 학습, 스케일링 법칙"
 last_reviewed: "2026-05-16"
 ---
 
-![AI의 진화를 표현하는 비주얼](https://cloudcdn.pro/stocks/images/possessed-photography-jIBMSMs4_kA-unsplash.webp).class=\"img-fluid clearfix\"
+![AI의 진화를 표현하는 비주얼](https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp).class=\"img-fluid clearfix\"
 
 ## 통찰
 

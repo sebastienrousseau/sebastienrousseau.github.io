@@ -6,24 +6,23 @@
 
 [tools]
 python = "3.12"
-node   = "24"
+node   = "22"
 rust   = "stable"
 
-# JS CLI tools managed by mise's npm backend — same versions CI uses
-# (`.github/workflows/ci.yml`: `npm install -g pa11y-ci@^3`). After
-# `mise install`, `pa11y-ci` and `http-server` resolve on PATH inside
-# this repo's shell — no global npm pollution, no Node version drift.
-"npm:pa11y-ci"    = "3"
+# JS CLI tools managed by mise's npm backend — pinned to the SAME exact
+# versions CI uses (`.github/workflows/ci.yml`: `pa11y-ci@4.1.1`). See
+# ADR-0002. After `mise install`, `pa11y-ci` and `http-server` resolve on
+# PATH inside this repo's shell — no global npm pollution, no version drift.
+"npm:pa11y-ci"    = "4.1.1"
 "npm:http-server" = "14"
 
 # ssg (Static Site Generator) is installed from crates.io rather than via mise.
 # It tracks the latest published version on crates.io — keep here
 # documented for reproducibility, not for `mise install` to act on.
 #
-#   cargo install ssg --version 0.0.40
+#   cargo install ssg --locked --version 0.0.44
 #
-# Pin the version in build.sh / publish-today.md when reproducibility
-# matters more than always-latest.
+# Pinned to 0.0.44 across all workflows per ADR-0002; bump deliberately.
 
 [env]
 # Tells Python tooling to honour the repo's pyproject.toml settings.

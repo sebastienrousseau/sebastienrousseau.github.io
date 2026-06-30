@@ -5,7 +5,7 @@ description: "Una conversazione su come trasferire competenze in IA e calcolo qu
 date: "May 11, 2026"
 language: "it-IT"
 locale: "it_IT"
-banner: "https://cloudcdn.pro/stocks/images/lucy-knowledge-transfer-banner.webp"
+banner: "https://cloudcdn.pro/stocks/images/harald-krichel-scarlett-johansson-8531.webp"
 banner_alt: "Lucy Besson, trasferimento di conoscenze"
 keywords: "trasferimento conoscenze, IA, quantistico, formazione, mentorship, banking"
 ---

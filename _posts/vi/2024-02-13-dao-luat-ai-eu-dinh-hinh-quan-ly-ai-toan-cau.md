@@ -5,12 +5,12 @@ description: 'Đạo luật AI EU thiết lập khung quy định cho các hệ 
 date: 'February 13, 2024'
 language: 'vi-VN'
 locale: 'vi_VN'
-banner: 'https://cloudcdn.pro/stocks/images/eu-ai-act-banner.webp'
+banner: 'https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp'
 banner_alt: 'Quốc kỳ EU với các biểu tượng AI'
 keywords: 'Đạo luật AI EU, quy định AI, AI có trách nhiệm, GDPR, tuân thủ, quản trị AI, ngân hàng'
 ---
 
-![Đạo luật AI EU](https://cloudcdn.pro/stocks/images/eu-ai-act-banner.webp).class=\"img-fluid clearfix\"
+![Đạo luật AI EU](https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp).class=\"img-fluid clearfix\"
 
 > **TL;DR.** Đạo luật AI EU là khung pháp lý AI toàn diện đầu tiên trên thế giới. Nó phân loại các hệ thống AI theo rủi ro, đặt ra các yêu cầu nghiêm ngặt cho các trường hợp sử dụng rủi ro cao và áp đặt mức phạt lên đến 7% doanh thu toàn cầu cho việc không tuân thủ.
 >

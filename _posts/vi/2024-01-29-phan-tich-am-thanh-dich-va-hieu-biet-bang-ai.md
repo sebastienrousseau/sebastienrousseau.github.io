@@ -5,12 +5,12 @@ description: 'Cách các mô hình AI mới — Whisper, mô hình ngôn ngữ-�
 date: 'January 29, 2024'
 language: 'vi-VN'
 locale: 'vi_VN'
-banner: 'https://cloudcdn.pro/stocks/images/audio-ai-banner.webp'
+banner: 'https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp'
 banner_alt: 'Sóng âm và văn bản số'
 keywords: 'AI, âm thanh, nhận dạng giọng nói, Whisper, dịch, hiểu biết, phân tích, ngân hàng, dịch vụ khách hàng'
 ---
 
-![Phân tích âm thanh AI](https://cloudcdn.pro/stocks/images/audio-ai-banner.webp).class=\"img-fluid clearfix\"
+![Phân tích âm thanh AI](https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp).class=\"img-fluid clearfix\"
 
 > **TL;DR.** Các mô hình AI mới — Whisper của OpenAI, các mô hình ngôn ngữ-âm thanh đa phương thức — đã biến âm thanh từ một loại dữ liệu khó xử lý thành nguồn thông tin có thể truy vấn được. Đối với các trung tâm cuộc gọi ngân hàng, đây là một sự chuyển đổi cấu trúc.
 >

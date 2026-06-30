@@ -5,12 +5,12 @@ description: "Jak strukturyzowany transfer wiedzy zmienia konsulting w obszarach
 date: "May 11, 2026"
 language: "pl-PL"
 locale: "pl_PL"
-banner: "https://cloudcdn.pro/stocks/images/lucy-knowledge-transfer-banner.webp"
+banner: "https://cloudcdn.pro/stocks/images/harald-krichel-scarlett-johansson-8531.webp"
 banner_alt: "Portret Lucy Besson z motywem transferu wiedzy"
 keywords: "transfer wiedzy, AI, kwanty, konsulting, knowledge transfer, Lucy Besson"
 ---
 
-![Portret Lucy Besson z motywem transferu wiedzy](https://cloudcdn.pro/stocks/images/lucy-knowledge-transfer-banner.webp).class=\"img-fluid clearfix\"
+![Portret Lucy Besson z motywem transferu wiedzy](https://cloudcdn.pro/stocks/images/harald-krichel-scarlett-johansson-8531.webp).class=\"img-fluid clearfix\"
 
 Jak strukturyzowany transfer wiedzy zmienia konsulting w obszarach AI i obliczeń kwantowych.
 

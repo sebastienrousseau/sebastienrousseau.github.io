@@ -5,7 +5,7 @@ description: "Emerging Payments Association Asia のための業界ホワイト�
 date: "September 1, 2025"
 language: "ja-JP"
 locale: "ja_JP"
-banner: "https://cloudcdn.pro/stocks/images/markus-spiske-FXFz-sW0uwo-unsplash.webp"
+banner: "https://cloudcdn.pro/stocks/images/markus-spiske-FXFz-sW0uwo.webp"
 banner_alt: "量子計算と決済インフラ"
 keywords: "量子安全決済, EPAA, ポスト量子暗号, 決済インフラ, ホールセール決済, リアルタイム決済"
 last_reviewed: "2026-05-11"

@@ -5,13 +5,13 @@ description: "RustLogs는 운영 등급 Rust 응용을 위한 포괄적 구조�
 date: "March 8, 2024"
 language: "ko-KR"
 locale: "ko_KR"
-banner: "https://cloudcdn.pro/stocks/images/luca-bravo-XJXWbfSo2f0-unsplash.webp"
+banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp"
 banner_alt: "코드를 보여주는 노트북"
 keywords: "RustLogs, Rust, 로깅, 구조화 로그, JSON, 트레이싱, 관측 가능성, 운영"
 last_reviewed: "2026-05-16"
 ---
 
-![코드를 보여주는 노트북](https://cloudcdn.pro/stocks/images/luca-bravo-XJXWbfSo2f0-unsplash.webp).class=\"img-fluid clearfix\"
+![코드를 보여주는 노트북](https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp).class=\"img-fluid clearfix\"
 
 ## 통찰
 
