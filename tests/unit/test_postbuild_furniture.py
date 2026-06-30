@@ -1871,7 +1871,6 @@ def test_inject_lang_switcher_is_idempotent():
 # inject_breadcrumbs — visible trail mirroring the BreadcrumbList JSON-LD
 # ---------------------------------------------------------------------------
 
-_CRUMB_BASE = "https://sebastienrousseau.com"
 _CRUMB_LD = (
     '<script type="application/ld+json">{"@graph":[{"@type":"BlogPosting"},'
     '{"@type":"BreadcrumbList","itemListElement":['
