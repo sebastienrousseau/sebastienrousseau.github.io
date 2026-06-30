@@ -278,6 +278,18 @@ next scan and, where the code is in the main test scope, by a unit test.
 | `js/xss-through-exception` (medium) | `labs/hsh-demo/web/demo.js` | The boot-error node is built with `textContent`, so an exception message can never be parsed as HTML. |
 | `py/incomplete-url-substring-sanitization` (high ×6) | `test_schemas.py`, `test_postbuild_furniture.py` (×4) | Test assertions tightened to full-URL prefixes (`https://…/`). The remaining instance in `pa11y_cache.py` is page-content detection, not a URL security boundary, and is dismissed in code-scanning as a false positive (documented inline). |
 
-**Remaining batches (tracked):** the ~60 CodeQL quality notes (unused vars/imports / duplicate-definition — mostly ruff-fixable), and the OpenSSF Scorecard items (pin Actions by SHA; branch-protection / required-review settings, which are repo-admin actions). The `S104` bind-all in the Fly container is intentional and outside the linted `scripts/ tests/` scope.
+**Batch 3 — OpenSSF Scorecard pinned dependencies (done):** every GitHub
+Action across the nine workflows is pinned to a full commit SHA with the
+version as a trailing comment (e.g. `actions/checkout@9c091bb… # v7`),
+clearing the 26 `PinnedDependenciesID` findings. Bump deliberately by
+re-resolving the tag → SHA (ADR-0002 philosophy).
+
+**Remaining (tracked):** the ~60 CodeQL quality notes (unused module-private
+vars / imports / duplicate-definition — being cleared per-symbol after
+confirming each is not cross-module-imported), and the repo-policy Scorecard
+items (**branch protection, required reviews, code-review** — GitHub
+*settings* only the owner can toggle; this is also Phase 0.4). The `S104`
+bind-all in the Fly container is intentional and outside the linted
+`scripts/ tests/` scope.
 
 Any future change that loosens these fails the build before it can land on main.
