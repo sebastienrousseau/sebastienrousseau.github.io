@@ -403,7 +403,7 @@ def test_build_software_source_code_relative_href_resolves_to_site():
     card = _card(href="/projects/local/", eyebrow="Rust")
     rec = sc._build_software_source_code(card, "OPEN-SOURCE RUST", 3)
     assert rec is not None
-    assert rec["url"].startswith("https://sebastienrousseau.com/")
+    assert rec["url"].startswith("https://sebastienrousseau.com")
 
 
 def test_build_software_source_code_returns_none_on_bad_card():
