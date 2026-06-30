@@ -917,7 +917,7 @@ def test_inject_mermaid_converts_fenced_block():
     assert '<pre class="mermaid">' in out
     assert "graph TD" in out
     # CSP widened to allow the Mermaid CDN import
-    assert "cdn.jsdelivr.net" in out
+    assert 'https://cdn.jsdelivr.net' in out
 
 
 def test_inject_mermaid_widens_style_src_and_strips_hashes():
@@ -942,7 +942,7 @@ def test_inject_mermaid_widens_style_src_and_strips_hashes():
     # The placeholder sha256 hash must be stripped to make unsafe-inline take effect.
     assert "sha256-47DEQpj8HBSa" not in out
     # script-src still widened by the original branch.
-    assert "cdn.jsdelivr.net" in out
+    assert 'https://cdn.jsdelivr.net' in out
     # Raw `>` chars in mermaid block (not re-encoded as &gt;).
     assert "A->>B" in out
 
@@ -981,7 +981,7 @@ def test_inject_sources_list_renders_aside_with_authoritative_links():
     )
     out = inject_sources_list(html)
     assert 'class="article-sources"' in out
-    assert "nist.gov" in out
+    assert 'https://nist.gov/' in out
 
 
 def test_inject_sources_list_no_op_without_outbound_links():
@@ -1252,7 +1252,7 @@ def test_inject_citations_appends_citation_array():
     )
     out = inject_citations(html)
     assert '"citation":' in out
-    assert "nist.gov" in out
+    assert 'https://nist.gov/' in out
 
 
 def test_inject_sources_list_inserts_before_pagination():

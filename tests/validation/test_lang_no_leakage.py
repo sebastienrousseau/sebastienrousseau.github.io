@@ -42,9 +42,9 @@ PUBLIC = ROOT / "public"
 # We only scan chrome content (outside <main>). The page lang is read
 # from <html lang=…>.
 _HTML_LANG_RE = re.compile(r'<html\b[^>]*\blang=["\']?([a-zA-Z0-9-]+)', re.IGNORECASE)
-_MAIN_RE = re.compile(r"<main\b[\s\S]*?</main>", re.IGNORECASE)
-_SCRIPT_RE = re.compile(r"<script\b[\s\S]*?</script>", re.IGNORECASE)
-_STYLE_RE = re.compile(r"<style\b[\s\S]*?</style>", re.IGNORECASE)
+_MAIN_RE = re.compile(r"<main\b[\s\S]*?</main\s*>", re.IGNORECASE)
+_SCRIPT_RE = re.compile(r"<script\b[\s\S]*?</script\s*>", re.IGNORECASE)
+_STYLE_RE = re.compile(r"<style\b[\s\S]*?</style\s*>", re.IGNORECASE)
 _COMMENT_RE = re.compile(r"<!--[\s\S]*?-->")
 _LINK_LANG_MENU_RE = re.compile(r'<div class=["\']?ap-lang-menu[\s\S]*?</div>', re.IGNORECASE)
 

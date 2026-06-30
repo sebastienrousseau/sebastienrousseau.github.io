@@ -128,6 +128,12 @@ document.addEventListener("change", function (event) {
     if (target.getAttribute("data-filter-mode") === "navigate") {
         var base = target.getAttribute("data-navigate-base") || "/articles";
         var v = target.value;
+        // Only navigate for a safe slug value; anything else falls back to the
+        // base listing. Stops a crafted option value reaching location.href
+        // (js/xss-through-dom).
+        if (v && !/^[a-z0-9-]+$/.test(v)) {
+            v = "";
+        }
         window.location.href = v ? base + "/" + v + "/" : base + "/";
         return;
     }

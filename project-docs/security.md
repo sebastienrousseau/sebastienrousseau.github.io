@@ -268,6 +268,16 @@ next scan and, where the code is in the main test scope, by a unit test.
 | `py/uninitialized-local-variable` (error) | `fly/pdf-render/app.py` | The fetch error path now `raise`s a `werkzeug` `BadGateway` instead of `abort()`, so `res` is unambiguously bound on the success path. |
 | `py/regex/unmatchable-caret` / `-dollar` (error ×6) | `build_translations/_maps.py` | Replace the "match nothing" sentinel `r"$^"` with the canonical always-fails regex `r"(?!)"` (unit-locked in `tests/unit/test_maps_never_match.py`). |
 
-**Remaining batches (tracked):** `py/bad-tag-filter` (×3), `py/incomplete-url-substring-sanitization` (×6), the JS findings (`js/xss-through-dom`, `js/xss-through-exception`, `js/missing-origin-check`), the ~60 quality notes (unused vars/imports — mostly ruff-fixable), and the OpenSSF Scorecard items (pin Actions by SHA; branch-protection / required-review settings, which are repo-admin actions). The `S104` bind-all in the Fly container is intentional and outside the linted `scripts/ tests/` scope.
+**Batch 2 — high (done):**
+
+| Alert | Where | Fix |
+|---|---|---|
+| `py/bad-tag-filter` (high ×3) | `_search.py`, `postbuild.py`, `test_lang_no_leakage.py` | Closing tags now tolerate whitespace (`</script\s*>`, `</style\s*>`, `</main\s*>`) so a spaced end tag can't smuggle content past the strip. Unit-locked in `tests/unit/test_search_extract.py`. |
+| `js/xss-through-dom` (high) | `_layouts/main.js` | The tag-filter `<select>` value is validated against `^[a-z0-9-]+$` before it reaches `location.href`; anything else falls back to the base listing. |
+| `js/missing-origin-check` (medium) | `_layouts/sw.js` | The service-worker `message` handler ignores messages whose `event.origin` is not same-origin. |
+| `js/xss-through-exception` (medium) | `labs/hsh-demo/web/demo.js` | The boot-error node is built with `textContent`, so an exception message can never be parsed as HTML. |
+| `py/incomplete-url-substring-sanitization` (high ×6) | `test_schemas.py`, `test_postbuild_furniture.py` (×4) | Test assertions tightened to full-URL prefixes (`https://…/`). The remaining instance in `pa11y_cache.py` is page-content detection, not a URL security boundary, and is dismissed in code-scanning as a false positive (documented inline). |
+
+**Remaining batches (tracked):** the ~60 CodeQL quality notes (unused vars/imports / duplicate-definition — mostly ruff-fixable), and the OpenSSF Scorecard items (pin Actions by SHA; branch-protection / required-review settings, which are repo-admin actions). The `S104` bind-all in the Fly container is intentional and outside the linted `scripts/ tests/` scope.
 
 Any future change that loosens these fails the build before it can land on main.
