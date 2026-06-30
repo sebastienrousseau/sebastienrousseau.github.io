@@ -32,6 +32,7 @@ from io import BytesIO
 import requests
 from flask import Flask, Response, abort, jsonify, request
 from weasyprint import HTML
+from werkzeug.exceptions import BadGateway, BadRequest, NotFound
 
 LOG = logging.getLogger("pdf-render")
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
@@ -59,6 +60,14 @@ def healthz() -> Response:
 def _fetch_article_html(slug: str) -> str:
     """Fetch the canonical EN article HTML from the public site. Errors
     bubble up as 502 to the Worker so the cache-bust isn't promoted."""
+    # Defense-in-depth: re-validate the slug at the network sink. The slug is
+    # the only user-controlled input that flows into the outbound URL, so an
+    # explicit charset guard here means the request host can never be
+    # attacker-influenced (SSRF barrier) and the logged URL is provably free
+    # of control characters (log-injection barrier). `raise` (not a bare
+    # `abort`) makes the guard unambiguously terminating to static analysis.
+    if not SLUG_RE.fullmatch(slug):
+        raise BadRequest("invalid slug")
     url = f"{ORIGIN}/{slug}/"
     LOG.info("fetch %s", url)
     try:
@@ -69,11 +78,13 @@ def _fetch_article_html(slug: str) -> str:
         )
     except requests.RequestException as exc:
         LOG.warning("fetch error: %s", exc)
-        abort(502, description=f"upstream fetch error: {exc}")
+        raise BadGateway(f"upstream fetch error: {exc}") from exc
+    # `res` is guaranteed bound here: the only way out of the try/except
+    # without it is the `raise` above.
     if res.status_code == 404:
-        abort(404, description="article not found")
+        raise NotFound("article not found")
     if not res.ok:
-        abort(502, description=f"upstream {res.status_code}")
+        raise BadGateway(f"upstream {res.status_code}")
     return res.text
 
 
@@ -101,7 +112,7 @@ def render() -> Response:
     the Fly machine sees one request per article per day at most.
     """
     slug = (request.args.get("slug") or "").strip()
-    if not slug or not SLUG_RE.match(slug):
+    if not SLUG_RE.fullmatch(slug):
         abort(400, description="invalid slug")
     html = _fetch_article_html(slug)
     pdf = _render_pdf(html, slug)

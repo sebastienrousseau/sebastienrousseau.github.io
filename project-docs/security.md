@@ -253,4 +253,21 @@ Any change that weakens these rules fails the build check immediately.
 | `validate_jsonld.py` | JSON-LD shapes match required properties | `scripts/validate_jsonld.py` |.
 | `audit_links.py` | Internal links resolve to a real file | `scripts/audit_links.py` |.
 
+## CodeQL remediation (Phase 4)
+
+CodeQL (`security-and-quality`, ADR-0005) runs on every push. The open
+alerts are being remediated in severity order; each fix is verified by the
+next scan and, where the code is in the main test scope, by a unit test.
+
+**Batch 1 — critical + regex (done):**
+
+| Alert | Where | Fix |
+|---|---|---|
+| `py/partial-ssrf` (critical) | `fly/pdf-render/app.py` | Re-validate the slug against `^[a-z0-9][a-z0-9-]{0,127}$` at the network sink before building the outbound URL, so the request host can never be attacker-influenced. |
+| `py/log-injection` (medium ×2) | `fly/pdf-render/app.py` | The same charset guard makes the logged value provably free of CR/LF control characters. |
+| `py/uninitialized-local-variable` (error) | `fly/pdf-render/app.py` | The fetch error path now `raise`s a `werkzeug` `BadGateway` instead of `abort()`, so `res` is unambiguously bound on the success path. |
+| `py/regex/unmatchable-caret` / `-dollar` (error ×6) | `build_translations/_maps.py` | Replace the "match nothing" sentinel `r"$^"` with the canonical always-fails regex `r"(?!)"` (unit-locked in `tests/unit/test_maps_never_match.py`). |
+
+**Remaining batches (tracked):** `py/bad-tag-filter` (×3), `py/incomplete-url-substring-sanitization` (×6), the JS findings (`js/xss-through-dom`, `js/xss-through-exception`, `js/missing-origin-check`), the ~60 quality notes (unused vars/imports — mostly ruff-fixable), and the OpenSSF Scorecard items (pin Actions by SHA; branch-protection / required-review settings, which are repo-admin actions). The `S104` bind-all in the Fly container is intentional and outside the linted `scripts/ tests/` scope.
+
 Any future change that loosens these fails the build before it can land on main.
