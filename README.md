@@ -66,13 +66,30 @@ Ensure your commit-signing key is active before building.
 
 ## Quick Start
 
+With [mise](https://mise.jdx.dev) installed, one command provisions the entire
+pinned toolchain (Rust + `ssg`, Python 3.12 + deps, Node 22 + pa11y-ci) and the
+dev tools:
+
 ```bash
 git clone https://github.com/sebastienrousseau/sebastienrousseau.github.io.git
 cd sebastienrousseau.github.io
-cargo install ssg --locked        # Rust SSG compiler
-pip install -r requirements.txt   # Python build dependencies
-./build.sh                        # emits public/ across 28 locales
+make bootstrap   # provision the pinned toolchain + dependencies (idempotent)
+make build       # emits public/ across 28 locales — first build target: under 10 min
 ```
+
+`make serve` builds and serves on <http://127.0.0.1:8000>. Ensure your
+commit-signing key is active before committing.
+
+<details>
+<summary>Manual setup (without mise)</summary>
+
+```bash
+cargo install ssg --locked --version 0.0.44   # Rust SSG compiler (pinned, ADR-0002)
+pip install -r requirements.txt               # Python build dependencies
+./build.sh                                     # emits public/ across 28 locales
+```
+
+</details>
 
 ## Layout
 
