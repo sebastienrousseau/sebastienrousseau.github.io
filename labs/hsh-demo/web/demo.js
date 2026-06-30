@@ -49,8 +49,11 @@ async function boot() {
 }
 
 boot().catch((e) => {
-  document.body.insertAdjacentHTML(
-    "beforeend",
-    `<p role="alert" style="color:#c00">Failed to boot WASM module: ${e}</p>`,
-  );
+  // Build the error node with textContent so the exception message can never
+  // be interpreted as HTML (js/xss-through-exception).
+  const p = document.createElement("p");
+  p.setAttribute("role", "alert");
+  p.style.color = "#c00";
+  p.textContent = "Failed to boot WASM module: " + (e && e.message ? e.message : e);
+  document.body.appendChild(p);
 });
