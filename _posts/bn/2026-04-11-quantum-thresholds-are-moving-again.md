@@ -1,147 +1,231 @@
 ---
-title: "Quantum Thresholds Are Moving: 10,000-Qubit Shor Risk"
-tags: "কোয়ান্টাম কম্পিউটিং, Shor's algorithm, পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, RSA, elliptic curve, neutral atoms, error correction, cryptographic agility, quantum threat, payments, ISO 20022, DORA, AI, সীমান্ত-পার পেমেন্ট, stablecoins"
-subtitle: "একটি নতুন গবেষণাপত্র পরামর্শ দিচ্ছে যে Shor's algorithm মাত্র ১০,০০০ কিউবিটে চলতে পারে। ক্রিপ্টোগ্রাফির জন্য এর প্রভাব উপেক্ষা করা কঠিন।"
-description: "Shor's algorithm এখন মাত্র ১০,০০০ কিউবিটে চলতে পারে। RSA, ECC এবং পোস্ট-কোয়ান্টাম মাইগ্রেশনের সময়সীমা সবই এগিয়ে আসছে। কারণটি জানুন।"
-date: "Apr 11, 2026"
-language: "bn-BD"
-locale: "bn_BD"
-banner: "https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp"
+# Front Matter (YAML)
+
+author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "Shor's algorithm কিউবিট থ্রেশহোল্ড ডায়াগ্রাম। নীল আলোর প্যাটার্নসহ কোয়ান্টাম কম্পিউটিং সার্কিট বোর্ড"
+banner_height: "571"
+banner_width: "1425"
+banner: "https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp"
+cdn: "https://cloudcdn.pro/clients"
+changefreq: "weekly"
+charset: "UTF-8"
+cname: "sebastienrousseau.com"
+copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
+date: "Apr 11, 2026"
+description: "Shor's algorithm এখন মাত্র ১০,০০০ কিউবিটে চলতে পারে। RSA, ECC এবং পোস্ট-কোয়ান্টাম মাইগ্রেশনের সময়সীমা সবই এগিয়ে আসছে। কারণটি জানুন।"
+format-detection: "telephone=no"
+hreflang: "bn"
+icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
+id: "https://sebastienrousseau.com/2026-04-11-quantum-thresholds-are-moving-again"
+image_alt: "Sebastien Rousseau-এর সাদা-কালো প্রতিকৃতি"
+image_height: "162"
+image_width: "162"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "কোয়ান্টাম কম্পিউটিং, Shor's algorithm, 10000 qubits, পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, RSA-2048, elliptic curve cryptography, neutral atom qubits, কোয়ান্টাম এরর কারেকশন, ক্রিপ্টোগ্রাফিক অ্যাজিলিটি, কোয়ান্টাম থ্রেট টাইমলাইন"
+language: "bn-BD"
+layout: "report"
+locale: "bn_BD"
+logo_alt: "Sebastien Rousseau-এর লোগো"
+logo_height: "44"
+logo_width: "44"
+logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
+menu: ""
+measurementID: "G-169G4ET5HQ"
+name: "Sebastien Rousseau"
+permalink: "https://sebastienrousseau.com/2026-04-11-quantum-thresholds-are-moving-again"
+rating: "general"
+referrer: "no-referrer"
+revisit-after: "7 days"
+robots: "index, follow"
+schema: "FAQPage, Article"
+short_name: "sebastienrousseau"
+subtitle: "একটি নতুন গবেষণাপত্র পরামর্শ দিচ্ছে যে Shor's algorithm মাত্র ১০,০০০ কিউবিটে চলতে পারে। ক্রিপ্টোগ্রাফির জন্য এর প্রভাব উপেক্ষা করা কঠিন।"
+tags: "কোয়ান্টাম কম্পিউটিং, Shor's algorithm, পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, RSA, elliptic curve, neutral atoms, error correction, cryptographic agility, quantum threat, payments, ISO 20022, DORA, AI, সীমান্ত-পার পেমেন্ট, stablecoins"
+theme-color: "0, 67, 165"
+title: "কোয়ান্টাম থ্রেশহোল্ড পরিবর্তিত হচ্ছে: 10,000-Qubit Shor ঝুঁকি"
+url: "https://sebastienrousseau.com/2026-04-11-quantum-thresholds-are-moving-again"
+viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
+
+# RSS - The RSS feed front matter (YAML).
+atom_link: "https://sebastienrousseau.com/2026-04-11-quantum-thresholds-are-moving-again/rss.xml"
+category: "Quantum"
+docs: https://validator.w3.org/feed/docs/rss2.html
+generator: "Static Site Generator (SSG) (version 0.0.26)"
+item_description: "একটি নতুন গবেষণাপত্র পরামর্শ দিচ্ছে যে Shor's algorithm মাত্র ১০,০০০ কিউবিটে চলতে পারে। ক্রিপ্টোগ্রাফিকভাবে প্রাসঙ্গিক কোয়ান্টাম কম্পিউটিংয়ের থ্রেশহোল্ড দ্রুত হ্রাস পাচ্ছে।"
+item_guid: "https://sebastienrousseau.com/2026-04-11-quantum-thresholds-are-moving-again/rss.xml"
+item_link: "https://sebastienrousseau.com/2026-04-11-quantum-thresholds-are-moving-again/rss.xml"
+item_pub_date: "Thu, 11 Apr 2026 06:06:06 +0000"
+item_title: "কোয়ান্টাম থ্রেশহোল্ড আবার পরিবর্তিত হচ্ছে"
+last_build_date: "Thu, 11 Apr 2026 06:06:06 +0000"
+managing_editor: "contact@sebastienrousseau.com (Sebastien Rousseau)"
+pub_date: "Thu, 11 Apr 2026 06:06:06 +0000"
+ttl: "60"
+type: "article"
+webmaster: "contact@sebastienrousseau.com"
+
+# Apple - The Apple front matter (YAML).
+apple_mobile_web_app_orientations: "portrait"
+apple_touch_icon_sizes: "192x192"
+apple-mobile-web-app-capable: "yes"
+apple-mobile-web-app-status-bar-inset: "black"
+apple-mobile-web-app-status-bar-style: "black-translucent"
+apple-mobile-web-app-title: "কোয়ান্টাম থ্রেশহোল্ড আবার পরিবর্তিত হচ্ছে"
+apple-touch-fullscreen: "yes"
+
+# MS Application - The MS Application front matter (YAML).
+msapplication-navbutton-color: "0, 83, 191"
+
+# Twitter Card - The Twitter Card front matter (YAML).
+twitter_card: "summary_large_image"
+twitter_creator: "@wwdseb"
+twitter_description: "একটি নতুন গবেষণাপত্র পরামর্শ দিচ্ছে যে Shor's algorithm মাত্র ১০,০০০ কিউবিটে চলতে পারে। ক্রিপ্টোগ্রাফিকভাবে প্রাসঙ্গিক কোয়ান্টাম কম্পিউটিংয়ের থ্রেশহোল্ড দ্রুত হ্রাস পাচ্ছে।"
+twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
+twitter_image_alt: "Sebastien Rousseau-এর লোগো"
+twitter_site: "@wwdseb"
+twitter_title: "কোয়ান্টাম থ্রেশহোল্ড আবার পরিবর্তিত হচ্ছে"
+twitter_url: "https://sebastienrousseau.com/2026-04-11-quantum-thresholds-are-moving-again"
+
+# Humans.txt - The Humans.txt front matter (YAML).
+author_website: "https://sebastienrousseau.com"
+author_twitter: "@wwdseb"
+author_location: "London, UK"
+thanks: "পড়ার জন্য ধন্যবাদ!"
+site_last_updated: "2026-04-11"
+site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
+site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
+site_software: "Static Site Generator, Rust"
+excerpt: "একটি নতুন গবেষণাপত্র পরামর্শ দিচ্ছে যে Shor's algorithm মাত্র ১০,০০০ কিউবিটে চলতে পারে। ক্রিপ্টোগ্রাফিকভাবে প্রাসঙ্গিক কোয়ান্টাম কম্পিউটিংয়ের থ্রেশহোল্ড অধিকাংশ মানুষ যা অনুমান করেছিলেন তার চেয়েও দ্রুত হ্রাস পাচ্ছে।"
+last_reviewed: "2026-05-11"
 ---
 
-![Shor's algorithm qubit threshold diagram. Quantum computing circuit board with blue light patterns](https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp).class="img-fluid clearfix"
+## কোয়ান্টাম থ্রেশহোল্ড আবার পরিবর্তিত হচ্ছে
 
----
+একটি নতুন গবেষণাপত্র পরামর্শ দিচ্ছে যে Shor's algorithm মাত্র ১০,০০০ কিউবিটে চলতে পারে। ক্রিপ্টোগ্রাফিকভাবে প্রাসঙ্গিক কোয়ান্টাম কম্পিউটিংয়ের থ্রেশহোল্ড অধিকাংশ মানুষ যা অনুমান করেছিলেন তার চেয়েও দ্রুত হ্রাস পাচ্ছে।
 
-> **TL;DR.** Shor's algorithm may now run on as few as 10,000 qubits. RSA, ECC and the timeline for post-quantum migration are all moving up. Here's why.
+> **মূল সিদ্ধান্তসমূহ**
 >
-> **মূল বার্তা**
->
-> - DRAFT translation: this article is a বাংলা stub generated from the English source. Body text is intentionally left in English until a native reviewer signs off.
-> - Source title: *Quantum Thresholds Are Moving: 10,000-Qubit Shor Risk*.
-> - Source subtitle: *A new paper suggests Shor's algorithm could run on as few as 10,000 qubits. The implications for cryptography are hard to ignore.*.
-> - Editorial note: replace this block with hand-translated copy before flipping `active=True` for bn in `scripts/_lang_registry.py`.
+> - একটি নতুন গবেষণাপত্র প্রস্তাব করেছে যে Shor's algorithm মাত্র **১০,০০০ ফিজিক্যাল কিউবিটে** চালিত হতে পারে। এটি আগের সর্বসম্মত অনুমানের তুলনায় প্রায় একশত গুণ কম।
+> - এই হ্রাস তিনটি সমজাতীয় অগ্রগতির সমন্বয়ে চালিত হচ্ছে: উচ্চ-হারের কোয়ান্টাম এরর-কারেক্টিং কোড (high-rate quantum error-correcting codes), পুনর্গঠনযোগ্য নিউট্রাল অ্যাটম অ্যারে (reconfigurable neutral atom arrays) এবং বর্ধিত সমান্তরালতা (increased parallelism)।
+> - হুমকিটি অভিন্ন নয়। **ইলিপ্টিক কার্ভ ক্রিপ্টোগ্রাফি (ECC)** কম কিউবিট সংখ্যায় বেশি ঝুঁকিপূর্ণ; তুলনামূলক স্কেলে RSA-2048-এর জন্য উল্লেখযোগ্যভাবে দীর্ঘতর রানটাইম প্রয়োজন।
+> - এটি একটি **তাত্ত্বিক প্রক্ষেপণ**, কোনো বাস্তব প্রদর্শন নয়। বর্তমান হার্ডওয়্যার এবং এই স্কেলে ত্রুটি-সহনশীল অপারেশনের মধ্যে একটি বড় প্রকৌশলগত ব্যবধান রয়ে গেছে।
+> - পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফিক স্ট্যান্ডার্ড ইতিমধ্যেই চূড়ান্ত করা হয়েছে। এখন অগ্রাধিকার হলো **মাইগ্রেশনকে ত্বরান্বিত করা**। কোনো কোয়ান্টাম সিস্টেমের আবির্ভাবের জন্য অপেক্ষা না করা।
 
----
+## একটি পরিচিত অনুমান, যা এখন চাপের মুখে
 
-## Quantum Thresholds Are Moving Again
+গত এক দশক ধরে, কোয়ান্টাম কম্পিউটিং এবং ক্রিপ্টোগ্রাফি নিয়ে আলোচনা একটি পরিচিত ধারা অনুসরণ করে আসছে। কোয়ান্টাম মেশিনগুলোকে তাত্ত্বিকভাবে শক্তিশালী হিসেবে স্বীকার করা হলেও, স্কেলের দিক থেকে সেগুলোকে অবাস্তব বলে মনে করা হতো। আধুনিক ক্রিপ্টোগ্রাফিক সিস্টেমগুলোকে ভাঙতে লক্ষ লক্ষ ফিজিক্যাল কিউবিটের প্রয়োজন হতো এবং এর সময়সীমাটি বেশ সুবিধাজনকভাবে দূরে ছিল। সেই অনুমানটি এখন তীব্র চাপের মুখে পড়েছে।
 
-A new paper suggests Shor's algorithm could run on as few as 10,000 qubits. The threshold for cryptographically relevant quantum computing is dropping faster than most had assumed.
+একটি সাম্প্রতিক গবেষণাপত্র, [Shor's algorithm মাত্র ১০,০০০ পুনর্গঠনযোগ্য পারমাণবিক কিউবিট দিয়ে সম্ভব ⧉](https://arxiv.org/pdf/2603.28627 "Shor's algorithm মাত্র ১০,০০০ পুনর্গঠনযোগ্য পারমাণবিক কিউবিট দিয়ে সম্ভব (PDF)"), একটি সাধারণ যুগান্তকারী আবিষ্কারের চেয়েও গুরুত্বপূর্ণ কিছু প্রস্তাব করেছে। এটি পরামর্শ দেয় যে ক্রিপ্টোগ্রাফিকভাবে প্রাসঙ্গিক কোয়ান্টাম গণনার থ্রেশহোল্ড পূর্বে যা বিশ্বাস করা হতো তার চেয়ে দশ গুণ কম হতে পারে। লক্ষ লক্ষ কিউবিট নয়, বরং হাজার হাজার কিউবিট। এই পার্থক্যটি গুরুত্বপূর্ণ, এবং এটি যে দিক নির্দেশ করে তা উপেক্ষা করা কঠিন।
 
-> **Key Takeaways**
->
-> - A new paper proposes Shor's algorithm could execute on as few as **10,000 physical qubits**. Roughly one hundred times fewer than previous consensus estimates.
-> - The reduction is driven by three converging advances: high-rate quantum error-correcting codes, reconfigurable neutral atom arrays, and increased parallelism.
-> - The threat is not uniform. **Elliptic Curve Cryptography (ECC)** is more vulnerable at lower qubit counts; RSA-2048 requires significantly longer runtimes at comparable scales.
-> - This is a **theoretical projection**, not a working demonstration. A substantial engineering gap remains between current hardware and fault-tolerant operation at this scale.
-> - Post-quantum cryptographic standards are already finalised. The priority now is **accelerating migration**. Not waiting for a quantum system to appear.
+## পরিবর্তন পরিচালনাকারী রূপান্তর: এরর কারেকশন, আর্কিটেকচার এবং সমান্তরালতা
 
-## A Familiar Assumption, Now Under Pressure
+এই ফলাফলটি কোনো একটি একক আবিষ্কার থেকে আসেনি। এটি কোয়ান্টাম কম্পিউটিং স্ট্যাকের বেশ কয়েকটি স্তরে উন্নতির এক ধরনের সমন্বয়কে প্রতিফলিত করে, যা একত্রে যা যা সম্ভব তার সীমানাকে পরিবর্তন করে দিচ্ছে।
 
-Over the past decade, discussions around quantum computing and cryptography have followed a familiar arc. Quantum machines were acknowledged as theoretically powerful, yet considered impractical at scale. Breaking modern cryptographic systems would require millions of physical qubits, and the timeline remained comfortably distant. That assumption is now under serious pressure.
+প্রথম উন্নতিটি এরর কারেকশন (error correction)-এর সাথে সম্পর্কিত। প্রথাগত পদ্ধতিগুলোতে বড় ধরনের ওভারহেডের প্রয়োজন হতো, যেখানে একটি মাত্র লজিক্যাল কিউবিট উপস্থাপন করতে প্রায়ই শত শত ফিজিক্যাল কিউবিট লাগত। এই গবেষণাপত্রটি তার পরিবর্তে উচ্চ-হারের কোয়ান্টাম এরর-কারেক্টিং কোডের ওপর নির্ভর করে, যা সেই ওভারহেডকে উল্লেখযোগ্যভাবে হ্রাস করে। ([Emergent Mind ⧉](https://www.emergentmind.com/papers/2603.28627 "১০,০০০ পারমাণবিক কিউবিট সহ Shor's Algorithm")) দ্বিতীয়টি আর্কিটেকচারের সাথে সম্পর্কিত। সিস্টেমটি নিউট্রাল অ্যাটমের পুনর্গঠনযোগ্য অ্যারির ওপর ভিত্তি করে তৈরি করা হয়েছে, যা কম্পিউটেশনের সময় আরও নমনীয় সংযোগ এবং আরও দক্ষ কার্যকারিতা নিশ্চিত করতে নতুন করে সাজানো যেতে পারে। ([The Quantum Insider ⧉](https://thequantuminsider.com/2026/03/31/oratomic-launches-to-build-utility-scale-quantum-computers/ "ইউটিলিটি-স্কেল কোয়ান্টাম কম্পিউটার তৈরি করতে ওরাটমিক-এর যাত্রা শুরু")) তৃতীয়টি হলো সমান্তরালতা (parallelism): কিউবিটের সংখ্যা বৃদ্ধি করার ফলে আরও বেশি অপারেশন একসাথে চালানো সম্ভব হয়, যা সামগ্রিক এক্সিকিউশনের সময় কমিয়ে দেয়।
 
-A recent paper, [Shor's algorithm is possible with as few as 10,000 reconfigurable atomic qubits ⧉](https://arxiv.org/pdf/2603.28627 "Shor's algorithm is possible with as few as 10,000 reconfigurable atomic qubits (PDF)"), proposes something more consequential than a single breakthrough. It suggests that the threshold for cryptographically relevant quantum computation may be an order of magnitude lower than previously believed. Not millions of qubits, but tens of thousands. The distinction matters, and the direction it implies is difficult to ignore.
+আলাদাভাবে দেখলে এই ধারণাগুলোর কোনোটিই নতুন নয়। তবে একত্রে মিলিত হয়ে এগুলো পূর্বে যাকে একটি কঠিন সীমাবদ্ধতা হিসেবে গণ্য করা হতো, তা নতুনভাবে সংজ্ঞায়িত করে।
 
-## The Convergence Driving the Shift: Error Correction, Architecture, and Parallelism
+## লক্ষ লক্ষ থেকে হাজার হাজারে: সংখ্যাগুলো আসলে কী বোঝায়
 
-The result does not emerge from a single discovery. It reflects a convergence of improvements across several layers of the quantum computing stack that, taken together, shift the boundary of what appears feasible.
+কয়েক বছর ধরে, ক্রিপ্টোগ্রাফিক স্কেলে Shor's algorithm চালানোর জন্য ফিজিক্যাল কিউবিটের সংখ্যার সর্বসম্মত অনুমান ছিল লক্ষ লক্ষ। নতুন বিশ্লেষণটি পরামর্শ দেয় যে, কিছু অনুমানের ওপর ভিত্তি করে এই সংখ্যাটি প্রায় ১০,০০০-এ নেমে আসতে পারে। ([arXiv ⧉](https://arxiv.org/abs/2603.28627 "Shor's algorithm মাত্র ১০,০০০ পুনর্গঠনযোগ্য পারমাণবিক কিউবিট দিয়ে সম্ভব")) তবে এই সংখ্যাটিই সম্পূর্ণ চিত্র নয়।
 
-The first improvement concerns error correction. Traditional approaches required large overheads, often hundreds of physical qubits to represent a single logical qubit. The paper instead relies on high-rate quantum error-correcting codes, which significantly reduce that overhead. ([Emergent Mind ⧉](https://www.emergentmind.com/papers/2603.28627 "Shor's Algorithm with 10000 Atomic Qubits")) The second concerns architecture. The system is built on reconfigurable arrays of neutral atoms, which can be rearranged during computation to allow for more flexible connectivity and more efficient execution. ([The Quantum Insider ⧉](https://thequantuminsider.com/2026/03/31/oratomic-launches-to-build-utility-scale-quantum-computers/ "Oratomic Launches to Build Utility-scale Quantum Computers")) The third is parallelism: increasing the number of qubits allows more operations to run simultaneously, reducing overall execution time.
+সেই সীমার সর্বনিম্ন স্তরে রানটাইম দীর্ঘই থেকে যায়। ন্যূনতম কিউবিট সংখ্যায় RSA-2048 ফ্যাক্টর করতে এখনও বছরের পর বছর অবিচ্ছিন্ন অপারেশনের প্রয়োজন হতে পারে। দ্রুত এক্সিকিউশনের জন্য আরও বেশি কিউবিটের প্রয়োজন, যা সম্ভবত কয়েক হাজার হতে পারে। কিউবিটের সংখ্যা এবং রানটাইমের মধ্যকার সম্পর্কটি রৈখিক (linear) নয়, এবং গবেষণাপত্রটিতে এটিকে একটি নির্দিষ্ট থ্রেশহোল্ডের পরিবর্তে একটি বর্ণালী (spectrum) হিসেবে উপস্থাপন করার ব্যাপারে সতর্কতা অবলম্বন করা হয়েছে। যা পরিবর্তিত হচ্ছে তা হলো গতিপথ: বাধাটি আর নিছক তাত্ত্বিক নয়। এটি এখন একটি প্রকৌশলগত প্রশ্ন।
 
-None of these ideas are new in isolation. Combined, however, they reframe what was previously treated as a hard limit.
+### পুরোনো অনুমান বনাম নতুন বাস্তবতা
 
-## From Millions to Tens of Thousands: What the Numbers Actually Mean
-
-For years, the consensus estimate for running Shor's algorithm at cryptographic scales required millions of physical qubits. The new analysis suggests that, under certain assumptions, this number could fall to approximately 10,000. ([arXiv ⧉](https://arxiv.org/abs/2603.28627 "Shor's algorithm is possible with as few as 10,000 reconfigurable atomic qubits")) That figure, however, is not the complete picture.
-
-At the lower end of that range, runtimes remain long. Factoring RSA-2048 at minimal qubit counts could still take years of continuous operation. Faster execution requires more qubits, potentially in the tens of thousands. The relationship between qubit count and runtime is not linear, and the paper is careful to present this as a spectrum rather than a fixed threshold. What changes is the direction: the barrier is no longer purely theoretical. It is now a question of engineering.
-
-### Old Assumptions vs. New Realities
-
-| Dimension | Old Assumption | New Reality |
+| মাত্রা (Dimension) | পুরোনো অনুমান | নতুন বাস্তবতা |
 |---|---|---|
-| Physical qubits required (Shor's algorithm) | ~1,000,000+ | ~10,000–26,000 |
-| Time to break RSA-2048 (at minimum qubits) | Not feasible this decade | Years (at 10K qubits); faster with more |
-| Time to break ECC-256 | Not feasible this decade | Days (estimated at ~26K qubits) |
-| Dominant hardware paradigm | Superconducting qubits | Reconfigurable neutral atom arrays |
-| Error correction overhead | Hundreds of physical qubits per logical qubit | Significantly reduced via high-rate codes |
-| Nature of the barrier | Theoretical | Engineering |
-| Migration urgency | Long-term planning | Active deployment required now |
+| প্রয়োজনীয় ফিজিক্যাল কিউবিট (Shor's algorithm) | ~১,০০০,০০০+ | ~১০,০০০–২৬,০০০ |
+| RSA-2048 ভাঙার সময় (ন্যূনতম কিউবিটে) | এই দশকে সম্ভব নয় | বছর (১০ হাজার কিউবিটে); বেশি কিউবিটে দ্রুততর |
+| ECC-256 ভাঙার সময় | এই দশকে সম্ভব নয় | দিন (অনুমানিক ~২৬ হাজার কিউবিটে) |
+| প্রভাবশালী হার্ডওয়্যার দৃষ্টান্ত | সুপারকন্ডাক্টিং কিউবিট | পুনর্গঠনযোগ্য নিউট্রাল অ্যাটম অ্যারে |
+| এরর কারেকশন ওভারহেড | লজিক্যাল কিউবিট প্রতি শত শত ফিজিক্যাল কিউবিট | উচ্চ-হারের কোডগুলোর মাধ্যমে উল্লেখযোগ্যভাবে হ্রাস পেয়েছে |
+| বাধার প্রকৃতি | তাত্ত্বিক | প্রকৌশলগত |
+| মাইগ্রেশনের জরুরি অবস্থা | দীর্ঘমেয়াদী পরিকল্পনা | এখনই সক্রিয় মোতায়েন প্রয়োজন |
 
-*Source: Analysis based on [arXiv:2603.28627 ⧉](https://arxiv.org/abs/2603.28627) and prior literature.*
+*উৎস: [arXiv:2603.28627 ⧉](https://arxiv.org/abs/2603.28627) এবং পূর্ববর্তী সাহিত্যের ওপর ভিত্তি করে করা বিশ্লেষণ।*
 
-## Time, Scale, and the Uneven Vulnerability of Cryptographic Systems
+## সময়, স্কেল এবং ক্রিপ্টোগ্রাফিক সিস্টেমের অসম দুর্বলতা
 
-One of the more significant contributions of the paper is the nuance it introduces around time. Quantum advantage does not arrive all at once. It exists along a spectrum determined by the scale of the system and the nature of the cryptographic target.
+গবেষণাপত্রের অন্যতম গুরুত্বপূর্ণ অবদান হলো এটি সময়ের বিষয়টিতে যে সূক্ষ্মতা (nuance) এনেছে। কোয়ান্টাম সুবিধা একবারে পুরোপুরি চলে আসে না। এটি সিস্টেমের স্কেল এবং ক্রিপ্টোগ্রাফিক লক্ষ্যের প্রকৃতির দ্বারা নির্ধারিত একটি বর্ণালীর ওপর ভিত্তি করে বিদ্যমান থাকে।
 
-With approximately 26,000 qubits, the authors estimate that breaking elliptic curve cryptography could take days under favourable conditions. ([arXiv ⧉](https://arxiv.org/abs/2603.28627 "Shor's algorithm is possible with as few as 10,000 reconfigurable atomic qubits")) For RSA-2048, the timelines are considerably longer. This asymmetry is important. It suggests that different cryptographic systems may become vulnerable at different points in time, rather than simultaneously, and that the transition to post-quantum standards is unlikely to be a single event with a single deadline.
+অনুকূল পরিস্থিতিতে প্রায় ২৬,০০০ কিউবিট দিয়ে ইলিপ্টিক কার্ভ ক্রিপ্টোগ্রাফি ভাঙতে কয়েক দিন সময় লাগতে পারে বলে লেখকরা অনুমান করেছেন। ([arXiv ⧉](https://arxiv.org/abs/2603.28627 "Shor's algorithm মাত্র ১০,০০০ পুনর্গঠনযোগ্য পারমাণবিক কিউবিট দিয়ে সম্ভব")) RSA-2048-এর জন্য সময়সীমা উল্লেখযোগ্যভাবে দীর্ঘ। এই অসমতাটি (asymmetry) গুরুত্বপূর্ণ। এটি নির্দেশ করে যে বিভিন্ন ক্রিপ্টোগ্রাফিক সিস্টেম একই সময়ে না হয়ে বরং সময়ের বিভিন্ন সময়ে ঝুঁকিপূর্ণ হয়ে উঠতে পারে এবং পোস্ট-কোয়ান্টাম স্ট্যান্ডার্ডে রূপান্তর কোনো একক সময়সীমার একক ঘটনা হওয়ার সম্ভাবনা কম।
 
-This pattern is consistent with broader reporting. Analyses from recent months suggest that quantum systems capable of challenging widely used encryption could emerge before the end of the decade. ([Nature ⧉](https://www.nature.com/articles/d41586-026-01054-1 "Quantum-computing breakthroughs pose risks to encryption")) Governments and standards bodies are already planning transitions to post-quantum cryptography, with implementation timelines extending into the 2030s. ([The Quantum Insider ⧉](https://thequantuminsider.com/2026/03/31/oratomic-launches-to-build-utility-scale-quantum-computers/ "Oratomic Launches to Build Utility-scale Quantum Computers")) The discussion has moved from whether to when.
+এই প্যাটার্নটি আরও বিস্তৃত প্রতিবেদনের সাথে সামঞ্জস্যপূর্ণ। সাম্প্রতিক মাসগুলোর বিশ্লেষণগুলো ইঙ্গিত দেয় যে এনক্রিপশনকে চ্যালেঞ্জ করতে সক্ষম কোয়ান্টাম সিস্টেমগুলো এই দশকের শেষের আগেই আবির্ভূত হতে পারে। ([Nature ⧉](https://www.nature.com/articles/d41586-026-01054-1 "কোয়ান্টাম-কম্পিউটিংয়ের অগ্রগতি এনক্রিপশনের জন্য ঝুঁকি তৈরি করছে")) সরকার এবং মান নিয়ন্ত্রণকারী সংস্থাগুলো ইতিমধ্যেই পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফিতে রূপান্তরের পরিকল্পনা করছে, যার বাস্তবায়নের সময়সীমা ২০৩০-এর দশক পর্যন্ত প্রসারিত। ([The Quantum Insider ⧉](https://thequantuminsider.com/2026/03/31/oratomic-launches-to-build-utility-scale-quantum-computers/ "ইউটিলিটি-স্কেল কোয়ান্টাম কম্পিউটার তৈরি করতে ওরাটমিক-এর যাত্রা শুরু")) আলোচনাটি এখন 'কিনা' থেকে 'কবে'-তে স্থানান্তরিত হয়েছে।
 
-## The Engineering Gap That Remains
+## যে প্রকৌশলগত ব্যবধান রয়ে গেছে
 
-It is important to be precise about what this paper represents. It is a projection, not a demonstration. The proposed systems depend on assumptions about error rates, hardware stability, and scaling behaviour that have not yet been validated at the required scale. Current experiments operate at the level of hundreds to low thousands of qubits, not tens of thousands operating fault-tolerantly over extended periods. ([Phys.org ⧉](https://phys.org/news/2026-04-quantum-built-qubits-team.html "Useful quantum computers could be built with as few as 10,000 qubits"))
+এই গবেষণাপত্রটি কী উপস্থাপন করে সে সম্পর্কে সুনির্দিষ্ট হওয়া জরুরি। এটি একটি প্রক্ষেপণ (projection), কোনো প্রদর্শন নয়। প্রস্তাবিত সিস্টেমগুলো এরর রেট (error rates), হার্ডওয়্যার স্থিতিশীলতা এবং স্কেলিং আচরণের মতো অনুমানগুলোর ওপর নির্ভর করে, যা এখনও প্রয়োজনীয় স্কেলে যাচাই করা হয়নি। বর্তমান পরীক্ষাগুলো শত শত থেকে কয়েক হাজার কিউবিটের স্তরে পরিচালিত হচ্ছে, দীর্ঘ সময় ধরে ত্রুটি-সহনশীলভাবে কাজ করা হাজার হাজার কিউবিটের স্তরে নয়। ([Phys.org ⧉](https://phys.org/news/2026-04-quantum-built-qubits-team.html "মাত্র ১০,০০০ কিউবিট দিয়ে দরকারী কোয়ান্টাম কম্পিউটার তৈরি করা সম্ভব"))
 
-A substantial engineering gap remains. The path from a compelling theoretical model to a functioning system capable of sustained, fault-tolerant operation at this scale involves challenges that are not yet fully understood, let alone solved. What has changed is not the proximity of a working machine, but the credibility of the target. The gap is narrowing, and the direction of progress is consistent.
+একটি বড় প্রকৌশলগত ব্যবধান এখনও রয়ে গেছে। একটি বাধ্যতামূলক তাত্ত্বিক মডেল থেকে এই স্কেলে টেকসই, ত্রুটি-সহনশীল অপারেশনে সক্ষম একটি কার্যকরী সিস্টেমে পৌঁছানোর পথের চ্যালেঞ্জগুলো এখনও পুরোপুরি বোঝা যায়নি, সমাধান করা তো দূরের কথা। যা পরিবর্তিত হয়েছে তা একটি কার্যক্ষম মেশিনের নৈকট্য নয়, বরং লক্ষ্যের নির্ভরযোগ্যতা। ব্যবধানটি সংকুচিত হচ্ছে, এবং অগ্রগতির দিকটি সামঞ্জস্যপূর্ণ।
 
-## Why the Compressing Timeline Demands Attention Now
+## সংকুচিত হতে থাকা সময়সীমা কেন এখনই মনোযোগ দাবি করে
 
-The significance of this work is not that cryptography will be broken in the near term. It is that the timeline is compressing in ways that affect decisions being made today. Security systems are designed with long lifecycles in mind. Data encrypted now may need to remain confidential for decades. Infrastructure decisions made this year will be difficult to reverse within a five-year window. If quantum capabilities arrive sooner than expected, those assumptions become fragile.
+এই কাজের তাৎপর্য এটি নয় যে নিকটবর্তী সময়ে ক্রিপ্টোগ্রাফি ভেঙে যাবে। বরং এর কারণ হলো সময়সীমা এমনভাবে সংকুচিত হচ্ছে যা আজকের নেওয়া সিদ্ধান্তগুলোকে প্রভাবিত করে। নিরাপত্তা ব্যবস্থাগুলো দীর্ঘ জীবনচক্রের কথা মাথায় রেখে ডিজাইন করা হয়। এখন এনক্রিপ্ট করা ডেটা হয়তো কয়েক দশক ধরে গোপন রাখার প্রয়োজন হতে পারে। এই বছর নেওয়া অবকাঠামোগত সিদ্ধান্তগুলো পাঁচ বছরের মধ্যে পরিবর্তন করা কঠিন হবে। যদি কোয়ান্টাম সক্ষমতা প্রত্যাশার চেয়ে দ্রুত চলে আসে, তবে সেই অনুমানগুলো ভঙ্গুর হয়ে পড়বে।
 
-This is why post-quantum cryptography is already being deployed across critical sectors. Not because the threat is immediate, but because the transition takes time and the cost of being late is asymmetric. There is a recurring pattern in the history of computing: progress appears slow until it is suddenly not. What begins as a theoretical improvement becomes a practical constraint, and what was once dismissed as distant becomes something that must be planned for. Quantum computing may be following exactly that trajectory, not through a single dramatic breakthrough, but through steady reductions in cost, complexity, and scale.
+এই কারণেই ইতিমধ্যে বিভিন্ন গুরুত্বপূর্ণ খাতে পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি মোতায়েন করা হচ্ছে। হুমকিটি তাৎক্ষণিক বলে নয়, বরং এই রূপান্তরের জন্য সময় প্রয়োজন এবং দেরিতে শুরু করার ক্ষতি অসম। কম্পিউটিংয়ের ইতিহাসে একটি পুনরাবৃত্তিমূলক প্যাটার্ন রয়েছে: অগ্রগতি ধীর মনে হয় যতক্ষণ না এটি হঠাৎ দ্রুত হয়ে ওঠে। যা একটি তাত্ত্বিক উন্নতি হিসেবে শুরু হয় তা পরে একটি বাস্তব সীমাবদ্ধতায় পরিণত হয়, এবং যা একসময় দূরবর্তী বলে খারিজ করা হয়েছিল তা এমন কিছুতে পরিণত হয় যার জন্য পরিকল্পনা করতে হয়। কোয়ান্টাম কম্পিউটিং ঠিক সেই গতিপথই অনুসরণ করতে পারে—কোনো একটি নাটকীয় অগ্রগতির মাধ্যমে নয়, বরং খরচ, জটিলতা এবং স্কেলের ক্রমাগত হ্রাসের মাধ্যমে।
 
-## What This Means by Industry: A Practical Guide
+## শিল্প খাত অনুসারে এর অর্থ কী: একটি ব্যবহারিক নির্দেশিকা
 
-The implications of this research are not uniform across sectors. The appropriate response depends on the type of cryptographic assets at risk, the sensitivity and longevity of the data involved, and the pace at which regulatory expectations are moving.
+এই গবেষণার প্রভাব সব খাতের জন্য সমান নয়। উপযুক্ত পদক্ষেপ নির্ভর করে ঝুঁকিতে থাকা ক্রিপ্টোগ্রাফিক সম্পদের ধরন, সংশ্লিষ্ট ডেটার সংবেদনশীলতা ও স্থায়িত্ব এবং নিয়ামক সংস্থার প্রত্যাশা কত দ্রুত পরিবর্তিত হচ্ছে তার ওপর।
 
-### Financial Services and FinTech
+### আর্থিক পরিষেবা এবং ফিনটেক
 
-Financial institutions face a compounded risk: they hold long-lived sensitive data, operate on infrastructure with slow replacement cycles, and are subject to increasing regulatory scrutiny around cryptographic resilience. ECC is widely used in TLS connections, mobile authentication, and digital signatures across payment rails. The cryptographic category the paper identifies as most vulnerable at lower qubit counts. Institutions that have not yet begun a cryptographic inventory or initiated a post-quantum migration roadmap should treat this paper as a prompt to accelerate, not a reason to panic. [CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html) and CRYSTALS-Dilithium, both now standardised by NIST, are the appropriate migration targets for key encapsulation and digital signatures respectively.
+আর্থিক প্রতিষ্ঠানগুলো একটি জটিল ঝুঁকির সম্মুখীন: তারা দীর্ঘস্থায়ী সংবেদনশীল ডেটা ধারণ করে, ধীর প্রতিস্থাপন চক্রের অবকাঠামোতে কাজ করে এবং ক্রিপ্টোগ্রাফিক স্থিতিস্থাপকতার বিষয়ে ক্রমবর্ধমান নিয়ন্ত্রক পর্যালোচনার অধীন থাকে। পেমেন্ট সিস্টেম জুড়ে TLS সংযোগ, মোবাইল প্রমাণীকরণ (authentication) এবং ডিজিটাল সিগনেচারে ECC ব্যাপকভাবে ব্যবহৃত হয়। এটি হলো সেই ক্রিপ্টোগ্রাফিক বিভাগ যাকে এই গবেষণাপত্রে কম কিউবিট সংখ্যায় সবচেয়ে ঝুঁকিপূর্ণ হিসেবে চিহ্নিত করা হয়েছে। যেসব প্রতিষ্ঠান এখনও ক্রিপ্টোগ্রাফিক ইনভেন্টরি শুরু করেনি বা পোস্ট-কোয়ান্টাম মাইগ্রেশন রোডম্যাপ তৈরি করেনি, তাদের আতঙ্কিত না হয়ে বরং এই গবেষণাপত্রটিকে গতি বাড়ানোর একটি তাগিদ হিসেবে নেওয়া উচিত। কী এনক্যাপসুলেশনের জন্য [CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html) এবং ডিজিটাল সিগনেচারের জন্য CRYSTALS-Dilithium—উভয়ই এখন NIST দ্বারা মানসম্মত করা হয়েছে এবং এগুলোই হলো উপযুক্ত মাইগ্রেশনের লক্ষ্য।
 
-### Government and Defence
+### সরকার এবং প্রতিরক্ষা
 
-State-level actors have the strongest motivation. And in many cases the resources. To accelerate quantum hardware development beyond what is publicly known. Governments holding sensitive communications, intelligence data, or critical infrastructure keys must assume that adversaries are already harvesting encrypted data for future decryption, a strategy commonly known as "harvest now, decrypt later." For public sector organisations, compliance with national quantum-readiness mandates is increasingly unavoidable, and the window for proactive migration is narrowing.
+রাষ্ট্রীয় পর্যায়ের পক্ষগুলোর সবচেয়ে শক্তিশালী অনুপ্রেরণা রয়েছে। এবং অনেক ক্ষেত্রে সম্পদও রয়েছে। জনসমক্ষে যা জানা যায় তার বাইরে কোয়ান্টাম হার্ডওয়্যার উন্নয়নকে ত্বরান্বিত করার জন্য। সংবেদনশীল যোগাযোগ, গোয়েন্দা তথ্য বা গুরুত্বপূর্ণ অবকাঠামো কী (keys) ধারণকারী সরকারগুলোকে অবশ্যই ধরে নিতে হবে যে শত্রুপক্ষ ইতিমধ্যেই ভবিষ্যৎ ডিক্রিপশনের জন্য এনক্রিপ্ট করা ডেটা সংগ্রহ করছে, যা সাধারণত "এখনই সংগ্রহ করুন, পরে ডিক্রিপ্ট করুন" (harvest now, decrypt later) কৌশল হিসেবে পরিচিত। সরকারি খাতের সংস্থাগুলোর জন্য জাতীয় কোয়ান্টাম-প্রস্তুতির নির্দেশাবলী মেনে চলা ক্রমেই অনিবার্য হয়ে উঠছে, এবং সক্রিয় মাইগ্রেশনের সুযোগ সংকুচিত হচ্ছে।
 
-### Healthcare and Critical Infrastructure
+### স্বাস্থ্যসেবা এবং গুরুত্বপূর্ণ অবকাঠামো
 
-Healthcare records, utility control systems, and industrial networks share a common vulnerability: data and systems with very long operational lifespans, protected by cryptographic standards that were designed for a pre-quantum threat model. A medical record encrypted today may need to remain private for fifty years. A control system certified this year may remain in service for two decades. For these sectors, the compressing timeline is not an abstract concern. It is a direct challenge to the foundational assumptions behind current security architectures.
+স্বাস্থ্যসেবা রেকর্ড, ইউটিলিটি নিয়ন্ত্রণ ব্যবস্থা এবং শিল্প নেটওয়ার্কগুলোর একটি সাধারণ দুর্বলতা রয়েছে: খুব দীর্ঘ কার্যক্ষম জীবনকালের ডেটা এবং সিস্টেম, যা এমন ক্রিপ্টোগ্রাফিক স্ট্যান্ডার্ড দ্বারা সুরক্ষিত যা কোয়ান্টাম-পূর্ব হুমকি মডেলের জন্য ডিজাইন করা হয়েছিল। আজ এনক্রিপ্ট করা একটি মেডিকেল রেকর্ড হয়তো পঞ্চাশ বছর ধরে ব্যক্তিগত রাখার প্রয়োজন হতে পারে। এই বছর সার্টিফাইড করা একটি নিয়ন্ত্রণ ব্যবস্থা হয়তো দুই দশক ধরে সচল থাকতে পারে। এই খাতগুলোর জন্য সংকুচিত হতে থাকা সময়সীমা কোনো বিমূর্ত বিষয় নয়। এটি বর্তমান নিরাপত্তা আর্কিটেকচারের পেছনের মৌলিক অনুমানগুলোর জন্য একটি সরাসরি চ্যালেঞ্জ।
 
-## Conclusion
+## উপসংহার
 
-The most important aspect of this paper is not the specific qubit count it presents. It is the direction that count implies. The question is no longer whether quantum computers can challenge modern cryptography. It is how quickly the required systems can be built, and whether the organisations that depend on current standards are moving fast enough in response.
+এই গবেষণাপত্রের সবচেয়ে গুরুত্বপূর্ণ দিকটি এটি নয় যে এটি নির্দিষ্ট কত কিউবিট সংখ্যার কথা বলছে। বরং এটি হলো সেই দিক যা এই সংখ্যাটি নির্দেশ করে। প্রশ্নটি আর এটি নয় যে কোয়ান্টাম কম্পিউটারগুলো আধুনিক ক্রিপ্টোগ্রাফিকে চ্যালেঞ্জ করতে পারে কিনা। বরং প্রশ্ন হলো কত দ্রুত প্রয়োজনীয় সিস্টেমগুলো তৈরি করা যেতে পারে এবং বর্তমান স্ট্যান্ডার্ডগুলোর ওপর নির্ভরশীল প্রতিষ্ঠানগুলো এর প্রতিক্রিয়ায় যথেষ্ট দ্রুত পদক্ষেপ নিচ্ছে কিনা।
 
-For now, the answers remain uncertain. But the margin for deferring the question is narrowing, and the cost of waiting grows with each credible reduction in the theoretical threshold. The cryptographic community, security planners, and the industries that rely on them would do well to treat this paper not as cause for alarm, but as a serious prompt to accelerate transitions that are already underway.
+আপাতত উত্তরগুলো অনিশ্চিত রয়ে গেছে। তবে প্রশ্নটি এড়িয়ে যাওয়ার সুযোগ সংকুচিত হচ্ছে, এবং তাত্ত্বিক থ্রেশহোল্ডের প্রতিটি নির্ভরযোগ্য হ্রাসের সাথে সাথে অপেক্ষার মূল্য বাড়ছে। ক্রিপ্টোগ্রাফিক সম্প্রদায়, নিরাপত্তা পরিকল্পনাকারী এবং তাদের ওপর নির্ভরশীল শিল্পগুলোর জন্য এই গবেষণাপত্রটিকে আতঙ্কের কারণ হিসেবে না দেখে বরং ইতিমধ্যেই শুরু হওয়া রূপান্তরকে ত্বরান্বিত করার একটি গুরুতর তাগিদ হিসেবে বিবেচনা করা উচিত।
 
-## Frequently Asked Questions
+## সচরাচর জিজ্ঞাস্য প্রশ্নাবলী
 
-**Can 10,000 qubits really break RSA encryption?**
+**১০,০০০ কিউবিট কি সত্যিই RSA এনক্রিপশন ভাঙতে পারে?**
 
-Theoretically, yes. But with important caveats. While previous estimates suggested millions of physical qubits were required, new research into high-rate error correction codes and reconfigurable neutral atom arrays suggests the threshold is significantly lower. However, at 10,000 qubits, the estimated runtime for factoring RSA-2048 remains extremely long. Potentially years of continuous operation. Faster attacks require more qubits, likely in the range of tens of thousands. The paper represents a projection based on modelled assumptions, not a demonstration on a working system.
+তাত্ত্বিকভাবে, হ্যাঁ। তবে কিছু গুরুত্বপূর্ণ সতর্কতা রয়েছে। যদিও আগের অনুমানগুলোতে লক্ষ লক্ষ ফিজিক্যাল কিউবিটের প্রয়োজন ছিল বলে পরামর্শ দেওয়া হয়েছিল, তবে উচ্চ-হারের এরর কারেকশন কোড এবং পুনর্গঠনযোগ্য নিউট্রাল অ্যাটম অ্যারের নতুন গবেষণা ইঙ্গিত দেয় যে এই থ্রেশহোল্ড উল্লেখযোগ্যভাবে কম। তবে ১০,০০০ কিউবিটে RSA-2048 ফ্যাক্টর করার জন্য আনুমানিক রানটাইম অত্যন্ত দীর্ঘ রয়ে গেছে। যা সম্ভবত বছরের পর বছর অবিচ্ছিন্ন অপারেশন। দ্রুত আক্রমণের জন্য আরও বেশি কিউবিটের প্রয়োজন, সম্ভবত তা কয়েক হাজার কিউবিটের পরিসরে। গবেষণাপত্রটি মডেলকৃত অনুমানের ওপর ভিত্তি করে তৈরি একটি প্রক্ষেপণ উপস্থাপন করে, কোনো কার্যকর সিস্টেমে বাস্তব প্রদর্শন নয়।
 
-**Which encryption is most at risk from quantum computing?**
+**কোয়ান্টাম কম্পিউটিং থেকে কোন এনক্রিপশন সবচেয়ে বেশি ঝুঁকিতে রয়েছে?**
 
-Elliptic Curve Cryptography (ECC) is generally more vulnerable to lower qubit counts than RSA-2048. The paper estimates that breaking ECC could take days using approximately 26,000 reconfigurable qubits under favourable conditions. RSA-2048 requires a significantly longer runtime at comparable qubit counts. This asymmetry means ECC-dependent systems. Common in TLS, mobile authentication, and blockchain. May face risk on a shorter timeline than RSA-based infrastructure.
+ইলিপ্টিক কার্ভ ক্রিপ্টোগ্রাফি (ECC) সাধারণত RSA-2048-এর তুলনায় কম কিউবিট সংখ্যায় বেশি ঝুঁকিপূর্ণ। গবেষণাপত্রটি অনুমান করে যে অনুকূল পরিস্থিতিতে আনুমানিক ২৬,০০০ পুনর্গঠনযোগ্য কিউবিট ব্যবহার করে ECC ভাঙতে কয়েক দিন সময় লাগতে পারে। RSA-2048-এর জন্য সমমানের কিউবিট সংখ্যায় উল্লেখযোগ্যভাবে দীর্ঘ রানটাইম প্রয়োজন। এই অসমতার অর্থ হলো ECC-নির্ভর সিস্টেমগুলো—যা TLS, মোবাইল প্রমাণীকরণ (authentication) এবং ব্লকচেইনে সাধারণ—সেগুলো RSA-ভিত্তিক অবকাঠামোর চেয়ে কম সময়ের মধ্যে ঝুঁকির সম্মুখীন হতে পারে।
 
-**What is a reconfigurable neutral atom qubit?**
+**একটি পুনর্গঠনযোগ্য নিউট্রাল অ্যাটম কিউবিট (reconfigurable neutral atom qubit) কী?**
 
-Neutral atom qubits are individual atoms. Typically rubidium or caesium. Trapped and manipulated using laser light in a vacuum chamber. "Reconfigurable" means the arrangement of atoms can be changed dynamically during computation, allowing more efficient execution of complex quantum circuits. This flexibility reduces the number of physical qubits needed to implement fault-tolerant logical operations, and is a key reason the new paper achieves lower qubit estimates than earlier work based on superconducting qubit architectures.
+নিউট্রাল অ্যাটম কিউবিট হলো পৃথক পরমাণু। সাধারণত রুবিডিয়াম বা সিজিয়াম। যা ভ্যাকুয়াম চেম্বারে লেজারের আলো ব্যবহার করে আটকে রাখা (trapped) এবং পরিচালনা করা হয়। "পুনর্গঠনযোগ্য" (reconfigurable) মানে কম্পিউটেশনের সময় পরমাণুর বিন্যাস গতিশীলভাবে পরিবর্তন করা যেতে পারে, যা জটিল কোয়ান্টাম সার্কিটের আরও দক্ষ সম্পাদনের অনুমতি দেয়। এই নমনীয়তা ত্রুটি-সহনশীল লজিক্যাল অপারেশন বাস্তবায়নের জন্য প্রয়োজনীয় ফিজিক্যাল কিউবিটের সংখ্যা হ্রাস করে, এবং এটি সুপারকন্ডাক্টিং কিউবিট আর্কিটেকচারের ওপর ভিত্তি করে করা পূর্ববর্তী কাজের তুলনায় নতুন গবেষণাপত্রটিতে কম কিউবিট অনুমানের প্রধান কারণ।
 
-**What is post-quantum cryptography and why is it being deployed now?**
+**পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি কী এবং কেন এটি এখনই মোতায়েন করা হচ্ছে?**
 
-Post-quantum cryptography (PQC) refers to cryptographic algorithms believed to be secure against both classical and quantum computers. NIST finalised its first set of PQC standards in 2024, including [CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html) for key encapsulation and CRYSTALS-Dilithium for digital signatures. Deployment is beginning now. Well before quantum computers pose an immediate threat. Because cryptographic transitions are slow. Replacing embedded standards across global infrastructure typically takes a decade or more, and data encrypted today may need to remain confidential long after quantum capabilities mature.
+পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি (PQC) বলতে এমন ক্রিপ্টোগ্রাফিক অ্যালগরিদম বোঝায় যা ক্লাসিক্যাল এবং কোয়ান্টাম উভয় কম্পিউটারের বিরুদ্ধেই নিরাপদ বলে বিশ্বাস করা হয়। NIST ২০২৪ সালে তার প্রথম PQC মানদণ্ড চূড়ান্ত করেছে, যার মধ্যে কি এনক্যাপসুলেশনের জন্য [CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html) এবং ডিজিটাল সিগনেচারের জন্য CRYSTALS-Dilithium অন্তর্ভুক্ত রয়েছে। কোয়ান্টাম কম্পিউটারগুলো তাৎক্ষণিক হুমকি সৃষ্টি করার অনেক আগেই এখন মোতায়েন শুরু হচ্ছে। কারণ ক্রিপ্টোগ্রাফিক রূপান্তর ধীর গতির হয়ে থাকে। বিশ্বব্যাপী অবকাঠামোতে এমবেডেড স্ট্যান্ডার্ড প্রতিস্থাপন করতে সাধারণত এক দশক বা তার বেশি সময় লাগে, এবং আজ এনক্রিপ্ট করা ডেটা কোয়ান্টাম সক্ষমতা পরিপক্ক হওয়ার অনেক পরেও গোপন রাখার প্রয়োজন হতে পারে।
 
-**How many qubits does the most powerful quantum computer have today?**
+**আজকের সবচেয়ে শক্তিশালী কোয়ান্টাম কম্পিউটারে কতটি কিউবিট রয়েছে?**
 
-As of early 2026, leading quantum systems operate in the range of hundreds to low thousands of physical qubits. Crucially, most are not yet fault-tolerant. They operate below the error-correction thresholds required for sustained, reliable logical computation. The gap between today's hardware and the tens of thousands of high-fidelity, fault-tolerant logical qubits described in the new paper remains significant, though the pace of progress across superconducting, neutral atom, and trapped-ion platforms is accelerating.
+২০২৬ সালের শুরুর দিক পর্যন্ত, শীর্ষস্থানীয় কোয়ান্টাম সিস্টেমগুলো শত শত থেকে কয়েক হাজার ফিজিক্যাল কিউবিটের পরিসরে কাজ করে। গুরুত্বপূর্ণ বিষয় হলো, এগুলোর বেশিরভাগই এখনও ত্রুটি-সহনশীল (fault-tolerant) নয়। এগুলো টেকসই, নির্ভরযোগ্য লজিক্যাল গণনার জন্য প্রয়োজনীয় এরর-কারেকশন থ্রেশহোল্ডের নিচে কাজ করে। আজকের হার্ডওয়্যার এবং নতুন গবেষণাপত্রে বর্ণিত হাজার হাজার হাই-ফিডেলিটি, ত্রুটি-সহনশীল লজিক্যাল কিউবিটের মধ্যকার ব্যবধান এখনও উল্লেখযোগ্য রয়ে গেছে, যদিও সুপারকন্ডাক্টিং, নিউট্রাল অ্যাটম এবং ট্র্যাপড-আয়ন প্ল্যাটফর্মগুলোর অগ্রগতির গতি ত্বরান্বিত হচ্ছে।
 
-## References
+## তথ্যসূত্র
 
-- Sebastien Rousseau, (2025). [Quantum-Safe Payments: Why the Payments Industry Must Act Now](https://sebastienrousseau.com/2025-09-01-quantum-safe-payments-epaa/index.html "Quantum-Safe Payments: Why the Payments Industry Must Act Now").
-- Sebastien Rousseau, (2023). [Quantum Key Distribution: Revolutionising Security in Banking](https://sebastienrousseau.com/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html "Quantum Key Distribution: Revolutionising Security in Banking").
-- Sebastien Rousseau, (2023). [CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age](https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html "
-CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age").
-- Anonymous, (2026). [Shor's algorithm is possible with as few as 10,000 reconfigurable atomic qubits ⧉](https://arxiv.org/abs/2603.28627 "Shor's algorithm is possible with as few as 10,000 reconfigurable atomic qubits"). arXiv preprint arXiv:2603.28627.
-- Castelvecchi, D. (2026). [Quantum-computing breakthroughs pose risks to encryption ⧉](https://www.nature.com/articles/d41586-026-01054-1 "Quantum-computing breakthroughs pose risks to encryption"). Nature.
-- Phys.org, (2026). [Useful quantum computers could be built with as few as 10,000 qubits ⧉](https://phys.org/news/2026-04-quantum-built-qubits-team.html "Useful quantum computers could be built with as few as 10,000 qubits"). Phys.org.
+- Sebastien Rousseau, (2025). [কোয়ান্টাম-নিরাপদ পেমেন্ট: কেন পেমেন্ট শিল্পকে এখনই পদক্ষেপ নিতে হবে](https://sebastienrousseau.com/2025-09-01-quantum-safe-payments-epaa/index.html "কোয়ান্টাম-নিরাপদ পেমেন্ট: কেন পেমেন্ট শিল্পকে এখনই পদক্ষেপ নিতে হবে").
+- Sebastien Rousseau, (2023). [কোয়ান্টাম কী ডিস্ট্রিবিউশন: ব্যাংকিংয়ে নিরাপত্তার বিপ্লবীকরণ](https://sebastienrousseau.com/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html "কোয়ান্টাম কী ডিস্ট্রিবিউশন: ব্যাংকিংয়ে নিরাপত্তার বিপ্লবীকরণ").
+- Sebastien Rousseau, (2023). [[CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html): কোয়ান্টাম যুগে সুরক্ষাকারী অ্যালগরিদম](https://sebastienrousseau.com/2023-11-19-[crystals-kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html)-the-safeguarding-algorithm-in-a-quantum-age/index.html "[CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html): কোয়ান্টাম যুগে সুরক্ষাকারী অ্যালগরিদম").
+- Anonymous, (2026). [Shor's algorithm মাত্র ১০,০০০ পুনর্গঠনযোগ্য পারমাণবিক কিউবিট দিয়ে সম্ভব ⧉](https://arxiv.org/abs/2603.28627 "Shor's algorithm মাত্র ১০,০০০ পুনর্গঠনযোগ্য পারমাণবিক কিউবিট দিয়ে সম্ভব"). arXiv preprint arXiv:2603.28627.
+- Castelvecchi, D. (2026). [কোয়ান্টাম-কম্পিউটিংয়ের অগ্রগতি এনক্রিপশনের জন্য ঝুঁকি তৈরি করছে ⧉](https://www.nature.com/articles/d41586-026-01054-1 "কোয়ান্টাম-কম্পিউটিংয়ের অগ্রগতি এনক্রিপশনের জন্য ঝুঁকি তৈরি করছে"). Nature.
+- Phys.org, (2026). [মাত্র ১০,০০০ কিউবিট দিয়ে দরকারী কোয়ান্টাম কম্পিউটার তৈরি করা সম্ভব ⧉](https://phys.org/news/2026-04-quantum-built-qubits-team.html "মাত্র ১০,০০০ কিউবিট দিয়ে দরকারী কোয়ান্টাম কম্পিউটার তৈরি করা সম্ভব"). Phys.org.
+
+<!-- enrich-start -->
+<aside class="author-card" aria-label="লেখক সম্পর্কে"><img alt="Sebastien Rousseau-এর প্রতিকৃতি" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">সিনিয়র ব্যাংকিং প্রযুক্তিবিদ, যিনি ফলিত AI, ISO 20022 মাইগ্রেশন, আর্থিক পরিষেবাগুলোর জন্য পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি এবং পাইকারি পেমেন্টের কাঠামোগত রূপান্তর নিয়ে লেখেন।</span><span class="author-credentials">HSBC কমার্শিয়াল অ্যান্ড ইনভেস্টমেন্ট ব্যাংক, PayPal, Barclays, Shazam, AKQA, Virgin Group জুড়ে ২০ বছরেরও বেশি অভিজ্ঞতা। <a href="/about/index.html">সম্পূর্ণ প্রোফাইল</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<p class="post-reviewed">সর্বশেষ পর্যালোচনা করা হয়েছে <time datetime="2026-06-23">২০২৬-০৬-২৩</time>।</p>
+<aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">সম্পর্কিত পাঠ</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/2025-09-01-quantum-safe-payments-epaa" class="related-media" aria-label="কোয়ান্টাম-নিরাপদ পেমেন্ট: কেন শিল্পকে এখনই পদক্ষেপ নিতে হবে" tabindex="-1"><img alt="নীল আলোতে কোয়ান্টাম কম্পিউটিং সার্কিট বোর্ড" src="https://cloudcdn.pro/stocks/images/digital-nodes.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2025-09-01-quantum-safe-payments-epaa">কোয়ান্টাম-নিরাপদ পেমেন্ট: কেন শিল্পকে এখনই পদক্ষেপ নিতে হবে</a></h3><p><time datetime="2025-09-01">২০২৫-০৯-০১</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026" class="related-media" aria-label="২০২৬ সালে মাল্টি-রেল ব্যাংক: কার্ড, A2A, স্টেবলকয়েন, RTP, FedNow এবং ওপেন ব্যাংকিং এক কৌশলে" tabindex="-1"><img alt="রাতে একটি বড় রেল ইন্টারচেঞ্জে একে অপরকে ছেদ করা আলোক রেখার দীর্ঘ-এক্সপোজার ছবি — মাল্টি-রেল ব্যাংক লেখার ভিজ্যুয়াল কী: কার্ড, A2A, RTP, FedNow, ACH, স্টেবলকয়েন, ওপেন ব্যাংকিং API, ISO 20022 এবং সেগুলোর মধ্যে রুট করা অর্কেস্ট্রেশন ইঞ্জিন" src="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026">২০২৬ সালে মাল্টি-রেল ব্যাংক: কার্ড, A2A, স্টেবলকয়েন, RTP, FedNow এবং ওপেন ব্যাংকিং এক কৌশলে</a></h3><p><time datetime="2026-06-01">২০২৬-০৬-০১</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026" class="related-media" aria-label="ব্যাংকিংয়ে এজেন্টভিত্তিক পেমেন্ট: সম্মতি, দায়বদ্ধতা এবং ২০২৬ সালে নতুন পেমেন্ট UX" tabindex="-1"><img alt="এজেন্টভিত্তিক পেমেন্ট আর্কিটেকচার ডায়াগ্রাম যা AI এজেন্ট, সম্মতিপত্র, টোকেনাইজড ক্রিডেনশিয়াল, কার্ড নেটওয়ার্ক, ব্যাংক, মার্চেন্ট এবং অডিট ট্রেইল দেখাচ্ছে" src="https://cloudcdn.pro/stocks/images/ai-robot-1200.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026">ব্যাংকিংয়ে এজেন্টভিত্তিক পেমেন্ট: সম্মতি, দায়বদ্ধতা এবং ২০২৬ সালে নতুন পেমেন্ট UX</a></h3><p><time datetime="2026-05-23">২০২৬-০৫-২৩</time></p></footer></article>
+</div>
+</aside>
+<!-- enrich-end -->

@@ -1,189 +1,273 @@
 ---
-title: "The November 2026 pacs.008 Structured-Address Deadline: A Six-Month View"
-tags: "ISO 20022, pacs.008, CBPR+, adireshi mai tsari, SWIFT, biyan kuɗi na cross-border, gwajin takunkumi, FI-to-FI credit transfer, payments, DORA, post-quantum cryptography, AI, tokenised deposits, open source, quantum computing"
-subtitle: "Daga tsakiyar Nuwamba 2026, SWIFT CBPR+ zai ƙi adireshi na gidan waya marasa tsari a pacs.008 da saƙonnin biyan kuɗi na ƙasa da ƙasa. Kusan kashi 65% na saƙonnin ba su cika ka'ida ba, tagar gyarawa na rufewa da sauri."
-description: "Daga Nuwamba 2026, SWIFT CBPR+ yana buƙatar adireshi na gidan waya da aka tsara a cikin saƙonnin biyan kuɗi na ƙasa da ƙasa. Layin adireshi marasa tsari (AdrLine kaɗai) ba za a yarda da su ba a pacs.008; aƙalla TwnNm da Ctry ana buƙata. Har yanzu kashi 65% na saƙonnin da kashi 44% na bankunan ba su cika ka'ida ba."
-date: "May 12, 2026"
-language: "ha-NG"
-locale: "ha_NG"
-banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp"
+author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "Zanen adireshi mai tsari na ISO 20022 pacs.008 — filayen saƙon biyan kuɗi na ƙasa da ƙasa tare da TwnNm da Ctry da aka haskaka"
+banner_height: "571"
+banner_width: "1425"
+banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp"
+cdn: "https://cloudcdn.pro"
+changefreq: "weekly"
+charset: "UTF-8"
+cname: "sebastienrousseau.com"
+copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
+date: "May 12, 2026"
+description: "Daga Nuwamba 2026, SWIFT CBPR+ yana buƙatar adireshi na gidan waya da aka tsara a cikin saƙonnin biyan kuɗi na ƙasa da ƙasa. Layin adireshi marasa tsari (AdrLine kaɗai) ba za a yarda da su ba a pacs.008; aƙalla TwnNm da Ctry ana buƙata. Har yanzu kashi 65% na saƙonnin da kashi 44% na bankunan ba su cika ka'ida ba."
+format-detection: "telephone=no"
+hreflang: "ha"
+icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
+id: "https://sebastienrousseau.com/2026-05-12-iso-20022-pacs008-structured-address-deadline"
+image_alt: "Hoton Sebastien Rousseau a Baƙi da Fari"
+image_height: "162"
+image_width: "162"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "ISO 20022, pacs.008, SWIFT CBPR+, adireshi mai tsari, Nuwamba 2026, adireshi na gidan waya, TwnNm, Ctry, StrtNm, BldgNb"
+language: "ha-NG"
+layout: "report"
+locale: "ha_NG"
+logo_alt: "Tambarin Sebastien Rousseau"
+logo_height: "44"
+logo_width: "44"
+logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
+menu: ""
+measurementID: "G-169G4ET5HQ"
+name: "Sebastien Rousseau"
+permalink: "https://sebastienrousseau.com/2026-05-12-iso-20022-pacs008-structured-address-deadline"
+rating: "general"
+referrer: "no-referrer"
+revisit-after: "7 days"
+robots: "index, follow"
+schema: "FAQPage, Article"
+short_name: "sebastienrousseau"
+subtitle: "Daga tsakiyar Nuwamba 2026, SWIFT CBPR+ zai ƙi adireshi na gidan waya marasa tsari a pacs.008 da saƙonnin biyan kuɗi na ƙasa da ƙasa. Kusan kashi 65% na saƙonnin ba su cika ka'ida ba, tagar gyarawa na rufewa da sauri."
+tags: "ISO 20022, pacs.008, CBPR+, adireshi mai tsari, SWIFT, biyan kuɗi na cross-border, gwajin takunkumi, FI-to-FI credit transfer, payments, DORA, post-quantum cryptography, AI, tokenised deposits, open source, quantum computing"
+theme-color: "0, 67, 165"
+title: "Kayyadadden Lokacin pacs.008 Structured-Address na Nuwamba 2026: Hangen Watanni Shida"
+url: "https://sebastienrousseau.com/2026-05-12-iso-20022-pacs008-structured-address-deadline"
+viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
+
+# RSS - The RSS feed front matter (YAML).
+atom_link: "https://sebastienrousseau.com/2026-05-12-iso-20022-pacs008-structured-address-deadline/rss.xml"
+category: "Biyan kuɗi"
+docs: https://validator.w3.org/feed/docs/rss2.html
+generator: "Static Site Generator (SSG) (version 0.0.26)"
+item_description: "Daga Nuwamba 2026, SWIFT CBPR+ yana buƙatar adireshi na gidan waya da aka tsara a cikin saƙonnin biyan kuɗi na ƙasa da ƙasa na pacs.008. Tare da sauran watanni shida, ƙaura har yanzu ba ta kammala ba a yawancin ɓangarorin masana'antar."
+item_guid: "https://sebastienrousseau.com/2026-05-12-iso-20022-pacs008-structured-address-deadline/rss.xml"
+item_link: "https://sebastienrousseau.com/2026-05-12-iso-20022-pacs008-structured-address-deadline/rss.xml"
+item_pub_date: "Tue, 12 May 2026 06:06:06 +0000"
+item_title: "Kayyadadden Lokacin pacs.008 Structured-Address na Nuwamba 2026: Hangen Watanni Shida"
+last_build_date: "Tue, 12 May 2026 06:06:06 +0000"
+managing_editor: "contact@sebastienrousseau.com (Sebastien Rousseau)"
+pub_date: "Tue, 12 May 2026 06:06:06 +0000"
+ttl: "60"
+type: "article"
+webmaster: "contact@sebastienrousseau.com"
+
+# Apple - The Apple front matter (YAML).
+apple_mobile_web_app_orientations: "portrait"
+apple_touch_icon_sizes: "192x192"
+apple-mobile-web-app-capable: "yes"
+apple-mobile-web-app-status-bar-inset: "black"
+apple-mobile-web-app-status-bar-style: "black-translucent"
+apple-mobile-web-app-title: "Kwanan Wata na Ƙarshe na pacs.008 Structured-Address"
+apple-touch-fullscreen: "yes"
+
+# MS Application - The MS Application front matter (YAML).
+msapplication-navbutton-color: "0, 83, 191"
+
+# Twitter Card - The Twitter Card front matter (YAML).
+twitter_card: "summary_large_image"
+twitter_creator: "@wwdseb"
+twitter_description: "Daga Nuwamba 2026, SWIFT CBPR+ yana buƙatar adireshi na gidan waya da aka tsara a cikin saƙonnin biyan kuɗi na ƙasa da ƙasa na pacs.008. Tare da sauran watanni shida, ƙaura har yanzu ba ta kammala ba a yawancin ɓangarorin masana'antar."
+twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
+twitter_image_alt: "Tambarin Sebastien Rousseau"
+twitter_site: "@wwdseb"
+twitter_title: "Kayyadadden Lokacin pacs.008 Structured-Address na Nuwamba 2026: Hangen Watanni Shida"
+twitter_url: "https://sebastienrousseau.com/2026-05-12-iso-20022-pacs008-structured-address-deadline"
+
+# Humans.txt - The Humans.txt front matter (YAML).
+author_website: "https://sebastienrousseau.com"
+author_twitter: "@wwdseb"
+author_location: "London, UK"
+thanks: "Godiya da karantawa!"
+site_last_updated: "2026-05-12"
+site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
+site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
+site_software: "Static Site Generator, Rust"
+
+excerpt: "Daga tsakiyar Nuwamba 2026, SWIFT CBPR+ zai ƙi adireshi na gidan waya marasa tsari a pacs.008 da saƙonnin biyan kuɗi na ƙasa da ƙasa. Tare da kusan kashi 65% na saƙonnin da ba su cika ka'ida ba da kuma kashi 44%..."
+last_reviewed: "2026-05-13"
 ---
 
-![ISO 20022 pacs.008 structured address diagram — cross-border payment message fields with TwnNm and Ctry highlighted](https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp).class="img-fluid clearfix"
+Daga tsakiyar Nuwamba 2026, SWIFT CBPR+ zai ƙi adireshi na gidan waya marasa tsari a pacs.008 da saƙonnin biyan kuɗi na ƙasa da ƙasa masu alaƙa. Tare da kusan kashi 65% na saƙonnin da ba su cika ka'ida ba da kuma kashi 44% na bankunan da ke baya ga jadawalin, tagar gyarawa na rufewa da sauri fiye da yadda aka tsara yawancin shirye-shiryen shiryawa don magancewa.
 
 ---
 
-> **TL;DR.** From November 2026, SWIFT CBPR+ requires structured postal addresses in cross-border payment messages. Unstructured address lines (AdrLine alone) will no longer be accepted for key party fields in pacs.008. At minimum, TwnNm and Ctry are required, with StrtNm and BldgNb or PstBx recommended. With six months to go, 65% of payment messages still contain unstructured addresses and 44% of banks remain behind schedule.
+> **Abubuwan Muhimmanci da Aka Koya**
 >
-> **Mahimman Bayanai**
->
-> - DRAFT translation: this article is a Hausa stub generated from the English source. Body text is intentionally left in English until a native reviewer signs off.
-> - Source title: *The November 2026 pacs.008 Structured-Address Deadline: A Six-Month View*.
-> - Source subtitle: *From mid-November 2026, SWIFT CBPR+ will reject unstructured postal addresses in pacs.008 and related cross-border payment messages. With approximately 65% of messages still non-compliant, the remediation window is closing fast.*.
-> - Editorial note: replace this block with hand-translated copy before flipping `active=True` for ha in `scripts/_lang_registry.py`.
+> - Daga **Nuwamba 2026**, SWIFT CBPR+ ba zai ƙara karɓar adireshi na gidan waya marasa tsari a cikin saƙonnin biyan kuɗi na ƙasa da ƙasa ba. Canjin ya shafi **pacs.008** (tura kuɗi na abokin ciniki), **pacs.009** (tura kuɗi na FI), **pacs.004** (koma baya), da **pacs.003** (cire kuɗi kai tsaye), haka kuma da hanyoyin **pain.001** na gaba da ke ciyar da su.
+> - Aƙalla, **Town Name (TwnNm)** (Sunan Gari) da **Country (Ctry)** (Ƙasa) dole ne su kasance a cikin filayen da aka keɓance na musamman. Ana ba da shawarar **Street Name (StrtNm)** (Sunan Unguwa) da kuma ko dai **Building Number (BldgNb)** (Lambar Gini) ko **PO Box (PstBx)** (Akwatin Gidan Waya) sosai. Layukan adireshi na free-text (AdrLine kaɗai) ba za su ƙara gamsar da buƙatun filayen manyan ɓangarorin ba.
+> - Canjin yana haɓaka daidaiton gwajin takunkumi (sanctions screening), yana rage yawan gyare-gyare na hannu (manual-repair), kuma yana kare straight-through processing — amma ga cibiyoyin da suka gyara bayanan abokan cinikinsu na gaba kawai, ba kawai injinan saƙonninsu ba.
+> - Shirye-shiryen masana'antu ba su da daidaito. Tun daga watan Maris 2026, kusan **kashi 65% na saƙonnin CBPR+ har yanzu suna ɗauke da adireshi marasa tsari**, **kashi 44% na bankuna** ba su kan highway don cika kwanan wata na ƙarshe, kuma **kashi 32% na bayanan adireshi na abokan ciniki** sun kasance marasa tsari a matsakaici.
+> - Kayan aiki na open-source — ciki har da **[pacs008](https://pacs008.com/ "pacs008 — ISO 20022 pacs.008 Toolkit and API")**, ɗakin karatu na Python da sabis na FastAPI don ƙirƙira, ingantawa, da tsara hanyoyin saƙon pacs.008 — na iya taƙaita lokutan gyarawa ta hanyar sarrafa ingancin schema, bincika ingancin adireshi, da tilastawa a matakin CI kafin saƙonni su isa cibiyar sadarwa ta SWIFT.
 
 ---
 
-From mid-November 2026, SWIFT CBPR+ will reject unstructured postal addresses in pacs.008 and related cross-border payment messages. With approximately 65% of messages still non-compliant and 44% of banks behind schedule, the remediation window is closing faster than most readiness programmes are designed to handle.
+## Kwanan Wata na Ƙarshe da Aka Daɗe Ana Sura
 
----
+Bukatar adireshi mai tsari na Nuwamba 2026 ba canjin tsari ba ne na bazata. Ya kasance a kan taswirar highway ta SWIFT CBPR+ tun lokacin da aka sanar da ƙaurar [ISO 20022](/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html) na asali, kuma yana biye da ƙarshen kasancewar MT/MX tare a watan Nuwamba 2025. Abin da ya canza a 2026 shi ne kusanci. Tare da kusan watanni shida da suka rage, masana'antar yanzu tana aiki a cikin tagar da matsalolin ingancin bayanai da ba a warware ba ke zama haɗarin aiki (operational risk).
 
-> **Key Takeaways**
->
-> - From **November 2026**, SWIFT CBPR+ will no longer accept unstructured postal addresses in cross-border payment messages. The change applies to **pacs.008** (customer credit transfer), **pacs.009** (FI credit transfer), **pacs.004** (returns), and **pacs.003** (direct debits), as well as to the upstream **pain.001** flows that feed them.
-> - At minimum, **Town Name (TwnNm)** and **Country (Ctry)** must be present in dedicated structured fields. **Street Name (StrtNm)** and either **Building Number (BldgNb)** or **PO Box (PstBx)** are strongly recommended. Free-text address lines (AdrLine) alone will no longer satisfy the requirement for key party fields.
-> - The change improves sanctions screening accuracy, reduces manual-repair rates, and protects straight-through processing — but only for institutions that have remediated their upstream customer data, not just their message engines.
-> - Industry readiness is uneven. As of March 2026, around **65% of CBPR+ messages still carry unstructured addresses**, **44% of banks** are not on track for the deadline, and **32% of customer address records** remain unstructured on average.
-> - Open-source tooling — including **[pacs008](https://pacs008.com/ "pacs008 — ISO 20022 pacs.008 Toolkit and API")**, a Python library and FastAPI service for generating, validating, and orchestrating pacs.008 message flows — can compress remediation timelines by automating schema validation, address-quality checks, and CI-level enforcement before messages reach the SWIFT network.
+Lambobin suna ba da labarin a sarari. Sabuntawar al'umma ta SWIFT ta watan Maris 2026 ta nuna cewa [kusan kashi 65% na saƙonnin biyan kuɗi har yanzu suna ɗauke da adireshi marasa tsari ⧉](https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed "ISO 20022 milestone for November 2026: Unstructured addresses to be removed"), kuma ɗaukar matakin ya kasance marar daidaito a cikin yankuna daban-daban da nau'ikan cibiyoyi. Wani binciken RedCompass Labs na watan Maris 2026 [akan ƙwararrun ƙwararrun biyan kuɗi na babban mataki 308 ⧉](https://financialit.net/news/banking/nearly-half-banks-are-behind-iso-20022 "Nearly Half of Banks Are Behind on ISO 20022") ya gano cewa kashi 44% na bankuna a halin yanzu ba su kan hanyar cika kwanan wata na ƙarshe na adireshi mai tsari ba, duk da kashe matsakaicin dala miliyan 20 — kuma a cikin manyan cibiyoyi sama da dala miliyan 30 — don shirin 2026, tare da matsakaicin ƙarin ma'aikata 13 da aka sanya wa shirye-shiryen [ISO 20022](/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html). Shi kansa binciken ya gano cewa kashi 32% na bayanan adireshi na abokan ciniki sun kasance marasa tsari a matsakaici, kuma kashi 60% na bankuna sun ba da rahoton giɓi a cikin tsarin core banking lokacin da suke tallafawa filayen adireshi masu tsari.
 
----
+Wannan ba, a takaice dai, matsala ce da za a iya warware ta ta hanyar wani watan aikin injin saƙo (message-engine) ba. Matsala ce ta ingancin bayanai (data-quality) wacce ke tafiya ta gaba (upstream) daga matakin saƙo zuwa cikin tsarin shigarwa (onboarding), hanyoyin KYC, hanyoyin kamfanoni, da kuma shekaru da yawa na tarin bayanan abokan ciniki na free-text da aka tara.
 
-## A Deadline That Was Always Coming
+## Abin da Dokar Ke Buƙata a Haƙiƙanin Gaskiya
 
-The November 2026 structured-address requirement is not a sudden regulatory move. It has been on the SWIFT CBPR+ roadmap since the original [ISO 20022](/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html) migration was announced, and it follows the end of MT/MX coexistence in November 2025. What has changed in 2026 is the proximity. With approximately six months remaining, the industry is now operating inside the window where unresolved data-quality issues become operational risk.
+A ƙarƙashin SWIFT CBPR+ Standards Release 2026 (SR2026), babban buƙatar tana da sauƙi a ƙa'ida kuma ba ta da sauƙi a daki-daki. Daga tsakiyar Nuwamba 2026, [dole ne a samar da Town Name da Country a cikin filayen da aka keɓance musu masu tsari ⧉](https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed "ISO 20022 milestone for November 2026: Unstructured addresses to be removed") ga duk wakilai (agents) da ɓangarori a cikin saƙonnin biyan kuɗi na CBPR+, tare da keɓancewa kaɗan (bayanai da sanarwa a cikin camt.052, camt.053, camt.054, tare da ƴan saƙonnin gudanarwa sun kasance a wajen tsauraran buƙatun). Ga wakilai, ci gaba da amfani da BIC kaɗai ya kasance ingantacciyar highway madadin suna da adireshi.
 
-The numbers tell the story plainly. SWIFT's own March 2026 community update notes that [approximately 65% of payment messages still contain unstructured addresses ⧉](https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed "ISO 20022 milestone for November 2026: Unstructured addresses to be removed"), and that adoption remains uneven across geographies and institution types. A March 2026 [RedCompass Labs survey of 308 senior payments professionals ⧉](https://financialit.net/news/banking/nearly-half-banks-are-behind-iso-20022 "Nearly Half of Banks Are Behind on ISO 20022") found that 44% of banks are not currently on track to meet the structured-address deadline, despite spending an average of $20 million — and in the largest institutions over $30 million — on 2026 readiness, with an average of 13 additional staff assigned to ISO 20022 programmes. The same survey found that 32% of customer address records remain unstructured on average, and that 60% of banks report gaps in core banking systems when supporting structured address fields.
+An yarda da tsarin adireshi guda biyu bayan sauyawar (cutover):
 
-This is not, in other words, a problem that can be solved by another month of message-engine work. It is a data-quality problem that runs upstream from the message layer into onboarding systems, KYC processes, corporate channels, and decades of accumulated free-text customer master data.
+- **Mai tsari sosai (Fully structured)** — kowane sashe na adireshin gidan waya an daidaita shi da takamaiman abin [ISO 20022](/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html) nasa: StrtNm (Street Name), BldgNb (Building Number) ko BldgNm (Building Name), PstCd (Post Code), TwnNm (Town Name), CtrySubDvsn (Country Subdivision), Ctry (Country, a matsayin lambar ISO 3166-1 alpha-2). Wannan shi ne tsarin da SWIFT ta bayyana karara a matsayin zabin da ya fi dacewa inda zai yiwu.
+- **Haɗaɗɗe (Hybrid)** — Ana cika Town Name da Country a cikin filayen da aka tsara musu, yayin da sauran adireshin na iya amfani da abubuwan AdrLine marasa tsari har guda biyu. Abu mai mahimmanci, [kada a sake maimaita abubuwa masu tsari a cikin layukan da ba su da tsari ⧉](https://www.statestreet.com/web/insights/articles/documents/state-street-client-guide-to-iso-20022-2025.pdf "State Street Client Guide to ISO 20022 2025"); adireshin ko dai ɗaya ne ko ɗayan don kowane sashe.
 
-## What the Rule Actually Requires
+Adireshi marasa tsari gabaɗaya — inda dukkan adireshin yake zama a cikin abubuwan AdrLine ba tare da TwnNm ko Ctry ba — ba za a karɓa don kowane ɗayan filayen ɓangarorin da abin ya shafa ba. Hukumar Biyan Kuɗi ta Turai (European Payments Council) ta daidaita littafin dokokinta na SEPA zuwa wannan lokaci na sauyawa, don haka daga [15 Nuwamba 2026 an kuma haramta tsarin da ba shi da tsari a duk faɗin SCT, SDD, da SCT Inst ⧉](https://clearingpost.com/insights/iso-20022-structured-address-deadline-november-2026/ "The November 2026 Structured Address Deadline: What Every PSP Needs to Do Now"). Daidaitawar da ganganci ce: SWIFT da EPC sun tsara ƙarshen mako guda na sauya masana'antu na bai ɗaya.
 
-Under the SWIFT CBPR+ Standards Release 2026 (SR2026), the key requirement is straightforward in principle and unforgiving in detail. From mid-November 2026, [Town Name and Country must be provided in their designated structured fields ⧉](https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed "ISO 20022 milestone for November 2026: Unstructured addresses to be removed") for all agents and parties in CBPR+ payment messages, with very limited exceptions (statements and notifications in camt.052, camt.053, camt.054, plus a few administrative messages remain outside the strict requirement). For agents, continued use of the BIC alone remains a valid alternative to name-and-address.
+Don guje wa shakka, [takardun pacs008 suna jera saƙonnin da abin ya shafa kai tsaye ⧉](https://pacs008.com/structured-address/ "November 2026 structured-address deadline — pacs008"): pacs.008 (mai bin bashi da mai bayar da bashi a tura kuɗi na abokin ciniki), pacs.009 (adireshin cibiyoyi a cikin tura kuɗi na FI da biyan kuɗi na cover), pacs.004 (adireshin ɓangarori a koma baya), da pacs.003 (cire kuɗi kai tsaye). Bukatar kuma tana gudana ta gaba (upstream): fayilolin pain.001 na kamfanoni da ke ɗauke da adireshi marasa tsari za su toshe samar da pacs.008 mai yarda a banki mai karɓa.
 
-Two address formats are permitted after the cutover:
+## Dalilin Da Ya Sa Masana'antar Ta Sanya Wannan A Matsayin Babban Al'amari
 
-- **Fully structured** — every component of the postal address is mapped to its dedicated ISO 20022 element: StrtNm (Street Name), BldgNb (Building Number) or BldgNm (Building Name), PstCd (Post Code), TwnNm (Town Name), CtrySubDvsn (Country Subdivision), Ctry (Country, as an ISO 3166-1 alpha-2 code). This is the format SWIFT explicitly identifies as the more desirable option where possible.
-- **Hybrid** — Town Name and Country are populated in their structured fields, while the remainder of the address may use up to two unstructured AdrLine elements. Importantly, [structured elements must not be repeated inside the unstructured lines ⧉](https://www.statestreet.com/web/insights/articles/documents/state-street-client-guide-to-iso-20022-2025.pdf "State Street Client Guide to ISO 20022 2025"); the address is one or the other for any given component.
+Maganar adireshi masu tsari ba na ado ba ne. Yana da alaƙa da aiki, kuma yana bayyana a wurere uku.
 
-Fully unstructured addresses — where the entire address sits inside AdrLine elements with no TwnNm or Ctry — will not be accepted for any of the affected party fields. The European Payments Council has aligned its SEPA rulebook to the same cutover, so from [15 November 2026 the unstructured format is also banned across SCT, SDD, and SCT Inst ⧉](https://clearingpost.com/insights/iso-20022-structured-address-deadline-november-2026/ "The November 2026 Structured Address Deadline: What Every PSP Needs to Do Now"). The alignment is deliberate: SWIFT and the EPC have engineered a single industry cut-over weekend.
+**Gwajin takunkumi (Sanctions screening).** Babban fa'ida ɗaya mafi girma ita ce adireshi masu tsari suna ba da damar tsarin gwaji su raba sunan ɓangaren da bayanan wuri. Katange adireshin free-text a kai a kai yana haifar da kuskuren gano abubuwa (false positives) lokacin da sunan gari ya faru ya zo ɗaya da sunan wanda aka sanya wa takunkumi, ko kuma lokacin da aka rasa ƙasar da ke cikin free-text gabaɗaya. Filaye masu tsari suna barin injinan gwaji su yi amfani da dokokin haɗari na ƙasa daban-daban yadda ya kamata, kuma suna ba da damar tilasta daidaita jerin takunkumi da lambar ƙasa maimakon yin hasashe a kan rubutun da aka bincika. Binciken CGI UK da aka buga a watan Maris 2026 ya jaddada wannan batu a sarari: [bayanai na adireshi masu tsari suna zama jigon juriyar aiki (operational resilience), ba wai kawai wajibcin bin doka ba ⧉](https://www.cgi.com/uk/en-gb/blog/banking-and-financial-markets/2026-defining-year-iso-20022-and-structured-data-enforcement "2026: A defining year for ISO 20022 and structured data enforcement").
 
-For the avoidance of doubt, the [pacs008 documentation lists the affected messages directly ⧉](https://pacs008.com/structured-address/ "November 2026 structured-address deadline — pacs008"): pacs.008 (debtor and creditor in customer credit transfers), pacs.009 (institution addresses in FI credit transfers and cover payments), pacs.004 (party addresses in returns), and pacs.003 (direct debits). The requirement also flows upstream: corporate pain.001 files carrying unstructured addresses will block compliant pacs.008 generation at the receiving bank.
+**Adadin gyare-gyare na hannu (Manual repair rates).** Biyan kuɗi na ƙasa da ƙasa a yau yana ɗauke da gagarumin farashin aiki ta hanyar binciken hannu, sarrafa abubuwan da ba a saba gani ba (exception handling), da layukan gyarawa — yawancinsu ana fitar da su ne ta hanyar adireshi waɗanda tsarin gwaji ko na turawa ba za su iya tantancewa da kwarin gwiwa ba. Bankunan da suka riga sun koma kan adireshi masu tsari sun ba da rahoton raguwar abubuwan da ba a saba gani ba a cikin straight-through-processing, musamman a cikin hanyoyin tsakiyar korido inda wakilai na tsakiya (intermediary agents) a baya dole ne su fassara bayanan free-text waɗanda ba su ne suka fara samar da su ba.
 
-## Why the Industry Has Made This a Priority
+**Tilastawa a matakin cibiyar sadarwa (Network-level enforcement).** SR2026 yana ƙarfafa tabbatarwa a matakin cibiyar sadarwa ta SWIFT. Wasu daga cikin sabbin binciken za su yi aiki a cikin yanayin maras katsewa (non-blocking) da farko — suna nuna matsalolin ingancin bayanai ba tare da dakatar da biyan kuɗi ba — amma alkiblar a fili take, kuma bayan sauyawa, [za a ƙi amincewa da saƙonnin da ba su cika ƙa'ida ba gabaɗaya ⧉](https://www.redcompasslabs.com/insights/iso-20022-is-arriving-all-at-once-for-us-banks/ "ISO 20022 is arriving all at once for US banks"). Hanyoyin biyan kuɗi da yawa na Amurka (Fedwire, CHIPS) da SWIFT CBPR+ suna haɗuwa a kan kusan jadawali guda, wanda ke cire zaɓin sauyawar mataki-mataki wanda wasu cibiyoyi suka ɗauka a cikin tsare-tsaren baya.
 
-The case for structured addresses is not aesthetic. It is operational, and it shows up in three places.
+## Kallon Matakin Filaye: Abin Da Ke Canzawa a Saƙon
 
-**Sanctions screening.** The single biggest practical benefit is that structured addresses let screening systems separate party name from location data. Free-text address blocks regularly cause false positives when a town name happens to overlap with a sanctioned-person name token, or when a country embedded in free-text is missed entirely. Structured fields let screening engines apply country-specific risk rules deterministically, and they make it possible to enforce sanctions list matching against the country code rather than guessing at a parsed string. The CGI UK analysis published in March 2026 emphasises this point explicitly: [structured address data is becoming central to operational resilience, not merely a compliance obligation ⧉](https://www.cgi.com/uk/en-gb/blog/banking-and-financial-markets/2026-defining-year-iso-20022-and-structured-data-enforcement "2026: A defining year for ISO 20022 and structured data enforcement").
+Saƙon pacs.008 ya ɗauki tallafin adireshi mai tsari tun lokacin da jagororin amfani na CBPR+ na farko suka fara aiki a watan Maris 2023. Abin da ke canzawa a Nuwamba 2026 ba schema ba ne — tabbatarwa ce (validation). Har zuwa yanzu, an ƙyale bankuna su cika abubuwan AdrLine da free-text kuma su tura hakan ta hanyar cibiyar sadarwa. Daga kwanan wata na ƙarshe, abubuwan da ke cikin shingen ɓangarorin dole ne su cika ƙananan buƙatun filaye masu tsari.
 
-**Manual repair rates.** Cross-border payments today carry significant operational cost in the form of manual investigations, exception handling, and repair queues — much of it driven by addresses that screening or routing systems cannot parse with confidence. Banks that have already moved to structured addresses report material reductions in straight-through-processing exceptions, particularly in mid-corridor flows where intermediary agents previously had to interpret free-text data they did not originate.
+### Wadanda Ake Buƙata, Ake Ba da Shawara, da Kuma Wadanda Aka Daina Amfani da Su
 
-**Network-level enforcement.** SR2026 hardens validation at the SWIFT network layer. Some of the new checks will operate in non-blocking mode initially — flagging data-quality issues without stopping payments — but the trajectory is clear, and post-cutover, [non-conforming messages will be rejected outright ⧉](https://www.redcompasslabs.com/insights/iso-20022-is-arriving-all-at-once-for-us-banks/ "ISO 20022 is arriving all at once for US banks"). Several US payment rails (Fedwire, CHIPS) and SWIFT CBPR+ are converging on essentially the same timeline, which removes the option of staggered cutover that some institutions had assumed in earlier plans.
-
-## The Field-Level View: What Changes in the Message
-
-The pacs.008 message has carried structured-address support since the early CBPR+ usage guidelines went live in March 2023. What changes in November 2026 is not the schema — it is the validation. Until now, banks have been allowed to populate AdrLine elements with free text and pass that through the network. From the deadline, the contents of the party blocks must satisfy minimum structured-field requirements.
-
-### Required, Recommended, and Retired
-
-| Element | XPath (under `PstlAdr`) | Status after Nov 2026 | Notes |
+| Abin Cikin Saƙon (Element) | XPath (a ƙarƙashin `PstlAdr`) | Matsayi Bayan Nuwamba 2026 | Bayanan Lura |
 |---|---|---|---|
-| Town Name | `<TwnNm>` | **Mandatory** | At least one structured Town Name per affected party |
-| Country | `<Ctry>` | **Mandatory** | ISO 3166-1 alpha-2 code |
-| Street Name | `<StrtNm>` | Strongly recommended | Required for fully structured format |
-| Building Number | `<BldgNb>` | Recommended | Either BldgNb or PstBx, not both |
-| PO Box | `<PstBx>` | Recommended | Alternative to BldgNb |
-| Post Code | `<PstCd>` | Recommended | Required by some local schemes |
-| Country Subdivision | `<CtrySubDvsn>` | Optional | State, region, province |
-| Address Line (free text) | `<AdrLine>` | **Restricted** | Max 2 lines under hybrid; never alongside the same component in structured fields |
-| Address Type | `<AdrTp>` | Optional | Use of `ADDR` recommended for postal addresses |
+| Sunan Gari | `<TwnNm>` | **Dole ne (Mandatory)** | Aƙalla sunan gari guda ɗaya mai tsari ga kowane ɓangare da abin ya shafa |
+| Ƙasa | `<Ctry>` | **Dole ne (Mandatory)** | Lambar ISO 3166-1 alpha-2 |
+| Sunan Unguwa | `<StrtNm>` | Ana ba da shawara sosai | Ana buƙata don tsarin da aka tsara sosai |
+| Lambar Gini | `<BldgNb>` | Ana ba da shawara | Ko dai BldgNb ko PstBx, ba duka biyu ba |
+| Akwatin Gidan Waya | `<PstBx>` | Ana ba da shawara | Madadin BldgNb |
+| Lambar Gidan Waya | `<PstCd>` | Ana ba da shawara | Wasu tsare-tsare na gida suna buƙata |
+| Rabe-raben Ƙasa | `<CtrySubDvsn>` | Zabi ne (Optional) | Jiha, yanki, lardi |
+| Layin Adireshi (free text) | `<AdrLine>` | **An Taƙaita (Restricted)** | Matsakaicin layuka 2 a ƙarƙashin hybrid; kada ya kasance tare da bangare ɗaya a cikin filaye masu tsari |
+| Nau'in Adireshi | `<AdrTp>` | Zabi ne (Optional) | Ana ba da shawarar amfani da `ADDR` don adireshi na gidan waya |
 
-*Source: Synthesis of SWIFT CBPR+ usage guidelines for SR2026 and [pacs008.com structured-address documentation ⧉](https://pacs008.com/structured-address/ "November 2026 structured-address deadline — pacs008").*
+*Tushe: Haɗin jagororin amfani na SWIFT CBPR+ don SR2026 da [takardun adireshi mai tsari na pacs008.com ⧉](https://pacs008.com/structured-address/ "November 2026 structured-address deadline — pacs008").*
 
-The practical implication is that any institution still relying on AdrLine alone — whether in its own message generation, in pain.001 files received from corporate clients, or in master-data records used to enrich payments in-flight — needs to migrate that data to structured fields before the cutover. SWIFT's in-flow translation service can help in transit, but [it attracts surcharges from January 2026 ⧉](https://www.pcbb.com/products/international-banking/international-payments/iso20022-faq "ISO 20022 FAQ — PCBB") and cannot reliably parse every address format. SWIFT has also released [an open-source AI address-structuring model ⧉](https://www.swift.com/standards/iso-20022/iso-20022-faqs/swift-ai-address-structuring-model "ISO 20022: The Swift AI address structuring model") trained on data from over 200 countries to infer Town and Country from unstructured legacy data with confidence scores, but it is explicitly a remediation aid, not a long-term substitute for clean upstream data.
+Tasirin aiki a bayyane yake cewa duk wata cibiya da har yanzu ta dogara da AdrLine kaɗai — ko a cikin samar da saƙonta na kanta, a cikin fayilolin pain.001 da aka karɓa daga abokan ciniki na kamfanoni, ko a cikin bayanan master-data da ake amfani da su don haɓaka biyan kuɗi yayin tafiya (in-flight) — tana buƙatar ƙaurar da waɗancan bayanai zuwa filaye masu tsari kafin sauyawar. Sabis na in-flow translation na SWIFT zai iya taimakawa yayin tafiya, amma [yana jawo ƙarin kuɗi daga Janairu 2026 ⧉](https://www.pcbb.com/products/international-banking/international-payments/iso20022-faq "ISO 20022 FAQ — PCBB") kuma ba zai iya tantance kowane tsarin adireshi da kwarin gwiwa ba. SWIFT kuma ta fitar da [samfurin AI na buɗaɗɗen tushe (open-source) don tsara adireshi ⧉](https://www.swift.com/standards/iso-20022/iso-20022-faqs/swift-ai-address-structuring-model "ISO 20022: The Swift AI address structuring model") wanda aka horar da shi a kan bayanai daga ƙasashe sama da 200 don fahimtar Gari (Town) da Ƙasa (Country) daga bayanan da ba su da tsari na baya tare da maki na kwarin gwiwa (confidence scores), amma a bayyane yake cewa wannan taimakon gyarawa ne kawai, ba madadin dogon lokaci ba don tsabtace bayanan gaba (upstream).
 
-## How pacs008.com Helps Compress the Timeline
+## Yadda pacs008.com Ke Taimakawa Wajen Taƙaita Tsawon Lokaci
 
-For institutions that need to industrialise their address-quality and message-validation pipelines quickly, [pacs008 ⧉](https://pacs008.com/ "pacs008 — ISO 20022 pacs.008 Toolkit and API") provides an MIT-licensed open-source toolkit and FastAPI service designed specifically for the FI-to-FI customer credit transfer workflow. It addresses the three layers where remediation programmes most often stall: data validation, XML generation, and pipeline enforcement.
+Ga cibiyoyin da ke buƙatar haɓaka ingancin adireshi da hanyoyin tabbatar da saƙo da sauri, [pacs008 ⧉](https://pacs008.com/ "pacs008 — ISO 20022 pacs.008 Toolkit and API") yana samar da kayan aiki na open-source mai lasisin MIT da sabis na FastAPI da aka tsara musamman don tsarin aiki na tura kuɗi na abokin ciniki na FI-to-FI. Yana magance matakai uku inda shirye-shiryen gyarawa suka fi tsayawa akai-akai: tabbatar da bayanai (data validation), samar da XML, da tilastawa a cikin hanyar aiki (pipeline enforcement).
 
-The toolkit's structured-address capabilities are aligned to the SR2026 requirements:
+Iyakokin adireshi masu tsari na kayan aikin suna daidaitawa da buƙatun SR2026:
 
-- **Pre-generation validation** of structured and hybrid postal address fields, so that non-compliant data is caught before any XML is produced or sent.
-- **Flagging of unstructured address data** that would fail after the November 2026 deadline, with a clear distinction between hybrid-acceptable and fully unstructured cases.
-- **Dual-format support** for both pre-deadline hybrid formats and post-deadline fully structured layouts, allowing institutions to migrate progressively without breaking interoperability with counterparties that have not yet completed their own transitions.
-- **CI-pipeline integration** so that address-quality checks become part of the build process, not an end-of-flow afterthought — the practical answer to the [CGI observation that data governance must be a foundational design principle ⧉](https://www.cgi.com/uk/en-gb/blog/banking-and-financial-markets/2026-defining-year-iso-20022-and-structured-data-enforcement "2026: A defining year for ISO 20022 and structured data enforcement") rather than a compliance overlay.
+- **Tabbatarwa kafin ƙirƙira (Pre-generation validation)** na filayen adireshi na gidan waya masu tsari da hybrid, domin a kama bayanan da ba su cika ka'ida ba kafin a samar da kowane XML ko a tura shi.
+- **Nuna bayanan adireshi marasa tsari** waɗanda za su gaza bayan kwanan wata na ƙarshe na Nuwamba 2026, tare da bambanci a sarari tsakanin matsalolin hybrid da aka yarda da su da kuma marasa tsari gabaɗaya.
+- **Taimakon tsari biyu (Dual-format support)** don duk tsarin hybrid na kafin kwanan wata na ƙarshe da kuma tsari mai tsari sosai na bayan kwanan wata na ƙarshe, yana bawa cibiyoyi damar ƙaura a hankali ba tare da rushe haɗin gwiwa da sauran abokan hulɗa da ba su kammala nasu canje-canjen ba.
+- **Haɗin kai na CI-pipeline** ta yadda binciken ingancin adireshi ya zama sashe na tsarin ginawa, ba tunani na ƙarshe ba — amsar aiki ga [lura da CGI cewa gudanar da bayanai (data governance) dole ne ya zama ginshikin tsarin ƙira ⧉](https://www.cgi.com/uk/en-gb/blog/banking-and-financial-markets/2026-defining-year-iso-20022-and-structured-data-enforcement "2026: A defining year for ISO 20022 and structured data enforcement") maimakon rufin bin doka kawai.
 
-Beyond addresses, the toolkit covers the broader validation surface that the SR2026 release tightens: JSON Schema validation against 20 message-specific schemas, IBAN format and checksum verification across 75 countries, XSD validation of generated XML against the official ISO 20022 schemas, and version-aware generation across all 13 supported pacs.008 revisions (pacs.008.001.01 through pacs.008.001.13). For operational and compliance teams, it also includes XXE prevention via defusedxml, strict path-traversal protection, and PII masking in structured JSON logs to support GDPR and PCI DSS requirements — the kind of controls that are non-negotiable in production payment flows but are often retrofitted late in vendor-led migrations.
+Bayan adireshi, kayan aikin yana rufe babban shafin tabbatarwa wanda fitarwar SR2026 ke ƙarfafawa: Tabbatar da JSON Schema akan schema 20 na musamman na saƙo, tsarin IBAN da tabbatar da checksum a cikin ƙasashe 75, tabbatar da XSD na XML da aka samar akan samfuran hukuma na [ISO 20022](/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html) schemas, da kuma samar da masaniyar sigar (version-aware) a duk faɗin 13 na pacs.008 da ake tallafawa (pacs.008.001.01 ta pacs.008.001.13). Ga ƙungiyoyin gudanarwa da na bin doka, ya kuma haɗa da rigakafin XXE ta hanyar defusedxml, kariya ta musamman akan path-traversal, da rufe bayanan sirri (PII masking) a cikin bayanan JSON masu tsari don tallafawa buƙatun GDPR da PCI DSS — irin kulawar da ba a yin sulhu akai a cikin tafiyar biyan kuɗi na ainihi amma galibi ana yin su a makare a cikin ƙaurar da masu samar da kayayyaki ke jagoranta.
 
-The library is available [on PyPI ⧉](https://pypi.org/project/pacs008/ "pacs008 on PyPI") as a `pip install pacs008` package and on [GitHub ⧉](https://github.com/sebastienrousseau/pacs008 "pacs008 on GitHub") with full source transparency. For institutions evaluating their options, this matters: open-source tooling lets internal teams audit the validation logic, integrate it into existing Python or FastAPI estates without licence negotiations, and contribute fixes back as their own edge cases surface.
+Ana samun library ɗin [akan PyPI ⧉](https://pypi.org/project/pacs008/ "pacs008 on PyPI") a matsayin kunshin `pip install pacs008` da kuma akan [GitHub ⧉](https://github.com/sebastienrousseau/pacs008 "pacs008 on GitHub") tare da cikakken bayyana tushen lambar. Ga cibiyoyin da ke kimanta zaɓuɓɓukansu, wannan yana da mahimmanci: kayan aiki na open-source yana bawa ƙungiyoyin cikin gida damar bincikar dabarun tabbatarwa, haɗa shi cikin tsarin Python ko FastAPI na yanzu ba tare da tattaunawar lasisi ba, kuma su ba da gudummawar gyare-gyare yayin da nasu matsalolin suka bayyana.
 
-It is worth being precise about scope. pacs008 is a message-layer toolkit; it does not replace a payments engine, a screening system, or the customer master-data remediation that an institution still needs to do at source. What it does is take that remediation work and make it enforceable — turning structured-address compliance from a manual review at the end of a long pipeline into an automated gate at the point of generation. For programmes running short on time, that gate is the difference between a clean cutover and a post-cutover surge in rejections.
+Yana da kyau a kasance takamaiman game da iyakoki. pacs008 kayan aiki ne na matakin saƙo (message-layer); ba ya maye gurbin injin biyan kuɗi, tsarin gwaji, ko gyara bayanan abokin ciniki (customer master-data remediation) wanda har yanzu cibiya ke buƙatar yi a tushe. Abin da yake yi shi ne ɗaukar wannan aikin gyaran da kuma sanya shi mai yiwuwa a tilasta shi — yana mai da bin ƙa'idar adireshi mai tsari da aka canza daga nazarin hannu a ƙarshen babban layi zuwa ƙofar sarrafa kansa a lokacin samarwa. Ga shirye-shiryen da ke da ƙarancin lokaci, wannan ƙofar ita ce bambanci tsakanin tsabtace sauyawa (clean cutover) da kuma hauhawar ƙi amincewa bayan sauyawa (post-cutover).
 
-## The Tooling Landscape
+## Taswirar Kayan Aiki
 
-pacs008 sits within a wider ecosystem of ISO 20022 message tooling, and the choice of approach depends on the institution's stack, scale, and migration philosophy. The open-source and commercial landscape includes [pyiso20022 ⧉](https://github.com/phoughton/pyiso20022 "pyiso20022 — an ISO 20022 message generator and parser") (broad multi-category Python library with beta validation), the related [pain001 ⧉](https://pain001.com/ "Pain001 — Automate ISO 20022-compliant payment file creation") library for upstream payment initiation, [Prowide ISO 20022 ⧉](https://www.prowidesoftware.com/development-tools/iso20022 "Prowide ISO 20022 — open source MX message parser for Java") (a comprehensive Apache 2.0 Java library with a commercial layer for CBPR+ validation and translations), and a number of commercial platforms — Mambu, Kyriba, PaymentComponents, and others — that bundle ISO 20022 capability into broader treasury or payments-platform offerings.
+pacs008 yana zama ne a cikin babban tsarin kayan aikin saƙon [ISO 20022](/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html), kuma zaɓin hanyar ya dogara ne akan fasahar cibiyar (stack), sikelinta, da falsafar ƙaura. Filin open-source da na kasuwanci ya haɗa da [pyiso20022 ⧉](https://github.com/phoughton/pyiso20022 "pyiso20022 — an ISO 20022 message generator and parser") (library na Python mai faɗi tare da tabbatarwa ta beta), dangantaccen library na [pain001 ⧉](https://pain001.com/ "Pain001 — Automate ISO 20022-compliant payment file creation") don ƙaddamar da biyan kuɗi na gaba (upstream), [Prowide ISO 20022 ⧉](https://www.prowidesoftware.com/development-tools/iso20022 "Prowide ISO 20022 — open source MX message parser for Java") (cikakken library na Java na Apache 2.0 tare da matakin kasuwanci don tabbatarwa da fassarar CBPR+), da kuma wasu dandamali na kasuwanci — Mambu, Kyriba, PaymentComponents, da sauransu — waɗanda ke haɗa ƙarfin [ISO 20022](/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html) zuwa cikin manyan ayyukan baitulmali ko dandamali na biyan kuɗi.
 
-The trade-off is familiar. Commercial platforms reduce in-house engineering burden but bind the institution to a vendor roadmap that may not match its own. Comprehensive multi-category libraries cover a wider surface but require more integration work for any single message type. Focused open-source libraries — pacs008 for FI-to-FI customer credit transfer, [pain001](/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html) for payment initiation — minimise integration time for institutions that need to address specific bottlenecks quickly, and they leave the institution in control of its own validation rules. For the structured-address problem in particular, a focused approach has the advantage that the rules being enforced are narrow, well-defined, and unlikely to change before the cutover.
+Zaɓin yana da tabbas. Dandamali na kasuwanci suna rage nauyin injiniyan cikin gida amma suna ɗaure cibiyar zuwa taswirar mai siyarwa (vendor roadmap) wanda maiyuwa baya dacewa da nata. Cikakkun laburaren rukuni-rukuni masu faɗi suna rufe babban yanki amma suna buƙatar ƙarin aikin haɗin kai (integration) don kowane nau'in saƙo guda ɗaya. Laburaren open-source da aka mayar da hankali kansu — pacs008 don tura kuɗi na abokin ciniki na FI-to-FI, da [pain001](/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html) don ƙaddamar da biyan kuɗi — suna rage lokacin haɗin kai ga cibiyoyin da ke buƙatar magance takamaiman matsaloli da sauri, kuma suna barin cibiyar ta mallaki dokokinta na tabbatarwa. Don matsalar adireshi mai tsari musamman, hanyar da aka mayar da hankali tana da fa'ida cewa dokokin da ake tilastawa sun taƙaita, an ayyana su sosai, kuma da wuya su canza kafin sauyawar.
 
-## What This Means by Sector
+## Abin da Wannan Ke Nufi ga Kowace Sashe
 
-The November 2026 deadline does not affect all institutions equally. The right response depends on the volume of cross-border traffic, the maturity of the existing data estate, and the role the institution plays in the payment chain.
+Kwanan wata na ƙarshe na Nuwamba 2026 baya shafar duk cibiyoyi daidai gwargwado. Ainihin martani ya dogara ne akan yawan zirga-zirgar biyan kuɗi na ƙasa da ƙasa, girman bayanan da ke akwai, da kuma rawar da cibiyar ke takawa a cikin jerin biyan kuɗi.
 
-### Large Correspondent and Cross-Border Banks
+### Manyan Bankunan Wakilai da na Ƙasa da Ƙasa (Large Correspondent and Cross-Border Banks)
 
-For tier-one banks running significant CBPR+ traffic, the structured-address requirement is one workstream within a much larger SR2026 readiness programme that also covers exceptions and investigations, BAH hardening, and (in the US) the simultaneous migration of Fedwire and CHIPS. The RedCompass Labs data suggests most of these institutions are spending $20–30 million on 2026 readiness, with delivery teams of 10–20 specialists. The risk for this group is not technical capability — it is delivery capacity. With multiple parallel workstreams competing for the same release windows, address-quality remediation can quietly slip behind more visible workstreams until it becomes a cutover-week problem. The practical mitigation is to bring address validation forward in the pipeline, so that failures surface in development and test environments months before they would have reached production.
+Ga bankuna na tier-one masu gudanar da gagarumar zirga-zirgar CBPR+, buƙatar adireshi mai tsari wani sashe ne na aiki a cikin babban shirin shiryawa na SR2026 wanda kuma ya haɗa da abubuwan da ba a saba gani ba da bincike, ƙarfafa BAH, da kuma (a Amurka) ƙaurawar Fedwire da CHIPS a lokaci guda. Bayanan RedCompass Labs sun nuna cewa yawancin waɗannan cibiyoyi suna kashe dala miliyan 20–30 don shirin 2026, tare da ƙungiyoyin bayarwa na kwararru 10–20. Haɗarin ga wannan rukuni ba ƙarfin fasaha ba ne — iyawar bayarwa ce (delivery capacity). Tare da hanyoyin aiki da yawa masu kama da juna da ke fafatawa don tagogin fitarwa ɗaya, gyaran ingancin adireshi na iya zamewa a hankali a bayan ayyukan da suka fi fitowa fili har sai ya zama matsala a makon sauyawa. Raguwar aiki mai amfani ita ce kawo tabbatar da adireshi gaba a cikin layin aiki (pipeline), domin kasawa ta bayyana a cikin mahalli na ci gaba da gwaji watanni kafin su isa ga samarwa.
 
-### Mid-Tier Banks and Payment Institutions
+### Bankunan Tsakiya da Cibiyoyin Biyan Kuɗi (Mid-Tier Banks and Payment Institutions)
 
-For mid-tier banks and EMI/PI institutions, the structured-address requirement is often the most material 2026 obligation they face, because they do not carry the same surrounding workstream load as the tier-ones. The challenge here is usually upstream data quality. Customer onboarding processes that have captured addresses as free-text for decades produce master-data estates that are not straightforwardly parseable. Automated remediation — using SWIFT's open-source address-structuring model, commercial address-cleansing services, or a combination — can address a substantial share of records, but a residual long tail of complex international addresses will require manual review. The earlier this work starts, the smaller that tail becomes.
+Ga bankuna na tsakiya da cibiyoyin EMI/PI, buƙatar adireshi mai tsari galibi ita ce mafi mahimmancin wajibcin 2026 da suke fuskanta, saboda ba sa ɗaukar nauyin aiki iri ɗaya da bankunan tier-one. Kalubale a nan yawanci ingancin bayanai ne na gaba (upstream). Hanyoyin shigar da abokan ciniki waɗanda suka kama adireshi a matsayin free-text na shekaru da yawa suna samar da bayanan master-data waɗanda ba za a iya bincika su cikin sauƙi ba. Gyarawa ta atomatik — ta amfani da samfurin tsara adireshi na open-source na SWIFT, ayyukan tsabtace adireshi na kasuwanci, ko haɗuwa — na iya magance babban kaso na bayanan, amma sauran adireshi masu rikitarwa na ƙasa da ƙasa za su buƙaci nazarin hannu. Yayin da wannan aikin ya fara da wuri, ragowar ke yin ƙanƙanta.
 
-### Corporates and Payment Service Providers
+### Kamfanoni da Masu Samar da Sabis na Biyan Kuɗi (Corporates and Payment Service Providers)
 
-Corporates initiating payments via pain.001 are upstream of the bank's pacs.008 generation but are not exempt from the structured-address requirement. Banks will not retroactively populate beneficiary addresses on behalf of corporate clients; the structured data must originate from the corporate's own systems. For corporate treasurers, this means ensuring that ERP and treasury systems capture beneficiary addresses in structured form, that signatory and ultimate-debtor information is similarly structured, and that payment-initiation templates do not silently drop fields during file generation. Pre-flight validation of pain.001 files — using either the corporate's own tooling or services exposed by the bank — is becoming the practical control point.
+Kamfanonin da ke ƙaddamar da biyan kuɗi ta hanyar pain.001 suna gaba (upstream) ga samar da pacs.008 na banki amma ba a keɓe su kutoka buƙatun adireshi mai tsari ba. Bankuna ba za su cika adiresoshin masu karɓar kuɗi a madadin abokan ciniki na kamfanoni ba; dole ne bayanan masu tsari su fito daga tsarin kamfanoni na kansu. Ga masu kula da baitulmali na kamfanoni, wannan yana nufin tabbatar da cewa tsarin ERP da na baitulmali suna kama adiresoshin masu karɓar kuɗi a cikin tsari, cewa bayanan sa hannu da na debtor na ƙarshe an tsara su daban, kuma samfuran ƙaddamar da biyan kuɗi ba sa jefar da filaye yayin samar da fayil. Tabbatar da fayilolin pain.001 kafin a aika — ta amfani da ko dai kayan aiki na kamfanin na kansa ko kuma ayyukan da banki ya bayyana — yana zama wurin sarrafawa na aiki.
 
-### Vendors, Fintechs, and System Integrators
+### Masu Siyarwa, Fintechs, da Masu Haɗa Tsarin (Vendors, Fintechs, and System Integrators)
 
-For vendors building on top of payment rails, the deadline is a forcing function for ISO 20022 capability that may have been pushed to later phases. Fintechs that route or originate cross-border payments through banking partners need to surface structured-address capture in their own UIs and APIs, or accept that compliant pain.001 files cannot be produced from their data. The opportunity, for vendors that can move quickly, is to absorb the remediation burden on behalf of corporate clients — turning a compliance problem into a service.
+Ga masu siyarwa da ke ginawa a saman hanyoyin biyan kuɗi (payment rails), kwanan wata na ƙarshe wani ƙarfi ne na tilasta ƙarfin [ISO 20022](/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html) wanda maiyuwa an tura shi zuwa matakai na gaba. Fintechs waɗanda ke tura ko fara biyan kuɗi na ƙasa da ƙasa ta hanyar abokan haɗin gwiwa na banki suna buƙatar nuna kama adireshi mai tsari a cikin nasu UIs da APIs, ko kuma su yarda cewa ba za a iya samar da fayilolin pain.001 masu yarda ba daga bayanan su. Dama ga masu siyarwa da za su iya tafiya da sauri ita ce ɗaukar nauyin gyarawa a madadin abokan ciniki na kamfanoni — mai da matsalar bin doka zuwa sabis.
 
-## Conclusion
+## Kammalawa
 
-The November 2026 structured-address deadline is, in one sense, a narrow change: two mandatory fields, a couple of recommended ones, and the retirement of a free-text option that should never have been used for sanctions-relevant data in the first place. In another sense, it is the most operationally significant ISO 20022 milestone since the original CBPR+ migration, because it forces structured data not just into the message layer but into the upstream systems that feed it.
+Kwanan wata na ƙarshe na adireshi mai tsari na Nuwamba 2026, a gefe guda, canji ne da ya taƙaita: filayen dole guda biyu, wasu kaɗan da aka ba da shawarar, da kuma janye zaɓin free-text wanda bai kamata a yi amfani da shi don bayanan da ke da alaƙa da takunkumi ba tun farko. A wani ma'anar kuma, shi ne mafi mahimmancin matakin aiki na [ISO 20022](/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html) tun lokacin ƙaurar CBPR+ na asali, saboda yana tilasta bayanai masu tsari ba kawai a cikin matakin saƙo ba amma a cikin tsarin gaba (upstream) da ke ciyar da shi.
 
-The industry-level readiness picture, six months out, is not encouraging. Two-thirds of CBPR+ messages still carry unstructured addresses. Nearly half of banks are not on track. Almost a third of customer address records remain unparseable. The funding is in place — the surveys consistently show eight- and nine-figure investments — but the work is not, and the data-quality dimension of the problem cannot be solved by spending alone in the final months.
+Hoton shiryawa na matakin masana'antu, watanni shida kafin lokacin, ba shi da daɗi. Kashi biyu bisa uku na saƙonnin CBPR+ har yanzu suna ɗauke da adireshi marasa tsari. Kusan rabin bankuna ba su kan hanya. Kusan kashi ɗaya bisa uku na bayanan adireshi na abokan ciniki sun kasance marasa tantancewa. Akwai kuɗi — binciken a kai a kai yana nuna zuba jari na lambobi takwas da tara — amma aikin ba a yi shi ba, kuma matsalar ingancin bayanai ba za a iya magance ta ta hanyar kashe kuɗi kaɗai ba a watannin ƙarshe.
 
-What helps now is automation at the point of validation: pushing the rules into pipelines that catch problems before they reach the network, rather than after. For institutions running Python or FastAPI estates, open-source tooling like [pacs008 ⧉](https://pacs008.com/ "pacs008 — ISO 20022 pacs.008 Toolkit and API") provides a practical way to make that shift without a vendor selection cycle. For everyone, regardless of stack, the strategic point is the same: the institutions that industrialise change now will be in a far stronger position than those relying on last-minute compliance — to borrow the phrasing of the RedCompass Labs research that has framed much of the 2026 conversation.
+Abin da ke taimakawa yanzu shi ne yin aiki ta atomatik a wurin tabbatarwa: tura dokoki zuwa layukan aiki (pipelines) waɗanda ke kama matsaloli kafin su isa ga cibiyar sadarwa, maimakon bayan sun isa. Ga cibiyoyin da ke gudanar da tsarin Python ko FastAPI, kayan aiki na open-source kamar [pacs008 ⧉](https://pacs008.com/ "pacs008 — ISO 20022 pacs.008 Toolkit and API") yana ba da hanya mai amfani don yin wannan sauyi ba tare da tsarin zaɓin mai siyarwa ba. Ga kowa, ko wane irin stack yake amfani da shi, batun dabara iri ɗaya ne: cibiyoyin da suka sarrafa canji yanzu za su kasance cikin matsayi mafi ƙarfi fiye da waɗanda suka dogara da bin doka a minti na ƙarshe — don aro kalmar binciken RedCompass Labs wanda ya tsara yawancin tattaunawar 2026.
 
-The cutover weekend in November will close one chapter. The institutions that arrive at it with clean data, automated validation, and a working understanding of what structured addresses actually do for sanctions screening will spend that weekend monitoring traffic. The ones that arrive without those things will spend it on the phones.
+Karshen mako na sauyawa (cutover weekend) a watan Nuwamba zai rufe babi guda. Cibiyoyin da suka isa wurin da tsabtace bayanai, tabbatarwa ta atomatik, da cikakkiyar fahimtar abin da adireshi masu tsari ke yi don gwajin takunkumi (sanctions screening) za su kasance suna lura da zirga-zirga a wannan ƙarshen mako. Waɗanda suka isa ba tare da waɗannan abubuwan ba za su kasance a kan wayoyi suna kiran neman taimako.
 
-## Frequently Asked Questions
+## Tambayoyin Da Aka Fi Yi (Frequently Asked Questions)
 
-**What exactly changes on the November 2026 deadline?**
+**Menene ainihin canji a kwanan wata na ƙarshe na Nuwamba 2026?**
 
-From mid-November 2026, SWIFT CBPR+ will reject pacs.008, pacs.009, pacs.004, and pacs.003 messages whose party fields contain unstructured-only postal addresses. The minimum structured requirement is the Town Name in the TwnNm element and Country in the Ctry element (using the ISO 3166-1 alpha-2 code). Hybrid addresses are still permitted — Town and Country in structured fields, plus up to two free-text AdrLine elements for the remaining components — but the same component cannot appear in both structured and unstructured fields. Fully structured addresses are the preferred format. The European Payments Council has aligned the SEPA schemes (SCT, SDD, SCT Inst) to the same cutover date.
+Daga tsakiyar Nuwamba 2026, SWIFT CBPR+ zai ƙi saƙonnin pacs.008, pacs.009, pacs.004, da pacs.003 waɗanda filayen ɓangarorinsu ke ɗauke da adireshi na gidan waya marasa tsari kaɗai. Mafi ƙarancin buƙata mai tsari ita ce Sunan Gari a cikin sashin TwnNm da Ƙasa a cikin sashin Ctry (ta amfani da lambar ISO 3166-1 alpha-2). Har yanzu an yarda da adireshi na hybrid — Gari da Ƙasa a cikin filaye masu tsari, gami da layukan AdrLine na free-text har guda biyu don sauran sassan — amma sashe ɗaya ba zai iya bayyana a cikin filaye masu tsari da marasa tsari ba lokaci guda. Adireshi masu tsari sosai su ne tsarin da aka fi so. Hukumar Biyan Kuɗi ta Turai ta daidaita tsare-tsaren SEPA (SCT, SDD, SCT Inst) zuwa wannan lokaci na sauyawa.
 
-**Which messages and which party fields are affected?**
+**Wadanne saƙonni da wadanne filayen ɓangarori abin ya shafa?**
 
-For pacs.008, the requirement applies to debtor and creditor postal addresses. For pacs.009, it applies to institution addresses in FI credit transfers and cover payments. For pacs.004, it applies to party addresses in payment returns. For pacs.003, it applies to creditor and debtor addresses in customer direct debits. Statement and notification messages (camt.052, camt.053, camt.054) and certain administrative messages remain outside the strict requirement. Upstream pain.001 messages from corporate clients are not directly governed by CBPR+, but unstructured addresses in pain.001 files will block compliant pacs.008 generation downstream and so are effectively in scope.
+Don pacs.008, buƙatar ta shafi adireshin gidan waya na debtor da creditor. Don pacs.009, ta shafi adireshin cibiyoyi a cikin tura kuɗi na FI da biyan kuɗi na cover. Don pacs.004, ta shafi adireshin ɓangarori a cikin koma baya na biyan kuɗi. Don pacs.003, ta shafi adireshin creditor da debtor a cikin cire kuɗi kai tsaye na abokin ciniki. Saƙonnin bayani da sanarwa (camt.052, camt.053, camt.054) da wasu saƙonnin gudanarwa sun kasance a wajen tsauraran buƙatun. Saƙonnin pain.001 na gaba (upstream) daga abokan ciniki na kamfanoni ba saƙonni ne da CBPR+ ke iko da su kai tsaye ba, amma adireshi marasa tsari a cikin fayilolin pain.001 za su toshe samar da pacs.008 mai yarda a gaba don haka suna cikin tsarin aiki.
 
-**What is the difference between structured, hybrid, and unstructured addresses?**
+**Menene bambanci tsakanin adireshi mai tsari (structured), hybrid, da maras tsari (unstructured)?**
 
-A fully structured address maps every component to its dedicated ISO 20022 element: StrtNm, BldgNb or PstBx, PstCd, TwnNm, CtrySubDvsn, Ctry. A hybrid address has Town Name and Country in structured fields, with the rest of the address in up to two free-text AdrLine elements; the same component must not appear in both. An unstructured address has the entire postal address in AdrLine elements with no structured TwnNm or Ctry — this is the format being retired in November 2026 for the affected party fields.
+Adireshin da aka tsara sosai (fully structured) yana daidaita kowane sashe zuwa takamaiman abin [ISO 20022](/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html) nasa: StrtNm, BldgNb ko PstBx, PstCd, TwnNm, CtrySubDvsn, Ctry. Adireshin hybrid yana da Sunan Gari da Ƙasa a cikin filaye masu tsari, yayin da sauran adireshin yake cikin layukan AdrLine na free-text har guda biyu; kada sashe guda ya bayyana a duka biyun. Adireshin da ba shi da tsari yana da dukkan adireshin gidan waya a cikin abubuwan AdrLine ba tare da wani TwnNm ko Ctry mai tsari ba — wannan shi ne tsarin da aka daina amfani da shi a watan Nuwamba 2026 ga filayen ɓangarorin da abin ya shafa.
 
-**How does pacs008.com help with this transition?**
+**Yadda pacs008.com ke taimakawa da wannan sauyin?**
 
-The [pacs008 ⧉](https://pacs008.com/ "pacs008 — ISO 20022 pacs.008 Toolkit and API") library validates structured and hybrid postal address fields before XML generation, flags unstructured data that would fail after the deadline, supports both pre-deadline hybrid and post-deadline fully structured formats, and integrates into CI pipelines and batch validation workflows. It generates XML for all 13 supported pacs.008 versions, validates against the official ISO 20022 XSD schemas, and exposes a FastAPI service for automated orchestration. It is open source under an MIT-style licence, available on PyPI, and designed specifically for FI-to-FI customer credit transfer workflows — so the validation rules are calibrated to the SR2026 CBPR+ usage guidelines rather than abstracted across many message types.
+Library na [pacs008 ⧉](https://pacs008.com/ "pacs008 — ISO 20022 pacs.008 Toolkit and API") yana inganta filayen adireshi na gidan waya masu tsari da na hybrid kafin samar da XML, yana nuna bayanan da ba su da tsari waɗanda za su gaza bayan kwanan wata na ƙarshe, yana tallafawa duka tsarin hybrid na kafin kwanan wata na ƙarshe da tsari mai tsari sosai na bayan kwanan wata na ƙarshe, kuma yana haɗuwa cikin hanyoyin aiki na CI da tabbatarwa na rukuni (batch validation). Yana samar da XML don duk nau'ikan pacs.008 guda 13 da ake tallafawa, yana inganta daidaito akan samfuran XSD na hukuma na [ISO 20022](/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html), kuma yana samar da sabis na FastAPI don tsara hanyoyin aiki ta atomatik. Yana da lasisin open source a ƙarƙashin lasisin MIT, ana samunsa akan PyPI, kuma an tsara shi musamman don tsarin aiki na tura kuɗi na abokin ciniki na FI-to-FI — don haka an daidaita dokokin tabbatarwa zuwa jagororin amfani na SR2026 CBPR+ maimakon zama na gama-gari a cikin nau'ikan saƙonni da yawa.
 
-**What happens if my institution is not ready by November 2026?**
+**Me zai faru idan cibiyata ba ta shirya ba kafin Nuwamba 2026?**
 
-Messages with unstructured addresses in the affected party fields will be rejected at the network level after the cutover. Practically, this translates into payment failures, increased exception volumes, manual repair surges, and probable customer impact. SWIFT's in-flow translation service is available for some transitional cases but attracts surcharges from January 2026 and cannot reliably parse every address format. SWIFT has also released an open-source AI address-structuring model that infers Town and Country from legacy unstructured data, but it is designed for remediation and pre-processing, not as a permanent substitute for clean upstream data. Institutions that arrive at the deadline without a remediated customer master-data estate and an automated validation pipeline should expect a difficult cutover week and a meaningful operational uplift in the months that follow.
+Za a ƙi saƙonnin da ke ɗauke da adireshi marasa tsari a cikin filayen ɓangarorin da abin ya shafa a matakin cibiyar sadarwa bayan sauyawa. A aikace, wannan yana nufin gazawar biyan kuɗi, haɓakar abubuwan da ba a saba gani ba, hauhawar gyare-gyare na hannu, da kuma yuwuwar tasiri ga abokan ciniki. Sabis na in-flow translation na SWIFT yana samuwa ga wasu lokuta na wucin gadi amma yana jawo ƙarin kuɗi daga Janairu 2026 kuma ba zai iya tantance kowane tsarin adireshi da kwarin gwiwa ba. SWIFT kuma ta fitar da samfurin AI na open-source don tsara adireshi wanda ke fahimtar Gari da Ƙasa daga bayanan da ba su da tsari na baya, amma an tsara shi don gyarawa da sarrafawa kafin lokaci, ba a matsayin madadin dogon lokaci na tsabtar bayanan gaba (upstream) ba. Cibiyoyin da suka isa kwanan wata na ƙarshe ba tare da ingantattun bayanan abokin ciniki (customer master-data estate) da hanyar tabbatarwa ta atomatik ba su yi tsammanin makon sauya mai wahala da kuma gagarumin ƙarin aiki a cikin watanni masu zuwa.
 
-## References
+## Tusoshi
 
-- Sebastien Rousseau, (2023). [Automating ISO 20022-Compliant Payment File Creation with Pain001](https://sebastienrousseau.com/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html "Automating ISO 20022-Compliant Payment File Creation with Pain001").
-- pacs008, (2026). [November 2026 structured-address deadline ⧉](https://pacs008.com/structured-address/ "November 2026 structured-address deadline — pacs008"). pacs008.com.
-- pacs008, (2026). [pacs008 — ISO 20022 pacs.008 Toolkit and API ⧉](https://pacs008.com/ "pacs008 — ISO 20022 pacs.008 Toolkit and API"). pacs008.com.
-- SWIFT, (2026). [ISO 20022 milestone for November 2026: Unstructured addresses to be removed ⧉](https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed "ISO 20022 milestone for November 2026: Unstructured addresses to be removed"). SWIFT.
-- SWIFT, (2026). [ISO 20022 for Financial Institutions ⧉](https://www.swift.com/standards/iso-20022/iso-20022-financial-institutions-focus-payments-instructions "ISO 20022 for Financial Institutions"). SWIFT.
-- SWIFT, (2026). [The Swift AI address structuring model ⧉](https://www.swift.com/standards/iso-20022/iso-20022-faqs/swift-ai-address-structuring-model "ISO 20022: The Swift AI address structuring model"). SWIFT.
-- RedCompass Labs, (2026). [Nearly Half of Banks Are Behind on ISO 20022 ⧉](https://financialit.net/news/banking/nearly-half-banks-are-behind-iso-20022 "Nearly Half of Banks Are Behind on ISO 20022"). Financial IT.
-- RedCompass Labs, (2026). [ISO 20022 is arriving all at once for US banks ⧉](https://www.redcompasslabs.com/insights/iso-20022-is-arriving-all-at-once-for-us-banks/ "ISO 20022 is arriving all at once for US banks"). RedCompass Labs.
-- ClearingPost, (2026). [The November 2026 Structured Address Deadline: What Every PSP Needs to Do Now ⧉](https://clearingpost.com/insights/iso-20022-structured-address-deadline-november-2026/ "The November 2026 Structured Address Deadline"). ClearingPost.
-- CGI UK, (2026). [2026: A defining year for ISO 20022 and structured data enforcement ⧉](https://www.cgi.com/uk/en-gb/blog/banking-and-financial-markets/2026-defining-year-iso-20022-and-structured-data-enforcement "2026: A defining year for ISO 20022 and structured data enforcement"). CGI UK.
-- J.P. Morgan, (2026). [ISO 20022 Migration: Guidance, Messaging & More ⧉](https://www.jpmorgan.com/insights/payments/fx-cross-border/iso-20022-migration "ISO 20022 Migration: Guidance, Messaging & More"). J.P. Morgan.
+- Sebastien Rousseau, (2023). [Sarrafa Samar da Fayilolin Biyan Kuɗi Masu Yarda da ISO 20022 tare da Pain001](https://sebastienrousseau.com/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html "Automating ISO 20022-Compliant Payment File Creation with Pain001").
+- pacs008, (2026). [Kwanan wata na ƙarshe na adireshi mai tsari na Nuwamba 2026 ⧉](https://pacs008.com/structured-address/ "Kwanan wata na ƙarshe na adireshi mai tsari na Nuwamba 2026 — pacs008"). pacs008.com.
+- pacs008, (2026). [pacs008 — Kayan Aiki da API na ISO 20022 pacs.008 ⧉](https://pacs008.com/ "pacs008 — Kayan Aiki da API na ISO 20022 pacs.008"). pacs008.com.
+- SWIFT, (2026). [Muhimmin mataki na ISO 20022 don Nuwamba 2026: Cire adireshi marasa tsari ⧉](https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed "Muhimmin mataki na ISO 20022 don Nuwamba 2026: Cire adireshi marasa tsari"). SWIFT.
+- SWIFT, (2026). [ISO 20022 don Cibiyoyin Kuɗi ⧉](https://www.swift.com/standards/iso-20022/iso-20022-financial-institutions-focus-payments-instructions "ISO 20022 don Cibiyoyin Kuɗi"). SWIFT.
+- SWIFT, (2026). [Samfurin tsara adireshi na Swift AI ⧉](https://www.swift.com/standards/iso-20022/iso-20022-faqs/swift-ai-address-structuring-model "ISO 20022: Samfurin tsara adireshi na Swift AI"). SWIFT.
+- RedCompass Labs, (2026). [Kusan Rabin Bankuna Suna Baya akan ISO 20022 ⧉](https://financialit.net/news/banking/nearly-half-banks-are-behind-iso-20022 "Kusan Rabin Bankuna Suna Baya akan ISO 20022"). Financial IT.
+- RedCompass Labs, (2026). [ISO 20022 yana isa gabaɗaya lokaci guda ga bankunan Amurka ⧉](https://www.redcompasslabs.com/insights/iso-20022-is-arriving-all-at-once-for-us-banks/ "ISO 20022 yana isa gabaɗaya lokaci guda ga bankunan Amurka"). RedCompass Labs.
+- ClearingPost, (2026). [Kwanan Wata na Ƙarshe na Adireshi Mai Tsari na Nuwamba 2026: Abin da kowane PSP ke buƙatar yi yanzu ⧉](https://clearingpost.com/insights/iso-20022-structured-address-deadline-november-2026/ "Kwanan Wata na Ƙarshe na Adireshi Mai Tsari na Nuwamba 2026"). ClearingPost.
+- CGI UK, (2026). [2026: Shekara ce ta musamman don ISO 20022 da tilasta amfani da bayanai masu tsari ⧉](https://www.cgi.com/uk/en-gb/blog/banking-and-financial-markets/2026-defining-year-iso-20022-and-structured-data-enforcement "2026: Shekara ce ta musamman don ISO 20022 da tilasta amfani da bayanai masu tsari"). CGI UK.
+- J.P. Morgan, (2026). [Ƙaurawar ISO 20022: Jagora, Saƙonni da ƙari ⧉](https://www.jpmorgan.com/insights/payments/fx-cross-border/iso-20022-migration "Ƙaurawar ISO 20022: Jagora, Saƙonni da ƙari"). J.P. Morgan.
 - ING, (2026). [FAQ Swift ISO 20022 ⧉](https://www.ingwb.com/en/service/payments-and-collections/swift-iso20022/faq-swift-iso-20022 "FAQ Swift ISO 20022 — ING"). ING Wholesale Banking.
-- Mambu, (2026). [CBPR+ is live: what ISO 20022 means in practice ⧉](https://mambu.com/en/insights/articles/cbpr-is-live-what-iso-20022-means-in-practice "CBPR+ is live: what ISO 20022 means in practice"). Mambu.
-- Kyriba, (2026). [ISO 20022 migration: what every treasury team needs to know about what's next ⧉](https://www.kyriba.com/blog/iso-20022-corporate-treasury-2026/ "ISO 20022 migration: what every treasury team needs to know about what's next"). Kyriba.
-- Standard Chartered, (2025). [ISO 20022 – Standard Chartered Address Guidelines (H2H and API) ⧉](https://www.sc.com/en/uploads/sites/66/content/docs/sc-cib-tb-ISO-20022%E2%80%93CBPR-Address-guidelines-H2H-and-API-sept-2025.pdf "Standard Chartered ISO 20022 Address Guidelines"). Standard Chartered.
-- State Street, (2025). [Client Guide to ISO 20022 ⧉](https://www.statestreet.com/web/insights/articles/documents/state-street-client-guide-to-iso-20022-2025.pdf "State Street Client Guide to ISO 20022 2025"). State Street.
-- ISO 20022, (2026). [Message Definitions Catalogue ⧉](https://www.iso20022.org/iso-20022-message-definitions "ISO 20022 Message Definitions"). ISO 20022.
+- Mambu, (2026). [CBPR+ yana raye: abin da ISO 20022 ke nufi a aikace ⧉](https://mambu.com/en/insights/articles/cbpr-is-live-what-iso-20022-means-in-practice "CBPR+ yana raye: abin da ISO 20022 ke nufi a aikace"). Mambu.
+- Kyriba, (2026). [Ƙaurawar ISO 20022: Abin da kowace ƙungiyar baitulmali ke buƙatar sani game da mataki na gaba ⧉](https://www.kyriba.com/blog/iso-20022-corporate-treasury-2026/ "Ƙaurawar ISO 20022: Abin da kowace ƙungiyar baitulmali ke buƙatar sani game da mataki na gaba"). Kyriba.
+- Standard Chartered, (2025). [ISO 20022 – Jagororin Adireshi na Standard Chartered (H2H da API) ⧉](https://www.sc.com/en/uploads/sites/66/content/docs/sc-cib-tb-ISO-20022%E2%80%93CBPR-Address-guidelines-H2H-and-API-sept-2025.pdf "Jagororin Adireshi na Standard Chartered ISO 20022"). Standard Chartered.
+- State Street, (2025). [Jagoran Abokin Ciniki na ISO 20022 ⧉](https://www.statestreet.com/web/insights/articles/documents/state-street-client-guide-to-iso-20022-2025.pdf "Jagoran Abokin Ciniki na State Street na ISO 20022 2025"). State Street.
+- ISO 20022, (2026). [Rukuni na Ma'anar Saƙo ⧉](https://www.iso20022.org/iso-20022-message-definitions "Ma'anar Saƙonni na ISO 20022"). ISO 20022.
+
+<!-- enrich-start -->
+<aside class="author-card" aria-label="Game da marubucin"><img alt="Hoton Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Babban masanin fasahar banki da ke rubutu akan amfani da AI, ƙaurawar ISO 20022, post-quantum cryptography don ayyukan kuɗi, da sauye-sauyen tsari na biyan kuɗi na wholesale.</span><span class="author-credentials">Fiye da shekaru 20 a sassan HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Cikakken bayani</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<p class="post-reviewed">Wanda aka duba na ƙarshe a <time datetime="2026-06-23">2026-06-23</time>.</p>
+<aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Karatun da ke da alaƙa</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026" class="related-media" aria-label="ISO 20022 Bayan Ƙaura: Mayar da Bayanan Biyan Kuɗi zuwa Kayayyakin Banki a 2026" tabindex="-1"><img alt="Zanen samfurin bayanan biyan kuɗi na ISO 20022 yana nuna adireshi masu tsari, purpose codes, daidaitawa, gano zamba, hasashen kuɗi, gwajin takunkumi, da samfuran nazari" src="https://cloudcdn.pro/stocks/images/humphrey-muleba-1660004-1200.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026">ISO 20022 Bayan Ƙaura: Mayar da Bayanan Biyan Kuɗi zuwa Kayayyakin Banki a 2026</a></h3><p><time datetime="2026-05-29">2026-05-29</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-19-global-wholesale-payments-economics-2026" class="related-media" aria-label="Biyan Kuɗi na Wholesale na Duniya a 2026: ISO 20022, Sabunta RTGS, da Tattalin Arziki na Haɗin Gwiwa" tabindex="-1"><img alt="Taswirar tsarin biyan kuɗi na wholesale na duniya don 2026 yana nuna ISO 20022, sabunta RTGS, korido na ƙasa da ƙasa, tagogin kuɗi, da gwaje-gwajen daidaita DLT" src="https://cloudcdn.pro/stocks/images/miguel-sousa-ejIF-pJhYkM.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-19-global-wholesale-payments-economics-2026">Biyan Kuɗi na Wholesale na Duniya a 2026: ISO 20022, Sabunta RTGS, da Tattalin Arziki na Haɗin Gwiwa</a></h3><p><time datetime="2026-05-19">2026-05-19</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2025-09-01-quantum-safe-payments-epaa" class="related-media" aria-label="Biyan Kuɗi Masu Karewa daga Quantum: Dalilin Da Ya Sa Dole Masana'antar Ta Yi Aiki Yanzu" tabindex="-1"><img alt="Hukumar da'irar sarrafa kwamfuta ta Quantum a cikin hasken shuɗi" src="https://cloudcdn.pro/stocks/images/digital-nodes.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2025-09-01-quantum-safe-payments-epaa">Biyan Kuɗi Masu Karewa daga Quantum: Dalilin Da Ya Sa Dole Masana'antar Ta Yi Aiki Yanzu</a></h3><p><time datetime="2025-09-01">2025-09-01</time></p></footer></article>
+</div>
+</aside>
+<!-- enrich-end -->

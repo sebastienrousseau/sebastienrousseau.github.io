@@ -1,183 +1,536 @@
 ---
-title: "Stablecoin Yield by Another Name: BlackRock's BRSRV and BSTBL Filings Decoded"
-tags: "BlackRock, BRSRV, BSTBL, BUIDL, GENIUS Act, OCC, stablecoins, tokenised money market fund, Securitize, BNY Mellon, ERC-20, Ethereum, payments, regulation, ISO 20022, ìsirò ìpamọ́ lẹ́yìn quantum, AI, tokenised deposits, ìsanwó kọjá-ààlà"
-subtitle: "Àwọn stablecoin kò lè san owo èrè lábẹ́ GENIUS Act. Ní 8 May 2026, BlackRock fi àwọn ọja méjì sílẹ̀ tí kò jẹ́ stablecoins nípasẹ̀ òfin — tí wọn lè san owo èrè nínú wàlẹ́ẹ̀tì lórí blockchain gbangba."
-description: "Àwọn stablecoin kò lè san owo èrè lábẹ́ GENIUS Act. Ní 8 May 2026, BlackRock fi àwọn ìforúkọsílẹ̀ SEC BRSRV àti BSTBL sílẹ̀ — àwọn ìdọgba owó tokenised tí ń san owo èrè nínú wàlẹ́ẹ̀tì, kì í ṣe stablecoins."
-date: "May 15, 2026"
-language: "yo-NG"
-locale: "yo_NG"
-banner: "https://cloudcdn.pro/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp"
+author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "Àwòrán ètò ìdọgba owó tokenised BlackRock — BRSRV OnChain Shares àti ẹ̀ka ìpín BSTBL ERC-20 pẹ̀lú àwọn ìṣàn ìpamọ́ GENIUS Act"
+banner_height: "571"
+banner_width: "1425"
+banner: "https://cloudcdn.pro/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp"
+cdn: "https://cloudcdn.pro"
+changefreq: "weekly"
+charset: "UTF-8"
+cname: "sebastienrousseau.com"
+copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
+date: "May 15, 2026"
+description: "Àwọn stablecoin kò lè san owo èrè lábẹ́ GENIUS Act. Ní 8 May 2026, BlackRock fi àwọn ìforúkọsílẹ̀ SEC BRSRV àti BSTBL sílẹ̀ — àwọn ìdọgba owó tokenised tí ń san owo èrè nínú wàlẹ́ẹ̀tì, kì í ṣe stablecoins."
+format-detection: "telephone=no"
+hreflang: "yo"
+icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
+id: "https://sebastienrousseau.com/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf"
+image_alt: "Àwòrán Aláwọ̀ Dúdú àti Funfun ti Sebastien Rousseau"
+image_height: "162"
+image_width: "162"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "BlackRock, BRSRV, BSTBL, BUIDL, GENIUS Act, OCC, stablecoin, ìdọgba owó tokenised, OnChain Shares, Securitize"
+language: "yo-NG"
+layout: "report"
+locale: "yo_NG"
+logo_alt: "Àmì fún Sebastien Rousseau"
+logo_height: "44"
+logo_width: "44"
+logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
+menu: ""
+measurementID: "G-169G4ET5HQ"
+name: "Sebastien Rousseau"
+permalink: "https://sebastienrousseau.com/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf"
+rating: "general"
+referrer: "no-referrer"
+revisit-after: "7 days"
+robots: "index, follow"
+schema: "FAQPage, Article"
+short_name: "sebastienrousseau"
+subtitle: "Àwọn stablecoin kò lè san owo èrè lábẹ́ GENIUS Act. Ní 8 May 2026, BlackRock fi àwọn ọja méjì sílẹ̀ tí kò jẹ́ stablecoins nípasẹ̀ òfin — tí wọn lè san owo èrè nínú wàlẹ́ẹ̀tì lórí blockchain gbangba."
+tags: "BlackRock, BRSRV, BSTBL, BUIDL, GENIUS Act, OCC, stablecoins, tokenised money market fund, Securitize, BNY Mellon, ERC-20, Ethereum, payments, regulation, ISO 20022, ìsirò ìpamọ́ lẹ́yìn quantum, AI, tokenised deposits, ìsanwó kọjá-ààlà"
+theme-color: "0, 67, 165"
+title: "Èrè Stablecoin nípasẹ̀ Orúkọ Míràn: Àwọn Ìforúkọsílẹ̀ BRSRV àti BSTBL ti BlackRock tí A Túmọ̀"
+url: "https://sebastienrousseau.com/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf"
+viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
+
+# RSS - The RSS feed front matter (YAML).
+atom_link: "https://sebastienrousseau.com/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf/rss.xml"
+category: "Finance"
+docs: https://validator.w3.org/feed/docs/rss2.html
+generator: "Static Site Generator (SSG) (version 0.0.26)"
+item_description: "Àwọn stablecoin kò lè san owo èrè lábẹ́ GENIUS Act. Ní 8 May 2026, BlackRock fi àwọn ìforúkọsílẹ̀ SEC BRSRV àti BSTBL sílẹ̀ — àwọn ìdọgba owó tokenised tí ń san owo èrè nínú wàlẹ́ẹ̀tì, kì í ṣe stablecoins."
+item_guid: "https://sebastienrousseau.com/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf/rss.xml"
+item_link: "https://sebastienrousseau.com/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf/rss.xml"
+item_pub_date: "Fri, 15 May 2026 06:06:06 +0000"
+item_title: "Èrè Stablecoin nípasẹ̀ Orúkọ Míràn: Àwọn Ìforúkọsílẹ̀ BRSRV àti BSTBL ti BlackRock tí A Túmọ̀"
+last_build_date: "Fri, 15 May 2026 06:06:06 +0000"
+managing_editor: "contact@sebastienrousseau.com (Sebastien Rousseau)"
+pub_date: "Fri, 15 May 2026 06:06:06 +0000"
+ttl: "60"
+type: "article"
+webmaster: "contact@sebastienrousseau.com"
+
+# Apple - The Apple front matter (YAML).
+apple_mobile_web_app_orientations: "portrait"
+apple_touch_icon_sizes: "192x192"
+apple-mobile-web-app-capable: "yes"
+apple-mobile-web-app-status-bar-inset: "black"
+apple-mobile-web-app-status-bar-style: "black-translucent"
+apple-mobile-web-app-title: "BlackRock BRSRV and BSTBL"
+apple-touch-fullscreen: "yes"
+
+# MS Application - The MS Application front matter (YAML).
+
+msapplication-navbutton-color: "0, 83, 191"
+
+# Twitter Card - The Twitter Card front matter (YAML).
+
+twitter_card: "summary_large_image"
+twitter_creator: "@wwdseb"
+twitter_description: "Àwọn stablecoin kò lè san owo èrè lábẹ́ GENIUS Act. Ní 8 May 2026, BlackRock fi àwọn ìforúkọsílẹ̀ SEC BRSRV àti BSTBL sílẹ̀ — àwọn ìdọgba owó tokenised tí ń san owo èrè nínú wàlẹ́ẹ̀tì, kì í ṣe stablecoins."
+twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
+twitter_image_alt: "Àmì ti Sebastien Rousseau"
+twitter_site: "@wwdseb"
+twitter_title: "Èrè Stablecoin nípasẹ̀ Orúkọ Míràn: Àwọn Ìforúkọsílẹ̀ BRSRV àti BSTBL ti BlackRock tí A Túmọ̀"
+twitter_url: "https://sebastienrousseau.com/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf"
+
+# Humans.txt - The Humans.txt front matter (YAML).
+author_website: "https://sebastienrousseau.com"
+author_twitter: "@wwdseb"
+author_location: "London, UK"
+thanks: "Ẹ ṣeun fún kíka rẹ̀!"
+site_last_updated: "2026-05-15"
+site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
+site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
+site_software: "Static Site Generator, Rust"
+
+excerpt: "Àwọn stablecoin kò lè san owo èrè lábẹ́ GENIUS Act. Ní 8 May 2026, BlackRock fi àwọn ìforúkọsílẹ̀ SEC BRSRV àti BSTBL sílẹ̀ — àwọn ìdọgba owó tokenised..."
+last_reviewed: "2026-05-15"
 ---
 
-![BlackRock tokenised money market fund architecture diagram — BRSRV OnChain Shares and BSTBL ERC-20 share class with GENIUS Act reserve flows](https://cloudcdn.pro/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp).class="img-fluid clearfix"
+Àwọn stablecoin kò lè san owo èrè lábẹ́ GENIUS Act. Ní ọjọ́ 8 May 2026, BlackRock fi àwọn ìforúkọsílẹ̀ SEC méjì sílẹ̀ fún àwọn ọjà tí ó yanjú ìdènà yìí nípa ṣíṣe àkóso wọn gẹ́gẹ́ bí money market funds dípò stablecoins — nígbà tí wọ́n ń ṣiṣẹ́, nínú wàlẹ́ẹ̀tì, bí àwọn dọ́là tí ń mú owo èrè wá lórí blockchain gbangba.
 
 ---
 
-> **TL;DR.** Stablecoins cannot pay yield under the GENIUS Act. On 8 May 2026, BlackRock filed two SEC registrations for products that solve this constraint by being regulated as money market funds rather than stablecoins — while behaving, in the wallet, like yield-bearing dollars. A close reading of BRSRV, BSTBL, and the OCC rulemaking they respond to.
+> **Àwọn Kókó Písì**
 >
-> **Awọn Pataki Ojulowo**
->
-> - DRAFT translation: this article is a Yorùbá stub generated from the English source. Body text is intentionally left in English until a native reviewer signs off.
-> - Source title: *Stablecoin Yield by Another Name: BlackRock's BRSRV and BSTBL Filings Decoded*.
-> - Source subtitle: *Stablecoins cannot pay yield under the GENIUS Act. On 8 May 2026, BlackRock filed two products that are not, legally, stablecoins — and that can pay yield, in a wallet, on a public blockchain.*.
-> - Editorial note: replace this block with hand-translated copy before flipping `active=True` for yo in `scripts/_lang_registry.py`.
+> - **GENIUS Act**, tí wọ́n tẹwọ́bọ̀ ní July 2025 tí ó sì wà ní àwọn oṣù ìkẹyìn ti ṣíṣe òfin rẹ̀, fi dandan de àwọn olùtẹ̀jáde payment stablecoin láti má ṣe san èrè tàbí owo èrè fún àwọn olùdìmú nítorí dídìmú, lílò, tàbí títọ́jú stablecoin lásán. Àbá ti OCC ní March 2026 sọ èyí di mímú púpọ̀ sí i pẹ̀lú àròsọ tí a lè já níkòò tí ó sọ pé àwọn ètò èrè ti alájọṣe àti ẹgbẹ́ kẹta tún tàpá sí ìfòfindè náà.
+> - Ìṣòro ètò ọrọ̀ ajé tí èyí dá sílẹ̀ ṣe kedere. Pẹ̀lú nǹkan bí **$281 billion nínú payment stablecoins outstanding** àti àwọn èrè Treasury ní àwọn ibi gíga ti ọ̀pọ̀lọpọ̀ ọdún, àlàfo tí ó wà láàárín ohun tí olùdìmú wàlẹ́ẹ̀tì ń gbà (odo) àti ohun tí àwọn ìpamọ́ tí ó wà lábẹ́ rẹ̀ ń rí gbà (~4–5%) ti wà ní báyìí ní ọ̀pọ̀lọpọ̀ ọkẹ́ àìmọye dọ́là lọ́dọọdún.
+> - Ní **8 May 2026, BlackRock fi àwọn ìgbólóhùn ìforúkọsílẹ̀ SEC méjì sílẹ̀** tí wọ́n rí àlàfo yìí láì tàpá sí ìfòfindè èrè náà — nítorí kò sí ọjà kankan nínú méjèèjì tí ó jẹ́ stablecoin lábẹ́ òfin.
+> - **BRSRV** (BlackRock Daily Reinvestment Stablecoin Reserve Vehicle) jẹ́ money market fund tuntun kan tí ó ní owó lọ́wọ́, sub-93-day Treasuries, àti overnight Treasury repos. Ó ń gbé "OnChain Shares" jáde nípasẹ̀ framework oní-chain pupọ tí a fún ní àṣẹ pẹ̀lú Securitize Transfer Agent LLC gẹ́gẹ́ bí àkọsílẹ̀ òfin ti ohun-ìní. Ìdọgba owó tí ó kéré jù lọ: $3 million. A ṣe ẹ̀rọ rẹ̀ láti tóótù gẹ́gẹ́ bí ohun-ìní ìpamọ́ tí ó yẹ lábẹ́ GENIUS Act.
+> - **BSTBL** ni ìforúkọsílẹ̀ tí ó ní ìjẹ́pàtàkì jù lọ nípa architecture. Ó de ERC-20 share class mọ́ **Select Treasury Based Liquidity Fund ti BlackRock ti $6–7 billion** tí ó wà tẹ́lẹ̀, pẹ̀lú BNY Mellon Investment Servicing gẹ́gẹ́ bí transfer agent, tí ń ṣe àkọsílẹ̀ àwọn onípin lórí Ethereum. Ìgbà àkọ́kọ́ nìyí tí a fi public-Ethereum share class kún ọjà money market ti BlackRock tí ó wà tẹ́lẹ̀.
+> - Àwòrán yìí ti han kedere báyìí kọjá ilé-iṣẹ́ náà. **Tokenised money market funds ni architecture tí GENIUS Act, nípa fífòfindè èrè lórí stablecoins, sọ di dandan.** Ọjà tokenised Treasury ti $14 billion — tí BUIDL ti BlackRock ń ṣíwájú rẹ̀ pẹ̀lú ìpín nǹkan bí 40% — ni ìwòye àkọ́kọ́ lórí ibi tí ìgbì tókàn ti "wallet dollars" yóò wà.
 
 ---
 
-Stablecoins cannot pay yield under the GENIUS Act. On 8 May 2026, BlackRock filed two SEC registrations for products that solve this constraint by being regulated as money market funds rather than stablecoins — while behaving, in the wallet, like yield-bearing dollars on a public blockchain.
+## Ìforúkọsílẹ̀ tí Ó Tún Jẹ́ Ipò Ìlànà
 
----
+Àwọn ìforúkọsílẹ̀ BlackRock méjèèjì ti 8 May 2026 kò dé nínú òfo. Wọ́n dé ní ọ̀sẹ̀ kan lẹ́yìn tí BlackRock fi [lẹ́tà àròyé olójú-ewé mẹ́tàdínlógún ⧉](https://www.theblock.co/post/399812/blackrock-urges-occ-to-drop-tokenized-reserve-cap-idea-expand-eligible-assets-in-genius-act-comment-letter "BlackRock rọ OCC láti jáwọ́ nínú èrò tokenized reserve cap, kí wọn sì mú àwọn ohun-ìní tí ó tóótù fẹ̀ sì i nínú lẹ́tà àròyé ti GENIUS Act") ránṣẹ́ sí Office of the Comptroller of the Currency ní ọjọ́ ìkẹyìn ti fèrèsé àríyànjiyàn fún àwọn òfin ìmúṣẹ GENIUS Act rẹ̀ — àti ọjọ́ mẹ́rin lẹ́yìn tí [BlackRock tẹ àkópọ̀ gbangba kan jáde lórí X ⧉](https://beincrypto.com/blackrock-occ-stablecoin-genius-act-comment/ "BlackRock Tì Àwọn Òfin Stablecoin ti OCC Lẹ́yìn Lábẹ́ GENIUS Act") ti àwọn ìṣàpèjúwe kókó méje rẹ̀ sí ilé-iṣẹ́ náà.
 
-> **Key Takeaways**
->
-> - The **GENIUS Act**, signed in July 2025 and now in the final months of its rulemaking, prohibits payment stablecoin issuers from paying interest or yield to holders simply for holding, using, or keeping a stablecoin. The OCC's March 2026 proposal hardened this further with a rebuttable presumption that affiliate and third-party yield arrangements also violate the ban.
-> - The economic problem this creates is straightforward. With approximately **$281 billion in payment stablecoins outstanding** and Treasury yields at multi-year highs, the gap between what a wallet holder receives (zero) and what the underlying reserves earn (~4–5%) is now in the tens of billions of dollars annually.
-> - On **8 May 2026, BlackRock filed two SEC registration statements** that capture this gap without violating the yield prohibition — because neither product is, legally, a stablecoin.
-> - **BRSRV** (BlackRock Daily Reinvestment Stablecoin Reserve Vehicle) is a new money market fund holding cash, sub-93-day Treasuries, and overnight Treasury repos. It issues "OnChain Shares" through a permissioned multi-chain framework with Securitize Transfer Agent LLC as the legal record of ownership. Minimum investment: $3 million. It is engineered to qualify as an eligible reserve asset under the GENIUS Act.
-> - **BSTBL** is the more architecturally significant filing. It bolts an ERC-20 share class onto BlackRock's existing **$6–7 billion Select Treasury Based Liquidity Fund**, with BNY Mellon Investment Servicing as transfer agent, recording shareholders on Ethereum. It is the first time a public-Ethereum share class has been added to an existing BlackRock money-market product.
-> - The pattern is now visible across the industry. **Tokenised money market funds are the architecture that the GENIUS Act, by prohibiting yield on stablecoins, made inevitable.** The $14 billion tokenised Treasury market — led by BlackRock's BUIDL at roughly 40% share — is the early read on where the next wave of "wallet dollars" sits.
+Àwọn ìṣàpèjúwe náà àti àwọn ìforúkọsílẹ̀ tuntun jẹ́ ohun tí ó yẹ kí a kà gẹ́gẹ́ bí ìwé kan ní apá méjì. Lẹ́tà àròyé náà jiyàn pé ó yẹ kí OCC jáwọ́ nínú àbá 20% cap rẹ̀ lórí tokenised reserve assets, láti fìdí rẹ̀ múlẹ̀ pé àwọn ETF tí ó tóótù ń gba ìtọ́jú kanna bíi government money market funds, kí wọ́n sì gba àwọn GMMF tí ń yanjú ní ọjọ́ kanna láti kà mọ́ weekly liquidity floor. Àwọn ìforúkọsílẹ̀ náà, lọ́jọ́ mẹ́rin lẹ́yìn náà, forúkọ àwọn ohun-èlò gangan tí ó ń jàǹfààní láti ara àwọn ipò wọnyí sílẹ̀: fund tuntun kan (BRSRV) tí a ṣe ẹ̀rọ rẹ̀ kedere láti tóótù gẹ́gẹ́ bí reserve tí ó yẹ lábẹ́ GENIUS Act, àti tokenised share class kan (BSTBL) lórí Treasury liquidity fund ti firm náà ti $6–7 billion tí ó wà tẹ́lẹ̀. Bálá tàbí bálà ni OCC yóò gba àwọn ipò ti BlackRock nínú òfin ìkẹyìn, firm náà ti gbé àwọn ọjà rẹ̀ sínú àríyànjiyàn ìlànà pẹ̀lú irú ìtọ́ka pàtó tí ó ṣòro fún olùṣàkóso láti gbójúfo.
 
----
+Èyí ni àyíká ilana fún ohun tí ó jọ, ní kíkà àkọ́kọ́, bíi kíkọ́ òfin lọ́nà ọlọ́gbọ́n. A tún lè kà á sí pípẹtẹ́ẹ́rẹ́ gẹ́gẹ́ bí olùṣàkóso ohun-ìní tí ó tóbi jù lọ lágbàáyé tí ń kéde ibi tí laini tí ó wà láàárín "stablecoin" àti "tokenised security" yóò wà nínú òfin US — àti fífòrúkọsílẹ̀ àwọn ọjà tí yóò gbé ní kọ̀ọ̀kan apá ti laini náà.
 
-## A Filing That Is Also a Policy Position
+## Ìdí tí Àwọn Stablecoin Kò Fi Lè San Èrè
 
-The two BlackRock filings of 8 May 2026 did not arrive in a vacuum. They arrived one week after BlackRock submitted a [seventeen-page comment letter ⧉](https://www.theblock.co/post/399812/blackrock-urges-occ-to-drop-tokenized-reserve-cap-idea-expand-eligible-assets-in-genius-act-comment-letter "BlackRock urges OCC to drop tokenized reserve cap idea, expand eligible assets in GENIUS Act comment letter") to the Office of the Comptroller of the Currency on the final day of the comment window for its GENIUS Act implementing rules — and four days after [BlackRock published a public summary on X ⧉](https://beincrypto.com/blackrock-occ-stablecoin-genius-act-comment/ "BlackRock Backs OCC Stablecoin Rules Under GENIUS Act") of its seven core recommendations to the agency.
+GENIUS Act, tí wọ́n tẹwọ́bọ̀ ní July 2025 tí ó sì jẹ́ ìpìlẹ̀ báyìí fún àwọn òfin tí ń kára wọn ti OCC, FDIC, àti Federal Reserve, ya ìyàtọ̀ tí ó ṣe kedere lọ́nà àrà ọ̀tọ̀. "Payment stablecoin" lábẹ́ Act náà jẹ́ digital asset tí a ṣe láti tọ́jú iye tí ó dúró sán-ún ní ìbáṣepọ̀ pẹ̀lú fiat currency, tí ó ní àwọn ìpamọ́ to lélẹ̀ tí ó ní dídára gíga, tí a sì lè rà padà ní par. "Permitted payment stablecoin issuer" (PPSI) jẹ́ àjọ tí ó gba àṣẹ federally tàbí ti state-chartered láti tẹ irú token bẹ́ẹ̀ jáde. Àti pé [Abala 4(a)(11) ti Act náà ⧉](https://www.lw.com/en/insights/occ-issues-proposal-to-implement-the-genius-act "OCC Mú Àbá Ìmúṣẹ GENIUS Act Jáde") fi dandan de PPSI kankan láti má ṣe san èrè tàbí owo èrè fún àwọn olùdìmú nítorí dídìmú, lílò, tàbí títọ́jú stablecoin náà lásán.
 
-The recommendations and the new filings are best read as one document in two parts. The comment letter argued that the OCC should drop its proposed 20% cap on tokenised reserve assets, confirm that qualifying ETFs receive the same treatment as government money market funds, and allow same-day-settling GMMFs to count toward the weekly liquidity floor. The filings, four days later, registered the exact instruments that benefit from those positions: a new fund (BRSRV) explicitly engineered to qualify as an eligible reserve under the GENIUS Act, and a tokenised share class (BSTBL) on top of the firm's existing $6–7 billion Treasury liquidity fund. Whether or not the OCC adopts BlackRock's positions in the final rule, the firm has now placed its products in the policy debate with the kind of specificity that is hard for a regulator to ignore.
+[Àbá òfin ⧉](https://www.nixonpeabody.com/insights/alerts/2026/04/02/proposed-occ-regulations-for-payment-stablecoins-under-the-genius-act "Àwọn òfin OCC tí a dábàá fún payment stablecoins lábẹ́ GENIUS Act") ti OCC ní March 2026 fún ìfòfindè yìí ní agbára nípa ti iṣẹ́-ṣíṣe. Ó fi ìdánilójú tí a lè já níkòò lélẹ̀ pé àwọn ètò tí ń darí èrè nípasẹ̀ alájọṣe tàbí ẹgbẹ́ kẹta tí ó ní ìbáṣepọ̀ — fún àpẹẹrẹ, crypto exchange kan tí ń san "loyalty rewards" fún àwọn olùdìmú ti stablecoin kan pato — tún tàpá sí ìfòfindè náà, pẹ̀lú ẹrù lórí olùtẹ̀jáde láti fi hàn bẹ́ẹ̀ kọ́. Àwọn ètò white-label, nínú èyí tí PPSI ti ń tẹ àwọn digital asset jáde lábẹ́ orúkọ alájọṣepọ̀ kan tí ó sì ń san èrè lẹ́yìn náà, ni a tọ́ka sí kedere bí èyí tí a lè pè ní ẹlẹ́tàn. Office of the Comptroller [tọ́ka sí i ní ìbẹ̀rẹ̀ ọdún 2026 ⧉](https://www.compliancecorylated.com/news/us-occ-closes-genius-act-loophole-allowing-yield-bearing-stablecoins/ "US OCC Pa Àyè Àbákò ti GENIUS Act Tí Ń Gba Àwọn Stablecoin Tí Ń San Èrè Láyè") pé àyè àbákò ti awoṣe olùtẹ̀jáde-ń-san-nípasẹ̀-alájọṣe kò ní yè nínú òfin ìkẹyìn ní eyikeyìí ọ̀nà tí ó gba ààyè.
 
-This is the strategic backdrop for what, at first read, looks like a clever piece of legal engineering. It is more accurately read as the largest asset manager in the world declaring where the line between a "stablecoin" and a "tokenised security" should sit in US law — and registering the products that will live on either side of that line.
+Àwọn èrò lórí ìmọ̀ ètò ọrọ̀ ajé fún ìfòfindè yìí ni a ń jiyàn lórí rẹ̀. Àwọn àkọsílẹ̀ láti ẹnu ilé-iṣẹ́ banki sí OCC jiyàn fún ìfòfindè mímú náà lórí pé àwọn stablecoin tí ń san èrè yóò gba àwọn transactional bank deposits lọ́wọ́ — ọjà tí [advisory council ti US Treasury ṣe àṣàyàn rẹ̀ sí nǹkan bí $6.6 trillion ⧉](https://www.congress.gov/crs-product/IF13174 "Àríyànjiyàn Èrè Stablecoin — Congressional Research Service"), nínú èyí tí apá tí ó níye wà ní "ewu" láti ara ìfagbágbà pẹ̀lú àwọn tí ń mú èrè wá gẹ́gẹ́ bí dọ́là-substitutes. Àwọn àkọsílẹ̀ láti ilé-iṣẹ́ crypto, tí Coinbase ń ṣíwájú rẹ̀, jiyàn ní idakeji: pé àwọn ìsúnniṣe jẹ́ kókó fún ìfagbágbà nínú ìsanwó, àti pé ìfòfindè gbòòrò yóò mú àwọn welfare costs wá láì ní ipa pàtàkì lórí yíyáwó banki.
 
-## Why Stablecoins Cannot Pay Yield
+Èyíkéyìí apá tí ó ní àríyànjiyàn ìlànà tí ó dára jù, èsì òfin fún ìsinsìnyí ti fìdí múlẹ̀: stablecoin nínú ìtumọ̀ àkóso ti GENIUS Act kò lè san èrè fún olùdìmú rẹ̀. Ohun tí kò lè ṣe, sibẹsibẹ, ni láti ṣalaye ohun tí olùdìmú lè ṣe pẹ̀lú owó wọn lẹ́yìn náà. Àti pé níbí ni architecture ti yapa síra wọn.
 
-The GENIUS Act, signed in July 2025 and now the basis of overlapping OCC, FDIC, and Federal Reserve rulemakings, draws an unusually clean conceptual distinction. A "payment stablecoin" under the Act is a digital asset designed to maintain a stable value relative to a fiat currency, backed by high-quality reserves, redeemable at par. A "permitted payment stablecoin issuer" (PPSI) is a federally or state-chartered entity authorised to issue such a token. And the [Act's section 4(a)(11) ⧉](https://www.lw.com/en/insights/occ-issues-proposal-to-implement-the-genius-act "OCC Issues Proposal to Implement the GENIUS Act") prohibits any PPSI from paying interest or yield to holders solely for holding, using, or keeping the stablecoin.
+## Architecture ti BRSRV
 
-The OCC's March 2026 [proposed rule ⧉](https://www.nixonpeabody.com/insights/alerts/2026/04/02/proposed-occ-regulations-for-payment-stablecoins-under-the-genius-act "Proposed OCC regulations for payment stablecoins under the GENIUS Act") extended this prohibition operationally. It established a rebuttable presumption that arrangements routing yield through an affiliate or related third party — for example, a crypto exchange paying "loyalty rewards" to holders of a particular stablecoin — also violate the ban, with the burden on the issuer to demonstrate otherwise. White-label arrangements, in which a PPSI issues digital assets branded by a partner that then pays yield, are explicitly treated as presumptively evasive. The Office of the Comptroller [signalled in early 2026 ⧉](https://www.compliancecorylated.com/news/us-occ-closes-genius-act-loophole-allowing-yield-bearing-stablecoins/ "US OCC closes GENIUS Act loophole allowing yield-bearing stablecoins") that the "loophole" framing of the issuer-pays-via-affiliate model would not survive final rulemaking in any permissive form.
+BlackRock Daily Reinvestment Stablecoin Reserve Vehicle, nínú iṣẹ́ rẹ̀ nínú, jẹ́ money market fund tí kò ní ohun àrà kankan lórí rẹ̀. Ó ní owó lọ́wọ́, àwọn US Treasury securities tí wọ́n ń gbó kọjá ọjọ́ 93 tàbí díẹ̀ sí i, àti overnight repurchase agreements tí Treasuries tì lẹ́yìn. Ó wà ní ìbáṣepọ̀ pẹ̀lú Rule 2a-7 lábẹ́ Investment Company Act ti 1940 — architecture àkóso kanna tí ó ti ń ṣàkóso àwọn institutional money market funds fún ọdún mẹ́wàá mẹ́rin. Èrè rẹ̀, gẹ́gẹ́ bí gbogbo MMF ti ijọba miiran, wá láti ara short-Treasury rate tí ó wà lọ́wọ́.
 
-The economic rationale for this prohibition is contested. Banking-industry submissions to the OCC argued for the strict prohibition on the basis that yield-bearing stablecoins would drain transactional bank deposits — a market estimated by the [US Treasury advisory council at approximately $6.6 trillion ⧉](https://www.congress.gov/crs-product/IF13174 "The Stablecoin Yield Debate — Congressional Research Service"), of which a meaningful share is "at risk" from competition with yield-bearing dollar-substitutes. Crypto-industry submissions, led by Coinbase, argued the opposite: that incentives are central to competition in payments, and that a broad ban would impose net welfare costs without materially affecting bank lending.
+Ohun tí ó jẹ́ tuntun ni share class náà. Àwọn ìpín BRSRV ni a gbé jáde gẹ́gẹ́ bí ["OnChain Shares" nípasẹ̀ framework tí a fún ní àṣẹ ⧉](https://unchainedcrypto.com/blackrock-files-for-two-new-tokenized-money-market-funds-targeting-stablecoin-capital/ "BlackRock Fi Ìforúkọsílẹ̀ fún Àwọn Tokenized Money-Market Funds Tuntun Méjì tí Wọ́n Gbájúmọ́ Stablecoin Capital") tí ó sopọ̀ mọ mọ́ blockchain gbangba lọ́pọ̀lọpọ̀, pẹ̀lú [Securitize Transfer Agent LLC tí ń ṣiṣẹ́ gẹ́gẹ́ bí transfer agent gbangba ⧉](https://www.crowdfundinsider.com/2026/05/278346-blackrock-focuses-on-tokenization-initiatives-with-blockchain-enabled-funds/ "BlackRock Gbájúmọ́ Àwọn Ètò Tokenization pẹ̀lú Àwọn Funds tí Blockchain Tì Lẹ́yìn"). Àwọn ètò ìdánimọ̀ off-chain — irú kíkọ́ KYC kanna tí ó ti tì fún [BUIDL fund ⧉](https://stablecoininsider.org/top-10-tokenized-treasury-funds-in-2026-buidl-benji-and-the-highest-yielding-on-chain-options/ "Àwọn Fund Treasury Tokenized Mẹ́wàá Kókó ní 2026") ti BlackRock ti $2.9 billion tí ó wà tẹ́lẹ̀ — ń sopọ̀ wallet addresses mọ́ àwọn olùdókòwò tí a ti fìdí rẹ̀ múlẹ̀. Ìdọgba owó tí ó kéré jù lọ: $3 million. Ìforúkọsílẹ̀ náà kò tíì dárúkọ irú blockchains tí fund náà yóò tì lẹ́yìn nígbà tí yóò bẹ̀rẹ̀.
 
-Whichever side has the better policy argument, the legal result for now is settled: a stablecoin in the regulatory sense of the GENIUS Act cannot pay its holder yield. What it cannot do, however, is define what a holder can do with their money next. And here the architecture diverges.
+Ọjà yìí jẹ́ ohun tí a ṣe ẹ̀rọ rẹ̀ kedere, [gẹ́gẹ́ bí ọ̀pọ̀lọpọ̀ àwọn orísun ti tọ́ka sí ⧉](https://cryptobriefing.com/blackrock-tokenized-money-market-funds-stablecoins/ "BlackRock Tẹnu mọ́ Tokenization pẹ̀lú Àwọn Stablecoin Reserve Funds Tuntun"), láti tóótù gẹ́gẹ́ bí eligible reserve asset lábẹ́ GENIUS Act. Olùrà tí a gbájúmọ́ kì í ṣe olùlò wàlẹ́ẹ̀tì rẹ́táìlì. Ó jẹ́ stablecoin issuer (tàbí treasury operation tí ó ní stablecoins gẹ́gẹ́ bí apá kan ti working-capital strategy rẹ̀) tí ó nílò ohun-èlò tí ń mú Treasury-yield wá tí ó lè dìmú programmatically lórí rails blockchain kanna bíi stablecoins gangan. Ìpolówó náà, ní sísọ ọ́ di gírí sí gbólóhùn kan, ni: pa àwọn ìpamọ́ rẹ mọ́ lórí chain, gba èrè Treasury, kí o sì tẹ́ olùṣàkóso lọ́rùn.
 
-## The Architecture of BRSRV
+Fún BlackRock, ipò ilana náà ṣe kedere ju bí ó ti rí lọ. BUIDL fund rẹ̀ tí ó wà tẹ́lẹ̀ ti ń tẹ́lẹ̀ tì ju 90% ti àwọn ìpamọ́ ti méjì nínú àwọn ọjà tí ó ní ìbáṣepọ̀ mọ mọ́ stablecoin "tí ń mú èrè wá" — USDtb ti Ethena àti JupUSD ti Jupiter tí ó dórí Solana. BRSRV ni àfikún pàtó ti ipò yẹn tí ó mọ̀ nípa GENIUS: ọjà wholesale Treasury-yield tí a kọ́ fún reserve-management workflow ti gbogbo PPSI tí yóò wà lábẹ́ ètò tuntun náà.
 
-The BlackRock Daily Reinvestment Stablecoin Reserve Vehicle is, in its plumbing, an unremarkable money market fund. It holds cash, US Treasury securities with maturities of 93 days or less, and overnight repurchase agreements backed by Treasuries. It is aligned with Rule 2a-7 under the Investment Company Act of 1940 — the same regulatory architecture that has governed institutional money market funds for four decades. Its yield, like every other government MMF, derives from the prevailing short-Treasury rate.
+## Architecture ti BSTBL
 
-What is novel is the share class. BRSRV shares are issued as ["OnChain Shares" through a permissioned framework ⧉](https://unchainedcrypto.com/blackrock-files-for-two-new-tokenized-money-market-funds-targeting-stablecoin-capital/ "BlackRock Files for Two New Tokenized Money-Market Funds Targeting Stablecoin Capital") that connects to multiple public blockchains, with [Securitize Transfer Agent LLC serving as the official transfer agent ⧉](https://www.crowdfundinsider.com/2026/05/278346-blackrock-focuses-on-tokenization-initiatives-with-blockchain-enabled-funds/ "BlackRock Focuses On Tokenization Initiatives With Blockchain Enabled Funds"). Off-chain identity systems — the same kind of KYC infrastructure that backs BlackRock's existing $2.9 billion [BUIDL fund ⧉](https://stablecoininsider.org/top-10-tokenized-treasury-funds-in-2026-buidl-benji-and-the-highest-yielding-on-chain-options/ "Top 10 Tokenized Treasury Funds in 2026") — link wallet addresses to verified investors. Minimum investment: $3 million. The filing does not yet name which blockchains the fund will support at launch.
+Ìforúkọsílẹ̀ kejì jẹ́ èyí tí ó fani mọ́ra nípa ti iṣẹ́-ṣíṣe tí ó sì tún ṣe pàtó nípa ti architecture. BSTBL — on-chain share class fún Select Treasury Based Liquidity Fund ti BlackRock tí ó wà tẹ́lẹ̀ — kì í ṣe fund tuntun. Ó jẹ́ share class tuntun tí a gbé lé ọjà money market kan tí ó ti ń ṣàkóso nǹkan bí $6–7 billion nínú ohun-ìní, tí wọ́n [tún tò ní October 2025 sí ètò tí ó wà ní ìbáṣepọ̀ mọ mọ́ GENIUS ⧉](https://www.theblock.co/post/399812/blackrock-urges-occ-to-drop-tokenized-reserve-cap-idea-expand-eligible-assets-in-genius-act-comment-letter "BlackRock rọ OCC láti jáwọ́ nínú èrò tokenized reserve cap") pẹ̀lú 5 p.m. ET trading deadline àti Treasury-heavy mandate, tí wọ́n sì ń gbòkúfà rẹ̀ báyìí lórí Ethereum gẹ́gẹ́ bí ERC-20 token.
 
-The product is explicitly engineered, [as multiple sources have noted ⧉](https://cryptobriefing.com/blackrock-tokenized-money-market-funds-stablecoins/ "BlackRock doubles down on tokenization with new stablecoin reserve funds"), to qualify as an eligible reserve asset under the GENIUS Act. The target buyer is not a retail wallet user. It is a stablecoin issuer (or a treasury operation that holds stablecoins as part of a working-capital strategy) that needs a Treasury-yielding instrument it can hold programmatically on the same blockchain rails as the stablecoins themselves. The pitch, simplified to a single sentence, is: keep your reserves on chain, earn the Treasury yield, satisfy the regulator.
+Transfer agent fún share class yìí ni [BNY Mellon Investment Servicing ⧉](https://www.mexc.com/news/1080472 "BlackRock fi ìforúkọsílẹ̀ fún àwọn tokenized funds tuntun méjì sílẹ̀ pẹ̀lú SEC ti U.S. lórí Ethereum"), tí yóò pa àkọsílẹ̀ onípin gbangba mọ́ lórí Ethereum nípa lílo ERC-20 standard. KYC infrastructure ti off-chain ń sopọ̀ wàlẹ́ẹ̀tì mọ́ àkọsílẹ̀ ìdánimọ̀ olùdókòwò, gẹ́gẹ́ bí ó ti ń ṣe fún BUIDL àti fún gbogbo fund tokenised miiran tí ó bá òfin mu nínú ọjà lónìí. Ìyàtọ̀ pàtàkì láti ara BRSRV ni chain náà (Ethereum, gbangba, pẹ̀lú ERC-20 token gẹ́gẹ́ bí aṣojú ìpín) àti transfer agent (BNY dípò Securitize) — àti pé otitọ ni pé ìgbà àkọ́kọ́ nìyí tí a fi public-Ethereum share class kọ mọ́ MMF ti BlackRock tí ó wà tẹ́lẹ̀.
 
-For BlackRock, the strategic position is sharper than it appears. Its existing BUIDL fund already backs more than 90% of the reserves of two of the largest "yield-bearing" stablecoin-adjacent products — Ethena's USDtb and Solana-based Jupiter's JupUSD. BRSRV is the dedicated, GENIUS-aware extension of that role: the wholesale Treasury-yield product purpose-built for the reserve-management workflow of every PPSI that will exist under the new regime.
+Kókó ìkẹyìn yìí jẹ́ ohun tí ó yẹ kí á gbéyẹ̀wò dáradára. Àwọn ọjà tokenised ti BlackRock ti tẹ́lẹ̀ — BUIDL gẹ́gẹ́ bí olórí wọn — ni a gbé kalẹ̀ bí àwọn fund tuntun pẹ̀lú architecture tí ó jẹ́ on-chain native. BSTBL gba ọ̀nà miiran tí ó tún ní ipa púpọ̀ sí i: sísọ ọjà money market tí ó wà tẹ́lẹ̀, tí ó tóbi, tí ó sì wọ́pọ̀ di tokenised nípa kíkún share class tuntun kan mọ́ ọn, dípò kíkọ́ ètò tí ó wà ní ẹ̀gbẹ́ rẹ̀. Ìtumọ̀ èyí ni pé eyikeyìí MMF ti BlackRock tí ó wà tẹ́lẹ̀ lè tẹ̀lé irú àwòrán kanna nínú ìlànà. Gẹ́gẹ́ bẹ́ẹ̀ ni eyikeyìí MMF ti alájọṣe miiran — Vanguard, Fidelity, JPMorgan, State Street. Ìdènà architecture fún sísọ gbogbo ilé-iṣẹ́ conventional money market fund di tokenised ti kéré púpọ̀ sí i lẹ́yìn BSTBL ju ti tẹ́lẹ̀ lọ.
 
-## The Architecture of BSTBL
+Fún àyíká ti ilé-iṣẹ́ náà: àwọn tokenised US Treasuries ti dàgbà láti nǹkan bí $2 billion sí [$14 billion ní May 2026 ⧉](https://www.mexc.com/news/1080472 "BlackRock fi ìforúkọsílẹ̀ fún àwọn tokenized funds tuntun méjì sílẹ̀ pẹ̀lú SEC ti U.S. lórí Ethereum"), pẹ̀lú BUIDL ti BlackRock ní nǹkan bí 40% ìpín ọjà, BENJI/FOBXX ti Franklin Templeton ní $850 million, àti àwọn ọjà OUSG àti USDY ti Ondo Finance ní ipò kejì. $50–100 billion tókàn ti fẹ́rẹ̀ bẹ̀rẹ̀ sí ní yí nípasẹ̀ àwọn ìforúkọsílẹ̀ bíi BSTBL.
 
-The second filing is operationally more interesting and architecturally more important. BSTBL — the on-chain share class for the existing BlackRock Select Treasury Based Liquidity Fund — is not a new fund. It is a new share class layered onto a money market product that already manages approximately $6–7 billion in assets, was [retooled in October 2025 into a GENIUS-compliant configuration ⧉](https://www.theblock.co/post/399812/blackrock-urges-occ-to-drop-tokenized-reserve-cap-idea-expand-eligible-assets-in-genius-act-comment-letter "BlackRock urges OCC to drop tokenized reserve cap idea") with a 5 p.m. ET trading deadline and a Treasury-heavy mandate, and is now being extended onto Ethereum as an ERC-20 token.
+## Payment Stablecoin vs Tokenised Money Market Fund: Ìyàtọ̀ tí Ó Kàn Pàtàkì
 
-The transfer agent for this share class is [BNY Mellon Investment Servicing ⧉](https://www.mexc.com/news/1080472 "BlackRock files for two new tokenized funds with the U.S. SEC on Ethereum"), which will maintain the official shareholder records on Ethereum using the ERC-20 standard. Off-chain KYC infrastructure links wallets to investor identity records, as it does for BUIDL and for every other compliant tokenised fund in the market today. The substantive distinction from BRSRV is the chain (Ethereum, public, with the ERC-20 token as the share representation) and the transfer agent (BNY rather than Securitize) — and the fact that this is the first time a public-Ethereum share class has been bolted onto an existing BlackRock money-market fund.
+Fún olùkà tí kì í ṣe ọ̀jọ̀gbọ́n, ìyàtọ̀ láàárín "stablecoin" àti "tokenised money market fund share" lè jọ bí kókó òfin àkóso lásán. Kò rí bẹ́ẹ̀. Àwọn ohun-èlò méjèèjì yìí wà ní àwọn ipò ọ̀tọ̀ọ̀tọ̀ nínú òfin securities ti US, tí àwọn àbájáde rẹ̀ sì ń ṣàn jáde lára gbogbo àpẹẹrẹ ti ọjà náà.
 
-That last detail is the one worth dwelling on. BlackRock's prior tokenised products — BUIDL most prominently — were structured as new funds with on-chain native architecture. BSTBL takes a different and arguably more consequential approach: tokenise an existing, large, conventional money market product by adding a new share class, rather than building a parallel structure. The implication is that any existing BlackRock MMF could, in principle, follow the same pattern. So could any existing competitor MMF — Vanguard's, Fidelity's, JPMorgan's, State Street's. The architectural barrier to tokenising the conventional money market fund industry is, after BSTBL, lower than it has ever been.
-
-For an industry context: tokenised US Treasuries have grown from approximately $2 billion to [$14 billion as of May 2026 ⧉](https://www.mexc.com/news/1080472 "BlackRock files for two new tokenized funds with the U.S. SEC on Ethereum"), with BlackRock's BUIDL at roughly 40% market share, Franklin Templeton's BENJI/FOBXX at $850 million, and Ondo Finance's combined OUSG and USDY products in the second position. The next $50–100 billion is plausibly already in motion through filings like BSTBL.
-
-## Payment Stablecoin vs Tokenised Money Market Fund: The Distinction That Matters
-
-For a non-specialist reader, the distinction between a "stablecoin" and a "tokenised money market fund share" can look like a regulatory technicality. It is not. The two instruments occupy genuinely different positions in US securities law and the consequences flow through the entire product design.
-
-| Dimension | Payment Stablecoin (under GENIUS Act) | Tokenised MMF Share (BRSRV / BSTBL pattern) |
+| Abala | Payment Stablecoin (lábẹ́ GENIUS Act) | Tokenised MMF Share (àwòrán BRSRV / BSTBL) |
 |---|---|---|
-| Legal status | Payment instrument | Security (fund share) |
-| Governing regime | GENIUS Act; OCC/FDIC/Fed rulemakings | Investment Company Act 1940; Rule 2a-7 |
-| Issuer | Permitted Payment Stablecoin Issuer (PPSI) | SEC-registered fund (and transfer agent) |
-| Reserve requirements | Cash, short Treasuries, repos — strict | Cash, short Treasuries, repos — Rule 2a-7 |
-| Can pay yield to holder | **No** (Section 4(a)(11)) | **Yes** (the yield is the return on the share) |
-| Redemption | At par, on demand | At NAV, typically T+0 or T+1 |
-| Record of ownership | Issuer wallet / on-chain | Transfer agent (legal); blockchain (operational) |
-| Minimum investment | None (retail typical) | Substantial ($3M for BRSRV; institutional for BSTBL) |
-| Composability with DeFi | High | High (BUIDL is precedent) |
-| User experience in a wallet | Token that holds $1 | Token whose value accrues toward yield |
-| Bank-deposit substitution risk | The central regulatory concern | Materially lower (security, not deposit-like) |
+| Ipò òfin | Ohun-èlò ìsanwó (Payment instrument) | Security (ìpín fund) |
+| Ètò àkóso | GENIUS Act; àwọn òfin OCC/FDIC/Fed | Investment Company Act 1940; Rule 2a-7 |
+| Olùtẹ̀jáde | Permitted Payment Stablecoin Issuer (PPSI) | Fund tí a forúkọsílẹ̀ sí SEC (àti transfer agent) |
+| Àwọn ibeere ìpamọ́ | Cash, short Treasuries, repos — mímú | Cash, short Treasuries, repos — Rule 2a-7 |
+| Lè san èrè fún olùdìmú | **Bẹ́ẹ̀ kọ́** (Abala 4(a)(11)) | **Bẹ́ẹ̀ ni** (èrè náà ni àbájáde lórí ìpín) |
+| Ìràpadà | At par, nígbà tí a bá béèrè | At NAV, ní gbogbogbo T+0 tàbí T+1 |
+| Àkọsílẹ̀ ohun-ìní | Wallet olùtẹ̀jáde / on-chain | Transfer agent (òfin); blockchain (iṣẹ́-ṣíṣe) |
+| Ìdọgba owó tí ó kéré jù | Kò sí (tí rẹtáìlì wọ́pọ̀) | Púpọ̀ ($3M fún BRSRV; ti institutional fún BSTBL) |
+| Composability pẹ̀lú DeFi | Gíga | Gíga (BUIDL ni àwòrán àkọ́kọ́) |
+| Ìrírí olùlò nínú wàlẹ́ẹ̀tì | Token tí ó ní $1 | Token tí iye rẹ̀ ń pọ̀ sí i sí apá èrè |
+| Ewu ti rírọ̀pò bank-deposit | Àníyàn àkóso gbangba | Kéré púpọ̀ (security, kì í ṣe bíi deposit) |
 
-*Source: Synthesis of GENIUS Act text, OCC March 2026 NPRM, BlackRock filings of 8 May 2026, and Rule 2a-7 framework.*
+*Orísun: Àkópọ̀ ti ọ̀rọ̀ GENIUS Act, OCC March 2026 NPRM, àwọn ìforúkọsílẹ̀ BlackRock ti 8 May 2026, àti framework ti Rule 2a-7.*
 
-The bottom row is the one that explains the regulatory architecture. A payment stablecoin that pays yield looks, to a bank regulator, like a deposit substitute. A tokenised money market fund share that pays yield looks like a security — and securities competing with deposits is not a new concern, because conventional money market funds have done exactly that for forty years. The GENIUS Act draws its line at the deposit-substitute concern. Everything that sits clearly on the security side of that line is, by construction, outside the Act's yield prohibition.
+Laini ìsàlẹ̀ jù lọ ni èyí tí ó ṣàlàyé architecture ti àkóso. Payment stablecoin tí ń san èrè ń jọ, lójú olùṣàkóso banki, bíi rírọ̀pò deposit. Tokenised money market fund share tí ń san èrè ń jọ bíi security — àti pé àwọn security tí ń figagbága pẹ̀lú deposits kì í ṣe àníyàn tuntun, nítorí àwọn conventional money market fund ti ṣe gangan bẹ́ẹ̀ fún ogójì ọdún. GENIUS Act fa laini rẹ̀ sí ibi àníyàn rírọ̀pò deposit. Gbogbo ohun tí ó bá wà ní kedere ní apá security ti laini yẹn, nípasẹ̀ ìkọ́ rẹ̀, kò sí lábẹ́ ìfòfindè èrè ti Act náà.
 
-## Is This a Loophole?
+## Ṣé Àyè Àbákò Nìyí?
 
-It is tempting — and the framing has surfaced widely on LinkedIn and crypto-Twitter since the filing — to call this a "loophole" in the GENIUS Act: stablecoins cannot pay yield, so BlackRock filed something that legally isn't a stablecoin. The framing captures the headline cleverly. As legal characterisation it understates the substance.
+Ó rọrùn — àti pé ètò yìí ti hàn káàkiri lórí LinkedIn àti crypto-Twitter láti ìgbà ìforúkọsílẹ̀ náà — láti pe èyí ní "àyè àbákò" (loophole) nínú GENIUS Act: àwọn stablecoin kò lè san èrè, nítorí náà BlackRock fi ohun kan tí kò jẹ́ stablecoin lábẹ́ òfin sílẹ̀. Ètò náà mú orí-ọ̀rọ̀ náà lọ́nà ọlọ́gbọ́n. Gẹ́gẹ́ bí ìsọsọ òfin, ó dín nǹkan kù mọ́ agbára rẹ̀ gangan.
 
-The yield prohibition in the GENIUS Act was a specific policy choice with a specific target: the deposit-substitution risk to the banking sector from a class of instrument designed to function as money. Tokenised money market funds are not designed to function as money; they are designed to function as fund shares, with all the regulatory weight (Rule 2a-7, audited reserves, NAV disclosure, transfer-agent legal records of ownership) that has applied to that category for decades. That those fund shares now happen to settle on Ethereum or another public chain does not change what they are in securities law. The OCC's own [proposed rule ⧉](https://www.morganlewis.com/pubs/2026/04/occs-genius-act-proposal-what-prospective-issuers-need-to-know "Stablecoin Regulation: OCC Proposal Under the GENIUS Act") explicitly contemplates tokenised reserves as a legitimate category — the open debate is the 20% cap, not the existence of the asset class.
+Ìfòfindè èrè nínú GENIUS Act jẹ́ yíyàn ìlànà pàtó pẹ̀lú ibi-afẹ́de pàtó: ewu rírọ̀pò deposit sí ilé-iṣẹ́ banki láti ara irú ohun-èlò tí a ṣe láti ṣiṣẹ́ gẹ́gẹ́ bí owó. Àwọn tokenised money market fund kò jẹ́ ohun tí a ṣe láti ṣiṣẹ́ gẹ́gẹ́ bí owó; a ṣe wọ́n láti ṣiṣẹ́ gẹ́gẹ́ bí fund shares, pẹ̀lú gbogbo ẹrù àkóso (Rule 2a-7, reserves tí a ṣe audit rẹ̀, NAV disclosure, àkọsílẹ̀ òfin ti ohun-ìní ti transfer-agent) tí ó ti ń ṣiṣẹ́ lórí abala yẹn fún ọ̀pọ̀lọpọ̀ ọdún. Lílọ tí àwọn fund shares wọnyí lọ báyìí láti yanjú lórí Ethereum tàbí blockchain gbangba miiran kò yí ohun tí wọ́n jẹ́ padà nínú òfin securities. [Àbá òfin ⧉](https://www.morganlewis.com/pubs/2026/04/occs-genius-act-proposal-what-prospective-issuers-need-to-know "Àkóso Stablecoin: Àbá OCC Lábẹ́ GENIUS Act") ti OCC fúnra rẹ̀ gba tokenised reserves gẹ́gẹ́ bí abala tí ó tọ̀nà — àríyànjiyàn tí ó wà ní gbangba ni cap 20% náà, kì í ṣe wíwà ti abala ohun-ìní náà.
 
-What is genuinely novel is the user experience. A holder of a tokenised MMF share, in a wallet on a public chain, has something that *looks* like a stablecoin (a fungible token, transferable peer-to-peer, composable with DeFi infrastructure) but that *behaves* like a security (the NAV accrues, the holder is on a KYC list, the transfer agent's records are legally controlling). The headline framing — "legally isn't a stablecoin" — is correct as far as it goes. The deeper observation is that the GENIUS Act, by prohibiting yield on the payment-stablecoin category, effectively *required* the industry to converge on tokenised MMFs as the carrier for yield-bearing on-chain dollars. The Act drew a line; the industry, predictably, structured products that sit on the more favourable side of it. That is not a loophole. It is the design of the regulatory architecture working roughly as intended — even if the velocity at which it is producing institutional products is faster than most participants expected.
+Ohun tí ó jẹ́ tuntun gangan ni ìrírí olùlò. Olùdìmú ti tokenised MMF share, nínú wàlẹ́ẹ̀tì lórí chain gbangba, ní ohun kan tí ó *jọ* stablecoin (token tí a lè tà, tí a lè gbé láti ọwọ́ kan sí òmíràn, tí ó lè ṣiṣẹ́ pẹ̀lú DeFi infrastructure) ṣùgbọ́n tí ó *ń ṣiṣẹ́* bíi security (NAV ń pọ̀ sí i, olùdìmú wà lórí àkójọ KYC, àkọsílẹ̀ ti transfer agent ni ó ń ṣàkóso lábẹ́ òfin). Ètò orí-ọ̀rọ̀ náà — "kì í ṣe stablecoin lábẹ́ òfin" — jẹ́ òtítọ́ níwọ̀n bí ó ti mọ. Ìwòye tí ó jinlẹ̀ jù ni pé GENIUS Act, nípa fífòfindè èrè lórí abala payment-stablecoin, sọ ọ́ di *dandan* fún ilé-iṣẹ́ náà láti péjúpọ̀ lórí tokenised MMF gẹ́gẹ́ bí olùgbé fún àwọn dọ́là tí ń mú èrè wá lórí chain. Act náà fa laini kan; ilé-iṣẹ́ náà, gẹ́gẹ́ bí a ti reti, ṣètò àwọn ọjà tí ó wà ní apá tí ó dára jù ti laini náà. Èyí kò jẹ́ àyè àbákò. Ó jẹ́ iṣẹ́ ti architecture ti àkóso tí ń ṣiṣẹ́ nǹkan bí a ti pinnu rẹ̀ — paapaa tí iyára tí ó fi ń gbé àwọn ọjà institutional jáde yára ju bí ọ̀pọ̀lọpọ̀ àwọn olùkópa ti reti lọ.
 
-## What This Means by Sector
+## Ohun tí Èyí Ní Lọ́kàn nípa Abala Kọ̀ọ̀kan
 
-The implications of the 8 May filings are not uniform. The strategic response varies materially depending on where an institution sits in the value chain.
+Àwọn àbájáde ti àwọn ìforúkọsílẹ̀ ti 8 May kò rí kanna. Èsì ilana náà yapa púpọ̀ lórí ibi tí àjọ kan bá wà nínú value chain náà.
 
-### Stablecoin Issuers (PPSIs)
+### Àwọn Olùtẹ̀jáde Stablecoin (PPSI)
 
-For Circle, Tether, PayPal, and the next generation of bank-issued payment stablecoins, BRSRV is the operational answer to a question that has only had ad-hoc answers up to now: where do reserves sit when they need to be both Treasury-yielding and natively on the same chain as the issued stablecoin? Direct holding of T-bills works at issuance scale but is operationally heavy. Holding BUIDL works, but BUIDL's structure was not designed specifically around the GENIUS Act reserve framework. BRSRV is. The competitive consequence is that Circle, Tether, and bank-issued PPSIs now have a credible, GENIUS-engineered wholesale product to plug into their reserve management — and the marginal cost of switching reserves into a BlackRock product is, structurally, lower than it has ever been.
+Fún Circle, Tether, PayPal, àti ìran tókàn ti àwọn payment stablecoin tí banki ń tẹ̀jáde, BRSRV jẹ́ èsì iṣẹ́-ṣíṣe sí ìbéèrè tí ó ti ní àwọn èsì ad-hoc nìkan títí di ìsinsìnyí: ibo ni àwọn ìpamọ́ ń gbé nígbà tí wọ́n bá nílò láti jẹ́ Treasury-yielding àti natively lórí chain kanna bíi stablecoin tí a tẹ̀jáde? Dídìmú T-bills tààrà ń ṣiṣẹ́ ní ìwọ̀n ìtẹ̀jáde ṣùgbọ́n ó nira fún iṣẹ́-ṣíṣe. Dídìmú BUIDL ń ṣiṣẹ́, ṣùgbọ́n a kò kọ́ BUIDL ní pàtó láti yípo framework ìpamọ́ ti GENIUS Act. BRSRV ni a kọ́ fún èyí. Àbájáde ìfagbágbà ni pé Circle, Tether, àti àwọn PPSI tí banki ń tẹ̀jáde ní báyìí ní ọjà wholesale tí a ṣe ẹ̀rọ rẹ̀ fún GENIUS tí ó ṣe gbéyẹ̀wò láti fi sínú reserve management wọn — àti pé marginal cost ti yíyí àwọn ìpamọ́ padà sínú ọjà BlackRock ti kéré púpọ̀ nípa ti architecture ju bí ó ti rí rí lọ.
 
-### Banks and Money Market Fund Operators
+### Àwọn Banki àti Àwọn Olùṣàkóso Money Market Fund
 
-For banks that operate large money market fund franchises — JPMorgan, State Street, BNY Mellon, Northern Trust, Vanguard, Fidelity — BSTBL is the operational template for what their own products will likely have to do. The architectural pattern is now visible: take an existing MMF, register a new on-chain share class with the SEC, appoint a transfer agent to maintain shareholder records on Ethereum (or another major public chain), and gate access through off-chain KYC. The barrier to entry for a tokenised share class on an existing $10–50 billion MMF is, in the BSTBL pattern, principally regulatory and operational rather than technical. BNY Mellon's role as the transfer agent for BSTBL — recording shareholders on Ethereum using ERC-20 — is itself a signal that traditional transfer-agent infrastructure is being extended onto public chains by precisely the institutions that have managed the legal record of fund ownership for decades.
+Fún àwọn banki tí ń ṣiṣẹ́ àwọn franchise money market fund nla — JPMorgan, State Street, BNY Mellon, Northern Trust, Vanguard, Fidelity — BSTBL ni àwòrán iṣẹ́-ṣíṣe fún ohun tí àwọn ọjà wọn yóò ní láti ṣe lọ́jọ́ iwájú. Àwòrán architecture náà ti han kedere báyìí: gba MMF tí ó wà tẹ́lẹ̀, forúkọ share class tuntun ti on-chain sílẹ̀ pẹ̀lú SEC, yan transfer agent láti pa àkọsílẹ̀ onípin mọ́ lórí Ethereum (tàbí blockchain gbangba nla miiran), kí o sì ṣàkóso àyè wíwọlé nípasẹ̀ KYC ti off-chain. Ìdènà láti wọlé fún tokenised share class lórí MMF ti $10–50 billion tí ó wà tẹ́lẹ̀, nínú àwòrán BSTBL, jẹ́ ọ̀rọ̀ àkóso àti iṣẹ́-ṣíṣe ju ti ẹ̀rọ lọ. Ipa ti BNY Mellon gẹ́gẹ́ bí transfer agent fún BSTBL — tí ń ṣe àkọsílẹ̀ àwọn onípin lórí Ethereum nípa lílo ERC-20 — fúnra rẹ̀ jẹ́ àmì pé a ń mú transfer-agent infrastructure ti àtọwọ́dọ́wọ́ lọ sí orí blockchain gbangba nípasẹ̀ àwọn àjọ gangan tí wọ́n ti ń ṣàkóso àkọsílẹ̀ òfin ti ohun-ìní fund fún ọ̀pọ̀lọpọ̀ ọdún.
 
-### DeFi Protocols and On-Chain Treasury
+### Àwọn Ètò DeFi àti On-Chain Treasury
 
-For DeFi protocols, BRSRV and BSTBL extend a pattern that BUIDL began: the migration of high-quality Treasury collateral from off-chain custodial accounts into on-chain instruments that can be composed with lending, derivatives, and structured products. Ethena's USDtb and Jupiter's JupUSD are the early-mover examples; the design space behind them is now substantially larger. The risk consideration — and it is non-trivial — is that the underlying instruments are KYC-gated and permissioned, which limits the degree of "permissionless" composition that DeFi-native systems can rely on. The integration patterns that emerge in the next twelve months will determine how cleanly tokenised MMFs become a primary collateral layer of the on-chain economy.
+Fún àwọn ètò DeFi, BRSRV àti BSTBL mú àwòrán tí BUIDL bẹ̀rẹ̀ gbòòrò sí i: sísun ohun-ìní Treasury tí ó dára láti àwọn off-chain custodial accounts sínú àwọn ohun-èlò on-chain tí a lè lò pẹ̀lú yíyáwó, derivatives, àti àwọn structured products. USDtb ti Ethena àti JupUSD ti Jupiter jẹ́ àpẹẹrẹ ti àwọn tó yára kọ́kọ́ gbéyẹ̀wò; ààyè àpẹẹrẹ lẹ́yìn wọn ti fẹ̀ púpọ̀ sí i báyìí. Ohun tí ó jẹ́ ewu — tí ó sì ṣe pàtàkì — ni pé àwọn ohun-èlò abẹ́rẹ̀ wọnyí jẹ́ KYC-gated tí wọ́n sì ní àṣẹ, èyí tí ó dín ìwọ̀n "permissionless" composition tí àwọn ètò DeFi-native lè gbẹ́kẹ̀ lé kù. Àwọn àwòrán àkópọ̀ tí yóò jáde ní oṣù méjìlá tókàn yóò pinnu bí tokenised MMF yóò ṣe di primary collateral layer ti on-chain economy.
 
-### Regulators
+### Àwọn Olùṣàkóso
 
-For the OCC, the FDIC, and the Federal Reserve, the 8 May filings clarify what the regulatory perimeter is being asked to accommodate. The yield prohibition in the GENIUS Act has clearly not stopped on-chain yield from reaching wallet holders; it has migrated the architecture for delivering that yield from the payment-stablecoin category (which the regulators directly supervise) into the registered-fund category (which the SEC supervises). This is not necessarily a bad outcome — registered funds are a well-understood regulatory category — but it does mean that the cross-agency coordination question becomes operationally sharper. The OCC's final rule, due by January 2027, will determine whether the 20% cap on tokenised reserves survives in any form, and whether the line between "payment stablecoin" and "tokenised MMF share" is held at the issuer level or is allowed to blur further at the wallet level.
+Fún OCC, FDIC, àti Federal Reserve, àwọn ìforúkọsílẹ̀ ti 8 May ṣàlàyé ohun tí a ń béèrè lọ́wọ́ ààlà àkóso láti gba nǹkan mọ́ra. Ìfòfindè èrè nínú GENIUS Act kò dínà èrè on-chain láti dé ọwọ́ àwọn olùdìmú wàlẹ́ẹ̀tì; ó ti gbé architecture fún fífúnni ní èrè yẹn láti abala payment-stablecoin (tí àwọn olùṣàkóso ń ṣàkóso rẹ̀ tààrà) lọ sí abala registered-fund (tí SEC ń ṣàkóso rẹ̀). Èyí kì í ṣe èsì búburú dandan — àwọn registered funds jẹ́ abala àkóso tí a mọ̀ dáradára — ṣùgbọ́n ó túmọ̀ sí pé ìbéèrè lórí ìṣàkóso àjọ-kọjá-àjọ yóò múra sí i nípa ti iṣẹ́-ṣíṣe. Òfin ìkẹyìn ti OCC, tí a reti ní January 2027, yóò pinnu bóyá cap 20% lórí tokenised reserves yóò yè ní eyikeyìí ọ̀nà, àti pé bóyá laini tí ó wà láàárín "payment stablecoin" àti "tokenised MMF share" yóò wà ní ipò olùtẹ̀jáde tàbí yóò gbà láti yọ́ kúrò sí i ní ipò wàlẹ́ẹ̀tì.
 
-## Conclusion
+## Ìparí
 
-The 8 May 2026 filings are not, by themselves, a paradigm shift. They are individual products from a single asset manager, filed in the specific regulatory window that the OCC's rulemaking opened. What they capture, however, is the shape of an industry-level transition that has been visible since BlackRock launched BUIDL in March 2024 and that the GENIUS Act has now accelerated rather than constrained.
+Àwọn ìforúkọsílẹ̀ ti 8 May 2026 kì í ṣe, fúnrawọn, ìyípadà pàtó. Wọ́n jẹ́ ọjà kọ̀ọ̀kan láti ẹnu olùṣàkóso ohun-ìní kan ṣoṣo, tí wọ́n fi sílẹ̀ nínú fèrèsé àkóso pàtó tí òfin OCC ṣí sílẹ̀. Ohun tí wọ́n rí mú, sibẹsibẹ, ni àwòrán ìyípadà ní ipò ilé-iṣẹ́ tí ó ti ń han kedere láti ìgbà tí BlackRock ti gbé BUIDL jáde ní March 2024 àti pé GENIUS Act ti mú kí ó yára sí i báyìí dípò kí ó dínà rẹ̀.
 
-Stablecoins, in the GENIUS Act sense, will continue to do what stablecoins were always good at: efficient settlement, near-instant cross-border payment, programmable money for use cases that need a stable unit of account. They will not, under current and proposed rules, pay yield to their holders. The yield-bearing dollar in a wallet — the product that takes the same form factor as a stablecoin but that accrues Treasury yield to its holder — will be a tokenised money market fund share, issued by a registered fund, with a transfer agent (Securitize, BNY Mellon, and likely several others) as the legal record of ownership. BRSRV and BSTBL are the early, institutional expressions of that pattern. They will not be the last.
+Àwọn stablecoin, nínú ìtumọ̀ GENIUS Act, yóò tẹ̀síwájú láti ṣe ohun tí stablecoins ti dára fún nígbà gbogbo: settlement tí ó múnádóko, ìsanwó kọjá-ààlà tí ó yára kánmọ́, programmable money fún àwọn use cases tí wọ́n nílò ẹyọ kan tí ó dúró sán-ún fún àkọsílẹ̀. Wọn kò ní, lábẹ́ àwọn òfin lọ́wọ́lọ́wọ́ àti àwọn tí a béèrè fún, san èrè fún àwọn olùdìmú wọn. Dọ́là tí ń mú èrè wá nínú wàlẹ́ẹ̀tì — ọjà tí ó gba form factor kanna bíi stablecoin ṣùgbọ́n tí ó ń kó Treasury yield jọ fún olùdìmú rẹ̀ — yóò jẹ́ tokenised money market fund share, tí registered fund kan tẹ̀jáde, pẹ̀lú transfer agent (Securitize, BNY Mellon, àti boya àwọn miiran lọ́pọ̀lọpọ̀) gẹ́gẹ́ bí àkọsílẹ̀ òfin ti ohun-ìní. BRSRV àti BSTBL jẹ́ àwọn àmì institutional àkọ́kọ́ ti àwòrán yẹn. Wọn kò ní jẹ́ àwọn ìkẹyìn.
 
-For prior context on this site, the [January 2018 piece on the Ethereum technology stack ⧉](https://sebastienrousseau.com/2018-01-09-understanding-the-technology-behind-blockchain/index.html "Understanding the Technology behind Blockchain") covered the substrate on which BSTBL now sits, the [January 2018 article on the ERC-20 standard ⧉](https://sebastienrousseau.com/2018-01-24-the-erc-20-token-standard/index.html "ERC-20: The Ethereum Token Interface That Changed the World") covered the share-class representation BlackRock has chosen, the [February 2018 analysis of faster-payment cryptocurrencies ⧉](https://sebastienrousseau.com/2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution/index.html "Unveiling a New Cryptocurrency and Faster Payment Solution") covered the user experience problem that yield-bearing on-chain instruments are now partly solving, and the [recent piece on the SWIFT CBPR+ structured-address deadline](https://sebastienrousseau.com/2026-05-12-iso-20022-pacs008-structured-address-deadline/index.html "The November 2026 pacs.008 Structured-Address Deadline") sits adjacent in the wider payments-modernisation conversation that BlackRock's filings are also part of. The point of triangulating these is not to claim that any single architecture has won. It is that the institutional and the on-chain financial systems are, in 2026, converging on shared primitives faster than either of them anticipated even a year ago.
+Fún àyíká ti tẹ́lẹ̀ lórí ojú-òpó wẹ́ẹ̀bù yìí, [àpilẹ̀kọ ti January 2018 lórí Ethereum technology stack ⧉](https://sebastienrousseau.com/2018-01-09-understanding-the-technology-behind-blockchain/index.html "Ìtumọ̀ Ẹ̀rọ Ìṣiṣẹ́ ti Blockchain") sọ nípa substrate lórí èyí tí BSTBL wà báyìí, [àpilẹ̀kọ ti January 2018 lórí ERC-20 standard ⧉](https://sebastienrousseau.com/2018-01-24-the-erc-20-token-standard/index.html "ERC-20: Ethereum Token Interface tí Ó Yí Ayé Padà") sọ nípa share-class representation tí BlackRock ti yàn, [àpèjúwe ti February 2018 lórí faster-payment cryptocurrencies ⧉](https://sebastienrousseau.com/2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution/index.html "Ìṣíyà ti Cryptocurrency Tuntun àti Fífúnni ní Ìpèsè Ìsanwó tí Ó Yára sí i lọ́jọ́ Iwájú") sọ nípa ìṣòro ìrírí olùlò tí àwọn oní-chain tí ń mú èrè wá ń yanjú fún apá kan báyìí, àti [àpilẹ̀kọ tuntun lórí SWIFT CBPR+ structured-address deadline](https://sebastienrousseau.com/2026-05-12-iso-20022-pacs008-structured-address-deadline/index.html "Àkókò Ìparí pacs.008 Structured-Address ti November 2026") wà ní ẹ̀gbẹ́ nínú àríyànjiyàn ìgbàlódé ti ìsanwó gbòòrò tí àwọn ìforúkọsílẹ̀ BlackRock náà tún jẹ́ apá kan rẹ̀. Kókó ti wíwò wọ́n papọ̀ yìí kì í ṣe láti sọ pé eyikeyìí architecture kan ti borí. Ó jẹ́ pé àwọn ètò ìnáwó institutional àti on-chain, ní ọdún 2026, ń péjúpọ̀ lórí àwọn primitives tí wọ́n pín papọ̀ yára ju bí eyikeyìí nínú wọn ti lérò rẹ̀ ní ọdún kan sẹ́yìn.
 
-## Frequently Asked Questions
+## Àwọn Ìbéèrè tí A Ń Béèrè Lọ́pọ̀lọpọ̀
 
-**What is the actual difference between BRSRV/BSTBL and a stablecoin like USDC?**
+**Kí ni ìyàtọ̀ gangan láàárín BRSRV/BSTBL àti stablecoin bíi USDC?**
 
-In the wallet, the difference is mostly invisible. Each is a fungible token on a public blockchain, redeemable for dollars (or for the underlying fund share value), composable with DeFi. In law, the difference is substantial. USDC is a payment stablecoin under the GENIUS Act, issued by a Permitted Payment Stablecoin Issuer, prohibited from paying yield to holders. BRSRV and BSTBL are share classes of registered money market funds under the Investment Company Act of 1940, regulated under Rule 2a-7, where the yield is the natural return on the share. A holder of BRSRV is, legally, a shareholder of a fund. A holder of USDC is, legally, a holder of a payment instrument.
+Nínú wàlẹ́ẹ̀tì, ìyàtọ̀ náà kò han rárá ní gbogbogbo. Kọ̀ọ̀kan jẹ́ fungible token lórí blockchain gbangba, tí a lè rà padà fún dọ́là (tàbí fún iye ìpín fund abẹ́rẹ̀), tí ó sì lè ṣiṣẹ́ pẹ̀lú DeFi. Nínú òfin, ìyàtọ̀ náà pọ̀. USDC jẹ́ payment stablecoin lábẹ́ GENIUS Act, tí Permitted Payment Stablecoin Issuer tẹ̀jáde, tí wọ́n sì fòfindè láti san èrè fún àwọn olùdìmú. BRSRV àti BSTBL jẹ́ share classes ti àwọn registered money market funds lábẹ́ Investment Company Act ti 1940, tí wọ́n ń ṣàkóso lábẹ́ Rule 2a-7, níbi tí èrè náà ti jẹ́ àbájáde àtọwọ́dọ́wọ́ lórí ìpín. Olùdìmú BRSRV jẹ́, lábẹ́ òfin, onípin ti fund kan. Olùdìmú USDC jẹ́, lábẹ́ òfin, olùdìmú ti ohun-èlò ìsanwó (payment instrument).
 
-**Why is BSTBL different from BUIDL if both are tokenised BlackRock funds on Ethereum?**
+**Kí nìyí tí BSTBL fi yàtọ̀ sí BUIDL tá a bá rí i pé méjèèjì jẹ́ tokenised BlackRock funds lórí Ethereum?**
 
-BUIDL, launched in March 2024, was structured as a new fund with on-chain architecture from inception, with Securitize as the partner and the design native to the digital-asset workflow. BSTBL, by contrast, is a new on-chain share class added to an existing $6–7 billion conventional money market fund — the Select Treasury Based Liquidity Fund. BNY Mellon serves as the transfer agent. The architectural significance is that BSTBL demonstrates how to bring an existing, large, traditional money-market product on-chain without rebuilding it as a new fund. That template, if it works, is portable to any conventional MMF in the industry.
+BUIDL, tí wọ́n gbé jáde ní March 2024, ni a ṣètò gẹ́gẹ́ bí fund tuntun pẹ̀lú architecture on-chain native láti ìbẹ̀rẹ̀, pẹ̀lú Securitize gẹ́gẹ́ bí alájọṣepọ̀ àti apẹẹrẹ native fún workflow ti digital-asset. BSTBL, ní idakeji, jẹ́ on-chain share class tuntun tí a kún mọ mọ́ conventional money market fund ti $6–7 billion tí ó wà tẹ́lẹ̀ — Select Treasury Based Liquidity Fund. BNY Mellon ń ṣiṣẹ́ gẹ́gẹ́ bí transfer agent. Ìjẹ́pàtàkì architecture rẹ̀ ni pé BSTBL fi hàn bí a ṣe lè mú ọjà money-market ti àtọwọ́dọwọ́ tí ó wà tẹ́lẹ̀, tí ó sì tóbi, wá sínú on-chain láì tún un kọ́ gẹ́gẹ́ bí fund tuntun. Àwòrán yẹn, bí ó bá ṣiṣẹ́, ni a lè gbé lọ sí eyikeyìí MMF conventional nínú ilé-iṣẹ́ náà.
 
-**Why is the OCC's 20% cap on tokenised reserves controversial?**
+**Kí nìyí tí cap 20% ti OCC lórí tokenised reserves fi dá àríyànjiyàn sílẹ̀?**
 
-The OCC's March 2026 proposal floated a potential 20% limit on how much of a stablecoin issuer's reserves could be held in tokenised form. BlackRock's comment letter argued that this would be "extraneous" to the OCC's supervisory objectives, because the risk profile of a reserve asset is driven by credit quality, duration, and liquidity — not by whether it is held or transferred on a distributed ledger. Operationally, the cap would constrain BUIDL's role as the primary reserve backing of products like Ethena's USDtb and Jupiter's JupUSD, both of which currently rely on BUIDL for more than 90% of their reserves. The OCC's final rule, due by January 2027, will determine whether the cap survives, is raised, or is dropped.
+Àbá ti OCC ní March 2026 mú ààlà 20% tí ó lè wà lélẹ̀ wá lórí iye ti reserves ti stablecoin issuer tí a lè dìmú ní irú tokenised. Lẹ́tà àríyànjiyàn ti BlackRock jiyàn pé èyí yóò jẹ́ "ohun àjèjì" sí àwọn ibi-afẹ́de àkóso ti OCC, nítorí risk profile ti reserve asset jẹ́ ohun tí credit quality, duration, àti liquidity ń darí — kì í ṣe nípa bóyá a dìmú rẹ̀ tàbí a gbé e kọjá lórí distributed ledger. Nípa ti iṣẹ́-ṣíṣe, cap náà yóò dínà ipa ti BUIDL gẹ́gẹ́ bí reserve backing gbangba fún àwọn ọjà bíi USDtb ti Ethena àti JupUSD ti Jupiter, tí méjèèjì gbẹ́kẹ̀ lé BUIDL lọ́wọ́lọ́wọ́ fún ohun tí ó ju 90% ti reserves wọn. Òfin ìkẹyìn ti OCC, tí a reti ní January 2027, yóò pinnu bóyá cap náà yóò yè, yóò fi kún un, tàbí yóò jáwọ́ nínú rẹ̀.
 
-**What does it mean that the BRSRV filing does not name the blockchains it will support?**
+**Kí ni ó túmọ̀ sí pé ìforúkọsílẹ̀ BRSRV kò dárúkọ blockchains tí yóò tì lẹ́yìn?**
 
-It is a routine feature of early-stage SEC filings rather than a strategic ambiguity. The filing establishes the legal structure (a registered fund issuing OnChain Shares through a permissioned framework with Securitize as transfer agent) without committing to specific chains, which BlackRock will likely announce closer to launch. BUIDL itself was launched on Ethereum and subsequently expanded to Polygon, Avalanche, Optimism, Aptos, and Arbitrum; BRSRV is most plausibly going to follow a similar multi-chain pattern given the explicit reference to "multiple public blockchains" in the filing.
+Ó jẹ́ ohun tí ó wọ́pọ̀ fún àwọn ìforúkọsílẹ̀ SEC ní ìpele ìbẹ̀rẹ̀ dípò kí ó jẹ́ àpẹẹrẹ ti àríyànjiyàn ilana. Ìforúkọsílẹ̀ náà fi ètò òfin lélẹ̀ (registered fund kan tí ń tẹ OnChain Shares jáde nípasẹ̀ framework tí a fún ní àṣẹ pẹ̀lú Securitize gẹ́gẹ́ bí transfer agent) láì pinnu lórí chain pàtó, èyí tí BlackRock yóò kéde nígbà tí ó bá súnmọ́ ìgbà ìgbéjáde. BUIDL fúnra rẹ̀ ni a gbé jáde lórí Ethereum tí wọ́n sì gbòkúfà rẹ̀ lẹ́yìn náà sí Polygon, Avalanche, Optimism, Aptos, àti Arbitrum; BRSRV yóò tẹ̀ tẹ̀lé irú àwòrán multi-chain kanna níwọ̀n bí a ti tọ́ka sí "multiple public blockchains" nínú ìforúkọsílẹ̀ náà.
 
-**Is this the end of yield-bearing stablecoins as a product category?**
+**Ṣé èyí ni òpin àwọn stablecoin tí ń san èrè gẹ́gẹ́ bí abala ọjà?**
 
-It is the end of yield-bearing payment stablecoins as a category, at least under US federal law, unless Congress amends the GENIUS Act. It is not the end of yield-bearing on-chain dollars as a product category, which is what users actually want. That category is now migrating to tokenised money market fund shares — BUIDL, BENJI, BRSRV, BSTBL, Ondo's products, and the wave of competing tokenised MMFs that the BSTBL pattern is likely to catalyse. The instruments will look slightly different in the wallet (the value of the token will reflect accumulated yield rather than holding $1.00 flat), but the economic function — dollar-equivalent exposure with Treasury yield, settled on a public chain — is being preserved through a different regulatory pathway.
+Ó jẹ́ òpin fún àwọn payment stablecoin tí ń san èrè gẹ́gẹ́ bí abala kan, ó kéré tán lábẹ́ òfin federal ti US, àyàfi bí Congress bá yí GENIUS Act padà. Kì í ṣe òpin fún àwọn dọ́là on-chain tí ń mú èrè wá gẹ́gẹ́ bí abala ọjà, èyí tí àwọn olùlò ń fẹ́ gangan. Abala yẹn ń lọ báyìí sí àwọn tokenised money market fund shares — BUIDL, BENJI, BRSRV, BSTBL, àwọn ọjà Ondo, àti ìṣàn ti àwọn tokenised MMF tí ń fìdánilójú tí BSTBL yóò mú wá. Àwọn ohun-èlò náà yóò yàtọ̀ díẹ̀ nínú wàlẹ́ẹ̀tì (iye token yóò fi èrè tí ó jọ hàn dípò dídìmú $1.00 ní pẹtẹ́ẹ́rẹ́), ṣùgbọ́n iṣẹ́-ṣíṣe ètò ọrọ̀ ajé — dollar-equivalent exposure pẹ̀lú Treasury yield, tí a yanjú lórí blockchain gbangba — ni a ń pa mọ́ nípasẹ̀ ọ̀nà àkóso miiran.
 
 ## References
 
-- Sebastien Rousseau, (2026). [The November 2026 pacs.008 Structured-Address Deadline: A Six-Month View](https://sebastienrousseau.com/2026-05-12-iso-20022-pacs008-structured-address-deadline/index.html "The November 2026 pacs.008 Structured-Address Deadline").
-- Sebastien Rousseau, (2018). [ERC-20: The Ethereum Token Interface That Changed the World](https://sebastienrousseau.com/2018-01-24-the-erc-20-token-standard/index.html "ERC-20: The Ethereum Token Interface That Changed the World").
-- Sebastien Rousseau, (2018). [Understanding the Technology behind Blockchain](https://sebastienrousseau.com/2018-01-09-understanding-the-technology-behind-blockchain/index.html "Understanding the Technology behind Blockchain").
-- Sebastien Rousseau, (2018). [Unveiling a New Cryptocurrency and Faster Payment Solution](https://sebastienrousseau.com/2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution/index.html "Unveiling a New Cryptocurrency and Faster Payment Solution").
-- Unchained, (2026). [BlackRock Files for Two New Tokenized Money-Market Funds Targeting Stablecoin Capital ⧉](https://unchainedcrypto.com/blackrock-files-for-two-new-tokenized-money-market-funds-targeting-stablecoin-capital/ "BlackRock Files for Two New Tokenized Money-Market Funds Targeting Stablecoin Capital"). Unchained.
-- The Block, (2026). [BlackRock urges OCC to drop tokenized reserve cap idea, expand eligible assets in GENIUS Act comment letter ⧉](https://www.theblock.co/post/399812/blackrock-urges-occ-to-drop-tokenized-reserve-cap-idea-expand-eligible-assets-in-genius-act-comment-letter "BlackRock urges OCC to drop tokenized reserve cap idea"). The Block.
-- BeInCrypto, (2026). [BlackRock Backs OCC Stablecoin Rules Under GENIUS Act ⧉](https://beincrypto.com/blackrock-occ-stablecoin-genius-act-comment/ "BlackRock Backs OCC Stablecoin Rules Under GENIUS Act"). BeInCrypto.
-- Markets Media, (2026). [BlackRock Fires 'Starting Gun for a New Financial Era' ⧉](https://www.marketsmedia.com/blackrock-fires-starting-gun-for-a-new-financial-era/ "BlackRock Fires 'Starting Gun for a New Financial Era'"). Markets Media.
-- Crowdfund Insider, (2026). [BlackRock Focuses On Tokenization Initiatives With Blockchain Enabled Funds ⧉](https://www.crowdfundinsider.com/2026/05/278346-blackrock-focuses-on-tokenization-initiatives-with-blockchain-enabled-funds/ "BlackRock Focuses On Tokenization Initiatives With Blockchain Enabled Funds"). Crowdfund Insider.
-- CoinDesk, (2026). [BlackRock Deepens Tokenization Push with New Onchain Fund Offerings ⧉](https://www.coindesk.com/business/2026/05/09/blackrock-deepens-tokenization-push-with-new-onchain-fund-offerings "BlackRock Deepens Tokenization Push with New Onchain Fund Offerings"). CoinDesk.
-- Crypto Briefing, (2026). [BlackRock doubles down on tokenization with new stablecoin reserve funds ⧉](https://cryptobriefing.com/blackrock-tokenized-money-market-funds-stablecoins/ "BlackRock doubles down on tokenization with new stablecoin reserve funds"). Crypto Briefing.
-- Latham & Watkins, (2026). [OCC Issues Proposal to Implement the GENIUS Act ⧉](https://www.lw.com/en/insights/occ-issues-proposal-to-implement-the-genius-act "OCC Issues Proposal to Implement the GENIUS Act"). Latham & Watkins.
-- Nixon Peabody, (2026). [Proposed OCC Regulations for Payment Stablecoins Under the GENIUS Act ⧉](https://www.nixonpeabody.com/insights/alerts/2026/04/02/proposed-occ-regulations-for-payment-stablecoins-under-the-genius-act "Proposed OCC regulations for payment stablecoins under the GENIUS Act"). Nixon Peabody LLP.
-- Morgan Lewis, (2026). [Stablecoin Regulation: OCC Proposal Under the GENIUS Act ⧉](https://www.morganlewis.com/pubs/2026/04/occs-genius-act-proposal-what-prospective-issuers-need-to-know "Stablecoin Regulation: OCC Proposal Under the GENIUS Act"). Morgan Lewis.
-- American Banker, (2026). [Stablecoin yield debate dominates GENIUS rule comments ⧉](https://www.americanbanker.com/news/stablecoin-yield-debate-dominates-genius-rule-comments "Stablecoin yield debate dominates GENIUS rule comments"). American Banker.
-- Congressional Research Service, (2026). [The Stablecoin Yield Debate ⧉](https://www.congress.gov/crs-product/IF13174 "The Stablecoin Yield Debate"). Congress.gov.
-- Compliance Corylated, (2026). [US OCC closes GENIUS Act loophole allowing yield-bearing stablecoins ⧉](https://www.compliancecorylated.com/news/us-occ-closes-genius-act-loophole-allowing-yield-bearing-stablecoins/ "US OCC closes GENIUS Act loophole allowing yield-bearing stablecoins"). Compliance Corylated.
-- CryptoSlate, (2025). [Tokenized US Treasuries just broke DeFi's most sacred rule ⧉](https://cryptoslate.com/tokenized-us-treasuries-silently-replaced-defis-foundation-and-you-missed-the-critical-9-billion-shift/ "Tokenized US Treasuries — CryptoSlate"). CryptoSlate.
-- MEXC News, (2026). [BlackRock files for two new tokenized funds with the U.S. SEC on Ethereum ⧉](https://www.mexc.com/news/1080472 "BlackRock files for two new tokenized funds with the U.S. SEC on Ethereum"). MEXC News.
-- Stellar Foundation, (2026). [Franklin Templeton, Stellar Development Foundation Mark Five Years of BENJI ⧉](https://stellar.org/press/franklin-templeton-stellar-development-foundation-mark-five-years-of-benji-the-first-u-s-registered-tokenized-money-market-fund "Five Years of BENJI"). Stellar Development Foundation.
+- Sebastien Rousseau, (2026). [Àkókò Ìparí pacs.008 Structured-Address ti November 2026: Ìwòye Oṣù Mẹ́fà](https://sebastienrousseau.com/2026-05-12-iso-20022-pacs008-structured-address-deadline/index.html "Àkókò Ìparí pacs.008 Structured-Address ti November 2026").
+- Sebastien Rousseau, (2018). [ERC-20: Ethereum Token Interface tí Ó Yí Ayé Padà](https://sebastienrousseau.com/2018-01-24-the-erc-20-token-standard/index.html "ERC-20: Ethereum Token Interface tí Ó Yí Ayé Padà").
+- Sebastien Rousseau, (2018). [Ìtumọ̀ Ẹ̀rọ Ìṣiṣẹ́ ti Blockchain](https://sebastienrousseau.com/2018-01-09-understanding-the-technology-behind-blockchain/index.html "Ìtumọ̀ Ẹ̀rọ Ìṣiṣẹ́ ti Blockchain").
+- Sebastien Rousseau, (2018). [Ìṣíyà ti Cryptocurrency Tuntun àti Fífúnni ní Ìpèsè Ìsanwó tí Ó Yára sí i lọ́jọ́ Iwájú](https://sebastienrousseau.com/2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution/index.html "Ìṣíyà ti Cryptocurrency Tuntun àti Fífúnni ní Ìpèsè Ìsanwó tí Ó Yára sí i lọ́jọ́ Iwájú").
+- Unchained, (2026). [BlackRock Fi Ìforúkọsílẹ̀ fún Àwọn Tokenized Money-Market Funds Tuntun Méjì tí Wọ́n Gbájúmọ́ Stablecoin Capital ⧉](https://unchainedcrypto.com/blackrock-files-for-two-new-tokenized-money-market-funds-targeting-stablecoin-capital/ "BlackRock Fi Ìforúkọsílẹ̀ fún Àwọn Tokenized Money-Market Funds Tuntun Méjì tí Wọ́n Gbájúmọ́ Stablecoin Capital"). Unchained.
+- The Block, (2026). [BlackRock Rọ OCC láti Jáwọ́ nínú Èrò tokenized reserve cap, kí Wọ́n sì Mú àwọn Ohun-ìní tí Ó Tóótù Fẹ̀ sí i nínú Lẹ́tà Àríyànjiyàn ti GENIUS Act ⧉](https://www.theblock.co/post/399812/blackrock-urges-occ-to-drop-tokenized-reserve-cap-idea-expand-eligible-assets-in-genius-act-comment-letter "BlackRock rọ OCC láti jáwọ́ nínú èrò tokenized reserve cap"). The Block.
+- BeInCrypto, (2026). [BlackRock Tì Àwọn Òfin Stablecoin ti OCC Lẹ́yìn Lábẹ́ GENIUS Act ⧉](https://beincrypto.com/blackrock-occ-stablecoin-genius-act-comment/ "BlackRock Tì Àwọn Òfin Stablecoin ti OCC Lẹ́yìn Lábẹ́ GENIUS Act"). BeInCrypto.
+- Markets Media, (2026). [BlackRock Kéde 'Ìbẹ̀rẹ̀ Ìgbà Tuntun fún Ètò Ìnáwó' ⧉](https://www.marketsmedia.com/blackrock-fires-starting-gun-for-a-new-financial-era/ "BlackRock Kéde 'Ìbẹ̀rẹ̀ Ìgbà Tuntun fún Ètò Ìnáwó'"). Markets Media.
+- Crowdfund Insider, (2026). [BlackRock Gbájúmọ́ Àwọn Ètò Tokenization pẹ̀lú Àwọn Funds tí Blockchain Tì Lẹ́yìn ⧉](https://www.crowdfundinsider.com/2026/05/278346-blackrock-focuses-on-tokenization-initiatives-with-blockchain-enabled-funds/ "BlackRock Gbájúmọ́ Àwọn Ètò Tokenization pẹ̀lú Àwọn Funds tí Blockchain Tì Lẹ́yìn"). Crowdfund Insider.
+- CoinDesk, (2026). [BlackRock Mú Ìtẹnumọ́ Tokenization Ṣe Koko sí i pẹ̀lú Àwọn Ìpèsè Fund Onchain Tuntun ⧉](https://www.coindesk.com/business/2026/05/09/blackrock-deepens-tokenization-push-with-new-onchain-fund-offerings "BlackRock Mú Ìtẹnumọ́ Tokenization Ṣe Koko sí i pẹ̀lú Àwọn Ìpèsè Fund Onchain Tuntun"). CoinDesk.
+- Crypto Briefing, (2026). [BlackRock Tẹnu mọ́ Tokenization pẹ̀lú Àwọn Stablecoin Reserve Funds Tuntun ⧉](https://cryptobriefing.com/blackrock-tokenized-money-market-funds-stablecoins/ "BlackRock Tẹnu mọ́ Tokenization pẹ̀lú Àwọn Stablecoin Reserve Funds Tuntun"). Crypto Briefing.
+- Latham & Watkins, (2026). [OCC Mú Àbá Ìmúṣẹ GENIUS Act Jáde ⧉](https://www.lw.com/en/insights/occ-issues-proposal-to-implement-the-genius-act "OCC Mú Àbá Ìmúṣẹ GENIUS Act Jáde"). Latham & Watkins.
+- Nixon Peabody, (2026). [Àwọn Òfin OCC tí A Dábàá fún Àwọn Payment Stablecoins Lábẹ́ GENIUS Act ⧉](https://www.nixonpeabody.com/insights/alerts/2026/04/02/proposed-occ-regulations-for-payment-stablecoins-under-the-genius-act "Àwọn òfin OCC tí a dábàá fún payment stablecoins lábẹ́ GENIUS Act"). Nixon Peabody LLP.
+- Morgan Lewis, (2026). [Àkóso Stablecoin: Àbá OCC Lábẹ́ GENIUS Act ⧉](https://www.morganlewis.com/pubs/2026/04/occs-genius-act-proposal-what-prospective-issuers-need-to-know "Àkóso Stablecoin: Àbá OCC Lábẹ́ GENIUS Act"). Morgan Lewis.
+- American Banker, (2026). [Àríyànjiyàn Èrè Stablecoin Borí Àwọn Àròyé Òfin ti GENIUS ⧉](https://www.americanbanker.com/news/stablecoin-yield-debate-dominates-genius-rule-comments "Àríyànjiyàn Èrè Stablecoin Borí Àwọn Àròyé Òfin ti GENIUS"). American Banker.
+- Congressional Research Service, (2026). [Àríyànjiyàn Èrè Stablecoin ⧉](https://www.congress.gov/crs-product/IF13174 "Àríyànjiyàn Èrè Stablecoin"). Congress.gov.
+- Compliance Corylated, (2026). [US OCC Pa Àyè Àbákò ti GENIUS Act Tí Ń Gba Àwọn Stablecoin Tí Ń San Èrè Láyè ⧉](https://www.compliancecorylated.com/news/us-occ-closes-genius-act-loophole-allowing-yield-bearing-stablecoins/ "US OCC Pa Àyè Àbákò ti GENIUS Act Tí Ń Gba Àwọn Stablecoin Tí Ń San Èrè Láyè"). Compliance Corylated.
+- CryptoSlate, (2025). [Àwọn Tokenized US Treasuries Ṣẹ̀ṣẹ̀ Tàpá sí Òfin Pàtó ti DeFi ⧉](https://cryptoslate.com/tokenized-us-treasuries-silently-replaced-defis-foundation-and-you-missed-the-critical-9-billion-shift/ "Àwọn Tokenized US Treasuries — CryptoSlate"). CryptoSlate.
+- MEXC News, (2026). [BlackRock Fi Ìforúkọsílẹ̀ fún Àwọn Tokenized Funds Tuntun Méjì sílẹ̀ pẹ̀lú SEC ti U.S. lórí Ethereum ⧉](https://www.mexc.com/news/1080472 "BlackRock fi ìforúkọsílẹ̀ fún àwọn tokenized funds tuntun méjì sílẹ̀ pẹ̀lú SEC ti U.S. lórí Ethereum"). MEXC News.
+- Stellar Foundation, (2026). [Franklin Templeton, Stellar Development Foundation Ṣe Ayẹyẹ Ọdún Kárùn-ún ti BENJI ⧉](https://stellar.org/press/franklin-templeton-stellar-development-foundation-mark-five-years-of-benji-the-first-u-s-registered-tokenized-money-market-fund "Ayẹyẹ Ọdún Kárùn-ún ti BENJI"). Stellar Development Foundation.
+
+<!-- enrich-start -->
+<aside class="author-card" aria-label="Nípa olùkọ̀wé"><img alt="Àwòrán ti Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Onímọ̀ ẹ̀rọ banki àgbà tí ń kọ̀wé lórí applied AI, ISO 20022 migration, ìsirò ìpamọ́ lẹ́yìn quantum (post-quantum cryptography) fún àwọn ètò ìnáwó, àti ìyípadà ilana ti wholesale payments.</span><span class="author-credentials">Ọdún 20+ kọjá HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Ìtàn kíkún</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<p class="post-reviewed">Àtúnyẹ̀wò ìkẹyìn <time datetime="2026-06-23">2026-06-23</time>.</p>
+<aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Related reading</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026" class="related-media" aria-label="Banki Oní-Rail Pupọ ní 2026: Àwọn Káàdì, A2A, Stablecoins, RTP, FedNow, àti Open Banking nínú Ilana Kan" tabindex="-1"><img alt="Fọ́tò ti àwọn ìṣàn ìmọ́lẹ̀ tí wọ́n ré kọjá ara wọn ní ibi ìparapọ̀ rélùwèé ní alẹ́ — kókó ìwòye fún banki oní-rail pupọ: àwọn káàdì, A2A, RTP, FedNow, ACH, stablecoins, Open Banking APIs, ISO 20022, àti orchestration engine tí ń darí wọn" src="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026">Banki Oní-Rail Pupọ ní 2026: Àwọn Káàdì, A2A, Stablecoins, RTP, FedNow, àti Open Banking nínú Ilana Kan</a></h3><p><time datetime="2026-06-01">2026-06-01</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026" class="related-media" aria-label="Stablecoins gẹ́gẹ́ bí Ìyàtọ̀ sí Tokenised Deposits ní 2026: Ohun tí Àwọn Banki Ní Láti Gbèjà Gangan" tabindex="-1"><img alt="Àwòrán ìfiwéra tí ń fi stablecoins, tokenised deposits, commercial bank money, reserve assets, wallets, settlement, liquidity, àti bank balance sheets hàn" src="https://cloudcdn.pro/stocks/images/pixabay-210547-1200.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026">Stablecoins gẹ́gẹ́ bí Ìyàtọ̀ sí Tokenised Deposits ní 2026: Ohun tí Àwọn Banki Ní Láti Gbèjà Gangan</a></h3><p><time datetime="2026-05-26">2026-05-26</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2023-10-09-the-fastest-rust
+BEGIN_TRANSLATION
+---
+author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
+banner_alt: "Àwòrán ètò ìdọgba owó tokenised BlackRock — BRSRV OnChain Shares àti ẹ̀ka ìpín BSTBL ERC-20 pẹ̀lú àwọn ìṣàn ìpamọ́ GENIUS Act"
+banner_height: "571"
+banner_width: "1425"
+banner: "https://cloudcdn.pro/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp"
+cdn: "https://cloudcdn.pro"
+changefreq: "weekly"
+charset: "UTF-8"
+cname: "sebastienrousseau.com"
+copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
+date: "May 15, 2026"
+description: "Àwọn stablecoin kò lè san owo èrè lábẹ́ GENIUS Act. Ní 8 May 2026, BlackRock fi àwọn ìforúkọsílẹ̀ SEC BRSRV àti BSTBL sílẹ̀ — àwọn ìdọgba owó tokenised tí ń san owo èrè nínú wàlẹ́ẹ̀tì, kì í ṣe stablecoins."
+format-detection: "telephone=no"
+hreflang: "yo"
+icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
+id: "https://sebastienrousseau.com/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf"
+image_alt: "Àwòrán Aláwọ̀ Dúdú àti Funfun ti Sebastien Rousseau"
+image_height: "162"
+image_width: "162"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
+keywords: "BlackRock, BRSRV, BSTBL, BUIDL, GENIUS Act, OCC, stablecoin, ìdọgba owó tokenised, OnChain Shares, Securitize"
+language: "yo-NG"
+layout: "report"
+locale: "yo_NG"
+logo_alt: "Àmì fún Sebastien Rousseau"
+logo_height: "44"
+logo_width: "44"
+logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
+menu: ""
+measurementID: "G-169G4ET5HQ"
+name: "Sebastien Rousseau"
+permalink: "https://sebastienrousseau.com/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf"
+rating: "general"
+referrer: "no-referrer"
+revisit-after: "7 days"
+robots: "index, follow"
+schema: "FAQPage, Article"
+short_name: "sebastienrousseau"
+subtitle: "Àwọn stablecoin kò lè san owo èrè lábẹ́ GENIUS Act. Ní 8 May 2026, BlackRock fi àwọn ọja méjì sílẹ̀ tí kò jẹ́ stablecoins nípasẹ̀ òfin — tí wọn lè san owo èrè nínú wàlẹ́ẹ̀tì lórí blockchain gbangba."
+tags: "BlackRock, BRSRV, BSTBL, BUIDL, GENIUS Act, OCC, stablecoins, tokenised money market fund, Securitize, BNY Mellon, ERC-20, Ethereum, payments, regulation, ISO 20022, ìsirò ìpamọ́ lẹ́yìn quantum, AI, tokenised deposits, ìsanwó kọjá-ààlà"
+theme-color: "0, 67, 165"
+title: "Èrè Stablecoin nípasẹ̀ Orúkọ Míràn: Àwọn Ìforúkọsílẹ̀ BRSRV àti BSTBL ti BlackRock tí A Túmọ̀"
+url: "https://sebastienrousseau.com/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf"
+viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
+
+# RSS - The RSS feed front matter (YAML).
+atom_link: "https://sebastienrousseau.com/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf/rss.xml"
+category: "Finance"
+docs: https://validator.w3.org/feed/docs/rss2.html
+generator: "Static Site Generator (SSG) (version 0.0.26)"
+item_description: "Àwọn stablecoin kò lè san owo èrè lábẹ́ GENIUS Act. Ní 8 May 2026, BlackRock fi àwọn ìforúkọsílẹ̀ SEC BRSRV àti BSTBL sílẹ̀ — àwọn ìdọgba owó tokenised tí ń san owo èrè nínú wàlẹ́ẹ̀tì, kì í ṣe stablecoins."
+item_guid: "https://sebastienrousseau.com/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf/rss.xml"
+item_link: "https://sebastienrousseau.com/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf/rss.xml"
+item_pub_date: "Fri, 15 May 2026 06:06:06 +0000"
+item_title: "Èrè Stablecoin nípasẹ̀ Orúkọ Míràn: Àwọn Ìforúkọsílẹ̀ BRSRV àti BSTBL ti BlackRock tí A Túmọ̀"
+last_build_date: "Fri, 15 May 2026 06:06:06 +0000"
+managing_editor: "contact@sebastienrousseau.com (Sebastien Rousseau)"
+pub_date: "Fri, 15 May 2026 06:06:06 +0000"
+ttl: "60"
+type: "article"
+webmaster: "contact@sebastienrousseau.com"
+
+# Apple - The Apple front matter (YAML).
+apple_mobile_web_app_orientations: "portrait"
+apple_touch_icon_sizes: "192x192"
+apple-mobile-web-app-capable: "yes"
+apple-mobile-web-app-status-bar-inset: "black"
+apple-mobile-web-app-status-bar-style: "black-translucent"
+apple-mobile-web-app-title: "BlackRock BRSRV and BSTBL"
+apple-touch-fullscreen: "yes"
+
+# MS Application - The MS Application front matter (YAML).
+
+msapplication-navbutton-color: "0, 83, 191"
+
+# Twitter Card - The Twitter Card front matter (YAML).
+
+twitter_card: "summary_large_image"
+twitter_creator: "@wwdseb"
+twitter_description: "Àwọn stablecoin kò lè san owo èrè lábẹ́ GENIUS Act. Ní 8 May 2026, BlackRock fi àwọn ìforúkọsílẹ̀ SEC BRSRV àti BSTBL sílẹ̀ — àwọn ìdọgba owó tokenised tí ń san owo èrè nínú wàlẹ́ẹ̀tì, kì í ṣe stablecoins."
+twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
+twitter_image_alt: "Àmì ti Sebastien Rousseau"
+twitter_site: "@wwdseb"
+twitter_title: "Èrè Stablecoin nípasẹ̀ Orúkọ Míràn: Àwọn Ìforúkọsílẹ̀ BRSRV àti BSTBL ti BlackRock tí A Túmọ̀"
+twitter_url: "https://sebastienrousseau.com/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf"
+
+# Humans.txt - The Humans.txt front matter (YAML).
+author_website: "https://sebastienrousseau.com"
+author_twitter: "@wwdseb"
+author_location: "London, UK"
+thanks: "Ẹ ṣeun fún kíka rẹ̀!"
+site_last_updated: "2026-05-15"
+site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
+site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
+site_software: "Static Site Generator, Rust"
+
+excerpt: "Àwọn stablecoin kò lè san owo èrè lábẹ́ GENIUS Act. Ní 8 May 2026, BlackRock fi àwọn ìforúkọsílẹ̀ SEC BRSRV àti BSTBL sílẹ̀ — àwọn ìdọgba owó tokenised..."
+last_reviewed: "2026-05-15"
+---
+
+Àwọn stablecoin kò lè san owo èrè lábẹ́ GENIUS Act. Ní 8 May 2026, BlackRock fi àwọn ìforúkọsílẹ̀ SEC méjì sílẹ̀ fún àwọn ọjà tí ó yanjú ìdènà yìí nípa ṣíṣe àkóso wọn gẹ́gẹ́ bí money market funds dípò stablecoins — nígbà tí wọ́n ń ṣiṣẹ́, nínú wàlẹ́ẹ̀tì, bí àwọn dọ́là tí ń mú owo èrè wá lórí blockchain gbangba.
+
+---
+
+> **Àwọn Kókó Písì**
+>
+> - **GENIUS Act**, tí wọ́n tẹwọ́bọ̀ ní July 2025 tí ó sì wà ní àwọn oṣù ìkẹyìn ti ṣíṣe òfin rẹ̀, fi dandan de àwọn olùtẹ̀jáde payment stablecoin láti má ṣe san èrè tàbí owo èrè fún àwọn olùdìmú nítorí dídìmú, lílò, tàbí títọ́jú stablecoin lásán. Àbá ti OCC ní March 2026 sọ èyí di mímú púpọ̀ sí i pẹ̀lú àròsọ tí a lè já níkòò tí ó sọ pé àwọn ètò èrè ti alájọṣe àti ẹgbẹ́ kẹta tún tàpá sí ìfòfindè náà.
+> - Ìṣòro ètò ọrọ̀ ajé tí èyí dá sílẹ̀ ṣe kedere. Pẹ̀lú nǹkan bí **$281 billion nínú payment stablecoins outstanding** àti àwọn èrè Treasury ní àwọn ibi gíga ti ọ̀pọ̀lọpọ̀ ọdún, àlàfo tí ó wà láàárín ohun tí olùdìmú wàlẹ́ẹ̀tì ń gbà (odo) àti ohun tí àwọn ìpamọ́ tí ó wà lábẹ́ rẹ̀ ń rí gbà (~4–5%) ti wà ní báyìí ní ọ̀pọ̀lọpọ̀ ọkẹ́ àìmọye dọ́là lọ́dọọdún.
+> - Ní **8 May 2026, BlackRock fi àwọn ìgbólóhùn ìforúkọsílẹ̀ SEC méjì sílẹ̀** tí wọ́n rí àlàfo yìí láì tàpá sí ìfòfindè èrè náà — nítorí kò sí ọjà kankan nínú méjèèjì tí ó jẹ́ stablecoin lábẹ́ òfin.
+> - **BRSRV** (BlackRock Daily Reinvestment Stablecoin Reserve Vehicle) jẹ́ money market fund tuntun kan tí ó ní owó lọ́wọ́, sub-93-day Treasuries, àti overnight Treasury repos. Ó ń gbé "OnChain Shares" jáde nípasẹ̀ framework oní-chain pupọ tí a fún ní àṣẹ pẹ̀lú Securitize Transfer Agent LLC gẹ́gẹ́ bí àkọsílẹ̀ òfin ti ohun-ìní. Ìdọgba owó tí ó kéré jù lọ: $3 million. A ṣe ẹ̀rọ rẹ̀ láti tóótù gẹ́gẹ́ bí ohun-ìní ìpamọ́ tí ó yẹ lábẹ́ GENIUS Act.
+> - **BSTBL** ni ìforúkọsílẹ̀ tí ó ní ìjẹ́pàtàkì jù lọ nípa architecture. Ó de ERC-20 share class mọ́ **Select Treasury Based Liquidity Fund ti BlackRock ti $6–7 billion** tí ó wà tẹ́lẹ̀, pẹ̀lú BNY Mellon Investment Servicing gẹ́gẹ́ bí transfer agent, tí ń ṣe àkọsílẹ̀ àwọn onípin lórí Ethereum. Ìgbà àkọ́kọ́ nìyí tí a fi public-Ethereum share class kún ọjà money market ti BlackRock tí ó wà tẹ́lẹ̀.
+> - Àwòrán yìí ti han kedere báyìí kọjá ilé-iṣẹ́ náà. **Tokenised money market funds ni architecture tí GENIUS Act, nípa fífòfindè èrè lórí stablecoins, sọ di dandan.** Ọjà tokenised Treasury ti $14 billion — tí BUIDL ti BlackRock ń ṣíwájú rẹ̀ pẹ̀lú ìpín nǹkan bí 40% — ni ìwòye àkọ́kọ́ lórí ibi tí ìgbì tókàn ti "wallet dollars" yóò wà.
+
+---
+
+## Ìforúkọsílẹ̀ tí Ó Tún Jẹ́ Ipò Ìlànà
+
+Àwọn ìforúkọsílẹ̀ BlackRock méjèèjì ti 8 May 2026 kò dé nínú òfo. Wọ́n dé ní ọ̀sẹ̀ kan lẹ́yìn tí BlackRock fi [lẹ́tà àròyé olójú-ewé mẹ́tàdínlógún ⧉](https://www.theblock.co/post/399812/blackrock-urges-occ-to-drop-tokenized-reserve-cap-idea-expand-eligible-assets-in-genius-act-comment-letter "BlackRock rọ OCC láti jáwọ́ nínú èrò tokenized reserve cap, kí wọn sì mú àwọn ohun-ìní tí ó tóótù fẹ̀ sì i nínú lẹ́tà àròyé ti GENIUS Act") ránṣẹ́ sí Office of the Comptroller of the Currency ní ọjọ́ ìkẹyìn ti fèrèsé àríyànjiyàn fún àwọn òfin ìmúṣẹ GENIUS Act rẹ̀ — àti ọjọ́ mẹ́rin lẹ́yìn tí [BlackRock tẹ àkópọ̀ gbangba kan jáde lórí X ⧉](https://beincrypto.com/blackrock-occ-stablecoin-genius-act-comment/ "BlackRock Tì Àwọn Òfin Stablecoin ti OCC Lẹ́yìn Lábẹ́ GENIUS Act") ti àwọn ìṣàpèjúwe kókó méje rẹ̀ sí ilé-iṣẹ́ náà.
+
+Àwọn ìṣàpèjúwe náà àti àwọn ìforúkọsílẹ̀ tuntun jẹ́ ohun tí ó yẹ kí a kà gẹ́gẹ́ bí ìwé kan ní apá méjì. Lẹ́tà àròyé náà jiyàn pé ó yẹ kí OCC jáwọ́ nínú àbá 20% cap rẹ̀ lórí tokenised reserve assets, láti fìdí rẹ̀ múlẹ̀ pé àwọn ETF tí ó tóótù ń gba ìtọ́jú kanna bíi government money market funds, kí wọ́n sì gba àwọn GMMF tí ń yanjú ní ọjọ́ kanna láti kà mọ́ weekly liquidity floor. Àwọn ìforúkọsílẹ̀ náà, lọ́jọ́ mẹ́rin lẹ́yìn náà, forúkọ àwọn ohun-èlò gangan tí ó ń jàǹfààní láti ara àwọn ipò wọnyí sílẹ̀: fund tuntun kan (BRSRV) tí a ṣe ẹ̀rọ rẹ̀ kedere láti tóótù gẹ́gẹ́ bí reserve tí ó yẹ lábẹ́ GENIUS Act, àti tokenised share class kan (BSTBL) lórí Treasury liquidity fund ti firm náà ti $6–7 billion tí ó wà tẹ́lẹ̀. Bálá tàbí bálà ni OCC yóò gba àwọn ipò ti BlackRock nínú òfin ìkẹyìn, firm náà ti gbé àwọn ọjà rẹ̀ sínú àríyànjiyàn ìlànà pẹ̀lú irú ìtọ́ka pàtó tí ó ṣòro fún olùṣàkóso láti gbójúfo.
+
+Èyí ni àyíká ilana fún ohun tí ó jọ, ní kíkà àkọ́kọ́, bíi kíkọ́ òfin lọ́nà ọlọ́gbọ́n. A tún lè kà á sí pípẹtẹ́ẹ́rẹ́ gẹ́gẹ́ bí olùṣàkóso ohun-ìní tí ó tóbi jù lọ lágbàáyé tí ń kéde ibi tí laini tí ó wà láàárín "stablecoin" àti "tokenised security" yóò wà nínú òfin US — àti fífòrúkọsílẹ̀ àwọn ọjà tí yóò gbé ní kọ̀ọ̀kan apá ti laini náà.
+
+## Ìdí tí Àwọn Stablecoin Kò Fi Lè San Èrè
+
+GENIUS Act, tí wọ́n tẹwọ́bọ̀ ní July 2025 tí ó sì jẹ́ ìpìlẹ̀ báyìí fún àwọn òfin tí ń kára wọn ti OCC, FDIC, àti Federal Reserve, ya ìyàtọ̀ tí ó ṣe kedere lọ́nà àrà ọ̀tọ̀. "Payment stablecoin" lábẹ́ Act náà jẹ́ digital asset tí a ṣe láti tọ́jú iye tí ó dúró sán-ún ní ìbáṣepọ̀ pẹ̀lú fiat currency, tí ó ní àwọn ìpamọ́ to lélẹ̀ tí ó ní dídára gíga, tí a sì lè rà padà ní par. "Permitted payment stablecoin issuer" (PPSI) jẹ́ àjọ tí ó gba àṣẹ federally tàbí ti state-chartered láti tẹ irú token bẹ́ẹ̀ jáde. Àti pé [Abala 4(a)(11) ti Act náà ⧉](https://www.lw.com/en/insights/occ-issues-proposal-to-implement-the-genius-act "OCC Mú Àbá Ìmúṣẹ GENIUS Act Jáde") fi dandan de PPSI kankan láti má ṣe san èrè tàbí owo èrè fún àwọn olùdìmú nítorí dídìmú, lílò, tàbí títọ́jú stablecoin náà lásán.
+
+[Àbá òfin ⧉](https://www.nixonpeabody.com/insights/alerts/2026/04/02/proposed-occ-regulations-for-payment-stablecoins-under-the-genius-act "Àwọn òfin OCC tí a dábàá fún payment stablecoins lábẹ́ GENIUS Act") ti OCC ní March 2026 fún ìfòfindè yìí ní agbára nípa ti iṣẹ́-ṣíṣe. Ó fi ìdánilójú tí a lè já níkòò lélẹ̀ pé àwọn ètò tí ń darí èrè nípasẹ̀ alájọṣe tàbí ẹgbẹ́ kẹta tí ó ní ìbáṣepọ̀ — fún àpẹẹrẹ, crypto exchange kan tí ń san "loyalty rewards" fún àwọn olùdìmú ti stablecoin kan pato — tún tàpá sí ìfòfindè náà, pẹ̀lú ẹrù lórí olùtẹ̀jáde láti fi hàn bẹ́ẹ̀ kọ́. Àwọn ètò white-label, nínú èyí tí PPSI ti ń tẹ àwọn digital asset jáde lábẹ́ orúkọ alájọṣepọ̀ kan tí ó sì ń san èrè lẹ́yìn náà, ni a tọ́ka sí kedere bí èyí tí a lè pè ní ẹlẹ́tàn. Office of the Comptroller [tọ́ka sí i ní ìbẹ̀rẹ̀ ọdún 2026 ⧉](https://www.compliancecorylated.com/news/us-occ-closes-genius-act-loophole-allowing-yield-bearing-stablecoins/ "US OCC Pa Àyè Àbákò ti GENIUS Act Tí Ń Gba Àwọn Stablecoin Tí Ń San Èrè Láyè") pé àyè àbákò ti awoṣe olùtẹ̀jáde-ń-san-nípasẹ̀-alájọṣe kò ní yè nínú òfin ìkẹyìn ní eyikeyìí ọ̀nà tí ó gba ààyè.
+
+Àwọn èrò lórí ìmọ̀ ètò ọrọ̀ ajé fún ìfòfindè yìí ni a ń jiyàn lórí rẹ̀. Àwọn àkọsílẹ̀ láti ẹnu ilé-iṣẹ́ banki sí OCC jiyàn fún ìfòfindè mímú náà lórí pé àwọn stablecoin tí ń san èrè yóò gba àwọn transactional bank deposits lọ́wọ́ — ọjà tí [advisory council ti US Treasury ṣe àṣàyàn rẹ̀ sí nǹkan bí $6.6 trillion ⧉](https://www.congress.gov/crs-product/IF13174 "Àríyànjiyàn Èrè Stablecoin — Congressional Research Service"), nínú èyí tí apá tí ó níye wà ní "ewu" láti ara ìfagbágbà pẹ̀lú àwọn tí ń mú èrè wá gẹ́gẹ́ bí dọ́là-substitutes. Àwọn àkọsílẹ̀ láti ilé-iṣẹ́ crypto, tí Coinbase ń ṣíwájú rẹ̀, jiyàn ní idakeji: pé àwọn ìsúnniṣe jẹ́ kókó fún ìfagbágbà nínú ìsanwó, àti pé ìfòfindè gbòòrò yóò mú àwọn welfare costs wá láì ní ipa pàtàkì lórí yíyáwó banki.
+
+Èyíkéyìí apá tí ó ní àríyànjiyàn ìlànà tí ó dára jù, èsì òfin fún ìsinsìnyí ti fìdí múlẹ̀: stablecoin nínú ìtumọ̀ àkóso ti GENIUS Act kò lè san èrè fún olùdìmú rẹ̀. Ohun tí kò lè ṣe, sibẹsibẹ, ni láti ṣalaye ohun tí olùdìmú lè ṣe pẹ̀lú owó wọn lẹ́yìn náà. Àti pé níbí ni architecture ti yapa síra wọn.
+
+## Architecture ti BRSRV
+
+BlackRock Daily Reinvestment Stablecoin Reserve Vehicle, nínú iṣẹ́ rẹ̀ nínú, jẹ́ money market fund tí kò ní ohun àrà kankan lórí rẹ̀. Ó ní owó lọ́wọ́, àwọn US Treasury securities tí wọ́n ń gbó kọjá ọjọ́ 93 tàbí díẹ̀ sí i, àti overnight repurchase agreements tí Treasuries tì lẹ́yìn. Ó wà ní ìbáṣepọ̀ pẹ̀lú Rule 2a-7 lábẹ́ Investment Company Act ti 1940 — architecture àkóso kanna tí ó ti ń ṣàkóso àwọn institutional money market funds fún ọdún mẹ́wàá mẹ́rin. Èrè rẹ̀, gẹ́gẹ́ bí gbogbo MMF ti ijọba miiran, wá láti ara short-Treasury rate tí ó wà lọ́wọ́.
+
+Ohun tí ó jẹ́ tuntun ni share class náà. Àwọn ìpín BRSRV ni a gbé jáde gẹ́gẹ́ bí ["OnChain Shares" nípasẹ̀ framework tí a fún ní àṣẹ ⧉](https://unchainedcrypto.com/blackrock-files-for-two-new-tokenized-money-market-funds-targeting-stablecoin-capital/ "BlackRock Fi Ìforúkọsílẹ̀ fún Àwọn Tokenized Money-Market Funds Tuntun Méjì tí Wọ́n Gbájúmọ́ Stablecoin Capital") tí ó sopọ̀ mọ́ blockchain gbangba lọ́pọ̀lọpọ̀, pẹ̀lú [Securitize Transfer Agent LLC tí ń ṣiṣẹ́ gẹ́gẹ́ bí transfer agent gbangba ⧉](https://www.crowdfundinsider.com/2026/05/278346-blackrock-focuses-on-tokenization-initiatives-with-blockchain-enabled-funds/ "BlackRock Gbájúmọ́ Àwọn Ètò Tokenization pẹ̀lú Àwọn Funds tí Blockchain Tì Lẹ́yìn"). Àwọn ètò ìdánimọ̀ off-chain — irú kíkọ́ KYC kanna tí ó ti tì fún [BUIDL fund ⧉](https://stablecoininsider.org/top-10-tokenized-treasury-funds-in-2026-buidl-benji-and-the-highest-yielding-on-chain-options/ "Àwọn Fund Treasury Tokenized Mẹ́wàá Kókó ní 2026") ti BlackRock ti $2.9 billion tí ó wà tẹ́lẹ̀ — ń sopọ̀ wallet addresses mọ́ àwọn olùdókòwò tí a ti fìdí rẹ̀ múlẹ̀. Ìdọgba owó tí ó kéré jù lọ: $3 million. Ìforúkọsílẹ̀ náà kò tíì dárúkọ irú blockchains tí fund náà yóò tì lẹ́yìn nígbà tí yóò bẹ̀rẹ̀.
+
+Ọjà yìí jẹ́ ohun tí a ṣe ẹ̀rọ rẹ̀ kedere, [gẹ́gẹ́ bí ọ̀pọ̀lọpọ̀ àwọn orísun ti tọ́ka sí ⧉](https://cryptobriefing.com/blackrock-tokenized-money-market-funds-stablecoins/ "BlackRock Tẹnu mọ́ Tokenization pẹ̀lú Àwọn Stablecoin Reserve Funds Tuntun"), láti tóótù gẹ́gẹ́ bí eligible reserve asset lábẹ́ GENIUS Act. Olùrà tí a gbájúmọ́ kì í ṣe olùlò wàlẹ́ẹ̀tì rẹ́táìlì. Ó jẹ́ stablecoin issuer (tàbí treasury operation tí ó ní stablecoins gẹ́gẹ́ bí apá kan ti working-capital strategy rẹ̀) tí ó nílò ohun-èlò tí ń mú Treasury-yield wá tí ó lè dìmú programmatically lórí rails blockchain kanna bíi stablecoins gangan. Ìpolówó náà, ní sísọ ọ́ di gírí sí gbólóhùn kan, ni: pa àwọn ìpamọ́ rẹ mọ mọ́ lórí chain, gba èrè Treasury, kí o sì tẹ́ olùṣàkóso lọ́rùn.
+
+Fún BlackRock, ipò ilana náà ṣe kedere ju bí ó ti rí lọ. BUIDL fund rẹ̀ tí ó wà tẹ́lẹ̀ ti ń tẹ́lẹ̀ tì ju 90% ti àwọn ìpamọ́ ti méjì nínú àwọn ọjà tí ó ní ìbáṣepọ̀ mọ́ stablecoin "tí ń mú èrè wá" — USDtb ti Ethena àti JupUSD ti Jupiter tí ó dórí Solana. BRSRV ni àfikún pàtó ti ipò yẹn tí ó mọ̀ nípa GENIUS: ọjà wholesale Treasury-yield tí a kọ́ fún reserve-management workflow ti gbogbo PPSI tí yóò wà lábẹ́ ètò tuntun náà.
+
+## Architecture ti BSTBL
+
+Ìforúkọsílẹ̀ kejì jẹ́ èyí tí ó fani mọ́ra nípa ti iṣẹ́-ṣíṣe tí ó sì tún ṣe pàtó nípa ti architecture. BSTBL — on-chain share class fún Select Treasury Based Liquidity Fund ti BlackRock tí ó wà tẹ́lẹ̀ — kì í ṣe fund tuntun. Ó jẹ́ share class tuntun tí a gbé lé ọjà money market kan tí ó ti ń ṣàkóso nǹkan bí $6–7 billion nínú ohun-ìní, tí wọ́n [tún tò ní October 2025 sí ètò tí ó wà ní ìbáṣepọ̀ mọ́ GENIUS ⧉](https://www.theblock.co/post/399812/blackrock-urges-occ-to-drop-tokenized-reserve-cap-idea-expand-eligible-assets-in-genius-act-comment-letter "BlackRock rọ OCC láti jáwọ́ nínú èrò tokenized reserve cap") pẹ̀lú 5 p.m. ET trading deadline àti Treasury-heavy mandate, tí wọ́n sì ń gbòkúfà rẹ̀ báyìí lórí Ethereum gẹ́gẹ́ bí ERC-20 token.
+
+Transfer agent fún share class yìí ni [BNY Mellon Investment Servicing ⧉](https://www.mexc.com/news/1080472 "BlackRock fi ìforúkọsílẹ̀ fún àwọn tokenized funds tuntun méjì sílẹ̀ pẹ̀lú SEC ti U.S. lórí Ethereum"), tí yóò pa àkọsílẹ̀ onípin gbangba mọ́ lórí Ethereum nípa lílo ERC-20 standard. KYC infrastructure ti off-chain ń sopọ̀ wàlẹ́ẹ̀tì mọ́ àkọsílẹ̀ ìdánimọ̀ olùdókòwò, gẹ́gẹ́ bí ó ti ń ṣe fún BUIDL àti fún gbogbo fund tokenised miiran tí ó bá òfin mu nínú ọjà lónìí. Ìyàtọ̀ pàtàkì láti ara BRSRV ni chain náà (Ethereum, gbangba, pẹ̀lú ERC-20 token gẹ́gẹ́ bí aṣojú ìpín) àti transfer agent (BNY dípò Securitize) — àti pé otitọ ni pé ìgbà àkọ́kọ́ nìyí tí a fi public-Ethereum share class kọ mọ́ MMF ti BlackRock tí ó wà tẹ́lẹ̀.
+
+Kókó ìkẹyìn yìí jẹ́ ohun tí ó yẹ kí á gbéyẹ̀wò dáradára. Àwọn ọjà tokenised ti BlackRock ti tẹ́lẹ̀ — BUIDL gẹ́gẹ́ bí olórí wọn — ni a gbé kalẹ̀ bí àwọn fund tuntun pẹ̀lú architecture tí ó jẹ́ on-chain native. BSTBL gba ọ̀nà miiran tí ó tún ní ipa púpọ̀ sí i: sísọ ọjà money market tí ó wà tẹ́lẹ̀, tí ó tóbi, tí ó sì wọ́pọ̀ di tokenised nípa kíkún share class tuntun kan mọ́ ọn, dípò kíkọ́ ètò tí ó wà ní ẹ̀gbẹ́ rẹ̀. Ìtumọ̀ èyí ni pé eyikeyìí MMF ti BlackRock tí ó wà tẹ́lẹ̀ lè tẹ̀lé irú àwòrán kanna nínú ìlànà. Gẹ́gẹ́ bẹ́ẹ̀ ni eyikeyìí MMF ti alájọṣe miiran — Vanguard, Fidelity, JPMorgan, State Street. Ìdènà architecture fún sísọ gbogbo ilé-iṣẹ́ conventional money market fund di tokenised ti kéré púpọ̀ sí i lẹ́yìn BSTBL ju ti tẹ́lẹ̀ lọ.
+
+Fún àyíká ti ilé-iṣẹ́ náà: àwọn tokenised US Treasuries ti dàgbà láti nǹkan bí $2 billion sí [$14 billion ní May 2026 ⧉](https://www.mexc.com/news/1080472 "BlackRock fi ìforúkọsílẹ̀ fún àwọn tokenized funds tuntun méjì sílẹ̀ pẹ̀lú SEC ti U.S. lórí Ethereum"), pẹ̀lú BUIDL ti BlackRock ní nǹkan bí 40% ìpín ọjà, BENJI/FOBXX ti Franklin Templeton ní $850 million, àti àwọn ọjà OUSG àti USDY ti Ondo Finance ní ipò kejì. $50–100 billion tókàn ti fẹ́rẹ̀ bẹ̀rẹ̀ sí ní yí nípasẹ̀ àwọn ìforúkọsílẹ̀ bíi BSTBL.
+
+## Payment Stablecoin vs Tokenised Money Market Fund: Ìyàtọ̀ tí Ó Kàn Pàtàkì
+
+Fún olùkà tí kì í ṣe ọ̀jọ̀gbọ́n, ìyàtọ̀ láàárín "stablecoin" àti "tokenised money market fund share" lè jọ bí kókó òfin àkóso lásán. Kò rí bẹ́ẹ̀. Àwọn ohun-èlò méjèèjì yìí wà ní àwọn ipò ọ̀tọ̀ọ̀tọ̀ nínú òfin securities ti US, tí àwọn àbájáde rẹ̀ sì ń ṣàn jáde lára gbogbo àpẹẹrẹ ti ọjà náà.
+
+| Abala | Payment Stablecoin (lábẹ́ GENIUS Act) | Tokenised MMF Share (àwòrán BRSRV / BSTBL) |
+|---|---|---|
+| Ipò òfin | Ohun-èlò ìsanwó (Payment instrument) | Security (ìpín fund) |
+| Ètò àkóso | GENIUS Act; àwọn òfin OCC/FDIC/Fed | Investment Company Act 1940; Rule 2a-7 |
+| Olùtẹ̀jáde | Permitted Payment Stablecoin Issuer (PPSI) | Fund tí a forúkọsílẹ̀ sí SEC (àti transfer agent) |
+| Àwọn ibeere ìpamọ́ | Cash, short Treasuries, repos — mímú | Cash, short Treasuries, repos — Rule 2a-7 |
+| Lè san èrè fún olùdìmú | **Bẹ́ẹ̀ kọ́** (Abala 4(a)(11)) | **Bẹ́ẹ̀ ni** (èrè náà ni àbájáde lórí ìpín) |
+| Ìràpadà | At par, nígbà tí a bá béèrè | At NAV, ní gbogbogbo T+0 tàbí T+1 |
+| Àkọsílẹ̀ ohun-ìní | Wallet olùtẹ̀jáde / on-chain | Transfer agent (òfin); blockchain (iṣẹ́-ṣíṣe) |
+| Ìdọgba owó tí ó kéré jù | Kò sí (tí rẹtáìlì wọ́pọ̀) | Púpọ̀ ($3M fún BRSRV; ti institutional fún BSTBL) |
+| Composability pẹ̀lú DeFi | Gíga | Gíga (BUIDL ni àwòrán àkọ́kọ́) |
+| Ìrírí olùlò nínú wàlẹ́ẹ̀tì | Token tí ó ní $1 | Token tí iye rẹ̀ ń pọ̀ sí i sí apá èrè |
+| Ewu ti rírọ̀pò bank-deposit | Àníyàn àkóso gbangba | Kéré púpọ̀ (security, kì í ṣe bíi deposit) |
+
+*Orísun: Àkópọ̀ ti ọ̀rọ̀ GENIUS Act, OCC March 2026 NPRM, àwọn ìforúkọsílẹ̀ BlackRock ti 8 May 2026, àti framework ti Rule 2a-7.*
+
+Laini ìsàlẹ̀ jù lọ ni èyí tí ó ṣàlàyé architecture ti àkóso. Payment stablecoin tí ń san èrè ń jọ, lójú olùṣàkóso banki, bíi rírọ̀pò deposit. Tokenised money market fund share tí ń san èrè ń jọ bíi security — àti pé àwọn security tí ń figagbága pẹ̀lú deposits kì í ṣe àníyàn tuntun, nítorí àwọn conventional money market fund ti ṣe gangan bẹ́ẹ̀ fún ogójì ọdún. GENIUS Act fa laini rẹ̀ sí ibi àníyàn rírọ̀pò deposit. Gbogbo ohun tí ó bá wà ní kedere ní apá security ti laini yẹn, nípasẹ̀ ìkọ́ rẹ̀, kò sí lábẹ́ ìfòfindè èrè ti Act náà.
+
+## Ṣé Àyè Àbákò Nìyí?
+
+Ó rọrùn — àti pé ètò yìí ti hàn káàkiri lórí LinkedIn àti crypto-Twitter láti ìgbà ìforúkọsílẹ̀ náà — láti pe èyí ní "àyè àbákò" (loophole) nínú GENIUS Act: àwọn stablecoin kò lè san èrè, nítorí náà BlackRock fi ohun kan tí kò jẹ́ stablecoin lábẹ́ òfin sílẹ̀. Ètò náà mú orí-ọ̀rọ̀ náà lọ́nà ọlọ́gbọ́n. Gẹ́gẹ́ bí ìsọsọ òfin, ó dín nǹkan kù mọ́ agbára rẹ̀ gangan.
+
+Ìfòfindè èrè nínú GENIUS Act jẹ́ yíyàn ìlànà pàtó pẹ̀lú ibi-afẹ́de pàtó: ewu rírọ̀pò deposit sí ilé-iṣẹ́ banki láti ara irú ohun-èlò tí a ṣe láti ṣiṣẹ́ gẹ́gẹ́ bí owó. Àwọn tokenised money market fund kò jẹ́ ohun tí a ṣe láti ṣiṣẹ́ gẹ́gẹ́ bí owó; a ṣe wọ́n láti ṣiṣẹ́ gẹ́gẹ́ bí fund shares, pẹ̀lú gbogbo ẹrù àkóso (Rule 2a-7, reserves tí a ṣe audit rẹ̀, NAV disclosure, àkọsílẹ̀ òfin ti ohun-ìní ti transfer-agent) tí ó ti ń ṣiṣẹ́ lórí abala yẹn fún ọ̀pọ̀lọpọ̀ ọdún. Lílọ tí àwọn fund shares wọnyí lọ báyìí láti yanjú lórí Ethereum tàbí blockchain gbangba miiran kò yí ohun tí wọ́n jẹ́ padà nínú òfin securities. [Àbá òfin ⧉](https://www.morganlewis.com/pubs/2026/04/occs-genius-act-proposal-what-prospective-issuers-need-to-know "Àkóso Stablecoin: Àbá OCC Lábẹ́ GENIUS Act") ti OCC fúnra rẹ̀ gba tokenised reserves gẹ́gẹ́ bí abala tí ó tọ̀nà — àríyànjiyàn tí ó wà ní gbangba ni cap 20% náà, kì í ṣe wíwà ti abala ohun-ìní náà.
+
+Ohun tí ó jẹ́ tuntun gangan ni ìrírí olùlò. Olùdìmú ti tokenised MMF share, nínú wàlẹ́ẹ̀tì lórí chain gbangba, ní ohun kan tí ó *jọ* stablecoin (token tí a lè tà, tí a lè gbé láti ọwọ́ kan sí òmíràn, tí ó lè ṣiṣẹ́ pẹ̀lú DeFi infrastructure) ṣùgbọ́n tí ó *ń ṣiṣẹ́* bíi security (NAV ń pọ̀ sí i, olùdìmú wà lórí àkójọ KYC, àkọsílẹ̀ ti transfer agent ni ó ń ṣàkóso lábẹ́ òfin). Ètò orí-ọ̀rọ̀ náà — "kì í ṣe stablecoin lábẹ́ òfin" — jẹ́ òtítọ́ níwọ̀n bí ó ti mọ. Ìwòye tí ó jinlẹ̀ jù ni pé GENIUS Act, nípa fífòfindè èrè lórí abala payment-stablecoin, sọ ọ́ di *dandan* fún ilé-iṣẹ́ náà láti péjúpọ̀ lórí tokenised MMF gẹ́gẹ́ bí olùgbé fún àwọn dọ́là tí ń mú èrè wá lórí chain. Act náà fa laini kan; ilé-iṣẹ́ náà, gẹ́gẹ́ bí a ti reti, ṣètò àwọn ọjà tí ó wà ní apá tí ó dára jù ti laini náà. Èyí kò jẹ́ àyè àbákò. Ó jẹ́ iṣẹ́ ti architecture ti àkóso tí ń ṣiṣẹ́ nǹkan bí a ti pinnu rẹ̀ — paapaa tí iyára tí ó fi ń gbé àwọn ọjà institutional jáde yára ju bí ọ̀pọ̀lọpọ̀ àwọn olùkópa ti reti lọ.
+
+## Ohun tí Èyí Ní Lọ́kàn nípa Abala Kọ̀ọ̀kan
+
+Àwọn àbájáde ti àwọn ìforúkọsílẹ̀ ti 8 May kò rí kanna. Èsì ilana náà yapa púpọ̀ lórí ibi tí àjọ kan bá wà nínú value chain náà.
+
+### Àwọn Olùtẹ̀jáde Stablecoin (PPSI)
+
+Fún Circle, Tether, PayPal, àti ìran tókàn ti àwọn payment stablecoin tí banki ń tẹ̀jáde, BRSRV jẹ́ èsì iṣẹ́-ṣíṣe sí ìbéèrè tí ó ti ní àwọn èsì ad-hoc nìkan títí di ìsinsìnyí: ibo ni àwọn ìpamọ́ ń gbé nígbà tí wọ́n bá nílò láti jẹ́ Treasury-yielding àti natively lórí chain kanna bíi stablecoin tí a tẹ̀jáde? Dídìmú T-bills tààrà ń ṣiṣẹ́ ní ìwọ̀n ìtẹ̀jáde ṣùgbọ́n ó nira fún iṣẹ́-ṣíṣe. Dídìmú BUIDL ń ṣiṣẹ́, ṣùgbọ́n a kò kọ́ BUIDL ní pàtó láti yípo framework ìpamọ́ ti GENIUS Act. BRSRV ni a kọ́ fún èyí. Àbájáde ìfagbágbà ni pé Circle, Tether, àti àwọn PPSI tí banki ń tẹ̀jáde ní báyìí ní ọjà wholesale tí a ṣe ẹ̀rọ rẹ̀ fún GENIUS tí ó ṣe gbéyẹ̀wò láti fi sínú reserve management wọn — àti pé marginal cost ti yíyí àwọn ìpamọ́ padà sínú ọjà BlackRock ti kéré púpọ̀ nípa ti architecture ju bí ó ti rí rí lọ.
+
+### Àwọn Banki àti Àwọn Olùṣàkóso Money Market Fund
+
+Fún àwọn banki tí ń ṣiṣẹ́ àwọn franchise money market fund nla — JPMorgan, State Street, BNY Mellon, Northern Trust, Vanguard, Fidelity — BSTBL ni àwòrán iṣẹ́-ṣíṣe fún ohun tí àwọn ọjà wọn yóò ní láti ṣe lọ́jọ́ iwájú. Àwòrán architecture náà ti han kedere báyìí: gba MMF tí ó wà tẹ́lẹ̀, forúkọ share class tuntun ti on-chain sílẹ̀ pẹ̀lú SEC, yan transfer agent láti pa àkọsílẹ̀ onípin mọ́ lórí Ethereum (tàbí blockchain gbangba nla miiran), kí o sì ṣàkóso àyè wíwọlé nípasẹ̀ KYC ti off-chain. Ìdènà láti wọlé fún tokenised share class lórí MMF ti $10–50 billion tí ó wà tẹ́lẹ̀, nínú àwòrán BSTBL, jẹ́ ọ̀rọ̀ àkóso àti iṣẹ́-ṣíṣe ju ti ẹ̀rọ lọ. Ipa ti BNY Mellon gẹ́gẹ́ bí transfer agent fún BSTBL — tí ń ṣiṣẹ́ gẹ́gẹ́ bí transfer agent gbangba ⧉ — fúnra rẹ̀ jẹ́ àmì pé a ń mú transfer-agent infrastructure ti àtọwọ́dọ́wọ́ lọ sí orí blockchain gbangba nípasẹ̀ àwọn àjọ gangan tí wọ́n ti ń ṣàkóso àkọsílẹ̀ òfin ti ohun-ìní fund fún ọ̀pọ̀lọpọ̀ ọdún.
+
+### Àwọn Ètò DeFi àti On-Chain Treasury
+
+Fún àwọn ètò DeFi, BRSRV àti BSTBL mú àwòrán tí BUIDL bẹ̀rẹ̀ gbòòrò sí i: sísun ohun-ìní Treasury tí ó dára láti àwọn off-chain custodial accounts sínú àwọn ohun-èlò on-chain tí a lè lò pẹ̀lú yíyáwó, derivatives, àti àwọn structured products. USDtb ti Ethena àti JupUSD ti Jupiter jẹ́ àpẹẹrẹ ti àwọn tó yára kọ́kọ́ gbéyẹ̀wò; ààyè àpẹẹrẹ lẹ́yìn wọn ti fẹ̀ púpọ̀ sí i báyìí. Ohun tí ó jẹ́ ewu — tí ó sì ṣe pàtàkì — ni pé àwọn ohun-èlò abẹ́rẹ̀ wọnyí jẹ́ KYC-gated tí wọ́n sì ní àṣẹ, èyí tí ó dín ìwọ̀n "permissionless" composition tí àwọn ètò DeFi-native lè gbẹ́kẹ̀ lé kù. Àwọn àwòrán àkópọ̀ tí yóò jáde ní oṣù méjìlá tókàn yóò pinnu bí tokenised MMF yóò ṣe di primary collateral layer ti on-chain economy.
+
+### Àwọn Olùṣàkóso
+
+Fún OCC, FDIC, àti Federal Reserve, àwọn ìforúkọsílẹ̀ ti 8 May ṣàlàyé ohun tí a ń béèrè lọ́wọ́ ààlà àkóso láti gba nǹkan mọ́ra. Ìfòfindè èrè nínú GENIUS Act kò dínà èrè on-chain láti dé ọwọ́ àwọn olùdìmú wàlẹ́ẹ̀tì; ó ti gbé architecture fún fífúnni ní èrè yẹn láti abala payment-stablecoin (tí àwọn olùṣàkóso ń ṣàkóso rẹ̀ tààrà) lọ sí abala registered-fund (tí SEC ń ṣàkóso rẹ̀). Èyí kì í ṣe èsì búburú dandan — àwọn registered funds jẹ́ abala àkóso tí a mọ̀ dáradára — ṣùgbọ́n ó túmọ̀ sí pé ìbéèrè lórí ìṣàkóso àjọ-kọjá-àjọ yóò múra sí i nípa ti iṣẹ́-ṣíṣe. Òfin ìkẹyìn ti OCC, tí a reti ní January 2027, yóò pinnu bóyá cap 20% lórí tokenised reserves yóò yè ní eyikeyìí ọ̀nà, àti pé bóyá laini tí ó wà láàárín "payment stablecoin" àti "tokenised MMF share" yóò wà ní ipò olùtẹ̀jáde tàbí yóò gbà láti yọ́ kúrò sí i ní ipò wàlẹ́ẹ̀tì.
+
+## Ìparí
+
+Àwọn ìforúkọsílẹ̀ ti 8 May 2026 kì í ṣe, fúnrawọn, ìyípadà pàtó. Wọ́n jẹ́ ọjà kọ̀ọ̀kan láti ẹnu olùṣàkóso ohun-ìní kan ṣoṣo, tí wọ́n fi sílẹ̀ nínú fèrèsé àkóso pàtó tí òfin OCC ṣí sílẹ̀. Ohun tí wọ́n rí mú, sibẹsibẹ, ni àwòrán ìyípadà ní ipò ilé-iṣẹ́ tí ó ti ń han kedere láti ìgbà tí BlackRock ti gbé BUIDL jáde ní March 2024 àti pé GENIUS Act ti mú kí ó yára sí i báyìí dípò kí ó dínà rẹ̀.
+
+Àwọn stablecoin, nínú ìtumọ̀ GENIUS Act, yóò tẹ̀síwájú láti ṣe ohun tí stablecoins ti dára fún nígbà gbogbo: settlement tí ó múnádóko, ìsanwó kọjá-ààlà tí ó yára kánmọ́, programmable money fún àwọn use cases tí wọ́n nílò ẹyọ kan tí ó dúró sán-ún fún àkọsílẹ̀. Wọn kò ní, lábẹ́ àwọn òfin lọ́wọ́lọ́wọ́ àti àwọn tí a béèrè fún, san èrè fún àwọn olùdìmú wọn. Dọ́là tí ń mú èrè wá nínú wàlẹ́ẹ̀tì — ọjà tí ó gba form factor kanna bíi stablecoin ṣùgbọ́n tí ó ń kó Treasury yield jọ fún olùdìmú rẹ̀ — yóò jẹ́ tokenised money market fund share, tí registered fund kan tẹ̀jáde, pẹ̀lú transfer agent (Securitize, BNY Mellon, àti boya àwọn miiran lọ́pọ̀lọpọ̀) gẹ́gẹ́ bí àkọsílẹ̀ òfin ti ohun-ìní. BRSRV àti BSTBL jẹ́ àwọn àmì institutional àkọ́kọ́ ti àwòrán yẹn. Wọn kò ní jẹ́ àwọn ìkẹyìn.
+
+Fún àyíká ti tẹ́lẹ̀ lórí ojú-òpó wẹ́ẹ̀bù yìí, [àpilẹ̀kọ ti January 2018 lórí Ethereum technology stack ⧉](https://sebastienrousseau.com/2018-01-09-understanding-the-technology-behind-blockchain/index.html "Ìtumọ̀ Ẹ̀rọ Ìṣiṣẹ́ ti Blockchain") sọ nípa substrate lórí èyí tí BSTBL wà báyìí, [àpilẹ̀kọ ti January 2018 lórí ERC-20 standard ⧉](https://sebastienrousseau.com/2018-01-24-the-erc-20-token-standard/index.html "ERC-20: Ethereum Token Interface tí Ó Yí Ayé Padà") sọ nípa share-class representation tí BlackRock ti yàn, [àpèjúwe ti February 2018 lórí faster-payment cryptocurrencies ⧉](https://sebastienrousseau.com/2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution/index.html "Ìṣíyà ti Cryptocurrency Tuntun àti Fífúnni ní Ìpèsè Ìsanwó tí Ó Yára sí i lọ́jọ́ Iwájú") sọ nípa ìṣòro ìrírí olùlò tí àwọn oní-chain tí ń mú èrè wá ń yanjú fún apá kan báyìí, àti [àpilẹ̀kọ tuntun lórí SWIFT CBPR+ structured-address deadline](https://sebastienrousseau.com/2026-05-12-iso-20022-pacs008-structured-address-deadline/index.html "Àkókò Ìparí pacs.008 Structured-Address ti November 2026") wà ní ẹ̀gbẹ́ nínú àríyànjiyàn ìgbàlódé ti ìsanwó gbòòrò tí àwọn ìforúkọsílẹ̀ BlackRock náà tún jẹ́ apá kan rẹ̀. Kókó ti wíwò wọ́n papọ̀ yìí kì í ṣe láti sọ pé eyikeyìí architecture kan ti borí. Ó jẹ́ pé àwọn ètò ìnáwó institutional àti on-chain, ní ọdún 2026, ń péjúpọ̀ lórí àwọn primitives tí wọ́n pín papọ̀ yára ju bí eyikeyìí nínú wọn ti lérò rẹ̀ ní ọdún kan sẹ́yìn.
+
+## Àwọn Ìbéèrè tí A Ń Béèrè Lọ́pọ̀lọpọ̀
+
+**Kí ni ìyàtọ̀ gangan láàárín BRSRV/BSTBL àti stablecoin bíi USDC?**
+
+Nínú wàlẹ́ẹ̀tì, ìyàtọ̀ náà kò han rárá ní gbogbogbo. Kọ̀ọ̀kan jẹ́ fungible token lórí blockchain gbangba, tí a lè rà padà fún dọ́là (tàbí fún iye ìpín fund abẹ́rẹ̀), tí ó sì lè ṣiṣẹ́ pẹ̀lú DeFi. Nínú òfin, ìyàtọ̀ náà pọ̀. USDC jẹ́ payment stablecoin lábẹ́ GENIUS Act, tí Permitted Payment Stablecoin Issuer tẹ̀jáde, tí wọ́n sì fòfindè láti san èrè fún àwọn olùdìmú. BRSRV àti BSTBL jẹ́ share classes ti àwọn registered money market funds lábẹ́ Investment Company Act ti 1940, tí wọ́n ń ṣàkóso lábẹ́ Rule 2a-7, níbi tí èrè náà ti jẹ́ àbájáde àtọwọ́dọ́wọ́ lórí ìpín. Olùdìmú BRSRV jẹ́, lábẹ́ òfin, onípin ti fund kan. Olùdìmú USDC jẹ́, lábẹ́ òfin, olùdìmú ti ohun-èlò ìsanwó (payment instrument).
+
+**Kí nìyí tí BSTBL fi yàtọ̀ sí BUIDL tá a bá rí i pé méjèèjì jẹ́ tokenised BlackRock funds lórí Ethereum?**
+
+BUIDL, tí wọ́n gbé jáde ní March 2024, ni a ṣètò gẹ́gẹ́ bí fund tuntun pẹ̀lú architecture on-chain native láti ìbẹ̀rẹ̀, pẹ̀lú Securitize gẹ́gẹ́ bí alájọṣepọ̀ àti apẹẹrẹ native fún workflow ti digital-asset. BSTBL, ní idakeji, jẹ́ on-chain share class tuntun tí a kún mọ́ conventional money market fund ti $6–7 billion tí ó wà tẹ́lẹ̀ — Select Treasury Based Liquidity Fund. BNY Mellon ń ṣiṣẹ́ gẹ́gẹ́ bí transfer agent. Ìjẹ́pàtàkì architecture rẹ̀ ni pé BSTBL fi hàn bí a ṣe lè mú ọjà money-market ti àtọwọ́dọwọ́ tí ó wà tẹ́lẹ̀, tí ó sì tóbi, wá sínú on-chain láì tún un kọ́ gẹ́gẹ́ bí fund tuntun. Àwòrán yẹn, bí ó bá ṣiṣẹ́, ni a lè gbé lọ sí eyikeyìí MMF conventional nínú ilé-iṣẹ́ náà.
+
+**Kí nìyí tí cap 20% ti OCC lórí tokenised reserves fi dá àríyànjiyàn sílẹ̀?**
+
+Àbá ti OCC ní March 2026 mú ààlà 20% tí ó lè wà lélẹ̀ wá lórí iye ti reserves ti stablecoin issuer tí a lè dìmú ní irú tokenised. Lẹ́yìn-ọ̀rẹyìn ti BlackRock jiyàn pé èyí yóò jẹ́ "ohun àjèjì" sí àwọn ibi-afẹ́de àkóso ti OCC, nítorí risk profile ti reserve asset jẹ́ ohun tí credit quality, duration, àti liquidity ń darí — kì í ṣe nípa bóyá a dìmú rẹ̀ tàbí a gbé e kọjá lórí distributed ledger. Nípa ti iṣẹ́-ṣíṣe, cap náà yóò dínà ipa ti BUIDL gẹ́gẹ́ bí reserve backing gbangba fún àwọn ọjà bíi USDtb ti Ethena àti JupUSD ti Jupiter, tí méjèèjì gbẹ́kẹ̀ lé BUIDL lọ́wọ́lọ́wọ́ fún ohun tí ó ju 90% ti reserves wọn. Òfin ìkẹyìn ti OCC, tí a reti ní January 2027, yóò pinnu bóyá cap náà yóò yè, yóò fi kún un, tàbí yóò jáwọ́ nínú rẹ̀.
+
+**Kí ni ó túmọ̀ sí pé ìforúkọsílẹ̀ BRSRV kò dárúkọ blockchains tí yóò tì lẹ́yìn?**
+
+Ó jẹ́ ohun tí ó wọ́pọ̀ fún àwọn ìforúkọsílẹ̀ SEC ní ìpele ìbẹ̀rẹ̀ dípò kí ó jẹ́ àpẹẹrẹ ti àríyànjiyàn ilana. Ìforúkọsílẹ̀ náà fi ètò òfin lélẹ̀ (registered fund kan tí ń tẹ OnChain Shares jáde nípasẹ̀ framework tí a fún ní àṣẹ pẹ̀lú Securitize gẹ́gẹ́ bí transfer agent) láì pinnu lórí chain pàtó, èyí tí BlackRock yóò kéde nígbà tí ó bá súnmọ́ ìgbà ìgbéjáde. BUIDL fúnra rẹ̀ ni a gbé jáde lórí Ethereum tí wọ́n sì gbòkúfà rẹ̀ lẹ́yìn náà sí Polygon, Avalanche, Optimism, Aptos, àti Arbitrum; BRSRV yóò tẹ̀ tẹ̀lé irú àwòrán multi-chain kanna níwọ̀n bí a ti tọ́ka sí "multiple public blockchains" nínú ìforúkọsílẹ̀ náà.
+
+**Ṣé èyí ni òpin àwọn stablecoin tí ń san èrè gẹ́gẹ́ bí abala ọjà?**
+
+Ó jẹ́ òpin fún àwọn payment stablecoin tí ń san èrè gẹ́gẹ́ bí abala kan, ó kéré tán lábẹ́ òfin federal ti US, àyàfi bí Congress bá yí GENIUS Act padà. Kì í ṣe òpin fún àwọn dọ́là on-chain tí ń mú èrè wá gẹ́gẹ́ bí abala ọjà, èyí tí àwọn olùlò ń fẹ́ gangan. Abala yẹn ń lọ báyìí sí àwọn tokenised money market fund shares — BUIDL, BENJI, BRSRV, BSTBL, àwọn ọjà Ondo, àti ìṣàn ti àwọn tokenised MMF tí ń fìdánilójú tí BSTBL yóò mú wá. Àwọn ohun-èlò náà yóò yàtọ̀ díẹ̀ nínú wàlẹ́ẹ̀tì (iye token yóò fi èrè tí ó jọ hàn dípò dídìmú $1.00 ní pẹtẹ́ẹ́rẹ́), ṣùgbọ́n iṣẹ́-ṣíṣe ètò ọrọ̀ ajé — dollar-equivalent exposure pẹ̀lú Treasury yield, tí a yanjú lórí blockchain gbangba — ni a ń pa mọ́ nípasẹ̀ ọ̀nà àkóso miiran.
+
+## References
+
+- Sebastien Rousseau, (2026). [Àkókò Ìparí pacs.008 Structured-Address ti November 2026: Ìwòye Oṣù Mẹ́fà](https://sebastienrousseau.com/2026-05-12-iso-20022-pacs008-structured-address-deadline/index.html "Àkókò Ìparí pacs.008 Structured-Address ti November 2026").
+- Sebastien Rousseau, (2018). [ERC-20: Ethereum Token Interface tí Ó Yí Ayé Padà](https://sebastienrousseau.com/2018-01-24-the-erc-20-token-standard/index.html "ERC-20: Ethereum Token Interface tí Ó Yí Ayé Padà").
+- Sebastien Rousseau, (2018). [Ìtumọ̀ Ẹ̀rọ Ìṣiṣẹ́ ti Blockchain](https://sebastienrousseau.com/2018-01-09-understanding-the-technology-behind-blockchain/index.html "Ìtumọ̀ Ẹ̀rọ Ìṣiṣẹ́ ti Blockchain").
+- Sebastien Rousseau, (2018). [Ìṣíyà ti Cryptocurrency Tuntun àti Fífúnni ní Ìpèsè Ìsanwó tí Ó Yára sí i lọ́jọ́ Iwájú](https://sebastienrousseau.com/2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution/index.html "Ìṣíyà ti Cryptocurrency Tuntun àti Fífúnni ní Ìpèsè Ìsanwó tí Ó Yára sí i lọ́jọ́ Iwájú").
+- Unchained, (2026). [BlackRock Fi Ìforúkọsílẹ̀ fún Àwọn Tokenized Money-Market Funds Tuntun Méjì tí Wọ́n Gbájúmọ́ Stablecoin Capital ⧉](https://unchainedcrypto.com/blackrock-files-for-two-new-tokenized-money-market-funds-targeting-stablecoin-capital/ "BlackRock Fi Ìforúkọsílẹ̀ fún Àwọn Tokenized Money-Market Funds Tuntun Méjì tí Wọ́n Gbájúmọ́ Stablecoin Capital"). Unchained.
+- The Block, (2026). [BlackRock Rọ OCC láti Jáwọ́ nínú Èrò tokenized reserve cap, kí Wọ́n sì Mú àwọn Ohun-ìní tí Ó Tóótù Fẹ̀ sí i nínú Lẹ́tà Àríyànjiyàn ti GENIUS Act ⧉](https://www.theblock.co/post/399812/blackrock-urges-occ-to-drop-tokenized-reserve-cap-idea-expand-eligible-assets-in-genius-act-comment-letter "BlackRock rọ OCC láti jáwọ́ nínú èrò tokenized reserve cap"). The Block.
+- BeInCrypto, (2026). [BlackRock Tì Àwọn Òfin Stablecoin ti OCC Lẹ́yìn Lábẹ́ GENIUS Act ⧉](https://beincrypto.com/blackrock-occ-stablecoin-genius-act-comment/ "BlackRock Tì Àwọn Òfin Stablecoin ti OCC Lẹ́yìn Lábẹ́ GENIUS Act"). BeInCrypto.
+- Markets Media, (2026). [BlackRock Kéde 'Ìbẹ̀rẹ̀ Ìgbà Tuntun fún Ètò Ìnáwó' ⧉](https://www.marketsmedia.com/blackrock-fires-starting-gun-for-a-new-financial-era/ "BlackRock Kéde 'Ìbẹ̀rẹ̀ Ìgbà Tuntun fún Ètò Ìnáwó'"). Markets Media.
+- Crowdfund Insider, (2026). [BlackRock Gbájúmọ́ Àwọn Ètò Tokenization pẹ̀lú Àwọn Funds tí Blockchain Tì Lẹ́yìn ⧉](https://www.crowdfundinsider.com/2026/05/278346-blackrock-focuses-on-tokenization-initiatives-with-blockchain-enabled-funds/ "BlackRock Gbájúmọ́ Àwọn Ètò Tokenization pẹ̀lú Àwọn Funds tí Blockchain Tì Lẹ́yìn"). Crowdfund Insider.
+- CoinDesk, (2026). [BlackRock Mú Ìtẹnumọ́ Tokenization Ṣe Koko sí i pẹ̀lú Àwọn Ìpèsè Fund Onchain Tuntun ⧉](https://www.coindesk.com/business/2026/05/09/blackrock-deepens-tokenization-push-with-new-onchain-fund-offerings "BlackRock Mú Ìtẹnumọ́ Tokenization Ṣe Koko sí i pẹ̀lú Àwọn Ìpèsè Fund Onchain Tuntun"). CoinDesk.
+- Crypto Briefing, (2026). [BlackRock Tẹnu mọ́ Tokenization pẹ̀lú Àwọn Stablecoin Reserve Funds Tuntun ⧉](https://cryptobriefing.com/blackrock-tokenized-money-market-funds-stablecoins/ "BlackRock Tẹnu mọ́ Tokenization pẹ̀lú Àwọn Stablecoin Reserve Funds Tuntun"). Crypto Briefing.
+- Latham & Watkins, (2026). [OCC Mú Àbá Ìmúṣẹ GENIUS Act Jáde ⧉](https://www.lw.com/en/insights/occ-issues-proposal-to-implement-the-genius-act "OCC Mú Àbá Ìmúṣẹ GENIUS Act Jáde"). Latham & Watkins.
+- Nixon Peabody, (2026). [Àwọn Òfin OCC tí A Dábàá fún Àwọn Payment Stablecoins Lábẹ́ GENIUS Act ⧉](https://www.nixonpeabody.com/insights/alerts/2026/04/02/proposed-occ-regulations-for-payment-stablecoins-under-the-genius-act "Àwọn òfin OCC tí a dábàá fún payment stablecoins lábẹ́ GENIUS Act"). Nixon Peabody LLP.
+- Morgan Lewis, (2026). [Àkóso Stablecoin: Àbá OCC Lábẹ́ GENIUS Act ⧉](https://www.morganlewis.com/pubs/2026/04/occs-genius-act-proposal-what-prospective-issuers-need-to-know "Àkóso Stablecoin: Àbá OCC Lábẹ́ GENIUS Act"). Morgan Lewis.
+- American Banker, (2026). [Àríyànjiyàn Èrè Stablecoin Borí Àwọn Àròyé Òfin ti GENIUS ⧉](https://www.americanbanker.com/news/stablecoin-yield-debate-dominates-genius-rule-comments "Àríyànjiyàn Èrè Stablecoin Borí Àwọn Àròyé Òfin ti GENIUS"). American Banker.
+- Congressional Research Service, (2026). [Àríyànjiyàn Èrè Stablecoin ⧉](https://www.congress.gov/crs-product/IF13174 "Àríyànjiyàn Èrè Stablecoin"). Congress.gov.
+- Compliance Corylated, (2026). [US OCC Pa Àyè Àbákò ti GENIUS Act Tí Ń Gba Àwọn Stablecoin Tí Ń San Èrè Láyè ⧉](https://www.compliancecorylated.com/news/us-occ-closes-genius-act-loophole-allowing-yield-bearing-stablecoins/ "US OCC Pa Àyè Àbákò ti GENIUS Act Tí Ń Gba Àwọn Stablecoin Tí Ń San Èrè Láyè"). Compliance Corylated.
+- CryptoSlate, (2025). [Àwọn Tokenized US Treasuries Ṣẹ̀ṣẹ̀ Tàpá sí Òfin Pàtó ti DeFi ⧉](https://cryptoslate.com/tokenized-us-treasuries-silently-replaced-defis-foundation-and-you-missed-the-critical-9-billion-shift/ "Àwọn Tokenized US Treasuries — CryptoSlate"). CryptoSlate.
+- MEXC News, (2026). [BlackRock Fi Ìforúkọsílẹ̀ fún Àwọn Tokenized Funds Tuntun Méjì sílẹ̀ pẹ̀lú SEC ti U.S. lórí Ethereum ⧉](https://www.mexc.com/news/1080472 "BlackRock fi ìforúkọsílẹ̀ fún àwọn tokenized funds tuntun méjì sílẹ̀ pẹ̀lú SEC ti U.S. lórí Ethereum"). MEXC News.
+- Stellar Foundation, (2026). [Franklin Templeton, Stellar Development Foundation Ṣe Ayẹyẹ Ọdún Kárùn-ún ti BENJI ⧉](https://stellar.org/press/franklin-templeton-stellar-development-foundation-mark-five-years-of-benji-the-first-u-s-registered-tokenized-money-market-fund "Ayẹyẹ Ọdún Kárùn-ún ti BENJI"). Stellar Development Foundation.
+
+<!-- enrich-start -->
+<aside class="author-card" aria-label="Nípa olùkọ̀wé"><img alt="Àwòrán ti Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Onímọ̀ ẹ̀rọ banki àgbà tí ń kọ̀wé lórí applied AI, ISO 20022 migration, ìsirò ìpamọ́ lẹ́yìn quantum (post-quantum cryptography) fún àwọn ètò ìnáwó, àti ìyípadà ilana ti wholesale payments.</span><span class="author-credentials">Ọdún 20+ kọjá HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Ìtàn kíkún</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<p class="post-reviewed">Àtúnyẹ̀wò ìkẹyìn <time datetime="2026-06-23">2026-06-23</time>.</p>
+<aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Related reading</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026" class="related-media" aria-label="Banki Oní-Rail Pupọ ní 2026: Àwọn Káàdì, A2A, Stablecoins, RTP, FedNow, àti Open Banking nínú Ilana Kan" tabindex="-1"><img alt="Fọ́tò ti àwọn ìṣàn ìmọ́lẹ̀ tí wọ́n ré kọjá ara wọn ní ibi ìparapọ̀ rélùwèé ní alẹ́ — kókó ìwòye fún banki oní-rail pupọ: àwọn káàdì, A2A, RTP, FedNow, ACH, stablecoins, Open Banking APIs, ISO 20022, àti orchestration engine tí ń darí wọn" src="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026">Banki Oní-Rail Pupọ ní 2026: Àwọn Káàdì, A2A, Stablecoins, RTP, FedNow, àti Open Banking nínú Ilana Kan</a></h3><p><time datetime="2026-06-01">2026-06-01</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026" class="related-media" aria-label="Stablecoins gẹ́gẹ́ bí Ìyàtọ̀ sí Tokenised Deposits ní 2026: Ohun tí Àwọn Banki Ní Láti Gbèjà Gangan" tabindex="-1"><img alt="Àwòrán ìfiwéra tí ń fi stablecoins, tokenised deposits, commercial bank money, reserve assets, wallets, settlement, liquidity, àti bank balance sheets hàn" src="https://cloudcdn.pro/stocks/images/pixabay-210547-1200.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026">Stablecoins gẹ́gẹ́ bí Ìyàtọ̀ sí Tokenised Deposits ní 2026: Ohun tí Àwọn Banki Ní Láti Gbèjà Gangan</a></h3><p><time datetime="2026-05-26">2026-05-26</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2023-10-09-the-fastest-rust-based-static-site-generator/index.html" class="related-media" aria-label="Static Site Generator: SSG tí Ó Yára Jù Lọ Tí Ó Dá lórí Rust" tabindex="-1"><img alt="Kọ̀m̀pútà alágbèéká tí a pa lórí tábìlì funfun pẹ̀lú gilasi omi kan ní apá òsì àti pen, notepad àti ohun-ọ̀gbìn ní apá ọ̀tún" src="https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2023-10-09-the-fastest-rust-based-static-site-generator/index.html">Static Site Generator: SSG tí Ó Yára Jù Lọ Tí Ó Dá lórí Rust</a></h3><p><time datetime="2023-10-09">2023-10-09</time></p></footer></article>
+</div>
+</aside>
+<!-- enrich-end -->

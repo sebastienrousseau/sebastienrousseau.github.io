@@ -90,7 +90,7 @@ Olùpèsè tí ó sọ "àkàwé-ọ̀nà ààbò-quantum" nìkan kò dáhùn ì
 | **ML-DSA / FIPS 204** | Àwọn ìbúwọ́lù dijítà gbogbogbò | NCSC dámọ̀ràn rẹ̀ fún ọ̀pọ̀ àwọn ìjápọ̀ ìbúwọ́lù gbogbogbò ([NCSC](https://www.ncsc.gov.uk/paper/next-steps-in-preparing-for-post-quantum-cryptography "NCSC next steps in preparing for PQC")) | Àwọn ẹ̀wọ́n ìwé-ẹ̀rí àti ìṣípò PKI jẹ́ líle ní iṣẹ́ |
 | **SLH-DSA / FIPS 205** | Àwọn ìbúwọ́lù tí a gbéra-le-hash fún ìbúwọ́lù firmware àti sọ́fútíwà | Ìlànà NIST ìkẹyìn tí NCSC ń tọ́ka sí ([NCSC](https://www.ncsc.gov.uk/paper/next-steps-in-preparing-for-post-quantum-cryptography "NCSC next steps in preparing for PQC")) | Àwọn ìbúwọ́lù tí ó tóbi lè kan àwọn àyíká aláàlà |
 | **Àwọn ètò PQ/T àpapọ̀** | Ìṣípò àkókò gbọngbọn àti ìṣọ̀kan-iṣẹ́ | Ó wúlò gẹ́gẹ́ bí ìgbésẹ̀ ìyípadà ([NCSC](https://www.ncsc.gov.uk/paper/next-steps-in-preparing-for-post-quantum-cryptography "NCSC next steps in preparing for PQC")) | Ó fi ìdíjú kún ún tí ó sì lè nílò ìṣípò kejì |
-| **QKD** | Àwọn ìsopọ̀ pàtàkì onírúurú ìdánilójú gíga | Iṣẹ́ ìdánilójú ń dàgbà nípasẹ̀ ìṣíṣẹ́ àkàwé-ààbò ETSI ([ID Quantique / ETSI QKD 016](https://www.idquantique.com/etsi-releases-qkd-protection-profile/ "ETSI releases QKD Protection Profile")) | Kò yanjú ìfọwọ́sí àkànṣe-yanyan ti ínтернет gbogbogbò tàbí ìkójọpọ̀ crypto ilé-iṣẹ́ |
+| **QKD** | Àwọn ìsopọ̀ pàtàkì onírúurú ìdánilójú gíga | Iṣẹ́ ìdánilójú ń dàgbà nípasẹ̀ ìṣíṣẹ́ àkàwé-ààbò ETSI ([ID Quantique / ETSI QKD 016](https://www.idquantique.com/etsi-releases-qkd-protection-profile/ "ETSI releases QKD Protection Profile")) | Kò yanjú ìfọwọ́sí àkànṣe-yanyan ti intanẹẹti gbogbogbò tàbí ìkójọpọ̀ crypto ilé-iṣẹ́ |
 
 ## Kí Ni Eyi Túmọ̀ Sí Nípa Irú Ilé-Iṣẹ́
 
