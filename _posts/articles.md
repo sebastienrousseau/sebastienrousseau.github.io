@@ -105,21 +105,45 @@ site_software: "Static Site Generator, Rust"
 <header class="newsroom-section-head"><p class="newsroom-kicker">FEATURED</p><h2>Latest story</h2></header>
 
 <article class="newsroom-featured">
-<a class="newsroom-featured-media" href="/2026-06-28-open-source-finos-cloud-native-cib-stack-2026/index.html" title="Open Source, FINOS and the Cloud-Native CIB Stack">
-<img alt="Glass and steel atrium of a corporate-investment-banking trading floor — symbolising the open-source, cloud-native CIB stack now anchored around FINOS, the Linux Foundation and Rust libraries" src="https://cloudcdn.pro/stocks/images/joe-taylor-T3o-XtCfe6U.webp" loading="eager" fetchpriority="high" decoding="async" width="800" height="800" />
+<a class="newsroom-featured-media" href="/2026-06-30-agentic-ai-index-banks-measuring-autonomy-2026/index.html" title="The Agentic AI Index for Banks in 2026: Measuring Autonomy">
+<img alt="A bank operations centre at night with analysts monitoring autonomous decisioning dashboards, representing measurable agentic AI governance." src="https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp" loading="eager" fetchpriority="high" decoding="async" width="800" height="800" />
 </a>
 <div class="newsroom-featured-body">
-<span class="newsroom-eyebrow">Open Source Banking · Finos · Linux Foundation</span>
-<h3><a href="/2026-06-28-open-source-finos-cloud-native-cib-stack-2026/index.html" title="Open Source, FINOS and the Cloud-Native CIB Stack">Open Source, FINOS and the Cloud-Native CIB Stack</a></h3>
-<p class="newsroom-meta"><time datetime="2026-06-28">June 28, 2026</time> · Sebastien Rousseau</p>
-<p>Morgan Stanley, JPMorgan and Citi are doubling down on FINOS and the Linux Foundation. A Rust-and-zero-dependency stack — noyalib, http-handle, hsh, KyberLib — shows what the cloud-native CIB stack looks like in 2026 under PSD3, FiDA and DORA.</p>
-<p><a class="pill ghost" href="/2026-06-28-open-source-finos-cloud-native-cib-stack-2026/index.html" title="Open Source, FINOS and the Cloud-Native CIB Stack">Read the full story</a></p>
+<span class="newsroom-eyebrow">Agentic Ai · Ai Governance · Banking</span>
+<h3><a href="/2026-06-30-agentic-ai-index-banks-measuring-autonomy-2026/index.html" title="The Agentic AI Index for Banks in 2026: Measuring Autonomy">The Agentic AI Index for Banks in 2026: Measuring Autonomy</a></h3>
+<p class="newsroom-meta"><time datetime="2026-06-30">June 30, 2026</time> · Sebastien Rousseau</p>
+<p>Agentic AI is operational infrastructure in 2026. This index measures it the way banks measure capital and credit: a six-dimension readiness score across autonomy tiers, the control plane, regulatory evidence, unit economics, organisational readiness, and global regulatory alignment.</p>
+<p><a class="pill ghost" href="/2026-06-30-agentic-ai-index-banks-measuring-autonomy-2026/index.html" title="The Agentic AI Index for Banks in 2026: Measuring Autonomy">Read the full story</a></p>
 </div>
 </article>
 
 <header class="newsroom-section-head"><p class="newsroom-kicker">ARCHIVE</p><h2>All news stories and articles</h2></header>
 
 <div class="newsroom-grid">
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-06-29-post-quantum-security-scorecard-board-level-fiduciary-agility-2026/index.html" title="The 2026 Post-Quantum Security Scorecard: A Board-Level Metric Framework">
+<img alt="Abstract digital boardroom table dissolving into quantum lattices — visualising the strategic governance required to migrate core banking infrastructure to FIPS 203 and 204" src="https://cloudcdn.pro/stocks/images/quantum-governance-AbC123XyZ.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Post-Quantum · Cryptography · Banking</span>
+<h3><a href="/2026-06-29-post-quantum-security-scorecard-board-level-fiduciary-agility-2026/index.html" title="The 2026 Post-Quantum Security Scorecard: A Board-Level Metric Framework">The 2026 Post-Quantum Security Scorecard: A Board-Level Metric Framework</a></h3>
+<p class="newsroom-meta"><time datetime="2026-06-29">June 29, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">As of June 2026, post-quantum cryptography (PQC) has transitioned from an experimental technical concern to a primary fiduciary obligation. Boards must now oversee the systematic migration of legacy encryption...</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-06-28-open-source-finos-cloud-native-cib-stack-2026/index.html" title="Open Source, FINOS and the Cloud-Native CIB Stack">
+<img alt="Glass and steel atrium of a corporate-investment-banking trading floor — symbolising the open-source, cloud-native CIB stack now anchored around FINOS, the Linux Foundation and Rust libraries" src="https://cloudcdn.pro/stocks/images/joe-taylor-T3o-XtCfe6U.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Open Source Banking · Finos · Linux Foundation</span>
+<h3><a href="/2026-06-28-open-source-finos-cloud-native-cib-stack-2026/index.html" title="Open Source, FINOS and the Cloud-Native CIB Stack">Open Source, FINOS and the Cloud-Native CIB Stack</a></h3>
+<p class="newsroom-meta"><time datetime="2026-06-28">June 28, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Morgan Stanley, JPMorgan and Citi are doubling down on FINOS and the Linux Foundation. A Rust-and-zero-dependency stack — noyalib, http-handle, hsh, KyberLib — shows what the cloud-native CIB stack looks like in 2026 under PSD3, FiDA and DORA.</p>
+</div>
+</article>
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-06-27-agentic-treasury-co-pilots-autonomous-treasury-production-2026/index.html" title="Agentic Treasury 2026: From Autonomous Treasury Index to Production-Grade Co-Pilots">
