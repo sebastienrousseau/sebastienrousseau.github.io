@@ -109,6 +109,18 @@ _HEADING_RE = re.compile(r'<(h[23])(?:\s+id="[^"]*")?>([\s\S]*?)</\1>', re.IGNOR
 _OUTBOUND_LINK_RE = re.compile(r'<a\b[^>]*\bhref="(https?://[^"]+)"', re.IGNORECASE)
 sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "lib"))
 from _core import DATED_SLUG_RE as _DATED_SLUG_RE  # canonical dated-slug matcher
+from _svg_icons import (  # shared share-rail glyphs (Phase 4.2 dedup)
+    _CARD_SVG_EMAIL as _SVG_EMAIL,
+)
+from _svg_icons import (
+    _CARD_SVG_FB as _SVG_FB,
+)
+from _svg_icons import (
+    _CARD_SVG_LI as _SVG_LI,
+)
+from _svg_icons import (
+    _CARD_SVG_X as _SVG_X,
+)
 
 _H1_RE = re.compile(
     r'<section class="ap-hero">\s*'
@@ -623,23 +635,6 @@ _SUB_PARA_RE = re.compile(r'<p class="sub">', re.IGNORECASE)
 _WRAP_CLOSE_RE = re.compile(r"(</div>\s*</main>)", re.IGNORECASE)
 
 # 16x16 monochrome SVG glyphs — currentColor so .share-rail can theme them.
-_SVG_X = (
-    '<svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">'
-    '<path d="M9.52 6.88L14.86 1h-1.42L8.83 6.07 4.94 1H.78l5.6 7.7L.78 15h1.42l4.78-5.27L11.07 15'
-    'h4.16L9.52 6.88zM2.71 2.07h1.83l7.61 10.51h-1.83L2.71 2.07z"/></svg>'
-)
-_SVG_LI = (
-    '<svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">'
-    '<path d="M13.6 13.6h-2.37V9.93c0-.87-.02-2-1.22-2-1.22 0-1.4.95-1.4 1.93v3.74H6.24V6.04h2.27'
-    'v1.04h.03c.32-.6 1.09-1.22 2.25-1.22 2.4 0 2.85 1.58 2.85 3.64v4.1zM3.56 5C2.81 5 2.2 4.39 '
-    '2.2 3.64S2.81 2.28 3.56 2.28s1.36.61 1.36 1.36S4.31 5 3.56 5zm1.18 8.6H2.39V6.04h2.36V13.6z"/'
-    '></svg>'
-)
-_SVG_FB = (
-    '<svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">'
-    '<path d="M9 14H6.5V8.5H5V6h1.5V4.5C6.5 3.07 7.07 2 9.07 2H10.5v2.5H9.43c-.38 0-.43.14-.43.43V'
-    '6h1.5L10 8.5H9V14z"/></svg>'
-)
 _SVG_WA = (
     '<svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">'
     '<path d="M8 1C4.13 1 1 4.13 1 8c0 1.27.34 2.46.93 3.5L1 15l3.6-.93C5.62 14.66 6.79 15 8 15c3'
@@ -651,11 +646,6 @@ _SVG_WA = (
     '.32-.01a.61.61 0 00-.45.21c-.15.17-.59.58-.59 1.4 0 .83.61 1.63.69 1.74.08.12 1.2 1.83 2.91 '
     '2.57.41.18.72.28.97.36.4.13.78.11 1.07.07.33-.05 1-.41 1.14-.8.14-.4.14-.74.1-.81-.04-.07-.16'
     '-.11-.32-.19z"/></svg>'
-)
-_SVG_EMAIL = (
-    '<svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">'
-    '<path d="M2 3h12c.55 0 1 .45 1 1v8c0 .55-.45 1-1 1H2c-.55 0-1-.45-1-1V4c0-.55.45-1 1-1zm6 5.'
-    '18L13.18 4H2.82L8 8.18zM2 5.46V12h12V5.46L8 9.5 2 5.46z"/></svg>'
 )
 _SVG_BLUESKY = (
     '<svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">'
