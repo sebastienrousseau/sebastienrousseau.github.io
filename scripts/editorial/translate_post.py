@@ -58,6 +58,7 @@ STUB_MARKER = "<!-- translation-stub: replace this body in Claude Code -->"
 
 sys.path.insert(0, str(ROOT / "scripts"))
 import _lang_registry
+from _frontmatter import parse_frontmatter  # canonical shared parser (lib/_frontmatter)
 
 
 def active_non_en_locales() -> list[str]:
@@ -169,28 +170,10 @@ _LOCALE_CODES: dict[str, str] = {
 
 
 # ---------------------------------------------------------------------------
-# Frontmatter parse/emit. Hand-rolled YAML-ish — the existing repo
-# uses single-line ``key: "value"`` shape so a strict YAML parser is
-# overkill and adds a dep.
+# Frontmatter emit. Parsing uses the canonical lib/_frontmatter.parse_frontmatter
+# (imported above); emit stays local because it writes this repo's specific
+# single-line ``key: "value"`` scaffold shape.
 # ---------------------------------------------------------------------------
-
-
-def parse_frontmatter(text: str) -> tuple[dict[str, str], str]:
-    if not text.startswith("---"):
-        return {}, text
-    end = text.find("\n---", 4)
-    if end < 0:
-        return {}, text
-    fm_text = text[3:end].strip()
-    body = text[end + 4 :].lstrip()
-    fm: dict[str, str] = {}
-    for raw in fm_text.splitlines():
-        line = raw.strip()
-        if not line or line.startswith("#") or ":" not in line:
-            continue
-        key, _, val = line.partition(":")
-        fm[key.strip()] = val.strip().strip('"').strip("'")
-    return fm, body
 
 
 def emit_frontmatter(fm: dict[str, str]) -> str:
