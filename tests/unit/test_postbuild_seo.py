@@ -46,7 +46,7 @@ def test_escape_xml_numeric_entities_preserved():
 
 def test_patch_block_rewrites_localhost_url_using_title():
     """RSS <item> with localhost URL gets rewritten to canonical URL."""
-    from postbuild_lib import output as out
+    from postbuild_lib import feeds as out
 
     block = (
         "<item>"
@@ -67,7 +67,7 @@ def test_patch_block_rewrites_localhost_url_using_title():
 def test_patch_block_no_op_when_title_not_in_index():
     """If we can't resolve the title, leave the block untouched —
     don't fall back to the home URL."""
-    from postbuild_lib import output as out
+    from postbuild_lib import feeds as out
 
     block = "<item><title>Unknown post</title>" "<link>http://127.0.0.1:8000/.meta/</link></item>"
     rewritten = out._patch_block(block, {})
@@ -77,7 +77,7 @@ def test_patch_block_no_op_when_title_not_in_index():
 def test_patch_block_decodes_xml_entities_in_title_lookup():
     """Feed emits ``&amp;`` in titles; the index should resolve via
     either escaped or unescaped form."""
-    from postbuild_lib import output as out
+    from postbuild_lib import feeds as out
 
     block = (
         "<item><title>AI &amp; Quantum</title>" "<link>http://localhost:8000/.meta/</link></item>"
@@ -89,7 +89,7 @@ def test_patch_block_decodes_xml_entities_in_title_lookup():
 
 def test_patch_block_rewrites_meta_path_on_any_host():
     """``host/.meta/`` is rewritten even when the host isn't localhost."""
-    from postbuild_lib import output as out
+    from postbuild_lib import feeds as out
 
     block = "<item><title>X</title>" "<link>https://example.com/.meta/</link></item>"
     idx = {"X": "https://sebastienrousseau.com/x"}
@@ -182,14 +182,14 @@ def test_write_robots_idempotent(tmp_path):
 
 
 def test_truncate_news_title_under_limit_passes_through():
-    from postbuild_lib import output as out
+    from postbuild_lib import feeds as out
 
     title = "Short title"
     assert out._truncate_news_title(title) == title
 
 
 def test_truncate_news_title_clips_at_word_boundary():
-    from postbuild_lib import output as out
+    from postbuild_lib import feeds as out
 
     title = "A very long title that absolutely exceeds the eighty character recommendation set by Google News"
     result = out._truncate_news_title(title)
@@ -201,20 +201,20 @@ def test_truncate_news_title_clips_at_word_boundary():
 
 
 def test_truncate_news_title_custom_limit():
-    from postbuild_lib import output as out
+    from postbuild_lib import feeds as out
 
     assert len(out._truncate_news_title("one two three four five", limit=10)) <= 10
 
 
 def test_limit_news_keywords_under_limit_passes_through():
-    from postbuild_lib import output as out
+    from postbuild_lib import feeds as out
 
     kws = "a, b, c"
     assert out._limit_news_keywords(kws) == kws
 
 
 def test_limit_news_keywords_trims_to_first_n():
-    from postbuild_lib import output as out
+    from postbuild_lib import feeds as out
 
     kws = ", ".join(f"k{i}" for i in range(15))
     result = out._limit_news_keywords(kws)
@@ -696,7 +696,7 @@ def test_build_title_index_maps_title_to_url(tmp_path, monkeypatch):
         '---\ntitle: "AI & Banking"\nurl: "https://sebastienrousseau.com/ai-banking/"\n---\n',
         encoding="utf-8",
     )
-    from postbuild_lib.output import _build_title_index
+    from postbuild_lib.feeds import _build_title_index
 
     idx = _build_title_index()
     assert idx["AI & Banking"] == "https://sebastienrousseau.com/ai-banking/"
@@ -720,7 +720,7 @@ def test_build_title_index_walks_per_language_posts(tmp_path, monkeypatch):
         "---\n",
         encoding="utf-8",
     )
-    from postbuild_lib.output import _build_title_index
+    from postbuild_lib.feeds import _build_title_index
 
     idx = _build_title_index()
     assert idx["Mon article test"] == (
@@ -739,7 +739,7 @@ def test_build_title_index_skips_per_lang_post_without_title(tmp_path, monkeypat
         '---\nurl: "https://example.com/"\n---\n',
         encoding="utf-8",
     )
-    from postbuild_lib.output import _build_title_index
+    from postbuild_lib.feeds import _build_title_index
 
     idx = _build_title_index()
     assert idx == {}
@@ -756,7 +756,7 @@ def test_build_title_index_handles_apostrophe_in_title(tmp_path, monkeypatch):
         'url: "https://sebastienrousseau.com/dont-panic/"\n---\n',
         encoding="utf-8",
     )
-    from postbuild_lib.output import _build_title_index
+    from postbuild_lib.feeds import _build_title_index
 
     idx = _build_title_index()
     # Plain
@@ -773,7 +773,7 @@ def test_fix_xml_feed_urls_no_op_when_title_index_empty(tmp_path, monkeypatch):
     """Without _posts/, the title index is empty → no patching."""
     monkeypatch.chdir(tmp_path)
     (tmp_path / "rss.xml").write_text("<rss></rss>", encoding="utf-8")
-    from postbuild_lib.output import fix_xml_feed_urls
+    from postbuild_lib.feeds import fix_xml_feed_urls
 
     assert fix_xml_feed_urls(tmp_path) == 0
 
@@ -794,7 +794,7 @@ def test_fix_xml_feed_urls_rewrites_rss_item_block(tmp_path, monkeypatch):
         "</item></channel></rss>",
         encoding="utf-8",
     )
-    from postbuild_lib.output import fix_xml_feed_urls
+    from postbuild_lib.feeds import fix_xml_feed_urls
 
     assert fix_xml_feed_urls(tmp_path) == 1
     out = rss.read_text(encoding="utf-8")
@@ -821,7 +821,7 @@ def test_fix_xml_feed_urls_handles_atom_and_news_blocks(tmp_path, monkeypatch):
         "</url></urlset>",
         encoding="utf-8",
     )
-    from postbuild_lib.output import fix_xml_feed_urls
+    from postbuild_lib.feeds import fix_xml_feed_urls
 
     assert fix_xml_feed_urls(tmp_path) >= 1
 
@@ -830,7 +830,7 @@ def test_fix_xml_feeds_writes_only_when_changed(tmp_path):
     """``fix_xml_feeds`` returns the count of files actually rewritten."""
     rss = tmp_path / "rss.xml"
     rss.write_text("<rss><channel><title>A &amp; B</title></channel></rss>", encoding="utf-8")
-    from postbuild_lib.output import fix_xml_feeds
+    from postbuild_lib.feeds import fix_xml_feeds
 
     # Already-escaped content → no changes
     assert fix_xml_feeds(tmp_path) == 0
@@ -839,7 +839,7 @@ def test_fix_xml_feeds_writes_only_when_changed(tmp_path):
 def test_fix_xml_feeds_rewrites_bare_amp(tmp_path):
     rss = tmp_path / "rss.xml"
     rss.write_text("<rss><channel><title>A & B</title></channel></rss>", encoding="utf-8")
-    from postbuild_lib.output import fix_xml_feeds
+    from postbuild_lib.feeds import fix_xml_feeds
 
     assert fix_xml_feeds(tmp_path) == 1
     assert "A &amp; B" in rss.read_text(encoding="utf-8")
@@ -852,7 +852,7 @@ def test_fix_xml_feeds_rewrites_bare_amp(tmp_path):
 
 
 def test_dedupe_xml_feeds_drops_duplicate_rss_items_by_link(tmp_path):
-    from postbuild_lib.output import dedupe_xml_feeds
+    from postbuild_lib.feeds import dedupe_xml_feeds
 
     rss = tmp_path / "rss.xml"
     rss.write_text(
@@ -872,7 +872,7 @@ def test_dedupe_xml_feeds_drops_duplicate_rss_items_by_link(tmp_path):
 
 
 def test_dedupe_xml_feeds_no_op_when_all_links_unique(tmp_path):
-    from postbuild_lib.output import dedupe_xml_feeds
+    from postbuild_lib.feeds import dedupe_xml_feeds
 
     rss = tmp_path / "rss.xml"
     rss.write_text(
@@ -886,7 +886,7 @@ def test_dedupe_xml_feeds_no_op_when_all_links_unique(tmp_path):
 
 
 def test_dedupe_xml_feeds_handles_atom_entry_dups_by_href(tmp_path):
-    from postbuild_lib.output import dedupe_xml_feeds
+    from postbuild_lib.feeds import dedupe_xml_feeds
 
     atom = tmp_path / "atom.xml"
     atom.write_text(
@@ -904,7 +904,7 @@ def test_dedupe_xml_feeds_handles_atom_entry_dups_by_href(tmp_path):
 
 
 def test_dedupe_xml_feeds_handles_sitemap_url_dups_by_loc(tmp_path):
-    from postbuild_lib.output import dedupe_xml_feeds
+    from postbuild_lib.feeds import dedupe_xml_feeds
 
     sm = tmp_path / "news-sitemap.xml"
     sm.write_text(
@@ -922,7 +922,7 @@ def test_dedupe_xml_feeds_handles_sitemap_url_dups_by_loc(tmp_path):
 
 
 def test_dedupe_xml_feeds_returns_zero_when_no_files(tmp_path):
-    from postbuild_lib.output import dedupe_xml_feeds
+    from postbuild_lib.feeds import dedupe_xml_feeds
 
     # Empty directory — none of the target files exist
     assert dedupe_xml_feeds(tmp_path) == 0
@@ -930,7 +930,7 @@ def test_dedupe_xml_feeds_returns_zero_when_no_files(tmp_path):
 
 def test_dedupe_xml_feeds_preserves_blocks_without_key(tmp_path):
     """If a block has no recognisable URL, keep it (don't drop in error)."""
-    from postbuild_lib.output import dedupe_xml_feeds
+    from postbuild_lib.feeds import dedupe_xml_feeds
 
     rss = tmp_path / "rss.xml"
     rss.write_text(
@@ -949,7 +949,7 @@ def test_dedupe_xml_feeds_preserves_blocks_without_key(tmp_path):
 
 def test_dedupe_xml_feeds_atom_entry_without_href_passes_through(tmp_path):
     """An <entry> with no `<link href=>` has no key — kept verbatim."""
-    from postbuild_lib.output import dedupe_xml_feeds
+    from postbuild_lib.feeds import dedupe_xml_feeds
 
     atom = tmp_path / "atom.xml"
     atom.write_text(
@@ -983,7 +983,7 @@ def _seed_minimal_sitemap(tmp_path, listed_paths):
 
 
 def test_augment_sitemap_appends_missing_rendered_page(tmp_path):
-    from postbuild_lib.output import augment_sitemap_with_rendered_pages
+    from postbuild_lib.feeds import augment_sitemap_with_rendered_pages
 
     _seed_minimal_sitemap(tmp_path, ["/"])
     new = tmp_path / "topics" / "cloud-native-banking"
@@ -1000,7 +1000,7 @@ def test_augment_sitemap_appends_missing_rendered_page(tmp_path):
 def test_augment_sitemap_normalises_so_already_listed_pages_skip(tmp_path):
     """If `/topics/foo/` is already listed (trailing slash form), the
     `/topics/foo/index.html` rendered page is NOT appended."""
-    from postbuild_lib.output import augment_sitemap_with_rendered_pages
+    from postbuild_lib.feeds import augment_sitemap_with_rendered_pages
 
     _seed_minimal_sitemap(tmp_path, ["/topics/foo/"])
     d = tmp_path / "topics" / "foo"
@@ -1012,7 +1012,7 @@ def test_augment_sitemap_normalises_so_already_listed_pages_skip(tmp_path):
 def test_augment_sitemap_normalises_when_existing_entry_uses_index_html(tmp_path):
     """Existing sitemap entry in `/foo/index.html` form must match a
     rendered `/foo/index.html` page (both normalise to `/foo`)."""
-    from postbuild_lib.output import augment_sitemap_with_rendered_pages
+    from postbuild_lib.feeds import augment_sitemap_with_rendered_pages
 
     _seed_minimal_sitemap(tmp_path, ["/topics/foo/index.html"])
     d = tmp_path / "topics" / "foo"
@@ -1022,7 +1022,7 @@ def test_augment_sitemap_normalises_when_existing_entry_uses_index_html(tmp_path
 
 
 def test_augment_sitemap_excludes_labs_prefix(tmp_path):
-    from postbuild_lib.output import augment_sitemap_with_rendered_pages
+    from postbuild_lib.feeds import augment_sitemap_with_rendered_pages
 
     _seed_minimal_sitemap(tmp_path, ["/"])
     labs = tmp_path / "labs" / "hsh-demo"
@@ -1032,7 +1032,7 @@ def test_augment_sitemap_excludes_labs_prefix(tmp_path):
 
 
 def test_augment_sitemap_excludes_404_offline_thanks(tmp_path):
-    from postbuild_lib.output import augment_sitemap_with_rendered_pages
+    from postbuild_lib.feeds import augment_sitemap_with_rendered_pages
 
     _seed_minimal_sitemap(tmp_path, ["/"])
     for tail in ("404", "offline", "thanks", "fr/404", "fr/hors-ligne", "fr/merci"):
@@ -1043,7 +1043,7 @@ def test_augment_sitemap_excludes_404_offline_thanks(tmp_path):
 
 
 def test_augment_sitemap_no_op_when_sitemap_absent(tmp_path):
-    from postbuild_lib.output import augment_sitemap_with_rendered_pages
+    from postbuild_lib.feeds import augment_sitemap_with_rendered_pages
 
     # No sitemap.xml at all → function silently returns 0
     assert augment_sitemap_with_rendered_pages(tmp_path) == 0
@@ -1052,7 +1052,7 @@ def test_augment_sitemap_no_op_when_sitemap_absent(tmp_path):
 def test_augment_sitemap_handles_sitemap_without_lastmod(tmp_path):
     """When the seed sitemap has no <lastmod>, the appended block uses
     an empty string for lastmod rather than crashing."""
-    from postbuild_lib.output import augment_sitemap_with_rendered_pages
+    from postbuild_lib.feeds import augment_sitemap_with_rendered_pages
 
     (tmp_path / "sitemap.xml").write_text(
         '<?xml version="1.0" encoding="UTF-8"?>\n'
@@ -1098,7 +1098,7 @@ def _url_block(loc: str, lastmod: str = "2026-05-30", changefreq: str = "weekly"
 def test_dedupe_sitemap_drops_index_html_when_pretty_twin_exists(tmp_path):
     """Both /<slug>/ and /<slug>/index.html present → drop the
     index.html block, keep the pretty one (with its real lastmod)."""
-    from postbuild_lib.output import dedupe_sitemap_index_html
+    from postbuild_lib.feeds import dedupe_sitemap_index_html
 
     sm = tmp_path / "sitemap.xml"
     sm.write_text(
@@ -1121,7 +1121,7 @@ def test_dedupe_sitemap_drops_index_html_when_pretty_twin_exists(tmp_path):
 def test_dedupe_sitemap_rewrites_orphan_index_html_to_pretty(tmp_path):
     """Only /<slug>/index.html present (no pretty twin) → rewrite the
     <loc> in place to the pretty form, preserve metadata."""
-    from postbuild_lib.output import dedupe_sitemap_index_html
+    from postbuild_lib.feeds import dedupe_sitemap_index_html
 
     sm = tmp_path / "sitemap.xml"
     sm.write_text(
@@ -1145,7 +1145,7 @@ def test_dedupe_sitemap_rewrites_orphan_index_html_to_pretty(tmp_path):
 def test_dedupe_sitemap_leaves_pretty_only_alone(tmp_path):
     """No /index.html anywhere → function is a no-op (0 returned, file
     unchanged)."""
-    from postbuild_lib.output import dedupe_sitemap_index_html
+    from postbuild_lib.feeds import dedupe_sitemap_index_html
 
     sm = tmp_path / "sitemap.xml"
     original = _sitemap_with_blocks(
@@ -1158,7 +1158,7 @@ def test_dedupe_sitemap_leaves_pretty_only_alone(tmp_path):
 
 
 def test_dedupe_sitemap_no_op_when_sitemap_absent(tmp_path):
-    from postbuild_lib.output import dedupe_sitemap_index_html
+    from postbuild_lib.feeds import dedupe_sitemap_index_html
 
     assert dedupe_sitemap_index_html(tmp_path / "sitemap.xml") == 0
 
@@ -1166,7 +1166,7 @@ def test_dedupe_sitemap_no_op_when_sitemap_absent(tmp_path):
 def test_dedupe_sitemap_tolerates_malformed_url_block_without_loc(tmp_path):
     """Defensive: a <url>…</url> block with no <loc> inside (corrupt
     sitemap fragment) is left in place rather than crashing."""
-    from postbuild_lib.output import dedupe_sitemap_index_html
+    from postbuild_lib.feeds import dedupe_sitemap_index_html
 
     sm = tmp_path / "sitemap.xml"
     sm.write_text(
@@ -1194,7 +1194,7 @@ def test_dedupe_sitemap_tolerates_malformed_url_block_without_loc(tmp_path):
 def test_dedupe_sitemap_handles_mixed_at_scale(tmp_path):
     """Realistic-shape sitemap with a mix of twinned dupes and orphans
     converges to all-pretty in one pass."""
-    from postbuild_lib.output import dedupe_sitemap_index_html
+    from postbuild_lib.feeds import dedupe_sitemap_index_html
 
     sm = tmp_path / "sitemap.xml"
     sm.write_text(
@@ -1234,7 +1234,7 @@ def test_build_lastmod_index_prefers_last_reviewed(tmp_path, monkeypatch):
         '---\ntitle: "X"\ndate: "May 12, 2026"\nlast_reviewed: "2026-05-15"\n---\n',
         encoding="utf-8",
     )
-    from postbuild_lib.output import build_lastmod_index
+    from postbuild_lib.feeds import build_lastmod_index
 
     idx = build_lastmod_index()
     assert idx["2026-05-12-x"] == "2026-05-15"
@@ -1247,7 +1247,7 @@ def test_build_lastmod_index_falls_back_to_date(tmp_path, monkeypatch):
     (posts / "2026-05-12-x.md").write_text(
         '---\ntitle: "X"\ndate: "May 12, 2026"\n---\n', encoding="utf-8"
     )
-    from postbuild_lib.output import build_lastmod_index
+    from postbuild_lib.feeds import build_lastmod_index
 
     idx = build_lastmod_index()
     assert idx["2026-05-12-x"] == "2026-05-12"
@@ -1255,20 +1255,20 @@ def test_build_lastmod_index_falls_back_to_date(tmp_path, monkeypatch):
 
 def test_build_lastmod_index_returns_empty_when_no_posts_dir(tmp_path, monkeypatch):
     monkeypatch.chdir(tmp_path)
-    from postbuild_lib.output import build_lastmod_index
+    from postbuild_lib.feeds import build_lastmod_index
 
     assert build_lastmod_index() == {}
 
 
 def test_refresh_sitemap_lastmod_no_op_when_file_missing(tmp_path):
-    from postbuild_lib.output import refresh_sitemap_lastmod
+    from postbuild_lib.feeds import refresh_sitemap_lastmod
 
     assert refresh_sitemap_lastmod(tmp_path / "missing.xml", {}) == 0
 
 
 def test_patch_block_no_op_when_block_has_no_title():
     """If the block has no ``<title>`` tag the patcher returns it unchanged."""
-    from postbuild_lib.output import _patch_block
+    from postbuild_lib.feeds import _patch_block
 
     block = "<item><link>http://x/.meta/</link></item>"  # no <title>
     assert _patch_block(block, {"Anything": "https://x/"}) == block
@@ -1285,7 +1285,7 @@ def test_build_lastmod_index_skips_post_with_invalid_date(tmp_path, monkeypatch)
     (posts / "2026-05-13-bad-date.md").write_text(
         '---\ntitle: "Bad"\ndate: "not-a-real-date"\n---\n', encoding="utf-8"
     )
-    from postbuild_lib.output import build_lastmod_index
+    from postbuild_lib.feeds import build_lastmod_index
 
     idx = build_lastmod_index()
     assert "2026-05-12-good" in idx
@@ -1302,7 +1302,7 @@ def test_shrink_news_sitemap_no_op_when_already_shrunk(tmp_path):
         "</news:news></url></urlset>",
         encoding="utf-8",
     )
-    from postbuild_lib.output import shrink_news_sitemap
+    from postbuild_lib.feeds import shrink_news_sitemap
 
     assert shrink_news_sitemap(tmp_path) == 0
 
@@ -1313,7 +1313,7 @@ def test_refresh_sitemap_lastmod_skips_blocks_without_loc(tmp_path):
         "<urlset><url><lastmod>2026-01-01</lastmod></url></urlset>",
         encoding="utf-8",
     )
-    from postbuild_lib.output import refresh_sitemap_lastmod
+    from postbuild_lib.feeds import refresh_sitemap_lastmod
 
     n = refresh_sitemap_lastmod(sitemap, {"2026-05-12-x": "2026-05-15"})
     assert n == 0
@@ -1326,7 +1326,7 @@ def test_refresh_sitemap_lastmod_skips_non_dated_loc(tmp_path):
         "<urlset><url><loc>https://sebastienrousseau.com/about/</loc></url></urlset>",
         encoding="utf-8",
     )
-    from postbuild_lib.output import refresh_sitemap_lastmod
+    from postbuild_lib.feeds import refresh_sitemap_lastmod
 
     n = refresh_sitemap_lastmod(sitemap, {"2026-05-12-x": "2026-05-15"})
     assert n == 0
@@ -1340,7 +1340,7 @@ def test_refresh_sitemap_lastmod_skips_dated_slug_not_in_index(tmp_path):
         "<lastmod>2026-01-01</lastmod></url></urlset>",
         encoding="utf-8",
     )
-    from postbuild_lib.output import refresh_sitemap_lastmod
+    from postbuild_lib.feeds import refresh_sitemap_lastmod
 
     n = refresh_sitemap_lastmod(sitemap, {"2026-05-13-other": "2026-05-15"})
     assert n == 0
@@ -1380,7 +1380,7 @@ def test_splice_fr_urls_no_op_when_all_candidates_already_present(tmp_path, monk
     locs.extend(f"<url><loc>https://sebastienrousseau.com/topics/{t}/</loc></url>" for t in topics)
     # Pre-fill the non-EN-lang URLs too so all candidates are present.
     from postbuild_lib.article_furniture import _all_active_non_en_langs
-    from postbuild_lib.output import _lang_sitemap_urls, _splice_fr_urls
+    from postbuild_lib.feeds import _lang_sitemap_urls, _splice_fr_urls
 
     # Build all candidate URLs explicitly + pre-populate the sitemap.
     for code in _all_active_non_en_langs():
@@ -1398,7 +1398,7 @@ def test_refresh_sitemap_lastmod_inserts_when_no_existing_lastmod(tmp_path):
         "<urlset><url>" "<loc>https://sebastienrousseau.com/2026-05-12-x/</loc>" "</url></urlset>",
         encoding="utf-8",
     )
-    from postbuild_lib.output import refresh_sitemap_lastmod
+    from postbuild_lib.feeds import refresh_sitemap_lastmod
 
     n = refresh_sitemap_lastmod(sitemap, {"2026-05-12-x": "2026-05-15"})
     assert n == 1
@@ -1417,7 +1417,7 @@ def test_refresh_sitemap_lastmod_rewrites_existing_entry(tmp_path, monkeypatch):
         "</urlset>",
         encoding="utf-8",
     )
-    from postbuild_lib.output import refresh_sitemap_lastmod
+    from postbuild_lib.feeds import refresh_sitemap_lastmod
 
     n = refresh_sitemap_lastmod(sitemap, {"2026-05-12-x": "2026-05-15"})
     assert n == 1
@@ -1431,7 +1431,7 @@ def test_refresh_sitemap_lastmod_rewrites_existing_entry(tmp_path, monkeypatch):
 
 
 def test_shrink_news_sitemap_no_op_when_file_missing(tmp_path):
-    from postbuild_lib.output import shrink_news_sitemap
+    from postbuild_lib.feeds import shrink_news_sitemap
 
     assert shrink_news_sitemap(tmp_path) == 0
 
@@ -1445,7 +1445,7 @@ def test_shrink_news_sitemap_rewrites_long_title(tmp_path):
         "</news:news></url></urlset>",
         encoding="utf-8",
     )
-    from postbuild_lib.output import shrink_news_sitemap
+    from postbuild_lib.feeds import shrink_news_sitemap
 
     assert shrink_news_sitemap(tmp_path) == 1
     out = nsm.read_text(encoding="utf-8")
