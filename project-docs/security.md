@@ -337,6 +337,16 @@ read-only by default and write is scoped to the single job that commits
 `gh-stats.json`. All other workflows already use minimal top-level
 `contents: read`.
 
+**Batch 9 — Scorecard Pinned-Dependencies, npm (done):** the CI Node tools
+that were installed with a floating `npm install -g <pkg>@<ver>` are now
+hash-pinned. Two scoped lockfiles — `.github/ci-tools/pa11y/` (pa11y-ci) and
+`.github/ci-tools/lighthouse/` (@lhci/cli) — are installed with
+`npm ci --prefix <dir>` (integrity-verified from `package-lock.json`), and the
+local `node_modules/.bin` is prepended to `$GITHUB_PATH` so the existing
+`pa11y-ci` / `lhci` invocations run unchanged. The tools are split per job so
+the accessibility shards never pull Lighthouse's puppeteer/Chromium tree (no
+regression to that pipeline). Versions stay ADR-0002.
+
 **Phantom finding (dismissed):** Scorecard `Vulnerabilities` reported four
 Pillow CVEs (PYSEC-2018-49 / 2021-142 / 2023-23 / 2023-24). Pillow is in **no**
 manifest, Dependabot reports zero open alerts, and the dependency-graph SBOM

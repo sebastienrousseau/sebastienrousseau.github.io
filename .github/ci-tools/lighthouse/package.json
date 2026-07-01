@@ -1,0 +1,7 @@
+{
+  "name": "ci-tools-lighthouse",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Pinned @lhci/cli for the CI Lighthouse jobs. `npm ci` installs hash-verified from package-lock.json (OpenSSF Scorecard Pinned-Dependencies). Version is ADR-0002.",
+  "dependencies": { "@lhci/cli": "0.14.0" }
+}

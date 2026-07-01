@@ -268,7 +268,12 @@ jobs:
         # precision disagreed with current pa11y/axe by ~0.2 ratio
         # points, masking AAA-passing colour pairs as failures on
         # certain warm bg tones (--paper-card on /<lang>/<topics>/).
-        run: npm install -g pa11y-ci@4.1.1   # ADR-0002
+        # Hash-pinned via .github/ci-tools/pa11y/package-lock.json (npm ci,
+        # OpenSSF Scorecard Pinned-Dependencies; version is ADR-0002). Put the
+        # local bin on PATH so `pa11y-ci` below runs unchanged.
+        run: |
+          npm ci --prefix .github/ci-tools/pa11y
+          echo "$PWD/.github/ci-tools/pa11y/node_modules/.bin" >> "$GITHUB_PATH"
 
       - name: Serve public/
         run: |
@@ -358,7 +363,11 @@ jobs:
           node-version: "22"
 
       - name: Install Lighthouse CI
-        run: npm install -g @lhci/cli@0.14.0   # ADR-0002
+        # Hash-pinned via .github/ci-tools/lighthouse/package-lock.json (npm ci,
+        # OpenSSF Scorecard Pinned-Dependencies; version is ADR-0002).
+        run: |
+          npm ci --prefix .github/ci-tools/lighthouse
+          echo "$PWD/.github/ci-tools/lighthouse/node_modules/.bin" >> "$GITHUB_PATH"
 
       - name: Download build artifact
         uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8
