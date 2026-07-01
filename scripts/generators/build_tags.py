@@ -68,7 +68,8 @@ _FEATURED_TOP_N = 12
 _LANDING_THRESHOLD = 3
 _TAG_FM_RE = re.compile(r'^tags:\s*"?([^"\n]+)"?', re.MULTILINE)
 _TITLE_FM_RE = re.compile(r'^title:\s*"?([^"\n]+?)"?\s*$', re.MULTILINE)
-_DATED_SLUG_RE = re.compile(r"^(\d{4}-\d{2}-\d{2})-(.+)$")
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "lib"))
+from _core import DATED_SLUG_RE as _DATED_SLUG_RE  # canonical dated-slug matcher
 
 
 def _alias_map(taxonomy: dict) -> dict[str, str]:

@@ -107,7 +107,9 @@ _BLOGPOSTING_DATES_RE = re.compile(
 _WORDCOUNT_RE = re.compile(r'"wordCount":(\d+)')
 _HEADING_RE = re.compile(r'<(h[23])(?:\s+id="[^"]*")?>([\s\S]*?)</\1>', re.IGNORECASE)
 _OUTBOUND_LINK_RE = re.compile(r'<a\b[^>]*\bhref="(https?://[^"]+)"', re.IGNORECASE)
-_DATED_SLUG_RE = re.compile(r"^(\d{4}-\d{2}-\d{2})-")
+sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "lib"))
+from _core import DATED_SLUG_RE as _DATED_SLUG_RE  # canonical dated-slug matcher
+
 _H1_RE = re.compile(
     r'<section class="ap-hero">\s*'
     r'(?:<p class="eyebrow">[^<]*</p>\s*)?'

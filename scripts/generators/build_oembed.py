@@ -36,7 +36,9 @@ POSTS = ROOT / "_posts"
 _BASE_URL = "https://sebastienrousseau.com"
 _AUTHOR_NAME = "Sebastien Rousseau"
 _AUTHOR_URL = "https://sebastienrousseau.com/about/"
-_DATED_SLUG_RE = re.compile(r"^\d{4}-\d{2}-\d{2}-")
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "lib"))
+from _core import DATED_SLUG_RE as _DATED_SLUG_RE  # canonical dated-slug matcher
+
 _TITLE_FM_RE = re.compile(r'^title:\s*"?([^"\n]+?)"?\s*$', re.MULTILINE)
 _EXCERPT_FM_RE = re.compile(r'^excerpt:\s*"?([^"\n]+?)"?\s*$', re.MULTILINE)
 _BANNER_FM_RE = re.compile(r'^banner:\s*"?([^"\n]+?)"?\s*$', re.MULTILINE)

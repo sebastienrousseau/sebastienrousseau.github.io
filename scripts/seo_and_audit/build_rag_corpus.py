@@ -57,7 +57,9 @@ TAXONOMY = ROOT / "_data" / "taxonomy.yml"
 _BASE_URL = "https://sebastienrousseau.com"
 _DEFAULT_LICENSE = "CC-BY-4.0"
 
-_DATED_SLUG_RE = re.compile(r"^(\d{4}-\d{2}-\d{2})-(.+)$")
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "lib"))
+from _core import DATED_SLUG_RE as _DATED_SLUG_RE  # canonical dated-slug matcher
+
 _FRONTMATTER_RE = re.compile(r"^---\n([\s\S]*?)\n---\n", re.MULTILINE)
 _TITLE_FM_RE = re.compile(r'^title:\s*"?([^"\n]+?)"?\s*$', re.MULTILINE)
 _EXCERPT_FM_RE = re.compile(r'^excerpt:\s*"?([^"\n]+?)"?\s*$', re.MULTILINE)

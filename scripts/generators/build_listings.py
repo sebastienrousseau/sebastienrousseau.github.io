@@ -54,7 +54,9 @@ _DESC_FM_RE = re.compile(r'^description:\s*"?([^"\n]+?)"?\s*$', re.MULTILINE)
 _BANNER_FM_RE = re.compile(r'^banner:\s*"?([^"\n]+?)"?\s*$', re.MULTILINE)
 _BANNER_ALT_FM_RE = re.compile(r'^banner_alt:\s*"?([^"\n]+?)"?\s*$', re.MULTILINE)
 _TAG_FM_RE = re.compile(r'^tags:\s*"?([^"\n]+)"?', re.MULTILINE)
-_DATED_SLUG_RE = re.compile(r"^(\d{4}-\d{2}-\d{2})-(.+)$")
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "lib"))
+from _core import DATED_SLUG_RE as _DATED_SLUG_RE  # canonical dated-slug matcher
+
 PILLAR_ORDER = ("ai", "payments", "infra", "policy", "open-source", "leadership")
 PILLAR_LABELS: dict[str, str] = {
     "ai": "Applied AI",

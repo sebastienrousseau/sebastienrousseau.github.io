@@ -14,11 +14,20 @@ beyond stdlib — it's imported very early in every pipeline step.
 from __future__ import annotations
 
 import json
+import re
 from pathlib import Path
 
 from _frontmatter import parse_frontmatter  # re-exported for legacy import sites
 
 ROOT = Path(__file__).resolve().parents[2]
+
+# Canonical dated-post slug matcher. A published article slug is
+# ``YYYY-MM-DD-<rest>``; group 1 is the ISO date, group 2 the title slug.
+# This replaces six near-identical local copies across the generators
+# (build_tags/listings/tag_landings/oembed, article_furniture, rag_corpus);
+# every call site used it either for the date/rest groups or as a boolean
+# "is this a dated post" guard, both of which this two-group form serves.
+DATED_SLUG_RE = re.compile(r"^(\d{4}-\d{2}-\d{2})-(.+)$")
 
 
 def read_frontmatter(path: Path) -> dict[str, str]:
