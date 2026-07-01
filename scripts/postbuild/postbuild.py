@@ -916,6 +916,17 @@ from postbuild_lib.article_furniture import (  # noqa: F401 — re-exports
     slugify,
     strip_duplicate_body_h1,
 )
+from postbuild_lib.feeds import (  # noqa: F401 — re-exports (split from output)
+    augment_sitemap_with_rendered_pages,
+    build_lastmod_index,
+    dedupe_sitemap_index_html,
+    dedupe_xml_feeds,
+    escape_xml_ampersands,
+    fix_xml_feed_urls,
+    fix_xml_feeds,
+    refresh_sitemap_lastmod,
+    shrink_news_sitemap,
+)
 
 # Live GitHub repo stats — moved to postbuild_lib.github_stats
 from postbuild_lib.github_stats import (
@@ -928,18 +939,9 @@ from postbuild_lib.github_stats import (
 # Output emitters — moved to postbuild_lib.output. Re-exported so
 # tests/test_postbuild.py + any external probe keeps working.
 from postbuild_lib.output import (  # noqa: F401 — re-exports
-    augment_sitemap_with_rendered_pages,
-    build_lastmod_index,
     build_llms_ctx_txt,
     build_llms_full_txt,
     build_llms_txt,
-    dedupe_sitemap_index_html,
-    dedupe_xml_feeds,
-    escape_xml_ampersands,
-    fix_xml_feed_urls,
-    fix_xml_feeds,
-    refresh_sitemap_lastmod,
-    shrink_news_sitemap,
     write_ai_txt,
     write_humans,
     write_json_feed,
