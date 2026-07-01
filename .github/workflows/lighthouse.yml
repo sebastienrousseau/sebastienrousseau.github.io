@@ -30,7 +30,11 @@ jobs:
           node-version: "22"
 
       - name: Install Lighthouse CI
-        run: npm install -g @lhci/cli@0.14.0   # ADR-0002
+        # Hash-pinned via .github/ci-tools/lighthouse/package-lock.json (npm ci,
+        # OpenSSF Scorecard Pinned-Dependencies; version is ADR-0002).
+        run: |
+          npm ci --prefix .github/ci-tools/lighthouse
+          echo "$PWD/.github/ci-tools/lighthouse/node_modules/.bin" >> "$GITHUB_PATH"
 
       - name: Cache cargo registry + git + ssg
         uses: actions/cache@caa296126883cff596d87d8935842f9db880ef25 # v5
