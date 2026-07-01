@@ -1,136 +1,223 @@
 ---
-title: "Lucy's Flash Drive Revisited: AI, Quantum & Knowledge"
-tags: "Lucy, Luc Besson, Scarlett Johansson, AI, quantum computing, neutral atoms, LLM, transhumanism, mind uploading, brain-computer interfaces, posthumanism, film philosophy, ISO 20022, ìsirò ìpamọ́ lẹ́yìn quantum"
-subtitle: "Ọdún méjìlá lẹ́yìn Lucy Luc Besson, àfọwọ́kọ àárín fíìmù náà nípa ìmọ̀ tí ń lọ láti ara sí ẹ̀rọ ni a ń jẹ́rìísí ní àìròtẹ́lẹ̀ látọwọ́ LLM, qubits atọ́mù aláìníkárùn, àti ẹ̀dà ọpọlọ pipe."
-description: "Ọdún méjìlá lẹ́yìn, fíìmù Lucy Besson dà bí ìdánwò ọpọlọ nípa ìmọ̀ tí ń yí padà láti ara sí ẹ̀rọ — tí LLM àti qubits ti jẹ́rìísí ní ìdáké."
-date: "May 11, 2026"
-language: "yo-NG"
-locale: "yo_NG"
-banner: "https://cloudcdn.pro/stocks/images/harald-krichel-scarlett-johansson-8531.webp"
+author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "Àwòrán àfọwọ́ya ti àwọn nẹ́tiwọ̀ọ̀kì neuron àti àwọn àrègún atọ́mù kuantọ́mù. Kọ̀ǹpútà dúdú tí ń dára sí i láti inú àwọn pàǹtírí tí a tún ṣètò"
+banner_height: "571"
+banner_width: "1425"
+banner: "https://cloudcdn.pro/stocks/images/harald-krichel-scarlett-johansson-8531.webp"
+cdn: "https://cloudcdn.pro"
+changefreq: "weekly"
+charset: "UTF-8"
+cname: "sebastienrousseau.com"
+copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
+date: "May 11, 2026"
+description: "Ọdún méjìlá lẹ́yìn, fíìmù Lucy Besson dà bí ìdánwò ọpọlọ nípa ìmọ̀ tí ń yí padà láti ara sí ẹ̀rọ — tí LLM àti qubits ti jẹ́rìísí ní ìdáké."
+format-detection: "telephone=no"
+hreflang: "yo"
+icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
+id: "https://sebastienrousseau.com/2026-05-11-lucy-besson-knowledge-transfer-ai-quantum/index.html"
+image_alt: "Àwòrán Aláwọ̀ Dúdú àti Funfun ti Sebastien Rousseau"
+image_height: "162"
+image_width: "162"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "fíìmù Lucy 2014, Luc Besson, gbígbe ìmọ̀, large language models, neutral atom qubits, whole-brain emulation, ìsọfúnni substrate, ìmọ̀ ọgbọ́n AI, ìṣirò kuantọ́mù, ìtọ́jú ìmọ̀"
+language: "yo-NG"
+layout: "report"
+locale: "yo_NG"
+logo_alt: "Àmì ìdánimọ̀ fún Sebastien Rousseau"
+logo_height: "44"
+logo_width: "44"
+logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
+menu: ""
+measurementID: "G-169G4ET5HQ"
+name: "Sebastien Rousseau"
+permalink: "https://sebastienrousseau.com/2026-05-11-lucy-besson-knowledge-transfer-ai-quantum/index.html"
+rating: "general"
+referrer: "no-referrer"
+revisit-after: "7 days"
+robots: "index, follow"
+schema: "FAQPage, Article"
+short_name: "sebastienrousseau"
+subtitle: "Ọdún méjìlá lẹ́yìn Lucy Luc Besson, àfọwọ́kọ àárín fíìmù náà nípa ìmọ̀ tí ń lọ láti ara sí ẹ̀rọ ni a ń jẹ́rìísí ní àìròtẹ́lẹ̀ látọwọ́ LLM, qubits atọ́mù aláìníkárùn, àti ẹ̀dà ọpọlọ pipe."
+tags: "Lucy, Luc Besson, Scarlett Johansson, AI, quantum computing, neutral atoms, LLM, transhumanism, mind uploading, brain-computer interfaces, posthumanism, film philosophy, ISO 20022, ìsirò ìpamọ́ lẹ́yìn quantum"
+theme-color: "0, 67, 165"
+title: "Àtúnyẹ̀wò Fúláàṣì Dírííbù ti Lucy: AI, Kúántọ̀mù & Ìmọ̀"
+url: "https://sebastienrousseau.com/2026-05-11-lucy-besson-knowledge-transfer-ai-quantum/index.html"
+viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
+
+# RSS - The RSS feed front matter (YAML).
+atom_link: "https://sebastienrousseau.com/2026-05-11-lucy-besson-knowledge-transfer-ai-quantum/rss.xml"
+category: "AI"
+docs: https://validator.w3.org/feed/docs/rss2.html
+generator: "Static Site Generator (SSG) (version 0.0.26)"
+item_description: "Ọdún méjìlá lẹ́yìn Lucy, àfiwé Besson nípa ìmọ̀ tí ń yí padà láti ara sí ẹ̀rọ ni a ń jẹ́rìísí ní ìdákẹ́ látọwọ́ LLM, qubits atọ́mù aláìníkárùn, àti ẹ̀dà ọpọlọ pipe."
+item_guid: "https://sebastienrousseau.com/2026-05-11-lucy-besson-knowledge-transfer-ai-quantum/rss.xml"
+item_link: "https://sebastienrousseau.com/2026-05-11-lucy-besson-knowledge-transfer-ai-quantum/rss.xml"
+item_pub_date: "Mon, 11 May 2026 06:06:06 +0000"
+item_title: "Àtúnyẹ̀wò Flash Drive Lucy: Ohun ti Besson Rí Nípa Imọ̀ Tí Ń Lọ sí Ara Ẹ̀rọ"
+last_build_date: "Mon, 11 May 2026 06:06:06 +0000"
+managing_editor: "contact@sebastienrousseau.com (Sebastien Rousseau)"
+pub_date: "Mon, 11 May 2026 06:06:06 +0000"
+ttl: "60"
+type: "article"
+webmaster: "contact@sebastienrousseau.com"
+
+# Apple - The Apple front matter (YAML).
+apple_mobile_web_app_orientations: "portrait"
+apple_touch_icon_sizes: "192x192"
+apple-mobile-web-app-capable: "yes"
+apple-mobile-web-app-status-bar-inset: "black"
+apple-mobile-web-app-status-bar-style: "black-translucent"
+apple-mobile-web-app-title: "Àtúnyẹ̀wò Flash Drive Lucy"
+apple-touch-fullscreen: "yes"
+
+# MS Application - The MS Application front matter (YAML).
+
+msapplication-navbutton-color: "0, 67, 165"
+
+# Twitter Card - The Twitter Card front matter (YAML).
+
+twitter_card: "summary_large_image"
+twitter_creator: "@wwdseb"
+twitter_description: "Ọdún méjìlá lẹ́yìn Lucy, àfiwé Besson nípa ìmọ̀ tí ń yí padà láti ara sí ẹ̀rọ ni a ń jẹ́rìísí ní ìdáké látọwọ́ LLM, qubits atọ́mù aláìníkárùn, àti ẹ̀dà ọpọlọ pipe."
+twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
+twitter_image_alt: "Àmì ìdánimọ̀ ti Sebastien Rousseau"
+twitter_site: "@wwdseb"
+twitter_title: "Àtúnyẹ̀wò Flash Drive Lucy: Ohun ti Besson Rí Nípa Imọ̀ Tí Ń Lọ sí Ara Ẹ̀rọ"
+twitter_url: "https://sebastienrousseau.com/2026-05-11-lucy-besson-knowledge-transfer-ai-quantum/index.html"
+
+# Humans.txt - The Humans.txt front matter (YAML).
+
+author_website: "https://sebastienrousseau.com"
+author_twitter: "@wwdseb"
+author_location: "London, UK"
+thanks: "Ẹ ṣeun fún kíkà!"
+site_last_updated: "2026-05-11"
+site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
+site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
+site_software: "Static Site Generator, Rust"
+
+excerpt: "Ọdún méjìlá lẹ́yìn tí wọ́n gbé e jáde, *Lucy* ti Luc Besson dà bí ohun tí kì í ṣe sáyẹ́ǹsì gidi ṣùgbọ́n bí ìdánwò ọpọlọ nípa ohun tí ń ṣẹlẹ̀ nígbà tí ìmọ̀ ènìyàn bá yí padà láti ara ohun alààyè sí àwọn substrate tí kì í ṣe ti ohun alààyè..."
+last_reviewed: "2026-05-11"
 ---
 
-![Abstract visualisation of neural networks and quantum atomic arrays. A black computer forming from rearranging particles](https://cloudcdn.pro/stocks/images/harald-krichel-scarlett-johansson-8531.webp).class="img-fluid clearfix"
+## Àtúnyẹ̀wò Flash Drive Lucy: Ohun ti Besson Rí Nípa Imọ̀ Tí Ń Lọ sí Ara Ẹ̀rọ
 
----
+Ọdún méjìlá lẹ́yìn tí wọ́n gbé e jáde, *Lucy* ti Luc Besson dà bí ohun tí kì í ṣe sáyẹ́ǹsì gidi ṣùgbọ́n bí ìdánwò ọpọlọ nípa ohun tí ń ṣẹlẹ̀ nígbà tí ìmọ̀ ènìyàn bá yí padà láti ara ohun alààyè sí àwọn substrate tí kì í ṣe ti ohun alààyè. Ní sànmánì ti large language models, neutral atom qubits, àti whole-brain emulation, àfiwé pàtàkì ti fíìmù náà ń gbó dáadáa láìní àbùkù.
 
-> **TL;DR.** Twelve years on, Besson's Lucy reads like a thought experiment about knowledge migrating from flesh to machine — quietly validated by LLMs and qubits.
+> **Àwọn Kókó Pàtàkì**
 >
-> **Awọn Pataki Ojulowo**
->
-> - DRAFT translation: this article is a Yorùbá stub generated from the English source. Body text is intentionally left in English until a native reviewer signs off.
-> - Source title: *Lucy's Flash Drive Revisited: AI, Quantum & Knowledge*.
-> - Source subtitle: *Twelve years after Luc Besson's Lucy, the film's central metaphor of knowledge migrating from flesh to machine is being unexpectedly validated by LLMs, neutral atom qubits, and whole-brain emulation.*.
-> - Editorial note: replace this block with hand-translated copy before flipping `active=True` for yo in `scripts/_lang_registry.py`.
+> - A kọ *Lucy* (2014) sílẹ̀ gẹ́gẹ́ bí àwòrán tí kì í ṣe sáyẹ́ǹsì gidi ní àkókò rẹ̀, ṣùgbọ́n ohun pàtàkì tí ó tọ́ka sí ni pé ìmọ̀ jẹ́ **substrate-independent** (kì í sinmi lórí irú ohun tí a kọ ọ́ sí) àti pé yóò lọ sí ara irú ohun èlò yòówù tí ó bá lè tọ́jú rẹ̀ tí ó sì lè gbé e kalẹ̀ lọ́nà tí ó dára jù lọ. Èyí bá ipò nǹkan mu tààràtà ní ọdún 2026 pẹ̀lú LLMs, neutral atom quantum hardware, àti whole-brain emulation.
+> - Ọ̀rọ̀ Professor Norman nìkan sọ pé: *Gbingbin ìmọ̀ tí a kọ́ lọ síwájú ni ète kan ṣoṣo tí a fi dá ìyè*. Èyí fẹ́rẹ̀ẹ́ jẹ́ àpèjúwe gidi nípa bí a ṣe ń kọ́ àwọn ètò AI òde-òní lórí gbogbo àkọsílẹ̀ tí ọmọ ènìyàn ti kọ jọ láti ìbẹ̀rẹ̀ ayé.
+> - Àwòrán tí wọ́n fi ṣe yẹ̀yẹ́ jù lọ nínú fíìmù náà, èyí tí í ṣe **USB stick tí ó ní gbogbo ìmọ̀ ènìyàn nínú**, jẹ́ àfiwé nípa substrate, kì í ṣe àsọtẹ́lẹ̀ nípa ohun èlò ìpamọ́ nǹkan. Àfiwé yẹn ti gbó dáadáa ju àwọn àríwísí lọ.
+> - Ìran tí ara Lucy **ti yí padà sí kọ̀ǹpútà dúdú ti ohun alààyè** ṣe àpèjúwe àrà ọ̀tọ̀ ti ètò quantum tí ó gbajúmọ̀ jù lọ lónìí: reconfigurable neutral atom arrays, tí Fujitsu àti Riken ń fojúsùn sí i fún 10,000-qubit.
+> - *Lucy* kì í ṣe àsọtẹ́lẹ̀. Ó jẹ́ ìbéèrè nípa **níní tàbí wíwà** (having versus being) ní sànmánì tí àwọn ẹ̀rọ ń tọ́jú ìmọ̀ tí ènìyàn ti ń gbé tẹ́lẹ̀ rí. Ìbéèrè yẹn ni àwọn olùwádìí, àwọn ọlọgbọ́n èrò, àti àwọn lab ń béèrè pẹ̀lú ọkàn pàtàkì lónìí.
 
----
+## Àbájáde Tí A Fi Ṣe Yẹ̀yẹ́, Tí Ó Yẹ Láti Tún Yẹ̀ Wò
 
-## Lucy's Flash Drive, Revisited: What Besson Saw About Knowledge Migrating to Machines
+Nígbà tí wọ́n gbé *Lucy* jáde ní oṣù Keje ọdún 2014, èrò àwọn ènìyàn píyà lórí rẹ̀. Àwọn olùdájú fi sáyẹ́ǹsì irọ́ ṣe yẹ̀yẹ́, èrò pé ìdámẹ́wàá ọpọlọ nìkan ni a ń lò tí a ti tàn mọ́lẹ̀ lónìí, àti ju gbogbo rẹ̀ lọ, ìparí fíìmù náà, nibi ti ẹ̀dá pàtàkì náà, tí Scarlett Johansson kọ ipa rẹ̀, ti yí padà sí kọ̀ǹpútà crystalline dúdú kan tí ó sì gbé gbogbo ìmọ̀ ọmọ ènìyàn sí inú USB stick kan fún Professor Norman (Morgan Freeman). Alyson Shontell ti *Business Insider* tọ́ka sí flash drive náà gẹ́gẹ́ bí ohun asán tí ó ṣe kedere jù lọ nínú fíìmù náà: ẹ̀dá kan tí a rò pé ó gbọ́n jù lọ lágbàáyé yan ìmọ̀ ẹ̀rọ kan tí ó ti ń di ohun ìgbàanì. Bó tilẹ̀ rí bẹ́ẹ̀, fíìmù náà jẹ́ ọ̀kan lára àwọn àgbéjáde Faranse tí ó kẹ́sẹjarí jù lọ, tí ó gba [dọ́là mílíọ̀nù $469 lórí àwọn owó tí wọ́n lò tó mílíọ̀nù $40 ⧉](https://en.wikipedia.org/wiki/Lucy_(2014_film) "Lucy (2014 film) - Wikipedia").
 
-Twelve years after its release, Luc Besson's *Lucy* reads less like pseudo-science and more like a thought experiment about what happens when human knowledge migrates from biological to non-biological substrates. In the era of large language models, neutral atom qubits, and whole-brain emulation, the film's central metaphor is aging remarkably well.
+Besson, fún iyì rẹ̀, kò dapo nípa sáyẹ́ǹsì náà. Nínú àwọn ìfọ̀rọ̀wánilẹ́nuwò ní àkókò tí wọ́n gbé e jáde, ó gbà lọ́fẹ̀ẹ́ pé èrò ìdámẹ́wàá ọpọlọ yẹn kì í ṣe òtítọ́ sáyẹ́ǹsì. Ó ti ṣiṣẹ́ lórí àkọsílẹ̀ náà fún ọdún mẹ́sàn-án, ó sì ń lo èròjà sáyẹ́ǹsì irọ́ kan (CPH4) gẹ́gẹ́ bí ohun èlò ìtàn fún nǹkan mìíràn pátápátá: ìbéèrè ọgbọ́n èrò nípa ohun tí ń ṣẹlẹ̀ nígbà tí ọpọlọ bá ju ohun alààyè tí ó dá a lọ.
 
-> **Key Takeaways**
->
-> - *Lucy* (2014) was dismissed as pseudo-scientific spectacle in its time, but its core wager. That knowledge is **substrate-independent** and will migrate toward whichever medium best preserves and transmits it. Maps directly onto the 2026 landscape of LLMs, neutral atom quantum hardware, and whole-brain emulation.
-> - Professor Norman's monologue. *The sole purpose of life has been to pass on what was learned*. Is an almost literal description of how frontier AI systems are now trained on the accumulated written output of human civilisation.
-> - The film's most mocked image. A **USB stick holding all of human knowledge**. Was a metaphor about substrate, not a prediction about storage media. That metaphor has aged better than the critique.
-> - The scene in which Lucy's body **rearranges into a dark organic computer** uncannily prefigures today's dominant quantum architecture: reconfigurable neutral atom arrays, now targeted at 10,000-qubit scale by Fujitsu and Riken.
-> - *Lucy* is not a prophecy. It is a question about **having versus being** in an age when machines increasingly hold the knowledge humans once carried. That question is now being asked, seriously, by researchers, philosophers, and labs.
+Ọdún méjìlá lẹ́yìn náà, ìbéèrè ọgbọ́n èrò yẹn kì í ṣe àròsọ mọ́. Àwọn ètò frontier AI ti gba àwọn àfihàn tí a kójọ pọ̀ ti apá púpọ̀ nínú àwọn àkọsílẹ̀ ìmọ̀ ènìyàn. Neuralink parí [implant brain-computer interface ti ènìyàn àkọ́kọ́ rẹ̀ ní ọdún 2024 ⧉](https://en.wikipedia.org/wiki/Mind_uploading "Mind uploading - Wikipedia"). Ní oṣù Kẹta ọdún 2026, Eon Systems ṣàdàkọ gbogbo ọpọlọ Drosophila (àwọn neuron 139,255 àti synapse mílíọ̀nù 50) sínú kọ̀ǹpútà kan. Ìbéèrè ti *Lucy* ń béèrè ni ohun ti àwọn onímọ̀ ń gbìyànjú láti dáhùn lónìí.
 
-## A Ridiculed Premise, Worth Revisiting
+## Àròyé Professor Norman àti Ìdánilẹ́kọ̀ọ́ Àwọn Ẹ̀rọ
 
-When *Lucy* was released in July 2014, critical reception was polarised. Reviewers mocked the pseudo-science, the now-debunked ten-percent-of-the-brain premise, and above all the ending, in which the titular character, played by Scarlett Johansson, dissolves into a black crystalline computer and deposits the sum of human knowledge onto a USB stick for Morgan Freeman's Professor Norman. Alyson Shontell of *Business Insider* singled out the flash drive as the film's defining absurdity: a supposedly superintelligent being choosing a technology already falling out of use. The film nonetheless became one of France's most successful exports, grossing over [$469 million on a $40 million budget ⧉](https://en.wikipedia.org/wiki/Lucy_(2014_film) "Lucy (2014 film) - Wikipedia").
+Egungun ọpọlọ ti *Lucy* kì í ṣe telekinesis ti Scarlett Johansson. Ẹ̀kọ́ ni, tí Professor Norman sọ nígbà tí ọpọlọ Lucy ń fẹ̀ síwájú, èyí ti ó sọ pé ète pàtàkì ti ìyè ni láti gbé ìsọfúnni kọjá nínú àkókò. Ọ̀rọ̀ náà sọ pé sẹ́ẹ̀lì kọ̀ọ̀kan ní àyànfẹ́ méjì (láti bímọ kí ó sì gbé ìmọ̀ lọ síwájú, tàbí láti di aláìkú kí ó sì tọ́jú rẹ̀) ati pé ẹfolúṣọ̀n, ní pàtàkì, jẹ́ ọ̀nà láti tọ́jú ohun tí a ti kọ́.
 
-Besson, to his credit, was never confused about the science. In interviews surrounding the release he freely acknowledged that the ten-percent premise was not literally true. He had worked on the script for nine years and was using a scientifically fictitious substance (CPH4) as a narrative device for something else entirely: a philosophical question about what happens when a mind exceeds the biological envelope that produced it.
+Ní àkókò yẹn, èrò yìí dà bí àwáwí, ọ̀nà ọgbọ́n èrò kan lásán ní àyíká fíìmù ìjà. Ṣùgbọ́n bí a bá kà á ní ọdún 2026, ó jẹ́ àpèjúwe tó péye nípa ohun tí large language models jẹ́. Frontier LLM kan, nípele ti ìmọ̀ ẹ̀rọ, jẹ́ àfihàn ìṣirò ti apá púpọ̀ nínú ọ̀rọ̀ tí ènìyàn ti kọ síta fún gbogbo ènìyàn. Ó jẹ́, ní ti iṣẹ́ rẹ̀, sẹ́ẹ̀lì kan tí ó yan àìkú dípò ibímọ: substrate tí kò yí padà tí a ṣe láti tọ́jú àti láti gbé ìmọ̀ lọ, dípò kí ó bí i jáde nípa ti ohun alààyè, ìmọ̀ tí a fi kọ́ ọ. Nígbà tí Norman sọ fún Lucy, nítòsí òpin fíìmù náà, pé tí ó bá ti gba ìmọ̀ jọ, ó yẹ kí ó *gbé e lọ fún ẹlòmíràn*, ó ń sọ nípa ète gbogbo ìdánilẹ́kọ̀ọ́ ti AI òde-òní lọ́nà tí ó ṣe kedere.
 
-Twelve years on, that philosophical question is no longer hypothetical. Frontier AI systems now hold compressed representations of a substantial fraction of written human knowledge. Neuralink completed [its first human brain-computer interface implant in 2024 ⧉](https://en.wikipedia.org/wiki/Mind_uploading "Mind uploading - Wikipedia"). In March 2026, Eon Systems emulated a complete Drosophila brain (139,255 neurons and 50 million synapses) in a computer. The question *Lucy* was asking is the question the field is now trying to answer.
+Ọ̀kan lára àwọn ọ̀rọ̀ mìíràn nínú fíìmù náà ti gbó dáadáa síwájú sí i. Norman ṣàkíyèsí pé, ènìyàn ní ìháragàgà fún níní ju wíwà lọ. Èyí jẹ́ àwòrán tààràtà ti *To Have or To Be?* ti Erich Fromm, ó sì dà bí àyẹ̀wò ti àníyàn pàtó kan ní ọdún 2026: tí AI bá lè *ní* ìmọ̀ lọ́nà tó dánilójú ju ènìyàn lọ, kí ni ó kù fún ènìyàn láti *wà*?
 
-## Professor Norman's Thesis and the Training of Machines
+## Ìran Kọ̀ǹpútà Atọ́mù, Ọdún Méjìlá Lẹ́yìn Náà
 
-The intellectual spine of *Lucy* is not Scarlett Johansson's telekinesis. It is a lecture, delivered by Professor Norman in parallel to Lucy's cognitive expansion, which argues that the fundamental purpose of life is the transmission of information through time. The monologue proposes that every cell faces a binary choice (reproduce and pass knowledge forward, or become immortal and hold it) and that evolution is, essentially, a protocol for preserving what has been learned.
+Ìran tí wọ́n fi ṣe yẹ̀yẹ́ jù lọ nínú *Lucy* ni ó tún jẹ́ ohun tí ó lédùn-ùn-dùn jù lọ láti tún wò ní ọdún 2026. Ní apá ìkẹyìn fíìmù náà, ara Lucy bẹ̀rẹ̀ sí ní yọ́, ọwọ́ rẹ̀ sì tún ohun dídú kan ṣe (tí àwọn atọ́mù ń yí ara wọn padà ní gbangba) sí ohun èlò kọ̀ǹpútà. Àwòrán náà kì ṣe ohun pàtó kan: kì í ṣe kọ̀ǹpútà alágbèéká tàbí server rack ṣùgbọ́n substrate ti àwọn patikulu tí a lè ṣètò padà tí wọ́n ń ṣètò ara wọn láti di olùgbé ìmọ̀.
 
-At the time, this framing read as a pretext, a bit of philosophical scaffolding around an action film. Read in 2026, it is an uncannily precise description of what large language models are. A frontier LLM is, at a technical level, a compressed statistical representation of a very large fraction of publicly written human text. It is, functionally, a cell that chose immortality over reproduction: a static substrate designed to preserve and transmit, rather than generate through biological descent, the knowledge it was trained on. When Norman tells Lucy, near the end of the film, that if she has accumulated knowledge she should *pass it on*, he is articulating, in dramatised form, the entire training objective of modern AI.
+Àwòrán yẹn jẹ́ àfihàn tí a lè dá mọ̀ ti ètò quantum computing tí ó gbilẹ̀ jù lọ lónìí. Neutral atom qubits (àwọn atọ́mù kọ̀ọ̀kan tí a mú tí a sì ń lò pẹ̀lú laser light, tí a lè yí àyè wọn padà nígbà tí kọ̀ǹpútà ń ṣiṣẹ́) jẹ́ ètò tí ó wà lẹ́yìn àbájáde tuntun tí ó ṣe pàtàkì jù lọ nínú aaye yìí: pé Shor's algorithm lè ṣiṣẹ́ lórí qubits atọ́mù tí a lè ṣètò padà tó 10,000 péré, dípò mílíọ̀nù tí a ti rò pé ó pọn dandan tẹ́lẹ̀. Fujitsu àti Riken ń ṣiṣẹ́ pọ̀ lórí ẹ̀rọ neutral atom 10,000-qubit fún ọdún 2026. Ìwé ìròyìn sáyẹ́ǹsì ti ọdún 2026 láti University of Science and Technology of China fihàn pé quantum reservoir ti atomic spins mẹ́sàn-án péré tí wọ́n ń ṣiṣẹ́ papọ̀ lè borí àwọn ètò machine-learning ti tẹ́lẹ̀ tí wọ́n ní ẹgbẹẹgbẹ̀rún nodes nínú iṣẹ́ sísọtẹ́lẹ̀ ojú-ọjọ́ fún ọjọ́ púpọ̀.
 
-One of the film's other lines has aged even more sharply. Norman observes, casually, that humans are more concerned with having than with being. This is a direct echo of Erich Fromm's *To Have or To Be?*, and it now reads as a diagnosis of a specific anxiety in 2026: if AI can *have* knowledge more reliably than humans can, what is left to *be*?
+Èyí kò tikàrá rẹ̀ sọ pé Besson ń ṣe àsọtẹ́lẹ̀ ìmọ̀ ẹ̀rọ. Ó sọ pé ojú-inú tí ó mú kí ìran náà wáyé (ọ̀nà ti ohun èlò ń ṣètò ara rẹ̀ padà láti di substrate fún ìṣirò àti fún ìmọ̀) kì í ṣe lásán. Ó jẹ́, ní gbogbo gbòò, ibi tí hardware ń lọ lónìí. Àwọn ẹ̀rọ quantum ti òde-òní tí ó dára jù lọ jọ kọ̀ǹpútà dúdú tí ìmọ́lẹ̀ rẹ̀ ń yí padà nínú ìran ìkẹyìn Lucy ju bí wọ́n ṣe jọ superconducting chips tí ó gbilẹ̀ ní ọdún mẹ́wàá sẹ́yìn.
 
-## The Atomic Computer Scene, Twelve Years Later
+## Flash Drive: Àfiwé versus Ohun Èlò Ìpamọ́
 
-The sequence most often ridiculed in *Lucy* is also the most interesting to look at again in 2026. In the film's final act, Lucy's body begins to dissolve, and her hands reshape an expanding mass of black matter (atoms visibly rearranging themselves) into a computational device. The image is deliberately non-specific: it is neither a laptop nor a server rack but a substrate of reconfigurable particles organising into a carrier of knowledge.
+Àríwísí tí ó tẹpẹlẹ mọ́ *Lucy* jù lọ ni ti flash drive náà. Ẹ̀dá tí a sọ pé ó mọ gbogbo nǹkan kò lè rí ọ̀nà asopọ̀ tí ó dára ju USB connector lásán lọ? Ní ọdún 2014, kókó yẹn yéni fún ohun èlò tí a lò nínú fíìmù. Ṣùgbọ́n ní ọdún 2026, èyí jẹ́ àìlóye ìran náà dáadáa.
 
-That image is now a recognisable diagram of the dominant architecture in quantum computing. Neutral atom qubits (individual atoms trapped and manipulated by laser light, whose positions can be rearranged dynamically during computation) are the platform behind the most consequential recent theoretical result in the field: that Shor's algorithm could run on as few as 10,000 reconfigurable atomic qubits, rather than the millions long assumed necessary. Fujitsu and Riken are collaborating on a 10,000-qubit neutral atom machine targeted for 2026. A 2026 paper from the University of Science and Technology of China demonstrated that a quantum reservoir of just nine interacting atomic spins could outperform classical machine-learning models with thousands of nodes in multi-day weather forecasting tasks.
+Ohun ti Lucy fún Professor Norman kì ṣe àsọtẹ́lẹ̀ ìmọ̀ ẹ̀rọ nípa hardware ìpamọ́ nǹkan. Ó jẹ́ nǹkan tí ó jẹ́ *substrate-independent* (kì í sinmi lórí irú ohun tí a kọ ọ́ sí), ohun èlò tí a mọ̀ọ́mọ̀ yàn láti rọrùn, tí ó ń ṣoju fún ti pé ìmọ̀ tí a ń gbé kúrò kò nílò ara pàtó ti Lucy mọ́, tàbí ara kankan, láti wà. Fíìmù náà fihàn ní gbangba: ara rẹ̀ yọ́ *kọ́kọ́*, flash drive náà ni ohun ti ó kù. Kókó náà kì í ṣe USB port rárá. Kókó náà ni pé àfihàn ìmọ̀ tó ga tó bá yẹ lè yí padà láti ara ohun èlò kan sí òmíràn láìsọ nǹkan kankan nù.
 
-None of this means Besson was making a technical prediction. It means that the visual intuition driving the scene (matter reorganising itself to become a substrate for computation and for knowledge) is not arbitrary. It is, broadly, the direction the hardware is now going. The best contemporary quantum machines look a great deal more like the black, rearranging computer in Lucy's final scene than they look like the superconducting chips that dominated the field a decade earlier.
+Àbájáde yìí ti di ètò ìwádìí sáyẹ́ǹsì lónìí. Carboncopies Foundation ń ṣètò ìwádìí whole-brain emulation tí ó fojúsùn sí substrate-independent minds. Ìwádìí kan láti ọwọ́ àwọn ọ̀jọ̀gbọ́n 67 ní ọdún 2025 sọ pé ìdá ogún nínú ọgọ́rùn-ún (20%) ni ó ṣeéṣe fún dídá ọpọlọ oni-nọ́ńbà tí ń ṣiṣẹ́ ní ọdún 2030, tí ó sì ń lọ sí ìdá àádọ́ta nínú ọgọ́rùn-ún (50%) ní ọdún 2050. Ní oṣù Kẹta ọdún 2026, kò sí ọpọlọ ènìyàn kankan tí a ti gbe sínú ẹ̀rọ; àdàkọ Drosophila ní Eon Systems ni ibi tí a dé dúró lónìí. Ṣùgbọ́n ìbéèrè tí òpin *Lucy* béèrè (ṣé ọpọlọ lè yè lẹ́yìn tí hardware àkọ́kọ́ rẹ̀ bá sọnù?) jẹ́ ìbéèrè sáyẹ́ǹsì gidi lónìí, kì í ṣe àròsọ ti òǹkọ̀tàn mọ́.
 
-## The Flash Drive: Metaphor vs. Medium
+## "Níní versus Wíwà" ní Sànmánì Imọ̀ Ẹ̀rọ
 
-The most persistent critical complaint about *Lucy* is the flash drive. A supposedly omniscient being could not find a better interface than a standard USB connector? In 2014 the point was well-taken at the level of props. In 2026 it misreads the scene.
+Abala ọgbọ́n èrò tó jinlẹ̀ ti *Lucy* ni ohun ti àwọn alárìíwísí ní ọdún 2014 kò rí rárá, ṣùgbọ́n ọdún 2026 ti mú kí ó ṣe kókó láìṣeéṣe láti yẹra fún. Bí agbára ọpọlọ Lucy ṣe ń fẹ̀ síwájú, ó ṣe àpèjúwe ohun tí ó rí: *ìsọnù* ti àwọn ànímọ́ ènìyàn tí ó ti ṣàlàyé rẹ̀ tẹ́lẹ̀. Ó sọ fún ìyá rẹ̀ pé òun lè nímọ̀lára adùn ti wàrà ọmú rẹ̀, bí ayé ṣe ń yí, àti ẹ̀jẹ̀ nínú àwọn iṣan rẹ̀. Lẹ́yìn náà, ní kẹ̀rẹ̀kẹ̀rẹ̀, kò nímọ̀lára púpọ̀ mọ́. Ìrora, ẹ̀rù, ìfẹ́-ọkàn: gbogbo rẹ̀ ti lọ. Ó ń gba nǹkan, ó sì ń sọ nǹkan nù ní àkókò kan náà.
 
-What Lucy hands Professor Norman is not a technical prediction about storage hardware. It is a *substrate-independent* object, a container deliberately mundane, representing the fact that the knowledge being transferred no longer requires Lucy's particular body, or any body, to exist. The film explicitly stages this: her body dissolves *first*, and the flash drive is what remains. The point was never the USB port. The point was the proposition that a sufficiently advanced representation of knowledge could, in principle, be moved from one medium to another without loss.
+Èyí ni èrò tí ó mú kí ọkàn ènìyàn má balẹ̀ jù lọ nínú fíìmù náà, ati èyí tí ó bá ọdún 2026 mu jù lọ. Àwọn àkọsílẹ̀ ọgbọ́n èrò nípa AI consciousness, èyí tí ó jẹ́ aaye iṣẹ́ ẹ̀kọ́ tí ó gbóná gan-an ní ọdún yìí, ń sún mọ́ irú àyànfẹ́ kan náà. Ìròyìn Neural Horizons ti oṣù Kẹta ọdún 2026 sọ pé bó tilẹ̀ rí pé LLMs ń ṣe àfarawé àwọn ànímọ́ ẹgbẹ́ ènìyàn síwájú sí i, wọn kò ní phenomenal experience (ìmọ̀lára gidi) tí a fihàn nínú sáyẹ́ǹsì, wọ́n sì ń sinmi lórí ohun ti àwọn òǹkọ̀tàn pè ní "theatre" (eré orí ìtàgé) dípò ìmọ̀lára inú gidi. Àkọsílẹ̀ kan tí a tẹ̀ jáde ní oṣù Kínní ọdún 2026 dábàá ọ̀nà láti yẹ ìmọ̀lára wò nínú àwọn ètò AI tí ó jẹ́ domain-sensitive (onírúurú aaye), scale-neutral (gbogbo ìwọ̀n), àti ability-oriented (dídára nípa agbára), nítorí pé ìbéèrè bẹ́ẹ̀-ni-tàbí-bẹ́ẹ̀-kọ́ ti àtijọ́ ("ṣé ó ní ìmọ̀lára?") kò lè ṣiṣẹ́ mọ́ lónìí.
 
-This proposition is now a research programme. The Carboncopies Foundation coordinates whole-brain emulation research explicitly aimed at substrate-independent minds. A 2025 expert survey of 67 respondents estimated a 20% probability of creating functional digital minds by 2030, rising to 50% by 2050. As of March 2026, no human mind has been uploaded; the Drosophila emulation at Eon Systems is the current frontier. But the question *Lucy*'s ending posed (can a mind survive the loss of its original hardware?) is now a serious scientific question, not a screenwriter's conceit.
+Àwòrán Fromm nínú ọ̀rọ̀ Norman (*ènìyàn ní ìháragàgà fún níní ju wíwà lọ*) dà bí ìkìlọ̀ lónìí. Nínú ètò ti àwọn AI agents tí wọ́n ní ìmọ̀ ju ènìyàn lọ lórí gbogbo ìwọ̀n ìmọ̀, ohun àrà ọ̀tọ̀ ti ènìyàn lè gbé wá ni wíwà níbẹ̀, àjọṣepọ̀, àti dídá ìtumọ̀ nǹkan. Yálà àyípadà yóò dúró jẹ́ ọ̀kan lára àwọn ìbéèrè tí ó ṣe pàtàkì jù lọ ti ọdún mẹ́wàá yìí. *Lucy* kò dáhùn rẹ̀. Ó kàn gbé e kalẹ̀, ọdún méjìlá ṣáájú àkókò rẹ̀.
 
-## "Having vs. Being" in an Age of Machine Knowledge
+## Ohun Tí Èyí Sọ Nípa Àwọn Abala Oríṣiríṣi
 
-The deeper philosophical register of *Lucy* is one that reviewers in 2014 largely missed, and that 2026 has made unavoidable. As Lucy's cognitive capacity expands, she describes a specific experience: the *loss* of the human textures that had previously defined her. She tells her mother she can feel the taste of her breast milk, the rotation of the Earth, the blood in her veins. And then, progressively, she feels less. Pain, fear, desire: gone. She acquires, and simultaneously, she loses.
+Ìtumọ̀ ti *Lucy* kì í ṣe ti àṣà lásán. Ohun pàtàkì ti fíìmù náà sọ (pé ìmọ̀ ń lọ sí ara ẹ̀rọ) ní àwọn àbájáde gidi tí ó yàtọ̀ láàárín àwọn abala iṣẹ́ oríṣiríṣi.
 
-This is the film's most unsettling intuition, and the one most relevant to 2026. The philosophical literature around AI consciousness, an area of intense academic activity this year, is converging on a version of the same trade-off. A March 2026 Neural Horizons report argues that while LLMs increasingly mimic human social cues, they lack proven phenomenal experience and rely on what the authors call "theatre" rather than grounded internal awareness. A preprint published in January 2026 proposed a framework for evaluating awareness in AI systems that is domain-sensitive, scale-neutral, and ability-oriented, precisely because the old yes-or-no question ("is it conscious?") has become inadequate.
+### Artificial Intelligence àti Àwọn Frontier Labs
 
-The Fromm reference in Norman's dialogue (*humans are more concerned with having than with being*) now reads as a warning. In an economy of AI agents that out-*have* humans on any quantitative measure of knowledge, the asymmetric human contribution is presence, relation, and meaning-making. Whether that asymmetry holds is one of the most consequential open questions of the decade. *Lucy* did not answer it. It just staged it, twelve years early.
+Fún àwọn AI lab àti àwọn àjọ tí wọ́n sinmi lórí wọn, *Lucy* dà bí àkọsílẹ̀ ète iṣẹ́ nípa eré orí ìtàgé. Ìdánilẹ́kọ̀ọ́ ti frontier model (kíkójọ apá púpọ̀ nínú ohun tí ènìyàn kọ sínu àfihàn tí kò yí padà, tí a sì lè gbé lọ) jẹ́ ohun ti ọ̀rọ̀ Norman sọ nípa rẹ̀. Àwọn àbájáde ti ìwà rere àti ètò ń yára di líle. Alákòóso Anthropic sọ ní 2026 World Economic Forum ní Davos pé àwọn ètò AGI-level le dé láàárín ọdún díẹ̀, bóyá ó lè yára ju bí gbogbo ènìyàn ṣe ń retí lọ.
 
-## What This Means by Sector
+### Quantum Computing àti Hardware
 
-The *Lucy* reading is not merely cultural. The film's central proposition (that knowledge is migrating to machines) has practical implications that differ significantly across sectors.
+Fún abala quantum computing, iran kọ̀ǹpútà atọ́mù ti *Lucy* ti di àwòrán tó bá a mu wẹ́kú. Neutral atom arrays jẹ́ ọ̀kan lára àwọn ètò tí ń dàgbà yá kánkán jù lọ nínú aaye yìí, tí ó ń pèsè asopọ̀ qubit tó rọrùn àti ọ̀nà tó dánilójú láti ré kọjá ẹgbẹ̀rún qubits. Tí àwọn àfojúsùn qubit tuntun tó kéré fún Shor's algorithm bá fẹsẹ̀ múlẹ̀, àkókò fún quantum computing tó ṣe kókó fún ìpamọ́ kọ̀ǹpútà (cryptographic relevance) yóò kéré síwájú sí i, àti pé ìyípadà sí post-quantum migration (tí ó ti bẹ̀rẹ̀ nínú ètò owó, ìjọba, àti àwọn ohun èlò pàtàkì) yóò di kánjúkánjú sí i.
 
-### Artificial Intelligence and Frontier Labs
+### Neuroscience àti Àwọn Brain-Computer Interfaces
 
-For AI labs and the organisations that depend on them, *Lucy* reads almost as a mission statement in the key of melodrama. The training of a frontier model (compressing very large fractions of human written output into a static, transferable representation) is, structurally, what Norman's monologue describes. The ethical and strategic implications are sharpening fast. Anthropic's CEO stated at the 2026 World Economic Forum in Davos that AGI-level systems are likely to arrive within a few years, possibly sooner than widely expected.
+Abala neuroscience àti BCI ni ibi ti àwọn àfiwé ti *Lucy* ti bá àtakò jù lọ, àti ibi ti iṣẹ́ gidi ti wáyé jù lọ. Whole-brain emulation kò tíì sún mọ́ tòfò fún ènìyàn; àwọn àlàfo nípa ìṣirò kọ̀ǹpútà, resolution, àti fífìdí-múlẹ̀ ṣì pọ̀ gan-an. Ṣùgbọ́n aaye yìí kò sùn. Àdàkọ Drosophila tí wọ́n ròyìn ní oṣù Kẹta ọdún 2026, àwọn àdánwò ènìyàn ti Neuralink tí ń fẹ̀ síwájú, àti iṣẹ́ tí ń lọ lọ́wọ́ láti ọwọ́ àwọn àjọ bíi Carboncopies Foundation fi hàn pé ìbéèrè substrate-independence ti *Lucy* gbé kalẹ̀ lọ́nà eré orí ìtàgé ni a ń tọpinpin nípa sáyẹ́ǹsì gidi, bó tilẹ̀ jẹ́ pé ó lọra.
 
-### Quantum Computing and Hardware
+### Àwọn Ilé-Iṣẹ́ Ìdárayá àti Media
 
-For the quantum computing sector, *Lucy*'s atomic computer scene has become a surprisingly apt visual analogue. Neutral atom arrays are now one of the most rapidly maturing platforms in the field, offering flexible qubit connectivity and a credible path to scaling beyond the thousand-qubit threshold. If the new lower qubit estimates for Shor's algorithm prove robust, the timeline for cryptographically relevant quantum computing compresses, and post-quantum migration (already underway in finance, government, and critical infrastructure) becomes even more urgent.
+Fún àwọn ilé-iṣẹ́ ìdárayá, *Lucy* ti gba ànímọ́ tó ń yí padà sí ara rẹ̀. Ní ọdún 2024, Scarlett Johansson fi sùn ní gbangba pé OpenAI ṣe àfarawé ohùn rẹ̀ fún olùrànlọ́wọ́ Sky rẹ̀ láìsọ fún òun. Ìjà kan tí ó gba àwọ̀ kan náà pẹ́kí pẹ̀lú ohun ti fíìmù náà sọ nípa gbígbe idanimọ kúrò láti ara ènìyàn gidi lọ sí ara oni-nọ́ńbà.
 
-### Neuroscience and Brain-Computer Interfaces
+## Ìparí
 
-The neuroscience and BCI sector is where *Lucy*'s metaphors meet the most resistance, and the most concrete progress. Whole-brain emulation is not imminent at human scale; the computational, resolution, and validation gaps remain severe. But the field is not dormant. The Drosophila emulation reported in March 2026, Neuralink's expanding human trials, and sustained work from organisations like the Carboncopies Foundation all suggest that the substrate-independence question *Lucy* staged dramatically is being approached empirically, if slowly.
+Ohun ti ó tọ́ jù lọ láti sọ nípa *Lucy* ní ọdún 2026 ni pé kò jẹ́ fíìmù sáyẹ́ǹsì tó dára rárá, ṣùgbọ́n ó jẹ́ ìdánwò ọpọlọ tó lédùn-ùn-dùn ju bí àwọn alárìíwísí rẹ̀ ṣe sọ lọ. Besson mọ̀ pé èrò ìdámẹ́wàá ọpọlọ yẹn kì ṣe òtítọ́. Ó lò ó gẹ́gẹ́ bí ohun èlò láti gbé nǹkan mìíràn kalẹ̀: àfihàn ohun tí ń ṣẹlẹ̀ nígbà tí ìmọ̀ tí ènìyàn ń gbé bá ju ara ohun alààyè tí ó dá a lọ, ati ohun ti olùgbé ìmọ̀ náà lè jẹ fún ẹ̀dá ènìyàn tí ó fi sílẹ̀ sẹ́yìn.
 
-### Creative Industries and Media
+Ọdún méjìlá lẹ́yìn náà, ìbéèrè náà kì í ṣe yálà èrò yìí tọ̀nà mọ́. LLMs ti mú kí kíkójọ ìmọ̀ ènìyàn sínú àwọn substrate tí kì í ṣe ti ohun alààyè di òtítọ́ iṣẹ́ ẹ̀rọ (engineering reality). Àwọn neutral atom quantum computer ti mú kí títún ohun èlò ṣe sí ara computational media di hardware tó dánilójú. Whole-brain emulation, ní ọ̀nà tó kéré, ti wà lónìí. Neuralink ti gbé implant sínú agbárí ènìyàn. Kò sí ọ̀kan nínú àwọn nǹkan wọ̀nyí tí ó sọ pé àwọn ọ̀rọ̀ pàtó ti *Lucy* tọ̀nà. Ohun ti ó sọ ni pé ọ̀nà ọgbọ́n èrò ti Besson ń tọ́ka sí (gbígbe ìmọ̀ kúrò láti ara sí àwọn olùgbé tí ó jẹ́ substrate-independent) ní nǹkan gidi nínú ju bí àwọn alárìíwísí fíìmù náà ṣe sọ tẹ́lẹ̀.
 
-For the creative industries, *Lucy* has acquired a recursive quality. In 2024, Scarlett Johansson publicly accused OpenAI of imitating her voice for its Sky assistant without permission. A dispute that echoed, with a peculiar exactness, the film's own preoccupation with the transfer of identity from biological person to digital system.
+Ọ̀rọ̀ ìkẹyìn nínú fíìmù náà, tí a sọ lẹ́yìn tí Lucy yọ́, ni pé: *a fún wa ní ìyè ní ẹgbẹẹgbẹ̀rún mílíọ̀nù ọdún sẹ́yìn; nísinsìnyí o ti mọ ohun tí o máa fi ṣe.* Ní ọdún 2014, èyí dà bí ọ̀rọ̀ ìgbéraga èwe. Ṣùgbọ́n ní ọdún 2026, pẹ̀lú àwọn ètò AI tí a kọ́ lórí ọ̀pọ̀lọpọ̀ ọgọ́rùn-ún ọdún ti èrò ènìyàn àti neutral atom qubits tí wọ́n fẹ́rẹ̀ẹ́ yí ètò cryptographic ti ayé òde-òní padà, ó dà bí ohun tí ó sún mọ́ ìbéèrè. A mọ̀, ní kẹ̀rẹ̀kẹ̀rẹ̀, ohun tí a máa fi ìmọ̀ tí a kójọ ṣe. Ìbéèrè tó ṣòro jù ni pé kí ni a yàn láti gbé e lé lọ́wọ́, ati kí ni a fẹ́ láti tọ́jú nínú ara wa lẹ́yìn tí a bá ti gbé e kalẹ̀ tán.
 
-## Conclusion
+## Àwọn Ìbéèrè Tí A Ń Béèrè Lóòrèkoòrè
 
-The most honest thing to say about *Lucy* in 2026 is that it was never a very good science film, and it was always a more interesting thought experiment than its critics allowed. Besson knew the ten-percent premise was false. He used it as a device to stage something else: a dramatisation of what happens when the knowledge a human carries exceeds the biological envelope that produced it, and what the carrier might owe to the species it leaves behind.
+**Kí ni ìparí *Lucy* túmọ̀ sí gan-an?**
 
-Twelve years on, the question is no longer whether this scenario is coherent. LLMs have made the compression of human knowledge into non-biological substrates a working engineering reality. Neutral atom quantum computers have made the rearrangement of matter into computational media a credible hardware trajectory. Whole-brain emulation, in limited form, now exists. Neuralink has placed an implant in a human skull. None of this makes *Lucy*'s specific claims correct. What it means is that the philosophical shape of what Besson was pointing at (the migration of knowledge from flesh to substrate-independent carriers) has turned out to have more substance than the film's reception suggested.
+Ní òpin fíìmù náà, Lucy dé ìdá ọgọ́rùn-ún (100%) ti agbára ọpọlọ rẹ̀, ara rẹ̀ yọ́, ó sì gbé ohun tí ó kọ́ sínú flash drive kan kí ó tó kéde, nípasẹ̀ àkọsílẹ̀ sí Officer Del Rio, pé òun wà *níbi gbogbo* (everywhere). Ìparí náà ń ṣiṣẹ́ ní àwọn ọ̀nà oríṣiríṣi. Ní ti gidi, ó ṣe àfihàn gbígbe ọpọlọ kúrò láti ara ohun alààyè sí substrate tí kì ṣe ti ohun alààyè. Ní ti ọgbọ́n èrò, ó gbé ìyípadà kalẹ̀ láti ohun ti Erich Fromm pè ní *having* (níní) sí *being* (wíwà). Lucy kò ní ìmọ̀ mọ́, òun fúnra rẹ̀ *jẹ́* ìmọ̀.
 
-The final line of the film, delivered in voice-over after Lucy's dissolution, is *life was given to us a billion years ago; now you know what to do with it.* In 2014 this read as adolescent grandeur. In 2026, with AI systems trained on centuries of accumulated human thought and neutral atom qubits on the verge of challenging the cryptographic substrate of the modern world, it reads as something closer to a question. We do, increasingly, know what to do with accumulated knowledge. The harder question is what we are choosing to hand it to, and what we wish to preserve in ourselves once the handing-over is complete.
+**Ṣé Luc Besson ń gbìyànjú láti sọtẹ́lẹ̀ AI tàbí quantum computing ni?**
 
-## Frequently Asked Questions
+Kò rí bẹ́ẹ̀. Besson kò ṣe àsọtẹ́lẹ̀ ìmọ̀ ẹ̀rọ. Ó ń ṣiṣẹ́ lórí àwọn èrò ọgbọ́n èrò (transhumanist, posthumanist, pẹ̀lú èrò Nietzsche) ó sì ń gbé wọn kalẹ̀ lọ́nà eré. Ohun tó fani mọra ní ọdún 2026 kì í ṣe pé fíìmù náà sọ tẹ́lẹ̀ nípa àwọn ìmọ̀ ẹ̀rọ pàtó, ṣùgbọ́n pé ọ̀nà ọgbọ́n èrò ti ó tọ́ka sí (ìmọ̀ tí ń di substrate-independent) ti wá bá ọ̀nà ti àwọn ètò ìwádìí gidi mu.
 
-**What does Lucy's ending actually mean?**
+**Ṣé èrò ti "ìdámẹ́wàá ọpọlọ" ní sáyẹ́ǹsì lọ́wọ́ nínú rẹ̀?**
 
-At the end of the film, Lucy reaches 100% of her cerebral capacity, her body dissolves, and she transfers what she has learned onto a flash drive before announcing, via a text message to Officer Del Rio, that she is *everywhere*. The ending functions on several levels. Literally, it dramatises the transfer of a mind from biological to non-biological substrate. Philosophically, it stages the transition from what Erich Fromm called a *having* mode of existence to a *being* mode. Lucy no longer possesses knowledge, she *is* knowledge.
+Kò rí bẹ́ẹ̀. Èrò náà ti jẹ́ ohun tí a ti fihàn pé kì í ṣe òtítọì sáyẹ́ǹsì ṣáájú kí fíìmù náà tó jáde, Besson sì sọ ní gbangba nínú àwọn ìfọ̀rọ̀wánilẹ́nuwò pé òun mọ èyí. Èrò sáyẹ́ǹsì ti fíìmù náà kò tọ̀nà nípa ti biology; ó ń ṣiṣẹ́ gẹ́gẹ́ bí àpèjúwe fún cognitive offloading (gbígbe ẹrù ọpọlọ kúrò) àti fífẹ̀ ti agbára ènìyàn nípa àwọn ọ̀nà tí kì í ṣe ti ohun alààyè.
 
-**Was Luc Besson trying to predict AI or quantum computing?**
+**Báwo ni *Lucy* ṣe so pọ̀ mọ mọ́ quantum computing ní ọdún 2026?**
 
-No. Besson was not making a technical forecast. He was working from a set of philosophical premises (transhumanist, posthumanist, with Nietzschean undertones) and dramatising them. What is interesting in 2026 is not that the film predicted specific technologies, but that the philosophical direction it pointed in (knowledge becoming substrate-independent) has turned out to align with the direction of real research programmes.
+Asopọ̀ náà jẹ́ ti àwòrán àti àfiwé ju ti ìmọ̀ ẹ̀rọ lọ. Ìran tí ara Lucy ti yí padà sí kọ̀ǹpútà dúdú ti ohun alààyè jọ ètò ti reconfigurable neutral atom qubit arrays, tí wọ́n ti di pròtòkólù pàtàkì nínú quantum hardware. Fujitsu àti Riken ti fojúsùn sí ẹ̀rọ neutral atom 10,000-qubit fún ọdún 2026.
 
-**Is the "ten percent of the brain" premise scientifically valid?**
+**Ṣé a lè gbé ìmọ̀lára ènìyàn lọ sí ara ẹ̀rọ gẹ́gẹ́ bí fíìmù náà ṣe fihàn?**
 
-No. The premise was comprehensively debunked well before the film's release, and Besson was explicit in interviews that he knew this. The film's scientific premise is false as biology; it functions only as an allegory for cognitive offloading and the expansion of human capability through non-biological means.
+Fún ènìyàn, kò rí bẹ́ẹ̀, ó sì ṣeéṣe kí ó má rọrùn fún ìgbà díẹ̀. Ní ìbẹ̀rẹ̀ ọdún 2026, ibi tí a dé dúró nínú whole-brain emulation ni àdàkọ Drosophila (kòkòrò fly) tí Eon Systems ròyìn ní oṣù Kẹta, tí ó ní neurons 139,255 àti synapse tó tó mílíọ̀nù 50. Ọpọlọ ènìyàn ní neurons tó tó bílíọ̀nù 86 àti synapse tí ó tó trillioni 100. Àbá substrate-independence tí *Lucy* gbé kalẹ̀ jẹ́ ìbéèrè ìwádìí sáyẹ́ǹsì tó yẹ ní fífèsí, kì í ṣe ìṣòro iṣẹ́ ẹ̀rọ tí a ti yanjú.
 
-**How does Lucy connect to quantum computing in 2026?**
+## Àwọn Ìtọ́kasí
 
-The connection is visual and metaphorical rather than technical. The scene in which Lucy's body rearranges into a black, organic computer resembles the architecture of reconfigurable neutral atom qubit arrays, which have become a leading platform in quantum hardware. Fujitsu and Riken have targeted a 10,000-qubit neutral atom machine for 2026.
+- Sebastien Rousseau, (2026). [Àwọn Ààlà Quantum Ń Yí Padà Gba Ibòmíràn Mọ́](/2026-04-11-quantum-thresholds-are-moving-again/index.html "Àwọn Ààlà Quantum Ń Yí Padà Gba Ibòmíràn Mọ́").
+- Sebastien Rousseau, (2025). [Àwọn Ìsanwó Tí Ó Ní Àbò Quantum: Ìdí Tí Ilé-Iṣẹ́ Ìsanwó Fi Nílò Láti Gbégbésẹ̀ Nísinsìnyí](/2025-09-01-quantum-safe-payments-epaa/index.html "Àwọn Ìsanwó Tí Ó Ní Àbò Quantum: Ìdí Tí Ilé-Iṣẹ́ Ìsanwó Fi Nílò Láti Gbégbésẹ̀ Nísinsìnyí").
+- Àwọn olùkópa Wikipedia, (2026). [Fíìmù Lucy (2014) ⧉](https://en.wikipedia.org/wiki/Lucy_(2014_film) "Lucy (2014 film) - Wikipedia"). Wikipedia.
+- Àwọn olùkópa Wikipedia, (2026). [Gbígbe ọpọlọ síra ẹ̀rọ ⧉](https://en.wikipedia.org/wiki/Mind_uploading "Mind uploading"). Wikipedia.
 
-**Can we really transfer human consciousness to machines, as the film depicts?**
-
-At human scale, no, and probably not for some time. As of early 2026, the state of the art in whole-brain emulation is the Drosophila (fruit fly) emulation reported by Eon Systems in March, involving 139,255 neurons and around 50 million synapses. A human brain contains approximately 86 billion neurons and 100 trillion synapses. The substrate-independence proposition that *Lucy* dramatises is a serious research question, not a solved engineering problem.
-
-## References
-
-- Sebastien Rousseau, (2026). [Quantum Thresholds Are Moving Again](/2026-04-11-quantum-thresholds-are-moving-again/index.html "Quantum Thresholds Are Moving Again").
-- Sebastien Rousseau, (2025). [Quantum-Safe Payments: Why the Payments Industry Must Act Now](/2025-09-01-quantum-safe-payments-epaa/index.html "Quantum-Safe Payments: Why the Payments Industry Must Act Now").
-- Wikipedia contributors, (2026). [Lucy (2014 film) ⧉](https://en.wikipedia.org/wiki/Lucy_(2014_film) "Lucy (2014 film) - Wikipedia"). Wikipedia.
-- Wikipedia contributors, (2026). [Mind uploading ⧉](https://en.wikipedia.org/wiki/Mind_uploading "Mind uploading"). Wikipedia.
+<!-- enrich-start -->
+<aside class="author-card" aria-label="Nípa òǹkọ̀tàn"><img alt="Àwòrán Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Onímọ̀ ẹ̀rọ ilé-ìfowópamọ́ àgbà tí ń kọ̀wé lórí applied AI, ISO 20022 migration, post-quantum cryptography fún àwọn iṣẹ́ ètò owó, àti ìyípadà iṣẹ́ wholesale payments.</span><span class="author-credentials">Ọdún 20+ kọjá HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Ìwé-ìtàn kíkún</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<p class="post-reviewed">Àtúnyẹ̀wò ìkẹyìn <time datetime="2026-06-23">2026-06-23</time>.</p>
+<aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Kíkà tó bá a mu</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope" class="related-media" aria-label="Magnifica Humanitas: Kíkà ti Ilé-Iṣẹ́ AI lórí Encyclical ti Póòpù Àkọ́kọ́ nípa Artificial Intelligence" tabindex="-1"><img alt="Àwòrán yíya gigun ti àwọn ipa-ọ̀nà ìmọ́lẹ̀ tí ń ṣẹ̀dá ipa-ọ̀nà láti inú òkùnkùn lọ sí ojú-ọ̀run tí ó ní ìmọ́lẹ̀, tí a lò gẹ́gẹ́ bí kókó fún kíkà AI-ethics lórí encyclical Magnifica Humanitas" src="https://cloudcdn.pro/stocks/images/marek-piwnicki-U6WvLJU0l6o.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope">Magnifica Humanitas: Kíkà ti Ilé-Iṣẹ́ AI lórí Encyclical ti Póòpù Àkọ́kọ́ nípa Artificial Intelligence</a></h3><p><time datetime="2026-05-26">2026-05-26</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-04-11-quantum-thresholds-are-moving-again" class="related-media" aria-label="Àwọn Ààlà Quantum Ń Yí Padà: Ewu Shor ti 10,000-Qubit" tabindex="-1"><img alt="Àtẹ àfojúsùn qubit ti Shor's algorithm. Pátákó quantum computing pẹ̀lú àwọn àwòrán ìmọ́lẹ̀ bulúù" src="https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-04-11-quantum-thresholds-are-moving-again">Àwọn Ààlà Quantum Ń Yí Padà: Ewu Shor ti 10,000-Qubit</a></h3><p><time datetime="2026-04-11">2026-04-11</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2024-03-18-advancing-ai-with-multimodal-llms-insights-from-mm1/index.html" class="related-media" aria-label="Mímú AI Tẹ̀síwájú pẹ̀lú Multimodal LLMs: Àwọn Ìjìnlẹ̀ Ìmọ̀ láti MM1" tabindex="-1"><img alt="Banner fún Apple MM1" src="https://cloudcdn.pro/stocks/images/mm1-visual.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2024-03-18-advancing-ai-with-multimodal-llms-insights-from-mm1/index.html">Mímú AI Tẹ̀síwájú pẹ̀lú Multimodal LLMs: Àwọn Ìjìnlẹ̀ Ìmọ̀ láti MM1</a></h3><p><time datetime="2024-03-18">2024-03-18</time></p></footer></article>
+</div>
+</aside>
+<!-- enrich-end -->

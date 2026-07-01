@@ -88,7 +88,7 @@ site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 ttl: "60"
 twitter_site: "@wwdseb"
 webmaster: "contact@sebastienrousseau.com"
-apple-mobile-web-app-title: "hsh: Rust password hashing"
+apple-mobile-web-app-title: "hsh: Hashing ọ̀rọ̀-asírí Rust"
 thanks: "E ṣeun fún kíkà!"
 twitter_image_alt: "Àwòrán Aláwọ̀ Dúdú àti Funfun ti Sebastien Rousseau"
 ---

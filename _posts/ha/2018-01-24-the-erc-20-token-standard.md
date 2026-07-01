@@ -1,112 +1,199 @@
 ---
-title: "ERC-20: The Ethereum Token Interface That Changed the World"
-tags: "Ethereum, erc20, eip, tokens, contracts, blockchain, cryptocurrencies, smart-token, Solidity, ISO 20022, post-quantum cryptography, AI, stablecoins"
-subtitle: "Alamomin ERC-20, kwangilar smart na Ethereum da daidaitaccen kadarorin dijital."
-description: "ERC-20 shine mafi yawan nau'in token da ake amfani da shi a blockchain na Ethereum, wanda kuma ana kiransa kwangilar dijital ta smart contract."
-date: "Jan 24, 2018"
-language: "ha-NG"
-locale: "ha_NG"
-banner: "https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp"
+# Front Matter (YAML)
+
+author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "Kwamfutar laptop da aka kashe da aka ajiye a saman teburin itace mai launin ruwan kasa"
+banner_height: "100vh"
+banner_width: "100vw"
+banner: "https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp"
+cdn: "https://cloudcdn.pro/clients"
+changefreq: "weekly"
+charset: "UTF-8"
+cname: "sebastienrousseau.com"
+copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
+date: "Jan 24, 2018"
+description: "ERC-20 shine mafi yawan nau'in token da ake amfani da shi a blockchain na Ethereum, wanda kuma ana kiransa kwangilar dijital ta smart contract."
+format-detection: "telephone=no"
+hreflang: "ha"
+icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
+id: "https://sebastienrousseau.com/2018-01-24-the-erc-20-token-standard/index.html"
+image_alt: "Hoton Sebastien Rousseau a Baƙi da Fari"
+image_height: "162"
+image_width: "162"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "ethereum, erc20, eip, tokens, kwantoci, blockchain, kuɗaɗen dijital, smart-token, solidity"
----
+language: "ha-NG"
+layout: "report"
+locale: "ha_NG"
+logo_alt: "Logo na Sebastien Rousseau"
+logo_height: "44"
+logo_width: "44"
+logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
+menu: "active"
+measurementID: "G-169G4ET5HQ"
+name: "Sebastien Rousseau"
+permalink: "https://sebastienrousseau.com/2018-01-24-the-erc-20-token-standard/index.html"
+rating: "general"
+referrer: "no-referrer"
+revisit-after: "7 days"
+robots: "index, follow"
+short_name: "sebastienrousseau"
+subtitle: "Alamomin ERC-20, kwangilar smart na Ethereum da daidaitaccen kadarorin dijital."
+tags: "Ethereum, erc20, eip, tokens, contracts, blockchain, cryptocurrencies, smart-token, Solidity, ISO 20022, post-quantum cryptography, AI, stablecoins"
+theme-color: "0, 67, 165"
+title: "ERC-20: Tsarin Token na Ethereum wanda Ya Sauya Duniya"
+url: "https://sebastienrousseau.com/2018-01-24-the-erc-20-token-standard/index.html"
+viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
-![Turned off laptop computer on top of brown wooden table](https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp).class="img-fluid clearfix"
+# RSS - The RSS feed front matter (YAML).
+atom_link: "https://sebastienrousseau.com/2018-01-24-the-erc-20-token-standard/rss.xml"
+category: "Blockchain"
+docs: "https://validator.w3.org/feed/docs/rss2.html"
+generator: "Static Site Generator (SSG) (version 0.0.26)"
+item_description: "ERC-20 shine mafi yawan nau'in token da ake amfani da shi a blockchain na Ethereum, wanda kuma ana kiransa kwangilar dijital ta smart contract."
+item_guid: "https://sebastienrousseau.com/2018-01-24-the-erc-20-token-standard/rss.xml"
+item_link: "https://sebastienrousseau.com/2018-01-24-the-erc-20-token-standard/rss.xml"
+item_pub_date: "Wed, 24 Jan 2018 09:00:00 +0000"
+item_title: "ERC-20: Tsarin Token na Ethereum wanda Ya Sauya Duniya"
+last_build_date: "Wed, 24 Jan 2018 09:00:00 +0000"
+managing_editor: "contact@sebastienrousseau.com (Sebastien Rousseau)"
+pub_date: "Wed, 24 Jan 2018 09:00:00 +0000"
+ttl: "60"
+type: "website"
+webmaster: "contact@sebastienrousseau.com"
 
----
+# Apple - The Apple front matter (YAML).
+apple_mobile_web_app_orientations: "portrait"
+apple_touch_icon_sizes: "192x192"
+apple-mobile-web-app-capable: "yes"
+apple-mobile-web-app-status-bar-inset: "black"
+apple-mobile-web-app-status-bar-style: "black-translucent"
+apple-mobile-web-app-title: "Sebastien Rousseau"
+apple-touch-fullscreen: "yes"
 
-> **TL;DR.** ERC-20: The Ethereum Token ERC-20 is the most common type of token used on the Ethereum blockchain and is often referred to as a smart contract digital contract
->
-> **Mahimman Bayanai**
->
-> - DRAFT translation: this article is a Hausa stub generated from the English source. Body text is intentionally left in English until a native reviewer signs off.
-> - Source title: *ERC-20: The Ethereum Token Interface That Changed the World*.
-> - Source subtitle: *ERC-20 tokens, Ethereum smart contracts and the standardisation of digital assets.*.
-> - Editorial note: replace this block with hand-translated copy before flipping `active=True` for ha in `scripts/_lang_registry.py`.
+# MS Application - The MS Application front matter (YAML).
 
+msapplication-navbutton-color: "0, 67, 165"
+
+# Twitter Card - The Twitter Card front matter (YAML).
+
+twitter_card: "summary"
+twitter_creator: "@wwdseb"
+twitter_description: "ERC-20 shine mafi yawan nau'in token da ake amfani da shi a blockchain na Ethereum, wanda kuma ana kiransa kwangilar dijital ta smart contract."
+twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
+twitter_image_alt: "Logo na Sebastien Rousseau"
+twitter_site: "@wwdseb"
+twitter_title: "ERC-20: Tsarin Token na Ethereum wanda Ya Sauya Duniya"
+twitter_url: "https://sebastienrousseau.com"
+
+# Humans.txt - The Humans.txt front matter (YAML).
+author_website: "https://sebastienrousseau.com"
+author_twitter: "@wwdseb"
+author_location: "London, UK"
+thanks: "Godiya da karantawa!"
+site_last_updated: "2023-07-05"
+site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
+site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
+site_software: "Static Site Generator, Rust"
+
+excerpt: "Kafin zuwan daidaitaccen tsarin ERC-20 (Ethereum Request for Comments 20), blockchain na Ethereum ya kasance kamar Dajin Yamma (Wild West) na tsarin gine-ginen token. Kowane sabon token da aka ƙirƙira yana da nasa tsarin dokoki na musamman..."
+last_reviewed: "2026-05-11"
 ---
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
-<p class="post-lead-tldr"><strong>TL;DR.</strong> ERC-20: The Ethereum Token ERC-20 is the most common type of token used on the Ethereum blockchain and is often referred to as a smart contract digital contract</p>
-<p class="post-lead-heading"><strong>Key takeaways</strong></p>
+<aside class="post-lead" aria-label="Takaitaccen bayani na labarin">
+<p class="post-lead-tldr"><strong>TL;DR.</strong> ERC-20: Token na Ethereum ERC-20 shine mafi yawan nau'in token da ake amfani da shi a blockchain na Ethereum, kuma galibi ana kiransa kwangilar dijital ta smart contract.</p>
+<p class="post-lead-heading"><strong>Muhimman abubuwan da aka koya</strong></p>
 <ul class="post-lead-takeaways">
-  <li><strong>Idea.</strong> The ERC-20 standard defines a set of six essential functions that all ERC-20 compliant tokens must implement.</li>
-  <li><strong>Impact.</strong> The ERC-20 standard has had a significant impact on the Ethereum ecosystem.</li>
-  <li><strong>Incentive.</strong> The standardisation brought about by the ERC-20 protocol has had a direct economic impact as well.</li>
-  <li><strong>The need for a standardized token interface.</strong> Before the advent of the ERC-20 (Ethereum Request for Comments 20) standard, the Ethereum blockchain was like the Wild West of token architectures.</li>
+  <li><strong>Idea.</strong> Tsarin ERC-20 yana bayyana jerin ayyuka guda shida masu mahimmanci waɗanda duk wani token mai bin ka'idojin ERC-20 dole ne ya aiwatar da su.</li>
+  <li><strong>Tasiri.</strong> Tsarin ERC-20 ya sami babban tasiri a kan muhallin Ethereum.</li>
+  <li><strong>Kwarin gwiwa.</strong> Daidaitawar da yarjejeniyar ERC-20 ta kawo ta sami tasirin tattalin arziki na kai tsaye kuma.</li>
+  <li><strong>Bukatar daidaitaccen tsarin token interface.</strong> Kafin zuwan daidaitaccen tsarin ERC-20 (Ethereum Request for Comments 20), blockchain na Ethereum ya kasance kamar Dajin Yamma (Wild West) na tsarin gine-ginen token.</li>
 </ul>
-<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf">Stablecoin Yield by Another Name: BlackRock's BRSRV and BSTBL Filings Decoded</a>, <a href="https://sebastienrousseau.com/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html">Quantum Key Distribution Revolutionising Security in Banking</a>, <a href="https://sebastienrousseau.com/2018-01-01-bitcoin-the-year-in-review/index.html">Bitcoin: A Year In Review of the First Cryptocurrency</a>.</p>
+<p class="post-lead-related"><strong>Karantawa mai alaƙa:</strong> <a href="https://sebastienrousseau.com/2018-01-09-understanding-the-technology-behind-blockchain/index.html">Fahimtar Fasahar da ke Bayan Blockchain</a>, <a href="https://sebastienrousseau.com/2018-02-15-the-making-of-the-express-transaction-credits-platform/index.html">Samar da Tsarin Express Transaction Credits</a>, <a href="https://sebastienrousseau.com/2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution/index.html">Bayyana Sabon Kuɗin Dijital da Maganin Biyan Kuɗi na Gaba Mai Saurin Gaske</a>.</p>
 </aside>
 <!-- lead-end -->
 
-![A very tall building that has a lot of holes in it](https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp).class=\"img-fluid clearfix\"
+![Dogon gini mai matuƙar tsayi wanda yake da ramuka da yawa a jikinsa](https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp).class=\"img-fluid clearfix\"
 
 ## Insight
 
-### The need for a standardized token interface
+### Bukatar daidaitaccen tsarin token interface
 
-Before the advent of the ERC-20 (Ethereum Request for Comments 20) standard, the Ethereum blockchain was like the Wild West of token architectures. Each newly minted token had its own unique set of rules, functions, and interfaces. This not only presented developers with a daunting learning curve but also impeded the interoperability of tokens. Essentially, each new token was like a new language that needed to be learned, understood, and implemented. This fragmentation hindered scalability and broad adoption of tokens on the Ethereum platform.
+Kafin zuwan daidaitaccen tsarin ERC-20 (Ethereum Request for Comments 20), blockchain na Ethereum ya kasance kamar Dajin Yamma (Wild West) na tsarin gine-ginen token. Kowane sabon token da aka ƙirƙira yana da nasa tsarin dokoki, ayyuka, da tsarin interfaces na musamman. Wannan ba kawai ya sanya wa masu haɓakawa (developers) wani tsarin koyo mai wuyar gaske ba, har ma ya kawo cikas ga haɗin gwiwar aiki tsakanin tokens. A zahiri, kowane sabon token ya kasance kamar sabon yare ne da ke buƙatar koyo, fahimta, da aiwatarwa. Wannan rarrabuwar ta hana ci gaba da kuma karɓuwa mai faɗi na tokens a dandalin Ethereum.
 
-The introduction of the ERC-20 standard acted like a unifying language, setting forth a common set of rules and functions that all Ethereum tokens must adhere to. Now, developers have a consistent interface to work with, regardless of the token in question. This standardisation streamlined the token interaction processes, allowing for more seamless integration into various applications and services. As a result, developers can engage more meaningfully with tokens, fostering an environment conducive to innovation and growth within the Ethereum ecosystem.
+Gabatar da tsarin ERC-20 ya zama kamar yare ɗaya mai haɗa kai, wanda ya shimfiɗa jerin dokoki da ayyuka na gama gari waɗanda duk tokens na Ethereum dole ne su bi su. Yanzu, masu haɓakawa suna da daidaitaccen tsarin interface don yin aiki da shi, ba tare da la'akari da token ɗin da ake magana a kai ba. Wannan daidaitawar ta sauƙaƙa hanyoyin mu'amala da token, wanda ya ba da damar haɗa kai cikin sauƙi a cikin aikace-aikace da ayyuka daban-daban. Sakamakon haka, masu haɓakawa za su iya mu'amala ta hanya mai ma'ana tare da tokens, suna samar da muhallin da ke tallafa wa ƙirƙire-ƙirƙire da haɓaka a cikin muhallin Ethereum.
 
-#### The Wild West of token architectures
+#### Dajin Yamma (Wild West) na tsarin gine-ginen token
 
-The Ethereum blockchain was initially designed to support a single type of token: ETH. However, as the platform grew in popularity, developers began to create their own tokens to represent a variety of assets and concepts. This led to a proliferation of different token architectures, each with its own unique set of rules and functions.
+A da farko an tsara blockchain na Ethereum ne don tallafawa nau'in token guda ɗaya: ETH. Koyaya, yayin da dandalin ya ƙara shahara, masu haɓakawa sun fara ƙirƙirar nasu tokens don wakiltar kadarori da ra'ayoyi daban-daban. Wannan ya haifar da yawaitar tsarin gine-ginen token daban-daban, kowanne yana da nasa tsarin dokoki da ayyuka na musamman.
 
-This fragmentation made it difficult for developers to create applications that could interact with multiple tokens. It also made it difficult for users to manage their token assets across different platforms.
+Wannan rarrabuwar ta sa ya yi wuya ga masu haɓakawa su ƙirƙiri aikace-aikacen da za su iya mu'amala da tokens da yawa. Ya kuma sa ya yi wuya ga masu amfani su sarrafa kadarorin token ɗinsu a kan dandamali daban-daban.
 
-#### The ERC-20 standard
+#### Tsarin ERC-20
 
-The ERC-20 standard was introduced in 2015 to address the challenges posed by the Wild West of token architectures. The standard defines a common set of rules and functions that all Ethereum tokens must adhere to. This standardisation makes it easier for developers to create applications that can interact with any ERC-20 token, and it also makes it easier for users to manage their token assets.
+An gabatar da tsarin ERC-20 ne a shekarar 2015 don magance ƙalubalen da Dajin Yamma (Wild West) na tsarin gine-ginen token ya haifar. Tsarin yana bayyana jerin dokoki da ayyuka na gama gari waɗanda duk tokens na Ethereum dole ne su bi su. Wannan daidaitawar tana sauƙaƙa wa masu haɓakawa ƙirƙirar aikace-aikacen da za su iya mu'amala da kowane token na ERC-20, kuma tana sauƙaƙa wa masu amfani sarrafa kadarorin token ɗinsu.
 
-The ERC-20 standard has been widely adopted by the Ethereum community. Today, there are over 200,000 ERC-20 tokens in existence, and the standard is used by a wide variety of applications, including decentralised exchanges, lending platforms, and gaming dapps.
+Al'ummar Ethereum sun karɓi tsarin ERC-20 sosai. A yau, akwai fiye da tokens na ERC-20 guda 200,000 da ke akwai, kuma ana amfani da tsarin a cikin aikace-aikace daban-daban, gami da kasuwannin musanya na bai-ɗaya (decentralised exchanges), dandamalin bayar da lamuni, da dapps na wasanni.
 
 ## Idea
 
-### A common set of functions and properties for all tokens
+### Jerin ayyuka da kaddarori na gama gari na duk tokens
 
-The ERC-20 standard defines a set of six essential functions that all ERC-20 compliant tokens must implement. These functions are:
+Tsarin ERC-20 yana bayyana jerin ayyuka guda shida masu mahimmanci waɗanda duk wani token mai bin ka'idojin ERC-20 dole ne ya aiwatar da su. Waɗannan ayyukan sune:
 
-- `transfer(address to, uint256 amount)`: Transfers an amount of tokens from the caller's address to the specified address.
-- `approve(address spender, uint256 amount)`: Approves the specified address to spend an amount of tokens on behalf of the caller.
-- `allowance(address owner, address spender)`: Returns the amount of tokens that the specified spender is approved to spend on behalf of the specified owner.
-- `totalSupply()`: Returns the total number of tokens in circulation.
-- `balanceOf(address owner)`: Returns the number of tokens owned by the specified address.
-- `name()`: Returns the name of the token.
-- `symbol()`: Returns the symbol of the token.
+- `transfer(address to, uint256 amount)`: Yana tura adadin tokens daga adireshin mai kira zuwa adireshin da aka kayyade.
+- `approve(address spender, uint256 amount)`: Yana ba wa adireshin da aka ƙayyade izinin kashe adadin tokens a madadin mai kiran.
+- `allowance(address owner, address spender)`: Yana dawo da adadin tokens ɗin da aka amince wa mai kashe kuɗi da aka ƙayyade ya kashe a madadin mai mallakar da aka ƙayyade.
+- `totalSupply()`: Yana dawo da jimillar adadin tokens da ke yawo.
+- `balanceOf(address owner)`: Yana dawo da adadin tokens ɗin da adireshin da aka ƙayyade ya mallaka.
+- `name()`: Yana dawo da sunan token ɗin.
+- `symbol()`: Yana dawo da alamar (symbol) token ɗin.
 
-The ERC-20 standard also defines two events that must be emitted upon the successful execution of corresponding functions. These events are:
+Tsarin ERC-20 yana bayyana wasu abubuwa biyu (events) waɗanda dole ne a fitar da su bayan nasarar aiwatar da ayyukan da suka dace. Waɗannan abubuwan sune:
 
-- `Transfer(address from, address to, uint256 amount)`: Emitted when an amount of tokens is transferred from one address to another.
-- `Approval(address owner, address spender, uint256 amount)`: Emitted when the specified address is approved to spend an amount of tokens on behalf of the specified owner.
+- `Transfer(address from, address to, uint256 amount)`: Ana fitar da shi lokacin da aka tura adadin tokens daga wani adireshin zuwa wani.
+- `Approval(address owner, address spender, uint256 amount)`: Ana fitar da shi lokacin da aka amince wa adireshin da aka ƙayyade ya kashe adadin tokens a madadin mai mallakar da aka ƙayyade.
 
 ## Impact
 
-### The growth of DeFi and Ethereum adoption
+### Haɓakar DeFi da karɓar Ethereum
 
-The ERC-20 standard has had a significant impact on the Ethereum ecosystem. It has been a key enabler of the DeFi (Decentralized Finance) movement, and it has also helped to increase the adoption of Ethereum.
+Tsarin ERC-20 ya sami babban tasiri a kan muhallin Ethereum. Ya kasance babban mai taimakawa ga yunkurin DeFi (Decentralized Finance), sannan ya taimaka wajen haɓaka karɓar Ethereum.
 
-DeFi platforms, which offer a range of financial services from lending to asset management, heavily rely on tokens to facilitate transactions. With ERC-20 acting as a universal adapter, it has been far easier for DeFi applications to incorporate a wide array of tokens without having to tailor their code for each one.
+Dandamali na DeFi, waɗanda ke ba da sabis na kuɗi daban-daban tun daga bayar da lamuni zuwa sarrafa kadarori, sun dogara kacokan akan tokens don sauƙaƙa ma'amaloli. Tare da ERC-20 yana aiki azaman adafta ta gama gari (universal adapter), ya fi sauƙi ga aikace-aikacen DeFi su haɗa da faɗaɗan nau'ikan tokens ba tare da sun tsara lambobinsu na musamman ga kowane ɗayansu ba.
 
-The ERC-20 standard has also made it easier for users to manage their token assets. With tokens adhering to the same basic rules, users find it easier to transfer, spend, and manage their token assets across multiple platforms. This heightened user experience has been a driving factor in Ethereum's increased adoption rates.
+Tsarin ERC-20 ya kuma sauƙaƙa wa masu amfani damar sarrafa kadarorin token ɗinsu. Domin tokens ɗin suna bin ƙa'idodi na yau da kullun iri ɗaya, masu amfani sun fi samun sauƙin turawa, kashewa, da sarrafa kadarorin token ɗinsu a kan dandamali da yawa. Wannan ƙwarin gwiwa na ƙwarewar mai amfani ya kasance babban abin da ya haifar da haɓakar ƙimar karɓar Ethereum.
 
 ## Incentive
 
-### Reduced development costs and improved security
+### Rage farashin haɓakawa da ingantaccen tsaro
 
-The standardisation brought about by the ERC-20 protocol has had a direct economic impact as well. By providing a tested and community-approved blueprint for token creation, it has significantly reduced the barriers to entry for developers. They can now create a new token with reduced developmental costs and a faster time-to-market, as they no longer have to reinvent the wheel. The standard also indirectly encourages the creation of DApps (Decentralised Applications) and services that can universally interact with any ERC-20 token, thereby fostering a more vibrant ecosystem.
+Daidaitawar da yarjejeniyar ERC-20 ta kawo ta sami tasirin tattalin arziki na kai tsaye kuma. Ta hanyar samar da wani tsari da aka gwada kuma al'umma ta amince da shi don ƙirƙirar token, ya rage shingen shiga ga masu haɓakawa sosai. Yanzu za su iya ƙirƙirar sabon token tare da rage farashin haɓakawa da kuma saurin fitarwa kasuwa, tunda ba lallai ne su sake ƙirƙirar dabarar da ke akwai ba. Tsarin kuma yana ƙarfafa ƙirƙirar DApps (Decentralised Applications) da sabis waɗanda za su iya mu'amala ta ko'ina tare da kowane token na ERC-20, ta haka yana haɓaka muhalli mai ƙarfi.
 
-Another notable benefit is that of enhanced security. The ERC-20 standard has undergone rigorous scrutiny by the Ethereum community, making it a robust and secure model for token implementation. Adherence to this standard implies that the fundamental aspects of the token’s smart contract adhere to community-accepted best practices. This minimises the risk of security vulnerabilities that could otherwise result from an improperly designed token model. While it is not a guarantee against all types of vulnerabilities, it is a significant step toward ensuring the overall security of tokens and by extension, the projects that utilise them.
+Wani fa'ida mai mahimmanci shine na ingantaccen tsaro. Tsarin ERC-20 ya fuskanci bincike mai zurfi daga al'ummar Ethereum, wanda ya sa ya zama samfuri mai ƙarfi da tsaro don aiwatar da token. Bin wannan tsarin yana nufin cewa muhimman sassa na smart contract na token ɗin suna bin mafi kyawun ayyuka da al'umma ta amince da su. Wannan yana rage haɗarin matsalolin tsaro waɗanda in ba haka ba za su iya faruwa daga tsarin token da ba a tsara shi da kyau ba. Kodayake ba garanti ba ne a kan kowane nau'in rauni, babban mataki ne na tabbatar da cikakken tsaron tokens da kuma ayyukan da ke amfani da su.
 
 ![divider](https://cloudcdn.pro/clients/common/images/elements/divider.svg).class=\"m-10 w-100\"
 
-**That concludes our time together. Thank you for your time!**
+**Anan ne muka kawo ƙarshen tattaunawarmu. Na gode da lokacinka!**
 
-If you have any questions, please don't hesitate to contact me via [LinkedIn ⧉][11] or via the [Contact page][10]. Thank you again for your time and I look forward to hearing from you.
+Idan kuna da wasu tambayoyi, da fatan za a tuntuɓe ni ta hanyar [LinkedIn ⧉][11] ko ta hanyar [Shafin Tuntuɓa][10]. Na sake gode muku da lokacinku kuma ina fatan ji daga gare ku.
 
-[**❬ Back to Articles**][09]
+[**❬ Koma zuwa Labarai**][09]
 
-[09]: /articles/index.html "Back to Articles"
-[10]: /contact/index.html "Contact Sebastien Rousseau"
-[11]: https://www.linkedin.com/in/sebastienrousseau/ "Sebastien Rousseau on LinkedIn"
+[09]: /articles/index.html "Koma zuwa Labarai"
+[10]: /contact/index.html "Tuntuɓi Sebastien Rousseau"
+[11]: https://www.linkedin.com/in/sebastienrousseau/ "Sebastien Rousseau a LinkedIn"
+
+<!-- enrich-start -->
+<aside class="author-card" aria-label="Game da marubucin"><img alt="Hoton Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Babban masanin fasahar banki wanda ke rubutu kan applied AI, ƙaura zuwa ISO 20022, post-quantum cryptography don ayyukan kuɗi, da sauye-sauyen tsari na biyan kuɗi na jumla (wholesale payments).</span><span class="author-credentials">Fiye da shekaru 20 a faɗin HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Cikakken bayyani</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<p class="post-reviewed">An duba na ƙarshe a <time datetime="2026-06-23">2026-06-23</time>.</p>
+<aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Karantawa mai alaƙa</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/2018-01-09-understanding-the-technology-behind-blockchain/index.html" class="related-media" aria-label="Fahimtar Fasahar da ke Bayan Blockchain" tabindex="-1"><img alt="Katange na dijital na littafin ajiya (ledger) da ke haɗe da hanyoyin haske a kan bangon duhu" src="https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2018-01-09-understanding-the-technology-behind-blockchain/index.html">Fahimtar Fasahar da ke Bayan Blockchain</a></h3><p><time datetime="2018-01-09">2018-01-09</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2018-02-15-the-making-of-the-express-transaction-credits-platform/index.html" class="related-media" aria-label="Samar da Tsarin Express Transaction Credits" tabindex="-1"><img alt="Manyan ginshiƙai farare" src="https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2018-02-15-the-making-of-the-express-transaction-credits-platform/index.html">Samar da Tsarin Express Transaction Credits</a></h3><p><time datetime="2018-02-15">2018-02-15</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution/index.html" class="related-media" aria-label="Bayyana Sabon Kuɗin Dijital da Maganin Biyan Kuɗi na Gaba Mai Saurin Gaske" tabindex="-1"><img alt="Kwamfutar laptop da aka kashe da aka ajiye a saman teburin itace mai launin ruwan kasa" src="https://cloudcdn.pro/stocks/images/laureen-missaire-DBbuhMbAIsQ.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution/index.html">Bayyana Sabon Kuɗin Dijital da Maganin Biyan Kuɗi na Gaba Mai Saurin Gaske</a></h3><p><time datetime="2018-02-04">2018-02-04</time></p></footer></article>
+</div>
+</aside>
+<!-- enrich-end -->

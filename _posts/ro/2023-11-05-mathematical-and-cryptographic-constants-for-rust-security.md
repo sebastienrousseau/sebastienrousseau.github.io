@@ -1,111 +1,196 @@
 ---
-title: "Mathematical and Cryptographic Constants for Rust Security"
-tags: "math, cybersecurity, cryptography, Rust, programming, encryption, communication, constants, constants in Rust, Common library, ISO 20022, criptografie post-cuantică, calcul cuantic, AI, open source"
-subtitle: "Constante matematice și criptografice verificate pentru securitate Rust sigură în memorie."
-description: "Protejați integritatea codului cu constante matematice și criptografice verificate minuțios, consolidând siguranța memoriei și a concurenței pentru o securitate sporită a codului."
-date: "Nov 05, 2023"
-language: "ro-RO"
-locale: "ro_RO"
-banner: "https://cloudcdn.pro/stocks/images/antoine-dautry-05A-kdOH6Hw.webp"
+author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "Calcul matematic"
+banner_height: "100vh"
+banner_width: "100vw"
+banner: "https://cloudcdn.pro/stocks/images/antoine-dautry-05A-kdOH6Hw.webp"
+cdn: "https://cloudcdn.pro/clients"
+changefreq: "weekly"
+charset: "UTF-8"
+cname: ""
+copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. Toate drepturile rezervate."
+date: "Nov 05, 2023"
+description: "Protejați integritatea codului cu constante matematice și criptografice verificate minuțios, consolidând siguranța memoriei și a concurenței pentru o securitate sporită a codului."
+format-detection: "telephone=no"
+hreflang: "ro"
+icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
+id: "https://sebastienrousseau.com/2023-11-05-mathematical-and-cryptographic-constants-for-rust-security/index.html"
+image_alt: "Portret alb-negru al lui Sebastien Rousseau"
+image_height: "161"
+image_width: "161"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "constante matematice, constante criptografice, Rust security, comunicare securizată, criptare, RSA, elliptic curve cryptography, Common (CMN) library, aplicații Rust, calcule matematice"
----
+language: "ro-RO"
+layout: "report"
+locale: "ro_RO"
+logo_alt: "Logo pentru Sebastien Rousseau"
+logo_height: "44"
+logo_width: "44"
+logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
+menu: "active"
+measurementID: "G-169G4ET5HQ"
+name: "Sebastien Rousseau"
+permalink: "https://sebastienrousseau.com/2023-11-05-mathematical-and-cryptographic-constants-for-rust-security/index.html"
+rating: "general"
+referrer: "no-referrer"
+revisit-after: "7 days"
+robots: "index, follow"
+short_name: "sebastienrousseau"
+subtitle: "Constante matematice și criptografice verificate pentru securitate Rust sigură în memorie."
+tags: "math, cybersecurity, cryptography, Rust, programming, encryption, communication, constants, constants in Rust, Common library, ISO 20022, criptografie post-cuantică, calcul cuantic, AI, open source"
+theme-color: "0, 67, 165"
+title: "Constante matematice și criptografice pentru securitatea Rust"
+url: "https://sebastienrousseau.com/2023-11-05-mathematical-and-cryptographic-constants-for-rust-security/index.html"
+viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
-![Mathematics computation](https://cloudcdn.pro/stocks/images/antoine-dautry-05A-kdOH6Hw.webp).class="img-fluid clearfix"
+# RSS - The RSS feed front matter (YAML).
+atom_link: "https://sebastienrousseau.com/2023-11-05-mathematical-and-cryptographic-constants-for-rust-security/rss.xml"
+category: "Open Source"
+docs: "https://validator.w3.org/feed/docs/rss2.html"
+generator: "Static Site Generator (SSG) (version 0.0.26)"
+item_description: "Protejați integritatea codului cu constante matematice și criptografice verificate minuțios, consolidând siguranța memoriei și a concurenței pentru o securitate sporită a codului."
+item_guid: "https://sebastienrousseau.com/2023-11-05-mathematical-and-cryptographic-constants-for-rust-security/rss.xml"
+item_link: "https://sebastienrousseau.com/2023-11-05-mathematical-and-cryptographic-constants-for-rust-security/rss.xml"
+item_pub_date: "Sun, 05 Nov 2023 06:06:06 +0000"
+item_title: "Constante matematice și criptografice pentru securitatea Rust"
+last_build_date: "Sun, 05 Nov 2023 06:06:06 +0000"
+managing_editor: "contact@sebastienrousseau.com (Sebastien Rousseau)"
+pub_date: "Sun, 05 Nov 2023 06:06:06 +0000"
+ttl: "60"
+type: "website"
+webmaster: "contact@sebastienrousseau.com"
 
----
+# Apple - The Apple front matter (YAML).
+apple_mobile_web_app_orientations: "portrait"
+apple_touch_icon_sizes: "192x192"
+apple-mobile-web-app-capable: "yes"
+apple-mobile-web-app-status-bar-inset: "black"
+apple-mobile-web-app-status-bar-style: "black-translucent"
+apple-mobile-web-app-title: "Sebastien Rousseau"
+apple-touch-fullscreen: "yes"
 
-> **TL;DR.** Safeguard code integrity with meticulously vetted mathematical and cryptographic constants, bolstering memory and concurrency safety for enhanced code security.
->
-> **Concluzii cheie**
->
-> - DRAFT translation: this article is a Română stub generated from the English source. Body text is intentionally left in English until a native reviewer signs off.
-> - Source title: *Mathematical and Cryptographic Constants for Rust Security*.
-> - Source subtitle: *Vetted mathematical and cryptographic constants for memory-safe Rust security.*.
-> - Editorial note: replace this block with hand-translated copy before flipping `active=True` for ro in `scripts/_lang_registry.py`.
+# MS Application - The MS Application front matter (YAML).
 
+msapplication-navbutton-color: "0, 67, 165"
+
+# Twitter Card - The Twitter Card front matter (YAML).
+
+twitter_card: "summary"
+twitter_creator: "@wwdseb"
+twitter_description: "Protejați integritatea codului cu constante matematice și criptografice verificate minuțios, consolidând siguranța memoriei și a concurenței pentru o securitate sporită a codului."
+twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
+twitter_image_alt: "Logo-ul lui Sebastien Rousseau"
+twitter_site: "@wwdseb"
+twitter_title: "Constante matematice și criptografice pentru securitatea Rust"
+twitter_url: "https://sebastienrousseau.com/2023-11-05-mathematical-and-cryptographic-constants-for-rust-security/index.html"
+
+# Humans.txt - The Humans.txt front matter (YAML).
+author_website: "https://sebastienrousseau.com/2023-11-05-mathematical-and-cryptographic-constants-for-rust-security/index.html"
+author_twitter: "@wwdseb"
+author_location: "Londra, Marea Britanie"
+thanks: "Mulțumim pentru lectură!"
+site_last_updated: "2023-11-05"
+site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
+site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
+site_software: "Static Site Generator, Rust"
+
+excerpt: "Matematica oferă constante care reprezintă pietrele de temelie ale tehnologiei și ale comunicării securizate. Constante precum pi (π) și numărul lui Euler (e) sunt cruciale în toate domeniile, de la geometrie la..."
+last_reviewed: "2026-05-11"
 ---
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
-<p class="post-lead-tldr"><strong>TL;DR.</strong> Safeguard code integrity with meticulously vetted mathematical and cryptographic constants, bolstering memory and concurrency safety for enhanced code security.</p>
-<p class="post-lead-heading"><strong>Key takeaways</strong></p>
+<aside class="post-lead" aria-label="Rezumatul articolului">
+<p class="post-lead-tldr"><strong>TL;DR.</strong> Protejați integritatea codului cu constante matematice și criptografice verificate minuțios, consolidând siguranța memoriei și a concurenței pentru o securitate sporită a codului.</p>
+<p class="post-lead-heading"><strong>Concluzii cheie</strong></p>
 <ul class="post-lead-takeaways">
-  <li><strong>Idea.</strong> The Common (CMN) library is designed to give developers precise, straightforward access to the constants they need, packaged in a Rust-compatible format, ensuring easy integration and understanding.</li>
-  <li><strong>Impact.</strong> The Common (CMN) library provides Rust developers with a wide range of accurate mathematical and cryptographic constants.</li>
-  <li><strong>Incentives.</strong> For Rust applications that depend on mathematical or cryptographic constants, the Common (CMN) library is an invaluable resource.</li>
-  <li><strong>The Foundation of Secure Communication.</strong> Mathematics provides constants that are the cornerstones of technology and secure communication.</li>
+  <li><strong>Idee.</strong> Biblioteca Common (CMN) este concepută pentru a le oferi dezvoltatorilor un acces precis și simplu la constantele de care au nevoie, ambalate într-un format compatibil cu Rust, asigurând o integrare și o înțelegere facile.</li>
+  <li><strong>Impact.</strong> Biblioteca Common (CMN) le oferă dezvoltatorilor Rust o gamă largă de constante matematice și criptografice precise.</li>
+  <li><strong>Beneficii.</strong> Pentru aplicațiile Rust care depind de constante matematice sau criptografice, biblioteca Common (CMN) reprezintă o resursă de neprețuit.</li>
+  <li><strong>Fundația comunicării securizate.</strong> Matematica oferă constante care reprezintă pietrele de temelie ale tehnologiei și ale comunicării securizate.</li>
 </ul>
-<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html">CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age</a>, <a href="https://sebastienrousseau.com/2024-04-15-quantum-algorithm-challenges-lattice-based-cryptography/index.html">Quantum Algorithm Challenges Lattice-Based Cryptography</a>, <a href="https://sebastienrousseau.com/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html">Quantum Key Distribution Revolutionising Security in Banking</a>.</p>
+<p class="post-lead-related"><strong>Lecturi conexe:</strong> <a href="https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html">CRYSTALS-Kyber: Algoritmul de protecție în era cuantică</a>, <a href="https://sebastienrousseau.com/2024-01-01-ai-trends-2024-insights-and-predictions-for-the-future/index.html">Tendințe AI în 2024: perspective și previziuni pentru viitor</a>, <a href="https://sebastienrousseau.com/2026-05-17-agentic-engineering-banks-blueprint-2026">Ingineria agentică pentru bănci: Un plan pentru 2026 destinat directorilor executivi și inginerilor care o vor construi</a>.</p>
 </aside>
 <!-- lead-end -->
 
-![Giant white pillars](https://cloudcdn.pro/stocks/images/antoine-dautry-05A-kdOH6Hw.webp).class=\"img-fluid clearfix\"
+![Piloni albi uriași](https://cloudcdn.pro/stocks/images/antoine-dautry-05A-kdOH6Hw.webp).class="img-fluid clearfix"
 
-## Insight
+## Analiză
 
-### The Foundation of Secure Communication
+### Fundația comunicării securizate
 
-Mathematics provides constants that are the cornerstones of technology and secure communication. Constants like pi (π) and Euler’s number (e) are crucial in everything from geometry to cryptography, ensuring our digital security.
+Matematica oferă constante care reprezintă pietrele de temelie ale tehnologiei și ale comunicării securizate. Constante precum pi (π) și numărul lui Euler (e) sunt cruciale în toate domeniile, de la geometrie la criptografie, asigurându-ne securitatea digitală.
 
-In cryptography, constants serve a unique purpose. They are meticulously chosen, not arbitrary, forming the foundation of secure encryption methods such as RSA and elliptic curve cryptography. These constants are keys in the most literal sense, safeguarding our communications, digital identities, and electronic transactions.
+În criptografie, constantele servesc unui scop unic. Ele sunt alese cu meticulozitate, nu arbitrar, formând baza metodelor securizate de criptare, cum ar fi RSA și criptografia pe curbe eliptice. Aceste constante sunt chei în cel mai literal sens, protejându-ne comunicările, identitățile digitale și tranzacțiile electronice.
 
-## Idea
+## Idee
 
-### Redefining Access to Constants with Precision and Ease
+### Redefinirea accesului la constante cu precizie și simplitate
 
-The [Common (CMN) library][00] is designed to give developers precise, straightforward access to the constants they need, packaged in a Rust-compatible format, ensuring easy integration and understanding.
+[Biblioteca Common (CMN)][00] este concepută pentru a le oferi dezvoltatorilor un acces precis și simplu la constantele de care au nevoie, ambalate într-un format compatibil cu Rust, asigurând o integrare și o înțelegere facile.
 
-Encapsulating these constants in a Rust-conducive architecture, the Common (CMN) library extends a robust, swift, and intuitive experience. It commits to precision through type safety and is complemented by comprehensive documentation, easing integration and enhancing understanding.
+Prin încapsularea acestor constante într-o arhitectură propice limbajului Rust, biblioteca Common (CMN) oferă o experiență robustă, rapidă și intuitivă. Aceasta garantează precizia prin intermediul siguranței tipurilor (type safety) și este completată de o documentație cuprinzătoare, facilitând integrarea și îmbunătățind înțelegerea.
 
 ## Impact
 
-### Fine-Tuning Rust Applications with Reliable Constants
+### Optimizarea aplicațiilor Rust cu constante de încredere
 
-The Common (CMN) library provides Rust developers with a wide range of accurate mathematical and cryptographic constants. This accuracy helps prevent errors and enhances security. With its cross-platform design and detailed documentation, CMN makes developing and deploying Rust applications simpler and more reliable.
+Biblioteca Common (CMN) le oferă dezvoltatorilor Rust o gamă largă de constante matematice și criptografice precise. Această acuratețe ajută la prevenirea erorilor și sporește securitatea. Prin designul său multiplatformă și documentația detaliată, CMN face ca dezvoltarea și implementarea aplicațiilor Rust să fie mai simple și mai sigure.
 
-Designed with portability in mind, the Common (CMN) library guarantees that Rust applications can be developed once and deployed anywhere, without compatibility concerns. The library's comprehensive documentation also means developers can easily integrate it into their projects and get up to speed quickly.
+Proiectată având în vedere portabilitatea, biblioteca Common (CMN) garantează că aplicațiile Rust pot fi dezvoltate o singură dată și implementate oriunde, fără probleme de compatibilitate. De asemenea, documentația cuprinzătoare a bibliotecii le permite dezvoltatorilor să o integreze cu ușurință în proiectele lor și să înceapă lucrul rapid.
 
-## Incentives
+## Beneficii
 
-### Empower Your Rust Applications with the Common (CMN) library
+### Consolidați-vă aplicațiile Rust cu biblioteca Common (CMN)
 
-For Rust applications that depend on mathematical or cryptographic constants, the Common (CMN) library is an invaluable resource. It offers:
+Pentru aplicațiile Rust care depind de constante matematice sau criptografice, biblioteca Common (CMN) este o resursă de neprețuit. Aceasta oferă:
 
-- **Avogadro's number:** The number of atoms in one mole of a substance.
-- **Boltzmann constant:** The constant relating energy to temperature.
-- **Euler's number:** The base of the natural logarithm.
-- **Gamma function:** A special function that arises in many areas of mathematics and physics.
-- **Golden ratio:** A number that appears in many natural and mathematical objects.
-- **Pi:** A proportion between the circumference and diameter of a circle.
-- **Planck constant:** The quantum of action.
-- **Silver ratio:** A number that is similar to the golden ratio.
-- **Tau:** Twice the mathematical constant pi.
-- **Square root of 3:** The positive solution to the equation x^2 = 3.
-- **Square root of 5:** The positive solution to the equation x^2 = 5.
+- **Numărul lui Avogadro:** Numărul de atomi dintr-un mol de substanță.
+- **Constanta Boltzmann:** Constanta care corelează energia cu temperatura.
+- **Numărul lui Euler:** Baza logaritmului natural.
+- **Funcția Gamma:** O funcție specială care apare în multe domenii ale matematicii și fizicii.
+- **Proporția de aur:** Un număr care apare în multe obiecte naturale și matematice.
+- **Pi:** Raportul dintre circumferința și diametrul unui cerc.
+- **Constanta Planck:** Cuanta de acțiune.
+- **Proporția de argint:** Un număr similar cu proporția de aur.
+- **Tau:** Dublul constantei matematice pi.
+- **Rădăcina pătrată din 3:** Soluția pozitivă a ecuației x^2 = 3.
+- **Rădăcina pătrată din 5:** Soluția pozitivă a ecuației x^2 = 5.
 
-These are just a few of the many mathematical and cryptographic constants available in the Common (CMN) library. For more information, please see the Common (CMN) library documentation: [https://lib.rs/crates/cmn][01].
+Acestea sunt doar câteva dintre numeroasele constante matematice și criptografice disponibile în biblioteca Common (CMN). Pentru mai multe informații, vă rugăm să consultați documentația bibliotecii Common (CMN): [https://lib.rs/crates/cmn][01].
 
-The benefits of using the Common (CMN) library include:
+Avantajele utilizării bibliotecii Common (CMN) includ:
 
-- **Accuracy:** Ensures precise mathematical computations.
-- **Reliability:** A library that's rigorously tested.
-- **Security:** Type safety helps in preventing vulnerabilities.
-- **Portability:** Use it across various platforms with ease.
-- **Documentation:** Learn quickly with comprehensive guides.
-- **Versatility** Ideal for a wide range of computational tasks.
+- **Acuratețe:** Asigură calcule matematice precise.
+- **Fiabilitate:** O bibliotecă testată riguros.
+- **Securitate:** Siguranța tipurilor ajută la prevenirea vulnerabilităților.
+- **Portabilitate:** Utilizați-o cu ușurință pe diverse platforme.
+- **Documentație:** Învățați rapid cu ajutorul ghidurilor cuprinzătoare.
+- **Versatilitate:** Ideală pentru o gamă largă de sarcini de calcul.
 
-Use cases for the Common (CMN) library are diverse, catering to:
+Cazurile de utilizare pentru biblioteca Common (CMN) sunt diverse, adresându-se:
 
-- Encryption key generation and secure number creation.
-- Advanced mathematical computations.
-- Application development in science, finance, and cryptography.
-- Innovations in machine learning, AI, and blockchain.
+- Generării cheilor de criptare și creării de numere sigure.
+- Calculelor matematice avansate.
+- Dezvoltării de aplicații în știință, finanțe și criptografie.
+- Inovațiilor în machine learning, AI și blockchain.
 
-As the field of cryptography evolves, so does the Common (CMN) library, staying ahead of trends like quantum computing and homomorphic encryption to ensure your applications remain secure and future-proof.
+Pe măsură ce domeniul criptografiei evoluează, biblioteca Common (CMN) evoluează și ea, rămânând înaintea tendințelor precum calculul cuantic și criptarea homomorfă pentru a se asigura că aplicațiile dumneavoastră rămân securizate și pregătite pentru viitor.
 
-Developers requiring mathematical or cryptographic constants in Rust should look to the Common (CMN) library as a primary resource. The Common (CMN) library is a free and an open-source tool, and it is available for download from the [GitHub repository ⧉][02].
+Dezvoltatorii care au nevoie de constante matematice sau criptografice în Rust ar trebui să considere biblioteca Common (CMN) drept resursă principală. Biblioteca Common (CMN) este un instrument gratuit și open-source, fiind disponibilă pentru descărcare din [depozitul GitHub ⧉][02].
 
-[00]: https://github.com/sebastienrousseau/cmn "The Common (CMN) library website"
-[01]: https://docs.rs/cmn/latest/cmn/ "The Common (CMN) library documentation"
-[02]: https://github.com/sebastienrousseau/cmn "The Common (CMN) library GitHub repository"
+[00]: https://github.com/sebastienrousseau/cmn "Site-ul web al bibliotecii Common (CMN)"
+[01]: https://docs.rs/cmn/latest/cmn/ "Documentația bibliotecii Common (CMN)"
+[02]: https://github.com/sebastienrousseau/cmn "Depozitul GitHub al bibliotecii Common (CMN)"
+
+<!-- enrich-start -->
+<aside class="author-card" aria-label="Despre autor"><img alt="Portretul lui Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Tehnolog bancar senior care scrie despre AI aplicat, migrarea ISO 20022, criptografia post-cuantică pentru servicii financiare și transformarea structurală a plăților wholesale.</span><span class="author-credentials">Peste 20 de ani de experiență în cadrul HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profil complet</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<p class="post-reviewed">Ultima revizuire la <time datetime="2026-06-23">2026-06-23</time>.</p>
+<aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Lecturi conexe</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html" class="related-media" aria-label="CRYSTALS-Kyber: Algoritmul de protecție în era cuantică" tabindex="-1"><img alt="Un computer cuantic modern și elegant" src="https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html">CRYSTALS-Kyber: Algoritmul de protecție în era cuantică</a></h3><p><time datetime="2023-11-19">2023-11-19</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2024-01-01-ai-trends-2024-insights-and-predictions-for-the-future/index.html" class="related-media" aria-label="Tendințe AI în 2024: perspective și previziuni pentru viitor" tabindex="-1"><img alt="Vedere din dronă a Londrei" src="https://cloudcdn.pro/stocks/images/drone-view-of-london.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2024-01-01-ai-trends-2024-insights-and-predictions-for-the-future/index.html">Tendințe AI în 2024: perspective și previziuni pentru viitor</a></h3><p><time datetime="2024-01-01">2024-01-01</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-17-agentic-engineering-banks-blueprint-2026" class="related-media" aria-label="Ingineria agentică pentru bănci: Un plan pentru 2026 destinat directorilor executivi și inginerilor care o vor construi" tabindex="-1"><img alt="Diagrama arhitecturii de inginerie agentică pentru bănci — agenți AI bazați pe specificații, plan de control al guvernanței, substrat securizat cuantic și fluxuri de modernizare a sistemelor legacy mainframe" src="https://cloudcdn.pro/stocks/images/hector-j-rivas-1FxMET2U5dU-unsplash.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-17-agentic-engineering-banks-blueprint-2026">Ingineria agentică pentru bănci: Un plan pentru 2026 destinat directorilor executivi și inginerilor care o vor construi</a></h3><p><time datetime="2026-05-17">2026-05-17</time></p></footer></article>
+</div>
+</aside>
+<!-- enrich-end -->

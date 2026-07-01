@@ -1,253 +1,340 @@
 ---
-title: "Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for Corporate Finance"
-tags: "পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, corporate banking, G7 CEG, BIS Project Leap, ML-KEM, ML-DSA, NCSC, ASD, CNSA 2.0, harvest now decrypt later, Mosca equation, ক্রিপ্টো-চটপটতা, hybrid cryptography, ISO 20022, DORA, কোয়ান্টাম কম্পিউটিং, AI, Rust, open source, সীমান্ত-পার পেমেন্ট"
-subtitle: "কোয়ান্টাম ঝুঁকি গবেষণার কৌতূহল থেকে সক্রিয় নিয়ন্ত্রক বাধ্যতায় পরিণত হয়েছে। ২০২৬ সালের জানুয়ারিতে প্রকাশিত G7 রোডম্যাপ এবং BIS Project Leap লাইভ পেমেন্ট সিস্টেমে সম্ভাব্যতা প্রমাণ করার পর, বোর্ড পর্যায়ের প্রশ্ন এখন মাইগ্রেট করবেন কিনা তা নয় — বরং আজকের ডেটার ক্রিপ্টোগ্রাফিক মেয়াদ শেষ হওয়ার আগে মাইগ্রেশন সম্পন্ন করা যাবে কিনা।"
-description: "কোয়ান্টাম ঝুঁকি গবেষণার কৌতূহল থেকে সক্রিয় নিয়ন্ত্রক বাধ্যতায় পরিণত হয়েছে। G7 রোডম্যাপ, BIS Project Leap এবং EU, UK ও ASD সময়রেখার পরিপ্রেক্ষিতে বোর্ডের প্রশ্ন এখন মাইগ্রেশন সম্পন্ন করা যাবে কিনা।"
-date: "May 14, 2026"
-language: "bn-BD"
-locale: "bn_BD"
-banner: "https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp"
+author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি মাইগ্রেশন রোডম্যাপ ডায়াগ্রাম — কর্পোরেট ব্যাংকিং অবকাঠামো RSA থেকে ML-KEM এবং ML-DSA-তে রূপান্তরিত হচ্ছে"
+banner_height: "571"
+banner_width: "1425"
+banner: "https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp"
+cdn: "https://cloudcdn.pro"
+changefreq: "weekly"
+charset: "UTF-8"
+cname: "sebastienrousseau.com"
+copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
+date: "May 14, 2026"
+description: "কোয়ান্টাম ঝুঁকি গবেষণার কৌতূহল থেকে সক্রিয় নিয়ন্ত্রক বাধ্যতায় পরিণত হয়েছে। G7 রোডম্যাপ, BIS Project Leap এবং EU, UK ও ASD সময়রেখার পরিপ্রেক্ষিতে বোর্ডের প্রশ্ন এখন মাইগ্রেশন সম্পন্ন করা যাবে কিনা।"
+format-detection: "telephone=no"
+hreflang: "bn"
+icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
+id: "https://sebastienrousseau.com/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance"
+image_alt: "Sebastien Rousseau-এর সাদা-কালো প্রতিকৃতি"
+image_height: "162"
+image_width: "162"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, PQC মাইগ্রেশন, কর্পোরেট ব্যাংকিং, আর্থিক সেবা, G7 CEG roadmap, BIS Project Leap, ML-KEM, ML-DSA, FIPS 203, FIPS 204"
+language: "bn-BD"
+layout: "report"
+locale: "bn_BD"
+logo_alt: "Sebastien Rousseau-এর লোগো"
+logo_height: "44"
+logo_width: "44"
+logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
+menu: ""
+measurementID: "G-169G4ET5HQ"
+name: "Sebastien Rousseau"
+permalink: "https://sebastienrousseau.com/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance"
+rating: "general"
+referrer: "no-referrer"
+revisit-after: "7 days"
+robots: "index, follow"
+schema: "FAQPage, Article"
+short_name: "sebastienrousseau"
+subtitle: "কোয়ান্টাম ঝুঁকি গবেষণার কৌতূহল থেকে সক্রিয় নিয়ন্ত্রক বাধ্যতায় পরিণত হয়েছে। ২০২৬ সালের জানুয়ারিতে প্রকাশিত G7 রোডম্যাপ এবং BIS Project Leap লাইভ পেমেন্ট সিস্টেমে সম্ভাব্যতা প্রমাণ করার পর, বোর্ড পর্যায়ের প্রশ্ন এখন মাইগ্রেট করবেন কিনা তা নয় — বরং আজকের ডেটার ক্রিপ্টোগ্রাফিক মেয়াদ শেষ হওয়ার আগে মাইগ্রেশন সম্পন্ন করা যাবে কিনা।"
+tags: "পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, corporate banking, G7 CEG, BIS Project Leap, ML-KEM, ML-DSA, NCSC, ASD, CNSA 2.0, harvest now decrypt later, Mosca equation, ক্রিপ্টো-চটপটতা, hybrid cryptography, ISO 20022, DORA, কোয়ান্টাম কম্পিউটিং, AI, Rust, open source, সীমান্ত-পার পেমেন্ট"
+theme-color: "0, 67, 165"
+title: "লেজার সুরক্ষিত করা: কর্পোরেট ফিন্যান্সের জন্য পোস্ট-কোয়ান্টাম মাইগ্রেশনের একটি বোর্ড-স্তরের নির্দেশিকা"
+url: "https://sebastienrousseau.com/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance"
+viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
+
+# RSS - The RSS feed front matter (YAML).
+atom_link: "https://sebastienrousseau.com/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance/rss.xml"
+category: "কোয়ান্টাম"
+docs: https://validator.w3.org/feed/docs/rss2.html
+generator: "Static Site Generator (SSG) (version 0.0.26)"
+item_description: "মে ২০২৬-এ কর্পোরেট ফিন্যান্সে পোস্ট-কোয়ান্টাম মাইগ্রেশনের একটি বোর্ড-স্তরের দৃষ্টিভঙ্গি, যেখানে G7 রোডম্যাপ, BIS Project Leap-এর ফলাফল, NIST ML-KEM এবং ML-DSA, এবং একটি তিন-ধাপের লজিক্যাল মাইগ্রেশন পথ কভার করা হয়েছে।"
+item_guid: "https://sebastienrousseau.com/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance/rss.xml"
+item_link: "https://sebastienrousseau.com/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance/rss.xml"
+item_pub_date: "Thu, 14 May 2026 06:06:06 +0000"
+item_title: "লেজার সুরক্ষিত করা: কর্পোরেট ফিন্যান্সের জন্য পোস্ট-কোয়ান্টাম মাইগ্রেশনের একটি বোর্ড-স্তরের নির্দেশিকা"
+last_build_date: "Thu, 14 May 2026 06:06:06 +0000"
+managing_editor: "contact@sebastienrousseau.com (Sebastien Rousseau)"
+pub_date: "Thu, 14 May 2026 06:06:06 +0000"
+ttl: "60"
+type: "article"
+webmaster: "contact@sebastienrousseau.com"
+
+# Apple - The Apple front matter (YAML).
+apple_mobile_web_app_orientations: "portrait"
+apple_touch_icon_sizes: "192x192"
+apple-mobile-web-app-capable: "yes"
+apple-mobile-web-app-status-bar-inset: "black"
+apple-mobile-web-app-status-bar-style: "black-translucent"
+apple-mobile-web-app-title: "লেজার সুরক্ষিত করা"
+apple-touch-fullscreen: "yes"
+
+# MS Application - The MS Application front matter (YAML).
+
+msapplication-navbutton-color: "0, 83, 191"
+
+# Twitter Card - The Twitter Card front matter (YAML).
+
+twitter_card: "summary_large_image"
+twitter_creator: "@wwdseb"
+twitter_description: "মে ২০২৬-এ কর্পোরেট ফিন্যান্সে পোস্ট-কোয়ান্টাম মাইগ্রেশনের একটি বোর্ড-স্তরের দৃষ্টিভঙ্গি, যেখানে G7 রোডম্যাপ, BIS Project Leap-এর ফলাফল, NIST ML-KEM এবং ML-DSA, and একটি তিন-ধাপের লজিক্যাল মাইগ্রেশন পথ কভার করা হয়েছে।"
+twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
+twitter_image_alt: "Sebastien Rousseau-এর লোগো"
+twitter_site: "@wwdseb"
+twitter_title: "লেজার সুরক্ষিত করা: কর্পোরেট ফিন্যান্সের জন্য পোস্ট-কোয়ান্টাম মাইগ্রেশনের একটি বোর্ড-স্তরের নির্দেশিকা"
+twitter_url: "https://sebastienrousseau.com/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance"
+
+# Humans.txt - The Humans.txt front matter (YAML).
+author_website: "https://sebastienrousseau.com"
+author_twitter: "@wwdseb"
+author_location: "লন্ডন, যুক্তরাজ্য"
+thanks: "পড়ার জন্য ধন্যবাদ!"
+site_last_updated: "2026-05-14"
+site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
+site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
+site_software: "Static Site Generator, Rust"
+
+excerpt: "কোয়ান্টাম ঝুঁকি গবেষণার কৌতূহল থেকে সক্রিয় নিয়ন্ত্রক বাধ্যতায় পরিণত হয়েছে। ২০২৬ সালের জানুয়ারিতে প্রকাশিত G7 রোডম্যাপ, ইউরোপীয় ইউনিয়ন, যুক্তরাজ্য এবং অস্ট্রেলিয়ার সময়রেখা স্পষ্ট হওয়ার সাথে সাথে এবং BIS Project Leap…"
+last_reviewed: "2026-05-14"
+---
+কোয়ান্টাম ঝুঁকি গবেষণার কৌতূহল থেকে সক্রিয় নিয়ন্ত্রক বাধ্যতায় পরিণত হয়েছে। ২০২৬ সালের জানুয়ারিতে প্রকাশিত G7 রোডম্যাপ, ইউরোপীয় ইউনিয়ন (EU), যুক্তরাজ্য (UK) এবং অস্ট্রেলিয়ার সময়রেখা স্পষ্ট হওয়ার মাধ্যমে এবং BIS Project Leap লাইভ পেমেন্ট সিস্টেমে সম্ভাব্যতা প্রমাণ করার পর, বোর্ডের প্রশ্ন এখন মাইগ্রেট করবেন কিনা তা নয় — বরং আজকের ডেটার ক্রিপ্টোগ্রাফিক মেয়াদ শেষ হওয়ার আগে মাইগ্রেশন সম্পন্ন করা যাবে কিনা।
+
 ---
 
-![Post-quantum cryptography migration roadmap diagram — corporate banking infrastructure transitioning from RSA to ML-KEM and ML-DSA](https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp).class="img-fluid clearfix"
-
----
-
-> **TL;DR.** Quantum risk has moved from research curiosity to active regulatory mandate. With the G7 roadmap published in January 2026, the EU, UK, and ASD timelines clarified, and the BIS Project Leap proving feasibility at the central-bank level, the question for boards is no longer whether to migrate — it is whether the migration can be completed before the cryptographic shelf-life of today's data expires.
+> **প্রধান শিক্ষণীয় বিষয়সমূহ**
 >
-> **মূল বার্তা**
->
-> - DRAFT translation: this article is a বাংলা stub generated from the English source. Body text is intentionally left in English until a native reviewer signs off.
-> - Source title: *Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for Corporate Finance*.
-> - Source subtitle: *Quantum risk has moved from research curiosity to active regulatory mandate. With the G7 roadmap published in January 2026 and the BIS Project Leap proving feasibility in live payment systems, the board-level question is no longer whether to migrate — it is whether the migration can be completed before the shelf-life of today's data expires.*.
-> - Editorial note: replace this block with hand-translated copy before flipping `active=True` for bn in `scripts/_lang_registry.py`.
+> - **২০২৬ সাল হল সেই বছর যখন নিয়ন্ত্রক মনোভাব আরও কঠোর হয়েছে।** G7 সাইবার এক্সপার্ট গ্রুপের জানুয়ারির রোডম্যাপ, ইইউ (EU) এনআইএস (NIS) কোঅপারেশন গ্রুপের সমন্বিত সময়রেখা এবং যুক্তরাজ্যের NCSC-এর তিন-ধাপের পরিকল্পনা বিষয়টিকে সচেতনতা থেকে বাস্তবায়নের দিকে নিয়ে গেছে। অস্ট্রেলিয়ান সিগন্যাল ডিরেক্টরেট (ASD) আরও এগিয়ে গিয়ে ক্লাসিক্যাল অ্যাসিমেট্রিক ক্রিপ্টোগ্রাফির জন্য ২০৩০ সালের একটি নির্দিষ্ট সময়সীমা নির্ধারণ করেছে।
+> - **ঝুঁকির প্রকাশটি অসমমিতিক (Asymmetric)।** RSA, ECC এবং Diffie–Hellman হল তাৎক্ষণিক সমস্যা — এই অ্যাসিমেট্রিক অ্যালগরিদমগুলো SWIFT হ্যান্ডশেক, TLS, PKI, কোড সাইনিং এবং ক্লিয়ারিং-নেটওয়ার্ক প্রমাণীকরণের মূল ভিত্তি। কী-এর দৈর্ঘ্য বজায় রাখা হলে সিমেট্রিক এনক্রিপশন (AES-256) স্থিতিশীল থাকে। বোর্ডের ফোকাস অবশ্যই অ্যাসিমেট্রিক সারফেসের ওপর হতে হবে।
+> - **এখনই সংগ্রহ করুন, পরে ডিক্রিপ্ট করুন (Harvest-now-decrypt-later) কোনো ভবিষ্যতের দৃশ্যকল্প নয়।** আক্রমণকারীরা আজই এনক্রিপ্ট করা আর্থিক লগ, সেটেলমেন্ট রেকর্ড, এমঅ্যান্ডএ (M&A) উপাদান এবং সীমান্ত-পার ওয়্যার ডেটা সংগ্রহ ও সংরক্ষণ করছে, যার সুনির্দিষ্ট উদ্দেশ্য হল একটি ক্রিপ্টোগ্রাফিকভাবে প্রাসঙ্গিক কোয়ান্টাম কম্পিউটার (CRQC) তৈরি হওয়া মাত্রই lemons ডিক্রিপ্ট করা। ১০-২০ বছরের গোপনীয়তার প্রয়োজন রয়েছে এমন ডেটার ক্ষেত্রে এই ঝুঁকিটি ইতিমধ্যেই বাস্তবায়িত হয়েছে।
+> - **শিল্পের কাছে এখন একটি কার্যকর রেফারেন্স পয়েন্ট রয়েছে।** [BIS Project Leap Phase 2 ⧉](https://www.bis.org/publ/othp107.htm "Project Leap ২য় ধাপ: কোয়ান্টাম-প্রুফিং পেমেন্ট সিস্টেম"), যা ডিসেম্বর ২০২৫-এ প্রকাশিত হয়েছে, TARGET2 জুড়ে লাইভ লিকুইডিটি স্থানান্তরে ঐতিহ্যবাহী ডিজিটাল স্বাক্ষর সফলভাবে পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি দ্বারা প্রতিস্থাপন করেছে — এবং সুনির্দিষ্ট ইঞ্জিনিয়ারিং খরচগুলো (যাচাইকরণ লেটেন্সি, প্যাকেট সাইজ) সামনে এনেছে যা প্রতিটি মাইগ্রেশন প্রোগ্রামকে মোকাবেলা করতে হবে।
+> - **NIST স্যুট হল বিশ্বব্যাপী মূল ভিত্তি।** প্রতিটি প্রধান বিচারব্যবস্থার দ্বারা [FIPS 203 (ML-KEM) ⧉](https://csrc.nist.gov/pubs/fips/203/final "FIPS 203, মডিউল-ল্যাটিস-ভিত্তিক কী-এনক্যাপসুলেশন মেকানিজম স্ট্যান্ডার্ড") এবং FIPS 204 (ML-DSA)-কে রেফারেন্স হিসেবে ব্যবহার করা হচ্ছে, এমনকি যেখানে প্যারামিটার সেট এবং হাইব্রিড প্রয়োজনীয়তা সম্পর্কে জাতীয় অবস্থানগুলোতে ভিন্নতা রয়েছে। দীর্ঘস্থায়ী ডেটার জন্য board-গুলোর উচিত ML-KEM-768/ML-DSA-65-কে ন্যূনতম সীমা এবং ML-KEM-1024/ML-DSA-87-কে রক্ষণশীল বেসলাইন হিসেবে বিবেচনা করা।
+> - **হাইব্রিডই একমাত্র নির্ভরযোগ্য পথ।** কোনো প্রধান কর্তৃপক্ষই সরাসরি সম্পূর্ণ পরিবর্তনের পরামর্শ দেয় না। ক্লাসিক্যাল এবং কোয়ান্টাম-প্রতিরোধী অ্যালগরিদমগুলো সমান্তরালভাবে চালানো হল সেই ডেপ্লয়মেন্ট প্যাটার্ন যা NCSC, ANSSI, BSI দ্বারা অনুমোদিত এবং Project Leap-এ প্রমাণিত হয়েছে। এটি যেকোনো একটি বিকল্পের চেয়ে ভারী, তবে এটিই একমাত্র পথ যা আজকের সামঞ্জস্যতা এবং আগামীকালের হুমকি উভয়েরই সমাধান করে।
 
 ---
 
-Quantum risk has moved from research curiosity to active regulatory mandate. With the G7 roadmap published in January 2026, the EU, UK, and Australian timelines clarified, and the BIS Project Leap proving feasibility in live payment systems, the question for boards is no longer whether to migrate — it is whether the migration can be completed before the cryptographic shelf-life of today's data expires.
+## যে বছর নিয়ন্ত্রক মনোভাব কঠোর হয়েছিল
 
----
+গত দশকের বেশিরভাগ সময় ধরে, পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি দীর্ঘমেয়াদী রোডম্যাপের একটি সুবিধাজনক কোণে অবস্থান করছিল। কোয়ান্টাম কম্পিউটারগুলো চিত্তাকর্ষক কিন্তু দূরবর্তী ছিল; RSA এবং উপবৃত্তাকার বক্ররেখা (elliptic curves)-এর অন্তর্নিহিত ক্রিপ্টোগ্রাফিক গণিতকে একটি স্থিতিশীল ভিত্তি হিসেবে বিবেচনা করা হতো; এবং মাইগ্রেশন সংক্রান্ত আলোচনা মূলত বিশেষজ্ঞ ওয়ার্কিং গ্রুপগুলোর মধ্যেই সীমাবদ্ধ ছিল। সেই অবস্থানটি এখন আর গ্রহণযোগ্য নয়।
 
-> **Key Takeaways**
->
-> - **2026 is the year the regulatory posture hardened.** The G7 Cyber Expert Group's January roadmap, the EU NIS Cooperation Group's coordinated timeline, and the UK NCSC's three-phase plan have moved the conversation from awareness to execution. The Australian Signals Directorate has gone further still, setting a hard 2030 end-date for classical asymmetric cryptography.
-> - **The exposure is asymmetric.** RSA, ECC, and Diffie–Hellman are the immediate problem — the asymmetric algorithms underpinning SWIFT handshakes, TLS, PKI, code signing, and clearing-network authentication. Symmetric encryption (AES-256) remains stable if key lengths are maintained. The board-level focus must be on the asymmetric surface.
-> - **Harvest-now-decrypt-later is not a future scenario.** Adversaries are intercepting and storing encrypted financial logs, settlement records, M&A material, and cross-border wire data today, with the explicit intention of decrypting once a cryptographically relevant quantum computer (CRQC) exists. For data with a 10–20 year confidentiality requirement, that risk is already realised.
-> - **The industry now has a working reference point.** [BIS Project Leap Phase 2 ⧉](https://www.bis.org/publ/othp107.htm "Project Leap phase 2: quantum-proofing payment systems"), published December 2025, successfully replaced traditional digital signatures with post-quantum cryptography in live liquidity transfers across TARGET2 — and surfaced the specific engineering costs (verification latency, packet size) that every migration programme will face.
-> - **The NIST suite is the global anchor.** [FIPS 203 (ML-KEM) ⧉](https://csrc.nist.gov/pubs/fips/203/final "FIPS 203, Module-Lattice-Based Key-Encapsulation Mechanism Standard") and FIPS 204 (ML-DSA) are referenced by every major jurisdiction, even where national positions diverge on parameter sets and hybrid requirements. Boards should treat ML-KEM-768/ML-DSA-65 as the floor and ML-KEM-1024/ML-DSA-87 as the conservative baseline for long-lived data.
-> - **Hybrid is the only credible path.** Pure cut-overs are not advised by any major authority. Running classical and quantum-resistant algorithms in parallel is the deployment pattern endorsed by NCSC, ANSSI, BSI, and proven in Project Leap. It is heavier than either alternative, but it is the only one that addresses both today's compatibility and tomorrow's threat.
+২০২৬ সালের জানুয়ারিতে, [G7 সাইবার এক্সপার্ট গ্রুপ আজ পর্যন্ত তাদের সবচেয়ে গুরুত্বপূর্ণ বিবৃতি প্রকাশ করেছে ⧉](https://www.gov.uk/government/publications/advancing-a-coordinated-roadmap-for-the-transition-to-post-quantum-cryptography-in-the-financial-sector/g7-cyber-expert-group-statement-on-advancing-a-coordinated-roadmap-for-the-transition-to-post-quantum-cryptography-in-the-financial-sector-january-20 "আর্থিক খাতে পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফিতে রূপান্তরের জন্য একটি সমন্বিত রোডম্যাপকে এগিয়ে নেওয়া সম্পর্কে G7 CEG বিবৃতি"), যার সহ-সভাপতিত্ব করেছে মার্কিন ট্রেজারি এবং ব্যাংক অফ ইংল্যান্ড। এই নথিটি কোনো প্রবিধান নয়, তবে এটি সাধারণ নির্দেশিকার চেয়ে অনেক বেশি গুরুত্ব বহন করে: এটি G7 বিচারব্যবস্থার অর্থ মন্ত্রণালয়, কেন্দ্রীয় ব্যাংক এবং তদারকি কর্তৃপক্ষের যৌথ দৃষ্টিভঙ্গিকে প্রতিফলিত করে যে ক্রিপ্টোগ্রাফিক রূপান্তর এখন একটি পদ্ধতিগত ঝুঁকি-ব্যবস্থাপনার বিষয়। রোডম্যাপটি তার পরিকল্পনার সময়সীমাকে ২০৩০-এর দশকের মাঝামাঝি সময়ে নির্ধারণ করেছে, যেখানে গুরুত্বপূর্ণ আর্থিক সিস্টেমগুলোকে আরও আগে মাইগ্রেট করতে উৎসাহিত করা হয়েছে — যা কেন্দ্রীয় ব্যাংকারদের সতর্ক ভাষায় নিছক পরামর্শের চেয়ে প্রত্যাশার ইঙ্গিত দেয়।
 
----
+এর দুই মাস আগে, BIS ইনোভেশন হাব এবং ইউরোসিস্টেম [Project Leap Phase 2 ⧉](https://www.bis.org/publ/othp107.htm "Project Leap ২য় ধাপ: কোয়ান্টাম-প্রুফিং পেমেন্ট সিস্টেম")-এর ফলাফল প্রকাশ করেছিল, যা একটি প্রযুক্তিগত পরীক্ষা ছিল যেখানে ব্যাংক অফ ইতালি, ব্যাংক ডি ফ্রান্স, ডয়চে বুন্দেসব্যাংক, নেক্সি-কোল্ট এবং সুইফট (Swift)-এর মধ্যে লাইভ লিকুইডিটি স্থানান্তরে ঐতিহ্যবাহী ডিজিটাল স্বাক্ষরকে পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি দ্বারা প্রতিস্থাপন করা হয়েছিল। মূল ফলাফলটি ছিল একটি সাফল্য — কোয়ান্টাম-প্রতিরোধী স্বাক্ষরিত স্থানান্তরগুলো একটি সচল পেমেন্ট সিস্টেমের মাধ্যমে শুরু থেকে শেষ পর্যন্ত সফলভাবে সম্পন্ন হয়েছে। মূল সংবাদের ভেতরের বিস্তারিত বিবরণ আরও বেশি শিক্ষণীয়, যা এই নিবন্ধে পরবর্তীতে আলোচনা করা হয়েছে।
 
-## The Year the Regulatory Posture Hardened
+এই দুটি ঘটনার সংমিশ্রণ — একটি সমন্বিত G7 নীতি কাঠামো এবং একটি বাস্তব পেমেন্ট সিস্টেমে কার্যকর প্রমাণ — এমন একটি বিষয় তৈরি করেছে যার জন্য প্রযুক্তিগত সম্প্রদায় এক দশক ধরে অপেক্ষা করছিল: "এটি কি বাস্তব?" প্রশ্নের একটি সুনির্দিষ্ট উত্তর। মে ২০২৬-এ উত্তরটি হল হ্যাঁ। এখন শুধু গতির প্রশ্নটিই অবশিষ্ট রয়েছে।
 
-For most of the past decade, post-quantum cryptography lived in a comfortable corner of the long-term roadmap. Quantum computers were impressive but distant; the cryptographic mathematics underpinning RSA and elliptic curves was treated as a stable substrate; and the migration conversation was largely confined to specialist working groups. That position is no longer tenable.
+## বোর্ডের জন্য উদ্বেগজনক তিনটি হুমকির ভেক্টর
 
-In January 2026, the [G7 Cyber Expert Group published its most consequential statement to date ⧉](https://www.gov.uk/government/publications/advancing-a-coordinated-roadmap-for-the-transition-to-post-quantum-cryptography-in-the-financial-sector/g7-cyber-expert-group-statement-on-advancing-a-coordinated-roadmap-for-the-transition-to-post-quantum-cryptography-in-the-financial-sector-january-20 "G7 CEG Statement on Advancing a Coordinated Roadmap for the Transition to Post-Quantum Cryptography in the Financial Sector"), co-chaired by the US Treasury and the Bank of England. The document is not regulation, but it carries more weight than typical guidance: it represents the shared view of finance ministries, central banks, and supervisory authorities across G7 jurisdictions that cryptographic transition is now a systemic risk-management issue. The roadmap aligns its planning horizon around the mid-2030s, with critical financial systems encouraged to migrate earlier — language that, in the careful idiom of central bankers, signals expectation rather than suggestion.
+মাইগ্রেশন মেকানিক্স নিয়ে আলোচনা করার আগে, ঠিক কী ঝুঁকিতে রয়েছে সে সম্পর্কে সুনির্দিষ্ট হওয়া প্রয়োজন। কর্পোরেট ব্যাংকিংয়ে কোয়ান্টাম ঝুঁকি সমগ্র ক্রিপ্টোগ্রাফিক সম্পদের মধ্যে অভিন্ন নয়, এবং বোর্ডের মনোযোগ সেই তিনটি ভেক্টরের দিকে নির্দেশ করা সবচেয়ে ভালো যেখানে ঝুঁকির মাত্রা সবচেয়ে বেশি তীব্র।
 
-Two months earlier, the BIS Innovation Hub and the Eurosystem published the results of [Project Leap Phase 2 ⧉](https://www.bis.org/publ/othp107.htm "Project Leap phase 2: quantum-proofing payment systems"), a technical experiment that replaced traditional digital signatures with post-quantum cryptography in live liquidity transfers between the Bank of Italy, the Banque de France, the Deutsche Bundesbank, Nexi-Colt, and Swift. The headline finding was a success — quantum-resistant signed transfers passed end-to-end through an operational payment system. The detail beneath the headline is more instructive, and it is examined later in this article.
+### ১. এখনই সংগ্রহ করুন, পরে ডিক্রিপ্ট করুন (HNDL)
 
-The combination of these two events — a coordinated G7 policy framework and a working proof point in a real payment system — has produced what the technical community has been waiting a decade for: a definitive answer to the question "is this real?" The answer, in May 2026, is yes. The remaining question is one of pace.
+সবচেয়ে তাৎক্ষণিক উদ্বেগটি ভবিষ্যতের নয়, এটি বর্তমানের। রাষ্ট্রীয় স্তরের এবং পরিশীলিত অপরাধী চক্রগুলো পদ্ধতিগতভাবে এনক্রিপ্ট করা আর্থিক ট্রাফিক — যেমন ওয়্যার ট্রান্সফার, SWIFT বার্তা প্রবাহ, এমঅ্যান্ডএ (M&A) যোগাযোগ, সীমান্ত-পার সেটেলমেন্ট লগ, সোয়াপ চুক্তি এবং কেওয়াইসি (KYC) ফাইল — ইন্টারসেপ্ট এবং সংরক্ষণ করছে, যদিও বর্তমানে এগুলো পড়ার কোনো ক্ষমতা তাদের নেই। তাদের উদ্দেশ্য খুবই সহজ: এখন সংরক্ষণ করুন, পরে ডিক্রিপ্ট করুন, যখন একটি CRQC উপলব্ধ হবে। [ব্যাংক ফর ইন্টারন্যাশনাল সেটেলমেন্টস যেমন স্পষ্টভাবে উল্লেখ করেছে ⧉](https://www.bis.org/about/bisih/topics/cyber_security/leap.htm "Project Leap: আর্থিক ব্যবস্থাকে কোয়ান্টাম-প্রুফিং করা"), এই তথ্য সংগ্রহ ইতিমধ্যেই ঘটছে।
 
-## Three Threat Vectors That Should Concern the Board
+বোর্ডের জন্য এর তাৎপর্য অস্বস্তিকর কিন্তু সুনির্দিষ্ট: আজ ক্লাসিক্যাল অ্যাসিমেট্রিক এনক্রিপশনের অধীনে স্থানান্তরিত যেকোনো সংবেদনশীল ডেটা, যার গোপনীয়তার প্রয়োজনীয়তা CRQC-এর আগমনের পরেও বজায় রাখতে হবে, সেটিকে ইতিমধ্যেই উন্মুক্ত বা ঝুঁকিপূর্ণ বলে ধরে নিতে হবে। HNDL ঘটলে কোনো নিরাপত্তা লঙ্ঘনের নোটিফিকেশন পাওয়া যায় না। SIEM-এ কোনো অ্যালার্ম বাজে না। এনক্রিপশনটি এখনও কার্যকর রয়েছে — আপাতত — তবে ডেটা ইতিমধ্যেই সীমানা পার হয়ে গেছে।
 
-Before discussing migration mechanics, it is worth being precise about what specifically is at risk. Quantum risk in corporate banking is not uniform across the cryptographic estate, and the board's attention is best directed at the three vectors where the exposure is most acute.
+### ২. দীর্ঘমেয়াদী সংবেদনশীলতার ঝুঁকি
 
-### 1. Harvest Now, Decrypt Later (HNDL)
+কর্পোরেট ব্যাংকিং ডেটার প্রাতিষ্ঠানিক স্থায়িত্ব অস্বাভাবিক রকমের দীর্ঘ হয়। কৌশলগত এমঅ্যান্ডএ (M&A) ডকুমেন্টেশন এক দশক ধরে বাজার-সংবেদনশীল থাকতে পারে। ব্যবসায়িক গোপনীয়তার যোগাযোগ এবং বুদ্ধিবৃত্তিক সম্পদের মূল্যায়ন পনেরো থেকে বিশ বছর পর্যন্ত গোপনীয় থাকতে পারে। সীমান্ত-পার সেটেলমেন্ট লগ, केंद्रीय কাউন্টারপার্টি এক্সপোজার এবং কাউন্টারপার্টি ক্রেডিট মূল্যায়ন তাদের তাৎক্ষণিক লেনদেনের মেয়াদের পরেও বাণিজ্যিক সংবেদনশীলতা ধরে রাখে।
 
-The most immediate concern is not future. It is present. State-level and sophisticated criminal adversaries are systematically intercepting and storing encrypted financial traffic — wire transfers, SWIFT message flows, M&A communications, cross-border settlement logs, swap agreements, and KYC files — with no current ability to read them. Their objective is straightforward: store now, decrypt later, once a CRQC exists. As the [Bank for International Settlements has explicitly noted ⧉](https://www.bis.org/about/bisih/topics/cyber_security/leap.htm "Project Leap: quantum-proofing the financial system"), this collection is already happening.
-
-For boards, the implication is uncomfortable but specific: any sensitive data transmitted under classical asymmetric encryption today, whose confidentiality requirement extends beyond the arrival of a CRQC, must already be considered exposed. There is no breach notification when HNDL occurs. There is no alarm in the SIEM. The encryption holds — for now — but the data has already left the perimeter.
-
-### 2. Long-Term Sensitivity Risk
-
-Corporate banking data has unusually long institutional shelf lives. Strategic M&A documentation can remain market-sensitive for a decade. Trade-secret communications and intellectual property valuations may stay confidential for fifteen to twenty years. Cross-border settlement logs, central counterparty exposures, and counterparty credit assessments retain commercial sensitivity well beyond their immediate transactional life.
-
-The [Mosca equation ⧉](https://www.cryptomathic.com/a-bankers-guide-to-quantum-safe-cryptography-part-3-roadmap-to-pqc-migration-for-financial-institutions-cryptomathic "A Banker's Guide to Quantum Safe Cryptography — Part 3"), originally articulated by Michele Mosca and now embedded in every serious migration framework, formalises the problem. If **S** is the shelf life of the data, **M** is the time required to migrate the systems that protect it, and **Q** is the time until a CRQC is available, then:
+মিশেল মসকা কর্তৃক প্রবর্তিত এবং বর্তমানে প্রতিটি গুরুত্ব সহকারে নেওয়া মাইগ্রেশন ফ্রেমওয়ার্কের অন্তর্ভুক্ত [মসকা সমীকরণ ⧉](https://www.cryptomathic.com/a-bankers-guide-to-quantum-safe-cryptography-part-3-roadmap-to-pqc-migration-for-financial-institutions-cryptomathic "কোয়ান্টাম নিরাপদ ক্রিপ্টোগ্রাফির জন্য একজন ব্যাংকারের নির্দেশিকা — ৩য় অংশ") এই সমস্যাটিকে আনুষ্ঠানিকভাবে সংজ্ঞায়িত করে। যদি **S** হয় ডেটার গোপনীয়তার মেয়াদ বা শেলফ লাইফ, **M** হয় এটিকে সুরক্ষিতকারী সিস্টেমগুলো মাইগ্রেট করার প্রয়োজনীয় সময় এবং **Q** হয় একটি CRQC উপলব্ধ হওয়ার সময়, তবে:
 
 ```
-If S + M > Q, the data is already exposed.
+যদি S + M > Q হয়, তবে ডেটা ইতিমধ্যেই উন্মুক্ত হয়ে গেছে।
 ```
 
-For data with a twenty-year confidentiality horizon and a migration programme realistically requiring five to seven years to complete, the implicit Q value the board is betting on is at least 25 years out. A growing body of expert assessment — [Forrester's 2026 APAC predictions ⧉](https://www.forrester.com/press-newsroom/forrester-apac-2026-predictions/ "Forrester's 2026 APAC Predictions"), the Global Risk Institute's annual surveys, and a February 2026 architecture paper proposing CRQC at approximately 100,000 physical qubits using QLDPC codes — suggests that bet is unsafe.
+বিশ বছরের গোপনীয়তার সময়সীমা এবং একটি মাইগ্রেশন প্রোগ্রাম যা বাস্তবসম্মতভাবে সম্পন্ন করতে পাঁচ থেকে সাত বছর সময় নেয়, এমন ডেটার ক্ষেত্রে বোর্ড যে পরোক্ষ Q মানের ওপর বাজি ধরছে তা কমপক্ষে ২৫ বছর পরের কথা। বিশেষজ্ঞদের মূল্যায়নের একটি ক্রমবর্ধমান অংশ — যেমন [Forrester-এর ২০২৬ সালের APAC পূর্বাভাস ⧉](https://www.forrester.com/press-newsroom/forrester-apac-2026-predictions/ "Forrester-এর ২০২৬ সালের APAC পূর্বাভাস"), গ্লোবাল রিস্ক ইনস্টিটিউটের বার্ষিক জরিপ এবং ২০২৬ সালের ফেব্রুয়ারির একটি আর্কিটেকচার পেপার যা QLDPC কোড ব্যবহার করে আনুমানিক ১০০,০০০ ফিজিক্যাল কিউবিট সহ CRQC-এর প্রস্তাব করেছে — ইঙ্গিত করে যে এই বাজিটি অনিরাপদ।
 
-### 3. The Vulnerability of Core Handshakes
+### ৩. কোর হ্যান্ডশেকের দুর্বলতা
 
-The third vector is the most architecturally significant. Symmetric ciphers (AES-256) remain comparatively stable; Grover's algorithm halves the effective security level, but doubling key length restores margin. The catastrophic exposure is to asymmetric algorithms, and these are precisely the algorithms that underpin every authenticated handshake in corporate finance: RSA in SWIFT public-key infrastructure, ECDSA in TLS client/server authentication, ECDH in session key establishment, and ECC variants throughout client mobile authentication, API signatures, and code-signing pipelines.
+তৃতীয় ভেক্টরটি স্থাপত্যগতভাবে সবচেয়ে গুরুত্বপূর্ণ। সিমেট্রিক সাইফারগুলো (AES-256) তুলনামূলকভাবে স্থিতিশীল থাকে; গ্রোভারের অ্যালগরিদম কার্যকর নিরাপত্তার স্তরকে অর্ধেক করে দেয়, কিন্তু কী-এর দৈর্ঘ্য দ্বিগুণ করলে নিরাপত্তা মার্জিন পুনরুদ্ধার করা যায়। চরম বিপর্যয়কর ঝুঁকিটি হলো অ্যাসিমেট্রিক অ্যালগরিদমগুলোর ক্ষেত্রে, আর এই অ্যালগরিদমগুলোই কর্পোরেট ফাইন্যান্সের প্রতিটি প্রমাণিত হ্যান্ডশেকের ভিত্তি: SWIFT পাবলিক-কী ইনফ্রাস্ট্রাকচারে RSA, TLS ক্লায়েন্ট/সার্ভার প্রমাণীকরণে ECDSA, সেশন কী তৈরিতে ECDH এবং ক্লায়েন্ট মোবাইল প্রমাণীকরণ, API স্বাক্ষর ও কোড-সাইনিং পাইপলাইন জুড়ে ECC ভেরিয়েন্টসমূহ।
 
-A functional CRQC running Shor's algorithm does not gradually weaken these systems. It breaks them. Once a CRQC is operational, every RSA-protected handshake, every ECDSA signature, and every elliptic-curve key exchange becomes recoverable — not over months of effort, but in hours. The transition from "secure" to "compromised" is binary, and it propagates simultaneously across every system using the affected algorithm. This is the foundation on which the regulatory urgency rests.
+শোর-এর অ্যালগরিদম চালানো একটি কার্যকরী CRQC এই সিস্টেমগুলোকে ধীরে-ধীরে দুর্বল করে না। এটি সেগুলোকে সম্পূর্ণ ভেঙে ফেলে। একবার একটি CRQC চালু হয়ে গেলে, প্রতিটি RSA-সুরক্ষিত হ্যান্ডশেক, প্রতিটি ECDSA স্বাক্ষর এবং প্রতিটি উপবৃত্তাকার বক্ররেখার কী বিনিময় পুনরুদ্ধারযোগ্য হয়ে ওঠে — কয়েক মাসের পরিশ্রমে নয়, মাত্র কয়েক ঘণ্টার মধ্যে। "সুরক্ষিত" থেকে "ঝুঁকিপূর্ণ" অবস্থায় রূপান্তরটি দ্বিমুখী (binary), এবং এটি ক্ষতিগ্রস্ত অ্যালগরিদম ব্যবহারকারী প্রতিটি সিস্টেম জুড়ে একই সাথে ছড়িয়ে পড়ে। এটিই হচ্ছে সেই ভিত্তি যার ওপর নিয়ন্ত্রক তৎপরতার জরুরি প্রয়োজনটি নির্ভর করছে।
 
-## Regulatory Tightening: A Jurisdiction-by-Jurisdiction View
+## নিয়ন্ত্রক কড়াকড়ি: বিচারব্যবস্থা ভিত্তিক একটি বিশদ চিত্র
 
-The global regulatory picture in May 2026 is no longer a patchwork of suggestions. It is a coordinated set of timelines that vary in stringency but converge on the same destination. A multinational bank operating across the major financial centres is now subject to the most stringent applicable jurisdiction, not the most lenient.
+মে ২০২৬-এ বৈশ্বিক নিয়ন্ত্রক চিত্রটি আর বিচ্ছিন্ন কিছু পরামর্শের সমষ্টি নয়। এটি সমন্বিত সময়রেখার একটি সেট যা কঠোরতার দিক থেকে ভিন্ন হলেও একই গন্তব্যে পৌঁছায়। প্রধান প্রধান আর্থিক কেন্দ্র জুড়ে পরিচালিত একটি বহুজাতিক ব্যাংক এখন সবচেয়ে সহজ বিচারব্যবস্থার নয়, বরং তার জন্য প্রযোজ্য সবচেয়ে কঠোর বিচারব্যবস্থার অধীনে বাধ্য থাকবে।
 
-### United States
+### যুক্তরাষ্ট্র
 
-The US has the most prescriptive position for any institution touching federal systems. The NSA's [Commercial National Security Algorithm Suite 2.0 ⧉](https://informedclearly.com/en/technology/46563/quantum-encryption-race-post-quantum-security-standards-2026 "Quantum-Encryption Race 2026") mandates ML-KEM-1024 and ML-DSA-87 for national security systems, with new systems required to deploy PQC from January 2027 and complete infrastructure migration by 2035. OMB Memorandum M-23-02 binds federal agencies to the same trajectory. For commercial banks, the immediate exposure is through federal procurement chains, NSS-adjacent contracts, and the indirect pressure that NSA guidance places on the broader market.
+ফেডারেল সিস্টেমের সাথে যুক্ত যেকোনো প্রতিষ্ঠানের জন্য যুক্তরাষ্ট্রের অবস্থান সবচেয়ে সুনির্দিষ্ট। এনএসএ (NSA)-এর [Commercial National Security Algorithm Suite 2.0 ⧉](https://informedclearly.com/en/technology/46563/quantum-encryption-race-post-quantum-security-standards-2026 "কোয়ান্টাম-এনক্রিপশন প্রতিযোগিতা ২০২৬") জাতীয় নিরাপত্তা ব্যবস্থার জন্য ML-KEM-1024 এবং ML-DSA-87 obligatorio করেছে, যেখানে নতুন সিস্টেমগুলোর জন্য জানুয়ারি ২০২৭ থেকে PQC প্রয়োগ এবং ২০৩৫ সালের মধ্যে অবকাঠামোগত মাইগ্রেশন সম্পন্ন করা প্রয়োজন। ওএমবি (OMB) মেমোরেন্ডাম M-23-02 ফেডারেল সংস্থাগুলোকে একই গতিপথের সাথে আবদ্ধ করে। বাণিজ্যিক ব্যাংকগুলোর জন্য তাৎক্ষণিক ঝুঁকি তৈরি হচ্ছে ফেডারেল সংগ্রহ চেইন, জাতীয় নিরাপত্তা সংক্রান্ত চুক্তি এবং সামগ্রিক বাজারে NSA নির্দেশিকা যে পরোক্ষ চাপ তৈরি করছে তার মাধ্যমে।
 
-### European Union
+### ইউরোপীয় ইউনিয়ন
 
-The EU is operating on three layers. The [European Commission's Coordinated Implementation Roadmap ⧉](https://pqshield.com/pqc-transition-roadmaps-and-guidance/ "PQC Roadmaps and Transition Guidance"), elaborated by the NIS Cooperation Group in June 2025, sets phased milestones at 2026 (national strategies), 2030 (high-risk systems migrated), and 2035 (full transition). The Cyber Resilience Act will mandate state-of-the-art security upgrades for digital products from the end of 2027. NIS2 reinforces ICT risk management, although neither directive contains an explicit PQC requirement. National regulators, however, have moved ahead of the Commission. Germany's BSI mandates hybrid key exchange and approves a conservative basket of ML-KEM, FrodoKEM, and Classic McEliece. France's ANSSI requires hybrid for both key encapsulation and signatures. The Netherlands NLNCSA and Norway's authorities have aligned around ML-KEM-1024 as the conservative baseline for long-lived data.
+ইইউ (EU) তিনটি স্তরে কাজ করছে। [ইউরোপীয় কমিশনের কোঅর্ডিনেটেড ইমপ্লিমেন্টেশন রোডম্যাপ ⧉](https://pqshield.com/pqc-transition-roadmaps-and-guidance/ "PQC রোডম্যাপ এবং রূপান্তর নির্দেশিকা"), যা জুন ২০২৫-এ NIS কোঅপারেশন গ্রুপ দ্বারা বিস্তারিতভাবে ব্যাখ্যা করা হয়েছে, ২০২৬ (জাতীয় কৌশল), ২০৩০ (উচ্চ ঝুঁকিপূর্ণ সিস্টেম মাইগ্রেশন) এবং ২০৩৫ (পূর্ণ রূপান্তর) এ পর্যায়ক্রমিক মাইলফলক নির্ধারণ করে। সাইবার রেজিলিয়েন্স অ্যাক্ট ২০২৭ সালের শেষ থেকে ডিজিটাল পণ্যগুলোর জন্য সর্বাধুনিক নিরাপত্তা আপগ্রেড বাধ্যতামূলক করবে। NIS2 আইসিটি (ICT) ঝুঁকি ব্যবস্থাপনাকে শক্তিশালী করে, যদিও কোনো নির্দেশিকাতেই সরাসরি PQC-এর সুস্পষ্ট প্রয়োজনীয়তা নেই। তবে জাতীয় নিয়ন্ত্রকরা কমিশনের চেয়ে এগিয়ে গেছে। জার্মানির BSI হাইব্রিড কী বিনিময় বাধ্যতামূলক করে এবং ML-KEM, FrodoKEM এবং Classic McEliece-এর একটি রক্ষণশীল বাস্কেটের অনুমোদন দেয়। ফ্রান্সের ANSSI কী এনক্যাপসুলেশন এবং স্বাক্ষর উভয়ের জন্যই হাইব্রিড প্রয়োজন বলে ঘোষণা করেছে। নেদারল্যান্ডসের NLNCSA এবং নরওয়ের কর্তৃপক্ষ দীর্ঘস্থায়ী ডেটার জন্য রক্ষণশীল বেসলাইন হিসেবে ML-KEM-1024-এর পক্ষে অবস্থান নিয়েছে।
 
-### United Kingdom
+### যুক্তরাজ্য
 
-The UK NCSC published its definitive guidance in March 2025 and reaffirmed it through the 2025 Annual Review. The three-phase timeline is explicit:
+যুক্তরাজ্যের NCSC মার্চ ২০২৫-এ তার সুনির্দিষ্ট নির্দেশিকা প্রকাশ করেছে এবং ২০২৫ সালের বার্ষিক পর্যালোচনার মাধ্যমে তা পুনরায় নিশ্চিত করেছে। তিন-ধাপের সময়সীমাটি স্পষ্ট:
 
-- **To 2028** — Identify cryptographic services requiring upgrades, build the migration plan, and produce a complete cryptographic inventory.
-- **2028 to 2031** — Execute high-priority upgrades, particularly on critical systems and externally-facing internet protocols.
-- **2031 to 2035** — Complete migration across all systems, services, and products.
+- **২০২৮ সাল পর্যন্ত** — আপগ্রেড করার প্রয়োজন রয়েছে এমন ক্রিপ্টোগ্রাফিক পরিষেবাগুলো চিহ্নিত করা, মাইগ্রেশন পরিকল্পনা তৈরি করা এবং একটি সম্পূর্ণ ক্রিপ্টোগ্রাফিক ইনভেন্টরি প্রস্তুত করা।
+- **২০২৮ থেকে ২০৩১ সাল** — উচ্চ-অগ্রাধিকারমূলক আপগ্রেডগুলো সম্পাদন করা, বিশেষ করে গুরুত্বপূর্ণ সিস্টেম এবং বাইরে থেকে অ্যাক্সেসযোগ্য প্রোটোকলগুলোর ওপর।
+- **২০৩১ থেকে ২০৩৫ সাল** — সমস্ত সিস্টেম, পরিষেবা এবং পণ্য জুড়ে মাইগ্রেশন সম্পন্ন করা।
 
-For UK financial institutions, the [CMORG (Cross-Market Operational Resilience Group) PQC Guidance ⧉](https://www.cmorg.org.uk/sites/default/files/2025-06/CMORG%20-%20Guidance%20for%20Post-Quantum%20Cryptography%20-%20April%202025%20-%20TLP%20CLEAR%20(1).pdf "CMORG Guidance for Post-Quantum Cryptography") sits alongside the NCSC framework, treating banks as critical national infrastructure and emphasising vendor readiness and supply-chain alignment.
+যুক্তরাজ্যের আর্থিক প্রতিষ্ঠানগুলোর জন্য, [CMORG (ক্রস-মার্কেট অপারেশনাল রেজিলিয়েন্স গ্রুপ) PQC নির্দেশিকা ⧉](https://www.cmorg.org.uk/sites/default/files/2025-06/CMORG%20-%20Guidance%20for%20Post-Quantum%20Cryptography%20-%20April%202025%20-%20TLP%20CLEAR%20(1).pdf "পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফির জন্য CMORG নির্দেশিকা") NCSC কাঠামোর পাশাপাশি অবস্থান করে, ব্যাংকগুলোকে গুরুত্বপূর্ণ জাতীয় অবকাঠামো হিসেবে বিবেচনা করে এবং ভেন্ডর প্রস্তুতি ও সরবরাহ চেইনের সমন্বয়ের ওপর জোর দেয়।
 
-### Asia-Pacific
+### এশিয়া-প্যাসিফিক
 
-The APAC posture is more fragmented but moving fast. Australia's ASD has the hardest position globally: classical public-key cryptography must not be used beyond the end of 2030, no hybrid recommendation, and ML-KEM-1024 required (ML-KEM-768 acceptable only until 2030). Organisations should have a refined transition plan by end-2026. Singapore's Monetary Authority has issued formal quantum-safe readiness guidance. Japan and South Korea are investing substantially, though both have national algorithm tracks (Korea has selected NTRU+ and SMAUG-T as KEMs, ALMer and HAETAE as signatures). India's National Quantum Mission, backed by a Rs. 6,003.65 crore government outlay, explicitly identifies banking and financial systems as a strategic priority. [Forrester's 2026 APAC predictions ⧉](https://www.forrester.com/press-newsroom/forrester-apac-2026-predictions/ "Forrester's 2026 APAC predictions") put the number of regional enterprises expected to invest in post-quantum technologies this year at more than 90%.
+এশিয়া-প্যাসিফিক অঞ্চলের মনোভাব তুলনামূলকভাবে বিভক্ত কিন্তু দ্রুত অগ্রসরমান। অস্ট্রেলিয়ার ASD বিশ্বব্যাপী সবচেয়ে কঠোর অবস্থান গ্রহণ করেছে: ২০৩০ সালের শেষের পর ক্লাসিক্যাল পাবলিক-কী ক্রিপ্টোগ্রাফি ব্যবহার করা যাবে না, কোনো হাইব্রিডের সুপারিশ নেই এবং ML-KEM-1024 আবশ্যক (ML-KEM-768 শুধুমাত্র ২০৩০ সাল পর্যন্ত গ্রহণযোগ্য)। প্রতিষ্ঠানগুলোর ২০২৬ সালের শেষের মধ্যে একটি পরিমার্জিত রূপান্তর পরিকল্পনা থাকা উচিত। সিঙ্গাপুরের মনিটারি অথরিটি আনুষ্ঠানিক কোয়ান্টাম-নিরাপদ প্রস্তুতি নির্দেশিকা জারি করেছে। জাপান এবং দক্ষিণ কোরিয়া উল্লেখযোগ্য বিনিয়োগ করছে, যদিও উভয়েরই নিজস্ব জাতীয় অ্যালগরিদম ট্র্যাক রয়েছে (কোরিয়া KEM হিসেবে NTRU+ এবং SMAUG-T, এবং স্বাক্ষর হিসেবে ALMer ও HAETAE বেছে নিয়েছে)। ভারতের ন্যাশনাল কোয়ান্টাম মিশন, যা সরকারের ৬,০০৩.৬৫ কোটি রুপির ব্যয়ের মাধ্যমে সমর্থিত, স্পষ্টভাবে ব্যাংকিং এবং আর্থিক ব্যবস্থাগুলোকে কৌশলগত অগ্রাধিকার হিসেবে চিহ্নিত করেছে। [Forrester-এর ২০২৬ সালের APAC পূর্বাভাস ⧉](https://www.forrester.com/press-newsroom/forrester-apac-2026-predictions/ "Forrester-এর ২০২৬ সালের APAC পূর্বাভাস") অনুযায়ী, চলতি বছরে এই অঞ্চলের ৯০%-এরও বেশি এন্টারপ্রাইজ পোস্ট-কোয়ান্টাম প্রযুক্তিতে বিনিয়োগ করবে বলে আশা করা হচ্ছে।
 
-### The Net Position
+### সার্বিক পরিস্থিতি
 
-For a board, the practical synthesis of these jurisdictional positions is straightforward. A multinational bank cannot manage to any single regulator's timeline; it must manage to the most stringent applicable. For most major institutions, that means a planning horizon of end-2030 for high-risk systems and end-2035 for the long tail — with ASD-exposed entities targeting pure-PQC by 2030 and CNSA-exposed entities targeting the same window with ML-KEM-1024 and ML-DSA-87 specifically.
+একটি বোর্ডের জন্য, এই বিভিন্ন বিচারব্যবস্থার অবস্থানগুলোর ব্যবহারিক সংশ্লেষণ করা অত্যন্ত সহজ। একটি বহুজাতিক ব্যাংক যেকোনো একক নিয়ন্ত্রকের সময়সীমা অনুসরণ করতে পারে না; এটিকে তার জন্য প্রযোজ্য সবচেয়ে কঠোর সময়সীমা অনুযায়ী কাজ করতে হবে। বেশিরভাগ বড় প্রতিষ্ঠানের জন্য এর অর্থ হল, উচ্চ-ঝুঁকিপূর্ণ সিস্টেমগুলোর জন্য ২০৩০ সালের শেষ এবং দীর্ঘস্থায়ী অন্যান্য সিস্টেমের জন্য ২০৩৫ সালের শেষের সময়সীমা নির্ধারণ করা — যেখানে ASD-এর আওতাভুক্ত প্রতিষ্ঠানগুলো ২০৩০ সালের মধ্যে পিওর-PQC এবং CNSA-এর আওতাভুক্ত প্রতিষ্ঠানগুলো সুনির্দিষ্টভাবে ML-KEM-1024 ও ML-DSA-87 সহ একই সময়সীমাকে লক্ষ্য করে কাজ করবে।
 
-## BIS Project Leap: What the Industry Has Actually Proved
+## BIS Project Leap: শিল্প প্রকৃতপক্ষে কী প্রমাণ করেছে
 
-Project Leap is worth a board's attention not because it is a marketing milestone but because it is the most credible end-to-end demonstration of post-quantum cryptography in a live financial payment system to date. The headline conclusion is straightforward: it works. The detail beneath is where the operational implications sit.
+Project Leap বোর্ডের মনোযোগ আকর্ষণ করার যোগ্য কোনো বিপণন মাইলফলক হওয়ার কারণে নয়, lotions এটি একটি লাইভ আর্থিক পেমেন্ট系统中 পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফির আজ পর্যন্ত সবচেয়ে নির্ভরযোগ্য প্রথম থেকে শেষ পর্যন্ত প্রদর্শন। মূল সিদ্ধান্তটি খুবই স্পষ্ট: এটি কাজ করে। এর পেছনের বিস্তারিত তথ্যের মধ্যেই লুকিয়ে আছে কার্যক্রমগত প্রভাবগুলো।
 
-Phase 1, completed in 2023, established a quantum-resistant VPN between IT systems at the Bank of France and the Deutsche Bundesbank, with payment messages transmitted between Paris and Frankfurt under a hybrid encryption scheme. Phase 2, completed in late 2025 and [reported in December ⧉](https://www.bis.org/publ/othp107.htm "Project Leap phase 2: quantum-proofing payment systems"), went considerably further. The consortium replaced traditional RSA-based digital signatures with post-quantum signatures in the execution of liquidity transfers across TARGET2, the Eurosystem's Real-Time Gross Settlement system. The participants — the BIS Innovation Hub Eurosystem Centre, the Bank of Italy, the Banque de France, the Deutsche Bundesbank, Nexi-Colt (which provides TARGET2 connectivity), and Swift — represent precisely the institutions whose infrastructure must eventually migrate.
+২০২৩ সালে সম্পন্ন হওয়া প্রথম ধাপটি (Phase 1) ব্যাংক ডি ফ্রান্স এবং ডয়চে বুন্দেসব্যাংক-এর আইটি সিস্টেমের মধ্যে একটি কোয়ান্টাম-প্রতিরোধী VPN স্থাপন করেছিল, যা একটি হাইব্রিড এনক্রিপশন স্কিমের আওতায় প্যারিস এবং ফ্রাঙ্কফুর্টের মধ্যে পেমেন্ট বার্তা পাঠানো হয়েছিল। দ্বিতীয় ধাপটি (Phase 2), যা ২০২৫ সালের শেষের দিকে সম্পন্ন হয়েছিল এবং [ডিসেম্বরে রিপোর্ট করা হয়েছিল ⧉](https://www.bis.org/publ/othp107.htm "Project Leap ২য় ধাপ: কোয়ান্টাম-প্রুফিং পেমেন্ট সিস্টেম"), তা আরও অনেক দূর এগিয়ে গেছে। কনসোর্টিয়ামটি ইউরোসিস্টেমের রিয়েল-টাইম গ্রস সেটেলমেন্ট সিস্টেম TARGET2 জুড়ে লিকুইডিটি স্থানান্তরের ক্ষেত্রে ঐতিহ্যবাহী RSA-ভিত্তিক ডিজিটাল স্বাক্ষরগুলোকে পোস্ট-কোয়ান্টাম স্বাক্ষর দ্বারা প্রতিস্থাপন করেছে। অংশগ্রহণকারীরা — যেমন BIS ইনোভেশন হাব ইউরোসিস্টেম সেন্টার, ব্যাংক অফ ইতালি, ব্যাংক ডি ফ্রান্স, ডয়চে বুন্দেসব্যাংক, নেক্সি-কোল্ট (যা TARGET2 সংযোগ প্রদান করে) এবং সুইফট — ঠিক সেই প্রতিষ্ঠানগুলোর প্রতিনিধিত্ব করে যাদের অবকাঠামো শেষ পর্যন্ত মাইগ্রেট করতে হবে।
 
-The report flagged three findings that every migration programme should internalise:
+প্রতিবেদনে তিনটি বিষয় উঠে এসেছে যা প্রতিটি মাইগ্রেশন প্রোগ্রামের অভ্যন্তরীণভাবে গ্রহণ করা উচিত:
 
-- **Verification latency is meaningfully higher.** Post-quantum signature verification took materially longer than RSA-based verification on the same hardware. For an RTGS system designed around sub-second message handling, this is not a marginal observation; it is a capacity-planning input.
-- **Packet sizes require system redevelopment.** PQC signatures are an order of magnitude larger than ECDSA equivalents (more on this below). Payment systems whose internal queues, monitoring tools, and database schemas were sized for legacy message dimensions cannot accommodate the new payload without redesign. Project Leap explicitly found that TARGET2 could not "easily accommodate" the hybrid model without substantial redevelopment.
-- **Hybrid is the right answer — but it is heavier.** Running classical and post-quantum algorithms in parallel preserved backward compatibility and provided defence in depth, but it doubled the cryptographic processing overhead. This is the operational cost of doing PQC correctly during the transition; it is not avoidable through clever engineering alone.
+- **যাচাইকরণ লেটেন্সি উল্লেখযোগ্যভাবে বেশি।** একই হার্ডওয়্যারে পোস্ট-কোয়ান্টাম স্বাক্ষর যাচাইকরণে RSA-ভিত্তিক যাচাইকরণের চেয়ে অনেক বেশি সময় লেগেছে। এক সেকেন্ডের কম সময়ে বার্তা প্রক্রিয়াকরণের জন্য ডিজাইন করা একটি RTGS সিস্টেমের জন্য এটি কোনো তুচ্ছ পর্যবেক্ষণ নয়; এটি সক্ষমতা পরিকল্পনার একটি গুরুত্বপূর্ণ উপাদান।
+- **প্যাকেটের আকার সিস্টেমের পুনর্গঠন দাবি করে।** PQC স্বাক্ষরগুলো ECDSA সমমানের চেয়ে বা তার চেয়ে বহুগুণ বড় (এ বিষয়ে নিচে বিস্তারিত দেওয়া হলো)। যেসব পেমেন্ট সিস্টেমের অভ্যন্তরীণ কিউ (queues), মনিটরিং টুল এবং ডেটাবেস স্কিমাগুলো পূর্ববর্তী বার্তার আকারের ওপর ভিত্তি করে তৈরি করা হয়েছিল, সেগুলো নতুন পেলোড রিডিজাইন করা ছাড়া ধারণ করতে পারবে না। Project Leap স্পষ্টভাবে দেখেছে যে উল্লেখযোগ্য পুনর্গঠন ছাড়া TARGET2 হাইব্রিড মডেলটিকে "সহজে মানিয়ে নিতে" পারে না।
+- **হাইব্রিডই সঠিক সমাধান — তবে এটি অপেক্ষাকৃত ভারী।** ক্লাসিক্যাল এবং পোস্ট-কোয়ান্টাম অ্যালগরিদমগুলো সমান্তরালভাবে চালানো ব্যাকওয়ার্ড সামঞ্জস্য রক্ষা করেছে এবং গভীরতর সুরক্ষা প্রদান করেছে, তবে এটি ক্রিপ্টোগ্রাফিক প্রক্রিয়াকরণের ওভারহেড দ্বিগুণ করেছে। রূপান্তরকালীন সময়ে সঠিকভাবে PQC করার জন্য এটিই হচ্ছে অপারেশনাল খরচ; যা কেবল চতুর ইঞ্জিনিয়ারিংয়ের মাধ্যমে এড়ানো সম্ভব নয়।
 
-For a CFO reviewing a PQC business case, the Project Leap findings are useful precisely because they are precise. The cost of post-quantum migration is not a single capital line. It is verification latency that ripples through SLA contracts, message-size expansion that touches storage and bandwidth budgets, and a transitional period of duplicated cryptographic operations that affects compute capacity planning. None of these are speculative. They have been measured in a live central-bank system.
+একজন CFO-এর জন্য PQC বিজনেস কেস পর্যালোচনা করার সময়, Project Leap-এর অনুসন্ধানগুলো অত্যন্ত দরকারি কারণ এগুলো অত্যন্ত সুনির্দিষ্ট। পোস্ট-কোয়ান্টাম মাইগ্রেশনের খরচ কেবল একটি একক মূলধনী ব্যয়ের খাত নয়। এটি এমন একটি যাচাইকরণ লেটেন্সি যা SLA চুক্তিগুলোর ওপর প্রভাব ফেলে, বার্তার আকারের সম্প্রসারণ যা স্টোরেজ এবং ব্যান্ডউইথ বাজেটকে স্পর্শ করে, এবং স্থানান্তরের অন্তর্বর্তীকালীন সময়ে দ্বিগুণ ক্রিপ্টোগ্রাফিক কার্যক্রম যা কম্পিউট সক্ষমতার পরিকল্পনাকে প্রভাবিত করে। এগুলোর কোনোটিই অনুমানভিত্তিক নয়। এগুলো একটি লাইভ কেন্দ্রীয় ব্যাংকের সিস্টেমে পরিমাপ করা হয়েছে।
 
-## The NIST Toolkit: ML-KEM and ML-DSA Compared
+## NIST টুলকিট: ML-KEM এবং ML-DSA-এর তুলনা
 
-The technical centrepiece of every credible national framework is the NIST suite of post-quantum standards published in August 2024. Two of these standards are the immediate focus for corporate banking: ML-KEM (FIPS 203) for key encapsulation and ML-DSA (FIPS 204) for digital signatures. They share a mathematical foundation — both rely on the hardness of Module Learning With Errors (ML-LWE) and Module Short Integer Solution problems over structured lattices — but they serve very different roles in the cryptographic estate, and their performance and size profiles differ materially.
+প্রতিটি নির্ভরযোগ্য জাতীয় কাঠামোর প্রযুক্তিগত কেন্দ্রবিন্দু হল আগস্ট ২০২৪-এ প্রকাশিত পোস্ট-কোয়ান্টাম মানদণ্ডের NIST স্যুট। এই মানদণ্ডগুলোর মধ্যে দুটি কর্পোরেট ব্যাংকিংয়ের জন্য তাৎক্ষণিক ফোকাস: কী এনক্যাপসুলেশনের জন্য ML-KEM (FIPS 203) এবং ডিজিটাল স্বাক্ষরের জন্য ML-DSA (FIPS 204)। তারা একটি গাণিতিক ভিত্তি ভাগ করে নেয় — উভয়ই স্ট্রাকচার্ড ল্যাটিসের ওপর মডিউল লার্নিং উইথ এররস (ML-LWE) এবং মডিউল শর্ট ইন্টিজার সリューション সমস্যার কঠিনতার ওপর নির্ভর করে — তবে তারা ক্রিপ্টোগ্রাফিক সম্পদে সম্পূর্ণ ভিন্ন ভূমিকা পালন করে এবং তাদের কার্যকারিতা ও আকারের প্রোফাইলগুলোতে বাস্তবসম্মত পার্থক্য রয়েছে।
 
-### ML-KEM (FIPS 203) — Key Encapsulation
+### ML-KEM (FIPS 203) — কী এনক্যাপসুলেশন
 
-ML-KEM, derived from [CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html), is the replacement for ECDH and RSA-KEM in protocols where two parties need to establish a shared symmetric key over an insecure channel. It is, in practical terms, where TLS handshakes go after RSA and ECDH are retired. NIST defines three parameter sets at increasing security strength and decreasing performance: ML-KEM-512 (NIST Category 1), ML-KEM-768 (Category 3), and ML-KEM-1024 (Category 5).
+ML-KEM, যা [CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html) থেকে উদ্ভূত হয়েছে, তা এমন প্রোটোকলগুলোতে ECDH এবং RSA-KEM-এর প্রতিস্থাপন হিসেবে ব্যবহৃত হয় যেখানে দুটি পক্ষ একটি অনিরাপদ চ্যানেলের মাধ্যমে একটি সাধারণ বা অংশীদারিত্বমূলক সিমেট্রিক কী স্থাপন করতে চায়। এটি ব্যবহারিক অর্থে, RSA এবং ECDH অবসর নেওয়ার পরে যেখানে TLS হ্যান্ডশেক স্থানান্তরিত হয়। NIST ক্রমবর্ধমান নিরাপত্তা শক্তি এবং হ্রাসমান কার্যকারিতার ভিত্তিতে তিনটি প্যারামিটার সেট সংজ্ঞায়িত করে: ML-KEM-512 (NIST ক্যাটাগরি ১), ML-KEM-768 (ক্যাটাগরি ৩), এবং ML-KEM-1024 (ক্যাটাগরি ৫)।
 
-### ML-DSA (FIPS 204) — Digital Signatures
+### ML-DSA (FIPS 204) — ডিজিটাল স্বাক্ষর
 
-ML-DSA, derived from CRYSTALS-Dilithium, is the replacement for RSA and ECDSA signatures. It handles certificate signing, code signing, document signing, and authentication. The three parameter sets are ML-DSA-44, ML-DSA-65, and ML-DSA-87, corresponding broadly to NIST Categories 2, 3, and 5.
+ML-DSA, যা CRYSTALS-Dilithium থেকে উদ্ভূত, তা RSA এবং ECDSA স্বাক্ষরের প্রতিস্থাপন। এটি সার্টিফিকেট স্বাক্ষর, কোড স্বাক্ষর, নথি স্বাক্ষর এবং প্রমাণীকরণ পরিচালনা করে। তিনটি প্যারামিটার সেট হল ML-DSA-44, ML-DSA-65 এবং ML-DSA-87, যা বিস্তৃতভাবে NIST ক্যাটাগরি ২, ৩ এবং ৫-এর সাথে সামঞ্জস্যপূর্ণ।
 
-### Size and Performance Profile
+### আকার এবং কার্যকারিতার প্রোফাইল
 
-For a CIO scoping migration capacity, the most important figures are the artefact sizes. These are the inputs to network capacity planning, storage projections, and protocol-level testing.
+একজন CIO-এর জন্য মাইগ্রেশন ক্ষমতা নির্ধারণ করার সময় সবচেয়ে গুরুত্বপূর্ণ সংখ্যাগুলো হল আর্টিফ্যাক্টের আকার। এগুলো নেটওয়ার্ক ক্ষমতা পরিকল্পনা, স্টোরেজ অনুমান এবং প্রোটোকল-স্তরের পরীক্ষার জন্য প্রয়োজনীয় ইনপুট।
 
-| Algorithm | Public Key | Ciphertext / Signature | Closest Classical Equivalent | Size vs Classical |
+| অ্যালগরিদম | পাবলিক কী | সাইফারটেক্সট / স্বাক্ষর | নিকটতম ক্লাসিক্যাল সমকক্ষ | আকার বনাম ক্লাসিক্যাল |
 |---|---|---|---|---|
-| ML-KEM-512 | 800 bytes | 768 bytes (ciphertext) | ECDH P-256 (~32 bytes pub key) | ~25× larger |
-| ML-KEM-768 | 1,184 bytes | 1,088 bytes (ciphertext) | ECDH P-384 | ~25× larger |
-| ML-KEM-1024 | 1,568 bytes | 1,568 bytes (ciphertext) | ECDH P-521 | ~25× larger |
-| ML-DSA-44 | 1,312 bytes | ~2,420 bytes (signature) | ECDSA P-256 (64-byte sig) | ~38× larger |
-| ML-DSA-65 | 1,952 bytes | ~3,293 bytes (signature) | ECDSA P-384 | ~50× larger |
-| ML-DSA-87 | 2,592 bytes | ~4,595 bytes (signature) | ECDSA P-521 | ~70× larger |
+| ML-KEM-512 | ৮০০ বাইট | ৭৬৮ বাইট (সাইফারটেক্সট) | ECDH P-256 (~৩২ বাইট পাবলিক কী) | ~২৫ গুণ বড় |
+| ML-KEM-768 | ১,১৮৪ বাইট | ১,০৮৮ বাইট (সাইফারটেক্সট) | ECDH P-384 | ~২৫ গুণ বড় |
+| ML-KEM-1024 | ১,৫৬৮ বাইট | ১,৫৬৮ বাইট (সাইফারটেক্সট) | ECDH P-521 | ~২৫ গুণ বড় |
+| ML-DSA-44 | ১,৩১২ বাইট | ~২,৪২০ বাইট (স্বাক্ষর) | ECDSA P-256 (৬৪-বাইট স্বাক্ষর) | ~৩৮ গুণ বড় |
+| ML-DSA-65 | ১,৯৫২ বাইট | ~৩,২৯৩ বাইট (স্বাক্ষর) | ECDSA P-384 | ~৫০ গুণ বড় |
+| ML-DSA-87 | ২,৫৯২ বাইট | ~৪,৫৯৫ বাইট (স্বাক্ষর) | ECDSA P-521 | ~৭০ গুণ বড় |
 
-*Source: Synthesis of [NIST FIPS 203 ⧉](https://csrc.nist.gov/pubs/fips/203/final "FIPS 203, Module-Lattice-Based Key-Encapsulation Mechanism Standard") and FIPS 204 specifications, with comparative data from independent benchmarking literature.*
+*\*উৎস: [NIST FIPS 203 ⧉](https://csrc.nist.gov/pubs/fips/203/final "FIPS 203, মডিউল-ল্যাটিস-ভিত্তিক কী-এনক্যাপসুলেশন মেকানিজম স্ট্যান্ডার্ড") এবং FIPS 204 স্পেসিফিকেশনের সংশ্লেষণ, সাথে স্বাধীন বেঞ্চমার্কিং সাহিত্য থেকে প্রাপ্ত তুলনামূলক ডেটা।*
 
-Three operational implications follow directly. **First**, signature size is the binding constraint for most enterprise deployments. An ML-DSA-65 signature is approximately fifty times the size of an ECDSA P-256 signature, and TLS certificate chains carrying intermediate CAs grow proportionally. Capacity work on this surface is not optional — it is load-bearing. **Second**, ML-KEM is computationally competitive with ECDH and in some implementations meaningfully faster, particularly on hardware with vectorised support for the underlying lattice arithmetic. **Third**, ML-DSA verification is consistently fast (often faster than ECDSA verification), but ML-DSA signing involves a rejection-sampling loop that can require multiple attempts on constrained hardware. For high-throughput signing services, this is a benchmark to verify rather than assume.
+এর থেকে সরাসরি তিনটি কার্যক্রমগত প্রভাব লক্ষ্য করা যায়। **প্রথমত**, বেশিরভাগ এন্টারপ্রাইজ ডেপ্লয়মেন্টের জন্য স্বাক্ষরের আকার একটি বড় সীমাবদ্ধতা। একটি ML-DSA-65 স্বাক্ষর একটি ECDSA P-256 স্বাক্ষরের চেয়ে প্রায় পঞ্চাশ গুণ বড় এবং ইন্টারমিডিয়েট CA ধারণকারী TLS সার্টিফিকেট চেইনগুলো আনুপাতিক হারে বৃদ্ধি পায়। এই ক্ষেত্রে সক্ষমতা বাড়ানোর কাজ ঐচ্ছিক নয় — এটি অত্যন্ত গুরুত্বপূর্ণ। **দ্বিতীয়ত**, ML-KEM কম্পিউটেশনাল ক্ষমতার দিক থেকে ECDH-এর সাথে প্রতিযোগিতামূলক এবং কিছু বাস্তবায়নে উল্লেখযোগ্যভাবে দ্রুত কাজ করে, বিশেষ করে এমন হার্ডওয়্যারে যা ল্যাটিস পাটিগণিতের ভেক্টরাইজড সমর্থন সরবরাহ করে। **তৃতীয়ত**, ML-DSA যাচাইকরণ নিয়মিতভাবে দ্রুত সম্পন্ন হয় (প্রায়শই ECDSA যাচাইকরণের চেয়ে দ্রুত), তবে ML-DSA স্বাক্ষরের মধ্যে একটি রিজেকশন-স্যাম্পলিং লুপ অন্তর্ভুক্ত থাকে যা সীমাবদ্ধ হার্ডওয়্যারে একাধিক প্রচেষ্টার প্রয়োজন হতে পারে। উচ্চ-গতির স্বাক্ষর পরিষেবার ক্ষেত্রে, এটি অনুমান করার চেয়ে যাচাই করা আরও বেশি গুরুত্বপূর্ণ।
 
-### Choosing Parameter Sets
+### প্যারামিটার সেট নির্বাচন করা
 
-The jurisdictional positions on parameter selection are not identical, but the convergence is clear. ML-KEM-768 and ML-DSA-65 are the enterprise floor — endorsed by UK NCSC as the baseline for UK organisations and acceptable under most European frameworks. ML-KEM-1024 and ML-DSA-87 are the conservative ceiling — mandated by NSA CNSA 2.0 for US national security systems and required by ASD for Australian regulated entities by 2030. For data with extreme long-term sensitivity — sovereign settlement logs, decade-plus intellectual property, custody records for long-dated instruments — the higher parameter sets are the defensible default.
+প্যারামিটার নির্বাচনের ক্ষেত্রে বিচারব্যবস্থাগুলোর অবস্থান এক নয়, তবে তাদের গন্তব্য স্পষ্ট। ML-KEM-768 এবং ML-DSA-65 হল এন্টারপ্রাইজের ন্যূনতম ভিত্তি — যা যুক্তরাজ্যের NCSC দ্বারা যুক্তরাজ্যভিত্তিক সংস্থাগুলোর জন্য বেসলাইন হিসেবে প্রস্তাবিত এবং বেশিরভাগ ইউরোপীয় কাঠামোর অধীনে গ্রহণযোগ্য। ML-KEM-1024 এবং ML-DSA-87 হল রক্ষণশীল সর্বোচ্চ সীমা — যা যুক্তরাষ্ট্রের জাতীয় নিরাপত্তা ব্যবস্থার জন্য NSA CNSA 2.0 দ্বারা বাধ্যতামূলক এবং ২০৩০ সালের মধ্যে অস্ট্রেলিয়ার নিয়ন্ত্রিত সংস্থাগুলোর জন্য ASD দ্বারা প্রয়োজনীয়। চরম দীর্ঘমেয়াদী সংবেদনশীলতাসম্পন্ন ডেটার জন্য — যেমন রাষ্ট্রীয় সেটেলমেন্ট লগ, এক দশকের বেশি পুরনো বুদ্ধিবৃত্তিক সম্পদ, দীর্ঘমেয়াদী দলিলের কাস্টডি রেকর্ড — উচ্চতর প্যারামিটার সেটগুলোই যুক্তিযুক্ত ডিফল্ট।
 
-### A Shared Mathematical Foundation, A Shared Risk
+### একটি যৌথ গাণিতিক ভিত্তি, একটি যৌথ ঝুঁকি
 
-A board-level point worth noting: both ML-KEM and ML-DSA derive their security from the same family of lattice problems. A future cryptanalytic breakthrough against Module-LWE would affect both standards simultaneously. This is precisely why several national authorities — notably Germany's BSI and France's ANSSI — recommend complementing the lattice-based stack with hash-based signatures (SLH-DSA, FIPS 205) for long-term signing and code-signing use cases. Crypto-agility, in this sense, is not just about being able to swap RSA for ML-KEM. It is about being able to swap one PQC algorithm for another when the cryptanalytic landscape shifts.
+বোর্ড-স্তরে লক্ষ্য করার মতো একটি বিষয়: ML-KEM এবং ML-DSA উভয়ই একই ধরণের ল্যাটিস সমস্যা থেকে তাদের নিরাপত্তা অর্জন করে। Module-LWE-এর বিরুদ্ধে ভবিষ্যতের যেকোনো ক্রিপ্টঅ্যানালিটিক্যাল অগ্রগতি উভয় মানদণ্ডকে একই সাথে প্রভাবিত করবে। ঠিক এই কারণেই বেশ কয়েকটি জাতীয় কর্তৃপক্ষ — বিশেষ করে জার্মানির BSI এবং ফ্রান্সের ANSSI — দীর্ঘমেয়াদী স্বাক্ষর এবং কোড-সাইনিং ব্যবহারের ক্ষেত্রে ল্যাটিস-ভিত্তিক স্ট্যাকের পরিপূরক হিসেবে হ্যাশ-ভিত্তিক স্বাক্ষর (SLH-DSA, FIPS 205) ব্যবহার করার পরামর্শ দেয়। এই অর্থে, ক্রিপ্টো-চটপটেতা (crypto-agility) কেবল RSA-এর পরিবর্তে ML-KEM ব্যবহার করতে পারার ক্ষমতা নয়। এটি ক্রিপ্টঅ্যানালিটিক্যাল ল্যান্ডস্কেপ পরিবর্তিত হওয়ার সাথে সাথে একটি PQC অ্যালগরিদমকে অন্যটির সাথে পরিবর্তন করতে পারার ক্ষমতাও।
 
-## A Logical Migration Path: Discovery → Triage → Hybrid Deployment
+---
 
-For a board approving a multi-year PQC programme, the operational question is how to phase the work without taking unacceptable service-availability risk. The pattern that has emerged across the G7 roadmap, the NCSC framework, BIS Project Leap, and the major national guidance documents converges on three phases.
+## একটি যৌক্তিক মাইগ্রেশন পথ: আবিষ্কার → অগ্রাধিকার নির্ধারণ → হাইব্রিড ডেপ্লয়মেন্ট
+
+একটি বহুবর্ষীয় PQC প্রোগ্রাম অনুমোদনকারী বোর্ডের জন্য, কার্যক্রমগত প্রশ্নটি হল কীভাবে পরিষেবার উপলব্ধতার ক্ষেত্রে কোনো অসমর্থিত ঝুঁকি না নিয়ে কাজটিকে বিভিন্ন ধাপে ভাগ করা যায়। G7 রোডম্যাপ, NCSC কাঠামো, BIS Project Leap এবং প্রধান জাতীয় নির্দেশিকা নথিগুলো জুড়ে যে প্যাটার্নটি উদ্ভূত হয়েছে তা তিনটি ধাপে একত্রিত হয়।
 
 ```
 ┌──────────────────────┐   ┌──────────────────────┐   ┌──────────────────────┐
-│  1. DISCOVERY & CBOM │ → │  2. TRIAGE (MOSCA)   │ → │  3. HYBRID DEPLOYMENT│
-│  Cryptographic       │   │  Risk-based          │   │  Dual-envelope       │
-│  inventory across    │   │  prioritisation by   │   │  classical + PQC,    │
-│  all systems         │   │  data shelf life     │   │  crypto-agile        │
+│  ১. আবিষ্কার ও CBOM   │ → │২. অগ্রাধিকার (MOSCA) │ → │ ৩. হাইব্রিড ডেপ্লয়মেন্ট│
+│  সব সিস্টেমে         │   │  ডেটার শেলফ লাইফ     │   │  ডুয়াল-এনভেলপ        │
+│  ক্রিপ্টোগ্রাফিক      │   │  অনুযায়ী ঝুঁকি-ভিত্তিক │   │  ক্লাসিক্যাল + PQC,   │
+│  ইনভেন্টরি           │   │  অগ্রাধিকার নির্ধারণ  │   │  ক্রিপ্টো-চটপটে      │
 └──────────────────────┘   └──────────────────────┘   └──────────────────────┘
 ```
 
-### Phase 1 — Discovery and the Cryptographic Bill of Materials (CBOM)
+### ধাপ ১ — আবিষ্কার এবং ক্রিপ্টোগ্রাফিক বিল অফ ম্যাটেরিয়ালস (CBOM)
 
-Migration cannot be planned for a cryptographic estate that has not been mapped, and most institutions do not have an accurate map. The first phase is therefore the production of a Cryptographic Bill of Materials — a structured inventory of every instance of asymmetric cryptography across the organisation, with each instance tagged for algorithm, key length, protocol context, data sensitivity, and system owner. Automated scanning across codebases, web applications, container images, database configurations, certificate stores, hardware security modules, and vendor interfaces is the practical mechanism; manual inventory of legacy systems and proprietary protocols is the unavoidable supplement.
+যে ক্রিপ্টোগ্রাফিক সম্পত্তির কোনো মানচিত্র তৈরি করা হয়নি তার জন্য মাইগ্রেশনের পরিকল্পনা করা অসম্ভব, এবং বেশিরভাগ প্রতিষ্ঠানের কাছে কোনো সঠিক মানচিত্র নেই। তাই প্রথম ধাপটি হল একটি ক্রিপ্টোগ্রাফিক বিল অফ ম্যাটেরিয়ালস (CBOM) তৈরি করা — যা সমগ্র প্রতিষ্ঠান জুড়ে অ্যাসিমেট্রিক ক্রিপ্টোগ্রাফির প্রতিটি ইনস্ট্যান্সের একটি কাঠামোগত ইনভেন্টরি, যেখানে প্রতিটি ইনস্ট্যান্সকে অ্যালগরিদম, কী-এর দৈর্ঘ্য, প্রোটোকল প্রসঙ্গ, ডেটার সংবেদনশীলতা এবং সিস্টেমের মালিকের দ্বারা ট্যাগ করা হয়। কোডবেস, ওয়েব অ্যাপ্লিকেশন, কন্টেইনার ইমেজ, ডেটাবেস কনফিগারেশন, সার্টিফিকেট স্টোর, হার্ডওয়্যার সিকিউরিটি মডিউল এবং ভেন্ডর ইন্টারফেস জুড়ে স্বয়ংক্রিয় স্ক্যানিং হল এর ব্যবহারিক প্রক্রিয়া; আর ঐতিহ্যবাহী সিস্টেম এবং মালিকানাধীন প্রোটোকলগুলোর ম্যানুয়াল ইনভেন্টরি হল এর অপরিহার্য সম্পূরক।
 
-The output of Phase 1 is not glamorous, but it is the only foundation on which Phases 2 and 3 can rest. It is also the deliverable that most internal audit functions and external regulators will look for first when PQC compliance attestations start being requested.
+প্রথম ধাপের ফলাফলগুলো হয়তো দেখতে খুব আকর্ষণীয় নয়, তবে এটিই একমাত্র ভিত্তি যার ওপর দ্বিতীয় এবং তৃতীয় ধাপ নির্ভর করতে পারে। তাছাড়া যখন PQC কমপ্লায়েন্স অ্যাটেস্টেশন চাওয়া শুরু হবে, তখন বেশিরভাগ অভ্যন্তরীণ অডিট দল এবং বাহ্যিক নিয়ন্ত্রকরা প্রথমে এই নথিটিই দেখতে চাইবেন।
 
-### Phase 2 — Risk Triage Using the Mosca Equation
+### ধাপ ২ — মসকা সমীকরণ ব্যবহার করে ঝুঁকি অগ্রাধিকার নির্ধারণ
 
-With the CBOM in hand, the institution can apply Mosca's framework asset by asset. For each cryptographic dependency, the question is whether **S + M > Q** — whether the data's shelf life plus the migration time exceeds the estimated time to a CRQC. Assets where the inequality is most acute — long-lived sensitive data on infrastructure that takes years to migrate — go to the front of the queue. Assets with short data lifespans or already-modernised infrastructure can be sequenced later in the programme.
+CBOM হাতে পাওয়ার পর, প্রতিষ্ঠানটি সম্পদভিত্তিক মসকা-এর ফ্রেমওয়ার্ক প্রয়োগ করতে পারে। প্রতিটি ক্রিপ্টোগ্রাফিক নির্ভরতার জন্য প্রশ্নটি হল **S + M > Q** কিনা — অর্থাৎ ডেটার শেলফ লাইফ এবং মাইগ্রেশনের প্রয়োজনীয় সময়ের যোগফল CRQC-এর আনুমানিক সময়ের চেয়ে বেশি কিনা। যেসব সম্পদের ক্ষেত্রে এই অসমতা সবচেয়ে তীব্র — যেমন বহু বছর ধরে ব্যবহৃত অবকাঠামোতে দীর্ঘস্থায়ী সংবেদনশীল ডেটা যা মাইগ্রেট করতে কয়েক বছর সময় লাগে — সেগুলো লাইনের সামনে চলে আসবে। স্বল্পস্থায়ী ডেটা বা ইতিমধ্যেই আধুনিকীকরণ করা অবকাঠামোসম্পন্ন সম্পদগুলোকে প্রোগ্রামের পরবর্তীধাপের জন্য রাখা যেতে পারে।
 
-This is the phase where the board's risk appetite is most visible. The Q value the institution chooses to plan against is, in effect, a strategic bet on the rate of quantum hardware progress. A conservative Q (mid-2030s) produces a more aggressive migration plan and a higher near-term capital line. An optimistic Q (post-2040) produces a more relaxed plan and a higher residual exposure to data already being harvested. Neither is wrong; both should be explicit decisions of the board, not implicit defaults of the technology function.
+এটি এমন একটি পর্যায় যেখানে বোর্ডের ঝুঁকি নেওয়ার মনোভাব সবচেয়ে বেশি দৃশ্যমান হয়। প্রতিষ্ঠানটি যে Q মানের ওপর ভিত্তি করে পরিকল্পনা করতে পছন্দ করে তা মূলত কোয়ান্টাম হার্ডওয়্যারের অগ্রগতির হারের ওপর একটি কৌশলগত বাজি। একটি রক্ষণশীল Q (২০৩০-এর দশকের মাঝামাঝি) আরও আক্রমণাত্মক মাইগ্রেশন পরিকল্পনা এবং নিকটবর্তী সময়ে উচ্চ মূলধন ব্যয়ের দিকে পরিচালিত করে। আর একটি আশাবাদী Q (২০৪০-এর দশক পরবর্তী) তুলনামূলক শিথিল পরিকল্পনা এবং ইতিমধ্যেই সংগৃহীত ডেটার জন্য উচ্চতর অবশিষ্ট ঝুঁকির সৃষ্টি করে। কোনোটিই ভুল নয়; উভয়ই বোর্ডের সুস্পষ্ট সিদ্ধান্ত হওয়া উচিত, প্রযুক্তি বিভাগের পরোক্ষ সিদ্ধান্ত নয়।
 
-### Phase 3 — Hybrid Deployment
+### ধাপ ৩ — হাইব্রিড ডেপ্লয়মেন্ট
 
-Once priority assets are identified, deployment should follow the hybrid pattern proven in Project Leap and endorsed by NCSC, ANSSI, BSI, and the G7 roadmap. A hybrid deployment runs a classical algorithm and a post-quantum algorithm in parallel, combining their outputs into a single envelope. The composite is secure against both classical attacks (the classical algorithm holds today) and quantum attacks (the PQC algorithm holds tomorrow). Specifically, the common pattern is X25519 combined with ML-KEM-768 or ML-KEM-1024 for key encapsulation, and ECDSA combined with ML-DSA for signatures where dual signatures are operationally feasible.
+একবার অগ্রাধিকারমূলক সম্পদগুলো চিহ্নিত করা হলে, ডেপ্লয়মেন্টটি Project Leap-এ প্রমাণিত এবং NCSC, ANSSI, BSI ও G7 রোডম্যাপ দ্বারা অনুমোদিত হাইব্রিড প্যাটার্ন অনুসরণ করা উচিত। একটি হাইব্রিড ডেপ্লয়মেন্ট সমান্তরালভাবে একটি ক্লাসিক্যাল অ্যালগরিদম এবং একটি পোস্ট-কোয়ান্টাম অ্যালগরিদম চালায়, যা তাদের আউটপুটগুলোকে একটি একক খামে একত্রিত করে। এই সমন্বয়টি ক্লাসিক্যাল আক্রমণ (আজকের ক্লাসিক্যাল অ্যালগরিদম সুরক্ষিত রাখে) এবং কোয়ান্টাম আক্রমণ (আগামীকাল PQC অ্যালগরিদম সুরক্ষিত রাখবে) উভয়ের বিরুদ্ধে নিরাপদ। বিশেষ করে, সাধারণ প্যাটার্নটি হল কী এনক্যাপসুলেশনের জন্য ML-KEM-768 বা ML-KEM-1024-এর সাথে X25519-এর সংমিশ্রণ, এবং যেখানে ডুয়াল স্বাক্ষর অপারেশনালি সম্ভব সেখানে স্বাক্ষরের জন্য ML-DSA-এর সাথে ECDSA-এর সংমিশ্রণ।
 
-The Project Leap finding that hybrid is "much, much heavier" than either pure approach is the honest counterweight to this recommendation. Boards should expect compute and storage capacity uplift, longer handshakes, and additional certificate-chain complexity during the transition. The trade-off is that hybrid removes the single largest source of migration risk: the cliff-edge cut-over from one cryptographic foundation to another in a production environment.
+Project Leap-এর এই অনুসন্ধান যে হাইব্রিড যেকোনো পিওর পদ্ধতির চেয়ে "অনেক অনেক বেশি ভারী", তা এই সুপারিশের একটি বাস্তবসম্মত দিক উন্মোচন করে। রূপান্তরকালীন সময়ে বোর্ডগুলোর কম্পিউট এবং স্টোরেজ ক্ষমতা বৃদ্ধি, দীর্ঘতর হ্যান্ডশেক এবং অতিরিক্ত সার্টিফিকেট-চেইন জটিলতা আশা করা উচিত। এর সুবিধাটি হল যে হাইব্রিড মাইগ্রেশন ঝুঁকির একক বৃহত্তম উৎসকে দূর করে: একটি প্রোডাকশন এনভায়রনমেন্টে একটি ক্রিপ্টোগ্রাফিক ভিত্তি থেকে অন্যটিতে আকস্মিক রূপান্তর।
 
-## What This Costs and Why Doing Nothing Costs More
+## এর ব্যয় কত এবং কেন কিছু না করার ব্যয় আরও অনেক বেশি
 
-Mastercard's analysis, [reported in early 2026 ⧉](https://www.qnulabs.com/blog/bank-2030-expiry-date-q-day-fatal-strategy "Your Bank's 2030 Expiry — QNu Labs"), put global financial-sector PQC migration cost at $28–42 billion. Within that aggregate, the [RedCompass Labs and CMORG research ⧉](https://www.cmorg.org.uk/sites/default/files/2025-06/CMORG%20-%20Guidance%20for%20Post-Quantum%20Cryptography%20-%20April%202025%20-%20TLP%20CLEAR%20(1).pdf "CMORG Guidance for Post-Quantum Cryptography") tracking actual institutional spend suggests tier-one banks are committing $20–30 million annually to readiness programmes, with implementation timelines spanning multiple leadership cycles. These are substantial numbers. They are not, however, the relevant comparison.
+মাস্টারকার্ডের বিশ্লেষণ অনুযায়ী, যা [২০২৬ সালের শুরুতে রিপোর্ট করা হয়েছিল ⧉](https://www.qnulabs.com/blog/bank-2030-expiry-date-q-day-fatal-strategy "আপনার ব্যাংকের ২০৩০ সালের মেয়াদ শেষ — QNu Labs"), বৈশ্বিক আর্থিক খাতে PQC মাইগ্রেশনের ব্যয় ধরা হয়েছে ২৮-৪২ বিলিয়ন ডলার। সেই সামগ্রিক ব্যয়ের মধ্যে, [RedCompass Labs এবং CMORG-এর গবেষণা ⧉](https://www.cmorg.org.uk/sites/default/files/2025-06/CMORG%20-%20Guidance%20for%20Post-Quantum%20Cryptography%20-%20April%202025%20-%20TLP%20CLEAR%20(1).pdf "পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফির জন্য CMORG নির্দেশিকা") যা প্রকৃত প্রাতিষ্ঠানিক ব্যয় ট্র্যাক করে, তা দেখায় যে টিয়ার-ওয়ান ব্যাংকগুলো প্রস্তুতি কর্মসূচির জন্য বার্ষিক ২০-৩০ মিলিয়ন ডলার বরাদ্দ করছে, যার বাস্তবায়নের সময়সীমা একাধিক নেতৃত্বের চক্র পর্যন্ত বিস্তৃত। এগুলো উল্লেখযোগ্য বড় সংখ্যা। তবে এগুলো প্রাসঙ্গিক তুলনামূলক চিত্র নয়।
 
-The relevant comparison is the cost of a single retrospective decryption event. For an institution whose harvested wire traffic, M&A correspondence, or counterparty exposure data becomes readable to an adversary in 2032, the operational and reputational cost is not bounded by the migration capex line. It is bounded by the value of the underlying decade of strategic information — which, for any systemically important institution, is materially larger than any plausible migration budget. The G7 framing of cryptographic transition as a systemic risk-management issue rather than a technology upgrade is correct, and boards should engage with it on that basis.
+প্রাসঙ্গিক তুলনাটি হল একটি একক পূর্ববর্তী ডিক্রিপশন ঘটনার ব্যয়। একটি প্রতিষ্ঠানের জন্য যার সংগৃহীত ওয়্যার ট্রাফিক, এমঅ্যান্ডএ (M&A) পত্রালাপ বা কাউন্টারপার্টি এক্সপোজার ডেটা ২০৩২ সালে আক্রমণকারীর কাছে পাঠযোগ্য হয়ে ওঠে, তার অপারেশনাল এবং সম্মানহানির খরচ কেবল মাইগ্রেশন মূলধনী ব্যয়ের সীমার মধ্যে সীমাবদ্ধ থাকবে না। এটি সুরক্ষিত দশকের কৌশলগত তথ্যের মূল্যের দ্বারা সীমাবদ্ধ — যা যেকোনো পদ্ধতিগতভাবে গুরুত্বপূর্ণ প্রতিষ্ঠানের ক্ষেত্রে সম্ভাব্য মাইগ্রেশন বাজেটের চেয়ে অনেক গুণ বেশি। প্রযুক্তি আপগ্রেডের পরিবর্তে ক্রিপ্টোগ্রাফিক রূপান্তরকে একটি পদ্ধতিগত ঝুঁকি-ব্যবস্থাপনার সমস্যা হিসেবে G7-এর উপস্থাপন করাটি সঠিক এবং বোর্ডের উচিত সেই ভিত্তিতেই এটিকে মূল্যায়ন করা।
 
-There is a second cost line worth separating. Migration to PQC is a forcing function for crypto-agility — the architectural capability to swap cryptographic algorithms without rebuilding the systems that depend on them. Most institutions do not currently have crypto-agility; their RSA and ECC dependencies are deeply embedded in PKIs, code-signing chains, vendor integrations, and bespoke protocols that have accumulated over decades. The investment in agility, made under the pressure of the PQC transition, is durable. It will be drawn upon again when the next cryptographic transition arrives — whether that is a successor to lattice-based PQC, a quantum-key-distribution overlay, or something not yet on the standards roadmap. Treated correctly, the PQC migration capex is a one-time investment that yields recurring optionality.
+এখানে দ্বিতীয় একটি খরচের দিক রয়েছে যা আলাদা করার মতো। PQC-তে মাইগ্রেশন ক্রিপ্টো-চটপটের (crypto-agility) জন্য একটি চালিকা শক্তি হিসেবে কাজ করে — যা তার ওপর নির্ভরশীল সিস্টেমগুলোকে পুনর্গঠন না করেই ক্রিপ্টোগ্রাফিক অ্যালগরিদমগুলোকে পরিবর্তন করার স্থাপত্যগত সক্ষমতা প্রদান করে। বেশিরভাগ প্রতিষ্ঠানের বর্তমানে কোনো ক্রিপ্টো-চটপটতা নেই; তাদের RSA এবং ECC নির্ভরতাগুলো দশকের পর দশক ধরে গড়ে ওঠা PKI, কোড-সাইনিং চেইন, ভেন্ডর ইন্টিগ্রেশন এবং বিশেষায়িত প্রোটোকলগুলোর গভীরে প্রোথিত। PQC স্থানান্তরের চাপে তৈরি এই চটপটতার বিনিয়োগ অত্যন্ত দীর্ঘস্থায়ী। পরবর্তী ক্রিপ্টোগ্রাফিক রূপান্তর আসার সাথে সাথে এটি আবার কাজে লাগবে — তা ল্যাটিস-ভিত্তিক PQC-এর উত্তরসূরি হোক, কোয়ান্টাম-কী-ডিস্ট্রিবিউশন ওভারলে হোক বা এমন কিছু যা এখনও স্ট্যান্ডার্ড রোডম্যাপে স্থান পায়নি। সঠিকভাবে পরিচালিত হলে, PQC মাইগ্রেশন মূলধনী ব্যয় হল একটি এককালীন বিনিয়োগ যা বারবার সুবিধা প্রদান করে।
 
-## Conclusion
+## উপসংহার
 
-The case for treating post-quantum migration as a 2026 board-level priority is not built on the imminence of a CRQC. Estimates of that remain genuinely uncertain — credible scholarly opinion places the probability of a CRQC by 2028 at well under one per cent, rising to roughly fifty per cent by 2037–2040. The case is built on three other observations that are not uncertain.
+পোস্ট-কোয়ান্টাম মাইগ্রেশনকে ২০২৬ সালের বোর্ড-স্তরের অগ্রাধিকার হিসেবে বিবেচনা করার কারণটি কেবল একটি CRQC-এর আসন্নতার ওপর ভিত্তি করে গড়ে ওঠেনি। এ সম্পর্কিত অনুমানগুলো এখনও অনিশ্চিত — নির্ভরযোগ্য পণ্ডিত মহলের মতে ২০২৮ সালের মধ্যে একটি CRQC তৈরির সম্ভাবনা ১%-এরও কম, যা ২০৩৭-২০৪০ সালের মধ্যে প্রায় ৫০%-এ পৌঁছাতে পারে। তবে অন্য তিনটি পর্যবেক্ষণের ওপর ভিত্তি করে এই গুরুত্ব নিশ্চিত করা হয়েছে যা মোটেই অনিশ্চিত নয়।
 
-First, harvest-now-decrypt-later is happening today, and data with a decade-plus confidentiality requirement is exposed regardless of when the CRQC arrives. Second, migration of a major financial institution's cryptographic estate takes five to seven years even with adequate funding and leadership focus — meaning the programme begun in 2026 finishes around 2031, which is well within the conservative end of the CRQC probability distribution. Third, regulatory expectations have hardened materially in the last twelve months, and the institutions whose 2026 board minutes record a clear PQC programme will be in a meaningfully stronger position than those whose minutes record a watching brief.
+প্রথমত, এখনই সংগ্রহ করুন, পরে ডিক্রিপ্ট করুন (harvest-now-decrypt-later) আজই ঘটছে, এবং এক দশকের বেশি গোপনীয়তার প্রয়োজনীয়তা রয়েছে এমন ডেটা CRQC কখন আসবে তা নির্বিশেষেই উন্মুক্ত রয়েছে। দ্বিতীয়ত, পর্যাপ্ত অর্থায়ন এবং নেতৃত্বের মনোযোগ থাকা সত্ত্বেও একটি বড় আর্থিক প্রতিষ্ঠানের ক্রিপ্টোগ্রাফিক সম্পদ মাইগ্রেট করতে পাঁচ থেকে সাত বছর সময় নেয় — যার অর্থ ২০২৬ সালে শুরু হওয়া একটি প্রোগ্রাম ২০৩১ সালের দিকে শেষ হবে, যা CRQC-এর সম্ভাবনার রক্ষণশীল সীমার মধ্যেই পড়ে। তৃতীয়ত, গত বারো মাসে নিয়ন্ত্রক প্রত্যাশাগুলো কঠোর হয়েছে, এবং যেসব প্রতিষ্ঠানের ২০২৬ সালের বোর্ডের কার্যবিবরণীতে একটি স্পষ্ট PQC কর্মসূচির উল্লেখ থাকবে, তারা কেবল পর্যবেক্ষণ নীতি গ্রহণকারী প্রতিষ্ঠানগুলোর চেয়ে অনেক বেশি সুবিধাজনক অবস্থানে থাকবে।
 
-The institutions that begin now have the advantage of choice. They can sequence the work across leadership cycles, integrate it with broader resilience initiatives, and absorb the operational costs of hybrid deployment within normal capital planning. The institutions that wait will face the same work under tighter deadlines, with less scope for sequencing, and against the backdrop of supply constraints on PQC-capable hardware, expertise, and vendor capacity. The cost of acting early is known; the cost of acting late is asymmetric in precisely the way risk management is designed to avoid.
+যেসব প্রতিষ্ঠান এখন শুরু করবে তারা পছন্দের সুবিধা পাবে। তারা নেতৃত্বের চক্র জুড়ে কাজের ক্রম নির্ধারণ করতে পারবে, এটিকে আরও বিস্তৃত স্থিতিস্থাপকতা উদ্যোগের সাথে সংহত করতে পারবে এবং সাধারণ মূলধন পরিকল্পনার মধ্যে হাইব্রিড ডেপ্লয়মেন্টের অপারেশনাল খরচগুলোকে সামঞ্জস্য করতে পারবে। যেসব প্রতিষ্ঠান অপেক্ষা করবে তারা কঠোর সময়সীমার মধ্যে একই কাজের মুখোমুখি হবে, যেখানে কাজের ক্রম নির্ধারণের সুযোগ কম থাকবে এবং PQC-সক্ষম হার্ডওয়্যার, দক্ষতা ও ভেন্ডর ক্ষমতার সরবরাহ সীমাবদ্ধতার মুখোমুখি হতে হবে। দ্রুত পদক্ষেপ নেওয়ার ব্যয় জানা থাকে; কিন্তু দেরিতে পদক্ষেপ নেওয়ার ক্ষতি এতটাই অসমমিতিক যা মূলত ঝুঁকি ব্যবস্থাপনা এড়ানোর জন্যই ডিজাইন করা হয়েছে।
 
-For prior context on this site, the [April 2026 piece on quantum threshold compression](https://sebastienrousseau.com/2026-04-11-quantum-thresholds-are-moving-again/index.html "Quantum Thresholds Are Moving Again") examined the underlying hardware trajectory, the [November 2023 analysis of CRYSTALS-Kyber](https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html "CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age") covered the mathematical foundations now standardised as ML-KEM, the [December 2023 article on Quantum Key Distribution](https://sebastienrousseau.com/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html "Quantum Key Distribution Revolutionising Security in Banking") addressed the complementary [QKD](/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html) overlay, and the [KyberLib open-source reference implementation](https://sebastienrousseau.com/2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats/index.html "KyberLib: A Rust-Powered Shield Against Quantum Threats") provides a working Rust implementation of the underlying primitives for institutions wanting to inspect the cryptographic surface directly. Engagement with the practical and technical detail — not just the regulatory headlines — is how boards distinguish credible migration programmes from compliance theatre.
+এই সাইটের পূর্ববর্তী প্রেক্ষাপটের জন্য, [কোয়ান্টাম থ্রেশহোল্ড কম্প্রেশনের ওপর এপ্রিল ২০২৬-এর নিবন্ধটি](https://sebastienrousseau.com/2026-04-11-quantum-thresholds-are-moving-again/index.html "কোয়ান্টাম থ্রেশহোল্ডগুলো আবার পরিবর্তিত হচ্ছে") এর অন্তর্নিহিত হার্ডওয়্যার গতিপথ পরীক্ষা করেছিল, [CRYSTALS-Kyber-এর ওপর নভেম্বর ২০২৩-এর বিশ্লেষণটি](https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html "CRYSTALS-Kyber: কোয়ান্টাম যুগে সুরক্ষাকারী অ্যালগরিদম") বর্তমানে ML-KEM হিসেবে মানসম্মত গাণিতিক ভিত্তিগুলো কভার করেছিল, [কোয়ান্টাম কী ডিস্ট্রিবিউশনের ওপর ডিসেম্বর ২০২৩-এর নিবন্ধটি](https://sebastienrousseau.com/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html "কোয়ান্টাম কী ডিস্ট্রিবিউশন ব্যাংকিংয়ে নিরাপত্তার বিপ্লব ঘটাচ্ছে") পরিপূরক [QKD](/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html) ওভারলের কথা বলেছিল, এবং [KyberLib ওপেন-সোর্স রেফারেন্স ইমপ্লিমেন্টেশনটি](https://sebastienrousseau.com/2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats/index.html "KyberLib: কোয়ান্টাম হুমকির বিরুদ্ধে একটি রাস্ট-চালিত ঢাল") সরাসরি ক্রিপ্টোগ্রাফিক সারফেসটি পরিদর্শন করতে চাওয়া প্রতিষ্ঠানগুলোর জন্য অন্তর্নিহিত প্রিমিতিভগুলোর একটি কার্যকরী Rust সংস্করণ প্রদান করে। কেবল নিয়ন্ত্রক শিরোনাম নয় — ব্যবহারিক এবং প্রযুক্তিগত বিষদ বিবরণের সাথে সম্পৃক্ততা কীভাবে বোর্ডগুলোকে নিছক নিয়মতান্ত্রিক আনুষ্ঠানিকতার থেকে নির্ভরযোগ্য মাইগ্রেশন প্রোগ্রামকে আলাদা করতে সাহায্য করে।
 
-## Frequently Asked Questions
+## সচরাচর জিজ্ঞাস্য প্রশ্নাবলী
 
-**When will a cryptographically relevant quantum computer actually exist?**
+**একটি ক্রিপ্টোগ্রাফিকভাবে প্রাসঙ্গিক কোয়ান্টাম কম্পিউটার (CRQC) প্রকৃতপক্ষে কবে তৈরি হবে?**
 
-Credible estimates vary widely. As of early 2026, public quantum demonstrations have achieved roughly 24 to 28 logical qubits, while a CRQC is estimated to require approximately 6,000 logical qubits underpinned by something between 100,000 and several million physical qubits, depending on the error-correction approach. Expert consensus places CRQC probability under one per cent by 2028, around fifty per cent by 2037–2040, with significant variability across forecasts. Recent reductions in theoretical resource estimates — from 20 million qubits a few years ago to under one million in Gidney's 2025 work, and to approximately 100,000 in the February 2026 QLDPC architecture paper — have compressed the planning horizon. For board purposes, the appropriate planning assumption is mid-2030s for high-risk systems, end-2030s as a conservative midpoint, and earlier if HNDL exposure is the binding concern.
+নির্ভরযোগ্য অনুমানগুলো ব্যাপকভাবে ভিন্ন হয়। ২০২৬ সালের শুরুর দিকে প্রাপ্ত তথ্য অনুযায়ী, পাবলিক কোয়ান্টাম প্রদর্শনীগুলো প্রায় ২৪ থেকে ২৮টি লজিক্যাল কিউবিট অর্জন করেছে, যেখানে একটি CRQC তৈরির জন্য ত্রুটি-সংশোধন পদ্ধতির ওপর নির্ভর করে আনুমানিক ১০০,০০০ থেকে কয়েক মিলিয়ন ফিজিক্যাল কিউবিট দ্বারা সমর্থিত প্রায় ৬,০০০ লজিক্যাল কিউবিটের প্রয়োজন হবে বলে অনুমান করা হচ্ছে। বিশেষজ্ঞ মহলের মতে ২০২৮ সালের মধ্যে CRQC-এর সম্ভাবনা ১%-এর নিচে, এবং ২০৩৭-২০৪০ সালের মধ্যে প্রায় ৫০%, যার মধ্যে পূর্বাভাসের উল্লেখযোগ্য বৈচিত্র্য রয়েছে। তাত্ত্বিক রিসোর্স অনুমানের সাম্প্রতিক হ্রাস — যা কয়েক বছর আগের ২০ মিলিয়ন কিউবিট থেকে কমিয়ে গিদনির ২০২৫ সালের কাজে এক মিলিয়নের নিচে এবং ২০২৬ সালের ফেব্রুয়ারির QLDPC আর্কিটেকচার পেপারে আনুমানিক ১০০,০০০-এ নেমে এসেছে — পরিকল্পনার সময়সীমাকে সংকুচিত করেছে। বোর্ডের জন্য উপযুক্ত পরিকল্পনার ধারণা হল উচ্চ-ঝুঁকিপূর্ণ সিস্টেমের জন্য ২০৩০-এর দশকের মাঝামাঝি, রক্ষণশীল মধ্যবিন্দু হিসেবে ২০৩০-এর দশকের শেষ এবং HNDL-এর ঝুঁকি বেশি থাকলে আরও আগে।
 
-**Why hybrid deployment rather than pure post-quantum?**
+**পিওর পোস্ট-কোয়ান্টামের পরিবর্তে কেন হাইব্রিড ডেপ্লয়মেন্ট ব্যবহার করা উচিত?**
 
-Three reasons. First, ML-KEM and ML-DSA, while well-vetted, have shorter cryptanalytic histories than RSA and ECC. A hybrid scheme remains secure if either component holds; a pure PQC scheme is exposed if the lattice problem is unexpectedly weakened. Second, hybrid preserves backward compatibility with counterparties that have not yet migrated — critical in a multi-year industry transition. Third, every major authority outside the Australian Signals Directorate explicitly recommends hybrid for the transition period: NCSC, ANSSI, BSI, NLNCSA, and the G7 framework all endorse the dual-envelope approach. The trade-off, as Project Leap quantified, is meaningfully higher compute and storage overhead. That is the price of optionality.
+তিনটি কারণ রয়েছে। প্রথমত, ML-KEM এবং ML-DSA ভালোভাবে পরীক্ষিত হলেও RSA এবং ECC-এর তুলনায় এদের ক্রিপ্টঅ্যানালিটিক্যাল ইতিহাস সংক্ষিপ্ত। যেকোনো একটি উপাদান কার্যকর থাকলে একটি হাইব্রিড স্কিম নিরাপদ থাকে; কিন্তু ল্যাটিস সমস্যাটি অপ্রত্যাশিতভাবে দুর্বল হয়ে পড়লে একটি পিওর PQC স্কিম ঝুঁকিতে পড়ে। দ্বিতীয়ত, হাইব্রিড এমন কাউন্টারপার্টিগুলোর সাথে ব্যাকওয়ার্ড সামঞ্জস্য রক্ষা করে যারা এখনও মাইগ্রেট করেনি — যা বাৎসরিক শিল্পের এই রূপান্তরকালের জন্য অত্যন্ত গুরুত্বপূর্ণ। তৃতীয়ত, অস্ট্রেলিয়ান সিগন্যাল ডিরেক্টরেটের বাইরে প্রতিটি প্রধান কর্তৃপক্ষ রূপান্তরকালীন সময়ের জন্য স্পষ্টভাবে হাইব্রিড ব্যবহারের সুপারিশ করে: NCSC, ANSSI, BSI, NLNCSA এবং G7 কাঠামো সবাই ডুয়াল-এনভেলপ পদ্ধতি সমর্থন করে। Project Leap যেভাবে পরিমাপ করেছে, এর একমাত্র সীমাবদ্ধতা হলো কম্পিউট এবং স্টোরেজের উচ্চতর ওভারহেড। এটিই হলো পছন্দের স্বাধীনতা অর্জনের মূল্য।
 
-**Do we need both ML-KEM and ML-DSA, or can we choose one?**
+**আমাদের কি ML-KEM এবং ML-DSA উভয়েরই প্রয়োজন, নাকি আমরা যেকোনো একটি বেছে নিতে পারি?**
 
-Both. ML-KEM and ML-DSA serve different cryptographic roles. ML-KEM replaces the key-establishment primitives in TLS, VPNs, mobile authentication, and similar protocols where two parties need to agree a shared symmetric key. ML-DSA replaces the digital-signature primitives in PKI certificates, code signing, document signing, SWIFT-style authenticated messaging, and identity assertions. An institution's cryptographic estate uses both kinds of primitive in different places; the migration must address both. ML-DSA's significantly larger signature size (50–70× ECDSA) is usually the more operationally demanding of the two; the network and storage planning work for ML-DSA dominates most migration capacity assessments.
+উভয়ই প্রয়োজন। ML-KEM এবং ML-DSA ভিন্ন ভিন্ন ক্রিপ্টোগ্রাফিক ভূমিকা পালন করে। ML-KEM এমন প্রোটোকলগুলোতে (যেমন TLS, VPN, মোবাইল প্রমাণীকরণ) কী-প্রতিষ্ঠার প্রিমিতিভগুলোকে প্রতিস্থাপন করে যেখানে দুটি পক্ষকে একটি সাধারণ সিমেট্রিক কী-তে সম্মত হতে হয়। ML-DSA ডিজিটাল-স্বাক্ষর প্রিমিতিভগুলোকে প্রতিস্থাপন করে PKI সার্টিফিকেট, কোড সাইনিং, নথি সাইনিং, SWIFT-শৈলীর প্রমাণীকৃত বার্তা পাঠানো এবং পরিচয় নিশ্চিতকরণে। একটি প্রতিষ্ঠানের ক্রিপ্টোগ্রাফিক সম্পদে ভিন্ন ভিন্ন স্থানে উভয় ধরণের প্রিমিতিভই ব্যবহৃত হয়; তাই মাইগ্রেশন উভয়কেই অন্তর্ভুক্ত করতে হবে। ML-DSA-এর উল্লেখযোগ্যভাবে বড় স্বাক্ষর আকার (ECDSA-এর চেয়ে ৫০-৭০ গুণ বেশি) সাধারণত কার্যক্রমগতভাবে বেশি চ্যালেঞ্জিং; তাই ML-DSA-এর জন্য নেটওয়ার্ক এবং স্টোরেজ পরিকল্পনার কাজই বেশিরভাগ মাইগ্রেশন সক্ষমতা মূল্যায়নে প্রধান ভূমিকা রাখে।
 
-**How do we measure progress on a programme this large?**
+**এত বড় একটি প্রোগ্রামের অগ্রগতি আমরা কীভাবে পরিমাপ করব?**
 
-Three metrics are practical and align with the major regulatory frameworks. **Coverage of the CBOM** — what percentage of the institution's asymmetric cryptographic instances have been inventoried, classified, and tagged for migration priority. **Migration coverage of high-risk assets** — what percentage of assets where Mosca's S + M > Q condition holds have been moved to hybrid PQC. **Crypto-agility coverage** — what percentage of cryptographic-dependency systems can swap algorithms without code changes, configuration-only. The G7 CEG roadmap, the NCSC three-phase framework, and the EU coordinated roadmap all map to roughly these three measures, even where they use different terminology.
+তিনটি ব্যবহারিক পরিমাপ রয়েছে যা প্রধান প্রধান নিয়ন্ত্রক কাঠামোর সাথে সামঞ্জস্যপূর্ণ। **CBOM-এর কভারেজ** — প্রতিষ্ঠানের অ্যাসিমেট্রিক ক্রিপ্টোগ্রাফিক ইনস্ট্যান্সের কত শতাংশ ইনভেন্টরি করা হয়েছে, শ্রেণিবদ্ধ করা হয়েছে এবং মাইগ্রেশনের অগ্রাধিকারে ট্যাগ করা হয়েছে। **উচ্চ ঝুঁকিপূর্ণ সম্পদের মাইগ্রেশন কভারেজ** — যেসব সম্পদের ক্ষেত্রে মসকা-এর S + M > Q শর্তটি প্রযোজ্য সেগুলোর কত শতাংশ হাইব্রিড PQC-তে স্থানান্তরিত করা হয়েছে। **ক্রিপ্টো-চটপতের (Crypto-agility) কভারেজ** — কত শতাংশ ক্রিপ্টোগ্রাফিক-নির্ভরশীল সিস্টেম কোড পরিবর্তন ছাড়াই কেবল কনফিগারেশনের মাধ্যমে অ্যালগরিদম পরিবর্তন করতে সক্ষম। G7 CEG রোডম্যাপ, NCSC-এর তিন-ধাপের কাঠামো এবং ইইউ (EU)-এর সমন্বিত রোডম্যাপ সবই মূলত এই তিনটি পরিমাপের ওপর ভিত্তি করে কাজ করে, যদিও তারা ভিন্ন পরিভাষা ব্যবহার করতে পারে।
 
-**What is the cost of waiting another year?**
+**আরও এক বছর অপেক্ষা করার ব্যয় বা ক্ষতি কী?**
 
-It is not zero, and it is not symmetric. Waiting one year forfeits a year of HNDL protection on long-lived data — data whose confidentiality requirement extends to 2040 is exposed for a year longer than necessary. It compresses the migration window against fixed regulatory deadlines (ASD 2030, NSA CNSA 2.0 milestones, EU 2030 critical-systems target), which translates into higher delivery risk and reduced sequencing flexibility. It exposes the institution to vendor and talent supply constraints that are already visible in the market and will worsen as the industry's largest players move from planning to execution. The cost is not catastrophic in any single year, but it compounds, and the regulatory environment is converging on a position where boards will be expected to explain the delay rather than the spend.
+এটি শূন্য নয়, এবং এটি অসমমিতিকও নয়। এক বছর অপেক্ষা করার অর্থ দীর্ঘস্থায়ী ডেটার ওপর এক বছরের HNDL সুরক্ষা হারানো — যার গোপনীয়তার প্রয়োজনীয়তা ২০৪০ সাল পর্যন্ত রয়েছে, এমন ডেটা প্রয়োজনের চেয়ে এক বছর বেশি সময় ধরে অরক্ষিত থাকে। এটি নির্দিষ্ট নিয়ন্ত্রক সময়সীমাগুলোর (ASD ২০৩০, NSA CNSA 2.0 মাইলফলক, ইইউ ২০৩০ এর গুরুত্বপূর্ণ সিস্টেমের লক্ষ্য) বিপরীতে মাইগ্রেশনের সময়কে সংকুচিত করে, যা বাস্তবায়নের ঝুঁকি বাড়ায় এবং কাজের ধারাবাহিকতা রক্ষার নমনীয়তা হ্রাস করে। এটি প্রতিষ্ঠানটিকে ভেন্ডর এবং প্রতিভাবান জনবলের সরবরাহের সীমাবদ্ধতার মুখোমুখি করে যা ইতিমধ্যেই বাজারে দৃশ্যমান এবং শিল্পের সবচেয়ে বড় প্রতিষ্ঠানগুলো পরিকল্পনা থেকে বাস্তবায়নে যাওয়ার সাথে সাথে আরও খারাপ হবে। যেকোনো একটি নির্দিষ্ট বছরে খরচটি চরম বিপর্যয়কর মনে নাও হতে পারে, তবে এটি ক্রমাগত বৃদ্ধি পায় এবং নিয়ন্ত্রক পরিবেশ এমন একটি অবস্থানে চলে যাচ্ছে যেখানে বোর্ডগুলোর কাছ থেকে ব্যয়ের চেয়ে বিলম্বের কারণ ব্যাখ্যা করার প্রত্যাশা করা হবে।
 
-## References
+## তথ্যসূত্র
 
-- Sebastien Rousseau, (2026). [Quantum Thresholds Are Moving Again](https://sebastienrousseau.com/2026-04-11-quantum-thresholds-are-moving-again/index.html "Quantum Thresholds Are Moving Again").
-- Sebastien Rousseau, (2023). [CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age](https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html "CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age").
-- Sebastien Rousseau, (2023). [Quantum Key Distribution Revolutionising Security in Banking](https://sebastienrousseau.com/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html "Quantum Key Distribution Revolutionising Security in Banking").
-- Sebastien Rousseau, (2023). [KyberLib: A Rust-Powered Shield Against Quantum Threats](https://sebastienrousseau.com/2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats/index.html "KyberLib: A Rust-Powered Shield Against Quantum Threats").
-- G7 Cyber Expert Group, (2026). [Advancing a Coordinated Roadmap for the Transition to Post-Quantum Cryptography in the Financial Sector ⧉](https://www.gov.uk/government/publications/advancing-a-coordinated-roadmap-for-the-transition-to-post-quantum-cryptography-in-the-financial-sector/g7-cyber-expert-group-statement-on-advancing-a-coordinated-roadmap-for-the-transition-to-post-quantum-cryptography-in-the-financial-sector-january-20 "G7 CEG Statement, January 2026"). GOV.UK.
-- Bank for International Settlements, (2025). [Project Leap Phase 2: Quantum-Proofing Payment Systems ⧉](https://www.bis.org/publ/othp107.htm "Project Leap phase 2: quantum-proofing payment systems"). BIS.
-- Bank for International Settlements, (2025). [Project Leap: Quantum-Proofing the Financial System ⧉](https://www.bis.org/about/bisih/topics/cyber_security/leap.htm "Project Leap: quantum-proofing the financial system"). BIS.
-- NIST, (2024). [FIPS 203: Module-Lattice-Based Key-Encapsulation Mechanism Standard ⧉](https://csrc.nist.gov/pubs/fips/203/final "FIPS 203, Module-Lattice-Based Key-Encapsulation Mechanism Standard"). NIST.
-- UK NCSC, (2025). [Timelines for Migration to Post-Quantum Cryptography ⧉](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines "Timelines for migration to post-quantum cryptography — NCSC"). UK National Cyber Security Centre.
-- CMORG, (2025). [Guidance for Post-Quantum Cryptography ⧉](https://www.cmorg.org.uk/sites/default/files/2025-06/CMORG%20-%20Guidance%20for%20Post-Quantum%20Cryptography%20-%20April%202025%20-%20TLP%20CLEAR%20(1).pdf "CMORG Guidance for Post-Quantum Cryptography"). Cross-Market Operational Resilience Group.
-- Post-Quantum Cryptography Coalition, (2025). [International PQC Requirements ⧉](https://pqcc.org/international-pqc-requirements/ "International PQC Requirements — Post-Quantum Cryptography Coalition"). PQCC.
-- PQShield, (2025). [PQC Roadmaps and Transition Guidance ⧉](https://pqshield.com/pqc-transition-roadmaps-and-guidance/ "PQC Roadmaps and Transition Guidance"). PQShield.
-- Banking.Vision, (2026). [The Year of Quantum Computing: 2026 ⧉](https://banking.vision/en/the-year-of-quantum-computing/ "The Year of Quantum Computing 2026"). Banking.Vision / msg for banking.
-- The Quantum Insider, (2026). [How to Prep For Post-Quantum Cryptography: G7 Releases Roadmap ⧉](https://thequantuminsider.com/2026/01/15/how-to-prep-for-post-quantum-crytography-g7-releases-roadmap-to-help-financial-sector-navigate-transition-to-quantum-era/ "How to Prep For Post-Quantum Cryptography — The Quantum Insider"). The Quantum Insider.
-- Quantum Computing Report, (2026). [Shor, QLDPC Codes, and the Compression of RSA-2048 Resource Estimates ⧉](https://quantumcomputingreport.com/shor-qldpc-codes-and-the-compression-of-rsa-2048-resource-estimates-part-i/ "Shor, QLDPC Codes, and the Compression of RSA-2048 Resource Estimates"). Quantum Computing Report.
-- Cryptomathic, (2025). [A Banker's Guide to Quantum Safe Cryptography — Roadmap to PQC Migration for Financial Institutions ⧉](https://www.cryptomathic.com/a-bankers-guide-to-quantum-safe-cryptography-part-3-roadmap-to-pqc-migration-for-financial-institutions-cryptomathic "A Banker's Guide to Quantum Safe Cryptography"). Cryptomathic.
-- Forrester, (2025). [2026 Asia Pacific Predictions: Quantum Security ⧉](https://www.forrester.com/press-newsroom/forrester-apac-2026-predictions/ "Forrester's 2026 APAC Predictions"). Forrester Research.
-- The Asian Banker, (2025). [Building Resilience for a Quantum-Ready Financial System ⧉](https://www.theasianbanker.com/updates-and-articles/building-resilience-for-a-quantum-ready-financial-system "Building resilience for a quantum-ready financial system"). The Asian Banker.
+- Sebastien Rousseau, (2026). [কোয়ান্টাম থ্রেশহোল্ডগুলো আবার পরিবর্তিত হচ্ছে](https://sebastienrousseau.com/2026-04-11-quantum-thresholds-are-moving-again/index.html "কোয়ান্টাম থ্রেশহোল্ডগুলো আবার পরিবর্তিত হচ্ছে")।
+- Sebastien Rousseau, (2023). [CRYSTALS-Kyber: কোয়ান্টাম যুগে সুরক্ষাকারী অ্যালগরিদম](https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html "CRYSTALS-Kyber: কোয়ান্টাম যুগে সুরক্ষাকারী অ্যালগরিদম")।
+- Sebastien Rousseau, (2023). [কোয়ান্টাম কী ডিস্ট্রিবিউশন ব্যাংকিংয়ে নিরাপত্তার বিপ্লব ঘটাচ্ছে](https://sebastienrousseau.com/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html "কোয়ান্টাম কী ডিস্ট্রিবিউশন ব্যাংকিংয়ে নিরাপত্তার বিপ্লব ঘটাচ্ছে")।
+- Sebastien Rousseau, (2023). [KyberLib: কোয়ান্টাম হুমকির বিরুদ্ধে একটি রাস্ট-চালিত ঢাল](https://sebastienrousseau.com/2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats/index.html "KyberLib: কোয়ান্টাম হুমকির বিরুদ্ধে একটি রাস্ট-চালিত ঢাল")।
+- G7 সাইবার এক্সপার্ট গ্রুপ, (২০২৬)। [আর্থিক খাতে পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফিতে রূপান্তরের জন্য একটি সমন্বিত রোডম্যাপকে এগিয়ে নেওয়া ⧉](https://www.gov.uk/government/publications/advancing-a-coordinated-roadmap-for-the-transition-to-post-quantum-cryptography-in-the-financial-sector/g7-cyber-expert-group-statement-on-advancing-a-coordinated-roadmap-for-the-transition-to-post-quantum-cryptography-in-the-financial-sector-january-20 "G7 CEG বিবৃতি, জানুয়ারি ২০২৬")। GOV.UK.
+- ব্যাংক ফর ইন্টারন্যাশনাল সেটেলমেন্টস, (২০২৫)। [Project Leap Phase 2: কোয়ান্টাম-প্রুফিং পেমেন্ট সিস্টেম ⧉](https://www.bis.org/publ/othp107.htm "Project Leap ২য় ধাপ: কোয়ান্টাম-প্রুফিং পেমেন্ট সিস্টেম")। BIS.
+- ব্যাংক ফর ইন্টারন্যাশনাল সেটেলমেন্টস, (২০২৫)। [Project Leap: আর্থিক ব্যবস্থাকে কোয়ান্টাম-প্রুফিং করা ⧉](https://www.bis.org/about/bisih/topics/cyber_security/leap.htm "Project Leap: আর্থিক ব্যবস্থাকে কোয়ান্টাম-প্রুফিং করা")। BIS.
+- NIST, (২০২৪)। [FIPS 203: মডিউল-ল্যাটিস-ভিত্তিক কী-এনক্যাপসুলেশন মেকানিজম স্ট্যান্ডার্ড ⧉](https://csrc.nist.gov/pubs/fips/203/final "FIPS 203, মডিউল-ল্যাটিস-ভিত্তিক কী-এনক্যাপসুলেশন মেকানিজম স্ট্যান্ডার্ড")। NIST.
+- যুক্তরাজ্যের NCSC, (২০২৫)। [পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফিতে মাইগ্রেশনের সময়সীমা ⧉](https://www.ncsc.gov.uk/guidance/pqc-migration-timelines "পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফিতে মাইগ্রেশনের সময়সীমা — NCSC")। যুক্তরাজ্য জাতীয় সাইবার নিরাপত্তা কেন্দ্র.
+- CMORG, (২০২৫)। [পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফির জন্য নির্দেশিকা ⧉](https://www.cmorg.org.uk/sites/default/files/2025-06/CMORG%20-%20Guidance%20for%20Post-Quantum%20Cryptography%20-%20April%202025%20-%20TLP%20CLEAR%20(1).pdf "পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফির জন্য CMORG নির্দেশিকা")। ক্রস-মার্কেট অপারেশনাল রেজিলিয়েন্স গ্রুপ.
+- পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি কোয়ালিশন, (২০২৫)। [আন্তর্জাতিক PQC প্রয়োজনীয়তা ⧉](https://pqcc.org/international-pqc-requirements/ "আন্তর্জাতিক PQC প্রয়োজনীয়তা — পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি কোয়ালিশন")। PQCC.
+- PQShield, (২০২৫)। [PQC রোডম্যাপ এবং রূপান্তর নির্দেশিকা ⧉](https://pqshield.com/pqc-transition-roadmaps-and-guidance/ "PQC রোডম্যাপ এবং রূপান্তর নির্দেশিকা")। PQShield.
+- Banking.Vision, (২০২৬)। [কোয়ান্টাম কম্পিউটিংয়ের বছর: ২০২৬ ⧉](https://banking.vision/en/the-year-of-quantum-computing/ "কোয়ান্টাম কম্পিউটিংয়ের বছর ২০২৬")। Banking.Vision / ব্যাংকিংয়ের জন্য বার্তা.
+- দ্য কোয়ান্টাম ইনসাইডার, (২০২৬)। [পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফির জন্য কীভাবে প্রস্তুতি নেবেন: G7 রোডম্যাপ প্রকাশ করেছে ⧉](https://thequantuminsider.com/2026/01/15/how-to-prep-for-post-quantum-crytography-g7-releases-roadmap-to-help-financial-sector-navigate-transition-to-quantum-era/ "পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফির জন্য কীভাবে প্রস্তুতি নেবেন — দ্য কোয়ান্টাম ইনসাইডার")। দ্য কোয়ান্টাম ইনসাইডার.
+- কোয়ান্টাম কম্পিউটিং রিপোর্ট, (২০২৬)। [শোর, QLDPC কোড এবং RSA-2048 রিসোর্স অনুমানের সংকোচন ⧉](https://quantumcomputingreport.com/shor-qldpc-codes-and-the-compression-of-rsa-2048-resource-estimates-part-i/ "শোর, QLDPC কোড এবং RSA-2048 রিসোর্স অনুমানের সংকোচন")। কোয়ান্টাম কম্পিউটিং রিপোর্ট.
+- Cryptomathic, (২০২৫)। [কোয়ান্টাম নিরাপদ ক্রিপ্টোগ্রাফির জন্য একজন ব্যাংকারের নির্দেশিকা — আর্থিক প্রতিষ্ঠানগুলোর জন্য PQC মাইগ্রেশনের রোডম্যাপ ⧉](https://www.cryptomathic.com/a-bankers-guide-to-quantum-safe-cryptography-part-3-roadmap-to-pqc-migration-for-financial-institutions-cryptomathic "কোয়ান্টাম নিরাপদ ক্রিপ্টোগ্রাফির জন্য একজন ব্যাংকারের নির্দেশিকা")। Cryptomathic.
+- Forrester, (২০২৫)। [২০২৬ এশিয়া প্যাসিফিক পূর্বাভাস: কোয়ান্টাম নিরাপত্তা ⧉](https://www.forrester.com/press-newsroom/forrester-apac-2026-predictions/ "Forrester-এর ২০২৬ সালের APAC পূর্বাভাস")। Forrester Research.
+- দ্য এশিয়ান ব্যাংকার, (২০২৫)। [কোয়ান্টাম-প্রস্তুত আর্থিক ব্যবস্থার জন্য স্থিতিস্থাপকতা তৈরি করা ⧉](https://www.theasianbanker.com/updates-and-articles/building-resilience-for-a-quantum-ready-financial-system "কোয়ান্টাম-প্রস্তুত আর্থিক ব্যবস্থার জন্য স্থিতিস্থাপকতা তৈরি করা")। দ্য এশিয়ান ব্যাংকার.
+
+<!-- enrich-start -->
+<aside class="author-card" aria-label="লেখক সম্পর্কে"><img alt="Sebastien Rousseau-এর প্রতিকৃতি" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">সিনিয়র ব্যাংকিং প্রযুক্তিবিদ যিনি ফলিত এআই (applied AI), ISO 20022 মাইগ্রেশন, আর্থিক পরিষেবার জন্য পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি এবং পাইকারি পেমেন্টের কাঠামোগত রূপান্তর নিয়ে লিখছেন।</span><span class="author-credentials">HSBC কমার্শিয়াল অ্যান্ড ইনভেস্টমেন্ট ব্যাংক, PayPal, Barclays, Shazam, AKQA, ভার্জিন গ্রুপে ২০ বছরেরও বেশি সময় কাজের অভিজ্ঞতা। <a href="/about/index.html">সম্পূর্ণ প্রোফাইল</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<p class="post-reviewed">সর্বশেষ পর্যালোচনা করা হয়েছে <time datetime="2026-06-23">2026-06-23</time>।</p>
+<aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">সম্পর্কিত পঠন</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026" class="related-media" aria-label="পোস্ট-কোয়ান্টাম পেমেন্ট অবকাঠামো: ব্যাংকগুলো কেন লেগাসি রেল পুনর্নির্মাণের চেয়ে প্রতিস্থাপন করতে পারে" tabindex="-1"><img alt="ক্রিপ্টোগ্রাফিক কী উপাদানগুলো গভীর নীল জলে ভেসে যাচ্ছে — যা মূলত পেমেন্ট বার্তাগুলোর এখনই সংগ্রহ করুন, পরে ডিক্রিপ্ট করুন ক্যাপচারকে নির্দেশ করে, যার RSA এবং ECC কভারগুলো একটি ক্রিপ্টঅ্যানালিটিক্যালভাবে প্রাসঙ্গিক কোয়ান্টাম কম্পিউটারের সামনে টিকে থাকবে না" src="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026">পোস্ট-কোয়ান্টাম পেমেন্ট অবকাঠামো: ব্যাংকগুলো কেন লেগাসি রেল পুনর্নির্মাণের চেয়ে প্রতিস্থাপন করতে পারে</a></h3><p><time datetime="2026-05-31">2026-05-31</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026" class="related-media" aria-label="২০২৬ সালে কোয়ান্টাম-নিরাপদ ব্যাংকিং সূচক: পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, QKD, ক্রিপ্টো-চটpotentতা এবং এখনই সংগ্রহ করুন, পরে ডিক্রিপ্ট করুন ঝুঁকি" tabindex="-1"><img alt="২০২৬ সালে ব্যাংক এবং আর্থিক প্রতিষ্ঠানগুলোর জন্য কোয়ান্টাম-নিরাপদ ব্যাংকিং সূচক ২০২৬ সূচক চিত্র" src="https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash-1200.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026">২০২৬ সালে কোয়ান্টাম-নিরাপদ ব্যাংকিং সূচক: পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, QKD, ক্রিপ্টো-চটপটতা এবং এখনই সংগ্রহ করুন, পরে ডিক্রিপ্ট করুন ঝুঁকি</a></h3><p><time datetime="2026-06-04">2026-06-04</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-18-quantum-cryptography-standards-developments-2026" class="related-media" aria-label="২০২৬ সালে কোয়ান্টাম ক্রিপ্টোগ্রাফি রিসেট: PQC মানদণ্ড, QKD নিশ্চয়তা এবং মাইগ্রেশন কাজ যা ব্যাংকগুলো বিলম্বিত করতে পারে না" tabindex="-1"><img alt="২০২৬ সালের জন্য কোয়ান্টাম-নিরাপদ ক্রিপ্টোগ্রাফি মাইগ্রেশন ম্যাপ যা NIST PQC মানদণ্ড, হাইব্রিড প্রোটোকল কাজ, QKD নিশ্চয়তা, ক্রিপ্টো-চটপটতা এবং ব্যাংকের ডেটা-ঝুঁকির স্তরগুলো দেখাচ্ছে" src="https://cloudcdn.pro/stocks/images/alex-shuper-YYZnrK8NrSw-unsplash.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-18-quantum-cryptography-standards-developments-2026">২০২৬ সালে কোয়ান্টাম ক্রিপ্টোগ্রাফি রিসেট: PQC মানদণ্ড, QKD নিশ্চয়তা এবং মাইগ্রেশন কাজ যা ব্যাংকগুলো বিলম্বিত করতে পারে না</a></h3><p><time datetime="2026-05-18">2026-05-18</time></p></footer></article>
+</div>
+</aside>
+<!-- enrich-end -->

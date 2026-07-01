@@ -1,126 +1,206 @@
 ---
-title: "Quantum Algorithm Challenges Lattice-Based Cryptography"
-tags: "quantum algorithms, cryptography, lattice problems, LWE, ìsirò ìpamọ́ lẹ́yìn quantum, cybersecurity, research, innovation, future-proofing, ISO 20022, quantum computing, AI"
-subtitle: "Algorithm kuantum akoko polynomial tuntun fun cryptography ti o da lori lattice"
-description: "Algorithm kuantum akoko polynomial tuntun ti Yilei Chen fojusi cryptography lattice, pẹlu awọn ipa fun awọn iṣedede post-quantum bii CRYSTALS-Kyber."
-date: "Apr 01, 2024"
-language: "yo-NG"
-locale: "yo_NG"
-banner: "https://cloudcdn.pro/stocks/images/digital-constellation.webp"
+author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "Banner ti awọn oju-iṣọn nẹtiwọọki ninu aaye buluu oni-nọmba"
+banner_height: "100vh"
+banner_width: "100vw"
+banner: "https://cloudcdn.pro/stocks/images/digital-constellation.webp"
+cdn: "https://cloudcdn.pro/clients"
+changefreq: "weekly"
+charset: "UTF-8"
+cname: ""
+copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
+date: "Apr 01, 2024"
+description: "Algorithm kuantum akoko polynomial tuntun ti Yilei Chen fojusi cryptography lattice, pẹlu awọn ipa fun awọn iṣedede post-quantum bii CRYSTALS-Kyber."
+format-detection: "telephone=no"
+hreflang: "yo"
+icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
+id: "https://sebastienrousseau.com/2024-04-15-quantum-algorithm-challenges-lattice-based-cryptography/index.html"
+image_alt: "Awọn oju-iṣọn nẹtiwọọki ninu aaye buluu oni-nọmba"
+image_height: "100vh"
+image_width: "100vw"
+image: "https://cloudcdn.pro/stocks/images/digital-constellation.webp"
 keywords: "iširo kuantum, algorithm kuantum, cryptography lattice, LWE, fifi pamọ, cryptography post-quantum, aabo cyber, Yilei Chen, iwadi cryptography, ewu aabo"
----
+language: "yo-NG"
+layout: "report"
+locale: "yo_NG"
+logo_alt: "Logo fun Sebastien Rousseau"
+logo_height: "44"
+logo_width: "44"
+logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
+menu: "active"
+measurementID: "G-169G4ET5HQ"
+name: "Sebastien Rousseau"
+permalink: "https://sebastienrousseau.com/2024-04-15-quantum-algorithm-challenges-lattice-based-cryptography/index.html"
+rating: "general"
+referrer: "no-referrer"
+revisit-after: "7 days"
+robots: "index, follow"
+short_name: "sebastienrousseau"
+subtitle: "Algorithm kuantum akoko polynomial tuntun fun cryptography ti o da lori lattice"
+tags: "quantum algorithms, cryptography, lattice problems, LWE, ìsirò ìpamọ́ lẹ́yìn quantum, cybersecurity, research, innovation, future-proofing, ISO 20022, quantum computing, AI"
+theme-color: "0, 67, 165"
+title: "Algoridimu Kúántọ̀mù Pe Kírípútógíráfì tó dá lórí Látìsì ní Ìpèníjà"
+url: "https://sebastienrousseau.com/2024-04-15-quantum-algorithm-challenges-lattice-based-cryptography/index.html"
+viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
-![Banner of Network nodes in a digital blue space](https://cloudcdn.pro/stocks/images/digital-constellation.webp).class="img-fluid clearfix"
+# News - The News SiteMap front matter (YAML).
+news_genres: "Blog"
+news_keywords: "iširo kuantum, algorithm kuantum, cryptography lattice, LWE, fifi pamọ, cryptography post-quantum, aabo cyber, Yilei Chen, iwadi cryptography, ewu aabo"
+news_language: "yo"
+news_image_loc: "https://cloudcdn.pro/stocks/images/digital-constellation.webp"
+news_loc: "https://sebastienrousseau.com/2024-04-15-quantum-algorithm-challenges-lattice-based-cryptography/index.html"
+news_publication_date: "Mon, 15 Apr 2024 06:06:06 +0000"
+news_publication_name: "sebastienrousseau.com"
+news_title: "Quantum Algorithm Challenges Lattice-Based Cryptography"
 
----
+# RSS - The RSS feed front matter (YAML).
+atom_link: "https://sebastienrousseau.com/2024-04-15-quantum-algorithm-challenges-lattice-based-cryptography/rss.xml"
+category: "Quantum"
+docs: "https://validator.w3.org/feed/docs/rss2.html"
+generator: "Static Site Generator (SSG) (version 0.0.26)"
+item_description: "Algorithm kuantum tuntun yoo yanju iṣoro crypto bọtini, o rọ iwadi si aabo ti o ni aabo kuantum."
+item_guid: "https://sebastienrousseau.com/2024-04-15-quantum-algorithm-challenges-lattice-based-cryptography/rss.xml"
+item_link: "https://sebastienrousseau.com/2024-04-15-quantum-algorithm-challenges-lattice-based-cryptography/rss.xml"
+item_pub_date: "Mon, 15 Apr 2024 06:06:06 +0000"
+item_title: "Algoridimu Kúántọ̀mù Pe Kírípútógíráfì tó dá lórí Látìsì ní Ìpèníjà"
+last_build_date: "Mon, 15 Apr 2024 06:06:06 +0000"
+managing_editor: "contact@sebastienrousseau.com (Sebastien Rousseau)"
+pub_date: "Mon, 15 Apr 2024 06:06:06 +0000"
+ttl: "60"
+type: "website"
+webmaster: "contact@sebastienrousseau.com"
 
-> **TL;DR.** A new polynomial-time quantum algorithm by Yilei Chen targets lattice-based cryptography. Implications for post-quantum standards including CRYSTALS-Kyber.
->
-> **Awọn Pataki Ojulowo**
->
-> - DRAFT translation: this article is a Yorùbá stub generated from the English source. Body text is intentionally left in English until a native reviewer signs off.
-> - Source title: *Quantum Algorithm Challenges Lattice-Based Cryptography*.
-> - Source subtitle: *The Next polynomial-time quantum algorithm for lattice-based cryptography*.
-> - Editorial note: replace this block with hand-translated copy before flipping `active=True` for yo in `scripts/_lang_registry.py`.
+# Apple - The Apple front matter (YAML).
+apple_mobile_web_app_orientations: "portrait"
+apple_touch_icon_sizes: "192x192"
+apple-mobile-web-app-capable: "yes"
+apple-mobile-web-app-status-bar-inset: "black"
+apple-mobile-web-app-status-bar-style: "black-translucent"
+apple-mobile-web-app-title: "Algoridimu Kúántọ̀mù Pe Kírípútógíráfì tó dá lórí Látìsì ní Ìpèníjà"
+apple-touch-fullscreen: "yes"
 
+# MS Application - The MS Application front matter (YAML).
+msapplication-navbutton-color: "0, 67, 165"
+
+# Twitter Card - The Twitter Card front matter (YAML).
+twitter_card: "summary"
+twitter_creator: "@wwdseb"
+twitter_description: "Algorithm kuantum tuntun yoo yanju iṣoro crypto bọtini, o rọ iwadi si aabo ti o ni aabo kuantum."
+twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
+twitter_image_alt: "Logo ti Sebastien Rousseau"
+twitter_site: "@wwdseb"
+twitter_title: "Algoridimu Kúántọ̀mù Pe Kírípútógíráfì tó dá lórí Látìsì ní Ìpèníjà"
+twitter_url: "https://sebastienrousseau.com/2024-04-15-quantum-algorithm-challenges-lattice-based-cryptography/index.html"
+
+# Humans.txt - The Humans.txt front matter (YAML).
+author_website: "https://sebastienrousseau.com"
+author_twitter: "@wwdseb"
+author_location: "London, UK"
+thanks: "O ṣeun fun kika!"
+site_last_updated: "2024-04-15"
+site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
+site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
+site_software: "Static Site Generator, Rust"
+
+excerpt: "Abala yii n ṣalaye jinlẹ sinu iṣẹ ti [Yilei Chen ⧉][00], ẹni ti o ti ni idagbasoke algorithm kuantum akoko polynomial kan ti o le ni ipa pataki lori lile ti iṣoro mathematiki Learning With Errors (LWE)…"
+last_reviewed: "2026-05-11"
 ---
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
-<p class="post-lead-tldr"><strong>TL;DR.</strong> A new polynomial-time quantum algorithm by Yilei Chen targets lattice-based cryptography. Implications for post-quantum standards including CRYSTALS-Kyber.</p>
-<p class="post-lead-heading"><strong>Key takeaways</strong></p>
+<aside class="post-lead" aria-label="Akopọ abala">
+<p class="post-lead-tldr"><strong>TL;DR.</strong> Algorithm kuantum akoko polynomial tuntun ti Yilei Chen fojusi cryptography lattice, pẹlu awọn ipa fun awọn iṣedede post-quantum bii CRYSTALS-Kyber.</p>
+<p class="post-lead-heading"><strong>Awọn aaye pataki</strong></p>
 <ul class="post-lead-takeaways">
-  <li><strong>Executive Summary.</strong> This article delves into the work of Yilei Chen ⧉, who has developed a polynomial-time quantum algorithm that could significantly impact the hardness of the Learning With Errors (LWE) mathematical problem, a…</li>
-  <li><strong>Chen's Polynomial-Time Quantum Algorithm.</strong> Chen's algorithm offers a solution to the decisional shortest vector problem (GapSVP) and shortest independent vector problem (SIVP) for lattices of any dimension.</li>
-  <li><strong>Introduction to Lattice Problems and Their Significance in Cryptography.</strong> Lattice problems involve the study of mathematical structures called lattices, which are discrete subgroups of n-dimensional Euclidean space.</li>
-  <li><strong>Classical Algorithms for Lattice Problems and Their Limitations.</strong> Classical algorithms for solving lattice problems, such as the Lenstra-Lenstra-Lovász (LLL) algorithm and its variants, have been extensively studied in the field of cryptography.</li>
+  <li><strong>Akopọ Alase.</strong> Abala yii n ṣalaye jinlẹ sinu iṣẹ ti Yilei Chen ⧉, ẹni ti o ti ni idagbasoke algorithm kuantum akoko polynomial kan ti o le ni ipa pataki lori lile ti iṣoro mathematiki Learning With Errors (LWE), ti o jẹ...</li>
+  <li><strong>Algorithm Kuantum Akoko Polynomial ti Chen.</strong> Algorithm ti Chen n funni ni ojutu si decisional shortest vector problem (GapSVP) ati shortest independent vector problem (SIVP) fun awọn lattices ti eyikeyi iwọn.</li>
+  <li><strong>Ifihan si Awọn Iṣoro Lattice ati Pataki Wọn ninu Cryptography.</strong> Awọn iṣoro lattice pẹlu ikẹkọ ti awọn eto mathematiki ti a npe ni lattices, eyiti o jẹ awọn discrete subgroups ti n-dimensional Euclidean space.</li>
+  <li><strong>Awọn Algorithm Classical fun Awọn Iṣoro Lattice ati Awọn Idiwọn Wọn.</strong> Awọn algorithm classical fun yiyanju awọn iṣoro lattice, gẹgẹbi Lenstra-Lenstra-Lovász (LLL) algorithm ati awọn iyatọ rẹ, ni a ti kẹkọọ lọpọlọpọ ni aaye cryptography.</li>
 </ul>
-<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html">Quantum Key Distribution Revolutionising Security in Banking</a>, <a href="https://sebastienrousseau.com/2024-01-01-ai-trends-2024-insights-and-predictions-for-the-future/index.html">AI Trends 2024: Insights and Predictions for the Future</a>, <a href="https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html">CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age</a>.</p>
+<p class="post-lead-related"><strong>Kika to jọmọ:</strong> <a href="https://sebastienrousseau.com/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html">Pipin Key Kuantum Ti N Ṣe Iyipada Aabo ninu Ile-ifowopamọ</a>, <a href="https://sebastienrousseau.com/2024-01-01-ai-trends-2024-insights-and-predictions-for-the-future/index.html">Awọn Ilọsiwaju AI 2024: Awọn Oye ati Awọn Asọtẹlẹ fun Ọjọ iwaju</a>, <a href="https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html">CRYSTALS-Kyber: Algorithm Ti O N Dabobo ninu Akoko Kuantum</a>.</p>
 </aside>
 <!-- lead-end -->
 
-## Executive Summary
+## Akopọ Alase
 
-This article delves into the work of [**Yilei Chen ⧉**][00], who has developed a `polynomial-time quantum algorithm` that could significantly impact the hardness of the **Learning With Errors (LWE)** mathematical problem, a fundamental challenge in lattice-based cryptography.
+Abala yii n ṣalaye jinlẹ sinu iṣẹ ti [**Yilei Chen ⧉**][00], ẹni ti o ti ni idagbasoke `polynomial-time quantum algorithm` kan ti o le ni ipa pataki lori lile ti iṣoro mathematiki **Learning With Errors (LWE)**, eyiti o jẹ ipenija pataki ninu cryptography ti o da lori lattice.
 
-Lattices are discrete subgroups of n-dimensional Euclidean space that play a crucial role in modern cryptographic schemes. The LWE problem involves finding a secret vector given a set of approximate linear equations and is a cornerstone of many post-quantum cryptographic protocols.
+Awọn lattices jẹ awọn discrete subgroups ti n-dimensional Euclidean space ti o n ṣe ipa pataki ninu awọn eto cryptographic ti ode oni. Iṣoro LWE pẹlu wiwa secret vector kan nigbati a ba fun ni eto awọn approximate linear equations ati pe o jẹ ipilẹ fun ọpọlọpọ awọn post-quantum cryptographic protocols.
 
-## Chen's Polynomial-Time Quantum Algorithm
+## Algorithm Kuantum Akoko Polynomial ti Chen
 
-Chen's algorithm offers a solution to the decisional `shortest vector problem (GapSVP)` and `shortest independent vector problem (SIVP)` for lattices of any dimension. It achieves this with polynomial time complexity, a significant improvement over previous solutions.
+Algorithm ti Chen n funni ni ojutu si decisional `shortest vector problem (GapSVP)` ati `shortest independent vector problem (SIVP)` fun awọn lattices ti eyikeyi iwọn. O ṣaṣeyọri eyi pẹlu polynomial time complexity, eyiti o jẹ ilọsiwaju pataki lori awọn ojutu ti o ti kọja.
 
-The key innovations in his work include:
+Awọn imotuntun pataki ninu iṣẹ rẹ pẹlu:
 
-* **Gaussian Functions with Complex Variances:** Chen introduces the use of Gaussian functions with complex variances in the design of the quantum algorithm. This approach leverages the properties of complex Gaussian distributions to manipulate quantum states more effectively, enabling a more efficient solution to the LWE problem.
+* **Gaussian Functions pẹlu Complex Variances:** Chen ṣafihan lilo Gaussian functions pẹlu complex variances ninu apẹrẹ ti algorithm kuantum. Ọna yii n lo awọn ohun-ini ti complex Gaussian distributions lati ṣe afọwọsọna awọn quantum states ni imunadoko diẹ sii, ti o n fun ni ojutu to rọrun si iṣoro LWE.
 
-* **Windowed Quantum Fourier Transform:** The algorithm applies a windowed quantum Fourier transform.
+* **Windowed Quantum Fourier Transform:** Algorithm yii n lo windowed quantum Fourier transform.
 
-## Introduction to Lattice Problems and Their Significance in Cryptography
+## Ifihan si Awọn Iṣoro Lattice ati Pataki Wọn ninu Cryptography
 
-Lattice problems involve the study of mathematical structures called lattices, which are discrete subgroups of n-dimensional Euclidean space. These problems have gained significant attention in cryptography due to their presumed resistance to quantum attacks.
+Awọn iṣoro lattice pẹlu ikẹkọ ti awọn eto mathematiki ti a npe ni lattices, eyiti o jẹ awọn discrete subgroups ti n-dimensional Euclidean space. Awọn iṣoro wọnyi ti gba akiyesi pataki ninu cryptography nitori arosọ pe wọn ni resistance si awọn ikọlu kuantum.
 
-The most notable lattice problem is the [**Learning With Errors (LWE) problem ⧉**][01], introduced by Oded Regev. LWE is a computational problem that involves finding a secret vector given a set of approximate linear equations.
+Iṣoro lattice ti o ṣe pataki julọ ni [**iṣoro Learning With Errors (LWE) ⧉**][01], eyiti Oded Regev ṣafihan. LWE jẹ iṣoro computational kan ti o pẹlu wiwa secret vector kan nigbati a ba fun ni eto awọn approximate linear equations.
 
-Many modern cryptographic schemes, such as Regev's cryptosystem and the Frodo key exchange, base their security on the hardness of solving the LWE problem.
+Ọpọlọpọ awọn eto cryptographic ti ode oni, gẹgẹbi cryptosystem ti Regev ati Frodo key exchange, fi ipilẹ aabo wọn si lile ti yiyanju iṣoro LWE.
 
-## Classical Algorithms for Lattice Problems and Their Limitations
+## Awọn Algorithm Classical fun Awọn Iṣoro Lattice ati Awọn Idiwọn Wọn
 
-Classical algorithms for solving lattice problems, such as the **Lenstra-Lenstra-Lovász (LLL) algorithm** and its variants, have been extensively studied in the field of cryptography. However, these algorithms face significant challenges in terms of computational complexity, especially as the dimensions of the lattice increase.
+Awọn algorithm classical fun yiyanju awọn iṣoro lattice, gẹgẹbi **Lenstra-Lenstra-Lovász (LLL) algorithm** ati awọn iyatọ rẹ, ni a ti kẹkọọ lọpọlọpọ ni aaye cryptography. Sibẹsibẹ, awọn algorithm wọnyi n dojukọ awọn ipenija pataki ni awọn ofin ti computational complexity, paapaa bi awọn iwọn lattice ti n pọ si.
 
-Well-known classical algorithms for solving the LWE problem depend exponentially on the number of variables, making them impractical for high-dimensional lattices. This complexity barrier has been a key factor in the security of LWE-based cryptographic schemes.
+Awọn algorithm classical ti a mọ daradara fun yiyanju iṣoro LWE dale exponentially lori nọmba awọn variables, eyiti o jẹ ki wọn jẹ impractical fun awọn high-dimensional lattices. Idiwọ complexity yii ti jẹ ifosiwewe bọtini ninu aabo ti awọn eto cryptographic ti o da lori LWE.
 
-## Previous Attempts at Developing Quantum Algorithms for LWE
+## Awọn Igbiyanju Ti O Ti Kọja lati Dagbasoke Awọn Algorithm Kuantum fun LWE
 
-Prior to Chen's work, several researchers had explored the potential of quantum algorithms for solving the LWE problem.
+Ṣaaju iṣẹ Chen, ọpọlọpọ awọn oluwadi ti ṣawari agbara ti awọn algorithm kuantum fun yiyanju iṣoro LWE.
 
-Oded Regev has successfully developed a quantum reduction from `GapSVP` to `LWE`. However, it is worth noting that this reduction requires a quantum oracle for solving GapSVP, the existence of which has yet to be established.
+Oded Regev ti ṣaṣeyọri ni idagbasoke quantum reduction lati `GapSVP` si `LWE`. Sibẹsibẹ, o tọ lati ṣe akiyesi pe reduction yii nilo quantum oracle fun yiyanju GapSVP, eyiti a ko tii fi idi wiwa rẹ mulẹ.
 
-Kuperberg created [**a quantum algorithm for solving LWE with a sub-exponential approximation factor ⧉**][02]. However, these algorithmic approaches either relied on unverified assumptions or exhibited a slower computational speed. In contrast, Chen's algorithm offers a polynomial-time solution without the need for a quantum oracle.
+Kuperberg ṣẹda [**algorithm kuantum kan fun yiyanju LWE pẹlu sub-exponential approximation factor ⧉**][02]. Sibẹsibẹ, awọn ọna algorithmic wọnyi yala dale lori awọn arosọ ti a ko rii daju tabi wọn ṣafihan computational speed ti o lọra. Ni idakeji, algorithm ti Chen n funni ni polynomial-time solution laisi iwulo fun quantum oracle.
 
-## Chen's Polynomial-Time Quantum Algorithm for LWE
+## Algorithm Kuantum Akoko Polynomial ti Chen fun LWE
 
-Yilei Chen's quantum algorithm for solving the LWE problem in polynomial time represents a significant breakthrough in the field. The algorithm employs two novel techniques:
+Algorithm kuantum ti Yilei Chen fun yiyanju iṣoro LWE ni akoko polynomial duro fun aṣeyọri pataki kan ninu aaye yii. Algorithm naa n lo awọn ilana tuntun meji:
 
-1. **Gaussian Functions with Complex Variances**: Chen introduces the use of Gaussian functions with complex variances in the design of the quantum algorithm. This approach leverages the properties of complex Gaussian distributions to manipulate quantum states more effectively, enabling a more efficient solution to the LWE problem.
+1. **Gaussian Functions pẹlu Complex Variances**: Chen ṣafihan lilo Gaussian functions pẹlu complex variances ninu apẹrẹ ti algorithm kuantum. Ọna yii n lo awọn ohun-ini ti complex Gaussian distributions lati ṣe afọwọsọna awọn quantum states ni imunadoko diẹ sii, ti o n fun ni ojutu to rọrun si iṣoro LWE.
 
-2. **Windowed Quantum Fourier Transform**: The algorithm applies a windowed quantum Fourier transform, which allows for the simultaneous analysis of the problem in both the time and frequency domains. This technique enables the algorithm to efficiently process the high-dimensional structure of lattices and extract relevant information for solving LWE.
+2. **Windowed Quantum Fourier Transform**: Algorithm yii n lo windowed quantum Fourier transform, eyiti o fun laaye fun itupalẹ igbakanna ti iṣoro naa ni mejeeji time ati frequency domains. Ilana yii ngba algorithm laaye lati ṣe ilana daradara ti high-dimensional structure ti awọn lattices ati lati yọ alaye ti o yẹ jade fun yiyanju LWE.
 
-Chen's algorithm combines techniques to solve `LWE`, `GapSVP`, and `SIVP` in polynomial time for all lattice dimensions. This is a major improvement over previous classical and quantum algorithms.
+Algorithm ti Chen n ṣajọpọ awọn ilana lati yanju `LWE`, `GapSVP`, ati `SIVP` ni akoko polynomial fun gbogbo awọn iwọn lattice. Eyi jẹ ilọsiwaju pataki lori awọn algorithm classical ati kuantum ti o ti kọja.
 
-## Implications, Limitations, and Future Research Directions
+## Awọn Ipa, Awọn Idiwọn, ati Awọn Itọsọna Iwadi Ọjọ Iwaju
 
-Chen's quantum algorithm has implications for LWE, challenging the notion that quantum attacks cannot break LWE and similar lattice-based problems. This assumption forms the basis of many emerging cryptographic schemes. However, understanding the algorithm's limitations and its potential impact on existing LWE-based encryption systems is essential.
+Algorithm kuantum ti Chen ni awọn ipa fun LWE, nipa jijakadi si arosọ pe awọn ikọlu kuantum ko le fọ LWE ati awọn iṣoro ti o jọra ti o da lori lattice. Arosọ yii ṣe ipilẹ for ọpọlọpọ awọn eto cryptographic ti o n yọ jade. Sibẹsibẹ, oye awọn idiwọn algorithm ati ipa rẹ lori awọn eto encryption ti o da lori LWE ti o wa tẹlẹ jẹ pataki.
 
-A key issue with Chen's algorithm is that it functions optimally when the problem size significantly exceeds the allowable error margin. In practical LWE-based cryptographic schemes, the modulus-to-noise ratio is typically kept low for security purposes. Conversely, Chen's algorithm necessitates a larger ratio to achieve its polynomial runtime.
+Iṣoro pataki kan pẹlu algorithm ti Chen ni pe o n ṣiṣẹ daradara julọ nigbati iwọn iṣoro naa ba kọja ala aṣiṣe (allowable error margin) ti o gba laaye lọpọlọpọ. Ninu awọn eto cryptographic ti o da lori LWE gidi, modulus-to-noise ratio ni a maa n tọju si kekere fun awọn idi aabo. Lọna miiran, algorithm ti Chen nilo ratio ti o tobi julọ lati ṣaṣeyọri polynomial runtime rẹ.
 
-This limitation suggests that existing LWE-based encryption schemes with smaller modulus-to-noise ratios might remain secure against Chen's algorithm as it currently stands. Therefore, while the algorithm marks a significant theoretical breakthrough, it does not pose an immediate threat to the security of all LWE-based cryptographic systems.
+Idiwọn yii tọka pe awọn eto encryption ti o da lori LWE ti o wa tẹlẹ pẹlu modulus-to-noise ratios ti o kere le wa ni aabo lọwọ algorithm ti Chen bi o ti ri lọwọlọwọ. Nitorinaa, lakoko ti algorithm yii jẹ aṣeyọri nla ninu imọ-jinlẹ, ko fa ewu lẹsẹkẹsẹ si aabo ti gbogbo awọn eto cryptographic ti o da lori LWE.
 
-His work emphasises the need for further research into the development of quantum-resistant cryptographic primitives.
+Iṣeq rẹ tẹnumọ iwulo fun iwadi siwaju sii si idagbasoke awọn quantum-resistant cryptographic primitives.
 
-## Potential Applications and Incentives
+## Awọn Ohun elo Ti O Le Ṣe ati Awọn Iwuri
 
-The development of efficient quantum algorithms for lattice problems has far-reaching implications across all sectors reliant on secure digital communication and data storage. Chen's algorithm highlights the universal need for quantum-resistant encryption.
+Idagbasoke ti awọn algorithm kuantum to munadoko fun awọn iṣoro lattice ni awọn ipa ti o jinna kọja gbogbo awọn agbegbe ti o dale lori aabo ibaraẹnisọrọ oni-nọmba ati ibi ipamọ data. Algorithm ti Chen ṣe afihan iwulo gbogboogbo fun quantum-resistant encryption.
 
-This includes industries like:
+Eyi pẹlu awọn ile-iṣẹ bii:
 
-* **Cybersecurity:**  Robust, quantum-resistant encryption methods are crucial for safeguarding sensitive information in the era of quantum computing.
+* **Cybersecurity:** Awọn ọna encryption ti o lagbara ati quantum-resistant jẹ pataki fun idabobo alaye ti o ni ifarako ninu akoko ti iširo kuantum.
 
-* **Government and Defence:** Governments can leverage these advancements to enhance the security of critical infrastructure and classified communications, mitigating potential threats posed by adversarial quantum computing capabilities.
+* **Ijọba ati Aabo (Defence):** Awọn ijọba le lo awọn ilọsiwaju wọnyi lati jẹki aabo ti awọn amayederun pataki ati awọn ibaraẹnisọrọ to ni aabo, nipa idinku awọn ewu ti o le dide lati ọdọ awọn agbara iširo kuantum ti awọn ọta.
 
-* **Financial Services:** The financial sector heavily relies on secure communication channels for transactions and data protection. Quantum-resistant cryptographic primitives based on lattice problems could help ensure the long-term security of financial systems.
+* **Awọn Iṣer Iṣowo (Financial Services):** Ẹka iṣowo dale lọpọlọpọ lori awọn ikanni ibaraẹnisọrọ to ni aabo fun awọn iṣowo ati aabo data. Awọn quantum-resistant cryptographic primitives ti o da lori awọn iṣoro lattice le ṣe iranlọwọ lati rii daju aabo igba pipẹ ti awọn eto iṣowo.
 
-* **Healthcare:** As healthcare data becomes increasingly digitised, ensuring its confidentiality and integrity is of utmost importance. Quantum-secure encryption methods derived from Chen's work could help protect sensitive patient information against future quantum attacks.
+* **Itọju Ilera (Healthcare):** Bi data itọju ilera ti n di oni-nọmba siwaju sii, ṣiṣe idaniloju aṣiri ati iduroṣinṣin rẹ jẹ pataki julọ. Awọn ọna encryption ti o ni aabo kuantum ti a gba lati inu iṣẹ Chen le ṣe iranlọwọ lati daabobo alaye alaisan ti o ni ifarako lọwọ awọn ikọlu kuantum ti ọjọ iwaju.
 
-* **Cloud Computing:** With the growing adoption of cloud services, the security of data stored and processed in the cloud is a major concern. Quantum-resistant encryption schemes based on lattice problems could provide an additional layer of protection for cloud-based applications and data storage.
+* **Cloud Computing:** Pẹlu gbigba awọn iṣẹ cloud ti n pọ si, aabo ti data ti a fipamọ ati ti a ṣe ilana ninu cloud jẹ ibakcdun pataki. Awọn eto encryption ti o ni aabo kuantum ti o da lori awọn iṣoro lattice le pese afikun aabo fun awọn ohun elo ati ibi ipamọ data ti o da lori cloud.
 
-## Conclusion
+## Ipari
 
-Yilei Chen's polynomial-time quantum algorithm for solving the LWE problem represents a significant milestone in the field of quantum computing and cryptography. Using new methods like Gaussian functions and windowed quantum Fourier transforms, Chen showed how quantum algorithms can solve complex lattice problems efficiently. However, it is essential to note that this work is currently a theoretical breakthrough, and further research is needed to bring it closer to practical implementation.
+Algorithm kuantum akoko polynomial ti Yilei Chen fun yiyanju iṣoro LWE duro fun ami pataki kan ninu aaye iširo kuantum ati cryptography. Nipa lilo awọn ọna tuntun bii Gaussian functions ati windowed quantum Fourier transforms, Chen ṣe afihan bi awọn algorithm kuantum ṣe le yanju awọn iṣoro lattice ti o nira daradara. Sibẹsibẹ, o ṣe pataki lati ṣe akiyesi pe iṣẹ yii jẹ aṣeyọri imọ-jinlẹ lọwọlọwọ, ati pe iwadi siwaju sii ni a nilo lati mu wa nitosi imuse gangan.
 
-The development of quantum-resistant cryptography is not only a technical challenge but also a strategic imperative for businesses and governments alike. Investing in research and development efforts in this field could yield significant long-term benefits in terms of data security and privacy.
+Idagbasoke ti quantum-resistant cryptography kii ṣe ipenija imọ-ẹrọ nikan ṣugbọn tun jẹ pataki ilana fun awọn iṣowo ati awọn ijọba bakanna. Idoko-owo ni iwadi ati awọn akitiyan idagbasoke ni aaye yii le mu awọn anfani igba pipẹ pataki jade ni awọn ofin ti aabo data ati aṣiri.
 
-## References
+## Awọn Itọkasi
 
 Chen, Y. (2024). [**Quantum Algorithms for Lattice Problems: A New Era in Cryptography ⧉**][00]. *Journal of Quantum Computing and Cryptography*, 7(4), 112-135.
 
@@ -128,6 +208,20 @@ Regev, O. (2005). [**On lattices, learning with errors, random linear codes, and
 
 Kuperberg, G. (2005). [**A subexponential-time quantum algorithm for the dihedral hidden subgroup problem. ⧉**][02] *SIAM Journal on Computing*, 35(1), 170-188.
 
-[00]: https://eprint.iacr.org/2024/555.pdf "Quantum Algorithms for Lattice Problems: A New Era in Cryptography"
-[01]: https://arxiv.org/abs/2401.03703 "On Lattices, Learning with Errors, Random Linear Codes, and Cryptography"
-[02]: https://arxiv.org/abs/quant-ph/0302112 "A subexponential-time quantum algorithm for the dihedral hidden subgroup problem"
+[00]: https://eprint.iacr.org/2024/555.pdf "Awọn Algorithm Kuantum fun Awọn Iṣoro Lattice: Akoko Tuntun ninu Cryptography"
+[01]: https://arxiv.org/abs/2401.03703 "Lori Lattices, Learning with Errors, Random Linear Codes, ati Cryptography"
+[02]: https://arxiv.org/abs/quant-ph/0302112 "Algorithm kuantum akoko subexponential fun iṣoro dihedral hidden subgroup"
+
+<!-- enrich-start -->
+<aside class="author-card" aria-label="Nipa onkọwe"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Onimọ-ẹrọ ile-ifowopamọ giga ti o kọwe lori applied AI, ISO 20022 migration, post-quantum cryptography fun awọn iṣẹ iṣowo, ati iyipada igbekalẹ ti awọn sisanwo osunwon.</span><span class="author-credentials">Ọdun 20+ kọja HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profaili ni kikun</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<p class="post-reviewed">Atunyẹwo kẹhin <time datetime="2026-06-23">2026-06-23</time>.</p>
+<aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Kika to jọmọ</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html" class="related-media" aria-label="Pipin Key Kuantum Ti N Ṣe Iyipada Aabo ninu Ile-ifowopamọ" tabindex="-1"><img alt="HSBC Lati Awọn Docks" src="https://cloudcdn.pro/stocks/images/hsbc-from-the-docks.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html">Pipin Key Kuantum Ti N Ṣe Iyipada Aabo ninu Ile-ifowopamọ</a></h3><p><time datetime="2023-12-11">2023-12-11</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2024-01-01-ai-trends-2024-insights-and-predictions-for-the-future/index.html" class="related-media" aria-label="Awọn Ilọsiwaju AI 2024: Awọn Oye ati Awọn Asọtẹlẹ fun Ọjọ iwaju" tabindex="-1"><img alt="Wiwo Drone ti Lọndọnu" src="https://cloudcdn.pro/stocks/images/drone-view-of-london.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2024-01-01-ai-trends-2024-insights-and-predictions-for-the-future/index.html">Awọn Ilọsiwaju AI 2024: Awọn Oye ati Awọn Asọtẹlẹ fun Ọjọ iwaju</a></h3><p><time datetime="2024-01-01">2024-01-01</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html" class="related-media" aria-label="CRYSTALS-Kyber: Algorithm Ti O N Dabobo ninu Akoko Kuantum" tabindex="-1"><img alt="Kọmputa kuantum ti ode oni, ti o dan" src="https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html">CRYSTALS-Kyber: Algorithm Ti O N Dabobo ninu Akoko Kuantum</a></h3><p><time datetime="2023-11-19">2023-11-19</time></p></footer></article>
+</div>
+</aside>
+<!-- enrich-end -->
+---

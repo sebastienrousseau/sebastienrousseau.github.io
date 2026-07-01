@@ -1,138 +1,222 @@
 ---
-title: "Blockchain explained, the technology that matters the most"
-tags: "pain001, ISO 20022, payment automation, cost reduction, payments, payment files, pain message, DORA, post-quantum cryptography, AI, tokenised deposits, Rust, cloud native banking, biyan kuɗi na cross-border, stablecoins"
-subtitle: "Blockchain, rarraba ledgers, da fasahar da ta fi muhimmanci a shekarar 2018."
-description: "Labarin tafiya mai ban al'ajabi na kare ma'amalar dijital ta hanyar Private-key Cryptography da hanyoyin sadarwar Peer-to-peer (P2P)."
-date: "Jan 02, 2018"
-language: "ha-NG"
-locale: "ha_NG"
-banner: "https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp"
+author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "Kwamfutar tafi-da-gidanka da aka kashe a saman teburin itace mai launin ruwan kasa"
+banner_height: "100vh"
+banner_width: "100vw"
+banner: "https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp"
+cdn: "https://cloudcdn.pro/clients"
+changefreq: "weekly"
+charset: "UTF-8"
+cname: "sebastienrousseau.com"
+copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
+date: "Jan 02, 2018"
+description: "Labarin tafiya mai ban al'ajabi na kare ma'amalar dijital ta hanyar Private-key Cryptography da hanyoyin sadarwar Peer-to-peer (P2P)."
+format-detection: "telephone=no"
+hreflang: "ha"
+icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
+id: "https://sebastienrousseau.com/2018-01-02-blockchain-the-technology-that-matters-in-2018/index.html"
+image_alt: "Hoton Sebastien Rousseau a Baki da Fari"
+image_height: "162"
+image_width: "162"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "pain001, iso 20022, atomatik biyan kuɗi, rage farashi, sarrafa biyan kuɗi, fayilolin biyan kuɗi, fara biyan kuɗi, pain message, pain message standards, pain message validation"
+language: "ha-NG"
+layout: "report"
+locale: "ha_NG"
+logo_alt: "Tambari don Sebastien Rousseau"
+logo_height: "44"
+logo_width: "44"
+logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
+menu: "active"
+measurementID: "G-169G4ET5HQ"
+name: "Sebastien Rousseau"
+permalink: "https://sebastienrousseau.com/2018-01-02-blockchain-the-technology-that-matters-in-2018/index.html"
+rating: "general"
+referrer: "no-referrer"
+revisit-after: "7 days"
+robots: "index, follow"
+short_name: "sebastienrousseau"
+subtitle: "Blockchain, rarraba ledgers, da fasahar da ta fi muhimmanci a shekarar 2018."
+tags: "pain001, ISO 20022, payment automation, cost reduction, payments, payment files, pain message, DORA, post-quantum cryptography, AI, tokenised deposits, Rust, cloud native banking, biyan kuɗi na cross-border, stablecoins"
+theme-color: "0, 67, 165"
+title: "Bayanin Blockchain, fasahar da ta fi kowace mahimmanci"
+url: "https://sebastienrousseau.com/2018-01-02-blockchain-the-technology-that-matters-in-2018/index.html"
+viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
+
+# RSS - The RSS feed front matter (YAML).
+atom_link: "https://sebastienrousseau.com/2018-01-02-blockchain-the-technology-that-matters-in-2018/rss.xml"
+category: "Blockchain"
+docs: "https://validator.w3.org/feed/docs/rss2.html"
+generator: "Static Site Generator (SSG) (version 0.0.26)"
+item_description: "Labarin tafiya mai ban al'ajabi na kare ma'amalar dijital ta hanyar Private-key Cryptography da hanyoyin sadarwar Peer-to-peer (P2P)."
+item_guid: "https://sebastienrousseau.com/2018-01-02-blockchain-the-technology-that-matters-in-2018/rss.xml"
+item_link: "https://sebastienrousseau.com/2018-01-02-blockchain-the-technology-that-matters-in-2018/rss.xml"
+item_pub_date: "Tue, 02 Jan 2018 02:20:02 +0000"
+item_title: "Bayanin Blockchain, fasahar da ta fi kowace mahimmanci"
+last_build_date: "Tue, 02 Jan 2018 02:20:02 +0000"
+managing_editor: "contact@sebastienrousseau.com (Sebastien Rousseau)"
+pub_date: "Tue, 02 Jan 2018 02:20:02 +0000"
+ttl: "60"
+type: "website"
+webmaster: "contact@sebastienrousseau.com"
+
+# Apple - The Apple front matter (YAML).
+apple_mobile_web_app_orientations: "portrait"
+apple_touch_icon_sizes: "192x192"
+apple-mobile-web-app-capable: "yes"
+apple-mobile-web-app-status-bar-inset: "black"
+apple-mobile-web-app-status-bar-style: "black-translucent"
+apple-mobile-web-app-title: "Sebastien Rousseau"
+apple-touch-fullscreen: "yes"
+
+# MS Application - The MS Application front matter (YAML).
+
+msapplication-navbutton-color: "0, 67, 165"
+
+# Twitter Card - The Twitter Card front matter (YAML).
+
+twitter_card: "summary"
+twitter_creator: "@wwdseb"
+twitter_description: "Labarin tafiya mai ban al'ajabi na kare ma'amalar dijital ta hanyar Private-key Cryptography da hanyoyin sadarwar Peer-to-peer (P2P)."
+twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
+twitter_image_alt: "Tambarin Sebastien Rousseau"
+twitter_site: "@wwdseb"
+twitter_title: "Bayanin Blockchain, fasahar da ta fi kowace mahimmanci"
+twitter_url: "https://sebastienrousseau.com"
+
+# Humans.txt - The Humans.txt front matter (YAML).
+author_website: "https://sebastienrousseau.com"
+author_twitter: "@wwdseb"
+author_location: "London, UK"
+thanks: "Godiya da kuka karanta!"
+site_last_updated: "2023-07-05"
+site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
+site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
+site_software: "Static Site Generator, Rust"
+
+excerpt: "Blockchain, fasahar da ke bayan bunkasar cryptocurrencies cikin sauri, tana sauya kasuwanci, ayyukan kuɗi, da kasuwannin babban birni. Wannan fasaha mai sauya fasali tana sauyawa…"
+last_reviewed: "2026-05-11"
 ---
-
-![Turned off laptop computer on top of brown wooden table](https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp).class="img-fluid clearfix"
-
----
-
-> **TL;DR.** A story of the extraordinary journey of securing digital transactions through Private-key Cryptography and Peer-to-peer (P2P) networks.
->
-> **Mahimman Bayanai**
->
-> - DRAFT translation: this article is a Hausa stub generated from the English source. Body text is intentionally left in English until a native reviewer signs off.
-> - Source title: *Blockchain explained, the technology that matters the most*.
-> - Source subtitle: *Blockchain, distributed ledgers, and the technology that matters in 2018.*.
-> - Editorial note: replace this block with hand-translated copy before flipping `active=True` for ha in `scripts/_lang_registry.py`.
-
----
-
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
-<p class="post-lead-tldr"><strong>TL;DR.</strong> A story of the extraordinary journey of securing digital transactions through Private-key Cryptography and Peer-to-peer (P2P) networks.</p>
-<p class="post-lead-heading"><strong>Key takeaways</strong></p>
+<aside class="post-lead" aria-label="Takaitaccen bayanin labarin">
+<p class="post-lead-tldr"><strong>TL;DR.</strong> Labarin tafiya mai ban al'ajabi na kare ma'amalar dijital ta hanyar Private-key Cryptography da hanyoyin sadarwar Peer-to-peer (P2P).</p>
+<p class="post-lead-heading"><strong>Muhimman abubuwan da aka koya</strong></p>
 <ul class="post-lead-takeaways">
-  <li><strong>Idea.</strong> A blockchain organises data into blocks, which are chained together chronologically.</li>
-  <li><strong>Impact.</strong> Blockchain is enabling profound changes in finance, banking, supply chains, healthcare, real estate, and other sectors.</li>
-  <li><strong>Use Cases.</strong> The versatility of blockchain has sparked innovative applications across sectors:.</li>
-  <li><strong>Limitations.</strong> While blockchain is transformative, limitations around regulation, interoperability, complexity, and scalability remain barriers to mainstream adoption.</li>
+  <li><strong>Ra'ayi.</strong> Blockchain yana tsara bayanai zuwa blocks, waɗanda aka haɗa su tare bisa tsarin lokaci.</li>
+  <li><strong>Tasiri.</strong> Blockchain yana ba da damar sauye-sauye masu zurfi a fannin kuɗi, banki, supply chains, kula da lafiya, gidaje, da sauran fannoni.</li>
+  <li><strong>Hanyoyin Amfani.</strong> Bambancin hanyoyin amfani da blockchain ya haifar da sabbin aikace-aikace a duk fannoni:.</li>
+  <li><strong>Iyakoki.</strong> Kodayake blockchain yana da ikon sauya fasali, iyakoki game da regulation, interoperability, sarƙaƙiya, da scalability sun kasance shinge ga karɓuwa ta gama-gari.</li>
 </ul>
-<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2023-10-09-the-fastest-rust-based-static-site-generator/index.html">Static Site Generator: Fastest Rust-Based SSG</a>, <a href="https://sebastienrousseau.com/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html">Automating ISO 20022 Payment Files Creation with Pain001</a>, <a href="https://sebastienrousseau.com/2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution/index.html">Unveiling a new Cryptocurrency and Faster Payment Solution</a>.</p>
+<p class="post-lead-related"><strong>Karatun da ke da alaƙa:</strong> <a href="https://sebastienrousseau.com/2023-10-09-the-fastest-rust-based-static-site-generator/index.html">Static Site Generator: SSG Mafi Sauri da aka Gina da Rust</a>, <a href="https://sebastienrousseau.com/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026">Babban Bankin Multi-Rail a shekarar 2026: Katunan Kuɗi, A2A, Stablecoins, RTP, FedNow, da Open Banking a cikin Tsari Guda ɗaya</a>, <a href="https://sebastienrousseau.com/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026">Ma'aunin Autonomous Treasury a shekarar 2026: Agentic Treasury, Programmable Liquidity, Tokenised Deposits, da Kula da Kuɗi a Gaskiyar Lokaci</a>.</p>
 </aside>
 <!-- lead-end -->
 
-![A very tall building that has a lot of holes in it](https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp).class=\"img-fluid clearfix\"
+![Dogon gini mai ramuka da yawa a jikinsa](https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp).class=\"img-fluid clearfix\"
 
-Blockchain, the underlying technology driving the meteoric rise of cryptocurrencies, is disrupting businesses, financial services, and capital markets. This transformative technology is changing how we conduct transactions and operations by making data more readily available, transparent, and secure.
+Blockchain, fasahar da ke bayan hauhawar farashin cryptocurrencies cikin sauri, tana sauya kasuwanci, ayyukan kuɗi, da kasuwannin babban birni. Wannan fasaha mai sauya fasali tana sauya yadda muke gudanar da ma'amala da ayyuka ta hanyar sanya bayanai su kasance cikin sauƙi, a bayyane, kuma amintattu.
 
-## Insight
+## Fahimta
 
-### The Genesis of Decentralized Consensus
+### Asalin Decentralized Consensus
 
-Blockchain emerged as the foundational innovation that enabled the development of cryptocurrencies like [Bitcoin][08]. At its core, blockchain serves as an open, distributed ledger that records transactions in a verifiable and permanent manner.
+Blockchain ya bayyana a matsayin sabuwar fasaha ta tushe wacce ta ba da damar haɓaka cryptocurrencies kamar [Bitcoin][08]. A ainihinsa, blockchain yana aiki ne a matsayin buɗaɗɗen distributed ledger wanda ke rikodin ma'amala ta hanyar da za a iya tabbatarwa kuma ta dindindin.
 
-By allowing digital information to be distributed without being copied, blockchain pioneered a groundbreaking peer-to-peer system for establishing consensus and trust. For the first time, transactions could be approved decentralised without centralised intermediaries.
+Ta hanyar barin bayanan dijital su rarrabu ba tare da an kwafi su ba, blockchain ya buɗe wani sabon tsarin peer-to-peer na samar da yarjejeniya da amincewa. A karon farko, za a iya amincewa da ma'amaloli ta hanyar da aka rarraba (decentralised) ba tare da masu shiga tsakani na tsakiya (centralised intermediaries) ba.
 
-Blockchain’s capacity to facilitate secure online interactions between strangers laid the backbone for cryptocurrencies. Beyond finance, it holds revolutionary potential to transform flows of data and transactions across industries.
+Ƙarfin blockchain na sauƙaƙe amintacciyar hulɗar intanet tsakanin baki ya kafa ginshiki ga cryptocurrencies. Bayan fannin kuɗi, yana da damar kawo sauyi na musamman don canza yadda bayanai da ma'amaloli ke gudana a cikin masana'antu daban-daban.
 
-## Idea
+## Ra'ayi
 
-### Eliminating Trusted Third Parties Through Distributed Ledgers
+### Kawar da Amintattun Masu Shiga Tsakani ta Hanyar Distributed Ledgers
 
-A blockchain organises data into blocks, which are chained together chronologically. New blocks are added by a decentralised network of computers rather than a central party. This distributed ledger is simultaneously stored and synchronised across multiple nodes in the network.
+Blockchain yana tsara bayanai zuwa blocks, waɗanda aka haɗa su tare bisa tsarin lokaci. Ana ƙara sabbin blocks ta hanyar hanyar sadarwa ta kwamfutoci da aka rarraba (decentralised network) maimakon wani taro na tsakiya. Ana adana wannan distributed ledger kuma ana daidaita shi a lokaci guda a cikin nodes daban-daban na hanyar sadarwar.
 
-Blocks contain timestamped batches of transactions, which are immutable once recorded. Cryptography ensures security and accuracy as transactions are approved by network participants. Smart contracts enable complex accountabilities to be encoded and automatically executed.
+Blocks suna ɗauke da rukunin ma'amaloli masu ɗauke da lokaci (timestamped batches), waɗanda ba za a iya sauya su ba da zarar an yi rikodin su. Cryptography yana tabbatar da tsaro da daidaito yayin da mahalarta hanyar sadarwar ke amincewa da ma'amaloli. Smart contracts suna ba da damar tsara ayyuka masu sarƙaƙiya kuma a aiwatar da su ta atomatik.
 
-By enabling peer-to-peer transactions without centralised intermediaries, blockchains eliminate single points of failure and create transparency. Individual users retain control over their data and transactions. The decentralised approach builds trust and accountability at scale.
+Ta hanyar ba da damar ma'amalar peer-to-peer ba tare da masu shiga tsakani na tsakiya ba, blockchains suna kawar da matsalolin gazawar wuri guda (single points of failure) kuma suna haifar da gaskiya. Masu amfani daidaiku suna riƙe da ikon sarrafa bayanansu da ma'amalolinsu. Wannan tsarin na decentralized yana gina amincewa da riƙon amana a babban mataki.
 
-## Impact
+## Tasiri
 
-### Spurring Radical Transformation Across Sectors
+### Haifar da Sauyin Gaggawa a Duk Fannoni
 
-Blockchain is enabling profound changes in finance, banking, supply chains, healthcare, real estate, and other sectors. By removing information asymmetry and mitigating counterparty risks, blockchain promotes transparency and integrity across transactions.
+Blockchain yana ba da damar sauye-sauye masu zurfi a fannin kuɗi, banki, supply chains, kula da lafiya, gidaje, da sauran fannoni. Ta hanyar kawar da rashin daidaiton bayanai (information asymmetry) da rage haɗarin takwarorinsu (counterparty risks), blockchain yana haɓaka gaskiya da mutunci a duk ma'amaloli.
 
-Cryptocurrencies introduced new models of programmable money, decentralised finance, and global peer-to-peer transfers. In banking, blockchains improve payment speeds and efficiency. Tokenization also enables new funding methods.
+Cryptocurrencies sun gabatar da sabbin tsare-tsare na kuɗaɗe masu tsari (programmable money), decentralized finance, da tura kuɗi na peer-to-peer na duniya. A fannin banki, blockchains suna haɓaka saurin biyan kuɗi da inganci. Tokenization kuma yana ba da damar sabbin hanyoyin samar da kuɗi.
 
-Blockchain further assures product origins and ethical sourcing in supply chains. Health records management leverages its security and accuracy. Blockchain is even beginning to disrupt voting, music royalty tracking, and digital identity systems.
+Bayan haka, blockchain yana tabbatar da asalin samfura da samar da su ta hanyar da ta dace a cikin supply chains. Gudanar da bayanan lafiya yana amfani da tsaro da daidaitonsa. Haka kuma blockchain ya fara sauya tsarin zaɓe, bin diddigin kuɗin shiga na kiɗa (music royalty tracking), da tsarin shaidar dijital (digital identity).
 
-## Use Cases
+## Hanyoyin Amfani
 
-### Diverse Implementations Across Industries
+### Hanyoyin Amfani Daban-daban a Masana'antu
 
-The versatility of blockchain has sparked innovative applications across sectors:
+Bambancin hanyoyin amfani da blockchain ya haifar da sabbin aikace-aikace a duk fannoni:
 
-- **Finance:** Cryptocurrencies, decentralized exchanges, tokenized securities trading, cross-border payments
+- **Kudi:** Cryptocurrencies, decentralized exchanges, cinikin tokenized securities, biyan kuɗi na cross-border
 
-- **Supply Chain:** Tracking provenance of goods, improving transparency in manufacturing and distribution
+- **Supply Chain:** Bin diddigin asalin kayayyaki, haɓaka gaskiya a masana'antu da rarrabawa
 
-- **Healthcare:** Secure medical data storage, facilitating sharing across providers
+- **Kula da Lafiya:** Amintaccen wurin adana bayanan lafiya, sauƙaƙe raba bayanai tsakanin masu samar da lafiya
 
-- **Government:** Digital identity records, transparent voting systems
+- **Gwamnati:** Rikodin shaidar dijital (digital identity), tsarin zaɓe na gaskiya
 
-- **Insurance:** Automated processing with smart contracts, prevention of fraud
+- **Inshora:** Sarrafa ta atomatik tare da smart contracts, rigakafin zamba
 
-- **Real Estate:** Tokenized property transactions, shared title registry
+- **Gidaje:** Ma'amalar tokenized property, rijistar mallakar filaye da gidaje na bai ɗaya
 
-- **Energy:** Peer-to-peer energy trade, renewable energy credits tracking
+- **Makamashi:** Kasuwancin makamashi na peer-to-peer, bin diddigin shaidar makamashi mai sabuntawa (renewable energy credits)
 
-## Limitations
+## Iyakoki
 
-### Ongoing Obstacles to Mainstream Adoption
+### Cikas da Ake Fuskanta don Karɓuwa Ta Gama-gari
 
-While blockchain is transformative, limitations around regulation, interoperability, complexity, and scalability remain barriers to mainstream adoption.
+Kodayake blockchain yana da ikon sauya fasali, iyakoki game da regulation, interoperability, sarƙaƙiya, da scalability sun kasance shinge ga karɓuwa ta gama-gari.
 
-Lack of regulatory clarity across jurisdictions inhibits institutional investment. Resolving challenges around privacy and data management is crucial. Network security and energy usage also require attention as blockchain scales.
+Rashin tsarin dokoki (regulatory clarity) a yankuna daban-daban yana hana saka hannun jari na hukumomi. Magance ƙalubalen da suka shafi sirri da gudanar da bayanai yana da matukar muhimmanci. Tsaron hanyar sadarwa da amfani da makamashi suma suna buƙatar kulawa yayin da blockchain ke haɓaka.
 
-Siloed platforms need to achieve interoperability. User experience and interface design must improve. Blockchain literacy among the public and policymakers will further drive acceptance.
+Kafofin da ke rabe suna buƙatar samun interoperability. Kwarewar mai amfani (user experience) da ƙirar filin aiki (interface design) dole ne su inganta. Fahimtar blockchain tsakanin jama'a da masu tsara manufofi zai ci gaba da haɓaka karɓuwarsa.
 
-## Outlook
+## Hasashe
 
-### Positive Trajectory Despite Uncertainties
+### Hanyar Ci Gaba Mai Kyau Duk da Rashin Tabbas
 
-Blockchain appears poised for continued exponential growth as organizations recognize its disruptive potential. However, uncertainties around regulation, standards, and public perceptions persist as obstacles.
+Blockchain yana da alamar ci gaba mai ban mamaki yayin da ƙungiyoyi ke fahimtar damarsa ta sauya fasali. Koyaya, rashin tabbas game da tsari (regulation), ka'idoji (standards), da yadda jama'a ke kallonsa suna ci gaba da kasancewa cikas.
 
-The technology is expected to permeate across economic sectors, with high projected growth in finance, supply chains, and healthcare industries among others. But responsible innovation is vital.
+Ana sa ran fasahar za ta bazu a sassan tattalin arziki daban-daban, zare da babban ci gaba da ake tsammani a fannonin kuɗi, supply chains, da masana'antar kiwon lafiya da sauransu. Amma sabbin abubuwa na riƙon amana suna da matukar muhimmanci.
 
-With enablers like supportive policies, interoperability solutions and user-centric design overcoming current limitations, blockchain may profoundly rewire how society records, transfers and distributes value.
+Tare da masu taimakawa kamar manufofi masu tallafi, hanyoyin samar da interoperability, da ƙira mai mayar da hankali ga mai amfani (user-centric design) don shawo kan iyakokin yanzu, blockchain na iya sake tsara yadda al'umma ke yin rikodin, tura kuɗi, da rarraba ƙima.
 
-## Conclusion
+## Kammalawa
 
-### Laying the Foundation for Decentralized Future
+### Kafa Harsashin Makomor da Aka Rarraba (Decentralized Future)
 
-Blockchain’s introduction marks a pivotal moment that expanded possibilities for securely exchanging digital assets and data through decentralised consensus. Underpinning cryptocurrencies is only its starting point.
+Gabatar da blockchain ya zama wani muhimmin lokaci wanda ya faɗaɗa damar musayar kadarorin dijital da bayanai cikin aminci ta hanyar decentralized consensus. Kasancewarsa ginshiƙin cryptocurrencies shine farkon farawa kawai.
 
-By eliminating trusted third parties, blockchain offers the potential to restructure flows of value across finance, commerce, governance, and society. Despite limitations, its trajectory points to an exciting decentralised future across sectors.
+Ta hanyar kawar da amintattun masu shiga tsakani, blockchain yana ba da damar sake tsara yadda ƙima ke gudana a fannin kuɗi, kasuwanci, gudanarwa, da al'umma. Duk da iyakokin, hanyarsa tana nuni zuwa ga kyakkyawar makomar da aka rarraba (decentralised future) a duk fannoni.
 
-Like the internet before it, blockchain is a foundational technology poised to unlock new models powered by peer-to-peer transparency and trust. This revolutionary innovation promises to reshape our digital economies and connected lives in the years ahead.
+Kamar intanet kafin shi, blockchain fasaha ce ta tushe da aka shirya don buɗe sabbin tsare-tsare masu ƙarfi ta hanyar gaskiya da amincewa ta peer-to-peer. Wannan sabuwar fasaha mai sauya fasali tana alkawarin sake fasalin tattalin arzikinmu na dijital da rayuwarmu ta haɗin gwiwa a cikin shekaru masu zuwa.
 
 ![divider](https://cloudcdn.pro/clients/common/images/elements/divider.svg).class=\"m-10 w-100\"
 
-**That concludes our time together. Thank you for your time!**
+**A nan muka kawo ƙarshen lokacinmu tare. Mun gode da lokacinku!**
 
-If you have any questions, please don't hesitate to contact me via [LinkedIn ⧉][11] or via the [Contact page][10]. Thank you again for your time and I look forward to hearing from you.
+Idan kuna da wasu tambayoyi, don Allah kada ku yi ƙasa a gwiwa wajen tuntuɓata ta [LinkedIn ⧉][11] ko ta [Shafin Tuntuɓa][10]. Mun sake gode muku da lokacinku kuma muna fatan jin labari daga gare ku.
 
-[**❬ Back to Articles**][09]
+[**❬ Koma zuwa Labarai**][09]
 
 [08]: /2018-01-01-bitcoin-the-year-in-review/index.html
-[09]: /articles/index.html "Back to Articles"
-[10]: /contact/index.html "Contact Sebastien Rousseau"
-[11]: https://www.linkedin.com/in/sebastienrousseau/ "Sebastien Rousseau on LinkedIn"
+[09]: /articles/index.html "Koma zuwa Labarai"
+[10]: /contact/index.html "Tuntuɓi Sebastien Rousseau"
+[11]: https://www.linkedin.com/in/sebastienrousseau/ "Sebastien Rousseau a LinkedIn"
+
+<!-- enrich-start -->
+<aside class="author-card" aria-label="Game da marubucin"><img alt="Hoton Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Babban masanin fasahar banki da ke rubutu a kan applied AI, migration na ISO 20022, post-quantum cryptography don ayyukan kuɗi, da sauye-sauyen tsari na wholesale payments.</span><span class="author-credentials">Sama da shekaru 20 a HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, da Virgin Group. <a href="/about/index.html">Cikakken bayani</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<p class="post-reviewed">An duba na ƙarshe a <time datetime="2026-06-23">2026-06-23</time>.</p>
+<aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Karatun da ke da alaƙa</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/2023-10-09-the-fastest-rust-based-static-site-generator/index.html" class="related-media" aria-label="Static Site Generator: SSG Mafi Sauri da aka Gina da Rust" tabindex="-1"><img alt="Kwamfutar tafi-da-gidanka da aka kashe a saman tebur mai launin fari tare da gilashin ruwa a hagu da alƙalami, littafin rubutu da tsiro a dama" src="https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2023-10-09-the-fastest-rust-based-static-site-generator/index.html">Static Site Generator: SSG Mafi Sauri da aka Gina da Rust</a></h3><p><time datetime="2023-10-09">2023-10-09</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026" class="related-media" aria-label="Babban Bankin Multi-Rail a shekarar 2026: Katunan Kuɗi, A2A, Stablecoins, RTP, FedNow, da Open Banking a cikin Tsari Guda ɗaya" tabindex="-1"><img alt="Hoton dogon lokaci na hanyoyin haske masu haɗuwa a wata babbar tashar jirgin ƙasa da daddare — hoton maɓalli na bankin multi-rail: katunan kući, A2A, RTP, FedNow, ACH, stablecoins, Open Banking APIs, ISO 20022, da injin daidaitawa wanda ke tura kuɗi tsakaninsu" src="https://cloudcdn.pro/stocks/images/joe-gardner-4xv3lqnanYc.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026">Babban Bankin Multi-Rail a shekarar 2026: Katunan Kuɗi, A2A, Stablecoins, RTP, FedNow, da Open Banking a cikin Tsari Guda ɗaya</a></h3><p><time datetime="2026-06-01">2026-06-01</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026" class="related-media" aria-label="Ma'aunin Autonomous Treasury a shekarar 2026: Agentic Treasury, Programmable Liquidity, Tokenised Deposits, da Kula da Kuɗi a Gaskiyar Lokaci" tabindex="-1"><img alt="Hoton gine-gine na musamman da aka yi amfani da shi a matsayin hoton maɓalli na Ma'aunin Autonomous Treasury na shekarar 2026 — auna ayyukan agentic treasury, programmable liquidity, tokenised deposits, biyan kuɗi na lokaci-lokaci (real-time payments), da sarrafa kuɗi ta atomatik" src="https://cloudcdn.pro/stocks/images/christopher-burns-Kj2SaNHG-hg.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026">Ma'aunin Autonomous Treasury a shekarar 2026: Agentic Treasury, Programmable Liquidity, Tokenised Deposits, da Kula da Kuɗi a Gaskiyar Lokaci</a></h3><p><time datetime="2026-06-07">2026-06-07</time></p></footer></article>
+</div>
+</aside>
+<!-- enrich-end -->

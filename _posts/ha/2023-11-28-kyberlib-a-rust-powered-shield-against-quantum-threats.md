@@ -1,127 +1,212 @@
 ---
-title: "KyberLib: Rust CRYSTALS-Kyber for Post-Quantum"
-tags: "KyberLib, Rust, CRYSTALS-Kyber, post-quantum cryptography, lattice-based cryptography, key encapsulation mechanism, NIST, libsignal, cryptography, ISO 20022, quantum computing, AI"
-subtitle: "KyberLib, aiwatar da Rust mai ƙarfi na CRYSTALS-Kyber don zamanin quantum."
-description: "Aiwatar da ɓoyayyar bayanai ta CRYSTALS-Kyber mai ƙarfi da juriya ga quantum, don kare bayananku daga barazanar ƙididdigewa da hare-haren cryptanalytic."
-date: "Nov 28, 2023"
-language: "ha-NG"
-locale: "ha_NG"
-banner: "https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg"
+author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "Ƙarfafa Sadarwa Mai Aminci a Zamanin Quantum tare da KyberLib"
+banner_height: "100vh"
+banner_width: "100vw"
+banner: "https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg"
+cdn: "https://cloudcdn.pro/clients"
+changefreq: "weekly"
+charset: "UTF-8"
+cname: ""
+copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. Duka haƙƙoƙi sun adana."
+date: "Nov 28, 2023"
+description: "Aiwatar da ɓoyayyar bayanai ta CRYSTALS-Kyber mai ƙarfi da juriya ga quantum, don kare bayananku daga barazanar ƙididdigewa da hare-haren cryptanalytic."
+format-detection: "telephone=no"
+hreflang: "ha"
+icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
+id: "https://sebastienrousseau.com/2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats/index.html"
+image_alt: "Hoton Sebastien Rousseau a Baƙi da Fari"
+image_height: "161"
+image_width: "161"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "KyberLib, Rust CRYSTALS-Kyber, cryptography bayan-quantum, lattice-based cryptography, musayar mabuɗi mai juriya ga quantum, NIST FIPS 203, Sebastien Rousseau, KEM, tabbatar da biyan kuɗi, PQC library"
+language: "ha-NG"
+layout: "report"
+locale: "ha_NG"
+logo_alt: "Tambarin Sebastien Rousseau"
+logo_height: "44"
+logo_width: "44"
+logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
+menu: "active"
+measurementID: "G-169G4ET5HQ"
+name: "Sebastien Rousseau"
+permalink: "https://sebastienrousseau.com/2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats/index.html"
+rating: "general"
+referrer: "no-referrer"
+revisit-after: "7 days"
+robots: "index, follow"
+short_name: "sebastienrousseau"
+subtitle: "KyberLib, aiwatar da Rust mai ƙarfi na CRYSTALS-Kyber don zamanin quantum."
+tags: "KyberLib, Rust, CRYSTALS-Kyber, post-quantum cryptography, lattice-based cryptography, key encapsulation mechanism, NIST, libsignal, cryptography, ISO 20022, quantum computing, AI"
+theme-color: "0, 67, 165"
+title: "KyberLib: Rust CRYSTALS-Kyber don Post-Quantum"
+url: "https://sebastienrousseau.com/2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats/index.html"
+viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
+
+# RSS - The RSS feed front matter (YAML).
+atom_link: "https://sebastienrousseau.com/2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats/rss.xml"
+category: "Quantum"
+docs: "https://validator.w3.org/feed/docs/rss2.html"
+generator: "Static Site Generator (SSG) (version 0.0.26)"
+item_description: "Aiwatar da ɓoyayyar bayanai ta CRYSTALS-Kyber mai ƙarfi da juriya ga quantum, don kare bayananku daga barazanar ƙididdigewa da hare-haren cryptanalytic."
+item_guid: "https://sebastienrousseau.com/2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats/rss.xml"
+item_link: "https://sebastienrousseau.com/2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats/rss.xml"
+item_pub_date: "Sun, 19 Nov 2023 09:59:00 +0000"
+item_title: "KyberLib: Garkuwa Mai Ƙarfin Rust Daga Barazanar Quantum"
+last_build_date: "Sun, 19 Nov 2023 09:59:00 +0000"
+managing_editor: "contact@sebastienrousseau.com (Sebastien Rousseau)"
+pub_date: "Sun, 19 Nov 2023 09:59:00 +0000"
+ttl: "60"
+type: "website"
+webmaster: "contact@sebastienrousseau.com"
+
+# Apple - The Apple front matter (YAML).
+apple_mobile_web_app_orientations: "portrait"
+apple_touch_icon_sizes: "192x192"
+apple-mobile-web-app-capable: "yes"
+apple-mobile-web-app-status-bar-inset: "black"
+apple-mobile-web-app-status-bar-style: "black-translucent"
+apple-mobile-web-app-title: "Sebastien Rousseau"
+apple-touch-fullscreen: "yes"
+
+# MS Application - The MS Application front matter (YAML).
+
+msapplication-navbutton-color: "0, 67, 165"
+
+# Twitter Card - The Twitter Card front matter (YAML).
+
+twitter_card: "summary"
+twitter_creator: "@wwdseb"
+twitter_description: "Aiwatar da ɓoyayyar bayanai ta CRYSTALS-Kyber mai ƙarfi da juriya ga quantum, don kare bayananku daga barazanar ƙididdigewa da hare-haren cryptanalytic."
+twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
+twitter_image_alt: "Tambarin Sebastien Rousseau"
+twitter_site: "@wwdseb"
+twitter_title: "KyberLib: Garkuwa Mai Ƙarfin Rust Daga Barazanar Quantum"
+twitter_url: "https://sebastienrousseau.com/2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats/index.html"
+
+# Humans.txt - The Humans.txt front matter (YAML).
+author_website: "https://sebastienrousseau.com/2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats/index.html"
+author_twitter: "@wwdseb"
+author_location: "London, UK"
+thanks: "Godiya da karantawa!"
+site_last_updated: "2023-11-28"
+site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
+site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
+site_software: "Static Site Generator, Rust"
+
+excerpt: "KyberLib laburare ne da aka gina akan Rust wanda ke kare bayananku daga barazanar kwamfyutocin quantum. An gina shi akan algorithm na CRYSTALS-Kyber, KyberLib yana ba da tsaro na musamman,..."
+last_reviewed: "2026-05-11"
 ---
-
-![Empowering Secure Communications in the Quantum Era with KyberLib](https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg).class="img-fluid clearfix"
-
----
-
-> **TL;DR.** A Robust and Quantum-Safe Cryptography Implementation of the CRYSTALS-Kyber Algorithm, to Protect Your Data from Quantum Threats and Cryptanalytic Attacks.
->
-> **Mahimman Bayanai**
->
-> - DRAFT translation: this article is a Hausa stub generated from the English source. Body text is intentionally left in English until a native reviewer signs off.
-> - Source title: *KyberLib: Rust CRYSTALS-Kyber for Post-Quantum*.
-> - Source subtitle: *KyberLib, a robust Rust implementation of CRYSTALS-Kyber for the quantum era.*.
-> - Editorial note: replace this block with hand-translated copy before flipping `active=True` for ha in `scripts/_lang_registry.py`.
-
----
-
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
-<p class="post-lead-tldr"><strong>TL;DR.</strong> A Robust and Quantum-Safe Cryptography Implementation of the CRYSTALS-Kyber Algorithm, to Protect Your Data from Quantum Threats and Cryptanalytic Attacks.</p>
-<p class="post-lead-heading"><strong>Key takeaways</strong></p>
+<aside class="post-lead" aria-label="Taƙaitaccen labarin">
+<p class="post-lead-tldr"><strong>TL;DR.</strong> Aiwatar da ɓoyayyar bayanai ta CRYSTALS-Kyber mai ƙarfi da juriya ga quantum, don kare bayananku daga barazanar ƙididdigewa da hare-haren cryptanalytic.</p>
+<p class="post-lead-heading"><strong>Muhimman abubuwan da za a ɗauka</strong></p>
 <ul class="post-lead-takeaways">
-  <li><strong>Securing Your Data in the Quantum Age.</strong> The advent of quantum computing has introduced a significant threat to conventional cryptographic security measures.</li>
-  <li><strong>Exploring Lattice-Based Cryptography.</strong> Lattice-Based Cryptography (LBC) is emerging as a frontrunner in QSC, offering a promising Post-Quantum Cryptographic (PQC) solution.</li>
-  <li><strong>KyberLib: A Rust Library for Quantum-Resistant Cryptography.</strong> KyberLib harnesses the power of CRYSTALS-Kyber to deliver enhanced memory safety and robust system-level security.</li>
-  <li><strong>Protecting Web Applications With Quantum-Resistant Cryptography.</strong> Designed for a minimal memory footprint, KyberLib is ideal for embedded and resource-limited systems without compromising security.</li>
+  <li><strong>Kare Bayananku a Zamanin Quantum.</strong> Zuwan kwamfyutocin quantum ya haifar da babbar barazana ga hanyoyin tsaron ɓoyayyar bayanai na gargajiya.</li>
+  <li><strong>Bincika Lattice-Based Cryptography.</strong> Lattice-Based Cryptography (LBC) yana fitowa a matsayin jagora a cikin QSC, yana ba da ingantaccen shiri na Post-Quantum Cryptographic (PQC).</li>
+  <li><strong>KyberLib: Laburaren Rust don Cryptography Mai Juriya ga Quantum.</strong> KyberLib yana amfani da ƙarfin CRYSTALS-Kyber don samar da ingantaccen tsaron ƙwaƙwalwar ajiya da kuma ingantaccen tsaro a matakin tsari.</li>
+  <li><strong>Kare Aikace-aikacen Yanar Gizo Tare Da Cryptography Mai Juriya Ga Quantum.</strong> An tsara shi don ƙaramin fili a ƙwaƙwalwar ajiya, KyberLib ya dace sosai don tsarin da aka saka (embedded) da waɗanda ke da iyakantaccen albarkatu ba tare da rage tsaro ba.</li>
 </ul>
-<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2024-04-22-bug-discovered-in-quantum-algorithm-for-lattice-based-crypto/index.html">Quantum Lattice Crypto: Bug in Chen's LWE Attack</a>, <a href="https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html">CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age</a>, <a href="https://sebastienrousseau.com/2026-05-16-best-cloud-infrastructure-architecture-2026">The Best Cloud Infrastructure Architecture in 2026: An AI-Native, Multi-Cloud, Quantum-Aware Blueprint for Financial Services</a>.</p>
+<p class="post-lead-related"><strong>Karatun da ke da alaƙa:</strong> <a href="https://sebastienrousseau.com/2024-04-22-bug-discovered-in-quantum-algorithm-for-lattice-based-crypto/index.html">Quantum Lattice Crypto: Kuskure a cikin Harin LWE na Chen</a>, <a href="https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html">CRYSTALS-Kyber: Algorithm na Kariya a Zamanin Quantum</a>, <a href="https://sebastienrousseau.com/2023-11-05-mathematical-and-cryptographic-constants-for-rust-security/index.html">Kafaffen Lissafi da Ɓoyayyar Bayanai don Tsaron Rust</a>.</p>
 </aside>
 <!-- lead-end -->
 
-[![Empowering Secure Communications in the Quantum Era with KyberLib](https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg).class=\"img-fluid clearfix\"][07]
+[![Ƙarfafa Sadarwa Mai Aminci a Zamanin Quantum tare da KyberLib](https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg).class=\"img-fluid clearfix\"][07]
 
-`KyberLib` is a Rust-based library that protects your data from the potential threat of quantum computing. Built upon the **[CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html) algorithm**, `KyberLib` delivers exceptional security, efficiency, and versatility, easily integrating into various platforms, including `no-std` environments.
+`KyberLib` laburare ne da aka gina akan Rust wanda ke kare bayananku daga barazanar kwamfyutocin quantum. An gina shi akan **[algorithm na CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html)**, `KyberLib` yana ba da tsaro na musamman, inganci, da kuma damar amfani ta hanyoyi daban-daban, tare da sauƙin haɗewa cikin dandamali daban-daban, gami da muhallan `no-std`.
 
 ![divider][divider].class=\"m-10 w-100\"
 
-## Securing Your Data in the Quantum Age
+## Kare Bayananku a Zamanin Quantum
 
-The advent of quantum computing has introduced a significant threat to conventional cryptographic security measures. To address this challenge, the field of Quantum-Safe Cryptography (QSC) is swiftly evolving.
+Zuwan kwamfyutocin quantum ya haifar da babbar barazana ga hanyoyin tsaron ɓoyayyar bayanai na gargajiya. Don magance wannan ƙalubale, fannin Quantum-Safe Cryptography (QSC) yana haɓaka cikin sauri.
 
-At the forefront of this transformative movement is the National Institute of Standards and Technology (NIST), which is spearheading the standardisation of QSC algorithms.
+A kan gaba a wannan yunkuri na sauyi akwai Hukumar Kula da Ma'auni da Fasaha ta Kasa (NIST), wacce ke jagorantar daidaita algorithms na QSC.
 
-In 2023, NIST shortlisted four innovative algorithms:
+A cikin 2023, NIST ta zaɓi algorithms guda huɗu masu inganci:
 
 - [**[CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html)** ⧉][01] (key encapsulation mechanism)
 - [**CRYSTALS-Dilithium** ⧉][02] (digital signatures)
 - [**FALCON** ⧉][03] (lightweight digital signatures)
 - [**SPHINCS+** ⧉][04] (hash-based digital signatures)
 
-These groundbreaking algorithms are founded on diverse mathematical principles, including lattice-based cryptography, hash-based cryptography, and code-based cryptography with the aim of providing a robust defence against quantum attacks.
+Waɗannan algorithms na musamman sun samo asali ne daga ƙa'idodin lissafi daban-daban, gami da lattice-based cryptography, hash-based cryptography, da code-based cryptography da nufin samar da kariya mai ƙarfi daga hare-haren quantum.
 
-## Exploring Lattice-Based Cryptography
+## Bincika Lattice-Based Cryptography
 
-Lattice-Based Cryptography (LBC) is emerging as a frontrunner in QSC, offering a promising Post-Quantum Cryptographic (PQC) solution. LBC is versatile, with applications ranging from key-encapsulation mechanisms (KEMs), digital signatures, and public-key encryption schemes rooted in mathematical lattices.
+Lattice-Based Cryptography (LBC) yana fitowa a matsayin jagora a cikin QSC, yana ba da ingantaccen shiri na Post-Quantum Cryptographic (PQC). LBC yana da amfani ta hanyoyi da dama, tare da aikace-aikace kama daga key-encapsulation mechanisms (KEMs), digital signatures, da kuma tsarin ɓoye bayanan sirri na jama'a (public-key encryption schemes) waɗanda suka samo asali daga lattices na lissafi.
 
-Lattices are a fundamental concept in mathematics that have found applications in various fields, including cryptography. In simple terms, a lattice is a regular arrangement of points in space, forming a grid-like structure. These points are connected by lines, forming a network of interconnected cells. The specific arrangement of points and the spacing between them define the unique characteristics of a lattice.
+Lattices wani muhimmin ra'ayi ne a fannin lissafi wanda ya sami aikace-aikace a fannoni daban-daban, gami da cryptography. A sauƙaƙe, lattice tsari ne na yau da kullun na ɗigo (points) a cikin sarari, wanda ke samar da tsari mai kama da grid. Waɗannan ɗigo-ɗigon suna haɗe da layuka, suna samar da hanyar sadarwa ta sel masu haɗin gwiwa. Tsari na musamman na ɗigo-ɗigon da tazarar da ke tsakaninsu suna bayyana siffofi na musamman na lattice.
 
-### 3D Lattice Representation with Basis Vectors
+### Hoton Lattice na 3D tare da Basis Vectors
 
-This graph presents a 3D lattice structure generated by three basis vectors:
+Wannan jadawalin yana nuna tsarin lattice na 3D wanda basis vectors guda uku suka samar:
 
-- `b1 = [1, 0, 0]` in red,
-- `b2 = [0, 1, 0]` in green, and
-- `b3 = [0, 0, 1]` in blue.
+- `b1 = [1, 0, 0]` cikin ja,
+- `b2 = [0, 1, 0]` cikin kore, kuma
+- `b3 = [0, 0, 1]` cikin shuɗi.
 
-Each point on the lattice is formed by combining these basis vectors in various integer proportions, creating a grid-like pattern that extends in all three spatial dimensions. The visualisation captures the essence of a 3D lattice, a concept widely used in physics and mathematics to represent the regular, repeating arrangement of points in space.
+Kowane ɗigo a kan lattice yana samuwa ne ta hanyar haɗa waɗannan basis vectors a cikin ma'auni na lambobi daban-daban, yana samar da tsari mai kama da grid wanda ke bazuwa a cikin dukkanin sassa uku na sarari. Wannan hoton yana nuna ainihin lattice na 3D, ra'ayin da ake amfani da shi sosai a fannin kimiyyar lissafi (physics) da lissafi don nuna tsari na yau da kullun na ɗigo-ɗigo masu maimaita kansu a cikin sarari.
 
-![3D Lattice Representation with Basis Vectors][06].class=\"img-fluid mx-auto d-block\"
+![Hoton Lattice na 3D tare da Basis Vectors][06].class=\"img-fluid mx-auto d-block\"
 
-In cryptography, lattices are employed as the basis for certain cryptographic algorithms. Lattice-Based Cryptography (LBC) exploits the mathematical properties of lattices to create secure cryptographic schemes that are resistant to attacks from quantum computers. Quantum computers pose a significant threat to conventional cryptography, as they can efficiently break algorithms that rely on factoring large numbers or solving discrete logarithm problems.
+A cikin cryptography, ana amfani da lattices azaman tushe don wasu algorithms na cryptographic. Lattice-Based Cryptography (LBC) yana amfani da kaddarorin lissafi na lattices don ƙirƙirar tsarin cryptographic masu aminci waɗanda ke da juriya ga hare-hare daga kwamfyutocin quantum. Kwamfyutocin quantum suna haifar da babbar barazana ga hanyoyin ɓoyayyar bayanai na gargajiya, saboda suna iya rushe algorithms cikin sauri waɗanda ke dogara ga raba manyan lambobi (factoring large numbers) ko magance matsalolin discrete logarithm.
 
-CRYSTALS-Kyber exemplifies the strengths of LBC, providing robust resistance against quantum attacks coupled with exceptional efficiency and key size. Its multiple platforms and compatibility with cryptography make it a reliable quantum-era data security option.
+[CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html) yana nuna misalin ƙarfin LBC, yana ba da juriya mai ƙarfi ga hare-haren quantum tare da ingantaccen aiki na musamman da kuma girman mabuɗi (key size). Dandamalinsa daban-daban da daidaituwarsa da cryptography sun sa ya zama zaɓi mai inganci don tsaron bayanai a zamanin quantum.
 
-The CRYSTALS-Kyber current specifications are as follows:
+Bayanan martaba na yanzu na [CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html) sune kamar haka:
 
-- **Kyber512**: Provides a security level equivalent to 128-bit AES encryption, safeguarding sensitive data with industry-standard protection.
-- **Kyber768**: Provides a security level equivalent to 256-bit AES encryption, ensuring the confidentiality of highly sensitive information.
-- **Kyber1024**: Provides a security level exceeding 256-bit AES encryption, offering robust protection against quantum attacks and safeguarding data integrity far into the future.
+- **Kyber512**: Yana ba da matakin tsaro da ya dace da ɓoyayyar bayanai ta AES mai bit 128, yana kare bayanai masu mahimmanci tare da kariyar ma'aunin masana'antu.
+- **Kyber768**: Yana ba da matakin tsaro da ya dace da ɓoyayyar bayanai ta AES mai bit 256, yana tabbatar da sirrin bayanai masu matuƙar mahimmanci.
+- **Kyber1024**: Yana ba da matakin tsaro da ya wuce ɓoyayyar bayanai ta AES mai bit 256, yana ba da kariya mai ƙarfi daga hare-haren quantum da kuma kiyaye amincin bayanai nesa zuwa nan gaba.
 
-### Comparison of Security Levels between Classical and Quantum-Resistant Algorithms
+### Kwatanta Matakan Tsaro Tsakanin Algorithms na Gargajiya da Masu Juriya ga Quantum
 
-This bar chart illustrates the relative security levels of classical cryptographic algorithms like RSA-2048 and Elliptic Curve Digital Signature Algorithm (ECDSA) compared to the specifications of quantum-resistant CRYSTALS-Kyber Algorithm variants (Kyber512, Kyber768, and Kyber1024).
+Wannan jadawalin sanduna (bar chart) yana nuna matakan tsaro na dangi na classical cryptographic algorithms kamar RSA-2048 da Elliptic Curve Digital Signature Algorithm (ECDSA) idan aka kwatanta da bayanan martaba na quantum-resistant [CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html) Algorithm variants (Kyber512, Kyber768, da Kyber1024).
 
-While the chart provides a visual comparison, it's crucial to note that the security levels aren't directly comparable due to their foundation on different mathematical principles.
+Kodayake jadawalin yana ba da kwatancen gani na gaskiya, yana da mahimmanci a lura cewa matakan tsaron ba za a iya kwatanta su kai tsaye ba saboda tushensu a kan ƙa'idodin lissafi daban-daban.
 
-However, the chart does provide a useful reference point for understanding the security levels of quantum-resistant algorithms.
+Koyaya, jadawalin yana ba da mafitar tunani mai amfani don fahimtar matakan tsaro na algorithms masu juriya ga quantum.
 
 ![Lattice-Based Cryptography][05].class=\"img-fluid mx-auto d-block\"
 
 ![divider][divider].class=\"m-10 w-100\"
 
-## KyberLib: A Rust Library for Quantum-Resistant Cryptography
+## KyberLib: Laburaren Rust Don Cryptography Mai Juriya Ga Quantum
 
-KyberLib harnesses the power of CRYSTALS-Kyber to deliver enhanced memory safety and robust system-level security. It supports multiple CRYSTALS-Kyber specifications (Kyber512, Kyber768, Kyber1024), offering a range of security levels to suit your specific needs. Its `no_std` compliance makes it an ideal choice for embedded systems, while its WebAssembly (WASM) compatibility facilitates seamless integration into web applications.
+KyberLib yana amfani da ƙarfin [CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html) don samar da ingantaccen tsaron ƙwaƙwalwar ajiya da kuma ingantaccen tsaro a matakin tsari. Yana tallafawa bayanan martaba na [CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html) da yawa (Kyber512, Kyber768, Kyber1024), yana ba da matakan tsaro daban-daban don dacewa da takamaiman bukatunku. Bin ƙa'idojinsa na `no_std` ya sa ya zama kyakkyawan zaɓi don embedded systems (tsarin da aka saka), yayin da dacewarsa da WebAssembly (WASM) ke sauƙaƙe haɗin gwiwa mara kyau cikin aikace-aikacen yanar gizo.
 
 ![divider][divider].class=\"m-10 w-100\"
 
-## Protecting Web Applications With Quantum-Resistant Cryptography
+## Kare Aikace-aikacen Yanar Gizo Tare Da Cryptography Mai Juriya Ga Quantum
 
-Designed for a minimal memory footprint, KyberLib is ideal for embedded and resource-limited systems without compromising security. Its Rust-based implementation capitalises on the language's safety features, fortifying the security offered by the CRYSTALS-Kyber algorithm.
+An tsara shi don ƙaramin fili a ƙwaƙwalwar ajiya, KyberLib ya dace sosai don tsarin da aka saka da waɗanda ke da iyakantaccen albarkatu ba tare da rage tsaro ba. Aiwatar da shi da aka gina akan Rust yana amfani da fa'idodin tsaro na yaren, yana ƙarfafa tsaron da algorithm na [CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html) ke bayarwa.
 
-Additionally, KyberLib's WebAssembly compatibility enhances its utility in web applications, guaranteeing that it remains a vital tool in the dynamic realm of cryptography.
+Haka kuma, dacewar KyberLib da WebAssembly yana haɓaka amfaninsa a cikin aikace-aikacen yanar gizo, yana ba da tabbacin cewa ya kasance muhimmin kayan aiki a cikin fannin cryptography mai cike da sauye-sauye.
 
-[Get Started with KyberLib Now! ⧉][00] Effortless to install, free for both personal and commercial use, KyberLib is your go-to solution for quantum-resistant cryptography.
+[Fara Amfani da KyberLib Yanzu! ⧉][00] Yana da sauƙin shigarwa, kyauta don amfanin kai da na kasuwanci, KyberLib shine mafita ta musamman don quantum-resistant cryptography.
 
-[00]: https://kyberlib.com/getting-started/index.html "Getting Started"
-[01]: https://pq-crystals.org/kyber/ "Kyber: A CCA-secure module-lattice-based KEM"
-[02]: https://pq-crystals.org/dilithium/ "Dilithium: A CCA-secure lattice-based signature scheme"
-[03]: https://falcon-sign.info/ "FALCON: A post-quantum signature scheme"
-[04]: https://sphincs.org/ "SPHINCS+: A stateless hash-based signature scheme"
-[05]: https://cloudcdn.pro/stocks/diagrams/kyber-vs-classical.svg "Comparison of Security Levels between Classical and Quantum-Resistant Algorithms"
-[06]: https://cloudcdn.pro/stocks/diagrams/3D-lattice-graph.svg "3D Lattice Representation with Basis Vectors"
-[07]: https://kyberlib.com/ "Privacy and Security in a Quantum World"
+[00]: https://kyberlib.com/getting-started/index.html "Farawa"
+[01]: https://pq-crystals.org/kyber/ "Kyber: CCA-secure module-lattice-based KEM"
+[02]: https://pq-crystals.org/dilithium/ "Dilithium: CCA-secure lattice-based signature scheme"
+[03]: https://falcon-sign.info/ "FALCON: Post-quantum signature scheme"
+[04]: https://sphincs.org/ "SPHINCS+: Stateless hash-based signature scheme"
+[05]: https://cloudcdn.pro/stocks/diagrams/kyber-vs-classical.svg "Kwatanta Matakan Tsaro Tsakanin Algorithms na Gargajiya da Masu Juriya ga Quantum"
+[06]: https://cloudcdn.pro/stocks/diagrams/3D-lattice-graph.svg "Hoton Lattice na 3D tare da Basis Vectors"
+[07]: https://kyberlib.com/ "Sirri da Tsaro a Duniyar Quantum"
 
-[divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Divider"
+[divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Raba Bayani"
+
+<!-- enrich-start -->
+<aside class="author-card" aria-label="Game da marubucin"><img alt="Hoton Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Babban masanin fasahar banki da ke rubutu a kan applied AI, hijirar ISO 20022, post-quantum cryptography don ayyukan kuɗi, da sauye-sauyen tsari na biyan kuɗi na wholesale.</span><span class="author-credentials">Fiye da shekaru 20 a faɗin HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Cikakken bayani</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<p class="post-reviewed">Wanda aka duba na ƙarshe a <time datetime="2026-06-23">2026-06-23</time>.</p>
+<aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Karatun da ke da alaƙa</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/2024-04-22-bug-discovered-in-quantum-algorithm-for-lattice-based-crypto/index.html" class="related-media" aria-label="Quantum Lattice Crypto: Kuskure a cikin Harin LWE na Chen" tabindex="-1"><img alt="Hoton da aka samar ta amfani da MidJourney - Hanyar sadarwa ta nodes na dijital a cikin launukan ja da shuɗi." src="https://cloudcdn.pro/stocks/images/digital-nodes.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2024-04-22-bug-discovered-in-quantum-algorithm-for-lattice-based-crypto/index.html">Quantum Lattice Crypto: Kuskure a cikin Harin LWE na Chen</a></h3><p><time datetime="2024-04-22">2024-04-22</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html" class="related-media" aria-label="CRYSTALS-Kyber: Algorithm na Kariya a Zamanin Quantum" tabindex="-1"><img alt="Kwamfutar quantum ta zamani kuma mai kyawun tsari" src="https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html">CRYSTALS-Kyber: Algorithm na Kariya a Zamanin Quantum</a></h3><p><time datetime="2023-11-19">2023-11-19</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2023-11-05-mathematical-and-cryptographic-constants-for-rust-security/index.html" class="related-media" aria-label="Kafaffen Lissafi da Ɓoyayyar Bayanai don Tsaron Rust" tabindex="-1"><img alt="Lissafin mathematics" src="https://cloudcdn.pro/stocks/images/antoine-dautry-05A-kdOH6Hw.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2023-11-05-mathematical-and-cryptographic-constants-for-rust-security/index.html">Kafaffen Lissafi da Ɓoyayyar Bayanai don Tsaron Rust</a></h3><p><time datetime="2023-11-05">2023-11-05</time></p></footer></article>
+</div>
+</aside>
+<!-- enrich-end -->
+---
