@@ -249,9 +249,17 @@ Every page carries Schema.org JSON-LD (author, article type, breadcrumbs, cited 
 ./build.sh          # compile the full site to public/
 ./build.sh --serve  # build, then serve public/ on http://127.0.0.1:8000
 make test           # run the unit suite
+make verify         # full repo-integrity regression suite (mirrors CI)
 ```
 
 Build, serve, inspect in the browser, and confirm the tests are green before pushing.
+
+`make verify` is the one-command regression gate: it runs lint + type-check,
+the full build with its 37 in-build gates (CSP, SRI, i18n parity/hreflang,
+search-index), the unit suite against the freshly-built tree, then JSON-LD
+validation, a strict internal-link audit, and SBOM generation — the same set CI
+enforces before deploy. Run it after `make bootstrap` (it needs the pinned
+`ssg` 0.0.44).
 
 ## CI gates
 

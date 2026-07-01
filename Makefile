@@ -1,4 +1,4 @@
-.PHONY: bootstrap build serve regenerate audit clean test lint typecheck sbom coverage publish-today
+.PHONY: bootstrap build serve regenerate audit audit-external validate test-search-index test-i18n clean test lint typecheck sbom coverage publish-today verify
 
 # Default target.
 build:
@@ -91,6 +91,26 @@ bootstrap:
 	@echo "==> python build + dev deps (hash-pinned lock — same as CI)"
 	@pip install --quiet --require-hashes -r requirements-dev.lock
 	@echo "==> bootstrap complete. Next: make build  (first build target: under 10 min)."
+
+# Full repo-integrity regression suite. Runs every gate the way CI does,
+# fail-fast. Cheap source checks (lint, types) run first; then `build`,
+# which itself runs the 37 in-build gates (CSP, SRI, i18n parity/hreflang,
+# search-index, …). The pytest suite runs AFTER build because part of it
+# (test_build_output) walks the freshly-built public/ tree. Finally the
+# post-build gates that need public/ (JSON-LD, internal links, SBOM).
+# Green here == the same green CI enforces before deploy.
+#
+# Requires a bootstrapped toolchain (make bootstrap) — notably ssg 0.0.44
+# (ADR-0002); ssg 0.0.45 emits a known lang-leakage false positive.
+verify:
+	@echo "==> [1/7] lint (ruff + naming)";         $(MAKE) --no-print-directory lint
+	@echo "==> [2/7] typecheck (mypy strict tier)"; $(MAKE) --no-print-directory typecheck
+	@echo "==> [3/7] build + in-build gates";        $(MAKE) --no-print-directory build
+	@echo "==> [4/7] unit tests (pytest, post-build)"; $(MAKE) --no-print-directory test
+	@echo "==> [5/7] JSON-LD schema validation";    $(MAKE) --no-print-directory validate
+	@echo "==> [6/7] internal link audit (strict)"; $(MAKE) --no-print-directory audit
+	@echo "==> [7/7] SBOM generate + validate";     $(MAKE) --no-print-directory sbom
+	@echo "✓ verify: full repo integrity green"
 
 # Wipe build output.
 clean:
