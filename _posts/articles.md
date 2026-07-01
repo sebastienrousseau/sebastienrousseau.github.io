@@ -123,7 +123,7 @@ site_software: "Static Site Generator, Rust"
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-06-29-post-quantum-security-scorecard-board-level-fiduciary-agility-2026/index.html" title="The 2026 Post-Quantum Security Scorecard: A Board-Level Metric Framework">
-<img alt="Abstract digital boardroom table dissolving into quantum lattices — visualising the strategic governance required to migrate core banking infrastructure to FIPS 203 and 204" src="https://cloudcdn.pro/stocks/images/quantum-governance-AbC123XyZ.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Abstract digital boardroom table dissolving into quantum lattices — visualising the strategic governance required to migrate core banking infrastructure to FIPS 203 and 204" src="https://cloudcdn.pro/stocks/images/vipul-jha-a4X1cdC1QAc.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Post-Quantum · Cryptography · Banking</span>
