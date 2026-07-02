@@ -902,14 +902,14 @@ def test_build_post_nav_index_chronological_order(tmp_path, monkeypatch):
 
 
 def test_inject_mermaid_no_op_when_no_mermaid_block():
-    from postbuild_lib.article_furniture import inject_mermaid
+    from postbuild_lib.content_blocks import inject_mermaid
 
     html = "<pre><code>plain code</code></pre>"
     assert inject_mermaid(html) == html
 
 
 def test_inject_mermaid_converts_fenced_block():
-    from postbuild_lib.article_furniture import inject_mermaid
+    from postbuild_lib.content_blocks import inject_mermaid
 
     html = (
         '<meta http-equiv="Content-Security-Policy" content="script-src \'self\'">'
@@ -928,7 +928,7 @@ def test_inject_mermaid_widens_style_src_and_strips_hashes():
     - Strips any existing sha256 hashes (CSP3: hashes silently disable
       'unsafe-inline' if both are present in the same source list).
     """
-    from postbuild_lib.article_furniture import inject_mermaid
+    from postbuild_lib.content_blocks import inject_mermaid
 
     html = (
         '<meta http-equiv="Content-Security-Policy" '
@@ -952,7 +952,7 @@ def test_inject_mermaid_widens_style_src_and_strips_hashes():
 def test_inject_mermaid_no_re_widen_when_already_widened():
     """Idempotent: if the CSP already has cdn.jsdelivr.net AND
     'unsafe-inline', the patch leaves it alone."""
-    from postbuild_lib.article_furniture import inject_mermaid
+    from postbuild_lib.content_blocks import inject_mermaid
 
     html = (
         '<meta http-equiv="Content-Security-Policy" '
@@ -1365,7 +1365,7 @@ def test_inject_mermaid_strips_inner_span_wrappers():
     """Inner ``<span>`` tags inside the mermaid code block are stripped, and
     the meta-CSP gets ``cdn.jsdelivr.net`` injected. Idempotent when the
     CSP already carries the host (line 735)."""
-    from postbuild_lib.article_furniture import inject_mermaid
+    from postbuild_lib.content_blocks import inject_mermaid
 
     html = (
         '<meta http-equiv="Content-Security-Policy" '
@@ -1382,7 +1382,7 @@ def test_inject_mermaid_strips_inner_span_wrappers():
 
 def test_inject_mermaid_inner_span_stripped_from_code():
     """``<span>`` markup inside the mermaid block is removed."""
-    from postbuild_lib.article_furniture import inject_mermaid
+    from postbuild_lib.content_blocks import inject_mermaid
 
     html = (
         '<meta http-equiv="Content-Security-Policy" content="script-src \'self\'">'
@@ -1587,7 +1587,7 @@ def test_inject_citations_no_op_without_blogposting():
 def test_inject_mermaid_no_op_when_block_unchanged_after_sub():
     """A ``language-mermaid`` reference inside text (no actual <pre><code>) →
     the regex sub returns the input unchanged (line 726)."""
-    from postbuild_lib.article_furniture import inject_mermaid
+    from postbuild_lib.content_blocks import inject_mermaid
 
     html = "<p>I mention language-mermaid as a string but it is not a code block</p>"
     assert inject_mermaid(html) == html
@@ -2288,13 +2288,13 @@ def test_inject_byline_strap_french_role_when_html_lang_fr():
 
 
 def test_inject_pullquotes_no_op_without_blogposting():
-    from postbuild_lib.article_furniture import inject_pullquotes
+    from postbuild_lib.content_blocks import inject_pullquotes
 
     assert inject_pullquotes("<p>plain page</p>") == "<p>plain page</p>"
 
 
 def test_inject_pullquotes_promotes_blockquote_pull_to_aside():
-    from postbuild_lib.article_furniture import inject_pullquotes
+    from postbuild_lib.content_blocks import inject_pullquotes
 
     body = (
         '<section class="ap-hero"><h1>T</h1></section>'
@@ -2310,7 +2310,7 @@ def test_inject_pullquotes_promotes_blockquote_pull_to_aside():
 
 
 def test_inject_pullquotes_idempotent():
-    from postbuild_lib.article_furniture import inject_pullquotes
+    from postbuild_lib.content_blocks import inject_pullquotes
 
     body = (
         '<section class="ap-hero"><h1>T</h1></section>'
@@ -2323,7 +2323,7 @@ def test_inject_pullquotes_idempotent():
 
 
 def test_inject_pullquotes_handles_multiple_per_article():
-    from postbuild_lib.article_furniture import inject_pullquotes
+    from postbuild_lib.content_blocks import inject_pullquotes
 
     body = (
         '<section class="ap-hero"><h1>T</h1></section>'
@@ -2338,7 +2338,7 @@ def test_inject_pullquotes_handles_multiple_per_article():
 
 
 def test_inject_pullquotes_ignores_plain_blockquotes():
-    from postbuild_lib.article_furniture import inject_pullquotes
+    from postbuild_lib.content_blocks import inject_pullquotes
 
     body = (
         '<section class="ap-hero"><h1>T</h1></section>'
@@ -2365,20 +2365,20 @@ def _ws2_body_with_h2s(n: int) -> str:
 
 
 def test_inject_section_rules_no_op_without_blogposting():
-    from postbuild_lib.article_furniture import inject_section_rules
+    from postbuild_lib.content_blocks import inject_section_rules
 
     assert inject_section_rules("<p>plain page</p>") == "<p>plain page</p>"
 
 
 def test_inject_section_rules_no_op_below_threshold():
-    from postbuild_lib.article_furniture import inject_section_rules
+    from postbuild_lib.content_blocks import inject_section_rules
 
     page = _ws2_page(body=_ws2_body_with_h2s(5))
     assert inject_section_rules(page) == page
 
 
 def test_inject_section_rules_inserts_for_six_or_more_h2s_skipping_first():
-    from postbuild_lib.article_furniture import inject_section_rules
+    from postbuild_lib.content_blocks import inject_section_rules
 
     out = inject_section_rules(_ws2_page(body=_ws2_body_with_h2s(6)))
     # 6 prose h2s → 5 rules (before h2#2..h2#6, first one skipped).
@@ -2388,14 +2388,14 @@ def test_inject_section_rules_inserts_for_six_or_more_h2s_skipping_first():
 
 
 def test_inject_section_rules_idempotent():
-    from postbuild_lib.article_furniture import inject_section_rules
+    from postbuild_lib.content_blocks import inject_section_rules
 
     once = inject_section_rules(_ws2_page(body=_ws2_body_with_h2s(6)))
     assert inject_section_rules(once) == once
 
 
 def test_inject_section_rules_ignores_h2_without_id_attribute():
-    from postbuild_lib.article_furniture import inject_section_rules
+    from postbuild_lib.content_blocks import inject_section_rules
 
     # 6 bare <h2>s (no id) — these are ToC / Sources / aside headings.
     # inject_anchor_links_and_toc didn't run, so no prose h2 has an id.
@@ -2413,20 +2413,20 @@ def test_inject_section_rules_ignores_h2_without_id_attribute():
 
 
 def test_inject_footnotes_no_op_without_blogposting():
-    from postbuild_lib.article_furniture import inject_footnotes
+    from postbuild_lib.content_blocks import inject_footnotes
 
     assert inject_footnotes("<p>plain page</p>") == "<p>plain page</p>"
 
 
 def test_inject_footnotes_no_op_without_markers():
-    from postbuild_lib.article_furniture import inject_footnotes
+    from postbuild_lib.content_blocks import inject_footnotes
 
     page = _ws2_page()  # default body has no [^n] markers
     assert inject_footnotes(page) == page
 
 
 def test_inject_footnotes_no_op_when_marker_without_definition():
-    from postbuild_lib.article_furniture import inject_footnotes
+    from postbuild_lib.content_blocks import inject_footnotes
 
     body = (
         '<section class="ap-hero"><h1>T</h1></section>'
@@ -2439,7 +2439,7 @@ def test_inject_footnotes_no_op_when_marker_without_definition():
 
 
 def test_inject_footnotes_wraps_markers_and_emits_section():
-    from postbuild_lib.article_furniture import inject_footnotes
+    from postbuild_lib.content_blocks import inject_footnotes
 
     body = (
         '<section class="ap-hero"><h1>T</h1></section>'
@@ -2464,7 +2464,7 @@ def test_inject_footnotes_wraps_markers_and_emits_section():
 
 
 def test_inject_footnotes_idempotent():
-    from postbuild_lib.article_furniture import inject_footnotes
+    from postbuild_lib.content_blocks import inject_footnotes
 
     body = (
         '<section class="ap-hero"><h1>T</h1></section>'

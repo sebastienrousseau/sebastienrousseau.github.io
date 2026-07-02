@@ -51,7 +51,7 @@ def test_compute_word_count_strips_aside_blocks():
 
 
 def test_convert_faq_to_qa_rewrites_strong_q_a_pattern():
-    from postbuild_lib.article_furniture import _convert_faq_to_qa
+    from postbuild_lib.content_blocks import _convert_faq_to_qa
 
     html = (
         '<main><div class="wrap">'
@@ -71,7 +71,7 @@ def test_convert_faq_to_qa_rewrites_strong_q_a_pattern():
 
 
 def test_convert_faq_to_qa_no_op_without_faq_h2():
-    from postbuild_lib.article_furniture import _convert_faq_to_qa
+    from postbuild_lib.content_blocks import _convert_faq_to_qa
 
     html = '<main><div class="wrap"><h2 id="intro">Hello</h2><p>Body.</p></div></main>'
     assert _convert_faq_to_qa(html) == html
@@ -138,7 +138,7 @@ def test_inject_howto_idempotent_when_already_present():
 def test_convert_faq_to_qa_handles_no_qa_pairs():
     """A FAQ section whose body has no <p><strong>Q?</strong></p> pattern
     is returned unchanged (line 520)."""
-    from postbuild_lib.article_furniture import _convert_faq_to_qa
+    from postbuild_lib.content_blocks import _convert_faq_to_qa
 
     html = (
         '<main><div class="wrap">'
@@ -153,7 +153,7 @@ def test_convert_faq_to_qa_handles_no_qa_pairs():
 
 def test_convert_faq_to_qa_french_uses_localised_headline():
     """A FR FAQ section uses ``Questions ?`` + ``Réponses.``."""
-    from postbuild_lib.article_furniture import _convert_faq_to_qa
+    from postbuild_lib.content_blocks import _convert_faq_to_qa
 
     html = (
         '<html lang="fr">'
