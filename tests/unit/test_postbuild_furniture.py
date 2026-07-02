@@ -121,7 +121,7 @@ def test_gh_stats_index_missing_file_returns_empty():
 
 def test_inject_anchor_dedupes_colliding_slugs():
     """Two H2s that slugify to the same value get -2 suffix on the second."""
-    from postbuild_lib.article_furniture import inject_anchor_links_and_toc
+    from postbuild_lib.navigation import inject_anchor_links_and_toc
 
     html = (
         '<script type="application/ld+json">{"@type":"BlogPosting"}</script>'
@@ -143,7 +143,7 @@ def test_inject_anchor_dedupes_colliding_slugs():
 def test_inject_anchor_empty_slug_gets_section_fallback():
     """A heading that slugifies to '' (pure Arabic, no Latin) gets
     a 'section-N' fallback so the id attribute is non-empty + unique."""
-    from postbuild_lib.article_furniture import inject_anchor_links_and_toc
+    from postbuild_lib.navigation import inject_anchor_links_and_toc
 
     html = (
         '<script type="application/ld+json">{"@type":"BlogPosting"}</script>'
@@ -697,7 +697,7 @@ def test_relative_time_handles_each_bucket():
 
 
 def test_inject_anchor_links_emits_anchor_per_heading():
-    from postbuild_lib.article_furniture import inject_anchor_links_and_toc
+    from postbuild_lib.navigation import inject_anchor_links_and_toc
 
     html = (
         '<script type="application/ld+json">{"@type":"BlogPosting"}</script>'
@@ -716,7 +716,7 @@ def test_inject_anchor_links_emits_anchor_per_heading():
 
 def test_inject_anchor_renders_toc_when_5_or_more_h2():
     """≥ 5 H2s triggers the ToC card."""
-    from postbuild_lib.article_furniture import inject_anchor_links_and_toc
+    from postbuild_lib.navigation import inject_anchor_links_and_toc
 
     body = "".join(f"<h2>Section {i}</h2>" for i in range(1, 6))
     html = (
@@ -729,7 +729,7 @@ def test_inject_anchor_renders_toc_when_5_or_more_h2():
 
 
 def test_inject_anchor_omits_toc_when_fewer_than_5_h2():
-    from postbuild_lib.article_furniture import inject_anchor_links_and_toc
+    from postbuild_lib.navigation import inject_anchor_links_and_toc
 
     html = (
         '<script type="application/ld+json">{"@type":"BlogPosting"}</script>'
@@ -744,7 +744,7 @@ def test_inject_anchor_is_idempotent():
     anchor links, no stacked TOCs. The bug this guards: a stale public/
     tree carrying last build's HTML would otherwise pick up "#" as part
     of each heading's text and stack one extra TOC every run."""
-    from postbuild_lib.article_furniture import inject_anchor_links_and_toc
+    from postbuild_lib.navigation import inject_anchor_links_and_toc
 
     body = "".join(f"<h2>Section {i}</h2>" for i in range(1, 6))
     html = (
@@ -761,7 +761,7 @@ def test_inject_anchor_is_idempotent():
 
 def test_inject_anchor_skips_when_existing_toc_present():
     """If a TOC marker is already on the page, do nothing."""
-    from postbuild_lib.article_furniture import inject_anchor_links_and_toc
+    from postbuild_lib.navigation import inject_anchor_links_and_toc
 
     html = (
         '<script type="application/ld+json">{"@type":"BlogPosting"}</script>'
@@ -775,7 +775,7 @@ def test_inject_anchor_skips_when_existing_toc_present():
 
 def test_inject_anchor_skips_when_existing_heading_anchors_present():
     """If headings already carry .heading-anchor links, do nothing."""
-    from postbuild_lib.article_furniture import inject_anchor_links_and_toc
+    from postbuild_lib.navigation import inject_anchor_links_and_toc
 
     html = (
         '<script type="application/ld+json">{"@type":"BlogPosting"}</script>'
@@ -856,7 +856,7 @@ def test_strip_duplicate_body_h1_skips_when_no_body_h1():
 
 
 def test_inject_anchor_no_op_without_blogposting():
-    from postbuild_lib.article_furniture import inject_anchor_links_and_toc
+    from postbuild_lib.navigation import inject_anchor_links_and_toc
 
     html = '<main><div class="wrap"><h2>X</h2></div></main>'
     assert inject_anchor_links_and_toc(html) == html
@@ -884,7 +884,7 @@ def test_build_post_nav_index_chronological_order(tmp_path, monkeypatch):
             encoding="utf-8",
         )
         pages.append(d / "index.html")
-    from postbuild_lib.article_furniture import build_post_nav_index
+    from postbuild_lib.navigation import build_post_nav_index
 
     idx = build_post_nav_index(pages)
     # Middle post has both prev and next
@@ -1010,7 +1010,7 @@ def _wrap_blogposting(body: str) -> str:
 
 
 def test_inject_prev_next_nav_renders_both_links():
-    from postbuild_lib.article_furniture import inject_prev_next_nav
+    from postbuild_lib.navigation import inject_prev_next_nav
 
     html = _wrap_blogposting("<p>body</p>")
     nav_index = {
@@ -1028,7 +1028,7 @@ def test_inject_prev_next_nav_renders_both_links():
 
 
 def test_inject_prev_next_nav_emits_stub_for_missing_neighbour():
-    from postbuild_lib.article_furniture import inject_prev_next_nav
+    from postbuild_lib.navigation import inject_prev_next_nav
 
     html = _wrap_blogposting("<p>body</p>")
     nav_index = {"2026-05-13-only": (None, ("2026-05-14-next", "Next"))}
@@ -1038,7 +1038,7 @@ def test_inject_prev_next_nav_emits_stub_for_missing_neighbour():
 
 
 def test_inject_prev_next_nav_no_op_without_blogposting():
-    from postbuild_lib.article_furniture import inject_prev_next_nav
+    from postbuild_lib.navigation import inject_prev_next_nav
 
     html = '<main><div class="wrap"><p>plain page</p></div></main>'
     assert inject_prev_next_nav(html, "foo", {"foo": (None, ("x", "X"))}) == html
@@ -1049,7 +1049,7 @@ def test_inject_prev_next_nav_emits_stub_when_slug_not_in_index():
     # (landing pages with frontmatter schema=Article, dateless reports) still
     # need a `.post-pagination` block so validate_jsonld's furniture contract
     # holds. The block is two stub spans — aria-hidden so it's invisible.
-    from postbuild_lib.article_furniture import inject_prev_next_nav
+    from postbuild_lib.navigation import inject_prev_next_nav
 
     html = _wrap_blogposting("<p>body</p>")
     out = inject_prev_next_nav(html, "unknown", {})
@@ -1059,7 +1059,7 @@ def test_inject_prev_next_nav_emits_stub_when_slug_not_in_index():
 
 
 def test_inject_prev_next_nav_idempotent_when_pagination_already_present():
-    from postbuild_lib.article_furniture import inject_prev_next_nav
+    from postbuild_lib.navigation import inject_prev_next_nav
 
     html = (
         '<script type="application/ld+json">{"@type":"BlogPosting"}</script>'
@@ -1194,7 +1194,7 @@ def test_inject_article_furniture_no_fragment_when_no_meta_inputs():
 
 def test_inject_anchor_links_handles_heading_with_no_text():
     """An empty <h2> is left untouched (line 359 path)."""
-    from postbuild_lib.article_furniture import inject_anchor_links_and_toc
+    from postbuild_lib.navigation import inject_anchor_links_and_toc
 
     html = (
         '<script type="application/ld+json">{"@type":"BlogPosting"}</script>'
@@ -1207,7 +1207,7 @@ def test_inject_anchor_links_handles_heading_with_no_text():
 
 def test_inject_anchor_links_no_op_when_no_main_div():
     """No matching ``<main><div class="wrap">…`` block → no-op."""
-    from postbuild_lib.article_furniture import inject_anchor_links_and_toc
+    from postbuild_lib.navigation import inject_anchor_links_and_toc
 
     html = (
         '<script type="application/ld+json">{"@type":"BlogPosting"}</script>'
@@ -1292,7 +1292,7 @@ def test_inject_sources_list_idempotent_when_aside_present():
 def test_nav_target_for_lang_page_uses_localised_articles_slug():
     """Dated article under ``/fr/`` resolves to the localised articles-hub slug
     (whatever the FR slug map currently says it is)."""
-    from postbuild_lib.article_furniture import _nav_target_for_lang_page, _slug_maps
+    from postbuild_lib.navigation import _nav_target_for_lang_page, _slug_maps
 
     expected_slug = _slug_maps("fr")["statics_en_to_lang"].get("articles", "articles")
     assert _nav_target_for_lang_page("fr", "2026-05-12-x") == f"/fr/{expected_slug}/index.html"
@@ -1302,7 +1302,7 @@ def test_inject_nav_active_no_op_when_no_header():
     """A page without a ``<header>`` tag is left untouched."""
     from pathlib import Path as _P
 
-    from postbuild_lib.article_furniture import inject_nav_active
+    from postbuild_lib.navigation import inject_nav_active
 
     html = '<body><a href="/about/index.html">About</a></body>'
     assert inject_nav_active(html, _P("public/about/index.html")) == html
@@ -1311,7 +1311,8 @@ def test_inject_nav_active_no_op_when_no_header():
 def test_inject_prev_next_nav_french_uses_lang_slug_and_titles():
     """A FR page resolves the EN slug, then re-maps both neighbours to FR slugs
     and overrides titles from ``fr_titles`` (covers lines 651-657)."""
-    from postbuild_lib.article_furniture import _slug_maps, inject_prev_next_nav
+    from postbuild_lib.article_furniture import _slug_maps
+    from postbuild_lib.navigation import inject_prev_next_nav
 
     html = (
         '<html lang="fr-FR">'
@@ -1340,7 +1341,8 @@ def test_inject_prev_next_nav_french_uses_lang_slug_and_titles():
 
 def test_inject_prev_next_nav_falls_back_to_en_url_when_no_lang_translation():
     """Lang variant whose neighbour has no FR translation falls back to ``/en-slug/``."""
-    from postbuild_lib.article_furniture import _slug_maps, inject_prev_next_nav
+    from postbuild_lib.article_furniture import _slug_maps
+    from postbuild_lib.navigation import inject_prev_next_nav
 
     html = (
         '<html lang="fr-FR">'
@@ -1425,7 +1427,7 @@ def test_nav_active_target_three_part_lang_path_resolves():
     (covers line 577 ``return _nav_target_for_lang_page(...)``)."""
     from pathlib import Path as _P
 
-    from postbuild_lib.article_furniture import _nav_active_target
+    from postbuild_lib.navigation import _nav_active_target
 
     target = _nav_active_target(_P("public/fr/a-propos/index.html"))
     assert target == "/fr/a-propos/index.html"
@@ -1493,7 +1495,7 @@ def test_build_post_nav_index_skips_non_dated_pages(tmp_path):
     """A page whose parent isn't a dated slug is dropped (line 426)."""
     from pathlib import Path as _P
 
-    from postbuild_lib.article_furniture import build_post_nav_index
+    from postbuild_lib.navigation import build_post_nav_index
 
     d = tmp_path / "about"
     d.mkdir(parents=True)
@@ -1510,7 +1512,7 @@ def test_build_post_nav_index_skips_translated_pages(tmp_path):
     """Posts under ``/<lang>/<slug>/`` are skipped (line 431)."""
     from pathlib import Path as _P
 
-    from postbuild_lib.article_furniture import build_post_nav_index
+    from postbuild_lib.navigation import build_post_nav_index
 
     d = tmp_path / "fr" / "2026-05-12-x"
     d.mkdir(parents=True)
@@ -1527,7 +1529,7 @@ def test_build_post_nav_index_skips_non_blogposting_pages(tmp_path):
     """A dated EN page without a BlogPosting JSON-LD is dropped (line 434)."""
     from pathlib import Path as _P
 
-    from postbuild_lib.article_furniture import build_post_nav_index
+    from postbuild_lib.navigation import build_post_nav_index
 
     d = tmp_path / "public" / "2026-05-12-x"
     d.mkdir(parents=True)
@@ -1541,7 +1543,7 @@ def test_build_post_nav_index_skips_non_blogposting_pages(tmp_path):
 
 def test_nav_target_for_lang_page_top_static_path():
     """A non-dated top-level page under ``/<lang>/`` resolves to the bare lang path."""
-    from postbuild_lib.article_furniture import _nav_target_for_lang_page
+    from postbuild_lib.navigation import _nav_target_for_lang_page
 
     assert _nav_target_for_lang_page("fr", "a-propos") == "/fr/a-propos/index.html"
 
@@ -1550,7 +1552,7 @@ def test_nav_active_target_three_part_path_unknown_lang_is_none():
     """``/zz/x/index.html`` with zz not active → ``None`` (line 577-578)."""
     from pathlib import Path as _P
 
-    from postbuild_lib.article_furniture import _nav_active_target
+    from postbuild_lib.navigation import _nav_active_target
 
     assert _nav_active_target(_P("public/zz/x/index.html")) is None
 
@@ -1559,7 +1561,7 @@ def test_inject_nav_active_no_op_when_target_is_none():
     """A page whose ``_nav_active_target`` returns ``None`` is left unchanged."""
     from pathlib import Path as _P
 
-    from postbuild_lib.article_furniture import inject_nav_active
+    from postbuild_lib.navigation import inject_nav_active
 
     # 4-part rel path → _nav_active_target returns None
     html = '<header><a href="/about/">About</a></header>'
@@ -1568,7 +1570,7 @@ def test_inject_nav_active_no_op_when_target_is_none():
 
 def test_inject_prev_next_nav_no_op_when_both_neighbours_none():
     """A slug whose nav-index entry is ``(None, None)`` is left untouched."""
-    from postbuild_lib.article_furniture import inject_prev_next_nav
+    from postbuild_lib.navigation import inject_prev_next_nav
 
     html = _wrap_blogposting("<p>body</p>")
     nav_index = {"2026-05-13-only": (None, None)}
@@ -1625,7 +1627,7 @@ def test_inject_article_furniture_no_hero_no_rewrite():
 def test_nav_active_target_home_en():
     from pathlib import Path as _P
 
-    from postbuild_lib.article_furniture import _nav_active_target
+    from postbuild_lib.navigation import _nav_active_target
 
     assert _nav_active_target(_P("public/index.html")) == "/index.html"
 
@@ -1633,7 +1635,7 @@ def test_nav_active_target_home_en():
 def test_nav_active_target_top_static_en():
     from pathlib import Path as _P
 
-    from postbuild_lib.article_furniture import _nav_active_target
+    from postbuild_lib.navigation import _nav_active_target
 
     assert _nav_active_target(_P("public/about/index.html")) == "/about/index.html"
 
@@ -1641,7 +1643,7 @@ def test_nav_active_target_top_static_en():
 def test_nav_active_target_dated_article_maps_to_articles_hub():
     from pathlib import Path as _P
 
-    from postbuild_lib.article_furniture import _nav_active_target
+    from postbuild_lib.navigation import _nav_active_target
 
     p = _P("public/2026-05-12-some-article/index.html")
     assert _nav_active_target(p) == "/articles/index.html"
@@ -1650,7 +1652,7 @@ def test_nav_active_target_dated_article_maps_to_articles_hub():
 def test_nav_active_target_returns_none_for_unknown_lang():
     from pathlib import Path as _P
 
-    from postbuild_lib.article_furniture import _nav_active_target
+    from postbuild_lib.navigation import _nav_active_target
 
     # /xx/foo/ — xx is not a registered language
     p = _P("public/xx/foo/index.html")
@@ -1660,7 +1662,7 @@ def test_nav_active_target_returns_none_for_unknown_lang():
 def test_inject_nav_active_marks_match_and_clears_others():
     from pathlib import Path as _P
 
-    from postbuild_lib.article_furniture import inject_nav_active
+    from postbuild_lib.navigation import inject_nav_active
 
     html = (
         "<header>"
@@ -1882,14 +1884,14 @@ def _crumb_page(ld: str = _CRUMB_LD, lang: str = "en-GB") -> str:
 
 
 def test_inject_breadcrumbs_no_op_without_blogposting():
-    from postbuild_lib.article_furniture import inject_breadcrumbs
+    from postbuild_lib.navigation import inject_breadcrumbs
 
     html = "<p>plain page, no BlogPosting graph</p>"
     assert inject_breadcrumbs(html) == html
 
 
 def test_inject_breadcrumbs_renders_trail_above_hero():
-    from postbuild_lib.article_furniture import inject_breadcrumbs
+    from postbuild_lib.navigation import inject_breadcrumbs
 
     out = inject_breadcrumbs(_crumb_page())
     assert '<nav class="crumbs" aria-label="Breadcrumb"><ol>' in out
@@ -1900,21 +1902,21 @@ def test_inject_breadcrumbs_renders_trail_above_hero():
 
 
 def test_inject_breadcrumbs_idempotent():
-    from postbuild_lib.article_furniture import inject_breadcrumbs
+    from postbuild_lib.navigation import inject_breadcrumbs
 
     once = inject_breadcrumbs(_crumb_page())
     assert inject_breadcrumbs(once) == once
 
 
 def test_inject_breadcrumbs_localizes_aria_label_french():
-    from postbuild_lib.article_furniture import inject_breadcrumbs
+    from postbuild_lib.navigation import inject_breadcrumbs
 
     out = inject_breadcrumbs(_crumb_page(lang="fr-FR"))
     assert 'aria-label="Fil d&#x27;Ariane"' in out
 
 
 def test_inject_breadcrumbs_escapes_title_html():
-    from postbuild_lib.article_furniture import inject_breadcrumbs
+    from postbuild_lib.navigation import inject_breadcrumbs
 
     ld = _CRUMB_LD.replace("My Post", "Q&A <Rust>")
     out = inject_breadcrumbs(_crumb_page(ld))
@@ -1925,7 +1927,7 @@ def test_inject_breadcrumbs_escapes_title_html():
 
 
 def test_inject_breadcrumbs_no_op_when_trail_not_three_levels():
-    from postbuild_lib.article_furniture import inject_breadcrumbs
+    from postbuild_lib.navigation import inject_breadcrumbs
 
     ld = (
         '<script type="application/ld+json">{"@graph":[{"@type":"BlogPosting"},'
@@ -1938,7 +1940,7 @@ def test_inject_breadcrumbs_no_op_when_trail_not_three_levels():
 
 
 def test_breadcrumb_items_skips_malformed_and_non_breadcrumb_blocks():
-    from postbuild_lib.article_furniture import _breadcrumb_items
+    from postbuild_lib.navigation import _breadcrumb_items
 
     html = (
         '<script type="application/ld+json">{"@type":"WebSite"}</script>'
@@ -1949,7 +1951,7 @@ def test_breadcrumb_items_skips_malformed_and_non_breadcrumb_blocks():
 
 
 def test_breadcrumb_items_requires_dict_entries_with_string_fields():
-    from postbuild_lib.article_furniture import _breadcrumb_items
+    from postbuild_lib.navigation import _breadcrumb_items
 
     ld = (
         '<script type="application/ld+json">'
@@ -1965,7 +1967,7 @@ def test_breadcrumb_items_requires_dict_entries_with_string_fields():
 
 
 def test_breadcrumb_items_handles_non_list_itemlist_and_non_dict_nodes():
-    from postbuild_lib.article_furniture import _breadcrumb_items
+    from postbuild_lib.navigation import _breadcrumb_items
 
     html = (
         '<script type="application/ld+json">'
@@ -1977,7 +1979,7 @@ def test_breadcrumb_items_handles_non_list_itemlist_and_non_dict_nodes():
 
 
 def test_breadcrumb_items_root_relativizes_and_keeps_external_urls():
-    from postbuild_lib.article_furniture import _breadcrumb_items
+    from postbuild_lib.navigation import _breadcrumb_items
 
     ld = (
         '<script type="application/ld+json">'
