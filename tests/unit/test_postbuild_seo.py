@@ -7,6 +7,7 @@ Split out of test_postbuild.py; tests are verbatim copies.
 from __future__ import annotations
 
 import postbuild as pb
+from postbuild_lib import hreflang as hf
 
 # ---------------------------------------------------------------------------
 # XML feed ampersand escape pass (`escape_xml_ampersands`)
@@ -235,7 +236,7 @@ def test_fix_social_image_no_op_when_no_blogposting_image_field():
 
 
 def test_resolve_en_slug_static_pages_use_static_map():
-    from postbuild_lib.article_furniture import _resolve_en_slug
+    from postbuild_lib.hreflang import _resolve_en_slug
 
     # "about" → static EN page. FR slug for "about" is "a-propos".
     # When given the FR slug, _resolve_en_slug returns the EN canonical.
@@ -243,7 +244,7 @@ def test_resolve_en_slug_static_pages_use_static_map():
 
 
 def test_resolve_en_slug_returns_none_for_unknown_slug():
-    from postbuild_lib.article_furniture import _resolve_en_slug
+    from postbuild_lib.hreflang import _resolve_en_slug
 
     assert _resolve_en_slug("totally-unknown-slug", "fr") is None
 
@@ -263,7 +264,7 @@ def test_all_active_non_en_langs_includes_fr_de_ar():
 
 
 def test_alternates_for_en_slug_includes_en_first():
-    from postbuild_lib.article_furniture import _alternates_for_en_slug
+    from postbuild_lib.hreflang import _alternates_for_en_slug
 
     alts = _alternates_for_en_slug("about", {})  # no translations rendered
     assert alts[0] == ("en", "https://sebastienrousseau.com/about/")
@@ -271,7 +272,7 @@ def test_alternates_for_en_slug_includes_en_first():
 
 
 def test_alternates_for_en_slug_includes_fr_when_translation_exists():
-    from postbuild_lib.article_furniture import _alternates_for_en_slug
+    from postbuild_lib.hreflang import _alternates_for_en_slug
 
     # "about" → FR slug "a-propos" (per _data/i18n/fr/slugs.json)
     alts = _alternates_for_en_slug("about", {"fr": {"a-propos"}})
@@ -283,7 +284,7 @@ def test_alternates_for_en_slug_includes_fr_when_translation_exists():
 
 
 def test_inject_hreflang_emits_alternate_links():
-    from postbuild_lib.article_furniture import inject_hreflang
+    from postbuild_lib.hreflang import inject_hreflang
 
     html = '<head><meta charset="utf-8"></head><body></body>'
     out = inject_hreflang(html, "about", "en", {"fr": {"a-propos"}})
@@ -294,7 +295,7 @@ def test_inject_hreflang_emits_alternate_links():
 
 
 def test_inject_hreflang_no_op_when_only_en_resolves():
-    from postbuild_lib.article_furniture import inject_hreflang
+    from postbuild_lib.hreflang import inject_hreflang
 
     html = "<head></head>"
     # No translations rendered → only EN alternate → < 2 entries → no-op
@@ -303,7 +304,7 @@ def test_inject_hreflang_no_op_when_only_en_resolves():
 
 
 def test_inject_hreflang_no_op_when_slug_unresolvable():
-    from postbuild_lib.article_furniture import inject_hreflang
+    from postbuild_lib.hreflang import inject_hreflang
 
     html = "<head></head>"
     out = inject_hreflang(html, "totally-unknown", "fr", {})
@@ -313,7 +314,7 @@ def test_inject_hreflang_no_op_when_slug_unresolvable():
 def test_inject_hreflang_strips_existing_alternates_first():
     """A page already carrying ``<link rel="alternate" hreflang=>`` gets
     them stripped before the new set is inserted."""
-    from postbuild_lib.article_furniture import inject_hreflang
+    from postbuild_lib.hreflang import inject_hreflang
 
     # The strip regex expects the XHTML self-close style ``/>`` because
     # that's what the postbuild renderer emits.
@@ -339,7 +340,7 @@ def test_slug_maps_returns_four_keys_per_lang():
 
 
 def test_resolve_en_slug_en_passthrough():
-    from postbuild_lib.article_furniture import _resolve_en_slug
+    from postbuild_lib.hreflang import _resolve_en_slug
 
     # English slug is its own canonical
     assert _resolve_en_slug("about", "en") == "about"
@@ -366,7 +367,7 @@ def test_build_fr_title_index_walks_fr_articles(tmp_path, monkeypatch):
         '<section class="ap-hero"><h1>Mon titre FR</h1></section>',
         encoding="utf-8",
     )
-    from postbuild_lib.article_furniture import build_fr_title_index
+    from postbuild_lib.hreflang import build_fr_title_index
 
     pages = [_P(str(p / "index.html"))]
     idx = build_fr_title_index(pages)
@@ -393,7 +394,7 @@ def test_translated_slugs_per_lang_returns_empty_when_no_public_tree(tmp_path, m
     from postbuild_lib import article_furniture as af
 
     with patch.object(af, "PUBLIC", tmp_path / "public"):
-        out = af._translated_slugs_per_lang()
+        out = hf._translated_slugs_per_lang()
     assert out == {}
 
 
@@ -405,7 +406,7 @@ def test_translated_slugs_legacy_returns_two_empty_sets_without_fr_dir(tmp_path,
     monkeypatch.chdir(tmp_path)
     (tmp_path / "public").mkdir()
     with patch.object(af, "PUBLIC", tmp_path / "public"):
-        en_with_fr, fr_with_en = af._translated_slugs()
+        en_with_fr, fr_with_en = hf._translated_slugs()
     assert en_with_fr == set()
     assert fr_with_en == set()
 
@@ -435,7 +436,7 @@ def test_translated_slugs_per_lang_walks_rendered_pages(tmp_path):
     (public / "fr" / "a-propos").mkdir(parents=True)
     (public / "fr" / "a-propos" / "index.html").write_text("x", encoding="utf-8")
     with patch.object(af, "PUBLIC", public):
-        out = af._translated_slugs_per_lang()
+        out = hf._translated_slugs_per_lang()
     assert "fr" in out
     assert "a-propos" in out["fr"]
 
@@ -453,14 +454,14 @@ def test_translated_slugs_legacy_picks_up_fr_articles(tmp_path):
     (public / "fr" / fr_slug).mkdir(parents=True)
     (public / "fr" / fr_slug / "index.html").write_text("x", encoding="utf-8")
     with patch.object(af, "PUBLIC", public):
-        en_with_fr, fr_with_en = af._translated_slugs()
+        en_with_fr, fr_with_en = hf._translated_slugs()
     assert en_slug in en_with_fr
     assert fr_slug in fr_with_en
 
 
 def test_resolve_en_slug_static_path():
     """A static EN slug (registered in slugs.json) resolves via the static map."""
-    from postbuild_lib.article_furniture import _resolve_en_slug
+    from postbuild_lib.hreflang import _resolve_en_slug
 
     # "a-propos" is FR for "about" — static page
     assert _resolve_en_slug("a-propos", "fr") == "about"
@@ -468,7 +469,7 @@ def test_resolve_en_slug_static_path():
 
 def test_inject_hreflang_with_legacy_fr_with_en_arg():
     """The legacy ``fr_with_en=`` kwarg seeds ``translated_per_lang`` for FR."""
-    from postbuild_lib.article_furniture import inject_hreflang
+    from postbuild_lib.hreflang import inject_hreflang
 
     html = "<head></head>"
     out = inject_hreflang(html, "about", "en", fr_with_en={"a-propos"})
@@ -479,7 +480,7 @@ def test_inject_hreflang_with_legacy_fr_with_en_arg():
 def test_inject_hreflang_default_translated_per_lang_is_none():
     """No ``translated_per_lang=`` and no ``fr_with_en=`` → starts with empty
     map (covers line 970: ``translated_per_lang = {}``)."""
-    from postbuild_lib.article_furniture import inject_hreflang
+    from postbuild_lib.hreflang import inject_hreflang
 
     html = "<head></head>"
     # No translations → only EN alternate → < 2 alts → no-op
@@ -489,7 +490,7 @@ def test_inject_hreflang_default_translated_per_lang_is_none():
 def test_alternates_for_en_slug_skips_lang_without_translation():
     """A slug present in EN but absent from a particular lang's slug map
     is skipped (covers the ``if not lang_slug: continue`` branch at line 970)."""
-    from postbuild_lib.article_furniture import _alternates_for_en_slug
+    from postbuild_lib.hreflang import _alternates_for_en_slug
 
     # A slug that exists in *no* registered slug map — both the articles
     # and statics maps return None for it, so each non-EN lang hits the
@@ -503,7 +504,7 @@ def test_build_fr_title_index_skips_pages_outside_fr_tree(tmp_path):
     """A page whose ``parent.parent`` is not ``fr`` is skipped at line 455."""
     from pathlib import Path as _P
 
-    from postbuild_lib.article_furniture import build_fr_title_index
+    from postbuild_lib.hreflang import build_fr_title_index
 
     d = tmp_path / "public" / "2026-05-12-en-post"  # parent.parent = public, not fr
     d.mkdir(parents=True)
@@ -515,7 +516,8 @@ def test_build_fr_title_index_walks_fr_pages_with_real_slug(tmp_path, monkeypatc
     """Uses a real FR slug from the live map so ``_en_slug`` reverse-lookup succeeds."""
     from pathlib import Path as _P
 
-    from postbuild_lib.article_furniture import _slug_maps, build_fr_title_index
+    from postbuild_lib.article_furniture import _slug_maps
+    from postbuild_lib.hreflang import build_fr_title_index
 
     fr_articles = _slug_maps("fr")["articles_en_to_lang"]
     en_slug, fr_slug = next(iter(fr_articles.items()))
@@ -534,7 +536,7 @@ def test_build_fr_title_index_skips_non_dated_fr_pages(tmp_path):
     """An FR static page (non-dated slug) is skipped (line 458 ``continue``)."""
     from pathlib import Path as _P
 
-    from postbuild_lib.article_furniture import build_fr_title_index
+    from postbuild_lib.hreflang import build_fr_title_index
 
     p = tmp_path / "public" / "fr" / "a-propos"
     p.mkdir(parents=True)
@@ -546,7 +548,7 @@ def test_build_fr_title_index_skips_when_en_slug_unmatched(tmp_path):
     """Dated FR page whose slug isn't in the FR articles map is dropped."""
     from pathlib import Path as _P
 
-    from postbuild_lib.article_furniture import build_fr_title_index
+    from postbuild_lib.hreflang import build_fr_title_index
 
     p = tmp_path / "public" / "fr" / "2026-05-12-unmatched-fr-slug"
     p.mkdir(parents=True)
