@@ -172,7 +172,7 @@ def test_stamp_asset_fingerprints_rewrites_main_js():
     """Unquoted ``src=/main.js`` gets rewritten to the fingerprinted name."""
     from unittest.mock import patch
 
-    import postbuild as _pb
+    import postbuild_assets as _pb
 
     fake_map = {"/main.js": "/main.abc123.js"}
     fake_pat = _pb.re.compile(
@@ -190,7 +190,7 @@ def test_stamp_asset_fingerprints_rewrites_quoted_form():
     """Quoted ``src="/main.js"`` also gets rewritten."""
     from unittest.mock import patch
 
-    import postbuild as _pb
+    import postbuild_assets as _pb
 
     fake_map = {"/main.js": "/main.abc123.js"}
     fake_pat = _pb.re.compile(
@@ -207,7 +207,7 @@ def test_stamp_asset_fingerprints_leaves_inline_js_untouched():
     """A literal ``/main.js`` inside JS code (not a <script src>) is NOT rewritten."""
     from unittest.mock import patch
 
-    import postbuild as _pb
+    import postbuild_assets as _pb
 
     fake_map = {"/main.js": "/main.abc123.js"}
     fake_pat = _pb.re.compile(
@@ -226,7 +226,7 @@ def test_stamp_asset_fingerprints_no_op_when_pattern_missing():
     """Without a fingerprint map, the pass is a no-op."""
     from unittest.mock import patch
 
-    import postbuild as _pb
+    import postbuild_assets as _pb
 
     with patch.object(_pb, "_FP_PATTERN", None):
         out, n = _pb.stamp_asset_fingerprints("<script src=/main.js></script>")
