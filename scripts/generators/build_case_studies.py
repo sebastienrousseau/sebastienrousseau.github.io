@@ -34,9 +34,9 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from case_studies_components import _esc, _related_article_href  # noqa: F401 — re-exports
+from case_studies_components import _esc
 from case_studies_render import _render_body, _render_index_body
-from case_studies_schema import _BASE_URL, _hub_url, _study_url  # noqa: F401 — re-exports
+from case_studies_schema import _BASE_URL
 
 try:
     import yaml  # type: ignore[import-untyped]

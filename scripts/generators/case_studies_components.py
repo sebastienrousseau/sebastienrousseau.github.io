@@ -254,11 +254,10 @@ def _contact_slug(lang: str) -> str:
     if lang in _CONTACT_SLUG_CACHE:
         return _CONTACT_SLUG_CACHE[lang]
     slug_path = ROOT / "_data" / "i18n" / lang / "slugs.json"
-    slug = "contact"
-    import contextlib
-
-    with contextlib.suppress(OSError, ValueError):
+    try:
         slug = json.loads(slug_path.read_text()).get("static", {}).get("contact", "contact")
+    except (OSError, ValueError):
+        slug = "contact"
     _CONTACT_SLUG_CACHE[lang] = slug
     return slug
 _SHARE_SVG = {

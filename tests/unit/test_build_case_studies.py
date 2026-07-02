@@ -9,6 +9,8 @@ logic and URL builders — the parts a split must preserve exactly.
 from __future__ import annotations
 
 import build_case_studies as cs
+import case_studies_components as csc
+import case_studies_schema as css
 
 # --- _esc ------------------------------------------------------------------
 
@@ -64,24 +66,24 @@ def test_merge_overlay_zips_list_fields() -> None:
 
 
 def test_hub_url_en_vs_locale() -> None:
-    assert cs._hub_url("en", "etudes-de-cas") == "/case-studies/"
-    assert cs._hub_url("fr", "etudes-de-cas") == "/fr/etudes-de-cas/"
+    assert css._hub_url("en", "etudes-de-cas") == "/case-studies/"
+    assert css._hub_url("fr", "etudes-de-cas") == "/fr/etudes-de-cas/"
 
 
 def test_study_url_en_vs_locale() -> None:
-    assert cs._study_url("en", "seg", "acme") == "/case-studies/acme/"
-    assert cs._study_url("ja", "jirei", "acme") == "/ja/jirei/acme/"
+    assert css._study_url("en", "seg", "acme") == "/case-studies/acme/"
+    assert css._study_url("ja", "jirei", "acme") == "/ja/jirei/acme/"
 
 
 def test_related_article_href_en_uses_plain_slug() -> None:
-    assert cs._related_article_href("my-post", "en", {"my-post": "mon-article"}) == "/my-post/"
+    assert csc._related_article_href("my-post", "en", {"my-post": "mon-article"}) == "/my-post/"
 
 
 def test_related_article_href_locale_uses_slug_map() -> None:
-    out = cs._related_article_href("my-post", "fr", {"my-post": "mon-article"})
+    out = csc._related_article_href("my-post", "fr", {"my-post": "mon-article"})
     assert out == "/fr/mon-article/"
 
 
 def test_related_article_href_locale_falls_back_to_en_slug() -> None:
     # slug absent from the map → fall back to the EN slug under the /<lang>/ path
-    assert cs._related_article_href("my-post", "fr", {}) == "/fr/my-post/"
+    assert csc._related_article_href("my-post", "fr", {}) == "/fr/my-post/"
