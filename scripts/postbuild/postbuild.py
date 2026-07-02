@@ -887,8 +887,6 @@ from postbuild_lib.article_furniture import (  # noqa: F401 — re-exports
     inject_article_furniture,
     inject_breadcrumbs,
     inject_byline_strap,
-    inject_citations,
-    inject_cite_popover,
     inject_deck,
     inject_eyebrow,
     inject_footnotes,
@@ -902,12 +900,16 @@ from postbuild_lib.article_furniture import (  # noqa: F401 — re-exports
     inject_section_rules,
     inject_share_rail,
     inject_sigstore_attestation,
-    inject_sources_list,
     inject_speculation_rules,
     inject_syndication_panel,
     inject_table_labels,
     slugify,
     strip_duplicate_body_h1,
+)
+from postbuild_lib.citations import (
+    inject_citations,
+    inject_cite_popover,
+    inject_sources_list,
 )
 from postbuild_lib.feeds import (  # noqa: F401 — re-exports (split from output)
     augment_sitemap_with_rendered_pages,

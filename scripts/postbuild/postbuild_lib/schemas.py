@@ -249,7 +249,7 @@ def _tech_article_graph(
     # Late import to avoid a circular at module load — article_furniture
     # already imports from postbuild_lib.seo, so going the other way
     # via top-level import would close the loop.
-    from postbuild_lib.article_furniture import _extract_citations
+    from postbuild_lib.citations import _extract_citations
 
     citations = _extract_citations(html)
     is_scholarly = len(citations) >= SCHOLARLY_CITATION_THRESHOLD
