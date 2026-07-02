@@ -391,9 +391,8 @@ def test_translated_slugs_per_lang_returns_empty_when_no_public_tree(tmp_path, m
     # Temporarily point PUBLIC at the empty tree
     from unittest.mock import patch
 
-    from postbuild_lib import article_furniture as af
 
-    with patch.object(af, "PUBLIC", tmp_path / "public"):
+    with patch.object(hf, "PUBLIC", tmp_path / "public"):
         out = hf._translated_slugs_per_lang()
     assert out == {}
 
@@ -401,11 +400,10 @@ def test_translated_slugs_per_lang_returns_empty_when_no_public_tree(tmp_path, m
 def test_translated_slugs_legacy_returns_two_empty_sets_without_fr_dir(tmp_path, monkeypatch):
     from unittest.mock import patch
 
-    from postbuild_lib import article_furniture as af
 
     monkeypatch.chdir(tmp_path)
     (tmp_path / "public").mkdir()
-    with patch.object(af, "PUBLIC", tmp_path / "public"):
+    with patch.object(hf, "PUBLIC", tmp_path / "public"):
         en_with_fr, fr_with_en = hf._translated_slugs()
     assert en_with_fr == set()
     assert fr_with_en == set()
@@ -430,12 +428,11 @@ def test_translated_slugs_per_lang_walks_rendered_pages(tmp_path):
     """A rendered /<lang>/<slug>/index.html populates the set for that lang."""
     from unittest.mock import patch
 
-    from postbuild_lib import article_furniture as af
 
     public = tmp_path / "public"
     (public / "fr" / "a-propos").mkdir(parents=True)
     (public / "fr" / "a-propos" / "index.html").write_text("x", encoding="utf-8")
-    with patch.object(af, "PUBLIC", public):
+    with patch.object(hf, "PUBLIC", public):
         out = hf._translated_slugs_per_lang()
     assert "fr" in out
     assert "a-propos" in out["fr"]
@@ -453,7 +450,7 @@ def test_translated_slugs_legacy_picks_up_fr_articles(tmp_path):
     public = tmp_path / "public"
     (public / "fr" / fr_slug).mkdir(parents=True)
     (public / "fr" / fr_slug / "index.html").write_text("x", encoding="utf-8")
-    with patch.object(af, "PUBLIC", public):
+    with patch.object(hf, "PUBLIC", public):
         en_with_fr, fr_with_en = hf._translated_slugs()
     assert en_slug in en_with_fr
     assert fr_slug in fr_with_en
