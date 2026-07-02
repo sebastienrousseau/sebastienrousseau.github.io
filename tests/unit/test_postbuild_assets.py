@@ -15,7 +15,7 @@ import postbuild as pb
 
 
 def test_sanitize_link_tag_collapses_duplicate_crossorigin():
-    from postbuild_lib.article_furniture import _sanitize_link_tag
+    from postbuild_lib.html_passes import _sanitize_link_tag
 
     tag = '<link rel="stylesheet" href="/x.css" crossorigin="anonymous" crossorigin="anonymous">'
     out = _sanitize_link_tag(tag)
@@ -23,7 +23,7 @@ def test_sanitize_link_tag_collapses_duplicate_crossorigin():
 
 
 def test_sanitize_link_tag_strips_trailing_double_quote():
-    from postbuild_lib.article_furniture import _sanitize_link_tag
+    from postbuild_lib.html_passes import _sanitize_link_tag
 
     tag = '<link rel="stylesheet" href="/x.css" crossorigin="anonymous"">'
     out = _sanitize_link_tag(tag)
@@ -32,7 +32,7 @@ def test_sanitize_link_tag_strips_trailing_double_quote():
 
 
 def test_hoist_body_link_stylesheets_moves_to_head():
-    from postbuild_lib.article_furniture import hoist_body_link_stylesheets
+    from postbuild_lib.html_passes import hoist_body_link_stylesheets
 
     html = (
         '<head><meta charset="utf-8"></head>'
@@ -48,7 +48,7 @@ def test_hoist_body_link_stylesheets_moves_to_head():
 
 
 def test_hoist_body_link_stylesheets_no_op_when_already_in_head():
-    from postbuild_lib.article_furniture import hoist_body_link_stylesheets
+    from postbuild_lib.html_passes import hoist_body_link_stylesheets
 
     html = '<head><link rel="stylesheet" href="/x.css"></head><body><main></main></body>'
     _, n = hoist_body_link_stylesheets(html)
@@ -57,7 +57,7 @@ def test_hoist_body_link_stylesheets_no_op_when_already_in_head():
 
 def test_hoist_body_link_stylesheets_no_op_without_head_tag():
     """A page without ``</head>`` → no hoisting possible (line 853)."""
-    from postbuild_lib.article_furniture import hoist_body_link_stylesheets
+    from postbuild_lib.html_passes import hoist_body_link_stylesheets
 
     html = '<body><link rel="stylesheet" href="/x.css"></body>'
     out, n = hoist_body_link_stylesheets(html)
