@@ -19,22 +19,14 @@ from pathlib import Path as _Path
 
 _sys.path.insert(0, str(_Path(__file__).resolve().parents[1] / "lib"))
 
-import re
 import sys
 from pathlib import Path
-
-import rcssmin
 
 sys.path.insert(0, str(Path(__file__).parent))
 
 PUBLIC = Path("public")
 import postbuild_assets as _pa
 from postbuild_assets import (
-    _ensure_trailing_newline,
-    _gather_css_targets,
-    _gather_js_targets,
-    _minify_one,
-    b64_sha256,
     fix_sri,
     inject_jsonld_hashes,
     inject_lcp_preload,
@@ -54,136 +46,10 @@ from postbuild_transforms import (
     update_last_modified_date,
 )
 
-# ---------------------------------------------------------------------------
-# 0. JS minification (runs at module init, before any SRI hash is computed)
-# ---------------------------------------------------------------------------
-#
-# Static Site Generator emits ``main.js`` (and the fingerprinted alias
-# ``main.<hash>.js``) unminified. Lighthouse's ``unminified-javascript``
-# audit flags ~5 KiB of avoidable bytes. We run rjsmin in place *before*
-# computing the SRI digests below, so the integrity attributes that
-# Static Site Generator (and our own ``fix_sri`` pass) stamp into the
-# HTML match the on-disk minified bytes — otherwise the browser blocks
-# the script with a "Failed to find a valid digest" error.
-
-
-
-
-
-
-
-
-def _minify_css(p: Path) -> tuple[int, int]:
-    """Minify a CSS file in place + ensure a trailing newline. Same
-    SRI-vs-wire reasoning as ``_minify_one``."""
-    try:
-        src = p.read_text(encoding="utf-8")
-    except (UnicodeDecodeError, OSError):
-        return 0, 0
-    candidate = _ensure_trailing_newline(rcssmin.cssmin(src))
-    out = candidate if len(candidate) < len(src) else _ensure_trailing_newline(src)
-    if out == src:
-        return 0, 0
-    p.write_text(out, encoding="utf-8")
-    return len(src), len(out)
-
-
-
-
-def _bulk_minify_js() -> tuple[int, int, int]:
-    """Minify every JS asset under PUBLIC. Returns
-    ``(count, bytes_before, bytes_after)``."""
-    n = before = after = 0
-    for js in _gather_js_targets():
-        b, a = _minify_one(js)
-        if b:
-            before += b
-            after += a
-            n += 1
-    return n, before, after
-
-
-def _bulk_minify_css() -> tuple[int, int, int]:
-    """Minify every CSS asset under PUBLIC. Returns
-    ``(count, bytes_before, bytes_after)``."""
-    n = before = after = 0
-    for css in _gather_css_targets():
-        b, a = _minify_css(css)
-        if b:
-            before += b
-            after += a
-            n += 1
-    return n, before, after
-
-
-_JS_MINIFY_COUNT, _JS_MINIFY_BEFORE, _JS_MINIFY_AFTER = _bulk_minify_js()
-_CSS_MINIFY_COUNT, _CSS_MINIFY_BEFORE, _CSS_MINIFY_AFTER = _bulk_minify_css()
-
-
-# ---------------------------------------------------------------------------
-# 1. SRI fix — /_csp/* + top-level fingerprinted assets
-# ---------------------------------------------------------------------------
-#
-# _pa.asset_hashes is built *after* minification so the digest matches the
-# minified bytes. Two flavours of asset path are stamped into the HTML:
-#   - /_csp/<hash>.<ext>   — bundled CSS/JS emitted by SSG
-#   - /main.<hash>.js      — fingerprinted top-level alias
-# Both need to be covered or the browser will refuse to execute scripts
-# whose SRI digest doesn't match.
-
-# GitHub Pages / Fastly munges text-class response bodies in flight, but
-# the behaviour isn't consistent across edge POPs: some prepend or
-# append a trailing ``\n``, others serve the file as-is. We've observed
-# both cases on the same deploy depending on which Cloudflare data
-# centre routes the request.
-#
-# SRI requires the integrity attribute to match the bytes the browser
-# actually fetches. To handle the variance we publish *both* candidate
-# digests in the attribute — the browser accepts any one that matches
-# (the SRI spec explicitly supports a whitespace-separated list of
-# digests for exactly this kind of edge-byte-flip scenario).
-#
-# Candidates per asset:
-#   - sha256(disk_bytes)              — POP serves file as-is
-#   - sha256(disk_bytes + b"\n")      — POP appends one trailing newline
-#
-# These are the only two states we've observed in the wild; if a third
-# variant turns up we add it here.
-_PAGES_TRAILING_NEWLINE = b"\n"
-
-
-def _candidate_digests(body: bytes) -> str:
-    """Return one or two space-separated ``sha256-<b64>`` tokens
-    covering every observed Pages edge-byte mutation. Whitespace
-    separation matches the SRI spec for multi-digest lists."""
-    primary = b64_sha256(body)
-    appended = b64_sha256(body + _PAGES_TRAILING_NEWLINE)
-    if appended == primary:
-        return f"sha256-{primary}"
-    return f"sha256-{primary} sha256-{appended}"
-
-
-_csp_dir = PUBLIC / "_csp"
-if _csp_dir.is_dir():
-    for asset in _csp_dir.iterdir():
-        if asset.is_file() and asset.suffix in (".js", ".css"):
-            _pa.asset_hashes[asset.name] = _candidate_digests(asset.read_bytes())
-# Top-level fingerprinted JS — main.<hash>.js, sw.<hash>.js, theme-init.<hash>.js.
-# Keyed by both the bare path (matches HTML reference) and the unprefixed name
-# so fix_sri can look it up against either form.
-_top_fp_re = re.compile(r"^[a-z\-_]+\.[a-f0-9]+\.js$", re.IGNORECASE)
-if PUBLIC.is_dir():
-    for asset in PUBLIC.iterdir():
-        if asset.is_file() and _top_fp_re.match(asset.name):
-            _pa.asset_hashes[asset.name] = _candidate_digests(asset.read_bytes())
-
-# Matches /_csp/<name> OR /<name> for top-level fingerprinted JS aliases.
-# Filenames start with a hex digit or letter (SSG emits 16-char hex hashes for
-# /_csp/* and 8-char hex hashes appended to the bare /main.<hash>.js alias).
-
-
-
-
+# Asset setup (minify -> SRI hashes -> fingerprint map/pattern) runs once at
+# import time, in order, inside postbuild_assets; the minify stats feed the
+# _finalize_build summary.
+_ASSET_STATS = _pa.setup_asset_state(PUBLIC)
 
 
 # ---------------------------------------------------------------------------
@@ -200,12 +66,6 @@ if PUBLIC.is_dir():
 # straightforward ``rel=preload[…]as=image`` regex misses the
 # layout-emitted form. Walk every <link> tag and check both attrs are
 # present independently.
-
-
-
-
-
-
 
 
 # ---------------------------------------------------------------------------
@@ -229,7 +89,6 @@ if PUBLIC.is_dir():
 # ---------------------------------------------------------------------------
 
 
-
 # Pre-generated responsive-variant widths emitted by the CDN's image
 # ingestion pipeline. CDN policy (2026-06-23): /api/transform requires
 # authentication; public pages must use these pre-gen variants instead
@@ -239,38 +98,16 @@ if PUBLIC.is_dir():
 # the bare CDN URL — no variant swap, no transform call.
 
 
-
-
 # Match an already-suffixed variant filename:
 #   foo-1200.webp  → group(1)="foo", group(2)="1200"
 #   foo-640.webp   → group(1)="foo", group(2)="640"
 # Only the exact 4 widths from _VARIANT_WIDTHS, anchored to .webp end.
 
 
-
-
 # Match a fully-formed /api/transform URL we want to rewrite in-place.
 # This catches transform URLs persisted in markdown source (post_enrich
 # emitted them before the 2026-06-23 CDN hardening) so they don't survive
 # from old _posts/*.md through ssg rendering into served HTML.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 # ---------------------------------------------------------------------------
@@ -287,11 +124,6 @@ if PUBLIC.is_dir():
 # (e.g. "Article Title · sebastienrousseau.com" or "Read on at IBM")
 # stay — they're carrying signal.
 # ---------------------------------------------------------------------------
-
-
-
-
-
 
 
 # ---------------------------------------------------------------------------
@@ -320,12 +152,8 @@ _theme_init_src_path = Path("_layouts/theme-init.js")
 # (quoted, unquoted, with or without trailing slash on the close tag).
 
 
-
-
 # Match the CSP meta tag whether attributes are quoted or not, in either order
 # (Static Site Generator's minifier emits `<meta content="..." http-equiv=Content-Security-Policy>`).
-
-
 
 
 # ---------------------------------------------------------------------------
@@ -342,16 +170,6 @@ _theme_init_src_path = Path("_layouts/theme-init.js")
 # Parse one <article class="..."> ... </article> block and extract (title, url).
 # The card markup varies but always includes the canonical link as the first
 # <a href="..."> with text content matching the card's H2/H3 title.
-
-
-
-
-
-
-
-
-
-
 
 
 # SEO + Schema.org injection — moved to postbuild_lib.seo
@@ -552,35 +370,6 @@ class _PostbuildContext:
         self.last_reviewed_index = build_comprehensive_lastmod_index()
 
 
-
-
-# Build the bare-name → fingerprinted-name map once, at module import time —
-# every page references the same assets, so the lookup is shared.
-for _fp in PUBLIC.glob("main.*.js"):
-    if _fp.stem.count(".") == 1:  # e.g. "main.b5833c97" (one dot before suffix)
-        _pa._FP_ASSET_MAP["/main.js"] = "/" + _fp.name
-for _fp in PUBLIC.glob("highlight.*.css"):
-    if _fp.stem.count(".") == 1:
-        _pa._FP_ASSET_MAP["/highlight.css"] = "/" + _fp.name
-
-# Rebuild the fingerprint pattern now that the map is populated. postbuild_assets
-# builds _FP_PATTERN at its import time (map still empty → None), so it must be
-# recomputed here after this module fills _FP_ASSET_MAP, or stamp_asset_fingerprints
-# bails early and the /main.<hash>.js rewrite never happens.
-_pa._FP_PATTERN = _pa._build_fp_pattern()
-
-
-# Match the bare-name asset reference in `<script src=...>` / `<link href=...>`.
-# Quoted ("/main.js") and unquoted (src=/main.js) forms — SSG's minifier emits
-# the unquoted form for short attribute values.
-
-
-
-
-
-
-
-
 def _apply_seo_passes(html: str, page: Path, ctr: _PostbuildCounters) -> str:
     """SEO + JSON-LD passes that don't depend on lang context.
 
@@ -667,8 +456,6 @@ def _apply_schema_subtype_passes(
     return out
 
 
-
-
 def _apply_article_passes(html: str, page: Path, ctr: _PostbuildCounters) -> str:
     """Article-furniture + body-content injection passes."""
     out = _bump(inject_eyebrow, html, ctr, "eyebrows_set")
@@ -736,8 +523,6 @@ def _is_topic_page(page: Path) -> tuple[bool, bool, list[str]]:
     return is_en_topic, is_fr_topic, is_lang_topic_codes
 
 
-
-
 def _is_home_page(page: Path) -> bool:
     return (
         page.parent.name == "public"
@@ -748,8 +533,6 @@ def _is_home_page(page: Path) -> bool:
             and page.parent.name in _all_active_non_en_langs()
         )
     )
-
-
 
 
 def _apply_hreflang_pass(html: str, page: Path, ctx: _PostbuildContext) -> str:
@@ -766,14 +549,6 @@ def _apply_hreflang_pass(html: str, page: Path, ctx: _PostbuildContext) -> str:
         page.parent.parent.name if page.parent.parent.name in ctx.translated_per_lang else "en"
     )
     return inject_hreflang(html, rel_slug, page_lang, ctx.translated_per_lang)
-
-
-
-
-
-
-
-
 
 
 def _process_page(page: Path, ctx: _PostbuildContext) -> None:
@@ -912,10 +687,10 @@ def main() -> None:
     ) = _finalize_build()
 
     c = ctx.counters
-    js_saved = _JS_MINIFY_BEFORE - _JS_MINIFY_AFTER
-    js_count = _JS_MINIFY_COUNT
-    css_saved = _CSS_MINIFY_BEFORE - _CSS_MINIFY_AFTER
-    css_count = _CSS_MINIFY_COUNT
+    js_saved = _ASSET_STATS[1] - _ASSET_STATS[2]
+    js_count = _ASSET_STATS[0]
+    css_saved = _ASSET_STATS[4] - _ASSET_STATS[5]
+    css_count = _ASSET_STATS[3]
     print(
         f"postbuild: {len(pages)} HTML pages, "
         f"{c.localhost_patched} got localhost→prod scrubbed, "

@@ -13,6 +13,7 @@ import hashlib
 import re
 from pathlib import Path
 
+import rcssmin
 import rjsmin
 
 PUBLIC = Path("public")
@@ -440,3 +441,84 @@ def stamp_asset_fingerprints(html: str) -> tuple[str, int]:
         return m.group(1) + _FP_ASSET_MAP[m.group(2)] + m.group(3)
 
     return _FP_PATTERN.sub(replace, html), n
+
+
+# ---------------------------------------------------------------------------
+# Import-time asset setup: minify, SRI hashes, fingerprint map.
+# ---------------------------------------------------------------------------
+
+_PAGES_TRAILING_NEWLINE = b"\n"
+_top_fp_re = re.compile(r"^[a-z\-_]+\.[a-f0-9]+\.js$", re.IGNORECASE)
+
+
+def _minify_css(p: Path) -> tuple[int, int]:
+    """Minify a CSS file in place + ensure a trailing newline (SRI-vs-wire)."""
+    try:
+        src = p.read_text(encoding="utf-8")
+    except (UnicodeDecodeError, OSError):
+        return 0, 0
+    candidate = _ensure_trailing_newline(rcssmin.cssmin(src))
+    out = candidate if len(candidate) < len(src) else _ensure_trailing_newline(src)
+    if out == src:
+        return 0, 0
+    p.write_text(out, encoding="utf-8")
+    return len(src), len(out)
+
+
+def _bulk_minify_js() -> tuple[int, int, int]:
+    n = before = after = 0
+    for js in _gather_js_targets():
+        b, a = _minify_one(js)
+        if b:
+            before += b
+            after += a
+            n += 1
+    return n, before, after
+
+
+def _bulk_minify_css() -> tuple[int, int, int]:
+    n = before = after = 0
+    for css in _gather_css_targets():
+        b, a = _minify_css(css)
+        if b:
+            before += b
+            after += a
+            n += 1
+    return n, before, after
+
+
+def _candidate_digests(body: bytes) -> str:
+    """One or two space-separated ``sha256-<b64>`` tokens covering the observed
+    GitHub Pages edge-byte mutations (file-as-is + file+trailing-newline)."""
+    primary = b64_sha256(body)
+    appended = b64_sha256(body + _PAGES_TRAILING_NEWLINE)
+    if appended == primary:
+        return f"sha256-{primary}"
+    return f"sha256-{primary} sha256-{appended}"
+
+
+def setup_asset_state(public: Path) -> tuple[int, int, int, int, int, int]:
+    """Run the import-time asset pipeline in order: minify JS/CSS, populate the
+    SRI hash table, then build the fingerprint map + pattern (minify must run
+    before hashing so the digests match the on-disk minified bytes). Returns
+    ``(js_count, js_before, js_after, css_count, css_before, css_after)``."""
+    global _FP_PATTERN
+    js_count, js_before, js_after = _bulk_minify_js()
+    css_count, css_before, css_after = _bulk_minify_css()
+    csp_dir = public / "_csp"
+    if csp_dir.is_dir():
+        for asset in csp_dir.iterdir():
+            if asset.is_file() and asset.suffix in (".js", ".css"):
+                asset_hashes[asset.name] = _candidate_digests(asset.read_bytes())
+    if public.is_dir():
+        for asset in public.iterdir():
+            if asset.is_file() and _top_fp_re.match(asset.name):
+                asset_hashes[asset.name] = _candidate_digests(asset.read_bytes())
+    for fp in public.glob("main.*.js"):
+        if fp.stem.count(".") == 1:
+            _FP_ASSET_MAP["/main.js"] = "/" + fp.name
+    for fp in public.glob("highlight.*.css"):
+        if fp.stem.count(".") == 1:
+            _FP_ASSET_MAP["/highlight.css"] = "/" + fp.name
+    _FP_PATTERN = _build_fp_pattern()
+    return js_count, js_before, js_after, css_count, css_before, css_after
