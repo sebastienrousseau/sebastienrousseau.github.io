@@ -353,7 +353,7 @@ def test_labels_for_lang_handles_unknown_lang_gracefully():
 
 def test_extract_citations_picks_authoritative_outbound_only():
     """Only links to ``CITATION_AUTHORITIES`` hosts make it into the citation graph."""
-    from postbuild_lib.article_furniture import _extract_citations
+    from postbuild_lib.citations import _extract_citations
 
     html = (
         '<script type="application/ld+json">{"@type":"BlogPosting"}</script>'
@@ -374,7 +374,7 @@ def test_extract_citations_picks_authoritative_outbound_only():
 
 
 def test_inject_citations_no_op_without_outbound_links():
-    from postbuild_lib.article_furniture import inject_citations
+    from postbuild_lib.citations import inject_citations
 
     html = (
         '<script type="application/ld+json">{"@type":"BlogPosting","speakable":{}}</script>'
@@ -972,7 +972,7 @@ def test_inject_mermaid_no_re_widen_when_already_widened():
 
 
 def test_inject_sources_list_renders_aside_with_authoritative_links():
-    from postbuild_lib.article_furniture import inject_sources_list
+    from postbuild_lib.citations import inject_sources_list
 
     html = (
         '<script type="application/ld+json">{"@type":"BlogPosting"}</script>'
@@ -987,7 +987,7 @@ def test_inject_sources_list_renders_aside_with_authoritative_links():
 
 
 def test_inject_sources_list_no_op_without_outbound_links():
-    from postbuild_lib.article_furniture import inject_sources_list
+    from postbuild_lib.citations import inject_sources_list
 
     html = (
         '<script type="application/ld+json">{"@type":"BlogPosting"}</script>'
@@ -1218,14 +1218,14 @@ def test_inject_anchor_links_no_op_when_no_main_div():
 
 def test_extract_citations_no_op_without_main():
     """No <main> block → empty list (line 396)."""
-    from postbuild_lib.article_furniture import _extract_citations
+    from postbuild_lib.citations import _extract_citations
 
     assert _extract_citations("<p>nothing</p>") == []
 
 
 def test_extract_citations_skips_duplicates_and_caps_at_12():
     """Duplicate URLs are deduplicated; cap is 12."""
-    from postbuild_lib.article_furniture import _extract_citations
+    from postbuild_lib.citations import _extract_citations
 
     # 15 distinct nist.gov links + a duplicate
     bodies = [f'<a href="https://nist.gov/p{i}">x</a>' for i in range(15)]
@@ -1242,7 +1242,7 @@ def test_extract_citations_skips_duplicates_and_caps_at_12():
 def test_inject_citations_appends_citation_array():
     """A BlogPosting with authoritative outbound links + a ``speakable`` key
     gets a ``citation`` array inserted just before it."""
-    from postbuild_lib.article_furniture import inject_citations
+    from postbuild_lib.citations import inject_citations
 
     html = (
         '<script type="application/ld+json">'
@@ -1260,7 +1260,7 @@ def test_inject_citations_appends_citation_array():
 def test_inject_sources_list_inserts_before_pagination():
     """When the page already has a prev/next nav, the sources aside is inserted
     just before it (covers line 784)."""
-    from postbuild_lib.article_furniture import inject_sources_list
+    from postbuild_lib.citations import inject_sources_list
 
     html = (
         '<script type="application/ld+json">{"@type":"BlogPosting"}</script>'
@@ -1277,7 +1277,7 @@ def test_inject_sources_list_inserts_before_pagination():
 
 def test_inject_sources_list_idempotent_when_aside_present():
     """If ``class="article-sources"`` already exists, return unchanged (line 757)."""
-    from postbuild_lib.article_furniture import inject_sources_list
+    from postbuild_lib.citations import inject_sources_list
 
     html = (
         '<script type="application/ld+json">{"@type":"BlogPosting"}</script>'
@@ -1476,7 +1476,7 @@ def test_inject_article_furniture_idempotent_when_tags_present():
 
 def test_extract_citations_dedupes_same_url():
     """Duplicate URLs in the body are seen once (covers ``if url in seen: continue``)."""
-    from postbuild_lib.article_furniture import _extract_citations
+    from postbuild_lib.citations import _extract_citations
 
     html = (
         '<script type="application/ld+json">{"@type":"BlogPosting"}</script>'
@@ -1577,7 +1577,7 @@ def test_inject_prev_next_nav_no_op_when_both_neighbours_none():
 
 def test_inject_citations_no_op_without_blogposting():
     """No BlogPosting JSON-LD → bail at line 677."""
-    from postbuild_lib.article_furniture import inject_citations
+    from postbuild_lib.citations import inject_citations
 
     assert inject_citations("<p>plain</p>") == "<p>plain</p>"
 
@@ -1593,7 +1593,7 @@ def test_inject_mermaid_no_op_when_block_unchanged_after_sub():
 
 def test_inject_sources_list_no_op_without_blogposting():
     """No BlogPosting → bail at line 755."""
-    from postbuild_lib.article_furniture import inject_sources_list
+    from postbuild_lib.citations import inject_sources_list
 
     assert inject_sources_list("<p>plain</p>") == "<p>plain</p>"
 
@@ -2533,13 +2533,13 @@ def test_inject_action_rail_no_op_when_canonical_missing():
 
 
 def test_inject_cite_popover_no_op_without_blogposting():
-    from postbuild_lib.article_furniture import inject_cite_popover
+    from postbuild_lib.citations import inject_cite_popover
 
     assert inject_cite_popover("<p>plain page</p>") == "<p>plain page</p>"
 
 
 def test_inject_cite_popover_emits_meta_and_all_five_formats_with_copy_buttons():
-    from postbuild_lib.article_furniture import inject_cite_popover
+    from postbuild_lib.citations import inject_cite_popover
 
     head = _WS2_HEAD.replace(
         '"@type":"BlogPosting","keywords":"AI, payments, post-quantum cryptography"',
@@ -2570,7 +2570,7 @@ def test_inject_cite_popover_emits_meta_and_all_five_formats_with_copy_buttons()
 
 
 def test_inject_cite_popover_skips_description_paragraph_when_meta_missing():
-    from postbuild_lib.article_furniture import inject_cite_popover
+    from postbuild_lib.citations import inject_cite_popover
 
     head = _WS2_HEAD.replace(
         '<meta name="description" content="A brief description of the article.">',
@@ -2586,14 +2586,14 @@ def test_inject_cite_popover_skips_description_paragraph_when_meta_missing():
 
 
 def test_inject_cite_popover_idempotent():
-    from postbuild_lib.article_furniture import inject_cite_popover
+    from postbuild_lib.citations import inject_cite_popover
 
     once = inject_cite_popover(_ws2_page())
     assert inject_cite_popover(once) == once
 
 
 def test_inject_cite_popover_no_op_when_canonical_missing():
-    from postbuild_lib.article_furniture import inject_cite_popover
+    from postbuild_lib.citations import inject_cite_popover
 
     head = _WS2_HEAD.replace(
         '<link rel="canonical" href="https://sebastienrousseau.com/2026-01-01-my-post/">',
@@ -2908,7 +2908,7 @@ def test_parse_iso_date_returns_none_for_unrecognised_format():
     """The third format pattern (`%Y-%m-%d`) is the last fallback;
     strings that don't match any pattern return None — exercises the
     `except ValueError: continue` branches + the final `return None`."""
-    from postbuild_lib.article_furniture import _parse_iso_date
+    from postbuild_lib.citations import _parse_iso_date
 
     assert _parse_iso_date("not-a-date") is None
     assert _parse_iso_date("2026-13-40") is None  # invalid month + day
