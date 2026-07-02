@@ -71,14 +71,14 @@ def test_hoist_body_link_stylesheets_no_op_without_head_tag():
 
 
 def test_inject_speculation_rules_no_op_when_already_present():
-    from postbuild_lib.article_furniture import inject_speculation_rules
+    from postbuild_lib.content_blocks import inject_speculation_rules
 
     html = '<head><script type="speculationrules">{}</script></head>'
     assert inject_speculation_rules(html) == html
 
 
 def test_inject_speculation_rules_inserts_when_missing():
-    from postbuild_lib.article_furniture import inject_speculation_rules
+    from postbuild_lib.content_blocks import inject_speculation_rules
 
     html = '<head><meta charset="utf-8"></head><body></body>'
     out = inject_speculation_rules(html)
@@ -282,7 +282,7 @@ def test_inject_hero_banner_happy_path():
     inserted immediately after the closing </section> of ap-hero. The
     natural-aspect reservation is what fixes the lighthouse CLS regression
     on banners that aren't 16:9."""
-    from postbuild_lib.article_furniture import inject_hero_banner
+    from postbuild_lib.content_blocks import inject_hero_banner
 
     html = _make_blogposting_with_og()  # defaults: 1425×571 = 2.5:1
     out = inject_hero_banner(html)
@@ -305,7 +305,7 @@ def test_inject_hero_banner_falls_back_to_canonical_dims_when_og_dims_absent():
     """No og:image:width / og:image:height meta → 1200×675 fallback (16:9).
     Older articles without explicit dimensions still get a deterministic
     box reservation."""
-    from postbuild_lib.article_furniture import inject_hero_banner
+    from postbuild_lib.content_blocks import inject_hero_banner
 
     html = _make_blogposting_with_og(og_image_width=None, og_image_height=None)
     out = inject_hero_banner(html)
@@ -316,7 +316,7 @@ def test_inject_hero_banner_falls_back_to_canonical_dims_when_og_dims_absent():
 def test_inject_hero_banner_falls_back_when_og_dims_are_zero():
     """og:image:width=0 / og:image:height=0 → fallback. Covers the
     ``w > 0 and h > 0`` guard's False branch."""
-    from postbuild_lib.article_furniture import _banner_dimensions
+    from postbuild_lib.content_blocks import _banner_dimensions
 
     html_zero = (
         '<meta property="og:image:width" content="0" />'
@@ -329,7 +329,7 @@ def test_inject_hero_banner_falls_back_when_only_one_og_dim_present():
     """og:image:width present without og:image:height (or vice versa)
     → fallback. Covers the ``if w_m and h_m:`` guard's False branch
     when only one side of the pair matches."""
-    from postbuild_lib.article_furniture import _banner_dimensions
+    from postbuild_lib.content_blocks import _banner_dimensions
 
     html_width_only = '<meta property="og:image:width" content="1200" />'
     assert _banner_dimensions(html_width_only) == (1200, 675)
@@ -339,7 +339,7 @@ def test_inject_hero_banner_falls_back_when_only_one_og_dim_present():
 
 def test_inject_hero_banner_falls_back_to_h1_when_alt_missing():
     """No twitter:image:alt meta → use 'Banner for: <H1 title>'."""
-    from postbuild_lib.article_furniture import inject_hero_banner
+    from postbuild_lib.content_blocks import inject_hero_banner
 
     html = _make_blogposting_with_og(og_image_alt=None, h1="ISO 20022 After Migration")
     out = inject_hero_banner(html)
@@ -348,7 +348,7 @@ def test_inject_hero_banner_falls_back_to_h1_when_alt_missing():
 
 def test_inject_hero_banner_idempotent_when_banner_already_present():
     """A page that already carries ``class="article-banner"`` is left alone."""
-    from postbuild_lib.article_furniture import inject_hero_banner
+    from postbuild_lib.content_blocks import inject_hero_banner
 
     html = _make_blogposting_with_og(
         extra='<figure class="article-banner"><img src="x.webp" /></figure>',
@@ -359,7 +359,7 @@ def test_inject_hero_banner_idempotent_when_banner_already_present():
 
 def test_inject_hero_banner_no_op_without_blogposting_jsonld():
     """Non-BlogPosting pages (listings, static pages) are skipped."""
-    from postbuild_lib.article_furniture import inject_hero_banner
+    from postbuild_lib.content_blocks import inject_hero_banner
 
     html = (
         '<html><head><meta property="og:image" content="x.webp" /></head>'
@@ -373,7 +373,7 @@ def test_inject_hero_banner_no_op_without_blogposting_jsonld():
 
 def test_inject_hero_banner_no_op_when_og_image_missing():
     """BlogPosting page without an og:image meta is left alone."""
-    from postbuild_lib.article_furniture import inject_hero_banner
+    from postbuild_lib.content_blocks import inject_hero_banner
 
     html = (
         "<html><body>"
@@ -389,7 +389,7 @@ def test_inject_hero_banner_non_cdn_url_passes_through_unchanged():
     """Banner URLs that aren't CDN-transform endpoints are still
     inserted into the figure without modification. Width / height come
     from the og:image:* meta tags or the canonical fallback."""
-    from postbuild_lib.article_furniture import inject_hero_banner
+    from postbuild_lib.content_blocks import inject_hero_banner
 
     raw_url = "https://example.com/static/banner.webp"
     html = _make_blogposting_with_og(og_image=raw_url)
@@ -400,7 +400,7 @@ def test_inject_hero_banner_non_cdn_url_passes_through_unchanged():
 def test_inject_hero_banner_uses_og_alt_when_twitter_alt_absent():
     """If twitter:image:alt is missing but og:image:alt is present, prefer
     twitter (the helper's default) — and when neither, fall back to H1."""
-    from postbuild_lib.article_furniture import inject_hero_banner
+    from postbuild_lib.content_blocks import inject_hero_banner
 
     html = (
         "<html><head>"
@@ -418,7 +418,7 @@ def test_inject_hero_banner_uses_og_alt_when_twitter_alt_absent():
 def test_inject_hero_banner_returns_unchanged_when_anchor_missing():
     """og:image present + BlogPosting marker present, but no </section>
     followed by a sibling element to anchor against → no insertion."""
-    from postbuild_lib.article_furniture import inject_hero_banner
+    from postbuild_lib.content_blocks import inject_hero_banner
 
     html = (
         "<html><head>"
@@ -438,7 +438,7 @@ def test_inject_hero_banner_strips_legacy_inline_duplicate():
     ``<p><img></p>`` wrapper carrying the same image as og:image.
     inject_hero_banner injects the figure at the top AND removes the
     inline body duplicate, keeping the new design and dropping the old."""
-    from postbuild_lib.article_furniture import inject_hero_banner
+    from postbuild_lib.content_blocks import inject_hero_banner
 
     html = (
         "<html><head>"
@@ -464,7 +464,7 @@ def test_inject_hero_banner_strips_legacy_inline_duplicate():
 def test_inject_hero_banner_leaves_unrelated_body_images_alone():
     """A `<p><img></p>` whose src is NOT the banner is left in place.
     The strip only fires when the body img matches the og:image path."""
-    from postbuild_lib.article_furniture import inject_hero_banner
+    from postbuild_lib.content_blocks import inject_hero_banner
 
     html = (
         "<html><head>"
@@ -489,7 +489,7 @@ def test_strip_legacy_inline_banner_helper_branches():
     </figure> anchor, no <p><img></p> in the body window, or the body
     img doesn't match the banner path. Each False/no-op branch needs
     coverage."""
-    from postbuild_lib.article_furniture import _banner_path, strip_legacy_inline_banner
+    from postbuild_lib.content_blocks import _banner_path, strip_legacy_inline_banner
 
     # Malformed banner URL.
     assert _banner_path("not-a-url") is None

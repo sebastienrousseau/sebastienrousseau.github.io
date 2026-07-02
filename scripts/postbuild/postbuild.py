@@ -872,7 +872,6 @@ from postbuild_lib.article_furniture import (  # noqa: F401 — re-exports
     AUTHOR_NAME,
     AUTHOR_URL,
     _all_active_non_en_langs,
-    _convert_faq_to_qa,
     _detect_page_lang,
     _is_french,
     _labels,
@@ -883,13 +882,7 @@ from postbuild_lib.article_furniture import (  # noqa: F401 — re-exports
     inject_article_furniture,
     inject_deck,
     inject_eyebrow,
-    inject_footnotes,
-    inject_hero_banner,
-    inject_mermaid,
-    inject_pullquotes,
-    inject_section_rules,
     inject_sigstore_attestation,
-    inject_speculation_rules,
     inject_table_labels,
     slugify,
     strip_duplicate_body_h1,
@@ -898,6 +891,15 @@ from postbuild_lib.citations import (
     inject_citations,
     inject_cite_popover,
     inject_sources_list,
+)
+from postbuild_lib.content_blocks import (
+    _convert_faq_to_qa,
+    inject_footnotes,
+    inject_hero_banner,
+    inject_mermaid,
+    inject_pullquotes,
+    inject_section_rules,
+    inject_speculation_rules,
 )
 from postbuild_lib.feeds import (  # noqa: F401 — re-exports (split from output)
     augment_sitemap_with_rendered_pages,
