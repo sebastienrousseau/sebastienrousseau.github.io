@@ -2189,13 +2189,13 @@ def test_inject_deck_idempotent():
 
 
 def test_inject_share_rail_no_op_without_blogposting():
-    from postbuild_lib.article_furniture import inject_share_rail
+    from postbuild_lib.sharing import inject_share_rail
 
     assert inject_share_rail("<p>plain page</p>") == "<p>plain page</p>"
 
 
 def test_inject_share_rail_renders_all_six_anchors_at_top_of_main():
-    from postbuild_lib.article_furniture import inject_share_rail
+    from postbuild_lib.sharing import inject_share_rail
 
     out = inject_share_rail(_ws2_page())
     assert 'class="share-rail share-rail--sticky"' in out
@@ -2223,14 +2223,14 @@ def test_inject_share_rail_renders_all_six_anchors_at_top_of_main():
 
 
 def test_inject_share_rail_idempotent():
-    from postbuild_lib.article_furniture import inject_share_rail
+    from postbuild_lib.sharing import inject_share_rail
 
     once = inject_share_rail(_ws2_page())
     assert inject_share_rail(once) == once
 
 
 def test_inject_share_rail_no_op_when_canonical_missing():
-    from postbuild_lib.article_furniture import inject_share_rail
+    from postbuild_lib.sharing import inject_share_rail
 
     head = _WS2_HEAD.replace(
         '<link rel="canonical" href="https://sebastienrousseau.com/2026-01-01-my-post/">',
@@ -2244,13 +2244,13 @@ def test_inject_share_rail_no_op_when_canonical_missing():
 
 
 def test_inject_byline_strap_no_op_without_blogposting():
-    from postbuild_lib.article_furniture import inject_byline_strap
+    from postbuild_lib.sharing import inject_byline_strap
 
     assert inject_byline_strap("<p>plain page</p>") == "<p>plain page</p>"
 
 
 def test_inject_byline_strap_renders_inside_wrap_div_above_closing_main():
-    from postbuild_lib.article_furniture import inject_byline_strap
+    from postbuild_lib.sharing import inject_byline_strap
 
     out = inject_byline_strap(_ws2_page())
     assert 'class="byline-strap"' in out
@@ -2264,14 +2264,14 @@ def test_inject_byline_strap_renders_inside_wrap_div_above_closing_main():
 
 
 def test_inject_byline_strap_idempotent():
-    from postbuild_lib.article_furniture import inject_byline_strap
+    from postbuild_lib.sharing import inject_byline_strap
 
     once = inject_byline_strap(_ws2_page())
     assert inject_byline_strap(once) == once
 
 
 def test_inject_byline_strap_french_role_when_html_lang_fr():
-    from postbuild_lib.article_furniture import inject_byline_strap
+    from postbuild_lib.sharing import inject_byline_strap
 
     out = inject_byline_strap(_ws2_page(lang="fr-FR"))
     assert "FONDATEUR · INGÉNIEUR" in out
@@ -2483,13 +2483,13 @@ def test_inject_footnotes_idempotent():
 
 
 def test_inject_action_rail_no_op_without_blogposting():
-    from postbuild_lib.article_furniture import inject_action_rail
+    from postbuild_lib.sharing import inject_action_rail
 
     assert inject_action_rail("<p>plain page</p>") == "<p>plain page</p>"
 
 
 def test_inject_action_rail_renders_save_pdf_and_cite_buttons_at_top_of_main():
-    from postbuild_lib.article_furniture import inject_action_rail
+    from postbuild_lib.sharing import inject_action_rail
 
     out = inject_action_rail(_ws2_page())
     assert 'class="action-rail action-rail--sticky"' in out
@@ -2510,14 +2510,14 @@ def test_inject_action_rail_renders_save_pdf_and_cite_buttons_at_top_of_main():
 
 
 def test_inject_action_rail_idempotent():
-    from postbuild_lib.article_furniture import inject_action_rail
+    from postbuild_lib.sharing import inject_action_rail
 
     once = inject_action_rail(_ws2_page())
     assert inject_action_rail(once) == once
 
 
 def test_inject_action_rail_no_op_when_canonical_missing():
-    from postbuild_lib.article_furniture import inject_action_rail
+    from postbuild_lib.sharing import inject_action_rail
 
     # Save PDF needs the slug parsed from the canonical URL to point at
     # /api/pdf/<slug>.pdf; no canonical → no slug → no rail.
@@ -2607,13 +2607,13 @@ def test_inject_cite_popover_no_op_when_canonical_missing():
 
 
 def test_inject_reuse_panel_no_op_without_blogposting():
-    from postbuild_lib.article_furniture import inject_reuse_panel
+    from postbuild_lib.sharing import inject_reuse_panel
 
     assert inject_reuse_panel("<p>plain page</p>") == "<p>plain page</p>"
 
 
 def test_inject_reuse_panel_emits_share_card_with_title_description_license():
-    from postbuild_lib.article_furniture import inject_reuse_panel
+    from postbuild_lib.sharing import inject_reuse_panel
 
     out = inject_reuse_panel(_ws2_page())
     assert 'class="reuse"' in out
@@ -2637,7 +2637,7 @@ def test_inject_reuse_panel_emits_share_card_with_title_description_license():
 
 
 def test_inject_reuse_panel_compact_when_description_missing():
-    from postbuild_lib.article_furniture import inject_reuse_panel
+    from postbuild_lib.sharing import inject_reuse_panel
 
     head = _WS2_HEAD.replace(
         '<meta name="description" content="A brief description of the article.">',
@@ -2654,7 +2654,7 @@ def test_inject_reuse_panel_compact_when_description_missing():
 
 
 def test_inject_syndication_panel_emits_medium_mastodon_linkedin_payloads():
-    from postbuild_lib.article_furniture import inject_syndication_panel
+    from postbuild_lib.sharing import inject_syndication_panel
 
     out = inject_syndication_panel(_ws2_page())
     # Single <details> wrapper at the wrap-foot, anchored by id so
@@ -2676,14 +2676,14 @@ def test_inject_syndication_panel_emits_medium_mastodon_linkedin_payloads():
 
 
 def test_inject_syndication_panel_idempotent():
-    from postbuild_lib.article_furniture import inject_syndication_panel
+    from postbuild_lib.sharing import inject_syndication_panel
 
     once = inject_syndication_panel(_ws2_page())
     assert inject_syndication_panel(once) == once
 
 
 def test_inject_syndication_panel_no_op_without_blogposting():
-    from postbuild_lib.article_furniture import inject_syndication_panel
+    from postbuild_lib.sharing import inject_syndication_panel
 
     assert inject_syndication_panel("<p>plain</p>") == "<p>plain</p>"
 
@@ -2692,13 +2692,13 @@ def test_inject_syndication_panel_no_op_without_blogposting():
 
 
 def test_strip_html_tags_removes_markup_and_unescapes():
-    from postbuild_lib.article_furniture import _strip_html_tags
+    from postbuild_lib.sharing import _strip_html_tags
 
     assert _strip_html_tags("<strong>Bold</strong> &amp; plain") == "Bold & plain"
 
 
 def test_extract_lead_takeaways_text_returns_plain_bullets():
-    from postbuild_lib.article_furniture import _extract_lead_takeaways_text
+    from postbuild_lib.sharing import _extract_lead_takeaways_text
 
     html = (
         '<ul class="post-lead-takeaways">'
@@ -2713,13 +2713,13 @@ def test_extract_lead_takeaways_text_returns_plain_bullets():
 
 
 def test_extract_lead_takeaways_text_empty_when_no_list():
-    from postbuild_lib.article_furniture import _extract_lead_takeaways_text
+    from postbuild_lib.sharing import _extract_lead_takeaways_text
 
     assert _extract_lead_takeaways_text("<p>no list here</p>") == []
 
 
 def test_extract_body_question_finds_first_question_paragraph():
-    from postbuild_lib.article_furniture import _extract_body_question
+    from postbuild_lib.sharing import _extract_body_question
 
     # Paragraph must be 50-300 chars and end with ?
     question = "How should financial institutions approach post-quantum migration in their payment stacks?"
@@ -2728,7 +2728,7 @@ def test_extract_body_question_finds_first_question_paragraph():
 
 
 def test_keywords_to_hashtags_skips_empty_segments():
-    from postbuild_lib.article_furniture import _keywords_to_hashtags
+    from postbuild_lib.sharing import _keywords_to_hashtags
 
     # Double-comma produces an empty segment that must be skipped (line 785)
     html = (
@@ -2741,7 +2741,7 @@ def test_keywords_to_hashtags_skips_empty_segments():
 
 
 def test_keywords_to_hashtags_caps_at_max_n():
-    from postbuild_lib.article_furniture import _keywords_to_hashtags
+    from postbuild_lib.sharing import _keywords_to_hashtags
 
     # 7 distinct keywords → must stop at max_n=5 (line 792 break)
     html = (
@@ -2753,7 +2753,7 @@ def test_keywords_to_hashtags_caps_at_max_n():
 
 
 def test_generate_linkedin_post_merges_two_sentences_and_includes_takeaways():
-    from postbuild_lib.article_furniture import inject_syndication_panel
+    from postbuild_lib.sharing import inject_syndication_panel
 
     # Description with two short sentences (lines 816-818)
     two_sentence_desc = (
@@ -2792,7 +2792,7 @@ def test_generate_linkedin_post_merges_two_sentences_and_includes_takeaways():
 
 
 def test_inject_reuse_panel_respects_license_meta_override():
-    from postbuild_lib.article_furniture import inject_reuse_panel
+    from postbuild_lib.sharing import inject_reuse_panel
 
     head = _WS2_HEAD + '<meta name="license" content="CC-BY-SA-4.0">'
     out = inject_reuse_panel(_ws2_page(head=head))
@@ -2801,7 +2801,7 @@ def test_inject_reuse_panel_respects_license_meta_override():
 
 
 def test_inject_reuse_panel_unknown_license_falls_back_to_default():
-    from postbuild_lib.article_furniture import inject_reuse_panel
+    from postbuild_lib.sharing import inject_reuse_panel
 
     head = _WS2_HEAD + '<meta name="license" content="bogus-license">'
     out = inject_reuse_panel(_ws2_page(head=head))
@@ -2811,7 +2811,7 @@ def test_inject_reuse_panel_unknown_license_falls_back_to_default():
 
 
 def test_inject_reuse_panel_all_rights_reserved_omits_rel_license_url():
-    from postbuild_lib.article_furniture import inject_reuse_panel
+    from postbuild_lib.sharing import inject_reuse_panel
 
     head = _WS2_HEAD + '<meta name="license" content="All-Rights-Reserved">'
     out = inject_reuse_panel(_ws2_page(head=head))
@@ -2821,7 +2821,7 @@ def test_inject_reuse_panel_all_rights_reserved_omits_rel_license_url():
 
 
 def test_inject_reuse_panel_idempotent():
-    from postbuild_lib.article_furniture import inject_reuse_panel
+    from postbuild_lib.sharing import inject_reuse_panel
 
     once = inject_reuse_panel(_ws2_page())
     assert inject_reuse_panel(once) == once
@@ -2836,7 +2836,7 @@ def test_inject_oembed_link_emits_alternate_link_in_head():
     """The oEmbed discovery `<link rel="alternate">` carries the per-
     article /oembed/<slug>.json URL so Notion / Slack / Discord can fetch
     the rich card metadata. BlogPosting pages only; idempotent."""
-    from postbuild_lib.article_furniture import inject_oembed_link
+    from postbuild_lib.sharing import inject_oembed_link
 
     out = inject_oembed_link(_ws2_page())
     assert 'application/json+oembed' in out
@@ -2846,21 +2846,21 @@ def test_inject_oembed_link_emits_alternate_link_in_head():
 
 
 def test_inject_oembed_link_no_op_without_blogposting():
-    from postbuild_lib.article_furniture import inject_oembed_link
+    from postbuild_lib.sharing import inject_oembed_link
 
     plain = "<html><head></head><body>x</body></html>"
     assert inject_oembed_link(plain) == plain
 
 
 def test_inject_oembed_link_idempotent():
-    from postbuild_lib.article_furniture import inject_oembed_link
+    from postbuild_lib.sharing import inject_oembed_link
 
     once = inject_oembed_link(_ws2_page())
     assert inject_oembed_link(once) == once
 
 
 def test_inject_oembed_link_no_op_when_canonical_or_title_missing():
-    from postbuild_lib.article_furniture import inject_oembed_link
+    from postbuild_lib.sharing import inject_oembed_link
 
     head_no_canonical = _WS2_HEAD.replace(
         '<link rel="canonical" href="https://sebastienrousseau.com/2026-01-01-my-post/">',
@@ -2874,7 +2874,7 @@ def test_inject_oembed_link_handles_index_html_canonical_suffix():
     """Canonical URLs that end with `/index.html` (older slug shape)
     still resolve to the same bare slug — `/oembed/<slug>.json` should
     not contain `index.html` in the filename."""
-    from postbuild_lib.article_furniture import inject_oembed_link
+    from postbuild_lib.sharing import inject_oembed_link
 
     head_with_index = _WS2_HEAD.replace(
         'href="https://sebastienrousseau.com/2026-01-01-my-post/"',
@@ -2919,7 +2919,7 @@ def test_inject_oembed_link_no_op_when_canonical_resolves_to_empty_slug():
     """A bare-`/` canonical (no slug) → bare slug empty → the function
     short-circuits with the original HTML rather than emit
     `/oembed/.json`."""
-    from postbuild_lib.article_furniture import inject_oembed_link
+    from postbuild_lib.sharing import inject_oembed_link
 
     head_empty_slug = _WS2_HEAD.replace(
         'href="https://sebastienrousseau.com/2026-01-01-my-post/"',
@@ -2933,7 +2933,7 @@ def test_share_payload_strips_index_html_canonical_suffix():
     """`_share_payload` reuses the same /index.html-suffix strip as
     inject_oembed_link so the share-rail's pre-filled X/LinkedIn/
     WhatsApp/email links carry the clean trailing-slash canonical."""
-    from postbuild_lib.article_furniture import _share_payload
+    from postbuild_lib.sharing import _share_payload
 
     head_with_index = _WS2_HEAD.replace(
         'href="https://sebastienrousseau.com/2026-01-01-my-post/"',
@@ -2949,7 +2949,7 @@ def test_syndication_payload_truncates_description_at_300_chars():
     """Mastodon's 500-char toot budget caps the description at 300 chars
     + an ellipsis so the title + URL still fit. Exercises the
     `if len(desc) > 300: desc_trunc += "…"` branch."""
-    from postbuild_lib.article_furniture import _syndication_payloads
+    from postbuild_lib.sharing import _syndication_payloads
 
     long_desc = "x" * 350
     payload = {
