@@ -15,6 +15,7 @@ from pathlib import Path
 
 import postbuild as pb
 import postbuild_assets as pa
+import postbuild_transforms as _pt
 import pytest
 
 # ---------------------------------------------------------------------------
@@ -296,7 +297,7 @@ def test_inline_theme_init_handles_unquoted_src():
 
 
 def test_inline_theme_init_no_op_when_minified_body_empty(monkeypatch):
-    monkeypatch.setattr(pb, "THEME_INIT_MINIFIED", "")
+    monkeypatch.setattr(_pt, "THEME_INIT_MINIFIED", "")
     html = '<head><script src="/theme-init.js"></script></head>'
     out, n = pb.inline_theme_init(html)
     assert (out, n) == (html, 0)
@@ -461,10 +462,10 @@ def test_theme_init_minified_is_smaller_than_source():
     src = Path("_layouts/theme-init.js")
     if not src.is_file():
         pytest.skip("source not present in this test environment")
-    assert len(pb.THEME_INIT_MINIFIED) > 0
-    assert len(pb.THEME_INIT_MINIFIED) < src.stat().st_size
+    assert len(_pt.THEME_INIT_MINIFIED) > 0
+    assert len(_pt.THEME_INIT_MINIFIED) < src.stat().st_size
     # Must still contain the data-theme assignment that the bootstrap does.
-    assert "data-theme" in pb.THEME_INIT_MINIFIED
+    assert "data-theme" in _pt.THEME_INIT_MINIFIED
 
 
 # ---------------------------------------------------------------------------
@@ -640,7 +641,7 @@ def test_wrap_cdn_images_handles_jpg_and_png_extensions():
 def test_build_cdn_transform_url_emits_variant_path():
     """The renamed-in-spirit helper now emits ``<stem>-<width>.webp``.
     Width 400 → snap to 640 variant."""
-    out = pb._build_cdn_transform_url("/stocks/images/foo.webp", 400, 80)
+    out = pa._build_cdn_transform_url("/stocks/images/foo.webp", 400, 80)
     assert out == "https://cloudcdn.pro/stocks/images/foo-640.webp"
 
 
@@ -648,14 +649,14 @@ def test_build_cdn_transform_url_idempotent_on_existing_variant():
     """A path that's already a variant (foo-1200.webp) passes through
     unchanged so the postbuild's multi-pass pipeline doesn't compound
     suffixes to foo-1200-1200.webp."""
-    out = pb._build_cdn_transform_url("/stocks/images/foo-1200.webp", 600, 80)
+    out = pa._build_cdn_transform_url("/stocks/images/foo-1200.webp", 600, 80)
     assert out == "https://cloudcdn.pro/stocks/images/foo-1200.webp"
 
 
 def test_build_cdn_transform_url_falls_through_for_non_stocks_paths():
     """`/clients/*` paths (logos) don't have pre-gen variants — they pass
     through as the bare CDN URL."""
-    out = pb._build_cdn_transform_url("/clients/v1/logos/akqa.webp", 400, 80)
+    out = pa._build_cdn_transform_url("/clients/v1/logos/akqa.webp", 400, 80)
     assert out == "https://cloudcdn.pro/clients/v1/logos/akqa.webp"
 
 

@@ -19,6 +19,7 @@ from pathlib import Path
 
 import postbuild as pb
 import postbuild_assets as _pa
+import postbuild_transforms as _pt
 import pytest
 
 # ---------------------------------------------------------------------------
@@ -72,10 +73,12 @@ def fake_public(tmp_path: Path, monkeypatch):
     import postbuild_lib.schemas as schemas
     import postbuild_lib.seo as seo
 
+
     monkeypatch.setattr(af, "PUBLIC", pub)
     monkeypatch.setattr(schemas, "PUBLIC", pub)
     monkeypatch.setattr(seo, "PUBLIC", pub)
     monkeypatch.setattr(navigation, "PUBLIC", pub)
+    monkeypatch.setattr(_pt, "PUBLIC", pub)
     return pub
 
 
@@ -207,22 +210,22 @@ def test_scrub_localhost_urls_no_op_when_clean():
 
 def test_card_title_url_picks_longest_text_link():
     body = '<a class="newsroom-card-media" href="/foo/"></a>' '<a href="/foo/">A Long Headline</a>'
-    pair = pb._card_title_url(body)
-    assert pair == ("A Long Headline", pb.SITE + "/foo/")
+    pair = _pt._card_title_url(body)
+    assert pair == ("A Long Headline", _pt.SITE + "/foo/")
 
 
 def test_card_title_url_returns_none_when_no_link():
-    assert pb._card_title_url("<p>no links here</p>") is None
+    assert _pt._card_title_url("<p>no links here</p>") is None
 
 
 def test_card_title_url_skips_fragment_only_anchors():
     body = '<a href="#top">top</a>'
-    assert pb._card_title_url(body) is None
+    assert _pt._card_title_url(body) is None
 
 
 def test_build_itemlist_returns_none_when_no_matching_cards():
     html = '<article class="other"><a href="/x">X title</a></article>'
-    assert pb.build_itemlist(html, ("newsroom-card",), "https://x/") is None
+    assert _pt.build_itemlist(html, ("newsroom-card",), "https://x/") is None
 
 
 def test_build_itemlist_emits_json_schema():
@@ -232,7 +235,7 @@ def test_build_itemlist_emits_json_schema():
         '<a href="/post/">Post title</a>'
         "</article>"
     )
-    out = pb.build_itemlist(html, ("newsroom-card",), "https://x/")
+    out = _pt.build_itemlist(html, ("newsroom-card",), "https://x/")
     assert out is not None
     parsed = json.loads(out)
     assert parsed["@type"] == "ItemList"
