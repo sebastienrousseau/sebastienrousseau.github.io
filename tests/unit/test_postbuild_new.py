@@ -26,7 +26,7 @@ import pytest
 def test_minify_one_saves_bytes_on_unminified_js(tmp_path: Path):
     p = tmp_path / "x.js"
     p.write_text("// hello\nfunction foo() {\n  return 42;\n}\n", encoding="utf-8")
-    before, after = pb._minify_one(p)
+    before, after = pa._minify_one(p)
     assert before > 0
     assert after > 0
     assert after < before
@@ -39,7 +39,7 @@ def test_minify_one_idempotent_on_already_minified_with_trailing_newline(tmp_pat
     """Already-minified + already-trailing-\\n → no rewrite, (0, 0)."""
     p = tmp_path / "x.js"
     p.write_text("function foo(){return 42}\n", encoding="utf-8")
-    before, after = pb._minify_one(p)
+    before, after = pa._minify_one(p)
     assert (before, after) == (0, 0)
 
 
@@ -48,7 +48,7 @@ def test_minify_one_stamps_trailing_newline_when_missing(tmp_path: Path):
     so the on-disk SHA-256 matches the bytes GitHub Pages serves."""
     p = tmp_path / "x.js"
     p.write_text("function foo(){return 42}", encoding="utf-8")
-    before, after = pb._minify_one(p)
+    before, after = pa._minify_one(p)
     assert after == before + 1
     assert p.read_text(encoding="utf-8").endswith("\n")
 
@@ -56,13 +56,13 @@ def test_minify_one_stamps_trailing_newline_when_missing(tmp_path: Path):
 def test_minify_one_returns_zero_on_missing_file(tmp_path: Path):
     # File doesn't exist → read_text raises OSError → swallowed.
     p = tmp_path / "nope.js"
-    assert pb._minify_one(p) == (0, 0)
+    assert pa._minify_one(p) == (0, 0)
 
 
 def test_minify_one_returns_zero_on_invalid_utf8(tmp_path: Path):
     p = tmp_path / "bad.js"
     p.write_bytes(b"\xff\xfe\x00bad")
-    assert pb._minify_one(p) == (0, 0)
+    assert pa._minify_one(p) == (0, 0)
 
 
 # ---------------------------------------------------------------------------
@@ -73,7 +73,7 @@ def test_minify_one_returns_zero_on_invalid_utf8(tmp_path: Path):
 def test_minify_css_strips_leading_indent_and_comments(tmp_path: Path):
     p = tmp_path / "x.css"
     p.write_text("      /* preamble */\n      body { color: #fff; }\n", encoding="utf-8")
-    before, after = pb._minify_css(p)
+    before, after = pa._minify_css(p)
     assert before > after
     body = p.read_text(encoding="utf-8")
     assert "/* preamble */" not in body
@@ -84,26 +84,26 @@ def test_minify_css_idempotent_on_already_minified_with_trailing_newline(tmp_pat
     """Already-minified + already-trailing-\\n → no rewrite, (0, 0)."""
     p = tmp_path / "x.css"
     p.write_text("body{color:red}\n", encoding="utf-8")
-    assert pb._minify_css(p) == (0, 0)
+    assert pa._minify_css(p) == (0, 0)
 
 
 def test_minify_css_stamps_trailing_newline_when_missing(tmp_path: Path):
     """Same as the JS case — pin \\n so SRI ≡ wire."""
     p = tmp_path / "x.css"
     p.write_text("body{color:red}", encoding="utf-8")
-    before, after = pb._minify_css(p)
+    before, after = pa._minify_css(p)
     assert after == before + 1
     assert p.read_text(encoding="utf-8").endswith("\n")
 
 
 def test_minify_css_handles_missing_file(tmp_path: Path):
-    assert pb._minify_css(tmp_path / "missing.css") == (0, 0)
+    assert pa._minify_css(tmp_path / "missing.css") == (0, 0)
 
 
 def test_minify_css_handles_invalid_utf8(tmp_path: Path):
     p = tmp_path / "bad.css"
     p.write_bytes(b"\xff\xfeoops")
-    assert pb._minify_css(p) == (0, 0)
+    assert pa._minify_css(p) == (0, 0)
 
 
 # ---------------------------------------------------------------------------
@@ -113,7 +113,7 @@ def test_minify_css_handles_invalid_utf8(tmp_path: Path):
 
 def test_gather_js_targets_returns_empty_when_public_missing(tmp_path: Path, monkeypatch):
     monkeypatch.setattr(pa, "PUBLIC", tmp_path / "nope")
-    assert pb._gather_js_targets() == []
+    assert pa._gather_js_targets() == []
 
 
 def test_gather_js_targets_excludes_labs(tmp_path: Path, monkeypatch):
@@ -121,14 +121,14 @@ def test_gather_js_targets_excludes_labs(tmp_path: Path, monkeypatch):
     (tmp_path / "labs" / "demo").mkdir(parents=True)
     (tmp_path / "labs" / "demo" / "wasm.js").write_text("// lab", encoding="utf-8")
     (tmp_path / "main.js").write_text("// app", encoding="utf-8")
-    targets = {p.name for p in pb._gather_js_targets()}
+    targets = {p.name for p in pa._gather_js_targets()}
     assert "main.js" in targets
     assert "wasm.js" not in targets
 
 
 def test_gather_css_targets_returns_empty_when_public_missing(tmp_path: Path, monkeypatch):
     monkeypatch.setattr(pa, "PUBLIC", tmp_path / "nope")
-    assert pb._gather_css_targets() == []
+    assert pa._gather_css_targets() == []
 
 
 def test_gather_css_targets_finds_all_css(tmp_path: Path, monkeypatch):
@@ -136,7 +136,7 @@ def test_gather_css_targets_finds_all_css(tmp_path: Path, monkeypatch):
     (tmp_path / "_csp").mkdir()
     (tmp_path / "_csp" / "a.css").write_text("body{}", encoding="utf-8")
     (tmp_path / "highlight.css").write_text(".k{}", encoding="utf-8")
-    names = {p.name for p in pb._gather_css_targets()}
+    names = {p.name for p in pa._gather_css_targets()}
     assert names == {"a.css", "highlight.css"}
 
 
@@ -149,7 +149,7 @@ def _stub_asset(name: str, body: bytes, monkeypatch) -> str:
     """Register a full integrity attribute value (one or more
     space-separated ``sha256-<b64>`` tokens) for ``name`` and return
     the first token's base64 digest for legacy single-token assertions."""
-    integrity = pb._candidate_digests(body)
+    integrity = pa._candidate_digests(body)
     new = dict(pb._pa.asset_hashes)
     new[name] = integrity
     monkeypatch.setattr(pb._pa, "asset_hashes", new)
@@ -162,14 +162,14 @@ def test_pages_trailing_newline_constant_is_single_lf():
     """GitHub Pages appends exactly one ``\\n``, no more, no less.
     Pin the constant so a regression to ``\\r\\n`` or empty doesn't
     silently re-break SRI."""
-    assert pb._PAGES_TRAILING_NEWLINE == b"\n"
+    assert pa._PAGES_TRAILING_NEWLINE == b"\n"
 
 
 def test_candidate_digests_emits_both_primary_and_appended_token():
     """``_candidate_digests`` returns two space-separated SRI tokens
     so the integrity attribute covers both Pages-edge variants
     (file-as-is + file+trailing-newline)."""
-    out = pb._candidate_digests(b"body{}")
+    out = pa._candidate_digests(b"body{}")
     parts = out.split(" ")
     assert len(parts) == 2
     assert all(p.startswith("sha256-") for p in parts)
@@ -180,8 +180,8 @@ def test_candidate_digests_emits_both_primary_and_appended_token():
 def test_candidate_digests_collapses_when_no_difference(monkeypatch):
     """If newline-append produces the same hash (couldn't happen with
     real SHA-256, but covers the defensive branch), emit a single token."""
-    monkeypatch.setattr(pb, "b64_sha256", lambda b: "FIXED")
-    out = pb._candidate_digests(b"body{}")
+    monkeypatch.setattr(pa, "b64_sha256", lambda b: "FIXED")
+    out = pa._candidate_digests(b"body{}")
     assert out == "sha256-FIXED"
 
 
@@ -482,7 +482,7 @@ def test_bulk_minify_js_counts_files_that_changed(tmp_path: Path, monkeypatch):
     (tmp_path / "a.js").write_text("// comment\nfunction a() { return 1; }\n", encoding="utf-8")
     (tmp_path / "b.js").write_text("function b(){return 2}", encoding="utf-8")  # no nl
     (tmp_path / "c.js").write_text("function c(){return 3}\n", encoding="utf-8")  # mini + nl
-    count, before, after = pb._bulk_minify_js()
+    count, before, after = pa._bulk_minify_js()
     # a.js (minified), b.js (newline-stamped) — c.js is left alone.
     assert count == 2
     assert before > 0 and after > 0
@@ -490,7 +490,7 @@ def test_bulk_minify_js_counts_files_that_changed(tmp_path: Path, monkeypatch):
 
 def test_bulk_minify_js_returns_zero_on_empty_public(tmp_path: Path, monkeypatch):
     monkeypatch.setattr(pa, "PUBLIC", tmp_path)
-    assert pb._bulk_minify_js() == (0, 0, 0)
+    assert pa._bulk_minify_js() == (0, 0, 0)
 
 
 def test_bulk_minify_css_counts_files_that_changed(tmp_path: Path, monkeypatch):
@@ -498,7 +498,7 @@ def test_bulk_minify_css_counts_files_that_changed(tmp_path: Path, monkeypatch):
     (tmp_path / "a.css").write_text("/* preamble */\n      body { margin: 0; }\n", encoding="utf-8")
     (tmp_path / "b.css").write_text("body{margin:0}", encoding="utf-8")  # no nl
     (tmp_path / "c.css").write_text("body{margin:0}\n", encoding="utf-8")  # mini + nl
-    count, before, after = pb._bulk_minify_css()
+    count, before, after = pa._bulk_minify_css()
     # a.css (minified), b.css (newline-stamped) — c.css is left alone.
     assert count == 2
     assert before > 0 and after > 0
@@ -506,7 +506,7 @@ def test_bulk_minify_css_counts_files_that_changed(tmp_path: Path, monkeypatch):
 
 def test_bulk_minify_css_returns_zero_on_empty_public(tmp_path: Path, monkeypatch):
     monkeypatch.setattr(pa, "PUBLIC", tmp_path)
-    assert pb._bulk_minify_css() == (0, 0, 0)
+    assert pa._bulk_minify_css() == (0, 0, 0)
 
 
 # ---------------------------------------------------------------------------
