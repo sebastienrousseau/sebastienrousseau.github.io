@@ -19,7 +19,7 @@ SCRIPTS = ROOT / "scripts"
 # Subdirectory order matters when modules with identical names exist
 # in different domains (none today, but lib first means _core etc.
 # resolve to the canonical impl).
-for sub in ("lib", "editorial", "generators", "postbuild", "security", "seo_and_audit"):
+for sub in ("lib", "editorial", "generators", "postbuild", "security", "seo_and_audit", "dev"):
     p = SCRIPTS / sub
     if p.is_dir() and str(p) not in sys.path:
         sys.path.insert(0, str(p))
