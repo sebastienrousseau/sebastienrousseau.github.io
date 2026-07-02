@@ -58,19 +58,22 @@ def _minimal_page_html(lang: str = "en", title: str = "Test", *, with_jsonld: bo
 @pytest.fixture
 def fake_public(tmp_path: Path, monkeypatch):
     """Set up a minimal public/ tree under tmp_path and point pb.PUBLIC
-    at it. Also patches the sibling PUBLIC constants in
-    postbuild_lib.seo + postbuild_lib.article_furniture so the
-    orchestrator-driven helpers all see the same tree."""
+    at it. Also patches the sibling PUBLIC constants in postbuild_lib.seo,
+    postbuild_lib.article_furniture, and postbuild_lib.navigation (each
+    imports its own PUBLIC binding) so the orchestrator-driven helpers all
+    see the same tree."""
     pub = tmp_path / "public"
     pub.mkdir()
     monkeypatch.setattr(pb, "PUBLIC", pub)
     import postbuild_lib.article_furniture as af
+    import postbuild_lib.navigation as navigation
     import postbuild_lib.schemas as schemas
     import postbuild_lib.seo as seo
 
     monkeypatch.setattr(af, "PUBLIC", pub)
     monkeypatch.setattr(schemas, "PUBLIC", pub)
     monkeypatch.setattr(seo, "PUBLIC", pub)
+    monkeypatch.setattr(navigation, "PUBLIC", pub)
     return pub
 
 

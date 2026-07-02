@@ -877,21 +877,15 @@ from postbuild_lib.article_furniture import (  # noqa: F401 — re-exports
     _is_french,
     _labels,
     _labels_for_lang,
-    _nav_active_target,
     _slug_maps,
     _slug_maps_for,
-    build_post_nav_index,
     hoist_body_link_stylesheets,
-    inject_anchor_links_and_toc,
     inject_article_furniture,
-    inject_breadcrumbs,
     inject_deck,
     inject_eyebrow,
     inject_footnotes,
     inject_hero_banner,
     inject_mermaid,
-    inject_nav_active,
-    inject_prev_next_nav,
     inject_pullquotes,
     inject_section_rules,
     inject_sigstore_attestation,
@@ -932,6 +926,13 @@ from postbuild_lib.hreflang import (  # noqa: F401 — re-exports (split from ar
     build_fr_title_index,
     inject_hreflang,
     inject_lang_switcher,
+)
+from postbuild_lib.navigation import (
+    build_post_nav_index,
+    inject_anchor_links_and_toc,
+    inject_breadcrumbs,
+    inject_nav_active,
+    inject_prev_next_nav,
 )
 
 # Output emitters — moved to postbuild_lib.output. Re-exported so
