@@ -44,7 +44,7 @@ def test_oembed_doc_shape() -> None:
     assert doc["title"] == "Title"
     assert doc["thumbnail_url"] == "https://cdn/img.webp"
     assert doc["author_name"] == oe._AUTHOR_NAME
-    assert doc["provider_url"].startswith("https://sebastienrousseau.com")
+    assert doc["provider_url"] == "https://sebastienrousseau.com/"
     assert isinstance(doc["width"], int) and isinstance(doc["height"], int)
     assert "<blockquote" in doc["html"]
 

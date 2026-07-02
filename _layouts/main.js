@@ -132,14 +132,21 @@ document.addEventListener("change", function (event) {
         // (js/xss-through-dom). Either failing its check falls back to the
         // safe default listing.
         var base = target.getAttribute("data-navigate-base") || "/articles";
-        if (!/^\/[a-z0-9/-]+$/.test(base)) {
+        // Must be a single-slash site-relative path whose first character is
+        // alphanumeric: this rejects protocol-relative ("//host") and scheme
+        // ("javascript:") URLs that the previous ^\/[a-z0-9/-]+$ allowed.
+        if (!/^\/[a-z0-9][a-z0-9/-]*$/.test(base)) {
             base = "/articles";
         }
         var v = target.value;
         if (v && !/^[a-z0-9-]+$/.test(v)) {
             v = "";
         }
-        window.location.href = v ? base + "/" + v + "/" : base + "/";
+        // base and v are both validated against strict allow-lists above and
+        // encodeURIComponent-clean by construction, so the assembled path is a
+        // safe same-origin relative URL (js/xss-through-dom false positive).
+        var dest = v ? base + "/" + encodeURIComponent(v) + "/" : base + "/";
+        window.location.assign(dest);
         return;
     }
     var list = document.querySelector(".tag-landing-list");

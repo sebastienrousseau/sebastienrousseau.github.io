@@ -68,5 +68,5 @@ def test_build_index_shape() -> None:
     idx = api.build_index()
     assert idx["version"] == 1
     assert idx["base_url"].endswith("/api/agents/")
-    assert "creativecommons.org" in idx["license"]
+    assert idx["license"] == "https://creativecommons.org/licenses/by/4.0/"
     assert idx["name"].startswith("Sebastien Rousseau")
