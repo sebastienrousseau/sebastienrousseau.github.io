@@ -697,6 +697,12 @@ for _fp in PUBLIC.glob("highlight.*.css"):
     if _fp.stem.count(".") == 1:
         _pa._FP_ASSET_MAP["/highlight.css"] = "/" + _fp.name
 
+# Rebuild the fingerprint pattern now that the map is populated. postbuild_assets
+# builds _FP_PATTERN at its import time (map still empty → None), so it must be
+# recomputed here after this module fills _FP_ASSET_MAP, or stamp_asset_fingerprints
+# bails early and the /main.<hash>.js rewrite never happens.
+_pa._FP_PATTERN = _pa._build_fp_pattern()
+
 
 # Match the bare-name asset reference in `<script src=...>` / `<link href=...>`.
 # Quoted ("/main.js") and unquoted (src=/main.js) forms — SSG's minifier emits
