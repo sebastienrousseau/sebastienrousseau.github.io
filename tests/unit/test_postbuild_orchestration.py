@@ -18,6 +18,7 @@ import json
 from pathlib import Path
 
 import postbuild as pb
+import postbuild_assets as _pa
 import pytest
 
 # ---------------------------------------------------------------------------
@@ -65,6 +66,7 @@ def fake_public(tmp_path: Path, monkeypatch):
     pub = tmp_path / "public"
     pub.mkdir()
     monkeypatch.setattr(pb, "PUBLIC", pub)
+    monkeypatch.setattr(_pa, "PUBLIC", pub)
     import postbuild_lib.article_furniture as af
     import postbuild_lib.navigation as navigation
     import postbuild_lib.schemas as schemas
@@ -268,13 +270,13 @@ def test_inject_itemlist_injects_on_articles_index(fake_public: Path):
 
 
 def test_stamp_asset_fingerprints_rewrites_bare_main_js(monkeypatch):
-    monkeypatch.setattr(pb, "_FP_ASSET_MAP", {"/main.js": "/main.abc.js"})
-    monkeypatch.setattr(pb, "_FP_PATTERN", pb._build_fp_pattern())
+    monkeypatch.setattr(_pa, "_FP_ASSET_MAP", {"/main.js": "/main.abc.js"})
+    monkeypatch.setattr(_pa, "_FP_PATTERN", _pa._build_fp_pattern())
     # Re-import pattern with the new map.
     import re
 
     monkeypatch.setattr(
-        pb,
+        _pa,
         "_FP_PATTERN",
         re.compile(
             r'(<(?:script|link)\b[^>]*\b(?:src|href)=["\']?)(/main\.js)(["\']?[^>]*>)',
@@ -288,20 +290,20 @@ def test_stamp_asset_fingerprints_rewrites_bare_main_js(monkeypatch):
 
 
 def test_stamp_asset_fingerprints_no_op_when_map_empty(monkeypatch):
-    monkeypatch.setattr(pb, "_FP_PATTERN", None)
+    monkeypatch.setattr(_pa, "_FP_PATTERN", None)
     html = '<script src="/main.js"></script>'
     out, n = pb.stamp_asset_fingerprints(html)
     assert (out, n) == (html, 0)
 
 
 def test_build_fp_pattern_returns_none_when_map_empty(monkeypatch):
-    monkeypatch.setattr(pb, "_FP_ASSET_MAP", {})
-    assert pb._build_fp_pattern() is None
+    monkeypatch.setattr(_pa, "_FP_ASSET_MAP", {})
+    assert _pa._build_fp_pattern() is None
 
 
 def test_build_fp_pattern_compiles_pattern_when_map_populated(monkeypatch):
-    monkeypatch.setattr(pb, "_FP_ASSET_MAP", {"/main.js": "/main.abc.js"})
-    pat = pb._build_fp_pattern()
+    monkeypatch.setattr(_pa, "_FP_ASSET_MAP", {"/main.js": "/main.abc.js"})
+    pat = _pa._build_fp_pattern()
     assert pat is not None
     assert pat.search('<script src="/main.js">')
 
@@ -315,12 +317,12 @@ def test_build_fp_pattern_compiles_pattern_when_map_populated(monkeypatch):
 def test_fix_sri_skips_tag_with_no_matchable_close(monkeypatch):
     """If the close-tag regex can't find ``>`` (theoretical broken
     input), the pass must bail rather than corrupt the chunk."""
-    monkeypatch.setattr(pb, "asset_hashes", {"foo.css": "abcd"})
+    monkeypatch.setattr(_pa, "asset_hashes", {"foo.css": "abcd"})
     # Patch the close-tag regex to one that won't match.
     import re
 
     monkeypatch.setattr(
-        pb,
+        _pa,
         "_TAG_CLOSE_RE",
         re.compile(r"<<NEVER_MATCH>>"),
     )
@@ -472,7 +474,7 @@ def test_apply_seo_passes_increments_counters_for_full_trigger(fake_public: Path
     page.write_text(_TRIGGER_HTML, encoding="utf-8")
     # Stamp a fake asset hash so fix_sri actually changes the HTML.
     monkeypatch.setitem(
-        pb.asset_hashes,
+        _pa.asset_hashes,
         "triggercss.css",
         "FAKEHASH/ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+abc=",
     )

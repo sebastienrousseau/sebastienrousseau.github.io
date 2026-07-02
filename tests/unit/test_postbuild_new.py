@@ -14,6 +14,7 @@ import hashlib
 from pathlib import Path
 
 import postbuild as pb
+import postbuild_assets as pa
 import pytest
 
 # ---------------------------------------------------------------------------
@@ -110,12 +111,12 @@ def test_minify_css_handles_invalid_utf8(tmp_path: Path):
 
 
 def test_gather_js_targets_returns_empty_when_public_missing(tmp_path: Path, monkeypatch):
-    monkeypatch.setattr(pb, "PUBLIC", tmp_path / "nope")
+    monkeypatch.setattr(pa, "PUBLIC", tmp_path / "nope")
     assert pb._gather_js_targets() == []
 
 
 def test_gather_js_targets_excludes_labs(tmp_path: Path, monkeypatch):
-    monkeypatch.setattr(pb, "PUBLIC", tmp_path)
+    monkeypatch.setattr(pa, "PUBLIC", tmp_path)
     (tmp_path / "labs" / "demo").mkdir(parents=True)
     (tmp_path / "labs" / "demo" / "wasm.js").write_text("// lab", encoding="utf-8")
     (tmp_path / "main.js").write_text("// app", encoding="utf-8")
@@ -125,12 +126,12 @@ def test_gather_js_targets_excludes_labs(tmp_path: Path, monkeypatch):
 
 
 def test_gather_css_targets_returns_empty_when_public_missing(tmp_path: Path, monkeypatch):
-    monkeypatch.setattr(pb, "PUBLIC", tmp_path / "nope")
+    monkeypatch.setattr(pa, "PUBLIC", tmp_path / "nope")
     assert pb._gather_css_targets() == []
 
 
 def test_gather_css_targets_finds_all_css(tmp_path: Path, monkeypatch):
-    monkeypatch.setattr(pb, "PUBLIC", tmp_path)
+    monkeypatch.setattr(pa, "PUBLIC", tmp_path)
     (tmp_path / "_csp").mkdir()
     (tmp_path / "_csp" / "a.css").write_text("body{}", encoding="utf-8")
     (tmp_path / "highlight.css").write_text(".k{}", encoding="utf-8")
@@ -148,9 +149,9 @@ def _stub_asset(name: str, body: bytes, monkeypatch) -> str:
     space-separated ``sha256-<b64>`` tokens) for ``name`` and return
     the first token's base64 digest for legacy single-token assertions."""
     integrity = pb._candidate_digests(body)
-    new = dict(pb.asset_hashes)
+    new = dict(pb._pa.asset_hashes)
     new[name] = integrity
-    monkeypatch.setattr(pb, "asset_hashes", new)
+    monkeypatch.setattr(pb._pa, "asset_hashes", new)
     # Return just the first token's b64 (for assertions like
     # ``f"sha256-{digest}" in out``).
     return integrity.split()[0].removeprefix("sha256-")
@@ -218,7 +219,7 @@ def test_fix_sri_filename_starting_with_digit_is_matched(monkeypatch):
 
 
 def test_fix_sri_no_op_when_asset_unknown(monkeypatch):
-    monkeypatch.setattr(pb, "asset_hashes", {})
+    monkeypatch.setattr(pa, "asset_hashes", {})
     html = '<link rel="stylesheet" href="/_csp/unknown.css">'
     assert pb.fix_sri(html) == html
 
@@ -476,7 +477,7 @@ def test_theme_init_minified_is_smaller_than_source():
 def test_bulk_minify_js_counts_files_that_changed(tmp_path: Path, monkeypatch):
     """Every file that ended up rewritten (whether for size reduction
     OR for the SRI-stamping trailing newline) counts as 'changed'."""
-    monkeypatch.setattr(pb, "PUBLIC", tmp_path)
+    monkeypatch.setattr(pa, "PUBLIC", tmp_path)
     (tmp_path / "a.js").write_text("// comment\nfunction a() { return 1; }\n", encoding="utf-8")
     (tmp_path / "b.js").write_text("function b(){return 2}", encoding="utf-8")  # no nl
     (tmp_path / "c.js").write_text("function c(){return 3}\n", encoding="utf-8")  # mini + nl
@@ -487,12 +488,12 @@ def test_bulk_minify_js_counts_files_that_changed(tmp_path: Path, monkeypatch):
 
 
 def test_bulk_minify_js_returns_zero_on_empty_public(tmp_path: Path, monkeypatch):
-    monkeypatch.setattr(pb, "PUBLIC", tmp_path)
+    monkeypatch.setattr(pa, "PUBLIC", tmp_path)
     assert pb._bulk_minify_js() == (0, 0, 0)
 
 
 def test_bulk_minify_css_counts_files_that_changed(tmp_path: Path, monkeypatch):
-    monkeypatch.setattr(pb, "PUBLIC", tmp_path)
+    monkeypatch.setattr(pa, "PUBLIC", tmp_path)
     (tmp_path / "a.css").write_text("/* preamble */\n      body { margin: 0; }\n", encoding="utf-8")
     (tmp_path / "b.css").write_text("body{margin:0}", encoding="utf-8")  # no nl
     (tmp_path / "c.css").write_text("body{margin:0}\n", encoding="utf-8")  # mini + nl
@@ -503,7 +504,7 @@ def test_bulk_minify_css_counts_files_that_changed(tmp_path: Path, monkeypatch):
 
 
 def test_bulk_minify_css_returns_zero_on_empty_public(tmp_path: Path, monkeypatch):
-    monkeypatch.setattr(pb, "PUBLIC", tmp_path)
+    monkeypatch.setattr(pa, "PUBLIC", tmp_path)
     assert pb._bulk_minify_css() == (0, 0, 0)
 
 
@@ -736,7 +737,7 @@ def test_wrap_cdn_preload_returns_unchanged_when_href_sub_fails(monkeypatch):
         def subn(self, repl, attrs, count=1):
             return attrs, 0
 
-    monkeypatch.setattr(pb, "_LINK_HREF_ANY_RE", _FakeRE(pb._LINK_HREF_ANY_RE))
+    monkeypatch.setattr(pa, "_LINK_HREF_ANY_RE", _FakeRE(pa._LINK_HREF_ANY_RE))
     html = (
         '<link rel="preload" as="image" '
         'href="https://cloudcdn.pro/stocks/images/hero.webp" '
@@ -761,9 +762,9 @@ def test_align_existing_preload_returns_unchanged_when_subn_fails(monkeypatch):
         def subn(self, repl, attrs, count=1):
             return attrs, 0
 
-    monkeypatch.setattr(pb, "_LINK_HREF_ANY_RE", _FakeRE(pb._LINK_HREF_ANY_RE))
+    monkeypatch.setattr(pa, "_LINK_HREF_ANY_RE", _FakeRE(pa._LINK_HREF_ANY_RE))
     html = '<link rel="preload" as="image" ' 'href="https://cdn.example/old.webp">'
-    out, n = pb._align_existing_preload(html, "https://cdn.example/new.webp")
+    out, n = pa._align_existing_preload(html, "https://cdn.example/new.webp")
     assert n == 0
     assert out == html
 
@@ -781,28 +782,28 @@ def test_link_attr_href_returns_none_when_match_groups_empty(monkeypatch):
         def search(self, s):
             return _FakeMatch()
 
-    monkeypatch.setattr(pb, "_LINK_HREF_ANY_RE", _FakeRE())
-    assert pb._link_attr_href('href="x"') is None
+    monkeypatch.setattr(pa, "_LINK_HREF_ANY_RE", _FakeRE())
+    assert pa._link_attr_href('href="x"') is None
 
 
 def test_link_attr_href_returns_none_when_search_returns_none():
     """No href attribute present at all — search() returns None
     (postbuild.py:438)."""
-    assert pb._link_attr_href('rel="preload" as="image"') is None
+    assert pa._link_attr_href('rel="preload" as="image"') is None
 
 
 def test_img_attr_helpers_parse_quoted_and_unquoted():
-    assert pb._img_attr_src('src="foo.webp"') == "foo.webp"
-    assert pb._img_attr_src("src='bar.webp'") == "bar.webp"
-    assert pb._img_attr_src("src=baz.webp") == "baz.webp"
-    assert pb._img_attr_src("alt=foo") is None
-    assert pb._img_attr_width('width="600"') == 600
-    assert pb._img_attr_width("width=400") == 400
-    assert pb._img_attr_width("height=600") is None
-    assert pb._img_is_high_priority('fetchpriority="high"') is True
-    assert pb._img_is_high_priority("fetchpriority=high") is True
-    assert pb._img_is_high_priority('fetchpriority="low"') is False
-    assert pb._img_is_high_priority("") is False
+    assert pa._img_attr_src('src="foo.webp"') == "foo.webp"
+    assert pa._img_attr_src("src='bar.webp'") == "bar.webp"
+    assert pa._img_attr_src("src=baz.webp") == "baz.webp"
+    assert pa._img_attr_src("alt=foo") is None
+    assert pa._img_attr_width('width="600"') == 600
+    assert pa._img_attr_width("width=400") == 400
+    assert pa._img_attr_width("height=600") is None
+    assert pa._img_is_high_priority('fetchpriority="high"') is True
+    assert pa._img_is_high_priority("fetchpriority=high") is True
+    assert pa._img_is_high_priority('fetchpriority="low"') is False
+    assert pa._img_is_high_priority("") is False
 
 
 def test_img_attr_width_returns_none_on_unparseable(monkeypatch):
@@ -815,8 +816,8 @@ def test_img_attr_width_returns_none_on_unparseable(monkeypatch):
             return "abc" if n == 1 else None  # not a digit
 
     fake_re = type("FakeRE", (), {"search": lambda self, s: FakeMatch()})()
-    monkeypatch.setattr(pb, "_IMG_WIDTH_ANY_RE", fake_re)
-    assert pb._img_attr_width('width="abc"') is None
+    monkeypatch.setattr(pa, "_IMG_WIDTH_ANY_RE", fake_re)
+    assert pa._img_attr_width('width="abc"') is None
 
 
 def test_wrap_cdn_images_returns_unchanged_when_src_sub_fails(monkeypatch):
@@ -836,7 +837,7 @@ def test_wrap_cdn_images_returns_unchanged_when_src_sub_fails(monkeypatch):
         def subn(self, repl, attrs, count=1):
             return attrs, 0  # report zero substitutions
 
-    monkeypatch.setattr(pb, "_IMG_SRC_ANY_RE", FakeRE(pb._IMG_SRC_ANY_RE))
+    monkeypatch.setattr(pa, "_IMG_SRC_ANY_RE", FakeRE(pa._IMG_SRC_ANY_RE))
     html = '<img src="https://cloudcdn.pro/stocks/images/foo.webp" width="600">'
     out, n = pb.wrap_cdn_images_in_transform(html)
     assert n == 0
