@@ -878,14 +878,10 @@ from postbuild_lib.article_furniture import (  # noqa: F401 — re-exports
     _labels_for_lang,
     _slug_maps,
     _slug_maps_for,
-    hoist_body_link_stylesheets,
     inject_article_furniture,
     inject_deck,
     inject_eyebrow,
-    inject_sigstore_attestation,
-    inject_table_labels,
     slugify,
-    strip_duplicate_body_h1,
 )
 from postbuild_lib.citations import (
     inject_citations,
@@ -928,6 +924,12 @@ from postbuild_lib.hreflang import (  # noqa: F401 — re-exports (split from ar
     build_fr_title_index,
     inject_hreflang,
     inject_lang_switcher,
+)
+from postbuild_lib.html_passes import (
+    hoist_body_link_stylesheets,
+    inject_sigstore_attestation,
+    inject_table_labels,
+    strip_duplicate_body_h1,
 )
 from postbuild_lib.navigation import (
     build_post_nav_index,

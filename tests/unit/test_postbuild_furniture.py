@@ -8,6 +8,7 @@ Split out of test_postbuild.py; tests are verbatim copies.
 from __future__ import annotations
 
 from postbuild_lib import hreflang as hf
+from postbuild_lib import html_passes as hp
 
 # ---------------------------------------------------------------------------
 # slugify edge cases
@@ -273,7 +274,7 @@ def test_render_meta_bar_french_uses_localised_author_url():
 
 
 def test_inject_sigstore_no_op_without_blogposting():
-    from postbuild_lib.article_furniture import inject_sigstore_attestation
+    from postbuild_lib.html_passes import inject_sigstore_attestation
 
     html = "<p>plain page, no BlogPosting graph</p>"
     assert inject_sigstore_attestation(html, "post-slug") == html
@@ -281,11 +282,10 @@ def test_inject_sigstore_no_op_without_blogposting():
 
 def test_inject_sigstore_no_op_when_bundle_missing(tmp_path, monkeypatch):
     """Without a sigstore bundle on disk, the injector is a no-op."""
-    from postbuild_lib import article_furniture as af
 
     html = '<script type="application/ld+json">{"@type":"BlogPosting"}</script>' "<main></main>"
     monkeypatch.chdir(tmp_path)  # no _data/sigstore/* tree → no bundle
-    assert af.inject_sigstore_attestation(html, "post-slug") == html
+    assert hp.inject_sigstore_attestation(html, "post-slug") == html
 
 
 def test_inject_sigstore_emits_badge_when_bundle_exists(tmp_path, monkeypatch):
@@ -293,7 +293,6 @@ def test_inject_sigstore_emits_badge_when_bundle_exists(tmp_path, monkeypatch):
     the badge is appended just before ``</main>``."""
     from unittest.mock import patch
 
-    from postbuild_lib import article_furniture as af
 
     public = tmp_path / "public"
     (public / "sigstore").mkdir(parents=True)
@@ -302,8 +301,8 @@ def test_inject_sigstore_emits_badge_when_bundle_exists(tmp_path, monkeypatch):
         '<script type="application/ld+json">{"@type":"BlogPosting"}</script>'
         "<main><p>body</p></main>"
     )
-    with patch.object(af, "_SIGSTORE_CONFIG_PRESENT", True), patch.object(af, "PUBLIC", public):
-        out = af.inject_sigstore_attestation(html, "post-slug")
+    with patch.object(hp, "_SIGSTORE_CONFIG_PRESENT", True), patch.object(hp, "PUBLIC", public):
+        out = hp.inject_sigstore_attestation(html, "post-slug")
     assert 'class="article-sigstore"' in out
     assert "Sigstore signature" in out
     assert 'href="/sigstore/post-slug.bundle"' in out
@@ -313,15 +312,14 @@ def test_inject_sigstore_idempotent():
     """Re-running on a page that already has the badge is a no-op."""
     from unittest.mock import patch
 
-    from postbuild_lib import article_furniture as af
 
     html = (
         '<script type="application/ld+json">{"@type":"BlogPosting"}</script>'
         '<main><aside class="article-sigstore">badge</aside></main>'
     )
-    with patch.object(af, "_SIGSTORE_CONFIG_PRESENT", True):
+    with patch.object(hp, "_SIGSTORE_CONFIG_PRESENT", True):
         # Even with the flag on the existing badge means we bail early
-        out = af.inject_sigstore_attestation(html, "post-slug")
+        out = hp.inject_sigstore_attestation(html, "post-slug")
     assert out == html
 
 
@@ -788,7 +786,7 @@ def test_inject_anchor_skips_when_existing_heading_anchors_present():
 
 def test_strip_duplicate_body_h1_removes_match():
     """Layout hero H1 + body H1 with identical text — body H1 dropped."""
-    from postbuild_lib.article_furniture import strip_duplicate_body_h1
+    from postbuild_lib.html_passes import strip_duplicate_body_h1
 
     html = (
         '<section class="ap-hero"><h1>The Article</h1></section>'
@@ -807,7 +805,7 @@ def test_strip_duplicate_body_h1_removes_match():
 def test_strip_duplicate_body_h1_keeps_distinct_h1():
     """If the body H1 differs from the hero H1, leave both in place
     (something unusual is going on; don't silently delete content)."""
-    from postbuild_lib.article_furniture import strip_duplicate_body_h1
+    from postbuild_lib.html_passes import strip_duplicate_body_h1
 
     html = (
         '<section class="ap-hero"><h1>Hero Title</h1></section>'
@@ -823,7 +821,7 @@ def test_strip_duplicate_body_h1_keeps_distinct_h1():
 def test_strip_duplicate_body_h1_no_op_without_hero():
     """Without an ap-hero H1 (static pages, listing pages) the function
     is a no-op."""
-    from postbuild_lib.article_furniture import strip_duplicate_body_h1
+    from postbuild_lib.html_passes import strip_duplicate_body_h1
 
     html = '<main><div class="wrap"><h1>Standalone</h1></div></main>'
     assert strip_duplicate_body_h1(html) == html
@@ -831,7 +829,7 @@ def test_strip_duplicate_body_h1_no_op_without_hero():
 
 def test_strip_duplicate_body_h1_handles_entities():
     """HTML-entity-encoded titles should still match after unescape."""
-    from postbuild_lib.article_furniture import strip_duplicate_body_h1
+    from postbuild_lib.html_passes import strip_duplicate_body_h1
 
     html = (
         '<section class="ap-hero"><h1>Cards &amp; A2A</h1></section>'
@@ -846,7 +844,7 @@ def test_strip_duplicate_body_h1_handles_entities():
 
 def test_strip_duplicate_body_h1_skips_when_no_body_h1():
     """No H1 inside main → no-op."""
-    from postbuild_lib.article_furniture import strip_duplicate_body_h1
+    from postbuild_lib.html_passes import strip_duplicate_body_h1
 
     html = (
         '<section class="ap-hero"><h1>Title</h1></section>'
@@ -1113,11 +1111,10 @@ def test_inject_sigstore_no_op_when_config_absent():
     """``_SIGSTORE_CONFIG_PRESENT`` False → bail before reading disk."""
     from unittest.mock import patch
 
-    from postbuild_lib import article_furniture as af
 
     html = '<script type="application/ld+json">{"@type":"BlogPosting"}</script>' "<main></main>"
-    with patch.object(af, "_SIGSTORE_CONFIG_PRESENT", False):
-        assert af.inject_sigstore_attestation(html, "any-slug") == html
+    with patch.object(hp, "_SIGSTORE_CONFIG_PRESENT", False):
+        assert hp.inject_sigstore_attestation(html, "any-slug") == html
 
 
 def test_inject_sigstore_fr_label():
@@ -1137,8 +1134,8 @@ def test_inject_sigstore_fr_label():
             '<script type="application/ld+json">{"@type":"BlogPosting"}</script>'
             "<main><p>body</p></main>"
         )
-        with patch.object(af, "_SIGSTORE_CONFIG_PRESENT", True):
-            out = af.inject_sigstore_attestation(html, "fr-slug")
+        with patch.object(hp, "_SIGSTORE_CONFIG_PRESENT", True):
+            out = hp.inject_sigstore_attestation(html, "fr-slug")
         assert "Signature Sigstore" in out
     finally:
         bundle.unlink()
@@ -1437,10 +1434,9 @@ def test_inject_sigstore_no_op_when_no_blogposting_jsonld(tmp_path):
     """``_SIGSTORE_CONFIG_PRESENT`` True but page has no BlogPosting → no-op."""
     from unittest.mock import patch
 
-    from postbuild_lib import article_furniture as af
 
-    with patch.object(af, "_SIGSTORE_CONFIG_PRESENT", True):
-        assert af.inject_sigstore_attestation("<p>plain</p>", "slug") == "<p>plain</p>"
+    with patch.object(hp, "_SIGSTORE_CONFIG_PRESENT", True):
+        assert hp.inject_sigstore_attestation("<p>plain</p>", "slug") == "<p>plain</p>"
 
 
 def test_inject_sigstore_idempotent_when_already_injected():
@@ -1458,8 +1454,8 @@ def test_inject_sigstore_idempotent_when_already_injected():
             '<script type="application/ld+json">{"@type":"BlogPosting"}</script>'
             '<main><aside class="article-sigstore">already there</aside></main>'
         )
-        with patch.object(af, "_SIGSTORE_CONFIG_PRESENT", True):
-            assert af.inject_sigstore_attestation(html, "slug-2") == html
+        with patch.object(hp, "_SIGSTORE_CONFIG_PRESENT", True):
+            assert hp.inject_sigstore_attestation(html, "slug-2") == html
     finally:
         bundle.unlink()
 
@@ -2015,14 +2011,14 @@ _TBL = (
 
 
 def test_inject_table_labels_no_op_without_blogposting():
-    from postbuild_lib.article_furniture import inject_table_labels
+    from postbuild_lib.html_passes import inject_table_labels
 
     html = f"<html><main>{_TBL}</main></html>"
     assert inject_table_labels(html) == html
 
 
 def test_inject_table_labels_stamps_labels_and_class():
-    from postbuild_lib.article_furniture import inject_table_labels
+    from postbuild_lib.html_passes import inject_table_labels
 
     out = inject_table_labels(_tbl_page(_TBL))
     assert '<table class="table--cards table">' in out
@@ -2033,14 +2029,14 @@ def test_inject_table_labels_stamps_labels_and_class():
 
 
 def test_inject_table_labels_idempotent():
-    from postbuild_lib.article_furniture import inject_table_labels
+    from postbuild_lib.html_passes import inject_table_labels
 
     once = inject_table_labels(_tbl_page(_TBL))
     assert inject_table_labels(once) == once
 
 
 def test_inject_table_labels_adds_class_to_bare_table():
-    from postbuild_lib.article_furniture import inject_table_labels
+    from postbuild_lib.html_passes import inject_table_labels
 
     bare = _TBL.replace('<table class="table">', "<table>")
     out = inject_table_labels(_tbl_page(bare))
@@ -2048,7 +2044,7 @@ def test_inject_table_labels_adds_class_to_bare_table():
 
 
 def test_inject_table_labels_no_op_without_thead_or_headers():
-    from postbuild_lib.article_furniture import inject_table_labels
+    from postbuild_lib.html_passes import inject_table_labels
 
     headless = "<table><tbody><tr><td>x</td></tr></tbody></table>"
     empty_th = "<table><thead><tr><th> </th></tr></thead><tbody><tr><td>x</td></tr></tbody></table>"
@@ -2057,7 +2053,7 @@ def test_inject_table_labels_no_op_without_thead_or_headers():
 
 
 def test_inject_table_labels_extra_or_unlabelled_cells_left_bare():
-    from postbuild_lib.article_furniture import inject_table_labels
+    from postbuild_lib.html_passes import inject_table_labels
 
     tbl = (
         "<table><thead><tr><th>A</th><th></th></tr></thead>"
@@ -2070,7 +2066,7 @@ def test_inject_table_labels_extra_or_unlabelled_cells_left_bare():
 
 
 def test_inject_table_labels_escapes_header_text():
-    from postbuild_lib.article_furniture import inject_table_labels
+    from postbuild_lib.html_passes import inject_table_labels
 
     tbl = (
         '<table><thead><tr><th>Q&amp;A "quote"</th></tr></thead>'
@@ -2081,7 +2077,7 @@ def test_inject_table_labels_escapes_header_text():
 
 
 def test_inject_table_labels_handles_multiple_tables():
-    from postbuild_lib.article_furniture import inject_table_labels
+    from postbuild_lib.html_passes import inject_table_labels
 
     out = inject_table_labels(_tbl_page(_TBL + _TBL.replace("Layer", "Signal")))
     assert out.count("table--cards") == 2
