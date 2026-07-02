@@ -872,19 +872,14 @@ from postbuild_lib.article_furniture import (  # noqa: F401 — re-exports
     AUTHOR_NAME,
     AUTHOR_URL,
     _all_active_non_en_langs,
-    _alternates_for_en_slug,
     _convert_faq_to_qa,
     _detect_page_lang,
     _is_french,
     _labels,
     _labels_for_lang,
     _nav_active_target,
-    _resolve_en_slug,
     _slug_maps,
     _slug_maps_for,
-    _translated_slugs,
-    _translated_slugs_per_lang,
-    build_fr_title_index,
     build_post_nav_index,
     hoist_body_link_stylesheets,
     inject_action_rail,
@@ -898,8 +893,6 @@ from postbuild_lib.article_furniture import (  # noqa: F401 — re-exports
     inject_eyebrow,
     inject_footnotes,
     inject_hero_banner,
-    inject_hreflang,
-    inject_lang_switcher,
     inject_mermaid,
     inject_nav_active,
     inject_oembed_link,
@@ -934,6 +927,15 @@ from postbuild_lib.github_stats import (
 )
 from postbuild_lib.github_stats import (
     inject_github_stats,
+)
+from postbuild_lib.hreflang import (  # noqa: F401 — re-exports (split from article_furniture)
+    _alternates_for_en_slug,
+    _resolve_en_slug,
+    _translated_slugs,
+    _translated_slugs_per_lang,
+    build_fr_title_index,
+    inject_hreflang,
+    inject_lang_switcher,
 )
 
 # Output emitters — moved to postbuild_lib.output. Re-exported so
