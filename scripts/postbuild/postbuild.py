@@ -25,11 +25,11 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 
 PUBLIC = Path("public")
-import postbuild_assets as _pa
 from postbuild_assets import (
     fix_sri,
     inject_jsonld_hashes,
     inject_lcp_preload,
+    setup_asset_state,
     stamp_asset_fingerprints,
     wrap_cdn_images_in_transform,
 )
@@ -49,7 +49,7 @@ from postbuild_transforms import (
 # Asset setup (minify -> SRI hashes -> fingerprint map/pattern) runs once at
 # import time, in order, inside postbuild_assets; the minify stats feed the
 # _finalize_build summary.
-_ASSET_STATS = _pa.setup_asset_state(PUBLIC)
+_ASSET_STATS = setup_asset_state(PUBLIC)
 
 
 # ---------------------------------------------------------------------------
@@ -141,15 +141,6 @@ _ASSET_STATS = _pa.setup_asset_state(PUBLIC)
 # theme bootstrap. Each one needs its own sha256 in CSP script-src.
 
 # ---------------------------------------------------------------------------
-# Inline theme-init.js. The original 589-byte file was render-blocking
-# (~300 ms wasted on slow 4G per Lighthouse). Inlining the minified
-# bootstrap removes the network round-trip entirely and lands the CSS
-# request earlier — but the script must still run before paint, so it
-# stays in <head> as an inline <script>. Its SHA-256 is collected by
-# inject_jsonld_hashes() and added to script-src.
-_theme_init_src_path = Path("_layouts/theme-init.js")
-# Match the external theme-init reference in any layout-emitted form
-# (quoted, unquoted, with or without trailing slash on the close tag).
 
 
 # Match the CSP meta tag whether attributes are quoted or not, in either order
