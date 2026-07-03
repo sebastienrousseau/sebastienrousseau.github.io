@@ -44,7 +44,7 @@ jobs:
       - name: Install Static Site Generator (ssg)
         run: |
           if ! command -v ssg >/dev/null 2>&1; then
-            cargo install ssg --locked --version 0.0.44   # ADR-0002
+            cargo install ssg --locked --version 0.0.46   # ADR-0002
           fi
 
       - name: Setup Python

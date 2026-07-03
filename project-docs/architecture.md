@@ -86,6 +86,7 @@ postbuild pass over `public/`. The steps below are in execution order;
 2. **`scripts/postbuild/regen_homepage.py`** — rewrites the "From the desk" card grid in `index.md` from the most recent dated EN posts.
 3. **`scripts/postbuild/post_enrich.py`** — injects article furniture (lead aside, related-posts, review date) into the build copy. Requires `--dir` (ADR-0003; never mutates committed source by default).
 4. **`scripts/generators/build_tags.py`** — builds the tag taxonomy and per-post tag badges/meta.
+5. **`scripts/postbuild/backfill_permalink.py`** — backfills a `permalink:` into any build-copy post that lacks one (older locale archive posts), derived from the post's locale dir + slug. ssg ≥ 0.0.45 derives the RSS channel `<link>` from `permalink` and aborts without it; source stays untouched (ADR-0002).
 
 ### Phase B — `ssg` (Static Site Generator)
 
