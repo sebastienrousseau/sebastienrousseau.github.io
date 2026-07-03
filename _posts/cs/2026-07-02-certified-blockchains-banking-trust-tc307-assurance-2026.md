@@ -1,6 +1,6 @@
 ---
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
-banner_alt: "Abstract distributed-ledger lattice resolving into a certified audit spine — visualising the shift from retrospective entity audits to continuous, cryptographically-verifiable blockchain assurance for wholesale banking"
+banner_alt: "Abstraktní mřížka distribuovaného registru krystalizující do certifikované auditní páteře — znázorňuje přechod od retrospektivních auditů založených na entitě k průběžnému, kryptograficky ověřitelnému ujištění blockchainu pro velkoobchodní bankovnictví"
 banner_height: "1280"
 banner_width: "1920"
 banner: "https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp"
@@ -9,7 +9,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "July 2, 2026"
-description: "The 2026 Certified Blockchain Index gives banks a 5-level Capability Maturity Model to certify distributed-ledger governance, consensus integrity, cryptography, smart-contract assurance, and audit observability against DORA, CPMI-IOSCO PFMI, ISO/IEC TC 307, ISO 42001 and Basel III."
+description: "Index certifikovaných blockchainů 2026 dává bankám pětiúrovňový model zralosti schopností k certifikaci správy distribuovaného registru, integrity konsenzu, kryptografie, ujištění chytrých kontraktů a auditní pozorovatelnosti vůči DORA, PFMI CPMI-IOSCO, ISO/IEC TC 307, ISO 42001 a Basel III."
 format-detection: "telephone=no"
 hreflang: "cs"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -35,9 +35,9 @@ rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
 schema: "FAQPage, Article"
-seo_title: "From Evidence to Truth: Certified Blockchains and Banking Trust"
+seo_title: "Od důkazu k pravdě: certifikované blockchainy a bankovní důvěra"
 short_name: "sebastienrousseau"
-subtitle: "Why certifiable ledger assurance — not immutability alone — will define institutional trust in 2026: scoring governance, consensus integrity, cryptography, smart contracts, and observability against DORA, ISO/IEC TC 307, and CPMI-IOSCO PFMI."
+subtitle: "Proč certifikovatelné ujištění registru — a nikoli pouze neměnnost — určí institucionální důvěru v roce 2026: hodnocení správy, integrity konsenzu, kryptografie, chytrých kontraktů a pozorovatelnosti vůči DORA, ISO/IEC TC 307 a PFMI CPMI-IOSCO."
 tags: "agentic AI, AI governance, banking, autonomy tiers, model risk, SR 11-7, EU AI Act, FSB, IOSCO, MAS, IMDA, control plane, audit log, DORA, McKinsey, Stanford AI Index"
 theme-color: "0, 83, 191"
 title: "The Agentic AI Index for Banks in 2026: Measuring Autonomy"
@@ -63,7 +63,7 @@ apple_touch_icon_sizes: "192x192"
 apple-mobile-web-app-capable: "yes"
 apple-mobile-web-app-status-bar-inset: "black"
 apple-mobile-web-app-status-bar-style: "black-translucent"
-apple-mobile-web-app-title: "Certified Blockchains 2026"
+apple-mobile-web-app-title: "Certifikované blockchainy 2026"
 apple-touch-fullscreen: "yes"
 msapplication-navbutton-color: "0, 83, 191"
 twitter_card: "summary_large_image"
@@ -84,103 +84,99 @@ site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 ---
 
-<!-- translation-stub: replace this body in Claude Code -->
+# Od důkazu k pravdě: proč certifikované blockchainy určí příští éru bankovní důvěry
 
-> _Translation pending — read the [English original](/2026-07-02-certified-blockchains-banking-trust-tc307-assurance-2026/) while we localise._
+## Strategické shrnutí (to podstatné)
 
-# From Evidence to Truth: Why Certified Blockchains Will Define the Next Era of Banking Trust
+Velkoobchodní bankovnictví a globální transakce se v roce 2026 nacházejí v historickém bodě zlomu. Jak finanční služby přecházejí na nativně digitální, realtimové zúčtovací sítě a umělá inteligence zavádí pravděpodobnostní nedeterminismus, tradiční analogové, retrospektivní modely ujištění (jako statické audity založené na entitě) přestávají splňovat moderní požadavky na řízení rizik a fiduciární povinnosti.
 
-## Executive Summary & Strategic Context (TL;DR)
+Technická komise ISO/IEC TC 307 stanovila normalizovaný základ pro technologie distribuovaných registrů. Skutečné institucionální přijetí však vyžaduje přechod od popisných pokynů k předepisujícímu, nezávisle certifikovatelnému ujištění blockchainu. Hodnocením správy registru, integrity konsenzu, bezpečnosti chytrých kontraktů a kryptografické agility podle přísného pětiúrovňového modelu zralosti schopností (CMM) mohou banky přejít od roztříštěných předpokladů specifických pro dodavatele k certifikovatelné, představenstvem auditovatelné finanční pravdě.
 
-Wholesale banking and global transactions in 2026 sit at a historic inflection point. As financial services transition to natively digital, real-time clearing networks, and as artificial intelligence introduces probabilistic non-determinism, the traditional analogue, retrospective assurance models (such as static entity-based audits) fail to meet modern risk management and fiduciary demands.
+## Klíčové poznatky
 
-ISO/IEC Technical Committee 307 (TC 307) has established a standardized baseline for distributed ledger technologies. However, true corporate and institutional adoption requires shifting from descriptive guidance to prescriptive, independently certifiable blockchain assurance. By scoring ledger governance, consensus integrity, smart contract safety, and cryptographic agility against a strict 5-level Capability Maturity Model (CMM), banks can move from patchwork, vendor-specific assumptions to certifiable, board-auditable financial truth.
+* **Fiduciární třecí mezera**: dnes umíme certifikovat banku (Basel III), cloud (ISO 27001) i systémy správy AI (ISO 42001), ale ještě neumíme certifikovat distribuovaný registr, který stále více určuje, co je pravda. Tato asymetrie je zásadní provozní zranitelností.  
+* **DORA vynucuje přímou fiduciární odpovědnost**: podle článku 5 DORA nesou představenstva bank přímou, nedelegovatelnou osobní odpovědnost za provozní odolnost všech nasazení třetích stran a registrů, s přísnými osobními sankcemi v rámci režimu SM&CR za selhání.  
+* **Auditní páteř AI**: tam, kde strojové učení produkuje neopakovatelné, pravděpodobnostní výsledky, poskytuje certifikovaný blockchain deterministické zachycení stavu. Zaznamenávání verzí modelů, vstupů a validačních rozhodnutí on-chain splňuje ISO 42001 a standardy řízení modelového rizika.  
+* **Index certifikovaných blockchainů**: tento index formalizuje správu, konsenzus, chytré kontrakty a pozorovatelnost do ověřitelné, auditně připravené výsledkové karty na škále CMM od 0 do 5 a překládá inženýrské metriky do představenstvem schválených prohlášení o rizikovém apetitu.
 
-## Key Takeaways
+## 01. Fiduciární třecí mezera v digitálním bankovnictví
 
-* **The Fiduciary Frictional Gap**: We can currently certify the bank (Basel III), the cloud (ISO 27001), and the AI governance systems (ISO 42001), but we cannot yet certify the distributed ledger that increasingly determines what is true. This asymmetry is a major operational vulnerability.  
-* **DORA Enforces Direct Fiduciary Responsibility**: Under DORA Article 5, bank boards of directors bear direct, non-delegable personal liability for the operational resilience of all third-party and ledger deployments, with severe SM&CR personal penalties for failures.  
-* **The AI Audit Spine**: While machine learning introduces non-reproducible, probabilistic outcomes, a certified blockchain provides deterministic state capture. Recording model versions, inputs, and validation decisions on-chain satisfies ISO 42001 and Model Risk Management standards.  
-* **The Certified Blockchain Index**: This index formalizes governance, consensus, smart contracts, and observability into a verifiable, audit-ready scorecard on a 0-to-5 CMM scale, translating engineering metrics into board-approved Risk Appetite Statements.
+V klasickém bankovnictví je důvěra vztahová, institucionální a retrospektivní. Spoléhá na nezávislé auditory třetích stran, kteří prověřují finanční stav v pevných okamžicích a odsouhlasují rozdíly mezi silami bilaterálních registrů. Na realtimových, API řízených trzích roku 2026 tento model zavádí prohibitivní latence a strukturální rizika.
 
-## 01. The Fiduciary Frictional Gap in Digital Banking
+Když se transakce vypořádávají okamžitě, vnitrodenní likviditní fondy jsou dynamicky řízeny API branami a vlastnictví aktiv je tokenizováno napříč sdílenými registry, stávají se retrospektivní audity forenzními cvičeními spíše než preventivními kontrolami. Fiduciáři se již nemohou spoléhat pouze na certifikaci právního subjektu. Musí certifikovat samotný digitální substrát.
 
-In classical banking, trust is relational, institutional, and retrospective. It depends on independent, third-party auditors reviewing financial state at static points in time, reconciling discrepancies across bilateral ledger silos. In the real-time, API-driven markets of 2026, this model introduces prohibitive latencies and structural risks.
+V současnosti banky fungují v prostředí do očí bijící architektonické asymetrie:
 
-When transactions settle instantly, intraday liquidity pools are managed dynamically by API gateways, and asset ownership is tokenised across shared ledgers, retrospective audits become forensic exercises rather than preventative controls. Fiduciaries can no longer rely solely on certifying the corporate entity. They must certify the digital substrate itself.
+1. **Certifikovaná cloudová infrastruktura**: hardwarové uzly, virtualizované kontejnery a fyzická datová centra jsou validovány vůči kontrolám ISO/IEC 27001 a SOC 2 Type II.  
+2. **Certifikované procesy řízení**: politiky provozního rizika, plány kontinuity činnosti a algoritmická nasazení podléhají přísným rizikovým rámcům.  
+3. **Necertifikované registrové motory**: distribuované konsenzuální mechanismy, dodavatelské řetězce validačních uzlů, hranice chytrých kontraktů a modely správy sítě jsou ponechány necertifikovaným, zakázkovým nebo konsorciálně specifickým předpokladům.
 
-Currently, banks operate under a glaring architectural asymmetry:
+Tato asymetrie je zásadním bodem selhání. Banka může provozovat validovanou aplikaci uvnitř bezpečného, ISO 27001 certifikovaného cloudového kontejneru, ale pokud tento kontejner zapisuje do distribuovaného registru s centralizovanou kontrolou validátorů, zranitelnými konsenzuálními parametry nebo neauditovanými chytrými kontrakty, je integrita transakce ohrožena. Aby se tato mezera překlenula, musí se samotný registrový motor stát certifikovatelným objektem ujištění.
 
-1. **Certified Cloud Infrastructure**: Hardware nodes, virtualized containers, and physical datacenters are validated against ISO/IEC 27001 and SOC 2 Type II controls.  
-2. **Certified Management Processes**: Operational risk policies, business continuity plans, and algorithmic deployments are governed under strict risk frameworks.  
-3. **Uncertified Ledger Engines**: The core distributed consensus mechanisms, validator node supply chains, smart contract boundaries, and network governance models are left to uncertified, custom, or consortium-specific assumptions.
+## 02. Normalizační základ ISO/IEC TC 307
 
-This asymmetry is a major failure point. A bank can run a validated application inside a secure, ISO 27001-certified cloud container, but if that container writes to a distributed ledger with centralized validator control, vulnerable consensus parameters, or un-audited smart contracts, the transaction integrity is compromised. To bridge this gap, the ledger engine itself must become a certifiable assurance object.
+Zásadní práci nezbytnou pro normalizaci distribuovaných registrů vykonává technická komise ISO/IEC TC 307 (Technologie blockchainu a distribuovaných registrů). Namísto toho, aby blockchain považovala za izolovaný technický protokol, přistupuje k němu TC 307 jako k institucionální infrastruktuře důvěry a organizuje svou práci kolem pěti základních pilířů:
 
-## 02. The ISO/IEC TC 307 Standardization Baseline
+1. **Taxonomie a slovník (ISO 22739)**: stanoví společnou nomenklaturu a zajišťuje konzistentní právní a provozní definice napříč jurisdikcemi, finančními schématy a institucemi.  
+2. **Referenční architektura (ISO/TR 23245)**: definuje hranice, vrstvy, datové toky a funkční komponenty vyhovujícího systému distribuovaného registru.  
+3. **Bezpečnost, soukromí a chytré kontrakty (ISO/TR 23244 / ISO 23613)**: stanoví základní bezpečnostní pokyny pro systémy digitálních aktiv a podrobně popisuje osvědčené postupy pro zmírňování zranitelností chytrých kontraktů a správu jejich životního cyklu.  
+4. **Rámce interoperability**: řeší mechanismy výměny dat a aktiv mezi heterogenními registrovými sítěmi a brání vzniku izolovaných tokenizovaných sil.  
+5. **Decentralizovaná identita a kotvy důvěry**: integruje kryptografické identifikátory založené na registru s formálními infrastrukturami veřejných klíčů (PKI) a státem autorizovanými registry.
 
-The foundational work required to standardize distributed ledgers is being established by ISO/IEC Technical Committee 307 (TC 307) (Blockchain and distributed ledger technologies). Rather than treating blockchain as an isolated technical protocol, TC 307 addresses it as an institutional trust infrastructure, organizing its work across five core pillars:
+Souhrnně TC 307 signalizuje přechod DLT od zakázkové inženýrské volby k normalizované architektonické disciplíně. TC 307 však zůstává převážně popisná. Definuje, jak vypadá excelence (pokyny), ale neposkytuje předepisující verifikační protokol (ujištění), který rizikoví pracovníci a dohledové orgány potřebují k autorizaci produkčních nasazení kritických nebo důležitých funkcí (CIF).
 
-1. **Taxonomy and Vocabulary (ISO 22739)**: Establishes a common nomenclature, ensuring consistent legal and operational definitions across different jurisdictions, financial schemes, and institutions.  
-2. **Reference Architecture (ISO/TR 23245)**: Defines the boundaries, layers, data flows, and functional components of a compliant distributed ledger system.  
-3. **Security, Privacy, and Smart Contracts (ISO/TR 23244 / ISO 23613)**: Establishes baseline security guidelines for digital asset systems and details best practices for smart contract vulnerability mitigation and lifecycle governance.  
-4. **Interoperability Frameworks**: Addresses the data and asset-exchange mechanisms between heterogeneous ledger networks, preventing the formation of isolated tokenised silos.  
-5. **Decentralized Identity and Trust Anchors**: Integrates ledger-based cryptographic identifiers with formal public-key infrastructures (PKI) and state-authorized registries.
+## 03. Pokyny versus ujištění: fiduciární rozlišení
 
-Collectively, TC 307 signals the transition of DLT from a custom engineering choice into a standardized architectural discipline. However, TC 307 remains primarily descriptive. It defines what good looks like (guidance), but it does not provide the prescriptive verification protocol (assurance) that risk officers and supervisors require to authorize production deployments of critical or important functions (CIFs).
+Účastníci finančních trhů nenasazují technologii proto, že je inovativní nebo elegantní; nasazují ji, když ji lze řídit, auditovat, obhájit a odsouhlasit s požadavky na kapitálové rezervy. Proto se normalizace v bankovnictví přirozeně rozpadá do dvou vrstev:
 
-## 03. Guidance vs. Assurance: The Fiduciary Distinction
+* **Pokyny (rámec)**: nastiňují osvědčené postupy, referenční cíle a architektonické směrnice (např. ISO/IEC TC 307, rámce NIST).  
+* **Ujištění (důkaz)**: poskytuje nezávislé, průběžné a třetí stranou ověřitelné důkazy, že rámec je implementován a funguje podle návrhu (např. certifikace ISO 27001, audity SOC 2, regulatorní prověrky).
 
-Financial market participants do not deploy technology because it is innovative or elegant; they deploy it when it can be governed, audited, defended, and reconciled with capital reserve requirements. This is why standardisation in banking naturally resolves into two layers:
+Spoléhat se na necertifikovaný konsenzus registru a přitom certifikovat cloudovou infrastrukturu je kritická regulatorní mezera. „Neměnný" blockchain není nutně „institucionálně důvěryhodný". Neměnnost zaručuje pouze to, že vložená data zůstanou nezměněna; neověřuje, zda jsou validační uzly bezpečné, zda je konsenzuální protokol odolný vůči koluzi, zda je logika chytrých kontraktů matematicky správná nebo zda správa kryptografických klíčů splňuje postkvantové mandáty.
 
-* **Guidance (The Framework)**: Outlines best practices, reference targets, and architectural guidelines (e.g., ISO/IEC TC 307, NIST frameworks).  
-* **Assurance (The Proof)**: Provides independent, continuous, and third-party-verifiable evidence that the framework is implemented and operating as designed (e.g., ISO 27001 certification, SOC 2 audits, regulatory examinations).
+Aby tuto mezeru uzavřel, Index certifikovaných blockchainů 2026 formalizuje tyto požadavky do kvantifikovatelného modelu zralosti schopností (CMM), namapovaného na globální bankovní regulace.
 
-Relying on uncertified ledger consensus while certifying cloud infrastructure is a critical regulatory gap. A blockchain that is "immutable" is not necessarily "institutionally trusted." Immutability only guarantees that the data entered is unchanged; it does not verify that the validator nodes are secure, the consensus protocol is resilient against collusion, the smart contract logic is mathematically sound, or the cryptographic key management complies with post-quantum mandates.
+## 04. Index certifikovaných blockchainů 2026
 
-To close this gap, the 2026 Certified Blockchain Index formalizes these requirements into a quantifiable Capability Maturity Model (CMM) mapped to global banking regulations.
+Aby vrcholovému vedení umožnil hodnotit a certifikovat jejich registrové platformy, strukturuje tento index infrastrukturu distribuovaného registru do pěti auditovatelných provozních vrstev, hodnocených na škále CMM od 0 do 5.
 
-## 04. The 2026 Certified Blockchain Index
+## Tabulka 1: architektura Indexu certifikovaných blockchainů
 
-To enable senior management to evaluate and certify their ledger platforms, this index structures the distributed ledger infrastructure into five auditable operational layers, scored on a 0-to-5 CMM scale.
-
-## Table 1: The Certified Blockchain Index Architecture
-
-| Index Layer | Capability Maturity Level (CMM) | Technical and Operational Metric | Regulatory / Fiduciary Control Reference |
+| Vrstva indexu | Úroveň zralosti (CMM) | Technická a provozní metrika | Regulatorní / fiduciární kontrolní reference |
 | :---- | :---- | :---- | :---- |
-| **Ledger Governance** | **Level 0**: Ad-hoc consortium**Level 3**: Automated validator vetting & rotation**Level 5**: Decentralized, multi-party cryptographic identity anchoring | % of validator nodes operated by vetted financial entities; mean time to resolve validator disputes; geographic distribution of nodes | **DORA Article 5** (Governance and Organisation); **CPMI-IOSCO PFMI Principle 2** (Governance) & **Principle 3** (Framework for the comprehensive management of risks) |
-| **Consensus Integrity** | **Level 0**: Single-node or opaque POW**Level 3**: Audited BFT with deterministic finality**Level 5**: Multi-jurisdictional, formally verified consensus with continuous latency monitoring | Max tolerable consensus latency; collusion-resistance threshold; uptime SLA under simulated node partition | **DORA Article 6** (ICT Risk Management Framework); **CPMI-IOSCO PFMI Principle 8** (Settlement Finality) |
-| **Identity & Cryptography** | **Level 0**: Weak RSA / ECDSA keys**Level 3**: Multi-sig with HSM-backed key management**Level 5**: Quantum-safe hybrid keys (FIPS 203 ML-KEM) and zero-knowledge privacy gates | % of ledger transactions signed with HSM-backed keys; PQC migration readiness score; ZK-proof latency | **NIST FIPS 203 / 204**; **ISO/IEC 27001** (Information Security Management) |
-| **Smart Contract Assurance** | **Level 0**: Un-audited solidity scripts**Level 3**: Automated compiler validation & external audit**Level 5**: Formally verified, immutable smart contracts with circuit-breaker upgrades | % of smart contracts with mathematical formal verification; count of compiler warnings; vulnerability scan coverage | **EBA Guidelines on Outsourcing Arrangements** (Paragraphs 81, 113-117); **DORA Article 30** (Minimum Contractual Clauses) |
-| **Audit & Observability** | **Level 0**: Manual log scraping**Level 3**: Structured OTel traces & read-only auditor nodes**Level 5**: Automated, continuous reconciliation to the Article 8 register | % of transactions covered by OpenTelemetry traces; latency from ledger block-commit to auditor-node sync | **BCBS 239** (Risk Data Aggregation); **DORA Article 8** (Register of Information / ITS Schemas) |
+| **Správa registru** | **Úroveň 0**: ad hoc konsorcium**Úroveň 3**: automatizované prověřování a rotace validátorů**Úroveň 5**: decentralizované, víceúčastnické kryptografické ukotvení identity | % validačních uzlů provozovaných prověřenými finančními subjekty; průměrná doba řešení sporů validátorů; geografické rozložení uzlů | **DORA článek 5** (Správa a organizace); **CPMI-IOSCO PFMI Princip 2** (Správa) a **Princip 3** (Rámec komplexního řízení rizik) |
+| **Integrita konsenzu** | **Úroveň 0**: jediný uzel nebo neprůhledný PoW**Úroveň 3**: auditovaný BFT s deterministickou finalitou**Úroveň 5**: mnohojurisdikční, formálně ověřený konsenzus s průběžným monitorováním latence | max. tolerovatelná latence konsenzu; práh odolnosti vůči koluzi; SLA dostupnosti při simulovaném rozdělení uzlů | **DORA článek 6** (Rámec řízení rizik ICT); **CPMI-IOSCO PFMI Princip 8** (Finalita vypořádání) |
+| **Identita a kryptografie** | **Úroveň 0**: slabé klíče RSA / ECDSA**Úroveň 3**: vícepodpis se správou klíčů podporovanou HSM**Úroveň 5**: kvantově bezpečné hybridní klíče (FIPS 203 ML-KEM) a brány soukromí s nulovou znalostí | % transakcí registru podepsaných klíči podporovanými HSM; skóre připravenosti na migraci PQC; latence důkazů ZK | **NIST FIPS 203 / 204**; **ISO/IEC 27001** (Řízení bezpečnosti informací) |
+| **Ujištění chytrých kontraktů** | **Úroveň 0**: neauditované skripty Solidity**Úroveň 3**: automatizovaná validace kompilátoru a externí audit**Úroveň 5**: formálně ověřené, neměnné chytré kontrakty s aktualizacemi typu jistič | % chytrých kontraktů s matematickou formální verifikací; počet varování kompilátoru; pokrytí skenů zranitelností | **Pokyny EBA k outsourcingu** (odstavce 81, 113-117); **DORA článek 30** (Minimální smluvní ujednání) |
+| **Audit a pozorovatelnost** | **Úroveň 0**: ruční sběr logů**Úroveň 3**: strukturované stopy OTel a auditorské uzly jen pro čtení**Úroveň 5**: automatizované, průběžné odsouhlasení s registrem podle článku 8 | % transakcí pokrytých stopami OpenTelemetry; latence od potvrzení bloku po synchronizaci auditorského uzlu | **BCBS 239** (Agregace rizikových dat); **DORA článek 8** (Registr informací / schémata ITS) |
 
-## Table 2: Key Trust Signals Mapped to Global Banking Standards
+## Tabulka 2: klíčové signály důvěry namapované na globální bankovní standardy
 
-| Signal / Benchmark | Metric | Impact on Banking Platforms | Regulatory Source |
+| Signál / měřítko | Metrika | Dopad na bankovní platformy | Regulatorní zdroj |
 | :---- | :---- | :---- | :---- |
-| **ISO/IEC TC 307 Progress** | Transition from ISO/TR technical reports to formal certification schemes | Establishes the first standardized framework for certifying distributed ledger engines | **ISO/IEC JTC 1 / SC 44** (Distributed Ledger Technologies) |
-| **Project Agorá Prototype Phase** | 40+ participating commercial banks; unified ledger testing of tokenised deposits | Shifting cross-border clearing from messaging (SWIFT) to atomic tokenised settlement | **Bank for International Settlements (BIS) Innovation Hub** |
-| **DORA Article 30 Third-Party Audit** | 100% of node providers and infrastructure hosts audited against security criteria | Eliminates "shadow validator nodes"; mandates total supply-chain transparency | **European Supervisory Authorities (ESA)** |
-| **ISO/IEC 42001 (AI Governance)** | Cryptographically immutabilized AI model and training logs on-chain | Employs blockchain as the immutable evidentiary ledger ("audit spine") for machine learning | **ISO/IEC 42001:2023** (Information technology — Artificial intelligence) |
-| **Basel III Capital Adequacy** | Reduction in operational risk capital buffers based on documented complexity reduction | Standardized operational risk frameworks directly credit verified ledger resilience | **Basel Committee on Banking Supervision (BCBS)** |
+| **Pokrok ISO/IEC TC 307** | Přechod od technických zpráv ISO/TR k formálním certifikačním schématům | Zavádí první normalizovaný rámec pro certifikaci motorů distribuovaných registrů | **ISO/IEC JTC 1 / SC 44** (Technologie distribuovaných registrů) |
+| **Prototypová fáze Projektu Agorá** | Přes 40 zúčastněných komerčních bank; test jednotného registru tokenizovaných vkladů | Přesouvá přeshraniční zúčtování od zpráv (SWIFT) k atomickému tokenizovanému vypořádání | **Innovation Hub Banky pro mezinárodní platby (BIS)** |
+| **Audit třetí strany DORA článek 30** | 100 % poskytovatelů uzlů a hostitelů infrastruktury auditováno podle bezpečnostních kritérií | Eliminuje „stínové validační uzly"; nařizuje úplnou transparentnost dodavatelského řetězce | **Evropské orgány dohledu (ESA)** |
+| **ISO/IEC 42001 (správa AI)** | Logy modelů a trénování AI učiněny kryptograficky neměnnými on-chain | Využívá blockchain jako neměnný důkazní registr („auditní páteř") pro strojové učení | **ISO/IEC 42001:2023** (Informační technologie — Umělá inteligence) |
+| **Kapitálová přiměřenost Basel III** | Snížení kapitálových polštářů pro provozní riziko na základě zdokumentovaného snížení složitosti | Normalizované rámce provozního rizika přímo zohledňují ověřenou odolnost registru | **Basilejský výbor pro bankovní dohled (BCBS)** |
 
-## 05. The AI "Audit Spine": Probabilistic Intelligence on Deterministic Infrastructure
+## 05. „Auditní páteř" AI: pravděpodobnostní inteligence na deterministické infrastruktuře
 
-One of the most powerful strategic roles for a certified blockchain in 2026 is acting as an **"Audit Spine"** for artificial intelligence deployments. Modern financial systems are increasingly probabilistic. Credit scoring, real-time fraud detection, algorithmic trading, and autonomous customer interactions are driven by machine learning models that evolve, drift, and adapt over time. These models are non-deterministic: given the same input at two different times, they may yield different outputs due to dynamic weights and continuous training.
+Jednou z nejmocnějších strategických rolí certifikovaného blockchainu v roce 2026 je působit jako **„auditní páteř"** pro nasazení umělé inteligence. Moderní finanční systémy jsou stále více pravděpodobnostní. Kreditní skóring, detekce podvodů v reálném čase, algoritmické obchodování a autonomní interakce se zákazníky jsou poháněny modely strojového učení, které se vyvíjejí, driftují a přizpůsobují v čase. Tyto modely jsou nedeterministické: při stejném vstupu ve dvou různých okamžicích mohou kvůli dynamickým vahám a průběžnému trénování produkovat odlišné výstupy.
 
-This non-determinism introduces a profound governance challenge under **ISO/IEC 42001 (AI Governance)** and **Model Risk Management (MRM)** standards (such as **US Federal Reserve SR 11-7** and **UK PRA SS1/23**): *How do you audit, explain, and defend decisions that are not strictly reproducible?*
+Tento nedeterminismus přináší hlubokou výzvu v oblasti správy podle **ISO/IEC 42001 (správa AI)** a standardů řízení modelového rizika (MRM) (jako je **SR 11-7 amerického Federálního rezervního systému** a **SS1/23 britského PRA**): *jak auditovat, vysvětlit a obhájit rozhodnutí, která nejsou striktně reprodukovatelná?*
 
-A certified distributed ledger provides the deterministic counterweight. While AI models operate probabilistically, the certified blockchain records their parameters deterministically, establishing an unalterable evidentiary spine:
+Certifikovaný distribuovaný registr poskytuje deterministickou protiváhu. Tam, kde modely AI fungují pravděpodobnostně, certifikovaný blockchain zaznamenává jejich parametry deterministicky a vytváří nezměnitelnou důkazní páteř:
 
-* **Model Versioning and Weight Anchoring**: Every deployed model version, its associated weights, and its training data checksums are hashed and written to the ledger at build-time, satisfying **SLSA Level 3** supply-chain requirements.  
-* **Contextual Input Logging**: When an AI model executes a critical decision (e.g., approving a loan or flagging a transaction), the exact contextual inputs and model hashes are written to the ledger, creating a tamper-evident history.  
-* **Auditability without Code Access**: If a regulator asks, "Why did your model reject this credit application on June 3?" the bank does not need to expose proprietary code or attempt to recreate the exact model state. It presents the cryptographically signed, on-chain ledger record of the inputs, weights, and validation state.
+* **Verzování modelů a ukotvení vah**: každá nasazená verze modelu, její přiřazené váhy a kontrolní součty jejích trénovacích dat jsou při sestavení zahašovány a zapsány do registru, čímž splňují požadavky dodavatelského řetězce **SLSA Level 3**.  
+* **Kontextové logování vstupů**: když model AI provede kritické rozhodnutí (např. schválí půjčku nebo označí transakci), přesné kontextové vstupy a haše modelu se zapíší do registru a vytvoří historii odolnou proti manipulaci.  
+* **Auditovatelnost bez přístupu ke kódu**: pokud se regulátor zeptá „proč váš model zamítl tuto žádost o úvěr 3. června?", banka nemusí odhalovat svůj proprietární kód ani se pokoušet znovu vytvořit přesný stav modelu. Předloží kryptograficky podepsaný on-chain záznam vstupů, vah a stavu validace.
 
-By anchoring the probabilistic decisions of machine learning models to the deterministic consensus of a certified blockchain, the institution creates a defensible, reconstructable, and independently verifiable timeline of automated actions.
+Ukotvením pravděpodobnostních rozhodnutí modelů strojového učení k deterministickému konsenzu certifikovaného blockchainu vytváří instituce obhajitelnou, rekonstruovatelnou a nezávisle ověřitelnou časovou osu automatizovaných akcí.
 
-## 06. Visualizing the Certified Consensus-to-Audit Pipeline
+## 06. Vizualizace certifikovaného toku od konsenzu k auditu
 
-The following sequence diagram illustrates the lifecycle of a transaction passing through a certified blockchain platform, demonstrating how validation gates, consensus integrity, smart contract execution, and telemetry emission interlock to produce board-ready regulatory evidence:
+Následující sekvenční diagram ilustruje životní cyklus transakce procházející certifikovanou blockchainovou platformou a ukazuje, jak se validační brány, integrita konsenzu, provádění chytrých kontraktů a emise telemetrie propojují, aby vytvořily regulatorní důkaz připravený pro představenstvo:
 
 ```mermaid
 sequenceDiagram
@@ -206,37 +202,37 @@ sequenceDiagram
     Engine-->>Telemetry: Emit OpenTelemetry traces (latency, state, validation status)
     Telemetry->>Telemetry: Record evidence to DORA Article 8 Register of Information
 ```
-The critical path for this transactional sequence requires that every validation, execution, and consensus step is cryptographically signed, ensuring end-to-end provenance. The regulator's auditor node synchronizes block state in real-time, eliminating the need for retrospective, manual financial reconciliation.
+Kritická cesta této transakční sekvence vyžaduje, aby každý krok validace, provádění a konsenzu byl kryptograficky podepsán, čímž se zajistí provenience od začátku do konce. Auditorský uzel regulátora synchronizuje stav bloků v reálném čase, čímž odpadá potřeba retrospektivního, ručního finančního odsouhlasení.
 
-## 07. The Boardroom Playbook for Senior Managers
+## 07. Příručka představenstva pro vrcholové manažery
 
-To successfully navigate the transition from organizational trust to infrastructural trust, bank executives and senior managers should immediately execute four key directives:
+Aby úspěšně zvládli přechod od organizační důvěry k infrastrukturní důvěře, měli by vedoucí pracovníci a vrcholový management bank neprodleně provést čtyři klíčové direktivy:
 
-1. **Mandate Ledger Audits in Enterprise Risk Management (ERM)**: Enforce a policy that no distributed ledger platform—whether private, public, or consortium-based—may be deployed for critical or important functions (CIFs) unless it has been audited against the 5-layer **Certified Blockchain Index Architecture** (CMM Level 3 minimum).  
-2. **Integrate Blockchains as the ISO 42001 AI Evidentiary Spine**: Direct the Chief Risk Officer and Lead AI Architect to integrate all high-impact machine learning models with a certified blockchain, creating a tamper-evident audit ledger of model versions, weights, inputs, and decisions.  
-3. **Audit the Validator Node Supply Chain (DORA Article 30)**: Require the procurement division to audit all third-party entities hosting validator nodes or managing cloud hosting for DLT networks, mandating compliance with the same cybersecurity and operational resilience standards applied to the bank’s internal cloud nodes.  
-4. **Align Ledger Architectures with CPMI-IOSCO and BCBS 239**: Instruct the platform engineering team to align ledger output telemetry directly with **BCBS 239** data reporting requirements, and ensure the consensus and settlement finality parameters strictly comply with **CPMI-IOSCO Principles 8 and 9**.
+1. **Zavést povinné audity registru v řízení podnikových rizik (ERM)**: prosadit politiku, podle níž žádná platforma distribuovaného registru — soukromá, veřejná ani konsorciální — nesmí být nasazena pro kritické nebo důležité funkce (CIF), aniž by byla auditována vůči pětivrstvé **architektuře Indexu certifikovaných blockchainů** (minimálně CMM Úroveň 3).  
+2. **Integrovat blockchainy jako důkazní páteř AI podle ISO 42001**: pověřit ředitele pro rizika a hlavního architekta AI integrací všech vysoce významných modelů strojového učení s certifikovaným blockchainem a vytvořit auditní registr verzí modelů, vah, vstupů a rozhodnutí odolný proti manipulaci.  
+3. **Auditovat dodavatelský řetězec validačních uzlů (DORA článek 30)**: požadovat, aby oddělení nákupu auditovalo všechny třetí strany hostující validační uzly nebo spravující cloudový hosting pro sítě DLT, a nařídit stejné standardy kybernetické bezpečnosti a provozní odolnosti, jaké platí pro interní cloudové uzly banky.  
+4. **Sladit architektury registru s CPMI-IOSCO a BCBS 239**: pověřit tým platformového inženýrství sladěním výstupní telemetrie registru přímo s požadavky na vykazování dat podle **BCBS 239** a zajistit, aby parametry konsenzu a finality vypořádání striktně splňovaly **Principy 8 a 9 CPMI-IOSCO**.
 
-## 08. Frequently Asked Questions
+## 08. Často kladené otázky
 
-**Is ISO/IEC TC 307 a certification standard?**  
-No. ISO/IEC TC 307 is a technical committee that establishes vocabulary, reference architectures, and security guidelines. While it defines "what good looks like" (guidance), the industry must operationalize these documents into formal, auditable certification schemes (assurance) to satisfy banking supervisors.
+**Je ISO/IEC TC 307 certifikační standard?**  
+Ne. ISO/IEC TC 307 je technická komise, která stanoví slovník, referenční architektury a bezpečnostní pokyny. Ačkoli definuje, „jak vypadá excelence" (pokyny), odvětví musí tyto dokumenty operacionalizovat do formálních, auditovatelných certifikačních schémat (ujištění), aby uspokojilo bankovní dohledové orgány.
 
-**How does a certified blockchain support DORA compliance?**  
-Under DORA Article 5, bank boards bear direct, personal liability for technology resilience. A certified blockchain provides verifiable, cryptographic evidence of consensus integrity, validator supply-chain control, and smart contract safety, giving board members the documentable "reasonable steps" needed to defend against SM&CR personal liability claims.
+**Jak certifikovaný blockchain podporuje soulad s DORA?**  
+Podle článku 5 DORA nesou představenstva bank přímou osobní odpovědnost za technologickou odolnost. Certifikovaný blockchain poskytuje ověřitelné kryptografické důkazy o integritě konsenzu, kontrole dodavatelského řetězce validátorů a bezpečnosti chytrých kontraktů, čímž dává členům představenstva dokumentovatelné „přiměřené kroky" potřebné k obraně proti nárokům na osobní odpovědnost v rámci SM&CR.
 
-What is the difference between a traditional ledger audit and a certified blockchain audit?  
-A traditional audit is retrospective, verifying manual entries and static files after transactions have cleared. A certified blockchain audit is continuous and real-time; the validator nodes, BFT consensus engine, and formally verified smart contracts are certified to execute transactions deterministically, emitting structured telemetry (OpenTelemetry) that continuously validates the system’s health.
+Jaký je rozdíl mezi tradičním auditem registru a auditem certifikovaného blockchainu?  
+Tradiční audit je retrospektivní: ověřuje ruční záznamy a statické soubory poté, co byly transakce vypořádány. Audit certifikovaného blockchainu je průběžný a probíhá v reálném čase; validační uzly, konsenzuální motor BFT a formálně ověřené chytré kontrakty jsou certifikovány k deterministickému provádění transakcí a vysílají strukturovanou telemetrii (OpenTelemetry), která průběžně validuje zdraví systému.
 
-Can public blockchains be certified for banking use?  
-In most jurisdictions, pure permissionless public blockchains fail to satisfy banking regulations due to the lack of validator identity verification, unpredictable gas/transaction costs, and non-deterministic finality (e.g., probabilistic proof-of-work/stake forks). Certified blockchains in banking typically utilize enterprise permissioned or highly regulated public-hybrid architectures where validator node operators are identified and audited financial entities.
+Lze veřejné blockchainy certifikovat pro bankovní použití?  
+Ve většině jurisdikcí čistě bezpovolenkové veřejné blockchainy nesplňují bankovní regulace kvůli chybějícímu ověření identity validátorů, nepředvídatelným transakčním nákladům a nedeterministické finalitě (např. pravděpodobnostní forky proof-of-work/stake). Certifikované blockchainy v bankovnictví obvykle využívají podnikové povolenkové architektury nebo silně regulované veřejno-hybridní architektury, kde jsou provozovatelé validačních uzlů identifikované a auditované finanční subjekty.
 
-## 09. References
+## 09. Reference
 
-* Basel Committee on Banking Supervision (BCBS), 2013. *Principles for effective risk data aggregation and reporting (BCBS 239)*. Basel: Bank for International Settlements. Available at: [https://www.bis.org/publ/bcbs239.pdf](https://www.bis.org/publ/bcbs239.pdf).  
-* Committee on Payments and Market Infrastructures and Technical Committee of the International Organization of Securities Commissions (CPMI-IOSCO), 2012. *Principles for financial market infrastructures*. Basel: Bank for International Settlements. Available at: [https://www.bis.org/cpmi/publ/d101a.pdf](https://www.bis.org/cpmi/publ/d101a.pdf).  
-* European Banking Authority (EBA), 2019. *EBA/GL/2019/02 — Guidelines on outsourcing arrangements*. Paris: EBA. Available at: [https://www.eba.europa.eu/regulation-and-policy/internal-governance/guidelines-on-outsourcing-arrangements](https://www.eba.europa.eu/regulation-and-policy/internal-governance/guidelines-on-outsourcing-arrangements).  
-* European Parliament and Council of the European Union, 2022. *Regulation (EU) 2022/2554 on digital operational resilience for the financial sector (DORA)*. Brussels: Official Journal of the European Union. Available at: [https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554).  
-* ISO/IEC JTC 1/SC 42, 2023. *ISO/IEC 42001:2023 — Information technology — Artificial intelligence — Management system*. Geneva: International Organization for Standardization. Available at: [https://www.iso.org/standard/81230.html](https://www.iso.org/standard/81230.html).  
-* ISO/IEC Technical Committee 307, 2020. *ISO/IEC 22739:2020 — Blockchain and distributed ledger technologies — Vocabulary*. Geneva: International Organization for Standardization. Available at: [https://www.iso.org/standard/73771.html](https://www.iso.org/standard/73771.html).  
-* National Institute of Standards and Technology (NIST), 2026. *First Three Finalized Post-Quantum Encryption Standards (FIPS 203, 204, and 205)*. Gaithersburg: U.S. Department of Commerce. Available at: [https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards](https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards).
+* Basilejský výbor pro bankovní dohled (BCBS), 2013. *Principles for effective risk data aggregation and reporting (BCBS 239)*. Basilej: Banka pro mezinárodní platby. Dostupné z: [https://www.bis.org/publ/bcbs239.pdf](https://www.bis.org/publ/bcbs239.pdf).  
+* Committee on Payments and Market Infrastructures a Technical Committee of the International Organization of Securities Commissions (CPMI-IOSCO), 2012. *Principles for financial market infrastructures*. Basilej: Banka pro mezinárodní platby. Dostupné z: [https://www.bis.org/cpmi/publ/d101a.pdf](https://www.bis.org/cpmi/publ/d101a.pdf).  
+* Evropský orgán pro bankovnictví (EBA), 2019. *EBA/GL/2019/02 — Guidelines on outsourcing arrangements*. Paříž: EBA. Dostupné z: [https://www.eba.europa.eu/regulation-and-policy/internal-governance/guidelines-on-outsourcing-arrangements](https://www.eba.europa.eu/regulation-and-policy/internal-governance/guidelines-on-outsourcing-arrangements).  
+* Evropský parlament a Rada Evropské unie, 2022. *Nařízení (EU) 2022/2554 o digitální provozní odolnosti finančního sektoru (DORA)*. Brusel: Úřední věstník Evropské unie. Dostupné z: [https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX%3A32022R2554](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX%3A32022R2554).  
+* ISO/IEC JTC 1/SC 42, 2023. *ISO/IEC 42001:2023 — Information technology — Artificial intelligence — Management system*. Ženeva: Mezinárodní organizace pro normalizaci. Dostupné z: [https://www.iso.org/standard/81230.html](https://www.iso.org/standard/81230.html).  
+* Technická komise ISO/IEC 307, 2020. *ISO/IEC 22739:2020 — Blockchain and distributed ledger technologies — Vocabulary*. Ženeva: Mezinárodní organizace pro normalizaci. Dostupné z: [https://www.iso.org/standard/73771.html](https://www.iso.org/standard/73771.html).  
+* National Institute of Standards and Technology (NIST), 2026. *First Three Finalized Post-Quantum Encryption Standards (FIPS 203, 204, and 205)*. Gaithersburg: U.S. Department of Commerce. Dostupné z: [https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards](https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards).
