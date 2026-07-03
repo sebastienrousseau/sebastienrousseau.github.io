@@ -1,6 +1,6 @@
 ---
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
-banner_alt: "Abstract distributed-ledger lattice resolving into a certified audit spine — visualising the shift from retrospective entity audits to continuous, cryptographically-verifiable blockchain assurance for wholesale banking"
+banner_alt: "एक अमूर्त वितरित बही जालक जो एक प्रमाणित अंकेक्षण रीढ़ में क्रिस्टलीकृत हो रहा है — थोक बैंकिंग के लिए इकाई-आधारित पूर्वव्यापी अंकेक्षणों से सतत, क्रिप्टोग्राफिक रूप से सत्यापन योग्य ब्लॉकचेन आश्वासन की ओर संक्रमण को दर्शाता है"
 banner_height: "1280"
 banner_width: "1920"
 banner: "https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp"
@@ -9,7 +9,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "July 2, 2026"
-description: "The 2026 Certified Blockchain Index gives banks a 5-level Capability Maturity Model to certify distributed-ledger governance, consensus integrity, cryptography, smart-contract assurance, and audit observability against DORA, CPMI-IOSCO PFMI, ISO/IEC TC 307, ISO 42001 and Basel III."
+description: "2026 प्रमाणित ब्लॉकचेन सूचकांक बैंकों को वितरित बही शासन, सर्वसम्मति अखंडता, क्रिप्टोग्राफी, स्मार्ट अनुबंध आश्वासन और अंकेक्षण अवलोकनीयता को DORA, CPMI-IOSCO PFMI, ISO/IEC TC 307, ISO 42001 और Basel III के विरुद्ध प्रमाणित करने हेतु पाँच-स्तरीय क्षमता परिपक्वता मॉडल देता है।"
 format-detection: "telephone=no"
 hreflang: "hi"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -35,9 +35,9 @@ rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
 schema: "FAQPage, Article"
-seo_title: "From Evidence to Truth: Certified Blockchains and Banking Trust"
+seo_title: "प्रमाण से सत्य तक: प्रमाणित ब्लॉकचेन और बैंकिंग विश्वास"
 short_name: "sebastienrousseau"
-subtitle: "Why certifiable ledger assurance — not immutability alone — will define institutional trust in 2026: scoring governance, consensus integrity, cryptography, smart contracts, and observability against DORA, ISO/IEC TC 307, and CPMI-IOSCO PFMI."
+subtitle: "क्यों प्रमाणित करने योग्य बही आश्वासन — न कि केवल अपरिवर्तनीयता — 2026 में संस्थागत विश्वास को परिभाषित करेगा: DORA, ISO/IEC TC 307 और CPMI-IOSCO PFMI के विरुद्ध शासन, सर्वसम्मति अखंडता, क्रिप्टोग्राफी, स्मार्ट अनुबंध और अवलोकनीयता का अंकन।"
 tags: "agentic AI, AI governance, banking, autonomy tiers, model risk, SR 11-7, EU AI Act, FSB, IOSCO, MAS, IMDA, control plane, audit log, DORA, McKinsey, Stanford AI Index"
 theme-color: "0, 83, 191"
 title: "The Agentic AI Index for Banks in 2026: Measuring Autonomy"
@@ -63,7 +63,7 @@ apple_touch_icon_sizes: "192x192"
 apple-mobile-web-app-capable: "yes"
 apple-mobile-web-app-status-bar-inset: "black"
 apple-mobile-web-app-status-bar-style: "black-translucent"
-apple-mobile-web-app-title: "Certified Blockchains 2026"
+apple-mobile-web-app-title: "प्रमाणित ब्लॉकचेन 2026"
 apple-touch-fullscreen: "yes"
 msapplication-navbutton-color: "0, 83, 191"
 twitter_card: "summary_large_image"
@@ -84,103 +84,99 @@ site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 ---
 
-<!-- translation-stub: replace this body in Claude Code -->
+# प्रमाण से सत्य तक: क्यों प्रमाणित ब्लॉकचेन बैंकिंग विश्वास के अगले युग को परिभाषित करेंगे
 
-> _Translation pending — read the [English original](/2026-07-02-certified-blockchains-banking-trust-tc307-assurance-2026/) while we localise._
+## रणनीतिक सारांश (मुख्य बात)
 
-# From Evidence to Truth: Why Certified Blockchains Will Define the Next Era of Banking Trust
+थोक बैंकिंग और वैश्विक लेन-देन 2026 में एक ऐतिहासिक मोड़ पर हैं। जैसे-जैसे वित्तीय सेवाएँ मूलतः डिजिटल, रीयल-टाइम क्लियरिंग नेटवर्कों की ओर बढ़ रही हैं, और कृत्रिम बुद्धिमत्ता प्रायिकतावादी अनिश्चितता ला रही है, पारंपरिक एनालॉग, पूर्वव्यापी आश्वासन मॉडल (जैसे स्थिर, इकाई-आधारित ऑडिट) जोखिम प्रबंधन और प्रत्ययी कर्तव्यों की आधुनिक माँगों को पूरा नहीं कर पाते।
 
-## Executive Summary & Strategic Context (TL;DR)
+आईएसओ/आईईसी तकनीकी समिति TC 307 ने वितरित बहीखाता प्रौद्योगिकियों के लिए एक मानकीकृत आधार स्थापित किया है। हालाँकि, वास्तविक संस्थागत अपनाव के लिए वर्णनात्मक मार्गदर्शन से आदेशात्मक, स्वतंत्र रूप से प्रमाणित करने योग्य ब्लॉकचेन आश्वासन की ओर बढ़ना आवश्यक है। बही शासन, सर्वसम्मति की अखंडता, स्मार्ट अनुबंध सुरक्षा और क्रिप्टोग्राफिक चपलता को एक कठोर पाँच-स्तरीय क्षमता परिपक्वता मॉडल (CMM) के विरुद्ध अंक देकर, बैंक बिखरी हुई, विक्रेता-विशिष्ट मान्यताओं से प्रमाणित, बोर्ड-अंकेक्षणीय वित्तीय सत्य की ओर बढ़ सकते हैं।
 
-Wholesale banking and global transactions in 2026 sit at a historic inflection point. As financial services transition to natively digital, real-time clearing networks, and as artificial intelligence introduces probabilistic non-determinism, the traditional analogue, retrospective assurance models (such as static entity-based audits) fail to meet modern risk management and fiduciary demands.
+## मुख्य निष्कर्ष
 
-ISO/IEC Technical Committee 307 (TC 307) has established a standardized baseline for distributed ledger technologies. However, true corporate and institutional adoption requires shifting from descriptive guidance to prescriptive, independently certifiable blockchain assurance. By scoring ledger governance, consensus integrity, smart contract safety, and cryptographic agility against a strict 5-level Capability Maturity Model (CMM), banks can move from patchwork, vendor-specific assumptions to certifiable, board-auditable financial truth.
+* **प्रत्ययी घर्षण अंतराल**: आज हम बैंक (Basel III), क्लाउड (ISO 27001) और एआई शासन प्रणालियों (ISO 42001) को प्रमाणित कर सकते हैं, परंतु अभी तक उस वितरित बही को प्रमाणित नहीं कर सकते जो तेज़ी से यह निर्धारित करती है कि सत्य क्या है। यह असममितता एक बड़ी परिचालन भेद्यता है।  
+* **DORA प्रत्यक्ष प्रत्ययी उत्तरदायित्व लागू करता है**: DORA के अनुच्छेद 5 के तहत, बैंकों के निदेशक मंडल सभी तृतीय-पक्ष और बही परिनियोजनों की परिचालन प्रत्यास्थता के लिए प्रत्यक्ष, अप्रत्यायोज्य व्यक्तिगत उत्तरदायित्व वहन करते हैं, विफलताओं पर SM&CR व्यवस्था के तहत कठोर व्यक्तिगत दंड के साथ।  
+* **एआई की अंकेक्षण रीढ़**: जहाँ मशीन लर्निंग अपुनरुत्पाद्य, प्रायिकतावादी परिणाम देती है, वहाँ प्रमाणित ब्लॉकचेन एक नियतात्मक अवस्था-अभिग्रहण प्रदान करता है। मॉडल संस्करणों, इनपुट और सत्यापन निर्णयों को शृंखला पर दर्ज करना ISO 42001 और मॉडल जोखिम प्रबंधन मानकों को संतुष्ट करता है।  
+* **प्रमाणित ब्लॉकचेन सूचकांक**: यह सूचकांक शासन, सर्वसम्मति, स्मार्ट अनुबंध और अवलोकनीयता को 0 से 5 CMM पैमाने पर एक सत्यापन योग्य, अंकेक्षण-तैयार स्कोरकार्ड में औपचारिक बनाता है, जो अभियांत्रिकी मापदंडों को बोर्ड-अनुमोदित जोखिम अभिरुचि विवरणों में अनुवादित करता है।
 
-## Key Takeaways
+## 01. डिजिटल बैंकिंग में प्रत्ययी घर्षण अंतराल
 
-* **The Fiduciary Frictional Gap**: We can currently certify the bank (Basel III), the cloud (ISO 27001), and the AI governance systems (ISO 42001), but we cannot yet certify the distributed ledger that increasingly determines what is true. This asymmetry is a major operational vulnerability.  
-* **DORA Enforces Direct Fiduciary Responsibility**: Under DORA Article 5, bank boards of directors bear direct, non-delegable personal liability for the operational resilience of all third-party and ledger deployments, with severe SM&CR personal penalties for failures.  
-* **The AI Audit Spine**: While machine learning introduces non-reproducible, probabilistic outcomes, a certified blockchain provides deterministic state capture. Recording model versions, inputs, and validation decisions on-chain satisfies ISO 42001 and Model Risk Management standards.  
-* **The Certified Blockchain Index**: This index formalizes governance, consensus, smart contracts, and observability into a verifiable, audit-ready scorecard on a 0-to-5 CMM scale, translating engineering metrics into board-approved Risk Appetite Statements.
+शास्त्रीय बैंकिंग में, विश्वास संबंधपरक, संस्थागत और पूर्वव्यापी होता है। यह स्वतंत्र, तृतीय-पक्ष अंकेक्षकों पर निर्भर करता है जो निश्चित समय-बिंदुओं पर वित्तीय स्थिति की समीक्षा करते हैं और द्विपक्षीय बही साइलो में विसंगतियों का मिलान करते हैं। 2026 के रीयल-टाइम, API-चालित बाज़ारों में, यह मॉडल निषेधात्मक विलंबता और संरचनात्मक जोखिम लाता है।
 
-## 01. The Fiduciary Frictional Gap in Digital Banking
+जब लेन-देन तत्काल निपटते हैं, अंतर्दैनिक तरलता पूल API गेटवे द्वारा गतिशील रूप से प्रबंधित होते हैं, और परिसंपत्ति स्वामित्व साझा बहियों पर टोकनीकृत होता है, तब पूर्वव्यापी ऑडिट निवारक नियंत्रणों के बजाय न्यायालयिक अभ्यास बन जाते हैं। प्रत्ययी अब केवल कानूनी इकाई के प्रमाणन पर निर्भर नहीं रह सकते। उन्हें डिजिटल आधार को ही प्रमाणित करना होगा।
 
-In classical banking, trust is relational, institutional, and retrospective. It depends on independent, third-party auditors reviewing financial state at static points in time, reconciling discrepancies across bilateral ledger silos. In the real-time, API-driven markets of 2026, this model introduces prohibitive latencies and structural risks.
+वर्तमान में, बैंक एक स्पष्ट स्थापत्य असममितता के अंतर्गत काम करते हैं:
 
-When transactions settle instantly, intraday liquidity pools are managed dynamically by API gateways, and asset ownership is tokenised across shared ledgers, retrospective audits become forensic exercises rather than preventative controls. Fiduciaries can no longer rely solely on certifying the corporate entity. They must certify the digital substrate itself.
+1. **प्रमाणित क्लाउड अवसंरचना**: हार्डवेयर नोड, वर्चुअलाइज़्ड कंटेनर और भौतिक डेटा केंद्र ISO/IEC 27001 और SOC 2 Type II नियंत्रणों के विरुद्ध मान्य किए जाते हैं।  
+2. **प्रमाणित प्रबंधन प्रक्रियाएँ**: परिचालन जोखिम नीतियाँ, व्यवसाय निरंतरता योजनाएँ और एल्गोरिदमिक परिनियोजन कठोर जोखिम ढाँचों द्वारा शासित होते हैं।  
+3. **अप्रमाणित बही इंजन**: वितरित सर्वसम्मति तंत्र, सत्यापनकर्ता नोड आपूर्ति शृंखलाएँ, स्मार्ट अनुबंध सीमाएँ और नेटवर्क शासन मॉडल अप्रमाणित, अनुकूलित या कंसोर्टियम-विशिष्ट मान्यताओं पर छोड़ दिए जाते हैं।
 
-Currently, banks operate under a glaring architectural asymmetry:
+यह असममितता एक महत्वपूर्ण विफलता बिंदु है। एक बैंक एक सुरक्षित, ISO 27001-प्रमाणित क्लाउड कंटेनर के भीतर एक मान्य अनुप्रयोग चला सकता है, परंतु यदि वह कंटेनर केंद्रीकृत सत्यापनकर्ता नियंत्रण, भेद्य सर्वसम्मति मापदंडों या अनंकेक्षित स्मार्ट अनुबंधों वाली वितरित बही में लिखता है, तो लेन-देन की अखंडता समझौता हो जाती है। इस अंतराल को पाटने के लिए, बही इंजन को ही एक प्रमाणित करने योग्य आश्वासन वस्तु बनना होगा।
 
-1. **Certified Cloud Infrastructure**: Hardware nodes, virtualized containers, and physical datacenters are validated against ISO/IEC 27001 and SOC 2 Type II controls.  
-2. **Certified Management Processes**: Operational risk policies, business continuity plans, and algorithmic deployments are governed under strict risk frameworks.  
-3. **Uncertified Ledger Engines**: The core distributed consensus mechanisms, validator node supply chains, smart contract boundaries, and network governance models are left to uncertified, custom, or consortium-specific assumptions.
+## 02. आईएसओ/आईईसी TC 307 मानकीकरण आधार
 
-This asymmetry is a major failure point. A bank can run a validated application inside a secure, ISO 27001-certified cloud container, but if that container writes to a distributed ledger with centralized validator control, vulnerable consensus parameters, or un-audited smart contracts, the transaction integrity is compromised. To bridge this gap, the ledger engine itself must become a certifiable assurance object.
+वितरित बहियों के मानकीकरण के लिए आवश्यक मूलभूत कार्य आईएसओ/आईईसी तकनीकी समिति TC 307 (ब्लॉकचेन और वितरित बहीखाता प्रौद्योगिकियाँ) द्वारा किया जा रहा है। ब्लॉकचेन को एक पृथक तकनीकी प्रोटोकॉल के रूप में मानने के बजाय, TC 307 इसे एक संस्थागत विश्वास अवसंरचना के रूप में देखता है, और अपने कार्य को पाँच मूल स्तंभों के इर्द-गिर्द व्यवस्थित करता है:
 
-## 02. The ISO/IEC TC 307 Standardization Baseline
+1. **वर्गीकरण एवं शब्दावली (ISO 22739)**: एक सामान्य नामकरण स्थापित करता है, जो विभिन्न अधिकार-क्षेत्रों, वित्तीय योजनाओं और संस्थानों में सुसंगत कानूनी एवं परिचालन परिभाषाएँ सुनिश्चित करता है।  
+2. **संदर्भ स्थापत्य (ISO/TR 23245)**: एक अनुरूप वितरित बही प्रणाली की सीमाओं, परतों, डेटा प्रवाहों और कार्यात्मक घटकों को परिभाषित करता है।  
+3. **सुरक्षा, गोपनीयता एवं स्मार्ट अनुबंध (ISO/TR 23244 / ISO 23613)**: डिजिटल परिसंपत्ति प्रणालियों के लिए आधारभूत सुरक्षा दिशानिर्देश स्थापित करता है और स्मार्ट अनुबंध भेद्यता शमन एवं जीवनचक्र शासन के लिए सर्वोत्तम प्रथाओं का विवरण देता है।  
+4. **अंतरसंचालनीयता ढाँचे**: विषम बही नेटवर्कों के बीच डेटा एवं परिसंपत्ति-विनिमय तंत्रों को संबोधित करता है, और पृथक टोकनीकृत साइलो के निर्माण को रोकता है।  
+5. **विकेंद्रीकृत पहचान एवं विश्वास लंगर**: बही-आधारित क्रिप्टोग्राफिक पहचानकर्ताओं को औपचारिक सार्वजनिक-कुंजी अवसंरचनाओं (PKI) और राज्य-प्राधिकृत रजिस्ट्रियों के साथ एकीकृत करता है।
 
-The foundational work required to standardize distributed ledgers is being established by ISO/IEC Technical Committee 307 (TC 307) (Blockchain and distributed ledger technologies). Rather than treating blockchain as an isolated technical protocol, TC 307 addresses it as an institutional trust infrastructure, organizing its work across five core pillars:
+सामूहिक रूप से, TC 307 DLT के एक अनुकूलित अभियांत्रिकी विकल्प से एक मानकीकृत स्थापत्य अनुशासन में संक्रमण का संकेत देता है। तथापि, TC 307 मुख्यतः वर्णनात्मक बना रहता है। यह परिभाषित करता है कि उत्कृष्टता कैसी दिखती है (मार्गदर्शन), परंतु वह आदेशात्मक सत्यापन प्रोटोकॉल (आश्वासन) प्रदान नहीं करता जिसकी जोखिम अधिकारियों और पर्यवेक्षकों को महत्वपूर्ण या आवश्यक कार्यों (CIF) के उत्पादन परिनियोजनों को प्राधिकृत करने के लिए आवश्यकता होती है।
 
-1. **Taxonomy and Vocabulary (ISO 22739)**: Establishes a common nomenclature, ensuring consistent legal and operational definitions across different jurisdictions, financial schemes, and institutions.  
-2. **Reference Architecture (ISO/TR 23245)**: Defines the boundaries, layers, data flows, and functional components of a compliant distributed ledger system.  
-3. **Security, Privacy, and Smart Contracts (ISO/TR 23244 / ISO 23613)**: Establishes baseline security guidelines for digital asset systems and details best practices for smart contract vulnerability mitigation and lifecycle governance.  
-4. **Interoperability Frameworks**: Addresses the data and asset-exchange mechanisms between heterogeneous ledger networks, preventing the formation of isolated tokenised silos.  
-5. **Decentralized Identity and Trust Anchors**: Integrates ledger-based cryptographic identifiers with formal public-key infrastructures (PKI) and state-authorized registries.
+## 03. मार्गदर्शन बनाम आश्वासन: प्रत्ययी भेद
 
-Collectively, TC 307 signals the transition of DLT from a custom engineering choice into a standardized architectural discipline. However, TC 307 remains primarily descriptive. It defines what good looks like (guidance), but it does not provide the prescriptive verification protocol (assurance) that risk officers and supervisors require to authorize production deployments of critical or important functions (CIFs).
+वित्तीय बाज़ार सहभागी किसी प्रौद्योगिकी को इसलिए तैनात नहीं करते कि वह नवोन्मेषी या सुरुचिपूर्ण है; वे इसे तब तैनात करते हैं जब इसे शासित, अंकेक्षित, बचाव और पूँजी आरक्षित आवश्यकताओं के साथ मिलान किया जा सके। इसीलिए बैंकिंग में मानकीकरण स्वाभाविक रूप से दो परतों में विभाजित होता है:
 
-## 03. Guidance vs. Assurance: The Fiduciary Distinction
+* **मार्गदर्शन (ढाँचा)**: सर्वोत्तम प्रथाओं, संदर्भ लक्ष्यों और स्थापत्य दिशानिर्देशों की रूपरेखा देता है (जैसे ISO/IEC TC 307, NIST ढाँचे)।  
+* **आश्वासन (प्रमाण)**: स्वतंत्र, सतत और तृतीय-पक्ष-सत्यापन योग्य साक्ष्य प्रदान करता है कि ढाँचा लागू है और डिज़ाइन के अनुसार काम कर रहा है (जैसे ISO 27001 प्रमाणन, SOC 2 ऑडिट, नियामक परीक्षण)।
 
-Financial market participants do not deploy technology because it is innovative or elegant; they deploy it when it can be governed, audited, defended, and reconciled with capital reserve requirements. This is why standardisation in banking naturally resolves into two layers:
+क्लाउड अवसंरचना को प्रमाणित करते हुए अप्रमाणित बही सर्वसम्मति पर निर्भर रहना एक महत्वपूर्ण नियामक अंतराल है। एक "अपरिवर्तनीय" ब्लॉकचेन आवश्यक रूप से "संस्थागत रूप से विश्वसनीय" नहीं होता। अपरिवर्तनीयता केवल यह सुनिश्चित करती है कि दर्ज किया गया डेटा अपरिवर्तित रहे; यह सत्यापित नहीं करती कि सत्यापनकर्ता नोड सुरक्षित हैं, कि सर्वसम्मति प्रोटोकॉल मिलीभगत के प्रति प्रत्यास्थ है, कि स्मार्ट अनुबंध तर्क गणितीय रूप से सुदृढ़ है, या कि क्रिप्टोग्राफिक कुंजी प्रबंधन उत्तर-क्वांटम अधिदेशों का अनुपालन करता है।
 
-* **Guidance (The Framework)**: Outlines best practices, reference targets, and architectural guidelines (e.g., ISO/IEC TC 307, NIST frameworks).  
-* **Assurance (The Proof)**: Provides independent, continuous, and third-party-verifiable evidence that the framework is implemented and operating as designed (e.g., ISO 27001 certification, SOC 2 audits, regulatory examinations).
+इस अंतराल को बंद करने के लिए, 2026 प्रमाणित ब्लॉकचेन सूचकांक इन आवश्यकताओं को एक परिमेय क्षमता परिपक्वता मॉडल (CMM) में औपचारिक बनाता है, जो वैश्विक बैंकिंग विनियमों से मानचित्रित है।
 
-Relying on uncertified ledger consensus while certifying cloud infrastructure is a critical regulatory gap. A blockchain that is "immutable" is not necessarily "institutionally trusted." Immutability only guarantees that the data entered is unchanged; it does not verify that the validator nodes are secure, the consensus protocol is resilient against collusion, the smart contract logic is mathematically sound, or the cryptographic key management complies with post-quantum mandates.
+## 04. 2026 प्रमाणित ब्लॉकचेन सूचकांक
 
-To close this gap, the 2026 Certified Blockchain Index formalizes these requirements into a quantifiable Capability Maturity Model (CMM) mapped to global banking regulations.
+वरिष्ठ प्रबंधन को अपनी बही प्लेटफ़ॉर्मों का मूल्यांकन और प्रमाणन करने में सक्षम बनाने के लिए, यह सूचकांक वितरित बही अवसंरचना को पाँच अंकेक्षणीय परिचालन परतों में संरचित करता है, जो 0 से 5 CMM पैमाने पर अंकित हैं।
 
-## 04. The 2026 Certified Blockchain Index
+## तालिका 1: प्रमाणित ब्लॉकचेन सूचकांक की स्थापत्य संरचना
 
-To enable senior management to evaluate and certify their ledger platforms, this index structures the distributed ledger infrastructure into five auditable operational layers, scored on a 0-to-5 CMM scale.
-
-## Table 1: The Certified Blockchain Index Architecture
-
-| Index Layer | Capability Maturity Level (CMM) | Technical and Operational Metric | Regulatory / Fiduciary Control Reference |
+| सूचकांक परत | परिपक्वता स्तर (CMM) | तकनीकी एवं परिचालन मापदंड | नियामक / प्रत्ययी नियंत्रण संदर्भ |
 | :---- | :---- | :---- | :---- |
-| **Ledger Governance** | **Level 0**: Ad-hoc consortium**Level 3**: Automated validator vetting & rotation**Level 5**: Decentralized, multi-party cryptographic identity anchoring | % of validator nodes operated by vetted financial entities; mean time to resolve validator disputes; geographic distribution of nodes | **DORA Article 5** (Governance and Organisation); **CPMI-IOSCO PFMI Principle 2** (Governance) & **Principle 3** (Framework for the comprehensive management of risks) |
-| **Consensus Integrity** | **Level 0**: Single-node or opaque POW**Level 3**: Audited BFT with deterministic finality**Level 5**: Multi-jurisdictional, formally verified consensus with continuous latency monitoring | Max tolerable consensus latency; collusion-resistance threshold; uptime SLA under simulated node partition | **DORA Article 6** (ICT Risk Management Framework); **CPMI-IOSCO PFMI Principle 8** (Settlement Finality) |
-| **Identity & Cryptography** | **Level 0**: Weak RSA / ECDSA keys**Level 3**: Multi-sig with HSM-backed key management**Level 5**: Quantum-safe hybrid keys (FIPS 203 ML-KEM) and zero-knowledge privacy gates | % of ledger transactions signed with HSM-backed keys; PQC migration readiness score; ZK-proof latency | **NIST FIPS 203 / 204**; **ISO/IEC 27001** (Information Security Management) |
-| **Smart Contract Assurance** | **Level 0**: Un-audited solidity scripts**Level 3**: Automated compiler validation & external audit**Level 5**: Formally verified, immutable smart contracts with circuit-breaker upgrades | % of smart contracts with mathematical formal verification; count of compiler warnings; vulnerability scan coverage | **EBA Guidelines on Outsourcing Arrangements** (Paragraphs 81, 113-117); **DORA Article 30** (Minimum Contractual Clauses) |
-| **Audit & Observability** | **Level 0**: Manual log scraping**Level 3**: Structured OTel traces & read-only auditor nodes**Level 5**: Automated, continuous reconciliation to the Article 8 register | % of transactions covered by OpenTelemetry traces; latency from ledger block-commit to auditor-node sync | **BCBS 239** (Risk Data Aggregation); **DORA Article 8** (Register of Information / ITS Schemas) |
+| **बही शासन** | **स्तर 0**: तदर्थ कंसोर्टियम**स्तर 3**: स्वचालित सत्यापनकर्ता जाँच एवं चक्रण**स्तर 5**: विकेंद्रीकृत, बहु-पक्षीय क्रिप्टोग्राफिक पहचान लंगरन | जाँचे गए वित्तीय संस्थाओं द्वारा संचालित सत्यापनकर्ता नोडों का %; सत्यापनकर्ता विवादों के समाधान का औसत समय; नोडों का भौगोलिक वितरण | **DORA अनुच्छेद 5** (शासन एवं संगठन); **CPMI-IOSCO PFMI सिद्धांत 2** (शासन) एवं **सिद्धांत 3** (जोखिमों के व्यापक प्रबंधन का ढाँचा) |
+| **सर्वसम्मति अखंडता** | **स्तर 0**: एकल नोड या अपारदर्शी PoW**स्तर 3**: नियतात्मक अंतिमता के साथ अंकेक्षित BFT**स्तर 5**: सतत विलंबता निगरानी के साथ बहु-अधिकार-क्षेत्रीय, औपचारिक रूप से सत्यापित सर्वसम्मति | अधिकतम सहनीय सर्वसम्मति विलंबता; मिलीभगत-प्रतिरोध सीमा; अनुरूपित नोड विभाजन के तहत उपलब्धता SLA | **DORA अनुच्छेद 6** (ICT जोखिम प्रबंधन ढाँचा); **CPMI-IOSCO PFMI सिद्धांत 8** (निपटान अंतिमता) |
+| **पहचान एवं क्रिप्टोग्राफी** | **स्तर 0**: कमज़ोर RSA / ECDSA कुंजियाँ**स्तर 3**: HSM-समर्थित कुंजी प्रबंधन के साथ बहु-हस्ताक्षर**स्तर 5**: क्वांटम-सुरक्षित संकर कुंजियाँ (FIPS 203 ML-KEM) एवं शून्य-ज्ञान गोपनीयता द्वार | HSM-समर्थित कुंजियों से हस्ताक्षरित बही लेन-देन का %; PQC प्रवास तत्परता अंक; ZK-प्रमाण विलंबता | **NIST FIPS 203 / 204**; **ISO/IEC 27001** (सूचना सुरक्षा प्रबंधन) |
+| **स्मार्ट अनुबंध आश्वासन** | **स्तर 0**: अनंकेक्षित Solidity स्क्रिप्ट**स्तर 3**: स्वचालित संकलक सत्यापन एवं बाह्य अंकेक्षण**स्तर 5**: सर्किट-ब्रेकर उन्नयन के साथ औपचारिक रूप से सत्यापित, अपरिवर्तनीय स्मार्ट अनुबंध | गणितीय औपचारिक सत्यापन वाले स्मार्ट अनुबंधों का %; संकलक चेतावनियों की संख्या; भेद्यता स्कैन कवरेज | **आउटसोर्सिंग पर EBA दिशानिर्देश** (अनुच्छेद 81, 113-117); **DORA अनुच्छेद 30** (न्यूनतम संविदात्मक खंड) |
+| **अंकेक्षण एवं अवलोकनीयता** | **स्तर 0**: मैनुअल लॉग संग्रहण**स्तर 3**: संरचित OTel ट्रेस एवं केवल-पठन अंकेक्षक नोड**स्तर 5**: अनुच्छेद 8 रजिस्टर के साथ स्वचालित, सतत मिलान | OpenTelemetry ट्रेस द्वारा कवर किए गए लेन-देन का %; ब्लॉक-प्रतिबद्धता से अंकेक्षक नोड सिंक्रनाइज़ेशन तक विलंबता | **BCBS 239** (जोखिम डेटा एकत्रीकरण); **DORA अनुच्छेद 8** (सूचना रजिस्टर / ITS स्कीमा) |
 
-## Table 2: Key Trust Signals Mapped to Global Banking Standards
+## तालिका 2: वैश्विक बैंकिंग मानकों से मानचित्रित प्रमुख विश्वास संकेत
 
-| Signal / Benchmark | Metric | Impact on Banking Platforms | Regulatory Source |
+| संकेत / मानदंड | मापदंड | बैंकिंग प्लेटफ़ॉर्मों पर प्रभाव | नियामक स्रोत |
 | :---- | :---- | :---- | :---- |
-| **ISO/IEC TC 307 Progress** | Transition from ISO/TR technical reports to formal certification schemes | Establishes the first standardized framework for certifying distributed ledger engines | **ISO/IEC JTC 1 / SC 44** (Distributed Ledger Technologies) |
-| **Project Agorá Prototype Phase** | 40+ participating commercial banks; unified ledger testing of tokenised deposits | Shifting cross-border clearing from messaging (SWIFT) to atomic tokenised settlement | **Bank for International Settlements (BIS) Innovation Hub** |
-| **DORA Article 30 Third-Party Audit** | 100% of node providers and infrastructure hosts audited against security criteria | Eliminates "shadow validator nodes"; mandates total supply-chain transparency | **European Supervisory Authorities (ESA)** |
-| **ISO/IEC 42001 (AI Governance)** | Cryptographically immutabilized AI model and training logs on-chain | Employs blockchain as the immutable evidentiary ledger ("audit spine") for machine learning | **ISO/IEC 42001:2023** (Information technology — Artificial intelligence) |
-| **Basel III Capital Adequacy** | Reduction in operational risk capital buffers based on documented complexity reduction | Standardized operational risk frameworks directly credit verified ledger resilience | **Basel Committee on Banking Supervision (BCBS)** |
+| **ISO/IEC TC 307 प्रगति** | ISO/TR तकनीकी रिपोर्टों से औपचारिक प्रमाणन योजनाओं में संक्रमण | वितरित बही इंजनों के प्रमाणन के लिए पहला मानकीकृत ढाँचा स्थापित करता है | **ISO/IEC JTC 1 / SC 44** (वितरित बहीखाता प्रौद्योगिकियाँ) |
+| **Agorá परियोजना प्रोटोटाइप चरण** | 40+ भागीदार वाणिज्यिक बैंक; टोकनीकृत जमाओं का एकीकृत बही परीक्षण | सीमा-पार क्लियरिंग को संदेशन (SWIFT) से परमाण्विक टोकनीकृत निपटान की ओर स्थानांतरित करता है | **अंतर्राष्ट्रीय निपटान बैंक (BIS) नवाचार केंद्र** |
+| **DORA अनुच्छेद 30 तृतीय-पक्ष अंकेक्षण** | नोड प्रदाताओं एवं अवसंरचना होस्टों का 100% सुरक्षा मानदंडों पर अंकेक्षित | "छाया सत्यापनकर्ता नोडों" को समाप्त करता है; पूर्ण आपूर्ति-शृंखला पारदर्शिता अनिवार्य करता है | **यूरोपीय पर्यवेक्षी प्राधिकरण (ESA)** |
+| **ISO/IEC 42001 (एआई शासन)** | एआई मॉडल एवं प्रशिक्षण लॉग शृंखला पर क्रिप्टोग्राफिक रूप से अपरिवर्तनीय बनाए गए | ब्लॉकचेन को मशीन लर्निंग के लिए अपरिवर्तनीय साक्ष्य रजिस्टर ("अंकेक्षण रीढ़") के रूप में नियोजित करता है | **ISO/IEC 42001:2023** (सूचना प्रौद्योगिकी — कृत्रिम बुद्धिमत्ता) |
+| **Basel III पूँजी पर्याप्तता** | प्रलेखित जटिलता न्यूनीकरण के आधार पर परिचालन जोखिम पूँजी बफ़रों में कमी | मानकीकृत परिचालन जोखिम ढाँचे सत्यापित बही प्रत्यास्थता को सीधे श्रेय देते हैं | **बैंकिंग पर्यवेक्षण पर बासेल समिति (BCBS)** |
 
-## 05. The AI "Audit Spine": Probabilistic Intelligence on Deterministic Infrastructure
+## 05. एआई की "अंकेक्षण रीढ़": नियतात्मक अवसंरचना पर प्रायिकतावादी बुद्धिमत्ता
 
-One of the most powerful strategic roles for a certified blockchain in 2026 is acting as an **"Audit Spine"** for artificial intelligence deployments. Modern financial systems are increasingly probabilistic. Credit scoring, real-time fraud detection, algorithmic trading, and autonomous customer interactions are driven by machine learning models that evolve, drift, and adapt over time. These models are non-deterministic: given the same input at two different times, they may yield different outputs due to dynamic weights and continuous training.
+2026 में प्रमाणित ब्लॉकचेन की सबसे शक्तिशाली रणनीतिक भूमिकाओं में से एक कृत्रिम बुद्धिमत्ता परिनियोजनों के लिए एक **"अंकेक्षण रीढ़"** के रूप में कार्य करना है। आधुनिक वित्तीय प्रणालियाँ तेज़ी से प्रायिकतावादी होती जा रही हैं। ऋण स्कोरिंग, रीयल-टाइम धोखाधड़ी पहचान, एल्गोरिदमिक व्यापार और स्वायत्त ग्राहक अंतःक्रियाएँ मशीन लर्निंग मॉडलों द्वारा संचालित होती हैं जो समय के साथ विकसित, विचलित और अनुकूलित होते हैं। ये मॉडल अनियतात्मक हैं: दो भिन्न समयों पर एक ही इनपुट के लिए, गतिशील भारों और सतत प्रशिक्षण के कारण वे भिन्न आउटपुट दे सकते हैं।
 
-This non-determinism introduces a profound governance challenge under **ISO/IEC 42001 (AI Governance)** and **Model Risk Management (MRM)** standards (such as **US Federal Reserve SR 11-7** and **UK PRA SS1/23**): *How do you audit, explain, and defend decisions that are not strictly reproducible?*
+यह अनिश्चितता **ISO/IEC 42001 (एआई शासन)** और मॉडल जोखिम प्रबंधन (MRM) मानकों (जैसे **अमेरिकी फ़ेडरल रिज़र्व का SR 11-7** और **ब्रिटिश PRA का SS1/23**) के तहत एक गहन शासन चुनौती प्रस्तुत करती है: *आप उन निर्णयों को कैसे अंकेक्षित, स्पष्ट और बचाव करते हैं जो कठोरता से पुनरुत्पाद्य नहीं हैं?*
 
-A certified distributed ledger provides the deterministic counterweight. While AI models operate probabilistically, the certified blockchain records their parameters deterministically, establishing an unalterable evidentiary spine:
+एक प्रमाणित वितरित बही नियतात्मक प्रतिभार प्रदान करती है। जहाँ एआई मॉडल प्रायिकतावादी ढंग से कार्य करते हैं, वहाँ प्रमाणित ब्लॉकचेन उनके मापदंडों को नियतात्मक रूप से दर्ज करता है, और एक अपरिवर्तनीय साक्ष्य रीढ़ स्थापित करता है:
 
-* **Model Versioning and Weight Anchoring**: Every deployed model version, its associated weights, and its training data checksums are hashed and written to the ledger at build-time, satisfying **SLSA Level 3** supply-chain requirements.  
-* **Contextual Input Logging**: When an AI model executes a critical decision (e.g., approving a loan or flagging a transaction), the exact contextual inputs and model hashes are written to the ledger, creating a tamper-evident history.  
-* **Auditability without Code Access**: If a regulator asks, "Why did your model reject this credit application on June 3?" the bank does not need to expose proprietary code or attempt to recreate the exact model state. It presents the cryptographically signed, on-chain ledger record of the inputs, weights, and validation state.
+* **मॉडल संस्करण एवं भार लंगरन**: प्रत्येक परिनियोजित मॉडल संस्करण, उसके संबद्ध भार और उसके प्रशिक्षण डेटा के चेकसम बिल्ड-समय पर हैश किए जाते हैं और बही में लिखे जाते हैं, जो **SLSA Level 3** आपूर्ति-शृंखला आवश्यकताओं को संतुष्ट करता है।  
+* **प्रासंगिक इनपुट लॉगिंग**: जब कोई एआई मॉडल एक महत्वपूर्ण निर्णय निष्पादित करता है (जैसे ऋण अनुमोदन या लेन-देन को चिह्नित करना), तब सटीक प्रासंगिक इनपुट और मॉडल हैश बही में लिखे जाते हैं, जो छेड़छाड़-प्रतिरोधी इतिहास बनाते हैं।  
+* **कोड पहुँच के बिना अंकेक्षणीयता**: यदि कोई नियामक पूछता है "आपके मॉडल ने 3 जून को इस ऋण आवेदन को क्यों अस्वीकार किया?", तो बैंक को न तो अपना स्वामित्व कोड प्रकट करना है और न ही सटीक मॉडल अवस्था को पुनः बनाने का प्रयास करना है। वह इनपुट, भार और सत्यापन अवस्था का क्रिप्टोग्राफिक रूप से हस्ताक्षरित, शृंखला-पर अभिलेख प्रस्तुत करता है।
 
-By anchoring the probabilistic decisions of machine learning models to the deterministic consensus of a certified blockchain, the institution creates a defensible, reconstructable, and independently verifiable timeline of automated actions.
+मशीन लर्निंग मॉडलों के प्रायिकतावादी निर्णयों को एक प्रमाणित ब्लॉकचेन की नियतात्मक सर्वसम्मति में लंगर डालकर, संस्थान स्वचालित क्रियाओं की एक बचाव योग्य, पुनर्निर्माण योग्य और स्वतंत्र रूप से सत्यापन योग्य समयरेखा बनाता है।
 
-## 06. Visualizing the Certified Consensus-to-Audit Pipeline
+## 06. प्रमाणित सर्वसम्मति-से-अंकेक्षण पाइपलाइन का दृश्यांकन
 
-The following sequence diagram illustrates the lifecycle of a transaction passing through a certified blockchain platform, demonstrating how validation gates, consensus integrity, smart contract execution, and telemetry emission interlock to produce board-ready regulatory evidence:
+निम्नलिखित अनुक्रम आरेख एक प्रमाणित ब्लॉकचेन प्लेटफ़ॉर्म से गुज़रने वाले लेन-देन के जीवनचक्र को दर्शाता है, यह दिखाते हुए कि सत्यापन द्वार, सर्वसम्मति अखंडता, स्मार्ट अनुबंध निष्पादन और टेलीमेट्री उत्सर्जन कैसे परस्पर जुड़कर बोर्ड-तैयार नियामक साक्ष्य उत्पन्न करते हैं:
 
 ```mermaid
 sequenceDiagram
@@ -206,37 +202,37 @@ sequenceDiagram
     Engine-->>Telemetry: Emit OpenTelemetry traces (latency, state, validation status)
     Telemetry->>Telemetry: Record evidence to DORA Article 8 Register of Information
 ```
-The critical path for this transactional sequence requires that every validation, execution, and consensus step is cryptographically signed, ensuring end-to-end provenance. The regulator's auditor node synchronizes block state in real-time, eliminating the need for retrospective, manual financial reconciliation.
+इस लेन-देन अनुक्रम का महत्वपूर्ण पथ अपेक्षा करता है कि प्रत्येक सत्यापन, निष्पादन और सर्वसम्मति चरण क्रिप्टोग्राफिक रूप से हस्ताक्षरित हो, जो अंत-से-अंत उद्गम सुनिश्चित करता है। नियामक का अंकेक्षक नोड ब्लॉक अवस्था को रीयल-टाइम में सिंक्रनाइज़ करता है, जिससे पूर्वव्यापी, मैनुअल वित्तीय मिलान की आवश्यकता समाप्त हो जाती है।
 
-## 07. The Boardroom Playbook for Senior Managers
+## 07. वरिष्ठ प्रबंधकों के लिए बोर्ड रूम पुस्तिका
 
-To successfully navigate the transition from organizational trust to infrastructural trust, bank executives and senior managers should immediately execute four key directives:
+संगठनात्मक विश्वास से अवसंरचनात्मक विश्वास तक के संक्रमण को सफलतापूर्वक पार करने के लिए, बैंक अधिकारियों और वरिष्ठ प्रबंधकों को तत्काल चार प्रमुख निर्देश निष्पादित करने चाहिए:
 
-1. **Mandate Ledger Audits in Enterprise Risk Management (ERM)**: Enforce a policy that no distributed ledger platform—whether private, public, or consortium-based—may be deployed for critical or important functions (CIFs) unless it has been audited against the 5-layer **Certified Blockchain Index Architecture** (CMM Level 3 minimum).  
-2. **Integrate Blockchains as the ISO 42001 AI Evidentiary Spine**: Direct the Chief Risk Officer and Lead AI Architect to integrate all high-impact machine learning models with a certified blockchain, creating a tamper-evident audit ledger of model versions, weights, inputs, and decisions.  
-3. **Audit the Validator Node Supply Chain (DORA Article 30)**: Require the procurement division to audit all third-party entities hosting validator nodes or managing cloud hosting for DLT networks, mandating compliance with the same cybersecurity and operational resilience standards applied to the bank’s internal cloud nodes.  
-4. **Align Ledger Architectures with CPMI-IOSCO and BCBS 239**: Instruct the platform engineering team to align ledger output telemetry directly with **BCBS 239** data reporting requirements, and ensure the consensus and settlement finality parameters strictly comply with **CPMI-IOSCO Principles 8 and 9**.
+1. **उद्यम जोखिम प्रबंधन (ERM) में बही अंकेक्षण अनिवार्य करें**: एक नीति लागू करें जिसके अनुसार कोई भी वितरित बही प्लेटफ़ॉर्म — निजी, सार्वजनिक या कंसोर्टियम — पाँच-परत **प्रमाणित ब्लॉकचेन सूचकांक स्थापत्य** (न्यूनतम CMM स्तर 3) के विरुद्ध अंकेक्षित हुए बिना महत्वपूर्ण या आवश्यक कार्यों (CIF) के लिए तैनात न किया जाए।  
+2. **ब्लॉकचेन को ISO 42001 एआई साक्ष्य रीढ़ के रूप में एकीकृत करें**: मुख्य जोखिम अधिकारी और प्रमुख एआई वास्तुकार को निर्देश दें कि वे सभी उच्च-प्रभाव मशीन लर्निंग मॉडलों को एक प्रमाणित ब्लॉकचेन के साथ एकीकृत करें, और मॉडल संस्करणों, भारों, इनपुट और निर्णयों का छेड़छाड़-प्रतिरोधी अंकेक्षण रजिस्टर बनाएँ।  
+3. **सत्यापनकर्ता नोड आपूर्ति शृंखला का अंकेक्षण करें (DORA अनुच्छेद 30)**: क्रय प्रभाग से अपेक्षा करें कि वह सत्यापनकर्ता नोडों को होस्ट करने या DLT नेटवर्कों के लिए क्लाउड होस्टिंग प्रबंधित करने वाली सभी तृतीय-पक्ष संस्थाओं का अंकेक्षण करे, और बैंक के आंतरिक क्लाउड नोडों पर लागू समान साइबर सुरक्षा एवं परिचालन प्रत्यास्थता मानकों को अनिवार्य करे।  
+4. **बही स्थापत्यों को CPMI-IOSCO एवं BCBS 239 के साथ संरेखित करें**: प्लेटफ़ॉर्म अभियांत्रिकी दल को निर्देश दें कि वह बही आउटपुट टेलीमेट्री को सीधे **BCBS 239** डेटा रिपोर्टिंग आवश्यकताओं के साथ संरेखित करे, और सुनिश्चित करे कि सर्वसम्मति एवं निपटान अंतिमता मापदंड **CPMI-IOSCO सिद्धांत 8 एवं 9** का कठोरता से अनुपालन करें।
 
-## 08. Frequently Asked Questions
+## 08. अक्सर पूछे जाने वाले प्रश्न
 
-**Is ISO/IEC TC 307 a certification standard?**  
-No. ISO/IEC TC 307 is a technical committee that establishes vocabulary, reference architectures, and security guidelines. While it defines "what good looks like" (guidance), the industry must operationalize these documents into formal, auditable certification schemes (assurance) to satisfy banking supervisors.
+**क्या ISO/IEC TC 307 एक प्रमाणन मानक है?**  
+नहीं। ISO/IEC TC 307 एक तकनीकी समिति है जो शब्दावली, संदर्भ स्थापत्य और सुरक्षा दिशानिर्देश स्थापित करती है। यद्यपि यह परिभाषित करती है कि "उत्कृष्टता कैसी दिखती है" (मार्गदर्शन), उद्योग को बैंकिंग पर्यवेक्षकों को संतुष्ट करने के लिए इन दस्तावेज़ों को औपचारिक, अंकेक्षणीय प्रमाणन योजनाओं (आश्वासन) में परिचालित करना होगा।
 
-**How does a certified blockchain support DORA compliance?**  
-Under DORA Article 5, bank boards bear direct, personal liability for technology resilience. A certified blockchain provides verifiable, cryptographic evidence of consensus integrity, validator supply-chain control, and smart contract safety, giving board members the documentable "reasonable steps" needed to defend against SM&CR personal liability claims.
+**एक प्रमाणित ब्लॉकचेन DORA अनुपालन का समर्थन कैसे करता है?**  
+DORA के अनुच्छेद 5 के तहत, बैंक बोर्ड प्रौद्योगिकीय प्रत्यास्थता के लिए प्रत्यक्ष व्यक्तिगत उत्तरदायित्व वहन करते हैं। एक प्रमाणित ब्लॉकचेन सर्वसम्मति अखंडता, सत्यापनकर्ता आपूर्ति-शृंखला नियंत्रण और स्मार्ट अनुबंध सुरक्षा का सत्यापन योग्य क्रिप्टोग्राफिक साक्ष्य प्रदान करता है, जो बोर्ड सदस्यों को SM&CR के तहत व्यक्तिगत उत्तरदायित्व दावों के विरुद्ध बचाव के लिए आवश्यक प्रलेखनीय "उचित कदम" देता है।
 
-What is the difference between a traditional ledger audit and a certified blockchain audit?  
-A traditional audit is retrospective, verifying manual entries and static files after transactions have cleared. A certified blockchain audit is continuous and real-time; the validator nodes, BFT consensus engine, and formally verified smart contracts are certified to execute transactions deterministically, emitting structured telemetry (OpenTelemetry) that continuously validates the system’s health.
+पारंपरिक बही अंकेक्षण और प्रमाणित ब्लॉकचेन अंकेक्षण में क्या अंतर है?  
+एक पारंपरिक अंकेक्षण पूर्वव्यापी होता है: यह लेन-देन के निपटने के बाद मैनुअल प्रविष्टियों और स्थिर फ़ाइलों को सत्यापित करता है। एक प्रमाणित ब्लॉकचेन अंकेक्षण सतत और रीयल-टाइम होता है; सत्यापनकर्ता नोड, BFT सर्वसम्मति इंजन और औपचारिक रूप से सत्यापित स्मार्ट अनुबंध लेन-देन को नियतात्मक रूप से निष्पादित करने के लिए प्रमाणित होते हैं, जो संरचित टेलीमेट्री (OpenTelemetry) उत्सर्जित करते हैं जो प्रणाली के स्वास्थ्य को निरंतर सत्यापित करती है।
 
-Can public blockchains be certified for banking use?  
-In most jurisdictions, pure permissionless public blockchains fail to satisfy banking regulations due to the lack of validator identity verification, unpredictable gas/transaction costs, and non-deterministic finality (e.g., probabilistic proof-of-work/stake forks). Certified blockchains in banking typically utilize enterprise permissioned or highly regulated public-hybrid architectures where validator node operators are identified and audited financial entities.
+क्या सार्वजनिक ब्लॉकचेन को बैंकिंग उपयोग के लिए प्रमाणित किया जा सकता है?  
+अधिकांश अधिकार-क्षेत्रों में, विशुद्ध रूप से अनुमति-रहित सार्वजनिक ब्लॉकचेन सत्यापनकर्ता पहचान सत्यापन के अभाव, अप्रत्याशित लेन-देन लागतों और अनियतात्मक अंतिमता (जैसे प्रायिकतावादी proof-of-work/stake फ़ोर्क) के कारण बैंकिंग विनियमों को संतुष्ट नहीं करते। बैंकिंग में प्रमाणित ब्लॉकचेन प्रायः उद्यम अनुमति-प्राप्त स्थापत्यों या कठोरता से विनियमित सार्वजनिक-संकर स्थापत्यों का उपयोग करते हैं, जहाँ सत्यापनकर्ता नोड संचालक पहचानी गई और अंकेक्षित वित्तीय संस्थाएँ होती हैं।
 
-## 09. References
+## 09. संदर्भ
 
-* Basel Committee on Banking Supervision (BCBS), 2013. *Principles for effective risk data aggregation and reporting (BCBS 239)*. Basel: Bank for International Settlements. Available at: [https://www.bis.org/publ/bcbs239.pdf](https://www.bis.org/publ/bcbs239.pdf).  
-* Committee on Payments and Market Infrastructures and Technical Committee of the International Organization of Securities Commissions (CPMI-IOSCO), 2012. *Principles for financial market infrastructures*. Basel: Bank for International Settlements. Available at: [https://www.bis.org/cpmi/publ/d101a.pdf](https://www.bis.org/cpmi/publ/d101a.pdf).  
-* European Banking Authority (EBA), 2019. *EBA/GL/2019/02 — Guidelines on outsourcing arrangements*. Paris: EBA. Available at: [https://www.eba.europa.eu/regulation-and-policy/internal-governance/guidelines-on-outsourcing-arrangements](https://www.eba.europa.eu/regulation-and-policy/internal-governance/guidelines-on-outsourcing-arrangements).  
-* European Parliament and Council of the European Union, 2022. *Regulation (EU) 2022/2554 on digital operational resilience for the financial sector (DORA)*. Brussels: Official Journal of the European Union. Available at: [https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554).  
-* ISO/IEC JTC 1/SC 42, 2023. *ISO/IEC 42001:2023 — Information technology — Artificial intelligence — Management system*. Geneva: International Organization for Standardization. Available at: [https://www.iso.org/standard/81230.html](https://www.iso.org/standard/81230.html).  
-* ISO/IEC Technical Committee 307, 2020. *ISO/IEC 22739:2020 — Blockchain and distributed ledger technologies — Vocabulary*. Geneva: International Organization for Standardization. Available at: [https://www.iso.org/standard/73771.html](https://www.iso.org/standard/73771.html).  
-* National Institute of Standards and Technology (NIST), 2026. *First Three Finalized Post-Quantum Encryption Standards (FIPS 203, 204, and 205)*. Gaithersburg: U.S. Department of Commerce. Available at: [https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards](https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards).
+* बैंकिंग पर्यवेक्षण पर बासेल समिति (BCBS), 2013. *Principles for effective risk data aggregation and reporting (BCBS 239)*. बासेल: अंतर्राष्ट्रीय निपटान बैंक। यहाँ उपलब्ध: [https://www.bis.org/publ/bcbs239.pdf](https://www.bis.org/publ/bcbs239.pdf)।  
+* Committee on Payments and Market Infrastructures एवं Technical Committee of the International Organization of Securities Commissions (CPMI-IOSCO), 2012. *Principles for financial market infrastructures*. बासेल: अंतर्राष्ट्रीय निपटान बैंक। यहाँ उपलब्ध: [https://www.bis.org/cpmi/publ/d101a.pdf](https://www.bis.org/cpmi/publ/d101a.pdf)।  
+* यूरोपीय बैंकिंग प्राधिकरण (EBA), 2019. *EBA/GL/2019/02 — Guidelines on outsourcing arrangements*. पेरिस: EBA। यहाँ उपलब्ध: [https://www.eba.europa.eu/regulation-and-policy/internal-governance/guidelines-on-outsourcing-arrangements](https://www.eba.europa.eu/regulation-and-policy/internal-governance/guidelines-on-outsourcing-arrangements)।  
+* यूरोपीय संसद एवं यूरोपीय संघ परिषद, 2022. *वित्तीय क्षेत्र के लिए डिजिटल परिचालन प्रत्यास्थता पर विनियमन (EU) 2022/2554 (DORA)*. ब्रुसेल्स: यूरोपीय संघ का आधिकारिक जर्नल। यहाँ उपलब्ध: [https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554)।  
+* ISO/IEC JTC 1/SC 42, 2023. *ISO/IEC 42001:2023 — Information technology — Artificial intelligence — Management system*. जिनेवा: अंतर्राष्ट्रीय मानकीकरण संगठन। यहाँ उपलब्ध: [https://www.iso.org/standard/81230.html](https://www.iso.org/standard/81230.html)।  
+* तकनीकी समिति ISO/IEC 307, 2020. *ISO/IEC 22739:2020 — Blockchain and distributed ledger technologies — Vocabulary*. जिनेवा: अंतर्राष्ट्रीय मानकीकरण संगठन। यहाँ उपलब्ध: [https://www.iso.org/standard/73771.html](https://www.iso.org/standard/73771.html)।  
+* National Institute of Standards and Technology (NIST), 2026. *First Three Finalized Post-Quantum Encryption Standards (FIPS 203, 204, and 205)*. गैदर्सबर्ग: U.S. Department of Commerce। यहाँ उपलब्ध: [https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards](https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards)।
