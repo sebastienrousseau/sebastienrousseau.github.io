@@ -61,5 +61,11 @@
   "home.eyebrow.contact": "Neem contact op",
   "home.cta.startConversation": "Start een gesprek",
 
-  "listing.readLatest": "Lees het laatste onderzoek"
+  "listing.readLatest": "Lees het laatste onderzoek",
+
+  "changelog.title": "Wijzigingslogboek",
+  "changelog.lede": "Alle artikelen, nieuwste eerst, gegroepeerd per maand.",
+  "whatsNew.title": "Wat is er nieuw",
+  "whatsNew.cta": "Bekijk het wijzigingslogboek",
+  "status.title": "Status"
 }

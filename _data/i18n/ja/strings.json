@@ -61,5 +61,11 @@
   "home.eyebrow.contact": "お問い合わせ",
   "home.cta.startConversation": "対話を始める",
 
-  "listing.readLatest": "最新のリサーチを読む"
+  "listing.readLatest": "最新のリサーチを読む",
+
+  "changelog.title": "変更履歴",
+  "changelog.lede": "すべての記事を新しい順に、月ごとにまとめています。",
+  "whatsNew.title": "新着情報",
+  "whatsNew.cta": "変更履歴を見る",
+  "status.title": "ステータス"
 }

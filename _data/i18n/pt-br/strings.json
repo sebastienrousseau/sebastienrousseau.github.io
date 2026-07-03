@@ -61,5 +61,11 @@
   "home.eyebrow.contact": "Entrar em contato",
   "home.cta.startConversation": "Iniciar uma conversa",
 
-  "listing.readLatest": "Ler as pesquisas recentes"
+  "listing.readLatest": "Ler as pesquisas recentes",
+
+  "changelog.title": "Registro de alterações",
+  "changelog.lede": "Todos os artigos, do mais recente ao mais antigo, agrupados por mês.",
+  "whatsNew.title": "Novidades",
+  "whatsNew.cta": "Ver o registro de alterações",
+  "status.title": "Status"
 }

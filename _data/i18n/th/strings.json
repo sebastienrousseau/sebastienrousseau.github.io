@@ -51,5 +51,11 @@
   "newsletter.submit": "สมัครรับ",
   "home.eyebrow.contact": "ติดต่อ",
   "home.cta.startConversation": "เริ่มสนทนา",
-  "listing.readLatest": "อ่านงานวิจัยล่าสุด"
+  "listing.readLatest": "อ่านงานวิจัยล่าสุด",
+
+  "changelog.title": "บันทึกการเปลี่ยนแปลง",
+  "changelog.lede": "บทความทั้งหมด ล่าสุดก่อน จัดกลุ่มตามเดือน",
+  "whatsNew.title": "มีอะไรใหม่",
+  "whatsNew.cta": "ดูบันทึกการเปลี่ยนแปลง",
+  "status.title": "สถานะ"
 }

@@ -61,5 +61,11 @@
   "home.eyebrow.contact": "Liên hệ với tôi",
   "home.cta.startConversation": "Bắt đầu trò chuyện",
 
-  "listing.readLatest": "Đọc nghiên cứu mới nhất"
+  "listing.readLatest": "Đọc nghiên cứu mới nhất",
+
+  "changelog.title": "Nhật ký thay đổi",
+  "changelog.lede": "Tất cả bài viết, mới nhất trước, nhóm theo tháng.",
+  "whatsNew.title": "Có gì mới",
+  "whatsNew.cta": "Xem nhật ký thay đổi",
+  "status.title": "Trạng thái"
 }

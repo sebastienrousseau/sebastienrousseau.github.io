@@ -61,5 +61,11 @@
   "home.eyebrow.contact": "Skontaktuj się",
   "home.cta.startConversation": "Rozpocznij rozmowę",
 
-  "listing.readLatest": "Przeczytaj najnowsze badania"
+  "listing.readLatest": "Przeczytaj najnowsze badania",
+
+  "changelog.title": "Dziennik zmian",
+  "changelog.lede": "Wszystkie artykuły, od najnowszych, pogrupowane według miesiąca.",
+  "whatsNew.title": "Co nowego",
+  "whatsNew.cta": "Zobacz dziennik zmian",
+  "status.title": "Status"
 }

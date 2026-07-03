@@ -51,5 +51,11 @@
   "newsletter.submit": "구독하기",
   "home.eyebrow.contact": "문의하기",
   "home.cta.startConversation": "대화 시작하기",
-  "listing.readLatest": "최신 연구 읽기"
+  "listing.readLatest": "최신 연구 읽기",
+
+  "changelog.title": "변경 기록",
+  "changelog.lede": "모든 글을 최신순으로, 월별로 정리했습니다.",
+  "whatsNew.title": "새로운 소식",
+  "whatsNew.cta": "변경 기록 보기",
+  "status.title": "상태"
 }

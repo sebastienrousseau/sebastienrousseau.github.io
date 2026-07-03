@@ -51,5 +51,11 @@
   "newsletter.submit": "訂閱",
   "home.eyebrow.contact": "聯絡我",
   "home.cta.startConversation": "開啟對話",
-  "listing.readLatest": "閱讀最新研究"
+  "listing.readLatest": "閱讀最新研究",
+
+  "changelog.title": "更新日誌",
+  "changelog.lede": "所有文章，最新在前，依月份分組。",
+  "whatsNew.title": "最新動態",
+  "whatsNew.cta": "查看更新日誌",
+  "status.title": "狀態"
 }

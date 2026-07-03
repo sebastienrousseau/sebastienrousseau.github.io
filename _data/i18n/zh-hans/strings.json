@@ -61,5 +61,11 @@
   "home.eyebrow.contact": "联系我",
   "home.cta.startConversation": "开启对话",
 
-  "listing.readLatest": "阅读最新研究"
+  "listing.readLatest": "阅读最新研究",
+
+  "changelog.title": "更新日志",
+  "changelog.lede": "所有文章，最新在前，按月份分组。",
+  "whatsNew.title": "最新动态",
+  "whatsNew.cta": "查看更新日志",
+  "status.title": "状态"
 }

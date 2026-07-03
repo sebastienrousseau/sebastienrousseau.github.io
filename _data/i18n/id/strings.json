@@ -51,5 +51,11 @@
   "newsletter.submit": "Berlangganan",
   "home.eyebrow.contact": "Hubungi",
   "home.cta.startConversation": "Mulai percakapan",
-  "listing.readLatest": "Baca riset terbaru"
+  "listing.readLatest": "Baca riset terbaru",
+
+  "changelog.title": "Log perubahan",
+  "changelog.lede": "Semua artikel, terbaru dulu, dikelompokkan per bulan.",
+  "whatsNew.title": "Yang baru",
+  "whatsNew.cta": "Lihat log perubahan",
+  "status.title": "Status"
 }

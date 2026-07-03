@@ -51,5 +51,11 @@
   "newsletter.submit": "Přihlásit se k odběru",
   "home.eyebrow.contact": "Kontaktovat",
   "home.cta.startConversation": "Zahájit konverzaci",
-  "listing.readLatest": "Číst nejnovější výzkum"
+  "listing.readLatest": "Číst nejnovější výzkum",
+
+  "changelog.title": "Seznam změn",
+  "changelog.lede": "Všechny články, nejnovější první, seskupené podle měsíce.",
+  "whatsNew.title": "Co je nového",
+  "whatsNew.cta": "Zobrazit seznam změn",
+  "status.title": "Stav"
 }

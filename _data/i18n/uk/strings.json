@@ -51,5 +51,11 @@
   "newsletter.submit": "Підписатися",
   "home.eyebrow.contact": "Зв’язатися",
   "home.cta.startConversation": "Розпочати розмову",
-  "listing.readLatest": "Читати останні дослідження"
+  "listing.readLatest": "Читати останні дослідження",
+
+  "changelog.title": "Журнал змін",
+  "changelog.lede": "Усі статті, спочатку найновіші, згруповані за місяцями.",
+  "whatsNew.title": "Що нового",
+  "whatsNew.cta": "Переглянути журнал змін",
+  "status.title": "Статус"
 }

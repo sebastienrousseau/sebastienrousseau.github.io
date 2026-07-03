@@ -61,5 +61,11 @@
   "home.eyebrow.contact": "Связаться со мной",
   "home.cta.startConversation": "Начать разговор",
 
-  "listing.readLatest": "Читать последние исследования"
+  "listing.readLatest": "Читать последние исследования",
+
+  "changelog.title": "История изменений",
+  "changelog.lede": "Все статьи, сначала новые, сгруппированы по месяцам.",
+  "whatsNew.title": "Что нового",
+  "whatsNew.cta": "Открыть историю изменений",
+  "status.title": "Статус"
 }

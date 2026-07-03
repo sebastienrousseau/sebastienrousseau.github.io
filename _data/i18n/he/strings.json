@@ -61,5 +61,11 @@
   "home.eyebrow.contact": "צרו קשר",
   "home.cta.startConversation": "התחילו שיחה",
 
-  "listing.readLatest": "קראו את המחקר האחרון"
+  "listing.readLatest": "קראו את המחקר האחרון",
+
+  "changelog.title": "יומן שינויים",
+  "changelog.lede": "כל המאמרים, החדשים ביותר תחילה, מקובצים לפי חודש.",
+  "whatsNew.title": "מה חדש",
+  "whatsNew.cta": "הצג את יומן השינויים",
+  "status.title": "סטטוס"
 }

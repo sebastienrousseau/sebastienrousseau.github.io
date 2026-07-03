@@ -104,13 +104,14 @@ The Rust tool reads the `_posts_build` markdown and `_layouts/` and writes the E
 13. **`scripts/generators/build_agent_api.py`** — JSON endpoints exposing articles/topics for AI and search clients.
 14. **`scripts/generators/build_lead_magnets.py`** — compiles source files into PDF resources (checklists, etc.).
 15. **`scripts/generators/build_news_sitemap.py`** — the Google News sitemap.
+16. **`scripts/generators/build_changelog.py`** — the `/changelog/` page (dated posts grouped by month), the homepage "what's new" strip, and the `/status/` page + `status.json` + build badge. Deterministic: derived from committed dated-post front matter, no wall-clock time. Runs after `build_translations` (so the homepage strip lands on the English `public/index.html` only) and before `postbuild.py`.
 
 ### Phase D — postbuild + finalisation
 
-16. **`scripts/postbuild/postbuild.py`** — the per-page optimisation pass: real SRI hashes, per-page CSP JSON-LD hashes, structured data, og/twitter tags, image width/height stamping, asset fingerprinting, breadcrumbs, and the rest of the page furniture.
-17. **`scripts/seo_and_audit/build_rag_corpus.py`** — the RAG/LLM corpus (`feed.jsonl`, per-tag JSONL, MCP resources).
-18. **`scripts/postbuild/fix_lang_switcher.py`** — rewrites the language-switcher hrefs to per-locale targets.
-19. **`scripts/security/sigstore_sign.py`** — signs dated articles with Sigstore (best-effort; skipped when no signing config is present).
+17. **`scripts/postbuild/postbuild.py`** — the per-page optimisation pass: real SRI hashes, per-page CSP JSON-LD hashes, structured data, og/twitter tags, image width/height stamping, asset fingerprinting, breadcrumbs, and the rest of the page furniture.
+18. **`scripts/seo_and_audit/build_rag_corpus.py`** — the RAG/LLM corpus (`feed.jsonl`, per-tag JSONL, MCP resources).
+19. **`scripts/postbuild/fix_lang_switcher.py`** — rewrites the language-switcher hrefs to per-locale targets.
+20. **`scripts/security/sigstore_sign.py`** — signs dated articles with Sigstore (best-effort; skipped when no signing config is present).
 
 After these, `build.sh` runs the validation gate (`tests/validation/`) under `set -euo pipefail`, so any CSP/hreflang/i18n/RTL/sitemap/JSON-LD failure fails the build.
 

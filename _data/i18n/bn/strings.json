@@ -51,5 +51,11 @@
   "feeds.channelDescription": "বাংলা প্রবন্ধ: প্রায়োগিক এআই, ISO 20022 পেমেন্ট, পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি এবং পাইকারি পেমেন্টের রূপান্তর।",
   "feeds.channelCopyright": "© Copyright 2007 - 2026 - Sebastien Rousseau. সর্বস্বত্ব সংরক্ষিত।",
   "feeds.jsonFeedTitle": "Sebastien Rousseau — প্রবন্ধ (বাংলা)",
-  "newsletter.placeholder": "apni@bank.bd"
+  "newsletter.placeholder": "apni@bank.bd",
+
+  "changelog.title": "চেঞ্জলগ",
+  "changelog.lede": "প্রতিটি নিবন্ধ, নতুনতম প্রথমে, মাস অনুসারে সাজানো।",
+  "whatsNew.title": "নতুন কী",
+  "whatsNew.cta": "চেঞ্জলগ দেখুন",
+  "status.title": "স্ট্যাটাস"
 }

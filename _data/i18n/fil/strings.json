@@ -61,5 +61,11 @@
   "home.eyebrow.contact": "Makipag-ugnayan",
   "home.cta.startConversation": "Magsimula ng usapan",
 
-  "listing.readLatest": "Basahin ang pinakabagong research"
+  "listing.readLatest": "Basahin ang pinakabagong research",
+
+  "changelog.title": "Changelog",
+  "changelog.lede": "Lahat ng artikulo, pinakabago muna, nakagrupo ayon sa buwan.",
+  "whatsNew.title": "Ano'ng bago",
+  "whatsNew.cta": "Tingnan ang changelog",
+  "status.title": "Katayuan"
 }

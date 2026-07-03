@@ -61,5 +61,11 @@
   "home.eyebrow.contact": "Ta kontakt",
   "home.cta.startConversation": "Inled ett samtal",
 
-  "listing.readLatest": "Läs senaste forskningen"
+  "listing.readLatest": "Läs senaste forskningen",
+
+  "changelog.title": "Ändringslogg",
+  "changelog.lede": "Alla artiklar, senaste först, grupperade efter månad.",
+  "whatsNew.title": "Nyheter",
+  "whatsNew.cta": "Visa ändringsloggen",
+  "status.title": "Status"
 }

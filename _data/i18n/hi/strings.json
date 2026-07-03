@@ -61,5 +61,11 @@
   "home.eyebrow.contact": "संपर्क करें",
   "home.cta.startConversation": "बातचीत शुरू करें",
 
-  "listing.readLatest": "नवीनतम शोध पढ़ें"
+  "listing.readLatest": "नवीनतम शोध पढ़ें",
+
+  "changelog.title": "चेंजलॉग",
+  "changelog.lede": "सभी लेख, नवीनतम पहले, महीने के अनुसार समूहित।",
+  "whatsNew.title": "नया क्या है",
+  "whatsNew.cta": "चेंजलॉग देखें",
+  "status.title": "स्थिति"
 }

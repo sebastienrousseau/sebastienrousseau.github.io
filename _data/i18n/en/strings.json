@@ -61,5 +61,11 @@
   "home.eyebrow.contact": "Get in touch",
   "home.cta.startConversation": "Start a conversation",
 
-  "listing.readLatest": "Read latest research"
+  "listing.readLatest": "Read latest research",
+
+  "changelog.title": "Changelog",
+  "changelog.lede": "Every article, newest first, grouped by month.",
+  "whatsNew.title": "What's new",
+  "whatsNew.cta": "View the changelog",
+  "status.title": "Status"
 }

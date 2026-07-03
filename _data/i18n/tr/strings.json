@@ -61,5 +61,11 @@
   "home.eyebrow.contact": "İletişime geç",
   "home.cta.startConversation": "Bir görüşme başlat",
 
-  "listing.readLatest": "Güncel araştırmaları oku"
+  "listing.readLatest": "Güncel araştırmaları oku",
+
+  "changelog.title": "Değişiklik günlüğü",
+  "changelog.lede": "Tüm makaleler, en yeniden eskiye, aya göre gruplandı.",
+  "whatsNew.title": "Yenilikler",
+  "whatsNew.cta": "Değişiklik günlüğünü görüntüle",
+  "status.title": "Durum"
 }

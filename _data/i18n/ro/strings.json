@@ -51,5 +51,11 @@
   "feeds.channelDescription": "Articole în limba română: IA aplicată, plăți ISO 20022, criptografie post-cuantică și transformarea plăților wholesale.",
   "feeds.channelCopyright": "© Copyright 2007 - 2026 - Sebastien Rousseau. Toate drepturile rezervate.",
   "feeds.jsonFeedTitle": "Sebastien Rousseau — Articole (română)",
-  "newsletter.placeholder": "tu@banca.ro"
+  "newsletter.placeholder": "tu@banca.ro",
+
+  "changelog.title": "Jurnal de modificări",
+  "changelog.lede": "Toate articolele, cele mai recente primele, grupate pe lună.",
+  "whatsNew.title": "Noutăți",
+  "whatsNew.cta": "Vezi jurnalul de modificări",
+  "status.title": "Stare"
 }
