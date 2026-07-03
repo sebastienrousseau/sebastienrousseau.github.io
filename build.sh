@@ -50,6 +50,10 @@ python3 scripts/postbuild/post_enrich.py --dir _posts_build
 # editorial pillar grid replaces the legacy monolithic anchor list.
 # Lenient on missing taxonomy (WS3 commit 1 must have shipped first).
 python3 scripts/generators/build_tags.py --dir _posts_build
+# Backfill a permalink into any archive post that predates the convention.
+# ssg >=0.0.45 derives the RSS channel <link> from permalink and aborts if
+# it is missing; source stays untouched (build-copy only). See ADR-0002.
+python3 scripts/postbuild/backfill_permalink.py --dir _posts_build
 
 # Compile the site from the temporary directory instead of _posts
 ssg -n=docs -c=_posts_build -t=_layouts -o=public
