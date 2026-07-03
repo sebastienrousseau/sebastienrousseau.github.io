@@ -60,6 +60,14 @@ rm -rf _posts_build
 # Static Site Generator doesn't pick up theme-init.js as a managed asset; we ship it as-is.
 cp -f _layouts/theme-init.js public/theme-init.js
 
+# On-site search runtime (DX plan Phase 2, ADR-0010). Same hands-off pattern as
+# theme-init.js: SSG doesn't manage these, so ship them verbatim to public/. Both
+# are lazy-loaded on first Cmd/Ctrl-K (or on /search) by main.js — never on the
+# initial LCP path — and are same-origin under script-src/style-src 'self', so
+# they need no CSP change and no SRI attribute. postbuild minifies them in place.
+cp -f _layouts/search.js public/search.js
+cp -f _layouts/search.css public/search.css
+
 # Mirror .well-known/ into the build output so the OpenPGP Web Key
 # Directory (WKD) endpoint is served at
 #   https://sebastienrousseau.com/.well-known/openpgpkey/hu/<hash>
@@ -199,6 +207,10 @@ python3 scripts/generators/build_listings.py
 # rich link card when readers paste-share a sebastienrousseau.com URL.
 python3 scripts/generators/build_oembed.py
 python3 scripts/generators/build_translations/__main__.py
+# Per-locale search UI microcopy (search-ui.json) for the client-side search
+# runtime — projected from _data/i18n/<lang>/strings.json (ADR-0010). Runs after
+# build_translations so every public/<lang>/ directory exists.
+python3 scripts/generators/build_search_ui.py
 python3 scripts/generators/build_lang_feeds.py
 python3 scripts/generators/build_agent_api.py
 python3 scripts/generators/build_lead_magnets.py
@@ -232,6 +244,7 @@ fi
 # machine) without breaking the build — the committed bundles still ship.
 python3 scripts/security/sigstore_sign.py || true
 python3 tests/validation/test_search_indexes.py
+python3 tests/validation/test_search_ui_parity.py
 python3 tests/validation/test_i18n_parity.py
 python3 tests/validation/test_i18n_strings.py
 python3 tests/validation/test_i18n_labels.py
