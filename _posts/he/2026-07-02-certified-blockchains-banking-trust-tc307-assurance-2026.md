@@ -1,6 +1,6 @@
 ---
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
-banner_alt: "Abstract distributed-ledger lattice resolving into a certified audit spine — visualising the shift from retrospective entity audits to continuous, cryptographically-verifiable blockchain assurance for wholesale banking"
+banner_alt: "סריג פנקס מבוזר מופשט המתגבש לעמוד שדרה מוסמך של ביקורת — ממחיש את המעבר מביקורות רטרוספקטיביות מבוססות-ישות להבטחת בלוקצ'יין מתמשכת וניתנת לאימות קריפטוגרפי לבנקאות סיטונאית"
 banner_height: "1280"
 banner_width: "1920"
 banner: "https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp"
@@ -9,7 +9,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "July 2, 2026"
-description: "The 2026 Certified Blockchain Index gives banks a 5-level Capability Maturity Model to certify distributed-ledger governance, consensus integrity, cryptography, smart-contract assurance, and audit observability against DORA, CPMI-IOSCO PFMI, ISO/IEC TC 307, ISO 42001 and Basel III."
+description: "מדד הבלוקצ'יינים המוסמכים 2026 מעניק לבנקים מודל בגרות יכולות בן חמש רמות להסמכת ממשל פנקס מבוזר, שלמות קונצנזוס, הצפנה, הבטחת חוזים חכמים ותצפיתיות ביקורת מול DORA, PFMI של CPMI-IOSCO, ISO/IEC TC 307, ISO 42001 ו-Basel III."
 format-detection: "telephone=no"
 hreflang: "he"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -35,9 +35,9 @@ rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
 schema: "FAQPage, Article"
-seo_title: "From Evidence to Truth: Certified Blockchains and Banking Trust"
+seo_title: "מהראיה לאמת: בלוקצ'יינים מוסמכים ואמון בנקאי"
 short_name: "sebastienrousseau"
-subtitle: "Why certifiable ledger assurance — not immutability alone — will define institutional trust in 2026: scoring governance, consensus integrity, cryptography, smart contracts, and observability against DORA, ISO/IEC TC 307, and CPMI-IOSCO PFMI."
+subtitle: "מדוע הבטחת פנקס הניתנת להסמכה — ולא אי-שינויות בלבד — תגדיר את האמון המוסדי ב-2026: ניקוד ממשל, שלמות קונצנזוס, הצפנה, חוזים חכמים ותצפיתיות מול DORA, ISO/IEC TC 307 ו-PFMI של CPMI-IOSCO."
 tags: "agentic AI, AI governance, banking, autonomy tiers, model risk, SR 11-7, EU AI Act, FSB, IOSCO, MAS, IMDA, control plane, audit log, DORA, McKinsey, Stanford AI Index"
 theme-color: "0, 83, 191"
 title: "The Agentic AI Index for Banks in 2026: Measuring Autonomy"
@@ -63,7 +63,7 @@ apple_touch_icon_sizes: "192x192"
 apple-mobile-web-app-capable: "yes"
 apple-mobile-web-app-status-bar-inset: "black"
 apple-mobile-web-app-status-bar-style: "black-translucent"
-apple-mobile-web-app-title: "Certified Blockchains 2026"
+apple-mobile-web-app-title: "בלוקצ'יינים מוסמכים 2026"
 apple-touch-fullscreen: "yes"
 msapplication-navbutton-color: "0, 83, 191"
 twitter_card: "summary_large_image"
@@ -84,103 +84,99 @@ site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 ---
 
-<!-- translation-stub: replace this body in Claude Code -->
+# מהראיה לאמת: מדוע בלוקצ'יינים מוסמכים יגדירו את העידן הבא של האמון הבנקאי
 
-> _Translation pending — read the [English original](/2026-07-02-certified-blockchains-banking-trust-tc307-assurance-2026/) while we localise._
+## תקציר אסטרטגי (העיקר)
 
-# From Evidence to Truth: Why Certified Blockchains Will Define the Next Era of Banking Trust
+הבנקאות הסיטונאית והעסקאות הגלובליות ניצבות ב-2026 בנקודת מפנה היסטורית. ככל שהשירותים הפיננסיים עוברים לרשתות סליקה דיגיטליות מלידה ובזמן אמת, והבינה המלאכותית מכניסה אי-דטרמיניזם הסתברותי, מודלי ההבטחה המסורתיים — האנלוגיים והרטרוספקטיביים (כגון ביקורות סטטיות מבוססות ישות) — כבר אינם עומדים בדרישות המודרניות של ניהול סיכונים וחובות נאמנות.
 
-## Executive Summary & Strategic Context (TL;DR)
+הוועדה הטכנית ISO/IEC TC 307 ביססה בסיס מתוקנן לטכנולוגיות פנקס מבוזר. אולם אימוץ מוסדי אמיתי מחייב מעבר מהנחיה תיאורית להבטחת בלוקצ'יין מנחה הניתנת להסמכה עצמאית. באמצעות ניקוד ממשל הפנקס, שלמות הקונצנזוס, בטיחות החוזים החכמים וזריזות ההצפנה מול מודל בגרות יכולות (CMM) קפדני בן חמש רמות, בנקים יכולים לעבור מהנחות מקוטעות ותלויות-ספק לאמת פיננסית ניתנת להסמכה ולביקורת בידי הדירקטוריון.
 
-Wholesale banking and global transactions in 2026 sit at a historic inflection point. As financial services transition to natively digital, real-time clearing networks, and as artificial intelligence introduces probabilistic non-determinism, the traditional analogue, retrospective assurance models (such as static entity-based audits) fail to meet modern risk management and fiduciary demands.
+## תובנות מרכזיות
 
-ISO/IEC Technical Committee 307 (TC 307) has established a standardized baseline for distributed ledger technologies. However, true corporate and institutional adoption requires shifting from descriptive guidance to prescriptive, independently certifiable blockchain assurance. By scoring ledger governance, consensus integrity, smart contract safety, and cryptographic agility against a strict 5-level Capability Maturity Model (CMM), banks can move from patchwork, vendor-specific assumptions to certifiable, board-auditable financial truth.
+* **פער החיכוך הנאמנותי**: כיום אנו יודעים להסמיך את הבנק (Basel III), את הענן (ISO 27001) ואת מערכות ממשל הבינה המלאכותית (ISO 42001), אך עדיין איננו יודעים להסמיך את הפנקס המבוזר שקובע יותר ויותר מהי אמת. אסימטריה זו היא פגיעות תפעולית מרכזית.  
+* **DORA אוכפת אחריות נאמנותית ישירה**: על פי סעיף 5 ל-DORA, דירקטוריוני הבנקים נושאים באחריות אישית ישירה ובלתי ניתנת להאצלה לחוסן התפעולי של כל פריסות הצד השלישי והפנקסים, עם סנקציות אישיות חמורות במסגרת משטר SM&CR על כשלים.  
+* **עמוד השדרה של ביקורת הבינה המלאכותית**: היכן שלמידת מכונה מייצרת תוצאות הסתברותיות בלתי ניתנות לשחזור, בלוקצ'יין מוסמך מספק לכידת מצב דטרמיניסטית. תיעוד גרסאות מודלים, קלטים והחלטות אימות על השרשרת עומד ב-ISO 42001 ובתקני ניהול סיכון המודל.  
+* **מדד הבלוקצ'יינים המוסמכים**: מדד זה מפרמל ממשל, קונצנזוס, חוזים חכמים ותצפיתיות לכרטיס ניקוד ניתן לאימות ומוכן לביקורת בסולם CMM מ-0 עד 5, ומתרגם מדדים הנדסיים להצהרות תיאבון סיכון מאושרות בידי הדירקטוריון.
 
-## Key Takeaways
+## 01. פער החיכוך הנאמנותי בבנקאות הדיגיטלית
 
-* **The Fiduciary Frictional Gap**: We can currently certify the bank (Basel III), the cloud (ISO 27001), and the AI governance systems (ISO 42001), but we cannot yet certify the distributed ledger that increasingly determines what is true. This asymmetry is a major operational vulnerability.  
-* **DORA Enforces Direct Fiduciary Responsibility**: Under DORA Article 5, bank boards of directors bear direct, non-delegable personal liability for the operational resilience of all third-party and ledger deployments, with severe SM&CR personal penalties for failures.  
-* **The AI Audit Spine**: While machine learning introduces non-reproducible, probabilistic outcomes, a certified blockchain provides deterministic state capture. Recording model versions, inputs, and validation decisions on-chain satisfies ISO 42001 and Model Risk Management standards.  
-* **The Certified Blockchain Index**: This index formalizes governance, consensus, smart contracts, and observability into a verifiable, audit-ready scorecard on a 0-to-5 CMM scale, translating engineering metrics into board-approved Risk Appetite Statements.
+בבנקאות הקלאסית, האמון הוא יחסי, מוסדי ורטרוספקטיבי. הוא נשען על מבקרים חיצוניים עצמאיים הבוחנים את המצב הפיננסי בנקודות זמן קבועות ומיישבים פערים בין ממגורות פנקסים דו-צדדיות. בשווקים המונעים בידי API ובזמן אמת של 2026, מודל זה מכניס זמני השהיה אוסרניים וסיכונים מבניים.
 
-## 01. The Fiduciary Frictional Gap in Digital Banking
+כאשר עסקאות נסלקות מיידית, מאגרי נזילות תוך-יומיים מנוהלים דינמית בידי שערי API, ובעלות על נכסים מטוקנת על פני פנקסים משותפים, ביקורות רטרוספקטיביות הופכות לתרגילים פורנזיים במקום לבקרות מונעות. נאמנים אינם יכולים עוד להסתמך רק על הסמכת הישות המשפטית. עליהם להסמיך את המצע הדיגיטלי עצמו.
 
-In classical banking, trust is relational, institutional, and retrospective. It depends on independent, third-party auditors reviewing financial state at static points in time, reconciling discrepancies across bilateral ledger silos. In the real-time, API-driven markets of 2026, this model introduces prohibitive latencies and structural risks.
+כיום בנקים פועלים תחת אסימטריה ארכיטקטונית זועקת:
 
-When transactions settle instantly, intraday liquidity pools are managed dynamically by API gateways, and asset ownership is tokenised across shared ledgers, retrospective audits become forensic exercises rather than preventative controls. Fiduciaries can no longer rely solely on certifying the corporate entity. They must certify the digital substrate itself.
+1. **תשתית ענן מוסמכת**: צמתי חומרה, מכולות מווירטולות ומרכזי נתונים פיזיים מאומתים מול בקרות ISO/IEC 27001 ו-SOC 2 Type II.  
+2. **תהליכי ניהול מוסמכים**: מדיניות סיכון תפעולי, תוכניות המשכיות עסקית ופריסות אלגוריתמיות נשלטות במסגרות סיכון קפדניות.  
+3. **מנועי פנקס לא מוסמכים**: מנגנוני הקונצנזוס המבוזר, שרשראות האספקה של צמתי האימות, גבולות החוזים החכמים ומודלי ממשל הרשת נותרים להנחות לא מוסמכות, מותאמות אישית או ספציפיות לקונסורציום.
 
-Currently, banks operate under a glaring architectural asymmetry:
+אסימטריה זו היא נקודת כשל קריטית. בנק יכול להריץ יישום מאומת בתוך מכולת ענן מאובטחת ומוסמכת ISO 27001, אך אם מכולה זו כותבת לפנקס מבוזר עם בקרת מאמתים מרוכזת, פרמטרי קונצנזוס פגיעים או חוזים חכמים לא מבוקרים, שלמות העסקה נפגעת. כדי לגשר על פער זה, מנוע הפנקס עצמו חייב להפוך לאובייקט הבטחה הניתן להסמכה.
 
-1. **Certified Cloud Infrastructure**: Hardware nodes, virtualized containers, and physical datacenters are validated against ISO/IEC 27001 and SOC 2 Type II controls.  
-2. **Certified Management Processes**: Operational risk policies, business continuity plans, and algorithmic deployments are governed under strict risk frameworks.  
-3. **Uncertified Ledger Engines**: The core distributed consensus mechanisms, validator node supply chains, smart contract boundaries, and network governance models are left to uncertified, custom, or consortium-specific assumptions.
+## 02. בסיס התִקנון ISO/IEC TC 307
 
-This asymmetry is a major failure point. A bank can run a validated application inside a secure, ISO 27001-certified cloud container, but if that container writes to a distributed ledger with centralized validator control, vulnerable consensus parameters, or un-audited smart contracts, the transaction integrity is compromised. To bridge this gap, the ledger engine itself must become a certifiable assurance object.
+העבודה היסודית הנחוצה לתקנון פנקסים מבוזרים מתבצעת בידי הוועדה הטכנית ISO/IEC TC 307 (טכנולוגיות בלוקצ'יין ופנקס מבוזר). במקום להתייחס לבלוקצ'יין כפרוטוקול טכני מבודד, TC 307 ניגשת אליו כאל תשתית אמון מוסדית, ומארגנת את עבודתה סביב חמישה עמודי תווך מרכזיים:
 
-## 02. The ISO/IEC TC 307 Standardization Baseline
+1. **טקסונומיה ואוצר מילים (ISO 22739)**: מבססת נומנקלטורה משותפת, ומבטיחה הגדרות משפטיות ותפעוליות עקביות בין תחומי שיפוט, סכימות פיננסיות ומוסדות.  
+2. **ארכיטקטורת ייחוס (ISO/TR 23245)**: מגדירה את הגבולות, השכבות, זרימות הנתונים והרכיבים הפונקציונליים של מערכת פנקס מבוזר תואמת.  
+3. **אבטחה, פרטיות וחוזים חכמים (ISO/TR 23244 / ISO 23613)**: מבססת הנחיות אבטחה בסיסיות למערכות נכסים דיגיטליים ומפרטת שיטות מיטביות למיתון פגיעויות חוזים חכמים ולממשל מחזור חייהם.  
+4. **מסגרות יכולת פעולה הדדית**: מטפלת במנגנוני חילופי הנתונים והנכסים בין רשתות פנקס הטרוגניות, ומונעת היווצרות ממגורות מטוקנות מבודדות.  
+5. **זהות מבוזרת ועוגני אמון**: משלבת מזהים קריפטוגרפיים מבוססי-פנקס עם תשתיות מפתח ציבורי פורמליות (PKI) ומרשמים מורשי-מדינה.
 
-The foundational work required to standardize distributed ledgers is being established by ISO/IEC Technical Committee 307 (TC 307) (Blockchain and distributed ledger technologies). Rather than treating blockchain as an isolated technical protocol, TC 307 addresses it as an institutional trust infrastructure, organizing its work across five core pillars:
+בסך הכול, TC 307 מסמנת את מעבר ה-DLT מבחירה הנדסית מותאמת אישית לדיסציפלינה ארכיטקטונית מתוקננת. עם זאת, TC 307 נותרת תיאורית בעיקרה. היא מגדירה כיצד נראית מצוינות (הנחיה), אך אינה מספקת את פרוטוקול האימות המנחה (הבטחה) שקציני סיכון ומפקחים זקוקים לו כדי לאשר פריסות ייצור של פונקציות קריטיות או חשובות (CIF).
 
-1. **Taxonomy and Vocabulary (ISO 22739)**: Establishes a common nomenclature, ensuring consistent legal and operational definitions across different jurisdictions, financial schemes, and institutions.  
-2. **Reference Architecture (ISO/TR 23245)**: Defines the boundaries, layers, data flows, and functional components of a compliant distributed ledger system.  
-3. **Security, Privacy, and Smart Contracts (ISO/TR 23244 / ISO 23613)**: Establishes baseline security guidelines for digital asset systems and details best practices for smart contract vulnerability mitigation and lifecycle governance.  
-4. **Interoperability Frameworks**: Addresses the data and asset-exchange mechanisms between heterogeneous ledger networks, preventing the formation of isolated tokenised silos.  
-5. **Decentralized Identity and Trust Anchors**: Integrates ledger-based cryptographic identifiers with formal public-key infrastructures (PKI) and state-authorized registries.
+## 03. הנחיה מול הבטחה: ההבחנה הנאמנותית
 
-Collectively, TC 307 signals the transition of DLT from a custom engineering choice into a standardized architectural discipline. However, TC 307 remains primarily descriptive. It defines what good looks like (guidance), but it does not provide the prescriptive verification protocol (assurance) that risk officers and supervisors require to authorize production deployments of critical or important functions (CIFs).
+משתתפי השוק הפיננסי אינם פורסים טכנולוגיה משום שהיא חדשנית או אלגנטית; הם פורסים אותה כאשר ניתן לנהל, לבקר, להגן ולהתאים אותה לדרישות עתודות ההון. לכן התִקנון בבנקאות מתפרק באופן טבעי לשתי שכבות:
 
-## 03. Guidance vs. Assurance: The Fiduciary Distinction
+* **הנחיה (המסגרת)**: משרטטת שיטות מיטביות, יעדי ייחוס והנחיות ארכיטקטוניות (למשל ISO/IEC TC 307, מסגרות NIST).  
+* **הבטחה (ההוכחה)**: מספקת ראיות עצמאיות, מתמשכות וניתנות לאימות בידי צד שלישי שהמסגרת מיושמת ופועלת כמתוכנן (למשל הסמכת ISO 27001, ביקורות SOC 2, בחינות רגולטוריות).
 
-Financial market participants do not deploy technology because it is innovative or elegant; they deploy it when it can be governed, audited, defended, and reconciled with capital reserve requirements. This is why standardisation in banking naturally resolves into two layers:
+הסתמכות על קונצנזוס פנקס לא מוסמך תוך הסמכת תשתית הענן היא פרצה רגולטורית קריטית. בלוקצ'יין "בלתי ניתן לשינוי" אינו בהכרח "מהימן מוסדית". אי-שינויות מבטיחה רק שהנתונים שהוזנו נותרים ללא שינוי; היא אינה מאמתת אם צמתי האימות מאובטחים, אם פרוטוקול הקונצנזוס עמיד בפני קנוניה, אם לוגיקת החוזים החכמים תקינה מתמטית, או אם ניהול המפתחות הקריפטוגרפיים עומד במנדטים הפוסט-קוונטיים.
 
-* **Guidance (The Framework)**: Outlines best practices, reference targets, and architectural guidelines (e.g., ISO/IEC TC 307, NIST frameworks).  
-* **Assurance (The Proof)**: Provides independent, continuous, and third-party-verifiable evidence that the framework is implemented and operating as designed (e.g., ISO 27001 certification, SOC 2 audits, regulatory examinations).
+כדי לסגור פער זה, מדד הבלוקצ'יינים המוסמכים 2026 מפרמל דרישות אלו למודל בגרות יכולות (CMM) בר-כימות, הממופה לרגולציות הבנקאיות הגלובליות.
 
-Relying on uncertified ledger consensus while certifying cloud infrastructure is a critical regulatory gap. A blockchain that is "immutable" is not necessarily "institutionally trusted." Immutability only guarantees that the data entered is unchanged; it does not verify that the validator nodes are secure, the consensus protocol is resilient against collusion, the smart contract logic is mathematically sound, or the cryptographic key management complies with post-quantum mandates.
+## 04. מדד הבלוקצ'יינים המוסמכים 2026
 
-To close this gap, the 2026 Certified Blockchain Index formalizes these requirements into a quantifiable Capability Maturity Model (CMM) mapped to global banking regulations.
+כדי לאפשר להנהלה הבכירה להעריך ולהסמיך את פלטפורמות הפנקס שלה, מדד זה מבנה את תשתית הפנקס המבוזר לחמש שכבות תפעוליות ניתנות לביקורת, המנוקדות בסולם CMM מ-0 עד 5.
 
-## 04. The 2026 Certified Blockchain Index
+## טבלה 1: ארכיטקטורת מדד הבלוקצ'יינים המוסמכים
 
-To enable senior management to evaluate and certify their ledger platforms, this index structures the distributed ledger infrastructure into five auditable operational layers, scored on a 0-to-5 CMM scale.
-
-## Table 1: The Certified Blockchain Index Architecture
-
-| Index Layer | Capability Maturity Level (CMM) | Technical and Operational Metric | Regulatory / Fiduciary Control Reference |
+| שכבת המדד | רמת בגרות (CMM) | מדד טכני ותפעולי | ייחוס בקרה רגולטורי / נאמנותי |
 | :---- | :---- | :---- | :---- |
-| **Ledger Governance** | **Level 0**: Ad-hoc consortium**Level 3**: Automated validator vetting & rotation**Level 5**: Decentralized, multi-party cryptographic identity anchoring | % of validator nodes operated by vetted financial entities; mean time to resolve validator disputes; geographic distribution of nodes | **DORA Article 5** (Governance and Organisation); **CPMI-IOSCO PFMI Principle 2** (Governance) & **Principle 3** (Framework for the comprehensive management of risks) |
-| **Consensus Integrity** | **Level 0**: Single-node or opaque POW**Level 3**: Audited BFT with deterministic finality**Level 5**: Multi-jurisdictional, formally verified consensus with continuous latency monitoring | Max tolerable consensus latency; collusion-resistance threshold; uptime SLA under simulated node partition | **DORA Article 6** (ICT Risk Management Framework); **CPMI-IOSCO PFMI Principle 8** (Settlement Finality) |
-| **Identity & Cryptography** | **Level 0**: Weak RSA / ECDSA keys**Level 3**: Multi-sig with HSM-backed key management**Level 5**: Quantum-safe hybrid keys (FIPS 203 ML-KEM) and zero-knowledge privacy gates | % of ledger transactions signed with HSM-backed keys; PQC migration readiness score; ZK-proof latency | **NIST FIPS 203 / 204**; **ISO/IEC 27001** (Information Security Management) |
-| **Smart Contract Assurance** | **Level 0**: Un-audited solidity scripts**Level 3**: Automated compiler validation & external audit**Level 5**: Formally verified, immutable smart contracts with circuit-breaker upgrades | % of smart contracts with mathematical formal verification; count of compiler warnings; vulnerability scan coverage | **EBA Guidelines on Outsourcing Arrangements** (Paragraphs 81, 113-117); **DORA Article 30** (Minimum Contractual Clauses) |
-| **Audit & Observability** | **Level 0**: Manual log scraping**Level 3**: Structured OTel traces & read-only auditor nodes**Level 5**: Automated, continuous reconciliation to the Article 8 register | % of transactions covered by OpenTelemetry traces; latency from ledger block-commit to auditor-node sync | **BCBS 239** (Risk Data Aggregation); **DORA Article 8** (Register of Information / ITS Schemas) |
+| **ממשל פנקס** | **רמה 0**: קונסורציום אד-הוק**רמה 3**: בדיקה וסבב מאמתים אוטומטיים**רמה 5**: עיגון זהות קריפטוגרפי מבוזר רב-משתתפים | % צמתי האימות המופעלים בידי ישויות פיננסיות שנבדקו; זמן פתרון ממוצע למחלוקות מאמתים; פיזור גיאוגרפי של צמתים | **DORA סעיף 5** (ממשל וארגון); **CPMI-IOSCO PFMI עיקרון 2** (ממשל) ו**עיקרון 3** (מסגרת לניהול מקיף של סיכונים) |
+| **שלמות קונצנזוס** | **רמה 0**: צומת יחיד או PoW אטום**רמה 3**: BFT מבוקר עם סופיות דטרמיניסטית**רמה 5**: קונצנזוס רב-תחומי, מאומת פורמלית, עם ניטור השהיה מתמשך | השהיית קונצנזוס מרבית נסבלת; סף עמידות לקנוניה; SLA זמינות בעת פיצול צמתים מדומה | **DORA סעיף 6** (מסגרת ניהול סיכוני ICT); **CPMI-IOSCO PFMI עיקרון 8** (סופיות סליקה) |
+| **זהות והצפנה** | **רמה 0**: מפתחות RSA / ECDSA חלשים**רמה 3**: חתימה מרובה עם ניהול מפתחות מגובה HSM**רמה 5**: מפתחות היברידיים בטוחים קוונטית (FIPS 203 ML-KEM) ושערי פרטיות באפס ידע | % עסקאות הפנקס החתומות במפתחות מגובי HSM; ציון מוכנות למעבר PQC; השהיית הוכחות ZK | **NIST FIPS 203 / 204**; **ISO/IEC 27001** (ניהול אבטחת מידע) |
+| **הבטחת חוזים חכמים** | **רמה 0**: סקריפטי Solidity לא מבוקרים**רמה 3**: אימות מהדר אוטומטי וביקורת חיצונית**רמה 5**: חוזים חכמים בלתי ניתנים לשינוי ומאומתים פורמלית עם שדרוגי מפסק | % החוזים החכמים עם אימות פורמלי מתמטי; מספר אזהרות מהדר; כיסוי סריקות פגיעויות | **הנחיות EBA למיקור חוץ** (סעיפים 81, 113-117); **DORA סעיף 30** (סעיפים חוזיים מינימליים) |
+| **ביקורת ותצפיתיות** | **רמה 0**: איסוף לוגים ידני**רמה 3**: עקבות OTel מובנות וצמתי מבקר לקריאה בלבד**רמה 5**: התאמה אוטומטית ומתמשכת למרשם סעיף 8 | % העסקאות המכוסות בעקבות OpenTelemetry; השהיה מאישור בלוק לסנכרון צומת מבקר | **BCBS 239** (צבירת נתוני סיכון); **DORA סעיף 8** (מרשם מידע / סכימות ITS) |
 
-## Table 2: Key Trust Signals Mapped to Global Banking Standards
+## טבלה 2: אותות אמון מרכזיים הממופים לתקנים בנקאיים גלובליים
 
-| Signal / Benchmark | Metric | Impact on Banking Platforms | Regulatory Source |
+| אות / מדד השוואה | מדד | השפעה על פלטפורמות בנקאיות | מקור רגולטורי |
 | :---- | :---- | :---- | :---- |
-| **ISO/IEC TC 307 Progress** | Transition from ISO/TR technical reports to formal certification schemes | Establishes the first standardized framework for certifying distributed ledger engines | **ISO/IEC JTC 1 / SC 44** (Distributed Ledger Technologies) |
-| **Project Agorá Prototype Phase** | 40+ participating commercial banks; unified ledger testing of tokenised deposits | Shifting cross-border clearing from messaging (SWIFT) to atomic tokenised settlement | **Bank for International Settlements (BIS) Innovation Hub** |
-| **DORA Article 30 Third-Party Audit** | 100% of node providers and infrastructure hosts audited against security criteria | Eliminates "shadow validator nodes"; mandates total supply-chain transparency | **European Supervisory Authorities (ESA)** |
-| **ISO/IEC 42001 (AI Governance)** | Cryptographically immutabilized AI model and training logs on-chain | Employs blockchain as the immutable evidentiary ledger ("audit spine") for machine learning | **ISO/IEC 42001:2023** (Information technology — Artificial intelligence) |
-| **Basel III Capital Adequacy** | Reduction in operational risk capital buffers based on documented complexity reduction | Standardized operational risk frameworks directly credit verified ledger resilience | **Basel Committee on Banking Supervision (BCBS)** |
+| **התקדמות ISO/IEC TC 307** | מעבר מדוחות טכניים ISO/TR לסכמות הסמכה פורמליות | מבסס את המסגרת המתוקננת הראשונה להסמכת מנועי פנקס מבוזר | **ISO/IEC JTC 1 / SC 44** (טכנולוגיות פנקס מבוזר) |
+| **שלב אב-הטיפוס של פרויקט Agorá** | למעלה מ-40 בנקים מסחריים משתתפים; בדיקת פנקס מאוחד לפיקדונות מטוקנים | מעביר סליקה חוצת-גבולות מהעברת הודעות (SWIFT) לסליקה אטומית מטוקנת | **מרכז החדשנות של בנק ההסדרים הבינלאומיים (BIS)** |
+| **ביקורת צד שלישי DORA סעיף 30** | 100% מספקי הצמתים ומארחי התשתית מבוקרים לפי קריטריוני אבטחה | מבטל "צמתי אימות צל"; מחייב שקיפות מלאה של שרשרת האספקה | **רשויות הפיקוח האירופיות (ESA)** |
+| **ISO/IEC 42001 (ממשל בינה מלאכותית)** | לוגי מודל ואימון של בינה מלאכותית הפכו לבלתי ניתנים לשינוי קריפטוגרפית על השרשרת | מנצל את הבלוקצ'יין כמרשם ראיות בלתי ניתן לשינוי ("עמוד שדרה של ביקורת") ללמידת מכונה | **ISO/IEC 42001:2023** (טכנולוגיית מידע — בינה מלאכותית) |
+| **הלימות הון Basel III** | הפחתת כריות הון לסיכון תפעולי בהתבסס על הפחתת מורכבות מתועדת | מסגרות סיכון תפעולי מתוקננות מזכות ישירות את חוסן הפנקס המאומת | **ועדת בזל לפיקוח בנקאי (BCBS)** |
 
-## 05. The AI "Audit Spine": Probabilistic Intelligence on Deterministic Infrastructure
+## 05. "עמוד השדרה של הביקורת" של הבינה המלאכותית: אינטליגנציה הסתברותית על תשתית דטרמיניסטית
 
-One of the most powerful strategic roles for a certified blockchain in 2026 is acting as an **"Audit Spine"** for artificial intelligence deployments. Modern financial systems are increasingly probabilistic. Credit scoring, real-time fraud detection, algorithmic trading, and autonomous customer interactions are driven by machine learning models that evolve, drift, and adapt over time. These models are non-deterministic: given the same input at two different times, they may yield different outputs due to dynamic weights and continuous training.
+אחד התפקידים האסטרטגיים החזקים ביותר של בלוקצ'יין מוסמך ב-2026 הוא לשמש כ**"עמוד שדרה של ביקורת"** לפריסות בינה מלאכותית. מערכות פיננסיות מודרניות הופכות הסתברותיות יותר ויותר. ניקוד אשראי, זיהוי הונאות בזמן אמת, מסחר אלגוריתמי ואינטראקציות לקוח אוטונומיות מונעים בידי מודלי למידת מכונה המתפתחים, נסחפים ומסתגלים לאורך זמן. מודלים אלו אינם דטרמיניסטיים: בהינתן אותו קלט בשני זמנים שונים, הם עשויים להניב פלטים שונים בשל משקלים דינמיים ואימון מתמשך.
 
-This non-determinism introduces a profound governance challenge under **ISO/IEC 42001 (AI Governance)** and **Model Risk Management (MRM)** standards (such as **US Federal Reserve SR 11-7** and **UK PRA SS1/23**): *How do you audit, explain, and defend decisions that are not strictly reproducible?*
+אי-דטרמיניזם זה מציב אתגר ממשל עמוק תחת **ISO/IEC 42001 (ממשל בינה מלאכותית)** ותקני ניהול סיכון המודל (MRM) (כגון **SR 11-7 של הבנק הפדרלי של ארה"ב** ו**SS1/23 של ה-PRA הבריטי**): *כיצד מבקרים, מסבירים ומגנים על החלטות שאינן ניתנות לשחזור מדויק?*
 
-A certified distributed ledger provides the deterministic counterweight. While AI models operate probabilistically, the certified blockchain records their parameters deterministically, establishing an unalterable evidentiary spine:
+פנקס מבוזר מוסמך מספק את משקל הנגד הדטרמיניסטי. היכן שמודלי בינה מלאכותית פועלים הסתברותית, הבלוקצ'יין המוסמך מתעד את הפרמטרים שלהם דטרמיניסטית, ומבסס עמוד שדרה ראייתי בלתי ניתן לשינוי:
 
-* **Model Versioning and Weight Anchoring**: Every deployed model version, its associated weights, and its training data checksums are hashed and written to the ledger at build-time, satisfying **SLSA Level 3** supply-chain requirements.  
-* **Contextual Input Logging**: When an AI model executes a critical decision (e.g., approving a loan or flagging a transaction), the exact contextual inputs and model hashes are written to the ledger, creating a tamper-evident history.  
-* **Auditability without Code Access**: If a regulator asks, "Why did your model reject this credit application on June 3?" the bank does not need to expose proprietary code or attempt to recreate the exact model state. It presents the cryptographically signed, on-chain ledger record of the inputs, weights, and validation state.
+* **גרסאות מודל ועיגון משקלים**: כל גרסת מודל שנפרסה, המשקלים המשויכים לה וסכומי הביקורת של נתוני האימון שלה מגובבים ונכתבים לפנקס בזמן הבנייה, בעמידה בדרישות שרשרת האספקה **SLSA Level 3**.  
+* **תיעוד קלט הקשרי**: כאשר מודל בינה מלאכותית מבצע החלטה קריטית (למשל אישור הלוואה או סימון עסקה), הקלטים ההקשריים המדויקים וגיבובי המודל נכתבים לפנקס, ויוצרים היסטוריה עמידה בפני חבלה.  
+* **יכולת ביקורת ללא גישה לקוד**: אם רגולטור שואל "מדוע המודל שלכם דחה בקשת אשראי זו ב-3 ביוני?", הבנק אינו נדרש לחשוף את הקוד הקנייני שלו ואף לא לנסות לשחזר את מצב המודל המדויק. הוא מציג את הרשומה החתומה קריפטוגרפית על השרשרת של הקלטים, המשקלים ומצב האימות.
 
-By anchoring the probabilistic decisions of machine learning models to the deterministic consensus of a certified blockchain, the institution creates a defensible, reconstructable, and independently verifiable timeline of automated actions.
+בעיגון ההחלטות ההסתברותיות של מודלי למידת מכונה לקונצנזוס הדטרמיניסטי של בלוקצ'יין מוסמך, המוסד יוצר ציר זמן של פעולות אוטומטיות הניתן להגנה, לשחזור ולאימות עצמאי.
 
-## 06. Visualizing the Certified Consensus-to-Audit Pipeline
+## 06. הדמיית צינור הקונצנזוס-לביקורת המוסמך
 
-The following sequence diagram illustrates the lifecycle of a transaction passing through a certified blockchain platform, demonstrating how validation gates, consensus integrity, smart contract execution, and telemetry emission interlock to produce board-ready regulatory evidence:
+דיאגרמת הרצף הבאה ממחישה את מחזור החיים של עסקה העוברת דרך פלטפורמת בלוקצ'יין מוסמכת, ומראה כיצד שערי אימות, שלמות קונצנזוס, ביצוע חוזים חכמים ופליטת טלמטריה משתלבים לייצור ראיות רגולטוריות מוכנות לדירקטוריון:
 
 ```mermaid
 sequenceDiagram
@@ -206,37 +202,37 @@ sequenceDiagram
     Engine-->>Telemetry: Emit OpenTelemetry traces (latency, state, validation status)
     Telemetry->>Telemetry: Record evidence to DORA Article 8 Register of Information
 ```
-The critical path for this transactional sequence requires that every validation, execution, and consensus step is cryptographically signed, ensuring end-to-end provenance. The regulator's auditor node synchronizes block state in real-time, eliminating the need for retrospective, manual financial reconciliation.
+הנתיב הקריטי של רצף עסקאות זה מחייב שכל צעד אימות, ביצוע וקונצנזוס יהיה חתום קריפטוגרפית, ומבטיח מקור מקצה לקצה. צומת המבקר של הרגולטור מסנכרן את מצב הבלוקים בזמן אמת, ומבטל את הצורך בהתאמה פיננסית ידנית ורטרוספקטיבית.
 
-## 07. The Boardroom Playbook for Senior Managers
+## 07. ספר המשחקים של הדירקטוריון למנהלים בכירים
 
-To successfully navigate the transition from organizational trust to infrastructural trust, bank executives and senior managers should immediately execute four key directives:
+כדי לנווט בהצלחה את המעבר מאמון ארגוני לאמון תשתיתי, מנהלי בנקים והנהלה בכירה צריכים לבצע מיד ארבע הנחיות מפתח:
 
-1. **Mandate Ledger Audits in Enterprise Risk Management (ERM)**: Enforce a policy that no distributed ledger platform—whether private, public, or consortium-based—may be deployed for critical or important functions (CIFs) unless it has been audited against the 5-layer **Certified Blockchain Index Architecture** (CMM Level 3 minimum).  
-2. **Integrate Blockchains as the ISO 42001 AI Evidentiary Spine**: Direct the Chief Risk Officer and Lead AI Architect to integrate all high-impact machine learning models with a certified blockchain, creating a tamper-evident audit ledger of model versions, weights, inputs, and decisions.  
-3. **Audit the Validator Node Supply Chain (DORA Article 30)**: Require the procurement division to audit all third-party entities hosting validator nodes or managing cloud hosting for DLT networks, mandating compliance with the same cybersecurity and operational resilience standards applied to the bank’s internal cloud nodes.  
-4. **Align Ledger Architectures with CPMI-IOSCO and BCBS 239**: Instruct the platform engineering team to align ledger output telemetry directly with **BCBS 239** data reporting requirements, and ensure the consensus and settlement finality parameters strictly comply with **CPMI-IOSCO Principles 8 and 9**.
+1. **חייבו ביקורות פנקס בניהול סיכוני מיזם (ERM)**: אכפו מדיניות שלפיה אף פלטפורמת פנקס מבוזר — פרטית, ציבורית או קונסורציום — לא תיפרס לפונקציות קריטיות או חשובות (CIF) ללא ביקורת מול **ארכיטקטורת מדד הבלוקצ'יינים המוסמכים** בת חמש השכבות (CMM רמה 3 לכל הפחות).  
+2. **שלבו בלוקצ'יינים כעמוד שדרה ראייתי של בינה מלאכותית לפי ISO 42001**: הנחו את מנהל הסיכונים הראשי ואת ארכיטקט הבינה המלאכותית המוביל לשלב את כל מודלי למידת המכונה בעלי ההשפעה הגבוהה עם בלוקצ'יין מוסמך, וליצור מרשם ביקורת עמיד בפני חבלה של גרסאות מודלים, משקלים, קלטים והחלטות.  
+3. **בקרו את שרשרת האספקה של צמתי האימות (DORA סעיף 30)**: דרשו שאגף הרכש יבקר את כל הצדדים השלישיים המארחים צמתי אימות או מנהלים אחסון ענן לרשתות DLT, תוך אכיפת אותם תקני אבטחת סייבר וחוסן תפעולי החלים על צמתי הענן הפנימיים של הבנק.  
+4. **התאימו ארכיטקטורות פנקס ל-CPMI-IOSCO ול-BCBS 239**: הנחו את צוות הנדסת הפלטפורמה להתאים את טלמטריית הפלט של הפנקס ישירות לדרישות דיווח הנתונים של **BCBS 239**, ולהבטיח שפרמטרי הקונצנזוס וסופיות הסליקה יעמדו בקפדנות ב**עקרונות 8 ו-9 של CPMI-IOSCO**.
 
-## 08. Frequently Asked Questions
+## 08. שאלות נפוצות
 
-**Is ISO/IEC TC 307 a certification standard?**  
-No. ISO/IEC TC 307 is a technical committee that establishes vocabulary, reference architectures, and security guidelines. While it defines "what good looks like" (guidance), the industry must operationalize these documents into formal, auditable certification schemes (assurance) to satisfy banking supervisors.
+**האם ISO/IEC TC 307 הוא תקן הסמכה?**  
+לא. ISO/IEC TC 307 היא ועדה טכנית המבססת אוצר מילים, ארכיטקטורות ייחוס והנחיות אבטחה. אף שהיא מגדירה "כיצד נראית מצוינות" (הנחיה), על התעשייה לתפעל מסמכים אלו לסכמות הסמכה פורמליות וניתנות לביקורת (הבטחה) כדי לספק את המפקחים הבנקאיים.
 
-**How does a certified blockchain support DORA compliance?**  
-Under DORA Article 5, bank boards bear direct, personal liability for technology resilience. A certified blockchain provides verifiable, cryptographic evidence of consensus integrity, validator supply-chain control, and smart contract safety, giving board members the documentable "reasonable steps" needed to defend against SM&CR personal liability claims.
+**כיצד בלוקצ'יין מוסמך תומך בעמידה ב-DORA?**  
+על פי סעיף 5 ל-DORA, דירקטוריוני בנקים נושאים באחריות אישית ישירה לחוסן טכנולוגי. בלוקצ'יין מוסמך מספק ראיות קריפטוגרפיות ניתנות לאימות לשלמות קונצנזוס, לבקרת שרשרת אספקת המאמתים ולבטיחות חוזים חכמים, ומעניק לחברי הדירקטוריון את "הצעדים הסבירים" הניתנים לתיעוד הנחוצים להגנה מפני תביעות אחריות אישית במסגרת SM&CR.
 
-What is the difference between a traditional ledger audit and a certified blockchain audit?  
-A traditional audit is retrospective, verifying manual entries and static files after transactions have cleared. A certified blockchain audit is continuous and real-time; the validator nodes, BFT consensus engine, and formally verified smart contracts are certified to execute transactions deterministically, emitting structured telemetry (OpenTelemetry) that continuously validates the system’s health.
+מה ההבדל בין ביקורת פנקס מסורתית לביקורת בלוקצ'יין מוסמך?  
+ביקורת מסורתית היא רטרוספקטיבית: היא מאמתת רישומים ידניים וקבצים סטטיים לאחר שהעסקאות נסלקו. ביקורת בלוקצ'יין מוסמך היא מתמשכת ובזמן אמת; צמתי האימות, מנוע הקונצנזוס BFT והחוזים החכמים המאומתים פורמלית מוסמכים לבצע עסקאות דטרמיניסטית, ופולטים טלמטריה מובנית (OpenTelemetry) המאמתת ברציפות את בריאות המערכת.
 
-Can public blockchains be certified for banking use?  
-In most jurisdictions, pure permissionless public blockchains fail to satisfy banking regulations due to the lack of validator identity verification, unpredictable gas/transaction costs, and non-deterministic finality (e.g., probabilistic proof-of-work/stake forks). Certified blockchains in banking typically utilize enterprise permissioned or highly regulated public-hybrid architectures where validator node operators are identified and audited financial entities.
+האם ניתן להסמיך בלוקצ'יינים ציבוריים לשימוש בנקאי?  
+ברוב תחומי השיפוט, בלוקצ'יינים ציבוריים חסרי-הרשאה לחלוטין אינם עומדים ברגולציות הבנקאיות בשל היעדר אימות זהות מאמתים, עלויות עסקה בלתי צפויות וסופיות בלתי דטרמיניסטית (למשל פיצולי proof-of-work/stake הסתברותיים). בלוקצ'יינים מוסמכים בבנקאות משתמשים בדרך כלל בארכיטקטורות ארגוניות מורשות או בארכיטקטורות ציבוריות-היברידיות מוסדרות בחומרה, שבהן מפעילי צמתי האימות הם ישויות פיננסיות מזוהות ומבוקרות.
 
-## 09. References
+## 09. מקורות
 
-* Basel Committee on Banking Supervision (BCBS), 2013. *Principles for effective risk data aggregation and reporting (BCBS 239)*. Basel: Bank for International Settlements. Available at: [https://www.bis.org/publ/bcbs239.pdf](https://www.bis.org/publ/bcbs239.pdf).  
-* Committee on Payments and Market Infrastructures and Technical Committee of the International Organization of Securities Commissions (CPMI-IOSCO), 2012. *Principles for financial market infrastructures*. Basel: Bank for International Settlements. Available at: [https://www.bis.org/cpmi/publ/d101a.pdf](https://www.bis.org/cpmi/publ/d101a.pdf).  
-* European Banking Authority (EBA), 2019. *EBA/GL/2019/02 — Guidelines on outsourcing arrangements*. Paris: EBA. Available at: [https://www.eba.europa.eu/regulation-and-policy/internal-governance/guidelines-on-outsourcing-arrangements](https://www.eba.europa.eu/regulation-and-policy/internal-governance/guidelines-on-outsourcing-arrangements).  
-* European Parliament and Council of the European Union, 2022. *Regulation (EU) 2022/2554 on digital operational resilience for the financial sector (DORA)*. Brussels: Official Journal of the European Union. Available at: [https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554).  
-* ISO/IEC JTC 1/SC 42, 2023. *ISO/IEC 42001:2023 — Information technology — Artificial intelligence — Management system*. Geneva: International Organization for Standardization. Available at: [https://www.iso.org/standard/81230.html](https://www.iso.org/standard/81230.html).  
-* ISO/IEC Technical Committee 307, 2020. *ISO/IEC 22739:2020 — Blockchain and distributed ledger technologies — Vocabulary*. Geneva: International Organization for Standardization. Available at: [https://www.iso.org/standard/73771.html](https://www.iso.org/standard/73771.html).  
-* National Institute of Standards and Technology (NIST), 2026. *First Three Finalized Post-Quantum Encryption Standards (FIPS 203, 204, and 205)*. Gaithersburg: U.S. Department of Commerce. Available at: [https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards](https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards).
+* ועדת בזל לפיקוח בנקאי (BCBS), 2013. *Principles for effective risk data aggregation and reporting (BCBS 239)*. בזל: בנק ההסדרים הבינלאומיים. זמין ב: [https://www.bis.org/publ/bcbs239.pdf](https://www.bis.org/publ/bcbs239.pdf).  
+* Committee on Payments and Market Infrastructures ו-Technical Committee of the International Organization of Securities Commissions (CPMI-IOSCO), 2012. *Principles for financial market infrastructures*. בזל: בנק ההסדרים הבינלאומיים. זמין ב: [https://www.bis.org/cpmi/publ/d101a.pdf](https://www.bis.org/cpmi/publ/d101a.pdf).  
+* הרשות הבנקאית האירופית (EBA), 2019. *EBA/GL/2019/02 — Guidelines on outsourcing arrangements*. פריז: EBA. זמין ב: [https://www.eba.europa.eu/regulation-and-policy/internal-governance/guidelines-on-outsourcing-arrangements](https://www.eba.europa.eu/regulation-and-policy/internal-governance/guidelines-on-outsourcing-arrangements).  
+* הפרלמנט האירופי ומועצת האיחוד האירופי, 2022. *תקנה (EU) 2022/2554 בדבר חוסן תפעולי דיגיטלי למגזר הפיננסי (DORA)*. בריסל: כתב העת הרשמי של האיחוד האירופי. זמין ב: [https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554).  
+* ISO/IEC JTC 1/SC 42, 2023. *ISO/IEC 42001:2023 — Information technology — Artificial intelligence — Management system*. ז'נבה: הארגון הבינלאומי לתקינה. זמין ב: [https://www.iso.org/standard/81230.html](https://www.iso.org/standard/81230.html).  
+* הוועדה הטכנית ISO/IEC 307, 2020. *ISO/IEC 22739:2020 — Blockchain and distributed ledger technologies — Vocabulary*. ז'נבה: הארגון הבינלאומי לתקינה. זמין ב: [https://www.iso.org/standard/73771.html](https://www.iso.org/standard/73771.html).  
+* National Institute of Standards and Technology (NIST), 2026. *First Three Finalized Post-Quantum Encryption Standards (FIPS 203, 204, and 205)*. גייתרסבורג: U.S. Department of Commerce. זמין ב: [https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards](https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards).
