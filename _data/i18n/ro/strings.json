@@ -51,5 +51,13 @@
   "feeds.channelDescription": "Articole în limba română: IA aplicată, plăți ISO 20022, criptografie post-cuantică și transformarea plăților wholesale.",
   "feeds.channelCopyright": "© Copyright 2007 - 2026 - Sebastien Rousseau. Toate drepturile rezervate.",
   "feeds.jsonFeedTitle": "Sebastien Rousseau — Articole (română)",
-  "newsletter.placeholder": "tu@banca.ro"
+  "newsletter.placeholder": "tu@banca.ro",
+
+  "home.readAs.heading": "Citește ca…",
+  "home.readAs.groupLabel": "Alege-ți perspectiva de lectură",
+  "home.readAs.announce": "Se afișează conținut pentru",
+  "home.readAs.everyone": "Toată lumea",
+  "home.readAs.boards": "Consilii de administrație",
+  "home.readAs.engineers": "Ingineri",
+  "home.readAs.regulators": "Autorități de reglementare"
 }

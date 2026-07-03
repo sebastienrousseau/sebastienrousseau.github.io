@@ -61,5 +61,13 @@
   "home.eyebrow.contact": "Связаться со мной",
   "home.cta.startConversation": "Начать разговор",
 
-  "listing.readLatest": "Читать последние исследования"
+  "listing.readLatest": "Читать последние исследования",
+
+  "home.readAs.heading": "Читать как…",
+  "home.readAs.groupLabel": "Выберите ракурс чтения",
+  "home.readAs.announce": "Показ материалов для",
+  "home.readAs.everyone": "Все",
+  "home.readAs.boards": "Советы директоров",
+  "home.readAs.engineers": "Инженеры",
+  "home.readAs.regulators": "Регуляторы"
 }

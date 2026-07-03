@@ -51,5 +51,13 @@
   "newsletter.submit": "Підписатися",
   "home.eyebrow.contact": "Зв’язатися",
   "home.cta.startConversation": "Розпочати розмову",
-  "listing.readLatest": "Читати останні дослідження"
+  "listing.readLatest": "Читати останні дослідження",
+
+  "home.readAs.heading": "Читати як…",
+  "home.readAs.groupLabel": "Оберіть ракурс читання",
+  "home.readAs.announce": "Показ матеріалів для",
+  "home.readAs.everyone": "Усі",
+  "home.readAs.boards": "Ради директорів",
+  "home.readAs.engineers": "Інженери",
+  "home.readAs.regulators": "Регулятори"
 }

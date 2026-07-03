@@ -51,5 +51,13 @@
   "newsletter.submit": "訂閱",
   "home.eyebrow.contact": "聯絡我",
   "home.cta.startConversation": "開啟對話",
-  "listing.readLatest": "閱讀最新研究"
+  "listing.readLatest": "閱讀最新研究",
+
+  "home.readAs.heading": "閱讀視角…",
+  "home.readAs.groupLabel": "選擇您的閱讀視角",
+  "home.readAs.announce": "正在顯示面向以下對象的內容",
+  "home.readAs.everyone": "所有人",
+  "home.readAs.boards": "董事會",
+  "home.readAs.engineers": "工程師",
+  "home.readAs.regulators": "監管機構"
 }

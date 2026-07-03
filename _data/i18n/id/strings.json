@@ -51,5 +51,13 @@
   "newsletter.submit": "Berlangganan",
   "home.eyebrow.contact": "Hubungi",
   "home.cta.startConversation": "Mulai percakapan",
-  "listing.readLatest": "Baca riset terbaru"
+  "listing.readLatest": "Baca riset terbaru",
+
+  "home.readAs.heading": "Baca sebagai…",
+  "home.readAs.groupLabel": "Pilih sudut pandang baca Anda",
+  "home.readAs.announce": "Menampilkan konten untuk",
+  "home.readAs.everyone": "Semua orang",
+  "home.readAs.boards": "Dewan direksi",
+  "home.readAs.engineers": "Insinyur",
+  "home.readAs.regulators": "Regulator"
 }

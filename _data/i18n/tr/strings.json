@@ -61,5 +61,13 @@
   "home.eyebrow.contact": "İletişime geç",
   "home.cta.startConversation": "Bir görüşme başlat",
 
-  "listing.readLatest": "Güncel araştırmaları oku"
+  "listing.readLatest": "Güncel araştırmaları oku",
+
+  "home.readAs.heading": "Şu gözle oku…",
+  "home.readAs.groupLabel": "Okuma bakış açınızı seçin",
+  "home.readAs.announce": "İçerik gösteriliyor",
+  "home.readAs.everyone": "Herkes",
+  "home.readAs.boards": "Yönetim kurulları",
+  "home.readAs.engineers": "Mühendisler",
+  "home.readAs.regulators": "Düzenleyiciler"
 }

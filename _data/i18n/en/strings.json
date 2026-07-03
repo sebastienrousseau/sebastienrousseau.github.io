@@ -61,5 +61,13 @@
   "home.eyebrow.contact": "Get in touch",
   "home.cta.startConversation": "Start a conversation",
 
-  "listing.readLatest": "Read latest research"
+  "listing.readLatest": "Read latest research",
+
+  "home.readAs.heading": "Read as…",
+  "home.readAs.groupLabel": "Choose your reading lens",
+  "home.readAs.announce": "Now showing content for",
+  "home.readAs.everyone": "Everyone",
+  "home.readAs.boards": "Boards",
+  "home.readAs.engineers": "Engineers",
+  "home.readAs.regulators": "Regulators"
 }

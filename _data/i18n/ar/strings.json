@@ -61,5 +61,13 @@
   "home.eyebrow.contact": "تواصل معي",
   "home.cta.startConversation": "ابدأ محادثة",
 
-  "listing.readLatest": "اقرأ أحدث الأبحاث"
+  "listing.readLatest": "اقرأ أحدث الأبحاث",
+
+  "home.readAs.heading": "اقرأ بصفتك…",
+  "home.readAs.groupLabel": "اختر منظور القراءة",
+  "home.readAs.announce": "عرض المحتوى لـ",
+  "home.readAs.everyone": "الجميع",
+  "home.readAs.boards": "مجالس الإدارة",
+  "home.readAs.engineers": "المهندسون",
+  "home.readAs.regulators": "الجهات التنظيمية"
 }

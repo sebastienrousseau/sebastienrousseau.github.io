@@ -61,5 +61,13 @@
   "home.eyebrow.contact": "Me contacter",
   "home.cta.startConversation": "Démarrer une conversation",
 
-  "listing.readLatest": "Lire les recherches récentes"
+  "listing.readLatest": "Lire les recherches récentes",
+
+  "home.readAs.heading": "Lire en tant que…",
+  "home.readAs.groupLabel": "Choisissez votre angle de lecture",
+  "home.readAs.announce": "Contenu affiché pour",
+  "home.readAs.everyone": "Tout le monde",
+  "home.readAs.boards": "Conseils d’administration",
+  "home.readAs.engineers": "Ingénieurs",
+  "home.readAs.regulators": "Régulateurs"
 }
