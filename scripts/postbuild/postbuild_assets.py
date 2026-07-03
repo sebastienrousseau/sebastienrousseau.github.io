@@ -361,15 +361,15 @@ def wrap_cdn_images_in_transform(html: str) -> tuple[str, int]:
     out = _LINK_PRELOAD_IMAGE_RE.sub(patch_preload, out)
     return out, n
 jsonld_re = re.compile(
-    r'<script[^>]*type=["\']?application/ld\+json["\']?[^>]*>([\s\S]*?)</script>',
+    r'<script[^>]*type=["\']?application/ld\+json["\']?[^>]*>([\s\S]*?)</script\s*>',
     re.IGNORECASE,
 )
 speculation_re = re.compile(
-    r'<script[^>]*type=["\']?speculationrules["\']?[^>]*>([\s\S]*?)</script>',
+    r'<script[^>]*type=["\']?speculationrules["\']?[^>]*>([\s\S]*?)</script\s*>',
     re.IGNORECASE,
 )
 _inline_script_re = re.compile(
-    r"<script(?![^>]*\bsrc=)(?![^>]*\btype=)[^>]*>([\s\S]*?)</script>",
+    r"<script(?![^>]*\bsrc=)(?![^>]*\btype=)[^>]*>([\s\S]*?)</script\s*>",
     re.IGNORECASE,
 )
 csp_tag_re = re.compile(
