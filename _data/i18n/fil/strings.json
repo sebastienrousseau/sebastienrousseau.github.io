@@ -61,5 +61,23 @@
   "home.eyebrow.contact": "Makipag-ugnayan",
   "home.cta.startConversation": "Magsimula ng usapan",
 
-  "listing.readLatest": "Basahin ang pinakabagong research"
+  "listing.readLatest": "Basahin ang pinakabagong research",
+
+  "scorecard.heading": "Suriin ang inyong institusyon",
+  "scorecard.intro": "Itakda ang bawat dimensyon ayon sa kasalukuyang kahandaan ng inyong institusyon. Ang pinagsamang iskor ay tinitimbang ayon sa materyalidad sa regulasyon.",
+  "scorecard.dimensionsLegend": "Mga dimensyon",
+  "scorecard.composite": "Iskor ng pinagsamang indeks",
+  "scorecard.tableCaption": "Inyong mga iskor ayon sa dimensyon",
+  "scorecard.colDimension": "Dimensyon",
+  "scorecard.colLevel": "Antas ng kahandaan",
+  "scorecard.colWeight": "Timbang",
+  "scorecard.colScore": "Iskor",
+  "scorecard.reset": "I-reset",
+  "scorecard.share": "Kopyahin ang link na maibabahagi",
+  "scorecard.shareCopied": "Nakopya ang link sa clipboard",
+  "scorecard.download": "I-download ang PNG",
+  "scorecard.downloaded": "Na-download ang larawan ng scorecard",
+  "scorecard.radarTitle": "Radar ng kahandaan",
+  "scorecard.methodology": "Basahin ang buong metodolohiya ng indeks",
+  "scorecard.fallback": "Ang mga dimensyon ng kahandaan ay nakatala sa talahanayan sa itaas. Paganahin ang JavaScript upang suriin ang inyong institusyon nang interaktibo at i-export ang resulta."
 }

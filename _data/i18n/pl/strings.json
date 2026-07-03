@@ -61,5 +61,23 @@
   "home.eyebrow.contact": "Skontaktuj się",
   "home.cta.startConversation": "Rozpocznij rozmowę",
 
-  "listing.readLatest": "Przeczytaj najnowsze badania"
+  "listing.readLatest": "Przeczytaj najnowsze badania",
+
+  "scorecard.heading": "Oceń swoją instytucję",
+  "scorecard.intro": "Ustaw każdy wymiar zgodnie z obecną dojrzałością Twojej instytucji. Wynik złożony jest ważony według istotności regulacyjnej.",
+  "scorecard.dimensionsLegend": "Wymiary",
+  "scorecard.composite": "Wynik indeksu złożonego",
+  "scorecard.tableCaption": "Twoje wyniki według wymiaru",
+  "scorecard.colDimension": "Wymiar",
+  "scorecard.colLevel": "Poziom dojrzałości",
+  "scorecard.colWeight": "Waga",
+  "scorecard.colScore": "Wynik",
+  "scorecard.reset": "Resetuj",
+  "scorecard.share": "Kopiuj link do udostępnienia",
+  "scorecard.shareCopied": "Link skopiowany do schowka",
+  "scorecard.download": "Pobierz PNG",
+  "scorecard.downloaded": "Pobrano obraz karty wyników",
+  "scorecard.radarTitle": "Radar gotowości",
+  "scorecard.methodology": "Przeczytaj pełną metodologię indeksu",
+  "scorecard.fallback": "Wymiary dojrzałości zestawiono w tabeli powyżej. Włącz JavaScript, aby interaktywnie ocenić swoją instytucję i wyeksportować wynik."
 }

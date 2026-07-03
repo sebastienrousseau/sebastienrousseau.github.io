@@ -51,5 +51,23 @@
   "feeds.channelDescription": "Awọn akọle Yorùbá: AI tó wúlò, ìsanwó ISO 20022, kírípítógíráfì lẹ́yìn-kuántọ́mù, àti àtúnṣe ètò ìsanwó ńláńlá.",
   "feeds.channelCopyright": "© Copyright 2007 - 2026 - Sebastien Rousseau. Gbogbo ẹtọ ti wa ni ipamọ.",
   "feeds.jsonFeedTitle": "Sebastien Rousseau — Awọn Akole (Yorùbá)",
-  "newsletter.placeholder": "iwo@banki.com.ng"
+  "newsletter.placeholder": "iwo@banki.com.ng",
+
+  "scorecard.heading": "Ṣàyẹ̀wò ilé-iṣẹ́ rẹ",
+  "scorecard.intro": "Ṣètò ojúlóye kọ̀ọ̀kan ní ìbámu pẹ̀lú ìdàgbàsókè lọ́wọ́lọ́wọ́ ilé-iṣẹ́ rẹ. Àpapọ̀ àmì ni a ṣe ìwọ̀n ní ìbámu pẹ̀lú pàtàkì ìlànà.",
+  "scorecard.dimensionsLegend": "Àwọn ojúlóye",
+  "scorecard.composite": "Àmì àtọ́ka àpapọ̀",
+  "scorecard.tableCaption": "Àwọn àmì rẹ ní ojúlóye kọ̀ọ̀kan",
+  "scorecard.colDimension": "Ojúlóye",
+  "scorecard.colLevel": "Ìpele ìdàgbàsókè",
+  "scorecard.colWeight": "Ìwọ̀n",
+  "scorecard.colScore": "Àmì",
+  "scorecard.reset": "Tún ṣètò",
+  "scorecard.share": "Ṣàdàkọ ọ̀nà ìjápọ̀ tí a lè pín",
+  "scorecard.shareCopied": "A ti ṣàdàkọ ọ̀nà ìjápọ̀ sí pátákó",
+  "scorecard.download": "Gba PNG sílẹ̀",
+  "scorecard.downloaded": "A ti gba àwòrán káàdì àmì sílẹ̀",
+  "scorecard.radarTitle": "Rádà ìmúrasílẹ̀",
+  "scorecard.methodology": "Ka gbogbo ọ̀nà ìṣirò àtọ́ka",
+  "scorecard.fallback": "A ṣàkójọ àwọn ojúlóye ìdàgbàsókè sí orí tábìlì lókè. Mú JavaScript ṣiṣẹ́ láti ṣàyẹ̀wò ilé-iṣẹ́ rẹ lọ́nà ìbáṣepọ̀ àti láti kó àbájáde jáde."
 }

@@ -51,5 +51,23 @@
   "feeds.channelDescription": "Articole în limba română: IA aplicată, plăți ISO 20022, criptografie post-cuantică și transformarea plăților wholesale.",
   "feeds.channelCopyright": "© Copyright 2007 - 2026 - Sebastien Rousseau. Toate drepturile rezervate.",
   "feeds.jsonFeedTitle": "Sebastien Rousseau — Articole (română)",
-  "newsletter.placeholder": "tu@banca.ro"
+  "newsletter.placeholder": "tu@banca.ro",
+
+  "scorecard.heading": "Evaluați-vă instituția",
+  "scorecard.intro": "Setați fiecare dimensiune conform maturității actuale a instituției dumneavoastră. Scorul compozit este ponderat în funcție de materialitatea de reglementare.",
+  "scorecard.dimensionsLegend": "Dimensiuni",
+  "scorecard.composite": "Scorul indicelui compozit",
+  "scorecard.tableCaption": "Scorurile dumneavoastră pe dimensiuni",
+  "scorecard.colDimension": "Dimensiune",
+  "scorecard.colLevel": "Nivel de maturitate",
+  "scorecard.colWeight": "Pondere",
+  "scorecard.colScore": "Scor",
+  "scorecard.reset": "Resetare",
+  "scorecard.share": "Copiați linkul partajabil",
+  "scorecard.shareCopied": "Link copiat în clipboard",
+  "scorecard.download": "Descărcați PNG",
+  "scorecard.downloaded": "Imaginea fișei de scor a fost descărcată",
+  "scorecard.radarTitle": "Radar de pregătire",
+  "scorecard.methodology": "Citiți metodologia completă a indicelui",
+  "scorecard.fallback": "Dimensiunile de maturitate sunt tabelate mai sus. Activați JavaScript pentru a vă evalua instituția interactiv și a exporta rezultatul."
 }

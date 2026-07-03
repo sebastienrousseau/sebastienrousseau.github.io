@@ -60,6 +60,18 @@ rm -rf _posts_build
 # Static Site Generator doesn't pick up theme-init.js as a managed asset; we ship it as-is.
 cp -f _layouts/theme-init.js public/theme-init.js
 
+# Interactive <index-scorecard> web component (progressive enhancement — see
+# docs/adr/0001-index-scorecard-architecture.md). Stage the component + its
+# pure scoring core into public/_csp/ *before* postbuild runs so the existing
+# asset pipeline minifies them, computes their SRI digest, and the injection
+# pass can stamp integrity="sha256-…" on the module <script>. script-src 'self'
+# already permits same-origin modules; no CSP change is required.
+if [[ -d assets/js/index-scorecard ]]; then
+  mkdir -p public/_csp
+  cp -f assets/js/index-scorecard/scoring.js public/_csp/scoring.js
+  cp -f assets/js/index-scorecard/index-scorecard.js public/_csp/index-scorecard.js
+fi
+
 # Mirror .well-known/ into the build output so the OpenPGP Web Key
 # Directory (WKD) endpoint is served at
 #   https://sebastienrousseau.com/.well-known/openpgpkey/hu/<hash>
@@ -289,6 +301,17 @@ if command -v node >/dev/null 2>&1; then
     --test-coverage-functions=100 \
     --test-coverage-include='workers/pdf-proxy.js' \
     workers/test_pdf_proxy.mjs
+  # index-scorecard scoring core — the single source of truth for the
+  # self-assessment composite maths + URL-state codec, imported unchanged by
+  # the browser component. Golden-file pinned + gated at 100/100/100 so the
+  # number a reader shares can never silently drift.
+  node --test \
+    --experimental-test-coverage \
+    --test-coverage-lines=100 \
+    --test-coverage-branches=100 \
+    --test-coverage-functions=100 \
+    --test-coverage-include='assets/js/index-scorecard/scoring.js' \
+    tests/unit/index-scorecard/scoring.test.mjs
 fi
 
 # Deployment is the public/ Pages artifact uploaded by CI

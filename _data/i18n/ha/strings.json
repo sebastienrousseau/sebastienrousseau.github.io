@@ -51,5 +51,23 @@
   "feeds.channelDescription": "Labaran Hausa: AI mai amfani, biyan kuɗi na ISO 20022, kiriftografi bayan kwantum da sauye-sauyen biyan kuɗi na manyan.",
   "feeds.channelCopyright": "© Copyright 2007 - 2026 - Sebastien Rousseau. An kiyaye duk hakkokin.",
   "feeds.jsonFeedTitle": "Sebastien Rousseau — Labarai (Hausa)",
-  "newsletter.placeholder": "kai@banki.com.ng"
+  "newsletter.placeholder": "kai@banki.com.ng",
+
+  "scorecard.heading": "Auna cibiyar ku",
+  "scorecard.intro": "Saita kowane yanki bisa matakin balagar cibiyar ku na yanzu. Ana auna jimillar maki bisa muhimmancin ka'idoji.",
+  "scorecard.dimensionsLegend": "Yankuna",
+  "scorecard.composite": "Jimillar makin ma'aunin",
+  "scorecard.tableCaption": "Makin ku bisa yanki",
+  "scorecard.colDimension": "Yanki",
+  "scorecard.colLevel": "Matakin balaga",
+  "scorecard.colWeight": "Nauyi",
+  "scorecard.colScore": "Maki",
+  "scorecard.reset": "Sake saitawa",
+  "scorecard.share": "Kwafi hanyar haɗi mai raba",
+  "scorecard.shareCopied": "An kwafi hanyar haɗi zuwa allo",
+  "scorecard.download": "Sauke PNG",
+  "scorecard.downloaded": "An sauke hoton katin maki",
+  "scorecard.radarTitle": "Radar shirye-shiryen",
+  "scorecard.methodology": "Karanta cikakkiyar hanyar ma'aunin",
+  "scorecard.fallback": "An lissafta yankunan balaga a teburin da ke sama. Kunna JavaScript don auna cibiyar ku ta hanyar hulɗa da fitar da sakamakon."
 }

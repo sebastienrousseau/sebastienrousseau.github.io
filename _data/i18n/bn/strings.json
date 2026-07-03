@@ -51,5 +51,23 @@
   "feeds.channelDescription": "বাংলা প্রবন্ধ: প্রায়োগিক এআই, ISO 20022 পেমেন্ট, পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি এবং পাইকারি পেমেন্টের রূপান্তর।",
   "feeds.channelCopyright": "© Copyright 2007 - 2026 - Sebastien Rousseau. সর্বস্বত্ব সংরক্ষিত।",
   "feeds.jsonFeedTitle": "Sebastien Rousseau — প্রবন্ধ (বাংলা)",
-  "newsletter.placeholder": "apni@bank.bd"
+  "newsletter.placeholder": "apni@bank.bd",
+
+  "scorecard.heading": "আপনার প্রতিষ্ঠানকে মূল্যায়ন করুন",
+  "scorecard.intro": "প্রতিটি মাত্রা আপনার প্রতিষ্ঠানের বর্তমান পরিপক্বতা অনুযায়ী নির্ধারণ করুন। যৌগিক স্কোরটি নিয়ন্ত্রক গুরুত্ব অনুসারে ভারিত।",
+  "scorecard.dimensionsLegend": "মাত্রাসমূহ",
+  "scorecard.composite": "যৌগিক সূচক স্কোর",
+  "scorecard.tableCaption": "মাত্রা অনুযায়ী আপনার স্কোর",
+  "scorecard.colDimension": "মাত্রা",
+  "scorecard.colLevel": "পরিপক্বতার স্তর",
+  "scorecard.colWeight": "ওজন",
+  "scorecard.colScore": "স্কোর",
+  "scorecard.reset": "রিসেট",
+  "scorecard.share": "শেয়ারযোগ্য লিঙ্ক কপি করুন",
+  "scorecard.shareCopied": "লিঙ্ক ক্লিপবোর্ডে কপি হয়েছে",
+  "scorecard.download": "PNG ডাউনলোড করুন",
+  "scorecard.downloaded": "স্কোরকার্ডের ছবি ডাউনলোড হয়েছে",
+  "scorecard.radarTitle": "প্রস্তুতি রাডার",
+  "scorecard.methodology": "সম্পূর্ণ সূচক পদ্ধতি পড়ুন",
+  "scorecard.fallback": "পরিপক্বতার মাত্রাগুলি উপরের সারণিতে দেওয়া হয়েছে। আপনার প্রতিষ্ঠানকে ইন্টারঅ্যাকটিভভাবে মূল্যায়ন এবং ফলাফল রপ্তানি করতে JavaScript সক্রিয় করুন।"
 }

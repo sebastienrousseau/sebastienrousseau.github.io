@@ -305,6 +305,12 @@ The six dimensional scores combine into a composite index using the following re
 
 A composite score below 50 means the institution cannot defend its current agentic AI posture to an SR 11-7 examiner, a PRA on-site review, or an EU AI Act supervisory assessment. A score of 50–74 means controls exist but are not yet continuous or evidence-ready. A score of 75–100 means governance is a competitive asset, not a compliance cost.
 
+## Score Your Institution
+
+The six dimensions above are a static reference. The interactive scorecard below turns them into a self-assessment: set each dimension to your institution's current maturity level and read the weighted composite score, maturity band, and readiness radar. Results encode into the page URL so they can be shared or bookmarked, and can be exported as an image — no data leaves your browser.
+
+<div class="index-scorecard" data-index="agentic-ai-index-banks-2026"></div>
+
 ## Current Signals to Track
 
 | Signal | What It Means for Banks | Source |

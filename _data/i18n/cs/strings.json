@@ -51,5 +51,23 @@
   "newsletter.submit": "Přihlásit se k odběru",
   "home.eyebrow.contact": "Kontaktovat",
   "home.cta.startConversation": "Zahájit konverzaci",
-  "listing.readLatest": "Číst nejnovější výzkum"
+  "listing.readLatest": "Číst nejnovější výzkum",
+
+  "scorecard.heading": "Ohodnoťte svou instituci",
+  "scorecard.intro": "Nastavte každou dimenzi podle aktuální vyspělosti vaší instituce. Souhrnné skóre je váženo podle regulatorní významnosti.",
+  "scorecard.dimensionsLegend": "Dimenze",
+  "scorecard.composite": "Souhrnné indexové skóre",
+  "scorecard.tableCaption": "Vaše skóre podle dimenzí",
+  "scorecard.colDimension": "Dimenze",
+  "scorecard.colLevel": "Úroveň vyspělosti",
+  "scorecard.colWeight": "Váha",
+  "scorecard.colScore": "Skóre",
+  "scorecard.reset": "Obnovit",
+  "scorecard.share": "Kopírovat sdílený odkaz",
+  "scorecard.shareCopied": "Odkaz zkopírován do schránky",
+  "scorecard.download": "Stáhnout PNG",
+  "scorecard.downloaded": "Obrázek hodnoticí karty stažen",
+  "scorecard.radarTitle": "Radar připravenosti",
+  "scorecard.methodology": "Přečtěte si úplnou metodiku indexu",
+  "scorecard.fallback": "Dimenze vyspělosti jsou uvedeny v tabulce výše. Povolte JavaScript, abyste mohli interaktivně ohodnotit svou instituci a exportovat výsledek."
 }

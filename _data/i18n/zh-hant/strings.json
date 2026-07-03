@@ -51,5 +51,23 @@
   "newsletter.submit": "訂閱",
   "home.eyebrow.contact": "聯絡我",
   "home.cta.startConversation": "開啟對話",
-  "listing.readLatest": "閱讀最新研究"
+  "listing.readLatest": "閱讀最新研究",
+
+  "scorecard.heading": "評估您的機構",
+  "scorecard.intro": "根據貴機構目前的成熟度設定每個維度。綜合評分依監管重要性加權。",
+  "scorecard.dimensionsLegend": "維度",
+  "scorecard.composite": "綜合指數評分",
+  "scorecard.tableCaption": "依維度劃分的評分",
+  "scorecard.colDimension": "維度",
+  "scorecard.colLevel": "成熟度等級",
+  "scorecard.colWeight": "權重",
+  "scorecard.colScore": "評分",
+  "scorecard.reset": "重設",
+  "scorecard.share": "複製可分享連結",
+  "scorecard.shareCopied": "連結已複製到剪貼簿",
+  "scorecard.download": "下載 PNG",
+  "scorecard.downloaded": "評分卡圖片已下載",
+  "scorecard.radarTitle": "就緒度雷達圖",
+  "scorecard.methodology": "閱讀完整的指數方法論",
+  "scorecard.fallback": "成熟度維度已於上表列出。請啟用 JavaScript 以互動方式評估貴機構並匯出結果。"
 }

@@ -61,5 +61,23 @@
   "home.eyebrow.contact": "संपर्क करें",
   "home.cta.startConversation": "बातचीत शुरू करें",
 
-  "listing.readLatest": "नवीनतम शोध पढ़ें"
+  "listing.readLatest": "नवीनतम शोध पढ़ें",
+
+  "scorecard.heading": "अपने संस्थान का मूल्यांकन करें",
+  "scorecard.intro": "प्रत्येक आयाम को अपने संस्थान की वर्तमान परिपक्वता के अनुसार निर्धारित करें। समग्र स्कोर नियामक महत्ता के अनुसार भारित होता है।",
+  "scorecard.dimensionsLegend": "आयाम",
+  "scorecard.composite": "समग्र सूचकांक स्कोर",
+  "scorecard.tableCaption": "आयाम के अनुसार आपके स्कोर",
+  "scorecard.colDimension": "आयाम",
+  "scorecard.colLevel": "परिपक्वता स्तर",
+  "scorecard.colWeight": "भार",
+  "scorecard.colScore": "स्कोर",
+  "scorecard.reset": "रीसेट करें",
+  "scorecard.share": "साझा करने योग्य लिंक कॉपी करें",
+  "scorecard.shareCopied": "लिंक क्लिपबोर्ड पर कॉपी हो गया",
+  "scorecard.download": "PNG डाउनलोड करें",
+  "scorecard.downloaded": "स्कोरकार्ड छवि डाउनलोड हो गई",
+  "scorecard.radarTitle": "तैयारी रडार",
+  "scorecard.methodology": "पूर्ण सूचकांक कार्यप्रणाली पढ़ें",
+  "scorecard.fallback": "परिपक्वता आयाम ऊपर तालिका में दिए गए हैं। अपने संस्थान का इंटरैक्टिव रूप से मूल्यांकन करने और परिणाम निर्यात करने के लिए JavaScript सक्षम करें।"
 }

@@ -61,5 +61,23 @@
   "home.eyebrow.contact": "Get in touch",
   "home.cta.startConversation": "Start a conversation",
 
-  "listing.readLatest": "Read latest research"
+  "listing.readLatest": "Read latest research",
+
+  "scorecard.heading": "Score your institution",
+  "scorecard.intro": "Set each dimension to your institution's current maturity. The composite score is weighted by regulatory materiality.",
+  "scorecard.dimensionsLegend": "Dimensions",
+  "scorecard.composite": "Composite index score",
+  "scorecard.tableCaption": "Your scores by dimension",
+  "scorecard.colDimension": "Dimension",
+  "scorecard.colLevel": "Maturity level",
+  "scorecard.colWeight": "Weight",
+  "scorecard.colScore": "Score",
+  "scorecard.reset": "Reset",
+  "scorecard.share": "Copy shareable link",
+  "scorecard.shareCopied": "Link copied to clipboard",
+  "scorecard.download": "Download PNG",
+  "scorecard.downloaded": "Scorecard image downloaded",
+  "scorecard.radarTitle": "Readiness radar",
+  "scorecard.methodology": "Read the full index methodology",
+  "scorecard.fallback": "The maturity dimensions are tabulated above. Enable JavaScript to score your institution interactively and export the result."
 }

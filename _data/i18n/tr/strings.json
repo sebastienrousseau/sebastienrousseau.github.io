@@ -61,5 +61,23 @@
   "home.eyebrow.contact": "İletişime geç",
   "home.cta.startConversation": "Bir görüşme başlat",
 
-  "listing.readLatest": "Güncel araştırmaları oku"
+  "listing.readLatest": "Güncel araştırmaları oku",
+
+  "scorecard.heading": "Kurumunuzu değerlendirin",
+  "scorecard.intro": "Her boyutu kurumunuzun mevcut olgunluk düzeyine göre ayarlayın. Bileşik puan, düzenleyici önemliliğe göre ağırlıklandırılır.",
+  "scorecard.dimensionsLegend": "Boyutlar",
+  "scorecard.composite": "Bileşik endeks puanı",
+  "scorecard.tableCaption": "Boyuta göre puanlarınız",
+  "scorecard.colDimension": "Boyut",
+  "scorecard.colLevel": "Olgunluk düzeyi",
+  "scorecard.colWeight": "Ağırlık",
+  "scorecard.colScore": "Puan",
+  "scorecard.reset": "Sıfırla",
+  "scorecard.share": "Paylaşılabilir bağlantıyı kopyala",
+  "scorecard.shareCopied": "Bağlantı panoya kopyalandı",
+  "scorecard.download": "PNG indir",
+  "scorecard.downloaded": "Puan kartı görüntüsü indirildi",
+  "scorecard.radarTitle": "Hazırlık radarı",
+  "scorecard.methodology": "Endeksin tam metodolojisini okuyun",
+  "scorecard.fallback": "Olgunluk boyutları yukarıda tablo halinde verilmiştir. Kurumunuzu etkileşimli olarak değerlendirmek ve sonucu dışa aktarmak için JavaScript'i etkinleştirin."
 }

@@ -61,5 +61,23 @@
   "home.eyebrow.contact": "Entrar em contato",
   "home.cta.startConversation": "Iniciar uma conversa",
 
-  "listing.readLatest": "Ler as pesquisas recentes"
+  "listing.readLatest": "Ler as pesquisas recentes",
+
+  "scorecard.heading": "Avalie sua instituição",
+  "scorecard.intro": "Defina cada dimensão de acordo com a maturidade atual da sua instituição. A pontuação composta é ponderada pela materialidade regulatória.",
+  "scorecard.dimensionsLegend": "Dimensões",
+  "scorecard.composite": "Pontuação do índice composto",
+  "scorecard.tableCaption": "Suas pontuações por dimensão",
+  "scorecard.colDimension": "Dimensão",
+  "scorecard.colLevel": "Nível de maturidade",
+  "scorecard.colWeight": "Peso",
+  "scorecard.colScore": "Pontuação",
+  "scorecard.reset": "Redefinir",
+  "scorecard.share": "Copiar link compartilhável",
+  "scorecard.shareCopied": "Link copiado para a área de transferência",
+  "scorecard.download": "Baixar PNG",
+  "scorecard.downloaded": "Imagem do scorecard baixada",
+  "scorecard.radarTitle": "Radar de prontidão",
+  "scorecard.methodology": "Leia a metodologia completa do índice",
+  "scorecard.fallback": "As dimensões de maturidade estão tabuladas acima. Ative o JavaScript para avaliar sua instituição de forma interativa e exportar o resultado."
 }

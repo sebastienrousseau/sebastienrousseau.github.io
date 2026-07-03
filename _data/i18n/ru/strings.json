@@ -61,5 +61,23 @@
   "home.eyebrow.contact": "Связаться со мной",
   "home.cta.startConversation": "Начать разговор",
 
-  "listing.readLatest": "Читать последние исследования"
+  "listing.readLatest": "Читать последние исследования",
+
+  "scorecard.heading": "Оцените ваше учреждение",
+  "scorecard.intro": "Установите для каждого измерения текущий уровень зрелости вашего учреждения. Сводная оценка взвешивается по регуляторной значимости.",
+  "scorecard.dimensionsLegend": "Измерения",
+  "scorecard.composite": "Сводная оценка индекса",
+  "scorecard.tableCaption": "Ваши оценки по измерениям",
+  "scorecard.colDimension": "Измерение",
+  "scorecard.colLevel": "Уровень зрелости",
+  "scorecard.colWeight": "Вес",
+  "scorecard.colScore": "Оценка",
+  "scorecard.reset": "Сбросить",
+  "scorecard.share": "Скопировать ссылку для обмена",
+  "scorecard.shareCopied": "Ссылка скопирована в буфер обмена",
+  "scorecard.download": "Скачать PNG",
+  "scorecard.downloaded": "Изображение оценочной карты загружено",
+  "scorecard.radarTitle": "Радар готовности",
+  "scorecard.methodology": "Прочитать полную методологию индекса",
+  "scorecard.fallback": "Измерения зрелости сведены в таблицу выше. Включите JavaScript, чтобы интерактивно оценить ваше учреждение и экспортировать результат."
 }

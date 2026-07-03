@@ -61,5 +61,23 @@
   "home.eyebrow.contact": "تواصل معي",
   "home.cta.startConversation": "ابدأ محادثة",
 
-  "listing.readLatest": "اقرأ أحدث الأبحاث"
+  "listing.readLatest": "اقرأ أحدث الأبحاث",
+
+  "scorecard.heading": "قيّم مؤسستك",
+  "scorecard.intro": "اضبط كل بُعد وفق مستوى النضج الحالي لمؤسستك. يُرجّح المؤشر المركّب بحسب الأهمية التنظيمية.",
+  "scorecard.dimensionsLegend": "الأبعاد",
+  "scorecard.composite": "درجة المؤشر المركّب",
+  "scorecard.tableCaption": "درجاتك بحسب البُعد",
+  "scorecard.colDimension": "البُعد",
+  "scorecard.colLevel": "مستوى النضج",
+  "scorecard.colWeight": "الوزن",
+  "scorecard.colScore": "الدرجة",
+  "scorecard.reset": "إعادة تعيين",
+  "scorecard.share": "نسخ رابط قابل للمشاركة",
+  "scorecard.shareCopied": "تم نسخ الرابط إلى الحافظة",
+  "scorecard.download": "تنزيل PNG",
+  "scorecard.downloaded": "تم تنزيل صورة بطاقة التقييم",
+  "scorecard.radarTitle": "رادار الجاهزية",
+  "scorecard.methodology": "اقرأ منهجية المؤشر الكاملة",
+  "scorecard.fallback": "أبعاد النضج مُدرجة في الجدول أعلاه. فعّل JavaScript لتقييم مؤسستك بشكل تفاعلي وتصدير النتيجة."
 }

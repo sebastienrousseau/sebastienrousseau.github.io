@@ -61,5 +61,23 @@
   "home.eyebrow.contact": "Me contacter",
   "home.cta.startConversation": "Démarrer une conversation",
 
-  "listing.readLatest": "Lire les recherches récentes"
+  "listing.readLatest": "Lire les recherches récentes",
+
+  "scorecard.heading": "Évaluez votre établissement",
+  "scorecard.intro": "Définissez chaque dimension selon la maturité actuelle de votre établissement. Le score composite est pondéré par la matérialité réglementaire.",
+  "scorecard.dimensionsLegend": "Dimensions",
+  "scorecard.composite": "Score de l’indice composite",
+  "scorecard.tableCaption": "Vos scores par dimension",
+  "scorecard.colDimension": "Dimension",
+  "scorecard.colLevel": "Niveau de maturité",
+  "scorecard.colWeight": "Pondération",
+  "scorecard.colScore": "Score",
+  "scorecard.reset": "Réinitialiser",
+  "scorecard.share": "Copier le lien partageable",
+  "scorecard.shareCopied": "Lien copié dans le presse-papiers",
+  "scorecard.download": "Télécharger le PNG",
+  "scorecard.downloaded": "Image de la fiche de score téléchargée",
+  "scorecard.radarTitle": "Radar de maturité",
+  "scorecard.methodology": "Lire la méthodologie complète de l’indice",
+  "scorecard.fallback": "Les dimensions de maturité sont présentées dans le tableau ci-dessus. Activez JavaScript pour évaluer votre établissement de manière interactive et exporter le résultat."
 }

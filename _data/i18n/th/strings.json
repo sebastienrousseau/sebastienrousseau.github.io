@@ -51,5 +51,23 @@
   "newsletter.submit": "สมัครรับ",
   "home.eyebrow.contact": "ติดต่อ",
   "home.cta.startConversation": "เริ่มสนทนา",
-  "listing.readLatest": "อ่านงานวิจัยล่าสุด"
+  "listing.readLatest": "อ่านงานวิจัยล่าสุด",
+
+  "scorecard.heading": "ประเมินสถาบันของคุณ",
+  "scorecard.intro": "กำหนดแต่ละมิติตามระดับความพร้อมปัจจุบันของสถาบันของคุณ คะแนนรวมถ่วงน้ำหนักตามนัยสำคัญด้านการกำกับดูแล",
+  "scorecard.dimensionsLegend": "มิติ",
+  "scorecard.composite": "คะแนนดัชนีรวม",
+  "scorecard.tableCaption": "คะแนนของคุณตามมิติ",
+  "scorecard.colDimension": "มิติ",
+  "scorecard.colLevel": "ระดับความพร้อม",
+  "scorecard.colWeight": "น้ำหนัก",
+  "scorecard.colScore": "คะแนน",
+  "scorecard.reset": "รีเซ็ต",
+  "scorecard.share": "คัดลอกลิงก์สำหรับแชร์",
+  "scorecard.shareCopied": "คัดลอกลิงก์ไปยังคลิปบอร์ดแล้ว",
+  "scorecard.download": "ดาวน์โหลด PNG",
+  "scorecard.downloaded": "ดาวน์โหลดรูปภาพสกอร์การ์ดแล้ว",
+  "scorecard.radarTitle": "เรดาร์ความพร้อม",
+  "scorecard.methodology": "อ่านระเบียบวิธีดัชนีฉบับเต็ม",
+  "scorecard.fallback": "มิติความพร้อมแสดงเป็นตารางด้านบน เปิดใช้งาน JavaScript เพื่อประเมินสถาบันของคุณแบบโต้ตอบและส่งออกผลลัพธ์"
 }
