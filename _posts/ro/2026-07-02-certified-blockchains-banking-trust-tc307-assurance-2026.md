@@ -1,6 +1,6 @@
 ---
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
-banner_alt: "Abstract distributed-ledger lattice resolving into a certified audit spine — visualising the shift from retrospective entity audits to continuous, cryptographically-verifiable blockchain assurance for wholesale banking"
+banner_alt: "Rețea abstractă de registru distribuit cristalizându-se într-o coloană vertebrală de audit certificată — ilustrând trecerea de la auditurile retrospective pe entitate la o asigurare blockchain continuă și verificabilă criptografic pentru banca de gros"
 banner_height: "1280"
 banner_width: "1920"
 banner: "https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp"
@@ -9,7 +9,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "July 2, 2026"
-description: "The 2026 Certified Blockchain Index gives banks a 5-level Capability Maturity Model to certify distributed-ledger governance, consensus integrity, cryptography, smart-contract assurance, and audit observability against DORA, CPMI-IOSCO PFMI, ISO/IEC TC 307, ISO 42001 and Basel III."
+description: "Indexul Blockchain-urilor Certificate 2026 oferă băncilor un model de maturitate a capacităților pe cinci niveluri pentru a certifica guvernanța registrului distribuit, integritatea consensului, criptografia, asigurarea contractelor inteligente și observabilitatea auditului față de DORA, PFMI CPMI-IOSCO, ISO/IEC TC 307, ISO 42001 și Basel III."
 format-detection: "telephone=no"
 hreflang: "ro"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -35,9 +35,9 @@ rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
 schema: "FAQPage, Article"
-seo_title: "From Evidence to Truth: Certified Blockchains and Banking Trust"
+seo_title: "De la dovadă la adevăr: blockchain-uri certificate și încredere bancară"
 short_name: "sebastienrousseau"
-subtitle: "Why certifiable ledger assurance — not immutability alone — will define institutional trust in 2026: scoring governance, consensus integrity, cryptography, smart contracts, and observability against DORA, ISO/IEC TC 307, and CPMI-IOSCO PFMI."
+subtitle: "De ce asigurarea certificabilă a registrului — și nu doar imuabilitatea — va defini încrederea instituțională în 2026: punctarea guvernanței, integrității consensului, criptografiei, contractelor inteligente și observabilității față de DORA, ISO/IEC TC 307 și PFMI CPMI-IOSCO."
 tags: "agentic AI, AI governance, banking, autonomy tiers, model risk, SR 11-7, EU AI Act, FSB, IOSCO, MAS, IMDA, control plane, audit log, DORA, McKinsey, Stanford AI Index"
 theme-color: "0, 83, 191"
 title: "The Agentic AI Index for Banks in 2026: Measuring Autonomy"
@@ -63,7 +63,7 @@ apple_touch_icon_sizes: "192x192"
 apple-mobile-web-app-capable: "yes"
 apple-mobile-web-app-status-bar-inset: "black"
 apple-mobile-web-app-status-bar-style: "black-translucent"
-apple-mobile-web-app-title: "Certified Blockchains 2026"
+apple-mobile-web-app-title: "Blockchain-uri certificate 2026"
 apple-touch-fullscreen: "yes"
 msapplication-navbutton-color: "0, 83, 191"
 twitter_card: "summary_large_image"
@@ -84,103 +84,99 @@ site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 ---
 
-<!-- translation-stub: replace this body in Claude Code -->
+# De la dovadă la adevăr: de ce blockchain-urile certificate vor defini următoarea eră a încrederii bancare
 
-> _Translation pending — read the [English original](/2026-07-02-certified-blockchains-banking-trust-tc307-assurance-2026/) while we localise._
+## Rezumat strategic (esențialul)
 
-# From Evidence to Truth: Why Certified Blockchains Will Define the Next Era of Banking Trust
+Banca de gros și tranzacțiile globale se află, în 2026, într-un punct de inflexiune istoric. Pe măsură ce serviciile financiare migrează către rețele de compensare nativ digitale și în timp real, iar inteligența artificială introduce un nedeterminism probabilistic, modelele tradiționale de asigurare — analogice și retrospective (precum auditurile statice bazate pe entitate) — nu mai satisfac cerințele moderne de management al riscului și de responsabilitate fiduciară.
 
-## Executive Summary & Strategic Context (TL;DR)
+Comitetul Tehnic ISO/IEC TC 307 a stabilit o bază normalizată pentru tehnologiile registrului distribuit. Totuși, o adopție instituțională autentică necesită trecerea de la orientare descriptivă la o asigurare a blockchain-ului prescriptivă și certificabilă independent. Prin punctarea guvernanței registrului, a integrității consensului, a siguranței contractelor inteligente și a agilității criptografice față de un model riguros de maturitate a capacităților (CMM) pe cinci niveluri, băncile pot trece de la presupuneri fragmentare, specifice fiecărui furnizor, la un adevăr financiar certificabil și auditabil de către consiliu.
 
-Wholesale banking and global transactions in 2026 sit at a historic inflection point. As financial services transition to natively digital, real-time clearing networks, and as artificial intelligence introduces probabilistic non-determinism, the traditional analogue, retrospective assurance models (such as static entity-based audits) fail to meet modern risk management and fiduciary demands.
+## Concluzii principale
 
-ISO/IEC Technical Committee 307 (TC 307) has established a standardized baseline for distributed ledger technologies. However, true corporate and institutional adoption requires shifting from descriptive guidance to prescriptive, independently certifiable blockchain assurance. By scoring ledger governance, consensus integrity, smart contract safety, and cryptographic agility against a strict 5-level Capability Maturity Model (CMM), banks can move from patchwork, vendor-specific assumptions to certifiable, board-auditable financial truth.
+* **Decalajul de fricțiune fiduciară**: astăzi știm să certificăm banca (Basel III), cloud-ul (ISO 27001) și sistemele de guvernanță a IA (ISO 42001), dar încă nu știm să certificăm registrul distribuit care determină tot mai mult ce este adevărat. Această asimetrie este o vulnerabilitate operațională majoră.  
+* **DORA impune responsabilitate fiduciară directă**: în temeiul articolului 5 din DORA, consiliile de administrație ale băncilor poartă o răspundere personală directă și nedelegabilă pentru reziliența operațională a tuturor implementărilor terților și de registru, cu sancțiuni personale severe în cadrul regimului SM&CR pentru eșecuri.  
+* **Coloana vertebrală de audit a IA**: acolo unde învățarea automată produce rezultate neproductibile și probabilistice, un blockchain certificat oferă o captură deterministă a stării. Înregistrarea on-chain a versiunilor de modele, a intrărilor și a deciziilor de validare satisface ISO 42001 și standardele de management al riscului de model.  
+* **Indexul Blockchain-urilor Certificate**: acest index formalizează guvernanța, consensul, contractele inteligente și observabilitatea într-un tablou de bord verificabil și pregătit pentru audit, pe o scală CMM de la 0 la 5, traducând metrici inginerești în declarații de apetit pentru risc aprobate de consiliu.
 
-## Key Takeaways
+## 01. Decalajul de fricțiune fiduciară în banca digitală
 
-* **The Fiduciary Frictional Gap**: We can currently certify the bank (Basel III), the cloud (ISO 27001), and the AI governance systems (ISO 42001), but we cannot yet certify the distributed ledger that increasingly determines what is true. This asymmetry is a major operational vulnerability.  
-* **DORA Enforces Direct Fiduciary Responsibility**: Under DORA Article 5, bank boards of directors bear direct, non-delegable personal liability for the operational resilience of all third-party and ledger deployments, with severe SM&CR personal penalties for failures.  
-* **The AI Audit Spine**: While machine learning introduces non-reproducible, probabilistic outcomes, a certified blockchain provides deterministic state capture. Recording model versions, inputs, and validation decisions on-chain satisfies ISO 42001 and Model Risk Management standards.  
-* **The Certified Blockchain Index**: This index formalizes governance, consensus, smart contracts, and observability into a verifiable, audit-ready scorecard on a 0-to-5 CMM scale, translating engineering metrics into board-approved Risk Appetite Statements.
+În banca clasică, încrederea este relațională, instituțională și retrospectivă. Ea depinde de auditori terți independenți care examinează starea financiară în momente fixe, reconciliind discrepanțele dintre silozurile de registre bilaterale. În piețele în timp real și orientate pe API din 2026, acest model introduce latențe prohibitive și riscuri structurale.
 
-## 01. The Fiduciary Frictional Gap in Digital Banking
+Când tranzacțiile se decontează instantaneu, rezervele de lichiditate intraday sunt gestionate dinamic de gateway-uri API, iar proprietatea activelor este tokenizată pe registre partajate, auditurile retrospective devin exerciții criminalistice în loc de controale preventive. Fiduciarii nu se mai pot limita la certificarea entității juridice. Trebuie să certifice însuși substratul digital.
 
-In classical banking, trust is relational, institutional, and retrospective. It depends on independent, third-party auditors reviewing financial state at static points in time, reconciling discrepancies across bilateral ledger silos. In the real-time, API-driven markets of 2026, this model introduces prohibitive latencies and structural risks.
+În prezent, băncile operează sub o asimetrie arhitecturală flagrantă:
 
-When transactions settle instantly, intraday liquidity pools are managed dynamically by API gateways, and asset ownership is tokenised across shared ledgers, retrospective audits become forensic exercises rather than preventative controls. Fiduciaries can no longer rely solely on certifying the corporate entity. They must certify the digital substrate itself.
+1. **Infrastructură cloud certificată**: nodurile hardware, containerele virtualizate și centrele de date fizice sunt validate față de controalele ISO/IEC 27001 și SOC 2 Type II.  
+2. **Procese de management certificate**: politicile de risc operațional, planurile de continuitate a activității și implementările algoritmice sunt guvernate de cadre de risc stricte.  
+3. **Motoare de registru necertificate**: mecanismele de consens distribuit, lanțurile de aprovizionare ale nodurilor validatoare, limitele contractelor inteligente și modelele de guvernanță a rețelei rămân la presupuneri necertificate, personalizate sau specifice consorțiului.
 
-Currently, banks operate under a glaring architectural asymmetry:
+Această asimetrie este un punct critic de eșec. O bancă poate rula o aplicație validată într-un container cloud securizat și certificat ISO 27001, dar dacă acel container scrie într-un registru distribuit cu control centralizat al validatorilor, parametri de consens vulnerabili sau contracte inteligente neauditate, integritatea tranzacției este compromisă. Pentru a acoperi acest decalaj, motorul de registru însuși trebuie să devină un obiect de asigurare certificabil.
 
-1. **Certified Cloud Infrastructure**: Hardware nodes, virtualized containers, and physical datacenters are validated against ISO/IEC 27001 and SOC 2 Type II controls.  
-2. **Certified Management Processes**: Operational risk policies, business continuity plans, and algorithmic deployments are governed under strict risk frameworks.  
-3. **Uncertified Ledger Engines**: The core distributed consensus mechanisms, validator node supply chains, smart contract boundaries, and network governance models are left to uncertified, custom, or consortium-specific assumptions.
+## 02. Baza de normalizare ISO/IEC TC 307
 
-This asymmetry is a major failure point. A bank can run a validated application inside a secure, ISO 27001-certified cloud container, but if that container writes to a distributed ledger with centralized validator control, vulnerable consensus parameters, or un-audited smart contracts, the transaction integrity is compromised. To bridge this gap, the ledger engine itself must become a certifiable assurance object.
+Munca fundamentală necesară pentru normalizarea registrelor distribuite este realizată de Comitetul Tehnic ISO/IEC TC 307 (Tehnologii blockchain și de registru distribuit). În loc să trateze blockchain-ul ca pe un protocol tehnic izolat, TC 307 îl abordează ca pe o infrastructură instituțională de încredere, organizându-și activitatea în jurul a cinci piloni fundamentali:
 
-## 02. The ISO/IEC TC 307 Standardization Baseline
+1. **Taxonomie și vocabular (ISO 22739)**: stabilește o nomenclatură comună, asigurând definiții juridice și operaționale coerente între jurisdicții, scheme financiare și instituții.  
+2. **Arhitectură de referință (ISO/TR 23245)**: definește limitele, straturile, fluxurile de date și componentele funcționale ale unui sistem de registru distribuit conform.  
+3. **Securitate, confidențialitate și contracte inteligente (ISO/TR 23244 / ISO 23613)**: stabilește orientări de securitate de bază pentru sistemele de active digitale și detaliază bunele practici de atenuare a vulnerabilităților contractelor inteligente și de guvernanță a ciclului lor de viață.  
+4. **Cadre de interoperabilitate**: abordează mecanismele de schimb de date și active între rețele de registre eterogene, prevenind formarea de silozuri tokenizate izolate.  
+5. **Identitate descentralizată și ancore de încredere**: integrează identificatorii criptografici bazați pe registru cu infrastructuri formale de chei publice (PKI) și registre autorizate de stat.
 
-The foundational work required to standardize distributed ledgers is being established by ISO/IEC Technical Committee 307 (TC 307) (Blockchain and distributed ledger technologies). Rather than treating blockchain as an isolated technical protocol, TC 307 addresses it as an institutional trust infrastructure, organizing its work across five core pillars:
+În ansamblu, TC 307 semnalează trecerea DLT de la o alegere inginerească personalizată la o disciplină arhitecturală normalizată. Totuși, TC 307 rămâne preponderent descriptiv. Definește cum arată excelența (orientare), dar nu oferă protocolul prescriptiv de verificare (asigurare) de care ofițerii de risc și supraveghetorii au nevoie pentru a autoriza implementările în producție ale funcțiilor critice sau importante (CIF).
 
-1. **Taxonomy and Vocabulary (ISO 22739)**: Establishes a common nomenclature, ensuring consistent legal and operational definitions across different jurisdictions, financial schemes, and institutions.  
-2. **Reference Architecture (ISO/TR 23245)**: Defines the boundaries, layers, data flows, and functional components of a compliant distributed ledger system.  
-3. **Security, Privacy, and Smart Contracts (ISO/TR 23244 / ISO 23613)**: Establishes baseline security guidelines for digital asset systems and details best practices for smart contract vulnerability mitigation and lifecycle governance.  
-4. **Interoperability Frameworks**: Addresses the data and asset-exchange mechanisms between heterogeneous ledger networks, preventing the formation of isolated tokenised silos.  
-5. **Decentralized Identity and Trust Anchors**: Integrates ledger-based cryptographic identifiers with formal public-key infrastructures (PKI) and state-authorized registries.
+## 03. Orientare versus asigurare: distincția fiduciară
 
-Collectively, TC 307 signals the transition of DLT from a custom engineering choice into a standardized architectural discipline. However, TC 307 remains primarily descriptive. It defines what good looks like (guidance), but it does not provide the prescriptive verification protocol (assurance) that risk officers and supervisors require to authorize production deployments of critical or important functions (CIFs).
+Participanții la piețele financiare nu implementează tehnologia pentru că este inovatoare sau elegantă; o implementează când poate fi guvernată, auditată, apărată și reconciliată cu cerințele de rezervă de capital. De aceea normalizarea în bancă se rezolvă natural în două straturi:
 
-## 03. Guidance vs. Assurance: The Fiduciary Distinction
+* **Orientare (cadrul)**: schițează bunele practici, țintele de referință și liniile directoare arhitecturale (de ex. ISO/IEC TC 307, cadrele NIST).  
+* **Asigurare (dovada)**: oferă dovezi independente, continue și verificabile de terți că un cadru este implementat și funcționează conform proiectării (de ex. certificare ISO 27001, audituri SOC 2, examinări de reglementare).
 
-Financial market participants do not deploy technology because it is innovative or elegant; they deploy it when it can be governed, audited, defended, and reconciled with capital reserve requirements. This is why standardisation in banking naturally resolves into two layers:
+Bazarea pe un consens de registru necertificat în timp ce se certifică infrastructura cloud este o lacună de reglementare critică. Un blockchain „imuabil" nu este neapărat „de încredere instituțional". Imuabilitatea garantează doar că datele introduse rămân neschimbate; nu verifică dacă nodurile validatoare sunt sigure, dacă protocolul de consens este rezilient la coluziune, dacă logica contractelor inteligente este solidă matematic sau dacă gestionarea cheilor criptografice respectă mandatele post-cuantice.
 
-* **Guidance (The Framework)**: Outlines best practices, reference targets, and architectural guidelines (e.g., ISO/IEC TC 307, NIST frameworks).  
-* **Assurance (The Proof)**: Provides independent, continuous, and third-party-verifiable evidence that the framework is implemented and operating as designed (e.g., ISO 27001 certification, SOC 2 audits, regulatory examinations).
+Pentru a închide acest decalaj, Indexul Blockchain-urilor Certificate 2026 formalizează aceste cerințe într-un model cuantificabil de maturitate a capacităților (CMM), mapat pe reglementările bancare mondiale.
 
-Relying on uncertified ledger consensus while certifying cloud infrastructure is a critical regulatory gap. A blockchain that is "immutable" is not necessarily "institutionally trusted." Immutability only guarantees that the data entered is unchanged; it does not verify that the validator nodes are secure, the consensus protocol is resilient against collusion, the smart contract logic is mathematically sound, or the cryptographic key management complies with post-quantum mandates.
+## 04. Indexul Blockchain-urilor Certificate 2026
 
-To close this gap, the 2026 Certified Blockchain Index formalizes these requirements into a quantifiable Capability Maturity Model (CMM) mapped to global banking regulations.
+Pentru a permite conducerii superioare să evalueze și să certifice platformele de registru, acest index structurează infrastructura de registru distribuit în cinci straturi operaționale auditabile, punctate pe o scală CMM de la 0 la 5.
 
-## 04. The 2026 Certified Blockchain Index
+## Tabelul 1: arhitectura Indexului Blockchain-urilor Certificate
 
-To enable senior management to evaluate and certify their ledger platforms, this index structures the distributed ledger infrastructure into five auditable operational layers, scored on a 0-to-5 CMM scale.
-
-## Table 1: The Certified Blockchain Index Architecture
-
-| Index Layer | Capability Maturity Level (CMM) | Technical and Operational Metric | Regulatory / Fiduciary Control Reference |
+| Strat al indexului | Nivel de maturitate (CMM) | Metrică tehnică și operațională | Referință de control de reglementare / fiduciar |
 | :---- | :---- | :---- | :---- |
-| **Ledger Governance** | **Level 0**: Ad-hoc consortium**Level 3**: Automated validator vetting & rotation**Level 5**: Decentralized, multi-party cryptographic identity anchoring | % of validator nodes operated by vetted financial entities; mean time to resolve validator disputes; geographic distribution of nodes | **DORA Article 5** (Governance and Organisation); **CPMI-IOSCO PFMI Principle 2** (Governance) & **Principle 3** (Framework for the comprehensive management of risks) |
-| **Consensus Integrity** | **Level 0**: Single-node or opaque POW**Level 3**: Audited BFT with deterministic finality**Level 5**: Multi-jurisdictional, formally verified consensus with continuous latency monitoring | Max tolerable consensus latency; collusion-resistance threshold; uptime SLA under simulated node partition | **DORA Article 6** (ICT Risk Management Framework); **CPMI-IOSCO PFMI Principle 8** (Settlement Finality) |
-| **Identity & Cryptography** | **Level 0**: Weak RSA / ECDSA keys**Level 3**: Multi-sig with HSM-backed key management**Level 5**: Quantum-safe hybrid keys (FIPS 203 ML-KEM) and zero-knowledge privacy gates | % of ledger transactions signed with HSM-backed keys; PQC migration readiness score; ZK-proof latency | **NIST FIPS 203 / 204**; **ISO/IEC 27001** (Information Security Management) |
-| **Smart Contract Assurance** | **Level 0**: Un-audited solidity scripts**Level 3**: Automated compiler validation & external audit**Level 5**: Formally verified, immutable smart contracts with circuit-breaker upgrades | % of smart contracts with mathematical formal verification; count of compiler warnings; vulnerability scan coverage | **EBA Guidelines on Outsourcing Arrangements** (Paragraphs 81, 113-117); **DORA Article 30** (Minimum Contractual Clauses) |
-| **Audit & Observability** | **Level 0**: Manual log scraping**Level 3**: Structured OTel traces & read-only auditor nodes**Level 5**: Automated, continuous reconciliation to the Article 8 register | % of transactions covered by OpenTelemetry traces; latency from ledger block-commit to auditor-node sync | **BCBS 239** (Risk Data Aggregation); **DORA Article 8** (Register of Information / ITS Schemas) |
+| **Guvernanța registrului** | **Nivel 0**: consorțiu ad-hoc**Nivel 3**: verificare și rotație automatizate ale validatorilor**Nivel 5**: ancorare descentralizată, multiparte a identității criptografice | % de noduri validatoare operate de entități financiare verificate; timpul mediu de soluționare a disputelor între validatori; distribuția geografică a nodurilor | **DORA articolul 5** (Guvernanță și organizare); **CPMI-IOSCO PFMI Principiul 2** (Guvernanță) și **Principiul 3** (Cadru pentru gestionarea integrală a riscurilor) |
+| **Integritatea consensului** | **Nivel 0**: nod unic sau PoW opac**Nivel 3**: BFT auditat cu finalitate deterministă**Nivel 5**: consens multi-jurisdicțional, verificat formal, cu monitorizare continuă a latenței | latența maximă tolerabilă a consensului; pragul de rezistență la coluziune; SLA de disponibilitate la partiționarea simulată a nodurilor | **DORA articolul 6** (Cadru de gestionare a riscului TIC); **CPMI-IOSCO PFMI Principiul 8** (Finalitatea decontării) |
+| **Identitate și criptografie** | **Nivel 0**: chei RSA / ECDSA slabe**Nivel 3**: multi-semnătură cu gestionare a cheilor susținută de HSM**Nivel 5**: chei hibride rezistente la cuantic (FIPS 203 ML-KEM) și porți de confidențialitate cu cunoștințe zero | % de tranzacții ale registrului semnate cu chei susținute de HSM; scorul de pregătire pentru migrarea PQC; latența dovezilor ZK | **NIST FIPS 203 / 204**; **ISO/IEC 27001** (Managementul securității informației) |
+| **Asigurarea contractelor inteligente** | **Nivel 0**: scripturi Solidity neauditate**Nivel 3**: validare automatizată a compilatorului și audit extern**Nivel 5**: contracte inteligente imuabile și verificate formal, cu actualizări de tip întrerupător | % de contracte inteligente cu verificare formală matematică; numărul de avertismente ale compilatorului; acoperirea scanărilor de vulnerabilități | **Ghidurile EBA privind externalizarea** (paragrafele 81, 113-117); **DORA articolul 30** (Clauze contractuale minime) |
+| **Audit și observabilitate** | **Nivel 0**: extragere manuală a jurnalelor**Nivel 3**: urme OTel structurate și noduri de auditor doar-citire**Nivel 5**: reconciliere automatizată și continuă cu registrul de la articolul 8 | % de tranzacții acoperite de urme OpenTelemetry; latența de la confirmarea blocului la sincronizarea nodului de auditor | **BCBS 239** (Agregarea datelor de risc); **DORA articolul 8** (Registrul de informații / scheme ITS) |
 
-## Table 2: Key Trust Signals Mapped to Global Banking Standards
+## Tabelul 2: semnale-cheie de încredere mapate pe standardele bancare mondiale
 
-| Signal / Benchmark | Metric | Impact on Banking Platforms | Regulatory Source |
+| Semnal / reper | Metrică | Impact asupra platformelor bancare | Sursă de reglementare |
 | :---- | :---- | :---- | :---- |
-| **ISO/IEC TC 307 Progress** | Transition from ISO/TR technical reports to formal certification schemes | Establishes the first standardized framework for certifying distributed ledger engines | **ISO/IEC JTC 1 / SC 44** (Distributed Ledger Technologies) |
-| **Project Agorá Prototype Phase** | 40+ participating commercial banks; unified ledger testing of tokenised deposits | Shifting cross-border clearing from messaging (SWIFT) to atomic tokenised settlement | **Bank for International Settlements (BIS) Innovation Hub** |
-| **DORA Article 30 Third-Party Audit** | 100% of node providers and infrastructure hosts audited against security criteria | Eliminates "shadow validator nodes"; mandates total supply-chain transparency | **European Supervisory Authorities (ESA)** |
-| **ISO/IEC 42001 (AI Governance)** | Cryptographically immutabilized AI model and training logs on-chain | Employs blockchain as the immutable evidentiary ledger ("audit spine") for machine learning | **ISO/IEC 42001:2023** (Information technology — Artificial intelligence) |
-| **Basel III Capital Adequacy** | Reduction in operational risk capital buffers based on documented complexity reduction | Standardized operational risk frameworks directly credit verified ledger resilience | **Basel Committee on Banking Supervision (BCBS)** |
+| **Progresul ISO/IEC TC 307** | Trecerea de la rapoartele tehnice ISO/TR la scheme formale de certificare | Stabilește primul cadru normalizat pentru certificarea motoarelor de registru distribuit | **ISO/IEC JTC 1 / SC 44** (Tehnologii de registru distribuit) |
+| **Faza de prototip a Proiectului Agorá** | Peste 40 de bănci comerciale participante; testarea unui registru unificat de depozite tokenizate | Mută compensarea transfrontalieră de la mesagerie (SWIFT) la decontarea atomică tokenizată | **Innovation Hub al Băncii Reglementelor Internaționale (BRI)** |
+| **Auditul terților DORA articolul 30** | 100 % dintre furnizorii de noduri și gazdele de infrastructură auditați conform criteriilor de securitate | Elimină „nodurile validatoare din umbră"; impune transparența totală a lanțului de aprovizionare | **Autoritățile Europene de Supraveghere (AES)** |
+| **ISO/IEC 42001 (guvernanța IA)** | Jurnale de modele și de antrenare a IA făcute imuabile criptografic on-chain | Utilizează blockchain-ul ca registru probatoriu imuabil („coloana vertebrală de audit") pentru învățarea automată | **ISO/IEC 42001:2023** (Tehnologia informației — Inteligență artificială) |
+| **Adecvarea capitalului Basel III** | Reducerea tampoanelor de capital pentru risc operațional bazată pe reducerea documentată a complexității | Cadrele normalizate de risc operațional creditează direct reziliența verificată a registrului | **Comitetul de la Basel pentru Supraveghere Bancară (BCBS)** |
 
-## 05. The AI "Audit Spine": Probabilistic Intelligence on Deterministic Infrastructure
+## 05. „Coloana vertebrală de audit" a IA: inteligență probabilistică pe infrastructură deterministă
 
-One of the most powerful strategic roles for a certified blockchain in 2026 is acting as an **"Audit Spine"** for artificial intelligence deployments. Modern financial systems are increasingly probabilistic. Credit scoring, real-time fraud detection, algorithmic trading, and autonomous customer interactions are driven by machine learning models that evolve, drift, and adapt over time. These models are non-deterministic: given the same input at two different times, they may yield different outputs due to dynamic weights and continuous training.
+Unul dintre cele mai puternice roluri strategice ale unui blockchain certificat în 2026 este acela de **„coloană vertebrală de audit"** pentru implementările de inteligență artificială. Sistemele financiare moderne sunt tot mai probabilistice. Scoringul de credit, detectarea fraudelor în timp real, tranzacționarea algoritmică și interacțiunile autonome cu clienții sunt conduse de modele de învățare automată care evoluează, derivează și se adaptează în timp. Aceste modele sunt nedeterministe: la aceeași intrare în două momente diferite, pot produce ieșiri diferite din cauza ponderilor dinamice și a antrenării continue.
 
-This non-determinism introduces a profound governance challenge under **ISO/IEC 42001 (AI Governance)** and **Model Risk Management (MRM)** standards (such as **US Federal Reserve SR 11-7** and **UK PRA SS1/23**): *How do you audit, explain, and defend decisions that are not strictly reproducible?*
+Acest nedeterminism ridică o provocare profundă de guvernanță în temeiul **ISO/IEC 42001 (guvernanța IA)** și al standardelor de management al riscului de model (MRM) (precum **SR 11-7 a Rezervei Federale a SUA** și **SS1/23 a PRA din Marea Britanie**): *cum auditezi, explici și aperi decizii care nu sunt strict reproductibile?*
 
-A certified distributed ledger provides the deterministic counterweight. While AI models operate probabilistically, the certified blockchain records their parameters deterministically, establishing an unalterable evidentiary spine:
+Un registru distribuit certificat oferă contraponderea deterministă. Acolo unde modelele de IA operează probabilistic, blockchain-ul certificat le înregistrează parametrii determinist, stabilind o coloană vertebrală probatorie inalterabilă:
 
-* **Model Versioning and Weight Anchoring**: Every deployed model version, its associated weights, and its training data checksums are hashed and written to the ledger at build-time, satisfying **SLSA Level 3** supply-chain requirements.  
-* **Contextual Input Logging**: When an AI model executes a critical decision (e.g., approving a loan or flagging a transaction), the exact contextual inputs and model hashes are written to the ledger, creating a tamper-evident history.  
-* **Auditability without Code Access**: If a regulator asks, "Why did your model reject this credit application on June 3?" the bank does not need to expose proprietary code or attempt to recreate the exact model state. It presents the cryptographically signed, on-chain ledger record of the inputs, weights, and validation state.
+* **Versionarea modelelor și ancorarea ponderilor**: fiecare versiune de model implementată, ponderile asociate și sumele de control ale datelor de antrenare sunt hash-uite și scrise în registru la momentul construirii, satisfăcând cerințele de lanț de aprovizionare **SLSA Level 3**.  
+* **Jurnalizarea contextuală a intrărilor**: când un model de IA execută o decizie critică (de ex. aprobarea unui împrumut sau semnalarea unei tranzacții), intrările contextuale exacte și hash-urile modelului sunt scrise în registru, creând un istoric rezistent la manipulare.  
+* **Auditabilitate fără acces la cod**: dacă un reglementator întreabă „de ce a respins modelul vostru această cerere de credit pe 3 iunie?", banca nu trebuie să-și expună codul proprietar și nici să încerce să recreeze starea exactă a modelului. Prezintă înregistrarea on-chain, semnată criptografic, a intrărilor, ponderilor și stării de validare.
 
-By anchoring the probabilistic decisions of machine learning models to the deterministic consensus of a certified blockchain, the institution creates a defensible, reconstructable, and independently verifiable timeline of automated actions.
+Ancorând deciziile probabilistice ale modelelor de învățare automată la consensul determinist al unui blockchain certificat, instituția creează o cronologie a acțiunilor automatizate apărabilă, reconstruibilă și verificabilă independent.
 
-## 06. Visualizing the Certified Consensus-to-Audit Pipeline
+## 06. Vizualizarea fluxului certificat de la consens la audit
 
-The following sequence diagram illustrates the lifecycle of a transaction passing through a certified blockchain platform, demonstrating how validation gates, consensus integrity, smart contract execution, and telemetry emission interlock to produce board-ready regulatory evidence:
+Următoarea diagramă de secvență ilustrează ciclul de viață al unei tranzacții care traversează o platformă blockchain certificată, arătând cum porțile de validare, integritatea consensului, execuția contractelor inteligente și emisia de telemetrie se împletesc pentru a produce dovezi de reglementare pregatite pentru consiliu:
 
 ```mermaid
 sequenceDiagram
@@ -206,37 +202,37 @@ sequenceDiagram
     Engine-->>Telemetry: Emit OpenTelemetry traces (latency, state, validation status)
     Telemetry->>Telemetry: Record evidence to DORA Article 8 Register of Information
 ```
-The critical path for this transactional sequence requires that every validation, execution, and consensus step is cryptographically signed, ensuring end-to-end provenance. The regulator's auditor node synchronizes block state in real-time, eliminating the need for retrospective, manual financial reconciliation.
+Calea critică a acestei secvențe tranzacționale impune ca fiecare pas de validare, execuție și consens să fie semnat criptografic, asigurând proveniența de la un capăt la altul. Nodul de auditor al reglementatorului sincronizează starea blocurilor în timp real, eliminând nevoia de reconciliere financiară manuală și retrospectivă.
 
-## 07. The Boardroom Playbook for Senior Managers
+## 07. Manualul consiliului pentru managerii superiori
 
-To successfully navigate the transition from organizational trust to infrastructural trust, bank executives and senior managers should immediately execute four key directives:
+Pentru a naviga cu succes tranziția de la încrederea organizațională la încrederea infrastructurală, directorii și managerii superiori ai băncilor ar trebui să execute imediat patru directive-cheie:
 
-1. **Mandate Ledger Audits in Enterprise Risk Management (ERM)**: Enforce a policy that no distributed ledger platform—whether private, public, or consortium-based—may be deployed for critical or important functions (CIFs) unless it has been audited against the 5-layer **Certified Blockchain Index Architecture** (CMM Level 3 minimum).  
-2. **Integrate Blockchains as the ISO 42001 AI Evidentiary Spine**: Direct the Chief Risk Officer and Lead AI Architect to integrate all high-impact machine learning models with a certified blockchain, creating a tamper-evident audit ledger of model versions, weights, inputs, and decisions.  
-3. **Audit the Validator Node Supply Chain (DORA Article 30)**: Require the procurement division to audit all third-party entities hosting validator nodes or managing cloud hosting for DLT networks, mandating compliance with the same cybersecurity and operational resilience standards applied to the bank’s internal cloud nodes.  
-4. **Align Ledger Architectures with CPMI-IOSCO and BCBS 239**: Instruct the platform engineering team to align ledger output telemetry directly with **BCBS 239** data reporting requirements, and ensure the consensus and settlement finality parameters strictly comply with **CPMI-IOSCO Principles 8 and 9**.
+1. **Impunerea auditurilor de registru în managementul riscului de întreprindere (ERM)**: aplicarea unei politici conform căreia nicio platformă de registru distribuit — privată, publică sau de consorțiu — nu poate fi implementată pentru funcții critice sau importante (CIF) fără a fi fost auditată față de **arhitectura Indexului Blockchain-urilor Certificate** pe cinci straturi (minimum CMM Nivel 3).  
+2. **Integrarea blockchain-urilor ca coloană vertebrală probatorie a IA ISO 42001**: însărcinarea directorului de risc și a arhitectului-șef de IA cu integrarea tuturor modelelor de învățare automată cu impact ridicat cu un blockchain certificat, creând un registru de audit rezistent la manipulare al versiunilor de modele, ponderilor, intrărilor și deciziilor.  
+3. **Auditarea lanțului de aprovizionare al nodurilor validatoare (DORA articolul 30)**: solicitarea ca divizia de achiziții să auditeze toate entitățile terțe care găzduiesc noduri validatoare sau gestionează găzduirea cloud pentru rețele DLT, impunând aceleași standarde de securitate cibernetică și reziliență operațională aplicate nodurilor cloud interne ale băncii.  
+4. **Alinierea arhitecturilor de registru la CPMI-IOSCO și BCBS 239**: însărcinarea echipei de inginerie a platformei cu alinierea telemetriei de ieșire a registrului direct la cerințele de raportare a datelor **BCBS 239** și asigurarea că parametrii de consens și de finalitate a decontării respectă strict **Principiile 8 și 9 CPMI-IOSCO**.
 
-## 08. Frequently Asked Questions
+## 08. Întrebări frecvente
 
-**Is ISO/IEC TC 307 a certification standard?**  
-No. ISO/IEC TC 307 is a technical committee that establishes vocabulary, reference architectures, and security guidelines. While it defines "what good looks like" (guidance), the industry must operationalize these documents into formal, auditable certification schemes (assurance) to satisfy banking supervisors.
+**Este ISO/IEC TC 307 un standard de certificare?**  
+Nu. ISO/IEC TC 307 este un comitet tehnic care stabilește vocabular, arhitecturi de referință și orientări de securitate. Deși definește „cum arată excelența" (orientare), industria trebuie să operaționalizeze aceste documente în scheme de certificare formale și auditabile (asigurare) pentru a satisface supraveghetorii bancari.
 
-**How does a certified blockchain support DORA compliance?**  
-Under DORA Article 5, bank boards bear direct, personal liability for technology resilience. A certified blockchain provides verifiable, cryptographic evidence of consensus integrity, validator supply-chain control, and smart contract safety, giving board members the documentable "reasonable steps" needed to defend against SM&CR personal liability claims.
+**Cum susține un blockchain certificat conformitatea cu DORA?**  
+În temeiul articolului 5 din DORA, consiliile băncilor poartă răspundere personală directă pentru reziliența tehnologică. Un blockchain certificat oferă dovezi criptografice și verificabile ale integrității consensului, controlului lanțului de aprovizionare al validatorilor și siguranței contractelor inteligente, oferind membrilor consiliului „pașii rezonabili" documentabili necesari pentru a se apăra împotriva pretențiilor de răspundere personală în cadrul SM&CR.
 
-What is the difference between a traditional ledger audit and a certified blockchain audit?  
-A traditional audit is retrospective, verifying manual entries and static files after transactions have cleared. A certified blockchain audit is continuous and real-time; the validator nodes, BFT consensus engine, and formally verified smart contracts are certified to execute transactions deterministically, emitting structured telemetry (OpenTelemetry) that continuously validates the system’s health.
+Care este diferența dintre un audit tradițional de registru și un audit de blockchain certificat?  
+Un audit tradițional este retrospectiv: verifică înregistrări manuale și fișiere statice după ce tranzacțiile au fost decontate. Un audit de blockchain certificat este continuu și în timp real; nodurile validatoare, motorul de consens BFT și contractele inteligente verificate formal sunt certificate să execute tranzacțiile determinist, emițând telemetrie structurată (OpenTelemetry) care validează continuu starea de sănătate a sistemului.
 
-Can public blockchains be certified for banking use?  
-In most jurisdictions, pure permissionless public blockchains fail to satisfy banking regulations due to the lack of validator identity verification, unpredictable gas/transaction costs, and non-deterministic finality (e.g., probabilistic proof-of-work/stake forks). Certified blockchains in banking typically utilize enterprise permissioned or highly regulated public-hybrid architectures where validator node operators are identified and audited financial entities.
+Pot fi certificate blockchain-urile publice pentru uz bancar?  
+În majoritatea jurisdicțiilor, blockchain-urile publice pur fără permisiune nu satisfac reglementările bancare din cauza lipsei verificării identității validatorilor, a costurilor de tranzacție imprevizibile și a finalității nedeterministe (de ex. bifurcări probabilistice proof-of-work/stake). Blockchain-urile certificate din bancă utilizează de obicei arhitecturi de întreprindere cu permisiune sau arhitecturi public-hibride puternic reglementate, în care operatorii nodurilor validatoare sunt entități financiare identificate și auditate.
 
-## 09. References
+## 09. Referințe
 
-* Basel Committee on Banking Supervision (BCBS), 2013. *Principles for effective risk data aggregation and reporting (BCBS 239)*. Basel: Bank for International Settlements. Available at: [https://www.bis.org/publ/bcbs239.pdf](https://www.bis.org/publ/bcbs239.pdf).  
-* Committee on Payments and Market Infrastructures and Technical Committee of the International Organization of Securities Commissions (CPMI-IOSCO), 2012. *Principles for financial market infrastructures*. Basel: Bank for International Settlements. Available at: [https://www.bis.org/cpmi/publ/d101a.pdf](https://www.bis.org/cpmi/publ/d101a.pdf).  
-* European Banking Authority (EBA), 2019. *EBA/GL/2019/02 — Guidelines on outsourcing arrangements*. Paris: EBA. Available at: [https://www.eba.europa.eu/regulation-and-policy/internal-governance/guidelines-on-outsourcing-arrangements](https://www.eba.europa.eu/regulation-and-policy/internal-governance/guidelines-on-outsourcing-arrangements).  
-* European Parliament and Council of the European Union, 2022. *Regulation (EU) 2022/2554 on digital operational resilience for the financial sector (DORA)*. Brussels: Official Journal of the European Union. Available at: [https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554).  
-* ISO/IEC JTC 1/SC 42, 2023. *ISO/IEC 42001:2023 — Information technology — Artificial intelligence — Management system*. Geneva: International Organization for Standardization. Available at: [https://www.iso.org/standard/81230.html](https://www.iso.org/standard/81230.html).  
-* ISO/IEC Technical Committee 307, 2020. *ISO/IEC 22739:2020 — Blockchain and distributed ledger technologies — Vocabulary*. Geneva: International Organization for Standardization. Available at: [https://www.iso.org/standard/73771.html](https://www.iso.org/standard/73771.html).  
-* National Institute of Standards and Technology (NIST), 2026. *First Three Finalized Post-Quantum Encryption Standards (FIPS 203, 204, and 205)*. Gaithersburg: U.S. Department of Commerce. Available at: [https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards](https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards).
+* Comitetul de la Basel pentru Supraveghere Bancară (BCBS), 2013. *Principles for effective risk data aggregation and reporting (BCBS 239)*. Basel: Banca Reglementelor Internaționale. Disponibil la: [https://www.bis.org/publ/bcbs239.pdf](https://www.bis.org/publ/bcbs239.pdf).  
+* Committee on Payments and Market Infrastructures și Technical Committee of the International Organization of Securities Commissions (CPMI-IOSCO), 2012. *Principles for financial market infrastructures*. Basel: Banca Reglementelor Internaționale. Disponibil la: [https://www.bis.org/cpmi/publ/d101a.pdf](https://www.bis.org/cpmi/publ/d101a.pdf).  
+* Autoritatea Bancară Europeană (ABE), 2019. *EBA/GL/2019/02 — Guidelines on outsourcing arrangements*. Paris: ABE. Disponibil la: [https://www.eba.europa.eu/regulation-and-policy/internal-governance/guidelines-on-outsourcing-arrangements](https://www.eba.europa.eu/regulation-and-policy/internal-governance/guidelines-on-outsourcing-arrangements).  
+* Parlamentul European și Consiliul Uniunii Europene, 2022. *Regulamentul (UE) 2022/2554 privind reziliența operațională digitală a sectorului financiar (DORA)*. Bruxelles: Jurnalul Oficial al Uniunii Europene. Disponibil la: [https://eur-lex.europa.eu/legal-content/RO/TXT/?uri=CELEX%3A32022R2554](https://eur-lex.europa.eu/legal-content/RO/TXT/?uri=CELEX%3A32022R2554).  
+* ISO/IEC JTC 1/SC 42, 2023. *ISO/IEC 42001:2023 — Information technology — Artificial intelligence — Management system*. Geneva: Organizația Internațională de Standardizare. Disponibil la: [https://www.iso.org/standard/81230.html](https://www.iso.org/standard/81230.html).  
+* Comitetul Tehnic ISO/IEC 307, 2020. *ISO/IEC 22739:2020 — Blockchain and distributed ledger technologies — Vocabulary*. Geneva: Organizația Internațională de Standardizare. Disponibil la: [https://www.iso.org/standard/73771.html](https://www.iso.org/standard/73771.html).  
+* National Institute of Standards and Technology (NIST), 2026. *First Three Finalized Post-Quantum Encryption Standards (FIPS 203, 204, and 205)*. Gaithersburg: U.S. Department of Commerce. Disponibil la: [https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards](https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards).
