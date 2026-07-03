@@ -1,6 +1,6 @@
 ---
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
-banner_alt: "Abstract distributed-ledger lattice resolving into a certified audit spine — visualising the shift from retrospective entity audits to continuous, cryptographically-verifiable blockchain assurance for wholesale banking"
+banner_alt: "Sertifikalı bir denetim omurgasına kristalleşen soyut dağıtık defter kafesi — toptan bankacılık için geriye dönük, kuruluş temelli denetimlerden sürekli, kriptografik olarak doğrulanabilir blok zinciri güvencesine geçişi görselleştiriyor"
 banner_height: "1280"
 banner_width: "1920"
 banner: "https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp"
@@ -9,7 +9,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "July 2, 2026"
-description: "The 2026 Certified Blockchain Index gives banks a 5-level Capability Maturity Model to certify distributed-ledger governance, consensus integrity, cryptography, smart-contract assurance, and audit observability against DORA, CPMI-IOSCO PFMI, ISO/IEC TC 307, ISO 42001 and Basel III."
+description: "2026 Sertifikalı Blok Zincirleri Endeksi, bankalara dağıtık defter yönetişimini, mutabakat bütünlüğünü, kriptografiyi, akıllı sözleşme güvencesini ve denetim gözlemlenebilirliğini DORA, CPMI-IOSCO PFMI, ISO/IEC TC 307, ISO 42001 ve Basel III'e göre sertifikalamak için beş seviyeli bir Yetenek Olgunluk Modeli sunar."
 format-detection: "telephone=no"
 hreflang: "tr"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -35,9 +35,9 @@ rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
 schema: "FAQPage, Article"
-seo_title: "From Evidence to Truth: Certified Blockchains and Banking Trust"
+seo_title: "Kanıttan hakikate: sertifikalı blok zincirleri ve bankacılık güveni"
 short_name: "sebastienrousseau"
-subtitle: "Why certifiable ledger assurance — not immutability alone — will define institutional trust in 2026: scoring governance, consensus integrity, cryptography, smart contracts, and observability against DORA, ISO/IEC TC 307, and CPMI-IOSCO PFMI."
+subtitle: "Sertifikalanabilir defter güvencesinin — yalnızca değiştirilemezliğin değil — 2026'da kurumsal güveni neden tanımlayacağı: yönetişimin, mutabakat bütünlüğünün, kriptografinin, akıllı sözleşmelerin ve gözlemlenebilirliğin DORA, ISO/IEC TC 307 ve CPMI-IOSCO PFMI'ye göre puanlanması."
 tags: "agentic AI, AI governance, banking, autonomy tiers, model risk, SR 11-7, EU AI Act, FSB, IOSCO, MAS, IMDA, control plane, audit log, DORA, McKinsey, Stanford AI Index"
 theme-color: "0, 83, 191"
 title: "The Agentic AI Index for Banks in 2026: Measuring Autonomy"
@@ -63,7 +63,7 @@ apple_touch_icon_sizes: "192x192"
 apple-mobile-web-app-capable: "yes"
 apple-mobile-web-app-status-bar-inset: "black"
 apple-mobile-web-app-status-bar-style: "black-translucent"
-apple-mobile-web-app-title: "Certified Blockchains 2026"
+apple-mobile-web-app-title: "Sertifikalı blok zincirleri 2026"
 apple-touch-fullscreen: "yes"
 msapplication-navbutton-color: "0, 83, 191"
 twitter_card: "summary_large_image"
@@ -84,103 +84,99 @@ site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 ---
 
-<!-- translation-stub: replace this body in Claude Code -->
+# Kanıttan hakikate: sertifikalı blok zincirleri neden bankacılık güveninin bir sonraki çağını tanımlayacak
 
-> _Translation pending — read the [English original](/2026-07-02-certified-blockchains-banking-trust-tc307-assurance-2026/) while we localise._
+## Stratejik özet (özün özü)
 
-# From Evidence to Truth: Why Certified Blockchains Will Define the Next Era of Banking Trust
+Toptan bankacılık ve küresel işlemler 2026'da tarihî bir dönüm noktasında bulunuyor. Finansal hizmetler doğuştan dijital, gerçek zamanlı takas ağlarına geçerken ve yapay zekâ olasılıksal belirsizlik getirirken, geleneksel analog, geriye dönük güvence modelleri (statik, kuruluş temelli denetimler gibi) modern risk yönetimi ve mütevelli yükümlülüklerini artık karşılamıyor.
 
-## Executive Summary & Strategic Context (TL;DR)
+ISO/IEC Teknik Komitesi TC 307, dağıtık defter teknolojileri için standartlaştırılmış bir temel oluşturdu. Ancak gerçek kurumsal benimseme, tanımlayıcı rehberlikten reçeteleyici, bağımsız olarak sertifikalanabilir blok zinciri güvencesine geçmeyi gerektirir. Defter yönetişimi, mutabakat bütünlüğü, akıllı sözleşme güvenliği ve kriptografik çevikliği katı beş seviyeli bir Yetenek Olgunluk Modeli'ne (CMM) göre puanlayarak bankalar, dağınık ve tedarikçiye özgü varsayımlardan sertifikalanabilir, yönetim kurulu tarafından denetlenebilir finansal hakikate geçebilir.
 
-Wholesale banking and global transactions in 2026 sit at a historic inflection point. As financial services transition to natively digital, real-time clearing networks, and as artificial intelligence introduces probabilistic non-determinism, the traditional analogue, retrospective assurance models (such as static entity-based audits) fail to meet modern risk management and fiduciary demands.
+## Temel çıkarımlar
 
-ISO/IEC Technical Committee 307 (TC 307) has established a standardized baseline for distributed ledger technologies. However, true corporate and institutional adoption requires shifting from descriptive guidance to prescriptive, independently certifiable blockchain assurance. By scoring ledger governance, consensus integrity, smart contract safety, and cryptographic agility against a strict 5-level Capability Maturity Model (CMM), banks can move from patchwork, vendor-specific assumptions to certifiable, board-auditable financial truth.
+* **Mütevelli sürtünme boşluğu**: bugün bankayı (Basel III), bulutu (ISO 27001) ve yapay zekâ yönetişim sistemlerini (ISO 42001) sertifikalayabiliyoruz, ancak neyin doğru olduğunu giderek daha fazla belirleyen dağıtık defteri henüz sertifikalayamıyoruz. Bu asimetri büyük bir operasyonel zafiyettir.  
+* **DORA doğrudan mütevelli sorumluluğu getirir**: DORA'nın 5. maddesi uyarınca, banka yönetim kurulları tüm üçüncü taraf ve defter dağıtımlarının operasyonel dayanıklılığından doğrudan, devredilemez kişisel sorumluluk taşır; başarısızlıklarda SM&CR rejimi kapsamında ağır kişisel yaptırımlar öngörülür.  
+* **Yapay zekânın denetim omurgası**: makine öğreniminin yeniden üretilemeyen, olasılıksal sonuçlar ürettiği yerde, sertifikalı bir blok zinciri deterministik durum yakalaması sağlar. Model sürümlerini, girdileri ve doğrulama kararlarını zincir üzerinde kaydetmek, ISO 42001'i ve model riski yönetimi standartlarını karşılar.  
+* **Sertifikalı Blok Zincirleri Endeksi**: bu endeks yönetişimi, mutabakatı, akıllı sözleşmeleri ve gözlemlenebilirliği doğrulanabilir, denetime hazır bir karneye 0'dan 5'e CMM ölçeğinde biçimlendirir ve mühendislik metriklerini yönetim kurulunca onaylanmış risk iştahı beyanlarına çevirir.
 
-## Key Takeaways
+## 01. Dijital bankacılıkta mütevelli sürtünme boşluğu
 
-* **The Fiduciary Frictional Gap**: We can currently certify the bank (Basel III), the cloud (ISO 27001), and the AI governance systems (ISO 42001), but we cannot yet certify the distributed ledger that increasingly determines what is true. This asymmetry is a major operational vulnerability.  
-* **DORA Enforces Direct Fiduciary Responsibility**: Under DORA Article 5, bank boards of directors bear direct, non-delegable personal liability for the operational resilience of all third-party and ledger deployments, with severe SM&CR personal penalties for failures.  
-* **The AI Audit Spine**: While machine learning introduces non-reproducible, probabilistic outcomes, a certified blockchain provides deterministic state capture. Recording model versions, inputs, and validation decisions on-chain satisfies ISO 42001 and Model Risk Management standards.  
-* **The Certified Blockchain Index**: This index formalizes governance, consensus, smart contracts, and observability into a verifiable, audit-ready scorecard on a 0-to-5 CMM scale, translating engineering metrics into board-approved Risk Appetite Statements.
+Klasik bankacılıkta güven ilişkiseldir, kurumsaldır ve geriye dönüktür. Bağımsız üçüncü taraf denetçilerin finansal durumu sabit zaman noktalarında incelemesine ve ikili defter siloları arasındaki tutarsızlıkları mutabık kılmasına dayanır. 2026'nın gerçek zamanlı, API güdümlü piyasalarında bu model engelleyici gecikmeler ve yapısal riskler getirir.
 
-## 01. The Fiduciary Frictional Gap in Digital Banking
+İşlemler anında mutabakata bağlandığında, gün içi likidite havuzları API ağ geçitleri tarafından dinamik olarak yönetildiğinde ve varlık mülkiyeti paylaşılan defterlerde tokenleştirildiğinde, geriye dönük denetimler önleyici kontroller yerine adli tahkikat alıştırmaları hâline gelir. Mütevelliler artık yalnızca tüzel kişiliği sertifikalamaya güvenemez. Dijital altyapının kendisini sertifikalamak zorundadırlar.
 
-In classical banking, trust is relational, institutional, and retrospective. It depends on independent, third-party auditors reviewing financial state at static points in time, reconciling discrepancies across bilateral ledger silos. In the real-time, API-driven markets of 2026, this model introduces prohibitive latencies and structural risks.
+Şu anda bankalar göze çarpan bir mimari asimetri altında faaliyet gösteriyor:
 
-When transactions settle instantly, intraday liquidity pools are managed dynamically by API gateways, and asset ownership is tokenised across shared ledgers, retrospective audits become forensic exercises rather than preventative controls. Fiduciaries can no longer rely solely on certifying the corporate entity. They must certify the digital substrate itself.
+1. **Sertifikalı bulut altyapısı**: donanım düğümleri, sanallaştırılmış konteynerler ve fiziksel veri merkezleri ISO/IEC 27001 ve SOC 2 Type II kontrollerine göre doğrulanır.  
+2. **Sertifikalı yönetim süreçleri**: operasyonel risk politikaları, iş sürekliliği planları ve algoritmik dağıtımlar katı risk çerçeveleriyle yönetilir.  
+3. **Sertifikasız defter motorları**: dağıtık mutabakat mekanizmaları, doğrulayıcı düğüm tedarik zincirleri, akıllı sözleşme sınırları ve ağ yönetişim modelleri sertifikasız, özel yapım veya konsorsiyuma özgü varsayımlara bırakılır.
 
-Currently, banks operate under a glaring architectural asymmetry:
+Bu asimetri kritik bir başarısızlık noktasıdır. Bir banka, güvenli, ISO 27001 sertifikalı bir bulut konteynerinde doğrulanmış bir uygulama çalıştırabilir; ancak o konteyner merkezî doğrulayıcı kontrolü, savunmasız mutabakat parametreleri veya denetlenmemiş akıllı sözleşmeler içeren bir dağıtık deftere yazıyorsa, işlem bütünlüğü tehlikeye girer. Bu boşluğu kapatmak için defter motorunun kendisi sertifikalanabilir bir güvence nesnesi hâline gelmelidir.
 
-1. **Certified Cloud Infrastructure**: Hardware nodes, virtualized containers, and physical datacenters are validated against ISO/IEC 27001 and SOC 2 Type II controls.  
-2. **Certified Management Processes**: Operational risk policies, business continuity plans, and algorithmic deployments are governed under strict risk frameworks.  
-3. **Uncertified Ledger Engines**: The core distributed consensus mechanisms, validator node supply chains, smart contract boundaries, and network governance models are left to uncertified, custom, or consortium-specific assumptions.
+## 02. ISO/IEC TC 307 standartlaştırma temeli
 
-This asymmetry is a major failure point. A bank can run a validated application inside a secure, ISO 27001-certified cloud container, but if that container writes to a distributed ledger with centralized validator control, vulnerable consensus parameters, or un-audited smart contracts, the transaction integrity is compromised. To bridge this gap, the ledger engine itself must become a certifiable assurance object.
+Dağıtık defterleri standartlaştırmak için gereken temel çalışmayı ISO/IEC Teknik Komitesi TC 307 (Blok zinciri ve dağıtık defter teknolojileri) yürütmektedir. Blok zincirini yalıtılmış bir teknik protokol olarak ele almak yerine, TC 307 ona kurumsal bir güven altyapısı olarak yaklaşır ve çalışmasını beş temel sütun etrafında düzenler:
 
-## 02. The ISO/IEC TC 307 Standardization Baseline
+1. **Taksonomi ve terminoloji (ISO 22739)**: ortak bir adlandırma oluşturur ve yargı bölgeleri, finansal düzenler ve kurumlar arasında tutarlı hukuki ve operasyonel tanımlar sağlar.  
+2. **Referans mimari (ISO/TR 23245)**: uyumlu bir dağıtık defter sisteminin sınırlarını, katmanlarını, veri akışlarını ve işlevsel bileşenlerini tanımlar.  
+3. **Güvenlik, gizlilik ve akıllı sözleşmeler (ISO/TR 23244 / ISO 23613)**: dijital varlık sistemleri için temel güvenlik yönergeleri oluşturur ve akıllı sözleşme zafiyetlerinin azaltılması ile yaşam döngüsü yönetişimine ilişkin en iyi uygulamaları ayrıntılandırır.  
+4. **Birlikte çalışabilirlik çerçeveleri**: heterojen defter ağları arasındaki veri ve varlık değişim mekanizmalarını ele alır ve yalıtılmış tokenleştirilmiş siloların oluşmasını önler.  
+5. **Merkeziyetsiz kimlik ve güven çıpaları**: defter tabanlı kriptografik tanımlayıcıları resmî açık anahtar altyapılarıyla (PKI) ve devlet yetkili sicilleriyle bütünleştirir.
 
-The foundational work required to standardize distributed ledgers is being established by ISO/IEC Technical Committee 307 (TC 307) (Blockchain and distributed ledger technologies). Rather than treating blockchain as an isolated technical protocol, TC 307 addresses it as an institutional trust infrastructure, organizing its work across five core pillars:
+Toplu olarak TC 307, DLT'nin özel bir mühendislik seçiminden standartlaştırılmış bir mimari disipline geçişini işaret eder. Ancak TC 307 büyük ölçüde tanımlayıcı kalır. Mükemmelliğin nasıl göründüğünü tanımlar (rehberlik), ancak risk yetkililerinin ve denetçilerin kritik veya önemli işlevlerin (CIF) üretim dağıtımlarını yetkilendirmek için ihtiyaç duyduğu reçeteleyici doğrulama protokolünü (güvence) sağlamaz.
 
-1. **Taxonomy and Vocabulary (ISO 22739)**: Establishes a common nomenclature, ensuring consistent legal and operational definitions across different jurisdictions, financial schemes, and institutions.  
-2. **Reference Architecture (ISO/TR 23245)**: Defines the boundaries, layers, data flows, and functional components of a compliant distributed ledger system.  
-3. **Security, Privacy, and Smart Contracts (ISO/TR 23244 / ISO 23613)**: Establishes baseline security guidelines for digital asset systems and details best practices for smart contract vulnerability mitigation and lifecycle governance.  
-4. **Interoperability Frameworks**: Addresses the data and asset-exchange mechanisms between heterogeneous ledger networks, preventing the formation of isolated tokenised silos.  
-5. **Decentralized Identity and Trust Anchors**: Integrates ledger-based cryptographic identifiers with formal public-key infrastructures (PKI) and state-authorized registries.
+## 03. Rehberlik ile güvence: mütevelli ayrımı
 
-Collectively, TC 307 signals the transition of DLT from a custom engineering choice into a standardized architectural discipline. However, TC 307 remains primarily descriptive. It defines what good looks like (guidance), but it does not provide the prescriptive verification protocol (assurance) that risk officers and supervisors require to authorize production deployments of critical or important functions (CIFs).
+Finansal piyasa katılımcıları bir teknolojiyi yenilikçi veya zarif olduğu için devreye almaz; yönetilebildiği, denetlenebildiği, savunulabildiği ve sermaye rezervi gereksinimleriyle mutabık kılınabildiği zaman devreye alırlar. Bu nedenle bankacılıkta standartlaştırma doğal olarak iki katmana ayrılır:
 
-## 03. Guidance vs. Assurance: The Fiduciary Distinction
+* **Rehberlik (çerçeve)**: en iyi uygulamaları, referans hedeflerini ve mimari yönergeleri ana hatlarıyla belirtir (ör. ISO/IEC TC 307, NIST çerçeveleri).  
+* **Güvence (kanıt)**: çerçevenin uygulandığına ve tasarlandığı gibi çalıştığına dair bağımsız, sürekli ve üçüncü tarafça doğrulanabilir kanıt sağlar (ör. ISO 27001 sertifikasyonu, SOC 2 denetimleri, düzenleyici incelemeler).
 
-Financial market participants do not deploy technology because it is innovative or elegant; they deploy it when it can be governed, audited, defended, and reconciled with capital reserve requirements. This is why standardisation in banking naturally resolves into two layers:
+Bulut altyapısını sertifikalarken sertifikasız defter mutabakatına güvenmek kritik bir düzenleyici boşluktur. "Değiştirilemez" bir blok zinciri, illâ "kurumsal olarak güvenilir" değildir. Değiştirilemezlik yalnızca girilen verinin değişmeden kaldığını garanti eder; doğrulayıcı düğümlerin güvenli olup olmadığını, mutabakat protokolünün gizli anlaşmaya karşı dayanıklı olup olmadığını, akıllı sözleşme mantığının matematiksel olarak sağlam olup olmadığını veya kriptografik anahtar yönetiminin kuantum sonrası zorunluluklara uyup uymadığını doğrulamaz.
 
-* **Guidance (The Framework)**: Outlines best practices, reference targets, and architectural guidelines (e.g., ISO/IEC TC 307, NIST frameworks).  
-* **Assurance (The Proof)**: Provides independent, continuous, and third-party-verifiable evidence that the framework is implemented and operating as designed (e.g., ISO 27001 certification, SOC 2 audits, regulatory examinations).
+Bu boşluğu kapatmak için 2026 Sertifikalı Blok Zincirleri Endeksi, bu gereksinimleri küresel bankacılık düzenlemelerine eşlenmiş, ölçülebilir bir Yetenek Olgunluk Modeli'ne (CMM) biçimlendirir.
 
-Relying on uncertified ledger consensus while certifying cloud infrastructure is a critical regulatory gap. A blockchain that is "immutable" is not necessarily "institutionally trusted." Immutability only guarantees that the data entered is unchanged; it does not verify that the validator nodes are secure, the consensus protocol is resilient against collusion, the smart contract logic is mathematically sound, or the cryptographic key management complies with post-quantum mandates.
+## 04. 2026 Sertifikalı Blok Zincirleri Endeksi
 
-To close this gap, the 2026 Certified Blockchain Index formalizes these requirements into a quantifiable Capability Maturity Model (CMM) mapped to global banking regulations.
+Üst yönetimin defter platformlarını değerlendirip sertifikalayabilmesi için bu endeks, dağıtık defter altyapısını 0'dan 5'e CMM ölçeğinde puanlanan beş denetlenebilir operasyonel katmana yapılandırır.
 
-## 04. The 2026 Certified Blockchain Index
+## Tablo 1: Sertifikalı Blok Zincirleri Endeksi mimarisi
 
-To enable senior management to evaluate and certify their ledger platforms, this index structures the distributed ledger infrastructure into five auditable operational layers, scored on a 0-to-5 CMM scale.
-
-## Table 1: The Certified Blockchain Index Architecture
-
-| Index Layer | Capability Maturity Level (CMM) | Technical and Operational Metric | Regulatory / Fiduciary Control Reference |
+| Endeks katmanı | Olgunluk seviyesi (CMM) | Teknik ve operasyonel metrik | Düzenleyici / mütevelli kontrol referansı |
 | :---- | :---- | :---- | :---- |
-| **Ledger Governance** | **Level 0**: Ad-hoc consortium**Level 3**: Automated validator vetting & rotation**Level 5**: Decentralized, multi-party cryptographic identity anchoring | % of validator nodes operated by vetted financial entities; mean time to resolve validator disputes; geographic distribution of nodes | **DORA Article 5** (Governance and Organisation); **CPMI-IOSCO PFMI Principle 2** (Governance) & **Principle 3** (Framework for the comprehensive management of risks) |
-| **Consensus Integrity** | **Level 0**: Single-node or opaque POW**Level 3**: Audited BFT with deterministic finality**Level 5**: Multi-jurisdictional, formally verified consensus with continuous latency monitoring | Max tolerable consensus latency; collusion-resistance threshold; uptime SLA under simulated node partition | **DORA Article 6** (ICT Risk Management Framework); **CPMI-IOSCO PFMI Principle 8** (Settlement Finality) |
-| **Identity & Cryptography** | **Level 0**: Weak RSA / ECDSA keys**Level 3**: Multi-sig with HSM-backed key management**Level 5**: Quantum-safe hybrid keys (FIPS 203 ML-KEM) and zero-knowledge privacy gates | % of ledger transactions signed with HSM-backed keys; PQC migration readiness score; ZK-proof latency | **NIST FIPS 203 / 204**; **ISO/IEC 27001** (Information Security Management) |
-| **Smart Contract Assurance** | **Level 0**: Un-audited solidity scripts**Level 3**: Automated compiler validation & external audit**Level 5**: Formally verified, immutable smart contracts with circuit-breaker upgrades | % of smart contracts with mathematical formal verification; count of compiler warnings; vulnerability scan coverage | **EBA Guidelines on Outsourcing Arrangements** (Paragraphs 81, 113-117); **DORA Article 30** (Minimum Contractual Clauses) |
-| **Audit & Observability** | **Level 0**: Manual log scraping**Level 3**: Structured OTel traces & read-only auditor nodes**Level 5**: Automated, continuous reconciliation to the Article 8 register | % of transactions covered by OpenTelemetry traces; latency from ledger block-commit to auditor-node sync | **BCBS 239** (Risk Data Aggregation); **DORA Article 8** (Register of Information / ITS Schemas) |
+| **Defter yönetişimi** | **Seviye 0**: geçici konsorsiyum**Seviye 3**: otomatik doğrulayıcı denetimi ve rotasyonu**Seviye 5**: merkeziyetsiz, çok taraflı kriptografik kimlik çıpalama | denetlenmiş finansal kuruluşlarca işletilen doğrulayıcı düğümlerin %'si; doğrulayıcı anlaşmazlıklarını çözme ortalama süresi; düğümlerin coğrafi dağılımı | **DORA Madde 5** (Yönetişim ve organizasyon); **CPMI-IOSCO PFMI İlke 2** (Yönetişim) ve **İlke 3** (Kapsamlı risk yönetimi çerçevesi) |
+| **Mutabakat bütünlüğü** | **Seviye 0**: tek düğüm veya opak PoW**Seviye 3**: deterministik kesinlikli denetlenmiş BFT**Seviye 5**: sürekli gecikme izlemeli, çok yargılı, biçimsel olarak doğrulanmış mutabakat | azami tolere edilebilir mutabakat gecikmesi; gizli anlaşmaya direnç eşiği; simüle edilmiş düğüm bölünmesinde erişilebilirlik SLA'sı | **DORA Madde 6** (BİT risk yönetimi çerçevesi); **CPMI-IOSCO PFMI İlke 8** (Mutabakat kesinliği) |
+| **Kimlik ve kriptografi** | **Seviye 0**: zayıf RSA / ECDSA anahtarları**Seviye 3**: HSM destekli anahtar yönetimiyle çoklu imza**Seviye 5**: kuantum güvenli hibrit anahtarlar (FIPS 203 ML-KEM) ve sıfır bilgi gizlilik kapıları | HSM destekli anahtarlarla imzalanan defter işlemlerinin %'si; PQC geçiş hazırlık puanı; ZK kanıt gecikmesi | **NIST FIPS 203 / 204**; **ISO/IEC 27001** (Bilgi güvenliği yönetimi) |
+| **Akıllı sözleşme güvencesi** | **Seviye 0**: denetlenmemiş Solidity betikleri**Seviye 3**: otomatik derleyici doğrulaması ve dış denetim**Seviye 5**: devre kesici yükseltmeli, biçimsel olarak doğrulanmış, değiştirilemez akıllı sözleşmeler | matematiksel biçimsel doğrulamaya sahip akıllı sözleşmelerin %'si; derleyici uyarısı sayısı; zafiyet taraması kapsamı | **EBA Dış Kaynak Kullanımı Yönergeleri** (81, 113-117. paragraflar); **DORA Madde 30** (Asgari sözleşme hükümleri) |
+| **Denetim ve gözlemlenebilirlik** | **Seviye 0**: manuel log toplama**Seviye 3**: yapılandırılmış OTel izleri ve salt okunur denetçi düğümleri**Seviye 5**: Madde 8 siciliyle otomatik, sürekli mutabakat | OpenTelemetry izleriyle kapsanan işlemlerin %'si; blok onayından denetçi düğüm senkronizasyonuna gecikme | **BCBS 239** (Risk verisi toplama); **DORA Madde 8** (Bilgi sicili / ITS şemaları) |
 
-## Table 2: Key Trust Signals Mapped to Global Banking Standards
+## Tablo 2: küresel bankacılık standartlarına eşlenen temel güven sinyalleri
 
-| Signal / Benchmark | Metric | Impact on Banking Platforms | Regulatory Source |
+| Sinyal / ölçüt | Metrik | Bankacılık platformlarına etkisi | Düzenleyici kaynak |
 | :---- | :---- | :---- | :---- |
-| **ISO/IEC TC 307 Progress** | Transition from ISO/TR technical reports to formal certification schemes | Establishes the first standardized framework for certifying distributed ledger engines | **ISO/IEC JTC 1 / SC 44** (Distributed Ledger Technologies) |
-| **Project Agorá Prototype Phase** | 40+ participating commercial banks; unified ledger testing of tokenised deposits | Shifting cross-border clearing from messaging (SWIFT) to atomic tokenised settlement | **Bank for International Settlements (BIS) Innovation Hub** |
-| **DORA Article 30 Third-Party Audit** | 100% of node providers and infrastructure hosts audited against security criteria | Eliminates "shadow validator nodes"; mandates total supply-chain transparency | **European Supervisory Authorities (ESA)** |
-| **ISO/IEC 42001 (AI Governance)** | Cryptographically immutabilized AI model and training logs on-chain | Employs blockchain as the immutable evidentiary ledger ("audit spine") for machine learning | **ISO/IEC 42001:2023** (Information technology — Artificial intelligence) |
-| **Basel III Capital Adequacy** | Reduction in operational risk capital buffers based on documented complexity reduction | Standardized operational risk frameworks directly credit verified ledger resilience | **Basel Committee on Banking Supervision (BCBS)** |
+| **ISO/IEC TC 307 ilerlemesi** | ISO/TR teknik raporlarından resmî sertifikasyon şemalarına geçiş | Dağıtık defter motorlarını sertifikalamak için ilk standartlaştırılmış çerçeveyi kurar | **ISO/IEC JTC 1 / SC 44** (Dağıtık defter teknolojileri) |
+| **Agorá Projesi prototip aşaması** | 40'tan fazla katılımcı ticari banka; tokenleştirilmiş mevduatların birleşik defter testi | Sınır ötesi takası mesajlaşmadan (SWIFT) atomik tokenleştirilmiş mutabakata taşır | **Uluslararası Ödemeler Bankası (BIS) İnovasyon Merkezi** |
+| **DORA Madde 30 üçüncü taraf denetimi** | Düğüm sağlayıcıları ve altyapı barındırıcılarının %100'ü güvenlik ölçütlerine göre denetlendi | "Gölge doğrulayıcı düğümleri" ortadan kaldırır; tam tedarik zinciri şeffaflığını zorunlu kılar | **Avrupa Denetim Otoriteleri (ESA)** |
+| **ISO/IEC 42001 (YZ yönetişimi)** | YZ model ve eğitim logları zincir üzerinde kriptografik olarak değiştirilemez kılındı | Blok zincirini makine öğrenimi için değiştirilemez kanıt sicili ("denetim omurgası") olarak kullanır | **ISO/IEC 42001:2023** (Bilgi teknolojisi — Yapay zekâ) |
+| **Basel III sermaye yeterliliği** | Belgelenmiş karmaşıklık azaltımına dayalı operasyonel risk sermaye tamponlarının azaltılması | Standartlaştırılmış operasyonel risk çerçeveleri doğrulanmış defter dayanıklılığını doğrudan hesaba katar | **Basel Bankacılık Denetim Komitesi (BCBS)** |
 
-## 05. The AI "Audit Spine": Probabilistic Intelligence on Deterministic Infrastructure
+## 05. Yapay zekânın "denetim omurgası": deterministik altyapı üzerinde olasılıksal zekâ
 
-One of the most powerful strategic roles for a certified blockchain in 2026 is acting as an **"Audit Spine"** for artificial intelligence deployments. Modern financial systems are increasingly probabilistic. Credit scoring, real-time fraud detection, algorithmic trading, and autonomous customer interactions are driven by machine learning models that evolve, drift, and adapt over time. These models are non-deterministic: given the same input at two different times, they may yield different outputs due to dynamic weights and continuous training.
+Sertifikalı bir blok zincirinin 2026'daki en güçlü stratejik rollerinden biri, yapay zekâ dağıtımları için bir **"denetim omurgası"** olarak işlev görmektir. Modern finansal sistemler giderek olasılıksal hâle geliyor. Kredi skorlaması, gerçek zamanlı dolandırıcılık tespiti, algoritmik işlem ve otonom müşteri etkileşimleri, zaman içinde gelişen, kayan ve uyarlanan makine öğrenimi modelleriyle yürütülür. Bu modeller deterministik değildir: aynı girdiye iki farklı zamanda, dinamik ağırlıklar ve sürekli eğitim nedeniyle farklı çıktılar verebilirler.
 
-This non-determinism introduces a profound governance challenge under **ISO/IEC 42001 (AI Governance)** and **Model Risk Management (MRM)** standards (such as **US Federal Reserve SR 11-7** and **UK PRA SS1/23**): *How do you audit, explain, and defend decisions that are not strictly reproducible?*
+Bu belirsizlik, **ISO/IEC 42001 (YZ yönetişimi)** ve model riski yönetimi (MRM) standartları (**ABD Federal Rezerv'in SR 11-7'si** ve **Birleşik Krallık PRA'nın SS1/23'ü** gibi) kapsamında derin bir yönetişim sorunu doğurur: *kesin olarak yeniden üretilemeyen kararları nasıl denetler, açıklar ve savunursunuz?*
 
-A certified distributed ledger provides the deterministic counterweight. While AI models operate probabilistically, the certified blockchain records their parameters deterministically, establishing an unalterable evidentiary spine:
+Sertifikalı bir dağıtık defter deterministik karşı ağırlığı sağlar. YZ modelleri olasılıksal çalışırken, sertifikalı blok zinciri parametrelerini deterministik olarak kaydeder ve değiştirilemez bir kanıt omurgası kurar:
 
-* **Model Versioning and Weight Anchoring**: Every deployed model version, its associated weights, and its training data checksums are hashed and written to the ledger at build-time, satisfying **SLSA Level 3** supply-chain requirements.  
-* **Contextual Input Logging**: When an AI model executes a critical decision (e.g., approving a loan or flagging a transaction), the exact contextual inputs and model hashes are written to the ledger, creating a tamper-evident history.  
-* **Auditability without Code Access**: If a regulator asks, "Why did your model reject this credit application on June 3?" the bank does not need to expose proprietary code or attempt to recreate the exact model state. It presents the cryptographically signed, on-chain ledger record of the inputs, weights, and validation state.
+* **Model sürümleme ve ağırlık çıpalama**: dağıtılan her model sürümü, ilişkili ağırlıkları ve eğitim verilerinin sağlama toplamları derleme anında özetlenir ve deftere yazılır; böylece **SLSA Level 3** tedarik zinciri gereksinimleri karşılanır.  
+* **Bağlamsal girdi kaydı**: bir YZ modeli kritik bir karar yürüttüğünde (ör. bir krediyi onaylamak veya bir işlemi işaretlemek), tam bağlamsal girdiler ve model özetleri deftere yazılır ve kurcalamaya dayanıklı bir geçmiş oluşturur.  
+* **Koda erişim olmadan denetlenebilirlik**: bir düzenleyici "modeliniz bu kredi başvurusunu 3 Haziran'da neden reddetti?" diye sorarsa, banka ne özel kodunu ifşa etmek ne de modelin tam durumunu yeniden oluşturmaya çalışmak zorundadır. Girdilerin, ağırlıkların ve doğrulama durumunun kriptografik olarak imzalanmış zincir üstü kaydını sunar.
 
-By anchoring the probabilistic decisions of machine learning models to the deterministic consensus of a certified blockchain, the institution creates a defensible, reconstructable, and independently verifiable timeline of automated actions.
+Makine öğrenimi modellerinin olasılıksal kararlarını sertifikalı bir blok zincirinin deterministik mutabakatına çıpalayarak kurum, otomatik eylemlerin savunulabilir, yeniden oluşturulabilir ve bağımsız olarak doğrulanabilir bir zaman çizelgesini yaratır.
 
-## 06. Visualizing the Certified Consensus-to-Audit Pipeline
+## 06. Sertifikalı mutabakattan denetime akış hattının görselleştirilmesi
 
-The following sequence diagram illustrates the lifecycle of a transaction passing through a certified blockchain platform, demonstrating how validation gates, consensus integrity, smart contract execution, and telemetry emission interlock to produce board-ready regulatory evidence:
+Aşağıdaki sıra diyagramı, sertifikalı bir blok zinciri platformundan geçen bir işlemin yaşam döngüsünü gösterir ve doğrulama kapılarının, mutabakat bütünlüğünün, akıllı sözleşme yürütmesinin ve telemetri yayımının yönetim kuruluna hazır düzenleyici kanıt üretmek için nasıl iç içe geçtiğini ortaya koyar:
 
 ```mermaid
 sequenceDiagram
@@ -206,37 +202,37 @@ sequenceDiagram
     Engine-->>Telemetry: Emit OpenTelemetry traces (latency, state, validation status)
     Telemetry->>Telemetry: Record evidence to DORA Article 8 Register of Information
 ```
-The critical path for this transactional sequence requires that every validation, execution, and consensus step is cryptographically signed, ensuring end-to-end provenance. The regulator's auditor node synchronizes block state in real-time, eliminating the need for retrospective, manual financial reconciliation.
+Bu işlem sırasının kritik yolu, her doğrulama, yürütme ve mutabakat adımının kriptografik olarak imzalanmasını ve böylece uçtan uca kaynak kanıtını gerektirir. Düzenleyicinin denetçi düğümü blok durumunu gerçek zamanlı senkronize eder ve geriye dönük, manuel finansal mutabakat ihtiyacını ortadan kaldırır.
 
-## 07. The Boardroom Playbook for Senior Managers
+## 07. Üst düzey yöneticiler için yönetim kurulu el kitabı
 
-To successfully navigate the transition from organizational trust to infrastructural trust, bank executives and senior managers should immediately execute four key directives:
+Örgütsel güvenden altyapısal güvene geçişi başarıyla yönetmek için banka yöneticileri ve üst düzey yönetim dört temel direktifi hemen uygulamalıdır:
 
-1. **Mandate Ledger Audits in Enterprise Risk Management (ERM)**: Enforce a policy that no distributed ledger platform—whether private, public, or consortium-based—may be deployed for critical or important functions (CIFs) unless it has been audited against the 5-layer **Certified Blockchain Index Architecture** (CMM Level 3 minimum).  
-2. **Integrate Blockchains as the ISO 42001 AI Evidentiary Spine**: Direct the Chief Risk Officer and Lead AI Architect to integrate all high-impact machine learning models with a certified blockchain, creating a tamper-evident audit ledger of model versions, weights, inputs, and decisions.  
-3. **Audit the Validator Node Supply Chain (DORA Article 30)**: Require the procurement division to audit all third-party entities hosting validator nodes or managing cloud hosting for DLT networks, mandating compliance with the same cybersecurity and operational resilience standards applied to the bank’s internal cloud nodes.  
-4. **Align Ledger Architectures with CPMI-IOSCO and BCBS 239**: Instruct the platform engineering team to align ledger output telemetry directly with **BCBS 239** data reporting requirements, and ensure the consensus and settlement finality parameters strictly comply with **CPMI-IOSCO Principles 8 and 9**.
+1. **Defter denetimlerini kurumsal risk yönetiminde (ERM) zorunlu kılmak**: hiçbir dağıtık defter platformunun — özel, kamusal veya konsorsiyum temelli — beş katmanlı **Sertifikalı Blok Zincirleri Endeksi mimarisine** göre denetlenmeden (asgari CMM Seviye 3) kritik veya önemli işlevler (CIF) için dağıtılamayacağı bir politikayı uygulamak.  
+2. **Blok zincirlerini ISO 42001 YZ kanıt omurgası olarak entegre etmek**: Risk Yönetiminden Sorumlu Direktör ve Baş YZ Mimarı'nı, tüm yüksek etkili makine öğrenimi modellerini sertifikalı bir blok zinciriyle entegre etmekle görevlendirmek ve model sürümleri, ağırlıklar, girdiler ve kararlardan oluşan kurcalamaya dayanıklı bir denetim sicili oluşturmak.  
+3. **Doğrulayıcı düğüm tedarik zincirini denetlemek (DORA Madde 30)**: satın alma biriminin, doğrulayıcı düğümleri barındıran veya DLT ağları için bulut barındırma yöneten tüm üçüncü tarafları denetlemesini şart koşmak ve bankanın dâhilî bulut düğümlerine uygulanan aynı siber güvenlik ve operasyonel dayanıklılık standartlarını dayatmak.  
+4. **Defter mimarilerini CPMI-IOSCO ve BCBS 239 ile hizalamak**: platform mühendisliği ekibini, defter çıktı telemetrisini doğrudan **BCBS 239** veri raporlama gereksinimleriyle hizalamakla görevlendirmek ve mutabakat ile mutabakat kesinliği parametrelerinin **CPMI-IOSCO İlke 8 ve 9'a** kesinlikle uymasını sağlamak.
 
-## 08. Frequently Asked Questions
+## 08. Sıkça sorulan sorular
 
-**Is ISO/IEC TC 307 a certification standard?**  
-No. ISO/IEC TC 307 is a technical committee that establishes vocabulary, reference architectures, and security guidelines. While it defines "what good looks like" (guidance), the industry must operationalize these documents into formal, auditable certification schemes (assurance) to satisfy banking supervisors.
+**ISO/IEC TC 307 bir sertifikasyon standardı mı?**  
+Hayır. ISO/IEC TC 307, terminoloji, referans mimariler ve güvenlik yönergeleri oluşturan bir teknik komitedir. "Mükemmelliğin nasıl göründüğünü" tanımlasa da (rehberlik), sektörün bankacılık denetçilerini tatmin etmek için bu belgeleri resmî, denetlenebilir sertifikasyon şemalarına (güvence) dönüştürmesi gerekir.
 
-**How does a certified blockchain support DORA compliance?**  
-Under DORA Article 5, bank boards bear direct, personal liability for technology resilience. A certified blockchain provides verifiable, cryptographic evidence of consensus integrity, validator supply-chain control, and smart contract safety, giving board members the documentable "reasonable steps" needed to defend against SM&CR personal liability claims.
+**Sertifikalı bir blok zinciri DORA uyumunu nasıl destekler?**  
+DORA'nın 5. maddesi uyarınca banka yönetim kurulları teknolojik dayanıklılıktan doğrudan kişisel sorumluluk taşır. Sertifikalı bir blok zinciri; mutabakat bütünlüğü, doğrulayıcı tedarik zinciri kontrolü ve akıllı sözleşme güvenliğine dair doğrulanabilir kriptografik kanıt sağlar ve yönetim kurulu üyelerine SM&CR kapsamındaki kişisel sorumluluk iddialarına karşı savunmada gereken, belgelenebilir "makul adımları" verir.
 
-What is the difference between a traditional ledger audit and a certified blockchain audit?  
-A traditional audit is retrospective, verifying manual entries and static files after transactions have cleared. A certified blockchain audit is continuous and real-time; the validator nodes, BFT consensus engine, and formally verified smart contracts are certified to execute transactions deterministically, emitting structured telemetry (OpenTelemetry) that continuously validates the system’s health.
+Geleneksel bir defter denetimi ile sertifikalı bir blok zinciri denetimi arasındaki fark nedir?  
+Geleneksel bir denetim geriye dönüktür: işlemler mutabakata bağlandıktan sonra manuel kayıtları ve statik dosyaları doğrular. Sertifikalı bir blok zinciri denetimi sürekli ve gerçek zamanlıdır; doğrulayıcı düğümler, BFT mutabakat motoru ve biçimsel olarak doğrulanmış akıllı sözleşmeler işlemleri deterministik olarak yürütmek üzere sertifikalıdır ve sistemin sağlığını sürekli doğrulayan yapılandırılmış telemetri (OpenTelemetry) yayar.
 
-Can public blockchains be certified for banking use?  
-In most jurisdictions, pure permissionless public blockchains fail to satisfy banking regulations due to the lack of validator identity verification, unpredictable gas/transaction costs, and non-deterministic finality (e.g., probabilistic proof-of-work/stake forks). Certified blockchains in banking typically utilize enterprise permissioned or highly regulated public-hybrid architectures where validator node operators are identified and audited financial entities.
+Kamusal blok zincirleri bankacılık kullanımı için sertifikalanabilir mi?  
+Çoğu yargı bölgesinde, tamamen izinsiz kamusal blok zincirleri; doğrulayıcı kimlik doğrulamasının olmaması, öngörülemeyen işlem maliyetleri ve deterministik olmayan kesinlik (ör. olasılıksal proof-of-work/stake çatallanmaları) nedeniyle bankacılık düzenlemelerini karşılamaz. Bankacılıkta sertifikalı blok zincirleri genellikle, doğrulayıcı düğüm operatörlerinin kimliği belirlenmiş ve denetlenmiş finansal kuruluşlar olduğu, izinli kurumsal mimarileri veya sıkı düzenlenmiş kamusal-hibrit mimarileri kullanır.
 
-## 09. References
+## 09. Kaynaklar
 
-* Basel Committee on Banking Supervision (BCBS), 2013. *Principles for effective risk data aggregation and reporting (BCBS 239)*. Basel: Bank for International Settlements. Available at: [https://www.bis.org/publ/bcbs239.pdf](https://www.bis.org/publ/bcbs239.pdf).  
-* Committee on Payments and Market Infrastructures and Technical Committee of the International Organization of Securities Commissions (CPMI-IOSCO), 2012. *Principles for financial market infrastructures*. Basel: Bank for International Settlements. Available at: [https://www.bis.org/cpmi/publ/d101a.pdf](https://www.bis.org/cpmi/publ/d101a.pdf).  
-* European Banking Authority (EBA), 2019. *EBA/GL/2019/02 — Guidelines on outsourcing arrangements*. Paris: EBA. Available at: [https://www.eba.europa.eu/regulation-and-policy/internal-governance/guidelines-on-outsourcing-arrangements](https://www.eba.europa.eu/regulation-and-policy/internal-governance/guidelines-on-outsourcing-arrangements).  
-* European Parliament and Council of the European Union, 2022. *Regulation (EU) 2022/2554 on digital operational resilience for the financial sector (DORA)*. Brussels: Official Journal of the European Union. Available at: [https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554).  
-* ISO/IEC JTC 1/SC 42, 2023. *ISO/IEC 42001:2023 — Information technology — Artificial intelligence — Management system*. Geneva: International Organization for Standardization. Available at: [https://www.iso.org/standard/81230.html](https://www.iso.org/standard/81230.html).  
-* ISO/IEC Technical Committee 307, 2020. *ISO/IEC 22739:2020 — Blockchain and distributed ledger technologies — Vocabulary*. Geneva: International Organization for Standardization. Available at: [https://www.iso.org/standard/73771.html](https://www.iso.org/standard/73771.html).  
-* National Institute of Standards and Technology (NIST), 2026. *First Three Finalized Post-Quantum Encryption Standards (FIPS 203, 204, and 205)*. Gaithersburg: U.S. Department of Commerce. Available at: [https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards](https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards).
+* Basel Bankacılık Denetim Komitesi (BCBS), 2013. *Principles for effective risk data aggregation and reporting (BCBS 239)*. Basel: Uluslararası Ödemeler Bankası. Şu adreste mevcuttur: [https://www.bis.org/publ/bcbs239.pdf](https://www.bis.org/publ/bcbs239.pdf).  
+* Committee on Payments and Market Infrastructures ve Technical Committee of the International Organization of Securities Commissions (CPMI-IOSCO), 2012. *Principles for financial market infrastructures*. Basel: Uluslararası Ödemeler Bankası. Şu adreste mevcuttur: [https://www.bis.org/cpmi/publ/d101a.pdf](https://www.bis.org/cpmi/publ/d101a.pdf).  
+* Avrupa Bankacılık Otoritesi (EBA), 2019. *EBA/GL/2019/02 — Guidelines on outsourcing arrangements*. Paris: EBA. Şu adreste mevcuttur: [https://www.eba.europa.eu/regulation-and-policy/internal-governance/guidelines-on-outsourcing-arrangements](https://www.eba.europa.eu/regulation-and-policy/internal-governance/guidelines-on-outsourcing-arrangements).  
+* Avrupa Parlamentosu ve Avrupa Birliği Konseyi, 2022. *Finansal sektör için dijital operasyonel dayanıklılığa ilişkin (AB) 2022/2554 Tüzüğü (DORA)*. Brüksel: Avrupa Birliği Resmî Gazetesi. Şu adreste mevcuttur: [https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554).  
+* ISO/IEC JTC 1/SC 42, 2023. *ISO/IEC 42001:2023 — Information technology — Artificial intelligence — Management system*. Cenevre: Uluslararası Standardizasyon Örgütü. Şu adreste mevcuttur: [https://www.iso.org/standard/81230.html](https://www.iso.org/standard/81230.html).  
+* ISO/IEC Teknik Komitesi 307, 2020. *ISO/IEC 22739:2020 — Blockchain and distributed ledger technologies — Vocabulary*. Cenevre: Uluslararası Standardizasyon Örgütü. Şu adreste mevcuttur: [https://www.iso.org/standard/73771.html](https://www.iso.org/standard/73771.html).  
+* National Institute of Standards and Technology (NIST), 2026. *First Three Finalized Post-Quantum Encryption Standards (FIPS 203, 204, and 205)*. Gaithersburg: U.S. Department of Commerce. Şu adreste mevcuttur: [https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards](https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards).
