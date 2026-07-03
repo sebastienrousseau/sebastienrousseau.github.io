@@ -1,9 +1,6 @@
 ---
-
-# Front Matter (YAML)
-
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
-banner_alt: "A bank operations centre at night with analysts monitoring autonomous decisioning dashboards, representing measurable agentic AI governance."
+banner_alt: "Ile-iṣẹ iṣẹ banki ni alẹ pẹlu awọn oluyanju ti n ṣọ awọn dashboard ipinnu aladaaṣe, ti o ṣe afihan iṣakoso agentic AI ti a le wọn."
 banner_height: "1280"
 banner_width: "1920"
 banner: "https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp"
@@ -11,109 +8,95 @@ cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved."
-date: "June 30, 2026"
-description: "A six-dimension index scoring agentic AI readiness in banks: autonomy tiers, governance, regulatory evidence, economics, readiness, and global alignment."
+date: "July 1, 2026"
+description: "Ìtọ́ka oní-mẹ́fà fún ìmúrasílẹ̀ agentic AI ní banki: ipele autonomy, iṣakoso, ẹri ilana, ọrọ-aje, imurasilẹ, ati ibamu agbaye."
 format-detection: "telephone=no"
-hreflang: "en"
+hreflang: "yo"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
-id: "https://sebastienrousseau.com/2026-06-30-agentic-ai-index-banks-measuring-autonomy-2026"
-image_alt: "Black and White Portrait of Sebastien Rousseau"
+id: "https://sebastienrousseau.com/yo/2026-07-01-agentic-ai-index-banks-measuring-autonomy-2026"
+image_alt: "Aworan dudu ati funfun ti Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
 image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
-keywords: "agentic AI, agentic AI banking, AI governance, autonomy tiers, model risk management, SR 11-7, SS1/23, EU AI Act, FSB sound practices, IOSCO, MAS, IMDA, agent control plane, kill switch, WORM audit log, OPA, OAuth, audit evidence, DORA, ROTE, McKinsey, Cambridge CCAF, Stanford AI Index, OSWorld"
-language: "en-GB"
-last_reviewed: "2026-06-30"
+keywords: "agentic AI, agentic AI banking, iṣakoso AI, ipele autonomy, iṣakoso ewu model, SR 11-7, SS1/23, EU AI Act, FSB sound practices, IOSCO, MAS, IMDA, agent control plane, kill switch, WORM audit log, OPA, OAuth, ẹri audit, DORA, ROTE, McKinsey, Cambridge CCAF, Stanford AI Index, OSWorld"
+language: "yo"
+last_reviewed: "2026-07-01"
 layout: "report"
-locale: "en_GB"
-logo_alt: "Logo for Sebastien Rousseau"
+locale: "yo_NG"
+logo_alt: "Aami fun Sebastien Rousseau"
 logo_height: "44"
 logo_width: "44"
 logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 menu: ""
 measurementID: "G-169G4ET5HQ"
 name: "Sebastien Rousseau"
-permalink: "https://sebastienrousseau.com/2026-06-30-agentic-ai-index-banks-measuring-autonomy-2026"
+permalink: "https://sebastienrousseau.com/yo/2026-07-01-agentic-ai-index-banks-measuring-autonomy-2026"
 rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
 schema: "FAQPage, Article"
-seo_title: "Agentic AI Index for Banks 2026: Measuring Autonomy"
+seo_title: "Ìtọ́ka Agentic AI fún Banki 2026: Wíwọ̀n Autonomy"
 short_name: "sebastienrousseau"
-subtitle: "52% of banks run agentic AI; only 14% call it transformative. This index scores readiness across six dimensions — autonomy, governance, regulatory evidence, economics, readiness, and alignment — against SR 11-7, the EU AI Act, and the FSB June 2026 sound practices."
-tags: "agentic AI, AI governance, banking, autonomy tiers, model risk, SR 11-7, EU AI Act, FSB, IOSCO, MAS, IMDA, control plane, audit log, DORA, McKinsey, Stanford AI Index"
+subtitle: "52% ti banki n ṣiṣẹ agentic AI; 14% nikan ni wọn pe e ni iyipada pataki. Ìtọ́ka yii n fun imurasilẹ ni ami kọja iwọn mẹfa — autonomy, iṣakoso, ẹri ilana, ọrọ-aje, imurasilẹ, ati ibamu — lodi si SR 11-7, EU AI Act, ati FSB sound practices ti June 2026."
+tags: "agentic AI, iṣakoso AI, banki, ipele autonomy, ewu model, SR 11-7, EU AI Act, FSB, IOSCO, MAS, IMDA, control plane, audit log, DORA, McKinsey, Stanford AI Index"
 theme-color: "0, 83, 191"
-title: "The Agentic AI Index for Banks in 2026: Measuring Autonomy"
-url: "https://sebastienrousseau.com/2026-06-30-agentic-ai-index-banks-measuring-autonomy-2026"
+title: "Ìtọ́ka Agentic AI fún Banki ní 2026: Wíwọ̀n Autonomy"
+url: "https://sebastienrousseau.com/yo/2026-07-01-agentic-ai-index-banks-measuring-autonomy-2026"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
-
-# RSS - The RSS feed front matter (YAML).
-atom_link: "https://sebastienrousseau.com/2026-06-30-agentic-ai-index-banks-measuring-autonomy-2026/rss.xml"
+atom_link: "https://sebastienrousseau.com/2026-07-01-agentic-ai-index-banks-measuring-autonomy-2026/rss.xml"
 category: "Technology"
-docs: https://validator.w3.org/feed/docs/rss2.html
+docs: "https://validator.w3.org/feed/docs/rss2.html"
 generator: "Static Site Generator (SSG) (version 0.0.26)"
-item_description: "A six-dimension index scoring agentic AI readiness in banks: autonomy tiers, governance, regulatory evidence, economics, readiness, and global alignment."
-item_guid: "https://sebastienrousseau.com/2026-06-30-agentic-ai-index-banks-measuring-autonomy-2026/rss.xml"
-item_link: "https://sebastienrousseau.com/2026-06-30-agentic-ai-index-banks-measuring-autonomy-2026/rss.xml"
-item_pub_date: "Tue, 30 Jun 2026 07:07:07 +0000"
-item_title: "The Agentic AI Index for Banks in 2026: Measuring Autonomy"
-last_build_date: "Tue, 30 Jun 2026 06:06:06 +0000"
+item_description: "Ìtọ́ka oní-mẹ́fà fún ìmúrasílẹ̀ agentic AI ní banki: ipele autonomy, iṣakoso, ẹri ilana, ọrọ-aje, imurasilẹ, ati ibamu agbaye."
+item_guid: "https://sebastienrousseau.com/2026-07-01-agentic-ai-index-banks-measuring-autonomy-2026/rss.xml"
+item_link: "https://sebastienrousseau.com/2026-07-01-agentic-ai-index-banks-measuring-autonomy-2026/rss.xml"
+item_pub_date: "Wed, 01 Jul 2026 07:07:07 +0000"
+item_title: "Ìtọ́ka Agentic AI fún Banki ní 2026: Wíwọ̀n Autonomy"
+last_build_date: "Wed, 01 Jul 2026 06:06:06 +0000"
 managing_editor: "contact@sebastienrousseau.com (Sebastien Rousseau)"
-pub_date: "Tue, 30 Jun 2026 07:07:07 +0000"
+pub_date: "Wed, 01 Jul 2026 07:07:07 +0000"
 ttl: "60"
 type: "article"
 webmaster: "contact@sebastienrousseau.com"
-
-# Apple - The Apple front matter (YAML).
 apple_mobile_web_app_orientations: "portrait"
 apple_touch_icon_sizes: "192x192"
 apple-mobile-web-app-capable: "yes"
 apple-mobile-web-app-status-bar-inset: "black"
 apple-mobile-web-app-status-bar-style: "black-translucent"
-apple-mobile-web-app-title: "Agentic AI Index for Banks 2026: Measuring Autonomy"
+apple-mobile-web-app-title: "Ìtọ́ka Agentic AI Banki"
 apple-touch-fullscreen: "yes"
-
-# MS Application - The MS Application front matter (YAML).
-
 msapplication-navbutton-color: "0, 83, 191"
-
-# Twitter Card - The Twitter Card front matter (YAML).
-
 twitter_card: "summary_large_image"
 twitter_creator: "@wwdseb"
-twitter_description: "A six-dimension index scoring agentic AI readiness in banks: autonomy tiers, governance, regulatory evidence, economics, readiness, and global alignment."
+twitter_description: "Ìtọ́ka oní-mẹ́fà fún ìmúrasílẹ̀ agentic AI ní banki: ipele autonomy, iṣakoso, ẹri ilana, ọrọ-aje, imurasilẹ, ati ibamu agbaye."
 twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
-twitter_image_alt: "Logo of Sebastien Rousseau"
+twitter_image_alt: "Aami Sebastien Rousseau"
 twitter_site: "@wwdseb"
-twitter_title: "Agentic AI Index for Banks 2026: Measuring Autonomy"
-twitter_url: "https://sebastienrousseau.com/2026-06-30-agentic-ai-index-banks-measuring-autonomy-2026"
-
-excerpt: "Agentic AI is operational infrastructure in 2026. This index measures it the way banks measure capital and credit: a six-dimension readiness score across autonomy tiers, the control plane, regulatory evidence, unit economics, organisational readiness, and global regulatory alignment."
-
-# Humans.txt - The Humans.txt front matter (YAML).
+twitter_title: "Ìtọ́ka Agentic AI fún Banki 2026: Wíwọ̀n Autonomy"
+twitter_url: "https://sebastienrousseau.com/2026-07-01-agentic-ai-index-banks-measuring-autonomy-2026"
+excerpt: "Agentic AI jẹ amayederun iṣẹ ni 2026. Ìtọ́ka yii n wọn un gẹgẹ bi banki ṣe n wọn olu ati kirẹditi: ami imurasilẹ oní-mẹ́fà kọja ipele autonomy, control plane, ẹri ilana, unit economics, imurasilẹ ajo, ati ibamu ilana agbaye."
 author_website: "https://sebastienrousseau.com"
 author_twitter: "@wwdseb"
 author_location: "London, UK"
-thanks: "Thanks for reading!"
-site_last_updated: "2026-06-30"
+thanks: "Ẹ ṣé fún kíka!"
+site_last_updated: "2026-07-01"
 site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
-
 ---
 
-# The Agentic AI Index for Banks in 2026: Measuring Autonomy
+# Ìtọ́ka Agentic AI fún Banki ní 2026: Wíwọ̀n Autonomy
 
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
-<p class="post-lead-tldr"><strong>TL;DR.</strong> Agentic AI in banking is operational infrastructure in 2026: 52% of financial institutions already deploy it, yet only 14% call it transformative. This index closes that gap by scoring readiness across six dimensions — autonomy tiers, governance architecture, regulatory evidence, economic accountability, organisational readiness, and global regulatory alignment — calibrated to SR 11-7, SS1/23, the EU AI Act, and the FSB June 2026 sound practices.</p>
-<p class="post-lead-heading"><strong>Key takeaways</strong></p>
+<aside class="post-lead" aria-label="Akopọ àpilẹ̀kọ">
+<p class="post-lead-tldr"><strong>Ni kukuru.</strong> Agentic AI ninu banki jẹ amayederun iṣẹ ni 2026: 52% ti awọn ile-iṣẹ inawo ti n lo o tẹlẹ, sibẹ 14% nikan ni wọn pe e ni iyipada pataki. Ìtọ́ka yii pa aafo naa nipa fifun imurasilẹ ni ami kọja iwọn mẹfa — ipele autonomy, faaji iṣakoso, ẹri ilana, iṣiro ọrọ-aje, imurasilẹ ajo, ati ibamu ilana agbaye — ti a ṣe ibamu pẹlu SR 11-7, SS1/23, EU AI Act, ati FSB sound practices ti June 2026.</p>
+<p class="post-lead-heading"><strong>Awọn koko pataki</strong></p>
 <ul class="post-lead-takeaways">
-  <li><strong>Autonomy is the new capital adequacy.</strong> Measure agentic AI the way you measure capital, credit, and liquidity, or a regulator will measure it for you.</li>
-  <li><strong>OSWorld at 66.3% is the reliability ceiling.</strong> Three linked tool-calls compound to a 29% end-to-end success rate; unsupervised execution against live payment systems is not defensible.</li>
-  <li><strong>The control plane is the only thing that fails safely.</strong> OAuth scoping, deterministic guardrails, policy-as-code, WORM audit logs, and a tested kill switch carry the highest index weight.</li>
-  <li><strong>The regulatory clock is running.</strong> EU AI Act Annex III obligations take effect 2 August 2026; the FSB consultation closes 22 July 2026.</li>
+  <li><strong>Autonomy ni capital adequacy tuntun.</strong> Wọn agentic AI bi o ṣe n wọn olu, kirẹditi, ati liquidity, bibẹẹkọ olutọsọna yoo wọn un fun ọ.</li>
+  <li><strong>OSWorld ni 66.3% ni oke igbẹkẹle.</strong> Tool-call mẹta ti a so pọ dinku si 29% aṣeyọri opin-si-opin; ṣiṣe laisọ abojuto lori eto isanwo laaye ko le dá lórí ẹri.</li>
+  <li><strong>Control plane nikan ni ohun ti o le kuna ni ailewu.</strong> OAuth scoping, guardrails ti ko yipada, policy-as-code, WORM audit logs, ati kill switch ti a ti danwo ni iwuwo ìtọ́ka to ga ju.</li>
+  <li><strong>Aago ilana n lọ.</strong> Awọn ọranyan EU AI Act Annex III bẹrẹ 2 August 2026; ijumọsọrọ FSB pari 22 July 2026.</li>
 </ul>
-<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026">The Agentic AI Index in 2026: Autonomy, Governance and Auditability</a>, <a href="https://sebastienrousseau.com/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026">The Autonomous Treasury Index in 2026</a>, <a href="https://sebastienrousseau.com/2026-05-17-agentic-engineering-banks-blueprint-2026">Agentic Engineering for Banks: A 2026 Blueprint</a>.</p>
+<p class="post-lead-related"><strong>Kíka tó jọmọ:</strong> <a href="https://sebastienrousseau.com/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026">Ìtọ́ka Agentic AI ní 2026: Autonomy, Iṣakoso ati Auditability</a>, <a href="https://sebastienrousseau.com/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026">Ìtọ́ka Treasury Aladaaṣe ní 2026</a>, <a href="https://sebastienrousseau.com/2026-05-17-agentic-engineering-banks-blueprint-2026">Agentic Engineering fún Banki: Blueprint 2026</a>.</p>
 </aside>
 <!-- lead-end -->
 
@@ -129,7 +112,7 @@ Agentic AI in banking has crossed from experiment into operational infrastructur
 > - **JP Morgan has named a year.** Derek Waldron, chief analytics officer, confirmed to CNBC on 9 June 2026 that the bank will deploy long-running autonomous agents ([CNBC, 2026](https://www.cnbc.com/2026/06/09/jpmorgan-chase-ai-agents.html "JPMorgan Chase plans to deploy more powerful AI agents this year")) — capable of operating independently for one to two hours — within 2026. That disclosure changes the competitive frame for every institution benchmarking against it.
 > - **The index scores six dimensions.** Autonomy Tier, Governance Architecture, Regulatory Evidence, Economic Accountability, Organisational Readiness, and Global Regulatory Alignment. Together they convert an AI programme from a portfolio of initiatives into a measurable capability.
 
-## Why This Index Exists
+## Idi ti Ìtọ́ka Yii Fi Wà
 
 The Evident AI Index ranks 50 global banks across Talent, Innovation, Leadership, and Transparency using millions of publicly available data points. It is the most trusted external benchmark of AI maturity in financial services. What it does not do — by design — is score the specific engineering and governance architecture that makes agentic AI safe to deploy against live banking APIs. The Stanford AI Index tracks research output, technical performance, and societal impact. What it does not do is translate OSWorld task-completion percentages into an operational instruction set for a treasurer, a chief risk officer, or a model validation team.
 
@@ -137,9 +120,9 @@ This index fills that gap. It takes the measurability discipline of the Stanford
 
 The practical trigger is that agentic AI has shifted from a planning conversation to an audit question. When JP Morgan's chief analytics officer announces same-year deployment of long-running autonomous agents, when DBS builds agent control planes into credit memo preparation and customer servicing, when FSB instructs that agents executing financial transactions require "human approval or dual authorisation above a threshold value, restricted agent access to payment systems, and audit trails of every agent transaction" — the institution that cannot score its own posture will find a regulator scoring it instead.
 
-## The 2026 Agentic AI Maturity Landscape
+## Aworan Maturity Agentic AI ni 2026
 
-### What the Data Shows
+### Ohun ti Data Fihan
 
 The 2026 Cambridge CCAF report — the largest global study of AI in financial services, covering 628 organisations across 151 jurisdictions in partnership with BIS, IMF, WEF, and the World Bank — provides the statistical foundation for this index.
 
@@ -158,7 +141,7 @@ The 2026 Cambridge CCAF report — the largest global study of AI in financial s
 
 These numbers define the problem precisely: adoption is ahead of governance, productivity gains are visible, transformation is rare, and the measurement gap is widest where the regulatory stakes are highest — large financial institutions.
 
-### Where Competitors Are Drawing the Lines
+### Ibi ti Awọn Oludije Ti N Fa Ila
 
 The Evident AI Index 2025 placed JP Morgan Chase first (score: 79), followed by Capital One (78.1), RBC (58.4), CommBank Australia (53.9), and Morgan Stanley (52.2). The index measures four capability pillars — Talent, Innovation, Leadership, Transparency — not operational agent architecture. That creates a structural gap: a bank can score highly on Innovation disclosure while deploying agents with no kill switch, no WORM audit log, and no OPA policy gate. This index is designed to make that gap visible.
 
@@ -166,11 +149,11 @@ Deloitte's 2026 Tech Trends reports that only 11% of organisations have agentic 
 
 The Evident Venture Tracker for Q1 2026 identifies Anthropic as the most referenced vendor, with a long-tail of specialised players accounting for 68% of all deployments, largely targeting workflow-specific use cases in credit, anti-money laundering, and treasury. The supply side is mature. The governance side is not.
 
-## The Six-Dimension Index Architecture
+## Faaji Ìtọ́ka Oní-mẹ́fà
 
 This index scores agentic AI readiness across six dimensions. Each dimension has a four-level maturity scale. A bank's index score is the product of its dimensional scores weighted by regulatory materiality. The weighting framework is calibrated to SR 11-7, SS1/23, the EU AI Act Annex III obligations, and FSB Sound Practice categories.
 
-### Dimension 1: Autonomy Tier Coverage
+### Iwọn 1: Ibora Ipele Autonomy
 
 **What it measures:** Whether every production agentic workflow is classified on a defined autonomy ladder, with no workflow operating above its permitted tier without documented exception — and whether that tier assignment defines not only task boundaries but legal accountability boundaries.
 
@@ -189,7 +172,7 @@ For Level 3 and Level 4 workflows — where the agent executes consequential act
 | **Level 3 — Classified and controlled** | All production workflows tagged Level 0–4; Level 5 contractually prohibited; quarterly tier-audit artefacts available for MRM review | 50–74 |
 | **Level 4 — Classified, controlled, and evidence-ready** | Complete tier register; continuous drift monitoring; any tier reclassification triggers new MRM validation; auditor can reconstruct tier assignment for any workflow on demand | 75–100 |
 
-### Dimension 2: Governance Architecture
+### Iwọn 2: Faaji Iṣakoso
 
 **What it measures:** Whether the five-component agent control plane is fully engineered and operational in production — not described in a policy document.
 
@@ -216,7 +199,7 @@ The AMI layer is not a replacement for human oversight; it is the detection mech
 | **Level 3 — Operational** | All five components operational in production; kill switch tested quarterly; WORM logs complete for Level-3+ workflows; OPA policies version-controlled | 50–74 |
 | **Level 4 — Evidence-ready** | Control plane generates continuous, cryptographically signed evidence; per-agent identity satisfies EU AI Act Article 12; kill-switch test results are audit artefacts; drift detection is automated | 75–100 |
 
-### Dimension 3: Regulatory Evidence Completeness
+### Iwọn 3: Pipe Ẹri Ilana
 
 **What it measures:** Whether the institution can produce a complete, per-workflow regulatory evidence package on demand for SR 11-7, SS1/23, EU AI Act, DORA, FSB, and applicable national frameworks.
 
@@ -237,7 +220,7 @@ The Singapore Model AI Governance Framework for Agentic AI (MGF) requires financ
 | **Level 3 — Continuous evidence** | Model cards maintained per workflow; continuous eval suites re-run weekly; EU AI Act Article 12 per-agent logging operational; FSB Sound Practice categories mapped to internal controls | 50–74 |
 | **Level 4 — Examiner-ready** | Complete regulatory evidence package retrievable on demand per workflow; three-lines-of-defence validation records current; bank-specific eval suite catches model-update regressions faster than vendor release cycles; MAS MGF four-dimension mapping completed | 75–100 |
 
-### Dimension 4: Economic Accountability
+### Iwọn 4: Iṣiro Ọrọ-aje
 
 **What it measures:** Whether the institution measures agentic AI return using workflow-level unit economics rather than programme-level productivity claims.
 
@@ -262,7 +245,7 @@ The agentic AI market in banking is growing at a rate that makes this measuremen
 | **Level 3 — Workflow-level tracking** | Cost per completed decision tracked per workflow; reversal rate monitored; manual touches avoided calculated net of control-plane overhead | 50–74 |
 | **Level 4 — Full economic accountability** | All four unit-economic metrics tracked per workflow; reversal rates above 2% trigger automatic workflow review; audit-trace completeness is a dashboard metric reported to the board quarterly | 75–100 |
 
-### Dimension 5: Organisational Readiness
+### Iwọn 5: Imurasilẹ Ajo
 
 **What it measures:** Whether the institution has the talent, cross-functional governance, board-level reporting, and culture to deploy and sustain agentic AI at scale — not just to pilot it.
 
@@ -281,7 +264,7 @@ The board reporting framework for agentic AI should cover four numbers per workf
 | **Level 3 — Operational governance** | Board receives quarterly agentic AI dashboard with per-workflow metrics; cross-functional model risk committee covers agents; workforce preparedness tracked against benchmarks; MRM bench scaled to validate 20+ agents per quarter | 50–74 |
 | **Level 4 — Governance as competitive advantage** | Board evidence package satisfies FSB Sound Practices 1–4 and DORA Article 5 personal-liability requirements; MRM bench validates 50+ agents per quarter; culture of continuous governance improvement documented in annual report; institution responds to FSB consultation | 75–100 |
 
-### Dimension 6: Global Regulatory Alignment
+### Iwọn 6: Ibamu Ilana Agbaye
 
 **What it measures:** Whether the institution's agentic AI operating model is aligned to the four major regulatory frameworks that apply in its principal operating jurisdictions — and whether that alignment is evidenced, not asserted.
 
@@ -304,7 +287,7 @@ The regulatory landscape for agentic AI has crystallised in the first half of 20
 | **Level 3 — Evidenced compliance** | Per-workflow evidence packages produced against applicable frameworks; EU AI Act Article 12 per-agent logging complete; FSB Sound Practices 5–10 mapped to internal controls; Singapore MGF four-dimension mapping completed | 50–74 |
 | **Level 4 — Proactive regulatory engagement** | Institution participates in FSB, IOSCO, and national regulator consultations; regulatory intelligence integrated into agent deployment lifecycle; supervisory evidence generated automatically by operational pipelines, not assembled post-hoc | 75–100 |
 
-## The Composite Index Score
+## Ami Ìtọ́ka Apapọ
 
 The six dimensional scores combine into a composite index using the following regulatory-materiality weighting:
 
@@ -319,7 +302,7 @@ The six dimensional scores combine into a composite index using the following re
 
 A composite score below 50 means the institution cannot defend its current agentic AI posture to an SR 11-7 examiner, a PRA on-site review, or an EU AI Act supervisory assessment. A score of 50–74 means controls exist but are not yet continuous or evidence-ready. A score of 75–100 means governance is a competitive asset, not a compliance cost.
 
-## Current Signals to Track
+## Awọn Ami Lọwọlọwọ lati Tọpinpin
 
 | Signal | What It Means for Banks | Source |
 |---|---|---|
@@ -334,9 +317,9 @@ A composite score below 50 means the institution cannot defend its current agent
 | **IOSCO Supervisory Toolkit: May 2026** | Full AI lifecycle coverage including agentic AI; emergent behaviour and cascading failure risks named explicitly | IOSCO |
 | **McKinsey: 4pp ROTE gap** | AI pioneers could open a 4 percentage point ROTE advantage over laggards; the measurement infrastructure for capturing that gap is workflow-level unit economics | McKinsey |
 
-## What This Means by Institution Type
+## Itumọ Eyi Fun Iru Ile-iṣẹ Kọọkan
 
-### Global Systemically Important Banks (G-SIBs)
+### Awọn Banki Pataki Eto Agbaye (G-SIBs)
 
 G-SIBs face the hardest governance challenge — not because the technology is more complex, but because scale and jurisdiction compound every gap. A G-SIB with 200 production agents across 30 business lines in 15 regulatory jurisdictions has 200 potential SR 11-7 findings, 200 potential EU AI Act audit-log failures, and 200 potential FSB Sound Practice gaps — simultaneously. The investment priority is not another pilot. It is the central control plane, the unified audit-log infrastructure, and an MRM bench capable of validating 50-plus agents per quarter.
 
@@ -352,13 +335,13 @@ IOSCO named this dynamic explicitly in the May 2026 Supervisory Toolkit, warning
 
 Scoring systemic herding resilience in Dimension 6 requires three disclosures and one architectural control. The disclosures: what is the underlying foundation model for each production agentic workflow; what is the vendor dependency map across the agent portfolio; and what is the institution's assessment of its contribution to cross-institutional correlated behaviour under a defined stress scenario. The architectural control: at least one of the primary agents in high-risk asset classes (trading, liquidity management, credit) must use a different underlying model or a significantly different fine-tuned variant, so that a single model's distributional response to a stress event cannot produce a fully correlated outcome across all agentic workflows simultaneously. This is model diversity as systemic-risk management — the agentic equivalent of counterparty diversification.
 
-### Transaction and Corporate Banks
+### Transaction ati Corporate Banks
 
 Highest-ROI agentic workflows are payment repair, KYC document extraction, treasury services, reconciliation breaks, and corporate client FAQ deflection. All Level-2 or bounded Level-3 under the autonomy ladder. The corporate client does not care that an agent executed the payment repair; they care that SLA improved and dispute rate stayed flat. Lead with the four unit-economic metrics, not with technology capability claims.
 
 The Autonomous Treasury framework — observe → detect → forecast → prepare → request human approval → submit signed payload — is the right architecture for corporate treasury agents in 2026. The agent's prepared `pain.001` payload routes through the same schema validation, fraud scoring, and sanctions engines as a corporate ERP submission. The conditionality layer (threshold, collateral eligibility, buffer floor) gates whether the `pain.001` is sent, not what shape it takes. Treasury platforms that invent bespoke payloads to express conditions will fall out of the bank-consumable path.
 
-### Regional Banks and Community Banks
+### Awọn Banki Agbegbe ati Community Banks
 
 McKinsey's scenario analysis identifies three viable positions: wait and see, adapt as a product supplier behind agent interfaces, or compete for the direct customer relationship. Regional banks that fail to make this choice explicitly will drift into the wait-and-see posture by default — and find that the governance debt accumulated during that drift is the primary obstacle when competitive pressure forces action.
 
@@ -366,7 +349,7 @@ The OCC's proportionality principle — "proportionate does not mean absent" —
 
 CSI's 2026 Banking Priorities survey found that 85% of community banking respondents believe AI adoption will provide a significant competitive advantage and 50% named it the top technology trend for 2026. The governance infrastructure is what separates the 85% of believers from the small fraction that will capture the value.
 
-### Fintechs, PSPs, and Infrastructure Providers
+### Fintechs, PSPs, ati Awọn Olupese Amayederun
 
 The product question for agentic AI vendors in 2026 is not "does your platform perform better than humans?" It is "does your platform produce an SR 11-7-compliant audit trace, an EU AI Act Article 12-compliant per-agent log, and an FSB Sound Practice 10-compliant oversight model — out of the box?" Vendors who can answer that with a documented, testable yes will close enterprise deals. Vendors who cannot will cycle through proof-of-concept loops while bank MRM teams find reasons to fail validation.
 
@@ -374,13 +357,13 @@ Oracle launched an enterprise agentic AI platform for banking in February 2026. 
 
 The long-tail vendor dynamic identified by Evident — 68% of agentic AI deployments at banks now use specialised vendors beyond the hyperscalers — means third-party AI vendor risk is accelerating faster than most bank procurement frameworks can assess it. DORA requires documented due diligence on every ICT third-party provider. The EU AI Act layers additional requirements for vendors whose systems are used in high-risk categories. Banks that outsource governance to their vendor are outsourcing accountability — and the supervisory record will reflect that.
 
-### Enterprise and SME Businesses (Non-Bank Financial Services)
+### Awọn Ile-iṣẹ Enterprise ati SME (Iṣẹ Inawo Ti Kii Ṣe Banki)
 
 The governance burden is proportionate to the risk materiality of agentic AI use, but the measurement framework applies universally. An enterprise deploying agents in accounts payable, working capital optimisation, or financial planning and analysis needs the same unit-economic accountability framework — cost per completed decision, reversal rate, audit-trace completeness — even if the regulatory obligations are lighter than those on a systemically important bank. The FSB Sound Practices are framed as non-binding guidance applicable to financial institutions of all types and sizes. IBM's finding that enterprises average 54 AI agent incidents per year, including data breaches and cascading system failures, applies across the enterprise landscape.
 
 For SMEs accessing banking services through agentic interfaces — the scenario McKinsey describes as consumers using AI agents as a new banking channel — the governance obligation falls upstream on the bank or PSP providing the agentic layer. But the SME's own data and operational integrity depends on that governance being real. Understanding the index score of the institutions managing your financial workflows is rapidly becoming a vendor-selection criterion.
 
-## The Board-Level Scorecard
+## Scorecard Ipele Board
 
 A useful board scorecard for agentic AI should track six metrics — the minimum set that distinguishes a governed programme from an ungoverned one:
 
@@ -393,7 +376,7 @@ A useful board scorecard for agentic AI should track six metrics — the minimum
 
 These six numbers convert agentic AI from a slide deck into an operating model. They are also the numbers an SR 11-7 examiner, a PRA on-site reviewer, or an EU supervisory authority will ask for first.
 
-## The Gaps This Index Addresses
+## Awọn Aafo ti Ìtọ́ka Yii N Bo
 
 Three structural gaps distinguish this index from existing frameworks:
 
@@ -403,7 +386,7 @@ Three structural gaps distinguish this index from existing frameworks:
 
 **Gap 3: Programme-level economics mask workflow-level failure.** The industry standard of reporting AI value at the programme level — "AI saved X hours of compliance work" — makes it structurally impossible to trace a reversal, a false-positive SAR filing, or an unexplained agent action to the workflow that produced it. The unit-economic dimension of this index requires workflow-level accountability. This is the measurement architecture that makes a CFO conversation defensible and an audit conversation survivable.
 
-## Conclusion
+## Ipari
 
 Agentic AI in banks in 2026 is an engineering problem wearing the clothes of a strategy conversation. The model is interchangeable. The control plane — OAuth scoping, deterministic semantic routing, OPA policy gates, immutable WORM audit logs, and a tested kill switch — is not. The governance architecture — three-lines-of-defence validation, continuous bank-specific eval suites, board-level unit economics reporting — is not. The regulatory evidence package — per-workflow SR 11-7 model cards, EU AI Act Article 12 per-agent logs, FSB Sound Practice mappings — is not.
 
@@ -411,7 +394,7 @@ The institutions that will be credible to regulators in 2027 are the ones scorin
 
 OSWorld at 66.3% is the reliability ceiling. Three linked tool-calls at that rate produce a 29% end-to-end success rate. Plan accordingly. The institutions that measure agents the way they measure any other operational risk — by evidence, not aspiration — will find that governance is not the constraint on agentic AI. It is the only thing that makes agentic AI competitive.
 
-## Frequently Asked Questions
+## Awọn Ibeere Ti A Maa N Beere
 
 **What is the difference between this index and the Evident AI Index?**
 The Evident AI Index benchmarks AI maturity across 50 global banks using publicly available data across Talent, Innovation, Leadership, and Transparency. This index scores the specific engineering and governance architecture — the control plane, the audit log, the autonomy tier classification, the regulatory evidence package — that makes agentic AI safe to deploy against live banking APIs. The two indexes are complementary: Evident measures the strategic posture; this index measures operational readiness.
@@ -431,7 +414,7 @@ Six metrics per workflow: autonomy tier, control-plane completeness, audit-trace
 **Does the FSB consultation create binding obligations now?**
 No. The FSB explicitly states the 12 Sound Practices are not binding standards. However, the consultation closes 22 July 2026 and the final report goes to G20 finance ministers in October 2026. National regulators — the Fed, PRA, BaFin, DNB, ACPR, MAS — are free to incorporate the Sound Practices into binding supervisory expectations on their own timelines. The institutions that respond to the consultation now are the ones shaping what binding looks like.
 
-## References
+## Awọn Itọkasi
 
 1. [Cambridge Centre for Alternative](https://lowdown.today/e/cambridge-centre-for-alternative-finance)
 2. [Report finds uneven AI adoption in financial services - News & insight](https://www.jbs.cam.ac.uk/2026/report-finds-uneven-ai-adoption-in-financial-services/)
@@ -471,6 +454,6 @@ No. The FSB explicitly states the 12 Sound Practices are not binding standards. 
 
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
-<p class="post-reviewed">Last reviewed <time datetime="2026-06-30">2026-06-30</time>.</p>
+<aside class="author-card" aria-label="Nípa olùkọ̀wé"><img alt="Àwòrán Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Onímọ̀-ẹ̀rọ báńkì àgbà tó ń kọ̀wé nípa AI ìmúṣẹ, ìṣíkiri ISO 20022, cryptography post-quantum fún àwọn iṣẹ́ ìnáwó, àti ìyípadà ìpilẹ̀ ti àwọn ìsanwó wholesale.</span><span class="author-credentials">Ọdún 20+ kọjá HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profáìlì pípé</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<p class="post-reviewed">Tí a tún yẹ̀wò kẹ́yìn <time datetime="2026-07-01">2026-07-01</time>.</p>
 <!-- enrich-end -->
