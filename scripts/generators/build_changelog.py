@@ -47,8 +47,8 @@ from typing import NamedTuple
 _LIB = Path(__file__).resolve().parents[1] / "lib"
 sys.path.insert(0, str(_LIB))
 
-from _core import DATED_SLUG_RE, display_date, read_frontmatter  # noqa: E402
-from _lang_registry import load_strings  # noqa: E402
+from _core import DATED_SLUG_RE, display_date, read_frontmatter
+from _lang_registry import load_strings
 
 ROOT = Path(__file__).resolve().parents[2]
 PUBLIC = ROOT / "public"
