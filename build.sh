@@ -219,6 +219,14 @@ python3 scripts/generators/build_lang_feeds.py
 python3 scripts/generators/build_agent_api.py
 python3 scripts/generators/build_lead_magnets.py
 python3 scripts/generators/build_news_sitemap.py
+# Changelog + "what's new" strip + build/deploy/uptime status (Phase 5).
+# Runs AFTER build_translations so the homepage strip only lands on the
+# English public/index.html (locale homepages are forked earlier and must
+# not carry untranslated English entries), and BEFORE postbuild so the new
+# /changelog/ + /status/ pages are picked up by the sitemap-augment pass and
+# their inline JSON-LD is hashed into the per-page CSP. Deterministic:
+# derives from committed dated-post front matter, no wall-clock time.
+python3 scripts/generators/build_changelog.py
 python3 scripts/postbuild/postbuild.py
 # RAG-ready corpus export — JSONL one-object-per-article + per-tag
 # subsets. Consumed by Claude / ChatGPT / Perplexity / LangChain etc.

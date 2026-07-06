@@ -64,12 +64,16 @@
   "home.eyebrow.contact": "ติดต่อ",
   "home.cta.startConversation": "เริ่มสนทนา",
   "listing.readLatest": "อ่านงานวิจัยล่าสุด",
-
   "home.readAs.heading": "อ่านในฐานะ…",
   "home.readAs.groupLabel": "เลือกมุมมองการอ่านของคุณ",
   "home.readAs.announce": "กำลังแสดงเนื้อหาสำหรับ",
   "home.readAs.everyone": "ทุกคน",
   "home.readAs.boards": "คณะกรรมการ",
   "home.readAs.engineers": "วิศวกร",
-  "home.readAs.regulators": "หน่วยงานกำกับดูแล"
+  "home.readAs.regulators": "หน่วยงานกำกับดูแล",
+  "changelog.title": "บันทึกการเปลี่ยนแปลง",
+  "changelog.lede": "บทความทั้งหมด ล่าสุดก่อน จัดกลุ่มตามเดือน",
+  "whatsNew.title": "มีอะไรใหม่",
+  "whatsNew.cta": "ดูบันทึกการเปลี่ยนแปลง",
+  "status.title": "สถานะ"
 }

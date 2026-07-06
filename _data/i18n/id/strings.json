@@ -64,12 +64,16 @@
   "home.eyebrow.contact": "Hubungi",
   "home.cta.startConversation": "Mulai percakapan",
   "listing.readLatest": "Baca riset terbaru",
-
   "home.readAs.heading": "Baca sebagai…",
   "home.readAs.groupLabel": "Pilih sudut pandang baca Anda",
   "home.readAs.announce": "Menampilkan konten untuk",
   "home.readAs.everyone": "Semua orang",
   "home.readAs.boards": "Dewan direksi",
   "home.readAs.engineers": "Insinyur",
-  "home.readAs.regulators": "Regulator"
+  "home.readAs.regulators": "Regulator",
+  "changelog.title": "Log perubahan",
+  "changelog.lede": "Semua artikel, terbaru dulu, dikelompokkan per bulan.",
+  "whatsNew.title": "Yang baru",
+  "whatsNew.cta": "Lihat log perubahan",
+  "status.title": "Status"
 }

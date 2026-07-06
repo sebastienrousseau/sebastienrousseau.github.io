@@ -64,12 +64,16 @@
   "home.eyebrow.contact": "Зв’язатися",
   "home.cta.startConversation": "Розпочати розмову",
   "listing.readLatest": "Читати останні дослідження",
-
   "home.readAs.heading": "Читати як…",
   "home.readAs.groupLabel": "Оберіть ракурс читання",
   "home.readAs.announce": "Показ матеріалів для",
   "home.readAs.everyone": "Усі",
   "home.readAs.boards": "Ради директорів",
   "home.readAs.engineers": "Інженери",
-  "home.readAs.regulators": "Регулятори"
+  "home.readAs.regulators": "Регулятори",
+  "changelog.title": "Журнал змін",
+  "changelog.lede": "Усі статті, спочатку найновіші, згруповані за місяцями.",
+  "whatsNew.title": "Що нового",
+  "whatsNew.cta": "Переглянути журнал змін",
+  "status.title": "Статус"
 }

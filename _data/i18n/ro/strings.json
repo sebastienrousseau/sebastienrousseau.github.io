@@ -64,12 +64,16 @@
   "feeds.channelCopyright": "© Copyright 2007 - 2026 - Sebastien Rousseau. Toate drepturile rezervate.",
   "feeds.jsonFeedTitle": "Sebastien Rousseau — Articole (română)",
   "newsletter.placeholder": "tu@banca.ro",
-
   "home.readAs.heading": "Citește ca…",
   "home.readAs.groupLabel": "Alege-ți perspectiva de lectură",
   "home.readAs.announce": "Se afișează conținut pentru",
   "home.readAs.everyone": "Toată lumea",
   "home.readAs.boards": "Consilii de administrație",
   "home.readAs.engineers": "Ingineri",
-  "home.readAs.regulators": "Autorități de reglementare"
+  "home.readAs.regulators": "Autorități de reglementare",
+  "changelog.title": "Jurnal de modificări",
+  "changelog.lede": "Toate articolele, cele mai recente primele, grupate pe lună.",
+  "whatsNew.title": "Noutăți",
+  "whatsNew.cta": "Vezi jurnalul de modificări",
+  "status.title": "Stare"
 }

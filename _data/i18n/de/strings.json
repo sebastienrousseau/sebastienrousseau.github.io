@@ -1,6 +1,5 @@
 {
   "_comment": "German UI strings — DRAFT pending native-speaker review. Key set MUST stay in sync with _data/i18n/en/strings.json — CI gate test_i18n_strings.py enforces parity. Compound nouns may exceed nav button widths at +30-40% expansion vs EN; verify with visual diff before flipping Language(\"de\", active=True).",
-
   "nav.aria.skipToMain": "Zum Hauptinhalt springen",
   "nav.aria.toggleNav": "Navigation umschalten",
   "nav.aria.toggleNavTitle": "Navigation umschalten",
@@ -14,7 +13,6 @@
   "nav.contactCTA": "Kontakt ›",
   "nav.aria.brandHome": "Startseite von Sebastien Rousseau",
   "nav.aria.backToTop": "Nach oben",
-
   "search.label": "Suchen",
   "search.placeholder": "In der Dokumentation suchen...",
   "search.kbdEsc": "schließen",
@@ -33,53 +31,49 @@
   "search.jsRequired": "Die interaktive Suche benötigt JavaScript. Nutzen Sie stattdessen die Bereiche unten.",
   "search.pageHeading": "Suche",
   "search.pageDescription": "Durchsuchen Sie Artikel, Publikationen und Fallstudien auf sebastienrousseau.com.",
-
   "footer.title.writing": "Schreiben",
   "footer.title.work": "Arbeit",
   "footer.title.reach": "Reichweite",
   "footer.aria.socialLinks": "Soziale Netzwerke",
   "footer.aria.socialPrefix": "Sebastien Rousseau auf ",
   "footer.copyright": "© Copyright 2007 - 2026 - Sebastien Rousseau. Alle Rechte vorbehalten.",
-
   "feeds.atomTitle": "Atom-Feed",
   "feeds.rssTitle": "RSS-Feed",
   "feeds.channelTitle": "Sebastien Rousseau — Deutsche Ausgabe",
   "feeds.channelDescription": "Artikel auf Deutsch: angewandte KI, ISO-20022-Zahlungen, Post-Quanten-Kryptografie und Transformation des Wholesale-Zahlungsverkehrs.",
   "feeds.channelCopyright": "© Copyright 2007 - 2026 - Sebastien Rousseau. Alle Rechte vorbehalten.",
   "feeds.jsonFeedTitle": "Sebastien Rousseau — Artikel (Deutsch)",
-
   "lang.aria.langGroup": "Sprache",
   "lang.aria.changeLangPrefix": "DE, Sprache wechseln",
   "lang.title.changeLang": "Sprache wechseln",
   "lang.title.comingSoon": "Demnächst verfügbar",
   "lang.currentLabel": "DE",
-
   "article.aria.summary": "Artikelzusammenfassung",
   "article.keyTakeaways": "Wichtige Erkenntnisse",
   "article.relatedReadingInline": "Verwandte Lektüre:",
   "article.relatedHeading": "Verwandte Lektüre",
   "article.lastReviewedLabel": "Zuletzt überprüft ",
-
   "author.aria.aboutAuthor": "Über den Autor",
   "author.fullProfile": "Vollständiges Profil",
   "author.alt.portrait": "Porträt von Sebastien Rousseau",
-
   "newsletter.aria.signup": "Newsletter-Anmeldung",
   "newsletter.blurb": "Banking On Quantum — Forschungsnotizen zu Zahlungen, KI und Post-Quanten-Kryptografie. Kein Spam.",
   "newsletter.placeholder": "sie@bank.de",
   "newsletter.subject": "Newsletter-Anmeldung — sebastienrousseau.com",
   "newsletter.submit": "Abonnieren",
-
   "home.eyebrow.contact": "Kontakt aufnehmen",
   "home.cta.startConversation": "Gespräch beginnen",
-
   "listing.readLatest": "Aktuelle Forschung lesen",
-
   "home.readAs.heading": "Lesen als…",
   "home.readAs.groupLabel": "Wählen Sie Ihre Leseperspektive",
   "home.readAs.announce": "Inhalte werden angezeigt für",
   "home.readAs.everyone": "Alle",
   "home.readAs.boards": "Vorstände",
   "home.readAs.engineers": "Ingenieure",
-  "home.readAs.regulators": "Regulierer"
+  "home.readAs.regulators": "Regulierer",
+  "changelog.title": "Änderungsprotokoll",
+  "changelog.lede": "Alle Artikel, neueste zuerst, nach Monat gruppiert.",
+  "whatsNew.title": "Neuigkeiten",
+  "whatsNew.cta": "Änderungsprotokoll ansehen",
+  "status.title": "Status"
 }

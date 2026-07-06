@@ -1,6 +1,5 @@
 {
   "_comment": "Arabic UI strings — DRAFT pending native-speaker review. Key set MUST stay in sync with _data/i18n/en/strings.json; CI gate test_i18n_strings.py enforces parity. RTL: this language renders with dir=\"rtl\". Compound nouns in Arabic typically expand longer than EN; verify with visual diff before flipping Language(\"ar\", active=True).",
-
   "nav.aria.skipToMain": "تخطّى إلى المحتوى الرئيسي",
   "nav.aria.toggleNav": "تبديل التنقل",
   "nav.aria.toggleNavTitle": "تبديل التنقل",
@@ -14,7 +13,6 @@
   "nav.contactCTA": "تواصل معي ›",
   "nav.aria.brandHome": "الصفحة الرئيسية لسيباستيان روسو",
   "nav.aria.backToTop": "العودة إلى الأعلى",
-
   "search.label": "بحث",
   "search.placeholder": "البحث في المحتوى...",
   "search.kbdEsc": "إغلاق",
@@ -33,53 +31,49 @@
   "search.jsRequired": "يتطلب البحث التفاعلي تفعيل JavaScript. تصفّح الأقسام أدناه بدلاً من ذلك.",
   "search.pageHeading": "بحث",
   "search.pageDescription": "ابحث في المقالات والأبحاث ودراسات الحالة على sebastienrousseau.com.",
-
   "footer.title.writing": "الكتابة",
   "footer.title.work": "الأعمال",
   "footer.title.reach": "تواصل",
   "footer.aria.socialLinks": "روابط التواصل الاجتماعي",
   "footer.aria.socialPrefix": "سيباستيان روسو على ",
   "footer.copyright": "© حقوق النشر 2007 - 2026 - سيباستيان روسو. جميع الحقوق محفوظة.",
-
   "feeds.atomTitle": "تغذية Atom",
   "feeds.rssTitle": "تغذية RSS",
   "feeds.channelTitle": "سيباستيان روسو — النسخة العربية",
   "feeds.channelDescription": "مقالات بالعربية: الذكاء الاصطناعي التطبيقي، مدفوعات ISO 20022، التشفير ما بعد الكمي، وتحوّل المدفوعات بالجملة.",
   "feeds.channelCopyright": "© حقوق النشر 2007 - 2026 - سيباستيان روسو. جميع الحقوق محفوظة.",
   "feeds.jsonFeedTitle": "سيباستيان روسو — مقالات (العربية)",
-
   "lang.aria.langGroup": "اللغة",
   "lang.aria.changeLangPrefix": "AR، تغيير اللغة",
   "lang.title.changeLang": "تغيير اللغة",
   "lang.title.comingSoon": "قريبًا",
   "lang.currentLabel": "AR",
-
   "article.aria.summary": "ملخّص المقال",
   "article.keyTakeaways": "النقاط الرئيسية",
   "article.relatedReadingInline": "قراءات ذات صلة:",
   "article.relatedHeading": "قراءات ذات صلة",
   "article.lastReviewedLabel": "آخر مراجعة ",
-
   "author.aria.aboutAuthor": "نبذة عن الكاتب",
   "author.fullProfile": "الملف الكامل",
   "author.alt.portrait": "صورة سيباستيان روسو",
-
   "newsletter.aria.signup": "التسجيل في النشرة",
   "newsletter.blurb": "Banking On Quantum — ملاحظات بحثية حول المدفوعات والذكاء الاصطناعي والتشفير ما بعد الكمي. لا رسائل مزعجة.",
   "newsletter.placeholder": "antum@bank.com",
   "newsletter.subject": "تسجيل في النشرة — sebastienrousseau.com",
   "newsletter.submit": "اشترك",
-
   "home.eyebrow.contact": "تواصل معي",
   "home.cta.startConversation": "ابدأ محادثة",
-
   "listing.readLatest": "اقرأ أحدث الأبحاث",
-
   "home.readAs.heading": "اقرأ بصفتك…",
   "home.readAs.groupLabel": "اختر منظور القراءة",
   "home.readAs.announce": "عرض المحتوى لـ",
   "home.readAs.everyone": "الجميع",
   "home.readAs.boards": "مجالس الإدارة",
   "home.readAs.engineers": "المهندسون",
-  "home.readAs.regulators": "الجهات التنظيمية"
+  "home.readAs.regulators": "الجهات التنظيمية",
+  "changelog.title": "سجل التغييرات",
+  "changelog.lede": "كل المقالات، الأحدث أولاً، مُجمّعة حسب الشهر.",
+  "whatsNew.title": "ما الجديد",
+  "whatsNew.cta": "عرض سجل التغييرات",
+  "status.title": "الحالة"
 }

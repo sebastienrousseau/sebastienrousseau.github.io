@@ -1,6 +1,5 @@
 {
   "_comment": "Spanish UI strings — DRAFT pending native review. Key set MUST stay in sync with _data/i18n/en/strings.json — CI gate test_i18n_strings.py enforces parity.",
-
   "nav.aria.skipToMain": "Saltar al contenido principal",
   "nav.aria.toggleNav": "Alternar navegación",
   "nav.aria.toggleNavTitle": "Alternar navegación",
@@ -14,7 +13,6 @@
   "nav.contactCTA": "Contactar ›",
   "nav.aria.brandHome": "Inicio de Sebastien Rousseau",
   "nav.aria.backToTop": "Volver arriba",
-
   "search.label": "Buscar",
   "search.placeholder": "Buscar en la documentación...",
   "search.kbdEsc": "cerrar",
@@ -33,53 +31,49 @@
   "search.jsRequired": "La búsqueda interactiva necesita JavaScript. Explora las secciones de abajo.",
   "search.pageHeading": "Buscar",
   "search.pageDescription": "Busca entre los artículos, publicaciones y casos prácticos de sebastienrousseau.com.",
-
   "footer.title.writing": "Publicaciones",
   "footer.title.work": "Actividad",
   "footer.title.reach": "Contacto",
   "footer.aria.socialLinks": "Enlaces sociales",
   "footer.aria.socialPrefix": "Sebastien Rousseau en ",
   "footer.copyright": "© Copyright 2007 - 2026 - Sebastien Rousseau. Todos los derechos reservados.",
-
   "feeds.atomTitle": "Feed Atom",
   "feeds.rssTitle": "Feed RSS",
   "feeds.channelTitle": "Sebastien Rousseau — Edición en español",
   "feeds.channelDescription": "Artículos en español: IA aplicada, pagos ISO 20022, criptografía postcuántica y transformación de los pagos mayoristas.",
   "feeds.channelCopyright": "© Copyright 2007 - 2026 - Sebastien Rousseau. Todos los derechos reservados.",
   "feeds.jsonFeedTitle": "Sebastien Rousseau — Artículos (español)",
-
   "lang.aria.langGroup": "Idioma",
   "lang.aria.changeLangPrefix": "ES, Cambiar de idioma",
   "lang.title.changeLang": "Cambiar de idioma",
   "lang.title.comingSoon": "Próximamente",
   "lang.currentLabel": "ES",
-
   "article.aria.summary": "Resumen del artículo",
   "article.keyTakeaways": "Puntos clave",
   "article.relatedReadingInline": "Lecturas relacionadas:",
   "article.relatedHeading": "Lecturas relacionadas",
   "article.lastReviewedLabel": "Última revisión ",
-
   "author.aria.aboutAuthor": "Sobre el autor",
   "author.fullProfile": "Perfil completo",
   "author.alt.portrait": "Retrato de Sebastien Rousseau",
-
   "newsletter.aria.signup": "Suscripción a la newsletter",
   "newsletter.blurb": "Banking On Quantum — notas de investigación sobre pagos, IA y criptografía postcuántica. Sin spam.",
   "newsletter.placeholder": "tu@banco.com",
   "newsletter.subject": "Suscripción a la newsletter — sebastienrousseau.com",
   "newsletter.submit": "Suscribirse",
-
   "home.eyebrow.contact": "Contactar",
   "home.cta.startConversation": "Iniciar una conversación",
-
   "listing.readLatest": "Leer las investigaciones recientes",
-
   "home.readAs.heading": "Leer como…",
   "home.readAs.groupLabel": "Elige tu enfoque de lectura",
   "home.readAs.announce": "Mostrando contenido para",
   "home.readAs.everyone": "Todos",
   "home.readAs.boards": "Consejos de administración",
   "home.readAs.engineers": "Ingenieros",
-  "home.readAs.regulators": "Reguladores"
+  "home.readAs.regulators": "Reguladores",
+  "changelog.title": "Registro de cambios",
+  "changelog.lede": "Todos los artículos, del más reciente al más antiguo, agrupados por mes.",
+  "whatsNew.title": "Novedades",
+  "whatsNew.cta": "Ver el registro de cambios",
+  "status.title": "Estado"
 }

@@ -64,12 +64,16 @@
   "feeds.channelCopyright": "© Copyright 2007 - 2026 - Sebastien Rousseau. An kiyaye duk hakkokin.",
   "feeds.jsonFeedTitle": "Sebastien Rousseau — Labarai (Hausa)",
   "newsletter.placeholder": "kai@banki.com.ng",
-
   "home.readAs.heading": "Karanta a matsayin…",
   "home.readAs.groupLabel": "Zaɓi hangen karatun ka",
   "home.readAs.announce": "Ana nuna abun ciki don",
   "home.readAs.everyone": "Kowa",
   "home.readAs.boards": "Kwamitocin gudanarwa",
   "home.readAs.engineers": "Injiniyoyi",
-  "home.readAs.regulators": "Masu tsara ka’ida"
+  "home.readAs.regulators": "Masu tsara ka’ida",
+  "changelog.title": "Tarihin canje-canje",
+  "changelog.lede": "Duk labarai, sabo tukuna, an haɗa su bisa wata.",
+  "whatsNew.title": "Sabbin abubuwa",
+  "whatsNew.cta": "Duba tarihin canje-canje",
+  "status.title": "Matsayi"
 }

@@ -64,12 +64,16 @@
   "feeds.channelCopyright": "© Copyright 2007 - 2026 - Sebastien Rousseau. সর্বস্বত্ব সংরক্ষিত।",
   "feeds.jsonFeedTitle": "Sebastien Rousseau — প্রবন্ধ (বাংলা)",
   "newsletter.placeholder": "apni@bank.bd",
-
   "home.readAs.heading": "যে দৃষ্টিভঙ্গিতে পড়ুন…",
   "home.readAs.groupLabel": "আপনার পঠন দৃষ্টিভঙ্গি বেছে নিন",
   "home.readAs.announce": "এদের জন্য বিষয়বস্তু দেখানো হচ্ছে",
   "home.readAs.everyone": "সবাই",
   "home.readAs.boards": "বোর্ড",
   "home.readAs.engineers": "প্রকৌশলী",
-  "home.readAs.regulators": "নিয়ন্ত্রক"
+  "home.readAs.regulators": "নিয়ন্ত্রক",
+  "changelog.title": "চেঞ্জলগ",
+  "changelog.lede": "প্রতিটি নিবন্ধ, নতুনতম প্রথমে, মাস অনুসারে সাজানো।",
+  "whatsNew.title": "নতুন কী",
+  "whatsNew.cta": "চেঞ্জলগ দেখুন",
+  "status.title": "স্ট্যাটাস"
 }
