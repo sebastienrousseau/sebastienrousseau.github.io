@@ -1,6 +1,6 @@
 ---
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
-banner_alt: "Abstract distributed-ledger lattice resolving into a certified audit spine — visualising the shift from retrospective entity audits to continuous, cryptographically-verifiable blockchain assurance for wholesale banking"
+banner_alt: "Wani gidan sadarwa na littafi mai rarrabuwa na zahiri wanda ke daskarewa zuwa ƙashin bayan bincike mai takardar shaida — yana nuna sauyi daga bincike-bincike na baya-baya da suka danganci hukuma zuwa tabbaci na sarƙar bulokci mai ci gaba da ake iya tabbatarwa ta sirri don bankin jomla"
 banner_height: "1280"
 banner_width: "1920"
 banner: "https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp"
@@ -9,7 +9,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "July 2, 2026"
-description: "The 2026 Certified Blockchain Index gives banks a 5-level Capability Maturity Model to certify distributed-ledger governance, consensus integrity, cryptography, smart-contract assurance, and audit observability against DORA, CPMI-IOSCO PFMI, ISO/IEC TC 307, ISO 42001 and Basel III."
+description: "Ma'aunin Sarƙoƙin Bulokci Masu Takardar Shaida na 2026 yana ba bankuna Samfurin Balaga na Iyawa mai matakai biyar don ba da takardar shaida ga shugabancin littafi mai rarrabuwa, mutuncin yarjejeniya, sirri, tabbacin kwangilar wayo, da lura na bincike a kan DORA, PFMI na CPMI-IOSCO, ISO/IEC TC 307, ISO 42001, da Basel III."
 format-detection: "telephone=no"
 hreflang: "ha"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -35,9 +35,9 @@ rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
 schema: "FAQPage, Article"
-seo_title: "From Evidence to Truth: Certified Blockchains and Banking Trust"
+seo_title: "Daga hujja zuwa gaskiya: sarƙoƙin bulokci masu takardar shaida da amincewar banki"
 short_name: "sebastienrousseau"
-subtitle: "Why certifiable ledger assurance — not immutability alone — will define institutional trust in 2026: scoring governance, consensus integrity, cryptography, smart contracts, and observability against DORA, ISO/IEC TC 307, and CPMI-IOSCO PFMI."
+subtitle: "Dalilin da ya sa tabbaci na littafi da ake iya ba da takardar shaida — ba rashin canzawa kaɗai ba — zai fassara amincewa na hukumomi a 2026: ba da maki ga shugabanci, mutuncin yarjejeniya, sirri, kwangilolin wayo, da lura a kan DORA, ISO/IEC TC 307, da PFMI na CPMI-IOSCO."
 tags: "agentic AI, AI governance, banking, autonomy tiers, model risk, SR 11-7, EU AI Act, FSB, IOSCO, MAS, IMDA, control plane, audit log, DORA, McKinsey, Stanford AI Index"
 theme-color: "0, 83, 191"
 title: "The Agentic AI Index for Banks in 2026: Measuring Autonomy"
@@ -63,7 +63,7 @@ apple_touch_icon_sizes: "192x192"
 apple-mobile-web-app-capable: "yes"
 apple-mobile-web-app-status-bar-inset: "black"
 apple-mobile-web-app-status-bar-style: "black-translucent"
-apple-mobile-web-app-title: "Certified Blockchains 2026"
+apple-mobile-web-app-title: "Sarƙoƙin bulokci masu takardar shaida 2026"
 apple-touch-fullscreen: "yes"
 msapplication-navbutton-color: "0, 83, 191"
 twitter_card: "summary_large_image"
@@ -84,103 +84,99 @@ site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 ---
 
-<!-- translation-stub: replace this body in Claude Code -->
+# Daga hujja zuwa gaskiya: dalilin da ya sa sarƙoƙin bulokci masu takardar shaida za su fassara sabon zamani na amincewar banki
 
-> _Translation pending — read the [English original](/2026-07-02-certified-blockchains-banking-trust-tc307-assurance-2026/) while we localise._
+## Taƙaitaccen dabaru (mafi muhimmanci)
 
-# From Evidence to Truth: Why Certified Blockchains Will Define the Next Era of Banking Trust
+Bankin jomla da mu'amaloli na duniya a shekarar 2026 suna a wani mahimmin lokaci na sauyi na tarihi. Yayin da ayyukan kuɗi ke sauya zuwa cibiyoyin sadarwa na tsaftacewa na dijital na asali kuma na lokaci-lokaci, kuma yayin da basirar wucin gadi ke shigar da rashin tabbas na yiyuwa, tsofaffin samfuran tabbaci na baya-baya (kamar bincike-bincike na tsaye da suka danganci hukuma) ba sa ƙara biyan buƙatun zamani na sarrafa haɗari da wajibai na amana.
 
-## Executive Summary & Strategic Context (TL;DR)
+Kwamitin Fasaha na ISO/IEC TC 307 ya kafa tushe da aka daidaita don fasahohin littafi mai rarrabuwa. Duk da haka, ainihin karɓuwa na hukumomi yana buƙatar sauyawa daga jagoranci na kwatanci zuwa tabbaci na sarƙar bulokci na umarni wanda ake iya ba da takardar shaida kai tsaye. Ta hanyar ba da maki ga shugabancin littafi, mutuncin yarjejeniya, tsaron kwangilar wayo, da saurin sirri a kan wani tsayayyen Samfurin Balaga na Iyawa (CMM) mai matakai biyar, bankuna za su iya sauyawa daga zato masu tarwatsewa da suka keɓanci mai kaya zuwa gaskiyar kuɗi da ake iya ba da takardar shaida kuma hukumar gudanarwa ke iya bincika.
 
-Wholesale banking and global transactions in 2026 sit at a historic inflection point. As financial services transition to natively digital, real-time clearing networks, and as artificial intelligence introduces probabilistic non-determinism, the traditional analogue, retrospective assurance models (such as static entity-based audits) fail to meet modern risk management and fiduciary demands.
+## Muhimman abubuwa
 
-ISO/IEC Technical Committee 307 (TC 307) has established a standardized baseline for distributed ledger technologies. However, true corporate and institutional adoption requires shifting from descriptive guidance to prescriptive, independently certifiable blockchain assurance. By scoring ledger governance, consensus integrity, smart contract safety, and cryptographic agility against a strict 5-level Capability Maturity Model (CMM), banks can move from patchwork, vendor-specific assumptions to certifiable, board-auditable financial truth.
+* **Gibin gogayya na amana**: a yau muna iya ba da takardar shaida ga banki (Basel III), giza-gizai (ISO 27001), da tsarin shugabancin AI (ISO 42001), amma har yanzu ba za mu iya ba da takardar shaida ga littafi mai rarrabuwa da ke ƙara tantance abin da ke gaskiya ba. Wannan rashin daidaito babbar rauni ce ta aiki.  
+* **DORA na tilasta alhakin amana kai tsaye**: a ƙarƙashin Mataki na 5 na DORA, hukumomin darektocin banki suna ɗaukar alhakin mutum kai tsaye da ba za a iya wakilta ba game da juriya ta aiki na duk tura na ɓangare na uku da littafi, tare da hukunce-hukunce masu tsauri na mutum a ƙarƙashin tsarin SM&CR game da gazawa.  
+* **Ƙashin bayan bincike na AI**: inda koyon na'ura ke samar da sakamako na yiyuwa da ba za a iya sake haifar da su ba, sarƙar bulokci mai takardar shaida na ba da ɗaukar yanayi na tabbatacce. Rubuta nau'ikan samfuri, shigarwa, da yanke shawara na tabbatarwa a kan sarƙa yana biyan ISO 42001 da ka'idojin sarrafa haɗarin samfuri.  
+* **Ma'aunin Sarƙoƙin Bulokci Masu Takardar Shaida**: wannan ma'auni yana tsara shugabanci, yarjejeniya, kwangilolin wayo, da lura zuwa katin maki da ake iya tabbatarwa kuma a shirye don bincike a kan sikelin CMM daga 0 zuwa 5, yana fassara ma'aunan injiniya zuwa bayanan sha'awar haɗari da hukumar gudanarwa ta amince.
 
-## Key Takeaways
+## 01. Gibin gogayya na amana a bankin dijital
 
-* **The Fiduciary Frictional Gap**: We can currently certify the bank (Basel III), the cloud (ISO 27001), and the AI governance systems (ISO 42001), but we cannot yet certify the distributed ledger that increasingly determines what is true. This asymmetry is a major operational vulnerability.  
-* **DORA Enforces Direct Fiduciary Responsibility**: Under DORA Article 5, bank boards of directors bear direct, non-delegable personal liability for the operational resilience of all third-party and ledger deployments, with severe SM&CR personal penalties for failures.  
-* **The AI Audit Spine**: While machine learning introduces non-reproducible, probabilistic outcomes, a certified blockchain provides deterministic state capture. Recording model versions, inputs, and validation decisions on-chain satisfies ISO 42001 and Model Risk Management standards.  
-* **The Certified Blockchain Index**: This index formalizes governance, consensus, smart contracts, and observability into a verifiable, audit-ready scorecard on a 0-to-5 CMM scale, translating engineering metrics into board-approved Risk Appetite Statements.
+A bankin gargajiya, amincewa tana da alaƙa, ta hukumomi, kuma ta baya-baya. Tana dogara ga masu bincike na ɓangare na uku masu zaman kansu da ke duba yanayin kuɗi a kan tabbatattun lokuta, suna daidaita bambance-bambance tsakanin ɗakunan littattafai na ɓangarori biyu. A cikin kasuwannin lokaci-lokaci da API ke tuƙi na 2026, wannan samfurin yana shigar da jinkiri masu hanawa da haɗari na tsari.
 
-## 01. The Fiduciary Frictional Gap in Digital Banking
+Lokacin da mu'amaloli suka daidaita nan take, ana sarrafa tafkunan ruwan kuɗi na cikin rana ta hanyar ƙofofin API, kuma ana ba da alama ga mallakar dukiya a kan littattafai da aka raba, bincike-bincike na baya-baya suna zama ayyukan bincike na laifi maimakon sarrafawa na kariya. Masu amana ba za su ƙara dogara kawai ga ba da takardar shaida ga hukumar doka ba. Dole ne su ba da takardar shaida ga tushen dijital da kansa.
 
-In classical banking, trust is relational, institutional, and retrospective. It depends on independent, third-party auditors reviewing financial state at static points in time, reconciling discrepancies across bilateral ledger silos. In the real-time, API-driven markets of 2026, this model introduces prohibitive latencies and structural risks.
+A halin yanzu, bankuna suna aiki a ƙarƙashin bayyananniyar rashin daidaito na gine-gine:
 
-When transactions settle instantly, intraday liquidity pools are managed dynamically by API gateways, and asset ownership is tokenised across shared ledgers, retrospective audits become forensic exercises rather than preventative controls. Fiduciaries can no longer rely solely on certifying the corporate entity. They must certify the digital substrate itself.
+1. **Kayan aiki na giza-gizai mai takardar shaida**: ana tabbatar da kumburan kayan aiki, kwantena masu kama-da-wane, da cibiyoyin bayanai na zahiri a kan sarrafawa na ISO/IEC 27001 da SOC 2 Type II.  
+2. **Hanyoyin sarrafawa masu takardar shaida**: ana gudanar da manufofin haɗari na aiki, tsare-tsare na ci gaba da kasuwanci, da tura na algorithm ta hanyar tsarin haɗari masu tsauri.  
+3. **Injunan littafi marasa takardar shaida**: ana barin hanyoyin yarjejeniya na rarrabuwa, sarƙoƙin samar da kumburan tabbatarwa, iyakokin kwangilar wayo, da samfuran shugabancin cibiyar sadarwa ga zato marasa takardar shaida, na keɓe, ko na ƙungiya.
 
-Currently, banks operate under a glaring architectural asymmetry:
+Wannan rashin daidaito muhimmin wurin gazawa ne. Banki na iya gudanar da aikace-aikace da aka tabbatar a cikin kwantena na giza-gizai mai tsaro, mai takardar shaida na ISO 27001, amma idan wannan kwantena ta rubuta zuwa littafi mai rarrabuwa mai sarrafawa na tsakiya na masu tabbatarwa, ma'aunan yarjejeniya masu rauni, ko kwangilolin wayo marasa bincike, mutuncin mu'amala ya lalace. Don haɗa wannan gibi, dole ne injin littafi da kansa ya zama abu na tabbaci da ake iya ba da takardar shaida.
 
-1. **Certified Cloud Infrastructure**: Hardware nodes, virtualized containers, and physical datacenters are validated against ISO/IEC 27001 and SOC 2 Type II controls.  
-2. **Certified Management Processes**: Operational risk policies, business continuity plans, and algorithmic deployments are governed under strict risk frameworks.  
-3. **Uncertified Ledger Engines**: The core distributed consensus mechanisms, validator node supply chains, smart contract boundaries, and network governance models are left to uncertified, custom, or consortium-specific assumptions.
+## 02. Tushen daidaitawa na ISO/IEC TC 307
 
-This asymmetry is a major failure point. A bank can run a validated application inside a secure, ISO 27001-certified cloud container, but if that container writes to a distributed ledger with centralized validator control, vulnerable consensus parameters, or un-audited smart contracts, the transaction integrity is compromised. To bridge this gap, the ledger engine itself must become a certifiable assurance object.
+Aikin tushe da ake buƙata don daidaita littattafai masu rarrabuwa ana kafa shi ta Kwamitin Fasaha na ISO/IEC TC 307 (Fasahohin sarƙar bulokci da littafi mai rarrabuwa). Maimakon ɗaukar sarƙar bulokci a matsayin ka'idar fasaha da aka keɓe, TC 307 na kusanto shi a matsayin kayan aiki na amincewa na hukumomi, yana tsara aikinsa a kan manyan ginshiƙai biyar:
 
-## 02. The ISO/IEC TC 307 Standardization Baseline
+1. **Rabe-raben iri da ƙamus (ISO 22739)**: yana kafa suna gama gari, yana tabbatar da ma'anoni na doka da na aiki masu daidaituwa tsakanin hukunce-hukunce, tsare-tsaren kuɗi, da cibiyoyi.  
+2. **Gine-ginen tunani (ISO/TR 23245)**: yana bayyana iyakoki, sassa, kwararar bayanai, da abubuwan aiki na tsarin littafi mai rarrabuwa da ya dace.  
+3. **Tsaro, sirri, da kwangilolin wayo (ISO/TR 23244 / ISO 23613)**: yana kafa jagororin tsaro na asali don tsarin dukiya na dijital kuma yana bayyana mafi kyawun ayyuka don rage raunin kwangilar wayo da shugabancin zagayowar rayuwa.  
+4. **Tsarin haɗin kai**: yana magance hanyoyin musanya bayanai da dukiya tsakanin cibiyoyin sadarwa na littattafai iri-iri, yana hana samuwar ɗakunan alama da aka keɓe.  
+5. **Shaida mai rarrabuwa da abin ɗaure na amincewa**: yana haɗa masu gano sirri da suka danganci littafi da kayan aiki na maɓalli na jama'a (PKI) na yau da kullum da rajistun da ƙasa ta ba da izini.
 
-The foundational work required to standardize distributed ledgers is being established by ISO/IEC Technical Committee 307 (TC 307) (Blockchain and distributed ledger technologies). Rather than treating blockchain as an isolated technical protocol, TC 307 addresses it as an institutional trust infrastructure, organizing its work across five core pillars:
+Gaba ɗaya, TC 307 na nuna sauyin DLT daga zaɓi na injiniya na keɓe zuwa horo na gine-gine da aka daidaita. Duk da haka, TC 307 ya kasance mafi yawa na kwatanci. Yana bayyana yadda kyawawan aiki suke kama (jagoranci), amma bai ba da ka'idar tabbatarwa ta umarni (tabbaci) ba wadda jami'an haɗari da masu kula ke buƙata don ba da izinin tura na samarwa na muhimman ayyuka ko masu muhimmanci (CIF).
 
-1. **Taxonomy and Vocabulary (ISO 22739)**: Establishes a common nomenclature, ensuring consistent legal and operational definitions across different jurisdictions, financial schemes, and institutions.  
-2. **Reference Architecture (ISO/TR 23245)**: Defines the boundaries, layers, data flows, and functional components of a compliant distributed ledger system.  
-3. **Security, Privacy, and Smart Contracts (ISO/TR 23244 / ISO 23613)**: Establishes baseline security guidelines for digital asset systems and details best practices for smart contract vulnerability mitigation and lifecycle governance.  
-4. **Interoperability Frameworks**: Addresses the data and asset-exchange mechanisms between heterogeneous ledger networks, preventing the formation of isolated tokenised silos.  
-5. **Decentralized Identity and Trust Anchors**: Integrates ledger-based cryptographic identifiers with formal public-key infrastructures (PKI) and state-authorized registries.
+## 03. Jagoranci da tabbaci: bambancin amana
 
-Collectively, TC 307 signals the transition of DLT from a custom engineering choice into a standardized architectural discipline. However, TC 307 remains primarily descriptive. It defines what good looks like (guidance), but it does not provide the prescriptive verification protocol (assurance) that risk officers and supervisors require to authorize production deployments of critical or important functions (CIFs).
+Mahalarta kasuwar kuɗi ba sa tura fasaha domin ta kasance sabuwa ko kyakkyawa; suna tura ta lokacin da za a iya sarrafa ta, bincika ta, kāre ta, da daidaita ta da buƙatun ajiyar jari. Shi ya sa daidaitawa a bankin a zahiri ya rabu zuwa sassa biyu:
 
-## 03. Guidance vs. Assurance: The Fiduciary Distinction
+* **Jagoranci (tsarin)**: yana zayyana mafi kyawun ayyuka, manufofin tunani, da jagororin gine-gine (misali ISO/IEC TC 307, tsarin NIST).  
+* **Tabbaci (hujja)**: yana ba da shaida mai zaman kanta, mai ci gaba, kuma da ɓangare na uku ke iya tabbatarwa cewa an aiwatar da tsarin kuma yana aiki kamar yadda aka tsara (misali takardar shaida na ISO 27001, bincike-bincike na SOC 2, jarrabawa na tsari).
 
-Financial market participants do not deploy technology because it is innovative or elegant; they deploy it when it can be governed, audited, defended, and reconciled with capital reserve requirements. This is why standardisation in banking naturally resolves into two layers:
+Dogaro ga yarjejeniya na littafi marar takardar shaida yayin ba da takardar shaida ga kayan aiki na giza-gizai gibin tsari ne mai muhimmanci. Sarƙar bulokci "marar canzawa" ba dole ba ce "abin dogaro ta hukumomi". Rashin canzawa yana tabbatar da cewa bayanan da aka shigar sun kasance ba tare da canzawa ba kawai; ba ya tabbatar da ko kumburan tabbatarwa suna da tsaro, ko ka'idar yarjejeniya na da juriya ga haɗin gwiwa, ko dabaru na kwangilar wayo daidai ne a lissafi, ko sarrafa maɓallin sirri yana bin umarni na bayan-ƙima.
 
-* **Guidance (The Framework)**: Outlines best practices, reference targets, and architectural guidelines (e.g., ISO/IEC TC 307, NIST frameworks).  
-* **Assurance (The Proof)**: Provides independent, continuous, and third-party-verifiable evidence that the framework is implemented and operating as designed (e.g., ISO 27001 certification, SOC 2 audits, regulatory examinations).
+Don rufe wannan gibi, Ma'aunin Sarƙoƙin Bulokci Masu Takardar Shaida na 2026 yana tsara waɗannan buƙatu zuwa Samfurin Balaga na Iyawa (CMM) da ake iya aunawa, wanda aka danganta ga ƙa'idodin banki na duniya.
 
-Relying on uncertified ledger consensus while certifying cloud infrastructure is a critical regulatory gap. A blockchain that is "immutable" is not necessarily "institutionally trusted." Immutability only guarantees that the data entered is unchanged; it does not verify that the validator nodes are secure, the consensus protocol is resilient against collusion, the smart contract logic is mathematically sound, or the cryptographic key management complies with post-quantum mandates.
+## 04. Ma'aunin Sarƙoƙin Bulokci Masu Takardar Shaida na 2026
 
-To close this gap, the 2026 Certified Blockchain Index formalizes these requirements into a quantifiable Capability Maturity Model (CMM) mapped to global banking regulations.
+Don ba da damar babbar manaja su tantance kuma su ba da takardar shaida ga dandamalin littafi nasu, wannan ma'auni yana tsara kayan aiki na littafi mai rarrabuwa zuwa sassa biyar na aiki da ake iya bincika, waɗanda ake ba da maki a kan sikelin CMM daga 0 zuwa 5.
 
-## 04. The 2026 Certified Blockchain Index
+## Tebur 1: gine-ginen Ma'aunin Sarƙoƙin Bulokci Masu Takardar Shaida
 
-To enable senior management to evaluate and certify their ledger platforms, this index structures the distributed ledger infrastructure into five auditable operational layers, scored on a 0-to-5 CMM scale.
-
-## Table 1: The Certified Blockchain Index Architecture
-
-| Index Layer | Capability Maturity Level (CMM) | Technical and Operational Metric | Regulatory / Fiduciary Control Reference |
+| Sashen ma'auni | Matakin balaga (CMM) | Ma'aunin fasaha da na aiki | Tunanin sarrafawa na tsari / amana |
 | :---- | :---- | :---- | :---- |
-| **Ledger Governance** | **Level 0**: Ad-hoc consortium**Level 3**: Automated validator vetting & rotation**Level 5**: Decentralized, multi-party cryptographic identity anchoring | % of validator nodes operated by vetted financial entities; mean time to resolve validator disputes; geographic distribution of nodes | **DORA Article 5** (Governance and Organisation); **CPMI-IOSCO PFMI Principle 2** (Governance) & **Principle 3** (Framework for the comprehensive management of risks) |
-| **Consensus Integrity** | **Level 0**: Single-node or opaque POW**Level 3**: Audited BFT with deterministic finality**Level 5**: Multi-jurisdictional, formally verified consensus with continuous latency monitoring | Max tolerable consensus latency; collusion-resistance threshold; uptime SLA under simulated node partition | **DORA Article 6** (ICT Risk Management Framework); **CPMI-IOSCO PFMI Principle 8** (Settlement Finality) |
-| **Identity & Cryptography** | **Level 0**: Weak RSA / ECDSA keys**Level 3**: Multi-sig with HSM-backed key management**Level 5**: Quantum-safe hybrid keys (FIPS 203 ML-KEM) and zero-knowledge privacy gates | % of ledger transactions signed with HSM-backed keys; PQC migration readiness score; ZK-proof latency | **NIST FIPS 203 / 204**; **ISO/IEC 27001** (Information Security Management) |
-| **Smart Contract Assurance** | **Level 0**: Un-audited solidity scripts**Level 3**: Automated compiler validation & external audit**Level 5**: Formally verified, immutable smart contracts with circuit-breaker upgrades | % of smart contracts with mathematical formal verification; count of compiler warnings; vulnerability scan coverage | **EBA Guidelines on Outsourcing Arrangements** (Paragraphs 81, 113-117); **DORA Article 30** (Minimum Contractual Clauses) |
-| **Audit & Observability** | **Level 0**: Manual log scraping**Level 3**: Structured OTel traces & read-only auditor nodes**Level 5**: Automated, continuous reconciliation to the Article 8 register | % of transactions covered by OpenTelemetry traces; latency from ledger block-commit to auditor-node sync | **BCBS 239** (Risk Data Aggregation); **DORA Article 8** (Register of Information / ITS Schemas) |
+| **Shugabancin littafi** | **Mataki 0**: ƙungiya ta lokaci**Mataki 3**: bincike da juyawa na masu tabbatarwa ta atomatik**Mataki 5**: ɗaure shaida ta sirri mai rarrabuwa, na ɓangarori da yawa | % na kumburan tabbatarwa da hukumomin kuɗi da aka bincika ke gudanarwa; matsakaicin lokacin warware jayayya na masu tabbatarwa; rarraba wurin kumbura | **DORA Mataki 5** (Shugabanci da ƙungiya); **CPMI-IOSCO PFMI Ƙa'ida 2** (Shugabanci) da **Ƙa'ida 3** (Tsarin sarrafa haɗari mai cikakke) |
+| **Mutuncin yarjejeniya** | **Mataki 0**: kumbura ɗaya ko PoW mara haske**Mataki 3**: BFT da aka bincika mai ƙarshe na tabbatacce**Mataki 5**: yarjejeniya ta hukunce-hukunce da yawa, da aka tabbatar a hukumance, mai sa ido na jinkiri mai ci gaba | matsakaicin jinkirin yarjejeniya da za a iya jurewa; ƙofar juriya ga haɗin gwiwa; SLA na samuwa a raba kumbura da aka kwaikwaya | **DORA Mataki 6** (Tsarin sarrafa haɗarin ICT); **CPMI-IOSCO PFMI Ƙa'ida 8** (Ƙarshen sasantawa) |
+| **Shaida da sirri** | **Mataki 0**: maɓallan RSA / ECDSA masu rauni**Mataki 3**: sa hannu da yawa mai sarrafa maɓalli da HSM ke tallafawa**Mataki 5**: maɓallan gauraye masu tsaro na ƙima (FIPS 203 ML-KEM) da ƙofofin sirri na sifili-ilimi | % na mu'amaloli na littafi da aka sa hannu da maɓallan da HSM ke tallafawa; makin shirye-shiryen ƙaura na PQC; jinkirin hujja na ZK | **NIST FIPS 203 / 204**; **ISO/IEC 27001** (Sarrafa tsaron bayanai) |
+| **Tabbacin kwangilar wayo** | **Mataki 0**: rubutun Solidity marasa bincike**Mataki 3**: tabbatarwa ta atomatik na mai tarawa da bincike na waje**Mataki 5**: kwangilolin wayo marasa canzawa, da aka tabbatar a hukumance, masu haɓaka na irin mai yanke wutar lantarki | % na kwangilolin wayo masu tabbatarwa na lissafi a hukumance; adadin gargaɗi na mai tarawa; ɗaukar bincike na rauni | **Jagororin EBA game da fitar da aiki** (sakin layi 81, 113-117); **DORA Mataki 30** (Ƙananan sharuɗɗa na kwangila) |
+| **Bincike da lura** | **Mataki 0**: tattara log da hannu**Mataki 3**: alamun OTel masu tsari da kumburan mai bincike na karantawa kawai**Mataki 5**: daidaitawa ta atomatik, mai ci gaba da rajistar Mataki 8 | % na mu'amaloli da alamun OpenTelemetry suka rufe; jinkiri daga aikata block zuwa daidaita kumburan mai bincike | **BCBS 239** (Tara bayanan haɗari); **DORA Mataki 8** (Rajistar bayanai / tsarin ITS) |
 
-## Table 2: Key Trust Signals Mapped to Global Banking Standards
+## Tebur 2: muhimman siginonin amincewa da aka danganta ga ƙa'idodin banki na duniya
 
-| Signal / Benchmark | Metric | Impact on Banking Platforms | Regulatory Source |
+| Sigina / ma'auni | Ma'auni | Tasiri a kan dandamalin banki | Tushen tsari |
 | :---- | :---- | :---- | :---- |
-| **ISO/IEC TC 307 Progress** | Transition from ISO/TR technical reports to formal certification schemes | Establishes the first standardized framework for certifying distributed ledger engines | **ISO/IEC JTC 1 / SC 44** (Distributed Ledger Technologies) |
-| **Project Agorá Prototype Phase** | 40+ participating commercial banks; unified ledger testing of tokenised deposits | Shifting cross-border clearing from messaging (SWIFT) to atomic tokenised settlement | **Bank for International Settlements (BIS) Innovation Hub** |
-| **DORA Article 30 Third-Party Audit** | 100% of node providers and infrastructure hosts audited against security criteria | Eliminates "shadow validator nodes"; mandates total supply-chain transparency | **European Supervisory Authorities (ESA)** |
-| **ISO/IEC 42001 (AI Governance)** | Cryptographically immutabilized AI model and training logs on-chain | Employs blockchain as the immutable evidentiary ledger ("audit spine") for machine learning | **ISO/IEC 42001:2023** (Information technology — Artificial intelligence) |
-| **Basel III Capital Adequacy** | Reduction in operational risk capital buffers based on documented complexity reduction | Standardized operational risk frameworks directly credit verified ledger resilience | **Basel Committee on Banking Supervision (BCBS)** |
+| **Ci gaban ISO/IEC TC 307** | Sauyawa daga rahotannin fasaha na ISO/TR zuwa tsare-tsaren takardar shaida na hukumance | Yana kafa tsari na farko da aka daidaita don ba da takardar shaida ga injunan littafi mai rarrabuwa | **ISO/IEC JTC 1 / SC 44** (Fasahohin littafi mai rarrabuwa) |
+| **Matakin samfuri na Aikin Agorá** | Bankuna na kasuwanci sama da 40 masu shiga; gwajin littafi guda ɗaya na ajiya masu alama | Yana kaura tsaftacewa na kan iyaka daga aikawa saƙo (SWIFT) zuwa sasantawa mai alama na atomatik | **Cibiyar Ƙirƙira ta Bankin Sasantawa na Duniya (BIS)** |
+| **Bincike na ɓangare na uku na DORA Mataki 30** | An bincika kashi 100% na masu ba da kumbura da masu masaukin kayan aiki a kan ma'aunan tsaro | Yana kawar da "kumburan tabbatarwa na inuwa"; yana wajabta cikakken bayyanannen sarƙar samarwa | **Hukumomin Kula na Turai (ESA)** |
+| **ISO/IEC 42001 (shugabancin AI)** | An sanya log na samfuri da horarwa na AI marasa canzawa ta sirri a kan sarƙa | Yana amfani da sarƙar bulokci a matsayin rajistar hujja marar canzawa ("ƙashin bayan bincike") don koyon na'ura | **ISO/IEC 42001:2023** (Fasahar bayanai — Basirar wucin gadi) |
+| **Isasshen jari na Basel III** | Rage matashin jari na haɗarin aiki bisa rage rikitarwa da aka rubuta | Tsarin haɗari na aiki da aka daidaita suna ba da lada kai tsaye ga juriya na littafi da aka tabbatar | **Kwamitin Basel na Kula da Banki (BCBS)** |
 
-## 05. The AI "Audit Spine": Probabilistic Intelligence on Deterministic Infrastructure
+## 05. "Ƙashin bayan bincike" na AI: basira ta yiyuwa a kan kayan aiki na tabbatacce
 
-One of the most powerful strategic roles for a certified blockchain in 2026 is acting as an **"Audit Spine"** for artificial intelligence deployments. Modern financial systems are increasingly probabilistic. Credit scoring, real-time fraud detection, algorithmic trading, and autonomous customer interactions are driven by machine learning models that evolve, drift, and adapt over time. These models are non-deterministic: given the same input at two different times, they may yield different outputs due to dynamic weights and continuous training.
+Ɗaya daga cikin manyan ayyuka na dabaru na sarƙar bulokci mai takardar shaida a 2026 shine aiki a matsayin **"ƙashin bayan bincike"** don tura na basirar wucin gadi. Tsarin kuɗi na zamani na ƙara zama na yiyuwa. Ba da maki na bashi, gano zamba na lokaci-lokaci, ciniki na algorithm, da mu'amaloli na abokin ciniki masu cin gashin kai suna gudana ta samfuran koyon na'ura da ke tasowa, kaucewa, da daidaituwa a kan lokaci. Waɗannan samfura ba tabbatattu ba ne: da shigarwa iri ɗaya a lokuta biyu daban-daban, za su iya samar da fitarwa daban-daban saboda nauyi masu motsi da horarwa mai ci gaba.
 
-This non-determinism introduces a profound governance challenge under **ISO/IEC 42001 (AI Governance)** and **Model Risk Management (MRM)** standards (such as **US Federal Reserve SR 11-7** and **UK PRA SS1/23**): *How do you audit, explain, and defend decisions that are not strictly reproducible?*
+Wannan rashin tabbaci yana kawo babban ƙalubale na shugabanci a ƙarƙashin **ISO/IEC 42001 (shugabancin AI)** da ma'aunan sarrafa haɗarin samfuri (MRM) (kamar **SR 11-7 na Babban Bankin Amurka** da **SS1/23 na PRA na Biritaniya**): *yaya za ka bincika, bayyana, da kāre yanke shawara da ba za a iya sake haifar da su ba daidai?*
 
-A certified distributed ledger provides the deterministic counterweight. While AI models operate probabilistically, the certified blockchain records their parameters deterministically, establishing an unalterable evidentiary spine:
+Littafi mai rarrabuwa mai takardar shaida yana ba da ma'auni na tabbatacce. Inda samfuran AI ke aiki na yiyuwa, sarƙar bulokci mai takardar shaida na rubuta ma'aunansu na tabbatacce, yana kafa ƙashin bayan hujja marar canzawa:
 
-* **Model Versioning and Weight Anchoring**: Every deployed model version, its associated weights, and its training data checksums are hashed and written to the ledger at build-time, satisfying **SLSA Level 3** supply-chain requirements.  
-* **Contextual Input Logging**: When an AI model executes a critical decision (e.g., approving a loan or flagging a transaction), the exact contextual inputs and model hashes are written to the ledger, creating a tamper-evident history.  
-* **Auditability without Code Access**: If a regulator asks, "Why did your model reject this credit application on June 3?" the bank does not need to expose proprietary code or attempt to recreate the exact model state. It presents the cryptographically signed, on-chain ledger record of the inputs, weights, and validation state.
+* **Nau'in samfuri da ɗaure nauyi**: kowane nau'in samfuri da aka tura, nauyinsa masu alaƙa, da adadin dubawa na bayanan horarwa ana yin hash kuma ana rubuta su zuwa littafi a lokacin ginawa, suna biyan buƙatun sarƙar samarwa na **SLSA Level 3**.  
+* **Rubuta shigarwa na yanayi**: lokacin da samfurin AI ke aiwatar da yanke shawara mai muhimmanci (misali amincewa da rance ko yiwa mu'amala alama), ana rubuta ainihin shigarwa na yanayi da hash na samfuri zuwa littafi, yana ƙirƙirar tarihi mai juriya ga gyara.  
+* **Iya bincike ba tare da damar shiga lambar ba**: idan mai kula ya tambaya "me ya sa samfurinku ya ƙi wannan buƙatar bashi a ranar 3 ga Yuni?", banki ba ya buƙatar bayyana lambar mallakarsa ko yunƙurin sake ƙirƙirar ainihin yanayin samfuri. Yana gabatar da rikodin da aka sa hannu ta sirri a kan sarƙa na shigarwa, nauyi, da yanayin tabbatarwa.
 
-By anchoring the probabilistic decisions of machine learning models to the deterministic consensus of a certified blockchain, the institution creates a defensible, reconstructable, and independently verifiable timeline of automated actions.
+Ta hanyar ɗaure yanke shawara na yiyuwa na samfuran koyon na'ura zuwa yarjejeniya ta tabbatacce na sarƙar bulokci mai takardar shaida, cibiyar tana ƙirƙirar lokacin ayyuka na atomatik da za a iya kāre, sake ginawa, da tabbatarwa da kansa.
 
-## 06. Visualizing the Certified Consensus-to-Audit Pipeline
+## 06. Nuna madaidaicin bututun tabbatarwa daga yarjejeniya zuwa bincike
 
-The following sequence diagram illustrates the lifecycle of a transaction passing through a certified blockchain platform, demonstrating how validation gates, consensus integrity, smart contract execution, and telemetry emission interlock to produce board-ready regulatory evidence:
+Zanen jerin da ke gaba yana nuna zagayowar rayuwar mu'amala da ke ratsa dandamalin sarƙar bulokci mai takardar shaida, yana nuna yadda ƙofofin tabbatarwa, mutuncin yarjejeniya, aiwatar da kwangilar wayo, da fitar da telemetry ke haɗuwa don samar da hujja ta tsari a shirye don hukumar gudanarwa:
 
 ```mermaid
 sequenceDiagram
@@ -206,37 +202,37 @@ sequenceDiagram
     Engine-->>Telemetry: Emit OpenTelemetry traces (latency, state, validation status)
     Telemetry->>Telemetry: Record evidence to DORA Article 8 Register of Information
 ```
-The critical path for this transactional sequence requires that every validation, execution, and consensus step is cryptographically signed, ensuring end-to-end provenance. The regulator's auditor node synchronizes block state in real-time, eliminating the need for retrospective, manual financial reconciliation.
+Muhimmiyar hanya na wannan jerin mu'amala tana buƙatar cewa kowane matakin tabbatarwa, aiwatarwa, da yarjejeniya an sa hannu ta sirri, yana tabbatar da asali daga ƙarshe zuwa ƙarshe. Kumburan mai bincike na mai kula yana daidaita yanayin block na lokaci-lokaci, yana kawar da buƙatar daidaita kuɗi ta baya-baya, ta hannu.
 
-## 07. The Boardroom Playbook for Senior Managers
+## 07. Littafin wasa na hukumar gudanarwa don manyan manajoji
 
-To successfully navigate the transition from organizational trust to infrastructural trust, bank executives and senior managers should immediately execute four key directives:
+Don yin nasarar tafiyar da sauyi daga amincewa na ƙungiya zuwa amincewa na kayan aiki, shugabannin banki da manyan manajoji su aiwatar da umarni huɗu masu muhimmanci nan take:
 
-1. **Mandate Ledger Audits in Enterprise Risk Management (ERM)**: Enforce a policy that no distributed ledger platform—whether private, public, or consortium-based—may be deployed for critical or important functions (CIFs) unless it has been audited against the 5-layer **Certified Blockchain Index Architecture** (CMM Level 3 minimum).  
-2. **Integrate Blockchains as the ISO 42001 AI Evidentiary Spine**: Direct the Chief Risk Officer and Lead AI Architect to integrate all high-impact machine learning models with a certified blockchain, creating a tamper-evident audit ledger of model versions, weights, inputs, and decisions.  
-3. **Audit the Validator Node Supply Chain (DORA Article 30)**: Require the procurement division to audit all third-party entities hosting validator nodes or managing cloud hosting for DLT networks, mandating compliance with the same cybersecurity and operational resilience standards applied to the bank’s internal cloud nodes.  
-4. **Align Ledger Architectures with CPMI-IOSCO and BCBS 239**: Instruct the platform engineering team to align ledger output telemetry directly with **BCBS 239** data reporting requirements, and ensure the consensus and settlement finality parameters strictly comply with **CPMI-IOSCO Principles 8 and 9**.
+1. **Wajabta bincike na littafi a sarrafa haɗari na kamfani (ERM)**: aiwatar da manufa cewa babu dandamalin littafi mai rarrabuwa — na sirri, na jama'a, ko na ƙungiya — da za a iya tura don muhimman ayyuka ko masu muhimmanci (CIF) ba tare da an bincika shi a kan **gine-ginen Ma'aunin Sarƙoƙin Bulokci Masu Takardar Shaida** na sassa biyar ba (mafi ƙanƙanci CMM Mataki 3).  
+2. **Haɗa sarƙoƙin bulokci a matsayin ƙashin bayan hujja na AI na ISO 42001**: umarci Babban Jami'in Haɗari da babban Injiniyan AI su haɗa duk samfuran koyon na'ura masu tasiri sosai da sarƙar bulokci mai takardar shaida, suna ƙirƙirar rajistar bincike mai juriya ga gyara na nau'ikan samfuri, nauyi, shigarwa, da yanke shawara.  
+3. **Bincika sarƙar samar da kumburan tabbatarwa (DORA Mataki 30)**: buƙaci sashen saye ya bincika duk ɓangarori na uku da ke masaukin kumburan tabbatarwa ko sarrafa masaukin giza-gizai don cibiyoyin sadarwa na DLT, yana wajabta ma'aunan tsaro na yanar gizo da juriya na aiki iri ɗaya da aka yi amfani da su ga kumburan giza-gizai na cikin banki.  
+4. **Daidaita gine-ginen littafi da CPMI-IOSCO da BCBS 239**: umarci ƙungiyar injiniya na dandamali su daidaita telemetry na fitarwa na littafi kai tsaye da buƙatun rahoton bayanai na **BCBS 239**, kuma su tabbatar cewa ma'aunan yarjejeniya da ƙarshen sasantawa suna bin **Ƙa'idodi 8 da 9 na CPMI-IOSCO** sosai.
 
-## 08. Frequently Asked Questions
+## 08. Tambayoyi da ake yawan yi
 
-**Is ISO/IEC TC 307 a certification standard?**  
-No. ISO/IEC TC 307 is a technical committee that establishes vocabulary, reference architectures, and security guidelines. While it defines "what good looks like" (guidance), the industry must operationalize these documents into formal, auditable certification schemes (assurance) to satisfy banking supervisors.
+**Shin ISO/IEC TC 307 ma'auni ne na takardar shaida?**  
+A'a. ISO/IEC TC 307 kwamiti ne na fasaha da ke kafa ƙamus, gine-ginen tunani, da jagororin tsaro. Ko da yake yana bayyana "yadda kyawawan aiki suke kama" (jagoranci), masana'antu dole su sanya waɗannan takardu su yi aiki zuwa tsare-tsaren takardar shaida na hukumance da ake iya bincika (tabbaci) don gamsar da masu kula na banki.
 
-**How does a certified blockchain support DORA compliance?**  
-Under DORA Article 5, bank boards bear direct, personal liability for technology resilience. A certified blockchain provides verifiable, cryptographic evidence of consensus integrity, validator supply-chain control, and smart contract safety, giving board members the documentable "reasonable steps" needed to defend against SM&CR personal liability claims.
+**Yaya sarƙar bulokci mai takardar shaida ke tallafawa bin DORA?**  
+A ƙarƙashin Mataki na 5 na DORA, hukumomin banki suna ɗaukar alhakin mutum kai tsaye game da juriya ta fasaha. Sarƙar bulokci mai takardar shaida na ba da hujja ta sirri da za a iya tabbatarwa game da mutuncin yarjejeniya, sarrafa sarƙar samar da masu tabbatarwa, da tsaron kwangilar wayo, yana ba wa membobin hukumar "matakai masu ma'ana" da za a iya rubuta da ake buƙata don kāre kai daga da'awar alhakin mutum a ƙarƙashin SM&CR.
 
-What is the difference between a traditional ledger audit and a certified blockchain audit?  
-A traditional audit is retrospective, verifying manual entries and static files after transactions have cleared. A certified blockchain audit is continuous and real-time; the validator nodes, BFT consensus engine, and formally verified smart contracts are certified to execute transactions deterministically, emitting structured telemetry (OpenTelemetry) that continuously validates the system’s health.
+Menene bambanci tsakanin bincike na littafi na gargajiya da bincike na sarƙar bulokci mai takardar shaida?  
+Bincike na gargajiya na baya-baya ne: yana tabbatar da shigarwa ta hannu da fayilolin tsaye bayan an sasanta mu'amaloli. Bincike na sarƙar bulokci mai takardar shaida mai ci gaba ne kuma na lokaci-lokaci; kumburan tabbatarwa, injin yarjejeniya na BFT, da kwangilolin wayo da aka tabbatar a hukumance an ba su takardar shaida don aiwatar da mu'amaloli na tabbatacce, suna fitar da telemetry mai tsari (OpenTelemetry) da ke tabbatar da lafiyar tsarin ci gaba.
 
-Can public blockchains be certified for banking use?  
-In most jurisdictions, pure permissionless public blockchains fail to satisfy banking regulations due to the lack of validator identity verification, unpredictable gas/transaction costs, and non-deterministic finality (e.g., probabilistic proof-of-work/stake forks). Certified blockchains in banking typically utilize enterprise permissioned or highly regulated public-hybrid architectures where validator node operators are identified and audited financial entities.
+Shin za a iya ba da takardar shaida ga sarƙoƙin bulokci na jama'a don amfani na banki?  
+A mafi yawan hukunce-hukunce, sarƙoƙin bulokci na jama'a marasa izini kawai suna gaza gamsar da ƙa'idodin banki saboda rashin tabbatar da shaida na masu tabbatarwa, kudaden mu'amala da ba za a iya hasashe ba, da ƙarshe mara tabbaci (misali cokali masu yiyuwa na proof-of-work/stake). Sarƙoƙin bulokci masu takardar shaida a banki galibi suna amfani da gine-gine na kamfani masu izini ko gine-gine na jama'a-gauraye masu tsauri, inda masu gudanar da kumburan tabbatarwa hukumomin kuɗi ne da aka gano kuma aka bincika.
 
-## 09. References
+## 09. Manazarta
 
-* Basel Committee on Banking Supervision (BCBS), 2013. *Principles for effective risk data aggregation and reporting (BCBS 239)*. Basel: Bank for International Settlements. Available at: [https://www.bis.org/publ/bcbs239.pdf](https://www.bis.org/publ/bcbs239.pdf).  
-* Committee on Payments and Market Infrastructures and Technical Committee of the International Organization of Securities Commissions (CPMI-IOSCO), 2012. *Principles for financial market infrastructures*. Basel: Bank for International Settlements. Available at: [https://www.bis.org/cpmi/publ/d101a.pdf](https://www.bis.org/cpmi/publ/d101a.pdf).  
-* European Banking Authority (EBA), 2019. *EBA/GL/2019/02 — Guidelines on outsourcing arrangements*. Paris: EBA. Available at: [https://www.eba.europa.eu/regulation-and-policy/internal-governance/guidelines-on-outsourcing-arrangements](https://www.eba.europa.eu/regulation-and-policy/internal-governance/guidelines-on-outsourcing-arrangements).  
-* European Parliament and Council of the European Union, 2022. *Regulation (EU) 2022/2554 on digital operational resilience for the financial sector (DORA)*. Brussels: Official Journal of the European Union. Available at: [https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554).  
-* ISO/IEC JTC 1/SC 42, 2023. *ISO/IEC 42001:2023 — Information technology — Artificial intelligence — Management system*. Geneva: International Organization for Standardization. Available at: [https://www.iso.org/standard/81230.html](https://www.iso.org/standard/81230.html).  
-* ISO/IEC Technical Committee 307, 2020. *ISO/IEC 22739:2020 — Blockchain and distributed ledger technologies — Vocabulary*. Geneva: International Organization for Standardization. Available at: [https://www.iso.org/standard/73771.html](https://www.iso.org/standard/73771.html).  
-* National Institute of Standards and Technology (NIST), 2026. *First Three Finalized Post-Quantum Encryption Standards (FIPS 203, 204, and 205)*. Gaithersburg: U.S. Department of Commerce. Available at: [https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards](https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards).
+* Kwamitin Basel na Kula da Banki (BCBS), 2013. *Principles for effective risk data aggregation and reporting (BCBS 239)*. Basel: Bankin Sasantawa na Duniya. Ana samu a: [https://www.bis.org/publ/bcbs239.pdf](https://www.bis.org/publ/bcbs239.pdf).  
+* Committee on Payments and Market Infrastructures da Technical Committee of the International Organization of Securities Commissions (CPMI-IOSCO), 2012. *Principles for financial market infrastructures*. Basel: Bankin Sasantawa na Duniya. Ana samu a: [https://www.bis.org/cpmi/publ/d101a.pdf](https://www.bis.org/cpmi/publ/d101a.pdf).  
+* Hukumar Banki ta Turai (EBA), 2019. *EBA/GL/2019/02 — Guidelines on outsourcing arrangements*. Paris: EBA. Ana samu a: [https://www.eba.europa.eu/regulation-and-policy/internal-governance/guidelines-on-outsourcing-arrangements](https://www.eba.europa.eu/regulation-and-policy/internal-governance/guidelines-on-outsourcing-arrangements).  
+* Majalisar Turai da Majalisar Ƙungiyar Turai, 2022. *Dokar (EU) 2022/2554 game da juriya ta aiki na dijital don ɓangaren kuɗi (DORA)*. Brussels: Jaridar Hukuma ta Ƙungiyar Turai. Ana samu a: [https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554).  
+* ISO/IEC JTC 1/SC 42, 2023. *ISO/IEC 42001:2023 — Information technology — Artificial intelligence — Management system*. Geneva: Ƙungiyar Ƙasa da Ƙasa don Daidaitawa. Ana samu a: [https://www.iso.org/standard/81230.html](https://www.iso.org/standard/81230.html).  
+* Kwamitin Fasaha na ISO/IEC 307, 2020. *ISO/IEC 22739:2020 — Blockchain and distributed ledger technologies — Vocabulary*. Geneva: Ƙungiyar Ƙasa da Ƙasa don Daidaitawa. Ana samu a: [https://www.iso.org/standard/73771.html](https://www.iso.org/standard/73771.html).  
+* National Institute of Standards and Technology (NIST), 2026. *First Three Finalized Post-Quantum Encryption Standards (FIPS 203, 204, and 205)*. Gaithersburg: U.S. Department of Commerce. Ana samu a: [https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards](https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards).
