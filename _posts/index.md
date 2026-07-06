@@ -106,7 +106,20 @@ site_software: "Static Site Generator, Rust"
 
 ---
 
-<section class="feat offer reveal" aria-labelledby="what-i-build">
+<section class="read-as" data-announce="Now showing content for" aria-labelledby="read-as-label" hidden>
+<div class="read-as-inner">
+<span class="read-as-label" id="read-as-label">Read as…</span>
+<div class="read-as-group" role="group" aria-label="Choose your reading lens">
+<button type="button" class="read-as-btn" data-read="" aria-pressed="true">Everyone</button>
+<button type="button" class="read-as-btn" data-read="boards" aria-pressed="false">Boards</button>
+<button type="button" class="read-as-btn" data-read="engineers" aria-pressed="false">Engineers</button>
+<button type="button" class="read-as-btn" data-read="regulators" aria-pressed="false">Regulators</button>
+</div>
+</div>
+<p class="visually-hidden" data-read-status role="status" aria-live="polite"></p>
+</section>
+
+<section class="feat offer reveal" aria-labelledby="what-i-build" data-audience="engineers">
 <div class="offer-grid">
 <figure class="offer-media">
 <img alt="Soft natural light over a modern architectural space, representing dependable financial infrastructure." src="https://cloudcdn.pro/stocks/images/toa-heftiba-sinca-940295-1920.webp" loading="lazy" decoding="async" width="900" height="1100" />
@@ -138,7 +151,7 @@ site_software: "Static Site Generator, Rust"
 </div>
 </section>
 
-<section class="feat alt reveal" aria-labelledby="proof">
+<section class="feat alt reveal" aria-labelledby="proof" data-audience="boards">
 <div class="wrap">
 <p class="feat-eyebrow">Proof</p>
 <h2 id="proof" class="feat-headline center">By the numbers.</h2>
@@ -171,7 +184,7 @@ site_software: "Static Site Generator, Rust"
 </div>
 </section>
 
-<section class="feat reveal" aria-labelledby="paper">
+<section class="feat reveal" aria-labelledby="paper" data-audience="regulators">
 <article class="feat-card">
 <div class="feat-card-media">
 <img alt="Isometric render of an illuminated processor, representing the cryptographic foundations of payments." src="https://cloudcdn.pro/stocks/images/a-chosen-soul-IQi4jAlVeOI-unsplash.webp" loading="lazy" decoding="async" width="800" height="800" />
@@ -185,7 +198,7 @@ site_software: "Static Site Generator, Rust"
 </article>
 </section>
 
-<section class="feat reveal" aria-labelledby="latest">
+<section class="feat reveal" aria-labelledby="latest" data-audience="boards engineers regulators">
 <div class="wrap">
 <p class="feat-eyebrow">Latest</p>
 <h2 id="latest" class="feat-headline center">From the desk.</h2>
