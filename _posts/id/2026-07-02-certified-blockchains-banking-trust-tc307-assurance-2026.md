@@ -1,6 +1,6 @@
 ---
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
-banner_alt: "Abstract distributed-ledger lattice resolving into a certified audit spine — visualising the shift from retrospective entity audits to continuous, cryptographically-verifiable blockchain assurance for wholesale banking"
+banner_alt: "Kisi buku besar terdistribusi abstrak yang mengkristal menjadi tulang punggung audit bersertifikat — memvisualisasikan peralihan dari audit retrospektif berbasis entitas ke jaminan blockchain berkelanjutan yang dapat diverifikasi secara kriptografis untuk perbankan grosir"
 banner_height: "1280"
 banner_width: "1920"
 banner: "https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp"
@@ -9,7 +9,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "July 2, 2026"
-description: "The 2026 Certified Blockchain Index gives banks a 5-level Capability Maturity Model to certify distributed-ledger governance, consensus integrity, cryptography, smart-contract assurance, and audit observability against DORA, CPMI-IOSCO PFMI, ISO/IEC TC 307, ISO 42001 and Basel III."
+description: "Indeks Blockchain Bersertifikat 2026 memberi bank Model Kematangan Kapabilitas lima tingkat untuk menyertifikasi tata kelola buku besar terdistribusi, integritas konsensus, kriptografi, jaminan kontrak pintar, dan keteramatan audit terhadap DORA, PFMI CPMI-IOSCO, ISO/IEC TC 307, ISO 42001, dan Basel III."
 format-detection: "telephone=no"
 hreflang: "id"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -35,9 +35,9 @@ rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
 schema: "FAQPage, Article"
-seo_title: "From Evidence to Truth: Certified Blockchains and Banking Trust"
+seo_title: "Dari bukti menuju kebenaran: blockchain bersertifikat dan kepercayaan perbankan"
 short_name: "sebastienrousseau"
-subtitle: "Why certifiable ledger assurance — not immutability alone — will define institutional trust in 2026: scoring governance, consensus integrity, cryptography, smart contracts, and observability against DORA, ISO/IEC TC 307, and CPMI-IOSCO PFMI."
+subtitle: "Mengapa jaminan buku besar yang dapat disertifikasi — bukan sekadar ketidakubahan — akan menentukan kepercayaan institusional pada 2026: menilai tata kelola, integritas konsensus, kriptografi, kontrak pintar, dan keteramatan terhadap DORA, ISO/IEC TC 307, dan PFMI CPMI-IOSCO."
 tags: "agentic AI, AI governance, banking, autonomy tiers, model risk, SR 11-7, EU AI Act, FSB, IOSCO, MAS, IMDA, control plane, audit log, DORA, McKinsey, Stanford AI Index"
 theme-color: "0, 83, 191"
 title: "The Agentic AI Index for Banks in 2026: Measuring Autonomy"
@@ -63,7 +63,7 @@ apple_touch_icon_sizes: "192x192"
 apple-mobile-web-app-capable: "yes"
 apple-mobile-web-app-status-bar-inset: "black"
 apple-mobile-web-app-status-bar-style: "black-translucent"
-apple-mobile-web-app-title: "Certified Blockchains 2026"
+apple-mobile-web-app-title: "Blockchain bersertifikat 2026"
 apple-touch-fullscreen: "yes"
 msapplication-navbutton-color: "0, 83, 191"
 twitter_card: "summary_large_image"
@@ -84,103 +84,99 @@ site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 ---
 
-<!-- translation-stub: replace this body in Claude Code -->
+# Dari bukti menuju kebenaran: mengapa blockchain bersertifikat akan menentukan era berikutnya dari kepercayaan perbankan
 
-> _Translation pending — read the [English original](/2026-07-02-certified-blockchains-banking-trust-tc307-assurance-2026/) while we localise._
+## Ringkasan strategis (intinya)
 
-# From Evidence to Truth: Why Certified Blockchains Will Define the Next Era of Banking Trust
+Perbankan grosir dan transaksi global pada 2026 berada di titik balik bersejarah. Seiring layanan keuangan beralih ke jaringan kliring digital asli dan real-time, dan seiring kecerdasan buatan memperkenalkan non-determinisme probabilistik, model jaminan tradisional yang analog dan retrospektif (seperti audit statis berbasis entitas) tidak lagi memenuhi tuntutan modern akan manajemen risiko dan kewajiban fidusia.
 
-## Executive Summary & Strategic Context (TL;DR)
+Komite Teknis ISO/IEC TC 307 telah menetapkan dasar yang terstandardisasi untuk teknologi buku besar terdistribusi. Namun, adopsi institusional yang sesungguhnya menuntut peralihan dari panduan deskriptif ke jaminan blockchain yang preskriptif dan dapat disertifikasi secara independen. Dengan menilai tata kelola buku besar, integritas konsensus, keamanan kontrak pintar, dan kelincahan kriptografis terhadap Model Kematangan Kapabilitas (CMM) lima tingkat yang ketat, bank dapat beralih dari asumsi yang terfragmentasi dan spesifik pemasok menuju kebenaran finansial yang dapat disertifikasi dan diaudit oleh dewan.
 
-Wholesale banking and global transactions in 2026 sit at a historic inflection point. As financial services transition to natively digital, real-time clearing networks, and as artificial intelligence introduces probabilistic non-determinism, the traditional analogue, retrospective assurance models (such as static entity-based audits) fail to meet modern risk management and fiduciary demands.
+## Poin-poin utama
 
-ISO/IEC Technical Committee 307 (TC 307) has established a standardized baseline for distributed ledger technologies. However, true corporate and institutional adoption requires shifting from descriptive guidance to prescriptive, independently certifiable blockchain assurance. By scoring ledger governance, consensus integrity, smart contract safety, and cryptographic agility against a strict 5-level Capability Maturity Model (CMM), banks can move from patchwork, vendor-specific assumptions to certifiable, board-auditable financial truth.
+* **Kesenjangan gesekan fidusia**: hari ini kita dapat menyertifikasi bank (Basel III), cloud (ISO 27001), dan sistem tata kelola AI (ISO 42001), tetapi belum dapat menyertifikasi buku besar terdistribusi yang semakin menentukan apa yang benar. Asimetri ini adalah kerentanan operasional yang besar.  
+* **DORA memberlakukan tanggung jawab fidusia langsung**: berdasarkan Pasal 5 DORA, dewan direksi bank memikul tanggung jawab pribadi langsung yang tidak dapat didelegasikan atas ketahanan operasional semua penerapan pihak ketiga dan buku besar, dengan sanksi pribadi yang berat dalam rezim SM&CR atas kegagalan.  
+* **Tulang punggung audit AI**: di mana pembelajaran mesin menghasilkan hasil probabilistik yang tidak dapat direproduksi, blockchain bersertifikat memberikan penangkapan keadaan yang deterministik. Mencatat versi model, masukan, dan keputusan validasi di rantai memenuhi ISO 42001 dan standar manajemen risiko model.  
+* **Indeks Blockchain Bersertifikat**: indeks ini memformalkan tata kelola, konsensus, kontrak pintar, dan keteramatan menjadi kartu skor yang dapat diverifikasi dan siap audit pada skala CMM 0 hingga 5, menerjemahkan metrik rekayasa menjadi pernyataan selera risiko yang disetujui dewan.
 
-## Key Takeaways
+## 01. Kesenjangan gesekan fidusia dalam perbankan digital
 
-* **The Fiduciary Frictional Gap**: We can currently certify the bank (Basel III), the cloud (ISO 27001), and the AI governance systems (ISO 42001), but we cannot yet certify the distributed ledger that increasingly determines what is true. This asymmetry is a major operational vulnerability.  
-* **DORA Enforces Direct Fiduciary Responsibility**: Under DORA Article 5, bank boards of directors bear direct, non-delegable personal liability for the operational resilience of all third-party and ledger deployments, with severe SM&CR personal penalties for failures.  
-* **The AI Audit Spine**: While machine learning introduces non-reproducible, probabilistic outcomes, a certified blockchain provides deterministic state capture. Recording model versions, inputs, and validation decisions on-chain satisfies ISO 42001 and Model Risk Management standards.  
-* **The Certified Blockchain Index**: This index formalizes governance, consensus, smart contracts, and observability into a verifiable, audit-ready scorecard on a 0-to-5 CMM scale, translating engineering metrics into board-approved Risk Appetite Statements.
+Dalam perbankan klasik, kepercayaan bersifat relasional, institusional, dan retrospektif. Ia bergantung pada auditor pihak ketiga independen yang meninjau keadaan keuangan pada titik waktu tetap, merekonsiliasi perbedaan antar silo buku besar bilateral. Di pasar real-time yang digerakkan API pada 2026, model ini memperkenalkan latensi yang menghambat dan risiko struktural.
 
-## 01. The Fiduciary Frictional Gap in Digital Banking
+Ketika transaksi diselesaikan seketika, kumpulan likuiditas intrahari dikelola secara dinamis oleh gerbang API, dan kepemilikan aset ditokenisasi di buku besar bersama, audit retrospektif menjadi latihan forensik alih-alih kontrol preventif. Fidusiari tidak lagi dapat hanya mengandalkan sertifikasi entitas hukum. Mereka harus menyertifikasi substrat digital itu sendiri.
 
-In classical banking, trust is relational, institutional, and retrospective. It depends on independent, third-party auditors reviewing financial state at static points in time, reconciling discrepancies across bilateral ledger silos. In the real-time, API-driven markets of 2026, this model introduces prohibitive latencies and structural risks.
+Saat ini, bank beroperasi di bawah asimetri arsitektural yang mencolok:
 
-When transactions settle instantly, intraday liquidity pools are managed dynamically by API gateways, and asset ownership is tokenised across shared ledgers, retrospective audits become forensic exercises rather than preventative controls. Fiduciaries can no longer rely solely on certifying the corporate entity. They must certify the digital substrate itself.
+1. **Infrastruktur cloud bersertifikat**: node perangkat keras, kontainer tervirtualisasi, dan pusat data fisik divalidasi terhadap kontrol ISO/IEC 27001 dan SOC 2 Type II.  
+2. **Proses manajemen bersertifikat**: kebijakan risiko operasional, rencana kelangsungan bisnis, dan penerapan algoritmik diatur oleh kerangka risiko yang ketat.  
+3. **Mesin buku besar tidak bersertifikat**: mekanisme konsensus terdistribusi, rantai pasok node validator, batas kontrak pintar, dan model tata kelola jaringan dibiarkan pada asumsi yang tidak bersertifikat, khusus, atau spesifik konsorsium.
 
-Currently, banks operate under a glaring architectural asymmetry:
+Asimetri ini adalah titik kegagalan kritis. Sebuah bank dapat menjalankan aplikasi yang tervalidasi di dalam kontainer cloud yang aman dan bersertifikat ISO 27001, tetapi jika kontainer itu menulis ke buku besar terdistribusi dengan kontrol validator terpusat, parameter konsensus yang rentan, atau kontrak pintar yang tidak diaudit, integritas transaksi terkompromi. Untuk menjembatani kesenjangan ini, mesin buku besar itu sendiri harus menjadi objek jaminan yang dapat disertifikasi.
 
-1. **Certified Cloud Infrastructure**: Hardware nodes, virtualized containers, and physical datacenters are validated against ISO/IEC 27001 and SOC 2 Type II controls.  
-2. **Certified Management Processes**: Operational risk policies, business continuity plans, and algorithmic deployments are governed under strict risk frameworks.  
-3. **Uncertified Ledger Engines**: The core distributed consensus mechanisms, validator node supply chains, smart contract boundaries, and network governance models are left to uncertified, custom, or consortium-specific assumptions.
+## 02. Dasar standardisasi ISO/IEC TC 307
 
-This asymmetry is a major failure point. A bank can run a validated application inside a secure, ISO 27001-certified cloud container, but if that container writes to a distributed ledger with centralized validator control, vulnerable consensus parameters, or un-audited smart contracts, the transaction integrity is compromised. To bridge this gap, the ledger engine itself must become a certifiable assurance object.
+Pekerjaan fundamental yang diperlukan untuk menstandardisasi buku besar terdistribusi sedang ditetapkan oleh Komite Teknis ISO/IEC TC 307 (Teknologi blockchain dan buku besar terdistribusi). Alih-alih memperlakukan blockchain sebagai protokol teknis yang terisolasi, TC 307 mendekatinya sebagai infrastruktur kepercayaan institusional, mengatur pekerjaannya di sekitar lima pilar inti:
 
-## 02. The ISO/IEC TC 307 Standardization Baseline
+1. **Taksonomi dan kosakata (ISO 22739)**: menetapkan nomenklatur bersama, memastikan definisi hukum dan operasional yang konsisten antar yurisdiksi, skema keuangan, dan institusi.  
+2. **Arsitektur referensi (ISO/TR 23245)**: mendefinisikan batas, lapisan, aliran data, dan komponen fungsional dari sistem buku besar terdistribusi yang patuh.  
+3. **Keamanan, privasi, dan kontrak pintar (ISO/TR 23244 / ISO 23613)**: menetapkan pedoman keamanan dasar untuk sistem aset digital dan merinci praktik terbaik untuk mitigasi kerentanan kontrak pintar dan tata kelola siklus hidup.  
+4. **Kerangka interoperabilitas**: menangani mekanisme pertukaran data dan aset antar jaringan buku besar yang heterogen, mencegah terbentuknya silo tertokenisasi yang terisolasi.  
+5. **Identitas terdesentralisasi dan jangkar kepercayaan**: mengintegrasikan pengenal kriptografis berbasis buku besar dengan infrastruktur kunci publik (PKI) formal dan registri yang diberi wewenang negara.
 
-The foundational work required to standardize distributed ledgers is being established by ISO/IEC Technical Committee 307 (TC 307) (Blockchain and distributed ledger technologies). Rather than treating blockchain as an isolated technical protocol, TC 307 addresses it as an institutional trust infrastructure, organizing its work across five core pillars:
+Secara kolektif, TC 307 menandakan transisi DLT dari pilihan rekayasa khusus menjadi disiplin arsitektural yang terstandardisasi. Namun, TC 307 tetap sebagian besar deskriptif. Ia mendefinisikan seperti apa keunggulan itu (panduan), tetapi tidak menyediakan protokol verifikasi preskriptif (jaminan) yang dibutuhkan pejabat risiko dan pengawas untuk mengotorisasi penerapan produksi fungsi kritis atau penting (CIF).
 
-1. **Taxonomy and Vocabulary (ISO 22739)**: Establishes a common nomenclature, ensuring consistent legal and operational definitions across different jurisdictions, financial schemes, and institutions.  
-2. **Reference Architecture (ISO/TR 23245)**: Defines the boundaries, layers, data flows, and functional components of a compliant distributed ledger system.  
-3. **Security, Privacy, and Smart Contracts (ISO/TR 23244 / ISO 23613)**: Establishes baseline security guidelines for digital asset systems and details best practices for smart contract vulnerability mitigation and lifecycle governance.  
-4. **Interoperability Frameworks**: Addresses the data and asset-exchange mechanisms between heterogeneous ledger networks, preventing the formation of isolated tokenised silos.  
-5. **Decentralized Identity and Trust Anchors**: Integrates ledger-based cryptographic identifiers with formal public-key infrastructures (PKI) and state-authorized registries.
+## 03. Panduan versus jaminan: perbedaan fidusia
 
-Collectively, TC 307 signals the transition of DLT from a custom engineering choice into a standardized architectural discipline. However, TC 307 remains primarily descriptive. It defines what good looks like (guidance), but it does not provide the prescriptive verification protocol (assurance) that risk officers and supervisors require to authorize production deployments of critical or important functions (CIFs).
+Pelaku pasar keuangan tidak menerapkan teknologi karena inovatif atau elegan; mereka menerapkannya ketika dapat ditata kelola, diaudit, dipertahankan, dan direkonsiliasi dengan persyaratan cadangan modal. Itulah mengapa standardisasi dalam perbankan secara alami terurai menjadi dua lapisan:
 
-## 03. Guidance vs. Assurance: The Fiduciary Distinction
+* **Panduan (kerangka)**: menguraikan praktik terbaik, target referensi, dan pedoman arsitektural (mis. ISO/IEC TC 307, kerangka NIST).  
+* **Jaminan (bukti)**: menyediakan bukti independen, berkelanjutan, dan dapat diverifikasi pihak ketiga bahwa kerangka telah diterapkan dan berjalan sesuai rancangan (mis. sertifikasi ISO 27001, audit SOC 2, pemeriksaan regulasi).
 
-Financial market participants do not deploy technology because it is innovative or elegant; they deploy it when it can be governed, audited, defended, and reconciled with capital reserve requirements. This is why standardisation in banking naturally resolves into two layers:
+Mengandalkan konsensus buku besar yang tidak bersertifikat sambil menyertifikasi infrastruktur cloud adalah celah regulasi yang kritis. Sebuah blockchain yang "tidak dapat diubah" belum tentu "dipercaya secara institusional". Ketidakubahan hanya menjamin bahwa data yang dimasukkan tetap tidak berubah; ia tidak memverifikasi apakah node validator aman, apakah protokol konsensus tahan terhadap kolusi, apakah logika kontrak pintar benar secara matematis, atau apakah manajemen kunci kriptografis mematuhi mandat pasca-kuantum.
 
-* **Guidance (The Framework)**: Outlines best practices, reference targets, and architectural guidelines (e.g., ISO/IEC TC 307, NIST frameworks).  
-* **Assurance (The Proof)**: Provides independent, continuous, and third-party-verifiable evidence that the framework is implemented and operating as designed (e.g., ISO 27001 certification, SOC 2 audits, regulatory examinations).
+Untuk menutup celah ini, Indeks Blockchain Bersertifikat 2026 memformalkan persyaratan ini menjadi Model Kematangan Kapabilitas (CMM) yang dapat dikuantifikasi, dipetakan ke regulasi perbankan global.
 
-Relying on uncertified ledger consensus while certifying cloud infrastructure is a critical regulatory gap. A blockchain that is "immutable" is not necessarily "institutionally trusted." Immutability only guarantees that the data entered is unchanged; it does not verify that the validator nodes are secure, the consensus protocol is resilient against collusion, the smart contract logic is mathematically sound, or the cryptographic key management complies with post-quantum mandates.
+## 04. Indeks Blockchain Bersertifikat 2026
 
-To close this gap, the 2026 Certified Blockchain Index formalizes these requirements into a quantifiable Capability Maturity Model (CMM) mapped to global banking regulations.
+Agar manajemen senior dapat mengevaluasi dan menyertifikasi platform buku besar mereka, indeks ini menstrukturkan infrastruktur buku besar terdistribusi menjadi lima lapisan operasional yang dapat diaudit, dinilai pada skala CMM 0 hingga 5.
 
-## 04. The 2026 Certified Blockchain Index
+## Tabel 1: arsitektur Indeks Blockchain Bersertifikat
 
-To enable senior management to evaluate and certify their ledger platforms, this index structures the distributed ledger infrastructure into five auditable operational layers, scored on a 0-to-5 CMM scale.
-
-## Table 1: The Certified Blockchain Index Architecture
-
-| Index Layer | Capability Maturity Level (CMM) | Technical and Operational Metric | Regulatory / Fiduciary Control Reference |
+| Lapisan indeks | Tingkat kematangan (CMM) | Metrik teknis dan operasional | Referensi kontrol regulasi / fidusia |
 | :---- | :---- | :---- | :---- |
-| **Ledger Governance** | **Level 0**: Ad-hoc consortium**Level 3**: Automated validator vetting & rotation**Level 5**: Decentralized, multi-party cryptographic identity anchoring | % of validator nodes operated by vetted financial entities; mean time to resolve validator disputes; geographic distribution of nodes | **DORA Article 5** (Governance and Organisation); **CPMI-IOSCO PFMI Principle 2** (Governance) & **Principle 3** (Framework for the comprehensive management of risks) |
-| **Consensus Integrity** | **Level 0**: Single-node or opaque POW**Level 3**: Audited BFT with deterministic finality**Level 5**: Multi-jurisdictional, formally verified consensus with continuous latency monitoring | Max tolerable consensus latency; collusion-resistance threshold; uptime SLA under simulated node partition | **DORA Article 6** (ICT Risk Management Framework); **CPMI-IOSCO PFMI Principle 8** (Settlement Finality) |
-| **Identity & Cryptography** | **Level 0**: Weak RSA / ECDSA keys**Level 3**: Multi-sig with HSM-backed key management**Level 5**: Quantum-safe hybrid keys (FIPS 203 ML-KEM) and zero-knowledge privacy gates | % of ledger transactions signed with HSM-backed keys; PQC migration readiness score; ZK-proof latency | **NIST FIPS 203 / 204**; **ISO/IEC 27001** (Information Security Management) |
-| **Smart Contract Assurance** | **Level 0**: Un-audited solidity scripts**Level 3**: Automated compiler validation & external audit**Level 5**: Formally verified, immutable smart contracts with circuit-breaker upgrades | % of smart contracts with mathematical formal verification; count of compiler warnings; vulnerability scan coverage | **EBA Guidelines on Outsourcing Arrangements** (Paragraphs 81, 113-117); **DORA Article 30** (Minimum Contractual Clauses) |
-| **Audit & Observability** | **Level 0**: Manual log scraping**Level 3**: Structured OTel traces & read-only auditor nodes**Level 5**: Automated, continuous reconciliation to the Article 8 register | % of transactions covered by OpenTelemetry traces; latency from ledger block-commit to auditor-node sync | **BCBS 239** (Risk Data Aggregation); **DORA Article 8** (Register of Information / ITS Schemas) |
+| **Tata kelola buku besar** | **Tingkat 0**: konsorsium ad hoc**Tingkat 3**: penyaringan dan rotasi validator otomatis**Tingkat 5**: penjangkaran identitas kriptografis terdesentralisasi, multipihak | % node validator yang dioperasikan oleh entitas keuangan yang telah disaring; waktu rata-rata penyelesaian sengketa validator; sebaran geografis node | **DORA Pasal 5** (Tata kelola dan organisasi); **CPMI-IOSCO PFMI Prinsip 2** (Tata kelola) dan **Prinsip 3** (Kerangka manajemen risiko menyeluruh) |
+| **Integritas konsensus** | **Tingkat 0**: node tunggal atau PoW buram**Tingkat 3**: BFT teraudit dengan finalitas deterministik**Tingkat 5**: konsensus multi-yurisdiksi, terverifikasi formal, dengan pemantauan latensi berkelanjutan | latensi konsensus maksimum yang dapat ditoleransi; ambang ketahanan kolusi; SLA ketersediaan pada partisi node tersimulasi | **DORA Pasal 6** (Kerangka manajemen risiko TIK); **CPMI-IOSCO PFMI Prinsip 8** (Finalitas penyelesaian) |
+| **Identitas dan kriptografi** | **Tingkat 0**: kunci RSA / ECDSA lemah**Tingkat 3**: multi-tanda tangan dengan manajemen kunci berbasis HSM**Tingkat 5**: kunci hibrida aman kuantum (FIPS 203 ML-KEM) dan gerbang privasi tanpa pengetahuan | % transaksi buku besar yang ditandatangani dengan kunci berbasis HSM; skor kesiapan migrasi PQC; latensi bukti ZK | **NIST FIPS 203 / 204**; **ISO/IEC 27001** (Manajemen keamanan informasi) |
+| **Jaminan kontrak pintar** | **Tingkat 0**: skrip Solidity tidak diaudit**Tingkat 3**: validasi kompilator otomatis dan audit eksternal**Tingkat 5**: kontrak pintar tidak dapat diubah, terverifikasi formal, dengan pemutakhiran tipe pemutus sirkuit | % kontrak pintar dengan verifikasi formal matematis; jumlah peringatan kompilator; cakupan pemindaian kerentanan | **Pedoman EBA tentang alih daya** (paragraf 81, 113-117); **DORA Pasal 30** (Klausul kontraktual minimum) |
+| **Audit dan keteramatan** | **Tingkat 0**: pengorekan log manual**Tingkat 3**: jejak OTel terstruktur dan node auditor hanya-baca**Tingkat 5**: rekonsiliasi otomatis dan berkelanjutan dengan register Pasal 8 | % transaksi yang tercakup oleh jejak OpenTelemetry; latensi dari komit blok hingga sinkronisasi node auditor | **BCBS 239** (Agregasi data risiko); **DORA Pasal 8** (Register informasi / skema ITS) |
 
-## Table 2: Key Trust Signals Mapped to Global Banking Standards
+## Tabel 2: sinyal kepercayaan utama yang dipetakan ke standar perbankan global
 
-| Signal / Benchmark | Metric | Impact on Banking Platforms | Regulatory Source |
+| Sinyal / tolok ukur | Metrik | Dampak pada platform perbankan | Sumber regulasi |
 | :---- | :---- | :---- | :---- |
-| **ISO/IEC TC 307 Progress** | Transition from ISO/TR technical reports to formal certification schemes | Establishes the first standardized framework for certifying distributed ledger engines | **ISO/IEC JTC 1 / SC 44** (Distributed Ledger Technologies) |
-| **Project Agorá Prototype Phase** | 40+ participating commercial banks; unified ledger testing of tokenised deposits | Shifting cross-border clearing from messaging (SWIFT) to atomic tokenised settlement | **Bank for International Settlements (BIS) Innovation Hub** |
-| **DORA Article 30 Third-Party Audit** | 100% of node providers and infrastructure hosts audited against security criteria | Eliminates "shadow validator nodes"; mandates total supply-chain transparency | **European Supervisory Authorities (ESA)** |
-| **ISO/IEC 42001 (AI Governance)** | Cryptographically immutabilized AI model and training logs on-chain | Employs blockchain as the immutable evidentiary ledger ("audit spine") for machine learning | **ISO/IEC 42001:2023** (Information technology — Artificial intelligence) |
-| **Basel III Capital Adequacy** | Reduction in operational risk capital buffers based on documented complexity reduction | Standardized operational risk frameworks directly credit verified ledger resilience | **Basel Committee on Banking Supervision (BCBS)** |
+| **Kemajuan ISO/IEC TC 307** | Peralihan dari laporan teknis ISO/TR ke skema sertifikasi formal | Menetapkan kerangka terstandardisasi pertama untuk menyertifikasi mesin buku besar terdistribusi | **ISO/IEC JTC 1 / SC 44** (Teknologi buku besar terdistribusi) |
+| **Fase prototipe Proyek Agorá** | Lebih dari 40 bank komersial peserta; pengujian buku besar terpadu untuk simpanan tertokenisasi | Menggeser kliring lintas batas dari pesan (SWIFT) ke penyelesaian tertokenisasi atomik | **Pusat Inovasi Bank for International Settlements (BIS)** |
+| **Audit pihak ketiga DORA Pasal 30** | 100% penyedia node dan host infrastruktur diaudit terhadap kriteria keamanan | Menghapus "node validator bayangan"; mewajibkan transparansi rantai pasok penuh | **Otoritas Pengawas Eropa (ESA)** |
+| **ISO/IEC 42001 (tata kelola AI)** | Log model dan pelatihan AI dijadikan tidak dapat diubah secara kriptografis di rantai | Menggunakan blockchain sebagai register bukti yang tidak dapat diubah ("tulang punggung audit") untuk pembelajaran mesin | **ISO/IEC 42001:2023** (Teknologi informasi — Kecerdasan buatan) |
+| **Kecukupan modal Basel III** | Pengurangan penyangga modal risiko operasional berdasarkan pengurangan kompleksitas yang terdokumentasi | Kerangka risiko operasional terstandardisasi secara langsung memperhitungkan ketahanan buku besar yang terverifikasi | **Komite Basel untuk Pengawasan Perbankan (BCBS)** |
 
-## 05. The AI "Audit Spine": Probabilistic Intelligence on Deterministic Infrastructure
+## 05. "Tulang punggung audit" AI: kecerdasan probabilistik di atas infrastruktur deterministik
 
-One of the most powerful strategic roles for a certified blockchain in 2026 is acting as an **"Audit Spine"** for artificial intelligence deployments. Modern financial systems are increasingly probabilistic. Credit scoring, real-time fraud detection, algorithmic trading, and autonomous customer interactions are driven by machine learning models that evolve, drift, and adapt over time. These models are non-deterministic: given the same input at two different times, they may yield different outputs due to dynamic weights and continuous training.
+Salah satu peran strategis paling kuat dari blockchain bersertifikat pada 2026 adalah bertindak sebagai **"tulang punggung audit"** untuk penerapan kecerdasan buatan. Sistem keuangan modern semakin probabilistik. Penilaian kredit, deteksi penipuan real-time, perdagangan algoritmik, dan interaksi pelanggan otonom digerakkan oleh model pembelajaran mesin yang berevolusi, menyimpang, dan beradaptasi dari waktu ke waktu. Model-model ini tidak deterministik: dengan masukan yang sama pada dua waktu berbeda, mereka dapat menghasilkan keluaran berbeda karena bobot dinamis dan pelatihan berkelanjutan.
 
-This non-determinism introduces a profound governance challenge under **ISO/IEC 42001 (AI Governance)** and **Model Risk Management (MRM)** standards (such as **US Federal Reserve SR 11-7** and **UK PRA SS1/23**): *How do you audit, explain, and defend decisions that are not strictly reproducible?*
+Non-determinisme ini menimbulkan tantangan tata kelola yang mendalam di bawah **ISO/IEC 42001 (tata kelola AI)** dan standar manajemen risiko model (MRM) (seperti **SR 11-7 Federal Reserve AS** dan **SS1/23 PRA Inggris**): *bagaimana Anda mengaudit, menjelaskan, dan mempertahankan keputusan yang tidak dapat direproduksi secara ketat?*
 
-A certified distributed ledger provides the deterministic counterweight. While AI models operate probabilistically, the certified blockchain records their parameters deterministically, establishing an unalterable evidentiary spine:
+Buku besar terdistribusi yang bersertifikat memberikan penyeimbang deterministik. Di mana model AI beroperasi secara probabilistik, blockchain bersertifikat mencatat parameternya secara deterministik, menetapkan tulang punggung bukti yang tidak dapat diubah:
 
-* **Model Versioning and Weight Anchoring**: Every deployed model version, its associated weights, and its training data checksums are hashed and written to the ledger at build-time, satisfying **SLSA Level 3** supply-chain requirements.  
-* **Contextual Input Logging**: When an AI model executes a critical decision (e.g., approving a loan or flagging a transaction), the exact contextual inputs and model hashes are written to the ledger, creating a tamper-evident history.  
-* **Auditability without Code Access**: If a regulator asks, "Why did your model reject this credit application on June 3?" the bank does not need to expose proprietary code or attempt to recreate the exact model state. It presents the cryptographically signed, on-chain ledger record of the inputs, weights, and validation state.
+* **Pemversian model dan penjangkaran bobot**: setiap versi model yang diterapkan, bobot terkaitnya, dan checksum data pelatihannya di-hash dan ditulis ke buku besar pada waktu build, memenuhi persyaratan rantai pasok **SLSA Level 3**.  
+* **Pencatatan masukan kontekstual**: ketika model AI menjalankan keputusan kritis (mis. menyetujui pinjaman atau menandai transaksi), masukan kontekstual yang tepat dan hash model ditulis ke buku besar, menciptakan riwayat yang tahan-rusak.  
+* **Kemampuan audit tanpa akses kode**: jika regulator bertanya "mengapa model Anda menolak permohonan kredit ini pada 3 Juni?", bank tidak perlu mengekspos kode kepemilikannya atau mencoba menciptakan ulang keadaan model yang tepat. Ia menyajikan catatan di rantai yang ditandatangani secara kriptografis tentang masukan, bobot, dan keadaan validasi.
 
-By anchoring the probabilistic decisions of machine learning models to the deterministic consensus of a certified blockchain, the institution creates a defensible, reconstructable, and independently verifiable timeline of automated actions.
+Dengan menjangkarkan keputusan probabilistik model pembelajaran mesin ke konsensus deterministik blockchain bersertifikat, institusi menciptakan garis waktu tindakan otomatis yang dapat dipertahankan, direkonstruksi, dan diverifikasi secara independen.
 
-## 06. Visualizing the Certified Consensus-to-Audit Pipeline
+## 06. Memvisualisasikan alur bersertifikat dari konsensus ke audit
 
-The following sequence diagram illustrates the lifecycle of a transaction passing through a certified blockchain platform, demonstrating how validation gates, consensus integrity, smart contract execution, and telemetry emission interlock to produce board-ready regulatory evidence:
+Diagram urutan berikut mengilustrasikan siklus hidup transaksi yang melewati platform blockchain bersertifikat, menunjukkan bagaimana gerbang validasi, integritas konsensus, eksekusi kontrak pintar, dan emisi telemetri saling mengunci untuk menghasilkan bukti regulasi yang siap untuk dewan:
 
 ```mermaid
 sequenceDiagram
@@ -206,37 +202,37 @@ sequenceDiagram
     Engine-->>Telemetry: Emit OpenTelemetry traces (latency, state, validation status)
     Telemetry->>Telemetry: Record evidence to DORA Article 8 Register of Information
 ```
-The critical path for this transactional sequence requires that every validation, execution, and consensus step is cryptographically signed, ensuring end-to-end provenance. The regulator's auditor node synchronizes block state in real-time, eliminating the need for retrospective, manual financial reconciliation.
+Jalur kritis dari urutan transaksional ini menuntut agar setiap langkah validasi, eksekusi, dan konsensus ditandatangani secara kriptografis, memastikan asal-usul ujung-ke-ujung. Node auditor regulator menyinkronkan keadaan blok secara real-time, menghilangkan kebutuhan rekonsiliasi keuangan manual dan retrospektif.
 
-## 07. The Boardroom Playbook for Senior Managers
+## 07. Buku pedoman dewan untuk manajer senior
 
-To successfully navigate the transition from organizational trust to infrastructural trust, bank executives and senior managers should immediately execute four key directives:
+Untuk berhasil menavigasi transisi dari kepercayaan organisasional ke kepercayaan infrastruktural, eksekutif bank dan manajer senior harus segera menjalankan empat arahan utama:
 
-1. **Mandate Ledger Audits in Enterprise Risk Management (ERM)**: Enforce a policy that no distributed ledger platform—whether private, public, or consortium-based—may be deployed for critical or important functions (CIFs) unless it has been audited against the 5-layer **Certified Blockchain Index Architecture** (CMM Level 3 minimum).  
-2. **Integrate Blockchains as the ISO 42001 AI Evidentiary Spine**: Direct the Chief Risk Officer and Lead AI Architect to integrate all high-impact machine learning models with a certified blockchain, creating a tamper-evident audit ledger of model versions, weights, inputs, and decisions.  
-3. **Audit the Validator Node Supply Chain (DORA Article 30)**: Require the procurement division to audit all third-party entities hosting validator nodes or managing cloud hosting for DLT networks, mandating compliance with the same cybersecurity and operational resilience standards applied to the bank’s internal cloud nodes.  
-4. **Align Ledger Architectures with CPMI-IOSCO and BCBS 239**: Instruct the platform engineering team to align ledger output telemetry directly with **BCBS 239** data reporting requirements, and ensure the consensus and settlement finality parameters strictly comply with **CPMI-IOSCO Principles 8 and 9**.
+1. **Mewajibkan audit buku besar dalam manajemen risiko perusahaan (ERM)**: memberlakukan kebijakan bahwa tidak ada platform buku besar terdistribusi — privat, publik, atau konsorsium — yang boleh diterapkan untuk fungsi kritis atau penting (CIF) tanpa diaudit terhadap **arsitektur Indeks Blockchain Bersertifikat** lima lapisan (minimum CMM Tingkat 3).  
+2. **Mengintegrasikan blockchain sebagai tulang punggung bukti AI ISO 42001**: mengarahkan Chief Risk Officer dan Arsitek AI Utama untuk mengintegrasikan semua model pembelajaran mesin berdampak tinggi dengan blockchain bersertifikat, menciptakan register audit tahan-rusak tentang versi model, bobot, masukan, dan keputusan.  
+3. **Mengaudit rantai pasok node validator (DORA Pasal 30)**: mewajibkan divisi pengadaan mengaudit semua entitas pihak ketiga yang menghosting node validator atau mengelola hosting cloud untuk jaringan DLT, memberlakukan standar keamanan siber dan ketahanan operasional yang sama seperti yang diterapkan pada node cloud internal bank.  
+4. **Menyelaraskan arsitektur buku besar dengan CPMI-IOSCO dan BCBS 239**: mengarahkan tim rekayasa platform untuk menyelaraskan telemetri keluaran buku besar langsung dengan persyaratan pelaporan data **BCBS 239**, dan memastikan parameter konsensus dan finalitas penyelesaian secara ketat mematuhi **Prinsip 8 dan 9 CPMI-IOSCO**.
 
-## 08. Frequently Asked Questions
+## 08. Pertanyaan yang sering diajukan
 
-**Is ISO/IEC TC 307 a certification standard?**  
-No. ISO/IEC TC 307 is a technical committee that establishes vocabulary, reference architectures, and security guidelines. While it defines "what good looks like" (guidance), the industry must operationalize these documents into formal, auditable certification schemes (assurance) to satisfy banking supervisors.
+**Apakah ISO/IEC TC 307 merupakan standar sertifikasi?**  
+Tidak. ISO/IEC TC 307 adalah komite teknis yang menetapkan kosakata, arsitektur referensi, dan pedoman keamanan. Meskipun mendefinisikan "seperti apa keunggulan itu" (panduan), industri harus mengoperasionalkan dokumen-dokumen ini menjadi skema sertifikasi formal yang dapat diaudit (jaminan) untuk memuaskan pengawas perbankan.
 
-**How does a certified blockchain support DORA compliance?**  
-Under DORA Article 5, bank boards bear direct, personal liability for technology resilience. A certified blockchain provides verifiable, cryptographic evidence of consensus integrity, validator supply-chain control, and smart contract safety, giving board members the documentable "reasonable steps" needed to defend against SM&CR personal liability claims.
+**Bagaimana blockchain bersertifikat mendukung kepatuhan DORA?**  
+Berdasarkan Pasal 5 DORA, dewan bank memikul tanggung jawab pribadi langsung atas ketahanan teknologi. Blockchain bersertifikat menyediakan bukti kriptografis yang dapat diverifikasi tentang integritas konsensus, kontrol rantai pasok validator, dan keamanan kontrak pintar, memberi anggota dewan "langkah-langkah wajar" yang dapat didokumentasikan yang diperlukan untuk mempertahankan diri terhadap klaim tanggung jawab pribadi di bawah SM&CR.
 
-What is the difference between a traditional ledger audit and a certified blockchain audit?  
-A traditional audit is retrospective, verifying manual entries and static files after transactions have cleared. A certified blockchain audit is continuous and real-time; the validator nodes, BFT consensus engine, and formally verified smart contracts are certified to execute transactions deterministically, emitting structured telemetry (OpenTelemetry) that continuously validates the system’s health.
+Apa perbedaan antara audit buku besar tradisional dan audit blockchain bersertifikat?  
+Audit tradisional bersifat retrospektif: ia memverifikasi entri manual dan berkas statis setelah transaksi diselesaikan. Audit blockchain bersertifikat bersifat berkelanjutan dan real-time; node validator, mesin konsensus BFT, dan kontrak pintar terverifikasi formal disertifikasi untuk menjalankan transaksi secara deterministik, memancarkan telemetri terstruktur (OpenTelemetry) yang terus-menerus memvalidasi kesehatan sistem.
 
-Can public blockchains be certified for banking use?  
-In most jurisdictions, pure permissionless public blockchains fail to satisfy banking regulations due to the lack of validator identity verification, unpredictable gas/transaction costs, and non-deterministic finality (e.g., probabilistic proof-of-work/stake forks). Certified blockchains in banking typically utilize enterprise permissioned or highly regulated public-hybrid architectures where validator node operators are identified and audited financial entities.
+Dapatkah blockchain publik disertifikasi untuk penggunaan perbankan?  
+Di sebagian besar yurisdiksi, blockchain publik murni tanpa izin gagal memenuhi regulasi perbankan karena tidak adanya verifikasi identitas validator, biaya transaksi yang tak terduga, dan finalitas non-deterministik (mis. percabangan probabilistik proof-of-work/stake). Blockchain bersertifikat dalam perbankan biasanya menggunakan arsitektur perusahaan berizin atau arsitektur publik-hibrida yang sangat diregulasi, di mana operator node validator adalah entitas keuangan yang teridentifikasi dan teraudit.
 
-## 09. References
+## 09. Referensi
 
-* Basel Committee on Banking Supervision (BCBS), 2013. *Principles for effective risk data aggregation and reporting (BCBS 239)*. Basel: Bank for International Settlements. Available at: [https://www.bis.org/publ/bcbs239.pdf](https://www.bis.org/publ/bcbs239.pdf).  
-* Committee on Payments and Market Infrastructures and Technical Committee of the International Organization of Securities Commissions (CPMI-IOSCO), 2012. *Principles for financial market infrastructures*. Basel: Bank for International Settlements. Available at: [https://www.bis.org/cpmi/publ/d101a.pdf](https://www.bis.org/cpmi/publ/d101a.pdf).  
-* European Banking Authority (EBA), 2019. *EBA/GL/2019/02 — Guidelines on outsourcing arrangements*. Paris: EBA. Available at: [https://www.eba.europa.eu/regulation-and-policy/internal-governance/guidelines-on-outsourcing-arrangements](https://www.eba.europa.eu/regulation-and-policy/internal-governance/guidelines-on-outsourcing-arrangements).  
-* European Parliament and Council of the European Union, 2022. *Regulation (EU) 2022/2554 on digital operational resilience for the financial sector (DORA)*. Brussels: Official Journal of the European Union. Available at: [https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554).  
-* ISO/IEC JTC 1/SC 42, 2023. *ISO/IEC 42001:2023 — Information technology — Artificial intelligence — Management system*. Geneva: International Organization for Standardization. Available at: [https://www.iso.org/standard/81230.html](https://www.iso.org/standard/81230.html).  
-* ISO/IEC Technical Committee 307, 2020. *ISO/IEC 22739:2020 — Blockchain and distributed ledger technologies — Vocabulary*. Geneva: International Organization for Standardization. Available at: [https://www.iso.org/standard/73771.html](https://www.iso.org/standard/73771.html).  
-* National Institute of Standards and Technology (NIST), 2026. *First Three Finalized Post-Quantum Encryption Standards (FIPS 203, 204, and 205)*. Gaithersburg: U.S. Department of Commerce. Available at: [https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards](https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards).
+* Komite Basel untuk Pengawasan Perbankan (BCBS), 2013. *Principles for effective risk data aggregation and reporting (BCBS 239)*. Basel: Bank for International Settlements. Tersedia di: [https://www.bis.org/publ/bcbs239.pdf](https://www.bis.org/publ/bcbs239.pdf).  
+* Committee on Payments and Market Infrastructures dan Technical Committee of the International Organization of Securities Commissions (CPMI-IOSCO), 2012. *Principles for financial market infrastructures*. Basel: Bank for International Settlements. Tersedia di: [https://www.bis.org/cpmi/publ/d101a.pdf](https://www.bis.org/cpmi/publ/d101a.pdf).  
+* Otoritas Perbankan Eropa (EBA), 2019. *EBA/GL/2019/02 — Guidelines on outsourcing arrangements*. Paris: EBA. Tersedia di: [https://www.eba.europa.eu/regulation-and-policy/internal-governance/guidelines-on-outsourcing-arrangements](https://www.eba.europa.eu/regulation-and-policy/internal-governance/guidelines-on-outsourcing-arrangements).  
+* Parlemen Eropa dan Dewan Uni Eropa, 2022. *Regulasi (UE) 2022/2554 tentang ketahanan operasional digital untuk sektor keuangan (DORA)*. Brussels: Jurnal Resmi Uni Eropa. Tersedia di: [https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554).  
+* ISO/IEC JTC 1/SC 42, 2023. *ISO/IEC 42001:2023 — Information technology — Artificial intelligence — Management system*. Jenewa: Organisasi Internasional untuk Standardisasi. Tersedia di: [https://www.iso.org/standard/81230.html](https://www.iso.org/standard/81230.html).  
+* Komite Teknis ISO/IEC 307, 2020. *ISO/IEC 22739:2020 — Blockchain and distributed ledger technologies — Vocabulary*. Jenewa: Organisasi Internasional untuk Standardisasi. Tersedia di: [https://www.iso.org/standard/73771.html](https://www.iso.org/standard/73771.html).  
+* National Institute of Standards and Technology (NIST), 2026. *First Three Finalized Post-Quantum Encryption Standards (FIPS 203, 204, and 205)*. Gaithersburg: U.S. Department of Commerce. Tersedia di: [https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards](https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards).
