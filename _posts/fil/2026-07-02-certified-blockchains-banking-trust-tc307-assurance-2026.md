@@ -1,6 +1,6 @@
 ---
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
-banner_alt: "Abstract distributed-ledger lattice resolving into a certified audit spine — visualising the shift from retrospective entity audits to continuous, cryptographically-verifiable blockchain assurance for wholesale banking"
+banner_alt: "Isang abstraktong sala-sala ng distributed ledger na nagkikristal tungo sa isang sertipikadong gulugod ng awdit — binibisualisa ang paglipat mula sa retrospektibong mga awdit na batay sa entidad tungo sa tuloy-tuloy at kriptograpikong masusuring katiyakan ng blockchain para sa wholesale banking"
 banner_height: "1280"
 banner_width: "1920"
 banner: "https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp"
@@ -9,7 +9,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "July 2, 2026"
-description: "The 2026 Certified Blockchain Index gives banks a 5-level Capability Maturity Model to certify distributed-ledger governance, consensus integrity, cryptography, smart-contract assurance, and audit observability against DORA, CPMI-IOSCO PFMI, ISO/IEC TC 307, ISO 42001 and Basel III."
+description: "Ang Indeks ng mga Sertipikadong Blockchain 2026 ay nagbibigay sa mga bangko ng limang-antas na Capability Maturity Model upang sertipikahan ang pamamahala ng distributed ledger, integridad ng konsenso, kriptograpiya, katiyakan ng smart contract, at obserbabilidad ng awdit laban sa DORA, PFMI ng CPMI-IOSCO, ISO/IEC TC 307, ISO 42001, at Basel III."
 format-detection: "telephone=no"
 hreflang: "fil"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -35,9 +35,9 @@ rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
 schema: "FAQPage, Article"
-seo_title: "From Evidence to Truth: Certified Blockchains and Banking Trust"
+seo_title: "Mula sa ebidensya tungo sa katotohanan: mga sertipikadong blockchain at tiwala sa pagbabangko"
 short_name: "sebastienrousseau"
-subtitle: "Why certifiable ledger assurance — not immutability alone — will define institutional trust in 2026: scoring governance, consensus integrity, cryptography, smart contracts, and observability against DORA, ISO/IEC TC 307, and CPMI-IOSCO PFMI."
+subtitle: "Bakit ang masesertipikahang katiyakan ng ledger — hindi lamang ang hindi pagbabago — ang tutukoy sa tiwala ng institusyon sa 2026: pagmamarka sa pamamahala, integridad ng konsenso, kriptograpiya, smart contract, at obserbabilidad laban sa DORA, ISO/IEC TC 307, at PFMI ng CPMI-IOSCO."
 tags: "agentic AI, AI governance, banking, autonomy tiers, model risk, SR 11-7, EU AI Act, FSB, IOSCO, MAS, IMDA, control plane, audit log, DORA, McKinsey, Stanford AI Index"
 theme-color: "0, 83, 191"
 title: "The Agentic AI Index for Banks in 2026: Measuring Autonomy"
@@ -63,7 +63,7 @@ apple_touch_icon_sizes: "192x192"
 apple-mobile-web-app-capable: "yes"
 apple-mobile-web-app-status-bar-inset: "black"
 apple-mobile-web-app-status-bar-style: "black-translucent"
-apple-mobile-web-app-title: "Certified Blockchains 2026"
+apple-mobile-web-app-title: "Sertipikadong blockchain 2026"
 apple-touch-fullscreen: "yes"
 msapplication-navbutton-color: "0, 83, 191"
 twitter_card: "summary_large_image"
@@ -84,103 +84,99 @@ site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 ---
 
-<!-- translation-stub: replace this body in Claude Code -->
+# Mula sa ebidensya tungo sa katotohanan: bakit tutukuyin ng mga sertipikadong blockchain ang susunod na panahon ng tiwala sa pagbabangko
 
-> _Translation pending — read the [English original](/2026-07-02-certified-blockchains-banking-trust-tc307-assurance-2026/) while we localise._
+## Estratehikong buod (ang pinakamahalaga)
 
-# From Evidence to Truth: Why Certified Blockchains Will Define the Next Era of Banking Trust
+Ang wholesale banking at mga pandaigdigang transaksyon noong 2026 ay nasa isang makasaysayang sandali ng pagbabago. Habang ang mga serbisyong pinansyal ay lumilipat tungo sa likas na digital, real-time na mga network ng clearing, at habang ang artipisyal na katalinuhan ay nagpapasok ng probabilistikong hindi-determinismo, ang tradisyonal na analog at retrospektibong mga modelo ng katiyakan (tulad ng static, entidad-batay na mga awdit) ay hindi na nakakatugon sa modernong mga hinihingi ng pamamahala ng panganib at mga tungkuling piduciaryo.
 
-## Executive Summary & Strategic Context (TL;DR)
+Ang ISO/IEC Technical Committee 307 (TC 307) ay nagtatag ng isang na-istandardisang pundasyon para sa mga teknolohiya ng distributed ledger. Gayunpaman, ang tunay na pag-ampon ng institusyon ay nangangailangan ng paglipat mula sa mapaglarawang gabay tungo sa preskriptibo, malayang masesertipikahang katiyakan ng blockchain. Sa pamamagitan ng pagmamarka sa pamamahala ng ledger, integridad ng konsenso, kaligtasan ng smart contract, at kaliksihan sa kriptograpiya laban sa isang mahigpit na limang-antas na Capability Maturity Model (CMM), ang mga bangko ay maaaring lumipat mula sa mga pira-piraso at partikular-sa-tagapagtustos na mga palagay tungo sa isang masesertipikahan at maaawdit-ng-lupon na katotohanang pinansyal.
 
-Wholesale banking and global transactions in 2026 sit at a historic inflection point. As financial services transition to natively digital, real-time clearing networks, and as artificial intelligence introduces probabilistic non-determinism, the traditional analogue, retrospective assurance models (such as static entity-based audits) fail to meet modern risk management and fiduciary demands.
+## Mga pangunahing punto
 
-ISO/IEC Technical Committee 307 (TC 307) has established a standardized baseline for distributed ledger technologies. However, true corporate and institutional adoption requires shifting from descriptive guidance to prescriptive, independently certifiable blockchain assurance. By scoring ledger governance, consensus integrity, smart contract safety, and cryptographic agility against a strict 5-level Capability Maturity Model (CMM), banks can move from patchwork, vendor-specific assumptions to certifiable, board-auditable financial truth.
+* **Ang piduciaryong puwang ng friksyon**: kaya na nating sertipikahan ang bangko (Basel III), ang cloud (ISO 27001), at ang mga sistema ng pamamahala ng AI (ISO 42001), ngunit hindi pa natin masesertipikahan ang distributed ledger na lalong nagtatakda kung ano ang totoo. Ang asimetriyang ito ay isang malaking kahinaang pang-operasyon.  
+* **Ipinapataw ng DORA ang direktang piduciaryong pananagutan**: sa ilalim ng Artikulo 5 ng DORA, ang mga lupon ng direktor ng bangko ay may direkta, hindi maidedelegang personal na pananagutan sa katatagang pang-operasyon ng lahat ng deployment ng third-party at ledger, na may mabibigat na personal na parusa sa ilalim ng rehimeng SM&CR sa mga pagkabigo.  
+* **Ang gulugod ng awdit ng AI**: kung saan ang machine learning ay gumagawa ng hindi maulit, probabilistikong mga resulta, ang isang sertipikadong blockchain ay nagbibigay ng determinsitikong pagkuha ng estado. Ang pagtatala ng mga bersyon ng modelo, input, at desisyon ng validasyon sa chain ay nakakatugon sa ISO 42001 at mga pamantayan ng pamamahala ng panganib ng modelo.  
+* **Ang Indeks ng mga Sertipikadong Blockchain**: pinormalisa ng indeks na ito ang pamamahala, konsenso, smart contract, at obserbabilidad tungo sa isang masusuri at handa-sa-awdit na scorecard sa iskala ng CMM na 0 hanggang 5, na nagsasalin ng mga sukatan sa inhinyeriya tungo sa mga pahayag ng gana sa panganib na inaprubahan ng lupon.
 
-## Key Takeaways
+## 01. Ang piduciaryong puwang ng friksyon sa digital na pagbabangko
 
-* **The Fiduciary Frictional Gap**: We can currently certify the bank (Basel III), the cloud (ISO 27001), and the AI governance systems (ISO 42001), but we cannot yet certify the distributed ledger that increasingly determines what is true. This asymmetry is a major operational vulnerability.  
-* **DORA Enforces Direct Fiduciary Responsibility**: Under DORA Article 5, bank boards of directors bear direct, non-delegable personal liability for the operational resilience of all third-party and ledger deployments, with severe SM&CR personal penalties for failures.  
-* **The AI Audit Spine**: While machine learning introduces non-reproducible, probabilistic outcomes, a certified blockchain provides deterministic state capture. Recording model versions, inputs, and validation decisions on-chain satisfies ISO 42001 and Model Risk Management standards.  
-* **The Certified Blockchain Index**: This index formalizes governance, consensus, smart contracts, and observability into a verifiable, audit-ready scorecard on a 0-to-5 CMM scale, translating engineering metrics into board-approved Risk Appetite Statements.
+Sa klasikong pagbabangko, ang tiwala ay pang-ugnayan, pang-institusyon, at retrospektibo. Umaasa ito sa mga malayang third-party na awditor na sumusuri sa kalagayang pinansyal sa mga nakapirming punto ng oras, na nagkakasundo ng mga pagkakaiba sa mga silo ng bilateral na ledger. Sa real-time, API-driven na mga merkado ng 2026, ang modelong ito ay nagpapasok ng mahihigpit na latency at mga panganib na istruktural.
 
-## 01. The Fiduciary Frictional Gap in Digital Banking
+Kapag ang mga transaksyon ay agad na na-settle, ang mga intraday na pool ng liquidity ay dinamikong pinamamahalaan ng mga API gateway, at ang pagmamay-ari ng ari-arian ay na-token sa mga ibinahaging ledger, ang mga retrospektibong awdit ay nagiging mga forensic na ehersisyo sa halip na mga preventibong kontrol. Ang mga piduciaryo ay hindi na maaaring umasa lamang sa pagsertipika ng legal na entidad. Kailangan nilang sertipikahan ang mismong digital na substrato.
 
-In classical banking, trust is relational, institutional, and retrospective. It depends on independent, third-party auditors reviewing financial state at static points in time, reconciling discrepancies across bilateral ledger silos. In the real-time, API-driven markets of 2026, this model introduces prohibitive latencies and structural risks.
+Sa kasalukuyan, ang mga bangko ay tumatakbo sa ilalim ng isang halatang asimetriya sa arkitektura:
 
-When transactions settle instantly, intraday liquidity pools are managed dynamically by API gateways, and asset ownership is tokenised across shared ledgers, retrospective audits become forensic exercises rather than preventative controls. Fiduciaries can no longer rely solely on certifying the corporate entity. They must certify the digital substrate itself.
+1. **Sertipikadong imprastraktura ng cloud**: ang mga hardware node, virtualized na container, at pisikal na data center ay bini-validate laban sa mga kontrol ng ISO/IEC 27001 at SOC 2 Type II.  
+2. **Sertipikadong mga proseso ng pamamahala**: ang mga patakaran sa panganib na pang-operasyon, mga plano ng pagpapatuloy ng negosyo, at mga algoritmikong deployment ay pinamamahalaan ng mahihigpit na balangkas ng panganib.  
+3. **Hindi sertipikadong mga makina ng ledger**: ang mga mekanismo ng distributed na konsenso, mga supply chain ng validator node, mga hangganan ng smart contract, at mga modelo ng pamamahala ng network ay iniiwan sa hindi sertipikado, pasadya, o partikular-sa-konsorsyo na mga palagay.
 
-Currently, banks operate under a glaring architectural asymmetry:
+Ang asimetriyang ito ay isang kritikal na puntong nabibigo. Maaaring patakbuhin ng isang bangko ang isang na-validate na aplikasyon sa loob ng isang ligtas, ISO 27001-sertipikadong cloud container, ngunit kung ang container na iyon ay nagsusulat sa isang distributed ledger na may sentralisadong kontrol ng validator, mahihinang parametro ng konsenso, o hindi naaawdit na mga smart contract, ang integridad ng transaksyon ay nakompromiso. Upang tulayan ang puwang na ito, ang mismong makina ng ledger ay dapat maging isang masesertipikahang bagay ng katiyakan.
 
-1. **Certified Cloud Infrastructure**: Hardware nodes, virtualized containers, and physical datacenters are validated against ISO/IEC 27001 and SOC 2 Type II controls.  
-2. **Certified Management Processes**: Operational risk policies, business continuity plans, and algorithmic deployments are governed under strict risk frameworks.  
-3. **Uncertified Ledger Engines**: The core distributed consensus mechanisms, validator node supply chains, smart contract boundaries, and network governance models are left to uncertified, custom, or consortium-specific assumptions.
+## 02. Ang pundasyon ng istandardisasyon ng ISO/IEC TC 307
 
-This asymmetry is a major failure point. A bank can run a validated application inside a secure, ISO 27001-certified cloud container, but if that container writes to a distributed ledger with centralized validator control, vulnerable consensus parameters, or un-audited smart contracts, the transaction integrity is compromised. To bridge this gap, the ledger engine itself must become a certifiable assurance object.
+Ang pundasyong gawain na kailangan upang i-istandardisa ang mga distributed ledger ay itinatatag ng ISO/IEC Technical Committee 307 (Mga teknolohiya ng blockchain at distributed ledger). Sa halip na ituring ang blockchain bilang isang nakahiwalay na teknikal na protokol, tinutugunan ito ng TC 307 bilang isang institusyonal na imprastraktura ng tiwala, na inaayos ang trabaho nito sa palibot ng limang pangunahing haligi:
 
-## 02. The ISO/IEC TC 307 Standardization Baseline
+1. **Taksonomiya at bokabularyo (ISO 22739)**: nagtatatag ng isang karaniwang nomenclatura, na tinitiyak ang magkakatugmang legal at operasyonal na mga kahulugan sa iba't ibang hurisdiksyon, mga skema ng pinansyal, at mga institusyon.  
+2. **Sanggunian na arkitektura (ISO/TR 23245)**: tinutukoy ang mga hangganan, layer, daloy ng datos, at mga functional na bahagi ng isang sumusunod na sistema ng distributed ledger.  
+3. **Seguridad, privacy, at smart contract (ISO/TR 23244 / ISO 23613)**: nagtatatag ng mga baseline na gabay sa seguridad para sa mga sistema ng digital na ari-arian at inilalatag ang mga pinakamahusay na kasanayan para sa pagpapagaan ng kahinaan ng smart contract at pamamahala ng ikot ng buhay.  
+4. **Mga balangkas ng interoperabilidad**: tinutugunan ang mga mekanismo ng palitan ng datos at ari-arian sa pagitan ng magkakaibang network ng ledger, na pinipigilan ang pagbuo ng mga nakahiwalay na na-token na silo.  
+5. **Desentralisadong pagkakakilanlan at mga angkla ng tiwala**: pinag-iisa ang mga kriptograpikong identifier na batay sa ledger sa mga pormal na imprastraktura ng public key (PKI) at mga rehistrong pinahintulutan ng estado.
 
-The foundational work required to standardize distributed ledgers is being established by ISO/IEC Technical Committee 307 (TC 307) (Blockchain and distributed ledger technologies). Rather than treating blockchain as an isolated technical protocol, TC 307 addresses it as an institutional trust infrastructure, organizing its work across five core pillars:
+Sama-sama, tinutukoy ng TC 307 ang paglipat ng DLT mula sa isang pasadyang pagpili sa inhinyeriya tungo sa isang na-istandardisang disiplina sa arkitektura. Gayunpaman, ang TC 307 ay nananatiling pangunahing mapaglarawan. Tinutukoy nito kung ano ang hitsura ng kahusayan (gabay), ngunit hindi ito nagbibigay ng preskriptibong protokol ng pagpapatunay (katiyakan) na kailangan ng mga opisyal ng panganib at mga superbisor upang pahintulutan ang mga produksyong deployment ng mga kritikal o mahalagang tungkulin (CIF).
 
-1. **Taxonomy and Vocabulary (ISO 22739)**: Establishes a common nomenclature, ensuring consistent legal and operational definitions across different jurisdictions, financial schemes, and institutions.  
-2. **Reference Architecture (ISO/TR 23245)**: Defines the boundaries, layers, data flows, and functional components of a compliant distributed ledger system.  
-3. **Security, Privacy, and Smart Contracts (ISO/TR 23244 / ISO 23613)**: Establishes baseline security guidelines for digital asset systems and details best practices for smart contract vulnerability mitigation and lifecycle governance.  
-4. **Interoperability Frameworks**: Addresses the data and asset-exchange mechanisms between heterogeneous ledger networks, preventing the formation of isolated tokenised silos.  
-5. **Decentralized Identity and Trust Anchors**: Integrates ledger-based cryptographic identifiers with formal public-key infrastructures (PKI) and state-authorized registries.
+## 03. Gabay laban sa katiyakan: ang piduciaryong pagkakaiba
 
-Collectively, TC 307 signals the transition of DLT from a custom engineering choice into a standardized architectural discipline. However, TC 307 remains primarily descriptive. It defines what good looks like (guidance), but it does not provide the prescriptive verification protocol (assurance) that risk officers and supervisors require to authorize production deployments of critical or important functions (CIFs).
+Ang mga kalahok sa merkado ng pinansyal ay hindi nagde-deploy ng teknolohiya dahil ito ay makabago o eleganteng; dine-deploy nila ito kapag maaari itong pamahalaan, awditin, ipagtanggol, at ipagkasundo sa mga kinakailangan sa reserbang kapital. Kaya naman ang istandardisasyon sa pagbabangko ay likas na nahahati sa dalawang layer:
 
-## 03. Guidance vs. Assurance: The Fiduciary Distinction
+* **Gabay (ang balangkas)**: binabalangkas ang mga pinakamahusay na kasanayan, mga target na sanggunian, at mga gabay sa arkitektura (hal. ISO/IEC TC 307, mga balangkas ng NIST).  
+* **Katiyakan (ang patunay)**: nagbibigay ng malaya, tuloy-tuloy, at masusuri-ng-third-party na ebidensya na ang balangkas ay ipinatupad at gumagana ayon sa disenyo (hal. sertipikasyon ng ISO 27001, mga awdit ng SOC 2, mga pagsusuri ng regulasyon).
 
-Financial market participants do not deploy technology because it is innovative or elegant; they deploy it when it can be governed, audited, defended, and reconciled with capital reserve requirements. This is why standardisation in banking naturally resolves into two layers:
+Ang pag-asa sa hindi sertipikadong konsenso ng ledger habang sinesertipikahan ang imprastraktura ng cloud ay isang kritikal na puwang sa regulasyon. Ang isang "hindi mababagong" blockchain ay hindi kinakailangang "pinagkakatiwalaan ng institusyon". Ang hindi pagbabago ay ginagarantiya lamang na ang inilagay na datos ay nananatiling hindi nagbabago; hindi nito bini-verify kung ang mga validator node ay ligtas, kung ang protokol ng konsenso ay matatag laban sa pagsasabwatan, kung ang lohika ng smart contract ay matematikal na wasto, o kung ang pamamahala ng kriptograpikong susi ay sumusunod sa mga mandato pagkatapos ng quantum.
 
-* **Guidance (The Framework)**: Outlines best practices, reference targets, and architectural guidelines (e.g., ISO/IEC TC 307, NIST frameworks).  
-* **Assurance (The Proof)**: Provides independent, continuous, and third-party-verifiable evidence that the framework is implemented and operating as designed (e.g., ISO 27001 certification, SOC 2 audits, regulatory examinations).
+Upang isara ang puwang na ito, pinormalisa ng Indeks ng mga Sertipikadong Blockchain 2026 ang mga kinakailangang ito tungo sa isang masusukat na Capability Maturity Model (CMM), na naka-map sa mga pandaigdigang regulasyon sa pagbabangko.
 
-Relying on uncertified ledger consensus while certifying cloud infrastructure is a critical regulatory gap. A blockchain that is "immutable" is not necessarily "institutionally trusted." Immutability only guarantees that the data entered is unchanged; it does not verify that the validator nodes are secure, the consensus protocol is resilient against collusion, the smart contract logic is mathematically sound, or the cryptographic key management complies with post-quantum mandates.
+## 04. Ang Indeks ng mga Sertipikadong Blockchain 2026
 
-To close this gap, the 2026 Certified Blockchain Index formalizes these requirements into a quantifiable Capability Maturity Model (CMM) mapped to global banking regulations.
+Upang mabigyang-daan ang senior na pamamahala na suriin at sertipikahan ang kanilang mga platform ng ledger, isina-istruktura ng indeks na ito ang imprastraktura ng distributed ledger tungo sa limang masusuring layer ng operasyon, na minamarka sa iskala ng CMM na 0 hanggang 5.
 
-## 04. The 2026 Certified Blockchain Index
+## Talahanayan 1: ang arkitektura ng Indeks ng mga Sertipikadong Blockchain
 
-To enable senior management to evaluate and certify their ledger platforms, this index structures the distributed ledger infrastructure into five auditable operational layers, scored on a 0-to-5 CMM scale.
-
-## Table 1: The Certified Blockchain Index Architecture
-
-| Index Layer | Capability Maturity Level (CMM) | Technical and Operational Metric | Regulatory / Fiduciary Control Reference |
+| Layer ng indeks | Antas ng maturity (CMM) | Teknikal at operasyonal na sukatan | Sanggunian ng kontrol sa regulasyon / piduciaryo |
 | :---- | :---- | :---- | :---- |
-| **Ledger Governance** | **Level 0**: Ad-hoc consortium**Level 3**: Automated validator vetting & rotation**Level 5**: Decentralized, multi-party cryptographic identity anchoring | % of validator nodes operated by vetted financial entities; mean time to resolve validator disputes; geographic distribution of nodes | **DORA Article 5** (Governance and Organisation); **CPMI-IOSCO PFMI Principle 2** (Governance) & **Principle 3** (Framework for the comprehensive management of risks) |
-| **Consensus Integrity** | **Level 0**: Single-node or opaque POW**Level 3**: Audited BFT with deterministic finality**Level 5**: Multi-jurisdictional, formally verified consensus with continuous latency monitoring | Max tolerable consensus latency; collusion-resistance threshold; uptime SLA under simulated node partition | **DORA Article 6** (ICT Risk Management Framework); **CPMI-IOSCO PFMI Principle 8** (Settlement Finality) |
-| **Identity & Cryptography** | **Level 0**: Weak RSA / ECDSA keys**Level 3**: Multi-sig with HSM-backed key management**Level 5**: Quantum-safe hybrid keys (FIPS 203 ML-KEM) and zero-knowledge privacy gates | % of ledger transactions signed with HSM-backed keys; PQC migration readiness score; ZK-proof latency | **NIST FIPS 203 / 204**; **ISO/IEC 27001** (Information Security Management) |
-| **Smart Contract Assurance** | **Level 0**: Un-audited solidity scripts**Level 3**: Automated compiler validation & external audit**Level 5**: Formally verified, immutable smart contracts with circuit-breaker upgrades | % of smart contracts with mathematical formal verification; count of compiler warnings; vulnerability scan coverage | **EBA Guidelines on Outsourcing Arrangements** (Paragraphs 81, 113-117); **DORA Article 30** (Minimum Contractual Clauses) |
-| **Audit & Observability** | **Level 0**: Manual log scraping**Level 3**: Structured OTel traces & read-only auditor nodes**Level 5**: Automated, continuous reconciliation to the Article 8 register | % of transactions covered by OpenTelemetry traces; latency from ledger block-commit to auditor-node sync | **BCBS 239** (Risk Data Aggregation); **DORA Article 8** (Register of Information / ITS Schemas) |
+| **Pamamahala ng ledger** | **Antas 0**: ad hoc na konsorsyo**Antas 3**: awtomatikong pagsusuri at rotasyon ng validator**Antas 5**: desentralisado, multi-partidong kriptograpikong pag-angkla ng pagkakakilanlan | % ng mga validator node na pinatatakbo ng mga na-vet na entidad na pinansyal; karaniwang oras upang lutasin ang mga hidwaan ng validator; heograpikong pamamahagi ng mga node | **DORA Artikulo 5** (Pamamahala at organisasyon); **CPMI-IOSCO PFMI Prinsipyo 2** (Pamamahala) at **Prinsipyo 3** (Balangkas para sa komprehensibong pamamahala ng mga panganib) |
+| **Integridad ng konsenso** | **Antas 0**: iisang node o malabong PoW**Antas 3**: na-awdit na BFT na may determinsitikong finality**Antas 5**: multi-hurisdiksyon, pormal na na-verify na konsenso na may tuloy-tuloy na pagsubaybay sa latency | pinakamataas na matitiis na latency ng konsenso; threshold ng paglaban sa pagsasabwatan; SLA ng availability sa simulADong paghahati ng node | **DORA Artikulo 6** (Balangkas ng pamamahala ng panganib ng ICT); **CPMI-IOSCO PFMI Prinsipyo 8** (Finality ng settlement) |
+| **Pagkakakilanlan at kriptograpiya** | **Antas 0**: mahihinang RSA / ECDSA na susi**Antas 3**: multi-sig na may pamamahala ng susi na sinusuportahan ng HSM**Antas 5**: quantum-safe na hybrid na susi (FIPS 203 ML-KEM) at mga zero-knowledge na gate ng privacy | % ng mga transaksyon ng ledger na pinirmahan ng mga susing sinusuportahan ng HSM; iskor ng kahandaan sa migrasyon ng PQC; latency ng ZK-proof | **NIST FIPS 203 / 204**; **ISO/IEC 27001** (Pamamahala ng seguridad ng impormasyon) |
+| **Katiyakan ng smart contract** | **Antas 0**: hindi naaawdit na mga script ng Solidity**Antas 3**: awtomatikong validasyon ng compiler at panlabas na awdit**Antas 5**: pormal na na-verify, hindi mababagong mga smart contract na may mga pag-upgrade na tipong circuit-breaker | % ng mga smart contract na may matematikal na pormal na pagpapatunay; bilang ng mga babala ng compiler; saklaw ng pag-scan ng kahinaan | **Mga gabay ng EBA sa outsourcing** (mga talata 81, 113-117); **DORA Artikulo 30** (Minimum na mga sugnay sa kontrata) |
+| **Awdit at obserbabilidad** | **Antas 0**: manual na pag-scrape ng log**Antas 3**: nakabalangkas na OTel na mga trace at read-only na mga auditor node**Antas 5**: awtomatiko, tuloy-tuloy na pagkakasundo sa rehistro ng Artikulo 8 | % ng mga transaksyong saklaw ng mga OpenTelemetry na trace; latency mula sa commit ng block hanggang sa sync ng auditor node | **BCBS 239** (Pag-agrega ng datos ng panganib); **DORA Artikulo 8** (Rehistro ng impormasyon / mga skema ng ITS) |
 
-## Table 2: Key Trust Signals Mapped to Global Banking Standards
+## Talahanayan 2: mga pangunahing senyales ng tiwala na naka-map sa mga pandaigdigang pamantayan sa pagbabangko
 
-| Signal / Benchmark | Metric | Impact on Banking Platforms | Regulatory Source |
+| Senyales / benchmark | Sukatan | Epekto sa mga platform ng pagbabangko | Pinagmulan ng regulasyon |
 | :---- | :---- | :---- | :---- |
-| **ISO/IEC TC 307 Progress** | Transition from ISO/TR technical reports to formal certification schemes | Establishes the first standardized framework for certifying distributed ledger engines | **ISO/IEC JTC 1 / SC 44** (Distributed Ledger Technologies) |
-| **Project Agorá Prototype Phase** | 40+ participating commercial banks; unified ledger testing of tokenised deposits | Shifting cross-border clearing from messaging (SWIFT) to atomic tokenised settlement | **Bank for International Settlements (BIS) Innovation Hub** |
-| **DORA Article 30 Third-Party Audit** | 100% of node providers and infrastructure hosts audited against security criteria | Eliminates "shadow validator nodes"; mandates total supply-chain transparency | **European Supervisory Authorities (ESA)** |
-| **ISO/IEC 42001 (AI Governance)** | Cryptographically immutabilized AI model and training logs on-chain | Employs blockchain as the immutable evidentiary ledger ("audit spine") for machine learning | **ISO/IEC 42001:2023** (Information technology — Artificial intelligence) |
-| **Basel III Capital Adequacy** | Reduction in operational risk capital buffers based on documented complexity reduction | Standardized operational risk frameworks directly credit verified ledger resilience | **Basel Committee on Banking Supervision (BCBS)** |
+| **Pag-usad ng ISO/IEC TC 307** | Paglipat mula sa ISO/TR na mga teknikal na ulat tungo sa pormal na mga skema ng sertipikasyon | Nagtatatag ng unang na-istandardisang balangkas para sa pagsertipika ng mga makina ng distributed ledger | **ISO/IEC JTC 1 / SC 44** (Mga teknolohiya ng distributed ledger) |
+| **Yugto ng prototype ng Proyektong Agorá** | Mahigit 40 partisipanteng komersyal na bangko; pagsubok ng pinag-isang ledger para sa mga na-token na deposito | Inilipat ang cross-border na clearing mula sa mensahe (SWIFT) tungo sa atomikong na-token na settlement | **Innovation Hub ng Bank for International Settlements (BIS)** |
+| **Third-party na awdit ng DORA Artikulo 30** | 100% ng mga tagapagbigay ng node at host ng imprastraktura na na-awdit laban sa mga pamantayan sa seguridad | Inaalis ang "mga anino na validator node"; nag-uutos ng buong transparency ng supply chain | **Mga Awtoridad ng Superbisyon ng Europa (ESA)** |
+| **ISO/IEC 42001 (pamamahala ng AI)** | Mga log ng modelo at pagsasanay ng AI na ginawang hindi mababago sa kriptograpikong paraan sa chain | Ginagamit ang blockchain bilang hindi mababagong rehistro ng ebidensya ("gulugod ng awdit") para sa machine learning | **ISO/IEC 42001:2023** (Teknolohiya ng impormasyon — Artipisyal na katalinuhan) |
+| **Kasapatan ng kapital ng Basel III** | Pagbawas ng mga buffer ng kapital para sa panganib na pang-operasyon batay sa naidokumentong pagbawas ng pagiging komplikado | Ang na-istandardisang mga balangkas ng panganib na pang-operasyon ay direktang kinikilala ang na-verify na katatagan ng ledger | **Komiteng Basel sa Superbisyon ng Bangko (BCBS)** |
 
-## 05. The AI "Audit Spine": Probabilistic Intelligence on Deterministic Infrastructure
+## 05. Ang "gulugod ng awdit" ng AI: probabilistikong katalinuhan sa determinsitikong imprastraktura
 
-One of the most powerful strategic roles for a certified blockchain in 2026 is acting as an **"Audit Spine"** for artificial intelligence deployments. Modern financial systems are increasingly probabilistic. Credit scoring, real-time fraud detection, algorithmic trading, and autonomous customer interactions are driven by machine learning models that evolve, drift, and adapt over time. These models are non-deterministic: given the same input at two different times, they may yield different outputs due to dynamic weights and continuous training.
+Isa sa pinakamakapangyarihang estratehikong papel ng isang sertipikadong blockchain noong 2026 ay ang pagsilbi bilang isang **"gulugod ng awdit"** para sa mga deployment ng artipisyal na katalinuhan. Ang mga modernong sistema ng pinansyal ay lalong nagiging probabilistiko. Ang credit scoring, real-time na pagtukoy ng pandaraya, algoritmikong pangangalakal, at mga awtonomong pakikipag-ugnayan sa customer ay pinatatakbo ng mga modelo ng machine learning na umuunlad, gumagalaw, at umaangkop sa paglipas ng panahon. Ang mga modelong ito ay hindi determinsitiko: sa parehong input sa dalawang magkaibang oras, maaari silang magbigay ng magkaibang output dahil sa mga dinamikong timbang at tuloy-tuloy na pagsasanay.
 
-This non-determinism introduces a profound governance challenge under **ISO/IEC 42001 (AI Governance)** and **Model Risk Management (MRM)** standards (such as **US Federal Reserve SR 11-7** and **UK PRA SS1/23**): *How do you audit, explain, and defend decisions that are not strictly reproducible?*
+Ang hindi-determinismong ito ay naglalahad ng isang malalim na hamon sa pamamahala sa ilalim ng **ISO/IEC 42001 (pamamahala ng AI)** at mga pamantayan ng pamamahala ng panganib ng modelo (MRM) (tulad ng **SR 11-7 ng Federal Reserve ng US** at **SS1/23 ng PRA ng UK**): *paano mo aawditin, ipapaliwanag, at ipagtatanggol ang mga desisyong hindi mahigpit na maulit?*
 
-A certified distributed ledger provides the deterministic counterweight. While AI models operate probabilistically, the certified blockchain records their parameters deterministically, establishing an unalterable evidentiary spine:
+Ang isang sertipikadong distributed ledger ay nagbibigay ng determinsitikong kontra-timbang. Kung saan ang mga modelo ng AI ay gumagana nang probabilistiko, itinatala ng sertipikadong blockchain ang kanilang mga parametro nang determinsitiko, na nagtatatag ng isang hindi mababagong gulugod ng ebidensya:
 
-* **Model Versioning and Weight Anchoring**: Every deployed model version, its associated weights, and its training data checksums are hashed and written to the ledger at build-time, satisfying **SLSA Level 3** supply-chain requirements.  
-* **Contextual Input Logging**: When an AI model executes a critical decision (e.g., approving a loan or flagging a transaction), the exact contextual inputs and model hashes are written to the ledger, creating a tamper-evident history.  
-* **Auditability without Code Access**: If a regulator asks, "Why did your model reject this credit application on June 3?" the bank does not need to expose proprietary code or attempt to recreate the exact model state. It presents the cryptographically signed, on-chain ledger record of the inputs, weights, and validation state.
+* **Pag-bersyon ng modelo at pag-angkla ng timbang**: bawat na-deploy na bersyon ng modelo, ang mga kaugnay nitong timbang, at ang mga checksum ng datos ng pagsasanay nito ay hina-hash at isinusulat sa ledger sa oras ng build, na tumutugon sa mga kinakailangan ng supply chain na **SLSA Level 3**.  
+* **Kontekstwal na pag-log ng input**: kapag ang isang modelo ng AI ay nagsasagawa ng isang kritikal na desisyon (hal. pag-apruba ng pautang o pag-flag ng transaksyon), ang eksaktong kontekstwal na mga input at mga hash ng modelo ay isinusulat sa ledger, na lumilikha ng isang kasaysayang lumalaban sa pakikialam.  
+* **Kakayahang ma-awdit nang walang access sa code**: kung magtanong ang isang regulator na "bakit tinanggihan ng iyong modelo ang aplikasyong ito sa kredito noong Hunyo 3?", hindi kailangang ilantad ng bangko ang proprietary code nito o subukang muling likhain ang eksaktong estado ng modelo. Iniharap nito ang kriptograpikong nilagdaang tala sa chain ng mga input, timbang, at estado ng validasyon.
 
-By anchoring the probabilistic decisions of machine learning models to the deterministic consensus of a certified blockchain, the institution creates a defensible, reconstructable, and independently verifiable timeline of automated actions.
+Sa pamamagitan ng pag-angkla ng mga probabilistikong desisyon ng mga modelo ng machine learning sa determinsitikong konsenso ng isang sertipikadong blockchain, ang institusyon ay lumilikha ng isang naipagtatanggol, muling-maitatayo, at malayang masusuring timeline ng mga awtomatikong aksyon.
 
-## 06. Visualizing the Certified Consensus-to-Audit Pipeline
+## 06. Pagbibisualisa ng sertipikadong daluyan mula konsenso hanggang awdit
 
-The following sequence diagram illustrates the lifecycle of a transaction passing through a certified blockchain platform, demonstrating how validation gates, consensus integrity, smart contract execution, and telemetry emission interlock to produce board-ready regulatory evidence:
+Inilalarawan ng sumusunod na sequence diagram ang siklo ng buhay ng isang transaksyong dumadaan sa isang sertipikadong platform ng blockchain, na nagpapakita kung paano nagkakabit-kabit ang mga gate ng validasyon, integridad ng konsenso, pagpapatupad ng smart contract, at paglabas ng telemetry upang makabuo ng ebidensya ng regulasyon na handa para sa lupon:
 
 ```mermaid
 sequenceDiagram
@@ -206,37 +202,37 @@ sequenceDiagram
     Engine-->>Telemetry: Emit OpenTelemetry traces (latency, state, validation status)
     Telemetry->>Telemetry: Record evidence to DORA Article 8 Register of Information
 ```
-The critical path for this transactional sequence requires that every validation, execution, and consensus step is cryptographically signed, ensuring end-to-end provenance. The regulator's auditor node synchronizes block state in real-time, eliminating the need for retrospective, manual financial reconciliation.
+Ang kritikal na landas ng transaksyonal na pagkakasunod-sunod na ito ay nangangailangan na bawat hakbang ng validasyon, pagpapatupad, at konsenso ay kriptograpikong nilagdaan, na tinitiyak ang provenance mula dulo-hanggang-dulo. Sinisinkronisa ng auditor node ng regulator ang estado ng block nang real-time, na inaalis ang pangangailangan ng retrospektibo at manwal na pagkakasundo ng pinansyal.
 
-## 07. The Boardroom Playbook for Senior Managers
+## 07. Ang playbook ng lupon para sa mga senior na manedyer
 
-To successfully navigate the transition from organizational trust to infrastructural trust, bank executives and senior managers should immediately execute four key directives:
+Upang matagumpay na malampasan ang paglipat mula sa tiwala ng organisasyon tungo sa tiwala ng imprastraktura, ang mga ehekutibo ng bangko at mga senior na manedyer ay dapat agad na isakatuparan ang apat na pangunahing direktiba:
 
-1. **Mandate Ledger Audits in Enterprise Risk Management (ERM)**: Enforce a policy that no distributed ledger platform—whether private, public, or consortium-based—may be deployed for critical or important functions (CIFs) unless it has been audited against the 5-layer **Certified Blockchain Index Architecture** (CMM Level 3 minimum).  
-2. **Integrate Blockchains as the ISO 42001 AI Evidentiary Spine**: Direct the Chief Risk Officer and Lead AI Architect to integrate all high-impact machine learning models with a certified blockchain, creating a tamper-evident audit ledger of model versions, weights, inputs, and decisions.  
-3. **Audit the Validator Node Supply Chain (DORA Article 30)**: Require the procurement division to audit all third-party entities hosting validator nodes or managing cloud hosting for DLT networks, mandating compliance with the same cybersecurity and operational resilience standards applied to the bank’s internal cloud nodes.  
-4. **Align Ledger Architectures with CPMI-IOSCO and BCBS 239**: Instruct the platform engineering team to align ledger output telemetry directly with **BCBS 239** data reporting requirements, and ensure the consensus and settlement finality parameters strictly comply with **CPMI-IOSCO Principles 8 and 9**.
+1. **Iutos ang mga awdit ng ledger sa pamamahala ng panganib ng negosyo (ERM)**: ipatupad ang isang patakaran na walang platform ng distributed ledger — pribado, publiko, o konsorsyo — ang maaaring i-deploy para sa mga kritikal o mahalagang tungkulin (CIF) nang hindi na-awdit laban sa limang-layer na **arkitektura ng Indeks ng mga Sertipikadong Blockchain** (minimum na CMM Antas 3).  
+2. **Isama ang mga blockchain bilang gulugod ng ebidensya ng AI na ISO 42001**: atasan ang Chief Risk Officer at ang punong Arkitekto ng AI na isama ang lahat ng mataas na epektong mga modelo ng machine learning sa isang sertipikadong blockchain, na lumilikha ng isang rehistro ng awdit na lumalaban sa pakikialam ng mga bersyon ng modelo, timbang, input, at desisyon.  
+3. **Awditin ang supply chain ng validator node (DORA Artikulo 30)**: atasan ang dibisyon ng pagbili na awditin ang lahat ng third-party na entidad na nagho-host ng mga validator node o namamahala ng cloud hosting para sa mga network ng DLT, na nag-uutos ng parehong mga pamantayan ng cybersecurity at katatagan ng operasyon na inilapat sa mga internal na cloud node ng bangko.  
+4. **Ihanay ang mga arkitektura ng ledger sa CPMI-IOSCO at BCBS 239**: atasan ang koponan ng inhinyeriya ng platform na ihanay ang telemetry ng output ng ledger nang direkta sa mga kinakailangan ng pag-uulat ng datos ng **BCBS 239**, at tiyakin na ang mga parametro ng konsenso at finality ng settlement ay mahigpit na sumusunod sa **Mga Prinsipyo 8 at 9 ng CPMI-IOSCO**.
 
-## 08. Frequently Asked Questions
+## 08. Mga madalas itanong
 
-**Is ISO/IEC TC 307 a certification standard?**  
-No. ISO/IEC TC 307 is a technical committee that establishes vocabulary, reference architectures, and security guidelines. While it defines "what good looks like" (guidance), the industry must operationalize these documents into formal, auditable certification schemes (assurance) to satisfy banking supervisors.
+**Ang ISO/IEC TC 307 ba ay isang pamantayan ng sertipikasyon?**  
+Hindi. Ang ISO/IEC TC 307 ay isang teknikal na komite na nagtatatag ng bokabularyo, mga sanggunian na arkitektura, at mga gabay sa seguridad. Bagama't tinutukoy nito kung "ano ang hitsura ng kahusayan" (gabay), dapat gawing operasyonal ng industriya ang mga dokumentong ito tungo sa pormal, masusuring mga skema ng sertipikasyon (katiyakan) upang bigyang-kasiyahan ang mga superbisor ng bangko.
 
-**How does a certified blockchain support DORA compliance?**  
-Under DORA Article 5, bank boards bear direct, personal liability for technology resilience. A certified blockchain provides verifiable, cryptographic evidence of consensus integrity, validator supply-chain control, and smart contract safety, giving board members the documentable "reasonable steps" needed to defend against SM&CR personal liability claims.
+**Paano sinusuportahan ng isang sertipikadong blockchain ang pagsunod sa DORA?**  
+Sa ilalim ng Artikulo 5 ng DORA, ang mga lupon ng bangko ay may direktang personal na pananagutan sa katatagan ng teknolohiya. Ang isang sertipikadong blockchain ay nagbibigay ng masusuring kriptograpikong ebidensya ng integridad ng konsenso, kontrol ng supply chain ng validator, at kaligtasan ng smart contract, na nagbibigay sa mga miyembro ng lupon ng mga naidodokumentong "makatuwirang hakbang" na kailangan upang ipagtanggol laban sa mga paghahabol ng personal na pananagutan sa ilalim ng SM&CR.
 
-What is the difference between a traditional ledger audit and a certified blockchain audit?  
-A traditional audit is retrospective, verifying manual entries and static files after transactions have cleared. A certified blockchain audit is continuous and real-time; the validator nodes, BFT consensus engine, and formally verified smart contracts are certified to execute transactions deterministically, emitting structured telemetry (OpenTelemetry) that continuously validates the system’s health.
+Ano ang pagkakaiba ng tradisyonal na awdit ng ledger at ng awdit ng sertipikadong blockchain?  
+Ang tradisyonal na awdit ay retrospektibo: bini-verify nito ang mga manwal na entry at static na file pagkatapos ma-settle ang mga transaksyon. Ang awdit ng sertipikadong blockchain ay tuloy-tuloy at real-time; ang mga validator node, ang makina ng konsenso na BFT, at ang mga pormal na na-verify na smart contract ay sertipikado upang isagawa ang mga transaksyon nang determinsitiko, na naglalabas ng nakabalangkas na telemetry (OpenTelemetry) na tuloy-tuloy na bini-validate ang kalusugan ng sistema.
 
-Can public blockchains be certified for banking use?  
-In most jurisdictions, pure permissionless public blockchains fail to satisfy banking regulations due to the lack of validator identity verification, unpredictable gas/transaction costs, and non-deterministic finality (e.g., probabilistic proof-of-work/stake forks). Certified blockchains in banking typically utilize enterprise permissioned or highly regulated public-hybrid architectures where validator node operators are identified and audited financial entities.
+Maaari bang sertipikahan ang mga publikong blockchain para sa paggamit sa pagbabangko?  
+Sa karamihan ng mga hurisdiksyon, ang mga purong walang-pahintulot na publikong blockchain ay nabibigo na matugunan ang mga regulasyon sa pagbabangko dahil sa kawalan ng pagpapatunay ng pagkakakilanlan ng validator, hindi mahuhulaang mga gastos sa transaksyon, at hindi-determinsitikong finality (hal. mga probabilistikong fork ng proof-of-work/stake). Ang mga sertipikadong blockchain sa pagbabangko ay karaniwang gumagamit ng may-pahintulot na mga arkitektura ng enterprise o mahigpit na kinokontrol na mga arkitekturang publiko-hybrid, kung saan ang mga operator ng validator node ay mga natukoy at na-awdit na entidad na pinansyal.
 
-## 09. References
+## 09. Mga sanggunian
 
-* Basel Committee on Banking Supervision (BCBS), 2013. *Principles for effective risk data aggregation and reporting (BCBS 239)*. Basel: Bank for International Settlements. Available at: [https://www.bis.org/publ/bcbs239.pdf](https://www.bis.org/publ/bcbs239.pdf).  
-* Committee on Payments and Market Infrastructures and Technical Committee of the International Organization of Securities Commissions (CPMI-IOSCO), 2012. *Principles for financial market infrastructures*. Basel: Bank for International Settlements. Available at: [https://www.bis.org/cpmi/publ/d101a.pdf](https://www.bis.org/cpmi/publ/d101a.pdf).  
-* European Banking Authority (EBA), 2019. *EBA/GL/2019/02 — Guidelines on outsourcing arrangements*. Paris: EBA. Available at: [https://www.eba.europa.eu/regulation-and-policy/internal-governance/guidelines-on-outsourcing-arrangements](https://www.eba.europa.eu/regulation-and-policy/internal-governance/guidelines-on-outsourcing-arrangements).  
-* European Parliament and Council of the European Union, 2022. *Regulation (EU) 2022/2554 on digital operational resilience for the financial sector (DORA)*. Brussels: Official Journal of the European Union. Available at: [https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554).  
-* ISO/IEC JTC 1/SC 42, 2023. *ISO/IEC 42001:2023 — Information technology — Artificial intelligence — Management system*. Geneva: International Organization for Standardization. Available at: [https://www.iso.org/standard/81230.html](https://www.iso.org/standard/81230.html).  
-* ISO/IEC Technical Committee 307, 2020. *ISO/IEC 22739:2020 — Blockchain and distributed ledger technologies — Vocabulary*. Geneva: International Organization for Standardization. Available at: [https://www.iso.org/standard/73771.html](https://www.iso.org/standard/73771.html).  
-* National Institute of Standards and Technology (NIST), 2026. *First Three Finalized Post-Quantum Encryption Standards (FIPS 203, 204, and 205)*. Gaithersburg: U.S. Department of Commerce. Available at: [https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards](https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards).
+* Komiteng Basel sa Superbisyon ng Bangko (BCBS), 2013. *Principles for effective risk data aggregation and reporting (BCBS 239)*. Basel: Bank for International Settlements. Makukuha sa: [https://www.bis.org/publ/bcbs239.pdf](https://www.bis.org/publ/bcbs239.pdf).  
+* Committee on Payments and Market Infrastructures at Technical Committee of the International Organization of Securities Commissions (CPMI-IOSCO), 2012. *Principles for financial market infrastructures*. Basel: Bank for International Settlements. Makukuha sa: [https://www.bis.org/cpmi/publ/d101a.pdf](https://www.bis.org/cpmi/publ/d101a.pdf).  
+* European Banking Authority (EBA), 2019. *EBA/GL/2019/02 — Guidelines on outsourcing arrangements*. Paris: EBA. Makukuha sa: [https://www.eba.europa.eu/regulation-and-policy/internal-governance/guidelines-on-outsourcing-arrangements](https://www.eba.europa.eu/regulation-and-policy/internal-governance/guidelines-on-outsourcing-arrangements).  
+* European Parliament at Council of the European Union, 2022. *Regulasyon (EU) 2022/2554 sa digital operational resilience para sa sektor pinansyal (DORA)*. Brussels: Opisyal na Journal ng European Union. Makukuha sa: [https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554).  
+* ISO/IEC JTC 1/SC 42, 2023. *ISO/IEC 42001:2023 — Information technology — Artificial intelligence — Management system*. Geneva: International Organization for Standardization. Makukuha sa: [https://www.iso.org/standard/81230.html](https://www.iso.org/standard/81230.html).  
+* Technical Committee ISO/IEC 307, 2020. *ISO/IEC 22739:2020 — Blockchain and distributed ledger technologies — Vocabulary*. Geneva: International Organization for Standardization. Makukuha sa: [https://www.iso.org/standard/73771.html](https://www.iso.org/standard/73771.html).  
+* National Institute of Standards and Technology (NIST), 2026. *First Three Finalized Post-Quantum Encryption Standards (FIPS 203, 204, and 205)*. Gaithersburg: U.S. Department of Commerce. Makukuha sa: [https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards](https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards).
