@@ -189,6 +189,42 @@ leak into output. Add a CI job that diffs `macos-latest` vs
 
 ---
 
+### A8 — Markdown table alignment emits deprecated `align=` attributes (P1)
+
+**Tracking:** [ssg#618](https://github.com/sebastienrousseau/static-site-generator/issues/618)
+
+**Symptom.** Markdown tables that use column-alignment syntax (`:---`,
+`---:`, `:---:`) render as deprecated presentational HTML `align=`
+attributes on `<th>`/`<td>`. A strict pa11y AAA audit fails them
+(`WCAG2AAA.Principle1.Guideline1_3.1_3_1.H49.AlignAttr`), which breaks the
+build with `pa11y: real WCAG failures detected`. Observed on macOS **and**
+Linux (comrak 0.28 / html-generator 0.0.3), so it is not the A1 platform
+split — it is the default table renderer.
+
+**Root cause.** The markdown→HTML stack maps table column alignment to the
+obsolete HTML4 `align` attribute rather than CSS. `align` has been
+non-conforming since HTML5 and is a WCAG AAA (H49) failure by definition.
+
+**Fix.** Render alignment as CSS, not an attribute — either
+`style="text-align:left|center|right"` or a utility class
+(`class="text-left|text-center|text-right"`) on the cell. If alignment
+styling is not required, strip `align=` from table cells during HTML
+generation. Prefer the CSS route so author-intended alignment is preserved
+while staying AAA-clean. (comrak's newer releases expose table-rendering
+options worth checking when A1's stack bump lands.)
+
+**Acceptance / tests.**
+- Unit: a table with `| :--- | ---: |` produces cells with `text-align`
+  CSS (style or class) and **no** `align=` attribute.
+- Gate: the fixture site passes a pa11y `WCAG2AAA` run with aligned tables
+  present (currently only passable by stripping the alignment colons).
+
+**Interim workaround (in use downstream).** The consuming site strips the
+alignment colons from delimiter rows (`:----` → `----`); left is the
+default so this is visually identical but loses center/right alignment.
+
+---
+
 ## Part B — Move Python post-processing into ssg natively
 
 The site runs a large Python pipeline after `ssg` (in `build.sh` and
@@ -371,8 +407,9 @@ A1 (markdown stack + `allow_unsafe_html`), A2 (permalink fallback / never
 hard-fail), A7 (cross-platform determinism + macOS CI).
 
 **P1 (removes the biggest Python surfaces):**
-A3–A5 (structured-data/title, date parsing, inLanguage), B1 (permalink),
-B3–B4 (SRI + CSP), B2 (i18n routing), B8 (og/twitter/JSON-LD from base FM).
+A3–A5 (structured-data/title, date parsing, inLanguage), A8 (table-align
+`align=` → CSS, WCAG H49), B1 (permalink), B3–B4 (SRI + CSP), B2 (i18n
+routing), B8 (og/twitter/JSON-LD from base FM).
 
 **P2 (collection-model features):**
 B5–B7 (image dims, preload), B9 (breadcrumbs), B10 (feeds/search/api),
