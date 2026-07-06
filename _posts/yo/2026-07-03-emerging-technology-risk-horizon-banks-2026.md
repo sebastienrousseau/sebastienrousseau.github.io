@@ -1,6 +1,6 @@
 ---
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
-banner_alt: "Abstract horizon of converging signal lines — AI, synthetic media, and programmable-money rails resolving over a banking skyline, evoking a supervisory scan of emerging-technology risk for financial services in 2026"
+banner_alt: "Ojú-ọ̀run alátumọ̀ ti àwọn ìlà àmì tí ń pàdé — AI, àwọn ìròyìn roba, àti àwọn ọ̀nà owó tí a lè ṣètò tí ń yanjú lókè òjìji báńkì, tí ń mú wíwo ìbójútó ti ewu ìmọ̀-ẹ̀rọ tí ń yọjáde fún àwọn iṣẹ́ ìnáwó ní 2026 wá sí ọkàn"
 banner_height: "1280"
 banner_width: "1920"
 banner: "https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp"
@@ -9,7 +9,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "July 3, 2026"
-description: "An original reading of the 2026 emerging-technology risk horizon for banks — personalised AI intelligence, synthetic financial crime, and programmable finance — with a signal-to-supervision framework, drawing on the FCA's Technology Horizon Scan 2026."
+description: "Kíkà ìpilẹ̀ṣẹ̀ ti ojú-ọ̀run ewu àwọn ìmọ̀-ẹ̀rọ tí ń yọjáde fún àwọn báńkì ní 2026 — ọgbọ́n tí AI ṣe ní ti ara ẹni, ìwà ọ̀daràn ìnáwó roba, àti ìnáwó tí a lè ṣètò — pẹ̀lú ìlànà àmì-sí-ìbójútó, tí ó gbáralé Technology Horizon Scan 2026 ti FCA."
 format-detection: "telephone=no"
 hreflang: "yo"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -35,9 +35,9 @@ rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
 schema: "FAQPage, Article"
-seo_title: "Reading the Emerging-Technology Risk Horizon for Banks in 2026"
+seo_title: "Kíka ojú-ọ̀run ewu ti àwọn ìmọ̀-ẹ̀rọ tí ń yọjáde fún àwọn báńkì ní 2026"
 short_name: "sebastienrousseau"
-subtitle: "Three technology vectors — personalised intelligence, synthetic (in)security, and programmable finance — are converging on banking at once. A signal-to-supervision reading of what changes, and what boards should do before the risks arrive."
+subtitle: "Fẹ́ktà mẹ́ta ti ìmọ̀-ẹ̀rọ — ọgbọ́n ti ara ẹni, àìléwu roba, àti ìnáwó tí a lè ṣètò — ń pàdé lórí báńkì ní àkókò kan náà. Kíkà àmì-sí-ìbójútó ti ohun tí ń yí padà, àti ohun tí àwọn ìgbìmọ̀ yẹ kí wọ́n ṣe kí àwọn ewu tó dé."
 tags: "emerging technology, horizon scanning, FCA, personalised intelligence, agentic AI, synthetic fraud, deepfakes, programmable finance, tokenisation, stablecoins, financial crime, consumer duty, banking regulation, operational resilience, risk signals"
 theme-color: "0, 83, 191"
 title: "Reading the Emerging-Technology Risk Horizon for Banks in 2026"
@@ -63,7 +63,7 @@ apple_touch_icon_sizes: "192x192"
 apple-mobile-web-app-capable: "yes"
 apple-mobile-web-app-status-bar-inset: "black"
 apple-mobile-web-app-status-bar-style: "black-translucent"
-apple-mobile-web-app-title: "Emerging-Tech Horizon 2026"
+apple-mobile-web-app-title: "Ojú-ọ̀run ìmọ̀-ẹ̀rọ 2026"
 apple-touch-fullscreen: "yes"
 msapplication-navbutton-color: "0, 83, 191"
 twitter_card: "summary_large_image"
@@ -84,85 +84,81 @@ site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 ---
 
-<!-- translation-stub: replace this body in Claude Code -->
+# Kíka ojú-ọ̀run ewu ti àwọn ìmọ̀-ẹ̀rọ tí ń yọjáde fún àwọn báńkì ní 2026
 
-> _Translation pending — read the [English original](/2026-07-03-emerging-technology-risk-horizon-banks-2026/) while we localise._
+Nǹkan kan ti yí padà nínú bí àwọn alábòójútó ṣe ń sọ̀rọ̀ nípa ọjọ́ iwájú. Fún ọ̀pọ̀lọpọ̀ ọdún, ìdúró náà jẹ́ ti ìdáhùn: ìmọ̀-ẹ̀rọ kan dé, ìpalára kan farahàn, òfin kan tẹ̀lé. Ní 2026 ohùn náà yàtọ̀. Àwọn alátòsẹ̀ ń wo ojú-ọ̀run *sókè-sókè* — wọ́n ń tẹ àwọn kíkà tí a ṣètò, tí kò ní ìdè, nípa bí àwọn ìmọ̀-ẹ̀rọ tí ń yọjáde ṣe lè parapọ̀ kí ẹnikẹ́ni tó farapa. Ìwé *Technology Horizon Scan 2026* ti Financial Conduct Authority ti Britain ni àpẹẹrẹ tí ó ṣe kedere jùlọ; ó ṣàpèjúwe ara rẹ̀ gẹ́gẹ́ bí ìtẹ̀jáde òde àkọ́kọ́ ti irú rẹ̀ láti ọ̀dọ̀ alátòsẹ̀, ó sì gbé ọ̀nà mẹ́ta tí ó bọ́gbọ́n mu kalẹ̀ tí àwọn ìmọ̀-ẹ̀rọ tí ń yọjáde lè tún ṣe àwọn àbájáde fún àwọn oníbàárà, àwọn ilé-iṣẹ́ àti àwọn ọjà.
 
-# Reading the Emerging-Technology Risk Horizon for Banks in 2026
+Ìyípadà yìí wúwo ju èyíkéyìí àsọtẹ́lẹ̀ tí ó wà nínú rẹ̀. Alátòsẹ̀ tí ó ń wo ojú-ọ̀run ní gbangba ń fi hàn pé *àkókò* ìbójútó ń lọ sí òkè odò — láti ìmúṣẹ lẹ́yìn ìpalára sí ìfojúsọ́nà kí ìpalára tó dé. Fún àwọn báńkì, ìbéèrè tí ó ṣe pàtàkì kì í ṣe «ìmọ̀-ẹ̀rọ wo ni ó yẹ kí a gbà?» mọ́, bí kò ṣe «ṣé a lè ka àwọn àmì kan náà tí àwọn alábòójútó wa ń ka báyìí, kí a sì gbé ìgbésẹ̀ ní àkọ́kọ́?» Àpilẹ̀kọ yìí jẹ́ kíkà ojú-ọ̀run yẹn: àwọn fẹ́ktà mẹ́ta ti ìmọ̀-ẹ̀rọ tí ń pàdé lórí báńkì ní àkókò kan náà, àti ìlànà kan láti yí àwọn àmì aláìlágbára padà sí ìgbésẹ̀ tí ó ní ìdíwọ̀n ìbójútó kí àwọn ewu tó tóbi sí i.
 
-Something changed in how supervisors talk about the future. For years the posture was reactive: a technology arrives, harm surfaces, a rule follows. In 2026 the tone is different. Regulators are scanning the horizon *out loud* — publishing structured, non-binding readings of where emerging technologies might combine before anyone has been harmed. The UK Financial Conduct Authority's *Technology Horizon Scan 2026* is the clearest example, describing itself as the regulator's first external publication of its kind and setting out three plausible ways emerging technologies could reshape outcomes for consumers, firms, and markets.
-
-That shift matters more than any single prediction inside it. A regulator that scans the horizon in public is signalling that the *timing* of oversight is moving upstream — from post-harm enforcement toward pre-harm anticipation. For banks, the practical question is no longer "which technology should we adopt?" but "can we read the same signals our supervisors are now reading, and act on them first?" This piece is one reading of that horizon: three technology vectors converging on banking at once, and a framework for turning weak signals into supervisory-grade action before the risks scale.
-
-> **Executive summary / key takeaways**
+> **Àkótán aṣeré / àwọn kókó pàtàkì**
 >
-> - **Three vectors, one arrival window.** Personalised AI intelligence, synthetic (in)security, and programmable finance are not sequential waves — they are converging on the same 2026–2028 window, and they amplify each other.
-> - **The harm curve moved left.** Supervisors are publishing horizon scans precisely because these technologies compress the distance between "novel" and "systemic." Reactive controls arrive too late by construction.
-> - **Signals beat forecasts.** You cannot predict which scenario lands; you can instrument for the *early signals* each one emits and pre-authorise the response.
-> - **Governance is the differentiator.** The banks that fare best will not be those with the most AI — they will be those that can *evidence* how they read, escalated, and contained an emerging risk. That is a board-level capability, not a lab experiment.
+> - **Fẹ́ktà mẹ́ta, fèrèsé ìdé kan.** Ọgbọ́n tí AI ṣe ní ti ara ẹni, àìléwu roba, àti ìnáwó tí a lè ṣètò-ìtòlẹ́sẹẹsẹ kì í ṣe àwọn ìgbì tí ó tẹ̀léra — wọ́n pàdé ní fèrèsé 2026-2028 kan náà, wọ́n sì ń fún ara wọn lókun.
+> - **Ìlà ìpalára ti lọ sí òsì.** Àwọn alábòójútó ń tẹ àwọn wíwo ojú-ọ̀run gẹ́lẹ́ nítorí àwọn ìmọ̀-ẹ̀rọ wọ̀nyí ń tẹ ààlà láàrin «tuntun» àti «ètò». Àwọn ìdarí ìdáhùn ń dé pẹ́ jù nípa ìkọ́.
+> - **Àwọn àmì ń borí àsọtẹ́lẹ̀.** O kò lè sọ àsọtẹ́lẹ̀ àbájáde wo ni yóò ṣẹlẹ̀; o lè múra ara rẹ sílẹ̀ fún *àwọn àmì àkọ́kọ́* tí ọ̀kọ̀ọ̀kan ń tú jáde, kí o sì fún ní àṣẹ ṣáájú sí ìdáhùn.
+> - **Ìṣàkóso ni kókó ìyàtọ̀.** Àwọn báńkì tí yóò ṣe dáadáa jùlọ kì í ṣe àwọn tí ó ní AI jùlọ — wọ́n ni àwọn tí ó lè *fìdí* rẹ̀ múlẹ̀ bí wọ́n ṣe ka, gbé sókè, tí wọ́n sì dí ewu tí ń yọjáde. Agbára ni ní ipele ìgbìmọ̀, kì í ṣe àdánwò yàrá-ẹ̀kọ́.
 
-## The three vectors, and why they converge
+## Àwọn fẹ́ktà mẹ́ta, àti ìdí tí wọ́n fi ń pàdé
 
-The instinct is to treat emerging technologies as a queue — deal with AI, then digital assets, then whatever follows. The horizon-scanning frame breaks that instinct: it insists the interesting risk lives in *combination*. Three vectors dominate the 2026 reading.
+Ìṣesí máa ń tọ́jú àwọn ìmọ̀-ẹ̀rọ tí ń yọjáde bí ìlà — a máa yanjú AI, lẹ́yìn náà àwọn dúkìá dijítà, lẹ́yìn náà ohunkóhun tó tẹ̀lé. Ìlànà wíwo ojú-ọ̀run ń fọ́ ìṣesí yìí: ó ń tẹnu mọ́ pé ewu tí ó fani-lọ́kàn-mọ́ra wà nínú *àpapọ̀*. Fẹ́ktà mẹ́ta ni ó jọba lórí kíkà 2026.
 
-**Personalised intelligence.** Widely available AI, combined with granular behavioural and financial data, lets systems tailor persuasion, pricing, and interaction to the individual in real time. The upside is genuine — delegated, agentic interactions that act on a consumer's behalf. The risk is that the same personalisation that serves a customer can be turned to exploit them: hyper-targeted pressure, opaque price discrimination, and agentic systems transacting faster than any human review loop. When the interface itself is optimising against the consumer's interest, "informed consent" becomes a fiction.
+**Ọgbọ́n ti ara ẹni.** AI tí ó wà ní ibi gbogbo, tí a dàpọ̀ mọ́ àwọn dátà ìhùwàsí àti ìnáwó tí ó jinlẹ̀, ń jẹ́ kí àwọn ètò ṣe àtúnṣe ìyíniléròpadà, ìdíyelé, àti ìbáṣepọ̀ sí ẹnìkọ̀ọ̀kan ní àkókò gidi. Agbára náà jẹ́ tòótọ́ — àwọn ìbáṣepọ̀ tí a fi lé lọ́wọ́, ti aṣojú tí ń ṣe ní orúkọ oníbàárà. Ewu náà ni pé àtúnṣe-ti-ara-ẹni kan náà tí ń sìn oníbàárà lè yí padà láti lo ní ìlòkulò: ìtẹ̀mọ́lẹ̀ tí ó ní àfojúsùn púpọ̀, ìyàsọ́tọ̀ ìdíyelé tí kò ṣe kedere, àti àwọn ètò aṣojú tí ń ṣe ìṣòwò yára ju èyíkéyìí ìyíká àyẹ̀wò ènìyàn. Nígbà tí fọ́ọ̀mù fúnra rẹ̀ ń ṣàtúnṣe lòdì sí ìfẹ́ oníbàárà, «ìfọwọ́sí tí a mọ̀ nípa» di ìtàn àròsọ.
 
-**Synthetic (in)security.** Generative models have industrialised the raw materials of financial crime — synthetic identities, voice and video deepfakes, fabricated documents, and automated social engineering at scale. The defensive assumptions of KYC, authentication, and fraud detection were built for a world where forging a convincing identity was expensive. That cost has collapsed. Synthetic crime does not merely increase fraud volume; it dissolves the evidentiary basis on which "who did this?" can be answered at all.
+**Àìléwu roba.** Àwọn àwòṣe tí ń ṣàgbékalẹ̀ ti sọ àwọn ohun-àmúṣe ti ìwà ọ̀daràn ìnáwó di iṣẹ́-ọ̀wọ́ — àwọn ìdánimọ̀ roba, ọ̀rọ̀-ohùn àti fídíò ẹ̀tàn jíjinlẹ̀, àwọn ìwé àdámọ̀, àti iṣẹ́-ọ̀nà àwùjọ aládàáṣiṣẹ́ ní ìwọ̀n. Àwọn àròsọ ìgbèjà ti KYC, ìjẹ́rìí, àti ìwádìí ìwà-ẹ̀tàn ni a ṣe fún ayé kan níbi tí ṣíṣe ìdánimọ̀ tí ó gbani-lọ́kàn jẹ́ olówó ńlá. Iye yẹn ti wó lulẹ̀. Ìwà ọ̀daràn roba kì í kàn mú iye ìwà-ẹ̀tàn pọ̀ sí i; ó ń tú ìpìlẹ̀ ẹ̀rí tí a lè fi dáhùn «ta ni ó ṣe èyí?».
 
-**Programmable finance.** Tokenised deposits, stablecoins, smart-contract settlement, and shared ledgers promise to reshape financial infrastructure toward interoperable, programmable economies. The growth case is real — atomic settlement, embedded compliance, new liquidity. The risk is that programmability moves control logic out of institutions and into code that executes without a human in the loop, across jurisdictions, at machine speed, and often outside the perimeter a supervisor can see.
+**Ìnáwó tí a lè ṣètò-ìtòlẹ́sẹẹsẹ.** Àwọn ìfipamọ́ tí a sọ di àmì, àwọn owó-tó-dúró-sán-ún, ìpinnu nípasẹ̀ àdéhùn ọlọ́gbọ́n, àti àwọn ìwé-àkọsílẹ̀ tí a pín ń ṣèlérí láti tún ṣe ìpìlẹ̀-iṣẹ́ ìnáwó sí àwọn ọrọ̀-ajé tí ó lè ṣiṣẹ́ papọ̀, tí a sì lè ṣètò-ìtòlẹ́sẹẹsẹ. Ẹjọ́ ìdàgbàsókè jẹ́ tòótọ́ — ìpinnu atomu, ìbáramu tí a fi sínú, owó tuntun. Ewu náà ni pé agbára-ìtòlẹ́sẹẹsẹ ń gbé ọgbọ́n ìdarí jáde kúrò nínú àwọn ilé-iṣẹ́, sí kóòdù tí a ń ṣe láìsí ènìyàn nínú ìyíká, kọjá àwọn agbègbè òfin, ní ìyára ẹ̀rọ, àti nígbà púpọ̀ ní òde àyíká tí alábòójútó lè rí.
 
-Why do they converge rather than queue? Because each one lowers the cost of the others' failure modes. Personalised intelligence makes synthetic attacks more targeted. Synthetic identity makes programmable-finance rails easier to abuse. Programmable rails give agentic systems somewhere to act autonomously and irreversibly. A weak signal in one vector is a leading indicator in the others.
+Kí ló dé tí wọ́n fi ń pàdé dípò kí wọ́n dúró ní ìlà? Nítorí ọ̀kọ̀ọ̀kan ń dín iye owó àwọn ọ̀nà ìkùnà ti àwọn yòókù kù. Ọgbọ́n ti ara ẹni ń mú àwọn ìkọlù roba ní àfojúsùn sí i. Ìdánimọ̀ roba ń mú kí ìlòkulò àwọn ọ̀nà ìnáwó tí a lè ṣètò rọrùn. Àwọn ọ̀nà tí a lè ṣètò ń fún àwọn ètò aṣojú ní ibi láti ṣe ní òmìnira àti láìṣeéyí padà. Àmì aláìlágbára nínú fẹ́ktà kan jẹ́ àfihàn aṣáájú nínú àwọn yòókù.
 
-## The harm curve moved left
+## Ìlà ìpalára ti lọ sí òsì
 
-The reason supervisors are publishing scans — rather than waiting for complaints — is structural. These technologies compress the interval between *novel* and *systemic*. A deepfake authorisation scam, an agentic mis-selling loop, or a stablecoin depeg propagates at network speed, not quarterly-review speed. By the time a traditional control fires — a threshold breach, an audit finding, a regulatory return — the harm has already scaled.
+Ìdí tí àwọn alábòójútó fi ń tẹ àwọn wíwo — dípò dídúró de àwọn ẹ̀sùn — jẹ́ ti ìṣètò. Àwọn ìmọ̀-ẹ̀rọ wọ̀nyí ń tẹ àlàfo láàrin *tuntun* àti *ètò*. Ìtànjẹ ìfúnni-ní-àṣẹ pẹ̀lú ẹ̀tàn jíjinlẹ̀, ìyíká títà-àṣìṣe ti aṣojú, tàbí ìyàsọ́tọ̀ ti owó-tó-dúró-sán-ún ń tàn kálẹ̀ ní ìyára nẹ́tíwọ́ọ̀kì, kì í ṣe ìyára àyẹ̀wò oṣù-mẹ́ta. Nígbà tí ìdarí àṣà-ìbílẹ̀ bá tan — ààlà tí a kọjá, àwárí ìṣàyẹ̀wò, ìròyìn ìlànà — ìpalára ti tóbi tán.
 
-That is the quiet thesis inside every horizon scan: **anticipation is now a control, not a courtesy.** A bank whose risk function only detects emerging-technology harm after it materialises is, by construction, always late. The differentiator is the ability to read the horizon at the same cadence the technology moves.
+Èyí ni àbá-èrò ìdákẹ́jẹ́ẹ́ ní ọkàn-àyà gbogbo wíwo ojú-ọ̀run: **ìfojúsọ́nà báyìí jẹ́ ìdarí, kì í ṣe ọ̀làjú.** Báńkì tí iṣẹ́ ewu rẹ̀ ń wá ìpalára ìmọ̀-ẹ̀rọ tí ń yọjáde kìkì lẹ́yìn ìṣẹlẹ̀ rẹ̀, nípa ìkọ́, ń pẹ́ nígbà gbogbo. Kókó ìyàtọ̀ ni agbára láti ka ojú-ọ̀run ní ìyára kan náà tí ìmọ̀-ẹ̀rọ ń lọ.
 
-## From signals to supervision: a reading framework
+## Láti àwọn àmì sí ìbójútó: ìlànà kíkà
 
-You cannot forecast which scenario lands. You *can* instrument for the early signals each vector emits and pre-authorise the response. Four moves turn a horizon scan from a reading exercise into an operating capability.
+O kò lè sọ àsọtẹ́lẹ̀ àbájáde wo ni yóò ṣẹlẹ̀. O *lè* múra ara rẹ sílẹ̀ fún àwọn àmì àkọ́kọ́ tí fẹ́ktà kọ̀ọ̀kan ń tú jáde, kí o sì fún ní àṣẹ ṣáájú sí ìdáhùn. Ìgbésẹ̀ mẹ́rin ń yí wíwo ojú-ọ̀run padà láti eré ìdárayá kíkà sí agbára iṣẹ́.
 
-1. **Name the signals, per vector.** For each vector, define the concrete leading indicators you will watch — a rise in authenticated-but-anomalous transactions (synthetic security), agentic sessions acting outside expected parameters (personalised intelligence), or settlement finality dependent on third-party contract code (programmable finance). A signal you have not named in advance is a signal you will rationalise away in the moment.
-2. **Set the escalation trigger before the event.** Decide, now, what movement in each signal forces a decision — and who owns it. The failure mode is not missing the signal; it is seeing it and having no pre-agreed threshold that compels action.
-3. **Pre-authorise the containment.** The response to a fast-moving emerging risk cannot wait for a committee to convene. Rehearse the circuit-breakers — pausing an agentic channel, tightening an authentication gate, halting settlement on a suspect rail — and pre-authorise them so they can fire at machine speed.
-4. **Evidence the reading.** Record what you watched, what moved, what you decided, and why. When a supervisor asks how you anticipated a risk, the defensible answer is a documented reading trail — not a retrospective story. This is where the horizon scan becomes auditable governance.
+1. **Sọ àwọn àmì lórúkọ, ní fẹ́ktà kọ̀ọ̀kan.** Fún fẹ́ktà kọ̀ọ̀kan, ṣàlàyé àwọn àfihàn aṣáájú tí ó ṣe kedere tí o máa ṣọ́ — ìlọsókè nínú àwọn ìṣòwò tí a ti jẹ́rìí ṣùgbọ́n tí ó ṣàjèjì (àìléwu roba), àwọn ìpàdé aṣojú tí ń ṣe ní òde àwọn àyíwọ̀n tí a retí (ọgbọ́n ti ara ẹni), tàbí ìparí ìpinnu tí ó gbáralé kóòdù àdéhùn ẹnìkẹ́ta (ìnáwó tí a lè ṣètò). Àmì tí o kò sọ lórúkọ ṣáájú jẹ́ àmì tí o máa fún ní ìdí ní àkókò náà.
+2. **Ṣètò okùnfà ìgbésókè kí ìṣẹlẹ̀ tó dé.** Pinnu, báyìí, ìṣípò wo ni ti àmì kọ̀ọ̀kan ń fipá mú ìpinnu — àti ta ni ó ni í. Ọ̀nà ìkùnà kì í ṣe pípàdánù àmì; ó jẹ́ rírí i láìní ààlà tí a ti gbà ṣáájú tí ó ń fipá mú ìgbésẹ̀.
+3. **Fún ní àṣẹ ṣáájú sí ìdíwọ́.** Ìdáhùn sí ewu tí ń yọjáde tí ó ń yára yí padà kò lè dúró de ìpéjọ ìgbìmọ̀ kan. Ṣe ìdánrawò àwọn agékúrò-ẹ̀ka — dídádúró ọ̀nà aṣojú kan, mímú ẹnu-ọ̀nà ìjẹ́rìí le, dídádúró ìpinnu lórí ọ̀nà tí ó fura — kí o sì fún wọn ní àṣẹ ṣáájú kí wọ́n lè tan ní ìyára ẹ̀rọ.
+4. **Ṣe àkọsílẹ̀ kíkà náà.** Kọ ohun tí o ṣọ́, ohun tí ó ṣípò, ohun tí o pinnu, àti ìdí. Nígbà tí alábòójútó bá béèrè bí o ṣe fojúsọ́nà ewu, ìdáhùn tí a lè gbèjà ni àpẹẹrẹ kíkà tí a kọ sílẹ̀ — kì í ṣe ìtàn ẹ̀yìn-ọ̀run. Níbí ni wíwo ojú-ọ̀run di ìṣàkóso tí a lè ṣàyẹ̀wò.
 
-The through-line: emerging-technology risk is not managed by adopting less technology, and it is not managed by predicting the future. It is managed by making anticipation *repeatable and evidenced*.
+Okùn aṣáájú: ewu ìmọ̀-ẹ̀rọ tí ń yọjáde kì í ṣe ìṣàkóso nípa gbígba ìmọ̀-ẹ̀rọ díẹ̀, tàbí nípa sísọ àsọtẹ́lẹ̀ ọjọ́ iwájú. A ń ṣàkóso rẹ̀ nípa ṣíṣe ìfojúsọ́nà *tí a lè tún ṣe àti tí a fìdí rẹ̀ múlẹ̀*.
 
-## What changes for the boardroom
+## Ohun tí ó yí padà fún ìgbìmọ̀
 
-For senior management, three shifts follow directly.
+Fún àwọn alóyè àgbà, ìyípadà mẹ́ta ń tẹ̀lé kíákíá.
 
-- **Move horizon scanning inside enterprise risk.** Treat it as a standing function with named signal owners across the three vectors, not an innovation-team side project. The supervisor has made scanning a first-class activity; the board should mirror it.
-- **Fund anticipation, not just detection.** Detection tooling answers "did harm occur?" Anticipation tooling answers "is a harm forming?" The second is where the 2026 risks are won or lost, and it is chronically underfunded relative to its blast radius.
-- **Make the reading a board artefact.** A quarterly horizon reading — signals watched, thresholds, decisions taken — belongs in the board pack alongside capital and liquidity. It is the evidence that the institution can keep pace with a supervisor that now reads the same horizon.
+- **Mú wíwo ojú-ọ̀run wá sínú ìṣàkóso ewu ilé-iṣẹ́.** Tọ́jú rẹ̀ gẹ́gẹ́ bí iṣẹ́ tí ó dúró pẹ̀lú àwọn olùmúniṣẹ́ àmì tí a dárúkọ kọjá fẹ́ktà mẹ́ta, kì í ṣe iṣẹ́ ẹ̀gbẹ́ ti ẹgbẹ́ ìmúdàgbà. Alábòójútó ti ṣe wíwo di iṣẹ́ ipele-kìíní; ìgbìmọ̀ yẹ kí ó fi hàn.
+- **Ná owó sí ìfojúsọ́nà, kì í ṣe ìwádìí nìkan.** Àwọn irinṣẹ́ ìwádìí ń dáhùn «ṣé ìpalára ṣẹlẹ̀?». Àwọn irinṣẹ́ ìfojúsọ́nà ń dáhùn «ṣé ìpalára ń dá?». Ní èkejì ni a ń ṣẹ́gun tàbí pàdánù àwọn ewu 2026, ó sì jẹ́ aláìní-owó ní ìgbà gbogbo ní ìfiwéra pẹ̀lú radius ipa rẹ̀.
+- **Ṣe kíkà náà di ohun-ìdálẹ́rọ ìgbìmọ̀.** Kíkà ojú-ọ̀run oṣù-mẹ́ta — àwọn àmì tí a ṣọ́, àwọn ààlà, àwọn ìpinnu tí a ṣe — jẹ́ ti fáìlì ìgbìmọ̀ pẹ̀lú olú-owó àti owó. Ó jẹ́ ẹ̀rí pé ilé-iṣẹ́ lè bá alábòójútó tí ó ń ka ojú-ọ̀run kan náà báyìí lọ.
 
-## The regulatory posture is the tell
+## Ìdúró ìlànà ni àmì
 
-The deepest signal in the 2026 landscape is not any one technology — it is that regulators have chosen to publish their horizon reading at all. A scan is an invitation: it tells the market where oversight attention is moving *before* the rules arrive. The firms that respond by building their own reading capability will help shape what binding supervision eventually looks like. The firms that wait for the rule will inherit whatever the fastest-moving harm forces regulators to write.
+Àmì tí ó jinlẹ̀ jùlọ nínú ojú-ilẹ̀ 2026 kì í ṣe ìmọ̀-ẹ̀rọ pàtó kankan — ó jẹ́ pé àwọn alátòsẹ̀ ti yàn láti tẹ kíkà ojú-ọ̀run wọn rárá. Wíwo jẹ́ ìpè: ó ń sọ fún ọjà ibi tí àfiyèsí ìbójútó ń lọ *kí* àwọn òfin tó dé. Àwọn ilé-iṣẹ́ tí ń dáhùn nípa kíkọ́ agbára kíkà tiwọn yóò ràn láti ṣe ìríra bí ìbójútó tí ó ní ìdè yóò ṣe rí níkẹyìn. Àwọn ilé-iṣẹ́ tí ń dúró de òfin yóò jogún ohunkóhun tí ìpalára tí ó yára jùlọ bá fipá mú àwọn alátòsẹ̀ láti kọ.
 
-Emerging technology has always been framed as an adoption question. In 2026 it is a *reading* question. The banks that can read the horizon — across personalised intelligence, synthetic security, and programmable finance — and evidence how they act on it, will find that anticipation is not the constraint on innovation. It is the licence for it.
+Ìmọ̀-ẹ̀rọ tí ń yọjáde ni a ti fi hàn nígbà gbogbo gẹ́gẹ́ bí ìbéèrè gbígbà. Ní 2026 ó jẹ́ ìbéèrè *kíkà*. Àwọn báńkì tí ó lè ka ojú-ọ̀run — kọjá ọgbọ́n ti ara ẹni, àìléwu roba, àti ìnáwó tí a lè ṣètò — tí wọ́n sì lè fìdí rẹ̀ múlẹ̀ bí wọ́n ṣe ń ṣe ní ìbámu, yóò rí i pé ìfojúsọ́nà kì í ṣe ìdíwọ́ ìmúdàgbà. Ó jẹ́ ìwé-àṣẹ rẹ̀.
 
-## Frequently asked questions
+## Àwọn ìbéèrè tí a sábà máa ń bèèrè
 
-**Is this a prediction of what will happen?**
-No. Like the horizon scans it draws on, this is a reading of *plausible* combinations and the early signals they emit — not a forecast. Its value is preparation, not prophecy: naming the signals and pre-authorising the response so a bank is not improvising when one of them moves.
+**Ṣé àsọtẹ́lẹ̀ ohun tí yóò ṣẹlẹ̀ ni èyí?**
+Bẹ́ẹ̀ kọ́. Gẹ́gẹ́ bí àwọn wíwo ojú-ọ̀run tí ó gbáralé, èyí jẹ́ kíkà àwọn àpapọ̀ *tí ó bọ́gbọ́n mu* àti àwọn àmì àkọ́kọ́ tí wọ́n ń tú jáde — kì í ṣe àsọtẹ́lẹ̀. Iye rẹ̀ jẹ́ ìmúrasílẹ̀, kì í ṣe àsọtẹ́lẹ̀-àìsọ: sísọ àwọn àmì lórúkọ àti fífún ní àṣẹ ṣáájú sí ìdáhùn kí báńkì má bàa ṣe ìṣàṣepọ̀ nígbà tí ọ̀kan bá ṣípò.
 
-**Why treat the three vectors together rather than separately?**
-Because their risk lives in combination. Personalised intelligence sharpens synthetic attacks; synthetic identity abuses programmable rails; programmable rails give agentic systems autonomous, irreversible reach. Managing them in silos misses the amplification that makes them systemic.
+**Kí ló dé tí a fi ń ṣàkóso fẹ́ktà mẹ́ta papọ̀ dípò lọ́tọ̀ọ̀tọ̀?**
+Nítorí ewu wọn wà nínú àpapọ̀. Ọgbọ́n ti ara ẹni ń mú àwọn ìkọlù roba pọ́n; ìdánimọ̀ roba ń lo àwọn ọ̀nà tí a lè ṣètò ní ìlòkulò; àwọn ọ̀nà tí a lè ṣètò ń fún àwọn ètò aṣojú ní ìdé òmìnira, tí kò ṣeéyípadà. Ṣíṣàkóso wọn nínú àwọn ilé-ìpamọ́ ń pàdánù ìfẹ̀síi tí ń mú wọn di ètò.
 
-**What is the single most useful thing a bank can do first?**
-Name the leading signals per vector and set the escalation trigger *before* an event, with a named owner. Most institutions can already detect harm; few have pre-agreed what movement in an emerging-risk signal compels a decision, or who makes it.
+**Kí ni ohun tí ó wúlò jùlọ tí báńkì lè ṣe ní àkọ́kọ́?**
+Sísọ àwọn àmì aṣáájú lórúkọ ní fẹ́ktà kọ̀ọ̀kan àti ṣíṣètò okùnfà ìgbésókè *kí* ìṣẹlẹ̀ kan tó dé, pẹ̀lú olùmúniṣẹ́ tí a dárúkọ. Ọ̀pọ̀ àwọn ilé-iṣẹ́ ti lè wá ìpalára báyìí; díẹ̀ ni ó ti gbà ṣáájú ìṣípò wo ni ti àmì ewu tí ń yọjáde ń fipá mú ìpinnu, tàbí ta ni ó ń ṣe é.
 
-**How does horizon scanning relate to existing obligations?**
-It operationalises them. Consumer-duty, operational-resilience, model-risk, and financial-crime obligations all assume a firm can anticipate and contain harm. A documented horizon reading is the evidence that the anticipation actually happens — turning a principle into an auditable control.
+**Báwo ni wíwo ojú-ọ̀run ṣe ní í ṣe pẹ̀lú àwọn ojúṣe tí ó wà?**
+Ó ń mú wọn ṣiṣẹ́. Àwọn ojúṣe iṣẹ́-oníbàárà, ìforítì iṣẹ́, ewu àwòṣe, àti ìwà ọ̀daràn ìnáwó gbogbo wọn ń rò pé ilé-iṣẹ́ lè fojúsọ́nà kí ó sì dí ìpalára. Kíkà ojú-ọ̀run tí a kọ sílẹ̀ ni ẹ̀rí pé ìfojúsọ́nà ń ṣẹlẹ̀ ní tòótọ́ — ó ń yí ìlànà padà sí ìdarí tí a lè ṣàyẹ̀wò.
 
-## Sources and further reading
+## Àwọn orísun àti kíka síwájú
 
-- Financial Conduct Authority (FCA), 2026. *Technology Horizon Scan 2026* ⧉. [The FCA's first external horizon-scanning publication; sets out three plausible emerging-technology scenarios — Personalised Intelligence, Synthetic (in)security, and Programmable finance — and early risk signals for consumers, firms and markets. Cited as the anchor source for the three-vector framing; the analysis, signal-to-supervision framework and conclusions above are the author's own.]
-- Bank for International Settlements (BIS) Innovation Hub, 2026. *Project Agorá and the unified-ledger agenda* ⧉. [Cross-border tokenised settlement experiments underpinning the programmable-finance vector.]
-- Financial Stability Board (FSB), 2026. *Sound Practices for the Responsible Adoption of AI* ⧉. [Supervisory framing for agentic and personalised-intelligence risk.]
-- ISO/IEC 42001:2023, *Information technology — Artificial intelligence — Management system* ⧉. [Governance baseline for the intelligence vector.]
+- Financial Conduct Authority (FCA), 2026. *Technology Horizon Scan 2026* ⧉. [Ìtẹ̀jáde wíwo ojú-ọ̀run òde àkọ́kọ́ ti FCA; ó gbé àwọn àpẹẹrẹ mẹ́ta tí ó bọ́gbọ́n mu ti àwọn ìmọ̀-ẹ̀rọ tí ń yọjáde kalẹ̀ — Personalised Intelligence, Synthetic (in)security àti Programmable finance — àti àwọn àmì ewu àkọ́kọ́ fún àwọn oníbàárà, ilé-iṣẹ́ àti ọjà. A ń tọ́ka sí gẹ́gẹ́ bí orísun ìdúró fún ìlànà fẹ́ktà mẹ́ta; ìtúpalẹ̀, ìlànà àmì-sí-ìbójútó, àti àwọn ìparí lókè jẹ́ ti òǹkọ̀wé fúnra rẹ̀.]
+- Ilé-iṣẹ́ Ìmúdàgbà ti Báńkì fún Ìsanwó Àgbáyé (BIS), 2026. *Iṣẹ́ Agorá àti ètò-ìtòlẹ́sẹẹsẹ ìwé-àkọsílẹ̀ ìṣọ̀kan* ⧉. [Àwọn àdánwò ìpinnu tí a sọ di àmì tí ó rékọjá ààlà tí ń ṣètìlẹ́yìn fún fẹ́ktà ìnáwó tí a lè ṣètò.]
+- Ìgbìmọ̀ Ìdúróṣinṣin Ìnáwó (FSB), 2026. *Sound Practices for the Responsible Adoption of AI* ⧉. [Ìlànà ìbójútó ti ewu aṣojú àti ọgbọ́n ti ara ẹni.]
+- ISO/IEC 42001:2023, *Information technology — Artificial intelligence — Management system* ⧉. [Ìpìlẹ̀ ìṣàkóso fún fẹ́ktà ọgbọ́n.]
 
-*Last reviewed July 2026. Original analysis; the FCA Technology Horizon Scan 2026 is cited as a source and is not reproduced. Licensed under CC-BY-4.0.*
+*Àyẹ̀wò ìkẹyìn July 2026. Ìtúpalẹ̀ ìpilẹ̀ṣẹ̀; ìwé FCA Technology Horizon Scan 2026 ni a tọ́ka sí gẹ́gẹ́ bí orísun, a kò sì tún un ṣe. A fún ní ìwé-àṣẹ lábẹ́ CC-BY-4.0.*
