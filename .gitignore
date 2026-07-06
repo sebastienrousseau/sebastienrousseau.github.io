@@ -118,3 +118,6 @@ workers/lang-router.bundled.js
 .pa11y-cache-manifest.json
 pa11y.json
 _data/pa11y-cache.json
+
+# --- corral-sync local state (timestamps only; regenerated on next sync) ---
+.corral-state.json
