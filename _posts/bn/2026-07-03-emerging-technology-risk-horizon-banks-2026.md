@@ -1,6 +1,6 @@
 ---
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
-banner_alt: "Abstract horizon of converging signal lines — AI, synthetic media, and programmable-money rails resolving over a banking skyline, evoking a supervisory scan of emerging-technology risk for financial services in 2026"
+banner_alt: "অভিসারী সংকেত রেখার একটি বিমূর্ত দিগন্ত — এআই, কৃত্রিম মিডিয়া ও প্রোগ্রামযোগ্য অর্থ রেল একটি ব্যাংকিং সিলুয়েটের উপরে দ্রবীভূত হচ্ছে, ২০২৬ সালে আর্থিক পরিষেবার জন্য উদীয়মান প্রযুক্তি ঝুঁকির একটি তত্ত্বাবধান স্ক্যান উদ্রেক করছে"
 banner_height: "1280"
 banner_width: "1920"
 banner: "https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp"
@@ -9,7 +9,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "July 3, 2026"
-description: "An original reading of the 2026 emerging-technology risk horizon for banks — personalised AI intelligence, synthetic financial crime, and programmable finance — with a signal-to-supervision framework, drawing on the FCA's Technology Horizon Scan 2026."
+description: "২০২৬ সালে ব্যাংকগুলির জন্য উদীয়মান প্রযুক্তির ঝুঁকি দিগন্তের একটি মৌলিক পাঠ — এআই-চালিত ব্যক্তিগতকৃত বুদ্ধিমত্তা, কৃত্রিম আর্থিক অপরাধ, ও প্রোগ্রামযোগ্য অর্থায়ন — একটি সংকেত-থেকে-তত্ত্বাবধান কাঠামোসহ, FCA-এর Technology Horizon Scan 2026-এর উপর ভিত্তি করে।"
 format-detection: "telephone=no"
 hreflang: "bn"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -35,9 +35,9 @@ rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
 schema: "FAQPage, Article"
-seo_title: "Reading the Emerging-Technology Risk Horizon for Banks in 2026"
+seo_title: "২০২৬ সালে ব্যাংকগুলির জন্য উদীয়মান প্রযুক্তির ঝুঁকি দিগন্ত পড়া"
 short_name: "sebastienrousseau"
-subtitle: "Three technology vectors — personalised intelligence, synthetic (in)security, and programmable finance — are converging on banking at once. A signal-to-supervision reading of what changes, and what boards should do before the risks arrive."
+subtitle: "তিনটি প্রযুক্তি ভেক্টর — ব্যক্তিগতকৃত বুদ্ধিমত্তা, কৃত্রিম (অ)নিরাপত্তা, ও প্রোগ্রামযোগ্য অর্থায়ন — একসাথে ব্যাংকিংয়ের উপর অভিসারিত হচ্ছে। কী বদলায়, এবং ঝুঁকি আসার আগে বোর্ডগুলির কী করা উচিত, তার একটি সংকেত-থেকে-তত্ত্বাবধান পাঠ।"
 tags: "emerging technology, horizon scanning, FCA, personalised intelligence, agentic AI, synthetic fraud, deepfakes, programmable finance, tokenisation, stablecoins, financial crime, consumer duty, banking regulation, operational resilience, risk signals"
 theme-color: "0, 83, 191"
 title: "Reading the Emerging-Technology Risk Horizon for Banks in 2026"
@@ -63,7 +63,7 @@ apple_touch_icon_sizes: "192x192"
 apple-mobile-web-app-capable: "yes"
 apple-mobile-web-app-status-bar-inset: "black"
 apple-mobile-web-app-status-bar-style: "black-translucent"
-apple-mobile-web-app-title: "Emerging-Tech Horizon 2026"
+apple-mobile-web-app-title: "প্রযুক্তি দিগন্ত ২০২৬"
 apple-touch-fullscreen: "yes"
 msapplication-navbutton-color: "0, 83, 191"
 twitter_card: "summary_large_image"
@@ -84,85 +84,81 @@ site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 ---
 
-<!-- translation-stub: replace this body in Claude Code -->
+# ২০২৬ সালে ব্যাংকগুলির জন্য উদীয়মান প্রযুক্তির ঝুঁকি দিগন্ত পড়া
 
-> _Translation pending — read the [English original](/2026-07-03-emerging-technology-risk-horizon-banks-2026/) while we localise._
+তত্ত্বাবধায়করা ভবিষ্যৎ নিয়ে যেভাবে কথা বলেন তাতে কিছু একটা বদলে গেছে। বছরের পর বছর অবস্থান ছিল প্রতিক্রিয়াশীল: একটি প্রযুক্তি আসে, একটি ক্ষতি প্রকাশ পায়, একটি নিয়ম অনুসরণ করে। ২০২৬ সালে সুর ভিন্ন। নিয়ন্ত্রকরা দিগন্ত *উচ্চস্বরে* স্ক্যান করছেন — উদীয়মান প্রযুক্তিগুলি কারও ক্ষতি হওয়ার আগে কীভাবে একত্রিত হতে পারে সে সম্পর্কে কাঠামোবদ্ধ, অবাধ্যতামূলক পাঠ প্রকাশ করে। যুক্তরাজ্যের Financial Conduct Authority-এর *Technology Horizon Scan 2026* সবচেয়ে স্পষ্ট উদাহরণ; এটি নিজেকে নিয়ন্ত্রকের এই ধরনের প্রথম বাহ্যিক প্রকাশনা হিসেবে বর্ণনা করে এবং তিনটি যুক্তিসঙ্গত উপায় উপস্থাপন করে যেগুলিতে উদীয়মান প্রযুক্তিগুলি ভোক্তা, ফার্ম ও বাজারের জন্য ফলাফল পুনর্গঠন করতে পারে।
 
-# Reading the Emerging-Technology Risk Horizon for Banks in 2026
+এই স্থানান্তর এর ভেতরের যেকোনো ভবিষ্যদ্বাণীর চেয়ে বেশি ভার বহন করে। যে নিয়ন্ত্রক প্রকাশ্যে দিগন্ত স্ক্যান করেন তিনি সংকেত দেন যে তত্ত্বাবধানের *মুহূর্ত* উজানে সরে যাচ্ছে — ক্ষতির পর প্রয়োগ থেকে ক্ষতির আগে প্রত্যাশার দিকে। ব্যাংকগুলির জন্য ব্যবহারিক প্রশ্ন আর «আমাদের কোন প্রযুক্তি গ্রহণ করা উচিত?» নয় বরং «আমরা কি সেই একই সংকেত পড়তে পারি যা আমাদের তত্ত্বাবধায়করা এখন পড়ছেন, এবং প্রথমে কাজ করতে পারি?» এই নিবন্ধটি সেই দিগন্তের একটি পাঠ: তিনটি প্রযুক্তি ভেক্টর একসাথে ব্যাংকিংয়ের উপর অভিসারিত হচ্ছে, এবং ঝুঁকিগুলি স্কেল হওয়ার আগে দুর্বল সংকেতকে তত্ত্বাবধান-মানের পদক্ষেপে রূপান্তরিত করার একটি কাঠামো।
 
-Something changed in how supervisors talk about the future. For years the posture was reactive: a technology arrives, harm surfaces, a rule follows. In 2026 the tone is different. Regulators are scanning the horizon *out loud* — publishing structured, non-binding readings of where emerging technologies might combine before anyone has been harmed. The UK Financial Conduct Authority's *Technology Horizon Scan 2026* is the clearest example, describing itself as the regulator's first external publication of its kind and setting out three plausible ways emerging technologies could reshape outcomes for consumers, firms, and markets.
-
-That shift matters more than any single prediction inside it. A regulator that scans the horizon in public is signalling that the *timing* of oversight is moving upstream — from post-harm enforcement toward pre-harm anticipation. For banks, the practical question is no longer "which technology should we adopt?" but "can we read the same signals our supervisors are now reading, and act on them first?" This piece is one reading of that horizon: three technology vectors converging on banking at once, and a framework for turning weak signals into supervisory-grade action before the risks scale.
-
-> **Executive summary / key takeaways**
+> **নির্বাহী সারসংক্ষেপ / মূল বিষয়**
 >
-> - **Three vectors, one arrival window.** Personalised AI intelligence, synthetic (in)security, and programmable finance are not sequential waves — they are converging on the same 2026–2028 window, and they amplify each other.
-> - **The harm curve moved left.** Supervisors are publishing horizon scans precisely because these technologies compress the distance between "novel" and "systemic." Reactive controls arrive too late by construction.
-> - **Signals beat forecasts.** You cannot predict which scenario lands; you can instrument for the *early signals* each one emits and pre-authorise the response.
-> - **Governance is the differentiator.** The banks that fare best will not be those with the most AI — they will be those that can *evidence* how they read, escalated, and contained an emerging risk. That is a board-level capability, not a lab experiment.
+> - **তিনটি ভেক্টর, একটি আগমন জানালা।** এআই-চালিত ব্যক্তিগতকৃত বুদ্ধিমত্তা, কৃত্রিম (অ)নিরাপত্তা, এবং প্রোগ্রামযোগ্য অর্থায়ন ক্রমিক তরঙ্গ নয় — তারা একই ২০২৬-২০২৮ জানালায় অভিসারিত হয় এবং পরস্পরকে জোরদার করে।
+> - **ক্ষতির বক্ররেখা বাঁদিকে সরেছে।** তত্ত্বাবধায়করা দিগন্ত স্ক্যান প্রকাশ করেন ঠিক এই কারণে যে এই প্রযুক্তিগুলি «নতুন» ও «পদ্ধতিগত»-এর মধ্যে দূরত্ব সংকুচিত করে। প্রতিক্রিয়াশীল নিয়ন্ত্রণ নির্মাণগতভাবেই অনেক দেরিতে আসে।
+> - **সংকেত পূর্বাভাসকে হারায়।** কোন দৃশ্যপট ঘটবে তা আপনি ভবিষ্যদ্বাণী করতে পারবেন না; প্রতিটি যে *প্রাথমিক সংকেত* নির্গত করে তার জন্য আপনি নিজেকে সজ্জিত করতে এবং প্রতিক্রিয়া পূর্ব-অনুমোদন করতে পারেন।
+> - **শাসন হল পার্থক্যকারী উপাদান।** যে ব্যাংকগুলি সবচেয়ে ভালো করবে তারা সবচেয়ে বেশি এআই-সম্পন্ন নয় — তারা হবে যারা *প্রমাণ* করতে পারে কীভাবে তারা একটি উদীয়মান ঝুঁকি পড়েছে, বৃদ্ধি করেছে ও নিয়ন্ত্রণ করেছে। এটি বোর্ড-স্তরের সক্ষমতা, পরীক্ষাগার পরীক্ষা নয়।
 
-## The three vectors, and why they converge
+## তিনটি ভেক্টর, এবং কেন তারা অভিসারিত হয়
 
-The instinct is to treat emerging technologies as a queue — deal with AI, then digital assets, then whatever follows. The horizon-scanning frame breaks that instinct: it insists the interesting risk lives in *combination*. Three vectors dominate the 2026 reading.
+প্রবৃত্তি উদীয়মান প্রযুক্তিগুলিকে একটি সারি হিসেবে বিবেচনা করে — এআই সামলাও, তারপর ডিজিটাল সম্পদ, তারপর যা আসে। দিগন্ত-স্ক্যান কাঠামো এই প্রবৃত্তি ভাঙে: এটি জোর দেয় যে আকর্ষণীয় ঝুঁকি *সংমিশ্রণে* নিহিত। তিনটি ভেক্টর ২০২৬-এর পাঠে আধিপত্য করে।
 
-**Personalised intelligence.** Widely available AI, combined with granular behavioural and financial data, lets systems tailor persuasion, pricing, and interaction to the individual in real time. The upside is genuine — delegated, agentic interactions that act on a consumer's behalf. The risk is that the same personalisation that serves a customer can be turned to exploit them: hyper-targeted pressure, opaque price discrimination, and agentic systems transacting faster than any human review loop. When the interface itself is optimising against the consumer's interest, "informed consent" becomes a fiction.
+**ব্যক্তিগতকৃত বুদ্ধিমত্তা।** ব্যাপকভাবে উপলব্ধ এআই, সূক্ষ্ম আচরণগত ও আর্থিক ডেটার সাথে মিলিত হয়ে, সিস্টেমগুলিকে প্ররোচনা, মূল্য নির্ধারণ ও মিথস্ক্রিয়া বাস্তব সময়ে ব্যক্তির সাথে খাপ খাওয়াতে দেয়। সম্ভাবনা বাস্তব — অর্পিত, এজেন্টিক মিথস্ক্রিয়া যা একজন ভোক্তার পক্ষে কাজ করে। ঝুঁকি হল যে একই ব্যক্তিগতকরণ যা একজন গ্রাহককে সেবা দেয় তা তাকে শোষণের দিকে ঘোরানো যেতে পারে: অতি-লক্ষ্যযুক্ত চাপ, অস্বচ্ছ মূল্য বৈষম্য, এবং যেকোনো মানব পর্যালোচনা লুপের চেয়ে দ্রুত লেনদেন করা এজেন্টিক সিস্টেম। যখন ইন্টারফেস নিজেই ভোক্তার স্বার্থের বিরুদ্ধে অপ্টিমাইজ করে, তখন «অবহিত সম্মতি» একটি কল্পকাহিনীতে পরিণত হয়।
 
-**Synthetic (in)security.** Generative models have industrialised the raw materials of financial crime — synthetic identities, voice and video deepfakes, fabricated documents, and automated social engineering at scale. The defensive assumptions of KYC, authentication, and fraud detection were built for a world where forging a convincing identity was expensive. That cost has collapsed. Synthetic crime does not merely increase fraud volume; it dissolves the evidentiary basis on which "who did this?" can be answered at all.
+**কৃত্রিম (অ)নিরাপত্তা।** জেনারেটিভ মডেলগুলি আর্থিক অপরাধের কাঁচামাল শিল্পায়িত করেছে — কৃত্রিম পরিচয়, কণ্ঠস্বর ও ভিডিও ডিপফেক, বানানো নথি, এবং মাত্রায় স্বয়ংক্রিয় সামাজিক প্রকৌশল। KYC, প্রমাণীকরণ ও জালিয়াতি সনাক্তকরণের প্রতিরক্ষামূলক অনুমানগুলি এমন একটি বিশ্বের জন্য ডিজাইন করা হয়েছিল যেখানে একটি বিশ্বাসযোগ্য পরিচয় জাল করা ব্যয়বহুল ছিল। সেই খরচ ধসে পড়েছে। কৃত্রিম অপরাধ কেবল জালিয়াতির পরিমাণ বাড়ায় না; এটি সেই প্রমাণভিত্তি দ্রবীভূত করে যার উপর «এটি কে করেছে?» উত্তর দেওয়া যায়।
 
-**Programmable finance.** Tokenised deposits, stablecoins, smart-contract settlement, and shared ledgers promise to reshape financial infrastructure toward interoperable, programmable economies. The growth case is real — atomic settlement, embedded compliance, new liquidity. The risk is that programmability moves control logic out of institutions and into code that executes without a human in the loop, across jurisdictions, at machine speed, and often outside the perimeter a supervisor can see.
+**প্রোগ্রামযোগ্য অর্থায়ন।** টোকেনকৃত আমানত, স্থিতিমুদ্রা, স্মার্ট-চুক্তি নিষ্পত্তি, এবং ভাগ করা খতিয়ান আর্থিক অবকাঠামোকে আন্তঃক্রিয়াশীল, প্রোগ্রামযোগ্য অর্থনীতির দিকে পুনর্গঠনের প্রতিশ্রুতি দেয়। বৃদ্ধির ক্ষেত্র বাস্তব — পারমাণবিক নিষ্পত্তি, অন্তর্নিহিত সম্মতি, নতুন তারল্য। ঝুঁকি হল যে প্রোগ্রামযোগ্যতা নিয়ন্ত্রণ যুক্তিকে প্রতিষ্ঠানের বাইরে, এমন কোডে সরিয়ে দেয় যা লুপে মানুষ ছাড়াই সম্পাদিত হয়, এখতিয়ার জুড়ে, মেশিন গতিতে, এবং প্রায়শই একজন তত্ত্বাবধায়ক দেখতে পারেন এমন পরিসীমার বাইরে।
 
-Why do they converge rather than queue? Because each one lowers the cost of the others' failure modes. Personalised intelligence makes synthetic attacks more targeted. Synthetic identity makes programmable-finance rails easier to abuse. Programmable rails give agentic systems somewhere to act autonomously and irreversibly. A weak signal in one vector is a leading indicator in the others.
+তারা সারিবদ্ধ হওয়ার পরিবর্তে কেন অভিসারিত হয়? কারণ প্রত্যেকে অন্যদের ব্যর্থতা-ধরনের খরচ কমায়। ব্যক্তিগতকৃত বুদ্ধিমত্তা কৃত্রিম আক্রমণকে আরও লক্ষ্যযুক্ত করে। কৃত্রিম পরিচয় প্রোগ্রামযোগ্য অর্থায়নের রেলকে অপব্যবহার করা সহজ করে। প্রোগ্রামযোগ্য রেল এজেন্টিক সিস্টেমকে স্বায়ত্তশাসিত ও অপরিবর্তনীয়ভাবে কাজ করার স্থান দেয়। একটি ভেক্টরে একটি দুর্বল সংকেত অন্যগুলিতে একটি অগ্রণী সূচক।
 
-## The harm curve moved left
+## ক্ষতির বক্ররেখা বাঁদিকে সরেছে
 
-The reason supervisors are publishing scans — rather than waiting for complaints — is structural. These technologies compress the interval between *novel* and *systemic*. A deepfake authorisation scam, an agentic mis-selling loop, or a stablecoin depeg propagates at network speed, not quarterly-review speed. By the time a traditional control fires — a threshold breach, an audit finding, a regulatory return — the harm has already scaled.
+তত্ত্বাবধায়করা কেন অভিযোগের অপেক্ষা না করে স্ক্যান প্রকাশ করেন — তার কারণ কাঠামোগত। এই প্রযুক্তিগুলি *নতুন* ও *পদ্ধতিগত*-এর মধ্যে ব্যবধান সংকুচিত করে। একটি ডিপফেক অনুমোদন প্রতারণা, একটি এজেন্টিক ভুল-বিক্রয় লুপ, বা একটি স্থিতিমুদ্রার বিচ্ছেদ নেটওয়ার্ক গতিতে ছড়ায়, ত্রৈমাসিক পর্যালোচনা গতিতে নয়। যতক্ষণে একটি প্রথাগত নিয়ন্ত্রণ সক্রিয় হয় — একটি অতিক্রান্ত সীমা, একটি নিরীক্ষা অনুসন্ধান, একটি নিয়ন্ত্রক প্রতিবেদন — ততক্ষণে ক্ষতি ইতিমধ্যে স্কেল করে ফেলেছে।
 
-That is the quiet thesis inside every horizon scan: **anticipation is now a control, not a courtesy.** A bank whose risk function only detects emerging-technology harm after it materialises is, by construction, always late. The differentiator is the ability to read the horizon at the same cadence the technology moves.
+এটি প্রতিটি দিগন্ত স্ক্যানের হৃদয়ে নীরব থিসিস: **প্রত্যাশা এখন একটি নিয়ন্ত্রণ, সৌজন্য নয়।** যে ব্যাংকের ঝুঁকি ফাংশন উদীয়মান প্রযুক্তি ক্ষতি কেবল তার বাস্তবায়নের পরেই সনাক্ত করে, তা নির্মাণগতভাবেই সর্বদা দেরিতে। পার্থক্যকারী উপাদান হল প্রযুক্তি যে গতিতে চলে সেই একই গতিতে দিগন্ত পড়ার সক্ষমতা।
 
-## From signals to supervision: a reading framework
+## সংকেত থেকে তত্ত্বাবধান: একটি পাঠ কাঠামো
 
-You cannot forecast which scenario lands. You *can* instrument for the early signals each vector emits and pre-authorise the response. Four moves turn a horizon scan from a reading exercise into an operating capability.
+কোন দৃশ্যপট ঘটবে তা আপনি পূর্বাভাস দিতে পারবেন না। প্রতিটি ভেক্টর যে প্রাথমিক সংকেত নির্গত করে তার জন্য আপনি নিজেকে সজ্জিত করতে *পারেন* এবং প্রতিক্রিয়া পূর্ব-অনুমোদন করতে পারেন। চারটি পদক্ষেপ একটি দিগন্ত স্ক্যানকে একটি পাঠ অনুশীলন থেকে একটি পরিচালন সক্ষমতায় রূপান্তরিত করে।
 
-1. **Name the signals, per vector.** For each vector, define the concrete leading indicators you will watch — a rise in authenticated-but-anomalous transactions (synthetic security), agentic sessions acting outside expected parameters (personalised intelligence), or settlement finality dependent on third-party contract code (programmable finance). A signal you have not named in advance is a signal you will rationalise away in the moment.
-2. **Set the escalation trigger before the event.** Decide, now, what movement in each signal forces a decision — and who owns it. The failure mode is not missing the signal; it is seeing it and having no pre-agreed threshold that compels action.
-3. **Pre-authorise the containment.** The response to a fast-moving emerging risk cannot wait for a committee to convene. Rehearse the circuit-breakers — pausing an agentic channel, tightening an authentication gate, halting settlement on a suspect rail — and pre-authorise them so they can fire at machine speed.
-4. **Evidence the reading.** Record what you watched, what moved, what you decided, and why. When a supervisor asks how you anticipated a risk, the defensible answer is a documented reading trail — not a retrospective story. This is where the horizon scan becomes auditable governance.
+1. **সংকেতগুলির নাম দিন, প্রতি ভেক্টর।** প্রতিটি ভেক্টরের জন্য, আপনি যে সুনির্দিষ্ট অগ্রণী সূচকগুলি পর্যবেক্ষণ করবেন তা সংজ্ঞায়িত করুন — প্রমাণীকৃত কিন্তু অস্বাভাবিক লেনদেনে বৃদ্ধি (কৃত্রিম নিরাপত্তা), প্রত্যাশিত পরামিতির বাইরে কাজ করা এজেন্টিক সেশন (ব্যক্তিগতকৃত বুদ্ধিমত্তা), বা তৃতীয়-পক্ষ চুক্তি কোডের উপর নির্ভরশীল নিষ্পত্তি চূড়ান্ততা (প্রোগ্রামযোগ্য অর্থায়ন)। যে সংকেতের নাম আপনি আগে দেননি তা এমন একটি সংকেত যা আপনি সেই মুহূর্তে যুক্তিযুক্ত করে ফেলবেন।
+2. **ঘটনার আগে বৃদ্ধি ট্রিগার নির্ধারণ করুন।** এখনই সিদ্ধান্ত নিন কোন সংকেতের কোন গতি একটি সিদ্ধান্ত বাধ্য করে — এবং কে এর মালিক। ব্যর্থতা-ধরন সংকেত মিস করা নয়; এটি একটি পূর্ব-সম্মত সীমা ছাড়াই এটি দেখা যা পদক্ষেপে বাধ্য করে।
+3. **নিয়ন্ত্রণ পূর্ব-অনুমোদন করুন।** একটি দ্রুত-বিকশিত উদীয়মান ঝুঁকির প্রতিক্রিয়া একটি কমিটি ডাকার অপেক্ষা করতে পারে না। সার্কিট-ব্রেকারগুলি মহড়া দিন — একটি এজেন্টিক চ্যানেল স্থগিত করা, একটি প্রমাণীকরণ গেট কঠোর করা, একটি সন্দেহজনক রেলে নিষ্পত্তি বন্ধ করা — এবং সেগুলি পূর্ব-অনুমোদন করুন যাতে সেগুলি মেশিন গতিতে সক্রিয় হয়।
+4. **পাঠ নথিভুক্ত করুন।** আপনি কী পর্যবেক্ষণ করেছেন, কী সরেছে, কী সিদ্ধান্ত নিয়েছেন এবং কেন তা রেকর্ড করুন। যখন একজন তত্ত্বাবধায়ক জিজ্ঞাসা করেন আপনি কীভাবে একটি ঝুঁকি প্রত্যাশা করেছিলেন, তখন প্রতিরক্ষণযোগ্য উত্তর হল একটি নথিভুক্ত পাঠ চিহ্ন — একটি পূর্ববর্তী বর্ণনা নয়। এখানেই দিগন্ত স্ক্যান নিরীক্ষণযোগ্য শাসনে পরিণত হয়।
 
-The through-line: emerging-technology risk is not managed by adopting less technology, and it is not managed by predicting the future. It is managed by making anticipation *repeatable and evidenced*.
+মূল সূত্র: উদীয়মান প্রযুক্তি ঝুঁকি কম প্রযুক্তি গ্রহণ করে পরিচালিত হয় না, ভবিষ্যৎ ভবিষ্যদ্বাণী করেও নয়। এটি প্রত্যাশাকে *পুনরাবৃত্তিযোগ্য ও প্রমাণিত* করে পরিচালিত হয়।
 
-## What changes for the boardroom
+## বোর্ডের জন্য কী বদলায়
 
-For senior management, three shifts follow directly.
+জ্যেষ্ঠ ব্যবস্থাপনার জন্য, তিনটি স্থানান্তর সরাসরি অনুসরণ করে।
 
-- **Move horizon scanning inside enterprise risk.** Treat it as a standing function with named signal owners across the three vectors, not an innovation-team side project. The supervisor has made scanning a first-class activity; the board should mirror it.
-- **Fund anticipation, not just detection.** Detection tooling answers "did harm occur?" Anticipation tooling answers "is a harm forming?" The second is where the 2026 risks are won or lost, and it is chronically underfunded relative to its blast radius.
-- **Make the reading a board artefact.** A quarterly horizon reading — signals watched, thresholds, decisions taken — belongs in the board pack alongside capital and liquidity. It is the evidence that the institution can keep pace with a supervisor that now reads the same horizon.
+- **দিগন্ত স্ক্যানিংকে উদ্যোগ ঝুঁকি ব্যবস্থাপনার ভেতরে আনুন।** এটিকে তিনটি ভেক্টর জুড়ে নামযুক্ত সংকেত-মালিকসহ একটি স্থায়ী ফাংশন হিসেবে বিবেচনা করুন, উদ্ভাবন দলের একটি পার্শ্ব প্রকল্প হিসেবে নয়। তত্ত্বাবধায়ক স্ক্যানিংকে একটি প্রথম-শ্রেণীর কার্যক্রম বানিয়েছেন; বোর্ডের এটি প্রতিফলিত করা উচিত।
+- **প্রত্যাশাকে অর্থায়ন করুন, শুধু সনাক্তকরণ নয়।** সনাক্তকরণ সরঞ্জাম উত্তর দেয় «একটি ক্ষতি ঘটেছে কি?»। প্রত্যাশা সরঞ্জাম উত্তর দেয় «একটি ক্ষতি তৈরি হচ্ছে কি?»। দ্বিতীয়টিতে ২০২৬-এর ঝুঁকি জেতা বা হারা হয়, এবং এটি তার প্রভাব-ব্যাসার্ধের তুলনায় দীর্ঘস্থায়ীভাবে অর্থায়নহীন।
+- **পাঠকে একটি বোর্ড নিদর্শন বানান।** একটি ত্রৈমাসিক দিগন্ত পাঠ — পর্যবেক্ষিত সংকেত, সীমা, গৃহীত সিদ্ধান্ত — মূলধন ও তারল্যের পাশে বোর্ড নথিতে অন্তর্গত। এটি প্রমাণ যে প্রতিষ্ঠান এমন একজন তত্ত্বাবধায়কের সাথে তাল মিলিয়ে চলতে পারে যিনি এখন একই দিগন্ত পড়েন।
 
-## The regulatory posture is the tell
+## নিয়ন্ত্রক অবস্থানই সংকেত
 
-The deepest signal in the 2026 landscape is not any one technology — it is that regulators have chosen to publish their horizon reading at all. A scan is an invitation: it tells the market where oversight attention is moving *before* the rules arrive. The firms that respond by building their own reading capability will help shape what binding supervision eventually looks like. The firms that wait for the rule will inherit whatever the fastest-moving harm forces regulators to write.
+২০২৬-এর দৃশ্যপটে গভীরতম সংকেত কোনো নির্দিষ্ট প্রযুক্তি নয় — এটি হল যে নিয়ন্ত্রকরা তাদের দিগন্ত পাঠ প্রকাশ করাই বেছে নিয়েছেন। একটি স্ক্যান একটি আমন্ত্রণ: এটি বাজারকে বলে তত্ত্বাবধানের মনোযোগ কোথায় সরছে, নিয়ম আসার *আগে*। যে ফার্মগুলি নিজেদের পাঠ সক্ষমতা তৈরি করে সাড়া দেয় তারা শেষ পর্যন্ত বাধ্যতামূলক তত্ত্বাবধান কেমন দেখায় তা আকার দিতে সাহায্য করবে। যে ফার্মগুলি নিয়মের অপেক্ষা করে তারা উত্তরাধিকার সূত্রে পাবে যা দ্রুততম ক্ষতি নিয়ন্ত্রকদের লিখতে বাধ্য করে।
 
-Emerging technology has always been framed as an adoption question. In 2026 it is a *reading* question. The banks that can read the horizon — across personalised intelligence, synthetic security, and programmable finance — and evidence how they act on it, will find that anticipation is not the constraint on innovation. It is the licence for it.
+উদীয়মান প্রযুক্তি সর্বদা একটি গ্রহণ প্রশ্ন হিসেবে গঠিত হয়েছে। ২০২৬-এ এটি একটি *পাঠ* প্রশ্ন। যে ব্যাংকগুলি দিগন্ত পড়তে পারে — ব্যক্তিগতকৃত বুদ্ধিমত্তা, কৃত্রিম নিরাপত্তা ও প্রোগ্রামযোগ্য অর্থায়ন জুড়ে — এবং প্রমাণ করতে পারে তারা সেই অনুসারে কীভাবে কাজ করে, তারা আবিষ্কার করবে যে প্রত্যাশা উদ্ভাবনের সীমাবদ্ধতা নয়। এটি এর লাইসেন্স।
 
-## Frequently asked questions
+## প্রায়শই জিজ্ঞাসিত প্রশ্ন
 
-**Is this a prediction of what will happen?**
-No. Like the horizon scans it draws on, this is a reading of *plausible* combinations and the early signals they emit — not a forecast. Its value is preparation, not prophecy: naming the signals and pre-authorising the response so a bank is not improvising when one of them moves.
+**এটি কি কী ঘটবে তার একটি ভবিষ্যদ্বাণী?**
+না। যে দিগন্ত স্ক্যানের উপর এটি নির্ভর করে সেগুলির মতো, এটি *যুক্তিসঙ্গত* সংমিশ্রণ ও সেগুলি যে প্রাথমিক সংকেত নির্গত করে তার একটি পাঠ — একটি পূর্বাভাস নয়। এর মূল্য প্রস্তুতি, ভবিষ্যদ্বাণী নয়: সংকেতগুলির নাম দেওয়া এবং প্রতিক্রিয়া পূর্ব-অনুমোদন করা যাতে একটি ব্যাংক তাৎক্ষণিক সমাধান না করে যখন একটি নড়ে।
 
-**Why treat the three vectors together rather than separately?**
-Because their risk lives in combination. Personalised intelligence sharpens synthetic attacks; synthetic identity abuses programmable rails; programmable rails give agentic systems autonomous, irreversible reach. Managing them in silos misses the amplification that makes them systemic.
+**তিনটি ভেক্টরকে আলাদাভাবে না করে একসাথে কেন সামলাবেন?**
+কারণ তাদের ঝুঁকি সংমিশ্রণে নিহিত। ব্যক্তিগতকৃত বুদ্ধিমত্তা কৃত্রিম আক্রমণকে তীক্ষ্ণ করে; কৃত্রিম পরিচয় প্রোগ্রামযোগ্য রেলকে অপব্যবহার করে; প্রোগ্রামযোগ্য রেল এজেন্টিক সিস্টেমকে স্বায়ত্তশাসিত, অপরিবর্তনীয় নাগাল দেয়। সাইলোতে সেগুলি পরিচালনা করা সেই পরিবর্ধন মিস করে যা সেগুলিকে পদ্ধতিগত করে।
 
-**What is the single most useful thing a bank can do first?**
-Name the leading signals per vector and set the escalation trigger *before* an event, with a named owner. Most institutions can already detect harm; few have pre-agreed what movement in an emerging-risk signal compels a decision, or who makes it.
+**একটি ব্যাংক প্রথমে সবচেয়ে উপযোগী কী করতে পারে?**
+প্রতি ভেক্টর অগ্রণী সংকেতগুলির নাম দেওয়া এবং একটি ঘটনার *আগে* বৃদ্ধি ট্রিগার নির্ধারণ করা, একজন নামযুক্ত মালিকসহ। অধিকাংশ প্রতিষ্ঠান ইতিমধ্যে ক্ষতি সনাক্ত করতে পারে; খুব কম পূর্ব-সম্মত হয়েছে কোন উদীয়মান-ঝুঁকি সংকেতের কোন গতি একটি সিদ্ধান্ত বাধ্য করে বা কে এটি নেয়।
 
-**How does horizon scanning relate to existing obligations?**
-It operationalises them. Consumer-duty, operational-resilience, model-risk, and financial-crime obligations all assume a firm can anticipate and contain harm. A documented horizon reading is the evidence that the anticipation actually happens — turning a principle into an auditable control.
+**দিগন্ত স্ক্যানিং বিদ্যমান বাধ্যবাধকতার সাথে কীভাবে সম্পর্কিত?**
+এটি সেগুলিকে পরিচালনাযোগ্য করে। ভোক্তা কর্তব্য, পরিচালন স্থিতিস্থাপকতা, মডেল ঝুঁকি ও আর্থিক অপরাধ বাধ্যবাধকতা সবই ধরে নেয় যে একটি ফার্ম ক্ষতি প্রত্যাশা ও নিয়ন্ত্রণ করতে পারে। একটি নথিভুক্ত দিগন্ত পাঠ প্রমাণ যে প্রত্যাশা সত্যিই ঘটে — একটি নীতিকে একটি নিরীক্ষণযোগ্য নিয়ন্ত্রণে রূপান্তরিত করে।
 
-## Sources and further reading
+## সূত্র ও আরও পাঠ
 
-- Financial Conduct Authority (FCA), 2026. *Technology Horizon Scan 2026* ⧉. [The FCA's first external horizon-scanning publication; sets out three plausible emerging-technology scenarios — Personalised Intelligence, Synthetic (in)security, and Programmable finance — and early risk signals for consumers, firms and markets. Cited as the anchor source for the three-vector framing; the analysis, signal-to-supervision framework and conclusions above are the author's own.]
-- Bank for International Settlements (BIS) Innovation Hub, 2026. *Project Agorá and the unified-ledger agenda* ⧉. [Cross-border tokenised settlement experiments underpinning the programmable-finance vector.]
-- Financial Stability Board (FSB), 2026. *Sound Practices for the Responsible Adoption of AI* ⧉. [Supervisory framing for agentic and personalised-intelligence risk.]
-- ISO/IEC 42001:2023, *Information technology — Artificial intelligence — Management system* ⧉. [Governance baseline for the intelligence vector.]
+- Financial Conduct Authority (FCA), 2026. *Technology Horizon Scan 2026* ⧉. [FCA-এর প্রথম বাহ্যিক দিগন্ত-স্ক্যানিং প্রকাশনা; উদীয়মান প্রযুক্তির তিনটি যুক্তিসঙ্গত দৃশ্যপট উপস্থাপন করে — Personalised Intelligence, Synthetic (in)security ও Programmable finance — এবং ভোক্তা, ফার্ম ও বাজারের জন্য প্রাথমিক ঝুঁকি সংকেত। তিন-ভেক্টর কাঠামোর জন্য একটি নোঙর উৎস হিসেবে উদ্ধৃত; উপরের বিশ্লেষণ, সংকেত-থেকে-তত্ত্বাবধান কাঠামো ও উপসংহার লেখকের নিজস্ব।]
+- আন্তর্জাতিক নিষ্পত্তি ব্যাংক (BIS) উদ্ভাবন কেন্দ্র, 2026. *প্রকল্প Agorá ও একীভূত খতিয়ান কর্মসূচি* ⧉. [সীমানা-পার টোকেনকৃত নিষ্পত্তি পরীক্ষা যা প্রোগ্রামযোগ্য অর্থায়ন ভেক্টরকে সমর্থন করে।]
+- আর্থিক স্থিতিশীলতা বোর্ড (FSB), 2026. *Sound Practices for the Responsible Adoption of AI* ⧉. [এজেন্টিক ও ব্যক্তিগতকৃত-বুদ্ধিমত্তা ঝুঁকির তত্ত্বাবধান কাঠামো।]
+- ISO/IEC 42001:2023, *Information technology — Artificial intelligence — Management system* ⧉. [বুদ্ধিমত্তা ভেক্টরের জন্য শাসন ভিত্তি।]
 
-*Last reviewed July 2026. Original analysis; the FCA Technology Horizon Scan 2026 is cited as a source and is not reproduced. Licensed under CC-BY-4.0.*
+*সর্বশেষ পর্যালোচনা জুলাই ২০২৬। মৌলিক বিশ্লেষণ; FCA Technology Horizon Scan 2026 একটি উৎস হিসেবে উদ্ধৃত এবং পুনরুৎপাদিত নয়। CC-BY-4.0-এর অধীনে লাইসেন্সপ্রাপ্ত।*
