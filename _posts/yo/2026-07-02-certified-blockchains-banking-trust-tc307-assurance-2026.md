@@ -1,6 +1,6 @@
 ---
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
-banner_alt: "Abstract distributed-ledger lattice resolving into a certified audit spine — visualising the shift from retrospective entity audits to continuous, cryptographically-verifiable blockchain assurance for wholesale banking"
+banner_alt: "Àwọ̀n ìwé-àkọsílẹ̀ pínpín aláìlẹ́ye tí ó ń di ẹ̀yìn ìdúró àyẹ̀wò tí a fọwọ́sí — ó ń ṣàfihàn ìyípadà láti àwọn àyẹ̀wò ẹ̀yìn-ọ̀nà tí ó dá lórí ilé-iṣẹ́ sí ìdánilójú blockchain tí ó ń tẹ̀síwájú tí a lè fọwọ́sí lọ́nà ìṣírò fún ìfowópamọ́ oníṣòwò-nlá"
 banner_height: "1280"
 banner_width: "1920"
 banner: "https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp"
@@ -9,7 +9,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "July 2, 2026"
-description: "The 2026 Certified Blockchain Index gives banks a 5-level Capability Maturity Model to certify distributed-ledger governance, consensus integrity, cryptography, smart-contract assurance, and audit observability against DORA, CPMI-IOSCO PFMI, ISO/IEC TC 307, ISO 42001 and Basel III."
+description: "Àtọ́ka Blockchain tí a Fọwọ́sí 2026 ń fún àwọn báńkì ní Àwòṣe Ìdàgbà Agbára onípele-márùn-ún láti fọwọ́sí ìṣàkóso ìwé-àkọsílẹ̀ pínpín, ìdúróṣinṣin ìfohùnṣọ̀kan, ìṣírò, ìdánilójú àdéhùn ọlọ́gbọ́n, àti agbára-àkíyèsí àyẹ̀wò ní ìlòdì sí DORA, PFMI ti CPMI-IOSCO, ISO/IEC TC 307, ISO 42001, àti Basel III."
 format-detection: "telephone=no"
 hreflang: "yo"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -35,9 +35,9 @@ rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
 schema: "FAQPage, Article"
-seo_title: "From Evidence to Truth: Certified Blockchains and Banking Trust"
+seo_title: "Láti ẹ̀rí dé òtítọ́: àwọn blockchain tí a fọwọ́sí àti ìgbẹ́kẹ̀lé ìfowópamọ́"
 short_name: "sebastienrousseau"
-subtitle: "Why certifiable ledger assurance — not immutability alone — will define institutional trust in 2026: scoring governance, consensus integrity, cryptography, smart contracts, and observability against DORA, ISO/IEC TC 307, and CPMI-IOSCO PFMI."
+subtitle: "Ìdí tí ìdánilójú ìwé-àkọsílẹ̀ tí a lè fọwọ́sí — kì í ṣe àìlèyípadà nìkan — yóò fi ṣàlàyé ìgbẹ́kẹ̀lé ilé-iṣẹ́ ní 2026: fífi ààmì sí ìṣàkóso, ìdúróṣinṣin ìfohùnṣọ̀kan, ìṣírò, àwọn àdéhùn ọlọ́gbọ́n, àti agbára-àkíyèsí ní ìlòdì sí DORA, ISO/IEC TC 307, àti PFMI ti CPMI-IOSCO."
 tags: "agentic AI, AI governance, banking, autonomy tiers, model risk, SR 11-7, EU AI Act, FSB, IOSCO, MAS, IMDA, control plane, audit log, DORA, McKinsey, Stanford AI Index"
 theme-color: "0, 83, 191"
 title: "The Agentic AI Index for Banks in 2026: Measuring Autonomy"
@@ -63,7 +63,7 @@ apple_touch_icon_sizes: "192x192"
 apple-mobile-web-app-capable: "yes"
 apple-mobile-web-app-status-bar-inset: "black"
 apple-mobile-web-app-status-bar-style: "black-translucent"
-apple-mobile-web-app-title: "Certified Blockchains 2026"
+apple-mobile-web-app-title: "Blockchain tí a fọwọ́sí 2026"
 apple-touch-fullscreen: "yes"
 msapplication-navbutton-color: "0, 83, 191"
 twitter_card: "summary_large_image"
@@ -84,103 +84,99 @@ site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 ---
 
-<!-- translation-stub: replace this body in Claude Code -->
+# Láti ẹ̀rí dé òtítọ́: ìdí tí àwọn blockchain tí a ti fọwọ́sí yóò fi ṣàlàyé sáà tuntun ti ìgbẹ́kẹ̀lé ìfowópamọ́
 
-> _Translation pending — read the [English original](/2026-07-02-certified-blockchains-banking-trust-tc307-assurance-2026/) while we localise._
+## Àkópọ̀ ọ̀gbọ́n (kókó pàtàkì)
 
-# From Evidence to Truth: Why Certified Blockchains Will Define the Next Era of Banking Trust
+Ìfowópamọ́ oníṣòwò-nlá àti àwọn ìdúnàdúrà kárí-ayé ní ọdún 2026 wà ní ibi ìyípadà pàtàkì nínú ìtàn. Bí àwọn iṣẹ́ ìnáwó ṣe ń yí padà sí àwọn nẹ́tíwọ́ọ̀kì ìsédédé onígbà-gidi tí ó jẹ́ oní-dígítà láti orísun, tí òye àtọwọ́dá sì ń mú àìdánilójú oníṣeéṣe wọlé, àwọn àwòṣe ìdánilójú àtọwọ́dọ́wọ́ tí ó jẹ́ ẹ̀yìn-ọ̀nà (bíi àyẹ̀wò dídúró tí ó dá lórí ilé-iṣẹ́) kò lè bójú tó àwọn ìbéèrè òde-òní fún ìṣàkóso ewu àti àwọn ojúṣe ìṣàkóso ohun-ìní mọ́.
 
-## Executive Summary & Strategic Context (TL;DR)
+Ìgbìmọ̀ Ìmọ̀-ẹ̀rọ ISO/IEC TC 307 ti gbé ìpìlẹ̀ tí a ṣe déédé kalẹ̀ fún àwọn ìmọ̀-ẹ̀rọ ìwé-àkọsílẹ̀ pínpín. Ṣùgbọ́n, ìtẹ́wọ́gbà ilé-iṣẹ́ tòótọ́ béèrè fún ìyípadà láti ìtọ́sọ́nà oníṣàpẹẹrẹ sí ìdánilójú blockchain oníṣèlànà tí a lè fọwọ́sí lọ́tọ̀ọ̀tọ̀. Nípa fífi ààmì sí ìṣàkóso ìwé-àkọsílẹ̀, ìdúróṣinṣin ìfohùnṣọ̀kan, ààbò àdéhùn ọlọ́gbọ́n, àti ìyára ìṣírò ní ìlòdì sí Àwòṣe Ìdàgbà Agbára (CMM) onípele-márùn-ún tí ó le, àwọn báńkì lè yí padà láti àwọn àròsọ tí ó tú ká tí ó sì jẹ́ ti oníṣòwò kan-kan sí òtítọ́ ìnáwó tí a lè fọwọ́sí tí ìgbìmọ̀ olùdarí sì lè ṣàyẹ̀wò.
 
-Wholesale banking and global transactions in 2026 sit at a historic inflection point. As financial services transition to natively digital, real-time clearing networks, and as artificial intelligence introduces probabilistic non-determinism, the traditional analogue, retrospective assurance models (such as static entity-based audits) fail to meet modern risk management and fiduciary demands.
+## Àwọn kókó pàtàkì
 
-ISO/IEC Technical Committee 307 (TC 307) has established a standardized baseline for distributed ledger technologies. However, true corporate and institutional adoption requires shifting from descriptive guidance to prescriptive, independently certifiable blockchain assurance. By scoring ledger governance, consensus integrity, smart contract safety, and cryptographic agility against a strict 5-level Capability Maturity Model (CMM), banks can move from patchwork, vendor-specific assumptions to certifiable, board-auditable financial truth.
+* **Àlàfo ìforígbárí ìṣàkóso ohun-ìní**: lónìí a lè fọwọ́sí báńkì (Basel III), àwọsánmà (ISO 27001), àti àwọn ètò ìṣàkóso AI (ISO 42001), ṣùgbọ́n a kò tíì lè fọwọ́sí ìwé-àkọsílẹ̀ pínpín tí ó ń pinnu ohun tí ó jẹ́ òtítọ́ síwájú síi. Àìdọ́gba yìí jẹ́ àìlera iṣẹ́ pàtàkì.  
+* **DORA ń fipá mú ojúṣe ìṣàkóso ohun-ìní tààrà**: lábẹ́ Abala 5 ti DORA, àwọn ìgbìmọ̀ olùdarí báńkì ń gbé ojúṣe ẹnìkọ̀ọ̀kan tààrà tí a kò lè fún ẹlòmíràn nípa ìdúróṣinṣin iṣẹ́ ti gbogbo ìṣàmúlò ẹlẹ́ẹ̀kẹta àti ìwé-àkọsílẹ̀, pẹ̀lú ìjìyà ẹnìkọ̀ọ̀kan tí ó le lábẹ́ ìlànà SM&CR fún àwọn ìkùnà.  
+* **Ẹ̀yìn ìdúró àyẹ̀wò ti AI**: níbi tí ẹ̀kọ́ ẹ̀rọ ti ń mú àwọn àbájáde oníṣeéṣe tí a kò lè tún ṣe jáde, blockchain tí a fọwọ́sí ń pèsè gbígba ipò tí ó dájú. Kíkọ àwọn ẹ̀yà àwòṣe, àwọn ìwọlé, àti àwọn ìpinnu ìfọwọ́sí sórí ẹ̀wọ̀n bójú tó ISO 42001 àti àwọn ìlànà ìṣàkóso ewu àwòṣe.  
+* **Àtọ́ka Blockchain tí a Fọwọ́sí**: àtọ́ka yìí ń ṣe ìṣàkóso, ìfohùnṣọ̀kan, àwọn àdéhùn ọlọ́gbọ́n, àti agbára-àkíyèsí ní déédé sí káàdì-àmì tí a lè fọwọ́sí tí ó sì ṣetán fún àyẹ̀wò lórí ìwọ̀n CMM láti 0 sí 5, ó ń tú àwọn ìwọ̀n iṣẹ́-ẹ̀rọ sí àwọn gbólóhùn ìfẹ́ ewu tí ìgbìmọ̀ fọwọ́sí.
 
-## Key Takeaways
+## 01. Àlàfo ìforígbárí ìṣàkóso ohun-ìní nínú ìfowópamọ́ oní-dígítà
 
-* **The Fiduciary Frictional Gap**: We can currently certify the bank (Basel III), the cloud (ISO 27001), and the AI governance systems (ISO 42001), but we cannot yet certify the distributed ledger that increasingly determines what is true. This asymmetry is a major operational vulnerability.  
-* **DORA Enforces Direct Fiduciary Responsibility**: Under DORA Article 5, bank boards of directors bear direct, non-delegable personal liability for the operational resilience of all third-party and ledger deployments, with severe SM&CR personal penalties for failures.  
-* **The AI Audit Spine**: While machine learning introduces non-reproducible, probabilistic outcomes, a certified blockchain provides deterministic state capture. Recording model versions, inputs, and validation decisions on-chain satisfies ISO 42001 and Model Risk Management standards.  
-* **The Certified Blockchain Index**: This index formalizes governance, consensus, smart contracts, and observability into a verifiable, audit-ready scorecard on a 0-to-5 CMM scale, translating engineering metrics into board-approved Risk Appetite Statements.
+Nínú ìfowópamọ́ ìbílẹ̀, ìgbẹ́kẹ̀lé jẹ́ oníbáṣepọ̀, ti ilé-iṣẹ́, àti ẹ̀yìn-ọ̀nà. Ó gbáralé àwọn olùyẹ̀wò ẹlẹ́ẹ̀kẹta òmìnira tí ó ń ṣàyẹ̀wò ipò ìnáwó ní àwọn àkókò tí a gbé kalẹ̀, tí ó ń mú àwọn ìyàtọ̀ láàrin àwọn ilé-ìpamọ́ ìwé-àkọsílẹ̀ onípanapọ̀ dọ́gba. Nínú àwọn ọjà onígbà-gidi tí API ń darí ti 2026, àwòṣe yìí ń mú àwọn ìdádúró tí ó ń dí ọ̀nà àti àwọn ewu ìṣètò wọlé.
 
-## 01. The Fiduciary Frictional Gap in Digital Banking
+Nígbà tí àwọn ìdúnàdúrà bá ṣe ìsédédé lẹ́sẹ̀kẹsẹ̀, tí a bá ń ṣàkóso àwọn adágún omi-owó inú-ọjọ́ ní onídìde nípasẹ̀ àwọn ẹnu-ọ̀nà API, tí ẹ̀tọ́-ìní ohun-ìní sì di àmì-àpẹẹrẹ lórí àwọn ìwé-àkọsílẹ̀ ìpín, àwọn àyẹ̀wò ẹ̀yìn-ọ̀nà di àwọn iṣẹ́ ìwádìí dípò àwọn ìdarí ìdènà. Àwọn olùṣàkóso ohun-ìní kò lè gbáralé fífọwọ́sí ilé-iṣẹ́ òfin nìkan mọ́. Wọ́n gbọdọ̀ fọwọ́sí ìpìlẹ̀ oní-dígítà fúnra rẹ̀.
 
-In classical banking, trust is relational, institutional, and retrospective. It depends on independent, third-party auditors reviewing financial state at static points in time, reconciling discrepancies across bilateral ledger silos. In the real-time, API-driven markets of 2026, this model introduces prohibitive latencies and structural risks.
+Ní báyìí, àwọn báńkì ń ṣiṣẹ́ lábẹ́ àìdọ́gba ìṣètò-ilé tí ó hàn gbangba:
 
-When transactions settle instantly, intraday liquidity pools are managed dynamically by API gateways, and asset ownership is tokenised across shared ledgers, retrospective audits become forensic exercises rather than preventative controls. Fiduciaries can no longer rely solely on certifying the corporate entity. They must certify the digital substrate itself.
+1. **Ìpìlẹ̀-iṣẹ́ àwọsánmà tí a fọwọ́sí**: àwọn ẹ̀nu-ọ̀nà ohun-èlò, àwọn àpótí àfarawé, àti àwọn ilé-iṣẹ́ dátà tòótọ́ ni a fọwọ́sí ní ìlòdì sí àwọn ìdarí ISO/IEC 27001 àti SOC 2 Type II.  
+2. **Àwọn ìlànà ìṣàkóso tí a fọwọ́sí**: àwọn ìlànà ewu iṣẹ́, àwọn ètò ìtẹ̀síwájú iṣẹ́, àti àwọn ìṣàmúlò algorithm ni a ń ṣàkóso lábẹ́ àwọn ìlànà ewu tí ó le.  
+3. **Àwọn ẹ̀rọ ìwé-àkọsílẹ̀ tí a kò fọwọ́sí**: àwọn ọ̀nà ìfohùnṣọ̀kan pínpín, àwọn ẹ̀wọ̀n ìpèsè ẹ̀nu-ọ̀nà olùfọwọ́sí, àwọn ààlà àdéhùn ọlọ́gbọ́n, àti àwọn àwòṣe ìṣàkóso nẹ́tíwọ́ọ̀kì ni a fi sílẹ̀ fún àwọn àròsọ tí a kò fọwọ́sí, tí a ṣe-lọ́tọ̀ọ̀tọ̀, tàbí tí ó jẹ́ ti ẹgbẹ́.
 
-Currently, banks operate under a glaring architectural asymmetry:
+Àìdọ́gba yìí jẹ́ ibi ìkùnà pàtàkì. Báńkì kan lè ṣiṣẹ́ ohun-èlò tí a fọwọ́sí nínú àpótí àwọsánmà tí ó ní ààbò tí a sì fọwọ́sí ní ISO 27001, ṣùgbọ́n bí àpótí náà bá kọ sí ìwé-àkọsílẹ̀ pínpín tí ó ní ìdarí olùfọwọ́sí àárín-gbùngbùn, àwọn àbùdá ìfohùnṣọ̀kan tí ó ní àìlera, tàbí àwọn àdéhùn ọlọ́gbọ́n tí a kò ṣàyẹ̀wò, ìdúróṣinṣin ìdúnàdúrà bà jẹ́. Láti dí àlàfo yìí, ẹ̀rọ ìwé-àkọsílẹ̀ fúnra rẹ̀ gbọdọ̀ di ohun ìdánilójú tí a lè fọwọ́sí.
 
-1. **Certified Cloud Infrastructure**: Hardware nodes, virtualized containers, and physical datacenters are validated against ISO/IEC 27001 and SOC 2 Type II controls.  
-2. **Certified Management Processes**: Operational risk policies, business continuity plans, and algorithmic deployments are governed under strict risk frameworks.  
-3. **Uncertified Ledger Engines**: The core distributed consensus mechanisms, validator node supply chains, smart contract boundaries, and network governance models are left to uncertified, custom, or consortium-specific assumptions.
+## 02. Ìpìlẹ̀ ìṣedéédé ISO/IEC TC 307
 
-This asymmetry is a major failure point. A bank can run a validated application inside a secure, ISO 27001-certified cloud container, but if that container writes to a distributed ledger with centralized validator control, vulnerable consensus parameters, or un-audited smart contracts, the transaction integrity is compromised. To bridge this gap, the ledger engine itself must become a certifiable assurance object.
+Iṣẹ́ ìpìlẹ̀ tí a nílò láti ṣe déédé àwọn ìwé-àkọsílẹ̀ pínpín ni Ìgbìmọ̀ Ìmọ̀-ẹ̀rọ ISO/IEC TC 307 (Àwọn ìmọ̀-ẹ̀rọ blockchain àti ìwé-àkọsílẹ̀ pínpín) ń gbé kalẹ̀. Dípò kí ó ka blockchain sí ìlànà ìmọ̀-ẹ̀rọ tí a yà sọ́tọ̀, TC 307 ń tọ́jú rẹ̀ gẹ́gẹ́ bí ìpìlẹ̀-iṣẹ́ ìgbẹ́kẹ̀lé ilé-iṣẹ́, ó ń ṣètò iṣẹ́ rẹ̀ yíká àwọn ọ̀wọ̀n pàtàkì márùn-ún:
 
-## 02. The ISO/IEC TC 307 Standardization Baseline
+1. **Ìpínsọ́nà àti ọ̀rọ̀-ìtumọ̀ (ISO 22739)**: ó ń gbé àwọn àpèlé wọ́pọ̀ kalẹ̀, ó ń rí i dájú pé àwọn ìtumọ̀ òfin àti iṣẹ́ jẹ́ ọ̀kan-náà láàrin àwọn agbègbè-òfin, àwọn ètò ìnáwó, àti àwọn ilé-iṣẹ́.  
+2. **Ìṣètò-ilé ìtọ́kasí (ISO/TR 23245)**: ó ń ṣàlàyé àwọn ààlà, ìpele, ìṣàn dátà, àti àwọn ẹ̀yà iṣẹ́ ti ètò ìwé-àkọsílẹ̀ pínpín tí ó bá òfin mu.  
+3. **Ààbò, àṣírí, àti àwọn àdéhùn ọlọ́gbọ́n (ISO/TR 23244 / ISO 23613)**: ó ń gbé àwọn ìtọ́sọ́nà ààbò ìpìlẹ̀ fún àwọn ètò ohun-ìní oní-dígítà kalẹ̀, ó sì ń ṣàlàyé àwọn àṣà tí ó dára jùlọ fún ìdínkù àìlera àdéhùn ọlọ́gbọ́n àti ìṣàkóso ìgbà-ayé.  
+4. **Àwọn ìlànà ìṣiṣẹ́pọ̀**: ó ń bójú tó àwọn ọ̀nà ìpààrọ̀ dátà àti ohun-ìní láàrin àwọn nẹ́tíwọ́ọ̀kì ìwé-àkọsílẹ̀ tí ó yàtọ̀, ó ń dènà dídá àwọn ilé-ìpamọ́ àmì-àpẹẹrẹ tí a yà sọ́tọ̀ sílẹ̀.  
+5. **Ìdánimọ̀ tí a pín àti àwọn ìdúró ìgbẹ́kẹ̀lé**: ó ń so àwọn olùdánimọ̀ ìṣírò tí ó dá lórí ìwé-àkọsílẹ̀ pọ̀ mọ́ àwọn ìpìlẹ̀-iṣẹ́ kọ́kọ́rọ́ gbangba (PKI) tòótọ́ àti àwọn ìforúkọsílẹ̀ tí ìjọba fọwọ́sí.
 
-The foundational work required to standardize distributed ledgers is being established by ISO/IEC Technical Committee 307 (TC 307) (Blockchain and distributed ledger technologies). Rather than treating blockchain as an isolated technical protocol, TC 307 addresses it as an institutional trust infrastructure, organizing its work across five core pillars:
+Ní àpapọ̀, TC 307 ń fi hàn ìyípadà DLT láti àṣàyàn iṣẹ́-ẹ̀rọ tí a ṣe-lọ́tọ̀ọ̀tọ̀ sí ẹ̀kọ́ ìṣètò-ilé tí a ṣe déédé. Ṣùgbọ́n, TC 307 ṣì jẹ́ oníṣàpẹẹrẹ ní pàtàkì. Ó ń ṣàlàyé bí àṣeyọrí ṣe rí (ìtọ́sọ́nà), ṣùgbọ́n kò pèsè ìlànà ìdánilójú oníṣèlànà (ìdánilójú) tí àwọn òṣìṣẹ́ ewu àti àwọn alábòójútó nílò láti fọwọ́sí àwọn ìṣàmúlò iṣẹ́ ti àwọn iṣẹ́ pàtàkì tàbí kókó (CIF).
 
-1. **Taxonomy and Vocabulary (ISO 22739)**: Establishes a common nomenclature, ensuring consistent legal and operational definitions across different jurisdictions, financial schemes, and institutions.  
-2. **Reference Architecture (ISO/TR 23245)**: Defines the boundaries, layers, data flows, and functional components of a compliant distributed ledger system.  
-3. **Security, Privacy, and Smart Contracts (ISO/TR 23244 / ISO 23613)**: Establishes baseline security guidelines for digital asset systems and details best practices for smart contract vulnerability mitigation and lifecycle governance.  
-4. **Interoperability Frameworks**: Addresses the data and asset-exchange mechanisms between heterogeneous ledger networks, preventing the formation of isolated tokenised silos.  
-5. **Decentralized Identity and Trust Anchors**: Integrates ledger-based cryptographic identifiers with formal public-key infrastructures (PKI) and state-authorized registries.
+## 03. Ìtọ́sọ́nà lòdì sí ìdánilójú: ìyàtọ̀ ìṣàkóso ohun-ìní
 
-Collectively, TC 307 signals the transition of DLT from a custom engineering choice into a standardized architectural discipline. However, TC 307 remains primarily descriptive. It defines what good looks like (guidance), but it does not provide the prescriptive verification protocol (assurance) that risk officers and supervisors require to authorize production deployments of critical or important functions (CIFs).
+Àwọn olùkópa ọjà ìnáwó kò ń ṣàmúlò ìmọ̀-ẹ̀rọ nítorí pé ó jẹ́ tuntun tàbí dídára; wọ́n ń ṣàmúlò rẹ̀ nígbà tí a bá lè ṣàkóso rẹ̀, ṣàyẹ̀wò rẹ̀, dáàbò bò ó, kí a sì mú un dọ́gba pẹ̀lú àwọn ìbéèrè ìfipamọ́ olú-owó. Ìdí nìyẹn tí ìṣedéédé nínú ìfowópamọ́ fi ń pín sí ìpele méjì:
 
-## 03. Guidance vs. Assurance: The Fiduciary Distinction
+* **Ìtọ́sọ́nà (ìlànà)**: ó ń fa àwọn àṣà tí ó dára jùlọ, àwọn àfojúsùn ìtọ́kasí, àti àwọn ìtọ́sọ́nà ìṣètò-ilé (fún àpẹẹrẹ ISO/IEC TC 307, àwọn ìlànà NIST).  
+* **Ìdánilójú (ẹ̀rí)**: ó ń pèsè ẹ̀rí òmìnira, tí ó ń tẹ̀síwájú, tí ẹlẹ́ẹ̀kẹta sì lè fọwọ́sí pé a ti ṣàmúlò ìlànà náà tí ó sì ń ṣiṣẹ́ gẹ́gẹ́ bí a ṣe pinnu (fún àpẹẹrẹ ìwé-ẹ̀rí ISO 27001, àyẹ̀wò SOC 2, ìbẹ̀wò ìlànà).
 
-Financial market participants do not deploy technology because it is innovative or elegant; they deploy it when it can be governed, audited, defended, and reconciled with capital reserve requirements. This is why standardisation in banking naturally resolves into two layers:
+Gbígbáralé ìfohùnṣọ̀kan ìwé-àkọsílẹ̀ tí a kò fọwọ́sí nígbà tí a ń fọwọ́sí ìpìlẹ̀-iṣẹ́ àwọsánmà jẹ́ àlàfo ìlànà pàtàkì. Blockchain tí ó jẹ́ "àìlèyípadà" kì í ṣe dandan "tí a gbẹ́kẹ̀lé ní ilé-iṣẹ́". Àìlèyípadà ń rí i dájú nìkan pé dátà tí a fi wọlé wà láìyípadà; kò fọwọ́sí bóyá àwọn ẹ̀nu-ọ̀nà olùfọwọ́sí ní ààbò, bóyá ìlànà ìfohùnṣọ̀kan lè kojú ìdìtẹ̀, bóyá ọgbọ́n àdéhùn ọlọ́gbọ́n tọ̀nà ní ìṣirò, tàbí bóyá ìṣàkóso kọ́kọ́rọ́ ìṣírò bá àwọn àṣẹ ìwọ̀n-lẹ́yìn mu.
 
-* **Guidance (The Framework)**: Outlines best practices, reference targets, and architectural guidelines (e.g., ISO/IEC TC 307, NIST frameworks).  
-* **Assurance (The Proof)**: Provides independent, continuous, and third-party-verifiable evidence that the framework is implemented and operating as designed (e.g., ISO 27001 certification, SOC 2 audits, regulatory examinations).
+Láti dí àlàfo yìí, Àtọ́ka Blockchain tí a Fọwọ́sí 2026 ń ṣe àwọn ìbéèrè wọ̀nyí ní déédé sí Àwòṣe Ìdàgbà Agbára (CMM) tí a lè wọ̀n, tí a so mọ́ àwọn ìlànà ìfowópamọ́ kárí-ayé.
 
-Relying on uncertified ledger consensus while certifying cloud infrastructure is a critical regulatory gap. A blockchain that is "immutable" is not necessarily "institutionally trusted." Immutability only guarantees that the data entered is unchanged; it does not verify that the validator nodes are secure, the consensus protocol is resilient against collusion, the smart contract logic is mathematically sound, or the cryptographic key management complies with post-quantum mandates.
+## 04. Àtọ́ka Blockchain tí a Fọwọ́sí 2026
 
-To close this gap, the 2026 Certified Blockchain Index formalizes these requirements into a quantifiable Capability Maturity Model (CMM) mapped to global banking regulations.
+Láti jẹ́ kí àwọn olórí àgbà lè ṣàyẹ̀wò kí wọ́n sì fọwọ́sí àwọn pẹpẹ ìwé-àkọsílẹ̀ wọn, àtọ́ka yìí ń ṣètò ìpìlẹ̀-iṣẹ́ ìwé-àkọsílẹ̀ pínpín sí àwọn ìpele iṣẹ́ márùn-ún tí a lè ṣàyẹ̀wò, tí a fi ààmì sí lórí ìwọ̀n CMM láti 0 sí 5.
 
-## 04. The 2026 Certified Blockchain Index
+## Tábìlì 1: ìṣètò-ilé ti Àtọ́ka Blockchain tí a Fọwọ́sí
 
-To enable senior management to evaluate and certify their ledger platforms, this index structures the distributed ledger infrastructure into five auditable operational layers, scored on a 0-to-5 CMM scale.
-
-## Table 1: The Certified Blockchain Index Architecture
-
-| Index Layer | Capability Maturity Level (CMM) | Technical and Operational Metric | Regulatory / Fiduciary Control Reference |
+| Ìpele àtọ́ka | Ìpele ìdàgbà (CMM) | Ìwọ̀n ìmọ̀-ẹ̀rọ àti iṣẹ́ | Ìtọ́kasí ìdarí ìlànà / ìṣàkóso ohun-ìní |
 | :---- | :---- | :---- | :---- |
-| **Ledger Governance** | **Level 0**: Ad-hoc consortium**Level 3**: Automated validator vetting & rotation**Level 5**: Decentralized, multi-party cryptographic identity anchoring | % of validator nodes operated by vetted financial entities; mean time to resolve validator disputes; geographic distribution of nodes | **DORA Article 5** (Governance and Organisation); **CPMI-IOSCO PFMI Principle 2** (Governance) & **Principle 3** (Framework for the comprehensive management of risks) |
-| **Consensus Integrity** | **Level 0**: Single-node or opaque POW**Level 3**: Audited BFT with deterministic finality**Level 5**: Multi-jurisdictional, formally verified consensus with continuous latency monitoring | Max tolerable consensus latency; collusion-resistance threshold; uptime SLA under simulated node partition | **DORA Article 6** (ICT Risk Management Framework); **CPMI-IOSCO PFMI Principle 8** (Settlement Finality) |
-| **Identity & Cryptography** | **Level 0**: Weak RSA / ECDSA keys**Level 3**: Multi-sig with HSM-backed key management**Level 5**: Quantum-safe hybrid keys (FIPS 203 ML-KEM) and zero-knowledge privacy gates | % of ledger transactions signed with HSM-backed keys; PQC migration readiness score; ZK-proof latency | **NIST FIPS 203 / 204**; **ISO/IEC 27001** (Information Security Management) |
-| **Smart Contract Assurance** | **Level 0**: Un-audited solidity scripts**Level 3**: Automated compiler validation & external audit**Level 5**: Formally verified, immutable smart contracts with circuit-breaker upgrades | % of smart contracts with mathematical formal verification; count of compiler warnings; vulnerability scan coverage | **EBA Guidelines on Outsourcing Arrangements** (Paragraphs 81, 113-117); **DORA Article 30** (Minimum Contractual Clauses) |
-| **Audit & Observability** | **Level 0**: Manual log scraping**Level 3**: Structured OTel traces & read-only auditor nodes**Level 5**: Automated, continuous reconciliation to the Article 8 register | % of transactions covered by OpenTelemetry traces; latency from ledger block-commit to auditor-node sync | **BCBS 239** (Risk Data Aggregation); **DORA Article 8** (Register of Information / ITS Schemas) |
+| **Ìṣàkóso ìwé-àkọsílẹ̀** | **Ìpele 0**: ẹgbẹ́ ìgbà-díẹ̀**Ìpele 3**: àyẹ̀wò àti ìyípo olùfọwọ́sí aládàáṣiṣẹ́**Ìpele 5**: ìdúró ìdánimọ̀ ìṣírò tí a pín, oníkópa-púpọ̀ | % àwọn ẹ̀nu-ọ̀nà olùfọwọ́sí tí àwọn ilé-iṣẹ́ ìnáwó tí a ti ṣàyẹ̀wò ń ṣiṣẹ́; àpapọ̀ àkókò láti yanjú àríyànjiyàn olùfọwọ́sí; ìpín àgbègbè àwọn ẹ̀nu-ọ̀nà | **DORA Abala 5** (Ìṣàkóso àti ètò); **CPMI-IOSCO PFMI Ìlànà 2** (Ìṣàkóso) àti **Ìlànà 3** (Ìlànà fún ìṣàkóso àpapọ̀ àwọn ewu) |
+| **Ìdúróṣinṣin ìfohùnṣọ̀kan** | **Ìpele 0**: ẹ̀nu-ọ̀nà kan tàbí PoW aláìlẹ́ye**Ìpele 3**: BFT tí a ṣàyẹ̀wò pẹ̀lú ìparí tí ó dájú**Ìpele 5**: ìfohùnṣọ̀kan oní-agbègbè-òfin-púpọ̀, tí a fọwọ́sí lọ́nà tòótọ́, pẹ̀lú ìṣọ́ ìdádúró tí ó ń tẹ̀síwájú | ìdádúró ìfohùnṣọ̀kan tí ó ga jùlọ tí a lè fàradà; ààlà ìkojú ìdìtẹ̀; SLA ìwàláàyè lábẹ́ ìpín ẹ̀nu-ọ̀nà àfarawé | **DORA Abala 6** (Ìlànà ìṣàkóso ewu ICT); **CPMI-IOSCO PFMI Ìlànà 8** (Ìparí ìsédédé) |
+| **Ìdánimọ̀ àti ìṣírò** | **Ìpele 0**: àwọn kọ́kọ́rọ́ RSA / ECDSA aláìlera**Ìpele 3**: ìbùwọ́lù-púpọ̀ pẹ̀lú ìṣàkóso kọ́kọ́rọ́ tí HSM ń ṣètìlẹ́yìn**Ìpele 5**: àwọn kọ́kọ́rọ́ àpapọ̀ tí ó ní ààbò kúántẹ́ẹ̀mù (FIPS 203 ML-KEM) àti àwọn ẹnu-ọ̀nà àṣírí aláìní-ìmọ̀ | % àwọn ìdúnàdúrà ìwé-àkọsílẹ̀ tí a fi kọ́kọ́rọ́ tí HSM ń ṣètìlẹ́yìn bùwọ́lù; àmì ìmúrasílẹ̀ ìṣíkiri PQC; ìdádúró ẹ̀rí ZK | **NIST FIPS 203 / 204**; **ISO/IEC 27001** (Ìṣàkóso ààbò ìsọfúnni) |
+| **Ìdánilójú àdéhùn ọlọ́gbọ́n** | **Ìpele 0**: àwọn àfọwọ́kọ Solidity tí a kò ṣàyẹ̀wò**Ìpele 3**: ìfọwọ́sí akópọ̀ aládàáṣiṣẹ́ àti àyẹ̀wò òde**Ìpele 5**: àwọn àdéhùn ọlọ́gbọ́n àìlèyípadà tí a fọwọ́sí lọ́nà tòótọ́, pẹ̀lú àwọn ìmúdàgbà oní-agékúrò-yíyí | % àwọn àdéhùn ọlọ́gbọ́n pẹ̀lú ìfọwọ́sí tòótọ́ ti ìṣirò; iye àwọn ìkìlọ̀ akópọ̀; ìbò ìṣàwárí àìlera | **Àwọn ìtọ́sọ́nà EBA lórí ìṣẹ́-ìta** (àwọn ìpínrọ̀ 81, 113-117); **DORA Abala 30** (Àwọn gbólóhùn àdéhùn tí ó kéré jùlọ) |
+| **Àyẹ̀wò àti agbára-àkíyèsí** | **Ìpele 0**: kíkó àkọsílẹ̀ pẹ̀lú ọwọ́**Ìpele 3**: àwọn àmì OTel tí a ṣètò àti àwọn ẹ̀nu-ọ̀nà olùyẹ̀wò kíkà-nìkan**Ìpele 5**: ìmúdọ́gba aládàáṣiṣẹ́, tí ó ń tẹ̀síwájú pẹ̀lú ìforúkọsílẹ̀ Abala 8 | % àwọn ìdúnàdúrà tí àwọn àmì OpenTelemetry bò; ìdádúró láti ìdúnkọ block sí ìmúdọ́gba ẹ̀nu-ọ̀nà olùyẹ̀wò | **BCBS 239** (Àkópọ̀ dátà ewu); **DORA Abala 8** (Ìforúkọsílẹ̀ ìsọfúnni / àwọn àwòṣe ITS) |
 
-## Table 2: Key Trust Signals Mapped to Global Banking Standards
+## Tábìlì 2: àwọn àmì ìgbẹ́kẹ̀lé pàtàkì tí a so mọ́ àwọn ìlànà ìfowópamọ́ kárí-ayé
 
-| Signal / Benchmark | Metric | Impact on Banking Platforms | Regulatory Source |
+| Àmì / ìwọ̀n-ìfiwéra | Ìwọ̀n | Ipa lórí àwọn pẹpẹ ìfowópamọ́ | Orísun ìlànà |
 | :---- | :---- | :---- | :---- |
-| **ISO/IEC TC 307 Progress** | Transition from ISO/TR technical reports to formal certification schemes | Establishes the first standardized framework for certifying distributed ledger engines | **ISO/IEC JTC 1 / SC 44** (Distributed Ledger Technologies) |
-| **Project Agorá Prototype Phase** | 40+ participating commercial banks; unified ledger testing of tokenised deposits | Shifting cross-border clearing from messaging (SWIFT) to atomic tokenised settlement | **Bank for International Settlements (BIS) Innovation Hub** |
-| **DORA Article 30 Third-Party Audit** | 100% of node providers and infrastructure hosts audited against security criteria | Eliminates "shadow validator nodes"; mandates total supply-chain transparency | **European Supervisory Authorities (ESA)** |
-| **ISO/IEC 42001 (AI Governance)** | Cryptographically immutabilized AI model and training logs on-chain | Employs blockchain as the immutable evidentiary ledger ("audit spine") for machine learning | **ISO/IEC 42001:2023** (Information technology — Artificial intelligence) |
-| **Basel III Capital Adequacy** | Reduction in operational risk capital buffers based on documented complexity reduction | Standardized operational risk frameworks directly credit verified ledger resilience | **Basel Committee on Banking Supervision (BCBS)** |
+| **Ìtẹ̀síwájú ISO/IEC TC 307** | Ìyípadà láti àwọn ìròyìn ìmọ̀-ẹ̀rọ ISO/TR sí àwọn ètò ìwé-ẹ̀rí tòótọ́ | Ó ń gbé ìlànà tí a ṣe déédé àkọ́kọ́ kalẹ̀ láti fọwọ́sí àwọn ẹ̀rọ ìwé-àkọsílẹ̀ pínpín | **ISO/IEC JTC 1 / SC 44** (Àwọn ìmọ̀-ẹ̀rọ ìwé-àkọsílẹ̀ pínpín) |
+| **Ìpele àpẹẹrẹ Iṣẹ́ Agorá** | Àwọn báńkì oníṣòwò tí ó lé ní 40 tí ó kópa; ìdánwò ìwé-àkọsílẹ̀ ìṣọ̀kan fún àwọn ìfipamọ́ àmì-àpẹẹrẹ | Ó ń kó ìsédédé àgbélébùú-ààlà láti fífìránṣẹ́ (SWIFT) sí ìsédédé àmì-àpẹẹrẹ oníparapọ̀ | **Ibùdó Ìmúdàgbà ti Báńkì fún Ìsédédé Àgbáyé (BIS)** |
+| **Àyẹ̀wò ẹlẹ́ẹ̀kẹta DORA Abala 30** | 100% àwọn olùpèsè ẹ̀nu-ọ̀nà àti àwọn olùgbàlejò ìpìlẹ̀-iṣẹ́ tí a ṣàyẹ̀wò ní ìlòdì sí àwọn àmì ààbò | Ó ń mú "àwọn ẹ̀nu-ọ̀nà olùfọwọ́sí òjìji" kúrò; ó ń fipá mú kíkedere ẹ̀wọ̀n ìpèsè ní kíkún | **Àwọn Aláṣẹ Ìbójútó Yúróòpù (ESA)** |
+| **ISO/IEC 42001 (ìṣàkóso AI)** | Àwọn àkọsílẹ̀ àwòṣe àti ìdálẹ́kọ̀ọ́ AI tí a ṣe àìlèyípadà lọ́nà ìṣírò lórí ẹ̀wọ̀n | Ó ń lo blockchain gẹ́gẹ́ bí ìforúkọsílẹ̀ ẹ̀rí àìlèyípadà ("ẹ̀yìn ìdúró àyẹ̀wò") fún ẹ̀kọ́ ẹ̀rọ | **ISO/IEC 42001:2023** (Ìmọ̀-ẹ̀rọ ìsọfúnni — Òye àtọwọ́dá) |
+| **Ìtó olú-owó Basel III** | Ìdínkù àwọn àpò-ìfipamọ́ olú-owó ewu iṣẹ́ tí ó dá lórí ìdínkù ìdíjú tí a kọsílẹ̀ | Àwọn ìlànà ewu iṣẹ́ tí a ṣe déédé ń gba ìdúróṣinṣin ìwé-àkọsílẹ̀ tí a fọwọ́sí sí àpọ̀ tààrà | **Ìgbìmọ̀ Basel lórí Ìbójútó Báńkì (BCBS)** |
 
-## 05. The AI "Audit Spine": Probabilistic Intelligence on Deterministic Infrastructure
+## 05. "Ẹ̀yìn ìdúró àyẹ̀wò" ti AI: òye oníṣeéṣe lórí ìpìlẹ̀-iṣẹ́ tí ó dájú
 
-One of the most powerful strategic roles for a certified blockchain in 2026 is acting as an **"Audit Spine"** for artificial intelligence deployments. Modern financial systems are increasingly probabilistic. Credit scoring, real-time fraud detection, algorithmic trading, and autonomous customer interactions are driven by machine learning models that evolve, drift, and adapt over time. These models are non-deterministic: given the same input at two different times, they may yield different outputs due to dynamic weights and continuous training.
+Ọ̀kan lára àwọn ipa ọ̀gbọ́n tí ó lágbára jùlọ ti blockchain tí a fọwọ́sí ní 2026 ni láti ṣiṣẹ́ gẹ́gẹ́ bí **"ẹ̀yìn ìdúró àyẹ̀wò"** fún àwọn ìṣàmúlò òye àtọwọ́dá. Àwọn ètò ìnáwó òde-òní ń di oníṣeéṣe síwájú síi. Ìfàmì-owó gbèsè, ìwádìí ìjìbìtì onígbà-gidi, ìṣòwò algorithm, àti àwọn ìbáṣepọ̀ oníbárà aládàáṣiṣẹ́ ni àwọn àwòṣe ẹ̀kọ́ ẹ̀rọ tí ó ń dàgbà, tí ó ń yà, tí ó sì ń bára-mu lórí àkókò ń darí. Àwọn àwòṣe wọ̀nyí kì í ṣe tí ó dájú: pẹ̀lú ìwọlé kan-náà ní àkókò méjì ọ̀tọ̀ọ̀tọ̀, wọ́n lè mú àwọn àbájáde ọ̀tọ̀ọ̀tọ̀ jáde nítorí àwọn ìwọ̀n oníyíyẹ̀ àti ìdálẹ́kọ̀ọ́ tí ó ń tẹ̀síwájú.
 
-This non-determinism introduces a profound governance challenge under **ISO/IEC 42001 (AI Governance)** and **Model Risk Management (MRM)** standards (such as **US Federal Reserve SR 11-7** and **UK PRA SS1/23**): *How do you audit, explain, and defend decisions that are not strictly reproducible?*
+Àìdájú yìí ń mú ìpèníjà ìṣàkóso jíjinlẹ̀ wá lábẹ́ **ISO/IEC 42001 (ìṣàkóso AI)** àti àwọn ìlànà ìṣàkóso ewu àwòṣe (MRM) (bíi **SR 11-7 ti Federal Reserve US** àti **SS1/23 ti PRA UK**): *báwo ni o ṣe lè ṣàyẹ̀wò, ṣàlàyé, kí o sì dáàbò bo àwọn ìpinnu tí a kò lè tún ṣe lọ́nà tòótọ́?*
 
-A certified distributed ledger provides the deterministic counterweight. While AI models operate probabilistically, the certified blockchain records their parameters deterministically, establishing an unalterable evidentiary spine:
+Ìwé-àkọsílẹ̀ pínpín tí a fọwọ́sí ń pèsè ìdojúkọ tí ó dájú. Níbi tí àwọn àwòṣe AI ti ń ṣiṣẹ́ lọ́nà oníṣeéṣe, blockchain tí a fọwọ́sí ń kọ àwọn àbùdá wọn lọ́nà tí ó dájú, ó ń gbé ẹ̀yìn ìdúró ẹ̀rí àìlèyípadà kalẹ̀:
 
-* **Model Versioning and Weight Anchoring**: Every deployed model version, its associated weights, and its training data checksums are hashed and written to the ledger at build-time, satisfying **SLSA Level 3** supply-chain requirements.  
-* **Contextual Input Logging**: When an AI model executes a critical decision (e.g., approving a loan or flagging a transaction), the exact contextual inputs and model hashes are written to the ledger, creating a tamper-evident history.  
-* **Auditability without Code Access**: If a regulator asks, "Why did your model reject this credit application on June 3?" the bank does not need to expose proprietary code or attempt to recreate the exact model state. It presents the cryptographically signed, on-chain ledger record of the inputs, weights, and validation state.
+* **Ìṣàyẹ̀-ẹ̀yà àwòṣe àti ìdúró ìwọ̀n**: gbogbo ẹ̀yà àwòṣe tí a ṣàmúlò, àwọn ìwọ̀n rẹ̀ tí ó ní í ṣe, àti àwọn àpapọ̀-àyẹ̀wò dátà ìdálẹ́kọ̀ọ́ rẹ̀ ni a ṣe hash tí a sì kọ sí ìwé-àkọsílẹ̀ ní àkókò kíkọ́, ó ń bójú tó àwọn ìbéèrè ẹ̀wọ̀n ìpèsè **SLSA Level 3**.  
+* **Kíkọ ìwọlé oníbáramu**: nígbà tí àwòṣe AI bá ṣe ìpinnu pàtàkì (fún àpẹẹrẹ ìfọwọ́sí àwìn tàbí fífi àmì sí ìdúnàdúrà), àwọn ìwọlé oníbáramu tòótọ́ àti àwọn hash àwòṣe ni a kọ sí ìwé-àkọsílẹ̀, ó ń dá ìtàn tí ó kojú àyídà.  
+* **Agbára-àyẹ̀wò láìsí àǹfààní kóòdù**: bí olùṣàkóso bá béèrè pé "kí ló dé tí àwòṣe rẹ fi kọ ìbéèrè àwìn yìí ní ọjọ́ kẹta oṣù Òkúdu?", báńkì kò nílò láti ṣàfihàn kóòdù ohun-ìní rẹ̀ tàbí gbìyànjú láti tún ipò tòótọ́ àwòṣe ṣẹ̀dá. Ó ń ṣàfihàn àkọsílẹ̀ lórí-ẹ̀wọ̀n tí a bùwọ́lù lọ́nà ìṣírò ti àwọn ìwọlé, ìwọ̀n, àti ipò ìfọwọ́sí.
 
-By anchoring the probabilistic decisions of machine learning models to the deterministic consensus of a certified blockchain, the institution creates a defensible, reconstructable, and independently verifiable timeline of automated actions.
+Nípa dídúró àwọn ìpinnu oníṣeéṣe ti àwọn àwòṣe ẹ̀kọ́ ẹ̀rọ sí ìfohùnṣọ̀kan tí ó dájú ti blockchain tí a fọwọ́sí, ilé-iṣẹ́ ń dá àkókò-ìlà ti àwọn ìṣe aládàáṣiṣẹ́ tí a lè dáàbò bò, tún ṣẹ̀dá, kí a sì fọwọ́sí lọ́tọ̀ọ̀tọ̀.
 
-## 06. Visualizing the Certified Consensus-to-Audit Pipeline
+## 06. Ìfihàn ìlà-iṣẹ́ tí a fọwọ́sí láti ìfohùnṣọ̀kan sí àyẹ̀wò
 
-The following sequence diagram illustrates the lifecycle of a transaction passing through a certified blockchain platform, demonstrating how validation gates, consensus integrity, smart contract execution, and telemetry emission interlock to produce board-ready regulatory evidence:
+Àwòrán ọ̀wọ́ tí ó tẹ̀le ń ṣàfihàn ìgbà-ayé ìdúnàdúrà kan tí ó ń kọjá pẹpẹ blockchain tí a fọwọ́sí, ó ń fi hàn bí àwọn ẹnu-ọ̀nà ìfọwọ́sí, ìdúróṣinṣin ìfohùnṣọ̀kan, ṣíṣe àdéhùn ọlọ́gbọ́n, àti ìtújáde telemetry ṣe ń so pọ̀ láti mú ẹ̀rí ìlànà tí ó ṣetán fún ìgbìmọ̀ jáde:
 
 ```mermaid
 sequenceDiagram
@@ -206,37 +202,37 @@ sequenceDiagram
     Engine-->>Telemetry: Emit OpenTelemetry traces (latency, state, validation status)
     Telemetry->>Telemetry: Record evidence to DORA Article 8 Register of Information
 ```
-The critical path for this transactional sequence requires that every validation, execution, and consensus step is cryptographically signed, ensuring end-to-end provenance. The regulator's auditor node synchronizes block state in real-time, eliminating the need for retrospective, manual financial reconciliation.
+Ọ̀nà pàtàkì ti ọ̀wọ́ ìdúnàdúrà yìí béèrè pé kí gbogbo ìgbésẹ̀ ìfọwọ́sí, ṣíṣe, àti ìfohùnṣọ̀kan ni a bùwọ́lù lọ́nà ìṣírò, ó ń rí i dájú orísun láti òpin sí òpin. Ẹ̀nu-ọ̀nà olùyẹ̀wò ti olùṣàkóso ń mú ipò block dọ́gba ní onígbà-gidi, ó ń mú àìní ìmúdọ́gba ìnáwó pẹ̀lú ọwọ́, ti ẹ̀yìn-ọ̀nà kúrò.
 
-## 07. The Boardroom Playbook for Senior Managers
+## 07. Ìwé-eré ìgbìmọ̀ fún àwọn olórí àgbà
 
-To successfully navigate the transition from organizational trust to infrastructural trust, bank executives and senior managers should immediately execute four key directives:
+Láti rìn ìrìn-àjò ìyípadà láti ìgbẹ́kẹ̀lé ètò sí ìgbẹ́kẹ̀lé ìpìlẹ̀-iṣẹ́ lọ́nà àṣeyọrí, àwọn alóyè báńkì àti àwọn olórí àgbà gbọdọ̀ ṣe àwọn àṣẹ pàtàkì mẹ́rin lẹ́sẹ̀kẹsẹ̀:
 
-1. **Mandate Ledger Audits in Enterprise Risk Management (ERM)**: Enforce a policy that no distributed ledger platform—whether private, public, or consortium-based—may be deployed for critical or important functions (CIFs) unless it has been audited against the 5-layer **Certified Blockchain Index Architecture** (CMM Level 3 minimum).  
-2. **Integrate Blockchains as the ISO 42001 AI Evidentiary Spine**: Direct the Chief Risk Officer and Lead AI Architect to integrate all high-impact machine learning models with a certified blockchain, creating a tamper-evident audit ledger of model versions, weights, inputs, and decisions.  
-3. **Audit the Validator Node Supply Chain (DORA Article 30)**: Require the procurement division to audit all third-party entities hosting validator nodes or managing cloud hosting for DLT networks, mandating compliance with the same cybersecurity and operational resilience standards applied to the bank’s internal cloud nodes.  
-4. **Align Ledger Architectures with CPMI-IOSCO and BCBS 239**: Instruct the platform engineering team to align ledger output telemetry directly with **BCBS 239** data reporting requirements, and ensure the consensus and settlement finality parameters strictly comply with **CPMI-IOSCO Principles 8 and 9**.
+1. **Fipá mú àwọn àyẹ̀wò ìwé-àkọsílẹ̀ nínú ìṣàkóso ewu ilé-iṣẹ́ (ERM)**: fipá mú ìlànà pé kò sí pẹpẹ ìwé-àkọsílẹ̀ pínpín kan — ti aládàáni, ti gbogbo-ènìyàn, tàbí ti ẹgbẹ́ — tí a lè ṣàmúlò fún àwọn iṣẹ́ pàtàkì tàbí kókó (CIF) láìsí kí a ṣàyẹ̀wò rẹ̀ ní ìlòdì sí **ìṣètò-ilé Àtọ́ka Blockchain tí a Fọwọ́sí** onípele-márùn-ún (ó kéré jùlọ CMM Ìpele 3).  
+2. **So àwọn blockchain pọ̀ gẹ́gẹ́ bí ẹ̀yìn ìdúró ẹ̀rí AI ti ISO 42001**: darí Alóyè Àgbà Ewu àti Ọ̀gá Ayàwòrán AI láti so gbogbo àwọn àwòṣe ẹ̀kọ́ ẹ̀rọ oní-ipa-gíga pọ̀ mọ́ blockchain tí a fọwọ́sí, ó ń dá ìforúkọsílẹ̀ àyẹ̀wò tí ó kojú àyídà ti àwọn ẹ̀yà àwòṣe, ìwọ̀n, ìwọlé, àti ìpinnu.  
+3. **Ṣàyẹ̀wò ẹ̀wọ̀n ìpèsè ẹ̀nu-ọ̀nà olùfọwọ́sí (DORA Abala 30)**: béèrè pé kí ẹ̀ka ìrà ṣàyẹ̀wò gbogbo àwọn ilé-iṣẹ́ ẹlẹ́ẹ̀kẹta tí ó ń gbàlejò àwọn ẹ̀nu-ọ̀nà olùfọwọ́sí tàbí tí ó ń ṣàkóso ìgbàlejò àwọsánmà fún àwọn nẹ́tíwọ́ọ̀kì DLT, ó ń fipá mú àwọn àmì ààbò-ayélujára àti ìdúróṣinṣin iṣẹ́ kan-náà tí a lò fún àwọn ẹ̀nu-ọ̀nà àwọsánmà inú báńkì.  
+4. **Mú àwọn ìṣètò-ilé ìwé-àkọsílẹ̀ bá CPMI-IOSCO àti BCBS 239 mu**: darí ẹgbẹ́ iṣẹ́-ẹ̀rọ pẹpẹ láti mú telemetry ìtújáde ìwé-àkọsílẹ̀ bá àwọn ìbéèrè ìròyìn dátà **BCBS 239** mu tààrà, kí a sì rí i dájú pé àwọn àbùdá ìfohùnṣọ̀kan àti ìparí ìsédédé bá **Àwọn Ìlànà 8 àti 9 ti CPMI-IOSCO** mu ní kíkún.
 
-## 08. Frequently Asked Questions
+## 08. Àwọn ìbéèrè tí a sábà máa ń bèèrè
 
-**Is ISO/IEC TC 307 a certification standard?**  
-No. ISO/IEC TC 307 is a technical committee that establishes vocabulary, reference architectures, and security guidelines. While it defines "what good looks like" (guidance), the industry must operationalize these documents into formal, auditable certification schemes (assurance) to satisfy banking supervisors.
+**Ṣé ISO/IEC TC 307 jẹ́ ìlànà ìwé-ẹ̀rí?**  
+Rárá. ISO/IEC TC 307 jẹ́ ìgbìmọ̀ ìmọ̀-ẹ̀rọ tí ó ń gbé ọ̀rọ̀-ìtumọ̀, àwọn ìṣètò-ilé ìtọ́kasí, àti àwọn ìtọ́sọ́nà ààbò kalẹ̀. Bí ó tilẹ̀ ń ṣàlàyé "bí àṣeyọrí ṣe rí" (ìtọ́sọ́nà), ilé-iṣẹ́ gbọdọ̀ ṣe àwọn ìwé wọ̀nyí ní iṣẹ́ sí àwọn ètò ìwé-ẹ̀rí tòótọ́ tí a lè ṣàyẹ̀wò (ìdánilójú) láti tẹ́ àwọn alábòójútó báńkì lọ́rùn.
 
-**How does a certified blockchain support DORA compliance?**  
-Under DORA Article 5, bank boards bear direct, personal liability for technology resilience. A certified blockchain provides verifiable, cryptographic evidence of consensus integrity, validator supply-chain control, and smart contract safety, giving board members the documentable "reasonable steps" needed to defend against SM&CR personal liability claims.
+**Báwo ni blockchain tí a fọwọ́sí ṣe ń ṣètìlẹ́yìn fún ìbámu DORA?**  
+Lábẹ́ Abala 5 ti DORA, àwọn ìgbìmọ̀ báńkì ń gbé ojúṣe ẹnìkọ̀ọ̀kan tààrà nípa ìdúróṣinṣin ìmọ̀-ẹ̀rọ. Blockchain tí a fọwọ́sí ń pèsè ẹ̀rí ìṣírò tí a lè fọwọ́sí ti ìdúróṣinṣin ìfohùnṣọ̀kan, ìdarí ẹ̀wọ̀n ìpèsè olùfọwọ́sí, àti ààbò àdéhùn ọlọ́gbọ́n, ó ń fún àwọn ọmọ ẹgbẹ́ ìgbìmọ̀ ní àwọn "ìgbésẹ̀ tí ó bọ́gbọ́n mu" tí a lè kọsílẹ̀ tí a nílò láti dáàbò bo ara wọn lòdì sí àwọn ẹjọ́ ojúṣe ẹnìkọ̀ọ̀kan lábẹ́ SM&CR.
 
-What is the difference between a traditional ledger audit and a certified blockchain audit?  
-A traditional audit is retrospective, verifying manual entries and static files after transactions have cleared. A certified blockchain audit is continuous and real-time; the validator nodes, BFT consensus engine, and formally verified smart contracts are certified to execute transactions deterministically, emitting structured telemetry (OpenTelemetry) that continuously validates the system’s health.
+Kí ni ìyàtọ̀ láàrin àyẹ̀wò ìwé-àkọsílẹ̀ ìbílẹ̀ àti àyẹ̀wò blockchain tí a fọwọ́sí?  
+Àyẹ̀wò ìbílẹ̀ jẹ́ ti ẹ̀yìn-ọ̀nà: ó ń fọwọ́sí àwọn ìtẹ̀wọlé ọwọ́ àti àwọn fáìlì dídúró lẹ́yìn tí àwọn ìdúnàdúrà bá ti ṣe ìsédédé. Àyẹ̀wò blockchain tí a fọwọ́sí jẹ́ ti ìtẹ̀síwájú àti onígbà-gidi; àwọn ẹ̀nu-ọ̀nà olùfọwọ́sí, ẹ̀rọ ìfohùnṣọ̀kan BFT, àti àwọn àdéhùn ọlọ́gbọ́n tí a fọwọ́sí lọ́nà tòótọ́ ni a fọwọ́sí láti ṣe àwọn ìdúnàdúrà lọ́nà tí ó dájú, wọ́n ń tú telemetry tí a ṣètò (OpenTelemetry) jáde tí ó ń fọwọ́sí ìlera ètò náà ní ìtẹ̀síwájú.
 
-Can public blockchains be certified for banking use?  
-In most jurisdictions, pure permissionless public blockchains fail to satisfy banking regulations due to the lack of validator identity verification, unpredictable gas/transaction costs, and non-deterministic finality (e.g., probabilistic proof-of-work/stake forks). Certified blockchains in banking typically utilize enterprise permissioned or highly regulated public-hybrid architectures where validator node operators are identified and audited financial entities.
+Ṣé a lè fọwọ́sí àwọn blockchain ti gbogbo-ènìyàn fún ìlò báńkì?  
+Ní ọ̀pọ̀ àwọn agbègbè-òfin, àwọn blockchain ti gbogbo-ènìyàn aláìní-àṣẹ pátápátá kùnà láti tẹ́ àwọn ìlànà báńkì lọ́rùn nítorí àìsí ìfọwọ́sí ìdánimọ̀ olùfọwọ́sí, àwọn ìnáwó ìdúnàdúrà tí a kò lè sọ tẹ́lẹ̀, àti ìparí tí kì í ṣe tí ó dájú (fún àpẹẹrẹ àwọn ẹ̀ka oníṣeéṣe ti proof-of-work/stake). Àwọn blockchain tí a fọwọ́sí nínú báńkì sábà máa ń lo àwọn ìṣètò-ilé ilé-iṣẹ́ oníláṣẹ tàbí àwọn ìṣètò-ilé ti gbogbo-ènìyàn-àpapọ̀ tí a ń darí ní líle, níbi tí àwọn olùṣiṣẹ́ ẹ̀nu-ọ̀nà olùfọwọ́sí jẹ́ àwọn ilé-iṣẹ́ ìnáwó tí a ti dá mọ̀ tí a sì ti ṣàyẹ̀wò.
 
-## 09. References
+## 09. Àwọn Ìtọ́kasí
 
-* Basel Committee on Banking Supervision (BCBS), 2013. *Principles for effective risk data aggregation and reporting (BCBS 239)*. Basel: Bank for International Settlements. Available at: [https://www.bis.org/publ/bcbs239.pdf](https://www.bis.org/publ/bcbs239.pdf).  
-* Committee on Payments and Market Infrastructures and Technical Committee of the International Organization of Securities Commissions (CPMI-IOSCO), 2012. *Principles for financial market infrastructures*. Basel: Bank for International Settlements. Available at: [https://www.bis.org/cpmi/publ/d101a.pdf](https://www.bis.org/cpmi/publ/d101a.pdf).  
-* European Banking Authority (EBA), 2019. *EBA/GL/2019/02 — Guidelines on outsourcing arrangements*. Paris: EBA. Available at: [https://www.eba.europa.eu/regulation-and-policy/internal-governance/guidelines-on-outsourcing-arrangements](https://www.eba.europa.eu/regulation-and-policy/internal-governance/guidelines-on-outsourcing-arrangements).  
-* European Parliament and Council of the European Union, 2022. *Regulation (EU) 2022/2554 on digital operational resilience for the financial sector (DORA)*. Brussels: Official Journal of the European Union. Available at: [https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554).  
-* ISO/IEC JTC 1/SC 42, 2023. *ISO/IEC 42001:2023 — Information technology — Artificial intelligence — Management system*. Geneva: International Organization for Standardization. Available at: [https://www.iso.org/standard/81230.html](https://www.iso.org/standard/81230.html).  
-* ISO/IEC Technical Committee 307, 2020. *ISO/IEC 22739:2020 — Blockchain and distributed ledger technologies — Vocabulary*. Geneva: International Organization for Standardization. Available at: [https://www.iso.org/standard/73771.html](https://www.iso.org/standard/73771.html).  
-* National Institute of Standards and Technology (NIST), 2026. *First Three Finalized Post-Quantum Encryption Standards (FIPS 203, 204, and 205)*. Gaithersburg: U.S. Department of Commerce. Available at: [https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards](https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards).
+* Ìgbìmọ̀ Basel lórí Ìbójútó Báńkì (BCBS), 2013. *Principles for effective risk data aggregation and reporting (BCBS 239)*. Basel: Báńkì fún Ìsédédé Àgbáyé. Ó wà ní: [https://www.bis.org/publ/bcbs239.pdf](https://www.bis.org/publ/bcbs239.pdf).  
+* Committee on Payments and Market Infrastructures àti Technical Committee of the International Organization of Securities Commissions (CPMI-IOSCO), 2012. *Principles for financial market infrastructures*. Basel: Báńkì fún Ìsédédé Àgbáyé. Ó wà ní: [https://www.bis.org/cpmi/publ/d101a.pdf](https://www.bis.org/cpmi/publ/d101a.pdf).  
+* Aláṣẹ Báńkì Yúróòpù (EBA), 2019. *EBA/GL/2019/02 — Guidelines on outsourcing arrangements*. Paris: EBA. Ó wà ní: [https://www.eba.europa.eu/regulation-and-policy/internal-governance/guidelines-on-outsourcing-arrangements](https://www.eba.europa.eu/regulation-and-policy/internal-governance/guidelines-on-outsourcing-arrangements).  
+* Ilé-ìgbìmọ̀ Aṣòfin Yúróòpù àti Ìgbìmọ̀ ti Ìṣọ̀kan Yúróòpù, 2022. *Ìlànà (EU) 2022/2554 lórí ìdúróṣinṣin iṣẹ́ oní-dígítà fún ẹ̀ka ìnáwó (DORA)*. Brussels: Ìwé-ìròyìn Aṣòfin ti Ìṣọ̀kan Yúróòpù. Ó wà ní: [https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554).  
+* ISO/IEC JTC 1/SC 42, 2023. *ISO/IEC 42001:2023 — Information technology — Artificial intelligence — Management system*. Geneva: Àjọ Àgbáyé fún Ìṣedéédé. Ó wà ní: [https://www.iso.org/standard/81230.html](https://www.iso.org/standard/81230.html).  
+* Ìgbìmọ̀ Ìmọ̀-ẹ̀rọ ISO/IEC 307, 2020. *ISO/IEC 22739:2020 — Blockchain and distributed ledger technologies — Vocabulary*. Geneva: Àjọ Àgbáyé fún Ìṣedéédé. Ó wà ní: [https://www.iso.org/standard/73771.html](https://www.iso.org/standard/73771.html).  
+* National Institute of Standards and Technology (NIST), 2026. *First Three Finalized Post-Quantum Encryption Standards (FIPS 203, 204, and 205)*. Gaithersburg: U.S. Department of Commerce. Ó wà ní: [https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards](https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards).
