@@ -75,5 +75,22 @@
   "changelog.lede": "所有文章，最新在前，按月份分组。",
   "whatsNew.title": "最新动态",
   "whatsNew.cta": "查看更新日志",
-  "status.title": "状态"
+  "status.title": "状态",
+  "scorecard.heading": "评估您的机构",
+  "scorecard.intro": "根据贵机构当前的成熟度设置每个维度。综合评分按监管重要性加权。",
+  "scorecard.dimensionsLegend": "维度",
+  "scorecard.composite": "综合指数评分",
+  "scorecard.tableCaption": "按维度划分的评分",
+  "scorecard.colDimension": "维度",
+  "scorecard.colLevel": "成熟度等级",
+  "scorecard.colWeight": "权重",
+  "scorecard.colScore": "评分",
+  "scorecard.reset": "重置",
+  "scorecard.share": "复制可分享链接",
+  "scorecard.shareCopied": "链接已复制到剪贴板",
+  "scorecard.download": "下载 PNG",
+  "scorecard.downloaded": "评分卡图片已下载",
+  "scorecard.radarTitle": "就绪度雷达图",
+  "scorecard.methodology": "阅读完整的指数方法论",
+  "scorecard.fallback": "成熟度维度已在上表中列出。请启用 JavaScript 以交互方式评估贵机构并导出结果。"
 }

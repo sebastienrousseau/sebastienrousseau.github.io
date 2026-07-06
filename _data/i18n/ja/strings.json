@@ -75,5 +75,22 @@
   "changelog.lede": "すべての記事を新しい順に、月ごとにまとめています。",
   "whatsNew.title": "新着情報",
   "whatsNew.cta": "変更履歴を見る",
-  "status.title": "ステータス"
+  "status.title": "ステータス",
+  "scorecard.heading": "貴機関を評価する",
+  "scorecard.intro": "各ディメンションを貴機関の現在の成熟度に設定してください。総合スコアは規制上の重要性で加重されます。",
+  "scorecard.dimensionsLegend": "ディメンション",
+  "scorecard.composite": "総合指数スコア",
+  "scorecard.tableCaption": "ディメンション別のスコア",
+  "scorecard.colDimension": "ディメンション",
+  "scorecard.colLevel": "成熟度レベル",
+  "scorecard.colWeight": "重み",
+  "scorecard.colScore": "スコア",
+  "scorecard.reset": "リセット",
+  "scorecard.share": "共有リンクをコピー",
+  "scorecard.shareCopied": "リンクをクリップボードにコピーしました",
+  "scorecard.download": "PNGをダウンロード",
+  "scorecard.downloaded": "スコアカード画像をダウンロードしました",
+  "scorecard.radarTitle": "準備状況レーダー",
+  "scorecard.methodology": "指数の完全な方法論を読む",
+  "scorecard.fallback": "成熟度ディメンションは上の表にまとめられています。JavaScriptを有効にすると、貴機関をインタラクティブに評価し、結果をエクスポートできます。"
 }

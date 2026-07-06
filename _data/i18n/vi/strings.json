@@ -75,5 +75,22 @@
   "changelog.lede": "Tất cả bài viết, mới nhất trước, nhóm theo tháng.",
   "whatsNew.title": "Có gì mới",
   "whatsNew.cta": "Xem nhật ký thay đổi",
-  "status.title": "Trạng thái"
+  "status.title": "Trạng thái",
+  "scorecard.heading": "Đánh giá tổ chức của bạn",
+  "scorecard.intro": "Đặt mỗi chiều theo mức độ trưởng thành hiện tại của tổ chức bạn. Điểm tổng hợp được tính trọng số theo mức độ trọng yếu về quy định.",
+  "scorecard.dimensionsLegend": "Các chiều",
+  "scorecard.composite": "Điểm chỉ số tổng hợp",
+  "scorecard.tableCaption": "Điểm của bạn theo chiều",
+  "scorecard.colDimension": "Chiều",
+  "scorecard.colLevel": "Mức độ trưởng thành",
+  "scorecard.colWeight": "Trọng số",
+  "scorecard.colScore": "Điểm",
+  "scorecard.reset": "Đặt lại",
+  "scorecard.share": "Sao chép liên kết chia sẻ",
+  "scorecard.shareCopied": "Đã sao chép liên kết vào bộ nhớ tạm",
+  "scorecard.download": "Tải xuống PNG",
+  "scorecard.downloaded": "Đã tải xuống hình ảnh thẻ điểm",
+  "scorecard.radarTitle": "Radar mức độ sẵn sàng",
+  "scorecard.methodology": "Đọc phương pháp luận đầy đủ của chỉ số",
+  "scorecard.fallback": "Các chiều trưởng thành được lập bảng ở trên. Bật JavaScript để đánh giá tổ chức của bạn một cách tương tác và xuất kết quả."
 }

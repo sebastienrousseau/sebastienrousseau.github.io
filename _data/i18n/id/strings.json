@@ -75,5 +75,22 @@
   "changelog.lede": "Semua artikel, terbaru dulu, dikelompokkan per bulan.",
   "whatsNew.title": "Yang baru",
   "whatsNew.cta": "Lihat log perubahan",
-  "status.title": "Status"
+  "status.title": "Status",
+  "scorecard.heading": "Nilai institusi Anda",
+  "scorecard.intro": "Atur setiap dimensi sesuai tingkat kematangan institusi Anda saat ini. Skor gabungan dibobotkan berdasarkan materialitas regulasi.",
+  "scorecard.dimensionsLegend": "Dimensi",
+  "scorecard.composite": "Skor indeks gabungan",
+  "scorecard.tableCaption": "Skor Anda berdasarkan dimensi",
+  "scorecard.colDimension": "Dimensi",
+  "scorecard.colLevel": "Tingkat kematangan",
+  "scorecard.colWeight": "Bobot",
+  "scorecard.colScore": "Skor",
+  "scorecard.reset": "Setel ulang",
+  "scorecard.share": "Salin tautan yang dapat dibagikan",
+  "scorecard.shareCopied": "Tautan disalin ke papan klip",
+  "scorecard.download": "Unduh PNG",
+  "scorecard.downloaded": "Gambar kartu skor diunduh",
+  "scorecard.radarTitle": "Radar kesiapan",
+  "scorecard.methodology": "Baca metodologi indeks lengkap",
+  "scorecard.fallback": "Dimensi kematangan ditabulasikan di atas. Aktifkan JavaScript untuk menilai institusi Anda secara interaktif dan mengekspor hasilnya."
 }

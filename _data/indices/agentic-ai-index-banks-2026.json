@@ -1,0 +1,269 @@
+{
+  "slug": "agentic-ai-index-banks-2026",
+  "version": 1,
+  "title": "Agentic AI Index for Banks",
+  "subtitle": "Score your institution across the six readiness dimensions.",
+  "source_url": "https://sebastienrousseau.com/2026-07-01-agentic-ai-index-banks-measuring-autonomy-2026",
+  "article_slugs": [
+    "2026-07-01-agentic-ai-index-banks-measuring-autonomy-2026"
+  ],
+  "scale": {
+    "min": 0,
+    "max": 100,
+    "step": 1,
+    "round": 0
+  },
+  "dimensions": [
+    {
+      "id": "governance",
+      "label": "Governance Architecture",
+      "short": "Governance",
+      "weight": 0.25,
+      "default": 0,
+      "desc": "Whether the five-component agent control plane (identity, guardrails, policy-as-code, WORM audit log, kill switch) is engineered and operational in production.",
+      "levels": [
+        {
+          "value": 1,
+          "min": 0,
+          "max": 24,
+          "label": "L1 — Ad hoc",
+          "hint": "Some components present but undocumented; no kill-switch test record."
+        },
+        {
+          "value": 2,
+          "min": 25,
+          "max": 49,
+          "label": "L2 — Documented",
+          "hint": "All five components documented; implementation gaps; kill switch untested."
+        },
+        {
+          "value": 3,
+          "min": 50,
+          "max": 74,
+          "label": "L3 — Operational",
+          "hint": "All five operational; kill switch tested quarterly; OPA policies version-controlled."
+        },
+        {
+          "value": 4,
+          "min": 75,
+          "max": 100,
+          "label": "L4 — Evidence-ready",
+          "hint": "Continuous signed evidence; per-agent identity satisfies EU AI Act Art. 12; drift detection automated."
+        }
+      ]
+    },
+    {
+      "id": "regulatory",
+      "label": "Regulatory Evidence Completeness",
+      "short": "Reg. evidence",
+      "weight": 0.2,
+      "default": 0,
+      "desc": "Whether a complete, per-workflow regulatory evidence package can be produced on demand for SR 11-7, SS1/23, EU AI Act, DORA, FSB and national frameworks.",
+      "levels": [
+        {
+          "value": 1,
+          "min": 0,
+          "max": 24,
+          "label": "L1 — Compliance awareness",
+          "hint": "Obligations identified; no workflow-level evidence; model cards absent."
+        },
+        {
+          "value": 2,
+          "min": 25,
+          "max": 49,
+          "label": "L2 — Point-in-time validation",
+          "hint": "Pre-deployment validation done; no continuous monitoring."
+        },
+        {
+          "value": 3,
+          "min": 50,
+          "max": 74,
+          "label": "L3 — Continuous evidence",
+          "hint": "Model cards per workflow; eval suites weekly; Art. 12 per-agent logging live."
+        },
+        {
+          "value": 4,
+          "min": 75,
+          "max": 100,
+          "label": "L4 — Examiner-ready",
+          "hint": "Full package retrievable per workflow; three-lines-of-defence current; MAS MGF mapped."
+        }
+      ]
+    },
+    {
+      "id": "autonomy",
+      "label": "Autonomy Tier Coverage",
+      "short": "Autonomy",
+      "weight": 0.15,
+      "default": 0,
+      "desc": "Whether every production agentic workflow is classified on a defined autonomy ladder, with no workflow operating above its permitted tier without documented exception.",
+      "levels": [
+        {
+          "value": 1,
+          "min": 0,
+          "max": 24,
+          "label": "L1 — Unclassified",
+          "hint": "No formal taxonomy; agents described informally; no tier documentation."
+        },
+        {
+          "value": 2,
+          "min": 25,
+          "max": 49,
+          "label": "L2 — Classified, unvalidated",
+          "hint": "Tier labels applied; no validation the wrapper enforces the tier."
+        },
+        {
+          "value": 3,
+          "min": 50,
+          "max": 74,
+          "label": "L3 — Classified and controlled",
+          "hint": "All workflows tagged L0–4; L5 prohibited; quarterly tier-audit artefacts."
+        },
+        {
+          "value": 4,
+          "min": 75,
+          "max": 100,
+          "label": "L4 — Evidence-ready",
+          "hint": "Complete tier register; continuous drift monitoring; on-demand reconstruction."
+        }
+      ]
+    },
+    {
+      "id": "economics",
+      "label": "Economic Accountability",
+      "short": "Economics",
+      "weight": 0.15,
+      "default": 0,
+      "desc": "Whether agentic AI return is measured with workflow-level unit economics (cost per decision, reversal rate, manual touches avoided, audit-trace completeness) rather than programme-level claims.",
+      "levels": [
+        {
+          "value": 1,
+          "min": 0,
+          "max": 24,
+          "label": "L1 — Budget-level reporting",
+          "hint": "Spend tracked; no workflow-level unit economics."
+        },
+        {
+          "value": 2,
+          "min": 25,
+          "max": 49,
+          "label": "L2 — Aggregate metrics",
+          "hint": "Programme-level metrics; reversal rate not tracked per workflow."
+        },
+        {
+          "value": 3,
+          "min": 50,
+          "max": 74,
+          "label": "L3 — Workflow-level tracking",
+          "hint": "Cost per decision and reversal rate monitored per workflow."
+        },
+        {
+          "value": 4,
+          "min": 75,
+          "max": 100,
+          "label": "L4 — Full economic accountability",
+          "hint": "All four metrics per workflow; >2% reversal triggers review; board-reported."
+        }
+      ]
+    },
+    {
+      "id": "readiness",
+      "label": "Organisational Readiness",
+      "short": "Readiness",
+      "weight": 0.1,
+      "default": 0,
+      "desc": "Whether the institution has the talent, cross-functional governance, board-level reporting and culture to deploy and sustain agentic AI at scale — not just to pilot it.",
+      "levels": [
+        {
+          "value": 1,
+          "min": 0,
+          "max": 24,
+          "label": "L1 — Awareness",
+          "hint": "Board aware; no agent-specific governance; no Chief AI Officer."
+        },
+        {
+          "value": 2,
+          "min": 25,
+          "max": 49,
+          "label": "L2 — Structure forming",
+          "hint": "AI governance function established; risk appetite drafted."
+        },
+        {
+          "value": 3,
+          "min": 50,
+          "max": 74,
+          "label": "L3 — Operational governance",
+          "hint": "Quarterly board dashboard; MRM bench validates 20+ agents per quarter."
+        },
+        {
+          "value": 4,
+          "min": 75,
+          "max": 100,
+          "label": "L4 — Competitive advantage",
+          "hint": "Evidence satisfies FSB Sound Practices 1–4 and DORA Art. 5; 50+ agents per quarter."
+        }
+      ]
+    },
+    {
+      "id": "alignment",
+      "label": "Global Regulatory Alignment",
+      "short": "Alignment",
+      "weight": 0.15,
+      "default": 0,
+      "desc": "Whether the operating model is aligned to the four major regulatory frameworks (US, UK, EU, APAC) and the FSB — and whether that alignment is evidenced, not asserted.",
+      "levels": [
+        {
+          "value": 1,
+          "min": 0,
+          "max": 24,
+          "label": "L1 — Jurisdictional inventory",
+          "hint": "Frameworks identified per jurisdiction; no workflow-level mapping."
+        },
+        {
+          "value": 2,
+          "min": 25,
+          "max": 49,
+          "label": "L2 — Framework mapping",
+          "hint": "Each workflow mapped to frameworks; gaps and remediation drafted."
+        },
+        {
+          "value": 3,
+          "min": 50,
+          "max": 74,
+          "label": "L3 — Evidenced compliance",
+          "hint": "Per-workflow evidence packages; FSB Sound Practices 5–10 mapped."
+        },
+        {
+          "value": 4,
+          "min": 75,
+          "max": 100,
+          "label": "L4 — Proactive engagement",
+          "hint": "Participates in FSB/IOSCO/national consultations; evidence generated automatically."
+        }
+      ]
+    }
+  ],
+  "bands": [
+    {
+      "id": "at-risk",
+      "min": 0,
+      "max": 49,
+      "label": "Indefensible posture",
+      "desc": "Below 50: the institution cannot defend its current agentic AI posture to an SR 11-7 examiner, a PRA on-site review, or an EU AI Act supervisory assessment."
+    },
+    {
+      "id": "developing",
+      "min": 50,
+      "max": 74,
+      "label": "Controls exist, not yet continuous",
+      "desc": "50–74: controls exist but are not yet continuous or evidence-ready."
+    },
+    {
+      "id": "evidence-ready",
+      "min": 75,
+      "max": 100,
+      "label": "Governance as competitive asset",
+      "desc": "75–100: governance is a competitive asset, not a compliance cost."
+    }
+  ]
+}

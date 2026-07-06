@@ -75,5 +75,22 @@
   "changelog.lede": "Alle Artikel, neueste zuerst, nach Monat gruppiert.",
   "whatsNew.title": "Neuigkeiten",
   "whatsNew.cta": "Änderungsprotokoll ansehen",
-  "status.title": "Status"
+  "status.title": "Status",
+  "scorecard.heading": "Bewerten Sie Ihr Institut",
+  "scorecard.intro": "Legen Sie für jede Dimension den aktuellen Reifegrad Ihres Instituts fest. Der Gesamtwert ist nach regulatorischer Wesentlichkeit gewichtet.",
+  "scorecard.dimensionsLegend": "Dimensionen",
+  "scorecard.composite": "Gesamtindexwert",
+  "scorecard.tableCaption": "Ihre Werte nach Dimension",
+  "scorecard.colDimension": "Dimension",
+  "scorecard.colLevel": "Reifegrad",
+  "scorecard.colWeight": "Gewichtung",
+  "scorecard.colScore": "Wert",
+  "scorecard.reset": "Zurücksetzen",
+  "scorecard.share": "Teilbaren Link kopieren",
+  "scorecard.shareCopied": "Link in die Zwischenablage kopiert",
+  "scorecard.download": "PNG herunterladen",
+  "scorecard.downloaded": "Scorecard-Bild heruntergeladen",
+  "scorecard.radarTitle": "Reifegrad-Radar",
+  "scorecard.methodology": "Vollständige Indexmethodik lesen",
+  "scorecard.fallback": "Die Reifegrad-Dimensionen sind oben tabellarisch aufgeführt. Aktivieren Sie JavaScript, um Ihr Institut interaktiv zu bewerten und das Ergebnis zu exportieren."
 }

@@ -75,5 +75,22 @@
   "changelog.lede": "Усі статті, спочатку найновіші, згруповані за місяцями.",
   "whatsNew.title": "Що нового",
   "whatsNew.cta": "Переглянути журнал змін",
-  "status.title": "Статус"
+  "status.title": "Статус",
+  "scorecard.heading": "Оцініть вашу установу",
+  "scorecard.intro": "Установіть для кожного виміру поточний рівень зрілості вашої установи. Зведена оцінка зважується за регуляторною суттєвістю.",
+  "scorecard.dimensionsLegend": "Виміри",
+  "scorecard.composite": "Зведена оцінка індексу",
+  "scorecard.tableCaption": "Ваші оцінки за вимірами",
+  "scorecard.colDimension": "Вимір",
+  "scorecard.colLevel": "Рівень зрілості",
+  "scorecard.colWeight": "Вага",
+  "scorecard.colScore": "Оцінка",
+  "scorecard.reset": "Скинути",
+  "scorecard.share": "Скопіювати посилання для обміну",
+  "scorecard.shareCopied": "Посилання скопійовано до буфера обміну",
+  "scorecard.download": "Завантажити PNG",
+  "scorecard.downloaded": "Зображення оцінкової картки завантажено",
+  "scorecard.radarTitle": "Радар готовності",
+  "scorecard.methodology": "Прочитати повну методологію індексу",
+  "scorecard.fallback": "Виміри зрілості наведено в таблиці вище. Увімкніть JavaScript, щоб інтерактивно оцінити вашу установу та експортувати результат."
 }

@@ -75,5 +75,22 @@
   "changelog.lede": "כל המאמרים, החדשים ביותר תחילה, מקובצים לפי חודש.",
   "whatsNew.title": "מה חדש",
   "whatsNew.cta": "הצג את יומן השינויים",
-  "status.title": "סטטוס"
+  "status.title": "סטטוס",
+  "scorecard.heading": "דרגו את המוסד שלכם",
+  "scorecard.intro": "הגדירו כל ממד לפי רמת הבשלות הנוכחית של המוסד שלכם. הציון המשוקלל נקבע לפי המהותיות הרגולטורית.",
+  "scorecard.dimensionsLegend": "ממדים",
+  "scorecard.composite": "ציון המדד המשוקלל",
+  "scorecard.tableCaption": "הציונים שלכם לפי ממד",
+  "scorecard.colDimension": "ממד",
+  "scorecard.colLevel": "רמת בשלות",
+  "scorecard.colWeight": "משקל",
+  "scorecard.colScore": "ציון",
+  "scorecard.reset": "איפוס",
+  "scorecard.share": "העתקת קישור לשיתוף",
+  "scorecard.shareCopied": "הקישור הועתק ללוח",
+  "scorecard.download": "הורדת PNG",
+  "scorecard.downloaded": "תמונת כרטיס הציונים הורדה",
+  "scorecard.radarTitle": "מכ״ם מוכנות",
+  "scorecard.methodology": "קראו את מתודולוגיית המדד המלאה",
+  "scorecard.fallback": "ממדי הבשלות מוצגים בטבלה שלמעלה. הפעילו JavaScript כדי לדרג את המוסד שלכם באופן אינטראקטיבי ולייצא את התוצאה."
 }

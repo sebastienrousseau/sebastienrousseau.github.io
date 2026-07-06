@@ -75,5 +75,22 @@
   "changelog.lede": "Todos los artículos, del más reciente al más antiguo, agrupados por mes.",
   "whatsNew.title": "Novedades",
   "whatsNew.cta": "Ver el registro de cambios",
-  "status.title": "Estado"
+  "status.title": "Estado",
+  "scorecard.heading": "Evalúe su institución",
+  "scorecard.intro": "Ajuste cada dimensión según la madurez actual de su institución. La puntuación compuesta se pondera por la materialidad regulatoria.",
+  "scorecard.dimensionsLegend": "Dimensiones",
+  "scorecard.composite": "Puntuación del índice compuesto",
+  "scorecard.tableCaption": "Sus puntuaciones por dimensión",
+  "scorecard.colDimension": "Dimensión",
+  "scorecard.colLevel": "Nivel de madurez",
+  "scorecard.colWeight": "Peso",
+  "scorecard.colScore": "Puntuación",
+  "scorecard.reset": "Restablecer",
+  "scorecard.share": "Copiar enlace para compartir",
+  "scorecard.shareCopied": "Enlace copiado al portapapeles",
+  "scorecard.download": "Descargar PNG",
+  "scorecard.downloaded": "Imagen del cuadro de mando descargada",
+  "scorecard.radarTitle": "Radar de preparación",
+  "scorecard.methodology": "Lea la metodología completa del índice",
+  "scorecard.fallback": "Las dimensiones de madurez se presentan en la tabla anterior. Active JavaScript para evaluar su institución de forma interactiva y exportar el resultado."
 }

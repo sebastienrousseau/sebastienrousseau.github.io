@@ -75,5 +75,22 @@
   "changelog.lede": "Alla artiklar, senaste först, grupperade efter månad.",
   "whatsNew.title": "Nyheter",
   "whatsNew.cta": "Visa ändringsloggen",
-  "status.title": "Status"
+  "status.title": "Status",
+  "scorecard.heading": "Bedöm ert institut",
+  "scorecard.intro": "Ställ in varje dimension efter ert instituts nuvarande mognadsnivå. Det sammansatta poängvärdet viktas efter regulatorisk väsentlighet.",
+  "scorecard.dimensionsLegend": "Dimensioner",
+  "scorecard.composite": "Sammansatt indexpoäng",
+  "scorecard.tableCaption": "Era poäng per dimension",
+  "scorecard.colDimension": "Dimension",
+  "scorecard.colLevel": "Mognadsnivå",
+  "scorecard.colWeight": "Vikt",
+  "scorecard.colScore": "Poäng",
+  "scorecard.reset": "Återställ",
+  "scorecard.share": "Kopiera delbar länk",
+  "scorecard.shareCopied": "Länk kopierad till urklipp",
+  "scorecard.download": "Ladda ner PNG",
+  "scorecard.downloaded": "Bild av resultatkort nedladdad",
+  "scorecard.radarTitle": "Beredskapsradar",
+  "scorecard.methodology": "Läs den fullständiga indexmetodiken",
+  "scorecard.fallback": "Mognadsdimensionerna är tabellerade ovan. Aktivera JavaScript för att bedöma ert institut interaktivt och exportera resultatet."
 }
