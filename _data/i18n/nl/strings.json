@@ -61,5 +61,13 @@
   "home.eyebrow.contact": "Neem contact op",
   "home.cta.startConversation": "Start een gesprek",
 
-  "listing.readLatest": "Lees het laatste onderzoek"
+  "listing.readLatest": "Lees het laatste onderzoek",
+
+  "home.readAs.heading": "Lees als…",
+  "home.readAs.groupLabel": "Kies uw leesperspectief",
+  "home.readAs.announce": "Inhoud getoond voor",
+  "home.readAs.everyone": "Iedereen",
+  "home.readAs.boards": "Besturen",
+  "home.readAs.engineers": "Engineers",
+  "home.readAs.regulators": "Toezichthouders"
 }

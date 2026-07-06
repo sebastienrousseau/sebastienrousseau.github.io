@@ -51,5 +51,13 @@
   "feeds.channelDescription": "Labaran Hausa: AI mai amfani, biyan kuɗi na ISO 20022, kiriftografi bayan kwantum da sauye-sauyen biyan kuɗi na manyan.",
   "feeds.channelCopyright": "© Copyright 2007 - 2026 - Sebastien Rousseau. An kiyaye duk hakkokin.",
   "feeds.jsonFeedTitle": "Sebastien Rousseau — Labarai (Hausa)",
-  "newsletter.placeholder": "kai@banki.com.ng"
+  "newsletter.placeholder": "kai@banki.com.ng",
+
+  "home.readAs.heading": "Karanta a matsayin…",
+  "home.readAs.groupLabel": "Zaɓi hangen karatun ka",
+  "home.readAs.announce": "Ana nuna abun ciki don",
+  "home.readAs.everyone": "Kowa",
+  "home.readAs.boards": "Kwamitocin gudanarwa",
+  "home.readAs.engineers": "Injiniyoyi",
+  "home.readAs.regulators": "Masu tsara ka’ida"
 }

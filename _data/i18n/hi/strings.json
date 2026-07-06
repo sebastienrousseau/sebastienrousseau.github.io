@@ -61,5 +61,13 @@
   "home.eyebrow.contact": "संपर्क करें",
   "home.cta.startConversation": "बातचीत शुरू करें",
 
-  "listing.readLatest": "नवीनतम शोध पढ़ें"
+  "listing.readLatest": "नवीनतम शोध पढ़ें",
+
+  "home.readAs.heading": "इस रूप में पढ़ें…",
+  "home.readAs.groupLabel": "अपना पठन दृष्टिकोण चुनें",
+  "home.readAs.announce": "इनके लिए सामग्री दिखा रहे हैं",
+  "home.readAs.everyone": "सभी",
+  "home.readAs.boards": "बोर्ड",
+  "home.readAs.engineers": "इंजीनियर",
+  "home.readAs.regulators": "नियामक"
 }

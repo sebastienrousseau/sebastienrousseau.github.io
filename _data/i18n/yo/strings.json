@@ -51,5 +51,13 @@
   "feeds.channelDescription": "Awọn akọle Yorùbá: AI tó wúlò, ìsanwó ISO 20022, kírípítógíráfì lẹ́yìn-kuántọ́mù, àti àtúnṣe ètò ìsanwó ńláńlá.",
   "feeds.channelCopyright": "© Copyright 2007 - 2026 - Sebastien Rousseau. Gbogbo ẹtọ ti wa ni ipamọ.",
   "feeds.jsonFeedTitle": "Sebastien Rousseau — Awọn Akole (Yorùbá)",
-  "newsletter.placeholder": "iwo@banki.com.ng"
+  "newsletter.placeholder": "iwo@banki.com.ng",
+
+  "home.readAs.heading": "Kà gẹ́gẹ́ bí…",
+  "home.readAs.groupLabel": "Yan ojú-ìwòye kíkà rẹ",
+  "home.readAs.announce": "Ń ṣàfihàn àkóónú fún",
+  "home.readAs.everyone": "Gbogbo ènìyàn",
+  "home.readAs.boards": "Àwọn Bọ́ọ̀dù",
+  "home.readAs.engineers": "Àwọn Onímọ̀-ẹ̀rọ",
+  "home.readAs.regulators": "Àwọn Alátòsẹ́"
 }

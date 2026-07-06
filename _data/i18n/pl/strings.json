@@ -61,5 +61,13 @@
   "home.eyebrow.contact": "Skontaktuj się",
   "home.cta.startConversation": "Rozpocznij rozmowę",
 
-  "listing.readLatest": "Przeczytaj najnowsze badania"
+  "listing.readLatest": "Przeczytaj najnowsze badania",
+
+  "home.readAs.heading": "Czytaj jako…",
+  "home.readAs.groupLabel": "Wybierz perspektywę czytania",
+  "home.readAs.announce": "Wyświetlanie treści dla",
+  "home.readAs.everyone": "Wszyscy",
+  "home.readAs.boards": "Zarządy",
+  "home.readAs.engineers": "Inżynierowie",
+  "home.readAs.regulators": "Regulatorzy"
 }

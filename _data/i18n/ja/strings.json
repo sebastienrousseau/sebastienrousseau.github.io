@@ -61,5 +61,13 @@
   "home.eyebrow.contact": "お問い合わせ",
   "home.cta.startConversation": "対話を始める",
 
-  "listing.readLatest": "最新のリサーチを読む"
+  "listing.readLatest": "最新のリサーチを読む",
+
+  "home.readAs.heading": "読者の視点…",
+  "home.readAs.groupLabel": "読む視点を選択",
+  "home.readAs.announce": "表示中のコンテンツ対象",
+  "home.readAs.everyone": "すべての方",
+  "home.readAs.boards": "経営層",
+  "home.readAs.engineers": "エンジニア",
+  "home.readAs.regulators": "規制当局"
 }

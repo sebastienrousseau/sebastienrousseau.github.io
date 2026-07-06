@@ -61,5 +61,13 @@
   "home.eyebrow.contact": "Ta kontakt",
   "home.cta.startConversation": "Inled ett samtal",
 
-  "listing.readLatest": "Läs senaste forskningen"
+  "listing.readLatest": "Läs senaste forskningen",
+
+  "home.readAs.heading": "Läs som…",
+  "home.readAs.groupLabel": "Välj ditt läsperspektiv",
+  "home.readAs.announce": "Visar innehåll för",
+  "home.readAs.everyone": "Alla",
+  "home.readAs.boards": "Styrelser",
+  "home.readAs.engineers": "Ingenjörer",
+  "home.readAs.regulators": "Tillsynsmyndigheter"
 }

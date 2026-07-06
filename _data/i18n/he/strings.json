@@ -61,5 +61,13 @@
   "home.eyebrow.contact": "צרו קשר",
   "home.cta.startConversation": "התחילו שיחה",
 
-  "listing.readLatest": "קראו את המחקר האחרון"
+  "listing.readLatest": "קראו את המחקר האחרון",
+
+  "home.readAs.heading": "קרא בתור…",
+  "home.readAs.groupLabel": "בחר את זווית הקריאה שלך",
+  "home.readAs.announce": "מציג תוכן עבור",
+  "home.readAs.everyone": "כולם",
+  "home.readAs.boards": "דירקטוריונים",
+  "home.readAs.engineers": "מהנדסים",
+  "home.readAs.regulators": "רגולטורים"
 }

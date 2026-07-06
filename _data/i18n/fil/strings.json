@@ -61,5 +61,13 @@
   "home.eyebrow.contact": "Makipag-ugnayan",
   "home.cta.startConversation": "Magsimula ng usapan",
 
-  "listing.readLatest": "Basahin ang pinakabagong research"
+  "listing.readLatest": "Basahin ang pinakabagong research",
+
+  "home.readAs.heading": "Basahin bilang…",
+  "home.readAs.groupLabel": "Piliin ang iyong pananaw sa pagbasa",
+  "home.readAs.announce": "Ipinapakita ang nilalaman para sa",
+  "home.readAs.everyone": "Lahat",
+  "home.readAs.boards": "Mga board",
+  "home.readAs.engineers": "Mga inhinyero",
+  "home.readAs.regulators": "Mga regulator"
 }

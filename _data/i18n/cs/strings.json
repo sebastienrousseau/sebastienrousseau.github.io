@@ -51,5 +51,13 @@
   "newsletter.submit": "Přihlásit se k odběru",
   "home.eyebrow.contact": "Kontaktovat",
   "home.cta.startConversation": "Zahájit konverzaci",
-  "listing.readLatest": "Číst nejnovější výzkum"
+  "listing.readLatest": "Číst nejnovější výzkum",
+
+  "home.readAs.heading": "Číst jako…",
+  "home.readAs.groupLabel": "Vyberte si perspektivu čtení",
+  "home.readAs.announce": "Zobrazuji obsah pro",
+  "home.readAs.everyone": "Všichni",
+  "home.readAs.boards": "Představenstva",
+  "home.readAs.engineers": "Inženýři",
+  "home.readAs.regulators": "Regulátoři"
 }
