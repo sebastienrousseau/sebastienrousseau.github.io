@@ -84,7 +84,7 @@ commit-signing key is active before committing.
 <summary>Manual setup (without mise)</summary>
 
 ```bash
-cargo install ssg --locked --version 0.0.44   # Rust SSG compiler (pinned, ADR-0002)
+cargo install ssg --locked --version 0.0.46   # Rust SSG compiler (pinned, ADR-0002)
 pip install -r requirements.txt               # Python build dependencies
 ./build.sh                                     # emits public/ across 28 locales
 ```
@@ -259,7 +259,7 @@ the full build with its 37 in-build gates (CSP, SRI, i18n parity/hreflang,
 search-index), the unit suite against the freshly-built tree, then JSON-LD
 validation, a strict internal-link audit, and SBOM generation — the same set CI
 enforces before deploy. Run it after `make bootstrap` (it needs the pinned
-`ssg` 0.0.44).
+`ssg` 0.0.46).
 
 ## CI gates
 
