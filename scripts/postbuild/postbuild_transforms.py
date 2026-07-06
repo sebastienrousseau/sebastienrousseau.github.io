@@ -16,24 +16,20 @@ import re
 import sys
 from collections.abc import Callable
 from pathlib import Path
-from typing import TYPE_CHECKING
+from typing import Any
 
 import rjsmin
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-import postbuild_assets as _pa
-from postbuild_assets import _build_cdn_transform_url
+from postbuild_assets import _CDN_HOST, _build_cdn_transform_url
 from postbuild_lib._i18n import _all_active_non_en_langs, _slug_maps
 from postbuild_lib.hreflang import _resolve_en_slug
-
-if TYPE_CHECKING:
-    from postbuild import _PostbuildContext, _PostbuildCounters
 
 PUBLIC = Path("public")
 _theme_init_src_path = Path("_layouts/theme-init.js")
 
 _PERSISTED_TRANSFORM_RE = re.compile(
-    re.escape(_pa._CDN_HOST)
+    re.escape(_CDN_HOST)
     + r"/api/transform\?url=(?P<path>/[^&\"' ]+)(?:&[^\"' ]*?w=(?P<w>\d+))?[^\"' ]*"
 )
 def _rewrite_persisted_transform(match: re.Match[str]) -> str:
@@ -184,7 +180,7 @@ def scrub_localhost_urls(html: str) -> tuple[str, int]:
     new = _LOCALHOST_HOST_RE.sub("https://sebastienrousseau.com", html)
     n = 0 if new == html else 1
     return new, n
-def _bump(fn: Callable[[str], str], html: str, ctr: _PostbuildCounters, attr: str) -> str:
+def _bump(fn: Callable[[str], str], html: str, ctr: Any, attr: str) -> str:
     """Run a one-arg HTML→HTML injector, bump ``ctr.<attr>`` if the page
     actually changed, return the new HTML. Centralises the
     ``prev = out; out = fn(out); if out != prev: ctr.X += 1`` pattern
@@ -262,7 +258,7 @@ def build_comprehensive_lastmod_index() -> dict[str, str]:
         if last:
             out[md.stem] = _parse_lastmod_date(last)
     return out
-def update_last_modified_date(html: str, page: Path, ctx: _PostbuildContext) -> str:
+def update_last_modified_date(html: str, page: Path, ctx: Any) -> str:
     """Update `<meta itemprop="dateModified" content="..." id="last-modified" />`
     to the dynamic `last_reviewed` date from the source page's frontmatter."""
     from datetime import date

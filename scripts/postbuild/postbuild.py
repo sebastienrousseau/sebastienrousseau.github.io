@@ -25,11 +25,11 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 
 PUBLIC = Path("public")
-import postbuild_assets as _pa
 from postbuild_assets import (
     fix_sri,
     inject_jsonld_hashes,
     inject_lcp_preload,
+    setup_asset_state,
     stamp_asset_fingerprints,
     wrap_cdn_images_in_transform,
 )
@@ -49,7 +49,7 @@ from postbuild_transforms import (
 # Asset setup (minify -> SRI hashes -> fingerprint map/pattern) runs once at
 # import time, in order, inside postbuild_assets; the minify stats feed the
 # _finalize_build summary.
-_ASSET_STATS = _pa.setup_asset_state(PUBLIC)
+_ASSET_STATS = setup_asset_state(PUBLIC)
 
 
 # ---------------------------------------------------------------------------
@@ -141,15 +141,6 @@ _ASSET_STATS = _pa.setup_asset_state(PUBLIC)
 # theme bootstrap. Each one needs its own sha256 in CSP script-src.
 
 # ---------------------------------------------------------------------------
-# Inline theme-init.js. The original 589-byte file was render-blocking
-# (~300 ms wasted on slow 4G per Lighthouse). Inlining the minified
-# bootstrap removes the network round-trip entirely and lands the CSS
-# request earlier — but the script must still run before paint, so it
-# stays in <head> as an inline <script>. Its SHA-256 is collected by
-# inject_jsonld_hashes() and added to script-src.
-_theme_init_src_path = Path("_layouts/theme-init.js")
-# Match the external theme-init reference in any layout-emitted form
-# (quoted, unquoted, with or without trailing slash on the close tag).
 
 
 # Match the CSP meta tag whether attributes are quoted or not, in either order
@@ -238,6 +229,7 @@ from postbuild_lib.html_passes import (
     inject_table_labels,
     strip_duplicate_body_h1,
 )
+from postbuild_lib.index_scorecard import inject_index_scorecard
 from postbuild_lib.navigation import (
     build_post_nav_index,
     inject_anchor_links_and_toc,
@@ -477,6 +469,11 @@ def _apply_article_passes(html: str, page: Path, ctr: _PostbuildCounters) -> str
     out = _bump(inject_sources_list, out, ctr, "sources_patched")
     out = _bump(inject_mermaid, out, ctr, "mermaid_patched")
     out = _bump(inject_footnotes, out, ctr, "footnotes_set")
+    # Interactive index scorecard — upgrade the authored mount marker into the
+    # inert <index-scorecard> element + data island + module script. Runs after
+    # fix_sri (in _apply_seo_passes), so the module script's SRI is stamped by
+    # the pass itself. Idempotent + a no-op on pages without the marker.
+    out = inject_index_scorecard(out)
     out = _bump(inject_share_rail, out, ctr, "share_rails_set")
     out = _bump(inject_action_rail, out, ctr, "action_rails_set")
     # Wrap-foot stack — order matters: each _WRAP_CLOSE_RE.sub inserts

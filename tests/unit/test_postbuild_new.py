@@ -150,9 +150,9 @@ def _stub_asset(name: str, body: bytes, monkeypatch) -> str:
     space-separated ``sha256-<b64>`` tokens) for ``name`` and return
     the first token's base64 digest for legacy single-token assertions."""
     integrity = pa._candidate_digests(body)
-    new = dict(pb._pa.asset_hashes)
+    new = dict(pa.asset_hashes)
     new[name] = integrity
-    monkeypatch.setattr(pb._pa, "asset_hashes", new)
+    monkeypatch.setattr(pa, "asset_hashes", new)
     # Return just the first token's b64 (for assertions like
     # ``f"sha256-{digest}" in out``).
     return integrity.split()[0].removeprefix("sha256-")

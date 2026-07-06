@@ -105,15 +105,15 @@ site_software: "Static Site Generator, Rust"
 <header class="newsroom-section-head"><p class="newsroom-kicker">FEATURED</p><h2>Latest story</h2></header>
 
 <article class="newsroom-featured">
-<a class="newsroom-featured-media" href="/2026-06-30-agentic-ai-index-banks-measuring-autonomy-2026/index.html" title="The Agentic AI Index for Banks in 2026: Measuring Autonomy">
+<a class="newsroom-featured-media" href="/2026-07-01-agentic-ai-index-banks-measuring-autonomy-2026/index.html" title="The Agentic AI Index for Banks in 2026: Measuring Autonomy">
 <img alt="A bank operations centre at night with analysts monitoring autonomous decisioning dashboards, representing measurable agentic AI governance." src="https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp" loading="eager" fetchpriority="high" decoding="async" width="800" height="800" />
 </a>
 <div class="newsroom-featured-body">
 <span class="newsroom-eyebrow">Agentic Ai · Ai Governance · Banking</span>
-<h3><a href="/2026-06-30-agentic-ai-index-banks-measuring-autonomy-2026/index.html" title="The Agentic AI Index for Banks in 2026: Measuring Autonomy">The Agentic AI Index for Banks in 2026: Measuring Autonomy</a></h3>
-<p class="newsroom-meta"><time datetime="2026-06-30">June 30, 2026</time> · Sebastien Rousseau</p>
+<h3><a href="/2026-07-01-agentic-ai-index-banks-measuring-autonomy-2026/index.html" title="The Agentic AI Index for Banks in 2026: Measuring Autonomy">The Agentic AI Index for Banks in 2026: Measuring Autonomy</a></h3>
+<p class="newsroom-meta"><time datetime="2026-07-01">July 1, 2026</time> · Sebastien Rousseau</p>
 <p>Agentic AI is operational infrastructure in 2026. This index measures it the way banks measure capital and credit: a six-dimension readiness score across autonomy tiers, the control plane, regulatory evidence, unit economics, organisational readiness, and global regulatory alignment.</p>
-<p><a class="pill ghost" href="/2026-06-30-agentic-ai-index-banks-measuring-autonomy-2026/index.html" title="The Agentic AI Index for Banks in 2026: Measuring Autonomy">Read the full story</a></p>
+<p><a class="pill ghost" href="/2026-07-01-agentic-ai-index-banks-measuring-autonomy-2026/index.html" title="The Agentic AI Index for Banks in 2026: Measuring Autonomy">Read the full story</a></p>
 </div>
 </article>
 
