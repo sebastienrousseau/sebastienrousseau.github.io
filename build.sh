@@ -50,6 +50,10 @@ python3 scripts/postbuild/post_enrich.py --dir _posts_build
 # editorial pillar grid replaces the legacy monolithic anchor list.
 # Lenient on missing taxonomy (WS3 commit 1 must have shipped first).
 python3 scripts/generators/build_tags.py --dir _posts_build
+# Backfill a permalink into any archive post that predates the convention.
+# ssg >=0.0.45 derives the RSS channel <link> from permalink and aborts if
+# it is missing; source stays untouched (build-copy only). See ADR-0002.
+python3 scripts/postbuild/backfill_permalink.py --dir _posts_build
 
 # Compile the site from the temporary directory instead of _posts
 ssg -n=docs -c=_posts_build -t=_layouts -o=public
@@ -59,6 +63,25 @@ rm -rf _posts_build
 
 # Static Site Generator doesn't pick up theme-init.js as a managed asset; we ship it as-is.
 cp -f _layouts/theme-init.js public/theme-init.js
+
+# On-site search runtime (DX plan Phase 2, ADR-0010). Same hands-off pattern as
+# theme-init.js: SSG doesn't manage these, so ship them verbatim to public/. Both
+# are lazy-loaded on first Cmd/Ctrl-K (or on /search) by main.js — never on the
+# initial LCP path — and are same-origin under script-src/style-src 'self', so
+# they need no CSP change and no SRI attribute. postbuild minifies them in place.
+cp -f _layouts/search.js public/search.js
+cp -f _layouts/search.css public/search.css
+# Interactive <index-scorecard> web component (progressive enhancement — see
+# docs/adr/0001-index-scorecard-architecture.md). Stage the component + its
+# pure scoring core into public/_csp/ *before* postbuild runs so the existing
+# asset pipeline minifies them, computes their SRI digest, and the injection
+# pass can stamp integrity="sha256-…" on the module <script>. script-src 'self'
+# already permits same-origin modules; no CSP change is required.
+if [[ -d assets/js/index-scorecard ]]; then
+  mkdir -p public/_csp
+  cp -f assets/js/index-scorecard/scoring.js public/_csp/scoring.js
+  cp -f assets/js/index-scorecard/index-scorecard.js public/_csp/index-scorecard.js
+fi
 
 # Mirror .well-known/ into the build output so the OpenPGP Web Key
 # Directory (WKD) endpoint is served at
@@ -199,10 +222,22 @@ python3 scripts/generators/build_listings.py
 # rich link card when readers paste-share a sebastienrousseau.com URL.
 python3 scripts/generators/build_oembed.py
 python3 scripts/generators/build_translations/__main__.py
+# Per-locale search UI microcopy (search-ui.json) for the client-side search
+# runtime — projected from _data/i18n/<lang>/strings.json (ADR-0010). Runs after
+# build_translations so every public/<lang>/ directory exists.
+python3 scripts/generators/build_search_ui.py
 python3 scripts/generators/build_lang_feeds.py
 python3 scripts/generators/build_agent_api.py
 python3 scripts/generators/build_lead_magnets.py
 python3 scripts/generators/build_news_sitemap.py
+# Changelog + "what's new" strip + build/deploy/uptime status (Phase 5).
+# Runs AFTER build_translations so the homepage strip only lands on the
+# English public/index.html (locale homepages are forked earlier and must
+# not carry untranslated English entries), and BEFORE postbuild so the new
+# /changelog/ + /status/ pages are picked up by the sitemap-augment pass and
+# their inline JSON-LD is hashed into the per-page CSP. Deterministic:
+# derives from committed dated-post front matter, no wall-clock time.
+python3 scripts/generators/build_changelog.py
 python3 scripts/postbuild/postbuild.py
 # RAG-ready corpus export — JSONL one-object-per-article + per-tag
 # subsets. Consumed by Claude / ChatGPT / Perplexity / LangChain etc.
@@ -232,6 +267,7 @@ fi
 # machine) without breaking the build — the committed bundles still ship.
 python3 scripts/security/sigstore_sign.py || true
 python3 tests/validation/test_search_indexes.py
+python3 tests/validation/test_search_ui_parity.py
 python3 tests/validation/test_i18n_parity.py
 python3 tests/validation/test_i18n_strings.py
 python3 tests/validation/test_i18n_labels.py
@@ -289,6 +325,17 @@ if command -v node >/dev/null 2>&1; then
     --test-coverage-functions=100 \
     --test-coverage-include='workers/pdf-proxy.js' \
     workers/test_pdf_proxy.mjs
+  # index-scorecard scoring core — the single source of truth for the
+  # self-assessment composite maths + URL-state codec, imported unchanged by
+  # the browser component. Golden-file pinned + gated at 100/100/100 so the
+  # number a reader shares can never silently drift.
+  node --test \
+    --experimental-test-coverage \
+    --test-coverage-lines=100 \
+    --test-coverage-branches=100 \
+    --test-coverage-functions=100 \
+    --test-coverage-include='assets/js/index-scorecard/scoring.js' \
+    tests/unit/index-scorecard/scoring.test.mjs
 fi
 
 # Deployment is the public/ Pages artifact uploaded by CI

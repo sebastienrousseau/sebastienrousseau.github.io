@@ -1,0 +1,14 @@
+{
+  "spec": "agentic-ai-index-banks-2026",
+  "note": "Golden fixture pinning the index-scorecard score computation. Regenerate deliberately only when the scoring contract intentionally changes; a diff here is a behaviour change the reader will see. See tests/unit/index-scorecard/scoring.test.mjs.",
+  "cases": {
+    "all-zero": { "scores": [0, 0, 0, 0, 0, 0], "composite": 0, "band": "at-risk" },
+    "all-max": { "scores": [100, 100, 100, 100, 100, 100], "composite": 100, "band": "evidence-ready" },
+    "all-l3-mid": { "scores": [62, 62, 62, 62, 62, 62], "composite": 62, "band": "developing" },
+    "all-l4-mid": { "scores": [88, 88, 88, 88, 88, 88], "composite": 88, "band": "evidence-ready" },
+    "descending": { "scores": [80, 70, 60, 50, 40, 30], "composite": 59, "band": "developing" },
+    "governance-heavy": { "scores": [100, 0, 0, 0, 0, 0], "composite": 25, "band": "at-risk" },
+    "out-of-range-clamped": { "scores": [150, -20, 62, 62, 62, 62], "composite": 59, "band": "developing" },
+    "boundary-49-50": { "scores": [50, 50, 49, 49, 49, 49], "composite": 49, "band": "at-risk" }
+  }
+}

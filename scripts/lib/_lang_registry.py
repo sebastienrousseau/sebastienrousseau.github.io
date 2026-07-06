@@ -383,6 +383,14 @@ _STRINGS_KEY_TO_PATCH: tuple[tuple[str, str], ...] = (
     ("author.fullProfile", "text-a"),
     ("author.alt.portrait", "attr:alt"),
     ("home.cta.startConversation", "text-a"),
+    # Phase 8 — "Read as…" audience path selector (homepage lens).
+    ("home.readAs.heading", "text-span"),
+    ("home.readAs.groupLabel", "attr:aria-label"),
+    ("home.readAs.announce", "attr:data-announce"),
+    ("home.readAs.everyone", "text-button"),
+    ("home.readAs.boards", "text-button"),
+    ("home.readAs.engineers", "text-button"),
+    ("home.readAs.regulators", "text-button"),
 )
 
 

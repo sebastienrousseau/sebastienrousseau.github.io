@@ -32,7 +32,7 @@ Pin every build toolchain to an exact version, bump deliberately:
 
 | Tool | Pin |
 |---|---|
-| `ssg` | `0.0.44` (via `cargo install ssg --locked --version 0.0.44`) |
+| `ssg` | `0.0.46` (via `cargo install ssg --locked --version 0.0.46`) |
 | `ruff` | exact `0.15.x` patch |
 | `pa11y-ci` | exact `4.1.1` |
 | `@lhci/cli` | exact `0.14.0` |
@@ -57,3 +57,15 @@ adopting them is behaviour-neutral — it only locks the floor.
 - **+** A toolchain bump is now an explicit, reviewable event.
 - **−** Manual bumps required to pick up upstream fixes (acceptable trade-off;
   reproducibility outranks always-latest per `mise.toml`).
+
+## History
+
+- **2026-07-03 — `ssg` `0.0.44` → `0.0.46`.** 0.0.46 tightened RSS validation:
+  it derives the channel `<link>` from each post's `permalink` and aborts with
+  `channel.link is missing` when absent. ~963 older locale posts (2018–2024)
+  predate the permalink convention, so the bump required a build-time
+  `permalink` backfill (`scripts/postbuild/backfill_permalink.py`, run on the
+  `_posts_build` copy — committed source is untouched) rather than editing the
+  archive. The residual `structured_data: title` and `news_sitemap: day`
+  messages are non-fatal warnings (present on 0.0.44 too) and do not block the
+  build. Bumped across all five workflows + `Makefile` + `mise.toml` + `README`.
