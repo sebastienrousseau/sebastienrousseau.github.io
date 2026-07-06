@@ -1,6 +1,6 @@
 ---
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
-banner_alt: "Abstract horizon of converging signal lines — AI, synthetic media, and programmable-money rails resolving over a banking skyline, evoking a supervisory scan of emerging-technology risk for financial services in 2026"
+banner_alt: "Birleşen sinyal çizgilerinin soyut ufku — bir banka silüetinin üzerinde çözülen YZ, sentetik medya ve programlanabilir para rayları; 2026'da finansal hizmetler için gelişen teknoloji riskinin denetim taramasını çağrıştırıyor"
 banner_height: "1280"
 banner_width: "1920"
 banner: "https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp"
@@ -9,7 +9,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "July 3, 2026"
-description: "An original reading of the 2026 emerging-technology risk horizon for banks — personalised AI intelligence, synthetic financial crime, and programmable finance — with a signal-to-supervision framework, drawing on the FCA's Technology Horizon Scan 2026."
+description: "2026'da bankalar için gelişen teknoloji risk ufkunun özgün bir okuması — kişiselleştirilmiş YZ zekâsı, sentetik finansal suç ve programlanabilir finans — FCA'nın Technology Horizon Scan 2026 belgesine dayanan bir sinyal-denetim çerçevesiyle."
 format-detection: "telephone=no"
 hreflang: "tr"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -35,9 +35,9 @@ rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
 schema: "FAQPage, Article"
-seo_title: "Reading the Emerging-Technology Risk Horizon for Banks in 2026"
+seo_title: "2026'da bankalar için gelişen teknoloji risk ufkunu okumak"
 short_name: "sebastienrousseau"
-subtitle: "Three technology vectors — personalised intelligence, synthetic (in)security, and programmable finance — are converging on banking at once. A signal-to-supervision reading of what changes, and what boards should do before the risks arrive."
+subtitle: "Üç teknoloji vektörü — kişiselleştirilmiş zekâ, sentetik (güven)sizlik ve programlanabilir finans — bankacılığa aynı anda yaklaşıyor. Neyin değiştiğine ve yönetim kurullarının riskler gelmeden önce ne yapması gerektiğine dair sinyal-denetim okuması."
 tags: "emerging technology, horizon scanning, FCA, personalised intelligence, agentic AI, synthetic fraud, deepfakes, programmable finance, tokenisation, stablecoins, financial crime, consumer duty, banking regulation, operational resilience, risk signals"
 theme-color: "0, 83, 191"
 title: "Reading the Emerging-Technology Risk Horizon for Banks in 2026"
@@ -63,7 +63,7 @@ apple_touch_icon_sizes: "192x192"
 apple-mobile-web-app-capable: "yes"
 apple-mobile-web-app-status-bar-inset: "black"
 apple-mobile-web-app-status-bar-style: "black-translucent"
-apple-mobile-web-app-title: "Emerging-Tech Horizon 2026"
+apple-mobile-web-app-title: "Teknoloji ufku 2026"
 apple-touch-fullscreen: "yes"
 msapplication-navbutton-color: "0, 83, 191"
 twitter_card: "summary_large_image"
@@ -84,85 +84,81 @@ site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 ---
 
-<!-- translation-stub: replace this body in Claude Code -->
+# 2026'da bankalar için gelişen teknoloji risk ufkunu okumak
 
-> _Translation pending — read the [English original](/2026-07-03-emerging-technology-risk-horizon-banks-2026/) while we localise._
+Denetçilerin gelecek hakkında konuşma biçiminde bir şey değişti. Yıllarca duruş tepkiseldi: bir teknoloji gelir, bir zarar ortaya çıkar, bir kural gelir. 2026'da ton farklı. Düzenleyiciler ufku *yüksek sesle* tarıyor — gelişen teknolojilerin birisi zarar görmeden önce nasıl birleşebileceğine dair yapılandırılmış, bağlayıcı olmayan okumalar yayımlıyorlar. Birleşik Krallık Financial Conduct Authority'nin *Technology Horizon Scan 2026* belgesi en açık örnektir; kendisini düzenleyicinin türünün ilk harici yayını olarak tanımlar ve gelişen teknolojilerin tüketiciler, firmalar ve piyasalar için sonuçları yeniden şekillendirebileceği üç makul yolu ortaya koyar.
 
-# Reading the Emerging-Technology Risk Horizon for Banks in 2026
+Bu kayma, içindeki herhangi bir tahminden daha ağır basar. Ufku kamuya açık şekilde tarayan bir düzenleyici, denetim *anının* yukarı akışa kaydığını işaret eder — zarardan sonraki icradan zarardan önceki öngörüye. Bankalar için pratik soru artık «hangi teknolojiyi benimsemeliyiz?» değil, «denetçilerimizin şimdi okuduğu aynı sinyalleri okuyabilir ve önce hareket edebilir miyiz?» şeklindedir. Bu makale o ufkun bir okumasıdır: bankacılığa aynı anda yaklaşan üç teknoloji vektörü ve riskler ölçeklenmeden önce zayıf sinyalleri denetim kalitesinde eyleme dönüştürmeye yönelik bir çerçeve.
 
-Something changed in how supervisors talk about the future. For years the posture was reactive: a technology arrives, harm surfaces, a rule follows. In 2026 the tone is different. Regulators are scanning the horizon *out loud* — publishing structured, non-binding readings of where emerging technologies might combine before anyone has been harmed. The UK Financial Conduct Authority's *Technology Horizon Scan 2026* is the clearest example, describing itself as the regulator's first external publication of its kind and setting out three plausible ways emerging technologies could reshape outcomes for consumers, firms, and markets.
-
-That shift matters more than any single prediction inside it. A regulator that scans the horizon in public is signalling that the *timing* of oversight is moving upstream — from post-harm enforcement toward pre-harm anticipation. For banks, the practical question is no longer "which technology should we adopt?" but "can we read the same signals our supervisors are now reading, and act on them first?" This piece is one reading of that horizon: three technology vectors converging on banking at once, and a framework for turning weak signals into supervisory-grade action before the risks scale.
-
-> **Executive summary / key takeaways**
+> **Yönetici özeti / temel çıkarımlar**
 >
-> - **Three vectors, one arrival window.** Personalised AI intelligence, synthetic (in)security, and programmable finance are not sequential waves — they are converging on the same 2026–2028 window, and they amplify each other.
-> - **The harm curve moved left.** Supervisors are publishing horizon scans precisely because these technologies compress the distance between "novel" and "systemic." Reactive controls arrive too late by construction.
-> - **Signals beat forecasts.** You cannot predict which scenario lands; you can instrument for the *early signals* each one emits and pre-authorise the response.
-> - **Governance is the differentiator.** The banks that fare best will not be those with the most AI — they will be those that can *evidence* how they read, escalated, and contained an emerging risk. That is a board-level capability, not a lab experiment.
+> - **Üç vektör, tek varış penceresi.** Kişiselleştirilmiş YZ zekâsı, sentetik (güven)sizlik ve programlanabilir finans ardışık dalgalar değildir — aynı 2026-2028 penceresinde birleşir ve birbirlerini güçlendirirler.
+> - **Zarar eğrisi sola kaydı.** Denetçiler ufuk taramalarını tam da bu teknolojiler «yeni» ile «sistemik» arasındaki mesafeyi sıkıştırdığı için yayımlıyor. Tepkisel kontroller yapısı gereği çok geç gelir.
+> - **Sinyaller tahminleri yener.** Hangi senaryonun gerçekleşeceğini öngöremezsiniz; her birinin yaydığı *erken sinyaller* için kendinizi donatabilir ve yanıtı önceden yetkilendirebilirsiniz.
+> - **Yönetişim ayırt edici faktördür.** En iyi durumda olan bankalar en fazla YZ'ye sahip olanlar değil — gelişen bir riski nasıl okuduklarını, tırmandırdıklarını ve kontrol altına aldıklarını *kanıtlayabilenler* olacaktır. Bu, bir laboratuvar deneyi değil, yönetim kurulu düzeyinde bir yetenektir.
 
-## The three vectors, and why they converge
+## Üç vektör ve neden birleştikleri
 
-The instinct is to treat emerging technologies as a queue — deal with AI, then digital assets, then whatever follows. The horizon-scanning frame breaks that instinct: it insists the interesting risk lives in *combination*. Three vectors dominate the 2026 reading.
+İçgüdü gelişen teknolojileri bir kuyruk gibi ele alır — YZ'yi halledin, sonra dijital varlıkları, sonra sırada ne varsa. Ufuk tarama çerçevesi bu içgüdüyü kırar: ilginç riskin *kombinasyonda* yattığında ısrar eder. 2026 okumasına üç vektör hâkimdir.
 
-**Personalised intelligence.** Widely available AI, combined with granular behavioural and financial data, lets systems tailor persuasion, pricing, and interaction to the individual in real time. The upside is genuine — delegated, agentic interactions that act on a consumer's behalf. The risk is that the same personalisation that serves a customer can be turned to exploit them: hyper-targeted pressure, opaque price discrimination, and agentic systems transacting faster than any human review loop. When the interface itself is optimising against the consumer's interest, "informed consent" becomes a fiction.
+**Kişiselleştirilmiş zekâ.** Yaygın olarak erişilebilir YZ, ayrıntılı davranışsal ve finansal verilerle birleştiğinde, sistemlerin ikna, fiyatlandırma ve etkileşimi gerçek zamanlı olarak bireye göre uyarlamasına olanak tanır. Potansiyel gerçektir — bir tüketici adına hareket eden yetkilendirilmiş, aracı etkileşimler. Risk, bir müşteriye hizmet eden aynı kişiselleştirmenin onu sömürmeye çevrilebilmesidir: aşırı hedefli baskı, opak fiyat ayrımcılığı ve herhangi bir insan inceleme döngüsünden daha hızlı işlem yapan aracı sistemler. Arayüzün kendisi tüketicinin çıkarına karşı optimize ettiğinde, «bilgilendirilmiş rıza» bir kurguya dönüşür.
 
-**Synthetic (in)security.** Generative models have industrialised the raw materials of financial crime — synthetic identities, voice and video deepfakes, fabricated documents, and automated social engineering at scale. The defensive assumptions of KYC, authentication, and fraud detection were built for a world where forging a convincing identity was expensive. That cost has collapsed. Synthetic crime does not merely increase fraud volume; it dissolves the evidentiary basis on which "who did this?" can be answered at all.
+**Sentetik (güven)sizlik.** Üretken modeller finansal suçun ham maddelerini sanayileştirdi — sentetik kimlikler, ses ve video deepfake'leri, uydurma belgeler ve ölçekte otomatikleştirilmiş sosyal mühendislik. KYC, kimlik doğrulama ve dolandırıcılık tespitinin savunma varsayımları, ikna edici bir kimlik sahtelemenin pahalı olduğu bir dünya için tasarlandı. O maliyet çöktü. Sentetik suç yalnızca dolandırıcılık hacmini artırmaz; «bunu kim yaptı?» sorusunun yanıtlanabileceği kanıt temelini çözer.
 
-**Programmable finance.** Tokenised deposits, stablecoins, smart-contract settlement, and shared ledgers promise to reshape financial infrastructure toward interoperable, programmable economies. The growth case is real — atomic settlement, embedded compliance, new liquidity. The risk is that programmability moves control logic out of institutions and into code that executes without a human in the loop, across jurisdictions, at machine speed, and often outside the perimeter a supervisor can see.
+**Programlanabilir finans.** Tokenleştirilmiş mevduatlar, stabilcoin'ler, akıllı sözleşme mutabakatı ve paylaşılan defterler, finansal altyapıyı birlikte çalışabilir, programlanabilir ekonomilere doğru yeniden şekillendirmeyi vaat ediyor. Büyüme durumu gerçektir — atomik mutabakat, gömülü uyumluluk, yeni likidite. Risk, programlanabilirliğin kontrol mantığını kurumların dışına, döngüde insan olmadan yürütülen, yargı bölgeleri arasında, makine hızında ve genellikle bir denetçinin görebileceği çevrenin dışında çalışan koda kaydırmasıdır.
 
-Why do they converge rather than queue? Because each one lowers the cost of the others' failure modes. Personalised intelligence makes synthetic attacks more targeted. Synthetic identity makes programmable-finance rails easier to abuse. Programmable rails give agentic systems somewhere to act autonomously and irreversibly. A weak signal in one vector is a leading indicator in the others.
+Neden kuyruğa girmek yerine birleşirler? Çünkü her biri diğerlerinin başarısızlık modlarının maliyetini düşürür. Kişiselleştirilmiş zekâ sentetik saldırıları daha hedefli kılar. Sentetik kimlik programlanabilir finans raylarının kötüye kullanılmasını kolaylaştırır. Programlanabilir raylar aracı sistemlere özerk ve geri döndürülemez şekilde hareket edecek bir yer verir. Bir vektördeki zayıf bir sinyal, diğerlerinde öncü bir göstergedir.
 
-## The harm curve moved left
+## Zarar eğrisi sola kaydı
 
-The reason supervisors are publishing scans — rather than waiting for complaints — is structural. These technologies compress the interval between *novel* and *systemic*. A deepfake authorisation scam, an agentic mis-selling loop, or a stablecoin depeg propagates at network speed, not quarterly-review speed. By the time a traditional control fires — a threshold breach, an audit finding, a regulatory return — the harm has already scaled.
+Denetçilerin şikayet beklemek yerine tarama yayımlamasının nedeni yapısaldır. Bu teknolojiler *yeni* ile *sistemik* arasındaki aralığı sıkıştırır. Bir deepfake yetkilendirme dolandırıcılığı, aracı bir yanlış satış döngüsü veya bir stabilcoin ayrılması, üç aylık inceleme hızıyla değil ağ hızıyla yayılır. Geleneksel bir kontrol tetiklendiğinde — aşılan bir eşik, bir denetim bulgusu, bir düzenleyici rapor — zarar zaten ölçeklenmiştir.
 
-That is the quiet thesis inside every horizon scan: **anticipation is now a control, not a courtesy.** A bank whose risk function only detects emerging-technology harm after it materialises is, by construction, always late. The differentiator is the ability to read the horizon at the same cadence the technology moves.
+Her ufuk taramasının kalbindeki sessiz tez budur: **öngörü artık bir nezaket değil, bir kontroldür.** Risk fonksiyonu gelişen teknoloji zararını yalnızca gerçekleştikten sonra tespit eden bir banka, yapısı gereği her zaman geç kalmıştır. Ayırt edici faktör, ufku teknolojinin hareket ettiği aynı hızda okuma yeteneğidir.
 
-## From signals to supervision: a reading framework
+## Sinyallerden denetime: bir okuma çerçevesi
 
-You cannot forecast which scenario lands. You *can* instrument for the early signals each vector emits and pre-authorise the response. Four moves turn a horizon scan from a reading exercise into an operating capability.
+Hangi senaryonun gerçekleşeceğini tahmin edemezsiniz. Her vektörün yaydığı erken sinyaller için kendinizi donatabilir *ve* yanıtı önceden yetkilendirebilirsiniz. Dört hamle bir ufuk taramasını bir okuma alıştırmasından operasyonel bir yeteneğe dönüştürür.
 
-1. **Name the signals, per vector.** For each vector, define the concrete leading indicators you will watch — a rise in authenticated-but-anomalous transactions (synthetic security), agentic sessions acting outside expected parameters (personalised intelligence), or settlement finality dependent on third-party contract code (programmable finance). A signal you have not named in advance is a signal you will rationalise away in the moment.
-2. **Set the escalation trigger before the event.** Decide, now, what movement in each signal forces a decision — and who owns it. The failure mode is not missing the signal; it is seeing it and having no pre-agreed threshold that compels action.
-3. **Pre-authorise the containment.** The response to a fast-moving emerging risk cannot wait for a committee to convene. Rehearse the circuit-breakers — pausing an agentic channel, tightening an authentication gate, halting settlement on a suspect rail — and pre-authorise them so they can fire at machine speed.
-4. **Evidence the reading.** Record what you watched, what moved, what you decided, and why. When a supervisor asks how you anticipated a risk, the defensible answer is a documented reading trail — not a retrospective story. This is where the horizon scan becomes auditable governance.
+1. **Sinyalleri adlandırın, vektör başına.** Her vektör için izleyeceğiniz somut öncü göstergeleri tanımlayın — kimliği doğrulanmış ancak anormal işlemlerde bir artış (sentetik güvenlik), beklenen parametrelerin dışında hareket eden aracı oturumlar (kişiselleştirilmiş zekâ) veya üçüncü taraf sözleşme koduna bağlı bir mutabakat kesinliği (programlanabilir finans). Önceden adlandırmadığınız bir sinyal, o anda mantığa büründüreceğiniz bir sinyaldir.
+2. **Tırmandırma tetikleyicisini olaydan önce belirleyin.** Her sinyalin hangi hareketinin bir kararı zorladığına — ve kime ait olduğuna — şimdi karar verin. Başarısızlık modu sinyali kaçırmak değildir; onu görüp eyleme zorlayan önceden kararlaştırılmış bir eşiğe sahip olmamaktır.
+3. **Kontrol altına almayı önceden yetkilendirin.** Hızla gelişen bir riske yanıt, bir komitenin toplanmasını bekleyemez. Devre kesicileri prova edin — bir aracı kanalı duraklatmak, bir kimlik doğrulama kapısını sıkılaştırmak, şüpheli bir rayda mutabakatı durdurmak — ve makine hızında tetiklenmeleri için önceden yetkilendirin.
+4. **Okumayı belgeleyin.** Neyi izlediğinizi, neyin hareket ettiğini, neye karar verdiğinizi ve nedenini kaydedin. Bir denetçi bir riski nasıl öngördüğünüzü sorduğunda, savunulabilir yanıt geriye dönük bir anlatı değil, belgelenmiş bir okuma izidir. Ufuk taramasının denetlenebilir yönetişime dönüştüğü yer burasıdır.
 
-The through-line: emerging-technology risk is not managed by adopting less technology, and it is not managed by predicting the future. It is managed by making anticipation *repeatable and evidenced*.
+Ana fikir: gelişen teknoloji riski daha az teknoloji benimseyerek de geleceği tahmin ederek de yönetilmez. Öngörüyü *tekrarlanabilir ve kanıtlanmış* kılarak yönetilir.
 
-## What changes for the boardroom
+## Yönetim kurulu için ne değişir
 
-For senior management, three shifts follow directly.
+Üst yönetim için doğrudan üç kayma izler.
 
-- **Move horizon scanning inside enterprise risk.** Treat it as a standing function with named signal owners across the three vectors, not an innovation-team side project. The supervisor has made scanning a first-class activity; the board should mirror it.
-- **Fund anticipation, not just detection.** Detection tooling answers "did harm occur?" Anticipation tooling answers "is a harm forming?" The second is where the 2026 risks are won or lost, and it is chronically underfunded relative to its blast radius.
-- **Make the reading a board artefact.** A quarterly horizon reading — signals watched, thresholds, decisions taken — belongs in the board pack alongside capital and liquidity. It is the evidence that the institution can keep pace with a supervisor that now reads the same horizon.
+- **Ufuk taramasını kurumsal risk yönetiminin içine alın.** Onu inovasyon ekibinin bir yan projesi olarak değil, üç vektörde adlandırılmış sinyal sahipleriyle kalıcı bir işlev olarak ele alın. Denetçi taramayı birinci sınıf bir faaliyet haline getirdi; yönetim kurulu bunu yansıtmalı.
+- **Yalnızca tespiti değil öngörüyü finanse edin.** Tespit araçları «bir zarar oluştu mu?» sorusunu yanıtlar. Öngörü araçları «bir zarar oluşuyor mu?» sorusunu yanıtlar. 2026 riskleri ikincisinde kazanılır veya kaybedilir ve etki yarıçapına kıyasla kronik olarak yetersiz finanse edilir.
+- **Okumayı bir yönetim kurulu eseri haline getirin.** Üç aylık bir ufuk okuması — izlenen sinyaller, eşikler, alınan kararlar — sermaye ve likiditenin yanında yönetim kurulu dosyasına aittir. Bu, kurumun aynı ufku şimdi okuyan bir denetçiye ayak uydurabileceğinin kanıtıdır.
 
-## The regulatory posture is the tell
+## Düzenleyici duruş ipucudur
 
-The deepest signal in the 2026 landscape is not any one technology — it is that regulators have chosen to publish their horizon reading at all. A scan is an invitation: it tells the market where oversight attention is moving *before* the rules arrive. The firms that respond by building their own reading capability will help shape what binding supervision eventually looks like. The firms that wait for the rule will inherit whatever the fastest-moving harm forces regulators to write.
+2026 manzarasındaki en derin sinyal herhangi bir teknoloji değil — düzenleyicilerin ufuk okumalarını yayımlamayı seçmiş olmalarıdır. Bir tarama bir davettir: piyasaya denetim ilgisinin nereye kaydığını kurallar gelmeden *önce* söyler. Kendi okuma yeteneklerini inşa ederek yanıt veren firmalar, bağlayıcı denetimin sonunda nasıl görüneceğini şekillendirmeye yardımcı olacaktır. Kuralı bekleyen firmalar, en hızlı zararın düzenleyicileri yazmaya zorladığı şeyi miras alacaktır.
 
-Emerging technology has always been framed as an adoption question. In 2026 it is a *reading* question. The banks that can read the horizon — across personalised intelligence, synthetic security, and programmable finance — and evidence how they act on it, will find that anticipation is not the constraint on innovation. It is the licence for it.
+Gelişen teknoloji her zaman bir benimseme sorusu olarak çerçevelendi. 2026'da bir *okuma* sorusudur. Ufku okuyabilen — kişiselleştirilmiş zekâ, sentetik güvenlik ve programlanabilir finans genelinde — ve buna göre nasıl hareket ettiklerini kanıtlayabilen bankalar, öngörünün inovasyonun kısıtlaması olmadığını keşfedecek. O, onun lisansıdır.
 
-## Frequently asked questions
+## Sıkça sorulan sorular
 
-**Is this a prediction of what will happen?**
-No. Like the horizon scans it draws on, this is a reading of *plausible* combinations and the early signals they emit — not a forecast. Its value is preparation, not prophecy: naming the signals and pre-authorising the response so a bank is not improvising when one of them moves.
+**Bu, ne olacağının bir tahmini mi?**
+Hayır. Dayandığı ufuk taramaları gibi bu da *makul* kombinasyonların ve yaydıkları erken sinyallerin bir okumasıdır — bir tahmin değil. Değeri kehanet değil hazırlıktır: sinyalleri adlandırmak ve yanıtı önceden yetkilendirmek, böylece biri hareket ettiğinde bir banka doğaçlama yapmasın.
 
-**Why treat the three vectors together rather than separately?**
-Because their risk lives in combination. Personalised intelligence sharpens synthetic attacks; synthetic identity abuses programmable rails; programmable rails give agentic systems autonomous, irreversible reach. Managing them in silos misses the amplification that makes them systemic.
+**Neden üç vektörü ayrı ayrı değil de birlikte ele almalı?**
+Çünkü riskleri kombinasyonda yatar. Kişiselleştirilmiş zekâ sentetik saldırıları keskinleştirir; sentetik kimlik programlanabilir rayları kötüye kullanır; programlanabilir raylar aracı sistemlere özerk, geri döndürülemez erişim verir. Onları silolar halinde yönetmek, onları sistemik yapan güçlenmeyi kaçırır.
 
-**What is the single most useful thing a bank can do first?**
-Name the leading signals per vector and set the escalation trigger *before* an event, with a named owner. Most institutions can already detect harm; few have pre-agreed what movement in an emerging-risk signal compels a decision, or who makes it.
+**Bir bankanın önce yapabileceği en yararlı şey nedir?**
+Vektör başına öncü sinyalleri adlandırmak ve tırmandırma tetikleyicisini bir olaydan *önce*, adlandırılmış bir sahiple belirlemek. Çoğu kurum zaten zararı tespit edebilir; azı gelişen bir risk sinyalinin hangi hareketinin bir kararı zorladığını veya kimin verdiğini önceden kararlaştırmıştır.
 
-**How does horizon scanning relate to existing obligations?**
-It operationalises them. Consumer-duty, operational-resilience, model-risk, and financial-crime obligations all assume a firm can anticipate and contain harm. A documented horizon reading is the evidence that the anticipation actually happens — turning a principle into an auditable control.
+**Ufuk taraması mevcut yükümlülüklerle nasıl ilişkilidir?**
+Onları işlevselleştirir. Tüketici görevi, operasyonel dayanıklılık, model riski ve finansal suç yükümlülüklerinin tümü, bir firmanın zararı öngörebileceğini ve kontrol altına alabileceğini varsayar. Belgelenmiş bir ufuk okuması, öngörünün gerçekten gerçekleştiğinin kanıtıdır — bir ilkeyi denetlenebilir bir kontrole dönüştürür.
 
-## Sources and further reading
+## Kaynaklar ve ileri okuma
 
-- Financial Conduct Authority (FCA), 2026. *Technology Horizon Scan 2026* ⧉. [The FCA's first external horizon-scanning publication; sets out three plausible emerging-technology scenarios — Personalised Intelligence, Synthetic (in)security, and Programmable finance — and early risk signals for consumers, firms and markets. Cited as the anchor source for the three-vector framing; the analysis, signal-to-supervision framework and conclusions above are the author's own.]
-- Bank for International Settlements (BIS) Innovation Hub, 2026. *Project Agorá and the unified-ledger agenda* ⧉. [Cross-border tokenised settlement experiments underpinning the programmable-finance vector.]
-- Financial Stability Board (FSB), 2026. *Sound Practices for the Responsible Adoption of AI* ⧉. [Supervisory framing for agentic and personalised-intelligence risk.]
-- ISO/IEC 42001:2023, *Information technology — Artificial intelligence — Management system* ⧉. [Governance baseline for the intelligence vector.]
+- Financial Conduct Authority (FCA), 2026. *Technology Horizon Scan 2026* ⧉. [FCA'nın ilk harici ufuk tarama yayını; gelişen teknolojilerin üç makul senaryosunu — Personalised Intelligence, Synthetic (in)security ve Programmable finance — ve tüketiciler, firmalar ve piyasalar için erken risk sinyallerini ortaya koyar. Üç vektörlü çerçeveleme için çıpa kaynağı olarak alıntılanmıştır; yukarıdaki analiz, sinyal-denetim çerçevesi ve sonuçlar yazarın kendisine aittir.]
+- Uluslararası Ödemeler Bankası (BIS) İnovasyon Merkezi, 2026. *Agorá Projesi ve birleşik defter gündemi* ⧉. [Programlanabilir finans vektörünü destekleyen sınır ötesi tokenleştirilmiş mutabakat deneyleri.]
+- Finansal İstikrar Kurulu (FSB), 2026. *Sound Practices for the Responsible Adoption of AI* ⧉. [Aracı ve kişiselleştirilmiş zekâ riskinin denetim çerçevesi.]
+- ISO/IEC 42001:2023, *Information technology — Artificial intelligence — Management system* ⧉. [Zekâ vektörü için yönetişim temeli.]
 
-*Last reviewed July 2026. Original analysis; the FCA Technology Horizon Scan 2026 is cited as a source and is not reproduced. Licensed under CC-BY-4.0.*
+*Son inceleme Temmuz 2026. Özgün analiz; FCA Technology Horizon Scan 2026 kaynak olarak alıntılanmıştır ve çoğaltılmamıştır. CC-BY-4.0 altında lisanslanmıştır.*
