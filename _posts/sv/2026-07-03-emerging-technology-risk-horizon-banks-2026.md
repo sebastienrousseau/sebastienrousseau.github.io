@@ -1,6 +1,6 @@
 ---
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
-banner_alt: "Abstract horizon of converging signal lines — AI, synthetic media, and programmable-money rails resolving over a banking skyline, evoking a supervisory scan of emerging-technology risk for financial services in 2026"
+banner_alt: "Abstrakt horisont av konvergerande signallinjer — AI, syntetiska medier och programmerbara pengaspår som löses upp över en banksiluett, vilket frammanar en tillsynsskanning av framväxande teknikrisk för finansiella tjänster 2026"
 banner_height: "1280"
 banner_width: "1920"
 banner: "https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp"
@@ -9,7 +9,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "July 3, 2026"
-description: "An original reading of the 2026 emerging-technology risk horizon for banks — personalised AI intelligence, synthetic financial crime, and programmable finance — with a signal-to-supervision framework, drawing on the FCA's Technology Horizon Scan 2026."
+description: "En originalläsning av risklandskapet för framväxande teknik för banker 2026 — personaliserad AI-intelligens, syntetisk finansiell brottslighet och programmerbar finans — med ett signal-till-tillsyn-ramverk, med stöd i FCA:s Technology Horizon Scan 2026."
 format-detection: "telephone=no"
 hreflang: "sv"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -35,9 +35,9 @@ rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
 schema: "FAQPage, Article"
-seo_title: "Reading the Emerging-Technology Risk Horizon for Banks in 2026"
+seo_title: "Att läsa risklandskapet för framväxande teknik för banker 2026"
 short_name: "sebastienrousseau"
-subtitle: "Three technology vectors — personalised intelligence, synthetic (in)security, and programmable finance — are converging on banking at once. A signal-to-supervision reading of what changes, and what boards should do before the risks arrive."
+subtitle: "Tre teknikvektorer — personaliserad intelligens, syntetisk (o)säkerhet och programmerbar finans — konvergerar mot bankväsendet samtidigt. En signal-till-tillsyn-läsning av vad som förändras, och vad styrelser bör göra innan riskerna anländer."
 tags: "emerging technology, horizon scanning, FCA, personalised intelligence, agentic AI, synthetic fraud, deepfakes, programmable finance, tokenisation, stablecoins, financial crime, consumer duty, banking regulation, operational resilience, risk signals"
 theme-color: "0, 83, 191"
 title: "Reading the Emerging-Technology Risk Horizon for Banks in 2026"
@@ -63,7 +63,7 @@ apple_touch_icon_sizes: "192x192"
 apple-mobile-web-app-capable: "yes"
 apple-mobile-web-app-status-bar-inset: "black"
 apple-mobile-web-app-status-bar-style: "black-translucent"
-apple-mobile-web-app-title: "Emerging-Tech Horizon 2026"
+apple-mobile-web-app-title: "Teknikhorisont 2026"
 apple-touch-fullscreen: "yes"
 msapplication-navbutton-color: "0, 83, 191"
 twitter_card: "summary_large_image"
@@ -84,85 +84,81 @@ site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 ---
 
-<!-- translation-stub: replace this body in Claude Code -->
+# Att läsa risklandskapet för framväxande teknik för banker 2026
 
-> _Translation pending — read the [English original](/2026-07-03-emerging-technology-risk-horizon-banks-2026/) while we localise._
+Något har förändrats i hur tillsynsmyndigheter talar om framtiden. I åratal var hållningen reaktiv: en teknik anländer, en skada visar sig, en regel följer. År 2026 är tonen en annan. Tillsynsmyndigheter skannar horisonten *högt* — de publicerar strukturerade, icke-bindande läsningar av hur framväxande tekniker skulle kunna kombineras innan någon skadats. Storbritanniens Financial Conduct Authoritys *Technology Horizon Scan 2026* är det tydligaste exemplet; den beskriver sig som tillsynsmyndighetens första externa publikation av sitt slag och lägger fram tre rimliga sätt på vilka framväxande tekniker skulle kunna omforma utfallen för konsumenter, företag och marknader.
 
-# Reading the Emerging-Technology Risk Horizon for Banks in 2026
+Den förskjutningen väger tyngre än någon förutsägelse i den. En tillsynsmyndighet som offentligt skannar horisonten signalerar att *tidpunkten* för tillsyn flyttar uppströms — från efterhandsförelägganden mot föregripande före skadan. För banker är den praktiska frågan inte längre »vilken teknik bör vi anta?» utan »kan vi läsa samma signaler som våra tillsynsmyndigheter nu läser, och agera först?» Denna artikel är en läsning av den horisonten: tre teknikvektorer som konvergerar mot bankväsendet samtidigt, och ett ramverk för att omsätta svaga signaler i handling av tillsynskvalitet innan riskerna skalar upp.
 
-Something changed in how supervisors talk about the future. For years the posture was reactive: a technology arrives, harm surfaces, a rule follows. In 2026 the tone is different. Regulators are scanning the horizon *out loud* — publishing structured, non-binding readings of where emerging technologies might combine before anyone has been harmed. The UK Financial Conduct Authority's *Technology Horizon Scan 2026* is the clearest example, describing itself as the regulator's first external publication of its kind and setting out three plausible ways emerging technologies could reshape outcomes for consumers, firms, and markets.
-
-That shift matters more than any single prediction inside it. A regulator that scans the horizon in public is signalling that the *timing* of oversight is moving upstream — from post-harm enforcement toward pre-harm anticipation. For banks, the practical question is no longer "which technology should we adopt?" but "can we read the same signals our supervisors are now reading, and act on them first?" This piece is one reading of that horizon: three technology vectors converging on banking at once, and a framework for turning weak signals into supervisory-grade action before the risks scale.
-
-> **Executive summary / key takeaways**
+> **Sammanfattning / huvudpunkter**
 >
-> - **Three vectors, one arrival window.** Personalised AI intelligence, synthetic (in)security, and programmable finance are not sequential waves — they are converging on the same 2026–2028 window, and they amplify each other.
-> - **The harm curve moved left.** Supervisors are publishing horizon scans precisely because these technologies compress the distance between "novel" and "systemic." Reactive controls arrive too late by construction.
-> - **Signals beat forecasts.** You cannot predict which scenario lands; you can instrument for the *early signals* each one emits and pre-authorise the response.
-> - **Governance is the differentiator.** The banks that fare best will not be those with the most AI — they will be those that can *evidence* how they read, escalated, and contained an emerging risk. That is a board-level capability, not a lab experiment.
+> - **Tre vektorer, ett ankomstfönster.** Personaliserad AI-intelligens, syntetisk (o)säkerhet och programmerbar finans är inte sekventiella vågor — de konvergerar på samma fönster 2026-2028 och förstärker varandra.
+> - **Skadekurvan har flyttat vänsterut.** Tillsynsmyndigheter publicerar horisontskanningar just för att dessa tekniker komprimerar avståndet mellan »nytt» och »systemiskt». Reaktiva kontroller anländer för sent genom konstruktion.
+> - **Signaler slår prognoser.** Man kan inte förutsäga vilket scenario som inträffar; man kan instrumentera sig för de *tidiga signaler* som var och en sänder ut och förhandsauktorisera svaret.
+> - **Styrning är den särskiljande faktorn.** De banker som klarar sig bäst blir inte de med mest AI — det blir de som kan *bevisa* hur de läste, eskalerade och begränsade en framväxande risk. Det är en förmåga på styrelsenivå, inte ett laboratorieexperiment.
 
-## The three vectors, and why they converge
+## De tre vektorerna, och varför de konvergerar
 
-The instinct is to treat emerging technologies as a queue — deal with AI, then digital assets, then whatever follows. The horizon-scanning frame breaks that instinct: it insists the interesting risk lives in *combination*. Three vectors dominate the 2026 reading.
+Instinkten behandlar framväxande tekniker som en kö — hantera AI, sedan digitala tillgångar, sedan det som kommer. Horisontskanningsramverket bryter den instinkten: det insisterar på att den intressanta risken ligger i *kombinationen*. Tre vektorer dominerar läsningen av 2026.
 
-**Personalised intelligence.** Widely available AI, combined with granular behavioural and financial data, lets systems tailor persuasion, pricing, and interaction to the individual in real time. The upside is genuine — delegated, agentic interactions that act on a consumer's behalf. The risk is that the same personalisation that serves a customer can be turned to exploit them: hyper-targeted pressure, opaque price discrimination, and agentic systems transacting faster than any human review loop. When the interface itself is optimising against the consumer's interest, "informed consent" becomes a fiction.
+**Personaliserad intelligens.** Brett tillgänglig AI, kombinerad med granulära beteende- och finansdata, låter system skräddarsy övertalning, prissättning och interaktion till individen i realtid. Potentialen är verklig — delegerade, agentiska interaktioner som handlar å en konsuments vägnar. Risken är att samma personalisering som tjänar en kund kan vändas till att utnyttja hen: hyperriktad press, ogenomskinlig prisdiskriminering och agentiska system som transagerar snabbare än någon mänsklig granskningsslinga. När gränssnittet självt optimerar mot konsumentens intresse blir »informerat samtycke» en fiktion.
 
-**Synthetic (in)security.** Generative models have industrialised the raw materials of financial crime — synthetic identities, voice and video deepfakes, fabricated documents, and automated social engineering at scale. The defensive assumptions of KYC, authentication, and fraud detection were built for a world where forging a convincing identity was expensive. That cost has collapsed. Synthetic crime does not merely increase fraud volume; it dissolves the evidentiary basis on which "who did this?" can be answered at all.
+**Syntetisk (o)säkerhet.** Generativa modeller har industrialiserat råvarorna för finansiell brottslighet — syntetiska identiteter, röst- och video-deepfakes, fabricerade dokument och automatiserad social ingenjörskonst i skala. De defensiva antagandena bakom KYC, autentisering och bedrägeriupptäckt utformades för en värld där att förfalska en övertygande identitet var kostsamt. Den kostnaden har rasat. Syntetisk brottslighet ökar inte bara bedrägerivolymen; den löser upp den bevisgrund på vilken »vem gjorde detta?» kan besvaras.
 
-**Programmable finance.** Tokenised deposits, stablecoins, smart-contract settlement, and shared ledgers promise to reshape financial infrastructure toward interoperable, programmable economies. The growth case is real — atomic settlement, embedded compliance, new liquidity. The risk is that programmability moves control logic out of institutions and into code that executes without a human in the loop, across jurisdictions, at machine speed, and often outside the perimeter a supervisor can see.
+**Programmerbar finans.** Tokeniserade insättningar, stablecoins, avveckling via smarta kontrakt och delade liggare lovar att omforma finansinfrastrukturen mot interoperabla, programmerbara ekonomier. Tillväxtfallet är verkligt — atomär avveckling, inbäddad efterlevnad, ny likviditet. Risken är att programmerbarhet flyttar kontrollogiken ut ur institutionerna, till kod som exekverar utan människa i slingan, över jurisdiktioner, i maskinhastighet och ofta utanför den perimeter en tillsynsmyndighet kan se.
 
-Why do they converge rather than queue? Because each one lowers the cost of the others' failure modes. Personalised intelligence makes synthetic attacks more targeted. Synthetic identity makes programmable-finance rails easier to abuse. Programmable rails give agentic systems somewhere to act autonomously and irreversibly. A weak signal in one vector is a leading indicator in the others.
+Varför konvergerar de i stället för att köa? För att var och en sänker kostnaden för de andras felmoder. Personaliserad intelligens gör syntetiska attacker mer riktade. Syntetisk identitet gör det lättare att missbruka den programmerbara finansens spår. Programmerbara spår ger agentiska system en plats att handla autonomt och oåterkalleligt. En svag signal i en vektor är en ledande indikator i de andra.
 
-## The harm curve moved left
+## Skadekurvan har flyttat vänsterut
 
-The reason supervisors are publishing scans — rather than waiting for complaints — is structural. These technologies compress the interval between *novel* and *systemic*. A deepfake authorisation scam, an agentic mis-selling loop, or a stablecoin depeg propagates at network speed, not quarterly-review speed. By the time a traditional control fires — a threshold breach, an audit finding, a regulatory return — the harm has already scaled.
+Skälet till att tillsynsmyndigheter publicerar skanningar — i stället för att vänta på klagomål — är strukturellt. Dessa tekniker komprimerar intervallet mellan *nytt* och *systemiskt*. Ett deepfake-auktoriseringsbedrägeri, en agentisk felförsäljningsslinga eller en stablecoin-avkoppling sprider sig i nätverkshastighet, inte i kvartalsgranskningshastighet. När en traditionell kontroll utlöses — ett överskridet tröskelvärde, ett revisionsfynd, en regulatorisk rapport — har skadan redan skalat upp.
 
-That is the quiet thesis inside every horizon scan: **anticipation is now a control, not a courtesy.** A bank whose risk function only detects emerging-technology harm after it materialises is, by construction, always late. The differentiator is the ability to read the horizon at the same cadence the technology moves.
+Detta är den tysta tesen i hjärtat av varje horisontskanning: **föregripande är nu en kontroll, inte en artighet.** En bank vars riskfunktion upptäcker framväxande teknisk skada först efter dess materialisering är genom konstruktion alltid sen. Den särskiljande faktorn är förmågan att läsa horisonten i samma takt som tekniken rör sig.
 
-## From signals to supervision: a reading framework
+## Från signaler till tillsyn: ett läsramverk
 
-You cannot forecast which scenario lands. You *can* instrument for the early signals each vector emits and pre-authorise the response. Four moves turn a horizon scan from a reading exercise into an operating capability.
+Man kan inte prognostisera vilket scenario som inträffar. Man *kan* instrumentera sig för de tidiga signaler varje vektor sänder ut och förhandsauktorisera svaret. Fyra drag förvandlar en horisontskanning från en läsövning till en operativ förmåga.
 
-1. **Name the signals, per vector.** For each vector, define the concrete leading indicators you will watch — a rise in authenticated-but-anomalous transactions (synthetic security), agentic sessions acting outside expected parameters (personalised intelligence), or settlement finality dependent on third-party contract code (programmable finance). A signal you have not named in advance is a signal you will rationalise away in the moment.
-2. **Set the escalation trigger before the event.** Decide, now, what movement in each signal forces a decision — and who owns it. The failure mode is not missing the signal; it is seeing it and having no pre-agreed threshold that compels action.
-3. **Pre-authorise the containment.** The response to a fast-moving emerging risk cannot wait for a committee to convene. Rehearse the circuit-breakers — pausing an agentic channel, tightening an authentication gate, halting settlement on a suspect rail — and pre-authorise them so they can fire at machine speed.
-4. **Evidence the reading.** Record what you watched, what moved, what you decided, and why. When a supervisor asks how you anticipated a risk, the defensible answer is a documented reading trail — not a retrospective story. This is where the horizon scan becomes auditable governance.
+1. **Namnge signalerna, per vektor.** För varje vektor, definiera de konkreta ledande indikatorer du ska bevaka — en ökning av autentiserade men avvikande transaktioner (syntetisk säkerhet), agentiska sessioner som handlar utanför förväntade parametrar (personaliserad intelligens), eller en avvecklingsfinalitet beroende av tredje parts kontraktskod (programmerbar finans). En signal du inte namngett i förväg är en signal du bortförklarar i stunden.
+2. **Fastställ eskaleringsutlösaren före händelsen.** Bestäm, nu, vilken rörelse i varje signal som framtvingar ett beslut — och vem som äger det. Felmoden är inte att missa signalen; det är att se den utan ett förhandsöverenskommet tröskelvärde som tvingar till handling.
+3. **Förhandsauktorisera inneslutningen.** Svaret på en snabbt föränderlig framväxande risk kan inte vänta på att en kommitté sammankallas. Öva brytarna — pausa en agentisk kanal, skärpa en autentiseringsgrind, stoppa avveckling på ett misstänkt spår — och förhandsauktorisera dem så att de utlöses i maskinhastighet.
+4. **Dokumentera läsningen.** Registrera vad du bevakade, vad som rörde sig, vad du beslutade och varför. När en tillsynsmyndighet frågar hur du föregrep en risk är det försvarbara svaret ett dokumenterat lässpår — inte en efterhandsberättelse. Här blir horisontskanningen granskningsbar styrning.
 
-The through-line: emerging-technology risk is not managed by adopting less technology, and it is not managed by predicting the future. It is managed by making anticipation *repeatable and evidenced*.
+Den röda tråden: framväxande teknikrisk hanteras inte genom att anta mindre teknik, inte heller genom att förutsäga framtiden. Den hanteras genom att göra föregripande *upprepbart och bevisat*.
 
-## What changes for the boardroom
+## Vad som förändras för styrelsen
 
-For senior management, three shifts follow directly.
+För den högsta ledningen följer tre förskjutningar direkt.
 
-- **Move horizon scanning inside enterprise risk.** Treat it as a standing function with named signal owners across the three vectors, not an innovation-team side project. The supervisor has made scanning a first-class activity; the board should mirror it.
-- **Fund anticipation, not just detection.** Detection tooling answers "did harm occur?" Anticipation tooling answers "is a harm forming?" The second is where the 2026 risks are won or lost, and it is chronically underfunded relative to its blast radius.
-- **Make the reading a board artefact.** A quarterly horizon reading — signals watched, thresholds, decisions taken — belongs in the board pack alongside capital and liquidity. It is the evidence that the institution can keep pace with a supervisor that now reads the same horizon.
+- **För in horisontskanning i företagsriskhanteringen.** Behandla den som en stående funktion med namngivna signalägare över de tre vektorerna, inte som ett sidoprojekt för innovationsteamet. Tillsynsmyndigheten har gjort skanning till en förstklassig aktivitet; styrelsen bör spegla det.
+- **Finansiera föregripande, inte bara upptäckt.** Upptäcktsverktyg besvarar »inträffade en skada?». Föregripande verktyg besvarar »håller en skada på att formas?». Vid det andra vinns eller förloras 2026 års risker, och det är kroniskt underfinansierat i förhållande till sin skaderadie.
+- **Gör läsningen till ett styrelseartefakt.** En kvartalsvis horisontläsning — bevakade signaler, tröskelvärden, fattade beslut — hör hemma i styrelsedossiern jämte kapital och likviditet. Det är beviset för att institutionen kan hålla jämna steg med en tillsynsmyndighet som nu läser samma horisont.
 
-## The regulatory posture is the tell
+## Den regulatoriska hållningen är ledtråden
 
-The deepest signal in the 2026 landscape is not any one technology — it is that regulators have chosen to publish their horizon reading at all. A scan is an invitation: it tells the market where oversight attention is moving *before* the rules arrive. The firms that respond by building their own reading capability will help shape what binding supervision eventually looks like. The firms that wait for the rule will inherit whatever the fastest-moving harm forces regulators to write.
+Den djupaste signalen i 2026 års landskap är ingen enskild teknik — det är att tillsynsmyndigheter har valt att publicera sin horisontläsning över huvud taget. En skanning är en inbjudan: den talar om för marknaden vart tillsynens uppmärksamhet flyttar *innan* reglerna anländer. Företag som svarar genom att bygga sin egen läsförmåga kommer att bidra till att forma hur bindande tillsyn till slut ser ut. Företag som väntar på regeln ärver vad den snabbaste skadan tvingar tillsynsmyndigheterna att skriva.
 
-Emerging technology has always been framed as an adoption question. In 2026 it is a *reading* question. The banks that can read the horizon — across personalised intelligence, synthetic security, and programmable finance — and evidence how they act on it, will find that anticipation is not the constraint on innovation. It is the licence for it.
+Framväxande teknik har alltid inramats som en antagandefråga. År 2026 är det en *läsfråga*. De banker som kan läsa horisonten — över personaliserad intelligens, syntetisk säkerhet och programmerbar finans — och bevisa hur de handlar därefter, kommer att upptäcka att föregripande inte är innovationens begränsning. Det är dess licens.
 
-## Frequently asked questions
+## Vanliga frågor
 
-**Is this a prediction of what will happen?**
-No. Like the horizon scans it draws on, this is a reading of *plausible* combinations and the early signals they emit — not a forecast. Its value is preparation, not prophecy: naming the signals and pre-authorising the response so a bank is not improvising when one of them moves.
+**Är detta en förutsägelse av vad som kommer att hända?**
+Nej. Liksom de horisontskanningar den bygger på är detta en läsning av *rimliga* kombinationer och de tidiga signaler de sänder ut — inte en prognos. Dess värde är förberedelse, inte profetia: att namnge signalerna och förhandsauktorisera svaret så att en bank inte improviserar när en av dem rör sig.
 
-**Why treat the three vectors together rather than separately?**
-Because their risk lives in combination. Personalised intelligence sharpens synthetic attacks; synthetic identity abuses programmable rails; programmable rails give agentic systems autonomous, irreversible reach. Managing them in silos misses the amplification that makes them systemic.
+**Varför behandla de tre vektorerna tillsammans i stället för separat?**
+För att deras risk ligger i kombinationen. Personaliserad intelligens skärper syntetiska attacker; syntetisk identitet missbrukar programmerbara spår; programmerbara spår ger agentiska system autonom, oåterkallelig räckvidd. Att hantera dem i silor missar den förstärkning som gör dem systemiska.
 
-**What is the single most useful thing a bank can do first?**
-Name the leading signals per vector and set the escalation trigger *before* an event, with a named owner. Most institutions can already detect harm; few have pre-agreed what movement in an emerging-risk signal compels a decision, or who makes it.
+**Vad är det mest användbara en bank kan göra först?**
+Namnge de ledande signalerna per vektor och fastställ eskaleringsutlösaren *före* en händelse, med en namngiven ägare. De flesta institutioner kan redan upptäcka skada; få har förhandsöverenskommit vilken rörelse i en framväxande-risksignal som framtvingar ett beslut, eller vem som fattar det.
 
-**How does horizon scanning relate to existing obligations?**
-It operationalises them. Consumer-duty, operational-resilience, model-risk, and financial-crime obligations all assume a firm can anticipate and contain harm. A documented horizon reading is the evidence that the anticipation actually happens — turning a principle into an auditable control.
+**Hur förhåller sig horisontskanning till befintliga skyldigheter?**
+Den operationaliserar dem. Skyldigheter för consumer duty, operativ motståndskraft, modellrisk och finansiell brottslighet förutsätter alla att ett företag kan föregripa och begränsa skada. En dokumenterad horisontläsning är beviset för att föregripandet faktiskt äger rum — och förvandlar en princip till en granskningsbar kontroll.
 
-## Sources and further reading
+## Källor och vidare läsning
 
-- Financial Conduct Authority (FCA), 2026. *Technology Horizon Scan 2026* ⧉. [The FCA's first external horizon-scanning publication; sets out three plausible emerging-technology scenarios — Personalised Intelligence, Synthetic (in)security, and Programmable finance — and early risk signals for consumers, firms and markets. Cited as the anchor source for the three-vector framing; the analysis, signal-to-supervision framework and conclusions above are the author's own.]
-- Bank for International Settlements (BIS) Innovation Hub, 2026. *Project Agorá and the unified-ledger agenda* ⧉. [Cross-border tokenised settlement experiments underpinning the programmable-finance vector.]
-- Financial Stability Board (FSB), 2026. *Sound Practices for the Responsible Adoption of AI* ⧉. [Supervisory framing for agentic and personalised-intelligence risk.]
-- ISO/IEC 42001:2023, *Information technology — Artificial intelligence — Management system* ⧉. [Governance baseline for the intelligence vector.]
+- Financial Conduct Authority (FCA), 2026. *Technology Horizon Scan 2026* ⧉. [FCA:s första externa horisontskanningspublikation; lägger fram tre rimliga scenarier för framväxande tekniker — Personalised Intelligence, Synthetic (in)security och Programmable finance — och tidiga risksignaler för konsumenter, företag och marknader. Citeras som ankarkälla för trevektorsinramningen; analysen, signal-till-tillsyn-ramverket och slutsatserna ovan är författarens egna.]
+- Bank for International Settlements (BIS) Innovation Hub, 2026. *Projekt Agorá och agendan för en enhetlig liggare* ⧉. [Gränsöverskridande tokeniserade avvecklingsexperiment som underbygger den programmerbara finansvektorn.]
+- Financial Stability Board (FSB), 2026. *Sound Practices for the Responsible Adoption of AI* ⧉. [Tillsynsinramning av agentisk och personaliserad-intelligensrisk.]
+- ISO/IEC 42001:2023, *Information technology — Artificial intelligence — Management system* ⧉. [Styrningsgrund för intelligensvektorn.]
 
-*Last reviewed July 2026. Original analysis; the FCA Technology Horizon Scan 2026 is cited as a source and is not reproduced. Licensed under CC-BY-4.0.*
+*Senast granskad juli 2026. Originalanalys; FCA Technology Horizon Scan 2026 citeras som källa och återges inte. Licensierad under CC-BY-4.0.*
