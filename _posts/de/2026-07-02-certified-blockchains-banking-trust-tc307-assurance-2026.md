@@ -143,7 +143,7 @@ Damit die Geschäftsleitung ihre Ledger-Plattformen bewerten und zertifizieren k
 ## Tabelle 1: die Architektur des Index zertifizierter Blockchains
 
 | Index-Schicht | Reifegrad (CMM) | Technische und operative Kennzahl | Regulatorische / treuhänderische Kontrollreferenz |
-| :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- |
 | **Ledger-Governance** | **Stufe 0**: Ad-hoc-Konsortium**Stufe 3**: automatisierte Validatorprüfung & -rotation**Stufe 5**: dezentrales, mehrparteiliches kryptografisches Identitäts-Anchoring | % der von geprüften Finanzinstituten betriebenen Validator-Knoten; mittlere Bearbeitungszeit für Validator-Streitigkeiten; geografische Verteilung der Knoten | **DORA Artikel 5** (Governance und Organisation); **CPMI-IOSCO PFMI Prinzip 2** (Governance) & **Prinzip 3** (Rahmen für das umfassende Risikomanagement) |
 | **Konsensintegrität** | **Stufe 0**: Einzelknoten oder opakes PoW**Stufe 3**: geprüftes BFT mit deterministischer Finalität**Stufe 5**: multijurisdiktioneller, formal verifizierter Konsens mit kontinuierlicher Latenzüberwachung | maximal tolerierbare Konsenslatenz; Schwelle der Kollusionsresistenz; Verfügbarkeits-SLA bei simulierter Knotenpartition | **DORA Artikel 6** (Rahmen für das IKT-Risikomanagement); **CPMI-IOSCO PFMI Prinzip 8** (Abwicklungsfinalität) |
 | **Identität & Kryptografie** | **Stufe 0**: schwache RSA-/ECDSA-Schlüssel**Stufe 3**: Multi-Sig mit HSM-gestütztem Schlüsselmanagement**Stufe 5**: quantensichere Hybridschlüssel (FIPS 203 ML-KEM) und Zero-Knowledge-Datenschutz-Gates | % der mit HSM-gestützten Schlüsseln signierten Ledger-Transaktionen; PQC-Migrationsreife-Score; ZK-Proof-Latenz | **NIST FIPS 203 / 204**; **ISO/IEC 27001** (Informationssicherheitsmanagement) |
@@ -153,7 +153,7 @@ Damit die Geschäftsleitung ihre Ledger-Plattformen bewerten und zertifizieren k
 ## Tabelle 2: zentrale Vertrauenssignale, abgebildet auf globale Bankenstandards
 
 | Signal / Benchmark | Kennzahl | Auswirkung auf Bankplattformen | Regulatorische Quelle |
-| :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- |
 | **ISO/IEC-TC-307-Fortschritt** | Übergang von ISO/TR-Fachberichten zu formalen Zertifizierungsschemata | Schafft das erste standardisierte Rahmenwerk zur Zertifizierung von Distributed-Ledger-Engines | **ISO/IEC JTC 1 / SC 44** (Distributed-Ledger-Technologien) |
 | **Prototypphase des Projekts Agorá** | Über 40 teilnehmende Geschäftsbanken; Test eines einheitlichen Ledgers für tokenisierte Einlagen | Verlagert das grenzüberschreitende Clearing vom Messaging (SWIFT) zur atomaren tokenisierten Abwicklung | **Innovation Hub der Bank für Internationalen Zahlungsausgleich (BIZ)** |
 | **DORA-Artikel-30-Drittprüfung** | 100 % der Knotenanbieter und Infrastruktur-Hosts nach Sicherheitskriterien geprüft | Beseitigt „Schatten-Validator-Knoten“; verlangt vollständige Lieferkettentransparenz | **Europäische Aufsichtsbehörden (ESA)** |

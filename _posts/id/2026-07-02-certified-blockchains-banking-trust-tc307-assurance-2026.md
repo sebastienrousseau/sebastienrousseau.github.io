@@ -143,7 +143,7 @@ Agar manajemen senior dapat mengevaluasi dan menyertifikasi platform buku besar 
 ## Tabel 1: arsitektur Indeks Blockchain Bersertifikat
 
 | Lapisan indeks | Tingkat kematangan (CMM) | Metrik teknis dan operasional | Referensi kontrol regulasi / fidusia |
-| :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- |
 | **Tata kelola buku besar** | **Tingkat 0**: konsorsium ad hoc**Tingkat 3**: penyaringan dan rotasi validator otomatis**Tingkat 5**: penjangkaran identitas kriptografis terdesentralisasi, multipihak | % node validator yang dioperasikan oleh entitas keuangan yang telah disaring; waktu rata-rata penyelesaian sengketa validator; sebaran geografis node | **DORA Pasal 5** (Tata kelola dan organisasi); **CPMI-IOSCO PFMI Prinsip 2** (Tata kelola) dan **Prinsip 3** (Kerangka manajemen risiko menyeluruh) |
 | **Integritas konsensus** | **Tingkat 0**: node tunggal atau PoW buram**Tingkat 3**: BFT teraudit dengan finalitas deterministik**Tingkat 5**: konsensus multi-yurisdiksi, terverifikasi formal, dengan pemantauan latensi berkelanjutan | latensi konsensus maksimum yang dapat ditoleransi; ambang ketahanan kolusi; SLA ketersediaan pada partisi node tersimulasi | **DORA Pasal 6** (Kerangka manajemen risiko TIK); **CPMI-IOSCO PFMI Prinsip 8** (Finalitas penyelesaian) |
 | **Identitas dan kriptografi** | **Tingkat 0**: kunci RSA / ECDSA lemah**Tingkat 3**: multi-tanda tangan dengan manajemen kunci berbasis HSM**Tingkat 5**: kunci hibrida aman kuantum (FIPS 203 ML-KEM) dan gerbang privasi tanpa pengetahuan | % transaksi buku besar yang ditandatangani dengan kunci berbasis HSM; skor kesiapan migrasi PQC; latensi bukti ZK | **NIST FIPS 203 / 204**; **ISO/IEC 27001** (Manajemen keamanan informasi) |
@@ -153,7 +153,7 @@ Agar manajemen senior dapat mengevaluasi dan menyertifikasi platform buku besar 
 ## Tabel 2: sinyal kepercayaan utama yang dipetakan ke standar perbankan global
 
 | Sinyal / tolok ukur | Metrik | Dampak pada platform perbankan | Sumber regulasi |
-| :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- |
 | **Kemajuan ISO/IEC TC 307** | Peralihan dari laporan teknis ISO/TR ke skema sertifikasi formal | Menetapkan kerangka terstandardisasi pertama untuk menyertifikasi mesin buku besar terdistribusi | **ISO/IEC JTC 1 / SC 44** (Teknologi buku besar terdistribusi) |
 | **Fase prototipe Proyek Agorá** | Lebih dari 40 bank komersial peserta; pengujian buku besar terpadu untuk simpanan tertokenisasi | Menggeser kliring lintas batas dari pesan (SWIFT) ke penyelesaian tertokenisasi atomik | **Pusat Inovasi Bank for International Settlements (BIS)** |
 | **Audit pihak ketiga DORA Pasal 30** | 100% penyedia node dan host infrastruktur diaudit terhadap kriteria keamanan | Menghapus "node validator bayangan"; mewajibkan transparansi rantai pasok penuh | **Otoritas Pengawas Eropa (ESA)** |

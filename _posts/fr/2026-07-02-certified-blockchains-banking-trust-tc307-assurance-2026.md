@@ -143,7 +143,7 @@ Pour permettre à la direction générale d'évaluer et de certifier ses platefo
 ## Tableau 1 : l'architecture de l'Indice des blockchains certifiées
 
 | Couche de l'indice | Niveau de maturité (CMM) | Métrique technique et opérationnelle | Référence de contrôle réglementaire / fiduciaire |
-| :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- |
 | **Gouvernance du registre** | **Niveau 0** : consortium ad hoc**Niveau 3** : vérification et rotation automatisées des validateurs**Niveau 5** : ancrage d'identité cryptographique décentralisé et multipartite | % de nœuds validateurs exploités par des entités financières vérifiées ; délai moyen de résolution des litiges entre validateurs ; répartition géographique des nœuds | **DORA article 5** (Gouvernance et organisation) ; **CPMI-IOSCO PFMI Principe 2** (Gouvernance) et **Principe 3** (Cadre de gestion globale des risques) |
 | **Intégrité du consensus** | **Niveau 0** : nœud unique ou PoW opaque**Niveau 3** : BFT audité à finalité déterministe**Niveau 5** : consensus multi-juridictionnel, formellement vérifié, avec surveillance continue de la latence | Latence de consensus maximale tolérable ; seuil de résistance à la collusion ; SLA de disponibilité en cas de partition simulée des nœuds | **DORA article 6** (Cadre de gestion du risque lié aux TIC) ; **CPMI-IOSCO PFMI Principe 8** (Caractère définitif du règlement) |
 | **Identité et cryptographie** | **Niveau 0** : clés RSA / ECDSA faibles**Niveau 3** : multi-signature avec gestion de clés adossée à un HSM**Niveau 5** : clés hybrides résistantes au quantique (FIPS 203 ML-KEM) et portes de confidentialité à divulgation nulle de connaissance | % de transactions du registre signées avec des clés adossées à un HSM ; score de préparation à la migration PQC ; latence des preuves ZK | **NIST FIPS 203 / 204** ; **ISO/IEC 27001** (Gestion de la sécurité de l'information) |
@@ -153,7 +153,7 @@ Pour permettre à la direction générale d'évaluer et de certifier ses platefo
 ## Tableau 2 : signaux de confiance clés mis en correspondance avec les normes bancaires mondiales
 
 | Signal / référence | Métrique | Impact sur les plateformes bancaires | Source réglementaire |
-| :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- |
 | **Progression ISO/IEC TC 307** | Passage des rapports techniques ISO/TR à des schémas de certification formels | Établit le premier cadre normalisé de certification des moteurs de registre distribué | **ISO/IEC JTC 1 / SC 44** (Technologies des registres distribués) |
 | **Phase prototype du Projet Agorá** | Plus de 40 banques commerciales participantes ; test d'un registre unifié de dépôts tokenisés | Fait passer la compensation transfrontalière de la messagerie (SWIFT) au règlement atomique tokenisé | **Pôle d'innovation de la Banque des règlements internationaux (BRI)** |
 | **Audit tiers DORA article 30** | 100 % des fournisseurs de nœuds et des hébergeurs d'infrastructure audités selon des critères de sécurité | Élimine les « nœuds validateurs fantômes » ; impose une transparence totale de la chaîne d'approvisionnement | **Autorités européennes de surveillance (AES)** |

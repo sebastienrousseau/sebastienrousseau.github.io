@@ -143,7 +143,7 @@ Don ba da damar babbar manaja su tantance kuma su ba da takardar shaida ga danda
 ## Tebur 1: gine-ginen Ma'aunin Sarƙoƙin Bulokci Masu Takardar Shaida
 
 | Sashen ma'auni | Matakin balaga (CMM) | Ma'aunin fasaha da na aiki | Tunanin sarrafawa na tsari / amana |
-| :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- |
 | **Shugabancin littafi** | **Mataki 0**: ƙungiya ta lokaci**Mataki 3**: bincike da juyawa na masu tabbatarwa ta atomatik**Mataki 5**: ɗaure shaida ta sirri mai rarrabuwa, na ɓangarori da yawa | % na kumburan tabbatarwa da hukumomin kuɗi da aka bincika ke gudanarwa; matsakaicin lokacin warware jayayya na masu tabbatarwa; rarraba wurin kumbura | **DORA Mataki 5** (Shugabanci da ƙungiya); **CPMI-IOSCO PFMI Ƙa'ida 2** (Shugabanci) da **Ƙa'ida 3** (Tsarin sarrafa haɗari mai cikakke) |
 | **Mutuncin yarjejeniya** | **Mataki 0**: kumbura ɗaya ko PoW mara haske**Mataki 3**: BFT da aka bincika mai ƙarshe na tabbatacce**Mataki 5**: yarjejeniya ta hukunce-hukunce da yawa, da aka tabbatar a hukumance, mai sa ido na jinkiri mai ci gaba | matsakaicin jinkirin yarjejeniya da za a iya jurewa; ƙofar juriya ga haɗin gwiwa; SLA na samuwa a raba kumbura da aka kwaikwaya | **DORA Mataki 6** (Tsarin sarrafa haɗarin ICT); **CPMI-IOSCO PFMI Ƙa'ida 8** (Ƙarshen sasantawa) |
 | **Shaida da sirri** | **Mataki 0**: maɓallan RSA / ECDSA masu rauni**Mataki 3**: sa hannu da yawa mai sarrafa maɓalli da HSM ke tallafawa**Mataki 5**: maɓallan gauraye masu tsaro na ƙima (FIPS 203 ML-KEM) da ƙofofin sirri na sifili-ilimi | % na mu'amaloli na littafi da aka sa hannu da maɓallan da HSM ke tallafawa; makin shirye-shiryen ƙaura na PQC; jinkirin hujja na ZK | **NIST FIPS 203 / 204**; **ISO/IEC 27001** (Sarrafa tsaron bayanai) |
@@ -153,7 +153,7 @@ Don ba da damar babbar manaja su tantance kuma su ba da takardar shaida ga danda
 ## Tebur 2: muhimman siginonin amincewa da aka danganta ga ƙa'idodin banki na duniya
 
 | Sigina / ma'auni | Ma'auni | Tasiri a kan dandamalin banki | Tushen tsari |
-| :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- |
 | **Ci gaban ISO/IEC TC 307** | Sauyawa daga rahotannin fasaha na ISO/TR zuwa tsare-tsaren takardar shaida na hukumance | Yana kafa tsari na farko da aka daidaita don ba da takardar shaida ga injunan littafi mai rarrabuwa | **ISO/IEC JTC 1 / SC 44** (Fasahohin littafi mai rarrabuwa) |
 | **Matakin samfuri na Aikin Agorá** | Bankuna na kasuwanci sama da 40 masu shiga; gwajin littafi guda ɗaya na ajiya masu alama | Yana kaura tsaftacewa na kan iyaka daga aikawa saƙo (SWIFT) zuwa sasantawa mai alama na atomatik | **Cibiyar Ƙirƙira ta Bankin Sasantawa na Duniya (BIS)** |
 | **Bincike na ɓangare na uku na DORA Mataki 30** | An bincika kashi 100% na masu ba da kumbura da masu masaukin kayan aiki a kan ma'aunan tsaro | Yana kawar da "kumburan tabbatarwa na inuwa"; yana wajabta cikakken bayyanannen sarƙar samarwa | **Hukumomin Kula na Turai (ESA)** |

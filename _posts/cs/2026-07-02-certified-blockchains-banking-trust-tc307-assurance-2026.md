@@ -143,7 +143,7 @@ Aby vrcholovému vedení umožnil hodnotit a certifikovat jejich registrové pla
 ## Tabulka 1: architektura Indexu certifikovaných blockchainů
 
 | Vrstva indexu | Úroveň zralosti (CMM) | Technická a provozní metrika | Regulatorní / fiduciární kontrolní reference |
-| :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- |
 | **Správa registru** | **Úroveň 0**: ad hoc konsorcium**Úroveň 3**: automatizované prověřování a rotace validátorů**Úroveň 5**: decentralizované, víceúčastnické kryptografické ukotvení identity | % validačních uzlů provozovaných prověřenými finančními subjekty; průměrná doba řešení sporů validátorů; geografické rozložení uzlů | **DORA článek 5** (Správa a organizace); **CPMI-IOSCO PFMI Princip 2** (Správa) a **Princip 3** (Rámec komplexního řízení rizik) |
 | **Integrita konsenzu** | **Úroveň 0**: jediný uzel nebo neprůhledný PoW**Úroveň 3**: auditovaný BFT s deterministickou finalitou**Úroveň 5**: mnohojurisdikční, formálně ověřený konsenzus s průběžným monitorováním latence | max. tolerovatelná latence konsenzu; práh odolnosti vůči koluzi; SLA dostupnosti při simulovaném rozdělení uzlů | **DORA článek 6** (Rámec řízení rizik ICT); **CPMI-IOSCO PFMI Princip 8** (Finalita vypořádání) |
 | **Identita a kryptografie** | **Úroveň 0**: slabé klíče RSA / ECDSA**Úroveň 3**: vícepodpis se správou klíčů podporovanou HSM**Úroveň 5**: kvantově bezpečné hybridní klíče (FIPS 203 ML-KEM) a brány soukromí s nulovou znalostí | % transakcí registru podepsaných klíči podporovanými HSM; skóre připravenosti na migraci PQC; latence důkazů ZK | **NIST FIPS 203 / 204**; **ISO/IEC 27001** (Řízení bezpečnosti informací) |
@@ -153,7 +153,7 @@ Aby vrcholovému vedení umožnil hodnotit a certifikovat jejich registrové pla
 ## Tabulka 2: klíčové signály důvěry namapované na globální bankovní standardy
 
 | Signál / měřítko | Metrika | Dopad na bankovní platformy | Regulatorní zdroj |
-| :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- |
 | **Pokrok ISO/IEC TC 307** | Přechod od technických zpráv ISO/TR k formálním certifikačním schématům | Zavádí první normalizovaný rámec pro certifikaci motorů distribuovaných registrů | **ISO/IEC JTC 1 / SC 44** (Technologie distribuovaných registrů) |
 | **Prototypová fáze Projektu Agorá** | Přes 40 zúčastněných komerčních bank; test jednotného registru tokenizovaných vkladů | Přesouvá přeshraniční zúčtování od zpráv (SWIFT) k atomickému tokenizovanému vypořádání | **Innovation Hub Banky pro mezinárodní platby (BIS)** |
 | **Audit třetí strany DORA článek 30** | 100 % poskytovatelů uzlů a hostitelů infrastruktury auditováno podle bezpečnostních kritérií | Eliminuje „stínové validační uzly"; nařizuje úplnou transparentnost dodavatelského řetězce | **Evropské orgány dohledu (ESA)** |

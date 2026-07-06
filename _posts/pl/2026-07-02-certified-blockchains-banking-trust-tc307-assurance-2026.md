@@ -143,7 +143,7 @@ Aby umożliwić kierownictwu wyższego szczebla ocenę i certyfikację platform 
 ## Tabela 1: architektura Indeksu Certyfikowanych Blockchainów
 
 | Warstwa indeksu | Poziom dojrzałości (CMM) | Miara techniczna i operacyjna | Odniesienie do kontroli regulacyjnej / powierniczej |
-| :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- |
 | **Ład rejestru** | **Poziom 0**: konsorcjum ad hoc**Poziom 3**: zautomatyzowana weryfikacja i rotacja walidatorów**Poziom 5**: zdecentralizowane, wielostronne kryptograficzne zakotwiczenie tożsamości | % węzłów walidujących obsługiwanych przez zweryfikowane podmioty finansowe; średni czas rozstrzygnięcia sporów walidatorów; rozkład geograficzny węzłów | **DORA art. 5** (Ład i organizacja); **CPMI-IOSCO PFMI Zasada 2** (Ład) i **Zasada 3** (Ramy kompleksowego zarządzania ryzykiem) |
 | **Integralność konsensusu** | **Poziom 0**: pojedynczy węzeł lub nieprzejrzysty PoW**Poziom 3**: zaudytowany BFT z deterministyczną finalnością**Poziom 5**: wielojurysdykcyjny, formalnie zweryfikowany konsensus z ciągłym monitorowaniem opóźnień | maks. tolerowalne opóźnienie konsensusu; próg odporności na zmowę; SLA dostępności przy symulowanej partycji węzłów | **DORA art. 6** (Ramy zarządzania ryzykiem ICT); **CPMI-IOSCO PFMI Zasada 8** (Ostateczność rozrachunku) |
 | **Tożsamość i kryptografia** | **Poziom 0**: słabe klucze RSA / ECDSA**Poziom 3**: multipodpis z zarządzaniem kluczami opartym na HSM**Poziom 5**: hybrydowe klucze kwantoodporne (FIPS 203 ML-KEM) i bramki prywatności o wiedzy zerowej | % transakcji rejestru podpisanych kluczami opartymi na HSM; wynik gotowości do migracji PQC; opóźnienie dowodów ZK | **NIST FIPS 203 / 204**; **ISO/IEC 27001** (Zarządzanie bezpieczeństwem informacji) |
@@ -153,7 +153,7 @@ Aby umożliwić kierownictwu wyższego szczebla ocenę i certyfikację platform 
 ## Tabela 2: kluczowe sygnały zaufania zmapowane na globalne standardy bankowe
 
 | Sygnał / punkt odniesienia | Miara | Wpływ na platformy bankowe | Źródło regulacyjne |
-| :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- |
 | **Postęp ISO/IEC TC 307** | Przejście od raportów technicznych ISO/TR do formalnych schematów certyfikacji | Ustanawia pierwsze znormalizowane ramy certyfikacji silników rozproszonego rejestru | **ISO/IEC JTC 1 / SC 44** (Technologie rozproszonego rejestru) |
 | **Faza prototypowa Projektu Agorá** | Ponad 40 uczestniczących banków komercyjnych; test ujednoliconego rejestru stokenizowanych depozytów | Przesuwa rozliczenia transgraniczne z komunikatów (SWIFT) na atomowy stokenizowany rozrachunek | **Centrum Innowacji Banku Rozrachunków Międzynarodowych (BIS)** |
 | **Audyt strony trzeciej DORA art. 30** | 100 % dostawców węzłów i hostów infrastruktury zaudytowanych według kryteriów bezpieczeństwa | Eliminuje „cień węzłów walidujących"; nakazuje pełną przejrzystość łańcucha dostaw | **Europejskie Urzędy Nadzoru (ESA)** |

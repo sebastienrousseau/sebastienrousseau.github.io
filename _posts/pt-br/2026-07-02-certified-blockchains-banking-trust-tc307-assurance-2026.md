@@ -143,7 +143,7 @@ Para que a alta administração possa avaliar e certificar suas plataformas de r
 ## Tabela 1: a arquitetura do Índice de Blockchains Certificadas
 
 | Camada do índice | Nível de maturidade (CMM) | Métrica técnica e operacional | Referência de controle regulatório / fiduciário |
-| :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- |
 | **Governança do registro** | **Nível 0**: consórcio ad hoc**Nível 3**: verificação e rotação automatizadas de validadores**Nível 5**: ancoragem de identidade criptográfica descentralizada e multipartidária | % de nós validadores operados por entidades financeiras verificadas; tempo médio de resolução de disputas entre validadores; distribuição geográfica dos nós | **DORA artigo 5** (Governança e organização); **CPMI-IOSCO PFMI Princípio 2** (Governança) e **Princípio 3** (Estrutura para a gestão integral de riscos) |
 | **Integridade do consenso** | **Nível 0**: nó único ou PoW opaco**Nível 3**: BFT auditado com finalidade determinística**Nível 5**: consenso multijurisdicional, formalmente verificado, com monitoramento contínuo da latência | latência de consenso máxima tolerável; limiar de resistência à conluio; SLA de disponibilidade sob partição simulada de nós | **DORA artigo 6** (Estrutura de gestão do risco de TIC); **CPMI-IOSCO PFMI Princípio 8** (Definitividade da liquidação) |
 | **Identidade e criptografia** | **Nível 0**: chaves RSA / ECDSA fracas**Nível 3**: multiassinatura com gestão de chaves apoiada por HSM**Nível 5**: chaves híbridas resistentes ao quantum (FIPS 203 ML-KEM) e portões de privacidade de conhecimento zero | % de transações do registro assinadas com chaves apoiadas por HSM; pontuação de prontidão para a migração PQC; latência das provas ZK | **NIST FIPS 203 / 204**; **ISO/IEC 27001** (Gestão da segurança da informação) |
@@ -153,7 +153,7 @@ Para que a alta administração possa avaliar e certificar suas plataformas de r
 ## Tabela 2: sinais de confiança chave mapeados aos padrões bancários mundiais
 
 | Sinal / referência | Métrica | Impacto nas plataformas bancárias | Fonte regulatória |
-| :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- |
 | **Progresso ISO/IEC TC 307** | Passagem de relatórios técnicos ISO/TR para esquemas de certificação formais | Estabelece a primeira estrutura normalizada para certificar motores de registro distribuído | **ISO/IEC JTC 1 / SC 44** (Tecnologias de registro distribuído) |
 | **Fase de protótipo do Projeto Agorá** | Mais de 40 bancos comerciais participantes; teste de um registro unificado de depósitos tokenizados | Desloca a compensação transfronteiriça da mensageria (SWIFT) para a liquidação atômica tokenizada | **Innovation Hub do Banco de Compensações Internacionais (BIS)** |
 | **Auditoria de terceiros DORA artigo 30** | 100 % dos provedores de nós e hosts de infraestrutura auditados segundo critérios de segurança | Elimina os "nós validadores sombra"; exige transparência total da cadeia de suprimentos | **Autoridades Europeias de Supervisão (ESA)** |

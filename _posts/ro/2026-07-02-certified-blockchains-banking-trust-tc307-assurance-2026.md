@@ -143,7 +143,7 @@ Pentru a permite conducerii superioare să evalueze și să certifice platformel
 ## Tabelul 1: arhitectura Indexului Blockchain-urilor Certificate
 
 | Strat al indexului | Nivel de maturitate (CMM) | Metrică tehnică și operațională | Referință de control de reglementare / fiduciar |
-| :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- |
 | **Guvernanța registrului** | **Nivel 0**: consorțiu ad-hoc**Nivel 3**: verificare și rotație automatizate ale validatorilor**Nivel 5**: ancorare descentralizată, multiparte a identității criptografice | % de noduri validatoare operate de entități financiare verificate; timpul mediu de soluționare a disputelor între validatori; distribuția geografică a nodurilor | **DORA articolul 5** (Guvernanță și organizare); **CPMI-IOSCO PFMI Principiul 2** (Guvernanță) și **Principiul 3** (Cadru pentru gestionarea integrală a riscurilor) |
 | **Integritatea consensului** | **Nivel 0**: nod unic sau PoW opac**Nivel 3**: BFT auditat cu finalitate deterministă**Nivel 5**: consens multi-jurisdicțional, verificat formal, cu monitorizare continuă a latenței | latența maximă tolerabilă a consensului; pragul de rezistență la coluziune; SLA de disponibilitate la partiționarea simulată a nodurilor | **DORA articolul 6** (Cadru de gestionare a riscului TIC); **CPMI-IOSCO PFMI Principiul 8** (Finalitatea decontării) |
 | **Identitate și criptografie** | **Nivel 0**: chei RSA / ECDSA slabe**Nivel 3**: multi-semnătură cu gestionare a cheilor susținută de HSM**Nivel 5**: chei hibride rezistente la cuantic (FIPS 203 ML-KEM) și porți de confidențialitate cu cunoștințe zero | % de tranzacții ale registrului semnate cu chei susținute de HSM; scorul de pregătire pentru migrarea PQC; latența dovezilor ZK | **NIST FIPS 203 / 204**; **ISO/IEC 27001** (Managementul securității informației) |
@@ -153,7 +153,7 @@ Pentru a permite conducerii superioare să evalueze și să certifice platformel
 ## Tabelul 2: semnale-cheie de încredere mapate pe standardele bancare mondiale
 
 | Semnal / reper | Metrică | Impact asupra platformelor bancare | Sursă de reglementare |
-| :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- |
 | **Progresul ISO/IEC TC 307** | Trecerea de la rapoartele tehnice ISO/TR la scheme formale de certificare | Stabilește primul cadru normalizat pentru certificarea motoarelor de registru distribuit | **ISO/IEC JTC 1 / SC 44** (Tehnologii de registru distribuit) |
 | **Faza de prototip a Proiectului Agorá** | Peste 40 de bănci comerciale participante; testarea unui registru unificat de depozite tokenizate | Mută compensarea transfrontalieră de la mesagerie (SWIFT) la decontarea atomică tokenizată | **Innovation Hub al Băncii Reglementelor Internaționale (BRI)** |
 | **Auditul terților DORA articolul 30** | 100 % dintre furnizorii de noduri și gazdele de infrastructură auditați conform criteriilor de securitate | Elimină „nodurile validatoare din umbră"; impune transparența totală a lanțului de aprovizionare | **Autoritățile Europene de Supraveghere (AES)** |

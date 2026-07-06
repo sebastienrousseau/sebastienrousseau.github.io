@@ -143,7 +143,7 @@ Upang mabigyang-daan ang senior na pamamahala na suriin at sertipikahan ang kani
 ## Talahanayan 1: ang arkitektura ng Indeks ng mga Sertipikadong Blockchain
 
 | Layer ng indeks | Antas ng maturity (CMM) | Teknikal at operasyonal na sukatan | Sanggunian ng kontrol sa regulasyon / piduciaryo |
-| :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- |
 | **Pamamahala ng ledger** | **Antas 0**: ad hoc na konsorsyo**Antas 3**: awtomatikong pagsusuri at rotasyon ng validator**Antas 5**: desentralisado, multi-partidong kriptograpikong pag-angkla ng pagkakakilanlan | % ng mga validator node na pinatatakbo ng mga na-vet na entidad na pinansyal; karaniwang oras upang lutasin ang mga hidwaan ng validator; heograpikong pamamahagi ng mga node | **DORA Artikulo 5** (Pamamahala at organisasyon); **CPMI-IOSCO PFMI Prinsipyo 2** (Pamamahala) at **Prinsipyo 3** (Balangkas para sa komprehensibong pamamahala ng mga panganib) |
 | **Integridad ng konsenso** | **Antas 0**: iisang node o malabong PoW**Antas 3**: na-awdit na BFT na may determinsitikong finality**Antas 5**: multi-hurisdiksyon, pormal na na-verify na konsenso na may tuloy-tuloy na pagsubaybay sa latency | pinakamataas na matitiis na latency ng konsenso; threshold ng paglaban sa pagsasabwatan; SLA ng availability sa simulADong paghahati ng node | **DORA Artikulo 6** (Balangkas ng pamamahala ng panganib ng ICT); **CPMI-IOSCO PFMI Prinsipyo 8** (Finality ng settlement) |
 | **Pagkakakilanlan at kriptograpiya** | **Antas 0**: mahihinang RSA / ECDSA na susi**Antas 3**: multi-sig na may pamamahala ng susi na sinusuportahan ng HSM**Antas 5**: quantum-safe na hybrid na susi (FIPS 203 ML-KEM) at mga zero-knowledge na gate ng privacy | % ng mga transaksyon ng ledger na pinirmahan ng mga susing sinusuportahan ng HSM; iskor ng kahandaan sa migrasyon ng PQC; latency ng ZK-proof | **NIST FIPS 203 / 204**; **ISO/IEC 27001** (Pamamahala ng seguridad ng impormasyon) |
@@ -153,7 +153,7 @@ Upang mabigyang-daan ang senior na pamamahala na suriin at sertipikahan ang kani
 ## Talahanayan 2: mga pangunahing senyales ng tiwala na naka-map sa mga pandaigdigang pamantayan sa pagbabangko
 
 | Senyales / benchmark | Sukatan | Epekto sa mga platform ng pagbabangko | Pinagmulan ng regulasyon |
-| :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- |
 | **Pag-usad ng ISO/IEC TC 307** | Paglipat mula sa ISO/TR na mga teknikal na ulat tungo sa pormal na mga skema ng sertipikasyon | Nagtatatag ng unang na-istandardisang balangkas para sa pagsertipika ng mga makina ng distributed ledger | **ISO/IEC JTC 1 / SC 44** (Mga teknolohiya ng distributed ledger) |
 | **Yugto ng prototype ng Proyektong Agorá** | Mahigit 40 partisipanteng komersyal na bangko; pagsubok ng pinag-isang ledger para sa mga na-token na deposito | Inilipat ang cross-border na clearing mula sa mensahe (SWIFT) tungo sa atomikong na-token na settlement | **Innovation Hub ng Bank for International Settlements (BIS)** |
 | **Third-party na awdit ng DORA Artikulo 30** | 100% ng mga tagapagbigay ng node at host ng imprastraktura na na-awdit laban sa mga pamantayan sa seguridad | Inaalis ang "mga anino na validator node"; nag-uutos ng buong transparency ng supply chain | **Mga Awtoridad ng Superbisyon ng Europa (ESA)** |

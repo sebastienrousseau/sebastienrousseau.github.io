@@ -143,7 +143,7 @@ Láti jẹ́ kí àwọn olórí àgbà lè ṣàyẹ̀wò kí wọ́n sì fọw
 ## Tábìlì 1: ìṣètò-ilé ti Àtọ́ka Blockchain tí a Fọwọ́sí
 
 | Ìpele àtọ́ka | Ìpele ìdàgbà (CMM) | Ìwọ̀n ìmọ̀-ẹ̀rọ àti iṣẹ́ | Ìtọ́kasí ìdarí ìlànà / ìṣàkóso ohun-ìní |
-| :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- |
 | **Ìṣàkóso ìwé-àkọsílẹ̀** | **Ìpele 0**: ẹgbẹ́ ìgbà-díẹ̀**Ìpele 3**: àyẹ̀wò àti ìyípo olùfọwọ́sí aládàáṣiṣẹ́**Ìpele 5**: ìdúró ìdánimọ̀ ìṣírò tí a pín, oníkópa-púpọ̀ | % àwọn ẹ̀nu-ọ̀nà olùfọwọ́sí tí àwọn ilé-iṣẹ́ ìnáwó tí a ti ṣàyẹ̀wò ń ṣiṣẹ́; àpapọ̀ àkókò láti yanjú àríyànjiyàn olùfọwọ́sí; ìpín àgbègbè àwọn ẹ̀nu-ọ̀nà | **DORA Abala 5** (Ìṣàkóso àti ètò); **CPMI-IOSCO PFMI Ìlànà 2** (Ìṣàkóso) àti **Ìlànà 3** (Ìlànà fún ìṣàkóso àpapọ̀ àwọn ewu) |
 | **Ìdúróṣinṣin ìfohùnṣọ̀kan** | **Ìpele 0**: ẹ̀nu-ọ̀nà kan tàbí PoW aláìlẹ́ye**Ìpele 3**: BFT tí a ṣàyẹ̀wò pẹ̀lú ìparí tí ó dájú**Ìpele 5**: ìfohùnṣọ̀kan oní-agbègbè-òfin-púpọ̀, tí a fọwọ́sí lọ́nà tòótọ́, pẹ̀lú ìṣọ́ ìdádúró tí ó ń tẹ̀síwájú | ìdádúró ìfohùnṣọ̀kan tí ó ga jùlọ tí a lè fàradà; ààlà ìkojú ìdìtẹ̀; SLA ìwàláàyè lábẹ́ ìpín ẹ̀nu-ọ̀nà àfarawé | **DORA Abala 6** (Ìlànà ìṣàkóso ewu ICT); **CPMI-IOSCO PFMI Ìlànà 8** (Ìparí ìsédédé) |
 | **Ìdánimọ̀ àti ìṣírò** | **Ìpele 0**: àwọn kọ́kọ́rọ́ RSA / ECDSA aláìlera**Ìpele 3**: ìbùwọ́lù-púpọ̀ pẹ̀lú ìṣàkóso kọ́kọ́rọ́ tí HSM ń ṣètìlẹ́yìn**Ìpele 5**: àwọn kọ́kọ́rọ́ àpapọ̀ tí ó ní ààbò kúántẹ́ẹ̀mù (FIPS 203 ML-KEM) àti àwọn ẹnu-ọ̀nà àṣírí aláìní-ìmọ̀ | % àwọn ìdúnàdúrà ìwé-àkọsílẹ̀ tí a fi kọ́kọ́rọ́ tí HSM ń ṣètìlẹ́yìn bùwọ́lù; àmì ìmúrasílẹ̀ ìṣíkiri PQC; ìdádúró ẹ̀rí ZK | **NIST FIPS 203 / 204**; **ISO/IEC 27001** (Ìṣàkóso ààbò ìsọfúnni) |
@@ -153,7 +153,7 @@ Láti jẹ́ kí àwọn olórí àgbà lè ṣàyẹ̀wò kí wọ́n sì fọw
 ## Tábìlì 2: àwọn àmì ìgbẹ́kẹ̀lé pàtàkì tí a so mọ́ àwọn ìlànà ìfowópamọ́ kárí-ayé
 
 | Àmì / ìwọ̀n-ìfiwéra | Ìwọ̀n | Ipa lórí àwọn pẹpẹ ìfowópamọ́ | Orísun ìlànà |
-| :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- |
 | **Ìtẹ̀síwájú ISO/IEC TC 307** | Ìyípadà láti àwọn ìròyìn ìmọ̀-ẹ̀rọ ISO/TR sí àwọn ètò ìwé-ẹ̀rí tòótọ́ | Ó ń gbé ìlànà tí a ṣe déédé àkọ́kọ́ kalẹ̀ láti fọwọ́sí àwọn ẹ̀rọ ìwé-àkọsílẹ̀ pínpín | **ISO/IEC JTC 1 / SC 44** (Àwọn ìmọ̀-ẹ̀rọ ìwé-àkọsílẹ̀ pínpín) |
 | **Ìpele àpẹẹrẹ Iṣẹ́ Agorá** | Àwọn báńkì oníṣòwò tí ó lé ní 40 tí ó kópa; ìdánwò ìwé-àkọsílẹ̀ ìṣọ̀kan fún àwọn ìfipamọ́ àmì-àpẹẹrẹ | Ó ń kó ìsédédé àgbélébùú-ààlà láti fífìránṣẹ́ (SWIFT) sí ìsédédé àmì-àpẹẹrẹ oníparapọ̀ | **Ibùdó Ìmúdàgbà ti Báńkì fún Ìsédédé Àgbáyé (BIS)** |
 | **Àyẹ̀wò ẹlẹ́ẹ̀kẹta DORA Abala 30** | 100% àwọn olùpèsè ẹ̀nu-ọ̀nà àti àwọn olùgbàlejò ìpìlẹ̀-iṣẹ́ tí a ṣàyẹ̀wò ní ìlòdì sí àwọn àmì ààbò | Ó ń mú "àwọn ẹ̀nu-ọ̀nà olùfọwọ́sí òjìji" kúrò; ó ń fipá mú kíkedere ẹ̀wọ̀n ìpèsè ní kíkún | **Àwọn Aláṣẹ Ìbójútó Yúróòpù (ESA)** |

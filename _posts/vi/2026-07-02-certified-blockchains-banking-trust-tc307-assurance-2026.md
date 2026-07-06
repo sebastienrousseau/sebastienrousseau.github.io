@@ -143,7 +143,7 @@ Dựa vào đồng thuận sổ cái chưa được chứng nhận trong khi ch�
 ## Bảng 1: kiến trúc Chỉ số Blockchain Được chứng nhận
 
 | Lớp chỉ số | Cấp trưởng thành (CMM) | Thước đo kỹ thuật và vận hành | Tham chiếu kiểm soát quy định / ủy thác |
-| :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- |
 | **Quản trị sổ cái** | **Cấp 0**: liên minh tạm thời**Cấp 3**: xét duyệt và luân chuyển nút xác thực tự động**Cấp 5**: neo danh tính mật mã phi tập trung, nhiều bên | % nút xác thực do các thực thể tài chính đã được xét duyệt vận hành; thời gian trung bình giải quyết tranh chấp giữa các nút xác thực; phân bố địa lý của các nút | **DORA Điều 5** (Quản trị và tổ chức); **CPMI-IOSCO PFMI Nguyên tắc 2** (Quản trị) và **Nguyên tắc 3** (Khung quản lý rủi ro toàn diện) |
 | **Tính toàn vẹn đồng thuận** | **Cấp 0**: nút đơn hoặc PoW mờ đục**Cấp 3**: BFT đã kiểm toán với tính chung cuộc tất định**Cấp 5**: đồng thuận đa khu vực pháp lý, đã xác minh chính thức, với giám sát độ trễ liên tục | độ trễ đồng thuận tối đa chấp nhận được; ngưỡng kháng thông đồng; SLA khả dụng khi mô phỏng phân mảnh nút | **DORA Điều 6** (Khung quản lý rủi ro ICT); **CPMI-IOSCO PFMI Nguyên tắc 8** (Tính chung cuộc của thanh toán) |
 | **Danh tính và mật mã** | **Cấp 0**: khóa RSA / ECDSA yếu**Cấp 3**: đa chữ ký với quản lý khóa dựa trên HSM**Cấp 5**: khóa lai an toàn lượng tử (FIPS 203 ML-KEM) và cổng riêng tư không kiến thức | % giao dịch sổ cái được ký bằng khóa dựa trên HSM; điểm sẵn sàng chuyển đổi PQC; độ trễ bằng chứng ZK | **NIST FIPS 203 / 204**; **ISO/IEC 27001** (Quản lý an toàn thông tin) |
@@ -153,7 +153,7 @@ Dựa vào đồng thuận sổ cái chưa được chứng nhận trong khi ch�
 ## Bảng 2: các tín hiệu niềm tin chính ánh xạ tới các chuẩn ngân hàng toàn cầu
 
 | Tín hiệu / chuẩn đối sánh | Thước đo | Tác động đến nền tảng ngân hàng | Nguồn quy định |
-| :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- |
 | **Tiến độ ISO/IEC TC 307** | Chuyển từ báo cáo kỹ thuật ISO/TR sang các sơ đồ chứng nhận chính thức | Thiết lập khung chuẩn hóa đầu tiên để chứng nhận động cơ sổ cái phân tán | **ISO/IEC JTC 1 / SC 44** (Công nghệ sổ cái phân tán) |
 | **Giai đoạn nguyên mẫu Dự án Agorá** | Hơn 40 ngân hàng thương mại tham gia; thử nghiệm sổ cái hợp nhất cho tiền gửi token hóa | Chuyển thanh toán bù trừ xuyên biên giới từ nhắn tin (SWIFT) sang thanh toán token hóa nguyên tử | **Trung tâm Đổi mới của Ngân hàng Thanh toán Quốc tế (BIS)** |
 | **Kiểm toán bên thứ ba DORA Điều 30** | 100% nhà cung cấp nút và máy chủ hạ tầng được kiểm toán theo tiêu chí an toàn | Loại bỏ "nút xác thực bóng tối"; bắt buộc minh bạch chuỗi cung ứng toàn diện | **Các Cơ quan Giám sát châu Âu (ESA)** |

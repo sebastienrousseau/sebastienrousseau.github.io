@@ -143,7 +143,7 @@ Om het senior management in staat te stellen zijn ledgerplatforms te beoordelen 
 ## Tabel 1: de architectuur van de Index van Gecertificeerde Blockchains
 
 | Indexlaag | Maturiteitsniveau (CMM) | Technische en operationele maatstaf | Regulatoire / fiduciaire controlereferentie |
-| :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- |
 | **Ledgergovernance** | **Niveau 0**: ad-hocconsortium**Niveau 3**: geautomatiseerde validatorscreening & -rotatie**Niveau 5**: gedecentraliseerde, meerpartijen cryptografische identiteitsverankering | % validatorknooppunten beheerd door gescreende financiële entiteiten; gemiddelde oplostijd van validatorgeschillen; geografische spreiding van knooppunten | **DORA artikel 5** (Governance en organisatie); **CPMI-IOSCO PFMI Beginsel 2** (Governance) & **Beginsel 3** (Kader voor het integrale beheer van risico's) |
 | **Consensusintegriteit** | **Niveau 0**: enkel knooppunt of ondoorzichtige PoW**Niveau 3**: geauditeerde BFT met deterministische finaliteit**Niveau 5**: multijurisdictionele, formeel geverifieerde consensus met continue latentiebewaking | maximaal toelaatbare consensuslatentie; drempel voor collusiebestendigheid; beschikbaarheids-SLA bij gesimuleerde knooppuntpartitie | **DORA artikel 6** (Kader voor ICT-risicobeheer); **CPMI-IOSCO PFMI Beginsel 8** (Afwikkelingsfinaliteit) |
 | **Identiteit & cryptografie** | **Niveau 0**: zwakke RSA-/ECDSA-sleutels**Niveau 3**: multi-sig met HSM-ondersteund sleutelbeheer**Niveau 5**: kwantumveilige hybride sleutels (FIPS 203 ML-KEM) en zero-knowledge privacypoorten | % ledgertransacties ondertekend met HSM-ondersteunde sleutels; gereedheidsscore voor PQC-migratie; latentie van ZK-bewijzen | **NIST FIPS 203 / 204**; **ISO/IEC 27001** (Informatiebeveiligingsbeheer) |
@@ -153,7 +153,7 @@ Om het senior management in staat te stellen zijn ledgerplatforms te beoordelen 
 ## Tabel 2: belangrijke vertrouwenssignalen afgestemd op mondiale bankstandaarden
 
 | Signaal / benchmark | Maatstaf | Impact op bankplatforms | Regulatoire bron |
-| :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- |
 | **Voortgang ISO/IEC TC 307** | Overgang van ISO/TR technische rapporten naar formele certificeringsschema's | Vestigt het eerste gestandaardiseerde kader voor het certificeren van distributed-ledgermotoren | **ISO/IEC JTC 1 / SC 44** (Distributed-ledgertechnologieën) |
 | **Prototypefase van Project Agorá** | Meer dan 40 deelnemende commerciële banken; test van een geïntegreerde ledger voor getokeniseerde deposito's | Verschuift grensoverschrijdende clearing van messaging (SWIFT) naar atomaire getokeniseerde afwikkeling | **Innovation Hub van de Bank voor Internationale Betalingen (BIB)** |
 | **DORA artikel 30 externe audit** | 100 % van de knooppuntaanbieders en infrastructuurhosts geauditeerd aan de hand van beveiligingscriteria | Elimineert "schaduw-validatorknooppunten"; verplicht volledige transparantie van de toeleveringsketen | **Europese toezichthoudende autoriteiten (ETA's)** |

@@ -143,7 +143,7 @@ Bu boşluğu kapatmak için 2026 Sertifikalı Blok Zincirleri Endeksi, bu gereks
 ## Tablo 1: Sertifikalı Blok Zincirleri Endeksi mimarisi
 
 | Endeks katmanı | Olgunluk seviyesi (CMM) | Teknik ve operasyonel metrik | Düzenleyici / mütevelli kontrol referansı |
-| :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- |
 | **Defter yönetişimi** | **Seviye 0**: geçici konsorsiyum**Seviye 3**: otomatik doğrulayıcı denetimi ve rotasyonu**Seviye 5**: merkeziyetsiz, çok taraflı kriptografik kimlik çıpalama | denetlenmiş finansal kuruluşlarca işletilen doğrulayıcı düğümlerin %'si; doğrulayıcı anlaşmazlıklarını çözme ortalama süresi; düğümlerin coğrafi dağılımı | **DORA Madde 5** (Yönetişim ve organizasyon); **CPMI-IOSCO PFMI İlke 2** (Yönetişim) ve **İlke 3** (Kapsamlı risk yönetimi çerçevesi) |
 | **Mutabakat bütünlüğü** | **Seviye 0**: tek düğüm veya opak PoW**Seviye 3**: deterministik kesinlikli denetlenmiş BFT**Seviye 5**: sürekli gecikme izlemeli, çok yargılı, biçimsel olarak doğrulanmış mutabakat | azami tolere edilebilir mutabakat gecikmesi; gizli anlaşmaya direnç eşiği; simüle edilmiş düğüm bölünmesinde erişilebilirlik SLA'sı | **DORA Madde 6** (BİT risk yönetimi çerçevesi); **CPMI-IOSCO PFMI İlke 8** (Mutabakat kesinliği) |
 | **Kimlik ve kriptografi** | **Seviye 0**: zayıf RSA / ECDSA anahtarları**Seviye 3**: HSM destekli anahtar yönetimiyle çoklu imza**Seviye 5**: kuantum güvenli hibrit anahtarlar (FIPS 203 ML-KEM) ve sıfır bilgi gizlilik kapıları | HSM destekli anahtarlarla imzalanan defter işlemlerinin %'si; PQC geçiş hazırlık puanı; ZK kanıt gecikmesi | **NIST FIPS 203 / 204**; **ISO/IEC 27001** (Bilgi güvenliği yönetimi) |
@@ -153,7 +153,7 @@ Bu boşluğu kapatmak için 2026 Sertifikalı Blok Zincirleri Endeksi, bu gereks
 ## Tablo 2: küresel bankacılık standartlarına eşlenen temel güven sinyalleri
 
 | Sinyal / ölçüt | Metrik | Bankacılık platformlarına etkisi | Düzenleyici kaynak |
-| :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- |
 | **ISO/IEC TC 307 ilerlemesi** | ISO/TR teknik raporlarından resmî sertifikasyon şemalarına geçiş | Dağıtık defter motorlarını sertifikalamak için ilk standartlaştırılmış çerçeveyi kurar | **ISO/IEC JTC 1 / SC 44** (Dağıtık defter teknolojileri) |
 | **Agorá Projesi prototip aşaması** | 40'tan fazla katılımcı ticari banka; tokenleştirilmiş mevduatların birleşik defter testi | Sınır ötesi takası mesajlaşmadan (SWIFT) atomik tokenleştirilmiş mutabakata taşır | **Uluslararası Ödemeler Bankası (BIS) İnovasyon Merkezi** |
 | **DORA Madde 30 üçüncü taraf denetimi** | Düğüm sağlayıcıları ve altyapı barındırıcılarının %100'ü güvenlik ölçütlerine göre denetlendi | "Gölge doğrulayıcı düğümleri" ortadan kaldırır; tam tedarik zinciri şeffaflığını zorunlu kılar | **Avrupa Denetim Otoriteleri (ESA)** |

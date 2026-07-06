@@ -143,7 +143,7 @@ För att göra det möjligt för högsta ledningen att utvärdera och certifiera
 ## Tabell 1: arkitekturen för Indexet över certifierade blockkedjor
 
 | Indexlager | Mognadsnivå (CMM) | Tekniskt och operativt mått | Regulatorisk / fiduciär kontrollreferens |
-| :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- |
 | **Liggarstyrning** | **Nivå 0**: ad hoc-konsortium**Nivå 3**: automatiserad validatorkontroll och -rotation**Nivå 5**: decentraliserad kryptografisk identitetsförankring med flera parter | % valideringsnoder som drivs av granskade finansiella enheter; genomsnittlig tid att lösa validatortvister; noders geografiska spridning | **DORA artikel 5** (Styrning och organisation); **CPMI-IOSCO PFMI Princip 2** (Styrning) och **Princip 3** (Ramverk för övergripande riskhantering) |
 | **Konsensusintegritet** | **Nivå 0**: enskild nod eller ogenomskinlig PoW**Nivå 3**: reviderad BFT med deterministisk finalitet**Nivå 5**: multijurisdiktionell, formellt verifierad konsensus med kontinuerlig latensövervakning | maximalt tolererbar konsensuslatens; tröskel för samverkansmotstånd; tillgänglighets-SLA vid simulerad nodpartition | **DORA artikel 6** (Ramverk för IKT-riskhantering); **CPMI-IOSCO PFMI Princip 8** (Avvecklingsfinalitet) |
 | **Identitet och kryptografi** | **Nivå 0**: svaga RSA-/ECDSA-nycklar**Nivå 3**: multisignatur med HSM-baserad nyckelhantering**Nivå 5**: kvantsäkra hybridnycklar (FIPS 203 ML-KEM) och nollkunskapsgrindar för integritet | % liggartransaktioner signerade med HSM-baserade nycklar; beredskapspoäng för PQC-migrering; latens för ZK-bevis | **NIST FIPS 203 / 204**; **ISO/IEC 27001** (Ledningssystem för informationssäkerhet) |
@@ -153,7 +153,7 @@ För att göra det möjligt för högsta ledningen att utvärdera och certifiera
 ## Tabell 2: viktiga förtroendesignaler mappade mot globala bankstandarder
 
 | Signal / riktmärke | Mått | Påverkan på bankplattformar | Regulatorisk källa |
-| :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- |
 | **Framsteg för ISO/IEC TC 307** | Övergång från ISO/TR tekniska rapporter till formella certifieringssystem | Etablerar det första standardiserade ramverket för att certifiera motorer för distribuerade liggare | **ISO/IEC JTC 1 / SC 44** (Teknik för distribuerade liggare) |
 | **Prototypfas för Projekt Agorá** | Fler än 40 deltagande affärsbanker; test av en enhetlig liggare för tokeniserade insättningar | Flyttar gränsöverskridande clearing från meddelanden (SWIFT) till atomär tokeniserad avveckling | **Bank for International Settlements (BIS) Innovation Hub** |
 | **Tredjepartsrevision enligt DORA artikel 30** | 100 % av nodleverantörer och infrastrukturvärdar reviderade enligt säkerhetskriterier | Eliminerar "skuggvalideringsnoder"; kräver full transparens i leveranskedjan | **Europeiska tillsynsmyndigheterna (ESA)** |
