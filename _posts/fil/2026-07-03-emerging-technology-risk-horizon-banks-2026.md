@@ -1,6 +1,6 @@
 ---
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
-banner_alt: "Abstract horizon of converging signal lines — AI, synthetic media, and programmable-money rails resolving over a banking skyline, evoking a supervisory scan of emerging-technology risk for financial services in 2026"
+banner_alt: "Abstraktong abot-tanaw ng nagtatagpong mga linya ng senyas — AI, sintetikong midya, at mga riles ng nauupraprogramang pera na nalulusaw sa ibabaw ng isang silweta ng pagbabangko, nagpapagunita ng isang pag-scan-superbisyon ng panganib ng umuusbong na teknolohiya para sa mga serbisyong pampinansyal sa 2026"
 banner_height: "1280"
 banner_width: "1920"
 banner: "https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp"
@@ -9,7 +9,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "July 3, 2026"
-description: "An original reading of the 2026 emerging-technology risk horizon for banks — personalised AI intelligence, synthetic financial crime, and programmable finance — with a signal-to-supervision framework, drawing on the FCA's Technology Horizon Scan 2026."
+description: "Isang orihinal na pagbasa ng abot-tanaw ng panganib ng umuusbong na teknolohiya para sa mga bangko sa 2026 — personalisadong katalinuhan sa AI, sintetikong krimen sa pananalapi, at nauupraprogramang pananalapi — na may balangkas na senyas-tungo-sa-superbisyon, batay sa Technology Horizon Scan 2026 ng FCA."
 format-detection: "telephone=no"
 hreflang: "fil"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -35,9 +35,9 @@ rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
 schema: "FAQPage, Article"
-seo_title: "Reading the Emerging-Technology Risk Horizon for Banks in 2026"
+seo_title: "Pagbasa sa abot-tanaw ng panganib ng umuusbong na teknolohiya para sa mga bangko sa 2026"
 short_name: "sebastienrousseau"
-subtitle: "Three technology vectors — personalised intelligence, synthetic (in)security, and programmable finance — are converging on banking at once. A signal-to-supervision reading of what changes, and what boards should do before the risks arrive."
+subtitle: "Tatlong teknolohikal na vektor — personalisadong katalinuhan, sintetikong (di-)seguridad, at nauupraprogramang pananalapi — nagtatagpo sa pagbabangko nang sabay-sabay. Isang pagbasang senyas-tungo-sa-superbisyon kung ano ang nagbabago, at kung ano ang dapat gawin ng mga lupon bago dumating ang mga panganib."
 tags: "emerging technology, horizon scanning, FCA, personalised intelligence, agentic AI, synthetic fraud, deepfakes, programmable finance, tokenisation, stablecoins, financial crime, consumer duty, banking regulation, operational resilience, risk signals"
 theme-color: "0, 83, 191"
 title: "Reading the Emerging-Technology Risk Horizon for Banks in 2026"
@@ -63,7 +63,7 @@ apple_touch_icon_sizes: "192x192"
 apple-mobile-web-app-capable: "yes"
 apple-mobile-web-app-status-bar-inset: "black"
 apple-mobile-web-app-status-bar-style: "black-translucent"
-apple-mobile-web-app-title: "Emerging-Tech Horizon 2026"
+apple-mobile-web-app-title: "Abot-tanaw teknolohiya 2026"
 apple-touch-fullscreen: "yes"
 msapplication-navbutton-color: "0, 83, 191"
 twitter_card: "summary_large_image"
@@ -84,85 +84,81 @@ site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 ---
 
-<!-- translation-stub: replace this body in Claude Code -->
+# Pagbasa sa abot-tanaw ng panganib ng umuusbong na teknolohiya para sa mga bangko sa 2026
 
-> _Translation pending — read the [English original](/2026-07-03-emerging-technology-risk-horizon-banks-2026/) while we localise._
+May nagbago sa paraan ng pagsasalita ng mga superbisor tungkol sa hinaharap. Sa loob ng maraming taon, reaktibo ang tindig: dumarating ang isang teknolohiya, lumilitaw ang pinsala, sumusunod ang isang patakaran. Sa 2026 iba ang tono. Sinusuri ng mga regulator ang abot-tanaw *nang malakas* — naglalathala ng nakabalangkas, hindi-nagbubuklod na mga pagbasa kung paano maaaring pagsamahin ang umuusbong na mga teknolohiya bago mapinsala ang sinuman. Ang *Technology Horizon Scan 2026* ng Financial Conduct Authority ng UK ang pinakamalinaw na halimbawa; inilalarawan nito ang sarili bilang unang panlabas na publikasyon ng ganitong uri ng regulator at inilalatag ang tatlong makatuwirang paraan kung saan maaaring hubugin muli ng umuusbong na teknolohiya ang mga resulta para sa mga mamimili, kumpanya, at merkado.
 
-# Reading the Emerging-Technology Risk Horizon for Banks in 2026
+Mas mabigat ang paglilipat na ito kaysa sa anumang hula sa loob nito. Ang isang regulator na hayagang sumusuri sa abot-tanaw ay nagpapahiwatig na ang *sandali* ng superbisyon ay gumagalaw pataas ng agos — mula sa pagpapatupad matapos ang pinsala tungo sa pag-asa bago ang pinsala. Para sa mga bangko, ang praktikal na tanong ay hindi na «anong teknolohiya ang dapat nating gamitin?» kundi «kaya ba nating basahin ang parehong mga senyas na binabasa na ngayon ng ating mga superbisor, at kumilos muna?» Ang artikulong ito ay isang pagbasa ng abot-tanaw na iyon: tatlong teknolohikal na vektor na nagtatagpo sa pagbabangko nang sabay-sabay, at isang balangkas upang gawing aksyong may kalidad-superbisyon ang mahihinang senyas bago lumaki ang mga panganib.
 
-Something changed in how supervisors talk about the future. For years the posture was reactive: a technology arrives, harm surfaces, a rule follows. In 2026 the tone is different. Regulators are scanning the horizon *out loud* — publishing structured, non-binding readings of where emerging technologies might combine before anyone has been harmed. The UK Financial Conduct Authority's *Technology Horizon Scan 2026* is the clearest example, describing itself as the regulator's first external publication of its kind and setting out three plausible ways emerging technologies could reshape outcomes for consumers, firms, and markets.
-
-That shift matters more than any single prediction inside it. A regulator that scans the horizon in public is signalling that the *timing* of oversight is moving upstream — from post-harm enforcement toward pre-harm anticipation. For banks, the practical question is no longer "which technology should we adopt?" but "can we read the same signals our supervisors are now reading, and act on them first?" This piece is one reading of that horizon: three technology vectors converging on banking at once, and a framework for turning weak signals into supervisory-grade action before the risks scale.
-
-> **Executive summary / key takeaways**
+> **Buod para sa ehekutibo / mga pangunahing punto**
 >
-> - **Three vectors, one arrival window.** Personalised AI intelligence, synthetic (in)security, and programmable finance are not sequential waves — they are converging on the same 2026–2028 window, and they amplify each other.
-> - **The harm curve moved left.** Supervisors are publishing horizon scans precisely because these technologies compress the distance between "novel" and "systemic." Reactive controls arrive too late by construction.
-> - **Signals beat forecasts.** You cannot predict which scenario lands; you can instrument for the *early signals* each one emits and pre-authorise the response.
-> - **Governance is the differentiator.** The banks that fare best will not be those with the most AI — they will be those that can *evidence* how they read, escalated, and contained an emerging risk. That is a board-level capability, not a lab experiment.
+> - **Tatlong vektor, isang bintana ng pagdating.** Ang personalisadong katalinuhan sa pamamagitan ng AI, sintetikong (di-)seguridad, at nauupraprogramang pananalapi ay hindi magkakasunod na alon — nagtatagpo ang mga ito sa parehong bintana 2026-2028 at pinalalakas ang isa't isa.
+> - **Lumipat ang kurba ng pinsala sa kaliwa.** Naglalathala ang mga superbisor ng mga pag-scan ng abot-tanaw nang tumpak dahil pinipiga ng mga teknolohiyang ito ang distansya sa pagitan ng «bago» at «sistematiko». Ang reaktibong mga kontrol ay dumarating nang huli na masyado sa disenyo.
+> - **Ang mga senyas ay nananaig sa mga hula.** Hindi mo mahuhulaan kung aling senaryo ang mangyayari; maaari mong ihanda ang sarili para sa *maagang mga senyas* na inilalabas ng bawat isa at paunang-pahintulutan ang tugon.
+> - **Ang pamamahala ang salik na nagpapaiba.** Ang mga bangkong pinakamahusay na aasenso ay hindi ang may pinakamaraming AI — kundi ang mga kayang *patunayan* kung paano nila binasa, ipinaakyat, at pinigil ang isang umuusbong na panganib. Ito ay kakayahan sa antas ng lupon, hindi isang eksperimento sa laboratoryo.
 
-## The three vectors, and why they converge
+## Ang tatlong vektor, at kung bakit nagtatagpo
 
-The instinct is to treat emerging technologies as a queue — deal with AI, then digital assets, then whatever follows. The horizon-scanning frame breaks that instinct: it insists the interesting risk lives in *combination*. Three vectors dominate the 2026 reading.
+Itinuturing ng instinct ang umuusbong na teknolohiya bilang isang pila — asikasuhin ang AI, tapos ang mga digital na ari-arian, tapos kung ano ang susunod. Sinisira ng balangkas ng pag-scan ng abot-tanaw ang instinct na ito: iginigiit nito na ang kawili-wiling panganib ay nasa *kombinasyon*. Tatlong vektor ang nangingibabaw sa pagbasa ng 2026.
 
-**Personalised intelligence.** Widely available AI, combined with granular behavioural and financial data, lets systems tailor persuasion, pricing, and interaction to the individual in real time. The upside is genuine — delegated, agentic interactions that act on a consumer's behalf. The risk is that the same personalisation that serves a customer can be turned to exploit them: hyper-targeted pressure, opaque price discrimination, and agentic systems transacting faster than any human review loop. When the interface itself is optimising against the consumer's interest, "informed consent" becomes a fiction.
+**Personalisadong katalinuhan.** Ang malawak na magagamit na AI, kasama ang butil-butil na datos ng pag-uugali at pananalapi, ay nagbibigay-daan sa mga sistema na iangkop ang panghihikayat, pagpepresyo, at interaksyon sa indibidwal sa totoong panahon. Tunay ang potensyal — ipinagkatiwala, ahentikong mga interaksyon na kumikilos alang-alang sa isang mamimili. Ang panganib ay ang parehong personalisasyon na naglilingkod sa isang kliyente ay maaaring ibaling upang samantalahin siya: hyper-target na presyon, malabong diskriminasyon sa presyo, at ahentikong mga sistema na nagti-transaksyon nang mas mabilis kaysa sa anumang loop ng pagsusuri ng tao. Kapag ang interface mismo ay nag-o-optimize laban sa interes ng mamimili, ang «may-kaalamang pahintulot» ay nagiging kathang-isip.
 
-**Synthetic (in)security.** Generative models have industrialised the raw materials of financial crime — synthetic identities, voice and video deepfakes, fabricated documents, and automated social engineering at scale. The defensive assumptions of KYC, authentication, and fraud detection were built for a world where forging a convincing identity was expensive. That cost has collapsed. Synthetic crime does not merely increase fraud volume; it dissolves the evidentiary basis on which "who did this?" can be answered at all.
+**Sintetikong (di-)seguridad.** Naindustriyalisa ng mga generatibong modelo ang hilaw na materyales ng krimen sa pananalapi — sintetikong mga pagkakakilanlan, deepfake ng boses at video, pinekeng mga dokumento, at awtomatikong social engineering sa laki. Ang mapagtanggol na mga palagay ng KYC, awtentikasyon, at pagtukoy ng panloloko ay dinisenyo para sa mundong mahal ang pamemeke ng kapani-paniwalang pagkakakilanlan. Bumagsak ang halagang iyon. Ang sintetikong krimen ay hindi lang nagpapataas ng dami ng panloloko; tinutunaw nito ang batayang ebidensiya kung saan masasagot ang «sino ang gumawa nito?».
 
-**Programmable finance.** Tokenised deposits, stablecoins, smart-contract settlement, and shared ledgers promise to reshape financial infrastructure toward interoperable, programmable economies. The growth case is real — atomic settlement, embedded compliance, new liquidity. The risk is that programmability moves control logic out of institutions and into code that executes without a human in the loop, across jurisdictions, at machine speed, and often outside the perimeter a supervisor can see.
+**Nauupraprogramang pananalapi.** Ang mga tokenisadong deposito, stablecoin, pag-aayos sa pamamagitan ng smart contract, at ibinabahaging mga ledger ay nangangako na hubugin muli ang imprastruktura ng pananalapi tungo sa magkatugmang, nauupraprogramang mga ekonomiya. Tunay ang kaso ng paglago — atomikong pag-aayos, nakatanim na pagsunod, bagong pagkatubig. Ang panganib ay inililipat ng pagkanauupraprograma ang lohika ng kontrol palabas ng mga institusyon, tungo sa kodigong isinasagawa nang walang tao sa loop, sa mga hurisdiksyon, sa bilis ng makina, at kadalasang labas ng perimeter na nakikita ng isang superbisor.
 
-Why do they converge rather than queue? Because each one lowers the cost of the others' failure modes. Personalised intelligence makes synthetic attacks more targeted. Synthetic identity makes programmable-finance rails easier to abuse. Programmable rails give agentic systems somewhere to act autonomously and irreversibly. A weak signal in one vector is a leading indicator in the others.
+Bakit sila nagtatagpo sa halip na pumila? Dahil binababaan ng bawat isa ang halaga ng mga mode ng pagkabigo ng iba. Pinababuti ng personalisadong katalinuhan ang pagtutok ng mga sintetikong pag-atake. Pinadadali ng sintetikong pagkakakilanlan ang pag-abuso sa mga riles ng nauupraprogramang pananalapi. Nagbibigay ang mga nauupraprogramang riles sa mga ahentikong sistema ng lugar upang kumilos nang awtonomo at hindi mababawi. Ang isang mahinang senyas sa isang vektor ay isang nangungunang tagapagpahiwatig sa iba.
 
-## The harm curve moved left
+## Lumipat ang kurba ng pinsala sa kaliwa
 
-The reason supervisors are publishing scans — rather than waiting for complaints — is structural. These technologies compress the interval between *novel* and *systemic*. A deepfake authorisation scam, an agentic mis-selling loop, or a stablecoin depeg propagates at network speed, not quarterly-review speed. By the time a traditional control fires — a threshold breach, an audit finding, a regulatory return — the harm has already scaled.
+Ang dahilan kung bakit naglalathala ng mga pag-scan ang mga superbisor — sa halip na maghintay ng mga reklamo — ay istruktural. Pinipiga ng mga teknolohiyang ito ang agwat sa pagitan ng *bago* at *sistematiko*. Ang isang panloloko sa awtorisasyon sa pamamagitan ng deepfake, isang ahentikong loop ng maling pagbebenta, o isang pagkakalag ng stablecoin ay kumakalat sa bilis ng network, hindi sa bilis ng quarterly review. Sa oras na na-trigger ang isang tradisyonal na kontrol — isang nalampasang threshold, isang natuklasan sa pag-audit, isang ulat pang-regulasyon — lumaki na ang pinsala.
 
-That is the quiet thesis inside every horizon scan: **anticipation is now a control, not a courtesy.** A bank whose risk function only detects emerging-technology harm after it materialises is, by construction, always late. The differentiator is the ability to read the horizon at the same cadence the technology moves.
+Ito ang tahimik na tesis sa puso ng bawat pag-scan ng abot-tanaw: **ang pag-asa ngayon ay isang kontrol, hindi kagandahang-loob.** Ang isang bangkong ang tungkulin sa panganib ay tumutukoy lamang sa pinsala ng umuusbong na teknolohiya matapos itong maganap, sa disenyo, ay palaging huli. Ang salik na nagpapaiba ay ang kakayahang basahin ang abot-tanaw sa parehong ritmo ng paggalaw ng teknolohiya.
 
-## From signals to supervision: a reading framework
+## Mula sa mga senyas tungo sa superbisyon: isang balangkas ng pagbasa
 
-You cannot forecast which scenario lands. You *can* instrument for the early signals each vector emits and pre-authorise the response. Four moves turn a horizon scan from a reading exercise into an operating capability.
+Hindi mo mahuhulaan kung aling senaryo ang mangyayari. *Maaari* mong ihanda ang sarili para sa maagang mga senyas na inilalabas ng bawat vektor at paunang-pahintulutan ang tugon. Apat na hakbang ang nagbabago sa isang pag-scan ng abot-tanaw mula sa isang ehersisyo ng pagbasa tungo sa isang kakayahang pang-operasyon.
 
-1. **Name the signals, per vector.** For each vector, define the concrete leading indicators you will watch — a rise in authenticated-but-anomalous transactions (synthetic security), agentic sessions acting outside expected parameters (personalised intelligence), or settlement finality dependent on third-party contract code (programmable finance). A signal you have not named in advance is a signal you will rationalise away in the moment.
-2. **Set the escalation trigger before the event.** Decide, now, what movement in each signal forces a decision — and who owns it. The failure mode is not missing the signal; it is seeing it and having no pre-agreed threshold that compels action.
-3. **Pre-authorise the containment.** The response to a fast-moving emerging risk cannot wait for a committee to convene. Rehearse the circuit-breakers — pausing an agentic channel, tightening an authentication gate, halting settlement on a suspect rail — and pre-authorise them so they can fire at machine speed.
-4. **Evidence the reading.** Record what you watched, what moved, what you decided, and why. When a supervisor asks how you anticipated a risk, the defensible answer is a documented reading trail — not a retrospective story. This is where the horizon scan becomes auditable governance.
+1. **Pangalanan ang mga senyas, kada vektor.** Para sa bawat vektor, tukuyin ang mga kongkretong nangungunang tagapagpahiwatig na susubaybayan mo — isang pagtaas sa awtentikado ngunit di-normal na mga transaksyon (sintetikong seguridad), mga ahentikong sesyon na kumikilos labas sa inaasahang mga parameter (personalisadong katalinuhan), o isang finalidad ng pag-aayos na nakadepende sa kodigo ng kontrata ng ikatlong partido (nauupraprogramang pananalapi). Ang isang senyas na hindi mo pinangalanan nang maaga ay isang senyas na irarasyonalisa mo sa sandaling iyon.
+2. **Itakda ang trigger ng escalation bago ang pangyayari.** Magpasya, ngayon, kung anong galaw ng bawat senyas ang pumipilit ng isang desisyon — at sino ang may-ari nito. Ang mode ng pagkabigo ay hindi ang pagpalya sa senyas; ito ang pagkakita rito nang walang paunang-napagkasunduang threshold na pumipilit ng aksyon.
+3. **Paunang-pahintulutan ang pagpigil.** Ang tugon sa isang mabilis na umuunlad na umuusbong na panganib ay hindi maaaring maghintay ng pagtitipon ng isang komite. Ensayuhin ang mga circuit breaker — pag-pause ng isang ahentikong channel, paghihigpit ng isang gate ng awtentikasyon, paghinto ng pag-aayos sa isang kahina-hinalang riles — at paunang-pahintulutan ang mga ito upang mag-trigger sa bilis ng makina.
+4. **Idokumento ang pagbasa.** Itala kung ano ang sinubaybayan mo, kung ano ang gumalaw, kung ano ang napagpasyahan mo, at bakit. Kapag nagtanong ang isang superbisor kung paano mo inasahan ang isang panganib, ang maipagtatanggol na sagot ay isang naidokumentong bakas ng pagbasa — hindi isang paglalahad na paatras. Dito nagiging naa-audit na pamamahala ang pag-scan ng abot-tanaw.
 
-The through-line: emerging-technology risk is not managed by adopting less technology, and it is not managed by predicting the future. It is managed by making anticipation *repeatable and evidenced*.
+Ang gitnang sinulid: ang panganib ng umuusbong na teknolohiya ay hindi napamamahalaan sa pamamagitan ng paggamit ng mas kaunting teknolohiya, ni sa paghula sa hinaharap. Napamamahalaan ito sa pamamagitan ng paggawa sa pag-asa na *mauulit at mapapatunayan*.
 
-## What changes for the boardroom
+## Ano ang nagbabago para sa lupon
 
-For senior management, three shifts follow directly.
+Para sa senyor na pamamahala, tatlong paglilipat ang direktang sumusunod.
 
-- **Move horizon scanning inside enterprise risk.** Treat it as a standing function with named signal owners across the three vectors, not an innovation-team side project. The supervisor has made scanning a first-class activity; the board should mirror it.
-- **Fund anticipation, not just detection.** Detection tooling answers "did harm occur?" Anticipation tooling answers "is a harm forming?" The second is where the 2026 risks are won or lost, and it is chronically underfunded relative to its blast radius.
-- **Make the reading a board artefact.** A quarterly horizon reading — signals watched, thresholds, decisions taken — belongs in the board pack alongside capital and liquidity. It is the evidence that the institution can keep pace with a supervisor that now reads the same horizon.
+- **Dalhin ang pag-scan ng abot-tanaw sa loob ng pamamahala ng panganib ng negosyo.** Ituring itong isang permanenteng tungkulin na may pinangalanang mga may-ari ng senyas sa tatlong vektor, hindi isang side project ng koponan sa inobasyon. Ginawang una-uring aktibidad ng superbisor ang pag-scan; dapat itong salaminin ng lupon.
+- **Pondohan ang pag-asa, hindi lang ang pagtukoy.** Sinasagot ng mga kasangkapan sa pagtukoy ang «naganap ba ang pinsala?». Sinasagot ng mga kasangkapan sa pag-asa ang «nabubuo ba ang pinsala?». Sa pangalawa napagtatagumpayan o natatalo ang mga panganib ng 2026, at ito ay talamak na kulang sa pondo kaugnay ng radyus ng epekto nito.
+- **Gawing artefakto ng lupon ang pagbasa.** Ang isang quarterly na pagbasa ng abot-tanaw — sinusubaybayang mga senyas, mga threshold, mga desisyong ginawa — ay kabilang sa dosyer ng lupon katabi ng kapital at pagkatubig. Ito ang patunay na kayang makasabay ng institusyon sa isang superbisor na ngayon ay bumabasa ng parehong abot-tanaw.
 
-## The regulatory posture is the tell
+## Ang tindig-regulasyon ang pahiwatig
 
-The deepest signal in the 2026 landscape is not any one technology — it is that regulators have chosen to publish their horizon reading at all. A scan is an invitation: it tells the market where oversight attention is moving *before* the rules arrive. The firms that respond by building their own reading capability will help shape what binding supervision eventually looks like. The firms that wait for the rule will inherit whatever the fastest-moving harm forces regulators to write.
+Ang pinakamalalim na senyas sa tanawin ng 2026 ay hindi anumang partikular na teknolohiya — ito ang pagpili ng mga regulator na ilathala ang kanilang pagbasa ng abot-tanaw. Ang isang pag-scan ay isang paanyaya: sinasabi nito sa merkado kung saan gumagalaw ang atensyon ng superbisyon *bago* dumating ang mga patakaran. Ang mga kumpanyang tumutugon sa pamamagitan ng pagbuo ng sariling kakayahan sa pagbasa ay tutulong na hubugin kung ano ang magiging hitsura ng nagbubuklod na superbisyon. Ang mga kumpanyang naghihintay ng patakaran ay magmamana ng anumang pipilitin ng pinakamabilis na pinsala sa mga regulator na isulat.
 
-Emerging technology has always been framed as an adoption question. In 2026 it is a *reading* question. The banks that can read the horizon — across personalised intelligence, synthetic security, and programmable finance — and evidence how they act on it, will find that anticipation is not the constraint on innovation. It is the licence for it.
+Ang umuusbong na teknolohiya ay palaging binabalangkas bilang tanong ng pag-ampon. Sa 2026 ito ay tanong ng *pagbasa*. Ang mga bangkong kayang basahin ang abot-tanaw — sa personalisadong katalinuhan, sintetikong seguridad, at nauupraprogramang pananalapi — at patunayan kung paano sila kumikilos ayon dito, ay matutuklasan na ang pag-asa ay hindi hadlang ng inobasyon. Ito ang lisensya nito.
 
-## Frequently asked questions
+## Mga madalas itanong
 
-**Is this a prediction of what will happen?**
-No. Like the horizon scans it draws on, this is a reading of *plausible* combinations and the early signals they emit — not a forecast. Its value is preparation, not prophecy: naming the signals and pre-authorising the response so a bank is not improvising when one of them moves.
+**Isa ba itong hula sa kung ano ang mangyayari?**
+Hindi. Tulad ng mga pag-scan ng abot-tanaw na sinasandigan nito, ito ay isang pagbasa ng *makatuwirang* mga kombinasyon at ng maagang mga senyas na inilalabas nila — hindi isang hula. Ang halaga nito ay paghahanda, hindi propesiya: pangalanan ang mga senyas at paunang-pahintulutan ang tugon upang hindi mag-improvisa ang isang bangko kapag gumalaw ang isa sa kanila.
 
-**Why treat the three vectors together rather than separately?**
-Because their risk lives in combination. Personalised intelligence sharpens synthetic attacks; synthetic identity abuses programmable rails; programmable rails give agentic systems autonomous, irreversible reach. Managing them in silos misses the amplification that makes them systemic.
+**Bakit haharapin ang tatlong vektor nang magkasama sa halip na hiwalay?**
+Dahil ang kanilang panganib ay nasa kombinasyon. Pinatatalas ng personalisadong katalinuhan ang mga sintetikong pag-atake; inaabuso ng sintetikong pagkakakilanlan ang mga nauupraprogramang riles; nagbibigay ang mga nauupraprogramang riles sa mga ahentikong sistema ng awtonomo, hindi mababawing abot. Ang pamamahala sa mga ito sa mga silo ay nakakaligta sa pagpapalakas na nagpapasistematiko sa kanila.
 
-**What is the single most useful thing a bank can do first?**
-Name the leading signals per vector and set the escalation trigger *before* an event, with a named owner. Most institutions can already detect harm; few have pre-agreed what movement in an emerging-risk signal compels a decision, or who makes it.
+**Ano ang pinakakapaki-pakinabang na maaaring gawin muna ng isang bangko?**
+Pangalanan ang mga nangungunang senyas kada vektor at itakda ang trigger ng escalation *bago* ang isang pangyayari, na may pinangalanang may-ari. Karamihan sa mga institusyon ay kaya nang tumukoy ng pinsala; kakaunti ang paunang nagkasundo kung anong galaw ng isang senyas ng umuusbong na panganib ang pumipilit ng desisyon, o sino ang gumagawa nito.
 
-**How does horizon scanning relate to existing obligations?**
-It operationalises them. Consumer-duty, operational-resilience, model-risk, and financial-crime obligations all assume a firm can anticipate and contain harm. A documented horizon reading is the evidence that the anticipation actually happens — turning a principle into an auditable control.
+**Paano nauugnay ang pag-scan ng abot-tanaw sa umiiral na mga obligasyon?**
+Ginagawa nitong operasyonal ang mga ito. Ang mga obligasyon ng consumer duty, katatagan sa operasyon, panganib ng modelo, at krimen sa pananalapi ay lahat nagpapalagay na kayang asahan at pigilin ng isang kumpanya ang pinsala. Ang isang naidokumentong pagbasa ng abot-tanaw ang patunay na tunay na nangyayari ang pag-asa — ginagawang naa-audit na kontrol ang isang prinsipyo.
 
-## Sources and further reading
+## Mga sanggunian at karagdagang babasahin
 
-- Financial Conduct Authority (FCA), 2026. *Technology Horizon Scan 2026* ⧉. [The FCA's first external horizon-scanning publication; sets out three plausible emerging-technology scenarios — Personalised Intelligence, Synthetic (in)security, and Programmable finance — and early risk signals for consumers, firms and markets. Cited as the anchor source for the three-vector framing; the analysis, signal-to-supervision framework and conclusions above are the author's own.]
-- Bank for International Settlements (BIS) Innovation Hub, 2026. *Project Agorá and the unified-ledger agenda* ⧉. [Cross-border tokenised settlement experiments underpinning the programmable-finance vector.]
-- Financial Stability Board (FSB), 2026. *Sound Practices for the Responsible Adoption of AI* ⧉. [Supervisory framing for agentic and personalised-intelligence risk.]
-- ISO/IEC 42001:2023, *Information technology — Artificial intelligence — Management system* ⧉. [Governance baseline for the intelligence vector.]
+- Financial Conduct Authority (FCA), 2026. *Technology Horizon Scan 2026* ⧉. [Unang panlabas na publikasyon ng pag-scan ng abot-tanaw ng FCA; inilalatag ang tatlong makatuwirang senaryo ng umuusbong na teknolohiya — Personalised Intelligence, Synthetic (in)security, at Programmable finance — at maagang mga senyas ng panganib para sa mga mamimili, kumpanya, at merkado. Sinipi bilang angkla na sanggunian para sa balangkas na tatlong-vektor; ang pagsusuri, balangkas na senyas-tungo-sa-superbisyon, at mga konklusyon sa itaas ay sa may-akda.]
+- Innovation Hub ng Bank for International Settlements (BIS), 2026. *Proyektong Agorá at ang agenda ng pinag-isang ledger* ⧉. [Mga eksperimento sa tokenisadong pag-aayos na tumatawid-hangganan na sumusuporta sa vektor ng nauupraprogramang pananalapi.]
+- Financial Stability Board (FSB), 2026. *Sound Practices for the Responsible Adoption of AI* ⧉. [Balangkas-superbisyon ng panganib na ahentiko at personalisadong katalinuhan.]
+- ISO/IEC 42001:2023, *Information technology — Artificial intelligence — Management system* ⧉. [Batayan ng pamamahala para sa vektor ng katalinuhan.]
 
-*Last reviewed July 2026. Original analysis; the FCA Technology Horizon Scan 2026 is cited as a source and is not reproduced. Licensed under CC-BY-4.0.*
+*Huling nirepaso Hulyo 2026. Orihinal na pagsusuri; ang dokumentong FCA Technology Horizon Scan 2026 ay sinipi bilang sanggunian at hindi ipinaparami. Lisensyado sa ilalim ng CC-BY-4.0.*
