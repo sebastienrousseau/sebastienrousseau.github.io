@@ -1,6 +1,6 @@
 ---
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
-banner_alt: "Abstract horizon of converging signal lines — AI, synthetic media, and programmable-money rails resolving over a banking skyline, evoking a supervisory scan of emerging-technology risk for financial services in 2026"
+banner_alt: "Sararin sama na zahiri na layukan sigina masu haɗuwa — AI, kafofin watsa labarai na roba, da hanyoyin kuɗi mai iya shirya-shiri suna warwarewa a sama da inuwar banki, suna kawo leƙan kulawa na haɗarin sabbin fasahohi ga ayyukan kuɗi a 2026"
 banner_height: "1280"
 banner_width: "1920"
 banner: "https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp"
@@ -9,7 +9,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "July 3, 2026"
-description: "An original reading of the 2026 emerging-technology risk horizon for banks — personalised AI intelligence, synthetic financial crime, and programmable finance — with a signal-to-supervision framework, drawing on the FCA's Technology Horizon Scan 2026."
+description: "Karatu na asali na sararin haɗarin sabbin fasahohi ga bankuna a 2026 — hankalin da AI ta keɓance, laifin kuɗi na roba, da kuɗi mai iya shirya-shiri — da tsarin sigina-zuwa-kulawa, mai dogaro da Technology Horizon Scan 2026 na FCA."
 format-detection: "telephone=no"
 hreflang: "ha"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -35,9 +35,9 @@ rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
 schema: "FAQPage, Article"
-seo_title: "Reading the Emerging-Technology Risk Horizon for Banks in 2026"
+seo_title: "Karanta sararin haɗarin sabbin fasahohi ga bankuna a 2026"
 short_name: "sebastienrousseau"
-subtitle: "Three technology vectors — personalised intelligence, synthetic (in)security, and programmable finance — are converging on banking at once. A signal-to-supervision reading of what changes, and what boards should do before the risks arrive."
+subtitle: "Vektoci uku na fasaha — hankali mai keɓantawa, (rashin) tsaro na roba, da kuɗi mai iya shirya-shiri — suna haɗuwa a kan banki lokaci ɗaya. Karatun sigina-zuwa-kulawa na abin da ke canjawa, da abin da kwamitoci ya kamata su yi kafin haɗari su iso."
 tags: "emerging technology, horizon scanning, FCA, personalised intelligence, agentic AI, synthetic fraud, deepfakes, programmable finance, tokenisation, stablecoins, financial crime, consumer duty, banking regulation, operational resilience, risk signals"
 theme-color: "0, 83, 191"
 title: "Reading the Emerging-Technology Risk Horizon for Banks in 2026"
@@ -63,7 +63,7 @@ apple_touch_icon_sizes: "192x192"
 apple-mobile-web-app-capable: "yes"
 apple-mobile-web-app-status-bar-inset: "black"
 apple-mobile-web-app-status-bar-style: "black-translucent"
-apple-mobile-web-app-title: "Emerging-Tech Horizon 2026"
+apple-mobile-web-app-title: "Sararin fasaha 2026"
 apple-touch-fullscreen: "yes"
 msapplication-navbutton-color: "0, 83, 191"
 twitter_card: "summary_large_image"
@@ -84,85 +84,81 @@ site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 ---
 
-<!-- translation-stub: replace this body in Claude Code -->
+# Karanta sararin haɗarin sabbin fasahohi ga bankuna a 2026
 
-> _Translation pending — read the [English original](/2026-07-03-emerging-technology-risk-horizon-banks-2026/) while we localise._
+Wani abu ya canja a yadda masu kula suke magana game da nan gaba. Shekaru da yawa matsayin ya kasance na mayar da martani: fasaha ta zo, cuta ta bayyana, doka ta biyo baya. A 2026 sautin ya bambanta. Masu kula suna leƙa sararin sama *da ƙarfi* — suna buga karatuttukan da aka tsara, marasa ɗaure, game da yadda sabbin fasahohi za su iya haɗuwa kafin a cutar da kowa. Takardar *Technology Horizon Scan 2026* ta Hukumar Kula da Halayen Kuɗi ta Biritaniya ita ce mafi bayyanannen misali; tana bayyana kanta a matsayin buga littafi na farko na waje na irin wannan na mai kula kuma tana gabatar da hanyoyi uku masu ma'ana da sabbin fasahohi za su iya sake fasalta sakamako ga masu amfani, kamfanoni da kasuwanni.
 
-# Reading the Emerging-Technology Risk Horizon for Banks in 2026
+Wannan sauyi ya fi nauyi fiye da kowace hasashe da ke cikinsa. Mai kula da yake leƙa sararin sama a fili yana nuna cewa *lokacin* kulawa yana motsawa zuwa sama na rafi — daga aiwatarwa bayan cuta zuwa hangowa kafin cuta. Ga bankuna, tambaya mai amfani ba ta ƙara zama «wace fasaha ya kamata mu ɗauka?» ba, sai dai «za mu iya karanta sigina ɗaya da masu kula mu suke karantawa yanzu, kuma mu yi aiki tukuna?» Wannan labarin karatu ne na wannan sararin sama: vektoci uku na fasaha da suke haɗuwa a kan banki lokaci ɗaya, da tsarin juya raunanan sigina zuwa aikin ingancin kulawa kafin haɗari su faɗaɗa.
 
-Something changed in how supervisors talk about the future. For years the posture was reactive: a technology arrives, harm surfaces, a rule follows. In 2026 the tone is different. Regulators are scanning the horizon *out loud* — publishing structured, non-binding readings of where emerging technologies might combine before anyone has been harmed. The UK Financial Conduct Authority's *Technology Horizon Scan 2026* is the clearest example, describing itself as the regulator's first external publication of its kind and setting out three plausible ways emerging technologies could reshape outcomes for consumers, firms, and markets.
-
-That shift matters more than any single prediction inside it. A regulator that scans the horizon in public is signalling that the *timing* of oversight is moving upstream — from post-harm enforcement toward pre-harm anticipation. For banks, the practical question is no longer "which technology should we adopt?" but "can we read the same signals our supervisors are now reading, and act on them first?" This piece is one reading of that horizon: three technology vectors converging on banking at once, and a framework for turning weak signals into supervisory-grade action before the risks scale.
-
-> **Executive summary / key takeaways**
+> **Taƙaitawar zartarwa / manyan maɓalli**
 >
-> - **Three vectors, one arrival window.** Personalised AI intelligence, synthetic (in)security, and programmable finance are not sequential waves — they are converging on the same 2026–2028 window, and they amplify each other.
-> - **The harm curve moved left.** Supervisors are publishing horizon scans precisely because these technologies compress the distance between "novel" and "systemic." Reactive controls arrive too late by construction.
-> - **Signals beat forecasts.** You cannot predict which scenario lands; you can instrument for the *early signals* each one emits and pre-authorise the response.
-> - **Governance is the differentiator.** The banks that fare best will not be those with the most AI — they will be those that can *evidence* how they read, escalated, and contained an emerging risk. That is a board-level capability, not a lab experiment.
+> - **Vektoci uku, taga isowa ɗaya.** Hankalin da AI ta keɓance, (rashin) tsaro na roba, da kuɗi mai iya shirya-shiri ba raƙuman ruwa ne masu jere ba — suna haɗuwa a taga 2026-2028 ɗaya kuma suna ƙarfafa juna.
+> - **Karkataccen layin cuta ya motsa zuwa hagu.** Masu kula suna buga leƙan sararin sama daidai saboda waɗannan fasahohi suna matse nisa tsakanin «sabo» da «tsari». Kulawar mayar da martani tana zuwa a makara sosai ta ginin.
+> - **Sigina suna doke hasashe.** Ba za ka iya hasashen wane yanayi zai faru ba; za ka iya shirya kanka don *sigina na farko* da kowanne yake fitarwa kuma ka ba da izini gaba ga martani.
+> - **Shugabanci shi ne abin bambancewa.** Bankunan da za su fi kyau ba za su zama waɗanda suka fi AI ba — za su zama waɗanda za su iya *tabbatarwa* yadda suka karanta, suka ɗaga, kuma suka toshe haɗari mai tasowa. Iyawa ce ta matakin kwamiti, ba gwaji na dakin gwaje-gwaje ba.
 
-## The three vectors, and why they converge
+## Vektoci uku, da dalilin da ya sa suke haɗuwa
 
-The instinct is to treat emerging technologies as a queue — deal with AI, then digital assets, then whatever follows. The horizon-scanning frame breaks that instinct: it insists the interesting risk lives in *combination*. Three vectors dominate the 2026 reading.
+Nufi yana ɗaukar sabbin fasahohi a matsayin layi — a magance AI, sannan kadarorin dijital, sannan duk abin da ya biyo baya. Tsarin leƙan sararin sama ya karya wannan nufi: yana nacewa cewa haɗari mai ban sha'awa yana cikin *haɗuwa*. Vektoci uku sun mamaye karatun 2026.
 
-**Personalised intelligence.** Widely available AI, combined with granular behavioural and financial data, lets systems tailor persuasion, pricing, and interaction to the individual in real time. The upside is genuine — delegated, agentic interactions that act on a consumer's behalf. The risk is that the same personalisation that serves a customer can be turned to exploit them: hyper-targeted pressure, opaque price discrimination, and agentic systems transacting faster than any human review loop. When the interface itself is optimising against the consumer's interest, "informed consent" becomes a fiction.
+**Hankali mai keɓantawa.** AI da ake samu ko'ina, haɗe da bayanan ɗabi'a da na kuɗi masu daki-daki, suna barin tsarin su daidaita lallashi, farashi da mu'amala ga mutum a ainihin lokaci. Yiwuwar gaskiya ce — mu'amalolin da aka wakilta, na wakili da suke aiki a madadin mai amfani. Haɗarin shi ne cewa keɓancewa ɗaya da ke bautar abokin ciniki za a iya juya ta don cin zarafinsa: matsin lamba mai nufin fiye da kima, wariyar farashi mara haske, da tsarin wakili da suke ciniki cikin sauri fiye da kowace madaidaicin bita na ɗan adam. Lokacin da fuskar kanta ta inganta gaba da sha'awar mai amfani, «yardar da aka sanar» ta zama almara.
 
-**Synthetic (in)security.** Generative models have industrialised the raw materials of financial crime — synthetic identities, voice and video deepfakes, fabricated documents, and automated social engineering at scale. The defensive assumptions of KYC, authentication, and fraud detection were built for a world where forging a convincing identity was expensive. That cost has collapsed. Synthetic crime does not merely increase fraud volume; it dissolves the evidentiary basis on which "who did this?" can be answered at all.
+**(Rashin) tsaro na roba.** Samfuran samarwa sun mayar da kayan albarkatun laifin kuɗi zuwa masana'antu — asali na roba, ƙage na murya da bidiyo, takardun ƙaryata, da injiniyancin zamantakewa ta atomatik a girma. Zaton kariya na KYC, tabbatarwa, da gano magudi an tsara su don duniyar da ƙage asali mai gamsarwa yake da tsada. Wannan tsada ta rushe. Laifin roba ba kawai yana ƙara yawan magudi ba; yana narkar da tushen shaidar da za a iya amsa «wa ya yi wannan?».
 
-**Programmable finance.** Tokenised deposits, stablecoins, smart-contract settlement, and shared ledgers promise to reshape financial infrastructure toward interoperable, programmable economies. The growth case is real — atomic settlement, embedded compliance, new liquidity. The risk is that programmability moves control logic out of institutions and into code that executes without a human in the loop, across jurisdictions, at machine speed, and often outside the perimeter a supervisor can see.
+**Kuɗi mai iya shirya-shiri.** Ajiya da aka juya zuwa alama, tsayayyun kuɗaɗe, sasantawa ta kwangilar wayo, da manyan littattafai da aka raba suna alkawarin sake fasalta ababen more rayuwa na kuɗi zuwa tattalin arziki mai iya aiki tare kuma mai iya shirya-shiri. Batun ci gaba gaskiya ne — sasanci na atomi, bin ƙa'ida da aka saka, ruwa sabo. Haɗarin shi ne cewa iya shirya-shiri yana motsa dabarar sarrafawa daga cibiyoyi, zuwa lambar da ake aiwatarwa ba tare da ɗan adam a madauki ba, ta yankunan hukunci, cikin saurin na'ura, kuma sau da yawa a waje da iyakar da mai kula zai iya gani.
 
-Why do they converge rather than queue? Because each one lowers the cost of the others' failure modes. Personalised intelligence makes synthetic attacks more targeted. Synthetic identity makes programmable-finance rails easier to abuse. Programmable rails give agentic systems somewhere to act autonomously and irreversibly. A weak signal in one vector is a leading indicator in the others.
+Me ya sa suke haɗuwa maimakon layi? Saboda kowanne yana rage tsadar hanyoyin gazawar sauran. Hankali mai keɓantawa yana sa hare-haren roba su fi nufi. Asali na roba yana sauƙaƙa cin zarafin hanyoyin kuɗi mai iya shirya-shiri. Hanyoyin da za a iya shirya-shiri suna ba tsarin wakili wuri don yin aiki da kansu kuma ba tare da juyawa ba. Rauni na sigina a vektor ɗaya alama ce ta jagoranci a saura.
 
-## The harm curve moved left
+## Karkataccen layin cuta ya motsa zuwa hagu
 
-The reason supervisors are publishing scans — rather than waiting for complaints — is structural. These technologies compress the interval between *novel* and *systemic*. A deepfake authorisation scam, an agentic mis-selling loop, or a stablecoin depeg propagates at network speed, not quarterly-review speed. By the time a traditional control fires — a threshold breach, an audit finding, a regulatory return — the harm has already scaled.
+Dalilin da ya sa masu kula suke buga leƙa — maimakon jira korafi — na tsari ne. Waɗannan fasahohi suna matse tazara tsakanin *sabo* da *tsari*. Magudin izini ta hanyar ƙage mai zurfi, madauki na siyar da kuskure ta wakili, ko rabuwar tsayayyen kuɗi tana yaɗuwa cikin saurin cibiyar sadarwa, ba saurin bita na kwata ba. A lokacin da kulawar gargajiya ta kunna — iyaka da aka wuce, binciken duba, rahoton tsari — cutar ta riga ta faɗaɗa.
 
-That is the quiet thesis inside every horizon scan: **anticipation is now a control, not a courtesy.** A bank whose risk function only detects emerging-technology harm after it materialises is, by construction, always late. The differentiator is the ability to read the horizon at the same cadence the technology moves.
+Wannan ita ce ka'idar shiru a zuciyar kowane leƙan sararin sama: **hangowa yanzu kulawa ce, ba ladabi ba.** Banki wanda aikin haɗarinsa yake gano cutar fasaha mai tasowa kawai bayan gaskiyarta, ta ginin, koyaushe yana makara. Abin bambancewa shi ne iyawar karanta sararin sama a saurin da fasaha take motsawa.
 
-## From signals to supervision: a reading framework
+## Daga sigina zuwa kulawa: tsarin karatu
 
-You cannot forecast which scenario lands. You *can* instrument for the early signals each vector emits and pre-authorise the response. Four moves turn a horizon scan from a reading exercise into an operating capability.
+Ba za ka iya hasashen wane yanayi zai faru ba. *Za ka iya* shirya kanka don sigina na farko da kowane vektor yake fitarwa kuma ka ba da izini gaba ga martani. Matakai huɗu suna juya leƙan sararin sama daga aikin karatu zuwa iyawar aiki.
 
-1. **Name the signals, per vector.** For each vector, define the concrete leading indicators you will watch — a rise in authenticated-but-anomalous transactions (synthetic security), agentic sessions acting outside expected parameters (personalised intelligence), or settlement finality dependent on third-party contract code (programmable finance). A signal you have not named in advance is a signal you will rationalise away in the moment.
-2. **Set the escalation trigger before the event.** Decide, now, what movement in each signal forces a decision — and who owns it. The failure mode is not missing the signal; it is seeing it and having no pre-agreed threshold that compels action.
-3. **Pre-authorise the containment.** The response to a fast-moving emerging risk cannot wait for a committee to convene. Rehearse the circuit-breakers — pausing an agentic channel, tightening an authentication gate, halting settlement on a suspect rail — and pre-authorise them so they can fire at machine speed.
-4. **Evidence the reading.** Record what you watched, what moved, what you decided, and why. When a supervisor asks how you anticipated a risk, the defensible answer is a documented reading trail — not a retrospective story. This is where the horizon scan becomes auditable governance.
+1. **Suna siginan, kowane vektor.** Ga kowane vektor, ka bayyana takamaiman alamun jagoranci da za ka sa ido — ƙaruwar cinikayya da aka tabbatar amma marasa daidaituwa ((rashin) tsaro na roba), zaman wakili da suke aiki a waje da sigogin da ake tsammani (hankali mai keɓantawa), ko ƙarshen sasanci da ya dogara da lambar kwangilar bangare na uku (kuɗi mai iya shirya-shiri). Siginar da ba ka ba ta suna gaba ba ita ce siginar da za ka ba da hankali a lokacin.
+2. **Saita jawo ɗagawa kafin taron.** Yanke shawara, yanzu, wace motsi na kowane sigina yake tilasta yanke shawara — kuma wa ya mallake ta. Yanayin gazawa ba rasa siginar ba ne; shi ne ganin ta ba tare da iyakar da aka amince da ita gaba wanda yake tilasta aiki ba.
+3. **Ba da izini gaba ga toshewa.** Martani ga haɗari mai tasowa mai saurin canzawa ba zai iya jira taron kwamiti ba. Ka gwada masu yanke da'ira — dakatar da tashar wakili, tsananta ƙofar tabbatarwa, dakatar da sasanci a hanya mai shakku — kuma ka ba su izini gaba don su kunna cikin saurin na'ura.
+4. **Rubuta karatun.** Ka rubuta abin da ka sa ido, abin da ya motsa, abin da ka yanke shawara, da dalilin. Lokacin da mai kula ya tambaya yadda ka hangi haɗari, amsar da za a iya kare ita ce alamar karatu da aka rubuta — ba labari na baya ba. Anan leƙan sararin sama ya zama shugabancin da za a iya duba.
 
-The through-line: emerging-technology risk is not managed by adopting less technology, and it is not managed by predicting the future. It is managed by making anticipation *repeatable and evidenced*.
+Zaren jagora: haɗarin fasaha mai tasowa ba a sarrafa shi ta hanyar ɗaukar ƙarancin fasaha ba, kuma ba ta hanyar hasashen nan gaba ba. Ana sarrafa shi ta hanyar sanya hangowa ta zama *mai maimaituwa da tabbatarwa*.
 
-## What changes for the boardroom
+## Abin da ya canja ga kwamiti
 
-For senior management, three shifts follow directly.
+Ga babban gudanarwa, sauye-sauye uku suna biyowa kai tsaye.
 
-- **Move horizon scanning inside enterprise risk.** Treat it as a standing function with named signal owners across the three vectors, not an innovation-team side project. The supervisor has made scanning a first-class activity; the board should mirror it.
-- **Fund anticipation, not just detection.** Detection tooling answers "did harm occur?" Anticipation tooling answers "is a harm forming?" The second is where the 2026 risks are won or lost, and it is chronically underfunded relative to its blast radius.
-- **Make the reading a board artefact.** A quarterly horizon reading — signals watched, thresholds, decisions taken — belongs in the board pack alongside capital and liquidity. It is the evidence that the institution can keep pace with a supervisor that now reads the same horizon.
+- **Kawo leƙan sararin sama cikin sarrafa haɗarin kamfani.** Ka ɗauke shi a matsayin aiki na dindindin da masu mallakar sigina masu suna a vektoci uku, ba aikin gefe na ƙungiyar sabuntawa ba. Mai kula ya sa leƙa ta zama aiki na mataki na farko; kwamiti ya kamata ya nuna hakan.
+- **Ba da kuɗi ga hangowa, ba kawai ganowa ba.** Kayan aikin ganowa suna amsa «cuta ta faru?». Kayan aikin hangowa suna amsa «cuta tana samuwa?». A na biyu ne ake nasara ko rasa haɗarin 2026, kuma yana da ƙarancin kuɗi na yau da kullum idan aka kwatanta da radius ɗin tasirinsa.
+- **Sa karatun ya zama kayan tarihi na kwamiti.** Karatun sararin sama na kwata — sigina da aka sa ido, iyakoki, shawarwarin da aka yanke — na cikin fayil ɗin kwamiti tare da jari da ruwa. Shi ne tabbacin cewa cibiyar za ta iya ci gaba da mai kula wanda yanzu yake karanta sararin sama ɗaya.
 
-## The regulatory posture is the tell
+## Matsayin tsari shi ne alama
 
-The deepest signal in the 2026 landscape is not any one technology — it is that regulators have chosen to publish their horizon reading at all. A scan is an invitation: it tells the market where oversight attention is moving *before* the rules arrive. The firms that respond by building their own reading capability will help shape what binding supervision eventually looks like. The firms that wait for the rule will inherit whatever the fastest-moving harm forces regulators to write.
+Sigina mafi zurfi a yanayin 2026 ba wata takamaiman fasaha ba ce — shi ne cewa masu tsari sun zaɓi buga karatun sararin samansu kwata-kwata. Leƙa gayyata ce: tana gaya wa kasuwa inda hankalin kulawa yake motsawa *kafin* dokoki su zo. Kamfanonin da suke amsawa ta hanyar gina iyawar karatun kansu za su taimaka wajen tsara yadda kulawa mai ɗaure za ta kasance a ƙarshe. Kamfanonin da suke jiran doka za su gaji duk abin da mafi saurin cuta ya tilasta wa masu tsari su rubuta.
 
-Emerging technology has always been framed as an adoption question. In 2026 it is a *reading* question. The banks that can read the horizon — across personalised intelligence, synthetic security, and programmable finance — and evidence how they act on it, will find that anticipation is not the constraint on innovation. It is the licence for it.
+Fasaha mai tasowa koyaushe an tsara ta a matsayin tambayar ɗauka. A 2026 tambaya ce ta *karatu*. Bankunan da za su iya karanta sararin sama — ta hankali mai keɓantawa, tsaro na roba, da kuɗi mai iya shirya-shiri — kuma su tabbatar da yadda suke aiki bisa haka, za su gano cewa hangowa ba ƙuntataccen sabuntawa ba ne. Lasisin sa ne.
 
-## Frequently asked questions
+## Tambayoyin da aka saba yi
 
-**Is this a prediction of what will happen?**
-No. Like the horizon scans it draws on, this is a reading of *plausible* combinations and the early signals they emit — not a forecast. Its value is preparation, not prophecy: naming the signals and pre-authorising the response so a bank is not improvising when one of them moves.
+**Wannan hasashen abin da zai faru ne?**
+A'a. Kamar leƙan sararin sama da yake dogaro da su, wannan karatu ne na haɗuwa *masu ma'ana* da sigina na farko da suke fitarwa — ba hasashe ba. Darajarsa shiri ce, ba annabci ba: suna siginan da ba da izini gaba ga martani domin banki kada ya yi ƙirƙira lokacin da ɗayansu ya motsa.
 
-**Why treat the three vectors together rather than separately?**
-Because their risk lives in combination. Personalised intelligence sharpens synthetic attacks; synthetic identity abuses programmable rails; programmable rails give agentic systems autonomous, irreversible reach. Managing them in silos misses the amplification that makes them systemic.
+**Me ya sa a magance vektoci uku tare maimakon a rabe?**
+Saboda haɗarinsu yana cikin haɗuwa. Hankali mai keɓantawa yana kaifafa hare-haren roba; asali na roba yana cin zarafin hanyoyi masu iya shirya-shiri; hanyoyi masu iya shirya-shiri suna ba tsarin wakili isa mai zaman kanta, mara juyawa. Sarrafa su a cikin ramuka yana rasa haɓakar da take sa su tsari.
 
-**What is the single most useful thing a bank can do first?**
-Name the leading signals per vector and set the escalation trigger *before* an event, with a named owner. Most institutions can already detect harm; few have pre-agreed what movement in an emerging-risk signal compels a decision, or who makes it.
+**Menene abu mafi amfani da banki zai iya yi da farko?**
+Ya sa suna sigina na jagoranci kowane vektor kuma ya saita jawo ɗagawa *kafin* taron, da mai mallaka mai suna. Yawancin cibiyoyi za su iya gano cuta yanzu; kaɗan ne suka amince gaba wace motsi na siginar haɗari mai tasowa yake tilasta shawara, ko wa yake yin ta.
 
-**How does horizon scanning relate to existing obligations?**
-It operationalises them. Consumer-duty, operational-resilience, model-risk, and financial-crime obligations all assume a firm can anticipate and contain harm. A documented horizon reading is the evidence that the anticipation actually happens — turning a principle into an auditable control.
+**Yaya leƙan sararin sama yake da alaƙa da wajibai da suke akwai?**
+Yana sa su zama masu aiki. Wajibai na aikin mabukaci, juriya na aiki, haɗarin samfuri, da laifin kuɗi duk suna ɗauka cewa kamfani zai iya hangowa da toshe cuta. Karatun sararin sama da aka rubuta shi ne tabbacin cewa hangowa tana faruwa da gaske — yana juya ƙa'ida zuwa kulawar da za a iya duba.
 
-## Sources and further reading
+## Madogara da ƙarin karatu
 
-- Financial Conduct Authority (FCA), 2026. *Technology Horizon Scan 2026* ⧉. [The FCA's first external horizon-scanning publication; sets out three plausible emerging-technology scenarios — Personalised Intelligence, Synthetic (in)security, and Programmable finance — and early risk signals for consumers, firms and markets. Cited as the anchor source for the three-vector framing; the analysis, signal-to-supervision framework and conclusions above are the author's own.]
-- Bank for International Settlements (BIS) Innovation Hub, 2026. *Project Agorá and the unified-ledger agenda* ⧉. [Cross-border tokenised settlement experiments underpinning the programmable-finance vector.]
-- Financial Stability Board (FSB), 2026. *Sound Practices for the Responsible Adoption of AI* ⧉. [Supervisory framing for agentic and personalised-intelligence risk.]
-- ISO/IEC 42001:2023, *Information technology — Artificial intelligence — Management system* ⧉. [Governance baseline for the intelligence vector.]
+- Financial Conduct Authority (FCA), 2026. *Technology Horizon Scan 2026* ⧉. [Buga leƙan sararin sama na waje na farko na FCA; yana gabatar da yanayi uku masu ma'ana na sabbin fasahohi — Personalised Intelligence, Synthetic (in)security da Programmable finance — da sigina na farko na haɗari ga masu amfani, kamfanoni da kasuwanni. An ambata a matsayin tushen anga don tsarin vektoci uku; bincike, tsarin sigina-zuwa-kulawa, da ƙarshe da ke sama na marubuci ne.]
+- Cibiyar Ƙirƙira ta Bankin Sasanci na Ƙasa da Ƙasa (BIS), 2026. *Aikin Agorá da ajandar babban littafi haɗe* ⧉. [Gwaje-gwajen sasanci da aka juya zuwa alama ta ƙetare iyaka da suke goyon bayan vektor ɗin kuɗi mai iya shirya-shiri.]
+- Kwamitin Zaman Lafiyar Kuɗi (FSB), 2026. *Sound Practices for the Responsible Adoption of AI* ⧉. [Tsarin kulawa na haɗarin wakili da hankali mai keɓantawa.]
+- ISO/IEC 42001:2023, *Information technology — Artificial intelligence — Management system* ⧉. [Tushen shugabanci na vektor ɗin hankali.]
 
-*Last reviewed July 2026. Original analysis; the FCA Technology Horizon Scan 2026 is cited as a source and is not reproduced. Licensed under CC-BY-4.0.*
+*Bita na ƙarshe Yuli 2026. Bincike na asali; takardar FCA Technology Horizon Scan 2026 an ambata a matsayin madogara kuma ba a sake bugata ba. An ba da lasisi ƙarƙashin CC-BY-4.0.*
