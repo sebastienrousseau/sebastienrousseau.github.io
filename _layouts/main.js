@@ -96,19 +96,77 @@ class ServiceWorkerSetup {
 window.serviceWorkerSetup = new ServiceWorkerSetup();
 
 /**
- * Forward clicks on the in-nav .ap-search button to the hidden Static Site Generator search
- * widget (#ssg-search-btn). The widget injects asynchronously, so we keep
- * trying on click rather than caching the reference.
+ * On-site search bootstrap (DX plan Phase 2, ADR-0010).
+ *
+ * The search runtime (/search.js + /search.css) is LAZY-LOADED on first
+ * invocation only — Cmd/Ctrl-K, a click on the in-nav .ap-search button, or
+ * landing on the /search page — so it adds 0 to initial LCP everywhere else.
+ * Both assets are same-origin (script-src/style-src 'self'); no inline handlers,
+ * no CSP change. With JS off, the nav button is inert and /search shows its
+ * static fallback — progressive enhancement preserved.
  */
-document.addEventListener("click", function (event) {
-    var trigger = event.target.closest(".ap-search");
-    if (!trigger) return;
-    event.preventDefault();
-    var ssg = document.getElementById("ssg-search-btn");
-    if (ssg) {
-        ssg.click();
+(function () {
+    var loading = null;
+
+    function injectOnce(tag, attrs) {
+        var el = document.createElement(tag);
+        for (var k in attrs) if (attrs.hasOwnProperty(k)) el.setAttribute(k, attrs[k]);
+        document.head.appendChild(el);
+        return el;
     }
-});
+
+    // Returns a promise that resolves once /search.js has booted.
+    function ensureSearch() {
+        if (window.SiteSearch) return Promise.resolve();
+        if (loading) return loading;
+        loading = new Promise(function (resolve) {
+            document.addEventListener("sitesearch:ready", function () { resolve(); }, { once: true });
+            injectOnce("link", { rel: "stylesheet", href: "/search.css" });
+            injectOnce("script", { src: "/search.js", defer: "" });
+        });
+        return loading;
+    }
+
+    function openSearch() {
+        if (window.SiteSearch) {
+            window.SiteSearch.open();
+            return;
+        }
+        // Remember the intent so /search.js opens as soon as it boots.
+        window.__ssPendingOpen = true;
+        ensureSearch().then(function () {
+            if (window.__ssPendingOpen && window.SiteSearch) {
+                window.__ssPendingOpen = false;
+                window.SiteSearch.open();
+            }
+        });
+    }
+
+    // Nav search button → open the command palette.
+    document.addEventListener("click", function (event) {
+        var trigger = event.target.closest && event.target.closest(".ap-search");
+        if (!trigger) return;
+        event.preventDefault();
+        openSearch();
+    });
+
+    // Cmd/Ctrl-K anywhere (except while typing into another field, where the OS
+    // shortcut shouldn't be hijacked mid-entry unless it's our own input).
+    document.addEventListener("keydown", function (event) {
+        var k = event.key;
+        if ((event.metaKey || event.ctrlKey) && (k === "k" || k === "K")) {
+            event.preventDefault();
+            openSearch();
+        }
+    });
+
+    // The /search page self-enhances: eagerly (but idle) load the runtime so the
+    // page turns into a live search box without a click. Still off the LCP path.
+    if (document.getElementById("search-page")) {
+        var idle = window.requestIdleCallback || function (fn) { return setTimeout(fn, 200); };
+        idle(function () { ensureSearch(); });
+    }
+})();
 
 /**
  * Listing filter — `/articles/` page <select>s update data-filter-*

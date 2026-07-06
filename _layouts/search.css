@@ -1,0 +1,246 @@
+/*
+ * On-site search styles — sebastienrousseau.com (ADR-0010, DX plan Phase 2).
+ * Lazy-loaded external stylesheet (style-src 'self') — no inline styles.
+ * Surfaces + ink use the site's existing AAA-contrast tokens so the overlay
+ * inherits the theme (light/dark) and clears the pa11y WCAG-AAA gate.
+ * Motion is gated behind prefers-reduced-motion: no-preference.
+ */
+
+html.ss-open {
+  overflow: hidden;
+}
+
+.ss-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: clamp(12px, 8vh, 96px) 16px 16px;
+}
+.ss-overlay[hidden] {
+  display: none;
+}
+
+.ss-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  cursor: pointer;
+}
+
+.ss-panel {
+  position: relative;
+  width: 100%;
+  max-width: 640px;
+  max-height: min(72vh, 640px);
+  display: flex;
+  flex-direction: column;
+  background: var(--card, #fff);
+  color: var(--ink, #1d1d1f);
+  border: 1px solid var(--border, #d2d2d7);
+  border-radius: var(--radius, 18px);
+  box-shadow: var(--shadow-lift, 0 18px 40px -18px rgba(0, 0, 0, 0.35));
+  overflow: hidden;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .ss-panel {
+    animation: ss-pop 0.16s ease both;
+  }
+}
+@keyframes ss-pop {
+  from {
+    transform: translateY(-8px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.ss-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--rule, #e0e0e0);
+}
+.ss-icon {
+  font-size: 20px;
+  line-height: 1;
+  color: var(--ink-mute, #505058);
+  flex: 0 0 auto;
+}
+.ss-input {
+  flex: 1 1 auto;
+  min-width: 0;
+  font-family: var(--type-body, sans-serif);
+  font-size: 17px;
+  line-height: 1.4;
+  padding: 8px 4px;
+  border: 0;
+  outline: none;
+  background: transparent;
+  color: var(--ink, #1d1d1f);
+  -webkit-appearance: none;
+  appearance: none;
+}
+.ss-input::placeholder {
+  color: var(--ink-mute, #505058);
+  opacity: 1;
+}
+.ss-input:focus-visible {
+  outline: 2px solid var(--link-color, #004caf);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+.ss-clear,
+.ss-close {
+  flex: 0 0 auto;
+  min-height: 32px;
+  min-width: 32px;
+  padding: 4px 10px;
+  border: 1px solid var(--border, #d2d2d7);
+  border-radius: 8px;
+  background: var(--paper, #fff);
+  color: var(--ink-soft, #3a3a3c);
+  font-family: var(--type-mono, monospace);
+  font-size: 13px;
+  cursor: pointer;
+}
+.ss-clear {
+  font-size: 18px;
+  line-height: 1;
+  border-radius: 50%;
+  padding: 0;
+}
+.ss-close:hover,
+.ss-clear:hover {
+  border-color: var(--ink-deep, #0d1b2a);
+  color: var(--ink, #1d1d1f);
+}
+.ss-close:focus-visible,
+.ss-clear:focus-visible {
+  outline: 2px solid var(--link-color, #004caf);
+  outline-offset: 2px;
+}
+
+.ss-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 8px 16px;
+  border-bottom: 1px solid var(--rule, #e0e0e0);
+  font-size: 13px;
+  color: var(--ink-mute, #505058);
+}
+.ss-all {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  min-height: 32px;
+  color: var(--ink-soft, #3a3a3c);
+}
+.ss-all input {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--link-color, #004caf);
+}
+.ss-status {
+  text-align: end;
+  color: var(--ink-mute, #505058);
+}
+
+.ss-results {
+  list-style: none;
+  margin: 0;
+  padding: 6px;
+  overflow-y: auto;
+  flex: 1 1 auto;
+}
+.ss-opt {
+  margin: 0;
+  border-radius: 12px;
+}
+.ss-opt.is-active,
+.ss-opt:hover {
+  background: var(--bg-alt, #f1f1f3);
+}
+/* Options are non-interactive elements (APG listbox pattern); activation is via
+   JS click/Enter, so they carry a pointer cursor but no focus ring of their own
+   — the visible cursor lives on the input via aria-activedescendant. */
+.ss-opt-link {
+  display: block;
+  padding: 12px 14px;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+.ss-opt-title {
+  display: block;
+  font-family: var(--type-body, sans-serif);
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 1.35;
+  color: var(--ink, #1d1d1f);
+}
+.ss-opt-snippet {
+  margin: 4px 0 0;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--ink-soft, #3a3a3c);
+  max-width: none;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.ss-opt-meta {
+  display: block;
+  margin-top: 6px;
+  font-size: 11.5px;
+  color: var(--ink-mute, #505058);
+  word-break: break-all;
+}
+.ss-opt mark {
+  background: transparent;
+  color: var(--link-color, #004caf);
+  font-weight: 700;
+}
+
+.ss-empty {
+  padding: 24px 16px 28px;
+  text-align: center;
+  color: var(--ink-mute, #505058);
+  font-size: 14px;
+}
+.ss-hint {
+  padding: 10px 16px 14px;
+  font-size: 12px;
+  color: var(--ink-mute, #505058);
+  border-top: 1px solid var(--rule, #e0e0e0);
+}
+
+/* ---- /search page (progressive enhancement) ---- */
+.ss-page-live {
+  margin: 8px 0 32px;
+  border: 1px solid var(--border, #d2d2d7);
+  border-radius: var(--radius, 18px);
+  background: var(--card, #fff);
+  overflow: hidden;
+}
+.ss-row--page {
+  padding: 16px 18px;
+}
+.ss-results--page {
+  max-height: none;
+}
+/* When JS has enhanced the page, hide the no-JS fallback block. */
+#search-page.ss-enhanced .ss-page-fallback {
+  display: none;
+}
