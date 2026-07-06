@@ -1,6 +1,6 @@
 ---
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
-banner_alt: "Abstract horizon of converging signal lines — AI, synthetic media, and programmable-money rails resolving over a banking skyline, evoking a supervisory scan of emerging-technology risk for financial services in 2026"
+banner_alt: "Cakrawala abstrak garis-garis sinyal yang berkonvergensi — AI, media sintetis, dan rel uang yang dapat diprogram yang terurai di atas siluet perbankan, membangkitkan pemindaian pengawasan risiko teknologi baru bagi layanan finansial pada 2026"
 banner_height: "1280"
 banner_width: "1920"
 banner: "https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp"
@@ -9,7 +9,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "July 3, 2026"
-description: "An original reading of the 2026 emerging-technology risk horizon for banks — personalised AI intelligence, synthetic financial crime, and programmable finance — with a signal-to-supervision framework, drawing on the FCA's Technology Horizon Scan 2026."
+description: "Sebuah bacaan orisinal tentang cakrawala risiko teknologi baru bagi bank pada 2026 — kecerdasan yang dipersonalisasi oleh AI, kejahatan finansial sintetis, dan keuangan yang dapat diprogram — dengan kerangka sinyal-ke-pengawasan, bersandar pada Technology Horizon Scan 2026 dari FCA."
 format-detection: "telephone=no"
 hreflang: "id"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -35,9 +35,9 @@ rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
 schema: "FAQPage, Article"
-seo_title: "Reading the Emerging-Technology Risk Horizon for Banks in 2026"
+seo_title: "Membaca cakrawala risiko teknologi baru bagi bank pada 2026"
 short_name: "sebastienrousseau"
-subtitle: "Three technology vectors — personalised intelligence, synthetic (in)security, and programmable finance — are converging on banking at once. A signal-to-supervision reading of what changes, and what boards should do before the risks arrive."
+subtitle: "Tiga vektor teknologi — kecerdasan yang dipersonalisasi, (ke)tidakamanan sintetis, dan keuangan yang dapat diprogram — berkonvergensi pada perbankan secara bersamaan. Sebuah bacaan sinyal-ke-pengawasan tentang apa yang berubah, dan apa yang harus dilakukan dewan sebelum risiko tiba."
 tags: "emerging technology, horizon scanning, FCA, personalised intelligence, agentic AI, synthetic fraud, deepfakes, programmable finance, tokenisation, stablecoins, financial crime, consumer duty, banking regulation, operational resilience, risk signals"
 theme-color: "0, 83, 191"
 title: "Reading the Emerging-Technology Risk Horizon for Banks in 2026"
@@ -63,7 +63,7 @@ apple_touch_icon_sizes: "192x192"
 apple-mobile-web-app-capable: "yes"
 apple-mobile-web-app-status-bar-inset: "black"
 apple-mobile-web-app-status-bar-style: "black-translucent"
-apple-mobile-web-app-title: "Emerging-Tech Horizon 2026"
+apple-mobile-web-app-title: "Cakrawala teknologi 2026"
 apple-touch-fullscreen: "yes"
 msapplication-navbutton-color: "0, 83, 191"
 twitter_card: "summary_large_image"
@@ -84,85 +84,81 @@ site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 ---
 
-<!-- translation-stub: replace this body in Claude Code -->
+# Membaca cakrawala risiko teknologi baru bagi bank pada 2026
 
-> _Translation pending — read the [English original](/2026-07-03-emerging-technology-risk-horizon-banks-2026/) while we localise._
+Ada sesuatu yang berubah dalam cara pengawas berbicara tentang masa depan. Selama bertahun-tahun sikapnya reaktif: sebuah teknologi tiba, sebuah kerugian muncul, sebuah aturan mengikuti. Pada 2026 nadanya berbeda. Regulator memindai cakrawala *dengan lantang* — menerbitkan bacaan terstruktur dan tidak mengikat tentang bagaimana teknologi baru dapat bergabung sebelum ada yang dirugikan. Dokumen *Technology Horizon Scan 2026* dari Financial Conduct Authority Inggris adalah contoh terjelas; ia menggambarkan dirinya sebagai publikasi eksternal pertama semacam ini dari regulator dan memaparkan tiga cara masuk akal di mana teknologi baru dapat membentuk ulang hasil bagi konsumen, perusahaan, dan pasar.
 
-# Reading the Emerging-Technology Risk Horizon for Banks in 2026
+Pergeseran itu lebih berbobot daripada prediksi apa pun di dalamnya. Regulator yang memindai cakrawala secara publik memberi sinyal bahwa *momen* pengawasan bergerak ke hulu — dari penegakan setelah kerugian menuju antisipasi sebelum kerugian. Bagi bank, pertanyaan praktisnya bukan lagi «teknologi apa yang harus kita adopsi?» melainkan «dapatkah kita membaca sinyal yang sama yang kini dibaca pengawas kita, dan bertindak lebih dulu?» Artikel ini adalah bacaan cakrawala itu: tiga vektor teknologi yang berkonvergensi pada perbankan secara bersamaan, dan sebuah kerangka untuk mengubah sinyal lemah menjadi tindakan berkualitas pengawasan sebelum risiko meningkat skala.
 
-Something changed in how supervisors talk about the future. For years the posture was reactive: a technology arrives, harm surfaces, a rule follows. In 2026 the tone is different. Regulators are scanning the horizon *out loud* — publishing structured, non-binding readings of where emerging technologies might combine before anyone has been harmed. The UK Financial Conduct Authority's *Technology Horizon Scan 2026* is the clearest example, describing itself as the regulator's first external publication of its kind and setting out three plausible ways emerging technologies could reshape outcomes for consumers, firms, and markets.
-
-That shift matters more than any single prediction inside it. A regulator that scans the horizon in public is signalling that the *timing* of oversight is moving upstream — from post-harm enforcement toward pre-harm anticipation. For banks, the practical question is no longer "which technology should we adopt?" but "can we read the same signals our supervisors are now reading, and act on them first?" This piece is one reading of that horizon: three technology vectors converging on banking at once, and a framework for turning weak signals into supervisory-grade action before the risks scale.
-
-> **Executive summary / key takeaways**
+> **Ringkasan eksekutif / poin utama**
 >
-> - **Three vectors, one arrival window.** Personalised AI intelligence, synthetic (in)security, and programmable finance are not sequential waves — they are converging on the same 2026–2028 window, and they amplify each other.
-> - **The harm curve moved left.** Supervisors are publishing horizon scans precisely because these technologies compress the distance between "novel" and "systemic." Reactive controls arrive too late by construction.
-> - **Signals beat forecasts.** You cannot predict which scenario lands; you can instrument for the *early signals* each one emits and pre-authorise the response.
-> - **Governance is the differentiator.** The banks that fare best will not be those with the most AI — they will be those that can *evidence* how they read, escalated, and contained an emerging risk. That is a board-level capability, not a lab experiment.
+> - **Tiga vektor, satu jendela kedatangan.** Kecerdasan yang dipersonalisasi oleh AI, (ke)tidakamanan sintetis, dan keuangan yang dapat diprogram bukanlah gelombang berurutan — mereka berkonvergensi pada jendela 2026-2028 yang sama dan saling memperkuat.
+> - **Kurva kerugian bergeser ke kiri.** Pengawas menerbitkan pemindaian cakrawala justru karena teknologi ini memampatkan jarak antara «baru» dan «sistemik». Kontrol reaktif tiba terlalu terlambat secara desain.
+> - **Sinyal mengalahkan prakiraan.** Anda tidak dapat memprediksi skenario mana yang akan terjadi; Anda dapat memperlengkapi diri untuk *sinyal-sinyal awal* yang dipancarkan masing-masing dan mengotorisasi respons di muka.
+> - **Tata kelola adalah faktor pembeda.** Bank yang berhasil paling baik bukanlah yang memiliki AI terbanyak — melainkan yang mampu *membuktikan* bagaimana mereka membaca, meningkatkan, dan menahan risiko baru. Itu adalah kemampuan tingkat dewan, bukan eksperimen laboratorium.
 
-## The three vectors, and why they converge
+## Tiga vektor, dan mengapa mereka berkonvergensi
 
-The instinct is to treat emerging technologies as a queue — deal with AI, then digital assets, then whatever follows. The horizon-scanning frame breaks that instinct: it insists the interesting risk lives in *combination*. Three vectors dominate the 2026 reading.
+Naluri memperlakukan teknologi baru sebagai antrean — tangani AI, lalu aset digital, lalu apa pun berikutnya. Kerangka pemindaian cakrawala mematahkan naluri ini: ia menegaskan bahwa risiko yang menarik terletak pada *kombinasi*. Tiga vektor mendominasi bacaan 2026.
 
-**Personalised intelligence.** Widely available AI, combined with granular behavioural and financial data, lets systems tailor persuasion, pricing, and interaction to the individual in real time. The upside is genuine — delegated, agentic interactions that act on a consumer's behalf. The risk is that the same personalisation that serves a customer can be turned to exploit them: hyper-targeted pressure, opaque price discrimination, and agentic systems transacting faster than any human review loop. When the interface itself is optimising against the consumer's interest, "informed consent" becomes a fiction.
+**Kecerdasan yang dipersonalisasi.** AI yang tersedia luas, dikombinasikan dengan data perilaku dan finansial granular, memungkinkan sistem menyesuaikan persuasi, penetapan harga, dan interaksi kepada individu secara real-time. Potensinya nyata — interaksi yang didelegasikan dan agentik yang bertindak atas nama konsumen. Risikonya adalah personalisasi yang sama yang melayani pelanggan dapat dibalik untuk mengeksploitasinya: tekanan hiper-tertarget, diskriminasi harga yang buram, dan sistem agentik yang bertransaksi lebih cepat daripada lingkaran peninjauan manusia mana pun. Ketika antarmuka itu sendiri mengoptimalkan melawan kepentingan konsumen, «persetujuan yang terinformasi» menjadi fiksi.
 
-**Synthetic (in)security.** Generative models have industrialised the raw materials of financial crime — synthetic identities, voice and video deepfakes, fabricated documents, and automated social engineering at scale. The defensive assumptions of KYC, authentication, and fraud detection were built for a world where forging a convincing identity was expensive. That cost has collapsed. Synthetic crime does not merely increase fraud volume; it dissolves the evidentiary basis on which "who did this?" can be answered at all.
+**(Ke)tidakamanan sintetis.** Model generatif telah mengindustrialisasi bahan mentah kejahatan finansial — identitas sintetis, deepfake suara dan video, dokumen palsu, dan rekayasa sosial otomatis dalam skala. Asumsi defensif KYC, autentikasi, dan deteksi penipuan dirancang untuk dunia di mana memalsukan identitas yang meyakinkan itu mahal. Biaya itu telah runtuh. Kejahatan sintetis tidak hanya meningkatkan volume penipuan; ia melarutkan dasar pembuktian yang di atasnya «siapa yang melakukan ini?» dapat dijawab.
 
-**Programmable finance.** Tokenised deposits, stablecoins, smart-contract settlement, and shared ledgers promise to reshape financial infrastructure toward interoperable, programmable economies. The growth case is real — atomic settlement, embedded compliance, new liquidity. The risk is that programmability moves control logic out of institutions and into code that executes without a human in the loop, across jurisdictions, at machine speed, and often outside the perimeter a supervisor can see.
+**Keuangan yang dapat diprogram.** Deposito tertokenisasi, stablecoin, penyelesaian melalui kontrak pintar, dan buku besar bersama menjanjikan pembentukan ulang infrastruktur finansial menuju ekonomi yang dapat dioperasikan bersama dan dapat diprogram. Kasus pertumbuhannya nyata — penyelesaian atomik, kepatuhan tertanam, likuiditas baru. Risikonya adalah keterprograman memindahkan logika kontrol keluar dari lembaga, ke kode yang dieksekusi tanpa manusia dalam lingkaran, lintas yurisdiksi, pada kecepatan mesin, dan sering di luar perimeter yang dapat dilihat pengawas.
 
-Why do they converge rather than queue? Because each one lowers the cost of the others' failure modes. Personalised intelligence makes synthetic attacks more targeted. Synthetic identity makes programmable-finance rails easier to abuse. Programmable rails give agentic systems somewhere to act autonomously and irreversibly. A weak signal in one vector is a leading indicator in the others.
+Mengapa mereka berkonvergensi alih-alih mengantre? Karena masing-masing menurunkan biaya mode kegagalan yang lain. Kecerdasan yang dipersonalisasi membuat serangan sintetis lebih tertarget. Identitas sintetis mempermudah penyalahgunaan rel keuangan yang dapat diprogram. Rel yang dapat diprogram memberi sistem agentik tempat untuk bertindak secara otonom dan tak terbalikkan. Sinyal lemah dalam satu vektor adalah indikator utama dalam vektor lain.
 
-## The harm curve moved left
+## Kurva kerugian bergeser ke kiri
 
-The reason supervisors are publishing scans — rather than waiting for complaints — is structural. These technologies compress the interval between *novel* and *systemic*. A deepfake authorisation scam, an agentic mis-selling loop, or a stablecoin depeg propagates at network speed, not quarterly-review speed. By the time a traditional control fires — a threshold breach, an audit finding, a regulatory return — the harm has already scaled.
+Alasan pengawas menerbitkan pemindaian — alih-alih menunggu keluhan — bersifat struktural. Teknologi ini memampatkan interval antara *baru* dan *sistemik*. Penipuan otorisasi deepfake, lingkaran penjualan salah agentik, atau pelepasan pasak stablecoin menyebar dengan kecepatan jaringan, bukan kecepatan tinjauan triwulanan. Pada saat kontrol tradisional terpicu — ambang yang dilampaui, temuan audit, laporan regulasi — kerugian sudah meningkat skala.
 
-That is the quiet thesis inside every horizon scan: **anticipation is now a control, not a courtesy.** A bank whose risk function only detects emerging-technology harm after it materialises is, by construction, always late. The differentiator is the ability to read the horizon at the same cadence the technology moves.
+Itulah tesis diam di jantung setiap pemindaian cakrawala: **antisipasi kini adalah kontrol, bukan kesopanan.** Bank yang fungsi risikonya mendeteksi kerugian teknologi baru hanya setelah materialisasinya, secara desain, selalu terlambat. Faktor pembedanya adalah kemampuan membaca cakrawala pada irama yang sama dengan pergerakan teknologi.
 
-## From signals to supervision: a reading framework
+## Dari sinyal ke pengawasan: sebuah kerangka bacaan
 
-You cannot forecast which scenario lands. You *can* instrument for the early signals each vector emits and pre-authorise the response. Four moves turn a horizon scan from a reading exercise into an operating capability.
+Anda tidak dapat memprakirakan skenario mana yang akan terjadi. Anda *dapat* memperlengkapi diri untuk sinyal awal yang dipancarkan setiap vektor dan mengotorisasi respons di muka. Empat langkah mengubah pemindaian cakrawala dari latihan membaca menjadi kemampuan operasional.
 
-1. **Name the signals, per vector.** For each vector, define the concrete leading indicators you will watch — a rise in authenticated-but-anomalous transactions (synthetic security), agentic sessions acting outside expected parameters (personalised intelligence), or settlement finality dependent on third-party contract code (programmable finance). A signal you have not named in advance is a signal you will rationalise away in the moment.
-2. **Set the escalation trigger before the event.** Decide, now, what movement in each signal forces a decision — and who owns it. The failure mode is not missing the signal; it is seeing it and having no pre-agreed threshold that compels action.
-3. **Pre-authorise the containment.** The response to a fast-moving emerging risk cannot wait for a committee to convene. Rehearse the circuit-breakers — pausing an agentic channel, tightening an authentication gate, halting settlement on a suspect rail — and pre-authorise them so they can fire at machine speed.
-4. **Evidence the reading.** Record what you watched, what moved, what you decided, and why. When a supervisor asks how you anticipated a risk, the defensible answer is a documented reading trail — not a retrospective story. This is where the horizon scan becomes auditable governance.
+1. **Namai sinyal-sinyalnya, per vektor.** Untuk setiap vektor, tetapkan indikator utama konkret yang akan Anda pantau — kenaikan transaksi terautentikasi tetapi anomali ((ke)tidakamanan sintetis), sesi agentik yang bertindak di luar parameter yang diharapkan (kecerdasan yang dipersonalisasi), atau finalitas penyelesaian yang bergantung pada kode kontrak pihak ketiga (keuangan yang dapat diprogram). Sinyal yang belum Anda namai di muka adalah sinyal yang akan Anda rasionalisasi pada saatnya.
+2. **Tetapkan pemicu eskalasi sebelum peristiwa.** Putuskan, sekarang, pergerakan mana dari setiap sinyal yang memaksa keputusan — dan siapa pemiliknya. Mode kegagalannya bukan melewatkan sinyal; melainkan melihatnya tanpa ambang yang disepakati di muka yang memaksa tindakan.
+3. **Otorisasi penahanan di muka.** Respons terhadap risiko baru yang berkembang cepat tidak bisa menunggu penyelenggaraan komite. Latih pemutus arus — menjeda kanal agentik, memperketat gerbang autentikasi, menghentikan penyelesaian pada rel yang mencurigakan — dan otorisasi di muka agar terpicu pada kecepatan mesin.
+4. **Dokumentasikan bacaannya.** Catat apa yang Anda pantau, apa yang bergerak, apa yang Anda putuskan, dan mengapa. Ketika pengawas bertanya bagaimana Anda mengantisipasi risiko, jawaban yang dapat dibela adalah jejak bacaan terdokumentasi — bukan narasi retrospektif. Di sinilah pemindaian cakrawala menjadi tata kelola yang dapat diaudit.
 
-The through-line: emerging-technology risk is not managed by adopting less technology, and it is not managed by predicting the future. It is managed by making anticipation *repeatable and evidenced*.
+Benang merahnya: risiko teknologi baru tidak dikelola dengan mengadopsi lebih sedikit teknologi, tidak pula dengan memprediksi masa depan. Ia dikelola dengan membuat antisipasi *dapat diulang dan terbukti*.
 
-## What changes for the boardroom
+## Apa yang berubah bagi dewan
 
-For senior management, three shifts follow directly.
+Bagi manajemen senior, tiga pergeseran mengikuti secara langsung.
 
-- **Move horizon scanning inside enterprise risk.** Treat it as a standing function with named signal owners across the three vectors, not an innovation-team side project. The supervisor has made scanning a first-class activity; the board should mirror it.
-- **Fund anticipation, not just detection.** Detection tooling answers "did harm occur?" Anticipation tooling answers "is a harm forming?" The second is where the 2026 risks are won or lost, and it is chronically underfunded relative to its blast radius.
-- **Make the reading a board artefact.** A quarterly horizon reading — signals watched, thresholds, decisions taken — belongs in the board pack alongside capital and liquidity. It is the evidence that the institution can keep pace with a supervisor that now reads the same horizon.
+- **Bawa pemindaian cakrawala ke dalam manajemen risiko perusahaan.** Perlakukan sebagai fungsi tetap dengan pemilik sinyal bernama di ketiga vektor, bukan proyek sampingan tim inovasi. Pengawas telah menjadikan pemindaian sebagai aktivitas kelas satu; dewan seharusnya mencerminkannya.
+- **Danai antisipasi, bukan hanya deteksi.** Alat deteksi menjawab «apakah kerugian terjadi?». Alat antisipasi menjawab «apakah kerugian sedang terbentuk?». Pada yang kedua inilah risiko 2026 dimenangkan atau dikalahkan, dan ia kronis kurang didanai relatif terhadap radius dampaknya.
+- **Jadikan bacaan sebagai artefak dewan.** Bacaan cakrawala triwulanan — sinyal yang dipantau, ambang, keputusan yang diambil — termasuk dalam dosir dewan di samping modal dan likuiditas. Itulah bukti bahwa lembaga dapat mengimbangi pengawas yang kini membaca cakrawala yang sama.
 
-## The regulatory posture is the tell
+## Sikap regulasi adalah petunjuknya
 
-The deepest signal in the 2026 landscape is not any one technology — it is that regulators have chosen to publish their horizon reading at all. A scan is an invitation: it tells the market where oversight attention is moving *before* the rules arrive. The firms that respond by building their own reading capability will help shape what binding supervision eventually looks like. The firms that wait for the rule will inherit whatever the fastest-moving harm forces regulators to write.
+Sinyal terdalam dalam lanskap 2026 bukanlah teknologi tertentu mana pun — melainkan bahwa regulator memilih untuk menerbitkan bacaan cakrawala mereka sama sekali. Sebuah pemindaian adalah undangan: ia memberi tahu pasar ke mana perhatian pengawasan bergerak *sebelum* aturan tiba. Perusahaan yang merespons dengan membangun kemampuan bacaan mereka sendiri akan membantu membentuk seperti apa akhirnya pengawasan yang mengikat. Perusahaan yang menunggu aturan akan mewarisi apa pun yang dipaksa oleh kerugian tercepat untuk ditulis oleh regulator.
 
-Emerging technology has always been framed as an adoption question. In 2026 it is a *reading* question. The banks that can read the horizon — across personalised intelligence, synthetic security, and programmable finance — and evidence how they act on it, will find that anticipation is not the constraint on innovation. It is the licence for it.
+Teknologi baru selalu dibingkai sebagai pertanyaan adopsi. Pada 2026 ia adalah pertanyaan *bacaan*. Bank yang mampu membaca cakrawala — melintasi kecerdasan yang dipersonalisasi, keamanan sintetis, dan keuangan yang dapat diprogram — dan membuktikan bagaimana mereka bertindak sesuai, akan menemukan bahwa antisipasi bukanlah pembatas inovasi. Ia adalah lisensinya.
 
-## Frequently asked questions
+## Pertanyaan yang sering diajukan
 
-**Is this a prediction of what will happen?**
-No. Like the horizon scans it draws on, this is a reading of *plausible* combinations and the early signals they emit — not a forecast. Its value is preparation, not prophecy: naming the signals and pre-authorising the response so a bank is not improvising when one of them moves.
+**Apakah ini prediksi tentang apa yang akan terjadi?**
+Tidak. Seperti pemindaian cakrawala yang menjadi sandarannya, ini adalah bacaan kombinasi yang *masuk akal* dan sinyal awal yang mereka pancarkan — bukan prakiraan. Nilainya adalah persiapan, bukan nubuat: menamai sinyal dan mengotorisasi respons di muka agar bank tidak berimprovisasi ketika salah satunya bergerak.
 
-**Why treat the three vectors together rather than separately?**
-Because their risk lives in combination. Personalised intelligence sharpens synthetic attacks; synthetic identity abuses programmable rails; programmable rails give agentic systems autonomous, irreversible reach. Managing them in silos misses the amplification that makes them systemic.
+**Mengapa menangani ketiga vektor bersama alih-alih terpisah?**
+Karena risikonya terletak pada kombinasi. Kecerdasan yang dipersonalisasi mempertajam serangan sintetis; identitas sintetis menyalahgunakan rel yang dapat diprogram; rel yang dapat diprogram memberi sistem agentik jangkauan otonom dan tak terbalikkan. Mengelolanya dalam silo melewatkan penguatan yang membuatnya sistemik.
 
-**What is the single most useful thing a bank can do first?**
-Name the leading signals per vector and set the escalation trigger *before* an event, with a named owner. Most institutions can already detect harm; few have pre-agreed what movement in an emerging-risk signal compels a decision, or who makes it.
+**Apa hal paling berguna yang dapat dilakukan bank lebih dulu?**
+Menamai sinyal utama per vektor dan menetapkan pemicu eskalasi *sebelum* peristiwa, dengan pemilik bernama. Kebanyakan lembaga sudah dapat mendeteksi kerugian; sedikit yang telah menyepakati di muka pergerakan mana dari sinyal risiko baru yang memaksa keputusan, atau siapa yang mengambilnya.
 
-**How does horizon scanning relate to existing obligations?**
-It operationalises them. Consumer-duty, operational-resilience, model-risk, and financial-crime obligations all assume a firm can anticipate and contain harm. A documented horizon reading is the evidence that the anticipation actually happens — turning a principle into an auditable control.
+**Bagaimana pemindaian cakrawala berhubungan dengan kewajiban yang ada?**
+Ia mengoperasionalkannya. Kewajiban tugas konsumen, ketahanan operasional, risiko model, dan kejahatan finansial semuanya mengasumsikan bahwa perusahaan dapat mengantisipasi dan menahan kerugian. Bacaan cakrawala terdokumentasi adalah bukti bahwa antisipasi benar-benar terjadi — mengubah sebuah prinsip menjadi kontrol yang dapat diaudit.
 
-## Sources and further reading
+## Sumber dan bacaan lanjutan
 
-- Financial Conduct Authority (FCA), 2026. *Technology Horizon Scan 2026* ⧉. [The FCA's first external horizon-scanning publication; sets out three plausible emerging-technology scenarios — Personalised Intelligence, Synthetic (in)security, and Programmable finance — and early risk signals for consumers, firms and markets. Cited as the anchor source for the three-vector framing; the analysis, signal-to-supervision framework and conclusions above are the author's own.]
-- Bank for International Settlements (BIS) Innovation Hub, 2026. *Project Agorá and the unified-ledger agenda* ⧉. [Cross-border tokenised settlement experiments underpinning the programmable-finance vector.]
-- Financial Stability Board (FSB), 2026. *Sound Practices for the Responsible Adoption of AI* ⧉. [Supervisory framing for agentic and personalised-intelligence risk.]
-- ISO/IEC 42001:2023, *Information technology — Artificial intelligence — Management system* ⧉. [Governance baseline for the intelligence vector.]
+- Financial Conduct Authority (FCA), 2026. *Technology Horizon Scan 2026* ⧉. [Publikasi pemindaian cakrawala eksternal pertama FCA; memaparkan tiga skenario masuk akal teknologi baru — Personalised Intelligence, Synthetic (in)security, dan Programmable finance — dan sinyal risiko awal bagi konsumen, perusahaan, dan pasar. Dikutip sebagai sumber jangkar untuk pembingkaian tiga vektor; analisis, kerangka sinyal-ke-pengawasan, dan kesimpulan di atas adalah milik penulis.]
+- Pusat Inovasi Bank for International Settlements (BIS), 2026. *Proyek Agorá dan agenda buku besar terpadu* ⧉. [Eksperimen penyelesaian tertokenisasi lintas batas yang menopang vektor keuangan yang dapat diprogram.]
+- Financial Stability Board (FSB), 2026. *Sound Practices for the Responsible Adoption of AI* ⧉. [Pembingkaian pengawasan risiko agentik dan kecerdasan yang dipersonalisasi.]
+- ISO/IEC 42001:2023, *Information technology — Artificial intelligence — Management system* ⧉. [Dasar tata kelola untuk vektor kecerdasan.]
 
-*Last reviewed July 2026. Original analysis; the FCA Technology Horizon Scan 2026 is cited as a source and is not reproduced. Licensed under CC-BY-4.0.*
+*Terakhir ditinjau Juli 2026. Analisis orisinal; dokumen FCA Technology Horizon Scan 2026 dikutip sebagai sumber dan tidak direproduksi. Dilisensikan di bawah CC-BY-4.0.*
