@@ -86,8 +86,8 @@ bootstrap:
 	@command -v mise >/dev/null 2>&1 || { echo "mise not found — install it from https://mise.jdx.dev, then re-run 'make bootstrap'"; exit 1; }
 	@echo "==> mise install (python 3.12, node 22, rust, pa11y-ci, http-server)"
 	@mise install
-	@echo "==> ssg static-site compiler (0.0.44, pinned — ADR-0002)"
-	@command -v ssg >/dev/null 2>&1 || cargo install ssg --locked --version 0.0.44
+	@echo "==> ssg static-site compiler (0.0.46, pinned — ADR-0002)"
+	@command -v ssg >/dev/null 2>&1 || cargo install ssg --locked --version 0.0.46
 	@echo "==> python build + dev deps (hash-pinned lock — same as CI)"
 	@pip install --quiet --require-hashes -r requirements-dev.lock
 	@echo "==> bootstrap complete. Next: make build  (first build target: under 10 min)."
@@ -100,7 +100,7 @@ bootstrap:
 # post-build gates that need public/ (JSON-LD, internal links, SBOM).
 # Green here == the same green CI enforces before deploy.
 #
-# Requires a bootstrapped toolchain (make bootstrap) — notably ssg 0.0.44
+# Requires a bootstrapped toolchain (make bootstrap) — notably ssg 0.0.46
 # (ADR-0002); ssg 0.0.45 emits a known lang-leakage false positive.
 verify:
 	@echo "==> [1/7] lint (ruff + naming)";         $(MAKE) --no-print-directory lint

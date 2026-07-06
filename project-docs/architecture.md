@@ -86,6 +86,7 @@ postbuild pass over `public/`. The steps below are in execution order;
 2. **`scripts/postbuild/regen_homepage.py`** — rewrites the "From the desk" card grid in `index.md` from the most recent dated EN posts.
 3. **`scripts/postbuild/post_enrich.py`** — injects article furniture (lead aside, related-posts, review date) into the build copy. Requires `--dir` (ADR-0003; never mutates committed source by default).
 4. **`scripts/generators/build_tags.py`** — builds the tag taxonomy and per-post tag badges/meta.
+5. **`scripts/postbuild/backfill_permalink.py`** — backfills a `permalink:` into any build-copy post that lacks one (older locale archive posts), derived from the post's locale dir + slug. ssg ≥ 0.0.45 derives the RSS channel `<link>` from `permalink` and aborts without it; source stays untouched (ADR-0002).
 
 ### Phase B — `ssg` (Static Site Generator)
 
@@ -100,17 +101,19 @@ The Rust tool reads the `_posts_build` markdown and `_layouts/` and writes the E
 9. **`scripts/generators/build_listings.py`** — the `/articles/` index and related listing pages, scanned from `_posts/`.
 10. **`scripts/generators/build_oembed.py`** — oEmbed JSON endpoints for each page.
 11. **`scripts/generators/build_translations/__main__.py`** — the localised page tree for every active language in the registry: swaps body text, chrome, UI strings, hreflang, and search indexes.
-12. **`scripts/generators/build_lang_feeds.py`** — RSS, Atom, news-sitemap, and JSON feeds per language.
-13. **`scripts/generators/build_agent_api.py`** — JSON endpoints exposing articles/topics for AI and search clients.
-14. **`scripts/generators/build_lead_magnets.py`** — compiles source files into PDF resources (checklists, etc.).
-15. **`scripts/generators/build_news_sitemap.py`** — the Google News sitemap.
+12. **`scripts/generators/build_search_ui.py`** — per-locale `search-ui.json` UI microcopy for the client-side search runtime (ADR-0010), projected from `_data/i18n/<lang>/strings.json`.
+- **`scripts/generators/build_changelog.py`** — generates the `/changelog` page (dated posts grouped by month), the homepage "what's new" strip, and a `/status` page + `status.json` build badge; deterministic (derived from committed post front-matter). No new JS/CSS; CSP-safe.
+13. **`scripts/generators/build_lang_feeds.py`** — RSS, Atom, news-sitemap, and JSON feeds per language.
+14. **`scripts/generators/build_agent_api.py`** — JSON endpoints exposing articles/topics for AI and search clients.
+15. **`scripts/generators/build_lead_magnets.py`** — compiles source files into PDF resources (checklists, etc.).
+16. **`scripts/generators/build_news_sitemap.py`** — the Google News sitemap.
 
 ### Phase D — postbuild + finalisation
 
-16. **`scripts/postbuild/postbuild.py`** — the per-page optimisation pass: real SRI hashes, per-page CSP JSON-LD hashes, structured data, og/twitter tags, image width/height stamping, asset fingerprinting, breadcrumbs, and the rest of the page furniture.
-17. **`scripts/seo_and_audit/build_rag_corpus.py`** — the RAG/LLM corpus (`feed.jsonl`, per-tag JSONL, MCP resources).
-18. **`scripts/postbuild/fix_lang_switcher.py`** — rewrites the language-switcher hrefs to per-locale targets.
-19. **`scripts/security/sigstore_sign.py`** — signs dated articles with Sigstore (best-effort; skipped when no signing config is present).
+17. **`scripts/postbuild/postbuild.py`** — the per-page optimisation pass: real SRI hashes, per-page CSP JSON-LD hashes, structured data, og/twitter tags, image width/height stamping, asset fingerprinting, breadcrumbs, and the rest of the page furniture.
+18. **`scripts/seo_and_audit/build_rag_corpus.py`** — the RAG/LLM corpus (`feed.jsonl`, per-tag JSONL, MCP resources).
+19. **`scripts/postbuild/fix_lang_switcher.py`** — rewrites the language-switcher hrefs to per-locale targets.
+20. **`scripts/security/sigstore_sign.py`** — signs dated articles with Sigstore (best-effort; skipped when no signing config is present).
 
 After these, `build.sh` runs the validation gate (`tests/validation/`) under `set -euo pipefail`, so any CSP/hreflang/i18n/RTL/sitemap/JSON-LD failure fails the build.
 

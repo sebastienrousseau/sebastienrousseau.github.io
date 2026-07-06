@@ -96,19 +96,77 @@ class ServiceWorkerSetup {
 window.serviceWorkerSetup = new ServiceWorkerSetup();
 
 /**
- * Forward clicks on the in-nav .ap-search button to the hidden Static Site Generator search
- * widget (#ssg-search-btn). The widget injects asynchronously, so we keep
- * trying on click rather than caching the reference.
+ * On-site search bootstrap (DX plan Phase 2, ADR-0010).
+ *
+ * The search runtime (/search.js + /search.css) is LAZY-LOADED on first
+ * invocation only — Cmd/Ctrl-K, a click on the in-nav .ap-search button, or
+ * landing on the /search page — so it adds 0 to initial LCP everywhere else.
+ * Both assets are same-origin (script-src/style-src 'self'); no inline handlers,
+ * no CSP change. With JS off, the nav button is inert and /search shows its
+ * static fallback — progressive enhancement preserved.
  */
-document.addEventListener("click", function (event) {
-    var trigger = event.target.closest(".ap-search");
-    if (!trigger) return;
-    event.preventDefault();
-    var ssg = document.getElementById("ssg-search-btn");
-    if (ssg) {
-        ssg.click();
+(function () {
+    var loading = null;
+
+    function injectOnce(tag, attrs) {
+        var el = document.createElement(tag);
+        for (var k in attrs) if (attrs.hasOwnProperty(k)) el.setAttribute(k, attrs[k]);
+        document.head.appendChild(el);
+        return el;
     }
-});
+
+    // Returns a promise that resolves once /search.js has booted.
+    function ensureSearch() {
+        if (window.SiteSearch) return Promise.resolve();
+        if (loading) return loading;
+        loading = new Promise(function (resolve) {
+            document.addEventListener("sitesearch:ready", function () { resolve(); }, { once: true });
+            injectOnce("link", { rel: "stylesheet", href: "/search.css" });
+            injectOnce("script", { src: "/search.js", defer: "" });
+        });
+        return loading;
+    }
+
+    function openSearch() {
+        if (window.SiteSearch) {
+            window.SiteSearch.open();
+            return;
+        }
+        // Remember the intent so /search.js opens as soon as it boots.
+        window.__ssPendingOpen = true;
+        ensureSearch().then(function () {
+            if (window.__ssPendingOpen && window.SiteSearch) {
+                window.__ssPendingOpen = false;
+                window.SiteSearch.open();
+            }
+        });
+    }
+
+    // Nav search button → open the command palette.
+    document.addEventListener("click", function (event) {
+        var trigger = event.target.closest && event.target.closest(".ap-search");
+        if (!trigger) return;
+        event.preventDefault();
+        openSearch();
+    });
+
+    // Cmd/Ctrl-K anywhere (except while typing into another field, where the OS
+    // shortcut shouldn't be hijacked mid-entry unless it's our own input).
+    document.addEventListener("keydown", function (event) {
+        var k = event.key;
+        if ((event.metaKey || event.ctrlKey) && (k === "k" || k === "K")) {
+            event.preventDefault();
+            openSearch();
+        }
+    });
+
+    // The /search page self-enhances: eagerly (but idle) load the runtime so the
+    // page turns into a live search box without a click. Still off the LCP path.
+    if (document.getElementById("search-page")) {
+        var idle = window.requestIdleCallback || function (fn) { return setTimeout(fn, 200); };
+        idle(function () { ensureSearch(); });
+    }
+})();
 
 /**
  * Listing filter — `/articles/` page <select>s update data-filter-*
@@ -790,4 +848,120 @@ function fallbackCopy(text, done) {
     } catch (err) {
         console.warn("mermaid load failed", err);
     }
+})();
+
+/**
+ * "Read as…" audience path selector (homepage only, Phase 8).
+ *
+ * Progressive enhancement: the control ships [hidden] in static HTML,
+ * so a JS-off reader gets the full homepage in document order and no
+ * inert widget. On load we reveal it, then re-order the home sections
+ * so the ones tagged for the chosen audience (boards / engineers /
+ * regulators) lead — nothing is ever removed, so it's a lens, not a
+ * destructive filter.
+ *
+ * The preference is cookie-free: `?read=<audience>` in the URL (a
+ * shareable, bookmarkable permalink) plus `localStorage`. URL wins on
+ * load so a shared link always reflects its author's lens. Reorders
+ * announce via a polite `role="status"` live region. No inline handlers
+ * or styles — CSP-hash-clean, same-origin script only.
+ */
+(function () {
+    var root = document.querySelector(".read-as");
+    if (!root) return;
+    var home = document.querySelector(".home-content");
+    if (!home) return;
+
+    // Only these three lenses are honoured — everything else (including a
+    // crafted ?read= value) falls back to the authored "Everyone" order,
+    // so a hostile query string can never drive the DOM.
+    var ALLOWED = ["boards", "engineers", "regulators"];
+    var STORE_KEY = "read-as";
+    var buttons = Array.prototype.slice.call(root.querySelectorAll(".read-as-btn"));
+    var status = root.querySelector("[data-read-status]");
+    var announce = root.getAttribute("data-announce") || "";
+
+    // Snapshot the authored section order once so "Everyone" restores it.
+    var sections = Array.prototype.slice.call(
+        home.querySelectorAll(":scope > section[data-audience]")
+    );
+    if (!sections.length) return;
+
+    function sanitize(v) {
+        return ALLOWED.indexOf(v) !== -1 ? v : "";
+    }
+
+    // Stable partition: sections tagged for `aud` keep their relative
+    // order and move to the front; the rest follow in their original
+    // order. `aud === ""` leaves the authored order untouched.
+    function reorder(aud) {
+        var lead = [];
+        var rest = [];
+        sections.forEach(function (sec) {
+            var tags = (sec.getAttribute("data-audience") || "").split(/\s+/);
+            if (aud && tags.indexOf(aud) !== -1) {
+                lead.push(sec);
+            } else {
+                rest.push(sec);
+            }
+        });
+        lead.concat(rest).forEach(function (sec) {
+            home.appendChild(sec);
+        });
+    }
+
+    function labelFor(aud) {
+        for (var i = 0; i < buttons.length; i++) {
+            if ((buttons[i].getAttribute("data-read") || "") === aud) {
+                return buttons[i].textContent.trim();
+            }
+        }
+        return "";
+    }
+
+    function apply(aud, opts) {
+        aud = sanitize(aud);
+        opts = opts || {};
+        reorder(aud);
+        buttons.forEach(function (b) {
+            var on = (b.getAttribute("data-read") || "") === aud;
+            b.setAttribute("aria-pressed", on ? "true" : "false");
+        });
+        if (status && opts.speak) {
+            status.textContent = (announce ? announce + ": " : "") + labelFor(aud);
+        }
+        if (opts.persist) {
+            try {
+                if (aud) localStorage.setItem(STORE_KEY, aud);
+                else localStorage.removeItem(STORE_KEY);
+            } catch (e) { /* private mode — non-fatal */ }
+            try {
+                var url = new URL(window.location.href);
+                if (aud) url.searchParams.set("read", aud);
+                else url.searchParams.delete("read");
+                window.history.replaceState(null, "", url.toString());
+            } catch (e2) { /* older engine — non-fatal */ }
+        }
+    }
+
+    // Reveal the control now that it's wired (was [hidden] for JS-off).
+    root.removeAttribute("hidden");
+
+    buttons.forEach(function (b) {
+        b.addEventListener("click", function () {
+            apply(b.getAttribute("data-read") || "", { persist: true, speak: true });
+        });
+    });
+
+    // Initial lens: URL param wins (shared link), else stored preference.
+    var initial = "";
+    try {
+        initial = new URL(window.location.href).searchParams.get("read") || "";
+    } catch (e) { /* no URL support — stays "" */ }
+    if (!initial) {
+        try { initial = localStorage.getItem(STORE_KEY) || ""; } catch (e3) {}
+    }
+    // Only announce on load when a non-default lens is actually applied,
+    // so the default homepage doesn't fire a spurious live-region update.
+    apply(initial, { persist: false, speak: sanitize(initial) !== "" });
 })();
