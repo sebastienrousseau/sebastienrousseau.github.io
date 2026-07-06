@@ -1,4 +1,4 @@
-# ADR-0010: Interactive index scorecard — component architecture and URL-state encoding
+# ADR-0011: Interactive index scorecard — component architecture and URL-state encoding
 
 **Site:** sebastienrousseau.com
 **Author:** Sebastien Rousseau
