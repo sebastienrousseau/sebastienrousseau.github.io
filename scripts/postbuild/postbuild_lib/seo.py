@@ -435,7 +435,7 @@ def _build_howto_jsonld(spec: dict) -> str:
         "step": steps_json,
     }
     return (
-        f'<script type="application/ld+json">{_json.dumps(payload, separators=(",",":"))}</script>'
+        f'<script type="application/ld+json">{_json.dumps(payload, separators=(",", ":"))}</script>'
     )
 
 
@@ -474,7 +474,10 @@ _IMG_SRC_RE = re.compile(r"""\bsrc=["']?([^"'\s>]+)""", re.IGNORECASE)
 _IMG_DIMS: dict[str, tuple[int, int]] = {
     "https://cloudcdn.pro/clients/common/images/elements/divider.svg": (40, 6),
     "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg": (160, 40),
-    "https://cloudcdn.pro/clients/static-site-generator/v1/banners/banner-static-site-generator.svg": (1200, 675),
+    "https://cloudcdn.pro/clients/static-site-generator/v1/banners/banner-static-site-generator.svg": (
+        1200,
+        675,
+    ),
     # Personal portrait — 162×162 native, used at small sizes everywhere.
     "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp": (162, 162),
 }
@@ -540,7 +543,7 @@ def stamp_image_dimensions(html: str) -> tuple[str, int]:  # noqa: C901 — per-
         if not extras:
             return m.group(0)
         n += 1
-        return f'<img{attrs} {" ".join(extras)}>'
+        return f"<img{attrs} {' '.join(extras)}>"
 
     return _IMG_TAG_RE.sub(patch, html), n
 
@@ -642,7 +645,7 @@ _TAG_RE = re.compile(r"<[^>]+>")
 _WS_RE = re.compile(r"\s+")
 _FM_DESC_RE = re.compile(r'^description:\s*["\']?(.+?)["\']?\s*$', re.MULTILINE)
 _DESC_META_RE = re.compile(
-    r'<meta\b[^>]*\b(?:name|property)='
+    r"<meta\b[^>]*\b(?:name|property)="
     r'"(?:description|og:description|twitter:description)"[^>]*>',
     re.IGNORECASE,
 )
@@ -671,17 +674,18 @@ _CORRUPT_MARKERS = ("<", "&lt;", "&gt;", "&amp;lt;", "&amp;gt;", "&amp;quot;")
 
 
 def _is_clean_desc(text: str) -> bool:
-    return (
-        bool(text)
-        and len(text) >= 20
-        and not any(marker in text for marker in _CORRUPT_MARKERS)
-    )
+    return bool(text) and len(text) >= 20 and not any(marker in text for marker in _CORRUPT_MARKERS)
 
 
-def _desc_from_jsonld(html_text: str) -> str | None:
-    """Cleanest description from the page JSON-LD, preferring Article-family
-    nodes over the identity graph."""
-    generic: str | None = None
+def _node_is_article(node: dict) -> bool:
+    t = node.get("@type", "")
+    types = t if isinstance(t, list) else [t]
+    return any("Article" in str(x) or "Posting" in str(x) for x in types)
+
+
+def _clean_descriptions(html_text: str) -> list[tuple[bool, str]]:
+    """Every clean JSON-LD description as ``(is_article_node, text)``."""
+    out: list[tuple[bool, str]] = []
     for block in _JSONLD_BLOCK_RE.findall(html_text):
         try:
             data = _json.loads(block)
@@ -689,14 +693,20 @@ def _desc_from_jsonld(html_text: str) -> str | None:
             continue
         for node in _iter_jsonld_nodes(data):
             desc = node.get("description")
-            if not isinstance(desc, str) or not _is_clean_desc(desc):
-                continue
-            t = node.get("@type", "")
-            types = t if isinstance(t, list) else [t]
-            if any("Article" in str(x) or "Posting" in str(x) for x in types):
-                return desc
-            if generic is None:
-                generic = desc
+            if isinstance(desc, str) and _is_clean_desc(desc):
+                out.append((_node_is_article(node), desc))
+    return out
+
+
+def _desc_from_jsonld(html_text: str) -> str | None:
+    """Cleanest description from the page JSON-LD, preferring Article-family
+    nodes over the identity graph."""
+    generic: str | None = None
+    for is_article, desc in _clean_descriptions(html_text):
+        if is_article:
+            return desc
+        if generic is None:
+            generic = desc
     return generic
 
 
@@ -889,9 +899,7 @@ def clean_meta_description(page: Path, html_text: str) -> str:
         raw = current
     else:
         raw = (
-            _desc_from_jsonld(html_text)
-            or _desc_from_source(page)
-            or _sanitised_scrape(html_text)
+            _desc_from_jsonld(html_text) or _desc_from_source(page) or _sanitised_scrape(html_text)
         )
     if not raw:
         return html_text
@@ -901,9 +909,7 @@ def clean_meta_description(page: Path, html_text: str) -> str:
         tag = m.group(0)
         if not _tag_is_corrupt(tag):
             return tag
-        return _CONTENT_ATTR_RE.sub(
-            lambda mm: f"{mm.group(1)}{esc}{mm.group(2)}", tag, count=1
-        )
+        return _CONTENT_ATTR_RE.sub(lambda mm: f"{mm.group(1)}{esc}{mm.group(2)}", tag, count=1)
 
     return _DESC_META_RE.sub(_fix_tag, html_text)
 
@@ -920,12 +926,8 @@ def clean_meta_description(page: Path, html_text: str) -> str:
 # uses. A stray self-referencing hreflang alternate (bare domain, no slash)
 # on the home page is normalised to the same form so the duplicate resolves.
 
-_CANONICAL_LINK_RE = re.compile(
-    r'<link\b[^>]*\brel=["\']?canonical["\']?[^>]*>', re.IGNORECASE
-)
-_OGURL_META_RE = re.compile(
-    r'<meta\b[^>]*\bproperty=["\']?og:url["\']?[^>]*>', re.IGNORECASE
-)
+_CANONICAL_LINK_RE = re.compile(r'<link\b[^>]*\brel=["\']?canonical["\']?[^>]*>', re.IGNORECASE)
+_OGURL_META_RE = re.compile(r'<meta\b[^>]*\bproperty=["\']?og:url["\']?[^>]*>', re.IGNORECASE)
 _HREF_ATTR_RE = re.compile(r'(href=")[^"]*(")', re.IGNORECASE)
 _SELF_ALTERNATE_RE = re.compile(
     r'<link\b(?=[^>]*\brel=["\']?alternate["\']?)(?=[^>]*\bhreflang=)'
@@ -951,9 +953,7 @@ def normalize_canonical(page: Path, html_text: str) -> str:
     url = _pretty_canonical_url(page)
 
     def _set_href(m: re.Match[str]) -> str:
-        return _HREF_ATTR_RE.sub(
-            lambda mm: f"{mm.group(1)}{url}{mm.group(2)}", m.group(0), count=1
-        )
+        return _HREF_ATTR_RE.sub(lambda mm: f"{mm.group(1)}{url}{mm.group(2)}", m.group(0), count=1)
 
     def _set_content(m: re.Match[str]) -> str:
         return _CONTENT_ATTR_RE.sub(
@@ -966,9 +966,12 @@ def normalize_canonical(page: Path, html_text: str) -> str:
     # (no trailing slash) so it collapses onto the injected en alternate.
     if _pretty_canonical_url(page) == f"{BASE_URL}/":
         out = _SELF_ALTERNATE_RE.sub(
-            lambda m: m.group(0).replace(f'href="{BASE_URL}"', f'href="{BASE_URL}/"')
-            .replace(f"href={BASE_URL}>", f'href="{BASE_URL}/">')
-            .replace(f"href={BASE_URL} ", f'href="{BASE_URL}/" '),
+            lambda m: (
+                m.group(0)
+                .replace(f'href="{BASE_URL}"', f'href="{BASE_URL}/"')
+                .replace(f"href={BASE_URL}>", f'href="{BASE_URL}/">')
+                .replace(f"href={BASE_URL} ", f'href="{BASE_URL}/" ')
+            ),
             out,
         )
     return out

@@ -97,8 +97,8 @@ def _render_body(data: dict) -> str:
     if topics:
         cards = "".join(
             '<article class="offer-card">'
-            f'<h3>{_esc(t.get("title", ""))}</h3>'
-            f'<p>{_esc(t.get("summary", "").strip())}</p>'
+            f"<h3>{_esc(t.get('title', ''))}</h3>"
+            f"<p>{_esc(t.get('summary', '').strip())}</p>"
             "</article>"
             for t in topics
             if t.get("title")

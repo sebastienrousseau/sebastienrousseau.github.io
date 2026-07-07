@@ -53,25 +53,38 @@ DESC = (
 # Flagship libraries positioned for regulated use — license is a fact
 # (Apache-2.0 / MIT) verifiable from each repository.
 _LICENSING = [
-    ("pain001", "ISO 20022 pain.001 generation", "Apache-2.0 / MIT",
-     "https://github.com/sebastienrousseau/pain001"),
-    ("pacs008", "ISO 20022 pacs.008 FI-to-FI transfer", "Apache-2.0 / MIT",
-     "https://github.com/sebastienrousseau/pacs008"),
-    ("KyberLib", "ML-KEM (CRYSTALS-Kyber, NIST FIPS 203)", "Apache-2.0 / MIT",
-     "https://github.com/sebastienrousseau/kyberlib"),
-    ("BankStatementParser", "Structured statement parsing", "Apache-2.0 / MIT",
-     "https://github.com/sebastienrousseau/bankstatementparser"),
+    (
+        "pain001",
+        "ISO 20022 pain.001 generation",
+        "Apache-2.0 / MIT",
+        "https://github.com/sebastienrousseau/pain001",
+    ),
+    (
+        "pacs008",
+        "ISO 20022 pacs.008 FI-to-FI transfer",
+        "Apache-2.0 / MIT",
+        "https://github.com/sebastienrousseau/pacs008",
+    ),
+    (
+        "KyberLib",
+        "ML-KEM (CRYSTALS-Kyber, NIST FIPS 203)",
+        "Apache-2.0 / MIT",
+        "https://github.com/sebastienrousseau/kyberlib",
+    ),
+    (
+        "BankStatementParser",
+        "Structured statement parsing",
+        "Apache-2.0 / MIT",
+        "https://github.com/sebastienrousseau/bankstatementparser",
+    ),
 ]
 
 
 def _provenance_section() -> str:
-    verify = (
-        "gh attestation verify sbom.cdx.json \\\n"
-        "  --owner sebastienrousseau"
-    )
+    verify = "gh attestation verify sbom.cdx.json \\\n  --owner sebastienrousseau"
     cards = (
         '<article class="offer-card"><h3>Software bill of materials</h3>'
-        '<p>A CycloneDX SBOM is generated and validated in CI on every build. '
+        "<p>A CycloneDX SBOM is generated and validated in CI on every build. "
         '<a href="/sbom.cdx.json">Download sbom.cdx.json</a>.</p></article>'
         '<article class="offer-card"><h3>Build provenance (SLSA)</h3>'
         "<p>The deployed SBOM carries a signed build-provenance attestation. "
@@ -83,7 +96,7 @@ def _provenance_section() -> str:
         "<p>Every article is Sigstore-signed and dated, so a reader can prove "
         "authorship and integrity independently.</p></article>"
         '<article class="offer-card"><h3>OpenSSF Scorecard</h3>'
-        '<p>Supply-chain posture is scored weekly. '
+        "<p>Supply-chain posture is scored weekly. "
         '<a href="https://scorecard.dev/viewer/?uri=github.com/sebastienrousseau/sebastienrousseau.github.io" '
         'rel="noopener">View the live Scorecard</a>.</p></article>'
     )
@@ -97,7 +110,7 @@ def _provenance_section() -> str:
 
 def _licensing_section() -> str:
     rows = "".join(
-        f"<tr><th scope=\"row\"><a href=\"{_esc(repo)}\" rel=\"noopener\">"
+        f'<tr><th scope="row"><a href="{_esc(repo)}" rel="noopener">'
         f"{_esc(name)}</a></th><td>{_esc(what)}</td><td>{_esc(lic)}</td></tr>"
         for name, what, lic, repo in _LICENSING
     )
@@ -151,9 +164,7 @@ def _recognition_section(items: list[dict]) -> str:
         url = it.get("url", "")
         role = it.get("role", "")
         name_html = (
-            f'<a href="{_esc(url)}" rel="noopener">{_esc(title)}</a>'
-            if url
-            else _esc(title)
+            f'<a href="{_esc(url)}" rel="noopener">{_esc(title)}</a>' if url else _esc(title)
         )
         meta = " · ".join(x for x in (_esc(org), _esc(date), _esc(role)) if x)
         rows.append(f"<li><strong>{name_html}</strong><br>{meta}</li>")
@@ -199,9 +210,7 @@ def main() -> int:
 
     shell = SHELL_SRC.read_text(encoding="utf-8")
     body = _render_body(items)
-    out = _swap_into_shell(
-        shell, body, "Trust & governance — Sebastien Rousseau", DESC, URL
-    )
+    out = _swap_into_shell(shell, body, "Trust & governance — Sebastien Rousseau", DESC, URL)
     target = PUBLIC / "trust" / "index.html"
     target.parent.mkdir(parents=True, exist_ok=True)
     target.write_text(out, encoding="utf-8")

@@ -776,8 +776,7 @@ def main() -> None:
     if failures:
         for page, exc in failures:
             print(
-                f"postbuild: FAILED {page.relative_to(PUBLIC)}: "
-                f"{type(exc).__name__}: {exc}",
+                f"postbuild: FAILED {page.relative_to(PUBLIC)}: {type(exc).__name__}: {exc}",
                 file=sys.stderr,
             )
         raise SystemExit(1)
