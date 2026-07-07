@@ -360,6 +360,58 @@ def wrap_cdn_images_in_transform(html: str) -> tuple[str, int]:
     out = _IMG_TAG_TRANSFORM_RE.sub(patch_img, html)
     out = _LINK_PRELOAD_IMAGE_RE.sub(patch_preload, out)
     return out, n
+
+
+# Only large content/hero images get a responsive srcset. Avatars, social
+# icons, and logo rails (declared width < this) keep their single src so a
+# 36px avatar never pulls a 320w file. AVIF is intentionally NOT emitted —
+# the CDN has no .avif variants (probed 2026-07: /stocks/*.avif → 404); only
+# the four pre-generated WebP widths exist.
+_SRCSET_MIN_WIDTH = 800
+_STOCKS_PREFIX = "/stocks/images/"
+
+
+def _responsive_srcset(src: str) -> str | None:
+    """A WebP ``srcset`` over the four pre-generated widths for a
+    ``/stocks/images/`` source, or None if the path has no variants."""
+    prefix = _CDN_HOST + _STOCKS_PREFIX
+    if not src.startswith(prefix) or not src.endswith(".webp"):
+        return None
+    rel = src[len(prefix):].split("?", 1)[0].split("#", 1)[0]
+    m = _VARIANT_SUFFIX_RE.match(rel)
+    # Strip an existing -<w> suffix so the stem is variant-free.
+    stem = prefix + (m.group(1) if m else rel[: -len(".webp")])
+    return ", ".join(f"{stem}-{w}.webp {w}w" for w in _VARIANT_WIDTHS)
+
+
+def add_responsive_srcset(html: str) -> tuple[str, int]:
+    """Add a WebP ``srcset`` (320/640/1200/1920) + ``sizes`` to large
+    ``/stocks/images/`` content images so mobile fetches a right-sized
+    banner instead of the full-width variant. ``sizes`` assumes full-column
+    width (never under-serves → never blurry). Runs after
+    ``wrap_cdn_images_in_transform`` so ``src`` is already a variant, and is
+    idempotent (skips tags that already carry a ``srcset``)."""
+    n = 0
+
+    def patch(match: re.Match[str]) -> str:
+        nonlocal n
+        attrs = match.group(1)
+        # Skip already-responsive tags and the LCP hero: the hero carries a
+        # width-matched <link rel=preload> and adding a plain srcset would let
+        # the browser pick a different variant, wasting the preload (LCP
+        # regression). Leave the tuned hero path untouched.
+        if "srcset=" in attrs.lower() or _img_is_high_priority(attrs):
+            return match.group(0)
+        src = _img_attr_src(attrs)
+        if not src or (_img_attr_width(attrs) or 0) < _SRCSET_MIN_WIDTH:
+            return match.group(0)
+        srcset = _responsive_srcset(src)
+        if not srcset:
+            return match.group(0)
+        n += 1
+        return f'<img{attrs} srcset="{srcset}" sizes="(max-width: 1100px) 100vw, 1100px">'
+
+    return _IMG_TAG_TRANSFORM_RE.sub(patch, html), n
 jsonld_re = re.compile(
     r'<script[^>]*type=["\']?application/ld\+json["\']?[^>]*>([\s\S]*?)</script\s*>',
     re.IGNORECASE,

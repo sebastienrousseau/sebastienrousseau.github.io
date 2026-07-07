@@ -26,6 +26,7 @@ sys.path.insert(0, str(Path(__file__).parent))
 
 PUBLIC = Path("public")
 from postbuild_assets import (
+    add_responsive_srcset,
     fix_sri,
     inject_jsonld_hashes,
     inject_lcp_preload,
@@ -331,6 +332,7 @@ class _PostbuildCounters:
         "social_patched",
         "softwaresourcecode_patched",
         "sources_patched",
+        "srcset_added",
         "sri_patched",
         "syndicate_panels_set",
         "tables_carded",
@@ -606,6 +608,11 @@ def _process_page(page: Path, ctx: _PostbuildContext) -> None:
     # "starts with /api/" guard in _wrap_cdn_path).
     patched_hl, n_cdn_late = wrap_cdn_images_in_transform(patched_hl)
     ctx.counters.cdn_wrapped += n_cdn_late
+    # Responsive WebP srcset on large /stocks/images/ content images (after
+    # the wrap, so src is already a width-matched variant). WebP-only — the
+    # CDN has no AVIF variants.
+    patched_hl, n_srcset = add_responsive_srcset(patched_hl)
+    ctx.counters.srcset_added += n_srcset
     # Strip redundant title="..." on links where it duplicates the inner
     # text. WAVE flags these as a "redundant alternative text" alert.
     # Run AFTER every furniture / inject pass so author-card + citation

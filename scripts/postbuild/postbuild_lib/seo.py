@@ -869,7 +869,7 @@ _CONTENT_CAPTURE_RE = re.compile(r'content="([^"]*)"', re.IGNORECASE)
 
 def _tag_is_corrupt(tag: str) -> bool:
     cm = _CONTENT_CAPTURE_RE.search(tag)
-    return bool(cm) and any(mk in cm.group(1) for mk in _CORRUPT_MARKERS)
+    return cm is not None and any(mk in cm.group(1) for mk in _CORRUPT_MARKERS)
 
 
 def clean_meta_description(page: Path, html_text: str) -> str:
