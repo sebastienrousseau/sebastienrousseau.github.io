@@ -366,11 +366,9 @@ def contact_layout() -> str:
 """
     html = TOP + body + BOTTOM
     html = html.replace("    </style>", contact_css + "    </style>")
-    # reCAPTCHA loader
-    html = html.replace(
-        '<script src="/main.js" defer></script>',
-        '<script src="/main.js" defer></script>\n    <script async defer src="https://www.google.com/recaptcha/api.js"></script>',
-    )
+    # reCAPTCHA is lazy-loaded on first form interaction by main.js
+    # (recaptchaLazy) so its ~800 KB of third-party JS stays off the initial
+    # /contact/ load — previously it eager-loaded here and pushed LCP to ~2.7s.
     return html
 
 
