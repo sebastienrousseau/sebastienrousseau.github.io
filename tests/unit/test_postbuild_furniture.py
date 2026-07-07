@@ -283,7 +283,7 @@ def test_inject_sigstore_no_op_without_blogposting():
 def test_inject_sigstore_no_op_when_bundle_missing(tmp_path, monkeypatch):
     """Without a sigstore bundle on disk, the injector is a no-op."""
 
-    html = '<script type="application/ld+json">{"@type":"BlogPosting"}</script>' "<main></main>"
+    html = '<script type="application/ld+json">{"@type":"BlogPosting"}</script><main></main>'
     monkeypatch.chdir(tmp_path)  # no _data/sigstore/* tree → no bundle
     assert hp.inject_sigstore_attestation(html, "post-slug") == html
 
@@ -292,7 +292,6 @@ def test_inject_sigstore_emits_badge_when_bundle_exists(tmp_path, monkeypatch):
     """With ``_SIGSTORE_CONFIG_PRESENT`` flipped on and a bundle on disk,
     the badge is appended just before ``</main>``."""
     from unittest.mock import patch
-
 
     public = tmp_path / "public"
     (public / "sigstore").mkdir(parents=True)
@@ -311,7 +310,6 @@ def test_inject_sigstore_emits_badge_when_bundle_exists(tmp_path, monkeypatch):
 def test_inject_sigstore_idempotent():
     """Re-running on a page that already has the badge is a no-op."""
     from unittest.mock import patch
-
 
     html = (
         '<script type="application/ld+json">{"@type":"BlogPosting"}</script>'
@@ -932,7 +930,7 @@ def test_inject_mermaid_widens_style_src_and_strips_hashes():
         '<meta http-equiv="Content-Security-Policy" '
         "content=\"script-src 'self'; "
         "style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' "
-        'https://fonts.googleapis.com\">'
+        'https://fonts.googleapis.com">'
         '<pre><code class="language-mermaid">'
         "sequenceDiagram\n    A-&gt;&gt;B: hi"
         "</code></pre>"
@@ -1111,8 +1109,7 @@ def test_inject_sigstore_no_op_when_config_absent():
     """``_SIGSTORE_CONFIG_PRESENT`` False → bail before reading disk."""
     from unittest.mock import patch
 
-
-    html = '<script type="application/ld+json">{"@type":"BlogPosting"}</script>' "<main></main>"
+    html = '<script type="application/ld+json">{"@type":"BlogPosting"}</script><main></main>'
     with patch.object(hp, "_SIGSTORE_CONFIG_PRESENT", False):
         assert hp.inject_sigstore_attestation(html, "any-slug") == html
 
@@ -1433,7 +1430,6 @@ def test_nav_active_target_three_part_lang_path_resolves():
 def test_inject_sigstore_no_op_when_no_blogposting_jsonld(tmp_path):
     """``_SIGSTORE_CONFIG_PRESENT`` True but page has no BlogPosting → no-op."""
     from unittest.mock import patch
-
 
     with patch.object(hp, "_SIGSTORE_CONFIG_PRESENT", True):
         assert hp.inject_sigstore_attestation("<p>plain</p>", "slug") == "<p>plain</p>"
@@ -2257,7 +2253,7 @@ def test_inject_byline_strap_renders_inside_wrap_div_above_closing_main():
     # Sits INSIDE the wrap-div (immediately before </div></main>) so the
     # later inject_prev_next_nav pass — which anchors on </div>\s*</main>
     # — still matches and the pagination ends up below the byline.
-    assert '</p></div></main>' in out
+    assert "</p></div></main>" in out
     assert out.index('class="byline-strap"') < out.rindex("</div>")
 
 
@@ -2295,10 +2291,10 @@ def test_inject_pullquotes_promotes_blockquote_pull_to_aside():
     body = (
         '<section class="ap-hero"><h1>T</h1></section>'
         '<main id="main"><div class="wrap">'
-        '<p>Body.</p>'
+        "<p>Body.</p>"
         '<blockquote class="pull">A quotable claim.</blockquote>'
-        '<p>More body.</p>'
-        '</div></main>'
+        "<p>More body.</p>"
+        "</div></main>"
     )
     out = inject_pullquotes(_ws2_page(body=body))
     assert '<aside class="pull-quote">A quotable claim.</aside>' in out
@@ -2312,7 +2308,7 @@ def test_inject_pullquotes_idempotent():
         '<section class="ap-hero"><h1>T</h1></section>'
         '<main id="main"><div class="wrap">'
         '<blockquote class="pull">Q.</blockquote>'
-        '</div></main>'
+        "</div></main>"
     )
     once = inject_pullquotes(_ws2_page(body=body))
     assert inject_pullquotes(once) == once
@@ -2325,9 +2321,9 @@ def test_inject_pullquotes_handles_multiple_per_article():
         '<section class="ap-hero"><h1>T</h1></section>'
         '<main id="main"><div class="wrap">'
         '<blockquote class="pull">First.</blockquote>'
-        '<p>x</p>'
+        "<p>x</p>"
         '<blockquote class="pull">Second.</blockquote>'
-        '</div></main>'
+        "</div></main>"
     )
     out = inject_pullquotes(_ws2_page(body=body))
     assert out.count('class="pull-quote"') == 2
@@ -2339,12 +2335,12 @@ def test_inject_pullquotes_ignores_plain_blockquotes():
     body = (
         '<section class="ap-hero"><h1>T</h1></section>'
         '<main id="main"><div class="wrap">'
-        '<blockquote>Plain.</blockquote>'
-        '</div></main>'
+        "<blockquote>Plain.</blockquote>"
+        "</div></main>"
     )
     out = inject_pullquotes(_ws2_page(body=body))
     assert 'class="pull-quote"' not in out
-    assert '<blockquote>Plain.</blockquote>' in out
+    assert "<blockquote>Plain.</blockquote>" in out
 
 
 # inject_section_rules ------------------------------------------------------
@@ -2354,9 +2350,7 @@ def _ws2_body_with_h2s(n: int) -> str:
     heads = "".join(f'<h2 id="h2-s{i}">Section {i}</h2><p>x</p>' for i in range(n))
     return (
         '<section class="ap-hero"><h1>T</h1></section>'
-        '<main id="main"><div class="wrap">'
-        + heads
-        + '</div></main>'
+        '<main id="main"><div class="wrap">' + heads + "</div></main>"
     )
 
 
@@ -2397,9 +2391,7 @@ def test_inject_section_rules_ignores_h2_without_id_attribute():
     # inject_anchor_links_and_toc didn't run, so no prose h2 has an id.
     bare = (
         '<section class="ap-hero"><h1>T</h1></section>'
-        '<main id="main"><div class="wrap">'
-        + ("<h2>X</h2><p>p</p>" * 6)
-        + '</div></main>'
+        '<main id="main"><div class="wrap">' + ("<h2>X</h2><p>p</p>" * 6) + "</div></main>"
     )
     page = _ws2_page(body=bare)
     assert inject_section_rules(page) == page
@@ -2427,8 +2419,8 @@ def test_inject_footnotes_no_op_when_marker_without_definition():
     body = (
         '<section class="ap-hero"><h1>T</h1></section>'
         '<main id="main"><div class="wrap">'
-        '<p>Claim with [^1] marker but no definition.</p>'
-        '</div></main>'
+        "<p>Claim with [^1] marker but no definition.</p>"
+        "</div></main>"
     )
     page = _ws2_page(body=body)
     assert inject_footnotes(page) == page
@@ -2440,10 +2432,10 @@ def test_inject_footnotes_wraps_markers_and_emits_section():
     body = (
         '<section class="ap-hero"><h1>T</h1></section>'
         '<main id="main"><div class="wrap">'
-        '<p>Claim one [^1] and claim two [^2].</p>'
-        '<p>[^1]: First footnote.</p>'
-        '<p>[^2]: Second footnote.</p>'
-        '</div></main>'
+        "<p>Claim one [^1] and claim two [^2].</p>"
+        "<p>[^1]: First footnote.</p>"
+        "<p>[^2]: Second footnote.</p>"
+        "</div></main>"
     )
     out = inject_footnotes(_ws2_page(body=body))
     # Markers wrapped as superscript anchor links.
@@ -2465,8 +2457,8 @@ def test_inject_footnotes_idempotent():
     body = (
         '<section class="ap-hero"><h1>T</h1></section>'
         '<main id="main"><div class="wrap">'
-        '<p>Claim [^1].</p><p>[^1]: A note.</p>'
-        '</div></main>'
+        "<p>Claim [^1].</p><p>[^1]: A note.</p>"
+        "</div></main>"
     )
     once = inject_footnotes(_ws2_page(body=body))
     assert inject_footnotes(once) == once
@@ -2496,7 +2488,7 @@ def test_inject_action_rail_renders_save_pdf_and_cite_buttons_at_top_of_main():
     # probes the route and falls back to window.print() if 503.
     assert 'href="/api/pdf/2026-01-01-my-post.pdf"' in out
     assert 'download="2026-01-01-my-post.pdf"' in out
-    assert 'data-print-fallback' in out
+    assert "data-print-fallback" in out
     assert 'type="application/pdf"' in out
     # Cite anchors to the popover injected later in the pipeline.
     assert 'href="#cite-popover"' in out
@@ -2550,9 +2542,11 @@ def test_inject_cite_popover_emits_meta_and_all_five_formats_with_copy_buttons()
     assert 'class="cite-meta"' in out
     assert "<strong>My Post: A Subtitle</strong>" in out
     assert "<p>A brief description of the article.</p>" in out
-    # All 5 format headings present
+    # All 5 format labels present. Emitted as <p class="cite-format-label">
+    # (not <h3>) so the cite popover doesn't inject an H1→H3 heading-order
+    # skip into the article — the <details><summary> is the accessible name.
     for fmt in ("BibTeX", "RIS", "Vancouver", "Chicago", "APA"):
-        assert f"<h3>{fmt}</h3>" in out
+        assert f'<p class="cite-format-label">{fmt}</p>' in out
     # Each <pre> has a stable id and a paired copy button so main.js
     # can wire the clipboard handler via [data-copy].
     for fid in ("cite-bibtex", "cite-ris", "cite-vancouver", "cite-chicago", "cite-apa"):
@@ -2720,7 +2714,9 @@ def test_extract_body_question_finds_first_question_paragraph():
     from postbuild_lib.sharing import _extract_body_question
 
     # Paragraph must be 50-300 chars and end with ?
-    question = "How should financial institutions approach post-quantum migration in their payment stacks?"
+    question = (
+        "How should financial institutions approach post-quantum migration in their payment stacks?"
+    )
     html = f"<p>Some background statement about the topic.</p><p>{question}</p>"
     assert _extract_body_question(html) == question
 
@@ -2729,9 +2725,7 @@ def test_keywords_to_hashtags_skips_empty_segments():
     from postbuild_lib.sharing import _keywords_to_hashtags
 
     # Double-comma produces an empty segment that must be skipped (line 785)
-    html = (
-        '{"@type":"BlogPosting","keywords":"post-quantum,, payments"}'
-    )
+    html = '{"@type":"BlogPosting","keywords":"post-quantum,, payments"}'
     result = _keywords_to_hashtags(html)
     assert "#PostQuantum" in result
     assert "#Payments" in result
@@ -2742,10 +2736,7 @@ def test_keywords_to_hashtags_caps_at_max_n():
     from postbuild_lib.sharing import _keywords_to_hashtags
 
     # 7 distinct keywords → must stop at max_n=5 (line 792 break)
-    html = (
-        '{"@type":"BlogPosting",'
-        '"keywords":"alpha,beta,gamma,delta,epsilon,zeta,eta"}'
-    )
+    html = '{"@type":"BlogPosting","keywords":"alpha,beta,gamma,delta,epsilon,zeta,eta"}'
     result = _keywords_to_hashtags(html)
     assert len(result) == 5
 
@@ -2754,10 +2745,7 @@ def test_generate_linkedin_post_merges_two_sentences_and_includes_takeaways():
     from postbuild_lib.sharing import inject_syndication_panel
 
     # Description with two short sentences (lines 816-818)
-    two_sentence_desc = (
-        "First sentence about the topic. "
-        "Second sentence that adds context."
-    )
+    two_sentence_desc = "First sentence about the topic. Second sentence that adds context."
     head = (
         '<link rel="canonical" href="https://sebastienrousseau.com/2026-01-01-my-post/">'
         '<meta property="og:title" content="My Post: A Subtitle">'
@@ -2768,7 +2756,9 @@ def test_generate_linkedin_post_merges_two_sentences_and_includes_takeaways():
         "</script>"
     )
     # Body with a takeaways list (line 836) and a question paragraph
-    question = "How should financial institutions approach post-quantum migration in core payment systems?"
+    question = (
+        "How should financial institutions approach post-quantum migration in core payment systems?"
+    )
     body = (
         '<section class="ap-hero"><h1>My Post</h1></section>'
         '<main id="main" class="content ap-section"><div class="wrap">'
@@ -2779,7 +2769,9 @@ def test_generate_linkedin_post_merges_two_sentences_and_includes_takeaways():
         f"<p>{question}</p>"
         "</div></main>"
     )
-    out = inject_syndication_panel(f'<html lang="en-GB"><head>{head}</head><body>{body}</body></html>')
+    out = inject_syndication_panel(
+        f'<html lang="en-GB"><head>{head}</head><body>{body}</body></html>'
+    )
     # Two-sentence opening
     assert "First sentence about the topic. Second sentence that adds context." in out
     # Takeaway bullets present (line 836 branch)
@@ -2837,10 +2829,10 @@ def test_inject_oembed_link_emits_alternate_link_in_head():
     from postbuild_lib.sharing import inject_oembed_link
 
     out = inject_oembed_link(_ws2_page())
-    assert 'application/json+oembed' in out
+    assert "application/json+oembed" in out
     assert 'href="https://sebastienrousseau.com/oembed/2026-01-01-my-post.json"' in out
     # The previous oEmbed link sat inside <head>.
-    assert out.index('application/json+oembed') < out.index("</head>")
+    assert out.index("application/json+oembed") < out.index("</head>")
 
 
 def test_inject_oembed_link_no_op_without_blogposting():

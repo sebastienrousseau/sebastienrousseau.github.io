@@ -161,7 +161,7 @@ def inject_cite_popover(html: str) -> str:
     for name, body in formats.items():
         target_id = f"cite-{name.lower()}"
         blocks.append(
-            f'<div class="cite-format"><h3>{_esc(name)}</h3>'
+            f'<div class="cite-format"><p class="cite-format-label">{_esc(name)}</p>'
             f'<pre id="{target_id}">{_esc(body)}</pre>'
             f'<button type="button" class="copy-btn" data-copy="#{target_id}" '
             f'aria-label="{_esc(name, quote=True)} — {copy_label}">{copy_label}</button>'

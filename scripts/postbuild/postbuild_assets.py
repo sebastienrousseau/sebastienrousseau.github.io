@@ -18,14 +18,19 @@ import rjsmin
 
 PUBLIC = Path("public")
 
+
 def b64_sha256(data: bytes) -> str:
     return base64.b64encode(hashlib.sha256(data).digest()).decode("ascii")
+
+
 def _ensure_trailing_newline(s: str) -> str:
     """GitHub Pages / Fastly append a ``\\n`` to text assets in flight,
     which silently shifts the on-the-wire SHA-256 by one byte and
     breaks any SRI tag computed against the on-disk bytes. Pin the
     newline at build time so disk == wire."""
     return s if s.endswith("\n") else s + "\n"
+
+
 def _minify_one(p: Path) -> tuple[int, int]:
     """Minify ``p`` in place + ensure a trailing newline. Returns
     ``(bytes_before, bytes_after)``; ``(0, 0)`` if neither the
@@ -48,6 +53,8 @@ def _minify_one(p: Path) -> tuple[int, int]:
         return 0, 0
     p.write_text(out, encoding="utf-8")
     return len(src), len(out)
+
+
 def _gather_js_targets() -> list[Path]:
     """Top-level public/*.js + service-worker + theme bootstrap.
     Excludes /_csp/* (SSG already minifies; SRI is hash-pinned by us
@@ -62,6 +69,8 @@ def _gather_js_targets() -> list[Path]:
             continue
         out.append(js)
     return out
+
+
 def _gather_css_targets() -> list[Path]:
     """All CSS under public/. /_csp/* is the main target — Lighthouse
     flags it as 14 KiB unminified because SSG preserves the
@@ -69,6 +78,8 @@ def _gather_css_targets() -> list[Path]:
     if not PUBLIC.is_dir():
         return []
     return list(PUBLIC.rglob("*.css"))
+
+
 asset_hashes: dict[str, str] = {}
 asset_path_re = re.compile(
     r'(?:src|href)=["\']?/(?:_csp/)?([A-Za-z0-9][A-Za-z0-9\-_.]+\.(?:js|css))',
@@ -79,6 +90,8 @@ _TAG_CLOSE_RE = re.compile(r"(\s*/?>)\s*$")
 _CROSSORIGIN_RE = re.compile(
     r"\s+crossorigin=(['\"]?)(?:anonymous|use-credentials)\1", re.IGNORECASE
 )
+
+
 def fix_sri(html: str) -> str:
     """Stamp the right ``integrity="sha256-..."`` (and one
     ``crossorigin="anonymous"``) onto every ``<script>``/``<link>`` that
@@ -116,6 +129,8 @@ def fix_sri(html: str) -> str:
         last = m.end()
     out.append(html[last:])
     return "".join(out)
+
+
 _FIRST_IMG_RE = re.compile(
     r'<img\b(?![^>]*\b(?:loading=["\']?lazy)\b)[^>]*\bsrc=["\']([^"\']+)["\']',
     re.IGNORECASE,
@@ -124,12 +139,16 @@ _HEAD_CLOSE_RE = re.compile(r"</head>", re.IGNORECASE)
 _LINK_TAG_RE = re.compile(r"<link\b[^>]+>", re.IGNORECASE)
 _REL_PRELOAD_ATTR_RE = re.compile(r"\brel=[\"']?preload\b", re.IGNORECASE)
 _AS_IMAGE_ATTR_RE = re.compile(r"\bas=[\"']?image\b", re.IGNORECASE)
+
+
 def _has_image_preload(html: str) -> bool:
     for m in _LINK_TAG_RE.finditer(html):
         tag = m.group(0)
         if _REL_PRELOAD_ATTR_RE.search(tag) and _AS_IMAGE_ATTR_RE.search(tag):
             return True
     return False
+
+
 def _align_existing_preload(html: str, target_src: str) -> tuple[str, int]:
     """Rewrite any existing ``<link rel=preload as=image>`` href to
     ``target_src``. Avoids the 'preloaded but not used' warning that
@@ -155,6 +174,8 @@ def _align_existing_preload(html: str, target_src: str) -> tuple[str, int]:
 
     out = _LINK_PRELOAD_IMAGE_RE.sub(patch, html)
     return out, n
+
+
 def inject_lcp_preload(html: str) -> tuple[str, int]:
     """Ensure the page has a ``<link rel="preload" as="image">``
     matching the URL the browser actually fetches for the LCP hero —
@@ -183,6 +204,8 @@ def inject_lcp_preload(html: str) -> tuple[str, int]:
     if new == html:
         return html, 0
     return new, 1
+
+
 _CDN_HOST = "https://cloudcdn.pro"
 _RASTER_EXT_RE = re.compile(r"\.(?:webp|png|jpg|jpeg)(?:[?#]|$)", re.IGNORECASE)
 _IMG_TAG_TRANSFORM_RE = re.compile(r"<img\b([^>]*)/?>", re.IGNORECASE)
@@ -200,6 +223,8 @@ _IMG_FETCHPRI_RE = re.compile(
 )
 _VARIANT_WIDTHS = (320, 640, 1200, 1920)
 _VARIANT_PREFIXES = ("/stocks/images/",)
+
+
 def _snap_to_variant(width: int) -> int:
     """Snap a requested width up to the next available pre-gen variant.
 
@@ -211,9 +236,11 @@ def _snap_to_variant(width: int) -> int:
         if width <= v:
             return v
     return _VARIANT_WIDTHS[-1]
-_VARIANT_SUFFIX_RE = re.compile(
-    r"^(.+)-(320|640|1200|1920)\.webp$"
-)
+
+
+_VARIANT_SUFFIX_RE = re.compile(r"^(.+)-(320|640|1200|1920)\.webp$")
+
+
 def _build_cdn_transform_url(path: str, width: int, quality: int) -> str:
     """Rewrite a CDN path to its pre-generated responsive variant.
 
@@ -249,16 +276,20 @@ def _build_cdn_transform_url(path: str, width: int, quality: int) -> str:
         # Fall back to the bare CDN URL.
         return f"{_CDN_HOST}{path}"
     # Already a variant? Pass through.
-    if _VARIANT_SUFFIX_RE.match(path[len("/stocks/images/"):]):
+    if _VARIANT_SUFFIX_RE.match(path[len("/stocks/images/") :]):
         return f"{_CDN_HOST}{path}"
     variant_w = _snap_to_variant(width)
     stem = path[: -len(".webp")]
     return f"{_CDN_HOST}{stem}-{variant_w}.webp"
+
+
 def _img_attr_src(attrs: str) -> str | None:
     m = _IMG_SRC_ANY_RE.search(attrs)
     if not m:
         return None
     return m.group(2) or m.group(3) or None
+
+
 def _img_attr_width(attrs: str) -> int | None:
     m = _IMG_WIDTH_ANY_RE.search(attrs)
     if not m:
@@ -268,12 +299,16 @@ def _img_attr_width(attrs: str) -> int | None:
         return int(raw)
     except (TypeError, ValueError):
         return None
+
+
 def _img_is_high_priority(attrs: str) -> bool:
     m = _IMG_FETCHPRI_RE.search(attrs)
     if not m:
         return False
     val = (m.group(1) or m.group(2) or "").lower()
     return val == "high"
+
+
 _LINK_PRELOAD_IMAGE_RE = re.compile(
     r"<link\b([^>]*?\brel=[\"']?preload[\"']?[^>]*?\bas=[\"']?image[\"']?[^>]*?|"
     r"[^>]*?\bas=[\"']?image[\"']?[^>]*?\brel=[\"']?preload[\"']?[^>]*?)>",
@@ -283,11 +318,15 @@ _LINK_HREF_ANY_RE = re.compile(
     r"""\bhref=(?:(["'])([^"']+)\1|([^\s>'"]+))""",
     re.IGNORECASE,
 )
+
+
 def _link_attr_href(attrs: str) -> str | None:
     m = _LINK_HREF_ANY_RE.search(attrs)
     if not m:
         return None
     return m.group(2) or m.group(3) or None
+
+
 def _wrap_cdn_path(path: str, base_w: int, quality: int) -> str | None:
     """Return the /api/transform URL for ``path``, or ``None`` if the
     asset isn't raster or is already wrapped or isn't on the CDN."""
@@ -297,6 +336,8 @@ def _wrap_cdn_path(path: str, base_w: int, quality: int) -> str | None:
         return None
     target_w = max(200, min(base_w * 2, 1600))
     return _build_cdn_transform_url(path, target_w, quality)
+
+
 def wrap_cdn_images_in_transform(html: str) -> tuple[str, int]:
     """Rewrite every raster ``<img src="https://cloudcdn.pro/...">`` and
     every ``<link rel="preload" as="image" href="https://cloudcdn.pro/...">``
@@ -360,6 +401,60 @@ def wrap_cdn_images_in_transform(html: str) -> tuple[str, int]:
     out = _IMG_TAG_TRANSFORM_RE.sub(patch_img, html)
     out = _LINK_PRELOAD_IMAGE_RE.sub(patch_preload, out)
     return out, n
+
+
+# Only large content/hero images get a responsive srcset. Avatars, social
+# icons, and logo rails (declared width < this) keep their single src so a
+# 36px avatar never pulls a 320w file. AVIF is intentionally NOT emitted —
+# the CDN has no .avif variants (probed 2026-07: /stocks/*.avif → 404); only
+# the four pre-generated WebP widths exist.
+_SRCSET_MIN_WIDTH = 800
+_STOCKS_PREFIX = "/stocks/images/"
+
+
+def _responsive_srcset(src: str) -> str | None:
+    """A WebP ``srcset`` over the four pre-generated widths for a
+    ``/stocks/images/`` source, or None if the path has no variants."""
+    prefix = _CDN_HOST + _STOCKS_PREFIX
+    if not src.startswith(prefix) or not src.endswith(".webp"):
+        return None
+    rel = src[len(prefix) :].split("?", 1)[0].split("#", 1)[0]
+    m = _VARIANT_SUFFIX_RE.match(rel)
+    # Strip an existing -<w> suffix so the stem is variant-free.
+    stem = prefix + (m.group(1) if m else rel[: -len(".webp")])
+    return ", ".join(f"{stem}-{w}.webp {w}w" for w in _VARIANT_WIDTHS)
+
+
+def add_responsive_srcset(html: str) -> tuple[str, int]:
+    """Add a WebP ``srcset`` (320/640/1200/1920) + ``sizes`` to large
+    ``/stocks/images/`` content images so mobile fetches a right-sized
+    banner instead of the full-width variant. ``sizes`` assumes full-column
+    width (never under-serves → never blurry). Runs after
+    ``wrap_cdn_images_in_transform`` so ``src`` is already a variant, and is
+    idempotent (skips tags that already carry a ``srcset``)."""
+    n = 0
+
+    def patch(match: re.Match[str]) -> str:
+        nonlocal n
+        attrs = match.group(1)
+        # Skip already-responsive tags and the LCP hero: the hero carries a
+        # width-matched <link rel=preload> and adding a plain srcset would let
+        # the browser pick a different variant, wasting the preload (LCP
+        # regression). Leave the tuned hero path untouched.
+        if "srcset=" in attrs.lower() or _img_is_high_priority(attrs):
+            return match.group(0)
+        src = _img_attr_src(attrs)
+        if not src or (_img_attr_width(attrs) or 0) < _SRCSET_MIN_WIDTH:
+            return match.group(0)
+        srcset = _responsive_srcset(src)
+        if not srcset:
+            return match.group(0)
+        n += 1
+        return f'<img{attrs} srcset="{srcset}" sizes="(max-width: 1100px) 100vw, 1100px">'
+
+    return _IMG_TAG_TRANSFORM_RE.sub(patch, html), n
+
+
 jsonld_re = re.compile(
     r'<script[^>]*type=["\']?application/ld\+json["\']?[^>]*>([\s\S]*?)</script\s*>',
     re.IGNORECASE,
@@ -380,6 +475,8 @@ content_attr_re = re.compile(
     r'(content=)(["\'])(.+?)(\2)',
     re.IGNORECASE | re.DOTALL,
 )
+
+
 def inject_jsonld_hashes(html: str) -> str:
     bodies = [m.group(1) for m in jsonld_re.finditer(html)]
     bodies.extend(m.group(1) for m in speculation_re.finditer(html))
@@ -408,7 +505,11 @@ def inject_jsonld_hashes(html: str) -> str:
         return content_attr_re.sub(patch_content, tag, count=1)
 
     return csp_tag_re.sub(patch_csp, html, count=1)
+
+
 _FP_ASSET_MAP: dict[str, str] = {}
+
+
 def _build_fp_pattern() -> re.Pattern[str] | None:
     if not _FP_ASSET_MAP:
         return None
@@ -418,7 +519,11 @@ def _build_fp_pattern() -> re.Pattern[str] | None:
         r'(<(?:script|link)\b[^>]*\b(?:src|href)=["\']?)(' + alternation + r')(["\']?[^>]*>)',
         re.IGNORECASE,
     )
+
+
 _FP_PATTERN = _build_fp_pattern()
+
+
 def stamp_asset_fingerprints(html: str) -> tuple[str, int]:
     """Rewrite bare ``/main.js`` / ``/highlight.css`` references in
     ``<script src>`` / ``<link href>`` tags to their fingerprinted

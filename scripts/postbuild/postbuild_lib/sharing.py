@@ -330,7 +330,7 @@ def _render_syndication_panel(
         target_id = f"syndicate-{key}"
         blocks.append(
             f'<div class="cite-format">'
-            f"<h3>{_esc(label_map[key])}</h3>"
+            f'<p class="cite-format-label">{_esc(label_map[key])}</p>'
             f'<pre id="{target_id}">{_esc(body)}</pre>'
             f'<button type="button" class="copy-btn" data-copy="#{target_id}" '
             f'aria-label="{_esc(label_map[key], quote=True)} — {copy_label}">'

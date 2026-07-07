@@ -22,11 +22,13 @@ state is regex constants only.
 
 from __future__ import annotations
 
+import html as _html
 import json as _json
 import re
 from pathlib import Path
 
 PUBLIC = Path("public")
+POSTS = Path("_posts")
 
 
 # ---------------------------------------------------------------------------
@@ -433,7 +435,7 @@ def _build_howto_jsonld(spec: dict) -> str:
         "step": steps_json,
     }
     return (
-        f'<script type="application/ld+json">{_json.dumps(payload, separators=(",",":"))}</script>'
+        f'<script type="application/ld+json">{_json.dumps(payload, separators=(",", ":"))}</script>'
     )
 
 
@@ -472,7 +474,10 @@ _IMG_SRC_RE = re.compile(r"""\bsrc=["']?([^"'\s>]+)""", re.IGNORECASE)
 _IMG_DIMS: dict[str, tuple[int, int]] = {
     "https://cloudcdn.pro/clients/common/images/elements/divider.svg": (40, 6),
     "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg": (160, 40),
-    "https://cloudcdn.pro/clients/static-site-generator/v1/banners/banner-static-site-generator.svg": (1200, 675),
+    "https://cloudcdn.pro/clients/static-site-generator/v1/banners/banner-static-site-generator.svg": (
+        1200,
+        675,
+    ),
     # Personal portrait — 162×162 native, used at small sizes everywhere.
     "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp": (162, 162),
 }
@@ -538,7 +543,7 @@ def stamp_image_dimensions(html: str) -> tuple[str, int]:  # noqa: C901 — per-
         if not extras:
             return m.group(0)
         n += 1
-        return f'<img{attrs} {" ".join(extras)}>'
+        return f"<img{attrs} {' '.join(extras)}>"
 
     return _IMG_TAG_RE.sub(patch, html), n
 
@@ -616,6 +621,360 @@ def inject_og_completeness(page: Path, html: str) -> str:
         return html
     block = "\n".join(additions) + "\n"
     return _HEAD_END_RE.sub(block + "</head>", html, count=1)
+
+
+# ---------------------------------------------------------------------------
+# 4e. Clean meta / og / twitter description
+# ---------------------------------------------------------------------------
+#
+# The SSG derives <meta name="description">, og:description and
+# twitter:description by scraping the rendered <body>, which leaves
+# double-escaped markup ("&amp;lt;div lang=&quot;en&quot; …") in the social
+# preview card — the string that renders when someone shares the URL. The
+# clean summary already exists on the page: the Article-family JSON-LD
+# `description` (authored from front matter). Reuse it. For the EN home page,
+# whose graph carries only the identity block (no description), fall back to
+# the _posts/index.md front-matter description; then to a sanitised scrape so
+# no page is ever left with corrupted markup in its description meta.
+
+_JSONLD_BLOCK_RE = re.compile(
+    r'<script[^>]*type="application/ld\+json"[^>]*>(.*?)</script>',
+    re.IGNORECASE | re.DOTALL,
+)
+_TAG_RE = re.compile(r"<[^>]+>")
+_WS_RE = re.compile(r"\s+")
+_FM_DESC_RE = re.compile(r'^description:\s*["\']?(.+?)["\']?\s*$', re.MULTILINE)
+_DESC_META_RE = re.compile(
+    r"<meta\b[^>]*\b(?:name|property)="
+    r'"(?:description|og:description|twitter:description)"[^>]*>',
+    re.IGNORECASE,
+)
+_CONTENT_ATTR_RE = re.compile(r'(content=")[^"]*(")', re.IGNORECASE)
+
+
+def _iter_jsonld_nodes(data: object) -> list[dict]:
+    """Flatten every dict node in a parsed JSON-LD payload (handles
+    ``@graph`` arrays and nested objects)."""
+    out: list[dict] = []
+    if isinstance(data, dict):
+        out.append(data)
+        for v in data.values():
+            out.extend(_iter_jsonld_nodes(v))
+    elif isinstance(data, list):
+        for item in data:
+            out.extend(_iter_jsonld_nodes(item))
+    return out
+
+
+# Markers of leaked markup — literal tags, single-escaped, and the
+# double-escaped form the SSG body-scrape produces (``&amp;lt;div``, whose
+# substring is NOT ``&lt;``). A legitimate ampersand (``R&amp;D``) is fine;
+# only the escaped tag-open/close/quote sequences signal corruption.
+_CORRUPT_MARKERS = ("<", "&lt;", "&gt;", "&amp;lt;", "&amp;gt;", "&amp;quot;")
+
+
+def _is_clean_desc(text: str) -> bool:
+    return bool(text) and len(text) >= 20 and not any(marker in text for marker in _CORRUPT_MARKERS)
+
+
+def _node_is_article(node: dict) -> bool:
+    t = node.get("@type", "")
+    types = t if isinstance(t, list) else [t]
+    return any("Article" in str(x) or "Posting" in str(x) for x in types)
+
+
+def _clean_descriptions(html_text: str) -> list[tuple[bool, str]]:
+    """Every clean JSON-LD description as ``(is_article_node, text)``."""
+    out: list[tuple[bool, str]] = []
+    for block in _JSONLD_BLOCK_RE.findall(html_text):
+        try:
+            data = _json.loads(block)
+        except ValueError:
+            continue
+        for node in _iter_jsonld_nodes(data):
+            desc = node.get("description")
+            if isinstance(desc, str) and _is_clean_desc(desc):
+                out.append((_node_is_article(node), desc))
+    return out
+
+
+def _desc_from_jsonld(html_text: str) -> str | None:
+    """Cleanest description from the page JSON-LD, preferring Article-family
+    nodes over the identity graph."""
+    generic: str | None = None
+    for is_article, desc in _clean_descriptions(html_text):
+        if is_article:
+            return desc
+        if generic is None:
+            generic = desc
+    return generic
+
+
+def _desc_from_source(page: Path) -> str | None:
+    """Front-matter description for the EN home page — the only page whose
+    JSON-LD carries no description."""
+    try:
+        rel = page.relative_to(PUBLIC).as_posix()
+    except ValueError:
+        return None
+    if rel != "index.html":
+        return None
+    src = POSTS / "index.md"
+    if not src.is_file():
+        return None
+    m = _FM_DESC_RE.search(src.read_text(encoding="utf-8")[:4000])
+    return m.group(1).strip() if m else None
+
+
+def _sanitised_scrape(html_text: str) -> str | None:
+    """Last resort: recover readable text from the corrupted meta by
+    unescaping until stable, stripping tags, and truncating."""
+    m = re.search(
+        r'<meta\b[^>]*\bname="description"[^>]*\bcontent="([^"]*)"',
+        html_text,
+        re.IGNORECASE,
+    )
+    if not m:
+        return None
+    text = m.group(1)
+    for _ in range(3):
+        nxt = _html.unescape(text)
+        if nxt == text:
+            break
+        text = nxt
+    text = _WS_RE.sub(" ", _TAG_RE.sub(" ", text)).strip()
+    if len(text) < 20:
+        return None
+    if len(text) > 157:
+        text = text[:157].rsplit(" ", 1)[0] + "…"
+    return text
+
+
+# ---------------------------------------------------------------------------
+# 4g. Single-source KPI numbers from metrics.json
+# ---------------------------------------------------------------------------
+#
+# The home / projects / about pages hard-coded their own KPI figures, which
+# drifted (37.1M vs 37.3M downloads; 663 vs 664 stars; 73/84/88 articles).
+# metrics.json is the fetched source of truth; fill any
+# `<span class="kpi-cell-value" data-kpi="KEY">` from it at build time so one
+# number appears everywhere.
+
+_METRICS_JSON = POSTS.parent / "_data" / "proof" / "metrics.json"
+_KPI_SPAN_RE = re.compile(
+    r'(<span[^>]*\bclass="kpi-cell-value"[^>]*\bdata-kpi="([a-z_]+)"[^>]*>)'
+    r"([^<]*)(</span>)",
+    re.IGNORECASE,
+)
+_kpi_cache: dict[str, str] | None = None
+
+
+def _format_metric(value: object, fmt: str) -> str:
+    if not isinstance(value, (int, float)):
+        return str(value)
+    if fmt == "compact":
+        if value >= 1_000_000:
+            return f"{value / 1_000_000:.1f}M"
+        if value >= 1_000:
+            return f"{value / 1_000:.1f}K"
+    return str(int(value))
+
+
+def _kpi_metrics() -> dict[str, str]:
+    global _kpi_cache
+    if _kpi_cache is not None:
+        return _kpi_cache
+    out: dict[str, str] = {}
+    try:
+        data = _json.loads(_METRICS_JSON.read_text(encoding="utf-8"))
+        for stat in data.get("stats", []):
+            key = stat.get("key")
+            if key:
+                out[key] = _format_metric(stat.get("value"), stat.get("format", "plain"))
+    except (OSError, ValueError):
+        out = {}
+    _kpi_cache = out
+    return out
+
+
+def inject_kpi_metrics(html_text: str) -> str:
+    """Fill every ``data-kpi``-tagged KPI cell from metrics.json. Pages
+    without such cells are untouched. Idempotent."""
+    metrics = _kpi_metrics()
+    if not metrics or 'data-kpi="' not in html_text:
+        return html_text
+
+    def _fill(m: re.Match[str]) -> str:
+        val = metrics.get(m.group(2))
+        return f"{m.group(1)}{val}{m.group(4)}" if val else m.group(0)
+
+    return _KPI_SPAN_RE.sub(_fill, html_text)
+
+
+_ARTICLE_TYPE_RE = re.compile(
+    r'"@type"\s*:\s*"(?:BlogPosting|NewsArticle|TechArticle|ScholarlyArticle|Article)"'
+)
+_OGTYPE_WEBSITE_RE = re.compile(
+    r'(<meta\b[^>]*\bproperty="og:type"[^>]*\bcontent=")website(")', re.IGNORECASE
+)
+
+
+_LDJSON_FULL_RE = re.compile(
+    r'<script\b[^>]*type=["\']?application/ld\+json["\']?[^>]*>[\s\S]+?</script>',
+    re.IGNORECASE,
+)
+_INLANG_VALUE_RE = re.compile(r'("inLanguage"\s*:\s*")([^"]*)(")')
+
+
+def align_jsonld_inlanguage(html_text: str) -> str:
+    """Align every JSON-LD ``inLanguage`` whose base language differs from the
+    page's ``<html lang>`` base.
+
+    The translation-time localiser walks each page's JSON-LD, but a handful of
+    content items (a non-dated whitepaper, some late-added articles) slip
+    through with the EN identity graph's ``inLanguage="en-GB"`` on their
+    WebSite / ProfilePage nodes while ``<html lang>`` is the locale — which
+    ``test_jsonld_localized`` flags. This postbuild belt-and-suspenders pass
+    runs on every page and only touches mismatched values, so correctly
+    localised pages (and all EN pages) are left byte-for-byte unchanged.
+    Idempotent."""
+    lm = _HTML_LANG_RE.search(html_text)
+    if not lm:
+        return html_text
+    page_lang = lm.group(1)
+    page_base = page_lang.split("-")[0].lower()
+
+    def _fix_value(mm: re.Match[str]) -> str:
+        if mm.group(2).split("-")[0].lower() == page_base:
+            return mm.group(0)
+        return f"{mm.group(1)}{page_lang}{mm.group(3)}"
+
+    def _fix_block(m: re.Match[str]) -> str:
+        return _INLANG_VALUE_RE.sub(_fix_value, m.group(0))
+
+    return _LDJSON_FULL_RE.sub(_fix_block, html_text)
+
+
+def fix_article_og_type(html_text: str) -> str:
+    """Dated posts carry an Article-family JSON-LD block but the SSG sets
+    ``og:type=website``. Promote it to ``article`` so social + news
+    crawlers classify the page correctly. Non-article pages are untouched.
+    Idempotent."""
+    if not _ARTICLE_TYPE_RE.search(html_text):
+        return html_text
+    return _OGTYPE_WEBSITE_RE.sub(r"\1article\2", html_text, count=1)
+
+
+def _current_meta_description(html_text: str) -> str | None:
+    m = re.search(
+        r'<meta\b[^>]*\bname="description"[^>]*\bcontent="([^"]*)"',
+        html_text,
+        re.IGNORECASE,
+    )
+    return m.group(1) if m else None
+
+
+_CONTENT_CAPTURE_RE = re.compile(r'content="([^"]*)"', re.IGNORECASE)
+
+
+def _tag_is_corrupt(tag: str) -> bool:
+    cm = _CONTENT_CAPTURE_RE.search(tag)
+    return cm is not None and any(mk in cm.group(1) for mk in _CORRUPT_MARKERS)
+
+
+def clean_meta_description(page: Path, html_text: str) -> str:
+    """Rewrite only the corrupted ``description`` / ``og:description`` /
+    ``twitter:description`` tags with one clean, attribute-escaped summary.
+
+    Source of truth, in order: the page's own clean ``<meta name=description>``
+    (so a topic/category page keeps its real description rather than the
+    generic identity-graph one), else the Article-family JSON-LD description,
+    else the front-matter description (home page), else a sanitised scrape.
+    Each tag is checked independently — clean tags (including generator-set
+    ones) are left byte-for-byte unchanged, and any single corrupted tag
+    (e.g. only ``twitter:description``) is repaired. Idempotent."""
+    current = _current_meta_description(html_text)
+    raw: str | None
+    if current is not None and _is_clean_desc(current):
+        raw = current
+    else:
+        raw = (
+            _desc_from_jsonld(html_text) or _desc_from_source(page) or _sanitised_scrape(html_text)
+        )
+    if not raw:
+        return html_text
+    esc = _html.escape(_html.unescape(raw), quote=True)
+
+    def _fix_tag(m: re.Match[str]) -> str:
+        tag = m.group(0)
+        if not _tag_is_corrupt(tag):
+            return tag
+        return _CONTENT_ATTR_RE.sub(lambda mm: f"{mm.group(1)}{esc}{mm.group(2)}", tag, count=1)
+
+    return _DESC_META_RE.sub(_fix_tag, html_text)
+
+
+# ---------------------------------------------------------------------------
+# 4f. Canonical / og:url consistency
+# ---------------------------------------------------------------------------
+#
+# The same page shipped three different URL forms: <link rel="canonical">
+# = ".../slug/index.html", og:url = ".../slug" (no slash), and the sitemap
+# <loc> = ".../slug/" (trailing slash). Search engines treat all three as
+# canonicalisation signals, so the disagreement is a real defect. Collapse
+# canonical + og:url onto the pretty trailing-slash form the sitemap already
+# uses. A stray self-referencing hreflang alternate (bare domain, no slash)
+# on the home page is normalised to the same form so the duplicate resolves.
+
+_CANONICAL_LINK_RE = re.compile(r'<link\b[^>]*\brel=["\']?canonical["\']?[^>]*>', re.IGNORECASE)
+_OGURL_META_RE = re.compile(r'<meta\b[^>]*\bproperty=["\']?og:url["\']?[^>]*>', re.IGNORECASE)
+_HREF_ATTR_RE = re.compile(r'(href=")[^"]*(")', re.IGNORECASE)
+_SELF_ALTERNATE_RE = re.compile(
+    r'<link\b(?=[^>]*\brel=["\']?alternate["\']?)(?=[^>]*\bhreflang=)'
+    rf'[^>]*\bhref=["\']?{re.escape(BASE_URL)}["\'\s>][^>]*>',
+    re.IGNORECASE,
+)
+
+
+def _pretty_canonical_url(page: Path) -> str:
+    """Trailing-slash canonical form matching the sitemap: home → ``/``,
+    ``about/index.html`` → ``/about/``, ``slug/index.html`` → ``/slug/``."""
+    rel = page.relative_to(PUBLIC)
+    if rel.name != "index.html":
+        return f"{BASE_URL}/{rel.as_posix()}"
+    parent = rel.parent.as_posix()
+    return f"{BASE_URL}/" if parent in ("", ".") else f"{BASE_URL}/{parent}/"
+
+
+def normalize_canonical(page: Path, html_text: str) -> str:
+    """Force <link rel=canonical> and og:url onto one trailing-slash form,
+    and normalise a stray bare-domain self-alternate on the home page.
+    Idempotent."""
+    url = _pretty_canonical_url(page)
+
+    def _set_href(m: re.Match[str]) -> str:
+        return _HREF_ATTR_RE.sub(lambda mm: f"{mm.group(1)}{url}{mm.group(2)}", m.group(0), count=1)
+
+    def _set_content(m: re.Match[str]) -> str:
+        return _CONTENT_ATTR_RE.sub(
+            lambda mm: f"{mm.group(1)}{url}{mm.group(2)}", m.group(0), count=1
+        )
+
+    out = _CANONICAL_LINK_RE.sub(_set_href, html_text, count=1)
+    out = _OGURL_META_RE.sub(_set_content, out, count=1)
+    # Repair the home-page self-alternate whose href is the bare domain
+    # (no trailing slash) so it collapses onto the injected en alternate.
+    if _pretty_canonical_url(page) == f"{BASE_URL}/":
+        out = _SELF_ALTERNATE_RE.sub(
+            lambda m: (
+                m.group(0)
+                .replace(f'href="{BASE_URL}"', f'href="{BASE_URL}/"')
+                .replace(f"href={BASE_URL}>", f'href="{BASE_URL}/">')
+                .replace(f"href={BASE_URL} ", f'href="{BASE_URL}/" ')
+            ),
+            out,
+        )
+    return out
 
 
 # ---------------------------------------------------------------------------

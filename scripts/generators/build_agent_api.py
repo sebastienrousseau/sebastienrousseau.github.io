@@ -183,7 +183,7 @@ def build_person() -> dict[str, object]:
         "familyName": "Rousseau",
         "url": BASE + "/",
         "image": "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp",
-        "jobTitle": "Senior Product Manager",
+        "jobTitle": "Senior Product Manager, Wholesale Payments & API",
         "description": (
             "AI, banking and financial services expert. Senior payments leader "
             "with 20+ years across Tier-1 banks. Applied AI, wholesale payments, "

@@ -1,5 +1,5 @@
 {
-  "$generated_at": "2026-06-30T07:25:17+00:00",
+  "$generated_at": "2026-07-07T09:04:43+00:00",
   "stats": [
     {
       "key": "years_payments",
@@ -11,21 +11,21 @@
     {
       "key": "articles_signed",
       "label": "Signed, dated articles published",
-      "value": 88,
+      "value": 91,
       "format": "plain",
       "source": "_posts/ — every article Sigstore-signed"
     },
     {
       "key": "downloads_total",
       "label": "Open-source package downloads (PyPI + crates.io)",
-      "value": 37316388,
+      "value": 38134329,
       "format": "compact",
       "source": "pypistats.org + crates.io"
     },
     {
       "key": "github_stars",
       "label": "GitHub stars across owned repositories",
-      "value": 664,
+      "value": 669,
       "format": "compact",
       "source": "api.github.com/users/sebastienrousseau/repos"
     },

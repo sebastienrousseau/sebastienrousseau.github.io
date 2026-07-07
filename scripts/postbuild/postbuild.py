@@ -26,6 +26,7 @@ sys.path.insert(0, str(Path(__file__).parent))
 
 PUBLIC = Path("public")
 from postbuild_assets import (
+    add_responsive_srcset,
     fix_sri,
     inject_jsonld_hashes,
     inject_lcp_preload,
@@ -260,13 +261,18 @@ from postbuild_lib.schemas import (
 )
 from postbuild_lib.seo import (  # noqa: F401 — re-exports for back-compat
     _keywords_re,
+    align_jsonld_inlanguage,
     build_about_graph,
+    clean_meta_description,
     compute_word_count,
+    fix_article_og_type,
     fix_social_image,
     inject_about,
     inject_howto,
+    inject_kpi_metrics,
     inject_og_completeness,
     inject_word_count,
+    normalize_canonical,
     stamp_image_dimensions,
 )
 from postbuild_lib.sharing import (
@@ -300,6 +306,7 @@ class _PostbuildCounters:
         "crumbs_patched",
         "csp_patched",
         "decks_set",
+        "desc_cleaned",
         "eyebrows_set",
         "footnotes_set",
         "furniture_patched",
@@ -325,6 +332,7 @@ class _PostbuildCounters:
         "social_patched",
         "softwaresourcecode_patched",
         "sources_patched",
+        "srcset_added",
         "sri_patched",
         "syndicate_panels_set",
         "tables_carded",
@@ -391,6 +399,16 @@ def _apply_seo_passes(html: str, page: Path, ctr: _PostbuildCounters) -> str:
     out = inject_og_completeness(page, out)
     if out != prev:
         ctr.og_patched += 1
+    prev = out
+    out = clean_meta_description(page, out)
+    if out != prev:
+        ctr.desc_cleaned += 1
+    out = fix_article_og_type(out)
+    out = inject_kpi_metrics(out)
+    # Belt-and-suspenders: align JSON-LD inLanguage to <html lang> for the
+    # few content items the translation-time localiser misses (runs before
+    # inject_jsonld_hashes so the CSP hash covers the aligned bytes).
+    out = align_jsonld_inlanguage(out)
     out, n_dim = stamp_image_dimensions(out)
     ctr.img_dims_patched += n_dim
     # Wrap CDN images in /api/transform AFTER stamp_image_dimensions so
@@ -590,6 +608,11 @@ def _process_page(page: Path, ctx: _PostbuildContext) -> None:
     # "starts with /api/" guard in _wrap_cdn_path).
     patched_hl, n_cdn_late = wrap_cdn_images_in_transform(patched_hl)
     ctx.counters.cdn_wrapped += n_cdn_late
+    # Responsive WebP srcset on large /stocks/images/ content images (after
+    # the wrap, so src is already a width-matched variant). WebP-only — the
+    # CDN has no AVIF variants.
+    patched_hl, n_srcset = add_responsive_srcset(patched_hl)
+    ctx.counters.srcset_added += n_srcset
     # Strip redundant title="..." on links where it duplicates the inner
     # text. WAVE flags these as a "redundant alternative text" alert.
     # Run AFTER every furniture / inject pass so author-card + citation
@@ -601,6 +624,10 @@ def _process_page(page: Path, ctx: _PostbuildContext) -> None:
     patched_hl = update_last_modified_date(patched_hl, page, ctx)
     if patched_hl != prev_meta:
         ctx.counters.lastmod_meta_patched += 1
+    # Collapse canonical + og:url onto one trailing-slash form (matches the
+    # sitemap). Runs after hreflang + furniture so it overrides any earlier
+    # writer. Idempotent.
+    patched_hl = normalize_canonical(page, patched_hl)
     patched2 = inject_jsonld_hashes(patched_hl)
     if patched2 != prev_hl:
         ctx.counters.csp_patched += 1
@@ -749,8 +776,7 @@ def main() -> None:
     if failures:
         for page, exc in failures:
             print(
-                f"postbuild: FAILED {page.relative_to(PUBLIC)}: "
-                f"{type(exc).__name__}: {exc}",
+                f"postbuild: FAILED {page.relative_to(PUBLIC)}: {type(exc).__name__}: {exc}",
                 file=sys.stderr,
             )
         raise SystemExit(1)
