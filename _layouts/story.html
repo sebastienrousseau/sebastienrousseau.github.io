@@ -324,7 +324,7 @@
       details.cite-popover .cite-meta .cite-title strong{font-weight:600}
       details.cite-popover .cite-meta p{font-family:var(--type-body);font-size:.9375rem;line-height:1.5;color:var(--ink-soft);margin:0 0 12px;max-width:none}
       details.cite-popover .cite-format{padding:0 18px 14px;border-top:1px solid var(--rule)}
-      details.cite-popover .cite-format h3{font-family:var(--type-body);font-size:.6875rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-mute);margin:14px 0 8px}
+      details.cite-popover .cite-format .cite-format-label{font-family:var(--type-body);font-size:.6875rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-mute);margin:14px 0 8px}
       details.cite-popover pre{margin:0;padding:12px;background:var(--bg);border:1px solid var(--rule);font-family:var(--type-mono);font-size:.8125rem;line-height:1.5;color:var(--ink);overflow-x:auto;white-space:pre-wrap;word-break:break-word}
       /* Reuse / republish panel — CC-BY-4.0 by default, frontmatter
          "license:" overrides. WS5 wires the clipboard copy button. */
@@ -480,6 +480,23 @@
       section.tag-landing-list[data-filter-year="2018"] article:not([data-year="2018"]){display:none}
       .listing-empty{display:none;font-family:var(--type-body);color:var(--ink-mute);text-align:center;padding:32px;border:1px dashed var(--rule)}
       section.tag-landing-list[data-empty="1"] + .listing-empty{display:block}
+      /* "Read as…" audience path selector (Phase 8). A cookie-free lens
+         over the existing homepage sections — boards / engineers /
+         regulators re-orders the sections so the most relevant lead.
+         Ships [hidden] in static HTML so JS-off readers get the full
+         homepage in document order; main.js reveals + wires it. Styled
+         with the same pill vocabulary as .listing-filters / .related-tag
+         so it reads as native chrome. All colours are AAA-safe
+         --ink-deep / --paper pairs in both themes. No content is ever
+         removed — this is a lens, not a filter. */
+      .read-as{max-width:var(--max-wide);margin:0 auto;padding:24px var(--pad-x) 0}
+      .read-as-inner{display:flex;flex-wrap:wrap;align-items:center;gap:12px 16px}
+      .read-as-label{font-family:var(--type-body);font-size:.6875rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-mute)}
+      .read-as-group{display:flex;flex-wrap:wrap;gap:8px}
+      .read-as-btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:10px 18px;border:1px solid var(--rule);background:var(--paper);color:var(--ink-deep);border-radius:999px;font-family:var(--type-body);font-size:.8125rem;font-weight:700;letter-spacing:.04em;cursor:pointer;transition:border-color .2s ease,background .2s ease,color .2s ease}
+      .read-as-btn:hover{border-color:var(--ink-deep)}
+      .read-as-btn:focus-visible{outline:2px solid var(--ink-deep);outline-offset:2px}
+      .read-as-btn[aria-pressed="true"]{background:var(--ink-deep);color:var(--paper);border-color:var(--ink-deep)}
       /* ---------- Case-study composition — AKQA-tier staged editorial.
          Used by /case-studies/ hub and /case-studies/<slug>/ per-study
          pages and every /<lang>/<localised>/ locale fork. Self-contained

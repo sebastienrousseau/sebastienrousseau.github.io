@@ -201,7 +201,7 @@ PAGE_HERO_MAIN = """    <section class="ap-hero">
       <p class="sub">{{subtitle}}</p>
     </section>
 
-    <main id="main" class="content ap-section" aria-label="main">
+    <main id="main" class="content ap-section">
       <div class="wrap">{{content}}</div>
     </main>
 
@@ -224,7 +224,7 @@ PROJECT_HERO_MAIN = """    <section class="ap-hero">
       <p class="ap-hero-cta"><a class="pill" href="/contact/index.html">Talk to us</a> <a class="pill ghost" href="#catalog">Browse all products</a></p>
     </section>
 
-    <main id="main" class="content ap-section" aria-label="main">
+    <main id="main" class="content ap-section">
       <div class="wrap">{{content}}</div>
     </main>
 
@@ -246,7 +246,7 @@ STORY_HERO_MAIN = """    <section class="story-hero">
       </div>
     </section>
 
-    <main id="main" class="content ap-section" aria-label="main">
+    <main id="main" class="content ap-section">
       <div class="wrap">{{content}}</div>
     </main>
 
@@ -270,7 +270,7 @@ def contact_layout() -> str:
       <div class="kpi-cell"><span class="kpi-cell-value">Tier-1</span><span class="kpi-cell-label">Banking · payments · post-quantum</span></div>
     </section>
 
-    <main id="main" class="content ap-section" aria-label="main">
+    <main id="main" class="content ap-section">
       <div class="wrap contact-wrap">
         <div class="contact-layout" data-reveal>
           <div class="contact-form-col">
@@ -376,8 +376,8 @@ def report_layout() -> str:
       <p class="sub">{{subtitle}}</p>
     </section>
 
-    <main id="main" class="content ap-section" aria-label="main">
-      <div class="wrap report-wrap">{{content}}</div>
+    <main id="main" class="content ap-section">
+      <div class="wrap report-wrap"><article class="report-article">{{content}}</article></div>
     </main>
 
 """
@@ -585,7 +585,7 @@ def playlist_layout() -> str:
       <p class="sub">{{{{subtitle}}}}</p>
     </section>
 
-    <main id="main" class="content ap-section" aria-label="main">
+    <main id="main" class="content ap-section">
       <div class="wrap" style="max-width:var(--max-wide)">
         <div class="playlist-intro" data-reveal>{{{{content}}}}</div>
         <nav class="playlist-chips" aria-label="Jump to a lane">{chip_html}</nav>
