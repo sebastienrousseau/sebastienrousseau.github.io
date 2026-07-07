@@ -2,8 +2,13 @@
 
 **Site:** sebastienrousseau.com
 **Author of record:** Sebastien Rousseau
-**Status:** Draft for review
+**Status:** Implemented — build green (BUILD_SH_EXIT=0)
 **Created:** 2026-07-07
+
+> **Delivery status (2026-07-07).**
+> **Shipped & gate-green:** P0 description corruption (+`test_meta_description_clean`); canonical/og:url consistency (+`test_canonical_consistency`); `og:type=article` + Organization publisher; JSON-LD `inLanguage` alignment; KPI single-source from `metrics.json`; `/speaking/` + `/trust/` pages (nav + footer linked); pain001/KyberLib outcome copy + case-study links; article heading-order fix; nav-toggle `aria-expanded`; redundant `<main>`/`<select>` labels removed; `<article>` landmark on posts; INP off→warn. Also removed two orphaned duplicate FR translations (root cause of a `test_lang_no_leakage` failure) and dropped the EN-only whitepaper's spurious ssg-0.0.46 locale forks.
+> **Deferred (rationale in §2/§3):** critical-CSS inline, AVIF/`srcset` (blocked on which CDN variants exist externally — doing it blind risks live 404s), and a gzip Lighthouse-CI server — all low-ROI/risky on a site already at real-world 0.97. Banner `<figcaption>` and form `<fieldset>/<legend>` — low value on a page already at a11y 1.00.
+> **Needs your decision:** §1E job title — schema `jobTitle` is uniform ("Senior Product Manager"); left unchanged (an identity claim, not to be fabricated).
 **Scope:** Close the delta between the current site (already ~80% of an "institutional-grade" brief) and a state that (a) reads to banking CFOs/COOs/CTOs, not only engineers, and (b) holds a defensible 100/100 Lighthouse + WCAG 2.2 AA + Google-News posture. Companion to `improvement-plan-2026.md` (platform 10/10) and `web-performance-seo-spec.md` (the perf/SEO code guide).
 
 > **Framing.** A generic "2026 institutional blueprint" was the input. Most of it is **already built here** — case studies with regulatory framing (DORA, SR 11-7, FCA/PRA), a Boards/Engineers/Regulators audience lens, `ProfilePage`+`Person`+`Organization`+`NewsArticle` schema, a `news:news` sitemap on the 48 h freshness rule, CSP-strict + SRI + SBOM + SLSA + Scorecard, real-world Lighthouse **0.97** (FCP 0.6 s, LCP 1.2 s, TBT 0, CLS 0). This plan therefore does **not** rebuild any of that. It fixes a short list of **real, verified defects** and wires up **data that already exists but isn't rendered**.
