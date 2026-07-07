@@ -978,16 +978,12 @@ function fallbackCopy(text, done) {
     "use strict";
     var toggle = document.getElementById("ap-menu-toggle");
     if (!toggle) return;
-    var nav = document.querySelector(
-        '.ap-nav nav[aria-label="Primary navigation"]'
-    );
-    if (nav) {
-        if (!nav.id) nav.id = "ap-primary-nav";
-        toggle.setAttribute("aria-controls", nav.id);
-    }
-    function sync() {
+    var nav = document.querySelector('.ap-nav nav[aria-label="Primary navigation"]');
+    if (nav && !nav.id) nav.id = "ap-primary-nav";
+    if (nav) toggle.setAttribute("aria-controls", nav.id);
+    var sync = function () {
         toggle.setAttribute("aria-expanded", toggle.checked ? "true" : "false");
-    }
+    };
     sync();
     toggle.addEventListener("change", sync);
 })();
