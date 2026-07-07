@@ -276,6 +276,8 @@ def contact_layout() -> str:
           <div class="contact-form-col">
             <p class="lede">{{content}}</p>
             <form class="ap-form" action="https://formspree.io/f/{{form-id}}" method="POST">
+              <fieldset>
+              <legend class="visually-hidden">Send a message</legend>
               <div class="ap-form-row">
                 <label for="sender">Name</label>
                 <input type="text" id="sender" name="name" autocomplete="name" required />
@@ -286,7 +288,7 @@ def contact_layout() -> str:
               </div>
               <div class="ap-form-row">
                 <label for="subject">Subject</label>
-                <select id="subject" name="subject" required aria-label="Select a subject">
+                <select id="subject" name="subject" required>
                   <option value="">Choose a subject</option>
                   <option value="business">Consulting / advisory engagement</option>
                   <option value="press">Press, podcast or speaking</option>
@@ -308,6 +310,7 @@ def contact_layout() -> str:
               <div class="ap-form-row ap-form-actions">
                 <button type="submit" class="pill no-chev">Send message</button>
               </div>
+              </fieldset>
             </form>
           </div>
           <aside class="contact-aside" aria-label="Other ways to reach Sebastien">
@@ -340,6 +343,7 @@ def contact_layout() -> str:
       @media (min-width:64em){.contact-layout{grid-template-columns:minmax(0,1fr) 320px;gap:64px;align-items:start}}
       .contact-form-col{min-width:0;max-width:680px}
       .ap-form{display:flex;flex-direction:column;gap:20px}
+      .ap-form fieldset{border:0;margin:0;padding:0;min-inline-size:0;display:flex;flex-direction:column;gap:20px}
       .ap-form-row{display:flex;flex-direction:column;gap:6px}
       .ap-form-row label{font-size:13px;font-weight:600;color:var(--ink);letter-spacing:-.005em}
       .ap-form input[type=text],.ap-form input[type=email],.ap-form select,.ap-form textarea{
