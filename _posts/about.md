@@ -102,15 +102,15 @@ site_software: "Static Site Generator, Rust"
 
 <section class="proof-rail" aria-label="Track record at a glance" data-reveal>
   <div class="kpi-cell">
-    <span class="kpi-cell-value">20</span>
+    <span class="kpi-cell-value" data-kpi="years_payments">20</span>
     <span class="kpi-cell-label">Years in payments and banking tech</span>
   </div>
   <div class="kpi-cell">
-    <span class="kpi-cell-value">73</span>
+    <span class="kpi-cell-value" data-kpi="articles_signed">73</span>
     <span class="kpi-cell-label">Sigstore-signed research articles</span>
   </div>
   <div class="kpi-cell">
-    <span class="kpi-cell-value">37M</span>
+    <span class="kpi-cell-value" data-kpi="downloads_total">37M</span>
     <span class="kpi-cell-label">Open-source downloads (PyPI · crates.io)</span>
   </div>
   <div class="kpi-cell">

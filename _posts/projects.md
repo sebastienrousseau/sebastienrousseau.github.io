@@ -102,19 +102,19 @@ site_software: "Static Site Generator, Rust"
 
 <section class="proof-rail projects-proof" aria-label="Open source by the numbers">
 <div class="kpi-cell">
-  <span class="kpi-cell-value">37.3M</span>
+  <span class="kpi-cell-value" data-kpi="downloads_total">37.3M</span>
   <span class="kpi-cell-label">Open-source downloads</span>
 </div>
 <div class="kpi-cell">
-  <span class="kpi-cell-value">664</span>
+  <span class="kpi-cell-value" data-kpi="github_stars">664</span>
   <span class="kpi-cell-label">GitHub stars</span>
 </div>
 <div class="kpi-cell">
-  <span class="kpi-cell-value">88</span>
+  <span class="kpi-cell-value" data-kpi="articles_signed">88</span>
   <span class="kpi-cell-label">Sigstore-signed articles</span>
 </div>
 <div class="kpi-cell">
-  <span class="kpi-cell-value">19</span>
+  <span class="kpi-cell-value" data-kpi="years_payments">19</span>
   <span class="kpi-cell-label">Years shipping in production</span>
 </div>
 </section>
@@ -165,8 +165,8 @@ site_software: "Static Site Generator, Rust"
 </a>
 <div class="newsroom-card-body">
 <h3><a href="https://pain001.com" title="pain001">pain001</a></h3>
-<p class="newsroom-excerpt">Generates ISO 20022 pain.001 files from CSV or SQLite. Banks and payment providers use it to produce structured credit-transfer messages without rebuilding existing systems.</p>
-<p class="newsroom-more"><a href="https://pain001.com" title="pain001">Learn more <span aria-hidden="true">›</span></a></p>
+<p class="newsroom-excerpt">Generates ISO 20022 pain.001 files from CSV or SQLite. Every message is XSD-validated and IBAN/BIC-checksummed pre-flight, so malformed payments are caught before they reach the clearing network — no proprietary translator between your ERP and the rails.</p>
+<p class="newsroom-more"><a href="https://pain001.com" title="pain001">Learn more <span aria-hidden="true">›</span></a> · <a href="/case-studies/pain001/index.html">Read the case study <span aria-hidden="true">›</span></a></p>
 </div>
 </article>
 
@@ -248,8 +248,8 @@ site_software: "Static Site Generator, Rust"
 </a>
 <div class="newsroom-card-body">
 <h3><a href="https://kyberlib.com/" title="KyberLib">KyberLib</a></h3>
-<p class="newsroom-excerpt">A Rust implementation of CRYSTALS-Kyber, the NIST FIPS 203 standard for post-quantum key encapsulation.</p>
-<p class="newsroom-more"><a href="https://kyberlib.com/" title="KyberLib">Learn more <span aria-hidden="true">›</span></a></p>
+<p class="newsroom-excerpt">A Rust implementation of CRYSTALS-Kyber, the NIST FIPS 203 standard for post-quantum key encapsulation — a migration you can pilot against harvest-now-decrypt-later per service, instead of a core rebuild.</p>
+<p class="newsroom-more"><a href="https://kyberlib.com/" title="KyberLib">Learn more <span aria-hidden="true">›</span></a> · <a href="/case-studies/kyberlib/index.html">Read the case study <span aria-hidden="true">›</span></a></p>
 </div>
 </article>
 

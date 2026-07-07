@@ -965,3 +965,29 @@ function fallbackCopy(text, done) {
     // so the default homepage doesn't fire a spurious live-region update.
     apply(initial, { persist: false, speak: sanitize(initial) !== "" });
 })();
+
+// ---------------------------------------------------------------------------
+// Mobile nav toggle — expose disclosure state to assistive technology.
+// The menu itself is a CSS `:has(.ap-toggle:checked)` disclosure that works
+// with JavaScript disabled; this pass only mirrors the checkbox state into
+// `aria-expanded` (valid on role=checkbox per WAI-ARIA 1.2) and wires
+// `aria-controls`, so screen readers announce expanded / collapsed without
+// changing the no-JS behaviour.
+// ---------------------------------------------------------------------------
+(function () {
+    "use strict";
+    var toggle = document.getElementById("ap-menu-toggle");
+    if (!toggle) return;
+    var nav = document.querySelector(
+        '.ap-nav nav[aria-label="Primary navigation"]'
+    );
+    if (nav) {
+        if (!nav.id) nav.id = "ap-primary-nav";
+        toggle.setAttribute("aria-controls", nav.id);
+    }
+    function sync() {
+        toggle.setAttribute("aria-expanded", toggle.checked ? "true" : "false");
+    }
+    sync();
+    toggle.addEventListener("change", sync);
+})();

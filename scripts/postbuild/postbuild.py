@@ -260,13 +260,18 @@ from postbuild_lib.schemas import (
 )
 from postbuild_lib.seo import (  # noqa: F401 — re-exports for back-compat
     _keywords_re,
+    align_jsonld_inlanguage,
     build_about_graph,
+    clean_meta_description,
     compute_word_count,
+    fix_article_og_type,
     fix_social_image,
     inject_about,
     inject_howto,
+    inject_kpi_metrics,
     inject_og_completeness,
     inject_word_count,
+    normalize_canonical,
     stamp_image_dimensions,
 )
 from postbuild_lib.sharing import (
@@ -300,6 +305,7 @@ class _PostbuildCounters:
         "crumbs_patched",
         "csp_patched",
         "decks_set",
+        "desc_cleaned",
         "eyebrows_set",
         "footnotes_set",
         "furniture_patched",
@@ -391,6 +397,16 @@ def _apply_seo_passes(html: str, page: Path, ctr: _PostbuildCounters) -> str:
     out = inject_og_completeness(page, out)
     if out != prev:
         ctr.og_patched += 1
+    prev = out
+    out = clean_meta_description(page, out)
+    if out != prev:
+        ctr.desc_cleaned += 1
+    out = fix_article_og_type(out)
+    out = inject_kpi_metrics(out)
+    # Belt-and-suspenders: align JSON-LD inLanguage to <html lang> for the
+    # few content items the translation-time localiser misses (runs before
+    # inject_jsonld_hashes so the CSP hash covers the aligned bytes).
+    out = align_jsonld_inlanguage(out)
     out, n_dim = stamp_image_dimensions(out)
     ctr.img_dims_patched += n_dim
     # Wrap CDN images in /api/transform AFTER stamp_image_dimensions so
@@ -601,6 +617,10 @@ def _process_page(page: Path, ctx: _PostbuildContext) -> None:
     patched_hl = update_last_modified_date(patched_hl, page, ctx)
     if patched_hl != prev_meta:
         ctx.counters.lastmod_meta_patched += 1
+    # Collapse canonical + og:url onto one trailing-slash form (matches the
+    # sitemap). Runs after hreflang + furniture so it overrides any earlier
+    # writer. Idempotent.
+    patched_hl = normalize_canonical(page, patched_hl)
     patched2 = inject_jsonld_hashes(patched_hl)
     if patched2 != prev_hl:
         ctx.counters.csp_patched += 1

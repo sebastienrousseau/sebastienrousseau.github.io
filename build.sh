@@ -222,6 +222,17 @@ python3 scripts/generators/build_listings.py
 # rich link card when readers paste-share a sebastienrousseau.com URL.
 python3 scripts/generators/build_oembed.py
 python3 scripts/generators/build_translations/__main__.py
+# Remove spurious locale forks of EN-only landing pages. The
+# `2026-banking-architecture-whitepaper` post declares `hreflang: "en"` and
+# has no locale translation sources, but ssg 0.0.46 over-emits locale copies
+# whose chrome the (non-dated-aware) Python localiser correctly skips —
+# leaving unlocalised English chrome that trips test_lang_no_leakage /
+# test_jsonld_localized. These forks are artifacts, not content; drop them so
+# the page stays EN-only as its front matter declares. See
+# project-docs/operations/ci-flake-triage.md §4.
+for _wp in public/*/2026-banking-architecture-whitepaper; do
+  [ -d "$_wp" ] && [ "$_wp" != "public/2026-banking-architecture-whitepaper" ] && rm -rf "$_wp"
+done
 # Per-locale search UI microcopy (search-ui.json) for the client-side search
 # runtime — projected from _data/i18n/<lang>/strings.json (ADR-0010). Runs after
 # build_translations so every public/<lang>/ directory exists.
@@ -230,6 +241,13 @@ python3 scripts/generators/build_lang_feeds.py
 python3 scripts/generators/build_agent_api.py
 python3 scripts/generators/build_lead_magnets.py
 python3 scripts/generators/build_news_sitemap.py
+# Authority hub pages — /speaking/ (speaking kit) and /trust/ (provenance,
+# licensing, governance, recognition). Both reuse the /articles/ shell and,
+# like build_changelog, run AFTER build_translations so they land only on the
+# English tree, and BEFORE postbuild so the sitemap-augment pass adds them and
+# their inline JSON-LD is CSP-hashed.
+python3 scripts/generators/build_speaking.py
+python3 scripts/generators/build_trust.py
 # Changelog + "what's new" strip + build/deploy/uptime status (Phase 5).
 # Runs AFTER build_translations so the homepage strip only lands on the
 # English public/index.html (locale homepages are forked earlier and must
@@ -281,6 +299,8 @@ python3 tests/validation/test_lang_no_leakage.py
 python3 tests/validation/test_rtl_safe.py --strict
 python3 tests/validation/test_csp_strict.py
 python3 tests/validation/test_sri_integrity.py
+python3 tests/validation/test_meta_description_clean.py
+python3 tests/validation/test_canonical_consistency.py
 # Cloudflare Worker (edge Accept-Language router + security headers) —
 # pure-logic tests, no Cloudflare runtime required. 100% line/branch/
 # function coverage is enforced via Node's built-in test coverage so the
