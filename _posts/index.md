@@ -205,6 +205,43 @@ site_software: "Static Site Generator, Rust"
 
 <div class="newsroom-grid feat-latest-grid">
 
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-07-08-global-corporate-standard-iso-20022-swift-2026/index.html" title="From Messages to Map: Building a Global Corporate Standard on ISO 20022 and Swift">
+<img alt="Interlinked glowing blocks forming a chain across a dark field — harmonised ISO 20022 messages resolving into a connected network, evoking the missing global map that turns structured payment data into a usable corporate standard" src="https://cloudcdn.pro/stocks/images/block-chain-3055701.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">ISO 20022 · SWIFT · CBPR+</span>
+<h3><a href="/2026-07-08-global-corporate-standard-iso-20022-swift-2026/index.html">From Messages to Map: Building a Global Corporate Standard on ISO 20022 and Swift</a></h3>
+<p class="newsroom-meta"><time datetime="2026-07-08">July 8, 2026</time></p>
+<p class="newsroom-tldr"><span class="newsroom-tldr-label">TL;DR</span> ISO 20022 and Swift's CBPR+ gave cross-border payments a harmonised global language — but not a global map for how corporates use it. How to extend harmonisation from what a payment says to how a corporate uses it, on the rails that already exist.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-07-03-emerging-technology-risk-horizon-banks-2026/index.html" title="Reading the Emerging-Technology Risk Horizon for Banks in 2026">
+<img alt="Abstract horizon of converging signal lines — AI, synthetic media, and programmable-money rails resolving over a banking skyline, evoking a supervisory scan of emerging-technology risk for financial services in 2026" src="https://cloudcdn.pro/stocks/images/adam-jicha-LM6pMVwlIiI.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Emerging Technology · Horizon Scanning · FCA</span>
+<h3><a href="/2026-07-03-emerging-technology-risk-horizon-banks-2026/index.html">Reading the Emerging-Technology Risk Horizon for Banks in 2026</a></h3>
+<p class="newsroom-meta"><time datetime="2026-07-03">July 3, 2026</time></p>
+<p class="newsroom-tldr"><span class="newsroom-tldr-label">TL;DR</span> An original reading of the 2026 emerging-technology risk horizon for banks — personalised AI intelligence, synthetic financial crime, and programmable finance — with a signal-to-supervision framework, drawing on the FCA's Technology Horizon Scan 2026.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-07-02-certified-blockchains-banking-trust-tc307-assurance-2026/index.html" title="From Evidence to Truth: Why Certified Blockchains Will Define the Next Era of Banking Trust">
+<img alt="Abstract distributed-ledger lattice resolving into a certified audit spine — visualising the shift from retrospective entity audits to continuous, cryptographically-verifiable blockchain assurance for wholesale banking" src="https://cloudcdn.pro/stocks/images/dylan-calluy-JpflvzEl5cg.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Certified Blockchain · Distributed Ledger · ISO/IEC TC 307</span>
+<h3><a href="/2026-07-02-certified-blockchains-banking-trust-tc307-assurance-2026/index.html">From Evidence to Truth: Why Certified Blockchains Will Define the Next Era of Banking Trust</a></h3>
+<p class="newsroom-meta"><time datetime="2026-07-02">July 2, 2026</time></p>
+<p class="newsroom-tldr"><span class="newsroom-tldr-label">TL;DR</span> The 2026 Certified Blockchain Index gives banks a 5-level Capability Maturity Model to certify distributed-ledger governance, consensus integrity, cryptography, smart-contract assurance, and audit observability against DORA, CPMI-IOSCO PFMI, ISO/IEC TC 307, ISO 42001 and Basel III.</p>
+</div>
+</article>
+
+
 </div>
 
 <div class="feat-cta-row">
