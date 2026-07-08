@@ -301,6 +301,7 @@ python3 tests/validation/test_csp_strict.py
 python3 tests/validation/test_sri_integrity.py
 python3 tests/validation/test_meta_description_clean.py
 python3 tests/validation/test_canonical_consistency.py
+python3 tests/validation/test_structured_data.py
 # Cloudflare Worker (edge Accept-Language router + security headers) —
 # pure-logic tests, no Cloudflare runtime required. 100% line/branch/
 # function coverage is enforced via Node's built-in test coverage so the
