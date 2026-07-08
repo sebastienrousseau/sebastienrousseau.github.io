@@ -106,7 +106,7 @@ site_software: "Static Site Generator, Rust"
 
 <article class="newsroom-featured">
 <a class="newsroom-featured-media" href="/2026-07-08-global-corporate-standard-iso-20022-swift-2026/index.html" title="From Messages to Map: Building a Global Corporate Standard on ISO 20022 and Swift">
-<img alt="Interlinked glowing blocks forming a chain across a dark field — harmonised ISO 20022 messages resolving into a connected network, evoking the missing global map that turns structured payment data into a usable corporate standard" src="https://cloudcdn.pro/stocks/images/block-chain-3055701.webp" loading="eager" fetchpriority="high" decoding="async" width="800" height="800" />
+<img alt="Interlinked glowing blocks forming a chain across a dark field — harmonised ISO 20022 messages resolving into a connected network, evoking the missing global map that turns structured payment data into a usable corporate standard" src="https://cloudcdn.pro/stocks/images/shubham-dhage-yKzECK-O9-k.webp" loading="eager" fetchpriority="high" decoding="async" width="800" height="800" />
 </a>
 <div class="newsroom-featured-body">
 <span class="newsroom-eyebrow">Iso 20022 · Swift · Cbpr+</span>
@@ -120,6 +120,18 @@ site_software: "Static Site Generator, Rust"
 <header class="newsroom-section-head"><p class="newsroom-kicker">ARCHIVE</p><h2>All news stories and articles</h2></header>
 
 <div class="newsroom-grid">
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-07-07-corporate-banking-api-standard-agentic-mcp-2026/index.html" title="From Fragmentation to Fault Line: Corporate Banking's Missing API Standard in the Agentic Era">
+<img alt="Interlinked glowing blocks forming a chain across a dark field — connected ledger and network nodes, evoking the common, machine-readable API surface corporate banking rails still lack in the agentic era" src="https://cloudcdn.pro/stocks/images/block-chain-3055701.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Corporate Banking Apis · Iso 20022 · Model Context Protocol</span>
+<h3><a href="/2026-07-07-corporate-banking-api-standard-agentic-mcp-2026/index.html" title="From Fragmentation to Fault Line: Corporate Banking's Missing API Standard in the Agentic Era">From Fragmentation to Fault Line: Corporate Banking's Missing API Standard in the Agentic Era</a></h3>
+<p class="newsroom-meta"><time datetime="2026-07-07">July 7, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Retail banking got its API standard a decade ago. Corporate banking never did — and now that AI agents and the Model Context Protocol have turned integration into a runtime decision, the gap has stopped being a nuisance and become a fault line. A concrete failure mode, the strategic choice it forces, and what a corpora</p>
+</div>
+</article>
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-07-03-emerging-technology-risk-horizon-banks-2026/index.html" title="Reading the Emerging-Technology Risk Horizon for Banks in 2026">
