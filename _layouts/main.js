@@ -664,6 +664,33 @@ function fallbackCopy(text, done) {
 })();
 
 /**
+ * Lazy-load Google reCAPTCHA only when the visitor engages the contact
+ * form. api.js is ~800 KB of third-party JS that otherwise loads on every
+ * /contact/ view, pushing LCP to ~2.7 s (Lighthouse 0.75). Injecting it on
+ * first focus/pointer keeps the widget ready before submit while removing it
+ * from the initial load. api.js auto-renders any .g-recaptcha element once it
+ * boots; same www.google.com script-src the eager tag used, so no CSP change.
+ */
+(function recaptchaLazy() {
+    "use strict";
+    var box = document.querySelector(".g-recaptcha");
+    if (!box) return;
+    var form = box.closest("form") || document;
+    var loaded = false;
+    var load = function () {
+        if (loaded) return;
+        loaded = true;
+        var s = document.createElement("script");
+        s.src = "https://www.google.com/recaptcha/api.js";
+        s.async = true;
+        s.defer = true;
+        document.head.appendChild(s);
+    };
+    form.addEventListener("focusin", load, { once: true });
+    form.addEventListener("pointerdown", load, { once: true });
+})();
+
+/**
  * Mermaid renderer — lazy-loads the Mermaid library from jsdelivr only
  * when the page actually contains <pre class="mermaid"> blocks. Pages
  * without Mermaid pay no JS / no network cost; pages with Mermaid widen
