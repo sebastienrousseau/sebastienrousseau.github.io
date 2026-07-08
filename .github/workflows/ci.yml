@@ -440,12 +440,10 @@ jobs:
           path: _data/pa11y-cache.json
           key: pa11y-cache-v1-${{ runner.os }}-${{ github.run_id }}
 
-      - name: Serve public/
-        run: |
-          npx http-server public -p 8000 --silent &
-          sleep 2
-
       - name: Run Lighthouse CI
+        # lhci starts the gzip+cache fixture server itself via
+        # collect.startServerCommand (.github/ci-tools/lighthouse/serve.js),
+        # so scores reflect Cloudflare's compressed, long-cached delivery.
         run: lhci autorun
         env:
           LHCI_BUILD_CONTEXT__CURRENT_HASH: ${{ github.sha }}
