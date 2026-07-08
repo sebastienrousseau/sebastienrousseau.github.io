@@ -105,21 +105,57 @@ site_software: "Static Site Generator, Rust"
 <header class="newsroom-section-head"><p class="newsroom-kicker">FEATURED</p><h2>Latest story</h2></header>
 
 <article class="newsroom-featured">
-<a class="newsroom-featured-media" href="/2026-07-01-agentic-ai-index-banks-measuring-autonomy-2026/index.html" title="The Agentic AI Index for Banks in 2026: Measuring Autonomy">
-<img alt="A bank operations centre at night with analysts monitoring autonomous decisioning dashboards, representing measurable agentic AI governance." src="https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp" loading="eager" fetchpriority="high" decoding="async" width="800" height="800" />
+<a class="newsroom-featured-media" href="/2026-07-08-global-corporate-standard-iso-20022-swift-2026/index.html" title="From Messages to Map: Building a Global Corporate Standard on ISO 20022 and Swift">
+<img alt="Interlinked glowing blocks forming a chain across a dark field — harmonised ISO 20022 messages resolving into a connected network, evoking the missing global map that turns structured payment data into a usable corporate standard" src="https://cloudcdn.pro/stocks/images/block-chain-3055701.webp" loading="eager" fetchpriority="high" decoding="async" width="800" height="800" />
 </a>
 <div class="newsroom-featured-body">
-<span class="newsroom-eyebrow">Agentic Ai · Ai Governance · Banking</span>
-<h3><a href="/2026-07-01-agentic-ai-index-banks-measuring-autonomy-2026/index.html" title="The Agentic AI Index for Banks in 2026: Measuring Autonomy">The Agentic AI Index for Banks in 2026: Measuring Autonomy</a></h3>
-<p class="newsroom-meta"><time datetime="2026-07-01">July 1, 2026</time> · Sebastien Rousseau</p>
-<p>Agentic AI is operational infrastructure in 2026. This index measures it the way banks measure capital and credit: a six-dimension readiness score across autonomy tiers, the control plane, regulatory evidence, unit economics, organisational readiness, and global regulatory alignment.</p>
-<p><a class="pill ghost" href="/2026-07-01-agentic-ai-index-banks-measuring-autonomy-2026/index.html" title="The Agentic AI Index for Banks in 2026: Measuring Autonomy">Read the full story</a></p>
+<span class="newsroom-eyebrow">Iso 20022 · Swift · Cbpr+</span>
+<h3><a href="/2026-07-08-global-corporate-standard-iso-20022-swift-2026/index.html" title="From Messages to Map: Building a Global Corporate Standard on ISO 20022 and Swift">From Messages to Map: Building a Global Corporate Standard on ISO 20022 and Swift</a></h3>
+<p class="newsroom-meta"><time datetime="2026-07-08">July 8, 2026</time> · Sebastien Rousseau</p>
+<p>The industry finally has a global language for payments. It still does not have a global map for corporates to act on it. ISO 20022 and Swift's CBPR+ harmonised what a payment must say, not how a corporate uses it — the missing interface and behaviour layers, and how banks can build a global corporate standard on the r</p>
+<p><a class="pill ghost" href="/2026-07-08-global-corporate-standard-iso-20022-swift-2026/index.html" title="From Messages to Map: Building a Global Corporate Standard on ISO 20022 and Swift">Read the full story</a></p>
 </div>
 </article>
 
 <header class="newsroom-section-head"><p class="newsroom-kicker">ARCHIVE</p><h2>All news stories and articles</h2></header>
 
 <div class="newsroom-grid">
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-07-03-emerging-technology-risk-horizon-banks-2026/index.html" title="Reading the Emerging-Technology Risk Horizon for Banks in 2026">
+<img alt="Abstract horizon of converging signal lines — AI, synthetic media, and programmable-money rails resolving over a banking skyline, evoking a supervisory scan of emerging-technology risk for financial services in 2026" src="https://cloudcdn.pro/stocks/images/adam-jicha-LM6pMVwlIiI.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Emerging Technology · Horizon Scanning · Fca</span>
+<h3><a href="/2026-07-03-emerging-technology-risk-horizon-banks-2026/index.html" title="Reading the Emerging-Technology Risk Horizon for Banks in 2026">Reading the Emerging-Technology Risk Horizon for Banks in 2026</a></h3>
+<p class="newsroom-meta"><time datetime="2026-07-03">July 3, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Regulators have started scanning the horizon out loud. Reading the 2026 emerging-technology landscape for banks across three converging vectors — personalised AI intelligence, synthetic financial crime, and programmable finance — and a framework for turning weak signals into supervisory action before harm scales.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-07-02-certified-blockchains-banking-trust-tc307-assurance-2026/index.html" title="From Evidence to Truth: Why Certified Blockchains Will Define the Next Era of Banking Trust">
+<img alt="Abstract distributed-ledger lattice resolving into a certified audit spine — visualising the shift from retrospective entity audits to continuous, cryptographically-verifiable blockchain assurance for wholesale banking" src="https://cloudcdn.pro/stocks/images/dylan-calluy-JpflvzEl5cg.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Certified Blockchain · Distributed Ledger · Iso/Iec Tc 307</span>
+<h3><a href="/2026-07-02-certified-blockchains-banking-trust-tc307-assurance-2026/index.html" title="From Evidence to Truth: Why Certified Blockchains Will Define the Next Era of Banking Trust">From Evidence to Truth: Why Certified Blockchains Will Define the Next Era of Banking Trust</a></h3>
+<p class="newsroom-meta"><time datetime="2026-07-02">July 2, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Immutability is not institutional trust. The 2026 Certified Blockchain Index scores ledger governance, consensus integrity, cryptography, smart-contract assurance and audit observability on a 0–5 CMM, mapped to DORA, CPMI-IOSCO PFMI, ISO/IEC TC 307 and Basel III — turning engineering metrics into board-auditable financ</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-07-01-agentic-ai-index-banks-measuring-autonomy-2026/index.html" title="The Agentic AI Index for Banks in 2026: Measuring Autonomy">
+<img alt="A bank operations centre at night with analysts monitoring autonomous decisioning dashboards, representing measurable agentic AI governance." src="https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Agentic Ai · Ai Governance · Banking</span>
+<h3><a href="/2026-07-01-agentic-ai-index-banks-measuring-autonomy-2026/index.html" title="The Agentic AI Index for Banks in 2026: Measuring Autonomy">The Agentic AI Index for Banks in 2026: Measuring Autonomy</a></h3>
+<p class="newsroom-meta"><time datetime="2026-07-01">July 1, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Agentic AI is operational infrastructure in 2026. This index measures it the way banks measure capital and credit: a six-dimension readiness score across autonomy tiers, the control plane, regulatory evidence, unit economics, organisational readiness, and global regulatory alignment.</p>
+</div>
+</article>
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-06-29-post-quantum-security-scorecard-board-level-fiduciary-agility-2026/index.html" title="The 2026 Post-Quantum Security Scorecard: A Board-Level Metric Framework">
