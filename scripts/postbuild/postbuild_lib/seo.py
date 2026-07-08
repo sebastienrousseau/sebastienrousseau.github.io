@@ -794,7 +794,7 @@ def _kpi_metrics() -> dict[str, str]:
     except (OSError, ValueError):
         out = {}
     _kpi_cache = out
-    return out
+    return _kpi_cache
 
 
 def inject_kpi_metrics(html_text: str) -> str:
