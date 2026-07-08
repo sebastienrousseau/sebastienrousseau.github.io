@@ -41,7 +41,7 @@ from case_studies_schema import _BASE_URL
 try:
     import yaml  # type: ignore[import-untyped]
 except ImportError:
-    print("error: PyYAML not installed (see requirements.txt)", file=sys.stderr)
+    sys.stderr.write("error: PyYAML not installed (see requirements.txt)\n")
     sys.exit(2)
 
 ROOT = Path(__file__).resolve().parents[2]

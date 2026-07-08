@@ -144,7 +144,7 @@
       hitLen = rawQuery.length;
     }
     var start = 0;
-    var win = content;
+    var win;
     if (pos !== -1) {
       start = Math.max(0, pos - 60);
       win = content.slice(start, pos + hitLen + 120);
@@ -213,7 +213,6 @@
   }
 
   ResultsView.prototype._localeEntries = function () {
-    var self = this;
     var ui = this.ui;
     var all = this.allToggle && this.allToggle.checked;
     if (all) {
