@@ -76,6 +76,7 @@ TOPICS: dict[str, dict[str, object]] = {
         ),
         "slugs": [
             "2026-07-08-global-corporate-standard-iso-20022-swift-2026",
+            "2026-07-07-corporate-banking-api-standard-agentic-mcp-2026",
             "2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026",
             "2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026",
             "2026-05-29-iso-20022-after-migration-payment-data-banking-products-2026",
