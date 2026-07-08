@@ -251,17 +251,35 @@ def render_whats_new_section(entries: list[Entry], strings: dict[str, str]) -> s
     Reuses the homepage's ``.feat`` section chrome for visual parity."""
     label = strings.get("whatsNew.title") or "What's new"
     cta = strings.get("whatsNew.cta") or "View the changelog"
+    shown = entries[:WHATS_NEW_LIMIT]
     items = "".join(
         '<li class="whats-new-item">'
         f'<a href="/{e.slug}/">'
         f'<time datetime="{e.iso}">{_esc(display_date(e.iso))}</time> '
         f"<span>{_esc(e.title)}</span></a></li>"
-        for e in entries[:WHATS_NEW_LIMIT]
+        for e in shown
+    )
+    # ItemList schema.org so search + LLM crawlers read the strip as a
+    # machine-readable list of recent articles (each links to a page that
+    # carries full Article JSON-LD). Inline JSON-LD is CSP-hashed downstream.
+    ld = {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": label,
+        "itemListElement": [
+            {"@type": "ListItem", "position": i + 1, "url": f"{BASE}/{e.slug}/", "name": e.title}
+            for i, e in enumerate(shown)
+        ],
+    }
+    jsonld = (
+        '<script type="application/ld+json">'
+        + json.dumps(ld, separators=(",", ":"), ensure_ascii=False)
+        + "</script>"
     )
     return (
         '<section class="feat reveal whats-new" aria-labelledby="whats-new-h">'
-        '<div class="wrap">'
-        f'<p class="feat-eyebrow">{_esc(label)}</p>'
+        + jsonld
+        + '<div class="wrap">'
         f'<h2 id="whats-new-h" class="feat-headline center">{_esc(label)}</h2>'
         f'<ul class="whats-new-list">{items}</ul>'
         '<div class="feat-cta-row">'
