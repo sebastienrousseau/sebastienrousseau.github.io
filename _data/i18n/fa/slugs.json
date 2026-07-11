@@ -1,0 +1,21 @@
+{
+  "static": {
+    "about": "about",
+    "papers": "papers",
+    "projects": "projects",
+    "topics": "topics",
+    "tags": "tags",
+    "contact": "contact",
+    "accessibility": "accessibility",
+    "privacy": "privacy",
+    "terms": "terms",
+    "playlists": "playlists",
+    "made-with-static-site-generator": "made-with-static-site-generator",
+    "404": "404",
+    "offline": "offline",
+    "thanks": "thanks",
+    "articles": "articles",
+    "case-studies": "case-studies"
+  },
+  "articles": {}
+}

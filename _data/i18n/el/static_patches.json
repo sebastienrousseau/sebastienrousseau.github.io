@@ -1,0 +1,1020 @@
+{
+  "patches": [
+    [
+      "<a href=\"/\">Home</a> &middot; <span>Topics</span>",
+      "<a href=\"/el/\">Αρχική</a> &middot; <span>Θέματα</span>"
+    ],
+    [
+      ">Home<",
+      ">Αρχική<"
+    ],
+    [
+      ">Topics</h1>",
+      ">Θέματα</h1>"
+    ],
+    [
+      ">PILLARS</p>",
+      ">ΠΥΛΩΝΕΣ</p>"
+    ],
+    [
+      "PILLAR · TOPIC",
+      "ΠΥΛΩΝΑΣ · ΘΕΜΑ"
+    ],
+    [
+      "PILLAR · PROJECT",
+      "ΠΥΛΩΝΑΣ · ΕΡΓΟ"
+    ],
+    [
+      "Curated topic clusters[^<]+",
+      "Επιμελημένες θεματικές ομάδες: επιλέξτε ένα νήμα και ακολουθήστε το σε όλο το αρχείο."
+    ],
+    [
+      "aria-label=\"Post-Quantum Cryptography\"",
+      "aria-label=\"Μετακβαντική κρυπτογραφία\""
+    ],
+    [
+      "aria-label=\"ISO 20022 &amp; Payments\"",
+      "aria-label=\"ISO 20022 &amp; Πληρωμές\""
+    ],
+    [
+      "aria-label=\"Applied AI in Banking\"",
+      "aria-label=\"Εφαρμοσμένη ΤΝ στην τραπεζική\""
+    ],
+    [
+      "aria-label=\"Rust &amp; Open Source\"",
+      "aria-label=\"Rust &amp; Open Source\""
+    ],
+    [
+      "aria-label=\"Blockchain &amp; Digital Assets\"",
+      "aria-label=\"Blockchain &amp; Ψηφιακά περιουσιακά στοιχεία\""
+    ],
+    [
+      "alt=\"Post-Quantum Cryptography — topic banner\"",
+      "alt=\"Μετακβαντική κρυπτογραφία - πανό θέματος\""
+    ],
+    [
+      "alt=\"ISO 20022 &amp; Payments — topic banner\"",
+      "alt=\"ISO 20022 &amp; Πληρωμές - πανό θέματος\""
+    ],
+    [
+      "alt=\"Applied AI in Banking — topic banner\"",
+      "alt=\"Εφαρμοσμένη ΤΝ στην τραπεζική - πανό θέματος\""
+    ],
+    [
+      "alt=\"Rust &amp; Open Source — topic banner\"",
+      "alt=\"Rust &amp; Open Source - πανό θέματος\""
+    ],
+    [
+      "alt=\"Blockchain &amp; Digital Assets — topic banner\"",
+      "alt=\"Blockchain &amp; Ψηφιακά περιουσιακά στοιχεία - πανό θέματος\""
+    ],
+    [
+      "<h3><a href=\"/el/topics/post-quantum-cryptography/[^\"]+\">Post-Quantum Cryptography</a></h3>",
+      "<h3><a href=\"/el/topics/post-quantum-cryptography/index.html\">Μετακβαντική κρυπτογραφία</a></h3>"
+    ],
+    [
+      "<h3><a href=\"/el/topics/iso-20022-payments/[^\"]+\">ISO 20022 &amp; Payments</a></h3>",
+      "<h3><a href=\"/el/topics/iso-20022-payments/index.html\">ISO 20022 &amp; Πληρωμές</a></h3>"
+    ],
+    [
+      "<h3><a href=\"/el/topics/applied-ai-banking/[^\"]+\">Applied AI in Banking</a></h3>",
+      "<h3><a href=\"/el/topics/applied-ai-banking/index.html\">Εφαρμοσμένη ΤΝ στην τραπεζική</a></h3>"
+    ],
+    [
+      "<h3><a href=\"/el/topics/rust-open-source/[^\"]+\">Rust &amp; Open Source</a></h3>",
+      "<h3><a href=\"/el/topics/rust-open-source/index.html\">Rust &amp; Open Source</a></h3>"
+    ],
+    [
+      "<h3><a href=\"/el/topics/blockchain-digital-assets/[^\"]+\">Blockchain &amp; Digital Assets</a></h3>",
+      "<h3><a href=\"/el/topics/blockchain-digital-assets/index.html\">Blockchain &amp; Ψηφιακά περιουσιακά στοιχεία</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Lattice-based cryptography, NIST PQC standards, quantum-safe payments,[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Κρυπτογραφία βασισμένη σε πλέγματα, πρότυπα NIST PQC, πληρωμές ανθεκτικές στο κβαντικό και η απειλή «συλλογή τώρα, αποκρυπτογράφηση αργότερα». Σημειώσεις έρευνας, βιβλιοθήκες open source και εγχειρίδια μετάβασης για τις ομάδες ασφάλειας των χρηματοοικονομικών υπηρεσιών.</p>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Cross-border message migration, structured-address compliance,[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Μετάβαση διασυνοριακών μηνυμάτων, συμμόρφωση δομημένης διεύθυνσης, SEPA Instant, SWIFT gpi και οι υποδομές πληρωμών wholesale που στηρίζουν το σύνολο. Εργαλεία, εγχειρίδια και ρυθμιστικό χρονοδιάγραμμα.</p>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Generative AI, multimodal LLMs, voice, and speech models[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Γενετική ΤΝ, πολυτροπικά LLM, φωνή και μοντέλα ομιλίας: πώς αναδιαμορφώνουν τις τραπεζικές λειτουργίες, την εξυπηρέτηση πελατών και τη μηχανική προϊόντος στα κορυφαία ιδρύματα.</p>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Open-source Rust libraries I author and maintain:[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Βιβλιοθήκες Rust open source που γράφω και συντηρώ: καταγραφή, παραγωγή κώδικα, ημερομηνία-ώρα, κρυπτογραφικές πρωτογενείς δομές, KEM βασισμένο στο Kyber και ένας γεννήτορας στατικών ιστότοπων σε Rust.</p>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Bitcoin, blockchain fundamentals, ERC-20 tokens, stablecoins,[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Bitcoin, βασικές αρχές blockchain, tokens ERC-20, stablecoins και το ρυθμιστικό πλαίσιο γύρω από τις υποδομές πληρωμών που στηρίζονται σε ψηφιακά περιουσιακά στοιχεία.</p>"
+    ],
+    [
+      "(\\d+) article\\(s\\)</p>",
+      "\\1 άρθρο(α)</p>"
+    ],
+    [
+      "INDUSTRY WHITE PAPER · EPAA",
+      "ΛΕΥΚΗ ΒΙΒΛΟΣ ΚΛΑΔΟΥ · EPAA"
+    ],
+    [
+      "INDUSTRY WHITE PAPER",
+      "ΛΕΥΚΗ ΒΙΒΛΟΣ ΚΛΑΔΟΥ"
+    ],
+    [
+      "PUBLICATION · WHITE PAPER",
+      "ΔΗΜΟΣΙΕΥΣΗ · ΛΕΥΚΗ ΒΙΒΛΟΣ"
+    ],
+    [
+      ">RESEARCH NOTES</p>",
+      ">ΣΗΜΕΙΩΣΕΙΣ ΕΡΕΥΝΑΣ</p>"
+    ],
+    [
+      ">RESEARCH NOTE · QUANTUM<",
+      ">ΣΗΜΕΙΩΣΗ ΕΡΕΥΝΑΣ · ΚΒΑΝΤΙΚΗ<"
+    ],
+    [
+      ">RESEARCH · CRYPTOGRAPHY<",
+      ">ΕΡΕΥΝΑ · ΚΡΥΠΤΟΓΡΑΦΙΑ<"
+    ],
+    [
+      ">RESEARCH · AI<",
+      ">ΕΡΕΥΝΑ · ΤΝ<"
+    ],
+    [
+      ">RESEARCH · QUANTUM FINANCE<",
+      ">ΕΡΕΥΝΑ · ΚΒΑΝΤΙΚΗ ΧΡΗΜΑΤΟΟΙΚΟΝΟΜΙΚΗ<"
+    ],
+    [
+      ">RESEARCH · QUANTUM BANKING<",
+      ">ΕΡΕΥΝΑ · ΚΒΑΝΤΙΚΗ ΤΡΑΠΕΖΙΚΗ<"
+    ],
+    [
+      "WHITE PAPER",
+      "ΛΕΥΚΗ ΒΙΒΛΟΣ"
+    ],
+    [
+      ">Read the white paper</a>",
+      ">Διαβάστε τη λευκή βίβλο</a>"
+    ],
+    [
+      "title=\"Read the white paper \\(PDF\\)\"",
+      "title=\"Διαβάστε τη λευκή βίβλο (PDF)\""
+    ],
+    [
+      ">About EPAA</a>",
+      ">Σχετικά με την EPAA</a>"
+    ],
+    [
+      "title=\"Visit the Emerging Payments Association Asia\"",
+      "title=\"Επισκεφθείτε την Emerging Payments Association Asia\""
+    ],
+    [
+      ">Buy &middot; \\$([0-9]+)\\.([0-9]+)</a>",
+      ">Αγορά &middot; \\1,\\2 $</a>"
+    ],
+    [
+      "title=\"Buy the publication on PayPal\"",
+      "title=\"Αγοράστε τη δημοσίευση στο PayPal\""
+    ],
+    [
+      ">Read the article</a>",
+      ">Διαβάστε το άρθρο</a>"
+    ],
+    [
+      " · Free download",
+      " · Δωρεάν λήψη"
+    ],
+    [
+      "Free download<",
+      "Δωρεάν λήψη<"
+    ],
+    [
+      ">Download<",
+      ">Λήψη<"
+    ],
+    [
+      ">Request access<",
+      ">Αίτημα πρόσβασης<"
+    ],
+    [
+      ">English · PDF",
+      ">Ελληνικά · PDF"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-01-(\\d{2})\">January \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-01-\\2\">\\2 Ιανουαρίου \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-02-(\\d{2})\">February \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-02-\\2\">\\2 Φεβρουαρίου \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-03-(\\d{2})\">March \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-03-\\2\">\\2 Μαρτίου \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-04-(\\d{2})\">April \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-04-\\2\">\\2 Απριλίου \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-05-(\\d{2})\">May \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-05-\\2\">\\2 Μαΐου \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-06-(\\d{2})\">June \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-06-\\2\">\\2 Ιουνίου \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-07-(\\d{2})\">July \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-07-\\2\">\\2 Ιουλίου \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-08-(\\d{2})\">August \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-08-\\2\">\\2 Αυγούστου \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-09-(\\d{2})\">September \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-09-\\2\">\\2 Σεπτεμβρίου \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-09-01\">September \\d{4}</time>",
+      "<time datetime=\"\\1-09-01\">Σεπτέμβριος \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-10-(\\d{2})\">October \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-10-\\2\">\\2 Οκτωβρίου \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-11-(\\d{2})\">November \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-11-\\2\">\\2 Νοεμβρίου \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-12-(\\d{2})\">December \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-12-\\2\">\\2 Δεκεμβρίου \\1</time>"
+    ],
+    [
+      ">A system for real-time speech-to-text transcription that leverages OpenAI Whisper and Metal Performance Shaders GPU acceleration on macOS to achieve sub-second latency at 8-12x real-time on M1 Max\\.<",
+      ">Ένα σύστημα μεταγραφής φωνής σε κείμενο σε πραγματικό χρόνο που αξιοποιεί το OpenAI Whisper και την επιτάχυνση GPU Metal Performance Shaders σε macOS για να επιτύχει καθυστέρηση κάτω του δευτερολέπτου, 8 έως 12× του πραγματικού χρόνου σε M1 Max.<"
+    ],
+    [
+      ">A new paper suggests Shor\\'s algorithm could run on as few as 10,000 qubits\\. The threshold for cryptographically relevant quantum computing is dropping fast\\.<",
+      ">Ένα νέο άρθρο υποδηλώνει ότι ο αλγόριθμος του Shor θα μπορούσε να τρέξει με μόλις 10.000 qubits. Το όριο για κβαντικούς υπολογισμούς με κρυπτογραφική σημασία μειώνεται γρήγορα.<"
+    ],
+    [
+      ">A bug in Yilei Chen's quantum algorithm for solving LWE has been found, temporarily securing lattice-based cryptography and highlighting the need for ongoing research\\.<",
+      ">Ένα σφάλμα εντοπίστηκε στον κβαντικό αλγόριθμο του Yilei Chen για την επίλυση του LWE, εξασφαλίζοντας προσωρινά την κρυπτογραφία βασισμένη σε πλέγματα και τονίζοντας την ανάγκη για συνεχή έρευνα.<"
+    ],
+    [
+      ">New quantum algorithm solves a key cryptographic problem, urging accelerated research into quantum-safe security\\.<",
+      ">Ένας νέος κβαντικός αλγόριθμος λύνει ένα βασικό κρυπτογραφικό πρόβλημα, επιβάλλοντας επιτάχυνση της έρευνας για ασφάλεια ανθεκτική στο κβαντικό.<"
+    ],
+    [
+      ">How Fully Homomorphic Encryption revolutionises data security in banking and financial services, preserving privacy against quantum-era threats\\.<",
+      ">Πώς η πλήρως ομομορφική κρυπτογράφηση επαναστατικοποιεί την ασφάλεια δεδομένων στην τραπεζική και τις χρηματοοικονομικές υπηρεσίες, διαφυλάσσοντας την ιδιωτικότητα απέναντι στις απειλές της κβαντικής εποχής.<"
+    ],
+    [
+      ">An analysis of Apple's MM1 paper on Multimodal Large Language Models — architecture, pre-training strategies and emerging capabilities\\.<",
+      ">Μια ανάλυση του άρθρου MM1 της Apple για τα πολυτροπικά μεγάλα γλωσσικά μοντέλα: αρχιτεκτονική, στρατηγικές προεκπαίδευσης και αναδυόμενες δυνατότητες.<"
+    ],
+    [
+      ">How IBM Qiskit and the Quantum Fourier Transform reshape credit ratio analysis in finance, offering unprecedented accuracy and speed\\.<",
+      ">Πώς το IBM Qiskit και ο κβαντικός μετασχηματισμός Fourier αναδιαμορφώνουν την ανάλυση δεικτών πιστοληπτικής ικανότητας στη χρηματοοικονομική, προσφέροντας πρωτοφανή ακρίβεια και ταχύτητα.<"
+    ],
+    [
+      ">The transformative role of AI inside quantum algorithms for finance, focusing on their mathematical structure and banking applications\\.<",
+      ">Ο μετασχηματιστικός ρόλος της ΤΝ μέσα στους κβαντικούς αλγορίθμους για τη χρηματοοικονομική, με έμφαση στη μαθηματική τους δομή και τις τραπεζικές τους εφαρμογές.<"
+    ],
+    [
+      ">As quantum computers threaten traditional encryption, Quantum Key Distribution \\(QKD\\) emerges as a structural answer for financial-grade security\\.<",
+      ">Καθώς οι κβαντικοί υπολογιστές απειλούν την παραδοσιακή κρυπτογράφηση, η κβαντική διανομή κλειδιών (QKD) αναδεικνύεται ως δομική απάντηση για ασφάλεια χρηματοοικονομικού επιπέδου.<"
+    ],
+    [
+      ">How CRYSTALS-Kyber, the NIST-selected quantum-resistant key-encapsulation mechanism, is reshaping cryptography for the quantum era\\.<",
+      ">Πώς το CRYSTALS-Kyber, ο μηχανισμός ενθυλάκωσης κλειδιών ανθεκτικός στο κβαντικό που επιλέχθηκε από το NIST, αναδιαμορφώνει την κρυπτογραφία για την κβαντική εποχή.<"
+    ],
+    [
+      ">What kind of research and papers do you publish\\?</summary>",
+      ">Τι είδους έρευνα και εργασίες δημοσιεύετε;</summary>"
+    ],
+    [
+      "(<summary[^>]*>Quels types de recherches et publications publiez-vous \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Συνυπάρχουν δύο άξονες. Οι <strong>λευκές βίβλοι του κλάδου</strong>, που παράγονται για οργανισμούς όπως η Emerging Payments Association Asia (EPAA), εξετάζουν τους δομικούς μετασχηματισμούς των υποδομών πληρωμών: πρόσφατα, την επίδραση των κβαντικών υπολογισμών με κρυπτογραφική σημασία στις υποδομές διακανονισμού wholesale και πραγματικού χρόνου. Οι <strong>εκθέσεις εφαρμοσμένης έρευνας</strong> στοχεύουν σε συγκεκριμένα τεχνικά θέματα (για παράδειγμα: αναγνώριση φωνής σε πραγματικό χρόνο με Whisper + Metal Performance Shaders σε Apple Silicon) και δημοσιεύονται ως PDF διαθέσιμα προς μεμονωμένη αγορά.</p></section>"
+    ],
+    [
+      ">How often do you release new papers\\?</summary>",
+      ">Πόσο συχνά κυκλοφορείτε νέες εργασίες;</summary>"
+    ],
+    [
+      "(<summary[^>]*>À quelle fréquence publiez-vous de nouveaux articles \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Ακανόνιστα, κατά προτίμηση για την ποιότητα έναντι του ρυθμού. Οι σύντομες σημειώσεις έρευνας εμφανίζονται κάθε λίγες εβδομάδες όταν το δικαιολογεί μια τεχνική εξέλιξη. Οι λευκές βίβλοι δημοσιεύονται σε σύνδεση με τους κύκλους του κλάδου (για παράδειγμα: ρυθμιστικά χρονοδιαγράμματα, συνέδρια EPAA).</p></section>"
+    ],
+    [
+      ">About EPAA</p>",
+      ">Σχετικά με την EPAA</p>"
+    ],
+    [
+      "<p[^>]*class=\\\"book-about\\\"[^>]*>The Emerging Payments Association Asia[^<]+",
+      "<p class=\"book-about\">Η <strong>Emerging Payments Association Asia (EPAA)</strong> είναι η επαγγελματική ένωση του κλάδου πληρωμών στην περιοχή Ασίας-Ειρηνικού, που συγκεντρώνει τράπεζες, παρόχους επεξεργασίας, fintechs και ρυθμιστικές αρχές γύρω από τα δομικά ζητήματα που διατρέχουν τον κλάδο."
+    ],
+    [
+      ">Quantum-Safe Payments: Why the Payments Industry Must Act Now<",
+      ">Πληρωμές ανθεκτικές στο κβαντικό: γιατί ο κλάδος πρέπει να δράσει τώρα<"
+    ],
+    [
+      ">Accelerating Real-Time Speech Recognition with OpenAI Whisper and Metal Performance Shaders on macOS<",
+      ">Επιτάχυνση της αναγνώρισης φωνής σε πραγματικό χρόνο με OpenAI Whisper και Metal Performance Shaders σε macOS<"
+    ],
+    [
+      ">Recent research and analysis<",
+      ">Πρόσφατη έρευνα και ανάλυση<"
+    ],
+    [
+      "September 2025 &middot; Emerging Payments Association Asia \\(EPAA\\)",
+      "Σεπτέμβριος 2025 &middot; Emerging Payments Association Asia (EPAA)"
+    ],
+    [
+      ">Quantum computing threatens the cryptographic foundations[^<]+",
+      ">Η κβαντική υπολογιστική απειλεί τα κρυπτογραφικά θεμέλια των χρηματοοικονομικών υπηρεσιών. Οι πληρωμές, από τον πραγματικό χρόνο έως τον διασυνοριακό διακανονισμό, στηρίζονται σε προστασίες που η κβαντική υπολογιστική θα καταστήσει τελικά παρωχημένες. Αυτή η λευκή βίβλος της EPAA εξηγεί γιατί ο κλάδος πρέπει να δράσει από τώρα."
+    ],
+    [
+      "2024 &middot; Independent Research &middot;",
+      "2024 &middot; Ανεξάρτητη έρευνα &middot;"
+    ],
+    [
+      ">This independent research paper presents[^<]+",
+      ">Αυτή η ανεξάρτητη ερευνητική εργασία παρουσιάζει μια βελτιστοποίηση της αναγνώρισης φωνής σε πραγματικό χρόνο σε macOS με χρήση OpenAI Whisper και Metal Performance Shaders, καταδεικνύοντας μετρήσιμα οφέλη σε καθυστέρηση και ενεργειακή απόδοση."
+    ],
+    [
+      ">License &amp; pricing<",
+      ">Άδεια και τιμολόγηση<"
+    ],
+    [
+      ">One copy per buyer<",
+      ">Ένα αντίτυπο ανά αγοραστή<"
+    ],
+    [
+      ">Questions\\?\\s*<span class=\"qa-headline-soft\">Answers\\.</span>",
+      ">Ερωτήσεις;<span class=\"qa-headline-soft\"> Απαντήσεις.</span>"
+    ],
+    [
+      ">Questions\\? Answers\\.</h2>",
+      ">Ερωτήσεις; Απαντήσεις.</h2>"
+    ],
+    [
+      ">Questions\\? Answers\\.<",
+      ">Ερωτήσεις; Απαντήσεις.<"
+    ],
+    [
+      ">Are the white papers free to read\\?</summary>",
+      ">Είναι οι λευκές βίβλοι ελεύθερες για ανάγνωση;</summary>"
+    ],
+    [
+      ">May I cite or quote from these papers\\?</summary>",
+      ">Μπορώ να παραθέσω ή να αναφέρω αποσπάσματα από αυτές τις εργασίες;</summary>"
+    ],
+    [
+      ">Who is the intended audience\\?</summary>",
+      ">Σε ποιους απευθύνονται αυτές οι δημοσιεύσεις;</summary>"
+    ],
+    [
+      ">Can I commission a paper or speak at an event\\?</summary>",
+      ">Μπορώ να αναθέσω μια εργασία ή να προσκαλέσω σε εκδήλωση;</summary>"
+    ],
+    [
+      ">How do I follow new publications\\?</summary>",
+      ">Πώς μπορώ να παρακολουθώ τις νέες δημοσιεύσεις;</summary>"
+    ],
+    [
+      ">Where can I follow new releases\\?</summary>",
+      ">Πού μπορώ να παρακολουθώ τις νέες κυκλοφορίες;</summary>"
+    ],
+    [
+      "(<summary[^>]*>Les livres blancs sont-ils en libre lecture \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Η λευκή βίβλος της EPAA <em>Quantum-Safe Payments</em> διατίθεται για δωρεάν δημόσια λήψη στο <a href=\"https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf\" rel=\"external noopener\">emergingpaymentsasia.org</a>. Η ανεξάρτητη ερευνητική έκθεση για την αναγνώριση φωνής σε πραγματικό χρόνο με OpenAI Whisper και Metal Performance Shaders διατίθεται υπό άδεια και είναι διαθέσιμη για μεμονωμένη αγορά στα 49,00 $ (αγγλικά, PDF, ~95 KB). Ένα αντίτυπο ανά αγοραστή. Οι λήψεις προορίζονται μόνο για προσωπική χρήση και δεν αναδιανέμονται.</p></section>"
+    ],
+    [
+      "(<summary[^>]*>Puis-je citer ces documents \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Ναι. Οι σύντομες παραθέσεις με αναφορά προέλευσης είναι ευπρόσδεκτες στο πλαίσιο της θεμιτής χρήσης. Για τις δημοσιεύσεις της EPAA, αναφέρετε την EPAA ως εκδότη μαζί με την ομάδα εργασίας, το έτος και το URL του PDF. Για τις ανεξάρτητες ερευνητικές εκθέσεις, παραθέστε ως εξής: <em>Rousseau, S. (έτος). Τίτλος. Αυτοέκδοση.</em> με το κανονικό URL. Για την αναπαραγωγή μιας εικόνας ή ενός εκτενούς αποσπάσματος, παρακαλώ <a href=\"/el/contact/\">επικοινωνήστε μαζί μου</a> εκ των προτέρων.</p></section>"
+    ],
+    [
+      "(<summary[^>]*>À qui s’adressent ces publications \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Διευθυντές πληρωμών, CISO και ανώτεροι αρχιτέκτονες σε κορυφαίες τράπεζες, κεντρικές τράπεζες, φορείς λειτουργίας συστημάτων πληρωμών και ιδιοκτήτες σχημάτων. Η εφαρμοσμένη έρευνα απευθύνεται σε μηχανικούς και υπευθύνους προϊόντος που χτίζουν πάνω σε μεγάλα γλωσσικά μοντέλα, ΤΝ on-device και κρυπτογραφία ανθεκτική στο κβαντικό. Κάθε άρθρο προϋποθέτει γνώση του αντικειμένου και παραλείπει τις υπενθυμίσεις που ένας εν ενεργεία επαγγελματίας ήδη κατέχει.</p></section>"
+    ],
+    [
+      "(<summary[^>]*>Puis-je commander une étude ou inviter à une conférence \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Ναι, κατά περίπτωση και κατόπιν επιλογής. Οι ανατεθειμένες εργασίες αφορούν πληρωμές wholesale, μετάβαση σε ISO 20022, μετακβαντική κρυπτογραφία για χρηματοοικονομικές υπηρεσίες και εφαρμοσμένη ΤΝ στην τραπεζική. Οι ομιλίες σε συνέδρια του κλάδου, φόρουμ κεντρικών τραπεζών και στρογγυλά τραπέζια ρυθμιστικών αρχών εξετάζονται κατά περίπτωση. Χρησιμοποιήστε τη <a href=\"/el/contact/\">φόρμα επικοινωνίας</a> προσδιορίζοντας το θέμα, το κοινό και το χρονοδιάγραμμα.</p></section>"
+    ],
+    [
+      "(<summary[^>]*>Comment suivre les nouvelles publications \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Τα νέα άρθρα και οι σημειώσεις έρευνας ανακοινώνονται κατά προτεραιότητα μέσω της <a href=\"/el/rss.xml\">ροής RSS</a> του ιστότοπου και του newsletter <a href=\"https://news.bankingonquantum.com\" rel=\"external noopener\">Banking On Quantum</a>, που καλύπτει τη μετακβαντική κρυπτογραφία, την πολιτική των κεντρικών τραπεζών και τον οδικό χάρτη μετάβασης των κύριων σχημάτων πληρωμών. Χωρίς spam, μόνο οι νέες κυκλοφορίες.</p></section>"
+    ],
+    [
+      "(<summary[^>]*>Où puis-je suivre les nouvelles publications \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Εγγραφείτε στη <a href=\"/el/rss.xml\">ροή RSS</a> ή ακολουθήστε με στο <a href=\"https://www.linkedin.com/in/sebastienrousseau/\" rel=\"external noopener\">LinkedIn</a> για να ενημερώνεστε για τις νέες δημοσιεύσεις.</p></section>"
+    ],
+    [
+      ">Browse all projects<",
+      ">Περιήγηση σε όλα τα έργα<"
+    ],
+    [
+      ">Three areas of practice\\.\\s*<span",
+      ">Τρεις τομείς πρακτικής. <span"
+    ],
+    [
+      ">One philosophy\\.</span>",
+      ">Μία φιλοσοφία.</span>"
+    ],
+    [
+      ">WHAT IS INSIDE<",
+      ">ΤΙ ΠΕΡΙΛΑΜΒΑΝΕΙ<"
+    ],
+    [
+      ">OPEN SOURCE FOR FINANCIAL SERVICES<",
+      ">OPEN SOURCE ΓΙΑ ΤΙΣ ΧΡΗΜΑΤΟΟΙΚΟΝΟΜΙΚΕΣ ΥΠΗΡΕΣΙΕΣ<"
+    ],
+    [
+      ">Payments and settlement\\.<",
+      ">Πληρωμές και διακανονισμός.<"
+    ],
+    [
+      ">Post-quantum cryptography\\.<",
+      ">Μετακβαντική κρυπτογραφία.<"
+    ],
+    [
+      ">Tooling and infrastructure\\.<",
+      ">Εργαλεία και υποδομές.<"
+    ],
+    [
+      ">Applied AI\\.<",
+      ">Εφαρμοσμένη ΤΝ.<"
+    ],
+    [
+      ">Explore payments tools\\s+<",
+      ">Εξερευνήστε τα εργαλεία πληρωμών <"
+    ],
+    [
+      ">Explore quantum-safe libraries\\s+<",
+      ">Εξερευνήστε τις βιβλιοθήκες quantum-safe <"
+    ],
+    [
+      ">Explore developer tools\\s+<",
+      ">Εξερευνήστε τα εργαλεία προγραμματιστών <"
+    ],
+    [
+      ">Explore PQC tools\\s+<",
+      ">Εξερευνήστε τα εργαλεία PQC <"
+    ],
+    [
+      ">Explore AI tools\\s+<",
+      ">Εξερευνήστε τα εργαλεία ΤΝ <"
+    ],
+    [
+      ">Authored & maintained<",
+      ">Γραμμένα και συντηρούμενα<"
+    ],
+    [
+      ">Authored &amp; maintained<",
+      ">Γραμμένα &amp; συντηρούμενα<"
+    ],
+    [
+      ">Open source for the future of finance\\.<",
+      ">Open source για το μέλλον της χρηματοοικονομικής.<"
+    ],
+    [
+      "<p class=\"setup-card-body\">ISO 20022 <strong>pain\\.001</strong> and <strong>pacs\\.008</strong> toolkits[^<]*\\.[^<]*\\.</p>",
+      "<p class=\"setup-card-body\">Εργαλειοθήκες ISO 20022 <strong>pain.001</strong> και <strong>pacs.008</strong>, ανάλυση τραπεζικών καταστάσεων και βιβλιοθήκες Rust για τη μετάβαση σε δομημένα διασυνοριακά μηνύματα. Σχεδιασμένες για SWIFT, SEPA και τα σχήματα πληρωμών πραγματικού χρόνου.</p>"
+    ],
+    [
+      "<p class=\"setup-card-body\">Rust implementations of <strong>CRYSTALS-Kyber</strong>[^<]*\\.[^<]*\\.</p>",
+      "<p class=\"setup-card-body\">Υλοποιήσεις Rust του <strong>CRYSTALS-Kyber</strong> (NIST FIPS&nbsp;203), πρωτογενείς συναρτήσεις κατακερματισμού και δομικά στοιχεία ανθεκτικά στο κβαντικό. Προστασία πέρα από την εποχή RSA και ελλειπτικών καμπυλών της χρηματοοικονομικής ταυτοποίησης.</p>"
+    ],
+    [
+      "<p class=\"setup-card-body\">Open-source Rust libraries for serialisation[\\s\\S]+?shippable\\.</p>",
+      "<p class=\"setup-card-body\">Βιβλιοθήκες Rust open source για σειριοποίηση, καταγραφή, παραγωγή κώδικα, ημερομηνία και ώρα. Συν τον <strong>Static Site Generator</strong> (SSG) που κατασκευάζει αυτόν τον ιστότοπο και το περιβάλλον προγραμματιστή που τον καθιστά έτοιμο για παράδοση.</p>"
+    ],
+    [
+      ">ISO 20022 tooling for the global migration\\. Pain\\.001 file generation, pacs\\.008 cross-border credit transfers, and structured bank-statement parsing\\.<",
+      ">Εργαλεία ISO 20022 για την παγκόσμια μετάβαση. Παραγωγή αρχείων Pain.001, διασυνοριακά εμβάσματα pacs.008 και δομημένη ανάλυση τραπεζικών καταστάσεων.<"
+    ],
+    [
+      ">Rust implementations of CRYSTALS-Kyber, hash and digest primitives, and quantum-resistant building blocks for financial-grade authentication\\.<",
+      ">Υλοποιήσεις Rust του CRYSTALS-Kyber, πρωτογενείς συναρτήσεις κατακερματισμού και δομικά στοιχεία ανθεκτικά στο κβαντικό για χρηματοοικονομικού επιπέδου ταυτοποίηση.<"
+    ],
+    [
+      ">Applied artificial intelligence\\.<",
+      ">Εφαρμοσμένη τεχνητή νοημοσύνη.<"
+    ],
+    [
+      ">Open-source AI projects applying speech recognition, natural language, and large language models to real-world finance and productivity problems\\.<",
+      ">Έργα ΤΝ open source που εφαρμόζουν την αναγνώριση φωνής, τη φυσική γλώσσα και τα μεγάλα γλωσσικά μοντέλα σε πραγματικά προβλήματα χρηματοοικονομικής και παραγωγικότητας.<"
+    ],
+    [
+      ">A Python library that automates ISO 20022 pain\\.001 payment file creation from CSV or SQLite\\. Built for the global migration to structured cross-border messages\\.<",
+      ">Μια βιβλιοθήκη Python που αυτοματοποιεί τη δημιουργία αρχείων πληρωμής ISO 20022 pain.001 από CSV ή SQLite. Σχεδιασμένη για την παγκόσμια μετάβαση προς δομημένα διασυνοριακά μηνύματα.<"
+    ],
+    [
+      ">Generate, validate, and deliver ISO 20022 pacs\\.008 payment messages for FI-to-FI customer credit transfers\\. JSON Schema \\+ XSD validation, IBAN across 75 countries, GDPR/PCI-DSS-compliant PII masking\\.<",
+      ">Δημιουργήστε, επικυρώστε και παραδώστε μηνύματα πληρωμής ISO 20022 pacs.008 για μεταφορές πίστωσης πελατών FI-προς-FI. Επικύρωση JSON Schema + XSD, IBAN σε 75 χώρες, απόκρυψη προσωπικών δεδομένων συμβατή με GDPR/PCI-DSS.<"
+    ],
+    [
+      ">A finance-grade Python toolkit that turns multi-format bank statements into structured data — for the realities of real-world statement files and the audit demands of regulated environments\\.<",
+      ">Μια εργαλειοθήκη Python χρηματοοικονομικού επιπέδου που μετατρέπει τραπεζικά αντίγραφα κίνησης πολλαπλών μορφών σε δομημένα δεδομένα, για την πραγματικότητα των αρχείων κίνησης και τις απαιτήσεις ελέγχου των ρυθμιζόμενων περιβαλλόντων.<"
+    ],
+    [
+      ">A Rust application for optimising cash allocation across complex fund structures using AI-driven forecasting\\. Aimed at treasury, fund accounting, and asset-allocation use cases inside banks and asset managers\\.<",
+      ">Μια εφαρμογή Rust για τη βελτιστοποίηση της κατανομής μετρητών σε σύνθετες δομές κεφαλαίων μέσω πρόβλεψης καθοδηγούμενης από ΤΝ. Σχεδιασμένη για περιπτώσεις χρήσης στην ταμειακή διαχείριση, τη λογιστική κεφαλαίων και την κατανομή περιουσιακών στοιχείων σε τράπεζες και διαχειριστές περιουσιακών στοιχείων.<"
+    ],
+    [
+      ">A Rust library for generating and manipulating QR-code images in multiple formats\\. Direct payment uses include EPC QR Codes for SEPA Credit Transfers, payment-link QR for merchant collection, and step-up authentication flows\\.<",
+      ">Μια βιβλιοθήκη Rust για τη δημιουργία και τον χειρισμό κωδικών QR σε πολλαπλές μορφές. Άμεσες χρήσεις πληρωμών: EPC QR Codes για μεταφορές SEPA, QR συνδέσμου πληρωμής για είσπραξη εμπόρων και ροές ελέγχου ταυτότητας step-up.<"
+    ],
+    [
+      ">A robust Rust implementation of CRYSTALS-Kyber, the NIST FIPS 203 standard for general-purpose post-quantum key encapsulation\\.<",
+      ">Μια εύρωστη υλοποίηση Rust του CRYSTALS-Kyber, του προτύπου NIST FIPS 203 για γενικής χρήσης μετακβαντική ενθυλάκωση κλειδιών.<"
+    ],
+    [
+      ">Secure hash and digest algorithms for password encryption and verification, designed with a quantum-resistant posture for the post-PQC era\\.<",
+      ">Ασφαλείς αλγόριθμοι κατακερματισμού και σύνοψης για την κρυπτογράφηση και την επαλήθευση κωδικών πρόσβασης, σχεδιασμένοι με στάση ανθεκτική στο κβαντικό για τη μετά-PQC εποχή.<"
+    ],
+    [
+      ">A fast, simple, and powerful cross-platform CLI for generating strong, unique, and random passwords backed by audited cryptographic primitives\\.<",
+      ">Ένα γρήγορο, απλό και ισχυρό CLI πολλαπλών πλατφορμών για τη δημιουργία ισχυρών, μοναδικών και τυχαίων κωδικών πρόσβασης, με υποστήριξη ελεγμένων κρυπτογραφικών primitives.<"
+    ],
+    [
+      ">An advanced voice assistant using OpenAI's GPT for natural interactions, PDF summaries, and efficient caching\\. Built for both personal and executive use\\.<",
+      ">Ένας προηγμένος φωνητικός βοηθός που χρησιμοποιεί το GPT της OpenAI για φυσικές αλληλεπιδράσεις, συνόψεις PDF και αποδοτική προσωρινή αποθήκευση. Σχεδιασμένος τόσο για προσωπική όσο και για διευθυντική χρήση.<"
+    ],
+    [
+      ">Convert audio to text in real-time using advanced AI speech recognition\\. Designed to unlock actionable insights from audio data and enhance customer and[^<]+",
+      ">Μετατρέψτε τον ήχο σε κείμενο σε πραγματικό χρόνο χάρη στην προηγμένη αναγνώριση φωνής ΤΝ. Σχεδιασμένο για την εξαγωγή αξιοποιήσιμων insights από δεδομένα ήχου και τη βελτίωση της εμπειρίας πελατών και λειτουργιών.<"
+    ],
+    [
+      ">Featured · Python · ISO 20022<",
+      ">Προτεινόμενο · Python · ISO 20022<"
+    ],
+    [
+      ">Python · ISO 20022<",
+      ">Python · ISO 20022<"
+    ],
+    [
+      ">Python · Finance<",
+      ">Python · Χρηματοοικονομικά<"
+    ],
+    [
+      ">Rust · Treasury · AI<",
+      ">Rust · Ταμειακή διαχείριση · ΤΝ<"
+    ],
+    [
+      ">Rust · Payments QR<",
+      ">Rust · QR Πληρωμών<"
+    ],
+    [
+      ">Rust · Quantum<",
+      ">Rust · Κβαντικό<"
+    ],
+    [
+      ">Rust · Security<",
+      ">Rust · Ασφάλεια<"
+    ],
+    [
+      ">AI · Voice<",
+      ">ΤΝ · Φωνή<"
+    ],
+    [
+      ">AI · Speech<",
+      ">ΤΝ · Φωνή<"
+    ],
+    [
+      ">PAYMENTS<",
+      ">ΠΛΗΡΩΜΕΣ<"
+    ],
+    [
+      ">POST-QUANTUM CRYPTOGRAPHY<",
+      ">ΜΕΤΑΚΒΑΝΤΙΚΗ ΚΡΥΠΤΟΓΡΑΦΙΑ<"
+    ],
+    [
+      ">AI AND VOICE<",
+      ">ΤΝ ΚΑΙ ΦΩΝΗ<"
+    ],
+    [
+      ">DEVELOPER TOOLING<",
+      ">ΕΡΓΑΛΕΙΑ ΠΡΟΓΡΑΜΜΑΤΙΣΤΩΝ<"
+    ],
+    [
+      ">OPEN-SOURCE RUST<",
+      ">RUST OPEN SOURCE<"
+    ],
+    [
+      ">WEB AND DEVELOPER ENVIRONMENT<",
+      ">WEB ΚΑΙ ΠΕΡΙΒΑΛΛΟΝ ΠΡΟΓΡΑΜΜΑΤΙΣΤΗ<"
+    ],
+    [
+      ">Tooling\\.<",
+      ">Εργαλεία.<"
+    ],
+    [
+      ">Rust libraries and tooling\\.</h2>",
+      ">Βιβλιοθήκες και εργαλεία Rust.</h2>"
+    ],
+    [
+      "<p class=\"cat-lede\">Open-source Rust projects across serialisation, logging, code generation, math, and developer tooling — including the static site generator behind this site\\.</p>",
+      "<p class=\"cat-lede\">Έργα Rust open source - σειριοποίηση, καταγραφή, δημιουργία κώδικα, μαθηματικά και εργαλεία προγραμματιστών - συμπεριλαμβανομένου του γεννήτορα στατικών ιστότοπων που τροφοδοτεί αυτόν τον ιστότοπο.</p>"
+    ],
+    [
+      ">Web, templates and environment\\.</h2>",
+      ">Web, πρότυπα και περιβάλλον.</h2>"
+    ],
+    [
+      "<p class=\"cat-lede\">Starter templates, two industry-focused publications, a CSS framework, and the dotfiles that keep a development environment reproducible\\.</p>",
+      "<p class=\"cat-lede\">Πρότυπα εκκίνησης, δύο κλαδικές εκδόσεις, ένα framework CSS και τα dotfiles που εξασφαλίζουν ένα αναπαραγώγιμο περιβάλλον ανάπτυξης.</p>"
+    ],
+    [
+      ">What licence are these projects released under\\?</summary>",
+      ">Υπό ποια άδεια δημοσιεύονται αυτά τα έργα;</summary>"
+    ],
+    [
+      ">Are these projects production-ready\\?</summary>",
+      ">Είναι αυτά τα έργα έτοιμα για παραγωγή;</summary>"
+    ],
+    [
+      ">How can I contribute or report an issue\\?</summary>",
+      ">Πώς μπορώ να συνεισφέρω ή να αναφέρω ένα πρόβλημα;</summary>"
+    ],
+    [
+      ">Can I use these libraries in a regulated banking environment\\?</summary>",
+      ">Μπορώ να χρησιμοποιήσω αυτές τις βιβλιοθήκες σε ένα ρυθμιζόμενο τραπεζικό περιβάλλον;</summary>"
+    ],
+    [
+      ">Do you offer commercial support or consulting\\?</summary>",
+      ">Προσφέρετε εμπορική υποστήριξη ή συμβουλευτική;</summary>"
+    ],
+    [
+      ">How do I follow new releases\\?</summary>",
+      ">Πώς μπορώ να παρακολουθώ τις νέες δημοσιεύσεις;</summary>"
+    ],
+    [
+      "(<summary[^>]*>Sous quelle licence ces projets sont-ils publiés \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Όλα τα έργα δημοσιεύονται υπό την άδεια <strong>Apache-2.0</strong>. Το αρχείο <code>LICENSE</code> στη ρίζα κάθε αποθετηρίου αποτελεί την επίσημη αναφορά.</p></section>"
+    ],
+    [
+      "(<summary[^>]*>Ces projets sont-ils prêts pour la production \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Εξαρτάται από το έργο. Οι βιβλιοθήκες που φέρουν την ένδειξη <em>v1.x</em> είναι σταθεροποιημένες και δοκιμασμένες υπό φορτίο. Οι εκδόσεις πριν την v1 αποτελούν στέρεες βάσεις αλλά μπορεί να εξελιχθούν ακόμη. Το README κάθε αποθετηρίου προσδιορίζει την τρέχουσα κατάσταση. Αν χρειάζεστε συγκεκριμένη εγγύηση για χρήση σε παραγωγή, <a href=\"/el/contact/\">επικοινωνήστε μαζί μου</a>.</p></section>"
+    ],
+    [
+      "(<summary[^>]*>Comment puis-je contribuer ou signaler un problème \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Κάθε έργο διαθέτει δημόσιο αποθετήριο GitHub στο <a href=\"https://github.com/sebastienrousseau\" rel=\"external noopener\">github.com/sebastienrousseau</a>. Ανοίξτε ένα issue που περιγράφει το πρόβλημα (ένα ελάχιστο παράδειγμα αναπαραγωγής εκτιμάται) ή ένα pull request συνδεδεμένο με ένα issue. Οι συνεισφορές διέπονται από το <em>Developer Certificate of Origin</em> και απαιτούν υπογεγραμμένα commits.</p></section>"
+    ],
+    [
+      "(<summary[^>]*>Puis-je utiliser ces bibliothèques dans un environnement bancaire régulé \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Ναι, με τις συνήθεις προφυλάξεις. Οι βιβλιοθήκες είναι ανεξάρτητα έργα open source, και όχι ρυθμιζόμενο προϊόν. Εφαρμόστε τις συνήθεις διαδικασίες σας για την αλυσίδα εφοδιασμού, την ασφάλεια και τον έλεγχο εξαρτήσεων - vendoring μέσω του εσωτερικού σας mirror, σάρωση SBOM, καρφίτσωμα ανά Git SHA ή κρυπτογραφικό αποτύπωμα - πριν από οποιαδήποτε ανάπτυξη σε παραγωγή στην υποδομή πληρωμών.</p></section>"
+    ],
+    [
+      "(<summary[^>]*>Proposez-vous du support commercial ou du conseil \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Ναι, κατόπιν επιλογής. Οι αναθέσεις αφορούν τη μετάβαση ISO&nbsp;20022, τους οδικούς χάρτες μετακβαντικής μετάβασης και την ΤΝ εφαρμοσμένη στις χρηματοοικονομικές υπηρεσίες. <a href=\"/el/contact/\">Επικοινωνήστε μαζί μου</a> με ένα σύντομο brief, το χρονοδιάγραμμά σας και τυχόν περιορισμούς.</p></section>"
+    ],
+    [
+      "(<summary[^>]*>Comment suivre les nouvelles publications \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Κάθε χρονολογημένο άρθρο του ιστότοπου ανακοινώνεται μέσω της <a href=\"/el/rss.xml\">ροής RSS</a> και του newsletter <a href=\"https://news.bankingonquantum.com\" rel=\"external noopener\">Banking On Quantum</a>. Τα επιμέρους αποθετήρια δημοσιεύουν επίσης releases στο GitHub που μπορείτε να παρακολουθείτε απευθείας.</p></section>"
+    ],
+    [
+      ">GET IN TOUCH<",
+      ">ΕΠΙΚΟΙΝΩΝΙΑ<"
+    ],
+    [
+      ">Have an idea\\? Let's build it\\.<",
+      "<>Μια ιδέα; Ας τη φτιάξουμε μαζί.<"
+    ],
+    [
+      ">Open-source collaboration, commissioned engineering, or a conversation about the future of payments\\. Whichever fits\\.<",
+      ">Συνεργασία open source, ανάθεση μηχανικής ή απλώς μια συζήτηση για το μέλλον των πληρωμών. Όπως σας ταιριάζει.<"
+    ],
+    [
+      "<p class=\"newsroom-kicker\">FEATURED</p>",
+      "<p class=\"newsroom-kicker\">ΠΡΟΤΕΙΝΟΜΕΝΟ</p>"
+    ],
+    [
+      ">Latest Music</h2>",
+      ">Πρόσφατη μουσική</h2>"
+    ],
+    [
+      ">Latest playlist</h2>",
+      ">Πρόσφατη playlist</h2>"
+    ],
+    [
+      ">Soulful, jazz and downtempo</h2>",
+      ">Soulful, jazz και downtempo</h2>"
+    ],
+    [
+      "<p class=\"newsroom-kicker\">MORNING & MOOD</p>",
+      "<p class=\"newsroom-kicker\">ΠΡΩΙ & ΑΤΜΟΣΦΑΙΡΑ</p>"
+    ],
+    [
+      ">Morning, mood and chill</h2>",
+      ">Πρωί, ατμόσφαιρα και chill</h2>"
+    ],
+    [
+      "<p class=\"newsroom-kicker\">ELECTRONIC</p>",
+      "<p class=\"newsroom-kicker\">ΗΛΕΚΤΡΟΝΙΚΗ</p>"
+    ],
+    [
+      ">Electronic, house and techno</h2>",
+      ">Ηλεκτρονική, house και techno</h2>"
+    ],
+    [
+      ">Pop, rock and alternative</h2>",
+      ">Pop, rock και εναλλακτικό</h2>"
+    ],
+    [
+      "<p class=\"newsroom-kicker\">FOCUS</p>",
+      "<p class=\"newsroom-kicker\">ΣΥΓΚΕΝΤΡΩΣΗ</p>"
+    ],
+    [
+      ">Focus and productivity</h2>",
+      ">Συγκέντρωση και παραγωγικότητα</h2>"
+    ],
+    [
+      ">Smooth Jazz, Neo Soul, and laid-back grooves[^<]+",
+      ">Smooth Jazz, Neo Soul και χαλαρά grooves. Playlists για όταν η μέρα ζητά να επιβραδύνεις."
+    ],
+    [
+      ">This page has a comprehensive list[^<]+",
+      ">Αυτή η σελίδα παρουσιάζει μια επιλογή από τις πιο δημοφιλείς και αναγνωρισμένες από την κριτική playlists του Spotify, καλύπτοντας ένα ευρύ φάσμα ειδών. Είτε είστε λάτρης της jazz, της soul, του hip-hop ή της ηλεκτρονικής μουσικής, θα βρείτε μια playlist στα γούστα σας."
+    ],
+    [
+      ">Step into the harmonious realm of TETRA\\.[^<]+",
+      ">Εισέλθετε στο αρμονικό βασίλειο του TETRA. Μια ευφορική playlist σχεδιασμένη να ανυψώσει το πνεύμα σας και να γεμίσει την ψυχή σας χαρά."
+    ],
+    [
+      ">Unwind and embrace the essence of summer with this curated selection of Jazz, Soul, R(?:&amp;|&)B and Neo Soul beats\\.",
+      ">Χαλαρώστε και αγκαλιάστε την ουσία του καλοκαιριού με αυτή την επιλογή από Jazz, Soul, R&amp;B και Neo Soul."
+    ],
+    [
+      ">A deep dive into the quintessential collection of Jazz, Soul, R(?:&amp;|&)B and Neo Soul beats\\.",
+      ">Μια βαθιά κατάδυση στην κατεξοχήν συλλογή από Jazz, Soul, R&amp;B και Neo Soul."
+    ],
+    [
+      ">Take a break from a busy day and relax with soothing nu jazz and downtempo beats\\.",
+      ">Κάντε ένα διάλειμμα σε μια φορτωμένη μέρα και χαλαρώστε με απαλό nu jazz και downtempo."
+    ],
+    [
+      ">Soulful tracks with a fashion-forward vibe\\. Music to set the tone for a productive and stylish day\\.",
+      ">Κομμάτια soul με πρωτοποριακή διάθεση. Η ιδανική μουσική για να δώσετε τον τόνο μιας παραγωγικής και κομψής μέρας."
+    ],
+    [
+      ">Celebrate the joy of life and dive into a world of vivid emotions, vibrant hues and soulful rhythms\\.",
+      ">Γιορτάστε τη χαρά της ζωής και βυθιστείτε σε έναν κόσμο έντονων συναισθημάτων, ζωηρών χρωμάτων και ρυθμών soul."
+    ],
+    [
+      ">Laid-back beats, house-influenced grooves and new deep house tracks\\.",
+      ">Χαλαρά beats, grooves εμπνευσμένα από τη house και νέα διαμάντια deep house."
+    ],
+    [
+      ">Seamlessly blending funky disco, house, French touch and other genres into an ultra-cool and energetic musical experience\\.",
+      ">Ένα ρευστό μείγμα funky disco, house, French touch και άλλων ειδών για μια εξαιρετικά cool και ενεργητική μουσική εμπειρία."
+    ],
+    [
+      ">A sonic voyage featuring Nu-Disco, French House, Electro and Disco House tunes from artists like Madeon and Fred Falke\\.",
+      ">Ένα ηχητικό ταξίδι που συνδυάζει Nu-Disco, French House, Electro και Disco House από καλλιτέχνες όπως ο Madeon και ο Fred Falke."
+    ],
+    [
+      ">Laid-back beats, hip-hop-influenced grooves and new indie pop tracks\\.",
+      ">Χαλαρά beats, grooves εμπνευσμένα από το hip-hop και νέα κομμάτια indie pop."
+    ],
+    [
+      ">Original Hip Hop, Rap and R(?:&amp;|&)B Flavor Sessions\\.",
+      ">Πρωτότυπα sessions με γεύσεις Hip Hop, Rap και R&amp;B."
+    ],
+    [
+      ">Brace yourself for hardcore rap and hip hop tracks\\.",
+      ">Ετοιμαστείτε για hardcore rap και hip hop."
+    ],
+    [
+      ">A few of the favourite hip-hop gems\\.",
+      ">Μερικά από τα αγαπημένα διαμάντια του hip-hop."
+    ],
+    [
+      ">Soulful beats and thoughtful lyrics\\. A captivating look into the world of contemporary hip hop, R(?:&amp;|&)B and rap\\.",
+      ">Beats soul και στοχαστικοί στίχοι. Μια συναρπαστική ματιά στο σύγχρονο hip hop, R&amp;B και rap."
+    ],
+    [
+      ">Laid-back vibes and mellow rhythms with this stunning playlist of Lo-Fi Hip Hop beats\\.",
+      ">Χαλαρές ατμόσφαιρες και απαλοί ρυθμοί σε αυτή την υπέροχη playlist Lo-Fi Hip Hop."
+    ],
+    [
+      ">Celebrate the diverse heritage of African music\\. From the soulful rhythms of Wassoulou to the lively beats of Londonko\\.",
+      ">Γιορτάστε την πλούσια ποικιλομορφία της αφρικανικής μουσικής. Από τους soul ρυθμούς του Wassoulou μέχρι τα ζωηρά beats του Londonko."
+    ],
+    [
+      "aria-label=\"Tag: ([^,]+), (\\d+) Posts\"",
+      "aria-label=\"Ετικέτα: \\1, \\2 άρθρα\""
+    ],
+    [
+      "(\\(\\d+) Posts\\)",
+      "\\1 άρθρα)"
+    ],
+    [
+      ">Featured Tags \\((\\d+)\\)</h2>",
+      ">Προτεινόμενες ετικέτες (\\1)</h2>"
+    ],
+    [
+      ">Featured Tags<",
+      ">Προτεινόμενες ετικέτες<"
+    ],
+    [
+      "<a class=\"pill ghost\" href=\"/el/contact/\">Get in touch</a>",
+      "<a class=\"pill ghost\" href=\"/el/contact/\">Επικοινωνήστε μαζί μου</a>"
+    ],
+    [
+      ">Get in touch</a>",
+      ">Επικοινωνήστε μαζί μου</a>"
+    ],
+    [
+      "Made with Static Site Generator: Rust-Powered SSG",
+      "Δημιουργήθηκε με Static Site Generator: SSG με τεχνολογία Rust"
+    ],
+    [
+      "Static Site Generator is a Rust-based static site generator built for performance, accessibility and SEO\\. Lightning-fast builds with first-class JSON-LD\\.",
+      "Το Static Site Generator είναι ένας γεννήτορας στατικών ιστότοπων σε Rust σχεδιασμένος για την απόδοση, την προσβασιμότητα και το SEO. Εξαιρετικά γρήγορα builds με ενσωματωμένη υποστήριξη JSON-LD."
+    ],
+    [
+      "Website created with Static Site Generator \\(SSG\\)",
+      "Ιστότοπος που δημιουργήθηκε με Static Site Generator (SSG)"
+    ],
+    [
+      "The Static Site Generator \\(SSG\\) is a lightning-fast tool for Search Engine Optimisation \\(SEO\\) and compliance to Accessibility Standards\\.",
+      "Το Static Site Generator (SSG) είναι ένα εξαιρετικά γρήγορο εργαλείο για το SEO και τη συμμόρφωση με τα πρότυπα προσβασιμότητας."
+    ],
+    [
+      "Topics &amp; Tags Index: AI, Payments, Quantum, Rust OSS",
+      "Ευρετήριο θεμάτων και ετικετών: ΤΝ, πληρωμές, κβαντικό, Rust OSS"
+    ],
+    [
+      "Browse Sebastien Rousseau's site by topic and tag: AI, payments, ISO 20022, post-quantum cryptography, Rust open source, and more\\.",
+      "Περιηγηθείτε στον ιστότοπο του Sebastien Rousseau ανά θέμα και ετικέτα: ΤΝ, πληρωμές, ISO 20022, μετακβαντική κρυπτογραφία, Rust open source, κ.λπ."
+    ],
+    [
+      "Website Accessibility Statement — Standards &amp; Contact",
+      "Δήλωση προσβασιμότητας ιστότοπου - πρότυπα και επικοινωνία"
+    ],
+    [
+      "This statement explains the accessibility of our website, what we are doing to address it, and how to contact us about web accessibility\\.",
+      "Αυτή η δήλωση εξηγεί την προσβασιμότητα του ιστότοπού μας, τι κάνουμε για να τη βελτιώσουμε, και πώς να επικοινωνήσετε μαζί μας σχετικά."
+    ],
+    [
+      "Privacy Statement — How Your Data Is Collected &amp; Used",
+      "Πολιτική απορρήτου - συλλογή και χρήση των δεδομένων σας"
+    ],
+    [
+      "This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Website",
+      "Αυτή η σελίδα σας ενημερώνει για τις πολιτικές μας σχετικά με τη συλλογή, τη χρήση και την κοινοποίηση των προσωπικών σας δεδομένων κατά την περιήγησή σας"
+    ],
+    [
+      "Let's Start a Conversation That Will Make a Real Difference",
+      "Ας ξεκινήσουμε μια συζήτηση που θα κάνει πραγματική διαφορά"
+    ],
+    [
+      "Have a question or comment\\? Please contact me using the form below\\. I am always happy to hear from you and will respond as soon as possible\\.",
+      "Έχετε μια ερώτηση ή ένα σχόλιο; Επικοινωνήστε μαζί μου μέσω της παρακάτω φόρμας. Χαίρομαι πάντα να σας ακούω και θα απαντήσω το συντομότερο δυνατό."
+    ],
+    [
+      "Website Terms &amp; Conditions of Use — Sebastien Rousseau",
+      "Όροι και προϋποθέσεις χρήσης - Sebastien Rousseau"
+    ],
+    [
+      "By accessing this website, you acknowledge and agree to be bound by these Terms and Conditions of Use and all applicable laws and regulations\\.",
+      "Με την πρόσβαση σε αυτόν τον ιστότοπο, αναγνωρίζετε και συμφωνείτε να δεσμεύεστε από τους παρόντες Όρους χρήσης και όλους τους ισχύοντες νόμους και κανονισμούς."
+    ],
+    [
+      ">Latest research<",
+      ">Πρόσφατη έρευνα<"
+    ],
+    [
+      ">Read latest research<",
+      ">Διαβάστε την πρόσφατη έρευνα<"
+    ],
+    [
+      ">Featured articles<",
+      ">Προτεινόμενα άρθρα<"
+    ],
+    [
+      ">All articles<",
+      ">Όλα τα άρθρα<"
+    ],
+    [
+      ">Read more<",
+      ">Διαβάστε περισσότερα<"
+    ],
+    [
+      ">Read full article<",
+      ">Διαβάστε ολόκληρο το άρθρο<"
+    ],
+    [
+      ">Newest first<",
+      ">Πρώτα τα πιο πρόσφατα<"
+    ],
+    [
+      ">Oldest first<",
+      ">Πρώτα τα παλαιότερα<"
+    ],
+    [
+      ">By topic<",
+      ">Ανά θέμα<"
+    ],
+    [
+      ">All topics<",
+      ">Όλα τα θέματα<"
+    ],
+    [
+      ">By tag<",
+      ">Ανά ετικέτα<"
+    ],
+    [
+      ">All tags<",
+      ">Όλες οι ετικέτες<"
+    ],
+    [
+      ">Published<",
+      ">Δημοσιεύτηκε<"
+    ],
+    [
+      ">Updated<",
+      ">Ενημερώθηκε<"
+    ],
+    [
+      ">Open source<",
+      ">Open source<"
+    ],
+    [
+      ">Authored & maintained<",
+      ">Συγγραφή και συντήρηση<"
+    ],
+    [
+      ">Open source for the future of finance\\.<",
+      ">Open source για το μέλλον των χρηματοοικονομικών.<"
+    ],
+    [
+      ">A portfolio of",
+      ">Ένα χαρτοφυλάκιο από"
+    ],
+    [
+      ">Start a conversation<",
+      ">Ξεκινήστε μια συζήτηση<"
+    ],
+    [
+      ">Drop me a line<",
+      ">Γράψτε μου<"
+    ],
+    [
+      ">Learn more<",
+      ">Μάθετε περισσότερα<"
+    ],
+    [
+      ">Subscribe<",
+      ">Εγγραφή<"
+    ],
+    [
+      ">Follow<",
+      ">Ακολουθήστε<"
+    ],
+    [
+      ">Latest<",
+      ">Πρόσφατα<"
+    ],
+    [
+      "<h1>White Papers (?:&amp;|&) Research</h1>",
+      "<h1>Λευκές βίβλοι και έρευνα</h1>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/post-quantum-cryptography/[^\"]*\">Post-Quantum Cryptography</a></h3>",
+      "<h3><a href=\"/el/sujets/post-quantum-cryptography/index.html\">Μετακβαντική κρυπτογραφία</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/iso-20022-payments/[^\"]*\">ISO 20022 &amp; Payments</a></h3>",
+      "<h3><a href=\"/el/sujets/iso-20022-payments/index.html\">ISO 20022 &amp; Πληρωμές</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/applied-ai-banking/[^\"]*\">Applied AI in Banking</a></h3>",
+      "<h3><a href=\"/el/sujets/applied-ai-banking/index.html\">ΤΝ εφαρμοσμένη στην τραπεζική</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/rust-open-source/[^\"]*\">Rust &amp; Open Source</a></h3>",
+      "<h3><a href=\"/el/sujets/rust-open-source/index.html\">Rust open source</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/blockchain-digital-assets/[^\"]*\">Blockchain &amp; Digital Assets</a></h3>",
+      "<h3><a href=\"/el/sujets/blockchain-digital-assets/index.html\">Blockchain &amp; ψηφιακά περιουσιακά στοιχεία</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-lede\">Tracks to kick off the day or shift the room\\. Fashion\\-forward soul, vivid colour, and laid\\-back energy\\.</p>",
+      "<p class=\"newsroom-lede\">Κομμάτια για να ξεκινήσετε τη μέρα ή να αλλάξετε την ατμόσφαιρα. Κομψή soul, ζωηρά χρώματα και χαλαρή ενέργεια.</p>"
+    ],
+    [
+      "<p class=\"newsroom-lede\">Funky disco, French touch and electro\\. Energetic listening for movement, focus or the dance floor\\.</p>",
+      "<p class=\"newsroom-lede\">Funky disco, French touch και electro. Μια ενεργητική ακρόαση για την κίνηση, τη συγκέντρωση ή την πίστα.</p>"
+    ],
+    [
+      "<p class=\"newsroom-lede\">From original Hip Hop sessions to hardcore rap, contemporary R&B and Lo\\-Fi\\. The full breadth of beats\\.</p>",
+      "<p class=\"newsroom-lede\">Από πρωτότυπα sessions Hip Hop μέχρι hardcore rap, περνώντας από το σύγχρονο R&B και το Lo-Fi. Όλη η γκάμα των beats.</p>"
+    ]
+  ]
+}

@@ -1,0 +1,296 @@
+{
+  "patches": [
+    [
+      "aria-label=\"Newsletter signup\"",
+      "aria-label=\"Εγγραφή στο newsletter\""
+    ],
+    [
+      "Banking On Quantum — research notes on payments, AI (?:&amp;|&) post-quantum crypto\\. No spam\\.",
+      "Banking On Quantum - σημειώσεις έρευνας για τις πληρωμές, την ΤΝ και τη μετακβαντική κρυπτογραφία. Χωρίς spam."
+    ],
+    [
+      "placeholder=\"?you@bank\\.com\"?",
+      "placeholder=\"you@bank.com\""
+    ],
+    [
+      "value=\"Newsletter signup — sebastienrousseau\\.com\"",
+      "value=\"Εγγραφή newsletter - sebastienrousseau.com\""
+    ],
+    [
+      ">Subscribe</button>",
+      ">Εγγραφή</button>"
+    ],
+    [
+      ">Skip to main content</a>",
+      ">Μετάβαση στο κύριο περιεχόμενο</a>"
+    ],
+    [
+      "aria-label=\"Toggle navigation\"",
+      "aria-label=\"Εναλλαγή πλοήγησης\""
+    ],
+    [
+      "title=\"Toggle navigation\"",
+      "title=\"Εναλλαγή πλοήγησης\""
+    ],
+    [
+      "aria-label=\"?Primary\"?(?=[\\s>])",
+      "aria-label=\"Κύρια πλοήγηση\""
+    ],
+    [
+      "aria-label=\"Switch to dark theme\"",
+      "aria-label=\"Εναλλαγή σε σκούρο θέμα\""
+    ],
+    [
+      "aria-label=\"Switch to light theme\"",
+      "aria-label=\"Εναλλαγή σε ανοιχτό θέμα\""
+    ],
+    [
+      "title=\"Switch theme\"",
+      "title=\"Αλλαγή θέματος\""
+    ],
+    [
+      "aria-label=\"Search \\(Cmd or Ctrl \\+ K\\)\"",
+      "aria-label=\"Αναζήτηση (Cmd ή Ctrl + K)\""
+    ],
+    [
+      "title=\"Search \\(⌘K\\)\"",
+      "title=\"Αναζήτηση (⌘K)\""
+    ],
+    [
+      "aria-label=\"Get in touch\"",
+      "aria-label=\"Επικοινωνία\""
+    ],
+    [
+      ">Get in touch ›</a>",
+      ">Επικοινωνήστε ›</a>"
+    ],
+    [
+      ">Get in touch</a>",
+      ">Επικοινωνήστε</a>"
+    ],
+    [
+      "aria-label=\"Sebastien Rousseau home\"",
+      "aria-label=\"Αρχική του Sebastien Rousseau\""
+    ],
+    [
+      "<li><a href=\"?/about/index\\.html\"?>About</a></li>",
+      "<li><a href=\"/el/a-propos/index.html\">Σχετικά</a></li>"
+    ],
+    [
+      "<li><a href=\"?/papers/index\\.html\"?>Papers</a></li>",
+      "<li><a href=\"/el/publications/index.html\">Δημοσιεύσεις</a></li>"
+    ],
+    [
+      "<li><a href=\"?/topics/index\\.html\"?>Topics</a></li>",
+      "<li><a href=\"/el/sujets/index.html\">Θέματα</a></li>"
+    ],
+    [
+      "<li><a href=\"?/projects/index\\.html\"?>Projects</a></li>",
+      "<li><a href=\"/el/projets/index.html\">Έργα</a></li>"
+    ],
+    [
+      "<li><a href=\"?/articles/index\\.html\"?>Articles</a></li>",
+      "<li><a href=\"/el/articles/index.html\">Άρθρα</a></li>"
+    ],
+    [
+      "<li><a href=\"?/contact/index\\.html\"?>Contact</a></li>",
+      "<li><a href=\"/el/contact/index.html\">Επικοινωνία</a></li>"
+    ],
+    [
+      "(<a\\b[^>]*?\\bclass=\"?ap-brand\"?[^>]*?\\bhref=)\"?/index\\.html\"?",
+      "\\g<1>\"/el/index.html\""
+    ],
+    [
+      "<li><a href=\"?/playlists/index\\.html\"?>Playlists</a></li>",
+      "<li><a href=\"/el/playlists/index.html\">Λίστες αναπαραγωγής</a></li>"
+    ],
+    [
+      "aria-label=\"Back to top\"",
+      "aria-label=\"Επιστροφή στην κορυφή\""
+    ],
+    [
+      "<h2 class=\"?ap-foot-title\"?>Writing</h2>",
+      "<h2 class=\"ap-foot-title\">Αρθρογραφία</h2>"
+    ],
+    [
+      "<h2 class=\"?ap-foot-title\"?>Work</h2>",
+      "<h2 class=\"ap-foot-title\">Δραστηριότητα</h2>"
+    ],
+    [
+      "<h2 class=\"?ap-foot-title\"?>Reach</h2>",
+      "<h2 class=\"ap-foot-title\">Δίκτυα</h2>"
+    ],
+    [
+      "<a href=\"?/about/index\\.html\"?>About</a>",
+      "<a href=\"/el/a-propos/index.html\">Σχετικά</a>"
+    ],
+    [
+      "<a href=\"?/made-with-static-site-generator/index\\.html\"?>Made with Static Site Generator</a>",
+      "<a href=\"/el/concu-avec-static-site-generator/index.html\">Φτιαγμένο με Static Site Generator</a>"
+    ],
+    [
+      "<a href=\"?/papers/index\\.html\"?>Papers</a>",
+      "<a href=\"/el/publications/index.html\">Δημοσιεύσεις</a>"
+    ],
+    [
+      "<a href=\"?/tags/index\\.html\"?>Tags</a>",
+      "<a href=\"/el/etiquettes/index.html\">Ετικέτες</a>"
+    ],
+    [
+      "<a href=\"?/projects/index\\.html\"?>Projects</a>",
+      "<a href=\"/el/projets/index.html\">Έργα</a>"
+    ],
+    [
+      "<a href=\"?/playlists/index\\.html\"?>Playlists</a>",
+      "<a href=\"/el/playlists/index.html\">Λίστες αναπαραγωγής</a>"
+    ],
+    [
+      "<a href=\"?/contact/index\\.html\"?>Contact</a>",
+      "<a href=\"/el/contact/index.html\">Επικοινωνία</a>"
+    ],
+    [
+      "<a href=\"?/articles/index\\.html\"?>Articles</a>",
+      "<a href=\"/el/articles/index.html\">Άρθρα</a>"
+    ],
+    [
+      "aria-label=\"Social links\"",
+      "aria-label=\"Σύνδεσμοι κοινωνικών δικτύων\""
+    ],
+    [
+      "aria-label=\"Sebastien Rousseau on ",
+      "aria-label=\"Sebastien Rousseau στο "
+    ],
+    [
+      "alt=\"Sebastien Rousseau on ",
+      "alt=\"Sebastien Rousseau στο "
+    ],
+    [
+      "alt=\"Black and White Portrait of Sebastien Rousseau\"",
+      "alt=\"Ασπρόμαυρο πορτρέτο του Sebastien Rousseau\""
+    ],
+    [
+      "© Copyright 2007 - 2026 - Sebastien Rousseau\\. All rights reserved\\.",
+      "© Copyright 2007 - 2026 - Sebastien Rousseau. Με επιφύλαξη παντός δικαιώματος."
+    ],
+    [
+      "<a href=\"?/accessibility/index\\.html\"?>Accessibility</a>",
+      "<a href=\"/el/accessibilite/index.html\">Προσβασιμότητα</a>"
+    ],
+    [
+      "<a href=\"?/privacy/index\\.html\"?>Privacy</a>",
+      "<a href=\"/el/confidentialite/index.html\">Απόρρητο</a>"
+    ],
+    [
+      "<a href=\"?/terms/index\\.html\"?>Terms</a>",
+      "<a href=\"/el/conditions/index.html\">Όροι</a>"
+    ],
+    [
+      "placeholder=\"Search documentation\\.\\.\\.\"",
+      "placeholder=\"Αναζήτηση στην τεκμηρίωση...\""
+    ],
+    [
+      "aria-label=\"Search\"(?!\\s*\\()",
+      "aria-label=\"Αναζήτηση\""
+    ],
+    [
+      "<kbd>Esc</kbd>\\s*close",
+      "<kbd>Esc</kbd> κλείσιμο"
+    ],
+    [
+      "navigate</span>",
+      "πλοήγηση</span>"
+    ],
+    [
+      "<kbd>Enter</kbd>\\s*open",
+      "<kbd>Enter</kbd> άνοιγμα"
+    ],
+    [
+      "<span>Search</span>",
+      "<span>Αναζήτηση</span>"
+    ],
+    [
+      "aria-label=\"?Language\"?(?=[\\s>])",
+      "aria-label=\"Γλώσσα\""
+    ],
+    [
+      "aria-label=\"EN, Change language\"",
+      "aria-label=\"EL, Αλλαγή γλώσσας\""
+    ],
+    [
+      "title=\"Change language\"",
+      "title=\"Αλλαγή γλώσσας\""
+    ],
+    [
+      "title=\"Coming soon\"",
+      "title=\"Σύντομα\""
+    ],
+    [
+      "<span class=\"?ap-lang-current\"?>EN</span>",
+      "<span class=\"ap-lang-current\">EL</span>"
+    ],
+    [
+      "title=\"Atom Feed\"",
+      "title=\"Ροή Atom\""
+    ],
+    [
+      "title=\"RSS Feed\"",
+      "title=\"Ροή RSS\""
+    ],
+    [
+      "aria-label=\"Article summary\"",
+      "aria-label=\"Περίληψη του άρθρου\""
+    ],
+    [
+      "<strong>Key takeaways</strong>",
+      "<strong>Βασικά σημεία</strong>"
+    ],
+    [
+      "<strong>Related reading:</strong>",
+      "<strong>Σχετικά άρθρα:</strong>"
+    ],
+    [
+      "<h2 id=\"related-heading\" class=\"related-heading\">Related reading</h2>",
+      "<h2 id=\"related-heading\" class=\"related-heading\">Σχετικά άρθρα</h2>"
+    ],
+    [
+      ">Last reviewed <",
+      ">Τελευταία αναθεώρηση <"
+    ],
+    [
+      "aria-label=\"About the author\"",
+      "aria-label=\"Σχετικά με τον συγγραφέα\""
+    ],
+    [
+      ">Full profile</a>",
+      ">Πλήρες προφίλ</a>"
+    ],
+    [
+      "alt=\"Portrait of Sebastien Rousseau\"",
+      "alt=\"Πορτρέτο του Sebastien Rousseau\""
+    ],
+    [
+      "<p class=\"feat-eyebrow\">Get in touch</p>",
+      "<p class=\"feat-eyebrow\">Επικοινωνήστε</p>"
+    ],
+    [
+      ">Start a conversation</a>",
+      ">Ξεκινήστε μια συνομιλία</a>"
+    ],
+    [
+      "<a href=\"/articles/index\\.html\">Read latest research</a>",
+      "<a href=\"/articles/index.html\">Διαβάστε την πρόσφατη έρευνα</a>"
+    ],
+    [
+      "<a href=\"/contact/index\\.html\">Get in touch</a>",
+      "<a href=\"/contact/index.html\">Επικοινωνήστε</a>"
+    ],
+    [
+      "<li><a href=\"?/case-studies/index\\.html\"?>Case studies</a></li>",
+      "<li><a href=\"/el/etudes-de-cas/index.html\">Μελέτες περιπτώσεων</a></li>"
+    ],
+    [
+      "<a href=\"?/case-studies/index\\.html\"?>Case studies</a>",
+      "<a href=\"/el/etudes-de-cas/index.html\">Μελέτες περιπτώσεων</a>"
+    ]
+  ]
+}

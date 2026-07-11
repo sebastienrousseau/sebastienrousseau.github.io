@@ -1,0 +1,340 @@
+{
+  "patches": [
+    [
+      ">Authored &amp; maintained<",
+      ">రచించి, నిర్వహించబడినవి<"
+    ],
+    [
+      ">Authored & maintained<",
+      ">రచించి, నిర్వహించబడినవి<"
+    ],
+    [
+      ">Securing the future of banking<br>with agentic AI<br>and post-quantum cryptography\\.</h1>",
+      ">బ్యాంకింగ్ భవిష్యత్తును సురక్షితం చేయడం<br>ఏజెంటిక్ AIతో<br>మరియు పోస్ట్-క్వాంటం క్రిప్టోగ్రఫీతో.</h1>"
+    ],
+    [
+      ">Built for the edge\\. Architected for uncompromising resilience\\. Powering the next generation of global payments\\.</p>",
+      ">ఎడ్జ్ కోసం నిర్మించబడింది. రాజీ లేని స్థితిస్థాపకత కోసం రూపొందించబడింది. ప్రపంచ చెల్లింపుల తరువాతి తరానికి శక్తినిస్తోంది.</p>"
+    ],
+    [
+      "id=practice>Open source for the<br>future of finance\\.</h2>",
+      "id=practice>ఫైనాన్స్ భవిష్యత్తు కోసం<br>ఓపెన్ సోర్స్.</h2>"
+    ],
+    [
+      ">Open source for the future of finance\\.<",
+      ">ఫైనాన్స్ భవిష్యత్తు కోసం ఓపెన్ సోర్స్.<"
+    ],
+    [
+      ">A portfolio of Python, Rust and JavaScript libraries I created and maintain\\. Open source, free to use, and applied to wholesale payments, cross-border settlement, financial data and quantum-resistant cryptography\\.<",
+      ">నేను రూపొందించి నిర్వహించే Python, Rust మరియు JavaScript లైబ్రరీల పోర్ట్‌ఫోలియో. ఓపెన్ సోర్స్, ఉచితంగా వాడుకోదగినవి, హోల్‌సేల్ చెల్లింపులు, సరిహద్దు దాటి పరిష్కారం, ఆర్థిక డేటా మరియు క్వాంటం-నిరోధక క్రిప్టోగ్రఫీకి వర్తింపజేయబడ్డాయి.<"
+    ],
+    [
+      ">Browse all projects<",
+      ">అన్ని ప్రాజెక్టులను విహరించండి<"
+    ],
+    [
+      ">Python · Payments<",
+      ">Python · చెల్లింపులు<"
+    ],
+    [
+      ">Python · Cross-border<",
+      ">Python · సరిహద్దు దాటి<"
+    ],
+    [
+      ">Python · Finance<",
+      ">Python · ఫైనాన్స్<"
+    ],
+    [
+      ">Rust · Security<",
+      ">Rust · భద్రత<"
+    ],
+    [
+      ">Rust · Quantum<",
+      ">Rust · క్వాంటం<"
+    ],
+    [
+      ">Rust · YAML<",
+      ">Rust · YAML<"
+    ],
+    [
+      ">Learn about ([A-Za-z0-9 ()_-]+)</a>",
+      ">\\1 గురించి తెలుసుకోండి</a>"
+    ],
+    [
+      "<p>A Python library that automates <strong>ISO 20022 pain\\.001</strong> payment file creation from CSV or SQLite\\.\\s*Built for the global migration from MT/MX to structured messages across SWIFT, SEPA and major schemes\\.</p>",
+      "<p>CSV లేదా SQLite నుండి <strong>ISO 20022 pain.001</strong> చెల్లింపు ఫైల్ సృష్టిని ఆటోమేట్ చేసే Python లైబ్రరీ. SWIFT, SEPA మరియు ప్రధాన స్కీమ్‌లలో MT/MX నుండి నిర్మాణాత్మక సందేశాలకు ప్రపంచ మార్పు కోసం నిర్మించబడింది.</p>"
+    ],
+    [
+      "<p>Generate, validate and deliver <strong>ISO 20022 pacs\\.008</strong> FI-to-FI customer credit transfer messages\\.\\s*JSON Schema, XSD validation, IBAN across 75 countries, GDPR/PCI-DSS-compliant PII masking\\.</p>",
+      "<p>FI-నుండి-FI కస్టమర్ క్రెడిట్ ట్రాన్స్‌ఫర్ <strong>ISO 20022 pacs.008</strong> సందేశాలను రూపొందించండి, ధృవీకరించండి మరియు అందించండి. JSON Schema, XSD ధృవీకరణ, 75 దేశాలలో IBAN, GDPR/PCI-DSS-కు అనుగుణమైన PII మాస్కింగ్.</p>"
+    ],
+    [
+      "<p>A finance-grade Python toolkit that turns multi-format bank statements into structured data\\.\\s*Designed for the realities of real-world statement files and the audit demands of regulated environments\\.</p>",
+      "<p>బహుళ-ఫార్మాట్ బ్యాంక్ స్టేట్‌మెంట్‌లను నిర్మాణాత్మక డేటాగా మార్చే ఫైనాన్స్-గ్రేడ్ Python టూల్‌కిట్. వాస్తవ ప్రపంచ స్టేట్‌మెంట్ ఫైళ్ల వాస్తవికతలు మరియు నియంత్రిత పరిసరాల ఆడిట్ డిమాండ్‌ల కోసం రూపొందించబడింది.</p>"
+    ],
+    [
+      "<p>A Rust library implementing <strong>secure hash and digest algorithms</strong> for password encryption and verification\\.\\s*Designed with a quantum-resistant posture for the post-PQC era of authentication\\.</p>",
+      "<p>పాస్‌వర్డ్ ఎన్‌క్రిప్షన్ మరియు ధృవీకరణ కోసం <strong>సురక్షిత హాష్ మరియు డైజెస్ట్ అల్గారిథమ్‌లను</strong> అమలు చేసే Rust లైబ్రరీ. ప్రామాణీకరణ యొక్క పోస్ట్-PQC యుగం కోసం క్వాంటం-నిరోధక భంగిమతో రూపొందించబడింది.</p>"
+    ],
+    [
+      "<p>A robust Rust implementation of <strong>CRYSTALS-Kyber</strong>, the NIST FIPS 203 standard for general-purpose post-quantum encryption\\.\\s*The foundation for quantum-resistant payment authentication\\.</p>",
+      "<p>NIST FIPS 203 సాధారణ-ప్రయోజన పోస్ట్-క్వాంటం ఎన్‌క్రిప్షన్ ప్రమాణమైన <strong>CRYSTALS-Kyber</strong> యొక్క పటిష్ట Rust అమలు. క్వాంటం-నిరోధక చెల్లింపు ప్రామాణీకరణకు పునాది.</p>"
+    ],
+    [
+      "<p>A <strong>pure-Rust YAML 1\\.2 ecosystem</strong>\\. Zero unsafe, 100% spec compliance \\(406 / 406 official suite\\), streaming-first serde, lossless CST and JSON-Schema validation\\.\\s*Library \\+ CLI \\(noyafmt, noyavalidate\\) \\+ LSP \\+ MCP \\+ WASM bindings\\.</p>",
+      "<p>ఒక <strong>స్వచ్ఛ-Rust YAML 1.2 పర్యావరణ వ్యవస్థ</strong>. జీరో unsafe, 100% స్పెక్ అనుగుణ్యత (406 / 406 అధికారిక సూట్), స్ట్రీమింగ్-ఫస్ట్ serde, నష్టం లేని CST మరియు JSON-Schema ధృవీకరణ. లైబ్రరీ + CLI (noyafmt, noyavalidate) + LSP + MCP + WASM బైండింగ్‌లు.</p>"
+    ],
+    [
+      "Quantum computing threatens the cryptographic foundations of financial services\\.\\s*Payments, from real-time to cross-border settlement, rely on protections that quantum computing will eventually render obsolete\\.",
+      "క్వాంటం కంప్యూటింగ్ ఆర్థిక సేవల క్రిప్టోగ్రాఫిక్ పునాదులను ముప్పులో పెడుతోంది. చెల్లింపులు, రియల్-టైమ్ నుండి సరిహద్దు దాటి పరిష్కారం వరకు, క్వాంటం కంప్యూటింగ్ చివరికి వాడుకలో లేకుండా చేసే రక్షణలపై ఆధారపడతాయి."
+    ],
+    [
+      ">Quantum-Safe Payments white paper · September 2025 · Read the paper<",
+      ">Quantum-Safe Payments వైట్ పేపర్ · సెప్టెంబర్ 2025 · పేపర్‌ను చదవండి<"
+    ],
+    [
+      ">Read the paper<",
+      ">పేపర్‌ను చదవండి<"
+    ],
+    [
+      ">Quantum-Safe Payments\\.</h2>",
+      ">క్వాంటం-సురక్షిత చెల్లింపులు.</h2>"
+    ],
+    [
+      ">Quantum-Safe Payments\\.<",
+      ">క్వాంటం-సురక్షిత చెల్లింపులు.<"
+    ],
+    [
+      ">Industry white paper for the Emerging Payments Association Asia\\.\\s*The structural threat quantum computing poses to payment infrastructure, and the case for coordinated action now\\.<",
+      ">Emerging Payments Association Asia కోసం పరిశ్రమ వైట్ పేపర్. చెల్లింపు మౌలిక సదుపాయాలపై క్వాంటం కంప్యూటింగ్ కలిగించే నిర్మాణాత్మక ముప్పు, మరియు ఇప్పుడే సమన్వయ చర్యకు అవసరం.<"
+    ],
+    [
+      ">Why the payments industry must act now\\.<",
+      ">చెల్లింపు పరిశ్రమ ఇప్పుడే ఎందుకు చర్య తీసుకోవాలి.<"
+    ],
+    [
+      ">Regulators are treating harvest-now-decrypt-later as a credible present risk\\. This paper outlines the structural threat and the urgent case for coordinated action across wholesale payment rails\\.</p>",
+      ">'ఇప్పుడు సేకరించి తర్వాత డీక్రిప్ట్ చేయడం'ను నియంత్రణ సంస్థలు ఇప్పుడు విశ్వసనీయ ప్రస్తుత ప్రమాదంగా పరిగణిస్తున్నాయి. ఈ వైట్ పేపర్ నిర్మాణాత్మక ముప్పును మరియు హోల్‌సేల్ చెల్లింపు రైల్‌లలో సమన్వయ చర్యకు తక్షణ అవసరాన్ని వివరిస్తుంది.</p>"
+    ],
+    [
+      ">Latest<",
+      ">తాజా<"
+    ],
+    [
+      ">From the desk\\.<",
+      ">డెస్క్ నుండి.<"
+    ],
+    [
+      ">Recent research and writing on quantum-safe cryptography, ISO 20022 migration and the future of wholesale payments\\.<",
+      ">క్వాంటం-సురక్షిత క్రిప్టోగ్రఫీ, ISO 20022 మైగ్రేషన్ మరియు హోల్‌సేల్ చెల్లింపుల భవిష్యత్తుపై ఇటీవలి పరిశోధన మరియు రచనలు.<"
+    ],
+    [
+      "<p class=newsroom-excerpt>Stablecoins cannot pay yield under the GENIUS Act\\. BlackRock's BRSRV and BSTBL filings show the workaround — a tokenised money-market fund running alongside a regulated stablecoin to deliver yield through an adjacent, compliant rail\\.</p>",
+      "<p class=newsroom-excerpt>GENIUS Act కింద స్టేబుల్‌కాయిన్‌లు రాబడిని చెల్లించలేవు. BlackRock యొక్క BRSRV మరియు BSTBL ఫైలింగ్‌లు ఆ ఉపాయాన్ని బహిర్గతం చేస్తాయి: ఒక ప్రక్కనున్న, అనుగుణమైన రైల్ ద్వారా రాబడిని అందించడానికి నియంత్రిత స్టేబుల్‌కాయిన్‌తో పాటు నడిచే టోకనైజ్డ్ మనీ-మార్కెట్ ఫండ్.</p>"
+    ],
+    [
+      "<p class=newsroom-excerpt>Quantum risk has moved from research curiosity to active regulatory mandate\\. With the G7 roadmap published in January 2026 and BIS Project Leap proving feasibility in live payment systems, the board-level question is no longer whether to migrate\\.</p>",
+      "<p class=newsroom-excerpt>క్వాంటం ప్రమాదం పరిశోధన కుతూహలం నుండి క్రియాశీల నియంత్రణ ఆదేశంగా మారింది. జనవరి 2026లో ప్రచురించబడిన G7 రోడ్‌మ్యాప్ మరియు ప్రత్యక్ష చెల్లింపు వ్యవస్థల్లో సాధ్యతను నిరూపిస్తున్న BIS Project Leapతో, బోర్డు-స్థాయి ప్రశ్న ఇక మైగ్రేట్ చేయాలా వద్దా అనేది కాదు.</p>"
+    ],
+    [
+      "<p class=newsroom-excerpt>From November 2026, SWIFT CBPR\\+ rejects unstructured postal addresses in cross-border payment messages\\. Six months out, 65% of pacs\\.008 messages still ship non-compliant addresses and 44% of banks remain behind on the remediation programme\\.</p>",
+      "<p class=newsroom-excerpt>నవంబర్ 2026 నుండి, SWIFT CBPR+ సరిహద్దు దాటి చెల్లింపు సందేశాల్లో నిర్మాణం లేని తపాలా చిరునామాలను తిరస్కరిస్తుంది. ఆరు నెలల ముందు, 65% pacs.008 సందేశాలు ఇప్పటికీ అనుగుణం కాని చిరునామాలను పంపుతున్నాయి మరియు 44% బ్యాంకులు పరిష్కార కార్యక్రమంలో వెనుకబడి ఉన్నాయి.</p>"
+    ],
+    [
+      ">See all articles\\b",
+      ">అన్ని ఆర్టికల్‌లను చూడండి"
+    ],
+    [
+      "<p class=feat-eyebrow>Get in touch</p>",
+      "<p class=feat-eyebrow>సంప్రదించండి</p>"
+    ],
+    [
+      ">Unlocking the Future of Banking and Financial Services\\.<br>Discover the latest news from</h2>",
+      ">బ్యాంకింగ్ మరియు ఆర్థిక సేవల భవిష్యత్తును అన్‌లాక్ చేయడం.<br>తాజా విశ్లేషణలను కనుగొనండి</h2>"
+    ],
+    [
+      "<p class=\\\"feat-sub center\\\">Whether it's wholesale payments strategy, ISO 20022 migration, or quantum-safe cryptography for financial services\\. Happy to talk\\.</p>",
+      "<p class=\"feat-sub center\">హోల్‌సేల్ చెల్లింపు వ్యూహం, ISO 20022 మైగ్రేషన్ లేదా ఆర్థిక సేవల కోసం క్వాంటం-సురక్షిత క్రిప్టోగ్రఫీ. చర్చించడానికి సంతోషం.</p>"
+    ],
+    [
+      ">Start a conversation</a>",
+      ">సంభాషణ ప్రారంభించండి</a>"
+    ],
+    [
+      "<a class=pill href=\"?/articles/index\\.html\"?>Read latest research</a>",
+      "<a class=pill href=\"/te/articles/index.html\">తాజా పరిశోధనను చదవండి</a>"
+    ],
+    [
+      "<a class=\"pill ghost\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
+      "<a class=\"pill ghost\" href=\"/te/contact/index.html\">సంప్రదించండి</a>"
+    ],
+    [
+      "href=\"?/papers/index\\.html\"?>Read the paper</a>",
+      "href=\"/te/publications/index.html\">వైట్ పేపర్‌ను చదవండి</a>"
+    ],
+    [
+      "href=\"?/2026-05-15[^\"]*\"?>Read the article</a>",
+      "href=\"/te/2026-05-15-rendement-cache-decryptage-depots-blackrock-brsrv-bstbl-genius-act/index.html\">ఆర్టికల్‌ను చదవండి</a>"
+    ],
+    [
+      "<h2 class=ap-foot-title>Writing</h2>",
+      "<h2 class=ap-foot-title>రచనలు</h2>"
+    ],
+    [
+      "<h2 class=ap-foot-title>Work</h2>",
+      "<h2 class=ap-foot-title>పని</h2>"
+    ],
+    [
+      "<h2 class=ap-foot-title>Reach</h2>",
+      "<h2 class=ap-foot-title>నెట్‌వర్క్‌లు</h2>"
+    ],
+    [
+      "<a href=/about/index\\.html>About</a>",
+      "<a href=/te/a-propos/index.html>పరిచయం</a>"
+    ],
+    [
+      "<a href=/papers/index\\.html>Papers</a>",
+      "<a href=/te/publications/index.html>ప్రచురణలు</a>"
+    ],
+    [
+      "<a href=/projects/index\\.html>Projects</a>",
+      "<a href=/te/projets/index.html>ప్రాజెక్టులు</a>"
+    ],
+    [
+      "<a href=/playlists/index\\.html>Playlists</a>",
+      "<a href=/te/playlists/index.html>ప్లేలిస్ట్‌లు</a>"
+    ],
+    [
+      "<a href=/contact/index\\.html>Contact</a>",
+      "<a href=/te/contact/index.html>సంప్రదింపు</a>"
+    ],
+    [
+      "<a href=/tags/index\\.html>Tags</a>",
+      "<a href=/te/etiquettes/index.html>ట్యాగ్‌లు</a>"
+    ],
+    [
+      "<a href=/articles/index\\.html>Articles</a>",
+      "<a href=/te/articles/index.html>ఆర్టికల్‌లు</a>"
+    ],
+    [
+      "<a href=/made-with-static-site-generator/index\\.html>Made with Static Site Generator</a>",
+      "<a href=/te/concu-avec-static-site-generator/index.html>Static Site Generatorతో నిర్మించబడింది</a>"
+    ],
+    [
+      "<a href=/accessibility/index\\.html>Accessibility</a>",
+      "<a href=/te/accessibilite/index.html>ప్రాప్యత</a>"
+    ],
+    [
+      "<a href=/privacy/index\\.html>Privacy</a>",
+      "<a href=/te/confidentialite/index.html>గోప్యత</a>"
+    ],
+    [
+      "<a href=/terms/index\\.html>Terms</a>",
+      "<a href=/te/conditions/index.html>నిబంధనలు</a>"
+    ],
+    [
+      ">Experience<",
+      ">అనుభవం<"
+    ],
+    [
+      ">Brands along the way\\.<",
+      ">దారిలో కలిసిన బ్రాండ్‌లు.<"
+    ],
+    [
+      ">From global Tier-1 banks to consumer technology\\. Payments and digital product leadership across HSBC, PayPal, Barclays, Shazam, AKQA and Virgin Group\\.</p>",
+      ">ప్రపంచ Tier-1 బ్యాంకుల నుండి కన్స్యూమర్ టెక్నాలజీ వరకు. HSBC, PayPal, Barclays, Shazam, AKQA మరియు Virgin Groupలో చెల్లింపులు మరియు డిజిటల్ ఉత్పత్తి నాయకత్వం.</p>"
+    ],
+    [
+      "alt=\"PayPal logo\"",
+      "alt=\"PayPal లోగో\""
+    ],
+    [
+      "alt=\"Barclays logo\"",
+      "alt=\"Barclays లోగో\""
+    ],
+    [
+      "alt=\"Shazam logo\"",
+      "alt=\"Shazam లోగో\""
+    ],
+    [
+      "alt=\"AKQA logo\"",
+      "alt=\"AKQA లోగో\""
+    ],
+    [
+      "alt=\"Virgin logo\"",
+      "alt=\"Virgin లోగో\""
+    ],
+    [
+      "alt=\"HSBC logo\"",
+      "alt=\"HSBC లోగో\""
+    ],
+    [
+      ">Read more<",
+      ">మరింత చదవండి<"
+    ],
+    [
+      ">Read the article<",
+      ">ఆర్టికల్‌ను చదవండి<"
+    ],
+    [
+      ">Read latest research<",
+      ">తాజా పరిశోధనను చదవండి<"
+    ],
+    [
+      ">Read full article<",
+      ">పూర్తి ఆర్టికల్‌ను చదవండి<"
+    ],
+    [
+      ">Get in touch ›</a>",
+      ">సంప్రదించండి ›</a>"
+    ],
+    [
+      ">Payments · Stablecoins<",
+      ">చెల్లింపులు · స్టేబుల్‌కాయిన్‌లు<"
+    ],
+    [
+      ">Payments · ISO 20022<",
+      ">చెల్లింపులు · ISO 20022<"
+    ],
+    [
+      ">Quantum<",
+      ">క్వాంటం<"
+    ],
+    [
+      ">Quantum · Banking<",
+      ">క్వాంటం · బ్యాంకింగ్<"
+    ],
+    [
+      ">Quantum · Cryptography<",
+      ">క్వాంటం · క్రిప్టోగ్రఫీ<"
+    ],
+    [
+      ">Read the white paper</a>",
+      ">వైట్ పేపర్‌ను చదవండి</a>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>Hand-authoring <strong>ISO 20022 pain\\.001</strong> is fragile under SEPA and SWIFT cutovers\\.</dd></div><div><dt>Approach</dt><dd>Schema-driven Python that maps CSV or SQLite into validated payment XML\\.</dd></div><div><dt>Outcome</dt><dd>Ops ship pain\\.001 in minutes; the audit trail survives the migration\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> ISO 20022 · SEPA \\+ SWIFT</p>",
+      "<dl class=pao><div><dt>సమస్య</dt><dd><strong>ISO 20022 pain.001</strong>ను చేతితో రాయడం SEPA మరియు SWIFT కటోవర్‌ల కింద పెళుసుగా ఉంటుంది.</dd></div><div><dt>విధానం</dt><dd>CSV లేదా SQLiteను ధృవీకరించిన చెల్లింపు XMLగా మ్యాప్ చేసే స్కీమా-ఆధారిత Python.</dd></div><div><dt>ఫలితం</dt><dd>ఆప్స్ నిమిషాల్లో pain.001ను పంపుతాయి; ఆడిట్ ట్రయిల్ మైగ్రేషన్‌ను తట్టుకుంటుంది.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>ప్రభావం</span> ISO 20022 · SEPA + SWIFT</p>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>FI-to-FI credit transfers fail audit when XSD, IBAN and PII rules diverge\\.</dd></div><div><dt>Approach</dt><dd>One library: JSON Schema, XSD, IBAN across 75 countries, GDPR-grade masking\\.</dd></div><div><dt>Outcome</dt><dd>Cross-border credit transfers that pass first-time at the regulator\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> 75 countries · IBAN</p>",
+      "<dl class=pao><div><dt>సమస్య</dt><dd>XSD, IBAN మరియు PII నియమాలు విభేదించినప్పుడు FI-నుండి-FI క్రెడిట్ ట్రాన్స్‌ఫర్‌లు ఆడిట్‌లో విఫలమవుతాయి.</dd></div><div><dt>విధానం</dt><dd>ఒకే లైబ్రరీ: JSON Schema, XSD, 75 దేశాలలో IBAN, GDPR-గ్రేడ్ మాస్కింగ్.</dd></div><div><dt>ఫలితం</dt><dd>నియంత్రణ సంస్థ వద్ద మొదటిసారే ఉత్తీర్ణమయ్యే సరిహద్దు దాటి క్రెడిట్ ట్రాన్స్‌ఫర్‌లు.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>ప్రభావం</span> 75 దేశాలు · IBAN</p>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>Statement formats trap reconciliation teams in manual rekeying\\.</dd></div><div><dt>Approach</dt><dd>One Python toolkit that normalises multi-format statements with audit-grade lineage\\.</dd></div><div><dt>Outcome</dt><dd>Reconciliation runs without bespoke per-bank glue code\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> Multi-format · Audit-grade</p>",
+      "<dl class=pao><div><dt>సమస్య</dt><dd>స్టేట్‌మెంట్ ఫార్మాట్‌లు రీకన్సిలియేషన్ బృందాలను మాన్యువల్ రీకీయింగ్‌లో చిక్కుకుపోయేలా చేస్తాయి.</dd></div><div><dt>విధానం</dt><dd>ఆడిట్-గ్రేడ్ లీనేజ్‌తో బహుళ-ఫార్మాట్ స్టేట్‌మెంట్‌లను సాధారణీకరించే ఒకే Python టూల్‌కిట్.</dd></div><div><dt>ఫలితం</dt><dd>ప్రతి బ్యాంకుకు ప్రత్యేక గ్లూ కోడ్ లేకుండా రీకన్సిలియేషన్ నడుస్తుంది.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>ప్రభావం</span> బహుళ-ఫార్మాట్ · ఆడిట్-గ్రేడ్</p>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>Pre-PQC hashing libraries leave credential stores quantum-exposed\\.</dd></div><div><dt>Approach</dt><dd>Memory-safe Rust hash and digest library with a post-quantum posture\\.</dd></div><div><dt>Outcome</dt><dd>Drop-in secure hashing for services planning PQC migration\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> Memory-safe · Rust</p>",
+      "<dl class=pao><div><dt>సమస్య</dt><dd>PQC-ముందు హాషింగ్ లైబ్రరీలు క్రెడెన్షియల్ స్టోర్‌లను క్వాంటంకు బహిర్గతం చేస్తాయి.</dd></div><div><dt>విధానం</dt><dd>పోస్ట్-క్వాంటం భంగిమతో మెమరీ-సేఫ్ Rust హాష్ మరియు డైజెస్ట్ లైబ్రరీ.</dd></div><div><dt>ఫలితం</dt><dd>PQC మైగ్రేషన్‌ను ప్లాన్ చేస్తున్న సేవలకు డ్రాప్-ఇన్ సురక్షిత హాషింగ్.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>ప్రభావం</span> మెమరీ-సేఫ్ · Rust</p>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>Tier-1 banks carry harvest-now-decrypt-later exposure on every TLS session\\.</dd></div><div><dt>Approach</dt><dd>Pure-Rust <strong>CRYSTALS-Kyber</strong> \\(NIST FIPS 203\\) that plugs into existing auth flows\\.</dd></div><div><dt>Outcome</dt><dd>Post-quantum key exchange in production-grade Rust, independently validated\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> NIST FIPS 203</p>",
+      "<dl class=pao><div><dt>సమస్య</dt><dd>Tier-1 బ్యాంకులు ప్రతి TLS సెషన్‌పై harvest-now-decrypt-later బహిర్గతతను మోస్తాయి.</dd></div><div><dt>విధానం</dt><dd>ఇప్పటి ఆథ్ ఫ్లోలలో అమరే స్వచ్ఛ-Rust <strong>CRYSTALS-Kyber</strong> (NIST FIPS 203).</dd></div><div><dt>ఫలితం</dt><dd>ప్రొడక్షన్-గ్రేడ్ Rustలో పోస్ట్-క్వాంటం కీ ఎక్స్‌చేంజ్, స్వతంత్రంగా ధృవీకరించబడింది.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>ప్రభావం</span> NIST FIPS 203</p>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>AI, MCP and config pipelines run on YAML parsers with C-backed UB and silent spec drift\\.</dd></div><div><dt>Approach</dt><dd>Pure-Rust YAML 1\\.2 across library, CLI, LSP, MCP and WASM — zero unsafe, full spec\\.</dd></div><div><dt>Outcome</dt><dd>YAML pipelines that stop being the supply-chain weak link\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> 406 \\/ 406 spec · 0 unsafe</p>",
+      "<dl class=pao><div><dt>సమస్య</dt><dd>AI, MCP మరియు కాన్ఫిగ్ పైప్‌లైన్‌లు C-ఆధారిత UB మరియు నిశ్శబ్ద స్పెక్ డ్రిఫ్ట్‌తో కూడిన YAML పార్సర్‌లపై నడుస్తాయి.</dd></div><div><dt>విధానం</dt><dd>లైబ్రరీ, CLI, LSP, MCP మరియు WASM అంతటా స్వచ్ఛ-Rust YAML 1.2, జీరో unsafe, పూర్తి స్పెక్.</dd></div><div><dt>ఫలితం</dt><dd>సప్లై-చెయిన్ బలహీన లింక్‌గా ఉండటం మానేసే YAML పైప్‌లైన్‌లు.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>ప్రభావం</span> 406 / 406 స్పెక్ · 0 unsafe</p>"
+    ]
+  ]
+}

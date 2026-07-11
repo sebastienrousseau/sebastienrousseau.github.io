@@ -1,0 +1,296 @@
+{
+  "patches": [
+    [
+      "aria-label=\"Newsletter signup\"",
+      "aria-label=\"செய்திமடல் பதிவு\""
+    ],
+    [
+      "Banking On Quantum — research notes on payments, AI (?:&amp;|&) post-quantum crypto\\. No spam\\.",
+      "Banking On Quantum: கொடுப்பனவுகள், AI மற்றும் பிந்தைய-குவாண்டம் குறியாக்கம் குறித்த ஆராய்ச்சிக் குறிப்புகள். ஸ்பேம் இல்லை."
+    ],
+    [
+      "placeholder=\"?you@bank\\.com\"?",
+      "placeholder=\"you@bank.com\""
+    ],
+    [
+      "value=\"Newsletter signup — sebastienrousseau\\.com\"",
+      "value=\"செய்திமடல் பதிவு - sebastienrousseau.com\""
+    ],
+    [
+      ">Subscribe</button>",
+      ">பதிவு செய்யுங்கள்</button>"
+    ],
+    [
+      ">Skip to main content</a>",
+      ">முக்கிய உள்ளடக்கத்திற்குச் செல்லவும்</a>"
+    ],
+    [
+      "aria-label=\"Toggle navigation\"",
+      "aria-label=\"வழிசெலுத்தலை மாற்று\""
+    ],
+    [
+      "title=\"Toggle navigation\"",
+      "title=\"வழிசெலுத்தலை மாற்று\""
+    ],
+    [
+      "aria-label=\"?Primary\"?(?=[\\s>])",
+      "aria-label=\"முதன்மை வழிசெலுத்தல்\""
+    ],
+    [
+      "aria-label=\"Switch to dark theme\"",
+      "aria-label=\"இருண்ட தீமுக்கு மாறு\""
+    ],
+    [
+      "aria-label=\"Switch to light theme\"",
+      "aria-label=\"ஒளி தீமுக்கு மாறு\""
+    ],
+    [
+      "title=\"Switch theme\"",
+      "title=\"தீம் மாற்று\""
+    ],
+    [
+      "aria-label=\"Search \\(Cmd or Ctrl \\+ K\\)\"",
+      "aria-label=\"தேடு (Cmd அல்லது Ctrl + K)\""
+    ],
+    [
+      "title=\"Search \\(⌘K\\)\"",
+      "title=\"தேடு (⌘K)\""
+    ],
+    [
+      "aria-label=\"Get in touch\"",
+      "aria-label=\"தொடர்பு கொள்ளுங்கள்\""
+    ],
+    [
+      ">Get in touch ›</a>",
+      ">தொடர்பு கொள்ளுங்கள் ›</a>"
+    ],
+    [
+      ">Get in touch</a>",
+      ">தொடர்பு கொள்ளுங்கள்</a>"
+    ],
+    [
+      "aria-label=\"Sebastien Rousseau home\"",
+      "aria-label=\"Sebastien Rousseau முகப்பு\""
+    ],
+    [
+      "<li><a href=\"?/about/index\\.html\"?>About</a></li>",
+      "<li><a href=\"/ta/a-propos/index.html\">பற்றி</a></li>"
+    ],
+    [
+      "<li><a href=\"?/papers/index\\.html\"?>Papers</a></li>",
+      "<li><a href=\"/ta/publications/index.html\">வெளியீடுகள்</a></li>"
+    ],
+    [
+      "<li><a href=\"?/topics/index\\.html\"?>Topics</a></li>",
+      "<li><a href=\"/ta/sujets/index.html\">தலைப்புகள்</a></li>"
+    ],
+    [
+      "<li><a href=\"?/projects/index\\.html\"?>Projects</a></li>",
+      "<li><a href=\"/ta/projets/index.html\">திட்டங்கள்</a></li>"
+    ],
+    [
+      "<li><a href=\"?/articles/index\\.html\"?>Articles</a></li>",
+      "<li><a href=\"/ta/articles/index.html\">கட்டுரைகள்</a></li>"
+    ],
+    [
+      "<li><a href=\"?/contact/index\\.html\"?>Contact</a></li>",
+      "<li><a href=\"/ta/contact/index.html\">தொடர்பு</a></li>"
+    ],
+    [
+      "(<a\\b[^>]*?\\bclass=\"?ap-brand\"?[^>]*?\\bhref=)\"?/index\\.html\"?",
+      "\\g<1>\"/ta/index.html\""
+    ],
+    [
+      "<li><a href=\"?/playlists/index\\.html\"?>Playlists</a></li>",
+      "<li><a href=\"/ta/playlists/index.html\">பிளேலிஸ்ட்கள்</a></li>"
+    ],
+    [
+      "aria-label=\"Back to top\"",
+      "aria-label=\"மேலே திரும்பு\""
+    ],
+    [
+      "<h2 class=\"?ap-foot-title\"?>Writing</h2>",
+      "<h2 class=\"ap-foot-title\">எழுத்துகள்</h2>"
+    ],
+    [
+      "<h2 class=\"?ap-foot-title\"?>Work</h2>",
+      "<h2 class=\"ap-foot-title\">பணி</h2>"
+    ],
+    [
+      "<h2 class=\"?ap-foot-title\"?>Reach</h2>",
+      "<h2 class=\"ap-foot-title\">தொடர்பு</h2>"
+    ],
+    [
+      "<a href=\"?/about/index\\.html\"?>About</a>",
+      "<a href=\"/ta/a-propos/index.html\">பற்றி</a>"
+    ],
+    [
+      "<a href=\"?/made-with-static-site-generator/index\\.html\"?>Made with Static Site Generator</a>",
+      "<a href=\"/ta/concu-avec-static-site-generator/index.html\">Static Site Generator உடன் உருவாக்கப்பட்டது</a>"
+    ],
+    [
+      "<a href=\"?/papers/index\\.html\"?>Papers</a>",
+      "<a href=\"/ta/publications/index.html\">வெளியீடுகள்</a>"
+    ],
+    [
+      "<a href=\"?/tags/index\\.html\"?>Tags</a>",
+      "<a href=\"/ta/etiquettes/index.html\">குறிச்சொற்கள்</a>"
+    ],
+    [
+      "<a href=\"?/projects/index\\.html\"?>Projects</a>",
+      "<a href=\"/ta/projets/index.html\">திட்டங்கள்</a>"
+    ],
+    [
+      "<a href=\"?/playlists/index\\.html\"?>Playlists</a>",
+      "<a href=\"/ta/playlists/index.html\">பிளேலிஸ்ட்கள்</a>"
+    ],
+    [
+      "<a href=\"?/contact/index\\.html\"?>Contact</a>",
+      "<a href=\"/ta/contact/index.html\">தொடர்பு</a>"
+    ],
+    [
+      "<a href=\"?/articles/index\\.html\"?>Articles</a>",
+      "<a href=\"/ta/articles/index.html\">கட்டுரைகள்</a>"
+    ],
+    [
+      "aria-label=\"Social links\"",
+      "aria-label=\"சமூக இணைப்புகள்\""
+    ],
+    [
+      "aria-label=\"Sebastien Rousseau on ",
+      "aria-label=\"Sebastien Rousseau, "
+    ],
+    [
+      "alt=\"Sebastien Rousseau on ",
+      "alt=\"Sebastien Rousseau, "
+    ],
+    [
+      "alt=\"Black and White Portrait of Sebastien Rousseau\"",
+      "alt=\"Sebastien Rousseau இன் கருப்பு வெள்ளை உருவப்படம்\""
+    ],
+    [
+      "© Copyright 2007 - 2026 - Sebastien Rousseau\\. All rights reserved\\.",
+      "© Copyright 2007 - 2026 - Sebastien Rousseau. அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை."
+    ],
+    [
+      "<a href=\"?/accessibility/index\\.html\"?>Accessibility</a>",
+      "<a href=\"/ta/accessibilite/index.html\">அணுகல்தன்மை</a>"
+    ],
+    [
+      "<a href=\"?/privacy/index\\.html\"?>Privacy</a>",
+      "<a href=\"/ta/confidentialite/index.html\">தனியுரிமை</a>"
+    ],
+    [
+      "<a href=\"?/terms/index\\.html\"?>Terms</a>",
+      "<a href=\"/ta/conditions/index.html\">விதிமுறைகள்</a>"
+    ],
+    [
+      "placeholder=\"Search documentation\\.\\.\\.\"",
+      "placeholder=\"ஆவணங்களில் தேடு...\""
+    ],
+    [
+      "aria-label=\"Search\"(?!\\s*\\()",
+      "aria-label=\"தேடு\""
+    ],
+    [
+      "<kbd>Esc</kbd>\\s*close",
+      "<kbd>Esc</kbd> மூடு"
+    ],
+    [
+      "navigate</span>",
+      "வழிசெலுத்து</span>"
+    ],
+    [
+      "<kbd>Enter</kbd>\\s*open",
+      "<kbd>Enter</kbd> திற"
+    ],
+    [
+      "<span>Search</span>",
+      "<span>தேடு</span>"
+    ],
+    [
+      "aria-label=\"?Language\"?(?=[\\s>])",
+      "aria-label=\"மொழி\""
+    ],
+    [
+      "aria-label=\"EN, Change language\"",
+      "aria-label=\"TA, மொழியை மாற்று\""
+    ],
+    [
+      "title=\"Change language\"",
+      "title=\"மொழியை மாற்று\""
+    ],
+    [
+      "title=\"Coming soon\"",
+      "title=\"விரைவில்\""
+    ],
+    [
+      "<span class=\"?ap-lang-current\"?>EN</span>",
+      "<span class=\"ap-lang-current\">TA</span>"
+    ],
+    [
+      "title=\"Atom Feed\"",
+      "title=\"Atom ஊட்டம்\""
+    ],
+    [
+      "title=\"RSS Feed\"",
+      "title=\"RSS ஊட்டம்\""
+    ],
+    [
+      "aria-label=\"Article summary\"",
+      "aria-label=\"கட்டுரைச் சுருக்கம்\""
+    ],
+    [
+      "<strong>Key takeaways</strong>",
+      "<strong>முக்கிய குறிப்புகள்</strong>"
+    ],
+    [
+      "<strong>Related reading:</strong>",
+      "<strong>தொடர்புடைய வாசிப்பு:</strong>"
+    ],
+    [
+      "<h2 id=\"related-heading\" class=\"related-heading\">Related reading</h2>",
+      "<h2 id=\"related-heading\" class=\"related-heading\">தொடர்புடைய வாசிப்பு</h2>"
+    ],
+    [
+      ">Last reviewed <",
+      ">கடைசியாக மதிப்பாய்வு செய்யப்பட்டது <"
+    ],
+    [
+      "aria-label=\"About the author\"",
+      "aria-label=\"ஆசிரியர் பற்றி\""
+    ],
+    [
+      ">Full profile</a>",
+      ">முழு சுயவிவரம்</a>"
+    ],
+    [
+      "alt=\"Portrait of Sebastien Rousseau\"",
+      "alt=\"Sebastien Rousseau இன் உருவப்படம்\""
+    ],
+    [
+      "<p class=\"feat-eyebrow\">Get in touch</p>",
+      "<p class=\"feat-eyebrow\">தொடர்பு கொள்ளுங்கள்</p>"
+    ],
+    [
+      ">Start a conversation</a>",
+      ">உரையாடலைத் தொடங்குங்கள்</a>"
+    ],
+    [
+      "<a href=\"/articles/index\\.html\">Read latest research</a>",
+      "<a href=\"/articles/index.html\">சமீபத்திய ஆராய்ச்சியைப் படிக்கவும்</a>"
+    ],
+    [
+      "<a href=\"/contact/index\\.html\">Get in touch</a>",
+      "<a href=\"/contact/index.html\">தொடர்பு கொள்ளுங்கள்</a>"
+    ],
+    [
+      "<li><a href=\"?/case-studies/index\\.html\"?>Case studies</a></li>",
+      "<li><a href=\"/ta/etudes-de-cas/index.html\">வழக்கு ஆய்வுகள்</a></li>"
+    ],
+    [
+      "<a href=\"?/case-studies/index\\.html\"?>Case studies</a>",
+      "<a href=\"/ta/etudes-de-cas/index.html\">வழக்கு ஆய்வுகள்</a>"
+    ]
+  ]
+}

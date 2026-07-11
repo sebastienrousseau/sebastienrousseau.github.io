@@ -1,0 +1,340 @@
+{
+  "patches": [
+    [
+      ">Authored &amp; maintained<",
+      ">نوشته و نگهداری‌شده<"
+    ],
+    [
+      ">Authored & maintained<",
+      ">نوشته و نگهداری‌شده<"
+    ],
+    [
+      ">Securing the future of banking<br>with agentic AI<br>and post-quantum cryptography\\.</h1>",
+      ">تأمین امنیت آیندهٔ بانکداری<br>با هوش مصنوعی عاملی<br>و رمزنگاری پساکوانتومی.</h1>"
+    ],
+    [
+      ">Built for the edge\\. Architected for uncompromising resilience\\. Powering the next generation of global payments\\.</p>",
+      ">ساخته‌شده برای لبه. معماری‌شده برای تاب‌آوری بی‌مصالحه. در قلب نسل بعدی پرداخت‌های جهانی.</p>"
+    ],
+    [
+      "id=practice>Open source for the<br>future of finance\\.</h2>",
+      "id=practice>متن‌باز برای<br>آیندهٔ مالیه.</h2>"
+    ],
+    [
+      ">Open source for the future of finance\\.<",
+      ">متن‌باز برای آیندهٔ مالیه.<"
+    ],
+    [
+      ">A portfolio of Python, Rust and JavaScript libraries I created and maintain\\. Open source, free to use, and applied to wholesale payments, cross-border settlement, financial data and quantum-resistant cryptography\\.<",
+      ">مجموعه‌ای از کتابخانه‌های پایتون، Rust و جاوااسکریپت که خودم ساخته و نگهداری می‌کنم. متن‌باز، آزاد برای استفاده، و به‌کاررفته در پرداخت‌های عمده، تسویهٔ فرامرزی، داده‌های مالی و رمزنگاری مقاوم در برابر کوانتوم.<"
+    ],
+    [
+      ">Browse all projects<",
+      ">مرور همهٔ پروژه‌ها<"
+    ],
+    [
+      ">Python · Payments<",
+      ">پایتون · پرداخت‌ها<"
+    ],
+    [
+      ">Python · Cross-border<",
+      ">پایتون · فرامرزی<"
+    ],
+    [
+      ">Python · Finance<",
+      ">پایتون · مالیه<"
+    ],
+    [
+      ">Rust · Security<",
+      ">Rust · امنیت<"
+    ],
+    [
+      ">Rust · Quantum<",
+      ">Rust · کوانتوم<"
+    ],
+    [
+      ">Rust · YAML<",
+      ">Rust · YAML<"
+    ],
+    [
+      ">Learn about ([A-Za-z0-9 ()_-]+)</a>",
+      ">بیشتر دربارهٔ \\1 بدانید</a>"
+    ],
+    [
+      "<p>A Python library that automates <strong>ISO 20022 pain\\.001</strong> payment file creation from CSV or SQLite\\.\\s*Built for the global migration from MT/MX to structured messages across SWIFT, SEPA and major schemes\\.</p>",
+      "<p>یک کتابخانهٔ پایتون که ایجاد فایل‌های پرداخت <strong>ISO 20022 pain.001</strong> را از CSV یا SQLite خودکار می‌کند. ساخته‌شده برای مهاجرت جهانی از MT/MX به پیام‌های ساختاریافته در SWIFT، SEPA و طرح‌های اصلی.</p>"
+    ],
+    [
+      "<p>Generate, validate and deliver <strong>ISO 20022 pacs\\.008</strong> FI-to-FI customer credit transfer messages\\.\\s*JSON Schema, XSD validation, IBAN across 75 countries, GDPR/PCI-DSS-compliant PII masking\\.</p>",
+      "<p>پیام‌های انتقال اعتبار مشتری FI-به-FI با استاندارد <strong>ISO 20022 pacs.008</strong> را تولید، اعتبارسنجی و تحویل می‌دهد. JSON Schema، اعتبارسنجی XSD، IBAN در 75 کشور، پوشاندن داده‌های شخصی سازگار با GDPR/PCI-DSS.</p>"
+    ],
+    [
+      "<p>A finance-grade Python toolkit that turns multi-format bank statements into structured data\\.\\s*Designed for the realities of real-world statement files and the audit demands of regulated environments\\.</p>",
+      "<p>یک جعبه‌ابزار پایتون در سطح مالی که صورت‌حساب‌های بانکی چندقالبی را به داده‌های ساختاریافته تبدیل می‌کند. طراحی‌شده برای واقعیت‌های فایل‌های صورت‌حساب دنیای واقعی و الزامات حسابرسی محیط‌های تنظیم‌شده.</p>"
+    ],
+    [
+      "<p>A Rust library implementing <strong>secure hash and digest algorithms</strong> for password encryption and verification\\.\\s*Designed with a quantum-resistant posture for the post-PQC era of authentication\\.</p>",
+      "<p>یک کتابخانهٔ Rust که <strong>الگوریتم‌های هش و چکیدهٔ امن</strong> را برای رمزگذاری و راستی‌آزمایی گذرواژه پیاده‌سازی می‌کند. طراحی‌شده با رویکردی مقاوم در برابر کوانتوم برای عصر پسا-PQC احراز هویت.</p>"
+    ],
+    [
+      "<p>A robust Rust implementation of <strong>CRYSTALS-Kyber</strong>, the NIST FIPS 203 standard for general-purpose post-quantum encryption\\.\\s*The foundation for quantum-resistant payment authentication\\.</p>",
+      "<p>یک پیاده‌سازی Rust قدرتمند از <strong>CRYSTALS-Kyber</strong>، استاندارد NIST FIPS 203 برای رمزگذاری پساکوانتومی همه‌منظوره. بنیان احراز هویت پرداخت مقاوم در برابر کوانتوم.</p>"
+    ],
+    [
+      "<p>A <strong>pure-Rust YAML 1\\.2 ecosystem</strong>\\. Zero unsafe, 100% spec compliance \\(406 / 406 official suite\\), streaming-first serde, lossless CST and JSON-Schema validation\\.\\s*Library \\+ CLI \\(noyafmt, noyavalidate\\) \\+ LSP \\+ MCP \\+ WASM bindings\\.</p>",
+      "<p>یک <strong>اکوسیستم YAML 1.2 کاملاً Rust</strong>. بدون unsafe، انطباق 100٪ با مشخصات (406 / 406 مجموعهٔ رسمی)، serde جریان‌محور، CST بدون اتلاف و اعتبارسنجی JSON-Schema. کتابخانه + CLI (noyafmt، noyavalidate) + LSP + MCP + پیوندهای WASM.</p>"
+    ],
+    [
+      "Quantum computing threatens the cryptographic foundations of financial services\\.\\s*Payments, from real-time to cross-border settlement, rely on protections that quantum computing will eventually render obsolete\\.",
+      "رایانش کوانتومی بنیان‌های رمزنگارانهٔ خدمات مالی را تهدید می‌کند. پرداخت‌ها، از زمان واقعی تا تسویهٔ فرامرزی، به حفاظت‌هایی متکی‌اند که کوانتوم سرانجام آن‌ها را منسوخ خواهد کرد."
+    ],
+    [
+      ">Quantum-Safe Payments white paper · September 2025 · Read the paper<",
+      ">سفیدنامهٔ Quantum-Safe Payments · سپتامبر 2025 · خواندن سفیدنامه<"
+    ],
+    [
+      ">Read the paper<",
+      ">خواندن سفیدنامه<"
+    ],
+    [
+      ">Quantum-Safe Payments\\.</h2>",
+      ">پرداخت‌های مقاوم در برابر کوانتوم.</h2>"
+    ],
+    [
+      ">Quantum-Safe Payments\\.<",
+      ">پرداخت‌های مقاوم در برابر کوانتوم.<"
+    ],
+    [
+      ">Industry white paper for the Emerging Payments Association Asia\\.\\s*The structural threat quantum computing poses to payment infrastructure, and the case for coordinated action now\\.<",
+      ">سفیدنامهٔ صنعتی برای Emerging Payments Association Asia. تهدید ساختاری که رایانش کوانتومی بر زیرساخت پرداخت وارد می‌کند، و ضرورت اقدام هماهنگ همین حالا.<"
+    ],
+    [
+      ">Why the payments industry must act now\\.<",
+      ">چرا صنعت پرداخت باید همین حالا اقدام کند.<"
+    ],
+    [
+      ">Regulators are treating harvest-now-decrypt-later as a credible present risk\\. This paper outlines the structural threat and the urgent case for coordinated action across wholesale payment rails\\.</p>",
+      ">تنظیم‌گران اکنون «برداشت اکنون، رمزگشایی بعداً» را به‌عنوان یک خطر کنونی معتبر تلقی می‌کنند. این سفیدنامه تهدید ساختاری و ضرورت فوری اقدام هماهنگ در سراسر ریل‌های پرداخت عمده را تشریح می‌کند.</p>"
+    ],
+    [
+      ">Latest<",
+      ">جدیدترین<"
+    ],
+    [
+      ">From the desk\\.<",
+      ">از پشت میز کار.<"
+    ],
+    [
+      ">Recent research and writing on quantum-safe cryptography, ISO 20022 migration and the future of wholesale payments\\.<",
+      ">پژوهش‌ها و نوشته‌های اخیر دربارهٔ رمزنگاری مقاوم در برابر کوانتوم، مهاجرت ISO 20022 و آیندهٔ پرداخت‌های عمده.<"
+    ],
+    [
+      "<p class=newsroom-excerpt>Stablecoins cannot pay yield under the GENIUS Act\\. BlackRock's BRSRV and BSTBL filings show the workaround — a tokenised money-market fund running alongside a regulated stablecoin to deliver yield through an adjacent, compliant rail\\.</p>",
+      "<p class=newsroom-excerpt>استیبل‌کوین‌ها تحت GENIUS Act نمی‌توانند بازده پرداخت کنند. اسناد BRSRV و BSTBL شرکت BlackRock راه دور زدن را نشان می‌دهند: یک صندوق بازار پول توکنیزه‌شده که در کنار یک استیبل‌کوین تنظیم‌شده اجرا می‌شود تا بازده را از طریق یک ریل سازگار مجاور تحویل دهد.</p>"
+    ],
+    [
+      "<p class=newsroom-excerpt>Quantum risk has moved from research curiosity to active regulatory mandate\\. With the G7 roadmap published in January 2026 and BIS Project Leap proving feasibility in live payment systems, the board-level question is no longer whether to migrate\\.</p>",
+      "<p class=newsroom-excerpt>خطر کوانتومی از یک کنجکاوی پژوهشی به یک الزام فعال تنظیمی تبدیل شده است. با انتشار نقشه‌راه G7 در ژانویه 2026 و اثبات امکان‌پذیری در سامانه‌های پرداخت زنده توسط BIS Project Leap، پرسش در سطح هیئت‌مدیره دیگر این نیست که آیا باید مهاجرت کرد.</p>"
+    ],
+    [
+      "<p class=newsroom-excerpt>From November 2026, SWIFT CBPR\\+ rejects unstructured postal addresses in cross-border payment messages\\. Six months out, 65% of pacs\\.008 messages still ship non-compliant addresses and 44% of banks remain behind on the remediation programme\\.</p>",
+      "<p class=newsroom-excerpt>از نوامبر 2026، SWIFT CBPR+ آدرس‌های پستی بدون ساختار را در پیام‌های پرداخت فرامرزی رد می‌کند. با شش ماه فاصله، 65٪ از پیام‌های pacs.008 هنوز آدرس‌های ناسازگار ارسال می‌کنند و 44٪ از بانک‌ها همچنان از برنامهٔ اصلاح عقب‌اند.</p>"
+    ],
+    [
+      ">See all articles\\b",
+      ">دیدن همهٔ مقاله‌ها"
+    ],
+    [
+      "<p class=feat-eyebrow>Get in touch</p>",
+      "<p class=feat-eyebrow>تماس با من</p>"
+    ],
+    [
+      ">Unlocking the Future of Banking and Financial Services\\.<br>Discover the latest news from</h2>",
+      ">گشودن آیندهٔ بانکداری و خدمات مالی.<br>جدیدترین تحلیل‌ها را کشف کنید</h2>"
+    ],
+    [
+      "<p class=\\\"feat-sub center\\\">Whether it's wholesale payments strategy, ISO 20022 migration, or quantum-safe cryptography for financial services\\. Happy to talk\\.</p>",
+      "<p class=\"feat-sub center\">استراتژی پرداخت‌های عمده، مهاجرت ISO 20022 یا رمزنگاری مقاوم در برابر کوانتوم برای خدمات مالی، با کمال میل دربارهٔ آن گفتگو می‌کنم.</p>"
+    ],
+    [
+      ">Start a conversation</a>",
+      ">آغاز یک گفتگو</a>"
+    ],
+    [
+      "<a class=pill href=\"?/articles/index\\.html\"?>Read latest research</a>",
+      "<a class=pill href=\"/fa/articles/index.html\">خواندن پژوهش‌های اخیر</a>"
+    ],
+    [
+      "<a class=\"pill ghost\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
+      "<a class=\"pill ghost\" href=\"/fa/contact/index.html\">تماس با من</a>"
+    ],
+    [
+      "href=\"?/papers/index\\.html\"?>Read the paper</a>",
+      "href=\"/fa/publications/index.html\">خواندن سفیدنامه</a>"
+    ],
+    [
+      "href=\"?/2026-05-15[^\"]*\"?>Read the article</a>",
+      "href=\"/fa/2026-05-15-rendement-cache-decryptage-depots-blackrock-brsrv-bstbl-genius-act/index.html\">خواندن مقاله</a>"
+    ],
+    [
+      "<h2 class=ap-foot-title>Writing</h2>",
+      "<h2 class=ap-foot-title>نوشتار</h2>"
+    ],
+    [
+      "<h2 class=ap-foot-title>Work</h2>",
+      "<h2 class=ap-foot-title>فعالیت</h2>"
+    ],
+    [
+      "<h2 class=ap-foot-title>Reach</h2>",
+      "<h2 class=ap-foot-title>ارتباط</h2>"
+    ],
+    [
+      "<a href=/about/index\\.html>About</a>",
+      "<a href=/fa/a-propos/index.html>درباره</a>"
+    ],
+    [
+      "<a href=/papers/index\\.html>Papers</a>",
+      "<a href=/fa/publications/index.html>انتشارات</a>"
+    ],
+    [
+      "<a href=/projects/index\\.html>Projects</a>",
+      "<a href=/fa/projets/index.html>پروژه‌ها</a>"
+    ],
+    [
+      "<a href=/playlists/index\\.html>Playlists</a>",
+      "<a href=/fa/playlists/index.html>فهرست‌های پخش</a>"
+    ],
+    [
+      "<a href=/contact/index\\.html>Contact</a>",
+      "<a href=/fa/contact/index.html>تماس</a>"
+    ],
+    [
+      "<a href=/tags/index\\.html>Tags</a>",
+      "<a href=/fa/etiquettes/index.html>برچسب‌ها</a>"
+    ],
+    [
+      "<a href=/articles/index\\.html>Articles</a>",
+      "<a href=/fa/articles/index.html>مقاله‌ها</a>"
+    ],
+    [
+      "<a href=/made-with-static-site-generator/index\\.html>Made with Static Site Generator</a>",
+      "<a href=/fa/concu-avec-static-site-generator/index.html>ساخته‌شده با Static Site Generator</a>"
+    ],
+    [
+      "<a href=/accessibility/index\\.html>Accessibility</a>",
+      "<a href=/fa/accessibilite/index.html>دسترس‌پذیری</a>"
+    ],
+    [
+      "<a href=/privacy/index\\.html>Privacy</a>",
+      "<a href=/fa/confidentialite/index.html>حریم خصوصی</a>"
+    ],
+    [
+      "<a href=/terms/index\\.html>Terms</a>",
+      "<a href=/fa/conditions/index.html>شرایط</a>"
+    ],
+    [
+      ">Experience<",
+      ">تجربه<"
+    ],
+    [
+      ">Brands along the way\\.<",
+      ">برندهای طی مسیر.<"
+    ],
+    [
+      ">From global Tier-1 banks to consumer technology\\. Payments and digital product leadership across HSBC, PayPal, Barclays, Shazam, AKQA and Virgin Group\\.</p>",
+      ">از بانک‌های رتبه‌یک جهانی تا فناوری مصرفی. رهبری محصول در پرداخت‌ها و دیجیتال در HSBC، PayPal، Barclays، Shazam، AKQA و Virgin Group.</p>"
+    ],
+    [
+      "alt=\"PayPal logo\"",
+      "alt=\"لوگوی PayPal\""
+    ],
+    [
+      "alt=\"Barclays logo\"",
+      "alt=\"لوگوی Barclays\""
+    ],
+    [
+      "alt=\"Shazam logo\"",
+      "alt=\"لوگوی Shazam\""
+    ],
+    [
+      "alt=\"AKQA logo\"",
+      "alt=\"لوگوی AKQA\""
+    ],
+    [
+      "alt=\"Virgin logo\"",
+      "alt=\"لوگوی Virgin\""
+    ],
+    [
+      "alt=\"HSBC logo\"",
+      "alt=\"لوگوی HSBC\""
+    ],
+    [
+      ">Read more<",
+      ">بیشتر بخوانید<"
+    ],
+    [
+      ">Read the article<",
+      "<>خواندن مقاله<"
+    ],
+    [
+      ">Read latest research<",
+      ">خواندن پژوهش‌های اخیر<"
+    ],
+    [
+      ">Read full article<",
+      "<>خواندن مقالهٔ کامل<"
+    ],
+    [
+      ">Get in touch ›</a>",
+      ">تماس با من ›</a>"
+    ],
+    [
+      ">Payments · Stablecoins<",
+      ">پرداخت‌ها · استیبل‌کوین‌ها<"
+    ],
+    [
+      ">Payments · ISO 20022<",
+      ">پرداخت‌ها · ISO 20022<"
+    ],
+    [
+      ">Quantum<",
+      ">کوانتوم<"
+    ],
+    [
+      ">Quantum · Banking<",
+      ">کوانتوم · بانکداری<"
+    ],
+    [
+      ">Quantum · Cryptography<",
+      ">کوانتوم · رمزنگاری<"
+    ],
+    [
+      ">Read the white paper</a>",
+      ">خواندن سفیدنامه</a>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>Hand-authoring <strong>ISO 20022 pain\\.001</strong> is fragile under SEPA and SWIFT cutovers\\.</dd></div><div><dt>Approach</dt><dd>Schema-driven Python that maps CSV or SQLite into validated payment XML\\.</dd></div><div><dt>Outcome</dt><dd>Ops ship pain\\.001 in minutes; the audit trail survives the migration\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> ISO 20022 · SEPA \\+ SWIFT</p>",
+      "<dl class=pao><div><dt>مسئله</dt><dd>نگارش دستی <strong>ISO 20022 pain.001</strong> در جریان بازگردانی‌های SEPA و SWIFT شکننده است.</dd></div><div><dt>رویکرد</dt><dd>پایتون مبتنی بر schema که CSV یا SQLite را به XML پرداخت اعتبارسنجی‌شده نگاشت می‌کند.</dd></div><div><dt>نتیجه</dt><dd>تیم‌های عملیات فایل‌های pain.001 را در چند دقیقه ارسال می‌کنند؛ ردپای حسابرسی از مهاجرت جان سالم به در می‌برد.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>تأثیر</span> ISO 20022 · SEPA + SWIFT</p>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>FI-to-FI credit transfers fail audit when XSD, IBAN and PII rules diverge\\.</dd></div><div><dt>Approach</dt><dd>One library: JSON Schema, XSD, IBAN across 75 countries, GDPR-grade masking\\.</dd></div><div><dt>Outcome</dt><dd>Cross-border credit transfers that pass first-time at the regulator\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> 75 countries · IBAN</p>",
+      "<dl class=pao><div><dt>مسئله</dt><dd>انتقال‌های اعتباری FI-to-FI هنگام واگرایی قواعد XSD، IBAN و PII در حسابرسی مردود می‌شوند.</dd></div><div><dt>رویکرد</dt><dd>یک کتابخانه: JSON Schema، XSD، IBAN در 75 کشور، پوشاندن در سطح GDPR.</dd></div><div><dt>نتیجه</dt><dd>انتقال‌های اعتباری فرامرزی که نزد تنظیم‌گر بار اول قبول می‌شوند.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>تأثیر</span> 75 کشور · IBAN</p>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>Statement formats trap reconciliation teams in manual rekeying\\.</dd></div><div><dt>Approach</dt><dd>One Python toolkit that normalises multi-format statements with audit-grade lineage\\.</dd></div><div><dt>Outcome</dt><dd>Reconciliation runs without bespoke per-bank glue code\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> Multi-format · Audit-grade</p>",
+      "<dl class=pao><div><dt>مسئله</dt><dd>قالب‌های صورت‌حساب تیم‌های تطبیق را در بازتایپ دستی گرفتار می‌کنند.</dd></div><div><dt>رویکرد</dt><dd>یک جعبه‌ابزار پایتون که صورت‌حساب‌های چندقالبی را با تبارنامهٔ در سطح حسابرسی نرمال‌سازی می‌کند.</dd></div><div><dt>نتیجه</dt><dd>تطبیق بدون کد چسب اختصاصی برای هر بانک اجرا می‌شود.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>تأثیر</span> Multi-format · Audit-grade</p>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>Pre-PQC hashing libraries leave credential stores quantum-exposed\\.</dd></div><div><dt>Approach</dt><dd>Memory-safe Rust hash and digest library with a post-quantum posture\\.</dd></div><div><dt>Outcome</dt><dd>Drop-in secure hashing for services planning PQC migration\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> Memory-safe · Rust</p>",
+      "<dl class=pao><div><dt>مسئله</dt><dd>کتابخانه‌های هش پیشا-PQC مخازن اعتبارنامه را در معرض کوانتوم رها می‌کنند.</dd></div><div><dt>رویکرد</dt><dd>کتابخانهٔ هش و چکیدهٔ Rust ایمن از نظر حافظه با رویکرد پساکوانتومی.</dd></div><div><dt>نتیجه</dt><dd>هش امن آمادهٔ استفاده برای سرویس‌هایی که مهاجرت PQC را برنامه‌ریزی می‌کنند.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>تأثیر</span> Memory-safe · Rust</p>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>Tier-1 banks carry harvest-now-decrypt-later exposure on every TLS session\\.</dd></div><div><dt>Approach</dt><dd>Pure-Rust <strong>CRYSTALS-Kyber</strong> \\(NIST FIPS 203\\) that plugs into existing auth flows\\.</dd></div><div><dt>Outcome</dt><dd>Post-quantum key exchange in production-grade Rust, independently validated\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> NIST FIPS 203</p>",
+      "<dl class=pao><div><dt>مسئله</dt><dd>بانک‌های Tier-1 روی هر نشست TLS در معرض خطر «برداشت اکنون، رمزگشایی بعداً» هستند.</dd></div><div><dt>رویکرد</dt><dd>پیاده‌سازی کاملاً Rust از <strong>CRYSTALS-Kyber</strong> (NIST FIPS 203) که به جریان‌های احراز هویت موجود متصل می‌شود.</dd></div><div><dt>نتیجه</dt><dd>تبادل کلید پساکوانتومی در Rust با کیفیت تولید، اعتبارسنجی‌شده به‌طور مستقل.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>تأثیر</span> NIST FIPS 203</p>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>AI, MCP and config pipelines run on YAML parsers with C-backed UB and silent spec drift\\.</dd></div><div><dt>Approach</dt><dd>Pure-Rust YAML 1\\.2 across library, CLI, LSP, MCP and WASM — zero unsafe, full spec\\.</dd></div><div><dt>Outcome</dt><dd>YAML pipelines that stop being the supply-chain weak link\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> 406 \\/ 406 spec · 0 unsafe</p>",
+      "<dl class=pao><div><dt>مسئله</dt><dd>خطوط‌لولهٔ AI، MCP و پیکربندی روی تجزیه‌گرهای YAML با پشتوانهٔ C دارای رفتار تعریف‌نشده و دریفت خاموش مشخصات اجرا می‌شوند.</dd></div><div><dt>رویکرد</dt><dd>YAML 1.2 کاملاً Rust در کتابخانه، CLI، LSP، MCP و WASM، بدون unsafe، انطباق کامل با مشخصات.</dd></div><div><dt>نتیجه</dt><dd>خطوط‌لولهٔ YAML که دیگر حلقهٔ ضعیف زنجیرهٔ تأمین نیستند.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>تأثیر</span> 406 / 406 spec · 0 unsafe</p>"
+    ]
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "_comment": "Per-static-page metadata for the French mirror. Keys are the EN slug; each entry replaces the EN values in <title>, <meta name=description>, <meta name=keywords>, og:*, twitter:*, and the hero subtitle. STATIC_BODIES_FR in build_translations.py supplies the curated FR <main> body for pages that need more than a regex pass.",
+  "about": {
+    "title": "परिचय, Sebastien Rousseau",
+    "subtitle": "कृत्रिम बुद्धिमत्ता, पोस्ट-क्वांटम क्रिप्टोग्राफी आणि ब्लॉकचेन तंत्रज्ञानाच्या धोरणात्मक एकात्मीकरणाद्वारे बँकिंग आणि वित्तीय सेवांचे भविष्य घडवत आहे.",
+    "description": "Sebastien Rousseau, बँकिंगमधील वरिष्ठ तंत्रज्ञ : उपयोजित AI, ISO 20022 स्थलांतर, पोस्ट-क्वांटम क्रिप्टोग्राफी, घाऊक देयकांचे संरचनात्मक रूपांतर.",
+    "keywords": "Sebastien Rousseau, चरित्र, बँकिंग, देयके, AI, ISO 20022, पोस्ट-क्वांटम क्रिप्टोग्राफी, HSBC, PayPal, Barclays"
+  },
+  "papers": {
+    "title": "प्रकाशने, Sebastien Rousseau",
+    "subtitle": "देयके आणि सुरक्षा क्षेत्रातील वरिष्ठ नेत्यांसाठी उद्योग श्वेतपत्रे आणि उपयोजित संशोधन.",
+    "description": "AI, ISO 20022 देयके आणि पोस्ट-क्वांटम क्रिप्टोग्राफी यांवरील Sebastien Rousseau यांचे लेख, अहवाल आणि प्रकाशने.",
+    "keywords": "प्रकाशने, लेख, अहवाल, संशोधन, ISO 20022, AI, पोस्ट-क्वांटम क्रिप्टोग्राफी"
+  },
+  "projects": {
+    "title": "प्रकल्प, Sebastien Rousseau",
+    "subtitle": "वित्ताच्या भविष्यासाठी Python, Rust आणि JavaScript मधील ओपन सोर्स प्रकल्प.",
+    "description": "देयके, सीमापार निपटारा आणि क्वांटम-प्रतिरोधक क्रिप्टोग्राफीसाठी Sebastien Rousseau यांनी देखभाल केलेल्या ओपन सोर्स ग्रंथालयांचा पोर्टफोलिओ.",
+    "keywords": "ओपन सोर्स प्रकल्प, Python, Rust, देयके, ISO 20022, पोस्ट-क्वांटम क्रिप्टोग्राफी"
+  },
+  "topics": {
+    "title": "विषय, Sebastien Rousseau",
+    "subtitle": "AI, पोस्ट-क्वांटम क्रिप्टोग्राफी, ISO 20022 आणि देयकांचे भविष्य यांवरील लेख.",
+    "description": "विषयानुसार विश्लेषणे शोधा : उपयोजित AI, ISO 20022 देयके, पोस्ट-क्वांटम क्रिप्टोग्राफी, आणि घाऊक देयकांचे रूपांतर.",
+    "keywords": "विषय, संकल्पना, AI, देयके, ISO 20022, पोस्ट-क्वांटम क्रिप्टोग्राफी"
+  },
+  "tags": {
+    "title": "टॅग्ज, Sebastien Rousseau",
+    "subtitle": "थीमनुसार संकेतस्थळ पाहा : AI, देयके, पोस्ट-क्वांटम क्रिप्टोग्राफी, ओपन सोर्स.",
+    "description": "टॅगनुसार लेख पाहा : AI, ISO 20022, ब्लॉकचेन, पोस्ट-क्वांटम क्रिप्टोग्राफी आणि बरेच काही.",
+    "keywords": "टॅग्ज, tags, विषयानुसार संचरण"
+  },
+  "contact": {
+    "title": "संपर्क साधा, Sebastien Rousseau",
+    "subtitle": "एखादा प्रश्न आहे किंवा सल्ल्याची गरज आहे ? मला लिहा.",
+    "description": "देयक रूपांतर सल्ला, ISO 20022 स्थलांतर किंवा पोस्ट-क्वांटम धोरणासाठी Sebastien Rousseau यांच्याशी संपर्क साधा.",
+    "keywords": "संपर्क, सल्ला, देयके, ISO 20022, पोस्ट-क्वांटम क्रिप्टोग्राफी"
+  },
+  "accessibility": {
+    "title": "सुगम्यता, Sebastien Rousseau",
+    "subtitle": "अपंग व्यक्तींसाठी डिजिटल सुगम्यतेप्रति वचनबद्ध.",
+    "description": "सुगम्यता निवेदन : WCAG 2.2 AA अनुपालन, समावेशक तत्त्वे, अनुभव अभिप्राय आणि तक्रार नोंदणीसाठी संपर्क तपशील.",
+    "keywords": "सुगम्यता, WCAG, अनुपालन, डिजिटल समावेशन, लेखापरीक्षण"
+  },
+  "privacy": {
+    "title": "गोपनीयता धोरण, Sebastien Rousseau",
+    "subtitle": "तुमची गोपनीयता आमच्यासाठी महत्त्वाची आहे.",
+    "description": "हे संकेतस्थळ तुमचा डेटा कसा संकलित करते, वापरते आणि संरक्षित करते. निनावी प्रेक्षक मोजमाप, कुकीज, होस्टिंग आणि GDPR अधिकार.",
+    "keywords": "गोपनीयता, GDPR, कुकीज, वैयक्तिक डेटा, analytics"
+  },
+  "terms": {
+    "title": "वापर अटी, Sebastien Rousseau",
+    "subtitle": "संकेतस्थळाच्या सामान्य वापर अटी.",
+    "description": "sebastienrousseau.com संकेतस्थळाच्या सामान्य वापर अटी : आशय परवाना, निर्बंध, ट्रेडमार्क आणि अधिकारक्षेत्र.",
+    "keywords": "अटी, कायदेशीर सूचना, परवाना, copyright"
+  },
+  "made-with-static-site-generator": {
+    "title": "Static Site Generator ने बनवलेले, Sebastien Rousseau",
+    "subtitle": "पुढील पिढीचा स्थिर संकेतस्थळ जनरेटर कसा वापरायचा ते जाणून घ्या.",
+    "description": "हे संकेतस्थळ Static Site Generator ने बनवले आहे, कार्यक्षमता आणि SEO साठी अनुकूलित केलेला Rust मधील स्थिर संकेतस्थळ जनरेटर.",
+    "keywords": "Static Site Generator, SSG, Rust, कार्यक्षमता, SEO"
+  },
+  "playlists": {
+    "title": "प्लेलिस्ट्स, Sebastien Rousseau",
+    "subtitle": "डीप वर्क, सर्जनशीलता आणि अभियांत्रिकी मनोवृत्तीसाठी निवडक Spotify प्लेलिस्ट्स.",
+    "description": "Sebastien Rousseau यांची संगीत आणि श्राव्य निवड.",
+    "keywords": "प्लेलिस्ट्स, संगीत"
+  },
+  "404": {
+    "title": "पृष्ठ सापडले नाही, Sebastien Rousseau",
+    "subtitle": "क्षमस्व, हे पृष्ठ सापडत नाही.",
+    "description": "विनंती केलेले पृष्ठ सापडले नाही. मुखपृष्ठावर परत जा किंवा शोध वापरा.",
+    "keywords": "404, पृष्ठ सापडले नाही"
+  },
+  "offline": {
+    "title": "ऑफलाइन, Sebastien Rousseau",
+    "subtitle": "तुमचे कनेक्शन तपासा आणि पुन्हा प्रयत्न करा.",
+    "description": "तुम्ही ऑफलाइन आहात. आशयात प्रवेश करण्यासाठी पुन्हा कनेक्ट व्हा.",
+    "keywords": "ऑफलाइन, PWA"
+  },
+  "thanks": {
+    "title": "धन्यवाद, Sebastien Rousseau",
+    "subtitle": "माझ्याशी संपर्क साधल्याबद्दल धन्यवाद !",
+    "description": "तुमच्या संदेशाबद्दल धन्यवाद. मी लवकरच तुमच्याशी संपर्क साधेन.",
+    "keywords": "धन्यवाद"
+  }
+}
