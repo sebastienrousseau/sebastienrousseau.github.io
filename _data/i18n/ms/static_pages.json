@@ -1,0 +1,87 @@
+{
+  "_comment": "Per-static-page metadata for the French mirror. Keys are the EN slug; each entry replaces the EN values in <title>, <meta name=description>, <meta name=keywords>, og:*, twitter:*, and the hero subtitle. STATIC_BODIES_FR in build_translations.py supplies the curated FR <main> body for pages that need more than a regex pass.",
+  "about": {
+    "title": "Perihal - Sebastien Rousseau",
+    "subtitle": "Membentuk masa depan perbankan dan perkhidmatan kewangan melalui integrasi strategik kecerdasan buatan, kriptografi pasca-kuantum dan teknologi blockchain.",
+    "description": "Sebastien Rousseau, ahli teknologi kanan dalam perbankan: AI gunaan, migrasi ISO 20022, kriptografi pasca-kuantum, transformasi struktur pembayaran borong.",
+    "keywords": "Sebastien Rousseau, biografi, perbankan, pembayaran, AI, ISO 20022, kriptografi pasca-kuantum, HSBC, PayPal, Barclays"
+  },
+  "papers": {
+    "title": "Penerbitan - Sebastien Rousseau",
+    "subtitle": "Kertas putih industri dan penyelidikan gunaan untuk pemimpin kanan dalam pembayaran dan keselamatan.",
+    "description": "Artikel, laporan dan penerbitan oleh Sebastien Rousseau mengenai AI, pembayaran ISO 20022 dan kriptografi pasca-kuantum.",
+    "keywords": "penerbitan, artikel, laporan, penyelidikan, ISO 20022, AI, kriptografi pasca-kuantum"
+  },
+  "projects": {
+    "title": "Projek - Sebastien Rousseau",
+    "subtitle": "Projek sumber terbuka dalam Python, Rust dan JavaScript untuk masa depan kewangan.",
+    "description": "Portfolio pustaka sumber terbuka yang diselenggara oleh Sebastien Rousseau untuk pembayaran, penyelesaian rentas sempadan dan kriptografi kalis kuantum.",
+    "keywords": "projek sumber terbuka, Python, Rust, pembayaran, ISO 20022, kriptografi pasca-kuantum"
+  },
+  "topics": {
+    "title": "Topik - Sebastien Rousseau",
+    "subtitle": "Artikel mengenai AI, kriptografi pasca-kuantum, ISO 20022 dan masa depan pembayaran.",
+    "description": "Terokai analisis mengikut tema: AI gunaan, pembayaran ISO 20022, kriptografi pasca-kuantum, dan transformasi pembayaran borong.",
+    "keywords": "topik, tema, AI, pembayaran, ISO 20022, kriptografi pasca-kuantum"
+  },
+  "tags": {
+    "title": "Label - Sebastien Rousseau",
+    "subtitle": "Layari laman ini mengikut tema: AI, pembayaran, kriptografi pasca-kuantum, sumber terbuka.",
+    "description": "Layari artikel mengikut label: AI, ISO 20022, blockchain, kriptografi pasca-kuantum dan banyak lagi.",
+    "keywords": "label, tag, navigasi mengikut topik"
+  },
+  "contact": {
+    "title": "Hubungi saya - Sebastien Rousseau",
+    "subtitle": "Ada soalan atau perlukan nasihat? Hubungi saya.",
+    "description": "Berhubung dengan Sebastien Rousseau untuk perundingan transformasi pembayaran, migrasi ISO 20022 atau strategi pasca-kuantum.",
+    "keywords": "hubungi, perundingan, pembayaran, ISO 20022, kriptografi pasca-kuantum"
+  },
+  "accessibility": {
+    "title": "Kebolehcapaian - Sebastien Rousseau",
+    "subtitle": "Komited terhadap kebolehcapaian digital untuk golongan kurang upaya.",
+    "description": "Pernyataan kebolehcapaian: pematuhan WCAG 2.2 AA, prinsip inklusif, maklum balas pengalaman dan butiran hubungan untuk pelaporan.",
+    "keywords": "kebolehcapaian, WCAG, pematuhan, keterangkuman digital, audit"
+  },
+  "privacy": {
+    "title": "Dasar privasi - Sebastien Rousseau",
+    "subtitle": "Privasi anda penting bagi kami.",
+    "description": "Cara laman ini mengumpul, menggunakan dan melindungi data anda. Pengukuran audiens tanpa nama, kuki, pengehosan dan hak PDPA.",
+    "keywords": "privasi, PDPA, kuki, data peribadi, analitik"
+  },
+  "terms": {
+    "title": "Terma penggunaan - Sebastien Rousseau",
+    "subtitle": "Terma dan syarat am penggunaan laman.",
+    "description": "Terma dan syarat am penggunaan laman sebastienrousseau.com: lesen kandungan, sekatan, tanda dagangan dan bidang kuasa.",
+    "keywords": "terma, notis undang-undang, lesen, hak cipta"
+  },
+  "made-with-static-site-generator": {
+    "title": "Dibina dengan Static Site Generator - Sebastien Rousseau",
+    "subtitle": "Ketahui cara menggunakan penjana laman statik generasi baharu.",
+    "description": "Laman ini dibina dengan Static Site Generator, penjana laman statik dalam Rust yang dioptimumkan untuk prestasi dan SEO.",
+    "keywords": "Static Site Generator, SSG, Rust, prestasi, SEO"
+  },
+  "playlists": {
+    "title": "Senarai main - Sebastien Rousseau",
+    "subtitle": "Senarai main Spotify pilihan untuk kerja mendalam, kreativiti dan semangat jurutera.",
+    "description": "Pilihan muzik dan audio oleh Sebastien Rousseau.",
+    "keywords": "senarai main, muzik"
+  },
+  "404": {
+    "title": "Halaman tidak dijumpai - Sebastien Rousseau",
+    "subtitle": "Maaf, halaman ini tidak dapat ditemui.",
+    "description": "Halaman yang diminta tidak dapat ditemui. Kembali ke laman utama atau gunakan carian.",
+    "keywords": "404, halaman tidak dijumpai"
+  },
+  "offline": {
+    "title": "Luar talian - Sebastien Rousseau",
+    "subtitle": "Semak sambungan anda dan cuba lagi.",
+    "description": "Anda kini luar talian. Sambung semula untuk mengakses kandungan.",
+    "keywords": "luar talian, PWA"
+  },
+  "thanks": {
+    "title": "Terima kasih - Sebastien Rousseau",
+    "subtitle": "Terima kasih kerana menghubungi saya!",
+    "description": "Terima kasih atas mesej anda. Saya akan menghubungi anda tidak lama lagi.",
+    "keywords": "terima kasih"
+  }
+}

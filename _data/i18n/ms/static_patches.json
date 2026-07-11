@@ -1,0 +1,1020 @@
+{
+  "patches": [
+    [
+      "<a href=\"/\">Home</a> &middot; <span>Topics</span>",
+      "<a href=\"/ms/\">Laman Utama</a> &middot; <span>Topik</span>"
+    ],
+    [
+      ">Home<",
+      ">Laman Utama<"
+    ],
+    [
+      ">Topics</h1>",
+      ">Topik</h1>"
+    ],
+    [
+      ">PILLARS</p>",
+      ">PILAR</p>"
+    ],
+    [
+      "PILLAR · TOPIC",
+      "PILAR · TOPIK"
+    ],
+    [
+      "PILLAR · PROJECT",
+      "PILAR · PROJEK"
+    ],
+    [
+      "Curated topic clusters[^<]+",
+      "Kelompok topik terpilih. Pilih satu benang dan ikuti menerusi arkib."
+    ],
+    [
+      "aria-label=\"Post-Quantum Cryptography\"",
+      "aria-label=\"Kriptografi Pasca-Kuantum\""
+    ],
+    [
+      "aria-label=\"ISO 20022 &amp; Payments\"",
+      "aria-label=\"ISO 20022 &amp; Pembayaran\""
+    ],
+    [
+      "aria-label=\"Applied AI in Banking\"",
+      "aria-label=\"AI Gunaan dalam Perbankan\""
+    ],
+    [
+      "aria-label=\"Rust &amp; Open Source\"",
+      "aria-label=\"Rust &amp; Open Source\""
+    ],
+    [
+      "aria-label=\"Blockchain &amp; Digital Assets\"",
+      "aria-label=\"Blockchain &amp; Aset Digital\""
+    ],
+    [
+      "alt=\"Post-Quantum Cryptography — topic banner\"",
+      "alt=\"Kriptografi Pasca-Kuantum: sepanduk topik\""
+    ],
+    [
+      "alt=\"ISO 20022 &amp; Payments — topic banner\"",
+      "alt=\"ISO 20022 &amp; Pembayaran: sepanduk topik\""
+    ],
+    [
+      "alt=\"Applied AI in Banking — topic banner\"",
+      "alt=\"AI Gunaan dalam Perbankan: sepanduk topik\""
+    ],
+    [
+      "alt=\"Rust &amp; Open Source — topic banner\"",
+      "alt=\"Rust &amp; Open Source: sepanduk topik\""
+    ],
+    [
+      "alt=\"Blockchain &amp; Digital Assets — topic banner\"",
+      "alt=\"Blockchain &amp; Aset Digital: sepanduk topik\""
+    ],
+    [
+      "<h3><a href=\"/ms/topics/post-quantum-cryptography/[^\"]+\">Post-Quantum Cryptography</a></h3>",
+      "<h3><a href=\"/ms/topics/post-quantum-cryptography/index.html\">Kriptografi Pasca-Kuantum</a></h3>"
+    ],
+    [
+      "<h3><a href=\"/ms/topics/iso-20022-payments/[^\"]+\">ISO 20022 &amp; Payments</a></h3>",
+      "<h3><a href=\"/ms/topics/iso-20022-payments/index.html\">ISO 20022 &amp; Pembayaran</a></h3>"
+    ],
+    [
+      "<h3><a href=\"/ms/topics/applied-ai-banking/[^\"]+\">Applied AI in Banking</a></h3>",
+      "<h3><a href=\"/ms/topics/applied-ai-banking/index.html\">AI Gunaan dalam Perbankan</a></h3>"
+    ],
+    [
+      "<h3><a href=\"/ms/topics/rust-open-source/[^\"]+\">Rust &amp; Open Source</a></h3>",
+      "<h3><a href=\"/ms/topics/rust-open-source/index.html\">Rust &amp; Open Source</a></h3>"
+    ],
+    [
+      "<h3><a href=\"/ms/topics/blockchain-digital-assets/[^\"]+\">Blockchain &amp; Digital Assets</a></h3>",
+      "<h3><a href=\"/ms/topics/blockchain-digital-assets/index.html\">Blockchain &amp; Aset Digital</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Lattice-based cryptography, NIST PQC standards, quantum-safe payments,[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Kriptografi berasaskan kekisi, piawaian NIST PQC, pembayaran kalis kuantum dan ancaman « tuai sekarang, nyahsulit kemudian ». Nota penyelidikan, pustaka sumber terbuka dan buku panduan migrasi untuk pasukan keselamatan perkhidmatan kewangan.</p>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Cross-border message migration, structured-address compliance,[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Migrasi mesej rentas sempadan, pematuhan alamat berstruktur, SEPA Instant, SWIFT gpi dan rel pembayaran wholesale yang menyokong keseluruhannya. Alat, buku panduan dan kalendar kawal selia.</p>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Generative AI, multimodal LLMs, voice, and speech models[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">AI generatif, LLM multimodal, suara dan model pertuturan, serta bagaimana ia membentuk semula operasi perbankan, khidmat pelanggan dan kejuruteraan produk dalam institusi berprestij tinggi.</p>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Open-source Rust libraries I author and maintain:[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Pustaka Rust sumber terbuka yang saya tulis dan selenggara: pengelogan, penjanaan kod, tarikh-masa, primitif kriptografi, KEM berasaskan Kyber dan penjana laman statik Rust.</p>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Bitcoin, blockchain fundamentals, ERC-20 tokens, stablecoins,[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Bitcoin, asas blockchain, token ERC-20, stablecoin dan rangka kerja kawal selia sekitar rel pembayaran yang disokong aset digital.</p>"
+    ],
+    [
+      "(\\d+) article\\(s\\)</p>",
+      "\\1 artikel</p>"
+    ],
+    [
+      "INDUSTRY WHITE PAPER · EPAA",
+      "KERTAS PUTIH INDUSTRI · EPAA"
+    ],
+    [
+      "INDUSTRY WHITE PAPER",
+      "KERTAS PUTIH INDUSTRI"
+    ],
+    [
+      "PUBLICATION · WHITE PAPER",
+      "PENERBITAN · KERTAS PUTIH"
+    ],
+    [
+      ">RESEARCH NOTES</p>",
+      ">NOTA PENYELIDIKAN</p>"
+    ],
+    [
+      ">RESEARCH NOTE · QUANTUM<",
+      ">NOTA PENYELIDIKAN · KUANTUM<"
+    ],
+    [
+      ">RESEARCH · CRYPTOGRAPHY<",
+      ">PENYELIDIKAN · KRIPTOGRAFI<"
+    ],
+    [
+      ">RESEARCH · AI<",
+      ">PENYELIDIKAN · AI<"
+    ],
+    [
+      ">RESEARCH · QUANTUM FINANCE<",
+      ">PENYELIDIKAN · KEWANGAN KUANTUM<"
+    ],
+    [
+      ">RESEARCH · QUANTUM BANKING<",
+      ">PENYELIDIKAN · PERBANKAN KUANTUM<"
+    ],
+    [
+      "WHITE PAPER",
+      "KERTAS PUTIH"
+    ],
+    [
+      ">Read the white paper</a>",
+      ">Baca kertas putih</a>"
+    ],
+    [
+      "title=\"Read the white paper \\(PDF\\)\"",
+      "title=\"Baca kertas putih (PDF)\""
+    ],
+    [
+      ">About EPAA</a>",
+      "<>Perihal EPAA</a>"
+    ],
+    [
+      "title=\"Visit the Emerging Payments Association Asia\"",
+      "title=\"Lawati Emerging Payments Association Asia\""
+    ],
+    [
+      ">Buy &middot; \\$([0-9]+)\\.([0-9]+)</a>",
+      ">Beli &middot; $\\1.\\2</a>"
+    ],
+    [
+      "title=\"Buy the publication on PayPal\"",
+      "title=\"Beli penerbitan di PayPal\""
+    ],
+    [
+      ">Read the article</a>",
+      "<>Baca artikel</a>"
+    ],
+    [
+      " · Free download",
+      " · Muat turun percuma"
+    ],
+    [
+      "Free download<",
+      "Muat turun percuma<"
+    ],
+    [
+      ">Download<",
+      ">Muat turun<"
+    ],
+    [
+      ">Request access<",
+      "<>Minta akses<"
+    ],
+    [
+      ">English · PDF",
+      ">Bahasa Melayu · PDF"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-01-(\\d{2})\">January \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-01-\\2\">\\2 Januari \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-02-(\\d{2})\">February \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-02-\\2\">\\2 Februari \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-03-(\\d{2})\">March \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-03-\\2\">\\2 Mac \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-04-(\\d{2})\">April \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-04-\\2\">\\2 April \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-05-(\\d{2})\">May \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-05-\\2\">\\2 Mei \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-06-(\\d{2})\">June \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-06-\\2\">\\2 Jun \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-07-(\\d{2})\">July \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-07-\\2\">\\2 Julai \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-08-(\\d{2})\">August \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-08-\\2\">\\2 Ogos \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-09-(\\d{2})\">September \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-09-\\2\">\\2 September \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-09-01\">September \\d{4}</time>",
+      "<time datetime=\"\\1-09-01\">September \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-10-(\\d{2})\">October \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-10-\\2\">\\2 Oktober \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-11-(\\d{2})\">November \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-11-\\2\">\\2 November \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-12-(\\d{2})\">December \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-12-\\2\">\\2 Disember \\1</time>"
+    ],
+    [
+      ">A system for real-time speech-to-text transcription that leverages OpenAI Whisper and Metal Performance Shaders GPU acceleration on macOS to achieve sub-second latency at 8-12x real-time on M1 Max\\.<",
+      ">Sistem transkripsi suara-ke-teks masa nyata yang memanfaatkan OpenAI Whisper dan pecutan GPU Metal Performance Shaders pada macOS untuk mencapai kependaman bawah satu saat, 8 hingga 12× masa nyata pada M1 Max.<"
+    ],
+    [
+      ">A new paper suggests Shor\\'s algorithm could run on as few as 10,000 qubits\\. The threshold for cryptographically relevant quantum computing is dropping fast\\.<",
+      ">Sebuah kertas baharu mencadangkan algoritma Shor boleh berjalan dengan hanya 10,000 qubit. Ambang bagi pengkomputeran kuantum yang relevan secara kriptografi menurun dengan pantas.<"
+    ],
+    [
+      ">A bug in Yilei Chen's quantum algorithm for solving LWE has been found, temporarily securing lattice-based cryptography and highlighting the need for ongoing research\\.<",
+      ">Satu pepijat ditemui dalam algoritma kuantum Yilei Chen untuk menyelesaikan LWE, sementara mengamankan kriptografi berasaskan kekisi dan menonjolkan keperluan penyelidikan berterusan.<"
+    ],
+    [
+      ">New quantum algorithm solves a key cryptographic problem, urging accelerated research into quantum-safe security\\.<",
+      ">Algoritma kuantum baharu menyelesaikan satu masalah kriptografi utama, mendesak penyelidikan keselamatan kalis kuantum dipercepatkan.<"
+    ],
+    [
+      ">How Fully Homomorphic Encryption revolutionises data security in banking and financial services, preserving privacy against quantum-era threats\\.<",
+      ">Bagaimana penyulitan homomorfik penuh merevolusikan keselamatan data dalam perbankan dan perkhidmatan kewangan, memelihara privasi terhadap ancaman era kuantum.<"
+    ],
+    [
+      ">An analysis of Apple's MM1 paper on Multimodal Large Language Models — architecture, pre-training strategies and emerging capabilities\\.<",
+      ">Analisis kertas MM1 Apple mengenai model bahasa besar multimodal: seni bina, strategi pra-latihan dan keupayaan baru muncul.<"
+    ],
+    [
+      ">How IBM Qiskit and the Quantum Fourier Transform reshape credit ratio analysis in finance, offering unprecedented accuracy and speed\\.<",
+      ">Bagaimana IBM Qiskit dan transformasi Fourier kuantum membentuk semula analisis nisbah kredit dalam kewangan, menawarkan ketepatan dan kelajuan yang belum pernah ada.<"
+    ],
+    [
+      ">The transformative role of AI inside quantum algorithms for finance, focusing on their mathematical structure and banking applications\\.<",
+      ">Peranan transformatif AI dalam algoritma kuantum untuk kewangan, dengan tumpuan pada struktur matematiknya dan aplikasi perbankannya.<"
+    ],
+    [
+      ">As quantum computers threaten traditional encryption, Quantum Key Distribution \\(QKD\\) emerges as a structural answer for financial-grade security\\.<",
+      ">Sementara komputer kuantum mengancam penyulitan tradisional, pengagihan kunci kuantum (QKD) muncul sebagai jawapan berstruktur untuk keselamatan bertaraf kewangan.<"
+    ],
+    [
+      ">How CRYSTALS-Kyber, the NIST-selected quantum-resistant key-encapsulation mechanism, is reshaping cryptography for the quantum era\\.<",
+      ">Bagaimana CRYSTALS-Kyber, mekanisme enkapsulasi kunci kalis kuantum yang dipilih NIST, membentuk semula kriptografi pada era kuantum.<"
+    ],
+    [
+      ">What kind of research and papers do you publish\\?</summary>",
+      ">Apakah jenis penyelidikan dan penerbitan yang anda terbitkan?</summary>"
+    ],
+    [
+      "(<summary[^>]*>Quels types de recherches et publications publiez-vous \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Dua paksi wujud bersama. <strong>Kertas putih industri</strong>, dihasilkan untuk organisasi seperti Emerging Payments Association Asia (EPAA), meneliti transformasi berstruktur infrastruktur pembayaran, baru-baru ini kesan pengkomputeran kuantum yang relevan secara kriptografi terhadap rel penyelesaian wholesale dan masa nyata. <strong>Laporan penyelidikan gunaan</strong> menyasarkan topik teknikal khusus (contohnya: pengecaman suara masa nyata dengan Whisper + Metal Performance Shaders pada Apple Silicon) dan diterbitkan sebagai PDF yang boleh dibeli secara individu.</p></section>"
+    ],
+    [
+      ">How often do you release new papers\\?</summary>",
+      ">Berapa kerap anda menerbitkan kertas baharu?</summary>"
+    ],
+    [
+      "(<summary[^>]*>À quelle fréquence publiez-vous de nouveaux articles \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Secara tidak berkala, atas keutamaan kualiti berbanding kadar. Nota penyelidikan ringkas muncul setiap beberapa minggu apabila sesuatu kemajuan teknikal mewajarkannya. Kertas putih diterbitkan selari dengan kitaran industri (contohnya: kalendar kawal selia, kongres EPAA).</p></section>"
+    ],
+    [
+      ">About EPAA</p>",
+      "<>Perihal EPAA</p>"
+    ],
+    [
+      "<p[^>]*class=\\\"book-about\\\"[^>]*>The Emerging Payments Association Asia[^<]+",
+      "<p class=\"book-about\"><strong>Emerging Payments Association Asia (EPAA)</strong> ialah persatuan profesional industri pembayaran di rantau Asia-Pasifik, menghimpunkan bank, pemproses, fintech dan pengawal selia sekitar isu berstruktur merentas sektor."
+    ],
+    [
+      ">Quantum-Safe Payments: Why the Payments Industry Must Act Now<",
+      ">Pembayaran Kalis Kuantum: Mengapa Industri Pembayaran Perlu Bertindak Sekarang<"
+    ],
+    [
+      ">Accelerating Real-Time Speech Recognition with OpenAI Whisper and Metal Performance Shaders on macOS<",
+      ">Mempercepatkan Pengecaman Suara Masa Nyata dengan OpenAI Whisper dan Metal Performance Shaders pada macOS<"
+    ],
+    [
+      ">Recent research and analysis<",
+      ">Penyelidikan dan analisis terkini<"
+    ],
+    [
+      "September 2025 &middot; Emerging Payments Association Asia \\(EPAA\\)",
+      "September 2025 &middot; Emerging Payments Association Asia (EPAA)"
+    ],
+    [
+      ">Quantum computing threatens the cryptographic foundations[^<]+",
+      ">Pengkomputeran kuantum mengancam asas kriptografi perkhidmatan kewangan. Pembayaran, daripada masa nyata hingga penyelesaian rentas sempadan, bergantung pada perlindungan yang akhirnya akan diusangkan oleh pengkomputeran kuantum. Kertas putih EPAA ini menerangkan mengapa industri perlu bertindak sekarang."
+    ],
+    [
+      "2024 &middot; Independent Research &middot;",
+      "2024 &middot; Penyelidikan Bebas &middot;"
+    ],
+    [
+      ">This independent research paper presents[^<]+",
+      ">Laporan penyelidikan bebas ini membentangkan pengoptimuman pengecaman suara masa nyata pada macOS menggunakan OpenAI Whisper dan Metal Performance Shaders, menunjukkan peningkatan kependaman dan kecekapan tenaga yang boleh diukur."
+    ],
+    [
+      ">License &amp; pricing<",
+      ">Lesen dan penetapan harga<"
+    ],
+    [
+      ">One copy per buyer<",
+      ">Satu salinan setiap pembeli<"
+    ],
+    [
+      ">Questions\\?\\s*<span class=\"qa-headline-soft\">Answers\\.</span>",
+      ">Soalan?<span class=\"qa-headline-soft\"> Jawapan.</span>"
+    ],
+    [
+      ">Questions\\? Answers\\.</h2>",
+      ">Soalan? Jawapan.</h2>"
+    ],
+    [
+      ">Questions\\? Answers\\.<",
+      ">Soalan? Jawapan.<"
+    ],
+    [
+      ">Are the white papers free to read\\?</summary>",
+      ">Adakah kertas putih boleh dibaca secara percuma?</summary>"
+    ],
+    [
+      ">May I cite or quote from these papers\\?</summary>",
+      ">Bolehkah saya memetik atau mengutip daripada kertas ini?</summary>"
+    ],
+    [
+      ">Who is the intended audience\\?</summary>",
+      ">Siapakah khalayak sasaran?</summary>"
+    ],
+    [
+      ">Can I commission a paper or speak at an event\\?</summary>",
+      ">Bolehkah saya menempah kertas atau bercakap di sesuatu acara?</summary>"
+    ],
+    [
+      ">How do I follow new publications\\?</summary>",
+      ">Bagaimana saya boleh mengikuti penerbitan baharu?</summary>"
+    ],
+    [
+      ">Where can I follow new releases\\?</summary>",
+      ">Di mana saya boleh mengikuti keluaran baharu?</summary>"
+    ],
+    [
+      "(<summary[^>]*>Les livres blancs sont-ils en libre lecture \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Kertas putih EPAA <em>Quantum-Safe Payments</em> boleh dimuat turun secara umum dan percuma di <a href=\"https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf\" rel=\"external noopener\">emergingpaymentsasia.org</a>. Laporan penyelidikan bebas mengenai pengecaman suara masa nyata dengan OpenAI Whisper dan Metal Performance Shaders adalah berlesen dan tersedia untuk pembelian individu pada $49.00 (Bahasa Inggeris, PDF, ~95 KB). Satu salinan setiap pembeli; muat turun untuk kegunaan peribadi sahaja, tidak boleh diedarkan semula.</p></section>"
+    ],
+    [
+      "(<summary[^>]*>Puis-je citer ces documents \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Ya. Petikan ringkas dengan atribusi dialu-alukan dalam lingkungan fair use. Bagi penerbitan EPAA, sebutkan EPAA sebagai penerbit bersama kumpulan kerja, tahun dan URL PDF. Bagi laporan penyelidikan bebas, petik dalam bentuk: <em>Rousseau, S. (tahun). Tajuk. Terbitan sendiri.</em> dengan URL kanonik. Untuk menghasilkan semula rajah atau petikan panjang, sila <a href=\"/ms/contact/\">hubungi saya</a> terlebih dahulu.</p></section>"
+    ],
+    [
+      "(<summary[^>]*>À qui s’adressent ces publications \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Pengarah pembayaran, CISO dan arkitek kanan di bank berprestij tinggi, bank pusat, pengendali sistem pembayaran dan pemilik skema. Penyelidikan gunaan ditujukan kepada jurutera dan pengurus produk yang membina di atas model bahasa besar, AI atas peranti dan kriptografi kalis kuantum. Setiap artikel mengandaikan pengetahuan domain dan meninggalkan peringatan asas yang sudah dimiliki oleh seorang profesional yang bekerja.</p></section>"
+    ],
+    [
+      "(<summary[^>]*>Puis-je commander une étude ou inviter à une conférence \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Ya, secara kes demi kes, berdasarkan pemilihan. Tugasan tempahan meliputi pembayaran wholesale, migrasi ISO 20022, kriptografi pasca-kuantum untuk perkhidmatan kewangan dan AI gunaan dalam perbankan. Penampilan di persidangan industri, forum bank pusat dan meja bulat pengawal selia dipertimbangkan secara kes demi kes. Gunakan <a href=\"/ms/contact/\">borang hubungan</a> dengan menyatakan topik, khalayak dan jadual waktu.</p></section>"
+    ],
+    [
+      "(<summary[^>]*>Comment suivre les nouvelles publications \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Artikel dan nota penyelidikan baharu diumumkan terlebih dahulu melalui <a href=\"/ms/rss.xml\">suapan RSS</a> laman ini dan surat berita <a href=\"https://news.bankingonquantum.com\" rel=\"external noopener\">Banking On Quantum</a>, yang meliputi kriptografi pasca-kuantum, dasar bank pusat dan pelan hala tuju migrasi skema pembayaran utama. Tiada spam, hanya yang baharu.</p></section>"
+    ],
+    [
+      "(<summary[^>]*>Où puis-je suivre les nouvelles publications \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Langgan <a href=\"/ms/rss.xml\">suapan RSS</a> atau ikuti saya di <a href=\"https://www.linkedin.com/in/sebastienrousseau/\" rel=\"external noopener\">LinkedIn</a> untuk mengetahui penerbitan baharu.</p></section>"
+    ],
+    [
+      ">Browse all projects<",
+      ">Semak imbas semua projek<"
+    ],
+    [
+      ">Three areas of practice\\.\\s*<span",
+      ">Tiga bidang amalan. <span"
+    ],
+    [
+      ">One philosophy\\.</span>",
+      ">Satu falsafah.</span>"
+    ],
+    [
+      ">WHAT IS INSIDE<",
+      ">APA DI DALAM<"
+    ],
+    [
+      ">OPEN SOURCE FOR FINANCIAL SERVICES<",
+      ">OPEN SOURCE UNTUK PERKHIDMATAN KEWANGAN<"
+    ],
+    [
+      ">Payments and settlement\\.<",
+      ">Pembayaran dan penyelesaian.<"
+    ],
+    [
+      ">Post-quantum cryptography\\.<",
+      ">Kriptografi pasca-kuantum.<"
+    ],
+    [
+      ">Tooling and infrastructure\\.<",
+      ">Alat dan infrastruktur.<"
+    ],
+    [
+      ">Applied AI\\.<",
+      ">AI gunaan.<"
+    ],
+    [
+      ">Explore payments tools\\s+<",
+      ">Terokai alat pembayaran <"
+    ],
+    [
+      ">Explore quantum-safe libraries\\s+<",
+      ">Terokai pustaka kalis kuantum <"
+    ],
+    [
+      ">Explore developer tools\\s+<",
+      ">Terokai alat pembangun <"
+    ],
+    [
+      ">Explore PQC tools\\s+<",
+      ">Terokai alat PQC <"
+    ],
+    [
+      ">Explore AI tools\\s+<",
+      ">Terokai alat AI <"
+    ],
+    [
+      ">Authored & maintained<",
+      ">Ditulis dan diselenggara<"
+    ],
+    [
+      ">Authored &amp; maintained<",
+      ">Ditulis dan diselenggara<"
+    ],
+    [
+      ">Open source for the future of finance\\.<",
+      ">Open source untuk masa depan kewangan.<"
+    ],
+    [
+      "<p class=\"setup-card-body\">ISO 20022 <strong>pain\\.001</strong> and <strong>pacs\\.008</strong> toolkits[^<]*\\.[^<]*\\.</p>",
+      "<p class=\"setup-card-body\">Kit alat ISO 20022 <strong>pain.001</strong> dan <strong>pacs.008</strong>, penghuraian penyata bank, dan pustaka Rust untuk migrasi ke mesej rentas sempadan berstruktur. Direka untuk SWIFT, SEPA dan skema pembayaran masa nyata.</p>"
+    ],
+    [
+      "<p class=\"setup-card-body\">Rust implementations of <strong>CRYSTALS-Kyber</strong>[^<]*\\.[^<]*\\.</p>",
+      "<p class=\"setup-card-body\">Pelaksanaan Rust <strong>CRYSTALS-Kyber</strong> (NIST FIPS&nbsp;203), primitif cincangan dan blok binaan kalis kuantum. Perlindungan melangkaui era RSA dan lengkung eliptik dalam pengesahan kewangan.</p>"
+    ],
+    [
+      "<p class=\"setup-card-body\">Open-source Rust libraries for serialisation[\\s\\S]+?shippable\\.</p>",
+      "<p class=\"setup-card-body\">Pustaka Rust sumber terbuka untuk penyirian, pengelogan, penjanaan kod, tarikh dan masa. Serta <strong>Static Site Generator</strong> (SSG) yang membina laman ini dan persekitaran pembangun yang menjadikannya boleh dihantar.</p>"
+    ],
+    [
+      ">ISO 20022 tooling for the global migration\\. Pain\\.001 file generation, pacs\\.008 cross-border credit transfers, and structured bank-statement parsing\\.<",
+      ">Alat ISO 20022 untuk migrasi global. Penjanaan fail Pain.001, pemindahan kredit rentas sempadan pacs.008 dan penghuraian berstruktur penyata bank.<"
+    ],
+    [
+      ">Rust implementations of CRYSTALS-Kyber, hash and digest primitives, and quantum-resistant building blocks for financial-grade authentication\\.<",
+      ">Pelaksanaan Rust CRYSTALS-Kyber, primitif cincangan dan blok binaan kalis kuantum untuk pengesahan kewangan.<"
+    ],
+    [
+      ">Applied artificial intelligence\\.<",
+      ">Kecerdasan buatan gunaan.<"
+    ],
+    [
+      ">Open-source AI projects applying speech recognition, natural language, and large language models to real-world finance and productivity problems\\.<",
+      ">Projek AI sumber terbuka yang menerapkan pengecaman suara, bahasa semula jadi dan model bahasa besar kepada masalah kewangan dan produktiviti dunia sebenar.<"
+    ],
+    [
+      ">A Python library that automates ISO 20022 pain\\.001 payment file creation from CSV or SQLite\\. Built for the global migration to structured cross-border messages\\.<",
+      ">Pustaka Python yang mengautomasikan penciptaan fail pembayaran ISO 20022 pain.001 daripada CSV atau SQLite. Dibina untuk migrasi global ke arah mesej rentas sempadan berstruktur.<"
+    ],
+    [
+      ">Generate, validate, and deliver ISO 20022 pacs\\.008 payment messages for FI-to-FI customer credit transfers\\. JSON Schema \\+ XSD validation, IBAN across 75 countries, GDPR/PCI-DSS-compliant PII masking\\.<",
+      ">Jana, sahkan dan hantar mesej pembayaran ISO 20022 pacs.008 untuk pindahan kredit pelanggan FI-ke-FI. Pengesahan JSON Schema + XSD, IBAN merentasi 75 negara, penopengan PII yang mematuhi GDPR/PCI-DSS.<"
+    ],
+    [
+      ">A finance-grade Python toolkit that turns multi-format bank statements into structured data — for the realities of real-world statement files and the audit demands of regulated environments\\.<",
+      ">Kit alat Python bertaraf kewangan yang menukar penyata bank pelbagai format kepada data berstruktur, untuk realiti fail penyata dunia sebenar dan tuntutan audit persekitaran terkawal.<"
+    ],
+    [
+      ">A Rust application for optimising cash allocation across complex fund structures using AI-driven forecasting\\. Aimed at treasury, fund accounting, and asset-allocation use cases inside banks and asset managers\\.<",
+      ">Aplikasi Rust untuk mengoptimumkan peruntukan tunai merentasi struktur dana yang kompleks menggunakan ramalan dipacu AI. Disasarkan untuk kes penggunaan perbendaharaan, perakaunan dana dan peruntukan aset dalam bank dan pengurus aset.<"
+    ],
+    [
+      ">A Rust library for generating and manipulating QR-code images in multiple formats\\. Direct payment uses include EPC QR Codes for SEPA Credit Transfers, payment-link QR for merchant collection, and step-up authentication flows\\.<",
+      ">Pustaka Rust untuk menjana dan memanipulasi imej kod QR dalam pelbagai format. Penggunaan pembayaran langsung: EPC QR Codes untuk Pindahan Kredit SEPA, QR pautan pembayaran untuk kutipan peniaga, dan aliran pengesahan step-up.<"
+    ],
+    [
+      ">A robust Rust implementation of CRYSTALS-Kyber, the NIST FIPS 203 standard for general-purpose post-quantum key encapsulation\\.<",
+      ">Pelaksanaan Rust yang teguh bagi CRYSTALS-Kyber, standard NIST FIPS 203 untuk enkapsulasi kunci pasca-kuantum tujuan umum.<"
+    ],
+    [
+      ">Secure hash and digest algorithms for password encryption and verification, designed with a quantum-resistant posture for the post-PQC era\\.<",
+      ">Algoritma cincang dan digest selamat untuk penyulitan dan pengesahan kata laluan, direka dengan pendirian tahan-kuantum untuk era pasca-PQC.<"
+    ],
+    [
+      ">A fast, simple, and powerful cross-platform CLI for generating strong, unique, and random passwords backed by audited cryptographic primitives\\.<",
+      ">CLI merentas platform yang pantas, ringkas dan berkuasa untuk menjana kata laluan yang kukuh, unik dan rawak, disokong oleh primitif kriptografi yang telah diaudit.<"
+    ],
+    [
+      ">An advanced voice assistant using OpenAI's GPT for natural interactions, PDF summaries, and efficient caching\\. Built for both personal and executive use\\.<",
+      ">Pembantu suara termaju yang menggunakan GPT daripada OpenAI untuk interaksi semula jadi, ringkasan PDF dan caching yang cekap. Dibina untuk kegunaan peribadi dan eksekutif.<"
+    ],
+    [
+      ">Convert audio to text in real-time using advanced AI speech recognition\\. Designed to unlock actionable insights from audio data and enhance customer and[^<]+",
+      ">Tukar audio kepada teks dalam masa nyata menggunakan pengecaman pertuturan AI termaju. Direka untuk mengekstrak wawasan yang boleh diambil tindakan daripada data audio serta meningkatkan pengalaman pelanggan dan operasi.<"
+    ],
+    [
+      ">Featured · Python · ISO 20022<",
+      ">Pilihan · Python · ISO 20022<"
+    ],
+    [
+      ">Python · ISO 20022<",
+      ">Python · ISO 20022<"
+    ],
+    [
+      ">Python · Finance<",
+      ">Python · Kewangan<"
+    ],
+    [
+      ">Rust · Treasury · AI<",
+      ">Rust · Perbendaharaan · AI<"
+    ],
+    [
+      ">Rust · Payments QR<",
+      ">Rust · QR Pembayaran<"
+    ],
+    [
+      ">Rust · Quantum<",
+      ">Rust · Kuantum<"
+    ],
+    [
+      ">Rust · Security<",
+      ">Rust · Keselamatan<"
+    ],
+    [
+      ">AI · Voice<",
+      ">AI · Suara<"
+    ],
+    [
+      ">AI · Speech<",
+      ">AI · Pertuturan<"
+    ],
+    [
+      ">PAYMENTS<",
+      ">PEMBAYARAN<"
+    ],
+    [
+      ">POST-QUANTUM CRYPTOGRAPHY<",
+      ">KRIPTOGRAFI PASCA-KUANTUM<"
+    ],
+    [
+      ">AI AND VOICE<",
+      ">AI DAN SUARA<"
+    ],
+    [
+      ">DEVELOPER TOOLING<",
+      ">PERKAKASAN PEMBANGUN<"
+    ],
+    [
+      ">OPEN-SOURCE RUST<",
+      ">RUST SUMBER TERBUKA<"
+    ],
+    [
+      ">WEB AND DEVELOPER ENVIRONMENT<",
+      ">WEB DAN PERSEKITARAN PEMBANGUN<"
+    ],
+    [
+      ">Tooling\\.<",
+      ">Perkakasan.<"
+    ],
+    [
+      ">Rust libraries and tooling\\.</h2>",
+      ">Pustaka dan perkakasan Rust.</h2>"
+    ],
+    [
+      "<p class=\"cat-lede\">Open-source Rust projects across serialisation, logging, code generation, math, and developer tooling — including the static site generator behind this site\\.</p>",
+      "<p class=\"cat-lede\">Projek Rust sumber terbuka merangkumi pensirilan, pengelogan, penjanaan kod, matematik dan perkakasan pembangun, termasuk penjana tapak statik yang menggerakkan tapak ini.</p>"
+    ],
+    [
+      ">Web, templates and environment\\.</h2>",
+      ">Web, templat dan persekitaran.</h2>"
+    ],
+    [
+      "<p class=\"cat-lede\">Starter templates, two industry-focused publications, a CSS framework, and the dotfiles that keep a development environment reproducible\\.</p>",
+      "<p class=\"cat-lede\">Templat permulaan, dua penerbitan khusus industri, satu rangka kerja CSS dan dotfiles yang memastikan persekitaran pembangunan boleh dihasilkan semula.</p>"
+    ],
+    [
+      ">What licence are these projects released under\\?</summary>",
+      ">Di bawah lesen apakah projek-projek ini diterbitkan?</summary>"
+    ],
+    [
+      ">Are these projects production-ready\\?</summary>",
+      ">Adakah projek-projek ini sedia untuk pengeluaran?</summary>"
+    ],
+    [
+      ">How can I contribute or report an issue\\?</summary>",
+      ">Bagaimanakah saya boleh menyumbang atau melaporkan isu?</summary>"
+    ],
+    [
+      ">Can I use these libraries in a regulated banking environment\\?</summary>",
+      ">Bolehkah saya menggunakan pustaka ini dalam persekitaran perbankan terkawal?</summary>"
+    ],
+    [
+      ">Do you offer commercial support or consulting\\?</summary>",
+      ">Adakah anda menawarkan sokongan komersial atau perundingan?</summary>"
+    ],
+    [
+      ">How do I follow new releases\\?</summary>",
+      ">Bagaimanakah cara mengikuti keluaran baharu?</summary>"
+    ],
+    [
+      "(<summary[^>]*>Sous quelle licence ces projets sont-ils publiés \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Semua projek diterbitkan di bawah lesen <strong>Apache-2.0</strong>. Fail <code>LICENSE</code> di akar setiap repositori adalah muktamad.</p></section>"
+    ],
+    [
+      "(<summary[^>]*>Ces projets sont-ils prêts pour la production \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Ia bergantung pada projek. Pustaka yang ditanda <em>v1.x</em> telah stabil dan diuji di bawah beban; yang pra-v1 merupakan asas yang kukuh tetapi mungkin masih berkembang. README setiap repositori menyatakan status semasa; jika anda memerlukan jaminan khusus untuk kegunaan pengeluaran, <a href=\"/ms/contact/\">hubungi saya</a>.</p></section>"
+    ],
+    [
+      "(<summary[^>]*>Comment puis-je contribuer ou signaler un problème \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Setiap projek mempunyai repositori GitHub awam di <a href=\"https://github.com/sebastienrousseau\" rel=\"external noopener\">github.com/sebastienrousseau</a>. Buka satu isu yang menerangkan masalah (contoh reproduksi minimum amat dihargai) atau satu pull request yang dikaitkan dengan sesuatu isu. Sumbangan tertakluk kepada <em>Developer Certificate of Origin</em> dan memerlukan commit yang ditandatangani.</p></section>"
+    ],
+    [
+      "(<summary[^>]*>Puis-je utiliser ces bibliothèques dans un environnement bancaire régulé \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Ya, dengan langkah berjaga-jaga yang biasa. Pustaka ini merupakan kerja sumber terbuka yang bebas, dan bukan produk terkawal. Terapkan proses rantaian bekalan, keselamatan dan semakan kebergantungan anda yang biasa, iaitu vendoring melalui cermin dalaman anda, imbasan SBOM, penyematan mengikut Git SHA atau cap jari kriptografi, sebelum sebarang penggunaan pengeluaran pada infrastruktur pembayaran.</p></section>"
+    ],
+    [
+      "(<summary[^>]*>Proposez-vous du support commercial ou du conseil \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Ya, secara terpilih. Tugasan tertumpu pada migrasi ISO&nbsp;20022, peta jalan migrasi pasca-kuantum dan AI yang diaplikasikan pada perkhidmatan kewangan. <a href=\"/ms/contact/\">Hubungi saya</a> dengan taklimat ringkas, jadual masa anda dan sebarang kekangan.</p></section>"
+    ],
+    [
+      "(<summary[^>]*>Comment suivre les nouvelles publications \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Setiap artikel bertarikh di tapak ini diumumkan melalui <a href=\"/ms/rss.xml\">suapan RSS</a> dan surat berita <a href=\"https://news.bankingonquantum.com\" rel=\"external noopener\">Banking On Quantum</a>. Repositori individu juga menerbitkan keluaran di GitHub yang boleh anda ikuti secara terus.</p></section>"
+    ],
+    [
+      ">GET IN TOUCH<",
+      ">HUBUNGI KAMI<"
+    ],
+    [
+      ">Have an idea\\? Let's build it\\.<",
+      "<>Ada idea? Mari bina bersama.<"
+    ],
+    [
+      ">Open-source collaboration, commissioned engineering, or a conversation about the future of payments\\. Whichever fits\\.<",
+      ">Kerjasama sumber terbuka, kejuruteraan yang ditugaskan, atau sekadar perbualan tentang masa depan pembayaran. Mana-mana yang sesuai.<"
+    ],
+    [
+      "<p class=\"newsroom-kicker\">FEATURED</p>",
+      "<p class=\"newsroom-kicker\">PILIHAN</p>"
+    ],
+    [
+      ">Latest Music</h2>",
+      ">Muzik terkini</h2>"
+    ],
+    [
+      ">Latest playlist</h2>",
+      ">Senarai main terkini</h2>"
+    ],
+    [
+      ">Soulful, jazz and downtempo</h2>",
+      ">Soulful, jazz dan downtempo</h2>"
+    ],
+    [
+      "<p class=\"newsroom-kicker\">MORNING & MOOD</p>",
+      "<p class=\"newsroom-kicker\">PAGI & SUASANA</p>"
+    ],
+    [
+      ">Morning, mood and chill</h2>",
+      ">Pagi, suasana dan santai</h2>"
+    ],
+    [
+      "<p class=\"newsroom-kicker\">ELECTRONIC</p>",
+      "<p class=\"newsroom-kicker\">ELEKTRONIK</p>"
+    ],
+    [
+      ">Electronic, house and techno</h2>",
+      ">Elektro, house dan techno</h2>"
+    ],
+    [
+      ">Pop, rock and alternative</h2>",
+      ">Pop, rock dan alternatif</h2>"
+    ],
+    [
+      "<p class=\"newsroom-kicker\">FOCUS</p>",
+      "<p class=\"newsroom-kicker\">FOKUS</p>"
+    ],
+    [
+      ">Focus and productivity</h2>",
+      ">Fokus dan produktiviti</h2>"
+    ],
+    [
+      ">Smooth Jazz, Neo Soul, and laid-back grooves[^<]+",
+      ">Smooth Jazz, Neo Soul dan groove yang santai. Senarai main untuk saat hari menuntut anda perlahankan langkah."
+    ],
+    [
+      ">This page has a comprehensive list[^<]+",
+      ">Halaman ini memaparkan pilihan senarai main Spotify yang paling popular dan mendapat pujian kritikan, merangkumi pelbagai genre. Sama ada anda peminat jazz, soul, hip-hop atau muzik elektronik, anda akan menemui senarai main yang menepati cita rasa anda."
+    ],
+    [
+      ">Step into the harmonious realm of TETRA\\.[^<]+",
+      ">Masuklah ke alam harmoni TETRA. Senarai main euforia yang direka untuk mengangkat semangat anda dan memenuhi jiwa dengan kegembiraan."
+    ],
+    [
+      ">Unwind and embrace the essence of summer with this curated selection of Jazz, Soul, R(?:&amp;|&)B and Neo Soul beats\\.",
+      ">Bersantailah dan hayati intipati musim panas dengan pilihan Jazz, Soul, R&amp;B dan Neo Soul ini."
+    ],
+    [
+      ">A deep dive into the quintessential collection of Jazz, Soul, R(?:&amp;|&)B and Neo Soul beats\\.",
+      ">Selami secara mendalam koleksi terunggul Jazz, Soul, R&amp;B dan Neo Soul."
+    ],
+    [
+      ">Take a break from a busy day and relax with soothing nu jazz and downtempo beats\\.",
+      ">Rehatkan diri daripada hari yang sibuk dan bersantai dengan nu jazz dan downtempo yang menenangkan."
+    ],
+    [
+      ">Soulful tracks with a fashion-forward vibe\\. Music to set the tone for a productive and stylish day\\.",
+      ">Lagu-lagu soul dengan vibe avant-garde. Muzik yang sempurna untuk menetapkan nada hari yang produktif dan bergaya."
+    ],
+    [
+      ">Celebrate the joy of life and dive into a world of vivid emotions, vibrant hues and soulful rhythms\\.",
+      ">Raikan keindahan hidup dan selami dunia emosi yang meriah, warna yang terang dan irama soul."
+    ],
+    [
+      ">Laid-back beats, house-influenced grooves and new deep house tracks\\.",
+      ">Beat santai, groove berinspirasikan house dan permata deep house terbaharu."
+    ],
+    [
+      ">Seamlessly blending funky disco, house, French touch and other genres into an ultra-cool and energetic musical experience\\.",
+      ">Gabungan lancar disko funky, house, French touch dan genre lain untuk pengalaman muzik yang ultra-keren dan bertenaga."
+    ],
+    [
+      ">A sonic voyage featuring Nu-Disco, French House, Electro and Disco House tunes from artists like Madeon and Fred Falke\\.",
+      ">Pengembaraan bunyi yang menggabungkan Nu-Disco, French House, Electro dan Disco House daripada artis seperti Madeon dan Fred Falke."
+    ],
+    [
+      ">Laid-back beats, hip-hop-influenced grooves and new indie pop tracks\\.",
+      ">Beat santai, groove berinspirasikan hip-hop dan lagu indie pop terbaharu."
+    ],
+    [
+      ">Original Hip Hop, Rap and R(?:&amp;|&)B Flavor Sessions\\.",
+      ">Sesi asli beraroma Hip Hop, Rap dan R&amp;B."
+    ],
+    [
+      ">Brace yourself for hardcore rap and hip hop tracks\\.",
+      ">Bersedialah untuk rap dan hip hop hardcore."
+    ],
+    [
+      ">A few of the favourite hip-hop gems\\.",
+      ">Beberapa permata hip-hop kegemaran."
+    ],
+    [
+      ">Soulful beats and thoughtful lyrics\\. A captivating look into the world of contemporary hip hop, R(?:&amp;|&)B and rap\\.",
+      ">Beat soul dan lirik yang mendalam. Pandangan memikat tentang hip hop, R&amp;B dan rap kontemporari."
+    ],
+    [
+      ">Laid-back vibes and mellow rhythms with this stunning playlist of Lo-Fi Hip Hop beats\\.",
+      ">Suasana santai dan irama lembut dalam senarai main Lo-Fi Hip Hop yang menakjubkan ini."
+    ],
+    [
+      ">Celebrate the diverse heritage of African music\\. From the soulful rhythms of Wassoulou to the lively beats of Londonko\\.",
+      ">Raikan kepelbagaian kaya muzik Afrika. Daripada irama soul Wassoulou kepada beat rancak Londonko."
+    ],
+    [
+      "aria-label=\"Tag: ([^,]+), (\\d+) Posts\"",
+      "aria-label=\"Tag: \\1, \\2 siaran\""
+    ],
+    [
+      "(\\(\\d+) Posts\\)",
+      "\\1 siaran)"
+    ],
+    [
+      ">Featured Tags \\((\\d+)\\)</h2>",
+      ">Tag Pilihan (\\1)</h2>"
+    ],
+    [
+      ">Featured Tags<",
+      ">Tag Pilihan<"
+    ],
+    [
+      "<a class=\"pill ghost\" href=\"/ms/contact/\">Get in touch</a>",
+      "<a class=\"pill ghost\" href=\"/ms/contact/\">Hubungi saya</a>"
+    ],
+    [
+      ">Get in touch</a>",
+      ">Hubungi saya</a>"
+    ],
+    [
+      "Made with Static Site Generator: Rust-Powered SSG",
+      "Dibina dengan Static Site Generator: SSG dikuasakan oleh Rust"
+    ],
+    [
+      "Static Site Generator is a Rust-based static site generator built for performance, accessibility and SEO\\. Lightning-fast builds with first-class JSON-LD\\.",
+      "Static Site Generator ialah penjana tapak statik berasaskan Rust yang direka untuk prestasi, kebolehcapaian dan SEO. Pembinaan yang sangat pantas dengan sokongan JSON-LD kelas pertama."
+    ],
+    [
+      "Website created with Static Site Generator \\(SSG\\)",
+      "Tapak dicipta dengan Static Site Generator (SSG)"
+    ],
+    [
+      "The Static Site Generator \\(SSG\\) is a lightning-fast tool for Search Engine Optimisation \\(SEO\\) and compliance to Accessibility Standards\\.",
+      "Static Site Generator (SSG) ialah alat yang sangat pantas untuk SEO dan pematuhan kepada standard kebolehcapaian."
+    ],
+    [
+      "Topics &amp; Tags Index: AI, Payments, Quantum, Rust OSS",
+      "Indeks topik dan tag: AI, pembayaran, kuantum, Rust OSS"
+    ],
+    [
+      "Browse Sebastien Rousseau's site by topic and tag: AI, payments, ISO 20022, post-quantum cryptography, Rust open source, and more\\.",
+      "Layari tapak Sebastien Rousseau mengikut topik dan tag: AI, pembayaran, ISO 20022, kriptografi pasca-kuantum, Rust sumber terbuka, dan banyak lagi."
+    ],
+    [
+      "Website Accessibility Statement — Standards &amp; Contact",
+      "Penyata Kebolehcapaian Tapak Web: Standard &amp; Hubungi"
+    ],
+    [
+      "This statement explains the accessibility of our website, what we are doing to address it, and how to contact us about web accessibility\\.",
+      "Penyata ini menerangkan kebolehcapaian tapak kami, apa yang kami lakukan untuk menanganinya, dan cara menghubungi kami tentang kebolehcapaian web."
+    ],
+    [
+      "Privacy Statement — How Your Data Is Collected &amp; Used",
+      "Penyata Privasi: Cara Data Anda Dikumpul &amp; Digunakan"
+    ],
+    [
+      "This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Website",
+      "Halaman ini memaklumkan anda tentang polisi kami mengenai pengumpulan, penggunaan dan pendedahan data peribadi apabila anda menggunakan Tapak Web kami"
+    ],
+    [
+      "Let's Start a Conversation That Will Make a Real Difference",
+      "Mari mulakan perbualan yang akan membuat perbezaan sebenar"
+    ],
+    [
+      "Have a question or comment\\? Please contact me using the form below\\. I am always happy to hear from you and will respond as soon as possible\\.",
+      "Ada soalan atau komen? Sila hubungi saya menggunakan borang di bawah. Saya sentiasa gembira mendengar daripada anda dan akan membalas secepat mungkin."
+    ],
+    [
+      "Website Terms &amp; Conditions of Use — Sebastien Rousseau",
+      "Terma &amp; Syarat Penggunaan Tapak Web: Sebastien Rousseau"
+    ],
+    [
+      "By accessing this website, you acknowledge and agree to be bound by these Terms and Conditions of Use and all applicable laws and regulations\\.",
+      "Dengan mengakses tapak web ini, anda mengakui dan bersetuju untuk terikat dengan Terma dan Syarat Penggunaan ini serta semua undang-undang dan peraturan yang berkenaan."
+    ],
+    [
+      ">Latest research<",
+      ">Penyelidikan terkini<"
+    ],
+    [
+      ">Read latest research<",
+      ">Baca penyelidikan terkini<"
+    ],
+    [
+      ">Featured articles<",
+      ">Artikel pilihan<"
+    ],
+    [
+      ">All articles<",
+      ">Semua artikel<"
+    ],
+    [
+      ">Read more<",
+      ">Baca lagi<"
+    ],
+    [
+      ">Read full article<",
+      ">Baca artikel penuh<"
+    ],
+    [
+      ">Newest first<",
+      ">Terkini dahulu<"
+    ],
+    [
+      ">Oldest first<",
+      ">Terlama dahulu<"
+    ],
+    [
+      ">By topic<",
+      ">Mengikut topik<"
+    ],
+    [
+      ">All topics<",
+      ">Semua topik<"
+    ],
+    [
+      ">By tag<",
+      ">Mengikut tag<"
+    ],
+    [
+      ">All tags<",
+      ">Semua tag<"
+    ],
+    [
+      ">Published<",
+      ">Diterbitkan<"
+    ],
+    [
+      ">Updated<",
+      ">Dikemas kini<"
+    ],
+    [
+      ">Open source<",
+      ">Sumber terbuka<"
+    ],
+    [
+      ">Authored & maintained<",
+      ">Dikarang & diselenggara<"
+    ],
+    [
+      ">Open source for the future of finance\\.<",
+      ">Sumber terbuka untuk masa depan kewangan.<"
+    ],
+    [
+      ">A portfolio of",
+      ">Satu portfolio"
+    ],
+    [
+      ">Start a conversation<",
+      ">Mulakan perbualan<"
+    ],
+    [
+      ">Drop me a line<",
+      ">Kirimkan mesej<"
+    ],
+    [
+      ">Learn more<",
+      ">Ketahui lebih lanjut<"
+    ],
+    [
+      ">Subscribe<",
+      ">Langgan<"
+    ],
+    [
+      ">Follow<",
+      ">Ikuti<"
+    ],
+    [
+      ">Latest<",
+      ">Terkini<"
+    ],
+    [
+      "<h1>White Papers (?:&amp;|&) Research</h1>",
+      "<h1>Kertas Putih dan Penyelidikan</h1>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/post-quantum-cryptography/[^\"]*\">Post-Quantum Cryptography</a></h3>",
+      "<h3><a href=\"/ms/sujets/post-quantum-cryptography/index.html\">Kriptografi pasca-kuantum</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/iso-20022-payments/[^\"]*\">ISO 20022 &amp; Payments</a></h3>",
+      "<h3><a href=\"/ms/sujets/iso-20022-payments/index.html\">ISO 20022 &amp; Pembayaran</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/applied-ai-banking/[^\"]*\">Applied AI in Banking</a></h3>",
+      "<h3><a href=\"/ms/sujets/applied-ai-banking/index.html\">AI diaplikasikan dalam perbankan</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/rust-open-source/[^\"]*\">Rust &amp; Open Source</a></h3>",
+      "<h3><a href=\"/ms/sujets/rust-open-source/index.html\">Rust sumber terbuka</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/blockchain-digital-assets/[^\"]*\">Blockchain &amp; Digital Assets</a></h3>",
+      "<h3><a href=\"/ms/sujets/blockchain-digital-assets/index.html\">Blockchain &amp; aset digital</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-lede\">Tracks to kick off the day or shift the room\\. Fashion\\-forward soul, vivid colour, and laid\\-back energy\\.</p>",
+      "<p class=\"newsroom-lede\">Lagu-lagu untuk memulakan hari atau mengubah suasana. Soul yang elegan, warna terang dan tenaga santai.</p>"
+    ],
+    [
+      "<p class=\"newsroom-lede\">Funky disco, French touch and electro\\. Energetic listening for movement, focus or the dance floor\\.</p>",
+      "<p class=\"newsroom-lede\">Disko funky, French touch dan elektro. Pendengaran bertenaga untuk pergerakan, fokus atau lantai tarian.</p>"
+    ],
+    [
+      "<p class=\"newsroom-lede\">From original Hip Hop sessions to hardcore rap, contemporary R&B and Lo\\-Fi\\. The full breadth of beats\\.</p>",
+      "<p class=\"newsroom-lede\">Daripada sesi Hip Hop asli kepada rap hardcore, R&B kontemporari dan Lo-Fi. Seluruh palet beat.</p>"
+    ]
+  ]
+}

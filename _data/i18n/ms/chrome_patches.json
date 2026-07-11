@@ -1,0 +1,296 @@
+{
+  "patches": [
+    [
+      "aria-label=\"Newsletter signup\"",
+      "aria-label=\"Pendaftaran surat berita\""
+    ],
+    [
+      "Banking On Quantum — research notes on payments, AI (?:&amp;|&) post-quantum crypto\\. No spam\\.",
+      "Banking On Quantum: nota penyelidikan tentang pembayaran, AI dan kripto pasca-kuantum. Tiada spam."
+    ],
+    [
+      "placeholder=\"?you@bank\\.com\"?",
+      "placeholder=\"anda@bank.com\""
+    ],
+    [
+      "value=\"Newsletter signup — sebastienrousseau\\.com\"",
+      "value=\"Pendaftaran surat berita: sebastienrousseau.com\""
+    ],
+    [
+      ">Subscribe</button>",
+      ">Langgan</button>"
+    ],
+    [
+      ">Skip to main content</a>",
+      ">Langkau ke kandungan utama</a>"
+    ],
+    [
+      "aria-label=\"Toggle navigation\"",
+      "aria-label=\"Togol navigasi\""
+    ],
+    [
+      "title=\"Toggle navigation\"",
+      "title=\"Togol navigasi\""
+    ],
+    [
+      "aria-label=\"?Primary\"?(?=[\\s>])",
+      "aria-label=\"Navigasi utama\""
+    ],
+    [
+      "aria-label=\"Switch to dark theme\"",
+      "aria-label=\"Tukar ke tema gelap\""
+    ],
+    [
+      "aria-label=\"Switch to light theme\"",
+      "aria-label=\"Tukar ke tema cerah\""
+    ],
+    [
+      "title=\"Switch theme\"",
+      "title=\"Tukar tema\""
+    ],
+    [
+      "aria-label=\"Search \\(Cmd or Ctrl \\+ K\\)\"",
+      "aria-label=\"Cari (Cmd atau Ctrl + K)\""
+    ],
+    [
+      "title=\"Search \\(⌘K\\)\"",
+      "title=\"Cari (⌘K)\""
+    ],
+    [
+      "aria-label=\"Get in touch\"",
+      "aria-label=\"Hubungi saya\""
+    ],
+    [
+      ">Get in touch ›</a>",
+      ">Hubungi saya ›</a>"
+    ],
+    [
+      ">Get in touch</a>",
+      ">Hubungi saya</a>"
+    ],
+    [
+      "aria-label=\"Sebastien Rousseau home\"",
+      "aria-label=\"Laman utama Sebastien Rousseau\""
+    ],
+    [
+      "<li><a href=\"?/about/index\\.html\"?>About</a></li>",
+      "<li><a href=\"/ms/a-propos/index.html\">Perihal</a></li>"
+    ],
+    [
+      "<li><a href=\"?/papers/index\\.html\"?>Papers</a></li>",
+      "<li><a href=\"/ms/publications/index.html\">Penerbitan</a></li>"
+    ],
+    [
+      "<li><a href=\"?/topics/index\\.html\"?>Topics</a></li>",
+      "<li><a href=\"/ms/sujets/index.html\">Topik</a></li>"
+    ],
+    [
+      "<li><a href=\"?/projects/index\\.html\"?>Projects</a></li>",
+      "<li><a href=\"/ms/projets/index.html\">Projek</a></li>"
+    ],
+    [
+      "<li><a href=\"?/articles/index\\.html\"?>Articles</a></li>",
+      "<li><a href=\"/ms/articles/index.html\">Artikel</a></li>"
+    ],
+    [
+      "<li><a href=\"?/contact/index\\.html\"?>Contact</a></li>",
+      "<li><a href=\"/ms/contact/index.html\">Hubungi</a></li>"
+    ],
+    [
+      "(<a\\b[^>]*?\\bclass=\"?ap-brand\"?[^>]*?\\bhref=)\"?/index\\.html\"?",
+      "\\g<1>\"/ms/index.html\""
+    ],
+    [
+      "<li><a href=\"?/playlists/index\\.html\"?>Playlists</a></li>",
+      "<li><a href=\"/ms/playlists/index.html\">Senarai main</a></li>"
+    ],
+    [
+      "aria-label=\"Back to top\"",
+      "aria-label=\"Kembali ke atas\""
+    ],
+    [
+      "<h2 class=\"?ap-foot-title\"?>Writing</h2>",
+      "<h2 class=\"ap-foot-title\">Penulisan</h2>"
+    ],
+    [
+      "<h2 class=\"?ap-foot-title\"?>Work</h2>",
+      "<h2 class=\"ap-foot-title\">Kerja</h2>"
+    ],
+    [
+      "<h2 class=\"?ap-foot-title\"?>Reach</h2>",
+      "<h2 class=\"ap-foot-title\">Jangkauan</h2>"
+    ],
+    [
+      "<a href=\"?/about/index\\.html\"?>About</a>",
+      "<a href=\"/ms/a-propos/index.html\">Perihal</a>"
+    ],
+    [
+      "<a href=\"?/made-with-static-site-generator/index\\.html\"?>Made with Static Site Generator</a>",
+      "<a href=\"/ms/concu-avec-static-site-generator/index.html\">Dibuat dengan Static Site Generator</a>"
+    ],
+    [
+      "<a href=\"?/papers/index\\.html\"?>Papers</a>",
+      "<a href=\"/ms/publications/index.html\">Penerbitan</a>"
+    ],
+    [
+      "<a href=\"?/tags/index\\.html\"?>Tags</a>",
+      "<a href=\"/ms/etiquettes/index.html\">Tag</a>"
+    ],
+    [
+      "<a href=\"?/projects/index\\.html\"?>Projects</a>",
+      "<a href=\"/ms/projets/index.html\">Projek</a>"
+    ],
+    [
+      "<a href=\"?/playlists/index\\.html\"?>Playlists</a>",
+      "<a href=\"/ms/playlists/index.html\">Senarai main</a>"
+    ],
+    [
+      "<a href=\"?/contact/index\\.html\"?>Contact</a>",
+      "<a href=\"/ms/contact/index.html\">Hubungi</a>"
+    ],
+    [
+      "<a href=\"?/articles/index\\.html\"?>Articles</a>",
+      "<a href=\"/ms/articles/index.html\">Artikel</a>"
+    ],
+    [
+      "aria-label=\"Social links\"",
+      "aria-label=\"Pautan sosial\""
+    ],
+    [
+      "aria-label=\"Sebastien Rousseau on ",
+      "aria-label=\"Sebastien Rousseau di "
+    ],
+    [
+      "alt=\"Sebastien Rousseau on ",
+      "alt=\"Sebastien Rousseau di "
+    ],
+    [
+      "alt=\"Black and White Portrait of Sebastien Rousseau\"",
+      "alt=\"Potret Hitam dan Putih Sebastien Rousseau\""
+    ],
+    [
+      "© Copyright 2007 - 2026 - Sebastien Rousseau\\. All rights reserved\\.",
+      "© Copyright 2007 - 2026 - Sebastien Rousseau. Hak cipta terpelihara."
+    ],
+    [
+      "<a href=\"?/accessibility/index\\.html\"?>Accessibility</a>",
+      "<a href=\"/ms/accessibilite/index.html\">Kebolehcapaian</a>"
+    ],
+    [
+      "<a href=\"?/privacy/index\\.html\"?>Privacy</a>",
+      "<a href=\"/ms/confidentialite/index.html\">Privasi</a>"
+    ],
+    [
+      "<a href=\"?/terms/index\\.html\"?>Terms</a>",
+      "<a href=\"/ms/conditions/index.html\">Terma</a>"
+    ],
+    [
+      "placeholder=\"Search documentation\\.\\.\\.\"",
+      "placeholder=\"Cari dokumentasi...\""
+    ],
+    [
+      "aria-label=\"Search\"(?!\\s*\\()",
+      "aria-label=\"Cari\""
+    ],
+    [
+      "<kbd>Esc</kbd>\\s*close",
+      "<kbd>Esc</kbd> tutup"
+    ],
+    [
+      "navigate</span>",
+      "navigasi</span>"
+    ],
+    [
+      "<kbd>Enter</kbd>\\s*open",
+      "<kbd>Enter</kbd> buka"
+    ],
+    [
+      "<span>Search</span>",
+      "<span>Cari</span>"
+    ],
+    [
+      "aria-label=\"?Language\"?(?=[\\s>])",
+      "aria-label=\"Bahasa\""
+    ],
+    [
+      "aria-label=\"EN, Change language\"",
+      "aria-label=\"MS, Tukar bahasa\""
+    ],
+    [
+      "title=\"Change language\"",
+      "title=\"Tukar bahasa\""
+    ],
+    [
+      "title=\"Coming soon\"",
+      "title=\"Akan datang\""
+    ],
+    [
+      "<span class=\"?ap-lang-current\"?>EN</span>",
+      "<span class=\"ap-lang-current\">MS</span>"
+    ],
+    [
+      "title=\"Atom Feed\"",
+      "title=\"Suapan Atom\""
+    ],
+    [
+      "title=\"RSS Feed\"",
+      "title=\"Suapan RSS\""
+    ],
+    [
+      "aria-label=\"Article summary\"",
+      "aria-label=\"Ringkasan artikel\""
+    ],
+    [
+      "<strong>Key takeaways</strong>",
+      "<strong>Intipati penting</strong>"
+    ],
+    [
+      "<strong>Related reading:</strong>",
+      "<strong>Bacaan berkaitan:</strong>"
+    ],
+    [
+      "<h2 id=\"related-heading\" class=\"related-heading\">Related reading</h2>",
+      "<h2 id=\"related-heading\" class=\"related-heading\">Bacaan berkaitan</h2>"
+    ],
+    [
+      ">Last reviewed <",
+      ">Semakan terakhir <"
+    ],
+    [
+      "aria-label=\"About the author\"",
+      "aria-label=\"Perihal penulis\""
+    ],
+    [
+      ">Full profile</a>",
+      ">Profil penuh</a>"
+    ],
+    [
+      "alt=\"Portrait of Sebastien Rousseau\"",
+      "alt=\"Potret Sebastien Rousseau\""
+    ],
+    [
+      "<p class=\"feat-eyebrow\">Get in touch</p>",
+      "<p class=\"feat-eyebrow\">Hubungi saya</p>"
+    ],
+    [
+      ">Start a conversation</a>",
+      ">Mulakan perbualan</a>"
+    ],
+    [
+      "<a href=\"/articles/index\\.html\">Read latest research</a>",
+      "<a href=\"/articles/index.html\">Baca penyelidikan terkini</a>"
+    ],
+    [
+      "<a href=\"/contact/index\\.html\">Get in touch</a>",
+      "<a href=\"/contact/index.html\">Hubungi saya</a>"
+    ],
+    [
+      "<li><a href=\"?/case-studies/index\\.html\"?>Case studies</a></li>",
+      "<li><a href=\"/ms/etudes-de-cas/index.html\">Kajian kes</a></li>"
+    ],
+    [
+      "<a href=\"?/case-studies/index\\.html\"?>Case studies</a>",
+      "<a href=\"/ms/etudes-de-cas/index.html\">Kajian kes</a>"
+    ]
+  ]
+}
