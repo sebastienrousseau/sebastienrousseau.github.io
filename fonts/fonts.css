@@ -127,3 +127,50 @@
   descent-override: 22%;
   line-gap-override: 0%;
 }
+
+/* ──────────────────── Noto Sans Tamil / Telugu ─────────────────────
+ * Self-hosted script-block subsets (Google Fonts, OFL-1.1). Unlike the
+ * Latin families above, Tamil (U+0B80–0BFF) and Telugu (U+0C00–0C7F)
+ * have NO reliable system-font coverage on bare Linux / the CI runner
+ * (DejaVu, Liberation and the Latin webfonts don't carry these blocks),
+ * so `ta` / `te` would render as tofu there. The other new-script
+ * locales stay on system fonts: Greek (el) is covered by every system
+ * sans, Perso-Arabic (fa) reuses the proven `ar` path, Devanagari (mr)
+ * the proven `hi` path.
+ *
+ * unicode-range confines each face to its own block, so these files are
+ * fetched ONLY when Tamil/Telugu codepoints appear (i.e. on /ta/ /te/
+ * pages) — zero payload for every other locale. Latin within a Tamil
+ * page still resolves to Inter. Self-hosted → CSP stays `font-src 'self'`.
+ */
+@font-face {
+  font-family: 'Noto Sans Tamil';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url('/fonts/noto-sans-tamil.woff2') format('woff2');
+  unicode-range: U+0964-0965, U+0B82-0BFA, U+200C-200D, U+20B9, U+25CC;
+}
+@font-face {
+  font-family: 'Noto Sans Telugu';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url('/fonts/noto-sans-telugu.woff2') format('woff2');
+  unicode-range: U+0951-0952, U+0964-0965, U+0C00-0C7F, U+1CDA, U+1CF2,
+                 U+200C-200D, U+25CC;
+}
+
+/* Prepend the script font to both type stacks for the Tamil/Telugu
+ * locales. `html:lang(..)` (specificity 0,1,1) beats the `:root`
+ * definition in the per-page <style>, and matches the `xx-IN` BCP-47
+ * tag the renderer stamps on <html>. body + display both switch so
+ * headings (Newsreader has no Indic glyphs) don't tofu either. */
+html:lang(ta) {
+  --type-body: "Noto Sans Tamil", "Inter", "Inter Fallback", "SF Pro Text", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --type-display: "Noto Sans Tamil", "Newsreader", "Newsreader Fallback", Georgia, Cambria, "Times New Roman", Times, serif;
+}
+html:lang(te) {
+  --type-body: "Noto Sans Telugu", "Inter", "Inter Fallback", "SF Pro Text", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --type-display: "Noto Sans Telugu", "Newsreader", "Newsreader Fallback", Georgia, Cambria, "Times New Roman", Times, serif;
+}
