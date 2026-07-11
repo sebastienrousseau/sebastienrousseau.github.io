@@ -94,6 +94,18 @@ LANGUAGES: tuple[Language, ...] = (
     Language("yo", "yo-NG", "yo_NG", "YO", "Yorùbá", "🇳🇬", active=True),
     Language("zh-hans", "zh-Hans", "zh_CN", "ZH", "简体中文", "🇨🇳", active=True),
     Language("zh-hant", "zh-Hant", "zh_TW", "ZH-TW", "繁體中文", "🇹🇼", active=True),
+    # Planned languages (issue #360, 28 → 35) — glossaries + lang-switcher
+    # tiles ship first as ``active=False`` so hreflang/sitemap/worker
+    # routing stay content-driven. Flipping ``active=True`` follows the
+    # per-locale content backfill and its ``_data/i18n/<code>/`` tree.
+    # Persian is RTL (reuses the ``ar``/``he`` dir="rtl" path).
+    Language("fa", "fa-IR", "fa_IR", "FA", "فارسی", "🇮🇷", rtl=True, active=False),
+    Language("mr", "mr-IN", "mr_IN", "MR", "मराठी", "🇮🇳", active=False),
+    Language("ta", "ta-IN", "ta_IN", "TA", "தமிழ்", "🇮🇳", active=False),
+    Language("te", "te-IN", "te_IN", "TE", "తెలుగు", "🇮🇳", active=False),
+    Language("ms", "ms-MY", "ms_MY", "MS", "Bahasa Melayu", "🇲🇾", active=False),
+    Language("el", "el-GR", "el_GR", "EL", "Ελληνικά", "🇬🇷", active=False),
+    Language("hu", "hu-HU", "hu_HU", "HU", "Magyar", "🇭🇺", active=False),
 )
 
 _BY_CODE: dict[str, Language] = {lang.code: lang for lang in LANGUAGES}

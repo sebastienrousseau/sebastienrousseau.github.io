@@ -1,0 +1,23 @@
+{
+  "_comment": "Topic-cluster titles + ledes per language. Topic slugs are language-independent; only the displayed name and lede change. EN equivalents live in scripts/build_topics.py (TOPICS dict).",
+  "post-quantum-cryptography": {
+    "title": "Posztkvantum kriptográfia",
+    "lede": "Rácsalapú kriptográfia, NIST PQC szabványok, kvantumbiztos fizetések és a \"gyűjtsd most, fejtsd meg később\" fenyegetés. Kutatási jegyzetek, nyílt forráskódú programkönyvtárak és migrációs playbookok a pénzügyi szolgáltatások biztonsági csapatai számára."
+  },
+  "iso-20022-payments": {
+    "title": "ISO 20022 és fizetések",
+    "lede": "A határon átnyúló üzenetek migrációja, strukturált címzési megfelelőség, SEPA Instant, SWIFT gpi és az egészet hordozó nagybani fizetési sínek. Eszközök, playbookok és szabályozási ütemterv."
+  },
+  "applied-ai-banking": {
+    "title": "Alkalmazott MI a bankszektorban",
+    "lede": "Generatív MI, multimodális LLM-ek, hang- és beszédmodellek, és ahogyan újrarajzolják a banki működést, az ügyfélkiszolgálást és a termékfejlesztést az élvonalbeli intézményekben."
+  },
+  "rust-open-source": {
+    "title": "Rust és nyílt forráskód",
+    "lede": "Nyílt forráskódú Rust programkönyvtárak, amelyeket írok és karbantartok: naplózás, kódgenerálás, dátum és idő, kriptográfiai primitívek, Kyber-alapú KEM, valamint egy Rust statikus oldalgenerátor."
+  },
+  "blockchain-digital-assets": {
+    "title": "Blokklánc és digitális eszközök",
+    "lede": "Blokklánc és digitális eszközök: tokenizáció, ERC-20, stabilérmék, kriptovaluta-infrastruktúra, és az őket alakító szabályozási keretrendszer."
+  }
+}
