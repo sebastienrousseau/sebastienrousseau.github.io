@@ -1,0 +1,340 @@
+{
+  "patches": [
+    [
+      ">Authored &amp; maintained<",
+      ">Συντάχθηκαν και συντηρούνται<"
+    ],
+    [
+      ">Authored & maintained<",
+      ">Συντάχθηκαν και συντηρούνται<"
+    ],
+    [
+      ">Securing the future of banking<br>with agentic AI<br>and post-quantum cryptography\\.</h1>",
+      ">Ασφαλίζοντας το μέλλον των τραπεζικών υπηρεσιών<br>με πρακτορική τεχνητή νοημοσύνη<br>και μετακβαντική κρυπτογραφία.</h1>"
+    ],
+    [
+      ">Built for the edge\\. Architected for uncompromising resilience\\. Powering the next generation of global payments\\.</p>",
+      ">Σχεδιασμένο για το edge. Αρχιτεκτονικά δομημένο για ανθεκτικότητα χωρίς συμβιβασμούς. Τροφοδοτεί την επόμενη γενιά παγκόσμιων πληρωμών.</p>"
+    ],
+    [
+      "id=practice>Open source for the<br>future of finance\\.</h2>",
+      "id=practice>Ανοιχτός κώδικας για<br>το μέλλον των χρηματοοικονομικών.</h2>"
+    ],
+    [
+      ">Open source for the future of finance\\.<",
+      ">Ανοιχτός κώδικας για το μέλλον των χρηματοοικονομικών.<"
+    ],
+    [
+      ">A portfolio of Python, Rust and JavaScript libraries I created and maintain\\. Open source, free to use, and applied to wholesale payments, cross-border settlement, financial data and quantum-resistant cryptography\\.<",
+      ">Ένα χαρτοφυλάκιο βιβλιοθηκών Python, Rust και JavaScript που δημιούργησα και συντηρώ. Ανοιχτού κώδικα, ελεύθερες προς χρήση, εφαρμοσμένες σε πληρωμές χονδρικής, διασυνοριακό διακανονισμό, χρηματοοικονομικά δεδομένα και κρυπτογραφία ανθεκτική στο κβαντικό.<"
+    ],
+    [
+      ">Browse all projects<",
+      ">Περιήγηση σε όλα τα έργα<"
+    ],
+    [
+      ">Python · Payments<",
+      ">Python · Πληρωμές<"
+    ],
+    [
+      ">Python · Cross-border<",
+      ">Python · Διασυνοριακά<"
+    ],
+    [
+      ">Python · Finance<",
+      ">Python · Χρηματοοικονομικά<"
+    ],
+    [
+      ">Rust · Security<",
+      ">Rust · Ασφάλεια<"
+    ],
+    [
+      ">Rust · Quantum<",
+      ">Rust · Κβαντικό<"
+    ],
+    [
+      ">Rust · YAML<",
+      ">Rust · YAML<"
+    ],
+    [
+      ">Learn about ([A-Za-z0-9 ()_-]+)</a>",
+      ">Μάθετε περισσότερα για \\1</a>"
+    ],
+    [
+      "<p>A Python library that automates <strong>ISO 20022 pain\\.001</strong> payment file creation from CSV or SQLite\\.\\s*Built for the global migration from MT/MX to structured messages across SWIFT, SEPA and major schemes\\.</p>",
+      "<p>Μια βιβλιοθήκη Python που αυτοματοποιεί τη δημιουργία αρχείων πληρωμών <strong>ISO 20022 pain.001</strong> από CSV ή SQLite. Σχεδιασμένη για την παγκόσμια μετάβαση από MT/MX σε δομημένα μηνύματα σε SWIFT, SEPA και τα κύρια σχήματα.</p>"
+    ],
+    [
+      "<p>Generate, validate and deliver <strong>ISO 20022 pacs\\.008</strong> FI-to-FI customer credit transfer messages\\.\\s*JSON Schema, XSD validation, IBAN across 75 countries, GDPR/PCI-DSS-compliant PII masking\\.</p>",
+      "<p>Δημιουργεί, επικυρώνει και παραδίδει μηνύματα <strong>ISO 20022 pacs.008</strong> μεταφοράς πίστωσης πελάτη FI-προς-FI. JSON Schema, επικύρωση XSD, IBAN σε 75 χώρες, απόκρυψη προσωπικών δεδομένων συμβατή με GDPR/PCI-DSS.</p>"
+    ],
+    [
+      "<p>A finance-grade Python toolkit that turns multi-format bank statements into structured data\\.\\s*Designed for the realities of real-world statement files and the audit demands of regulated environments\\.</p>",
+      "<p>Μια εργαλειοθήκη Python χρηματοοικονομικής ποιότητας που μετατρέπει τραπεζικά αντίγραφα κίνησης πολλαπλών μορφών σε δομημένα δεδομένα. Σχεδιασμένη για τα πραγματικά αρχεία αντιγράφων κίνησης και τις απαιτήσεις ελέγχου των ρυθμιζόμενων περιβαλλόντων.</p>"
+    ],
+    [
+      "<p>A Rust library implementing <strong>secure hash and digest algorithms</strong> for password encryption and verification\\.\\s*Designed with a quantum-resistant posture for the post-PQC era of authentication\\.</p>",
+      "<p>Μια βιβλιοθήκη Rust που υλοποιεί <strong>ασφαλείς αλγορίθμους κατακερματισμού και σύνοψης</strong> για την κρυπτογράφηση και την επαλήθευση κωδικών πρόσβασης. Σχεδιασμένη με στάση ανθεκτική στο κβαντικό για την εποχή μετά το PQC της ταυτοποίησης.</p>"
+    ],
+    [
+      "<p>A robust Rust implementation of <strong>CRYSTALS-Kyber</strong>, the NIST FIPS 203 standard for general-purpose post-quantum encryption\\.\\s*The foundation for quantum-resistant payment authentication\\.</p>",
+      "<p>Μια στιβαρή υλοποίηση σε Rust του <strong>CRYSTALS-Kyber</strong>, του προτύπου NIST FIPS 203 για τη μετακβαντική κρυπτογράφηση γενικής χρήσης. Το θεμέλιο της ταυτοποίησης πληρωμών ανθεκτικής στο κβαντικό.</p>"
+    ],
+    [
+      "<p>A <strong>pure-Rust YAML 1\\.2 ecosystem</strong>\\. Zero unsafe, 100% spec compliance \\(406 / 406 official suite\\), streaming-first serde, lossless CST and JSON-Schema validation\\.\\s*Library \\+ CLI \\(noyafmt, noyavalidate\\) \\+ LSP \\+ MCP \\+ WASM bindings\\.</p>",
+      "<p>Ένα <strong>οικοσύστημα YAML 1.2 100 % Rust</strong>. Μηδέν unsafe, 100 % συμμόρφωση (406 / 406 της επίσημης σουίτας), serde streaming-first, CST χωρίς απώλειες και επικύρωση JSON-Schema. Βιβλιοθήκη + CLI (noyafmt, noyavalidate) + LSP + MCP + bindings WASM.</p>"
+    ],
+    [
+      "Quantum computing threatens the cryptographic foundations of financial services\\.\\s*Payments, from real-time to cross-border settlement, rely on protections that quantum computing will eventually render obsolete\\.",
+      "Η κβαντική υπολογιστική απειλεί τα κρυπτογραφικά θεμέλια των χρηματοοικονομικών υπηρεσιών. Οι πληρωμές, από τις πραγματικού χρόνου έως τον διασυνοριακό διακανονισμό, βασίζονται σε προστασίες που η κβαντική υπολογιστική τελικά θα καταστήσει παρωχημένες."
+    ],
+    [
+      ">Quantum-Safe Payments white paper · September 2025 · Read the paper<",
+      ">Λευκή βίβλος Quantum-Safe Payments · Σεπτέμβριος 2025 · Διαβάστε το κείμενο<"
+    ],
+    [
+      ">Read the paper<",
+      ">Διαβάστε το κείμενο<"
+    ],
+    [
+      ">Quantum-Safe Payments\\.</h2>",
+      ">Πληρωμές ανθεκτικές στο κβαντικό.</h2>"
+    ],
+    [
+      ">Quantum-Safe Payments\\.<",
+      ">Πληρωμές ανθεκτικές στο κβαντικό.<"
+    ],
+    [
+      ">Industry white paper for the Emerging Payments Association Asia\\.\\s*The structural threat quantum computing poses to payment infrastructure, and the case for coordinated action now\\.<",
+      ">Κλαδική λευκή βίβλος για την Emerging Payments Association Asia. Η δομική απειλή που θέτει η κβαντική υπολογιστική στην υποδομή πληρωμών, και το επιχείρημα για συντονισμένη δράση τώρα.<"
+    ],
+    [
+      ">Why the payments industry must act now\\.<",
+      ">Γιατί ο κλάδος των πληρωμών πρέπει να δράσει τώρα.<"
+    ],
+    [
+      ">Regulators are treating harvest-now-decrypt-later as a credible present risk\\. This paper outlines the structural threat and the urgent case for coordinated action across wholesale payment rails\\.</p>",
+      ">Οι ρυθμιστικές αρχές αντιμετωπίζουν πλέον τη λογική «συλλογή τώρα, αποκρυπτογράφηση αργότερα» ως αξιόπιστο παρόντα κίνδυνο. Αυτή η λευκή βίβλος περιγράφει τη δομική απειλή και την επείγουσα ανάγκη για συντονισμένη δράση στις υποδομές πληρωμών χονδρικής.</p>"
+    ],
+    [
+      ">Latest<",
+      ">Πρόσφατα<"
+    ],
+    [
+      ">From the desk\\.<",
+      ">Από το γραφείο.<"
+    ],
+    [
+      ">Recent research and writing on quantum-safe cryptography, ISO 20022 migration and the future of wholesale payments\\.<",
+      ">Πρόσφατη έρευνα και αρθρογραφία για την κρυπτογραφία ανθεκτική στο κβαντικό, τη μετάβαση ISO 20022 και το μέλλον των πληρωμών χονδρικής.<"
+    ],
+    [
+      "<p class=newsroom-excerpt>Stablecoins cannot pay yield under the GENIUS Act\\. BlackRock's BRSRV and BSTBL filings show the workaround — a tokenised money-market fund running alongside a regulated stablecoin to deliver yield through an adjacent, compliant rail\\.</p>",
+      "<p class=newsroom-excerpt>Τα stablecoins δεν μπορούν να καταβάλλουν απόδοση υπό τον GENIUS Act. Οι καταθέσεις BRSRV και BSTBL της BlackRock αποκαλύπτουν την παράκαμψη: ένα tokenized αμοιβαίο κεφάλαιο χρηματαγοράς που τρέχει παράλληλα με ένα ρυθμιζόμενο stablecoin ώστε να παρέχει απόδοση μέσω ενός παρακείμενου, συμμορφούμενου διαύλου.</p>"
+    ],
+    [
+      "<p class=newsroom-excerpt>Quantum risk has moved from research curiosity to active regulatory mandate\\. With the G7 roadmap published in January 2026 and BIS Project Leap proving feasibility in live payment systems, the board-level question is no longer whether to migrate\\.</p>",
+      "<p class=newsroom-excerpt>Ο κβαντικός κίνδυνος έχει περάσει από ερευνητική περιέργεια σε ενεργή κανονιστική εντολή. Με τον οδικό χάρτη της G7 που δημοσιεύθηκε τον Ιανουάριο του 2026 και το BIS Project Leap να αποδεικνύει τη σκοπιμότητα σε ζωντανά συστήματα πληρωμών, το ερώτημα σε επίπεδο διοικητικού συμβουλίου δεν είναι πλέον αν πρέπει να γίνει η μετάβαση.</p>"
+    ],
+    [
+      "<p class=newsroom-excerpt>From November 2026, SWIFT CBPR\\+ rejects unstructured postal addresses in cross-border payment messages\\. Six months out, 65% of pacs\\.008 messages still ship non-compliant addresses and 44% of banks remain behind on the remediation programme\\.</p>",
+      "<p class=newsroom-excerpt>Από τον Νοέμβριο του 2026, το SWIFT CBPR+ απορρίπτει μη δομημένες ταχυδρομικές διευθύνσεις στα μηνύματα διασυνοριακών πληρωμών. Έξι μήνες πριν, το 65 % των μηνυμάτων pacs.008 εξακολουθεί να αποστέλλει μη συμμορφούμενες διευθύνσεις και το 44 % των τραπεζών παραμένει πίσω στο πρόγραμμα αποκατάστασης.</p>"
+    ],
+    [
+      ">See all articles\\b",
+      ">Δείτε όλα τα άρθρα"
+    ],
+    [
+      "<p class=feat-eyebrow>Get in touch</p>",
+      "<p class=feat-eyebrow>Επικοινωνήστε</p>"
+    ],
+    [
+      ">Unlocking the Future of Banking and Financial Services\\.<br>Discover the latest news from</h2>",
+      ">Ξεκλειδώνοντας το μέλλον των τραπεζικών και χρηματοοικονομικών υπηρεσιών.<br>Ανακαλύψτε τις τελευταίες αναλύσεις</h2>"
+    ],
+    [
+      "<p class=\\\"feat-sub center\\\">Whether it's wholesale payments strategy, ISO 20022 migration, or quantum-safe cryptography for financial services\\. Happy to talk\\.</p>",
+      "<p class=\"feat-sub center\">Στρατηγική πληρωμών χονδρικής, μετάβαση ISO 20022 ή κρυπτογραφία ανθεκτική στο κβαντικό για τις χρηματοοικονομικές υπηρεσίες, με χαρά να το συζητήσουμε.</p>"
+    ],
+    [
+      ">Start a conversation</a>",
+      ">Ξεκινήστε μια συνομιλία</a>"
+    ],
+    [
+      "<a class=pill href=\"?/articles/index\\.html\"?>Read latest research</a>",
+      "<a class=pill href=\"/el/articles/index.html\">Διαβάστε την πρόσφατη έρευνα</a>"
+    ],
+    [
+      "<a class=\"pill ghost\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
+      "<a class=\"pill ghost\" href=\"/el/contact/index.html\">Επικοινωνήστε</a>"
+    ],
+    [
+      "href=\"?/papers/index\\.html\"?>Read the paper</a>",
+      "href=\"/el/publications/index.html\">Διαβάστε τη λευκή βίβλο</a>"
+    ],
+    [
+      "href=\"?/2026-05-15[^\"]*\"?>Read the article</a>",
+      "href=\"/el/2026-05-15-rendement-cache-decryptage-depots-blackrock-brsrv-bstbl-genius-act/index.html\">Διαβάστε το άρθρο</a>"
+    ],
+    [
+      "<h2 class=ap-foot-title>Writing</h2>",
+      "<h2 class=ap-foot-title>Αρθρογραφία</h2>"
+    ],
+    [
+      "<h2 class=ap-foot-title>Work</h2>",
+      "<h2 class=ap-foot-title>Δραστηριότητα</h2>"
+    ],
+    [
+      "<h2 class=ap-foot-title>Reach</h2>",
+      "<h2 class=ap-foot-title>Δίκτυα</h2>"
+    ],
+    [
+      "<a href=/about/index\\.html>About</a>",
+      "<a href=/el/a-propos/index.html>Σχετικά</a>"
+    ],
+    [
+      "<a href=/papers/index\\.html>Papers</a>",
+      "<a href=/el/publications/index.html>Δημοσιεύσεις</a>"
+    ],
+    [
+      "<a href=/projects/index\\.html>Projects</a>",
+      "<a href=/el/projets/index.html>Έργα</a>"
+    ],
+    [
+      "<a href=/playlists/index\\.html>Playlists</a>",
+      "<a href=/el/playlists/index.html>Λίστες αναπαραγωγής</a>"
+    ],
+    [
+      "<a href=/contact/index\\.html>Contact</a>",
+      "<a href=/el/contact/index.html>Επικοινωνία</a>"
+    ],
+    [
+      "<a href=/tags/index\\.html>Tags</a>",
+      "<a href=/el/etiquettes/index.html>Ετικέτες</a>"
+    ],
+    [
+      "<a href=/articles/index\\.html>Articles</a>",
+      "<a href=/el/articles/index.html>Άρθρα</a>"
+    ],
+    [
+      "<a href=/made-with-static-site-generator/index\\.html>Made with Static Site Generator</a>",
+      "<a href=/el/concu-avec-static-site-generator/index.html>Φτιαγμένο με Static Site Generator</a>"
+    ],
+    [
+      "<a href=/accessibility/index\\.html>Accessibility</a>",
+      "<a href=/el/accessibilite/index.html>Προσβασιμότητα</a>"
+    ],
+    [
+      "<a href=/privacy/index\\.html>Privacy</a>",
+      "<a href=/el/confidentialite/index.html>Απόρρητο</a>"
+    ],
+    [
+      "<a href=/terms/index\\.html>Terms</a>",
+      "<a href=/el/conditions/index.html>Όροι</a>"
+    ],
+    [
+      ">Experience<",
+      ">Εμπειρία<"
+    ],
+    [
+      ">Brands along the way\\.<",
+      ">Επωνυμίες στην πορεία.<"
+    ],
+    [
+      ">From global Tier-1 banks to consumer technology\\. Payments and digital product leadership across HSBC, PayPal, Barclays, Shazam, AKQA and Virgin Group\\.</p>",
+      ">Από παγκόσμιες τράπεζες Tier-1 έως την καταναλωτική τεχνολογία. Ηγεσία προϊόντος σε πληρωμές και ψηφιακά προϊόντα σε HSBC, PayPal, Barclays, Shazam, AKQA και Virgin Group.</p>"
+    ],
+    [
+      "alt=\"PayPal logo\"",
+      "alt=\"Λογότυπο PayPal\""
+    ],
+    [
+      "alt=\"Barclays logo\"",
+      "alt=\"Λογότυπο Barclays\""
+    ],
+    [
+      "alt=\"Shazam logo\"",
+      "alt=\"Λογότυπο Shazam\""
+    ],
+    [
+      "alt=\"AKQA logo\"",
+      "alt=\"Λογότυπο AKQA\""
+    ],
+    [
+      "alt=\"Virgin logo\"",
+      "alt=\"Λογότυπο Virgin\""
+    ],
+    [
+      "alt=\"HSBC logo\"",
+      "alt=\"Λογότυπο HSBC\""
+    ],
+    [
+      ">Read more<",
+      ">Διαβάστε περισσότερα<"
+    ],
+    [
+      ">Read the article<",
+      "<>Διαβάστε το άρθρο<"
+    ],
+    [
+      ">Read latest research<",
+      ">Διαβάστε την πρόσφατη έρευνα<"
+    ],
+    [
+      ">Read full article<",
+      "<>Διαβάστε το πλήρες άρθρο<"
+    ],
+    [
+      ">Get in touch ›</a>",
+      ">Επικοινωνήστε ›</a>"
+    ],
+    [
+      ">Payments · Stablecoins<",
+      ">Πληρωμές · Stablecoins<"
+    ],
+    [
+      ">Payments · ISO 20022<",
+      ">Πληρωμές · ISO 20022<"
+    ],
+    [
+      ">Quantum<",
+      ">Κβαντικό<"
+    ],
+    [
+      ">Quantum · Banking<",
+      ">Κβαντικό · Τραπεζική<"
+    ],
+    [
+      ">Quantum · Cryptography<",
+      ">Κβαντικό · Κρυπτογραφία<"
+    ],
+    [
+      ">Read the white paper</a>",
+      ">Διαβάστε τη λευκή βίβλο</a>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>Hand-authoring <strong>ISO 20022 pain\\.001</strong> is fragile under SEPA and SWIFT cutovers\\.</dd></div><div><dt>Approach</dt><dd>Schema-driven Python that maps CSV or SQLite into validated payment XML\\.</dd></div><div><dt>Outcome</dt><dd>Ops ship pain\\.001 in minutes; the audit trail survives the migration\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> ISO 20022 · SEPA \\+ SWIFT</p>",
+      "<dl class=pao><div><dt>Πρόβλημα</dt><dd>Η χειροκίνητη σύνταξη μηνυμάτων <strong>ISO 20022 pain.001</strong> είναι εύθραυστη κατά τις μεταβάσεις SEPA και SWIFT.</dd></div><div><dt>Προσέγγιση</dt><dd>Βιβλιοθήκη Python καθοδηγούμενη από σχήμα που μετατρέπει αρχεία CSV ή SQLite σε επικυρωμένο XML πληρωμών.</dd></div><div><dt>Αποτέλεσμα</dt><dd>Οι ομάδες λειτουργιών εκδίδουν αρχεία pain.001 σε λίγα λεπτά· η διαδρομή ελέγχου επιβιώνει της μετάβασης.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Αντίκτυπος</span> ISO 20022 · SEPA + SWIFT</p>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>FI-to-FI credit transfers fail audit when XSD, IBAN and PII rules diverge\\.</dd></div><div><dt>Approach</dt><dd>One library: JSON Schema, XSD, IBAN across 75 countries, GDPR-grade masking\\.</dd></div><div><dt>Outcome</dt><dd>Cross-border credit transfers that pass first-time at the regulator\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> 75 countries · IBAN</p>",
+      "<dl class=pao><div><dt>Πρόβλημα</dt><dd>Οι μεταφορές FI-προς-FI αποτυγχάνουν στον έλεγχο όταν οι κανόνες XSD, IBAN και PII αποκλίνουν.</dd></div><div><dt>Προσέγγιση</dt><dd>Μία μόνο βιβλιοθήκη: JSON Schema, XSD, IBAN σε 75 χώρες, απόκρυψη επιπέδου GDPR.</dd></div><div><dt>Αποτέλεσμα</dt><dd>Διασυνοριακές μεταφορές που περνούν με την πρώτη στον ρυθμιστή.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Αντίκτυπος</span> 75 χώρες · IBAN</p>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>Statement formats trap reconciliation teams in manual rekeying\\.</dd></div><div><dt>Approach</dt><dd>One Python toolkit that normalises multi-format statements with audit-grade lineage\\.</dd></div><div><dt>Outcome</dt><dd>Reconciliation runs without bespoke per-bank glue code\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> Multi-format · Audit-grade</p>",
+      "<dl class=pao><div><dt>Πρόβλημα</dt><dd>Οι μορφές αντιγράφων κίνησης εγκλωβίζουν τις ομάδες συμφωνίας σε χειροκίνητη επαναπληκτρολόγηση.</dd></div><div><dt>Προσέγγιση</dt><dd>Μια ενιαία εργαλειοθήκη Python που κανονικοποιεί αντίγραφα κίνησης πολλαπλών μορφών με ιχνηλασιμότητα επιπέδου ελέγχου.</dd></div><div><dt>Αποτέλεσμα</dt><dd>Η συμφωνία εκτελείται χωρίς εξειδικευμένο κώδικα σύνδεσης ανά τράπεζα.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Αντίκτυπος</span> Multi-format · Audit-grade</p>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>Pre-PQC hashing libraries leave credential stores quantum-exposed\\.</dd></div><div><dt>Approach</dt><dd>Memory-safe Rust hash and digest library with a post-quantum posture\\.</dd></div><div><dt>Outcome</dt><dd>Drop-in secure hashing for services planning PQC migration\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> Memory-safe · Rust</p>",
+      "<dl class=pao><div><dt>Πρόβλημα</dt><dd>Οι βιβλιοθήκες κατακερματισμού πριν το PQC αφήνουν τα αποθετήρια διαπιστευτηρίων εκτεθειμένα στο κβαντικό.</dd></div><div><dt>Προσέγγιση</dt><dd>Βιβλιοθήκη Rust memory-safe κατακερματισμού και συνόψεων με στάση post-quantum.</dd></div><div><dt>Αποτέλεσμα</dt><dd>Ασφαλής κατακερματισμός drop-in για υπηρεσίες που σχεδιάζουν τη μετάβασή τους στο PQC.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Αντίκτυπος</span> Memory-safe · Rust</p>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>Tier-1 banks carry harvest-now-decrypt-later exposure on every TLS session\\.</dd></div><div><dt>Approach</dt><dd>Pure-Rust <strong>CRYSTALS-Kyber</strong> \\(NIST FIPS 203\\) that plugs into existing auth flows\\.</dd></div><div><dt>Outcome</dt><dd>Post-quantum key exchange in production-grade Rust, independently validated\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> NIST FIPS 203</p>",
+      "<dl class=pao><div><dt>Πρόβλημα</dt><dd>Οι τράπεζες Tier-1 είναι εκτεθειμένες στον κίνδυνο harvest-now-decrypt-later σε κάθε συνεδρία TLS.</dd></div><div><dt>Προσέγγιση</dt><dd>Υλοποίηση pure-Rust του <strong>CRYSTALS-Kyber</strong> (NIST FIPS 203) που ενσωματώνεται στις υπάρχουσες ροές ταυτοποίησης.</dd></div><div><dt>Αποτέλεσμα</dt><dd>Ανταλλαγή κλειδιών post-quantum σε Rust ποιότητας παραγωγής, ανεξάρτητα επικυρωμένη.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Αντίκτυπος</span> NIST FIPS 203</p>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>AI, MCP and config pipelines run on YAML parsers with C-backed UB and silent spec drift\\.</dd></div><div><dt>Approach</dt><dd>Pure-Rust YAML 1\\.2 across library, CLI, LSP, MCP and WASM — zero unsafe, full spec\\.</dd></div><div><dt>Outcome</dt><dd>YAML pipelines that stop being the supply-chain weak link\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> 406 \\/ 406 spec · 0 unsafe</p>",
+      "<dl class=pao><div><dt>Πρόβλημα</dt><dd>Οι αγωγοί AI, MCP και διαμόρφωσης βασίζονται σε αναλυτές YAML με υπόβαθρο C εκτεθειμένους σε UB και σε σιωπηλή απόκλιση από την προδιαγραφή.</dd></div><div><dt>Προσέγγιση</dt><dd>YAML 1.2 pure-Rust σε βιβλιοθήκη, CLI, LSP, MCP και WASM, μηδέν unsafe, πλήρης συμμόρφωση με την προδιαγραφή.</dd></div><div><dt>Αποτέλεσμα</dt><dd>Αγωγοί YAML που παύουν να είναι ο αδύναμος κρίκος της αλυσίδας εφοδιασμού λογισμικού.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Αντίκτυπος</span> 406 / 406 προδ. · 0 unsafe</p>"
+    ]
+  ]
+}

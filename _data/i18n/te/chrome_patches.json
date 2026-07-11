@@ -1,0 +1,296 @@
+{
+  "patches": [
+    [
+      "aria-label=\"Newsletter signup\"",
+      "aria-label=\"న్యూస్‌లెటర్ సైన్‌అప్\""
+    ],
+    [
+      "Banking On Quantum — research notes on payments, AI (?:&amp;|&) post-quantum crypto\\. No spam\\.",
+      "Banking On Quantum - చెల్లింపులు, AI మరియు పోస్ట్-క్వాంటం క్రిప్టోపై పరిశోధన గమనికలు. స్పామ్ లేదు."
+    ],
+    [
+      "placeholder=\"?you@bank\\.com\"?",
+      "placeholder=\"you@bank.com\""
+    ],
+    [
+      "value=\"Newsletter signup — sebastienrousseau\\.com\"",
+      "value=\"న్యూస్‌లెటర్ సైన్‌అప్ - sebastienrousseau.com\""
+    ],
+    [
+      ">Subscribe</button>",
+      ">సబ్‌స్క్రైబ్ చేయండి</button>"
+    ],
+    [
+      ">Skip to main content</a>",
+      ">ప్రధాన కంటెంట్‌కు వెళ్లండి</a>"
+    ],
+    [
+      "aria-label=\"Toggle navigation\"",
+      "aria-label=\"నావిగేషన్‌ను టోగుల్ చేయండి\""
+    ],
+    [
+      "title=\"Toggle navigation\"",
+      "title=\"నావిగేషన్‌ను టోగుల్ చేయండి\""
+    ],
+    [
+      "aria-label=\"?Primary\"?(?=[\\s>])",
+      "aria-label=\"ప్రధాన నావిగేషన్\""
+    ],
+    [
+      "aria-label=\"Switch to dark theme\"",
+      "aria-label=\"డార్క్ థీమ్‌కు మారండి\""
+    ],
+    [
+      "aria-label=\"Switch to light theme\"",
+      "aria-label=\"లైట్ థీమ్‌కు మారండి\""
+    ],
+    [
+      "title=\"Switch theme\"",
+      "title=\"థీమ్ మార్చండి\""
+    ],
+    [
+      "aria-label=\"Search \\(Cmd or Ctrl \\+ K\\)\"",
+      "aria-label=\"శోధించండి (Cmd లేదా Ctrl + K)\""
+    ],
+    [
+      "title=\"Search \\(⌘K\\)\"",
+      "title=\"శోధించండి (⌘K)\""
+    ],
+    [
+      "aria-label=\"Get in touch\"",
+      "aria-label=\"సంప్రదించండి\""
+    ],
+    [
+      ">Get in touch ›</a>",
+      ">సంప్రదించండి ›</a>"
+    ],
+    [
+      ">Get in touch</a>",
+      ">సంప్రదించండి</a>"
+    ],
+    [
+      "aria-label=\"Sebastien Rousseau home\"",
+      "aria-label=\"Sebastien Rousseau హోమ్\""
+    ],
+    [
+      "<li><a href=\"?/about/index\\.html\"?>About</a></li>",
+      "<li><a href=\"/te/a-propos/index.html\">పరిచయం</a></li>"
+    ],
+    [
+      "<li><a href=\"?/papers/index\\.html\"?>Papers</a></li>",
+      "<li><a href=\"/te/publications/index.html\">ప్రచురణలు</a></li>"
+    ],
+    [
+      "<li><a href=\"?/topics/index\\.html\"?>Topics</a></li>",
+      "<li><a href=\"/te/sujets/index.html\">అంశాలు</a></li>"
+    ],
+    [
+      "<li><a href=\"?/projects/index\\.html\"?>Projects</a></li>",
+      "<li><a href=\"/te/projets/index.html\">ప్రాజెక్టులు</a></li>"
+    ],
+    [
+      "<li><a href=\"?/articles/index\\.html\"?>Articles</a></li>",
+      "<li><a href=\"/te/articles/index.html\">ఆర్టికల్‌లు</a></li>"
+    ],
+    [
+      "<li><a href=\"?/contact/index\\.html\"?>Contact</a></li>",
+      "<li><a href=\"/te/contact/index.html\">సంప్రదింపు</a></li>"
+    ],
+    [
+      "(<a\\b[^>]*?\\bclass=\"?ap-brand\"?[^>]*?\\bhref=)\"?/index\\.html\"?",
+      "\\g<1>\"/te/index.html\""
+    ],
+    [
+      "<li><a href=\"?/playlists/index\\.html\"?>Playlists</a></li>",
+      "<li><a href=\"/te/playlists/index.html\">ప్లేలిస్ట్‌లు</a></li>"
+    ],
+    [
+      "aria-label=\"Back to top\"",
+      "aria-label=\"పైకి తిరిగి\""
+    ],
+    [
+      "<h2 class=\"?ap-foot-title\"?>Writing</h2>",
+      "<h2 class=\"ap-foot-title\">రచనలు</h2>"
+    ],
+    [
+      "<h2 class=\"?ap-foot-title\"?>Work</h2>",
+      "<h2 class=\"ap-foot-title\">పని</h2>"
+    ],
+    [
+      "<h2 class=\"?ap-foot-title\"?>Reach</h2>",
+      "<h2 class=\"ap-foot-title\">నెట్‌వర్క్‌లు</h2>"
+    ],
+    [
+      "<a href=\"?/about/index\\.html\"?>About</a>",
+      "<a href=\"/te/a-propos/index.html\">పరిచయం</a>"
+    ],
+    [
+      "<a href=\"?/made-with-static-site-generator/index\\.html\"?>Made with Static Site Generator</a>",
+      "<a href=\"/te/concu-avec-static-site-generator/index.html\">Static Site Generatorతో నిర్మించబడింది</a>"
+    ],
+    [
+      "<a href=\"?/papers/index\\.html\"?>Papers</a>",
+      "<a href=\"/te/publications/index.html\">ప్రచురణలు</a>"
+    ],
+    [
+      "<a href=\"?/tags/index\\.html\"?>Tags</a>",
+      "<a href=\"/te/etiquettes/index.html\">ట్యాగ్‌లు</a>"
+    ],
+    [
+      "<a href=\"?/projects/index\\.html\"?>Projects</a>",
+      "<a href=\"/te/projets/index.html\">ప్రాజెక్టులు</a>"
+    ],
+    [
+      "<a href=\"?/playlists/index\\.html\"?>Playlists</a>",
+      "<a href=\"/te/playlists/index.html\">ప్లేలిస్ట్‌లు</a>"
+    ],
+    [
+      "<a href=\"?/contact/index\\.html\"?>Contact</a>",
+      "<a href=\"/te/contact/index.html\">సంప్రదింపు</a>"
+    ],
+    [
+      "<a href=\"?/articles/index\\.html\"?>Articles</a>",
+      "<a href=\"/te/articles/index.html\">ఆర్టికల్‌లు</a>"
+    ],
+    [
+      "aria-label=\"Social links\"",
+      "aria-label=\"సామాజిక లింక్‌లు\""
+    ],
+    [
+      "aria-label=\"Sebastien Rousseau on ",
+      "aria-label=\"Sebastien Rousseau - "
+    ],
+    [
+      "alt=\"Sebastien Rousseau on ",
+      "alt=\"Sebastien Rousseau - "
+    ],
+    [
+      "alt=\"Black and White Portrait of Sebastien Rousseau\"",
+      "alt=\"Sebastien Rousseau నలుపు-తెలుపు చిత్రం\""
+    ],
+    [
+      "© Copyright 2007 - 2026 - Sebastien Rousseau\\. All rights reserved\\.",
+      "© Copyright 2007 - 2026 - Sebastien Rousseau. అన్ని హక్కులూ ప్రత్యేకించబడ్డాయి."
+    ],
+    [
+      "<a href=\"?/accessibility/index\\.html\"?>Accessibility</a>",
+      "<a href=\"/te/accessibilite/index.html\">ప్రాప్యత</a>"
+    ],
+    [
+      "<a href=\"?/privacy/index\\.html\"?>Privacy</a>",
+      "<a href=\"/te/confidentialite/index.html\">గోప్యత</a>"
+    ],
+    [
+      "<a href=\"?/terms/index\\.html\"?>Terms</a>",
+      "<a href=\"/te/conditions/index.html\">నిబంధనలు</a>"
+    ],
+    [
+      "placeholder=\"Search documentation\\.\\.\\.\"",
+      "placeholder=\"డాక్యుమెంటేషన్‌లో శోధించండి...\""
+    ],
+    [
+      "aria-label=\"Search\"(?!\\s*\\()",
+      "aria-label=\"శోధించండి\""
+    ],
+    [
+      "<kbd>Esc</kbd>\\s*close",
+      "<kbd>Esc</kbd> మూసివేయి"
+    ],
+    [
+      "navigate</span>",
+      "నావిగేట్ చేయి</span>"
+    ],
+    [
+      "<kbd>Enter</kbd>\\s*open",
+      "<kbd>Enter</kbd> తెరవండి"
+    ],
+    [
+      "<span>Search</span>",
+      "<span>శోధించండి</span>"
+    ],
+    [
+      "aria-label=\"?Language\"?(?=[\\s>])",
+      "aria-label=\"భాష\""
+    ],
+    [
+      "aria-label=\"EN, Change language\"",
+      "aria-label=\"TE, భాష మార్చండి\""
+    ],
+    [
+      "title=\"Change language\"",
+      "title=\"భాష మార్చండి\""
+    ],
+    [
+      "title=\"Coming soon\"",
+      "title=\"త్వరలో వస్తోంది\""
+    ],
+    [
+      "<span class=\"?ap-lang-current\"?>EN</span>",
+      "<span class=\"ap-lang-current\">TE</span>"
+    ],
+    [
+      "title=\"Atom Feed\"",
+      "title=\"Atom ఫీడ్\""
+    ],
+    [
+      "title=\"RSS Feed\"",
+      "title=\"RSS ఫీడ్\""
+    ],
+    [
+      "aria-label=\"Article summary\"",
+      "aria-label=\"ఆర్టికల్ సారాంశం\""
+    ],
+    [
+      "<strong>Key takeaways</strong>",
+      "<strong>ముఖ్యాంశాలు</strong>"
+    ],
+    [
+      "<strong>Related reading:</strong>",
+      "<strong>సంబంధిత కథనాలు:</strong>"
+    ],
+    [
+      "<h2 id=\"related-heading\" class=\"related-heading\">Related reading</h2>",
+      "<h2 id=\"related-heading\" class=\"related-heading\">సంబంధిత కథనాలు</h2>"
+    ],
+    [
+      ">Last reviewed <",
+      ">చివరిగా సమీక్షించబడింది <"
+    ],
+    [
+      "aria-label=\"About the author\"",
+      "aria-label=\"రచయిత గురించి\""
+    ],
+    [
+      ">Full profile</a>",
+      ">పూర్తి ప్రొఫైల్</a>"
+    ],
+    [
+      "alt=\"Portrait of Sebastien Rousseau\"",
+      "alt=\"Sebastien Rousseau చిత్రం\""
+    ],
+    [
+      "<p class=\"feat-eyebrow\">Get in touch</p>",
+      "<p class=\"feat-eyebrow\">సంప్రదించండి</p>"
+    ],
+    [
+      ">Start a conversation</a>",
+      ">సంభాషణ ప్రారంభించండి</a>"
+    ],
+    [
+      "<a href=\"/articles/index\\.html\">Read latest research</a>",
+      "<a href=\"/articles/index.html\">తాజా పరిశోధనను చదవండి</a>"
+    ],
+    [
+      "<a href=\"/contact/index\\.html\">Get in touch</a>",
+      "<a href=\"/contact/index.html\">సంప్రదించండి</a>"
+    ],
+    [
+      "<li><a href=\"?/case-studies/index\\.html\"?>Case studies</a></li>",
+      "<li><a href=\"/te/etudes-de-cas/index.html\">కేస్ స్టడీలు</a></li>"
+    ],
+    [
+      "<a href=\"?/case-studies/index\\.html\"?>Case studies</a>",
+      "<a href=\"/te/etudes-de-cas/index.html\">కేస్ స్టడీలు</a>"
+    ]
+  ]
+}

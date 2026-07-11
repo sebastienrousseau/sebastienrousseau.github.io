@@ -1,0 +1,340 @@
+{
+  "patches": [
+    [
+      ">Authored &amp; maintained<",
+      ">लिहिलेले &amp; देखभाल केलेले<"
+    ],
+    [
+      ">Authored & maintained<",
+      ">लिहिलेले & देखभाल केलेले<"
+    ],
+    [
+      ">Securing the future of banking<br>with agentic AI<br>and post-quantum cryptography\\.</h1>",
+      ">बँकिंगचे भविष्य सुरक्षित करत आहे<br>एजंटिक AI सह<br>आणि पोस्ट-क्वांटम क्रिप्टोग्राफीने.</h1>"
+    ],
+    [
+      ">Built for the edge\\. Architected for uncompromising resilience\\. Powering the next generation of global payments\\.</p>",
+      ">एजसाठी निर्मित. तडजोडरहित लवचिकतेसाठी रचित. जागतिक पेमेंट्सच्या पुढील पिढीला सक्षम करत आहे.</p>"
+    ],
+    [
+      "id=practice>Open source for the<br>future of finance\\.</h2>",
+      "id=practice>ओपन सोर्स<br>वित्ताच्या भविष्यासाठी.</h2>"
+    ],
+    [
+      ">Open source for the future of finance\\.<",
+      ">ओपन सोर्स वित्ताच्या भविष्यासाठी.<"
+    ],
+    [
+      ">A portfolio of Python, Rust and JavaScript libraries I created and maintain\\. Open source, free to use, and applied to wholesale payments, cross-border settlement, financial data and quantum-resistant cryptography\\.<",
+      ">मी तयार केलेल्या आणि देखभाल करत असलेल्या Python, Rust आणि JavaScript लायब्ररींचा एक पोर्टफोलिओ. ओपन सोर्स, वापरण्यास मुक्त, आणि होलसेल पेमेंट्स, सीमापार सेटलमेंट, वित्तीय डेटा आणि क्वांटम-प्रतिरोधक क्रिप्टोग्राफीवर लागू केलेल्या.<"
+    ],
+    [
+      ">Browse all projects<",
+      ">सर्व प्रकल्प पहा<"
+    ],
+    [
+      ">Python · Payments<",
+      ">Python · पेमेंट्स<"
+    ],
+    [
+      ">Python · Cross-border<",
+      ">Python · सीमापार<"
+    ],
+    [
+      ">Python · Finance<",
+      ">Python · वित्त<"
+    ],
+    [
+      ">Rust · Security<",
+      ">Rust · सुरक्षा<"
+    ],
+    [
+      ">Rust · Quantum<",
+      ">Rust · क्वांटम<"
+    ],
+    [
+      ">Rust · YAML<",
+      ">Rust · YAML<"
+    ],
+    [
+      ">Learn about ([A-Za-z0-9 ()_-]+)</a>",
+      ">\\1 बद्दल जाणून घ्या</a>"
+    ],
+    [
+      "<p>A Python library that automates <strong>ISO 20022 pain\\.001</strong> payment file creation from CSV or SQLite\\.\\s*Built for the global migration from MT/MX to structured messages across SWIFT, SEPA and major schemes\\.</p>",
+      "<p>CSV किंवा SQLite मधून <strong>ISO 20022 pain.001</strong> पेमेंट फाइल निर्मिती स्वयंचलित करणारी एक Python लायब्ररी. SWIFT, SEPA आणि प्रमुख योजनांवर MT/MX पासून संरचित संदेशांकडे जागतिक स्थलांतरासाठी निर्मित.</p>"
+    ],
+    [
+      "<p>Generate, validate and deliver <strong>ISO 20022 pacs\\.008</strong> FI-to-FI customer credit transfer messages\\.\\s*JSON Schema, XSD validation, IBAN across 75 countries, GDPR/PCI-DSS-compliant PII masking\\.</p>",
+      "<p><strong>ISO 20022 pacs.008</strong> FI-ते-FI ग्राहक क्रेडिट ट्रान्सफर संदेश तयार करा, प्रमाणित करा आणि वितरित करा. JSON Schema, XSD प्रमाणीकरण, 75 देशांमध्ये IBAN, GDPR/PCI-DSS-अनुरूप PII मास्किंग.</p>"
+    ],
+    [
+      "<p>A finance-grade Python toolkit that turns multi-format bank statements into structured data\\.\\s*Designed for the realities of real-world statement files and the audit demands of regulated environments\\.</p>",
+      "<p>बहु-स्वरूप बँक स्टेटमेंट्सना संरचित डेटामध्ये रूपांतरित करणारे एक वित्त-दर्जाचे Python टूलकिट. वास्तविक जगातील स्टेटमेंट फाइल्सच्या वास्तविकतेसाठी आणि नियमन केलेल्या वातावरणाच्या लेखापरीक्षण मागण्यांसाठी रचित.</p>"
+    ],
+    [
+      "<p>A Rust library implementing <strong>secure hash and digest algorithms</strong> for password encryption and verification\\.\\s*Designed with a quantum-resistant posture for the post-PQC era of authentication\\.</p>",
+      "<p>पासवर्ड एन्क्रिप्शन आणि पडताळणीसाठी <strong>सुरक्षित हॅश आणि डायजेस्ट अल्गोरिदम</strong> लागू करणारी एक Rust लायब्ररी. प्रमाणीकरणाच्या पोस्ट-PQC युगासाठी क्वांटम-प्रतिरोधक भूमिकेसह रचित.</p>"
+    ],
+    [
+      "<p>A robust Rust implementation of <strong>CRYSTALS-Kyber</strong>, the NIST FIPS 203 standard for general-purpose post-quantum encryption\\.\\s*The foundation for quantum-resistant payment authentication\\.</p>",
+      "<p>सामान्य-उद्देश पोस्ट-क्वांटम एन्क्रिप्शनसाठी NIST FIPS 203 मानक असलेल्या <strong>CRYSTALS-Kyber</strong> ची एक मजबूत Rust अंमलबजावणी. क्वांटम-प्रतिरोधक पेमेंट प्रमाणीकरणाचा पाया.</p>"
+    ],
+    [
+      "<p>A <strong>pure-Rust YAML 1\\.2 ecosystem</strong>\\. Zero unsafe, 100% spec compliance \\(406 / 406 official suite\\), streaming-first serde, lossless CST and JSON-Schema validation\\.\\s*Library \\+ CLI \\(noyafmt, noyavalidate\\) \\+ LSP \\+ MCP \\+ WASM bindings\\.</p>",
+      "<p>एक <strong>शुद्ध-Rust YAML 1.2 इकोसिस्टम</strong>. शून्य unsafe, 100% स्पेक अनुरूपता (406 / 406 अधिकृत सूट), स्ट्रीमिंग-प्रथम serde, हानिरहित CST आणि JSON-Schema प्रमाणीकरण. लायब्ररी + CLI (noyafmt, noyavalidate) + LSP + MCP + WASM बाइंडिंग्स.</p>"
+    ],
+    [
+      "Quantum computing threatens the cryptographic foundations of financial services\\.\\s*Payments, from real-time to cross-border settlement, rely on protections that quantum computing will eventually render obsolete\\.",
+      "क्वांटम संगणन वित्तीय सेवांच्या क्रिप्टोग्राफिक पायाला धोका निर्माण करते. पेमेंट्स, रिअल-टाइमपासून सीमापार सेटलमेंटपर्यंत, अशा संरक्षणांवर अवलंबून असतात जी क्वांटम संगणन अखेरीस अप्रचलित करेल."
+    ],
+    [
+      ">Quantum-Safe Payments white paper · September 2025 · Read the paper<",
+      ">Quantum-Safe Payments श्वेतपत्र · सप्टेंबर 2025 · पेपर वाचा<"
+    ],
+    [
+      ">Read the paper<",
+      ">पेपर वाचा<"
+    ],
+    [
+      ">Quantum-Safe Payments\\.</h2>",
+      ">क्वांटम-सुरक्षित पेमेंट्स.</h2>"
+    ],
+    [
+      ">Quantum-Safe Payments\\.<",
+      ">क्वांटम-सुरक्षित पेमेंट्स.<"
+    ],
+    [
+      ">Industry white paper for the Emerging Payments Association Asia\\.\\s*The structural threat quantum computing poses to payment infrastructure, and the case for coordinated action now\\.<",
+      ">Emerging Payments Association Asia साठी उद्योग श्वेतपत्र. क्वांटम संगणन पेमेंट पायाभूत सुविधांना निर्माण करत असलेला संरचनात्मक धोका, आणि आता समन्वित कृतीची गरज.<"
+    ],
+    [
+      ">Why the payments industry must act now\\.<",
+      ">पेमेंट उद्योगाने आता का कृती केली पाहिजे.<"
+    ],
+    [
+      ">Regulators are treating harvest-now-decrypt-later as a credible present risk\\. This paper outlines the structural threat and the urgent case for coordinated action across wholesale payment rails\\.</p>",
+      ">नियामक « आत्ता कापणी करा, नंतर डिक्रिप्ट करा » याला एक विश्वासार्ह वर्तमान जोखीम मानत आहेत. हा पेपर संरचनात्मक धोका आणि होलसेल पेमेंट रेल्सवर समन्वित कृतीची तातडीची गरज मांडतो.</p>"
+    ],
+    [
+      ">Latest<",
+      ">अलीकडील<"
+    ],
+    [
+      ">From the desk\\.<",
+      ">डेस्कवरून.<"
+    ],
+    [
+      ">Recent research and writing on quantum-safe cryptography, ISO 20022 migration and the future of wholesale payments\\.<",
+      ">क्वांटम-सुरक्षित क्रिप्टोग्राफी, ISO 20022 स्थलांतर आणि होलसेल पेमेंट्सच्या भविष्यावरील अलीकडील संशोधन आणि लेखन.<"
+    ],
+    [
+      "<p class=newsroom-excerpt>Stablecoins cannot pay yield under the GENIUS Act\\. BlackRock's BRSRV and BSTBL filings show the workaround — a tokenised money-market fund running alongside a regulated stablecoin to deliver yield through an adjacent, compliant rail\\.</p>",
+      "<p class=newsroom-excerpt>GENIUS Act अंतर्गत स्टेबलकॉइन्स उत्पन्न देऊ शकत नाहीत. BlackRock च्या BRSRV आणि BSTBL फाइलिंग्ज उपाय दर्शवतात: एक टोकनाइज्ड मनी-मार्केट फंड जो नियमन केलेल्या स्टेबलकॉइनसोबत चालतो आणि लगतच्या, अनुरूप रेलद्वारे उत्पन्न वितरित करतो.</p>"
+    ],
+    [
+      "<p class=newsroom-excerpt>Quantum risk has moved from research curiosity to active regulatory mandate\\. With the G7 roadmap published in January 2026 and BIS Project Leap proving feasibility in live payment systems, the board-level question is no longer whether to migrate\\.</p>",
+      "<p class=newsroom-excerpt>क्वांटम जोखीम संशोधन कुतूहलाकडून सक्रिय नियामक आदेशाकडे सरकली आहे. जानेवारी 2026 मध्ये प्रकाशित G7 रोडमॅप आणि थेट पेमेंट प्रणालींमध्ये व्यवहार्यता सिद्ध करणारा BIS Project Leap यांच्यासह, मंडळ-स्तरावरील प्रश्न आता स्थलांतर करायचे की नाही हा राहिलेला नाही.</p>"
+    ],
+    [
+      "<p class=newsroom-excerpt>From November 2026, SWIFT CBPR\\+ rejects unstructured postal addresses in cross-border payment messages\\. Six months out, 65% of pacs\\.008 messages still ship non-compliant addresses and 44% of banks remain behind on the remediation programme\\.</p>",
+      "<p class=newsroom-excerpt>नोव्हेंबर 2026 पासून, SWIFT CBPR+ सीमापार पेमेंट संदेशांमधील असंरचित टपाल पत्ते नाकारते. सहा महिने बाकी असताना, 65% pacs.008 संदेश अजूनही अननुरूप पत्ते पाठवतात आणि 44% बँका सुधारणा कार्यक्रमात मागे आहेत.</p>"
+    ],
+    [
+      ">See all articles\\b",
+      ">सर्व लेख पहा"
+    ],
+    [
+      "<p class=feat-eyebrow>Get in touch</p>",
+      "<p class=feat-eyebrow>संपर्क साधा</p>"
+    ],
+    [
+      ">Unlocking the Future of Banking and Financial Services\\.<br>Discover the latest news from</h2>",
+      ">बँकिंग आणि वित्तीय सेवांचे भविष्य खुले करत आहे.<br>नवीनतम विश्लेषणे शोधा</h2>"
+    ],
+    [
+      "<p class=\\\"feat-sub center\\\">Whether it's wholesale payments strategy, ISO 20022 migration, or quantum-safe cryptography for financial services\\. Happy to talk\\.</p>",
+      "<p class=\"feat-sub center\">होलसेल पेमेंट्स धोरण असो, ISO 20022 स्थलांतर असो, किंवा वित्तीय सेवांसाठी क्वांटम-सुरक्षित क्रिप्टोग्राफी असो. बोलण्यास आनंद होईल.</p>"
+    ],
+    [
+      ">Start a conversation</a>",
+      ">संभाषण सुरू करा</a>"
+    ],
+    [
+      "<a class=pill href=\"?/articles/index\\.html\"?>Read latest research</a>",
+      "<a class=pill href=\"/mr/articles/index.html\">अलीकडील संशोधन वाचा</a>"
+    ],
+    [
+      "<a class=\"pill ghost\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
+      "<a class=\"pill ghost\" href=\"/mr/contact/index.html\">संपर्क साधा</a>"
+    ],
+    [
+      "href=\"?/papers/index\\.html\"?>Read the paper</a>",
+      "href=\"/mr/publications/index.html\">श्वेतपत्र वाचा</a>"
+    ],
+    [
+      "href=\"?/2026-05-15[^\"]*\"?>Read the article</a>",
+      "href=\"/mr/2026-05-15-rendement-cache-decryptage-depots-blackrock-brsrv-bstbl-genius-act/index.html\">लेख वाचा</a>"
+    ],
+    [
+      "<h2 class=ap-foot-title>Writing</h2>",
+      "<h2 class=ap-foot-title>लेखन</h2>"
+    ],
+    [
+      "<h2 class=ap-foot-title>Work</h2>",
+      "<h2 class=ap-foot-title>कार्य</h2>"
+    ],
+    [
+      "<h2 class=ap-foot-title>Reach</h2>",
+      "<h2 class=ap-foot-title>पोहोच</h2>"
+    ],
+    [
+      "<a href=/about/index\\.html>About</a>",
+      "<a href=/mr/a-propos/index.html>विषयी</a>"
+    ],
+    [
+      "<a href=/papers/index\\.html>Papers</a>",
+      "<a href=/mr/publications/index.html>प्रकाशने</a>"
+    ],
+    [
+      "<a href=/projects/index\\.html>Projects</a>",
+      "<a href=/mr/projets/index.html>प्रकल्प</a>"
+    ],
+    [
+      "<a href=/playlists/index\\.html>Playlists</a>",
+      "<a href=/mr/playlists/index.html>प्लेलिस्ट्स</a>"
+    ],
+    [
+      "<a href=/contact/index\\.html>Contact</a>",
+      "<a href=/mr/contact/index.html>संपर्क</a>"
+    ],
+    [
+      "<a href=/tags/index\\.html>Tags</a>",
+      "<a href=/mr/etiquettes/index.html>टॅग्ज</a>"
+    ],
+    [
+      "<a href=/articles/index\\.html>Articles</a>",
+      "<a href=/mr/articles/index.html>लेख</a>"
+    ],
+    [
+      "<a href=/made-with-static-site-generator/index\\.html>Made with Static Site Generator</a>",
+      "<a href=/mr/concu-avec-static-site-generator/index.html>Static Site Generator ने बनवलेले</a>"
+    ],
+    [
+      "<a href=/accessibility/index\\.html>Accessibility</a>",
+      "<a href=/mr/accessibilite/index.html>प्रवेशयोग्यता</a>"
+    ],
+    [
+      "<a href=/privacy/index\\.html>Privacy</a>",
+      "<a href=/mr/confidentialite/index.html>गोपनीयता</a>"
+    ],
+    [
+      "<a href=/terms/index\\.html>Terms</a>",
+      "<a href=/mr/conditions/index.html>अटी</a>"
+    ],
+    [
+      ">Experience<",
+      ">अनुभव<"
+    ],
+    [
+      ">Brands along the way\\.<",
+      ">वाटेवरील ब्रँड्स.<"
+    ],
+    [
+      ">From global Tier-1 banks to consumer technology\\. Payments and digital product leadership across HSBC, PayPal, Barclays, Shazam, AKQA and Virgin Group\\.</p>",
+      ">जागतिक Tier-1 बँकांपासून ग्राहक तंत्रज्ञानापर्यंत. HSBC, PayPal, Barclays, Shazam, AKQA आणि Virgin Group मध्ये पेमेंट्स आणि डिजिटल उत्पादन नेतृत्व.</p>"
+    ],
+    [
+      "alt=\"PayPal logo\"",
+      "alt=\"PayPal लोगो\""
+    ],
+    [
+      "alt=\"Barclays logo\"",
+      "alt=\"Barclays लोगो\""
+    ],
+    [
+      "alt=\"Shazam logo\"",
+      "alt=\"Shazam लोगो\""
+    ],
+    [
+      "alt=\"AKQA logo\"",
+      "alt=\"AKQA लोगो\""
+    ],
+    [
+      "alt=\"Virgin logo\"",
+      "alt=\"Virgin लोगो\""
+    ],
+    [
+      "alt=\"HSBC logo\"",
+      "alt=\"HSBC लोगो\""
+    ],
+    [
+      ">Read more<",
+      ">अधिक वाचा<"
+    ],
+    [
+      ">Read the article<",
+      "<>लेख वाचा<"
+    ],
+    [
+      ">Read latest research<",
+      ">अलीकडील संशोधन वाचा<"
+    ],
+    [
+      ">Read full article<",
+      "<>संपूर्ण लेख वाचा<"
+    ],
+    [
+      ">Get in touch ›</a>",
+      ">संपर्क साधा ›</a>"
+    ],
+    [
+      ">Payments · Stablecoins<",
+      ">पेमेंट्स · स्टेबलकॉइन्स<"
+    ],
+    [
+      ">Payments · ISO 20022<",
+      ">पेमेंट्स · ISO 20022<"
+    ],
+    [
+      ">Quantum<",
+      ">क्वांटम<"
+    ],
+    [
+      ">Quantum · Banking<",
+      ">क्वांटम · बँकिंग<"
+    ],
+    [
+      ">Quantum · Cryptography<",
+      ">क्वांटम · क्रिप्टोग्राफी<"
+    ],
+    [
+      ">Read the white paper</a>",
+      ">श्वेतपत्र वाचा</a>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>Hand-authoring <strong>ISO 20022 pain\\.001</strong> is fragile under SEPA and SWIFT cutovers\\.</dd></div><div><dt>Approach</dt><dd>Schema-driven Python that maps CSV or SQLite into validated payment XML\\.</dd></div><div><dt>Outcome</dt><dd>Ops ship pain\\.001 in minutes; the audit trail survives the migration\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> ISO 20022 · SEPA \\+ SWIFT</p>",
+      "<dl class=pao><div><dt>समस्या</dt><dd>SEPA आणि SWIFT कटओव्हरखाली <strong>ISO 20022 pain.001</strong> स्वहस्ते लिहिणे नाजूक आहे.</dd></div><div><dt>दृष्टिकोन</dt><dd>CSV किंवा SQLite ला प्रमाणित पेमेंट XML मध्ये मॅप करणारे स्कीमा-चालित Python.</dd></div><div><dt>परिणाम</dt><dd>ऑप्स काही मिनिटांत pain.001 पाठवतात; लेखापरीक्षण मार्ग स्थलांतरात टिकून राहतो.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>प्रभाव</span> ISO 20022 · SEPA + SWIFT</p>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>FI-to-FI credit transfers fail audit when XSD, IBAN and PII rules diverge\\.</dd></div><div><dt>Approach</dt><dd>One library: JSON Schema, XSD, IBAN across 75 countries, GDPR-grade masking\\.</dd></div><div><dt>Outcome</dt><dd>Cross-border credit transfers that pass first-time at the regulator\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> 75 countries · IBAN</p>",
+      "<dl class=pao><div><dt>समस्या</dt><dd>XSD, IBAN आणि PII नियम भिन्न झाल्यास FI-ते-FI क्रेडिट ट्रान्सफर्स लेखापरीक्षणात अपयशी ठरतात.</dd></div><div><dt>दृष्टिकोन</dt><dd>एकच लायब्ररी: JSON Schema, XSD, 75 देशांमध्ये IBAN, GDPR-दर्जाचे मास्किंग.</dd></div><div><dt>परिणाम</dt><dd>सीमापार क्रेडिट ट्रान्सफर्स जे नियामकाकडे पहिल्याच वेळी उत्तीर्ण होतात.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>प्रभाव</span> 75 देश · IBAN</p>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>Statement formats trap reconciliation teams in manual rekeying\\.</dd></div><div><dt>Approach</dt><dd>One Python toolkit that normalises multi-format statements with audit-grade lineage\\.</dd></div><div><dt>Outcome</dt><dd>Reconciliation runs without bespoke per-bank glue code\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> Multi-format · Audit-grade</p>",
+      "<dl class=pao><div><dt>समस्या</dt><dd>स्टेटमेंट स्वरूपे रिकन्सिलिएशन संघांना स्वहस्ते पुनर्टंकनात अडकवतात.</dd></div><div><dt>दृष्टिकोन</dt><dd>एकच Python टूलकिट जे बहु-स्वरूप स्टेटमेंट्सना लेखापरीक्षण-दर्जाच्या वंशावळीसह सामान्यीकृत करते.</dd></div><div><dt>परिणाम</dt><dd>रिकन्सिलिएशन प्रत्येक बँकेसाठी सानुकूल जोडणी कोडशिवाय चालते.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>प्रभाव</span> बहु-स्वरूप · लेखापरीक्षण-दर्जा</p>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>Pre-PQC hashing libraries leave credential stores quantum-exposed\\.</dd></div><div><dt>Approach</dt><dd>Memory-safe Rust hash and digest library with a post-quantum posture\\.</dd></div><div><dt>Outcome</dt><dd>Drop-in secure hashing for services planning PQC migration\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> Memory-safe · Rust</p>",
+      "<dl class=pao><div><dt>समस्या</dt><dd>पूर्व-PQC हॅशिंग लायब्ररी क्रेडेन्शियल स्टोअर्सना क्वांटम-उघड ठेवतात.</dd></div><div><dt>दृष्टिकोन</dt><dd>पोस्ट-क्वांटम भूमिकेसह मेमरी-सेफ Rust हॅश आणि डायजेस्ट लायब्ररी.</dd></div><div><dt>परिणाम</dt><dd>PQC स्थलांतराचे नियोजन करणाऱ्या सेवांसाठी ड्रॉप-इन सुरक्षित हॅशिंग.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>प्रभाव</span> मेमरी-सेफ · Rust</p>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>Tier-1 banks carry harvest-now-decrypt-later exposure on every TLS session\\.</dd></div><div><dt>Approach</dt><dd>Pure-Rust <strong>CRYSTALS-Kyber</strong> \\(NIST FIPS 203\\) that plugs into existing auth flows\\.</dd></div><div><dt>Outcome</dt><dd>Post-quantum key exchange in production-grade Rust, independently validated\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> NIST FIPS 203</p>",
+      "<dl class=pao><div><dt>समस्या</dt><dd>Tier-1 बँका प्रत्येक TLS सत्रावर आत्ता-कापणी-नंतर-डिक्रिप्ट धोक्याचा भार वाहतात.</dd></div><div><dt>दृष्टिकोन</dt><dd>विद्यमान प्रमाणीकरण प्रवाहांमध्ये जोडली जाणारी शुद्ध-Rust <strong>CRYSTALS-Kyber</strong> (NIST FIPS 203).</dd></div><div><dt>परिणाम</dt><dd>उत्पादन-दर्जाच्या Rust मध्ये पोस्ट-क्वांटम की एक्सचेंज, स्वतंत्रपणे प्रमाणित.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>प्रभाव</span> NIST FIPS 203</p>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>AI, MCP and config pipelines run on YAML parsers with C-backed UB and silent spec drift\\.</dd></div><div><dt>Approach</dt><dd>Pure-Rust YAML 1\\.2 across library, CLI, LSP, MCP and WASM — zero unsafe, full spec\\.</dd></div><div><dt>Outcome</dt><dd>YAML pipelines that stop being the supply-chain weak link\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> 406 \\/ 406 spec · 0 unsafe</p>",
+      "<dl class=pao><div><dt>समस्या</dt><dd>AI, MCP आणि कॉन्फिग पाइपलाइन्स C-आधारित UB आणि मूक स्पेक बदलासह YAML पार्सर्सवर चालतात.</dd></div><div><dt>दृष्टिकोन</dt><dd>लायब्ररी, CLI, LSP, MCP आणि WASM मध्ये शुद्ध-Rust YAML 1.2, शून्य unsafe, संपूर्ण स्पेक.</dd></div><div><dt>परिणाम</dt><dd>YAML पाइपलाइन्स ज्या पुरवठा-साखळीतील कमकुवत दुवा राहणे थांबवतात.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>प्रभाव</span> 406 / 406 स्पेक · 0 unsafe</p>"
+    ]
+  ]
+}

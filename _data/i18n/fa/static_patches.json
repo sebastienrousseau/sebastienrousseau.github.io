@@ -1,0 +1,1020 @@
+{
+  "patches": [
+    [
+      "<a href=\"/\">Home</a> &middot; <span>Topics</span>",
+      "<a href=\"/fa/\">خانه</a> &middot; <span>موضوعات</span>"
+    ],
+    [
+      ">Home<",
+      ">خانه<"
+    ],
+    [
+      ">Topics</h1>",
+      ">موضوعات</h1>"
+    ],
+    [
+      ">PILLARS</p>",
+      ">ستون‌ها</p>"
+    ],
+    [
+      "PILLAR · TOPIC",
+      "ستون · موضوع"
+    ],
+    [
+      "PILLAR · PROJECT",
+      "ستون · پروژه"
+    ],
+    [
+      "Curated topic clusters[^<]+",
+      "خوشه‌های موضوعی: یک رشته را انتخاب کنید و آن را در سراسر بایگانی دنبال کنید."
+    ],
+    [
+      "aria-label=\"Post-Quantum Cryptography\"",
+      "aria-label=\"رمزنگاری پساکوانتومی\""
+    ],
+    [
+      "aria-label=\"ISO 20022 &amp; Payments\"",
+      "aria-label=\"ISO 20022 &amp; پرداخت‌ها\""
+    ],
+    [
+      "aria-label=\"Applied AI in Banking\"",
+      "aria-label=\"هوش مصنوعی کاربردی در بانکداری\""
+    ],
+    [
+      "aria-label=\"Rust &amp; Open Source\"",
+      "aria-label=\"Rust &amp; Open Source\""
+    ],
+    [
+      "aria-label=\"Blockchain &amp; Digital Assets\"",
+      "aria-label=\"Blockchain &amp; دارایی‌های دیجیتال\""
+    ],
+    [
+      "alt=\"Post-Quantum Cryptography — topic banner\"",
+      "alt=\"رمزنگاری پساکوانتومی - بنر موضوع\""
+    ],
+    [
+      "alt=\"ISO 20022 &amp; Payments — topic banner\"",
+      "alt=\"ISO 20022 &amp; پرداخت‌ها - بنر موضوع\""
+    ],
+    [
+      "alt=\"Applied AI in Banking — topic banner\"",
+      "alt=\"هوش مصنوعی کاربردی در بانکداری - بنر موضوع\""
+    ],
+    [
+      "alt=\"Rust &amp; Open Source — topic banner\"",
+      "alt=\"Rust &amp; Open Source - بنر موضوع\""
+    ],
+    [
+      "alt=\"Blockchain &amp; Digital Assets — topic banner\"",
+      "alt=\"Blockchain &amp; دارایی‌های دیجیتال - بنر موضوع\""
+    ],
+    [
+      "<h3><a href=\"/fa/topics/post-quantum-cryptography/[^\"]+\">Post-Quantum Cryptography</a></h3>",
+      "<h3><a href=\"/fa/topics/post-quantum-cryptography/index.html\">رمزنگاری پساکوانتومی</a></h3>"
+    ],
+    [
+      "<h3><a href=\"/fa/topics/iso-20022-payments/[^\"]+\">ISO 20022 &amp; Payments</a></h3>",
+      "<h3><a href=\"/fa/topics/iso-20022-payments/index.html\">ISO 20022 &amp; پرداخت‌ها</a></h3>"
+    ],
+    [
+      "<h3><a href=\"/fa/topics/applied-ai-banking/[^\"]+\">Applied AI in Banking</a></h3>",
+      "<h3><a href=\"/fa/topics/applied-ai-banking/index.html\">هوش مصنوعی کاربردی در بانکداری</a></h3>"
+    ],
+    [
+      "<h3><a href=\"/fa/topics/rust-open-source/[^\"]+\">Rust &amp; Open Source</a></h3>",
+      "<h3><a href=\"/fa/topics/rust-open-source/index.html\">Rust &amp; Open Source</a></h3>"
+    ],
+    [
+      "<h3><a href=\"/fa/topics/blockchain-digital-assets/[^\"]+\">Blockchain &amp; Digital Assets</a></h3>",
+      "<h3><a href=\"/fa/topics/blockchain-digital-assets/index.html\">Blockchain &amp; دارایی‌های دیجیتال</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Lattice-based cryptography, NIST PQC standards, quantum-safe payments,[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">رمزنگاری مبتنی بر شبکه، استانداردهای NIST PQC، پرداخت‌های مقاوم در برابر کوانتوم و تهدید «اکنون برداشت کن، بعداً رمزگشایی کن». یادداشت‌های پژوهشی، کتابخانه‌های متن‌باز و راهنماهای عملی مهاجرت برای تیم‌های امنیت خدمات مالی.</p>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Cross-border message migration, structured-address compliance,[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">مهاجرت پیام‌های فرامرزی، انطباق آدرس ساختاریافته، SEPA Instant، SWIFT gpi و ریل‌های پرداخت عمده‌فروشی که کل مجموعه را حمل می‌کنند. ابزارها، راهنماهای عملی و تقویم مقرراتی.</p>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Generative AI, multimodal LLMs, voice, and speech models[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">هوش مصنوعی مولد، LLMهای چندوجهی، صدا و مدل‌های گفتار، و اینکه چگونه عملیات بانکی، خدمات مشتری و مهندسی محصول را در مؤسسات درجه‌یک بازطراحی می‌کنند.</p>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Open-source Rust libraries I author and maintain:[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">کتابخانه‌های Rust متن‌باز که می‌نویسم و نگهداری می‌کنم: ثبت گزارش، تولید کد، تاریخ و زمان، اولیه‌های رمزنگاری، KEM مبتنی بر Kyber و یک تولیدکننده سایت ایستا با Rust.</p>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Bitcoin, blockchain fundamentals, ERC-20 tokens, stablecoins,[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Bitcoin، مبانی بلاکچین، توکن‌های ERC-20، استیبل‌کوین‌ها و چارچوب مقرراتی پیرامون ریل‌های پرداخت متکی بر دارایی‌های دیجیتال.</p>"
+    ],
+    [
+      "(\\d+) article\\(s\\)</p>",
+      "\\1 مقاله</p>"
+    ],
+    [
+      "INDUSTRY WHITE PAPER · EPAA",
+      "وایت‌پیپر صنعتی · EPAA"
+    ],
+    [
+      "INDUSTRY WHITE PAPER",
+      "وایت‌پیپر صنعتی"
+    ],
+    [
+      "PUBLICATION · WHITE PAPER",
+      "انتشار · وایت‌پیپر"
+    ],
+    [
+      ">RESEARCH NOTES</p>",
+      ">یادداشت‌های پژوهشی</p>"
+    ],
+    [
+      ">RESEARCH NOTE · QUANTUM<",
+      ">یادداشت پژوهشی · کوانتومی<"
+    ],
+    [
+      ">RESEARCH · CRYPTOGRAPHY<",
+      ">پژوهش · رمزنگاری<"
+    ],
+    [
+      ">RESEARCH · AI<",
+      ">پژوهش · هوش مصنوعی<"
+    ],
+    [
+      ">RESEARCH · QUANTUM FINANCE<",
+      ">پژوهش · مالیهٔ کوانتومی<"
+    ],
+    [
+      ">RESEARCH · QUANTUM BANKING<",
+      ">پژوهش · بانکداری کوانتومی<"
+    ],
+    [
+      "WHITE PAPER",
+      "وایت‌پیپر"
+    ],
+    [
+      ">Read the white paper</a>",
+      ">وایت‌پیپر را بخوانید</a>"
+    ],
+    [
+      "title=\"Read the white paper \\(PDF\\)\"",
+      "title=\"خواندن وایت‌پیپر (PDF)\""
+    ],
+    [
+      ">About EPAA</a>",
+      "<>درباره EPAA</a>"
+    ],
+    [
+      "title=\"Visit the Emerging Payments Association Asia\"",
+      "title=\"بازدید از Emerging Payments Association Asia\""
+    ],
+    [
+      ">Buy &middot; \\$([0-9]+)\\.([0-9]+)</a>",
+      ">خرید &middot; \\1.\\2 دلار</a>"
+    ],
+    [
+      "title=\"Buy the publication on PayPal\"",
+      "title=\"خرید نشریه در PayPal\""
+    ],
+    [
+      ">Read the article</a>",
+      "<>خواندن مقاله</a>"
+    ],
+    [
+      " · Free download",
+      " · دانلود رایگان"
+    ],
+    [
+      "Free download<",
+      "دانلود رایگان<"
+    ],
+    [
+      ">Download<",
+      ">دانلود<"
+    ],
+    [
+      ">Request access<",
+      "<>درخواست دسترسی<"
+    ],
+    [
+      ">English · PDF",
+      ">فارسی · PDF"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-01-(\\d{2})\">January \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-01-\\2\">\\2 ژانویه \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-02-(\\d{2})\">February \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-02-\\2\">\\2 فوریه \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-03-(\\d{2})\">March \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-03-\\2\">\\2 مارس \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-04-(\\d{2})\">April \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-04-\\2\">\\2 آوریل \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-05-(\\d{2})\">May \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-05-\\2\">\\2 مه \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-06-(\\d{2})\">June \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-06-\\2\">\\2 ژوئن \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-07-(\\d{2})\">July \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-07-\\2\">\\2 ژوئیه \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-08-(\\d{2})\">August \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-08-\\2\">\\2 اوت \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-09-(\\d{2})\">September \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-09-\\2\">\\2 سپتامبر \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-09-01\">September \\d{4}</time>",
+      "<time datetime=\"\\1-09-01\">سپتامبر \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-10-(\\d{2})\">October \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-10-\\2\">\\2 اکتبر \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-11-(\\d{2})\">November \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-11-\\2\">\\2 نوامبر \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-12-(\\d{2})\">December \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-12-\\2\">\\2 دسامبر \\1</time>"
+    ],
+    [
+      ">A system for real-time speech-to-text transcription that leverages OpenAI Whisper and Metal Performance Shaders GPU acceleration on macOS to achieve sub-second latency at 8-12x real-time on M1 Max\\.<",
+      ">سیستمی برای رونویسی گفتار به متن در زمان واقعی که بر OpenAI Whisper و شتاب‌دهی GPU با Metal Performance Shaders روی macOS تکیه می‌کند تا به تأخیر کمتر از یک ثانیه و 8 تا 12 برابر زمان واقعی روی M1 Max برسد.<"
+    ],
+    [
+      ">A new paper suggests Shor\\'s algorithm could run on as few as 10,000 qubits\\. The threshold for cryptographically relevant quantum computing is dropping fast\\.<",
+      ">مقاله‌ای جدید نشان می‌دهد که الگوریتم شور می‌تواند تنها با 10,000 کیوبیت اجرا شود. آستانهٔ محاسبات کوانتومی مرتبط از نظر رمزنگاری به‌سرعت در حال کاهش است.<"
+    ],
+    [
+      ">A bug in Yilei Chen's quantum algorithm for solving LWE has been found, temporarily securing lattice-based cryptography and highlighting the need for ongoing research\\.<",
+      ">باگی در الگوریتم کوانتومی Yilei Chen برای حل LWE کشف شده است که موقتاً رمزنگاری مبتنی بر شبکه را ایمن می‌کند و نیاز به پژوهش مستمر را برجسته می‌سازد.<"
+    ],
+    [
+      ">New quantum algorithm solves a key cryptographic problem, urging accelerated research into quantum-safe security\\.<",
+      ">یک الگوریتم کوانتومی جدید مسئله‌ای کلیدی در رمزنگاری را حل می‌کند و خواستار شتاب‌بخشی به پژوهش در امنیت مقاوم در برابر کوانتوم است.<"
+    ],
+    [
+      ">How Fully Homomorphic Encryption revolutionises data security in banking and financial services, preserving privacy against quantum-era threats\\.<",
+      ">چگونه رمزگذاری کاملاً هم‌ریخت امنیت داده‌ها را در بانکداری و خدمات مالی متحول می‌کند و حریم خصوصی را در برابر تهدیدهای عصر کوانتوم حفظ می‌کند.<"
+    ],
+    [
+      ">An analysis of Apple's MM1 paper on Multimodal Large Language Models — architecture, pre-training strategies and emerging capabilities\\.<",
+      ">تحلیلی از مقالهٔ MM1 شرکت Apple دربارهٔ مدل‌های زبانی بزرگ چندوجهی: معماری، راهبردهای پیش‌آموزش و قابلیت‌های نوظهور.<"
+    ],
+    [
+      ">How IBM Qiskit and the Quantum Fourier Transform reshape credit ratio analysis in finance, offering unprecedented accuracy and speed\\.<",
+      ">چگونه IBM Qiskit و تبدیل فوریهٔ کوانتومی تحلیل نسبت‌های اعتباری در مالیه را بازطراحی می‌کنند و دقت و سرعتی بی‌سابقه ارائه می‌دهند.<"
+    ],
+    [
+      ">The transformative role of AI inside quantum algorithms for finance, focusing on their mathematical structure and banking applications\\.<",
+      ">نقش دگرگون‌کنندهٔ هوش مصنوعی در الگوریتم‌های کوانتومی در مالیه، با تمرکز بر ساختار ریاضی و کاربردهای بانکی آن‌ها.<"
+    ],
+    [
+      ">As quantum computers threaten traditional encryption, Quantum Key Distribution \\(QKD\\) emerges as a structural answer for financial-grade security\\.<",
+      ">در حالی که رایانه‌های کوانتومی رمزگذاری سنتی را تهدید می‌کنند، توزیع کوانتومی کلید (QKD) به‌عنوان پاسخی ساختاری برای امنیت مالی پدیدار می‌شود.<"
+    ],
+    [
+      ">How CRYSTALS-Kyber, the NIST-selected quantum-resistant key-encapsulation mechanism, is reshaping cryptography for the quantum era\\.<",
+      ">چگونه CRYSTALS-Kyber، سازوکار کپسوله‌سازی کلید مقاوم در برابر کوانتوم که توسط NIST انتخاب شده است، رمزنگاری را در عصر کوانتوم بازطراحی می‌کند.<"
+    ],
+    [
+      ">What kind of research and papers do you publish\\?</summary>",
+      ">چه نوع پژوهش‌ها و انتشاراتی منتشر می‌کنید؟</summary>"
+    ],
+    [
+      "(<summary[^>]*>Quels types de recherches et publications publiez-vous \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>دو محور در کنار هم وجود دارند. <strong>وایت‌پیپرهای صنعتی</strong> که برای سازمان‌هایی مانند Emerging Payments Association Asia (EPAA) تولید می‌شوند، دگرگونی‌های ساختاری زیرساخت‌های پرداخت را بررسی می‌کنند: به‌تازگی تأثیر محاسبات کوانتومی مرتبط از نظر رمزنگاری بر ریل‌های تسویهٔ عمده‌فروشی و بی‌درنگ. <strong>گزارش‌های پژوهش کاربردی</strong> موضوعات فنی مشخصی را هدف می‌گیرند (برای مثال: تشخیص گفتار در زمان واقعی با Whisper + Metal Performance Shaders روی Apple Silicon) و به‌صورت PDFهای قابل خرید جداگانه منتشر می‌شوند.</p></section>"
+    ],
+    [
+      ">How often do you release new papers\\?</summary>",
+      ">هر چند وقت یک‌بار مقالات جدید منتشر می‌کنید؟</summary>"
+    ],
+    [
+      "(<summary[^>]*>À quelle fréquence publiez-vous de nouveaux articles \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>نامنظم، به‌دلیل ترجیح کیفیت بر بسامد انتشار. یادداشت‌های پژوهشی کوتاه هر چند هفته یک‌بار، هنگامی که پیشرفتی فنی آن را توجیه کند، منتشر می‌شوند. وایت‌پیپرها در پیوند با چرخه‌های صنعتی منتشر می‌شوند (برای مثال: تقویم‌های مقرراتی، همایش‌های EPAA).</p></section>"
+    ],
+    [
+      ">About EPAA</p>",
+      "<>درباره EPAA</p>"
+    ],
+    [
+      "<p[^>]*class=\\\"book-about\\\"[^>]*>The Emerging Payments Association Asia[^<]+",
+      "<p class=\"book-about\"><strong>Emerging Payments Association Asia (EPAA)</strong> انجمن حرفه‌ای صنعت پرداخت در منطقهٔ آسیا-اقیانوسیه است که بانک‌ها، پردازشگرها، فین‌تک‌ها و ناظران را پیرامون مسائل ساختاری فراگیر در این بخش گرد هم می‌آورد."
+    ],
+    [
+      ">Quantum-Safe Payments: Why the Payments Industry Must Act Now<",
+      ">پرداخت‌های مقاوم در برابر کوانتوم: چرا این صنعت باید همین حالا اقدام کند<"
+    ],
+    [
+      ">Accelerating Real-Time Speech Recognition with OpenAI Whisper and Metal Performance Shaders on macOS<",
+      ">شتاب‌بخشی به تشخیص گفتار در زمان واقعی با OpenAI Whisper و Metal Performance Shaders روی macOS<"
+    ],
+    [
+      ">Recent research and analysis<",
+      ">پژوهش‌ها و تحلیل‌های اخیر<"
+    ],
+    [
+      "September 2025 &middot; Emerging Payments Association Asia \\(EPAA\\)",
+      "سپتامبر 2025 &middot; Emerging Payments Association Asia (EPAA)"
+    ],
+    [
+      ">Quantum computing threatens the cryptographic foundations[^<]+",
+      ">محاسبات کوانتومی بنیان‌های رمزنگاری خدمات مالی را تهدید می‌کند. پرداخت‌ها، از زمان واقعی تا تسویهٔ فرامرزی، بر محافظت‌هایی متکی‌اند که محاسبات کوانتومی سرانجام آن‌ها را منسوخ خواهد کرد. این وایت‌پیپر EPAA تشریح می‌کند چرا این صنعت باید همین حالا اقدام کند."
+    ],
+    [
+      "2024 &middot; Independent Research &middot;",
+      "2024 &middot; پژوهش مستقل &middot;"
+    ],
+    [
+      ">This independent research paper presents[^<]+",
+      ">این گزارش پژوهش مستقل بهینه‌سازی تشخیص گفتار در زمان واقعی روی macOS با کمک OpenAI Whisper و Metal Performance Shaders را ارائه می‌دهد و بهبودهای قابل‌اندازه‌گیری در تأخیر و بهره‌وری انرژی را نشان می‌دهد."
+    ],
+    [
+      ">License &amp; pricing<",
+      ">مجوز و قیمت‌گذاری<"
+    ],
+    [
+      ">One copy per buyer<",
+      ">یک نسخه به ازای هر خریدار<"
+    ],
+    [
+      ">Questions\\?\\s*<span class=\"qa-headline-soft\">Answers\\.</span>",
+      ">پرسش‌ها؟<span class=\"qa-headline-soft\"> پاسخ‌ها.</span>"
+    ],
+    [
+      ">Questions\\? Answers\\.</h2>",
+      ">پرسش‌ها؟ پاسخ‌ها.</h2>"
+    ],
+    [
+      ">Questions\\? Answers\\.<",
+      ">پرسش‌ها؟ پاسخ‌ها.<"
+    ],
+    [
+      ">Are the white papers free to read\\?</summary>",
+      ">آیا وایت‌پیپرها برای مطالعه آزاد هستند؟</summary>"
+    ],
+    [
+      ">May I cite or quote from these papers\\?</summary>",
+      ">آیا می‌توانم این اسناد را نقل‌قول کنم؟</summary>"
+    ],
+    [
+      ">Who is the intended audience\\?</summary>",
+      ">این انتشارات برای چه کسانی است؟</summary>"
+    ],
+    [
+      ">Can I commission a paper or speak at an event\\?</summary>",
+      ">آیا می‌توانم سفارش یک مطالعه بدهم یا برای سخنرانی دعوت کنم؟</summary>"
+    ],
+    [
+      ">How do I follow new publications\\?</summary>",
+      ">چگونه انتشارات جدید را دنبال کنم؟</summary>"
+    ],
+    [
+      ">Where can I follow new releases\\?</summary>",
+      ">کجا می‌توانم انتشارات جدید را دنبال کنم؟</summary>"
+    ],
+    [
+      "(<summary[^>]*>Les livres blancs sont-ils en libre lecture \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>وایت‌پیپر EPAA با عنوان <em>Quantum-Safe Payments</em> به‌صورت عمومی و رایگان برای دانلود در <a href=\"https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf\" rel=\"external noopener\">emergingpaymentsasia.org</a> در دسترس است. گزارش پژوهش مستقل دربارهٔ تشخیص گفتار در زمان واقعی با OpenAI Whisper و Metal Performance Shaders دارای مجوز است و برای خرید جداگانه به قیمت 49.00 دلار (انگلیسی، PDF، حدود 95 کیلوبایت) در دسترس است. یک نسخه به ازای هر خریدار؛ دانلودها فقط برای استفادهٔ شخصی و غیرقابل بازتوزیع هستند.</p></section>"
+    ],
+    [
+      "(<summary[^>]*>Puis-je citer ces documents \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>بله. نقل‌قول‌های کوتاه همراه با ذکر منبع در چارچوب استفادهٔ منصفانه پذیرفته است. برای انتشارات EPAA، EPAA را به‌عنوان ناشر همراه با گروه کاری، سال و نشانی PDF ذکر کنید. برای گزارش‌های پژوهش مستقل، به این شکل استناد کنید: <em>Rousseau, S. (سال). عنوان. خودانتشار.</em> همراه با نشانی متعارف. برای بازتولید یک شکل یا بخشی گسترده، لطفاً پیش از آن با <a href=\"/fa/contact/\">من تماس بگیرید</a>.</p></section>"
+    ],
+    [
+      "(<summary[^>]*>À qui s’adressent ces publications \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>مدیران پرداخت، مدیران ارشد امنیت اطلاعات و معماران ارشد در بانک‌های درجه‌یک، بانک‌های مرکزی، اپراتورهای سامانه‌های پرداخت و مالکان شِماها. پژوهش کاربردی برای مهندسان و مدیران محصولی است که بر پایهٔ مدل‌های زبانی بزرگ، هوش مصنوعی روی‌دستگاه و رمزنگاری مقاوم در برابر کوانتوم می‌سازند. هر مقاله دانش حوزه را مفروض می‌گیرد و یادآوری‌هایی را که یک حرفه‌ای شاغل از پیش می‌داند حذف می‌کند.</p></section>"
+    ],
+    [
+      "(<summary[^>]*>Puis-je commander une étude ou inviter à une conférence \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>بله، به‌صورت موردی و بر اساس گزینش. مأموریت‌های سفارشی به پرداخت‌های عمده‌فروشی، مهاجرت ISO 20022، رمزنگاری پساکوانتومی برای خدمات مالی و هوش مصنوعی کاربردی در بانکداری می‌پردازند. سخنرانی در همایش‌های صنعتی، مجامع بانک‌های مرکزی و میزگردهای ناظران به‌صورت موردی بررسی می‌شود. از <a href=\"/fa/contact/\">فرم تماس</a> استفاده کنید و موضوع، مخاطب و زمان‌بندی را مشخص کنید.</p></section>"
+    ],
+    [
+      "(<summary[^>]*>Comment suivre les nouvelles publications \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>مقالات و یادداشت‌های پژوهشی جدید در وهلهٔ نخست از طریق <a href=\"/fa/rss.xml\">خوراک RSS</a> سایت و خبرنامهٔ <a href=\"https://news.bankingonquantum.com\" rel=\"external noopener\">Banking On Quantum</a> اعلام می‌شوند، خبرنامه‌ای که رمزنگاری پساکوانتومی، سیاست بانک‌های مرکزی و نقشهٔ راه مهاجرت شِماهای اصلی پرداخت را پوشش می‌دهد. بدون هرزنامه، فقط تازه‌ها.</p></section>"
+    ],
+    [
+      "(<summary[^>]*>Où puis-je suivre les nouvelles publications \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>در <a href=\"/fa/rss.xml\">خوراک RSS</a> مشترک شوید یا مرا در <a href=\"https://www.linkedin.com/in/sebastienrousseau/\" rel=\"external noopener\">LinkedIn</a> دنبال کنید تا از انتشارات جدید باخبر شوید.</p></section>"
+    ],
+    [
+      ">Browse all projects<",
+      ">مرور همهٔ پروژه‌ها<"
+    ],
+    [
+      ">Three areas of practice\\.\\s*<span",
+      ">سه حوزهٔ کاری. <span"
+    ],
+    [
+      ">One philosophy\\.</span>",
+      ">یک فلسفه.</span>"
+    ],
+    [
+      ">WHAT IS INSIDE<",
+      ">محتوا<"
+    ],
+    [
+      ">OPEN SOURCE FOR FINANCIAL SERVICES<",
+      ">OPEN SOURCE برای خدمات مالی<"
+    ],
+    [
+      ">Payments and settlement\\.<",
+      ">پرداخت و تسویه.<"
+    ],
+    [
+      ">Post-quantum cryptography\\.<",
+      ">رمزنگاری پساکوانتومی.<"
+    ],
+    [
+      ">Tooling and infrastructure\\.<",
+      ">ابزارها و زیرساخت.<"
+    ],
+    [
+      ">Applied AI\\.<",
+      ">هوش مصنوعی کاربردی.<"
+    ],
+    [
+      ">Explore payments tools\\s+<",
+      ">کاوش ابزارهای پرداخت <"
+    ],
+    [
+      ">Explore quantum-safe libraries\\s+<",
+      ">کاوش کتابخانه‌های کوانتوم‌امن <"
+    ],
+    [
+      ">Explore developer tools\\s+<",
+      ">کاوش ابزارهای توسعه‌دهنده <"
+    ],
+    [
+      ">Explore PQC tools\\s+<",
+      ">کاوش ابزارهای PQC <"
+    ],
+    [
+      ">Explore AI tools\\s+<",
+      ">کاوش ابزارهای هوش مصنوعی <"
+    ],
+    [
+      ">Authored & maintained<",
+      ">نوشته و نگهداری‌شده<"
+    ],
+    [
+      ">Authored &amp; maintained<",
+      ">نوشته و نگهداری‌شده<"
+    ],
+    [
+      ">Open source for the future of finance\\.<",
+      ">متن‌باز برای آیندهٔ مالیه.<"
+    ],
+    [
+      "<p class=\"setup-card-body\">ISO 20022 <strong>pain\\.001</strong> and <strong>pacs\\.008</strong> toolkits[^<]*\\.[^<]*\\.</p>",
+      "<p class=\"setup-card-body\">جعبه‌ابزارهای ISO 20022 <strong>pain.001</strong> و <strong>pacs.008</strong>، تجزیهٔ صورت‌حساب‌های بانکی و کتابخانه‌های Rust برای مهاجرت به پیام‌های فرامرزی ساختاریافته. طراحی‌شده برای SWIFT، SEPA و شِماهای پرداخت بی‌درنگ.</p>"
+    ],
+    [
+      "<p class=\"setup-card-body\">Rust implementations of <strong>CRYSTALS-Kyber</strong>[^<]*\\.[^<]*\\.</p>",
+      "<p class=\"setup-card-body\">پیاده‌سازی‌های Rust از <strong>CRYSTALS-Kyber</strong> (NIST FIPS&nbsp;203)، اولیه‌های درهم‌سازی و بلوک‌های سازندهٔ مقاوم در برابر کوانتوم. محافظتی فراتر از عصر RSA و منحنی بیضوی در احراز هویت مالی.</p>"
+    ],
+    [
+      "<p class=\"setup-card-body\">Open-source Rust libraries for serialisation[\\s\\S]+?shippable\\.</p>",
+      "<p class=\"setup-card-body\">کتابخانه‌های Rust متن‌باز برای سریال‌سازی، ثبت گزارش، تولید کد، تاریخ و زمان. به‌علاوهٔ <strong>Static Site Generator</strong> (SSG) که این سایت را می‌سازد و محیط توسعه‌دهنده‌ای که آن را قابل‌تحویل می‌کند.</p>"
+    ],
+    [
+      ">ISO 20022 tooling for the global migration\\. Pain\\.001 file generation, pacs\\.008 cross-border credit transfers, and structured bank-statement parsing\\.<",
+      ">ابزارهای ISO 20022 برای مهاجرت جهانی. تولید فایل‌های Pain.001، حواله‌های فرامرزی pacs.008 و تجزیهٔ ساختاریافتهٔ صورت‌حساب‌های بانکی.<"
+    ],
+    [
+      ">Rust implementations of CRYSTALS-Kyber, hash and digest primitives, and quantum-resistant building blocks for financial-grade authentication\\.<",
+      ">پیاده‌سازی‌های Rust از CRYSTALS-Kyber، اولیه‌های درهم‌سازی و بلوک‌های سازندهٔ مقاوم در برابر کوانتوم برای احراز هویت مالی.<"
+    ],
+    [
+      ">Applied artificial intelligence\\.<",
+      ">هوش مصنوعی کاربردی.<"
+    ],
+    [
+      ">Open-source AI projects applying speech recognition, natural language, and large language models to real-world finance and productivity problems\\.<",
+      ">پروژه‌های هوش مصنوعی متن‌باز که تشخیص گفتار، زبان طبیعی و مدل‌های زبانی بزرگ را برای مسائل واقعی مالیه و بهره‌وری به کار می‌گیرند.<"
+    ],
+    [
+      ">A Python library that automates ISO 20022 pain\\.001 payment file creation from CSV or SQLite\\. Built for the global migration to structured cross-border messages\\.<",
+      ">یک کتابخانهٔ Python که ساخت فایل‌های پرداخت ISO 20022 pain.001 را از CSV یا SQLite خودکار می‌کند. ساخته‌شده برای مهاجرت جهانی به پیام‌های ساختارمند فرامرزی.<"
+    ],
+    [
+      ">Generate, validate, and deliver ISO 20022 pacs\\.008 payment messages for FI-to-FI customer credit transfers\\. JSON Schema \\+ XSD validation, IBAN across 75 countries, GDPR/PCI-DSS-compliant PII masking\\.<",
+      ">پیام‌های پرداخت ISO 20022 pacs.008 را برای انتقال‌های اعتباری مشتری بین مؤسسات مالی (FI به FI) تولید، اعتبارسنجی و تحویل دهید. اعتبارسنجی JSON Schema + XSD، IBAN در 75 کشور، پوشاندن داده‌های شخصی سازگار با GDPR/PCI-DSS.<"
+    ],
+    [
+      ">A finance-grade Python toolkit that turns multi-format bank statements into structured data — for the realities of real-world statement files and the audit demands of regulated environments\\.<",
+      ">یک جعبه‌ابزار Python در سطح مالی که صورت‌حساب‌های بانکی چندقالبی را به داده‌های ساختارمند تبدیل می‌کند، برای واقعیت‌های فایل‌های صورت‌حساب دنیای واقعی و الزامات حسابرسی محیط‌های تحت نظارت.<"
+    ],
+    [
+      ">A Rust application for optimising cash allocation across complex fund structures using AI-driven forecasting\\. Aimed at treasury, fund accounting, and asset-allocation use cases inside banks and asset managers\\.<",
+      ">یک برنامهٔ Rust برای بهینه‌سازی تخصیص نقدینگی در ساختارهای پیچیدهٔ صندوق با پیش‌بینی مبتنی بر هوش مصنوعی. طراحی‌شده برای کاربردهای خزانه‌داری، حسابداری صندوق و تخصیص دارایی در بانک‌ها و مدیران دارایی.<"
+    ],
+    [
+      ">A Rust library for generating and manipulating QR-code images in multiple formats\\. Direct payment uses include EPC QR Codes for SEPA Credit Transfers, payment-link QR for merchant collection, and step-up authentication flows\\.<",
+      ">یک کتابخانهٔ Rust برای تولید و دستکاری تصاویر QR کد در قالب‌های متعدد. کاربردهای مستقیم پرداخت: EPC QR Code برای انتقال‌های اعتباری SEPA، QR لینک پرداخت برای وصول تجاری و جریان‌های احراز هویت step-up.<"
+    ],
+    [
+      ">A robust Rust implementation of CRYSTALS-Kyber, the NIST FIPS 203 standard for general-purpose post-quantum key encapsulation\\.<",
+      ">یک پیاده‌سازی مستحکم Rust از CRYSTALS-Kyber، استاندارد NIST FIPS 203 برای کپسوله‌سازی کلید پساکوانتومی همه‌منظوره.<"
+    ],
+    [
+      ">Secure hash and digest algorithms for password encryption and verification, designed with a quantum-resistant posture for the post-PQC era\\.<",
+      ">الگوریتم‌های هش و چکیده‌سازی امن برای رمزنگاری و تأیید گذرواژه، طراحی‌شده با رویکردی مقاوم در برابر کوانتوم برای عصر پسا-PQC.<"
+    ],
+    [
+      ">A fast, simple, and powerful cross-platform CLI for generating strong, unique, and random passwords backed by audited cryptographic primitives\\.<",
+      ">یک CLI چندسکویی سریع، ساده و قدرتمند برای تولید گذرواژه‌های قوی، یکتا و تصادفی، متکی بر پایه‌های رمزنگاری حسابرسی‌شده.<"
+    ],
+    [
+      ">An advanced voice assistant using OpenAI's GPT for natural interactions, PDF summaries, and efficient caching\\. Built for both personal and executive use\\.<",
+      ">یک دستیار صوتی پیشرفته که از GPT شرکت OpenAI برای تعامل‌های طبیعی، خلاصه‌سازی PDF و کش‌گذاری کارآمد استفاده می‌کند. ساخته‌شده برای کاربرد شخصی و مدیریتی.<"
+    ],
+    [
+      ">Convert audio to text in real-time using advanced AI speech recognition\\. Designed to unlock actionable insights from audio data and enhance customer and[^<]+",
+      ">صوت را در لحظه با تشخیص گفتار هوش مصنوعی پیشرفته به متن تبدیل کنید. طراحی‌شده برای استخراج بینش‌های عملیاتی از داده‌های صوتی و بهبود تجربهٔ مشتری و عملیات.<"
+    ],
+    [
+      ">Featured · Python · ISO 20022<",
+      ">برگزیده · Python · ISO 20022<"
+    ],
+    [
+      ">Python · ISO 20022<",
+      ">Python · ISO 20022<"
+    ],
+    [
+      ">Python · Finance<",
+      ">Python · مالی<"
+    ],
+    [
+      ">Rust · Treasury · AI<",
+      ">Rust · خزانه‌داری · هوش مصنوعی<"
+    ],
+    [
+      ">Rust · Payments QR<",
+      ">Rust · QR پرداخت‌ها<"
+    ],
+    [
+      ">Rust · Quantum<",
+      ">Rust · کوانتوم<"
+    ],
+    [
+      ">Rust · Security<",
+      ">Rust · امنیت<"
+    ],
+    [
+      ">AI · Voice<",
+      ">هوش مصنوعی · صدا<"
+    ],
+    [
+      ">AI · Speech<",
+      ">هوش مصنوعی · گفتار<"
+    ],
+    [
+      ">PAYMENTS<",
+      ">پرداخت‌ها<"
+    ],
+    [
+      ">POST-QUANTUM CRYPTOGRAPHY<",
+      ">رمزنگاری پساکوانتومی<"
+    ],
+    [
+      ">AI AND VOICE<",
+      ">هوش مصنوعی و صدا<"
+    ],
+    [
+      ">DEVELOPER TOOLING<",
+      ">ابزارهای توسعه‌دهنده<"
+    ],
+    [
+      ">OPEN-SOURCE RUST<",
+      ">Rust متن‌باز<"
+    ],
+    [
+      ">WEB AND DEVELOPER ENVIRONMENT<",
+      ">وب و محیط توسعه‌دهنده<"
+    ],
+    [
+      ">Tooling\\.<",
+      ">ابزارها.<"
+    ],
+    [
+      ">Rust libraries and tooling\\.</h2>",
+      ">کتابخانه‌ها و ابزارهای Rust.</h2>"
+    ],
+    [
+      "<p class=\"cat-lede\">Open-source Rust projects across serialisation, logging, code generation, math, and developer tooling — including the static site generator behind this site\\.</p>",
+      "<p class=\"cat-lede\">پروژه‌های Rust متن‌باز در حوزهٔ سریال‌سازی، ثبت وقایع، تولید کد، ریاضیات و ابزار توسعه‌دهنده، شامل تولیدکنندهٔ سایت ایستایی که این سایت را قدرت می‌بخشد.</p>"
+    ],
+    [
+      ">Web, templates and environment\\.</h2>",
+      ">وب، قالب‌ها و محیط.</h2>"
+    ],
+    [
+      "<p class=\"cat-lede\">Starter templates, two industry-focused publications, a CSS framework, and the dotfiles that keep a development environment reproducible\\.</p>",
+      "<p class=\"cat-lede\">قالب‌های شروع، دو نشریهٔ تخصصی صنعتی، یک فریم‌ورک CSS و dotfilesهایی که محیط توسعه را بازتولیدپذیر نگه می‌دارند.</p>"
+    ],
+    [
+      ">What licence are these projects released under\\?</summary>",
+      ">این پروژه‌ها تحت چه مجوزی منتشر می‌شوند؟</summary>"
+    ],
+    [
+      ">Are these projects production-ready\\?</summary>",
+      ">آیا این پروژه‌ها آمادهٔ تولید هستند؟</summary>"
+    ],
+    [
+      ">How can I contribute or report an issue\\?</summary>",
+      ">چگونه می‌توانم مشارکت کنم یا مشکلی را گزارش دهم؟</summary>"
+    ],
+    [
+      ">Can I use these libraries in a regulated banking environment\\?</summary>",
+      ">آیا می‌توانم از این کتابخانه‌ها در یک محیط بانکی تحت نظارت استفاده کنم؟</summary>"
+    ],
+    [
+      ">Do you offer commercial support or consulting\\?</summary>",
+      ">آیا پشتیبانی تجاری یا مشاوره ارائه می‌دهید؟</summary>"
+    ],
+    [
+      ">How do I follow new releases\\?</summary>",
+      ">چگونه انتشارهای جدید را دنبال کنم؟</summary>"
+    ],
+    [
+      "(<summary[^>]*>Sous quelle licence ces projets sont-ils publiés \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>همهٔ پروژه‌ها تحت مجوز <strong>Apache-2.0</strong> منتشر می‌شوند. فایل <code>LICENSE</code> در ریشهٔ هر مخزن مرجع نهایی است.</p></section>"
+    ],
+    [
+      "(<summary[^>]*>Ces projets sont-ils prêts pour la production \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>بستگی به پروژه دارد. کتابخانه‌های نشان‌دار <em>v1.x</em> تثبیت‌شده و زیر بار آزموده‌شده‌اند؛ نسخه‌های پیش از v1 پایه‌های محکمی هستند اما ممکن است هنوز تغییر کنند. README هر مخزن وضعیت فعلی را مشخص می‌کند؛ اگر به تضمینی خاص برای استفادهٔ تولیدی نیاز دارید، <a href=\"/fa/contact/\">با من تماس بگیرید</a>.</p></section>"
+    ],
+    [
+      "(<summary[^>]*>Comment puis-je contribuer ou signaler un problème \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>هر پروژه یک مخزن عمومی GitHub در <a href=\"https://github.com/sebastienrousseau\" rel=\"external noopener\">github.com/sebastienrousseau</a> دارد. یک issue با شرح مشکل باز کنید (یک نمونهٔ بازتولید کمینه مورد استقبال است) یا یک pull request مرتبط با یک issue. مشارکت‌ها تابع <em>Developer Certificate of Origin</em> هستند و به کامیت‌های امضاشده نیاز دارند.</p></section>"
+    ],
+    [
+      "(<summary[^>]*>Puis-je utiliser ces bibliothèques dans un environnement bancaire régulé \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>بله، با احتیاط‌های معمول. این کتابخانه‌ها کارهای متن‌باز مستقل هستند، نه یک محصول تحت نظارت. فرایندهای معمول خود در زنجیرهٔ تأمین، امنیت و بازبینی وابستگی‌ها را اعمال کنید، وندورینگ از طریق آینهٔ داخلی، اسکن SBOM، پین‌کردن با Git SHA یا اثر رمزنگاری، پیش از هرگونه استقرار تولیدی روی زیرساخت پرداخت.</p></section>"
+    ],
+    [
+      "(<summary[^>]*>Proposez-vous du support commercial ou du conseil \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>بله، به‌صورت گزینشی. مأموریت‌ها بر مهاجرت ISO&nbsp;20022، نقشه‌راه‌های مهاجرت پساکوانتومی و هوش مصنوعی کاربردی در خدمات مالی تمرکز دارند. <a href=\"/fa/contact/\">با من تماس بگیرید</a> با یک بریف کوتاه، زمان‌بندی و محدودیت‌های احتمالی‌تان.</p></section>"
+    ],
+    [
+      "(<summary[^>]*>Comment suivre les nouvelles publications \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>هر مقالهٔ تاریخ‌دار سایت از طریق <a href=\"/fa/rss.xml\">فید RSS</a> و خبرنامهٔ <a href=\"https://news.bankingonquantum.com\" rel=\"external noopener\">Banking On Quantum</a> اعلام می‌شود. مخزن‌های جداگانه نیز انتشارهایی روی GitHub منتشر می‌کنند که می‌توانید مستقیماً دنبال کنید.</p></section>"
+    ],
+    [
+      ">GET IN TOUCH<",
+      ">تماس با ما<"
+    ],
+    [
+      ">Have an idea\\? Let's build it\\.<",
+      "<>ایده‌ای دارید؟ بیایید با هم بسازیمش.<"
+    ],
+    [
+      ">Open-source collaboration, commissioned engineering, or a conversation about the future of payments\\. Whichever fits\\.<",
+      ">همکاری متن‌باز، مهندسی سفارشی یا گفتگویی دربارهٔ آیندهٔ پرداخت‌ها. هر کدام که مناسب باشد.<"
+    ],
+    [
+      "<p class=\"newsroom-kicker\">FEATURED</p>",
+      "<p class=\"newsroom-kicker\">برگزیده</p>"
+    ],
+    [
+      ">Latest Music</h2>",
+      ">موسیقی جدید</h2>"
+    ],
+    [
+      ">Latest playlist</h2>",
+      ">پلی‌لیست جدید</h2>"
+    ],
+    [
+      ">Soulful, jazz and downtempo</h2>",
+      ">سول، جاز و دان‌تمپو</h2>"
+    ],
+    [
+      "<p class=\"newsroom-kicker\">MORNING & MOOD</p>",
+      "<p class=\"newsroom-kicker\">صبح و حال‌وهوا</p>"
+    ],
+    [
+      ">Morning, mood and chill</h2>",
+      ">صبح، حال‌وهوا و آرامش</h2>"
+    ],
+    [
+      "<p class=\"newsroom-kicker\">ELECTRONIC</p>",
+      "<p class=\"newsroom-kicker\">الکترونیک</p>"
+    ],
+    [
+      ">Electronic, house and techno</h2>",
+      ">الکترونیک، هاوس و تکنو</h2>"
+    ],
+    [
+      ">Pop, rock and alternative</h2>",
+      ">پاپ، راک و آلترناتیو</h2>"
+    ],
+    [
+      "<p class=\"newsroom-kicker\">FOCUS</p>",
+      "<p class=\"newsroom-kicker\">تمرکز</p>"
+    ],
+    [
+      ">Focus and productivity</h2>",
+      ">تمرکز و بهره‌وری</h2>"
+    ],
+    [
+      ">Smooth Jazz, Neo Soul, and laid-back grooves[^<]+",
+      ">Smooth Jazz، Neo Soul و گروو‌های آرام. پلی‌لیست‌هایی برای وقتی که روز نیاز به کند شدن دارد."
+    ],
+    [
+      ">This page has a comprehensive list[^<]+",
+      ">این صفحه گزیده‌ای از محبوب‌ترین و تحسین‌شده‌ترین پلی‌لیست‌های Spotify را ارائه می‌کند که گسترهٔ وسیعی از ژانرها را در بر می‌گیرد. چه طرفدار جاز، سول، هیپ‌هاپ یا موسیقی الکترونیک باشید، پلی‌لیستی به سلیقهٔ خود خواهید یافت."
+    ],
+    [
+      ">Step into the harmonious realm of TETRA\\.[^<]+",
+      ">به قلمرو هماهنگ TETRA قدم بگذارید. یک پلی‌لیست سرخوشانه که برای اعتلای روح شما و پر کردن جانتان از شادی طراحی شده است."
+    ],
+    [
+      ">Unwind and embrace the essence of summer with this curated selection of Jazz, Soul, R(?:&amp;|&)B and Neo Soul beats\\.",
+      ">آرام بگیرید و جوهرهٔ تابستان را با این گزیده از جاز، سول، R&amp;B و Neo Soul در آغوش بگیرید."
+    ],
+    [
+      ">A deep dive into the quintessential collection of Jazz, Soul, R(?:&amp;|&)B and Neo Soul beats\\.",
+      ">غوطه‌ای عمیق در مجموعهٔ ناب جاز، سول، R&amp;B و Neo Soul."
+    ],
+    [
+      ">Take a break from a busy day and relax with soothing nu jazz and downtempo beats\\.",
+      ">از یک روز پرمشغله فاصله بگیرید و با نو جاز و دان‌تمپوی آرامش‌بخش استراحت کنید."
+    ],
+    [
+      ">Soulful tracks with a fashion-forward vibe\\. Music to set the tone for a productive and stylish day\\.",
+      ">قطعاتی سول با حال‌وهوای پیشرو در مد. موسیقی‌ای برای تعیین لحن یک روز پربازده و شیک."
+    ],
+    [
+      ">Celebrate the joy of life and dive into a world of vivid emotions, vibrant hues and soulful rhythms\\.",
+      ">شادی زندگی را جشن بگیرید و در دنیایی از احساسات پرشور، رنگ‌های زنده و ریتم‌های سول غوطه‌ور شوید."
+    ],
+    [
+      ">Laid-back beats, house-influenced grooves and new deep house tracks\\.",
+      ">بیت‌های آرام، گروو‌های متأثر از هاوس و قطعات جدید دیپ هاوس."
+    ],
+    [
+      ">Seamlessly blending funky disco, house, French touch and other genres into an ultra-cool and energetic musical experience\\.",
+      ">آمیزه‌ای روان از دیسکوی فانکی، هاوس، French touch و ژانرهای دیگر برای تجربه‌ای موسیقایی فوق‌العاده باحال و پرانرژی."
+    ],
+    [
+      ">A sonic voyage featuring Nu-Disco, French House, Electro and Disco House tunes from artists like Madeon and Fred Falke\\.",
+      ">سفری صوتی شامل Nu-Disco، French House، Electro و Disco House از هنرمندانی چون Madeon و Fred Falke."
+    ],
+    [
+      ">Laid-back beats, hip-hop-influenced grooves and new indie pop tracks\\.",
+      ">بیت‌های آرام، گروو‌های متأثر از هیپ‌هاپ و قطعات جدید ایندی پاپ."
+    ],
+    [
+      ">Original Hip Hop, Rap and R(?:&amp;|&)B Flavor Sessions\\.",
+      ">سشن‌های اصیل با طعم هیپ‌هاپ، رپ و R&amp;B."
+    ],
+    [
+      ">Brace yourself for hardcore rap and hip hop tracks\\.",
+      ">خود را برای قطعات رپ و هیپ‌هاپ هاردکور آماده کنید."
+    ],
+    [
+      ">A few of the favourite hip-hop gems\\.",
+      ">چند تا از گوهرهای محبوب هیپ‌هاپ."
+    ],
+    [
+      ">Soulful beats and thoughtful lyrics\\. A captivating look into the world of contemporary hip hop, R(?:&amp;|&)B and rap\\.",
+      ">بیت‌های سول و اشعار اندیشمندانه. نگاهی گیرا به دنیای هیپ‌هاپ، R&amp;B و رپ معاصر."
+    ],
+    [
+      ">Laid-back vibes and mellow rhythms with this stunning playlist of Lo-Fi Hip Hop beats\\.",
+      ">حال‌وهوای آرام و ریتم‌های ملایم با این پلی‌لیست خیره‌کننده از بیت‌های Lo-Fi Hip Hop."
+    ],
+    [
+      ">Celebrate the diverse heritage of African music\\. From the soulful rhythms of Wassoulou to the lively beats of Londonko\\.",
+      ">میراث متنوع موسیقی آفریقایی را جشن بگیرید. از ریتم‌های سول واسولو تا بیت‌های سرزندهٔ لوندونکو."
+    ],
+    [
+      "aria-label=\"Tag: ([^,]+), (\\d+) Posts\"",
+      "aria-label=\"برچسب: \\1، \\2 مقاله\""
+    ],
+    [
+      "(\\(\\d+) Posts\\)",
+      "\\1 مقاله)"
+    ],
+    [
+      ">Featured Tags \\((\\d+)\\)</h2>",
+      ">برچسب‌های برگزیده (\\1)</h2>"
+    ],
+    [
+      ">Featured Tags<",
+      ">برچسب‌های برگزیده<"
+    ],
+    [
+      "<a class=\"pill ghost\" href=\"/fa/contact/\">Get in touch</a>",
+      "<a class=\"pill ghost\" href=\"/fa/contact/\">تماس با من</a>"
+    ],
+    [
+      ">Get in touch</a>",
+      ">تماس با من</a>"
+    ],
+    [
+      "Made with Static Site Generator: Rust-Powered SSG",
+      "ساخته‌شده با Static Site Generator: SSG مبتنی بر Rust"
+    ],
+    [
+      "Static Site Generator is a Rust-based static site generator built for performance, accessibility and SEO\\. Lightning-fast builds with first-class JSON-LD\\.",
+      "Static Site Generator یک تولیدکنندهٔ سایت ایستای مبتنی بر Rust است که برای کارایی، دسترس‌پذیری و SEO ساخته شده است. بیلدهای فوق‌سریع با پشتیبانی درجه‌یک از JSON-LD."
+    ],
+    [
+      "Website created with Static Site Generator \\(SSG\\)",
+      "وب‌سایت ساخته‌شده با Static Site Generator (SSG)"
+    ],
+    [
+      "The Static Site Generator \\(SSG\\) is a lightning-fast tool for Search Engine Optimisation \\(SEO\\) and compliance to Accessibility Standards\\.",
+      "Static Site Generator (SSG) ابزاری فوق‌سریع برای بهینه‌سازی موتور جستجو (SEO) و انطباق با استانداردهای دسترس‌پذیری است."
+    ],
+    [
+      "Topics &amp; Tags Index: AI, Payments, Quantum, Rust OSS",
+      "نمایهٔ موضوعات &amp; برچسب‌ها: هوش مصنوعی، پرداخت‌ها، کوانتوم، Rust OSS"
+    ],
+    [
+      "Browse Sebastien Rousseau's site by topic and tag: AI, payments, ISO 20022, post-quantum cryptography, Rust open source, and more\\.",
+      "سایت Sebastien Rousseau را بر اساس موضوع و برچسب مرور کنید: هوش مصنوعی، پرداخت‌ها، ISO 20022، رمزنگاری پساکوانتومی، Rust متن‌باز و موارد دیگر."
+    ],
+    [
+      "Website Accessibility Statement — Standards &amp; Contact",
+      "بیانیهٔ دسترس‌پذیری وب‌سایت - استانداردها &amp; تماس"
+    ],
+    [
+      "This statement explains the accessibility of our website, what we are doing to address it, and how to contact us about web accessibility\\.",
+      "این بیانیه دسترس‌پذیری وب‌سایت ما، اقداماتی که برای بهبود آن انجام می‌دهیم و نحوهٔ تماس با ما دربارهٔ دسترس‌پذیری وب را توضیح می‌دهد."
+    ],
+    [
+      "Privacy Statement — How Your Data Is Collected &amp; Used",
+      "بیانیهٔ حریم خصوصی - چگونه داده‌های شما جمع‌آوری &amp; استفاده می‌شود"
+    ],
+    [
+      "This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Website",
+      "این صفحه شما را از سیاست‌های ما دربارهٔ جمع‌آوری، استفاده و افشای داده‌های شخصی هنگام استفاده از وب‌سایت ما آگاه می‌کند"
+    ],
+    [
+      "Let's Start a Conversation That Will Make a Real Difference",
+      "بیایید گفتگویی را آغاز کنیم که تفاوتی واقعی ایجاد می‌کند"
+    ],
+    [
+      "Have a question or comment\\? Please contact me using the form below\\. I am always happy to hear from you and will respond as soon as possible\\.",
+      "سؤال یا نظری دارید؟ لطفاً از طریق فرم زیر با من تماس بگیرید. همیشه از شنیدن صدای شما خوشحال می‌شوم و در اسرع وقت پاسخ خواهم داد."
+    ],
+    [
+      "Website Terms &amp; Conditions of Use — Sebastien Rousseau",
+      "شرایط &amp; ضوابط استفاده از وب‌سایت - Sebastien Rousseau"
+    ],
+    [
+      "By accessing this website, you acknowledge and agree to be bound by these Terms and Conditions of Use and all applicable laws and regulations\\.",
+      "با دسترسی به این وب‌سایت، تأیید و موافقت می‌کنید که تابع این شرایط و ضوابط استفاده و همهٔ قوانین و مقررات قابل‌اجرا باشید."
+    ],
+    [
+      ">Latest research<",
+      ">پژوهش‌های اخیر<"
+    ],
+    [
+      ">Read latest research<",
+      ">خواندن پژوهش‌های اخیر<"
+    ],
+    [
+      ">Featured articles<",
+      ">مقالات برگزیده<"
+    ],
+    [
+      ">All articles<",
+      ">همهٔ مقالات<"
+    ],
+    [
+      ">Read more<",
+      ">بیشتر بخوانید<"
+    ],
+    [
+      ">Read full article<",
+      ">خواندن مقالهٔ کامل<"
+    ],
+    [
+      ">Newest first<",
+      ">جدیدترین ابتدا<"
+    ],
+    [
+      ">Oldest first<",
+      ">قدیمی‌ترین ابتدا<"
+    ],
+    [
+      ">By topic<",
+      ">بر اساس موضوع<"
+    ],
+    [
+      ">All topics<",
+      ">همهٔ موضوعات<"
+    ],
+    [
+      ">By tag<",
+      ">بر اساس برچسب<"
+    ],
+    [
+      ">All tags<",
+      ">همهٔ برچسب‌ها<"
+    ],
+    [
+      ">Published<",
+      ">منتشرشده<"
+    ],
+    [
+      ">Updated<",
+      ">به‌روزشده<"
+    ],
+    [
+      ">Open source<",
+      ">متن‌باز<"
+    ],
+    [
+      ">Authored & maintained<",
+      ">نوشته‌شده & نگهداری‌شده<"
+    ],
+    [
+      ">Open source for the future of finance\\.<",
+      ">متن‌باز برای آیندهٔ مالی.<"
+    ],
+    [
+      ">A portfolio of",
+      ">مجموعه‌ای از"
+    ],
+    [
+      ">Start a conversation<",
+      ">آغاز یک گفتگو<"
+    ],
+    [
+      ">Drop me a line<",
+      ">برایم بنویسید<"
+    ],
+    [
+      ">Learn more<",
+      ">بیشتر بدانید<"
+    ],
+    [
+      ">Subscribe<",
+      ">اشتراک<"
+    ],
+    [
+      ">Follow<",
+      ">دنبال کردن<"
+    ],
+    [
+      ">Latest<",
+      ">جدیدترین<"
+    ],
+    [
+      "<h1>White Papers (?:&amp;|&) Research</h1>",
+      "<h1>وایت‌پیپرها و پژوهش</h1>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/post-quantum-cryptography/[^\"]*\">Post-Quantum Cryptography</a></h3>",
+      "<h3><a href=\"/fa/sujets/post-quantum-cryptography/index.html\">رمزنگاری پساکوانتومی</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/iso-20022-payments/[^\"]*\">ISO 20022 &amp; Payments</a></h3>",
+      "<h3><a href=\"/fa/sujets/iso-20022-payments/index.html\">ISO 20022 &amp; پرداخت‌ها</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/applied-ai-banking/[^\"]*\">Applied AI in Banking</a></h3>",
+      "<h3><a href=\"/fa/sujets/applied-ai-banking/index.html\">هوش مصنوعی کاربردی در بانکداری</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/rust-open-source/[^\"]*\">Rust &amp; Open Source</a></h3>",
+      "<h3><a href=\"/fa/sujets/rust-open-source/index.html\">Rust متن‌باز</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/blockchain-digital-assets/[^\"]*\">Blockchain &amp; Digital Assets</a></h3>",
+      "<h3><a href=\"/fa/sujets/blockchain-digital-assets/index.html\">Blockchain &amp; دارایی‌های دیجیتال</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-lede\">Tracks to kick off the day or shift the room\\. Fashion\\-forward soul, vivid colour, and laid\\-back energy\\.</p>",
+      "<p class=\"newsroom-lede\">قطعاتی برای آغاز روز یا تغییر فضای اتاق. سول پیشرو در مد، رنگ زنده و انرژی آرام.</p>"
+    ],
+    [
+      "<p class=\"newsroom-lede\">Funky disco, French touch and electro\\. Energetic listening for movement, focus or the dance floor\\.</p>",
+      "<p class=\"newsroom-lede\">دیسکوی فانکی، French touch و الکترو. شنیدنی پرانرژی برای حرکت، تمرکز یا پیست رقص.</p>"
+    ],
+    [
+      "<p class=\"newsroom-lede\">From original Hip Hop sessions to hardcore rap, contemporary R&B and Lo\\-Fi\\. The full breadth of beats\\.</p>",
+      "<p class=\"newsroom-lede\">از سشن‌های اصیل هیپ‌هاپ تا رپ هاردکور، R&B معاصر و Lo-Fi. تمام گسترهٔ بیت‌ها.</p>"
+    ]
+  ]
+}

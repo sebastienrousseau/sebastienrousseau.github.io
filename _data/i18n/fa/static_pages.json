@@ -1,0 +1,87 @@
+{
+  "_comment": "Per-static-page metadata for the French mirror. Keys are the EN slug; each entry replaces the EN values in <title>, <meta name=description>, <meta name=keywords>, og:*, twitter:*, and the hero subtitle. STATIC_BODIES_FR in build_translations.py supplies the curated FR <main> body for pages that need more than a regex pass.",
+  "about": {
+    "title": "درباره - Sebastien Rousseau",
+    "subtitle": "شکل‌دادن به آینده بانکداری و خدمات مالی از طریق ادغام راهبردی هوش مصنوعی، رمزنگاری پساکوانتومی و فناوری بلاک‌چین.",
+    "description": "Sebastien Rousseau، فناور ارشد در بانکداری: هوش مصنوعی کاربردی، مهاجرت ISO 20022، رمزنگاری پساکوانتومی، دگرگونی ساختاری پرداخت‌های عمده‌فروشی.",
+    "keywords": "Sebastien Rousseau، زندگی‌نامه، بانکداری، پرداخت‌ها، هوش مصنوعی، ISO 20022، رمزنگاری پساکوانتومی، HSBC، PayPal، Barclays"
+  },
+  "papers": {
+    "title": "انتشارات - Sebastien Rousseau",
+    "subtitle": "مقالات سفید صنعتی و پژوهش کاربردی برای مدیران ارشد در حوزه پرداخت‌ها و امنیت.",
+    "description": "مقالات، گزارش‌ها و انتشارات Sebastien Rousseau درباره هوش مصنوعی، پرداخت‌های ISO 20022 و رمزنگاری پساکوانتومی.",
+    "keywords": "انتشارات، مقالات، گزارش‌ها، پژوهش، ISO 20022، هوش مصنوعی، رمزنگاری پساکوانتومی"
+  },
+  "projects": {
+    "title": "پروژه‌ها - Sebastien Rousseau",
+    "subtitle": "پروژه‌های متن‌باز با Python، Rust و JavaScript برای آینده مالی.",
+    "description": "مجموعه‌ای از کتابخانه‌های متن‌باز که Sebastien Rousseau برای پرداخت‌ها، تسویه فرامرزی و رمزنگاری مقاوم در برابر کوانتوم نگهداری می‌کند.",
+    "keywords": "پروژه‌های متن‌باز، Python، Rust، پرداخت‌ها، ISO 20022، رمزنگاری پساکوانتومی"
+  },
+  "topics": {
+    "title": "موضوعات - Sebastien Rousseau",
+    "subtitle": "مقالاتی درباره هوش مصنوعی، رمزنگاری پساکوانتومی، ISO 20022 و آینده پرداخت‌ها.",
+    "description": "تحلیل‌ها را بر اساس موضوع کاوش کنید: هوش مصنوعی کاربردی، پرداخت‌های ISO 20022، رمزنگاری پساکوانتومی، و دگرگونی پرداخت‌های عمده‌فروشی.",
+    "keywords": "موضوعات، مباحث، هوش مصنوعی، پرداخت‌ها، ISO 20022، رمزنگاری پساکوانتومی"
+  },
+  "tags": {
+    "title": "برچسب‌ها - Sebastien Rousseau",
+    "subtitle": "سایت را بر اساس موضوع مرور کنید: هوش مصنوعی، پرداخت‌ها، رمزنگاری پساکوانتومی، متن‌باز.",
+    "description": "مقالات را بر اساس برچسب مرور کنید: هوش مصنوعی، ISO 20022، بلاک‌چین، رمزنگاری پساکوانتومی و موارد بیشتر.",
+    "keywords": "برچسب‌ها، تگ‌ها، پیمایش بر اساس موضوع"
+  },
+  "contact": {
+    "title": "تماس با من - Sebastien Rousseau",
+    "subtitle": "پرسشی دارید یا به مشاوره نیاز دارید؟ برایم بنویسید.",
+    "description": "برای مشاوره در دگرگونی پرداخت‌ها، مهاجرت ISO 20022 یا راهبرد پساکوانتومی با Sebastien Rousseau در تماس باشید.",
+    "keywords": "تماس، مشاوره، پرداخت‌ها، ISO 20022، رمزنگاری پساکوانتومی"
+  },
+  "accessibility": {
+    "title": "دسترس‌پذیری - Sebastien Rousseau",
+    "subtitle": "متعهد به دسترس‌پذیری دیجیتال برای افراد دارای معلولیت.",
+    "description": "بیانیه دسترس‌پذیری: انطباق با WCAG 2.2 AA، اصول فراگیر، بازخورد تجربه و اطلاعات تماس برای گزارش‌دهی.",
+    "keywords": "دسترس‌پذیری، WCAG، انطباق، فراگیری دیجیتال، ممیزی"
+  },
+  "privacy": {
+    "title": "سیاست حریم خصوصی - Sebastien Rousseau",
+    "subtitle": "حریم خصوصی شما برای ما مهم است.",
+    "description": "این سایت چگونه داده‌های شما را جمع‌آوری، استفاده و محافظت می‌کند. سنجش مخاطب ناشناس، کوکی‌ها، میزبانی و حقوق GDPR.",
+    "keywords": "حریم خصوصی، GDPR، کوکی‌ها، داده‌های شخصی، تحلیل‌ها"
+  },
+  "terms": {
+    "title": "شرایط استفاده - Sebastien Rousseau",
+    "subtitle": "شرایط و ضوابط عمومی استفاده از سایت.",
+    "description": "شرایط و ضوابط عمومی استفاده از سایت sebastienrousseau.com: مجوز محتوا، محدودیت‌ها، علائم تجاری و صلاحیت قضایی.",
+    "keywords": "شرایط، اطلاعیه‌های حقوقی، مجوز، حق نشر"
+  },
+  "made-with-static-site-generator": {
+    "title": "ساخته‌شده با Static Site Generator - Sebastien Rousseau",
+    "subtitle": "بیاموزید چگونه از تولیدکننده وب‌سایت ایستای نسل بعد استفاده کنید.",
+    "description": "این سایت با Static Site Generator ساخته شده است، یک تولیدکننده وب‌سایت ایستا با Rust که برای عملکرد و SEO بهینه شده است.",
+    "keywords": "Static Site Generator، SSG، Rust، عملکرد، SEO"
+  },
+  "playlists": {
+    "title": "فهرست‌های پخش - Sebastien Rousseau",
+    "subtitle": "فهرست‌های پخش منتخب Spotify برای کار عمیق، خلاقیت و ذهن مهندسی.",
+    "description": "گزیده موسیقایی و شنیداری Sebastien Rousseau.",
+    "keywords": "فهرست‌های پخش، موسیقی"
+  },
+  "404": {
+    "title": "صفحه یافت نشد - Sebastien Rousseau",
+    "subtitle": "متأسفیم، این صفحه یافت نشد.",
+    "description": "صفحه درخواستی یافت نشد. به صفحه اصلی بازگردید یا از جستجو استفاده کنید.",
+    "keywords": "404، صفحه یافت نشد"
+  },
+  "offline": {
+    "title": "آفلاین - Sebastien Rousseau",
+    "subtitle": "اتصال خود را بررسی کرده و دوباره تلاش کنید.",
+    "description": "شما آفلاین هستید. برای دسترسی به محتوا دوباره متصل شوید.",
+    "keywords": "آفلاین، PWA"
+  },
+  "thanks": {
+    "title": "سپاسگزاریم - Sebastien Rousseau",
+    "subtitle": "از اینکه با من تماس گرفتید سپاسگزارم!",
+    "description": "از پیام شما سپاسگزارم. به‌زودی با شما تماس خواهم گرفت.",
+    "keywords": "سپاسگزاری"
+  }
+}
