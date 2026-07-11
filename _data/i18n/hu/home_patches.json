@@ -1,0 +1,340 @@
+{
+  "patches": [
+    [
+      ">Authored &amp; maintained<",
+      ">Írva és karbantartva<"
+    ],
+    [
+      ">Authored & maintained<",
+      ">Írva és karbantartva<"
+    ],
+    [
+      ">Securing the future of banking<br>with agentic AI<br>and post-quantum cryptography\\.</h1>",
+      ">A bankolás jövőjének biztosítása<br>agentikus MI-vel<br>és posztkvantum kriptográfiával.</h1>"
+    ],
+    [
+      ">Built for the edge\\. Architected for uncompromising resilience\\. Powering the next generation of global payments\\.</p>",
+      ">A peremre építve. Kompromisszumok nélküli ellenállóképességre tervezve. A globális fizetések következő generációjának motorja.</p>"
+    ],
+    [
+      "id=practice>Open source for the<br>future of finance\\.</h2>",
+      "id=practice>Nyílt forráskód<br>a pénzügyek jövőjéért.</h2>"
+    ],
+    [
+      ">Open source for the future of finance\\.<",
+      ">Nyílt forráskód a pénzügyek jövőjéért.<"
+    ],
+    [
+      ">A portfolio of Python, Rust and JavaScript libraries I created and maintain\\. Open source, free to use, and applied to wholesale payments, cross-border settlement, financial data and quantum-resistant cryptography\\.<",
+      ">Python, Rust és JavaScript könyvtárak portfóliója, amelyeket én hoztam létre és tartok karban. Nyílt forráskódú, szabadon használható, és a nagykereskedelmi fizetésekre, a határokon átnyúló elszámolásra, a pénzügyi adatokra és a kvantumálló kriptográfiára alkalmazva.<"
+    ],
+    [
+      ">Browse all projects<",
+      ">Összes projekt böngészése<"
+    ],
+    [
+      ">Python · Payments<",
+      ">Python · Fizetések<"
+    ],
+    [
+      ">Python · Cross-border<",
+      ">Python · Határokon átnyúló<"
+    ],
+    [
+      ">Python · Finance<",
+      ">Python · Pénzügy<"
+    ],
+    [
+      ">Rust · Security<",
+      ">Rust · Biztonság<"
+    ],
+    [
+      ">Rust · Quantum<",
+      ">Rust · Kvantum<"
+    ],
+    [
+      ">Rust · YAML<",
+      ">Rust · YAML<"
+    ],
+    [
+      ">Learn about ([A-Za-z0-9 ()_-]+)</a>",
+      ">Tudjon meg többet erről: \\1</a>"
+    ],
+    [
+      "<p>A Python library that automates <strong>ISO 20022 pain\\.001</strong> payment file creation from CSV or SQLite\\.\\s*Built for the global migration from MT/MX to structured messages across SWIFT, SEPA and major schemes\\.</p>",
+      "<p>Egy Python könyvtár, amely automatizálja az <strong>ISO 20022 pain.001</strong> fizetési fájlok létrehozását CSV vagy SQLite forrásból. Az MT/MX-ről a strukturált üzenetekre való globális átállásra tervezve a SWIFT, a SEPA és a főbb rendszerek között.</p>"
+    ],
+    [
+      "<p>Generate, validate and deliver <strong>ISO 20022 pacs\\.008</strong> FI-to-FI customer credit transfer messages\\.\\s*JSON Schema, XSD validation, IBAN across 75 countries, GDPR/PCI-DSS-compliant PII masking\\.</p>",
+      "<p>FI-FI ügyfél-átutalási <strong>ISO 20022 pacs.008</strong> üzenetek generálása, validálása és kézbesítése. JSON Schema, XSD-validáció, IBAN 75 országban, GDPR/PCI-DSS-kompatibilis személyesadat-maszkolás.</p>"
+    ],
+    [
+      "<p>A finance-grade Python toolkit that turns multi-format bank statements into structured data\\.\\s*Designed for the realities of real-world statement files and the audit demands of regulated environments\\.</p>",
+      "<p>Egy pénzügyi minőségű Python eszközkészlet, amely a többféle formátumú bankszámlakivonatokat strukturált adatokká alakítja. A valós kivonatfájlokhoz és a szabályozott környezetek auditkövetelményeihez tervezve.</p>"
+    ],
+    [
+      "<p>A Rust library implementing <strong>secure hash and digest algorithms</strong> for password encryption and verification\\.\\s*Designed with a quantum-resistant posture for the post-PQC era of authentication\\.</p>",
+      "<p>Egy Rust könyvtár, amely <strong>biztonságos hash- és kivonatoló algoritmusokat</strong> valósít meg jelszavak titkosításához és ellenőrzéséhez. Kvantumálló megközelítéssel tervezve a hitelesítés post-PQC korszakára.</p>"
+    ],
+    [
+      "<p>A robust Rust implementation of <strong>CRYSTALS-Kyber</strong>, the NIST FIPS 203 standard for general-purpose post-quantum encryption\\.\\s*The foundation for quantum-resistant payment authentication\\.</p>",
+      "<p>A <strong>CRYSTALS-Kyber</strong> robusztus Rust-implementációja, az általános célú posztkvantum titkosítás NIST FIPS 203 szabványa. A kvantumálló fizetéshitelesítés alapja.</p>"
+    ],
+    [
+      "<p>A <strong>pure-Rust YAML 1\\.2 ecosystem</strong>\\. Zero unsafe, 100% spec compliance \\(406 / 406 official suite\\), streaming-first serde, lossless CST and JSON-Schema validation\\.\\s*Library \\+ CLI \\(noyafmt, noyavalidate\\) \\+ LSP \\+ MCP \\+ WASM bindings\\.</p>",
+      "<p>Egy <strong>100%-ban Rust alapú YAML 1.2 ökoszisztéma</strong>. Nulla unsafe, 100%-os specifikációmegfelelés (406 / 406 a hivatalos csomagból), streaming-first serde, veszteségmentes CST és JSON-Schema-validáció. Könyvtár + CLI (noyafmt, noyavalidate) + LSP + MCP + WASM-kötések.</p>"
+    ],
+    [
+      "Quantum computing threatens the cryptographic foundations of financial services\\.\\s*Payments, from real-time to cross-border settlement, rely on protections that quantum computing will eventually render obsolete\\.",
+      "A kvantumszámítógépek fenyegetik a pénzügyi szolgáltatások kriptográfiai alapjait. A fizetések, a valós idejűtől a határokon átnyúló elszámolásig, olyan védelmekre támaszkodnak, amelyeket a kvantumszámítás végül elavulttá tesz."
+    ],
+    [
+      ">Quantum-Safe Payments white paper · September 2025 · Read the paper<",
+      ">Quantum-Safe Payments fehér könyv · 2025. szeptember · A tanulmány elolvasása<"
+    ],
+    [
+      ">Read the paper<",
+      ">A tanulmány elolvasása<"
+    ],
+    [
+      ">Quantum-Safe Payments\\.</h2>",
+      ">Kvantumálló fizetések.</h2>"
+    ],
+    [
+      ">Quantum-Safe Payments\\.<",
+      ">Kvantumálló fizetések.<"
+    ],
+    [
+      ">Industry white paper for the Emerging Payments Association Asia\\.\\s*The structural threat quantum computing poses to payment infrastructure, and the case for coordinated action now\\.<",
+      ">Iparági fehér könyv az Emerging Payments Association Asia számára. A strukturális fenyegetés, amelyet a kvantumszámítás a fizetési infrastruktúrára ró, és a most szükséges összehangolt cselekvés indoklása.<"
+    ],
+    [
+      ">Why the payments industry must act now\\.<",
+      ">Miért kell a fizetési szektornak most cselekednie.<"
+    ],
+    [
+      ">Regulators are treating harvest-now-decrypt-later as a credible present risk\\. This paper outlines the structural threat and the urgent case for coordinated action across wholesale payment rails\\.</p>",
+      ">A szabályozók immár hiteles jelenbeli kockázatként kezelik a „begyűjtés most, visszafejtés később” elvet. Ez a fehér könyv bemutatja a strukturális fenyegetést és az összehangolt cselekvés szükségességét a nagykereskedelmi fizetési sínek mentén.</p>"
+    ],
+    [
+      ">Latest<",
+      ">Legutóbbi<"
+    ],
+    [
+      ">From the desk\\.<",
+      ">Az íróasztal mellől.<"
+    ],
+    [
+      ">Recent research and writing on quantum-safe cryptography, ISO 20022 migration and the future of wholesale payments\\.<",
+      ">Legutóbbi kutatások és írások a kvantumálló kriptográfiáról, az ISO 20022 migrációról és a nagykereskedelmi fizetések jövőjéről.<"
+    ],
+    [
+      "<p class=newsroom-excerpt>Stablecoins cannot pay yield under the GENIUS Act\\. BlackRock's BRSRV and BSTBL filings show the workaround — a tokenised money-market fund running alongside a regulated stablecoin to deliver yield through an adjacent, compliant rail\\.</p>",
+      "<p class=newsroom-excerpt>A stablecoinok nem fizethetnek hozamot a GENIUS Act alatt. A BlackRock BRSRV és BSTBL beadványai feltárják a megkerülő megoldást: egy tokenizált pénzpiaci alap, amely egy szabályozott stablecoin mellett fut, hogy egy szomszédos, megfelelő sínen keresztül nyújtson hozamot.</p>"
+    ],
+    [
+      "<p class=newsroom-excerpt>Quantum risk has moved from research curiosity to active regulatory mandate\\. With the G7 roadmap published in January 2026 and BIS Project Leap proving feasibility in live payment systems, the board-level question is no longer whether to migrate\\.</p>",
+      "<p class=newsroom-excerpt>A kvantumkockázat kutatási érdekességből aktív szabályozói előírássá vált. A 2026 januárjában közzétett G7-ütemtervvel és a megvalósíthatóságot éles fizetési rendszereken igazoló BIS Project Leap-pel az igazgatósági szintű kérdés már nem az, hogy migrálni kell-e.</p>"
+    ],
+    [
+      "<p class=newsroom-excerpt>From November 2026, SWIFT CBPR\\+ rejects unstructured postal addresses in cross-border payment messages\\. Six months out, 65% of pacs\\.008 messages still ship non-compliant addresses and 44% of banks remain behind on the remediation programme\\.</p>",
+      "<p class=newsroom-excerpt>2026 novemberétől a SWIFT CBPR+ elutasítja a strukturálatlan postai címeket a határokon átnyúló fizetési üzenetekben. Hat hónappal a határidő előtt a pacs.008 üzenetek 65%-a még mindig nem megfelelő címeket szállít, és a bankok 44%-a le van maradva a javítási programmal.</p>"
+    ],
+    [
+      ">See all articles\\b",
+      ">Összes cikk megtekintése"
+    ],
+    [
+      "<p class=feat-eyebrow>Get in touch</p>",
+      "<p class=feat-eyebrow>Kapcsolatfelvétel</p>"
+    ],
+    [
+      ">Unlocking the Future of Banking and Financial Services\\.<br>Discover the latest news from</h2>",
+      ">A bankolás és a pénzügyi szolgáltatások jövőjének megnyitása.<br>Fedezze fel a legfrissebb híreket</h2>"
+    ],
+    [
+      "<p class=\\\"feat-sub center\\\">Whether it's wholesale payments strategy, ISO 20022 migration, or quantum-safe cryptography for financial services\\. Happy to talk\\.</p>",
+      "<p class=\"feat-sub center\">Nagykereskedelmi fizetési stratégia, ISO 20022 migráció vagy kvantumálló kriptográfia a pénzügyi szolgáltatások számára: szívesen beszélek róla.</p>"
+    ],
+    [
+      ">Start a conversation</a>",
+      ">Beszélgetés indítása</a>"
+    ],
+    [
+      "<a class=pill href=\"?/articles/index\\.html\"?>Read latest research</a>",
+      "<a class=pill href=\"/hu/articles/index.html\">Legfrissebb kutatások olvasása</a>"
+    ],
+    [
+      "<a class=\"pill ghost\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
+      "<a class=\"pill ghost\" href=\"/hu/contact/index.html\">Kapcsolatfelvétel</a>"
+    ],
+    [
+      "href=\"?/papers/index\\.html\"?>Read the paper</a>",
+      "href=\"/hu/publications/index.html\">A fehér könyv elolvasása</a>"
+    ],
+    [
+      "href=\"?/2026-05-15[^\"]*\"?>Read the article</a>",
+      "href=\"/hu/2026-05-15-rendement-cache-decryptage-depots-blackrock-brsrv-bstbl-genius-act/index.html\">A cikk elolvasása</a>"
+    ],
+    [
+      "<h2 class=ap-foot-title>Writing</h2>",
+      "<h2 class=ap-foot-title>Írások</h2>"
+    ],
+    [
+      "<h2 class=ap-foot-title>Work</h2>",
+      "<h2 class=ap-foot-title>Munka</h2>"
+    ],
+    [
+      "<h2 class=ap-foot-title>Reach</h2>",
+      "<h2 class=ap-foot-title>Elérhetőség</h2>"
+    ],
+    [
+      "<a href=/about/index\\.html>About</a>",
+      "<a href=/hu/a-propos/index.html>Rólam</a>"
+    ],
+    [
+      "<a href=/papers/index\\.html>Papers</a>",
+      "<a href=/hu/publications/index.html>Publikációk</a>"
+    ],
+    [
+      "<a href=/projects/index\\.html>Projects</a>",
+      "<a href=/hu/projets/index.html>Projektek</a>"
+    ],
+    [
+      "<a href=/playlists/index\\.html>Playlists</a>",
+      "<a href=/hu/playlists/index.html>Lejátszási listák</a>"
+    ],
+    [
+      "<a href=/contact/index\\.html>Contact</a>",
+      "<a href=/hu/contact/index.html>Kapcsolat</a>"
+    ],
+    [
+      "<a href=/tags/index\\.html>Tags</a>",
+      "<a href=/hu/etiquettes/index.html>Címkék</a>"
+    ],
+    [
+      "<a href=/articles/index\\.html>Articles</a>",
+      "<a href=/hu/articles/index.html>Cikkek</a>"
+    ],
+    [
+      "<a href=/made-with-static-site-generator/index\\.html>Made with Static Site Generator</a>",
+      "<a href=/hu/concu-avec-static-site-generator/index.html>Static Site Generatorral készült</a>"
+    ],
+    [
+      "<a href=/accessibility/index\\.html>Accessibility</a>",
+      "<a href=/hu/accessibilite/index.html>Akadálymentesség</a>"
+    ],
+    [
+      "<a href=/privacy/index\\.html>Privacy</a>",
+      "<a href=/hu/confidentialite/index.html>Adatvédelem</a>"
+    ],
+    [
+      "<a href=/terms/index\\.html>Terms</a>",
+      "<a href=/hu/conditions/index.html>Feltételek</a>"
+    ],
+    [
+      ">Experience<",
+      ">Tapasztalat<"
+    ],
+    [
+      ">Brands along the way\\.<",
+      ">Márkák az út során.<"
+    ],
+    [
+      ">From global Tier-1 banks to consumer technology\\. Payments and digital product leadership across HSBC, PayPal, Barclays, Shazam, AKQA and Virgin Group\\.</p>",
+      ">A globális első osztályú bankoktól a fogyasztói technológiákig. Fizetési és digitális termékvezetés a HSBC, a PayPal, a Barclays, a Shazam, az AKQA és a Virgin Group vállalatoknál.</p>"
+    ],
+    [
+      "alt=\"PayPal logo\"",
+      "alt=\"PayPal logó\""
+    ],
+    [
+      "alt=\"Barclays logo\"",
+      "alt=\"Barclays logó\""
+    ],
+    [
+      "alt=\"Shazam logo\"",
+      "alt=\"Shazam logó\""
+    ],
+    [
+      "alt=\"AKQA logo\"",
+      "alt=\"AKQA logó\""
+    ],
+    [
+      "alt=\"Virgin logo\"",
+      "alt=\"Virgin logó\""
+    ],
+    [
+      "alt=\"HSBC logo\"",
+      "alt=\"HSBC logó\""
+    ],
+    [
+      ">Read more<",
+      ">Bővebben<"
+    ],
+    [
+      ">Read the article<",
+      ">A cikk elolvasása<"
+    ],
+    [
+      ">Read latest research<",
+      ">Legfrissebb kutatások olvasása<"
+    ],
+    [
+      ">Read full article<",
+      ">A teljes cikk elolvasása<"
+    ],
+    [
+      ">Get in touch ›</a>",
+      ">Kapcsolatfelvétel ›</a>"
+    ],
+    [
+      ">Payments · Stablecoins<",
+      ">Fizetések · Stablecoinok<"
+    ],
+    [
+      ">Payments · ISO 20022<",
+      ">Fizetések · ISO 20022<"
+    ],
+    [
+      ">Quantum<",
+      ">Kvantum<"
+    ],
+    [
+      ">Quantum · Banking<",
+      ">Kvantum · Bankolás<"
+    ],
+    [
+      ">Quantum · Cryptography<",
+      ">Kvantum · Kriptográfia<"
+    ],
+    [
+      ">Read the white paper</a>",
+      ">A fehér könyv elolvasása</a>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>Hand-authoring <strong>ISO 20022 pain\\.001</strong> is fragile under SEPA and SWIFT cutovers\\.</dd></div><div><dt>Approach</dt><dd>Schema-driven Python that maps CSV or SQLite into validated payment XML\\.</dd></div><div><dt>Outcome</dt><dd>Ops ship pain\\.001 in minutes; the audit trail survives the migration\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> ISO 20022 · SEPA \\+ SWIFT</p>",
+      "<dl class=pao><div><dt>Probléma</dt><dd>Az <strong>ISO 20022 pain.001</strong> kézi megírása törékeny a SEPA- és SWIFT-átállások során.</dd></div><div><dt>Megközelítés</dt><dd>Sémavezérelt Python, amely CSV- vagy SQLite-adatokat validált fizetési XML-lé képez le.</dd></div><div><dt>Eredmény</dt><dd>Az üzemeltetők percek alatt állítanak elő pain.001 fájlokat; az auditnyom túléli a migrációt.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Hatás</span> ISO 20022 · SEPA + SWIFT</p>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>FI-to-FI credit transfers fail audit when XSD, IBAN and PII rules diverge\\.</dd></div><div><dt>Approach</dt><dd>One library: JSON Schema, XSD, IBAN across 75 countries, GDPR-grade masking\\.</dd></div><div><dt>Outcome</dt><dd>Cross-border credit transfers that pass first-time at the regulator\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> 75 countries · IBAN</p>",
+      "<dl class=pao><div><dt>Probléma</dt><dd>Az FI-FI átutalások megbuknak az auditon, ha az XSD-, IBAN- és PII-szabályok eltérnek.</dd></div><div><dt>Megközelítés</dt><dd>Egyetlen könyvtár: JSON Schema, XSD, IBAN 75 országban, GDPR-szintű maszkolás.</dd></div><div><dt>Eredmény</dt><dd>Határokon átnyúló átutalások, amelyek elsőre átmennek a szabályozónál.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Hatás</span> 75 ország · IBAN</p>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>Statement formats trap reconciliation teams in manual rekeying\\.</dd></div><div><dt>Approach</dt><dd>One Python toolkit that normalises multi-format statements with audit-grade lineage\\.</dd></div><div><dt>Outcome</dt><dd>Reconciliation runs without bespoke per-bank glue code\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> Multi-format · Audit-grade</p>",
+      "<dl class=pao><div><dt>Probléma</dt><dd>A kivonatformátumok kézi újragépelésbe kényszerítik a rekonsziliációs csapatokat.</dd></div><div><dt>Megközelítés</dt><dd>Egyetlen Python eszközkészlet, amely a többféle formátumú kivonatokat auditszintű adatszármazással normalizálja.</dd></div><div><dt>Eredmény</dt><dd>A rekonsziliáció bankonként egyedi összekötő kód nélkül fut.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Hatás</span> Többféle formátum · Auditszintű</p>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>Pre-PQC hashing libraries leave credential stores quantum-exposed\\.</dd></div><div><dt>Approach</dt><dd>Memory-safe Rust hash and digest library with a post-quantum posture\\.</dd></div><div><dt>Outcome</dt><dd>Drop-in secure hashing for services planning PQC migration\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> Memory-safe · Rust</p>",
+      "<dl class=pao><div><dt>Probléma</dt><dd>A PQC előtti hash-könyvtárak kvantumnak kitetté teszik a hitelesítőadat-tárolókat.</dd></div><div><dt>Megközelítés</dt><dd>Memóriabiztos Rust hash- és kivonatoló könyvtár posztkvantum megközelítéssel.</dd></div><div><dt>Eredmény</dt><dd>Beépíthető biztonságos hashelés a PQC-migrációt tervező szolgáltatások számára.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Hatás</span> Memóriabiztos · Rust</p>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>Tier-1 banks carry harvest-now-decrypt-later exposure on every TLS session\\.</dd></div><div><dt>Approach</dt><dd>Pure-Rust <strong>CRYSTALS-Kyber</strong> \\(NIST FIPS 203\\) that plugs into existing auth flows\\.</dd></div><div><dt>Outcome</dt><dd>Post-quantum key exchange in production-grade Rust, independently validated\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> NIST FIPS 203</p>",
+      "<dl class=pao><div><dt>Probléma</dt><dd>A Tier-1 bankok minden TLS-munkameneten begyűjtés-most-visszafejtés-később kockázatot hordoznak.</dd></div><div><dt>Megközelítés</dt><dd>Tiszta Rust <strong>CRYSTALS-Kyber</strong> (NIST FIPS 203), amely a meglévő hitelesítési folyamatokba illeszkedik.</dd></div><div><dt>Eredmény</dt><dd>Posztkvantum kulcscsere produkciós minőségű Rustban, függetlenül validálva.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Hatás</span> NIST FIPS 203</p>"
+    ],
+    [
+      "<dl class=pao><div><dt>Problem</dt><dd>AI, MCP and config pipelines run on YAML parsers with C-backed UB and silent spec drift\\.</dd></div><div><dt>Approach</dt><dd>Pure-Rust YAML 1\\.2 across library, CLI, LSP, MCP and WASM — zero unsafe, full spec\\.</dd></div><div><dt>Outcome</dt><dd>YAML pipelines that stop being the supply-chain weak link\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> 406 \\/ 406 spec · 0 unsafe</p>",
+      "<dl class=pao><div><dt>Probléma</dt><dd>Az MI-, MCP- és konfigurációs folyamatok C-alapú UB-vel és csendes specifikációeltéréssel terhelt YAML-parszereken futnak.</dd></div><div><dt>Megközelítés</dt><dd>Tiszta Rust YAML 1.2 könyvtárban, CLI-ben, LSP-ben, MCP-ben és WASM-ben: nulla unsafe, teljes specifikáció.</dd></div><div><dt>Eredmény</dt><dd>YAML-folyamatok, amelyek megszűnnek az ellátási lánc gyenge láncszeme lenni.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Hatás</span> 406 / 406 specifikáció · 0 unsafe</p>"
+    ]
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "_comment": "Persian (فارسی) author-card prose — RTL, formal register. Mirrors the EN key set; CI gate test_i18n_author.py enforces parity.",
+  "bio": "فناور ارشد بانکی، نویسنده در حوزهٔ هوش مصنوعی کاربردی، مهاجرت ISO 20022، رمزنگاری پساکوانتومی برای خدمات مالی، و تحول ساختاری پرداخت‌های عمده.",
+  "credentialsPrefix": "20+ سال فعالیت در HSBC Commercial &amp; Investment Bank، PayPal، Barclays، Shazam، AKQA، Virgin Group."
+}

@@ -1,0 +1,296 @@
+{
+  "patches": [
+    [
+      "aria-label=\"Newsletter signup\"",
+      "aria-label=\"Feliratkozás a hírlevélre\""
+    ],
+    [
+      "Banking On Quantum — research notes on payments, AI (?:&amp;|&) post-quantum crypto\\. No spam\\.",
+      "Banking On Quantum: kutatási jegyzetek a fizetésekről, az MI-ről és a posztkvantum kriptográfiáról. Nincs spam."
+    ],
+    [
+      "placeholder=\"?you@bank\\.com\"?",
+      "placeholder=\"on@bank.hu\""
+    ],
+    [
+      "value=\"Newsletter signup — sebastienrousseau\\.com\"",
+      "value=\"Hírlevél-feliratkozás - sebastienrousseau.com\""
+    ],
+    [
+      ">Subscribe</button>",
+      ">Feliratkozás</button>"
+    ],
+    [
+      ">Skip to main content</a>",
+      ">Ugrás a fő tartalomra</a>"
+    ],
+    [
+      "aria-label=\"Toggle navigation\"",
+      "aria-label=\"Navigáció váltása\""
+    ],
+    [
+      "title=\"Toggle navigation\"",
+      "title=\"Navigáció váltása\""
+    ],
+    [
+      "aria-label=\"?Primary\"?(?=[\\s>])",
+      "aria-label=\"Elsődleges navigáció\""
+    ],
+    [
+      "aria-label=\"Switch to dark theme\"",
+      "aria-label=\"Váltás sötét témára\""
+    ],
+    [
+      "aria-label=\"Switch to light theme\"",
+      "aria-label=\"Váltás világos témára\""
+    ],
+    [
+      "title=\"Switch theme\"",
+      "title=\"Téma váltása\""
+    ],
+    [
+      "aria-label=\"Search \\(Cmd or Ctrl \\+ K\\)\"",
+      "aria-label=\"Keresés (Cmd vagy Ctrl + K)\""
+    ],
+    [
+      "title=\"Search \\(⌘K\\)\"",
+      "title=\"Keresés (⌘K)\""
+    ],
+    [
+      "aria-label=\"Get in touch\"",
+      "aria-label=\"Kapcsolatfelvétel\""
+    ],
+    [
+      ">Get in touch ›</a>",
+      ">Kapcsolatfelvétel ›</a>"
+    ],
+    [
+      ">Get in touch</a>",
+      ">Kapcsolatfelvétel</a>"
+    ],
+    [
+      "aria-label=\"Sebastien Rousseau home\"",
+      "aria-label=\"Sebastien Rousseau kezdőlapja\""
+    ],
+    [
+      "<li><a href=\"?/about/index\\.html\"?>About</a></li>",
+      "<li><a href=\"/hu/a-propos/index.html\">Rólam</a></li>"
+    ],
+    [
+      "<li><a href=\"?/papers/index\\.html\"?>Papers</a></li>",
+      "<li><a href=\"/hu/publications/index.html\">Publikációk</a></li>"
+    ],
+    [
+      "<li><a href=\"?/topics/index\\.html\"?>Topics</a></li>",
+      "<li><a href=\"/hu/sujets/index.html\">Témák</a></li>"
+    ],
+    [
+      "<li><a href=\"?/projects/index\\.html\"?>Projects</a></li>",
+      "<li><a href=\"/hu/projets/index.html\">Projektek</a></li>"
+    ],
+    [
+      "<li><a href=\"?/articles/index\\.html\"?>Articles</a></li>",
+      "<li><a href=\"/hu/articles/index.html\">Cikkek</a></li>"
+    ],
+    [
+      "<li><a href=\"?/contact/index\\.html\"?>Contact</a></li>",
+      "<li><a href=\"/hu/contact/index.html\">Kapcsolat</a></li>"
+    ],
+    [
+      "(<a\\b[^>]*?\\bclass=\"?ap-brand\"?[^>]*?\\bhref=)\"?/index\\.html\"?",
+      "\\g<1>\"/hu/index.html\""
+    ],
+    [
+      "<li><a href=\"?/playlists/index\\.html\"?>Playlists</a></li>",
+      "<li><a href=\"/hu/playlists/index.html\">Lejátszási listák</a></li>"
+    ],
+    [
+      "aria-label=\"Back to top\"",
+      "aria-label=\"Vissza a tetejére\""
+    ],
+    [
+      "<h2 class=\"?ap-foot-title\"?>Writing</h2>",
+      "<h2 class=\"ap-foot-title\">Írások</h2>"
+    ],
+    [
+      "<h2 class=\"?ap-foot-title\"?>Work</h2>",
+      "<h2 class=\"ap-foot-title\">Munka</h2>"
+    ],
+    [
+      "<h2 class=\"?ap-foot-title\"?>Reach</h2>",
+      "<h2 class=\"ap-foot-title\">Elérhetőség</h2>"
+    ],
+    [
+      "<a href=\"?/about/index\\.html\"?>About</a>",
+      "<a href=\"/hu/a-propos/index.html\">Rólam</a>"
+    ],
+    [
+      "<a href=\"?/made-with-static-site-generator/index\\.html\"?>Made with Static Site Generator</a>",
+      "<a href=\"/hu/concu-avec-static-site-generator/index.html\">Static Site Generatorral készült</a>"
+    ],
+    [
+      "<a href=\"?/papers/index\\.html\"?>Papers</a>",
+      "<a href=\"/hu/publications/index.html\">Publikációk</a>"
+    ],
+    [
+      "<a href=\"?/tags/index\\.html\"?>Tags</a>",
+      "<a href=\"/hu/etiquettes/index.html\">Címkék</a>"
+    ],
+    [
+      "<a href=\"?/projects/index\\.html\"?>Projects</a>",
+      "<a href=\"/hu/projets/index.html\">Projektek</a>"
+    ],
+    [
+      "<a href=\"?/playlists/index\\.html\"?>Playlists</a>",
+      "<a href=\"/hu/playlists/index.html\">Lejátszási listák</a>"
+    ],
+    [
+      "<a href=\"?/contact/index\\.html\"?>Contact</a>",
+      "<a href=\"/hu/contact/index.html\">Kapcsolat</a>"
+    ],
+    [
+      "<a href=\"?/articles/index\\.html\"?>Articles</a>",
+      "<a href=\"/hu/articles/index.html\">Cikkek</a>"
+    ],
+    [
+      "aria-label=\"Social links\"",
+      "aria-label=\"Közösségi linkek\""
+    ],
+    [
+      "aria-label=\"Sebastien Rousseau on ",
+      "aria-label=\"Sebastien Rousseau itt: "
+    ],
+    [
+      "alt=\"Sebastien Rousseau on ",
+      "alt=\"Sebastien Rousseau itt: "
+    ],
+    [
+      "alt=\"Black and White Portrait of Sebastien Rousseau\"",
+      "alt=\"Sebastien Rousseau fekete-fehér portréja\""
+    ],
+    [
+      "© Copyright 2007 - 2026 - Sebastien Rousseau\\. All rights reserved\\.",
+      "© Copyright 2007 - 2026 - Sebastien Rousseau. Minden jog fenntartva."
+    ],
+    [
+      "<a href=\"?/accessibility/index\\.html\"?>Accessibility</a>",
+      "<a href=\"/hu/accessibilite/index.html\">Akadálymentesség</a>"
+    ],
+    [
+      "<a href=\"?/privacy/index\\.html\"?>Privacy</a>",
+      "<a href=\"/hu/confidentialite/index.html\">Adatvédelem</a>"
+    ],
+    [
+      "<a href=\"?/terms/index\\.html\"?>Terms</a>",
+      "<a href=\"/hu/conditions/index.html\">Feltételek</a>"
+    ],
+    [
+      "placeholder=\"Search documentation\\.\\.\\.\"",
+      "placeholder=\"Keresés a dokumentációban...\""
+    ],
+    [
+      "aria-label=\"Search\"(?!\\s*\\()",
+      "aria-label=\"Keresés\""
+    ],
+    [
+      "<kbd>Esc</kbd>\\s*close",
+      "<kbd>Esc</kbd> bezárás"
+    ],
+    [
+      "navigate</span>",
+      "navigálás</span>"
+    ],
+    [
+      "<kbd>Enter</kbd>\\s*open",
+      "<kbd>Enter</kbd> megnyitás"
+    ],
+    [
+      "<span>Search</span>",
+      "<span>Keresés</span>"
+    ],
+    [
+      "aria-label=\"?Language\"?(?=[\\s>])",
+      "aria-label=\"Nyelv\""
+    ],
+    [
+      "aria-label=\"EN, Change language\"",
+      "aria-label=\"HU, Nyelv váltása\""
+    ],
+    [
+      "title=\"Change language\"",
+      "title=\"Nyelv váltása\""
+    ],
+    [
+      "title=\"Coming soon\"",
+      "title=\"Hamarosan\""
+    ],
+    [
+      "<span class=\"?ap-lang-current\"?>EN</span>",
+      "<span class=\"ap-lang-current\">HU</span>"
+    ],
+    [
+      "title=\"Atom Feed\"",
+      "title=\"Atom-hírcsatorna\""
+    ],
+    [
+      "title=\"RSS Feed\"",
+      "title=\"RSS-hírcsatorna\""
+    ],
+    [
+      "aria-label=\"Article summary\"",
+      "aria-label=\"Cikk összefoglalója\""
+    ],
+    [
+      "<strong>Key takeaways</strong>",
+      "<strong>Legfontosabb tanulságok</strong>"
+    ],
+    [
+      "<strong>Related reading:</strong>",
+      "<strong>Kapcsolódó olvasmányok:</strong>"
+    ],
+    [
+      "<h2 id=\"related-heading\" class=\"related-heading\">Related reading</h2>",
+      "<h2 id=\"related-heading\" class=\"related-heading\">Kapcsolódó olvasmányok</h2>"
+    ],
+    [
+      ">Last reviewed <",
+      ">Utolsó felülvizsgálat <"
+    ],
+    [
+      "aria-label=\"About the author\"",
+      "aria-label=\"A szerzőről\""
+    ],
+    [
+      ">Full profile</a>",
+      ">Teljes profil</a>"
+    ],
+    [
+      "alt=\"Portrait of Sebastien Rousseau\"",
+      "alt=\"Sebastien Rousseau portréja\""
+    ],
+    [
+      "<p class=\"feat-eyebrow\">Get in touch</p>",
+      "<p class=\"feat-eyebrow\">Kapcsolatfelvétel</p>"
+    ],
+    [
+      ">Start a conversation</a>",
+      ">Beszélgetés indítása</a>"
+    ],
+    [
+      "<a href=\"/articles/index\\.html\">Read latest research</a>",
+      "<a href=\"/articles/index.html\">Legfrissebb kutatások olvasása</a>"
+    ],
+    [
+      "<a href=\"/contact/index\\.html\">Get in touch</a>",
+      "<a href=\"/contact/index.html\">Kapcsolatfelvétel</a>"
+    ],
+    [
+      "<li><a href=\"?/case-studies/index\\.html\"?>Case studies</a></li>",
+      "<li><a href=\"/hu/etudes-de-cas/index.html\">Esettanulmányok</a></li>"
+    ],
+    [
+      "<a href=\"?/case-studies/index\\.html\"?>Case studies</a>",
+      "<a href=\"/hu/etudes-de-cas/index.html\">Esettanulmányok</a>"
+    ]
+  ]
+}

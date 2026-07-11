@@ -1,0 +1,23 @@
+{
+  "_comment": "Topic-cluster titles + ledes per language. Topic slugs are language-independent; only the displayed name and lede change. EN equivalents live in scripts/build_topics.py (TOPICS dict).",
+  "post-quantum-cryptography": {
+    "title": "Kriptografi pasca-kuantum",
+    "lede": "Kriptografi berasaskan kekisi (lattice), piawaian NIST PQC, pembayaran kalis kuantum dan ancaman \"tuai sekarang, nyahsulit kemudian\". Nota penyelidikan, pustaka sumber terbuka dan playbook migrasi untuk pasukan keselamatan dalam perkhidmatan kewangan."
+  },
+  "iso-20022-payments": {
+    "title": "ISO 20022 & Pembayaran",
+    "lede": "Migrasi mesej rentas sempadan, pematuhan alamat berstruktur, SEPA Instant, SWIFT gpi dan landasan pembayaran borong yang menampung keseluruhannya. Alat, playbook dan garis masa kawal selia."
+  },
+  "applied-ai-banking": {
+    "title": "AI gunaan dalam perbankan",
+    "lede": "AI generatif, LLM multimodal, suara dan model pertuturan, serta cara ia membentuk semula operasi perbankan, khidmat pelanggan dan kejuruteraan produk dalam institusi peringkat tertinggi."
+  },
+  "rust-open-source": {
+    "title": "Rust & Sumber Terbuka",
+    "lede": "Pustaka Rust sumber terbuka yang saya tulis dan selenggara: pengelogan, penjanaan kod, tarikh-masa, primitif kriptografi, KEM berasaskan Kyber, dan penjana laman statik Rust."
+  },
+  "blockchain-digital-assets": {
+    "title": "Blockchain & Aset Digital",
+    "lede": "Blockchain dan aset digital: tokenisasi, ERC-20, stablecoin, infrastruktur mata wang kripto, dan rangka kerja kawal selia yang membentuknya."
+  }
+}

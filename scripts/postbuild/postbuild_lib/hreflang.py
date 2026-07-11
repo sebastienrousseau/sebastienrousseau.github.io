@@ -129,6 +129,17 @@ _LANG_SWITCH_STRINGS: dict[str, tuple[str, str]] = {
     "ha": ("Wannan labarin yana samuwa kuma a cikin", "Harsunan da ake samu"),
     "yo": ("Àpilẹ̀kọ yìí tún wà ní", "Àwọn èdè tó wà"),
     "sv": ("Den här artikeln finns även på", "Tillgängliga språk"),
+    # Planned locales (issue #360). Present so the article-level switcher
+    # renders correctly the moment each locale's content backfill lands;
+    # inert while the locale is active=False (data-driven — only appears
+    # for articles that actually have a translation).
+    "fa": ("این مقاله به زبان‌های زیر نیز در دسترس است", "زبان‌های موجود"),
+    "mr": ("हा लेख या भाषांमध्येही उपलब्ध आहे", "उपलब्ध भाषा"),
+    "ta": ("இந்தக் கட்டுரை பின்வரும் மொழிகளிலும் கிடைக்கிறது", "கிடைக்கும் மொழிகள்"),
+    "te": ("ఈ కథనం ఈ భాషల్లో కూడా అందుబాటులో ఉంది", "అందుబాటులో ఉన్న భాషలు"),
+    "ms": ("Artikel ini juga tersedia dalam", "Bahasa yang tersedia"),
+    "el": ("Αυτό το άρθρο είναι επίσης διαθέσιμο στα", "Διαθέσιμες γλώσσες"),
+    "hu": ("Ez a cikk a következő nyelveken is elérhető", "Elérhető nyelvek"),
 }
 _LANG_SWITCH_ORDER: tuple[str, ...] = (
     "fr",
@@ -158,6 +169,13 @@ _LANG_SWITCH_ORDER: tuple[str, ...] = (
     "ha",
     "yo",
     "sv",
+    "fa",
+    "mr",
+    "ta",
+    "te",
+    "ms",
+    "el",
+    "hu",
     "en",
 )
 _LANG_SWITCH_INSERT_RE = re.compile(

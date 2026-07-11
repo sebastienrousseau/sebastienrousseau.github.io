@@ -1,0 +1,87 @@
+{
+  "_comment": "Per-static-page metadata for the French mirror. Keys are the EN slug; each entry replaces the EN values in <title>, <meta name=description>, <meta name=keywords>, og:*, twitter:*, and the hero subtitle. STATIC_BODIES_FR in build_translations.py supplies the curated FR <main> body for pages that need more than a regex pass.",
+  "about": {
+    "title": "Bemutatkozás - Sebastien Rousseau",
+    "subtitle": "A bankszektor és a pénzügyi szolgáltatások jövőjének formálása a mesterséges intelligencia, a posztkvantum kriptográfia és a blokklánc-technológia stratégiai integrációjával.",
+    "description": "Sebastien Rousseau, vezető technológus a bankszektorban: alkalmazott MI, ISO 20022 migráció, posztkvantum kriptográfia, a nagybani fizetések strukturális átalakítása.",
+    "keywords": "Sebastien Rousseau, életrajz, bankszektor, fizetések, MI, ISO 20022, posztkvantum kriptográfia, HSBC, PayPal, Barclays"
+  },
+  "papers": {
+    "title": "Publikációk - Sebastien Rousseau",
+    "subtitle": "Ipari fehér könyvek és alkalmazott kutatás a fizetések és biztonság területén dolgozó felsővezetők számára.",
+    "description": "Sebastien Rousseau cikkei, jelentései és publikációi az MI-ről, az ISO 20022 fizetésekről és a posztkvantum kriptográfiáról.",
+    "keywords": "publikációk, cikkek, jelentések, kutatás, ISO 20022, MI, posztkvantum kriptográfia"
+  },
+  "projects": {
+    "title": "Projektek - Sebastien Rousseau",
+    "subtitle": "Nyílt forráskódú projektek Pythonban, Rustban és JavaScriptben a pénzügyek jövőjéért.",
+    "description": "Sebastien Rousseau által karbantartott nyílt forráskódú programkönyvtárak portfóliója a fizetésekhez, a határon átnyúló elszámoláshoz és a kvantumbiztos kriptográfiához.",
+    "keywords": "nyílt forráskódú projektek, Python, Rust, fizetések, ISO 20022, posztkvantum kriptográfia"
+  },
+  "topics": {
+    "title": "Témák - Sebastien Rousseau",
+    "subtitle": "Cikkek az MI-ről, a posztkvantum kriptográfiáról, az ISO 20022-ről és a fizetések jövőjéről.",
+    "description": "Fedezze fel a témák szerinti elemzéseket: alkalmazott MI, ISO 20022 fizetések, posztkvantum kriptográfia, és a nagybani fizetések átalakítása.",
+    "keywords": "témák, témakörök, MI, fizetések, ISO 20022, posztkvantum kriptográfia"
+  },
+  "tags": {
+    "title": "Címkék - Sebastien Rousseau",
+    "subtitle": "Böngéssze az oldalt téma szerint: MI, fizetések, posztkvantum kriptográfia, nyílt forráskód.",
+    "description": "Böngéssze a cikkeket címke szerint: MI, ISO 20022, blokklánc, posztkvantum kriptográfia és még sok más.",
+    "keywords": "címkék, tagek, navigáció téma szerint"
+  },
+  "contact": {
+    "title": "Kapcsolat - Sebastien Rousseau",
+    "subtitle": "Kérdése van vagy tanácsra van szüksége? Írjon nekem.",
+    "description": "Lépjen kapcsolatba Sebastien Rousseau-val a fizetési transzformációs tanácsadás, az ISO 20022 migráció vagy a posztkvantum stratégia ügyében.",
+    "keywords": "kapcsolat, tanácsadás, fizetések, ISO 20022, posztkvantum kriptográfia"
+  },
+  "accessibility": {
+    "title": "Akadálymentesség - Sebastien Rousseau",
+    "subtitle": "Elkötelezettek a fogyatékossággal élők digitális akadálymentessége mellett.",
+    "description": "Akadálymentességi nyilatkozat: WCAG 2.2 AA megfelelőség, inkluzív alapelvek, visszajelzés és bejelentési elérhetőségek.",
+    "keywords": "akadálymentesség, WCAG, megfelelőség, digitális befogadás, audit"
+  },
+  "privacy": {
+    "title": "Adatvédelmi szabályzat - Sebastien Rousseau",
+    "subtitle": "Az Ön magánélete fontos számunkra.",
+    "description": "Hogyan gyűjti, használja és védi ez az oldal az Ön adatait. Anonim látogatottságmérés, sütik, tárhely és GDPR-jogok.",
+    "keywords": "magánélet, GDPR, sütik, személyes adatok, analitika"
+  },
+  "terms": {
+    "title": "Felhasználási feltételek - Sebastien Rousseau",
+    "subtitle": "Az oldal általános felhasználási feltételei.",
+    "description": "A sebastienrousseau.com oldal általános felhasználási feltételei: a tartalom licence, korlátozások, védjegyek és joghatóság.",
+    "keywords": "feltételek, jogi nyilatkozat, licenc, szerzői jog"
+  },
+  "made-with-static-site-generator": {
+    "title": "Static Site Generator segítségével készült - Sebastien Rousseau",
+    "subtitle": "Fedezze fel, hogyan használhatja az új generációs statikus oldalgenerátort.",
+    "description": "Ez az oldal a Static Site Generator segítségével készült, egy Rust nyelvű statikus oldalgenerátorral, amelyet teljesítményre és SEO-ra optimalizáltak.",
+    "keywords": "Static Site Generator, SSG, Rust, teljesítmény, SEO"
+  },
+  "playlists": {
+    "title": "Lejátszási listák - Sebastien Rousseau",
+    "subtitle": "Válogatott Spotify lejátszási listák mély munkához, kreativitáshoz és mérnöki gondolkodáshoz.",
+    "description": "Sebastien Rousseau zenei és hangválogatása.",
+    "keywords": "lejátszási listák, zene"
+  },
+  "404": {
+    "title": "Az oldal nem található - Sebastien Rousseau",
+    "subtitle": "Sajnáljuk, ez az oldal nem található.",
+    "description": "A kért oldal nem található. Térjen vissza a kezdőlapra vagy használja a keresést.",
+    "keywords": "404, oldal nem található"
+  },
+  "offline": {
+    "title": "Kapcsolat nélkül - Sebastien Rousseau",
+    "subtitle": "Ellenőrizze a kapcsolatát és próbálja újra.",
+    "description": "Ön offline állapotban van. Csatlakozzon újra a tartalom eléréséhez.",
+    "keywords": "kapcsolat nélkül, PWA"
+  },
+  "thanks": {
+    "title": "Köszönöm - Sebastien Rousseau",
+    "subtitle": "Köszönöm, hogy kapcsolatba lépett velem!",
+    "description": "Köszönöm az üzenetét. Hamarosan jelentkezem.",
+    "keywords": "köszönöm"
+  }
+}

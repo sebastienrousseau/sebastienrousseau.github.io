@@ -39,11 +39,34 @@ class TestLanguagesTable:
         assert de is not None
         assert de.active is True
 
-    def test_rtl_flag_set_for_ar_and_he(self) -> None:
-        for code in ("ar", "he"):
+    def test_rtl_flag_set_for_ar_he_and_fa(self) -> None:
+        for code in ("ar", "he", "fa"):
             lg = next((entry for entry in lr.LANGUAGES if entry.code == code), None)
             assert lg is not None, f"{code} missing"
             assert lg.rtl is True, f"{code} should carry rtl=True"
+
+    def test_planned_locales_registered_inactive(self) -> None:
+        # issue #360 (28 → 35): the 7 new locales ship as active=False
+        # until their content backfill lands. fa is the only RTL one.
+        expected = {
+            "fa": ("fa-IR", "fa_IR", True),
+            "mr": ("mr-IN", "mr_IN", False),
+            "ta": ("ta-IN", "ta_IN", False),
+            "te": ("te-IN", "te_IN", False),
+            "ms": ("ms-MY", "ms_MY", False),
+            "el": ("el-GR", "el_GR", False),
+            "hu": ("hu-HU", "hu_HU", False),
+        }
+        by_code = {lg.code: lg for lg in lr.LANGUAGES}
+        for code, (bcp47, og_locale, rtl) in expected.items():
+            lg = by_code.get(code)
+            assert lg is not None, f"{code} missing from LANGUAGES"
+            assert lg.active is False, f"{code} should be active=False until backfill"
+            assert lg.bcp47 == bcp47
+            assert lg.og_locale == og_locale
+            assert lg.rtl is rtl
+        # They must not leak into the active() set yet.
+        assert not (set(expected) & {lg.code for lg in lr.active()})
 
     def test_codes_are_unique(self) -> None:
         codes = [lg.code for lg in lr.LANGUAGES]
