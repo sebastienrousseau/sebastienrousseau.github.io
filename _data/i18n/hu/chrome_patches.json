@@ -74,19 +74,19 @@
     ],
     [
       "<li><a href=\"?/about/index\\.html\"?>About</a></li>",
-      "<li><a href=\"/hu/a-propos/index.html\">Rólam</a></li>"
+      "<li><a href=\"/hu/about/index.html\">Rólam</a></li>"
     ],
     [
       "<li><a href=\"?/papers/index\\.html\"?>Papers</a></li>",
-      "<li><a href=\"/hu/publications/index.html\">Publikációk</a></li>"
+      "<li><a href=\"/hu/papers/index.html\">Publikációk</a></li>"
     ],
     [
       "<li><a href=\"?/topics/index\\.html\"?>Topics</a></li>",
-      "<li><a href=\"/hu/sujets/index.html\">Témák</a></li>"
+      "<li><a href=\"/hu/topics/index.html\">Témák</a></li>"
     ],
     [
       "<li><a href=\"?/projects/index\\.html\"?>Projects</a></li>",
-      "<li><a href=\"/hu/projets/index.html\">Projektek</a></li>"
+      "<li><a href=\"/hu/projects/index.html\">Projektek</a></li>"
     ],
     [
       "<li><a href=\"?/articles/index\\.html\"?>Articles</a></li>",
@@ -122,23 +122,23 @@
     ],
     [
       "<a href=\"?/about/index\\.html\"?>About</a>",
-      "<a href=\"/hu/a-propos/index.html\">Rólam</a>"
+      "<a href=\"/hu/about/index.html\">Rólam</a>"
     ],
     [
       "<a href=\"?/made-with-static-site-generator/index\\.html\"?>Made with Static Site Generator</a>",
-      "<a href=\"/hu/concu-avec-static-site-generator/index.html\">Static Site Generatorral készült</a>"
+      "<a href=\"/hu/made-with-static-site-generator/index.html\">Static Site Generatorral készült</a>"
     ],
     [
       "<a href=\"?/papers/index\\.html\"?>Papers</a>",
-      "<a href=\"/hu/publications/index.html\">Publikációk</a>"
+      "<a href=\"/hu/papers/index.html\">Publikációk</a>"
     ],
     [
       "<a href=\"?/tags/index\\.html\"?>Tags</a>",
-      "<a href=\"/hu/etiquettes/index.html\">Címkék</a>"
+      "<a href=\"/hu/tags/index.html\">Címkék</a>"
     ],
     [
       "<a href=\"?/projects/index\\.html\"?>Projects</a>",
-      "<a href=\"/hu/projets/index.html\">Projektek</a>"
+      "<a href=\"/hu/projects/index.html\">Projektek</a>"
     ],
     [
       "<a href=\"?/playlists/index\\.html\"?>Playlists</a>",
@@ -174,15 +174,15 @@
     ],
     [
       "<a href=\"?/accessibility/index\\.html\"?>Accessibility</a>",
-      "<a href=\"/hu/accessibilite/index.html\">Akadálymentesség</a>"
+      "<a href=\"/hu/accessibility/index.html\">Akadálymentesség</a>"
     ],
     [
       "<a href=\"?/privacy/index\\.html\"?>Privacy</a>",
-      "<a href=\"/hu/confidentialite/index.html\">Adatvédelem</a>"
+      "<a href=\"/hu/privacy/index.html\">Adatvédelem</a>"
     ],
     [
       "<a href=\"?/terms/index\\.html\"?>Terms</a>",
-      "<a href=\"/hu/conditions/index.html\">Feltételek</a>"
+      "<a href=\"/hu/terms/index.html\">Feltételek</a>"
     ],
     [
       "placeholder=\"Search documentation\\.\\.\\.\"",
@@ -286,11 +286,11 @@
     ],
     [
       "<li><a href=\"?/case-studies/index\\.html\"?>Case studies</a></li>",
-      "<li><a href=\"/hu/etudes-de-cas/index.html\">Esettanulmányok</a></li>"
+      "<li><a href=\"/hu/case-studies/index.html\">Esettanulmányok</a></li>"
     ],
     [
       "<a href=\"?/case-studies/index\\.html\"?>Case studies</a>",
-      "<a href=\"/hu/etudes-de-cas/index.html\">Esettanulmányok</a>"
+      "<a href=\"/hu/case-studies/index.html\">Esettanulmányok</a>"
     ]
   ]
 }
