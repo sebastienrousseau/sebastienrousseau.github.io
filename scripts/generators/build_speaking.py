@@ -20,7 +20,9 @@ Input:  ``_data/proof/speaking.yml``   (single source of truth)
 
 from __future__ import annotations
 
+import html as _html
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -109,12 +111,36 @@ def _proof_rail() -> str:
     return f'<section class="proof-rail" aria-label="Speaking credibility by the numbers">{rendered}</section>'
 
 
+def _split_paragraphs(text: str, groups: int = 2) -> list[str]:
+    """Split a folded one-line bio into `groups` prose paragraphs on sentence
+    boundaries, so the biography reads like an Apple leadership page rather
+    than one dense block."""
+    sentences = [s for s in re.split(r"(?<=[.!?])\s+", text.strip()) if s]
+    if len(sentences) <= 1:
+        return sentences
+    per = max(1, -(-len(sentences) // groups))  # ceil
+    return [" ".join(sentences[i : i + per]) for i in range(0, len(sentences), per)]
+
+
+def _unescape_head_metas(html_text: str) -> str:
+    """Repair entity-escaped `<meta>` / `<link>` tags that some local SSG
+    builds emit in the shell's <head> (`&lt;meta …&gt;`). Left unrepaired the
+    browser spills them into the body as visible text. On CI the tags are
+    already real, so this is a no-op."""
+    return re.sub(
+        r"&lt;(?:meta|link)\b.*?&gt;",
+        lambda m: _html.unescape(m.group(0)),
+        html_text,
+        flags=re.DOTALL,
+    )
+
+
 def _bio_block(key: str, label: str, value: str) -> str:
     bid = f"bio-{key}"
     return (
         '<div class="cite-format">'
         f'<p class="cite-format-label">{_esc(label)}</p>'
-        f'<pre id="{bid}">{_esc(value.strip())}</pre>'
+        f'<p id="{bid}">{_esc(value.strip())}</p>'
         f'<button type="button" class="copy-btn" data-copy="#{bid}" '
         f'aria-label="{_esc(label)} — Copy">Copy</button>'
         "</div>"
@@ -150,23 +176,40 @@ def _render_body(data: dict) -> str:
     topics = data.get("topics", []) or []
     short = bio.get("short", "").strip()
 
+    long = (bio.get("long", "") or "").strip()
     parts: list[str] = []
-    # Photo-led hero: portrait + credibility deck + CTA + a where-I've-shipped
-    # logo strip, so the page opens with proof instead of an empty band.
+    # Apple-leadership-style hero: a large portrait, the name as the H1, and a
+    # role deck — an executive bio, not a marketing splash. Followed by the
+    # credibility logo strip and proof rail.
     parts.append(
         '<section class="ap-hero" aria-labelledby="speaking-h1"><div class="wrap">'
-        f'<img class="ap-hero-portrait" src="{PORTRAIT}" '
-        'alt="Sebastien Rousseau" width="96" height="96" '
+        f'<img class="portrait" src="{PORTRAIT}" '
+        'alt="Sebastien Rousseau" width="120" height="120" '
         'fetchpriority="high" decoding="async" />'
         '<p class="ap-hero-eyebrow">Speaking &amp; advisory</p>'
-        '<h1 id="speaking-h1" class="feat-headline">'
-        "Keynotes on the future of banking.</h1>"
-        f'<p class="ap-hero-deck">{_esc(short)}</p>'
+        '<h1 id="speaking-h1" class="feat-headline">Sebastien Rousseau</h1>'
+        '<p class="ap-hero-deck">Senior banking technologist. Keynotes and '
+        "advisory on payments, post-quantum cryptography, and applied AI.</p>"
         '<p><a class="pill" href="/contact/">Invite me to speak</a></p>'
         f"{_brands_block()}"
         "</div></section>"
     )
     parts.append(_proof_rail())
+
+    # Flowing biography — the long bio as prose, the way Apple's leadership
+    # pages read. Split into a couple of paragraphs on sentence boundaries.
+    bio_prose = long or short
+    if bio_prose:
+        paras = _split_paragraphs(bio_prose)
+        body = "".join(f"<p>{_esc(p)}</p>" for p in paras)
+        parts.append(
+            '<section class="feat" aria-labelledby="speaking-about">'
+            '<div class="wrap">'
+            '<p class="feat-eyebrow">Biography</p>'
+            '<h2 id="speaking-about" class="feat-headline">About Sebastien.</h2>'
+            f"{body}"
+            "</div></section>"
+        )
 
     if topics:
         cards = "".join(
@@ -223,6 +266,7 @@ def main() -> int:
     title = "Speaking & advisory — Sebastien Rousseau"
     desc = (data.get("bio", {}).get("short", "") or "").strip()[:155]
     out = _swap_into_shell(shell, body, title, desc, URL)
+    out = _unescape_head_metas(out)
 
     target = PUBLIC / "speaking" / "index.html"
     target.parent.mkdir(parents=True, exist_ok=True)
