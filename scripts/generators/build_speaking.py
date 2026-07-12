@@ -198,27 +198,19 @@ def _format_card(fmt: str) -> str:
     return f'<div class="speaking-format"><h3>{_esc(fmt.strip())}</h3></div>'
 
 
-def _render_body(data: dict) -> str:
-    bio = data.get("bio", {}) or {}
-    topics = data.get("topics", []) or []
-    logistics = data.get("logistics", {}) or {}
-    long = (bio.get("long", "") or "").strip()
-    short = (bio.get("short", "") or "").strip()
-    booking = logistics.get("booking_url") or "/contact/index.html"
-
-    # Secondary CTA: the media kit if the PDF actually exists, else jump to the
-    # keynotes (never a broken link).
+def _secondary_cta(logistics: dict) -> str:
+    """Secondary CTA: the media kit if its PDF exists, else an in-page jump to
+    the keynotes — never a broken link."""
     media_kit = logistics.get("media_kit_pdf", "")
     if media_kit and (PUBLIC / media_kit.lstrip("/")).is_file():
-        secondary = f'<a class="pill ghost" href="{_esc(media_kit)}">Download media kit</a>'
-    else:
-        secondary = '<a class="pill ghost" href="#speaking-keynotes">Explore keynotes</a>'
+        return f'<a class="pill ghost" href="{_esc(media_kit)}">Download media kit</a>'
+    return '<a class="pill ghost" href="#speaking-keynotes">Explore keynotes</a>'
 
-    parts: list[str] = []
 
-    # 1. Hero — benefit-led, two-column (portrait right), dual CTA, then the
-    #    "where I've shipped" logo strip. Positions the value, not the name.
-    parts.append(
+def _hero_section(booking: str, secondary: str) -> str:
+    """Benefit-led, two-column hero (portrait right), dual CTA, then the
+    "where I've shipped" logo strip. Positions the value, not the name."""
+    return (
         '<section class="feat speaking-hero-band" aria-labelledby="speaking-h1">'
         '<div class="wrap">'
         '<div class="speaking-hero"><div>'
@@ -241,84 +233,99 @@ def _render_body(data: dict) -> str:
         "</div></section>"
     )
 
-    # 2. Authority proof rail.
-    parts.append(_proof_rail())
 
-    # 3. Signature keynotes — each with an audience chip so an organiser can
-    #    place the talk against their room.
-    if topics:
-        cards = "".join(
-            '<article class="offer-card">'
-            f"<h3>{_esc(t.get('title', ''))}</h3>"
-            f"<p>{_esc(t.get('summary', '').strip())}</p>"
-            + (
-                f'<span class="talk-audience">For: {_esc(t["audience"])}</span>'
-                if t.get("audience")
-                else ""
-            )
-            + "</article>"
-            for t in topics
-            if t.get("title")
-        )
-        parts.append(
-            '<section class="feat alt" aria-labelledby="speaking-keynotes">'
-            '<div class="wrap">'
-            '<p class="feat-eyebrow">Signature keynotes</p>'
-            '<h2 id="speaking-keynotes" class="feat-headline">'
-            "Talks built for the boardroom.</h2>"
-            f'<div class="offer-cards">{cards}</div>'
-            "</div></section>"
-        )
+def _keynote_card(topic: dict) -> str:
+    """One signature-keynote card with an optional audience chip."""
+    chip = (
+        f'<span class="talk-audience">For: {_esc(topic["audience"])}</span>'
+        if topic.get("audience")
+        else ""
+    )
+    return (
+        '<article class="offer-card">'
+        f"<h3>{_esc(topic.get('title', ''))}</h3>"
+        f"<p>{_esc(topic.get('summary', '').strip())}</p>"
+        f"{chip}</article>"
+    )
 
-    # 4. Formats & logistics — the practical answers an organiser needs.
+
+def _keynotes_section(topics: list) -> str:
+    """Signature keynotes — each with an audience chip so an organiser can place
+    the talk against their room. Empty string when there are no titled topics."""
+    cards = "".join(_keynote_card(t) for t in topics if t.get("title"))
+    if not cards:
+        return ""
+    return (
+        '<section class="feat alt" aria-labelledby="speaking-keynotes">'
+        '<div class="wrap">'
+        '<p class="feat-eyebrow">Signature keynotes</p>'
+        '<h2 id="speaking-keynotes" class="feat-headline">'
+        "Talks built for the boardroom.</h2>"
+        f'<div class="offer-cards">{cards}</div>'
+        "</div></section>"
+    )
+
+
+def _formats_section(logistics: dict) -> str:
+    """Formats & regions — the practical answers an organiser needs."""
     formats = logistics.get("formats", []) or []
     regions = logistics.get("regions", []) or []
-    if formats or regions:
-        fmt_cards = "".join(_format_card(f) for f in formats)
-        region_spans = "".join(f"<span>{_esc(r)}</span>" for r in regions)
-        regions_html = (
-            f'<div class="speaking-regions">{region_spans}</div>' if regions else ""
-        )
-        parts.append(
-            '<section class="feat" aria-labelledby="speaking-formats">'
-            '<div class="wrap">'
-            '<p class="feat-eyebrow">For organisers</p>'
-            '<h2 id="speaking-formats" class="feat-headline">How I work.</h2>'
-            f'<div class="speaking-formats">{fmt_cards}</div>'
-            f"{regions_html}"
-            "</div></section>"
-        )
+    if not (formats or regions):
+        return ""
+    fmt_cards = "".join(_format_card(f) for f in formats)
+    region_spans = "".join(f"<span>{_esc(r)}</span>" for r in regions)
+    regions_html = (
+        f'<div class="speaking-regions">{region_spans}</div>' if regions else ""
+    )
+    return (
+        '<section class="feat" aria-labelledby="speaking-formats">'
+        '<div class="wrap">'
+        '<p class="feat-eyebrow">For organisers</p>'
+        '<h2 id="speaking-formats" class="feat-headline">How I work.</h2>'
+        f'<div class="speaking-formats">{fmt_cards}</div>'
+        f"{regions_html}"
+        "</div></section>"
+    )
 
-    # 5. Biography — flowing prose (for programme pages and introductions).
-    bio_prose = long or short
-    if bio_prose:
-        body = "".join(f"<p>{_esc(p)}</p>" for p in _split_paragraphs(bio_prose))
-        parts.append(
-            '<section class="feat" aria-labelledby="speaking-about">'
-            '<div class="wrap">'
-            '<p class="feat-eyebrow">Biography</p>'
-            '<h2 id="speaking-about" class="feat-headline">About Sebastien.</h2>'
-            f"{body}"
-            "</div></section>"
-        )
 
-    # 6. Ready-to-use press bios (copy to clipboard).
+def _biography_section(bio: dict) -> str:
+    """Flowing-prose biography for programme pages and introductions."""
+    bio_prose = (bio.get("long", "") or "").strip()
+    bio_prose = bio_prose or (bio.get("short", "") or "").strip()
+    if not bio_prose:
+        return ""
+    body = "".join(f"<p>{_esc(p)}</p>" for p in _split_paragraphs(bio_prose))
+    return (
+        '<section class="feat" aria-labelledby="speaking-about">'
+        '<div class="wrap">'
+        '<p class="feat-eyebrow">Biography</p>'
+        '<h2 id="speaking-about" class="feat-headline">About Sebastien.</h2>'
+        f"{body}"
+        "</div></section>"
+    )
+
+
+def _press_bios_section(bio: dict) -> str:
+    """Ready-to-use press bios (short/medium/long) with copy-to-clipboard."""
     bio_blocks = [
         _bio_block(k, label, bio[k])
         for k, label in (("short", "Short"), ("medium", "Medium"), ("long", "Long"))
         if bio.get(k)
     ]
-    if bio_blocks:
-        parts.append(
-            '<section class="feat" aria-labelledby="speaking-bio"><div class="wrap">'
-            '<p class="feat-eyebrow">Press &amp; media</p>'
-            '<h2 id="speaking-bio" class="feat-headline">Ready-to-use bio.</h2>'
-            + "".join(bio_blocks)
-            + "</div></section>"
-        )
+    if not bio_blocks:
+        return ""
+    return (
+        '<section class="feat" aria-labelledby="speaking-bio"><div class="wrap">'
+        '<p class="feat-eyebrow">Press &amp; media</p>'
+        '<h2 id="speaking-bio" class="feat-headline">Ready-to-use bio.</h2>'
+        + "".join(bio_blocks)
+        + "</div></section>"
+    )
 
-    # 7. Closing CTA band.
-    parts.append(
+
+def _closing_cta(booking: str, secondary: str) -> str:
+    """Closing "book me" CTA band."""
+    return (
         '<section class="feat"><div class="wrap"><div class="speaking-cta">'
         '<p class="feat-eyebrow">Book a keynote</p>'
         '<h2 class="feat-headline">Bring this to your stage.</h2>'
@@ -330,8 +337,26 @@ def _render_body(data: dict) -> str:
         "</div></div></section>"
     )
 
-    parts.append(_topics_jsonld(topics))
-    return "".join(parts)
+
+def _render_body(data: dict) -> str:
+    """Assemble the speaking page body from its sections (empties dropped)."""
+    bio = data.get("bio", {}) or {}
+    topics = data.get("topics", []) or []
+    logistics = data.get("logistics", {}) or {}
+    booking = logistics.get("booking_url") or "/contact/index.html"
+    secondary = _secondary_cta(logistics)
+
+    sections = [
+        _hero_section(booking, secondary),
+        _proof_rail(),
+        _keynotes_section(topics),
+        _formats_section(logistics),
+        _biography_section(bio),
+        _press_bios_section(bio),
+        _closing_cta(booking, secondary),
+        _topics_jsonld(topics),
+    ]
+    return "".join(s for s in sections if s)
 
 
 def main() -> int:
