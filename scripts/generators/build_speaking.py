@@ -39,8 +39,74 @@ ROOT = Path(__file__).resolve().parents[2]
 PUBLIC = ROOT / "public"
 SPEAKING_YML = ROOT / "_data" / "proof" / "speaking.yml"
 SHELL_SRC = PUBLIC / "articles" / "index.html"
+METRICS_JSON = ROOT / "_data" / "proof" / "metrics.json"
 BASE_URL = "https://sebastienrousseau.com"
 URL = f"{BASE_URL}/speaking/"
+
+# Portrait + the brand logos already served for the homepage credibility
+# strip. Reusing them keeps the CDN + CSP surface unchanged.
+PORTRAIT = "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
+_LOGO_BASE = "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos"
+_BRANDS = [
+    ("HSBC", "hsbc"),
+    ("PayPal", "paypal"),
+    ("Barclays", "barclays"),
+    ("Shazam", "shazam"),
+    ("AKQA", "akqa"),
+    ("Virgin", "virgin"),
+]
+
+
+def _brands_block() -> str:
+    """Where-I've-shipped logo strip — the same `.brands`/`.brand-logo`
+    markup the homepage uses, so the articles shell already styles it."""
+    imgs = "".join(
+        f'<img alt="{name} logo" src="{_LOGO_BASE}/{slug}.webp" '
+        'class="brand-logo" loading="lazy" decoding="async" '
+        'width="120" height="32" />'
+        for name, slug in _BRANDS
+    )
+    return f'<div class="brands">{imgs}</div>'
+
+
+def _fmt_metric(value: object, fmt: str) -> str:
+    if not isinstance(value, (int, float)):
+        return str(value)
+    if fmt == "compact":
+        if value >= 1_000_000:
+            return f"{value / 1_000_000:.1f}M"
+        if value >= 1_000:
+            return f"{value / 1_000:.1f}K"
+    return str(int(value))
+
+
+def _proof_rail() -> str:
+    """Authority proof rail, baked from metrics.json at build time (this
+    generator runs after fetch_metrics, so the numbers are fresh). Uses
+    the shell's `.proof-rail`/`.kpi-cell` styling."""
+    try:
+        stats = {
+            s["key"]: _fmt_metric(s.get("value"), s.get("format", "plain"))
+            for s in json.loads(METRICS_JSON.read_text(encoding="utf-8")).get("stats", [])
+            if s.get("key")
+        }
+    except (OSError, ValueError):
+        return ""
+    cells = [
+        ("years_payments", "Years in banking &amp; payments"),
+        ("downloads_total", "Open-source downloads"),
+        ("articles_signed", "Signed, dated articles"),
+        ("github_stars", "GitHub stars"),
+    ]
+    rendered = "".join(
+        f'<div class="kpi-cell"><span class="kpi-cell-value">{stats[key]}</span>'
+        f'<span class="kpi-cell-label">{label}</span></div>'
+        for key, label in cells
+        if key in stats
+    )
+    if not rendered:
+        return ""
+    return f'<section class="proof-rail" aria-label="Speaking credibility by the numbers">{rendered}</section>'
 
 
 def _bio_block(key: str, label: str, value: str) -> str:
@@ -85,14 +151,22 @@ def _render_body(data: dict) -> str:
     short = bio.get("short", "").strip()
 
     parts: list[str] = []
+    # Photo-led hero: portrait + credibility deck + CTA + a where-I've-shipped
+    # logo strip, so the page opens with proof instead of an empty band.
     parts.append(
-        '<section class="feat" aria-labelledby="speaking-h1"><div class="wrap">'
-        '<p class="feat-eyebrow">Speaking &amp; advisory</p>'
-        '<h1 id="speaking-h1" class="feat-headline">Speaking &amp; advisory.</h1>'
-        f"<p>{_esc(short)}</p>"
+        '<section class="ap-hero" aria-labelledby="speaking-h1"><div class="wrap">'
+        f'<img class="ap-hero-portrait" src="{PORTRAIT}" '
+        'alt="Sebastien Rousseau" width="96" height="96" '
+        'fetchpriority="high" decoding="async" />'
+        '<p class="ap-hero-eyebrow">Speaking &amp; advisory</p>'
+        '<h1 id="speaking-h1" class="feat-headline">'
+        "Keynotes on the future of banking.</h1>"
+        f'<p class="ap-hero-deck">{_esc(short)}</p>'
         '<p><a class="pill" href="/contact/">Invite me to speak</a></p>'
+        f"{_brands_block()}"
         "</div></section>"
     )
+    parts.append(_proof_rail())
 
     if topics:
         cards = "".join(
