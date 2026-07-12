@@ -761,9 +761,16 @@ def _sanitised_scrape(html_text: str) -> str | None:
 # number appears everywhere.
 
 _METRICS_JSON = POSTS.parent / "_data" / "proof" / "metrics.json"
+# The homepage proof-rail is a raw-HTML block inside `_posts/index.md`.
+# SSG's markdown/custom-block parser HTML-escapes the leading `<` of those
+# inline tags (`<span>` -> `&lt;span>`, `</span>` -> `&lt;/span>`) before
+# postbuild runs, so a `<span`-anchored pattern silently misses it and the
+# KPI values never fill (they show the stale hardcoded source numbers until
+# a later entity-decode pass restores the tags — too late). Tolerate both
+# the raw and the escaped tag delimiters so the fill lands either way.
 _KPI_SPAN_RE = re.compile(
-    r'(<span[^>]*\bclass="kpi-cell-value"[^>]*\bdata-kpi="([a-z_]+)"[^>]*>)'
-    r"([^<]*)(</span>)",
+    r'((?:&lt;|<)span[^>]*\bclass="kpi-cell-value"[^>]*\bdata-kpi="([a-z_]+)"[^>]*>)'
+    r"([^<&]*)((?:&lt;|<)/span>)",
     re.IGNORECASE,
 )
 _kpi_cache: dict[str, str] | None = None

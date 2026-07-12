@@ -283,6 +283,17 @@ def test_inject_kpi_metrics_no_op(monkeypatch):
     assert seo.inject_kpi_metrics('<span data-kpi="x">y</span>') == '<span data-kpi="x">y</span>'
 
 
+def test_inject_kpi_metrics_fills_entity_escaped_span(monkeypatch):
+    # The homepage proof-rail is raw HTML inside index.md; SSG escapes the
+    # leading `<` of the inline tags before postbuild runs. The fill must
+    # still land on the `&lt;span … &lt;/span>` form (regression: the
+    # homepage "By the numbers" stayed frozen on stale source values).
+    monkeypatch.setattr(seo, "_kpi_cache", {"downloads_total": "38.1M"})
+    html = '&lt;span class="kpi-cell-value" data-kpi="downloads_total">37.1M&lt;/span>'
+    out = seo.inject_kpi_metrics(html)
+    assert out == '&lt;span class="kpi-cell-value" data-kpi="downloads_total">38.1M&lt;/span>'
+
+
 # ---------------------------------------------------------------------------
 # align_jsonld_inlanguage
 # ---------------------------------------------------------------------------
