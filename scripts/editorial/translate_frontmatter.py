@@ -60,6 +60,7 @@ LANG_NAMES: dict[str, str] = {
     "ha": "Hausa",
     "he": "Hebrew",
     "hi": "Hindi",
+    "hu": "Hungarian",
     "id": "Indonesian",
     "it": "Italian",
     "ja": "Japanese",

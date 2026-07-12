@@ -46,8 +46,9 @@ class TestLanguagesTable:
             assert lg.rtl is True, f"{code} should carry rtl=True"
 
     def test_planned_locales_registered_inactive(self) -> None:
-        # issue #360 (28 → 35): the 7 new locales ship as active=False
-        # until their content backfill lands. fa is the only RTL one.
+        # issue #360 (28 → 35): the still-dormant locales ship as
+        # active=False until their content backfill lands. fa is RTL.
+        # hu activated once its 92-article corpus + glossary shipped.
         expected = {
             "fa": ("fa-IR", "fa_IR", True),
             "mr": ("mr-IN", "mr_IN", False),
@@ -55,7 +56,6 @@ class TestLanguagesTable:
             "te": ("te-IN", "te_IN", False),
             "ms": ("ms-MY", "ms_MY", False),
             "el": ("el-GR", "el_GR", False),
-            "hu": ("hu-HU", "hu_HU", False),
         }
         by_code = {lg.code: lg for lg in lr.LANGUAGES}
         for code, (bcp47, og_locale, rtl) in expected.items():
@@ -67,6 +67,12 @@ class TestLanguagesTable:
             assert lg.rtl is rtl
         # They must not leak into the active() set yet.
         assert not (set(expected) & {lg.code for lg in lr.active()})
+
+    def test_hu_active(self) -> None:
+        # hu was activated in the #360 content-backfill tranche.
+        hu = next((lg for lg in lr.LANGUAGES if lg.code == "hu"), None)
+        assert hu is not None and hu.active is True
+        assert hu.code in {lg.code for lg in lr.active()}
 
     def test_codes_are_unique(self) -> None:
         codes = [lg.code for lg in lr.LANGUAGES]
