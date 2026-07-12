@@ -1111,6 +1111,29 @@
       .ap-hero .ap-hero-portrait{display:block;width:96px;height:96px;margin:0 auto 28px;border-radius:50%;object-fit:cover;box-shadow:0 12px 32px -12px rgba(0,0,0,.25)}
       .ap-hero .ap-hero-eyebrow{display:inline-block;font-family:var(--type-body);font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--eyebrow,var(--accent));margin:0 0 18px}
       .ap-hero .ap-hero-deck{font-size:clamp(18px,1.8vw,21px);line-height:1.5;color:var(--ink-mute);max-width:680px;margin:0 auto 36px}
+      /* Speaking page — Apple-leadership two-column hero: name + title left,
+         portrait right. Scoped to .speaking-hero so no other page is touched. */
+      .feat.speaking-hero-band{padding-block-start:clamp(24px,4vw,48px)}
+      .speaking-hero{display:grid;grid-template-columns:minmax(0,1fr) clamp(200px,26vw,300px);gap:clamp(28px,4vw,56px);align-items:center;text-align:start;margin:clamp(20px,4vw,48px) 0 clamp(28px,5vw,56px)}
+      .speaking-hero .feat-eyebrow,.speaking-hero .feat-headline,.speaking-hero .ap-hero-deck{text-align:start;margin-inline:0}
+      .speaking-hero .ap-hero-deck{max-width:560px}
+      .speaking-hero .speaking-hero-photo{width:100%;max-width:300px;aspect-ratio:4/5;object-fit:cover;object-position:top center;border-radius:18px;box-shadow:0 22px 48px -20px rgba(0,0,0,.32);justify-self:end}
+      @media (max-width:680px){.speaking-hero{grid-template-columns:1fr;text-align:center}.speaking-hero .feat-eyebrow,.speaking-hero .feat-headline,.speaking-hero .ap-hero-deck{text-align:center;margin-inline:auto}.speaking-hero .speaking-hero-photo{max-width:220px;justify-self:center;margin:0 auto 12px;grid-row:1}}
+      .speaking-hero .speaking-cta-row{display:flex;flex-wrap:wrap;gap:14px;margin-top:8px}
+      @media (max-width:680px){.speaking-hero .speaking-cta-row{justify-content:center}}
+      .pill.ghost{background:transparent;color:var(--ink-deep);border:1px solid var(--border)}
+      /* Signature keynotes — audience chip on each talk card */
+      .talk-audience{display:inline-block;margin-block-start:14px;font-family:var(--type-body);font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-mute);border:1px solid var(--rule);border-radius:999px;padding:5px 12px}
+      /* Formats & logistics for organisers */
+      .speaking-formats{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px;margin-block:26px 14px}
+      .speaking-format{border:1px solid var(--rule);border-radius:14px;padding:22px 24px;text-align:start}
+      .speaking-format h3{margin:0 0 6px;font-family:var(--type-body);font-size:1.0625rem;font-weight:600}
+      .speaking-format p{margin:0;color:var(--ink-mute);font-size:.9375rem;line-height:1.5}
+      .speaking-regions{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-block-start:6px}
+      .speaking-regions span{font-size:.875rem;color:var(--ink-mute);border:1px solid var(--rule);border-radius:999px;padding:6px 14px}
+      /* Closing CTA band */
+      .speaking-cta{background:var(--card);border-radius:20px;padding:clamp(40px,6vw,72px) clamp(24px,4vw,48px);text-align:center;margin-block:16px 8px}
+      .speaking-cta .cta-actions{display:inline-flex;gap:16px;flex-wrap:wrap;justify-content:center;margin-block-start:10px}
 
       /* ---------- Proof rail ----------
          Reused across About, Projects, Topics. Mirrors the case-studies

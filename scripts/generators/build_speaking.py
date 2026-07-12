@@ -135,6 +135,22 @@ def _unescape_head_metas(html_text: str) -> str:
     )
 
 
+def _mark_nav_active(html_text: str) -> str:
+    """Move the primary-nav active state onto the Speaking link. The forked
+    /articles/ shell marks Articles as `aria-current="page" class="active"`;
+    swap that onto /speaking/ so the current page is correctly highlighted."""
+    out = html_text.replace(
+        '<a href="/articles/index.html" aria-current="page" class="active">Articles</a>',
+        '<a href="/articles/index.html">Articles</a>',
+        1,
+    )
+    return out.replace(
+        '<a href="/speaking/index.html">Speaking</a>',
+        '<a href="/speaking/index.html" aria-current="page" class="active">Speaking</a>',
+        1,
+    )
+
+
 def _bio_block(key: str, label: str, value: str) -> str:
     bid = f"bio-{key}"
     return (
@@ -171,37 +187,112 @@ def _topics_jsonld(topics: list[dict]) -> str:
     )
 
 
+def _format_card(fmt: str) -> str:
+    """One format card, e.g. 'Keynote (30-45 min)' -> title + detail."""
+    if "(" in fmt:
+        title, detail = fmt.split("(", 1)
+        return (
+            f'<div class="speaking-format"><h3>{_esc(title.strip())}</h3>'
+            f'<p>{_esc(detail.rstrip(")").strip())}</p></div>'
+        )
+    return f'<div class="speaking-format"><h3>{_esc(fmt.strip())}</h3></div>'
+
+
 def _render_body(data: dict) -> str:
     bio = data.get("bio", {}) or {}
     topics = data.get("topics", []) or []
-    short = bio.get("short", "").strip()
-
+    logistics = data.get("logistics", {}) or {}
     long = (bio.get("long", "") or "").strip()
+    short = (bio.get("short", "") or "").strip()
+    booking = logistics.get("booking_url") or "/contact/index.html"
+
+    # Secondary CTA: the media kit if the PDF actually exists, else jump to the
+    # keynotes (never a broken link).
+    media_kit = logistics.get("media_kit_pdf", "")
+    if media_kit and (PUBLIC / media_kit.lstrip("/")).is_file():
+        secondary = f'<a class="pill ghost" href="{_esc(media_kit)}">Download media kit</a>'
+    else:
+        secondary = '<a class="pill ghost" href="#speaking-keynotes">Explore keynotes</a>'
+
     parts: list[str] = []
-    # Apple-leadership-style hero: a large portrait, the name as the H1, and a
-    # role deck — an executive bio, not a marketing splash. Followed by the
-    # credibility logo strip and proof rail.
+
+    # 1. Hero — benefit-led, two-column (portrait right), dual CTA, then the
+    #    "where I've shipped" logo strip. Positions the value, not the name.
     parts.append(
-        '<section class="ap-hero" aria-labelledby="speaking-h1"><div class="wrap">'
-        f'<img class="portrait" src="{PORTRAIT}" '
-        'alt="Sebastien Rousseau" width="120" height="120" '
+        '<section class="feat speaking-hero-band" aria-labelledby="speaking-h1">'
+        '<div class="wrap">'
+        '<div class="speaking-hero"><div>'
+        '<p class="feat-eyebrow">Keynotes &middot; Panels &middot; Advisory</p>'
+        '<h1 id="speaking-h1" class="feat-headline">The technologies reshaping '
+        "banking, explained to the people who have to act.</h1>"
+        '<p class="ap-hero-deck">Sebastien Rousseau is a senior banking '
+        "technologist with 20+ years across HSBC, PayPal, and Barclays. He turns "
+        "payments modernisation, post-quantum cryptography, and applied AI from "
+        "policy paper into inspectable code, and into keynotes a board can act "
+        "on.</p>"
+        f'<div class="speaking-cta-row"><a class="pill" href="{_esc(booking)}">'
+        f"Invite me to speak</a>{secondary}</div>"
+        "</div>"
+        f'<img class="speaking-hero-photo" src="{PORTRAIT}" '
+        'alt="Sebastien Rousseau" width="300" height="375" '
         'fetchpriority="high" decoding="async" />'
-        '<p class="ap-hero-eyebrow">Speaking &amp; advisory</p>'
-        '<h1 id="speaking-h1" class="feat-headline">Sebastien Rousseau</h1>'
-        '<p class="ap-hero-deck">Senior banking technologist. Keynotes and '
-        "advisory on payments, post-quantum cryptography, and applied AI.</p>"
-        '<p><a class="pill" href="/contact/">Invite me to speak</a></p>'
+        "</div>"
         f"{_brands_block()}"
         "</div></section>"
     )
+
+    # 2. Authority proof rail.
     parts.append(_proof_rail())
 
-    # Flowing biography — the long bio as prose, the way Apple's leadership
-    # pages read. Split into a couple of paragraphs on sentence boundaries.
+    # 3. Signature keynotes — each with an audience chip so an organiser can
+    #    place the talk against their room.
+    if topics:
+        cards = "".join(
+            '<article class="offer-card">'
+            f"<h3>{_esc(t.get('title', ''))}</h3>"
+            f"<p>{_esc(t.get('summary', '').strip())}</p>"
+            + (
+                f'<span class="talk-audience">For: {_esc(t["audience"])}</span>'
+                if t.get("audience")
+                else ""
+            )
+            + "</article>"
+            for t in topics
+            if t.get("title")
+        )
+        parts.append(
+            '<section class="feat alt" aria-labelledby="speaking-keynotes">'
+            '<div class="wrap">'
+            '<p class="feat-eyebrow">Signature keynotes</p>'
+            '<h2 id="speaking-keynotes" class="feat-headline">'
+            "Talks built for the boardroom.</h2>"
+            f'<div class="offer-cards">{cards}</div>'
+            "</div></section>"
+        )
+
+    # 4. Formats & logistics — the practical answers an organiser needs.
+    formats = logistics.get("formats", []) or []
+    regions = logistics.get("regions", []) or []
+    if formats or regions:
+        fmt_cards = "".join(_format_card(f) for f in formats)
+        region_spans = "".join(f"<span>{_esc(r)}</span>" for r in regions)
+        regions_html = (
+            f'<div class="speaking-regions">{region_spans}</div>' if regions else ""
+        )
+        parts.append(
+            '<section class="feat" aria-labelledby="speaking-formats">'
+            '<div class="wrap">'
+            '<p class="feat-eyebrow">For organisers</p>'
+            '<h2 id="speaking-formats" class="feat-headline">How I work.</h2>'
+            f'<div class="speaking-formats">{fmt_cards}</div>'
+            f"{regions_html}"
+            "</div></section>"
+        )
+
+    # 5. Biography — flowing prose (for programme pages and introductions).
     bio_prose = long or short
     if bio_prose:
-        paras = _split_paragraphs(bio_prose)
-        body = "".join(f"<p>{_esc(p)}</p>" for p in paras)
+        body = "".join(f"<p>{_esc(p)}</p>" for p in _split_paragraphs(bio_prose))
         parts.append(
             '<section class="feat" aria-labelledby="speaking-about">'
             '<div class="wrap">'
@@ -211,32 +302,10 @@ def _render_body(data: dict) -> str:
             "</div></section>"
         )
 
-    if topics:
-        cards = "".join(
-            '<article class="offer-card">'
-            f"<h3>{_esc(t.get('title', ''))}</h3>"
-            f"<p>{_esc(t.get('summary', '').strip())}</p>"
-            "</article>"
-            for t in topics
-            if t.get("title")
-        )
-        parts.append(
-            '<section class="feat alt" aria-labelledby="speaking-topics">'
-            '<div class="wrap">'
-            '<p class="feat-eyebrow">Topics</p>'
-            '<h2 id="speaking-topics" class="feat-headline">'
-            "Talks, framed as outcomes.</h2>"
-            f'<div class="offer-cards">{cards}</div>'
-            "</div></section>"
-        )
-
+    # 6. Ready-to-use press bios (copy to clipboard).
     bio_blocks = [
         _bio_block(k, label, bio[k])
-        for k, label in (
-            ("short", "Short bio"),
-            ("medium", "Medium bio"),
-            ("long", "Long bio"),
-        )
+        for k, label in (("short", "Short"), ("medium", "Medium"), ("long", "Long"))
         if bio.get(k)
     ]
     if bio_blocks:
@@ -247,6 +316,19 @@ def _render_body(data: dict) -> str:
             + "".join(bio_blocks)
             + "</div></section>"
         )
+
+    # 7. Closing CTA band.
+    parts.append(
+        '<section class="feat"><div class="wrap"><div class="speaking-cta">'
+        '<p class="feat-eyebrow">Book a keynote</p>'
+        '<h2 class="feat-headline">Bring this to your stage.</h2>'
+        '<p class="ap-hero-deck">Keynotes, panels, and advisory for boards, '
+        "conferences, and executive teams navigating payments, post-quantum "
+        "cryptography, and applied AI. In London, across Europe, or remote.</p>"
+        f'<div class="cta-actions"><a class="pill" href="{_esc(booking)}">'
+        f"Invite me to speak</a>{secondary}</div>"
+        "</div></div></section>"
+    )
 
     parts.append(_topics_jsonld(topics))
     return "".join(parts)
@@ -267,6 +349,7 @@ def main() -> int:
     desc = (data.get("bio", {}).get("short", "") or "").strip()[:155]
     out = _swap_into_shell(shell, body, title, desc, URL)
     out = _unescape_head_metas(out)
+    out = _mark_nav_active(out)
 
     target = PUBLIC / "speaking" / "index.html"
     target.parent.mkdir(parents=True, exist_ok=True)
