@@ -56,7 +56,7 @@
 // or fetch failure it falls back to this set so the Worker keeps routing
 // even when the binding is misconfigured. Hydrated once per isolate.
 export const ACTIVE_LANGS_FALLBACK = new Set([
-  'ar', 'bn', 'cs', 'de', 'es', 'fil', 'fr', 'ha', 'he', 'hi', 'id',
+  'ar', 'bn', 'cs', 'de', 'es', 'fil', 'fr', 'ha', 'he', 'hi', 'hu', 'id',
   'it', 'ja', 'ko', 'nl', 'pl', 'pt-br', 'ro', 'ru', 'sv', 'th', 'tr',
   'uk', 'vi', 'yo', 'zh-hans', 'zh-hant',
 ]);

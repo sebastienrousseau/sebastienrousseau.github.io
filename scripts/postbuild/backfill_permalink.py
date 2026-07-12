@@ -32,9 +32,9 @@ BASE_URL = "https://sebastienrousseau.com"
 # The 27 active translation locales (dirs under _posts/). Kept in sync with
 # _lang_registry.py; a directory not in this set is treated as EN content.
 LOCALES = {
-    "ar", "bn", "cs", "de", "es", "fil", "fr", "ha", "he", "hi", "id", "it",
-    "ja", "ko", "nl", "pl", "pt-br", "ro", "ru", "sv", "th", "tr", "uk", "vi",
-    "yo", "zh-hans", "zh-hant",
+    "ar", "bn", "cs", "de", "es", "fil", "fr", "ha", "he", "hi", "hu", "id",
+    "it", "ja", "ko", "nl", "pl", "pt-br", "ro", "ru", "sv", "th", "tr", "uk",
+    "vi", "yo", "zh-hans", "zh-hant",
 }
 
 

@@ -97,7 +97,7 @@ _INLANG_RE = re.compile(r'"inLanguage":\s*"(?:en|en-GB|en-US)"')
 _HREFLANG_ARTICLE_RE = re.compile(r'href="/(\d{4}-\d{2}-\d{2}-[^/"]+)/"')
 
 LOCALES_NON_EN = (
-    "ar", "bn", "cs", "de", "es", "fil", "fr", "ha", "he", "hi",
+    "ar", "bn", "cs", "de", "es", "fil", "fr", "ha", "he", "hi", "hu",
     "id", "it", "ja", "ko", "nl", "pl", "pt-br", "ro", "ru", "sv",
     "th", "tr", "uk", "vi", "yo", "zh-hans", "zh-hant",
 )
