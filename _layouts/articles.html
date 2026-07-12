@@ -1134,6 +1134,14 @@
       /* Closing CTA band */
       .speaking-cta{background:var(--card);border-radius:20px;padding:clamp(40px,6vw,72px) clamp(24px,4vw,48px);text-align:center;margin-block:16px 8px}
       .speaking-cta .cta-actions{display:inline-flex;gap:16px;flex-wrap:wrap;justify-content:center;margin-block-start:10px}
+      /* Tighter vertical rhythm for speaking sections (site default 120px reads too airy here) */
+      .feat.spk-sec{padding-block:clamp(56px,7vw,84px)}
+      /* Centre the keynote card rows so a 3+2 layout balances (no left-orphaned row) */
+      .offer-cards.speaking-keynote-cards{display:flex;flex-wrap:wrap;justify-content:center}
+      .speaking-keynote-cards > .offer-card{flex:1 1 260px;max-width:320px}
+      /* Biography & press bodies: a centred, readable column (not full-width) */
+      .feat[aria-labelledby="speaking-about"] p{max-width:64ch;margin-inline:auto}
+      .feat[aria-labelledby="speaking-bio"] .cite-format{max-width:70ch;margin-inline:auto;text-align:center}
 
       /* ---------- Proof rail ----------
          Reused across About, Projects, Topics. Mirrors the case-studies

@@ -256,12 +256,12 @@ def _keynotes_section(topics: list) -> str:
     if not cards:
         return ""
     return (
-        '<section class="feat alt" aria-labelledby="speaking-keynotes">'
+        '<section class="feat alt spk-sec" aria-labelledby="speaking-keynotes">'
         '<div class="wrap">'
         '<p class="feat-eyebrow">Signature keynotes</p>'
-        '<h2 id="speaking-keynotes" class="feat-headline">'
+        '<h2 id="speaking-keynotes" class="feat-headline center">'
         "Talks built for the boardroom.</h2>"
-        f'<div class="offer-cards">{cards}</div>'
+        f'<div class="offer-cards speaking-keynote-cards">{cards}</div>'
         "</div></section>"
     )
 
@@ -278,10 +278,10 @@ def _formats_section(logistics: dict) -> str:
         f'<div class="speaking-regions">{region_spans}</div>' if regions else ""
     )
     return (
-        '<section class="feat" aria-labelledby="speaking-formats">'
+        '<section class="feat spk-sec" aria-labelledby="speaking-formats">'
         '<div class="wrap">'
         '<p class="feat-eyebrow">For organisers</p>'
-        '<h2 id="speaking-formats" class="feat-headline">How I work.</h2>'
+        '<h2 id="speaking-formats" class="feat-headline center">How I work.</h2>'
         f'<div class="speaking-formats">{fmt_cards}</div>'
         f"{regions_html}"
         "</div></section>"
@@ -296,10 +296,10 @@ def _biography_section(bio: dict) -> str:
         return ""
     body = "".join(f"<p>{_esc(p)}</p>" for p in _split_paragraphs(bio_prose))
     return (
-        '<section class="feat" aria-labelledby="speaking-about">'
+        '<section class="feat spk-sec" aria-labelledby="speaking-about">'
         '<div class="wrap">'
         '<p class="feat-eyebrow">Biography</p>'
-        '<h2 id="speaking-about" class="feat-headline">About Sebastien.</h2>'
+        '<h2 id="speaking-about" class="feat-headline center">About Sebastien.</h2>'
         f"{body}"
         "</div></section>"
     )
@@ -315,9 +315,9 @@ def _press_bios_section(bio: dict) -> str:
     if not bio_blocks:
         return ""
     return (
-        '<section class="feat" aria-labelledby="speaking-bio"><div class="wrap">'
+        '<section class="feat spk-sec" aria-labelledby="speaking-bio"><div class="wrap">'
         '<p class="feat-eyebrow">Press &amp; media</p>'
-        '<h2 id="speaking-bio" class="feat-headline">Ready-to-use bio.</h2>'
+        '<h2 id="speaking-bio" class="feat-headline center">Ready-to-use bio.</h2>'
         + "".join(bio_blocks)
         + "</div></section>"
     )
@@ -326,9 +326,9 @@ def _press_bios_section(bio: dict) -> str:
 def _closing_cta(booking: str, secondary: str) -> str:
     """Closing "book me" CTA band."""
     return (
-        '<section class="feat"><div class="wrap"><div class="speaking-cta">'
+        '<section class="feat spk-sec"><div class="wrap"><div class="speaking-cta">'
         '<p class="feat-eyebrow">Book a keynote</p>'
-        '<h2 class="feat-headline">Bring this to your stage.</h2>'
+        '<h2 class="feat-headline center">Bring this to your stage.</h2>'
         '<p class="ap-hero-deck">Keynotes, panels, and advisory for boards, '
         "conferences, and executive teams navigating payments, post-quantum "
         "cryptography, and applied AI. In London, across Europe, or remote.</p>"
