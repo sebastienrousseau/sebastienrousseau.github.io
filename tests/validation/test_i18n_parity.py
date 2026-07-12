@@ -65,6 +65,7 @@ REQUIRED_STATIC_SLUGS = (
     "offline",
     "thanks",
     "articles",
+    "speaking",
 )
 
 

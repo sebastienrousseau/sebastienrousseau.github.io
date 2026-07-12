@@ -483,6 +483,67 @@ def _parse_source() -> tuple[dict, str]:
     return data, bio_html
 
 
+def _load_overlay(lang: str, data: dict, bio_html: str) -> tuple[dict, str]:
+    """Per-locale content overlay. If ``_data/proof/i18n/<lang>/speaking.md``
+    exists, parse it and use its (frontmatter, body); otherwise fall back to
+    English. This is the progressive-backfill hook: locales without an overlay
+    ship the English body under a localised chrome (nav / footer / lang tag)."""
+    overlay = ROOT / "_data" / "proof" / "i18n" / lang / "speaking.md"
+    if not overlay.is_file():
+        return data, bio_html
+    raw = overlay.read_text(encoding="utf-8")
+    m = re.match(r"^---[ \t]*\n(.*?)\n---[ \t]*\n(.*)$", raw, re.DOTALL)
+    if not m:
+        return data, bio_html
+    loc = {**data, **(yaml.safe_load(m.group(1)) or {})}
+    loc_bio = render_markdown(m.group(2).strip()) or bio_html
+    return loc, loc_bio
+
+
+def _emit_one_locale(active_shell: str, data: dict, bio_html: str, lang: str, segment: str) -> None:
+    """Render and write the speaking page for one locale. ``active_shell`` is the
+    EN articles shell with the Speaking nav item already marked active (and, for
+    non-EN, already run through translate_chrome)."""
+    body = _render_body(data, bio_html)
+    title = data.get("meta_title") or "Speaking & advisory: Sebastien Rousseau"
+    desc = (data.get("meta_description") or "").strip()[:200]
+    url = URL if lang == "en" else f"{BASE_URL}/{lang}/{segment}/"
+    out = _swap_into_shell(active_shell, body, title, desc, url)
+    out = _unescape_head_metas(out)
+    target = (PUBLIC / "speaking" if lang == "en" else PUBLIC / lang / segment) / "index.html"
+    target.parent.mkdir(parents=True, exist_ok=True)
+    target.write_text(out, encoding="utf-8")
+
+
+def _emit_locale_forks(active_shell: str, data: dict, bio_html: str) -> int:
+    """For each active non-EN locale, fork the nav-active EN shell, localise its
+    chrome (nav / footer / search aria / lang switch / JSON-LD inLanguage), and
+    write the speaking page under ``/<lang>/<segment>/``. Body content is the
+    per-locale overlay when present, else English (progressive backfill)."""
+    sys.path.insert(0, str(ROOT / "scripts" / "lib"))
+    try:
+        import _lang_registry  # type: ignore[import-not-found]
+        from build_translations import _chrome as _ch  # type: ignore[import-not-found]
+        from build_translations import _state as _st  # type: ignore[import-not-found]
+    except ImportError as exc:  # pragma: no cover
+        print(f"build_speaking: skip locale forks — {exc}", file=sys.stderr)
+        return 0
+
+    total = 0
+    for lang in _lang_registry.active():
+        if lang.code == "en":
+            continue
+        segment = _lang_registry.load_slugs(lang.code).get("static", {}).get("speaking", "speaking")
+        _st.bind_lang(lang.code)
+        loc_shell = _ch._set_html_lang(active_shell)
+        loc_shell = _ch.translate_chrome(loc_shell)
+        loc_shell = _ch._localize_inlanguage_globally(loc_shell, lang.code)
+        loc_data, loc_bio = _load_overlay(lang.code, data, bio_html)
+        _emit_one_locale(loc_shell, loc_data, loc_bio, lang.code, segment)
+        total += 1
+    return total
+
+
 def main() -> int:
     if not SHELL_SRC.is_file():
         print(f"build_speaking: shell missing at {SHELL_SRC}", file=sys.stderr)
@@ -492,18 +553,12 @@ def main() -> int:
         return 1
 
     data, bio_html = _parse_source()
-    shell = SHELL_SRC.read_text(encoding="utf-8")
-    body = _render_body(data, bio_html)
-    title = data.get("meta_title") or "Speaking & advisory: Sebastien Rousseau"
-    desc = (data.get("meta_description") or "").strip()[:200]
-    out = _swap_into_shell(shell, body, title, desc, URL)
-    out = _unescape_head_metas(out)
-    out = _mark_nav_active(out)
-
-    target = PUBLIC / "speaking" / "index.html"
-    target.parent.mkdir(parents=True, exist_ok=True)
-    target.write_text(out, encoding="utf-8")
-    print(f"build_speaking: wrote {target.relative_to(ROOT)}")
+    # Mark the Speaking nav item active once on the EN shell; translate_chrome
+    # then localises the href/label per locale while preserving the active state.
+    active_shell = _mark_nav_active(SHELL_SRC.read_text(encoding="utf-8"))
+    _emit_one_locale(active_shell, data, bio_html, "en", "speaking")
+    locales = _emit_locale_forks(active_shell, data, bio_html)
+    print(f"build_speaking: wrote public/speaking/index.html + {locales} locale forks")
     return 0
 
 

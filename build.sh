@@ -206,6 +206,11 @@ python3 scripts/seo_and_audit/fetch_metrics.py
 # Outcome-led case studies — reads `_data/proof/case-studies/*.yml` and
 # forks the FT-tier `/articles/index.html` shell as template skeleton.
 python3 scripts/generators/build_case_studies.py
+# Speaking page — reads `_data/proof/speaking.md` (markdown-driven) and forks
+# the `/articles/index.html` shell + translate_chrome for every active locale,
+# like build_case_studies. Runs BEFORE build_translations so its locale forks
+# land in the same pass and enter postbuild's SRI / CSP / sitemap passes.
+python3 scripts/generators/build_speaking.py
 python3 scripts/generators/build_topics.py
 # Per-tag landing pages — reads the ssg-emitted /tags/index.html as
 # template skeleton + the canonical taxonomy, and writes
@@ -241,12 +246,11 @@ python3 scripts/generators/build_lang_feeds.py
 python3 scripts/generators/build_agent_api.py
 python3 scripts/generators/build_lead_magnets.py
 python3 scripts/generators/build_news_sitemap.py
-# Authority hub pages — /speaking/ (speaking kit) and /trust/ (provenance,
-# licensing, governance, recognition). Both reuse the /articles/ shell and,
-# like build_changelog, run AFTER build_translations so they land only on the
-# English tree, and BEFORE postbuild so the sitemap-augment pass adds them and
-# their inline JSON-LD is CSP-hashed.
-python3 scripts/generators/build_speaking.py
+# Authority hub page — /trust/ (provenance, licensing, governance, recognition).
+# Reuses the /articles/ shell and, like build_changelog, runs AFTER
+# build_translations so it lands only on the English tree, and BEFORE postbuild
+# so the sitemap-augment pass adds it and its inline JSON-LD is CSP-hashed.
+# (build_speaking moved earlier: it now forks all locales like build_case_studies.)
 python3 scripts/generators/build_trust.py
 # Changelog + "what's new" strip + build/deploy/uptime status (Phase 5).
 # Runs AFTER build_translations so the homepage strip only lands on the
