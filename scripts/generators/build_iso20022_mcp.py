@@ -357,18 +357,13 @@ def _nav(shell: str) -> str:
     )
 
 
-def _fix_metas(html: str, orig_title: str, orig_desc: str) -> str:
-    """Purge the shell's article-specific metadata that _swap_into_shell misses.
+def _fix_metas(html: str) -> str:
+    """Swap the article-shell metas _swap_into_shell misses, by exact tag only.
 
-    Swaps keywords, the Apple/Twitter/application-name tags, and then replaces
-    any lingering copies of the shell's original title/description (Twitter
-    boilerplate, JSON-LD) with the MCP values.
+    Targeted regex per meta tag -- never a global string replace, which would
+    also corrupt nav links / breadcrumbs / aria-labels that share the text.
     """
     title, desc = _esc(C["meta_title"]), _esc(C["meta_description"])
-    # The apple/twitter app title (a distinct string from <title>) also leaks
-    # into the JSON-LD; capture it before swapping so the sweep below catches it.
-    m = re.search(r'<meta name="apple-mobile-web-app-title" content="([^"]*)"', html)
-    app_title = m.group(1) if m else ""
     # The shell can carry more than one name="description" (a page one and an
     # articles-listing one); replace every copy with the MCP description.
     html = re.sub(
@@ -400,13 +395,6 @@ def _fix_metas(html: str, orig_title: str, orig_desc: str) -> str:
     ]
     for pat, rep in swaps:
         html = re.sub(pat, rep, html, count=1)
-    # Sweep any remaining copies of the shell's own title/description/app-title
-    # (JSON-LD headline/name, breadcrumb labels) with the MCP values.
-    for stale in (orig_title, app_title):
-        if stale:
-            html = html.replace(_esc(stale), title).replace(stale, title)
-    if orig_desc:
-        html = html.replace(_esc(orig_desc), desc).replace(orig_desc, desc)
     return html
 
 
@@ -414,18 +402,11 @@ def main() -> int:
     if not SHELL_SRC.is_file():
         print(f"build_iso20022_mcp: shell missing at {SHELL_SRC}", file=sys.stderr)
         return 1
-    # Unescape first so every meta is a real tag (no-op on CI); then capture
-    # the shell's own title + description to purge every stale copy the
-    # per-tag swaps miss (twitter:*, JSON-LD, application-name, ...).
+    # Unescape first so every meta is a real tag (no-op on CI).
     shell = _unescape_head_metas(_nav(SHELL_SRC.read_text(encoding="utf-8")))
-    m = re.search(r"<title>([^<]*)</title>", shell)
-    orig_title = m.group(1) if m else ""
-    m = re.search(r'<meta name="description" content="([^"]*)"', shell)
-    orig_desc = m.group(1) if m else ""
-
     body = _render_body(C)
     out = _swap_into_shell(shell, body, C["meta_title"], C["meta_description"], URL)
-    out = _fix_metas(out, orig_title, orig_desc)
+    out = _fix_metas(out)
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(out, encoding="utf-8")
     print(f"build_iso20022_mcp: wrote {OUT.relative_to(ROOT)}")
