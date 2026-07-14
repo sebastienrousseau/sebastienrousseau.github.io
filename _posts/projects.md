@@ -160,6 +160,17 @@ site_software: "Static Site Generator, Rust"
 <div class="newsroom-grid cat-grid">
 
 <article class="newsroom-card">
+<a class="newsroom-card-media logo" href="/iso20022-mcp/index.html" title="ISO 20022 MCP Suite">
+<img alt="Logo for the ISO 20022 MCP Suite" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<h3><a href="/iso20022-mcp/index.html" title="ISO 20022 MCP Suite">ISO 20022 MCP Suite</a></h3>
+<p class="newsroom-excerpt">Eight vendor-neutral MCP servers that let AI agents generate, validate, reconcile and settle ISO 20022 payments from natural language — the open bank-message layer, installed in one line. Live on PyPI and the official MCP registry.</p>
+<p class="newsroom-more"><a href="/iso20022-mcp/index.html" title="ISO 20022 MCP Suite">Explore the suite <span aria-hidden="true">›</span></a></p>
+</div>
+</article>
+
+<article class="newsroom-card">
 <a class="newsroom-card-media logo" href="https://pain001.com" title="pain001">
 <img alt="Banner for the pain001 open-source payments library" src="https://cloudcdn.pro/clients/pain001/v1/logos/pain001.svg" loading="lazy" decoding="async" width="600" height="600" />
 </a>
