@@ -118,8 +118,11 @@ def _icon(section_id: str, i: int) -> str:
     if i >= len(keys):
         return ""
     svg = _ICON_SVG[keys[i]]
+    # Presentation attributes on the <svg> itself (not only CSS) so the icons
+    # stay small line-drawings even if the stylesheet is cached/stale.
     return (
         '<span class="mcp-icon" aria-hidden="true"><svg viewBox="0 0 24 24" '
+        'width="34" height="34" fill="none" stroke="currentColor" '
         f'stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">{svg}'
         "</svg></span>"
     )
