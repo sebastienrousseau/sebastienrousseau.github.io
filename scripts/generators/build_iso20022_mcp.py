@@ -38,9 +38,36 @@ KEYWORDS = (
 )
 
 
+CDN = "https://cloudcdn.pro/stocks/images"
+
+
 def _mono(s: str) -> str:
     """Wrap a literal command/code snippet in the site's mono style."""
     return f'<span class="spk-mono">{_esc(s)}</span>'
+
+
+def _img(name: str, alt: str, style: str, sizes: str, eager: bool = False) -> str:
+    """A responsive CDN image (webp srcset), styled inline to avoid CSS risk."""
+    prio = 'fetchpriority="high"' if eager else 'loading="lazy"'
+    return (
+        f'<img src="{CDN}/{name}-1920.webp" '
+        f'srcset="{CDN}/{name}-640.webp 640w, {CDN}/{name}-1200.webp 1200w, '
+        f'{CDN}/{name}-1920.webp 1920w" sizes="{sizes}" '
+        f'alt="{_esc(alt)}" {prio} decoding="async" style="{style}">'
+    )
+
+
+def _imgband(name: str, alt: str) -> str:
+    """A full-bleed-within-wrap image band that breaks up the text sections."""
+    style = (
+        "width:100%;border-radius:16px;aspect-ratio:16/6;object-fit:cover;"
+        "display:block"
+    )
+    return (
+        '<section><div class="spk-wrap">'
+        + _img(name, alt, style, "(max-width:1120px) 100vw, 1120px")
+        + "</div></section>"
+    )
 
 
 # --- Content (single source of copy) ----------------------------------------
@@ -250,7 +277,17 @@ def _hero(d: dict) -> str:
         '<p class="spk-microproof"><strong>8</strong> servers, live on PyPI '
         "&middot; <strong>100%</strong> branch-tested &middot; "
         "<strong>vendor-neutral</strong>, Apache-2.0</p>"
-        "</div></div></header>"
+        "</div>"
+        '<div style="border-radius:14px;overflow:hidden;aspect-ratio:4/5;'
+        'background:var(--bg-alt)">'
+        + _img(
+            "corporate-finance",
+            "Abstract representation of financial data flowing through payment rails.",
+            "width:100%;height:100%;object-fit:cover;display:block",
+            "(max-width:900px) 90vw, 420px",
+            eager=True,
+        )
+        + "</div></div></header>"
     )
 
 
@@ -329,8 +366,16 @@ def _render_body(d: dict) -> str:
     sections = [
         _hero(d),
         _cards(d["benefits"], "mcp-benefits", bullets=False),
+        _imgband(
+            "circuit_board_cityscape",
+            "A circuit board rendered as a city, evoking payment rails.",
+        ),
         _cards(d["what"], "mcp-what", band=True, bullets=False),
         _cards(d["arc"], "mcp-arc", bullets=True),
+        _imgband(
+            "digital-nodes",
+            "A network of connected nodes, evoking agents calling MCP tools.",
+        ),
         _start(),
         _cards(d["safety"], "mcp-safety", band=True, bullets=False),
     ]
