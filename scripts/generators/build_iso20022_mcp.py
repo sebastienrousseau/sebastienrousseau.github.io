@@ -4,19 +4,20 @@
 #
 # Mirrors build_speaking.py: clone the built ``public/articles/index.html``
 # shell (typography, CSP, SRI, a11y chrome, primary nav) and swap in a body of
-# ``spk-``-prefixed editorial sections. This keeps the ISO 20022 MCP hub at the
-# same Apple-caliber presentation as /speaking, with a friendly, Google-style
-# "What is MCP?" explainer for newcomers.
+# ``spk-``-prefixed editorial sections. Business-benefit led, in the spirit of
+# business.apple.com: what you can do, a friendly "What is MCP?" explainer, the
+# suite, and a concrete "Get started in three steps".
 #
-# All copy lives in this file's CONTENT dict (no separate data file yet); the
-# spk- CSS is already AAA-contrast-compliant. English-only for now; locale
-# forks can be added later exactly as build_speaking does.
+# All copy lives in this file's CONTENT dict; the spk- CSS is already
+# AAA-contrast-compliant. English-only for now; locale forks can be added later
+# exactly as build_speaking does.
 #
 # Input:  public/articles/index.html   (shell template, built by ssg first)
 # Output: public/iso20022-mcp/index.html
 # =============================================================================
 from __future__ import annotations
 
+import re
 import sys
 from pathlib import Path
 
@@ -24,53 +25,103 @@ ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / "scripts" / "generators"))
 
 from build_case_studies import _swap_into_shell
-from build_speaking import _esc, _rich
+from build_speaking import _esc, _rich, _unescape_head_metas
 
 PUBLIC = ROOT / "public"
 SHELL_SRC = PUBLIC / "articles" / "index.html"
 OUT = PUBLIC / "iso20022-mcp" / "index.html"
 URL = "https://sebastienrousseau.com/iso20022-mcp"
 GH = "https://github.com/sebastienrousseau/iso20022-mcp"
+KEYWORDS = (
+    "ISO 20022 MCP, Model Context Protocol, AI agent payments, pain.001, "
+    "pacs.008, camt.053, reconciliation, AP2, x402, agentic payments, fintech"
+)
+
+
+def _mono(s: str) -> str:
+    """Wrap a literal command/code snippet in the site's mono style."""
+    return f'<span class="spk-mono">{_esc(s)}</span>'
+
 
 # --- Content (single source of copy) ----------------------------------------
 C: dict = {
-    "meta_title": "ISO 20022 MCP Suite: payments for AI agents",
+    "meta_title": "ISO 20022 MCP Suite: let AI agents make bank payments",
     "meta_description": (
         "The open ISO 20022 layer for AI agents. Eight vendor-neutral MCP "
-        "servers to generate, validate, reconcile and settle ISO 20022 "
-        "payments from natural language. Apache-2.0, on PyPI and the MCP "
-        "registry."
+        "servers to generate, validate, reconcile and settle bank payments "
+        "from natural language. Apache-2.0, on PyPI and the MCP registry."
     ),
     "hero": {
         "eyebrow": "OPEN SOURCE · APACHE-2.0 · ON PYPI + THE MCP REGISTRY",
-        "headline": "The open ISO 20022 layer for AI agents.",
+        "headline": "Let your AI agent make real bank payments.",
         "lede": (
-            "Eight vendor-neutral MCP servers that let an AI agent generate, "
-            "validate, reconcile and settle ISO 20022 payments from natural "
-            "language. Runs anywhere, owned by no bank, installed in one line."
+            "Eight open MCP servers that turn plain language into validated ISO "
+            "20022 bank messages: initiate, settle, reconcile and resolve. "
+            "Vendor-neutral, runs anywhere, installed in one line.",
         ),
-        "microproof": [
-            "8 servers, live on PyPI",
-            "100% branch-test coverage",
-            "Vendor-neutral, Apache-2.0",
+    },
+    # What you can do — benefit-led, business.apple.com "Run / Grow" style.
+    "benefits": {
+        "eyebrow": "WHAT YOU CAN DO",
+        "headline": "Payment operations, from a sentence.",
+        "lede": (
+            "Give an agent the jobs a treasury team does by hand. Every result "
+            "is schema-valid before it is returned."
+        ),
+        "cards": [
+            {
+                "eyebrow": "INITIATE",
+                "title": "Pay from plain language.",
+                "body": (
+                    "“Pay this supplier €4,200” becomes a "
+                    "validated pain.001 or pacs.008, IBAN- and XSD-checked, "
+                    "ready for the rail."
+                ),
+            },
+            {
+                "eyebrow": "RECONCILE",
+                "title": "Match a statement in seconds.",
+                "body": (
+                    "Reconcile a camt.053 statement against what you expected, "
+                    "with an explainable reason for every match, partial and "
+                    "split payment."
+                ),
+            },
+            {
+                "eyebrow": "MIGRATE",
+                "title": "Get off SWIFT MT in time.",
+                "body": (
+                    "Convert MT103/MT101/MT94x to ISO 20022 and fix structured "
+                    "addresses before the 2026–2028 deadlines, one message "
+                    "at a time."
+                ),
+            },
+            {
+                "eyebrow": "BRIDGE",
+                "title": "Turn a mandate into a wire.",
+                "body": (
+                    "Take a signed AP2 or x402 agent mandate and produce a "
+                    "wire-valid pain.001, with spending-cap and expiry "
+                    "guardrails."
+                ),
+            },
         ],
     },
     "what": {
-        "eyebrow": "START HERE",
+        "eyebrow": "NEW TO MCP?",
         "headline": "What is the Model Context Protocol?",
         "lede": (
             "MCP is an open standard that lets AI assistants use real tools "
-            "safely. Think of it as a universal port between an assistant and "
-            "the systems it needs to act on."
+            "safely, a universal port between an assistant and your systems."
         ),
         "cards": [
             {
                 "eyebrow": "THE PROBLEM",
-                "title": "Agents can talk, but not act.",
+                "title": "Agents talk, but can't act.",
                 "body": (
-                    "A language model can describe a SEPA payment, but it can't "
-                    "produce the exact, schema-valid bank message that actually "
-                    "moves it. Every integration used to be bespoke glue code."
+                    "A model can describe a payment, but not produce the exact "
+                    "bank message that moves it. Every integration was bespoke "
+                    "glue code."
                 ),
             },
             {
@@ -78,39 +129,36 @@ C: dict = {
                 "title": "One protocol, any tool.",
                 "body": (
                     "MCP gives assistants a common way to discover and call "
-                    "tools, from any client (Claude, Cursor, your own agent). "
-                    "Write a capability once; every MCP-aware assistant can use "
-                    "it, with the client deciding what to allow."
+                    "tools, from Claude, Cursor or your own agent. Build a "
+                    "capability once; every client can use it."
                 ),
             },
             {
                 "eyebrow": "THIS SUITE",
                 "title": "Payments as MCP tools.",
                 "body": (
-                    "These servers expose ISO 20022 as MCP tools: ask in plain "
-                    "terms, get back XSD-validated messages. The bank-message "
-                    "layer, made callable by an agent, without a bespoke "
-                    "translator between your systems and the rails."
+                    "These servers expose ISO 20022 as MCP tools. Ask in plain "
+                    "terms, get back XSD-validated messages. No translator "
+                    "between your systems and the rails."
                 ),
             },
         ],
     },
     "arc": {
-        "eyebrow": "ONE SUITE, THE WHOLE LIFECYCLE",
-        "headline": "Discover, settle, reconcile, resolve.",
+        "eyebrow": "THE SUITE",
+        "headline": "Eight servers, one payment lifecycle.",
         "lede": (
             "Install the gateway and let it route, or install just the server "
-            "for the job in front of you. Each is `pip install`-able and on the "
-            "official MCP registry."
+            "for the job. Each is one `pip install`, on the MCP registry."
         ),
         "cards": [
             {
                 "eyebrow": "DISCOVER + GENERATE",
                 "title": "The gateway.",
                 "body": (
-                    "One agent-friendly surface across pain, pacs, camt and "
-                    "acmt. Search for a message, generate XSD-valid XML, parse "
-                    "an inbound one, all through seven meta-tools."
+                    "One surface across pain, pacs, camt and acmt: search, "
+                    "generate XSD-valid XML, validate and parse, through seven "
+                    "meta-tools."
                 ),
                 "bullets": ["iso20022-mcp", "pain001-mcp", "pacs008-mcp"],
                 "cta_label": "Read the docs",
@@ -120,22 +168,20 @@ C: dict = {
                 "eyebrow": "RECONCILE + RESOLVE",
                 "title": "Close the loop.",
                 "body": (
-                    "Match a camt.053 statement against expected pain.001 "
-                    "payments, explainably. When a payment goes wrong, cancel "
-                    "and resolve it with camt.056 and camt.029, XSD-valid."
+                    "Match statements to expected payments, explainably. When "
+                    "one goes wrong, cancel and resolve it with camt.056 and "
+                    "camt.029."
                 ),
                 "bullets": ["reconcile-mcp", "camt053-mcp", "camt-exceptions"],
                 "cta_label": "See the recipes",
                 "cta_href": "/iso20022-mcp-recipes/index.html",
             },
             {
-                "eyebrow": "BRIDGE AGENT PAYMENTS",
-                "title": "Mandate to bank rail.",
+                "eyebrow": "BRIDGE + ACCOUNTS",
+                "title": "The frontier.",
                 "body": (
-                    "Turn a signed Google AP2 or Coinbase x402 agent mandate "
-                    "into a wire-valid pain.001, with spending-cap and expiry "
-                    "guardrails. It transforms and validates; it never moves "
-                    "money."
+                    "Bridge AP2 / x402 agent mandates to a wire-valid message, "
+                    "guardrailed, and open or verify accounts with acmt.001."
                 ),
                 "bullets": ["ap2-iso20022", "acmt001-mcp", "bankstatementparser-mcp"],
                 "cta_label": "Tool reference",
@@ -151,8 +197,8 @@ C: dict = {
                 "eyebrow": "VALIDATED",
                 "title": "Checked before it returns.",
                 "body": (
-                    "Every generator validates its output against the official "
-                    "bundled XSD before it hands it back. Malformed messages "
+                    "Every generator validates output against the official "
+                    "bundled XSD before handing it back. Malformed messages "
                     "never leave the tool."
                 ),
             },
@@ -160,9 +206,9 @@ C: dict = {
                 "eyebrow": "GUARDED",
                 "title": "Never moves money.",
                 "body": (
-                    "The AP2 bridge only transforms and validates; producing a "
-                    "message is deliberately separate from sending it, so the "
-                    "money-movement step stays a human-guarded action."
+                    "The bridge only transforms and validates. Producing a "
+                    "message stays separate from sending it, so payment is a "
+                    "human-guarded step."
                 ),
             },
             {
@@ -170,61 +216,10 @@ C: dict = {
                 "title": "Owned by no bank.",
                 "body": (
                     "Apache-2.0, 100% branch-tested, on your own "
-                    "infrastructure, tied to no balance sheet. The message "
-                    "engine everyone else has to build."
+                    "infrastructure, tied to no balance sheet."
                 ),
             },
         ],
-    },
-    "faq": {
-        "eyebrow": "QUICKSTART",
-        "headline": "Start in under a minute.",
-        "items": [
-            {
-                "q": "How do I try it right now?",
-                "a": (
-                    "Run the gateway with no install and no account: "
-                    '`uvx --from "iso20022-mcp[all]" iso20022-mcp`. Ask it to '
-                    'search "cancel a payment" and it points you at camt.056; '
-                    "ask it to generate and you get XSD-valid XML back."
-                ),
-            },
-            {
-                "q": "Which server do I need?",
-                "a": (
-                    "Start with the gateway and let it route, or install just "
-                    "one: pain001-mcp to initiate, pacs008-mcp to settle, "
-                    "camt053-mcp to read statements, reconcile-mcp to "
-                    "reconcile, camt-exceptions to cancel or resolve, "
-                    "ap2-iso20022 to bridge an agent mandate."
-                ),
-            },
-            {
-                "q": "Is it safe to give an agent?",
-                "a": (
-                    "Yes, by design. Generators validate against the official "
-                    "XSD before returning; the AP2 bridge never moves money; "
-                    "reconciliation is read-only. Producing a message is "
-                    "deliberately separate from sending it."
-                ),
-            },
-            {
-                "q": "Does it help with the ISO 20022 migration?",
-                "a": (
-                    "Directly. MT retires between 2025 and 2028 and structured "
-                    "addresses become mandatory in November 2026. The suite "
-                    "ships the MT to MX converters and the structured-address "
-                    "toolkit, so you migrate one message at a time."
-                ),
-            },
-        ],
-    },
-    "final": {
-        "headline": "The bank rail for AI agents is open. Build on it.",
-        "lede": (
-            "Eight servers, the whole ISO 20022 payment lifecycle, "
-            "vendor-neutral and installable in one line."
-        ),
     },
 }
 
@@ -241,113 +236,103 @@ def _head(eyebrow: str, headline: str, lede: str = "") -> str:
 
 def _hero(d: dict) -> str:
     h = d["hero"]
-    micro = " · ".join(
-        (
-            f"<strong>{_esc(m.split(' ', 1)[0])}</strong> {_esc(m.split(' ', 1)[1])}"
-            if " " in m
-            else _esc(m)
-        )
-        for m in h["microproof"]
-    )
+    lede = h["lede"][0] if isinstance(h["lede"], (list, tuple)) else h["lede"]
     return (
         '<header class="spk-hero" id="spk-top"><div class="spk-hero-grid"><div>'
         f'<span class="spk-eyebrow">{_esc(h["eyebrow"])}</span>'
         f'<h1>{_esc(h["headline"])}</h1>'
-        f'<p class="spk-lede">{_esc(h["lede"])}</p>'
+        f'<p class="spk-lede">{_rich(lede)}</p>'
         '<div class="spk-cta-row">'
-        f'<a href="{GH}" class="spk-btn spk-btn-primary">Get started '
+        '<a href="#mcp-start" class="spk-btn spk-btn-primary">Get started '
         '<span class="spk-arw">&#8594;</span></a>'
-        '<a href="#mcp-docs" class="spk-btn spk-btn-ghost">Read the docs</a>'
-        "</div>"
-        f'<p class="spk-microproof">{micro}</p>'
+        '<a href="#mcp-benefits" class="spk-btn spk-btn-ghost">See what it '
+        "does</a></div>"
+        '<p class="spk-microproof"><strong>8</strong> servers, live on PyPI '
+        "&middot; <strong>100%</strong> branch-tested &middot; "
+        "<strong>vendor-neutral</strong>, Apache-2.0</p>"
         "</div></div></header>"
     )
 
 
-def _cards(section: dict, section_id: str, with_bullets: bool) -> str:
-    cards = []
+def _cards(
+    section: dict, section_id: str, band: bool = False, bullets: bool = False
+) -> str:
+    items = []
     for i, it in enumerate(section["cards"]):
         primary = "spk-btn-primary" if i == 0 else "spk-btn-ghost"
-        bullets = cta = ""
-        if with_bullets:
+        extra = ""
+        if bullets:
             lis = "".join(f"<li>{_esc(b)}</li>" for b in it.get("bullets", []))
-            bullets = f"<ul>{lis}</ul>"
             cta = (
                 f'<a href="{_esc(it["cta_href"])}" class="spk-btn {primary}">'
                 f'{_esc(it["cta_label"])}</a>'
             )
-        cards.append(
+            extra = f"<ul>{lis}</ul>{cta}"
+        items.append(
             '<div class="spk-path">'
             f'<span class="spk-eyebrow">{_esc(it["eyebrow"])}</span>'
-            f'<h3>{_esc(it["title"])}</h3>'
-            f'<p>{_rich(it["body"])}</p>{bullets}{cta}</div>'
+            f'<h3>{_esc(it["title"])}</h3><p>{_rich(it["body"])}</p>{extra}</div>'
         )
+    cls = "spk-band" if band else ""
     return (
-        f'<section id="{section_id}"><div class="spk-wrap">'
+        f'<section class="{cls}" id="{section_id}"><div class="spk-wrap">'
         + _head(section["eyebrow"], section["headline"], section.get("lede", ""))
-        + f'<div class="spk-paths">{"".join(cards)}</div></div></section>'
+        + f'<div class="spk-paths">{"".join(items)}</div></div></section>'
     )
 
 
-def _safety(d: dict) -> str:
-    s = d["safety"]
+def _start() -> str:
+    steps = [
+        (
+            "STEP 1",
+            "Run it, no install.",
+            "Start the gateway with one command, no account, no key: "
+            + _mono('uvx --from "iso20022-mcp[all]" iso20022-mcp'),
+        ),
+        (
+            "STEP 2",
+            "Ask in plain terms.",
+            "Try " + _mono('search "cancel a payment"') + " and it points you "
+            "at the right message, then "
+            + _mono("generate")
+            + " returns XSD-valid XML.",
+        ),
+        (
+            "STEP 3",
+            "Connect your agent.",
+            "Add " + _mono("iso20022-mcp") + " as a command in your MCP client "
+            "(Claude Desktop, Cursor) and your assistant can pay, reconcile "
+            "and migrate.",
+        ),
+    ]
     cards = "".join(
         '<div class="spk-path">'
-        f'<span class="spk-eyebrow">{_esc(it["eyebrow"])}</span>'
-        f'<h3>{_esc(it["title"])}</h3><p>{_rich(it["body"])}</p></div>'
-        for it in s["cards"]
+        f'<span class="spk-eyebrow">{_esc(eyebrow)}</span>'
+        f"<h3>{_esc(title)}</h3><p>{body}</p></div>"
+        for eyebrow, title, body in steps
     )
     return (
-        '<section class="spk-band" id="mcp-safety"><div class="spk-wrap">'
-        + _head(s["eyebrow"], s["headline"])
-        + f'<div class="spk-paths">{cards}</div></div></section>'
-    )
-
-
-def _faq(d: dict) -> str:
-    f = d["faq"]
-    rows = "".join(
-        "<details><summary>"
-        f'{_esc(it["q"])} <span class="spk-ic">+</span></summary>'
-        f'<div class="spk-ans">{_rich(it["a"])}</div></details>'
-        for it in f["items"]
-    )
-    return (
-        '<section class="spk-band" id="mcp-docs"><div class="spk-wrap">'
-        + _head(f["eyebrow"], f["headline"])
-        + f'<div class="spk-faq">{rows}</div>'
+        '<section class="spk-band" id="mcp-start"><div class="spk-wrap">'
+        + _head("GET STARTED", "Live in under a minute.")
+        + f'<div class="spk-paths">{cards}</div>'
         '<div class="spk-cta-row" style="margin-block-start:1.8rem">'
-        '<a href="/iso20022-mcp-docs/index.html" class="spk-btn spk-btn-ghost">'
-        "Full quickstart</a>"
-        '<a href="/iso20022-mcp-reference/index.html" class="spk-btn spk-btn-ghost">'
-        "Tool reference</a>"
-        '<a href="/iso20022-mcp-recipes/index.html" class="spk-btn spk-btn-ghost">'
-        "Recipes</a></div></div></section>"
-    )
-
-
-def _final(d: dict) -> str:
-    c = d["final"]
-    return (
-        '<section class="spk-band spk-finalcta"><div class="spk-wrap">'
-        f'<h2>{_esc(c["headline"])}</h2>'
-        f'<p class="spk-lede">{_esc(c["lede"])}</p>'
-        '<div class="spk-cta-row">'
         f'<a href="{GH}" class="spk-btn spk-btn-primary">Get started on GitHub '
         '<span class="spk-arw">&#8594;</span></a>'
         '<a href="/iso20022-mcp-docs/index.html" class="spk-btn spk-btn-ghost">'
-        "Read the docs</a></div></div></section>"
+        "Read the quickstart</a>"
+        '<a href="/iso20022-mcp-reference/index.html" class="spk-btn spk-btn-ghost">'
+        "Tool reference</a></div></div></section>"
     )
 
 
 def _render_body(d: dict) -> str:
     sections = [
         _hero(d),
-        _cards(d["what"], "mcp-what", with_bullets=False),
-        _cards(d["arc"], "mcp-arc", with_bullets=True),
-        _safety(d),
-        _faq(d),
-        _final(d),
+        _cards(d["benefits"], "mcp-benefits", bullets=False),
+        _cards(d["what"], "mcp-what", band=True, bullets=False),
+        _cards(d["arc"], "mcp-arc", bullets=True),
+        _start(),
+        _cards(d["safety"], "mcp-safety", band=True, bullets=False),
     ]
     return (
         '<div class="speaking-page iso20022-mcp-page">' + "".join(sections) + "</div>"
@@ -355,12 +340,7 @@ def _render_body(d: dict) -> str:
 
 
 def _nav(shell: str) -> str:
-    """Mark the ISO 20022 nav item active (idempotent).
-
-    Drops the Articles active state, then either activates an existing ISO
-    20022 nav item (once the layouts carry it) or injects one after Projects
-    (so this still works against a shell built before the layout change).
-    """
+    """Mark the ISO 20022 nav item active (idempotent)."""
     shell = shell.replace(
         '<a href="/articles/index.html" aria-current="page" class="active">Articles</a>',
         '<a href="/articles/index.html">Articles</a>',
@@ -377,13 +357,75 @@ def _nav(shell: str) -> str:
     )
 
 
+def _fix_metas(html: str, orig_title: str, orig_desc: str) -> str:
+    """Purge the shell's article-specific metadata that _swap_into_shell misses.
+
+    Swaps keywords, the Apple/Twitter/application-name tags, and then replaces
+    any lingering copies of the shell's original title/description (Twitter
+    boilerplate, JSON-LD) with the MCP values.
+    """
+    title, desc = _esc(C["meta_title"]), _esc(C["meta_description"])
+    # The apple/twitter app title (a distinct string from <title>) also leaks
+    # into the JSON-LD; capture it before swapping so the sweep below catches it.
+    m = re.search(r'<meta name="apple-mobile-web-app-title" content="([^"]*)"', html)
+    app_title = m.group(1) if m else ""
+    # The shell can carry more than one name="description" (a page one and an
+    # articles-listing one); replace every copy with the MCP description.
+    html = re.sub(
+        r'<meta name="description"[^>]*>',
+        f'<meta name="description" content="{desc}">',
+        html,
+    )
+    swaps = [
+        (
+            r'<meta name="keywords"[^>]*>',
+            f'<meta name="keywords" content="{_esc(KEYWORDS)}">',
+        ),
+        (
+            r'<meta name="apple-mobile-web-app-title"[^>]*>',
+            '<meta name="apple-mobile-web-app-title" content="ISO 20022 MCP">',
+        ),
+        (
+            r'<meta name="application-name"[^>]*>',
+            '<meta name="application-name" content="ISO 20022 MCP">',
+        ),
+        (
+            r'<meta name="twitter:title"[^>]*>',
+            f'<meta name="twitter:title" content="{title}">',
+        ),
+        (
+            r'<meta name="twitter:description"[^>]*>',
+            f'<meta name="twitter:description" content="{desc}">',
+        ),
+    ]
+    for pat, rep in swaps:
+        html = re.sub(pat, rep, html, count=1)
+    # Sweep any remaining copies of the shell's own title/description/app-title
+    # (JSON-LD headline/name, breadcrumb labels) with the MCP values.
+    for stale in (orig_title, app_title):
+        if stale:
+            html = html.replace(_esc(stale), title).replace(stale, title)
+    if orig_desc:
+        html = html.replace(_esc(orig_desc), desc).replace(orig_desc, desc)
+    return html
+
+
 def main() -> int:
     if not SHELL_SRC.is_file():
         print(f"build_iso20022_mcp: shell missing at {SHELL_SRC}", file=sys.stderr)
         return 1
-    shell = _nav(SHELL_SRC.read_text(encoding="utf-8"))
+    # Unescape first so every meta is a real tag (no-op on CI); then capture
+    # the shell's own title + description to purge every stale copy the
+    # per-tag swaps miss (twitter:*, JSON-LD, application-name, ...).
+    shell = _unescape_head_metas(_nav(SHELL_SRC.read_text(encoding="utf-8")))
+    m = re.search(r"<title>([^<]*)</title>", shell)
+    orig_title = m.group(1) if m else ""
+    m = re.search(r'<meta name="description" content="([^"]*)"', shell)
+    orig_desc = m.group(1) if m else ""
+
     body = _render_body(C)
     out = _swap_into_shell(shell, body, C["meta_title"], C["meta_description"], URL)
+    out = _fix_metas(out, orig_title, orig_desc)
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(out, encoding="utf-8")
     print(f"build_iso20022_mcp: wrote {OUT.relative_to(ROOT)}")
