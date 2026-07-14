@@ -211,6 +211,7 @@ python3 scripts/generators/build_case_studies.py
 # like build_case_studies. Runs BEFORE build_translations so its locale forks
 # land in the same pass and enter postbuild's SRI / CSP / sitemap passes.
 python3 scripts/generators/build_speaking.py
+python3 scripts/generators/build_iso20022_mcp.py
 python3 scripts/generators/build_topics.py
 # Per-tag landing pages — reads the ssg-emitted /tags/index.html as
 # template skeleton + the canonical taxonomy, and writes
