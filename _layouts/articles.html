@@ -2111,6 +2111,31 @@
       /* Hide the floating Static Site Generator search button. Our nav has its own .ap-search
          which forwards clicks to this button via main.js. */
       #ssg-search-btn{position:absolute!important;left:-9999px!important;top:-9999px!important;width:1px!important;height:1px!important;clip:rect(0 0 0 0)!important;clip-path:inset(50%)!important;overflow:hidden!important;pointer-events:none}
+      /* --- ISO 20022 MCP hub: Apple Partner Network styling ----------------
+         Scoped to .iso20022-mcp-page; accents use the site's own --spk-blue /
+         --link-color so links + buttons stay on-brand. */
+      .iso20022-mcp-page section{margin-block:clamp(44px,7vw,96px)}
+      .iso20022-mcp-page .spk-hero{margin-block-start:clamp(24px,5vw,52px)}
+      .iso20022-mcp-page .spk-hero-grid{grid-template-columns:1fr}
+      .iso20022-mcp-page .spk-hero h1{font-size:clamp(2.5rem,6vw,4.1rem);line-height:1.05;letter-spacing:-.022em;font-weight:600;max-width:16ch;text-wrap:balance}
+      .iso20022-mcp-page .spk-hero .spk-lede{font-size:clamp(1.12rem,1.8vw,1.4rem);line-height:1.45;color:var(--ink-soft);max-width:46ch}
+      .iso20022-mcp-page .mcp-hero-media{margin-block:clamp(28px,5vw,52px) clamp(44px,7vw,96px)}
+      .iso20022-mcp-page .mcp-hero-img{width:100%;border-radius:22px;aspect-ratio:16/8;object-fit:cover;display:block}
+      .iso20022-mcp-page .mcp-band-img{width:100%;border-radius:18px;aspect-ratio:16/6;object-fit:cover;display:block}
+      .iso20022-mcp-page .spk-head{max-width:42ch}
+      .iso20022-mcp-page .spk-head h2{font-size:clamp(1.7rem,3.4vw,2.5rem);line-height:1.1;letter-spacing:-.016em;font-weight:600;text-wrap:balance}
+      .iso20022-mcp-page .spk-paths{gap:clamp(16px,1.6vw,22px)}
+      .iso20022-mcp-page .spk-path{background:var(--bg-alt);border:0;border-radius:18px;padding:clamp(28px,3.2vw,44px)}
+      .iso20022-mcp-page .spk-path h3{font-size:1.3rem;letter-spacing:-.01em;margin-block:.15rem .5rem}
+      .iso20022-mcp-page .mcp-icon{display:block;width:34px;height:34px;color:var(--ink);margin-block-end:1.15rem}
+      .iso20022-mcp-page .mcp-icon svg{width:100%;height:100%;stroke:currentColor;fill:none}
+      .iso20022-mcp-page .spk-band{background:transparent;color:inherit;border-radius:0;padding:0}
+      .iso20022-mcp-page .spk-band h2{color:var(--ink)}
+      .iso20022-mcp-page .spk-band p{color:var(--ink-soft)}
+      .iso20022-mcp-page .spk-band .spk-eyebrow{color:var(--spk-blue)}
+      .iso20022-mcp-page .mcp-start-cta{margin-block-start:1.8rem}
+      .iso20022-mcp-page .spk-path .spk-eyebrow{color:var(--ink-soft)}
+      @media (max-width:720px){.iso20022-mcp-page .spk-paths{grid-template-columns:1fr}}
     </style>
   </head>
   <body itemscope itemtype="http://schema.org/WebPage">

@@ -46,27 +46,82 @@ def _mono(s: str) -> str:
     return f'<span class="spk-mono">{_esc(s)}</span>'
 
 
-def _img(name: str, alt: str, style: str, sizes: str, eager: bool = False) -> str:
-    """A responsive CDN image (webp srcset), styled inline to avoid CSS risk."""
+def _img(name: str, alt: str, cls: str, sizes: str, eager: bool = False) -> str:
+    """A responsive CDN image (webp srcset). Styled by CLASS, never inline --
+    the site's CSP forbids inline styles, which would be stripped on deploy.
+    """
     prio = 'fetchpriority="high"' if eager else 'loading="lazy"'
     return (
         f'<img src="{CDN}/{name}-1920.webp" '
         f'srcset="{CDN}/{name}-640.webp 640w, {CDN}/{name}-1200.webp 1200w, '
         f'{CDN}/{name}-1920.webp 1920w" sizes="{sizes}" '
-        f'alt="{_esc(alt)}" {prio} decoding="async" style="{style}">'
+        f'alt="{_esc(alt)}" class="{cls}" {prio} decoding="async">'
     )
 
 
 def _imgband(name: str, alt: str) -> str:
     """A full-bleed-within-wrap image band that breaks up the text sections."""
-    style = (
-        "width:100%;border-radius:16px;aspect-ratio:16/6;object-fit:cover;"
-        "display:block"
-    )
     return (
         '<section><div class="spk-wrap">'
-        + _img(name, alt, style, "(max-width:1120px) 100vw, 1120px")
+        + _img(name, alt, "mcp-band-img", "(max-width:1120px) 100vw, 1120px")
         + "</div></section>"
+    )
+
+
+# Apple-style line icons (24x24, currentColor stroke) keyed per card slot.
+_ICON_SVG = {
+    "send": '<path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4 20-7z"/>',
+    "check": '<path d="M22 11.1V12a10 10 0 1 1-5.9-9.1"/><path d="m9 11 3 3L22 4"/>',
+    "swap": (
+        '<path d="M17 1l4 4-4 4"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/>'
+        '<path d="M7 23l-4-4 4-4"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/>'
+    ),
+    "link": (
+        '<path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/>'
+        '<path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/>'
+    ),
+    "alert": (
+        '<path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h16.9a2 2 0 0 0 1.7-3L13.7 3.9a2 2 '
+        '0 0 0-3.4 0z"/><path d="M12 9v4"/><path d="M12 17h.01"/>'
+    ),
+    "globe": (
+        '<circle cx="12" cy="12" r="10"/><path d="M2 12h20"/>'
+        '<path d="M12 2a15 15 0 0 1 4 10 15 15 0 0 1-4 10 15 15 0 0 1-4-10 15 15 0 0 1 4-10z"/>'
+    ),
+    "grid": (
+        '<rect x="3" y="3" width="7" height="7" rx="1"/>'
+        '<rect x="14" y="3" width="7" height="7" rx="1"/>'
+        '<rect x="14" y="14" width="7" height="7" rx="1"/>'
+        '<rect x="3" y="14" width="7" height="7" rx="1"/>'
+    ),
+    "layers": (
+        '<path d="M12 2 2 7l10 5 10-5-10-5z"/><path d="m2 17 10 5 10-5"/>'
+        '<path d="m2 12 10 5 10-5"/>'
+    ),
+    "shield": '<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>',
+    "lock": (
+        '<rect x="3" y="11" width="18" height="11" rx="2"/>'
+        '<path d="M7 11V7a5 5 0 0 1 10 0v4"/>'
+    ),
+    "eye": '<path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/>',
+}
+_ICONS = {
+    "mcp-benefits": ["send", "check", "swap", "link"],
+    "mcp-what": ["alert", "globe", "grid"],
+    "mcp-arc": ["layers", "grid", "link"],
+    "mcp-safety": ["check", "shield", "lock"],
+}
+
+
+def _icon(section_id: str, i: int) -> str:
+    keys = _ICONS.get(section_id, [])
+    if i >= len(keys):
+        return ""
+    svg = _ICON_SVG[keys[i]]
+    return (
+        '<span class="mcp-icon" aria-hidden="true"><svg viewBox="0 0 24 24" '
+        f'stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">{svg}'
+        "</svg></span>"
     )
 
 
@@ -283,17 +338,13 @@ def _hero(d: dict) -> str:
 
 
 def _hero_image() -> str:
-    """The big full-bleed-within-wrap hero photo, Partner-Network style."""
-    style = (
-        "width:100%;border-radius:18px;aspect-ratio:16/8;object-fit:cover;"
-        "display:block"
-    )
+    """The big rounded hero photo below the headline, Partner-Network style."""
     return (
-        '<section><div class="spk-wrap" style="margin-block-start:clamp(24px,4vw,44px)">'
+        '<section class="mcp-hero-media"><div class="spk-wrap">'
         + _img(
             "modern-corporate-office-with-technological-displays",
             "A modern financial operations floor with technology displays.",
-            style,
+            "mcp-hero-img",
             "(max-width:1120px) 100vw, 1120px",
             eager=True,
         )
@@ -317,7 +368,8 @@ def _cards(
             extra = f"<ul>{lis}</ul>{cta}"
         items.append(
             '<div class="spk-path">'
-            f'<span class="spk-eyebrow">{_esc(it["eyebrow"])}</span>'
+            + _icon(section_id, i)
+            + f'<span class="spk-eyebrow">{_esc(it["eyebrow"])}</span>'
             f'<h3>{_esc(it["title"])}</h3><p>{_rich(it["body"])}</p>{extra}</div>'
         )
     cls = "spk-band" if band else ""
@@ -362,7 +414,7 @@ def _start() -> str:
         '<section class="spk-band" id="mcp-start"><div class="spk-wrap">'
         + _head("GET STARTED", "Live in under a minute.")
         + f'<div class="spk-paths">{cards}</div>'
-        '<div class="spk-cta-row" style="margin-block-start:1.8rem">'
+        '<div class="spk-cta-row mcp-start-cta">'
         f'<a href="{GH}" class="spk-btn spk-btn-primary">Get started on GitHub '
         '<span class="spk-arw">&#8594;</span></a>'
         '<a href="/iso20022-mcp-docs/index.html" class="spk-btn spk-btn-ghost">'
