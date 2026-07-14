@@ -23,8 +23,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / "scripts" / "generators"))
 
-from build_case_studies import _swap_into_shell  # noqa: E402
-from build_speaking import _esc, _rich  # noqa: E402
+from build_case_studies import _swap_into_shell
+from build_speaking import _esc, _rich
 
 PUBLIC = ROOT / "public"
 SHELL_SRC = PUBLIC / "articles" / "index.html"
@@ -184,8 +184,8 @@ C: dict = {
                 "q": "How do I try it right now?",
                 "a": (
                     "Run the gateway with no install and no account: "
-                    "`uvx --from \"iso20022-mcp[all]\" iso20022-mcp`. Ask it to "
-                    "search \"cancel a payment\" and it points you at camt.056; "
+                    '`uvx --from "iso20022-mcp[all]" iso20022-mcp`. Ask it to '
+                    'search "cancel a payment" and it points you at camt.056; '
                     "ask it to generate and you get XSD-valid XML back."
                 ),
             },
@@ -242,8 +242,11 @@ def _head(eyebrow: str, headline: str, lede: str = "") -> str:
 def _hero(d: dict) -> str:
     h = d["hero"]
     micro = " · ".join(
-        f"<strong>{_esc(m.split(' ', 1)[0])}</strong> {_esc(m.split(' ', 1)[1])}"
-        if " " in m else _esc(m)
+        (
+            f"<strong>{_esc(m.split(' ', 1)[0])}</strong> {_esc(m.split(' ', 1)[1])}"
+            if " " in m
+            else _esc(m)
+        )
         for m in h["microproof"]
     )
     return (
@@ -346,7 +349,9 @@ def _render_body(d: dict) -> str:
         _faq(d),
         _final(d),
     ]
-    return '<div class="speaking-page iso20022-mcp-page">' + "".join(sections) + "</div>"
+    return (
+        '<div class="speaking-page iso20022-mcp-page">' + "".join(sections) + "</div>"
+    )
 
 
 def _nav(shell: str) -> str:
