@@ -84,8 +84,7 @@ twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastie
 twitter_image_alt: "Logo of Sebastien Rousseau"
 twitter_site: "@wwdseb"
 twitter_title: "Quantum Thresholds Are Moving Again"
-twitter_url: "
-https://sebastienrousseau.com/2026-04-11-quantum-thresholds-are-moving-again"
+twitter_url: "https://sebastienrousseau.com/2026-04-11-quantum-thresholds-are-moving-again"
 
 # Humans.txt - The Humans.txt front matter (YAML).
 author_website: "https://sebastienrousseau.com"
