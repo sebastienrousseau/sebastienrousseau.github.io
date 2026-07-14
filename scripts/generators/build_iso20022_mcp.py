@@ -254,8 +254,9 @@ C: dict = {
 # --- Section renderers (spk- components, matching /speaking) -----------------
 def _head(eyebrow: str, headline: str, lede: str = "") -> str:
     lede_html = f'<p class="spk-lede">{_rich(lede)}</p>' if lede else ""
+    # Left-aligned heads (no spk-center) to match the Apple Partner Network look.
     return (
-        '<div class="spk-head spk-center">'
+        '<div class="spk-head">'
         f'<span class="spk-eyebrow">{_esc(eyebrow)}</span>'
         f"<h2>{_esc(headline)}</h2>{lede_html}</div>"
     )
@@ -277,17 +278,26 @@ def _hero(d: dict) -> str:
         '<p class="spk-microproof"><strong>8</strong> servers, live on PyPI '
         "&middot; <strong>100%</strong> branch-tested &middot; "
         "<strong>vendor-neutral</strong>, Apache-2.0</p>"
-        "</div>"
-        '<div style="border-radius:14px;overflow:hidden;aspect-ratio:4/5;'
-        'background:var(--bg-alt)">'
+        "</div></div></header>"
+    )
+
+
+def _hero_image() -> str:
+    """The big full-bleed-within-wrap hero photo, Partner-Network style."""
+    style = (
+        "width:100%;border-radius:18px;aspect-ratio:16/8;object-fit:cover;"
+        "display:block"
+    )
+    return (
+        '<section><div class="spk-wrap" style="margin-block-start:clamp(24px,4vw,44px)">'
         + _img(
-            "corporate-finance",
-            "Abstract representation of financial data flowing through payment rails.",
-            "width:100%;height:100%;object-fit:cover;display:block",
-            "(max-width:900px) 90vw, 420px",
+            "modern-corporate-office-with-technological-displays",
+            "A modern financial operations floor with technology displays.",
+            style,
+            "(max-width:1120px) 100vw, 1120px",
             eager=True,
         )
-        + "</div></div></header>"
+        + "</div></section>"
     )
 
 
@@ -365,19 +375,20 @@ def _start() -> str:
 def _render_body(d: dict) -> str:
     sections = [
         _hero(d),
+        _hero_image(),
         _cards(d["benefits"], "mcp-benefits", bullets=False),
         _imgband(
             "circuit_board_cityscape",
             "A circuit board rendered as a city, evoking payment rails.",
         ),
-        _cards(d["what"], "mcp-what", band=True, bullets=False),
+        _cards(d["what"], "mcp-what", bullets=False),
         _cards(d["arc"], "mcp-arc", bullets=True),
         _imgband(
             "digital-nodes",
             "A network of connected nodes, evoking agents calling MCP tools.",
         ),
         _start(),
-        _cards(d["safety"], "mcp-safety", band=True, bullets=False),
+        _cards(d["safety"], "mcp-safety", bullets=False),
     ]
     return (
         '<div class="speaking-page iso20022-mcp-page">' + "".join(sections) + "</div>"
@@ -385,20 +396,24 @@ def _render_body(d: dict) -> str:
 
 
 def _nav(shell: str) -> str:
-    """Mark the ISO 20022 nav item active (idempotent)."""
-    shell = shell.replace(
-        '<a href="/articles/index.html" aria-current="page" class="active">Articles</a>',
-        '<a href="/articles/index.html">Articles</a>',
-        1,
+    """Rebuild the primary nav as the 5-item Apple-Partner-Network structure,
+    with Suite (this page) active. Idempotent, and robust to a stale shell that
+    still carries the old 9-item nav.
+    """
+    items = (
+        '<li><a href="/iso20022-mcp/index.html" aria-current="page" '
+        'class="active">Suite</a></li>'
+        '<li><a href="/papers/index.html">Research</a></li>'
+        '<li><a href="/case-studies/index.html">Case Studies</a></li>'
+        '<li><a href="/projects/index.html">Resources</a></li>'
+        '<li><a href="/about/index.html">About</a></li>'
     )
-    plain = '<a href="/iso20022-mcp/index.html">ISO 20022</a>'
-    active = '<a href="/iso20022-mcp/index.html" aria-current="page" class="active">ISO 20022</a>'
-    if plain in shell:
-        return shell.replace(plain, active, 1)
-    return shell.replace(
-        '<li><a href="/projects/index.html">Projects</a></li>',
-        f'<li><a href="/projects/index.html">Projects</a></li><li>{active}</li>',
-        1,
+    return re.sub(
+        r'(<ul class="ap-menu">).*?(</ul>)',
+        lambda m: m.group(1) + items + m.group(2),
+        shell,
+        count=1,
+        flags=re.DOTALL,
     )
 
 
