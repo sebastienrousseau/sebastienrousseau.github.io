@@ -172,10 +172,10 @@ These are Python-only and run identically in both modes. `gen_articles.py` now *
 ```bash
 python3 scripts/generators/gen_layouts.py
 python3 scripts/generators/gen_articles.py    # auto-prepends today's article via _discover_latest_article()
-python3 scripts/generators/gen_projects.py
+python3 scripts/generators/gen_projects.py --dir _posts  # rewrites committed projects.md; --dir is required (ADR-0003)
 python3 scripts/generators/gen_papers.py
-python3 scripts/postbuild/topic_link.py
-python3 scripts/postbuild/post_enrich.py
+python3 scripts/postbuild/topic_link.py --dir _posts
+python3 scripts/postbuild/post_enrich.py --dir _posts
 python3 scripts/generators/build_topics.py    # if today's article fits an existing cluster OR you've added it to TOPICS, the slug shows up here
 python3 scripts/generators/build_lang_feeds.py
 python3 scripts/generators/build_agent_api.py
