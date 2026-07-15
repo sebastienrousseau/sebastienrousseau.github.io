@@ -13,7 +13,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "Jul 14, 2026"
-description: "Documentation for the ISO 20022 MCP Suite: install, a 60-second quickstart, which server to use for each job, the safety model, and the 2026–2028 migration timeline."
+description: "Connect the ISO 20022 MCP Suite to Claude Code, Claude Desktop or any MCP client: one command or one block of JSON, first prompts to try, and which server fits each job."
 format-detection: "telephone=no"
 hreflang: "en"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -22,7 +22,7 @@ image_alt: "ISO 20022 MCP Suite documentation"
 image_height: "162"
 image_width: "162"
 image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
-keywords: "ISO 20022 MCP docs, MCP server quickstart, pain.001 MCP, pacs.008 MCP, camt.053 MCP, reconciliation MCP, AP2 x402 bridge, agent payments documentation"
+keywords: "ISO 20022 MCP docs, Claude MCP setup, claude mcp add, Claude Desktop MCP config, pain.001 MCP, pacs.008 MCP, camt.053 MCP, reconciliation MCP, agent payments documentation"
 last_reviewed: "2026-07-14"
 language: "en-GB"
 layout: "story"
@@ -40,7 +40,7 @@ referrer: "no-referrer"
 revisit-after: "7 days"
 robots: "index, follow"
 short_name: "iso20022-mcp docs"
-subtitle: "Install in one line, make your first validated ISO 20022 message in under a minute, and pick the right server for the job. Vendor-neutral, runs anywhere."
+subtitle: "Add the suite to Claude Code, Claude Desktop or any MCP client in one step, then make your first validated ISO 20022 message from a plain-language prompt."
 tags: "ISO 20022, MCP, Documentation, Quickstart, pain.001, pacs.008, camt.053, Reconciliation, AP2, x402, Agent Payments, Fintech, Open Source"
 theme-color: "0, 67, 165"
 title: "ISO 20022 MCP Suite: documentation"
@@ -52,7 +52,7 @@ atom_link: "https://sebastienrousseau.com/iso20022-mcp-docs/rss.xml"
 category: "Technology"
 docs: "https://validator.w3.org/feed/docs/rss2.html"
 generator: "Static Site Generator (SSG) (version 0.0.26)"
-item_description: "Documentation for the ISO 20022 MCP Suite: install, quickstart, which server per job, safety model, and migration timeline."
+item_description: "Connect the ISO 20022 MCP Suite to Claude Code, Claude Desktop or any MCP client, with first prompts to try and a server picker."
 item_guid: "https://sebastienrousseau.com/iso20022-mcp-docs/rss.xml"
 item_link: "https://sebastienrousseau.com/iso20022-mcp-docs/rss.xml"
 item_pub_date: "Tue, 14 Jul 2026 06:06:06 +0000"
@@ -81,7 +81,7 @@ msapplication-navbutton-color: "0, 67, 165"
 
 twitter_card: "summary"
 twitter_creator: "@wwdseb"
-twitter_description: "Docs for the ISO 20022 MCP Suite: one-line install, 60-second quickstart, which server per job, safety model, migration timeline."
+twitter_description: "Connect the ISO 20022 MCP Suite to Claude Code or Claude Desktop in one step, with first prompts to try and a server picker."
 twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 twitter_image_alt: "ISO 20022 MCP Suite documentation"
 twitter_site: "@wwdseb"
@@ -100,15 +100,70 @@ site_software: "Static Site Generator, Rust"
 
 ---
 
-<p class="story-intro">The ISO 20022 MCP Suite is the open bank-message layer for AI agents: nine vendor-neutral servers to generate, validate, reconcile and settle ISO 20022 payments from natural language. Everything below gets you from nothing to a validated message in under a minute: no account, no key, no lock-in.</p>
+<p class="story-intro">The ISO 20022 MCP Suite is the open bank-message layer for AI agents: nine vendor-neutral servers to generate, validate, reconcile and settle ISO 20022 payments from natural language. Connect it to the AI client you already use, in one command or one block of JSON, and go from a plain-language prompt to a validated bank message in under a minute. No account, no key, no lock-in.</p>
 
-<section class="newsroom" id="quickstart">
-<header class="cat-section-head"><p class="cat-kicker">60-SECOND QUICKSTART</p><h2 class="cat-headline">Install one line, send one message.</h2><p class="cat-lede">Run the gateway with no install and no account. It routes to whichever server the job needs.</p></header>
+<section class="newsroom" id="claude-code">
+<header class="cat-section-head"><p class="cat-kicker">CLAUDE CODE</p><h2 class="cat-headline">One command in your terminal.</h2><p class="cat-lede">Claude Code registers MCP servers with a single CLI command. The gateway routes every request to whichever of the nine servers the job needs.</p></header>
 <div class="story-why">
 <ul class="story-why-list">
-<li><strong>1 · Run it.</strong> <code>uvx --from "iso20022-mcp[all]" iso20022-mcp</code>, or add it to your MCP client (Claude Desktop, Cursor) as the command <code>iso20022-mcp</code>.</li>
-<li><strong>2 · Find the message.</strong> Ask <em>search "cancel a payment"</em> → the gateway points you at <code>camt.056</code> and the <code>camt-exceptions</code> server.</li>
-<li><strong>3 · Generate it.</strong> Ask <em>generate camt.056</em> with the payment details → you get back XSD-validated ISO 20022 XML. Done.</li>
+<li><strong>1 · Check the prerequisites.</strong> Python 3.10+ and <a href="https://docs.astral.sh/uv/">uv</a> (<code>brew install uv</code> on macOS). <code>uvx</code> then runs the gateway with nothing to install.</li>
+<li><strong>2 · Add the server.</strong> One command, from any directory:</li>
+</ul>
+</div>
+
+```bash
+claude mcp add iso20022 -- uvx --from "iso20022-mcp[all]" iso20022-mcp
+```
+
+<div class="story-why">
+<ul class="story-why-list">
+<li><strong>3 · Verify.</strong> <code>claude mcp list</code> shows <code>iso20022</code> as connected, and typing <code>/mcp</code> inside a session lists its seven meta-tools.</li>
+<li><strong>4 · Ask for a payment.</strong> Try: <em>"Generate a pain.001 credit transfer paying Acme GmbH EUR 4,200, executing Friday."</em> Claude picks the right tool and returns XSD-validated ISO 20022 XML.</li>
+</ul>
+</div>
+</section>
+
+<section class="newsroom" id="claude-desktop">
+<header class="cat-section-head"><p class="cat-kicker">CLAUDE DESKTOP</p><h2 class="cat-headline">One block of JSON.</h2><p class="cat-lede">Open Settings › Developer › Edit Config. That opens <code>claude_desktop_config.json</code> (macOS: <code>~/Library/Application Support/Claude/</code>, Windows: <code>%APPDATA%\Claude\</code>). Add the server and restart:</p></header>
+
+```json
+{
+  "mcpServers": {
+    "iso20022": {
+      "command": "uvx",
+      "args": ["--from", "iso20022-mcp[all]", "iso20022-mcp"]
+    }
+  }
+}
+```
+
+<div class="story-why">
+<ul class="story-why-list">
+<li><strong>Where it shows up.</strong> After a restart, the suite's tools appear under the tools icon in the chat box. Claude asks before every tool call, so you approve each step.</li>
+<li><strong>Installed with pip instead?</strong> If you ran <code>pip install "iso20022-mcp[all]"</code>, the config is just <code>"command": "iso20022-mcp"</code>, no <code>args</code> needed.</li>
+</ul>
+</div>
+</section>
+
+<section class="newsroom" id="other-clients">
+<header class="cat-section-head"><p class="cat-kicker">ANY MCP CLIENT</p><h2 class="cat-headline">Cursor, VS Code, agents and everything else.</h2><p class="cat-lede">Every server is a standard stdio MCP server on the official registry, so any MCP-capable client can run it with the same command.</p></header>
+<div class="story-why">
+<ul class="story-why-list">
+<li><strong>Registry name.</strong> <code>io.github.sebastienrousseau/iso20022-mcp</code> on the <a href="https://registry.modelcontextprotocol.io">official MCP registry</a>; clients that browse the registry can install it from there.</li>
+<li><strong>Generic config.</strong> Command <code>uvx</code>, arguments <code>--from "iso20022-mcp[all]" iso20022-mcp</code>, transport stdio. That is all any client needs.</li>
+<li><strong>Slimmer installs.</strong> Extras select families: <code>pip install "iso20022-mcp[pacs,camt]"</code> covers interbank transfers and statements only, and each family server (<code>pain001-mcp</code>, <code>pacs008-mcp</code>, ...) also runs standalone.</li>
+</ul>
+</div>
+</section>
+
+<section class="newsroom" id="first-prompts">
+<header class="cat-section-head"><p class="cat-kicker">YOUR FIRST FIVE MINUTES</p><h2 class="cat-headline">Prompts to paste.</h2><p class="cat-lede">Seven meta-tools (<code>search</code>, <code>list_families</code>, <code>list_servers</code>, <code>describe</code>, <code>validate</code>, <code>generate</code>, <code>parse</code>) cover every family. These four prompts exercise the whole loop.</p></header>
+<div class="story-why">
+<ul class="story-why-list">
+<li><strong>Discover.</strong> <em>"Which ISO 20022 message cancels a payment that already went out?"</em> The gateway's <code>search</code> points at <code>camt.056</code> and the camt-exceptions server.</li>
+<li><strong>Understand.</strong> <em>"What fields does a pacs.008 need?"</em> <code>describe</code> returns the required fields and the input schema.</li>
+<li><strong>Generate.</strong> <em>"Create a pain.001 paying two suppliers EUR 1,850 and EUR 3,200 from our EUR account."</em> <code>generate</code> returns validated XML, checked against the official XSD before you ever see it.</li>
+<li><strong>Parse.</strong> <em>"Here is our camt.053 statement, what came in yesterday?"</em> <code>parse</code> turns bank XML into structured data Claude can reason over.</li>
 </ul>
 </div>
 </section>

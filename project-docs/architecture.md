@@ -94,6 +94,7 @@ The Rust tool reads the `_posts_build` markdown and `_layouts/` and writes the E
 
 ### Phase C — post-compile generators (operate on `public/`)
 
+- **`scripts/postbuild/fix_escaped_ssg_html.py`** — repairs entity-escaped head metas and escaped enrich/lead body blobs that local ssg builds emit (renders as raw-markup prose otherwise). Head-bounded meta unescape with keep-first dedupe of the leaked meta names, plus whole-region unescape of each `&lt;div lang=`-marked blob, skipping `<pre>`/`<code>`. Runs first in Phase C so downstream generators fork a sane `/articles/` shell; idempotent and a no-op on CI, where ssg emits real tags.
 5. **`scripts/seo_and_audit/fetch_metrics.py`** — fetches live crates.io download + GitHub star/fork totals into `_data/proof/metrics.json`.
 6. **`scripts/generators/build_case_studies.py`** — renders the outcome-led case-study pages.
 7. **`scripts/generators/build_topics.py`** — topic-cluster pillar pages and the topic hub from the `TOPICS` taxonomy (per-locale clones generated downstream).

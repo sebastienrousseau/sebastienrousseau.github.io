@@ -592,7 +592,9 @@ def _parse_source() -> tuple[dict, str]:
     try:
         data = yaml.safe_load(m.group(1)) or {}
     except yaml.YAMLError as exc:
-        raise SystemExit(f"build_speaking: invalid YAML in {SPEAKING_MD} — {exc}")
+        raise SystemExit(
+            f"build_speaking: invalid YAML in {SPEAKING_MD}: {exc}"
+        ) from exc
     body_md = m.group(2).strip()
     if not data or not body_md:
         raise SystemExit(
