@@ -152,6 +152,7 @@ claude mcp add iso20022 -- uvx --from "iso20022-mcp[all]" iso20022-mcp
 <li><strong>Registry name.</strong> <code>io.github.sebastienrousseau/iso20022-mcp</code> on the <a href="https://registry.modelcontextprotocol.io">official MCP registry</a>; clients that browse the registry can install it from there.</li>
 <li><strong>Generic config.</strong> Command <code>uvx</code>, arguments <code>--from "iso20022-mcp[all]" iso20022-mcp</code>, transport stdio. That is all any client needs.</li>
 <li><strong>Slimmer installs.</strong> Extras select families: <code>pip install "iso20022-mcp[pacs,camt]"</code> covers interbank transfers and statements only, and each family server (<code>pain001-mcp</code>, <code>pacs008-mcp</code>, ...) also runs standalone.</li>
+<li><strong>Beyond payments.</strong> The suite is nine of the thirteen MCP servers published under this account. The other four: <a href="https://github.com/sebastienrousseau/corral">corral</a> (query your local mirror of cloned repositories), <code>inclusio-mcp</code> (accessibility-first LaTeX publishing), <a href="https://github.com/sebastienrousseau/noyalib-mcp">noyalib-mcp</a> (lossless YAML parsing and validation) and <code>rlg-mcp</code> (log streams for agents). <a href="https://registry.modelcontextprotocol.io/?q=sebastienrousseau">All thirteen are on the official registry</a>.</li>
 </ul>
 </div>
 </section>
