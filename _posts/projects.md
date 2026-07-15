@@ -165,7 +165,7 @@ site_software: "Static Site Generator, Rust"
 </a>
 <div class="newsroom-card-body">
 <h3><a href="/iso20022-mcp/index.html" title="ISO 20022 MCP Suite">ISO 20022 MCP Suite</a></h3>
-<p class="newsroom-excerpt">Eight vendor-neutral MCP servers that let AI agents generate, validate, reconcile and settle ISO 20022 payments from natural language — the open bank-message layer, installed in one line. Live on PyPI and the official MCP registry.</p>
+<p class="newsroom-excerpt">Nine vendor-neutral MCP servers that let AI agents generate, validate, reconcile and settle ISO 20022 payments from natural language: the open bank-message layer, installed in one line. Live on PyPI and the official MCP registry.</p>
 <p class="newsroom-more"><a href="/iso20022-mcp/index.html" title="ISO 20022 MCP Suite">Explore the suite <span aria-hidden="true">›</span></a></p>
 </div>
 </article>
@@ -176,7 +176,7 @@ site_software: "Static Site Generator, Rust"
 </a>
 <div class="newsroom-card-body">
 <h3><a href="https://pain001.com" title="pain001">pain001</a></h3>
-<p class="newsroom-excerpt">Generates ISO 20022 pain.001 files from CSV or SQLite. Every message is XSD-validated and IBAN/BIC-checksummed pre-flight, so malformed payments are caught before they reach the clearing network — no proprietary translator between your ERP and the rails.</p>
+<p class="newsroom-excerpt">Generates ISO 20022 pain.001 files from CSV or SQLite. Every message is XSD-validated and IBAN/BIC-checksummed pre-flight, so malformed payments are caught before they reach the clearing network. No proprietary translator between your ERP and the rails.</p>
 <p class="newsroom-more"><a href="https://pain001.com" title="pain001">Learn more <span aria-hidden="true">›</span></a> · <a href="/case-studies/pain001/index.html">Read the case study <span aria-hidden="true">›</span></a></p>
 </div>
 </article>
@@ -215,13 +215,13 @@ site_software: "Static Site Generator, Rust"
 </article>
 
 <article class="newsroom-card">
-<a class="newsroom-card-media logo" href="https://bankstatementparser.com/" title="Bank Statement Parser">
+<a class="newsroom-card-media logo" href="https://github.com/sebastienrousseau/bankstatementparser" title="Bank Statement Parser">
 <img alt="Banner for Bank Statement Parser" src="https://cloudcdn.pro/clients/bankstatementparser/v1/logos/bankstatementparser.svg" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
-<h3><a href="https://bankstatementparser.com/" title="Bank Statement Parser">Bank Statement Parser</a></h3>
+<h3><a href="https://github.com/sebastienrousseau/bankstatementparser" title="Bank Statement Parser">Bank Statement Parser</a></h3>
 <p class="newsroom-excerpt">A Python toolkit that turns bank statements in several formats into structured data. Built for messy real-world files and for audit requirements.</p>
-<p class="newsroom-more"><a href="https://bankstatementparser.com/" title="Bank Statement Parser">Learn more <span aria-hidden="true">›</span></a></p>
+<p class="newsroom-more"><a href="https://github.com/sebastienrousseau/bankstatementparser" title="Bank Statement Parser">Learn more <span aria-hidden="true">›</span></a></p>
 </div>
 </article>
 
@@ -259,7 +259,7 @@ site_software: "Static Site Generator, Rust"
 </a>
 <div class="newsroom-card-body">
 <h3><a href="https://kyberlib.com/" title="KyberLib">KyberLib</a></h3>
-<p class="newsroom-excerpt">A Rust implementation of CRYSTALS-Kyber, the NIST FIPS 203 standard for post-quantum key encapsulation — a migration you can pilot against harvest-now-decrypt-later per service, instead of a core rebuild.</p>
+<p class="newsroom-excerpt">A Rust implementation of CRYSTALS-Kyber, the NIST FIPS 203 standard for post-quantum key encapsulation: a migration you can pilot against harvest-now-decrypt-later per service, instead of a core rebuild.</p>
 <p class="newsroom-more"><a href="https://kyberlib.com/" title="KyberLib">Learn more <span aria-hidden="true">›</span></a> · <a href="/case-studies/kyberlib/index.html">Read the case study <span aria-hidden="true">›</span></a></p>
 </div>
 </article>

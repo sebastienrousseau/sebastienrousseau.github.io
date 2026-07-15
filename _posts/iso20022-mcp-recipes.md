@@ -33,17 +33,17 @@ logo_width: "44"
 logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 menu: ""
 measurementID: "G-169G4ET5HQ"
-name: "ISO 20022 MCP Suite — recipes."
+name: "ISO 20022 MCP Suite: recipes."
 permalink: "https://sebastienrousseau.com/iso20022-mcp-recipes"
 rating: "general"
 referrer: "no-referrer"
 revisit-after: "7 days"
 robots: "index, follow"
 short_name: "iso20022-mcp recipes"
-subtitle: "Four end-to-end flows an agent runs entirely through the suite — from a legacy MT103 to a validated wire, from a bank statement to a reconciled ledger."
+subtitle: "Four end-to-end flows an agent runs entirely through the suite: from a legacy MT103 to a validated wire, from a bank statement to a reconciled ledger."
 tags: "ISO 20022, MCP, Recipes, MT103, pacs.008, Reconciliation, camt.056, AP2, x402, Agent Payments, Fintech, Open Source"
 theme-color: "0, 67, 165"
-title: "ISO 20022 MCP Suite — recipes"
+title: "ISO 20022 MCP Suite: recipes"
 url: "https://sebastienrousseau.com/iso20022-mcp-recipes"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
@@ -56,7 +56,7 @@ item_description: "End-to-end recipes for the ISO 20022 MCP Suite."
 item_guid: "https://sebastienrousseau.com/iso20022-mcp-recipes/rss.xml"
 item_link: "https://sebastienrousseau.com/iso20022-mcp-recipes/rss.xml"
 item_pub_date: "Tue, 14 Jul 2026 06:06:06 +0000"
-item_title: "ISO 20022 MCP Suite — recipes"
+item_title: "ISO 20022 MCP Suite: recipes"
 last_build_date: "Tue, 14 Jul 2026 06:06:06 +0000"
 managing_editor: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 pub_date: "Tue, 14 Jul 2026 06:06:06 +0000"
@@ -85,7 +85,7 @@ twitter_description: "End-to-end recipes for the ISO 20022 MCP Suite: migrate, r
 twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 twitter_image_alt: "ISO 20022 MCP Suite recipes"
 twitter_site: "@wwdseb"
-twitter_title: "ISO 20022 MCP Suite — recipes"
+twitter_title: "ISO 20022 MCP Suite: recipes"
 twitter_url: "https://sebastienrousseau.com/iso20022-mcp-recipes"
 
 # Humans.txt - The Humans.txt front matter (YAML).
@@ -100,7 +100,7 @@ site_software: "Static Site Generator, Rust"
 
 ---
 
-<p class="story-intro">Four flows an agent runs end to end, entirely through the published servers. Each is a short chain of tool calls — no glue code, every step validated. New here? Read <a href="/iso20022-mcp-docs/index.html">the quickstart</a> first, or the <a href="/iso20022-mcp-reference/index.html">tool reference</a>.</p>
+<p class="story-intro">Four flows an agent runs end to end, entirely through the published servers. Each is a short chain of tool calls: no glue code, every step validated. New here? Read <a href="/iso20022-mcp-docs/index.html">the quickstart</a> first, or the <a href="/iso20022-mcp-reference/index.html">tool reference</a>.</p>
 
 <section class="newsroom" id="migrate">
 <header class="cat-section-head"><p class="cat-kicker">RECIPE 01 · MIGRATE</p><h2 class="cat-headline">A legacy MT103 becomes a validated pacs.008.</h2></header>
@@ -125,8 +125,8 @@ site_software: "Static Site Generator, Rust"
 <section class="newsroom" id="cancel">
 <header class="cat-section-head"><p class="cat-kicker">RECIPE 03 · CANCEL &amp; RESOLVE</p><h2 class="cat-headline">Recall a duplicate wire, then close the case.</h2></header>
 <div class="story-why"><ul class="story-why-list">
-<li><strong>Cancel.</strong> <code>camt-exceptions · generate_message("camt.056.001.12", record)</code> with the original payment references and a cancellation reason (e.g. <code>DUPL</code>) → an XSD-valid FI-to-FI Payment Cancellation Request.</li>
-<li><strong>Resolve.</strong> When the response comes back, <code>generate_message("camt.029.001.14", record)</code> with a confirmation code (e.g. <code>CNCL</code> cancelled, <code>RJCR</code> rejected) → the Resolution of Investigation.</li>
+<li><strong>Cancel.</strong> <code>camt-exceptions · generate_message("camt.056", record)</code> with the original payment references and a cancellation reason (e.g. <code>DUPL</code>) → an XSD-valid FI-to-FI Payment Cancellation Request.</li>
+<li><strong>Resolve.</strong> When the response comes back, <code>generate_message("camt.029", record)</code> with a confirmation code (e.g. <code>CNCL</code> cancelled, <code>RJCR</code> rejected) → the Resolution of Investigation.</li>
 </ul></div>
 </section>
 
@@ -135,7 +135,7 @@ site_software: "Static Site Generator, Rust"
 <div class="story-why"><ul class="story-why-list">
 <li><strong>Normalise.</strong> <code>ap2-iso20022 · normalize_ap2(mandate)</code> → a canonical mandate (works for Coinbase x402 too via <code>normalize_x402</code>).</li>
 <li><strong>Guardrail.</strong> <code>check_mandate(mandate, as_of)</code> → required fields present, within the spending cap, not expired, signed. Stop here if it fails.</li>
-<li><strong>Convert, then generate.</strong> <code>to_pain001(mandate)</code> → a pain.001 record; hand it to <code>pain001-mcp · generate_message</code> for wire-valid XML. The bridge never moves money — sending stays a separate, human-guarded step.</li>
+<li><strong>Convert, then generate.</strong> <code>to_pain001(mandate)</code> → a pain.001 record; hand it to <code>pain001-mcp · generate_message</code> for wire-valid XML. The bridge never moves money; sending stays a separate, human-guarded step.</li>
 </ul></div>
 </section>
 

@@ -11,20 +11,20 @@
 
 title: "Speaking & advisory"
 meta_title: "Sebastien Rousseau: keynotes, panels & expert comment on payments, post-quantum & applied AI"
-meta_description: "Senior banking technologist with 20+ years across HSBC, PayPal and Barclays. Keynotes, panels and expert media comment on payments modernisation, post-quantum cryptography and applied AI, for boards, conferences and newsrooms."
+meta_description: "Senior banking technologist, nearly two decades at HSBC, PayPal and Barclays. Keynotes, panels and expert comment on payments, post-quantum and applied AI."
 
 # --- Hero -------------------------------------------------------------------
 hero:
   eyebrow: "Keynotes · Panels · Expert comment"
   headline: "The technologies reshaping banking, explained to the people who have to act."
-  lede: "Sebastien Rousseau is a senior banking technologist with 20+ years across HSBC, PayPal and Barclays. He turns payments modernisation, post-quantum cryptography and applied AI from policy paper into inspectable code, and into keynotes a board can act on."
+  lede: "Sebastien Rousseau is a senior banking technologist with nearly two decades across HSBC, PayPal and Barclays. He turns payments modernisation, post-quantum cryptography and applied AI from policy paper into inspectable code, and into keynotes a board can act on."
   primary_cta: "Invite me to speak"
   secondary_cta: "Explore keynotes"
   press_nudge: "Journalist on deadline?"
   press_nudge_cta: "Book expert comment"
   microproof:
     - "Shipped payments at HSBC, PayPal & Barclays"
-    - "Co-author, EPA quantum-safe white paper"
+    - "Co-author, EPAA quantum-safe white paper"
     - "Contributor, Emerging Payments Association Asia"
 
 # --- Employer proof strip ---------------------------------------------------
@@ -44,7 +44,7 @@ stats:
   - { kpi: "articles_signed", label: "Signed, dated articles" }
   - { kpi: "downloads_total", label: "Open-source downloads" }
   - { kpi: "github_stars",    label: "GitHub stars" }
-stats_foot: 'Contributor to the EPAA Quantum-Safe Cryptography Working Group. Co-author of the EPA white paper "Quantum-Safe Payments: Why the Payments Industry Must Act Now" (September 2025).'
+stats_foot: 'Contributor to the EPAA Quantum-Safe Cryptography Working Group. Co-author of the EPAA white paper "Quantum-Safe Payments: Why the Payments Industry Must Act Now" (September 2025).'
 
 # --- Two paths (organisers vs journalists) ----------------------------------
 paths:
@@ -82,7 +82,7 @@ keynotes:
   talks:
     - title: "Post-Quantum Migration for Payments: From FIPS 203 to Inspectable Code"
       new: false
-      desc: "What the November 2026 SWIFT cutover, FIPS 203, and harvest-now-decrypt-later mean for a Tier-1 payments stack, and how to turn migration into a measurable, board-grade engineering programme."
+      desc: "What the November 2026 CBPR+ structured-address deadline, FIPS 203, and harvest-now-decrypt-later mean for a Tier-1 payments stack, and how to turn migration into a measurable, board-grade engineering programme."
       outcome: "a board-ready migration roadmap and the metrics to govern it."
       audience: "Board / CISO / Head of Payments"
     - title: "ISO 20022 in Practice: pacs.008, pain.001, and the Structured-Address Cliff"
@@ -136,7 +136,7 @@ media:
     - "typical reply within 2 hours on deadline"
   cta_label: "Book expert comment"
   topics:
-    - { tag: "Payments", text: "What the Nov 2026 SWIFT / ISO 20022 cutover means for banks" }
+    - { tag: "Payments", text: "What the Nov 2026 CBPR+ structured-address deadline means for banks" }
     - { tag: "Post-quantum", text: 'Why "harvest now, decrypt later" is a board-level risk today' }
     - { tag: "FIPS 203", text: "The NIST standards and the migration race behind them" }
     - { tag: "Applied AI", text: "Agentic AI, model risk and what regulators will demand" }
@@ -159,9 +159,9 @@ bios:
     - length: "Short"
       text: "Sebastien Rousseau is a senior banking technologist who writes and builds at the edge of payments, post-quantum cryptography, and applied AI. Author of open-source libraries used in financial infrastructure; contributor to the Emerging Payments Association Asia Quantum-Safe Cryptography Working Group."
     - length: "Medium"
-      text: "Sebastien Rousseau is a senior banking technologist with 20+ years across HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, and Virgin Group. He authors open-source Python and Rust libraries that turn ISO 20022 migration, post-quantum cryptography, and applied AI from policy paper into inspectable code. He contributes to the Emerging Payments Association Asia Quantum-Safe Cryptography Working Group and publishes Banking On Quantum and Banking On AI at sebastienrousseau.com."
+      text: "Sebastien Rousseau is a senior banking technologist with nearly two decades across HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, and Virgin Group. He authors open-source Python and Rust libraries that turn ISO 20022 migration, post-quantum cryptography, and applied AI from policy paper into inspectable code. He contributes to the Emerging Payments Association Asia Quantum-Safe Cryptography Working Group and publishes Banking On Quantum and Banking On AI at sebastienrousseau.com."
     - length: "Long"
-      text: 'Sebastien Rousseau is a senior banking technologist focused on the structural transformation of wholesale payments. Across HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, and Virgin Group, he has shipped payment platforms, AI products, and open-source infrastructure used in production by treasury and payments teams. He authors and maintains pacs.008, pain.001, BankStatementParser, KyberLib, CloudCDN, and dotfiles, each positioned as a reference implementation, not a demo, for inspectable, board-grade financial infrastructure. He is a contributor to the Emerging Payments Association Asia Quantum-Safe Cryptography Working Group, co-author of the EPA white paper "Quantum-Safe Payments: Why the Payments Industry Must Act Now" (September 2025), and publishes Banking On Quantum and Banking On AI. He works at the intersection of agentic AI, real-time payments, post-quantum cryptography, cloud-native resilience, structured data, and regulatory evidence.'
+      text: 'Sebastien Rousseau is a senior banking technologist focused on the structural transformation of wholesale payments. Across HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, and Virgin Group, he has shipped payment platforms, AI products, and open-source infrastructure used in production by treasury and payments teams. He authors and maintains pacs.008, pain.001, BankStatementParser, KyberLib, CloudCDN, and dotfiles, each positioned as a reference implementation, not a demo, for inspectable, board-grade financial infrastructure. He is a contributor to the Emerging Payments Association Asia Quantum-Safe Cryptography Working Group, co-author of the EPAA white paper "Quantum-Safe Payments: Why the Payments Industry Must Act Now" (September 2025), and publishes Banking On Quantum and Banking On AI. He works at the intersection of agentic AI, real-time payments, post-quantum cryptography, cloud-native resilience, structured data, and regulatory evidence.'
 
 # --- FAQ --------------------------------------------------------------------
 faq:
@@ -218,7 +218,7 @@ reference implementation, not a demo: inspectable, board-grade financial
 infrastructure.
 
 He contributes to the Emerging Payments Association Asia Quantum-Safe
-Cryptography Working Group, co-authored the EPA white paper "Quantum-Safe
+Cryptography Working Group, co-authored the EPAA white paper "Quantum-Safe
 Payments: Why the Payments Industry Must Act Now" (September 2025), and publishes
 Banking On Quantum and Banking On AI. He works at the intersection of agentic AI,
 real-time payments, post-quantum cryptography, cloud-native resilience,
