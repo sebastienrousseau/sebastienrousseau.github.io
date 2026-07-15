@@ -61,6 +61,14 @@ ssg -n=docs -c=_posts_build -t=_layouts -o=public
 # Clean up the temporary directory
 rm -rf _posts_build
 
+# Repair entity-escaped head metas + body enrich blocks that some local
+# ssg builds emit (they render as visible raw-markup text). Head-bounded
+# metas site-wide; body pass gated on the escaped enrich marker and
+# skipping pre/code, so article content is never touched. Idempotent;
+# a no-op on CI. Must run BEFORE the page generators fork the /articles
+# shell and before postbuild's SRI/CSP passes.
+python3 scripts/postbuild/fix_escaped_ssg_html.py
+
 # Static Site Generator doesn't pick up theme-init.js as a managed asset; we ship it as-is.
 cp -f _layouts/theme-init.js public/theme-init.js
 

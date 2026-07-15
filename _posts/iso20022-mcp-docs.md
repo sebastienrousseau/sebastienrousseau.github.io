@@ -116,12 +116,66 @@ site_software: "Static Site Generator, Rust"
 <section class="newsroom" id="which-server">
 <header class="cat-section-head"><p class="cat-kicker">WHICH SERVER DO I NEED?</p><h2 class="cat-headline">One job, one server.</h2><p class="cat-lede">Install the gateway and let it route, or install just the one for the task in front of you. Every server is <code>pip install</code>-able and live on the official MCP registry.</p></header>
 <div class="newsroom-grid cat-grid">
-<article class="newsroom-card"><a class="newsroom-card-media logo" href="https://github.com/sebastienrousseau/iso20022-mcp" title="iso20022-mcp"><img alt="Gateway" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg" loading="lazy" decoding="async" width="600" height="600" /></a><div class="newsroom-card-body"><h3><a href="https://github.com/sebastienrousseau/iso20022-mcp">Discover &amp; route</a></h3><p class="newsroom-excerpt">Start here. The gateway's <code>search</code> / <code>describe</code> / <code>generate</code> / <code>validate</code> / <code>parse</code> meta-tools span every family.</p><p class="newsroom-more"><code>iso20022-mcp</code></p></div></article>
-<article class="newsroom-card"><a class="newsroom-card-media logo" href="https://github.com/sebastienrousseau/pain001-mcp" title="pain001-mcp"><img alt="pain001" src="https://cloudcdn.pro/clients/pain001/v1/logos/pain001.svg" loading="lazy" decoding="async" width="600" height="600" /></a><div class="newsroom-card-body"><h3><a href="https://github.com/sebastienrousseau/pain001-mcp">Initiate a payment</a></h3><p class="newsroom-excerpt">pain.001 customer credit transfers, with IBAN/BIC and XSD validation and an MT101 converter.</p><p class="newsroom-more"><code>pain001-mcp</code></p></div></article>
-<article class="newsroom-card"><a class="newsroom-card-media logo" href="https://github.com/sebastienrousseau/pacs008-mcp" title="pacs008-mcp"><img alt="pacs008" src="https://cloudcdn.pro/clients/pacs008/v1/logos/pacs008.svg" loading="lazy" decoding="async" width="600" height="600" /></a><div class="newsroom-card-body"><h3><a href="https://github.com/sebastienrousseau/pacs008-mcp">Settle interbank</a></h3><p class="newsroom-excerpt">pacs.008 transfers, pacs.004 returns, pacs.002 status, the Nov-2026 address toolkit, MT103.</p><p class="newsroom-more"><code>pacs008-mcp</code></p></div></article>
-<article class="newsroom-card"><a class="newsroom-card-media logo" href="https://github.com/sebastienrousseau/reconcile-mcp" title="reconcile-mcp"><img alt="reconcile" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg" loading="lazy" decoding="async" width="600" height="600" /></a><div class="newsroom-card-body"><h3><a href="https://github.com/sebastienrousseau/reconcile-mcp">Reconcile</a></h3><p class="newsroom-excerpt">Match camt.053 statements against expected pain.001 (exact, partial, split, batch), explainably.</p><p class="newsroom-more"><code>reconcile-mcp</code></p></div></article>
-<article class="newsroom-card"><a class="newsroom-card-media logo" href="https://github.com/sebastienrousseau/camt-exceptions" title="camt-exceptions"><img alt="camt-exceptions" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg" loading="lazy" decoding="async" width="600" height="600" /></a><div class="newsroom-card-body"><h3><a href="https://github.com/sebastienrousseau/camt-exceptions">Cancel &amp; resolve</a></h3><p class="newsroom-excerpt">camt.056 payment cancellation and camt.029 resolution of investigation, XSD-valid.</p><p class="newsroom-more"><code>camt-exceptions</code></p></div></article>
-<article class="newsroom-card"><a class="newsroom-card-media logo" href="https://github.com/sebastienrousseau/ap2-iso20022" title="ap2-iso20022"><img alt="ap2-iso20022" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg" loading="lazy" decoding="async" width="600" height="600" /></a><div class="newsroom-card-body"><h3><a href="https://github.com/sebastienrousseau/ap2-iso20022">Bridge an agent mandate</a></h3><p class="newsroom-excerpt">Turn an AP2 / x402 mandate into a wire-valid pain.001 / pacs.008, guardrailed.</p><p class="newsroom-more"><code>ap2-iso20022</code></p></div></article>
+<article class="newsroom-card">
+<a class="newsroom-card-media logo" href="https://github.com/sebastienrousseau/iso20022-mcp" title="iso20022-mcp">
+<img alt="Gateway" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<h3><a href="https://github.com/sebastienrousseau/iso20022-mcp">Discover &amp; route</a></h3>
+<p class="newsroom-excerpt">Start here. The gateway's <code>search</code> / <code>describe</code> / <code>generate</code> / <code>validate</code> / <code>parse</code> meta-tools span every family.</p>
+<p class="newsroom-more"><code>iso20022-mcp</code></p>
+</div>
+</article>
+<article class="newsroom-card">
+<a class="newsroom-card-media logo" href="https://github.com/sebastienrousseau/pain001-mcp" title="pain001-mcp">
+<img alt="pain001" src="https://cloudcdn.pro/clients/pain001/v1/logos/pain001.svg" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<h3><a href="https://github.com/sebastienrousseau/pain001-mcp">Initiate a payment</a></h3>
+<p class="newsroom-excerpt">pain.001 customer credit transfers, with IBAN/BIC and XSD validation and an MT101 converter.</p>
+<p class="newsroom-more"><code>pain001-mcp</code></p>
+</div>
+</article>
+<article class="newsroom-card">
+<a class="newsroom-card-media logo" href="https://github.com/sebastienrousseau/pacs008-mcp" title="pacs008-mcp">
+<img alt="pacs008" src="https://cloudcdn.pro/clients/pacs008/v1/logos/pacs008.svg" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<h3><a href="https://github.com/sebastienrousseau/pacs008-mcp">Settle interbank</a></h3>
+<p class="newsroom-excerpt">pacs.008 transfers, pacs.004 returns, pacs.002 status, the Nov-2026 address toolkit, MT103.</p>
+<p class="newsroom-more"><code>pacs008-mcp</code></p>
+</div>
+</article>
+<article class="newsroom-card">
+<a class="newsroom-card-media logo" href="https://github.com/sebastienrousseau/reconcile-mcp" title="reconcile-mcp">
+<img alt="reconcile" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<h3><a href="https://github.com/sebastienrousseau/reconcile-mcp">Reconcile</a></h3>
+<p class="newsroom-excerpt">Match camt.053 statements against expected pain.001 (exact, partial, split, batch), explainably.</p>
+<p class="newsroom-more"><code>reconcile-mcp</code></p>
+</div>
+</article>
+<article class="newsroom-card">
+<a class="newsroom-card-media logo" href="https://github.com/sebastienrousseau/camt-exceptions" title="camt-exceptions">
+<img alt="camt-exceptions" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<h3><a href="https://github.com/sebastienrousseau/camt-exceptions">Cancel &amp; resolve</a></h3>
+<p class="newsroom-excerpt">camt.056 payment cancellation and camt.029 resolution of investigation, XSD-valid.</p>
+<p class="newsroom-more"><code>camt-exceptions</code></p>
+</div>
+</article>
+<article class="newsroom-card">
+<a class="newsroom-card-media logo" href="https://github.com/sebastienrousseau/ap2-iso20022" title="ap2-iso20022">
+<img alt="ap2-iso20022" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<h3><a href="https://github.com/sebastienrousseau/ap2-iso20022">Bridge an agent mandate</a></h3>
+<p class="newsroom-excerpt">Turn an AP2 / x402 mandate into a wire-valid pain.001 / pacs.008, guardrailed.</p>
+<p class="newsroom-more"><code>ap2-iso20022</code></p>
+</div>
+</article>
 </div>
 <p class="story-intro"><a href="/iso20022-mcp-reference/index.html">Full tool reference for every server <span aria-hidden="true">›</span></a> · <a href="/iso20022-mcp-recipes/index.html">End-to-end recipes <span aria-hidden="true">›</span></a></p>
 </section>
