@@ -28,6 +28,7 @@ case-study pages up.
 from __future__ import annotations
 
 import argparse
+import html as _html
 import json
 import re
 import sys
@@ -311,19 +312,75 @@ sys.path.insert(0, str(ROOT / "scripts" / "lib"))
 
 
 
+def _unescape_head_metas(html_text: str) -> str:
+    """Repair entity-escaped ``<meta>`` / ``<link>`` tags some local SSG builds
+    emit in the shell's <head>. Bounded to the ``<head>…</head>`` slice so
+    escaped markup quoted in body prose is never turned into live tags.
+    No-op on CI (tags are already real there).
+
+    Shared helper — build_speaking.py and build_iso20022_mcp.py import this.
+    """
+    end = html_text.find("</head>")
+    if end < 0:
+        return html_text
+    head = re.sub(
+        r"&lt;(?:meta|link)\b.*?&gt;",
+        lambda m: _html.unescape(m.group(0)),
+        html_text[:end],
+        flags=re.DOTALL,
+    )
+    return head + html_text[end:]
+
+
+def _sub_verified(pattern: re.Pattern, repl, html: str, anchor: str) -> str:
+    """``pattern.subn(..., count=1)`` that fails the build when the anchor is
+    missing. A silent no-op here would ship a page wearing the shell's own
+    title / description / canonical — worse than failing loudly."""
+    out, n = pattern.subn(repl, html, count=1)
+    if n == 0:
+        raise SystemExit(f"_swap_into_shell: shell anchor not found: {anchor}")
+    return out
+
+
 def _swap_into_shell(shell: str, body: str, title: str, desc: str, url: str) -> str:
-    out = _TITLE_RE.sub(f"<title>{_esc(title)}</title>", shell, count=1)
-    out = _DESC_RE.sub(
-        f'<meta name="description" content="{_esc(desc)}"', out, count=1
+    # Callable replacements throughout: the swapped-in content is arbitrary
+    # text/HTML, and str.sub replacement *templates* would interpret \g<0> /
+    # lone backslashes in it (silent duplication or re.error).
+    esc_title, esc_desc, esc_url = _esc(title), _esc(desc), _esc(url)
+    out = _sub_verified(
+        _TITLE_RE, lambda m: f"<title>{esc_title}</title>", shell, "<title>"
     )
-    out = _CANONICAL_RE.sub(
-        f'<link rel="canonical" href="{_esc(url)}"', out, count=1
+    out = _sub_verified(
+        _DESC_RE,
+        lambda m: f'<meta name="description" content="{esc_desc}"',
+        out,
+        "meta description",
     )
-    out = _OG_TITLE_RE.sub(rf'\1{_esc(title)}\2', out, count=1)
-    out = _OG_DESC_RE.sub(rf'\1{_esc(desc)}\2', out, count=1)
-    out = _OG_URL_RE.sub(rf'\1{_esc(url)}\2', out, count=1)
+    out = _sub_verified(
+        _CANONICAL_RE,
+        lambda m: f'<link rel="canonical" href="{esc_url}"',
+        out,
+        "canonical link",
+    )
+    out = _sub_verified(
+        _OG_TITLE_RE, lambda m: m.group(1) + esc_title + m.group(2), out, "og:title"
+    )
+    out = _sub_verified(
+        _OG_DESC_RE, lambda m: m.group(1) + esc_desc + m.group(2), out, "og:description"
+    )
+    out = _sub_verified(
+        _OG_URL_RE, lambda m: m.group(1) + esc_url + m.group(2), out, "og:url"
+    )
+    # The ap-hero block is a conditional strip, not an anchor: only some
+    # homepage-style shells carry it (the articles shell does not), so its
+    # absence is expected and must not fail the build.
     out = _AP_HERO_BLOCK_RE.sub("", out, count=1)
-    out = _MAIN_WRAP_RE.sub(rf'\1{body}\2', out, count=1)
+    out = _sub_verified(
+        _MAIN_WRAP_RE,
+        lambda m: m.group(1) + body + m.group(2),
+        out,
+        '<main> content wrap (<div class="wrap…">)',
+    )
     return out
 
 

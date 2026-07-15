@@ -17,6 +17,7 @@
 # =============================================================================
 from __future__ import annotations
 
+import json
 import re
 import sys
 from pathlib import Path
@@ -24,8 +25,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / "scripts" / "generators"))
 
-from build_case_studies import _swap_into_shell
-from build_speaking import _esc, _rich, _unescape_head_metas
+from build_case_studies import _swap_into_shell, _unescape_head_metas
+from build_speaking import _esc, _rich
 
 PUBLIC = ROOT / "public"
 SHELL_SRC = PUBLIC / "articles" / "index.html"
@@ -42,8 +43,19 @@ CDN = "https://cloudcdn.pro/stocks/images"
 
 
 def _mono(s: str) -> str:
-    """Wrap a literal command/code snippet in the site's mono style."""
-    return f'<span class="spk-mono">{_esc(s)}</span>'
+    """Wrap a literal command/code snippet in the site's mono style.
+    ``<code>`` (not a bare span) so assistive tech announces it as code."""
+    return f'<code class="spk-mono">{_esc(s)}</code>'
+
+
+# Intrinsic width/height per image class. Must stay consistent with the CSS
+# aspect-ratio the classes carry in _layouts/articles.html (.mcp-hero-img is
+# 16/8, .mcp-band-img is 16/6) so the browser reserves the right box before
+# the bytes arrive and CLS stays at zero.
+_IMG_DIMS: dict[str, tuple[int, int]] = {
+    "mcp-hero-img": (1920, 960),
+    "mcp-band-img": (1920, 720),
+}
 
 
 def _img(name: str, alt: str, cls: str, sizes: str, eager: bool = False) -> str:
@@ -51,11 +63,13 @@ def _img(name: str, alt: str, cls: str, sizes: str, eager: bool = False) -> str:
     the site's CSP forbids inline styles, which would be stripped on deploy.
     """
     prio = 'fetchpriority="high"' if eager else 'loading="lazy"'
+    width, height = _IMG_DIMS[cls]
     return (
         f'<img src="{CDN}/{name}-1920.webp" '
         f'srcset="{CDN}/{name}-640.webp 640w, {CDN}/{name}-1200.webp 1200w, '
         f'{CDN}/{name}-1920.webp 1920w" sizes="{sizes}" '
-        f'alt="{_esc(alt)}" class="{cls}" {prio} decoding="async">'
+        f'alt="{_esc(alt)}" class="{cls}" width="{width}" height="{height}" '
+        f'{prio} decoding="async">'
     )
 
 
@@ -132,7 +146,7 @@ def _icon(section_id: str, i: int) -> str:
 C: dict = {
     "meta_title": "ISO 20022 MCP Suite: let AI agents make bank payments",
     "meta_description": (
-        "The open ISO 20022 layer for AI agents. Eight vendor-neutral MCP "
+        "The open ISO 20022 layer for AI agents. Nine vendor-neutral MCP "
         "servers to generate, validate, reconcile and settle bank payments "
         "from natural language. Apache-2.0, on PyPI and the MCP registry."
     ),
@@ -140,9 +154,9 @@ C: dict = {
         "eyebrow": "OPEN SOURCE · APACHE-2.0 · ON PYPI + THE MCP REGISTRY",
         "headline": "Let your AI agent make real bank payments.",
         "lede": (
-            "Eight open MCP servers that turn plain language into validated ISO "
+            "Nine open MCP servers that turn plain language into validated ISO "
             "20022 bank messages: initiate, settle, reconcile and resolve. "
-            "Vendor-neutral, runs anywhere, installed in one line.",
+            "Vendor-neutral, runs anywhere, installed in one line."
         ),
     },
     # What you can do — benefit-led, business.apple.com "Run / Grow" style.
@@ -231,10 +245,10 @@ C: dict = {
     },
     "arc": {
         "eyebrow": "THE SUITE",
-        "headline": "Eight servers, one payment lifecycle.",
+        "headline": "Nine servers, one payment lifecycle.",
         "lede": (
             "Install the gateway and let it route, or install just the server "
-            "for the job. Each is one `pip install`, on the MCP registry."
+            "for the job. Each is one pip install, on the MCP registry."
         ),
         "cards": [
             {
@@ -322,18 +336,17 @@ def _head(eyebrow: str, headline: str, lede: str = "") -> str:
 
 def _hero(d: dict) -> str:
     h = d["hero"]
-    lede = h["lede"][0] if isinstance(h["lede"], (list, tuple)) else h["lede"]
     return (
         '<header class="spk-hero" id="spk-top"><div class="spk-hero-grid"><div>'
         f'<span class="spk-eyebrow">{_esc(h["eyebrow"])}</span>'
         f'<h1>{_esc(h["headline"])}</h1>'
-        f'<p class="spk-lede">{_rich(lede)}</p>'
+        f'<p class="spk-lede">{_rich(h["lede"])}</p>'
         '<div class="spk-cta-row">'
         '<a href="#mcp-start" class="spk-btn spk-btn-primary">Get started '
-        '<span class="spk-arw">&#8594;</span></a>'
+        '<span class="spk-arw" aria-hidden="true">&#8594;</span></a>'
         '<a href="#mcp-benefits" class="spk-btn spk-btn-ghost">See what it '
         "does</a></div>"
-        '<p class="spk-microproof"><strong>8</strong> servers, live on PyPI '
+        '<p class="spk-microproof"><strong>9</strong> servers, live on PyPI '
         "&middot; <strong>100%</strong> branch-tested &middot; "
         "<strong>vendor-neutral</strong>, Apache-2.0</p>"
         "</div></div></header>"
@@ -364,8 +377,11 @@ def _cards(
         extra = ""
         if bullets:
             lis = "".join(f"<li>{_esc(b)}</li>" for b in it.get("bullets", []))
+            # aria-label carries the card name so repeated CTA phrasings stay
+            # distinguishable when a screen reader lists the page's links.
             cta = (
-                f'<a href="{_esc(it["cta_href"])}" class="spk-btn {primary}">'
+                f'<a href="{_esc(it["cta_href"])}" class="spk-btn {primary}" '
+                f'aria-label="{_esc(it["cta_label"])}: {_esc(it["title"].rstrip("."))}">'
                 f'{_esc(it["cta_label"])}</a>'
             )
             extra = f"<ul>{lis}</ul>{cta}"
@@ -419,7 +435,7 @@ def _start() -> str:
         + f'<div class="spk-paths">{cards}</div>'
         '<div class="spk-cta-row mcp-start-cta">'
         f'<a href="{GH}" class="spk-btn spk-btn-primary">Get started on GitHub '
-        '<span class="spk-arw">&#8594;</span></a>'
+        '<span class="spk-arw" aria-hidden="true">&#8594;</span></a>'
         '<a href="/iso20022-mcp-docs/index.html" class="spk-btn spk-btn-ghost">'
         "Read the quickstart</a>"
         '<a href="/iso20022-mcp-reference/index.html" class="spk-btn spk-btn-ghost">'
@@ -451,25 +467,181 @@ def _render_body(d: dict) -> str:
 
 
 def _nav(shell: str) -> str:
-    """Rebuild the primary nav as the 5-item Apple-Partner-Network structure,
-    with Suite (this page) active. Idempotent, and robust to a stale shell that
-    still carries the old 9-item nav.
+    """Rebuild the primary nav as the site-wide 9-item structure, with Suite
+    (this page) active. Idempotent, and robust to a stale shell that still
+    carries a different nav.
     """
     items = (
+        '<li><a href="/about/index.html">About</a></li>'
+        '<li><a href="/articles/index.html">Articles</a></li>'
+        '<li><a href="/papers/index.html">Papers</a></li>'
+        '<li><a href="/case-studies/index.html">Case studies</a></li>'
+        '<li><a href="/topics/index.html">Topics</a></li>'
+        '<li><a href="/projects/index.html">Projects</a></li>'
+        '<li><a href="/playlists/index.html">Playlists</a></li>'
+        '<li><a href="/speaking/index.html">Speaking</a></li>'
         '<li><a href="/iso20022-mcp/index.html" aria-current="page" '
         'class="active">Suite</a></li>'
-        '<li><a href="/papers/index.html">Research</a></li>'
-        '<li><a href="/case-studies/index.html">Case Studies</a></li>'
-        '<li><a href="/projects/index.html">Resources</a></li>'
-        '<li><a href="/about/index.html">About</a></li>'
     )
-    return re.sub(
+    out, n = re.subn(
         r'(<ul class="ap-menu">).*?(</ul>)',
         lambda m: m.group(1) + items + m.group(2),
         shell,
         count=1,
         flags=re.DOTALL,
     )
+    if n == 0:
+        raise SystemExit(
+            'build_iso20022_mcp: primary nav (<ul class="ap-menu">) not found in shell'
+        )
+    return out
+
+
+# In-page language-switcher items, e.g.
+#   <a class="ap-lang-item" href="/fr/articles/" data-lang="fr" role="menuitem">
+_SWITCHER_ITEM_RE = re.compile(
+    r'(<a\s+class="ap-lang-item"\s+)href="[^"]*"(\s+data-lang="([^"]+)")'
+)
+
+
+def _lang_switcher_home(html: str) -> str:
+    """Point every language-switcher item at its locale homepage.
+
+    This page is EN-only: its hreflang alternates are stripped by _fix_metas,
+    and scripts/postbuild/fix_lang_switcher.py rewires switcher items from a
+    page's *own* hreflang links, returning early when there are none. Left
+    alone, the switcher would keep the articles shell's misleading
+    ``/<lang>/articles-segment/`` links — so degrade it here to the locale
+    homepages (``/`` for EN).
+    """
+
+    def repl(m: re.Match) -> str:
+        lang = m.group(3)
+        home = "/" if lang == "en" else f"/{lang}/"
+        return f'{m.group(1)}href="{home}"{m.group(2)}'
+
+    out, n = _SWITCHER_ITEM_RE.subn(repl, html)
+    if n == 0:
+        raise SystemExit(
+            "build_iso20022_mcp: no .ap-lang-item switcher links found in shell"
+        )
+    return out
+
+
+HERO_OG_IMAGE = f"{CDN}/modern-corporate-office-with-technological-displays-1920.webp"
+# Intrinsic size of the hero webp above (checked against the served asset),
+# stamped into og:image:width/height so link-preview crops are computed right.
+HERO_OG_SIZE = (1920, 1076)
+
+
+def _sub_required(html: str, pattern: str, rep: str, what: str, count: int = 1) -> str:
+    """Targeted single-tag swap that fails the build if the anchor tag is
+    missing from the shell — a silent no-op ships the articles metadata."""
+    out, n = re.subn(pattern, lambda m: rep, html, count=count)
+    if n == 0:
+        raise SystemExit(f"build_iso20022_mcp: _fix_metas anchor missing: {what}")
+    return out
+
+
+def _upsert_head_tag(html: str, pattern: str, tag: str, what: str) -> str:
+    """Replace ``pattern`` with ``tag`` if present, else insert ``tag`` just
+    before ``</head>``. Never a silent no-op: the tag ends up on the page
+    either way."""
+    out, n = re.subn(pattern, lambda m: tag, html, count=1)
+    if n == 1:
+        return out
+    idx = html.find("</head>")
+    if idx < 0:
+        raise SystemExit(f"build_iso20022_mcp: no </head> to insert {what}")
+    return html[:idx] + tag + "\n" + html[idx:]
+
+
+def _keep_first_tag(html: str, pattern: str) -> str:
+    """Keep only the first tag matching ``pattern``, dropping later repeats
+    even when their content differs. Used for viewport: the local shell can
+    carry a second, entity-escaped viewport meta that _unescape_head_metas
+    revives — a page must ship exactly one."""
+    seen = False
+
+    def repl(m: re.Match) -> str:
+        nonlocal seen
+        if seen:
+            return ""
+        seen = True
+        return m.group(0)
+
+    return re.sub(pattern, repl, html)
+
+
+def _dedupe_exact_tags(html: str, pattern: str) -> str:
+    """Drop byte-identical repeats of a head tag, keeping the first. The two
+    theme-color tags with different ``media`` attrs are distinct and kept."""
+    seen: set[str] = set()
+
+    def repl(m: re.Match) -> str:
+        if m.group(0) in seen:
+            return ""
+        seen.add(m.group(0))
+        return m.group(0)
+
+    return re.sub(pattern, repl, html)
+
+
+def _jsonld_script(payload: dict) -> str:
+    """Serialise JSON-LD for embedding in a <script> element. ``</`` must be
+    escaped as ``<\\/`` so no value can close the script element early."""
+    return (
+        '<script type="application/ld+json">\n'
+        + json.dumps(payload, ensure_ascii=False, separators=(",", ":")).replace(
+            "</", "<\\/"
+        )
+        + "\n    </script>"
+    )
+
+
+def _hub_jsonld() -> str:
+    """WebPage + BreadcrumbList for the hub — replaces the articles shell's
+    CollectionPage block."""
+    payload = {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "WebPage",
+                "name": C["meta_title"],
+                "description": C["meta_description"],
+                "url": URL,
+                "inLanguage": "en-GB",
+                "isPartOf": {"@id": "https://sebastienrousseau.com/#website"},
+            },
+            {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Home",
+                        "item": "https://sebastienrousseau.com/",
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "ISO 20022 MCP Suite",
+                        "item": URL,
+                    },
+                ],
+            },
+        ],
+    }
+    return _jsonld_script(payload)
+
+
+# The articles shell's page-level JSON-LD: a @graph of CollectionPage +
+# BreadcrumbList describing /articles/. Wrong for this page — swapped out
+# wholesale for the hub's WebPage graph.
+_COLLECTION_LD_RE = re.compile(
+    r'<script type="application/ld\+json">\s*\{"@context":"https://schema\.org",'
+    r'"@graph":\[\{"@type":"CollectionPage"[\s\S]*?</script>'
+)
 
 
 def _fix_metas(html: str) -> str:
@@ -477,40 +649,109 @@ def _fix_metas(html: str) -> str:
 
     Targeted regex per meta tag -- never a global string replace, which would
     also corrupt nav links / breadcrumbs / aria-labels that share the text.
+    Every swap either verifies its anchor matched or upserts the tag; a shell
+    drift can no longer silently ship /articles metadata on this page.
     """
     title, desc = _esc(C["meta_title"]), _esc(C["meta_description"])
-    # The shell can carry more than one name="description" (a page one and an
-    # articles-listing one); replace every copy with the MCP description.
-    html = re.sub(
-        r'<meta name="description"[^>]*>',
-        f'<meta name="description" content="{desc}">',
-        html,
+
+    # Exactly one meta description: replace every copy the shell carries with
+    # the hub one, then drop all but the first of the now-identical tags.
+    desc_tag = f'<meta name="description" content="{desc}">'
+    html = _sub_required(
+        html, r'<meta name="description"[^>]*>', desc_tag, "meta description", count=0
     )
-    swaps = [
+    first_end = html.find(desc_tag) + len(desc_tag)
+    html = html[:first_end] + html[first_end:].replace(desc_tag, "")
+
+    # Social cards: the hub hero photo, not the shell's X share icon.
+    og_w, og_h = HERO_OG_SIZE
+    for pattern, rep, what in (
         (
-            r'<meta name="keywords"[^>]*>',
-            f'<meta name="keywords" content="{_esc(KEYWORDS)}">',
+            r'<meta property="og:image" content="[^"]*"',
+            f'<meta property="og:image" content="{HERO_OG_IMAGE}"',
+            "og:image",
         ),
         (
-            r'<meta name="apple-mobile-web-app-title"[^>]*>',
-            '<meta name="apple-mobile-web-app-title" content="ISO 20022 MCP">',
+            r'<meta property="og:image:width" content="[^"]*"',
+            f'<meta property="og:image:width" content="{og_w}"',
+            "og:image:width",
         ),
         (
-            r'<meta name="application-name"[^>]*>',
-            '<meta name="application-name" content="ISO 20022 MCP">',
+            r'<meta property="og:image:height" content="[^"]*"',
+            f'<meta property="og:image:height" content="{og_h}"',
+            "og:image:height",
+        ),
+        (
+            r'<meta name="twitter:image"[^>]*>',
+            f'<meta name="twitter:image" content="{HERO_OG_IMAGE}">',
+            "twitter:image",
         ),
         (
             r'<meta name="twitter:title"[^>]*>',
             f'<meta name="twitter:title" content="{title}">',
+            "twitter:title",
         ),
         (
             r'<meta name="twitter:description"[^>]*>',
             f'<meta name="twitter:description" content="{desc}">',
+            "twitter:description",
         ),
-    ]
-    for pat, rep in swaps:
-        html = re.sub(pat, rep, html, count=1)
-    return html
+    ):
+        html = _sub_required(html, pattern, rep, what)
+
+    # twitter:card only if the shell carries that key (it does today); a full
+    # photo warrants the large-image card.
+    html = re.sub(
+        r'<meta name="twitter:card"[^>]*>',
+        lambda m: '<meta name="twitter:card" content="summary_large_image">',
+        html,
+        count=1,
+    )
+
+    # These aren't in every shell build — upsert so the page always has them.
+    for pattern, tag, what in (
+        (
+            r'<meta name="keywords"[^>]*>',
+            f'<meta name="keywords" content="{_esc(KEYWORDS)}">',
+            "meta keywords",
+        ),
+        (
+            r'<meta name="apple-mobile-web-app-title"[^>]*>',
+            '<meta name="apple-mobile-web-app-title" content="ISO 20022 MCP">',
+            "apple-mobile-web-app-title",
+        ),
+        (
+            r'<meta name="application-name"[^>]*>',
+            '<meta name="application-name" content="ISO 20022 MCP">',
+            "application-name",
+        ),
+    ):
+        html = _upsert_head_tag(html, pattern, tag, what)
+
+    # EN-only page: the copied /articles hreflang alternates are wrong here
+    # and a page with no alternates is valid (test_hreflang_reciprocity).
+    # Removal is conditional: the raw ssg shell carries no hreflang links at
+    # all (postbuild injects them), so in a fresh build there is nothing to
+    # strip and that is normal, not an error.
+    html, _ = re.subn(
+        r'[ \t]*<link\s+rel="alternate"\s+hreflang="[^"]*"\s+href="[^"]*"\s*/?>\n?',
+        "",
+        html,
+    )
+
+    # Page JSON-LD: the articles CollectionPage graph → hub WebPage graph.
+    html, n = _COLLECTION_LD_RE.subn(lambda m: _hub_jsonld(), html, count=1)
+    if n == 0:
+        raise SystemExit(
+            "build_iso20022_mcp: _fix_metas anchor missing: CollectionPage JSON-LD"
+        )
+
+    # Never ship duplicate viewport / theme-color tags. Viewport dedupes by
+    # name (the unescaped shell can carry a second, differing copy);
+    # theme-color only drops byte-identical repeats, keeping the intentional
+    # light/dark media pair.
+    html = _keep_first_tag(html, r'<meta name="viewport"[^>]*>')
+    return _dedupe_exact_tags(html, r'<meta name="theme-color"[^>]*>')
 
 
 def main() -> int:
@@ -522,9 +763,11 @@ def main() -> int:
     body = _render_body(C)
     out = _swap_into_shell(shell, body, C["meta_title"], C["meta_description"], URL)
     out = _fix_metas(out)
+    out = _lang_switcher_home(out)
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(out, encoding="utf-8")
-    print(f"build_iso20022_mcp: wrote {OUT.relative_to(ROOT)}")
+    rel = OUT.relative_to(ROOT) if OUT.is_relative_to(ROOT) else OUT
+    print(f"build_iso20022_mcp: wrote {rel}")
     return 0
 
 
