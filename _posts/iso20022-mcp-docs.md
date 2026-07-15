@@ -23,7 +23,7 @@ image_height: "162"
 image_width: "162"
 image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "ISO 20022 MCP docs, Claude MCP setup, claude mcp add, Claude Desktop MCP config, pain.001 MCP, pacs.008 MCP, camt.053 MCP, reconciliation MCP, agent payments documentation"
-last_reviewed: "2026-07-14"
+last_reviewed: "2026-07-15"
 language: "en-GB"
 layout: "story"
 locale: "en_GB"
@@ -93,7 +93,7 @@ author_website: "https://sebastienrousseau.com"
 author_twitter: "@wwdseb"
 author_location: "London, UK"
 thanks: "Thanks for reading!"
-site_last_updated: "2026-07-14"
+site_last_updated: "2026-07-15"
 site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 site_software: "Static Site Generator, Rust"
@@ -163,6 +163,76 @@ claude mcp add camt053 -- uvx --from camt053-mcp camt053-mcp
 </div>
 </section>
 
+<section class="newsroom" id="clients">
+<header class="cat-section-head">
+<p class="cat-kicker">EVERY MCP CLIENT</p>
+<h2 class="cat-headline">Works with every MCP client.</h2>
+<p class="cat-lede">Claude Code and Claude Desktop are covered above. Below is the same stdio server in each other client's documented config shape, checked against the official documentation in July 2026. Remote-first platforms connect to hosted MCP servers instead, so they get an honest sentence, not a fake command.</p>
+</header>
+
+<h3 id="client-cursor">Cursor</h3>
+
+<p>Create <code>.cursor/mcp.json</code> in your project, or <code>~/.cursor/mcp.json</code> to make the suite available everywhere:</p>
+
+```json
+{
+  "mcpServers": {
+    "iso20022": {
+      "command": "uvx",
+      "args": ["--from", "iso20022-mcp[pain,pacs,acmt]", "iso20022-mcp"]
+    }
+  }
+}
+```
+
+<h3 id="client-windsurf">Windsurf</h3>
+
+<p>Same <code>mcpServers</code> shape, in <code>~/.codeium/windsurf/mcp_config.json</code>. Add the identical <code>iso20022</code> entry shown for Cursor.</p>
+
+<h3 id="client-vscode">VS Code with GitHub Copilot</h3>
+
+<p>Create <code>.vscode/mcp.json</code> in your workspace. VS Code is the odd one out: the top-level key is <code>servers</code>, not <code>mcpServers</code>:</p>
+
+```json
+{
+  "servers": {
+    "iso20022": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": ["--from", "iso20022-mcp[pain,pacs,acmt]", "iso20022-mcp"]
+    }
+  }
+}
+```
+
+<h3 id="client-gemini">Google Gemini CLI</h3>
+
+<p>Add an <code>mcpServers</code> block to <code>~/.gemini/settings.json</code> (or <code>.gemini/settings.json</code> per project), with the identical <code>iso20022</code> entry shown for Cursor. Transport is inferred: a <code>command</code> key means stdio.</p>
+
+<h3 id="client-openai">OpenAI Agents SDK</h3>
+
+<p>The Python Agents SDK spawns local stdio servers itself through <code>MCPServerStdio</code>, with the same command and args:</p>
+
+```python
+async with MCPServerStdio(
+    name="iso20022",
+    params={
+        "command": "uvx",
+        "args": ["--from", "iso20022-mcp[pain,pacs,acmt]", "iso20022-mcp"],
+    },
+) as server:
+    agent = Agent(name="Treasury", mcp_servers=[server])
+```
+
+<div class="story-why">
+<ul class="story-why-list">
+<li><strong>ChatGPT and the OpenAI Responses API.</strong> Remote-first: they connect only to MCP servers reachable over the public internet, via Streamable HTTP or HTTP/SSE and a <code>server_url</code>. They do not run local stdio processes, so pairing them with this suite means hosting it yourself.</li>
+<li><strong>Microsoft Copilot Studio.</strong> Adds MCP servers to agents as tools through Power Platform connectors, over the Streamable HTTP transport only. No local stdio support.</li>
+<li><strong>Zapier MCP.</strong> The inverse case: Zapier hosts a remote MCP endpoint exposing Zapier actions to your AI client via a generated <code>mcp.zapier.com</code> URL. It is a place agents call out to, not a way to run this suite.</li>
+</ul>
+</div>
+</section>
+
 <section class="newsroom" id="first-prompts">
 <header class="cat-section-head"><p class="cat-kicker">YOUR FIRST FIVE MINUTES</p><h2 class="cat-headline">Prompts to paste.</h2><p class="cat-lede">Seven meta-tools (<code>search</code>, <code>list_families</code>, <code>list_servers</code>, <code>describe</code>, <code>validate</code>, <code>generate</code>, <code>parse</code>) cover every family. These four prompts exercise the whole loop.</p></header>
 <div class="story-why">
@@ -173,6 +243,64 @@ claude mcp add camt053 -- uvx --from camt053-mcp camt053-mcp
 <li><strong>Parse.</strong> <em>"Here is our camt.053 statement, what came in yesterday?"</em> <code>parse</code> turns bank XML into structured data Claude can reason over.</li>
 </ul>
 </div>
+</section>
+
+<section class="newsroom" id="prompt-template">
+<header class="cat-section-head">
+<p class="cat-kicker">TESTED PROMPT TEMPLATE</p>
+<h2 class="cat-headline">A pain.001 prompt, proven end to end.</h2>
+<p class="cat-lede">Paste this into any connected client. On 15 July 2026 this exact record set was driven over stdio JSON-RPC through the suite's generate tooling and came back as a schema-valid pain.001.001.03 document.</p>
+</header>
+<pre id="mcp-prompt-template">Generate a SEPA pain.001.001.03 customer credit transfer and return the validated XML.
+Use exactly these records:
+- Message: MsgId MSG-2026-07-15-001, created 2026-07-15T09:30:00.000Z, 1 transaction, control sum 4200.00.
+- Initiating party (InitgPty): Acme Treasury GmbH, Mainzer Landstrasse 50, 60325 Frankfurt am Main, DE.
+- Payment block (PmtInf): PmtInfId PMT-2026-07-15-001, method TRF, batch booking "false", service level SEPA, requested execution date 2026-07-17.
+- Debtor (Dbtr): Acme Treasury GmbH, same address as the initiator, IBAN DE89370400440532013000, agent BIC COBADEFFXXX.
+- Creditor (Cdtr): Fournier Conseil SARL, Rue du Faubourg Saint-Honore 8, 75008 Paris, FR, IBAN FR1420041010050500013M02606, agent BIC BNPAFRPP.
+- Transaction: payment id TXN-2026-07-15-001, amount EUR 4200.00, charge bearer SLEV, purpose code SUPP.
+- Remittance (RmtInf): invoice INV-2026-183 dated 2026-07-01.
+Validate the records first, then generate. If validation fails, name the failing field and stop.</pre>
+<button type="button" class="copy-btn" data-copy="#mcp-prompt-template">Copy prompt</button>
+<div class="story-why">
+<ul class="story-why-list">
+<li><strong>What came back.</strong> A <code>pain.001.001.03</code> Document (namespace <code>urn:iso:std:iso:20022:tech:xsd:pain.001.001.03</code>) carrying <code>MsgId MSG-2026-07-15-001</code>, structured <code>PstlAdr</code> blocks for all three parties, <code>InstdAmt Ccy="EUR" 4200.00</code> and structured remittance. The tool validates against the bundled official XSD before returning; we re-validated the returned document independently and it passed.</li>
+<li><strong>Checked identifiers.</strong> Both IBANs pass a mod-97 integrity check (Python stdlib, no library), and both BICs match the ISO 9362 shape the input schema enforces.</li>
+<li><strong>Two field gotchas we hit.</strong> <code>date</code> must be a full ISO datetime (<code>2026-07-15T09:30:00.000Z</code>), not a bare date, and <code>batch_booking</code> must be the lowercase string <code>"false"</code>. pain.001.001.03 also requires structured addresses for initiator, debtor and creditor.</li>
+<li><strong>Gateway note, tested honestly.</strong> In gateway 0.0.2, <code>generate</code> for the pain family builds and XSD-validates the XML but then trips a response-shape bug returning it. Until that lands fixed, run the family server directly, <code>uvx --from "iso20022-mcp[pain,pacs,acmt]" pain001-mcp</code>, whose <code>generate_message</code> tool returned the document above. The gateway's <code>validate</code>, <code>describe</code>, <code>search</code> and listing tools worked as documented in the same session.</li>
+</ul>
+</div>
+</section>
+
+<section class="newsroom" id="prompt-evidence">
+<header class="cat-section-head">
+<p class="cat-kicker">WHAT THE TOOL RETURNED</p>
+<h2 class="cat-headline">The opening of the returned document.</h2>
+</header>
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:pain.001.001.03"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="urn:iso:std:iso:20022:tech:xsd:pain.001.001.03 pain.001.001.03.xsd">
+    <CstmrCdtTrfInitn>
+        <GrpHdr>
+            <MsgId>MSG-2026-07-15-001</MsgId>
+            <CreDtTm>2026-07-15T09:30:00.000Z</CreDtTm>
+            <NbOfTxs>1</NbOfTxs>
+            <InitgPty>
+                <Nm>Acme Treasury GmbH</Nm>
+                <PstlAdr>
+                    <StrtNm>Mainzer Landstrasse</StrtNm>
+                    <BldgNb>50</BldgNb>
+                    <PstCd>60325</PstCd>
+                    <TwnNm>Frankfurt am Main</TwnNm>
+                    <Ctry>DE</Ctry>
+                </PstlAdr>
+            </InitgPty>
+        </GrpHdr>
+```
+
 </section>
 
 <section class="newsroom" id="which-server">

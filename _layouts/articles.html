@@ -2139,6 +2139,77 @@
       .iso20022-mcp-page .mcp-start-cta{margin-block-start:1.8rem}
       .iso20022-mcp-page .spk-path .spk-eyebrow{color:var(--ink-soft)}
       @media (max-width:720px){.iso20022-mcp-page .spk-paths{grid-template-columns:1fr}}
+      /* --- MCP hub: trust flow (generate/validate local, human approval
+         wall before dispatch). All text pairs are AAA (>=7:1) in both
+         themes: --ink 16.8/19.3, --ink-soft 11.4/14.2, --ink-soft on
+         --bg-alt 10.1/11.4, --spk-blue on --bg 7.9/11.1, badge (--bg on
+         --spk-blue) 7.9/11.1, --ink-faint 8.1/9.6, --ink on --card
+         16.8/16.6, --spk-blue on --bg-alt 7.0/8.9. */
+      .iso20022-mcp-page .mcp-flow{list-style:none;margin:2.6rem 0 0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(14px,1.6vw,22px)}
+      .iso20022-mcp-page .mcp-step{min-width:0;position:relative;background:var(--bg-alt);border:2px solid transparent;border-radius:18px;padding:clamp(24px,2.6vw,36px)}
+      .iso20022-mcp-page .mcp-step-num{font-family:var(--spk-mono);font-size:.78rem;letter-spacing:.12em;color:var(--ink-soft);display:block;margin-block-end:.9rem}
+      .iso20022-mcp-page .mcp-step h3{font-size:1.16rem;margin-block-end:.55rem}
+      .iso20022-mcp-page .mcp-step p{font-size:.92rem;color:var(--ink-soft);margin:0}
+      .iso20022-mcp-page .mcp-step-gate{border-color:var(--spk-blue)}
+      .iso20022-mcp-page .mcp-gate-badge{position:absolute;inset-block-start:-.8em;inset-inline-start:clamp(24px,2.6vw,36px);background:var(--spk-blue);color:var(--bg);font-family:var(--spk-mono);font-size:.62rem;font-weight:600;text-transform:uppercase;letter-spacing:.12em;padding:.35em .9em;border-radius:20px}
+      @media (max-width:980px){.iso20022-mcp-page .mcp-flow{grid-template-columns:1fr 1fr}}
+      @media (max-width:560px){.iso20022-mcp-page .mcp-flow{grid-template-columns:1fr}}
+      /* --- MCP hub: security strip */
+      .iso20022-mcp-page .mcp-sec{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(18px,2.4vw,32px);margin-block-start:2.4rem}
+      .iso20022-mcp-page .mcp-sec-cell .mcp-icon{width:28px;height:28px;margin-block-end:.9rem}
+      .iso20022-mcp-page .mcp-sec-cell .spk-eyebrow{margin-block-end:.5rem}
+      .iso20022-mcp-page .mcp-sec-cell h3{font-size:1.1rem;margin-block-end:.5rem}
+      .iso20022-mcp-page .mcp-sec-cell p{font-size:.9rem;color:var(--ink-soft);margin:0}
+      @media (max-width:860px){.iso20022-mcp-page .mcp-sec{grid-template-columns:1fr 1fr}}
+      @media (max-width:520px){.iso20022-mcp-page .mcp-sec{grid-template-columns:1fr}}
+      /* --- MCP hub: code blocks + copy affordance */
+      .iso20022-mcp-page .mcp-code{background:var(--bg-alt);border:1px solid var(--spk-line);border-radius:12px;padding:14px 18px;margin:0;overflow-x:auto}
+      .iso20022-mcp-page .mcp-code code{font-family:var(--spk-mono);font-size:.8rem;line-height:1.6;color:var(--ink);background:transparent;white-space:pre}
+      .iso20022-mcp-page .mcp-copy{margin-block-start:.6rem;align-self:flex-start;font-family:var(--spk-mono);font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);background:transparent;border:1px solid var(--spk-line-strong);border-radius:6px;padding:.5em .9em;cursor:pointer;transition:border-color .15s,color .15s}
+      .iso20022-mcp-page .mcp-copy:hover{border-color:var(--ink);color:var(--ink)}
+      .iso20022-mcp-page .mcp-copy[data-copied="1"]{border-color:var(--ink);color:var(--ink)}
+      .iso20022-mcp-page .mcp-copy[data-copied="1"]::after{content:" \2713"}
+      /* --- MCP hub: multi-client grid */
+      .iso20022-mcp-page .mcp-clients{display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(16px,1.6vw,22px);margin-block-start:2.4rem}
+      .iso20022-mcp-page .mcp-clients-3{grid-template-columns:repeat(3,1fr);margin-block-start:1.2rem}
+      .iso20022-mcp-page .mcp-client{min-width:0;background:var(--bg-alt);border-radius:18px;padding:clamp(22px,2.6vw,32px);display:flex;flex-direction:column;gap:.6rem}
+      .iso20022-mcp-page .mcp-client h3{font-size:1.12rem;margin:0}
+      .iso20022-mcp-page .mcp-client-where{font-size:.88rem;color:var(--ink-soft);margin:0 0 .4rem}
+      .iso20022-mcp-page .mcp-client p{margin:0}
+      .iso20022-mcp-page .mcp-client .mcp-code{background:var(--card)}
+      .iso20022-mcp-page .mcp-client-remote p{font-size:.92rem;color:var(--ink-soft)}
+      .iso20022-mcp-page .mcp-clients-label{font-family:var(--spk-mono);font-size:.72rem;text-transform:uppercase;letter-spacing:.14em;color:var(--ink-faint);margin-block:2.2rem .2rem}
+      .iso20022-mcp-page .mcp-clients-foot{margin-block-start:1.6rem;font-size:.86rem;color:var(--ink-faint)}
+      @media (max-width:900px){.iso20022-mcp-page .mcp-clients,.iso20022-mcp-page .mcp-clients-3{grid-template-columns:1fr}}
+      /* --- MCP hub: CSS-only install tabs (radio inputs; :checked drives
+         the visible panel; radios stay keyboard-focusable). */
+      .iso20022-mcp-page .mcp-tabs{margin-block-start:2.2rem}
+      .iso20022-mcp-page .mcp-tab-in{position:absolute;width:1px;height:1px;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%)}
+      .iso20022-mcp-page .mcp-tab-labels{display:flex;flex-wrap:wrap;gap:.5rem;border-block-end:1px solid var(--spk-line);margin-block-end:1.2rem}
+      .iso20022-mcp-page .mcp-tab-labels label{font-family:var(--spk-sans);font-size:.92rem;font-weight:500;color:var(--ink-soft);padding:.7em 1.1em;border-block-end:2px solid transparent;cursor:pointer}
+      .iso20022-mcp-page .mcp-tab-labels label:hover{color:var(--ink)}
+      .iso20022-mcp-page #mcp-tab-uvx:checked~.mcp-tab-labels label[for="mcp-tab-uvx"],.iso20022-mcp-page #mcp-tab-pip:checked~.mcp-tab-labels label[for="mcp-tab-pip"],.iso20022-mcp-page #mcp-tab-json:checked~.mcp-tab-labels label[for="mcp-tab-json"]{color:var(--ink);border-block-end-color:var(--spk-blue)}
+      .iso20022-mcp-page #mcp-tab-uvx:focus-visible~.mcp-tab-labels label[for="mcp-tab-uvx"],.iso20022-mcp-page #mcp-tab-pip:focus-visible~.mcp-tab-labels label[for="mcp-tab-pip"],.iso20022-mcp-page #mcp-tab-json:focus-visible~.mcp-tab-labels label[for="mcp-tab-json"]{outline:2px solid var(--focus-ring-color);outline-offset:2px}
+      .iso20022-mcp-page .mcp-tab-panel{display:none}
+      .iso20022-mcp-page #mcp-tab-uvx:checked~#mcp-panel-uvx,.iso20022-mcp-page #mcp-tab-pip:checked~#mcp-panel-pip,.iso20022-mcp-page #mcp-tab-json:checked~#mcp-panel-json{display:block}
+      .iso20022-mcp-page .mcp-tab-note{margin-block-start:.9rem;font-size:.9rem;color:var(--ink-soft)}
+      /* --- MCP hub: captured tool-schema viewer (details/summary) */
+      .iso20022-mcp-page .mcp-schemas{margin-block-start:2.2rem;border-block-start:1px solid var(--spk-line)}
+      .iso20022-mcp-page .mcp-schema{border-block-end:1px solid var(--spk-line)}
+      .iso20022-mcp-page .mcp-schema summary{list-style:none;cursor:pointer;display:flex;align-items:baseline;gap:1rem;padding-block:1.1em}
+      .iso20022-mcp-page .mcp-schema summary::-webkit-details-marker{display:none}
+      .iso20022-mcp-page .mcp-schema summary .spk-mono{font-size:1rem;flex-shrink:0}
+      .iso20022-mcp-page .mcp-schema-sum{font-size:.9rem;color:var(--ink-soft);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;flex:1}
+      .iso20022-mcp-page .mcp-schema[open] summary .spk-ic{transform:rotate(45deg)}
+      .iso20022-mcp-page .mcp-schema-body{padding-block:0 1.3em}
+      .iso20022-mcp-page .mcp-schema-body p{font-size:.92rem;color:var(--ink-soft);max-width:72ch;margin-block-end:.9rem}
+      .iso20022-mcp-page .mcp-props{list-style:none;margin:0;padding:0}
+      .iso20022-mcp-page .mcp-props li{display:grid;grid-template-columns:minmax(110px,max-content) max-content 1fr;gap:.4rem 1.2rem;font-size:.88rem;padding-block:.5em;border-block-start:1px solid var(--spk-line)}
+      .iso20022-mcp-page .mcp-prop-type{font-family:var(--spk-mono);font-size:.72rem;color:var(--ink-faint);text-transform:uppercase;letter-spacing:.06em}
+      .iso20022-mcp-page .mcp-prop-desc{color:var(--ink-soft)}
+      .iso20022-mcp-page .mcp-props-none{font-size:.88rem;color:var(--ink-faint)}
+      .iso20022-mcp-page .mcp-schema-note{margin-block-start:1.4rem;font-size:.86rem;color:var(--ink-faint)}
+      @media (max-width:640px){.iso20022-mcp-page .mcp-props li{grid-template-columns:1fr;gap:.15rem}.iso20022-mcp-page .mcp-schema-sum{display:none}}
     </style>
   </head>
   <body itemscope itemtype="http://schema.org/WebPage">

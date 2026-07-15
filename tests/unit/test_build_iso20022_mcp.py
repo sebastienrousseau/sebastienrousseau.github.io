@@ -82,9 +82,13 @@ def _fake_shell() -> str:
 """
 
 
-def _run_build(shell_text: str) -> str:
+def _run_build(shell_text: str, schemas_src: Path | None = None) -> str:
     """Run mcp.main() against ``shell_text`` in a temp tree, returning the
-    written page. Restores the module's real paths afterwards."""
+    written page. Restores the module's real paths afterwards.
+
+    ``schemas_src`` overrides the captured tool-schema snapshot the schema
+    viewer renders from (pass a missing path to exercise the graceful skip);
+    by default the committed ``_data/mcp/tool_schemas.json`` is used."""
     with tempfile.TemporaryDirectory() as tmp:
         tmp_path = Path(tmp)
         shell_path = tmp_path / "articles" / "index.html"
@@ -92,13 +96,17 @@ def _run_build(shell_text: str) -> str:
         shell_path.write_text(shell_text, encoding="utf-8")
         out_path = tmp_path / "iso20022-mcp" / "index.html"
         old_shell, old_out = mcp.SHELL_SRC, mcp.OUT
+        old_schemas = mcp.SCHEMAS_SRC
         mcp.SHELL_SRC, mcp.OUT = shell_path, out_path
+        if schemas_src is not None:
+            mcp.SCHEMAS_SRC = schemas_src
         try:
             rc = mcp.main()
             assert rc == 0
             return out_path.read_text(encoding="utf-8")
         finally:
             mcp.SHELL_SRC, mcp.OUT = old_shell, old_out
+            mcp.SCHEMAS_SRC = old_schemas
 
 
 # --- (a) full page build against the fake shell ------------------------------
@@ -163,6 +171,119 @@ def test_full_build_head_hygiene_and_copy() -> None:
     assert '<code class="spk-mono">' in out
     assert '<span class="spk-arw" aria-hidden="true">' in out
     assert 'aria-label="Read the docs: The gateway"' in out
+
+
+# --- enterprise sections: flow / security / clients / tabs / schemas ---------
+
+
+def test_flow_has_four_steps_with_one_approval_gate() -> None:
+    out = _run_build(_fake_shell())
+    flow = out.split('<ol class="mcp-flow">', 1)[1].split("</ol>", 1)[0]
+    assert flow.count('<li class="mcp-step') == 4
+    assert flow.count("mcp-step-gate") == 1
+    assert flow.count('<span class="mcp-gate-badge">Approval wall</span>') == 1
+    # The dispatch stage stays out of the servers' hands.
+    assert "never move money" in flow
+    assert "A human approves." in flow
+
+
+def test_security_strip_has_four_verified_claims() -> None:
+    out = _run_build(_fake_shell())
+    strip = out.split('<div class="mcp-sec">', 1)[1].split("</div></div></section>", 1)[0]
+    assert strip.count('<div class="mcp-sec-cell">') == 4
+    assert "Zero data retention." in strip
+    assert "no outbound network calls" in strip
+    assert "Apache-2.0" in strip
+    assert "100% branch-tested." in strip
+
+
+def test_clients_grid_covers_stdio_and_remote_accurately() -> None:
+    out = _run_build(_fake_shell())
+    sec = out.split('id="mcp-clients"', 1)[1].split("</section>", 1)[0]
+    for name in (
+        "Claude Code", "Claude Desktop", "Cursor", "Windsurf",
+        "VS Code + GitHub Copilot", "Google Gemini CLI",
+        "OpenAI", "Microsoft Copilot Studio", "Zapier MCP",
+    ):
+        assert f"<h3>{name}</h3>" in sec
+    # Each documented stdio config carries the proven uvx entry.
+    assert sec.count("&quot;--from&quot;, &quot;iso20022-mcp[pain,pacs,acmt]&quot;") >= 5
+    # VS Code's shape differs: top-level "servers", not "mcpServers".
+    assert "&quot;servers&quot;:" in sec
+    assert sec.count("&quot;mcpServers&quot;:") >= 3
+    # Remote-first platforms get a sentence, never a fake local command.
+    zapier = sec.split("<h3>Zapier MCP</h3>", 1)[1].split("</div>", 1)[0]
+    assert "mcp-code" not in zapier
+    copilot = sec.split("<h3>Microsoft Copilot Studio</h3>", 1)[1].split("</div>", 1)[0]
+    assert "mcp-code" not in copilot
+    # OpenAI is framed both ways: local stdio via the Agents SDK class,
+    # remote-only for ChatGPT connectors.
+    assert "MCPServerStdio" in sec
+    assert "Streamable HTTP" in sec
+
+
+def test_install_tabs_are_css_only_radio_pattern() -> None:
+    out = _run_build(_fake_shell())
+    tabs = out.split('<div class="mcp-tabs">', 1)[1].split("</section>", 1)[0]
+    assert tabs.count('name="mcp-install-tab"') == 3
+    assert tabs.count("checked") == 1
+    for tid in ("uvx", "pip", "json"):
+        assert f'id="mcp-tab-{tid}"' in tabs
+        assert f'<label for="mcp-tab-{tid}">' in tabs
+        assert f'id="mcp-panel-{tid}"' in tabs
+        # Copy buttons ride main.js's [data-copy] delegate (CSP-safe).
+        assert f'data-copy="#mcp-code-{tid}"' in tabs
+    # Radios precede labels and panels so the CSS ~ combinator can reach them.
+    assert tabs.find('id="mcp-tab-uvx"') < tabs.find('<div class="mcp-tab-labels">')
+    assert tabs.find('<div class="mcp-tab-labels">') < tabs.find('id="mcp-panel-uvx"')
+
+
+def test_schema_viewer_renders_captured_tools() -> None:
+    out = _run_build(_fake_shell())
+    sec = out.split('id="mcp-schemas"', 1)[1].split("</section>", 1)[0]
+    assert sec.count('<details class="mcp-schema">') == 7
+    for tool in (
+        "search", "list_families", "list_servers", "describe",
+        "validate", "generate", "parse",
+    ):
+        assert f'<code class="spk-mono">{tool}</code>' in sec
+    # Input properties come from the live capture, not hand-written copy.
+    assert '<code class="spk-mono">message_type</code>' in sec
+    assert "read-only, idempotent and closed-world" in sec
+
+
+def test_schema_viewer_skips_gracefully_when_snapshot_missing() -> None:
+    out = _run_build(_fake_shell(), schemas_src=Path("/nonexistent/tool_schemas.json"))
+    assert 'id="mcp-schemas"' not in out
+    # The rest of the page still builds.
+    assert 'id="mcp-clients"' in out
+
+
+def test_committed_tool_schema_snapshot_is_sound() -> None:
+    """The committed tools/list capture stays parseable and read-only."""
+    import json
+
+    data = json.loads(
+        (_ROOT / "_data" / "mcp" / "tool_schemas.json").read_text(encoding="utf-8")
+    )
+    tools = data["tools"]
+    assert [t["name"] for t in tools] == [
+        "search", "list_families", "list_servers", "describe",
+        "validate", "generate", "parse",
+    ]
+    for t in tools:
+        assert t["description"]
+        assert t["inputSchema"]["type"] == "object"
+        ann = t["annotations"]
+        assert ann["readOnlyHint"] is True
+        assert ann["destructiveHint"] is False
+
+
+def test_body_ships_no_inline_styles_or_em_dashes() -> None:
+    out = _run_build(_fake_shell())
+    body = out.split("<body", 1)[1]
+    assert "style=" not in body  # strict CSP: zero inline styles
+    assert "—" not in body  # no em dashes anywhere in rendered copy
 
 
 # --- (b) anti-silent-no-op: a missing anchor must abort ----------------------

@@ -1,0 +1,222 @@
+{
+  "_meta": {
+    "captured": "2026-07-15",
+    "server": {
+      "name": "iso20022",
+      "version": "0.0.2"
+    },
+    "command": "uvx --from \"iso20022-mcp[pain,pacs,acmt]\" iso20022-mcp",
+    "method": "MCP stdio JSON-RPC tools/list (protocol 2024-11-05)"
+  },
+  "tools": [
+    {
+      "name": "search",
+      "description": "Search the ISO 20022 catalogue by use-case, message type or keyword (e.g. 'reconciliation', 'make a payment', 'pacs.008') and get the matching message types, their family, and which package provides them.",
+      "inputSchema": {
+        "properties": {
+          "query": {
+            "default": "",
+            "description": "Use-case, message type or keyword. Empty = all.",
+            "title": "Query",
+            "type": "string"
+          }
+        },
+        "title": "searchArguments",
+        "type": "object"
+      },
+      "outputSchema": {
+        "additionalProperties": true,
+        "title": "searchDictOutput",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "list_families",
+      "description": "List every ISO 20022 family the gateway routes to (pain, pacs, camt, acmt): its capabilities, backing package, and whether that package is installed in this environment.",
+      "inputSchema": {
+        "properties": {},
+        "title": "list_familiesArguments",
+        "type": "object"
+      },
+      "outputSchema": {
+        "additionalProperties": true,
+        "title": "list_familiesDictOutput",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "list_servers",
+      "description": "List the whole ISO 20022 suite the gateway knows: the message families (pain/pacs/camt/acmt), the Exceptions & Investigations messages (camt.056/camt.029), and the specialized servers (reconciliation, agent-payment bridge) with what each does.",
+      "inputSchema": {
+        "properties": {},
+        "title": "list_serversArguments",
+        "type": "object"
+      },
+      "outputSchema": {
+        "additionalProperties": true,
+        "title": "list_serversDictOutput",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "describe",
+      "description": "Describe a message type: its required fields and input JSON Schema, resolved from the family's backing server.",
+      "inputSchema": {
+        "properties": {
+          "message_type": {
+            "description": "ISO 20022 message type or family prefix, e.g. 'pacs.008' or 'camt.053'.",
+            "title": "Message Type",
+            "type": "string"
+          }
+        },
+        "required": [
+          "message_type"
+        ],
+        "title": "describeArguments",
+        "type": "object"
+      },
+      "outputSchema": {
+        "additionalProperties": true,
+        "title": "describeDictOutput",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "validate",
+      "description": "Validate records for a message type against its JSON Schema, via the family's backing server.",
+      "inputSchema": {
+        "properties": {
+          "message_type": {
+            "description": "ISO 20022 message type or family prefix, e.g. 'pacs.008' or 'camt.053'.",
+            "title": "Message Type",
+            "type": "string"
+          },
+          "records": {
+            "description": "List of record objects to validate or generate a message from.",
+            "items": {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            "title": "Records",
+            "type": "array"
+          }
+        },
+        "required": [
+          "message_type",
+          "records"
+        ],
+        "title": "validateArguments",
+        "type": "object"
+      },
+      "outputSchema": {
+        "additionalProperties": true,
+        "title": "validateDictOutput",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "generate",
+      "description": "Generate a validated ISO 20022 XML message from records. Supported for initiation and interbank families (pain, pacs, acmt); statement families (camt) are inbound-only and return an explanatory error.",
+      "inputSchema": {
+        "properties": {
+          "message_type": {
+            "description": "ISO 20022 message type or family prefix, e.g. 'pacs.008' or 'camt.053'.",
+            "title": "Message Type",
+            "type": "string"
+          },
+          "records": {
+            "description": "List of record objects to validate or generate a message from.",
+            "items": {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            "title": "Records",
+            "type": "array"
+          }
+        },
+        "required": [
+          "message_type",
+          "records"
+        ],
+        "title": "generateArguments",
+        "type": "object"
+      },
+      "outputSchema": {
+        "additionalProperties": true,
+        "title": "generateDictOutput",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "parse",
+      "description": "Parse an inbound ISO 20022 XML message into structured data. Supported for interbank (pacs) and statement (camt) families; initiation families return an explanatory error.",
+      "inputSchema": {
+        "properties": {
+          "message_type": {
+            "description": "ISO 20022 message type or family prefix, e.g. 'pacs.008' or 'camt.053'.",
+            "title": "Message Type",
+            "type": "string"
+          },
+          "xml": {
+            "description": "Raw ISO 20022 XML to parse.",
+            "title": "Xml",
+            "type": "string"
+          }
+        },
+        "required": [
+          "message_type",
+          "xml"
+        ],
+        "title": "parseArguments",
+        "type": "object"
+      },
+      "outputSchema": {
+        "additionalProperties": true,
+        "title": "parseDictOutput",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    }
+  ]
+}
