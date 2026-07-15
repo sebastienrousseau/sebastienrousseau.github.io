@@ -13,7 +13,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "Jul 14, 2026"
-description: "Tool reference for the ISO 20022 MCP Suite: every server and the tools it exposes — the gateway, pain001, pacs008, camt053, acmt001, reconcile, camt-exceptions and the AP2/x402 bridge."
+description: "Tool reference for the ISO 20022 MCP Suite: every server and the tools it exposes, from the gateway and message servers to reconcile, camt-exceptions, bankstatementparser and the AP2/x402 bridge."
 format-detection: "telephone=no"
 hreflang: "en"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -33,17 +33,17 @@ logo_width: "44"
 logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 menu: ""
 measurementID: "G-169G4ET5HQ"
-name: "ISO 20022 MCP Suite — tool reference."
+name: "ISO 20022 MCP Suite: tool reference."
 permalink: "https://sebastienrousseau.com/iso20022-mcp-reference"
 rating: "general"
 referrer: "no-referrer"
 revisit-after: "7 days"
 robots: "index, follow"
 short_name: "iso20022-mcp reference"
-subtitle: "Every server in the suite and the tools it exposes. Eight servers, one consistent contract: JSON in, validated JSON or XSD-checked XML out."
+subtitle: "Every server in the suite and the tools it exposes. Nine servers, one consistent contract: JSON in, validated JSON or XSD-checked XML out."
 tags: "ISO 20022, MCP, Tool Reference, pain.001, pacs.008, camt.053, acmt.001, Reconciliation, AP2, x402, Fintech, Open Source"
 theme-color: "0, 67, 165"
-title: "ISO 20022 MCP Suite — tool reference"
+title: "ISO 20022 MCP Suite: tool reference"
 url: "https://sebastienrousseau.com/iso20022-mcp-reference"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
@@ -56,7 +56,7 @@ item_description: "Tool reference for the ISO 20022 MCP Suite: every server and 
 item_guid: "https://sebastienrousseau.com/iso20022-mcp-reference/rss.xml"
 item_link: "https://sebastienrousseau.com/iso20022-mcp-reference/rss.xml"
 item_pub_date: "Tue, 14 Jul 2026 06:06:06 +0000"
-item_title: "ISO 20022 MCP Suite — tool reference"
+item_title: "ISO 20022 MCP Suite: tool reference"
 last_build_date: "Tue, 14 Jul 2026 06:06:06 +0000"
 managing_editor: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 pub_date: "Tue, 14 Jul 2026 06:06:06 +0000"
@@ -85,7 +85,7 @@ twitter_description: "Tool reference for the ISO 20022 MCP Suite: every server a
 twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 twitter_image_alt: "ISO 20022 MCP Suite tool reference"
 twitter_site: "@wwdseb"
-twitter_title: "ISO 20022 MCP Suite — tool reference"
+twitter_title: "ISO 20022 MCP Suite: tool reference"
 twitter_url: "https://sebastienrousseau.com/iso20022-mcp-reference"
 
 # Humans.txt - The Humans.txt front matter (YAML).
@@ -105,76 +105,85 @@ site_software: "Static Site Generator, Rust"
 <section class="newsroom" id="gateway">
 <header class="cat-section-head"><p class="cat-kicker">iso20022-mcp · THE GATEWAY</p><h2 class="cat-headline">One surface, all families.</h2></header>
 <div class="story-why"><ul class="story-why-list">
-<li><code>search(query)</code> — find message types and suite servers by use-case ("cancel a payment").</li>
-<li><code>list_families()</code> · <code>list_servers()</code> — the families and the full suite map, with install status.</li>
-<li><code>describe(message_type)</code> — required fields + input schema for a type.</li>
-<li><code>validate(message_type, records)</code> · <code>generate(message_type, records)</code> · <code>parse(message_type, xml)</code> — routed to the family's backing server; camt.056/camt.029 route to camt-exceptions.</li>
+<li><code>search(query)</code>: find message types and suite servers by use-case ("cancel a payment").</li>
+<li><code>list_families()</code> · <code>list_servers()</code>: the families and the full suite map, with install status.</li>
+<li><code>describe(message_type)</code>: required fields + input schema for a type.</li>
+<li><code>validate(message_type, records)</code> · <code>generate(message_type, records)</code> · <code>parse(message_type, xml)</code>: routed to the family's backing server; camt.056/camt.029 route to camt-exceptions.</li>
 </ul></div>
 </section>
 
 <section class="newsroom" id="pain001">
 <header class="cat-section-head"><p class="cat-kicker">pain001-mcp · INITIATE</p><h2 class="cat-headline">Customer credit transfers.</h2></header>
 <div class="story-why"><ul class="story-why-list">
-<li><code>list_message_types</code> · <code>get_required_fields</code> · <code>get_input_schema</code> — discover pain.001 shapes.</li>
-<li><code>validate_records</code> · <code>validate_identifier</code> · <code>validate_xml_against_schema</code> · <code>validate_payment_scheme</code> — pre-flight checks (IBAN/BIC, XSD, SEPA/CBPR rulebooks).</li>
-<li><code>generate_message</code> · <code>generate_message_from_file</code> · <code>build_payment_batch</code> — produce validated pain.001.</li>
-<li><code>migrate_records</code> · <code>sanitize_to_iso</code> · <code>convert_mt</code> — cross-version migration, charset sanitisation, MT101 → pain.001.</li>
+<li><code>list_message_types</code> · <code>get_required_fields</code> · <code>get_input_schema</code>: discover pain.001 shapes.</li>
+<li><code>validate_records</code> · <code>validate_identifier</code> · <code>validate_xml_against_schema</code> · <code>validate_payment_scheme</code>: pre-flight checks (IBAN/BIC, XSD, SEPA/CBPR rulebooks).</li>
+<li><code>generate_message</code> · <code>generate_message_from_file</code> · <code>build_payment_batch</code>: produce validated pain.001.</li>
+<li><code>migrate_records</code> · <code>sanitize_to_iso</code> · <code>convert_mt</code>: cross-version migration, charset sanitisation, MT101 → pain.001.</li>
 </ul></div>
 </section>
 
 <section class="newsroom" id="pacs008">
 <header class="cat-section-head"><p class="cat-kicker">pacs008-mcp · SETTLE</p><h2 class="cat-headline">FI-to-FI transfers, returns, status.</h2></header>
 <div class="story-why"><ul class="story-why-list">
-<li><code>list_message_types</code> · <code>list_schemes</code> · <code>get_scheme</code> · <code>get_required_fields</code> · <code>get_input_schema</code> — pacs.008/.004/.002 discovery.</li>
-<li><code>validate_records</code> · <code>validate_scheme</code> · <code>validate_xml</code> · <code>generate_message</code> · <code>parse_message</code> — the generate/validate/parse core.</li>
-<li><code>convert_mt103</code> — legacy MT103 → pacs.008.</li>
-<li><code>classify_address</code> · <code>validate_address</code> · <code>repair_address</code> · <code>validate_addresses</code> — the November 2026 structured-address cliff toolkit.</li>
+<li><code>list_message_types</code> · <code>list_schemes</code> · <code>get_scheme</code> · <code>get_required_fields</code> · <code>get_input_schema</code>: pacs.008/.004/.002 discovery.</li>
+<li><code>validate_records</code> · <code>validate_scheme</code> · <code>validate_xml</code> · <code>generate_message</code> · <code>parse_message</code>: the generate/validate/parse core.</li>
+<li><code>convert_mt103</code>: legacy MT103 → pacs.008.</li>
+<li><code>classify_address</code> · <code>validate_address</code> · <code>repair_address</code> · <code>validate_addresses</code>: the November 2026 structured-address cliff toolkit.</li>
 </ul></div>
 </section>
 
 <section class="newsroom" id="camt053">
 <header class="cat-section-head"><p class="cat-kicker">camt053-mcp · READ STATEMENTS</p><h2 class="cat-headline">Bank-to-customer statements.</h2></header>
 <div class="story-why"><ul class="story-why-list">
-<li><code>list_message_types</code> · <code>get_required_fields</code> · <code>get_input_schema</code> · <code>validate_records</code> · <code>validate_statement</code> — camt.053/052 discovery + validation.</li>
-<li><code>parse_statement</code> · <code>list_entries</code> · <code>filter_entries</code> — parse and query booked entries.</li>
-<li><code>convert_mt940</code> · <code>convert_mt942</code> — legacy MT94x → camt.</li>
-<li><code>list_return_reasons</code> · <code>generate_reversal</code> · <code>check_cbpr_readiness</code> — reason-code lookup, reversing entries, Nov-2026 CBPR+ readiness.</li>
+<li><code>list_message_types</code> · <code>get_required_fields</code> · <code>get_input_schema</code> · <code>validate_records</code> · <code>validate_statement</code>: camt.053/052 discovery + validation.</li>
+<li><code>parse_statement</code> · <code>list_entries</code> · <code>filter_entries</code>: parse and query booked entries.</li>
+<li><code>convert_mt940</code> · <code>convert_mt942</code>: legacy MT94x → camt.</li>
+<li><code>list_return_reasons</code> · <code>generate_reversal</code> · <code>check_cbpr_readiness</code>: reason-code lookup, reversing entries, Nov-2026 CBPR+ readiness.</li>
 </ul></div>
 </section>
 
 <section class="newsroom" id="reconcile">
 <header class="cat-section-head"><p class="cat-kicker">reconcile-mcp · RECONCILE</p><h2 class="cat-headline">Statements against expected payments.</h2></header>
 <div class="story-why"><ul class="story-why-list">
-<li><code>reconcile(expected, observed, options)</code> — exact, short/over, one-to-many and many-to-one matching with an explainable score and reasons.</li>
-<li><code>explain_match(expected, observed)</code> — the per-signal breakdown for a single pair (a tuning aid).</li>
-<li><code>normalize_pain001(document)</code> · <code>normalize_camt053(document)</code> — adapt parsed output into canonical records.</li>
-<li><code>list_sandbox_scenarios</code> · <code>load_sandbox_scenario</code> · <code>run_sandbox_scenario</code> — deterministic test-mode; try it with zero real data.</li>
+<li><code>reconcile(expected, observed, options)</code>: exact, short/over, one-to-many and many-to-one matching with an explainable score and reasons.</li>
+<li><code>explain_match(expected, observed)</code>: the per-signal breakdown for a single pair (a tuning aid).</li>
+<li><code>normalize_pain001(document)</code> · <code>normalize_camt053(document)</code>: adapt parsed output into canonical records.</li>
+<li><code>list_sandbox_scenarios</code> · <code>load_sandbox_scenario</code> · <code>run_sandbox_scenario</code>: deterministic test-mode; try it with zero real data.</li>
 </ul></div>
 </section>
 
 <section class="newsroom" id="camt-exceptions">
 <header class="cat-section-head"><p class="cat-kicker">camt-exceptions · RESOLVE</p><h2 class="cat-headline">Cancellation &amp; investigation.</h2></header>
 <div class="story-why"><ul class="story-why-list">
-<li><code>list_message_types</code> · <code>get_required_fields</code> — supported E&amp;I types (camt.056, camt.029) and their fields.</li>
-<li><code>generate_message(message_type, record)</code> — a validated E&amp;I message, checked against the bundled official XSD before it is returned.</li>
-<li><code>validate_xml(message_type, xml)</code> — validate raw XML against the message's XSD.</li>
+<li><code>list_message_types</code> · <code>get_required_fields</code>: supported E&amp;I types (camt.056, camt.029) and their fields.</li>
+<li><code>generate_message(message_type, record)</code>: a validated E&amp;I message, checked against the bundled official XSD before it is returned.</li>
+<li><code>validate_xml(message_type, xml)</code>: validate raw XML against the message's XSD.</li>
 </ul></div>
 </section>
 
 <section class="newsroom" id="ap2">
 <header class="cat-section-head"><p class="cat-kicker">ap2-iso20022 · BRIDGE</p><h2 class="cat-headline">Agent mandate → bank rail.</h2></header>
 <div class="story-why"><ul class="story-why-list">
-<li><code>normalize_ap2(payload)</code> · <code>normalize_x402(payload)</code> — a Google AP2 or Coinbase x402 mandate into a canonical mandate.</li>
-<li><code>check_mandate(mandate, as_of)</code> — guardrails: required fields, spending cap, expiry, authorisation proof.</li>
-<li><code>to_pain001(mandate)</code> · <code>to_pacs008(mandate)</code> — records that feed pain001 / pacs008 for wire-valid XML. Never moves money.</li>
+<li><code>normalize_ap2(payload)</code> · <code>normalize_x402(payload)</code>: a Google AP2 or Coinbase x402 mandate into a canonical mandate.</li>
+<li><code>check_mandate(mandate, as_of)</code>: guardrails: required fields, spending cap, expiry, authorisation proof.</li>
+<li><code>to_pain001(mandate)</code> · <code>to_pacs008(mandate)</code>: records that feed pain001 / pacs008 for wire-valid XML. Never moves money.</li>
 </ul></div>
 </section>
 
 <section class="newsroom" id="acmt001">
 <header class="cat-section-head"><p class="cat-kicker">acmt001-mcp · ACCOUNTS</p><h2 class="cat-headline">Account management.</h2></header>
 <div class="story-why"><ul class="story-why-list">
-<li><code>list_message_types</code> · <code>get_required_fields</code> · <code>get_input_schema</code> · <code>validate_records</code> · <code>validate_identifier</code> · <code>generate_message</code> — open, maintain and verify accounts (acmt.001), validated against the bundled schema.</li>
+<li><code>list_message_types</code> · <code>get_required_fields</code> · <code>get_input_schema</code> · <code>validate_records</code> · <code>validate_identifier</code> · <code>generate_message</code>: open, maintain and verify accounts (acmt.001), validated against the bundled schema.</li>
 </ul></div>
 </section>
 
-<section class="setup-finale" aria-labelledby="finale-heading"><p class="setup-finale-eyebrow">CONSISTENT ACROSS ALL EIGHT SERVERS</p><h2 id="finale-heading" class="setup-finale-headline">Same contract, every server.</h2><p class="setup-finale-lede">JSON in; validated JSON or XSD-checked XML out; a structured error rather than an exception. Read-only, idempotent, closed-world hints so your client can reason about safety.</p><p class="setup-finale-cta"><a href="/iso20022-mcp-recipes/index.html">See the recipes <span aria-hidden="true">›</span></a> · <a href="/iso20022-mcp/index.html">Back to the suite <span aria-hidden="true">›</span></a></p></section>
+<section class="newsroom" id="bankstatementparser">
+<header class="cat-section-head"><p class="cat-kicker">bankstatementparser-mcp · PARSE STATEMENTS</p><h2 class="cat-headline">Legacy statements, structured.</h2></header>
+<div class="story-why"><ul class="story-why-list">
+<li><code>list_supported_formats</code> · <code>detect_format</code>: the formats the parser reads (camt.053, pain.001, MT940, CSV, OFX, QFX) and which one an inline payload is.</li>
+<li><code>parse_statement</code> · <code>summarize_statement</code>: parse a statement into structured transactions plus a summary, or return the summary alone.</li>
+<li><code>validate_statement</code>: a dry-run check that a statement parses cleanly, with structured results.</li>
+</ul></div>
+</section>
+
+<section class="setup-finale" aria-labelledby="finale-heading"><p class="setup-finale-eyebrow">CONSISTENT ACROSS ALL NINE SERVERS</p><h2 id="finale-heading" class="setup-finale-headline">Same contract, every server.</h2><p class="setup-finale-lede">JSON in; validated JSON or XSD-checked XML out; a structured error rather than an exception. Read-only, idempotent, closed-world hints so your client can reason about safety.</p><p class="setup-finale-cta"><a href="/iso20022-mcp-recipes/index.html">See the recipes <span aria-hidden="true">›</span></a> · <a href="/iso20022-mcp/index.html">Back to the suite <span aria-hidden="true">›</span></a></p></section>

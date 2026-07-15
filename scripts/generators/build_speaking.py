@@ -39,6 +39,26 @@ from build_case_studies import _swap_into_shell
 from build_translations._fm import render_markdown
 from case_studies_components import _esc
 
+try:
+    # Shared helper (hosted by build_case_studies): unescapes entity-escaped
+    # <meta>/<link> tags, bounded to the <head>…</head> slice.
+    from build_case_studies import _unescape_head_metas
+except ImportError:  # pragma: no cover — local head-bounded copy until shared
+    def _unescape_head_metas(html_text: str) -> str:
+        """Repair entity-escaped ``<meta>`` / ``<link>`` tags some local SSG
+        builds emit in the shell's <head>. No-op on CI (tags are real there).
+        Bounded to the <head> slice so body prose is never unescaped."""
+        end = html_text.find("</head>")
+        if end < 0:
+            return html_text
+        head = re.sub(
+            r"&lt;(?:meta|link)\b.*?&gt;",
+            lambda m: _html.unescape(m.group(0)),
+            html_text[:end],
+            flags=re.DOTALL,
+        )
+        return head + html_text[end:]
+
 ROOT = Path(__file__).resolve().parents[2]
 PUBLIC = ROOT / "public"
 SPEAKING_MD = ROOT / "_data" / "proof" / "speaking.md"
@@ -58,7 +78,7 @@ _MONO_TERMS = sorted(
     key=len,
     reverse=True,
 )
-_MONO_RE = re.compile("|".join(re.escape(t) for t in _MONO_TERMS))
+_MONO_RE = re.compile(r"\b(?:" + "|".join(re.escape(t) for t in _MONO_TERMS) + r")\b")
 
 
 def _mono(escaped: str) -> str:
@@ -75,7 +95,12 @@ def _metrics() -> dict[str, str]:
     """Live KPI figures keyed by metric name, formatted for display."""
     try:
         raw = json.loads(METRICS_JSON.read_text(encoding="utf-8")).get("stats", [])
-    except (OSError, ValueError):
+    except (OSError, ValueError) as exc:
+        print(
+            f"build_speaking: warning — could not read {METRICS_JSON}: {exc}; "
+            "stats band will be dropped",
+            file=sys.stderr,
+        )
         return {}
     out: dict[str, str] = {}
     for s in raw:
@@ -97,29 +122,30 @@ def _metrics() -> dict[str, str]:
     return out
 
 
-def _unescape_head_metas(html_text: str) -> str:
-    """Repair entity-escaped ``<meta>`` / ``<link>`` tags some local SSG builds
-    emit in the shell's <head>. No-op on CI (tags are already real there)."""
-    return re.sub(
-        r"&lt;(?:meta|link)\b.*?&gt;",
-        lambda m: _html.unescape(m.group(0)),
-        html_text,
-        flags=re.DOTALL,
-    )
-
-
 def _mark_nav_active(html_text: str) -> str:
-    """Move the primary-nav active state from Articles onto Speaking."""
+    """Move the primary-nav active state from Articles onto Speaking.
+
+    Fails loudly (SystemExit) if the Speaking anchor is missing so a
+    nav-markup change in the shell can never silently ship a page without
+    the active Speaking state. The Articles-deactivation step is optional:
+    in a fresh build the raw ssg shell carries no aria-current at all
+    (postbuild injects it), so its absence is normal, not an error."""
     out = html_text.replace(
         '<a href="/articles/index.html" aria-current="page" class="active">Articles</a>',
         '<a href="/articles/index.html">Articles</a>',
         1,
     )
-    return out.replace(
+    out2 = out.replace(
         '<a href="/speaking/index.html">Speaking</a>',
         '<a href="/speaking/index.html" aria-current="page" class="active">Speaking</a>',
         1,
     )
+    if out2 == out:
+        raise SystemExit(
+            "build_speaking: nav marking failed — Speaking anchor not found "
+            "in the shell (nav markup changed?)"
+        )
+    return out2
 
 
 # ---------------------------------------------------------------------------
@@ -136,13 +162,26 @@ def _section_head(eyebrow: str, headline: str, lede: str = "") -> str:
     )
 
 
+def _arrow() -> str:
+    """Decorative CTA arrow, hidden from screen readers."""
+    return '<span class="spk-arw" aria-hidden="true">&#8594;</span>'
+
+
+def _micro_item(m: str) -> str:
+    """Bold the leading word of a microproof item, keeping any trailing
+    punctuation ([,.;:]) outside the <strong> wrap."""
+    if " " not in m:
+        return _esc(m)
+    first, rest = m.split(" ", 1)
+    punct = re.match(r"^(.*?)([,.;:]+)$", first)
+    if punct:
+        return f"<strong>{_esc(punct.group(1))}</strong>{_esc(punct.group(2))} {_esc(rest)}"
+    return f"<strong>{_esc(first)}</strong> {_esc(rest)}"
+
+
 def _hero(d: dict, booking: str) -> str:
     h = d.get("hero", {}) or {}
-    micro = " · ".join(
-        f"<strong>{_esc(m.split(' ', 1)[0])}</strong> {_esc(m.split(' ', 1)[1])}"
-        if " " in m else _esc(m)
-        for m in (h.get("microproof") or [])
-    )
+    micro = " · ".join(_micro_item(m) for m in (h.get("microproof") or []))
     bio = d.get("biography", {}) or {}
     portrait = bio.get("portrait", "")
     photo = (
@@ -151,6 +190,17 @@ def _hero(d: dict, booking: str) -> str:
         'fetchpriority="high" decoding="async" /></div>'
         if portrait else ""
     )
+    nudge_txt = h.get("press_nudge", "")
+    nudge_cta = h.get("press_nudge_cta", "")
+    nudge_link = (
+        f' <a href="#spk-media" class="spk-textlink">{_esc(nudge_cta)} '
+        '<span aria-hidden="true">&#8594;</span></a>'
+        if nudge_cta else ""
+    )
+    nudge_html = (
+        f'<p class="spk-press-nudge">{_esc(nudge_txt)}{nudge_link}</p>'
+        if (nudge_txt or nudge_cta) else ""
+    )
     return (
         '<header class="spk-hero" id="spk-top"><div class="spk-hero-grid"><div>'
         f'<span class="spk-eyebrow">{_esc(h.get("eyebrow", ""))}</span>'
@@ -158,11 +208,10 @@ def _hero(d: dict, booking: str) -> str:
         f'<p class="spk-lede">{_esc(h.get("lede", ""))}</p>'
         '<div class="spk-cta-row">'
         f'<a href="{_esc(booking)}" class="spk-btn spk-btn-primary">'
-        f'{_esc(h.get("primary_cta", "Invite me to speak"))} <span class="spk-arw">&#8594;</span></a>'
+        f'{_esc(h.get("primary_cta", "Invite me to speak"))} {_arrow()}</a>'
         f'<a href="#spk-keynotes" class="spk-btn spk-btn-ghost">{_esc(h.get("secondary_cta", "Explore keynotes"))}</a>'
         "</div>"
-        f'<p class="spk-press-nudge">{_esc(h.get("press_nudge", ""))} '
-        f'<a href="#spk-media" class="spk-textlink">{_esc(h.get("press_nudge_cta", ""))} &#8594;</a></p>'
+        f"{nudge_html}"
         f'<p class="spk-microproof">{micro}</p>'
         f"</div>{photo}</div></header>"
     )
@@ -185,19 +234,30 @@ def _stats(d: dict) -> str:
     if not rows:
         return ""
     metrics = _metrics()
-    cells = "".join(
-        f'<div class="spk-stat"><div class="spk-num">{_esc(metrics[r["kpi"]])}</div>'
-        f'<div class="spk-lbl">{_esc(r.get("label", ""))}</div></div>'
-        for r in rows
-        if r.get("kpi") in metrics
-    )
+    parts = []
+    for r in rows:
+        kpi = r.get("kpi")
+        if kpi not in metrics:
+            print(
+                f"build_speaking: warning — stats row dropped, unknown kpi "
+                f"{kpi!r} (label {r.get('label', '')!r}) not in metrics.json",
+                file=sys.stderr,
+            )
+            continue
+        parts.append(
+            f'<div class="spk-stat"><div class="spk-num">{_esc(metrics[kpi])}</div>'
+            f'<div class="spk-lbl">{_esc(r.get("label", ""))}</div></div>'
+        )
+    cells = "".join(parts)
     if not cells:
         return ""
+    eyebrow = d.get("stats_eyebrow", "")
+    eyebrow_html = f'<span class="spk-eyebrow">{_esc(eyebrow)}</span>' if eyebrow else ""
     foot = d.get("stats_foot", "")
     foot_html = f'<p class="spk-stats-foot">{_rich(foot)}</p>' if foot else ""
     return (
         '<section class="spk-band"><div class="spk-wrap">'
-        f'<div class="spk-stats">{cells}</div>{foot_html}</div></section>'
+        f'{eyebrow_html}<div class="spk-stats">{cells}</div>{foot_html}</div></section>'
     )
 
 
@@ -234,6 +294,7 @@ def _keynotes(d: dict, booking: str) -> str:
     if not talks:
         return ""
     out_label = k.get("outcome_label", "You leave with:")
+    audience_label = d.get("audience_label", "For:")
     flag_new, flag_del = k.get("flag_new", "New"), k.get("flag_delivered", "Available now")
     cards = []
     for t in talks:
@@ -247,7 +308,7 @@ def _keynotes(d: dict, booking: str) -> str:
             f'<p class="spk-desc">{_rich(t.get("desc", ""))}</p>'
             f'<p class="spk-outcome"><b>{_esc(out_label)}</b> {_rich(t.get("outcome", ""))}</p>'
             '<div class="spk-talk-foot">'
-            f'<div class="spk-audience">For: {_esc(t.get("audience", ""))}</div>'
+            f'<div class="spk-audience">{_esc(audience_label)} {_esc(t.get("audience", ""))}</div>'
             "</div></article>"
         )
     custom = k.get("custom", {}) or {}
@@ -257,7 +318,7 @@ def _keynotes(d: dict, booking: str) -> str:
             f'<h3>{_esc(custom.get("title", ""))}</h3>'
             f'<p class="spk-desc">{_esc(custom.get("body", ""))}</p>'
             f'<a href="{_esc(booking)}" class="spk-btn spk-btn-primary">'
-            f'{_esc(custom.get("cta_label", ""))} <span class="spk-arw">&#8594;</span></a>'
+            f'{_esc(custom.get("cta_label", ""))} {_arrow()}</a>'
             "</article>"
         )
     return (
@@ -339,15 +400,19 @@ def _bios(d: dict) -> str:
     if not items:
         return ""
     copy_label = b.get("copy_label", "Copy")
+    aria_tpl = d.get("bio_copy_aria", "{length} bio, copy")
     cards = []
-    for it in items:
+    for i, it in enumerate(items, 1):
         length = it.get("length", "")
-        bid = f"spk-bio-{length.lower()}"
+        # Index-based id: stable and valid whatever the localised label is
+        # (spaces / non-ASCII / duplicates would break an id derived from it).
+        bid = f"spk-bio-{i}"
+        aria = aria_tpl.replace("{length}", length)
         cards.append(
             '<div class="spk-biocard">'
             f'<div class="spk-len">{_esc(length)}</div>'
             f'<button type="button" class="spk-copybtn copy-btn" data-copy="#{bid}" '
-            f'aria-label="{_esc(length)} bio, copy">{_esc(copy_label)}</button>'
+            f'aria-label="{_esc(aria)}">{_esc(copy_label)}</button>'
             f'<p id="{bid}">{_esc(it.get("text", ""))}</p>'
             "</div>"
         )
@@ -365,7 +430,7 @@ def _faq(d: dict) -> str:
         return ""
     rows = "".join(
         "<details><summary>"
-        f'{_esc(it.get("q", ""))} <span class="spk-ic">+</span></summary>'
+        f'{_esc(it.get("q", ""))} <span class="spk-ic" aria-hidden="true">+</span></summary>'
         f'<div class="spk-ans">{_rich(it.get("a", ""))}</div></details>'
         for it in items
     )
@@ -398,7 +463,7 @@ def _booking(d: dict, booking: str) -> str:
         f'<h2>{_esc(b.get("headline", ""))}</h2>'
         f'<p class="spk-lede">{_esc(b.get("lede", ""))}</p>'
         f'<a href="{_esc(booking)}" class="spk-btn spk-btn-primary">'
-        f'{_esc(b.get("cta_label", "Invite me to speak"))} <span class="spk-arw">&#8594;</span></a>'
+        f'{_esc(b.get("cta_label", "Invite me to speak"))} {_arrow()}</a>'
         "</div>"
     )
     return (
@@ -417,9 +482,20 @@ def _final_cta(d: dict, booking: str) -> str:
         f'<p class="spk-lede">{_esc(c.get("lede", ""))}</p>'
         '<div class="spk-cta-row">'
         f'<a href="{_esc(booking)}" class="spk-btn spk-btn-primary">'
-        f'{_esc(c.get("primary_cta", ""))} <span class="spk-arw">&#8594;</span></a>'
+        f'{_esc(c.get("primary_cta", ""))} {_arrow()}</a>'
         f'<a href="#spk-media" class="spk-btn spk-btn-ghost">{_esc(c.get("secondary_cta", ""))}</a>'
         "</div></div></section>"
+    )
+
+
+def _jsonld_script(payload: dict) -> str:
+    """Serialise ``payload`` into a JSON-LD <script>, escaping ``</`` so the
+    JSON can never terminate the script element early."""
+    blob = json.dumps(payload, ensure_ascii=False, separators=(",", ":"))
+    return (
+        '<script type="application/ld+json">'
+        + blob.replace("</", "<\\/")
+        + "</script>"
     )
 
 
@@ -435,20 +511,42 @@ def _topics_jsonld(d: dict) -> str:
         for i, t in enumerate(talks)
         if t.get("title")
     ]
+    if not items:
+        return ""
     payload = {
         "@context": "https://schema.org",
         "@type": "ItemList",
-        "name": "Speaking topics by Sebastien Rousseau",
+        "name": d.get("topics_jsonld_name", "Speaking topics by Sebastien Rousseau"),
         "itemListElement": items,
     }
-    return (
-        '<script type="application/ld+json">'
-        + json.dumps(payload, ensure_ascii=False, separators=(",", ":"))
-        + "</script>"
-    )
+    return _jsonld_script(payload)
 
 
-def _render_body(d: dict, bio_html: str) -> str:
+def _breadcrumbs_jsonld(d: dict, url: str) -> str:
+    """Home > Speaking breadcrumb trail for this page (replaces the articles
+    hub's stale CollectionPage/BreadcrumbList graph, which is stripped)."""
+    payload = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": d.get("breadcrumb_home", "Home"),
+                "item": f"{BASE_URL}/",
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": d.get("title") or "Speaking",
+                "item": url,
+            },
+        ],
+    }
+    return _jsonld_script(payload)
+
+
+def _render_body(d: dict, bio_html: str, url: str) -> str:
     """Assemble the speaking page body from its sections (empties dropped)."""
     booking = d.get("booking_url") or "/contact/index.html"
     sections = [
@@ -465,51 +563,248 @@ def _render_body(d: dict, bio_html: str) -> str:
         _booking(d, booking),
         _final_cta(d, booking),
         _topics_jsonld(d),
+        _breadcrumbs_jsonld(d, url),
     ]
     return '<div class="speaking-page">' + "".join(s for s in sections if s) + "</div>"
+
+
+# Frontmatter split on ``---`` *delimiter lines* only (not substrings, so
+# ``# --- Hero`` section comments inside the frontmatter don't break the
+# parse). Tolerates a leading BOM and CRLF line endings.
+_FM_RE = re.compile(
+    "^\ufeff?" + r"---[ \t]*\r?\n(.*?)\r?\n---[ \t]*\r?\n(.*)$", re.DOTALL
+)
 
 
 def _parse_source() -> tuple[dict, str]:
     """Split ``speaking.md`` into (frontmatter dict, rendered biography HTML).
 
-    Splits on the ``---`` *delimiter lines* only (not substrings, so ``# --- Hero``
-    section comments inside the frontmatter don't break the parse)."""
+    Fails loudly (SystemExit) on a malformed source rather than shipping a
+    hollow page: a missed frontmatter split or empty markdown body would
+    otherwise render an empty shell and exit 0."""
     raw = SPEAKING_MD.read_text(encoding="utf-8")
-    m = re.match(r"^---[ \t]*\n(.*?)\n---[ \t]*\n(.*)$", raw, re.DOTALL)
+    m = _FM_RE.match(raw)
     if not m:
-        return {}, ""
-    data = yaml.safe_load(m.group(1)) or {}
-    bio_html = render_markdown(m.group(2).strip())
-    return data, bio_html
+        raise SystemExit(
+            f"build_speaking: cannot parse {SPEAKING_MD} — frontmatter "
+            "delimiters ('---' lines) not found"
+        )
+    try:
+        data = yaml.safe_load(m.group(1)) or {}
+    except yaml.YAMLError as exc:
+        raise SystemExit(
+            f"build_speaking: invalid YAML in {SPEAKING_MD}: {exc}"
+        ) from exc
+    body_md = m.group(2).strip()
+    if not data or not body_md:
+        raise SystemExit(
+            f"build_speaking: {SPEAKING_MD} parsed to an empty "
+            f"{'frontmatter' if not data else 'markdown body'} — refusing to "
+            "ship a hollow page"
+        )
+    return data, render_markdown(body_md)
 
 
 def _load_overlay(lang: str, data: dict, bio_html: str) -> tuple[dict, str]:
     """Per-locale content overlay. If ``_data/proof/i18n/<lang>/speaking.md``
     exists, parse it and use its (frontmatter, body); otherwise fall back to
     English. This is the progressive-backfill hook: locales without an overlay
-    ship the English body under a localised chrome (nav / footer / lang tag)."""
+    ship the English body under a localised chrome (nav / footer / lang tag).
+    A malformed overlay warns loudly and falls back to English (not fatal:
+    progressive backfill is by design)."""
     overlay = ROOT / "_data" / "proof" / "i18n" / lang / "speaking.md"
     if not overlay.is_file():
         return data, bio_html
     raw = overlay.read_text(encoding="utf-8")
-    m = re.match(r"^---[ \t]*\n(.*?)\n---[ \t]*\n(.*)$", raw, re.DOTALL)
+    m = _FM_RE.match(raw)
     if not m:
+        print(
+            f"build_speaking: warning — malformed overlay {overlay} "
+            "(frontmatter delimiters not found); shipping English content "
+            f"for '{lang}'",
+            file=sys.stderr,
+        )
         return data, bio_html
-    loc = {**data, **(yaml.safe_load(m.group(1)) or {})}
+    try:
+        overlay_data = yaml.safe_load(m.group(1)) or {}
+    except yaml.YAMLError as exc:
+        print(
+            f"build_speaking: warning — invalid YAML in overlay {overlay} "
+            f"({exc}); shipping English content for '{lang}'",
+            file=sys.stderr,
+        )
+        return data, bio_html
+    loc = {**data, **overlay_data}
     loc_bio = render_markdown(m.group(2).strip()) or bio_html
     return loc, loc_bio
 
 
-def _emit_one_locale(active_shell: str, data: dict, bio_html: str, lang: str, segment: str) -> None:
+def _meta_description(text: str, limit: int = 200) -> str:
+    """Meta description trimmed to ``limit`` chars at a word boundary, with
+    trailing punctuation / whitespace stripped from a truncated result."""
+    text = " ".join(text.split())
+    if len(text) <= limit:
+        return text
+    cut = text[:limit]
+    if " " in cut:
+        cut = cut[: cut.rfind(" ")]
+    return cut.rstrip(" \t,.;:!?")
+
+
+def _localize_static_hrefs(body: str, lang: str, static_slugs: dict[str, str]) -> str:
+    """Rewrite body links to top-level EN static pages (``/contact/index.html``)
+    onto the locale's slugged path (``/ar/ittisal/index.html``) using the
+    locale's ``slugs.json`` "static" map. Links not in the map pass through."""
+    def repl(m: re.Match) -> str:
+        slug = static_slugs.get(m.group(1))
+        return f'href="/{lang}/{slug}/index.html"' if slug else m.group(0)
+
+    return re.sub(r'href="/([a-z0-9-]+)/index\.html"', repl, body)
+
+
+def _dedupe_named_meta(head: str, name: str, replacement: str | None) -> str:
+    """Keep exactly one ``<meta name=...>`` in the head slice: the first
+    occurrence (rewritten to ``replacement`` when given, kept verbatim when
+    ``None``); every later duplicate is dropped. Fails loudly if absent."""
+    matches = list(re.finditer(rf'<meta name="{re.escape(name)}"[^>]*>', head))
+    if not matches:
+        raise SystemExit(
+            f'build_speaking: head patch failed — no <meta name="{name}"> in shell head'
+        )
+    parts, last = [], 0
+    for i, m in enumerate(matches):
+        parts.append(head[last:m.start()])
+        if i == 0:
+            parts.append(replacement if replacement is not None else m.group(0))
+        last = m.end()
+    parts.append(head[last:])
+    return "".join(parts)
+
+
+def _patch_head(out: str, doc_title: str, seo_title: str, desc: str) -> str:
+    """Repair the forked articles-shell <head> for the speaking page: dedupe
+    description / viewport / theme-color metas, retitle the document from the
+    frontmatter ``title``, and replace the stale articles twitter / Apple
+    web-app copy. Every mutation verifies it matched, raising SystemExit."""
+    end = out.find("</head>")
+    if end == -1:
+        raise SystemExit("build_speaking: head patch failed — no </head> in shell")
+    head, rest = out[:end], out[end:]
+
+    head, n = re.subn(
+        r"<title>.*?</title>",
+        lambda _m: f"<title>{_esc(doc_title)}</title>",
+        head,
+        count=1,
+        flags=re.DOTALL,
+    )
+    if not n:
+        raise SystemExit("build_speaking: head patch failed — <title> not found")
+
+    # Exactly one description (the speaking one) and one viewport; the
+    # theme-color light/dark pair is one *set*, deduped per media condition.
+    head = _dedupe_named_meta(
+        head, "description", f'<meta name="description" content="{_esc(desc)}">'
+    )
+    head = _dedupe_named_meta(head, "viewport", None)
+    seen_theme: set[str] = set()
+
+    def _theme_once(m: re.Match) -> str:
+        tag = m.group(0)
+        if tag in seen_theme:
+            return ""
+        seen_theme.add(tag)
+        return tag
+
+    head = re.sub(r'<meta name="theme-color"[^>]*>', _theme_once, head)
+
+    head, n = re.subn(
+        r'(<meta name="twitter:title" content=")[^"]*(")',
+        lambda m: m.group(1) + _esc(seo_title) + m.group(2),
+        head,
+        count=1,
+    )
+    if not n:
+        raise SystemExit("build_speaking: head patch failed — twitter:title not found")
+    head, n = re.subn(
+        r'(<meta name="twitter:description" content=")[^"]*(")',
+        lambda m: m.group(1) + _esc(desc) + m.group(2),
+        head,
+        count=1,
+    )
+    if not n:
+        raise SystemExit(
+            "build_speaking: head patch failed — twitter:description not found"
+        )
+    # Stale articles-hub web-app title; tolerate absence (nothing stale then).
+    head = re.sub(
+        r'(<meta name="apple-mobile-web-app-title" content=")[^"]*(")',
+        lambda m: m.group(1) + "Sebastien Rousseau" + m.group(2),
+        head,
+        count=1,
+    )
+    if "Discover How Technology" in head:
+        raise SystemExit(
+            "build_speaking: head patch failed — stale articles copy left in <head>"
+        )
+    return head + rest
+
+
+# The articles hub ships a CollectionPage + BreadcrumbList @graph that is
+# wrong for /speaking/; it is removed and replaced by the page's own
+# BreadcrumbList (see _breadcrumbs_jsonld). Tempered dot so the match can
+# never run past this script element; tolerates minified or pretty JSON.
+_ARTICLES_JSONLD_RE = re.compile(
+    r'[ \t]*<script type="application/ld\+json">'
+    r'(?:(?!</script>).)*?"@type":\s*"CollectionPage"(?:(?!</script>).)*?'
+    r"</script>\n?",
+    re.DOTALL,
+)
+
+
+def _strip_articles_jsonld(out: str) -> str:
+    new, n = _ARTICLES_JSONLD_RE.subn("", out)
+    if not n:
+        raise SystemExit(
+            "build_speaking: articles CollectionPage JSON-LD not found — "
+            "shell layout changed?"
+        )
+    return new
+
+
+def _emit_one_locale(
+    active_shell: str,
+    data: dict,
+    bio_html: str,
+    lang: str,
+    segment: str,
+    static_slugs: dict[str, str] | None = None,
+) -> None:
     """Render and write the speaking page for one locale. ``active_shell`` is the
     EN articles shell with the Speaking nav item already marked active (and, for
     non-EN, already run through translate_chrome)."""
-    body = _render_body(data, bio_html)
-    title = data.get("meta_title") or "Speaking & advisory: Sebastien Rousseau"
-    desc = (data.get("meta_description") or "").strip()[:200]
     url = URL if lang == "en" else f"{BASE_URL}/{lang}/{segment}/"
-    out = _swap_into_shell(active_shell, body, title, desc, url)
-    out = _unescape_head_metas(out)
+    body = _render_body(data, bio_html, url)
+    if lang != "en" and static_slugs:
+        body = _localize_static_hrefs(body, lang, static_slugs)
+    seo_title = data.get("meta_title") or "Speaking & advisory: Sebastien Rousseau"
+    doc_title = data.get("title") or seo_title
+    desc = _meta_description(data.get("meta_description") or "")
+
+    out = _swap_into_shell(active_shell, body, seo_title, desc, url)
+    if '<div class="speaking-page">' not in out:
+        raise SystemExit(
+            f"build_speaking: body swap failed for '{lang}' — speaking body "
+            "missing from output (shell <main> markup changed?)"
+        )
+    out = _unescape_head_metas(out)  # head-bounded by the shared helper
+    out = _patch_head(out, doc_title, seo_title, desc)
+    out = _strip_articles_jsonld(out)
+    if "Discover How Technology" in out:
+        raise SystemExit(
+            f"build_speaking: stale articles copy remains in the '{lang}' page"
+        )
+
     target = (PUBLIC / "speaking" if lang == "en" else PUBLIC / lang / segment) / "index.html"
     target.parent.mkdir(parents=True, exist_ok=True)
     target.write_text(out, encoding="utf-8")
@@ -533,13 +828,14 @@ def _emit_locale_forks(active_shell: str, data: dict, bio_html: str) -> int:
     for lang in _lang_registry.active():
         if lang.code == "en":
             continue
-        segment = _lang_registry.load_slugs(lang.code).get("static", {}).get("speaking", "speaking")
+        static_slugs = _lang_registry.load_slugs(lang.code).get("static", {})
+        segment = static_slugs.get("speaking", "speaking")
         _st.bind_lang(lang.code)
         loc_shell = _ch._set_html_lang(active_shell)
         loc_shell = _ch.translate_chrome(loc_shell)
         loc_shell = _ch._localize_inlanguage_globally(loc_shell, lang.code)
         loc_data, loc_bio = _load_overlay(lang.code, data, bio_html)
-        _emit_one_locale(loc_shell, loc_data, loc_bio, lang.code, segment)
+        _emit_one_locale(loc_shell, loc_data, loc_bio, lang.code, segment, static_slugs)
         total += 1
     return total
 

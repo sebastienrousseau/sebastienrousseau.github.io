@@ -94,6 +94,7 @@ The Rust tool reads the `_posts_build` markdown and `_layouts/` and writes the E
 
 ### Phase C — post-compile generators (operate on `public/`)
 
+- **`scripts/postbuild/fix_escaped_ssg_html.py`** — repairs entity-escaped head metas and escaped enrich/lead body blobs that local ssg builds emit (renders as raw-markup prose otherwise). Head-bounded meta unescape with keep-first dedupe of the leaked meta names, plus whole-region unescape of each `&lt;div lang=`-marked blob, skipping `<pre>`/`<code>`. Runs first in Phase C so downstream generators fork a sane `/articles/` shell; idempotent and a no-op on CI, where ssg emits real tags.
 5. **`scripts/seo_and_audit/fetch_metrics.py`** — fetches live crates.io download + GitHub star/fork totals into `_data/proof/metrics.json`.
 6. **`scripts/generators/build_case_studies.py`** — renders the outcome-led case-study pages.
 7. **`scripts/generators/build_topics.py`** — topic-cluster pillar pages and the topic hub from the `TOPICS` taxonomy (per-locale clones generated downstream).
@@ -103,6 +104,7 @@ The Rust tool reads the `_posts_build` markdown and `_layouts/` and writes the E
 11. **`scripts/generators/build_translations/__main__.py`** — the localised page tree for every active language in the registry: swaps body text, chrome, UI strings, hreflang, and search indexes.
 12. **`scripts/generators/build_search_ui.py`** — per-locale `search-ui.json` UI microcopy for the client-side search runtime (ADR-0010), projected from `_data/i18n/<lang>/strings.json`.
 - **`scripts/generators/build_speaking.py`** — renders the `/speaking/` authority hub (bios, outcome-framed talk topics, invite CTA) from `_data/proof/speaking.yml`, reusing the `/articles/` shell. English-only; runs after `build_translations`, before `postbuild`.
+- **`scripts/generators/build_iso20022_mcp.py`** — renders the premium `/iso20022-mcp/` hub (the What-is-MCP explainer, the suite cards, quickstart FAQ, CTA) from an inline content dict, reusing the `/articles/` shell like `build_speaking`. English-only; runs after `build_speaking`.
 - **`scripts/generators/build_trust.py`** — renders the `/trust/` enterprise-governance page (provenance, licensing, single-maintainer governance, recognition) from `_data/proof/recognition.yml` + platform provenance facts, reusing the `/articles/` shell. English-only; same slot as `build_speaking.py`.
 - **`scripts/generators/build_changelog.py`** — generates the `/changelog` page (dated posts grouped by month), the homepage "what's new" strip, and a `/status` page + `status.json` build badge; deterministic (derived from committed post front-matter). No new JS/CSS; CSP-safe.
 13. **`scripts/generators/build_lang_feeds.py`** — RSS, Atom, news-sitemap, and JSON feeds per language.
