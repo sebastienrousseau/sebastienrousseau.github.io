@@ -405,7 +405,7 @@ def _start() -> str:
             "STEP 1",
             "Run it, no install.",
             "Start the gateway with one command, no account, no key: "
-            + _mono('uvx --from "iso20022-mcp[all]" iso20022-mcp'),
+            + _mono('uvx --from "iso20022-mcp[pain,pacs,acmt]" iso20022-mcp'),
         ),
         (
             "STEP 2",
