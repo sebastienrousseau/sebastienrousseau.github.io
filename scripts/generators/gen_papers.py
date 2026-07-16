@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
-"""Rewrite _posts/papers.md body into Apple-Newsroom-style markup.
+"""Rewrite _posts/research.md body into Apple-Newsroom-style markup.
+
+The publications hub moved from /papers to /research in the 5-item nav
+re-architecture: /research is the canonical hub, and _posts/papers.md is a
+static redirect page (meta refresh + canonical, injected by
+scripts/postbuild/postbuild_lib/redirects.py). This generator owns the
+/research hub body.
 
 The latest industry white paper (EPAA Quantum-Safe Payments) is shown as the
 featured hero with full abstract and Read CTA. The previous Whisper/MPS paper
@@ -18,7 +24,7 @@ _sys.path.insert(0, str(_Path(__file__).resolve().parents[1] / "lib"))
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
-SRC = ROOT / "_posts" / "papers.md"
+SRC = ROOT / "_posts" / "research.md"
 
 EPAA_PDF = (
     "https://emergingpaymentsasia.org/wp-content/uploads/2025/09/"
@@ -224,7 +230,7 @@ def main() -> None:
     lines = text.splitlines(keepends=True)
     delim_idx = [i for i, ln in enumerate(lines) if ln.strip() == "---"]
     if len(delim_idx) < 2:
-        raise SystemExit("could not locate frontmatter delimiters in papers.md")
+        raise SystemExit("could not locate frontmatter delimiters in research.md")
     head = "".join(lines[: delim_idx[1] + 1]) + "\n"
 
     related_cards = "\n\n".join(card_block(*a) for a in RELATED)

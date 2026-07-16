@@ -286,12 +286,88 @@
       "<a href=\"/contact/index.html\">Kontaktovat</a>"
     ],
     [
-      "<li><a href=\"?/case-studies/index\\.html\"?>Case studies</a></li>",
-      "<li><a href=\"/cs/pripadove-studie/index.html\">Případové studie</a></li>"
-    ],
-    [
       "<a href=\"?/case-studies/index\\.html\"?>Case studies</a>",
       "<a href=\"/cs/pripadove-studie/index.html\">Případové studie</a>"
+    ],
+    [
+      "<li><a href=\"?/research/index\\.html\"?>Research</a></li>",
+      "<li><a href=\"/cs/vyzkum/index.html\">Výzkum</a></li>"
+    ],
+    [
+      "<li><a href=\"?/speaking/index\\.html\"?>Speaking</a></li>",
+      "<li><a href=\"/cs/speaking/index.html\">Přednášky</a></li>"
+    ],
+    [
+      "<a href=\"?/suite/index\\.html\"?>Suite</a>",
+      "<a href=\"/cs/sada/index.html\">Sada</a>"
+    ],
+    [
+      "<a href=\"?/research/index\\.html\"?>Research</a>",
+      "<a href=\"/cs/vyzkum/index.html\">Výzkum</a>"
+    ],
+    [
+      "<li><a href=\"?/iso20022-mcp-docs/index\\.html\"?>Documentation</a></li>",
+      "<li><a href=\"/iso20022-mcp-docs/index.html\">Dokumentace</a></li>"
+    ],
+    [
+      "<li><a href=\"?/iso20022-mcp-reference/index\\.html\"?>API Reference</a></li>",
+      "<li><a href=\"/iso20022-mcp-reference/index.html\">Reference API</a></li>"
+    ],
+    [
+      "<li><a href=\"?/iso20022-mcp-recipes/index\\.html\"?>Integration Recipes</a></li>",
+      "<li><a href=\"/iso20022-mcp-recipes/index.html\">Integrační recepty</a></li>"
+    ],
+    [
+      "<li><a href=\"?/trust/index\\.html\"?>Trust</a></li>",
+      "<li><a href=\"/trust/index.html\">Důvěra</a></li>"
+    ],
+    [
+      "aria-label=\"Toggle About submenu\"",
+      "aria-label=\"Přepnout podnabídku O mně\""
+    ],
+    [
+      "aria-label=\"Toggle Library submenu\"",
+      "aria-label=\"Přepnout podnabídku Knihovna\""
+    ],
+    [
+      "aria-label=\"Toggle Research submenu\"",
+      "aria-label=\"Přepnout podnabídku Výzkum\""
+    ],
+    [
+      "aria-label=\"Toggle Suite submenu\"",
+      "aria-label=\"Přepnout podnabídku Sada\""
+    ],
+    [
+      "<li><a href=\"?/trust/index\\.html\"?>Trust (?:&amp;|&) Compliance</a></li>",
+      "<li><a href=\"/trust/index.html\">Důvěra a compliance</a></li>"
+    ],
+    [
+      "<li><a href=\"?/speaking/index\\.html\"?>Public Speaking</a></li>",
+      "<li><a href=\"/cs/speaking/index.html\">Veřejné přednášky</a></li>"
+    ],
+    [
+      "<a href=\"?/library/index\\.html\"?>Library</a>",
+      "<a href=\"/cs/knihovna/index.html\">Knihovna</a>"
+    ],
+    [
+      "<li><a href=\"?/topics/index\\.html\"?>Browse by Topic</a></li>",
+      "<li><a href=\"/cs/temata/index.html\">Procházet podle témat</a></li>"
+    ],
+    [
+      "<li><a href=\"?/projects/index\\.html\"?>Open Source Projects</a></li>",
+      "<li><a href=\"/cs/projekty/index.html\">Open source projekty</a></li>"
+    ],
+    [
+      "<li><a href=\"?/playlists/index\\.html\"?>Video Playlists</a></li>",
+      "<li><a href=\"/cs/playlisty/index.html\">Video playlisty</a></li>"
+    ],
+    [
+      "<li><a href=\"?/research/index\\.html\"?>Whitepapers (?:&amp;|&) Reports</a></li>",
+      "<li><a href=\"/cs/vyzkum/index.html\">Whitepapery a zprávy</a></li>"
+    ],
+    [
+      "<li><a href=\"?/case-studies/index\\.html\"?>Real-World Case Studies</a></li>",
+      "<li><a href=\"/cs/pripadove-studie/index.html\">Případové studie z praxe</a></li>"
     ]
   ]
 }

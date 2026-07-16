@@ -1,0 +1,650 @@
+{
+  "_meta": {
+    "captured": "2026-07-15",
+    "server": {
+      "name": "pacs008",
+      "version": "0.0.4"
+    },
+    "command": "uvx --from \"pacs008-mcp\" pacs008-mcp",
+    "method": "MCP stdio JSON-RPC tools/list (protocol 2024-11-05)"
+  },
+  "tools": [
+    {
+      "name": "list_message_types",
+      "title": "List pacs message types",
+      "description": "List every supported ISO 20022 pacs message type and its human name.\n\nUse this first, before any generation or validation call, to discover the\nexact ``message_type`` strings this server accepts (e.g.\n``pacs.008.001.08`` FI-to-FI Customer Credit Transfer). To learn a type's\nrequired fields or full schema, call ``get_required_fields`` or\n``get_input_schema`` instead.\n\nReturns a list of ``{\"message_type\": ..., \"name\": ...}`` dictionaries, one\nper supported message type.\n",
+      "inputSchema": {
+        "properties": {},
+        "title": "list_message_typesArguments",
+        "type": "object"
+      },
+      "outputSchema": {
+        "properties": {
+          "result": {
+            "items": {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            "title": "Result",
+            "type": "array"
+          }
+        },
+        "required": [
+          "result"
+        ],
+        "title": "list_message_typesOutput",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "list_schemes",
+      "title": "List scheme profiles",
+      "description": "List every registered scheme / usage-guideline profile.\n\nScheme profiles (CBPR+, HVPS+, Fedwire, CHAPS, T2 RTGS, SCT Inst, generic)\nlayer rail-specific rules on top of base ISO 20022. Use this to discover\nthe ``scheme`` names accepted by ``get_scheme`` and ``validate_scheme``.\n\nRegistry aliases (e.g. ``cbpr+``, ``cbprplus``) collapse to their canonical\nprofile, so each profile appears exactly once. Returns a list of\n``{\"scheme\": ..., \"name\": ...}`` dictionaries.\n",
+      "inputSchema": {
+        "properties": {},
+        "title": "list_schemesArguments",
+        "type": "object"
+      },
+      "outputSchema": {
+        "properties": {
+          "result": {
+            "items": {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            "title": "Result",
+            "type": "array"
+          }
+        },
+        "required": [
+          "result"
+        ],
+        "title": "list_schemesOutput",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "get_scheme",
+      "title": "Get scheme profile rules",
+      "description": "Return the rule attributes of a scheme / usage-guideline profile.\n\nUse this to inspect a rail's constraints -- whether the UETR is mandatory,\nthe permitted charge bearers, remittance-info length cap, per-message\ntransaction cardinality, pinned message versions, and which parties must\ncarry an LEI -- before assembling or validating a batch.\n\nArgs:\n    scheme: A registered scheme profile name (see ``list_schemes``).\n",
+      "inputSchema": {
+        "properties": {
+          "scheme": {
+            "description": "A registered scheme / usage-guideline profile name (case-insensitive), e.g. 'cbpr_plus', 'fedwire', 'chaps'. Must be one of: 'cbpr+', 'cbpr_plus', 'cbprplus', 'chaps', 'fedwire', 'generic', 'hvps+', 'hvps_plus', 'hvpsplus', 'sct-inst', 'sct_inst', 'sctinst', 't2_rtgs', 't2rtgs', 'target2' (see list_schemes).",
+            "enum": [
+              "cbpr+",
+              "cbpr_plus",
+              "cbprplus",
+              "chaps",
+              "fedwire",
+              "generic",
+              "hvps+",
+              "hvps_plus",
+              "hvpsplus",
+              "sct-inst",
+              "sct_inst",
+              "sctinst",
+              "t2_rtgs",
+              "t2rtgs",
+              "target2"
+            ],
+            "title": "Scheme",
+            "type": "string"
+          }
+        },
+        "required": [
+          "scheme"
+        ],
+        "title": "get_schemeArguments",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "get_required_fields",
+      "title": "Get required fields",
+      "description": "List only the required input field names for a pacs message type.\n\nUse this for a quick checklist of the mandatory columns before building\npayment records. For full type/format constraints (not just which fields\nare required), call ``get_input_schema`` instead.\n\nArgs:\n    message_type: A supported ISO 20022 pacs message type.\n",
+      "inputSchema": {
+        "properties": {
+          "message_type": {
+            "description": "A supported ISO 20022 pacs message type, e.g. 'pacs.008.001.08' FI-to-FI Customer Credit Transfer. Must be exactly one of: 'pacs.002.001.12', 'pacs.003.001.09', 'pacs.004.001.11', 'pacs.007.001.11', 'pacs.008.001.01', 'pacs.008.001.02', 'pacs.008.001.03', 'pacs.008.001.04', 'pacs.008.001.05', 'pacs.008.001.06', 'pacs.008.001.07', 'pacs.008.001.08', 'pacs.008.001.09', 'pacs.008.001.10', 'pacs.008.001.11', 'pacs.008.001.12', 'pacs.008.001.13', 'pacs.009.001.10', 'pacs.010.001.05', 'pacs.028.001.05' (see list_message_types).",
+            "enum": [
+              "pacs.002.001.12",
+              "pacs.003.001.09",
+              "pacs.004.001.11",
+              "pacs.007.001.11",
+              "pacs.008.001.01",
+              "pacs.008.001.02",
+              "pacs.008.001.03",
+              "pacs.008.001.04",
+              "pacs.008.001.05",
+              "pacs.008.001.06",
+              "pacs.008.001.07",
+              "pacs.008.001.08",
+              "pacs.008.001.09",
+              "pacs.008.001.10",
+              "pacs.008.001.11",
+              "pacs.008.001.12",
+              "pacs.008.001.13",
+              "pacs.009.001.10",
+              "pacs.010.001.05",
+              "pacs.028.001.05"
+            ],
+            "title": "Message Type",
+            "type": "string"
+          }
+        },
+        "required": [
+          "message_type"
+        ],
+        "title": "get_required_fieldsArguments",
+        "type": "object"
+      },
+      "outputSchema": {
+        "properties": {
+          "result": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Result",
+            "type": "array"
+          }
+        },
+        "required": [
+          "result"
+        ],
+        "title": "get_required_fieldsOutput",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "get_input_schema",
+      "title": "Get input JSON Schema",
+      "description": "Return the full JSON Schema for a message type's flat input record.\n\nUse this to learn every field, its type, and its constraints before\nassembling records, or to drive a form/UI. For just the required-field\nnames use ``get_required_fields``; to check records against this schema use\n``validate_records``.\n\nArgs:\n    message_type: A supported ISO 20022 pacs message type.\n",
+      "inputSchema": {
+        "properties": {
+          "message_type": {
+            "description": "A supported ISO 20022 pacs message type, e.g. 'pacs.008.001.08' FI-to-FI Customer Credit Transfer. Must be exactly one of: 'pacs.002.001.12', 'pacs.003.001.09', 'pacs.004.001.11', 'pacs.007.001.11', 'pacs.008.001.01', 'pacs.008.001.02', 'pacs.008.001.03', 'pacs.008.001.04', 'pacs.008.001.05', 'pacs.008.001.06', 'pacs.008.001.07', 'pacs.008.001.08', 'pacs.008.001.09', 'pacs.008.001.10', 'pacs.008.001.11', 'pacs.008.001.12', 'pacs.008.001.13', 'pacs.009.001.10', 'pacs.010.001.05', 'pacs.028.001.05' (see list_message_types).",
+            "enum": [
+              "pacs.002.001.12",
+              "pacs.003.001.09",
+              "pacs.004.001.11",
+              "pacs.007.001.11",
+              "pacs.008.001.01",
+              "pacs.008.001.02",
+              "pacs.008.001.03",
+              "pacs.008.001.04",
+              "pacs.008.001.05",
+              "pacs.008.001.06",
+              "pacs.008.001.07",
+              "pacs.008.001.08",
+              "pacs.008.001.09",
+              "pacs.008.001.10",
+              "pacs.008.001.11",
+              "pacs.008.001.12",
+              "pacs.008.001.13",
+              "pacs.009.001.10",
+              "pacs.010.001.05",
+              "pacs.028.001.05"
+            ],
+            "title": "Message Type",
+            "type": "string"
+          }
+        },
+        "required": [
+          "message_type"
+        ],
+        "title": "get_input_schemaArguments",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "validate_records",
+      "title": "Validate records against schema",
+      "description": "Validate flat payment records against a message type's JSON Schema.\n\nUse this before ``generate_message`` to catch structural/type errors per\nrecord and get a row-by-row error report. This checks JSON-Schema shape\nonly; to check a batch against a rail's usage guidelines use\n``validate_scheme``.\n\nReturns a report ``{\"is_valid\": bool, \"total\": int, \"valid\": int,\n\"errors\": [...]}``.\n\nArgs:\n    message_type: A supported ISO 20022 pacs message type.\n    records: One or more flat payment records to validate.\n",
+      "inputSchema": {
+        "properties": {
+          "message_type": {
+            "description": "A supported ISO 20022 pacs message type, e.g. 'pacs.008.001.08' FI-to-FI Customer Credit Transfer. Must be exactly one of: 'pacs.002.001.12', 'pacs.003.001.09', 'pacs.004.001.11', 'pacs.007.001.11', 'pacs.008.001.01', 'pacs.008.001.02', 'pacs.008.001.03', 'pacs.008.001.04', 'pacs.008.001.05', 'pacs.008.001.06', 'pacs.008.001.07', 'pacs.008.001.08', 'pacs.008.001.09', 'pacs.008.001.10', 'pacs.008.001.11', 'pacs.008.001.12', 'pacs.008.001.13', 'pacs.009.001.10', 'pacs.010.001.05', 'pacs.028.001.05' (see list_message_types).",
+            "enum": [
+              "pacs.002.001.12",
+              "pacs.003.001.09",
+              "pacs.004.001.11",
+              "pacs.007.001.11",
+              "pacs.008.001.01",
+              "pacs.008.001.02",
+              "pacs.008.001.03",
+              "pacs.008.001.04",
+              "pacs.008.001.05",
+              "pacs.008.001.06",
+              "pacs.008.001.07",
+              "pacs.008.001.08",
+              "pacs.008.001.09",
+              "pacs.008.001.10",
+              "pacs.008.001.11",
+              "pacs.008.001.12",
+              "pacs.008.001.13",
+              "pacs.009.001.10",
+              "pacs.010.001.05",
+              "pacs.028.001.05"
+            ],
+            "title": "Message Type",
+            "type": "string"
+          },
+          "records": {
+            "description": "One or more flat payment records, each a dict of field name -> value; validated against the message type's input JSON Schema (see get_input_schema / get_required_fields).",
+            "items": {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            "title": "Records",
+            "type": "array"
+          }
+        },
+        "required": [
+          "message_type",
+          "records"
+        ],
+        "title": "validate_recordsArguments",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "validate_scheme",
+      "title": "Validate records against a scheme",
+      "description": "Validate payment records against a scheme's usage-guideline rules.\n\nUse this to check a batch against a rail's rulebook (CBPR+, HVPS+,\nFedwire, CHAPS, T2 RTGS, SCT Inst) -- charge-bearer restrictions, UETR\npresence, remittance-info length, and per-message transaction cardinality.\nThis is complementary to ``validate_records`` (JSON-Schema shape).\n\nReturns ``{\"scheme\": str, \"is_valid\": bool, \"total\": int,\n\"violations\": [...]}``.\n\nArgs:\n    scheme: A registered scheme profile name (see ``list_schemes``).\n    records: One or more flat payment records to check.\n",
+      "inputSchema": {
+        "properties": {
+          "scheme": {
+            "description": "A registered scheme / usage-guideline profile name (case-insensitive), e.g. 'cbpr_plus', 'fedwire', 'chaps'. Must be one of: 'cbpr+', 'cbpr_plus', 'cbprplus', 'chaps', 'fedwire', 'generic', 'hvps+', 'hvps_plus', 'hvpsplus', 'sct-inst', 'sct_inst', 'sctinst', 't2_rtgs', 't2rtgs', 'target2' (see list_schemes).",
+            "enum": [
+              "cbpr+",
+              "cbpr_plus",
+              "cbprplus",
+              "chaps",
+              "fedwire",
+              "generic",
+              "hvps+",
+              "hvps_plus",
+              "hvpsplus",
+              "sct-inst",
+              "sct_inst",
+              "sctinst",
+              "t2_rtgs",
+              "t2rtgs",
+              "target2"
+            ],
+            "title": "Scheme",
+            "type": "string"
+          },
+          "records": {
+            "description": "One or more flat payment records, each a dict of field name -> value; checked against the scheme's usage-guideline business rules (charge bearer, UETR, remittance length, per-message cardinality).",
+            "items": {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            "title": "Records",
+            "type": "array"
+          }
+        },
+        "required": [
+          "scheme",
+          "records"
+        ],
+        "title": "validate_schemeArguments",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "generate_message",
+      "title": "Generate pacs XML from records",
+      "description": "Generate a validated ISO 20022 pacs XML message from in-memory records.\n\nThis is the primary generation tool: pass payment records you already hold\nin memory and receive an XSD-validated XML document; no file is written.\nRun ``validate_records`` first to surface record-level errors, and\n``list_message_types`` to confirm the ``message_type`` string.\n\nReturns the validated XML document as a string, or an ``{\"error\": ...}``\npayload (serialized) if generation fails.\n\nArgs:\n    message_type: A supported ISO 20022 pacs message type.\n    records: One or more flat payment records.\n",
+      "inputSchema": {
+        "properties": {
+          "message_type": {
+            "description": "A supported ISO 20022 pacs message type, e.g. 'pacs.008.001.08' FI-to-FI Customer Credit Transfer. Must be exactly one of: 'pacs.002.001.12', 'pacs.003.001.09', 'pacs.004.001.11', 'pacs.007.001.11', 'pacs.008.001.01', 'pacs.008.001.02', 'pacs.008.001.03', 'pacs.008.001.04', 'pacs.008.001.05', 'pacs.008.001.06', 'pacs.008.001.07', 'pacs.008.001.08', 'pacs.008.001.09', 'pacs.008.001.10', 'pacs.008.001.11', 'pacs.008.001.12', 'pacs.008.001.13', 'pacs.009.001.10', 'pacs.010.001.05', 'pacs.028.001.05' (see list_message_types).",
+            "enum": [
+              "pacs.002.001.12",
+              "pacs.003.001.09",
+              "pacs.004.001.11",
+              "pacs.007.001.11",
+              "pacs.008.001.01",
+              "pacs.008.001.02",
+              "pacs.008.001.03",
+              "pacs.008.001.04",
+              "pacs.008.001.05",
+              "pacs.008.001.06",
+              "pacs.008.001.07",
+              "pacs.008.001.08",
+              "pacs.008.001.09",
+              "pacs.008.001.10",
+              "pacs.008.001.11",
+              "pacs.008.001.12",
+              "pacs.008.001.13",
+              "pacs.009.001.10",
+              "pacs.010.001.05",
+              "pacs.028.001.05"
+            ],
+            "title": "Message Type",
+            "type": "string"
+          },
+          "records": {
+            "description": "One or more flat payment records, each a dict of field name -> value, from which the pacs XML is generated; run validate_records first to surface record-level errors.",
+            "items": {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            "title": "Records",
+            "type": "array"
+          }
+        },
+        "required": [
+          "message_type",
+          "records"
+        ],
+        "title": "generate_messageArguments",
+        "type": "object"
+      },
+      "outputSchema": {
+        "properties": {
+          "result": {
+            "title": "Result",
+            "type": "string"
+          }
+        },
+        "required": [
+          "result"
+        ],
+        "title": "generate_messageOutput",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "validate_xml",
+      "title": "Validate XML against XSD",
+      "description": "Validate a raw XML string against a message type's bundled XSD.\n\nUse this to check an externally produced XML document against the official\nISO 20022 schema. To generate a document that is already XSD-validated,\nuse ``generate_message`` instead.\n\nReturns ``{\"message_type\": str, \"is_valid\": bool}``.\n\nArgs:\n    message_type: A supported ISO 20022 pacs message type.\n    xml: The raw XML document to validate.\n",
+      "inputSchema": {
+        "properties": {
+          "message_type": {
+            "description": "A supported ISO 20022 pacs message type, e.g. 'pacs.008.001.08' FI-to-FI Customer Credit Transfer. Must be exactly one of: 'pacs.002.001.12', 'pacs.003.001.09', 'pacs.004.001.11', 'pacs.007.001.11', 'pacs.008.001.01', 'pacs.008.001.02', 'pacs.008.001.03', 'pacs.008.001.04', 'pacs.008.001.05', 'pacs.008.001.06', 'pacs.008.001.07', 'pacs.008.001.08', 'pacs.008.001.09', 'pacs.008.001.10', 'pacs.008.001.11', 'pacs.008.001.12', 'pacs.008.001.13', 'pacs.009.001.10', 'pacs.010.001.05', 'pacs.028.001.05' (see list_message_types).",
+            "enum": [
+              "pacs.002.001.12",
+              "pacs.003.001.09",
+              "pacs.004.001.11",
+              "pacs.007.001.11",
+              "pacs.008.001.01",
+              "pacs.008.001.02",
+              "pacs.008.001.03",
+              "pacs.008.001.04",
+              "pacs.008.001.05",
+              "pacs.008.001.06",
+              "pacs.008.001.07",
+              "pacs.008.001.08",
+              "pacs.008.001.09",
+              "pacs.008.001.10",
+              "pacs.008.001.11",
+              "pacs.008.001.12",
+              "pacs.008.001.13",
+              "pacs.009.001.10",
+              "pacs.010.001.05",
+              "pacs.028.001.05"
+            ],
+            "title": "Message Type",
+            "type": "string"
+          },
+          "xml": {
+            "description": "A raw ISO 20022 XML document to validate against the bundled XSD schema for the given message type.",
+            "title": "Xml",
+            "type": "string"
+          }
+        },
+        "required": [
+          "message_type",
+          "xml"
+        ],
+        "title": "validate_xmlArguments",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "parse_message",
+      "title": "Parse inbound ISO 20022 XML",
+      "description": "Parse and classify an inbound ISO 20022 XML message.\n\nUse this on the receiving side to identify what a message is -- its\n``msg_def_idr`` (e.g. ``pacs.002.001.10``), family, version, and any\nBusiness Application Header -- before processing it. Handles both bare\n``Document`` messages and BAH-wrapped envelopes.\n\nReturns a dict with ``msg_def_idr``, ``msg_family``, ``version``,\n``root_local_name``, ``namespace_uri``, ``envelope_wrapped`` and ``bah``.\n\nArgs:\n    xml: The raw inbound XML message.\n",
+      "inputSchema": {
+        "properties": {
+          "xml": {
+            "description": "A raw inbound ISO 20022 XML message (pacs.008 / pacs.002 / pacs.004, optionally BAH-envelope-wrapped) to classify.",
+            "title": "Xml",
+            "type": "string"
+          }
+        },
+        "required": [
+          "xml"
+        ],
+        "title": "parse_messageArguments",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "convert_mt103",
+      "title": "Convert MT103 to pacs.008 records",
+      "description": "Convert a legacy SWIFT MT103 into pacs.008-ready flat records.\n\nThis is the SWIFT MT-to-MX migration path (correspondent-banking MT103\ncoexistence with ISO 20022 ends November 2025): parse an MT103 text\npayload and get back the flat pacs.008 record(s) that can be fed straight\ninto ``validate_records`` / ``generate_message``. An MT103 carries exactly\none transfer, so the ``records`` list always holds a single record. No\nfile is read or written.\n\nReturns ``{\"message_type\": \"pacs.008.001.08\", \"records\": [{...}]}`` with\nthe parsed flat record, or an ``{\"error\": ...}`` payload if the MT103 is\nmissing a mandatory field (``:20:``, ``:32A:``, beneficiary) or malformed.\n\nArgs:\n    mt103_text: The MT103 payload as a string.\n",
+      "inputSchema": {
+        "properties": {
+          "mt103_text": {
+            "description": "A legacy SWIFT MT103 (single customer credit transfer) payload as text. A raw '{4:...-}' block-4 envelope, trailing whitespace and CRLF/LF differences are tolerated.",
+            "title": "Mt103 Text",
+            "type": "string"
+          }
+        },
+        "required": [
+          "mt103_text"
+        ],
+        "title": "convert_mt103Arguments",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "classify_address",
+      "title": "Classify a postal address",
+      "description": "Classify a postal address as structured, hybrid, or unstructured.\n\nUse this to see where an address stands against the 14 November 2026 SWIFT\ncliff: ``structured`` (town + country + structured detail, no free-form\nlines), ``hybrid`` (town + country + 1-2 free-form ``adr_line`` lines, the\nminimum CBPR+ UG2026 bar), or ``unstructured`` (free-form only — rejected\nfrom the cliff date). To check acceptability under a policy use\n``validate_address``; to upgrade legacy lines use ``repair_address``.\n\nReturns ``{\"classification\": str, \"is_structured\": bool, \"is_hybrid\":\nbool, \"is_unstructured\": bool, \"has_structured_fields\": bool}`` or an\n``{\"error\": ...}`` payload.\n\nArgs:\n    address: The postal address as a dict of snake_case fields.\n",
+      "inputSchema": {
+        "properties": {
+          "address": {
+            "additionalProperties": true,
+            "description": "An ISO 20022 PostalAddress27 as a dict of snake_case fields, e.g. {'strt_nm': 'High St', 'bldg_nb': '1', 'pst_cd': 'AB1 2CD', 'twn_nm': 'London', 'ctry': 'GB'} and optional 'adr_line' (list of free-form lines). 'ctry' must be ISO 3166-1 alpha-2.",
+            "title": "Address",
+            "type": "object"
+          }
+        },
+        "required": [
+          "address"
+        ],
+        "title": "classify_addressArguments",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "validate_address",
+      "title": "Validate a postal address",
+      "description": "Validate one postal address against an address policy.\n\nUse this to decide whether an address will clear a rail. The default\n``hybrid_or_structured`` policy is the November 14, 2026 cliff rule\n(SWIFT CBPR+, HVPS+, T2 RTGS, CHAPS, Fedwire, Lynx): it rejects fully\nunstructured addresses. Findings mirror the library's pipeline severity\n(a policy rejection is a blocking finding).\n\nReturns ``{\"policy\": str, \"classification\": str, \"is_acceptable\": bool,\n\"findings\": [{\"severity\": str, \"message\": str}, ...]}`` or an\n``{\"error\": ...}`` payload.\n\nArgs:\n    address: The postal address as a dict of snake_case fields.\n    policy: The validation policy to enforce (see the enum values).\n",
+      "inputSchema": {
+        "properties": {
+          "address": {
+            "additionalProperties": true,
+            "description": "An ISO 20022 PostalAddress27 as a dict of snake_case fields, e.g. {'strt_nm': 'High St', 'bldg_nb': '1', 'pst_cd': 'AB1 2CD', 'twn_nm': 'London', 'ctry': 'GB'} and optional 'adr_line' (list of free-form lines). 'ctry' must be ISO 3166-1 alpha-2.",
+            "title": "Address",
+            "type": "object"
+          },
+          "policy": {
+            "default": "hybrid_or_structured",
+            "description": "Postal-address validation policy. 'unstructured_ok' permits any form (pre-cliff / generic); 'hybrid_or_structured' rejects fully unstructured addresses (the SWIFT CBPR+ UG2026 default in force from 14 November 2026); 'structured_only' requires full structured form. Must be one of: 'unstructured_ok', 'hybrid_or_structured', 'structured_only'.",
+            "enum": [
+              "unstructured_ok",
+              "hybrid_or_structured",
+              "structured_only"
+            ],
+            "title": "Policy",
+            "type": "string"
+          }
+        },
+        "required": [
+          "address"
+        ],
+        "title": "validate_addressArguments",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "repair_address",
+      "title": "Repair an unstructured address",
+      "description": "Upgrade legacy unstructured address lines toward hybrid/structured form.\n\nExperimental country-aware repair (``GB``, ``US``, ``DE``, ``FR``, ``JP``\nhave dedicated heuristics; other countries get a best-effort pass promoting\nthe last line to a town). Use this to lift pre-cliff data over the\nNovember 14, 2026 bar; audit the output before submitting, and keep both\nthe original and derived address in your audit trail.\n\nReturns ``{\"address\": {...}, \"classification\": str, \"is_structured\":\nbool, \"is_hybrid\": bool}`` (so you can see the unstructured -> hybrid /\nstructured upgrade) or an ``{\"error\": ...}`` payload.\n\nArgs:\n    lines: Legacy unstructured address lines.\n    country: ISO 3166-1 alpha-2 country code driving the heuristics.\n",
+      "inputSchema": {
+        "properties": {
+          "lines": {
+            "description": "Legacy unstructured address lines (free-form). Empty or whitespace-only lines are skipped.",
+            "items": {
+              "type": "string"
+            },
+            "title": "Lines",
+            "type": "array"
+          },
+          "country": {
+            "description": "ISO 3166-1 alpha-2 country code (e.g. 'GB', 'US', 'DE', 'FR', 'JP') used to drive country-aware repair heuristics.",
+            "title": "Country",
+            "type": "string"
+          }
+        },
+        "required": [
+          "lines",
+          "country"
+        ],
+        "title": "repair_addressArguments",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "validate_addresses",
+      "title": "Validate addresses in payment rows",
+      "description": "Batch-validate every party address across a list of payment rows.\n\nUse this before ``generate_message`` to catch addresses that will be\nrejected at the rail. The default ``hybrid_or_structured`` policy enforces\nthe November 14, 2026 cliff. Each finding is reported per offending\n``(row, party)`` pair.\n\nReturns ``{\"policy\": str, \"is_valid\": bool, \"total\": int, \"errors\":\n[{\"row\": int, \"party\": str, \"severity\": str, \"message\": str,\n\"classification\": str}, ...]}`` or an ``{\"error\": ...}`` payload.\n\nArgs:\n    addresses: One or more payment-row dicts (see the field description).\n    policy: The validation policy to enforce (see the enum values).\n",
+      "inputSchema": {
+        "properties": {
+          "addresses": {
+            "description": "Payment-row dicts. The pipeline scans each row for columns of the form '{party}_address_{field}' (party in debtor, creditor, debtor_agent, creditor_agent, ultimate_debtor, ultimate_creditor; field a snake_case PostalAddress field such as twn_nm/ctry/strt_nm or adr_line_0..adr_line_6) and validates each party's address.",
+            "items": {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            "title": "Addresses",
+            "type": "array"
+          },
+          "policy": {
+            "default": "hybrid_or_structured",
+            "description": "Postal-address validation policy. 'unstructured_ok' permits any form (pre-cliff / generic); 'hybrid_or_structured' rejects fully unstructured addresses (the SWIFT CBPR+ UG2026 default in force from 14 November 2026); 'structured_only' requires full structured form. Must be one of: 'unstructured_ok', 'hybrid_or_structured', 'structured_only'.",
+            "enum": [
+              "unstructured_ok",
+              "hybrid_or_structured",
+              "structured_only"
+            ],
+            "title": "Policy",
+            "type": "string"
+          }
+        },
+        "required": [
+          "addresses"
+        ],
+        "title": "validate_addressesArguments",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    }
+  ]
+}

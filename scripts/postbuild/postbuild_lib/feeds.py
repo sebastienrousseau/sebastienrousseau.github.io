@@ -562,7 +562,11 @@ _SITEMAP_BASE = "https://sebastienrousseau.com"
 _STATIC_SLUGS = (
     "about",
     "articles",
-    "papers",
+    # "papers" is deliberately absent: it is a redirect page to /research
+    # (postbuild_lib.redirects) and must not be spliced into the sitemap.
+    "suite",
+    "research",
+    "library",
     "projects",
     "topics",
     "tags",

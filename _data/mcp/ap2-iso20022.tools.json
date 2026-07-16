@@ -1,0 +1,176 @@
+{
+  "_meta": {
+    "captured": "2026-07-15",
+    "server": {
+      "name": "ap2-iso20022",
+      "version": "0.0.1"
+    },
+    "command": "uvx --from \"ap2-iso20022\" ap2-iso20022-mcp",
+    "method": "MCP stdio JSON-RPC tools/list (protocol 2024-11-05)"
+  },
+  "tools": [
+    {
+      "name": "normalize_ap2",
+      "description": "Normalise a Google AP2 (Agent Payments Protocol) mandate payload into a canonical mandate the other tools accept.",
+      "inputSchema": {
+        "properties": {
+          "payload": {
+            "additionalProperties": true,
+            "description": "An AP2 mandate payload.",
+            "title": "Payload",
+            "type": "object"
+          }
+        },
+        "required": [
+          "payload"
+        ],
+        "title": "normalize_ap2Arguments",
+        "type": "object"
+      },
+      "outputSchema": {
+        "additionalProperties": true,
+        "title": "normalize_ap2DictOutput",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "normalize_x402",
+      "description": "Normalise a Coinbase x402 (HTTP-402) payment requirement/receipt into a canonical mandate the other tools accept.",
+      "inputSchema": {
+        "properties": {
+          "payload": {
+            "additionalProperties": true,
+            "description": "An x402 payment payload.",
+            "title": "Payload",
+            "type": "object"
+          }
+        },
+        "required": [
+          "payload"
+        ],
+        "title": "normalize_x402Arguments",
+        "type": "object"
+      },
+      "outputSchema": {
+        "additionalProperties": true,
+        "title": "normalize_x402DictOutput",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "check_mandate",
+      "description": "Guardrail a mandate before it becomes a payment: check required fields, the spending cap (amount <= max_amount), expiry (when 'as_of' is supplied), and whether an authorisation proof is present. Returns ok plus any violations and warnings. Run this before converting.",
+      "inputSchema": {
+        "properties": {
+          "mandate": {
+            "additionalProperties": true,
+            "description": "A canonical mandate object (see normalize_ap2/normalize_x402 output): payer_/payee_ name+account_iban, amount, currency, plus optional reference, execution_date, max_amount, expiry, proof_type/proof_value.",
+            "title": "Mandate",
+            "type": "object"
+          },
+          "as_of": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "ISO date/datetime to evaluate expiry against.",
+            "title": "As Of"
+          }
+        },
+        "required": [
+          "mandate"
+        ],
+        "title": "check_mandateArguments",
+        "type": "object"
+      },
+      "outputSchema": {
+        "additionalProperties": true,
+        "title": "check_mandateDictOutput",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "to_pain001",
+      "description": "Convert a canonical mandate into a pain.001 record (customer credit transfer initiation) using the exact field names pain001 expects, so it feeds straight into pain001 generate_message for wire-valid XML.",
+      "inputSchema": {
+        "properties": {
+          "mandate": {
+            "additionalProperties": true,
+            "description": "A canonical mandate object (see normalize_ap2/normalize_x402 output): payer_/payee_ name+account_iban, amount, currency, plus optional reference, execution_date, max_amount, expiry, proof_type/proof_value.",
+            "title": "Mandate",
+            "type": "object"
+          }
+        },
+        "required": [
+          "mandate"
+        ],
+        "title": "to_pain001Arguments",
+        "type": "object"
+      },
+      "outputSchema": {
+        "additionalProperties": true,
+        "title": "to_pain001DictOutput",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "to_pacs008",
+      "description": "Convert a canonical mandate into a pacs.008 record (FI-to-FI credit transfer) using the field names pacs008 expects, for interbank settlement of an agent-authorised payment.",
+      "inputSchema": {
+        "properties": {
+          "mandate": {
+            "additionalProperties": true,
+            "description": "A canonical mandate object (see normalize_ap2/normalize_x402 output): payer_/payee_ name+account_iban, amount, currency, plus optional reference, execution_date, max_amount, expiry, proof_type/proof_value.",
+            "title": "Mandate",
+            "type": "object"
+          }
+        },
+        "required": [
+          "mandate"
+        ],
+        "title": "to_pacs008Arguments",
+        "type": "object"
+      },
+      "outputSchema": {
+        "additionalProperties": true,
+        "title": "to_pacs008DictOutput",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    }
+  ]
+}

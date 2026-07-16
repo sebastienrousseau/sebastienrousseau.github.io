@@ -32,6 +32,13 @@ _OGURL_RE = re.compile(
 )
 _HREF_RE = re.compile(r'href=["\']?([^"\'\s>]+)', re.IGNORECASE)
 _CONTENT_RE = re.compile(r'content=["\']?([^"\'\s>]+)', re.IGNORECASE)
+# Redirect pages (legacy URLs converted by postbuild_lib.redirects, e.g.
+# /papers/ -> /research/) carry an instant meta refresh and canonicalise to
+# their TARGET, not to themselves — that is the whole point of the page.
+_META_REFRESH_RE = re.compile(
+    r'<meta\s+http-equiv=["\']?refresh["\']?[^>]*content=["\']?\s*0;\s*url=([^"\'>\s]+)',
+    re.IGNORECASE,
+)
 
 
 def _expected(page: Path) -> str:
@@ -59,6 +66,16 @@ def main() -> int:
         canon = canon_m.group(1) if canon_m else ""
         expected = _expected(page)
         rel = str(page.relative_to(PUBLIC))
+        refresh_m = _META_REFRESH_RE.search(html)
+        if refresh_m:
+            # Redirect page: canonical must agree with the refresh target
+            # (self-canonical would contradict the redirect).
+            target = refresh_m.group(1)
+            if canon != target:
+                bad.append(
+                    f"{rel}: redirect page canonical={canon!r} != refresh target={target!r}"
+                )
+            continue
         if canon != expected:
             bad.append(f"{rel}: canonical={canon!r} expected={expected!r}")
             continue

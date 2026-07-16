@@ -109,7 +109,7 @@ Search runs entirely in your browser over a pre-built index — nothing you type
       <li><a href="/articles/index.html">All articles</a> — the full, dated writing archive.</li>
       <li><a href="/topics/index.html">Browse by topic</a> — the editorial pillars.</li>
       <li><a href="/tags/index.html">Browse by tag</a> — every subject tag.</li>
-      <li><a href="/papers/index.html">Papers</a> — long-form research notes and whitepapers.</li>
+      <li><a href="/research/index.html">Research</a> — long-form research notes and whitepapers.</li>
       <li><a href="/case-studies/index.html">Case studies</a> — outcome-led write-ups.</li>
     </ul>
   </div>

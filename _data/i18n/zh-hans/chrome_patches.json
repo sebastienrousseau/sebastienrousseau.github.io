@@ -286,12 +286,88 @@
       "<a href=\"/zh-hans/lianxi/index.html\">联系我</a>"
     ],
     [
-      "<li><a href=\"?/case-studies/index\\.html\"?>Case studies</a></li>",
-      "<li><a href=\"/zh-hans/anli-yanjiu/index.html\">案例研究</a></li>"
-    ],
-    [
       "<a href=\"?/case-studies/index\\.html\"?>Case studies</a>",
       "<a href=\"/zh-hans/anli-yanjiu/index.html\">案例研究</a>"
+    ],
+    [
+      "<li><a href=\"?/research/index\\.html\"?>Research</a></li>",
+      "<li><a href=\"/zh-hans/yanjiu/index.html\">研究</a></li>"
+    ],
+    [
+      "<li><a href=\"?/speaking/index\\.html\"?>Speaking</a></li>",
+      "<li><a href=\"/zh-hans/speaking/index.html\">演讲</a></li>"
+    ],
+    [
+      "<a href=\"?/suite/index\\.html\"?>Suite</a>",
+      "<a href=\"/zh-hans/taojian/index.html\">套件</a>"
+    ],
+    [
+      "<a href=\"?/research/index\\.html\"?>Research</a>",
+      "<a href=\"/zh-hans/yanjiu/index.html\">研究</a>"
+    ],
+    [
+      "<li><a href=\"?/iso20022-mcp-docs/index\\.html\"?>Documentation</a></li>",
+      "<li><a href=\"/iso20022-mcp-docs/index.html\">文档</a></li>"
+    ],
+    [
+      "<li><a href=\"?/iso20022-mcp-reference/index\\.html\"?>API Reference</a></li>",
+      "<li><a href=\"/iso20022-mcp-reference/index.html\">API 参考</a></li>"
+    ],
+    [
+      "<li><a href=\"?/iso20022-mcp-recipes/index\\.html\"?>Integration Recipes</a></li>",
+      "<li><a href=\"/iso20022-mcp-recipes/index.html\">集成示例</a></li>"
+    ],
+    [
+      "<li><a href=\"?/trust/index\\.html\"?>Trust</a></li>",
+      "<li><a href=\"/trust/index.html\">信任</a></li>"
+    ],
+    [
+      "aria-label=\"Toggle About submenu\"",
+      "aria-label=\"切换关于子菜单\""
+    ],
+    [
+      "aria-label=\"Toggle Library submenu\"",
+      "aria-label=\"切换资料库子菜单\""
+    ],
+    [
+      "aria-label=\"Toggle Research submenu\"",
+      "aria-label=\"切换研究子菜单\""
+    ],
+    [
+      "aria-label=\"Toggle Suite submenu\"",
+      "aria-label=\"切换套件子菜单\""
+    ],
+    [
+      "<li><a href=\"?/trust/index\\.html\"?>Trust (?:&amp;|&) Compliance</a></li>",
+      "<li><a href=\"/trust/index.html\">信任与合规</a></li>"
+    ],
+    [
+      "<li><a href=\"?/speaking/index\\.html\"?>Public Speaking</a></li>",
+      "<li><a href=\"/zh-hans/speaking/index.html\">公开演讲</a></li>"
+    ],
+    [
+      "<a href=\"?/library/index\\.html\"?>Library</a>",
+      "<a href=\"/zh-hans/tushuguan/index.html\">资料库</a>"
+    ],
+    [
+      "<li><a href=\"?/topics/index\\.html\"?>Browse by Topic</a></li>",
+      "<li><a href=\"/zh-hans/zhuti/index.html\">按主题浏览</a></li>"
+    ],
+    [
+      "<li><a href=\"?/projects/index\\.html\"?>Open Source Projects</a></li>",
+      "<li><a href=\"/zh-hans/xiangmu/index.html\">开源项目</a></li>"
+    ],
+    [
+      "<li><a href=\"?/playlists/index\\.html\"?>Video Playlists</a></li>",
+      "<li><a href=\"/zh-hans/boqing/index.html\">视频播放列表</a></li>"
+    ],
+    [
+      "<li><a href=\"?/research/index\\.html\"?>Whitepapers (?:&amp;|&) Reports</a></li>",
+      "<li><a href=\"/zh-hans/yanjiu/index.html\">白皮书与报告</a></li>"
+    ],
+    [
+      "<li><a href=\"?/case-studies/index\\.html\"?>Real-World Case Studies</a></li>",
+      "<li><a href=\"/zh-hans/anli-yanjiu/index.html\">真实案例研究</a></li>"
     ]
   ]
 }

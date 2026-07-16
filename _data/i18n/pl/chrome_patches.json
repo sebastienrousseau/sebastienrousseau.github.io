@@ -286,12 +286,88 @@
       "<a href=\"/contact/index.html\">Skontaktuj się</a>"
     ],
     [
-      "<li><a href=\"?/case-studies/index\\.html\"?>Case studies</a></li>",
-      "<li><a href=\"/pl/studia-przypadkow/index.html\">Studia przypadków</a></li>"
-    ],
-    [
       "<a href=\"?/case-studies/index\\.html\"?>Case studies</a>",
       "<a href=\"/pl/studia-przypadkow/index.html\">Studia przypadków</a>"
+    ],
+    [
+      "<li><a href=\"?/research/index\\.html\"?>Research</a></li>",
+      "<li><a href=\"/pl/badania/index.html\">Badania</a></li>"
+    ],
+    [
+      "<li><a href=\"?/speaking/index\\.html\"?>Speaking</a></li>",
+      "<li><a href=\"/pl/speaking/index.html\">Wystąpienia</a></li>"
+    ],
+    [
+      "<a href=\"?/suite/index\\.html\"?>Suite</a>",
+      "<a href=\"/pl/pakiet/index.html\">Pakiet</a>"
+    ],
+    [
+      "<a href=\"?/research/index\\.html\"?>Research</a>",
+      "<a href=\"/pl/badania/index.html\">Badania</a>"
+    ],
+    [
+      "<li><a href=\"?/iso20022-mcp-docs/index\\.html\"?>Documentation</a></li>",
+      "<li><a href=\"/iso20022-mcp-docs/index.html\">Dokumentacja</a></li>"
+    ],
+    [
+      "<li><a href=\"?/iso20022-mcp-reference/index\\.html\"?>API Reference</a></li>",
+      "<li><a href=\"/iso20022-mcp-reference/index.html\">Referencja API</a></li>"
+    ],
+    [
+      "<li><a href=\"?/iso20022-mcp-recipes/index\\.html\"?>Integration Recipes</a></li>",
+      "<li><a href=\"/iso20022-mcp-recipes/index.html\">Przepisy integracyjne</a></li>"
+    ],
+    [
+      "<li><a href=\"?/trust/index\\.html\"?>Trust</a></li>",
+      "<li><a href=\"/trust/index.html\">Zaufanie</a></li>"
+    ],
+    [
+      "aria-label=\"Toggle About submenu\"",
+      "aria-label=\"Przełącz podmenu O mnie\""
+    ],
+    [
+      "aria-label=\"Toggle Library submenu\"",
+      "aria-label=\"Przełącz podmenu Biblioteka\""
+    ],
+    [
+      "aria-label=\"Toggle Research submenu\"",
+      "aria-label=\"Przełącz podmenu Badania\""
+    ],
+    [
+      "aria-label=\"Toggle Suite submenu\"",
+      "aria-label=\"Przełącz podmenu Pakiet\""
+    ],
+    [
+      "<li><a href=\"?/trust/index\\.html\"?>Trust (?:&amp;|&) Compliance</a></li>",
+      "<li><a href=\"/trust/index.html\">Zaufanie i zgodność</a></li>"
+    ],
+    [
+      "<li><a href=\"?/speaking/index\\.html\"?>Public Speaking</a></li>",
+      "<li><a href=\"/pl/speaking/index.html\">Wystąpienia publiczne</a></li>"
+    ],
+    [
+      "<a href=\"?/library/index\\.html\"?>Library</a>",
+      "<a href=\"/pl/biblioteka/index.html\">Biblioteka</a>"
+    ],
+    [
+      "<li><a href=\"?/topics/index\\.html\"?>Browse by Topic</a></li>",
+      "<li><a href=\"/pl/tematy/index.html\">Przeglądaj według tematu</a></li>"
+    ],
+    [
+      "<li><a href=\"?/projects/index\\.html\"?>Open Source Projects</a></li>",
+      "<li><a href=\"/pl/projekty/index.html\">Projekty open source</a></li>"
+    ],
+    [
+      "<li><a href=\"?/playlists/index\\.html\"?>Video Playlists</a></li>",
+      "<li><a href=\"/pl/playlisty/index.html\">Playlisty wideo</a></li>"
+    ],
+    [
+      "<li><a href=\"?/research/index\\.html\"?>Whitepapers (?:&amp;|&) Reports</a></li>",
+      "<li><a href=\"/pl/badania/index.html\">Whitepapery i raporty</a></li>"
+    ],
+    [
+      "<li><a href=\"?/case-studies/index\\.html\"?>Real-World Case Studies</a></li>",
+      "<li><a href=\"/pl/studia-przypadkow/index.html\">Studia przypadków z praktyki</a></li>"
     ]
   ]
 }

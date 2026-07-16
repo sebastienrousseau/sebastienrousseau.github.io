@@ -1,0 +1,133 @@
+{
+  "_meta": {
+    "captured": "2026-07-15",
+    "server": {
+      "name": "camt-exceptions",
+      "version": "0.0.2"
+    },
+    "command": "uvx --from \"camt-exceptions\" camt-exceptions-mcp",
+    "method": "MCP stdio JSON-RPC tools/list (protocol 2024-11-05)"
+  },
+  "tools": [
+    {
+      "name": "list_message_types",
+      "description": "List the supported ISO 20022 Exceptions & Investigations message types (e.g. camt.056 payment cancellation request) and their names.",
+      "inputSchema": {
+        "properties": {},
+        "title": "list_message_typesArguments",
+        "type": "object"
+      },
+      "outputSchema": {
+        "additionalProperties": true,
+        "title": "list_message_typesDictOutput",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "get_required_fields",
+      "description": "Return the required top-level fields for an E&I message type.",
+      "inputSchema": {
+        "properties": {
+          "message_type": {
+            "description": "An E&I message type, e.g. 'camt.056.001.12' (see list_message_types).",
+            "title": "Message Type",
+            "type": "string"
+          }
+        },
+        "required": [
+          "message_type"
+        ],
+        "title": "get_required_fieldsArguments",
+        "type": "object"
+      },
+      "outputSchema": {
+        "additionalProperties": true,
+        "title": "get_required_fieldsDictOutput",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "generate_message",
+      "description": "Generate a validated ISO 20022 E&I XML message from a record. For camt.056, the record cancels/recalls a previously sent payment (assignment ids + agent BICs + a list of 'transactions' with the original payment references and a cancellation reason code). Output is validated against the bundled XSD before it is returned.",
+      "inputSchema": {
+        "properties": {
+          "message_type": {
+            "description": "An E&I message type, e.g. 'camt.056.001.12' (see list_message_types).",
+            "title": "Message Type",
+            "type": "string"
+          },
+          "record": {
+            "additionalProperties": true,
+            "description": "Message fields; see get_required_fields.",
+            "title": "Record",
+            "type": "object"
+          }
+        },
+        "required": [
+          "message_type",
+          "record"
+        ],
+        "title": "generate_messageArguments",
+        "type": "object"
+      },
+      "outputSchema": {
+        "additionalProperties": true,
+        "title": "generate_messageDictOutput",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "validate_xml",
+      "description": "Validate raw ISO 20022 XML against an E&I message type's bundled XSD; returns is_valid plus any schema errors.",
+      "inputSchema": {
+        "properties": {
+          "message_type": {
+            "description": "An E&I message type, e.g. 'camt.056.001.12' (see list_message_types).",
+            "title": "Message Type",
+            "type": "string"
+          },
+          "xml": {
+            "description": "Raw ISO 20022 XML to validate.",
+            "title": "Xml",
+            "type": "string"
+          }
+        },
+        "required": [
+          "message_type",
+          "xml"
+        ],
+        "title": "validate_xmlArguments",
+        "type": "object"
+      },
+      "outputSchema": {
+        "additionalProperties": true,
+        "title": "validate_xmlDictOutput",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    }
+  ]
+}

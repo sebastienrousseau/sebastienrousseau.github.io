@@ -415,9 +415,16 @@ def _write_index(
         if lang == "en"
         else f"{_BASE_URL}/{lang}/{url_segment}/"
     )
+    # EN hub gets the keyword-rich SEO title from the 5-item nav
+    # re-architecture spec; locales keep their translated label.
+    hub_title = (
+        "AI Banking & ISO 20022 Payment Case Studies"
+        if lang == "en"
+        else f"{lbl['Case studies']} — Sebastien Rousseau"
+    )
     out = _swap_into_shell(
         shell, body,
-        f"{lbl['Case studies']} — Sebastien Rousseau",
+        hub_title,
         lbl["deck"],
         url,
     )

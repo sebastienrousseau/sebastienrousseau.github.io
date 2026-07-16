@@ -286,12 +286,88 @@
       "<a href=\"/contact/index.html\">ติดต่อ</a>"
     ],
     [
-      "<li><a href=\"?/case-studies/index\\.html\"?>Case studies</a></li>",
-      "<li><a href=\"/th/krani-suksa/index.html\">กรณีศึกษา</a></li>"
-    ],
-    [
       "<a href=\"?/case-studies/index\\.html\"?>Case studies</a>",
       "<a href=\"/th/krani-suksa/index.html\">กรณีศึกษา</a>"
+    ],
+    [
+      "<li><a href=\"?/research/index\\.html\"?>Research</a></li>",
+      "<li><a href=\"/th/wichai/index.html\">งานวิจัย</a></li>"
+    ],
+    [
+      "<li><a href=\"?/speaking/index\\.html\"?>Speaking</a></li>",
+      "<li><a href=\"/th/speaking/index.html\">งานบรรยาย</a></li>"
+    ],
+    [
+      "<a href=\"?/suite/index\\.html\"?>Suite</a>",
+      "<a href=\"/th/chut/index.html\">ชุดเครื่องมือ</a>"
+    ],
+    [
+      "<a href=\"?/research/index\\.html\"?>Research</a>",
+      "<a href=\"/th/wichai/index.html\">งานวิจัย</a>"
+    ],
+    [
+      "<li><a href=\"?/iso20022-mcp-docs/index\\.html\"?>Documentation</a></li>",
+      "<li><a href=\"/iso20022-mcp-docs/index.html\">เอกสาร</a></li>"
+    ],
+    [
+      "<li><a href=\"?/iso20022-mcp-reference/index\\.html\"?>API Reference</a></li>",
+      "<li><a href=\"/iso20022-mcp-reference/index.html\">ข้อมูลอ้างอิง API</a></li>"
+    ],
+    [
+      "<li><a href=\"?/iso20022-mcp-recipes/index\\.html\"?>Integration Recipes</a></li>",
+      "<li><a href=\"/iso20022-mcp-recipes/index.html\">สูตรการเชื่อมต่อ</a></li>"
+    ],
+    [
+      "<li><a href=\"?/trust/index\\.html\"?>Trust</a></li>",
+      "<li><a href=\"/trust/index.html\">ความน่าเชื่อถือ</a></li>"
+    ],
+    [
+      "aria-label=\"Toggle About submenu\"",
+      "aria-label=\"สลับเมนูย่อย เกี่ยวกับเรา\""
+    ],
+    [
+      "aria-label=\"Toggle Library submenu\"",
+      "aria-label=\"สลับเมนูย่อย ห้องสมุด\""
+    ],
+    [
+      "aria-label=\"Toggle Research submenu\"",
+      "aria-label=\"สลับเมนูย่อย งานวิจัย\""
+    ],
+    [
+      "aria-label=\"Toggle Suite submenu\"",
+      "aria-label=\"สลับเมนูย่อย ชุดเครื่องมือ\""
+    ],
+    [
+      "<li><a href=\"?/trust/index\\.html\"?>Trust (?:&amp;|&) Compliance</a></li>",
+      "<li><a href=\"/trust/index.html\">ความน่าเชื่อถือและการปฏิบัติตามกฎเกณฑ์</a></li>"
+    ],
+    [
+      "<li><a href=\"?/speaking/index\\.html\"?>Public Speaking</a></li>",
+      "<li><a href=\"/th/speaking/index.html\">การพูดในที่สาธารณะ</a></li>"
+    ],
+    [
+      "<a href=\"?/library/index\\.html\"?>Library</a>",
+      "<a href=\"/th/hong-samut/index.html\">ห้องสมุด</a>"
+    ],
+    [
+      "<li><a href=\"?/topics/index\\.html\"?>Browse by Topic</a></li>",
+      "<li><a href=\"/th/hua-kho/index.html\">เรียกดูตามหัวข้อ</a></li>"
+    ],
+    [
+      "<li><a href=\"?/projects/index\\.html\"?>Open Source Projects</a></li>",
+      "<li><a href=\"/th/khrong-kan/index.html\">โครงการโอเพนซอร์ส</a></li>"
+    ],
+    [
+      "<li><a href=\"?/playlists/index\\.html\"?>Video Playlists</a></li>",
+      "<li><a href=\"/th/rai-kan-len/index.html\">เพลย์ลิสต์วิดีโอ</a></li>"
+    ],
+    [
+      "<li><a href=\"?/research/index\\.html\"?>Whitepapers (?:&amp;|&) Reports</a></li>",
+      "<li><a href=\"/th/wichai/index.html\">ไวต์เปเปอร์และรายงาน</a></li>"
+    ],
+    [
+      "<li><a href=\"?/case-studies/index\\.html\"?>Real-World Case Studies</a></li>",
+      "<li><a href=\"/th/krani-suksa/index.html\">กรณีศึกษาจากโลกจริง</a></li>"
     ]
   ]
 }

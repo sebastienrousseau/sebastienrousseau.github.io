@@ -20,7 +20,9 @@ def test_build_llms_txt_includes_canonical_sections():
     assert text.startswith("# Sebastien Rousseau")
     for section in ("Canonical entry points", "Feeds", "Areas of expertise", "Contact"):
         assert f"## {section}" in text
-    for entry in ("Home", "About", "Articles", "Papers", "Projects", "Topics", "Contact"):
+    # "Papers" became "Research" in the 5-item nav re-architecture
+    # (/papers is now a redirect page; /research is the canonical hub).
+    for entry in ("Home", "About", "Articles", "Research", "Projects", "Topics", "Contact"):
         assert f"[{entry}](https://sebastienrousseau.com/" in text
 
 

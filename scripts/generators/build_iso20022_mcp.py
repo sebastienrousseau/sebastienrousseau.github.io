@@ -55,6 +55,7 @@ def _mono(s: str) -> str:
 _IMG_DIMS: dict[str, tuple[int, int]] = {
     "mcp-hero-img": (1920, 960),
     "mcp-band-img": (1920, 720),
+    "mcp-band-img-tall": (1920, 1080),
 }
 
 
@@ -73,11 +74,14 @@ def _img(name: str, alt: str, cls: str, sizes: str, eager: bool = False) -> str:
     )
 
 
-def _imgband(name: str, alt: str) -> str:
-    """A full-bleed-within-wrap image band that breaks up the text sections."""
+def _imgband(name: str, alt: str, cls: str = "mcp-band-img") -> str:
+    """A full-bleed-within-wrap image band that breaks up the text sections.
+    ``cls`` picks the crop: the default 16/6 strip, or the 16/9
+    ``mcp-band-img-tall`` for photos whose subject a 16/6 crop beheads
+    (the wall-clock band; its face just fits a centred 16/9)."""
     return (
         '<section><div class="spk-wrap">'
-        + _img(name, alt, "mcp-band-img", "(max-width:1120px) 100vw, 1120px")
+        + _img(name, alt, cls, "(max-width:1120px) 100vw, 1120px")
         + "</div></section>"
     )
 
@@ -121,9 +125,9 @@ _ICON_SVG = {
 }
 _ICONS = {
     "mcp-benefits": ["send", "check", "swap", "link"],
-    "mcp-what": ["alert", "globe", "grid"],
+    "mcp-what": ["alert", "globe", "grid", "layers"],
     "mcp-arc": ["layers", "grid", "link"],
-    "mcp-safety": ["check", "shield", "lock"],
+    "mcp-safety": ["check", "shield", "eye", "lock"],
     "mcp-security": ["lock", "check", "globe", "shield"],
 }
 
@@ -279,6 +283,15 @@ C: dict = {
                     "between your systems and the rails."
                 ),
             },
+            {
+                "eyebrow": "THE OUTCOME",
+                "title": "Build the next era of your enterprise.",
+                "body": (
+                    "Agents that act across your whole payment stack: "
+                    "initiate, reconcile, migrate and resolve, on an open, "
+                    "vendor-neutral standard you can run anywhere."
+                ),
+            },
         ],
     },
     "arc": {
@@ -346,6 +359,15 @@ C: dict = {
                     "The bridge only transforms and validates. Producing a "
                     "message stays separate from sending it, so payment is a "
                     "human-guarded step."
+                ),
+            },
+            {
+                "eyebrow": "READ-ONLY",
+                "title": "Read-only where it counts.",
+                "body": (
+                    "Reconciliation is pure matching, and every tool is "
+                    "marked read-only, idempotent and closed-world, so "
+                    "clients can reason about safety."
                 ),
             },
             {
@@ -467,31 +489,37 @@ C: dict = {
         "stdio": [
             {
                 "name": "Claude Code",
+                "slug": "claude-code",
                 "where": "One command, from any directory.",
                 "code": f"claude mcp add iso20022 -- {UVX_CMD}",
             },
             {
                 "name": "Claude Desktop",
+                "slug": "claude-desktop",
                 "where": "Settings, Developer, Edit Config: claude_desktop_config.json.",
                 "code": MCPSERVERS_JSON,
             },
             {
                 "name": "Cursor",
+                "slug": "cursor",
                 "where": ".cursor/mcp.json in the project, or ~/.cursor/mcp.json.",
                 "code": MCPSERVERS_JSON,
             },
             {
                 "name": "Windsurf",
+                "slug": "windsurf",
                 "where": "~/.codeium/windsurf/mcp_config.json.",
                 "code": MCPSERVERS_JSON,
             },
             {
                 "name": "VS Code + GitHub Copilot",
+                "slug": "vscode",
                 "where": '.vscode/mcp.json. The top-level key is "servers".',
                 "code": VSCODE_JSON,
             },
             {
                 "name": "Google Gemini CLI",
+                "slug": "gemini",
                 "where": '"mcpServers" inside ~/.gemini/settings.json.',
                 "code": MCPSERVERS_JSON,
             },
@@ -499,6 +527,7 @@ C: dict = {
         "remote": [
             {
                 "name": "OpenAI",
+                "slug": "openai",
                 "body": (
                     "The Agents SDK spawns the suite locally over stdio "
                     "through its MCPServerStdio class, with the same command "
@@ -565,6 +594,33 @@ C: dict = {
                 "note": (
                     "Settings, Developer, Edit Config, then restart. The "
                     "tools appear under the tools icon in the chat box."
+                ),
+            },
+            {
+                "id": "cursor",
+                "label": "Cursor",
+                "code": MCPSERVERS_JSON,
+                "note": (
+                    ".cursor/mcp.json in the project, or ~/.cursor/mcp.json "
+                    "to make the suite available everywhere."
+                ),
+            },
+            {
+                "id": "vscode",
+                "label": "VS Code",
+                "code": VSCODE_JSON,
+                "note": (
+                    '.vscode/mcp.json, for GitHub Copilot. The top-level '
+                    'key is "servers", not "mcpServers".'
+                ),
+            },
+            {
+                "id": "agents",
+                "label": "OpenAI Agents SDK",
+                "code": AGENTS_SDK_PY,
+                "note": (
+                    "The Python Agents SDK spawns the server itself over "
+                    "stdio through MCPServerStdio."
                 ),
             },
         ],
@@ -684,6 +740,17 @@ def _start() -> str:
             "(Claude Desktop, Cursor) and your assistant can pay, reconcile "
             "and migrate.",
         ),
+        (
+            "STEP 4",
+            "Keep humans in the loop.",
+            "The agent can search, generate and validate complex ISO 20022 "
+            "XML, but by design it never moves money directly. Have it "
+            "output the XSD-valid payload, or route it to your bank's SFTP, "
+            "API gateway or treasury queue for final human approval and "
+            "settlement. Generation stays separate from execution, so the "
+            "AI can draft, reconcile and migrate with no risk of "
+            "unauthorised funds leaving accounts.",
+        ),
     ]
     cards = "".join(
         '<div class="spk-path">'
@@ -765,13 +832,17 @@ def _clients(d: dict) -> str:
         '<div class="mcp-client">'
         f'<h3>{_esc(it["name"])}</h3>'
         f'<p class="mcp-client-where">{_esc(it["where"])}</p>'
-        + _code_block(it["code"])
+        + _code_block(it["code"], f'mcp-code-client-{it["slug"]}', copy=True)
         + "</div>"
         for it in d["stdio"]
     ]
     remote = []
     for it in d["remote"]:
-        code = _code_block(it["code"]) if it.get("code") else ""
+        code = (
+            _code_block(it["code"], f'mcp-code-client-{it["slug"]}', copy=True)
+            if it.get("code")
+            else ""
+        )
         remote.append(
             '<div class="mcp-client mcp-client-remote">'
             f'<h3>{_esc(it["name"])}</h3><p>{_rich(it["body"])}</p>{code}</div>'
@@ -882,16 +953,17 @@ def _render_body(d: dict) -> str:
         _hero_image(),
         _cards(d["benefits"], "mcp-benefits", bullets=False),
         _imgband(
-            "circuit_board_cityscape",
-            "A circuit board rendered as a city, evoking payment rails.",
+            "majed-swan-RBEv0VyNi2U",
+            "A grid of blue and white cubes with one cube glowing, evoking a validated message among structured blocks.",
         ),
         _cards(d["what"], "mcp-what", bullets=False),
         _cards(d["arc"], "mcp-arc", bullets=True),
         _flow(d["flow"]),
         _security(d["security"]),
         _imgband(
-            "digital-nodes",
-            "A network of connected nodes, evoking agents calling MCP tools.",
+            "ocean-ng-L0xOtAnv94Y",
+            "A minimalist wall clock, evoking payment operations measured in seconds.",
+            cls="mcp-band-img-tall",
         ),
         _clients(d["clients"]),
         _install_tabs(d["install"]),
@@ -905,28 +977,65 @@ def _render_body(d: dict) -> str:
 
 
 def _nav(shell: str) -> str:
-    """Rebuild the primary nav as the site-wide 9-item structure, with Suite
-    (this page) active. Idempotent, and robust to a stale shell that still
-    carries a different nav.
+    """Rebuild the primary nav as the site-wide 5-item dropdown structure.
+    Idempotent, and robust to a stale shell that still carries a different
+    nav (the regex consumes everything up to the </ul> that closes
+    ap-menu, i.e. the one directly followed by </nav>, so nested ap-sub
+    lists are handled).
+
+    Active-state policy (nav re-architecture, deliberate): no marker is
+    baked here. /iso20022-mcp/ is itself a nav sub-item under Suite, so
+    postbuild's inject_nav_active marks that sub-item with
+    aria-current="page" on the final page.
     """
+    chev = (
+        '<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">'
+        '<path d="M6 9l6 6 6-6"/></svg>'
+    )
+
+    def _toggle(item_id: str, label: str) -> str:
+        return (
+            '<button type="button" class="ap-sub-toggle" aria-expanded="false" '
+            f'aria-controls="sub-{item_id}" aria-label="Toggle {label} submenu">'
+            f"{chev}</button>"
+        )
+
     items = (
-        '<li><a href="/about/index.html">About</a></li>'
+        '<li class="has-sub"><a href="/about/index.html">About</a>'
+        + _toggle("about", "About")
+        + '<ul id="sub-about" class="ap-sub">'
+        '<li><a href="/trust/index.html">Trust &amp; Compliance</a></li>'
+        '<li><a href="/speaking/index.html">Public Speaking</a></li>'
+        '<li><a href="/contact/index.html">Contact</a></li>'
+        "</ul></li>"
         '<li><a href="/articles/index.html">Articles</a></li>'
-        '<li><a href="/papers/index.html">Papers</a></li>'
-        '<li><a href="/case-studies/index.html">Case studies</a></li>'
-        '<li><a href="/topics/index.html">Topics</a></li>'
-        '<li><a href="/projects/index.html">Projects</a></li>'
-        '<li><a href="/playlists/index.html">Playlists</a></li>'
-        '<li><a href="/speaking/index.html">Speaking</a></li>'
-        '<li><a href="/iso20022-mcp/index.html" aria-current="page" '
-        'class="active">Suite</a></li>'
+        '<li class="has-sub"><a href="/library/index.html">Library</a>'
+        + _toggle("library", "Library")
+        + '<ul id="sub-library" class="ap-sub">'
+        '<li><a href="/topics/index.html">Browse by Topic</a></li>'
+        '<li><a href="/projects/index.html">Open Source Projects</a></li>'
+        '<li><a href="/playlists/index.html">Video Playlists</a></li>'
+        "</ul></li>"
+        '<li class="has-sub"><a href="/research/index.html">Research</a>'
+        + _toggle("research", "Research")
+        + '<ul id="sub-research" class="ap-sub">'
+        '<li><a href="/research/index.html">Whitepapers &amp; Reports</a></li>'
+        '<li><a href="/case-studies/index.html">Real-World Case Studies</a></li>'
+        "</ul></li>"
+        '<li class="has-sub"><a href="/suite/index.html">Suite</a>'
+        + _toggle("suite", "Suite")
+        + '<ul id="sub-suite" class="ap-sub">'
+        '<li><a href="/iso20022-mcp/index.html">ISO 20022 MCP Suite</a></li>'
+        '<li><a href="/iso20022-mcp-docs/index.html">Documentation</a></li>'
+        '<li><a href="/iso20022-mcp-reference/index.html">API Reference</a></li>'
+        '<li><a href="/iso20022-mcp-recipes/index.html">Integration Recipes</a></li>'
+        "</ul></li>"
     )
     out, n = re.subn(
-        r'(<ul class="ap-menu">).*?(</ul>)',
+        r'(<ul class="ap-menu">)[\s\S]*?(</ul>)(?=\s*</nav>)',
         lambda m: m.group(1) + items + m.group(2),
         shell,
         count=1,
-        flags=re.DOTALL,
     )
     if n == 0:
         raise SystemExit(

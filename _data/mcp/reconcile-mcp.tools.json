@@ -1,0 +1,269 @@
+{
+  "_meta": {
+    "captured": "2026-07-15",
+    "server": {
+      "name": "reconcile",
+      "version": "0.0.1"
+    },
+    "command": "uvx --from \"reconcile-mcp\" reconcile-mcp",
+    "method": "MCP stdio JSON-RPC tools/list (protocol 2024-11-05)"
+  },
+  "tools": [
+    {
+      "name": "reconcile",
+      "description": "Reconcile expected payments against observed bank-statement entries, returning exact matches, short/over payments, split settlements (one-to-many), batch credits (many-to-one) and unmatched residuals, each with an explainable score and reasons.",
+      "inputSchema": {
+        "properties": {
+          "expected": {
+            "description": "List of canonical records. Each is an object with 'id' (string) and 'amount' (number) required, plus optional 'currency' (ISO 4217), 'date' (ISO-8601), 'counterparty' (name), 'reference' (remittance/end-to-end id).",
+            "items": {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            "title": "Expected",
+            "type": "array"
+          },
+          "observed": {
+            "description": "List of canonical records. Each is an object with 'id' (string) and 'amount' (number) required, plus optional 'currency' (ISO 4217), 'date' (ISO-8601), 'counterparty' (name), 'reference' (remittance/end-to-end id).",
+            "items": {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            "title": "Observed",
+            "type": "array"
+          },
+          "options": {
+            "anyOf": [
+              {
+                "additionalProperties": true,
+                "type": "object"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "Optional tuning object: 'abs_tol'/'rel_tol' (amount tolerance), 'date_window_days', 'high_threshold', 'review_threshold', 'currency_strict', 'enable_one_to_many', 'max_combination'.",
+            "title": "Options"
+          }
+        },
+        "required": [
+          "expected",
+          "observed"
+        ],
+        "title": "reconcileArguments",
+        "type": "object"
+      },
+      "outputSchema": {
+        "additionalProperties": true,
+        "title": "reconcileDictOutput",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "explain_match",
+      "description": "Score a single expected/observed pair and break down every signal (reference, amount, date, name). A tuning aid -- it explains the score even for pairs below the review threshold.",
+      "inputSchema": {
+        "properties": {
+          "expected": {
+            "additionalProperties": true,
+            "description": "One expected record.",
+            "title": "Expected",
+            "type": "object"
+          },
+          "observed": {
+            "additionalProperties": true,
+            "description": "One observed record.",
+            "title": "Observed",
+            "type": "object"
+          },
+          "options": {
+            "anyOf": [
+              {
+                "additionalProperties": true,
+                "type": "object"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "Optional tuning object: 'abs_tol'/'rel_tol' (amount tolerance), 'date_window_days', 'high_threshold', 'review_threshold', 'currency_strict', 'enable_one_to_many', 'max_combination'.",
+            "title": "Options"
+          }
+        },
+        "required": [
+          "expected",
+          "observed"
+        ],
+        "title": "explain_matchArguments",
+        "type": "object"
+      },
+      "outputSchema": {
+        "additionalProperties": true,
+        "title": "explain_matchDictOutput",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "normalize_pain001",
+      "description": "Convert parsed pain.001 payment instructions into canonical expected records ready to reconcile. Accepts a list of transactions or a dict wrapping them under 'transactions'/'payments'/'records'.",
+      "inputSchema": {
+        "properties": {
+          "document": {
+            "description": "Parsed pain.001 document or transaction list.",
+            "title": "Document"
+          }
+        },
+        "required": [
+          "document"
+        ],
+        "title": "normalize_pain001Arguments",
+        "type": "object"
+      },
+      "outputSchema": {
+        "additionalProperties": true,
+        "title": "normalize_pain001DictOutput",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "normalize_camt053",
+      "description": "Convert parsed camt.053 statement entries into canonical observed records ready to reconcile. Accepts a list of entries or a dict wrapping them under 'entries'/'transactions'/'statements'.",
+      "inputSchema": {
+        "properties": {
+          "document": {
+            "description": "Parsed camt.053 document or entry list.",
+            "title": "Document"
+          }
+        },
+        "required": [
+          "document"
+        ],
+        "title": "normalize_camt053Arguments",
+        "type": "object"
+      },
+      "outputSchema": {
+        "additionalProperties": true,
+        "title": "normalize_camt053DictOutput",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "list_sandbox_scenarios",
+      "description": "List the built-in sandbox scenarios (test-mode fixtures). Each demonstrates one reconciliation outcome so you can try the flow with zero real data.",
+      "inputSchema": {
+        "properties": {},
+        "title": "list_sandbox_scenariosArguments",
+        "type": "object"
+      },
+      "outputSchema": {
+        "additionalProperties": true,
+        "title": "list_sandbox_scenariosDictOutput",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "load_sandbox_scenario",
+      "description": "Return the expected/observed inputs for one named sandbox scenario, so you can inspect or edit the fixture before reconciling.",
+      "inputSchema": {
+        "properties": {
+          "name": {
+            "description": "Scenario name, e.g. 'clean_match'.",
+            "title": "Name",
+            "type": "string"
+          }
+        },
+        "required": [
+          "name"
+        ],
+        "title": "load_sandbox_scenarioArguments",
+        "type": "object"
+      },
+      "outputSchema": {
+        "additionalProperties": true,
+        "title": "load_sandbox_scenarioDictOutput",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "run_sandbox_scenario",
+      "description": "Load a named sandbox scenario and immediately reconcile it -- the one-call way to see a full, explainable result with zero setup. Great for a first run or a smoke test.",
+      "inputSchema": {
+        "properties": {
+          "name": {
+            "description": "Scenario name, e.g. 'month_end'.",
+            "title": "Name",
+            "type": "string"
+          },
+          "options": {
+            "anyOf": [
+              {
+                "additionalProperties": true,
+                "type": "object"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "Optional tuning object: 'abs_tol'/'rel_tol' (amount tolerance), 'date_window_days', 'high_threshold', 'review_threshold', 'currency_strict', 'enable_one_to_many', 'max_combination'.",
+            "title": "Options"
+          }
+        },
+        "required": [
+          "name"
+        ],
+        "title": "run_sandbox_scenarioArguments",
+        "type": "object"
+      },
+      "outputSchema": {
+        "additionalProperties": true,
+        "title": "run_sandbox_scenarioDictOutput",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    }
+  ]
+}

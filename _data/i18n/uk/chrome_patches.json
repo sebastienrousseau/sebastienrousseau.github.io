@@ -90,11 +90,11 @@
       "<li><a href=\"/uk/proekty/index.html\">Проєкти</a></li>"
     ],
     [
-      "<li><a href=\"?/articles/index\\.html\"?>Статті</a></li>",
+      "<li><a href=\"?/articles/index\\.html\"?>Articles</a></li>",
       "<li><a href=\"/uk/statti/index.html\">Статті</a></li>"
     ],
     [
-      "<li><a href=\"?/contact/index\\.html\"?>Контакт</a></li>",
+      "<li><a href=\"?/contact/index\\.html\"?>Contact</a></li>",
       "<li><a href=\"/uk/kontakt/index.html\">Контакт</a></li>"
     ],
     [
@@ -102,7 +102,7 @@
       "\\g<1>\"/uk/index.html\""
     ],
     [
-      "<li><a href=\"?/playlists/index\\.html\"?>Плейлисти</a></li>",
+      "<li><a href=\"?/playlists/index\\.html\"?>Playlists</a></li>",
       "<li><a href=\"/uk/pleylysty/index.html\">Плейлисти</a></li>"
     ],
     [
@@ -142,15 +142,15 @@
       "<a href=\"/uk/proekty/index.html\">Проєкти</a>"
     ],
     [
-      "<a href=\"?/playlists/index\\.html\"?>Плейлисти</a>",
+      "<a href=\"?/playlists/index\\.html\"?>Playlists</a>",
       "<a href=\"/uk/pleylysty/index.html\">Плейлисти</a>"
     ],
     [
-      "<a href=\"?/contact/index\\.html\"?>Контакт</a>",
+      "<a href=\"?/contact/index\\.html\"?>Contact</a>",
       "<a href=\"/uk/kontakt/index.html\">Контакт</a>"
     ],
     [
-      "<a href=\"?/articles/index\\.html\"?>Статті</a>",
+      "<a href=\"?/articles/index\\.html\"?>Articles</a>",
       "<a href=\"/uk/statti/index.html\">Статті</a>"
     ],
     [
@@ -286,12 +286,88 @@
       "<a href=\"/contact/index.html\">Зв’язатися зі мною</a>"
     ],
     [
-      "<li><a href=\"?/case-studies/index\\.html\"?>Case studies</a></li>",
-      "<li><a href=\"/uk/kejs-stadi/index.html\">Кейс-стаді</a></li>"
-    ],
-    [
       "<a href=\"?/case-studies/index\\.html\"?>Case studies</a>",
       "<a href=\"/uk/kejs-stadi/index.html\">Кейс-стаді</a>"
+    ],
+    [
+      "<li><a href=\"?/research/index\\.html\"?>Research</a></li>",
+      "<li><a href=\"/uk/doslidzhennya/index.html\">Дослідження</a></li>"
+    ],
+    [
+      "<li><a href=\"?/speaking/index\\.html\"?>Speaking</a></li>",
+      "<li><a href=\"/uk/speaking/index.html\">Виступи</a></li>"
+    ],
+    [
+      "<a href=\"?/suite/index\\.html\"?>Suite</a>",
+      "<a href=\"/uk/paket/index.html\">Пакет</a>"
+    ],
+    [
+      "<a href=\"?/research/index\\.html\"?>Research</a>",
+      "<a href=\"/uk/doslidzhennya/index.html\">Дослідження</a>"
+    ],
+    [
+      "<li><a href=\"?/iso20022-mcp-docs/index\\.html\"?>Documentation</a></li>",
+      "<li><a href=\"/iso20022-mcp-docs/index.html\">Документація</a></li>"
+    ],
+    [
+      "<li><a href=\"?/iso20022-mcp-reference/index\\.html\"?>API Reference</a></li>",
+      "<li><a href=\"/iso20022-mcp-reference/index.html\">Довідник API</a></li>"
+    ],
+    [
+      "<li><a href=\"?/iso20022-mcp-recipes/index\\.html\"?>Integration Recipes</a></li>",
+      "<li><a href=\"/iso20022-mcp-recipes/index.html\">Рецепти інтеграції</a></li>"
+    ],
+    [
+      "<li><a href=\"?/trust/index\\.html\"?>Trust</a></li>",
+      "<li><a href=\"/trust/index.html\">Довіра</a></li>"
+    ],
+    [
+      "aria-label=\"Toggle About submenu\"",
+      "aria-label=\"Перемкнути підменю Про мене\""
+    ],
+    [
+      "aria-label=\"Toggle Library submenu\"",
+      "aria-label=\"Перемкнути підменю Бібліотека\""
+    ],
+    [
+      "aria-label=\"Toggle Research submenu\"",
+      "aria-label=\"Перемкнути підменю Дослідження\""
+    ],
+    [
+      "aria-label=\"Toggle Suite submenu\"",
+      "aria-label=\"Перемкнути підменю Пакет\""
+    ],
+    [
+      "<li><a href=\"?/trust/index\\.html\"?>Trust (?:&amp;|&) Compliance</a></li>",
+      "<li><a href=\"/trust/index.html\">Довіра та відповідність</a></li>"
+    ],
+    [
+      "<li><a href=\"?/speaking/index\\.html\"?>Public Speaking</a></li>",
+      "<li><a href=\"/uk/speaking/index.html\">Публічні виступи</a></li>"
+    ],
+    [
+      "<a href=\"?/library/index\\.html\"?>Library</a>",
+      "<a href=\"/uk/biblioteka/index.html\">Бібліотека</a>"
+    ],
+    [
+      "<li><a href=\"?/topics/index\\.html\"?>Browse by Topic</a></li>",
+      "<li><a href=\"/uk/temy/index.html\">Огляд за темами</a></li>"
+    ],
+    [
+      "<li><a href=\"?/projects/index\\.html\"?>Open Source Projects</a></li>",
+      "<li><a href=\"/uk/proekty/index.html\">Проєкти з відкритим кодом</a></li>"
+    ],
+    [
+      "<li><a href=\"?/playlists/index\\.html\"?>Video Playlists</a></li>",
+      "<li><a href=\"/uk/pleylysty/index.html\">Відеоплейлисти</a></li>"
+    ],
+    [
+      "<li><a href=\"?/research/index\\.html\"?>Whitepapers (?:&amp;|&) Reports</a></li>",
+      "<li><a href=\"/uk/doslidzhennya/index.html\">Білі книги та звіти</a></li>"
+    ],
+    [
+      "<li><a href=\"?/case-studies/index\\.html\"?>Real-World Case Studies</a></li>",
+      "<li><a href=\"/uk/kejs-stadi/index.html\">Реальні кейс-стаді</a></li>"
     ]
   ]
 }

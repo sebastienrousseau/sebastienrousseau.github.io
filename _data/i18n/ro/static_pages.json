@@ -1,4 +1,22 @@
 {
+  "suite": {
+    "title": "Suită software de IA pentru bănci și plăți — Sebastien Rousseau",
+    "subtitle": "Suita software de IA pentru bănci și plăți de la Sebastien Rousseau.",
+    "description": "Suita software de IA pentru bănci și plăți de la Sebastien Rousseau. Descoperiți ISO 20022 MCP Suite: instrumente validate pentru agenți IA pe propria infrastructură.",
+    "keywords": "software bancar IA, suită software de plăți, ISO 20022 MCP, server MCP, agenți IA bancari"
+  },
+  "research": {
+    "title": "Cercetare ISO 20022, cărți albe și analize tehnice — Sebastien Rousseau",
+    "subtitle": "Cercetare ISO 20022, cărți albe și analize tehnice despre IA în bănci, infrastructura de plăți și criptografia post-cuantică, de Sebastien Rousseau.",
+    "description": "Cercetare ISO 20022, cărți albe și analize tehnice despre IA în bănci, infrastructura de plăți și criptografia post-cuantică, de Sebastien Rousseau.",
+    "keywords": "cercetare ISO 20022, cărți albe, analize tehnice, cercetare IA bancară, criptografie post-cuantică"
+  },
+  "library": {
+    "title": "Biblioteca dezvoltatorului: subiecte bancare, open source și playlisturi — Sebastien Rousseau",
+    "subtitle": "Biblioteca dezvoltatorului Sebastien Rousseau: subiecte bancare selectate, proiecte open source și playlisturi video despre AI bancar, plăți ISO 20022 și securitate post-cuantică.",
+    "description": "Biblioteca dezvoltatorului Sebastien Rousseau: subiecte bancare selectate, proiecte open source și playlisturi video despre AI bancar, plăți ISO 20022 și securitate post-cuantică.",
+    "keywords": "biblioteca dezvoltatorului, subiecte bancare, playlisturi, open source, ISO 20022"
+  },
   "_comment": "Română (ro) static-page metadata — DRAFT pending native review.",
   "404": {
     "title": "404 — Sebastien Rousseau",
@@ -33,13 +51,6 @@
     "subtitle": "Have a question or need advice? Get in touch.",
     "description": "Contact Sebastien Rousseau for consulting on payments transformation, ISO 20022 migration or post-quantum strategy.",
     "keywords": "contact, consulting, payments, ISO 20022, post-quantum cryptography",
-    "_draft": true
-  },
-  "made-with-static-site-generator": {
-    "title": "Made with Static Site Generator — Sebastien Rousseau",
-    "subtitle": "Discover the next-generation static site generator.",
-    "description": "This site is made with Static Site Generator, a Rust-based static site generator optimised for performance and SEO.",
-    "keywords": "Static Site Generator, SSG, Rust, performance, SEO",
     "_draft": true
   },
   "made-with-static-site-generator": {

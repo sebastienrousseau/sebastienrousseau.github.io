@@ -66,6 +66,12 @@ REQUIRED_STATIC_SLUGS = (
     "thanks",
     "articles",
     "speaking",
+    # 5-item nav re-architecture: the three new top-nav statics must have a
+    # translated slug in every active locale or the localized nav would
+    # link into a 404.
+    "suite",
+    "research",
+    "library",
 )
 
 

@@ -72,9 +72,20 @@ def collect_sitemap_urls() -> set[str]:
     return urls
 
 
+def _is_redirect_page(page: Path) -> bool:
+    """Redirect pages (legacy URLs converted by postbuild_lib.redirects,
+    e.g. /papers/ -> /research/) canonicalise to their target and are
+    deliberately purged from the sitemap — a non-canonical URL does not
+    belong there. The meta refresh lives in <head>, so sniffing the first
+    few KB is sufficient."""
+    head = page.read_text(encoding="utf-8", errors="ignore")[:4096]
+    return 'http-equiv="refresh"' in head
+
+
 def collect_rendered_pages() -> set[str]:
     """Walk public/ for index.html files; return normalised canonical URLs.
-    Excludes pages that shouldn't appear in a sitemap by convention."""
+    Excludes pages that shouldn't appear in a sitemap by convention
+    (error/offline/post-submit pages, labs, redirect pages)."""
     urls: set[str] = set()
     for page in PUBLIC.rglob("index.html"):
         rel = page.relative_to(PUBLIC).as_posix()
@@ -86,6 +97,8 @@ def collect_rendered_pages() -> set[str]:
             continue
         path = canonical[len(SITE) :]
         if any(path.startswith(prefix) for prefix in _EXCLUDE_PREFIXES):
+            continue
+        if _is_redirect_page(page):
             continue
         urls.add(_norm(canonical))
     return urls

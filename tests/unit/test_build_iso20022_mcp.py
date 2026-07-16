@@ -125,16 +125,55 @@ def test_full_build_swaps_hub_metadata_in() -> None:
     assert "x-black.svg" not in out.split("</head>")[0]  # no share icon in head
 
 
-def test_full_build_nav_has_nine_items_with_suite_active() -> None:
+def test_full_build_nav_has_five_top_items_with_dropdowns() -> None:
     out = _run_build(_fake_shell())
-    assert 'aria-current="page" class="active">Suite</a>' in out
-    nav = out.split('<ul class="ap-menu">', 1)[1].split("</ul>", 1)[0]
-    assert nav.count("<li>") == 9
+    # Nav ends at the </ul> directly before </nav> (nested ap-sub lists).
+    nav = out.split('<ul class="ap-menu">', 1)[1].split("</ul></nav>", 1)[0]
+    # 5 top-level items; 4 carry a dropdown (Articles is a plain link).
+    assert nav.count('<li class="has-sub">') == 4
+    assert nav.count('class="ap-sub"') == 4
     for label in (
-        "About", "Articles", "Papers", "Case studies", "Topics",
-        "Projects", "Playlists", "Speaking", "Suite",
+        "About", "Articles", "Library", "Research", "Suite",
     ):
         assert f">{label}</a>" in nav
+    # Each dropdown carries a disclosure button wired to its panel id.
+    for item_id, label in (
+        ("about", "About"),
+        ("library", "Library"),
+        ("research", "Research"),
+        ("suite", "Suite"),
+    ):
+        assert (
+            f'<button type="button" class="ap-sub-toggle" aria-expanded="false" '
+            f'aria-controls="sub-{item_id}" aria-label="Toggle {label} submenu">'
+        ) in nav
+        assert f'<ul id="sub-{item_id}" class="ap-sub">' in nav
+    # Sub-items present with their canonical hrefs. Whitepapers & Reports
+    # deliberately targets the canonical /research/ hub, not the /papers/
+    # redirect page.
+    for href, label in (
+        ("/trust/index.html", "Trust &amp; Compliance"),
+        ("/speaking/index.html", "Public Speaking"),
+        ("/contact/index.html", "Contact"),
+        ("/topics/index.html", "Browse by Topic"),
+        ("/projects/index.html", "Open Source Projects"),
+        ("/playlists/index.html", "Video Playlists"),
+        ("/research/index.html", "Whitepapers &amp; Reports"),
+        ("/case-studies/index.html", "Real-World Case Studies"),
+        ("/iso20022-mcp/index.html", "ISO 20022 MCP Suite"),
+        ("/iso20022-mcp-docs/index.html", "Documentation"),
+        ("/iso20022-mcp-reference/index.html", "API Reference"),
+        ("/iso20022-mcp-recipes/index.html", "Integration Recipes"),
+    ):
+        assert f'<li><a href="{href}">{label}</a></li>' in nav
+    # No nav link points at the /papers/ redirect page.
+    assert "/papers/" not in nav
+    # F-shape ordering: About leftmost, Suite rightmost.
+    assert nav.index(">About</a>") < nav.index(">Articles</a>") < nav.index(
+        ">Library</a>") < nav.index(">Research</a>") < nav.index(">Suite</a>")
+    # No baked active marker — postbuild's inject_nav_active marks the
+    # /iso20022-mcp/ sub-item on the final page.
+    assert "aria-current" not in nav
 
 
 def test_full_build_replaces_collectionpage_jsonld() -> None:
@@ -220,19 +259,30 @@ def test_clients_grid_covers_stdio_and_remote_accurately() -> None:
     # remote-only for ChatGPT connectors.
     assert "MCPServerStdio" in sec
     assert "Streamable HTTP" in sec
+    # Every card that shows a config gets its own copy button wired to
+    # that card's code element (6 stdio + the OpenAI Agents SDK snippet).
+    for slug in (
+        "claude-code", "claude-desktop", "cursor", "windsurf",
+        "vscode", "gemini", "openai",
+    ):
+        assert f'data-copy="#mcp-code-client-{slug}"' in sec
+    assert sec.count("data-copy=") == 7
 
 
 def test_install_tabs_are_css_only_radio_pattern() -> None:
     out = _run_build(_fake_shell())
     tabs = out.split('<div class="mcp-tabs">', 1)[1].split("</section>", 1)[0]
-    assert tabs.count('name="mcp-install-tab"') == 3
+    assert tabs.count('name="mcp-install-tab"') == 6
     assert tabs.count("checked") == 1
-    for tid in ("uvx", "pip", "json"):
+    for tid in ("uvx", "pip", "json", "cursor", "vscode", "agents"):
         assert f'id="mcp-tab-{tid}"' in tabs
         assert f'<label for="mcp-tab-{tid}">' in tabs
         assert f'id="mcp-panel-{tid}"' in tabs
         # Copy buttons ride main.js's [data-copy] delegate (CSP-safe).
         assert f'data-copy="#mcp-code-{tid}"' in tabs
+    # Only verified shapes: the Agents SDK tab carries the documented
+    # MCPServerStdio snippet, never an invented CLI command.
+    assert "MCPServerStdio" in tabs
     # Radios precede labels and panels so the CSS ~ combinator can reach them.
     assert tabs.find('id="mcp-tab-uvx"') < tabs.find('<div class="mcp-tab-labels">')
     assert tabs.find('<div class="mcp-tab-labels">') < tabs.find('id="mcp-panel-uvx"')
@@ -277,6 +327,45 @@ def test_committed_tool_schema_snapshot_is_sound() -> None:
         ann = t["annotations"]
         assert ann["readOnlyHint"] is True
         assert ann["destructiveHint"] is False
+
+
+def test_what_section_has_outcome_card() -> None:
+    out = _run_build(_fake_shell())
+    sec = out.split('id="mcp-what"', 1)[1].split("</section>", 1)[0]
+    assert sec.count('<div class="spk-path">') == 4
+    assert "Build the next era of your enterprise." in sec
+    assert ">THE OUTCOME</span>" in sec
+    assert sec.count('<span class="mcp-icon"') == 4
+
+
+def test_start_has_four_steps_with_human_loop() -> None:
+    out = _run_build(_fake_shell())
+    sec = out.split('id="mcp-start"', 1)[1].split("</section>", 1)[0]
+    assert sec.count('<div class="spk-path">') == 4
+    assert "Keep humans in the loop." in sec
+    assert "never moves money directly" in sec
+    assert "final human approval and settlement" in sec
+
+
+def test_clock_band_uses_tall_crop() -> None:
+    out = _run_build(_fake_shell())
+    assert 'class="mcp-band-img-tall" width="1920" height="1080"' in out
+    assert "ocean-ng-L0xOtAnv94Y-1920.webp" in out
+    # The other band keeps the standard 16/6 strip.
+    assert 'class="mcp-band-img" width="1920" height="720"' in out
+
+
+def test_safety_section_has_four_cards_from_verified_copy() -> None:
+    out = _run_build(_fake_shell())
+    sec = out.split('id="mcp-safety"', 1)[1].split("</section>", 1)[0]
+    assert sec.count('<div class="spk-path">') == 4
+    for eyebrow in ("VALIDATED", "GUARDED", "READ-ONLY", "OPEN"):
+        assert f">{eyebrow}</span>" in sec
+    # The fourth card restates the docs page's verified read-only claim.
+    assert "Read-only where it counts." in sec
+    assert "read-only, idempotent and closed-world" in sec
+    # Every card carries its icon slot (check / shield / eye / lock).
+    assert sec.count('<span class="mcp-icon"') == 4
 
 
 def test_body_ships_no_inline_styles_or_em_dashes() -> None:

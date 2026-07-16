@@ -1,4 +1,22 @@
 {
+  "suite": {
+    "title": "Kunshin manhajar AI na kamfani don banki da biyan kudi — Sebastien Rousseau",
+    "subtitle": "Kunshin manhajar AI na kamfani don banki da biyan kudi daga Sebastien Rousseau.",
+    "description": "Kunshin manhajar AI na kamfani don banki da biyan kudi daga Sebastien Rousseau. Bincika ISO 20022 MCP Suite: ingantattun kayan aiki don wakilan AI a kan kayan aikinku.",
+    "keywords": "manhajar banki ta AI, kunshin manhajar biyan kudi, ISO 20022 MCP, uwar garken MCP, wakilan AI na banki"
+  },
+  "research": {
+    "title": "Binciken ISO 20022, farar takardu da nazarin fasaha — Sebastien Rousseau",
+    "subtitle": "Binciken ISO 20022, farar takardu da nazarin fasaha kan AI a banki, tsarin biyan kudi da kariyar sirri bayan kwamfutar quantum, daga Sebastien Rousseau.",
+    "description": "Binciken ISO 20022, farar takardu da nazarin fasaha kan AI a banki, tsarin biyan kudi da kariyar sirri bayan kwamfutar quantum, daga Sebastien Rousseau.",
+    "keywords": "binciken ISO 20022, farar takardu, nazarin fasaha, binciken AI na banki, kariyar sirri bayan quantum"
+  },
+  "library": {
+    "title": "Dakin karatu na masu haɓakawa: batutuwan banki, buɗaɗɗen tushe da jerin waƙoƙi — Sebastien Rousseau",
+    "subtitle": "Dakin karatu na masu haɓakawa na Sebastien Rousseau: zaɓaɓɓun batutuwan banki, ayyukan buɗaɗɗen tushe da jerin bidiyo kan AI na banki, biyan kuɗi na ISO 20022 da tsaron bayan-quantum.",
+    "description": "Dakin karatu na masu haɓakawa na Sebastien Rousseau: zaɓaɓɓun batutuwan banki, ayyukan buɗaɗɗen tushe da jerin bidiyo kan AI na banki, biyan kuɗi na ISO 20022 da tsaron bayan-quantum.",
+    "keywords": "dakin karatu na masu haɓakawa, batutuwan banki, jerin waƙoƙi, buɗaɗɗen tushe, ISO 20022"
+  },
   "_comment": "Hausa (ha) static-page metadata — DRAFT pending native review.",
   "404": {
     "title": "404 — Sebastien Rousseau",
@@ -33,13 +51,6 @@
     "subtitle": "Have a question or need advice? Get in touch.",
     "description": "Contact Sebastien Rousseau for consulting on payments transformation, ISO 20022 migration or post-quantum strategy.",
     "keywords": "contact, consulting, payments, ISO 20022, post-quantum cryptography",
-    "_draft": true
-  },
-  "made-with-static-site-generator": {
-    "title": "Made with Static Site Generator — Sebastien Rousseau",
-    "subtitle": "Discover the next-generation static site generator.",
-    "description": "This site is made with Static Site Generator, a Rust-based static site generator optimised for performance and SEO.",
-    "keywords": "Static Site Generator, SSG, Rust, performance, SEO",
     "_draft": true
   },
   "made-with-static-site-generator": {

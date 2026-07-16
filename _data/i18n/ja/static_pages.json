@@ -1,4 +1,22 @@
 {
+  "suite": {
+    "title": "銀行・決済向けエンタープライズAIソフトウェアスイート — Sebastien Rousseau",
+    "subtitle": "Sebastien Rousseauによる銀行・決済向けエンタープライズAIソフトウェアスイート。",
+    "description": "Sebastien Rousseauによる銀行・決済向けエンタープライズAIソフトウェアスイート。ISO 20022 MCP Suiteをご覧ください。自社インフラ上でAIエージェントが使える検証済みツール群です。",
+    "keywords": "AIバンキングソフトウェア, 決済ソフトウェアスイート, ISO 20022 MCP, MCPサーバー, 銀行向けAIエージェント"
+  },
+  "research": {
+    "title": "ISO 20022リサーチ、ホワイトペーパー、技術分析 — Sebastien Rousseau",
+    "subtitle": "銀行業務におけるAI、決済インフラ、ポスト量子暗号に関するISO 20022リサーチ、ホワイトペーパー、技術分析。",
+    "description": "銀行業務におけるAI、決済インフラ、ポスト量子暗号に関するISO 20022リサーチ、ホワイトペーパー、技術分析。Sebastien Rousseau著。",
+    "keywords": "ISO 20022 リサーチ, ホワイトペーパー, 技術分析, AIバンキング研究, ポスト量子暗号"
+  },
+  "library": {
+    "title": "開発者ライブラリ:銀行業務トピック、オープンソース、プレイリスト — Sebastien Rousseau",
+    "subtitle": "Sebastien Rousseauの開発者ライブラリ。厳選した銀行業務トピック、オープンソースプロジェクト、銀行AI・ISO 20022決済・ポスト量子セキュリティに関する動画プレイリスト。",
+    "description": "Sebastien Rousseauの開発者ライブラリ。厳選した銀行業務トピック、オープンソースプロジェクト、銀行AI・ISO 20022決済・ポスト量子セキュリティに関する動画プレイリスト。",
+    "keywords": "開発者ライブラリ, 銀行業務トピック, プレイリスト, オープンソース, ISO 20022"
+  },
   "_comment": "Japanese static-page metadata — DRAFT pending native review. Mirrors EN/FR/DE/AR static_pages.json shape.",
   "404": {
     "title": "ページが見つかりません — Sebastien Rousseau",
@@ -29,12 +47,6 @@
     "subtitle": "ご質問やご相談がありましたらお気軽にどうぞ。",
     "description": "決済変革、ISO 20022 移行、ポスト量子戦略のコンサルティングについて Sebastien Rousseau にお問い合わせください。",
     "keywords": "お問い合わせ, コンサルティング, 決済, ISO 20022, ポスト量子暗号"
-  },
-  "made-with-static-site-generator": {
-    "title": "Static Site Generator で作成 — Sebastien Rousseau",
-    "subtitle": "次世代の静的サイトジェネレータの活用方法をご紹介します。",
-    "description": "このサイトはパフォーマンスと SEO を最適化した Rust 製静的サイトジェネレータ Static Site Generator で構築されています。",
-    "keywords": "Static Site Generator, SSG, Rust, パフォーマンス, SEO"
   },
   "made-with-static-site-generator": {
     "title": "Static Site Generator で作成 — Sebastien Rousseau",

@@ -1,0 +1,738 @@
+{
+  "_meta": {
+    "captured": "2026-07-15",
+    "server": {
+      "name": "pain001",
+      "version": "0.0.55"
+    },
+    "command": "uvx --from \"pain001-mcp\" pain001-mcp",
+    "method": "MCP stdio JSON-RPC tools/list (protocol 2024-11-05)"
+  },
+  "tools": [
+    {
+      "name": "list_message_types",
+      "title": "List pain message types",
+      "description": "List every supported ISO 20022 pain message type and its human name.\n\nUse this first, before any generation or validation call, to discover\nthe exact ``message_type`` strings this server accepts. Do not use it to\nfetch a type's fields or schema — call ``get_required_fields`` or\n``get_input_schema`` for that.\n\nReturns a list of ``{\"message_type\": ..., \"name\": ...}`` dictionaries,\none per supported message type (e.g. ``pain.001.001.09``).\n",
+      "inputSchema": {
+        "properties": {},
+        "title": "list_message_typesArguments",
+        "type": "object"
+      },
+      "outputSchema": {
+        "properties": {
+          "result": {
+            "items": {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            "title": "Result",
+            "type": "array"
+          }
+        },
+        "required": [
+          "result"
+        ],
+        "title": "list_message_typesOutput",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "get_required_fields",
+      "title": "Get required fields",
+      "description": "List only the required input field names for a pain message type.\n\nUse this for a quick checklist of the mandatory columns before building\nrecords. When you need full type/format constraints (not just which\nfields are required), call ``get_input_schema`` instead.\n\nArgs:\n    message_type: A supported ISO 20022 pain message type.\n",
+      "inputSchema": {
+        "properties": {
+          "message_type": {
+            "description": "A supported ISO 20022 pain message type. Must be exactly one of: 'pain.001.001.03', 'pain.001.001.04', 'pain.001.001.05', 'pain.001.001.06', 'pain.001.001.07', 'pain.001.001.08', 'pain.001.001.09', 'pain.001.001.10', 'pain.001.001.11', 'pain.001.001.12', 'pain.008.001.02' (see list_message_types).",
+            "enum": [
+              "pain.001.001.03",
+              "pain.001.001.04",
+              "pain.001.001.05",
+              "pain.001.001.06",
+              "pain.001.001.07",
+              "pain.001.001.08",
+              "pain.001.001.09",
+              "pain.001.001.10",
+              "pain.001.001.11",
+              "pain.001.001.12",
+              "pain.008.001.02"
+            ],
+            "title": "Message Type",
+            "type": "string"
+          }
+        },
+        "required": [
+          "message_type"
+        ],
+        "title": "get_required_fieldsArguments",
+        "type": "object"
+      },
+      "outputSchema": {
+        "properties": {
+          "result": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Result",
+            "type": "array"
+          }
+        },
+        "required": [
+          "result"
+        ],
+        "title": "get_required_fieldsOutput",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "get_input_schema",
+      "title": "Get input JSON Schema",
+      "description": "Return the full JSON Schema for a message type's flat input record.\n\nUse this to learn every field, its type, and its constraints before\nassembling records, or to drive a form/UI. For just the required-field\nnames use ``get_required_fields``; to actually check records against\nthis schema use ``validate_records``.\n\nArgs:\n    message_type: A supported ISO 20022 pain message type.\n",
+      "inputSchema": {
+        "properties": {
+          "message_type": {
+            "description": "A supported ISO 20022 pain message type. Must be exactly one of: 'pain.001.001.03', 'pain.001.001.04', 'pain.001.001.05', 'pain.001.001.06', 'pain.001.001.07', 'pain.001.001.08', 'pain.001.001.09', 'pain.001.001.10', 'pain.001.001.11', 'pain.001.001.12', 'pain.008.001.02' (see list_message_types).",
+            "enum": [
+              "pain.001.001.03",
+              "pain.001.001.04",
+              "pain.001.001.05",
+              "pain.001.001.06",
+              "pain.001.001.07",
+              "pain.001.001.08",
+              "pain.001.001.09",
+              "pain.001.001.10",
+              "pain.001.001.11",
+              "pain.001.001.12",
+              "pain.008.001.02"
+            ],
+            "title": "Message Type",
+            "type": "string"
+          }
+        },
+        "required": [
+          "message_type"
+        ],
+        "title": "get_input_schemaArguments",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "validate_records",
+      "title": "Validate records against schema",
+      "description": "Validate flat records against a message type's input JSON Schema.\n\nUse this before ``generate_message`` to catch structural/type errors\nper record and get a row-by-row error report. This checks JSON-Schema\nshape only; for payment-scheme rulebook checks (SEPA field lengths,\ncharset, etc.) also run ``validate_payment_scheme``.\n\nReturns a report ``{\"valid\": bool, \"total\": int, \"valid_count\": int,\n\"errors\": [...]}``.\n\nArgs:\n    message_type: A supported ISO 20022 pain message type.\n    records: One or more flat payment records to validate.\n",
+      "inputSchema": {
+        "properties": {
+          "message_type": {
+            "description": "A supported ISO 20022 pain message type. Must be exactly one of: 'pain.001.001.03', 'pain.001.001.04', 'pain.001.001.05', 'pain.001.001.06', 'pain.001.001.07', 'pain.001.001.08', 'pain.001.001.09', 'pain.001.001.10', 'pain.001.001.11', 'pain.001.001.12', 'pain.008.001.02' (see list_message_types).",
+            "enum": [
+              "pain.001.001.03",
+              "pain.001.001.04",
+              "pain.001.001.05",
+              "pain.001.001.06",
+              "pain.001.001.07",
+              "pain.001.001.08",
+              "pain.001.001.09",
+              "pain.001.001.10",
+              "pain.001.001.11",
+              "pain.001.001.12",
+              "pain.008.001.02"
+            ],
+            "title": "Message Type",
+            "type": "string"
+          },
+          "records": {
+            "description": "One or more flat payment records to validate, each a dict of field name → value (see get_input_schema for the fields and get_required_fields for the mandatory ones).",
+            "items": {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            "title": "Records",
+            "type": "array"
+          }
+        },
+        "required": [
+          "message_type",
+          "records"
+        ],
+        "title": "validate_recordsArguments",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "validate_identifier",
+      "title": "Validate IBAN or BIC",
+      "description": "Validate a single financial identifier (IBAN or BIC).\n\nUse this for a one-off identifier check with a clear pass/fail and\nreason. To validate identifiers embedded across a whole batch, prefer\n``validate_records`` / ``validate_payment_scheme`` instead of calling\nthis per field.\n\nReturns ``{\"kind\": str, \"value\": str, \"valid\": bool, \"error\": str}``\n(the ``error`` key is present only when ``valid`` is ``False``).\n\nArgs:\n    kind: One of ``\"iban\"`` or ``\"bic\"`` (case-insensitive).\n    value: The identifier value to check.\n",
+      "inputSchema": {
+        "properties": {
+          "kind": {
+            "description": "Which identifier to validate: 'iban' or 'bic' (case-insensitive). Any other value returns an error.",
+            "title": "Kind",
+            "type": "string"
+          },
+          "value": {
+            "description": "The identifier string to check — an IBAN or BIC/SWIFT code matching the chosen kind.",
+            "title": "Value",
+            "type": "string"
+          }
+        },
+        "required": [
+          "kind",
+          "value"
+        ],
+        "title": "validate_identifierArguments",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "generate_message",
+      "title": "Generate pain XML from records",
+      "description": "Generate a validated ISO 20022 pain XML message from in-memory records.\n\nThis is the primary generation tool: pass records you already hold in\nmemory. Use ``generate_message_from_file`` when the data lives in a CSV\non disk, and ``generate_message_async`` for very large batches you want\nto run off the event loop. The result is XSD-validated before return; no\nfile is written.\n\nReturns the validated XML document as a string, or a JSON-encoded\n``{\"error\": ...}`` payload if generation fails.\n\nArgs:\n    message_type: A supported ISO 20022 pain message type.\n    records: One or more flat payment records.\n",
+      "inputSchema": {
+        "properties": {
+          "message_type": {
+            "description": "A supported ISO 20022 pain message type. Must be exactly one of: 'pain.001.001.03', 'pain.001.001.04', 'pain.001.001.05', 'pain.001.001.06', 'pain.001.001.07', 'pain.001.001.08', 'pain.001.001.09', 'pain.001.001.10', 'pain.001.001.11', 'pain.001.001.12', 'pain.008.001.02' (see list_message_types).",
+            "enum": [
+              "pain.001.001.03",
+              "pain.001.001.04",
+              "pain.001.001.05",
+              "pain.001.001.06",
+              "pain.001.001.07",
+              "pain.001.001.08",
+              "pain.001.001.09",
+              "pain.001.001.10",
+              "pain.001.001.11",
+              "pain.001.001.12",
+              "pain.008.001.02"
+            ],
+            "title": "Message Type",
+            "type": "string"
+          },
+          "records": {
+            "description": "One or more flat payment records (each a dict of field name → value) to render into the XML; validate them first with validate_records. See get_input_schema for the fields.",
+            "items": {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            "title": "Records",
+            "type": "array"
+          }
+        },
+        "required": [
+          "message_type",
+          "records"
+        ],
+        "title": "generate_messageArguments",
+        "type": "object"
+      },
+      "outputSchema": {
+        "properties": {
+          "result": {
+            "title": "Result",
+            "type": "string"
+          }
+        },
+        "required": [
+          "result"
+        ],
+        "title": "generate_messageOutput",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "list_supported_formats",
+      "title": "List supported input formats",
+      "description": "List the on-disk data formats the pain001 loader can read.\n\nUse this to tell a user which file types they may supply to\n``generate_message_from_file``. This lists *data-source* formats (CSV,\nSQLite, …); for the list of ISO 20022 *message* types call\n``list_message_types`` instead.\n\nReturns a list of ``{\"id\", \"name\", \"extension\"}`` dictionaries\ncovering CSV, SQLite, JSON, JSONL, and Parquet (the last requires the\n``pain001[parquet]`` extra).\n",
+      "inputSchema": {
+        "properties": {},
+        "title": "list_supported_formatsArguments",
+        "type": "object"
+      },
+      "outputSchema": {
+        "properties": {
+          "result": {
+            "items": {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            "title": "Result",
+            "type": "array"
+          }
+        },
+        "required": [
+          "result"
+        ],
+        "title": "list_supported_formatsOutput",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "generate_message_async",
+      "title": "Generate pain XML (async, large batches)",
+      "description": "Generate validated pain XML off the event loop, for large batches.\n\nBehaves exactly like ``generate_message`` but runs the synchronous\nrenderer in a worker thread so an agent can interleave a long\ngeneration with other tool calls. Use ``generate_message`` for small\nor interactive batches; use this only when the record count is large\nenough that blocking would matter.\n\nDelegates to :func:`pain001.async_adapter.generate_xml_string_async`.\nReturns the validated XML, or a JSON-encoded ``{\"error\": ...}`` payload.\n\nArgs:\n    message_type: A supported ISO 20022 pain message type.\n    records: One or more flat payment records.\n",
+      "inputSchema": {
+        "properties": {
+          "message_type": {
+            "description": "A supported ISO 20022 pain message type. Must be exactly one of: 'pain.001.001.03', 'pain.001.001.04', 'pain.001.001.05', 'pain.001.001.06', 'pain.001.001.07', 'pain.001.001.08', 'pain.001.001.09', 'pain.001.001.10', 'pain.001.001.11', 'pain.001.001.12', 'pain.008.001.02' (see list_message_types).",
+            "enum": [
+              "pain.001.001.03",
+              "pain.001.001.04",
+              "pain.001.001.05",
+              "pain.001.001.06",
+              "pain.001.001.07",
+              "pain.001.001.08",
+              "pain.001.001.09",
+              "pain.001.001.10",
+              "pain.001.001.11",
+              "pain.001.001.12",
+              "pain.008.001.02"
+            ],
+            "title": "Message Type",
+            "type": "string"
+          },
+          "records": {
+            "description": "One or more flat payment records (each a dict of field name → value) to render into the XML; use this async variant only when the batch is large. See get_input_schema.",
+            "items": {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            "title": "Records",
+            "type": "array"
+          }
+        },
+        "required": [
+          "message_type",
+          "records"
+        ],
+        "title": "generate_message_asyncArguments",
+        "type": "object"
+      },
+      "outputSchema": {
+        "properties": {
+          "result": {
+            "title": "Result",
+            "type": "string"
+          }
+        },
+        "required": [
+          "result"
+        ],
+        "title": "generate_message_asyncOutput",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "generate_message_from_file",
+      "title": "Generate pain XML from a CSV file",
+      "description": "Generate validated pain XML from a CSV file on the local disk.\n\nUse this when the records live in a CSV file rather than in memory; it\nreads ``data_file_path`` from the local filesystem, then delegates to\n``generate_message``. If you already have the records as dicts, call\n``generate_message`` directly. Only CSV is supported today (JSON / JSONL\n/ SQLite / Parquet are planned for a follow-up release).\n\nLoads ``data_file_path`` via :func:`pain001.csv.load_csv_data.load_csv_data`\nso the same path-safety guards apply as in the core library.\n\nArgs:\n    message_type: A supported ISO 20022 pain message type.\n    data_file_path: Path to a CSV file with one record per row.\n\nReturns:\n    The validated XML, or a JSON-encoded ``{\"error\": ...}`` payload.\n",
+      "inputSchema": {
+        "properties": {
+          "message_type": {
+            "description": "A supported ISO 20022 pain message type. Must be exactly one of: 'pain.001.001.03', 'pain.001.001.04', 'pain.001.001.05', 'pain.001.001.06', 'pain.001.001.07', 'pain.001.001.08', 'pain.001.001.09', 'pain.001.001.10', 'pain.001.001.11', 'pain.001.001.12', 'pain.008.001.02' (see list_message_types).",
+            "enum": [
+              "pain.001.001.03",
+              "pain.001.001.04",
+              "pain.001.001.05",
+              "pain.001.001.06",
+              "pain.001.001.07",
+              "pain.001.001.08",
+              "pain.001.001.09",
+              "pain.001.001.10",
+              "pain.001.001.11",
+              "pain.001.001.12",
+              "pain.008.001.02"
+            ],
+            "title": "Message Type",
+            "type": "string"
+          },
+          "data_file_path": {
+            "description": "Local filesystem path to a CSV file with one payment record per row and a header matching the template columns (see inspect_template). Only CSV is supported today.",
+            "title": "Data File Path",
+            "type": "string"
+          }
+        },
+        "required": [
+          "message_type",
+          "data_file_path"
+        ],
+        "title": "generate_message_from_fileArguments",
+        "type": "object"
+      },
+      "outputSchema": {
+        "properties": {
+          "result": {
+            "title": "Result",
+            "type": "string"
+          }
+        },
+        "required": [
+          "result"
+        ],
+        "title": "generate_message_from_fileOutput",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": true
+      }
+    },
+    {
+      "name": "parse_camt053",
+      "title": "Parse camt.053 statement file",
+      "description": "Parse a camt.053 bank-statement XML file on disk into structured data.\n\nUse this to read a bank's account statement (the reply that confirms\nsettlement) into a header + entry list. Reads ``xml_file_path`` from the\nlocal filesystem. For the payment-status reply (accepted/rejected per\ntransaction) use ``parse_pain002`` instead; to validate a camt.053\nstring you already hold, this is not it — this tool needs a file path.\n\nWraps :func:`pain001.parse_camt053_statement`. When ``xsd_file_path``\nis provided, the document is first validated against that XSD; on a\nschema or parse error the tool returns ``{\"error\": ...}`` rather than\nraising.\n\nArgs:\n    xml_file_path: Filesystem path to the camt.053 XML statement.\n    xsd_file_path: Optional path to a camt.053 XSD for upfront\n        validation.\n\nReturns:\n    A compact dict with the statement header and entry list, or an\n    ``{\"error\": ...}`` payload on failure.\n",
+      "inputSchema": {
+        "properties": {
+          "xml_file_path": {
+            "description": "Local filesystem path to the camt.053 bank-statement XML file to parse.",
+            "title": "Xml File Path",
+            "type": "string"
+          },
+          "xsd_file_path": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "Optional local path to a camt.053 XSD; when given, the document is validated against it before parsing. Omit to skip schema validation.",
+            "title": "Xsd File Path"
+          }
+        },
+        "required": [
+          "xml_file_path"
+        ],
+        "title": "parse_camt053Arguments",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": true
+      }
+    },
+    {
+      "name": "parse_pain002",
+      "title": "Parse pain.002 status report file",
+      "description": "Parse a pain.002 payment-status report file on disk into structured data.\n\nUse this to read the bank's acknowledgement of a submitted pain.001 —\nthe per-transaction accepted/rejected status and reason codes. Reads\n``xml_file_path`` from the local filesystem. For the account statement\nthat later confirms booked entries, use ``parse_camt053`` instead.\n\nWraps :func:`pain001.parse_pain002_report`. When ``xsd_file_path`` is\nprovided, the document is first validated against that XSD; on a\nschema or parse error the tool returns ``{\"error\": ...}`` rather than\nraising.\n\nArgs:\n    xml_file_path: Filesystem path to the pain.002 XML report.\n    xsd_file_path: Optional path to a pain.002 XSD for upfront\n        validation.\n\nReturns:\n    A dict with the group header and transaction statuses, or an\n    ``{\"error\": ...}`` payload on failure.\n",
+      "inputSchema": {
+        "properties": {
+          "xml_file_path": {
+            "description": "Local filesystem path to the pain.002 payment-status report XML file to parse.",
+            "title": "Xml File Path",
+            "type": "string"
+          },
+          "xsd_file_path": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "Optional local path to a pain.002 XSD; when given, the document is validated against it before parsing. Omit to skip schema validation.",
+            "title": "Xsd File Path"
+          }
+        },
+        "required": [
+          "xml_file_path"
+        ],
+        "title": "parse_pain002Arguments",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": true
+      }
+    },
+    {
+      "name": "inspect_template",
+      "title": "Inspect CSV template columns",
+      "description": "Return the CSV column headers the message type's bundled template uses.\n\nUse this to see the exact column order for hand-building a CSV before\n``generate_message_from_file``. This returns column *names* from the\nbundled sample; for the typed JSON contract (types, required flags) use\n``get_input_schema``.\n\nMirrors the in-tree ``pain001.mcp.server.inspect_template`` tool so an\nagent can introspect the column layout before assembling rows.\n\nArgs:\n    message_type: A supported ISO 20022 pain message type.\n\nReturns:\n    ``{\"message_type\": str, \"columns\": list[str]}`` or\n    ``{\"error\": ...}`` if the type is unsupported or no template ships.\n",
+      "inputSchema": {
+        "properties": {
+          "message_type": {
+            "description": "A supported ISO 20022 pain message type. Must be exactly one of: 'pain.001.001.03', 'pain.001.001.04', 'pain.001.001.05', 'pain.001.001.06', 'pain.001.001.07', 'pain.001.001.08', 'pain.001.001.09', 'pain.001.001.10', 'pain.001.001.11', 'pain.001.001.12', 'pain.008.001.02' (see list_message_types).",
+            "enum": [
+              "pain.001.001.03",
+              "pain.001.001.04",
+              "pain.001.001.05",
+              "pain.001.001.06",
+              "pain.001.001.07",
+              "pain.001.001.08",
+              "pain.001.001.09",
+              "pain.001.001.10",
+              "pain.001.001.11",
+              "pain.001.001.12",
+              "pain.008.001.02"
+            ],
+            "title": "Message Type",
+            "type": "string"
+          }
+        },
+        "required": [
+          "message_type"
+        ],
+        "title": "inspect_templateArguments",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "validate_payment_scheme",
+      "title": "Validate against scheme rulebook",
+      "description": "Validate records against a payment-scheme rulebook (e.g. SEPA).\n\nUse this after ``validate_records`` to enforce scheme-specific business\nrules (SEPA field lengths, allowed characters, currency/BIC constraints)\nthat JSON-Schema validation alone does not cover. ``validate_records``\nchecks structural shape; this checks rulebook compliance for one profile.\n\nDelegates to :func:`pain001.validate_scheme`. Supported profiles:\n``sepa-sct``, ``sepa-sdd``, ``sepa-inst``, ``xborder-ct``.\n\nArgs:\n    records: Payment records as a list of flat dicts.\n    profile: The scheme profile name.\n\nReturns:\n    ``{\"profile\", \"is_valid\", \"violations\": [...]}`` with structured\n    ``violations`` (each with ``rule``, ``severity``, ``field``,\n    ``message``, ``remediation`` keys), or ``{\"error\": ...}`` for an\n    unknown profile.\n",
+      "inputSchema": {
+        "properties": {
+          "records": {
+            "description": "Payment records as a list of flat dicts (field name → value) to check against the scheme rulebook.",
+            "items": {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            "title": "Records",
+            "type": "array"
+          },
+          "profile": {
+            "default": "sepa-sct",
+            "description": "The payment-scheme rulebook profile to enforce. One of 'sepa-sct', 'sepa-sdd', 'sepa-inst', or 'xborder-ct'. Defaults to 'sepa-sct'.",
+            "title": "Profile",
+            "type": "string"
+          }
+        },
+        "required": [
+          "records"
+        ],
+        "title": "validate_payment_schemeArguments",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "migrate_records",
+      "title": "Migrate records between versions",
+      "description": "Migrate flat payment records between two pain.001 schema versions.\n\nUse this to upgrade/downgrade records when your bank requires a\ndifferent pain.001 version than your source data uses (e.g. move\n``.03`` rows to ``.09``); it reports which fields were renamed, derived,\nor dropped. This transforms records only — run ``validate_records``\nafterwards, then ``generate_message`` to emit XML.\n\nWraps :class:`pain001.migration.VersionMapper`. Returns the\nmigrated rows plus a summary of which fields were renamed,\nderived, or dropped; ``{\"error\": ...}`` if either version is\nunsupported.\n\nArgs:\n    records: Records in the ``from_version`` shape.\n    from_version: Source pain.001 version (e.g. ``\"pain.001.001.03\"``).\n    to_version: Target pain.001 version (e.g. ``\"pain.001.001.09\"``).\n\nReturns:\n    ``{\"records\": [...], \"migrated\": int, \"from\": str, \"to\": str}``\n    or ``{\"error\": ...}``.\n",
+      "inputSchema": {
+        "properties": {
+          "records": {
+            "description": "Flat payment records in the from_version shape, each a dict of field name → value, to transform to to_version.",
+            "items": {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            "title": "Records",
+            "type": "array"
+          },
+          "from_version": {
+            "description": "Source pain.001 schema version the records currently use, e.g. 'pain.001.001.03' — see list_message_types.",
+            "title": "From Version",
+            "type": "string"
+          },
+          "to_version": {
+            "description": "Target pain.001 schema version to migrate the records to, e.g. 'pain.001.001.09' — see list_message_types.",
+            "title": "To Version",
+            "type": "string"
+          }
+        },
+        "required": [
+          "records",
+          "from_version",
+          "to_version"
+        ],
+        "title": "migrate_recordsArguments",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "validate_xml_against_schema",
+      "title": "Validate XML string against XSD",
+      "description": "Validate a raw pain.001 / pain.008 XML string against its official XSD.\n\nUse this to check XML you already have as a string (e.g. received from\nanother system) without touching the filesystem. To validate records\n*before* they become XML, use ``validate_records``; to parse a statement\nor status-report file, use ``parse_camt053`` / ``parse_pain002``.\n\nWraps :func:`pain001.xml.validate_via_xsd.validate_xml_string_via_xsd`.\n\nArgs:\n    xml_content: The XML document as a string.\n    message_type: A supported ISO 20022 pain message type.\n\nReturns:\n    ``{\"valid\": bool, \"message_type\": str, \"error\": str?}`` -\n    ``error`` is present only when ``valid`` is ``False``.\n",
+      "inputSchema": {
+        "properties": {
+          "xml_content": {
+            "description": "The full pain.001 / pain.008 XML document as a string, validated against the message type's official XSD.",
+            "title": "Xml Content",
+            "type": "string"
+          },
+          "message_type": {
+            "description": "A supported ISO 20022 pain message type. Must be exactly one of: 'pain.001.001.03', 'pain.001.001.04', 'pain.001.001.05', 'pain.001.001.06', 'pain.001.001.07', 'pain.001.001.08', 'pain.001.001.09', 'pain.001.001.10', 'pain.001.001.11', 'pain.001.001.12', 'pain.008.001.02' (see list_message_types).",
+            "enum": [
+              "pain.001.001.03",
+              "pain.001.001.04",
+              "pain.001.001.05",
+              "pain.001.001.06",
+              "pain.001.001.07",
+              "pain.001.001.08",
+              "pain.001.001.09",
+              "pain.001.001.10",
+              "pain.001.001.11",
+              "pain.001.001.12",
+              "pain.008.001.02"
+            ],
+            "title": "Message Type",
+            "type": "string"
+          }
+        },
+        "required": [
+          "xml_content",
+          "message_type"
+        ],
+        "title": "validate_xml_against_schemaArguments",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "sanitize_to_iso20022_charset",
+      "title": "Sanitise text to ISO 20022 charset",
+      "description": "Sanitise one free-text field to the ISO 20022 Latin character set.\n\nUse this on a single free-text value (name, remittance info) to\ntransliterate accents and drop unsupported symbols before placing it in\na record, and to see whether the value changed. Operates on one string;\nto check a whole batch's rulebook compliance use ``validate_payment_scheme``.\n\nWraps :func:`pain001.sanitize_to_charset`. Transliterates accents\n(``é`` -> ``e``), removes unsupported symbols, and returns both\nthe cleaned string and a flag for whether the original was\nalready valid - useful for surfacing the change to the user\nbefore writing it back to a record.\n\nArgs:\n    value: The text to sanitise.\n\nReturns:\n    ``{\"value\": str, \"sanitised\": str, \"was_valid\": bool, \"changed\": bool}``.\n",
+      "inputSchema": {
+        "properties": {
+          "value": {
+            "description": "A single free-text field value (e.g. a name or remittance line) to transliterate to the ISO 20022 Latin character set.",
+            "title": "Value",
+            "type": "string"
+          }
+        },
+        "required": [
+          "value"
+        ],
+        "title": "sanitize_to_iso20022_charsetArguments",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "convert_mt101",
+      "title": "Convert MT101 to pain.001 records",
+      "description": "Convert a legacy SWIFT MT101 message into pain.001-ready records.\n\nUse this to bridge the Nov-2025+ SWIFT MT→MX migration: parse an MT101\n(*Request for Transfer*) into the flat records the other tools consume —\nfeed the result straight to ``validate_records`` /\n``validate_payment_scheme`` and then ``generate_message`` to emit\npain.001.001.09 XML. An MT101 can request many transfers (repeating\nsequence B), so this returns *one record per transaction*. Operates on\nthe supplied text only; no file is read or written.\n\nWraps :func:`pain001_loader_mt101.loader.parse_mt101`. Sequence-A\nordering-customer / account-servicing fields apply to every transaction\nunless a sequence-B block overrides them; fields the MT101 does not\ncarry are synthesised to schema defaults (``payment_method`` ``\"TRF\"``,\n``service_level_code`` ``\"SEPA\"``, etc.).\n\nArgs:\n    mt101_text: The MT101 payload as a string.\n\nReturns:\n    A list of flat pain.001 records (one per transaction), or an\n    ``{\"error\": ...}`` dict if the MT101 is missing a mandatory field\n    (``:20:``, ``:30:``, or per transaction ``:21:`` / ``:32B:`` /\n    a named beneficiary) or is otherwise malformed.\n",
+      "inputSchema": {
+        "properties": {
+          "mt101_text": {
+            "description": "A legacy SWIFT MT101 (Request for Transfer) message as text — a bare ':tag:' field list or a raw '{4:...-}' block-4 envelope. An MT101 may carry several sequence-B transfers; each becomes its own record.",
+            "title": "Mt101 Text",
+            "type": "string"
+          }
+        },
+        "required": [
+          "mt101_text"
+        ],
+        "title": "convert_mt101Arguments",
+        "type": "object"
+      },
+      "outputSchema": {
+        "properties": {
+          "result": {
+            "anyOf": [
+              {
+                "items": {
+                  "additionalProperties": true,
+                  "type": "object"
+                },
+                "type": "array"
+              },
+              {
+                "additionalProperties": true,
+                "type": "object"
+              }
+            ],
+            "title": "Result"
+          }
+        },
+        "required": [
+          "result"
+        ],
+        "title": "convert_mt101Output",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    }
+  ]
+}

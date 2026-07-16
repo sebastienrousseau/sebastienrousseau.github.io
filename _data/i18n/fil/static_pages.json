@@ -1,4 +1,22 @@
 {
+  "suite": {
+    "title": "Enterprise AI software suite para sa pagbabangko at pagbabayad — Sebastien Rousseau",
+    "subtitle": "Ang enterprise AI software suite para sa pagbabangko at pagbabayad mula kay Sebastien Rousseau.",
+    "description": "Ang enterprise AI software suite para sa pagbabangko at pagbabayad mula kay Sebastien Rousseau. Tuklasin ang ISO 20022 MCP Suite: mga na-validate na tool para sa mga AI agent sa sarili mong imprastraktura.",
+    "keywords": "AI banking software, payment software suite, ISO 20022 MCP, MCP server, mga AI agent sa pagbabangko"
+  },
+  "research": {
+    "title": "Pananaliksik sa ISO 20022, mga whitepaper at teknikal na pagsusuri — Sebastien Rousseau",
+    "subtitle": "Pananaliksik sa ISO 20022, mga whitepaper at teknikal na pagsusuri tungkol sa AI sa pagbabangko, imprastraktura ng pagbabayad at post-quantum na kriptograpiya, mula kay Sebastien Rousseau.",
+    "description": "Pananaliksik sa ISO 20022, mga whitepaper at teknikal na pagsusuri tungkol sa AI sa pagbabangko, imprastraktura ng pagbabayad at post-quantum na kriptograpiya, mula kay Sebastien Rousseau.",
+    "keywords": "pananaliksik ISO 20022, mga whitepaper, teknikal na pagsusuri, pananaliksik sa AI banking, post-quantum na kriptograpiya"
+  },
+  "library": {
+    "title": "Aklatan ng developer: mga paksa sa pagbabangko, open source at mga playlist — Sebastien Rousseau",
+    "subtitle": "Ang aklatan ng developer ni Sebastien Rousseau: piling mga paksa sa pagbabangko, mga proyektong open source at mga video playlist tungkol sa AI sa pagbabangko, mga pagbabayad na ISO 20022 at post-quantum na seguridad.",
+    "description": "Ang aklatan ng developer ni Sebastien Rousseau: piling mga paksa sa pagbabangko, mga proyektong open source at mga video playlist tungkol sa AI sa pagbabangko, mga pagbabayad na ISO 20022 at post-quantum na seguridad.",
+    "keywords": "aklatan ng developer, mga paksa sa pagbabangko, mga playlist, open source, ISO 20022"
+  },
   "_comment": "Filipino static-page metadata — DRAFT pending native review. Mirrors EN/FR/DE static_pages.json shape.",
   "404": {
     "title": "404 — Hindi nahanap ang page — Sebastien Rousseau",
@@ -29,12 +47,6 @@
     "subtitle": "Makipag-ugnayan tungkol sa consulting, mga usapan o mga oportunidad ng kolaborasyon.",
     "description": "Professional contact form para kay Sebastien Rousseau: consulting, mga usapan, mga kolaborasyon.",
     "keywords": "contact, Sebastien Rousseau, consulting, mga usapan"
-  },
-  "made-with-static-site-generator": {
-    "title": "Ginawa sa Static Site Generator — Sebastien Rousseau",
-    "subtitle": "Ang site na ito ay ginawa sa Static Site Generator static site generator, nakasulat sa Rust.",
-    "description": "Ang site na ito ay ginawa sa Static Site Generator, isang mabilis at secure na static site generator sa Rust.",
-    "keywords": "Static Site Generator, static site generator, Rust, SSG"
   },
   "made-with-static-site-generator": {
     "title": "Ginawa sa Static Site Generator — Sebastien Rousseau",

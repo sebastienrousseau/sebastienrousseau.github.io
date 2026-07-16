@@ -1,4 +1,22 @@
 {
+  "suite": {
+    "title": "Pakiet oprogramowania AI dla banków i płatności — Sebastien Rousseau",
+    "subtitle": "Pakiet oprogramowania AI dla banków i płatności od Sebastiena Rousseau.",
+    "description": "Pakiet oprogramowania AI dla banków i płatności od Sebastiena Rousseau. Poznaj ISO 20022 MCP Suite: zweryfikowane narzędzia dla agentów AI na własnej infrastrukturze.",
+    "keywords": "oprogramowanie bankowe AI, pakiet oprogramowania płatniczego, ISO 20022 MCP, serwer MCP, agenci AI bankowość"
+  },
+  "research": {
+    "title": "Badania ISO 20022, białe księgi i analizy techniczne — Sebastien Rousseau",
+    "subtitle": "Badania ISO 20022, białe księgi i analizy techniczne dotyczące AI w bankowości, infrastruktury płatniczej i kryptografii postkwantowej, autorstwa Sebastiena Rousseau.",
+    "description": "Badania ISO 20022, białe księgi i analizy techniczne dotyczące AI w bankowości, infrastruktury płatniczej i kryptografii postkwantowej, autorstwa Sebastiena Rousseau.",
+    "keywords": "badania ISO 20022, białe księgi, analizy techniczne, badania AI w bankowości, kryptografia postkwantowa"
+  },
+  "library": {
+    "title": "Biblioteka programisty: tematy bankowe, open source i playlisty — Sebastien Rousseau",
+    "subtitle": "Biblioteka programisty Sebastiena Rousseau: wybrane tematy bankowe, projekty open source i playlisty wideo o bankowej AI, płatnościach ISO 20022 i bezpieczeństwie postkwantowym.",
+    "description": "Biblioteka programisty Sebastiena Rousseau: wybrane tematy bankowe, projekty open source i playlisty wideo o bankowej AI, płatnościach ISO 20022 i bezpieczeństwie postkwantowym.",
+    "keywords": "biblioteka programisty, tematy bankowe, playlisty, open source, ISO 20022"
+  },
   "_comment": "Polish static-page metadata — DRAFT pending native-speaker review. Mirrors EN/FR/DE/ES static_pages.json shape. Formal banking register (Pan/Pani).",
   "404": {
     "title": "Strona nie znaleziona — Sebastien Rousseau",
@@ -29,12 +47,6 @@
     "subtitle": "Pytanie lub potrzeba konsultacji? Proszę napisać.",
     "description": "Proszę skontaktować się z Sebastienem Rousseau w sprawie doradztwa w transformacji płatności, migracji na ISO 20022 lub strategii postkwantowej.",
     "keywords": "kontakt, doradztwo, płatności, ISO 20022, kryptografia postkwantowa"
-  },
-  "made-with-static-site-generator": {
-    "title": "Stworzone w Static Site Generator — Sebastien Rousseau",
-    "subtitle": "Proszę odkryć, jak korzystać z generatora stron statycznych nowej generacji.",
-    "description": "Ta strona została stworzona w Static Site Generator, generatorze stron statycznych napisanym w Rust, zoptymalizowanym pod kątem wydajności i SEO.",
-    "keywords": "Static Site Generator, SSG, Rust, wydajność, SEO"
   },
   "made-with-static-site-generator": {
     "title": "Stworzone statycznym generatorem — Sebastien Rousseau",

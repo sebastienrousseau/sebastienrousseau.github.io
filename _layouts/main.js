@@ -994,6 +994,73 @@ function fallbackCopy(text, done) {
 })();
 
 // ---------------------------------------------------------------------------
+// Primary-nav submenu disclosure — drives the per-item .ap-sub-toggle
+// buttons (About / Library / Research / Suite Overview). Progressive
+// enhancement on top of the CSS-only fallback:
+//   - With JS off, html has no .has-js class, so the stylesheet's
+//     :hover / :focus-within rules open the panels on their own.
+//   - With JS on, .has-js scopes the :focus-within fallback out and the
+//     buttons take over: click (and native Enter/Space on <button>)
+//     toggles aria-expanded, which the CSS maps to panel visibility.
+//     Escape closes the open panel and returns focus to its button;
+//     clicking or focusing outside closes everything. Hover stays as a
+//     pure-CSS enhancement for mouse users. Same-origin, CSP-safe.
+// ---------------------------------------------------------------------------
+(function () {
+    "use strict";
+    // ``\x20`` preserves the descendant-combinator space through the SSG's
+    // CSS-aware string minifier (same workaround as the Mermaid styles).
+    var SUB_SEL = ".ap-menu\x20.has-sub";
+    var items = document.querySelectorAll(SUB_SEL);
+    if (!items.length) return;
+    document.documentElement.classList.add("has-js");
+
+    var pairs = [];
+    items.forEach(function (li) {
+        var btn = li.querySelector("button.ap-sub-toggle[aria-controls]");
+        if (!btn) return;
+        var panel = document.getElementById(btn.getAttribute("aria-controls"));
+        if (!panel) return;
+        pairs.push({ li: li, btn: btn });
+    });
+    if (!pairs.length) return;
+
+    function closeAll(except) {
+        pairs.forEach(function (p) {
+            if (p.btn !== except) p.btn.setAttribute("aria-expanded", "false");
+        });
+    }
+
+    pairs.forEach(function (p) {
+        p.btn.addEventListener("click", function () {
+            var open = p.btn.getAttribute("aria-expanded") === "true";
+            closeAll(p.btn);
+            p.btn.setAttribute("aria-expanded", open ? "false" : "true");
+        });
+        // Escape inside the item: close the panel, hand focus back to
+        // the button so keyboard users don't lose their place.
+        p.li.addEventListener("keydown", function (e) {
+            if (e.key !== "Escape" && e.key !== "Esc") return;
+            if (p.btn.getAttribute("aria-expanded") !== "true") return;
+            e.stopPropagation();
+            p.btn.setAttribute("aria-expanded", "false");
+            p.btn.focus();
+        });
+        // Tabbing out of the item closes its panel.
+        p.li.addEventListener("focusout", function (e) {
+            if (e.relatedTarget && p.li.contains(e.relatedTarget)) return;
+            p.btn.setAttribute("aria-expanded", "false");
+        });
+    });
+
+    // Click anywhere outside the nav items closes every open panel.
+    document.addEventListener("click", function (e) {
+        var inside = e.target.closest && e.target.closest(SUB_SEL);
+        if (!inside) closeAll(null);
+    });
+})();
+
+// ---------------------------------------------------------------------------
 // Mobile nav toggle — expose disclosure state to assistive technology.
 // The menu itself is a CSS `:has(.ap-toggle:checked)` disclosure that works
 // with JavaScript disabled; this pass only mirrors the checkbox state into

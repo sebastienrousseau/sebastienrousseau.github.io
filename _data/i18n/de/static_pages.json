@@ -1,4 +1,22 @@
 {
+  "suite": {
+    "title": "Enterprise-KI-Software-Suite für Banken und Zahlungsverkehr — Sebastien Rousseau",
+    "subtitle": "Die Enterprise-KI-Software-Suite für Banken und Zahlungsverkehr von Sebastien Rousseau.",
+    "description": "Die Enterprise-KI-Software-Suite für Banken und Zahlungsverkehr von Sebastien Rousseau. Entdecken Sie die ISO 20022 MCP Suite: validierte Werkzeuge für KI-Agenten auf Ihrer eigenen Infrastruktur.",
+    "keywords": "KI-Banking-Software, Zahlungssoftware-Suite, ISO 20022 MCP, MCP-Server, KI-Agenten Banking"
+  },
+  "research": {
+    "title": "ISO-20022-Forschung, Whitepaper und technische Analysen — Sebastien Rousseau",
+    "subtitle": "ISO-20022-Forschung, Whitepaper und technische Analysen zu KI im Banking, Zahlungsinfrastruktur und Post-Quanten-Kryptografie, von Sebastien Rousseau.",
+    "description": "ISO-20022-Forschung, Whitepaper und technische Analysen zu KI im Banking, Zahlungsinfrastruktur und Post-Quanten-Kryptografie, von Sebastien Rousseau.",
+    "keywords": "ISO 20022 Forschung, Whitepaper, technische Analysen, KI-Banking-Forschung, Post-Quanten-Kryptografie"
+  },
+  "library": {
+    "title": "Entwickler-Bibliothek: Banking-Themen, Open-Source-Projekte und Playlists — Sebastien Rousseau",
+    "subtitle": "Die Entwickler-Bibliothek von Sebastien Rousseau: kuratierte Banking-Themen, Open-Source-Projekte und Video-Playlists zu Banking-KI, ISO-20022-Zahlungen und Post-Quanten-Sicherheit.",
+    "description": "Die Entwickler-Bibliothek von Sebastien Rousseau: kuratierte Banking-Themen, Open-Source-Projekte und Video-Playlists zu Banking-KI, ISO-20022-Zahlungen und Post-Quanten-Sicherheit.",
+    "keywords": "Entwickler-Bibliothek, Banking-Themen, Playlists, Open-Source-Projekte, ISO 20022"
+  },
   "_comment": "Per-static-page metadata for the German mirror. DRAFT — pending native-speaker review. Keys are EN slugs; entries replace EN values in <title>, <meta name=description>, <meta name=keywords>, og:*, twitter:*, and the hero subtitle. German text expansion vs EN is typically +30% — verify nothing wraps awkwardly in the rendered nav/CTAs before flipping active=True.",
   "about": {
     "title": "Über mich — Sebastien Rousseau",
@@ -53,12 +71,6 @@
     "subtitle": "Allgemeine Nutzungsbedingungen der Website.",
     "description": "Allgemeine Nutzungsbedingungen der Website sebastienrousseau.com: Inhaltslizenz, Beschränkungen, Marken und Gerichtsstand.",
     "keywords": "Nutzungsbedingungen, Impressum, Lizenz, Copyright"
-  },
-  "made-with-static-site-generator": {
-    "title": "Erstellt mit Static Site Generator — Sebastien Rousseau",
-    "subtitle": "Entdecken Sie den Static-Site-Generator der nächsten Generation.",
-    "description": "Diese Website wird mit Static Site Generator generiert, einem schnellen, in Rust geschriebenen Static-Site-Generator.",
-    "keywords": "Static Site Generator, Static-Site-Generator, Rust, Performance"
   },
   "made-with-static-site-generator": {
     "title": "Erstellt mit Static Site Generator — Sebastien Rousseau",

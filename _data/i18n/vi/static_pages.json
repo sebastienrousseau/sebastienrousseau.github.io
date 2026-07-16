@@ -1,4 +1,22 @@
 {
+  "suite": {
+    "title": "Bộ phần mềm AI doanh nghiệp cho ngân hàng và thanh toán — Sebastien Rousseau",
+    "subtitle": "Bộ phần mềm AI doanh nghiệp cho ngân hàng và thanh toán của Sebastien Rousseau.",
+    "description": "Bộ phần mềm AI doanh nghiệp cho ngân hàng và thanh toán của Sebastien Rousseau. Khám phá ISO 20022 MCP Suite: các công cụ đã được kiểm chứng cho tác tử AI trên hạ tầng của riêng bạn.",
+    "keywords": "phần mềm ngân hàng AI, bộ phần mềm thanh toán, ISO 20022 MCP, máy chủ MCP, tác tử AI ngân hàng"
+  },
+  "research": {
+    "title": "Nghiên cứu ISO 20022, sách trắng và phân tích kỹ thuật — Sebastien Rousseau",
+    "subtitle": "Nghiên cứu ISO 20022, sách trắng và phân tích kỹ thuật về AI trong ngân hàng, hạ tầng thanh toán và mật mã hậu lượng tử, của Sebastien Rousseau.",
+    "description": "Nghiên cứu ISO 20022, sách trắng và phân tích kỹ thuật về AI trong ngân hàng, hạ tầng thanh toán và mật mã hậu lượng tử, của Sebastien Rousseau.",
+    "keywords": "nghiên cứu ISO 20022, sách trắng, phân tích kỹ thuật, nghiên cứu AI ngân hàng, mật mã hậu lượng tử"
+  },
+  "library": {
+    "title": "Thư viện nhà phát triển: chủ đề ngân hàng, mã nguồn mở và danh sách phát — Sebastien Rousseau",
+    "subtitle": "Thư viện nhà phát triển của Sebastien Rousseau: các chủ đề ngân hàng chọn lọc, dự án mã nguồn mở và danh sách phát video về AI ngân hàng, thanh toán ISO 20022 và bảo mật hậu lượng tử.",
+    "description": "Thư viện nhà phát triển của Sebastien Rousseau: các chủ đề ngân hàng chọn lọc, dự án mã nguồn mở và danh sách phát video về AI ngân hàng, thanh toán ISO 20022 và bảo mật hậu lượng tử.",
+    "keywords": "thư viện nhà phát triển, chủ đề ngân hàng, danh sách phát, mã nguồn mở, ISO 20022"
+  },
   "_comment": "Per-static-page metadata for the Vietnamese mirror. Keys are the EN slug; each entry replaces the EN values in <title>, <meta name=description>, <meta name=keywords>, og:*, twitter:*, and the hero subtitle. STATIC_BODIES_VI supplies the curated VI <main> body for pages that need more than a regex pass.",
   "about": {
     "title": "Giới thiệu — Sebastien Rousseau",
@@ -53,12 +71,6 @@
     "subtitle": "Điều khoản và điều kiện sử dụng website.",
     "description": "Điều khoản và điều kiện sử dụng website sebastienrousseau.com: giấy phép nội dung, hạn chế, nhãn hiệu và quyền tài phán.",
     "keywords": "điều khoản, thông báo pháp lý, giấy phép, bản quyền"
-  },
-  "made-with-static-site-generator": {
-    "title": "Tạo bằng Static Site Generator — Sebastien Rousseau",
-    "subtitle": "Khám phá cách sử dụng bộ tạo trang tĩnh thế hệ mới.",
-    "description": "Website này được tạo bằng Static Site Generator, bộ tạo trang tĩnh tốc độ cao viết bằng Rust.",
-    "keywords": "Static Site Generator, bộ tạo trang tĩnh, Rust, hiệu năng"
   },
   "made-with-static-site-generator": {
     "title": "Tạo bằng Static Site Generator — Sebastien Rousseau",

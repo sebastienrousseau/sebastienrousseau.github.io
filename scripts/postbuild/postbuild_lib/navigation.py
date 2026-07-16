@@ -199,7 +199,26 @@ def build_post_nav_index(
         out[entry[1]] = (prev_e, next_e)
     return out
 def _nav_target_for_en_page(top: str) -> str:
-    """Map an EN top-level page slug to its nav-link href."""
+    """Map an EN top-level page slug to its nav-link href.
+
+    Active-state policy (5-item dropdown nav, deliberate): the primary
+    nav is About / Articles / Library / Research / Suite Overview.
+    Articles is a plain top-level link; the other four carry a
+    disclosure dropdown of sub-items. Because the sub-items are
+    ordinary anchors inside the nav <ul>, the generic marking below
+    covers them too: dated articles mark the top-level Articles link,
+    /case-studies/ marks the Research > Real-World Case Studies
+    sub-item, /speaking/ marks About > Public Speaking, /topics/ marks
+    Library > Browse by Topic, /iso20022-mcp/ marks the Suite Overview
+    > ISO 20022 MCP Suite sub-item, and so on. /research/ appears twice
+    (top-level Research and the Whitepapers & Reports sub-item, which
+    deliberately targets the canonical /research/ hub rather than the
+    /papers/ redirect page); the count=1 substitution in
+    inject_nav_active marks the first occurrence -- the top-level link
+    -- with aria-current="page". Pages mapped to an href that is not in
+    the nav (e.g. /tags/, /glossary/) simply produce no match and carry
+    no marker -- intentional, not a bug.
+    """
     if _DATED_SLUG_RE.match(top):
         return "/articles/index.html"
     return f"/{top}/index.html"

@@ -102,8 +102,53 @@ site_software: "Static Site Generator, Rust"
 
 <p class="story-intro">The ISO 20022 MCP Suite is the open bank-message layer for AI agents: nine vendor-neutral servers to generate, validate, reconcile and settle ISO 20022 payments from natural language. Connect it to the AI client you already use, in one command or one block of JSON, and go from a plain-language prompt to a validated bank message in under a minute. No account, no key, no lock-in.</p>
 
+<nav class="newsroom" aria-label="Tutorial path">
+<ol class="tut-path">
+<li class="tut-path-item">
+<a href="#chapter-1">
+<span class="tut-path-chapter">Chapter 1</span>
+<span class="tut-path-title">Connect</span>
+<span class="tut-path-sub">Add the suite to Claude Code, Claude Desktop, Cursor, VS Code or any MCP client.</span>
+<span class="tut-mins">About 5 minutes</span>
+</a>
+</li>
+<li class="tut-path-item">
+<a href="#chapter-2">
+<span class="tut-path-chapter">Chapter 2</span>
+<span class="tut-path-title">First payment</span>
+<span class="tut-path-sub">Three prompts to learn the loop, then a tested template that returns schema-valid pain.001 XML.</span>
+<span class="tut-mins">About 10 minutes</span>
+</a>
+</li>
+<li class="tut-path-item">
+<a href="#chapter-3">
+<span class="tut-path-chapter">Chapter 3</span>
+<span class="tut-path-title">Statements and reconciliation</span>
+<span class="tut-path-sub">Parse camt.053 statements and match them against the payments you expected.</span>
+<span class="tut-mins">About 10 minutes</span>
+</a>
+</li>
+<li class="tut-path-item">
+<a href="#chapter-4">
+<span class="tut-path-chapter">Chapter 4</span>
+<span class="tut-path-title">Go deeper</span>
+<span class="tut-path-sub">Pick the right server per job, check the safety guardrails, plan the 2026-2028 MT migration.</span>
+<span class="tut-mins">About 5 minutes</span>
+</a>
+</li>
+</ol>
+</nav>
+
+<header class="tut-chapter-head" id="chapter-1">
+<span class="tut-chapter-num" aria-hidden="true">1</span>
+<p class="cat-kicker">CHAPTER 1 · CONNECT</p>
+<h2 class="cat-headline">Plug the suite into your client.</h2>
+<p class="cat-lede">One command or one block of JSON. Pick the client you already use; every path ends at the same nine servers.</p>
+<span class="tut-mins">About 5 minutes</span>
+</header>
+
 <section class="newsroom" id="claude-code">
-<header class="cat-section-head"><p class="cat-kicker">CLAUDE CODE</p><h2 class="cat-headline">One command in your terminal.</h2><p class="cat-lede">Claude Code registers MCP servers with a single CLI command. The gateway routes every request to whichever of the nine servers the job needs.</p></header>
+<header class="cat-section-head"><p class="cat-kicker">CLAUDE CODE</p><h3 class="cat-headline">One command in your terminal.</h3><p class="cat-lede">Claude Code registers MCP servers with a single CLI command. The gateway routes every request to whichever of the nine servers the job needs.</p></header>
 <div class="story-why">
 <ul class="story-why-list">
 <li><strong>1 · Check the prerequisites.</strong> Python 3.10+ and <a href="https://docs.astral.sh/uv/">uv</a> (<code>brew install uv</code> on macOS). <code>uvx</code> then runs the gateway with nothing to install.</li>
@@ -125,7 +170,7 @@ claude mcp add camt053 -- uvx --from camt053-mcp camt053-mcp
 </section>
 
 <section class="newsroom" id="claude-desktop">
-<header class="cat-section-head"><p class="cat-kicker">CLAUDE DESKTOP</p><h2 class="cat-headline">One block of JSON.</h2><p class="cat-lede">Open Settings › Developer › Edit Config. That opens <code>claude_desktop_config.json</code> (macOS: <code>~/Library/Application Support/Claude/</code>, Windows: <code>%APPDATA%\Claude\</code>). Add the server and restart:</p></header>
+<header class="cat-section-head"><p class="cat-kicker">CLAUDE DESKTOP</p><h3 class="cat-headline">One block of JSON.</h3><p class="cat-lede">Open Settings › Developer › Edit Config. That opens <code>claude_desktop_config.json</code> (macOS: <code>~/Library/Application Support/Claude/</code>, Windows: <code>%APPDATA%\Claude\</code>). Add the server and restart:</p></header>
 
 ```json
 {
@@ -152,7 +197,7 @@ claude mcp add camt053 -- uvx --from camt053-mcp camt053-mcp
 </section>
 
 <section class="newsroom" id="other-clients">
-<header class="cat-section-head"><p class="cat-kicker">ANY MCP CLIENT</p><h2 class="cat-headline">Cursor, VS Code, agents and everything else.</h2><p class="cat-lede">Every server is a standard stdio MCP server on the official registry, so any MCP-capable client can run it with the same command.</p></header>
+<header class="cat-section-head"><p class="cat-kicker">ANY MCP CLIENT</p><h3 class="cat-headline">Cursor, VS Code, agents and everything else.</h3><p class="cat-lede">Every server is a standard stdio MCP server on the official registry, so any MCP-capable client can run it with the same command.</p></header>
 <div class="story-why">
 <ul class="story-why-list">
 <li><strong>Registry name.</strong> <code>io.github.sebastienrousseau/iso20022-mcp</code> on the <a href="https://registry.modelcontextprotocol.io">official MCP registry</a>; clients that browse the registry can install it from there.</li>
@@ -166,11 +211,11 @@ claude mcp add camt053 -- uvx --from camt053-mcp camt053-mcp
 <section class="newsroom" id="clients">
 <header class="cat-section-head">
 <p class="cat-kicker">EVERY MCP CLIENT</p>
-<h2 class="cat-headline">Works with every MCP client.</h2>
+<h3 class="cat-headline">Works with every MCP client.</h3>
 <p class="cat-lede">Claude Code and Claude Desktop are covered above. Below is the same stdio server in each other client's documented config shape, checked against the official documentation in July 2026. Remote-first platforms connect to hosted MCP servers instead, so they get an honest sentence, not a fake command.</p>
 </header>
 
-<h3 id="client-cursor">Cursor</h3>
+<h4 id="client-cursor">Cursor</h4>
 
 <p>Create <code>.cursor/mcp.json</code> in your project, or <code>~/.cursor/mcp.json</code> to make the suite available everywhere:</p>
 
@@ -185,11 +230,11 @@ claude mcp add camt053 -- uvx --from camt053-mcp camt053-mcp
 }
 ```
 
-<h3 id="client-windsurf">Windsurf</h3>
+<h4 id="client-windsurf">Windsurf</h4>
 
 <p>Same <code>mcpServers</code> shape, in <code>~/.codeium/windsurf/mcp_config.json</code>. Add the identical <code>iso20022</code> entry shown for Cursor.</p>
 
-<h3 id="client-vscode">VS Code with GitHub Copilot</h3>
+<h4 id="client-vscode">VS Code with GitHub Copilot</h4>
 
 <p>Create <code>.vscode/mcp.json</code> in your workspace. VS Code is the odd one out: the top-level key is <code>servers</code>, not <code>mcpServers</code>:</p>
 
@@ -205,11 +250,11 @@ claude mcp add camt053 -- uvx --from camt053-mcp camt053-mcp
 }
 ```
 
-<h3 id="client-gemini">Google Gemini CLI</h3>
+<h4 id="client-gemini">Google Gemini CLI</h4>
 
 <p>Add an <code>mcpServers</code> block to <code>~/.gemini/settings.json</code> (or <code>.gemini/settings.json</code> per project), with the identical <code>iso20022</code> entry shown for Cursor. Transport is inferred: a <code>command</code> key means stdio.</p>
 
-<h3 id="client-openai">OpenAI Agents SDK</h3>
+<h4 id="client-openai">OpenAI Agents SDK</h4>
 
 <p>The Python Agents SDK spawns local stdio servers itself through <code>MCPServerStdio</code>, with the same command and args:</p>
 
@@ -233,14 +278,21 @@ async with MCPServerStdio(
 </div>
 </section>
 
+<header class="tut-chapter-head" id="chapter-2">
+<span class="tut-chapter-num" aria-hidden="true">2</span>
+<p class="cat-kicker">CHAPTER 2 · FIRST PAYMENT</p>
+<h2 class="cat-headline">From plain language to validated XML.</h2>
+<p class="cat-lede">Learn the loop with three prompts, then run a template that has been proven end to end.</p>
+<span class="tut-mins">About 10 minutes</span>
+</header>
+
 <section class="newsroom" id="first-prompts">
-<header class="cat-section-head"><p class="cat-kicker">YOUR FIRST FIVE MINUTES</p><h2 class="cat-headline">Prompts to paste.</h2><p class="cat-lede">Seven meta-tools (<code>search</code>, <code>list_families</code>, <code>list_servers</code>, <code>describe</code>, <code>validate</code>, <code>generate</code>, <code>parse</code>) cover every family. These four prompts exercise the whole loop.</p></header>
+<header class="cat-section-head"><p class="cat-kicker">YOUR FIRST FIVE MINUTES</p><h3 class="cat-headline">Prompts to paste.</h3><p class="cat-lede">Seven meta-tools (<code>search</code>, <code>list_families</code>, <code>list_servers</code>, <code>describe</code>, <code>validate</code>, <code>generate</code>, <code>parse</code>) cover every family. These three prompts take you from discovery to generated XML; Chapter 3 closes the loop with statements.</p></header>
 <div class="story-why">
 <ul class="story-why-list">
 <li><strong>Discover.</strong> <em>"Which ISO 20022 message cancels a payment that already went out?"</em> The gateway's <code>search</code> points at <code>camt.056</code> and the camt-exceptions server.</li>
 <li><strong>Understand.</strong> <em>"What fields does a pacs.008 need?"</em> <code>describe</code> returns the required fields and the input schema.</li>
 <li><strong>Generate.</strong> <em>"Create a pain.001 paying two suppliers EUR 1,850 and EUR 3,200 from our EUR account."</em> <code>generate</code> returns validated XML, checked against the official XSD before you ever see it.</li>
-<li><strong>Parse.</strong> <em>"Here is our camt.053 statement, what came in yesterday?"</em> <code>parse</code> turns bank XML into structured data Claude can reason over.</li>
 </ul>
 </div>
 </section>
@@ -248,7 +300,7 @@ async with MCPServerStdio(
 <section class="newsroom" id="prompt-template">
 <header class="cat-section-head">
 <p class="cat-kicker">TESTED PROMPT TEMPLATE</p>
-<h2 class="cat-headline">A pain.001 prompt, proven end to end.</h2>
+<h3 class="cat-headline">A pain.001 prompt, proven end to end.</h3>
 <p class="cat-lede">Paste this into any connected client. On 15 July 2026 this exact record set was driven over stdio JSON-RPC through the suite's generate tooling and came back as a schema-valid pain.001.001.03 document.</p>
 </header>
 <pre id="mcp-prompt-template">Generate a SEPA pain.001.001.03 customer credit transfer and return the validated XML.
@@ -275,7 +327,7 @@ Validate the records first, then generate. If validation fails, name the failing
 <section class="newsroom" id="prompt-evidence">
 <header class="cat-section-head">
 <p class="cat-kicker">WHAT THE TOOL RETURNED</p>
-<h2 class="cat-headline">The opening of the returned document.</h2>
+<h3 class="cat-headline">The opening of the returned document.</h3>
 </header>
 
 ```xml
@@ -303,8 +355,37 @@ Validate the records first, then generate. If validation fails, name the failing
 
 </section>
 
+<header class="tut-chapter-head" id="chapter-3">
+<span class="tut-chapter-num" aria-hidden="true">3</span>
+<p class="cat-kicker">CHAPTER 3 · STATEMENTS AND RECONCILIATION</p>
+<h2 class="cat-headline">Read what happened. Match it to what you expected.</h2>
+<p class="cat-lede">The money went out in Chapter 2. The bank answers with a camt.053 statement; the suite parses it and reconciles it against your expected payments, explainably.</p>
+<span class="tut-mins">About 10 minutes</span>
+</header>
+
+<section class="newsroom" id="statements-reconciliation">
+<header class="cat-section-head"><p class="cat-kicker">STATEMENTS IN, MATCHES OUT</p><h3 class="cat-headline">Four steps, one loop closed.</h3><p class="cat-lede">You registered <code>camt053</code> as its own server in Chapter 1; these steps use it together with <code>reconcile-mcp</code>.</p></header>
+<div class="story-why">
+<ul class="story-why-list">
+<li><strong>1 · Parse.</strong> <em>"Here is our camt.053 statement, what came in yesterday?"</em> <code>parse</code> turns bank XML into structured data Claude can reason over. On the <code>camt053</code> server, <code>parse_statement</code> reads the XML, <code>list_entries</code> lists every booked entry, and <code>filter_entries</code> pulls the entries carrying a given return reason code.</li>
+<li><strong>2 · Normalise.</strong> <code>reconcile-mcp</code> adapts both sides into canonical records: <code>normalize_pain001</code> turns parsed payment instructions into expected records, <code>normalize_camt053</code> turns parsed statement entries into observed ones.</li>
+<li><strong>3 · Reconcile.</strong> <code>reconcile(expected, observed)</code> returns exact matches, short/over payments, split settlements (one-to-many), batch credits (many-to-one) and unmatched residuals, each with an explainable score and reasons; <code>explain_match</code> breaks down every signal for a single pair when you tune.</li>
+<li><strong>4 · No data yet? Use the sandbox.</strong> <code>list_sandbox_scenarios</code>, <code>load_sandbox_scenario</code> and <code>run_sandbox_scenario</code> ship deterministic fixtures, so you can watch a full, explainable reconciliation with zero real data.</li>
+</ul>
+</div>
+<p class="story-intro">Every parameter of every tool named here is in the <a href="/iso20022-mcp-reference/index.html#camt053">camt053</a> and <a href="/iso20022-mcp-reference/index.html#reconcile">reconcile</a> sections of the tool reference.</p>
+</section>
+
+<header class="tut-chapter-head" id="chapter-4">
+<span class="tut-chapter-num" aria-hidden="true">4</span>
+<p class="cat-kicker">CHAPTER 4 · GO DEEPER</p>
+<h2 class="cat-headline">The right server, the guardrails, the migration.</h2>
+<p class="cat-lede">Slim your install to the one server a job needs, see why the suite is safe to hand to an agent, and plan the 2026-2028 move off MT.</p>
+<span class="tut-mins">About 5 minutes</span>
+</header>
+
 <section class="newsroom" id="which-server">
-<header class="cat-section-head"><p class="cat-kicker">WHICH SERVER DO I NEED?</p><h2 class="cat-headline">One job, one server.</h2><p class="cat-lede">Install the gateway and let it route, or install just the one for the task in front of you. Every server is <code>pip install</code>-able and live on the official MCP registry.</p></header>
+<header class="cat-section-head"><p class="cat-kicker">WHICH SERVER DO I NEED?</p><h3 class="cat-headline">One job, one server.</h3><p class="cat-lede">Install the gateway and let it route, or install just the one for the task in front of you. Every server is <code>pip install</code>-able and live on the official MCP registry.</p></header>
 <div class="newsroom-grid cat-grid">
 <article class="newsroom-card">
 <a class="newsroom-card-media logo" href="https://github.com/sebastienrousseau/iso20022-mcp" title="iso20022-mcp">
@@ -371,7 +452,7 @@ Validate the records first, then generate. If validation fails, name the failing
 </section>
 
 <section class="newsroom" id="safety">
-<header class="cat-section-head"><p class="cat-kicker">SAFE BY DESIGN</p><h2 class="cat-headline">Built to hand to an agent.</h2></header>
+<header class="cat-section-head"><p class="cat-kicker">SAFE BY DESIGN</p><h3 class="cat-headline">Built to hand to an agent.</h3></header>
 <div class="story-why">
 <ul class="story-why-list">
 <li><strong>Validated before return.</strong> Every generator checks its output against the official bundled XSD before it hands it back; malformed messages never leave the tool.</li>
@@ -383,7 +464,7 @@ Validate the records first, then generate. If validation fails, name the failing
 </section>
 
 <section class="newsroom" id="migration">
-<header class="cat-section-head"><p class="cat-kicker">THE 2026–2028 MIGRATION</p><h2 class="cat-headline">Move off MT, one message at a time.</h2><p class="cat-lede">MT/MX coexistence ended in November 2025; MT retires through 2028, and structured postal addresses become mandatory in November 2026. The suite ships the tools for exactly this.</p></header>
+<header class="cat-section-head"><p class="cat-kicker">THE 2026–2028 MIGRATION</p><h3 class="cat-headline">Move off MT, one message at a time.</h3><p class="cat-lede">MT/MX coexistence ended in November 2025; MT retires through 2028, and structured postal addresses become mandatory in November 2026. The suite ships the tools for exactly this.</p></header>
 <div class="story-why">
 <ul class="story-why-list">
 <li><strong>MT → MX converters.</strong> <code>convert_mt103</code> → pacs.008, <code>convert_mt101</code> → pain.001, <code>convert_mt940</code>/<code>convert_mt942</code> → camt, with validated output wired into the servers.</li>
@@ -393,4 +474,4 @@ Validate the records first, then generate. If validation fails, name the failing
 </div>
 </section>
 
-<section class="setup-finale" aria-labelledby="finale-heading"><p class="setup-finale-eyebrow">OPEN SOURCE · APACHE-2.0 · ON PYPI + THE MCP REGISTRY</p><h2 id="finale-heading" class="setup-finale-headline">Back to the suite.</h2><p class="setup-finale-lede">Nine servers, the whole ISO 20022 payment lifecycle, installable in one line.</p><p class="setup-finale-cta"><a href="/iso20022-mcp/index.html">Explore the suite <span aria-hidden="true">›</span></a> · <a href="/iso20022-mcp-reference/index.html">Tool reference <span aria-hidden="true">›</span></a></p></section>
+<section class="setup-finale" aria-labelledby="finale-heading"><p class="setup-finale-eyebrow">OPEN SOURCE · APACHE-2.0 · ON PYPI + THE MCP REGISTRY</p><h3 id="finale-heading" class="setup-finale-headline">Back to the suite.</h3><p class="setup-finale-lede">Nine servers, the whole ISO 20022 payment lifecycle, installable in one line.</p><p class="setup-finale-cta"><a href="/iso20022-mcp/index.html">Explore the suite <span aria-hidden="true">›</span></a> · <a href="/iso20022-mcp-reference/index.html">Tool reference <span aria-hidden="true">›</span></a></p></section>

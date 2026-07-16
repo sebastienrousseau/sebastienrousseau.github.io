@@ -1,4 +1,22 @@
 {
+  "suite": {
+    "title": "面向銀行與支付的企業級 AI 軟體套件 — Sebastien Rousseau",
+    "subtitle": "Sebastien Rousseau 打造的面向銀行與支付的企業級 AI 軟體套件。",
+    "description": "Sebastien Rousseau 打造的面向銀行與支付的企業級 AI 軟體套件。探索 ISO 20022 MCP Suite:在您自己的基礎設施上為 AI 代理提供經過驗證的工具。",
+    "keywords": "AI 銀行軟體, 支付軟體套件, ISO 20022 MCP, MCP 伺服器, 銀行 AI 代理"
+  },
+  "research": {
+    "title": "ISO 20022 研究、白皮書與技術分析 — Sebastien Rousseau",
+    "subtitle": "關於銀行業 AI、支付基礎設施與後量子密碼學的 ISO 20022 研究、白皮書與技術分析,作者 Sebastien Rousseau。",
+    "description": "關於銀行業 AI、支付基礎設施與後量子密碼學的 ISO 20022 研究、白皮書與技術分析,作者 Sebastien Rousseau。",
+    "keywords": "ISO 20022 研究, 白皮書, 技術分析, AI 銀行研究, 後量子密碼學"
+  },
+  "library": {
+    "title": "開發者資料庫:銀行主題、開源專案與播放清單 — Sebastien Rousseau",
+    "subtitle": "Sebastien Rousseau 的開發者資料庫:精選銀行主題、開源專案,以及關於銀行 AI、ISO 20022 支付與後量子安全的影片播放清單。",
+    "description": "Sebastien Rousseau 的開發者資料庫:精選銀行主題、開源專案,以及關於銀行 AI、ISO 20022 支付與後量子安全的影片播放清單。",
+    "keywords": "開發者資料庫, 銀行主題, 播放清單, 開源專案, ISO 20022"
+  },
   "_comment": "Traditional Chinese (zh-hant) static-page metadata — DRAFT pending native review. Mirrors AR/ES/FR/DE static_pages.json shape; includes 'articles' key.",
   "404": {
     "title": "404 — 頁面未找到 — Sebastien Rousseau",
@@ -29,12 +47,6 @@
     "subtitle": "有問題或需要諮詢？請聯絡我。",
     "description": "聯絡 Sebastien Rousseau，諮詢支付轉型、ISO 20022 遷移或後量子戰略。",
     "keywords": "聯絡, 諮詢, 支付, ISO 20022, 後量子密碼學"
-  },
-  "made-with-static-site-generator": {
-    "title": "使用 Static Site Generator 構建 — Sebastien Rousseau",
-    "subtitle": "瞭解如何使用新一代靜態站點生成器。",
-    "description": "本站使用 Static Site Generator 構建——一款針對效能和 SEO 最佳化的 Rust 靜態站點生成器。",
-    "keywords": "Static Site Generator, SSG, Rust, 效能, SEO"
   },
   "made-with-static-site-generator": {
     "title": "使用 Static Site Generator 構建 — Sebastien Rousseau",

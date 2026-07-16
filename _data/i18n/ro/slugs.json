@@ -17,7 +17,10 @@
     "thanks": "multumesc",
     "articles": "articole",
     "case-studies": "studii-de-caz",
-    "speaking": "speaking"
+    "speaking": "speaking",
+    "suite": "suita",
+    "research": "cercetare",
+    "library": "biblioteca"
   },
   "articles": {
     "2018-01-01-bitcoin-the-year-in-review": "2018-01-01-bitcoin-the-year-in-review",

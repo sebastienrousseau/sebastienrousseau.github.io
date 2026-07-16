@@ -1,4 +1,22 @@
 {
+  "suite": {
+    "title": "Enterprise AI-softwaresuite voor banken en betalingen — Sebastien Rousseau",
+    "subtitle": "De enterprise AI-softwaresuite voor banken en betalingen van Sebastien Rousseau.",
+    "description": "De enterprise AI-softwaresuite voor banken en betalingen van Sebastien Rousseau. Ontdek de ISO 20022 MCP Suite: gevalideerde tools voor AI-agenten op uw eigen infrastructuur.",
+    "keywords": "AI-bankingsoftware, betaalsoftwaresuite, ISO 20022 MCP, MCP-server, AI-agenten banking"
+  },
+  "research": {
+    "title": "ISO 20022-onderzoek, whitepapers en technische analyses — Sebastien Rousseau",
+    "subtitle": "ISO 20022-onderzoek, whitepapers en technische analyses over AI in het bankwezen, betaalinfrastructuur en post-quantumcryptografie, door Sebastien Rousseau.",
+    "description": "ISO 20022-onderzoek, whitepapers en technische analyses over AI in het bankwezen, betaalinfrastructuur en post-quantumcryptografie, door Sebastien Rousseau.",
+    "keywords": "ISO 20022 onderzoek, whitepapers, technische analyses, AI-bankingonderzoek, post-quantumcryptografie"
+  },
+  "library": {
+    "title": "Ontwikkelaarsbibliotheek: bankthema's, open source en afspeellijsten — Sebastien Rousseau",
+    "subtitle": "De ontwikkelaarsbibliotheek van Sebastien Rousseau: geselecteerde bankthema's, open-sourceprojecten en videoafspeellijsten over bancaire AI, ISO 20022-betalingen en post-quantumbeveiliging.",
+    "description": "De ontwikkelaarsbibliotheek van Sebastien Rousseau: geselecteerde bankthema's, open-sourceprojecten en videoafspeellijsten over bancaire AI, ISO 20022-betalingen en post-quantumbeveiliging.",
+    "keywords": "ontwikkelaarsbibliotheek, bankthema's, afspeellijsten, open source, ISO 20022"
+  },
   "_comment": "Per-static-page metadata for the Dutch mirror. DRAFT — pending native-speaker review. Keys are EN slugs; entries replace EN values in <title>, <meta name=description>, <meta name=keywords>, og:*, twitter:*, and the hero subtitle.",
   "about": {
     "title": "Over mij — Sebastien Rousseau",
@@ -53,12 +71,6 @@
     "subtitle": "Algemene gebruiksvoorwaarden van de website.",
     "description": "Algemene gebruiksvoorwaarden van de website sebastienrousseau.com: contentlicentie, beperkingen, merken en jurisdictie.",
     "keywords": "voorwaarden, gebruiksvoorwaarden, licentie, copyright"
-  },
-  "made-with-static-site-generator": {
-    "title": "Gemaakt met Static Site Generator — Sebastien Rousseau",
-    "subtitle": "Ontdek de statische sitegenerator van de volgende generatie.",
-    "description": "Deze website wordt gegenereerd met Static Site Generator, een snelle statische sitegenerator geschreven in Rust.",
-    "keywords": "Static Site Generator, statische sitegenerator, Rust, prestaties"
   },
   "made-with-static-site-generator": {
     "title": "Gemaakt met Static Site Generator — Sebastien Rousseau",

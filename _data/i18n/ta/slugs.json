@@ -16,7 +16,10 @@
     "thanks": "thanks",
     "articles": "articles",
     "case-studies": "case-studies",
-    "speaking": "speaking"
+    "speaking": "speaking",
+    "suite": "suite",
+    "research": "research",
+    "library": "library"
   },
   "articles": {}
 }

@@ -69,7 +69,8 @@ SPEAKABLE = (
     '"cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",'
     '".article-toc",".author-card"]}'
 )
-# FAQ block for /papers/. Mirrors the on-page `<details class="qa-item">` accordion
+# FAQ block for the publications hub (the "papers" layout, rendered at /research/
+# since the 5-item nav re-architecture). Mirrors the on-page `<details class="qa-item">` accordion
 # so AI crawlers (Google AI Overviews, Perplexity, ChatGPT) can cite the answers
 # directly. Kept as a separate node so we don't pollute the CollectionPage entity.
 PAPERS_FAQ = (
@@ -329,7 +330,7 @@ def contact_layout() -> str:
                 <a href="https://news.bankingonquantum.com" rel="external noopener">Banking On Quantum · newsletter</a>
               </li>
             </ul>
-            <p class="contact-aside-note">If your question is already covered in the <a href="/papers/index.html">papers FAQ</a> or a <a href="/case-studies/index.html">case study</a>, link to it, which saves a round trip.</p>
+            <p class="contact-aside-note">If your question is already covered in the <a href="/research/index.html">research FAQ</a> or a <a href="/case-studies/index.html">case study</a>, link to it, which saves a round trip.</p>
           </aside>
         </div>
       </div>

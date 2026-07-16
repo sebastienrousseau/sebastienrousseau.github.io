@@ -260,7 +260,7 @@ def build_llms_txt() -> str:
         f"- [Articles]({base}/articles/) — research notes on quantum-safe cryptography, ISO 20022, applied AI, wholesale payments."
     )
     out.append(
-        f"- [Papers]({base}/papers/) — industry white papers, peer-reviewed analysis, regulatory submissions."
+        f"- [Research]({base}/research/) — industry white papers, peer-reviewed analysis, regulatory submissions."
     )
     out.append(
         f"- [Projects]({base}/projects/) — open-source Python and Rust libraries for payments, post-quantum crypto, AI tooling."
@@ -462,7 +462,7 @@ def build_llms_ctx_txt() -> str:
     out.append(f"- {base}/about/          — Biography, credentials (ORCID 0009-0005-1434-284X).")
     out.append(f"- {base}/articles/       — Research notes: PQC, ISO 20022, payments, applied AI.")
     out.append(
-        f"- {base}/papers/         — White papers, peer-reviewed analysis, regulatory submissions."
+        f"- {base}/research/       — White papers, peer-reviewed analysis, regulatory submissions."
     )
     out.append(f"- {base}/projects/       — Open-source Python and Rust libraries.")
     out.append(

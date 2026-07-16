@@ -123,29 +123,28 @@ def _metrics() -> dict[str, str]:
 
 
 def _mark_nav_active(html_text: str) -> str:
-    """Move the primary-nav active state from Articles onto Speaking.
+    """Clear any stale primary-nav active state on the Speaking pages.
 
-    Fails loudly (SystemExit) if the Speaking anchor is missing so a
-    nav-markup change in the shell can never silently ship a page without
-    the active Speaking state. The Articles-deactivation step is optional:
-    in a fresh build the raw ssg shell carries no aria-current at all
-    (postbuild injects it), so its absence is normal, not an error."""
+    Active-state policy (5-item dropdown nav, deliberate): Speaking left
+    the top level and now lives as an About > Speaking sub-item (and in
+    the footer + the "Speaking and events" section on /about/). No marker
+    is baked here — postbuild's inject_nav_active marks the
+    /speaking/index.html sub-item with aria-current="page" on the final
+    page. The shell fork may carry a stale marker from the ssg /articles
+    listing, so strip it. Fails loudly if the primary nav is missing
+    entirely, so a nav markup change can never silently ship broken
+    chrome."""
+    if '<ul class="ap-menu">' not in html_text:
+        raise SystemExit(
+            "build_speaking: primary nav (<ul class=\"ap-menu\">) not found "
+            "in the shell (nav markup changed?)"
+        )
     out = html_text.replace(
         '<a href="/articles/index.html" aria-current="page" class="active">Articles</a>',
         '<a href="/articles/index.html">Articles</a>',
         1,
     )
-    out2 = out.replace(
-        '<a href="/speaking/index.html">Speaking</a>',
-        '<a href="/speaking/index.html" aria-current="page" class="active">Speaking</a>',
-        1,
-    )
-    if out2 == out:
-        raise SystemExit(
-            "build_speaking: nav marking failed — Speaking anchor not found "
-            "in the shell (nav markup changed?)"
-        )
-    return out2
+    return out
 
 
 # ---------------------------------------------------------------------------
