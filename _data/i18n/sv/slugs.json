@@ -17,7 +17,10 @@
     "thanks": "tack",
     "articles": "artiklar",
     "case-studies": "fallstudier",
-    "speaking": "speaking"
+    "speaking": "speaking",
+    "suite": "svit",
+    "research": "forskning",
+    "library": "bibliotek"
   },
   "articles": {
     "2018-01-01-bitcoin-the-year-in-review": "2018-01-01-bitcoin-aret-i-aterblick",

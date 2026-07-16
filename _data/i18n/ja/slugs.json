@@ -17,7 +17,10 @@
     "thanks": "arigatou",
     "articles": "kiji",
     "case-studies": "jirei-kenkyu",
-    "speaking": "speaking"
+    "speaking": "speaking",
+    "suite": "suito",
+    "research": "kenkyu",
+    "library": "raiburari"
   },
   "articles": {
     "2018-01-01-bitcoin-the-year-in-review": "2018-01-01-bitcoin-nenkan-soukatsu",

@@ -45,7 +45,8 @@ python3 scripts/editorial/translate_post.py "$SLUG"
 #    manual ARTICLES[0] edit needed any more.
 python3 scripts/generators/gen_layouts.py
 python3 scripts/generators/gen_articles.py
-python3 scripts/generators/gen_projects.py
+# gen_projects rewrites committed projects.md; intentional here (ADR-0003).
+python3 scripts/generators/gen_projects.py --dir _posts
 python3 scripts/generators/gen_papers.py
 python3 scripts/postbuild/topic_link.py --dir _posts
 python3 scripts/generators/build_topics.py

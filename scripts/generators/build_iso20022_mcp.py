@@ -55,6 +55,7 @@ def _mono(s: str) -> str:
 _IMG_DIMS: dict[str, tuple[int, int]] = {
     "mcp-hero-img": (1920, 960),
     "mcp-band-img": (1920, 720),
+    "mcp-band-img-tall": (1920, 1080),
 }
 
 
@@ -73,11 +74,14 @@ def _img(name: str, alt: str, cls: str, sizes: str, eager: bool = False) -> str:
     )
 
 
-def _imgband(name: str, alt: str) -> str:
-    """A full-bleed-within-wrap image band that breaks up the text sections."""
+def _imgband(name: str, alt: str, cls: str = "mcp-band-img") -> str:
+    """A full-bleed-within-wrap image band that breaks up the text sections.
+    ``cls`` picks the crop: the default 16/6 strip, or the 16/9
+    ``mcp-band-img-tall`` for photos whose subject a 16/6 crop beheads
+    (the wall-clock band; its face just fits a centred 16/9)."""
     return (
         '<section><div class="spk-wrap">'
-        + _img(name, alt, "mcp-band-img", "(max-width:1120px) 100vw, 1120px")
+        + _img(name, alt, cls, "(max-width:1120px) 100vw, 1120px")
         + "</div></section>"
     )
 
@@ -121,9 +125,10 @@ _ICON_SVG = {
 }
 _ICONS = {
     "mcp-benefits": ["send", "check", "swap", "link"],
-    "mcp-what": ["alert", "globe", "grid"],
+    "mcp-what": ["alert", "globe", "grid", "layers"],
     "mcp-arc": ["layers", "grid", "link"],
-    "mcp-safety": ["check", "shield", "lock"],
+    "mcp-safety": ["check", "shield", "eye", "lock"],
+    "mcp-security": ["lock", "check", "globe", "shield"],
 }
 
 
@@ -140,6 +145,44 @@ def _icon(section_id: str, i: int) -> str:
         f'stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">{svg}'
         "</svg></span>"
     )
+
+
+# Shared install strings. One source so the tabs, client cards and tests can
+# never drift apart. The uvx command is the one proven against the live
+# gateway (stdio JSON-RPC initialize / tools/list, 2026-07-16): the [all]
+# extra resolves cleanly since camt053 0.0.14 and acmt001 0.0.3.
+UVX_ARGS = '"--from", "iso20022-mcp[all]", "iso20022-mcp"'
+UVX_CMD = 'uvx --from "iso20022-mcp[all]" iso20022-mcp'
+_JSON_BODY = (
+    '    "iso20022": {\n'
+    '      "command": "uvx",\n'
+    f"      \"args\": [{UVX_ARGS}]\n"
+    "    }"
+)
+MCPSERVERS_JSON = '{\n  "mcpServers": {\n' + _JSON_BODY + "\n  }\n}"
+VSCODE_JSON = (
+    '{\n  "servers": {\n'
+    '    "iso20022": {\n'
+    '      "type": "stdio",\n'
+    '      "command": "uvx",\n'
+    f"      \"args\": [{UVX_ARGS}]\n"
+    "    }\n  }\n}"
+)
+AGENTS_SDK_PY = (
+    "async with MCPServerStdio(\n"
+    '    name="iso20022",\n'
+    '    params={\n'
+    '        "command": "uvx",\n'
+    f"        \"args\": [{UVX_ARGS}],\n"
+    "    },\n"
+    ") as server:\n"
+    "    ..."
+)
+
+# Where the captured gateway tool schemas live. Recorded once from a running
+# server (tools/list over stdio JSON-RPC) and committed; the build renders
+# them verbatim, and skips the section gracefully when the file is absent.
+SCHEMAS_SRC = ROOT / "_data" / "mcp" / "tool_schemas.json"
 
 
 # --- Content (single source of copy) ----------------------------------------
@@ -241,6 +284,15 @@ C: dict = {
                     "between your systems and the rails."
                 ),
             },
+            {
+                "eyebrow": "THE OUTCOME",
+                "title": "Build the next era of your enterprise.",
+                "body": (
+                    "Agents that act across your whole payment stack: "
+                    "initiate, reconcile, migrate and resolve, on an open, "
+                    "vendor-neutral standard you can run anywhere."
+                ),
+            },
         ],
     },
     "arc": {
@@ -311,6 +363,15 @@ C: dict = {
                 ),
             },
             {
+                "eyebrow": "READ-ONLY",
+                "title": "Read-only where it counts.",
+                "body": (
+                    "Reconciliation is pure matching, and every tool is "
+                    "marked read-only, idempotent and closed-world, so "
+                    "clients can reason about safety."
+                ),
+            },
+            {
                 "eyebrow": "OPEN",
                 "title": "Owned by no bank.",
                 "body": (
@@ -319,6 +380,264 @@ C: dict = {
                 ),
             },
         ],
+    },
+    # Trust pack: how a payment flows, with the human approval wall.
+    # Every claim below is verified: the gateway's tools/list annotations mark
+    # all seven meta-tools readOnlyHint / idempotentHint / closed-world, the
+    # installed suite packages contain no outbound network calls, and every
+    # generator XSD-validates before returning (test-driven 2026-07-15).
+    "flow": {
+        "eyebrow": "TRUST, BY ARCHITECTURE",
+        "headline": "Money never moves without a human.",
+        "lede": (
+            "The servers produce and check messages. Sending them stays "
+            "behind your approval, in your own systems."
+        ),
+        "steps": [
+            {
+                "num": "01",
+                "title": "Generate locally.",
+                "body": (
+                    "Your records become a pain.001 or pacs.008 on your own "
+                    "machine, over stdio. Nothing is uploaded anywhere."
+                ),
+                "gate": False,
+            },
+            {
+                "num": "02",
+                "title": "Validate locally.",
+                "body": (
+                    "Output is checked against the bundled official XSD "
+                    "before it returns. Deterministic, offline, the same "
+                    "answer every run."
+                ),
+                "gate": False,
+            },
+            {
+                "num": "03",
+                "title": "A human approves.",
+                "body": (
+                    "Every meta-tool is annotated read-only and idempotent. "
+                    "The message is a file; a person decides whether it "
+                    "becomes a payment."
+                ),
+                "gate": True,
+            },
+            {
+                "num": "04",
+                "title": "Your rails dispatch.",
+                "body": (
+                    "Submission to SWIFT, SEPA or FedNow happens in your own "
+                    "banking channel. The servers hold no credentials and "
+                    "never move money."
+                ),
+                "gate": False,
+            },
+        ],
+    },
+    # Security strip. "No outbound network calls" is asserted from source:
+    # the installed suite packages (iso20022_mcp, pain001(-mcp), pacs008(-mcp),
+    # acmt001(-mcp)) contain no requests/httpx/urllib/socket network code.
+    "security": {
+        "eyebrow": "SECURITY POSTURE",
+        "headline": "Your payment data stays yours.",
+        "cards": [
+            {
+                "eyebrow": "LOCAL-FIRST",
+                "title": "Zero data retention.",
+                "body": (
+                    "The stdio servers run inside your environment and make "
+                    "no outbound network calls. Nothing is sent, nothing is "
+                    "stored, nothing phones home."
+                ),
+            },
+            {
+                "eyebrow": "DETERMINISTIC",
+                "title": "Validated on your machine.",
+                "body": (
+                    "Every generated message is checked against the bundled "
+                    "official ISO 20022 XSD locally, before you ever see it."
+                ),
+            },
+            {
+                "eyebrow": "OPEN",
+                "title": "Apache-2.0, in the open.",
+                "body": (
+                    "Every server is open source on PyPI and the official "
+                    "MCP registry. Read the code before you trust it."
+                ),
+            },
+            {
+                "eyebrow": "TESTED",
+                "title": "100% branch-tested.",
+                "body": (
+                    "Full branch coverage across the suite, so the paths an "
+                    "agent exercises are the paths the tests exercise."
+                ),
+            },
+        ],
+    },
+    # Multi-client integration. Config shapes verified against each client's
+    # official documentation on 2026-07-15; see the docs page for sources.
+    "clients": {
+        "eyebrow": "WORKS WITH YOUR STACK",
+        "headline": "Works with every MCP client.",
+        "lede": (
+            "One standard stdio server, so the setup is one small block in "
+            "your client's own config. Remote-first platforms connect to "
+            "hosted MCP servers instead."
+        ),
+        "stdio": [
+            {
+                "name": "Claude Code",
+                "slug": "claude-code",
+                "where": "One command, from any directory.",
+                "code": f"claude mcp add iso20022 -- {UVX_CMD}",
+            },
+            {
+                "name": "Claude Desktop",
+                "slug": "claude-desktop",
+                "where": "Settings, Developer, Edit Config: claude_desktop_config.json.",
+                "code": MCPSERVERS_JSON,
+            },
+            {
+                "name": "Cursor",
+                "slug": "cursor",
+                "where": ".cursor/mcp.json in the project, or ~/.cursor/mcp.json.",
+                "code": MCPSERVERS_JSON,
+            },
+            {
+                "name": "Windsurf",
+                "slug": "windsurf",
+                "where": "~/.codeium/windsurf/mcp_config.json.",
+                "code": MCPSERVERS_JSON,
+            },
+            {
+                "name": "VS Code + GitHub Copilot",
+                "slug": "vscode",
+                "where": '.vscode/mcp.json. The top-level key is "servers".',
+                "code": VSCODE_JSON,
+            },
+            {
+                "name": "Google Gemini CLI",
+                "slug": "gemini",
+                "where": '"mcpServers" inside ~/.gemini/settings.json.',
+                "code": MCPSERVERS_JSON,
+            },
+        ],
+        "remote": [
+            {
+                "name": "OpenAI",
+                "slug": "openai",
+                "body": (
+                    "The Agents SDK spawns the suite locally over stdio "
+                    "through its MCPServerStdio class, with the same command "
+                    "and args. ChatGPT connectors and the Responses API "
+                    "connect to remote MCP servers over Streamable HTTP or "
+                    "HTTP/SSE only, so they pair with a hosted deployment, "
+                    "not a local process."
+                ),
+                "code": AGENTS_SDK_PY,
+            },
+            {
+                "name": "Microsoft Copilot Studio",
+                "body": (
+                    "Adds MCP servers to agents as tools through Power "
+                    "Platform connectors, over the Streamable HTTP transport "
+                    "only; it does not run local stdio servers."
+                ),
+            },
+            {
+                "name": "Zapier MCP",
+                "body": (
+                    "A Zapier-hosted remote MCP endpoint: you create a "
+                    "dedicated server at mcp.zapier.com and point your "
+                    "client at the generated URL. It connects clients to "
+                    "Zapier actions, not to local servers like this suite."
+                ),
+            },
+        ],
+    },
+    # CSS-only tabbed install block (radio-input tabs, strict-CSP safe).
+    "install": {
+        "eyebrow": "INSTALL",
+        "headline": "Install it your way.",
+        "lede": (
+            "Run it with uvx and nothing to install, pin it with pip, or "
+            "drop one block of JSON into Claude Desktop."
+        ),
+        "tabs": [
+            {
+                "id": "uvx",
+                "label": "uvx",
+                "code": UVX_CMD,
+                "note": (
+                    "No install, no account, no key. The [all] extra covers "
+                    "every family, bank statements included."
+                ),
+            },
+            {
+                "id": "pip",
+                "label": "pip",
+                "code": (
+                    'pip install "iso20022-mcp[all]"\n'
+                    "iso20022-mcp"
+                ),
+                "note": (
+                    "Installed with pip, the client config is just the "
+                    "iso20022-mcp command, no args."
+                ),
+            },
+            {
+                "id": "json",
+                "label": "Claude Desktop",
+                "code": MCPSERVERS_JSON,
+                "note": (
+                    "Settings, Developer, Edit Config, then restart. The "
+                    "tools appear under the tools icon in the chat box."
+                ),
+            },
+            {
+                "id": "cursor",
+                "label": "Cursor",
+                "code": MCPSERVERS_JSON,
+                "note": (
+                    ".cursor/mcp.json in the project, or ~/.cursor/mcp.json "
+                    "to make the suite available everywhere."
+                ),
+            },
+            {
+                "id": "vscode",
+                "label": "VS Code",
+                "code": VSCODE_JSON,
+                "note": (
+                    '.vscode/mcp.json, for GitHub Copilot. The top-level '
+                    'key is "servers", not "mcpServers".'
+                ),
+            },
+            {
+                "id": "agents",
+                "label": "OpenAI Agents SDK",
+                "code": AGENTS_SDK_PY,
+                "note": (
+                    "The Python Agents SDK spawns the server itself over "
+                    "stdio through MCPServerStdio."
+                ),
+            },
+        ],
+    },
+    "schemas": {
+        "eyebrow": "THE GATEWAY, VERBATIM",
+        "headline": "Seven meta-tools, captured live.",
+        "lede": (
+            "Recorded from a running gateway over stdio JSON-RPC "
+            "(tools/list), not written by hand. Expand a tool to see its "
+            "real description and input schema."
+        ),
+        "note": (
+            "Captured from iso20022-mcp 0.0.2 on 15 July 2026. Every tool "
+            "is annotated read-only, idempotent and closed-world."
+        ),
     },
 }
 
@@ -405,7 +724,7 @@ def _start() -> str:
             "STEP 1",
             "Run it, no install.",
             "Start the gateway with one command, no account, no key: "
-            + _mono('uvx --from "iso20022-mcp[pain,pacs,acmt]" iso20022-mcp'),
+            + _mono('uvx --from "iso20022-mcp[all]" iso20022-mcp'),
         ),
         (
             "STEP 2",
@@ -421,6 +740,17 @@ def _start() -> str:
             "Add " + _mono("iso20022-mcp") + " as a command in your MCP client "
             "(Claude Desktop, Cursor) and your assistant can pay, reconcile "
             "and migrate.",
+        ),
+        (
+            "STEP 4",
+            "Keep humans in the loop.",
+            "The agent can search, generate and validate complex ISO 20022 "
+            "XML, but by design it never moves money directly. Have it "
+            "output the XSD-valid payload, or route it to your bank's SFTP, "
+            "API gateway or treasury queue for final human approval and "
+            "settlement. Generation stays separate from execution, so the "
+            "AI can draft, reconcile and migrate with no risk of "
+            "unauthorised funds leaving accounts.",
         ),
     ]
     cards = "".join(
@@ -443,22 +773,203 @@ def _start() -> str:
     )
 
 
+def _flow(d: dict) -> str:
+    """The trust flow: generation and validation are local, dispatch sits
+    behind a human approval wall. Rendered as an ordered list so assistive
+    tech announces the four stages in sequence."""
+    steps = []
+    for s in d["steps"]:
+        gate = " mcp-step-gate" if s["gate"] else ""
+        badge = (
+            '<span class="mcp-gate-badge">Approval wall</span>' if s["gate"] else ""
+        )
+        steps.append(
+            f'<li class="mcp-step{gate}">'
+            f'<span class="mcp-step-num" aria-hidden="true">{_esc(s["num"])}</span>'
+            f"{badge}"
+            f'<h3>{_esc(s["title"])}</h3><p>{_rich(s["body"])}</p></li>'
+        )
+    return (
+        '<section id="mcp-flow"><div class="spk-wrap">'
+        + _head(d["eyebrow"], d["headline"], d["lede"])
+        + f'<ol class="mcp-flow">{"".join(steps)}</ol></div></section>'
+    )
+
+
+def _security(d: dict) -> str:
+    """Four-up security strip: local-first, deterministic, open, tested."""
+    cells = []
+    for i, it in enumerate(d["cards"]):
+        cells.append(
+            '<div class="mcp-sec-cell">'
+            + _icon("mcp-security", i)
+            + f'<span class="spk-eyebrow">{_esc(it["eyebrow"])}</span>'
+            f'<h3>{_esc(it["title"])}</h3><p>{_rich(it["body"])}</p></div>'
+        )
+    return (
+        '<section class="spk-band" id="mcp-security"><div class="spk-wrap">'
+        + _head(d["eyebrow"], d["headline"])
+        + f'<div class="mcp-sec">{"".join(cells)}</div></div></section>'
+    )
+
+
+def _code_block(code: str, block_id: str = "", copy: bool = False) -> str:
+    """A literal code block, plus an optional copy button riding main.js's
+    site-wide [data-copy] delegate (no inline JS; CSP-safe)."""
+    id_attr = f' id="{block_id}"' if block_id else ""
+    btn = ""
+    if copy and block_id:
+        btn = (
+            f'<button type="button" class="mcp-copy" data-copy="#{block_id}" '
+            f'aria-label="Copy to clipboard">Copy</button>'
+        )
+    return f'<pre class="mcp-code"{id_attr}><code>{_esc(code)}</code></pre>{btn}'
+
+
+def _clients(d: dict) -> str:
+    """The multi-client grid. Local-stdio clients get their documented config
+    shape verbatim; remote-first platforms get one honest sentence."""
+    cards = [
+        '<div class="mcp-client">'
+        f'<h3>{_esc(it["name"])}</h3>'
+        f'<p class="mcp-client-where">{_esc(it["where"])}</p>'
+        + _code_block(it["code"], f'mcp-code-client-{it["slug"]}', copy=True)
+        + "</div>"
+        for it in d["stdio"]
+    ]
+    remote = []
+    for it in d["remote"]:
+        code = (
+            _code_block(it["code"], f'mcp-code-client-{it["slug"]}', copy=True)
+            if it.get("code")
+            else ""
+        )
+        remote.append(
+            '<div class="mcp-client mcp-client-remote">'
+            f'<h3>{_esc(it["name"])}</h3><p>{_rich(it["body"])}</p>{code}</div>'
+        )
+    return (
+        '<section id="mcp-clients"><div class="spk-wrap">'
+        + _head(d["eyebrow"], d["headline"], d["lede"])
+        + f'<div class="mcp-clients">{"".join(cards)}</div>'
+        '<p class="mcp-clients-label">Remote-first platforms</p>'
+        f'<div class="mcp-clients mcp-clients-3">{"".join(remote)}</div>'
+        '<p class="mcp-clients-foot">Config shapes checked against each '
+        "client's official documentation, July 2026. "
+        '<a href="/iso20022-mcp-docs/index.html#clients" class="spk-textlink">'
+        "Full per-client setup</a></p>"
+        "</div></section>"
+    )
+
+
+def _install_tabs(d: dict) -> str:
+    """CSS-only tabbed install block. Radio inputs drive which panel shows
+    (:checked ~ sibling selectors in the stylesheet); no JS, no inline style,
+    and the radios stay keyboard-focusable."""
+    tabs = d["tabs"]
+    radios, labels, panels = [], [], []
+    for i, t in enumerate(tabs):
+        tid = f'mcp-tab-{t["id"]}'
+        checked = " checked" if i == 0 else ""
+        radios.append(
+            f'<input type="radio" name="mcp-install-tab" id="{tid}" '
+            f'class="mcp-tab-in"{checked}>'
+        )
+        labels.append(f'<label for="{tid}">{_esc(t["label"])}</label>')
+        panels.append(
+            f'<div class="mcp-tab-panel" id="mcp-panel-{t["id"]}">'
+            + _code_block(t["code"], f'mcp-code-{t["id"]}', copy=True)
+            + f'<p class="mcp-tab-note">{_rich(t["note"])}</p></div>'
+        )
+    return (
+        '<section id="mcp-install"><div class="spk-wrap">'
+        + _head(d["eyebrow"], d["headline"], d["lede"])
+        + '<div class="mcp-tabs">'
+        + "".join(radios)
+        + f'<div class="mcp-tab-labels">{"".join(labels)}</div>'
+        + "".join(panels)
+        + "</div></div></section>"
+    )
+
+
+def _schema_props(schema: dict) -> str:
+    """Render an inputSchema's properties as a definition list."""
+    props = schema.get("properties") or {}
+    if not props:
+        return '<p class="mcp-props-none">Takes no arguments.</p>'
+    required = set(schema.get("required") or [])
+    items = []
+    for name, spec in props.items():
+        kind = _esc(str(spec.get("type", "any")))
+        req = "required" if name in required else "optional"
+        desc = spec.get("description", "")
+        desc_html = f'<span class="mcp-prop-desc">{_esc(desc)}</span>' if desc else ""
+        items.append(
+            '<li><code class="spk-mono">'
+            + _esc(name)
+            + f'</code><span class="mcp-prop-type">{kind}, {req}</span>{desc_html}</li>'
+        )
+    return f'<ul class="mcp-props">{"".join(items)}</ul>'
+
+
+def _schemas(d: dict) -> str:
+    """Collapsible viewer over the captured gateway tool schemas. Reads the
+    committed tools/list snapshot at build time; if the file is missing the
+    section is skipped rather than failing the build."""
+    if not SCHEMAS_SRC.is_file():
+        print(
+            f"build_iso20022_mcp: {SCHEMAS_SRC} missing; skipping schema viewer",
+            file=sys.stderr,
+        )
+        return ""
+    data = json.loads(SCHEMAS_SRC.read_text(encoding="utf-8"))
+    tools = data.get("tools") or []
+    if not tools:
+        return ""
+    blocks = [
+        '<details class="mcp-schema">'
+        '<summary><code class="spk-mono">'
+        + _esc(t["name"])
+        + '</code><span class="mcp-schema-sum">'
+        + _esc(t.get("description", ""))
+        + '</span><span class="spk-ic" aria-hidden="true">+</span></summary>'
+        '<div class="mcp-schema-body">'
+        f'<p>{_esc(t.get("description", ""))}</p>'
+        + _schema_props(t.get("inputSchema") or {})
+        + "</div></details>"
+        for t in tools
+    ]
+    return (
+        '<section id="mcp-schemas"><div class="spk-wrap">'
+        + _head(d["eyebrow"], d["headline"], d["lede"])
+        + f'<div class="mcp-schemas">{"".join(blocks)}</div>'
+        f'<p class="mcp-schema-note">{_esc(d["note"])}</p>'
+        "</div></section>"
+    )
+
+
 def _render_body(d: dict) -> str:
     sections = [
         _hero(d),
         _hero_image(),
         _cards(d["benefits"], "mcp-benefits", bullets=False),
         _imgband(
-            "circuit_board_cityscape",
-            "A circuit board rendered as a city, evoking payment rails.",
+            "majed-swan-RBEv0VyNi2U",
+            "A grid of blue and white cubes with one cube glowing, evoking a validated message among structured blocks.",
         ),
         _cards(d["what"], "mcp-what", bullets=False),
         _cards(d["arc"], "mcp-arc", bullets=True),
+        _flow(d["flow"]),
+        _security(d["security"]),
         _imgband(
-            "digital-nodes",
-            "A network of connected nodes, evoking agents calling MCP tools.",
+            "ocean-ng-L0xOtAnv94Y",
+            "A minimalist wall clock, evoking payment operations measured in seconds.",
+            cls="mcp-band-img-tall",
         ),
+        _clients(d["clients"]),
+        _install_tabs(d["install"]),
         _start(),
+        _schemas(d["schemas"]),
         _cards(d["safety"], "mcp-safety", bullets=False),
     ]
     return (
@@ -467,28 +978,65 @@ def _render_body(d: dict) -> str:
 
 
 def _nav(shell: str) -> str:
-    """Rebuild the primary nav as the site-wide 9-item structure, with Suite
-    (this page) active. Idempotent, and robust to a stale shell that still
-    carries a different nav.
+    """Rebuild the primary nav as the site-wide 5-item dropdown structure.
+    Idempotent, and robust to a stale shell that still carries a different
+    nav (the regex consumes everything up to the </ul> that closes
+    ap-menu, i.e. the one directly followed by </nav>, so nested ap-sub
+    lists are handled).
+
+    Active-state policy (nav re-architecture, deliberate): no marker is
+    baked here. /iso20022-mcp/ is itself a nav sub-item under Suite, so
+    postbuild's inject_nav_active marks that sub-item with
+    aria-current="page" on the final page.
     """
+    chev = (
+        '<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">'
+        '<path d="M6 9l6 6 6-6"/></svg>'
+    )
+
+    def _toggle(item_id: str, label: str) -> str:
+        return (
+            '<button type="button" class="ap-sub-toggle" aria-expanded="false" '
+            f'aria-controls="sub-{item_id}" aria-label="Toggle {label} submenu">'
+            f"{chev}</button>"
+        )
+
     items = (
-        '<li><a href="/about/index.html">About</a></li>'
+        '<li class="has-sub"><a href="/about/index.html">About</a>'
+        + _toggle("about", "About")
+        + '<ul id="sub-about" class="ap-sub">'
+        '<li><a href="/trust/index.html">Trust &amp; Compliance</a></li>'
+        '<li><a href="/speaking/index.html">Public Speaking</a></li>'
+        '<li><a href="/contact/index.html">Contact</a></li>'
+        "</ul></li>"
         '<li><a href="/articles/index.html">Articles</a></li>'
-        '<li><a href="/papers/index.html">Papers</a></li>'
-        '<li><a href="/case-studies/index.html">Case studies</a></li>'
-        '<li><a href="/topics/index.html">Topics</a></li>'
-        '<li><a href="/projects/index.html">Projects</a></li>'
+        '<li class="has-sub"><a href="/library/index.html">Library</a>'
+        + _toggle("library", "Library")
+        + '<ul id="sub-library" class="ap-sub">'
+        '<li><a href="/topics/index.html">Browse by Topic</a></li>'
+        '<li><a href="/projects/index.html">Open Source Projects</a></li>'
         '<li><a href="/playlists/index.html">Playlists</a></li>'
-        '<li><a href="/speaking/index.html">Speaking</a></li>'
-        '<li><a href="/iso20022-mcp/index.html" aria-current="page" '
-        'class="active">Suite</a></li>'
+        "</ul></li>"
+        '<li class="has-sub"><a href="/research/index.html">Research</a>'
+        + _toggle("research", "Research")
+        + '<ul id="sub-research" class="ap-sub">'
+        '<li><a href="/research/index.html">Whitepapers &amp; Reports</a></li>'
+        '<li><a href="/case-studies/index.html">Real-World Case Studies</a></li>'
+        "</ul></li>"
+        '<li class="has-sub"><a href="/suite/index.html">Suite</a>'
+        + _toggle("suite", "Suite")
+        + '<ul id="sub-suite" class="ap-sub">'
+        '<li><a href="/iso20022-mcp/index.html">ISO 20022 MCP Suite</a></li>'
+        '<li><a href="/iso20022-mcp-docs/index.html">Documentation</a></li>'
+        '<li><a href="/iso20022-mcp-reference/index.html">API Reference</a></li>'
+        '<li><a href="/iso20022-mcp-recipes/index.html">Integration Recipes</a></li>'
+        "</ul></li>"
     )
     out, n = re.subn(
-        r'(<ul class="ap-menu">).*?(</ul>)',
+        r'(<ul class="ap-menu">)[\s\S]*?(</ul>)(?=\s*</nav>)',
         lambda m: m.group(1) + items + m.group(2),
         shell,
         count=1,
-        flags=re.DOTALL,
     )
     if n == 0:
         raise SystemExit(

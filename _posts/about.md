@@ -22,7 +22,7 @@ image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
 image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
-keywords: "payments technology, digital finance, artificial intelligence, post-quantum cryptography, blockchain technology, strategic leadership, operational leadership, cross-platform product design, engineering, solution architecture"
+keywords: "enterprise AI, financial technology leadership, AI banking, payments technology, digital finance, post-quantum cryptography, ISO 20022, strategic leadership, solution architecture, Sebastien Rousseau"
 last_reviewed: "2026-05-14"
 language: "en-GB"
 layout: "about"
@@ -31,7 +31,7 @@ logo_alt: "Logo for Sebastien Rousseau"
 logo_height: "44"
 logo_width: "44"
 logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
-name: "Sebastien Rousseau"
+name: "Enterprise AI Financial Technology & Leadership"
 menu: "active"
 measurementID: "G-169G4ET5HQ"
 permalink: "https://sebastienrousseau.com/about"
@@ -43,7 +43,7 @@ short_name: "sebastienrousseau"
 subtitle: "Shaping the Future of Banking and Financial Services through Strategic Integration of Artificial Intelligence, Post-Quantum Cryptography & Blockchain Technology"
 tags: "payments, digital finance, AI, post-quantum cryptography, blockchain, strategic leadership, operational leadership, cross-platform product design, engineering, solution architecture, ISO 20022, Rust, open source"
 theme-color: "0, 67, 165"
-title: "Sebastien Rousseau: AI, Banking & Financial Services Expert"
+title: "Enterprise AI Financial Technology & Leadership"
 url: "https://sebastienrousseau.com/about"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
@@ -70,7 +70,7 @@ apple_touch_icon_sizes: "192x192"
 apple-mobile-web-app-capable: "yes"
 apple-mobile-web-app-status-bar-inset: "black"
 apple-mobile-web-app-status-bar-style: "black-translucent"
-apple-mobile-web-app-title: "Sebastien Rousseau: AI, Banking & Financial Services Expert"
+apple-mobile-web-app-title: "Enterprise AI Financial Technology & Leadership"
 apple-touch-fullscreen: "yes"
 
 # MS Application - The MS Application front matter (YAML).
@@ -85,7 +85,7 @@ twitter_description: "Shaping the Future of Banking and Financial Services throu
 twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 twitter_image_alt: "Logo of Sebastien Rousseau"
 twitter_site: "@wwdseb"
-twitter_title: "Sebastien Rousseau: AI, Banking & Financial Services Expert"
+twitter_title: "Enterprise AI Financial Technology & Leadership"
 twitter_url: "https://sebastienrousseau.com/about"
 
 # Humans.txt - The Humans.txt front matter (YAML).
@@ -179,6 +179,23 @@ site_software: "Static Site Generator, Rust"
     <img alt="Shazam logo" class="brand-logo" decoding="async" height="32" loading="lazy" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/shazam.webp" width="120" />
     <img alt="AKQA logo" class="brand-logo" decoding="async" height="32" loading="lazy" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/akqa.webp" width="120" />
     <img alt="Virgin logo" class="brand-logo" decoding="async" height="32" loading="lazy" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/virgin.webp" width="120" />
+  </div>
+</section>
+
+<section class="narrative-section alt" aria-labelledby="about-speaking" data-reveal>
+  <div class="narrative-wrap">
+    <div>
+      <p class="narrative-eyebrow">Speaking and events</p>
+      <h2 id="about-speaking" class="narrative-head">Keynotes, panels and briefings for banking and payments leaders.</h2>
+      <div class="narrative-body">
+        <p>Talks on enterprise AI in banking, ISO 20022 migration, and quantum-safe payments. Written for boards, regulators, and the engineers who ship the rails.</p>
+        <p>Recent stage: The Economist Commercialising Quantum summit, London 2026.</p>
+      </div>
+      <a class="pill" href="/speaking/index.html">Explore speaking and events ›</a>
+    </div>
+    <figure class="narrative-visual">
+      <img src="https://cloudcdn.pro/stocks/images/sebastien-rousseau-20260617-5th-commercialising-quantum-2.webp" alt="Sebastien Rousseau speaking at the Commercialising Quantum summit in London" width="640" height="480" loading="lazy" decoding="async" />
+    </figure>
   </div>
 </section>
 

@@ -1,4 +1,22 @@
 {
+  "suite": {
+    "title": "Sada podnikového AI softwaru pro banky a platby — Sebastien Rousseau",
+    "subtitle": "Sada podnikového AI softwaru pro banky a platby od Sebastiena Rousseau.",
+    "description": "Sada podnikového AI softwaru pro banky a platby od Sebastiena Rousseau. Prozkoumejte ISO 20022 MCP Suite: ověřené nástroje pro AI agenty na vlastní infrastruktuře.",
+    "keywords": "AI bankovní software, sada platebního softwaru, ISO 20022 MCP, MCP server, AI agenti bankovnictví"
+  },
+  "research": {
+    "title": "Výzkum ISO 20022, bílé knihy a technické analýzy — Sebastien Rousseau",
+    "subtitle": "Výzkum ISO 20022, bílé knihy a technické analýzy o AI v bankovnictví, platební infrastruktuře a postkvantové kryptografii, od Sebastiena Rousseau.",
+    "description": "Výzkum ISO 20022, bílé knihy a technické analýzy o AI v bankovnictví, platební infrastruktuře a postkvantové kryptografii, od Sebastiena Rousseau.",
+    "keywords": "výzkum ISO 20022, bílé knihy, technické analýzy, výzkum AI v bankovnictví, postkvantová kryptografie"
+  },
+  "library": {
+    "title": "Vývojářská knihovna: bankovní témata, open source projekty a playlisty — Sebastien Rousseau",
+    "subtitle": "Vývojářská knihovna Sebastiena Rousseaua: vybraná bankovní témata, open source projekty a video playlisty o bankovní AI, platbách ISO 20022 a postkvantové bezpečnosti.",
+    "description": "Vývojářská knihovna Sebastiena Rousseaua: vybraná bankovní témata, open source projekty a video playlisty o bankovní AI, platbách ISO 20022 a postkvantové bezpečnosti.",
+    "keywords": "vývojářská knihovna, bankovní témata, playlisty, open source projekty, ISO 20022"
+  },
   "_comment": "Czech static-page metadata — DRAFT pending native review.",
   "404": {
     "title": "Stránka nenalezena — Sebastien Rousseau",
@@ -29,12 +47,6 @@
     "subtitle": "Máte otázku nebo potřebujete poradit? Napište mi.",
     "description": "Kontaktujte Sebastiena Rousseaua ohledně konzultací o transformaci plateb, migraci ISO 20022 nebo postkvantové strategii.",
     "keywords": "kontakt, konzultace, platby, ISO 20022, postkvantová kryptografie"
-  },
-  "made-with-static-site-generator": {
-    "title": "Vytvořeno se Static Site Generatorem — Sebastien Rousseau",
-    "subtitle": "Objevte, jak používat statický generátor nové generace.",
-    "description": "Tento web je vytvořen se Static Site Generatorem, statickým generátorem v Rustu optimalizovaným pro výkon a SEO.",
-    "keywords": "Static Site Generator, SSG, Rust, výkon, SEO"
   },
   "made-with-static-site-generator": {
     "title": "Vytvořeno se Static Site Generator — Sebastien Rousseau",

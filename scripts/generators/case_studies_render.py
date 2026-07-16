@@ -316,6 +316,16 @@ def _render_body(
         + article_jsonld
         + '</div>'
     )
+def _hub_h1(lbl: dict[str, str], lang: str) -> str:
+    """Hub-page H1. EN gets the keyword-rich SEO headline from the 5-item
+    nav re-architecture spec; locales keep their translated label (the EN
+    fallback merge in ``_lbl`` would otherwise leak the English headline
+    onto every locale hub)."""
+    if lang == "en":
+        return "AI Banking & ISO 20022 Payment Case Studies"
+    return lbl["Case studies"]
+
+
 def _render_index_body(
     studies: list[dict], lbl: dict[str, str], lang: str, url_segment: str,
 ) -> str:
@@ -330,7 +340,7 @@ def _render_index_body(
             '<div class="cs-stage-row">'
             + breadcrumb
             + f'<p class="cs-kicker">{_esc(lbl["eyebrow_plural"])}</p>'
-            + f'<h1>{_esc(lbl["Case studies"])}</h1>'
+            + f'<h1>{_esc(_hub_h1(lbl, lang))}</h1>'
             + f'<p class="cs-deck">{_esc(lbl["deck"])}</p>'
             + '</div></section></div>'
         )
@@ -370,7 +380,7 @@ def _render_index_body(
         '<div class="cs-hero-text">'
         + breadcrumb
         + f'<p class="cs-kicker">{_esc(lbl["eyebrow_plural"])}</p>'
-        + f'<h1>{_esc(lbl["Case studies"])}</h1>'
+        + f'<h1>{_esc(_hub_h1(lbl, lang))}</h1>'
         + f'<p class="cs-deck">{_esc(lbl["deck"])}</p>'
         + f'<a class="cs-hero-cta" href="#hub-grid">{_esc(lbl.get("Read case study", "Browse"))}</a>'
         + '</div></div>'

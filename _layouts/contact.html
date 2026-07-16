@@ -1033,6 +1033,26 @@
       .ap-menu{justify-self:center;display:flex;list-style:none;margin:0;padding:0;gap:22px}
       .ap-menu a{font-size:12px;color:var(--ink);opacity:.88;white-space:nowrap}
       .ap-menu a:hover{opacity:1}.ap-brand[aria-current="page"]{color:var(--accent)}.ap-menu a[aria-current="page"],.ap-menu a.active{opacity:1;color:var(--accent);font-weight:600;position:relative}.ap-menu a[aria-current="page"]::after,.ap-menu a.active::after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:2px;background:var(--accent);border-radius:1px}
+      /* Primary-nav dropdowns. Layered disclosure: (1) :hover keeps the
+         desktop mouse path CSS-only; (2) html:not(.has-js) :focus-within is
+         the JS-off keyboard fallback (panel opens as focus enters the item);
+         (3) with JS on, main.js drives the per-item .ap-sub-toggle button
+         (aria-expanded) so Enter/Space/Escape and touch work hover-free. */
+      .ap-menu .has-sub{position:relative;display:inline-flex;align-items:center}
+      .ap-sub-toggle{display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;padding:0;margin-inline-start:2px;background:transparent;border:0;border-radius:50%;color:var(--ink);opacity:.88;cursor:pointer}
+      .ap-sub-toggle:hover{opacity:1;background:color-mix(in srgb,var(--ink) 7%,transparent)}
+      .ap-sub-toggle:focus-visible{opacity:1;outline:2px solid var(--accent);outline-offset:2px}
+      .ap-sub-toggle svg{width:12px;height:12px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;transition:transform .18s ease}
+      .ap-sub-toggle[aria-expanded="true"] svg{transform:rotate(180deg)}
+      @media (prefers-reduced-motion: reduce){.ap-sub-toggle svg{transition:none}}
+      .ap-menu .has-sub::after{content:"";position:absolute;left:0;right:0;top:100%;height:12px}
+      .ap-menu .ap-sub{position:absolute;top:calc(100% + 10px);left:50%;transform:translateX(-50%) translateY(6px);min-width:230px;margin:0;padding:10px 0;list-style:none;background:var(--card);border:1px solid var(--border);border-radius:14px;box-shadow:0 18px 40px -18px rgba(0,0,0,.35);opacity:0;visibility:hidden;transition:opacity .18s ease,transform .18s ease,visibility 0s .18s;z-index:150}
+      .ap-menu .has-sub:hover>.ap-sub,html:not(.has-js) .ap-menu .has-sub:focus-within>.ap-sub,.ap-menu .has-sub>.ap-sub-toggle[aria-expanded="true"]+.ap-sub{opacity:1;visibility:visible;transform:translateX(-50%) translateY(0);transition:opacity .18s ease,transform .18s ease,visibility 0s}
+      .ap-menu .ap-sub li{margin:0}
+      .ap-menu .ap-sub a{display:block;padding:9px 18px;font-size:12px;color:var(--ink);opacity:.88;text-align:start}
+      .ap-menu .ap-sub a:hover,.ap-menu .ap-sub a:focus-visible{opacity:1;background:var(--bg-alt)}
+      .ap-menu .ap-sub a[aria-current="page"]::after,.ap-menu .ap-sub a.active::after{display:none}
+      @media (prefers-reduced-motion: reduce){.ap-menu .ap-sub{transition:none}}
       .ap-nav-right{justify-self:end;display:inline-flex;align-items:center;gap:6px}
       .ap-cta-mini{font-size:12px;font-weight:500;color:#fff;background:var(--accent);padding:10px 16px;min-height:44px;border-radius:980px;line-height:1;box-sizing:border-box;display:inline-flex;align-items:center;gap:4px;white-space:nowrap;transition:opacity .15s ease}
       .ap-cta-mini:hover{opacity:.88;color:#fff}
@@ -1083,6 +1103,17 @@
         .ap-menu{display:none}
         .ap-burger{display:inline-flex;align-items:center;justify-content:center;cursor:pointer;font-size:18px;color:var(--ink);width:44px;height:44px;user-select:none}
         .ap-nav:has(.ap-toggle:checked) .ap-menu{display:flex;flex-direction:column;position:absolute;top:var(--nav-h);left:0;right:0;background:var(--bg);padding:18px 22px;gap:14px;border-bottom:1px solid var(--border);justify-content:flex-start;text-align:center;z-index:99}
+        /* Burger view: sub-menus render as always-visible nested groups.
+           width:100% neutralises the desktop justify-self:center, which
+           otherwise shrink-wraps the open panel to a centred strip and
+           lets the hero glyphs show at its flanks (pre-existing quirk,
+           made prominent by the taller dropdown menu). */
+        .ap-nav:has(.ap-toggle:checked) .ap-menu{width:100%}
+        .ap-menu .has-sub{position:static;display:block}
+        .ap-menu .has-sub::after{display:none}
+        .ap-menu .ap-sub-toggle{display:none}
+        .ap-menu .ap-sub{position:static;transform:none;opacity:1;visibility:visible;min-width:0;border:0;border-radius:0;box-shadow:none;background:transparent;padding:8px 0 0;display:grid;gap:12px;transition:none}
+        .ap-menu .ap-sub a{padding:2px 0;text-align:center;color:var(--ink-mute)}
       }
       /* Tight phones: hide the language switcher chip from the header to
          declutter the row. The 27-locale menu is large; visitors can
@@ -2000,15 +2031,39 @@
         </a>
         <nav aria-label="Primary navigation">
           <ul class="ap-menu">
-            <li><a href="/about/index.html">About</a></li>
+            <li class="has-sub"><a href="/about/index.html">About</a>
+              <button type="button" class="ap-sub-toggle" aria-expanded="false" aria-controls="sub-about" aria-label="Toggle About submenu"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></button>
+              <ul id="sub-about" class="ap-sub">
+                <li><a href="/trust/index.html">Trust &amp; Compliance</a></li>
+                <li><a href="/speaking/index.html">Public Speaking</a></li>
+                <li><a href="/contact/index.html">Contact</a></li>
+              </ul>
+            </li>
             <li><a href="/articles/index.html">Articles</a></li>
-            <li><a href="/papers/index.html">Papers</a></li>
-            <li><a href="/case-studies/index.html">Case studies</a></li>
-            <li><a href="/topics/index.html">Topics</a></li>
-            <li><a href="/projects/index.html">Projects</a></li>
-            <li><a href="/playlists/index.html">Playlists</a></li>
-            <li><a href="/speaking/index.html">Speaking</a></li>
-            <li><a href="/iso20022-mcp/index.html">Suite</a></li>
+            <li class="has-sub"><a href="/library/index.html">Library</a>
+              <button type="button" class="ap-sub-toggle" aria-expanded="false" aria-controls="sub-library" aria-label="Toggle Library submenu"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></button>
+              <ul id="sub-library" class="ap-sub">
+                <li><a href="/topics/index.html">Browse by Topic</a></li>
+                <li><a href="/projects/index.html">Open Source Projects</a></li>
+                <li><a href="/playlists/index.html">Playlists</a></li>
+              </ul>
+            </li>
+            <li class="has-sub"><a href="/research/index.html">Research</a>
+              <button type="button" class="ap-sub-toggle" aria-expanded="false" aria-controls="sub-research" aria-label="Toggle Research submenu"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></button>
+              <ul id="sub-research" class="ap-sub">
+                <li><a href="/research/index.html">Whitepapers &amp; Reports</a></li>
+                <li><a href="/case-studies/index.html">Real-World Case Studies</a></li>
+              </ul>
+            </li>
+            <li class="has-sub"><a href="/suite/index.html">Suite</a>
+              <button type="button" class="ap-sub-toggle" aria-expanded="false" aria-controls="sub-suite" aria-label="Toggle Suite submenu"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></button>
+              <ul id="sub-suite" class="ap-sub">
+                <li><a href="/iso20022-mcp/index.html">ISO 20022 MCP Suite</a></li>
+                <li><a href="/iso20022-mcp-docs/index.html">Documentation</a></li>
+                <li><a href="/iso20022-mcp-reference/index.html">API Reference</a></li>
+                <li><a href="/iso20022-mcp-recipes/index.html">Integration Recipes</a></li>
+              </ul>
+            </li>
           </ul>
         </nav>
         <div class="ap-nav-right">
@@ -2142,7 +2197,7 @@
                 <a href="https://news.bankingonquantum.com" rel="external noopener">Banking On Quantum · newsletter</a>
               </li>
             </ul>
-            <p class="contact-aside-note">If your question is already covered in the <a href="/papers/index.html">papers FAQ</a> or a <a href="/case-studies/index.html">case study</a>, link to it, which saves a round trip.</p>
+            <p class="contact-aside-note">If your question is already covered in the <a href="/research/index.html">research FAQ</a> or a <a href="/case-studies/index.html">case study</a>, link to it, which saves a round trip.</p>
           </aside>
         </div>
       </div>
@@ -2157,6 +2212,7 @@
             <ul>
               <li><a href="/about/index.html">About</a></li>
               <li><a href="/contact/index.html">Contact</a></li>
+              <li><a href="/speaking/index.html">Speaking</a></li>
               <li><a href="/made-with-static-site-generator/index.html">Made with Static Site Generator</a></li>
             </ul>
           </div>
@@ -2164,7 +2220,9 @@
             <h2 class="ap-foot-title">Writing</h2>
             <ul>
               <li><a href="/articles/index.html">Articles</a></li>
+              <li><a href="/research/index.html">Research</a></li>
               <li><a href="/papers/index.html">Papers</a></li>
+              <li><a href="/topics/index.html">Topics</a></li>
               <li><a href="/tags/index.html">Tags</a></li>
             </ul>
           </div>

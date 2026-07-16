@@ -1,0 +1,894 @@
+{
+  "_meta": {
+    "captured": "2026-07-15",
+    "server": {
+      "name": "camt053",
+      "version": "0.0.12"
+    },
+    "command": "uvx --from \"camt053-mcp\" camt053-mcp",
+    "method": "MCP stdio JSON-RPC tools/list (protocol 2024-11-05)"
+  },
+  "tools": [
+    {
+      "name": "list_message_types",
+      "title": "List camt.05x message types",
+      "description": "List every supported ISO 20022 camt.05x message type and its name.\n\nUse this first, before any validation or generation call, to discover the\nexact ``message_type`` strings this server accepts. For the return-reason\ncodes rather than message types, call ``list_return_reasons`` instead.\n\nReturns a list of ``{\"message_type\": ..., \"name\": ...}`` dictionaries, one\nper supported message type (e.g. ``camt.053.001.14``).\n",
+      "inputSchema": {
+        "properties": {},
+        "title": "list_message_typesArguments",
+        "type": "object"
+      },
+      "outputSchema": {
+        "properties": {
+          "result": {
+            "items": {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            "title": "Result",
+            "type": "array"
+          }
+        },
+        "required": [
+          "result"
+        ],
+        "title": "list_message_typesOutput",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "list_return_reasons",
+      "title": "List ISO return reason codes",
+      "description": "List every known ISO external return reason code with its name.\n\nUse this to discover the ``reason_code`` values that ``filter_entries`` and\n``generate_reversal`` accept (e.g. ``AC04`` Closed Account). For the\nsupported message types rather than reason codes, use ``list_message_types``.\n\nReturns a list of ``{\"code\": ..., \"name\": ...}`` dictionaries (e.g.\n``{\"code\": \"AC04\", \"name\": \"Closed Account Number\"}``).\n",
+      "inputSchema": {
+        "properties": {},
+        "title": "list_return_reasonsArguments",
+        "type": "object"
+      },
+      "outputSchema": {
+        "properties": {
+          "result": {
+            "items": {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            "title": "Result",
+            "type": "array"
+          }
+        },
+        "required": [
+          "result"
+        ],
+        "title": "list_return_reasonsOutput",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "get_required_fields",
+      "title": "Get required input fields",
+      "description": "List only the required input field names for a camt message type.\n\nUse this for a quick checklist of the mandatory columns before building\nreversing-entry records. When you need full type/format constraints (not\njust which fields are required), call ``get_input_schema`` instead.\n\nArgs:\n    message_type: A supported ISO 20022 camt.05x message type.\n",
+      "inputSchema": {
+        "properties": {
+          "message_type": {
+            "description": "A supported ISO 20022 camt.05x message type string. Must be exactly one of: 'camt.052.001.14', 'camt.053.001.14', 'camt.054.001.14' (see list_message_types).",
+            "enum": [
+              "camt.052.001.14",
+              "camt.053.001.14",
+              "camt.054.001.14"
+            ],
+            "title": "Message Type",
+            "type": "string"
+          }
+        },
+        "required": [
+          "message_type"
+        ],
+        "title": "get_required_fieldsArguments",
+        "type": "object"
+      },
+      "outputSchema": {
+        "properties": {
+          "result": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Result",
+            "type": "array"
+          }
+        },
+        "required": [
+          "result"
+        ],
+        "title": "get_required_fieldsOutput",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "get_input_schema",
+      "title": "Get input JSON Schema",
+      "description": "Return the full JSON Schema for a message type's flat input record.\n\nUse this to learn every field, its type, and its constraints before\nassembling records, or to drive a form/UI. For just the required-field\nnames use ``get_required_fields``; to actually check records against this\nschema use ``validate_records``.\n\nArgs:\n    message_type: A supported ISO 20022 camt.05x message type.\n",
+      "inputSchema": {
+        "properties": {
+          "message_type": {
+            "description": "A supported ISO 20022 camt.05x message type string. Must be exactly one of: 'camt.052.001.14', 'camt.053.001.14', 'camt.054.001.14' (see list_message_types).",
+            "enum": [
+              "camt.052.001.14",
+              "camt.053.001.14",
+              "camt.054.001.14"
+            ],
+            "title": "Message Type",
+            "type": "string"
+          }
+        },
+        "required": [
+          "message_type"
+        ],
+        "title": "get_input_schemaArguments",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "validate_records",
+      "title": "Validate records against schema",
+      "description": "Validate flat records against a message type's input JSON Schema.\n\nUse this on in-memory reversing-entry records to catch structural/type\nerrors per row before generation. To validate a whole camt.05x *document*\n(XML) against its XSD instead, use ``validate_statement``.\n\nReturns a report ``{\"valid\": bool, \"total\": int, \"valid_count\": int,\n\"errors\": [...]}``.\n\nArgs:\n    message_type: A supported ISO 20022 camt.05x message type.\n    records: One or more flat reversing-entry records to validate.\n",
+      "inputSchema": {
+        "properties": {
+          "message_type": {
+            "description": "A supported ISO 20022 camt.05x message type string. Must be exactly one of: 'camt.052.001.14', 'camt.053.001.14', 'camt.054.001.14' (see list_message_types).",
+            "enum": [
+              "camt.052.001.14",
+              "camt.053.001.14",
+              "camt.054.001.14"
+            ],
+            "title": "Message Type",
+            "type": "string"
+          },
+          "records": {
+            "description": "One or more flat reversing-entry records (each a dict of field name to value) to validate row-by-row against the message type's input JSON Schema.",
+            "items": {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            "title": "Records",
+            "type": "array"
+          }
+        },
+        "required": [
+          "message_type",
+          "records"
+        ],
+        "title": "validate_recordsArguments",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "validate_identifier",
+      "title": "Validate IBAN, BIC or LEI",
+      "description": "Validate a single financial identifier (IBAN, BIC, or LEI).\n\nUse this for a one-off identifier check with a clear pass/fail. To validate\nidentifiers embedded across a whole batch of records, prefer\n``validate_records`` rather than calling this per field.\n\nReturns ``{\"kind\": str, \"value\": str, \"valid\": bool}``.\n\nArgs:\n    kind: One of ``\"iban\"``, ``\"bic\"``, or ``\"lei\"`` (case-insensitive).\n    value: The identifier value to check.\n",
+      "inputSchema": {
+        "properties": {
+          "kind": {
+            "description": "The financial identifier type to validate (case-insensitive). Must be exactly one of: 'bic', 'iban', 'lei'.",
+            "enum": [
+              "bic",
+              "iban",
+              "lei"
+            ],
+            "title": "Kind",
+            "type": "string"
+          },
+          "value": {
+            "description": "The identifier value to check, matching the chosen kind (e.g. an IBAN, an 8- or 11-character BIC, or a 20-character LEI). Whitespace/case handling follows the underlying validator.",
+            "title": "Value",
+            "type": "string"
+          }
+        },
+        "required": [
+          "kind",
+          "value"
+        ],
+        "title": "validate_identifierArguments",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "parse_statement",
+      "title": "Parse camt.05x statement XML",
+      "description": "Parse an incoming camt.05x statement XML string into structured data.\n\nUse this to turn a raw statement into a navigable dict (header, statements,\naccounts, balances, entries). To pull just the flat entry list use\n``list_entries``; to only check the document is schema-valid use\n``validate_statement``.\n\nReturns the parsed document as a JSON-serialisable dict (group header plus\nstatements, each with its account, balances, and entries), or an\n``{\"error\": ...}`` payload if the XML cannot be parsed.\n\nArgs:\n    xml: The raw statement XML as a string.\n",
+      "inputSchema": {
+        "properties": {
+          "xml": {
+            "description": "The raw camt.05x statement XML document as a string, with its root camt <Document> element. Returned verbatim from the bank; no file path is accepted.",
+            "title": "Xml",
+            "type": "string"
+          }
+        },
+        "required": [
+          "xml"
+        ],
+        "title": "parse_statementArguments",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "convert_mt940_to_camt053",
+      "title": "Convert legacy MT940 to camt.053",
+      "description": "Convert a legacy SWIFT MT940 statement into a camt.053 structure.\n\nUse this as the Phase-1 migration wedge: SWIFT MT940 customer statements\nretire in **November 2028**, so this tool bridges the gap by turning raw\nMT940 text into the same JSON-serialisable camt.053 document shape that\n``parse_statement`` returns (group header plus statements, each with its\naccount, balances, and entries). Downstream tools (``list_entries``,\n``filter_entries``, ``classify_entry``, ``export_journal``) then work on the\nresult unchanged.\n\nWraps the ``camt053-loader-mt940`` library's ``parse_mt940``; the MT parsing\nitself is delegated (no MT grammar is reimplemented here). The resulting\n``ParsedDocument`` is serialised with the same ``to_dict()`` the server's\nother parse tools use, so agents get a consistent structure. Nothing is read\nfrom or written to disk.\n\nReturns the converted document as a JSON-serialisable dict, or an\n``{\"error\": ...}`` payload if the MT940 text cannot be parsed (e.g. a\nmissing ``:20:`` reference or a malformed balance / statement line).\n\nArgs:\n    mt940_text: The raw MT940 statement text as a string.\n",
+      "inputSchema": {
+        "properties": {
+          "mt940_text": {
+            "description": "The raw legacy SWIFT MT940 statement text as a string (``:20:`` / ``:25:`` / ``:28C:`` / ``:60F:`` / ``:61:`` / ``:86:`` / ``:62F:`` fields). Passed verbatim from the bank or ERP; no file path is accepted.",
+            "title": "Mt940 Text",
+            "type": "string"
+          }
+        },
+        "required": [
+          "mt940_text"
+        ],
+        "title": "convert_mt940_to_camt053Arguments",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "convert_mt942",
+      "title": "Convert legacy MT942 to camt.052",
+      "description": "Convert a legacy SWIFT MT942 interim report into a camt.052 structure.\n\nUse this as the Phase-1 migration wedge for intraday reporting: SWIFT MT94x\nmessages retire in **November 2028**, so this tool bridges the gap by\nturning raw MT942 *Interim Transaction Report* text into the same\nJSON-serialisable camt.052 (Bank-to-Customer Account **Report**) document\nshape the server's parse tools return (group header plus statements, each\nwith its account, balances, and entries). MT942 is the intraday sibling of\nMT940: where MT940 maps to camt.053 (end-of-day statement), MT942 maps to\ncamt.052, so the resulting ``message_type`` is ``camt.052.001.08``.\nDownstream tools (``list_entries``, ``filter_entries``, ``classify_entry``,\n``export_journal``) then work on the result unchanged.\n\nWraps the ``camt053-loader-mt942`` library's ``parse_mt942``; the MT parsing\nitself is delegated (no MT grammar is reimplemented here). The resulting\n``ParsedDocument`` is serialised with the same ``to_dict()`` the server's\nother parse tools use, so agents get a consistent structure. Nothing is read\nfrom or written to disk.\n\n**Documented model limitation.** The ``camt053`` typed model is\ncamt.053-statement-oriented: it has no dedicated field for camt.052's\nfloor-limit (``<Lmt>``) or transaction-summary (``<TxsSummry>``) blocks.\nRather than drop that data, the loader surfaces it on the balance list using\nclearly proprietary ``type_code`` values so consumers can recognise and\nfilter them: ``:34F:`` floor limits become ``FLIMD`` / ``FLIMC`` balances,\nand ``:90D:`` / ``:90C:`` entry-count summaries become ``SUMD:<count>`` /\n``SUMC:<count>`` balances (the ISO ``NbOfNtries`` count is encoded after the\ncolon; the sum is the balance ``amount``). See the loader's README.\n\nReturns the converted document as a JSON-serialisable dict, or an\n``{\"error\": ...}`` payload if the MT942 text cannot be parsed (e.g. a\nmissing ``:20:`` reference or a malformed floor-limit / summary / statement\nline).\n\nArgs:\n    mt942_text: The raw MT942 interim transaction report text as a string.\n",
+      "inputSchema": {
+        "properties": {
+          "mt942_text": {
+            "description": "The raw legacy SWIFT MT942 interim transaction report text as a string (``:20:`` / ``:25:`` / ``:28C:`` / ``:34F:`` / ``:13D:`` / ``:61:`` / ``:86:`` / ``:90D:`` / ``:90C:`` fields). Passed verbatim from the bank or ERP; no file path is accepted.",
+            "title": "Mt942 Text",
+            "type": "string"
+          }
+        },
+        "required": [
+          "mt942_text"
+        ],
+        "title": "convert_mt942Arguments",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "validate_statement",
+      "title": "Validate statement against XSD",
+      "description": "Validate an incoming camt.05x statement XML against its XSD schema.\n\nUse this to confirm a document is well-formed and schema-valid before\nprocessing it. This checks XSD conformance only; for the Nov 2026 CBPR+\nbusiness rules use ``check_cbpr_readiness``, and to extract the data use\n``parse_statement``.\n\nDetects the document's message type, validates it against the matching\nISO 20022 schema, and returns a report ``{\"valid\": bool, \"message_type\":\nstr, \"errors\": [...]}``. A well-formed but schema-invalid document yields\n``valid=False`` with a populated ``errors`` list (and the detected\n``message_type``); a valid one yields ``valid=True`` with no errors.\n\nReturns an ``{\"error\": ...}`` payload instead if the XML cannot be parsed\n(e.g. it is malformed or is not a camt ``Document``).\n\nArgs:\n    xml: The raw statement XML as a string.\n",
+      "inputSchema": {
+        "properties": {
+          "xml": {
+            "description": "The raw camt.05x statement XML document as a string, with its root camt <Document> element. Validated against the matching ISO 20022 XSD; no file path is accepted.",
+            "title": "Xml",
+            "type": "string"
+          }
+        },
+        "required": [
+          "xml"
+        ],
+        "title": "validate_statementArguments",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "check_cbpr_readiness",
+      "title": "Check CBPR+ Nov 2026 readiness",
+      "description": "Check a camt.053 statement against the CBPR+ Nov 2026 acceptance rules.\n\nUse this to audit a statement for the business-rule changes (schema\nversion, structured postal addresses) enforced from the Nov 2026 cutover.\nFor plain XSD schema validity use ``validate_statement`` instead; for just\nthe cutover date use ``get_cbpr_cutover_date``.\n\nA coordinated CBPR+ / Fedwire / CHAPS / T2 cutover lands on\n**14-16 November 2026**: unstructured-only postal addresses get rejected,\n``camt.110/111`` exceptions and investigations become mandatory, and T2S\nR2026.NOV upgrades camt.053 / 054 to schema revision MR2026.\n\nThis tool walks the supplied payload and reports every issue that will\nfail the Nov 2026 acceptance rules:\n\n* **Schema version** vs the CBPR+ current set (``camt.053.001.08`` /\n  ``camt.053.001.13``); ``.02``-``.07`` are flagged as deprecated\n  warnings; unknown / non-camt.053 namespaces as errors.\n* **Postal addresses**: every ``<PstlAdr>`` is classified as fully\n  structured, hybrid, or **unstructured-only** (``<AdrLine>`` without\n  ``<TwnNm>`` + ``<Ctry>`` siblings, the Nov 2026 reject case).\n\nReturns a dictionary ``{\"cbpr_ready\": bool, \"schema_version\": str | None,\n\"checked_at\": ISO-8601 UTC, \"cutover_date\": \"2026-11-16\",\n\"issues\": [...], \"summary\": {...}}``. ``cbpr_ready`` is ``True`` iff no\n``severity=\"error\"`` issue was raised. An ``{\"error\": ...}`` envelope\nis returned instead if the XML is malformed or refused by the\nhardened pre-flight (DOCTYPE / ENTITY / oversized payload).\n\nArgs:\n    xml: The raw camt.05x statement XML as a string.\n",
+      "inputSchema": {
+        "properties": {
+          "xml": {
+            "description": "The raw camt.05x statement XML document as a string, audited against the CBPR+ Nov 2026 acceptance rules (schema version and structured postal addresses). Rejected by the hardened pre-flight if it carries a DOCTYPE/ENTITY or is oversized.",
+            "title": "Xml",
+            "type": "string"
+          }
+        },
+        "required": [
+          "xml"
+        ],
+        "title": "check_cbpr_readinessArguments",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "get_cbpr_cutover_date",
+      "title": "Get CBPR+ cutover date",
+      "description": "Return the official CBPR+ / Nov 2026 cutover date as ISO 8601.\n\nUse this to quote the enforcement date directly, without parsing a\ndocument. To actually audit a statement against the rules that take effect\non that date, call ``check_cbpr_readiness`` instead.\n\nThe cutover (``2026-11-16``) is the date after which the rules checked\nby ``check_cbpr_readiness`` are enforced by the major clearing systems;\npayments that fail will be rejected at receive-time. Surfaced as a\ndiscrete tool so agents can quote it directly without having to call\na readiness check first.\n",
+      "inputSchema": {
+        "properties": {},
+        "title": "get_cbpr_cutover_dateArguments",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "cite_rulebook",
+      "title": "Cite payments rulebook clause",
+      "description": "Return a curated payments-rulebook citation for a single clause.\n\nUse this to quote one specific rule (with its canonical source URL) once\nyou know the ``scheme``/``version``/``clause``. To discover which clauses\nexist first, call ``list_rulebook_clauses``.\n\nLooks up one well-known rule across the SEPA, CBPR+, and HVPS+\nrulebooks and returns a short summary together with the canonical\nsource URL so an agent can quote the rule and the operator can\nverify it against the official document.\n\nThe registry is a curated convenience layer, not a verbatim\nreproduction of copyrighted text. Always defer to ``source_url``\nfor authoritative wording before relying on a citation for\ncompliance or contractual decisions; the returned ``disclaimer``\nfield repeats this for the calling agent.\n\nArgs:\n    scheme: One of ``\"SEPA\"``, ``\"CBPR+\"``, or ``\"HVPS+\"`` (case\n        sensitive).\n    version: The rulebook version (e.g. ``\"2025\"`` or ``\"2026\"``).\n    clause: A kebab-case clause identifier from\n        ``list_rulebook_clauses``.\n\nReturns:\n    A citation dict ``{\"scheme\", \"version\", \"clause\", \"title\",\n    \"summary\", \"source_url\", \"as_of\", \"disclaimer\"}`` or an\n    ``{\"error\": ...}`` payload if the citation is not in the\n    registry.\n",
+      "inputSchema": {
+        "properties": {
+          "scheme": {
+            "description": "The payments-rulebook scheme to cite (case-sensitive). Must be exactly one of: 'CBPR+', 'HVPS+', 'SEPA' (see list_rulebook_clauses).",
+            "enum": [
+              "CBPR+",
+              "HVPS+",
+              "SEPA"
+            ],
+            "title": "Scheme",
+            "type": "string"
+          },
+          "version": {
+            "description": "The rulebook version, e.g. '2025' or '2026'. Use list_rulebook_clauses to see which versions exist per scheme.",
+            "title": "Version",
+            "type": "string"
+          },
+          "clause": {
+            "description": "A kebab-case clause identifier (e.g. 'iban-only') as returned by list_rulebook_clauses for the chosen scheme and version.",
+            "title": "Clause",
+            "type": "string"
+          }
+        },
+        "required": [
+          "scheme",
+          "version",
+          "clause"
+        ],
+        "title": "cite_rulebookArguments",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "list_rulebook_clauses",
+      "title": "List rulebook clauses",
+      "description": "List the curated rulebook clauses the server can cite, optionally filtered.\n\nUse this to browse the citation registry and pick a ``clause`` id; then pass\nthat id to ``cite_rulebook`` to fetch the full summary and source URL.\n\nReturns the full registry, optionally filtered by ``scheme`` and /\nor ``version``. Use the resulting ``clause`` values as input to\n``cite_rulebook``.\n\nArgs:\n    scheme: Restrict to one scheme (e.g. ``\"SEPA\"``). ``None``\n        returns all schemes.\n    version: Restrict to one version (e.g. ``\"2026\"``). ``None``\n        returns all versions.\n",
+      "inputSchema": {
+        "properties": {
+          "scheme": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "Restrict the listing to one scheme. When given, must be exactly one of: 'CBPR+', 'HVPS+', 'SEPA'. None (the default) returns clauses for all schemes.",
+            "enum": [
+              "CBPR+",
+              "HVPS+",
+              "SEPA"
+            ],
+            "title": "Scheme"
+          },
+          "version": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "Restrict the listing to one rulebook version, e.g. '2026'. None (the default) returns clauses for all versions.",
+            "title": "Version"
+          }
+        },
+        "title": "list_rulebook_clausesArguments",
+        "type": "object"
+      },
+      "outputSchema": {
+        "properties": {
+          "result": {
+            "items": {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            "title": "Result",
+            "type": "array"
+          }
+        },
+        "required": [
+          "result"
+        ],
+        "title": "list_rulebook_clausesOutput",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "export_journal",
+      "title": "Export statement to journal entries",
+      "description": "Export a camt.053 statement as accounting-platform journal-entry payloads.\n\nUse this to reshape a statement's booked entries into ready-to-POST Xero or\nQuickBooks payloads (the tool builds the payloads only; it does not call any\nexternal API or write files). To discover the valid ``target`` values first,\ncall ``list_export_journal_targets``.\n\nParses the supplied statement and re-shapes every booked entry\ninto a target-specific journal-entry payload ready for direct\nPOST to the accounting platform's REST API.\n\nSupported targets (see ``camt053_mcp.export_journal.SUPPORTED_TARGETS``):\n\n* ``\"xero\"`` - returns a list of Xero ``BankTransactions``\n  payloads. Each entry maps to ``{Type, Reference, Date,\n  BankAccount, Contact, LineAmountTypes, CurrencyCode,\n  LineItems}``; CRDT entries become ``Type=RECEIVE`` and DBIT\n  entries ``Type=SPEND``.\n* ``\"qbo\"`` - returns a list of QuickBooks Online\n  ``JournalEntry`` payloads. Each entry produces a balanced\n  two-line journal (one to the bank account, one to a clearing\n  account; sign flipped on debit entries).\n\nOperator-specific values (account codes, contact identifiers,\nrealm IDs) appear as ``\"OPERATOR_FILL\"`` placeholders so the\noperator knows exactly what still needs wiring. The response's\n``placeholder_count`` field reports the total.\n\nNetSuite + SAP S/4HANA targets are tracked as a follow-up in #17.\n\nArgs:\n    xml: The raw camt.053 statement XML as a string.\n    target: One of ``\"xero\"`` or ``\"qbo\"`` (default ``\"xero\"``).\n\nReturns:\n    ``{\"target\", \"entries\", \"placeholder_count\", \"placeholder_field\"}``\n    on success, or ``{\"error\": ...}`` on failure (unsupported\n    target / malformed XML / parse refusal).\n",
+      "inputSchema": {
+        "properties": {
+          "xml": {
+            "description": "The raw camt.053 statement XML document as a string; its booked entries are reshaped into journal-entry payloads.",
+            "title": "Xml",
+            "type": "string"
+          },
+          "target": {
+            "default": "xero",
+            "description": "The accounting platform to shape journal-entry payloads for. Must be exactly one of: 'qbo', 'xero' (see list_export_journal_targets).",
+            "enum": [
+              "qbo",
+              "xero"
+            ],
+            "title": "Target",
+            "type": "string"
+          }
+        },
+        "required": [
+          "xml"
+        ],
+        "title": "export_journalArguments",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "list_export_journal_targets",
+      "title": "List journal export targets",
+      "description": "List the accounting-platform targets the ``export_journal`` tool supports.\n\nUse this to tell a user which ``target`` values ``export_journal`` accepts\nbefore invoking it. This lists export destinations only; for the LLM\nclassifier's category vocabulary use ``list_classify_entry_categories``.\n\nReturns the sorted list of valid ``target`` arguments accepted by\n``export_journal`` (``[\"qbo\", \"xero\"]`` today). NetSuite and SAP\nS/4HANA support is a tracked follow-up.\n",
+      "inputSchema": {
+        "properties": {},
+        "title": "list_export_journal_targetsArguments",
+        "type": "object"
+      },
+      "outputSchema": {
+        "properties": {
+          "result": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Result",
+            "type": "array"
+          }
+        },
+        "required": [
+          "result"
+        ],
+        "title": "list_export_journal_targetsOutput",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "classify_entry",
+      "title": "Classify entry via LLM sampling",
+      "description": "Classify one statement entry into a category via MCP LLM Sampling.\n\nUse this when you want a semantic, model-driven label for an entry (payroll,\nfee, refund, …) rather than a deterministic rule match. Because it delegates\nan LLM completion to the client it is open-world and non-idempotent; for the\nfixed candidate categories it chooses from, call\n``list_classify_entry_categories`` first.\n\nUses the **MCP Sampling** protocol primitive: the server (this\nprocess) asks the *client* (the agent's host application) to\nperform an LLM completion on the server's behalf, then receives\nthe model's structured response. Keeps every LLM call in the\noperator's existing model contract (privacy, billing, audit).\n\nThe model is asked to choose exactly one category from\n``categories`` (or :data:`camt053_mcp.classify.DEFAULT_CATEGORIES`\nif ``None`` is passed) and return a structured\n``{category, confidence, explanation}`` payload.\n\nClients that do not support Sampling will get an\n``{\"error\": \"...\"}`` envelope and can fall back to a rules-only\nclassifier.\n\nArgs:\n    ctx: The FastMCP Context (auto-injected; provides\n        ``session.create_message``).\n    entry: A statement entry dict (the shape returned by\n        ``parse_statement`` / ``list_entries``).\n    categories: The candidate categories. ``None`` uses the\n        built-in default list (12 common payment buckets).\n\nReturns:\n    ``{\"category\", \"confidence\", \"explanation\"}`` on success or\n    ``{\"error\": \"...\"}`` on Sampling failure / malformed model\n    response / out-of-vocabulary category.\n",
+      "inputSchema": {
+        "properties": {
+          "entry": {
+            "additionalProperties": true,
+            "description": "A single statement entry dict, in the shape returned by parse_statement / list_entries, to classify into one category.",
+            "title": "Entry",
+            "type": "object"
+          },
+          "categories": {
+            "anyOf": [
+              {
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "The candidate categories the model must choose exactly one from. None (the default) uses the built-in default list exposed by list_classify_entry_categories.",
+            "title": "Categories"
+          }
+        },
+        "required": [
+          "entry"
+        ],
+        "title": "classify_entryArguments",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": false,
+        "openWorldHint": true
+      }
+    },
+    {
+      "name": "list_classify_entry_categories",
+      "title": "List classifier categories",
+      "description": "List the default candidate categories the ``classify_entry`` tool uses.\n\nUse this to quote the built-in category vocabulary to a user before running\nthe LLM classifier. This is a static list lookup (no model call); to\nactually classify an entry, call ``classify_entry``.\n\nOperators can override the list per call; this tool exposes the\ndefault the prompt template ships with so an agent can quote them\nto the user before invoking the classifier.\n",
+      "inputSchema": {
+        "properties": {},
+        "title": "list_classify_entry_categoriesArguments",
+        "type": "object"
+      },
+      "outputSchema": {
+        "properties": {
+          "result": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Result",
+            "type": "array"
+          }
+        },
+        "required": [
+          "result"
+        ],
+        "title": "list_classify_entry_categoriesOutput",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "list_entries",
+      "title": "List all statement entries",
+      "description": "List every booked entry across all statements in a camt.05x document.\n\nUse this to get the flat, paginable entry list from a statement. To keep\nonly the entries carrying a given return-reason code use ``filter_entries``;\nfor the full nested document structure use ``parse_statement``.\n\nWhen ``limit`` is ``None`` (the default) the full list of entries is\nreturned. When ``limit`` is given, a paginated envelope ``{\"total\",\n\"offset\", \"limit\", \"entries\"}`` is returned instead, exposing the\n``offset:offset + limit`` slice. A negative ``offset`` or ``limit`` yields\nan ``{\"error\": ...}`` payload.\n\nArgs:\n    xml: The raw statement XML as a string.\n    offset: The zero-based index of the first entry to return (paginated\n        mode only; default ``0``).\n    limit: The maximum number of entries to return, or ``None`` for the\n        full list (default ``None``).\n",
+      "inputSchema": {
+        "properties": {
+          "xml": {
+            "description": "The raw camt.05x statement XML document as a string; every booked entry across all its statements is returned.",
+            "title": "Xml",
+            "type": "string"
+          },
+          "offset": {
+            "default": 0,
+            "description": "Zero-based index of the first entry to return. Applies only when limit is given; must be non-negative. Defaults to 0.",
+            "title": "Offset",
+            "type": "integer"
+          },
+          "limit": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "Maximum number of entries to return, starting at offset. None (the default) returns the full unpaginated list; a non-None value returns a {total, offset, limit, entries} envelope. Must be non-negative.",
+            "title": "Limit"
+          }
+        },
+        "required": [
+          "xml"
+        ],
+        "title": "list_entriesArguments",
+        "type": "object"
+      },
+      "outputSchema": {
+        "properties": {
+          "result": {
+            "anyOf": [
+              {
+                "items": {
+                  "additionalProperties": true,
+                  "type": "object"
+                },
+                "type": "array"
+              },
+              {
+                "additionalProperties": true,
+                "type": "object"
+              }
+            ],
+            "title": "Result"
+          }
+        },
+        "required": [
+          "result"
+        ],
+        "title": "list_entriesOutput",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "filter_entries",
+      "title": "Filter entries by reason code",
+      "description": "List only the statement entries carrying a given return reason code.\n\nUse this to preview exactly which entries a reversal would touch before\ncalling ``generate_reversal`` with the same ``reason_code``. For every entry\nregardless of reason code use ``list_entries`` instead.\n\nWhen ``limit`` is ``None`` (the default) the full list of matching entries\nis returned, preserving the behaviour expected by existing callers. When\n``limit`` is given, a paginated envelope ``{\"total\", \"offset\", \"limit\",\n\"entries\"}`` is returned instead, exposing the ``offset:offset + limit``\nslice. A negative ``offset`` or ``limit`` yields an ``{\"error\": ...}``\npayload.\n\nArgs:\n    xml: The raw statement XML as a string.\n    reason_code: The ISO external return reason to match (default\n        ``\"AC04\"`` Closed Account).\n    offset: The zero-based index of the first entry to return (paginated\n        mode only; default ``0``).\n    limit: The maximum number of entries to return, or ``None`` for the\n        full list (default ``None``).\n",
+      "inputSchema": {
+        "properties": {
+          "xml": {
+            "description": "The raw camt.05x statement XML document as a string; only its entries carrying the given return reason code are returned.",
+            "title": "Xml",
+            "type": "string"
+          },
+          "reason_code": {
+            "default": "AC04",
+            "description": "An ISO external return reason code, e.g. 'AC04' Closed Account. Must be exactly one of: 'AC01', 'AC02', 'AC03', 'AC04', 'AC06', 'AC13', 'AC14', 'AG01', 'AG02', 'AM01', 'AM02', 'AM03', 'AM04', 'AM05', 'AM06', 'AM07', 'AM08', 'AM09', 'BE01', 'BE05', 'CNOR', 'DNOR', 'DT01', 'ED01', 'ED05', 'FF01', 'MD01', 'MD06', 'MD07', 'MS02', 'MS03', 'NARR', 'NOAS', 'NOOR', 'RC01', 'RR01', 'RR02', 'RR03', 'RR04', 'SL01', 'TM01' (see list_return_reasons).",
+            "enum": [
+              "AC01",
+              "AC02",
+              "AC03",
+              "AC04",
+              "AC06",
+              "AC13",
+              "AC14",
+              "AG01",
+              "AG02",
+              "AM01",
+              "AM02",
+              "AM03",
+              "AM04",
+              "AM05",
+              "AM06",
+              "AM07",
+              "AM08",
+              "AM09",
+              "BE01",
+              "BE05",
+              "CNOR",
+              "DNOR",
+              "DT01",
+              "ED01",
+              "ED05",
+              "FF01",
+              "MD01",
+              "MD06",
+              "MD07",
+              "MS02",
+              "MS03",
+              "NARR",
+              "NOAS",
+              "NOOR",
+              "RC01",
+              "RR01",
+              "RR02",
+              "RR03",
+              "RR04",
+              "SL01",
+              "TM01"
+            ],
+            "title": "Reason Code",
+            "type": "string"
+          },
+          "offset": {
+            "default": 0,
+            "description": "Zero-based index of the first matching entry to return. Applies only when limit is given; must be non-negative. Defaults to 0.",
+            "title": "Offset",
+            "type": "integer"
+          },
+          "limit": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "Maximum number of matching entries to return, starting at offset. None (the default) returns the full unpaginated list; a non-None value returns a {total, offset, limit, entries} envelope. Must be non-negative.",
+            "title": "Limit"
+          }
+        },
+        "required": [
+          "xml"
+        ],
+        "title": "filter_entriesArguments",
+        "type": "object"
+      },
+      "outputSchema": {
+        "properties": {
+          "result": {
+            "anyOf": [
+              {
+                "items": {
+                  "additionalProperties": true,
+                  "type": "object"
+                },
+                "type": "array"
+              },
+              {
+                "additionalProperties": true,
+                "type": "object"
+              }
+            ],
+            "title": "Result"
+          }
+        },
+        "required": [
+          "result"
+        ],
+        "title": "filter_entriesOutput",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "generate_reversal",
+      "title": "Generate reversal document",
+      "description": "Generate a validated camt.053.001.14 reversal document from a statement.\n\nThis is the headline one-shot workflow: pass an incoming statement and a\nreturn-reason code and get back the reversal XML (nothing is written to\ndisk). Preview which entries will be reversed first with ``filter_entries``\nusing the same ``reason_code``.\n\nThis is the headline one-shot workflow: parse the incoming camt.053, pick\nthe entries with the requested return reason (e.g. AC04 Closed Account),\nand emit a validated camt.053.001.14 reversal statement.\n\nReturns the validated XML document as a string, or an ``{\"error\": ...}``\npayload (serialized) if generation fails.\n\nArgs:\n    xml: The raw incoming statement XML as a string.\n    reason_code: The ISO external return reason to reverse (default\n        ``\"AC04\"``).\n",
+      "inputSchema": {
+        "properties": {
+          "xml": {
+            "description": "The raw incoming camt.053 statement XML document as a string; the entries carrying reason_code are reversed into a new camt.053.001.14 document.",
+            "title": "Xml",
+            "type": "string"
+          },
+          "reason_code": {
+            "default": "AC04",
+            "description": "An ISO external return reason code, e.g. 'AC04' Closed Account. Must be exactly one of: 'AC01', 'AC02', 'AC03', 'AC04', 'AC06', 'AC13', 'AC14', 'AG01', 'AG02', 'AM01', 'AM02', 'AM03', 'AM04', 'AM05', 'AM06', 'AM07', 'AM08', 'AM09', 'BE01', 'BE05', 'CNOR', 'DNOR', 'DT01', 'ED01', 'ED05', 'FF01', 'MD01', 'MD06', 'MD07', 'MS02', 'MS03', 'NARR', 'NOAS', 'NOOR', 'RC01', 'RR01', 'RR02', 'RR03', 'RR04', 'SL01', 'TM01' (see list_return_reasons).",
+            "enum": [
+              "AC01",
+              "AC02",
+              "AC03",
+              "AC04",
+              "AC06",
+              "AC13",
+              "AC14",
+              "AG01",
+              "AG02",
+              "AM01",
+              "AM02",
+              "AM03",
+              "AM04",
+              "AM05",
+              "AM06",
+              "AM07",
+              "AM08",
+              "AM09",
+              "BE01",
+              "BE05",
+              "CNOR",
+              "DNOR",
+              "DT01",
+              "ED01",
+              "ED05",
+              "FF01",
+              "MD01",
+              "MD06",
+              "MD07",
+              "MS02",
+              "MS03",
+              "NARR",
+              "NOAS",
+              "NOOR",
+              "RC01",
+              "RR01",
+              "RR02",
+              "RR03",
+              "RR04",
+              "SL01",
+              "TM01"
+            ],
+            "title": "Reason Code",
+            "type": "string"
+          }
+        },
+        "required": [
+          "xml"
+        ],
+        "title": "generate_reversalArguments",
+        "type": "object"
+      },
+      "outputSchema": {
+        "properties": {
+          "result": {
+            "title": "Result",
+            "type": "string"
+          }
+        },
+        "required": [
+          "result"
+        ],
+        "title": "generate_reversalOutput",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    }
+  ]
+}

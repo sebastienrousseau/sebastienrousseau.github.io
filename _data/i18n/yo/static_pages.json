@@ -1,4 +1,22 @@
 {
+  "suite": {
+    "title": "Àkójọ sọ́fítíwé AI ilé-iṣẹ́ fún ilé-ìfowópamọ́ àti sísan owó — Sebastien Rousseau",
+    "subtitle": "Àkójọ sọ́fítíwé AI ilé-iṣẹ́ fún ilé-ìfowópamọ́ àti sísan owó láti ọwọ́ Sebastien Rousseau.",
+    "description": "Àkójọ sọ́fítíwé AI ilé-iṣẹ́ fún ilé-ìfowópamọ́ àti sísan owó láti ọwọ́ Sebastien Rousseau. Ṣàwárí ISO 20022 MCP Suite: àwọn irinṣẹ́ tí a ti fọwọ́ sí fún àwọn aṣojú AI lórí ètò tirẹ.",
+    "keywords": "sọ́fítíwé banki AI, àkójọ sọ́fítíwé ìsanwó, ISO 20022 MCP, olupin MCP, aṣojú AI banki"
+  },
+  "research": {
+    "title": "Ìwádìí ISO 20022, àwọn ìwé funfun àti ìtúpalẹ̀ ìmọ̀-ẹ̀rọ — Sebastien Rousseau",
+    "subtitle": "Ìwádìí ISO 20022, àwọn ìwé funfun àti ìtúpalẹ̀ ìmọ̀-ẹ̀rọ lórí AI nínú banki, ètò ìsanwó àti cryptography lẹ́yìn kuatomu, láti ọwọ́ Sebastien Rousseau.",
+    "description": "Ìwádìí ISO 20022, àwọn ìwé funfun àti ìtúpalẹ̀ ìmọ̀-ẹ̀rọ lórí AI nínú banki, ètò ìsanwó àti cryptography lẹ́yìn kuatomu, láti ọwọ́ Sebastien Rousseau.",
+    "keywords": "ìwádìí ISO 20022, ìwé funfun, ìtúpalẹ̀ ìmọ̀-ẹ̀rọ, ìwádìí AI banki, cryptography lẹ́yìn kuatomu"
+  },
+  "library": {
+    "title": "Ilé ìkàwé olùdàgbàsókè: àwọn kókó báńkì, orísun ṣíṣí àti àkójọpọ̀ — Sebastien Rousseau",
+    "subtitle": "Ilé ìkàwé olùdàgbàsókè ti Sebastien Rousseau: àwọn kókó báńkì tí a yàn, àwọn iṣẹ́ orísun ṣíṣí àti àwọn àkójọpọ̀ fídíò lórí AI báńkì, ìsanwó ISO 20022 àti ààbò post-quantum.",
+    "description": "Ilé ìkàwé olùdàgbàsókè ti Sebastien Rousseau: àwọn kókó báńkì tí a yàn, àwọn iṣẹ́ orísun ṣíṣí àti àwọn àkójọpọ̀ fídíò lórí AI báńkì, ìsanwó ISO 20022 àti ààbò post-quantum.",
+    "keywords": "ilé ìkàwé olùdàgbàsókè, àwọn kókó báńkì, àkójọpọ̀, orísun ṣíṣí, ISO 20022"
+  },
   "_comment": "Yorùbá (yo) static-page metadata — DRAFT pending native review.",
   "404": {
     "title": "404 — Sebastien Rousseau",
@@ -33,13 +51,6 @@
     "subtitle": "Have a question or need advice? Get in touch.",
     "description": "Contact Sebastien Rousseau for consulting on payments transformation, ISO 20022 migration or post-quantum strategy.",
     "keywords": "contact, consulting, payments, ISO 20022, post-quantum cryptography",
-    "_draft": true
-  },
-  "made-with-static-site-generator": {
-    "title": "Made with Static Site Generator — Sebastien Rousseau",
-    "subtitle": "Discover the next-generation static site generator.",
-    "description": "This site is made with Static Site Generator, a Rust-based static site generator optimised for performance and SEO.",
-    "keywords": "Static Site Generator, SSG, Rust, performance, SEO",
     "_draft": true
   },
   "made-with-static-site-generator": {

@@ -130,12 +130,19 @@ def test_gen_layouts_main_runs(capsys):
 
 
 @SKIP_IF_NO_BUILD
-def test_gen_projects_main_runs(capsys):
+def test_gen_projects_main_runs(capsys, monkeypatch, tmp_path):
+    # Run against an isolated copy with the now-required --dir (ADR-0003):
+    # a bare run used to rewrite committed _posts/projects.md in place,
+    # reverting it to the constants baked into the script.
+    work = _copy_root_posts(tmp_path)
+    before = _posts_fingerprint()
+    monkeypatch.setattr("sys.argv", ["gen_projects", "--dir", str(work)])
     import gen_projects
 
     gen_projects.main()
     out = capsys.readouterr().out
     assert "wrote" in out.lower() or "projects" in out.lower()
+    assert _posts_fingerprint() == before, "gen_projects mutated committed _posts/"
 
 
 @SKIP_IF_NO_BUILD

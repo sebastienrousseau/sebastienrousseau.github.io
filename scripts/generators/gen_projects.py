@@ -15,7 +15,6 @@ _sys.path.insert(0, str(_Path(__file__).resolve().parents[1] / "lib"))
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
-SRC = ROOT / "_posts" / "projects.md"
 
 
 # (eyebrow, title, image, image_alt, summary, href)
@@ -619,7 +618,23 @@ def section_block_anchored(cat: dict) -> str:
 
 
 def main() -> None:
-    text = SRC.read_text()
+    import argparse
+
+    parser = argparse.ArgumentParser(description="Rewrite the projects.md listing body.")
+    # `--dir` is REQUIRED, with no default — see ADR-0003. This generator
+    # rewrites projects.md in place; defaulting to `_posts` meant a bare run
+    # silently reverted committed source to the constants baked in above.
+    # An intentional source regeneration must pass `--dir _posts` explicitly.
+    parser.add_argument(
+        "--dir",
+        required=True,
+        help="Directory containing projects.md (e.g. _posts). Required: this "
+        "rewrites the file in place, so the target must be explicit (ADR-0003).",
+    )
+    args = parser.parse_args()
+
+    src = Path(args.dir) / "projects.md"
+    text = src.read_text()
     lines = text.splitlines(keepends=True)
     delim_idx = [i for i, ln in enumerate(lines) if ln.strip() == "---"]
     if len(delim_idx) < 2:
@@ -639,10 +654,10 @@ def main() -> None:
     body_parts.append(bottom_cta_block())
     body = "\n\n".join(body_parts) + "\n"
 
-    SRC.write_text(head + "\n" + body)
+    src.write_text(head + "\n" + body)
     total_items = sum(len(c["items"]) for c in CATEGORIES)
     print(
-        f"wrote {SRC}. hero + 3 themes + {len(CATEGORIES)} catalogue sections, {total_items} items, FAQ + bottom CTA"
+        f"wrote {src}. hero + 3 themes + {len(CATEGORIES)} catalogue sections, {total_items} items, FAQ + bottom CTA"
     )
 
 

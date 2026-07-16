@@ -154,13 +154,13 @@ Read, validate and summarise bank statements (camt.053, pain.001, MT940, CSV, OF
 Install the whole suite in one line:
 
 ```bash
-pip install "iso20022-mcp[pain,pacs,acmt]"
+pip install "iso20022-mcp[all]"
 ```
 
 Or run the gateway with no install and no account:
 
 ```bash
-uvx --from "iso20022-mcp[pain,pacs,acmt]" iso20022-mcp
+uvx --from "iso20022-mcp[all]" iso20022-mcp
 ```
 
 Ask it to search "cancel a payment" and it points you at camt.056; ask it to generate and you get XSD-valid XML back. Under sixty seconds from nothing to a validated message.

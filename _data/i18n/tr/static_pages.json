@@ -1,4 +1,22 @@
 {
+  "suite": {
+    "title": "Bankacılık ve ödemeler için kurumsal yapay zekâ yazılım paketi — Sebastien Rousseau",
+    "subtitle": "Sebastien Rousseau'nun bankacılık ve ödemeler için kurumsal yapay zekâ yazılım paketi.",
+    "description": "Sebastien Rousseau'nun bankacılık ve ödemeler için kurumsal yapay zekâ yazılım paketi. ISO 20022 MCP Suite'i keşfedin: kendi altyapınızda çalışan, doğrulanmış yapay zekâ ajan araçları.",
+    "keywords": "yapay zekâ bankacılık yazılımı, ödeme yazılım paketi, ISO 20022 MCP, MCP sunucusu, bankacılık yapay zekâ ajanları"
+  },
+  "research": {
+    "title": "ISO 20022 araştırmaları, teknik raporlar ve teknik analizler — Sebastien Rousseau",
+    "subtitle": "Bankacılıkta yapay zekâ, ödeme altyapısı ve kuantum sonrası kriptografi üzerine ISO 20022 araştırmaları, teknik raporlar ve teknik analizler, Sebastien Rousseau imzasıyla.",
+    "description": "Bankacılıkta yapay zekâ, ödeme altyapısı ve kuantum sonrası kriptografi üzerine ISO 20022 araştırmaları, teknik raporlar ve teknik analizler, Sebastien Rousseau imzasıyla.",
+    "keywords": "ISO 20022 araştırma, teknik raporlar, teknik analiz, bankacılık yapay zekâ araştırması, kuantum sonrası kriptografi"
+  },
+  "library": {
+    "title": "Geliştirici kütüphanesi: bankacılık konuları, açık kaynak ve çalma listeleri — Sebastien Rousseau",
+    "subtitle": "Sebastien Rousseau'nun geliştirici kütüphanesi: seçilmiş bankacılık konuları, açık kaynak projeleri ve bankacılık yapay zekası, ISO 20022 ödemeleri ile kuantum sonrası güvenlik üzerine video çalma listeleri.",
+    "description": "Sebastien Rousseau'nun geliştirici kütüphanesi: seçilmiş bankacılık konuları, açık kaynak projeleri ve bankacılık yapay zekası, ISO 20022 ödemeleri ile kuantum sonrası güvenlik üzerine video çalma listeleri.",
+    "keywords": "geliştirici kütüphanesi, bankacılık konuları, çalma listeleri, açık kaynak, ISO 20022"
+  },
   "_comment": "Turkish static-page metadata — DRAFT pending native review. Mirrors EN/FR/DE/AR static_pages.json shape.",
   "404": {
     "title": "Sayfa bulunamadı — Sebastien Rousseau",
@@ -29,12 +47,6 @@
     "subtitle": "Bir sorunuz mu var ya da danışmanlık mı gerekiyor? Bana yazın.",
     "description": "Ödemelerin dönüşümü, ISO 20022 geçişi veya post-kuantum stratejisi konusunda danışmanlık için Sebastien Rousseau ile iletişime geçin.",
     "keywords": "iletişim, danışmanlık, ödemeler, ISO 20022, post-kuantum kriptografi"
-  },
-  "made-with-static-site-generator": {
-    "title": "Static Site Generator ile yapıldı — Sebastien Rousseau",
-    "subtitle": "Yeni nesil statik site jeneratörünü nasıl kullanacağınızı keşfedin.",
-    "description": "Bu site, performans ve SEO için optimize edilmiş bir Rust tabanlı statik site jeneratörü olan Static Site Generator ile yapılmıştır.",
-    "keywords": "Static Site Generator, SSG, Rust, performans, SEO"
   },
   "made-with-static-site-generator": {
     "title": "Static Site Generator ile yapıldı — Sebastien Rousseau",

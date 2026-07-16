@@ -1,0 +1,202 @@
+{
+  "_meta": {
+    "captured": "2026-07-15",
+    "server": {
+      "name": "bankstatementparser",
+      "version": "1.28.1"
+    },
+    "command": "uvx --from \"bankstatementparser-mcp\" bankstatementparser-mcp",
+    "method": "MCP stdio JSON-RPC tools/list (protocol 2024-11-05)"
+  },
+  "tools": [
+    {
+      "name": "list_supported_formats",
+      "description": "List every bank statement format the parser can read.\n\nReturns:\n    The supported format identifiers.\n",
+      "inputSchema": {
+        "properties": {},
+        "title": "list_supported_formatsArguments",
+        "type": "object"
+      },
+      "outputSchema": {
+        "properties": {
+          "result": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Result",
+            "type": "array"
+          }
+        },
+        "required": [
+          "result"
+        ],
+        "title": "list_supported_formatsOutput",
+        "type": "object"
+      }
+    },
+    {
+      "name": "detect_format",
+      "description": "Detect which statement format a payload is.\n\nArgs:\n    content: The raw statement text.\n    filename: Original filename; its extension is the primary hint.\n\nReturns:\n    The detected format identifier.\n\nRaises:\n    ValueError: If the format cannot be detected.\n",
+      "inputSchema": {
+        "properties": {
+          "content": {
+            "title": "Content",
+            "type": "string"
+          },
+          "filename": {
+            "default": "statement.xml",
+            "title": "Filename",
+            "type": "string"
+          }
+        },
+        "required": [
+          "content"
+        ],
+        "title": "detect_formatArguments",
+        "type": "object"
+      },
+      "outputSchema": {
+        "properties": {
+          "result": {
+            "title": "Result",
+            "type": "string"
+          }
+        },
+        "required": [
+          "result"
+        ],
+        "title": "detect_formatOutput",
+        "type": "object"
+      }
+    },
+    {
+      "name": "parse_statement",
+      "description": "Parse a statement into structured transactions and a summary.\n\nArgs:\n    content: The raw statement text.\n    filename: Original filename; its extension selects the format\n        when ``format`` is omitted.\n    format: Explicit format override.\n    limit: Optional cap on returned transaction rows.\n\nReturns:\n    A dict with the resolved ``format``, ``columns``, full\n    ``transaction_count``, the (possibly truncated) ``transactions``\n    as row dicts, and the statement ``summary``.\n\nRaises:\n    ValueError: If the format is unsupported or cannot be detected.\n",
+      "inputSchema": {
+        "properties": {
+          "content": {
+            "title": "Content",
+            "type": "string"
+          },
+          "filename": {
+            "default": "statement.xml",
+            "title": "Filename",
+            "type": "string"
+          },
+          "format": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Format"
+          },
+          "limit": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Limit"
+          }
+        },
+        "required": [
+          "content"
+        ],
+        "title": "parse_statementArguments",
+        "type": "object"
+      },
+      "outputSchema": {
+        "additionalProperties": true,
+        "title": "parse_statementDictOutput",
+        "type": "object"
+      }
+    },
+    {
+      "name": "validate_statement",
+      "description": "Check whether a statement parses cleanly (a dry run).\n\nArgs:\n    content: The raw statement text.\n    filename: Original filename; its extension selects the format.\n    format: Explicit format override.\n\nReturns:\n    A dict with ``is_valid``, the resolved ``format``, the\n    ``transaction_count`` on success, and an ``error`` on failure.\n",
+      "inputSchema": {
+        "properties": {
+          "content": {
+            "title": "Content",
+            "type": "string"
+          },
+          "filename": {
+            "default": "statement.xml",
+            "title": "Filename",
+            "type": "string"
+          },
+          "format": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Format"
+          }
+        },
+        "required": [
+          "content"
+        ],
+        "title": "validate_statementArguments",
+        "type": "object"
+      },
+      "outputSchema": {
+        "additionalProperties": true,
+        "title": "validate_statementDictOutput",
+        "type": "object"
+      }
+    },
+    {
+      "name": "summarize_statement",
+      "description": "Return only the statement summary (no per-transaction rows).\n\nArgs:\n    content: The raw statement text.\n    filename: Original filename; its extension selects the format.\n    format: Explicit format override.\n\nReturns:\n    The summary record with Decimal values stringified.\n\nRaises:\n    ValueError: If the format is unsupported or cannot be detected.\n",
+      "inputSchema": {
+        "properties": {
+          "content": {
+            "title": "Content",
+            "type": "string"
+          },
+          "filename": {
+            "default": "statement.xml",
+            "title": "Filename",
+            "type": "string"
+          },
+          "format": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Format"
+          }
+        },
+        "required": [
+          "content"
+        ],
+        "title": "summarize_statementArguments",
+        "type": "object"
+      },
+      "outputSchema": {
+        "additionalProperties": true,
+        "title": "summarize_statementDictOutput",
+        "type": "object"
+      }
+    }
+  ]
+}

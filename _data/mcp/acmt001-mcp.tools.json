@@ -1,0 +1,375 @@
+{
+  "_meta": {
+    "captured": "2026-07-15",
+    "server": {
+      "name": "acmt001",
+      "version": "0.0.5"
+    },
+    "command": "uvx --from \"acmt001-mcp\" acmt001-mcp",
+    "method": "MCP stdio JSON-RPC tools/list (protocol 2024-11-05)"
+  },
+  "tools": [
+    {
+      "name": "list_message_types",
+      "title": "List acmt message types",
+      "description": "List every supported ISO 20022 acmt message type and its human name.\n\nUse this first, before any generation or validation call, to discover the\nexact ``message_type`` strings this server accepts (e.g.\n``acmt.001.001.08`` Account Opening Instruction). Do not use it to fetch a\ntype's fields or schema -- call ``get_required_fields`` or\n``get_input_schema`` for that.\n\nReturns a list of ``{\"message_type\": ..., \"name\": ...}`` dictionaries, one\nper supported message type (e.g. ``acmt.001.001.08``).\n",
+      "inputSchema": {
+        "properties": {},
+        "title": "list_message_typesArguments",
+        "type": "object"
+      },
+      "outputSchema": {
+        "properties": {
+          "result": {
+            "items": {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            "title": "Result",
+            "type": "array"
+          }
+        },
+        "required": [
+          "result"
+        ],
+        "title": "list_message_typesOutput",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "get_required_fields",
+      "title": "Get required fields",
+      "description": "List only the required input field names for an acmt message type.\n\nUse this for a quick checklist of the mandatory columns before building\naccount records. When you need full type/format constraints (not just\nwhich fields are required), call ``get_input_schema`` instead.\n\nArgs:\n    message_type: A supported ISO 20022 acmt message type.\n",
+      "inputSchema": {
+        "properties": {
+          "message_type": {
+            "description": "A supported ISO 20022 acmt message type, e.g. 'acmt.001.001.08' Account Opening Instruction. Must be exactly one of: 'acmt.001.001.08', 'acmt.002.001.08', 'acmt.003.001.08', 'acmt.005.001.06', 'acmt.006.001.07', 'acmt.007.001.05', 'acmt.008.001.05', 'acmt.009.001.04', 'acmt.010.001.04', 'acmt.011.001.04', 'acmt.012.001.04', 'acmt.013.001.04', 'acmt.014.001.05', 'acmt.015.001.05', 'acmt.016.001.05', 'acmt.017.001.05', 'acmt.018.001.05', 'acmt.019.001.04', 'acmt.020.001.04', 'acmt.021.001.04', 'acmt.022.001.04', 'acmt.023.001.04', 'acmt.024.001.04', 'acmt.027.001.06', 'acmt.028.001.06', 'acmt.029.001.06', 'acmt.030.001.04', 'acmt.031.001.06', 'acmt.032.001.06', 'acmt.033.001.02', 'acmt.034.001.06', 'acmt.035.001.02', 'acmt.036.001.01', 'acmt.037.001.02' (see list_message_types).",
+            "enum": [
+              "acmt.001.001.08",
+              "acmt.002.001.08",
+              "acmt.003.001.08",
+              "acmt.005.001.06",
+              "acmt.006.001.07",
+              "acmt.007.001.05",
+              "acmt.008.001.05",
+              "acmt.009.001.04",
+              "acmt.010.001.04",
+              "acmt.011.001.04",
+              "acmt.012.001.04",
+              "acmt.013.001.04",
+              "acmt.014.001.05",
+              "acmt.015.001.05",
+              "acmt.016.001.05",
+              "acmt.017.001.05",
+              "acmt.018.001.05",
+              "acmt.019.001.04",
+              "acmt.020.001.04",
+              "acmt.021.001.04",
+              "acmt.022.001.04",
+              "acmt.023.001.04",
+              "acmt.024.001.04",
+              "acmt.027.001.06",
+              "acmt.028.001.06",
+              "acmt.029.001.06",
+              "acmt.030.001.04",
+              "acmt.031.001.06",
+              "acmt.032.001.06",
+              "acmt.033.001.02",
+              "acmt.034.001.06",
+              "acmt.035.001.02",
+              "acmt.036.001.01",
+              "acmt.037.001.02"
+            ],
+            "title": "Message Type",
+            "type": "string"
+          }
+        },
+        "required": [
+          "message_type"
+        ],
+        "title": "get_required_fieldsArguments",
+        "type": "object"
+      },
+      "outputSchema": {
+        "properties": {
+          "result": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Result",
+            "type": "array"
+          }
+        },
+        "required": [
+          "result"
+        ],
+        "title": "get_required_fieldsOutput",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "get_input_schema",
+      "title": "Get input JSON Schema",
+      "description": "Return the full JSON Schema for a message type's flat input record.\n\nUse this to learn every field, its type, and its constraints before\nassembling records, or to drive a form/UI. For just the required-field\nnames use ``get_required_fields``; to actually check records against this\nschema use ``validate_records``.\n\nArgs:\n    message_type: A supported ISO 20022 acmt message type.\n",
+      "inputSchema": {
+        "properties": {
+          "message_type": {
+            "description": "A supported ISO 20022 acmt message type, e.g. 'acmt.001.001.08' Account Opening Instruction. Must be exactly one of: 'acmt.001.001.08', 'acmt.002.001.08', 'acmt.003.001.08', 'acmt.005.001.06', 'acmt.006.001.07', 'acmt.007.001.05', 'acmt.008.001.05', 'acmt.009.001.04', 'acmt.010.001.04', 'acmt.011.001.04', 'acmt.012.001.04', 'acmt.013.001.04', 'acmt.014.001.05', 'acmt.015.001.05', 'acmt.016.001.05', 'acmt.017.001.05', 'acmt.018.001.05', 'acmt.019.001.04', 'acmt.020.001.04', 'acmt.021.001.04', 'acmt.022.001.04', 'acmt.023.001.04', 'acmt.024.001.04', 'acmt.027.001.06', 'acmt.028.001.06', 'acmt.029.001.06', 'acmt.030.001.04', 'acmt.031.001.06', 'acmt.032.001.06', 'acmt.033.001.02', 'acmt.034.001.06', 'acmt.035.001.02', 'acmt.036.001.01', 'acmt.037.001.02' (see list_message_types).",
+            "enum": [
+              "acmt.001.001.08",
+              "acmt.002.001.08",
+              "acmt.003.001.08",
+              "acmt.005.001.06",
+              "acmt.006.001.07",
+              "acmt.007.001.05",
+              "acmt.008.001.05",
+              "acmt.009.001.04",
+              "acmt.010.001.04",
+              "acmt.011.001.04",
+              "acmt.012.001.04",
+              "acmt.013.001.04",
+              "acmt.014.001.05",
+              "acmt.015.001.05",
+              "acmt.016.001.05",
+              "acmt.017.001.05",
+              "acmt.018.001.05",
+              "acmt.019.001.04",
+              "acmt.020.001.04",
+              "acmt.021.001.04",
+              "acmt.022.001.04",
+              "acmt.023.001.04",
+              "acmt.024.001.04",
+              "acmt.027.001.06",
+              "acmt.028.001.06",
+              "acmt.029.001.06",
+              "acmt.030.001.04",
+              "acmt.031.001.06",
+              "acmt.032.001.06",
+              "acmt.033.001.02",
+              "acmt.034.001.06",
+              "acmt.035.001.02",
+              "acmt.036.001.01",
+              "acmt.037.001.02"
+            ],
+            "title": "Message Type",
+            "type": "string"
+          }
+        },
+        "required": [
+          "message_type"
+        ],
+        "title": "get_input_schemaArguments",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "validate_records",
+      "title": "Validate records against schema",
+      "description": "Validate flat account records against a message type's input JSON Schema.\n\nUse this before ``generate_message`` to catch structural/type errors per\nrecord and get a row-by-row error report. This checks JSON-Schema shape\nonly; to validate a single financial identifier in isolation use\n``validate_identifier``.\n\nReturns a report ``{\"valid\": bool, \"total\": int, \"valid_count\": int,\n\"errors\": [...]}``.\n\nArgs:\n    message_type: A supported ISO 20022 acmt message type.\n    records: One or more flat account records to validate.\n",
+      "inputSchema": {
+        "properties": {
+          "message_type": {
+            "description": "A supported ISO 20022 acmt message type, e.g. 'acmt.001.001.08' Account Opening Instruction. Must be exactly one of: 'acmt.001.001.08', 'acmt.002.001.08', 'acmt.003.001.08', 'acmt.005.001.06', 'acmt.006.001.07', 'acmt.007.001.05', 'acmt.008.001.05', 'acmt.009.001.04', 'acmt.010.001.04', 'acmt.011.001.04', 'acmt.012.001.04', 'acmt.013.001.04', 'acmt.014.001.05', 'acmt.015.001.05', 'acmt.016.001.05', 'acmt.017.001.05', 'acmt.018.001.05', 'acmt.019.001.04', 'acmt.020.001.04', 'acmt.021.001.04', 'acmt.022.001.04', 'acmt.023.001.04', 'acmt.024.001.04', 'acmt.027.001.06', 'acmt.028.001.06', 'acmt.029.001.06', 'acmt.030.001.04', 'acmt.031.001.06', 'acmt.032.001.06', 'acmt.033.001.02', 'acmt.034.001.06', 'acmt.035.001.02', 'acmt.036.001.01', 'acmt.037.001.02' (see list_message_types).",
+            "enum": [
+              "acmt.001.001.08",
+              "acmt.002.001.08",
+              "acmt.003.001.08",
+              "acmt.005.001.06",
+              "acmt.006.001.07",
+              "acmt.007.001.05",
+              "acmt.008.001.05",
+              "acmt.009.001.04",
+              "acmt.010.001.04",
+              "acmt.011.001.04",
+              "acmt.012.001.04",
+              "acmt.013.001.04",
+              "acmt.014.001.05",
+              "acmt.015.001.05",
+              "acmt.016.001.05",
+              "acmt.017.001.05",
+              "acmt.018.001.05",
+              "acmt.019.001.04",
+              "acmt.020.001.04",
+              "acmt.021.001.04",
+              "acmt.022.001.04",
+              "acmt.023.001.04",
+              "acmt.024.001.04",
+              "acmt.027.001.06",
+              "acmt.028.001.06",
+              "acmt.029.001.06",
+              "acmt.030.001.04",
+              "acmt.031.001.06",
+              "acmt.032.001.06",
+              "acmt.033.001.02",
+              "acmt.034.001.06",
+              "acmt.035.001.02",
+              "acmt.036.001.01",
+              "acmt.037.001.02"
+            ],
+            "title": "Message Type",
+            "type": "string"
+          },
+          "records": {
+            "description": "One or more flat account records, each a dict of field name -> value; validated against the message type's input JSON Schema (see get_input_schema / get_required_fields).",
+            "items": {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            "title": "Records",
+            "type": "array"
+          }
+        },
+        "required": [
+          "message_type",
+          "records"
+        ],
+        "title": "validate_recordsArguments",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "validate_identifier",
+      "title": "Validate IBAN, BIC or LEI",
+      "description": "Validate a single financial identifier (IBAN, BIC, or LEI).\n\nUse this for a one-off identifier check with a clear pass/fail. To\nvalidate identifiers embedded across a whole batch of account records,\nprefer ``validate_records`` rather than calling this per field.\n\nReturns ``{\"kind\": str, \"value\": str, \"valid\": bool}``.\n\nArgs:\n    kind: One of ``\"iban\"``, ``\"bic\"``, or ``\"lei\"`` (case-insensitive).\n    value: The identifier value to check.\n",
+      "inputSchema": {
+        "properties": {
+          "kind": {
+            "description": "The financial identifier scheme to validate against (case-insensitive). Must be exactly one of: 'bic', 'iban', 'lei'.",
+            "enum": [
+              "bic",
+              "iban",
+              "lei"
+            ],
+            "title": "Kind",
+            "type": "string"
+          },
+          "value": {
+            "description": "The identifier value to check, e.g. an IBAN, BIC/SWIFT code, or LEI; validated according to the given kind.",
+            "title": "Value",
+            "type": "string"
+          }
+        },
+        "required": [
+          "kind",
+          "value"
+        ],
+        "title": "validate_identifierArguments",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "generate_message",
+      "title": "Generate acmt XML from records",
+      "description": "Generate a validated ISO 20022 acmt XML message from in-memory records.\n\nThis is the primary generation tool: pass account records you already\nhold in memory and receive an XSD-validated XML document; no file is\nwritten. Run ``validate_records`` first to surface record-level errors,\nand ``list_message_types`` to confirm the ``message_type`` string.\n\nReturns the validated XML document as a string, or an ``{\"error\": ...}``\npayload (serialized) if generation fails.\n\nArgs:\n    message_type: A supported ISO 20022 acmt message type.\n    records: One or more flat account records.\n",
+      "inputSchema": {
+        "properties": {
+          "message_type": {
+            "description": "A supported ISO 20022 acmt message type, e.g. 'acmt.001.001.08' Account Opening Instruction. Must be exactly one of: 'acmt.001.001.08', 'acmt.002.001.08', 'acmt.003.001.08', 'acmt.005.001.06', 'acmt.006.001.07', 'acmt.007.001.05', 'acmt.008.001.05', 'acmt.009.001.04', 'acmt.010.001.04', 'acmt.011.001.04', 'acmt.012.001.04', 'acmt.013.001.04', 'acmt.014.001.05', 'acmt.015.001.05', 'acmt.016.001.05', 'acmt.017.001.05', 'acmt.018.001.05', 'acmt.019.001.04', 'acmt.020.001.04', 'acmt.021.001.04', 'acmt.022.001.04', 'acmt.023.001.04', 'acmt.024.001.04', 'acmt.027.001.06', 'acmt.028.001.06', 'acmt.029.001.06', 'acmt.030.001.04', 'acmt.031.001.06', 'acmt.032.001.06', 'acmt.033.001.02', 'acmt.034.001.06', 'acmt.035.001.02', 'acmt.036.001.01', 'acmt.037.001.02' (see list_message_types).",
+            "enum": [
+              "acmt.001.001.08",
+              "acmt.002.001.08",
+              "acmt.003.001.08",
+              "acmt.005.001.06",
+              "acmt.006.001.07",
+              "acmt.007.001.05",
+              "acmt.008.001.05",
+              "acmt.009.001.04",
+              "acmt.010.001.04",
+              "acmt.011.001.04",
+              "acmt.012.001.04",
+              "acmt.013.001.04",
+              "acmt.014.001.05",
+              "acmt.015.001.05",
+              "acmt.016.001.05",
+              "acmt.017.001.05",
+              "acmt.018.001.05",
+              "acmt.019.001.04",
+              "acmt.020.001.04",
+              "acmt.021.001.04",
+              "acmt.022.001.04",
+              "acmt.023.001.04",
+              "acmt.024.001.04",
+              "acmt.027.001.06",
+              "acmt.028.001.06",
+              "acmt.029.001.06",
+              "acmt.030.001.04",
+              "acmt.031.001.06",
+              "acmt.032.001.06",
+              "acmt.033.001.02",
+              "acmt.034.001.06",
+              "acmt.035.001.02",
+              "acmt.036.001.01",
+              "acmt.037.001.02"
+            ],
+            "title": "Message Type",
+            "type": "string"
+          },
+          "records": {
+            "description": "One or more flat account records, each a dict of field name -> value, from which the acmt XML is generated; run validate_records first to surface record-level errors.",
+            "items": {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            "title": "Records",
+            "type": "array"
+          }
+        },
+        "required": [
+          "message_type",
+          "records"
+        ],
+        "title": "generate_messageArguments",
+        "type": "object"
+      },
+      "outputSchema": {
+        "properties": {
+          "result": {
+            "title": "Result",
+            "type": "string"
+          }
+        },
+        "required": [
+          "result"
+        ],
+        "title": "generate_messageOutput",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    }
+  ]
+}

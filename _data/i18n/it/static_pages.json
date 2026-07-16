@@ -1,4 +1,22 @@
 {
+  "suite": {
+    "title": "Suite software di IA aziendale per banche e pagamenti — Sebastien Rousseau",
+    "subtitle": "La suite software di IA aziendale per banche e pagamenti di Sebastien Rousseau.",
+    "description": "La suite software di IA aziendale per banche e pagamenti di Sebastien Rousseau. Scopri la ISO 20022 MCP Suite: strumenti validati per agenti IA sulla tua infrastruttura.",
+    "keywords": "software bancario IA, suite software pagamenti, ISO 20022 MCP, server MCP, agenti IA banking"
+  },
+  "research": {
+    "title": "Ricerca ISO 20022, white paper e analisi tecniche — Sebastien Rousseau",
+    "subtitle": "Ricerca ISO 20022, white paper e analisi tecniche su IA nel banking, infrastrutture di pagamento e crittografia post-quantistica, di Sebastien Rousseau.",
+    "description": "Ricerca ISO 20022, white paper e analisi tecniche su IA nel banking, infrastrutture di pagamento e crittografia post-quantistica, di Sebastien Rousseau.",
+    "keywords": "ricerca ISO 20022, white paper, analisi tecniche, ricerca IA bancaria, crittografia post-quantistica"
+  },
+  "library": {
+    "title": "Biblioteca dello sviluppatore: temi bancari, open source e playlist — Sebastien Rousseau",
+    "subtitle": "La biblioteca dello sviluppatore di Sebastien Rousseau: temi bancari selezionati, progetti open source e playlist video su AI bancaria, pagamenti ISO 20022 e sicurezza post-quantistica.",
+    "description": "La biblioteca dello sviluppatore di Sebastien Rousseau: temi bancari selezionati, progetti open source e playlist video su AI bancaria, pagamenti ISO 20022 e sicurezza post-quantistica.",
+    "keywords": "biblioteca dello sviluppatore, temi bancari, playlist, progetti open source, ISO 20022"
+  },
   "_comment": "Italian static-page metadata — DRAFT pending native review. Mirrors EN/FR/DE/AR static_pages.json shape.",
   "404": {
     "title": "Pagina non trovata — Sebastien Rousseau",
@@ -29,12 +47,6 @@
     "subtitle": "Hai una domanda o ti serve un consiglio? Scrivimi.",
     "description": "Contatta Sebastien Rousseau per consulenza sulla trasformazione dei pagamenti, migrazione a ISO 20022 o strategia post-quantistica.",
     "keywords": "contatti, consulenza, pagamenti, ISO 20022, crittografia post-quantistica"
-  },
-  "made-with-static-site-generator": {
-    "title": "Fatto con Static Site Generator — Sebastien Rousseau",
-    "subtitle": "Scopri come utilizzare il generatore di siti statici di nuova generazione.",
-    "description": "Questo sito è realizzato con Static Site Generator, un generatore di siti statici in Rust ottimizzato per prestazioni e SEO.",
-    "keywords": "Static Site Generator, SSG, Rust, prestazioni, SEO"
   },
   "made-with-static-site-generator": {
     "title": "Fatto con Static Site Generator — Sebastien Rousseau",

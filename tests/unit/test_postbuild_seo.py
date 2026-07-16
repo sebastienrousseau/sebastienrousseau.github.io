@@ -6,6 +6,8 @@ Split out of test_postbuild.py; tests are verbatim copies.
 
 from __future__ import annotations
 
+from typing import ClassVar
+
 import postbuild as pb
 from postbuild_lib import hreflang as hf
 
@@ -322,6 +324,38 @@ def test_inject_hreflang_strips_existing_alternates_first():
     out = inject_hreflang(html, "about", "en", {"fr": {"a-propos"}})
     assert "https://old.example/" not in out
     assert "/fr/a-propos/" in out
+
+
+def test_hreflang_pass_skips_non_top_level_leaf_collisions(tmp_path, monkeypatch):
+    """The "research" TAG landing (/tags/research/) must never inherit the
+    /research/ STATIC hub's alternate cluster (5-item nav re-architecture).
+    _apply_hreflang_pass only slug-pairs top-level pages; deeper surfaces
+    keep whatever hreflang chain their generator emitted."""
+    import postbuild as pb
+
+    monkeypatch.chdir(tmp_path)
+    page = tmp_path / "public" / "tags" / "research" / "index.html"
+    page.parent.mkdir(parents=True)
+    original = (
+        "<head>"
+        '<link rel="alternate" hreflang="en" '
+        'href="https://sebastienrousseau.com/tags/research/" />'
+        "</head>"
+    )
+    page.write_text(original)
+
+    class _Ctx:
+        translated_per_lang: ClassVar[dict[str, set[str]]] = {"fr": {"recherche"}}
+
+    out = pb._apply_hreflang_pass(original, page, _Ctx())
+    assert out == original  # untouched: tag chain preserved, no static cluster
+    # ... while the real top-level static page still gets paired.
+    static = tmp_path / "public" / "research" / "index.html"
+    static.parent.mkdir(parents=True)
+    static_html = "<head></head>"
+    static.write_text(static_html)
+    out2 = pb._apply_hreflang_pass(static_html, static, _Ctx())
+    assert "/fr/recherche/" in out2
 
 
 # ---------------------------------------------------------------------------
@@ -1366,6 +1400,15 @@ def test_splice_fr_urls_no_op_when_all_candidates_already_present(tmp_path, monk
         "made-with-static-site-generator",
         "made-with-static-site-generator",
         "resources-pacs008-checklist",
+        # 5-item nav re-architecture statics
+        "suite",
+        "research",
+        "library",
+        "speaking",
+        "case-studies",
+        "404",
+        "offline",
+        "thanks",
     )
     locs = ["<url><loc>https://sebastienrousseau.com/</loc></url>"]
     locs.extend(f"<url><loc>https://sebastienrousseau.com/{s}/</loc></url>" for s in statics)

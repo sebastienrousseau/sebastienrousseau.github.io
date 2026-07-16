@@ -254,6 +254,9 @@ from postbuild_lib.output import (  # noqa: F401 — re-exports
     write_robots,
     write_security_txt,
 )
+
+# Legacy-URL redirect conversion (/papers -> /research + locale forks)
+from postbuild_lib.redirects import apply_redirect_pages
 from postbuild_lib.schemas import (
     inject_news_article,
     inject_software_source_code,
@@ -563,6 +566,23 @@ def _apply_hreflang_pass(html: str, page: Path, ctx: _PostbuildContext) -> str:
     page_lang = (
         page.parent.parent.name if page.parent.parent.name in ctx.translated_per_lang else "en"
     )
+    # Slug-keyed pairing applies ONLY to top-level pages: EN
+    # ``/<slug>/index.html`` or locale ``/<lang>/<slug>/index.html``.
+    # Deeper surfaces (tag landings ``/tags/<tag>/`` and their locale
+    # forks, paged listings, case-study details) manage their own
+    # hreflang chains — and their LEAF directory name can collide with a
+    # top-level slug. Concretely: the "research" TAG page
+    # ``/tags/research/`` must never inherit the ``/research/`` static
+    # hub's alternate cluster (5-item nav re-architecture); before that
+    # slug existed the leaf simply resolved to None, so this guard
+    # restores the historical no-op for every non-top-level page.
+    try:
+        rel_parts = page.relative_to(PUBLIC).parts
+    except ValueError:  # absolute page path (tests) vs relative PUBLIC
+        rel_parts = page.resolve().relative_to(PUBLIC.resolve()).parts
+    expected_depth = 2 if page_lang == "en" else 3
+    if len(rel_parts) != expected_depth:
+        return html
     return inject_hreflang(html, rel_slug, page_lang, ctx.translated_per_lang)
 
 
@@ -709,6 +729,17 @@ def main() -> None:
         feeds_deduped,
         news_shrunk,
     ) = _finalize_build()
+
+    # Legacy-URL redirect conversion (/papers -> /research, EN + locale
+    # forks). Must run after _finalize_build: the sitemap augment pass
+    # would re-add the purged entries, and the per-page loop's
+    # normalize_canonical would undo the target canonical. See
+    # postbuild_lib/redirects.py for the full policy.
+    redirect_pages, redirect_purged = apply_redirect_pages(PUBLIC)
+    print(
+        f"postbuild: redirects — {redirect_pages} legacy page(s) converted, "
+        f"{redirect_purged} sitemap entrie(s) purged"
+    )
 
     c = ctx.counters
     js_saved = _ASSET_STATS[1] - _ASSET_STATS[2]

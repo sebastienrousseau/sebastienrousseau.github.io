@@ -1,4 +1,22 @@
 {
+  "suite": {
+    "title": "ব্যাংকিং ও পেমেন্টের জন্য এন্টারপ্রাইজ AI সফটওয়্যার স্যুট — Sebastien Rousseau",
+    "subtitle": "সেবাস্টিয়ান রুসোর ব্যাংকিং ও পেমেন্টের জন্য এন্টারপ্রাইজ AI সফটওয়্যার স্যুট।",
+    "description": "সেবাস্টিয়ান রুসোর ব্যাংকিং ও পেমেন্টের জন্য এন্টারপ্রাইজ AI সফটওয়্যার স্যুট। ISO 20022 MCP Suite দেখুন: আপনার নিজস্ব অবকাঠামোয় AI এজেন্টদের জন্য যাচাইকৃত টুল।",
+    "keywords": "AI ব্যাংকিং সফটওয়্যার, পেমেন্ট সফটওয়্যার স্যুট, ISO 20022 MCP, MCP সার্ভার, ব্যাংকিং AI এজেন্ট"
+  },
+  "research": {
+    "title": "ISO 20022 গবেষণা, হোয়াইট পেপার ও প্রযুক্তিগত বিশ্লেষণ — Sebastien Rousseau",
+    "subtitle": "ব্যাংকিংয়ে AI, পেমেন্ট অবকাঠামো ও পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি নিয়ে ISO 20022 গবেষণা, হোয়াইট পেপার ও প্রযুক্তিগত বিশ্লেষণ, সেবাস্টিয়ান রুসো রচিত।",
+    "description": "ব্যাংকিংয়ে AI, পেমেন্ট অবকাঠামো ও পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি নিয়ে ISO 20022 গবেষণা, হোয়াইট পেপার ও প্রযুক্তিগত বিশ্লেষণ, সেবাস্টিয়ান রুসো রচিত।",
+    "keywords": "ISO 20022 গবেষণা, হোয়াইট পেপার, প্রযুক্তিগত বিশ্লেষণ, AI ব্যাংকিং গবেষণা, পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি"
+  },
+  "library": {
+    "title": "ডেভেলপার লাইব্রেরি: ব্যাংকিং বিষয়, ওপেন সোর্স প্রকল্প ও প্লেলিস্ট — Sebastien Rousseau",
+    "subtitle": "সেবাস্তিয়ান রুসোর ডেভেলপার লাইব্রেরি: বাছাই করা ব্যাংকিং বিষয়, ওপেন সোর্স প্রকল্প এবং ব্যাংকিং AI, ISO 20022 পেমেন্ট ও পোস্ট-কোয়ান্টাম নিরাপত্তা নিয়ে ভিডিও প্লেলিস্ট।",
+    "description": "সেবাস্তিয়ান রুসোর ডেভেলপার লাইব্রেরি: বাছাই করা ব্যাংকিং বিষয়, ওপেন সোর্স প্রকল্প এবং ব্যাংকিং AI, ISO 20022 পেমেন্ট ও পোস্ট-কোয়ান্টাম নিরাপত্তা নিয়ে ভিডিও প্লেলিস্ট।",
+    "keywords": "ডেভেলপার লাইব্রেরি, ব্যাংকিং বিষয়, প্লেলিস্ট, ওপেন সোর্স প্রকল্প, ISO 20022"
+  },
   "_comment": "বাংলা (bn) static-page metadata — DRAFT pending native review.",
   "404": {
     "title": "404 — Sebastien Rousseau",
@@ -33,13 +51,6 @@
     "subtitle": "Have a question or need advice? Get in touch.",
     "description": "Contact Sebastien Rousseau for consulting on payments transformation, ISO 20022 migration or post-quantum strategy.",
     "keywords": "contact, consulting, payments, ISO 20022, post-quantum cryptography",
-    "_draft": true
-  },
-  "made-with-static-site-generator": {
-    "title": "Made with Static Site Generator — Sebastien Rousseau",
-    "subtitle": "Discover the next-generation static site generator.",
-    "description": "This site is made with Static Site Generator, a Rust-based static site generator optimised for performance and SEO.",
-    "keywords": "Static Site Generator, SSG, Rust, performance, SEO",
     "_draft": true
   },
   "made-with-static-site-generator": {

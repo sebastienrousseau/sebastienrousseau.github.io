@@ -1,4 +1,22 @@
 {
+  "suite": {
+    "title": "Suite perangkat lunak AI perusahaan untuk perbankan dan pembayaran — Sebastien Rousseau",
+    "subtitle": "Suite perangkat lunak AI perusahaan untuk perbankan dan pembayaran dari Sebastien Rousseau.",
+    "description": "Suite perangkat lunak AI perusahaan untuk perbankan dan pembayaran dari Sebastien Rousseau. Jelajahi ISO 20022 MCP Suite: alat tervalidasi untuk agen AI di infrastruktur Anda sendiri.",
+    "keywords": "perangkat lunak perbankan AI, suite perangkat lunak pembayaran, ISO 20022 MCP, server MCP, agen AI perbankan"
+  },
+  "research": {
+    "title": "Riset ISO 20022, whitepaper, dan analisis teknis — Sebastien Rousseau",
+    "subtitle": "Riset ISO 20022, whitepaper, dan analisis teknis tentang AI di perbankan, infrastruktur pembayaran, dan kriptografi pasca-kuantum, oleh Sebastien Rousseau.",
+    "description": "Riset ISO 20022, whitepaper, dan analisis teknis tentang AI di perbankan, infrastruktur pembayaran, dan kriptografi pasca-kuantum, oleh Sebastien Rousseau.",
+    "keywords": "riset ISO 20022, whitepaper, analisis teknis, riset AI perbankan, kriptografi pasca-kuantum"
+  },
+  "library": {
+    "title": "Perpustakaan developer: topik perbankan, open source, dan playlist — Sebastien Rousseau",
+    "subtitle": "Perpustakaan developer Sebastien Rousseau: topik perbankan pilihan, proyek open source, dan playlist video tentang AI perbankan, pembayaran ISO 20022, dan keamanan pasca-kuantum.",
+    "description": "Perpustakaan developer Sebastien Rousseau: topik perbankan pilihan, proyek open source, dan playlist video tentang AI perbankan, pembayaran ISO 20022, dan keamanan pasca-kuantum.",
+    "keywords": "perpustakaan developer, topik perbankan, playlist, open source, ISO 20022"
+  },
   "_comment": "Indonesian static_pages.json — DRAFT pending native-speaker review. Derived from FR template with translation substitution; URL slugs adjusted (/fr/ -> /id/ + ID slug map).",
   "about": {
     "title": "Tentang — Sebastien Rousseau",
@@ -53,12 +71,6 @@
     "subtitle": "Syarat générales d'utilisation du site.",
     "description": "Syarat générales d'utilisation du site sebastienrousseau.com : licence du contenu, restrictions, marques et juridiction.",
     "keywords": "conditions, mentions légales, licence, copyright"
-  },
-  "made-with-static-site-generator": {
-    "title": "Dibuat dengan Static Site Generator — Sebastien Rousseau",
-    "subtitle": "Découvrez comment utiliser le générateur de sites statiques de nouvelle génération.",
-    "description": "Ce site est généré avec Static Site Generator, un générateur de sites statiques rapide écrit en Rust.",
-    "keywords": "Static Site Generator, générateur de sites statiques, Rust, performance"
   },
   "made-with-static-site-generator": {
     "title": "Dibuat dengan Static Site Generator — Sebastien Rousseau",

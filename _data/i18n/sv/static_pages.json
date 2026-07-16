@@ -1,4 +1,22 @@
 {
+  "suite": {
+    "title": "Programsvit med företags-AI för bank och betalningar — Sebastien Rousseau",
+    "subtitle": "Programsviten med företags-AI för bank och betalningar från Sebastien Rousseau.",
+    "description": "Programsviten med företags-AI för bank och betalningar från Sebastien Rousseau. Utforska ISO 20022 MCP Suite: validerade verktyg för AI-agenter på din egen infrastruktur.",
+    "keywords": "AI-bankprogramvara, betalningsprogramsvit, ISO 20022 MCP, MCP-server, AI-agenter bank"
+  },
+  "research": {
+    "title": "ISO 20022-forskning, vitböcker och tekniska analyser — Sebastien Rousseau",
+    "subtitle": "ISO 20022-forskning, vitböcker och tekniska analyser om AI i bankvärlden, betalningsinfrastruktur och postkvantkryptografi, av Sebastien Rousseau.",
+    "description": "ISO 20022-forskning, vitböcker och tekniska analyser om AI i bankvärlden, betalningsinfrastruktur och postkvantkryptografi, av Sebastien Rousseau.",
+    "keywords": "ISO 20022-forskning, vitböcker, tekniska analyser, AI-bankforskning, postkvantkryptografi"
+  },
+  "library": {
+    "title": "Utvecklarbibliotek: bankämnen, öppen källkod och spellistor — Sebastien Rousseau",
+    "subtitle": "Sebastien Rousseaus utvecklarbibliotek: utvalda bankämnen, projekt med öppen källkod och videospellistor om bank-AI, ISO 20022-betalningar och postkvantsäkerhet.",
+    "description": "Sebastien Rousseaus utvecklarbibliotek: utvalda bankämnen, projekt med öppen källkod och videospellistor om bank-AI, ISO 20022-betalningar och postkvantsäkerhet.",
+    "keywords": "utvecklarbibliotek, bankämnen, spellistor, öppen källkod, ISO 20022"
+  },
   "_comment": "Swedish static-page metadata — DRAFT pending native review. Mirrors EN/FR/DE/AR static_pages.json shape.",
   "404": {
     "title": "Sidan hittades inte — Sebastien Rousseau",
@@ -29,12 +47,6 @@
     "subtitle": "Har du en fråga eller behöver rådgivning? Skriv till mig.",
     "description": "Kontakta Sebastien Rousseau för rådgivning kring betaltransformation, migrering till ISO 20022 eller postkvantstrategi.",
     "keywords": "kontakt, rådgivning, betalningar, ISO 20022, postkvantkryptografi"
-  },
-  "made-with-static-site-generator": {
-    "title": "Gjord med Static Site Generator — Sebastien Rousseau",
-    "subtitle": "Upptäck hur du använder nästa generations statiska sajtgenerator.",
-    "description": "Den här sajten är byggd med Static Site Generator, en statisk sajtgenerator i Rust optimerad för prestanda och SEO.",
-    "keywords": "Static Site Generator, SSG, Rust, prestanda, SEO"
   },
   "made-with-static-site-generator": {
     "title": "Gjord med Static Site Generator — Sebastien Rousseau",

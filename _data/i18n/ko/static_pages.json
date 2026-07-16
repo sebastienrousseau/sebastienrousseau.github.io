@@ -1,4 +1,22 @@
 {
+  "suite": {
+    "title": "은행 및 결제를 위한 엔터프라이즈 AI 소프트웨어 스위트 — Sebastien Rousseau",
+    "subtitle": "Sebastien Rousseau의 은행 및 결제를 위한 엔터프라이즈 AI 소프트웨어 스위트.",
+    "description": "Sebastien Rousseau의 은행 및 결제를 위한 엔터프라이즈 AI 소프트웨어 스위트. ISO 20022 MCP Suite를 살펴보세요. 자체 인프라에서 AI 에이전트가 사용하는 검증된 도구입니다.",
+    "keywords": "AI 뱅킹 소프트웨어, 결제 소프트웨어 스위트, ISO 20022 MCP, MCP 서버, 은행 AI 에이전트"
+  },
+  "research": {
+    "title": "ISO 20022 연구, 백서 및 기술 분석 — Sebastien Rousseau",
+    "subtitle": "은행업의 AI, 결제 인프라, 포스트 양자 암호에 관한 ISO 20022 연구, 백서 및 기술 분석.",
+    "description": "은행업의 AI, 결제 인프라, 포스트 양자 암호에 관한 ISO 20022 연구, 백서 및 기술 분석. Sebastien Rousseau 저.",
+    "keywords": "ISO 20022 연구, 백서, 기술 분석, AI 뱅킹 연구, 포스트 양자 암호"
+  },
+  "library": {
+    "title": "개발자 라이브러리: 뱅킹 주제, 오픈 소스, 플레이리스트 — Sebastien Rousseau",
+    "subtitle": "Sebastien Rousseau의 개발자 라이브러리: 엄선된 뱅킹 주제, 오픈 소스 프로젝트, 그리고 뱅킹 AI, ISO 20022 결제, 포스트 퀀텀 보안에 관한 동영상 플레이리스트.",
+    "description": "Sebastien Rousseau의 개발자 라이브러리: 엄선된 뱅킹 주제, 오픈 소스 프로젝트, 그리고 뱅킹 AI, ISO 20022 결제, 포스트 퀀텀 보안에 관한 동영상 플레이리스트.",
+    "keywords": "개발자 라이브러리, 뱅킹 주제, 플레이리스트, 오픈 소스, ISO 20022"
+  },
   "_comment": "Korean static-page metadata — DRAFT pending native review. Mirrors EN/FR/DE/AR static_pages.json shape.",
   "404": {
     "title": "페이지를 찾을 수 없습니다 — Sebastien Rousseau",
@@ -29,12 +47,6 @@
     "subtitle": "문의나 협력 요청이 있으시면 부담 없이 연락 주십시오.",
     "description": "결제 변혁, ISO 20022 이행, 포스트 양자 전략 컨설팅에 관하여 Sebastien Rousseau에게 문의하여 주십시오.",
     "keywords": "문의하기, 컨설팅, 결제, ISO 20022, 포스트 양자 암호"
-  },
-  "made-with-static-site-generator": {
-    "title": "Static Site Generator으로 제작 — Sebastien Rousseau",
-    "subtitle": "차세대 정적 사이트 생성기를 활용하는 방법을 안내합니다.",
-    "description": "본 사이트는 성능과 SEO에 최적화된 Rust 기반 정적 사이트 생성기 Static Site Generator으로 구축되었습니다.",
-    "keywords": "Static Site Generator, SSG, Rust, 성능, SEO"
   },
   "made-with-static-site-generator": {
     "title": "Static Site Generator로 제작 — Sebastien Rousseau",

@@ -1,4 +1,22 @@
 {
+  "suite": {
+    "title": "חבילת תוכנת AI ארגונית לבנקאות ותשלומים — Sebastien Rousseau",
+    "subtitle": "חבילת תוכנת ה-AI הארגונית לבנקאות ותשלומים של סבסטיאן רוסו.",
+    "description": "חבילת תוכנת ה-AI הארגונית לבנקאות ותשלומים של סבסטיאן רוסו. גלו את ISO 20022 MCP Suite: כלים מאומתים לסוכני AI על התשתית שלכם.",
+    "keywords": "תוכנת בנקאות AI, חבילת תוכנת תשלומים, ISO 20022 MCP, שרת MCP, סוכני AI בבנקאות"
+  },
+  "research": {
+    "title": "מחקר ISO 20022, ניירות עמדה וניתוחים טכניים — Sebastien Rousseau",
+    "subtitle": "מחקר ISO 20022, ניירות עמדה וניתוחים טכניים על AI בבנקאות, תשתיות תשלומים והצפנה פוסט-קוונטית, מאת סבסטיאן רוסו.",
+    "description": "מחקר ISO 20022, ניירות עמדה וניתוחים טכניים על AI בבנקאות, תשתיות תשלומים והצפנה פוסט-קוונטית, מאת סבסטיאן רוסו.",
+    "keywords": "מחקר ISO 20022, ניירות עמדה, ניתוח טכני, מחקר AI בבנקאות, הצפנה פוסט-קוונטית"
+  },
+  "library": {
+    "title": "ספריית המפתחים: נושאי בנקאות, קוד פתוח ופלייליסטים — Sebastien Rousseau",
+    "subtitle": "ספריית המפתחים של סבסטיאן רוסו: נושאי בנקאות נבחרים, פרויקטי קוד פתוח ופלייליסטים של וידאו על AI בבנקאות, תשלומי ISO 20022 ואבטחה פוסט-קוונטית.",
+    "description": "ספריית המפתחים של סבסטיאן רוסו: נושאי בנקאות נבחרים, פרויקטי קוד פתוח ופלייליסטים של וידאו על AI בבנקאות, תשלומי ISO 20022 ואבטחה פוסט-קוונטית.",
+    "keywords": "ספריית מפתחים, נושאי בנקאות, פלייליסטים, קוד פתוח, ISO 20022"
+  },
   "_comment": "Hebrew static-page metadata — DRAFT pending native review. Mirrors EN/FR/DE static_pages.json shape.",
   "404": {
     "title": "404 — הדף לא נמצא — Sebastien Rousseau",
@@ -29,12 +47,6 @@
     "subtitle": "צרו קשר בנוגע לייעוץ, שיחות או הזדמנויות שיתוף פעולה.",
     "description": "טופס יצירת קשר מקצועי עבור Sebastien Rousseau: ייעוץ, שיחות, שיתופי פעולה.",
     "keywords": "יצירת קשר, Sebastien Rousseau, ייעוץ, שיחות"
-  },
-  "made-with-static-site-generator": {
-    "title": "נוצר עם Static Site Generator — Sebastien Rousseau",
-    "subtitle": "אתר זה נבנה עם מחולל האתרים הסטטי Static Site Generator, כתוב בשפת Rust.",
-    "description": "אתר זה נבנה עם Static Site Generator, מחולל אתרים סטטי מהיר ומאובטח בשפת Rust.",
-    "keywords": "Static Site Generator, מחולל אתרים סטטי, Rust, SSG"
   },
   "made-with-static-site-generator": {
     "title": "נוצר עם Static Site Generator — Sebastien Rousseau",

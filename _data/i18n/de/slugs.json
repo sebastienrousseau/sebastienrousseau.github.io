@@ -17,7 +17,10 @@
     "thanks": "danke",
     "articles": "artikel",
     "case-studies": "fallstudien",
-    "speaking": "speaking"
+    "speaking": "speaking",
+    "suite": "suite",
+    "research": "forschung",
+    "library": "bibliothek"
   },
   "articles": {
     "2018-01-01-bitcoin-the-year-in-review": "2018-01-01-bitcoin-das-jahr-im-rueckblick",
