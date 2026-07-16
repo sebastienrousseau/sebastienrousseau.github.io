@@ -167,26 +167,34 @@ def _inline_html(text: str) -> str:
     return out
 
 
+def _array_type(prop: dict) -> str:
+    """Human-readable type for an ``array`` JSON Schema property."""
+    items = prop.get("items", {})
+    inner = items.get("type")
+    return f"array of {inner}" if inner else "array"
+
+
+def _anyof_type(alternatives: list) -> str:
+    """Human-readable type for an ``anyOf`` union of schema alternatives."""
+    parts: list[str] = []
+    for alt in alternatives:
+        alt_t = _schema_type(alt) if isinstance(alt, dict) else "any"
+        if alt_t not in parts:
+            parts.append(alt_t)
+    # "x | null" reads better as "x (nullable)".
+    if "null" in parts and len(parts) == 2:
+        parts.remove("null")
+        return f"{parts[0]}, nullable"
+    return " | ".join(parts) if parts else "any"
+
+
 def _schema_type(prop: dict) -> str:
     """Human-readable type for a JSON Schema property."""
     if "type" in prop:
         t = prop["type"]
-        if t == "array":
-            items = prop.get("items", {})
-            inner = items.get("type")
-            return f"array of {inner}" if inner else "array"
-        return str(t)
+        return _array_type(prop) if t == "array" else str(t)
     if "anyOf" in prop:
-        parts: list[str] = []
-        for alt in prop["anyOf"]:
-            alt_t = _schema_type(alt) if isinstance(alt, dict) else "any"
-            if alt_t not in parts:
-                parts.append(alt_t)
-        # "x | null" reads better as "x (nullable)".
-        if "null" in parts and len(parts) == 2:
-            parts.remove("null")
-            return f"{parts[0]}, nullable"
-        return " | ".join(parts) if parts else "any"
+        return _anyof_type(prop["anyOf"])
     return "any"
 
 
@@ -309,9 +317,8 @@ def _render_server(meta: dict, doc: dict) -> list[str]:
     return out
 
 
-def render_catalog() -> str:
-    """The full generated block, marker line to marker line inclusive."""
-    loaded: list[tuple[dict, dict]] = []
+def _reject_stray_snapshots() -> None:
+    """Fail when a captured snapshot on disk is missing from ``SERVERS``."""
     expected = {m["file"] for m in SERVERS}
     on_disk = {
         p.name for p in DATA.glob("*.json") if p.name.endswith((".tools.json",))
@@ -322,6 +329,12 @@ def render_catalog() -> str:
             f"render_mcp_reference: captured snapshots not in the catalog: {extra} "
             "(add them to SERVERS so the reference stays complete)"
         )
+
+
+def _load_snapshots() -> list[tuple[dict, dict]]:
+    """Load every captured snapshot in ``SERVERS`` order as (meta, doc)."""
+    _reject_stray_snapshots()
+    loaded: list[tuple[dict, dict]] = []
     for meta in SERVERS:
         path = DATA / meta["file"]
         if not path.is_file():
@@ -330,6 +343,12 @@ def render_catalog() -> str:
         if not doc.get("tools"):
             raise SystemExit(f"render_mcp_reference: no tools in {path}")
         loaded.append((meta, doc))
+    return loaded
+
+
+def render_catalog() -> str:
+    """The full generated block, marker line to marker line inclusive."""
+    loaded = _load_snapshots()
     total = sum(len(doc["tools"]) for _, doc in loaded)
     lines: list[str] = [BEGIN, REGEN_NOTE]
     lines.append(
