@@ -291,7 +291,11 @@ def test_install_tabs_are_css_only_radio_pattern() -> None:
 def test_schema_viewer_renders_captured_tools() -> None:
     out = _run_build(_fake_shell())
     sec = out.split('id="mcp-schemas"', 1)[1].split("</section>", 1)[0]
-    assert sec.count('<details class="mcp-schema">') == 7
+    # Canonical .qa accordion rows with the hub's schema modifier.
+    assert sec.count('<details class="qa-item mcp-schema">') == 7
+    assert '<div class="qa-list mcp-schemas">' in sec
+    # The canonical marker is CSS-generated; no hand-rolled icon span.
+    assert "spk-ic" not in sec
     for tool in (
         "search", "list_families", "list_servers", "describe",
         "validate", "generate", "parse",

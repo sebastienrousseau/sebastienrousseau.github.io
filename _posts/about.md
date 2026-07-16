@@ -126,7 +126,7 @@ site_software: "Static Site Generator, Rust"
       <h2 id="about-work" class="narrative-head">Wholesale payments infrastructure that has to be correct.</h2>
       <div class="narrative-body">
         <p>Senior payments leader at HSBC Commercial &amp; Investment Bank, working on Treasury APIs, Banking-as-a-Service, and the ISO 20022 wholesale rails that settle correspondent payments at scale.</p>
-        <p>Twenty years across Tier-1 banks (HSBC, PayPal, Barclays) and consumer technology (Shazam, AKQA, Virgin). The same product-engineering discipline now applies to retail, wholesale, and post-quantum work.</p>
+        <p>Nearly two decades across Tier-1 banks (HSBC, PayPal, Barclays) and consumer technology (Shazam, AKQA, Virgin). The same product-engineering discipline now applies to retail, wholesale, and post-quantum work.</p>
       </div>
       <a class="pill" href="/case-studies/index.html">See the case studies ›</a>
     </div>

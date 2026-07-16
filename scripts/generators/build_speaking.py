@@ -109,10 +109,12 @@ def _metrics() -> dict[str, str]:
             continue
         val, fmt = s.get("value"), s.get("format", "plain")
         if isinstance(val, (int, float)) and fmt == "compact":
+            # One decimal, trailing .0 dropped (39.6M stays 39.6M, 2.0M
+            # becomes 2M) so figures match gen_projects / fetch_metrics.
             if val >= 1_000_000:
-                out[key] = f"{val / 1_000_000:.0f}M"
+                out[key] = f"{val / 1_000_000:.1f}M".replace(".0M", "M")
             elif val >= 1_000:
-                out[key] = f"{val / 1_000:.0f}K"
+                out[key] = f"{val / 1_000:.1f}K".replace(".0K", "K")
             else:
                 out[key] = str(int(val))
         elif isinstance(val, (int, float)):
@@ -428,15 +430,15 @@ def _faq(d: dict) -> str:
     if not items:
         return ""
     rows = "".join(
-        "<details><summary>"
-        f'{_esc(it.get("q", ""))} <span class="spk-ic" aria-hidden="true">+</span></summary>'
-        f'<div class="spk-ans">{_rich(it.get("a", ""))}</div></details>'
+        '<details class="qa-item">'
+        f'<summary class="qa-q">{_esc(it.get("q", ""))}</summary>'
+        f'<div class="qa-a"><p>{_rich(it.get("a", ""))}</p></div></details>'
         for it in items
     )
     return (
         '<section class="spk-band" id="spk-faq"><div class="spk-wrap">'
         + _section_head(f.get("eyebrow", ""), f.get("headline", ""))
-        + f'<div class="spk-faq">{rows}</div></div></section>'
+        + f'<div class="qa-list spk-faq">{rows}</div></div></section>'
     )
 
 

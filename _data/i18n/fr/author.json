@@ -1,5 +1,5 @@
 {
   "_comment": "French author-card prose. Mirrors the EN key set; CI gate test_i18n_author.py enforces parity.",
   "bio": "Technologue senior dans la banque, j'écris sur l'IA appliquée, la migration ISO 20022, la cryptographie post-quantique pour les services financiers, et la transformation structurelle des paiements wholesale.",
-  "credentialsPrefix": "Plus de 20 ans d'expérience chez HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group."
+  "credentialsPrefix": "Près de deux décennies d'expérience chez HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group."
 }

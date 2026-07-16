@@ -820,7 +820,8 @@ def _code_block(code: str, block_id: str = "", copy: bool = False) -> str:
     btn = ""
     if copy and block_id:
         btn = (
-            f'<button type="button" class="mcp-copy" data-copy="#{block_id}" '
+            f'<button type="button" class="ap-cta-mini mcp-copy" '
+            f'data-copy="#{block_id}" '
             f'aria-label="Copy to clipboard">Copy</button>'
         )
     return f'<pre class="mcp-code"{id_attr}><code>{_esc(code)}</code></pre>{btn}'
@@ -927,13 +928,13 @@ def _schemas(d: dict) -> str:
     if not tools:
         return ""
     blocks = [
-        '<details class="mcp-schema">'
-        '<summary><code class="spk-mono">'
+        '<details class="qa-item mcp-schema">'
+        '<summary class="qa-q"><code class="spk-mono">'
         + _esc(t["name"])
         + '</code><span class="mcp-schema-sum">'
         + _esc(t.get("description", ""))
-        + '</span><span class="spk-ic" aria-hidden="true">+</span></summary>'
-        '<div class="mcp-schema-body">'
+        + "</span></summary>"
+        '<div class="qa-a mcp-schema-body">'
         f'<p>{_esc(t.get("description", ""))}</p>'
         + _schema_props(t.get("inputSchema") or {})
         + "</div></details>"
@@ -942,7 +943,7 @@ def _schemas(d: dict) -> str:
     return (
         '<section id="mcp-schemas"><div class="spk-wrap">'
         + _head(d["eyebrow"], d["headline"], d["lede"])
-        + f'<div class="mcp-schemas">{"".join(blocks)}</div>'
+        + f'<div class="qa-list mcp-schemas">{"".join(blocks)}</div>'
         f'<p class="mcp-schema-note">{_esc(d["note"])}</p>'
         "</div></section>"
     )

@@ -219,7 +219,8 @@ Egy 50 alatti összetett pontszám azt jelenti, hogy az intézmény nem tudja me
 
 A fenti hat dimenzió egy statikus hivatkozás. Az alábbi interaktív pontozótábla önértékeléssé alakítja őket: állítsa be minden dimenziót intézménye jelenlegi érettségi szintjére, és olvassa le a súlyozott összetett pontszámot, az érettségi sávot és a felkészültségi radart. Az eredmények a lap URL-jébe kódolódnak, így megoszthatók vagy könyvjelzővel elláthatók, és képként exportálhatók, adat nem hagyja el a böngészőjét.
 
-<div class="index-scorecard" data-index="agentic-ai-index-banks-2026"></div>
+<div class="index-scorecard" data-index="agentic-ai-index-banks-2026">
+</div>
 
 ## Jelenlegi követendő jelzések
 

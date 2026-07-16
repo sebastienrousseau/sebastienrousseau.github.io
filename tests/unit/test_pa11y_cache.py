@@ -323,6 +323,42 @@ def test_page_should_skip_locale_prefixed_made_with_not_skipped() -> None:
 
 
 # ---------------------------------------------------------------------------
+# page_is_redirect_stub - instant meta-refresh redirect stubs
+# ---------------------------------------------------------------------------
+
+
+def test_page_is_redirect_stub_true_for_meta_refresh() -> None:
+    """The /papers/ -> /research/ moves ship 29 instant meta-refresh
+    stubs. Puppeteer follows the refresh before pa11y evaluates, so the
+    sweep would score the (production) redirect target, not the stub."""
+    html = (
+        '<html lang="en-GB"><head>'
+        '<meta http-equiv="refresh" content="0; url=https://example.com/research/" />'
+        "<title>Moved</title></head><body><p>This page has moved.</p></body></html>"
+    )
+    assert pc.page_is_redirect_stub(html)
+    assert pc.page_should_skip(html, "papers/index.html")
+
+
+def test_page_is_redirect_stub_false_for_normal_page() -> None:
+    html = '<html lang="en-GB"><head><title>Real</title></head><body><h1>Hi</h1></body></html>'
+    assert not pc.page_is_redirect_stub(html)
+    assert not pc.page_should_skip(html, "research/index.html")
+
+
+def test_page_is_redirect_stub_ignores_body_prose_about_meta_refresh() -> None:
+    """Only the <head> slice is scanned: an article whose body quotes a
+    meta-refresh snippet must still be swept."""
+    html = (
+        '<html lang="en-GB"><head><title>Article</title></head><body>'
+        '<pre>&lt;meta http-equiv="refresh"&gt;</pre>'
+        '<p>Raw example: <meta http-equiv="refresh" content="0; url=/x/"></p>'
+        "</body></html>"
+    )
+    assert not pc.page_is_redirect_stub(html)
+
+
+# ---------------------------------------------------------------------------
 # partition_pages — the heart of the cache decision
 # ---------------------------------------------------------------------------
 

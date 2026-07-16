@@ -1,5 +1,5 @@
 {
   "_comment": "Ukrainian author-card prose — DRAFT pending native-speaker review. Mirrors EN key set; CI gate test_i18n_author.py enforces parity.",
   "bio": "Старший технологічний експерт у банківській справі. Пишу про прикладний штучний інтелект, міграцію на ISO 20022, постквантову криптографію для фінансових послуг та структурну трансформацію оптових платежів.",
-  "credentialsPrefix": "Понад 20 років досвіду в HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group."
+  "credentialsPrefix": "Майже два десятиліття досвіду в HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group."
 }

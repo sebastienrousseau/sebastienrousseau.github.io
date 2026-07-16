@@ -317,8 +317,8 @@ def _convert_faq_to_qa(html: str) -> str:
         out_parts: list[str] = [new_h2, f'<section class="qa-list" aria-labelledby="{faq_id}">']
         for q, a in qa_pairs:
             out_parts.append(
-                f'<details class="qa-item" open><summary class="qa-q">{q}</summary>'
-                f'<section class="qa-a"><p>{a}</p></section></details>'
+                f'<details class="qa-item"><summary class="qa-q">{q}</summary>'
+                f'<div class="qa-a"><p>{a}</p></div></details>'
             )
         out_parts.append("</section>")
         return "".join(out_parts)

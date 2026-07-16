@@ -1,5 +1,5 @@
 {
   "_comment": "Turkish author-card prose — DRAFT pending native review. Mirrors the EN key set; CI gate test_i18n_author.py enforces parity.",
   "bio": "Kıdemli bankacılık teknoloğu olarak uygulamalı yapay zeka, ISO 20022 geçişi, finansal hizmetler için post-kuantum kriptografi ve toptan ödemelerin yapısal dönüşümü üzerine yazıyorum.",
-  "credentialsPrefix": "HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA ve Virgin Group bünyesinde 20 yılı aşkın deneyim."
+  "credentialsPrefix": "HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA ve Virgin Group bünyesinde yaklaşık yirmi yıllık deneyim."
 }
