@@ -358,8 +358,8 @@
       "<li><a href=\"/ko/peurojekteu/index.html\">오픈 소스 프로젝트</a></li>"
     ],
     [
-      "<li><a href=\"?/playlists/index\\.html\"?>Video Playlists</a></li>",
-      "<li><a href=\"/ko/pleilliseuteu/index.html\">동영상 플레이리스트</a></li>"
+      "<li><a href=\"?/playlists/index\\.html\"?>Playlists</a></li>",
+      "<li><a href=\"/ko/pleilliseuteu/index.html\">플레이리스트</a></li>"
     ],
     [
       "<li><a href=\"?/research/index\\.html\"?>Whitepapers (?:&amp;|&) Reports</a></li>",

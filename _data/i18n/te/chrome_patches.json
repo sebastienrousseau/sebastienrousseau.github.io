@@ -357,8 +357,8 @@
       "<li><a href=\"/te/projects/index.html\">ఓపెన్ సోర్స్ ప్రాజెక్టులు</a></li>"
     ],
     [
-      "<li><a href=\"?/playlists/index\\.html\"?>Video Playlists</a></li>",
-      "<li><a href=\"/te/playlists/index.html\">వీడియో ప్లేలిస్ట్‌లు</a></li>"
+      "<li><a href=\"?/playlists/index\\.html\"?>Playlists</a></li>",
+      "<li><a href=\"/te/playlists/index.html\">ప్లేలిస్ట్‌లు</a></li>"
     ],
     [
       "<li><a href=\"?/research/index\\.html\"?>Whitepapers (?:&amp;|&) Reports</a></li>",

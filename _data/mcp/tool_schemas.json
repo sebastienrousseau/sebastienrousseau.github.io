@@ -1,11 +1,11 @@
 {
   "_meta": {
-    "captured": "2026-07-15",
+    "captured": "2026-07-16",
     "server": {
       "name": "iso20022",
-      "version": "0.0.2"
+      "version": "0.0.3"
     },
-    "command": "uvx --from \"iso20022-mcp[pain,pacs,acmt]\" iso20022-mcp",
+    "command": "uvx --from \"iso20022-mcp[all]\" iso20022-mcp",
     "method": "MCP stdio JSON-RPC tools/list (protocol 2024-11-05)"
   },
   "tools": [
@@ -146,7 +146,7 @@
     },
     {
       "name": "generate",
-      "description": "Generate a validated ISO 20022 XML message from records. Supported for initiation and interbank families (pain, pacs, acmt); statement families (camt) are inbound-only and return an explanatory error.",
+      "description": "Generate a validated ISO 20022 XML message from records; the XML document is returned in the 'xml' key. Supported for initiation and interbank families (pain, pacs, acmt); statement families (camt) are inbound-only and return an explanatory error.",
       "inputSchema": {
         "properties": {
           "message_type": {

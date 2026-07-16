@@ -40,7 +40,6 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[3]))
 import _lang_registry as _lr
-
 from postbuild_lib._i18n import _all_active_non_en_langs
 from postbuild_lib.article_furniture import _BASE_URL, PUBLIC
 

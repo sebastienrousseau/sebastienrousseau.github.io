@@ -357,8 +357,8 @@
       "<li><a href=\"/el/projects/index.html\">Έργα ανοικτού κώδικα</a></li>"
     ],
     [
-      "<li><a href=\"?/playlists/index\\.html\"?>Video Playlists</a></li>",
-      "<li><a href=\"/el/playlists/index.html\">Λίστες αναπαραγωγής βίντεο</a></li>"
+      "<li><a href=\"?/playlists/index\\.html\"?>Playlists</a></li>",
+      "<li><a href=\"/el/playlists/index.html\">Λίστες αναπαραγωγής</a></li>"
     ],
     [
       "<li><a href=\"?/research/index\\.html\"?>Whitepapers (?:&amp;|&) Reports</a></li>",

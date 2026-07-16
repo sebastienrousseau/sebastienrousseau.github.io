@@ -358,8 +358,8 @@
       "<li><a href=\"/uk/proekty/index.html\">Проєкти з відкритим кодом</a></li>"
     ],
     [
-      "<li><a href=\"?/playlists/index\\.html\"?>Video Playlists</a></li>",
-      "<li><a href=\"/uk/pleylysty/index.html\">Відеоплейлисти</a></li>"
+      "<li><a href=\"?/playlists/index\\.html\"?>Playlists</a></li>",
+      "<li><a href=\"/uk/pleylysty/index.html\">Плейлисти</a></li>"
     ],
     [
       "<li><a href=\"?/research/index\\.html\"?>Whitepapers (?:&amp;|&) Reports</a></li>",

@@ -358,8 +358,8 @@
       "<li><a href=\"/ru/proekty/index.html\">Проекты с открытым кодом</a></li>"
     ],
     [
-      "<li><a href=\"?/playlists/index\\.html\"?>Video Playlists</a></li>",
-      "<li><a href=\"/ru/pleilisty/index.html\">Видеоплейлисты</a></li>"
+      "<li><a href=\"?/playlists/index\\.html\"?>Playlists</a></li>",
+      "<li><a href=\"/ru/pleilisty/index.html\">Плейлисты</a></li>"
     ],
     [
       "<li><a href=\"?/research/index\\.html\"?>Whitepapers (?:&amp;|&) Reports</a></li>",

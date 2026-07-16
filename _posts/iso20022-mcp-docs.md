@@ -157,13 +157,12 @@ site_software: "Static Site Generator, Rust"
 </div>
 
 ```bash
-claude mcp add iso20022 -- uvx --from "iso20022-mcp[pain,pacs,acmt]" iso20022-mcp
-claude mcp add camt053 -- uvx --from camt053-mcp camt053-mcp
+claude mcp add iso20022 -- uvx --from "iso20022-mcp[all]" iso20022-mcp
 ```
 
 <div class="story-why">
 <ul class="story-why-list">
-<li><strong>3 · Verify.</strong> <code>claude mcp list</code> shows <code>iso20022</code> and <code>camt053</code> as connected, and typing <code>/mcp</code> inside a session lists the gateway's seven meta-tools plus the statement tools.</li>
+<li><strong>3 · Verify.</strong> <code>claude mcp list</code> shows <code>iso20022</code> as connected, and typing <code>/mcp</code> inside a session lists the gateway's seven meta-tools.</li>
 <li><strong>4 · Ask for a payment.</strong> Try: <em>"Generate a pain.001 credit transfer paying Acme GmbH EUR 4,200, executing Friday."</em> Claude picks the right tool and returns XSD-validated ISO 20022 XML.</li>
 </ul>
 </div>
@@ -177,11 +176,7 @@ claude mcp add camt053 -- uvx --from camt053-mcp camt053-mcp
   "mcpServers": {
     "iso20022": {
       "command": "uvx",
-      "args": ["--from", "iso20022-mcp[pain,pacs,acmt]", "iso20022-mcp"]
-    },
-    "camt053": {
-      "command": "uvx",
-      "args": ["--from", "camt053-mcp", "camt053-mcp"]
+      "args": ["--from", "iso20022-mcp[all]", "iso20022-mcp"]
     }
   }
 }
@@ -190,8 +185,8 @@ claude mcp add camt053 -- uvx --from camt053-mcp camt053-mcp
 <div class="story-why">
 <ul class="story-why-list">
 <li><strong>Where it shows up.</strong> After a restart, the suite's tools appear under the tools icon in the chat box. Claude asks before every tool call, so you approve each step.</li>
-<li><strong>Installed with pip instead?</strong> If you ran <code>pip install "iso20022-mcp[pain,pacs,acmt]"</code>, the config is just <code>"command": "iso20022-mcp"</code>, no <code>args</code> needed.</li>
-<li><strong>Why two servers?</strong> The <code>[all]</code> extra does not currently resolve: <code>camt053</code> pins <code>rich==15.0.0</code> while the other families pin <code>13.7.1</code>. Running <code>camt053-mcp</code> as its own server sidesteps the conflict with zero lost capability; once the patched <code>camt053</code> release lands, <code>[all]</code> collapses this back to one entry.</li>
+<li><strong>Installed with pip instead?</strong> If you ran <code>pip install "iso20022-mcp[all]"</code>, the config is just <code>"command": "iso20022-mcp"</code>, no <code>args</code> needed.</li>
+<li><strong>One entry, every family.</strong> Since <code>camt053</code> 0.0.14 and <code>acmt001</code> 0.0.3, the <code>[all]</code> extra resolves cleanly and this single entry covers all nine servers, statements included. Per-family extras such as <code>[pain,pacs]</code> remain available for slimmer installs.</li>
 </ul>
 </div>
 </section>
@@ -201,7 +196,7 @@ claude mcp add camt053 -- uvx --from camt053-mcp camt053-mcp
 <div class="story-why">
 <ul class="story-why-list">
 <li><strong>Registry name.</strong> <code>io.github.sebastienrousseau/iso20022-mcp</code> on the <a href="https://registry.modelcontextprotocol.io">official MCP registry</a>; clients that browse the registry can install it from there.</li>
-<li><strong>Generic config.</strong> Command <code>uvx</code>, arguments <code>--from "iso20022-mcp[pain,pacs,acmt]" iso20022-mcp</code>, transport stdio (add <code>camt053-mcp</code> the same way for statements). That is all any client needs.</li>
+<li><strong>Generic config.</strong> Command <code>uvx</code>, arguments <code>--from "iso20022-mcp[all]" iso20022-mcp</code>, transport stdio. That is all any client needs.</li>
 <li><strong>Slimmer installs.</strong> Extras select families: <code>pip install "iso20022-mcp[pain,pacs]"</code> covers initiation and interbank transfers only, and each family server (<code>pain001-mcp</code>, <code>pacs008-mcp</code>, <code>camt053-mcp</code>, ...) also runs standalone.</li>
 <li><strong>Beyond payments.</strong> The suite is nine of the thirteen MCP servers published under this account. The other four: <a href="https://github.com/sebastienrousseau/corral">corral</a> (query your local mirror of cloned repositories), <code>inclusio-mcp</code> (accessibility-first LaTeX publishing), <a href="https://github.com/sebastienrousseau/noyalib-mcp">noyalib-mcp</a> (lossless YAML parsing and validation) and <code>rlg-mcp</code> (log streams for agents). <a href="https://registry.modelcontextprotocol.io/?q=sebastienrousseau">All thirteen are on the official registry</a>.</li>
 </ul>
@@ -224,7 +219,7 @@ claude mcp add camt053 -- uvx --from camt053-mcp camt053-mcp
   "mcpServers": {
     "iso20022": {
       "command": "uvx",
-      "args": ["--from", "iso20022-mcp[pain,pacs,acmt]", "iso20022-mcp"]
+      "args": ["--from", "iso20022-mcp[all]", "iso20022-mcp"]
     }
   }
 }
@@ -244,7 +239,7 @@ claude mcp add camt053 -- uvx --from camt053-mcp camt053-mcp
     "iso20022": {
       "type": "stdio",
       "command": "uvx",
-      "args": ["--from", "iso20022-mcp[pain,pacs,acmt]", "iso20022-mcp"]
+      "args": ["--from", "iso20022-mcp[all]", "iso20022-mcp"]
     }
   }
 }
@@ -263,7 +258,7 @@ async with MCPServerStdio(
     name="iso20022",
     params={
         "command": "uvx",
-        "args": ["--from", "iso20022-mcp[pain,pacs,acmt]", "iso20022-mcp"],
+        "args": ["--from", "iso20022-mcp[all]", "iso20022-mcp"],
     },
 ) as server:
     agent = Agent(name="Treasury", mcp_servers=[server])
@@ -319,7 +314,7 @@ Validate the records first, then generate. If validation fails, name the failing
 <li><strong>What came back.</strong> A <code>pain.001.001.03</code> Document (namespace <code>urn:iso:std:iso:20022:tech:xsd:pain.001.001.03</code>) carrying <code>MsgId MSG-2026-07-15-001</code>, structured <code>PstlAdr</code> blocks for all three parties, <code>InstdAmt Ccy="EUR" 4200.00</code> and structured remittance. The tool validates against the bundled official XSD before returning; we re-validated the returned document independently and it passed.</li>
 <li><strong>Checked identifiers.</strong> Both IBANs pass a mod-97 integrity check (Python stdlib, no library), and both BICs match the ISO 9362 shape the input schema enforces.</li>
 <li><strong>Two field gotchas we hit.</strong> <code>date</code> must be a full ISO datetime (<code>2026-07-15T09:30:00.000Z</code>), not a bare date, and <code>batch_booking</code> must be the lowercase string <code>"false"</code>. pain.001.001.03 also requires structured addresses for initiator, debtor and creditor.</li>
-<li><strong>Gateway note, tested honestly.</strong> In gateway 0.0.2, <code>generate</code> for the pain family builds and XSD-validates the XML but then trips a response-shape bug returning it. Until that lands fixed, run the family server directly, <code>uvx --from "iso20022-mcp[pain,pacs,acmt]" pain001-mcp</code>, whose <code>generate_message</code> tool returned the document above. The gateway's <code>validate</code>, <code>describe</code>, <code>search</code> and listing tools worked as documented in the same session.</li>
+<li><strong>Gateway note, tested honestly.</strong> In gateway 0.0.2, <code>generate</code> for the pain family builds and XSD-validates the XML but then trips a response-shape bug returning it. Until that lands fixed, run the family server directly, <code>uvx --from "iso20022-mcp[all]" pain001-mcp</code>, whose <code>generate_message</code> tool returned the document above. The gateway's <code>validate</code>, <code>describe</code>, <code>search</code> and listing tools worked as documented in the same session.</li>
 </ul>
 </div>
 </section>

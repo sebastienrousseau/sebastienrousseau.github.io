@@ -258,8 +258,7 @@ def _render_tool(tool: dict, server_id: str) -> list[str]:
         "</summary>",
         '<div class="ref-tool-body">',
     ]
-    for para in paras[1:]:
-        out.append(f'<p class="ref-tool-desc">{_inline_html(para)}</p>')
+    out.extend(f'<p class="ref-tool-desc">{_inline_html(para)}</p>' for para in paras[1:])
     out += _render_params(tool, server_id)
     out += ["</div>", "</details>"]
     return out
@@ -355,11 +354,11 @@ def apply(page_text: str) -> str:
     try:
         head, rest = page_text.split(BEGIN, 1)
         _, tail = rest.split(END, 1)
-    except ValueError:
+    except ValueError as exc:
         raise SystemExit(
             f"render_mcp_reference: markers not found in {PAGE} "
             f"(need both {BEGIN!r} and {END!r})"
-        )
+        ) from exc
     return head + render_catalog() + tail
 
 

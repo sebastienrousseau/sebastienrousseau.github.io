@@ -358,8 +358,8 @@
       "<li><a href=\"/pl/projekty/index.html\">Projekty open source</a></li>"
     ],
     [
-      "<li><a href=\"?/playlists/index\\.html\"?>Video Playlists</a></li>",
-      "<li><a href=\"/pl/playlisty/index.html\">Playlisty wideo</a></li>"
+      "<li><a href=\"?/playlists/index\\.html\"?>Playlists</a></li>",
+      "<li><a href=\"/pl/playlisty/index.html\">Playlisty</a></li>"
     ],
     [
       "<li><a href=\"?/research/index\\.html\"?>Whitepapers (?:&amp;|&) Reports</a></li>",

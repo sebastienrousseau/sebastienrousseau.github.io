@@ -357,8 +357,8 @@
       "<li><a href=\"/mr/projects/index.html\">ओपन सोर्स प्रकल्प</a></li>"
     ],
     [
-      "<li><a href=\"?/playlists/index\\.html\"?>Video Playlists</a></li>",
-      "<li><a href=\"/mr/playlists/index.html\">व्हिडिओ प्लेलिस्ट</a></li>"
+      "<li><a href=\"?/playlists/index\\.html\"?>Playlists</a></li>",
+      "<li><a href=\"/mr/playlists/index.html\">प्लेलिस्ट्स</a></li>"
     ],
     [
       "<li><a href=\"?/research/index\\.html\"?>Whitepapers (?:&amp;|&) Reports</a></li>",

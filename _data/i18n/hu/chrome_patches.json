@@ -357,8 +357,8 @@
       "<li><a href=\"/hu/projects/index.html\">Nyílt forráskódú projektek</a></li>"
     ],
     [
-      "<li><a href=\"?/playlists/index\\.html\"?>Video Playlists</a></li>",
-      "<li><a href=\"/hu/playlists/index.html\">Videó lejátszási listák</a></li>"
+      "<li><a href=\"?/playlists/index\\.html\"?>Playlists</a></li>",
+      "<li><a href=\"/hu/playlists/index.html\">Lejátszási listák</a></li>"
     ],
     [
       "<li><a href=\"?/research/index\\.html\"?>Whitepapers (?:&amp;|&) Reports</a></li>",

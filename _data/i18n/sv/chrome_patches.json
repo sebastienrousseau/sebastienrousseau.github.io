@@ -358,8 +358,8 @@
       "<li><a href=\"/sv/projekt/index.html\">Projekt med öppen källkod</a></li>"
     ],
     [
-      "<li><a href=\"?/playlists/index\\.html\"?>Video Playlists</a></li>",
-      "<li><a href=\"/sv/spellistor/index.html\">Videospellistor</a></li>"
+      "<li><a href=\"?/playlists/index\\.html\"?>Playlists</a></li>",
+      "<li><a href=\"/sv/spellistor/index.html\">Spellistor</a></li>"
     ],
     [
       "<li><a href=\"?/research/index\\.html\"?>Whitepapers (?:&amp;|&) Reports</a></li>",

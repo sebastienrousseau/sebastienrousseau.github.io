@@ -157,7 +157,7 @@ def test_full_build_nav_has_five_top_items_with_dropdowns() -> None:
         ("/contact/index.html", "Contact"),
         ("/topics/index.html", "Browse by Topic"),
         ("/projects/index.html", "Open Source Projects"),
-        ("/playlists/index.html", "Video Playlists"),
+        ("/playlists/index.html", "Playlists"),
         ("/research/index.html", "Whitepapers &amp; Reports"),
         ("/case-studies/index.html", "Real-World Case Studies"),
         ("/iso20022-mcp/index.html", "ISO 20022 MCP Suite"),
@@ -246,7 +246,7 @@ def test_clients_grid_covers_stdio_and_remote_accurately() -> None:
     ):
         assert f"<h3>{name}</h3>" in sec
     # Each documented stdio config carries the proven uvx entry.
-    assert sec.count("&quot;--from&quot;, &quot;iso20022-mcp[pain,pacs,acmt]&quot;") >= 5
+    assert sec.count("&quot;--from&quot;, &quot;iso20022-mcp[all]&quot;") >= 5
     # VS Code's shape differs: top-level "servers", not "mcpServers".
     assert "&quot;servers&quot;:" in sec
     assert sec.count("&quot;mcpServers&quot;:") >= 3

@@ -149,9 +149,10 @@ def _icon(section_id: str, i: int) -> str:
 
 # Shared install strings. One source so the tabs, client cards and tests can
 # never drift apart. The uvx command is the one proven against the live
-# gateway (stdio JSON-RPC initialize / tools/list / tools/call, 2026-07-15).
-UVX_ARGS = '"--from", "iso20022-mcp[pain,pacs,acmt]", "iso20022-mcp"'
-UVX_CMD = 'uvx --from "iso20022-mcp[pain,pacs,acmt]" iso20022-mcp'
+# gateway (stdio JSON-RPC initialize / tools/list, 2026-07-16): the [all]
+# extra resolves cleanly since camt053 0.0.14 and acmt001 0.0.3.
+UVX_ARGS = '"--from", "iso20022-mcp[all]", "iso20022-mcp"'
+UVX_CMD = 'uvx --from "iso20022-mcp[all]" iso20022-mcp'
 _JSON_BODY = (
     '    "iso20022": {\n'
     '      "command": "uvx",\n'
@@ -571,15 +572,15 @@ C: dict = {
                 "label": "uvx",
                 "code": UVX_CMD,
                 "note": (
-                    "No install, no account, no key. Add camt053-mcp the "
-                    "same way for bank statements."
+                    "No install, no account, no key. The [all] extra covers "
+                    "every family, bank statements included."
                 ),
             },
             {
                 "id": "pip",
                 "label": "pip",
                 "code": (
-                    'pip install "iso20022-mcp[pain,pacs,acmt]"\n'
+                    'pip install "iso20022-mcp[all]"\n'
                     "iso20022-mcp"
                 ),
                 "note": (
@@ -723,7 +724,7 @@ def _start() -> str:
             "STEP 1",
             "Run it, no install.",
             "Start the gateway with one command, no account, no key: "
-            + _mono('uvx --from "iso20022-mcp[pain,pacs,acmt]" iso20022-mcp'),
+            + _mono('uvx --from "iso20022-mcp[all]" iso20022-mcp'),
         ),
         (
             "STEP 2",
@@ -1014,7 +1015,7 @@ def _nav(shell: str) -> str:
         + '<ul id="sub-library" class="ap-sub">'
         '<li><a href="/topics/index.html">Browse by Topic</a></li>'
         '<li><a href="/projects/index.html">Open Source Projects</a></li>'
-        '<li><a href="/playlists/index.html">Video Playlists</a></li>'
+        '<li><a href="/playlists/index.html">Playlists</a></li>'
         "</ul></li>"
         '<li class="has-sub"><a href="/research/index.html">Research</a>'
         + _toggle("research", "Research")

@@ -6,6 +6,8 @@ Split out of test_postbuild.py; tests are verbatim copies.
 
 from __future__ import annotations
 
+from typing import ClassVar
+
 import postbuild as pb
 from postbuild_lib import hreflang as hf
 
@@ -343,7 +345,7 @@ def test_hreflang_pass_skips_non_top_level_leaf_collisions(tmp_path, monkeypatch
     page.write_text(original)
 
     class _Ctx:
-        translated_per_lang = {"fr": {"recherche"}}
+        translated_per_lang: ClassVar[dict[str, set[str]]] = {"fr": {"recherche"}}
 
     out = pb._apply_hreflang_pass(original, page, _Ctx())
     assert out == original  # untouched: tag chain preserved, no static cluster

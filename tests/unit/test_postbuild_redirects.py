@@ -14,7 +14,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "scripts" / "postbuild"))
 sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "scripts" / "lib"))
 
-from postbuild_lib.redirects import apply_redirect_pages  # noqa: E402
+from postbuild_lib.redirects import apply_redirect_pages
 
 _BASE = "https://sebastienrousseau.com"
 
@@ -57,7 +57,7 @@ def _make_tree(tmp_path: Path) -> Path:
 
 def test_en_page_becomes_redirect(tmp_path):
     public = _make_tree(tmp_path)
-    converted, purged = apply_redirect_pages(public)
+    converted, _purged = apply_redirect_pages(public)
     assert converted == 2
     html = (public / "papers" / "index.html").read_text()
     assert f'<meta http-equiv="refresh" content="0; url={_BASE}/research/" />' in html
@@ -77,7 +77,7 @@ def test_locale_fork_redirects_to_locale_target(tmp_path):
 
 def test_sitemap_purged_but_target_kept(tmp_path):
     public = _make_tree(tmp_path)
-    converted, purged = apply_redirect_pages(public)
+    _converted, purged = apply_redirect_pages(public)
     assert purged == 2
     sm = (public / "sitemap.xml").read_text()
     assert f"{_BASE}/papers/" not in sm
@@ -95,6 +95,18 @@ def test_idempotent_second_run(tmp_path):
     assert (public / "papers" / "index.html").read_text() == first
     # exactly one meta refresh tag, not stacked
     assert first.count("http-equiv=") == 1
+
+
+def test_malformed_page_without_head_left_untouched(tmp_path):
+    """Defensive branch: a rendered page with no <head> tag cannot take a
+    meta refresh, so it is left byte-identical and not counted."""
+    public = _make_tree(tmp_path)
+    en = public / "papers" / "index.html"
+    malformed = "<!DOCTYPE html><html><body><main>no head</main></body></html>"
+    en.write_text(malformed)
+    converted, _purged = apply_redirect_pages(public)
+    assert converted == 1  # only the fr fork converts
+    assert en.read_text() == malformed
 
 
 def test_missing_pages_are_skipped(tmp_path):

@@ -357,8 +357,8 @@
       "<li><a href=\"/ta/projects/index.html\">திறந்த மூல திட்டங்கள்</a></li>"
     ],
     [
-      "<li><a href=\"?/playlists/index\\.html\"?>Video Playlists</a></li>",
-      "<li><a href=\"/ta/playlists/index.html\">வீடியோ பிளேலிஸ்ட்கள்</a></li>"
+      "<li><a href=\"?/playlists/index\\.html\"?>Playlists</a></li>",
+      "<li><a href=\"/ta/playlists/index.html\">பிளேலிஸ்ட்கள்</a></li>"
     ],
     [
       "<li><a href=\"?/research/index\\.html\"?>Whitepapers (?:&amp;|&) Reports</a></li>",

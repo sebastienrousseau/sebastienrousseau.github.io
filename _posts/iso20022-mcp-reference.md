@@ -114,7 +114,7 @@ site_software: "Static Site Generator, Rust"
 <a class="ref-index-link" href="#gateway">
 <span class="ref-index-name"><code>iso20022-mcp</code></span>
 <span class="ref-index-role">Routes search, describe, validate, generate and parse to whichever family server the job needs.</span>
-<span class="ref-index-count">7 tools · v0.0.2</span>
+<span class="ref-index-count">7 tools · v0.0.3</span>
 </a>
 </li>
 <li class="ref-index-item">
@@ -182,7 +182,7 @@ site_software: "Static Site Generator, Rust"
 <h2 class="cat-headline">One surface, all families.</h2>
 <p class="cat-lede">Routes search, describe, validate, generate and parse to whichever family server the job needs.</p>
 </header>
-<p class="ref-capture">7 tools · v0.0.2 · captured live over MCP stdio on 2026-07-15 with <code>uvx --from &quot;iso20022-mcp[pain,pacs,acmt]&quot; iso20022-mcp</code></p>
+<p class="ref-capture">7 tools · v0.0.3 · captured live over MCP stdio on 2026-07-16 with <code>uvx --from &quot;iso20022-mcp[all]&quot; iso20022-mcp</code></p>
 <div class="ref-tools">
 <details class="ref-tool" id="gateway-search">
 <summary>
@@ -303,7 +303,7 @@ site_software: "Static Site Generator, Rust"
 <details class="ref-tool" id="gateway-generate">
 <summary>
 <span class="ref-tool-name"><code>generate</code></span>
-<span class="ref-tool-brief">Generate a validated ISO 20022 XML message from records. Supported for initiation and interbank families (pain, pacs, acmt); statement families (camt) are inbound-only and return an explanatory error.</span>
+<span class="ref-tool-brief">Generate a validated ISO 20022 XML message from records; the XML document is returned in the 'xml' key. Supported for initiation and interbank families (pain, pacs, acmt); statement families (camt) are inbound-only and return an explanatory error.</span>
 <span class="ref-tool-meta">2 parameters · 2 required</span>
 </summary>
 <div class="ref-tool-body">

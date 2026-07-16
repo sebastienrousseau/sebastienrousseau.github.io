@@ -208,9 +208,6 @@ from postbuild_lib.feeds import (  # noqa: F401 — re-exports (split from outpu
     shrink_news_sitemap,
 )
 
-# Legacy-URL redirect conversion (/papers -> /research + locale forks)
-from postbuild_lib.redirects import apply_redirect_pages
-
 # Live GitHub repo stats — moved to postbuild_lib.github_stats
 from postbuild_lib.github_stats import (
     gh_stats_index as _gh_stats_index,
@@ -257,6 +254,9 @@ from postbuild_lib.output import (  # noqa: F401 — re-exports
     write_robots,
     write_security_txt,
 )
+
+# Legacy-URL redirect conversion (/papers -> /research + locale forks)
+from postbuild_lib.redirects import apply_redirect_pages
 from postbuild_lib.schemas import (
     inject_news_article,
     inject_software_source_code,
