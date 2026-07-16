@@ -285,6 +285,131 @@ SPEAKING_MCP_HUB_CSS = r"""      /* ============================================
       .iso20022-mcp-page .mcp-props-none{font-size:.88rem;color:var(--ink-faint)}
       .iso20022-mcp-page .mcp-schema-note{margin-block-start:1.4rem;font-size:.86rem;color:var(--ink-faint)}
       @media (max-width:640px){.iso20022-mcp-page .mcp-props li{grid-template-columns:1fr;gap:.15rem}.iso20022-mcp-page .mcp-schema-sum{display:none}}
+      /* --- MCP hub: hero terminal (corral-README-style animated session).
+         CSS-only: typed lines clip their width with steps(); output lines
+         fade in on a delay; prefers-reduced-motion shows the finished
+         session statically. Real selectable text, so the hero needs no
+         1920w webp and the LCP candidate becomes the h1 headline.
+         Theme-invariant GitHub-dark palette, all pairs AAA on #0d1117:
+         #f0f6fc 17.39:1, #9ea7b3 7.78:1, #7ee787 12.32:1, #79c0ff 9.73:1;
+         title bar #c9d1d9 on #161b22 11.21:1.
+         Typed-line ch widths are len(text) incl. the prompt glyph and MUST
+         match _TERM_LINES in build_iso20022_mcp.py: 72ch / 17ch / 83ch. */
+      .iso20022-mcp-page .mcp-term{margin:0;background:#0d1117;border:1px solid #30363d;border-radius:18px;overflow:hidden;box-shadow:0 24px 60px -32px rgba(13,27,42,.45)}
+      .iso20022-mcp-page .mcp-term-bar{display:flex;align-items:center;gap:8px;background:#161b22;border-block-end:1px solid #30363d;padding:12px 16px}
+      .iso20022-mcp-page .mcp-term-dot{width:12px;height:12px;border-radius:50%;background:#30363d;flex:none}
+      .iso20022-mcp-page .mcp-term-title{font-family:var(--spk-mono);font-size:.76rem;letter-spacing:.04em;color:#c9d1d9;margin-inline-start:8px}
+      .iso20022-mcp-page .mcp-term-body{margin:0;padding:clamp(18px,2.4vw,30px);overflow-x:auto;background:transparent;border:0}
+      .iso20022-mcp-page .mcp-term-body code{display:block;font-family:var(--spk-mono);font-size:clamp(.78rem,1.1vw,.92rem);line-height:1.9;color:#f0f6fc;background:transparent;padding:0;white-space:pre}
+      .iso20022-mcp-page .mcp-tl{display:block;min-width:0}
+      .iso20022-mcp-page .mcp-tl-ps{color:#7ee787}
+      .iso20022-mcp-page .mcp-tl-ask .mcp-tl-ps{color:#79c0ff}
+      .iso20022-mcp-page .mcp-tl-out{color:#9ea7b3}
+      .iso20022-mcp-page .mcp-tl-ok{color:#7ee787}
+      .iso20022-mcp-page .mcp-tl-caret::after{content:"\258B";color:#79c0ff;animation:mcpblink 1.1s step-end infinite}
+      @keyframes mcptype{from{width:0}to{width:var(--tw)}}
+      @keyframes mcpfade{from{opacity:0}to{opacity:1}}
+      @keyframes mcpblink{50%{opacity:0}}
+      .iso20022-mcp-page .mcp-tl-typed{overflow:hidden;white-space:nowrap;width:var(--tw);animation:mcptype var(--td) steps(var(--ts),end) both;animation-delay:var(--ta)}
+      .iso20022-mcp-page .mcp-tl-fade{animation:mcpfade .3s ease both;animation-delay:var(--ta)}
+      .iso20022-mcp-page .mcp-tl-t1{--tw:72ch;--ts:72;--td:1.9s;--ta:.4s}
+      .iso20022-mcp-page .mcp-tl-t2{--tw:17ch;--ts:17;--td:.6s;--ta:2.7s}
+      .iso20022-mcp-page .mcp-tl-f3{--ta:3.5s}
+      .iso20022-mcp-page .mcp-tl-t4{--tw:83ch;--ts:83;--td:2.2s;--ta:4.3s}
+      .iso20022-mcp-page .mcp-tl-f5{--ta:6.8s}
+      .iso20022-mcp-page .mcp-tl-f6{--ta:7.5s}
+      @media (prefers-reduced-motion:reduce){.iso20022-mcp-page .mcp-tl-typed,.iso20022-mcp-page .mcp-tl-fade{animation:none;width:auto;opacity:1}.iso20022-mcp-page .mcp-tl-caret::after{animation:none}}
+"""
+
+# Page-scoped CSS for /trust/: Economist-Pro-solutions-page anatomy on the
+# site's tokens. /trust/ forks the BUILT articles page as its shell
+# (build_trust.py), so these rules ride articles.html next to
+# SPEAKING_MCP_HUB_CSS. Scoped to .trust-page / tr- prefixes.
+# Text pairs, all AAA (>= 7:1), light/dark:
+#   --ink on --bg 16.83/19.29, --ink on --bg-alt 14.92/15.46,
+#   --ink-soft on --bg 11.35/14.22, --ink-soft on --bg-alt 10.06/11.40,
+#   --ink-soft on --card 11.35/12.24, --ink-mute on --bg 7.99/9.75,
+#   --ink-mute on --bg-alt 7.08/7.81, --accent on --bg 8.95/11.10,
+#   --accent on --bg-alt 7.93/8.89, pill/copy chip (#fff on --accent) 8.95,
+#   dark pill (#000 on #8cc0ff) 11.10.
+TRUST_CSS = r"""      /* ============================================================
+         /trust/: enterprise governance & trust. Full-width band rhythm
+         (tinted hero, white, tinted, ...), left-aligned, one measure.
+         ============================================================ */
+      main.content:has(.trust-page){padding:0}
+      .trust-page{font-family:var(--type-body);color:var(--ink);line-height:1.6}
+      .trust-page .tr-wrap{max-width:1200px;margin-inline:auto;padding-inline:clamp(22px,5vw,64px)}
+      .trust-page section{padding-block:clamp(72px,9vw,112px)}
+      .trust-page .tr-tint{background:var(--bg-alt)}
+      .trust-page .tr-kicker{display:block;font-size:13px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin:0 0 16px;max-width:none}
+      .trust-page h1{font-size:clamp(40px,5.4vw,68px);font-weight:700;letter-spacing:-.022em;line-height:1.04;color:var(--ink);margin:0 0 22px;max-width:18ch;text-wrap:balance}
+      .trust-page h2{font-size:clamp(28px,3.4vw,42px);font-weight:600;letter-spacing:-.018em;line-height:1.1;color:var(--ink);margin:0;max-width:24ch;text-wrap:balance}
+      .trust-page h3{font-size:17px;line-height:1.3;font-weight:600;color:var(--ink);margin:0 0 8px;max-width:none}
+      .trust-page p{color:var(--ink-soft)}
+      .trust-page .tr-lede{font-size:clamp(17px,1.6vw,20px);line-height:1.55;color:var(--ink-soft);margin:0 0 30px;max-width:62ch}
+      .trust-page .tr-head{margin:0 0 clamp(32px,4vw,48px)}
+      .trust-page .tr-cta{display:flex;flex-wrap:wrap;align-items:center;gap:14px 18px;margin:0}
+      /* hero band */
+      .trust-page .tr-hero{padding-block:clamp(88px,11vw,136px) clamp(80px,10vw,120px)}
+      /* provenance: balanced 4-across icon cards, equal geometry
+         (icon / heading / body / action zones; action pinned to the foot) */
+      .trust-page .tr-cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(14px,1.5vw,20px)}
+      .trust-page .tr-card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:clamp(22px,2.2vw,30px);display:flex;flex-direction:column;min-width:0}
+      .trust-page .tr-card-icon{display:block;width:28px;height:28px;color:var(--accent);margin:0 0 16px;flex:none}
+      .trust-page .tr-card-icon svg{width:100%;height:100%;stroke:currentColor;fill:none}
+      .trust-page .tr-card h3{text-wrap:balance}
+      .trust-page .tr-card p{font-size:14.5px;line-height:1.55;color:var(--ink-soft);margin:0;max-width:none}
+      .trust-page .tr-card-act{margin-block-start:auto;padding-block-start:16px;font-size:14.5px}
+      .trust-page .tr-card pre{margin:14px 0 0;background:var(--bg-alt);border:1px solid var(--rule);border-radius:10px;padding:12px 14px;font-size:12.5px;line-height:1.6;color:var(--ink);white-space:pre-wrap;word-break:break-word;max-width:none}
+      .trust-page .tr-copy{border:0;cursor:pointer;font-family:inherit}
+      @media (max-width:1100px){.trust-page .tr-cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
+      @media (max-width:640px){.trust-page .tr-cards{grid-template-columns:1fr}}
+      /* preview panel: two content-sampler cards with imagery */
+      .trust-page .tr-preview{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(16px,2vw,24px)}
+      .trust-page .tr-prev-card{background:var(--card);border:1px solid var(--border);border-radius:18px;overflow:hidden;display:flex;flex-direction:column;min-width:0}
+      .trust-page .tr-prev-card img{width:100%;aspect-ratio:16/10;object-fit:cover;display:block}
+      .trust-page .tr-prev-img-b{object-position:center bottom}
+      .trust-page .tr-prev-body{padding:clamp(22px,2.4vw,32px);display:flex;flex-direction:column;flex:1}
+      .trust-page .tr-prev-body .tr-kicker{margin-block-end:10px}
+      .trust-page .tr-prev-body h3{font-size:clamp(19px,1.8vw,23px);margin:0 0 10px;text-wrap:balance}
+      .trust-page .tr-prev-body h3 a{color:var(--ink);text-decoration:none}
+      .trust-page .tr-prev-body h3 a:hover{color:var(--accent)}
+      .trust-page .tr-prev-body p{font-size:15px;line-height:1.55;margin:0;max-width:none}
+      .trust-page .tr-prev-more{margin-block-start:auto;padding-block-start:16px;font-size:14.5px;font-weight:600}
+      .trust-page .tr-prev-more a{color:var(--accent);text-decoration:none}
+      .trust-page .tr-prev-more a:hover{text-decoration:underline;text-underline-offset:3px}
+      @media (max-width:900px){.trust-page .tr-preview{grid-template-columns:1fr}}
+      /* side-by-side heading + content bands (licensing / governance /
+         recognition) */
+      .trust-page .tr-cols{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,7fr);gap:clamp(32px,5vw,72px);align-items:start}
+      .trust-page .tr-col-head .tr-lede{margin:18px 0 0;font-size:16.5px}
+      @media (max-width:960px){.trust-page .tr-cols{grid-template-columns:minmax(0,1fr);gap:32px}}
+      /* licensing table: full width of its column; the wrapper scrolls on
+         narrow viewports instead of widening the page */
+      .trust-page .tr-table-wrap{overflow-x:auto}
+      .trust-page .tr-table{width:100%;border-collapse:collapse;font-size:15px;line-height:1.5;margin:0}
+      .trust-page .tr-table th{text-align:start}
+      .trust-page .tr-table thead th{font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-mute);padding:0 20px 12px 0;border-block-end:1px solid var(--border)}
+      .trust-page .tr-table tbody th,.trust-page .tr-table tbody td{padding:15px 20px 15px 0;border-block-end:1px solid var(--rule);vertical-align:top;font-weight:400;color:var(--ink-soft)}
+      .trust-page .tr-table tbody th a{font-weight:600}
+      .trust-page .tr-note{font-size:15px;line-height:1.6;margin:22px 0 0;max-width:none}
+      /* governance: left-aligned styled list items */
+      .trust-page .tr-gov-list{list-style:none;margin:0;padding:0;display:grid;gap:14px;max-width:none}
+      .trust-page .tr-gov-list li{background:var(--card);border:1px solid var(--rule);border-radius:14px;padding:clamp(18px,2vw,24px);font-size:15px;line-height:1.6;color:var(--ink-soft);text-align:start;max-width:none}
+      .trust-page .tr-gov-list li strong{display:block;color:var(--ink);font-weight:600;margin-block-end:4px}
+      /* recognition rows: title / org / date / role columns */
+      .trust-page .tr-rec{list-style:none;margin:0;padding:0;max-width:none}
+      .trust-page .tr-rec li{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,3fr) max-content minmax(0,3fr);gap:6px 24px;align-items:baseline;padding-block:18px;border-block-start:1px solid var(--rule)}
+      .trust-page .tr-rec li:last-child{border-block-end:1px solid var(--rule)}
+      .trust-page .tr-rec-title{font-size:16px;font-weight:600;line-height:1.4}
+      .trust-page .tr-rec-org{font-size:14.5px;color:var(--ink-soft)}
+      .trust-page .tr-rec-date{font-size:13px;color:var(--ink-mute);font-variant-numeric:tabular-nums;white-space:nowrap}
+      .trust-page .tr-rec-role{font-size:13px;color:var(--ink-mute)}
+      @media (max-width:760px){.trust-page .tr-rec li{grid-template-columns:1fr}.trust-page .tr-rec-date{white-space:normal}}
+      /* end CTA band */
+      .trust-page .tr-final{text-align:center}
+      .trust-page .tr-final h2{margin-inline:auto}
+      .trust-page .tr-final .tr-cta{justify-content:center;margin-block-start:28px}
 """
 
 # Page-scoped CSS for the /iso20022-mcp-reference/ tool catalog
@@ -326,6 +451,81 @@ MCP_REFERENCE_CSS = r"""      /* --- ISO 20022 MCP reference: live-captured tool
       .ref-req{font-family:var(--type-mono,ui-monospace,monospace);font-size:11px;letter-spacing:.06em;text-transform:uppercase;white-space:nowrap}
       .ref-req-required{color:var(--ink);font-weight:600}
       .ref-req-optional{color:var(--ink-mute)}
+"""
+
+# Page-scoped CSS for /iso20022-mcp-docs/ (layout: story): FMP-density x
+# Apple-Partner-Network layout for the four-chapter tutorial. Scoped to
+# .docs-shell / .docs-* / .tut-* classes, which exist only in that post's
+# markup, so the other story pages are untouched. The tut-path progress
+# rail becomes a sticky side rail at >=1100px (CSS-only, position:sticky);
+# chapter sections use the full content width with side-by-side prose/code
+# (.docs-split) and 2x2 / 3-across card grids (.docs-cardlist).
+# Text pairs, all AAA (>= 7:1), light/dark: --ink 16.83/19.29,
+# --ink-soft on --bg 11.35/14.22, --ink-soft on --bg-alt 10.06/11.40,
+# --ink-mute on --bg 7.99/9.75, --ink-mute on --bg-alt 7.08/7.81,
+# --accent on --bg 8.95/11.10, --accent on --card 8.95/9.56.
+MCP_DOCS_CSS = r"""      /* --- ISO 20022 MCP docs: sticky-rail tutorial layout ------------- */
+      main.content:has(.docs-shell) .wrap{max-width:var(--max-wide)}
+      .docs-shell{margin-block-start:clamp(20px,3vw,40px)}
+      .docs-rail{padding:0}
+      .docs-rail .tut-path{list-style:none;margin:0;padding:0;display:grid;gap:12px;max-width:none}
+      .tut-path-item{margin:0}
+      /* main.content .docs-rail prefix = (0,3,2): beats the shell's
+         `main.content :is(p,li,...) a:not([class])` underline rule (0,2,3) */
+      main.content .docs-rail .tut-path-item a{display:block;height:100%;padding:16px 18px;border:1px solid var(--rule);border-radius:14px;background:var(--card);color:var(--ink);text-decoration:none;transition:border-color .15s ease}
+      main.content .docs-rail .tut-path-item a:hover{border-color:var(--accent)}
+      .tut-path-chapter{display:block;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-block-end:6px}
+      .tut-path-title{display:block;font-size:15.5px;font-weight:600;line-height:1.3;color:var(--ink);margin-block-end:4px}
+      .tut-path-sub{display:block;font-size:13px;line-height:1.5;color:var(--ink-soft);margin-block-end:10px}
+      .tut-mins{display:inline-block;font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-mute)}
+      @media (min-width:640px) and (max-width:1099.98px){.docs-rail .tut-path{grid-template-columns:1fr 1fr}}
+      @media (min-width:1100px){
+        .docs-shell{display:grid;grid-template-columns:264px minmax(0,1fr);gap:clamp(36px,4vw,72px);align-items:start}
+        .docs-rail{position:sticky;top:calc(var(--nav-h,64px) + 24px);max-height:calc(100vh - var(--nav-h,64px) - 48px);overflow-y:auto}
+      }
+      .docs-flow{min-width:0}
+      /* chapter heads: full-width, left-aligned, hairline rhythm */
+      .docs-flow .tut-chapter-head{margin:clamp(56px,7vw,88px) 0 0;padding-block-start:clamp(28px,3.4vw,44px);border-block-start:1px solid var(--border);text-align:start;scroll-margin-block-start:calc(var(--nav-h,64px) + 16px)}
+      .docs-flow .tut-chapter-head:first-child{margin-block-start:0;padding-block-start:0;border-block-start:0}
+      .tut-chapter-num{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border:1px solid var(--border);border-radius:50%;font-size:18px;font-weight:600;color:var(--ink-mute);margin-block-end:18px}
+      .docs-flow .tut-chapter-head .cat-headline{font-size:clamp(30px,3.6vw,44px)}
+      .docs-flow .tut-chapter-head .cat-lede{max-width:66ch !important}
+      .docs-flow .tut-chapter-head .tut-mins{margin-block-start:12px}
+      /* section heads: left-aligned within the flow column */
+      .docs-flow .cat-section-head{text-align:start;margin:clamp(40px,5vw,60px) 0 22px;max-width:none}
+      .docs-flow .cat-section-head .cat-headline{font-size:clamp(24px,2.6vw,32px)}
+      .docs-flow .cat-section-head .cat-lede{max-width:72ch !important}
+      .docs-flow .story-why{margin-block:18px 26px}
+      .docs-flow section.newsroom{margin:0;padding:0;max-width:none}
+      .docs-flow .story-intro{font-size:16.5px;margin-block:18px 0}
+      /* code: comfortable measure instead of a full-bleed strip */
+      .docs-flow pre{background:var(--bg-alt);border:1px solid var(--rule);border-radius:14px;padding:18px 20px;overflow-x:auto;max-width:860px;font-size:13.5px;line-height:1.65;color:var(--ink)}
+      .docs-flow pre pre{background:transparent;border:0;border-radius:0;padding:0;margin:0;max-width:none}
+      .docs-flow pre code{background:transparent;padding:0;border:0}
+      .docs-code-col{min-width:0}
+      .docs-code-col pre{max-width:none}
+      /* side-by-side: step prose left, code right at >=1100px */
+      @media (min-width:1100px){
+        .docs-flow section.docs-split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:clamp(24px,3vw,48px);grid-auto-flow:dense;align-items:start}
+        .docs-split > .cat-section-head{grid-column:1/-1}
+        .docs-split > .docs-code-col{grid-column:2}
+        .docs-split > .story-why,.docs-split > .story-intro{grid-column:1}
+        .docs-split .story-why{margin-block:0}
+      }
+      /* informational bullet lists as card grids (2x2, or 3-across) */
+      .docs-cardlist .story-why-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(14px,1.6vw,20px)}
+      .docs-cards-3 .story-why-list{grid-template-columns:repeat(3,minmax(0,1fr))}
+      .docs-cardlist .story-why-list li{background:var(--bg-alt);border-radius:16px;padding:clamp(20px,2vw,26px);padding-inline-start:clamp(20px,2vw,26px);max-width:none;font-size:15px;line-height:1.6;min-width:0}
+      .docs-cardlist .story-why-list li::before{content:none}
+      @media (max-width:900px){.docs-cardlist .story-why-list,.docs-cards-3 .story-why-list{grid-template-columns:1fr}}
+      /* client cards: FMP-style dataset-grid density, 3-across at wide */
+      .docs-client-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(14px,1.6vw,20px);margin-block-start:20px}
+      .docs-client{min-width:0;background:var(--bg-alt);border-radius:16px;padding:clamp(20px,2vw,26px);display:flex;flex-direction:column;gap:10px;margin:0}
+      .docs-client h4{margin:0;font-size:17px;line-height:1.3;color:var(--ink)}
+      .docs-client p{font-size:14.5px;line-height:1.55;color:var(--ink-soft);margin:0;max-width:none}
+      .docs-client pre{background:var(--card);border-color:var(--rule);margin:4px 0 0;max-width:none;font-size:12.5px}
+      @media (max-width:1200px){.docs-client-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+      @media (max-width:720px){.docs-client-grid{grid-template-columns:1fr}}
 """
 
 
@@ -555,7 +755,9 @@ STORY_HERO_MAIN = """    <section class="story-hero">
 
 def story_layout() -> str:
     html = TOP + STORY_HERO_MAIN + BOTTOM
-    return html.replace("    </style>", MCP_REFERENCE_CSS + "    </style>")
+    return html.replace(
+        "    </style>", MCP_REFERENCE_CSS + MCP_DOCS_CSS + "    </style>"
+    )
 
 
 def contact_layout() -> str:
@@ -947,9 +1149,12 @@ def main() -> None:
     for name, kind in kind_map.items():
         html = inject_schema(page_html, kind)
         if name == "articles.html":
-            # /speaking/ + /iso20022-mcp/ fork the built articles page as
-            # their shell, so the page-scoped CSS rides articles.html only.
-            html = html.replace("    </style>", SPEAKING_MCP_HUB_CSS + "    </style>")
+            # /speaking/, /iso20022-mcp/ and /trust/ fork the built articles
+            # page as their shell, so the page-scoped CSS rides articles.html
+            # only.
+            html = html.replace(
+                "    </style>", SPEAKING_MCP_HUB_CSS + TRUST_CSS + "    </style>"
+            )
         write(name, html)
     # /projects/ has its own hero: the rotating animated title is the page H1.
     write("project.html", inject_schema(project_layout(), "projects"))

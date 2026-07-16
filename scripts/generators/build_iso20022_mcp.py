@@ -672,18 +672,63 @@ def _hero(d: dict) -> str:
     )
 
 
-def _hero_image() -> str:
-    """The big rounded hero photo below the headline, Partner-Network style."""
+# Hero terminal session (corral-README style, CSS-only animation). Every
+# line reuses content verified elsewhere on this site: the one-line install
+# is the command proven against public PyPI (docs Chapter 1), `claude mcp
+# list` reporting iso20022 as connected is documented in the same chapter,
+# and the pain.001 ask/result mirrors the docs' tested prompt template
+# (schema-valid pain.001.001.03, XSD-checked before return).
+#
+# (kind, timing-class, prompt-glyph, text). Typed lines carry --tw/--ts ch
+# counts in articles.html CSS (gen_layouts.SPEAKING_MCP_HUB_CSS) that MUST
+# equal len(glyph + text): t1=72ch, t2=17ch, t4=83ch.
+_TERM_LINES: list[tuple[str, str, str, str]] = [
+    (
+        "cmd",
+        "mcp-tl-typed mcp-tl-t1",
+        "$ ",
+        'claude mcp add iso20022 -- uvx --from "iso20022-mcp[all]" iso20022-mcp',
+    ),
+    ("cmd", "mcp-tl-typed mcp-tl-t2", "$ ", "claude mcp list"),
+    ("out", "mcp-tl-fade mcp-tl-f3", "", "iso20022 · connected"),
+    (
+        "ask",
+        "mcp-tl-typed mcp-tl-t4",
+        "> ",
+        "Generate a pain.001 credit transfer paying Acme GmbH EUR 4,200, "
+        "executing Friday.",
+    ),
+    ("out", "mcp-tl-fade mcp-tl-f5", "", "generate · records validated against the official XSD"),
+    ("ok", "mcp-tl-fade mcp-tl-f6", "", "✓ schema-valid pain.001.001.03 returned"),
+]
+
+
+def _hero_terminal() -> str:
+    """An animated terminal session in the hero slot (replaces the former
+    1920w hero webp: the demo is real selectable markup, so nothing is
+    fetched, the reserved box cannot shift (zero CLS), and the LCP
+    candidate becomes the h1 headline instead of a hero image)."""
+    lines = []
+    for kind, timing, glyph, text in _TERM_LINES:
+        ps = (
+            f'<span class="mcp-tl-ps" aria-hidden="true">{_esc(glyph)}</span>'
+            if glyph
+            else ""
+        )
+        lines.append(
+            f'<span class="mcp-tl mcp-tl-{kind} {timing}">{ps}{_esc(text)}</span>'
+        )
+    caret = '<span class="mcp-tl mcp-tl-caret" aria-hidden="true"></span>'
     return (
         '<section class="mcp-hero-media"><div class="spk-wrap">'
-        + _img(
-            "modern-corporate-office-with-technological-displays",
-            "A modern financial operations floor with technology displays.",
-            "mcp-hero-img",
-            "(max-width:1120px) 100vw, 1120px",
-            eager=True,
-        )
-        + "</div></section>"
+        '<figure class="mcp-term">'
+        '<figcaption class="mcp-term-bar">'
+        '<span class="mcp-term-dot" aria-hidden="true"></span>'
+        '<span class="mcp-term-dot" aria-hidden="true"></span>'
+        '<span class="mcp-term-dot" aria-hidden="true"></span>'
+        '<span class="mcp-term-title">Terminal · claude</span></figcaption>'
+        f'<pre class="mcp-term-body"><code>{"".join(lines)}{caret}</code></pre>'
+        "</figure></div></section>"
     )
 
 
@@ -952,7 +997,7 @@ def _schemas(d: dict) -> str:
 def _render_body(d: dict) -> str:
     sections = [
         _hero(d),
-        _hero_image(),
+        _hero_terminal(),
         _cards(d["benefits"], "mcp-benefits", bullets=False),
         _imgband(
             "majed-swan-RBEv0VyNi2U",
@@ -1077,8 +1122,11 @@ def _lang_switcher_home(html: str) -> str:
     return out
 
 
+# Social-card image only: the on-page hero is now the animated terminal
+# (real markup, nothing to fetch), but link previews still need a large
+# image, so og:image keeps the verified CDN photo.
 HERO_OG_IMAGE = f"{CDN}/modern-corporate-office-with-technological-displays-1920.webp"
-# Intrinsic size of the hero webp above (checked against the served asset),
+# Intrinsic size of the og webp above (checked against the served asset),
 # stamped into og:image:width/height so link-preview crops are computed right.
 HERO_OG_SIZE = (1920, 1076)
 

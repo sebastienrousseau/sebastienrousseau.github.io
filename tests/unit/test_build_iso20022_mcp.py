@@ -203,13 +203,39 @@ def test_full_build_head_hygiene_and_copy() -> None:
     assert "`" not in body  # no literal backticks in rendered copy
     assert "Nine servers, one payment lifecycle." in out
     assert "Eight" not in out
-    # CLS guards: dimensions match the CSS aspect-ratios (16/8, 16/6).
-    assert 'class="mcp-hero-img" width="1920" height="960"' in out
+    # CLS guard: dimensions match the CSS aspect-ratio (16/6).
     assert 'class="mcp-band-img" width="1920" height="720"' in out
     # Commands are <code>, arrows are hidden from AT, CTAs carry card names.
     assert '<code class="spk-mono">' in out
     assert '<span class="spk-arw" aria-hidden="true">' in out
     assert 'aria-label="Read the docs: The gateway"' in out
+
+
+def test_hero_terminal_replaces_hero_image() -> None:
+    """The hero media slot is the animated terminal session, not a photo."""
+    out = _run_build(_fake_shell())
+    # No hero webp remains (the og:image constant is head-only).
+    assert 'class="mcp-hero-img"' not in out
+    body = out.split("<body", 1)[1]
+    assert "modern-corporate-office-with-technological-displays" not in body
+    # Terminal chrome + real selectable session text.
+    hero = body.split('<figure class="mcp-term">', 1)[1].split("</figure>", 1)[0]
+    assert '<pre class="mcp-term-body">' in hero
+    assert (
+        'claude mcp add iso20022 -- uvx --from &quot;iso20022-mcp[all]&quot; '
+        "iso20022-mcp" in hero
+    )
+    assert "schema-valid pain.001.001.03 returned" in hero
+    # Typed lines carry the ch-count timing classes documented in
+    # gen_layouts.SPEAKING_MCP_HUB_CSS (72ch / 17ch / 83ch).
+    for cls in ("mcp-tl-t1", "mcp-tl-t2", "mcp-tl-t4"):
+        assert cls in hero
+    # The ch counts themselves stay in sync with the emitted text.
+    for (_, timing, glyph, text), n in zip(
+        mcp._TERM_LINES, (72, 17, 20, 83, 52, 39), strict=True
+    ):
+        if "mcp-tl-typed" in timing:
+            assert len(glyph + text) == n
 
 
 # --- enterprise sections: flow / security / clients / tabs / schemas ---------
