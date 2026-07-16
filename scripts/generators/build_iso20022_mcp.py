@@ -654,9 +654,14 @@ def _head(eyebrow: str, headline: str, lede: str = "") -> str:
 
 
 def _hero(d: dict) -> str:
+    """Split hero: copy (eyebrow, h1, lede, CTA row) left, the animated
+    terminal right at >=1100px (stacked below, terminal directly under the
+    CTA row). The stats band (spk-microproof) sits after the split grid so
+    it never pushes the terminal out of the initial viewport."""
     h = d["hero"]
     return (
-        '<header class="spk-hero" id="spk-top"><div class="spk-hero-grid"><div>'
+        '<header class="spk-hero" id="spk-top">'
+        '<div class="spk-hero-grid"><div class="mcp-hero-copy">'
         f'<span class="spk-eyebrow">{_esc(h["eyebrow"])}</span>'
         f'<h1>{_esc(h["headline"])}</h1>'
         f'<p class="spk-lede">{_rich(h["lede"])}</p>'
@@ -665,10 +670,13 @@ def _hero(d: dict) -> str:
         '<span class="spk-arw" aria-hidden="true">&#8594;</span></a>'
         '<a href="#mcp-benefits" class="spk-btn spk-btn-ghost">See what it '
         "does</a></div>"
-        '<p class="spk-microproof"><strong>9</strong> servers, live on PyPI '
-        "&middot; <strong>100%</strong> branch-tested &middot; "
-        "<strong>vendor-neutral</strong>, Apache-2.0</p>"
-        "</div></div></header>"
+        "</div>"
+        f'<div class="mcp-hero-term">{_hero_terminal()}</div>'
+        "</div>"
+        '<div class="spk-wrap"><p class="spk-microproof"><strong>9</strong> '
+        "servers, live on PyPI &middot; <strong>100%</strong> branch-tested "
+        "&middot; <strong>vendor-neutral</strong>, Apache-2.0</p></div>"
+        "</header>"
     )
 
 
@@ -707,10 +715,11 @@ _TERM_LINES: list[tuple[str, str, str, str]] = [
 
 
 def _hero_terminal() -> str:
-    """An animated terminal session in the hero slot (replaces the former
-    1920w hero webp: the demo is real selectable markup, so nothing is
-    fetched, the reserved box cannot shift (zero CLS), and the LCP
-    candidate becomes the h1 headline instead of a hero image)."""
+    """The animated terminal session figure, embedded by _hero() as the
+    second hero-grid cell so it is above the fold on first load (replaces
+    the former 1920w hero webp: the demo is real selectable markup, so
+    nothing is fetched, the reserved box cannot shift (zero CLS), and the
+    LCP candidate stays the h1 headline instead of a hero image)."""
     lines = []
     for kind, timing, glyph, text in _TERM_LINES:
         ps = (
@@ -723,7 +732,6 @@ def _hero_terminal() -> str:
         )
     caret = '<span class="mcp-tl mcp-tl-caret" aria-hidden="true"></span>'
     return (
-        '<section class="mcp-hero-media"><div class="spk-wrap">'
         '<figure class="mcp-term">'
         '<figcaption class="mcp-term-bar">'
         '<span class="mcp-term-dot" aria-hidden="true"></span>'
@@ -731,7 +739,7 @@ def _hero_terminal() -> str:
         '<span class="mcp-term-dot" aria-hidden="true"></span>'
         '<span class="mcp-term-title">Terminal · claude</span></figcaption>'
         f'<pre class="mcp-term-body"><code>{"".join(lines)}{caret}</code></pre>'
-        "</figure></div></section>"
+        "</figure>"
     )
 
 
@@ -1000,7 +1008,6 @@ def _schemas(d: dict) -> str:
 def _render_body(d: dict) -> str:
     sections = [
         _hero(d),
-        _hero_terminal(),
         _cards(d["benefits"], "mcp-benefits", bullets=False),
         _imgband(
             "majed-swan-RBEv0VyNi2U",

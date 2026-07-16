@@ -2148,11 +2148,24 @@
          Scoped to .iso20022-mcp-page; accents use the site's own --spk-blue /
          --link-color so links + buttons stay on-brand. */
       .iso20022-mcp-page section{margin-block:clamp(44px,7vw,96px)}
-      .iso20022-mcp-page .spk-hero{margin-block-start:clamp(24px,5vw,52px)}
-      .iso20022-mcp-page .spk-hero-grid{grid-template-columns:1fr}
+      /* Split hero: tightened block spacing so the terminal chrome bar and
+         first command line land inside the initial viewport at 1440x900,
+         and the terminal top edge is on-screen at 390x844. */
+      .iso20022-mcp-page .spk-hero{margin-block-start:clamp(8px,1.5vw,20px);padding-block:clamp(16px,2.5vw,32px) clamp(20px,3vw,40px)}
+      .iso20022-mcp-page .spk-hero-grid{grid-template-columns:1fr;gap:clamp(20px,3vw,40px)}
       .iso20022-mcp-page .spk-hero h1{font-size:clamp(2.5rem,6vw,4.1rem);line-height:1.05;letter-spacing:-.022em;font-weight:600;max-width:22ch;text-wrap:balance}
       .iso20022-mcp-page .spk-hero .spk-lede{font-size:clamp(1.12rem,1.8vw,1.4rem);line-height:1.45;color:var(--ink-soft);max-width:46ch}
-      .iso20022-mcp-page .mcp-hero-media{margin-block:clamp(28px,5vw,52px) clamp(44px,7vw,96px)}
+      /* Stacked (<1100px): the terminal sits directly under the CTA row;
+         min-width:0 lets the figure shrink inside the grid track and keep
+         its own inner overflow-x scroll for the long typed lines. */
+      .iso20022-mcp-page .mcp-hero-term{min-width:0}
+      .iso20022-mcp-page .spk-hero .spk-microproof{margin-block-start:clamp(1.6rem,2.5vw,2.2rem)}
+      /* >=1100px: copy left, terminal right, vertically centered (the base
+         .spk-hero-grid already carries align-items:center). The hero wrap
+         widens to 1400px so the 83ch ask line fits the terminal column at
+         the 12px code-font floor (column ~668px vs 83ch ~598px + padding);
+         the microproof wrap widens with it so the left edges stay flush. */
+      @media (min-width:1100px){.iso20022-mcp-page .spk-hero-grid{max-width:1400px;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(32px,4vw,56px)}.iso20022-mcp-page .spk-hero>.spk-wrap{max-width:1400px}}
       .iso20022-mcp-page .mcp-hero-img{width:100%;border-radius:22px;aspect-ratio:16/8;object-fit:cover;display:block}
       .iso20022-mcp-page .mcp-band-img{width:100%;border-radius:18px;aspect-ratio:16/6;object-fit:cover;display:block}
       .iso20022-mcp-page .mcp-band-img-tall{width:100%;border-radius:18px;aspect-ratio:16/9;object-fit:cover;display:block}
@@ -2240,9 +2253,11 @@
       .iso20022-mcp-page .mcp-props-none{font-size:.88rem;color:var(--ink-faint)}
       .iso20022-mcp-page .mcp-schema-note{margin-block-start:1.4rem;font-size:.86rem;color:var(--ink-faint)}
       @media (max-width:640px){.iso20022-mcp-page .mcp-props li{grid-template-columns:1fr;gap:.15rem}.iso20022-mcp-page .mcp-schema-sum{display:none}}
-      /* --- MCP hub: hero terminal (corral-README-style animated session).
-         CSS-only: typed lines clip their width with steps(); output lines
-         fade in on a delay; prefers-reduced-motion shows the finished
+      /* --- MCP hub: hero terminal (corral-README-style animated session),
+         embedded as the second .spk-hero-grid cell so it is above the fold
+         on first load (right column at >=1100px, stacked under the CTA row
+         below). CSS-only: typed lines clip their width with steps(); output
+         lines fade in on a delay; prefers-reduced-motion shows the finished
          session statically. Real selectable text, so the hero needs no
          1920w webp and the LCP candidate becomes the h1 headline.
          Theme-invariant GitHub-dark palette, all pairs AAA on #0d1117:
@@ -2256,6 +2271,10 @@
       .iso20022-mcp-page .mcp-term-title{font-family:var(--spk-mono);font-size:.76rem;letter-spacing:.04em;color:#c9d1d9;margin-inline-start:8px}
       .iso20022-mcp-page .mcp-term-body{margin:0;padding:clamp(18px,2.4vw,30px);overflow-x:auto;background:transparent;border:0}
       .iso20022-mcp-page .mcp-term-body code{display:block;font-family:var(--spk-mono);font-size:clamp(.78rem,1.1vw,.92rem);line-height:1.9;color:#f0f6fc;background:transparent;padding:0;white-space:pre}
+      /* In the split hero the terminal shares the row with the copy, so the
+         code steps down to the 12px floor (0.75rem); at that size the 83ch
+         ask line fits the ~668px right column without inner scroll. */
+      @media (min-width:1100px){.iso20022-mcp-page .mcp-term-body code{font-size:.75rem}}
       .iso20022-mcp-page .mcp-tl{display:block;min-width:0}
       .iso20022-mcp-page .mcp-tl-ps{color:#7ee787}
       .iso20022-mcp-page .mcp-tl-ask .mcp-tl-ps{color:#79c0ff}
@@ -2267,13 +2286,15 @@
       @keyframes mcpblink{50%{opacity:0}}
       .iso20022-mcp-page .mcp-tl-typed{overflow:hidden;white-space:nowrap;width:var(--tw);animation:mcptype var(--td) steps(var(--ts),end) both;animation-delay:var(--ta)}
       .iso20022-mcp-page .mcp-tl-fade{animation:mcpfade .3s ease both;animation-delay:var(--ta)}
-      .iso20022-mcp-page .mcp-tl-t1{--tw:72ch;--ts:72;--td:1.9s;--ta:.4s}
-      .iso20022-mcp-page .mcp-tl-t2{--tw:17ch;--ts:17;--td:.6s;--ta:2.7s}
-      .iso20022-mcp-page .mcp-tl-f3{--ta:3.5s}
-      .iso20022-mcp-page .mcp-tl-t3b{--tw:8ch;--ts:8;--td:.5s;--ta:4.2s}
-      .iso20022-mcp-page .mcp-tl-t4{--tw:83ch;--ts:83;--td:2.2s;--ta:5.1s}
-      .iso20022-mcp-page .mcp-tl-f5{--ta:7.6s}
-      .iso20022-mcp-page .mcp-tl-f6{--ta:8.3s}
+      /* Now above the fold, so the session starts almost immediately
+         (.2s initial delay; the whole schedule shifts up with it). */
+      .iso20022-mcp-page .mcp-tl-t1{--tw:72ch;--ts:72;--td:1.9s;--ta:.2s}
+      .iso20022-mcp-page .mcp-tl-t2{--tw:17ch;--ts:17;--td:.6s;--ta:2.5s}
+      .iso20022-mcp-page .mcp-tl-f3{--ta:3.3s}
+      .iso20022-mcp-page .mcp-tl-t3b{--tw:8ch;--ts:8;--td:.5s;--ta:4s}
+      .iso20022-mcp-page .mcp-tl-t4{--tw:83ch;--ts:83;--td:2.2s;--ta:4.9s}
+      .iso20022-mcp-page .mcp-tl-f5{--ta:7.4s}
+      .iso20022-mcp-page .mcp-tl-f6{--ta:8.1s}
       @media (prefers-reduced-motion:reduce){.iso20022-mcp-page .mcp-tl-typed,.iso20022-mcp-page .mcp-tl-fade{animation:none;width:auto;opacity:1}.iso20022-mcp-page .mcp-tl-caret::after{animation:none}}
       /* ============================================================
          /trust/: enterprise governance & trust. Full-width band rhythm

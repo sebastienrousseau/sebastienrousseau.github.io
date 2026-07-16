@@ -218,6 +218,17 @@ def test_hero_terminal_replaces_hero_image() -> None:
     assert 'class="mcp-hero-img"' not in out
     body = out.split("<body", 1)[1]
     assert "modern-corporate-office-with-technological-displays" not in body
+    # Split hero: the terminal is a hero-grid cell (above the fold), not a
+    # standalone media section below the hero.
+    assert 'class="mcp-hero-media"' not in body
+    header = body.split('<header class="spk-hero"', 1)[1].split("</header>", 1)[0]
+    assert '<div class="mcp-hero-term"><figure class="mcp-term">' in header
+    # Order inside the hero: copy + CTA row, then terminal, then stats band.
+    assert (
+        header.index('class="spk-cta-row"')
+        < header.index('class="mcp-hero-term"')
+        < header.index('class="spk-microproof"')
+    )
     # Terminal chrome + real selectable session text.
     hero = body.split('<figure class="mcp-term">', 1)[1].split("</figure>", 1)[0]
     assert '<pre class="mcp-term-body">' in hero
