@@ -186,24 +186,190 @@ def render_home() -> str | None:  # noqa: C901 — orchestrates the FR home fork
         return None
     shell = shell_src.read_text(encoding="utf-8")
 
+    # Per-locale home <title> + meta description, natively phrased. Faithful
+    # to the EN home title "Sebastien Rousseau: AI, Payments & Quantum
+    # Cryptography" and its description. Every active locale must have an
+    # entry here; locales missing from the map fall back to English, never
+    # to another translation.
+    _en_home_title = "Sebastien Rousseau: AI, Payments & Quantum Cryptography"
+    _en_home_desc = (
+        "The future of banking through applied AI, payments and quantum-resistant "
+        "security. Research, open-source libraries and product consulting for "
+        "financial services."
+    )
     _home_titles = {
-        "fr": "Sebastien Rousseau — IA, paiements et cryptographie quantique",
-        "de": "Sebastien Rousseau — KI, Zahlungen und Quantenkryptografie",
+        "ar": "سيباستيان روسو: الذكاء الاصطناعي والمدفوعات والتشفير الكمومي",
+        "bn": "Sebastien Rousseau: এআই, পেমেন্ট ও কোয়ান্টাম ক্রিপ্টোগ্রাফি",
+        "cs": "Sebastien Rousseau: AI, platby a kvantová kryptografie",
+        "de": "Sebastien Rousseau: KI, Zahlungen und Quantenkryptografie",
+        "es": "Sebastien Rousseau: IA, pagos y criptografía cuántica",
+        "fil": "Sebastien Rousseau: AI, mga pagbabayad at quantum cryptography",
+        "fr": "Sebastien Rousseau : IA, paiements et cryptographie quantique",
+        "ha": "Sebastien Rousseau: AI, biyan kuɗi da quantum cryptography",
+        "he": "סבסטיאן רוסו: בינה מלאכותית, תשלומים והצפנה קוונטית",
+        "hi": "Sebastien Rousseau: एआई, पेमेंट्स और क्वांटम क्रिप्टोग्राफी",
+        "hu": "Sebastien Rousseau: MI, fizetések és kvantumkriptográfia",
+        "id": "Sebastien Rousseau: AI, pembayaran, dan kriptografi kuantum",
+        "it": "Sebastien Rousseau: IA, pagamenti e crittografia quantistica",
+        "ja": "Sebastien Rousseau：AI・決済・量子暗号",
+        "ko": "Sebastien Rousseau: AI, 결제, 양자 암호",
+        "nl": "Sebastien Rousseau: AI, betalingen en kwantumcryptografie",
+        "pl": "Sebastien Rousseau: AI, płatności i kryptografia kwantowa",
+        "pt-br": "Sebastien Rousseau: IA, pagamentos e criptografia quântica",
+        "ro": "Sebastien Rousseau: IA, plăți și criptografie cuantică",
+        "ru": "Себастьен Руссо: ИИ, платежи и квантовая криптография",
+        "sv": "Sebastien Rousseau: AI, betalningar och kvantkryptografi",
+        "th": "Sebastien Rousseau: เอไอ การชำระเงิน และการเข้ารหัสเชิงควอนตัม",
+        "tr": "Sebastien Rousseau: Yapay Zeka, Ödemeler ve Kuantum Kriptografi",
+        "uk": "Себастьєн Руссо: ШІ, платежі та квантова криптографія",
+        "vi": "Sebastien Rousseau: AI, thanh toán và mật mã lượng tử",
+        "yo": "Sebastien Rousseau: AI, ìsanwó àti quantum cryptography",
+        "zh-hans": "Sebastien Rousseau：AI、支付与量子密码学",
+        "zh-hant": "Sebastien Rousseau：AI、支付與量子密碼學",
     }
     _home_descs = {
-        "fr": (
-            "L'avenir de la banque par l'IA appliquée, les paiements et la sécurité "
-            "résistante au quantique. Recherche, bibliothèques open source et "
-            "conseil produit pour les services financiers."
+        "ar": (
+            "مستقبل الخدمات المصرفية عبر الذكاء الاصطناعي التطبيقي والمدفوعات "
+            "والأمن المقاوم للحوسبة الكمومية. أبحاث ومكتبات مفتوحة المصدر "
+            "واستشارات منتجات للخدمات المالية."
+        ),
+        "bn": (
+            "প্রায়োগিক এআই, পেমেন্ট এবং কোয়ান্টাম-প্রতিরোধী নিরাপত্তার মাধ্যমে "
+            "ব্যাংকিংয়ের ভবিষ্যৎ। আর্থিক পরিষেবার জন্য গবেষণা, ওপেন-সোর্স "
+            "লাইব্রেরি এবং প্রোডাক্ট কনসালটিং।"
+        ),
+        "cs": (
+            "Budoucnost bankovnictví skrze aplikovanou AI, platby a zabezpečení "
+            "odolné vůči kvantovým počítačům. Výzkum, open source knihovny a "
+            "produktové poradenství pro finanční služby."
         ),
         "de": (
             "Die Zukunft des Bankwesens durch angewandte KI, Zahlungen und "
             "quantensichere Sicherheit. Forschung, Open-Source-Bibliotheken und "
             "Produktberatung für Finanzdienstleistungen."
         ),
+        "es": (
+            "El futuro de la banca a través de la IA aplicada, los pagos y la "
+            "seguridad resistente a la computación cuántica. Investigación, "
+            "bibliotecas open source y consultoría de producto para servicios "
+            "financieros."
+        ),
+        "fil": (
+            "Ang hinaharap ng pagbabangko sa pamamagitan ng applied AI, mga "
+            "pagbabayad at seguridad na matibay laban sa quantum computing. "
+            "Pananaliksik, open-source na mga library at product consulting "
+            "para sa mga serbisyong pinansyal."
+        ),
+        "fr": (
+            "L'avenir de la banque par l'IA appliquée, les paiements et la sécurité "
+            "résistante au quantique. Recherche, bibliothèques open source et "
+            "conseil produit pour les services financiers."
+        ),
+        "ha": (
+            "Makomar harkokin banki ta hanyar AI mai amfani, hanyoyin biyan kuɗi "
+            "da tsaro mai jure kwamfutar quantum. Bincike, ɗakunan karatu na "
+            "open source da shawarwarin samfur don ayyukan kuɗi."
+        ),
+        "he": (
+            "עתיד הבנקאות באמצעות בינה מלאכותית יישומית, תשלומים ואבטחה עמידה "
+            "בפני מחשוב קוונטי. מחקר, ספריות קוד פתוח וייעוץ מוצר לשירותים "
+            "פיננסיים."
+        ),
+        "hi": (
+            "एप्लाइड एआई, पेमेंट्स और क्वांटम-प्रतिरोधी सुरक्षा के माध्यम से "
+            "बैंकिंग का भविष्य। वित्तीय सेवाओं के लिए शोध, ओपन-सोर्स लाइब्रेरी "
+            "और प्रोडक्ट कंसल्टिंग।"
+        ),
+        "hu": (
+            "A bankszektor jövője az alkalmazott MI, a fizetések és a "
+            "kvantumbiztos védelem révén. Kutatás, nyílt forráskódú könyvtárak "
+            "és terméktanácsadás pénzügyi szolgáltatásokhoz."
+        ),
+        "id": (
+            "Masa depan perbankan melalui AI terapan, pembayaran, dan keamanan "
+            "tahan kuantum. Riset, pustaka open source, dan konsultasi produk "
+            "untuk layanan keuangan."
+        ),
+        "it": (
+            "Il futuro della banca attraverso l'IA applicata, i pagamenti e la "
+            "sicurezza resistente al quantum. Ricerca, librerie open source e "
+            "consulenza di prodotto per i servizi finanziari."
+        ),
+        "ja": (
+            "応用AI・決済・耐量子セキュリティが切り拓く銀行の未来。"
+            "金融サービスのための研究、オープンソースライブラリ、"
+            "プロダクトコンサルティング。"
+        ),
+        "ko": (
+            "응용 AI, 결제, 양자 내성 보안이 이끄는 은행의 미래. 금융 서비스를 "
+            "위한 연구, 오픈소스 라이브러리, 제품 컨설팅."
+        ),
+        "nl": (
+            "De toekomst van het bankwezen via toegepaste AI, betalingen en "
+            "kwantumbestendige beveiliging. Onderzoek, open source bibliotheken "
+            "en productadvies voor financiële dienstverlening."
+        ),
+        "pl": (
+            "Przyszłość bankowości dzięki stosowanej AI, płatnościom i "
+            "bezpieczeństwu odpornemu na komputery kwantowe. Badania, biblioteki "
+            "open source i doradztwo produktowe dla usług finansowych."
+        ),
+        "pt-br": (
+            "O futuro do setor bancário por meio de IA aplicada, pagamentos e "
+            "segurança resistente à computação quântica. Pesquisa, bibliotecas "
+            "open source e consultoria de produto para serviços financeiros."
+        ),
+        "ro": (
+            "Viitorul serviciilor bancare prin IA aplicată, plăți și securitate "
+            "rezistentă la calculul cuantic. Cercetare, biblioteci open source "
+            "și consultanță de produs pentru servicii financiare."
+        ),
+        "ru": (
+            "Будущее банковского дела через прикладной ИИ, платежи и "
+            "квантово-устойчивую безопасность. Исследования, библиотеки с "
+            "открытым кодом и продуктовый консалтинг для финансовых услуг."
+        ),
+        "sv": (
+            "Bankväsendets framtid genom tillämpad AI, betalningar och "
+            "kvantresistent säkerhet. Forskning, open source-bibliotek och "
+            "produktrådgivning för finansiella tjänster."
+        ),
+        "th": (
+            "อนาคตของธนาคารผ่านเอไอเชิงประยุกต์ การชำระเงิน "
+            "และความปลอดภัยที่ทนทานต่อควอนตัม งานวิจัย ไลบรารีโอเพนซอร์ส "
+            "และที่ปรึกษาด้านผลิตภัณฑ์สำหรับบริการทางการเงิน"
+        ),
+        "tr": (
+            "Uygulamalı yapay zeka, ödemeler ve kuantuma dayanıklı güvenlikle "
+            "bankacılığın geleceği. Finansal hizmetler için araştırma, açık "
+            "kaynak kütüphaneler ve ürün danışmanlığı."
+        ),
+        "uk": (
+            "Майбутнє банківської справи через прикладний ШІ, платежі та "
+            "квантово-стійку безпеку. Дослідження, бібліотеки з відкритим кодом "
+            "і продуктовий консалтинг для фінансових послуг."
+        ),
+        "vi": (
+            "Tương lai của ngân hàng qua AI ứng dụng, thanh toán và bảo mật "
+            "kháng lượng tử. Nghiên cứu, thư viện mã nguồn mở và tư vấn sản "
+            "phẩm cho dịch vụ tài chính."
+        ),
+        "yo": (
+            "Ọjọ́ iwájú ilé-ìfowópamọ́ nípasẹ̀ AI alámùúlò, ìsanwó àti ààbò tí ó "
+            "lè dojú kọ kọ̀mpútà quantum. Ìwádìí, àwọn ibi ìkówèésí orísun-ṣíṣí "
+            "àti ìgbani-nímọ̀ràn ọjà fún àwọn iṣẹ́ ìnáwó."
+        ),
+        "zh-hans": (
+            "以应用 AI、支付与抗量子安全塑造银行业的未来。面向金融服务的研究、"
+            "开源库与产品咨询。"
+        ),
+        "zh-hant": (
+            "以應用 AI、支付與抗量子安全塑造銀行業的未來。面向金融服務的研究、"
+            "開源庫與產品諮詢。"
+        ),
     }
-    title = _home_titles.get(st.LANG_CODE, _home_titles["fr"])
-    desc = _home_descs.get(st.LANG_CODE, _home_descs["fr"])
+    title = _home_titles.get(st.LANG_CODE, _en_home_title)
+    desc = _home_descs.get(st.LANG_CODE, _en_home_desc)
     url_fr = f"{st.BASE}/{st.LANG_CODE}/"
 
     shell = _set_html_lang(shell)

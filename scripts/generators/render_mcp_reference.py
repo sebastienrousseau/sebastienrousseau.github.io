@@ -258,13 +258,13 @@ def _render_tool(tool: dict, server_id: str) -> list[str]:
     else:
         meta = f"{n_params} parameter{'s' if n_params != 1 else ''} · {n_req} required"
     out = [
-        f'<details class="ref-tool" id="{server_id}-{name}">',
-        "<summary>",
+        f'<details class="qa-item ref-tool" id="{server_id}-{name}">',
+        '<summary class="qa-q">',
         f'<span class="ref-tool-name"><code>{name}</code></span>',
         f'<span class="ref-tool-brief">{brief}</span>',
         f'<span class="ref-tool-meta">{meta}</span>',
         "</summary>",
-        '<div class="ref-tool-body">',
+        '<div class="qa-a ref-tool-body">',
     ]
     out.extend(f'<p class="ref-tool-desc">{_inline_html(para)}</p>' for para in paras[1:])
     out += _render_params(tool, server_id)
@@ -309,7 +309,7 @@ def _render_server(meta: dict, doc: dict) -> list[str]:
         f'<p class="ref-capture">{len(tools)} tools · v{html.escape(version)} · '
         f"captured live over MCP stdio on {html.escape(captured)} with "
         f"<code>{html.escape(command)}</code></p>",
-        '<div class="ref-tools">',
+        '<div class="qa-list ref-tools">',
     ]
     for tool in tools:
         out += _render_tool(tool, meta["id"])

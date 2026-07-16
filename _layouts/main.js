@@ -804,7 +804,7 @@ function fallbackCopy(text, done) {
             "pre.mermaid svg .loopText, pre.mermaid svg .loopText tspan { fill: var(--ink, #111111) !important; }",
             "pre.mermaid svg .loopLine { stroke: var(--border, #3a3a3e) !important; fill: none !important; }",
             "pre.mermaid svg .active { fill: var(--bg-alt, #fafafc) !important; stroke: var(--border, #3a3a3e) !important; }",
-            "pre.mermaid svg circle.sequenceNumber { fill: var(--accent, #0056b3) !important; stroke: var(--accent, #0056b3) !important; }",
+            "pre.mermaid svg circle.sequenceNumber { fill: var(--accent, #0043a5) !important; stroke: var(--accent, #0043a5) !important; }",
             "pre.mermaid svg text.sequenceNumber { fill: #ffffff !important; stroke: none !important; font-weight: bold !important; }",
             "pre.mermaid svg .edgePath .path { stroke: var(--ink-mute, #3a3a3e) !important; }",
             "pre.mermaid svg .edgeLabel rect { fill: var(--card, #ffffff) !important; }",

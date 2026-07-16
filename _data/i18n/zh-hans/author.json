@@ -1,5 +1,5 @@
 {
   "_comment": "Simplified Chinese (zh-hans) author-card prose — DRAFT pending native review. Mirrors the EN key set; CI gate test_i18n_author.py enforces parity.",
   "bio": "资深银行技术专家，撰写关于应用人工智能、ISO 20022 迁移、面向金融服务的后量子密码学，以及批发支付结构性转型的内容。",
-  "credentialsPrefix": "20 多年经验，曾任职于汇丰商业及投资银行、PayPal、巴克莱、Shazam、AKQA、维珍集团。"
+  "credentialsPrefix": "近二十年经验，曾任职于汇丰商业及投资银行、PayPal、巴克莱、Shazam、AKQA、维珍集团。"
 }

@@ -654,9 +654,14 @@ def _head(eyebrow: str, headline: str, lede: str = "") -> str:
 
 
 def _hero(d: dict) -> str:
+    """Split hero: copy (eyebrow, h1, lede, CTA row) left, the animated
+    terminal right at >=1100px (stacked below, terminal directly under the
+    CTA row). The stats band (spk-microproof) sits after the split grid so
+    it never pushes the terminal out of the initial viewport."""
     h = d["hero"]
     return (
-        '<header class="spk-hero" id="spk-top"><div class="spk-hero-grid"><div>'
+        '<header class="spk-hero" id="spk-top">'
+        '<div class="spk-hero-grid"><div class="mcp-hero-copy">'
         f'<span class="spk-eyebrow">{_esc(h["eyebrow"])}</span>'
         f'<h1>{_esc(h["headline"])}</h1>'
         f'<p class="spk-lede">{_rich(h["lede"])}</p>'
@@ -665,25 +670,76 @@ def _hero(d: dict) -> str:
         '<span class="spk-arw" aria-hidden="true">&#8594;</span></a>'
         '<a href="#mcp-benefits" class="spk-btn spk-btn-ghost">See what it '
         "does</a></div>"
-        '<p class="spk-microproof"><strong>9</strong> servers, live on PyPI '
-        "&middot; <strong>100%</strong> branch-tested &middot; "
-        "<strong>vendor-neutral</strong>, Apache-2.0</p>"
-        "</div></div></header>"
+        "</div>"
+        f'<div class="mcp-hero-term">{_hero_terminal()}</div>'
+        "</div>"
+        '<div class="spk-wrap"><p class="spk-microproof"><strong>9</strong> '
+        "servers, live on PyPI &middot; <strong>100%</strong> branch-tested "
+        "&middot; <strong>vendor-neutral</strong>, Apache-2.0</p></div>"
+        "</header>"
     )
 
 
-def _hero_image() -> str:
-    """The big rounded hero photo below the headline, Partner-Network style."""
-    return (
-        '<section class="mcp-hero-media"><div class="spk-wrap">'
-        + _img(
-            "modern-corporate-office-with-technological-displays",
-            "A modern financial operations floor with technology displays.",
-            "mcp-hero-img",
-            "(max-width:1120px) 100vw, 1120px",
-            eager=True,
+# Hero terminal session (corral-README style, CSS-only animation). Every
+# line reuses content verified elsewhere on this site: the one-line install
+# is the command proven against public PyPI (docs Chapter 1), `claude mcp
+# list` reporting iso20022 as connected is documented in the same chapter,
+# and the pain.001 ask/result mirrors the docs' tested prompt template
+# (schema-valid pain.001.001.03, XSD-checked before return).
+#
+# (kind, timing-class, prompt-glyph, text). Typed lines carry --tw/--ts ch
+# counts in articles.html CSS (gen_layouts.SPEAKING_MCP_HUB_CSS) that MUST
+# equal len(glyph + text): t1=72ch, t2=17ch, t3b=8ch, t4=83ch.
+# The ask line is typed INSIDE the Claude session opened by '$ claude' -
+# a reader pasting it into a shell would get 'command not found'.
+_TERM_LINES: list[tuple[str, str, str, str]] = [
+    (
+        "cmd",
+        "mcp-tl-typed mcp-tl-t1",
+        "$ ",
+        'claude mcp add iso20022 -- uvx --from "iso20022-mcp[all]" iso20022-mcp',
+    ),
+    ("cmd", "mcp-tl-typed mcp-tl-t2", "$ ", "claude mcp list"),
+    ("out", "mcp-tl-fade mcp-tl-f3", "", "iso20022 · connected"),
+    ("cmd", "mcp-tl-typed mcp-tl-t3b", "$ ", "claude"),
+    (
+        "ask",
+        "mcp-tl-typed mcp-tl-t4",
+        "> ",
+        "Generate a pain.001 credit transfer paying Acme GmbH EUR 4,200, "
+        "executing Friday.",
+    ),
+    ("out", "mcp-tl-fade mcp-tl-f5", "", "generate · records validated against the official XSD"),
+    ("ok", "mcp-tl-fade mcp-tl-f6", "", "✓ schema-valid pain.001.001.03 returned"),
+]
+
+
+def _hero_terminal() -> str:
+    """The animated terminal session figure, embedded by _hero() as the
+    second hero-grid cell so it is above the fold on first load (replaces
+    the former 1920w hero webp: the demo is real selectable markup, so
+    nothing is fetched, the reserved box cannot shift (zero CLS), and the
+    LCP candidate stays the h1 headline instead of a hero image)."""
+    lines = []
+    for kind, timing, glyph, text in _TERM_LINES:
+        ps = (
+            f'<span class="mcp-tl-ps" aria-hidden="true">{_esc(glyph)}</span>'
+            if glyph
+            else ""
         )
-        + "</div></section>"
+        lines.append(
+            f'<span class="mcp-tl mcp-tl-{kind} {timing}">{ps}{_esc(text)}</span>'
+        )
+    caret = '<span class="mcp-tl mcp-tl-caret" aria-hidden="true"></span>'
+    return (
+        '<figure class="mcp-term">'
+        '<figcaption class="mcp-term-bar">'
+        '<span class="mcp-term-dot" aria-hidden="true"></span>'
+        '<span class="mcp-term-dot" aria-hidden="true"></span>'
+        '<span class="mcp-term-dot" aria-hidden="true"></span>'
+        '<span class="mcp-term-title">Terminal · claude</span></figcaption>'
+        f'<pre class="mcp-term-body"><code>{"".join(lines)}{caret}</code></pre>'
+        "</figure>"
     )
 
 
@@ -820,7 +876,8 @@ def _code_block(code: str, block_id: str = "", copy: bool = False) -> str:
     btn = ""
     if copy and block_id:
         btn = (
-            f'<button type="button" class="mcp-copy" data-copy="#{block_id}" '
+            f'<button type="button" class="ap-cta-mini mcp-copy" '
+            f'data-copy="#{block_id}" '
             f'aria-label="Copy to clipboard">Copy</button>'
         )
     return f'<pre class="mcp-code"{id_attr}><code>{_esc(code)}</code></pre>{btn}'
@@ -927,13 +984,13 @@ def _schemas(d: dict) -> str:
     if not tools:
         return ""
     blocks = [
-        '<details class="mcp-schema">'
-        '<summary><code class="spk-mono">'
+        '<details class="qa-item mcp-schema">'
+        '<summary class="qa-q"><code class="spk-mono">'
         + _esc(t["name"])
         + '</code><span class="mcp-schema-sum">'
         + _esc(t.get("description", ""))
-        + '</span><span class="spk-ic" aria-hidden="true">+</span></summary>'
-        '<div class="mcp-schema-body">'
+        + "</span></summary>"
+        '<div class="qa-a mcp-schema-body">'
         f'<p>{_esc(t.get("description", ""))}</p>'
         + _schema_props(t.get("inputSchema") or {})
         + "</div></details>"
@@ -942,7 +999,7 @@ def _schemas(d: dict) -> str:
     return (
         '<section id="mcp-schemas"><div class="spk-wrap">'
         + _head(d["eyebrow"], d["headline"], d["lede"])
-        + f'<div class="mcp-schemas">{"".join(blocks)}</div>'
+        + f'<div class="qa-list mcp-schemas">{"".join(blocks)}</div>'
         f'<p class="mcp-schema-note">{_esc(d["note"])}</p>'
         "</div></section>"
     )
@@ -951,7 +1008,6 @@ def _schemas(d: dict) -> str:
 def _render_body(d: dict) -> str:
     sections = [
         _hero(d),
-        _hero_image(),
         _cards(d["benefits"], "mcp-benefits", bullets=False),
         _imgband(
             "majed-swan-RBEv0VyNi2U",
@@ -1076,8 +1132,11 @@ def _lang_switcher_home(html: str) -> str:
     return out
 
 
+# Social-card image only: the on-page hero is now the animated terminal
+# (real markup, nothing to fetch), but link previews still need a large
+# image, so og:image keeps the verified CDN photo.
 HERO_OG_IMAGE = f"{CDN}/modern-corporate-office-with-technological-displays-1920.webp"
-# Intrinsic size of the hero webp above (checked against the served asset),
+# Intrinsic size of the og webp above (checked against the served asset),
 # stamped into og:image:width/height so link-preview crops are computed right.
 HERO_OG_SIZE = (1920, 1076)
 

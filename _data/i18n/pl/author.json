@@ -1,5 +1,5 @@
 {
   "_comment": "Polish author-card prose — DRAFT pending native-speaker review. Mirrors EN key set; CI gate test_i18n_author.py enforces parity.",
   "bio": "Starszy technolog bankowy, pisze o zastosowanej sztucznej inteligencji, migracji na ISO 20022, kryptografii postkwantowej dla usług finansowych oraz strukturalnej transformacji płatności hurtowych.",
-  "credentialsPrefix": "Ponad 20 lat doświadczenia w HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group."
+  "credentialsPrefix": "Blisko dwie dekady doświadczenia w HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group."
 }

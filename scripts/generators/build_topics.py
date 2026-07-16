@@ -529,6 +529,18 @@ def _swap_main_body(shell: str, body: str) -> str:
 _LDJSON_BLOCKS_RE = re.compile(
     r'<script type="application/ld\+json">[\s\S]*?</script>', re.IGNORECASE
 )
+# The forked /articles/ shell carries the site-wide `ap-hero` band whose
+# <h1> is the author's name. Topic pages emit their own page-scoped <h1>
+# ("Topics" on the hub, the cluster title on each pillar page), so keeping
+# the shell hero would ship two <h1>s, the first one naming the wrong
+# thing. Strip it and let the topic header be the page's only <h1>.
+_AP_HERO_RE = re.compile(r'<section class="ap-hero">[\s\S]*?</section>\s*', re.IGNORECASE)
+
+
+def _strip_shell_hero(shell: str) -> str:
+    """Remove the shell's `ap-hero` section so each topic page has
+    exactly one <h1>, the topic's own."""
+    return _AP_HERO_RE.sub("", shell, count=1)
 
 
 def _strip_extra_jsonld(shell: str) -> str:
@@ -655,6 +667,7 @@ def render_topic(slug: str, spec: dict[str, object], shell: str) -> tuple[str, s
     ldjson = _build_topic_jsonld(slug, title, lede, slugs, post_titles)
 
     out = _strip_extra_jsonld(shell)
+    out = _strip_shell_hero(out)
     out = _swap_main_body(out, body)
 
     page_title = f"{title} — Sebastien Rousseau"
@@ -760,6 +773,7 @@ def render_hub(shell: str) -> tuple[str, str]:
         + "</section>"
     )
     out = _strip_extra_jsonld(shell)
+    out = _strip_shell_hero(out)
     out = _swap_main_body(out, body)
     title = "Topics — Sebastien Rousseau"
     desc = "Curated topic clusters covering post-quantum cryptography, ISO 20022, applied AI in banking, Rust open source, and digital assets."

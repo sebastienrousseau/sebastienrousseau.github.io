@@ -244,7 +244,7 @@ def build_llms_txt() -> str:
     out.append("")
     out.append(
         "AI, banking and financial services expert. Senior payments leader "
-        "at HSBC Commercial & Investment Bank. Twenty years across Tier-1 "
+        "at HSBC Commercial & Investment Bank. Nearly two decades across Tier-1 "
         "banks (HSBC, PayPal, Barclays) and consumer technology (Shazam, "
         "AKQA, Virgin Group). Applied AI, ISO 20022 migration, wholesale "
         "payments and post-quantum cryptography for financial services."
@@ -335,7 +335,7 @@ def build_llms_txt() -> str:
     out.append("Sebastien Rousseau (London, UK)")
     out.append("")
     out.append("- LinkedIn: https://www.linkedin.com/in/sebastienrousseau/")
-    out.append("- Twitter / X: https://twitter.com/wwdseb")
+    out.append("- Twitter / X: https://x.com/wwdseb")
     out.append("- Medium: https://medium.com/@BankingOnQuantum")
     out.append("- YouTube: https://www.youtube.com/@BankingOnQuantum")
     out.append("- GitHub: https://github.com/sebastienrousseau")
@@ -488,7 +488,9 @@ def build_llms_ctx_txt() -> str:
     out.append("")
     out.append("## Author")
     out.append("- Sebastien Rousseau, London, UK.")
-    out.append("- Senior payments leader, 20+ years at Tier-1 banks (HSBC, PayPal, Barclays).")
+    out.append(
+        "- Senior payments leader, nearly two decades at Tier-1 banks (HSBC, PayPal, Barclays)."
+    )
     out.append("- ORCID: https://orcid.org/0009-0005-1434-284X")
     out.append("- GitHub: https://github.com/sebastienrousseau")
     out.append("- LinkedIn: https://www.linkedin.com/in/sebastienrousseau/")

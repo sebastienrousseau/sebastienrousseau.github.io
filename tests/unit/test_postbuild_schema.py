@@ -64,10 +64,13 @@ def test_convert_faq_to_qa_rewrites_strong_q_a_pattern():
         "</div></main>"
     )
     out = _convert_faq_to_qa(html)
-    assert '<details class="qa-item" open>' in out
+    # Collapsed by default (no ``open`` attribute) and a semantics-neutral
+    # <div> answer wrapper, matching the canonical papers/projects accordion.
+    assert '<details class="qa-item">' in out
+    assert '<details class="qa-item" open>' not in out
     assert '<summary class="qa-q">Q1: Is this hot?</summary>' in out
     assert '<summary class="qa-q">Q2: Anything else?</summary>' in out
-    assert '<section class="qa-a"><p>Yes, very.</p></section>' in out
+    assert '<div class="qa-a"><p>Yes, very.</p></div>' in out
 
 
 def test_convert_faq_to_qa_no_op_without_faq_h2():

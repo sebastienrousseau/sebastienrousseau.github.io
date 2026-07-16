@@ -1,5 +1,5 @@
 {
   "_comment": "Swedish author-card prose — DRAFT pending native review. Mirrors the EN key set; CI gate test_i18n_author.py enforces parity.",
   "bio": "Senior banktekniker — skriver om tillämpad AI, migrering till ISO 20022, postkvantkryptografi för finansiella tjänster och den strukturella omvandlingen av grossistbetalningar.",
-  "credentialsPrefix": "Över 20 års erfarenhet från HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA och Virgin Group."
+  "credentialsPrefix": "Nästan två decennier av erfarenhet från HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA och Virgin Group."
 }

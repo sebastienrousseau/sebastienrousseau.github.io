@@ -102,7 +102,8 @@ site_software: "Static Site Generator, Rust"
 
 <p class="story-intro">The ISO 20022 MCP Suite is the open bank-message layer for AI agents: nine vendor-neutral servers to generate, validate, reconcile and settle ISO 20022 payments from natural language. Connect it to the AI client you already use, in one command or one block of JSON, and go from a plain-language prompt to a validated bank message in under a minute. No account, no key, no lock-in.</p>
 
-<nav class="newsroom" aria-label="Tutorial path">
+<div class="docs-shell">
+<nav class="newsroom docs-rail" aria-label="Tutorial path">
 <ol class="tut-path">
 <li class="tut-path-item">
 <a href="#chapter-1">
@@ -139,6 +140,8 @@ site_software: "Static Site Generator, Rust"
 </ol>
 </nav>
 
+<div class="docs-flow">
+
 <header class="tut-chapter-head" id="chapter-1">
 <span class="tut-chapter-num" aria-hidden="true">1</span>
 <p class="cat-kicker">CHAPTER 1 · CONNECT</p>
@@ -147,7 +150,7 @@ site_software: "Static Site Generator, Rust"
 <span class="tut-mins">About 5 minutes</span>
 </header>
 
-<section class="newsroom" id="claude-code">
+<section class="newsroom docs-split" id="claude-code">
 <header class="cat-section-head"><p class="cat-kicker">CLAUDE CODE</p><h3 class="cat-headline">One command in your terminal.</h3><p class="cat-lede">Claude Code registers MCP servers with a single CLI command. The gateway routes every request to whichever of the nine servers the job needs.</p></header>
 <div class="story-why">
 <ul class="story-why-list">
@@ -156,9 +159,13 @@ site_software: "Static Site Generator, Rust"
 </ul>
 </div>
 
+<div class="docs-code-col">
+
 ```bash
 claude mcp add iso20022 -- uvx --from "iso20022-mcp[all]" iso20022-mcp
 ```
+
+</div>
 
 <div class="story-why">
 <ul class="story-why-list">
@@ -168,8 +175,10 @@ claude mcp add iso20022 -- uvx --from "iso20022-mcp[all]" iso20022-mcp
 </div>
 </section>
 
-<section class="newsroom" id="claude-desktop">
+<section class="newsroom docs-split" id="claude-desktop">
 <header class="cat-section-head"><p class="cat-kicker">CLAUDE DESKTOP</p><h3 class="cat-headline">One block of JSON.</h3><p class="cat-lede">Open Settings › Developer › Edit Config. That opens <code>claude_desktop_config.json</code> (macOS: <code>~/Library/Application Support/Claude/</code>, Windows: <code>%APPDATA%\Claude\</code>). Add the server and restart:</p></header>
+
+<div class="docs-code-col">
 
 ```json
 {
@@ -182,6 +191,8 @@ claude mcp add iso20022 -- uvx --from "iso20022-mcp[all]" iso20022-mcp
 }
 ```
 
+</div>
+
 <div class="story-why">
 <ul class="story-why-list">
 <li><strong>Where it shows up.</strong> After a restart, the suite's tools appear under the tools icon in the chat box. Claude asks before every tool call, so you approve each step.</li>
@@ -191,7 +202,7 @@ claude mcp add iso20022 -- uvx --from "iso20022-mcp[all]" iso20022-mcp
 </div>
 </section>
 
-<section class="newsroom" id="other-clients">
+<section class="newsroom docs-cardlist" id="other-clients">
 <header class="cat-section-head"><p class="cat-kicker">ANY MCP CLIENT</p><h3 class="cat-headline">Cursor, VS Code, agents and everything else.</h3><p class="cat-lede">Every server is a standard stdio MCP server on the official registry, so any MCP-capable client can run it with the same command.</p></header>
 <div class="story-why">
 <ul class="story-why-list">
@@ -210,6 +221,8 @@ claude mcp add iso20022 -- uvx --from "iso20022-mcp[all]" iso20022-mcp
 <p class="cat-lede">Claude Code and Claude Desktop are covered above. Below is the same stdio server in each other client's documented config shape, checked against the official documentation in July 2026. Remote-first platforms connect to hosted MCP servers instead, so they get an honest sentence, not a fake command.</p>
 </header>
 
+<div class="docs-client-grid">
+<article class="docs-client">
 <h4 id="client-cursor">Cursor</h4>
 
 <p>Create <code>.cursor/mcp.json</code> in your project, or <code>~/.cursor/mcp.json</code> to make the suite available everywhere:</p>
@@ -225,10 +238,14 @@ claude mcp add iso20022 -- uvx --from "iso20022-mcp[all]" iso20022-mcp
 }
 ```
 
+</article>
+<article class="docs-client">
 <h4 id="client-windsurf">Windsurf</h4>
 
 <p>Same <code>mcpServers</code> shape, in <code>~/.codeium/windsurf/mcp_config.json</code>. Add the identical <code>iso20022</code> entry shown for Cursor.</p>
 
+</article>
+<article class="docs-client">
 <h4 id="client-vscode">VS Code with GitHub Copilot</h4>
 
 <p>Create <code>.vscode/mcp.json</code> in your workspace. VS Code is the odd one out: the top-level key is <code>servers</code>, not <code>mcpServers</code>:</p>
@@ -245,10 +262,14 @@ claude mcp add iso20022 -- uvx --from "iso20022-mcp[all]" iso20022-mcp
 }
 ```
 
+</article>
+<article class="docs-client">
 <h4 id="client-gemini">Google Gemini CLI</h4>
 
 <p>Add an <code>mcpServers</code> block to <code>~/.gemini/settings.json</code> (or <code>.gemini/settings.json</code> per project), with the identical <code>iso20022</code> entry shown for Cursor. Transport is inferred: a <code>command</code> key means stdio.</p>
 
+</article>
+<article class="docs-client">
 <h4 id="client-openai">OpenAI Agents SDK</h4>
 
 <p>The Python Agents SDK spawns local stdio servers itself through <code>MCPServerStdio</code>, with the same command and args:</p>
@@ -264,12 +285,19 @@ async with MCPServerStdio(
     agent = Agent(name="Treasury", mcp_servers=[server])
 ```
 
-<div class="story-why">
-<ul class="story-why-list">
-<li><strong>ChatGPT and the OpenAI Responses API.</strong> Remote-first: they connect only to MCP servers reachable over the public internet, via Streamable HTTP or HTTP/SSE and a <code>server_url</code>. They do not run local stdio processes, so pairing them with this suite means hosting it yourself.</li>
-<li><strong>Microsoft Copilot Studio.</strong> Adds MCP servers to agents as tools through Power Platform connectors, over the Streamable HTTP transport only. No local stdio support.</li>
-<li><strong>Zapier MCP.</strong> The inverse case: Zapier hosts a remote MCP endpoint exposing Zapier actions to your AI client via a generated <code>mcp.zapier.com</code> URL. It is a place agents call out to, not a way to run this suite.</li>
-</ul>
+</article>
+</div>
+
+<div class="docs-client-grid">
+<article class="docs-client">
+<p><strong>ChatGPT and the OpenAI Responses API.</strong> Remote-first: they connect only to MCP servers reachable over the public internet, via Streamable HTTP or HTTP/SSE and a <code>server_url</code>. They do not run local stdio processes, so pairing them with this suite means hosting it yourself.</p>
+</article>
+<article class="docs-client">
+<p><strong>Microsoft Copilot Studio.</strong> Adds MCP servers to agents as tools through Power Platform connectors, over the Streamable HTTP transport only. No local stdio support.</p>
+</article>
+<article class="docs-client">
+<p><strong>Zapier MCP.</strong> The inverse case: Zapier hosts a remote MCP endpoint exposing Zapier actions to your AI client via a generated <code>mcp.zapier.com</code> URL. It is a place agents call out to, not a way to run this suite.</p>
+</article>
 </div>
 </section>
 
@@ -281,7 +309,7 @@ async with MCPServerStdio(
 <span class="tut-mins">About 10 minutes</span>
 </header>
 
-<section class="newsroom" id="first-prompts">
+<section class="newsroom docs-cardlist docs-cards-3" id="first-prompts">
 <header class="cat-section-head"><p class="cat-kicker">YOUR FIRST FIVE MINUTES</p><h3 class="cat-headline">Prompts to paste.</h3><p class="cat-lede">Seven meta-tools (<code>search</code>, <code>list_families</code>, <code>list_servers</code>, <code>describe</code>, <code>validate</code>, <code>generate</code>, <code>parse</code>) cover every family. These three prompts take you from discovery to generated XML; Chapter 3 closes the loop with statements.</p></header>
 <div class="story-why">
 <ul class="story-why-list">
@@ -292,12 +320,13 @@ async with MCPServerStdio(
 </div>
 </section>
 
-<section class="newsroom" id="prompt-template">
+<section class="newsroom docs-split" id="prompt-template">
 <header class="cat-section-head">
 <p class="cat-kicker">TESTED PROMPT TEMPLATE</p>
 <h3 class="cat-headline">A pain.001 prompt, proven end to end.</h3>
 <p class="cat-lede">Paste this into any connected client. On 15 July 2026 this exact record set was driven over stdio JSON-RPC through the suite's generate tooling and came back as a schema-valid pain.001.001.03 document.</p>
 </header>
+<div class="docs-code-col">
 <pre id="mcp-prompt-template">Generate a SEPA pain.001.001.03 customer credit transfer and return the validated XML.
 Use exactly these records:
 - Message: MsgId MSG-2026-07-15-001, created 2026-07-15T09:30:00.000Z, 1 transaction, control sum 4200.00.
@@ -309,6 +338,7 @@ Use exactly these records:
 - Remittance (RmtInf): invoice INV-2026-183 dated 2026-07-01.
 Validate the records first, then generate. If validation fails, name the failing field and stop.</pre>
 <button type="button" class="copy-btn" data-copy="#mcp-prompt-template">Copy prompt</button>
+</div>
 <div class="story-why">
 <ul class="story-why-list">
 <li><strong>What came back.</strong> A <code>pain.001.001.03</code> Document (namespace <code>urn:iso:std:iso:20022:tech:xsd:pain.001.001.03</code>) carrying <code>MsgId MSG-2026-07-15-001</code>, structured <code>PstlAdr</code> blocks for all three parties, <code>InstdAmt Ccy="EUR" 4200.00</code> and structured remittance. The tool validates against the bundled official XSD before returning; we re-validated the returned document independently and it passed.</li>
@@ -358,7 +388,7 @@ Validate the records first, then generate. If validation fails, name the failing
 <span class="tut-mins">About 10 minutes</span>
 </header>
 
-<section class="newsroom" id="statements-reconciliation">
+<section class="newsroom docs-cardlist" id="statements-reconciliation">
 <header class="cat-section-head"><p class="cat-kicker">STATEMENTS IN, MATCHES OUT</p><h3 class="cat-headline">Four steps, one loop closed.</h3><p class="cat-lede">You registered <code>camt053</code> as its own server in Chapter 1; these steps use it together with <code>reconcile-mcp</code>.</p></header>
 <div class="story-why">
 <ul class="story-why-list">
@@ -446,7 +476,7 @@ Validate the records first, then generate. If validation fails, name the failing
 <p class="story-intro"><a href="/iso20022-mcp-reference/index.html">Full tool reference for every server <span aria-hidden="true">›</span></a> · <a href="/iso20022-mcp-recipes/index.html">End-to-end recipes <span aria-hidden="true">›</span></a></p>
 </section>
 
-<section class="newsroom" id="safety">
+<section class="newsroom docs-cardlist" id="safety">
 <header class="cat-section-head"><p class="cat-kicker">SAFE BY DESIGN</p><h3 class="cat-headline">Built to hand to an agent.</h3></header>
 <div class="story-why">
 <ul class="story-why-list">
@@ -458,7 +488,7 @@ Validate the records first, then generate. If validation fails, name the failing
 </div>
 </section>
 
-<section class="newsroom" id="migration">
+<section class="newsroom docs-cardlist docs-cards-3" id="migration">
 <header class="cat-section-head"><p class="cat-kicker">THE 2026–2028 MIGRATION</p><h3 class="cat-headline">Move off MT, one message at a time.</h3><p class="cat-lede">MT/MX coexistence ended in November 2025; MT retires through 2028, and structured postal addresses become mandatory in November 2026. The suite ships the tools for exactly this.</p></header>
 <div class="story-why">
 <ul class="story-why-list">
@@ -468,5 +498,8 @@ Validate the records first, then generate. If validation fails, name the failing
 </ul>
 </div>
 </section>
+
+</div>
+</div>
 
 <section class="setup-finale" aria-labelledby="finale-heading"><p class="setup-finale-eyebrow">OPEN SOURCE · APACHE-2.0 · ON PYPI + THE MCP REGISTRY</p><h3 id="finale-heading" class="setup-finale-headline">Back to the suite.</h3><p class="setup-finale-lede">Nine servers, the whole ISO 20022 payment lifecycle, installable in one line.</p><p class="setup-finale-cta"><a href="/iso20022-mcp/index.html">Explore the suite <span aria-hidden="true">›</span></a> · <a href="/iso20022-mcp-reference/index.html">Tool reference <span aria-hidden="true">›</span></a></p></section>

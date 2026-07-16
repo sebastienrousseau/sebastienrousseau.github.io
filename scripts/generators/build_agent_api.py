@@ -186,7 +186,7 @@ def build_person() -> dict[str, object]:
         "jobTitle": "Senior Product Manager, Wholesale Payments & API",
         "description": (
             "AI, banking and financial services expert. Senior payments leader "
-            "with 20+ years across Tier-1 banks. Applied AI, wholesale payments, "
+            "with nearly two decades across Tier-1 banks. Applied AI, wholesale payments, "
             "ISO 20022 migration, and post-quantum cryptography for financial services."
         ),
         "identifier": {
@@ -225,7 +225,7 @@ def build_person() -> dict[str, object]:
             {
                 "@type": "EducationalOccupationalCredential",
                 "credentialCategory": "professional experience",
-                "name": "20+ years across Tier-1 banks and global payments infrastructure",
+                "name": "Nearly two decades across Tier-1 banks and global payments infrastructure",
                 "recognizedBy": {
                     "@type": "Organization",
                     "name": "HSBC Commercial & Investment Bank",
@@ -322,7 +322,7 @@ def build_person() -> dict[str, object]:
         },
         "sameAs": [
             f"https://orcid.org/{ORCID_ID}",
-            "https://twitter.com/wwdseb",
+            "https://x.com/wwdseb",
             "https://www.linkedin.com/in/sebastienrousseau/",
             "https://medium.com/@BankingOnQuantum",
             "https://www.youtube.com/@BankingOnQuantum",
@@ -352,7 +352,7 @@ def build_organization() -> dict[str, object]:
         "founder": {"@id": f"{BASE}/#person"},
         "sameAs": [
             "https://github.com/sebastienrousseau",
-            "https://twitter.com/wwdseb",
+            "https://x.com/wwdseb",
             "https://www.linkedin.com/in/sebastienrousseau/",
             "https://medium.com/@BankingOnQuantum",
         ],

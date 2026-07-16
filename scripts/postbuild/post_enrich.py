@@ -408,7 +408,7 @@ _AUTHOR_CARD_HTML = (
     "migration, post-quantum cryptography for financial services, and "
     "the structural transformation of wholesale payments.</span>"
     '<span class="author-credentials">'
-    "20+ years across HSBC Commercial &amp; Investment Bank, PayPal, "
+    "Nearly two decades across HSBC Commercial &amp; Investment Bank, PayPal, "
     "Barclays, Shazam, AKQA, Virgin Group. "
     '<a href="/about/index.html">Full profile</a> &middot; '
     '<a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; '

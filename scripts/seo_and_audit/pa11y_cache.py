@@ -240,13 +240,36 @@ _ZERO_VALUE_RELPATHS: frozenset[str] = frozenset(
 )
 
 
+# Instant client-side redirect stubs (<meta http-equiv="refresh"
+# content="0; url=...">). Puppeteer follows the refresh immediately, so
+# pa11y never evaluates the stub itself: it evaluates whatever the
+# *target* serves at sweep time. For the /papers/ -> /research/ moves
+# (29 pages incl. locales) the target is an absolute production URL, so
+# a CI sweep of the freshly built tree ends up scoring the production
+# 404 page ("Execution context was destroyed" / NaN-contrast failures
+# across whichever shards drew a redirect stub). The stubs carry no
+# editorial signal; the redirect targets are swept as their own pages.
+_META_REFRESH_RE = re.compile(r'<meta\s+http-equiv="refresh"', re.IGNORECASE)
+
+
+def page_is_redirect_stub(html: str) -> bool:
+    """True when the page is a client-side redirect stub. Only the head
+    slice is scanned so prose about meta refresh can never match."""
+    end = html.find("</head>")
+    head = html if end < 0 else html[:end]
+    return bool(_META_REFRESH_RE.search(head))
+
+
 def page_should_skip(html: str, rel: str) -> bool:
     """True when ``rel`` (the public/-relative path of an index.html)
     is on the explicit zero-value list, OR when the page embeds a
-    Spotify iframe (Puppeteer races the load). The cache layer treats
-    both reasons identically: mark as ``skipped``, don't fingerprint,
-    don't sweep."""
+    Spotify iframe (Puppeteer races the load), OR when the page is an
+    instant meta-refresh redirect stub (Puppeteer navigates away before
+    pa11y can evaluate it). The cache layer treats all reasons
+    identically: mark as ``skipped``, don't fingerprint, don't sweep."""
     if rel in _ZERO_VALUE_RELPATHS:
+        return True
+    if page_is_redirect_stub(html):
         return True
     return page_is_spotify_iframe(html)
 
@@ -264,10 +287,12 @@ def partition_pages(
       * ``cache_hits`` — (path, current_hash) for pages whose stored
         hash matches AND fingerprint matches. These get marked
         ``status="pass"`` without running pa11y.
-      * ``skipped`` — relpaths the cache layer ignored: either they
-        embed a Spotify iframe (pa11y can't check them reliably) or
-        they live on the explicit zero-value list (boilerplate credit
-        pages whose a11y signal is already exercised by the layout).
+      * ``skipped`` - relpaths the cache layer ignored: they embed a
+        Spotify iframe (pa11y can't check them reliably), they are
+        instant meta-refresh redirect stubs (Puppeteer navigates away
+        and pa11y ends up scoring the redirect target), or they live on
+        the explicit zero-value list (boilerplate credit pages whose
+        a11y signal is already exercised by the layout).
 
     The function is pure-ish: it reads disk and the cache dict but
     mutates neither. The caller decides what to do with each list.
