@@ -681,7 +681,9 @@ def _hero(d: dict) -> str:
 #
 # (kind, timing-class, prompt-glyph, text). Typed lines carry --tw/--ts ch
 # counts in articles.html CSS (gen_layouts.SPEAKING_MCP_HUB_CSS) that MUST
-# equal len(glyph + text): t1=72ch, t2=17ch, t4=83ch.
+# equal len(glyph + text): t1=72ch, t2=17ch, t3b=8ch, t4=83ch.
+# The ask line is typed INSIDE the Claude session opened by '$ claude' -
+# a reader pasting it into a shell would get 'command not found'.
 _TERM_LINES: list[tuple[str, str, str, str]] = [
     (
         "cmd",
@@ -691,6 +693,7 @@ _TERM_LINES: list[tuple[str, str, str, str]] = [
     ),
     ("cmd", "mcp-tl-typed mcp-tl-t2", "$ ", "claude mcp list"),
     ("out", "mcp-tl-fade mcp-tl-f3", "", "iso20022 · connected"),
+    ("cmd", "mcp-tl-typed mcp-tl-t3b", "$ ", "claude"),
     (
         "ask",
         "mcp-tl-typed mcp-tl-t4",

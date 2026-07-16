@@ -232,7 +232,7 @@ def test_hero_terminal_replaces_hero_image() -> None:
         assert cls in hero
     # The ch counts themselves stay in sync with the emitted text.
     for (_, timing, glyph, text), n in zip(
-        mcp._TERM_LINES, (72, 17, 20, 83, 52, 39), strict=True
+        mcp._TERM_LINES, (72, 17, 20, 8, 83, 52, 39), strict=True
     ):
         if "mcp-tl-typed" in timing:
             assert len(glyph + text) == n
