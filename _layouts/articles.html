@@ -2020,6 +2020,13 @@
       /* Dark surfaces need a light green: #005f33 is 2.31:1 on --card #161617. */
       [data-theme="dark"] .speaking-page{--spk-green:#6fd49a}
       @media (prefers-color-scheme: dark){html:not([data-theme="light"]) .speaking-page{--spk-green:#6fd49a}}
+      /* The warm dark band (--paper-card #1c1a17) lifts luminance above the
+         black --bg the global dark --ink-faint (#a0a0a8, 9.6:1 on #000) was
+         tuned for: on the band it is only 6.69:1 — below AAA 7:1 (d556b3f1
+         fixed the light-theme pair only). #a8a8b0 is 7.35:1 on the band and
+         7.66:1 on --card; the light pair (7.68:1 on the band) is untouched. */
+      [data-theme="dark"] .speaking-page .spk-band{--ink-faint:#a8a8b0}
+      @media (prefers-color-scheme: dark){html:not([data-theme="light"]) .speaking-page .spk-band{--ink-faint:#a8a8b0}}
       .speaking-page .spk-wrap{max-width:1120px;margin-inline:auto;padding-inline:clamp(20px,5vw,64px)}
       .speaking-page section{padding-block:clamp(44px,6vw,82px)}
       .speaking-page .spk-band{background:var(--spk-band);border-block:1px solid var(--spk-line)}
