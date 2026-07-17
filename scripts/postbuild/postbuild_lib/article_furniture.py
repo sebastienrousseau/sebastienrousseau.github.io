@@ -81,6 +81,7 @@ from postbuild_lib._i18n import (  # noqa: F401 — i18n base; several are re-ex
     _labels_for_lang,
     _slug_maps,
     _slug_maps_for,
+    _strings_for_lang,
 )
 
 _H1_RE = re.compile(
@@ -179,36 +180,24 @@ def _fmt_date(iso_or_rfc: str, french: bool = False) -> str:
     return iso_or_rfc
 
 
-_TAGS_PATH_BY_LANG: dict[str, str] = {
-    "en": "/tags",
-    "ar": "/ar/wusum",
-    "bn": "/bn/tag",
-    "cs": "/cs/stitky",
-    "de": "/de/etiketten",
-    "es": "/es/etiquetas",
-    "fil": "/fil/mga-tag",
-    "fr": "/fr/etiquettes",
-    "ha": "/ha/tags",
-    "he": "/he/tagim",
-    "hi": "/hi/tag",
-    "id": "/id/label",
-    "it": "/it/etichette",
-    "ja": "/ja/tagu",
-    "ko": "/ko/taegeu",
-    "nl": "/nl/labels",
-    "pl": "/pl/tagi",
-    "pt-br": "/pt-br/etiquetas",
-    "ro": "/ro/etichete",
-    "ru": "/ru/tegi",
-    "sv": "/sv/taggar",
-    "th": "/th/thaek",
-    "tr": "/tr/etiketler",
-    "uk": "/uk/tegy",
-    "vi": "/vi/the",
-    "yo": "/yo/awon-ami",
-    "zh-hans": "/zh-hans/biaoqian",
-    "zh-hant": "/zh-hant/biaoqian-tw",
-}
+def _static_slug_for(lang: str, key: str) -> str:
+    """Localised static-page slug for ``lang`` from its slugs.json
+    (``tags`` -> ``etiquettes`` for fr, ``wusum`` for ar, ...). Falls
+    back to the EN slug for unknown languages or unmapped keys."""
+    try:
+        return _slug_maps(lang)["statics_en_to_lang"].get(key, key)
+    except Exception:  # missing/malformed slugs.json — EN slug is safe
+        return key
+
+
+def _tags_prefix(lang: str) -> str:
+    """URL prefix of the per-tag landing tree for ``lang`` — ``/tags``
+    for EN, ``/<lang>/<localised-tags-slug>`` otherwise. Derived from
+    ``_data/i18n/<lang>/slugs.json`` so new locales never fall back to
+    the EN ``/tags`` tree by omission."""
+    if lang == "en":
+        return "/tags"
+    return f"/{lang}/{_static_slug_for(lang, 'tags')}"
 
 
 _LANDING_PUBLIC = Path(__file__).resolve().parents[3] / "public"
@@ -221,7 +210,7 @@ def _has_landing(slug: str, lang: str = "en") -> bool:
     chip strip skip the link wrapper for sub-threshold tags rather than
     emitting a /tags/<slug>/ link that would 404 the strict-internal
     link audit."""
-    prefix = _TAGS_PATH_BY_LANG.get(lang, "/tags").lstrip("/")
+    prefix = _tags_prefix(lang).lstrip("/")
     return (_LANDING_PUBLIC / prefix / slug / "index.html").is_file()
 
 
@@ -232,7 +221,7 @@ def _render_tag_badges(keywords: list[str], labels: dict[str, str], lang: str = 
     render as plain ``<span>`` chips so the audit doesn't flag a 404."""
     if not keywords:
         return ""
-    prefix = _TAGS_PATH_BY_LANG.get(lang, "/tags")
+    prefix = _tags_prefix(lang)
     badges_html: list[str] = []
     for k in keywords:
         slug = slugify(k)
@@ -250,9 +239,20 @@ def _render_meta_bar(
     date_pub: str, date_mod: str, word_count: int | None, labels: dict[str, str], lang: str = "en"
 ) -> str:
     parts: list[str] = []
-    french = labels is LABELS_FR
-    author_url = "/fr/a-propos/index.html" if lang == "fr" else AUTHOR_URL
-    alt_text = f"Portrait de {AUTHOR_NAME}" if lang == "fr" else f"Portrait of {AUTHOR_NAME}"
+    # French month names are the only localised date data available
+    # (labels.json carries no month glossary); every other locale keeps
+    # the numeric-day + EN-abbreviated-month format with localised
+    # label words around it.
+    french = lang == "fr"
+    if lang == "en":
+        author_url = AUTHOR_URL
+        alt_text = f"Portrait of {AUTHOR_NAME}"
+    else:
+        about_slug = _static_slug_for(lang, "about")
+        author_url = f"/{lang}/{about_slug}/index.html"
+        alt_text = _strings_for_lang(lang).get(
+            "author.alt.portrait", f"Portrait of {AUTHOR_NAME}"
+        )
     parts.append(
         f'<a href="{author_url}" class="article-author" rel="author">'
         f'<img alt="{alt_text}" src="{AUTHOR_AVATAR}" '
@@ -325,8 +325,8 @@ def inject_article_furniture(html: str) -> str:
     if 'class="article-tags"' in html:
         return html
     keywords, date_pub, date_mod, word_count = _extract_article_metadata(html)
-    labels = _labels(html)
-    lang = "fr" if _is_french(html) else "en"
+    lang = _detect_page_lang(html)
+    labels = _labels_for_lang(lang)
     fragment = _render_tag_badges(keywords, labels, lang) + _render_meta_bar(
         date_pub, date_mod, word_count, labels, lang
     )

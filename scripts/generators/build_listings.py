@@ -29,6 +29,7 @@ stripped to keep exactly one ``<h1>`` per page (AAA).
 from __future__ import annotations
 
 import argparse
+import contextlib
 import json
 import re
 import sys
@@ -64,6 +65,7 @@ _BASE_URL = "https://sebastienrousseau.com"
 
 _BANNER_ALT_FM_RE = re.compile(r'^banner_alt:\s*"?([^"\n]+?)"?\s*$', re.MULTILINE)
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "lib"))
+import _lang_registry
 from _core import DATED_SLUG_RE as _DATED_SLUG_RE  # canonical dated-slug matcher
 from _svg_icons import (
     _CARD_SVG_EMAIL,
@@ -82,6 +84,36 @@ PILLAR_LABELS: dict[str, str] = {
     "open-source": "Open source",
     "leadership": "Banking leadership",
 }
+
+# ---------------------------------------------------------------------------
+# Per-locale listing labels — _data/i18n/<lang>/labels.json (Listing.* /
+# Pillar.* / Share.* keys; parity across locales enforced by
+# tests/validation/test_i18n_labels.py). EN is the base layer so a locale
+# missing a key degrades to English, never to another locale.
+# ---------------------------------------------------------------------------
+
+_LABELS_CACHE: dict[str, dict[str, str]] = {}
+
+
+def _labels_for(lang: str) -> dict[str, str]:
+    if lang not in _LABELS_CACHE:
+        try:
+            base = dict(_lang_registry.load_labels("en"))
+        except _lang_registry.LanguageError:
+            base = {}
+        if lang != "en":
+            with contextlib.suppress(_lang_registry.LanguageError):
+                base.update(_lang_registry.load_labels(lang))
+        _LABELS_CACHE[lang] = base
+    return _LABELS_CACHE[lang]
+
+
+def _pillar_label(pillar: str, L: dict[str, str]) -> str:
+    return L.get(f"Pillar.{pillar}", PILLAR_LABELS.get(pillar, pillar))
+
+
+def _pillar_options_for(L: dict[str, str]) -> list[tuple[str, str]]:
+    return [(p, _pillar_label(p, L)) for p in PILLAR_ORDER]
 _MAIN_RE = re.compile(r'(<main\b[^>]*>)([\s\S]*?)(</main>)', re.IGNORECASE)
 _AP_HERO_BLOCK_RE = re.compile(
     r'<section class="ap-hero">[\s\S]*?</section>', re.IGNORECASE
@@ -134,35 +166,40 @@ def _load_taxonomy() -> tuple[dict, dict[str, str]]:
 # target.
 
 
-def _card_share_rail(url: str, title: str, desc: str) -> str:
+def _card_share_rail(url: str, title: str, desc: str, L: dict[str, str] | None = None) -> str:
     """Render a 6-icon per-card share rail (X / LinkedIn / Facebook /
     WhatsApp / email / copy-link). Anchors only — CSP-safe — and the
     copy-link button is a ``<button data-copy-link>`` that main.js
     wires to ``navigator.clipboard.writeText(href)`` with a textarea
     fallback for insecure contexts."""
+    L = L if L is not None else _labels_for("en")
     abs_url = url if url.startswith("http") else f"{_BASE_URL}{url}"
     x_text = f"{title}\n\n{abs_url}"
     li_text = "\n\n".join(p for p in (title, desc, abs_url) if p)
     wa_text = "\n\n".join(p for p in (title, desc, abs_url) if p)
-    email_body = "\n\n".join(p for p in (desc, f"Read more: {abs_url}") if p)
+    read_more = L.get("Share.readMore", "Read more:")
+    email_body = "\n\n".join(p for p in (desc, f"{read_more} {abs_url}") if p)
     import urllib.parse as _u
 
     def q(s: str) -> str:
         return _u.quote(s, safe="")
 
+    def a(key: str, default: str) -> str:
+        return _esc(L.get(key, default))
+
     items = (
         f'<li><a href="https://twitter.com/intent/tweet?text={q(x_text)}" '
-        f'rel="noopener noreferrer" aria-label="Share on X">{_CARD_SVG_X}</a></li>'
+        f'rel="noopener noreferrer" aria-label="{a("Share.x", "Share on X")}">{_CARD_SVG_X}</a></li>'
         f'<li><a href="https://www.linkedin.com/feed/?shareActive=true&text={q(li_text)}" '
-        f'rel="noopener noreferrer" aria-label="Share on LinkedIn">{_CARD_SVG_LI}</a></li>'
+        f'rel="noopener noreferrer" aria-label="{a("Share.linkedin", "Share on LinkedIn")}">{_CARD_SVG_LI}</a></li>'
         f'<li><a href="https://www.facebook.com/sharer/sharer.php?u={q(abs_url)}" '
-        f'rel="noopener noreferrer" aria-label="Share on Facebook">{_CARD_SVG_FB}</a></li>'
+        f'rel="noopener noreferrer" aria-label="{a("Share.facebook", "Share on Facebook")}">{_CARD_SVG_FB}</a></li>'
         f'<li><a href="https://wa.me/?text={q(wa_text)}" '
-        f'rel="noopener noreferrer" aria-label="Share on WhatsApp">{_CARD_SVG_WA}</a></li>'
+        f'rel="noopener noreferrer" aria-label="{a("Share.whatsapp", "Share on WhatsApp")}">{_CARD_SVG_WA}</a></li>'
         f'<li><a href="mailto:?subject={q(title)}&body={q(email_body)}" '
-        f'aria-label="Share by email">{_CARD_SVG_EMAIL}</a></li>'
+        f'aria-label="{a("Share.email", "Share by email")}">{_CARD_SVG_EMAIL}</a></li>'
         f'<li><button type="button" data-copy-link="{_esc(abs_url)}" '
-        f'aria-label="Copy link">{_CARD_SVG_LINK}</button></li>'
+        f'aria-label="{a("Share.copyLink", "Copy link")}">{_CARD_SVG_LINK}</button></li>'
     )
     # `<div role="group">` instead of `<nav>` — every card emits a
     # share rail, so 24 `<nav aria-label="Share this article">` landmarks
@@ -170,7 +207,8 @@ def _card_share_rail(url: str, title: str, desc: str) -> str:
     # landmark-unique. role="group" carries semantic intent without
     # contributing a landmark to the page outline.
     return (
-        f'<div class="card-share-rail" role="group" aria-label="Share this article">'
+        f'<div class="card-share-rail" role="group" '
+        f'aria-label="{a("Share.article", "Share this article")}">'
         f"<ul>{items}</ul></div>"
     )
 
@@ -251,20 +289,23 @@ def _render_card(
     href_override: str | None = None,
     eyebrow_override: str | None = None,
     featured: bool = False,
+    L: dict[str, str] | None = None,
 ) -> str:
     """Render one FT-tier ``article.tag-landing-card`` — image left,
     eyebrow + headline + date + excerpt right. Pillar-derived eyebrow
     is rendered in caps using the first pillar (or "Editorial" if the
     post has no canonical pillar). On locale forks, ``href_override``
     swaps the article URL to ``/<lang>/<locale-slug>/`` and
-    ``eyebrow_override`` swaps the pillar caption to its translation."""
+    ``eyebrow_override`` swaps the pillar caption to its translation;
+    ``L`` supplies the locale's label glossary (EN when omitted)."""
+    L = L if L is not None else _labels_for("en")
     excerpt_html = (
         f'<p class="card-excerpt">{_esc(excerpt)}</p>' if excerpt else ""
     )
     year_attr = f' data-year="{iso_date[:4]}"' if iso_date else ""
     cat_attr = f' data-category="{" ".join(pillars)}"' if pillars else ""
     eyebrow = eyebrow_override or (
-        PILLAR_LABELS[pillars[0]] if pillars else "Editorial"
+        _pillar_label(pillars[0], L) if pillars else L.get("Listing.editorial", "Editorial")
     )
     eyebrow_html = f'<p class="eyebrow card-eyebrow">{_esc(eyebrow).upper()}</p>'
     href = href_override or f"/{slug}/"
@@ -275,7 +316,7 @@ def _render_card(
         f'decoding="async" width="800" height="800" />'
         f"</a>"
     )
-    share_html = _card_share_rail(href, title, excerpt)
+    share_html = _card_share_rail(href, title, excerpt, L)
     body_html = (
         f'<div class="card-body">'
         f"{eyebrow_html}"
@@ -297,15 +338,21 @@ def _render_filter_form(
     pillar_options: list[tuple[str, str]],
     year_options: list[str],
     nav_base: str = "/articles",
+    L: dict[str, str] | None = None,
 ) -> str:
     """Two native <select>s + an empty-state region. main.js wires the
     `change` event to update data-filter-* attributes on the list."""
-    pillar_opts = '<option value="">All categories</option>' + "".join(
-        f'<option value="{slug}">{_esc(label)}</option>'
-        for slug, label in pillar_options
+    L = L if L is not None else _labels_for("en")
+    pillar_opts = (
+        f'<option value="">{_esc(L.get("Listing.allCategories", "All categories"))}</option>'
+        + "".join(
+            f'<option value="{slug}">{_esc(label)}</option>'
+            for slug, label in pillar_options
+        )
     )
-    year_opts = '<option value="">All years</option>' + "".join(
-        f'<option value="{year}">{year}</option>' for year in year_options
+    year_opts = (
+        f'<option value="">{_esc(L.get("Listing.allYears", "All years"))}</option>'
+        + "".join(f'<option value="{year}">{year}</option>' for year in year_options)
     )
     # `<div role="search">` rather than `<form>` — there's no submit
     # target (selects fire JS change events that mutate the list's
@@ -320,11 +367,12 @@ def _render_filter_form(
     # of mutating data-filter-year. Category stays client-side because
     # categories are mixed across years on every page.
     return (
-        '<div class="listing-filters" role="search" aria-label="Filter articles">'
-        '<label>Category'
+        f'<div class="listing-filters" role="search" '
+        f'aria-label="{_esc(L.get("Listing.filterAria", "Filter articles"))}">'
+        f'<label>{_esc(L.get("Listing.category", "Category"))}'
         f'<select data-filter-target="category" name="category">{pillar_opts}</select>'
         '</label>'
-        '<label>Year'
+        f'<label>{_esc(L.get("Listing.year", "Year"))}'
         f'<select data-filter-target="year" data-filter-mode="navigate" '
         f'data-navigate-base="{nav_base}" '
         f'name="year">{year_opts}</select>'
@@ -334,7 +382,7 @@ def _render_filter_form(
 
 
 def _render_pagination(
-    page: int, total_pages: int, base_path: str
+    page: int, total_pages: int, base_path: str, L: dict[str, str] | None = None
 ) -> str:
     """Render a Prev/numbered/Next pagination nav. ``base_path`` is the
     URL prefix (no trailing slash) — e.g. ``/articles`` for EN or
@@ -342,6 +390,7 @@ def _render_pagination(
     page N lives at ``<base_path>/page/N/``."""
     if total_pages <= 1:
         return ""
+    L = L if L is not None else _labels_for("en")
 
     def page_url(n: int) -> str:
         return f"{base_path}/" if n == 1 else f"{base_path}/page/{n}/"
@@ -350,7 +399,7 @@ def _render_pagination(
     if page > 1:
         parts.append(
             f'<a href="{page_url(page - 1)}" rel="prev" class="page-nav-prev">'
-            "&larr; Previous"
+            f'&larr; {_esc(L.get("Previous", "Previous"))}'
             "</a>"
         )
     nums: list[str] = []
@@ -365,12 +414,21 @@ def _render_pagination(
     if page < total_pages:
         parts.append(
             f'<a href="{page_url(page + 1)}" rel="next" class="page-nav-next">'
-            "Next &rarr;"
+            f'{_esc(L.get("Next", "Next"))} &rarr;'
             "</a>"
         )
+    aria = _esc(L.get("Article pagination", "Pagination"))
     return (
-        f'<nav class="page-nav" aria-label="Pagination">{"".join(parts)}</nav>'
+        f'<nav class="page-nav" aria-label="{aria}">{"".join(parts)}</nav>'
     )
+
+
+def _visible_count_html(n: int, L: dict[str, str]) -> str:
+    """Render the '<span id=listing-count>N</span> visible' fragment via
+    the locale's ``Listing.visible`` template so word order is free to
+    differ per language."""
+    count_span = f'<span id="listing-count">{n}</span>'
+    return L.get("Listing.visible", "{count} visible").format(count=count_span)
 
 
 def _render_listing_body(
@@ -381,27 +439,34 @@ def _render_listing_body(
     page_label: str,
     title: str,
     all_years: list[str],
+    L: dict[str, str] | None = None,
+    cards: str | None = None,
 ) -> str:
-    cards = "".join(
-        _render_card(*p, featured=(page == 1 and i == 0))
-        for i, p in enumerate(page_posts)
+    L = L if L is not None else _labels_for("en")
+    if cards is None:
+        cards = "".join(
+            _render_card(*p, featured=(page == 1 and i == 0), L=L)
+            for i, p in enumerate(page_posts)
+        )
+    pagination = _render_pagination(page, total_pages, base_path, L)
+    filter_form = _render_filter_form(
+        _pillar_options_for(L), all_years, nav_base=base_path, L=L
     )
-    pagination = _render_pagination(page, total_pages, base_path)
-    pillar_options = [(p, PILLAR_LABELS[p]) for p in PILLAR_ORDER]
-    filter_form = _render_filter_form(pillar_options, all_years, nav_base=base_path)
     return (
         f'<div class="wrap report-wrap">'
         f'<header class="tag-landing-hero">'
-        f'<p class="eyebrow">FEED</p>'
+        f'<p class="eyebrow">{_esc(L.get("Listing.feed", "Feed")).upper()}</p>'
         f"<h1>{_esc(title)}</h1>"
         f'<p class="tag-landing-meta">{page_label} · '
-        f'<span id="listing-count">{len(page_posts)}</span> visible</p>'
+        f'{_visible_count_html(len(page_posts), L)}</p>'
         f"</header>"
         f"{filter_form}"
-        f'<section class="tag-landing-list" aria-label="Article cards">'
+        f'<section class="tag-landing-list" '
+        f'aria-label="{_esc(L.get("Listing.cardsAria", "Article cards"))}">'
         f"{cards}"
         f"</section>"
-        f'<p class="listing-empty" role="status">No articles match the current filters.</p>'
+        f'<p class="listing-empty" role="status">'
+        f'{_esc(L.get("Listing.empty", "No articles match the current filters."))}</p>'
         f"{pagination}"
         f"</div>"
     )
@@ -432,6 +497,21 @@ def _swap_head(
     return out
 
 
+def _page_label_for(page: int, total_pages: int, L: dict[str, str]) -> str:
+    return L.get("Listing.pageOf", "Page {page} of {total}").format(
+        page=page, total=total_pages
+    )
+
+
+def _listing_desc_for(page_label: str, L: dict[str, str]) -> str:
+    base = L.get(
+        "ArticlesHub.desc",
+        "Articles by Sebastien Rousseau on AI, payments, post-quantum "
+        "cryptography, and the technology of banking.",
+    )
+    return f"{base} {page_label}."
+
+
 def _render_page_html(
     template: str,
     page: int,
@@ -442,13 +522,11 @@ def _render_page_html(
     title: str,
     all_years: list[str],
 ) -> str:
-    page_label = f"Page {page} of {total_pages}"
-    desc = (
-        f"Articles by Sebastien Rousseau on AI, payments, post-quantum "
-        f"cryptography, and the technology of banking. {page_label}."
-    )
+    L = _labels_for("en")
+    page_label = _page_label_for(page, total_pages, L)
+    desc = _listing_desc_for(page_label, L)
     body = _render_listing_body(
-        page, total_pages, page_posts, base_path, page_label, title, all_years
+        page, total_pages, page_posts, base_path, page_label, title, all_years, L
     )
     out = _swap_head(template, title, desc, canonical_url)
     out = _AP_HERO_BLOCK_RE.sub("", out, count=1)
@@ -458,21 +536,17 @@ def _render_page_html(
 
 
 
-_TAG_LANDING_LIST_RE = re.compile(
-    r'(<section class="tag-landing-list"[^>]*>)([\s\S]*?)(</section>)',
-    re.IGNORECASE,
-)
-
-
 def _localised_card(
     card: tuple[str, str, str, str, list[str], str, str],
     lang: str,
     locale_index: dict[str, tuple[str, str, str, str]],
     featured: bool = False,
+    L: dict[str, str] | None = None,
 ) -> str:
     """Render one card with locale-translated title + excerpt + URL +
     eyebrow when ``locale_index`` has a matching entry for the EN slug;
     fall back to EN content otherwise."""
+    L = L if L is not None else _labels_for(lang)
     title, iso_date, slug, excerpt, pillars, banner, banner_alt = card
     locale_entry = locale_index.get(slug)
     if locale_entry is not None:
@@ -484,34 +558,15 @@ def _localised_card(
     else:
         href = f"/{lang}/{slug}/"
     eyebrow = (
-        PILLAR_LABELS[pillars[0]] if pillars else "Editorial"
+        _pillar_label(pillars[0], L) if pillars else L.get("Listing.editorial", "Editorial")
     )
     return _render_card(
         title, iso_date, slug, excerpt, pillars, banner, banner_alt,
         href_override=href,
         eyebrow_override=eyebrow,
         featured=featured,
+        L=L,
     )
-
-
-def _swap_locale_cards(
-    html: str,
-    lang: str,
-    page_posts: list[tuple[str, str, str, str, list[str], str, str]],
-    locale_index: dict[str, tuple[str, str, str, str]],
-    feature_first: bool = False,
-) -> str:
-    """Replace the EN card grid inside ``<section class="tag-landing-
-    list">`` with the locale-translated card grid. Posts without a
-    locale frontmatter fall back to the EN card (rendered with locale
-    URL anyway). When ``feature_first`` is True, the newest card gets
-    the featured (2-column-spanning) treatment — used on page-1 paged
-    listings, not year archives."""
-    body = "".join(
-        _localised_card(card, lang, locale_index, featured=(feature_first and i == 0))
-        for i, card in enumerate(page_posts)
-    )
-    return _TAG_LANDING_LIST_RE.sub(rf"\1{body}\3", html, count=1)
 
 
 def _write_locale_page(
@@ -523,36 +578,64 @@ def _write_locale_page(
     out_path: Path,
     page_posts: list[tuple[str, str, str, str, list[str], str, str]] | None = None,
     locale_index: dict[str, tuple[str, str, str, str]] | None = None,
+    total_pages: int = 1,
+    all_years: list[str] | None = None,
 ) -> None:
     """Rewrite an EN page into one locale variant: <html lang>,
     canonical, internal links, og:url, JSON-LD inLanguage, chrome,
-    and (when ``page_posts`` is supplied) the card grid translated
-    via per-locale frontmatter."""
+    and (when ``page_posts`` is supplied) the whole listing body
+    re-rendered in the locale — cards translated via per-locale
+    frontmatter, filter/pagination/empty-state chrome via the locale's
+    ``labels.json`` glossary."""
     out = en_html
+    L = _labels_for(lang)
     out = _HTML_LANG_RE.sub(f'<html lang="{lang}"', out, count=1)
-    canonical = f"{_BASE_URL}/{lang}/{locale_prefix}/"
+    base_path = f"/{lang}/{locale_prefix}"
+    canonical = f"{_BASE_URL}{base_path}/"
     if page > 1:
         canonical += f"page/{page}/"
-    out = _CANONICAL_RE.sub(
-        f'<link rel="canonical" href="{canonical}"', out, count=1
-    )
-    out = _OG_URL_RE.sub(
-        f'<meta property="og:url" content="{canonical}"', out, count=1
-    )
+    if page_posts is not None and locale_index is not None:
+        # Re-render the entire listing body in the locale rather than
+        # swapping only the card grid — the filter form, hero label,
+        # visible-count line, empty state and pagination all carry
+        # reader-facing strings that would otherwise stay English.
+        cards = "".join(
+            _localised_card(
+                card, lang, locale_index, featured=(page == 1 and i == 0), L=L
+            )
+            for i, card in enumerate(page_posts)
+        )
+        page_label = _page_label_for(page, total_pages, L)
+        title = L.get("Listing.articles", "Articles")
+        body = _render_listing_body(
+            page,
+            total_pages,
+            page_posts,
+            base_path,
+            page_label,
+            title,
+            all_years or [],
+            L,
+            cards=cards,
+        )
+        out = _MAIN_RE.sub(rf"\1{body}\3", out, count=1)
+        out = _swap_head(out, title, _listing_desc_for(page_label, L), canonical)
+    else:
+        out = _CANONICAL_RE.sub(
+            f'<link rel="canonical" href="{canonical}"', out, count=1
+        )
+        out = _OG_URL_RE.sub(
+            f'<meta property="og:url" content="{canonical}"', out, count=1
+        )
 
     def _swap_article(m: re.Match[str], _lang: str = lang, _amap: dict = article_map) -> str:
         en_slug = m.group(1)
         return f'href="/{_lang}/{_amap.get(en_slug, en_slug)}/"'
 
     out = _HREFLANG_ARTICLE_RE.sub(_swap_article, out)
-    # The per-page pagination links (/articles/page/N/) → localised.
-    out = out.replace('href="/articles/', f'href="/{lang}/{locale_prefix}/')
+    # Any leftover EN listing links (head rel=prev/next etc.) → localised.
+    out = out.replace('href="/articles/', f'href="{base_path}/')
     out = _INLANG_RE.sub(f'"inLanguage":"{lang}"', out)
-    if page_posts is not None and locale_index is not None:
-        out = _swap_locale_cards(
-            out, lang, page_posts, locale_index,
-            feature_first=(page == 1),
-        )
     out = _translate_chrome_for(lang, out)
     out_path.parent.mkdir(parents=True, exist_ok=True)
     out_path.write_text(out, encoding="utf-8")
@@ -577,24 +660,33 @@ def _render_year_filter_form(
     year_options: list[str],
     current_year: str,
     nav_base: str = "/articles",
+    L: dict[str, str] | None = None,
 ) -> str:
     """Filter form for year archives. Year select defaults to the
-    current archive's year and exposes "All articles" as the way out —
+    current archive's year and exposes "All years" as the way out —
     picking it navigates back to ``<nav_base>/``."""
-    pillar_opts = '<option value="">All categories</option>' + "".join(
-        f'<option value="{slug}">{_esc(label)}</option>'
-        for slug, label in pillar_options
+    L = L if L is not None else _labels_for("en")
+    pillar_opts = (
+        f'<option value="">{_esc(L.get("Listing.allCategories", "All categories"))}</option>'
+        + "".join(
+            f'<option value="{slug}">{_esc(label)}</option>'
+            for slug, label in pillar_options
+        )
     )
-    year_opts = '<option value="">All years</option>' + "".join(
-        f'<option value="{y}"{" selected" if y == current_year else ""}>{y}</option>'
-        for y in year_options
+    year_opts = (
+        f'<option value="">{_esc(L.get("Listing.allYears", "All years"))}</option>'
+        + "".join(
+            f'<option value="{y}"{" selected" if y == current_year else ""}>{y}</option>'
+            for y in year_options
+        )
     )
     return (
-        '<div class="listing-filters" role="search" aria-label="Filter articles">'
-        '<label>Category'
+        f'<div class="listing-filters" role="search" '
+        f'aria-label="{_esc(L.get("Listing.filterAria", "Filter articles"))}">'
+        f'<label>{_esc(L.get("Listing.category", "Category"))}'
         f'<select data-filter-target="category" name="category">{pillar_opts}</select>'
         '</label>'
-        '<label>Year'
+        f'<label>{_esc(L.get("Listing.year", "Year"))}'
         f'<select data-filter-target="year" data-filter-mode="navigate" '
         f'data-navigate-base="{nav_base}" '
         f'name="year">{year_opts}</select>'
@@ -607,25 +699,51 @@ def _render_year_body(
     year: str,
     posts_for_year: list[tuple[str, str, str, str, list[str], str, str]],
     all_years: list[str],
+    base_path: str = "/articles",
+    L: dict[str, str] | None = None,
+    cards: str | None = None,
 ) -> str:
-    cards = "".join(_render_card(*p) for p in posts_for_year)
+    L = L if L is not None else _labels_for("en")
+    if cards is None:
+        cards = "".join(_render_card(*p, L=L) for p in posts_for_year)
     n = len(posts_for_year)
-    pillar_options = [(p, PILLAR_LABELS[p]) for p in PILLAR_ORDER]
-    filter_form = _render_year_filter_form(pillar_options, all_years, year)
+    filter_form = _render_year_filter_form(
+        _pillar_options_for(L), all_years, year, nav_base=base_path, L=L
+    )
+    count_key = "Listing.articleCount.one" if n == 1 else "Listing.articleCount.other"
+    count_default = "{n} article" if n == 1 else "{n} articles"
+    count_label = _esc(L.get(count_key, count_default).format(n=n))
+    published_in = _esc(
+        L.get("Listing.publishedIn", "Articles published in {year}").format(year=year)
+    )
     return (
         f'<div class="wrap report-wrap">'
         f'<header class="tag-landing-hero">'
-        f'<p class="eyebrow"><a href="/articles/">&larr; All articles</a></p>'
-        f"<h1>Articles — {year}</h1>"
-        f'<p class="tag-landing-meta">{n} article{"s" if n != 1 else ""}</p>'
+        f'<p class="eyebrow"><a href="{base_path}/">&larr; '
+        f'{_esc(L.get("Listing.allArticles", "All articles"))}</a></p>'
+        f'<h1>{_esc(L.get("Listing.articles", "Articles"))} — {year}</h1>'
+        f'<p class="tag-landing-meta">{count_label}</p>'
         f"</header>"
         f"{filter_form}"
-        f'<section class="tag-landing-list" aria-label="Articles published in {year}">'
+        f'<section class="tag-landing-list" aria-label="{published_in}">'
         f"{cards}"
         f"</section>"
-        f'<p class="listing-empty" role="status">No articles match the current filters.</p>'
+        f'<p class="listing-empty" role="status">'
+        f'{_esc(L.get("Listing.empty", "No articles match the current filters."))}</p>'
         f"</div>"
     )
+
+
+def _year_head_strings(year: str, n: int, L: dict[str, str]) -> tuple[str, str]:
+    """(<title>, meta description) for one year archive in one locale."""
+    title = f'{L.get("Listing.articles", "Articles")} — {year}'
+    desc = L.get(
+        "Listing.yearDesc",
+        "All articles published by Sebastien Rousseau in {year}. "
+        "{n} articles on AI, payments, post-quantum cryptography, "
+        "and the technology of banking.",
+    ).format(year=year, n=n)
+    return title, desc
 
 
 def _write_year_archives(
@@ -634,15 +752,11 @@ def _write_year_archives(
 ) -> tuple[int, int]:
     by_year = _group_by_year(posts)
     all_years = sorted(by_year.keys(), reverse=True)
+    en_labels = _labels_for("en")
     en_pages: list[tuple[str, str, list[tuple[str, str, str, str, list[str], str, str]]]] = []
     for year, year_posts in sorted(by_year.items(), reverse=True):
         canonical = f"{_BASE_URL}/articles/{year}/"
-        title = f"Articles — {year}"
-        desc = (
-            f"All articles published by Sebastien Rousseau in {year}. "
-            f"{len(year_posts)} articles on AI, payments, post-quantum "
-            f"cryptography, and the technology of banking."
-        )
+        title, desc = _year_head_strings(year, len(year_posts), en_labels)
         out = _swap_head(template, title, desc, canonical)
         out = _AP_HERO_BLOCK_RE.sub("", out, count=1)
         out = _MAIN_RE.sub(
@@ -662,16 +776,24 @@ def _write_year_archives(
     for year, en_html, year_posts in en_pages:
         for lang in LOCALES_NON_EN:
             prefix = locale_prefixes[lang]
+            L = _labels_for(lang)
             out_path = PUBLIC / lang / prefix / year / "index.html"
             out = en_html
             out = _HTML_LANG_RE.sub(f'<html lang="{lang}"', out, count=1)
-            canonical = f"{_BASE_URL}/{lang}/{prefix}/{year}/"
-            out = _CANONICAL_RE.sub(
-                f'<link rel="canonical" href="{canonical}"', out, count=1
+            base_path = f"/{lang}/{prefix}"
+            canonical = f"{_BASE_URL}{base_path}/{year}/"
+            # Re-render the whole year-archive body in the locale (cards
+            # + filter form + hero + empty state), then localise head.
+            cards = "".join(
+                _localised_card(card, lang, locale_indexes[lang], L=L)
+                for card in year_posts
             )
-            out = _OG_URL_RE.sub(
-                f'<meta property="og:url" content="{canonical}"', out, count=1
+            body = _render_year_body(
+                year, year_posts, all_years, base_path=base_path, L=L, cards=cards
             )
+            out = _MAIN_RE.sub(rf"\1{body}\3", out, count=1)
+            title, desc = _year_head_strings(year, len(year_posts), L)
+            out = _swap_head(out, title, desc, canonical)
             amap = article_maps[lang]
 
             def _swap_article(m: re.Match[str], _lang: str = lang, _amap: dict = amap) -> str:
@@ -679,9 +801,8 @@ def _write_year_archives(
                 return f'href="/{_lang}/{_amap.get(en_slug, en_slug)}/"'
 
             out = _HREFLANG_ARTICLE_RE.sub(_swap_article, out)
-            out = out.replace('href="/articles/', f'href="/{lang}/{prefix}/')
+            out = out.replace('href="/articles/', f'href="{base_path}/')
             out = _INLANG_RE.sub(f'"inLanguage":"{lang}"', out)
-            out = _swap_locale_cards(out, lang, year_posts, locale_indexes[lang])
             out = _translate_chrome_for(lang, out)
             out_path.parent.mkdir(parents=True, exist_ok=True)
             out_path.write_text(out, encoding="utf-8")
@@ -758,6 +879,8 @@ def _write_listings() -> tuple[int, int, int, int]:
                 en_html, lang, idx, article_maps[lang], prefix, out_path,
                 page_posts=page_posts,
                 locale_index=locale_indexes[lang],
+                total_pages=len(en_pages),
+                all_years=all_years,
             )
             locale_written += 1
     return len(en_pages), locale_written, year_en, year_locale

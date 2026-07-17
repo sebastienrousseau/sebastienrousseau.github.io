@@ -1,81 +1,81 @@
 ---
-title: "Constantes matemáticas y criptográficas para la seguridad en Rust"
-subtitle: "Constantes matemáticas y criptográficas probadas para una seguridad Rust con garantía de memoria"
-description: "Proteja la integridad del código con constantes matemáticas y criptográficas rigurosamente verificadas, reforzando la seguridad de memoria y la concurrencia."
+title: "Matematiska och kryptografiska konstanter för säkerhet i Rust"
+subtitle: "Granskade matematiska och kryptografiska konstanter för minnessäker Rust-säkerhet."
+description: "Skydda kodens integritet med noggrant granskade matematiska och kryptografiska konstanter som stärker minnes- och samtidighetssäkerheten för ökad kodsäkerhet."
 date: "November 05, 2023"
 language: "sv-SE"
 locale: "sv_SE"
 banner: "https://cloudcdn.pro/stocks/images/antoine-dautry-05A-kdOH6Hw.webp"
-banner_alt: "Cálculo matemático"
-keywords: "constantes matemáticas, constantes criptográficas, seguridad Rust, comunicación segura, cifrado, RSA, criptografía de curva elíptica, biblioteca Common (CMN), aplicaciones Rust, cálculos matemáticos"
+banner_alt: "Matematisk beräkning"
+keywords: "matematiska konstanter, kryptografiska konstanter, Rust-säkerhet, säker kommunikation, kryptering, RSA, elliptisk kurvkryptografi, Common-biblioteket (CMN), Rust-applikationer, matematiska beräkningar"
 ---
 
-![Giant white pillars](https://cloudcdn.pro/stocks/images/antoine-dautry-05A-kdOH6Hw.webp).class=\"img-fluid clearfix\"
+![Gigantiska vita pelare](https://cloudcdn.pro/stocks/images/antoine-dautry-05A-kdOH6Hw.webp).class=\"img-fluid clearfix\"
 
-## Perspectiva
+## Insikt
 
-### El fundamento de la comunicación segura
+### Grunden för säker kommunikation
 
-Las matemáticas proporcionan constantes que son las piedras angulares de la tecnología y de la comunicación segura. Constantes como pi (π) y el número de Euler (e) son cruciales en todo —desde la geometría hasta la criptografía— garantizando nuestra seguridad digital.
+Matematiken tillhandahåller konstanter som utgör hörnstenarna i teknik och säker kommunikation. Konstanter som pi (π) och Eulers tal (e) är avgörande i allt från geometri till kryptografi och säkerställer vår digitala säkerhet.
 
-En criptografía, las constantes tienen un propósito único. Se eligen meticulosamente, no de forma arbitraria, conformando el fundamento de métodos de cifrado seguros como RSA y la criptografía de curva elíptica. Estas constantes son claves en el sentido más literal, protegiendo nuestras comunicaciones, identidades digitales y transacciones electrónicas.
+Inom kryptografin fyller konstanter ett särskilt syfte. De väljs noggrant, inte godtyckligt, och utgör grunden för säkra krypteringsmetoder som RSA och elliptisk kurvkryptografi. Dessa konstanter är nycklar i ordets mest bokstavliga bemärkelse och skyddar vår kommunikation, våra digitala identiteter och våra elektroniska transaktioner.
 
-## Idea
+## Idé
 
-### Redefinir el acceso a las constantes con precisión y facilidad
+### Ett nytt sätt att nå konstanter med precision och enkelhet
 
-La [biblioteca Common (CMN)][00] está diseñada para dar a los desarrolladores un acceso preciso y directo a las constantes que necesitan, empaquetadas en un formato compatible con Rust, garantizando una integración y comprensión sencillas.
+[Common-biblioteket (CMN)][00] är utformat för att ge utvecklare precis och okomplicerad tillgång till de konstanter de behöver, paketerade i ett Rust-kompatibelt format som säkerställer enkel integration och god förståelse.
 
-Al encapsular estas constantes en una arquitectura amigable con Rust, la biblioteca Common (CMN) ofrece una experiencia robusta, rápida e intuitiva. Se compromete con la precisión a través de la seguridad de tipos, complementada con una documentación exhaustiva, simplificando la integración y reforzando la comprensión.
+Genom att kapsla in dessa konstanter i en arkitektur anpassad för Rust erbjuder Common-biblioteket (CMN) en robust, snabb och intuitiv upplevelse. Det garanterar precision genom typsäkerhet och kompletteras av utförlig dokumentation, vilket underlättar integrationen och fördjupar förståelsen.
 
-## Impacto
+## Effekt
 
-### Afinar las aplicaciones Rust con constantes fiables
+### Finslipa Rust-applikationer med tillförlitliga konstanter
 
-La biblioteca Common (CMN) proporciona a los desarrolladores Rust una amplia gama de constantes matemáticas y criptográficas precisas. Esta precisión ayuda a prevenir errores y refuerza la seguridad. Con su diseño multiplataforma y su documentación detallada, CMN hace que el desarrollo y el despliegue de aplicaciones Rust sean más sencillos y fiables.
+Common-biblioteket (CMN) ger Rust-utvecklare tillgång till ett brett urval av exakta matematiska och kryptografiska konstanter. Denna noggrannhet bidrar till att förebygga fel och stärker säkerheten. Med sin plattformsoberoende utformning och detaljerade dokumentation gör CMN det enklare och mer tillförlitligt att utveckla och driftsätta Rust-applikationer.
 
-Diseñada con la portabilidad en mente, la biblioteca Common (CMN) garantiza que las aplicaciones Rust puedan desarrollarse una vez y desplegarse en cualquier parte, sin preocupaciones de compatibilidad. La documentación exhaustiva de la biblioteca significa también que los desarrolladores pueden integrarla fácilmente en sus proyectos y ponerse al día rápidamente.
+Biblioteket är utformat med portabilitet i åtanke och garanterar att Rust-applikationer kan utvecklas en gång och driftsättas var som helst, utan kompatibilitetsproblem. Den utförliga dokumentationen innebär också att utvecklare enkelt kan integrera biblioteket i sina projekt och snabbt komma igång.
 
-## Incentivos
+## Incitament
 
-### Refuerce sus aplicaciones Rust con la biblioteca Common (CMN)
+### Stärk dina Rust-applikationer med Common-biblioteket (CMN)
 
-Para las aplicaciones Rust que dependen de constantes matemáticas o criptográficas, la biblioteca Common (CMN) es un recurso inestimable. Propone:
+För Rust-applikationer som är beroende av matematiska eller kryptografiska konstanter är Common-biblioteket (CMN) en ovärderlig resurs. Det erbjuder:
 
-- **Número de Avogadro**: número de átomos en un mol de sustancia.
-- **Constante de Boltzmann**: constante que relaciona energía y temperatura.
-- **Número de Euler**: base del logaritmo natural.
-- **Función Gamma**: función especial que aparece en muchos campos matemáticos y físicos.
-- **Número áureo**: número que aparece en muchos objetos naturales y matemáticos.
-- **Pi**: proporción entre la circunferencia y el diámetro de un círculo.
-- **Constante de Planck**: cuanto de acción.
-- **Número de plata**: número similar al número áureo.
-- **Tau**: doble de la constante matemática pi.
-- **Raíz cuadrada de 3**: solución positiva de la ecuación x² = 3.
-- **Raíz cuadrada de 5**: solución positiva de la ecuación x² = 5.
+- **Avogadros tal:** antalet atomer i en mol av ett ämne.
+- **Boltzmanns konstant:** konstanten som relaterar energi till temperatur.
+- **Eulers tal:** basen för den naturliga logaritmen.
+- **Gammafunktionen:** en speciell funktion som förekommer inom många områden av matematik och fysik.
+- **Gyllene snittet:** ett tal som förekommer i många naturliga och matematiska objekt.
+- **Pi:** förhållandet mellan en cirkels omkrets och dess diameter.
+- **Plancks konstant:** verkanskvantumet.
+- **Silversnittet:** ett tal som liknar gyllene snittet.
+- **Tau:** två gånger den matematiska konstanten pi.
+- **Kvadratroten ur 3:** den positiva lösningen till ekvationen x^2 = 3.
+- **Kvadratroten ur 5:** den positiva lösningen till ekvationen x^2 = 5.
 
-Estas son solo algunas de las numerosas constantes matemáticas y criptográficas disponibles en la biblioteca Common (CMN). Para más información, consulte la documentación: [https://lib.rs/crates/cmn][01].
+Detta är bara några av de många matematiska och kryptografiska konstanter som finns i Common-biblioteket (CMN). För mer information, se dokumentationen för Common-biblioteket (CMN): [https://lib.rs/crates/cmn][01].
 
-Los beneficios de utilizar la biblioteca Common (CMN) incluyen:
+Fördelarna med att använda Common-biblioteket (CMN) omfattar:
 
-- **Precisión**: garantiza cálculos matemáticos precisos.
-- **Fiabilidad**: una biblioteca rigurosamente probada.
-- **Seguridad**: la seguridad de tipos ayuda a prevenir las vulnerabilidades.
-- **Portabilidad**: utilícela en diversas plataformas con facilidad.
-- **Documentación**: aprenda rápidamente con guías exhaustivas.
-- **Polivalencia**: ideal para una amplia gama de tareas computacionales.
+- **Noggrannhet:** säkerställer exakta matematiska beräkningar.
+- **Tillförlitlighet:** ett bibliotek som är rigoröst testat.
+- **Säkerhet:** typsäkerhet bidrar till att förebygga sårbarheter.
+- **Portabilitet:** använd det enkelt på olika plattformar.
+- **Dokumentation:** lär dig snabbt med utförliga guider.
+- **Mångsidighet:** idealiskt för ett brett spektrum av beräkningsuppgifter.
 
-Los casos de uso de la biblioteca Common (CMN) son diversos:
+Användningsområdena för Common-biblioteket (CMN) är många och omfattar:
 
-- Generación de claves de cifrado y creación segura de números.
-- Cálculos matemáticos avanzados.
-- Desarrollo de aplicaciones en ciencia, finanzas y criptografía.
-- Innovaciones en aprendizaje automático, IA y blockchain.
+- Generering av krypteringsnycklar och säker talgenerering.
+- Avancerade matematiska beräkningar.
+- Applikationsutveckling inom vetenskap, finans och kryptografi.
+- Innovationer inom maskininlärning, AI och blockchain.
 
-A medida que el campo de la criptografía evoluciona, la biblioteca Common (CMN) le sigue el paso, manteniéndose por delante de tendencias como la computación cuántica y el cifrado homomórfico para garantizar que sus aplicaciones permanezcan seguras y perdurables.
+I takt med att kryptografin utvecklas gör även Common-biblioteket (CMN) det, och ligger steget före trender som kvantdatorer och homomorf kryptering för att säkerställa att dina applikationer förblir säkra och framtidssäkrade.
 
-Los desarrolladores que necesiten constantes matemáticas o criptográficas en Rust deberían considerar la biblioteca Common (CMN) como recurso principal. Common (CMN) es una herramienta gratuita y de código abierto, disponible para su descarga desde el [repositorio GitHub ⧉][02].
+Utvecklare som behöver matematiska eller kryptografiska konstanter i Rust bör betrakta Common-biblioteket (CMN) som en primär resurs. Common-biblioteket (CMN) är ett kostnadsfritt verktyg med öppen källkod och finns att hämta från [GitHub-arkivet ⧉][02].
 
-[00]: https://github.com/sebastienrousseau/cmn "The Common (CMN) library website"
-[01]: https://docs.rs/cmn/latest/cmn/ "The Common (CMN) library documentation"
-[02]: https://github.com/sebastienrousseau/cmn "The Common (CMN) library GitHub repository"
+[00]: https://github.com/sebastienrousseau/cmn "Webbplatsen för Common-biblioteket (CMN)"
+[01]: https://docs.rs/cmn/latest/cmn/ "Dokumentationen för Common-biblioteket (CMN)"
+[02]: https://github.com/sebastienrousseau/cmn "GitHub-arkivet för Common-biblioteket (CMN)"

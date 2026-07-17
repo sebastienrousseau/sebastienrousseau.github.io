@@ -240,5 +240,9 @@ def bind_lang(code: str) -> None:
     _EN_TITLE_TO_FR_MAP_CACHE = None
     # Swap month-name map to the current language so localize_en_dates
     # emits the right month form (FR "novembre", DE "November", …).
+    # Languages without a month glossary get an EMPTY map — that makes
+    # localize_en_dates() a no-op for them, keeping the English month
+    # names. Falling back to the FR table here is what stamped French
+    # dates ("4 juin 2026") onto every other locale's topic pages.
     global _EN_MONTH_TO_FR
-    _EN_MONTH_TO_FR = dict(_LANG_MONTHS.get(code, _LANG_MONTHS["fr"]))
+    _EN_MONTH_TO_FR = dict(_LANG_MONTHS.get(code, {}))

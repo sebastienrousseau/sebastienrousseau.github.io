@@ -3,11 +3,11 @@
   "patches": [
     [
       "<a href=\"/\">Home</a> &middot; <span>Topics</span>",
-      "<a href=\"/ha/\">Home</a> &middot; <span>Topics</span>"
+      "<a href=\"/ha/\">Gida</a> &middot; <span>Batutuwa</span>"
     ],
     [
       ">Home<",
-      ">Home<"
+      ">Gida<"
     ],
     [
       ">Topics</h1>",
@@ -15,15 +15,15 @@
     ],
     [
       ">PILLARS</p>",
-      ">PILLARS</p>"
+      ">GINSHIƘAI</p>"
     ],
     [
       "PILLAR · TOPIC",
-      "PILLAR · TOPIC"
+      "GINSHIƘI · BATU"
     ],
     [
       "PILLAR · PROJECT",
-      "PILLAR · PROJECT"
+      "GINSHIƘI · AIKI"
     ],
     [
       "aria-label=\"Post-Quantum Cryptography\"",
@@ -67,115 +67,115 @@
     ],
     [
       "(\\d+) article\\(s\\)</p>",
-      "\\1 article(s)</p>"
+      "labarai \\1</p>"
     ],
     [
       "INDUSTRY WHITE PAPER · EPAA",
-      "INDUSTRY WHITE PAPER · EPAA"
+      "FARAR TAKARDA TA MASANA'ANTU · EPAA"
     ],
     [
       "INDUSTRY WHITE PAPER",
-      "INDUSTRY WHITE PAPER"
+      "FARAR TAKARDA TA MASANA'ANTU"
     ],
     [
       "PUBLICATION · WHITE PAPER",
-      "PUBLICATION · WHITE PAPER"
+      "WALLAFA · FARAR TAKARDA"
     ],
     [
       ">RESEARCH NOTES</p>",
-      ">RESEARCH NOTES</p>"
+      ">BAYANAN BINCIKE</p>"
     ],
     [
       ">RESEARCH NOTE · QUANTUM<",
-      ">RESEARCH NOTE · QUANTUM<"
+      ">BAYANIN BINCIKE · KWANTUM<"
     ],
     [
       ">RESEARCH · CRYPTOGRAPHY<",
-      ">RESEARCH · CRYPTOGRAPHY<"
+      ">BINCIKE · KIRIFTOGRAFI<"
     ],
     [
       ">RESEARCH · AI<",
-      ">RESEARCH · AI<"
+      ">BINCIKE · AI<"
     ],
     [
       ">RESEARCH · QUANTUM FINANCE<",
-      ">RESEARCH · QUANTUM FINANCE<"
+      ">BINCIKE · KUƊIN KWANTUM<"
     ],
     [
       ">RESEARCH · QUANTUM BANKING<",
-      ">RESEARCH · QUANTUM BANKING<"
+      ">BINCIKE · BANKIN KWANTUM<"
     ],
     [
       "WHITE PAPER",
-      "WHITE PAPER"
+      "FARAR TAKARDA"
     ],
     [
       ">Read the white paper</a>",
-      ">Read the white paper</a>"
+      ">Karanta farar takardar</a>"
     ],
     [
       "title=\"Read the white paper \\(PDF\\)\"",
-      "title=\"Read the white paper (PDF)\""
+      "title=\"Karanta farar takardar (PDF)\""
     ],
     [
       ">About EPAA</a>",
-      ">About EPAA</a>"
+      ">Game da EPAA</a>"
     ],
     [
       "title=\"Visit the Emerging Payments Association Asia\"",
-      "title=\"Visit the Emerging Payments Association Asia\""
+      "title=\"Ziyarci Emerging Payments Association Asia\""
     ],
     [
       ">Buy &middot; \\$([0-9]+)\\.([0-9]+)</a>",
-      ">Buy &middot; $\\1.\\2</a>"
+      ">Saya &middot; $\\1.\\2</a>"
     ],
     [
       "title=\"Buy the publication on PayPal\"",
-      "title=\"Buy the publication on PayPal\""
+      "title=\"Saya wallafar ta PayPal\""
     ],
     [
       ">Read the article</a>",
-      ">Read the article</a>"
+      ">Karanta labarin</a>"
     ],
     [
       " · Free download",
-      " · Free download"
+      " · Saukewa kyauta"
     ],
     [
       "Free download<",
-      "Free download<"
+      "Saukewa kyauta<"
     ],
     [
       ">Download<",
-      ">Download<"
+      ">Sauke<"
     ],
     [
       ">Request access<",
-      ">Request access<"
+      ">Nemi damar shiga<"
     ],
     [
       ">English · PDF",
-      ">English · PDF"
+      ">Turanci · PDF"
     ],
     [
       "aria-label=\"Tag: ([^,]+), (\\d+) Posts\"",
-      "aria-label=\"Tag: \\1, \\2 Posts\""
+      "aria-label=\"Tag: \\1, rubuce-rubuce \\2\""
     ],
     [
       "(\\(\\d+) Posts\\)",
-      "\\1 Posts)"
+      "\\1 rubuce-rubuce)"
     ],
     [
       ">Featured Tags \\((\\d+)\\)</h2>",
-      ">Featured Tags (\\1)</h2>"
+      ">Fitattun Tags (\\1)</h2>"
     ],
     [
       ">Featured Tags<",
-      ">Featured Tags<"
+      ">Fitattun Tags<"
     ],
     [
       "<a class=\"pill ghost\" href=\"/fr/contact/\">Get in touch</a>",
-      "<a class=\"pill ghost\" href=\"/ha/tuntube-mu/\">Get in touch</a>"
+      "<a class=\"pill ghost\" href=\"/ha/tuntube-mu/\">Tuntube mu</a>"
     ],
     [
       ">Get in touch</a>",
@@ -183,27 +183,27 @@
     ],
     [
       "Made with Static Site Generator: Rust-Powered SSG",
-      "Made with Static Site Generator: Rust-Powered SSG"
+      "An yi da Static Site Generator: SSG mai ƙarfin Rust"
     ],
     [
       "Website created with Static Site Generator \\(SSG\\)",
-      "Website created with Static Site Generator (SSG)"
+      "An ƙirƙiri gidan yanar gizon da Static Site Generator (SSG)"
     ],
     [
       "Topics &amp; Tags Index: AI, Payments, Quantum, Rust OSS",
-      "Topics &amp; Tags Index: AI, Payments, Quantum, Rust OSS"
+      "Fihirisar batutuwa da tags: AI, biyan kuɗi, kwantum, Rust OSS"
     ],
     [
       "Website Accessibility Statement — Standards &amp; Contact",
-      "Website Accessibility Statement — Standards &amp; Contact"
+      "Sanarwar samun dama ta gidan yanar gizo: ka'idoji da tuntuɓa"
     ],
     [
       "Privacy Statement — How Your Data Is Collected &amp; Used",
-      "Privacy Statement — How Your Data Is Collected &amp; Used"
+      "Sanarwar sirri: yadda ake tattarawa da amfani da bayananka"
     ],
     [
       "Website Terms &amp; Conditions of Use — Sebastien Rousseau",
-      "Website Terms &amp; Conditions of Use — Sebastien Rousseau"
+      "Sharuɗɗan amfani da gidan yanar gizo — Sebastien Rousseau"
     ],
     [
       ">Latest research<",
@@ -231,27 +231,27 @@
     ],
     [
       ">Newest first<",
-      ">Newest first<"
+      ">Sababbi na farko<"
     ],
     [
       ">Oldest first<",
-      ">Oldest first<"
+      ">Tsofaffi na farko<"
     ],
     [
       ">By topic<",
-      ">By topic<"
+      ">Bisa batu<"
     ],
     [
       ">All topics<",
-      ">All topics<"
+      ">Duk batutuwa<"
     ],
     [
       ">By tag<",
-      ">By tag<"
+      ">Bisa tag<"
     ],
     [
       ">All tags<",
-      ">All tags<"
+      ">Duk tags<"
     ],
     [
       ">Published<",
@@ -275,7 +275,7 @@
     ],
     [
       ">Learn more<",
-      ">Learn more<"
+      ">Ƙara koyo<"
     ],
     [
       ">Subscribe<",
@@ -283,7 +283,7 @@
     ],
     [
       ">Follow<",
-      ">Follow<"
+      ">Bi mu<"
     ],
     [
       ">Latest<",

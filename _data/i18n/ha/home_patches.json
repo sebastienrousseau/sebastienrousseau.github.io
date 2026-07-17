@@ -39,23 +39,23 @@
     ],
     [
       "<a href=/about/index\\.html>About</a>",
-      "<a href=/ha/game-da-mu/index.html>About</a>"
+      "<a href=/ha/game-da-mu/index.html>Game da mu</a>"
     ],
     [
       "<a href=/papers/index\\.html>Papers</a>",
-      "<a href=/ha/takardun-bincike/index.html>Papers</a>"
+      "<a href=/ha/takardun-bincike/index.html>Takardun bincike</a>"
     ],
     [
       "<a href=/projects/index\\.html>Projects</a>",
-      "<a href=/ha/ayyukan/index.html>Projects</a>"
+      "<a href=/ha/ayyukan/index.html>Ayyuka</a>"
     ],
     [
       "<a href=/playlists/index\\.html>Playlists</a>",
-      "<a href=/ha/jerin-waka/index.html>Playlists</a>"
+      "<a href=/ha/jerin-waka/index.html>Jerin waƙoƙi</a>"
     ],
     [
       "<a href=/contact/index\\.html>Contact</a>",
-      "<a href=/ha/tuntube-mu/index.html>Contact</a>"
+      "<a href=/ha/tuntube-mu/index.html>Tuntube mu</a>"
     ],
     [
       "<a href=/tags/index\\.html>Tags</a>",
@@ -63,23 +63,23 @@
     ],
     [
       "<a href=/articles/index\\.html>Articles</a>",
-      "<a href=/ha/labarai/index.html>Articles</a>"
+      "<a href=/ha/labarai/index.html>Labarai</a>"
     ],
     [
       "<a href=/made-with-static-site-generator/index\\.html>Made with Static Site Generator</a>",
-      "<a href=/ha/an-yi-da-static-site-generator/index.html>Made with Static Site Generator</a>"
+      "<a href=/ha/an-yi-da-static-site-generator/index.html>An yi da Static Site Generator</a>"
     ],
     [
       "<a href=/accessibility/index\\.html>Accessibility</a>",
-      "<a href=/ha/isar-da-hannu/index.html>Accessibility</a>"
+      "<a href=/ha/isar-da-hannu/index.html>Samun dama</a>"
     ],
     [
       "<a href=/privacy/index\\.html>Privacy</a>",
-      "<a href=/ha/sirri/index.html>Privacy</a>"
+      "<a href=/ha/sirri/index.html>Sirri</a>"
     ],
     [
       "<a href=/terms/index\\.html>Terms</a>",
-      "<a href=/ha/sharudda/index.html>Terms</a>"
+      "<a href=/ha/sharudda/index.html>Sharuɗɗa</a>"
     ],
     [
       "© Copyright 2007 - 2026 - Sebastien Rousseau\\. All rights reserved\\.",
@@ -103,19 +103,19 @@
     ],
     [
       ">By topic<",
-      ">By topic<"
+      ">Bisa batu<"
     ],
     [
       ">All topics<",
-      ">All topics<"
+      ">Duk batutuwa<"
     ],
     [
       ">By tag<",
-      ">By tag<"
+      ">Bisa tag<"
     ],
     [
       ">All tags<",
-      ">All tags<"
+      ">Duk tags<"
     ],
     [
       ">Published<",
@@ -135,7 +135,7 @@
     ],
     [
       ">Follow<",
-      ">Follow<"
+      ">Bi mu<"
     ],
     [
       "<p class=feat-eyebrow>Get in touch</p>",
@@ -147,83 +147,83 @@
     ],
     [
       ">Learn more<",
-      ">Learn more<"
+      ">Ƙara koyo<"
     ],
     [
       ">Authored & maintained<",
-      ">Authored & maintained<"
+      ">An rubuta kuma ana kulawa<"
     ],
     [
       ">Authored &amp; maintained<",
-      ">Authored &amp; maintained<"
+      ">An rubuta kuma ana kulawa<"
     ],
     [
       "alt=\"PayPal logo\"",
-      "alt=\"PayPal logo\""
+      "alt=\"Tambarin PayPal\""
     ],
     [
       "alt=\"Barclays logo\"",
-      "alt=\"Barclays logo\""
+      "alt=\"Tambarin Barclays\""
     ],
     [
       "alt=\"Shazam logo\"",
-      "alt=\"Shazam logo\""
+      "alt=\"Tambarin Shazam\""
     ],
     [
       "alt=\"AKQA logo\"",
-      "alt=\"AKQA logo\""
+      "alt=\"Tambarin AKQA\""
     ],
     [
       "alt=\"Virgin logo\"",
-      "alt=\"Virgin logo\""
+      "alt=\"Tambarin Virgin\""
     ],
     [
       "alt=\"HSBC logo\"",
-      "alt=\"HSBC logo\""
+      "alt=\"Tambarin HSBC\""
     ],
     [
       ">Read the white paper</a>",
-      ">Read the white paper</a>"
+      ">Karanta farar takardar</a>"
     ],
     [
       ">Read the article<",
-      ">Read the article<"
+      ">Karanta labarin<"
     ],
     [
       ">Read the paper<",
-      ">Read the paper<"
+      ">Karanta takardar<"
     ],
     [
       ">See all articles\\b",
-      ">See all articles"
+      ">Duba duk labarai"
     ],
     [
       ">Quantum<",
-      ">Quantum<"
+      ">Kwantum<"
     ],
     [
       ">Quantum · Banking<",
-      ">Quantum · Banking<"
+      ">Kwantum · Banki<"
     ],
     [
       ">Quantum · Cryptography<",
-      ">Quantum · Cryptography<"
+      ">Kwantum · Kiriftografi<"
     ],
     [
       ">Payments · Stablecoins<",
-      ">Payments · Stablecoins<"
+      ">Biyan kuɗi · Stablecoins<"
     ],
     [
       ">Payments · ISO 20022<",
-      ">Payments · ISO 20022<"
+      ">Biyan kuɗi · ISO 20022<"
     ],
     [
       ">Python · Payments<",
-      ">Python · Payments<"
+      ">Python · Biyan kuɗi<"
     ],
     [
       ">Python · Cross-border<",
-      ">Python · Cross-border<"
+      ">Python · Ƙetare iyaka<"
     ],
     [
       ">Python · Finance<",
@@ -231,11 +231,11 @@
     ],
     [
       ">Rust · Security<",
-      ">Rust · Security<"
+      ">Rust · Tsaro<"
     ],
     [
       ">Rust · Quantum<",
-      ">Rust · Quantum<"
+      ">Rust · Kwantum<"
     ],
     [
       ">Rust · YAML<",
@@ -243,15 +243,15 @@
     ],
     [
       ">Browse all projects<",
-      ">Browse all projects<"
+      ">Bincika duk ayyukan<"
     ],
     [
       ">Experience<",
-      ">Experience<"
+      ">Ƙwarewa<"
     ],
     [
       ">Brands along the way\\.<",
-      ">Brands along the way.<"
+      ">Manyan kamfanoni a kan hanya.<"
     ],
     [
       "aria-label=\"Newsletter signup\"",

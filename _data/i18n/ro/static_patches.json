@@ -3,11 +3,11 @@
   "patches": [
     [
       "<a href=\"/\">Home</a> &middot; <span>Topics</span>",
-      "<a href=\"/ro/\">Home</a> &middot; <span>Topics</span>"
+      "<a href=\"/ro/\">Acasă</a> &middot; <span>Subiecte</span>"
     ],
     [
       ">Home<",
-      ">Home<"
+      ">Acasă<"
     ],
     [
       ">Topics</h1>",
@@ -15,15 +15,15 @@
     ],
     [
       ">PILLARS</p>",
-      ">PILLARS</p>"
+      ">PILONI</p>"
     ],
     [
       "PILLAR · TOPIC",
-      "PILLAR · TOPIC"
+      "PILON · SUBIECT"
     ],
     [
       "PILLAR · PROJECT",
-      "PILLAR · PROJECT"
+      "PILON · PROIECT"
     ],
     [
       "aria-label=\"Post-Quantum Cryptography\"",
@@ -67,115 +67,115 @@
     ],
     [
       "(\\d+) article\\(s\\)</p>",
-      "\\1 article(s)</p>"
+      "\\1 articol(e)</p>"
     ],
     [
       "INDUSTRY WHITE PAPER · EPAA",
-      "INDUSTRY WHITE PAPER · EPAA"
+      "CARTE ALBĂ DE INDUSTRIE · EPAA"
     ],
     [
       "INDUSTRY WHITE PAPER",
-      "INDUSTRY WHITE PAPER"
+      "CARTE ALBĂ DE INDUSTRIE"
     ],
     [
       "PUBLICATION · WHITE PAPER",
-      "PUBLICATION · WHITE PAPER"
+      "PUBLICAȚIE · CARTE ALBĂ"
     ],
     [
       ">RESEARCH NOTES</p>",
-      ">RESEARCH NOTES</p>"
+      ">NOTE DE CERCETARE</p>"
     ],
     [
       ">RESEARCH NOTE · QUANTUM<",
-      ">RESEARCH NOTE · QUANTUM<"
+      ">NOTĂ DE CERCETARE · CUANTIC<"
     ],
     [
       ">RESEARCH · CRYPTOGRAPHY<",
-      ">RESEARCH · CRYPTOGRAPHY<"
+      ">CERCETARE · CRIPTOGRAFIE<"
     ],
     [
       ">RESEARCH · AI<",
-      ">RESEARCH · AI<"
+      ">CERCETARE · IA<"
     ],
     [
       ">RESEARCH · QUANTUM FINANCE<",
-      ">RESEARCH · QUANTUM FINANCE<"
+      ">CERCETARE · FINANȚE CUANTICE<"
     ],
     [
       ">RESEARCH · QUANTUM BANKING<",
-      ">RESEARCH · QUANTUM BANKING<"
+      ">CERCETARE · BANKING CUANTIC<"
     ],
     [
       "WHITE PAPER",
-      "WHITE PAPER"
+      "CARTE ALBĂ"
     ],
     [
       ">Read the white paper</a>",
-      ">Read the white paper</a>"
+      ">Citește cartea albă</a>"
     ],
     [
       "title=\"Read the white paper \\(PDF\\)\"",
-      "title=\"Read the white paper (PDF)\""
+      "title=\"Citește cartea albă (PDF)\""
     ],
     [
       ">About EPAA</a>",
-      ">About EPAA</a>"
+      ">Despre EPAA</a>"
     ],
     [
       "title=\"Visit the Emerging Payments Association Asia\"",
-      "title=\"Visit the Emerging Payments Association Asia\""
+      "title=\"Vizitează Emerging Payments Association Asia\""
     ],
     [
       ">Buy &middot; \\$([0-9]+)\\.([0-9]+)</a>",
-      ">Buy &middot; $\\1.\\2</a>"
+      ">Cumpără &middot; $\\1.\\2</a>"
     ],
     [
       "title=\"Buy the publication on PayPal\"",
-      "title=\"Buy the publication on PayPal\""
+      "title=\"Cumpără publicația prin PayPal\""
     ],
     [
       ">Read the article</a>",
-      ">Read the article</a>"
+      ">Citește articolul</a>"
     ],
     [
       " · Free download",
-      " · Free download"
+      " · Descărcare gratuită"
     ],
     [
       "Free download<",
-      "Free download<"
+      "Descărcare gratuită<"
     ],
     [
       ">Download<",
-      ">Download<"
+      ">Descarcă<"
     ],
     [
       ">Request access<",
-      ">Request access<"
+      ">Solicită acces<"
     ],
     [
       ">English · PDF",
-      ">English · PDF"
+      ">Română · PDF"
     ],
     [
       "aria-label=\"Tag: ([^,]+), (\\d+) Posts\"",
-      "aria-label=\"Tag: \\1, \\2 Posts\""
+      "aria-label=\"Etichetă: \\1, \\2 articole\""
     ],
     [
       "(\\(\\d+) Posts\\)",
-      "\\1 Posts)"
+      "\\1 articole)"
     ],
     [
       ">Featured Tags \\((\\d+)\\)</h2>",
-      ">Featured Tags (\\1)</h2>"
+      ">Etichete recomandate (\\1)</h2>"
     ],
     [
       ">Featured Tags<",
-      ">Featured Tags<"
+      ">Etichete recomandate<"
     ],
     [
       "<a class=\"pill ghost\" href=\"/fr/contact/\">Get in touch</a>",
-      "<a class=\"pill ghost\" href=\"/ro/contact/\">Get in touch</a>"
+      "<a class=\"pill ghost\" href=\"/ro/contact/\">Contact</a>"
     ],
     [
       ">Get in touch</a>",
@@ -183,27 +183,27 @@
     ],
     [
       "Made with Static Site Generator: Rust-Powered SSG",
-      "Made with Static Site Generator: Rust-Powered SSG"
+      "Realizat cu Static Site Generator: SSG bazat pe Rust"
     ],
     [
       "Website created with Static Site Generator \\(SSG\\)",
-      "Website created with Static Site Generator (SSG)"
+      "Site web creat cu Static Site Generator (SSG)"
     ],
     [
       "Topics &amp; Tags Index: AI, Payments, Quantum, Rust OSS",
-      "Topics &amp; Tags Index: AI, Payments, Quantum, Rust OSS"
+      "Index de subiecte și etichete: IA, plăți, cuantic, Rust OSS"
     ],
     [
       "Website Accessibility Statement — Standards &amp; Contact",
-      "Website Accessibility Statement — Standards &amp; Contact"
+      "Declarație de accesibilitate a site-ului: standarde și contact"
     ],
     [
       "Privacy Statement — How Your Data Is Collected &amp; Used",
-      "Privacy Statement — How Your Data Is Collected &amp; Used"
+      "Declarație de confidențialitate: cum sunt colectate și utilizate datele dumneavoastră"
     ],
     [
       "Website Terms &amp; Conditions of Use — Sebastien Rousseau",
-      "Website Terms &amp; Conditions of Use — Sebastien Rousseau"
+      "Termeni și condiții de utilizare a site-ului — Sebastien Rousseau"
     ],
     [
       ">Latest research<",
@@ -231,27 +231,27 @@
     ],
     [
       ">Newest first<",
-      ">Newest first<"
+      ">Cele mai noi întâi<"
     ],
     [
       ">Oldest first<",
-      ">Oldest first<"
+      ">Cele mai vechi întâi<"
     ],
     [
       ">By topic<",
-      ">By topic<"
+      ">După subiect<"
     ],
     [
       ">All topics<",
-      ">All topics<"
+      ">Toate subiectele<"
     ],
     [
       ">By tag<",
-      ">By tag<"
+      ">După etichetă<"
     ],
     [
       ">All tags<",
-      ">All tags<"
+      ">Toate etichetele<"
     ],
     [
       ">Published<",
@@ -275,7 +275,7 @@
     ],
     [
       ">Learn more<",
-      ">Learn more<"
+      ">Află mai multe<"
     ],
     [
       ">Subscribe<",
@@ -283,7 +283,7 @@
     ],
     [
       ">Follow<",
-      ">Follow<"
+      ">Urmărește<"
     ],
     [
       ">Latest<",

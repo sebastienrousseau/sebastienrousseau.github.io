@@ -97,15 +97,22 @@ def localize_en_dates(html: str) -> str:
     # Substitutions inside attribute values are safe because we only swap
     # the visible-month words — ISO datetime attributes use numbers
     # (YYYY-MM-DD), not month names.
+    # Every lookup uses ``.get(month, month)`` so a locale with no month
+    # glossary (empty _EN_MONTH_TO_FR) leaves the English month word
+    # intact instead of raising KeyError — a clean no-op for those
+    # languages, which is what keeps un-glossaried locales from getting
+    # French month names stamped on them.
     def full_repl(m: re.Match[str]) -> str:
-        return f"{int(m.group(2))} {st._EN_MONTH_TO_FR[m.group(1)]} {m.group(3)}"
+        month = st._EN_MONTH_TO_FR.get(m.group(1), m.group(1))
+        return f"{int(m.group(2))} {month} {m.group(3)}"
 
     def short_repl(m: re.Match[str]) -> str:
         month = st._EN_MONTH_TO_FR.get(m.group(1), m.group(1))
         return f"{int(m.group(2))} {month} {m.group(3)}"
 
     def ym_repl(m: re.Match[str]) -> str:
-        return f"{st._EN_MONTH_TO_FR[m.group(1)]} {m.group(2)}"
+        month = st._EN_MONTH_TO_FR.get(m.group(1), m.group(1))
+        return f"{month} {m.group(2)}"
 
     html = _DATE_FULL_RE.sub(full_repl, html)
     html = _DATE_SHORT_RE.sub(short_repl, html)

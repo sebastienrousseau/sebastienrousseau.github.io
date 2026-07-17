@@ -1,165 +1,114 @@
 ---
-title: "IA generativa en 2023: cómo funciona, dónde aterriza"
-subtitle: "Inteligencia artificial aplicada a la banca y los servicios financieros"
-description: "Explore la IA generativa en 2023: cómo funciona, dónde se implanta primero en los servicios financieros, y las cuestiones éticas y arquitectónicas a plantearse."
+title: "Generativ AI 2023: hur den fungerar och var den landar"
+subtitle: "Tillämpad artificiell intelligens inom bank och finansiella tjänster."
+description: "Utforska generativ AI 2023: hur den fungerar, var den först landar inom finansiella tjänster och de etiska och arkitektoniska frågor som är värda att ställa."
 date: "November 12, 2023"
 language: "sv-SE"
 locale: "sv_SE"
 banner: "https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp"
-banner_alt: "Concepto de IA, renderizado 3D, imagen conceptual"
-keywords: "IA generativa, tecnología, futuro, impacto, ética, sinergias, innovación, creatividad, transformación, evolución"
+banner_alt: "Abstrakt visualisering av ett neuralt nätverk i blå och lila toner som representerar AI-bearbetning"
+keywords: "generativ AI, stor språkmodell, transformerarkitektur, GPT-4, AI inom finansiella tjänster, hallucination, retrieval-augmented generation, AI-styrning, grundmodell, finjustering"
 ---
 
-![AI, Artificial Intelligence concept,3d rendering,conceptual image](https://cloudcdn.pro/stocks/images/fabio-oyXis2kALVg.webp).class=\"img-fluid clearfix\"
+![Abstrakt visualisering av ett neuralt nätverk i blå och lila toner som representerar AI-bearbetning](https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp).class=\"img-fluid clearfix\"
 
-## Perspectiva
+> **Sammanfattning / viktigaste slutsatser**
+>
+> - **Arkitekturen som förändrade allt.** Transformerartikeln från 2017 introducerade self-attention: en mekanism som beräknar relevansvikter mellan varje par av tokens i indata och ersätter RNN:ernas sekventiella bearbetning med parallelliserbara matrisoperationer. Varje större språkmodell 2023 är en transformervariant ([Vaswani et al., 2017](https://arxiv.org/abs/1706.03762 "Attention Is All You Need")).
+> - **GPT-4 som 2023 års riktmärke.** GPT-4, som släpptes i mars 2023, placerade sig i 90:e percentilen på det amerikanska advokatprovet, 99:e på GRE Verbal, och uppvisade flerstegsresonemang över långa dokument. Den satte det kapacitetsriktmärke som efterföljande modeller siktade på att nå eller överträffa ([OpenAI, 2023](https://arxiv.org/abs/2303.08774 "GPT-4 Technical Report")).
+> - **Modeller med öppna vikter demokratiserade tillgången.** Metas Llama 2 (juli 2023) och Mistral AI:s Mistral 7B (september 2023) visade att modeller i klass med GPT-3.5 kunde köras på privat infrastruktur, vilket adresserade de reglerade branschernas krav på datalokalisering.
+> - **Piloter inom finansiella tjänster 2023.** Breda driftsättningar i slutet av 2023 omfattade granskning av juridiska avtal (JPMorgans DocLLM-forskning), bevakning av regelverksändringar och produktivitetsverktyg för utvecklare. Goldman Sachs rapporterade intern användning av AI-kodassistenter bland 10 000 utvecklare.
+> - **Hallucination är ett produktionshinder.** LLM:er genererar rimligt klingande men faktamässigt felaktiga utdata i icke försumbar omfattning. I reglerade användningsfall (kreditbeslut, efterlevnadsutlåtanden, kundinformation) är hallucination inte en kosmetisk brist; det är en regulatorisk risk och en ansvarsrisk som kräver arkitektoniska motåtgärder som retrieval-augmented generation (RAG).
 
-### Comprender la mecánica de la IA generativa
+---
 
-#### Introducción a la IA generativa
+## Hur transformerarkitekturen fungerar
 
-La inteligencia artificial generativa es un campo puntero del aprendizaje automático que permite a los ordenadores producir contenido indistinguible del creado por humanos. Esta tecnología es un subconjunto de la IA que pasa de respuestas reactivas a la creación proactiva. Mientras que la IA le dice el tiempo, la IA generativa podría escribir un poema sobre un día lluvioso, utilizando metáforas y emociones que parecen humanas.
+Varje betydande språkmodell som driftsattes 2023 (GPT-4, Claude 2, Llama 2, Mistral, Falcon) bygger på den transformerarkitektur som introducerades i 2017 års artikel "Attention Is All You Need". Att förstå kärnmekanismen förklarar både varför dessa modeller fungerar och var de misslyckas.
 
-La IA generativa consiste en predecir la secuencia siguiente en un patrón: palabras, píxeles, notas. Su potencia proviene de que aprende a partir de los datos para producir nuevas creaciones distintas de las demás.
+**Tokens och inbäddningar.** Modellen börjar med att dela upp indatatext i deltokens (vanligen med byte-pair encoding). Varje token avbildas på en högdimensionell vektor (en inbäddning) som kodar dess semantiska relationer till andra tokens, inlärda under förträningen.
 
-#### La ciencia detrás de la IA generativa
+**Self-attention.** För varje token beräknar modellen tre vektorer: en Query (vad denna token söker efter), en Key (vad denna token erbjuder) och en Value (vad denna token bidrar med). Uppmärksamhetspoäng beräknas genom att ta skalärprodukten av varje Query mot alla Keys, tillämpa softmax för att producera vikter och summera Values viktade med dessa poäng. Det innebär att varje token uppmärksammar varje annan token i kontextfönstret samtidigt: den mekanism som ger transformermodeller deras förmåga att hantera långväga beroenden.
 
-Para comprender cómo funciona la IA generativa como ChatGPT, hay que sumergirse primero en las arquitecturas de redes neuronales que la impulsan. En la cima de estas arquitecturas se encuentra el modelo Transformer, un tipo de red neuronal particularmente adaptado a la manipulación de datos secuenciales. A diferencia de sus predecesores, el Transformer no trata los datos en orden, permitiéndole mirar simultáneamente todas las partes de los datos. Esto es lo que se llama el mecanismo de atención, que permite al modelo ponderar la importancia de las distintas partes de la entrada para predecir una salida.
+**Multi-head attention.** Flera uppmärksamhetshuvuden körs parallellt, där vart och ett lär sig olika typer av relationer (syntaktiska, semantiska, positionella). Deras utdata sammanfogas och projiceras linjärt.
 
-El entrenamiento de estos modelos consiste en proporcionarles un enorme corpus de texto. Durante el entrenamiento, el modelo predice lo que viene a continuación en una frase y recibe retroalimentación. Con el tiempo, ajusta sus parámetros internos para mejorar su precisión. El aprendizaje no supervisado no requiere datos etiquetados, permitiendo al modelo aprender desde cualquier texto.
+**Feed-forward-lager.** Efter uppmärksamheten passerar varje position genom två linjära transformationer med en icke-linjär aktivering. Detta lager utför beräkning per token oberoende av övriga och fångar lokala särdragstransformationer.
 
-#### Diferenciación frente a otros sistemas de IA
+**Skala.** GPT-4 uppskattas till över en biljon parametrar (obekräftat av OpenAI). Llama 2 70B använder 70 miljarder. Mistral 7B använder 7 miljarder, med grouped-query attention och sliding window attention för effektivitet. Större modeller uppvisar i allmänhet bättre zero-shot- och few-shot-resonemang: de emergenta förmågor som gör dem användbara för uppgifter de inte uttryckligen tränats på.
 
-Cabe preguntarse en qué se diferencia fundamentalmente la IA generativa de los sistemas expertos del pasado. Los sistemas de IA tradicionales se apoyan en un conjunto de reglas elaboradas por humanos. Son deterministas, predecibles y se limitan a los escenarios para los que están programados. La IA generativa, en cambio, es probabilística y puede gestionar la incertidumbre y la ambigüedad de una manera que imita los procesos de pensamiento humanos.
+## Modellandskapet 2023
 
-Mientras que los sistemas expertos pueden decir si una frase es gramaticalmente correcta, la IA generativa puede escribir un artículo lleno de creatividad y matiz. Este giro, de los sistemas basados en reglas a los modelos que generan contenido nuevo, ha abierto posibilidades que antes pertenecían a la ciencia ficción.
+2023 producerade fler betydande modellsläpp än något tidigare år:
 
-## Idea
+**GPT-4 (OpenAI, mars 2023).** Multimodal (text- och bildindata), kontextfönster på upp till 128 000 tokens i den senare varianten GPT-4 Turbo, starkt flerstegsresonemang. Satte riktmärket för uppgifter inom professionella domäner.
 
-### La evolución y los avances de la IA generativa
+**Claude 2 (Anthropic, juli 2023).** Kontextfönster på 100 000 tokens (längst vid lanseringen), stark prestanda på uppgifter med långa dokument som avtalsgranskning och regelverksanalys. Constitutional AI-träning för färre skadliga utdata.
 
-#### Perspectiva histórica
+**Llama 2 (Meta, juli 2023).** Släppt med öppna vikter i varianterna 7B, 13B, 34B och 70B parametrar. Kommersiell användning tillåten. Möjliggjorde driftsättning på egen infrastruktur för reglerade branscher. Gav upphov till hundratals finjusterade varianter (Code Llama, Vicuna, WizardLM).
 
-El viaje de la IA generativa comenzó con modelos simples que apenas podían producir frases coherentes. Inicialmente, estos modelos se apoyaban en reglas y árboles de decisión, lo que los volvía rígidos y limitados a los conocimientos explícitamente codificados. Sin embargo, el advenimiento del aprendizaje automático y, más recientemente, del deep learning, ha traído un cambio de paradigma.
+**Mistral 7B (Mistral AI, september 2023).** 7 miljarder parametrar som överträffar Llama 2 13B på de flesta riktmärken. Grouped-query attention och sliding window attention sänker inferenskostnaden. Den första betydande europeiska frontmodellen, relevant med tanke på GDPR och EU:s AI-förordning.
 
-La evolución histórica de la IA generativa puede trazarse desde la IA simbólica primitiva hasta las redes neuronales actuales. Cada etapa nos ha acercado al objetivo de crear máquinas capaces de comprender realmente y generar contenido de calidad humana.
+**Falcon 180B (TII, september 2023).** Modell med öppna vikter och 180 miljarder parametrar, tränad på 3,5 biljoner tokens RefinedWeb-data. Visade att modeller med öppna vikter kunde närma sig skalan hos GPT-4-klassen.
 
-#### Modelos recientes
+## Var generativ AI först landade inom finansiella tjänster
 
-Hoy, GPT-4 y los modelos más recientes han elevado el listón de lo que la IA generativa puede lograr. Estos modelos pueden escribir ensayos como humanos, producir código informático complejo y más.
+I slutet av 2023 hade finansinstituten gått från interna experiment till strukturerade pilotprogram i flera distinkta användningsfall:
 
-Estos avances resultan tanto de innovaciones arquitectónicas como del aumento exponencial de la cantidad de datos y de la potencia de cálculo disponibles. Los modelos Transformer son revolucionarios porque capturan el contexto de la entrada.
+**Utvecklarproduktivitet.** Kodgenereringsverktyg (GitHub Copilot, Amazon CodeWhisperer, internt finjusterade modeller) blev den bredast driftsatta kategorin. Goldman Sachs rapporterade att 10 000 utvecklare hade tillgång till AI-kodassistans. Morgan Stanley driftsatte GPT-4 internt för att hjälpa finansiella rådgivare att hämta information ur en kunskapsbas med 100 000 dokument.
 
-#### Comparación con las tecnologías anteriores
+**Bearbetning av juridiska och regulatoriska dokument.** Extraktion av avtalsklausuler, bevakning av regelverksändringar och efterlevnadskartläggning var piloterna med högst värde. JPMorgans forskning kring DocLLM visade att språkmodeller medvetna om dokumentlayout överträffade generiska LLM:er på uppgifter som gäller förståelse av finansiella dokument.
 
-El contraste entre la IA generativa y sus predecesoras es nítido. Allí donde los modelos más antiguos batallaban con la ambigüedad y el contexto, la IA generativa moderna se alimenta de ellos. La robustez de estos modelos viene no solo de su arquitectura sino también de sus metodologías de entrenamiento. Se entrenan sobre conjuntos de datos de temas y estilos diversos, permitiéndoles generar un contenido a la vez preciso y variado.
+**Förstärkt kundservice.** Banker driftsatte LLM-drivna assistenter för kundfrågor i första linjen, med eskalering till människa för reglerad rådgivning. Centrala begränsningar: modellen får inte ge reglerad rådgivning, får inte hallucinera produktvillkor och måste vara granskningsbar.
 
-## Impacto
+**Generering av KYC- och AML-berättelser.** Att sammanfatta komplexa transaktionsmönster och kundprofiler för analytikergranskning, som ersättning för vad som tidigare varit manuellt skrivarbete, framträdde som ett trovärdigt användningsfall med lägre hallucinationsrisk eftersom modellen sammanfattar tillhandahållna data i stället för att generera nya påståenden.
 
-### Las implicaciones amplias de la IA generativa
+## Riskerna som produktionen blottlade
 
-#### Influencia en diversos sectores
+Att gå från demo till produktion inom finansiella tjänster synliggjorde en uppsättning risker som krävde arkitektoniska svar:
 
-La IA generativa no es solo una curiosidad académica; es una fuerza transformadora a través de múltiples industrias. En los sectores creativos —música, literatura— la IA ha comenzado a difuminar la frontera entre creatividad humana y máquina.
+**Hallucination.** LLM:er genererar felaktiga utdata som låter säkra, i en omfattning som varierar med uppgiftstyp och modell. På uppgifter som gäller faktaåtergivning hallucinerar även GPT-4 i en omfattning som är oacceptabel för efterlevnadsutlåtanden eller kreditinformation. Den främsta motåtgärden är retrieval-augmented generation (RAG): förankra modellens utdata i hämtade, verifierbara dokument i stället för att enbart förlita sig på parametrisk kunskap.
 
-La IA también ha mejorado el servicio al cliente en las empresas, dando respuestas humanas a las preguntas de los clientes. En sanidad, los modelos generativos sirven para predecir las estructuras moleculares.
+**Promptinjektion.** Fientliga indata inbäddade i dokument eller användarmeddelanden kan styra om modellens beteende. Inom finansiella tjänster, där LLM:er bearbetar icke betrodda dokument (avtal, e-post, kundinlämningar), är promptinjektion en säkerhetsrisk i produktion, inte en teoretisk sådan.
 
-La IA generativa puede utilizarse para toda clase de tareas: creación de contenido, traducción, desarrollo de juegos y más.
+**Dataläckage.** Modeller som finjusterats eller promptats på konfidentiella data kan återge dessa data i utdata: en väsentlig risk för personuppgifter, handelspositioner och kundinformation. Arkitektoniska kontroller (privat driftsättning, hantering av data i kontexten, utdatafiltrering) är ett krav, inte ett tillval.
 
-#### Consideraciones éticas y sociales
+**Modellproveniens och granskningsbarhet.** Tillsynsmyndigheter förväntar sig att finansinstitut kan förklara automatiserade beslut. En LLM som producerar en kreditbedömning utan ett granskningsbart resonemangsspår uppfyller inte förklarbarhetskraven i GDPR artikel 22, bestämmelserna om AI-system med hög risk i EU:s AI-förordning eller FCA:s befintliga vägledning om modellrisk.
 
-Con el auge de la IA generativa, las consideraciones éticas están en primer plano. El potencial de deepfakes, desinformación y reemplazo de empleos tradicionalmente humanos son preocupaciones reales que la sociedad debe abordar. También está la cuestión de la propiedad y los derechos de autor cuando el contenido es generado por IA.
+**Föråldrad kunskap.** LLM:er har brytdatum för träningsdata. En modell tränad på data fram till början av 2023 känner inte till regelverksändringar, räntebeslut eller marknadshändelser efter det datumet: en betydande begränsning för användningsfall som gäller regelefterlevnad i realtid eller marknadskommentarer, utan RAG eller realtidshämtning.
 
-El impacto social de la IA generativa se extiende más allá de estas preocupaciones. También hay un potencial de cambio: programas educativos personalizados que se adaptan al estilo de aprendizaje de cada estudiante, IA capaz de superar las barreras lingüísticas.
+## Styrningskrav före driftsättning
 
-#### Perspectiva a largo plazo
+Praktiker inom finansiella tjänster väntade 2023 inte på regulatorisk visshet före driftsättning, men ledande institut antog ramverk för modellriskhantering (MRM) anpassade från vägledningen i SR 11-7 och SS3/18:
 
-En el horizonte, el impacto a largo plazo de la IA generativa depende de la forma en que elijamos integrarla en nuestras vidas y controlar su desarrollo. El potencial de esta tecnología para beneficiar a la humanidad es enorme, pero exige una gestión y una regulación cuidadosas.
+**Modellinventering och dokumentation.** LLM:er som driftsätts för affärsfunktioner kräver dokumentation av träningsdatas proveniens, finjusteringsmetodik, kända felmoder och prestanda på domänspecifika valideringsuppsättningar.
 
-Los futuros avances de la IA generativa podrían conducir a interacciones más personalizadas y atractivas con la tecnología, creando experiencias adaptadas a las preferencias y necesidades individuales. Sin embargo, este futuro está condicionado por nuestra capacidad para navegar los desafíos éticos y desarrollar la IA de manera responsable y controlada.
+**Kontrollpunkter med människa i loopen.** För reglerade utdata (kreditbeslut, efterlevnadsutlåtanden, kundinformation) förblev mänsklig granskning obligatorisk 2023. Automatisering tillämpades på utkast och sammanfattning; det slutliga godkännandet förblev mänskligt.
 
-## Incentivos
+**Leverantörsrisk.** Att använda ett tredjeparts-API för modeller (OpenAI, Anthropic, Google) medför koncentrationsrisk mot leverantören, risk kring datalokalisering och risk för modelländringar (leverantörer kan uppdatera modeller i tysthet). Företagsavtal och privata driftsättningar mildrar dessa delvis.
 
-### Las fuerzas motrices detrás del desarrollo de la IA generativa
+**Dialog med tillsynsmyndigheter.** FCA, PRA, ECB och FINRA publicerade alla rapporter eller tal om AI-styrning under 2023. Det genomgående budskapet: befintliga ramverk för modellrisk gäller för AI, och företag bör vara proaktiva med att dokumentera sin styrningsansats i väntan på formell vägledning.
 
-#### Incentivos económicos
+## Vanliga frågor
 
-El desarrollo de la IA generativa está impulsado en gran parte por los incentivos económicos. Las empresas siempre buscan formas de mejorar la eficiencia y reducir los costes, y la IA ofrece ambas. Con su capacidad para automatizar tareas complejas y generar soluciones creativas, la IA generativa puede producir importantes ahorros de coste e impulsos de productividad.
+**Vad är skillnaden mellan en stor språkmodell och en grundmodell?**
 
-El contenido generado por IA puede adaptarse a distintos públicos en marketing, desarrollo de software y más. Esto puede reducir el tiempo y el coste de comercialización de nuevo software.
+En stor språkmodell (LLM) är en modell tränad på textdata i stor skala för att förutsäga och generera språk. Grundmodell är ett bredare begrepp för varje stor förtränad modell som kan anpassas (finjusteras eller promptas) för flera nedströmsuppgifter: det inkluderar LLM:er men även bildmodeller, kodmodeller och multimodala modeller. GPT-4 är både en LLM och en grundmodell. DALL-E 3 är en grundmodell men inte en LLM. I praktiken används begreppen ofta synonymt när man talar om textgenererande system.
 
-#### Innovación y competencia
+**Vad är retrieval-augmented generation och varför är det viktigt för finansiella tjänster?**
 
-El campo de la IA generativa también es impulsado por el deseo de innovar y ganar ventaja competitiva. A medida que la tecnología IA se convierte en un diferenciador crucial, las empresas invierten masivamente en I+D. Esta dinámica competitiva estimula mejoras continuas de las capacidades de IA, conduciendo a sistemas más avanzados y capaces.
+RAG kombinerar en språkmodell med ett hämtningssystem: i stället för att enbart förlita sig på modellens parametriska kunskap (det den lärde sig under träningen) hämtar RAG relevanta dokument vid inferens och tillhandahåller dem som kontext. Detta minskar hallucinationer avsevärt på faktauppgifter eftersom modellen syntetiserar tillhandahållen text i stället för att återkalla inlärda fakta. För finansiella tjänster möjliggör RAG användningsfall som bevakning av regelverksändringar (hämtar alltid gällande regler) och avtalsgranskning (förankrar modellen i den faktiska avtalstexten) som skulle vara alltför hallucinationsbenägna med en ren genereringsansats.
 
-La carrera por la supremacía en IA no se juega solo entre empresas sino también entre naciones, que ven el liderazgo en tecnología IA como una ventaja estratégica.
+**Hur bör finansinstitut hantera EU:s AI-förordning i förhållande till driftsättningar av generativ AI 2023?**
 
-#### Beneficios sociales
+EU:s AI-förordning befann sig fortfarande i lagstiftningsprocessen 2023 (antogs av Europaparlamentet i mars 2024, trädde i kraft i augusti 2024). Institut med EU-verksamhet eller EU-kunder utvärderade dock redan sina pipelines. AI-system med hög risk inom kreditvärdering, anställningsbeslut och kritisk infrastruktur kräver bedömningar av överensstämmelse, mekanismer för mänsklig tillsyn och granskningsloggning. AI-modeller för allmänna ändamål (GPAI), vilket inkluderar grundmodeller som GPT-4, har en egen kravnivå kring transparens och systemrisk. Företag som påbörjade dokumentations- och styrningsarbetet 2023 var bättre positionerade inför genomförandefristerna.
 
-Más allá de las ventajas económicas y competitivas, existen poderosos incentivos sociales que motivan el desarrollo de la IA generativa. Esta tecnología tiene el potencial de abordar algunos de los desafíos más apremiantes a los que se enfrenta el mundo hoy: desde el cambio climático hasta la salud.
+**Vad är den praktiska skillnaden mellan finjustering och promptutformning för LLM-driftsättningar i företag?**
 
-La IA generativa podría, por ejemplo, modelizar los sistemas climáticos para anticipar los cambios y ofrecer soluciones, o ayudar al descubrimiento de medicamentos prediciendo las interacciones entre moléculas.
+Finjustering modifierar modellens vikter genom fortsatt träning på domänspecifika data: den lär modellen ny kunskap och nya beteendemönster. Den kräver märkta träningsdata, beräkningsbudget och löpande underhåll när basmodellerna uppdateras. Promptutformning (inklusive few-shot-exempel och systemprompter) formar beteendet vid inferens utan att ändra vikterna: snabbare att införa och uppdatera, men begränsad av vad basmodellen redan kan. För de flesta driftsättningar inom finansiella tjänster 2023 var RAG plus promptutformning den föredragna startpunkten; finjustering reserverades för fall där modellen behövde lära sig proprietär terminologi eller följa strikta utdataformat.
 
-## Conclusión
+## Referenser
 
-### Abrazar el futuro de la IA generativa
-
-En el umbral de una nueva era tecnológica, la IA generativa se alza como un faro de innovación, imitando el ingenio de la mente. Desde sus humildes comienzos hasta los algoritmos sofisticados actuales, la IA generativa ha trascendido su rol de herramienta.
-
-Los cambios que la IA generativa aporta a lo que las máquinas pueden hacer y a cómo las utilizamos tienen un gran impacto en sectores como la tecnología y el derecho. Las ondas de este impacto se extienden más allá de las ganancias económicas y las ventajas competitivas; alcanzan al tejido mismo del avance social y de las consideraciones éticas.
-
-Los incentivos que motivan el desarrollo de la IA generativa dibujan el cuadro de un futuro lleno de potencial. Pero con un gran poder viene el imperativo de una administración responsable. A medida que aprovechamos esta tecnología para resolver problemas complejos e inspirar una creatividad sin precedentes, también debemos navegar los paisajes morales que desvela.
-
-La IA generativa sostiene un espejo frente a nuestra conciencia colectiva, retándonos a reflexionar sobre el tipo de futuro que deseamos crear. No se trata solo de lo que la IA puede hacer por nosotros, sino de lo que aspiramos a lograr con la IA como compañera. En esta alianza reside el potencial de una sinergia que podría elevar a la humanidad a nuevas cumbres.
-
-Avancemos: abracemos la IA generativa con una perspectiva equilibrada, aprovechando sus capacidades con prudencia y clarividencia. Al hacerlo, podemos garantizar que esta tecnología notable sirva como piedra angular de un mañana inclusivo, progresista e iluminado.
-
-### Navegar la vanguardia: últimos avances en IA generativa
-
-El campo de la IA generativa evoluciona constantemente, con nuevos avances emergiendo a un ritmo rápido. He aquí algunos de los últimos hitos que configuran el futuro de esta tecnología transformadora:
-
-#### 1. GPT-4 y más allá: liberar la potencia de los grandes modelos de lenguaje
-
-El desarrollo de los grandes modelos de lenguaje (LLM) ha sido un motor principal de la innovación en IA generativa. GPT-4, la última iteración del LLM revolucionario de OpenAI, ha demostrado capacidades notables: generación de texto de calidad humana, traducción de idiomas y escritura de contenido creativo. Otros LLM, como Meena y LaMDA de Google AI, también empujan los límites de lo posible con la IA generativa.
-
-#### 2. Generative Adversarial Networks (GANs): refinar creatividad y realismo
-
-Las GAN se han convertido en una herramienta poderosa para generar contenido realista y creativo. Estos modelos están compuestos por dos redes neuronales que se enfrentan, resultando en la creación de imágenes, vídeos y audio cada vez más sofisticados. Las GAN se han utilizado para generar arte, diseñar moda e incluso crear deepfakes.
-
-#### 3. Autoencoders y modelos de difusión: desvelar patrones y estructuras ocultos
-
-Los autoencoders y los modelos de difusión son dos técnicas emergentes que están ganando terreno en IA generativa. Los autoencoders aprenden a comprimir y reconstruir los datos, permitiéndoles identificar patrones y estructuras subyacentes. Los modelos de difusión, por su parte, parten de una representación ruidosa de los datos y la refinan progresivamente para producir una salida de alta calidad.
-
-#### 4. IA generativa multimodal: salvar el abismo entre los sentidos
-
-La IA generativa multimodal aspira a salvar el abismo entre los distintos sentidos: vista, sonido, texto. Esta tecnología tiene el potencial de crear experiencias inmersivas que desdibujan las fronteras entre los mundos digital y físico. Por ejemplo, modelos generativos multimodales podrían generar música que se corresponda con una imagen específica o crear un entorno virtual que responda a comandos en lenguaje natural.
-
-#### 5. IA explicable: desentrañar la caja negra
-
-A medida que los modelos de IA generativa se vuelven cada vez más complejos, existe una necesidad creciente de técnicas de IA explicable (XAI). La XAI ayuda a explicar cómo estos modelos toman sus decisiones, proporcionando transparencia y rendición de cuentas. Esto es crucial para construir confianza en la IA generativa y garantizar que se utilice de manera responsable y ética.
-
-Estos avances no representan más que una panorámica del paisaje en constante evolución de la IA generativa. A medida que la investigación continúa y la potencia de cálculo aumenta, podemos esperar desarrollos aún más revolucionarios que configurarán aún más el futuro de esta tecnología transformadora.
-
-### La promesa de la IA de código abierto: alimentar la innovación y configurar un futuro más luminoso
-
-El movimiento de la IA de código abierto ha experimentado un enorme crecimiento en los últimos años. Numerosos proyectos e iniciativas aprovechan las tecnologías IA de vanguardia, antaño disponibles solo para las grandes empresas e instituciones de investigación. Ahora, cualquiera puede acceder a este campo y contribuir a él.
-
-Este movimiento ha sido una fuerza motriz detrás de los notables progresos en IA generativa, bajando las barreras de acceso y alimentando la colaboración entre investigadores y desarrolladores. Esta sinergia les ha permitido emprender proyectos revolucionarios, creando herramientas y frameworks potentes que están redefiniendo el futuro de la tecnología IA generativa.
-
-El desarrollo de los grandes modelos de lenguaje, como GPT-3 y LaMDA, testimonia la potencia de la IA de código abierto. Estos modelos han demostrado capacidades excepcionales para generar texto de calidad humana, traducir idiomas y dar forma a un contenido creativo diverso. Su disponibilidad ha alimentado la innovación en diversos campos: desde la escritura creativa y el marketing hasta la educación y la sanidad.
-
-La IA de código abierto también desempeña un papel pivote en el avance de otras tecnologías de IA, entre ellas el procesamiento del lenguaje natural (NLP), la visión por ordenador y la robótica. Estos avances anuncian un futuro en el que la IA es más accesible, adaptable e integrada de manera fluida en nuestras vidas cotidianas.
-
-El futuro prometedor de la IA de código abierto depende de su capacidad para favorecer la colaboración, la transparencia y la innovación acelerada. Al compartir abiertamente conocimientos y recursos, investigadores y desarrolladores pueden unir sus esfuerzos para afrontar desafíos complejos y hacer progresar el campo de la IA. La IA de código abierto aporta transparencia y facilita la revisión pública y las consideraciones éticas, garantizando el uso responsable de esta tecnología en beneficio de la sociedad.
-
-A medida que la IA de código abierto continúa evolucionando, tiene el potencial de revolucionar las industrias y transformar nuestro mundo. La IA de código abierto es clave para un futuro en el que la tecnología ayude a la humanidad y beneficie a todos. Esto viene de la educación y la sanidad personalizadas, de la expresión creativa y del descubrimiento científico.
-
-![divider][divider].class=\"m-10 w-100\"
-
-En conclusión, espero que este artículo haya despertado su interés por el apasionante mundo de la IA generativa. Si desea sumergirse más profundamente en esta tecnología transformadora o tiene preguntas, no dude en contactarme en [LinkedIn ⧉][LinkedIn] o a través de la [página de contacto][contact].
-
-Gracias de nuevo por su tiempo, espero tener noticias suyas.
-
-[contact]: /contact/index.html "Contact"
-[divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Divider"
-[linkedin]: https://www.linkedin.com/in/sebastienrousseau/ "Sebastien Rousseau on LinkedIn"
+- Vaswani, A., et al., (2017). [Attention Is All You Need ⧉](https://arxiv.org/abs/1706.03762 "Attention Is All You Need").
+- OpenAI, (2023). [GPT-4 Technical Report ⧉](https://arxiv.org/abs/2303.08774 "GPT-4 Technical Report").
+- Touvron, H., et al., Meta AI, (2023). [Llama 2: Open Foundation and Fine-Tuned Chat Models ⧉](https://arxiv.org/abs/2307.09288 "Llama 2").
+- Jiang, A., et al., Mistral AI, (2023). [Mistral 7B ⧉](https://arxiv.org/abs/2310.06825 "Mistral 7B").

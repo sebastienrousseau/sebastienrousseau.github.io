@@ -19,11 +19,11 @@
     ],
     [
       ">Latest<",
-      ">সর্বশেষ গবেষণা পড়ুন<"
+      ">সর্বশেষ<"
     ],
     [
       ">Read more<",
-      ">সর্বশেষ গবেষণা পড়ুন<"
+      ">আরও পড়ুন<"
     ],
     [
       "<h2 class=ap-foot-title>Writing</h2>",
@@ -39,47 +39,47 @@
     ],
     [
       "<a href=/about/index\\.html>About</a>",
-      "<a href=/bn/amader-shomporke/index.html>About</a>"
+      "<a href=/bn/amader-shomporke/index.html>পরিচিতি</a>"
     ],
     [
       "<a href=/papers/index\\.html>Papers</a>",
-      "<a href=/bn/prokashana/index.html>Papers</a>"
+      "<a href=/bn/prokashana/index.html>প্রকাশনা</a>"
     ],
     [
       "<a href=/projects/index\\.html>Projects</a>",
-      "<a href=/bn/prokolpo/index.html>Projects</a>"
+      "<a href=/bn/prokolpo/index.html>প্রকল্প</a>"
     ],
     [
       "<a href=/playlists/index\\.html>Playlists</a>",
-      "<a href=/bn/playlist/index.html>Playlists</a>"
+      "<a href=/bn/playlist/index.html>প্লেলিস্ট</a>"
     ],
     [
       "<a href=/contact/index\\.html>Contact</a>",
-      "<a href=/bn/jogajog/index.html>Contact</a>"
+      "<a href=/bn/jogajog/index.html>যোগাযোগ</a>"
     ],
     [
       "<a href=/tags/index\\.html>Tags</a>",
-      "<a href=/bn/tag/index.html>Tags</a>"
+      "<a href=/bn/tag/index.html>ট্যাগ</a>"
     ],
     [
       "<a href=/articles/index\\.html>Articles</a>",
-      "<a href=/bn/prabondho/index.html>Articles</a>"
+      "<a href=/bn/prabondho/index.html>প্রবন্ধ</a>"
     ],
     [
       "<a href=/made-with-static-site-generator/index\\.html>Made with Static Site Generator</a>",
-      "<a href=/bn/static-site-generator-die-toiri/index.html>Made with Static Site Generator</a>"
+      "<a href=/bn/static-site-generator-die-toiri/index.html>Static Site Generator দিয়ে তৈরি</a>"
     ],
     [
       "<a href=/accessibility/index\\.html>Accessibility</a>",
-      "<a href=/bn/prabeshjogyota/index.html>Accessibility</a>"
+      "<a href=/bn/prabeshjogyota/index.html>প্রবেশযোগ্যতা</a>"
     ],
     [
       "<a href=/privacy/index\\.html>Privacy</a>",
-      "<a href=/bn/goponiyota/index.html>Privacy</a>"
+      "<a href=/bn/goponiyota/index.html>গোপনীয়তা</a>"
     ],
     [
       "<a href=/terms/index\\.html>Terms</a>",
-      "<a href=/bn/shorto/index.html>Terms</a>"
+      "<a href=/bn/shorto/index.html>শর্তাবলি</a>"
     ],
     [
       "© Copyright 2007 - 2026 - Sebastien Rousseau\\. All rights reserved\\.",
@@ -87,35 +87,35 @@
     ],
     [
       ">Latest research<",
-      ">সর্বশেষ গবেষণা পড়ুন<"
+      ">সর্বশেষ গবেষণা<"
     ],
     [
       ">Featured articles<",
-      ">সর্বশেষ গবেষণা পড়ুন<"
+      ">নির্বাচিত নিবন্ধ<"
     ],
     [
       ">All articles<",
-      ">সর্বশেষ গবেষণা পড়ুন<"
+      ">সব নিবন্ধ<"
     ],
     [
       ">Read full article<",
-      ">সর্বশেষ গবেষণা পড়ুন<"
+      ">সম্পূর্ণ নিবন্ধ পড়ুন<"
     ],
     [
       ">By topic<",
-      ">By topic<"
+      ">বিষয় অনুযায়ী<"
     ],
     [
       ">All topics<",
-      ">All topics<"
+      ">সব বিষয়<"
     ],
     [
       ">By tag<",
-      ">By tag<"
+      ">ট্যাগ অনুযায়ী<"
     ],
     [
       ">All tags<",
-      ">All tags<"
+      ">সব ট্যাগ<"
     ],
     [
       ">Published<",
@@ -135,7 +135,7 @@
     ],
     [
       ">Follow<",
-      ">Follow<"
+      ">অনুসরণ করুন<"
     ],
     [
       "<p class=feat-eyebrow>Get in touch</p>",
@@ -147,83 +147,83 @@
     ],
     [
       ">Learn more<",
-      ">Learn more<"
+      ">আরও জানুন<"
     ],
     [
       ">Authored & maintained<",
-      ">Authored & maintained<"
+      ">রচিত ও রক্ষণাবেক্ষণ করা<"
     ],
     [
       ">Authored &amp; maintained<",
-      ">Authored &amp; maintained<"
+      ">রচিত ও রক্ষণাবেক্ষণ করা<"
     ],
     [
       "alt=\"PayPal logo\"",
-      "alt=\"PayPal logo\""
+      "alt=\"PayPal লোগো\""
     ],
     [
       "alt=\"Barclays logo\"",
-      "alt=\"Barclays logo\""
+      "alt=\"Barclays লোগো\""
     ],
     [
       "alt=\"Shazam logo\"",
-      "alt=\"Shazam logo\""
+      "alt=\"Shazam লোগো\""
     ],
     [
       "alt=\"AKQA logo\"",
-      "alt=\"AKQA logo\""
+      "alt=\"AKQA লোগো\""
     ],
     [
       "alt=\"Virgin logo\"",
-      "alt=\"Virgin logo\""
+      "alt=\"Virgin লোগো\""
     ],
     [
       "alt=\"HSBC logo\"",
-      "alt=\"HSBC logo\""
+      "alt=\"HSBC লোগো\""
     ],
     [
       ">Read the white paper</a>",
-      ">Read the white paper</a>"
+      ">হোয়াইট পেপারটি পড়ুন</a>"
     ],
     [
       ">Read the article<",
-      ">Read the article<"
+      ">নিবন্ধটি পড়ুন<"
     ],
     [
       ">Read the paper<",
-      ">Read the paper<"
+      ">গবেষণাপত্রটি পড়ুন<"
     ],
     [
       ">See all articles\\b",
-      ">See all articles"
+      ">সব নিবন্ধ দেখুন"
     ],
     [
       ">Quantum<",
-      ">Quantum<"
+      ">কোয়ান্টাম<"
     ],
     [
       ">Quantum · Banking<",
-      ">Quantum · Banking<"
+      ">কোয়ান্টাম · ব্যাংকিং<"
     ],
     [
       ">Quantum · Cryptography<",
-      ">Quantum · Cryptography<"
+      ">কোয়ান্টাম · ক্রিপ্টোগ্রাফি<"
     ],
     [
       ">Payments · Stablecoins<",
-      ">Payments · Stablecoins<"
+      ">পেমেন্ট · স্টেবলকয়েন<"
     ],
     [
       ">Payments · ISO 20022<",
-      ">Payments · ISO 20022<"
+      ">পেমেন্ট · ISO 20022<"
     ],
     [
       ">Python · Payments<",
-      ">Python · Payments<"
+      ">Python · পেমেন্ট<"
     ],
     [
       ">Python · Cross-border<",
-      ">Python · Cross-border<"
+      ">Python · ক্রস-বর্ডার<"
     ],
     [
       ">Python · Finance<",
@@ -231,11 +231,11 @@
     ],
     [
       ">Rust · Security<",
-      ">Rust · Security<"
+      ">Rust · নিরাপত্তা<"
     ],
     [
       ">Rust · Quantum<",
-      ">Rust · Quantum<"
+      ">Rust · কোয়ান্টাম<"
     ],
     [
       ">Rust · YAML<",
@@ -243,15 +243,15 @@
     ],
     [
       ">Browse all projects<",
-      ">Browse all projects<"
+      ">সব প্রকল্প ব্রাউজ করুন<"
     ],
     [
       ">Experience<",
-      ">Experience<"
+      ">অভিজ্ঞতা<"
     ],
     [
       ">Brands along the way\\.<",
-      ">Brands along the way.<"
+      ">পথচলায় সঙ্গী ব্র্যান্ড।<"
     ],
     [
       "aria-label=\"Newsletter signup\"",

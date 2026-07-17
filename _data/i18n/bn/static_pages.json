@@ -19,108 +19,108 @@
   },
   "_comment": "বাংলা (bn) static-page metadata — DRAFT pending native review.",
   "404": {
-    "title": "404 — Sebastien Rousseau",
-    "subtitle": "Page not found.",
-    "description": "The requested page could not be found.",
-    "keywords": "404, not found",
+    "title": "পৃষ্ঠা পাওয়া যায়নি — Sebastien Rousseau",
+    "subtitle": "পৃষ্ঠাটি পাওয়া যায়নি।",
+    "description": "অনুরোধকৃত পৃষ্ঠাটি খুঁজে পাওয়া যায়নি।",
+    "keywords": "404, পাওয়া যায়নি",
     "_draft": true
   },
   "about": {
-    "title": "About — Sebastien Rousseau",
-    "subtitle": "Shaping the future of banking and financial services through the strategic integration of AI, post-quantum cryptography and blockchain technology.",
-    "description": "Sebastien Rousseau, senior banking technologist: applied AI, ISO 20022 migration, post-quantum cryptography, structural transformation of wholesale payments.",
-    "keywords": "Sebastien Rousseau, biography, banking, payments, AI, ISO 20022, post-quantum cryptography, HSBC, PayPal, Barclays",
+    "title": "পরিচিতি — Sebastien Rousseau",
+    "subtitle": "এআই, পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি ও ব্লকচেইন প্রযুক্তির কৌশলগত সমন্বয়ের মাধ্যমে ব্যাংকিং ও আর্থিক সেবার ভবিষ্যৎ গঠন।",
+    "description": "Sebastien Rousseau, সিনিয়র ব্যাংকিং প্রযুক্তিবিদ: প্রায়োগিক এআই, ISO 20022 মাইগ্রেশন, পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি এবং পাইকারি পেমেন্টের কাঠামোগত রূপান্তর।",
+    "keywords": "Sebastien Rousseau, জীবনী, ব্যাংকিং, পেমেন্ট, এআই, ISO 20022, পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, HSBC, PayPal, Barclays",
     "_draft": true
   },
   "accessibility": {
-    "title": "Accessibility — Sebastien Rousseau",
-    "subtitle": "Committed to digital accessibility for people with disabilities.",
-    "description": "Accessibility statement: WCAG 2.2 AA compliance, inclusive principles, feedback and contact details for reporting issues.",
-    "keywords": "accessibility, WCAG, compliance, digital inclusion, audit",
+    "title": "প্রবেশযোগ্যতা — Sebastien Rousseau",
+    "subtitle": "প্রতিবন্ধী ব্যক্তিদের জন্য ডিজিটাল প্রবেশযোগ্যতায় প্রতিশ্রুতিবদ্ধ।",
+    "description": "প্রবেশযোগ্যতা বিবৃতি: WCAG 2.2 AA সামঞ্জস্য, অন্তর্ভুক্তিমূলক নীতি, মতামত এবং সমস্যা জানানোর যোগাযোগ তথ্য।",
+    "keywords": "প্রবেশযোগ্যতা, WCAG, সামঞ্জস্য, ডিজিটাল অন্তর্ভুক্তি, অডিট",
     "_draft": true
   },
   "articles": {
-    "title": "Articles — Sebastien Rousseau",
-    "subtitle": "Articles on AI, post-quantum cryptography, ISO 20022 and the future of payments.",
-    "description": "Articles on applied AI, post-quantum cryptography, ISO 20022 payments and the transformation of wholesale payments.",
-    "keywords": "articles, research, AI, post-quantum cryptography, ISO 20022, wholesale payments",
+    "title": "প্রবন্ধ — Sebastien Rousseau",
+    "subtitle": "এআই, পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, ISO 20022 এবং পেমেন্টের ভবিষ্যৎ নিয়ে প্রবন্ধ।",
+    "description": "প্রায়োগিক এআই, পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, ISO 20022 পেমেন্ট এবং পাইকারি পেমেন্টের রূপান্তর নিয়ে প্রবন্ধ।",
+    "keywords": "প্রবন্ধ, গবেষণা, এআই, পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, ISO 20022, পাইকারি পেমেন্ট",
     "_draft": true
   },
   "contact": {
-    "title": "Contact — Sebastien Rousseau",
-    "subtitle": "Have a question or need advice? Get in touch.",
-    "description": "Contact Sebastien Rousseau for consulting on payments transformation, ISO 20022 migration or post-quantum strategy.",
-    "keywords": "contact, consulting, payments, ISO 20022, post-quantum cryptography",
+    "title": "যোগাযোগ — Sebastien Rousseau",
+    "subtitle": "কোনো প্রশ্ন আছে বা পরামর্শ প্রয়োজন? যোগাযোগ করুন।",
+    "description": "পেমেন্ট রূপান্তর, ISO 20022 মাইগ্রেশন বা পোস্ট-কোয়ান্টাম কৌশল বিষয়ে পরামর্শের জন্য Sebastien Rousseau-এর সঙ্গে যোগাযোগ করুন।",
+    "keywords": "যোগাযোগ, পরামর্শ, পেমেন্ট, ISO 20022, পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি",
     "_draft": true
   },
   "made-with-static-site-generator": {
-    "title": "Made with Static Site Generator — Sebastien Rousseau",
-    "subtitle": "Discover the next-generation static site generator.",
-    "description": "This site is generated with Static Site Generator, a fast Rust-based static site generator.",
-    "keywords": "Static Site Generator, static site generator, Rust, performance",
+    "title": "Static Site Generator দিয়ে তৈরি — Sebastien Rousseau",
+    "subtitle": "পরবর্তী প্রজন্মের স্ট্যাটিক সাইট জেনারেটরটি আবিষ্কার করুন।",
+    "description": "এই সাইটটি Static Site Generator দিয়ে তৈরি, Rust-ভিত্তিক একটি দ্রুতগতির স্ট্যাটিক সাইট জেনারেটর।",
+    "keywords": "Static Site Generator, স্ট্যাটিক সাইট জেনারেটর, Rust, পারফরম্যান্স",
     "_draft": true
   },
   "offline": {
-    "title": "Offline — Sebastien Rousseau",
-    "subtitle": "Check your connection and try again.",
-    "description": "You are offline. Please reconnect to access the content.",
-    "keywords": "offline, PWA",
+    "title": "অফলাইন — Sebastien Rousseau",
+    "subtitle": "আপনার সংযোগ পরীক্ষা করে আবার চেষ্টা করুন।",
+    "description": "আপনি অফলাইনে আছেন। কনটেন্ট দেখতে অনুগ্রহ করে আবার সংযুক্ত হোন।",
+    "keywords": "অফলাইন, PWA",
     "_draft": true
   },
   "papers": {
-    "title": "Papers — Sebastien Rousseau",
-    "subtitle": "Industry white papers and applied research for senior leaders in payments and security.",
-    "description": "Articles, reports and publications by Sebastien Rousseau on AI, ISO 20022 payments and post-quantum cryptography.",
-    "keywords": "papers, publications, reports, research, ISO 20022, AI, post-quantum cryptography",
+    "title": "প্রকাশনা — Sebastien Rousseau",
+    "subtitle": "পেমেন্ট ও নিরাপত্তা খাতের সিনিয়র নেতৃত্বের জন্য ইন্ডাস্ট্রি হোয়াইট পেপার ও প্রায়োগিক গবেষণা।",
+    "description": "এআই, ISO 20022 পেমেন্ট এবং পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি নিয়ে Sebastien Rousseau-এর নিবন্ধ, প্রতিবেদন ও প্রকাশনা।",
+    "keywords": "প্রকাশনা, হোয়াইট পেপার, প্রতিবেদন, গবেষণা, ISO 20022, এআই, পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি",
     "_draft": true
   },
   "playlists": {
-    "title": "Playlists — Sebastien Rousseau",
-    "subtitle": "Curated Spotify playlists for deep work, creativity and engineering mindset.",
-    "description": "Sebastien Rousseau's music selection.",
-    "keywords": "playlists, music",
+    "title": "প্লেলিস্ট — Sebastien Rousseau",
+    "subtitle": "গভীর মনোযোগ, সৃজনশীলতা ও প্রকৌশলী মানসিকতার জন্য বাছাই করা Spotify প্লেলিস্ট।",
+    "description": "Sebastien Rousseau-এর সংগীত নির্বাচন।",
+    "keywords": "প্লেলিস্ট, সংগীত",
     "_draft": true
   },
   "privacy": {
-    "title": "Privacy Policy — Sebastien Rousseau",
-    "subtitle": "Your privacy matters.",
-    "description": "How this site collects, uses and protects your data. Anonymous analytics, cookies, hosting and GDPR rights.",
-    "keywords": "privacy, GDPR, cookies, personal data, analytics",
+    "title": "গোপনীয়তা নীতি — Sebastien Rousseau",
+    "subtitle": "আপনার গোপনীয়তা গুরুত্বপূর্ণ।",
+    "description": "এই সাইট কীভাবে আপনার ডেটা সংগ্রহ, ব্যবহার ও সুরক্ষা করে। বেনামি অ্যানালিটিক্স, কুকি, হোস্টিং এবং GDPR অধিকার।",
+    "keywords": "গোপনীয়তা, GDPR, কুকি, ব্যক্তিগত ডেটা, অ্যানালিটিক্স",
     "_draft": true
   },
   "projects": {
-    "title": "Projects — Sebastien Rousseau",
-    "subtitle": "Open-source projects in Python, Rust and JavaScript for the future of finance.",
-    "description": "Portfolio of open-source libraries Sebastien Rousseau maintains for payments, cross-border settlement and quantum-resistant cryptography.",
-    "keywords": "open-source projects, Python, Rust, payments, ISO 20022, post-quantum cryptography",
+    "title": "প্রকল্প — Sebastien Rousseau",
+    "subtitle": "ফাইন্যান্সের ভবিষ্যতের জন্য Python, Rust ও JavaScript-এ ওপেন সোর্স প্রকল্প।",
+    "description": "পেমেন্ট, ক্রস-বর্ডার সেটেলমেন্ট এবং কোয়ান্টাম-প্রতিরোধী ক্রিপ্টোগ্রাফির জন্য Sebastien Rousseau রক্ষণাবেক্ষণ করেন এমন ওপেন সোর্স লাইব্রেরির পোর্টফোলিও।",
+    "keywords": "ওপেন সোর্স প্রকল্প, Python, Rust, পেমেন্ট, ISO 20022, পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি",
     "_draft": true
   },
   "tags": {
-    "title": "Tags — Sebastien Rousseau",
-    "subtitle": "Browse the site by topic: AI, payments, post-quantum cryptography, open source.",
-    "description": "Browse articles by tag: AI, ISO 20022, blockchain, post-quantum cryptography and more.",
-    "keywords": "tags, browse by topic",
+    "title": "ট্যাগ — Sebastien Rousseau",
+    "subtitle": "বিষয় অনুযায়ী সাইট ব্রাউজ করুন: এআই, পেমেন্ট, পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, ওপেন সোর্স।",
+    "description": "ট্যাগ অনুযায়ী নিবন্ধ ব্রাউজ করুন: এআই, ISO 20022, ব্লকচেইন, পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি এবং আরও অনেক কিছু।",
+    "keywords": "ট্যাগ, বিষয় অনুযায়ী ব্রাউজ",
     "_draft": true
   },
   "terms": {
-    "title": "Terms of Use — Sebastien Rousseau",
-    "subtitle": "General terms of use of the site.",
-    "description": "General terms of use for sebastienrousseau.com: content licence, restrictions, trademarks and jurisdiction.",
-    "keywords": "terms, legal notice, licence, copyright",
+    "title": "ব্যবহারের শর্তাবলি — Sebastien Rousseau",
+    "subtitle": "সাইট ব্যবহারের সাধারণ শর্তাবলি।",
+    "description": "sebastienrousseau.com-এর সাধারণ ব্যবহারের শর্তাবলি: কনটেন্ট লাইসেন্স, বিধিনিষেধ, ট্রেডমার্ক ও এখতিয়ার।",
+    "keywords": "শর্তাবলি, আইনি বিজ্ঞপ্তি, লাইসেন্স, কপিরাইট",
     "_draft": true
   },
   "thanks": {
-    "title": "Thanks — Sebastien Rousseau",
-    "subtitle": "Thank you for getting in touch!",
-    "description": "Thank you for your message. I will reply very soon.",
-    "keywords": "thanks",
+    "title": "ধন্যবাদ — Sebastien Rousseau",
+    "subtitle": "যোগাযোগ করার জন্য ধন্যবাদ!",
+    "description": "আপনার বার্তার জন্য ধন্যবাদ। খুব শীঘ্রই উত্তর দেব।",
+    "keywords": "ধন্যবাদ",
     "_draft": true
   },
   "topics": {
-    "title": "Topics — Sebastien Rousseau",
-    "subtitle": "Articles on AI, post-quantum cryptography, ISO 20022 and the future of payments.",
-    "description": "Explore analyses by theme: applied AI, ISO 20022 payments, post-quantum cryptography and transformation of wholesale payments.",
-    "keywords": "topics, themes, AI, payments, ISO 20022, post-quantum cryptography",
+    "title": "বিষয় — Sebastien Rousseau",
+    "subtitle": "এআই, পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, ISO 20022 এবং পেমেন্টের ভবিষ্যৎ নিয়ে প্রবন্ধ।",
+    "description": "থিম অনুযায়ী বিশ্লেষণ অন্বেষণ করুন: প্রায়োগিক এআই, ISO 20022 পেমেন্ট, পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি এবং পাইকারি পেমেন্টের রূপান্তর।",
+    "keywords": "বিষয়, থিম, এআই, পেমেন্ট, ISO 20022, পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি",
     "_draft": true
   }
 }
