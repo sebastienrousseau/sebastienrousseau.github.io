@@ -98,20 +98,23 @@ def localize_en_dates(html: str) -> str:
     # the visible-month words — ISO datetime attributes use numbers
     # (YYYY-MM-DD), not month names.
     # Every lookup uses ``.get(month, month)`` so a locale with no month
-    # glossary (empty _EN_MONTH_TO_FR) leaves the English month word
-    # intact instead of raising KeyError — a clean no-op for those
-    # languages, which is what keeps un-glossaried locales from getting
-    # French month names stamped on them.
+    # glossary (empty map) leaves the English month word intact instead of
+    # raising KeyError — a clean no-op for those languages, which is what
+    # keeps un-glossaried locales from getting French month names stamped
+    # on them. The active-language map is read once via the tracked
+    # accessor (bind_lang has already run for this page's language).
+    month_map = st.current_month_map()
+
     def full_repl(m: re.Match[str]) -> str:
-        month = st._EN_MONTH_TO_FR.get(m.group(1), m.group(1))
+        month = month_map.get(m.group(1), m.group(1))
         return f"{int(m.group(2))} {month} {m.group(3)}"
 
     def short_repl(m: re.Match[str]) -> str:
-        month = st._EN_MONTH_TO_FR.get(m.group(1), m.group(1))
+        month = month_map.get(m.group(1), m.group(1))
         return f"{int(m.group(2))} {month} {m.group(3)}"
 
     def ym_repl(m: re.Match[str]) -> str:
-        month = st._EN_MONTH_TO_FR.get(m.group(1), m.group(1))
+        month = month_map.get(m.group(1), m.group(1))
         return f"{month} {m.group(2)}"
 
     html = _DATE_FULL_RE.sub(full_repl, html)
