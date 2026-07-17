@@ -65,3 +65,10 @@ def test_slug_maps_shape_and_cache() -> None:
     for en, loc in m["articles_en_to_lang"].items():
         assert m["articles_lang_to_en"][loc] == en
     assert i18n._slug_maps("fr") is m  # cached
+
+
+def test_strings_for_lang_unknown_code_returns_empty():
+    # An unloadable locale raises LanguageError, which is caught so the
+    # caller falls back to its EN literal instead of crashing. Covers the
+    # except branch in _strings_for_lang.
+    assert i18n._strings_for_lang("zzzz-nonexistent") == {}
