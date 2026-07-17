@@ -246,3 +246,12 @@ def bind_lang(code: str) -> None:
     # dates ("4 juin 2026") onto every other locale's topic pages.
     global _EN_MONTH_TO_FR
     _EN_MONTH_TO_FR = dict(_LANG_MONTHS.get(code, {}))
+
+
+def current_month_map() -> dict[str, str]:
+    """The active language's EN-month-name -> localized-name map, as set
+    by the most recent :func:`bind_lang`. Cross-module readers (``_chrome``)
+    call this instead of importing the mutable ``_EN_MONTH_TO_FR`` global
+    directly, so the read is a tracked call rather than an attribute access
+    the static analyzer cannot follow."""
+    return _EN_MONTH_TO_FR
