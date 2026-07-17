@@ -1102,18 +1102,38 @@
         .ap-nav .wrap{grid-template-columns:auto 1fr auto}
         .ap-menu{display:none}
         .ap-burger{display:inline-flex;align-items:center;justify-content:center;cursor:pointer;font-size:18px;color:var(--ink);width:44px;height:44px;user-select:none}
-        .ap-nav:has(.ap-toggle:checked) .ap-menu{display:flex;flex-direction:column;position:absolute;top:var(--nav-h);left:0;right:0;background:var(--bg);padding:18px 22px;gap:14px;border-bottom:1px solid var(--border);justify-content:flex-start;text-align:center;z-index:99}
+        /* Open state: tint the burger so the toggle reads as active. */
+        .ap-nav:has(.ap-toggle:checked) .ap-burger{color:var(--accent)}
         /* Burger view: sub-menus render as always-visible nested groups.
            width:100% neutralises the desktop justify-self:center, which
            otherwise shrink-wraps the open panel to a centred strip and
-           lets the hero glyphs show at its flanks (pre-existing quirk,
-           made prominent by the taller dropdown menu). */
-        .ap-nav:has(.ap-toggle:checked) .ap-menu{width:100%}
+           lets the hero glyphs show at its flanks. The panel is capped to
+           the space under the sticky bar and scrolls internally: it is
+           absolutely positioned inside position:sticky .ap-nav, so page
+           scroll can never reveal its overflow (items below the fold were
+           unreachable on short viewports before this cap). */
+        .ap-nav:has(.ap-toggle:checked) .ap-menu{display:flex;flex-direction:column;position:absolute;top:var(--nav-h);left:0;right:0;width:100%;background:var(--bg);padding:10px 22px calc(16px + env(safe-area-inset-bottom,0px));gap:0;border-bottom:1px solid var(--border);justify-content:flex-start;text-align:center;z-index:99;max-height:calc(100vh - var(--nav-h));max-height:calc(100dvh - var(--nav-h));overflow-y:auto;overscroll-behavior:contain}
+        /* Group hierarchy: top-level rows read as section heads (larger,
+           heavier), hairline-separated; every row is a >=44px tap target
+           (WCAG 2.5.5). Sub-links stay --ink-mute on --bg: 7.99:1 light /
+           9.75:1 dark, AAA. */
+        .ap-menu > li{padding-block:4px}
+        .ap-menu > li + li{border-top:1px solid var(--border)}
+        .ap-menu > li > a{display:flex;align-items:center;justify-content:center;min-height:44px;font-size:14px;font-weight:600}
         .ap-menu .has-sub{position:static;display:block}
         .ap-menu .has-sub::after{display:none}
         .ap-menu .ap-sub-toggle{display:none}
-        .ap-menu .ap-sub{position:static;transform:none;opacity:1;visibility:visible;min-width:0;border:0;border-radius:0;box-shadow:none;background:transparent;padding:8px 0 0;display:grid;gap:12px;transition:none}
-        .ap-menu .ap-sub a{padding:2px 0;text-align:center;color:var(--ink-mute)}
+        .ap-menu .ap-sub{position:static;transform:none;opacity:1;visibility:visible;min-width:0;border:0;border-radius:0;box-shadow:none;background:transparent;padding:0 0 4px;display:grid;gap:0;transition:none}
+        .ap-menu .ap-sub a{display:flex;align-items:center;justify-content:center;min-height:44px;padding:0;text-align:center;color:var(--ink-mute)}
+      }
+      /* Tight phones (<=374px): the header row (brand + theme + search +
+         CTA pill + burger) no longer fits at the desktop paddings. Keep
+         every control: tighten the shell gaps and the nav pill only, and
+         stop the SR brand mark from wrapping into a vertical stack. */
+      .ap-brand{white-space:nowrap}
+      @media (max-width:374px){
+        .ap-nav .wrap{gap:10px;padding:0 14px}
+        .ap-nav .ap-cta-mini{padding:10px 10px}
       }
       /* Tight phones: hide the language switcher chip from the header to
          declutter the row. The 27-locale menu is large; visitors can
@@ -2296,6 +2316,34 @@
       .iso20022-mcp-page .mcp-tl-f5{--ta:7.4s}
       .iso20022-mcp-page .mcp-tl-f6{--ta:8.1s}
       @media (prefers-reduced-motion:reduce){.iso20022-mcp-page .mcp-tl-typed,.iso20022-mcp-page .mcp-tl-fade{animation:none;width:auto;opacity:1}.iso20022-mcp-page .mcp-tl-caret::after{animation:none}}
+      /* --- MCP hub: benchmark additions (board tiles / regulators cards
+         reuse spk-paths; capability + proof + adoption reuse spk-stats).
+         Text pairs, computed light/dark, all AAA (>= 7:1):
+         --ink on --bg 16.83/19.29, --ink on --bg-alt 14.92/15.46,
+         --ink on --card 16.83/16.61, --ink-soft on --bg 11.35/14.22,
+         --ink-soft on --bg-alt 10.06/11.40, --ink-mute on --bg 7.99/9.75,
+         --ink-faint on --bg 8.14/8.09, --spk-blue on --bg 7.92/11.10.
+         --ink-faint on --bg-alt is 6.48 dark (BELOW 7), so bg-alt
+         surfaces (.mcp-prompt) use --ink-soft for secondary text, never
+         --ink-faint. The .read-as control is the homepage component
+         (its own tokens, validated there); the hub only re-aligns its
+         wrap to the spk grid. */
+      .iso20022-mcp-page .read-as{max-width:1120px;margin-inline:auto;padding:28px clamp(20px,5vw,64px) 0}
+      .iso20022-mcp-page .mcp-sec.mcp-3col{grid-template-columns:repeat(3,1fr)}
+      @media (max-width:860px){.iso20022-mcp-page .mcp-sec.mcp-3col{grid-template-columns:1fr 1fr}}
+      @media (max-width:520px){.iso20022-mcp-page .mcp-sec.mcp-3col{grid-template-columns:1fr}}
+      .iso20022-mcp-page .spk-stats.mcp-stats-3{grid-template-columns:repeat(3,1fr)}
+      @media (max-width:640px){.iso20022-mcp-page .spk-stats.mcp-stats-3{grid-template-columns:repeat(2,1fr)}}
+      .iso20022-mcp-page .mcp-note{margin-block-start:1.9rem;font-size:.95rem;line-height:1.65;color:var(--ink-soft);max-width:76ch}
+      .iso20022-mcp-page .mcp-prompts{display:grid;gap:clamp(16px,1.6vw,22px);margin-block-start:2.4rem}
+      .iso20022-mcp-page .mcp-prompt{background:var(--bg-alt);border-radius:18px;padding:clamp(24px,3vw,40px)}
+      .iso20022-mcp-page .mcp-prompt h3{font-size:1.3rem;margin-block:.15rem .4rem}
+      .iso20022-mcp-page .mcp-prompt .spk-eyebrow{color:var(--ink-soft);margin-block-end:.8rem}
+      .iso20022-mcp-page .mcp-prompt-meta{font-family:var(--spk-mono);font-size:.76rem;letter-spacing:.02em;color:var(--ink-soft);margin:0 0 .4rem}
+      .iso20022-mcp-page .mcp-prompt-label{font-family:var(--spk-mono);font-size:.68rem;font-weight:600;text-transform:uppercase;letter-spacing:.13em;color:var(--ink-soft);margin-block:1.3rem .5rem}
+      .iso20022-mcp-page .mcp-prompt .mcp-code{background:var(--card)}
+      .iso20022-mcp-page .mcp-prompt .mcp-code code{white-space:pre-wrap;overflow-wrap:anywhere}
+      .iso20022-mcp-page .mcp-prompt-note{margin-block-start:1rem;font-size:.92rem;color:var(--ink-soft)}
       /* ============================================================
          /trust/: enterprise governance & trust. Full-width band rhythm
          (tinted hero, white, tinted, ...), left-aligned, one measure.

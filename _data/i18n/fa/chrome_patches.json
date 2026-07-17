@@ -10,7 +10,7 @@
     ],
     [
       "placeholder=\"?you@bank\\.com\"?",
-      "placeholder=\"you@bank.com\""
+      "placeholder=\"shoma@bank.ir\""
     ],
     [
       "value=\"Newsletter signup — sebastienrousseau\\.com\"",
@@ -74,19 +74,19 @@
     ],
     [
       "<li><a href=\"?/about/index\\.html\"?>About</a></li>",
-      "<li><a href=\"/fa/a-propos/index.html\">درباره</a></li>"
+      "<li><a href=\"/fa/about/index.html\">درباره</a></li>"
     ],
     [
       "<li><a href=\"?/papers/index\\.html\"?>Papers</a></li>",
-      "<li><a href=\"/fa/publications/index.html\">انتشارات</a></li>"
+      "<li><a href=\"/fa/papers/index.html\">انتشارات</a></li>"
     ],
     [
       "<li><a href=\"?/topics/index\\.html\"?>Topics</a></li>",
-      "<li><a href=\"/fa/sujets/index.html\">موضوع‌ها</a></li>"
+      "<li><a href=\"/fa/topics/index.html\">موضوع‌ها</a></li>"
     ],
     [
       "<li><a href=\"?/projects/index\\.html\"?>Projects</a></li>",
-      "<li><a href=\"/fa/projets/index.html\">پروژه‌ها</a></li>"
+      "<li><a href=\"/fa/projects/index.html\">پروژه‌ها</a></li>"
     ],
     [
       "<li><a href=\"?/articles/index\\.html\"?>Articles</a></li>",
@@ -122,23 +122,23 @@
     ],
     [
       "<a href=\"?/about/index\\.html\"?>About</a>",
-      "<a href=\"/fa/a-propos/index.html\">درباره</a>"
+      "<a href=\"/fa/about/index.html\">درباره</a>"
     ],
     [
       "<a href=\"?/made-with-static-site-generator/index\\.html\"?>Made with Static Site Generator</a>",
-      "<a href=\"/fa/concu-avec-static-site-generator/index.html\">ساخته‌شده با Static Site Generator</a>"
+      "<a href=\"/fa/made-with-static-site-generator/index.html\">ساخته‌شده با Static Site Generator</a>"
     ],
     [
       "<a href=\"?/papers/index\\.html\"?>Papers</a>",
-      "<a href=\"/fa/publications/index.html\">انتشارات</a>"
+      "<a href=\"/fa/papers/index.html\">انتشارات</a>"
     ],
     [
       "<a href=\"?/tags/index\\.html\"?>Tags</a>",
-      "<a href=\"/fa/etiquettes/index.html\">برچسب‌ها</a>"
+      "<a href=\"/fa/tags/index.html\">برچسب‌ها</a>"
     ],
     [
       "<a href=\"?/projects/index\\.html\"?>Projects</a>",
-      "<a href=\"/fa/projets/index.html\">پروژه‌ها</a>"
+      "<a href=\"/fa/projects/index.html\">پروژه‌ها</a>"
     ],
     [
       "<a href=\"?/playlists/index\\.html\"?>Playlists</a>",
@@ -174,15 +174,15 @@
     ],
     [
       "<a href=\"?/accessibility/index\\.html\"?>Accessibility</a>",
-      "<a href=\"/fa/accessibilite/index.html\">دسترس‌پذیری</a>"
+      "<a href=\"/fa/accessibility/index.html\">دسترس‌پذیری</a>"
     ],
     [
       "<a href=\"?/privacy/index\\.html\"?>Privacy</a>",
-      "<a href=\"/fa/confidentialite/index.html\">حریم خصوصی</a>"
+      "<a href=\"/fa/privacy/index.html\">حریم خصوصی</a>"
     ],
     [
       "<a href=\"?/terms/index\\.html\"?>Terms</a>",
-      "<a href=\"/fa/conditions/index.html\">شرایط</a>"
+      "<a href=\"/fa/terms/index.html\">شرایط</a>"
     ],
     [
       "placeholder=\"Search documentation\\.\\.\\.\"",
@@ -286,7 +286,7 @@
     ],
     [
       "<a href=\"?/case-studies/index\\.html\"?>Case studies</a>",
-      "<a href=\"/fa/etudes-de-cas/index.html\">مطالعات موردی</a>"
+      "<a href=\"/fa/case-studies/index.html\">مطالعات موردی</a>"
     ],
     [
       "<li><a href=\"?/research/index\\.html\"?>Research</a></li>",

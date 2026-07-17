@@ -360,6 +360,97 @@ def build_pa11yci_config(urls: list[str], hide_elements: str) -> dict[str, Any]:
     }
 
 
+# ---------------------------------------------------------------------------
+# Dark-mode sweep
+# ---------------------------------------------------------------------------
+#
+# The main sweep audits pages in their default (light) rendering, which
+# is how a 2.31:1 dark-mode contrast failure shipped in July 2026: every
+# colour pair was AAA in light mode and never evaluated in dark. Rather
+# than double the ~40-minute wall time by re-sweeping all ~2,000 pages,
+# a fixed representative subset — one page per layout/surface family —
+# is re-audited with the site's dark theme forced.
+#
+# Mechanism: theme-init.js (inline in <head>) sets ``data-theme`` on
+# <html> before paint from localStorage OR ``prefers-color-scheme``. A
+# fresh headless profile has no saved preference, so forcing the media
+# feature to dark at Chrome launch deterministically boots every page
+# dark. Two reinforcing flags (verified locally on Chrome 150 against a
+# host in BOTH light and dark system themes):
+#
+#   * ``--blink-settings=preferredColorScheme=0`` — Blink's
+#     PreferredColorScheme enum is kDark=0 / kLight=1; this overrides
+#     the host/system theme in both directions.
+#   * ``--force-dark-mode`` — forces the browser-side dark theme, which
+#     also reports prefers-color-scheme: dark on current Chromium.
+#
+# NOTE deliberately NOT click-based: clicking ``.theme-toggle`` merely
+# flips whatever theme the host booted, so on a dark-mode host it would
+# land on LIGHT. The single ``wait for element html[data-theme="dark"]``
+# action below is an assertion, not a mutation — if a future Chromium
+# drops either flag the wait times out and the shard fails loudly
+# instead of silently auditing light mode. The ``#dark`` URL fragment is
+# a human-readable marker in reports/logs only — it does not affect
+# navigation.
+#
+# Cache interaction: none, by design. The dark subset is small enough
+# (~7 URLs, ~1-2 min) to sweep on every run that sweeps anything, and
+# keeping it out of the hash cache avoids polluting light-mode "pass"
+# entries with dark results. When the partition step reports a full
+# cache hit (pa11y-needed=false) nothing on the site changed, so the
+# dark rendering cannot have changed either and skipping is sound. The
+# light .pa11yci defaults are untouched, so the cache config-hash
+# fingerprint does not move and no full re-sweep is triggered.
+
+DARK_CHROME_ARGS: list[str] = [
+    "--no-sandbox",
+    "--disable-setuid-sandbox",
+    "--blink-settings=preferredColorScheme=0",
+    "--force-dark-mode",
+]
+
+DARK_THEME_ACTIONS: list[str] = [
+    'wait for element html[data-theme="dark"] to be visible',
+]
+
+# Representative subset: home, ISO 20022 MCP hub, MCP docs, speaking,
+# trust, one article (report layout + cite/QA furniture), one locale
+# home (RTL/i18n chrome). One page per surface family — the dark-mode
+# CSS is defined centrally in the layout <style> blocks, so one page
+# per layout exercises every dark token pair without re-sweeping the
+# whole tree.
+DARK_SWEEP_RELPATHS: tuple[str, ...] = (
+    "index.html",
+    "iso20022-mcp/index.html",
+    "iso20022-mcp-docs/index.html",
+    "speaking/index.html",
+    "trust/index.html",
+    "2026-05-11-lucy-besson-knowledge-transfer-ai-quantum/index.html",
+    "fr/index.html",
+)
+
+
+def build_dark_config(
+    public_dir: Path, base_url: str, hide_elements: str
+) -> dict[str, Any]:
+    """Pa11y-ci config for the dark-mode representative subset. Same
+    defaults as the light sweep except Chrome launches with the
+    prefers-color-scheme:dark flags; each URL entry is an object
+    carrying the dark-theme assertion ``actions`` and a ``#dark`` marker
+    fragment. Pages missing from public/ are dropped (a renamed page
+    must not fail the sweep with a 404)."""
+    base = base_url.rstrip("/")
+    urls: list[dict[str, Any]] = [
+        {"url": f"{base}/{rel}#dark", "actions": list(DARK_THEME_ACTIONS)}
+        for rel in DARK_SWEEP_RELPATHS
+        if (public_dir / rel).is_file()
+    ]
+    config = build_pa11yci_config([], hide_elements)
+    config["defaults"]["chromeLaunchConfig"] = {"args": list(DARK_CHROME_ARGS)}
+    config["urls"] = urls
+    return config
+
+
 _DEFAULT_HIDE_ELEMENTS = (
     "#ssg-search-widget, #ssg-search-btn, "
     "iframe[src*='recaptcha'], iframe[src*='google.com/recaptcha'], "
@@ -409,6 +500,19 @@ def cmd_pre(args: argparse.Namespace) -> int:
         encoding="utf-8",
     )
 
+    # Dark-mode config: fixed representative subset, cache-independent
+    # (see the Dark-mode sweep comment block above). getattr keeps
+    # programmatic callers that build a bare Namespace working; an empty
+    # value skips the dark config entirely.
+    dark_out = getattr(args, "dark_out", "")
+    dark_config: dict[str, Any] = {"urls": []}
+    if dark_out:
+        dark_config = build_dark_config(public_dir, base_url, hide_elements)
+        Path(dark_out).write_text(
+            json.dumps(dark_config, indent=2),
+            encoding="utf-8",
+        )
+
     # Manifest the post-pass needs.
     manifest = {
         "fingerprint": current_fp,
@@ -428,6 +532,11 @@ def cmd_pre(args: argparse.Namespace) -> int:
         f"{len(to_sweep)} to sweep, "
         f"{len(skipped)} Spotify-iframe skips."
     )
+    if dark_out:
+        print(
+            f"pa11y-cache pre: dark-mode subset — "
+            f"{len(dark_config['urls'])} URLs written to {dark_out}"
+        )
     print(
         f"  fingerprint: pa11y={pa11y_version} "
         f"chromium={chromium_version} "
@@ -496,6 +605,7 @@ def main(argv: list[str] | None = None) -> int:
     p_pre.add_argument("--public-dir", default="public")
     p_pre.add_argument("--cache", default="_data/pa11y-cache.json")
     p_pre.add_argument("--pa11yci-out", default=".pa11yci")
+    p_pre.add_argument("--dark-out", default=".pa11yci.dark")
     p_pre.add_argument("--manifest-out", default=".pa11y-cache-manifest.json")
     p_pre.add_argument("--base-url", default="http://127.0.0.1:8000")
     p_pre.add_argument("--pa11y-version", default="")

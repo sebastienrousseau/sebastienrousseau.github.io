@@ -74,19 +74,19 @@
     ],
     [
       "<li><a href=\"?/about/index\\.html\"?>About</a></li>",
-      "<li><a href=\"/ms/a-propos/index.html\">Perihal</a></li>"
+      "<li><a href=\"/ms/about/index.html\">Perihal</a></li>"
     ],
     [
       "<li><a href=\"?/papers/index\\.html\"?>Papers</a></li>",
-      "<li><a href=\"/ms/publications/index.html\">Penerbitan</a></li>"
+      "<li><a href=\"/ms/papers/index.html\">Penerbitan</a></li>"
     ],
     [
       "<li><a href=\"?/topics/index\\.html\"?>Topics</a></li>",
-      "<li><a href=\"/ms/sujets/index.html\">Topik</a></li>"
+      "<li><a href=\"/ms/topics/index.html\">Topik</a></li>"
     ],
     [
       "<li><a href=\"?/projects/index\\.html\"?>Projects</a></li>",
-      "<li><a href=\"/ms/projets/index.html\">Projek</a></li>"
+      "<li><a href=\"/ms/projects/index.html\">Projek</a></li>"
     ],
     [
       "<li><a href=\"?/articles/index\\.html\"?>Articles</a></li>",
@@ -122,23 +122,23 @@
     ],
     [
       "<a href=\"?/about/index\\.html\"?>About</a>",
-      "<a href=\"/ms/a-propos/index.html\">Perihal</a>"
+      "<a href=\"/ms/about/index.html\">Perihal</a>"
     ],
     [
       "<a href=\"?/made-with-static-site-generator/index\\.html\"?>Made with Static Site Generator</a>",
-      "<a href=\"/ms/concu-avec-static-site-generator/index.html\">Dibuat dengan Static Site Generator</a>"
+      "<a href=\"/ms/made-with-static-site-generator/index.html\">Dibuat dengan Static Site Generator</a>"
     ],
     [
       "<a href=\"?/papers/index\\.html\"?>Papers</a>",
-      "<a href=\"/ms/publications/index.html\">Penerbitan</a>"
+      "<a href=\"/ms/papers/index.html\">Penerbitan</a>"
     ],
     [
       "<a href=\"?/tags/index\\.html\"?>Tags</a>",
-      "<a href=\"/ms/etiquettes/index.html\">Tag</a>"
+      "<a href=\"/ms/tags/index.html\">Tag</a>"
     ],
     [
       "<a href=\"?/projects/index\\.html\"?>Projects</a>",
-      "<a href=\"/ms/projets/index.html\">Projek</a>"
+      "<a href=\"/ms/projects/index.html\">Projek</a>"
     ],
     [
       "<a href=\"?/playlists/index\\.html\"?>Playlists</a>",
@@ -174,15 +174,15 @@
     ],
     [
       "<a href=\"?/accessibility/index\\.html\"?>Accessibility</a>",
-      "<a href=\"/ms/accessibilite/index.html\">Kebolehcapaian</a>"
+      "<a href=\"/ms/accessibility/index.html\">Kebolehcapaian</a>"
     ],
     [
       "<a href=\"?/privacy/index\\.html\"?>Privacy</a>",
-      "<a href=\"/ms/confidentialite/index.html\">Privasi</a>"
+      "<a href=\"/ms/privacy/index.html\">Privasi</a>"
     ],
     [
       "<a href=\"?/terms/index\\.html\"?>Terms</a>",
-      "<a href=\"/ms/conditions/index.html\">Terma</a>"
+      "<a href=\"/ms/terms/index.html\">Terma</a>"
     ],
     [
       "placeholder=\"Search documentation\\.\\.\\.\"",
@@ -286,7 +286,7 @@
     ],
     [
       "<a href=\"?/case-studies/index\\.html\"?>Case studies</a>",
-      "<a href=\"/ms/etudes-de-cas/index.html\">Kajian kes</a>"
+      "<a href=\"/ms/case-studies/index.html\">Kajian kes</a>"
     ],
     [
       "<li><a href=\"?/research/index\\.html\"?>Research</a></li>",

@@ -17,16 +17,13 @@ Standalone run: ``python3 tests/unit/test_build_iso20022_mcp.py``
 
 from __future__ import annotations
 
-import sys
 import tempfile
 from pathlib import Path
 
-# Mirror tests/unit/conftest.py wiring so the file also runs standalone.
 _ROOT = Path(__file__).resolve().parents[2]
-for _sub in ("lib", "editorial", "generators", "postbuild"):
-    _p = _ROOT / "scripts" / _sub
-    if _p.is_dir() and str(_p) not in sys.path:
-        sys.path.insert(0, str(_p))
+
+if __package__ in (None, ""):  # standalone run; under pytest conftest.py wires sys.path
+    import _path_bootstrap  # noqa: F401
 
 import build_case_studies as cs
 import build_iso20022_mcp as mcp
@@ -279,7 +276,8 @@ def test_clients_grid_covers_stdio_and_remote_accurately() -> None:
     for name in (
         "Claude Code", "Claude Desktop", "Cursor", "Windsurf",
         "VS Code + GitHub Copilot", "Google Gemini CLI",
-        "OpenAI", "Microsoft Copilot Studio", "Zapier MCP",
+        "OpenAI Codex CLI", "OpenAI", "Microsoft Copilot Studio",
+        "Zapier MCP",
     ):
         assert f"<h3>{name}</h3>" in sec
     # Each documented stdio config carries the proven uvx entry.
@@ -297,13 +295,21 @@ def test_clients_grid_covers_stdio_and_remote_accurately() -> None:
     assert "MCPServerStdio" in sec
     assert "Streamable HTTP" in sec
     # Every card that shows a config gets its own copy button wired to
-    # that card's code element (6 stdio + the OpenAI Agents SDK snippet).
+    # that card's code element (7 stdio + the OpenAI Agents SDK snippet).
     for slug in (
         "claude-code", "claude-desktop", "cursor", "windsurf",
-        "vscode", "gemini", "openai",
+        "vscode", "gemini", "codex", "openai",
     ):
         assert f'data-copy="#mcp-code-client-{slug}"' in sec
-    assert sec.count("data-copy=") == 7
+    assert sec.count("data-copy=") == 8
+    # Codex CLI: the documented ~/.codex/config.toml table shape
+    # ([mcp_servers.<name>] with command/args), verified against OpenAI's
+    # official Codex MCP docs on 2026-07-16.
+    codex = sec.split("<h3>OpenAI Codex CLI</h3>", 1)[1].split("</div>", 1)[0]
+    assert "[mcp_servers.iso20022]" in codex
+    assert "command = &quot;uvx&quot;" in codex
+    assert "args = [&quot;--from&quot;, &quot;iso20022-mcp[all]&quot;" in codex
+    assert "~/.codex/config.toml" in codex
 
 
 def test_install_tabs_are_css_only_radio_pattern() -> None:
@@ -414,6 +420,220 @@ def test_body_ships_no_inline_styles_or_em_dashes() -> None:
     body = out.split("<body", 1)[1]
     assert "style=" not in body  # strict CSP: zero inline styles
     assert "—" not in body  # no em dashes anywhere in rendered copy
+
+
+# --- benchmark sections: audience lens / board / regulators / receipts -------
+
+
+def test_audience_selector_and_lens_tags() -> None:
+    """PR #338 pattern on the hub: the Read as… control ships [hidden]
+    for JS-off, and every content section carries data-audience tags."""
+    out = _run_build(_fake_shell())
+    body = out.split("<body", 1)[1]
+    # The control: hidden by default, four lenses, a polite status region.
+    assert '<section class="read-as"' in body
+    assert "hidden>" in body.split('<section class="read-as"', 1)[1][:200]
+    for lens in ("", "boards", "engineers", "regulators"):
+        assert f'data-read="{lens}"' in body
+    assert 'data-read-status role="status" aria-live="polite"' in body
+    # Every AUDIENCES entry that renders is stamped; the hero header and
+    # the selector itself stay untagged.
+    hub = body.split('<div class="speaking-page iso20022-mcp-page">', 1)[1]
+    import re
+
+    tagged = re.findall(r'<section data-audience="([^"]+)"', hub)
+    # All rendered content sections carry tags with only known lenses.
+    assert len(tagged) >= 18
+    for tags in tagged:
+        assert set(tags.split()) <= {"boards", "engineers", "regulators"}
+    # The mapping itself stays lens-mapped per the competitive analysis.
+    assert mcp.AUDIENCES["mcp-flow"] == "boards regulators"
+    assert mcp.AUDIENCES["mcp-security"] == "boards regulators"
+    assert mcp.AUDIENCES["mcp-install"] == "engineers"
+    assert mcp.AUDIENCES["mcp-clients"] == "engineers"
+    assert mcp.AUDIENCES["mcp-regulators"] == "regulators"
+    assert '<header class="spk-hero" id="spk-top">' in hub  # untagged hero
+
+
+def test_board_section_is_qualitative_and_first_after_hero() -> None:
+    out = _run_build(_fake_shell())
+    sec = out.split('id="mcp-board"', 1)[1].split("</section>", 1)[0]
+    assert sec.count('<div class="spk-path">') == 3
+    for eyebrow in ("WHAT IT COSTS", "WHAT IT RISKS", "WHAT IT REPLACES"):
+        assert f">{eyebrow}</span>" in sec
+    assert "Free. Apache-2.0." in sec
+    assert "Money never moves without a human." in sec
+    assert "Bespoke ISO 20022 integration work." in sec
+    # Qualitative only: no invented savings figures anywhere in the tiles.
+    for token in ("$", "€", "£", "%", "ROI", "save", "saving"):
+        assert token not in sec
+    # Placement: the board tiles precede the benefits section.
+    body = out.split("<body", 1)[1]
+    assert body.index('id="mcp-board"') < body.index('id="mcp-benefits"')
+
+
+def test_regulators_section_cites_captured_tools_and_hedges_dora() -> None:
+    out = _run_build(_fake_shell())
+    sec = out.split('id="mcp-regulators"', 1)[1].split("</section>", 1)[0]
+    assert sec.count('<div class="spk-path">') == 4
+    # Tool names exactly as captured in _data/mcp/*.tools.json.
+    for tool in (
+        "cite_rulebook", "list_rulebook_clauses", "get_cbpr_cutover_date",
+        "check_cbpr_readiness", "classify_address", "validate_address",
+        "repair_address", "validate_addresses",
+    ):
+        assert f'<code class="spk-mono">{tool}</code>' in sec
+    # Dates as the tools themselves state them.
+    assert "2026-11-16" in sec
+    assert "14-16 November 2026" in sec
+    assert "14 November 2026" in sec
+    assert "SEPA, CBPR+ and HVPS+" in sec
+    # DORA: control mapping only, certification disclaimed outright.
+    assert "A note on DORA." in sec
+    assert "not certified" in sec
+    assert "no such product certification exists" in sec
+    assert "your assessment to make" in sec
+
+
+def test_capability_strip_counts_match_committed_captures() -> None:
+    import json
+
+    out = _run_build(_fake_shell())
+    sec = out.split('id="mcp-capability"', 1)[1].split("</section>", 1)[0]
+    # The published tool count is computed from the committed captures.
+    data_dir = _ROOT / "_data" / "mcp"
+    expected = len(
+        json.loads((data_dir / "tool_schemas.json").read_text(encoding="utf-8"))[
+            "tools"
+        ]
+    )
+    for f in sorted(data_dir.glob("*.tools.json")):
+        expected += len(json.loads(f.read_text(encoding="utf-8"))["tools"])
+    assert f'<p class="spk-num">{expected}</p>' in sec
+    assert '<p class="spk-num">9</p>' in sec
+    assert "does the work, not just the docs" in sec
+    assert "tools, captured live" in sec
+    # Factual contrast, no competitor names.
+    for vendor in ("mybanx", "HSBC"):
+        assert vendor not in out
+
+
+def test_free_three_ways_strip() -> None:
+    out = _run_build(_fake_shell())
+    sec = out.split('id="mcp-free"', 1)[1].split("</section>", 1)[0]
+    assert sec.count('<div class="mcp-sec-cell">') == 3
+    for eyebrow, title in (
+        ("BOARDS", "Free to adopt."),
+        ("ENGINEERS", "Free to run."),
+        ("REGULATORS", "Free to audit."),
+    ):
+        assert f">{eyebrow}</span>" in sec
+        assert title in sec
+    assert 'class="mcp-sec mcp-3col"' in sec
+
+
+def test_proof_strip_publishes_measured_timings() -> None:
+    import json
+
+    out = _run_build(_fake_shell())
+    metrics = json.loads(
+        (_ROOT / "_data" / "mcp" / "verified_metrics.json").read_text(
+            encoding="utf-8"
+        )
+    )
+    tp = metrics["timed_proof"]
+    sec = out.split('id="mcp-proof"', 1)[1].split("</section>", 1)[0]
+    # The real measured numbers with their date, not a slogan.
+    assert f'{tp["cold_seconds"]}s' in sec
+    assert f'{tp["warm_seconds"]}s' in sec
+    assert tp["date_human"] in sec
+    assert "cold cache to validated pain.001" in sec
+    assert "Method:" in sec and "Machine:" in sec
+
+
+def test_prompts_render_committed_transcripts_verbatim() -> None:
+    import json
+
+    out = _run_build(_fake_shell())
+    data = json.loads(
+        (_ROOT / "_data" / "mcp" / "hub_transcripts.json").read_text(
+            encoding="utf-8"
+        )
+    )
+    sec = out.split('id="mcp-prompts"', 1)[1].split("</section>", 1)[0]
+    assert sec.count('<article class="mcp-prompt">') == len(data["prompts"]) == 3
+    for p in data["prompts"]:
+        # Prompt is copyable; excerpt lands escaped but verbatim.
+        assert f'id="mcp-prompt-{p["id"]}"' in sec
+        assert f'data-copy="#mcp-prompt-{p["id"]}"' in sec
+        first_line = p["excerpt"].splitlines()[0]
+        esc = (
+            first_line.replace("&", "&amp;").replace("<", "&lt;")
+            .replace(">", "&gt;").replace('"', "&quot;")
+        )
+        assert esc in sec
+        assert f'tool: {p["tool"]}' in sec
+    assert f'captured {data["_meta"]["captured"]}' in sec
+    # Real capabilities only: gateway generate, rulebook citation, sandbox.
+    assert "run_sandbox_scenario" in sec
+    assert "cite_rulebook" in sec
+
+
+def test_sandbox_card_names_tools_and_links_docs_chapter() -> None:
+    out = _run_build(_fake_shell())
+    sec = out.split('id="mcp-sandbox"', 1)[1].split("</section>", 1)[0]
+    # Tool names exactly as captured in reconcile-mcp.tools.json.
+    for tool in (
+        "list_sandbox_scenarios", "load_sandbox_scenario",
+        "run_sandbox_scenario",
+    ):
+        assert f'<code class="spk-mono">{tool}</code>' in sec
+    assert "Try it with zero real data." in sec
+    assert 'href="/iso20022-mcp-docs/index.html#chapter-3"' in sec
+    assert 'href="/iso20022-mcp-reference/index.html#reconcile"' in sec
+
+
+def test_adoption_strip_matches_verified_metrics() -> None:
+    import json
+
+    out = _run_build(_fake_shell())
+    metrics = json.loads(
+        (_ROOT / "_data" / "mcp" / "verified_metrics.json").read_text(
+            encoding="utf-8"
+        )
+    )
+    ad = metrics["adoption"]
+    sec = out.split('id="mcp-adoption"', 1)[1].split("</section>", 1)[0]
+    assert f'<p class="spk-num">{ad["suite_last_month_total"]:,}</p>' in sec
+    assert f'<p class="spk-num">{ad["registry_listed"]}</p>' in sec
+    assert ad["date_human"] in sec
+    assert "pypistats.org" in sec
+    assert "registry.modelcontextprotocol.io" in sec
+    # The committed figure is itself the sum of the committed per-package
+    # counts (nine suite packages, no more, no less).
+    per = ad["suite_last_month_by_package"]
+    assert len(per) == 9
+    assert sum(per.values()) == ad["suite_last_month_total"]
+
+
+def test_verified_sections_skip_gracefully_without_metrics() -> None:
+    """Same policy as the schema viewer: missing evidence files drop their
+    sections instead of failing the build or inventing numbers."""
+    old_metrics = mcp.METRICS_SRC
+    old_tx = mcp.TRANSCRIPTS_SRC
+    mcp.METRICS_SRC = Path("/nonexistent/verified_metrics.json")
+    mcp.TRANSCRIPTS_SRC = Path("/nonexistent/hub_transcripts.json")
+    try:
+        out = _run_build(_fake_shell())
+    finally:
+        mcp.METRICS_SRC = old_metrics
+        mcp.TRANSCRIPTS_SRC = old_tx
+    assert 'id="mcp-proof"' not in out
+    assert 'id="mcp-adoption"' not in out
+    assert 'id="mcp-prompts"' not in out
+    # The rest of the page still builds, selector included.
+    assert 'id="mcp-clients"' in out
+    assert '<section class="read-as"' in out
 
 
 # --- (b) anti-silent-no-op: a missing anchor must abort ----------------------

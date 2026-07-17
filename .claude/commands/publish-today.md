@@ -1,5 +1,5 @@
 ---
-description: Promote today's _drafts/ article, validate voice/style, pick a banner if needed, translate 27 locale stubs with native SEO + tone, open a feat/<slug> PR, and wait for CI to land green. Invoked manually by Sebastien each evening.
+description: Promote today's _drafts/ article, validate voice/style, pick a banner if needed, translate 34 locale stubs with native SEO + tone, open a feat/<slug> PR, and wait for CI to land green. Invoked manually by Sebastien each evening.
 ---
 
 You are publishing today's article on `sebastienrousseau.com`. Your job is to ship today's source content end-to-end as a reviewable PR — Sebastien merges it from GitHub the next morning.
@@ -44,7 +44,7 @@ git mv _drafts/<today>-*.md _posts/
 
 ### 3. Voice / style / structure gate
 
-Run the editorial gate **before** scaffolding 27 stubs — a defect in EN cascades through every locale and a build failure later is much more expensive than a one-second check now.
+Run the editorial gate **before** scaffolding 34 stubs — a defect in EN cascades through every locale and a build failure later is much more expensive than a one-second check now.
 
 ```bash
 python3 scripts/editorial/check_voice.py --today
@@ -52,7 +52,7 @@ python3 scripts/editorial/check_voice.py --today
 
 This script fails non-zero on any of: incomplete frontmatter (missing title/subtitle/description/banner/banner_alt/tags/twitter_*/excerpt/date/keywords); unreachable banner URL; banned filler ("delve into", "embark on", "in conclusion", "let's explore", "it is worth noting", "in today's fast-paced", "in this article", "transformative journey", "unprecedented", "game-changer", "paradigm shift", "synergy", "harness the power", "unlock the potential", …); missing lead aside or Executive Summary blockquote; fewer than three H2 sections; missing FAQ or References; H1 not exactly once; date mismatch between filename and frontmatter.
 
-If it fails, **fix the EN draft and re-run** before proceeding. Stub generation against a broken draft wastes 27 translation slots.
+If it fails, **fix the EN draft and re-run** before proceeding. Stub generation against a broken draft wastes 34 translation slots.
 
 ### 4. Banner image (if check_voice flagged banner, OR the draft's banner is a poor semantic fit)
 
@@ -85,15 +85,15 @@ Update the `banner:` line in `_posts/<slug>.md` with your chosen URL. Also updat
 
 > **Fallback (cloud mode only):** if you need deterministic output and don't have full article context, `python3 scripts/editorial/pick_banner.py --hint <kw>` is still available. Local-mode runs should prefer semantic selection.
 
-### 5. Scaffold the 27 locale stubs
+### 5. Scaffold the 34 locale stubs
 
 ```bash
-python3 scripts/editorial/translate_post.py <slug>          # writes 27 _posts/<lang>/<slug>.md + slug-map entries
+python3 scripts/editorial/translate_post.py <slug>          # writes 34 _posts/<lang>/<slug>.md + slug-map entries
 ```
 
 `translate_post.py` is Python-only — identical in both modes. The stubs inherit the EN frontmatter (translation in step 6 also localises frontmatter title/subtitle/description/keywords for SEO).
 
-### 6. Translate all 27 stubs — Executive Pragmatist framework
+### 6. Translate all 34 stubs — Executive Pragmatist framework
 
 Dispatch one sub-agent per locale **in parallel batches** (7-at-a-time keeps tool budget reasonable). Each agent edits its locale's stub file via a single `Edit` tool call. The sub-agent prompt is the global Executive Pragmatist framework at `~/.claude/commands/translate.md`, instantiated with the locale code, locale name, and per-locale glossary.
 
@@ -115,7 +115,7 @@ Use this template — replace `<LOC>` (locale code), `<LOCALE_NAME>` (human-read
 >
 > **Enrich block at the bottom** (`<!-- enrich-start --> ... <!-- enrich-end -->`): localise to the per-locale canonical pattern. Model on the most recent `_posts/<LOC>/2026-*.md` for the canonical "About the author" structure (aria-label + bio + credentials + "Last reviewed" line).
 
-Dispatch in priority order (highest-traffic markets first): **fr es de it pt-br nl ja zh-hans zh-hant ko ar ru pl cs uk ro tr he hi bn id vi th fil ha yo sv** (27 total).
+Dispatch in priority order (highest-traffic markets first): **fr es de it pt-br nl ja zh-hans zh-hant ko ar ru pl cs uk ro tr el hu he hi mr ta te bn id ms vi th fa fil ha yo sv** (34 total).
 
 Per-locale glossary values (substituted into `<PER_LOCALE_GLOSSARY>`):
 
@@ -144,11 +144,18 @@ Per-locale glossary values (substituted into `<PER_LOCALE_GLOSSARY>`):
 - **th**: agent → เอเจนต์; tool-call → การเรียกใช้เครื่องมือ; guardrails → รั้วกันชน; audit log → บันทึกการตรวจสอบ; kill switch → สวิตช์ตัดฉุกเฉิน.
 - **fil / ha / yo**: keep canonical English technical terms (tool-call, guardrails, audit log, kill switch, OAuth, OPA); translate the surrounding prose only.
 - **sv**: agent → agent; tool-call → verktygsanrop; guardrails → skyddsmekanismer; audit log → revisionslogg; kill switch → nödstopp; cloud-native → molnnativ.
+- **el**: agent → πράκτορας; tool-call → κλήση εργαλείου; guardrails → μηχανισμοί προστασίας; audit log → αρχείο ελέγχου; kill switch → διακόπτης έκτακτης ανάγκης; cloud-native → cloud-native; resilience → ανθεκτικότητα.
+- **hu**: agent → ügynök; tool-call → eszközhívás; guardrails → védőkorlátok; audit log → auditnapló; kill switch → vészleállító kapcsoló; cloud-native → felhőnatív; resilience → ellenállóképesség.
+- **fa** (RTL, formal register): agent → عامل; tool-call → فراخوانی ابزار; guardrails → حفاظ‌ها; audit log → سیاههٔ حسابرسی; kill switch → کلید توقف اضطراری; cloud-native → بومی ابری; resilience → تاب‌آوری. Western digits (66.3% not ۶۶٫۳٪); Latin technical terms stay LTR.
+- **mr**: agent → एजंट; tool-call → साधन कॉल; guardrails → सुरक्षा कठडे; audit log → लेखापरीक्षण नोंद; kill switch → आपत्कालीन बंद स्विच; cloud-native → क्लाउड-नेटिव्ह; resilience → लवचिकता.
+- **ta**: agent → முகவர்; tool-call → கருவி அழைப்பு; guardrails → பாதுகாப்பு வேலிகள்; audit log → தணிக்கைப் பதிவு; kill switch → அவசர நிறுத்த சுவிட்ச்; cloud-native → கிளவுட்-நேட்டிவ்; resilience → மீள்திறன்.
+- **te**: agent → ఏజెంట్; tool-call → సాధన కాల్; guardrails → భద్రతా కంచెలు; audit log → ఆడిట్ లాగ్; kill switch → అత్యవసర ఆపే స్విచ్; cloud-native → క్లౌడ్-నేటివ్; resilience → స్థితిస్థాపకత.
+- **ms**: agent → ejen; tool-call → panggilan alat; guardrails → pagar keselamatan; audit log → log audit; kill switch → suis mati kecemasan; cloud-native → asli awan; resilience → daya tahan.
 
 When the parallel batch completes, verify completeness:
 
 ```bash
-python3 scripts/editorial/translate_post.py <slug> --list-stubs       # should report 'all 27 locales translated'
+python3 scripts/editorial/translate_post.py <slug> --list-stubs       # should report 'all 34 locales translated'
 ```
 
 ### 6b. Backfill any remaining English frontmatter
@@ -163,7 +170,7 @@ The script is idempotent — it only writes a field when the locale value is sti
 
 ### 7. Homepage card rotation
 
-Edit `_posts/index.md`: in the `<div class="newsroom-grid feat-latest-grid">` block, **prepend** a new `<article class="newsroom-card">` for today (mirror the structure of the cards already there) and **drop the bottom card** so there are still **6 visible**. The 6-card balance fills the 3-column grid cleanly across all 28 locales (`build_translations.py` rewrites per-locale at build time).
+Edit `_posts/index.md`: in the `<div class="newsroom-grid feat-latest-grid">` block, **prepend** a new `<article class="newsroom-card">` for today (mirror the structure of the cards already there) and **drop the bottom card** so there are still **6 visible**. The 6-card balance fills the 3-column grid cleanly across all 35 locales (`build_translations.py` rewrites per-locale at build time).
 
 ### 8. Listings refresh
 
@@ -218,14 +225,14 @@ branch="feat/${slug}"
 
 git checkout -b "$branch"
 git add _posts/ _data/ scripts/generators/gen_articles.py scripts/generators/build_topics.py _layouts/ .claude/ 2>/dev/null || true
-git commit -S -m "feat(content): ${today} — ${title} + 27 translations"
+git commit -S -m "feat(content): ${today} — ${title} + 34 translations"
 commit_sha=$(git rev-parse --short HEAD)
 git push -u origin "$branch"
 
 gh pr create --title "feat(content): ${today} — ${title}" --body "$(cat <<EOF
 ## Summary
 
-**${title}** — published ${today}. EN source + 27 native-locale translations, listings + feeds refreshed.
+**${title}** — published ${today}. EN source + 34 native-locale translations, listings + feeds refreshed.
 
 ## What ran tonight
 
@@ -241,17 +248,17 @@ gh pr create --title "feat(content): ${today} — ${title}" --body "$(cat <<EOF
 - URL: \`${banner_url}\`
 <!-- If you swapped the banner, add one sentence on why (e.g. "Original was \`corporate-finance.webp\` — generic stock that read as AI-written. Swapped for \`circuit_board_cityscape.webp\` which thematically matches the AI-payments-infrastructure framing."). Skip this if the draft's banner shipped as-is. -->
 
-### 3. Translations (27 locales)
+### 3. Translations (34 locales)
 - Dispatched in parallel batches of 7 sub-agents
 - Native SEO frontmatter (title / subtitle / description / keywords / twitter_* / excerpt) translated per locale
 - Native register (executive / board-level tone) enforced — no hype filler in any locale
 - Locales: \`fr\` \`es\` \`de\` \`it\` \`pt-br\` \`nl\` \`ja\` \`zh-hans\` \`zh-hant\` \`ko\` \`ar\` \`ru\` \`pl\` \`cs\` \`uk\` \`ro\` \`tr\` \`he\` \`hi\` \`bn\` \`id\` \`vi\` \`th\` \`fil\` \`ha\` \`yo\` \`sv\`
-- \`translate_post.py --list-stubs\` confirms: **all 27 locales translated** (0 stubs remaining)
+- \`translate_post.py --list-stubs\` confirms: **all 34 locales translated** (0 stubs remaining)
 
 ### 4. Homepage + listings
 - \`_posts/index.md\` 6-card grid rotated (new card prepended, bottom card dropped)
 - \`gen_articles.py\` auto-discovered the new post → \`/articles/\` featured story refreshed
-- \`build_topics.py\` regenerated topic clusters (EN + 27 locale forks)
+- \`build_topics.py\` regenerated topic clusters (EN + 34 locale forks)
 - \`build_lang_feeds.py\` regenerated 28 RSS / Atom / JSON feeds + news-sitemap
 - \`build_agent_api.py\` refreshed \`/api/agents/posts.json\`
 - \`postbuild.py\` refreshed \`/llms-full.txt\` + sitemap.xml + all 28 \`search-index.json\`
@@ -269,7 +276,7 @@ gh pr create --title "feat(content): ${today} — ${title}" --body "$(cat <<EOF
 
 ## Test plan
 - [x] check_voice green
-- [x] All 27 locales translated (no stubs remaining)
+- [x] All 34 locales translated (no stubs remaining)
 - [x] \`./build.sh\` exit 0
 - [ ] CI: build + diff + accessibility + lighthouse all green
 EOF
@@ -334,8 +341,8 @@ Tell Sebastien:
 After a clean run, every reference to today's article is in place across:
 
 - `_posts/<slug>.md` (EN source)
-- `_posts/<lang>/<slug>.md` × 27 (locale translations)
-- `_data/i18n/<lang>/slugs.json` × 27 (slug map entries)
+- `_posts/<lang>/<slug>.md` × 34 (locale translations)
+- `_data/i18n/<lang>/slugs.json` × 34 (slug map entries)
 - `_posts/index.md` (homepage 6-card grid)
 - `_posts/articles.md` (regenerated by `gen_articles.py` auto-discover)
 - All 28 RSS/Atom/JSON Feed/news-sitemap files (regenerated by `build_lang_feeds.py`)
@@ -343,6 +350,6 @@ After a clean run, every reference to today's article is in place across:
 - All 28 `search-index.json` files (regenerated by ssg + build_translations)
 - `/api/agents/posts.json` (regenerated by `build_agent_api.py`)
 - `/llms-full.txt` (regenerated by `postbuild.py`)
-- `/topics/<cluster>/index.html` × 6 EN topic pages + 6 × 27 per-locale forks (if cluster updated)
+- `/topics/<cluster>/index.html` × 6 EN topic pages + 6 × 34 per-locale forks (if cluster updated)
 
-In **both modes**, a typical daily-article commit diff is ~30 source files (EN + 27 locales + listings). If `public/` or `docs/` files appear in the diff, back them out — neither is committed (the `docs/` snapshot was retired 2026-06-10; CI deploys `public/` as a Pages artifact).
+In **both modes**, a typical daily-article commit diff is ~37 source files (EN + 34 locales + listings). If `public/` or `docs/` files appear in the diff, back them out — neither is committed (the `docs/` snapshot was retired 2026-06-10; CI deploys `public/` as a Pages artifact).

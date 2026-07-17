@@ -345,7 +345,9 @@ def test_main_list_stubs_reports_done_when_all_translated(fake_repo, capsys, mon
     )
     rc = tp.main()
     assert rc == 0
-    assert "all 27 locales translated" in capsys.readouterr().out
+    # Registry-driven count: the fake_repo fixture patches
+    # active_non_en_locales to exactly ("fr", "de", "es").
+    assert "all 3 locales translated" in capsys.readouterr().out
 
 
 # ---------------------------------------------------------------------------

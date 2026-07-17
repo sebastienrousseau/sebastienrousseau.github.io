@@ -170,11 +170,11 @@
     ],
     [
       "href=\"?/papers/index\\.html\"?>Read the paper</a>",
-      "href=\"/fa/publications/index.html\">خواندن سفیدنامه</a>"
+      "href=\"/fa/papers/index.html\">خواندن سفیدنامه</a>"
     ],
     [
       "href=\"?/2026-05-15[^\"]*\"?>Read the article</a>",
-      "href=\"/fa/2026-05-15-rendement-cache-decryptage-depots-blackrock-brsrv-bstbl-genius-act/index.html\">خواندن مقاله</a>"
+      "href=\"/fa/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf/index.html\">خواندن مقاله</a>"
     ],
     [
       "<h2 class=ap-foot-title>Writing</h2>",
@@ -190,15 +190,15 @@
     ],
     [
       "<a href=/about/index\\.html>About</a>",
-      "<a href=/fa/a-propos/index.html>درباره</a>"
+      "<a href=/fa/about/index.html>درباره</a>"
     ],
     [
       "<a href=/papers/index\\.html>Papers</a>",
-      "<a href=/fa/publications/index.html>انتشارات</a>"
+      "<a href=/fa/papers/index.html>انتشارات</a>"
     ],
     [
       "<a href=/projects/index\\.html>Projects</a>",
-      "<a href=/fa/projets/index.html>پروژه‌ها</a>"
+      "<a href=/fa/projects/index.html>پروژه‌ها</a>"
     ],
     [
       "<a href=/playlists/index\\.html>Playlists</a>",
@@ -210,7 +210,7 @@
     ],
     [
       "<a href=/tags/index\\.html>Tags</a>",
-      "<a href=/fa/etiquettes/index.html>برچسب‌ها</a>"
+      "<a href=/fa/tags/index.html>برچسب‌ها</a>"
     ],
     [
       "<a href=/articles/index\\.html>Articles</a>",
@@ -218,19 +218,19 @@
     ],
     [
       "<a href=/made-with-static-site-generator/index\\.html>Made with Static Site Generator</a>",
-      "<a href=/fa/concu-avec-static-site-generator/index.html>ساخته‌شده با Static Site Generator</a>"
+      "<a href=/fa/made-with-static-site-generator/index.html>ساخته‌شده با Static Site Generator</a>"
     ],
     [
       "<a href=/accessibility/index\\.html>Accessibility</a>",
-      "<a href=/fa/accessibilite/index.html>دسترس‌پذیری</a>"
+      "<a href=/fa/accessibility/index.html>دسترس‌پذیری</a>"
     ],
     [
       "<a href=/privacy/index\\.html>Privacy</a>",
-      "<a href=/fa/confidentialite/index.html>حریم خصوصی</a>"
+      "<a href=/fa/privacy/index.html>حریم خصوصی</a>"
     ],
     [
       "<a href=/terms/index\\.html>Terms</a>",
-      "<a href=/fa/conditions/index.html>شرایط</a>"
+      "<a href=/fa/terms/index.html>شرایط</a>"
     ],
     [
       ">Experience<",

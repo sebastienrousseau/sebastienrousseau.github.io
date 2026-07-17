@@ -42,7 +42,7 @@ short_name: "sebastienrousseau"
 subtitle: "Optimising Credit Ratio Analysis with IBM Qiskit and Quantum Fourier Transform"
 tags: "Qiskit, quantum computing, Credit Analysis, FinTech, QFT, Risk Management, Finance, Data Science, Algorithm, Quantum Technology, ISO 20022, post-quantum cryptography, AI, open source"
 theme-color: "0, 67, 165"
-title: "Qiskit & Quantum Fourier Transform for Credit Ratio Analysis"
+title: "Qiskit and Quantum Fourier Transform for Credit Ratio Analysis"
 url: "https://sebastienrousseau.com/2024-01-08-optimising-credit-ratio-analysis-with-ibm-qiskit-and-quantum-fourier-transform/index.html"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
@@ -54,7 +54,7 @@ news_image_loc: "https://cloudcdn.pro/stocks/images/quantum-computer-room.webp"
 news_loc: "https://sebastienrousseau.com/2024-01-08-optimising-credit-ratio-analysis-with-ibm-qiskit-and-quantum-fourier-transform/index.html"
 news_publication_date: "Mon, 08 Jan 2024 05:06:06 +0000"
 news_publication_name: "sebastienrousseau.com"
-news_title: "Qiskit & Quantum Fourier Transform for Credit Ratio Analysis"
+news_title: "Qiskit and Quantum Fourier Transform for Credit Ratio Analysis"
 
 # RSS - The RSS feed front matter (YAML).
 atom_link: "https://sebastienrousseau.com/2024-01-08-optimising-credit-ratio-analysis-with-ibm-qiskit-and-quantum-fourier-transform/rss.xml"
@@ -65,7 +65,7 @@ item_description: "Explore how IBM Qiskit and Quantum Fourier Transform revoluti
 item_guid: "https://sebastienrousseau.com/2024-01-08-optimising-credit-ratio-analysis-with-ibm-qiskit-and-quantum-fourier-transform/rss.xml"
 item_link: "https://sebastienrousseau.com/2024-01-08-optimising-credit-ratio-analysis-with-ibm-qiskit-and-quantum-fourier-transform/rss.xml"
 item_pub_date: "Mon, 08 Jan 2024 05:06:06 +0000"
-item_title: "Qiskit & Quantum Fourier Transform for Credit Ratio Analysis"
+item_title: "Qiskit and Quantum Fourier Transform for Credit Ratio Analysis"
 last_build_date: "Mon, 08 Jan 2024 05:06:06 +0000"
 managing_editor: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 pub_date: "Mon, 08 Jan 2024 05:06:06 +0000"
@@ -94,7 +94,7 @@ twitter_description: "Explore how IBM Qiskit and Quantum Fourier Transform revol
 twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 twitter_image_alt: "Logo of Sebastien Rousseau"
 twitter_site: "@wwdseb"
-twitter_title: "Qiskit & Quantum Fourier Transform for Credit Ratio Analysis"
+twitter_title: "Qiskit and Quantum Fourier Transform for Credit Ratio Analysis"
 twitter_url: "https://sebastienrousseau.com/2024-01-08-optimising-credit-ratio-analysis-with-ibm-qiskit-and-quantum-fourier-transform/index.html"
 
 # Humans.txt - The Humans.txt front matter (YAML).

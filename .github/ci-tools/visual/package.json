@@ -1,0 +1,11 @@
+{
+  "name": "ci-tools-visual",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Pinned visual-regression tooling for the CI visual job. `npm ci` installs hash-verified from package-lock.json (OpenSSF Scorecard Pinned-Dependencies). puppeteer-core drives the runner's system Chrome (no bundled download); pixelmatch+pngjs do the pixel diff.",
+  "dependencies": {
+    "pixelmatch": "7.1.0",
+    "pngjs": "7.0.0",
+    "puppeteer-core": "24.23.0"
+  }
+}

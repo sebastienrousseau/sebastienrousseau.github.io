@@ -170,11 +170,11 @@
     ],
     [
       "href=\"?/papers/index\\.html\"?>Read the paper</a>",
-      "href=\"/el/publications/index.html\">Διαβάστε τη λευκή βίβλο</a>"
+      "href=\"/el/papers/index.html\">Διαβάστε τη λευκή βίβλο</a>"
     ],
     [
       "href=\"?/2026-05-15[^\"]*\"?>Read the article</a>",
-      "href=\"/el/2026-05-15-rendement-cache-decryptage-depots-blackrock-brsrv-bstbl-genius-act/index.html\">Διαβάστε το άρθρο</a>"
+      "href=\"/el/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf/index.html\">Διαβάστε το άρθρο</a>"
     ],
     [
       "<h2 class=ap-foot-title>Writing</h2>",
@@ -190,15 +190,15 @@
     ],
     [
       "<a href=/about/index\\.html>About</a>",
-      "<a href=/el/a-propos/index.html>Σχετικά</a>"
+      "<a href=/el/about/index.html>Σχετικά</a>"
     ],
     [
       "<a href=/papers/index\\.html>Papers</a>",
-      "<a href=/el/publications/index.html>Δημοσιεύσεις</a>"
+      "<a href=/el/papers/index.html>Δημοσιεύσεις</a>"
     ],
     [
       "<a href=/projects/index\\.html>Projects</a>",
-      "<a href=/el/projets/index.html>Έργα</a>"
+      "<a href=/el/projects/index.html>Έργα</a>"
     ],
     [
       "<a href=/playlists/index\\.html>Playlists</a>",
@@ -210,7 +210,7 @@
     ],
     [
       "<a href=/tags/index\\.html>Tags</a>",
-      "<a href=/el/etiquettes/index.html>Ετικέτες</a>"
+      "<a href=/el/tags/index.html>Ετικέτες</a>"
     ],
     [
       "<a href=/articles/index\\.html>Articles</a>",
@@ -218,19 +218,19 @@
     ],
     [
       "<a href=/made-with-static-site-generator/index\\.html>Made with Static Site Generator</a>",
-      "<a href=/el/concu-avec-static-site-generator/index.html>Φτιαγμένο με Static Site Generator</a>"
+      "<a href=/el/made-with-static-site-generator/index.html>Φτιαγμένο με Static Site Generator</a>"
     ],
     [
       "<a href=/accessibility/index\\.html>Accessibility</a>",
-      "<a href=/el/accessibilite/index.html>Προσβασιμότητα</a>"
+      "<a href=/el/accessibility/index.html>Προσβασιμότητα</a>"
     ],
     [
       "<a href=/privacy/index\\.html>Privacy</a>",
-      "<a href=/el/confidentialite/index.html>Απόρρητο</a>"
+      "<a href=/el/privacy/index.html>Απόρρητο</a>"
     ],
     [
       "<a href=/terms/index\\.html>Terms</a>",
-      "<a href=/el/conditions/index.html>Όροι</a>"
+      "<a href=/el/terms/index.html>Όροι</a>"
     ],
     [
       ">Experience<",

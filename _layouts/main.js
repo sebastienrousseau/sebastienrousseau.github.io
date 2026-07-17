@@ -878,11 +878,12 @@ function fallbackCopy(text, done) {
 })();
 
 /**
- * "Read as…" audience path selector (homepage only, Phase 8).
+ * "Read as…" audience path selector (homepage, Phase 8; extended to the
+ * /iso20022-mcp/ hub, whose generator tags every section the same way).
  *
  * Progressive enhancement: the control ships [hidden] in static HTML,
- * so a JS-off reader gets the full homepage in document order and no
- * inert widget. On load we reveal it, then re-order the home sections
+ * so a JS-off reader gets the full page in document order and no
+ * inert widget. On load we reveal it, then re-order the tagged sections
  * so the ones tagged for the chosen audience (boards / engineers /
  * regulators) lead — nothing is ever removed, so it's a lens, not a
  * destructive filter.
@@ -896,7 +897,12 @@ function fallbackCopy(text, done) {
 (function () {
     var root = document.querySelector(".read-as");
     if (!root) return;
-    var home = document.querySelector(".home-content");
+    // The sections container: the homepage content wrap, or the ISO 20022
+    // MCP hub wrapper (the only other page whose sections carry
+    // [data-audience] tags). Any other page has neither, and bails.
+    var home =
+        document.querySelector(".home-content") ||
+        document.querySelector(".iso20022-mcp-page");
     if (!home) return;
 
     // Only these three lenses are honoured — everything else (including a
@@ -909,10 +915,19 @@ function fallbackCopy(text, done) {
     var announce = root.getAttribute("data-announce") || "";
 
     // Snapshot the authored section order once so "Everyone" restores it.
+    // Not `:scope >`: the build can wrap the authored sections in an extra
+    // container (e.g. a lang="en" div injected on the homepage), so find
+    // them anywhere under the wrap and reorder within their real parent.
     var sections = Array.prototype.slice.call(
-        home.querySelectorAll(":scope > section[data-audience]")
+        home.querySelectorAll("section[data-audience]")
     );
     if (!sections.length) return;
+    var container = sections[0].parentNode;
+    // One shared parent only: a split container would make appendChild
+    // teleport sections between wrappers, so bail to the authored order.
+    for (var si = 1; si < sections.length; si++) {
+        if (sections[si].parentNode !== container) return;
+    }
 
     function sanitize(v) {
         return ALLOWED.indexOf(v) !== -1 ? v : "";
@@ -933,7 +948,7 @@ function fallbackCopy(text, done) {
             }
         });
         lead.concat(rest).forEach(function (sec) {
-            home.appendChild(sec);
+            container.appendChild(sec);
         });
     }
 

@@ -40,7 +40,7 @@ short_name: "sebastienrousseau"
 subtitle: "Ọdún méjìlá lẹ́yìn Lucy Luc Besson, àfọwọ́kọ àárín fíìmù náà nípa ìmọ̀ tí ń lọ láti ara sí ẹ̀rọ ni a ń jẹ́rìísí ní àìròtẹ́lẹ̀ látọwọ́ LLM, qubits atọ́mù aláìníkárùn, àti ẹ̀dà ọpọlọ pipe."
 tags: "Lucy, Luc Besson, Scarlett Johansson, AI, quantum computing, neutral atoms, LLM, transhumanism, mind uploading, brain-computer interfaces, posthumanism, film philosophy, ISO 20022, ìsirò ìpamọ́ lẹ́yìn quantum"
 theme-color: "0, 67, 165"
-title: "Àtúnyẹ̀wò Fúláàṣì Dírííbù ti Lucy: AI, Kúántọ̀mù & Ìmọ̀"
+title: "Àtúnyẹ̀wò Fúláàṣì Dírííbù ti Lucy: AI, Kúántọ̀mù àti Ìmọ̀"
 url: "https://sebastienrousseau.com/2026-05-11-lucy-besson-knowledge-transfer-ai-quantum/index.html"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 

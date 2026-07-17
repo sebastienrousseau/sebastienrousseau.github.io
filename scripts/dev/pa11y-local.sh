@@ -14,6 +14,10 @@ set -euo pipefail
 #   scripts/dev/pa11y-local.sh --scope <slug>        # only URLs matching <slug>
 #                                                    # e.g. 2026-06-04-quantum-safe-…
 #   scripts/dev/pa11y-local.sh --scope-en-only       # EN tree only (skip 27 locales)
+#   scripts/dev/pa11y-local.sh --dark                # dark-mode representative subset
+#                                                    # (.pa11yci.dark; theme forced via
+#                                                    # pa11y actions; cache not touched)
+#                                                    # combine with --scope to narrow
 #
 # The script:
 #   1. Installs pa11y-ci to scripts/dev/node_modules/ if missing
@@ -35,6 +39,7 @@ scope_en_only=0
 while [[ $# -gt 0 ]]; do
   case "$1" in
     --full)          mode=full ;;
+    --dark)          mode=dark ;;
     --scope)         scope="$2"; shift ;;
     --scope-en-only) scope_en_only=1 ;;
     -h|--help)
@@ -93,12 +98,23 @@ python3 scripts/seo_and_audit/pa11y_cache.py pre \
   --manifest-out .pa11y-cache-manifest.json \
   --base-url "http://127.0.0.1:$port"
 
+# Dark mode — swap in the representative dark subset the pre-pass wrote.
+# Entries are {url, actions} objects that click .theme-toggle and wait
+# for html[data-theme="dark"] before auditing. The light cache is
+# neither consulted nor updated for this run.
+if [[ "$mode" == "dark" ]]; then
+  cp .pa11yci.dark .pa11yci
+  echo "==> dark-mode subset run (.pa11yci.dark)"
+fi
+
 # Optional scoping — filter the URL list to a slug / EN-only subtree.
+# Entries may be strings (light) or {url, actions} objects (dark).
 if [[ -n "$scope" ]]; then
   python3 -c "
 import json, sys
 cfg = json.load(open('.pa11yci'))
-cfg['urls'] = [u for u in cfg['urls'] if '$scope' in u]
+cfg['urls'] = [u for u in cfg['urls']
+               if '$scope' in (u['url'] if isinstance(u, dict) else u)]
 json.dump(cfg, open('.pa11yci', 'w'), indent=2)
 print(f'scoped to {len(cfg[\"urls\"])} URL(s) containing {\"$scope\"!r}')
 "
@@ -146,6 +162,13 @@ if [[ "$rc" -ne 0 ]]; then
 fi
 
 # ── 6. Update cache on success ───────────────────────────────────────────────
+# Dark runs never touch the cache: the manifest describes the LIGHT
+# delta sweep, and `post` would mark those pages as passed unswept.
+if [[ "$mode" == "dark" ]]; then
+  echo "==> clean (dark subset). cache left untouched."
+  exit 0
+fi
+
 python3 scripts/seo_and_audit/pa11y_cache.py post \
   --public-dir public \
   --cache "$cache" \

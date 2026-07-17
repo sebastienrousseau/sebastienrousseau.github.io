@@ -1,0 +1,42 @@
+{
+  "_meta": {
+    "captured": "2026-07-16",
+    "method": "MCP stdio JSON-RPC tools/call (protocol 2024-11-05)",
+    "note": "Each excerpt below is drawn from the named tool's response in a real session driven over stdio on the capture date. Long responses are excerpted (elisions marked ...) and whitespace-condensed, never reworded. Prompts are the plain-language asks a connected MCP client turns into the same tool call."
+  },
+  "prompts": [
+    {
+      "id": "pain001",
+      "eyebrow": "INITIATE",
+      "title": "Ask for a payment.",
+      "prompt": "Generate a SEPA pain.001.001.03 customer credit transfer paying Fournier Conseil SARL EUR 4,200.00 from Acme Treasury GmbH, IBAN DE89370400440532013000, executing 2026-07-17, invoice INV-2026-183. Validate the records first, then return the XML.",
+      "server": "iso20022-mcp 0.0.4 (gateway)",
+      "command": "uvx --from \"iso20022-mcp[all]\" iso20022-mcp",
+      "tool": "generate",
+      "excerpt": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<Document xmlns=\"urn:iso:std:iso:20022:tech:xsd:pain.001.001.03\"\n    xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n    xsi:schemaLocation=\"urn:iso:std:iso:20022:tech:xsd:pain.001.001.03 pain.001.001.03.xsd\">\n    <CstmrCdtTrfInitn>\n        <GrpHdr>\n            <MsgId>MSG-2026-07-16-001</MsgId>\n            <CreDtTm>2026-07-16T09:30:00</CreDtTm>\n            <NbOfTxs>1</NbOfTxs>\n...\n                <Amt>\n                    <InstdAmt Ccy=\"EUR\">4200.00</InstdAmt>\n                </Amt>",
+      "note": "The gateway validated the record set, generated the document and checked it against the official XSD before returning. First call, no retry; isError false."
+    },
+    {
+      "id": "rulebook",
+      "eyebrow": "CITE",
+      "title": "Ask for the rule, with its source.",
+      "prompt": "Which CBPR+ 2026 rule makes structured postal addresses mandatory? Cite it with the official source URL.",
+      "server": "camt053-mcp 0.0.14",
+      "command": "uvx --from \"camt053-mcp\" camt053-mcp",
+      "tool": "cite_rulebook",
+      "excerpt": "{\n  \"scheme\": \"CBPR+\",\n  \"version\": \"2026\",\n  \"clause\": \"structured-address-mandate-nov-2026\",\n  \"title\": \"Structured postal addresses mandatory from 14-16 Nov 2026\",\n  \"summary\": \"From the Nov 14-16 2026 cutover, CBPR+ messages (pacs.008, pacs.009, camt.053, camt.054 and related) must carry structured postal addresses (TownName, Country, optionally PostCode) on debtor, creditor, and ultimate parties. Unstructured-only addresses (AdrLine without structured siblings) will be rejected at FINplus.\",\n  \"source_url\": \"https://www.swift.com/standards/iso-20022-programme/cbpr-plus\",\n  \"as_of\": \"2026-06-22\"\n}",
+      "note": "The registry is a curated convenience layer; the tool's own disclaimer says to consult the official scheme document at the source URL before relying on it, and so do we."
+    },
+    {
+      "id": "sandbox",
+      "eyebrow": "RECONCILE",
+      "title": "Ask for a reconciliation, with zero real data.",
+      "prompt": "Run the month_end sandbox scenario and explain every match.",
+      "server": "reconcile-mcp 0.0.1",
+      "command": "uvx --from \"reconcile-mcp\" reconcile-mcp",
+      "tool": "run_sandbox_scenario",
+      "excerpt": "{\n  \"summary\": {\n    \"expected_count\": 3,\n    \"observed_count\": 5,\n    \"matches_by_type\": { \"amount_mismatch\": 1, \"exact\": 1, \"one_to_many\": 1 },\n    \"fully_reconciled\": false\n  },\n  \"matches\": [\n    {\n      \"type\": \"amount_mismatch\",\n      \"expected\": [\"INV-6002\"], \"observed\": [\"ENT-52\"],\n      \"amount_delta\": \"-99.99\",\n      \"reasons\": [\"reference exact\", \"amount close (delta -99.99)\",\n                  \"date +/-0d\", \"counterparty exact\"]\n    },\n...\n  \"unmatched_observed\": [\"ENT-55\"]\n}",
+      "note": "A mixed month-end close on built-in fixtures: one exact match, one short payment with the delta reported, one invoice settled by two instalments, and one unexpected credit left unmatched, each with its reasons."
+    }
+  ]
+}

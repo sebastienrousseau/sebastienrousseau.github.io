@@ -1,5 +1,5 @@
 ---
-title: "IA générative dans la publicité : Amazon Rufus & Meta"
+title: "IA générative dans la publicité : Amazon Rufus et Meta"
 subtitle: "Comment l'IA transforme les interactions consommateurs et la dynamique publicitaire"
 description: "Comment l'IA transforme la publicité — aperçus sur Rufus d'Amazon et les derniers développements de Meta. Découvrez l'impact sur l'engagement consommateur."
 date: "February 08, 2024"

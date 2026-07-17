@@ -43,7 +43,7 @@ short_name: "sebastienrousseau"
 subtitle: "Twelve years after Luc Besson's Lucy, the film's central metaphor of knowledge migrating from flesh to machine is being unexpectedly validated by LLMs, neutral atom qubits, and whole-brain emulation."
 tags: "Lucy, Luc Besson, Scarlett Johansson, AI, quantum computing, neutral atoms, LLM, transhumanism, mind uploading, brain-computer interfaces, posthumanism, film philosophy, ISO 20022, post-quantum cryptography"
 theme-color: "0, 67, 165"
-title: "Lucy's Flash Drive Revisited: AI, Quantum & Knowledge"
+title: "Lucy's Flash Drive Revisited: AI, Quantum and Knowledge"
 url: "https://sebastienrousseau.com/2026-05-11-lucy-besson-knowledge-transfer-ai-quantum/index.html"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 

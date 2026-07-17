@@ -10,7 +10,7 @@
     ],
     [
       "placeholder=\"?you@bank\\.com\"?",
-      "placeholder=\"you@bank.com\""
+      "placeholder=\"esis@trapeza.gr\""
     ],
     [
       "value=\"Newsletter signup — sebastienrousseau\\.com\"",
@@ -74,19 +74,19 @@
     ],
     [
       "<li><a href=\"?/about/index\\.html\"?>About</a></li>",
-      "<li><a href=\"/el/a-propos/index.html\">Σχετικά</a></li>"
+      "<li><a href=\"/el/about/index.html\">Σχετικά</a></li>"
     ],
     [
       "<li><a href=\"?/papers/index\\.html\"?>Papers</a></li>",
-      "<li><a href=\"/el/publications/index.html\">Δημοσιεύσεις</a></li>"
+      "<li><a href=\"/el/papers/index.html\">Δημοσιεύσεις</a></li>"
     ],
     [
       "<li><a href=\"?/topics/index\\.html\"?>Topics</a></li>",
-      "<li><a href=\"/el/sujets/index.html\">Θέματα</a></li>"
+      "<li><a href=\"/el/topics/index.html\">Θέματα</a></li>"
     ],
     [
       "<li><a href=\"?/projects/index\\.html\"?>Projects</a></li>",
-      "<li><a href=\"/el/projets/index.html\">Έργα</a></li>"
+      "<li><a href=\"/el/projects/index.html\">Έργα</a></li>"
     ],
     [
       "<li><a href=\"?/articles/index\\.html\"?>Articles</a></li>",
@@ -122,23 +122,23 @@
     ],
     [
       "<a href=\"?/about/index\\.html\"?>About</a>",
-      "<a href=\"/el/a-propos/index.html\">Σχετικά</a>"
+      "<a href=\"/el/about/index.html\">Σχετικά</a>"
     ],
     [
       "<a href=\"?/made-with-static-site-generator/index\\.html\"?>Made with Static Site Generator</a>",
-      "<a href=\"/el/concu-avec-static-site-generator/index.html\">Φτιαγμένο με Static Site Generator</a>"
+      "<a href=\"/el/made-with-static-site-generator/index.html\">Φτιαγμένο με Static Site Generator</a>"
     ],
     [
       "<a href=\"?/papers/index\\.html\"?>Papers</a>",
-      "<a href=\"/el/publications/index.html\">Δημοσιεύσεις</a>"
+      "<a href=\"/el/papers/index.html\">Δημοσιεύσεις</a>"
     ],
     [
       "<a href=\"?/tags/index\\.html\"?>Tags</a>",
-      "<a href=\"/el/etiquettes/index.html\">Ετικέτες</a>"
+      "<a href=\"/el/tags/index.html\">Ετικέτες</a>"
     ],
     [
       "<a href=\"?/projects/index\\.html\"?>Projects</a>",
-      "<a href=\"/el/projets/index.html\">Έργα</a>"
+      "<a href=\"/el/projects/index.html\">Έργα</a>"
     ],
     [
       "<a href=\"?/playlists/index\\.html\"?>Playlists</a>",
@@ -174,15 +174,15 @@
     ],
     [
       "<a href=\"?/accessibility/index\\.html\"?>Accessibility</a>",
-      "<a href=\"/el/accessibilite/index.html\">Προσβασιμότητα</a>"
+      "<a href=\"/el/accessibility/index.html\">Προσβασιμότητα</a>"
     ],
     [
       "<a href=\"?/privacy/index\\.html\"?>Privacy</a>",
-      "<a href=\"/el/confidentialite/index.html\">Απόρρητο</a>"
+      "<a href=\"/el/privacy/index.html\">Απόρρητο</a>"
     ],
     [
       "<a href=\"?/terms/index\\.html\"?>Terms</a>",
-      "<a href=\"/el/conditions/index.html\">Όροι</a>"
+      "<a href=\"/el/terms/index.html\">Όροι</a>"
     ],
     [
       "placeholder=\"Search documentation\\.\\.\\.\"",
@@ -286,7 +286,7 @@
     ],
     [
       "<a href=\"?/case-studies/index\\.html\"?>Case studies</a>",
-      "<a href=\"/el/etudes-de-cas/index.html\">Μελέτες περιπτώσεων</a>"
+      "<a href=\"/el/case-studies/index.html\">Μελέτες περιπτώσεων</a>"
     ],
     [
       "<li><a href=\"?/research/index\\.html\"?>Research</a></li>",

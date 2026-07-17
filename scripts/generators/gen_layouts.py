@@ -341,6 +341,34 @@ SPEAKING_MCP_HUB_CSS = r"""      /* ============================================
       .iso20022-mcp-page .mcp-tl-f5{--ta:7.4s}
       .iso20022-mcp-page .mcp-tl-f6{--ta:8.1s}
       @media (prefers-reduced-motion:reduce){.iso20022-mcp-page .mcp-tl-typed,.iso20022-mcp-page .mcp-tl-fade{animation:none;width:auto;opacity:1}.iso20022-mcp-page .mcp-tl-caret::after{animation:none}}
+      /* --- MCP hub: benchmark additions (board tiles / regulators cards
+         reuse spk-paths; capability + proof + adoption reuse spk-stats).
+         Text pairs, computed light/dark, all AAA (>= 7:1):
+         --ink on --bg 16.83/19.29, --ink on --bg-alt 14.92/15.46,
+         --ink on --card 16.83/16.61, --ink-soft on --bg 11.35/14.22,
+         --ink-soft on --bg-alt 10.06/11.40, --ink-mute on --bg 7.99/9.75,
+         --ink-faint on --bg 8.14/8.09, --spk-blue on --bg 7.92/11.10.
+         --ink-faint on --bg-alt is 6.48 dark (BELOW 7), so bg-alt
+         surfaces (.mcp-prompt) use --ink-soft for secondary text, never
+         --ink-faint. The .read-as control is the homepage component
+         (its own tokens, validated there); the hub only re-aligns its
+         wrap to the spk grid. */
+      .iso20022-mcp-page .read-as{max-width:1120px;margin-inline:auto;padding:28px clamp(20px,5vw,64px) 0}
+      .iso20022-mcp-page .mcp-sec.mcp-3col{grid-template-columns:repeat(3,1fr)}
+      @media (max-width:860px){.iso20022-mcp-page .mcp-sec.mcp-3col{grid-template-columns:1fr 1fr}}
+      @media (max-width:520px){.iso20022-mcp-page .mcp-sec.mcp-3col{grid-template-columns:1fr}}
+      .iso20022-mcp-page .spk-stats.mcp-stats-3{grid-template-columns:repeat(3,1fr)}
+      @media (max-width:640px){.iso20022-mcp-page .spk-stats.mcp-stats-3{grid-template-columns:repeat(2,1fr)}}
+      .iso20022-mcp-page .mcp-note{margin-block-start:1.9rem;font-size:.95rem;line-height:1.65;color:var(--ink-soft);max-width:76ch}
+      .iso20022-mcp-page .mcp-prompts{display:grid;gap:clamp(16px,1.6vw,22px);margin-block-start:2.4rem}
+      .iso20022-mcp-page .mcp-prompt{background:var(--bg-alt);border-radius:18px;padding:clamp(24px,3vw,40px)}
+      .iso20022-mcp-page .mcp-prompt h3{font-size:1.3rem;margin-block:.15rem .4rem}
+      .iso20022-mcp-page .mcp-prompt .spk-eyebrow{color:var(--ink-soft);margin-block-end:.8rem}
+      .iso20022-mcp-page .mcp-prompt-meta{font-family:var(--spk-mono);font-size:.76rem;letter-spacing:.02em;color:var(--ink-soft);margin:0 0 .4rem}
+      .iso20022-mcp-page .mcp-prompt-label{font-family:var(--spk-mono);font-size:.68rem;font-weight:600;text-transform:uppercase;letter-spacing:.13em;color:var(--ink-soft);margin-block:1.3rem .5rem}
+      .iso20022-mcp-page .mcp-prompt .mcp-code{background:var(--card)}
+      .iso20022-mcp-page .mcp-prompt .mcp-code code{white-space:pre-wrap;overflow-wrap:anywhere}
+      .iso20022-mcp-page .mcp-prompt-note{margin-block-start:1rem;font-size:.92rem;color:var(--ink-soft)}
 """
 
 # Page-scoped CSS for /trust/: Economist-Pro-solutions-page anatomy on the

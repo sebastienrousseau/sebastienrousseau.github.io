@@ -285,7 +285,10 @@ def main() -> int:
     if args.list_stubs:
         pending = find_stub_locales(args.slug)
         if not pending:
-            print(f"all 27 locales translated for {args.slug}.")
+            print(
+                f"all {len(active_non_en_locales())} locales "
+                f"translated for {args.slug}."
+            )
             return 0
         print(f"{len(pending)} locale(s) still pending translation:")
         for lang, path in pending:

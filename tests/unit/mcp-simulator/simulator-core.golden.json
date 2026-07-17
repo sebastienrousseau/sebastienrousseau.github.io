@@ -1,0 +1,28 @@
+{
+  "capture_date": "2026-07-16",
+  "scenarios": [
+    { "id": "pay-supplier", "tool": "generate", "kind": "xml", "messageType": "pain.001.001.03" },
+    { "id": "urgent-gbp", "tool": "generate", "kind": "xml", "messageType": "pain.001.001.03" },
+    { "id": "payroll-batch", "tool": "generate", "kind": "xml", "messageType": "pain.001.001.03" },
+    { "id": "cancel-duplicate", "tool": "generate_message", "kind": "xml", "messageType": "camt.056.001.12" },
+    { "id": "missing-details", "tool": "generate", "kind": "error", "messageType": null }
+  ],
+  "pay_supplier_sentence_segments": [
+    { "text": "Pay ", "mappingId": null },
+    { "text": "Fournier Conseil SARL", "mappingId": "creditor" },
+    { "text": " ", "mappingId": null },
+    { "text": "4,200 euros", "mappingId": "amount" },
+    { "text": " for ", "mappingId": null },
+    { "text": "invoice INV-2026-183", "mappingId": "invoice" },
+    { "text": ", ", "mappingId": null },
+    { "text": "executing Friday", "mappingId": "when" },
+    { "text": ".", "mappingId": null }
+  ],
+  "pay_supplier_marked_xml": [
+    { "text": "<ReqdExctnDt>2026-07-17</ReqdExctnDt>", "mappingId": "when" },
+    { "text": "<InstdAmt Ccy=\"EUR\">4200.00</InstdAmt>", "mappingId": "amount" },
+    { "text": "<Nm>Fournier Conseil SARL</Nm>", "mappingId": "creditor" },
+    { "text": "<Nb>INV-2026-183</Nb>", "mappingId": "invoice" }
+  ],
+  "missing_details_error_contains": "Missing required fields for pain.001.001.03: requested_execution_date; row 1: creditor_agent_BIC"
+}

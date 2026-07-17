@@ -170,11 +170,11 @@
     ],
     [
       "href=\"?/papers/index\\.html\"?>Read the paper</a>",
-      "href=\"/ta/publications/index.html\">அறிக்கையைப் படிக்கவும்</a>"
+      "href=\"/ta/papers/index.html\">அறிக்கையைப் படிக்கவும்</a>"
     ],
     [
       "href=\"?/2026-05-15[^\"]*\"?>Read the article</a>",
-      "href=\"/ta/2026-05-15-rendement-cache-decryptage-depots-blackrock-brsrv-bstbl-genius-act/index.html\">கட்டுரையைப் படிக்கவும்</a>"
+      "href=\"/ta/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf/index.html\">கட்டுரையைப் படிக்கவும்</a>"
     ],
     [
       "<h2 class=ap-foot-title>Writing</h2>",
@@ -190,15 +190,15 @@
     ],
     [
       "<a href=/about/index\\.html>About</a>",
-      "<a href=/ta/a-propos/index.html>பற்றி</a>"
+      "<a href=/ta/about/index.html>பற்றி</a>"
     ],
     [
       "<a href=/papers/index\\.html>Papers</a>",
-      "<a href=/ta/publications/index.html>வெளியீடுகள்</a>"
+      "<a href=/ta/papers/index.html>வெளியீடுகள்</a>"
     ],
     [
       "<a href=/projects/index\\.html>Projects</a>",
-      "<a href=/ta/projets/index.html>திட்டங்கள்</a>"
+      "<a href=/ta/projects/index.html>திட்டங்கள்</a>"
     ],
     [
       "<a href=/playlists/index\\.html>Playlists</a>",
@@ -210,7 +210,7 @@
     ],
     [
       "<a href=/tags/index\\.html>Tags</a>",
-      "<a href=/ta/etiquettes/index.html>குறிச்சொற்கள்</a>"
+      "<a href=/ta/tags/index.html>குறிச்சொற்கள்</a>"
     ],
     [
       "<a href=/articles/index\\.html>Articles</a>",
@@ -218,19 +218,19 @@
     ],
     [
       "<a href=/made-with-static-site-generator/index\\.html>Made with Static Site Generator</a>",
-      "<a href=/ta/concu-avec-static-site-generator/index.html>Static Site Generator உடன் உருவாக்கப்பட்டது</a>"
+      "<a href=/ta/made-with-static-site-generator/index.html>Static Site Generator உடன் உருவாக்கப்பட்டது</a>"
     ],
     [
       "<a href=/accessibility/index\\.html>Accessibility</a>",
-      "<a href=/ta/accessibilite/index.html>அணுகல்தன்மை</a>"
+      "<a href=/ta/accessibility/index.html>அணுகல்தன்மை</a>"
     ],
     [
       "<a href=/privacy/index\\.html>Privacy</a>",
-      "<a href=/ta/confidentialite/index.html>தனியுரிமை</a>"
+      "<a href=/ta/privacy/index.html>தனியுரிமை</a>"
     ],
     [
       "<a href=/terms/index\\.html>Terms</a>",
-      "<a href=/ta/conditions/index.html>விதிமுறைகள்</a>"
+      "<a href=/ta/terms/index.html>விதிமுறைகள்</a>"
     ],
     [
       ">Experience<",

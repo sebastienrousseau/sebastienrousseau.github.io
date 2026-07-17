@@ -1,0 +1,36 @@
+{
+  "_meta": {
+    "note": "Static verified figures rendered on /iso20022-mcp/. Every number was measured or fetched live on the dates below; nothing is projected or estimated. Refresh by re-running the measurements and updating this file."
+  },
+  "timed_proof": {
+    "date": "2026-07-16",
+    "date_human": "16 July 2026",
+    "cold_seconds": 17.5,
+    "warm_seconds": 1.5,
+    "machine": "Apple-silicon Mac (arm64 macOS), uv 0.11.21",
+    "method": "stdio JSON-RPC client timestamps from process spawn: uvx --from \"iso20022-mcp[all]\" iso20022-mcp, initialize handshake, then one generate call returning a schema-valid pain.001.001.03 (gateway 0.0.4). Cold run used --cache-dir pointing at an empty directory, so the 17.5s includes resolving and downloading every package; the warm run reused the populated cache.",
+    "cold_initialize_seconds": 13.2,
+    "warm_initialize_seconds": 1.1
+  },
+  "adoption": {
+    "date": "2026-07-16",
+    "date_human": "16-17 July 2026",
+    "source": "https://pypistats.org/api/packages/<package>/recent (last_month), fetched 16-17 July 2026; three packages re-fetched 17 July returned identical counts, so the figures are one consistent snapshot",
+    "suite_last_month_by_package": {
+      "iso20022-mcp": 227,
+      "pain001-mcp": 573,
+      "pacs008-mcp": 260,
+      "camt053-mcp": 1474,
+      "reconcile-mcp": 128,
+      "camt-exceptions": 231,
+      "ap2-iso20022": 140,
+      "acmt001-mcp": 432,
+      "bankstatementparser-mcp": 534
+    },
+    "suite_last_month_total": 3999,
+    "registry_listed": 13,
+    "registry_query": "https://registry.modelcontextprotocol.io/v0/servers?search=sebastienrousseau",
+    "registry_checked": "2026-07-17",
+    "registry_checked_human": "17 July 2026"
+  }
+}

@@ -10,7 +10,7 @@
     ],
     [
       "placeholder=\"?you@bank\\.com\"?",
-      "placeholder=\"you@bank.com\""
+      "placeholder=\"neengal@bank.in\""
     ],
     [
       "value=\"Newsletter signup — sebastienrousseau\\.com\"",
@@ -74,19 +74,19 @@
     ],
     [
       "<li><a href=\"?/about/index\\.html\"?>About</a></li>",
-      "<li><a href=\"/ta/a-propos/index.html\">பற்றி</a></li>"
+      "<li><a href=\"/ta/about/index.html\">பற்றி</a></li>"
     ],
     [
       "<li><a href=\"?/papers/index\\.html\"?>Papers</a></li>",
-      "<li><a href=\"/ta/publications/index.html\">வெளியீடுகள்</a></li>"
+      "<li><a href=\"/ta/papers/index.html\">வெளியீடுகள்</a></li>"
     ],
     [
       "<li><a href=\"?/topics/index\\.html\"?>Topics</a></li>",
-      "<li><a href=\"/ta/sujets/index.html\">தலைப்புகள்</a></li>"
+      "<li><a href=\"/ta/topics/index.html\">தலைப்புகள்</a></li>"
     ],
     [
       "<li><a href=\"?/projects/index\\.html\"?>Projects</a></li>",
-      "<li><a href=\"/ta/projets/index.html\">திட்டங்கள்</a></li>"
+      "<li><a href=\"/ta/projects/index.html\">திட்டங்கள்</a></li>"
     ],
     [
       "<li><a href=\"?/articles/index\\.html\"?>Articles</a></li>",
@@ -122,23 +122,23 @@
     ],
     [
       "<a href=\"?/about/index\\.html\"?>About</a>",
-      "<a href=\"/ta/a-propos/index.html\">பற்றி</a>"
+      "<a href=\"/ta/about/index.html\">பற்றி</a>"
     ],
     [
       "<a href=\"?/made-with-static-site-generator/index\\.html\"?>Made with Static Site Generator</a>",
-      "<a href=\"/ta/concu-avec-static-site-generator/index.html\">Static Site Generator உடன் உருவாக்கப்பட்டது</a>"
+      "<a href=\"/ta/made-with-static-site-generator/index.html\">Static Site Generator உடன் உருவாக்கப்பட்டது</a>"
     ],
     [
       "<a href=\"?/papers/index\\.html\"?>Papers</a>",
-      "<a href=\"/ta/publications/index.html\">வெளியீடுகள்</a>"
+      "<a href=\"/ta/papers/index.html\">வெளியீடுகள்</a>"
     ],
     [
       "<a href=\"?/tags/index\\.html\"?>Tags</a>",
-      "<a href=\"/ta/etiquettes/index.html\">குறிச்சொற்கள்</a>"
+      "<a href=\"/ta/tags/index.html\">குறிச்சொற்கள்</a>"
     ],
     [
       "<a href=\"?/projects/index\\.html\"?>Projects</a>",
-      "<a href=\"/ta/projets/index.html\">திட்டங்கள்</a>"
+      "<a href=\"/ta/projects/index.html\">திட்டங்கள்</a>"
     ],
     [
       "<a href=\"?/playlists/index\\.html\"?>Playlists</a>",
@@ -174,15 +174,15 @@
     ],
     [
       "<a href=\"?/accessibility/index\\.html\"?>Accessibility</a>",
-      "<a href=\"/ta/accessibilite/index.html\">அணுகல்தன்மை</a>"
+      "<a href=\"/ta/accessibility/index.html\">அணுகல்தன்மை</a>"
     ],
     [
       "<a href=\"?/privacy/index\\.html\"?>Privacy</a>",
-      "<a href=\"/ta/confidentialite/index.html\">தனியுரிமை</a>"
+      "<a href=\"/ta/privacy/index.html\">தனியுரிமை</a>"
     ],
     [
       "<a href=\"?/terms/index\\.html\"?>Terms</a>",
-      "<a href=\"/ta/conditions/index.html\">விதிமுறைகள்</a>"
+      "<a href=\"/ta/terms/index.html\">விதிமுறைகள்</a>"
     ],
     [
       "placeholder=\"Search documentation\\.\\.\\.\"",
@@ -286,7 +286,7 @@
     ],
     [
       "<a href=\"?/case-studies/index\\.html\"?>Case studies</a>",
-      "<a href=\"/ta/etudes-de-cas/index.html\">வழக்கு ஆய்வுகள்</a>"
+      "<a href=\"/ta/case-studies/index.html\">வழக்கு ஆய்வுகள்</a>"
     ],
     [
       "<li><a href=\"?/research/index\\.html\"?>Research</a></li>",

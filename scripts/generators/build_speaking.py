@@ -30,7 +30,7 @@ from pathlib import Path
 try:
     import yaml  # type: ignore[import-untyped]
 except ImportError:  # pragma: no cover
-    print("build_speaking: pyyaml not installed", file=sys.stderr)
+    sys.stderr.write("build_speaking: pyyaml not installed\n")
     raise
 
 _HERE = Path(__file__).resolve().parent
