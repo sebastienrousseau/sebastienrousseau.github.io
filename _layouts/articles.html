@@ -2020,6 +2020,13 @@
       /* Dark surfaces need a light green: #005f33 is 2.31:1 on --card #161617. */
       [data-theme="dark"] .speaking-page{--spk-green:#6fd49a}
       @media (prefers-color-scheme: dark){html:not([data-theme="light"]) .speaking-page{--spk-green:#6fd49a}}
+      /* The warm dark band (--paper-card #1c1a17) lifts luminance above the
+         black --bg the global dark --ink-faint (#a0a0a8, 9.6:1 on #000) was
+         tuned for: on the band it is only 6.69:1 — below AAA 7:1 (d556b3f1
+         fixed the light-theme pair only). #a8a8b0 is 7.35:1 on the band and
+         7.66:1 on --card; the light pair (7.68:1 on the band) is untouched. */
+      [data-theme="dark"] .speaking-page .spk-band{--ink-faint:#a8a8b0}
+      @media (prefers-color-scheme: dark){html:not([data-theme="light"]) .speaking-page .spk-band{--ink-faint:#a8a8b0}}
       .speaking-page .spk-wrap{max-width:1120px;margin-inline:auto;padding-inline:clamp(20px,5vw,64px)}
       .speaking-page section{padding-block:clamp(44px,6vw,82px)}
       .speaking-page .spk-band{background:var(--spk-band);border-block:1px solid var(--spk-line)}
@@ -2515,13 +2522,13 @@
                 <a class="ap-lang-item" href="/yo/" data-lang="yo" role="menuitem"><span aria-hidden="true">🇳🇬</span> Yorùbá</a>
                 <a class="ap-lang-item" href="/zh-hans/" data-lang="zh-hans" role="menuitem"><span aria-hidden="true">🇨🇳</span> 简体中文</a>
                 <a class="ap-lang-item" href="/zh-hant/" data-lang="zh-hant" role="menuitem"><span aria-hidden="true">🇹🇼</span> 繁體中文</a>
-                <span class="ap-lang-item" data-lang="fa" role="menuitem" aria-disabled="true" title="Coming soon" dir="rtl"><span aria-hidden="true">🇮🇷</span> فارسی</span>
-                <span class="ap-lang-item" data-lang="mr" role="menuitem" aria-disabled="true" title="Coming soon"><span aria-hidden="true">🇮🇳</span> मराठी</span>
-                <span class="ap-lang-item" data-lang="ta" role="menuitem" aria-disabled="true" title="Coming soon"><span aria-hidden="true">🇮🇳</span> தமிழ்</span>
-                <span class="ap-lang-item" data-lang="te" role="menuitem" aria-disabled="true" title="Coming soon"><span aria-hidden="true">🇮🇳</span> తెలుగు</span>
-                <span class="ap-lang-item" data-lang="ms" role="menuitem" aria-disabled="true" title="Coming soon"><span aria-hidden="true">🇲🇾</span> Bahasa Melayu</span>
-                <span class="ap-lang-item" data-lang="el" role="menuitem" aria-disabled="true" title="Coming soon"><span aria-hidden="true">🇬🇷</span> Ελληνικά</span>
-                <span class="ap-lang-item" data-lang="hu" role="menuitem" aria-disabled="true" title="Coming soon"><span aria-hidden="true">🇭🇺</span> Magyar</span>
+                <a class="ap-lang-item" href="/fa/" data-lang="fa" role="menuitem" dir="rtl"><span aria-hidden="true">🇮🇷</span> فارسی</a>
+                <a class="ap-lang-item" href="/mr/" data-lang="mr" role="menuitem"><span aria-hidden="true">🇮🇳</span> मराठी</a>
+                <a class="ap-lang-item" href="/ta/" data-lang="ta" role="menuitem"><span aria-hidden="true">🇮🇳</span> தமிழ்</a>
+                <a class="ap-lang-item" href="/te/" data-lang="te" role="menuitem"><span aria-hidden="true">🇮🇳</span> తెలుగు</a>
+                <a class="ap-lang-item" href="/ms/" data-lang="ms" role="menuitem"><span aria-hidden="true">🇲🇾</span> Bahasa Melayu</a>
+                <a class="ap-lang-item" href="/el/" data-lang="el" role="menuitem"><span aria-hidden="true">🇬🇷</span> Ελληνικά</a>
+                <a class="ap-lang-item" href="/hu/" data-lang="hu" role="menuitem"><span aria-hidden="true">🇭🇺</span> Magyar</a>
               </div>
             </div>
           </div>

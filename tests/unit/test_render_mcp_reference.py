@@ -22,7 +22,9 @@ from __future__ import annotations
 import json
 
 if __package__ in (None, ""):  # standalone run; under pytest conftest.py wires sys.path
-    import _path_bootstrap  # noqa: F401
+    import _path_bootstrap
+
+    _path_bootstrap.ensure()
 
 import pytest
 import render_mcp_reference as ref

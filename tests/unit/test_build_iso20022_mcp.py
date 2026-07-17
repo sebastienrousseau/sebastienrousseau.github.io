@@ -23,7 +23,9 @@ from pathlib import Path
 _ROOT = Path(__file__).resolve().parents[2]
 
 if __package__ in (None, ""):  # standalone run; under pytest conftest.py wires sys.path
-    import _path_bootstrap  # noqa: F401
+    import _path_bootstrap
+
+    _path_bootstrap.ensure()
 
 import build_case_studies as cs
 import build_iso20022_mcp as mcp
@@ -607,8 +609,8 @@ def test_adoption_strip_matches_verified_metrics() -> None:
     assert f'<p class="spk-num">{ad["suite_last_month_total"]:,}</p>' in sec
     assert f'<p class="spk-num">{ad["registry_listed"]}</p>' in sec
     assert ad["date_human"] in sec
-    assert "pypistats.org" in sec
-    assert "registry.modelcontextprotocol.io" in sec
+    assert sec.count("pypistats.org last-30-day counts for the nine suite packages") == 1
+    assert sec.count("live listing count for this account on registry.modelcontextprotocol.io") == 1
     # The committed figure is itself the sum of the committed per-package
     # counts (nine suite packages, no more, no less).
     per = ad["suite_last_month_by_package"]
