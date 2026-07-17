@@ -1125,6 +1125,13 @@
         .ap-menu .ap-sub-toggle{display:none}
         .ap-menu .ap-sub{position:static;transform:none;opacity:1;visibility:visible;min-width:0;border:0;border-radius:0;box-shadow:none;background:transparent;padding:0 0 4px;display:grid;gap:0;transition:none}
         .ap-menu .ap-sub a{display:flex;align-items:center;justify-content:center;min-height:44px;padding:0;text-align:center;color:var(--ink-mute)}
+        /* The desktop reveal rule (.has-sub:hover>.ap-sub) lives outside
+           any media query and out-specifies the static override above, so
+           a touch-hover re-applied translateX(-50%) and threw the
+           sub-list off the left edge. Re-assert transform:none at matching
+           specificity inside the burger block so hovered groups stay in
+           the centered stacked flow. */
+        .ap-menu .has-sub:hover>.ap-sub,html:not(.has-js) .ap-menu .has-sub:focus-within>.ap-sub{transform:none}
       }
       /* Tight phones (<=374px): the header row (brand + theme + search +
          CTA pill + burger) no longer fits at the desktop paddings. Keep
