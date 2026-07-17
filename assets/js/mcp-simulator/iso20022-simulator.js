@@ -342,7 +342,7 @@ class Iso20022Simulator extends HTMLElement {
     ev.preventDefault();
     const ids = this._data.scenarios.map((s) => s.id);
     const at = ids.indexOf(this._current);
-    let next = at;
+    let next;
     if (ev.key === "ArrowRight" || ev.key === "ArrowDown") {
       next = (at + 1) % ids.length;
     } else if (ev.key === "ArrowLeft" || ev.key === "ArrowUp") {
