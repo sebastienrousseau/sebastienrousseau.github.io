@@ -331,8 +331,6 @@ def test_hreflang_pass_skips_non_top_level_leaf_collisions(tmp_path, monkeypatch
     /research/ STATIC hub's alternate cluster (5-item nav re-architecture).
     _apply_hreflang_pass only slug-pairs top-level pages; deeper surfaces
     keep whatever hreflang chain their generator emitted."""
-    import postbuild as pb
-
     monkeypatch.chdir(tmp_path)
     page = tmp_path / "public" / "tags" / "research" / "index.html"
     page.parent.mkdir(parents=True)

@@ -20,15 +20,9 @@ Standalone run: ``python3 -m pytest tests/unit/test_render_mcp_reference.py``
 from __future__ import annotations
 
 import json
-import sys
-from pathlib import Path
 
-# Mirror tests/unit/conftest.py wiring so the file also runs standalone.
-_ROOT = Path(__file__).resolve().parents[2]
-for _sub in ("lib", "editorial", "generators", "postbuild"):
-    _p = _ROOT / "scripts" / _sub
-    if _p.is_dir() and str(_p) not in sys.path:
-        sys.path.insert(0, str(_p))
+if __package__ in (None, ""):  # standalone run; under pytest conftest.py wires sys.path
+    import _path_bootstrap  # noqa: F401
 
 import pytest
 import render_mcp_reference as ref

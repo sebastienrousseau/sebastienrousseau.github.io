@@ -39,6 +39,11 @@ This rewrites ``tests/unit/golden/design_tokens_hex_baseline.json``
 from the current ``_layouts/`` state. Review the diff: every added
 entry is a colour literal you are choosing to freeze outside the token
 system.
+
+The committed JSON is an envelope ``{"_jscpd", "layouts", "_jscpd_end"}``
+whose marker strings carry jscpd's inline ignore comments: layouts that
+share a style block legitimately repeat identical hex histograms, so the
+snapshot is frozen golden data, not refactorable duplication.
 """
 
 from __future__ import annotations
@@ -110,8 +115,16 @@ def snapshot_layouts() -> dict[str, dict[str, int]]:
     return snap
 
 
+# The committed baseline is a golden snapshot: layouts that share a
+# style block repeat identical hex histograms by construction, so the
+# file wraps the data in an envelope whose marker strings tell jscpd to
+# skip it (see module docstring, "Baseline regeneration").
+_BASELINE_MARKER_START = "jscpd:ignore-start"
+_BASELINE_MARKER_END = "jscpd:ignore-end"
+
+
 def _load_baseline() -> dict[str, dict[str, int]]:
-    return json.loads(BASELINE_PATH.read_text(encoding="utf-8"))
+    return json.loads(BASELINE_PATH.read_text(encoding="utf-8"))["layouts"]
 
 
 def test_no_new_hex_literals_in_layout_styles() -> None:
@@ -141,8 +154,15 @@ def test_no_new_hex_literals_in_layout_styles() -> None:
 
 def test_hex_baseline_is_current_format() -> None:
     """Guard the committed baseline shape so a hand-edit can't silently
-    disable the gate."""
-    baseline = _load_baseline()
+    disable the gate (or drop the jscpd ignore envelope around the
+    golden data)."""
+    raw = json.loads(BASELINE_PATH.read_text(encoding="utf-8"))
+    assert set(raw) == {"_jscpd", "layouts", "_jscpd_end"}, (
+        "baseline must be the {_jscpd, layouts, _jscpd_end} envelope"
+    )
+    assert _BASELINE_MARKER_START in raw["_jscpd"], "lost the jscpd ignore-start marker"
+    assert _BASELINE_MARKER_END in raw["_jscpd_end"], "lost the jscpd ignore-end marker"
+    baseline = raw["layouts"]
     assert isinstance(baseline, dict) and baseline, "baseline must be a non-empty object"
     for name, counts in baseline.items():
         assert (LAYOUTS / name).is_file(), f"baseline references missing layout {name}"
@@ -203,6 +223,15 @@ if __name__ == "__main__":
         raise SystemExit(2)
     BASELINE_PATH.parent.mkdir(parents=True, exist_ok=True)
     snap = snapshot_layouts()
-    BASELINE_PATH.write_text(json.dumps(snap, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+    payload = {
+        "_jscpd": (
+            f"{_BASELINE_MARKER_START} -- golden baseline: layouts sharing a "
+            "style block repeat identical hex histograms by construction; "
+            "this is frozen snapshot data, not refactorable duplication"
+        ),
+        "layouts": dict(sorted(snap.items())),
+        "_jscpd_end": _BASELINE_MARKER_END,
+    }
+    BASELINE_PATH.write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")
     total = sum(sum(c.values()) for c in snap.values())
     print(f"wrote {BASELINE_PATH} — {len(snap)} layout file(s), {total} frozen hex literal(s)")

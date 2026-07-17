@@ -17,16 +17,13 @@ Standalone run: ``python3 tests/unit/test_build_iso20022_mcp.py``
 
 from __future__ import annotations
 
-import sys
 import tempfile
 from pathlib import Path
 
-# Mirror tests/unit/conftest.py wiring so the file also runs standalone.
 _ROOT = Path(__file__).resolve().parents[2]
-for _sub in ("lib", "editorial", "generators", "postbuild"):
-    _p = _ROOT / "scripts" / _sub
-    if _p.is_dir() and str(_p) not in sys.path:
-        sys.path.insert(0, str(_p))
+
+if __package__ in (None, ""):  # standalone run; under pytest conftest.py wires sys.path
+    import _path_bootstrap  # noqa: F401
 
 import build_case_studies as cs
 import build_iso20022_mcp as mcp
