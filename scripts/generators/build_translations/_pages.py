@@ -10,6 +10,7 @@ from . import _state as st
 from ._chrome import (
     _CANONICAL_RE,
     _DESC_META_RE,
+    _HERO_RE,
     _KW_META_RE,
     _OG_DESC_RE,
     _OG_LOCALE_RE,
@@ -41,41 +42,108 @@ _LDJSON_RE = re.compile(r'<script type="application/ld\+json">[\s\S]*?</script>'
 
 
 def render_articles_hub(entries: list[dict[str, str]]) -> str | None:
-    """Articles-hub head pass for /<lang>/<articles-slug>/.
-
-    build_listings.py already writes the fully-localised listing body
-    (locale cards + filter chrome + pagination from labels.json) to
-    ``/<lang>/<articles-slug>/index.html`` *before* this runs, so this
-    pass forks that page and finishes the head: localised <title> +
-    meta description (labels.json ``ArticlesHub.*`` — never another
-    locale's fallback), canonical/og URLs, hreflang, JSON-LD
-    inLanguage. The old newsroom-body reconstruction died when
-    /articles/ moved off ``<section class="newsroom">`` markup; forking
-    the EN shell here used to clobber build_listings' locale cards
-    with English ones."""
-    if not entries:
-        return None
-    articles_slug = st.STATIC_SLUG_FR.get("articles", "articles")
-    locale_src = st.PUBLIC / st.LANG_CODE / articles_slug / "index.html"
-    shell_src = locale_src if locale_src.is_file() else st.PUBLIC / "articles" / "index.html"
+    """Articles listing — French equivalent of /articles/. Forks the
+    rendered /articles/ page as shell and writes to /fr/articles/."""
+    shell_src = st.PUBLIC / "articles" / "index.html"
     if not shell_src.is_file():
         return None
     shell = shell_src.read_text(encoding="utf-8")
 
-    # Strip the English ItemList (scoped to the EN article URLs).
+    # Strip the English ItemList (we emit a French one scoped to /fr/).
     for block in _LDJSON_RE.findall(shell):
         if '"ItemList"' in block or '"itemListElement"' in block:
             shell = shell.replace(block, "", 1)
 
-    shell = _set_html_lang(shell)
-    labels = st.I18N_FR
-    hub_title = labels.get("ArticlesHub.title", "Articles")
-    title = f"{hub_title} — Sebastien Rousseau"
-    desc = labels.get(
-        "ArticlesHub.desc",
-        "Articles by Sebastien Rousseau on AI, payments, post-quantum "
-        "cryptography, and the technology of banking.",
+    # Mirror /articles/ structure exactly: FEATURED block (newest)
+    # + ARCHIVE grid (the rest). Same markup classes so the CSS
+    # styling carries across both languages identically.
+    if not entries:
+        return None
+
+    featured = entries[0]
+    archive = entries[1:]
+    feat_url = f"/{st.LANG_CODE}/{featured['slug']}/index.html"
+    _hub_strings: dict[str, dict[str, str]] = {
+        "fr": {
+            "featuredKicker": "À LA UNE",
+            "featuredHeading": "Article récent",
+            "archiveKicker": "ARCHIVES",
+            "archiveHeading": "Tous les articles",
+            "readFull": "Lire l'article complet",
+            "desc": "Sélection d'articles traduits manuellement en français.",
+            "heroH1": "Articles",
+            "heroSub": "Articles sur l'IA, la cryptographie post-quantique, ISO 20022 et l'avenir des paiements.",
+        },
+        "de": {
+            "featuredKicker": "AKTUELL",
+            "featuredHeading": "Neuester Artikel",
+            "archiveKicker": "ARCHIV",
+            "archiveHeading": "Alle Artikel",
+            "readFull": "Vollständigen Artikel lesen",
+            "desc": "Eine Auswahl manuell ins Deutsche übersetzter Artikel.",
+            "heroH1": "Artikel",
+            "heroSub": "Artikel über KI, Post-Quanten-Kryptografie, ISO 20022 und die Zukunft des Zahlungsverkehrs.",
+        },
+    }
+    _h = _hub_strings.get(st.LANG_CODE, _hub_strings["fr"])
+    feat_block = (
+        f'<header class="newsroom-section-head"><p class="newsroom-kicker">{_h["featuredKicker"]}</p>'
+        f'<h2>{_h["featuredHeading"]}</h2></header>'
+        '<article class="newsroom-featured">'
+        f'<a class="newsroom-featured-media" href="{feat_url}" title="{_html.escape(featured["title"], quote=True)}">'
+        f'<img alt="{_html.escape(featured["banner_alt"], quote=True)}" '
+        f'src="{featured["banner"]}" loading="eager" fetchpriority="high" '
+        'decoding="async" width="800" height="800" />'
+        '</a>'
+        '<div class="newsroom-featured-body">'
+        f'<h3><a href="{feat_url}" title="{_html.escape(featured["title"], quote=True)}">{_html.escape(featured["title"])}</a></h3>'
+        f'<p>{_html.escape(featured["description"])}</p>'
+        f'<p><a class="pill ghost" href="{feat_url}" title="{_html.escape(featured["title"], quote=True)}">{_h["readFull"]}</a></p>'
+        '</div>'
+        '</article>'
     )
+
+    cards: list[str] = []
+    for e in archive:
+        url = f"/{st.LANG_CODE}/{e['slug']}/index.html"
+        cards.append(
+            '<article class="newsroom-card">'
+            f'<a class="newsroom-card-media" href="{url}" title="{_html.escape(e["title"], quote=True)}">'
+            f'<img alt="{_html.escape(e["banner_alt"], quote=True)}" src="{e["banner"]}" loading="lazy" decoding="async" width="600" height="600" />'
+            '</a>'
+            '<div class="newsroom-card-body">'
+            f'<h3><a href="{url}" title="{_html.escape(e["title"], quote=True)}">{_html.escape(e["title"])}</a></h3>'
+            f'<p class="newsroom-meta"><time datetime="{e["slug"][:10]}">{e["slug"][:10]}</time> · Sebastien Rousseau</p>'
+            f'<p class="newsroom-excerpt">{_html.escape(e["description"])}</p>'
+            '</div>'
+            '</article>'
+        )
+
+    archive_block = (
+        (
+            f'<header class="newsroom-section-head"><p class="newsroom-kicker">{_h["archiveKicker"]}</p>'
+            f'<h2>{_h["archiveHeading"]}</h2></header>'
+            '<div class="newsroom-grid">' + "".join(cards) + "</div>"
+        )
+        if cards
+        else ""
+    )
+
+    body = '<section class="newsroom">' + feat_block + archive_block + "</section>"
+    shell = _NEWSROOM_RE.sub(body, shell, count=1)
+    # Localise hero H1 + subtitle on the articles hub.
+    shell = _HERO_RE.sub(
+        rf'\g<1>{_html.escape(_h["heroH1"])}\g<2>{_html.escape(_h["heroSub"])}\g<3>',
+        shell,
+        count=1,
+    )
+    shell = _set_html_lang(shell)
+    _articles_hub_titles = {
+        "fr": "Articles en français — Sebastien Rousseau",
+        "de": "Artikel auf Deutsch — Sebastien Rousseau",
+    }
+    title = _articles_hub_titles.get(st.LANG_CODE, _articles_hub_titles["fr"])
+    desc = _h["desc"]
     shell = _TITLE_RE.sub(f"<title>{_html.escape(title)}</title>", shell, count=1)
     shell = _DESC_META_RE.sub(rf"\g<1>{_html.escape(desc, quote=True)}\g<2>", shell, count=1)
     shell = _OG_TITLE_RE.sub(rf"\g<1>{_html.escape(title, quote=True)}\g<2>", shell, count=1)
@@ -415,20 +483,6 @@ def render_static_translation(slug: str) -> str | None:  # noqa: C901 — per-pa
     if cfg is None:
         return None
     shell_src = st.PUBLIC / slug / "index.html"
-    if slug == "articles":
-        # The articles hub already exists as a fully-localised page:
-        # build_listings.py writes the locale listing body and
-        # render_articles_hub finishes its head. Forking the EN
-        # /articles/ shell here would clobber the locale cards + filter
-        # chrome with English ones, so patch the locale page instead.
-        locale_src = (
-            st.PUBLIC
-            / st.LANG_CODE
-            / st.STATIC_SLUG_FR.get("articles", "articles")
-            / "index.html"
-        )
-        if locale_src.is_file():
-            shell_src = locale_src
     if not shell_src.is_file():
         return None
     shell = shell_src.read_text(encoding="utf-8")
