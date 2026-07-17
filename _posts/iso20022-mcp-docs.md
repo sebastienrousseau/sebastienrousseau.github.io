@@ -23,7 +23,7 @@ image_height: "162"
 image_width: "162"
 image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "ISO 20022 MCP docs, Claude MCP setup, claude mcp add, Claude Desktop MCP config, pain.001 MCP, pacs.008 MCP, camt.053 MCP, reconciliation MCP, agent payments documentation"
-last_reviewed: "2026-07-15"
+last_reviewed: "2026-07-16"
 language: "en-GB"
 layout: "story"
 locale: "en_GB"
@@ -93,7 +93,7 @@ author_website: "https://sebastienrousseau.com"
 author_twitter: "@wwdseb"
 author_location: "London, UK"
 thanks: "Thanks for reading!"
-site_last_updated: "2026-07-15"
+site_last_updated: "2026-07-16"
 site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 site_software: "Static Site Generator, Rust"
@@ -290,7 +290,7 @@ async with MCPServerStdio(
 
 <div class="docs-client-grid">
 <article class="docs-client">
-<p><strong>ChatGPT and the OpenAI Responses API.</strong> Remote-first: they connect only to MCP servers reachable over the public internet, via Streamable HTTP or HTTP/SSE and a <code>server_url</code>. They do not run local stdio processes, so pairing them with this suite means hosting it yourself.</p>
+<p><strong>ChatGPT and the OpenAI Responses API.</strong> Remote-first: they connect only to MCP servers reachable over the public internet, via Streamable HTTP or HTTP/SSE and a <code>server_url</code>. They do not run local stdio processes, so pairing them with this suite means hosting it yourself; the verified bridge below is the starting point.</p>
 </article>
 <article class="docs-client">
 <p><strong>Microsoft Copilot Studio.</strong> Adds MCP servers to agents as tools through Power Platform connectors, over the Streamable HTTP transport only. No local stdio support.</p>
@@ -298,6 +298,30 @@ async with MCPServerStdio(
 <article class="docs-client">
 <p><strong>Zapier MCP.</strong> The inverse case: Zapier hosts a remote MCP endpoint exposing Zapier actions to your AI client via a generated <code>mcp.zapier.com</code> URL. It is a place agents call out to, not a way to run this suite.</p>
 </article>
+</div>
+</section>
+
+<section class="newsroom docs-split" id="self-host">
+<header class="cat-section-head">
+<p class="cat-kicker">SELF-HOST FOR REMOTE-ONLY CLIENTS</p>
+<h3 class="cat-headline">One bridge command, verified end to end.</h3>
+<p class="cat-lede">Remote-first platforms only speak Streamable HTTP. The community <a href="https://pypi.org/project/mcp-proxy/">mcp-proxy</a> bridge serves this suite's stdio gateway over exactly that transport, in one command:</p>
+</header>
+
+<div class="docs-code-col">
+
+```bash
+uvx mcp-proxy --port 8096 -- uvx --from "iso20022-mcp[all]" iso20022-mcp
+```
+
+</div>
+
+<div class="story-why">
+<ul class="story-why-list">
+<li><strong>Verified, not assumed.</strong> On 16 July 2026, with <code>mcp-proxy</code> 0.12.0, a raw Streamable HTTP client against <code>http://127.0.0.1:8096/mcp/</code> completed the MCP <code>initialize</code> handshake, listed all seven gateway meta-tools and received a schema-valid <code>pain.001.001.03</code> from <code>generate</code>. The same bridge also exposes an SSE endpoint at <code>/sse</code>.</li>
+<li><strong>Localhost by default.</strong> The bridge binds <code>127.0.0.1</code>. Remote platforms need a publicly reachable URL, so exposing this to the internet means adding your own TLS, authentication and network policy in front; neither the bridge nor the suite ships an authentication layer.</li>
+<li><strong>Know the trade.</strong> <code>mcp-proxy</code> is a third-party bridge on PyPI, not part of this suite, and self-hosting gives up the local-only posture the stdio servers are built around: requests now cross a network hop that you operate and must secure.</li>
+</ul>
 </div>
 </section>
 
@@ -344,7 +368,7 @@ Validate the records first, then generate. If validation fails, name the failing
 <li><strong>What came back.</strong> A <code>pain.001.001.03</code> Document (namespace <code>urn:iso:std:iso:20022:tech:xsd:pain.001.001.03</code>) carrying <code>MsgId MSG-2026-07-15-001</code>, structured <code>PstlAdr</code> blocks for all three parties, <code>InstdAmt Ccy="EUR" 4200.00</code> and structured remittance. The tool validates against the bundled official XSD before returning; we re-validated the returned document independently and it passed.</li>
 <li><strong>Checked identifiers.</strong> Both IBANs pass a mod-97 integrity check (Python stdlib, no library), and both BICs match the ISO 9362 shape the input schema enforces.</li>
 <li><strong>Two field gotchas we hit.</strong> <code>date</code> must be a full ISO datetime (<code>2026-07-15T09:30:00.000Z</code>), not a bare date, and <code>batch_booking</code> must be the lowercase string <code>"false"</code>. pain.001.001.03 also requires structured addresses for initiator, debtor and creditor.</li>
-<li><strong>Gateway note, tested honestly.</strong> In gateway 0.0.2, <code>generate</code> for the pain family builds and XSD-validates the XML but then trips a response-shape bug returning it. Until that lands fixed, run the family server directly, <code>uvx --from "iso20022-mcp[all]" pain001-mcp</code>, whose <code>generate_message</code> tool returned the document above. The gateway's <code>validate</code>, <code>describe</code>, <code>search</code> and listing tools worked as documented in the same session.</li>
+<li><strong>Gateway note, retested.</strong> Gateway 0.0.2 had a response-shape bug returning pain-family <code>generate</code> results, which is why this template was first proven against <code>pain001-mcp</code> directly. Fixed upstream: on 16 July 2026, gateway 0.0.4 (what the <code>[all]</code> one-liner installs today) returned a schema-valid <code>pain.001.001.03</code> from its <code>generate</code> meta-tool on the first call, driven over stdio JSON-RPC with the same natural flat records.</li>
 </ul>
 </div>
 </section>

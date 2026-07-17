@@ -1,5 +1,5 @@
 ---
-title: "Generative KI in der Werbung: Amazon Rufus & Meta"
+title: "Generative KI in der Werbung: Amazon Rufus und Meta"
 subtitle: "Wie KI die Konsumenteninteraktion und die Werbedynamik transformiert"
 description: "Wie KI die Werbung transformiert — Einblicke in Amazons Rufus und die jüngsten Entwicklungen von Meta. Entdecken Sie die Auswirkungen auf das Konsumentenengagement."
 date: "February 08, 2024"

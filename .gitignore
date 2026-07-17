@@ -115,6 +115,7 @@ workers/lang-router.bundled.js
 
 # --- local pa11y artefacts (scripts/dev/pa11y-local.sh; CI uses Actions cache) ---
 .pa11yci
+.pa11yci.dark
 .pa11y-cache-manifest.json
 pa11y.json
 _data/pa11y-cache.json

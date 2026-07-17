@@ -42,7 +42,7 @@ short_name: "sebastienrousseau"
 subtitle: "How AI Transforms Consumer Interactions and Advertising Dynamics"
 tags: "AI, Advertising, Amazon, Meta, Chatbots, Marketing, Technology, Analytics, Digital, Optimization, ISO 20022, post-quantum cryptography"
 theme-color: "0, 67, 165"
-title: "Generative AI in Advertising: Amazon Rufus & Meta"
+title: "Generative AI in Advertising: Amazon Rufus and Meta"
 url: "https://sebastienrousseau.com/2024-02-08-revolutionising-advertising-how-ai-shapes-the-future/index.html"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 

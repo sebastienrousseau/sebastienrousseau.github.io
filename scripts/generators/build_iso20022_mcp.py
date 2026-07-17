@@ -178,11 +178,87 @@ AGENTS_SDK_PY = (
     ") as server:\n"
     "    ..."
 )
+# Codex CLI stdio shape: a [mcp_servers.<name>] table in ~/.codex/config.toml
+# with command/args keys. Verified against OpenAI's official Codex MCP docs
+# (developers.openai.com/codex/mcp) on 2026-07-16.
+CODEX_TOML = f'[mcp_servers.iso20022]\ncommand = "uvx"\nargs = [{UVX_ARGS}]'
 
 # Where the captured gateway tool schemas live. Recorded once from a running
 # server (tools/list over stdio JSON-RPC) and committed; the build renders
 # them verbatim, and skips the section gracefully when the file is absent.
 SCHEMAS_SRC = ROOT / "_data" / "mcp" / "tool_schemas.json"
+
+# Live-verified evidence data, committed next to the schema snapshot:
+# * hub_transcripts.json — prompt/result transcripts captured over stdio
+#   JSON-RPC (the proof blocks render the excerpts verbatim);
+# * verified_metrics.json — measured timings and adoption figures, each
+#   carrying its as-of date and collection method.
+# Same policy as the schema viewer: a missing file skips its section with
+# a stderr note instead of failing the build.
+TRANSCRIPTS_SRC = ROOT / "_data" / "mcp" / "hub_transcripts.json"
+METRICS_SRC = ROOT / "_data" / "mcp" / "verified_metrics.json"
+
+
+def _load_data(path: Path, what: str) -> dict | None:
+    """Read one committed evidence file, or None (with a stderr note)."""
+    if not path.is_file():
+        print(
+            f"build_iso20022_mcp: {path} missing; skipping {what}",
+            file=sys.stderr,
+        )
+        return None
+    return json.loads(path.read_text(encoding="utf-8"))
+
+
+def _tool_count() -> int | None:
+    """Suite-wide tool count, computed from the committed tools/list
+    captures (the gateway snapshot plus every per-server capture) so the
+    published figure can never drift from the evidence."""
+    if not SCHEMAS_SRC.is_file():
+        return None
+    total = len(json.loads(SCHEMAS_SRC.read_text(encoding="utf-8"))["tools"])
+    for f in sorted(SCHEMAS_SRC.parent.glob("*.tools.json")):
+        total += len(json.loads(f.read_text(encoding="utf-8"))["tools"])
+    return total
+
+
+# Audience lens tags per section id (PR #338 "Read as…" pattern, extended
+# to the hub). Every rendered section carries one of these so main.js can
+# reorder without ever hiding content; the hero header and the selector
+# itself stay untagged.
+ALL_AUD = "boards engineers regulators"
+AUDIENCES: dict[str, str] = {
+    "mcp-board": "boards",
+    "mcp-benefits": ALL_AUD,
+    "mcp-simulator": ALL_AUD,
+    "mcp-band-1": ALL_AUD,
+    "mcp-capability": ALL_AUD,
+    "mcp-what": ALL_AUD,
+    "mcp-arc": "engineers",
+    "mcp-flow": "boards regulators",
+    "mcp-security": "boards regulators",
+    "mcp-regulators": "regulators",
+    "mcp-band-2": ALL_AUD,
+    "mcp-proof": ALL_AUD,
+    "mcp-free": ALL_AUD,
+    "mcp-clients": "engineers",
+    "mcp-install": "engineers",
+    "mcp-start": "engineers",
+    "mcp-prompts": "boards",
+    "mcp-sandbox": "boards engineers",
+    "mcp-adoption": "boards regulators",
+    "mcp-schemas": "engineers regulators",
+    "mcp-safety": "boards regulators",
+}
+
+
+def _aud(html: str, section_id: str) -> str:
+    """Stamp a rendered block's first <section> tag with its audience lens
+    tags. Empty blocks (a skipped section) pass through untouched."""
+    if not html:
+        return html
+    tags = AUDIENCES[section_id]
+    return html.replace("<section", f'<section data-audience="{tags}"', 1)
 
 
 # --- Content (single source of copy) ----------------------------------------
@@ -477,8 +553,129 @@ C: dict = {
             },
         ],
     },
+    # For the board: the three questions a board asks, answered without
+    # figures we cannot source. Qualitative only, no invented savings.
+    "board": {
+        "eyebrow": "FOR THE BOARD",
+        "headline": "Three questions, answered up front.",
+        "lede": (
+            "What agentic payments cost, what they risk and what they "
+            "replace, before anyone books a meeting about it."
+        ),
+        "cards": [
+            {
+                "eyebrow": "WHAT IT COSTS",
+                "title": "Free. Apache-2.0.",
+                "body": (
+                    "No licence, no account, no procurement. The whole suite "
+                    "is open source on public PyPI, so adopting it is an "
+                    "engineering decision, not a contract negotiation."
+                ),
+            },
+            {
+                "eyebrow": "WHAT IT RISKS",
+                "title": "Money never moves without a human.",
+                "body": (
+                    "The servers generate and check messages; sending them "
+                    "stays behind your own approval wall, in your own "
+                    "systems. Every gateway tool is read-only and idempotent."
+                ),
+            },
+            {
+                "eyebrow": "WHAT IT REPLACES",
+                "title": "Bespoke ISO 20022 integration work.",
+                "body": (
+                    "The message generation, validation and reconciliation "
+                    "plumbing a team would otherwise build by hand against "
+                    "the schemas, maintained in the open instead."
+                ),
+            },
+        ],
+    },
+    # Capability contrast strip. Counts are computed at build time from the
+    # committed tools/list captures; the zero-network and coverage claims
+    # restate the verified security strip.
+    "capability": {
+        "eyebrow": "CAPABILITY, NOT BROCHURE",
+        "headline": "An MCP server that does the work, not just the docs.",
+        "lede": (
+            "Ask for a payment and get the validated message itself. These "
+            "servers generate, validate, parse, convert and reconcile ISO "
+            "20022 on your machine; they do not stop at telling you how."
+        ),
+        "foot": (
+            "Tool count computed at build time from the committed "
+            "tools/list captures in this site's repository, recorded over "
+            "stdio JSON-RPC from the running servers."
+        ),
+    },
+    # Regulators & compliance: every claim below restates a captured tool
+    # description (_data/mcp/camt053-mcp.tools.json, pacs008-mcp.tools.json)
+    # or a live session run on 2026-07-16. The DORA paragraph is careful
+    # control-mapping, never a certification claim.
+    "regulators": {
+        "eyebrow": "FOR REGULATORS AND COMPLIANCE",
+        "headline": "Evidence a supervisor can check.",
+        "lede": (
+            "Tools that cite their sources, dates they enforce, and "
+            "validation an auditor can rerun and get the same answer."
+        ),
+    },
+    "free": {
+        "eyebrow": "FREE, THREE WAYS",
+        "headline": "Free means free.",
+        "cards": [
+            {
+                "eyebrow": "BOARDS",
+                "title": "Free to adopt.",
+                "body": (
+                    "Nothing to procure: no licence, no contract, no vendor "
+                    "negotiation. Apache-2.0, tied to no balance sheet."
+                ),
+            },
+            {
+                "eyebrow": "ENGINEERS",
+                "title": "Free to run.",
+                "body": (
+                    "No account, no API key, no metering. One uvx command "
+                    "and the suite is running on your own machine."
+                ),
+            },
+            {
+                "eyebrow": "REGULATORS",
+                "title": "Free to audit.",
+                "body": (
+                    "Every line public on GitHub and PyPI. Read the exact "
+                    "code that validates the message before you rely on it."
+                ),
+            },
+        ],
+    },
+    "prompts": {
+        "eyebrow": "PASTE-AND-SEE",
+        "headline": "Three prompts, three receipts.",
+        "lede": (
+            "Each prompt is limited to what the suite actually does, and "
+            "each result excerpt is from a real tool session driven over "
+            "stdio JSON-RPC. Paste the prompt into any connected client; "
+            "the same ask becomes the same tool call."
+        ),
+    },
+    "sandbox": {
+        "eyebrow": "ZERO REAL DATA",
+        "headline": "Try it with zero real data.",
+    },
+    "proof": {
+        "eyebrow": "TIMED, NOT ESTIMATED",
+        "headline": "Under a minute, with a stopwatch on it.",
+    },
+    "adoption": {
+        "eyebrow": "ADOPTION, MEASURED",
+        "headline": "Real numbers, dated.",
+    },
     # Multi-client integration. Config shapes verified against each client's
-    # official documentation on 2026-07-15; see the docs page for sources.
+    # official documentation on 2026-07-15 (Codex CLI: 2026-07-16); see the
+    # docs page for sources.
     "clients": {
         "eyebrow": "WORKS WITH YOUR STACK",
         "headline": "Works with every MCP client.",
@@ -523,6 +720,15 @@ C: dict = {
                 "slug": "gemini",
                 "where": '"mcpServers" inside ~/.gemini/settings.json.',
                 "code": MCPSERVERS_JSON,
+            },
+            {
+                "name": "OpenAI Codex CLI",
+                "slug": "codex",
+                "where": (
+                    "~/.codex/config.toml, or one command: "
+                    "codex mcp add iso20022 -- uvx ..."
+                ),
+                "code": CODEX_TOML,
             },
         ],
         "remote": [
@@ -869,6 +1075,287 @@ def _security(d: dict) -> str:
     )
 
 
+def _read_as() -> str:
+    """The "Read as…" audience selector, mirroring the homepage control
+    (PR #338): ships [hidden] so a JS-off reader never sees an inert
+    widget; main.js reveals it and re-orders the [data-audience] sections.
+    A lens, not a filter — nothing is ever removed."""
+    buttons = "".join(
+        f'<button type="button" class="read-as-btn" data-read="{val}" '
+        f'aria-pressed="{"true" if val == "" else "false"}">{label}</button>'
+        for val, label in (
+            ("", "Everyone"),
+            ("boards", "Boards"),
+            ("engineers", "Engineers"),
+            ("regulators", "Regulators"),
+        )
+    )
+    return (
+        '<section class="read-as" data-announce="Now showing content for" '
+        'aria-labelledby="read-as-label" hidden>'
+        '<div class="read-as-inner">'
+        '<span class="read-as-label" id="read-as-label">Read as…</span>'
+        '<div class="read-as-group" role="group" '
+        'aria-label="Choose your reading lens">'
+        f"{buttons}</div></div>"
+        '<p class="visually-hidden" data-read-status role="status" '
+        'aria-live="polite"></p></section>'
+    )
+
+
+def _stat_cells(cells: list[tuple[str, str]]) -> str:
+    return "".join(
+        f'<div><p class="spk-num">{_esc(num)}</p>'
+        f'<p class="spk-lbl">{_esc(lbl)}</p></div>'
+        for num, lbl in cells
+    )
+
+
+def _capability(d: dict) -> str:
+    """Capability contrast strip: servers/tools counted from the committed
+    captures, plus the two verified posture claims. Skipped if the gateway
+    snapshot is absent (same policy as the schema viewer)."""
+    count = _tool_count()
+    if count is None:
+        print(
+            "build_iso20022_mcp: tool captures missing; skipping capability strip",
+            file=sys.stderr,
+        )
+        return ""
+    cells = _stat_cells(
+        [
+            ("9", "servers on PyPI"),
+            (str(count), "tools, captured live"),
+            ("0", "outbound network calls"),
+            ("100%", "branch coverage"),
+        ]
+    )
+    return (
+        '<section class="spk-band" id="mcp-capability"><div class="spk-wrap">'
+        + _head(d["eyebrow"], d["headline"], d["lede"])
+        + f'<div class="spk-stats mcp-cap-stats">{cells}</div>'
+        f'<p class="spk-stats-foot">{_rich(d["foot"])}</p>'
+        "</div></section>"
+    )
+
+
+def _regulators(d: dict) -> str:
+    """The regulators & compliance section. Four cards, each restating a
+    captured tool description, then the DORA note: control-mapping raw
+    material only, with the no-certification caveat stated outright."""
+    cards = [
+        (
+            "CITED, NOT ASSERTED",
+            "Rulebook clauses with sources.",
+            _mono("cite_rulebook") + " and " + _mono("list_rulebook_clauses")
+            + " return curated SEPA, CBPR+ and HVPS+ clauses, versioned, "
+            "each with its canonical source URL, so a compliance claim can "
+            "be traced to the official document.",
+        ),
+        (
+            "THE 2026 CUTOVER",
+            "November 2026, encoded.",
+            _mono("get_cbpr_cutover_date") + " returns 2026-11-16, and "
+            + _mono("check_cbpr_readiness")
+            + " audits a camt.053 statement against the CBPR+ acceptance "
+            "rules that take effect at the 14-16 November 2026 cutover, "
+            "structured postal addresses included.",
+        ),
+        (
+            "STRUCTURED ADDRESSES",
+            "The address cliff, tool by tool.",
+            _mono("classify_address") + ", " + _mono("validate_address")
+            + ", " + _mono("repair_address") + " and "
+            + _mono("validate_addresses")
+            + " classify, police and repair party addresses against the "
+            "14 November 2026 rule that rejects unstructured-only addresses.",
+        ),
+        (
+            "AUDIT EVIDENCE",
+            "Deterministic, offline validation.",
+            "Every generated message is checked against the bundled "
+            "official XSD on your machine: same input, same answer, no "
+            "network. A validation run can be reproduced by an auditor, "
+            "line for line.",
+        ),
+    ]
+    items = "".join(
+        '<div class="spk-path">'
+        f'<span class="spk-eyebrow">{_esc(eyebrow)}</span>'
+        f"<h3>{_esc(title)}</h3><p>{body}</p></div>"
+        for eyebrow, title, body in cards
+    )
+    dora = (
+        "<strong>A note on DORA.</strong> This suite is not certified "
+        "against DORA, and no such product certification exists. What the "
+        "architecture offers is raw material for your own control mapping: "
+        "local execution reduces reliance on external ICT providers for "
+        "message validation, deterministic offline validation produces "
+        "repeatable testing evidence, and open source means your auditors "
+        "can read every line they depend on. Whether these properties "
+        "satisfy your DORA obligations is your assessment to make."
+    )
+    return (
+        '<section id="mcp-regulators"><div class="spk-wrap">'
+        + _head(d["eyebrow"], d["headline"], d["lede"])
+        + f'<div class="spk-paths">{items}</div>'
+        f'<p class="mcp-note">{dora}</p></div></section>'
+    )
+
+
+def _free(d: dict) -> str:
+    """The free-three-ways strip: one cell per audience, reusing the
+    security-strip cell anatomy on a three-column grid."""
+    cells = "".join(
+        '<div class="mcp-sec-cell">'
+        f'<span class="spk-eyebrow">{_esc(it["eyebrow"])}</span>'
+        f'<h3>{_esc(it["title"])}</h3><p>{_rich(it["body"])}</p></div>'
+        for it in d["cards"]
+    )
+    return (
+        '<section class="spk-band" id="mcp-free"><div class="spk-wrap">'
+        + _head(d["eyebrow"], d["headline"])
+        + f'<div class="mcp-sec mcp-3col">{cells}</div></div></section>'
+    )
+
+
+def _proof(d: dict, metrics: dict | None) -> str:
+    """The timed proof: real measured numbers from verified_metrics.json,
+    published with machine, method and date. Skipped when unmeasured."""
+    if not metrics or "timed_proof" not in metrics:
+        print(
+            "build_iso20022_mcp: no timed_proof metrics; skipping proof strip",
+            file=sys.stderr,
+        )
+        return ""
+    tp = metrics["timed_proof"]
+    cold, warm = tp["cold_seconds"], tp["warm_seconds"]
+    lede = (
+        f"From a completely empty package cache to a schema-valid pain.001 "
+        f"in {cold} seconds, downloads included. We measured it, on "
+        f"{tp['date_human']}, instead of promising it."
+    )
+    cells = _stat_cells(
+        [
+            (f"{cold}s", "cold cache to validated pain.001"),
+            (f"{warm}s", "warm cache, same session"),
+            ("1", "call, first try"),
+            ("0", "accounts, keys or sign-ups"),
+        ]
+    )
+    foot = f"Method: {tp['method']} Machine: {tp['machine']}."
+    return (
+        '<section id="mcp-proof"><div class="spk-wrap">'
+        + _head(d["eyebrow"], d["headline"], lede)
+        + f'<div class="spk-stats">{cells}</div>'
+        f'<p class="spk-stats-foot">{_rich(foot)}</p>'
+        "</div></section>"
+    )
+
+
+def _prompts(d: dict, data: dict | None) -> str:
+    """Board-pasteable prompts, each backed by a committed transcript
+    captured over stdio JSON-RPC. The excerpt is rendered verbatim from
+    the capture file; nothing here is written by hand at build time."""
+    if not data or not data.get("prompts"):
+        print(
+            "build_iso20022_mcp: no hub transcripts; skipping prompts section",
+            file=sys.stderr,
+        )
+        return ""
+    captured = data.get("_meta", {}).get("captured", "")
+    blocks = []
+    for p in data["prompts"]:
+        pid = p["id"]
+        meta = (
+            f'{p["server"]} · tool: {p["tool"]} · stdio JSON-RPC · '
+            f"captured {captured}"
+        )
+        blocks.append(
+            '<article class="mcp-prompt">'
+            f'<span class="spk-eyebrow">{_esc(p["eyebrow"])}</span>'
+            f'<h3>{_esc(p["title"])}</h3>'
+            f'<p class="mcp-prompt-meta">{_esc(meta)}</p>'
+            '<p class="mcp-prompt-label">The prompt</p>'
+            + _code_block(p["prompt"], f"mcp-prompt-{pid}", copy=True)
+            + '<p class="mcp-prompt-label">What came back</p>'
+            + _code_block(p["excerpt"])
+            + f'<p class="mcp-prompt-note">{_rich(p["note"])}</p>'
+            "</article>"
+        )
+    return (
+        '<section id="mcp-prompts"><div class="spk-wrap">'
+        + _head(d["eyebrow"], d["headline"], d["lede"])
+        + f'<div class="mcp-prompts">{"".join(blocks)}</div>'
+        '<p class="mcp-clients-foot">Excerpts are drawn from the committed '
+        "capture file; elisions are marked with an ellipsis and nothing is "
+        "reworded.</p></div></section>"
+    )
+
+
+def _sandbox(d: dict) -> str:
+    """The zero-real-data card: names the three sandbox tools exactly as
+    captured in _data/mcp/reconcile-mcp.tools.json and points at the docs
+    reconciliation chapter."""
+    body = (
+        _mono("reconcile-mcp") + " ships deterministic sandbox fixtures: "
+        + _mono("list_sandbox_scenarios") + " shows the scenarios, "
+        + _mono("load_sandbox_scenario") + " opens one for inspection and "
+        + _mono("run_sandbox_scenario")
+        + " reconciles it in one call. Watch a full, explainable "
+        "reconciliation, exact matches, short payments, splits and "
+        "unmatched residuals, before any real statement touches the tools."
+    )
+    return (
+        '<section id="mcp-sandbox"><div class="spk-wrap">'
+        + _head(d["eyebrow"], d["headline"])
+        + f'<p class="mcp-note">{body}</p>'
+        '<div class="spk-cta-row mcp-start-cta">'
+        '<a href="/iso20022-mcp-docs/index.html#chapter-3" '
+        'class="spk-btn spk-btn-primary">Open the reconciliation chapter '
+        '<span class="spk-arw" aria-hidden="true">&#8594;</span></a>'
+        '<a href="/iso20022-mcp-reference/index.html#reconcile" '
+        'class="spk-btn spk-btn-ghost">reconcile-mcp tool reference</a>'
+        "</div></div></section>"
+    )
+
+
+def _adoption(d: dict, metrics: dict | None) -> str:
+    """Adoption signals: pypistats last-30-day downloads for the nine suite
+    packages and the live registry listing count, baked as static verified
+    figures with their as-of date."""
+    if not metrics or "adoption" not in metrics:
+        print(
+            "build_iso20022_mcp: no adoption metrics; skipping adoption strip",
+            file=sys.stderr,
+        )
+        return ""
+    ad = metrics["adoption"]
+    total = ad["suite_last_month_total"]
+    cells = _stat_cells(
+        [
+            (f"{total:,}", "downloads, last 30 days"),
+            (str(ad["registry_listed"]), "servers on the official registry"),
+            ("9", "of them are this suite"),
+        ]
+    )
+    foot = (
+        f"Downloads: pypistats.org last-30-day counts for the nine suite "
+        f"packages, summed, fetched {ad['date_human']}. Registry: live "
+        f"listing count for this account on "
+        f"registry.modelcontextprotocol.io, checked "
+        f"{ad['registry_checked_human']}. No projections, no all-time "
+        f"totals."
+    )
+    return (
+        '<section class="spk-band" id="mcp-adoption"><div class="spk-wrap">'
+        + _head(d["eyebrow"], d["headline"])
+        + f'<div class="spk-stats mcp-stats-3">{cells}</div>'
+        f'<p class="spk-stats-foot">{_rich(foot)}</p>'
+        "</div></section>"
+    )
+
+
 def _code_block(code: str, block_id: str = "", copy: bool = False) -> str:
     """A literal code block, plus an optional copy button riding main.js's
     site-wide [data-copy] delegate (no inline JS; CSP-safe)."""
@@ -1005,28 +1492,78 @@ def _schemas(d: dict) -> str:
     )
 
 
+def _simulator() -> str:
+    """Interactive simulator mount (progressive enhancement, mirroring the
+    index-scorecard pattern): an inert <iso20022-simulator> carrying a static
+    fallback paragraph, upgraded client-side by /_csp/iso20022-simulator.js.
+    Everything the component shows is baked into its data module from real
+    MCP stdio transcripts at authoring time (see assets/js/mcp-simulator/);
+    it makes no network calls, and postbuild stamps SRI on the module
+    script."""
+    fallback = (
+        "This interactive demo lets you pick a payment sentence and see the "
+        "exact MCP tool call an assistant makes, plus the validated ISO "
+        "20022 XML the gateway returned, captured live over stdio. Enable "
+        "JavaScript to explore the transcripts."
+    )
+    return (
+        '<section id="mcp-simulator-section"><div class="spk-wrap">'
+        + _head(
+            "SEE IT WORK",
+            "From a sentence to a validated message.",
+            "Pick a real payment sentence and watch it become an exact MCP "
+            "tool call and schema-valid ISO 20022 XML. Every transcript "
+            "shown was captured from a live server, not mocked.",
+        )
+        + '<div id="mcp-simulator-mount">'
+        "<iso20022-simulator>"
+        f'<p class="mcp-sim-fallback">{_esc(fallback)}</p>'
+        "</iso20022-simulator></div>"
+        '<script type="module" src="/_csp/iso20022-simulator.js"></script>'
+        "</div></section>"
+    )
+
+
 def _render_body(d: dict) -> str:
+    metrics = _load_data(METRICS_SRC, "verified-metrics sections")
+    transcripts = _load_data(TRANSCRIPTS_SRC, "prompts section")
     sections = [
         _hero(d),
-        _cards(d["benefits"], "mcp-benefits", bullets=False),
-        _imgband(
-            "majed-swan-RBEv0VyNi2U",
-            "A grid of blue and white cubes with one cube glowing, evoking a validated message among structured blocks.",
+        _read_as(),
+        _aud(_cards(d["board"], "mcp-board", bullets=False), "mcp-board"),
+        _aud(_cards(d["benefits"], "mcp-benefits", bullets=False), "mcp-benefits"),
+        _aud(_simulator(), "mcp-simulator"),
+        _aud(
+            _imgband(
+                "majed-swan-RBEv0VyNi2U",
+                "A grid of blue and white cubes with one cube glowing, evoking a validated message among structured blocks.",
+            ),
+            "mcp-band-1",
         ),
-        _cards(d["what"], "mcp-what", bullets=False),
-        _cards(d["arc"], "mcp-arc", bullets=True),
-        _flow(d["flow"]),
-        _security(d["security"]),
-        _imgband(
-            "ocean-ng-L0xOtAnv94Y",
-            "A minimalist wall clock, evoking payment operations measured in seconds.",
-            cls="mcp-band-img-tall",
+        _aud(_capability(d["capability"]), "mcp-capability"),
+        _aud(_cards(d["what"], "mcp-what", bullets=False), "mcp-what"),
+        _aud(_cards(d["arc"], "mcp-arc", bullets=True), "mcp-arc"),
+        _aud(_flow(d["flow"]), "mcp-flow"),
+        _aud(_security(d["security"]), "mcp-security"),
+        _aud(_regulators(d["regulators"]), "mcp-regulators"),
+        _aud(
+            _imgband(
+                "ocean-ng-L0xOtAnv94Y",
+                "A minimalist wall clock, evoking payment operations measured in seconds.",
+                cls="mcp-band-img-tall",
+            ),
+            "mcp-band-2",
         ),
-        _clients(d["clients"]),
-        _install_tabs(d["install"]),
-        _start(),
-        _schemas(d["schemas"]),
-        _cards(d["safety"], "mcp-safety", bullets=False),
+        _aud(_proof(d["proof"], metrics), "mcp-proof"),
+        _aud(_free(d["free"]), "mcp-free"),
+        _aud(_clients(d["clients"]), "mcp-clients"),
+        _aud(_install_tabs(d["install"]), "mcp-install"),
+        _aud(_start(), "mcp-start"),
+        _aud(_prompts(d["prompts"], transcripts), "mcp-prompts"),
+        _aud(_sandbox(d["sandbox"]), "mcp-sandbox"),
+        _aud(_adoption(d["adoption"], metrics), "mcp-adoption"),
+        _aud(_schemas(d["schemas"]), "mcp-schemas"),
+        _aud(_cards(d["safety"], "mcp-safety", bullets=False), "mcp-safety"),
     ]
     return (
         '<div class="speaking-page iso20022-mcp-page">' + "".join(sections) + "</div>"

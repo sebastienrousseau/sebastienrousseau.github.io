@@ -56,9 +56,9 @@
 // or fetch failure it falls back to this set so the Worker keeps routing
 // even when the binding is misconfigured. Hydrated once per isolate.
 export const ACTIVE_LANGS_FALLBACK = new Set([
-  'ar', 'bn', 'cs', 'de', 'es', 'fil', 'fr', 'ha', 'he', 'hi', 'hu', 'id',
-  'it', 'ja', 'ko', 'nl', 'pl', 'pt-br', 'ro', 'ru', 'sv', 'th', 'tr',
-  'uk', 'vi', 'yo', 'zh-hans', 'zh-hant',
+  'ar', 'bn', 'cs', 'de', 'el', 'es', 'fa', 'fil', 'fr', 'ha', 'he', 'hi',
+  'hu', 'id', 'it', 'ja', 'ko', 'mr', 'ms', 'nl', 'pl', 'pt-br', 'ro', 'ru',
+  'sv', 'ta', 'te', 'th', 'tr', 'uk', 'vi', 'yo', 'zh-hans', 'zh-hant',
 ]);
 // Backwards-compatible export — tests and any external caller import this
 // name. Always equals the in-code fallback; the runtime lookup uses

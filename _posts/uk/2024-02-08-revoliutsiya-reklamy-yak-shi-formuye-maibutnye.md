@@ -39,7 +39,7 @@ short_name: "sebastienrousseau"
 subtitle: "Як AI Трансформує Взаємодію зі Споживачами та Динаміку Реклами"
 tags: "AI, Реклама, Amazon, Meta, Чат-боти, Маркетинг, Технології, Analitics, Цифровий, Оптимізація, ISO 20022, постквантова криптографія"
 theme-color: "0, 67, 165"
-title: "Генеративний AI у рекламі: Amazon Rufus & Meta"
+title: "Генеративний AI у рекламі: Amazon Rufus та Meta"
 url: "https://sebastienrousseau.com/2024-02-08-revolutionising-advertising-how-ai-shapes-the-future/index.html"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 

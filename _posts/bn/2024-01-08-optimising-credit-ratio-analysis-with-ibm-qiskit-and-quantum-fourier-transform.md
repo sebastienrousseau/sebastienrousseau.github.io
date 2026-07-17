@@ -51,7 +51,7 @@ news_image_loc: "https://cloudcdn.pro/stocks/images/quantum-computer-room.webp"
 news_loc: "https://sebastienrousseau.com/2024-01-08-optimising-credit-ratio-analysis-with-ibm-qiskit-and-quantum-fourier-transform/index.html"
 news_publication_date: "Mon, 08 Jan 2024 05:06:06 +0000"
 news_publication_name: "sebastienrousseau.com"
-news_title: "Qiskit & Quantum Fourier Transform for Credit Ratio Analysis"
+news_title: "Qiskit এবং Quantum Fourier Transform for Credit Ratio Analysis"
 
 # RSS - The RSS feed front matter (YAML).
 atom_link: "https://sebastienrousseau.com/2024-01-08-optimising-credit-ratio-analysis-with-ibm-qiskit-and-quantum-fourier-transform/rss.xml"

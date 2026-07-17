@@ -1102,18 +1102,38 @@
         .ap-nav .wrap{grid-template-columns:auto 1fr auto}
         .ap-menu{display:none}
         .ap-burger{display:inline-flex;align-items:center;justify-content:center;cursor:pointer;font-size:18px;color:var(--ink);width:44px;height:44px;user-select:none}
-        .ap-nav:has(.ap-toggle:checked) .ap-menu{display:flex;flex-direction:column;position:absolute;top:var(--nav-h);left:0;right:0;background:var(--bg);padding:18px 22px;gap:14px;border-bottom:1px solid var(--border);justify-content:flex-start;text-align:center;z-index:99}
+        /* Open state: tint the burger so the toggle reads as active. */
+        .ap-nav:has(.ap-toggle:checked) .ap-burger{color:var(--accent)}
         /* Burger view: sub-menus render as always-visible nested groups.
            width:100% neutralises the desktop justify-self:center, which
            otherwise shrink-wraps the open panel to a centred strip and
-           lets the hero glyphs show at its flanks (pre-existing quirk,
-           made prominent by the taller dropdown menu). */
-        .ap-nav:has(.ap-toggle:checked) .ap-menu{width:100%}
+           lets the hero glyphs show at its flanks. The panel is capped to
+           the space under the sticky bar and scrolls internally: it is
+           absolutely positioned inside position:sticky .ap-nav, so page
+           scroll can never reveal its overflow (items below the fold were
+           unreachable on short viewports before this cap). */
+        .ap-nav:has(.ap-toggle:checked) .ap-menu{display:flex;flex-direction:column;position:absolute;top:var(--nav-h);left:0;right:0;width:100%;background:var(--bg);padding:10px 22px calc(16px + env(safe-area-inset-bottom,0px));gap:0;border-bottom:1px solid var(--border);justify-content:flex-start;text-align:center;z-index:99;max-height:calc(100vh - var(--nav-h));max-height:calc(100dvh - var(--nav-h));overflow-y:auto;overscroll-behavior:contain}
+        /* Group hierarchy: top-level rows read as section heads (larger,
+           heavier), hairline-separated; every row is a >=44px tap target
+           (WCAG 2.5.5). Sub-links stay --ink-mute on --bg: 7.99:1 light /
+           9.75:1 dark, AAA. */
+        .ap-menu > li{padding-block:4px}
+        .ap-menu > li + li{border-top:1px solid var(--border)}
+        .ap-menu > li > a{display:flex;align-items:center;justify-content:center;min-height:44px;font-size:14px;font-weight:600}
         .ap-menu .has-sub{position:static;display:block}
         .ap-menu .has-sub::after{display:none}
         .ap-menu .ap-sub-toggle{display:none}
-        .ap-menu .ap-sub{position:static;transform:none;opacity:1;visibility:visible;min-width:0;border:0;border-radius:0;box-shadow:none;background:transparent;padding:8px 0 0;display:grid;gap:12px;transition:none}
-        .ap-menu .ap-sub a{padding:2px 0;text-align:center;color:var(--ink-mute)}
+        .ap-menu .ap-sub{position:static;transform:none;opacity:1;visibility:visible;min-width:0;border:0;border-radius:0;box-shadow:none;background:transparent;padding:0 0 4px;display:grid;gap:0;transition:none}
+        .ap-menu .ap-sub a{display:flex;align-items:center;justify-content:center;min-height:44px;padding:0;text-align:center;color:var(--ink-mute)}
+      }
+      /* Tight phones (<=374px): the header row (brand + theme + search +
+         CTA pill + burger) no longer fits at the desktop paddings. Keep
+         every control: tighten the shell gaps and the nav pill only, and
+         stop the SR brand mark from wrapping into a vertical stack. */
+      .ap-brand{white-space:nowrap}
+      @media (max-width:374px){
+        .ap-nav .wrap{gap:10px;padding:0 14px}
+        .ap-nav .ap-cta-mini{padding:10px 10px}
       }
       /* Tight phones: hide the language switcher chip from the header to
          declutter the row. The 27-locale menu is large; visitors can

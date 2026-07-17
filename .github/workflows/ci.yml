@@ -6,6 +6,17 @@ on:
   pull_request:
     branches: [main]
   workflow_dispatch:
+    inputs:
+      refresh-baselines:
+        description: >-
+          Visual regression: skip the pixel compare and upload freshly
+          runner-rendered screenshots as the `visual-baselines-refresh`
+          artifact. Download it and commit the PNGs to
+          .github/ci-tools/visual/baseline/ in a PR — baselines are
+          NEVER auto-pushed.
+        type: boolean
+        required: false
+        default: false
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -216,18 +227,25 @@ jobs:
           path: |
             public
             .pa11yci
+            .pa11yci.dark
             .pa11y-cache-manifest.json
             _data/pa11y-cache.json
           retention-days: 1
           include-hidden-files: true
 
   # =========================================================================
-  # Stage 2 — fan out pa11y across 4 parallel runners. Each shard takes 1/4
-  # of the delta URLs, runs pa11y, uploads its JSON result. Skipped entirely
-  # when the partition step reported a full cache hit.
+  # Stage 2 — fan out pa11y across 5 parallel runners. Shards 1-4 each take
+  # 1/4 of the delta URLs in the default (light) rendering; the `dark` shard
+  # re-audits the fixed representative subset from .pa11yci.dark with the
+  # site's dark theme forced via pa11y actions (click .theme-toggle, wait
+  # for html[data-theme="dark"]) — see the Dark-mode sweep block in
+  # scripts/seo_and_audit/pa11y_cache.py. ~7 URLs, ~2 min: it runs in
+  # parallel with the light shards, so the 40-min wall time is unchanged.
+  # Skipped entirely (dark included) when the partition step reported a
+  # full cache hit: no page changed, so dark rendering cannot have changed.
   # =========================================================================
   pa11y:
-    name: pa11y shard ${{ matrix.shard }}/4
+    name: pa11y shard ${{ matrix.shard }}
     needs: build
     if: needs.build.outputs.pa11y-needed == 'true'
     runs-on: ubuntu-latest
@@ -238,11 +256,11 @@ jobs:
     timeout-minutes: 50
     strategy:
       # Keep all shards going even if one fails, so a single bad URL doesn't
-      # mask issues on the other three. We still aggregate exit codes in the
+      # mask issues on the other four. We still aggregate exit codes in the
       # finalise job.
       fail-fast: false
       matrix:
-        shard: [1, 2, 3, 4]
+        shard: [1, 2, 3, 4, dark]
     steps:
       - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7
 
@@ -281,21 +299,32 @@ jobs:
           sleep 2
 
       - name: Filter .pa11yci to shard ${{ matrix.shard }}
-        # Round-robin partition: URL i goes to shard (i % 4) + 1. Stable
-        # across runs so cache + manifest stay coherent; balanced because
-        # URLs are sorted by relpath and locale/article counts are even.
+        # Light shards: round-robin partition — URL i goes to shard
+        # (i % 4) + 1. Stable across runs so cache + manifest stay
+        # coherent; balanced because URLs are sorted by relpath and
+        # locale/article counts are even. Dark shard: the pre-built
+        # .pa11yci.dark subset is used verbatim (theme-flip actions are
+        # baked into its URL entries).
+        env:
+          SHARD: ${{ matrix.shard }}
         run: |
           python3 - <<'PY'
-          import json
-          shard = ${{ matrix.shard }}
-          total = 4
-          with open(".pa11yci") as f:
-              cfg = json.load(f)
-          all_urls = cfg["urls"]
-          cfg["urls"] = [u for i, u in enumerate(all_urls) if (i % total) == (shard - 1)]
-          with open(".pa11yci.shard", "w") as f:
-              json.dump(cfg, f, indent=2)
-          print(f"shard {shard}/{total}: {len(cfg['urls'])} of {len(all_urls)} URLs")
+          import json, os, shutil
+          shard = os.environ["SHARD"]
+          if shard == "dark":
+              shutil.copyfile(".pa11yci.dark", ".pa11yci.shard")
+              with open(".pa11yci.shard") as f:
+                  n = len(json.load(f)["urls"])
+              print(f"dark shard: {n} representative URLs (theme forced dark)")
+          else:
+              shard_n, total = int(shard), 4
+              with open(".pa11yci") as f:
+                  cfg = json.load(f)
+              all_urls = cfg["urls"]
+              cfg["urls"] = [u for i, u in enumerate(all_urls) if (i % total) == (shard_n - 1)]
+              with open(".pa11yci.shard", "w") as f:
+                  json.dump(cfg, f, indent=2)
+              print(f"shard {shard_n}/{total}: {len(cfg['urls'])} of {len(all_urls)} URLs")
           PY
 
       - name: Run pa11y-ci on this shard
@@ -325,6 +354,84 @@ jobs:
           name: pa11y-shard-${{ matrix.shard }}
           path: pa11y.shard.json
           retention-days: 1
+
+  # =========================================================================
+  # Stage 2b — visual regression. Screenshots six key pages (home, hub,
+  # docs, trust, papers→research, speaking) at 1440px in forced-light
+  # rendering via .github/ci-tools/visual/visual.mjs (puppeteer-core over
+  # the runner's system Chrome; hash-pinned npm ci) and pixelmatch-compares
+  # them against the committed baselines, failing above a 1% changed-pixel
+  # ratio per page. Hermetic: all non-local requests are blocked, so CDN
+  # availability can never flip the verdict. Runs in parallel with the
+  # pa11y shards — ~4 min, no wall-time impact.
+  #
+  # Baseline maintenance: baselines are renderer-specific (font
+  # rasterisation differs between macOS and the Linux runner). If this job
+  # fails with low-level noise across whole pages while a local
+  # `node .github/ci-tools/visual/visual.mjs shoot|compare` run is clean,
+  # or after a DELIBERATE design change: dispatch this workflow with
+  # refresh-baselines=true, download the `visual-baselines-refresh`
+  # artifact, and commit its PNGs to .github/ci-tools/visual/baseline/ in
+  # a reviewed PR. Baselines are never pushed automatically.
+  # =========================================================================
+  visual:
+    name: Visual regression (6 pages, 1440 light)
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7
+
+      - name: Setup Node
+        uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e # v6
+        with:
+          node-version: "22"
+
+      - name: Install visual tooling (hash-pinned)
+        run: npm ci --prefix .github/ci-tools/visual
+
+      - name: Download build artifact
+        uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8
+        with:
+          name: build-output
+
+      - name: Serve public/
+        run: |
+          python3 -m http.server 8200 --directory public --bind 127.0.0.1 &
+          sleep 2
+
+      - name: Screenshot key pages
+        run: |
+          node .github/ci-tools/visual/visual.mjs shoot \
+            --base http://127.0.0.1:8200 \
+            --out visual-current
+
+      - name: Upload refreshed baselines (refresh-baselines dispatch only)
+        if: github.event_name == 'workflow_dispatch' && inputs.refresh-baselines
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
+        with:
+          name: visual-baselines-refresh
+          path: visual-current/
+          retention-days: 7
+
+      - name: Compare against committed baselines
+        if: ${{ !(github.event_name == 'workflow_dispatch' && inputs.refresh-baselines) }}
+        run: |
+          node .github/ci-tools/visual/visual.mjs compare \
+            --baseline .github/ci-tools/visual/baseline \
+            --current visual-current \
+            --diff visual-diffs \
+            --max-diff-ratio 0.01
+
+      - name: Upload diff artifacts on failure
+        if: failure()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
+        with:
+          name: visual-diff
+          path: |
+            visual-current/
+            visual-diffs/
+          retention-days: 7
 
   # =========================================================================
   # Stage 3 — merge pa11y shard results, run Lighthouse, update the cache,

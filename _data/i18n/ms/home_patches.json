@@ -170,11 +170,11 @@
     ],
     [
       "href=\"?/papers/index\\.html\"?>Read the paper</a>",
-      "href=\"/ms/publications/index.html\">Baca kertas itu</a>"
+      "href=\"/ms/papers/index.html\">Baca kertas itu</a>"
     ],
     [
       "href=\"?/2026-05-15[^\"]*\"?>Read the article</a>",
-      "href=\"/ms/2026-05-15-rendement-cache-decryptage-depots-blackrock-brsrv-bstbl-genius-act/index.html\">Baca artikel</a>"
+      "href=\"/ms/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf/index.html\">Baca artikel</a>"
     ],
     [
       "<h2 class=ap-foot-title>Writing</h2>",
@@ -190,15 +190,15 @@
     ],
     [
       "<a href=/about/index\\.html>About</a>",
-      "<a href=/ms/a-propos/index.html>Perihal</a>"
+      "<a href=/ms/about/index.html>Perihal</a>"
     ],
     [
       "<a href=/papers/index\\.html>Papers</a>",
-      "<a href=/ms/publications/index.html>Penerbitan</a>"
+      "<a href=/ms/papers/index.html>Penerbitan</a>"
     ],
     [
       "<a href=/projects/index\\.html>Projects</a>",
-      "<a href=/ms/projets/index.html>Projek</a>"
+      "<a href=/ms/projects/index.html>Projek</a>"
     ],
     [
       "<a href=/playlists/index\\.html>Playlists</a>",
@@ -210,7 +210,7 @@
     ],
     [
       "<a href=/tags/index\\.html>Tags</a>",
-      "<a href=/ms/etiquettes/index.html>Tag</a>"
+      "<a href=/ms/tags/index.html>Tag</a>"
     ],
     [
       "<a href=/articles/index\\.html>Articles</a>",
@@ -218,19 +218,19 @@
     ],
     [
       "<a href=/made-with-static-site-generator/index\\.html>Made with Static Site Generator</a>",
-      "<a href=/ms/concu-avec-static-site-generator/index.html>Dibuat dengan Static Site Generator</a>"
+      "<a href=/ms/made-with-static-site-generator/index.html>Dibuat dengan Static Site Generator</a>"
     ],
     [
       "<a href=/accessibility/index\\.html>Accessibility</a>",
-      "<a href=/ms/accessibilite/index.html>Kebolehcapaian</a>"
+      "<a href=/ms/accessibility/index.html>Kebolehcapaian</a>"
     ],
     [
       "<a href=/privacy/index\\.html>Privacy</a>",
-      "<a href=/ms/confidentialite/index.html>Privasi</a>"
+      "<a href=/ms/privacy/index.html>Privasi</a>"
     ],
     [
       "<a href=/terms/index\\.html>Terms</a>",
-      "<a href=/ms/conditions/index.html>Terma</a>"
+      "<a href=/ms/terms/index.html>Terma</a>"
     ],
     [
       ">Experience<",

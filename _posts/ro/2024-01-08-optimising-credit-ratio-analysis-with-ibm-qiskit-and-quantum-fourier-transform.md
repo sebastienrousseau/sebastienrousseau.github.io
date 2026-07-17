@@ -39,7 +39,7 @@ short_name: "sebastienrousseau"
 subtitle: "Optimizarea Analizei Ratelor de Credit cu IBM Qiskit și Transformata Fourier Cuantică"
 tags: "Qiskit, calcul cuantic, Credit Analysis, FinTech, QFT, Risk Management, Finance, Data Science, Algorithm, Quantum Technology, ISO 20022, criptografie post-cuantică, AI, open source"
 theme-color: "0, 67, 165"
-title: "Qiskit & Transformata Fourier Cuantică pentru analiza indicelui de credit"
+title: "Qiskit și Transformata Fourier Cuantică pentru analiza indicelui de credit"
 url: "https://sebastienrousseau.com/2024-01-08-optimising-credit-ratio-analysis-with-ibm-qiskit-and-quantum-fourier-transform/index.html"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
@@ -51,7 +51,7 @@ news_image_loc: "https://cloudcdn.pro/stocks/images/quantum-computer-room.webp"
 news_loc: "https://sebastienrousseau.com/2024-01-08-optimising-credit-ratio-analysis-with-ibm-qiskit-and-quantum-fourier-transform/index.html"
 news_publication_date: "Mon, 08 Jan 2024 05:06:06 +0000"
 news_publication_name: "sebastienrousseau.com"
-news_title: "Qiskit & Quantum Fourier Transform for Credit Ratio Analysis"
+news_title: "Qiskit și Quantum Fourier Transform for Credit Ratio Analysis"
 
 # RSS - The RSS feed front matter (YAML).
 atom_link: "https://sebastienrousseau.com/2024-01-08-optimising-credit-ratio-analysis-with-ibm-qiskit-and-quantum-fourier-transform/rss.xml"
@@ -62,7 +62,7 @@ item_description: "Explorați cum IBM Qiskit și Transformata Fourier Cuantică 
 item_guid: "https://sebastienrousseau.com/2024-01-08-optimising-credit-ratio-analysis-with-ibm-qiskit-and-quantum-fourier-transform/rss.xml"
 item_link: "https://sebastienrousseau.com/2024-01-08-optimising-credit-ratio-analysis-with-ibm-qiskit-and-quantum-fourier-transform/rss.xml"
 item_pub_date: "Mon, 08 Jan 2024 05:06:06 +0000"
-item_title: "Qiskit & Transformata Fourier Cuantică pentru analiza indicelui de credit"
+item_title: "Qiskit și Transformata Fourier Cuantică pentru analiza indicelui de credit"
 last_build_date: "Mon, 08 Jan 2024 05:06:06 +0000"
 managing_editor: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 pub_date: "Mon, 08 Jan 2024 05:06:06 +0000"
@@ -89,7 +89,7 @@ twitter_description: "Explorați cum IBM Qiskit și Transformata Fourier Cuantic
 twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 twitter_image_alt: "Logo pentru Sebastien Rousseau"
 twitter_site: "@wwdseb"
-twitter_title: "Qiskit & Transformata Fourier Cuantică pentru analiza indicelui de credit"
+twitter_title: "Qiskit și Transformata Fourier Cuantică pentru analiza indicelui de credit"
 twitter_url: "https://sebastienrousseau.com/2024-01-08-optimising-credit-ratio-analysis-with-ibm-qiskit-and-quantum-fourier-transform/index.html"
 
 # Humans.txt - The Humans.txt front matter (YAML).

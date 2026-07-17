@@ -149,6 +149,26 @@ def _describe(issue: dict) -> str:
     return f"[{code}] {msg}"
 
 
+def _retry_entry(url: str) -> str | dict:
+    """Translate the ``#dark`` marker back into the dark-theme settings.
+
+    Dark-shard URLs carry a ``#dark`` fragment (see the Dark-mode sweep
+    block in ``pa11y_cache.py``) and were originally audited with
+    Chrome forced to prefers-color-scheme:dark plus a theme assertion
+    action. A bare-string retry would silently re-audit them in light
+    mode and could mask a dark-only violation, so the marker is
+    round-tripped into the same launch args + actions."""
+    if not url.endswith("#dark"):
+        return url
+    from pa11y_cache import DARK_CHROME_ARGS, DARK_THEME_ACTIONS
+
+    return {
+        "url": url,
+        "actions": list(DARK_THEME_ACTIONS),
+        "chromeLaunchConfig": {"args": list(DARK_CHROME_ARGS)},
+    }
+
+
 def _retry_urls(urls: list[str]) -> int:
     """Re-run pa11y-ci against just the supplied URLs with a generous
     wait. Returns the pa11y-ci exit code."""
@@ -165,7 +185,7 @@ def _retry_urls(urls: list[str]) -> int:
                 "args": ["--no-sandbox", "--disable-setuid-sandbox"],
             },
         },
-        "urls": urls,
+        "urls": [_retry_entry(u) for u in urls],
     }
 
     with tempfile.NamedTemporaryFile(

@@ -45,10 +45,10 @@ class TestLanguagesTable:
             assert lg is not None, f"{code} missing"
             assert lg.rtl is True, f"{code} should carry rtl=True"
 
-    def test_planned_locales_registered_inactive(self) -> None:
-        # issue #360 (28 → 35): the still-dormant locales ship as
-        # active=False until their content backfill lands. fa is RTL.
-        # hu activated once its 92-article corpus + glossary shipped.
+    def test_issue_360_locales_active(self) -> None:
+        # issue #360 (28 → 35): each locale flipped active=True once its
+        # 92-article corpus + _data/i18n/<code>/ glossary shipped
+        # (hu in #367, the remaining six in the final tranche). fa is RTL.
         expected = {
             "fa": ("fa-IR", "fa_IR", True),
             "mr": ("mr-IN", "mr_IN", False),
@@ -56,23 +56,22 @@ class TestLanguagesTable:
             "te": ("te-IN", "te_IN", False),
             "ms": ("ms-MY", "ms_MY", False),
             "el": ("el-GR", "el_GR", False),
+            "hu": ("hu-HU", "hu_HU", False),
         }
         by_code = {lg.code: lg for lg in lr.LANGUAGES}
+        active_codes = {lg.code for lg in lr.active()}
         for code, (bcp47, og_locale, rtl) in expected.items():
             lg = by_code.get(code)
             assert lg is not None, f"{code} missing from LANGUAGES"
-            assert lg.active is False, f"{code} should be active=False until backfill"
+            assert lg.active is True, f"{code} should be active=True post-backfill"
             assert lg.bcp47 == bcp47
             assert lg.og_locale == og_locale
             assert lg.rtl is rtl
-        # They must not leak into the active() set yet.
-        assert not (set(expected) & {lg.code for lg in lr.active()})
+            assert code in active_codes
 
-    def test_hu_active(self) -> None:
-        # hu was activated in the #360 content-backfill tranche.
-        hu = next((lg for lg in lr.LANGUAGES if lg.code == "hu"), None)
-        assert hu is not None and hu.active is True
-        assert hu.code in {lg.code for lg in lr.active()}
+    def test_active_count_is_35(self) -> None:
+        # 35 live locales: EN + 34 translations (issue #360 complete).
+        assert len(lr.active()) == 35
 
     def test_codes_are_unique(self) -> None:
         codes = [lg.code for lg in lr.LANGUAGES]

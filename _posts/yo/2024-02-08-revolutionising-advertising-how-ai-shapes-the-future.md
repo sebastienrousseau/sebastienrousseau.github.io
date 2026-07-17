@@ -39,7 +39,7 @@ short_name: "sebastienrousseau"
 subtitle: "Bii AI Ṣe N Yipada Ajọṣepọ Onibara ati Agbara Ipolowo"
 tags: "AI, Advertising, Amazon, Meta, Chatbots, Marketing, Technology, Analytics, Digital, Optimization, ISO 20022, ìsirò ìpamọ́ lẹ́yìn quantum"
 theme-color: "0, 67, 165"
-title: "Generative AI nínú Ìpolówó Ọjà: Amazon Rufus & Meta"
+title: "Generative AI nínú Ìpolówó Ọjà: Amazon Rufus àti Meta"
 url: "https://sebastienrousseau.com/2024-02-08-revolutionising-advertising-how-ai-shapes-the-future/index.html"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 

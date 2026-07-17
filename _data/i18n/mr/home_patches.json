@@ -170,11 +170,11 @@
     ],
     [
       "href=\"?/papers/index\\.html\"?>Read the paper</a>",
-      "href=\"/mr/publications/index.html\">श्वेतपत्र वाचा</a>"
+      "href=\"/mr/papers/index.html\">श्वेतपत्र वाचा</a>"
     ],
     [
       "href=\"?/2026-05-15[^\"]*\"?>Read the article</a>",
-      "href=\"/mr/2026-05-15-rendement-cache-decryptage-depots-blackrock-brsrv-bstbl-genius-act/index.html\">लेख वाचा</a>"
+      "href=\"/mr/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf/index.html\">लेख वाचा</a>"
     ],
     [
       "<h2 class=ap-foot-title>Writing</h2>",
@@ -190,15 +190,15 @@
     ],
     [
       "<a href=/about/index\\.html>About</a>",
-      "<a href=/mr/a-propos/index.html>विषयी</a>"
+      "<a href=/mr/about/index.html>विषयी</a>"
     ],
     [
       "<a href=/papers/index\\.html>Papers</a>",
-      "<a href=/mr/publications/index.html>प्रकाशने</a>"
+      "<a href=/mr/papers/index.html>प्रकाशने</a>"
     ],
     [
       "<a href=/projects/index\\.html>Projects</a>",
-      "<a href=/mr/projets/index.html>प्रकल्प</a>"
+      "<a href=/mr/projects/index.html>प्रकल्प</a>"
     ],
     [
       "<a href=/playlists/index\\.html>Playlists</a>",
@@ -210,7 +210,7 @@
     ],
     [
       "<a href=/tags/index\\.html>Tags</a>",
-      "<a href=/mr/etiquettes/index.html>टॅग्ज</a>"
+      "<a href=/mr/tags/index.html>टॅग्ज</a>"
     ],
     [
       "<a href=/articles/index\\.html>Articles</a>",
@@ -218,19 +218,19 @@
     ],
     [
       "<a href=/made-with-static-site-generator/index\\.html>Made with Static Site Generator</a>",
-      "<a href=/mr/concu-avec-static-site-generator/index.html>Static Site Generator ने बनवलेले</a>"
+      "<a href=/mr/made-with-static-site-generator/index.html>Static Site Generator ने बनवलेले</a>"
     ],
     [
       "<a href=/accessibility/index\\.html>Accessibility</a>",
-      "<a href=/mr/accessibilite/index.html>प्रवेशयोग्यता</a>"
+      "<a href=/mr/accessibility/index.html>प्रवेशयोग्यता</a>"
     ],
     [
       "<a href=/privacy/index\\.html>Privacy</a>",
-      "<a href=/mr/confidentialite/index.html>गोपनीयता</a>"
+      "<a href=/mr/privacy/index.html>गोपनीयता</a>"
     ],
     [
       "<a href=/terms/index\\.html>Terms</a>",
-      "<a href=/mr/conditions/index.html>अटी</a>"
+      "<a href=/mr/terms/index.html>अटी</a>"
     ],
     [
       ">Experience<",

@@ -91,6 +91,20 @@ if [[ -d assets/js/index-scorecard ]]; then
   cp -f assets/js/index-scorecard/index-scorecard.js public/_csp/index-scorecard.js
 fi
 
+# Interactive <iso20022-simulator> web component for /iso20022-mcp/ — same
+# staging pattern as index-scorecard above: component + pure core + the baked
+# MCP transcript data module land in public/_csp/ before postbuild so the
+# asset pipeline minifies them and fix_sri stamps integrity on the module
+# <script> the hub generator emits. The data module is real captured
+# tools/call transcripts (see the file header for capture date + servers);
+# the component performs no network calls, so no CSP change is required.
+if [[ -d assets/js/mcp-simulator ]]; then
+  mkdir -p public/_csp
+  cp -f assets/js/mcp-simulator/iso20022-simulator-core.js public/_csp/iso20022-simulator-core.js
+  cp -f assets/js/mcp-simulator/iso20022-simulator-data.js public/_csp/iso20022-simulator-data.js
+  cp -f assets/js/mcp-simulator/iso20022-simulator.js public/_csp/iso20022-simulator.js
+fi
+
 # Mirror .well-known/ into the build output so the OpenPGP Web Key
 # Directory (WKD) endpoint is served at
 #   https://sebastienrousseau.com/.well-known/openpgpkey/hu/<hash>
@@ -370,6 +384,19 @@ if command -v node >/dev/null 2>&1; then
     --test-coverage-functions=100 \
     --test-coverage-include='assets/js/index-scorecard/scoring.js' \
     tests/unit/index-scorecard/scoring.test.mjs
+  # iso20022-simulator core + baked capture data — the pure logic behind the
+  # /iso20022-mcp/ interactive simulator, imported unchanged by the browser
+  # component. Golden-file pinned + gated at 100/100/100 so neither the
+  # captured transcripts nor their sentence-to-XML mappings can silently
+  # drift from what the live servers actually returned.
+  node --test \
+    --experimental-test-coverage \
+    --test-coverage-lines=100 \
+    --test-coverage-branches=100 \
+    --test-coverage-functions=100 \
+    --test-coverage-include='assets/js/mcp-simulator/iso20022-simulator-core.js' \
+    --test-coverage-include='assets/js/mcp-simulator/iso20022-simulator-data.js' \
+    tests/unit/mcp-simulator/simulator-core.test.mjs
 fi
 
 # Deployment is the public/ Pages artifact uploaded by CI

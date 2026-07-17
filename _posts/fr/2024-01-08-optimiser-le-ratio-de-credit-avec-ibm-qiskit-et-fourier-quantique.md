@@ -1,5 +1,5 @@
 ---
-title: "Qiskit & transformée de Fourier quantique pour l'analyse de ratios de crédit"
+title: "Qiskit et transformée de Fourier quantique pour l'analyse de ratios de crédit"
 subtitle: "Optimiser l'analyse de ratios de crédit avec IBM Qiskit et la transformée de Fourier quantique"
 description: "Comment IBM Qiskit et la transformée de Fourier quantique révolutionnent l'analyse de ratios de crédit en finance, offrant précision et rapidité inédites."
 date: "January 08, 2024"
