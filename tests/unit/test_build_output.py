@@ -415,9 +415,13 @@ def test_main_js_is_minified():
     # source had ~424 lines of JSDoc + indentation. Unminified would
     # have many "\n" newlines and JSDoc-style "/**" comments.
     assert "/**" not in src, "/** comment survived in main.js — minify regressed"
-    # The minified body is one or a few lines; if it's still >50 lines,
-    # something is wrong.
-    assert src.count("\n") < 50, f"main.js has {src.count(chr(10))} newlines — looks unminified"
+    # The minified body is one or a few lines; the threshold is a loose
+    # proxy for "unminified", not a size budget. main.js legitimately
+    # crossed 50 newlines when the nav disclosure + audience-selector
+    # scripts landed (2026-07): template literals and license lines keep
+    # real newlines through minification. 100 still catches a genuinely
+    # unminified file (~424+ lines) with wide margin.
+    assert src.count("\n") < 100, f"main.js has {src.count(chr(10))} newlines — looks unminified"
 
 
 @SKIP_IF_NO_BUILD
