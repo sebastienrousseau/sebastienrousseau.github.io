@@ -1,173 +1,173 @@
 ---
-title: "El cifrado completamente homomórfico (FHE) en la era bancaria cuántica"
-subtitle: "Reforzar la seguridad de los datos, mejorar la confidencialidad de la IA y construir la confianza del cliente en la era de la computación cuántica con el FHE"
-description: "Cómo el cifrado completamente homomórfico revoluciona la seguridad de los datos en la banca y las finanzas, garantizando la confidencialidad frente a las amenazas de la computación cuántica."
+title: "Helt homomorf kryptering (FHE) i en bankvärld i kvantåldern"
+subtitle: "Stärk datasäkerheten, förbättra AI-integriteten och bygg kundförtroende i kvantdatorernas era med FHE"
+description: "Utforska hur helt homomorf kryptering revolutionerar datasäkerheten inom bank- och finanssektorn och säkerställer integritet mot hoten från kvantdatorer."
 date: "March 25, 2024"
 language: "sv-SE"
 locale: "sv_SE"
 banner: "https://cloudcdn.pro/stocks/images/fully-homomorphic-encryption.webp"
-banner_alt: "Banner del cifrado completamente homomórfico"
-keywords: "cifrado completamente homomórfico, seguridad bancaria, computación cuántica, cifrado de datos financieros, FHE, RGPD, CCPA, cumplimiento, computación cloud, IA y confidencialidad, LLM cifrado, Zama, Gentry"
+banner_alt: "Banner för helt homomorf kryptering"
+keywords: "helt homomorf kryptering, banksäkerhet, kvantdatorer, kryptering av finansiella data, FHE-fallstudier, regelverk för FHE, beräkningsoverhead FHE, FHE-forskning, FHE-hårdvara, dataskyddslagar"
 ---
 
-El **cifrado completamente homomórfico (FHE — Fully Homomorphic Encryption)** promete redefinir la seguridad de los datos en la banca y las finanzas. Permitiendo cálculos sobre datos cifrados, el FHE protege la confidencialidad frente a las amenazas convencionales y cuánticas.
+**Helt homomorf kryptering (FHE, Fully Homomorphic Encryption)** utlovar att omdefiniera datasäkerheten inom bank- och finanssektorn. Genom att möjliggöra beräkningar på krypterade data skyddar FHE integriteten mot såväl konventionella hot som hot från kvantdatorer.
 
-## Introducción
+## Introduktion
 
-La implementación del FHE en el sector financiero no es solo teórica; se está convirtiendo en una realidad práctica, transformando los estándares de seguridad y confidencialidad de los datos. Este artículo explora los usos prácticos, las consideraciones normativas, los posibles inconvenientes y los avances de investigación del cifrado completamente homomórfico en finanzas y en las aplicaciones de inteligencia artificial (IA).
+Införandet av FHE i finanssektorn är inte enbart teoretiskt; det håller på att bli en praktisk verklighet som omvandlar standarderna för datasäkerhet och integritet. Denna artikel utforskar de praktiska användningsområdena, de regulatoriska övervägandena, de möjliga nackdelarna och forskningsframstegen för helt homomorf kryptering (FHE) inom finans samt i tillämpningar av artificiell intelligens (AI).
 
-## Comprender el cifrado completamente homomórfico
+## Att förstå helt homomorf kryptering
 
-### Las bases del cifrado
+### Krypteringens grunder
 
-El cifrado es un método de transformación de datos legibles (texto claro) en un formato ilegible (criptograma) por medio de un algoritmo y una clave de cifrado. El objetivo principal es asegurar que solo las partes autorizadas puedan acceder a los datos originales descifrando el criptograma con la ayuda de una clave de descifrado.
+Kryptering är en metod för att omvandla läsbara data (klartext) till ett oläsbart format (kryptotext) med hjälp av en algoritm och en krypteringsnyckel. Det främsta målet är att säkerställa att endast behöriga parter kan komma åt de ursprungliga uppgifterna genom att dekryptera kryptotexten med en dekrypteringsnyckel.
 
-### Métodos de cifrado tradicionales
+### Traditionella krypteringsmetoder
 
-Los métodos de cifrado tradicionales pueden categorizarse ampliamente en dos tipos: simétrico y asimétrico. El cifrado simétrico utiliza una sola clave a la vez para el cifrado y el descifrado. Esta eficiencia tiene un coste en seguridad, en particular cuando la distribución de las claves plantea problemas. El cifrado asimétrico, también llamado criptografía de clave pública, utiliza dos claves: una para el cifrado y otra para el descifrado. Este método es más seguro pero más lento que el cifrado simétrico.
+Traditionella krypteringsmetoder kan grovt delas in i två typer: symmetrisk och asymmetrisk kryptering. Symmetrisk kryptering använder en enda nyckel för både kryptering och dekryptering. Denna effektivitet sker på bekostnad av säkerheten, i synnerhet när nyckeldistributionen medför utmaningar. Asymmetrisk kryptering, även kallad publik nyckelkryptografi, använder två nycklar: en för kryptering och en annan för dekryptering. Denna metod är säkrare men långsammare än symmetrisk kryptering.
 
-### Los límites del cifrado convencional para el cálculo
+### Den konventionella krypteringens begränsningar för beräkningar
 
-Aunque los métodos tradicionales aseguran eficazmente los datos en reposo o en tránsito, fracasan cuando se trata de efectuar cálculos sobre datos cifrados. Típicamente, para tratar o analizar datos cifrados, hay que descifrarlos primero, efectuar las operaciones necesarias y luego volver a cifrarlos. Esta etapa de descifrado plantea un riesgo significativo para la confidencialidad, en particular en entornos no confiables o de cloud computing.
+Traditionella krypteringsmetoder skyddar visserligen data effektivt i vila eller under överföring, men de räcker inte till när beräkningar ska utföras på krypterade data. För att bearbeta eller analysera krypterade data måste man vanligtvis först dekryptera dem, utföra de nödvändiga operationerna och därefter kryptera dem på nytt. Detta dekrypteringssteg utgör en betydande risk för dataintegriteten, särskilt i otillförlitliga miljöer eller i molnmiljöer.
 
-![divider][divider].class=\"m-10 w-100\"
+![Avdelare][divider].class=\"m-10 w-100\"
 
-## El avance del cifrado homomórfico
+## Genombrottet för homomorf kryptering
 
-El **cifrado homomórfico (HE)** resuelve los límites del cifrado convencional. Permite efectuar ciertos cálculos directamente sobre los datos cifrados (criptogramas). El resultado descifrado es idéntico a los datos originales (texto claro) después de que se hayan efectuado las mismas operaciones. El HE se declina en tres grandes variedades: Partially Homomorphic Encryption (PHE), Somewhat Homomorphic Encryption (SHE) y Fully Homomorphic Encryption (FHE).
+**Homomorf kryptering** (HE) löser den konventionella krypteringens begränsningar. Den gör det möjligt att utföra vissa beräkningar direkt på krypterade data (kryptotexter). Det dekrypterade resultatet är detsamma som om samma operationer hade utförts på de ursprungliga uppgifterna (klartexten). HE finns i tre huvudvarianter: Partially Homomorphic Encryption (PHE), Somewhat Homomorphic Encryption (SHE) och Fully Homomorphic Encryption (FHE).
 
-- **Partially Homomorphic Encryption (PHE):** soporta operaciones ilimitadas de un solo tipo (adición o multiplicación) sobre los criptogramas.
-- **Somewhat Homomorphic Encryption (SHE):** soporta un número limitado de operaciones, combinando adición y multiplicación, pero solo hasta una cierta profundidad.
-- **Fully Homomorphic Encryption (FHE):** la forma más avanzada, autorizando operaciones ilimitadas de adición y multiplicación sobre los criptogramas.
+- **Partially Homomorphic Encryption (PHE):** stöder ett obegränsat antal operationer av en enda typ (till exempel antingen addition eller multiplikation) på kryptotexter.
+- **Somewhat Homomorphic Encryption (SHE):** stöder ett begränsat antal operationer, med både addition och multiplikation, men endast till ett visst djup.
+- **Fully Homomorphic Encryption (FHE):** den mest avancerade formen, som tillåter ett obegränsat antal operationer av både addition och multiplikation på kryptotexter.
 
-### La ingeniosidad técnica del FHE
+### FHE:s tekniska finess
 
-El FHE reposa sobre estructuras matemáticas complejas, como la criptografía sobre retículos. La criptografía sobre retículos es un tipo de cifrado que utiliza estructuras matemáticas llamadas retículos.
+FHE bygger på komplexa matematiska strukturer, såsom gitterbaserad kryptografi. Gitterbaserad kryptografi är en typ av kryptering som använder matematiska strukturer kallade gitter.
 
-Un retículo es una disposición regular de puntos en el espacio, y la criptografía sobre retículos se apoya en la dificultad de resolver ciertos problemas matemáticos vinculados a estas estructuras. Esto hace que la criptografía sobre retículos sea segura y resistente a los ataques, incluidos los procedentes de los ordenadores cuánticos.
+Ett gitter är ett regelbundet arrangemang av punkter i rummet, och gitterbaserad kryptografi vilar på svårigheten att lösa vissa matematiska problem kopplade till dessa strukturer. Detta gör gitterbaserad kryptografi säker och motståndskraftig mot angrepp, inklusive angrepp från kvantdatorer.
 
-En 2009, Craig Gentry desarrolló un método, descrito en su artículo [**A Fully Homomorphic Encryption Scheme ⧉**][00], para crear un sistema capaz de efectuar una evaluación homomórfica de su propio circuito de descifrado. Este diseño autorreferencial permite a los esquemas FHE efectuar cálculos arbitrarios sobre datos cifrados.
+År 2009 utvecklade Craig Gentry en metod, beskriven i hans artikel [**A Fully Homomorphic Encryption Scheme ⧉**][00], för att skapa ett system som kunde utföra homomorf utvärdering av sin egen dekrypteringskrets. Denna självrefererande konstruktion gör det möjligt för FHE-scheman att utföra godtyckliga beräkningar på krypterade data.
 
-### El proceso del algoritmo FHE
+### FHE-algoritmens process
 
-![FHE Operational Flow][fhe].class=\"m-10 w-100\"
+![FHE:s operativa flöde][fhe].class=\"m-10 w-100\"
 
-El diagrama anterior ilustra el flujo operativo de un algoritmo FHE.
+Diagrammet ovan illustrerar det operativa flödet i en algoritm för helt homomorf kryptering (FHE).
 
-- El proceso de cifrado comienza con los datos en texto claro, que se cifran con la ayuda de una clave de cifrado para generar un criptograma.
+- Krypteringsprocessen inleds med klartextdata, som krypteras med en krypteringsnyckel för att generera kryptotext.
 
-- Estos datos cifrados pueden entonces someterse a diversos cálculos directamente sobre el criptograma mediante un proceso conocido como bootstrapping.
+- Dessa krypterade data kan därefter genomgå olika beräkningar direkt på kryptotexten genom en process som kallas bootstrapping.
 
-- Esta capacidad única del FHE permite a los datos permanecer cifrados durante todo el proceso. Una vez efectuadas las operaciones necesarias, el proceso de descifrado puede reconvertir el criptograma modificado en texto claro gracias al esquema FHE.
+- Denna unika förmåga hos FHE gör att data kan förbli krypterade under hela processen. När de nödvändiga operationerna har utförts kan dekrypteringsprocessen omvandla den modifierade kryptotexten tillbaka till klartext med hjälp av FHE-schemat.
 
-La ventaja principal del FHE reside en su capacidad para efectuar cálculos sobre el criptograma sin requerir descifrado, garantizando así el mantenimiento de la confidencialidad y la seguridad de los datos durante todo el cálculo.
+FHE:s främsta fördel ligger i förmågan att utföra beräkningar på kryptotext utan behov av dekryptering, vilket säkerställer att dataintegritet och säkerhet upprätthålls under hela beräkningsprocessen.
 
-### La resistencia cuántica del FHE
+### FHE:s kvantresistens
 
-Los métodos de cifrado tradicionales son a menudo vulnerables a los algoritmos cuánticos. Estos algoritmos pueden resolver rápidamente problemas como la factorización de enteros y los logaritmos discretos, que constituyen los fundamentos de estos métodos. Por contraste, el FHE emplea problemas sobre retículos que se cree difíciles de resolver por ordenadores cuánticos. Esta resistencia cuántica hace del FHE un método de cifrado prometedor para la era postcuántica.
+Traditionella krypteringsmetoder är ofta sårbara för kvantalgoritmer. Dessa algoritmer kan snabbt lösa problem såsom heltalsfaktorisering och diskreta logaritmer, vilka utgör grunden för dessa krypteringsmetoder. Helt homomorf kryptering (FHE) använder däremot gitterbaserade problem som antas vara svåra för kvantdatorer att lösa. Denna kvantresistens gör FHE till en lovande krypteringsmetod för postkvantumeran.
 
-El FHE sobre retículos es resistente a los ataques cuánticos porque los problemas matemáticos subyacentes, como el Shortest Vector Problem (SVP) y el Closest Vector Problem (CVP), se consideran difíciles de resolver incluso para los ordenadores cuánticos. Si bien algoritmos cuánticos como el de Shor pueden romper los métodos de cifrado tradicionales que reposan en la factorización de grandes números o los logaritmos discretos, no se sabe que ofrezcan ventajas significativas en la resolución de los problemas sobre retículos. Esta característica hace del FHE sobre retículos un candidato prometedor para la criptografía postcuántica.
+Gitterbaserad FHE är motståndskraftig mot kvantangrepp eftersom de underliggande matematiska problemen, såsom Shortest Vector Problem (SVP) och Closest Vector Problem (CVP), anses vara svåra att lösa även för kvantdatorer. Även om kvantalgoritmer som Shors algoritm kan knäcka traditionella krypteringsmetoder som bygger på faktorisering av stora tal eller beräkning av diskreta logaritmer, är de inte kända för att ge några betydande fördelar vid lösning av gitterbaserade problem. Denna egenskap gör gitterbaserad FHE till en lovande kandidat för postkvantumkryptografi.
 
-![divider][divider].class=\"m-10 w-100\"
+![Avdelare][divider].class=\"m-10 w-100\"
 
-## El impacto del FHE en la banca y las finanzas
+## FHE:s inverkan på bank och finans
 
-### Confidencialidad y seguridad de los datos reforzadas
+### Förstärkt dataintegritet och datasäkerhet
 
-La aplicación del FHE en el sector financiero promete un refuerzo significativo de la confidencialidad. Los bancos pueden ahora emprender evaluaciones de riesgos, la detección de fraude y análisis de datos completos al tiempo que garantizan la confidencialidad absoluta de la información de los clientes. Este avance tecnológico mitiga el riesgo de brechas de datos, reforzando la integridad de las plataformas bancarias digitales y las transacciones financieras.
+Tillämpningen av FHE i finanssektorn utlovar en betydande förstärkning av dataintegriteten. Banker kan nu genomföra riskbedömningar, bedrägeridetektering och omfattande dataanalys samtidigt som kundinformationens absoluta konfidentialitet säkerställs. Detta tekniska framsteg minskar risken för dataintrång och stärker integriteten hos digitala bankplattformar och finansiella transaktioner.
 
-### Cloud computing y externalización
+### Molntjänster och outsourcing
 
-Un ámbito de aplicación principal del cifrado homomórfico es el tratamiento seguro de los datos en la nube. Los bancos pueden aprovechar los servicios de cloud computing para tratar datos cifrados sin comprometer su confidencialidad. Esto permite a las instituciones financieras aprovechar la escalabilidad y la rentabilidad del cloud al tiempo que mantienen la confidencialidad de información financiera sensible.
+Ett viktigt tillämpningsområde för homomorf kryptering är säker databehandling i molnet. Banker kan utnyttja molntjänster för att bearbeta krypterade data utan att kompromissa med dataintegriteten. Detta gör det möjligt för finansinstitut att dra nytta av molnets skalbarhet och kostnadseffektivitet samtidigt som konfidentialiteten för känslig finansiell information bevaras.
 
-El movimiento hacia el cloud computing y la externalización de tareas computacionales por parte de los bancos subraya la pertinencia del FHE. Con un cloud computing seguro, las instituciones financieras pueden acceder a recursos externos al tiempo que protegen los datos cifrados sensibles mediante el FHE. El FHE permite a los bancos aprovechar los servicios cloud de manera segura al tiempo que se garantiza que los datos cifrados sensibles permanezcan protegidos en todo momento.
+Bankernas övergång till molntjänster och outsourcing av beräkningsuppgifter understryker FHE:s relevans. Med säkra molntjänster kan finansinstitut utnyttja externa resurser samtidigt som känsliga krypterade data skyddas genom helt homomorf kryptering (FHE). FHE gör det möjligt för banker att på ett säkert sätt använda molntjänster samtidigt som det säkerställs att känsliga krypterade data förblir skyddade vid varje tidpunkt.
 
-![divider][divider].class=\"m-10 w-100\"
+![Avdelare][divider].class=\"m-10 w-100\"
 
-## Prepararse para el futuro cuántico
+## Att förbereda sig för kvantframtiden
 
-El advenimiento inminente de la computación cuántica anuncia una potencial crisis para las metodologías de cifrado tradicionales. El FHE sobre retículos es intrínsecamente resistente a los ataques cuánticos, ofreciendo una defensa robusta contra la amenaza que la computación cuántica plantea a la seguridad de los datos.
+Kvantdatorernas nära förestående ankomst förebådar en potentiell kris för traditionella krypteringsmetoder. Gitterbaserad FHE är till sin natur motståndskraftig mot kvantangrepp och erbjuder ett robust försvar mot det hot som kvantdatorer utgör mot datasäkerheten.
 
-### Cifrado resistente a lo cuántico
+### Kvantresistent kryptering
 
-El FHE proporciona una capa formidable de protección contra las amenazas de la computación cuántica. Empleando técnicas criptográficas sobre retículos, el FHE garantiza que los datos financieros y los activos permanezcan seguros incluso frente a adversarios cuánticos.
+FHE utgör ett formidabelt skyddslager mot hot från kvantdatorer. Genom att använda gitterbaserade kryptografiska tekniker säkerställer FHE att finansiella data och tillgångar förblir säkra även inför kvantmotståndare.
 
-La resistencia cuántica del FHE se debe a problemas matemáticos subyacentes complejos como el Shortest Vector Problem (SVP) y el Closest Vector Problem (CVP). Se supone que estos problemas son intratables incluso para los ordenadores cuánticos, lo que hace del FHE sobre retículos un candidato ideal para la criptografía postcuántica.
+FHE:s kvantresistens beror på komplexa underliggande matematiska problem såsom Shortest Vector Problem (SVP) och Closest Vector Problem (CVP). Dessa problem antas vara ohanterliga även för kvantdatorer, vilket gör gitterbaserad FHE till en idealisk kandidat för postkvantumkryptografi.
 
-Utilizar un cifrado resistente a lo cuántico, como el FHE, es crucial no solo para proteger los activos financieros sino también para mantener la confianza de los clientes en la era digital. A medida que la computación cuántica progresa, las instituciones financieras que prioricen un cifrado robusto estarán mejor posicionadas para navegar los desafíos y oportunidades futuros.
+Att använda kvantresistent kryptering, såsom FHE, är avgörande inte bara för att skydda finansiella tillgångar utan också för att upprätthålla kundförtroendet i den digitala eran. I takt med att kvantdatortekniken utvecklas kommer finansinstitut som prioriterar robust kryptering att vara bättre positionerade för att hantera framtida utmaningar och möjligheter.
 
-![divider][divider].class=\"m-10 w-100\"
+![Avdelare][divider].class=\"m-10 w-100\"
 
-## El futuro del FHE en la banca y las finanzas
+## FHE:s framtid inom bank och finans
 
-La trayectoria del FHE dentro del sector financiero es prometedora, pero todavía afronta desafíos. El sector bancario puede explotar el pleno potencial del FHE mejorando la tecnología, integrándola en las operaciones financieras cotidianas y cooperando con los reguladores.
+FHE:s utvecklingsbana inom finanssektorn är lovande, men den står fortfarande inför utmaningar. Banksektorn kan realisera FHE:s fulla potential genom att förbättra tekniken, integrera den i den dagliga finansiella verksamheten och samarbeta med tillsynsmyndigheter.
 
-El FHE puede utilizarse en diversas aplicaciones bancarias y financieras, como:
+FHE kan användas i en rad tillämpningar inom bank och finans, såsom:
 
-- **Análisis seguro de datos financieros**: el FHE permite a los bancos analizar datos financieros cifrados como transacciones, puntuaciones de crédito y carteras de inversión, sin comprometer la confidencialidad del cliente, garantizando un tratamiento seguro de la información sensible.
+- **Säker analys av finansiella data**: FHE gör det möjligt för banker att analysera krypterade finansiella data, såsom transaktioner, kreditbetyg och investeringsportföljer, utan att kompromissa med kundernas integritet, vilket säkerställer en säker behandling av känslig information.
 
-- **Aprendizaje automático preservando la confidencialidad**: el FHE permite a los bancos entrenar y desplegar modelos de aprendizaje automático sobre datos cifrados, permitiéndoles aprovechar la IA para la detección de fraude, la evaluación de riesgos y la segmentación de clientes a la vez que mantienen la confidencialidad.
+- **Integritetsbevarande maskininlärning**: FHE gör det möjligt för banker att träna och driftsätta maskininlärningsmodeller på krypterade data, vilket låter dem utnyttja AI för bedrägeridetektering, riskbedömning och kundsegmentering samtidigt som datakonfidentialiteten upprätthålls.
 
-- **Cálculo multipartícipe seguro**: el FHE permite una colaboración segura entre varias instituciones financieras, permitiéndoles efectuar cálculos conjuntos sobre datos cifrados sin compartir información sensible, facilitando las transacciones interbancarias seguras y el cumplimiento.
+- **Säker flerpartsberäkning**: FHE möjliggör säkert samarbete mellan flera finansinstitut och låter dem utföra gemensamma beräkningar på krypterade data utan att dela känslig information, vilket underlättar säkra interbanktransaktioner och regelefterlevnad.
 
-- **Seguridad de las API**: el FHE puede asegurar las API cifrando los datos sensibles antes de la transmisión, garantizando que la información de los clientes permanezca confidencial durante los intercambios entre bancos y servicios terceros.
+- **API-säkerhet**: FHE kan säkra API:er genom att kryptera känsliga data före överföring, vilket säkerställer att kundinformation förblir konfidentiell under datautbyte mellan banker och tredjepartstjänster.
 
-- **Cloud computing seguro**: el FHE permite a los bancos externalizar de manera segura los cálculos y el almacenamiento de datos hacia plataformas cloud sin comprometer la confidencialidad, ya que los datos permanecen cifrados durante todo el proceso, ampliando el uso de servicios cloud rentables y escalables.
+- **Säkra molntjänster**: FHE gör det möjligt för banker att på ett säkert sätt lägga ut beräkningar och datalagring på molnplattformar utan att kompromissa med dataintegriteten, eftersom uppgifterna förblir krypterade under hela processen, vilket utökar användningen av kostnadseffektiva och skalbara molntjänster.
 
-- **Cumplimiento normativo preservando la confidencialidad**: el FHE permite a los bancos compartir datos cifrados con las autoridades reguladoras, permitiendo el cumplimiento de las exigencias de reporting sin exponer información sensible, simplificando el proceso de cumplimiento al tiempo que se mantiene la confidencialidad.
+- **Integritetsbevarande regelefterlevnad**: FHE gör det möjligt för banker att på ett säkert sätt dela krypterade data med tillsynsmyndigheter, vilket möjliggör efterlevnad av rapporteringskrav utan att känslig kundinformation exponeras och effektiviserar efterlevnadsprocessen samtidigt som integriteten bevaras.
 
-Estas aplicaciones revelan el poder transformador del FHE en la banca y las finanzas y subrayan su potencial para revolucionar los estándares de seguridad y confidencialidad.
+Dessa tillämpningar visar FHE:s omvälvande kraft inom bank- och finanssektorn och understryker dess potential att revolutionera standarderna för datasäkerhet och integritet.
 
-![divider][divider].class=\"m-10 w-100\"
+![Avdelare][divider].class=\"m-10 w-100\"
 
-## Superar los desafíos de adopción del FHE
+## Att övervinna utmaningarna vid införandet av FHE
 
-### Desafíos de rendimiento y optimización
+### Prestandautmaningar och optimering
 
-Abordar el sobrecoste computacional intrínseco al FHE sigue siendo un desafío pivote. Los recientes progresos en optimización de algoritmos y en desarrollo de aceleradores de hardware especializados reducen la brecha de rendimiento entre el cálculo tradicional y el FHE.
+Att hantera den beräkningsoverhead som är inneboende i FHE förblir en central utmaning. De senaste framstegen inom algoritmoptimering och utveckling av specialiserade hårdvaruacceleratorer minskar prestandagapet mellan traditionell databehandling och helt homomorf kryptering (FHE).
 
-### Estandarización y colaboración
+### Standardisering och samarbete
 
-La vía hacia una adopción generalizada del FHE depende de la estandarización de los protocolos y de una colaboración reforzada entre las partes interesadas del ecosistema financiero. Un enfoque unificado para abrazar el FHE puede acelerar significativamente su integración con los servicios financieros generalistas.
+Vägen till ett brett införande av FHE är beroende av standardisering av protokoll och ett fördjupat samarbete mellan aktörerna i det finansiella ekosystemet. Ett enhetligt förhållningssätt till FHE kan avsevärt påskynda dess integrering i vanliga finansiella tjänster.
 
-### Regulación y cumplimiento
+### Reglering och regelefterlevnad
 
-Los organismos reguladores desempeñan un papel crítico en la adopción del FHE, con leyes sobre la confidencialidad de los datos que imponen su uso. Un impulso normativo podría servir como catalizador para la adopción completa del FHE en toda la industria bancaria y financiera, a la vez que se garantiza el cumplimiento de las normativas de protección de datos.
+Tillsynsmyndigheter spelar en avgörande roll för införandet av FHE, i takt med att dataskyddslagstiftningen utvecklas och kräver dess användning. En regulatorisk drivkraft skulle kunna fungera som katalysator för ett heltäckande införande av FHE i hela bank- och finanssektorn, samtidigt som efterlevnaden av dataskyddsregler säkerställs.
 
-El panorama normativo en torno a la confidencialidad y la seguridad de los datos desempeña un papel significativo en la adopción del FHE en el sector bancario. Normativas estrictas como el RGPD (General Data Protection Regulation) y el CCPA (California Consumer Privacy Act) imponen medidas robustas de protección de datos y subrayan el derecho individual a la vida privada. El FHE, con su capacidad para tratar datos cifrados sin descifrado, se alinea bien con la orientación centrada en la confidencialidad de estas normativas. A medida que las leyes sobre la confidencialidad se vuelven más estrictas, el FHE ofrece una solución convincente que permite a los bancos efectuar los cálculos y análisis necesarios al tiempo que se respetan las exigencias de cumplimiento.
+Det regulatoriska landskapet kring dataintegritet och datasäkerhet spelar en betydande roll för införandet av FHE inom banksektorn. Strikta regelverk som den allmänna dataskyddsförordningen (GDPR) och California Consumer Privacy Act (CCPA) kräver robusta dataskyddsåtgärder och betonar individens rätt till privatliv. FHE, med sin förmåga att bearbeta krypterade data utan dekryptering, ligger väl i linje med dessa regelverks integritetsfokus. I takt med att dataskyddslagarna blir allt strängare erbjuder FHE en övertygande lösning som gör det möjligt för banker att utföra nödvändiga beräkningar och analyser samtidigt som efterlevnadskraven uppfylls.
 
-![divider][divider].class=\"m-10 w-100\"
+![Avdelare][divider].class=\"m-10 w-100\"
 
-## Asegurar los grandes modelos de lenguaje con el FHE
+## Att säkra stora språkmodeller med helt homomorf kryptering (FHE)
 
-Los grandes modelos de lenguaje (LLM) son potentes herramientas de IA. Pero su uso suscita preocupaciones de confidencialidad, en particular cuando tratan datos de usuario sensibles. El FHE ofrece una solución que protege la confidencialidad del usuario y preserva la propiedad intelectual de los propietarios de modelos permitiendo cálculos sobre datos cifrados.
+Stora språkmodeller (LLM:er) är kraftfulla AI-verktyg. Men deras användning väcker integritetsfrågor, särskilt vid hantering av känsliga användardata. Helt homomorf kryptering (FHE) erbjuder en lösning som skyddar användarnas integritet och bevarar modellägarnas immateriella rättigheter genom att möjliggöra beräkningar på krypterade data.
 
-### Desafíos de confidencialidad con los LLM
+### Integritetsutmaningar med LLM:er
 
-Desplegar un LLM en local para mantener la confidencialidad de los datos plantea desafíos como costes elevados y la exposición potencial de una propiedad intelectual valiosa. El FHE aborda estos desafíos permitiendo a los LLM funcionar sobre datos de usuario cifrados, garantizando la confidencialidad y la seguridad del modelo simultáneamente.
+Att driftsätta en LLM lokalt för att upprätthålla dataintegriteten medför utmaningar såsom höga kostnader och risk för exponering av värdefulla immateriella tillgångar. FHE hanterar dessa utmaningar genom att låta LLM:er arbeta på krypterade användardata, vilket säkerställer integritet och modellsäkerhet samtidigt.
 
-### El enfoque LLM cifrado de Zama
+### Zamas krypterade LLM-ansats
 
-[**Zama ⧉**][01], una empresa de tecnologías de confidencialidad, ha demostrado la viabilidad de construir un LLM cifrado con la ayuda del FHE. Su enfoque, que combina FHE y otras tecnologías que refuerzan la confidencialidad, alcanza rendimientos comparables a los modelos no cifrados con solo un aumento modesto del sobrecoste computacional.
+[**Zama ⧉**][01], ett företag inom integritetsteknik, har visat att det är möjligt att bygga en krypterad LLM med hjälp av FHE. Deras ansats, som kombinerar FHE med andra integritetsförstärkande tekniker, uppnår prestanda jämförbar med okrypterade modeller med endast en måttlig ökning av beräkningsoverheaden.
 
-### Mejorar la confidencialidad del usuario con LLM cifrados
+### Förbättrad användarintegritet med krypterade LLM:er
 
-La integración del FHE con los LLM tiene el potencial de transformar la confidencialidad del usuario, en particular en las aplicaciones que tratan información personal o profesional sensible. A medida que la IA se concentra más en la confidencialidad, es importante que desarrolladores, usuarios y reguladores trabajen juntos. Esta colaboración es clave para construir un ecosistema de IA que ponga la seguridad y la confidencialidad en primer lugar.
+Integreringen av FHE i LLM:er har potential att omvandla användarnas integritet, särskilt i tillämpningar som hanterar känslig personlig eller affärsmässig information. I takt med att AI blir alltmer integritetsinriktad är det viktigt att utvecklare, användare och tillsynsmyndigheter samarbetar. Detta samarbete är nyckeln till att bygga ett AI-ekosystem som sätter säkerhet och integritet främst.
 
-![divider][divider].class=\"m-10 w-100\"
+![Avdelare][divider].class=\"m-10 w-100\"
 
-## Conclusión
+## Slutsats
 
-El **cifrado completamente homomórfico (FHE)** es una tecnología de seguridad de los datos revolucionaria que ofrece una confidencialidad y una seguridad excepcionales a la banca y las finanzas.
+**Helt homomorf kryptering (FHE)** är en revolutionerande datasäkerhetsteknik som erbjuder exceptionell integritet och säkerhet för bank- och finanssektorn.
 
-A medida que la computación cuántica avanza, el FHE se vuelve aún más crucial. Su adopción remodelará la ciberseguridad en los servicios financieros, haciendo la banca digital más digna de confianza y más segura en nuestro mundo cada vez más conectado.
+I takt med att kvantdatortekniken utvecklas blir FHE ännu viktigare. Dess införande kommer att omforma cybersäkerheten inom finansiella tjänster och göra digitala banktjänster mer pålitliga och säkra i vår alltmer uppkopplade värld.
 
-El advenimiento del FHE también ha abierto nuevas posibilidades de uso seguro y privado de los grandes modelos de lenguaje. Permitiendo LLM cifrados, el FHE garantiza que los datos del usuario permanezcan confidenciales al tiempo que se benefician de las capacidades avanzadas de estos modelos.
+FHE:s tillkomst har också öppnat nya möjligheter för säker och privat användning av stora språkmodeller. Genom att möjliggöra krypterade LLM:er säkerställer FHE att användardata förblir konfidentiella samtidigt som man drar nytta av dessa modellers avancerade förmågor.
 
-La era de la computación cuántica se aproxima. Los bancos deben evaluar proactivamente su infraestructura de cifrado, identificar las vulnerabilidades potenciales y desarrollar una hoja de ruta clara para la adopción del FHE con el fin de proteger los datos y mantener la confianza del cliente.
+Kvantdatorernas era närmar sig. Banker måste proaktivt utvärdera sin krypteringsinfrastruktur, identifiera potentiella sårbarheter och utarbeta en tydlig färdplan för införandet av FHE för att skydda data och upprätthålla kundförtroendet.
 
-[00]: https://crypto.stanford.edu/craig/ "The original paper by Craig Gentry on Fully Homomorphic Encryption"
-[01]: https://zama.ai/ "Zama - Fully Homomorphic Encryption"
+[00]: https://crypto.stanford.edu/craig/ "Craig Gentrys ursprungliga artikel om helt homomorf kryptering"
+[01]: https://zama.ai/ "Zama - helt homomorf kryptering"
 
-[divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Divider"
-[fhe]: https://cloudcdn.pro/stocks/diagrams/fhe_algorithm_diagram.webp "FHE Architecture"
+[divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Avdelare"
+[fhe]: https://cloudcdn.pro/stocks/diagrams/fhe_algorithm_diagram.webp "FHE-arkitektur"

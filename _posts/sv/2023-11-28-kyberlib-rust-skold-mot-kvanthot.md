@@ -1,97 +1,97 @@
 ---
-title: "KyberLib: CRYSTALS-Kyber en Rust para el postcuántico"
-subtitle: "KyberLib, una implementación Rust robusta de CRYSTALS-Kyber para la era cuántica"
-description: "Implementación criptográfica robusta y resistente a lo cuántico del algoritmo CRYSTALS-Kyber, para proteger sus datos de las amenazas cuánticas y ataques criptoanalíticos."
+title: "KyberLib: CRYSTALS-Kyber i Rust för postkvantum"
+subtitle: "KyberLib, en robust Rust-implementering av CRYSTALS-Kyber för kvanteran."
+description: "En robust och kvantsäker kryptografisk implementering av algoritmen CRYSTALS-Kyber, som skyddar dina data mot kvanthot och kryptoanalytiska attacker."
 date: "November 28, 2023"
 language: "sv-SE"
 locale: "sv_SE"
 banner: "https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg"
-banner_alt: "Reforzar la comunicación segura en la era cuántica con KyberLib"
-keywords: "KyberLib, Rust CRYSTALS-Kyber, criptografía postcuántica, criptografía sobre retículos, intercambio de claves resistente a lo cuántico, NIST FIPS 203, Sebastien Rousseau, KEM, autenticación de pagos, biblioteca PQC"
+banner_alt: "Säker kommunikation i kvanteran med KyberLib"
+keywords: "KyberLib, Rust CRYSTALS-Kyber, postkvantkryptografi, gitterbaserad kryptografi, kvantresistent nyckelutbyte, NIST FIPS 203, Sebastien Rousseau, KEM, betalningsautentisering, PQC-bibliotek"
 ---
 
-[![Reforzar la comunicación segura en la era cuántica con KyberLib](https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg).class=\"img-fluid clearfix\"][07]
+[![Säker kommunikation i kvanteran med KyberLib](https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg).class=\"img-fluid clearfix\"][07]
 
-`KyberLib` es una biblioteca Rust que protege sus datos frente a la amenaza potencial de la computación cuántica. Construida sobre el **algoritmo [CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html)**, `KyberLib` ofrece una seguridad, una eficiencia y una versatilidad excepcionales, integrándose fácilmente en diversas plataformas, incluidos los entornos `no-std`.
-
-![divider][divider].class=\"m-10 w-100\"
-
-## Asegurar sus datos en la era cuántica
-
-El advenimiento de la computación cuántica ha introducido una amenaza significativa para las medidas criptográficas convencionales. Para abordar este desafío, el campo de la criptografía resistente a lo cuántico (QSC) evoluciona rápidamente.
-
-A la vanguardia de este movimiento transformador, el National Institute of Standards and Technology (NIST) lidera la estandarización de los algoritmos QSC.
-
-En 2023, el NIST retuvo cuatro algoritmos innovadores:
-
-- [**CRYSTALS-Kyber** ⧉][01] (mecanismo de encapsulación de claves)
-- [**CRYSTALS-Dilithium** ⧉][02] (firmas digitales)
-- [**FALCON** ⧉][03] (firmas digitales ligeras)
-- [**SPHINCS+** ⧉][04] (firmas digitales basadas en hash)
-
-Estos algoritmos revolucionarios se apoyan en principios matemáticos diversos: criptografía sobre retículos, basada en hash, basada en códigos, con el objetivo de proporcionar una defensa robusta contra los ataques cuánticos.
-
-## Explorar la criptografía sobre retículos
-
-La criptografía sobre retículos (LBC — Lattice-Based Cryptography) emerge como favorita en QSC, ofreciendo una solución prometedora de criptografía postcuántica (PQC). La LBC es polivalente, con aplicaciones que van desde los mecanismos de encapsulación de claves (KEM) hasta las firmas digitales y los esquemas de cifrado de clave pública, anclados en los retículos matemáticos.
-
-Los retículos son un concepto fundamental de las matemáticas que han hallado aplicaciones en diversos campos, entre ellos la criptografía. En términos simples, un retículo es un arreglo regular de puntos en el espacio, formando una estructura semejante a una cuadrícula. Estos puntos están conectados por líneas, formando una red de celdas interconectadas. La disposición específica de los puntos y su espaciado definen las características únicas de un retículo.
-
-### Representación 3D de un retículo con vectores base
-
-Este gráfico presenta una estructura de retículo 3D generada por tres vectores base:
-
-- `b1 = [1, 0, 0]` en rojo,
-- `b2 = [0, 1, 0]` en verde, y
-- `b3 = [0, 0, 1]` en azul.
-
-Cada punto del retículo se forma combinando estos vectores base en proporciones enteras variadas, creando un esquema de cuadrícula que se extiende en las tres dimensiones espaciales. La visualización captura la esencia de un retículo 3D, concepto ampliamente utilizado en física y matemáticas para representar el arreglo regular y repetido de puntos en el espacio.
-
-![3D Lattice Representation with Basis Vectors][06].class=\"img-fluid mx-auto d-block\"
-
-En criptografía, los retículos se emplean como base de ciertos algoritmos criptográficos. La criptografía sobre retículos aprovecha las propiedades matemáticas de los retículos para crear esquemas criptográficos seguros que resistan los ataques de los ordenadores cuánticos. Los ordenadores cuánticos suponen una amenaza significativa para la criptografía convencional, ya que pueden romper eficientemente algoritmos que se apoyan en la factorización de grandes números o en la resolución de los problemas de logaritmo discreto.
-
-CRYSTALS-Kyber ilustra las fortalezas de la LBC, proporcionando una resistencia robusta contra los ataques cuánticos junto con una eficiencia y un tamaño de clave excepcionales. Su compatibilidad multiplataforma y criptográfica la convierten en una opción fiable de seguridad de datos en la era cuántica.
-
-Las especificaciones actuales de CRYSTALS-Kyber son:
-
-- **Kyber512**: proporciona un nivel de seguridad equivalente al cifrado AES de 128 bits, protegiendo los datos sensibles con una protección estándar del sector.
-- **Kyber768**: proporciona un nivel de seguridad equivalente al cifrado AES de 256 bits, garantizando la confidencialidad de información altamente sensible.
-- **Kyber1024**: proporciona un nivel de seguridad que supera AES de 256 bits, ofreciendo una protección robusta contra los ataques cuánticos y preservando la integridad de los datos en un futuro lejano.
-
-### Comparación de niveles de seguridad entre algoritmos clásicos y resistentes a lo cuántico
-
-Este gráfico ilustra los niveles de seguridad relativos de los algoritmos criptográficos clásicos como RSA-2048 y ECDSA, comparados con las especificaciones de las variantes resistentes a lo cuántico de CRYSTALS-Kyber (Kyber512, Kyber768 y Kyber1024).
-
-Aunque el gráfico ofrece una comparación visual, es crucial señalar que los niveles de seguridad no son directamente comparables, ya que se basan en principios matemáticos diferentes.
-
-Sin embargo, el gráfico aporta un punto de referencia útil para comprender los niveles de seguridad de los algoritmos resistentes a lo cuántico.
-
-![Lattice-Based Cryptography][05].class=\"img-fluid mx-auto d-block\"
+`KyberLib` är ett Rust-baserat bibliotek som skyddar dina data mot det potentiella hotet från kvantdatorer. Biblioteket bygger på **algoritmen [CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html)** och erbjuder utmärkt säkerhet, effektivitet och flexibilitet, med enkel integrering på en rad plattformar, inklusive `no-std`-miljöer.
 
 ![divider][divider].class=\"m-10 w-100\"
 
-## KyberLib: una biblioteca Rust para la criptografía resistente a lo cuántico
+## Skydda dina data i kvantåldern
 
-KyberLib aprovecha la potencia de CRYSTALS-Kyber para ofrecer una seguridad de memoria reforzada y una seguridad de sistema robusta. Admite varias especificaciones de CRYSTALS-Kyber (Kyber512, Kyber768, Kyber1024), ofreciendo un abanico de niveles de seguridad adaptados a sus necesidades específicas. Su conformidad `no_std` la convierte en una elección ideal para los sistemas embebidos, y su compatibilidad con WebAssembly (WASM) facilita la integración con las aplicaciones web.
+Kvantdatorernas framväxt har medfört ett betydande hot mot konventionella kryptografiska säkerhetsmekanismer. För att möta denna utmaning utvecklas fältet kvantsäker kryptografi (Quantum-Safe Cryptography, QSC) i snabb takt.
+
+I spetsen för denna omvälvande utveckling står National Institute of Standards and Technology (NIST), som leder standardiseringen av QSC-algoritmer.
+
+Under 2023 valde NIST ut fyra innovativa algoritmer:
+
+- [**[CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html)** ⧉][01] (mekanism för nyckelinkapsling)
+- [**CRYSTALS-Dilithium** ⧉][02] (digitala signaturer)
+- [**FALCON** ⧉][03] (lättviktiga digitala signaturer)
+- [**SPHINCS+** ⧉][04] (hashbaserade digitala signaturer)
+
+Dessa banbrytande algoritmer vilar på skilda matematiska principer, däribland gitterbaserad kryptografi, hashbaserad kryptografi och kodbaserad kryptografi, med målet att ge ett robust försvar mot kvantattacker.
+
+## En närmare titt på gitterbaserad kryptografi
+
+Gitterbaserad kryptografi (Lattice-Based Cryptography, LBC) framträder som en av de främsta kandidaterna inom QSC och erbjuder en lovande postkvantkryptografisk (PQC) lösning. LBC är mångsidig, med tillämpningar som spänner från nyckelinkapslingsmekanismer (KEM) och digitala signaturer till krypteringssystem med öppen nyckel, alla förankrade i matematiska gitter.
+
+Gitter är ett grundläggande begrepp inom matematiken som funnit tillämpningar inom en rad områden, däribland kryptografi. Enkelt uttryckt är ett gitter en regelbunden uppsättning punkter i rummet som bildar en rutnätsliknande struktur. Punkterna är förbundna med linjer och bildar ett nätverk av sammanlänkade celler. Punkternas specifika placering och avstånden mellan dem definierar gittrets unika egenskaper.
+
+### 3D-representation av ett gitter med basvektorer
+
+Detta diagram visar en tredimensionell gitterstruktur genererad av tre basvektorer:
+
+- `b1 = [1, 0, 0]` i rött,
+- `b2 = [0, 1, 0]` i grönt, och
+- `b3 = [0, 0, 1]` i blått.
+
+Varje punkt i gittret bildas genom att dessa basvektorer kombineras i olika heltalsproportioner, vilket skapar ett rutnätsmönster som sträcker sig i alla tre rumsdimensioner. Visualiseringen fångar essensen av ett tredimensionellt gitter, ett begrepp som används flitigt inom fysik och matematik för att representera den regelbundna, återkommande placeringen av punkter i rummet.
+
+![3D-representation av ett gitter med basvektorer][06].class=\"img-fluid mx-auto d-block\"
+
+Inom kryptografin används gitter som grund för vissa kryptografiska algoritmer. Gitterbaserad kryptografi (LBC) utnyttjar gittrens matematiska egenskaper för att skapa säkra kryptografiska system som står emot attacker från kvantdatorer. Kvantdatorer utgör ett betydande hot mot konventionell kryptografi, eftersom de effektivt kan knäcka algoritmer som bygger på faktorisering av stora tal eller på lösning av diskreta logaritmproblem.
+
+[CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html) exemplifierar styrkorna hos LBC och ger robust motståndskraft mot kvantattacker i kombination med utmärkt effektivitet och nyckelstorlek. Stödet för flera plattformar och kompatibiliteten med befintlig kryptografi gör den till ett pålitligt alternativ för datasäkerhet i kvanteran.
+
+De aktuella specifikationerna för [CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html) är följande:
+
+- **Kyber512**: ger en säkerhetsnivå motsvarande 128-bitars AES-kryptering och skyddar känsliga data med branschstandardiserat skydd.
+- **Kyber768**: ger en säkerhetsnivå motsvarande 256-bitars AES-kryptering och säkerställer konfidentialiteten för mycket känslig information.
+- **Kyber1024**: ger en säkerhetsnivå som överstiger 256-bitars AES-kryptering och erbjuder robust skydd mot kvantattacker samt värnar dataintegriteten långt in i framtiden.
+
+### Jämförelse av säkerhetsnivåer mellan klassiska och kvantresistenta algoritmer
+
+Detta stapeldiagram illustrerar de relativa säkerhetsnivåerna hos klassiska kryptografiska algoritmer som RSA-2048 och Elliptic Curve Digital Signature Algorithm (ECDSA), jämförda med specifikationerna för de kvantresistenta varianterna av algoritmen [CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html) (Kyber512, Kyber768 och Kyber1024).
+
+Även om diagrammet erbjuder en visuell jämförelse är det viktigt att notera att säkerhetsnivåerna inte är direkt jämförbara, eftersom de vilar på olika matematiska principer.
+
+Diagrammet ger dock en användbar referenspunkt för att förstå säkerhetsnivåerna hos kvantresistenta algoritmer.
+
+![Gitterbaserad kryptografi][05].class=\"img-fluid mx-auto d-block\"
 
 ![divider][divider].class=\"m-10 w-100\"
 
-## Proteger las aplicaciones web mediante la criptografía resistente a lo cuántico
+## KyberLib: ett Rust-bibliotek för kvantresistent kryptografi
 
-Diseñada para una huella de memoria mínima, KyberLib es ideal para los sistemas embebidos y con recursos limitados, sin comprometer la seguridad. Su implementación en Rust capitaliza las funcionalidades de seguridad del lenguaje, fortificando la seguridad ofrecida por el algoritmo CRYSTALS-Kyber.
+KyberLib utnyttjar kraften i [CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html) för att leverera förbättrad minnessäkerhet och robust säkerhet på systemnivå. Biblioteket stöder flera specifikationer av [CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html) (Kyber512, Kyber768, Kyber1024) och erbjuder därmed ett spann av säkerhetsnivåer anpassade efter dina specifika behov. Dess `no_std`-kompatibilitet gör den till ett idealiskt val för inbyggda system, medan dess kompatibilitet med WebAssembly (WASM) underlättar sömlös integrering i webbapplikationer.
 
-Además, la compatibilidad WebAssembly de KyberLib refuerza su utilidad en las aplicaciones web, garantizando que siga siendo una herramienta vital en el campo dinámico de la criptografía.
+![divider][divider].class=\"m-10 w-100\"
 
-[Empiece con KyberLib ahora mismo. ⧉][00] Fácil de instalar, gratuita para uso personal o comercial, KyberLib es su solución de referencia para la criptografía resistente a lo cuántico.
+## Skydda webbapplikationer med kvantresistent kryptografi
 
-[00]: https://kyberlib.com/getting-started/index.html "Getting Started"
-[01]: https://pq-crystals.org/kyber/ "Kyber: A CCA-secure module-lattice-based KEM"
-[02]: https://pq-crystals.org/dilithium/ "Dilithium: A CCA-secure lattice-based signature scheme"
-[03]: https://falcon-sign.info/ "FALCON: A post-quantum signature scheme"
-[04]: https://sphincs.org/ "SPHINCS+: A stateless hash-based signature scheme"
-[05]: https://cloudcdn.pro/stocks/diagrams/kyber-vs-classical.svg "Comparison of Security Levels between Classical and Quantum-Resistant Algorithms"
-[06]: https://cloudcdn.pro/stocks/diagrams/3D-lattice-graph.svg "3D Lattice Representation with Basis Vectors"
-[07]: https://kyberlib.com/ "Privacy and Security in a Quantum World"
+KyberLib är utformat för ett minimalt minnesavtryck och lämpar sig därför väl för inbyggda och resursbegränsade system, utan att säkerheten äventyras. Den Rust-baserade implementeringen drar nytta av språkets säkerhetsegenskaper och förstärker det skydd som algoritmen [CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html) erbjuder.
 
-[divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Divider"
+Dessutom ökar KyberLibs WebAssembly-kompatibilitet dess användbarhet i webbapplikationer, vilket garanterar att biblioteket förblir ett viktigt verktyg inom kryptografins dynamiska område.
+
+[Kom igång med KyberLib nu! ⧉][00] KyberLib är enkelt att installera, kostnadsfritt för både privat och kommersiellt bruk, och din självklara lösning för kvantresistent kryptografi.
+
+[00]: https://kyberlib.com/getting-started/index.html "Kom igång"
+[01]: https://pq-crystals.org/kyber/ "Kyber: en CCA-säker modulgitterbaserad KEM"
+[02]: https://pq-crystals.org/dilithium/ "Dilithium: ett CCA-säkert gitterbaserat signaturschema"
+[03]: https://falcon-sign.info/ "FALCON: ett postkvantsignaturschema"
+[04]: https://sphincs.org/ "SPHINCS+: ett tillståndslöst hashbaserat signaturschema"
+[05]: https://cloudcdn.pro/stocks/diagrams/kyber-vs-classical.svg "Jämförelse av säkerhetsnivåer mellan klassiska och kvantresistenta algoritmer"
+[06]: https://cloudcdn.pro/stocks/diagrams/3D-lattice-graph.svg "3D-representation av ett gitter med basvektorer"
+[07]: https://kyberlib.com/ "Integritet och säkerhet i en kvantvärld"
+
+[divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Avdelare"

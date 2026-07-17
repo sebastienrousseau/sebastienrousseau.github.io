@@ -49,12 +49,31 @@ def _labels_for_lang(code: str) -> dict[str, str]:
     _LABEL_CACHE[code] = out
     return out
 def _detect_page_lang(html: str) -> str:
+    """Resolve the page's ``<html lang>`` attribute to a registry
+    language code. Tries the full lowercased BCP-47 tag first so
+    region/script locales (``pt-BR`` -> ``pt-br``, ``zh-Hans`` ->
+    ``zh-hans``) resolve to their registry code instead of collapsing
+    to a primary subtag that isn't a published language; falls back to
+    the primary subtag (``fr-FR`` -> ``fr``)."""
     m = _HTML_LANG_DETECT_RE.search(html)
     if not m:
         return "en"
-    return m.group(1).lower().split("-", 1)[0]
+    tag = m.group(1).lower()
+    if tag in _lr._BY_CODE:
+        return tag
+    return tag.split("-", 1)[0]
 def _labels(html: str) -> dict[str, str]:
     return _labels_for_lang(_detect_page_lang(html))
+_STRINGS_CACHE: dict[str, dict[str, str]] = {}
+def _strings_for_lang(code: str) -> dict[str, str]:
+    """Per-language UI-strings cache (``strings.json``). Returns {} for
+    unknown codes so callers fall back to their EN literals."""
+    if code not in _STRINGS_CACHE:
+        try:
+            _STRINGS_CACHE[code] = _lr.load_strings(code)
+        except _lr.LanguageError:
+            _STRINGS_CACHE[code] = {}
+    return _STRINGS_CACHE[code]
 def _all_active_non_en_langs() -> list[str]:
     """Return the code for every active non-EN language."""
     return [lg.code for lg in _lr.LANGUAGES if lg.active and lg.code != "en"]

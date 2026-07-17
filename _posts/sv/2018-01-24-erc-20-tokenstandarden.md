@@ -1,70 +1,74 @@
 ---
-title: "El estándar de token ERC-20"
-subtitle: "La interfaz unificada que permitió prosperar al ecosistema Ethereum"
-description: "ERC-20: el tipo de token más extendido en la blockchain Ethereum, a menudo descrito como un contrato digital inteligente (smart contract)."
+title: "ERC-20: Ethereum-tokengränssnittet som förändrade världen"
+subtitle: "ERC-20-token, smarta kontrakt på Ethereum och standardiseringen av digitala tillgångar."
+description: "ERC-20: Ethereum-token ERC-20 är den vanligaste typen av token på Ethereums blockchain och beskrivs ofta som ett digitalt kontrakt i form av ett smart kontrakt"
 date: "January 24, 2018"
 language: "sv-SE"
 locale: "sv_SE"
 banner: "https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp"
-banner_alt: "Ordenador portátil apagado sobre una mesa de madera marrón"
-keywords: "ERC-20, Ethereum, token, smart contract, DeFi, EIP, blockchain, interoperabilidad, DApps, estándar"
+banner_alt: "Avstängd bärbar dator på ett brunt träbord"
+keywords: "ethereum, erc20, eip, token, kontrakt, blockchain, kryptovalutor, smart-token, solidity"
 ---
 
-![Ordenador portátil apagado sobre una mesa de madera marrón](https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp).class=\"img-fluid clearfix\"
+![En mycket hög byggnad med många hål i fasaden](https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp).class=\"img-fluid clearfix\"
 
-## Perspectiva
+## Insikt
 
-### La necesidad de una interfaz de token estandarizada
+### Behovet av ett standardiserat tokengränssnitt
 
-Antes del advenimiento del estándar ERC-20 (Ethereum Request for Comments 20), la blockchain Ethereum se parecía al Lejano Oeste de las arquitecturas de token. Cada nuevo token acuñado tenía su propio conjunto único de reglas, funciones e interfaces. Esto imponía a los desarrolladores una curva de aprendizaje pronunciada y frenaba la interoperabilidad de los tokens. En pocas palabras, cada nuevo token era como un nuevo idioma que aprender, comprender e implementar. Esta fragmentación obstaculizaba la escalabilidad y la adopción masiva de tokens en la plataforma Ethereum.
+Innan ERC-20-standarden (Ethereum Request for Comments 20) infördes liknade Ethereums blockchain vilda västern i fråga om tokenarkitekturer. Varje nypräglad token hade sin egen unika uppsättning regler, funktioner och gränssnitt. Detta innebar inte bara en brant inlärningskurva för utvecklare utan hämmade också interoperabiliteten mellan token. I praktiken var varje ny token som ett nytt språk som behövde läras in, förstås och implementeras. Denna fragmentering hindrade skalbarheten och den breda användningen av token på Ethereum-plattformen.
 
-La introducción del estándar ERC-20 actuó como un lenguaje unificador, estableciendo un conjunto común de reglas y funciones a las que todos los tokens Ethereum deben ajustarse. A partir de entonces, los desarrolladores disponen de una interfaz coherente, sea cual sea el token. Esta estandarización fluidificó los procesos de interacción con los tokens, permitiendo una integración más fluida en diversas aplicaciones y servicios. Como consecuencia, los desarrolladores pueden interactuar de manera más útil con los tokens, propiciando un entorno favorable a la innovación y al crecimiento en el ecosistema Ethereum.
+Införandet av ERC-20-standarden fungerade som ett enande språk och fastställde en gemensam uppsättning regler och funktioner som alla Ethereum-token måste följa. Utvecklare har nu ett enhetligt gränssnitt att arbeta med, oavsett vilken token det gäller. Denna standardisering effektiviserade processerna för interaktion med token och möjliggjorde en smidigare integration i olika applikationer och tjänster. Som ett resultat kan utvecklare arbeta mer meningsfullt med token, vilket skapar en miljö som gynnar innovation och tillväxt inom Ethereum-ekosystemet.
 
-#### El Lejano Oeste de las arquitecturas de token
+#### Vilda västern bland tokenarkitekturer
 
-La blockchain Ethereum se diseñó inicialmente para soportar un único tipo de token: ETH. Pero a medida que la plataforma ganó popularidad, los desarrolladores comenzaron a crear sus propios tokens para representar una variedad de activos y conceptos. Esto dio lugar a una proliferación de arquitecturas de token diferentes, cada una con su propio conjunto único de reglas y funciones.
+Ethereums blockchain var ursprungligen utformad för att stödja en enda typ av token: ETH. I takt med att plattformen växte i popularitet började utvecklare emellertid skapa egna token för att representera en mängd olika tillgångar och koncept. Detta ledde till en snabb spridning av olika tokenarkitekturer, var och en med sin egen unika uppsättning regler och funktioner.
 
-Esta fragmentación dificultaba a los desarrolladores la creación de aplicaciones capaces de interactuar con varios tokens. También complicaba a los usuarios la gestión de sus activos de token en distintas plataformas.
+Denna fragmentering gjorde det svårt för utvecklare att skapa applikationer som kunde interagera med flera token. Den gjorde det också svårt för användare att hantera sina tokentillgångar över olika plattformar.
 
-#### El estándar ERC-20
+#### ERC-20-standarden
 
-El estándar ERC-20 se introdujo en 2015 para responder a los retos planteados por este Lejano Oeste de arquitecturas de token. El estándar define un conjunto común de reglas y funciones a las que todos los tokens Ethereum deben ajustarse. Esta estandarización facilita la creación de aplicaciones capaces de interactuar con cualquier token ERC-20, y también simplifica la gestión de los activos de token por parte de los usuarios.
+ERC-20-standarden introducerades 2015 för att möta de utmaningar som vilda västern av tokenarkitekturer gav upphov till. Standarden definierar en gemensam uppsättning regler och funktioner som alla Ethereum-token måste följa. Denna standardisering gör det enklare för utvecklare att skapa applikationer som kan interagera med vilken ERC-20-token som helst, och den gör det också enklare för användare att hantera sina tokentillgångar.
 
-El estándar ERC-20 ha sido ampliamente adoptado por la comunidad Ethereum. Hoy en día se contabilizan más de 200.000 tokens ERC-20 y el estándar es utilizado por una gran variedad de aplicaciones, incluidos exchanges descentralizados, plataformas de préstamo y dapps de juegos.
+ERC-20-standarden har fått bred spridning i Ethereum-gemenskapen. I dag finns det över 200 000 ERC-20-token, och standarden används av en lång rad applikationer, däribland decentraliserade börser, utlåningsplattformar och spel-dappar.
 
-## Idea
+## Idé
 
-### Un conjunto común de funciones y propiedades para todos los tokens
+### En gemensam uppsättning funktioner och egenskaper för alla token
 
-El estándar ERC-20 define un conjunto de seis funciones esenciales que todos los tokens conformes a ERC-20 deben implementar. Estas funciones son:
+ERC-20-standarden definierar en uppsättning av sex grundläggande funktioner som alla ERC-20-kompatibla token måste implementera. Dessa funktioner är:
 
-- `transfer(address to, uint256 amount)`: transfiere un importe de tokens desde la dirección del invocador hacia la dirección especificada.
-- `approve(address spender, uint256 amount)`: autoriza a la dirección especificada a gastar un importe de tokens en nombre del invocador.
-- `allowance(address owner, address spender)`: devuelve el importe de tokens que el «spender» especificado está autorizado a gastar en nombre del «owner» especificado.
-- `totalSupply()`: devuelve el número total de tokens en circulación.
-- `balanceOf(address owner)`: devuelve el número de tokens que posee la dirección especificada.
-- `name()`: devuelve el nombre del token.
-- `symbol()`: devuelve el símbolo del token.
+- `transfer(address to, uint256 amount)`: Överför ett antal token från anroparens adress till den angivna adressen.
+- `approve(address spender, uint256 amount)`: Godkänner att den angivna adressen får spendera ett antal token för anroparens räkning.
+- `allowance(address owner, address spender)`: Returnerar det antal token som den angivna spenderaren är godkänd att spendera för den angivna ägarens räkning.
+- `totalSupply()`: Returnerar det totala antalet token i omlopp.
+- `balanceOf(address owner)`: Returnerar det antal token som den angivna adressen innehar.
+- `name()`: Returnerar tokenens namn.
+- `symbol()`: Returnerar tokenens symbol.
 
-El estándar ERC-20 también define dos eventos que deben emitirse tras la ejecución exitosa de las funciones correspondientes:
+ERC-20-standarden definierar även två händelser som måste emitteras när motsvarande funktioner har utförts framgångsrikt. Dessa händelser är:
 
-- `Transfer(address from, address to, uint256 amount)`: emitido cuando un importe de tokens se transfiere de una dirección a otra.
-- `Approval(address owner, address spender, uint256 amount)`: emitido cuando la dirección especificada es autorizada a gastar un importe de tokens en nombre del «owner» especificado.
+- `Transfer(address from, address to, uint256 amount)`: Emitteras när ett antal token överförs från en adress till en annan.
+- `Approval(address owner, address spender, uint256 amount)`: Emitteras när den angivna adressen godkänns att spendera ett antal token för den angivna ägarens räkning.
 
-## Impacto
+## Genomslag
 
-### El crecimiento de DeFi y la adopción de Ethereum
+### DeFi-sektorns tillväxt och Ethereums ökade användning
 
-El estándar ERC-20 ha tenido un impacto significativo en el ecosistema Ethereum. Ha sido un catalizador clave del movimiento DeFi (finanzas descentralizadas) y también ha contribuido a aumentar la adopción de Ethereum.
+ERC-20-standarden har haft ett betydande genomslag i Ethereum-ekosystemet. Den har varit en avgörande möjliggörare för DeFi-rörelsen (decentraliserad finans) och har också bidragit till att öka användningen av Ethereum.
 
-Las plataformas DeFi, que ofrecen toda una gama de servicios financieros que van desde el préstamo hasta la gestión de activos, se apoyan masivamente en los tokens para facilitar las transacciones. Con ERC-20 actuando como un adaptador universal, se volvió mucho más sencillo para las aplicaciones DeFi integrar un amplio abanico de tokens sin tener que adaptar su código a cada uno.
+DeFi-plattformar, som erbjuder en rad finansiella tjänster från utlåning till kapitalförvaltning, är starkt beroende av token för att underlätta transaktioner. Med ERC-20 som en universell adapter har det blivit avsevärt enklare för DeFi-applikationer att integrera ett brett urval av token utan att behöva anpassa sin kod för var och en.
 
-El estándar ERC-20 también ha facilitado la gestión de los activos de token por parte de los usuarios. Con tokens que respetan las mismas reglas básicas, a los usuarios les resulta más fácil transferir, gastar y gestionar sus activos de token en varias plataformas. Esta experiencia de usuario mejorada ha sido un motor del aumento de las tasas de adopción de Ethereum.
+ERC-20-standarden har också gjort det enklare för användare att hantera sina tokentillgångar. När token följer samma grundläggande regler blir det lättare för användare att överföra, spendera och hantera sina tokentillgångar över flera plattformar. Denna förbättrade användarupplevelse har varit en drivande faktor bakom Ethereums ökade användning.
 
-## Incentivos
+## Incitament
 
-### Costes de desarrollo reducidos y seguridad mejorada
+### Lägre utvecklingskostnader och förbättrad säkerhet
 
-La estandarización aportada por el protocolo ERC-20 también ha tenido un impacto económico directo. Al proporcionar un plano probado y aprobado por la comunidad para la creación de tokens, ha reducido significativamente la barrera de entrada para los desarrolladores. Ahora pueden crear un nuevo token con costes de desarrollo reducidos y un plazo de comercialización más corto, sin tener que reinventar la rueda. El estándar fomenta también indirectamente la creación de DApps (aplicaciones descentralizadas) y servicios capaces de interactuar universalmente con cualquier token ERC-20, cultivando así un ecosistema más dinámico.
+Den standardisering som ERC-20-protokollet medfört har även haft en direkt ekonomisk effekt. Genom att tillhandahålla en beprövad och gemenskapsgodkänd mall för tokenskapande har den avsevärt sänkt inträdesbarriärerna för utvecklare. De kan nu skapa en ny token med lägre utvecklingskostnader och kortare tid till marknaden, eftersom de inte längre behöver uppfinna hjulet på nytt. Standarden uppmuntrar också indirekt skapandet av DApps (decentraliserade applikationer) och tjänster som universellt kan interagera med vilken ERC-20-token som helst, vilket främjar ett mer livskraftigt ekosystem.
 
-Otro beneficio notable: una seguridad reforzada. El estándar ERC-20 ha sido sometido a un examen riguroso por parte de la comunidad Ethereum, convirtiéndolo en un modelo robusto y seguro para la implementación de tokens. El respeto de este estándar implica que los aspectos fundamentales del smart contract del token siguen las buenas prácticas aceptadas por la comunidad. Esto minimiza el riesgo de vulnerabilidades de seguridad que de otro modo podrían derivarse de un modelo de token mal diseñado. Aunque no es una garantía contra todo tipo de vulnerabilidades, es un paso significativo hacia la seguridad global de los tokens y, por extensión, de los proyectos que los utilizan.
+En annan påtaglig fördel är förbättrad säkerhet. ERC-20-standarden har genomgått rigorös granskning av Ethereum-gemenskapen, vilket gör den till en robust och säker modell för tokenimplementering. Att följa standarden innebär att de grundläggande delarna av tokenens smarta kontrakt följer gemenskapens vedertagna bästa praxis. Detta minimerar risken för säkerhetssårbarheter som annars skulle kunna uppstå ur en illa utformad tokenmodell. Även om det inte utgör en garanti mot alla typer av sårbarheter är det ett betydande steg mot att säkerställa den övergripande säkerheten för token och, i förlängningen, för de projekt som använder dem.
+
+![divider](https://cloudcdn.pro/clients/common/images/elements/divider.svg).class=\"m-10 w-100\"
+
+**Därmed är vår genomgång till ända. Tack för din tid!**

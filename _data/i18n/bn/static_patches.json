@@ -3,11 +3,11 @@
   "patches": [
     [
       "<a href=\"/\">Home</a> &middot; <span>Topics</span>",
-      "<a href=\"/bn/\">Home</a> &middot; <span>Topics</span>"
+      "<a href=\"/bn/\">হোম</a> &middot; <span>বিষয়</span>"
     ],
     [
       ">Home<",
-      ">Home<"
+      ">হোম<"
     ],
     [
       ">Topics</h1>",
@@ -15,15 +15,15 @@
     ],
     [
       ">PILLARS</p>",
-      ">PILLARS</p>"
+      ">স্তম্ভ</p>"
     ],
     [
       "PILLAR · TOPIC",
-      "PILLAR · TOPIC"
+      "স্তম্ভ · বিষয়"
     ],
     [
       "PILLAR · PROJECT",
-      "PILLAR · PROJECT"
+      "স্তম্ভ · প্রকল্প"
     ],
     [
       "aria-label=\"Post-Quantum Cryptography\"",
@@ -67,115 +67,115 @@
     ],
     [
       "(\\d+) article\\(s\\)</p>",
-      "\\1 article(s)</p>"
+      "\\1টি নিবন্ধ</p>"
     ],
     [
       "INDUSTRY WHITE PAPER · EPAA",
-      "INDUSTRY WHITE PAPER · EPAA"
+      "ইন্ডাস্ট্রি হোয়াইট পেপার · EPAA"
     ],
     [
       "INDUSTRY WHITE PAPER",
-      "INDUSTRY WHITE PAPER"
+      "ইন্ডাস্ট্রি হোয়াইট পেপার"
     ],
     [
       "PUBLICATION · WHITE PAPER",
-      "PUBLICATION · WHITE PAPER"
+      "প্রকাশনা · হোয়াইট পেপার"
     ],
     [
       ">RESEARCH NOTES</p>",
-      ">RESEARCH NOTES</p>"
+      ">গবেষণা নোট</p>"
     ],
     [
       ">RESEARCH NOTE · QUANTUM<",
-      ">RESEARCH NOTE · QUANTUM<"
+      ">গবেষণা নোট · কোয়ান্টাম<"
     ],
     [
       ">RESEARCH · CRYPTOGRAPHY<",
-      ">RESEARCH · CRYPTOGRAPHY<"
+      ">গবেষণা · ক্রিপ্টোগ্রাফি<"
     ],
     [
       ">RESEARCH · AI<",
-      ">RESEARCH · AI<"
+      ">গবেষণা · এআই<"
     ],
     [
       ">RESEARCH · QUANTUM FINANCE<",
-      ">RESEARCH · QUANTUM FINANCE<"
+      ">গবেষণা · কোয়ান্টাম ফাইন্যান্স<"
     ],
     [
       ">RESEARCH · QUANTUM BANKING<",
-      ">RESEARCH · QUANTUM BANKING<"
+      ">গবেষণা · কোয়ান্টাম ব্যাংকিং<"
     ],
     [
       "WHITE PAPER",
-      "WHITE PAPER"
+      "হোয়াইট পেপার"
     ],
     [
       ">Read the white paper</a>",
-      ">Read the white paper</a>"
+      ">হোয়াইট পেপারটি পড়ুন</a>"
     ],
     [
       "title=\"Read the white paper \\(PDF\\)\"",
-      "title=\"Read the white paper (PDF)\""
+      "title=\"হোয়াইট পেপারটি পড়ুন (PDF)\""
     ],
     [
       ">About EPAA</a>",
-      ">About EPAA</a>"
+      ">EPAA সম্পর্কে</a>"
     ],
     [
       "title=\"Visit the Emerging Payments Association Asia\"",
-      "title=\"Visit the Emerging Payments Association Asia\""
+      "title=\"Emerging Payments Association Asia দেখুন\""
     ],
     [
       ">Buy &middot; \\$([0-9]+)\\.([0-9]+)</a>",
-      ">Buy &middot; $\\1.\\2</a>"
+      ">কিনুন &middot; $\\1.\\2</a>"
     ],
     [
       "title=\"Buy the publication on PayPal\"",
-      "title=\"Buy the publication on PayPal\""
+      "title=\"PayPal-এ প্রকাশনাটি কিনুন\""
     ],
     [
       ">Read the article</a>",
-      ">Read the article</a>"
+      ">নিবন্ধটি পড়ুন</a>"
     ],
     [
       " · Free download",
-      " · Free download"
+      " · বিনামূল্যে ডাউনলোড"
     ],
     [
       "Free download<",
-      "Free download<"
+      "বিনামূল্যে ডাউনলোড<"
     ],
     [
       ">Download<",
-      ">Download<"
+      ">ডাউনলোড করুন<"
     ],
     [
       ">Request access<",
-      ">Request access<"
+      ">অ্যাক্সেসের অনুরোধ করুন<"
     ],
     [
       ">English · PDF",
-      ">English · PDF"
+      ">ইংরেজি · PDF"
     ],
     [
       "aria-label=\"Tag: ([^,]+), (\\d+) Posts\"",
-      "aria-label=\"Tag: \\1, \\2 Posts\""
+      "aria-label=\"ট্যাগ: \\1, \\2টি পোস্ট\""
     ],
     [
       "(\\(\\d+) Posts\\)",
-      "\\1 Posts)"
+      "\\1টি পোস্ট)"
     ],
     [
       ">Featured Tags \\((\\d+)\\)</h2>",
-      ">Featured Tags (\\1)</h2>"
+      ">নির্বাচিত ট্যাগ (\\1)</h2>"
     ],
     [
       ">Featured Tags<",
-      ">Featured Tags<"
+      ">নির্বাচিত ট্যাগ<"
     ],
     [
       "<a class=\"pill ghost\" href=\"/fr/contact/\">Get in touch</a>",
-      "<a class=\"pill ghost\" href=\"/bn/jogajog/\">Get in touch</a>"
+      "<a class=\"pill ghost\" href=\"/bn/jogajog/\">যোগাযোগ</a>"
     ],
     [
       ">Get in touch</a>",
@@ -183,31 +183,31 @@
     ],
     [
       "Made with Static Site Generator: Rust-Powered SSG",
-      "Made with Static Site Generator: Rust-Powered SSG"
+      "Static Site Generator দিয়ে তৈরি: Rust-চালিত SSG"
     ],
     [
       "Website created with Static Site Generator \\(SSG\\)",
-      "Website created with Static Site Generator (SSG)"
+      "Static Site Generator (SSG) দিয়ে তৈরি ওয়েবসাইট"
     ],
     [
       "Topics &amp; Tags Index: AI, Payments, Quantum, Rust OSS",
-      "Topics &amp; Tags Index: AI, Payments, Quantum, Rust OSS"
+      "বিষয় ও ট্যাগ সূচি: এআই, পেমেন্ট, কোয়ান্টাম, Rust OSS"
     ],
     [
       "Website Accessibility Statement — Standards &amp; Contact",
-      "Website Accessibility Statement — Standards &amp; Contact"
+      "ওয়েবসাইট প্রবেশযোগ্যতা বিবৃতি: মান ও যোগাযোগ"
     ],
     [
       "Privacy Statement — How Your Data Is Collected &amp; Used",
-      "Privacy Statement — How Your Data Is Collected &amp; Used"
+      "গোপনীয়তা বিবৃতি: আপনার ডেটা কীভাবে সংগৃহীত ও ব্যবহৃত হয়"
     ],
     [
       "Website Terms &amp; Conditions of Use — Sebastien Rousseau",
-      "Website Terms &amp; Conditions of Use — Sebastien Rousseau"
+      "ওয়েবসাইট ব্যবহারের শর্তাবলি — Sebastien Rousseau"
     ],
     [
       ">Latest research<",
-      ">সর্বশেষ গবেষণা পড়ুন<"
+      ">সর্বশেষ গবেষণা<"
     ],
     [
       ">Read latest research<",
@@ -215,43 +215,43 @@
     ],
     [
       ">Featured articles<",
-      ">সর্বশেষ গবেষণা পড়ুন<"
+      ">নির্বাচিত নিবন্ধ<"
     ],
     [
       ">All articles<",
-      ">সর্বশেষ গবেষণা পড়ুন<"
+      ">সব নিবন্ধ<"
     ],
     [
       ">Read more<",
-      ">সর্বশেষ গবেষণা পড়ুন<"
+      ">আরও পড়ুন<"
     ],
     [
       ">Read full article<",
-      ">সর্বশেষ গবেষণা পড়ুন<"
+      ">সম্পূর্ণ নিবন্ধ পড়ুন<"
     ],
     [
       ">Newest first<",
-      ">Newest first<"
+      ">নতুন আগে<"
     ],
     [
       ">Oldest first<",
-      ">Oldest first<"
+      ">পুরনো আগে<"
     ],
     [
       ">By topic<",
-      ">By topic<"
+      ">বিষয় অনুযায়ী<"
     ],
     [
       ">All topics<",
-      ">All topics<"
+      ">সব বিষয়<"
     ],
     [
       ">By tag<",
-      ">By tag<"
+      ">ট্যাগ অনুযায়ী<"
     ],
     [
       ">All tags<",
-      ">All tags<"
+      ">সব ট্যাগ<"
     ],
     [
       ">Published<",
@@ -275,7 +275,7 @@
     ],
     [
       ">Learn more<",
-      ">Learn more<"
+      ">আরও জানুন<"
     ],
     [
       ">Subscribe<",
@@ -283,11 +283,11 @@
     ],
     [
       ">Follow<",
-      ">Follow<"
+      ">অনুসরণ করুন<"
     ],
     [
       ">Latest<",
-      ">সর্বশেষ গবেষণা পড়ুন<"
+      ">সর্বশেষ<"
     ],
     [
       ">__draft_static_pad_72__<",

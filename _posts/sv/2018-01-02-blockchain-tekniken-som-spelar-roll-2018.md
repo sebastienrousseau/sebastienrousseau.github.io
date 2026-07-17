@@ -1,97 +1,101 @@
 ---
-title: "Blockchain: la tecnología que importa en 2018"
-subtitle: "Criptografía de clave privada y redes entre pares al servicio de transacciones seguras"
-description: "La narración del viaje extraordinario para asegurar las transacciones digitales mediante criptografía de clave privada y redes entre pares (P2P)."
+title: "Blockchain förklarad: tekniken som betyder mest"
+subtitle: "Blockchain, distribuerade huvudböcker och tekniken som spelar roll 2018."
+description: "Berättelsen om den extraordinära resan mot att säkra digitala transaktioner genom kryptografi med privata nycklar och peer-to-peer-nätverk (P2P)."
 date: "January 2, 2018"
 language: "sv-SE"
 locale: "sv_SE"
 banner: "https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp"
-banner_alt: "Ordenador portátil apagado sobre una mesa de madera marrón"
-keywords: "blockchain, criptomoneda, Bitcoin, P2P, smart contract, libro mayor distribuido, finanzas, cadena de suministro, identidad digital, tokenización"
+banner_alt: "Avstängd bärbar dator på ett brunt träbord"
+keywords: "pain001, iso 20022, betalningsautomatisering, kostnadsminskning, betalningsbehandling, betalfiler, betalningsinitiering, pain-meddelande, standarder för pain-meddelanden, validering av pain-meddelanden"
 ---
 
-![Ordenador portátil apagado sobre una mesa de madera marrón](https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp).class=\"img-fluid clearfix\"
+![En mycket hög byggnad med många hål i fasaden](https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp).class=\"img-fluid clearfix\"
 
-La blockchain, tecnología subyacente al ascenso fulgurante de las criptomonedas, está transformando empresas, servicios financieros y mercados de capitales. Esta tecnología transformadora cambia la manera en que llevamos a cabo las transacciones y operaciones, haciendo los datos más accesibles, transparentes y seguros.
+Blockchain, den underliggande teknik som driver kryptovalutornas snabba uppgång, omvälver företag, finansiella tjänster och kapitalmarknader. Denna omvandlande teknik förändrar hur vi genomför transaktioner och verksamhetsprocesser genom att göra data mer tillgängliga, transparenta och säkra.
 
-## Perspectiva
+## Insikt
 
-### La génesis del consenso descentralizado
+### Det decentraliserade konsensusets uppkomst
 
-La blockchain emergió como la innovación fundacional que hizo posible el desarrollo de criptomonedas como [Bitcoin][08]. En su núcleo, la blockchain es un libro mayor abierto y distribuido que registra las transacciones de forma verificable y permanente.
+Blockchain växte fram som den grundläggande innovation som möjliggjorde utvecklingen av kryptovalutor som [Bitcoin][08]. I sin kärna fungerar blockchain som en öppen, distribuerad huvudbok som registrerar transaktioner på ett verifierbart och beständigt sätt.
 
-Al permitir que la información digital se distribuya sin ser copiada, la blockchain inauguró un sistema entre pares revolucionario para establecer consenso y confianza. Por primera vez, las transacciones podían aprobarse de forma descentralizada, sin un intermediario centralizado.
+Genom att låta digital information distribueras utan att kopieras banade blockchain väg för ett banbrytande peer-to-peer-system för att etablera konsensus och förtroende. För första gången kunde transaktioner godkännas decentraliserat, utan centraliserade mellanhänder.
 
-La capacidad de la blockchain para facilitar interacciones seguras en línea entre desconocidos sentó las bases de las criptomonedas. Más allá de las finanzas, encierra un potencial revolucionario para transformar los flujos de datos y transacciones en todos los sectores.
+Blockchains förmåga att möjliggöra säkra onlineinteraktioner mellan främlingar lade grunden för kryptovalutorna. Bortom finanssektorn rymmer den en revolutionerande potential att omvandla flöden av data och transaktioner i alla branscher.
 
-## Idea
+## Idé
 
-### Eliminar los terceros de confianza gracias a los libros mayores distribuidos
+### Att eliminera betrodda tredje parter genom distribuerade huvudböcker
 
-Una blockchain organiza los datos en bloques, encadenados cronológicamente. Los nuevos bloques se añaden a través de una red descentralizada de ordenadores en lugar de una parte central. Este libro mayor distribuido se almacena y sincroniza simultáneamente en varios nodos de la red.
+En blockchain organiserar data i block som kedjas samman kronologiskt. Nya block läggs till av ett decentraliserat nätverk av datorer snarare än av en central part. Denna distribuerade huvudbok lagras och synkroniseras samtidigt över flera noder i nätverket.
 
-Los bloques contienen lotes de transacciones con marca temporal, inmutables una vez registrados. La criptografía garantiza la seguridad y la exactitud mientras las transacciones son aprobadas por los participantes de la red. Los smart contracts permiten codificar y ejecutar automáticamente responsabilidades complejas.
+Blocken innehåller tidsstämplade satser av transaktioner, vilka är oföränderliga när de väl registrerats. Kryptografi säkerställer säkerhet och korrekthet när transaktionerna godkänns av nätverkets deltagare. Smarta kontrakt gör det möjligt att kodifiera komplexa åtaganden och verkställa dem automatiskt.
 
-Al permitir transacciones entre pares sin intermediarios centralizados, las blockchains eliminan los puntos únicos de fallo y crean transparencia. Los usuarios individuales conservan el control sobre sus datos y transacciones. El enfoque descentralizado construye confianza y responsabilidad a gran escala.
+Genom att möjliggöra peer-to-peer-transaktioner utan centraliserade mellanhänder eliminerar blockkedjor enskilda felpunkter och skapar transparens. Enskilda användare behåller kontrollen över sina data och transaktioner. Det decentraliserade angreppssättet bygger förtroende och ansvarsskyldighet i stor skala.
 
-## Impacto
+## Genomslag
 
-### Una transformación radical en todos los sectores
+### Driver på en radikal omvandling i alla sektorer
 
-La blockchain permite cambios profundos en finanzas, banca, cadenas de suministro, sanidad, sector inmobiliario y otros sectores. Al eliminar la asimetría de información y mitigar los riesgos de contraparte, la blockchain favorece la transparencia y la integridad de las transacciones.
+Blockchain möjliggör djupgående förändringar inom finans, bankverksamhet, försörjningskedjor, hälso- och sjukvård, fastigheter och andra sektorer. Genom att undanröja informationsasymmetri och begränsa motpartsrisker främjar blockchain transparens och integritet i transaktionerna.
 
-Las criptomonedas han introducido nuevos modelos de dinero programable, finanzas descentralizadas y transferencias globales entre pares. En la banca, las blockchains mejoran la velocidad y la eficiencia de los pagos. La tokenización permite también nuevos métodos de financiación.
+Kryptovalutor introducerade nya modeller för programmerbara pengar, decentraliserad finans och globala peer-to-peer-överföringar. Inom bankverksamhet förbättrar blockkedjor betalningarnas hastighet och effektivitet. Tokenisering öppnar dessutom för nya finansieringsformer.
 
-La blockchain garantiza asimismo el origen de los productos y un aprovisionamiento ético en las cadenas logísticas. La gestión de historiales médicos aprovecha su seguridad y exactitud. La blockchain comienza incluso a sacudir el voto, el seguimiento de las regalías musicales y los sistemas de identidad digital.
+Blockchain säkerställer vidare produkters ursprung och etisk anskaffning i försörjningskedjor. Hanteringen av patientjournaler drar nytta av dess säkerhet och korrekthet. Blockchain börjar till och med omvälva röstning, spårning av musikroyalties och system för digital identitet.
 
-## Casos de uso
+## Användningsfall
 
-### Implementaciones diversas en todos los sectores
+### Skiftande implementeringar i olika branscher
 
-La versatilidad de la blockchain ha generado aplicaciones innovadoras en todos los sectores:
+Blockchains mångsidighet har gett upphov till innovativa tillämpningar i flera sektorer:
 
-- **Finanzas**: criptomonedas, plataformas descentralizadas, negociación de valores tokenizados, pagos transfronterizos
+- **Finans:** kryptovalutor, decentraliserade börser, handel med tokeniserade värdepapper, gränsöverskridande betalningar
 
-- **Cadena de suministro**: trazabilidad de la procedencia de los bienes, mejora de la transparencia en producción y distribución
+- **Försörjningskedjan:** spårning av varors ursprung, förbättrad transparens i tillverkning och distribution
 
-- **Sanidad**: almacenamiento seguro de datos médicos, facilitación del intercambio entre proveedores
+- **Hälso- och sjukvård:** säker lagring av medicinska data, förenklat utbyte mellan vårdgivare
 
-- **Gobierno**: registros de identidad digital, sistemas de votación transparentes
+- **Offentlig förvaltning:** register för digital identitet, transparenta röstningssystem
 
-- **Seguros**: tramitación automatizada mediante smart contracts, prevención del fraude
+- **Försäkring:** automatiserad handläggning med smarta kontrakt, förebyggande av bedrägerier
 
-- **Inmobiliario**: transacciones inmobiliarias tokenizadas, registro de títulos compartido
+- **Fastigheter:** tokeniserade fastighetstransaktioner, gemensamt lagfartsregister
 
-- **Energía**: intercambio de energía entre pares, seguimiento de créditos de energía renovable
+- **Energi:** peer-to-peer-handel med energi, spårning av certifikat för förnybar energi
 
-## Límites
+## Begränsningar
 
-### Obstáculos persistentes para la adopción masiva
+### Kvarstående hinder för bred spridning
 
-Aunque transformadora, la blockchain presenta limitaciones —regulación, interoperabilidad, complejidad y escalabilidad— que frenan la adopción masiva.
+Även om blockchain är omvandlande kvarstår begränsningar kring reglering, interoperabilitet, komplexitet och skalbarhet som hinder för bred spridning.
 
-La falta de claridad regulatoria entre jurisdicciones inhibe la inversión institucional. Resolver los desafíos relacionados con la privacidad y la gestión de datos es crucial. La seguridad de la red y el consumo energético también requieren atención a medida que la blockchain escala.
+Bristen på regulatorisk tydlighet mellan jurisdiktioner hämmar institutionella investeringar. Att lösa utmaningarna kring integritet och datahantering är avgörande. Nätverkssäkerhet och energianvändning kräver också uppmärksamhet i takt med att blockchain skalar upp.
 
-Las plataformas en silos deben alcanzar la interoperabilidad. La experiencia de usuario y el diseño de interfaz deben mejorar. La alfabetización en blockchain del público general y de los responsables políticos acelerará aún más la aceptación.
+Isolerade plattformar behöver uppnå interoperabilitet. Användarupplevelse och gränssnittsdesign måste förbättras. Ökad blockchain-kunskap hos allmänhet och beslutsfattare kommer att driva acceptansen vidare.
 
-## Perspectivas
+## Utsikter
 
-### Trayectoria positiva pese a las incertidumbres
+### Positiv utveckling trots osäkerheter
 
-La blockchain parece dispuesta a continuar su crecimiento exponencial a medida que las organizaciones reconocen su potencial disruptivo. Sin embargo, las incertidumbres en torno a la regulación, los estándares y la percepción pública siguen siendo obstáculos.
+Blockchain förefaller redo för fortsatt exponentiell tillväxt i takt med att organisationer inser dess omvälvande potential. Osäkerheter kring reglering, standarder och allmänhetens uppfattningar kvarstår dock som hinder.
 
-Se espera que la tecnología se extienda a través de los sectores económicos, con un fuerte crecimiento proyectado especialmente en finanzas, cadenas logísticas y sanidad. Pero una innovación responsable es esencial.
+Tekniken väntas genomsyra alla ekonomiska sektorer, med hög förväntad tillväxt inom bland annat finans, försörjningskedjor och hälso- och sjukvård. Men ansvarsfull innovation är avgörande.
 
-Con vientos favorables —políticas de apoyo, soluciones de interoperabilidad y diseño centrado en el usuario— que superen las limitaciones actuales, la blockchain podría recablear profundamente la manera en que la sociedad registra, transfiere y distribuye el valor.
+Med möjliggörare som stödjande politik, interoperabilitetslösningar och användarcentrerad design som övervinner dagens begränsningar kan blockchain i grunden komma att förändra hur samhället registrerar, överför och fördelar värde.
 
-## Conclusión
+## Slutsats
 
-### Sentar las bases de un futuro descentralizado
+### Grunden läggs för en decentraliserad framtid
 
-La introducción de la blockchain marca un momento crucial que amplió las posibilidades de intercambio seguro de activos y datos digitales mediante un consenso descentralizado. Sustentar las criptomonedas no es más que su punto de partida.
+Blockchains intåg markerar ett avgörande ögonblick som vidgade möjligheterna att säkert utbyta digitala tillgångar och data genom decentraliserat konsensus. Att bära upp kryptovalutorna är bara dess startpunkt.
 
-Al eliminar los terceros de confianza, la blockchain ofrece el potencial de reestructurar los flujos de valor en finanzas, comercio, gobernanza y sociedad. Pese a sus límites, su trayectoria apunta a un emocionante futuro descentralizado en todos los sectores.
+Genom att eliminera betrodda tredje parter erbjuder blockchain potentialen att omstrukturera värdeflöden inom finans, handel, samhällsstyrning och samhället i stort. Trots begränsningarna pekar utvecklingen mot en spännande decentraliserad framtid i alla sektorer.
 
-Al igual que internet antes que ella, la blockchain es una tecnología fundacional dispuesta a desbloquear nuevos modelos construidos sobre la transparencia y la confianza entre pares. Esta innovación revolucionaria promete rediseñar nuestras economías digitales y nuestras vidas conectadas en los próximos años.
+Liksom internet före den är blockchain en grundläggande teknik som står redo att frigöra nya modeller drivna av transparens och förtroende mellan jämlikar. Denna revolutionerande innovation lovar att omforma våra digitala ekonomier och uppkopplade liv under de kommande åren.
+
+![avdelare](https://cloudcdn.pro/clients/common/images/elements/divider.svg).class=\"m-10 w-100\"
+
+**Därmed är vår gemensamma stund till ända. Tack för din tid!**
 
 [08]: /2018-01-01-bitcoin-the-year-in-review/index.html

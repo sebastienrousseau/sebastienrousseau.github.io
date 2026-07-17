@@ -20,107 +20,107 @@
   "_comment": "Hausa (ha) static-page metadata — DRAFT pending native review.",
   "404": {
     "title": "404 — Sebastien Rousseau",
-    "subtitle": "Page not found.",
-    "description": "The requested page could not be found.",
-    "keywords": "404, not found",
+    "subtitle": "Ba a sami shafin ba.",
+    "description": "Ba a iya samun shafin da aka nema ba.",
+    "keywords": "404, ba a samu ba",
     "_draft": true
   },
   "about": {
-    "title": "About — Sebastien Rousseau",
-    "subtitle": "Shaping the future of banking and financial services through the strategic integration of AI, post-quantum cryptography and blockchain technology.",
-    "description": "Sebastien Rousseau, senior banking technologist: applied AI, ISO 20022 migration, post-quantum cryptography, structural transformation of wholesale payments.",
-    "keywords": "Sebastien Rousseau, biography, banking, payments, AI, ISO 20022, post-quantum cryptography, HSBC, PayPal, Barclays",
+    "title": "Game da mu — Sebastien Rousseau",
+    "subtitle": "Tsara makomar banki da ayyukan kuɗi ta hanyar haɗa AI, kiriftografi bayan kwantum da fasahar blockchain bisa dabara.",
+    "description": "Sebastien Rousseau, babban ƙwararren fasahar banki: AI mai amfani, ƙaura zuwa ISO 20022, kiriftografi bayan kwantum da sauyin tsarin biyan kuɗi na manyan ma'amaloli.",
+    "keywords": "Sebastien Rousseau, tarihin rayuwa, banki, biyan kuɗi, AI, ISO 20022, kiriftografi bayan kwantum, HSBC, PayPal, Barclays",
     "_draft": true
   },
   "accessibility": {
-    "title": "Accessibility — Sebastien Rousseau",
-    "subtitle": "Committed to digital accessibility for people with disabilities.",
-    "description": "Accessibility statement: WCAG 2.2 AA compliance, inclusive principles, feedback and contact details for reporting issues.",
-    "keywords": "accessibility, WCAG, compliance, digital inclusion, audit",
+    "title": "Samun dama — Sebastien Rousseau",
+    "subtitle": "Mun himmatu ga samun dama ta dijital ga masu naƙasa.",
+    "description": "Sanarwar samun dama: bin ka'idar WCAG 2.2 AA, ka'idojin haɗa kowa, ra'ayoyi da bayanan tuntuɓa don rahoton matsaloli.",
+    "keywords": "samun dama, WCAG, bin ka'ida, haɗa kowa ta dijital, bincike",
     "_draft": true
   },
   "articles": {
-    "title": "Articles — Sebastien Rousseau",
-    "subtitle": "Articles on AI, post-quantum cryptography, ISO 20022 and the future of payments.",
-    "description": "Articles on applied AI, post-quantum cryptography, ISO 20022 payments and the transformation of wholesale payments.",
-    "keywords": "articles, research, AI, post-quantum cryptography, ISO 20022, wholesale payments",
+    "title": "Labarai — Sebastien Rousseau",
+    "subtitle": "Labarai kan AI, kiriftografi bayan kwantum, ISO 20022 da makomar biyan kuɗi.",
+    "description": "Labarai kan AI mai amfani, kiriftografi bayan kwantum, biyan kuɗi na ISO 20022 da sauyin biyan kuɗi na manyan ma'amaloli.",
+    "keywords": "labarai, bincike, AI, kiriftografi bayan kwantum, ISO 20022, biyan kuɗi na manyan ma'amaloli",
     "_draft": true
   },
   "contact": {
-    "title": "Contact — Sebastien Rousseau",
-    "subtitle": "Have a question or need advice? Get in touch.",
-    "description": "Contact Sebastien Rousseau for consulting on payments transformation, ISO 20022 migration or post-quantum strategy.",
-    "keywords": "contact, consulting, payments, ISO 20022, post-quantum cryptography",
+    "title": "Tuntube mu — Sebastien Rousseau",
+    "subtitle": "Kana da tambaya ko kana buƙatar shawara? Tuntube mu.",
+    "description": "Tuntuɓi Sebastien Rousseau don shawarwari kan sauyin biyan kuɗi, ƙaura zuwa ISO 20022 ko dabarun bayan kwantum.",
+    "keywords": "tuntuɓa, shawarwari, biyan kuɗi, ISO 20022, kiriftografi bayan kwantum",
     "_draft": true
   },
   "made-with-static-site-generator": {
-    "title": "Made with Static Site Generator — Sebastien Rousseau",
-    "subtitle": "Discover the next-generation static site generator.",
-    "description": "This site is generated with Static Site Generator, a fast Rust-based static site generator.",
-    "keywords": "Static Site Generator, static site generator, Rust, performance",
+    "title": "An yi da Static Site Generator — Sebastien Rousseau",
+    "subtitle": "Gano Static Site Generator na sabon zamani.",
+    "description": "An ƙirƙiri wannan gidan yanar gizon da Static Site Generator, injin gina shafukan tsaye mai sauri wanda aka gina da Rust.",
+    "keywords": "Static Site Generator, injin gina shafukan tsaye, Rust, saurin aiki",
     "_draft": true
   },
   "offline": {
-    "title": "Offline — Sebastien Rousseau",
-    "subtitle": "Check your connection and try again.",
-    "description": "You are offline. Please reconnect to access the content.",
-    "keywords": "offline, PWA",
+    "title": "Babu haɗi — Sebastien Rousseau",
+    "subtitle": "Duba haɗin yanar gizonka ka sake gwadawa.",
+    "description": "Ba ka haɗe da yanar gizo ba. Da fatan za ka sake haɗawa don samun abun ciki.",
+    "keywords": "babu haɗi, PWA",
     "_draft": true
   },
   "papers": {
-    "title": "Papers — Sebastien Rousseau",
-    "subtitle": "Industry white papers and applied research for senior leaders in payments and security.",
-    "description": "Articles, reports and publications by Sebastien Rousseau on AI, ISO 20022 payments and post-quantum cryptography.",
-    "keywords": "papers, publications, reports, research, ISO 20022, AI, post-quantum cryptography",
+    "title": "Takardun bincike — Sebastien Rousseau",
+    "subtitle": "Farar takardu na masana'antu da bincike mai amfani ga manyan shugabanni na fannin biyan kuɗi da tsaro.",
+    "description": "Labarai, rahotanni da wallafe-wallafen Sebastien Rousseau kan AI, biyan kuɗi na ISO 20022 da kiriftografi bayan kwantum.",
+    "keywords": "takardun bincike, wallafe-wallafe, rahotanni, bincike, ISO 20022, AI, kiriftografi bayan kwantum",
     "_draft": true
   },
   "playlists": {
-    "title": "Playlists — Sebastien Rousseau",
-    "subtitle": "Curated Spotify playlists for deep work, creativity and engineering mindset.",
-    "description": "Sebastien Rousseau's music selection.",
-    "keywords": "playlists, music",
+    "title": "Jerin waƙoƙi — Sebastien Rousseau",
+    "subtitle": "Zaɓaɓɓun jerin waƙoƙi na Spotify don aiki mai zurfi, ƙirƙira da tunanin injiniya.",
+    "description": "Zaɓin waƙoƙin Sebastien Rousseau.",
+    "keywords": "jerin waƙoƙi, waƙa",
     "_draft": true
   },
   "privacy": {
-    "title": "Privacy Policy — Sebastien Rousseau",
-    "subtitle": "Your privacy matters.",
-    "description": "How this site collects, uses and protects your data. Anonymous analytics, cookies, hosting and GDPR rights.",
-    "keywords": "privacy, GDPR, cookies, personal data, analytics",
+    "title": "Manufar sirri — Sebastien Rousseau",
+    "subtitle": "Sirrinka yana da muhimmanci.",
+    "description": "Yadda wannan gidan yanar gizon ke tattarawa, amfani da kuma kare bayananka. Ƙididdiga marasa suna, cookies, ɗaukar nauyin dandali da haƙƙoƙin GDPR.",
+    "keywords": "sirri, GDPR, cookies, bayanan sirri, ƙididdiga",
     "_draft": true
   },
   "projects": {
-    "title": "Projects — Sebastien Rousseau",
-    "subtitle": "Open-source projects in Python, Rust and JavaScript for the future of finance.",
-    "description": "Portfolio of open-source libraries Sebastien Rousseau maintains for payments, cross-border settlement and quantum-resistant cryptography.",
-    "keywords": "open-source projects, Python, Rust, payments, ISO 20022, post-quantum cryptography",
+    "title": "Ayyuka — Sebastien Rousseau",
+    "subtitle": "Ayyukan buɗaɗɗen tushe cikin Python, Rust da JavaScript don makomar harkar kuɗi.",
+    "description": "Tarin ɗakunan karatu na buɗaɗɗen tushe da Sebastien Rousseau ke kulawa don biyan kuɗi, daidaita ma'amaloli tsakanin ƙasashe da kiriftografi mai jure kwantum.",
+    "keywords": "ayyukan buɗaɗɗen tushe, Python, Rust, biyan kuɗi, ISO 20022, kiriftografi bayan kwantum",
     "_draft": true
   },
   "tags": {
     "title": "Tags — Sebastien Rousseau",
-    "subtitle": "Browse the site by topic: AI, payments, post-quantum cryptography, open source.",
-    "description": "Browse articles by tag: AI, ISO 20022, blockchain, post-quantum cryptography and more.",
-    "keywords": "tags, browse by topic",
+    "subtitle": "Bincika gidan yanar gizon bisa batu: AI, biyan kuɗi, kiriftografi bayan kwantum, buɗaɗɗen tushe.",
+    "description": "Bincika labarai bisa tag: AI, ISO 20022, blockchain, kiriftografi bayan kwantum da sauransu.",
+    "keywords": "tags, bincika bisa batu",
     "_draft": true
   },
   "terms": {
-    "title": "Terms of Use — Sebastien Rousseau",
-    "subtitle": "General terms of use of the site.",
-    "description": "General terms of use for sebastienrousseau.com: content licence, restrictions, trademarks and jurisdiction.",
-    "keywords": "terms, legal notice, licence, copyright",
+    "title": "Sharuɗɗan amfani — Sebastien Rousseau",
+    "subtitle": "Sharuɗɗan amfani na gaba ɗaya na gidan yanar gizon.",
+    "description": "Sharuɗɗan amfani na gaba ɗaya na sebastienrousseau.com: lasisin abun ciki, ƙuntatawa, alamun kasuwanci da hurumin shari'a.",
+    "keywords": "sharuɗɗa, sanarwar shari'a, lasisi, haƙƙin mallaka",
     "_draft": true
   },
   "thanks": {
-    "title": "Thanks — Sebastien Rousseau",
-    "subtitle": "Thank you for getting in touch!",
-    "description": "Thank you for your message. I will reply very soon.",
-    "keywords": "thanks",
+    "title": "Godiya — Sebastien Rousseau",
+    "subtitle": "Mun gode da tuntuɓarka!",
+    "description": "Mun gode da saƙonka. Zan amsa nan ba da daɗewa ba.",
+    "keywords": "godiya",
     "_draft": true
   },
   "topics": {
-    "title": "Topics — Sebastien Rousseau",
-    "subtitle": "Articles on AI, post-quantum cryptography, ISO 20022 and the future of payments.",
-    "description": "Explore analyses by theme: applied AI, ISO 20022 payments, post-quantum cryptography and transformation of wholesale payments.",
-    "keywords": "topics, themes, AI, payments, ISO 20022, post-quantum cryptography",
+    "title": "Batutuwa — Sebastien Rousseau",
+    "subtitle": "Labarai kan AI, kiriftografi bayan kwantum, ISO 20022 da makomar biyan kuɗi.",
+    "description": "Bincika nazarce-nazarce bisa jigo: AI mai amfani, biyan kuɗi na ISO 20022, kiriftografi bayan kwantum da sauyin biyan kuɗi na manyan ma'amaloli.",
+    "keywords": "batutuwa, jigogi, AI, biyan kuɗi, ISO 20022, kiriftografi bayan kwantum",
     "_draft": true
   }
 }

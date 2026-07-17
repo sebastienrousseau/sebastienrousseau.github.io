@@ -2964,3 +2964,15 @@ def test_write_ai_txt_returns_false_when_content_unchanged(tmp_path):
     assert write_ai_txt(tmp_path) is True
     # Second write — same content, returns False.
     assert write_ai_txt(tmp_path) is False
+
+
+def test_static_slug_for_malformed_slugmap_falls_back_to_key(monkeypatch):
+    # A missing/malformed slugs.json makes _slug_maps raise; the localizer
+    # must fall back to the EN slug rather than crash the postbuild pass.
+    from postbuild_lib import article_furniture as af
+
+    def _boom(_lang):
+        raise RuntimeError("malformed slugs.json")
+
+    monkeypatch.setattr(af, "_slug_maps", _boom)
+    assert af._static_slug_for("fr", "tags") == "tags"

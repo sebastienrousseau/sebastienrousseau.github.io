@@ -1,88 +1,93 @@
 ---
-title: "Static Site Generator: el generador de sitios estáticos más rápido basado en Rust"
-subtitle: "Un SSG ultrarrápido, accesible y optimizado para SEO, escrito en Rust"
-description: "Cree sitios estáticos de alto impacto, escalables hasta el infinito y enteramente bajo su control, gracias a Static Site Generator: un SSG ultrarrápido escrito en Rust."
+title: "Static Site Generator: den snabbaste Rust-baserade SSG:n"
+subtitle: "Static Site Generator, den snabbaste Rust-baserade statiska sajtgeneratorn för webbplatser med hög genomslagskraft."
+description: "Skapa statiska webbplatser med hög genomslagskraft, oändliga möjligheter, obegränsad skalbarhet och en helt unik webbnärvaro som du själv kontrollerar."
 date: "October 9, 2023"
 language: "sv-SE"
 locale: "sv_SE"
 banner: "https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp"
-banner_alt: "Ordenador portátil apagado sobre una mesa blanca con un vaso de agua a la izquierda y un bolígrafo, un cuaderno y una planta a la derecha"
-keywords: "Static Site Generator, generador de sitios estáticos, SSG, Rust, rendimiento, SEO, accesibilidad, WCAG, ADA, PWA, Markdown, GFM, Atom, RSS"
+banner_alt: "Avstängd bärbar dator på ett vitt bord med ett glas vatten till vänster och en penna, ett anteckningsblock och en växt till höger"
+keywords: "pain001, ISO 20022, betalningsautomation, kostnadsminskning, betalningsbehandling, betalningsfiler, betalningsinitiering, pain-meddelande, standarder för pain-meddelanden, validering av pain-meddelanden"
 ---
 
-![Ordenador portátil apagado sobre una mesa blanca con un vaso de agua a la izquierda y un bolígrafo, un cuaderno y una planta a la derecha](https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp).class=\"img-fluid clearfix\"
+![Avstängd bärbar dator på ett vitt bord med ett glas vatten till vänster och en penna, ett anteckningsblock och en växt till höger](https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp).class=\"img-fluid clearfix\"
 
-## Perspectiva
+## Insikt
 
-### Un generador de sitios estáticos de alta calidad para la web moderna
+### En statisk sajtgenerator av hög kvalitet för den moderna webben
 
-En un panorama digital en perpetua evolución, la velocidad y la calidad son primordiales. Quería a toda costa encontrar una manera de generar rápidamente sitios estáticos que aunaran alta calidad, accesibilidad y adecuación al SEO.
+I ett digitalt landskap i ständig utveckling är hastighet och kvalitet av största vikt. Jag var fast besluten att hitta ett sätt att snabbt generera statiska webbplatser som utmärker sig genom hög kvalitet, tillgänglighet och SEO-vänlighet.
 
-Los sitios estáticos son páginas web que permanecen fijas e inalteradas mientras no se actualicen manualmente. Están constituidos por archivos HTML, CSS y, a veces, JavaScript, ofreciendo tiempos de carga rápidos y una seguridad reforzada respecto a los sitios dinámicos.
+Statiska webbplatser är webbsidor som förblir fasta och oförändrade tills de uppdateras manuellt. De består av HTML-, CSS- och ibland JavaScript-filer och erbjuder snabba laddningstider och förbättrad säkerhet jämfört med dynamiska webbplatser.
 
-Por desgracia, ningún producto existente respondía a mis exigencias listo para usar. Por ello tomé la iniciativa de crear una nueva solución desde cero. Mi objetivo: ofrecer una alternativa rápida y fiable a los generadores de sitios estáticos disponibles en el mercado, y expandir los límites de lo posible con Rust.
+Tyvärr uppfyllde ingen befintlig produkt mina krav direkt ur lådan. Därför tog jag mig an att skapa en ny lösning från grunden. Mitt mål var att erbjuda ett snabbt och pålitligt alternativ till de statiska sajtgeneratorer som finns på marknaden och att tänja på gränserna för vad som var möjligt med Rust.
 
-## Idea
+## Idé
 
-### Una solución con escalabilidad y personalización infinitas
+### En lösning med oändlig skalbarhet och anpassningsbarhet
 
-Desarrollé [**Static Site Generator ⧉**][00] para proporcionar un generador de sitios estáticos (SSG) ultrarrápido construido con [**Rust ⧉**][03], que simplifica la creación de sitios estáticos optimizados para SEO y plenamente alineados con los estándares de accesibilidad.
+Jag utvecklade [**Static Site Generator ⧉**][00] med målet att tillhandahålla en blixtsnabb statisk sajtgenerator (SSG) byggd med [**Rust ⧉**][03] som förenklar processen att skapa statiska webbplatser optimerade för SEO och helt i linje med tillgänglighetsstandarder.
 
-La velocidad y la fiabilidad eran mis prioridades absolutas durante el desarrollo de Static Site Generator. Rust es un lenguaje de programación de sistemas reconocido por su rapidez y fiabilidad, lo que lo convierte en la herramienta ideal para desarrollar generadores de sitios estáticos de alto rendimiento.
+Hastighet och tillförlitlighet var mina främsta prioriteringar under utvecklingen av Static Site Generator. Rust är ett systemprogrammeringsspråk som är känt för sin hastighet och tillförlitlighet, vilket gör det idealiskt för att utveckla högpresterande statiska sajtgeneratorer.
 
-Estaba impaciente por explorar los límites de lo posible con Markdown. Mi objetivo: asegurarme de que Static Site Generator pudiera producir sitios estáticos rápidos, seguros y fiables. Quería que fueran accesibles a todos, cómodos y fáciles de actualizar, y que rindieran bien en los motores de búsqueda.
+Jag var ivrig att utforska gränserna för vad jag kunde åstadkomma med Markdown. Mitt mål var att säkerställa att Static Site Generator kunde generera statiska webbplatser som är snabba, säkra och pålitliga. Jag ville att de skulle vara tillgängliga för alla, användarvänliga och lätta att uppdatera samt prestera väl i sökmotorer.
 
-## Impacto
+## Genomslag
 
-### Un nuevo estándar para los generadores de sitios estáticos
+### En ny standard för statiska sajtgeneratorer
 
-Generar un sitio estático con Static Site Generator es sin esfuerzo, lo que permite concentrarse en el contenido para maximizar el impacto en la audiencia destinataria. El proceso es directo y se cierra en unos pocos milisegundos.
+Att generera en statisk webbplats med Static Site Generator är enkelt, vilket gör det möjligt att fokusera på innehåll som maximerar genomslaget hos den avsedda målgruppen. Processen är okomplicerad och slutförs på millisekunder.
 
-El resultado son sitios totalmente responsive, conformes con las [**Web Content Accessibility Guidelines (WCAG) ⧉**][01] y la [**ADA ⧉**][02], y optimizados para SEO desde el principio.
+Resultatet är en webbplats som är helt responsiv, uppfyller [**Web Content Accessibility Guidelines (WCAG) ⧉**][01] och [**ADA ⧉**][02] samt är optimerad för sökmotoroptimering (SEO) från första början.
 
-## Incentivos
+## Incitament
 
-### Abrazar un nuevo paradigma exige coraje y confianza
+### Att omfamna ett nytt paradigm kräver mod och tillförsikt
 
-[**Static Site Generator ⧉**][00] introduce una perspectiva nueva: un enfoque innovador para comprender la web. Con un diseño meticulosamente concebido, permite a los creadores de contenido y a los profesionales de la creación enriquecer la experiencia centrada en el cliente.
+[**Static Site Generator ⧉**][00] introducerar ett nytt perspektiv: ett innovativt sätt att förstå webben. Med sin omsorgsfullt utformade design ger den innehållsskapare och kreativa yrkesverksamma möjlighet att förbättra den kundcentrerade upplevelsen.
 
-**Funcionalidades clave:**
+**Viktiga funktioner:**
 
-* Soporte completo de [GitHub Flavoured Markdown ⧉ (GFM)][04]
-* Integraciones [Google][05] y [Bing][06] Analytics
-* Compatibilidad con diversos temas HTML y plantillas premium
-* Generación de feeds Atom y RSS para blogs
-* Minificación del código fuente para el rendimiento y el SEO
-* Servidor de desarrollo [Rust][07] integrado para pruebas locales y desarrollo
-* Soporte de múltiples formatos de contenido (Markdown, YAML, JSON, TOML, XML)
-* Generación automática de sitemaps, robots.txt, registros CNAME y páginas 404 personalizadas
-* Soporte de aplicaciones web progresivas (PWA) para la navegación sin conexión
-* Soporte de plantillas personalizadas y temas HTML
+* Fullständigt stöd för [GitHub Flavoured Markdown ⧉ (GFM)][04]
+* Integration med [Google][05] och [Bing][06] Analytics
+* Kompatibilitet med olika HTML-teman och premiummallar
+* Generering av Atom- och RSS-flöden för bloggar
+* Minifiering av källkod för bättre prestanda och SEO
+* Inbyggd [Rust][07]-utvecklingsserver för lokal testning och utveckling
+* Stöd för flera innehållsformat (Markdown, YAML, JSON, TOML, XML)
+* Automatisk generering av sitemaps, robots.txt, CNAME-poster och anpassade 404-sidor
+* Stöd för progressiva webbappar (PWA) för webbläsning offline
+* Stöd för anpassade mallar och HTML-teman
 
-Cada funcionalidad refleja valores como simplicidad, fiabilidad y escalabilidad. [**Static Site Generator ⧉**][00] está concebido para ayudar a crear y mantener sitios estáticos de alta calidad que respondan a las necesidades de los usuarios modernos.
+Varje funktion speglar värden som enkelhet, tillförlitlighet och skalbarhet. [**Static Site Generator ⧉**][00] är utformad för att hjälpa till att skapa och underhålla statiska webbplatser av hög kvalitet som möter moderna användares behov.
 
-### Optimización SEO
+### SEO-optimering
 
-[**Static Site Generator ⧉**][00] está concebido para ayudar a los usuarios a crear sitios estáticos optimizados para los motores de búsqueda. Entre las funcionalidades clave de SEO:
+[**Static Site Generator ⧉**][00] är utformad för att hjälpa användare att skapa statiska webbplatser som är optimerade för sökmotorer. Några av de viktigaste SEO-funktionerna är:
 
-* Generación automática de sitemaps y archivos robots.txt
-* Soporte de páginas 404 personalizadas
-* Código HTML limpio y bien estructurado
-* Tiempos de carga rápidos
-* Diseño responsive
-* Conformidad de accesibilidad
+* Automatisk generering av sitemaps och robots.txt-filer
+* Stöd för anpassade 404-sidor
+* Ren och välstrukturerad HTML-kod
+* Snabba laddningstider
+* Responsiv design
+* Efterlevnad av tillgänglighetskrav
 
-[**Static Site Generator ⧉**][00] es un generador de sitios estáticos potente y polivalente que ofrece una amplia gama de funcionalidades y beneficios. Está concebido para ayudar a los usuarios a crear y mantener sitios estáticos de alta calidad, optimizados para SEO y que ofrecen una experiencia de usuario superior.
+[**Static Site Generator ⧉**][00] är en kraftfull och mångsidig statisk sajtgenerator som erbjuder ett brett utbud av funktioner och fördelar. Den är utformad för att hjälpa användare att skapa och underhålla statiska webbplatser av hög kvalitet som är optimerade för SEO och levererar en överlägsen användarupplevelse.
 
-¿Listo para crear en unos minutos un sitio estático de alto rendimiento que impulsará su tráfico y sus conversiones?
+Redo att på några minuter skapa en högpresterande statisk webbplats som ökar din trafik och dina konverteringar?
 
-[**Pruebe Static Site Generator ⧉**][00] gratis hoy y compruebe la diferencia.
+[**Prova Static Site Generator ⧉**][00] gratis idag och se skillnaden!
 
-[00]: https://static-site-generator.com/ "Static Site Generator, el generador de sitios estáticos más rápido basado en Rust"
+![avdelare](https://cloudcdn.pro/clients/common/images/elements/divider.svg).class=\"m-10 w-100\"
+
+**Därmed avslutar vi vår tid tillsammans. Tack för din tid!**
+
+[00]: https://static-site-generator.com/ "Static Site Generator, den snabbaste Rust-baserade statiska sajtgeneratorn (SSG)"
 [01]: https://www.w3.org/WAI/standards-guidelines/wcag/ "Web Content Accessibility Guidelines (WCAG)"
 [02]: https://www.access-board.gov/ada/ "Americans with Disabilities Act (ADA)"
-[03]: https://www.rust-lang.org/ "Rust Programming Language"
+[03]: https://www.rust-lang.org/ "Programmeringsspråket Rust"
 [04]: https://github.github.com/gfm/ "GitHub Flavored Markdown Spec"
 [05]: https://analytics.google.com/analytics/web/ "Google Analytics"
 [06]: https://www.bing.com/webmasters/ "Bing Webmaster Tools"
-[07]: https://www.rust-lang.org/tools/install "Rust Installation Guide"
+[07]: https://www.rust-lang.org/tools/install "Installationsguide för Rust"
+[08]: https://www.markdownguide.org/ "The Markdown Guide"

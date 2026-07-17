@@ -1,169 +1,169 @@
 ---
-title: "Estado de la IA y la computación cuántica en la banca: revisión 2023"
-subtitle: "Configurar el futuro de la banca: IA, computación cuántica, modelos de código abierto y panorama regulatorio"
-description: "Explorar el panorama tecnológico 2023: IA y computación cuántica revolucionando la banca, auge de los modelos de código abierto, regulaciones y gobernanza en evolución."
+title: "Läget för AI och kvantdatorer i banksektorn: en tillbakablick på 2023"
+subtitle: "Formar bankernas framtid: AI, kvantdatorer, modeller med öppen källkod och regelverkslandskapet"
+description: "En genomgång av 2023 års tekniklandskap: AI och kvantdatorer revolutionerar banksektorn, modeller med öppen källkod växer fram och regelverk och styrning utvecklas"
 date: "December 18, 2023"
 language: "sv-SE"
 locale: "sv_SE"
 banner: "https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp"
-banner_alt: "Estado de la IA y la computación cuántica en la banca: revisión 2023"
-keywords: "IA en la banca, computación cuántica, tecnología financiera, IA de código abierto, gestión del riesgo, seguridad cuántica, regulación de la IA, ética de la IA, gobernanza de la IA, innovación bancaria"
+banner_alt: "Läget för AI och kvantdatorer i banksektorn: en tillbakablick på 2023"
+keywords: "AI i banksektorn, kvantdatorer, finansteknik, AI med öppen källkod, riskhantering, kvantsäkerhet, AI-reglering, AI-etik, AI-styrning, bankinnovation"
 ---
 
-## Perspectiva
+## Insikt
 
-En 2023, la intersección de la **inteligencia artificial (IA)** y la **computación cuántica (QC)** ha impactado profundamente en la **industria bancaria y financiera**. Estas tecnologías han revolucionado la manera en que operan las instituciones financieras, impactando significativamente los pagos, la gestión del riesgo y la ciberseguridad.
+Under 2023 har skärningspunkten mellan **artificiell intelligens (AI)** och **kvantdatorer (QC)** haft en djupgående inverkan på **bank- och finansbranschen**. Dessa tekniker har revolutionerat sättet som finansinstitut arbetar på, med betydande effekter på betalningar, riskhantering och cybersäkerhet.
 
-Este artículo discute el impacto de los **modelos de IA de código abierto**, la **computación cuántica en seguridad transaccional** y las **regulaciones y la gobernanza** sobre la banca y las finanzas.
-
-![divider][divider].class=\"m-10 w-100\"
-
-## La importancia de la IA y la computación cuántica en la industria bancaria
-
-La industria bancaria atraviesa una transformación profunda, impulsada por la convergencia de la IA y la computación cuántica. Estas tecnologías revolucionarias están remodelando el sector de los servicios financieros, introduciendo niveles sin precedentes de eficiencia, ahorros de coste y experiencias de cliente reforzadas.
-
-### Crecimiento fulgurante del mercado del software de IA: una visualización
-
-![AI Software Market's Surging Revenue: A Visualization of Growth][21].class=\"img-fluid w-100 clearfix fade-in\"
-
-El mercado del software de IA conoce una trayectoria de crecimiento notable, con una facturación anual proyectada en unos **asombrosos 126.000 millones de dólares para 2025**.
-
-Esta visualización pone de manifiesto el crecimiento impresionante del mercado de 2018 a 2025, subrayando la demanda creciente de soluciones impulsadas por IA en diversas industrias.
-
-### El poder de la IA en la banca
-
-Los **algoritmos de IA** han demostrado capacidades notables para analizar vastas cantidades de datos, identificar patrones y tomar decisiones informadas. Esta capacidad resulta inestimable para los bancos en diversos aspectos de sus operaciones.
-
-- **Evaluación de riesgos**: los sistemas de gestión de riesgos impulsados por IA pueden analizar datos financieros complejos para evaluar la solvencia, identificar fraude potencial y mitigar riesgos financieros. Esto permite a los bancos tomar decisiones de préstamo mejor informadas y proteger su capital.
-
-- **Procesos de aprobación de préstamos**: la IA puede racionalizar los procesos de aprobación, reduciendo los tiempos de respuesta y mejorando la satisfacción del cliente. Al automatizar tareas y aprovechar el análisis predictivo, los bancos pueden tramitar las solicitudes más eficientemente y con mayor rapidez.
-
-- **Optimización de carteras de inversión**: la IA puede analizar las tendencias de mercado, los factores de riesgo y los objetivos de inversión individuales para optimizar las carteras. Esto puede ayudar a los clientes a alcanzar sus objetivos financieros al tiempo que gestionan eficazmente su apetito por el riesgo.
-
-- **Detección de fraude**: los algoritmos de IA pueden detectar patrones en los datos transaccionales susceptibles de indicar una actividad fraudulenta. Esto permite a los bancos señalar las transacciones sospechosas y tomar las acciones apropiadas para prevenir pérdidas.
-
-- **Servicio al cliente**: la IA puede aumentar las interacciones humanas en servicio al cliente proporcionando soporte proactivo, resolviendo rápidamente las consultas y recomendando productos y servicios personalizados. Esto puede reforzar la satisfacción y la fidelidad del cliente.
+Denna artikel behandlar effekterna av **AI-modeller med öppen källkod**, **kvantdatorer inom transaktionssäkerhet** samt **regelverk och styrning inom bank och finans**.
 
 ![divider][divider].class=\"m-10 w-100\"
 
-### Computación cuántica: desbloquear un análisis de datos sin parangón
+## Betydelsen av AI och kvantdatorer i banksektorn
 
-[**HSBC** ⧉][01] ha estado a la vanguardia de la integración de la computación cuántica en el sector financiero. El banco ha colaborado con proveedores tecnológicos y laboratorios de investigación para explorar la aplicación de las tecnologías cuánticas a problemas concretos.
+Banksektorn genomgår en djupgående omvandling, driven av att artificiell intelligens (AI) och kvantdatorer (QC) konvergerar. Dessa revolutionerande tekniker omformar finanssektorn och medför effektivitetsnivåer, kostnadsbesparingar och förbättrade kundupplevelser utan tidigare motstycke.
 
-HSBC fue el primer banco en [**proteger el trading FX impulsado por IA mediante lo cuántico en 2023** ⧉][01]. En un experimento inédito, HSBC utilizó la **[Distribución cuántica de claves](/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html)** para asegurar un escenario de trading de 30 millones de euros hacia el dólar estadounidense. Este experimento demostró que la tecnología cuántica protegerá las transacciones de cualquier valor cuando llegue a ser comercialmente accesible y escalable.
+### AI-programvarumarknadens kraftigt växande intäkter: en visualisering av tillväxten
 
-![divider][divider].class=\"m-10 w-100\"
+![AI-programvarumarknadens kraftigt växande intäkter: en visualisering av tillväxten][21].class=\"img-fluid w-100 clearfix fade-in\"
 
-## El auge de la IA de código abierto: un cambio de paradigma
+Marknaden för AI-programvara upplever en anmärkningsvärd tillväxtbana, med årliga intäkter som väntas nå **svindlande 126 miljarder dollar till 2025**.
 
-El año 2023 ha conocido un notable auge de la adopción de la IA de código abierto, en particular en el ámbito de los **grandes modelos de lenguaje (LLM)**. La IA de código abierto designa los softwares y herramientas de IA cuyo código fuente está disponible para desarrolladores, investigadores y otras partes interesadas.
+Denna visualisering åskådliggör marknadens imponerande tillväxt från 2018 till 2025 och belyser den ökande efterfrågan på AI-drivna lösningar i en rad branscher.
 
-Esta democratización de la tecnología IA ha alimentado avances significativos, alentado la proliferación de modelos de código abierto y consolidado los LLM como motor de innovación. Estos modelos han desempeñado un papel pivote para estimular la innovación, reforzar la toma de decisiones y mejorar la gestión de riesgos en diversas industrias.
+### AI:s kraft i banksektorn
 
-### LLM de código abierto: revolucionar el panorama de la IA
+**AI-algoritmer** har uppvisat anmärkningsvärda förmågor att analysera enorma datamängder, identifiera mönster och fatta välgrundade beslut. Denna förmåga visar sig vara ovärderlig för banker inom flera delar av deras verksamhet.
 
-Los LLM de código abierto, como [**WizardLM** ⧉][07] y [**LLaMA 2** ⧉][08], han emergido como competidores formidables de los modelos propietarios. Por ejemplo, [Vicuna ⧉][09], un LLM económico, ha alcanzado el 90 % de las capacidades de ChatGPT mientras que el coste total de su entrenamiento no superó los 300 $. [LLaMA 2 ⧉][08] ha fijado el estándar de oro de la IA ética al alcanzar las puntuaciones de infracción más bajas hasta la fecha. Los LLM de código abierto son más transparentes y personalizables que los LLM propietarios «caja negra» que carecen de interpretabilidad.
+- **Riskbedömning**: AI-drivna riskhanteringssystem kan analysera komplexa finansiella data för att bedöma kreditvärdighet, identifiera potentiella bedrägerier och begränsa finansiella risker. Detta gör det möjligt för banker att fatta mer välgrundade utlåningsbeslut och skydda sitt kapital.
 
-#### Crecimiento explosivo de los modelos de IA de código abierto en 2023
+- **Processer för lånegodkännande**: AI kan effektivisera processerna för lånegodkännande, korta handläggningstiderna och förbättra kundnöjdheten. Genom att automatisera uppgifter och utnyttja prediktiv analys kan banker behandla ansökningar mer effektivt och skyndsamt.
 
-![Explosive Growth of Open-Source AI Models in 2023][22].class=\"img-fluid w-100 clearfix fade-in\"
+- **Optimering av investeringsportföljer**: AI kan analysera marknadstrender, riskfaktorer och individuella investeringsmål för att optimera investeringsportföljer. Detta kan hjälpa kunder att nå sina finansiella mål samtidigt som de hanterar sin riskaptit på ett effektivt sätt.
 
-Este gráfico ilustra vívidamente el ascenso notable de los modelos de IA de código abierto en 2023, con una explosión del número de proyectos y contribuciones. Esta tendencia pone de relieve la importancia creciente de la IA de código abierto para estimular la innovación y favorecer la colaboración en la comunidad IA.
+- **Bedrägeridetektering**: AI-algoritmer kan upptäcka mönster i transaktionsdata som kan tyda på bedräglig aktivitet. Detta gör det möjligt för banker att flagga misstänkta transaktioner och vidta lämpliga åtgärder för att förhindra finansiella förluster.
 
-Varios LLM de código abierto han atraído la atención por sus capacidades revolucionarias:
-
-- [**Mixtral 8x7B** ⧉][10]: desarrollado por Mistral AI, este potente modelo de lenguaje se distingue por sus pesos abiertos, permitiendo un funcionamiento local con menos restricciones que los modelos competidores. Procesa hasta 32K tokens de contexto y admite varias lenguas: francés, alemán, español, italiano e inglés. [Mixtral 8x7B ⧉][10] está diseñado para el trabajo composicional, el análisis de datos, la depuración de software y la programación. Reivindica igualar o superar a GPT-3.5 de OpenAI y superar a LLaMA 2-70B de Meta en ciertos benchmarks.
-
-- [**GPT-NeoX-20B** ⧉][11]: con 20.000 millones de parámetros, GPT-NeoX-20B es un LLM de código abierto de primer nivel. Se basa en GPT-3 pero introduce el paralelismo síncrono de datos y el gradient checkpointing para mejorar el rendimiento y la eficiencia. El modelo ha demostrado un rendimiento excepcional en diversas tareas: pregunta-respuesta, resumen, traducción.
-
-- [**GPT-J** ⧉][12]: con 6.000 millones de parámetros, [GPT-J ⧉][12] ofrece una mayor accesibilidad que los modelos más grandes. [GPT-J ⧉][12] está entrenado sobre el conjunto de datos Pile y comparte sus raíces con la arquitectura GPT-2. Comprende los matices conversacionales, proporciona perspectivas desde fuentes diversas, adapta su tono y estilo, y prioriza la generación de contenido ético y responsable.
-
-- [**OPT-175B** ⧉][13]: con un tamaño sin precedentes de 175.000 millones de parámetros, [OPT-175B ⧉][13] se erige como un coloso de eficiencia y escala. Entrenado con datos textuales no etiquetados que contienen principalmente frases en inglés, [OPT-175B ⧉][13] emplea la arquitectura Transformer para procesar jerárquicamente el texto de entrada. El modelo ha demostrado un rendimiento impresionante en diversas tareas: pregunta-respuesta, resumen, traducción.
-
-- [**LLMa 2** ⧉][14]: con 1.600 millones de parámetros, [LLMa 2 ⧉][14] ilustra la versatilidad, respondiendo a una amplia gama de tareas: pregunta-respuesta, resumen, traducción. Entrenado con el conjunto de datos Pile y utilizando la arquitectura Transformer, [LLMa 2 ⧉][14] prueba su adaptabilidad a diversas aplicaciones.
-
-- [**Google Gemini LLM** ⧉][26]: desvelado en 2023, [Google Gemini LLM ⧉][26] representa un paso significativo en el campo de los grandes modelos de lenguaje. Presentado como sucesor de [PaLM 2 ⧉][27], [Gemini LLM ⧉][26] está diseñado para sobresalir en diversos dominios: comprensión del lenguaje natural, generación de distintos formatos de texto creativo, aplicación de conocimientos a la resolución de problemas. Con su capacidad para tratar datos multimodales, [Google Gemini LLM ⧉][26] tiene gran potencial para aplicaciones en visión por ordenador, investigación científica y sanidad. El modelo está actualmente disponible en tres tamaños: **Ultra**, **Pro** y **Nano**, respondiendo a distintas necesidades computacionales.
-
-### La revolución de la IA de código abierto: configurar el futuro de la IA
-
-La revolución de la IA de código abierto transforma fundamentalmente el panorama del desarrollo, despliegue y uso de la IA. Al hacer la IA más accesible, asequible y polivalente, la tecnología de código abierto democratiza las capacidades de IA y abre la vía a innovaciones y aplicaciones revolucionarias. A medida que el movimiento de código abierto gana impulso, podemos anticipar con confianza incluso más avances transformadores que configurarán el futuro de la IA y su profundo impacto sobre nuestro mundo.
+- **Kundservice**: AI kan förstärka mänskliga kundserviceinteraktioner genom att erbjuda proaktivt stöd, snabbt lösa frågor och rekommendera personligt anpassade produkter och tjänster. Detta kan stärka kundnöjdheten och lojaliteten.
 
 ![divider][divider].class=\"m-10 w-100\"
 
-## Los desafíos de la regulación de la IA
+### Kvantdatorer: låser upp dataanalys utan motstycke
 
-Otro desafío es **garantizar que los sistemas de IA sean justos y no sesgados**. Los sistemas de IA pueden perpetuar los sesgos existentes en los datos sobre los que se entrenan. Por ello es importante desarrollar sistemas de IA transparentes y responsables, auditados para identificar y abordar los sesgos potenciales.
+[**HSBC** ⧉][01] har legat i framkant när det gäller att integrera kvantdatorer i finanssektorn. Banken har samarbetat med teknikleverantörer och forskningslaboratorier för att utforska hur kvantteknik kan tillämpas på verkliga problem.
 
-Por último, es importante **establecer directrices éticas para el desarrollo y despliegue de la IA**. Los sistemas de IA deberían diseñarse y utilizarse de una manera responsable y respetuosa con los derechos humanos. Por ejemplo, los sistemas de IA no deberían utilizarse para dañar o explotar a los individuos, ni para invadir su privacidad.
-
-Abordar estos desafíos exigirá un enfoque multipartícipe que implique a gobiernos, empresas, investigadores y sociedad civil. Es importante iniciar la conversación ahora sobre la manera de regular la IA equilibrando las necesidades de confidencialidad, seguridad e innovación.
-
-## El estado de la gobernanza de la IA
-
-![The State of AI Governance][28].class=\"fade-in w-100 p-3 me-3 img-thumbnail \"
-
-En 2023, **importantes iniciativas mundiales y desarrollos han configurado el panorama de la gobernanza y regulación de la IA**. Estas actividades reflejan el reconocimiento creciente de la [**necesidad de marcos robustos para supervisar el desarrollo y despliegue de las tecnologías de IA** ⧉][19].
-
-En Estados Unidos, el presidente Joe Biden emitió un [**decreto para gestionar los riesgos asociados a la IA y apoyar los esfuerzos internacionales de gobernanza** ⧉][15]. La [**Office of Science and Technology Policy (OSTP)** ⧉][23] de la Casa Blanca ha mantenido amplios debates con investigadores, empresas y sociedad civil para informar la gobernanza. Estados Unidos trabaja con sus aliados y socios sobre la gobernanza de la IA, incluida la participación en el G7 Hiroshima AI Process y en el [**AI Safety Summit** ⧉][16] del Reino Unido.
-
-El Reino Unido acogió la primera [**AI Safety Summit** ⧉][16], reuniendo a líderes gubernamentales mundiales para discutir los [**riesgos de la IA y la acción coordinada internacionalmente** ⧉][17].
-
-La [**Declaración de Bletchley** ⧉][18] vio a 28 países más la UE comprometerse a trabajar juntos para abordar los riesgos planteados por la IA durante la primera AI Safety Summit en el Reino Unido.
-
-Los líderes e investigadores del MIT han publicado un conjunto de notas políticas sobre la gobernanza de la IA para ayudar a los legisladores a crear una mejor supervisión. [**A Framework for U.S. AI Governance: Creating a Safe and Thriving AI Sector** ⧉][20] propone que entidades gubernamentales existentes regulen las herramientas de IA.
-
-Más de 60 países en los continentes americano, africano, asiático y europeo han publicado estrategias nacionales de IA, reflejando el impulso global hacia la gobernanza. China se ha comprometido activamente a lanzar principios y regulaciones, entre ellas la [**Global AI Governance Initiative** ⧉][06] y las [**Interim Administrative Measures for the Management of Generative AI Services** ⧉][05].
-
-Estas iniciativas y desarrollos muestran la creciente necesidad de esfuerzos coordinados nacionales e internacionales para un desarrollo y despliegue responsables de la IA. Si bien se han hecho progresos, la naturaleza compleja y rápidamente evolutiva de la IA presenta desafíos continuos que exigen atención sostenida.
+HSBC var den första banken som [**skyddade AI-driven valutahandel med kvantteknik under 2023** ⧉][01]. I ett världsunikt försök använde HSBC **[Quantum Key Distribution](/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html)** för att säkra ett handelsscenario på 30 miljoner euro från euro till amerikanska dollar. Försöket visade att kvanttekniken kommer att kunna skydda affärer av vilket värde som helst när den blir kommersiellt tillgänglig och skalbar.
 
 ![divider][divider].class=\"m-10 w-100\"
 
-## Conclusión
+## Framväxten av AI med öppen källkod: ett paradigmskifte inom artificiell intelligens
 
-El año 2023 ha visto avances significativos en los campos de la IA y la QC, en particular en la industria bancaria. El uso pionero por HSBC de la protección cuántica para el trading impulsado por IA representa un hito significativo de la aplicación de estas tecnologías al sector bancario. Los modelos de código abierto han acelerado la madurez de la IA, mientras que las notas políticas del MIT sobre la gobernanza proporcionan una hoja de ruta para la regulación. Estos desarrollos configurarán el futuro de la IA y la QC, con implicaciones profundas para la banca y las finanzas.
+År 2023 har präglats av en anmärkningsvärd ökning i användningen av AI-teknik med öppen källkod, särskilt inom området **stora språkmodeller (LLM)**. AI med öppen källkod avser AI-programvara och AI-verktyg vars källkod är tillgänglig för utvecklare, forskare och andra intressenter.
+
+Denna demokratisering av AI-tekniken har främjat betydande framsteg, drivit på spridningen av modeller med öppen källkod och befäst LLM:er som en frontlöpare inom AI-innovation. Dessa modeller har spelat en central roll för att driva innovation, förbättra beslutsfattandet och stärka riskhanteringen i en rad branscher.
+
+### LLM:er med öppen källkod: revolutionerar AI-landskapet
+
+LLM:er med öppen källkod, som [**WizardLM** ⧉][07] och [**LLaMA 2** ⧉][08], har vuxit fram som formidabla konkurrenter till modeller med sluten källkod. Exempelvis nådde [Vicuna ⧉][09], en kostnadseffektiv LLM, 90 % av ChatGPT:s förmåga trots att hela träningsprocessen kostade blygsamma 300 dollar. [LLaMA 2 ⧉][08] har satt guldstandarden för etisk AI genom att uppnå de hittills lägsta överträdelsepoängen. LLM:er med öppen källkod är mer transparenta och anpassningsbara än slutna LLM:er av typen "svart låda", som saknar tolkningsbarhet.
+
+#### Explosiv tillväxt för AI-modeller med öppen källkod under 2023
+
+![Explosiv tillväxt för AI-modeller med öppen källkod under 2023][22].class=\"img-fluid w-100 clearfix fade-in\"
+
+Detta stapeldiagram illustrerar tydligt den anmärkningsvärda framväxten av AI-modeller med öppen källkod under 2023, med en kraftig ökning av både antalet projekt och antalet bidrag. Trenden understryker den växande betydelsen av öppen källkod inom AI för att driva innovation och främja samarbete inom AI-gemenskapen.
+
+Flera LLM:er med öppen källkod har fått stor uppmärksamhet för sina banbrytande förmågor:
+
+- [**Mixtral 8x7B** ⧉][10]: Denna kraftfulla AI-språkmodell, utvecklad av Mistral AI, utmärker sig genom sina öppna vikter, vilket möjliggör lokal drift med färre begränsningar än konkurrenternas modeller. Den hanterar kontextfönster på upp till 32K token och stöder flera språk, däribland franska, tyska, spanska, italienska och engelska. [Mixtral 8x7B ⧉][10] är utformad för kompositionsarbete, dataanalys, felsökning av programvara och programmering. Den uppges matcha eller överträffa OpenAI:s GPT-3.5 och prestera bättre än Metas LLaMA 2-70B i vissa benchmark-tester.
+
+- [**GPT-NeoX-20B** ⧉][11]: Med svindlande 20 miljarder parametrar står GPT-NeoX-20B som en ledande LLM med öppen källkod. GPT-NeoX-20B bygger på GPT-3 men inför synkron dataparallellism och gradient checkpointing för att förbättra prestanda och effektivitet. Modellen har uppvisat exceptionella resultat i en rad uppgifter, däribland frågebesvarande, sammanfattning och översättning.
+
+- [**GPT-J** ⧉][12]: Med 6 miljarder parametrar erbjuder [GPT-J ⧉][12] större tillgänglighet jämfört med större modeller. [GPT-J ⧉][12] är tränad på datamängden Pile och delar sina rötter med GPT-2-arkitekturen. Den förstår samtalsnyanser, ger insikter från skiftande källor, anpassar ton och stil samt prioriterar etisk och ansvarsfull innehållsgenerering.
+
+- [**OPT-175** ⧉B][13]: Med en storlek utan motstycke på 175 miljarder parametrar framstår [OPT-175B ⧉][13] som en koloss av effektivitet och skala. [OPT-175B ⧉][13] är tränad på oannoterade textdata som huvudsakligen består av engelska meningar och använder Transformer-arkitekturen för att bearbeta indatatext hierarkiskt. Modellen har uppvisat imponerande resultat i en rad uppgifter, däribland frågebesvarande, sammanfattning och översättning.
+
+- [**LLMa 2** ⧉][14]: Med 1,6 miljarder parametrar visar [LLMa 2 ⧉][14] prov på mångsidighet och hanterar ett brett spektrum av uppgifter, däribland frågebesvarande, sammanfattning och översättning. [LLMa 2 ⧉][14] är tränad på datamängden Pile, använder Transformer-arkitekturen och bevisar sin anpassningsförmåga i skilda tillämpningar.
+
+- [**Google Gemini LLM** ⧉][26]: [Google Gemini LLM ⧉][26], som presenterades 2023, utgör ett betydande steg framåt inom stora språkmodeller. [Gemini LLM ⧉][26] framhålls som efterträdare till [PaLM 2 ⧉][27] och är utformad för att utmärka sig inom flera områden, däribland förståelse av naturligt språk, generering av olika kreativa textformat och tillämpning av kunskap för problemlösning. Med sin förmåga att bearbeta multimodala data har [Google Gemini LLM ⧉][26] stor potential för tillämpningar inom områden som datorseende, vetenskaplig forskning och hälso- och sjukvård. Modellen finns för närvarande i tre storlekar: **Ultra**, **Pro** och **Nano**, anpassade efter olika beräkningsbehov.
+
+### Revolutionen inom AI med öppen källkod: formar AI:s framtid
+
+Revolutionen inom AI med öppen källkod omvandlar i grunden landskapet för hur AI utvecklas, driftsätts och används. Genom att göra AI mer tillgänglig, prisvärd och mångsidig demokratiserar tekniken med öppen källkod AI:s förmågor och banar väg för banbrytande innovationer och tillämpningar. I takt med att rörelsen för öppen källkod vinner mark kan vi med tillförsikt förvänta oss ännu fler omvälvande framsteg som kommer att forma AI:s framtid och dess djupgående inverkan på vår värld.
 
 ![divider][divider].class=\"m-10 w-100\"
 
-**¿Quiere saber más sobre el impacto de la IA y la computación cuántica en la industria bancaria?**
+## Utmaningarna med att reglera AI
 
-*En conclusión, espero que este artículo haya despertado su interés por el poder transformador de la IA y la computación cuántica en la banca.*
+En annan utmaning är att **säkerställa att AI-system är rättvisa och opartiska**. AI-system kan vidmakthålla befintliga snedvridningar i de data de tränas på. Det är därför viktigt att utveckla AI-system som är transparenta och ansvariga, och som kan granskas för att identifiera och åtgärda potentiella snedvridningar.
 
-*Si está deseoso de aprender más sobre la intersección de la IA y la computación cuántica en la industria bancaria, no dude en contactarme en [**LinkedIn** ⧉][02] o a través de la [**página de contacto** ⧉][03].*
+Slutligen är det viktigt att **fastställa etiska riktlinjer för utveckling och driftsättning av AI**. AI-system bör utformas och användas på ett sätt som är ansvarsfullt och respekterar mänskliga rättigheter. AI-system bör exempelvis inte användas för att skada eller utnyttja individer, och de bör inte användas för att kränka individers integritet.
 
-*También puede encontrarme en mi nuevo canal de YouTube, [**Banking on Quantum** ⧉][24], donde exploraré los últimos desarrollos de estas tecnologías transformadoras y sus implicaciones para el futuro de las finanzas.*
+Att hantera dessa utmaningar kräver ett flerpartsförfarande som involverar regeringar, företag, forskare och det civila samhället. Det är viktigt att redan nu inleda samtalet om hur AI ska regleras på ett sätt som balanserar behovet av integritet och säkerhet mot behovet av innovation.
 
-*[**Suscríbase a Banking on Quantum hoy y manténgase a la vanguardia en este campo en rápida evolución.** ⧉][25]*
+## Läget för AI-styrning
 
-Gracias de nuevo por su tiempo, espero tener noticias suyas.
+![Läget för AI-styrning][28].class=\"fade-in w-100 p-3 me-3 img-thumbnail \"
+
+Under 2023 har **betydande globala initiativ och händelser format landskapet för AI-styrning och AI-reglering**. Dessa aktiviteter speglar det växande erkännandet av [**behovet av robusta ramverk för att övervaka utveckling och driftsättning av AI-teknik** ⧉][19].
+
+I USA utfärdade president Joe Biden en [**exekutiv order för att hantera riskerna med AI och stödja internationella insatser för AI-styrning** ⧉][15]. Vita husets [**Office of Science and Technology Policy (OSTP)** ⧉][23] har fört omfattande samtal med forskare, företag och det civila samhället för att ge underlag till AI-styrningen. USA samarbetar med sina allierade och partner kring AI-styrning, bland annat genom deltagande i G7:s Hiroshima AI Process och Storbritanniens [**AI Safety Summit** ⧉][16].
+
+Storbritannien stod värd för det första [**AI Safety Summit** ⧉][16], som samlade globala regeringsledare för att diskutera [**AI:s risker och internationellt samordnade åtgärder** ⧉][17].
+
+Genom [**Bletchleydeklarationen** ⧉][18] förband sig 28 länder plus EU att samarbeta för att hantera de risker AI medför, under det första AI Safety Summit i Storbritannien.
+
+Ledare och forskare vid MIT publicerade en uppsättning policyunderlag om AI-styrning för att hjälpa beslutsfattare att skapa bättre tillsyn. [**A Framework for U.S. AI Governance: Creating a Safe and Thriving AI Sector** ⧉][20] föreslår att befintliga statliga organ reglerar AI-verktyg.
+
+Fler än 60 länder i Nord- och Sydamerika, Afrika, Asien och Europa har publicerat nationella AI-strategier, vilket speglar det globala momentumet för AI-styrning. Kina har varit aktivt med att lansera principer och regleringar, däribland [**Global AI Governance Initiative** ⧉][06] och [**Interim Administrative Measures for the Management of Generative AI Services** ⧉][05].
+
+Dessa initiativ och händelser visar det växande behovet av samordnade nationella och internationella insatser för att säkerställa ansvarsfull utveckling och driftsättning av AI. Även om framsteg har gjorts innebär AI:s komplexa och snabbt föränderliga natur fortsatta utmaningar som kräver löpande uppmärksamhet.
 
 ![divider][divider].class=\"m-10 w-100\"
 
-[01]: https://www.hsbc.com/news-and-views/news/media-releases/2023/hsbc-pioneers-quantum-protection-for-ai-powered-fx-trading "HSBC's Integration of Quantum Computing in Banking Operations"
-[02]: https://www.linkedin.com/in/sebastienrousseau/ "Sebastien Rousseau on LinkedIn"
-[03]: https://sebastienrousseau.com/contact/index.html "Contact Sebastien Rousseau"
+## Slutsats
+
+År 2023 har inneburit betydande framsteg inom AI och kvantdatorer, i synnerhet i banksektorn. HSBC:s banbrytande användning av kvantskydd för AI-driven handel utgör en viktig milstolpe i tillämpningen av dessa tekniker inom banksektorn. Modeller med öppen källkod har påskyndat AI:s mognad, medan MIT:s vitböcker om AI-styrning ger en färdplan för reglering. Denna utveckling kommer att forma framtiden för AI och kvantdatorer, med djupgående konsekvenser för bank och finans.
+
+![divider][divider].class=\"m-10 w-100\"
+
+**Vill du veta mer om hur AI och kvantdatorer påverkar banksektorn?**
+
+*Avslutningsvis hoppas jag att denna artikel har väckt ditt intresse för den omvälvande kraften hos AI och kvantdatorer i banksektorn.*
+
+*Om du vill lära dig mer om skärningspunkten mellan AI och kvantdatorer i banksektorn är du välkommen att kontakta mig på [**LinkedIn** ⧉][02] eller via [**kontaktsidan** ⧉][03].*
+
+*Du kan också följa mig på min nya YouTube-kanal, [**Banking on Quantum** ⧉][24], där jag utforskar den senaste utvecklingen inom dessa omvälvande tekniker och deras betydelse för finansbranschens framtid.*
+
+*[**Prenumerera på Banking on Quantum i dag och ligg steget före inom detta snabbt föränderliga område!** ⧉][25]*
+
+Tack än en gång för din tid, jag ser fram emot att höra från dig!
+
+![divider][divider].class=\"m-10 w-100\"
+
+[01]: https://www.hsbc.com/news-and-views/news/media-releases/2023/hsbc-pioneers-quantum-protection-for-ai-powered-fx-trading "HSBC:s integrering av kvantdatorer i bankverksamheten"
+[02]: https://www.linkedin.com/in/sebastienrousseau/ "Sebastien Rousseau på LinkedIn"
+[03]: https://sebastienrousseau.com/contact/index.html "Kontakta Sebastien Rousseau"
 [05]: http://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm "Interim Measures for Generative Artificial Intelligence Service Management"
 [06]: https://www.fmprc.gov.cn/mfa_eng/wjdt_665385/2649_665393/202310/t20231020_11164834.html "Global AI Governance Initiative"
 [07]: https://github.com/nlpxucan/WizardLM "WizardLM"
 [08]: https://ai.meta.com/llama/ "LLaMA 2"
-[09]: https://lmsys.org/blog/2023-03-30-vicuna/ "Vicuna: An Open-Source Chatbot Impressing GPT-4 with 90%* ChatGPT Quality"
-[10]: https://mistral.ai/news/mixtral-of-experts/ "Mixtral 8x7B"
+[09]: https://lmsys.org/blog/2023-03-30-vicuna/ "Vicuna: en chattbot med öppen källkod som imponerar på GPT-4 med 90 %* av ChatGPT:s kvalitet"
+[10]: https://mistral.ai/news/mixtral-of-experts/ "Mixtral 8x7B: en språkmodell med öppen källkod som matchar GPT-3.5 och överträffar LLaMA 2-70B"
 [11]: https://huggingface.co/EleutherAI/gpt-neox-20b "GPT-NeoX-20B"
 [12]: https://huggingface.co/kingoflolz/mesh-transformer-jax "GPT-J"
 [13]: https://huggingface.co/kingoflolz/mesh-transformer-jax "OPT-175B"
 [14]: https://huggingface.co/kingoflolz/mesh-transformer-jax "LLMa 2"
-[15]: https://carnegieendowment.org/2023/11/14/future-of-ai-governance-conversation-with-arati-prabhakar-event-8195 "The Future of AI Governance: A Conversation with Arati Prabhakar"
+[15]: https://carnegieendowment.org/2023/11/14/future-of-ai-governance-conversation-with-arati-prabhakar-event-8195 "AI-styrningens framtid: ett samtal med Arati Prabhakar"
 [16]: https://www.aisafetysummit.gov.uk/ "AI Safety Summit"
-[17]: https://www.cov.com/en/news-and-insights/insights/2023/12/international-developments-in-ai-governance-same-goal-different-paths "International developments in AI governance: same goal, different paths"
-[18]: https://www.gov.uk/government/publications/ai-safety-summit-2023-the-bletchley-declaration/the-bletchley-declaration-by-countries-attending-the-ai-safety-summit-1-2-november-2023 "The Bletchley Declaration"
-[19]: https://www.spglobal.com/en/research-insights/featured/special-editorial/the-ai-governance-challenge "The AI Governance Challenge"
-[20]: https://news.mit.edu/2023/mit-group-releases-white-papers-governance-ai-1211 "MIT group releases white papers on governance of AI"
-[21]: https://cloudcdn.pro/stocks/diagrams/ai-software-market-revenue-2018-2025-professional.svg "AI Software Market's Surging Revenue: A Visualization of Growth"
-[22]: https://cloudcdn.pro/stocks/diagrams/rise-of-open-source-ai-models-bar-chart.svg "Explosive Growth of Open-Source AI Models in 2023"
+[17]: https://www.cov.com/en/news-and-insights/insights/2023/12/international-developments-in-ai-governance-same-goal-different-paths "Internationell utveckling inom AI-styrning: samma mål, olika vägar"
+[18]: https://www.gov.uk/government/publications/ai-safety-summit-2023-the-bletchley-declaration/the-bletchley-declaration-by-countries-attending-the-ai-safety-summit-1-2-november-2023 "Bletchleydeklarationen från länderna vid AI Safety Summit, 1-2 november 2023"
+[19]: https://www.spglobal.com/en/research-insights/featured/special-editorial/the-ai-governance-challenge "Utmaningen med AI-styrning"
+[20]: https://news.mit.edu/2023/mit-group-releases-white-papers-governance-ai-1211 "MIT-grupp publicerar vitböcker om styrning av AI"
+[21]: https://cloudcdn.pro/stocks/diagrams/ai-software-market-revenue-2018-2025-professional.svg "AI-programvarumarknadens kraftigt växande intäkter: en visualisering av tillväxten"
+[22]: https://cloudcdn.pro/stocks/diagrams/rise-of-open-source-ai-models-bar-chart.svg "Explosiv tillväxt för AI-modeller med öppen källkod under 2023"
 [23]: https://www.whitehouse.gov/ostp/ "Office of Science and Technology Policy"
-[24]: https://www.youtube.com/@BankingOnQuantum "Banking on Quantum YouTube Channel"
-[25]: https://www.youtube.com/@BankingOnQuantum?sub_confirmation=1 "Subscribe to @BankingOnQuantum YouTube Channel"
+[24]: https://www.youtube.com/@BankingOnQuantum "YouTube-kanalen Banking on Quantum"
+[25]: https://www.youtube.com/@BankingOnQuantum?sub_confirmation=1 "Prenumerera på YouTube-kanalen @BankingOnQuantum"
 [26]: https://deepmind.google/technologies/gemini/#introduction "Google Gemini LLM"
 [27]: https://ai.google/discover/palm2/ "PaLM 2"
-[28]: https://cloudcdn.pro/stocks/images/ryoji-iwata-a-qsFZimp1M.webp "AI Regulations"
+[28]: https://cloudcdn.pro/stocks/images/ryoji-iwata-a-qsFZimp1M.webp "AI-regleringar"
 
 [divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Divider"

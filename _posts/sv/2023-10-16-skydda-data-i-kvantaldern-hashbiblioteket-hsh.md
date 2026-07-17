@@ -1,126 +1,132 @@
 ---
-title: "Proteger los datos en la era cuántica: la biblioteca Hash (HSH)"
-subtitle: "Una biblioteca Rust resistente a lo cuántico para el hashing y la verificación criptográficos"
-description: "HSH se apoya en primitivas criptográficas resistentes a lo cuántico para proteger sus datos frente a los avances futuros de la computación cuántica."
+title: "Skydda data i kvantåldern: hashbiblioteket (HSH)"
+subtitle: "HSH: ett kvantresistent hashbibliotek för autentisering i postkvanteran."
+description: "HSH använder kvantresistenta kryptografiska primitiver för att skydda dina data och säkerställer deras säkerhet även inför framtida framsteg inom kvantdatorteknik."
 date: "October 16, 2023"
 language: "sv-SE"
 locale: "sv_SE"
 banner: "https://cloudcdn.pro/stocks/images/galina-nelyubova-7ej8VWfwFsg.webp"
-banner_alt: "Ilustración creativa sobre el tema de la computación cuántica"
-keywords: "criptografía resistente a lo cuántico, biblioteca Hash, HSH, Rust, postcuántica, PQC, KDF, Argon2i, BScrypt, Scrypt, servicios financieros, seguridad, NIST"
+banner_alt: "En kreativ illustration på temat kvantdatorer"
+keywords: "kvantresistent kryptografi, postkvantkryptografi, hashbibliotek, HSH, lösenordshashning, nyckelderivering, Argon2i, Bcrypt, Scrypt, kvantdatorer"
 ---
 
-![Ilustración creativa sobre el tema de la computación cuántica](https://cloudcdn.pro/stocks/images/galina-nelyubova-7ej8VWfwFsg.webp).class=\"img-fluid clearfix\"
+![En kreativ illustration på temat kvantdatorer](https://cloudcdn.pro/stocks/images/galina-nelyubova-7ej8VWfwFsg.webp).class=\"img-fluid clearfix\"
 
-En este artículo examinaré los usos de la criptografía resistente a lo cuántico, centrándome específicamente en la biblioteca Rust Hash (HSH) que he desarrollado. Esta biblioteca está totalmente optimizada para las funciones de hashing y verificación criptográficos.
+I den här artikeln undersöker jag användningsområdena för kvantresistent kryptografi, med särskilt fokus på Rust-hashbiblioteket (HSH) som jag har utvecklat. Biblioteket är fullt optimerat för kryptografiska hashnings- och verifieringsfunktioner.
 
-## Perspectiva
+> **Prova det i din webbläsare.** En kompletterande crate som kapslar in samma algoritmfamilj (SHA-256, BLAKE3, Argon2id) är kompilerad till WebAssembly och körs helt på klientsidan, utan serveranrop och utan JavaScript från tredje part: **[öppna hsh-demon i webbläsaren →](/labs/hsh-demo/)**
 
-### La amenaza emergente de la computación cuántica
+## Insikt
 
-A medida que el panorama digital evoluciona, las organizaciones de servicios financieros deben adoptar nuevas tecnologías para seguir siendo competitivas. De no hacerlo, corren el riesgo de quedarse atrás, ya que la transformación digital afecta a todos los sectores.
+### Kvantdatorernas framväxande hot
 
-La computación cuántica anuncia un giro mayor: promete acelerar los avances en sectores diversos, incluidos la banca y los servicios financieros. Pero conlleva un riesgo formidable para la seguridad digital, debido a su capacidad para descifrar los códigos más complejos.
+I takt med att det digitala landskapet utvecklas måste organisationer inom finansiella tjänster ta till sig ny teknik för att förbli konkurrenskraftiga. Den som inte gör det riskerar att hamna på efterkälken, eftersom den digitala transformationen påverkar varje bransch.
 
-La computación cuántica vuelve obsoletas ciertas técnicas de cifrado tradicionales, ya que puede resolver problemas matemáticos inaccesibles para los ordenadores clásicos.
+Kvantdatorer förebådar ett banbrytande skifte och erbjuder kraften att katalysera betydande framsteg inom skilda sektorer, däribland bank och finansiella tjänster. Samtidigt medför de en formidabel risk för den digitala säkerheten, givet deras förmåga att dekryptera även de mest komplexa koderna.
 
-Hoy, Alice y Bob pueden comunicarse de forma segura mediante claves criptográficas, impidiendo que Eve decodifique sus mensajes. Pero la seguridad absoluta de la distribución y el almacenamiento de claves nunca está totalmente garantizada. Los ordenadores cuánticos suponen, pues, una amenaza significativa para el cifrado y la seguridad digital.
+Kvantdatorer gör vissa traditionella krypteringstekniker föråldrade, eftersom de kan lösa matematiska problem som klassiska datorer inte klarar av.
 
-#### Seguros pero vulnerables: navegar por los retos criptográficos en la era cuántica
+I dagens läge kan Alice och Bob kommunicera säkert med hjälp av kryptografiska nycklar, vilket hindrar Eve från att avkoda meddelandena. Men den absoluta säkerheten i distribution och lagring av nycklar kan aldrig garanteras fullt ut. Kvantdatorer utgör därför ett betydande hot mot kryptering och digital säkerhet.
 
-![Diagrama de secuencia][01].class=\"img-fluid clearfix\"
+#### Säkra men sårbara: att hantera kryptografiska utmaningar i kvanteran
 
-##### Leyenda
+![Sekvensdiagram][01].class=\"img-fluid clearfix\"
 
-* *Alice hacia Eve — Alice envía un mensaje cifrado*
-* *Eve intercepta — Eve intercepta el mensaje de Alice*
-* *Eve intenta descifrar — Eve lo intenta pero no logra descifrar*
-* *Eve hacia Bob — Eve envía un mensaje cifrado a Bob*
-* *Bob hacia Eve — Bob envía una respuesta cifrada a Eve*
-* *Eve intercepta — Eve intercepta la respuesta de Bob*
-* *Eve intenta descifrar — Eve no logra descifrar de nuevo*
-* *Eve hacia Alice — Eve envía un mensaje cifrado a Alice*
+##### Teckenförklaring
 
-##### Explicación
+* *Alice till Eve - Alice skickar ett krypterat meddelande*
+* *Eve avlyssnar - Eve fångar upp Alices meddelande*
+* *Eve försöker dekryptera - Eve försöker men misslyckas med att dekryptera*
+* *Eve till Bob - Eve skickar ett krypterat meddelande till Bob*
+* *Bob till Eve - Bob skickar ett krypterat svar till Eve*
+* *Eve avlyssnar - Eve fångar upp Bobs svar*
+* *Eve försöker dekryptera - Eve misslyckas åter med att dekryptera*
+* *Eve till Alice - Eve skickar ett krypterat meddelande till Alice*
 
-###### Cifrado actual
+##### Förklaring
 
-Los algoritmos de cifrado actuales utilizados por Alice y Bob son eficaces para impedir que Eve descifre sus mensajes. Sin embargo, la computación cuántica constituye una amenaza potencial para su seguridad.
+###### Dagens kryptering
 
-###### Riesgo cuántico potencial
+De krypteringsalgoritmer som Alice och Bob använder i dag är effektiva för att hindra Eve från att dekryptera deras meddelanden. Kvantdatorer utgör dock ett potentiellt hot mot dessa algoritmers säkerhet.
 
-Los ordenadores cuánticos son mucho más rápidos que los ordenadores tradicionales para ciertos tipos de cálculo, incluidos los que sirven para romper determinados algoritmos de cifrado. Si Eve tuviera acceso a un ordenador cuántico, potencialmente podría quebrar el cifrado y leer los mensajes de Alice y Bob.
+###### Potentiell kvantrisk
 
-###### Riesgos vinculados a la distribución y el almacenamiento de claves
+Kvantdatorer är mycket snabbare än traditionella datorer på att utföra vissa typer av beräkningar, inklusive de beräkningar som används för att knäcka vissa krypteringsalgoritmer. Om Eve hade tillgång till en kvantdator skulle hon potentiellt kunna knäcka krypteringen och läsa Alices och Bobs meddelanden.
 
-Aunque Alice y Bob utilicen un cifrado robusto, sus mensajes podrían verse comprometidos si las claves utilizadas para cifrar y descifrar son comprometidas. Las claves pueden serlo de múltiples maneras: robo, pirateo o ataques de ingeniería social.
+###### Risker vid distribution och lagring av nycklar
 
-###### Necesidad de una criptografía postcuántica
+Även om Alice och Bob använder stark kryptering kan deras meddelanden ändå komprometteras om de nycklar som används för att kryptera och dekryptera meddelandena komprometteras. Nycklar kan komprometteras på en rad sätt, till exempel genom stöld, dataintrång eller social manipulation.
 
-La criptografía postcuántica es un nuevo campo diseñado para resistir los ataques cuánticos. Los algoritmos de cifrado postcuántico aún están en desarrollo, pero tienen el potencial de proteger los datos frente a los ataques cuánticos.
+###### Behovet av postkvantkryptografi
 
-### Introducción a la criptografía resistente a lo cuántico
+Postkvantkryptografi är ett nytt kryptografiskt fält som är utformat för att stå emot kvantattacker. Postkvantalgoritmer för kryptering är fortfarande under utveckling, men de har potential att skydda data mot kvantattacker.
 
-La criptografía resistente a lo cuántico, también llamada criptografía postcuántica (PQC) o criptografía «quantum-safe», designa a los algoritmos criptográficos considerados seguros frente a los ataques de ordenadores cuánticos.
+### Introduktion till kvantresistent kryptografi
 
-Las organizaciones deben tomar las precauciones necesarias para proteger sus datos frente a los peligros de la computación cuántica. Implementar cifrado resistente a lo cuántico y estrategias de entrelazamiento cuántico puede ofrecer a las empresas de servicios financieros una capa adicional de seguridad.
+Kvantresistent kryptografi, även kallad postkvantkryptografi (PQC) eller kvantsäker kryptografi, avser kryptografiska algoritmer som bedöms vara säkra mot attacker från kvantdatorer.
 
-* La **criptografía resistente a lo cuántico** es un nuevo tipo de cifrado capaz de resistir los ataques de ordenadores cuánticos. Sus algoritmos pueden acelerar el tratamiento de datos e incrementar la precisión, convirtiéndola en una opción más eficiente.
+Organisationer måste vidta nödvändiga försiktighetsåtgärder för att skydda sina data mot kvantdatorernas faror. Att införa kvantresistent kryptering och strategier för kvantsammanflätning kan ge företag inom finansiella tjänster ett extra säkerhetslager.
 
-* El **entrelazamiento cuántico** permite crear sistemas de [distribución cuántica de claves](/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html) ([QKD](/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html)), capaces de generar y distribuir claves criptográficas seguras a largas distancias. Los sistemas QKD son inmunes a los ataques de ordenador cuántico, lo que los hace ideales para proteger datos financieros sensibles.
+* **Kvantresistent kryptografi** är en ny typ av kryptering som kan stå emot attacker från kvantdatorer. Kvantresistenta krypteringsalgoritmer kan snabba upp databehandlingen och öka precisionen, vilket gör dem till ett mer effektivt alternativ.
 
-## Idea
+* **Kvantsammanflätning** kan användas för att skapa system för [kvantnyckeldistribution](/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html) ([QKD](/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html)), som kan generera och distribuera säkra kryptografiska nycklar över långa avstånd. [QKD](/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html)-system är immuna mot attacker från kvantdatorer, vilket gör dem idealiska för att skydda känsliga finansiella data.
 
-### La biblioteca Hash (HSH): interoperabilidad pionera en criptografía resistente a lo cuántico
+## Idé
 
-La biblioteca Hash (HSH) ofrece una solución ligera, eficiente y fácil de usar para proteger los datos con criptografía resistente a lo cuántico. Permite a los desarrolladores utilizar algoritmos resistentes a lo cuántico en sus aplicaciones sin requerir una comprensión detallada de los algoritmos criptográficos subyacentes.
+### Hashbiblioteket (HSH): banbrytande interoperabilitet inom kvantresistent kryptografi
 
-La biblioteca está construida con el lenguaje Rust, reconocido por su rapidez y eficiencia, idóneamente adaptado a la criptografía y a la fiabilidad a largo plazo.
+Hashbiblioteket (HSH) erbjuder en lättviktig, effektiv och användarvänlig lösning för att skydda data med kvantresistent kryptografi. Det gör det möjligt för utvecklare att använda kvantresistenta algoritmer i sina applikationer utan att behöva en detaljerad förståelse av de underliggande kryptografiska algoritmerna.
 
-## Impacto
+Biblioteket är byggt i programspråket Rust, som är känt för sin snabbhet och effektivitet, väl lämpat för kryptografi och för långsiktig tillförlitlighet.
 
-### Los beneficios de la biblioteca de hash resistente a lo cuántico
+## Effekt
 
-La [biblioteca Hash (HSH) ⧉][00] aporta una rica paleta de primitivas criptográficas modernas, levantando una barrera sólida frente a las complejidades de la era cuántica. Su importancia reside en la protección de los datos sensibles en una época en que la computación cuántica supone un riesgo significativo para la seguridad digital.
+### Fördelarna med det kvantresistenta kryptografiska hashbiblioteket
 
-La biblioteca ofrece a las organizaciones e instituciones financieras el nivel más alto de protección disponible en línea, con una selección de algoritmos que incluyen Argon2i, BScrypt y Scrypt. Se trata de funciones de derivación de claves seguras a partir de contraseña (PBKDF). Las PBKDF sirven para convertir contraseñas en claves criptográficas. Diseñadas para ser lentas y exigentes en memoria, son difíciles de romper por fuerza bruta.
+[Hashbiblioteket (HSH) ⧉][00] tillhandahåller en rik uppsättning moderna kryptografiska primitiver och skapar en stark barriär mot kvantålderns komplexitet. Dess betydelse ligger i att skydda känsliga data i en tid då kvantdatorer utgör en betydande risk för den digitala säkerheten.
 
-Por otra parte, la biblioteca garantiza no solo resultados seguros y eficientes, sino también perfectamente adaptados a las aplicaciones empresariales, extensibles y fáciles de usar.
+Biblioteket erbjuder organisationer och finansinstitut den högsta skyddsnivå som finns tillgänglig online, med ett urval av algoritmer som omfattar Argon2i, BScrypt och Scrypt. Dessa är säkra lösenordsbaserade nyckelderiveringsfunktioner (PBKDF). PBKDF används för att omvandla lösenord till kryptografiska nycklar. De är utformade för att vara långsamma och minnesintensiva, vilket gör dem svåra att knäcka med brute force-attacker.
 
-## Incentivos
+Dessutom garanterar biblioteket att resultaten inte bara är säkra och effektiva, utan även perfekt lämpade för applikationer på företagsnivå, utbyggbara och enkla att använda.
 
-### Navegar por el paisaje de la computación cuántica con seguridad
+## Incitament
 
-* **Garantía de seguridad**: utilizar la biblioteca Hash (HSH) da a las organizaciones la garantía de que sus datos permanecen seguros.
+### Att navigera kvantdatorlandskapet på ett säkert sätt
 
-* **Perdurabilidad**: adoptar hoy algoritmos resistentes a lo cuántico protegerá a las organizaciones frente a las vulnerabilidades futuras.
+* **Säkerhetsgaranti**: Att använda hashbiblioteket (HSH) ger organisationer en försäkran om att deras data förblir säkra.
 
-* **Eficiencia económica**: la biblioteca Hash (HSH) es de código abierto y puede utilizarse sin licencia onerosa ni suscripción. Una opción atractiva para las organizaciones que deseen controlar sus costes a la vez que acceden a una computación cuántica segura.
+* **Framtidssäkring**: Att redan nu införa kvantresistenta algoritmer skyddar organisationer mot potentiella framtida sårbarheter.
 
-### Mantener la confianza de los consumidores
+* **Kostnadseffektivitet**: Hashbiblioteket (HSH) är öppen källkod och kan användas utan dyra licenser eller prenumerationsavgifter. Det gör det till ett attraktivt alternativ för organisationer som vill hålla kostnaderna nere och samtidigt ha tillgång till säker kvantberäkning.
 
-* **Proteger los datos de los clientes**: asegurar los datos de los clientes frente a los ataques de ordenadores cuánticos refuerza la confianza en la capacidad de las organizaciones para proteger la información.
+### Att upprätthålla konsumenternas förtroende
 
-* **Cumplimiento y adhesión normativa**: aplicar métodos criptográficos avanzados ayuda a respetar leyes y reglamentos estrictos de protección de datos, evitando consecuencias jurídicas y multas.
+* **Skydd av kunddata**: Att säkra kunddata mot attacker från kvantdatorer stärker förtroendet för organisationers förmåga att skydda information.
 
-### HSH: la biblioteca de hash definitiva resistente a lo cuántico
+* **Regelefterlevnad**: Att tillämpa avancerade kryptografiska metoder underlättar efterlevnaden av strikta dataskyddslagar och regelverk, vilket gör att rättsliga påföljder och böter kan undvikas.
 
-* **Alto rendimiento**: aprovechar la [biblioteca Hash (HSH) ⧉][00] basada en Rust aporta seguridad, eficiencia y rendimiento.
-Coherencia multiplataforma: la biblioteca Hash (HSH) protege los datos en todas las plataformas y aplicaciones.
+### HSH: det ultimata kvantresistenta hashbiblioteket
 
-* **Facilidad de implementación**: la biblioteca Hash (HSH) proporciona a los desarrolladores una herramienta sencilla de integrar, bajando la barrera de adopción de algoritmos resistentes a lo cuántico.
+* **Hög prestanda**: Att utnyttja det Rust-baserade [hashbiblioteket (HSH) ⧉][00] ger säkerhet, effektivitet och prestanda.
+Konsekvens över plattformar: Hashbiblioteket (HSH) skyddar data över plattformar och applikationer.
 
-## Conclusión
+* **Enkel implementering**: Hashbiblioteket (HSH) ger utvecklare ett verktyg som är lätt att implementera, vilket sänker tröskeln för att införa kvantresistenta algoritmer.
 
-La [biblioteca Hash (HSH) ⧉][00] ofrece una solución ligera, eficiente y fácil de usar para proteger los datos con criptografía resistente a lo cuántico. Facilita la actualización de los protocolos criptográficos de los desarrolladores para hacerlos resistentes a lo cuántico sin exigir una comprensión profunda de los algoritmos.
+## Slutsats
 
-La criptografía resistente a lo cuántico es un campo en rápida evolución, y la biblioteca HSH se compromete a mantenerse a la vanguardia. Se actualiza periódicamente con nuevos algoritmos y funcionalidades para proteger frente a las amenazas emergentes.
+[Hashbiblioteket (HSH) ⧉][00] erbjuder en lättviktig, effektiv och användarvänlig lösning för att skydda data med kvantresistent kryptografi. Det gör det enkelt för utvecklare att uppgradera sina kryptografiska protokoll till att bli kvantresistenta utan djupgående förståelse av algoritmerna.
 
-El [National Institute of Standards and Technology (NIST) ⧉][02] define actualmente un conjunto de estándares de algoritmos criptográficos postcuánticos a través de su [proyecto Post-Quantum Cryptography (PQC) ⧉][03].
+Kvantresistent kryptografi är ett fält i snabb utveckling, och HSH-biblioteket har som mål att ligga steget före. Biblioteket uppdateras regelbundet med nya algoritmer och funktioner för att skydda mot framväxande hot.
 
-Proteger sus datos frente a los ataques de la computación cuántica es esencial para toda organización que maneje datos sensibles. La [biblioteca Hash (HSH) ⧉][00] es una herramienta potente que puede ayudarle a proteger sus datos frente a esta amenaza emergente.
+[The National Institute of Standards and Technology (NIST) ⧉][02] håller för närvarande på att fastställa en uppsättning standarder för postkvantkryptografiska algoritmer genom sitt projekt [Post-Quantum Cryptography (PQC) ⧉][03].
 
-[00]: https://crates.io/crates/hsh "The Hash Library (HSH) - Quantum-Resistant Cryptographic Hash Library for Password Hashing and Verification"
-[01]: https://cloudcdn.pro/stocks/diagrams/alice-bob-eve-encryption.svg "Seguros pero vulnerables: navegar por los retos criptográficos en la era cuántica"
+Att skydda sina data mot attacker från kvantdatorer är avgörande för varje organisation som hanterar känsliga data. [Hashbiblioteket (HSH) ⧉][00] är ett kraftfullt verktyg som kan hjälpa er att skydda era data mot detta framväxande hot.
+
+![avdelare](https://cloudcdn.pro/clients/common/images/elements/divider.svg).class=\"m-10 w-100\"
+
+**Därmed är vår gemensamma stund till ända. Tack för din tid!**
+
+[00]: https://crates.io/crates/hsh "Hashbiblioteket (HSH) - kvantresistent kryptografiskt hashbibliotek för lösenordshashning och verifiering"
+[01]: https://cloudcdn.pro/stocks/diagrams/alice-bob-eve-encryption.svg "Säkra men sårbara: att hantera kryptografiska utmaningar i kvanteran"
 [02]: https://www.nist.gov/ "National Institute of Standards and Technology"
 [03]: https://csrc.nist.gov/projects/post-quantum-cryptography "Post-Quantum Cryptography PQC"

@@ -147,13 +147,26 @@ def _extract_shell_blocks(shell_html: str) -> tuple[str, str]:
     return (lead_m.group(0) if lead_m else "", related_m.group(0) if related_m else "")
 
 
+def _lead_strings() -> tuple[str, str]:
+    """(aria-label, heading) for the current language's lead aside,
+    sourced from ``strings.json`` — ``article.aria.summary`` and
+    ``article.keyTakeaways`` exist for every active locale (parity
+    gate ``test_i18n_strings``). EN literals are the fallback so a
+    missing key can never leak another locale's text."""
+    strings = _lang_registry.load_strings(st.LANG_CODE)
+    aria = strings.get("article.aria.summary", "Article summary")
+    heading = strings.get("article.keyTakeaways", "Key takeaways")
+    return aria, heading
+
+
 def _french_lead_fallback(description: str) -> str:
     """Minimal lead aside used when the English shell doesn't ship one
     (very short posts) — keeps the TL;DR row visually consistent."""
     if not description:
         return ""
+    aria, _heading = _lead_strings()
     return (
-        '<aside class="post-lead" aria-label="Résumé de l\'article">'
+        f'<aside class="post-lead" aria-label="{_html.escape(aria, quote=True)}">'
         f'<p class="post-lead-tldr"><strong>TL;DR.</strong> {_html.escape(description)}</p>'
         "</aside>"
     )
@@ -263,13 +276,19 @@ def _derive_fr_takeaways(body_md: str, max_items: int = 4) -> list[tuple[str, st
 
 
 def _build_fr_lead(description: str, takeaways: list[tuple[str, str]]) -> str:
-    """Build the post-lead aside fresh, in French, from the FR body."""
+    """Build the post-lead aside fresh, in the current language, from
+    the translated body. The aria-label and "Key takeaways" heading come
+    from the language's own ``strings.json`` — hardcoding the FR strings
+    here is exactly how "Points clés" leaked into the other 33 locales."""
+    aria, heading = _lead_strings()
     parts: list[str] = [
-        '<aside class="post-lead" aria-label="Résumé de l\'article">',
+        f'<aside class="post-lead" aria-label="{_html.escape(aria, quote=True)}">',
         f'<p class="post-lead-tldr"><strong>TL;DR.</strong> {_html.escape(description)}</p>',
     ]
     if takeaways:
-        parts.append('<p class="post-lead-heading"><strong>Points clés</strong></p>')
+        parts.append(
+            f'<p class="post-lead-heading"><strong>{_html.escape(heading)}</strong></p>'
+        )
         parts.append('<ul class="post-lead-takeaways">')
         for heading, sentence in takeaways:
             parts.append(
@@ -288,6 +307,15 @@ _BODY_FURNITURE_RE = re.compile(
 
 _CRUMBS_NAV_RE = re.compile(r'<nav class="crumbs"[\s\S]*?</nav>')
 _EYEBROW_RE = re.compile(r'<p class="eyebrow"[\s\S]*?</p>')
+# Hero tag-chip strip + author/date/read-time meta bar. Injected inside
+# <section class="ap-hero"> by postbuild's inject_article_furniture, so
+# the <main>-only body replacement never touches them. If they aren't
+# stripped here, the EN strings ("Published ...", "N min read",
+# aria-label="Topics", /tags/ links) survive into every locale page and
+# postbuild's idempotency gate (`class="article-tags"` present) then
+# refuses to re-inject the locale-correct versions.
+_ARTICLE_TAGS_RE = re.compile(r'<nav class="article-tags"[\s\S]*?</nav>')
+_ARTICLE_META_RE = re.compile(r'<div class="article-meta">[\s\S]*?</div>')
 _SHARE_RAIL_RE = re.compile(r'<nav class="share-rail[^"]*"[\s\S]*?</nav>')
 _ACTION_RAIL_RE = re.compile(r'<nav class="action-rail action-rail--sticky"[\s\S]*?</nav>')
 _BYLINE_STRAP_RE = re.compile(r'<p class="byline-strap"[\s\S]*?</p>')
@@ -312,6 +340,8 @@ def _strip_postbuild_furniture(shell: str) -> str:
     """
     out = _CRUMBS_NAV_RE.sub("", shell)
     out = _EYEBROW_RE.sub("", out)
+    out = _ARTICLE_TAGS_RE.sub("", out)
+    out = _ARTICLE_META_RE.sub("", out)
     out = _SHARE_RAIL_RE.sub("", out)
     out = _ACTION_RAIL_RE.sub("", out)
     out = _SYNDICATE_PANEL_RE.sub("", out)

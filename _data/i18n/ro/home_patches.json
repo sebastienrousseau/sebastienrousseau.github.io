@@ -39,19 +39,19 @@
     ],
     [
       "<a href=/about/index\\.html>About</a>",
-      "<a href=/ro/despre/index.html>About</a>"
+      "<a href=/ro/despre/index.html>Despre</a>"
     ],
     [
       "<a href=/papers/index\\.html>Papers</a>",
-      "<a href=/ro/publicatii/index.html>Papers</a>"
+      "<a href=/ro/publicatii/index.html>Publicații</a>"
     ],
     [
       "<a href=/projects/index\\.html>Projects</a>",
-      "<a href=/ro/proiecte/index.html>Projects</a>"
+      "<a href=/ro/proiecte/index.html>Proiecte</a>"
     ],
     [
       "<a href=/playlists/index\\.html>Playlists</a>",
-      "<a href=/ro/liste-de-redare/index.html>Playlists</a>"
+      "<a href=/ro/liste-de-redare/index.html>Playlisturi</a>"
     ],
     [
       "<a href=/contact/index\\.html>Contact</a>",
@@ -59,27 +59,27 @@
     ],
     [
       "<a href=/tags/index\\.html>Tags</a>",
-      "<a href=/ro/etichete/index.html>Tags</a>"
+      "<a href=/ro/etichete/index.html>Etichete</a>"
     ],
     [
       "<a href=/articles/index\\.html>Articles</a>",
-      "<a href=/ro/articole/index.html>Articles</a>"
+      "<a href=/ro/articole/index.html>Articole</a>"
     ],
     [
       "<a href=/made-with-static-site-generator/index\\.html>Made with Static Site Generator</a>",
-      "<a href=/ro/facut-cu-static-site-generator/index.html>Made with Static Site Generator</a>"
+      "<a href=/ro/facut-cu-static-site-generator/index.html>Realizat cu Static Site Generator</a>"
     ],
     [
       "<a href=/accessibility/index\\.html>Accessibility</a>",
-      "<a href=/ro/accesibilitate/index.html>Accessibility</a>"
+      "<a href=/ro/accesibilitate/index.html>Accesibilitate</a>"
     ],
     [
       "<a href=/privacy/index\\.html>Privacy</a>",
-      "<a href=/ro/confidentialitate/index.html>Privacy</a>"
+      "<a href=/ro/confidentialitate/index.html>Confidențialitate</a>"
     ],
     [
       "<a href=/terms/index\\.html>Terms</a>",
-      "<a href=/ro/termeni/index.html>Terms</a>"
+      "<a href=/ro/termeni/index.html>Termeni</a>"
     ],
     [
       "© Copyright 2007 - 2026 - Sebastien Rousseau\\. All rights reserved\\.",
@@ -103,19 +103,19 @@
     ],
     [
       ">By topic<",
-      ">By topic<"
+      ">După subiect<"
     ],
     [
       ">All topics<",
-      ">All topics<"
+      ">Toate subiectele<"
     ],
     [
       ">By tag<",
-      ">By tag<"
+      ">După etichetă<"
     ],
     [
       ">All tags<",
-      ">All tags<"
+      ">Toate etichetele<"
     ],
     [
       ">Published<",
@@ -135,7 +135,7 @@
     ],
     [
       ">Follow<",
-      ">Follow<"
+      ">Urmărește<"
     ],
     [
       "<p class=feat-eyebrow>Get in touch</p>",
@@ -147,83 +147,83 @@
     ],
     [
       ">Learn more<",
-      ">Learn more<"
+      ">Află mai multe<"
     ],
     [
       ">Authored & maintained<",
-      ">Authored & maintained<"
+      ">Scrise și întreținute<"
     ],
     [
       ">Authored &amp; maintained<",
-      ">Authored &amp; maintained<"
+      ">Scrise și întreținute<"
     ],
     [
       "alt=\"PayPal logo\"",
-      "alt=\"PayPal logo\""
+      "alt=\"Logo PayPal\""
     ],
     [
       "alt=\"Barclays logo\"",
-      "alt=\"Barclays logo\""
+      "alt=\"Logo Barclays\""
     ],
     [
       "alt=\"Shazam logo\"",
-      "alt=\"Shazam logo\""
+      "alt=\"Logo Shazam\""
     ],
     [
       "alt=\"AKQA logo\"",
-      "alt=\"AKQA logo\""
+      "alt=\"Logo AKQA\""
     ],
     [
       "alt=\"Virgin logo\"",
-      "alt=\"Virgin logo\""
+      "alt=\"Logo Virgin\""
     ],
     [
       "alt=\"HSBC logo\"",
-      "alt=\"HSBC logo\""
+      "alt=\"Logo HSBC\""
     ],
     [
       ">Read the white paper</a>",
-      ">Read the white paper</a>"
+      ">Citește cartea albă</a>"
     ],
     [
       ">Read the article<",
-      ">Read the article<"
+      ">Citește articolul<"
     ],
     [
       ">Read the paper<",
-      ">Read the paper<"
+      ">Citește cartea albă<"
     ],
     [
       ">See all articles\\b",
-      ">See all articles"
+      ">Vezi toate articolele"
     ],
     [
       ">Quantum<",
-      ">Quantum<"
+      ">Cuantic<"
     ],
     [
       ">Quantum · Banking<",
-      ">Quantum · Banking<"
+      ">Cuantic · Bănci<"
     ],
     [
       ">Quantum · Cryptography<",
-      ">Quantum · Cryptography<"
+      ">Cuantic · Criptografie<"
     ],
     [
       ">Payments · Stablecoins<",
-      ">Payments · Stablecoins<"
+      ">Plăți · Stablecoins<"
     ],
     [
       ">Payments · ISO 20022<",
-      ">Payments · ISO 20022<"
+      ">Plăți · ISO 20022<"
     ],
     [
       ">Python · Payments<",
-      ">Python · Payments<"
+      ">Python · Plăți<"
     ],
     [
       ">Python · Cross-border<",
-      ">Python · Cross-border<"
+      ">Python · Transfrontalier<"
     ],
     [
       ">Python · Finance<",
@@ -231,11 +231,11 @@
     ],
     [
       ">Rust · Security<",
-      ">Rust · Security<"
+      ">Rust · Securitate<"
     ],
     [
       ">Rust · Quantum<",
-      ">Rust · Quantum<"
+      ">Rust · Cuantic<"
     ],
     [
       ">Rust · YAML<",
@@ -243,15 +243,15 @@
     ],
     [
       ">Browse all projects<",
-      ">Browse all projects<"
+      ">Explorează toate proiectele<"
     ],
     [
       ">Experience<",
-      ">Experience<"
+      ">Experiență<"
     ],
     [
       ">Brands along the way\\.<",
-      ">Brands along the way.<"
+      ">Branduri de-a lungul parcursului.<"
     ],
     [
       "aria-label=\"Newsletter signup\"",
