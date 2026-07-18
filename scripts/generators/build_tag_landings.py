@@ -47,6 +47,7 @@ from listing_common import (
     _TITLE_FM_RE,
     PILLAR_ORDER,
     _alias_map,
+    _strip_fm_quotes,
 )
 from tag_landing_render import (
     _BASE_URL,
@@ -101,17 +102,17 @@ def _extract_excerpt(text: str) -> str:
     """Return the post's excerpt or fall back to description."""
     excerpt_m = _EXCERPT_FM_RE.search(text)
     if excerpt_m:
-        return excerpt_m.group(1)
+        return _strip_fm_quotes(excerpt_m.group(1))
     desc_m = _DESC_FM_RE.search(text)
-    return desc_m.group(1) if desc_m else ""
+    return _strip_fm_quotes(desc_m.group(1)) if desc_m else ""
 
 
 def _extract_banner(text: str, title: str) -> tuple[str, str]:
     """Return (banner_url, banner_alt) — banner_alt falls back to title."""
     banner_m = _BANNER_FM_RE.search(text)
     banner_alt_m = _BANNER_ALT_FM_RE.search(text)
-    banner = banner_m.group(1) if banner_m else _DEFAULT_BANNER
-    banner_alt = banner_alt_m.group(1) if banner_alt_m else title
+    banner = _strip_fm_quotes(banner_m.group(1)) if banner_m else _DEFAULT_BANNER
+    banner_alt = _strip_fm_quotes(banner_alt_m.group(1)) if banner_alt_m else title
     return banner, banner_alt
 
 
@@ -135,7 +136,7 @@ def _post_meta(path: Path) -> tuple[str, str, str, str, list[str], str, str] | N
     if not tags_m:
         return None
     title_m = _TITLE_FM_RE.search(text)
-    title = title_m.group(1) if title_m else path.stem
+    title = _strip_fm_quotes(title_m.group(1)) if title_m else path.stem
     excerpt = _extract_excerpt(text)
     banner, banner_alt = _extract_banner(text, title)
     stem_m = _DATED_SLUG_RE.match(path.stem)

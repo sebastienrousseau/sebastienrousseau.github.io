@@ -368,6 +368,26 @@
     [
       "<li><a href=\"?/case-studies/index\\.html\"?>Real-World Case Studies</a></li>",
       "<li><a href=\"/bn/case-studies/index.html\">বাস্তব কেস স্টাডি</a></li>"
+    ],
+    [
+      "aria-label=\"Share on X\"",
+      "aria-label=\"X-এ শেয়ার করুন\""
+    ],
+    [
+      "aria-label=\"Share on LinkedIn\"",
+      "aria-label=\"LinkedIn-এ শেয়ার করুন\""
+    ],
+    [
+      "aria-label=\"Copy link\"",
+      "aria-label=\"লিঙ্ক কপি করুন\""
+    ],
+    [
+      "aria-label=\"Share this article\"",
+      "aria-label=\"এই নিবন্ধটি শেয়ার করুন\""
+    ],
+    [
+      "(class=\"newsroom-more\"><a [^>]*>)Learn more <span",
+      "\\g<1>আরও জানুন <span"
     ]
   ]
 }

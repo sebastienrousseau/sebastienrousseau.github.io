@@ -336,6 +336,26 @@
     [
       "<dl class=pao><div><dt>Problem</dt><dd>AI, MCP and config pipelines run on YAML parsers with C-backed UB and silent spec drift\\.</dd></div><div><dt>Approach</dt><dd>Pure-Rust YAML 1\\.2 across library, CLI, LSP, MCP and WASM — zero unsafe, full spec\\.</dd></div><div><dt>Outcome</dt><dd>YAML pipelines that stop being the supply-chain weak link\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> 406 \\/ 406 spec · 0 unsafe</p>",
       "<dl class=pao><div><dt>ปัญหา</dt><dd>Pipeline ของ AI, MCP และ config ทำงานบน YAML parser ที่มี UB รองรับด้วย C และมีการเบี่ยงเบนจาก spec แบบเงียบๆ</dd></div><div><dt>แนวทาง</dt><dd>Pure-Rust YAML 1.2 ครอบคลุม library, CLI, LSP, MCP และ WASM — ไม่มี unsafe เลย รองรับ spec ครบถ้วน</dd></div><div><dt>ผลลัพธ์</dt><dd>YAML pipeline ที่ไม่ใช่จุดอ่อนของ supply chain อีกต่อไป</dd></div></dl><p class=proj-metric><span class=proj-metric-label>ผลกระทบ</span> 406 / 406 spec · 0 unsafe</p>"
+    ],
+    [
+      ">Open-source payments, post-quantum security, and applied AI for financial services\\.</p>",
+      ">การชำระเงินโอเพนซอร์ส ความปลอดภัยหลังควอนตัม และ AI ประยุกต์สำหรับบริการทางการเงิน</p>"
+    ],
+    [
+      "<p class=\"feat-eyebrow\">Proof</p>",
+      "<p class=\"feat-eyebrow\">หลักฐาน</p>"
+    ],
+    [
+      ">By the numbers\\.</h2>",
+      ">ในเชิงตัวเลข</h2>"
+    ],
+    [
+      ">Open source for the future of banking and finance\\.</h2>",
+      ">โอเพนซอร์สเพื่ออนาคตของการธนาคารและการเงิน</h2>"
+    ],
+    [
+      "(class=\"offer-link\" href=\"[^\"]*\">)Learn more <span",
+      "\\g<1>ดูข้อมูลเพิ่มเติม <span"
     ]
   ]
 }

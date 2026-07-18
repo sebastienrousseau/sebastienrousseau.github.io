@@ -436,18 +436,18 @@ def render_home() -> str | None:  # noqa: C901 — orchestrates the FR home fork
 
     shell = _patch_jsonld_scripts(shell, patch_node)
 
-    # Reciprocal hreflang so the language selector finds the EN home.
+    # Reciprocal hreflang: strip any stale links here; the canonical full
+    # 35-locale reciprocal set is emitted for the home by the postbuild
+    # hreflang pass. (Previously this function also appended a 3-entry
+    # en/self/x-default block, which the postbuild pass does NOT strip on
+    # the home — unlike the hubs — so the block duplicated en/self/x-default
+    # on every localized home. Dropping it leaves the postbuild set as the
+    # single source of truth.)
     shell = re.sub(
         r'<link rel="alternate"[^>]+hreflang="[^"]+"[^>]*/>',
         "",
         shell,
     )
-    hreflang_block = (
-        f'<link rel="alternate" hreflang="en" href="{st.BASE}/" />'
-        f'<link rel="alternate" hreflang="{st.LANG_CODE}" href="{url_fr}" />'
-        f'<link rel="alternate" hreflang="x-default" href="{st.BASE}/" />'
-    )
-    shell = shell.replace("</head>", hreflang_block + "</head>", 1)
     shell = _localize_inlanguage_globally(shell, st.LANG_CODE)
 
     return shell

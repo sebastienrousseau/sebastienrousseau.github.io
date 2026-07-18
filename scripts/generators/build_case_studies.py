@@ -89,6 +89,9 @@ _OG_DESC_RE = re.compile(
 _OG_URL_RE = re.compile(
     r'(<meta property="og:url" content=")[^"]*(")', re.IGNORECASE
 )
+_OG_LOCALE_RE = re.compile(
+    r'(<meta\s+property="og:locale"\s+content=")[^"]*(")', re.IGNORECASE
+)
 _MAIN_WRAP_RE = re.compile(
     r'(<main\b[^>]*>\s*)<div class="wrap[^"]*">[\s\S]*?</div>(\s*</main>)',
     re.IGNORECASE,
@@ -387,7 +390,7 @@ def _swap_into_shell(shell: str, body: str, title: str, desc: str, url: str) -> 
 def _write_study(
     shell: str, study: dict, lang: str, url_segment: str,
     lbl: dict[str, str], out_dir: Path, article_slug_map: dict[str, str],
-    all_studies: list[dict],
+    all_studies: list[dict], og_locale: str,
 ) -> Path:
     slug = study["slug"]
     title = study.get("title", slug)
@@ -399,6 +402,7 @@ def _write_study(
     )
     body = _render_body(study, lbl, lang, url_segment, article_slug_map, all_studies)
     out = _swap_into_shell(shell, body, title, desc, url)
+    out = _OG_LOCALE_RE.sub(rf"\g<1>{og_locale}\g<2>", out, count=1)
     target = out_dir / slug / "index.html"
     target.parent.mkdir(parents=True, exist_ok=True)
     target.write_text(out, encoding="utf-8")
@@ -407,7 +411,7 @@ def _write_study(
 
 def _write_index(
     shell: str, studies: list[dict], lang: str, url_segment: str,
-    lbl: dict[str, str], out_dir: Path,
+    lbl: dict[str, str], out_dir: Path, og_locale: str,
 ) -> Path:
     body = _render_index_body(studies, lbl, lang, url_segment)
     url = (
@@ -428,6 +432,7 @@ def _write_index(
         lbl["deck"],
         url,
     )
+    out = _OG_LOCALE_RE.sub(rf"\g<1>{og_locale}\g<2>", out, count=1)
     target = out_dir / "index.html"
     target.parent.mkdir(parents=True, exist_ok=True)
     target.write_text(out, encoding="utf-8")
@@ -436,7 +441,7 @@ def _write_index(
 
 def _emit_one_locale(
     shell: str, studies: list[dict], lang: str, url_segment: str,
-    lbl: dict[str, str], article_slug_map: dict[str, str],
+    lbl: dict[str, str], article_slug_map: dict[str, str], og_locale: str,
 ) -> int:
     out_dir = OUT_DIR if lang == "en" else (PUBLIC / lang / url_segment)
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -444,8 +449,8 @@ def _emit_one_locale(
     # through unchanged (overlay loader returns {} for lang == 'en').
     localised_studies = [_localised_study(s, lang) for s in studies]
     for study in localised_studies:
-        _write_study(shell, study, lang, url_segment, lbl, out_dir, article_slug_map, localised_studies)
-    _write_index(shell, localised_studies, lang, url_segment, lbl, out_dir)
+        _write_study(shell, study, lang, url_segment, lbl, out_dir, article_slug_map, localised_studies, og_locale)
+    _write_index(shell, localised_studies, lang, url_segment, lbl, out_dir, og_locale)
     return len(localised_studies) + 1
 
 
@@ -483,7 +488,7 @@ def _emit_locale_forks(studies: list[dict]) -> int:
         # BCP-47 tag so test_jsonld_localized.py passes for the locale forks.
         localised_shell = _ch._localize_inlanguage_globally(localised_shell, lang.code)
         total += _emit_one_locale(
-            localised_shell, studies, lang.code, url_segment, lbl, article_slug_map
+            localised_shell, studies, lang.code, url_segment, lbl, article_slug_map, lang.og_locale
         )
     return total
 
@@ -498,7 +503,7 @@ def main() -> int:
     shell = SHELL_SRC.read_text(encoding="utf-8")
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     en_lbl = _lbl("en")
-    en_count = _emit_one_locale(shell, studies, "en", "case-studies", en_lbl, {})
+    en_count = _emit_one_locale(shell, studies, "en", "case-studies", en_lbl, {}, "en_GB")
     locale_count = _emit_locale_forks(studies)
     print(
         f"build_case_studies: wrote {len(studies)} case studies + 1 index in EN "

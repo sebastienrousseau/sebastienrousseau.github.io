@@ -336,6 +336,26 @@
     [
       "<dl class=pao><div><dt>Problem</dt><dd>AI, MCP and config pipelines run on YAML parsers with C-backed UB and silent spec drift\\.</dd></div><div><dt>Approach</dt><dd>Pure-Rust YAML 1\\.2 across library, CLI, LSP, MCP and WASM — zero unsafe, full spec\\.</dd></div><div><dt>Outcome</dt><dd>YAML pipelines that stop being the supply-chain weak link\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> 406 \\/ 406 spec · 0 unsafe</p>",
       "<dl class=pao><div><dt>문제</dt><dd>AI, MCP 및 설정 파이프라인이 C 기반 UB와 묵시적 스펙 편차를 가진 YAML 파서 위에서 실행됩니다.</dd></div><div><dt>접근 방식</dt><dd>라이브러리, CLI, LSP, MCP, WASM 전반에 걸친 순수 Rust YAML 1.2 — unsafe 코드 없음, 완전한 스펙 준수.</dd></div><div><dt>성과</dt><dd>공급망의 취약 고리가 되지 않는 YAML 파이프라인.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>영향</span> 406 / 406 스펙 · 0 unsafe</p>"
+    ],
+    [
+      ">Open-source payments, post-quantum security, and applied AI for financial services\\.</p>",
+      ">오픈소스 결제, 포스트 양자 보안, 그리고 금융 서비스를 위한 응용 AI.</p>"
+    ],
+    [
+      "<p class=\"feat-eyebrow\">Proof</p>",
+      "<p class=\"feat-eyebrow\">실적</p>"
+    ],
+    [
+      ">By the numbers\\.</h2>",
+      ">숫자로 보다.</h2>"
+    ],
+    [
+      ">Open source for the future of banking and finance\\.</h2>",
+      ">은행업과 금융의 미래를 위한 오픈소스.</h2>"
+    ],
+    [
+      "(class=\"offer-link\" href=\"[^\"]*\">)Learn more <span",
+      "\\g<1>더 알아보기 <span"
     ]
   ]
 }

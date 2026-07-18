@@ -367,6 +367,26 @@
     [
       "<li><a href=\"?/case-studies/index\\.html\"?>Real-World Case Studies</a></li>",
       "<li><a href=\"/ms/case-studies/index.html\">Kajian kes dunia sebenar</a></li>"
+    ],
+    [
+      "aria-label=\"Share on X\"",
+      "aria-label=\"Kongsi di X\""
+    ],
+    [
+      "aria-label=\"Share on LinkedIn\"",
+      "aria-label=\"Kongsi di LinkedIn\""
+    ],
+    [
+      "aria-label=\"Copy link\"",
+      "aria-label=\"Salin pautan\""
+    ],
+    [
+      "aria-label=\"Share this article\"",
+      "aria-label=\"Kongsi artikel ini\""
+    ],
+    [
+      "(class=\"newsroom-more\"><a [^>]*>)Learn more <span",
+      "\\g<1>Ketahui lebih lanjut <span"
     ]
   ]
 }

@@ -368,6 +368,26 @@
     [
       "<li><a href=\"?/case-studies/index\\.html\"?>Real-World Case Studies</a></li>",
       "<li><a href=\"/vi/nghien-cuu-tinh-huong/index.html\">Nghiên cứu tình huống thực tế</a></li>"
+    ],
+    [
+      "aria-label=\"Share on X\"",
+      "aria-label=\"Chia sẻ trên X\""
+    ],
+    [
+      "aria-label=\"Share on LinkedIn\"",
+      "aria-label=\"Chia sẻ trên LinkedIn\""
+    ],
+    [
+      "aria-label=\"Copy link\"",
+      "aria-label=\"Sao chép liên kết\""
+    ],
+    [
+      "aria-label=\"Share this article\"",
+      "aria-label=\"Chia sẻ bài viết này\""
+    ],
+    [
+      "(class=\"newsroom-more\"><a [^>]*>)Learn more <span",
+      "\\g<1>Tìm hiểu thêm <span"
     ]
   ]
 }

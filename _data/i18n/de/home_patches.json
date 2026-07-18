@@ -336,6 +336,26 @@
     [
       "<dl class=pao><div><dt>Problem</dt><dd>AI, MCP and config pipelines run on YAML parsers with C-backed UB and silent spec drift\\.</dd></div><div><dt>Approach</dt><dd>Pure-Rust YAML 1\\.2 across library, CLI, LSP, MCP and WASM — zero unsafe, full spec\\.</dd></div><div><dt>Outcome</dt><dd>YAML pipelines that stop being the supply-chain weak link\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> 406 \\/ 406 spec · 0 unsafe</p>",
       "<dl class=pao><div><dt>Problem</dt><dd>AI-, MCP- und Konfigurations-Pipelines laufen auf YAML-Parsern mit C-seitigem UB und stillem Spezifikationsdrift.</dd></div><div><dt>Ansatz</dt><dd>Pure-Rust YAML 1.2 über Bibliothek, CLI, LSP, MCP und WASM — null unsafe, vollständige Spezifikation.</dd></div><div><dt>Ergebnis</dt><dd>YAML-Pipelines, die aufhören, das schwache Glied in der Lieferkette zu sein.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Wirkung</span> 406 / 406 Spezifikation · 0 unsafe</p>"
+    ],
+    [
+      ">Open-source payments, post-quantum security, and applied AI for financial services\\.</p>",
+      ">Open-Source-Zahlungen, Post-Quanten-Sicherheit und angewandte KI für Finanzdienstleistungen.</p>"
+    ],
+    [
+      "<p class=\"feat-eyebrow\">Proof</p>",
+      "<p class=\"feat-eyebrow\">Nachweis</p>"
+    ],
+    [
+      ">By the numbers\\.</h2>",
+      ">In Zahlen.</h2>"
+    ],
+    [
+      ">Open source for the future of banking and finance\\.</h2>",
+      ">Open Source für die Zukunft von Banking und Finanzen.</h2>"
+    ],
+    [
+      "(class=\"offer-link\" href=\"[^\"]*\">)Learn more <span",
+      "\\g<1>Mehr erfahren <span"
     ]
   ]
 }

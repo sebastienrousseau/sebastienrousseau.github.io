@@ -50,6 +50,8 @@ from postbuild_lib.article_furniture import (
 )
 from postbuild_lib.seo import _keywords_re
 
+_OEMBED_DIR = Path(__file__).resolve().parents[3] / "public" / "oembed"
+
 
 def inject_oembed_link(html: str) -> str:
     """Inject the `<link rel="alternate" type="application/json+oembed">`
@@ -73,6 +75,12 @@ def inject_oembed_link(html: str) -> str:
         url = url[: -len("/index.html")] + "/"
     bare = url.rstrip("/").rsplit("/", 1)[-1] or None
     if not bare:
+        return html
+    # Only advertise the discovery link when the static JSON actually exists.
+    # build_oembed.py generates /oembed/<slug>.json for EN dated posts only;
+    # localized-slug locale forks (fr/…) reference a slug with no JSON, so the
+    # link would 404 for consumers (Slack/Discord unfurls fall back to OG).
+    if not (_OEMBED_DIR / f"{bare}.json").is_file():
         return html
     title = _unesc(title_m.group(1))
     oembed_href = f"{_BASE_URL}/oembed/{bare}.json"

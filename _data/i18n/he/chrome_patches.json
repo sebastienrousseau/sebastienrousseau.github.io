@@ -368,6 +368,26 @@
     [
       "<li><a href=\"?/case-studies/index\\.html\"?>Real-World Case Studies</a></li>",
       "<li><a href=\"/he/mikrey-vohan/index.html\">מקרי בוחן מהעולם האמיתי</a></li>"
+    ],
+    [
+      "aria-label=\"Share on X\"",
+      "aria-label=\"שיתוף ב-X\""
+    ],
+    [
+      "aria-label=\"Share on LinkedIn\"",
+      "aria-label=\"שיתוף ב-LinkedIn\""
+    ],
+    [
+      "aria-label=\"Copy link\"",
+      "aria-label=\"העתקת קישור\""
+    ],
+    [
+      "aria-label=\"Share this article\"",
+      "aria-label=\"שיתוף מאמר זה\""
+    ],
+    [
+      "(class=\"newsroom-more\"><a [^>]*>)Learn more <span",
+      "\\g<1>מידע נוסף <span"
     ]
   ]
 }

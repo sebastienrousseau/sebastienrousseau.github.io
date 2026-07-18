@@ -367,6 +367,26 @@
     [
       "<li><a href=\"?/case-studies/index\\.html\"?>Real-World Case Studies</a></li>",
       "<li><a href=\"/mr/case-studies/index.html\">वास्तविक केस स्टडीज</a></li>"
+    ],
+    [
+      "aria-label=\"Share on X\"",
+      "aria-label=\"X वर सामायिक करा\""
+    ],
+    [
+      "aria-label=\"Share on LinkedIn\"",
+      "aria-label=\"LinkedIn वर सामायिक करा\""
+    ],
+    [
+      "aria-label=\"Copy link\"",
+      "aria-label=\"दुवा कॉपी करा\""
+    ],
+    [
+      "aria-label=\"Share this article\"",
+      "aria-label=\"हा लेख सामायिक करा\""
+    ],
+    [
+      "(class=\"newsroom-more\"><a [^>]*>)Learn more <span",
+      "\\g<1>अधिक जाणून घ्या <span"
     ]
   ]
 }

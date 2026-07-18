@@ -367,6 +367,26 @@
     [
       "<li><a href=\"?/case-studies/index\\.html\"?>Real-World Case Studies</a></li>",
       "<li><a href=\"/hu/case-studies/index.html\">Valós esettanulmányok</a></li>"
+    ],
+    [
+      "aria-label=\"Share on X\"",
+      "aria-label=\"Megosztás X-en\""
+    ],
+    [
+      "aria-label=\"Share on LinkedIn\"",
+      "aria-label=\"Megosztás a LinkedInen\""
+    ],
+    [
+      "aria-label=\"Copy link\"",
+      "aria-label=\"Hivatkozás másolása\""
+    ],
+    [
+      "aria-label=\"Share this article\"",
+      "aria-label=\"Cikk megosztása\""
+    ],
+    [
+      "(class=\"newsroom-more\"><a [^>]*>)Learn more <span",
+      "\\g<1>Tudjon meg többet <span"
     ]
   ]
 }

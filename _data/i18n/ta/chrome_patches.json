@@ -367,6 +367,26 @@
     [
       "<li><a href=\"?/case-studies/index\\.html\"?>Real-World Case Studies</a></li>",
       "<li><a href=\"/ta/case-studies/index.html\">நிஜ உலக வழக்கு ஆய்வுகள்</a></li>"
+    ],
+    [
+      "aria-label=\"Share on X\"",
+      "aria-label=\"X இல் பகிர்\""
+    ],
+    [
+      "aria-label=\"Share on LinkedIn\"",
+      "aria-label=\"LinkedIn இல் பகிர்\""
+    ],
+    [
+      "aria-label=\"Copy link\"",
+      "aria-label=\"இணைப்பை நகலெடு\""
+    ],
+    [
+      "aria-label=\"Share this article\"",
+      "aria-label=\"இந்தக் கட்டுரையைப் பகிர்\""
+    ],
+    [
+      "(class=\"newsroom-more\"><a [^>]*>)Learn more <span",
+      "\\g<1>மேலும் அறிக <span"
     ]
   ]
 }

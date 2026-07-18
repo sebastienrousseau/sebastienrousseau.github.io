@@ -368,6 +368,26 @@
     [
       "<li><a href=\"?/case-studies/index\\.html\"?>Real-World Case Studies</a></li>",
       "<li><a href=\"/ko/sarye-yeongu/index.html\">실제 사례 연구</a></li>"
+    ],
+    [
+      "aria-label=\"Share on X\"",
+      "aria-label=\"X에 공유\""
+    ],
+    [
+      "aria-label=\"Share on LinkedIn\"",
+      "aria-label=\"LinkedIn에 공유\""
+    ],
+    [
+      "aria-label=\"Copy link\"",
+      "aria-label=\"링크 복사\""
+    ],
+    [
+      "aria-label=\"Share this article\"",
+      "aria-label=\"이 글 공유하기\""
+    ],
+    [
+      "(class=\"newsroom-more\"><a [^>]*>)Learn more <span",
+      "\\g<1>더 알아보기 <span"
     ]
   ]
 }

@@ -367,6 +367,26 @@
     [
       "<li><a href=\"?/case-studies/index\\.html\"?>Real-World Case Studies</a></li>",
       "<li><a href=\"/el/case-studies/index.html\">Πραγματικές μελέτες περιπτώσεων</a></li>"
+    ],
+    [
+      "aria-label=\"Share on X\"",
+      "aria-label=\"Κοινοποίηση στο X\""
+    ],
+    [
+      "aria-label=\"Share on LinkedIn\"",
+      "aria-label=\"Κοινοποίηση στο LinkedIn\""
+    ],
+    [
+      "aria-label=\"Copy link\"",
+      "aria-label=\"Αντιγραφή συνδέσμου\""
+    ],
+    [
+      "aria-label=\"Share this article\"",
+      "aria-label=\"Κοινοποίηση αυτού του άρθρου\""
+    ],
+    [
+      "(class=\"newsroom-more\"><a [^>]*>)Learn more <span",
+      "\\g<1>Μάθετε περισσότερα <span"
     ]
   ]
 }

@@ -596,7 +596,11 @@ def test_render_home_patches_website_and_webpage_jsonld(monkeypatch, tmp_path):
     assert out is not None
     assert '"url":"https://sebastienrousseau.com/fr/"' in out
     assert out.count('"inLanguage":"fr"') == 2
-    assert 'hreflang="x-default"' in out
+    # render_home no longer emits its own hreflang block: the canonical
+    # full 35-locale reciprocal set is added by the postbuild hreflang
+    # pass. Emitting a 3-entry en/self/x-default block here duplicated
+    # those three on every localized home (see _pages.render_home).
+    assert 'hreflang="x-default"' not in out
 
 
 STATIC_SHELL = (

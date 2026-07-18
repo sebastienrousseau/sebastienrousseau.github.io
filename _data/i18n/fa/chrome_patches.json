@@ -367,6 +367,26 @@
     [
       "<li><a href=\"?/case-studies/index\\.html\"?>Real-World Case Studies</a></li>",
       "<li><a href=\"/fa/case-studies/index.html\">مطالعات موردی واقعی</a></li>"
+    ],
+    [
+      "aria-label=\"Share on X\"",
+      "aria-label=\"اشتراک‌گذاری در X\""
+    ],
+    [
+      "aria-label=\"Share on LinkedIn\"",
+      "aria-label=\"اشتراک‌گذاری در LinkedIn\""
+    ],
+    [
+      "aria-label=\"Copy link\"",
+      "aria-label=\"کپی پیوند\""
+    ],
+    [
+      "aria-label=\"Share this article\"",
+      "aria-label=\"اشتراک‌گذاری این مقاله\""
+    ],
+    [
+      "(class=\"newsroom-more\"><a [^>]*>)Learn more <span",
+      "\\g<1>بیشتر بدانید <span"
     ]
   ]
 }

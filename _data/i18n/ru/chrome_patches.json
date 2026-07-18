@@ -368,6 +368,26 @@
     [
       "<li><a href=\"?/case-studies/index\\.html\"?>Real-World Case Studies</a></li>",
       "<li><a href=\"/ru/kejs-stadi/index.html\">Реальные кейс-стади</a></li>"
+    ],
+    [
+      "aria-label=\"Share on X\"",
+      "aria-label=\"Поделиться в X\""
+    ],
+    [
+      "aria-label=\"Share on LinkedIn\"",
+      "aria-label=\"Поделиться в LinkedIn\""
+    ],
+    [
+      "aria-label=\"Copy link\"",
+      "aria-label=\"Копировать ссылку\""
+    ],
+    [
+      "aria-label=\"Share this article\"",
+      "aria-label=\"Поделиться этой статьёй\""
+    ],
+    [
+      "(class=\"newsroom-more\"><a [^>]*>)Learn more <span",
+      "\\g<1>Подробнее <span"
     ]
   ]
 }

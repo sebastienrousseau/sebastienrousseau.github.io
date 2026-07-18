@@ -368,6 +368,26 @@
     [
       "<li><a href=\"?/case-studies/index\\.html\"?>Real-World Case Studies</a></li>",
       "<li><a href=\"/ja/jirei-kenkyu/index.html\">実際の事例研究</a></li>"
+    ],
+    [
+      "aria-label=\"Share on X\"",
+      "aria-label=\"Xで共有\""
+    ],
+    [
+      "aria-label=\"Share on LinkedIn\"",
+      "aria-label=\"LinkedInで共有\""
+    ],
+    [
+      "aria-label=\"Copy link\"",
+      "aria-label=\"リンクをコピー\""
+    ],
+    [
+      "aria-label=\"Share this article\"",
+      "aria-label=\"この記事を共有\""
+    ],
+    [
+      "(class=\"newsroom-more\"><a [^>]*>)Learn more <span",
+      "\\g<1>詳しく見る <span"
     ]
   ]
 }

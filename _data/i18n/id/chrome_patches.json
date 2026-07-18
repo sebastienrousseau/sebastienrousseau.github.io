@@ -368,6 +368,26 @@
     [
       "<li><a href=\"?/case-studies/index\\.html\"?>Real-World Case Studies</a></li>",
       "<li><a href=\"/id/studi-kasus/index.html\">Studi kasus dunia nyata</a></li>"
+    ],
+    [
+      "aria-label=\"Share on X\"",
+      "aria-label=\"Bagikan di X\""
+    ],
+    [
+      "aria-label=\"Share on LinkedIn\"",
+      "aria-label=\"Bagikan di LinkedIn\""
+    ],
+    [
+      "aria-label=\"Copy link\"",
+      "aria-label=\"Salin tautan\""
+    ],
+    [
+      "aria-label=\"Share this article\"",
+      "aria-label=\"Bagikan artikel ini\""
+    ],
+    [
+      "(class=\"newsroom-more\"><a [^>]*>)Learn more <span",
+      "\\g<1>Pelajari lebih lanjut <span"
     ]
   ]
 }

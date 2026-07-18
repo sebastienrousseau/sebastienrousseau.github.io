@@ -367,6 +367,26 @@
     [
       "<li><a href=\"?/case-studies/index\\.html\"?>Real-World Case Studies</a></li>",
       "<li><a href=\"/te/case-studies/index.html\">వాస్తవ కేస్ స్టడీలు</a></li>"
+    ],
+    [
+      "aria-label=\"Share on X\"",
+      "aria-label=\"Xలో భాగస్వామ్యం చేయండి\""
+    ],
+    [
+      "aria-label=\"Share on LinkedIn\"",
+      "aria-label=\"LinkedInలో భాగస్వామ్యం చేయండి\""
+    ],
+    [
+      "aria-label=\"Copy link\"",
+      "aria-label=\"లింక్‌ను కాపీ చేయండి\""
+    ],
+    [
+      "aria-label=\"Share this article\"",
+      "aria-label=\"ఈ కథనాన్ని భాగస్వామ్యం చేయండి\""
+    ],
+    [
+      "(class=\"newsroom-more\"><a [^>]*>)Learn more <span",
+      "\\g<1>మరింత తెలుసుకోండి <span"
     ]
   ]
 }

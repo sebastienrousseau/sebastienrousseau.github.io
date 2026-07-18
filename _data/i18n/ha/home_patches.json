@@ -336,6 +336,26 @@
     [
       "<dl class=pao><div><dt>Problem</dt><dd>AI, MCP and config pipelines run on YAML parsers with C-backed UB and silent spec drift\\.</dd></div><div><dt>Approach</dt><dd>Pure-Rust YAML 1\\.2 across library, CLI, LSP, MCP and WASM — zero unsafe, full spec\\.</dd></div><div><dt>Outcome</dt><dd>YAML pipelines that stop being the supply-chain weak link\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> 406 \\/ 406 spec · 0 unsafe</p>",
       "<dl class=pao><div><dt>Matsala</dt><dd>Bututun AI, MCP da daidaitawa na gudana akan masu bincike na YAML tare da UB da ke goyan bayan C da kuma sauyawa na sifofin da baya sanar da kowa.</dd></div><div><dt>Hanya</dt><dd>Pure-Rust YAML 1.2 a fadin dakin karatu, CLI, LSP, MCP da WASM — sifili mara aminci, sifofin cikakke.</dd></div><div><dt>Sakamakon</dt><dd>Bututun YAML da suka daina zama mahadar raunin sarkar samar da kayayyaki.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Tasiri</span> Sifofin 406 / 406 · 0 mara aminci</p>"
+    ],
+    [
+      ">Open-source payments, post-quantum security, and applied AI for financial services\\.</p>",
+      ">Biyan kuɗi na buɗaɗɗen tushe, tsaron post-quantum, da AI mai amfani don ayyukan kuɗi.</p>"
+    ],
+    [
+      "<p class=\"feat-eyebrow\">Proof</p>",
+      "<p class=\"feat-eyebrow\">Shaida</p>"
+    ],
+    [
+      ">By the numbers\\.</h2>",
+      ">A cikin lambobi.</h2>"
+    ],
+    [
+      ">Open source for the future of banking and finance\\.</h2>",
+      ">Buɗaɗɗen tushe don makomar banki da kuɗi.</h2>"
+    ],
+    [
+      "(class=\"offer-link\" href=\"[^\"]*\">)Learn more <span",
+      "\\g<1>Ƙarin bayani <span"
     ]
   ]
 }

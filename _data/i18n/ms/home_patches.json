@@ -335,6 +335,26 @@
     [
       "<dl class=pao><div><dt>Problem</dt><dd>AI, MCP and config pipelines run on YAML parsers with C-backed UB and silent spec drift\\.</dd></div><div><dt>Approach</dt><dd>Pure-Rust YAML 1\\.2 across library, CLI, LSP, MCP and WASM — zero unsafe, full spec\\.</dd></div><div><dt>Outcome</dt><dd>YAML pipelines that stop being the supply-chain weak link\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> 406 \\/ 406 spec · 0 unsafe</p>",
       "<dl class=pao><div><dt>Masalah</dt><dd>Saluran paip AI, MCP dan konfigurasi berjalan pada penghurai YAML dengan UB berasaskan C dan hanyutan spesifikasi senyap.</dd></div><div><dt>Pendekatan</dt><dd>YAML 1.2 Rust tulen merentasi pustaka, CLI, LSP, MCP dan WASM: sifar unsafe, spesifikasi penuh.</dd></div><div><dt>Hasil</dt><dd>Saluran paip YAML yang berhenti menjadi mata rantai lemah rantaian bekalan.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impak</span> 406 / 406 spesifikasi · 0 unsafe</p>"
+    ],
+    [
+      ">Open-source payments, post-quantum security, and applied AI for financial services\\.</p>",
+      ">Pembayaran sumber terbuka, keselamatan pasca-kuantum, dan AI terpakai untuk perkhidmatan kewangan.</p>"
+    ],
+    [
+      "<p class=\"feat-eyebrow\">Proof</p>",
+      "<p class=\"feat-eyebrow\">Bukti</p>"
+    ],
+    [
+      ">By the numbers\\.</h2>",
+      ">Dalam angka.</h2>"
+    ],
+    [
+      ">Open source for the future of banking and finance\\.</h2>",
+      ">Sumber terbuka untuk masa depan perbankan dan kewangan.</h2>"
+    ],
+    [
+      "(class=\"offer-link\" href=\"[^\"]*\">)Learn more <span",
+      "\\g<1>Ketahui lebih lanjut <span"
     ]
   ]
 }
