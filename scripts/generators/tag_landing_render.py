@@ -30,6 +30,7 @@ from listing_common import (
     _DESC_FM_RE,
     _EXCERPT_FM_RE,
     _TITLE_FM_RE,
+    _strip_fm_quotes,
 )
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -361,13 +362,13 @@ def _locale_post_card_fields(path: Path) -> tuple[str, str, str, str] | None:
     excerpt_m = _EXCERPT_FM_RE.search(text)
     desc_m = _DESC_FM_RE.search(text)
     banner_m = _BANNER_FM_RE.search(text)
-    title = title_m.group(1)
-    excerpt = (
+    title = _strip_fm_quotes(title_m.group(1))
+    excerpt = _strip_fm_quotes(
         excerpt_m.group(1)
         if excerpt_m
         else (desc_m.group(1) if desc_m else "")
     )
-    banner = banner_m.group(1) if banner_m else _DEFAULT_BANNER
+    banner = _strip_fm_quotes(banner_m.group(1)) if banner_m else _DEFAULT_BANNER
     return path.stem, title, excerpt, banner
 def _localise_posts_for_tag(
     posts_for_tag: list[tuple[str, str, str, str, list[str], str, str]],

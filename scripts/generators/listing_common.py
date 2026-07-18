@@ -18,6 +18,30 @@ _EXCERPT_FM_RE = re.compile(r'^excerpt:\s*"?([^"\n]+?)"?\s*$', re.MULTILINE)
 _DESC_FM_RE = re.compile(r'^description:\s*"?([^"\n]+?)"?\s*$', re.MULTILINE)
 _BANNER_FM_RE = re.compile(r'^banner:\s*"?([^"\n]+?)"?\s*$', re.MULTILINE)
 _TAG_FM_RE = re.compile(r'^tags:\s*"?([^"\n]+)"?', re.MULTILINE)
+
+
+def _strip_fm_quotes(value: str) -> str:
+    """Strip one matching pair of surrounding single OR double quotes.
+
+    The ``_*_FM_RE`` field regexes above only strip a *double*-quote pair
+    (``"?…"?``); a single-quoted YAML value (used by the ``vi`` corpus,
+    e.g. ``banner: 'https://…webp'`` or ``title: 'Bitcoin…'``) is captured
+    *with* its surrounding apostrophes, which then leak into rendered card
+    ``<img src>`` / titles as literal quotes + ``&#x27;`` entities.
+
+    This peels exactly one matching leading+trailing quote pair, and only
+    when *both* ends match the same quote char. That leaves untouched:
+    - unquoted values (``Bitcoin standard``),
+    - already-stripped double-quoted values,
+    - double-quoted values that legitimately contain an apostrophe
+      (``"Bitcoin's year in review"`` → the regex already yields
+      ``Bitcoin's year in review``; first/last chars are ``B``/``w``, so
+      no pair is peeled and the apostrophe survives).
+    """
+    value = value.strip()
+    if len(value) >= 2 and value[0] == value[-1] and value[0] in ("'", '"'):
+        return value[1:-1]
+    return value
 PILLAR_ORDER = ("ai", "payments", "infra", "policy", "open-source", "leadership")
 def _alias_map(taxonomy: dict) -> dict[str, str]:
     out: dict[str, str] = {}
@@ -73,13 +97,13 @@ def _locale_post_card_fields(
     excerpt_m = _EXCERPT_FM_RE.search(text)
     desc_m = _DESC_FM_RE.search(text)
     banner_m = _BANNER_FM_RE.search(text)
-    title = title_m.group(1)
-    excerpt = (
+    title = _strip_fm_quotes(title_m.group(1))
+    excerpt = _strip_fm_quotes(
         excerpt_m.group(1)
         if excerpt_m
         else (desc_m.group(1) if desc_m else "")
     )
-    banner = banner_m.group(1) if banner_m else _DEFAULT_BANNER
+    banner = _strip_fm_quotes(banner_m.group(1)) if banner_m else _DEFAULT_BANNER
     return path.stem, title, excerpt, banner
 def _load_locale_post_index(
     lang: str,

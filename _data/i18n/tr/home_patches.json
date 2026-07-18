@@ -336,6 +336,26 @@
     [
       "<dl class=pao><div><dt>Problem</dt><dd>AI, MCP and config pipelines run on YAML parsers with C-backed UB and silent spec drift\\.</dd></div><div><dt>Approach</dt><dd>Pure-Rust YAML 1\\.2 across library, CLI, LSP, MCP and WASM — zero unsafe, full spec\\.</dd></div><div><dt>Outcome</dt><dd>YAML pipelines that stop being the supply-chain weak link\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> 406 \\/ 406 spec · 0 unsafe</p>",
       "<dl class=pao><div><dt>Sorun</dt><dd>AI, MCP ve yapılandırma süreçleri, C tabanlı UB içeren ve sessiz spec sapmaları gösteren YAML ayrıştırıcıları üzerinde çalışır.</dd></div><div><dt>Yaklaşım</dt><dd>Kütüphane, CLI, LSP, MCP ve WASM genelinde saf Rust YAML 1.2 — sıfır güvensiz kod, tam spec uyumluluğu.</dd></div><div><dt>Sonuç</dt><dd>YAML süreçleri, tedarik zincirinin zayıf halkası olmaktan çıkar.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Etki</span> 406 / 406 spec · 0 güvensiz</p>"
+    ],
+    [
+      ">Open-source payments, post-quantum security, and applied AI for financial services\\.</p>",
+      ">Açık kaynaklı ödemeler, post-kuantum güvenlik ve finansal hizmetler için uygulamalı yapay zeka.</p>"
+    ],
+    [
+      "<p class=\"feat-eyebrow\">Proof</p>",
+      "<p class=\"feat-eyebrow\">Kanıt</p>"
+    ],
+    [
+      ">By the numbers\\.</h2>",
+      ">Rakamlarla.</h2>"
+    ],
+    [
+      ">Open source for the future of banking and finance\\.</h2>",
+      ">Bankacılık ve finansın geleceği için açık kaynak.</h2>"
+    ],
+    [
+      "(class=\"offer-link\" href=\"[^\"]*\">)Learn more <span",
+      "\\g<1>Daha fazla bilgi <span"
     ]
   ]
 }

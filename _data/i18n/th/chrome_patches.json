@@ -368,6 +368,26 @@
     [
       "<li><a href=\"?/case-studies/index\\.html\"?>Real-World Case Studies</a></li>",
       "<li><a href=\"/th/krani-suksa/index.html\">กรณีศึกษาจากโลกจริง</a></li>"
+    ],
+    [
+      "aria-label=\"Share on X\"",
+      "aria-label=\"แชร์บน X\""
+    ],
+    [
+      "aria-label=\"Share on LinkedIn\"",
+      "aria-label=\"แชร์บน LinkedIn\""
+    ],
+    [
+      "aria-label=\"Copy link\"",
+      "aria-label=\"คัดลอกลิงก์\""
+    ],
+    [
+      "aria-label=\"Share this article\"",
+      "aria-label=\"แชร์บทความนี้\""
+    ],
+    [
+      "(class=\"newsroom-more\"><a [^>]*>)Learn more <span",
+      "\\g<1>ดูข้อมูลเพิ่มเติม <span"
     ]
   ]
 }

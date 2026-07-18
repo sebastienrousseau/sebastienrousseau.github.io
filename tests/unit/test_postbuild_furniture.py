@@ -224,6 +224,78 @@ def test_render_tag_badges_falls_back_to_span_when_no_landing(monkeypatch):
     assert "<a " not in out
 
 
+def test_render_tag_badges_non_ascii_slug_never_emits_doubled_slash(monkeypatch):
+    """P1-2: a non-Latin chip whose display text slugifies to '' must NOT
+    emit a broken ``/<loc>/<tags>//`` link. Without a canonical slug it
+    falls back to a plain <span>. Guards the mr/ja/ar/… regression where
+    ``slugify("टोकन") == ""`` produced ``<a href="/mr/tags//">``."""
+    from postbuild_lib import article_furniture as af
+    from postbuild_lib.article_furniture import _render_tag_badges
+
+    # Even if _has_landing were (wrongly) permissive, the empty-slug guard
+    # in _render_tag_badges must keep the chip a <span>.
+    monkeypatch.setattr(af, "_has_landing", lambda slug, lang="en": True)
+    labels = {"Topics": "विषय"}
+    out = _render_tag_badges(["टोकन", "ब्लॉकचेन"], labels, lang="mr")
+    assert "//" not in out.replace("https://", "")  # no doubled slash anywhere
+    assert 'href="/mr/tags//"' not in out
+    assert out.count('<span class="article-tag">') == 2
+    assert "<a " not in out
+
+
+def test_render_tag_badges_uses_canonical_slug_for_non_ascii_chip(monkeypatch):
+    """P1-2: given the canonical EN slug (the same slug that names the
+    landing dir, e.g. ``tagu/blockchain``), a non-Latin chip links to
+    ``/<loc>/<tagbase>/<canonical-slug>/`` while keeping the localised
+    display TEXT — never slugifying the display text."""
+    from postbuild_lib import article_furniture as af
+    from postbuild_lib.article_furniture import _render_tag_badges
+
+    monkeypatch.setattr(af, "_has_landing", lambda slug, lang="en": True)
+    labels = {"Topics": "トピック"}
+    out = _render_tag_badges(
+        ["ブロックチェーン"], labels, lang="ja", tag_slugs=["blockchain"]
+    )
+    assert '<a href="/ja/tagu/blockchain/" class="article-tag" rel="tag">' in out
+    assert "ブロックチェーン</a>" in out  # localised display text kept
+    assert "//" not in out.replace("https://", "")
+
+
+def test_render_tag_badges_canonical_slug_falls_back_to_span_without_landing(
+    monkeypatch,
+):
+    """A supplied canonical slug still renders <span> when no landing
+    exists on disk (sub-threshold / non-canonical) — no 404 link."""
+    from postbuild_lib import article_furniture as af
+    from postbuild_lib.article_furniture import _render_tag_badges
+
+    monkeypatch.setattr(af, "_has_landing", lambda slug, lang="en": False)
+    out = _render_tag_badges(
+        ["التشغيل البيني"], {"Topics": "الموضوعات"}, lang="ar", tag_slugs=["interoperability"]
+    )
+    assert '<span class="article-tag">التشغيل البيني</span>' in out
+    assert "<a " not in out
+
+
+def test_has_landing_rejects_empty_slug(tmp_path, monkeypatch):
+    """P1-2 defence: an empty slug must return False, not resolve to the
+    cover page. ``Path(prefix) / "" / "index.html"`` collapses to the
+    cover index, so without this guard a non-Latin chip would falsely
+    report a landing."""
+    from postbuild_lib import article_furniture as af
+
+    # Materialise a cover index that an empty slug would collapse onto.
+    cover = tmp_path / "mr" / "tags"
+    cover.mkdir(parents=True)
+    (cover / "index.html").write_text("<html></html>", encoding="utf-8")
+    monkeypatch.setattr(af, "_LANDING_PUBLIC", tmp_path)
+    assert af._has_landing("", "mr") is False
+    # A real per-tag dir still resolves True (sanity: guard is empty-only).
+    (cover / "blockchain").mkdir()
+    (cover / "blockchain" / "index.html").write_text("<html></html>", encoding="utf-8")
+    assert af._has_landing("blockchain", "mr") is True
+
+
 def test_render_meta_bar_includes_author_and_dates():
     from postbuild_lib.article_furniture import LABELS_EN, _render_meta_bar
 
@@ -2822,12 +2894,24 @@ def test_inject_reuse_panel_idempotent():
 # ---------------------------------------------------------------------------
 
 
-def test_inject_oembed_link_emits_alternate_link_in_head():
+def _seed_oembed(monkeypatch, tmp_path, *slugs):
+    """Point sharing._OEMBED_DIR at a tmp dir seeded with the given slug
+    JSONs, so inject_oembed_link's existence gate passes for them."""
+    from postbuild_lib import sharing
+
+    for slug in slugs:
+        (tmp_path / f"{slug}.json").write_text("{}", encoding="utf-8")
+    monkeypatch.setattr(sharing, "_OEMBED_DIR", tmp_path)
+
+
+def test_inject_oembed_link_emits_alternate_link_in_head(tmp_path, monkeypatch):
     """The oEmbed discovery `<link rel="alternate">` carries the per-
     article /oembed/<slug>.json URL so Notion / Slack / Discord can fetch
-    the rich card metadata. BlogPosting pages only; idempotent."""
+    the rich card metadata. Emitted only when the static JSON exists;
+    BlogPosting pages only; idempotent."""
     from postbuild_lib.sharing import inject_oembed_link
 
+    _seed_oembed(monkeypatch, tmp_path, "2026-01-01-my-post")
     out = inject_oembed_link(_ws2_page())
     assert "application/json+oembed" in out
     assert 'href="https://sebastienrousseau.com/oembed/2026-01-01-my-post.json"' in out
@@ -2842,9 +2926,20 @@ def test_inject_oembed_link_no_op_without_blogposting():
     assert inject_oembed_link(plain) == plain
 
 
-def test_inject_oembed_link_idempotent():
+def test_inject_oembed_link_no_op_when_json_absent(tmp_path, monkeypatch):
+    """A localized-slug locale fork references a slug with no generated
+    JSON — the discovery link must be suppressed rather than 404."""
+    from postbuild_lib import sharing
+
+    monkeypatch.setattr(sharing, "_OEMBED_DIR", tmp_path)  # empty dir
+    page = _ws2_page()
+    assert sharing.inject_oembed_link(page) == page
+
+
+def test_inject_oembed_link_idempotent(tmp_path, monkeypatch):
     from postbuild_lib.sharing import inject_oembed_link
 
+    _seed_oembed(monkeypatch, tmp_path, "2026-01-01-my-post")
     once = inject_oembed_link(_ws2_page())
     assert inject_oembed_link(once) == once
 
@@ -2860,12 +2955,13 @@ def test_inject_oembed_link_no_op_when_canonical_or_title_missing():
     assert inject_oembed_link(page) == page
 
 
-def test_inject_oembed_link_handles_index_html_canonical_suffix():
+def test_inject_oembed_link_handles_index_html_canonical_suffix(tmp_path, monkeypatch):
     """Canonical URLs that end with `/index.html` (older slug shape)
     still resolve to the same bare slug — `/oembed/<slug>.json` should
     not contain `index.html` in the filename."""
     from postbuild_lib.sharing import inject_oembed_link
 
+    _seed_oembed(monkeypatch, tmp_path, "2026-01-01-my-post")
     head_with_index = _WS2_HEAD.replace(
         'href="https://sebastienrousseau.com/2026-01-01-my-post/"',
         'href="https://sebastienrousseau.com/2026-01-01-my-post/index.html"',

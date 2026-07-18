@@ -368,6 +368,26 @@
     [
       "<li><a href=\"?/case-studies/index\\.html\"?>Real-World Case Studies</a></li>",
       "<li><a href=\"/ar/dirasat-al-halat/index.html\">دراسات حالة واقعية</a></li>"
+    ],
+    [
+      "aria-label=\"Share on X\"",
+      "aria-label=\"المشاركة على X\""
+    ],
+    [
+      "aria-label=\"Share on LinkedIn\"",
+      "aria-label=\"المشاركة على LinkedIn\""
+    ],
+    [
+      "aria-label=\"Copy link\"",
+      "aria-label=\"نسخ الرابط\""
+    ],
+    [
+      "aria-label=\"Share this article\"",
+      "aria-label=\"مشاركة هذا المقال\""
+    ],
+    [
+      "(class=\"newsroom-more\"><a [^>]*>)Learn more <span",
+      "\\g<1>اعرف المزيد <span"
     ]
   ]
 }

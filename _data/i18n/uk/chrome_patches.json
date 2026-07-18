@@ -368,6 +368,26 @@
     [
       "<li><a href=\"?/case-studies/index\\.html\"?>Real-World Case Studies</a></li>",
       "<li><a href=\"/uk/kejs-stadi/index.html\">Реальні кейс-стаді</a></li>"
+    ],
+    [
+      "aria-label=\"Share on X\"",
+      "aria-label=\"Поділитися в X\""
+    ],
+    [
+      "aria-label=\"Share on LinkedIn\"",
+      "aria-label=\"Поділитися в LinkedIn\""
+    ],
+    [
+      "aria-label=\"Copy link\"",
+      "aria-label=\"Копіювати посилання\""
+    ],
+    [
+      "aria-label=\"Share this article\"",
+      "aria-label=\"Поділитися цією статтею\""
+    ],
+    [
+      "(class=\"newsroom-more\"><a [^>]*>)Learn more <span",
+      "\\g<1>Дізнатися більше <span"
     ]
   ]
 }

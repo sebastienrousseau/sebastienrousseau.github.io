@@ -368,6 +368,26 @@
     [
       "<li><a href=\"?/case-studies/index\\.html\"?>Real-World Case Studies</a></li>",
       "<li><a href=\"/tr/vaka-calismalari/index.html\">Gerçek dünya vaka çalışmaları</a></li>"
+    ],
+    [
+      "aria-label=\"Share on X\"",
+      "aria-label=\"X'te paylaş\""
+    ],
+    [
+      "aria-label=\"Share on LinkedIn\"",
+      "aria-label=\"LinkedIn'de paylaş\""
+    ],
+    [
+      "aria-label=\"Copy link\"",
+      "aria-label=\"Bağlantıyı kopyala\""
+    ],
+    [
+      "aria-label=\"Share this article\"",
+      "aria-label=\"Bu makaleyi paylaş\""
+    ],
+    [
+      "(class=\"newsroom-more\"><a [^>]*>)Learn more <span",
+      "\\g<1>Daha fazla bilgi <span"
     ]
   ]
 }

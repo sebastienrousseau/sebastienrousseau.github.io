@@ -336,6 +336,26 @@
     [
       "<dl class=pao><div><dt>Problem</dt><dd>AI, MCP and config pipelines run on YAML parsers with C-backed UB and silent spec drift\\.</dd></div><div><dt>Approach</dt><dd>Pure-Rust YAML 1\\.2 across library, CLI, LSP, MCP and WASM — zero unsafe, full spec\\.</dd></div><div><dt>Outcome</dt><dd>YAML pipelines that stop being the supply-chain weak link\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> 406 \\/ 406 spec · 0 unsafe</p>",
       "<dl class=pao><div><dt>Vấn đề</dt><dd>Các pipeline AI, MCP và cấu hình chạy trên bộ phân tích YAML có UB nền C và sai lệch đặc tả âm thầm.</dd></div><div><dt>Phương pháp</dt><dd>YAML 1.2 thuần Rust trên thư viện, CLI, LSP, MCP và WASM — không có unsafe, đầy đủ đặc tả.</dd></div><div><dt>Kết quả</dt><dd>Các pipeline YAML không còn là mắt xích yếu trong chuỗi cung ứng.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Tác động</span> 406 / 406 đặc tả · 0 unsafe</p>"
+    ],
+    [
+      ">Open-source payments, post-quantum security, and applied AI for financial services\\.</p>",
+      ">Thanh toán mã nguồn mở, bảo mật hậu lượng tử và AI ứng dụng cho dịch vụ tài chính.</p>"
+    ],
+    [
+      "<p class=\"feat-eyebrow\">Proof</p>",
+      "<p class=\"feat-eyebrow\">Bằng chứng</p>"
+    ],
+    [
+      ">By the numbers\\.</h2>",
+      ">Qua những con số.</h2>"
+    ],
+    [
+      ">Open source for the future of banking and finance\\.</h2>",
+      ">Mã nguồn mở cho tương lai của ngân hàng và tài chính.</h2>"
+    ],
+    [
+      "(class=\"offer-link\" href=\"[^\"]*\">)Learn more <span",
+      "\\g<1>Tìm hiểu thêm <span"
     ]
   ]
 }

@@ -773,6 +773,11 @@ def _strip_articles_jsonld(out: str) -> str:
     return new
 
 
+_OG_LOCALE_RE = re.compile(
+    r'(<meta\s+property="og:locale"\s+content=")[^"]*(")', re.IGNORECASE
+)
+
+
 def _emit_one_locale(
     active_shell: str,
     data: dict,
@@ -780,6 +785,7 @@ def _emit_one_locale(
     lang: str,
     segment: str,
     static_slugs: dict[str, str] | None = None,
+    og_locale: str = "en_GB",
 ) -> None:
     """Render and write the speaking page for one locale. ``active_shell`` is the
     EN articles shell with the Speaking nav item already marked active (and, for
@@ -800,6 +806,10 @@ def _emit_one_locale(
         )
     out = _unescape_head_metas(out)  # head-bounded by the shared helper
     out = _patch_head(out, doc_title, seo_title, desc)
+    # og:locale must match the declared page language (the forked EN shell
+    # carries en_GB). Body copy may still be the English progressive-backfill,
+    # but the locale signal itself must be correct for crawlers/social.
+    out = _OG_LOCALE_RE.sub(rf"\g<1>{og_locale}\g<2>", out, count=1)
     out = _strip_articles_jsonld(out)
     if "Discover How Technology" in out:
         raise SystemExit(
@@ -836,7 +846,7 @@ def _emit_locale_forks(active_shell: str, data: dict, bio_html: str) -> int:
         loc_shell = _ch.translate_chrome(loc_shell)
         loc_shell = _ch._localize_inlanguage_globally(loc_shell, lang.code)
         loc_data, loc_bio = _load_overlay(lang.code, data, bio_html)
-        _emit_one_locale(loc_shell, loc_data, loc_bio, lang.code, segment, static_slugs)
+        _emit_one_locale(loc_shell, loc_data, loc_bio, lang.code, segment, static_slugs, lang.og_locale)
         total += 1
     return total
 

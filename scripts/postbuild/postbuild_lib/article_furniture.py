@@ -209,23 +209,57 @@ def _has_landing(slug: str, lang: str = "en") -> bool:
     at least ``_LANDING_THRESHOLD`` posts (currently 3), so this lets the
     chip strip skip the link wrapper for sub-threshold tags rather than
     emitting a /tags/<slug>/ link that would 404 the strict-internal
-    link audit."""
+    link audit.
+
+    An empty ``slug`` is rejected outright: ``Path(...) / "" / "index.html"``
+    collapses the empty segment away and resolves to the *cover* page
+    (``public/<prefix>/index.html``), which would make a non-Latin chip
+    whose slug slugified to '' falsely report a landing and emit a broken
+    ``/<loc>/<tags>//`` link. See ``_render_tag_badges``."""
+    if not slug:
+        return False
     prefix = _tags_prefix(lang).lstrip("/")
     return (_LANDING_PUBLIC / prefix / slug / "index.html").is_file()
 
 
-def _render_tag_badges(keywords: list[str], labels: dict[str, str], lang: str = "en") -> str:
-    """Render the hero tag-chip strip. Links point at the per-tag
-    landings ``/<locale-tags>/<slug>/`` (WS3) when one exists; tags
-    with no landing (sub-threshold canonicals + non-canonical aliases)
-    render as plain ``<span>`` chips so the audit doesn't flag a 404."""
+def _render_tag_badges(
+    keywords: list[str],
+    labels: dict[str, str],
+    lang: str = "en",
+    tag_slugs: list[str] | None = None,
+) -> str:
+    """Render the hero tag-chip strip.
+
+    ``keywords`` is the visible chip TEXT — localised on non-EN pages
+    (e.g. ``टोकन`` on ``/mr/``). ``tag_slugs`` is an optional parallel
+    list of *canonical EN* slugs: the same slugs build_tag_landings uses
+    for the landing directory names (``tagu/<en-slug>``, ``wusum/<en-slug>``,
+    …). When a canonical slug is supplied for a chip it is used for both
+    the landing-existence check and the href — the display text is never
+    slugified.
+
+    This is what stops non-Latin-script chips (CJK / Cyrillic / Greek /
+    Arabic / Hebrew / Thai / Devanagari) collapsing to an empty ``//``
+    slug: ``slugify("टोकन") == ""``, so with no canonical slug the chip
+    renders as a plain ``<span>`` instead of a broken
+    ``/<loc>/<tags>//`` link. For EN + accented-Latin locales, where the
+    slugified display text already *is* the canonical slug, ``tag_slugs``
+    can be omitted and ``slugify(keyword)`` is used as before.
+
+    Links are only emitted when a per-tag landing actually exists on disk
+    (``_has_landing``); sub-threshold canonicals + non-canonical aliases
+    stay as ``<span>`` so the strict-internal link audit sees no 404."""
     if not keywords:
         return ""
     prefix = _tags_prefix(lang)
     badges_html: list[str] = []
-    for k in keywords:
-        slug = slugify(k)
-        if _has_landing(slug, lang):
+    for i, k in enumerate(keywords):
+        slug = ""
+        if tag_slugs and i < len(tag_slugs) and tag_slugs[i]:
+            slug = tag_slugs[i].strip().strip("/")
+        if not slug:
+            slug = slugify(k)
+        if slug and _has_landing(slug, lang):
             badges_html.append(
                 f'<a href="{prefix}/{slug}/" class="article-tag" rel="tag">{k}</a>'
             )

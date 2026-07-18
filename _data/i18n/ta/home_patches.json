@@ -335,6 +335,26 @@
     [
       "<dl class=pao><div><dt>Problem</dt><dd>AI, MCP and config pipelines run on YAML parsers with C-backed UB and silent spec drift\\.</dd></div><div><dt>Approach</dt><dd>Pure-Rust YAML 1\\.2 across library, CLI, LSP, MCP and WASM — zero unsafe, full spec\\.</dd></div><div><dt>Outcome</dt><dd>YAML pipelines that stop being the supply-chain weak link\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> 406 \\/ 406 spec · 0 unsafe</p>",
       "<dl class=pao><div><dt>சிக்கல்</dt><dd>AI, MCP மற்றும் config பைப்லைன்கள் C-ஆதரவு UB மற்றும் அமைதியான விவரக்குறிப்பு விலகல் கொண்ட YAML பாகுபடுத்திகளில் இயங்குகின்றன.</dd></div><div><dt>அணுகுமுறை</dt><dd>நூலகம், CLI, LSP, MCP மற்றும் WASM முழுவதும் முழுக்க-Rust YAML 1.2, பூஜ்ஜியம் unsafe, முழு விவரக்குறிப்பு.</dd></div><div><dt>விளைவு</dt><dd>விநியோகச் சங்கிலியின் பலவீன இணைப்பாக இருப்பதை நிறுத்தும் YAML பைப்லைன்கள்.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>தாக்கம்</span> 406 / 406 spec · 0 unsafe</p>"
+    ],
+    [
+      ">Open-source payments, post-quantum security, and applied AI for financial services\\.</p>",
+      ">ஓபன்-சோர்ஸ் கொடுப்பனவுகள், பிந்தைய-குவாண்டம் பாதுகாப்பு மற்றும் நிதிச் சேவைகளுக்கான பயன்பாட்டு AI.</p>"
+    ],
+    [
+      "<p class=\"feat-eyebrow\">Proof</p>",
+      "<p class=\"feat-eyebrow\">சான்று</p>"
+    ],
+    [
+      ">By the numbers\\.</h2>",
+      ">எண்களில்.</h2>"
+    ],
+    [
+      ">Open source for the future of banking and finance\\.</h2>",
+      ">வங்கியியல் மற்றும் நிதியின் எதிர்காலத்திற்கான Open source.</h2>"
+    ],
+    [
+      "(class=\"offer-link\" href=\"[^\"]*\">)Learn more <span",
+      "\\g<1>மேலும் அறிக <span"
     ]
   ]
 }

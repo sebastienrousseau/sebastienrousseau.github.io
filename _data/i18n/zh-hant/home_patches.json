@@ -336,6 +336,26 @@
     [
       "<dl class=pao><div><dt>Problem</dt><dd>AI, MCP and config pipelines run on YAML parsers with C-backed UB and silent spec drift\\.</dd></div><div><dt>Approach</dt><dd>Pure-Rust YAML 1\\.2 across library, CLI, LSP, MCP and WASM — zero unsafe, full spec\\.</dd></div><div><dt>Outcome</dt><dd>YAML pipelines that stop being the supply-chain weak link\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> 406 \\/ 406 spec · 0 unsafe</p>",
       "<dl class=pao><div><dt>問題</dt><dd>AI、MCP 及組態管道依賴以 C 為後端、存在未定義行為且規格靜默漂移的 YAML 解析器。</dd></div><div><dt>方法</dt><dd>純 Rust 實作的 YAML 1.2，涵蓋函式庫、CLI、LSP、MCP 與 WASM——零 unsafe，完整規格符合。</dd></div><div><dt>成果</dt><dd>YAML 管道不再是供應鏈的薄弱環節。</dd></div></dl><p class=proj-metric><span class=proj-metric-label>影響</span> 406 / 406 規格 · 0 unsafe</p>"
+    ],
+    [
+      ">Open-source payments, post-quantum security, and applied AI for financial services\\.</p>",
+      ">開源支付、後量子安全，以及面向金融服務的應用人工智慧。</p>"
+    ],
+    [
+      "<p class=\"feat-eyebrow\">Proof</p>",
+      "<p class=\"feat-eyebrow\">實證</p>"
+    ],
+    [
+      ">By the numbers\\.</h2>",
+      ">用數字說話。</h2>"
+    ],
+    [
+      ">Open source for the future of banking and finance\\.</h2>",
+      ">面向銀行業與金融未來的開源。</h2>"
+    ],
+    [
+      "(class=\"offer-link\" href=\"[^\"]*\">)Learn more <span",
+      "\\g<1>進一步了解 <span"
     ]
   ]
 }

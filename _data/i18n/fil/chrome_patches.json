@@ -368,6 +368,26 @@
     [
       "<li><a href=\"?/case-studies/index\\.html\"?>Real-World Case Studies</a></li>",
       "<li><a href=\"/fil/mga-case-study/index.html\">Mga case study mula sa totoong mundo</a></li>"
+    ],
+    [
+      "aria-label=\"Share on X\"",
+      "aria-label=\"Ibahagi sa X\""
+    ],
+    [
+      "aria-label=\"Share on LinkedIn\"",
+      "aria-label=\"Ibahagi sa LinkedIn\""
+    ],
+    [
+      "aria-label=\"Copy link\"",
+      "aria-label=\"Kopyahin ang link\""
+    ],
+    [
+      "aria-label=\"Share this article\"",
+      "aria-label=\"Ibahagi ang artikulong ito\""
+    ],
+    [
+      "(class=\"newsroom-more\"><a [^>]*>)Learn more <span",
+      "\\g<1>Matuto pa <span"
     ]
   ]
 }

@@ -336,6 +336,26 @@
     [
       "<dl class=pao><div><dt>Problem</dt><dd>AI, MCP and config pipelines run on YAML parsers with C-backed UB and silent spec drift\\.</dd></div><div><dt>Approach</dt><dd>Pure-Rust YAML 1\\.2 across library, CLI, LSP, MCP and WASM — zero unsafe, full spec\\.</dd></div><div><dt>Outcome</dt><dd>YAML pipelines that stop being the supply-chain weak link\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> 406 \\/ 406 spec · 0 unsafe</p>",
       "<dl class=pao><div><dt>Ìṣòro</dt><dd>AI, MCP àti àwọn ìṣàn ìtúpalẹ̀ ń ṣiṣẹ́ lórí àwọn àtúpalẹ̀ YAML tó ní UB tó gbára lé C àti ìyípadà àpẹẹrẹ tó farasin.</dd></div><div><dt>Ọ̀nà Àbájáde</dt><dd>YAML 1.2 Rust tó mọ́ káàkiri ìwé-ìkàwé, CLI, LSP, MCP àti WASM — zero unsafe, àpẹẹrẹ kíkún.</dd></div><div><dt>Àbájáde</dt><dd>Àwọn ìṣàn YAML tí ó dáwọ́ jẹ́ ọ̀nà àìlágbára nínú ìgbọràn ẹ̀rọ-ìpèsè.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Ipa</span> 406 / 406 àpẹẹrẹ · 0 unsafe</p>"
+    ],
+    [
+      ">Open-source payments, post-quantum security, and applied AI for financial services\\.</p>",
+      ">Àwọn ìsanwó Open-source, ààbò post-quantum, àti AI tí a lò fún àwọn iṣẹ́ ìnáwó.</p>"
+    ],
+    [
+      "<p class=\"feat-eyebrow\">Proof</p>",
+      "<p class=\"feat-eyebrow\">Ẹ̀rí</p>"
+    ],
+    [
+      ">By the numbers\\.</h2>",
+      ">Nínú àwọn nọ́mbà.</h2>"
+    ],
+    [
+      ">Open source for the future of banking and finance\\.</h2>",
+      ">Open source fún ọjọ́ọjọ́ ìfowópamọ́ àti ìnáwó.</h2>"
+    ],
+    [
+      "(class=\"offer-link\" href=\"[^\"]*\">)Learn more <span",
+      "\\g<1>Kọ́ sí i <span"
     ]
   ]
 }

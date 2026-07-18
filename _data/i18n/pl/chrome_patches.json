@@ -368,6 +368,26 @@
     [
       "<li><a href=\"?/case-studies/index\\.html\"?>Real-World Case Studies</a></li>",
       "<li><a href=\"/pl/studia-przypadkow/index.html\">Studia przypadków z praktyki</a></li>"
+    ],
+    [
+      "aria-label=\"Share on X\"",
+      "aria-label=\"Udostępnij na X\""
+    ],
+    [
+      "aria-label=\"Share on LinkedIn\"",
+      "aria-label=\"Udostępnij na LinkedIn\""
+    ],
+    [
+      "aria-label=\"Copy link\"",
+      "aria-label=\"Kopiuj link\""
+    ],
+    [
+      "aria-label=\"Share this article\"",
+      "aria-label=\"Udostępnij ten artykuł\""
+    ],
+    [
+      "(class=\"newsroom-more\"><a [^>]*>)Learn more <span",
+      "\\g<1>Dowiedz się więcej <span"
     ]
   ]
 }

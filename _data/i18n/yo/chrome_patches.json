@@ -368,6 +368,26 @@
     [
       "<li><a href=\"?/case-studies/index\\.html\"?>Real-World Case Studies</a></li>",
       "<li><a href=\"/yo/iwadi-apeere/index.html\">Ìwádìí àpẹẹrẹ gidi</a></li>"
+    ],
+    [
+      "aria-label=\"Share on X\"",
+      "aria-label=\"Pín lórí X\""
+    ],
+    [
+      "aria-label=\"Share on LinkedIn\"",
+      "aria-label=\"Pín lórí LinkedIn\""
+    ],
+    [
+      "aria-label=\"Copy link\"",
+      "aria-label=\"Ẹ̀dà ìjápọ̀\""
+    ],
+    [
+      "aria-label=\"Share this article\"",
+      "aria-label=\"Pín àpilẹ̀kọ yìí\""
+    ],
+    [
+      "(class=\"newsroom-more\"><a [^>]*>)Learn more <span",
+      "\\g<1>Kọ́ sí i <span"
     ]
   ]
 }

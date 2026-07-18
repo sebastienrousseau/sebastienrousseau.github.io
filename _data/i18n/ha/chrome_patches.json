@@ -368,6 +368,26 @@
     [
       "<li><a href=\"?/case-studies/index\\.html\"?>Real-World Case Studies</a></li>",
       "<li><a href=\"/ha/nazarin-shari-a/index.html\">Nazarin shari'a na zahiri</a></li>"
+    ],
+    [
+      "aria-label=\"Share on X\"",
+      "aria-label=\"Raba a X\""
+    ],
+    [
+      "aria-label=\"Share on LinkedIn\"",
+      "aria-label=\"Raba a LinkedIn\""
+    ],
+    [
+      "aria-label=\"Copy link\"",
+      "aria-label=\"Kwafi mahaɗi\""
+    ],
+    [
+      "aria-label=\"Share this article\"",
+      "aria-label=\"Raba wannan labarin\""
+    ],
+    [
+      "(class=\"newsroom-more\"><a [^>]*>)Learn more <span",
+      "\\g<1>Ƙarin bayani <span"
     ]
   ]
 }
