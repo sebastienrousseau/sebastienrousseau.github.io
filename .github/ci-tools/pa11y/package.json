@@ -3,5 +3,6 @@
   "version": "1.0.0",
   "private": true,
   "description": "Pinned pa11y-ci for the CI accessibility shards. `npm ci` installs hash-verified from package-lock.json (OpenSSF Scorecard Pinned-Dependencies). Version is ADR-0002.",
-  "dependencies": { "pa11y-ci": "4.1.1" }
+  "dependencies": { "pa11y-ci": "4.1.1" },
+  "overrides": { "brace-expansion": "2.1.2" }
 }
