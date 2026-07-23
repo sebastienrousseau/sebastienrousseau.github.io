@@ -85,72 +85,107 @@ function arg(name, fallback) {
   return i > -1 ? process.argv[i + 1] : fallback;
 }
 
+// Puppeteer protocol errors that mean "the page moved under us" rather
+// than "the page is wrong": a client-side navigation, reload or history
+// hop tears down the execution context mid-evaluate. These are transient
+// and safe to retry from a clean navigation; they must NOT be confused
+// with a real regression (a pixel diff or a wrong-theme assertion).
+const TRANSIENT_ERROR =
+  /Execution context was destroyed|Cannot find context|Target closed|Session closed|frame (?:was )?detached|Navigating frame/i;
+
+async function newConfiguredPage(browser, baseHost) {
+  const page = await browser.newPage();
+  // The site ships a strict CSP (hash-pinned style-src) that would
+  // reject the FREEZE_CSS injection. Bypassing CSP here only affects
+  // this screenshot harness, never the shipped pages.
+  await page.setBypassCSP(true);
+  await page.setViewport(VIEWPORT);
+  // Hermetic rendering: block every request that does not target the
+  // local fixture server. Remote CDN images (cloudcdn.pro banners,
+  // card art) load non-deterministically — measured 8.6% pixel churn
+  // between two back-to-back local runs — and a CI runner's network
+  // must never decide whether the gate passes. The trade-off is that
+  // remote image CONTENT is not regression-tested; layout, chrome,
+  // typography and every locally-served asset are.
+  await page.setRequestInterception(true);
+  page.on('request', (req) => {
+    let host = '';
+    try {
+      host = new URL(req.url()).host;
+    } catch {
+      /* data:/about: URLs — allow */
+    }
+    if (host === '' || host === baseHost) req.continue();
+    else req.abort('blockedbyclient');
+  });
+  return page;
+}
+
+async function capturePage(page, name, url, out) {
+  await page.goto(url, { waitUntil: 'networkidle0', timeout: 60000 });
+  await page.addStyleTag({ content: FREEZE_CSS });
+  // Self-hosted woff2 fonts must be rasterised before capture, or
+  // a FOUT frame becomes a phantom whole-page diff.
+  await page.evaluate(() => document.fonts.ready);
+  // Walk the page so lazy-loaded images decode before capture.
+  await page.evaluate(async () => {
+    await new Promise((resolve) => {
+      let y = 0;
+      const step = () => {
+        y += 900;
+        window.scrollTo(0, y);
+        if (y >= document.body.scrollHeight) {
+          window.scrollTo(0, 0);
+          resolve();
+        } else {
+          setTimeout(step, 60);
+        }
+      };
+      step();
+    });
+  });
+  await new Promise((r) => setTimeout(r, 400));
+  const theme = await page.evaluate(() =>
+    document.documentElement.getAttribute('data-theme'));
+  if (theme !== 'light') {
+    throw new Error(`${url}: expected light theme, got ${theme}`);
+  }
+  await page.screenshot({ path: join(out, `${name}.png`), fullPage: true });
+  console.log(`shot ${name} <- ${url} (theme=${theme})`);
+}
+
 async function shoot() {
   const base = arg('base', 'http://127.0.0.1:8000').replace(/\/$/, '');
   const out = arg('out', 'shots');
   mkdirSync(out, { recursive: true });
+  const baseHost = new URL(base).host;
   const browser = await puppeteer.launch({
     executablePath: findChrome(),
     args: CHROME_ARGS,
   });
   try {
-    const page = await browser.newPage();
-    // The site ships a strict CSP (hash-pinned style-src) that would
-    // reject the FREEZE_CSS injection. Bypassing CSP here only affects
-    // this screenshot harness, never the shipped pages.
-    await page.setBypassCSP(true);
-    await page.setViewport(VIEWPORT);
-    // Hermetic rendering: block every request that does not target the
-    // local fixture server. Remote CDN images (cloudcdn.pro banners,
-    // card art) load non-deterministically — measured 8.6% pixel churn
-    // between two back-to-back local runs — and a CI runner's network
-    // must never decide whether the gate passes. The trade-off is that
-    // remote image CONTENT is not regression-tested; layout, chrome,
-    // typography and every locally-served asset are.
-    const baseHost = new URL(base).host;
-    await page.setRequestInterception(true);
-    page.on('request', (req) => {
-      let host = '';
-      try {
-        host = new URL(req.url()).host;
-      } catch {
-        /* data:/about: URLs — allow */
-      }
-      if (host === '' || host === baseHost) req.continue();
-      else req.abort('blockedbyclient');
-    });
     for (const [name, rel] of Object.entries(PAGES)) {
       const url = `${base}/${rel}`;
-      await page.goto(url, { waitUntil: 'networkidle0', timeout: 60000 });
-      await page.addStyleTag({ content: FREEZE_CSS });
-      // Self-hosted woff2 fonts must be rasterised before capture, or
-      // a FOUT frame becomes a phantom whole-page diff.
-      await page.evaluate(() => document.fonts.ready);
-      // Walk the page so lazy-loaded images decode before capture.
-      await page.evaluate(async () => {
-        await new Promise((resolve) => {
-          let y = 0;
-          const step = () => {
-            y += 900;
-            window.scrollTo(0, y);
-            if (y >= document.body.scrollHeight) {
-              window.scrollTo(0, 0);
-              resolve();
-            } else {
-              setTimeout(step, 60);
-            }
-          };
-          step();
-        });
-      });
-      await new Promise((r) => setTimeout(r, 400));
-      const theme = await page.evaluate(() =>
-        document.documentElement.getAttribute('data-theme'));
-      if (theme !== 'light') {
-        throw new Error(`${url}: expected light theme, got ${theme}`);
+      // A transient teardown of the execution context is not a
+      // regression — retry the page from a fresh tab. A real failure
+      // (wrong theme, a genuinely broken page) is not TRANSIENT_ERROR
+      // and rethrows on the first attempt, so the gate still fails fast.
+      const MAX_ATTEMPTS = 3;
+      for (let attempt = 1; ; attempt++) {
+        const page = await newConfiguredPage(browser, baseHost);
+        try {
+          await capturePage(page, name, url, out);
+          break;
+        } catch (err) {
+          const msg = String(err && err.message);
+          if (!TRANSIENT_ERROR.test(msg) || attempt >= MAX_ATTEMPTS) throw err;
+          console.log(
+            `retry ${name} (attempt ${attempt}/${MAX_ATTEMPTS - 1} after: ${msg.split('\n')[0]})`,
+          );
+        } finally {
+          await page.close().catch(() => {});
+        }
       }
-      await page.screenshot({ path: join(out, `${name}.png`), fullPage: true });
-      console.log(`shot ${name} <- ${url} (theme=${theme})`);
     }
   } finally {
     await browser.close();
