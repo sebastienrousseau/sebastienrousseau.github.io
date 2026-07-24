@@ -206,6 +206,18 @@ site_software: "Static Site Generator, Rust"
 <div class="newsroom-grid feat-latest-grid">
 
 <article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-07-24-global-payments-outlook-operating-model-risk-revenue/index.html" title="The 2026 Global Payments Outlook: Operating Model, Risk, and Revenue in an Agentic, Invisible, Real-Time World">
+<img alt="An aerial view of London's financial district, representing the 2026 global payments operating model of agentic, invisible, real-time flows." src="https://cloudcdn.pro/stocks/images/drone-view-of-london.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Payments · Transaction Banking · DORA</span>
+<h3><a href="/2026-07-24-global-payments-outlook-operating-model-risk-revenue/index.html">The 2026 Global Payments Outlook: Operating Model, Risk, and Revenue in an Agentic, Invisible, Real-Time World</a></h3>
+<p class="newsroom-meta"><time datetime="2026-07-24">July 24, 2026</time></p>
+<p class="newsroom-tldr"><span class="newsroom-tldr-label">TL;DR</span> A G-SIB operating-model view of 2026 payments: agentic delegated liability, always-on liquidity under DORA, tokenised unified ledgers via Project Agorá, and the hard-dated November 2026 SWIFT structured-address cut-over.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-07-22-ssg-enterprise-strategic-deep-dive-architectural-roadmap/index.html" title="Static Site Generator (SSG): Enterprise-Grade Strategic Deep Dive and Architectural Roadmap">
 <img alt="An abstract technical background, representing the architectural roadmap of an enterprise-grade static site generator." src="https://cloudcdn.pro/stocks/images/gemini-background.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
@@ -226,18 +238,6 @@ site_software: "Static Site Generator, Rust"
 <h3><a href="/2026-07-08-global-corporate-standard-iso-20022-swift-2026/index.html">From Messages to Map: Building a Global Corporate Standard on ISO 20022 and Swift</a></h3>
 <p class="newsroom-meta"><time datetime="2026-07-08">July 8, 2026</time></p>
 <p class="newsroom-tldr"><span class="newsroom-tldr-label">TL;DR</span> ISO 20022 and Swift's CBPR+ gave cross-border payments a harmonised global language — but not a global map for how corporates use it. How to extend harmonisation from what a payment says to how a corporate uses it, on the rails that already exist.</p>
-</div>
-</article>
-
-<article class="newsroom-card">
-<a class="newsroom-card-media" href="/2026-07-07-corporate-banking-api-standard-agentic-mcp-2026/index.html" title="From Fragmentation to Fault Line: Corporate Banking's Missing API Standard in the Agentic Era">
-<img alt="Interlinked glowing blocks forming a chain across a dark field — connected ledger and network nodes, evoking the common, machine-readable API surface corporate banking rails still lack in the agentic era" src="https://cloudcdn.pro/stocks/images/block-chain-3055701.webp" loading="lazy" decoding="async" width="600" height="600" />
-</a>
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Corporate Banking APIs · ISO 20022 · Model Context Protocol</span>
-<h3><a href="/2026-07-07-corporate-banking-api-standard-agentic-mcp-2026/index.html">From Fragmentation to Fault Line: Corporate Banking's Missing API Standard in the Agentic Era</a></h3>
-<p class="newsroom-meta"><time datetime="2026-07-07">July 7, 2026</time></p>
-<p class="newsroom-tldr"><span class="newsroom-tldr-label">TL;DR</span> Retail banking got its API standard a decade ago. Corporate banking never did — and now that AI agents and the Model Context Protocol have turned integration into a runtime decision, the gap has become a fault line.</p>
 </div>
 </article>
 
