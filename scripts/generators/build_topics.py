@@ -143,6 +143,7 @@ TOPICS: dict[str, dict[str, object]] = {
             "and a Rust static site generator."
         ),
         "slugs": [
+            "2026-07-22-ssg-enterprise-strategic-deep-dive-architectural-roadmap",
             "2024-03-08-rustlogs-advanced-logging-library-for-rust-applications",
             "2023-12-04-mastering-date-and-time-in-rust-with-the-dtt-library",
             "2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats",

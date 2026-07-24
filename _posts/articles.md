@@ -105,21 +105,33 @@ site_software: "Static Site Generator, Rust"
 <header class="newsroom-section-head"><p class="newsroom-kicker">FEATURED</p><h2>Latest story</h2></header>
 
 <article class="newsroom-featured">
-<a class="newsroom-featured-media" href="/2026-07-08-global-corporate-standard-iso-20022-swift-2026/index.html" title="From Messages to Map: Building a Global Corporate Standard on ISO 20022 and Swift">
-<img alt="Interlinked glowing blocks forming a chain across a dark field — harmonised ISO 20022 messages resolving into a connected network, evoking the missing global map that turns structured payment data into a usable corporate standard" src="https://cloudcdn.pro/stocks/images/shubham-dhage-yKzECK-O9-k.webp" loading="eager" fetchpriority="high" decoding="async" width="800" height="800" />
+<a class="newsroom-featured-media" href="/2026-07-22-ssg-enterprise-strategic-deep-dive-architectural-roadmap/index.html" title="Static Site Generator (SSG): Enterprise-Grade Strategic Deep Dive and Architectural Roadmap">
+<img alt="An abstract technical background, representing the architectural roadmap of an enterprise-grade static site generator." src="https://cloudcdn.pro/stocks/images/gemini-background.webp" loading="eager" fetchpriority="high" decoding="async" width="800" height="800" />
 </a>
 <div class="newsroom-featured-body">
-<span class="newsroom-eyebrow">Iso 20022 · Swift · Cbpr+</span>
-<h3><a href="/2026-07-08-global-corporate-standard-iso-20022-swift-2026/index.html" title="From Messages to Map: Building a Global Corporate Standard on ISO 20022 and Swift">From Messages to Map: Building a Global Corporate Standard on ISO 20022 and Swift</a></h3>
-<p class="newsroom-meta"><time datetime="2026-07-08">July 8, 2026</time> · Sebastien Rousseau</p>
-<p>The industry finally has a global language for payments. It still does not have a global map for corporates to act on it. ISO 20022 and Swift's CBPR+ harmonised what a payment must say, not how a corporate uses it — the missing interface and behaviour layers, and how banks can build a global corporate standard on the r</p>
-<p><a class="pill ghost" href="/2026-07-08-global-corporate-standard-iso-20022-swift-2026/index.html" title="From Messages to Map: Building a Global Corporate Standard on ISO 20022 and Swift">Read the full story</a></p>
+<span class="newsroom-eyebrow">Static Site Generator · Rust · Web Security</span>
+<h3><a href="/2026-07-22-ssg-enterprise-strategic-deep-dive-architectural-roadmap/index.html" title="Static Site Generator (SSG): Enterprise-Grade Strategic Deep Dive and Architectural Roadmap">Static Site Generator (SSG): Enterprise-Grade Strategic Deep Dive and Architectural Roadmap</a></h3>
+<p class="newsroom-meta"><time datetime="2026-07-22">July 22, 2026</time> · Sebastien Rousseau</p>
+<p>Compile-time WCAG gates, SHA-384 SRI, CSP injection and a local-first LLM pipeline set this Rust engine apart, but incremental builds, native minification and AVIF are still aspirational. Here is the honest gap analysis and the road to 1.0.</p>
+<p><a class="pill ghost" href="/2026-07-22-ssg-enterprise-strategic-deep-dive-architectural-roadmap/index.html" title="Static Site Generator (SSG): Enterprise-Grade Strategic Deep Dive and Architectural Roadmap">Read the full story</a></p>
 </div>
 </article>
 
 <header class="newsroom-section-head"><p class="newsroom-kicker">ARCHIVE</p><h2>All news stories and articles</h2></header>
 
 <div class="newsroom-grid">
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-07-08-global-corporate-standard-iso-20022-swift-2026/index.html" title="From Messages to Map: Building a Global Corporate Standard on ISO 20022 and Swift">
+<img alt="Interlinked glowing blocks forming a chain across a dark field — harmonised ISO 20022 messages resolving into a connected network, evoking the missing global map that turns structured payment data into a usable corporate standard" src="https://cloudcdn.pro/stocks/images/shubham-dhage-yKzECK-O9-k.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Iso 20022 · Swift · Cbpr+</span>
+<h3><a href="/2026-07-08-global-corporate-standard-iso-20022-swift-2026/index.html" title="From Messages to Map: Building a Global Corporate Standard on ISO 20022 and Swift">From Messages to Map: Building a Global Corporate Standard on ISO 20022 and Swift</a></h3>
+<p class="newsroom-meta"><time datetime="2026-07-08">July 8, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">The industry finally has a global language for payments. It still does not have a global map for corporates to act on it. ISO 20022 and Swift's CBPR+ harmonised what a payment must say, not how a corporate uses it — the missing interface and behaviour layers, and how banks can build a global corporate standard on the r</p>
+</div>
+</article>
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-07-07-corporate-banking-api-standard-agentic-mcp-2026/index.html" title="From Fragmentation to Fault Line: Corporate Banking's Missing API Standard in the Agentic Era">
