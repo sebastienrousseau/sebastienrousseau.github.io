@@ -297,6 +297,7 @@ TOPICS: dict[str, dict[str, object]] = {
             "and the BIS Project Agorá cross-border atomicity model."
         ),
         "slugs": [
+            "2026-07-24-global-payments-outlook-operating-model-risk-revenue",
             "2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026",
             "2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026",
             "2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026",
