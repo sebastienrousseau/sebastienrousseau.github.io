@@ -206,6 +206,18 @@ site_software: "Static Site Generator, Rust"
 <div class="newsroom-grid feat-latest-grid">
 
 <article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-07-22-ssg-enterprise-strategic-deep-dive-architectural-roadmap/index.html" title="Static Site Generator (SSG): Enterprise-Grade Strategic Deep Dive and Architectural Roadmap">
+<img alt="An abstract technical background, representing the architectural roadmap of an enterprise-grade static site generator." src="https://cloudcdn.pro/stocks/images/gemini-background.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Rust · Static Site Generator · Web Security</span>
+<h3><a href="/2026-07-22-ssg-enterprise-strategic-deep-dive-architectural-roadmap/index.html">Static Site Generator (SSG): Enterprise-Grade Strategic Deep Dive and Architectural Roadmap</a></h3>
+<p class="newsroom-meta"><time datetime="2026-07-22">July 22, 2026</time></p>
+<p class="newsroom-tldr"><span class="newsroom-tldr-label">TL;DR</span> A Rust static-site generator built as secure-by-default infrastructure: compile-time SRI, CSP and a WCAG 2.2 AA build gate, an honest gap analysis of what v0.0.41 ships versus what the README promises, and a phased roadmap to an enterprise-grade 1.0.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-07-08-global-corporate-standard-iso-20022-swift-2026/index.html" title="From Messages to Map: Building a Global Corporate Standard on ISO 20022 and Swift">
 <img alt="Interlinked glowing blocks forming a chain across a dark field — harmonised ISO 20022 messages resolving into a connected network, evoking the missing global map that turns structured payment data into a usable corporate standard" src="https://cloudcdn.pro/stocks/images/shubham-dhage-yKzECK-O9-k.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
@@ -228,19 +240,6 @@ site_software: "Static Site Generator, Rust"
 <p class="newsroom-tldr"><span class="newsroom-tldr-label">TL;DR</span> Retail banking got its API standard a decade ago. Corporate banking never did — and now that AI agents and the Model Context Protocol have turned integration into a runtime decision, the gap has become a fault line.</p>
 </div>
 </article>
-
-<article class="newsroom-card">
-<a class="newsroom-card-media" href="/2026-07-03-emerging-technology-risk-horizon-banks-2026/index.html" title="Reading the Emerging-Technology Risk Horizon for Banks in 2026">
-<img alt="Abstract horizon of converging signal lines — AI, synthetic media, and programmable-money rails resolving over a banking skyline, evoking a supervisory scan of emerging-technology risk for financial services in 2026" src="https://cloudcdn.pro/stocks/images/adam-jicha-LM6pMVwlIiI.webp" loading="lazy" decoding="async" width="600" height="600" />
-</a>
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Emerging Technology · Horizon Scanning · FCA</span>
-<h3><a href="/2026-07-03-emerging-technology-risk-horizon-banks-2026/index.html">Reading the Emerging-Technology Risk Horizon for Banks in 2026</a></h3>
-<p class="newsroom-meta"><time datetime="2026-07-03">July 3, 2026</time></p>
-<p class="newsroom-tldr"><span class="newsroom-tldr-label">TL;DR</span> An original reading of the 2026 emerging-technology risk horizon for banks — personalised AI intelligence, synthetic financial crime, and programmable finance — with a signal-to-supervision framework, drawing on the FCA's Technology Horizon Scan 2026.</p>
-</div>
-</article>
-
 
 </div>
 
