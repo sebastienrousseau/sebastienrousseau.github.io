@@ -130,7 +130,7 @@ Bár mindegyik szervezet más piaci nézőpontból közelít a fizetési ökoszi
 3. **A tokenizáció gyártásra kész infrastruktúrává válik.** A főkönyvek egységesülnek, hogy támogassák a tokenizált kereskedelmi kötelezettségek és a nagykereskedelmi elszámoláshoz szükséges jegybanki digitális valuták (CBDC-k) együttélését.
 
 | Jelentés | Elsődleges célközönség | Fókusz | Kulcspillér | Banki következmény |
-| :---- | :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- | ---- |
 | **J.P. Morgan Payments** | Vállalati treasurerek, G-SIB-ek | Valós idejű likviditás, csalás | API-k, MI-biometria | A likviditási, FX- és kockázati rendszerek újraépítése a folyamatos, 365 napos elszámoláshoz. |
 | **Global Payments** | Kereskedők, e-kereskedelem | Az értékesítési pont (POS) fejlődése, omnichannel | Ügynöki kereskedelem, súrlódásmentes fizetés | Biztonságos, API-kapuval védett kereskedői fizetési folyosók építése autonóm MI-ügynökök számára. |
 | **HSBC Insights** | Multinacionális vállalatok | ERP-integrációk (SAP/Oracle), valós idejű készpénz | Treasury-as-a-Service, készpénzláthatóság | Tranzakciós API-csomagok bevételszerzése és valós idejű készpénz-főkönyvi jelentés beágyazása a forrásnál. |

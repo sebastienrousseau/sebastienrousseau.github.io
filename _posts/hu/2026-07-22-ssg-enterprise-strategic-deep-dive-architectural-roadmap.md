@@ -218,7 +218,7 @@ Az alábbi ütemterv mind a megoldott hiányosságokat, mind az újonnan felfede
 Az alábbi mátrix a `static-site-generator` (v1.0 célt) veti össze 2026 vezető webes publikálási motorjaival:
 
 | Képesség | static-site-generator v1.0 | Hugo v0.155+ | Zola v0.19+ | Astro 5 | Eleventy 3 |
-| :---- | :---- | :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- | ---- | ---- |
 | **Nyelv / futtatókörnyezet** | Rust (nulla unsafe) | Go | Rust | JS (Node/V8) | JS (Node/V8) |
 | **Akadálymentességi buildkapu** | Fordítási idejű AST-validálás | Nincs | Nincs | Build utáni linter | Build utáni linter |
 | **Biztonsági megerősítés** | SHA-384 SRI és CSP-beszúrás | Kézi | Kézi | Kézi | Kézi |

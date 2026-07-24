@@ -130,7 +130,7 @@ För att kartlägga banan för detta strukturella skifte sammanfattar denna rapp
 3. **Tokenisering övergår till produktionsfärdig infrastruktur.** Liggare enas för att stödja samexistens av tokeniserade kommersiella skulder och digitala centralbanksvalutor (CBDC) för grossistavveckling.
 
 | Rapport | Primär målgrupp | Fokus | Central pelare | Bankimplikation |
-| :---- | :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- | ---- |
 | **J.P. Morgan Payments** | Företagstreasurer, G-SIB-banker | Likviditet i realtid, bedrägeri | API:er, AI-biometri | Bygg om likviditets-, valuta- och risksystem för kontinuerlig avveckling 365 dagar om året. |
 | **Global Payments** | Handlare, e-handel | Utveckling av kassaterminaler (POS), omnikanal | Agentisk handel, friktionsfri kassa | Bygg säkra, API-grindade betalningskorridorer för handlare åt autonoma AI-agenter. |
 | **HSBC Insights** | Multinationella företag | ERP-integrationer (SAP/Oracle), likviditet i realtid | Treasury-as-a-Service, likviditetstransparens | Monetisera transaktions-API-sviter och bädda in likviditetsrapportering i realtid vid källan. |

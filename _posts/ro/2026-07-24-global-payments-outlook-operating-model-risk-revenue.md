@@ -130,7 +130,7 @@ Deși fiecare organizație abordează ecosistemul plăților dintr-o perspectiv�
 3. **Tokenizarea trece la o infrastructură pregătită pentru producție.** Registrele se unifică pentru a susține coexistența pasivelor comerciale tokenizate și a monedelor digitale ale băncilor centrale (CBDC) pentru decontarea angro.
 
 | Raport | Public principal | Focalizare | Pilon principal | Implicație pentru bănci |
-| :---- | :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- | ---- |
 | **J.P. Morgan Payments** | Trezorieri corporativi, G-SIB | Lichiditate în timp real, fraudă | API-uri, biometrie IA | Reconstruirea sistemelor de lichiditate, FX și risc pentru decontare continuă, 365 de zile. |
 | **Global Payments** | Comercianți, comerț electronic | Evoluția punctelor de vânzare (POS), omnicanal | Comerț agentic, plată fără fricțiuni | Construirea unor coridoare de plată sigure, controlate prin API, pentru agenți IA autonomi. |
 | **HSBC Insights** | Corporații multinaționale | Integrări ERP (SAP/Oracle), numerar în timp real | Treasury-as-a-Service, vizibilitatea numerarului | Monetizarea suitelor de API tranzacționale și încorporarea raportării registrului de numerar în timp real, la sursă. |

@@ -130,7 +130,7 @@ Meskipun setiap organisasi mendekati ekosistem pembayaran dari perspektif pasar 
 3. **Tokenisasi bertransisi menjadi infrastruktur yang siap produksi.** Buku besar menyatu untuk mendukung koeksistensi liabilitas komersial tertokenisasi dan mata uang digital bank sentral (CBDC) untuk penyelesaian grosir.
 
 | Laporan | Audiens Utama | Fokus | Pilar Kunci | Implikasi bagi Bank |
-| :---- | :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- | ---- |
 | **J.P. Morgan Payments** | Bendahara korporat, G-SIB | Likuiditas waktu nyata, penipuan | API, biometrik AI | Membangun ulang sistem likuiditas, FX, dan risiko untuk penyelesaian berkelanjutan 365 hari. |
 | **Global Payments** | Pedagang, E-Commerce | Evolusi Titik Penjualan (POS), Omnikanal | Perdagangan Agentik, Checkout Nirhambatan | Membangun koridor pembayaran pedagang yang aman dan bergerbang API untuk agen AI otonom. |
 | **HSBC Insights** | Korporasi Multinasional | Integrasi ERP (SAP/Oracle), Kas Waktu Nyata | Treasury-as-a-Service, Visibilitas Kas | Memonetisasi rangkaian API transaksional dan menanamkan pelaporan buku besar kas waktu nyata pada sumbernya. |

@@ -130,7 +130,7 @@ Hoewel elke organisatie het betaalecosysteem vanuit een eigen marktperspectief b
 3. **Tokenisatie schuift op naar productieklare infrastructuur.** Grootboeken verenigen zich om het naast elkaar bestaan van getokeniseerde commerciële verplichtingen en digitale centralebankmunten (CBDC's) voor wholesale-afwikkeling te ondersteunen.
 
 | Rapport | Primaire doelgroep | Focus | Kernpijler | Implicatie voor banken |
-| :---- | :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- | ---- |
 | **J.P. Morgan Payments** | Corporate treasurers, G-SIB's | Realtime liquiditeit, fraude | API's, AI-biometrie | Herbouw liquiditeits-, FX- en risicosystemen voor continue afwikkeling over 365 dagen. |
 | **Global Payments** | Handelaren, e-commerce | Evolutie van point-of-sale (POS), omnichannel | Agentische handel, wrijvingsloze checkout | Bouw veilige, via API afgeschermde betaalcorridors voor handelaren voor autonome AI-agenten. |
 | **HSBC Insights** | Multinationale ondernemingen | ERP-integraties (SAP/Oracle), realtime kaspositie | Treasury-as-a-Service, kaszichtbaarheid | Verzilver transactionele API-suites en bed realtime kasgrootboekrapportage aan de bron in. |

@@ -218,7 +218,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 ماتریس زیر `static-site-generator` (هدف نسخه v1.0) را در برابر موتورهای پیشروی انتشار وب در سال ۲۰۲۶ مقایسه می‌کند:
 
 | قابلیت | static-site-generator v1.0 | Hugo v0.155+ | Zola v0.19+ | Astro 5 | Eleventy 3 |
-| :---- | :---- | :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- | ---- | ---- |
 | **زبان / زمان‌اجرا** | Rust (Zero Unsafe) | Go | Rust | JS (Node/V8) | JS (Node/V8) |
 | **حفاظ ساخت دسترس‌پذیری** | اعتبارسنجی AST در زمان ساخت | ندارد | ندارد | لینتر پس از ساخت | لینتر پس از ساخت |
 | **سخت‌سازی امنیت** | SHA-384 SRI و تزریق CSP | دستی | دستی | دستی | دستی |

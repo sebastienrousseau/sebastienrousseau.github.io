@@ -218,7 +218,7 @@ Poniższa mapa drogowa integruje zarówno rozwiązane luki, jak i nowo odkryte f
 Poniższa macierz porównuje `static-site-generator` (cel wersji 1.0) z wiodącymi silnikami publikacji internetowej 2026 roku:
 
 | Funkcja | static-site-generator v1.0 | Hugo v0.155+ | Zola v0.19+ | Astro 5 | Eleventy 3 |
-| :---- | :---- | :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- | ---- | ---- |
 | **Język / środowisko uruchomieniowe** | Rust (zero unsafe) | Go | Rust | JS (Node/V8) | JS (Node/V8) |
 | **Bramka dostępności w kompilacji** | Walidacja AST w czasie kompilacji | Brak | Brak | Linter po kompilacji | Linter po kompilacji |
 | **Utwardzanie bezpieczeństwa** | SHA-384 SRI i wstrzykiwanie CSP | Ręczne | Ręczne | Ręczne | Ręczne |

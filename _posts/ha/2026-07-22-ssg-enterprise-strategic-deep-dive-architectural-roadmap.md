@@ -218,7 +218,7 @@ Tsarin aiki mai zuwa yana haɗa gibin da aka warware da sabbin iyawa na matakin 
 Matrix mai zuwa yana kwatanta `static-site-generator` (manufar v1.0) da manyan injin bugawa na yanar gizo na 2026:
 
 | Iyawa | static-site-generator v1.0 | Hugo v0.155+ | Zola v0.19+ | Astro 5 | Eleventy 3 |
-| :---- | :---- | :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- | ---- | ---- |
 | **Harshe / Runtime** | Rust (Zero Unsafe) | Go | Rust | JS (Node/V8) | JS (Node/V8) |
 | **A11y Build Gate** | Build-Time AST Validation | Babu | Babu | Post-build Linter | Post-build Linter |
 | **Ƙarfafa Tsaro** | SHA-384 SRI & CSP Injection | Da hannu | Da hannu | Da hannu | Da hannu |

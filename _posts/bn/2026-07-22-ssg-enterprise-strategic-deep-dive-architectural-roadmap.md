@@ -218,7 +218,7 @@ HTML পার্সিং স্তরকে একটি সম্পূর্
 নিম্নলিখিত ম্যাট্রিক্স `static-site-generator` (v1.0 লক্ষ্য)-কে 2026-এর শীর্ষস্থানীয় ওয়েব প্রকাশনা ইঞ্জিনগুলির বিপরীতে তুলনা করে:
 
 | সক্ষমতা | static-site-generator v1.0 | Hugo v0.155+ | Zola v0.19+ | Astro 5 | Eleventy 3 |
-| :---- | :---- | :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- | ---- | ---- |
 | **ভাষা / রানটাইম** | Rust (Zero Unsafe) | Go | Rust | JS (Node/V8) | JS (Node/V8) |
 | **A11y বিল্ড গেট** | Build-Time AST Validation | None | None | Post-build Linter | Post-build Linter |
 | **নিরাপত্তা কঠোরকরণ** | SHA-384 SRI & CSP Injection | Manual | Manual | Manual | Manual |

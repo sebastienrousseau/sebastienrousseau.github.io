@@ -218,7 +218,7 @@ HTML पार्सिंग परत को एक पूर्ण इन-म
 निम्नलिखित मैट्रिक्स `static-site-generator` (v1.0 लक्ष्य) की तुलना 2026 के अग्रणी वेब प्रकाशन इंजनों से करता है:
 
 | क्षमता | static-site-generator v1.0 | Hugo v0.155+ | Zola v0.19+ | Astro 5 | Eleventy 3 |
-| :---- | :---- | :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- | ---- | ---- |
 | **भाषा / रनटाइम** | Rust (Zero Unsafe) | Go | Rust | JS (Node/V8) | JS (Node/V8) |
 | **A11y बिल्ड गेट** | Build-Time AST Validation | None | None | Post-build Linter | Post-build Linter |
 | **सुरक्षा सुदृढ़ीकरण** | SHA-384 SRI & CSP Injection | Manual | Manual | Manual | Manual |

@@ -218,7 +218,7 @@ HTML पार्सिंग स्तर एका पूर्ण इन-म�
 पुढील मॅट्रिक्स `static-site-generator` (v1.0 लक्ष्य) ची 2026 च्या आघाडीच्या वेब प्रकाशन इंजिनांशी तुलना करते:
 
 | Capability | static-site-generator v1.0 | Hugo v0.155+ | Zola v0.19+ | Astro 5 | Eleventy 3 |
-| :---- | :---- | :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- | ---- | ---- |
 | **Language / Runtime** | Rust (Zero Unsafe) | Go | Rust | JS (Node/V8) | JS (Node/V8) |
 | **A11y Build Gate** | Build-Time AST Validation | None | None | Post-build Linter | Post-build Linter |
 | **Security Hardening** | SHA-384 SRI & CSP Injection | Manual | Manual | Manual | Manual |

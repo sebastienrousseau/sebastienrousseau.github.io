@@ -130,7 +130,7 @@ Bó tilẹ̀ jẹ́ pé olúkúlùkù àjọ ń wo àyíká-àyè ìsanwó láti
 3. **Ìsọdí-token ń yí padà sí ohun-àmúṣe tí ó ṣetán fún iṣẹ́-ẹ̀dá.** Àwọn ìwé-ìṣirò ń ṣọ̀kan láti ṣàtìlẹyìn ìjọ-gbépọ̀ àwọn gbèsè òwò tí a sọ di token àti àwọn owó oníbìtì báńkì àárín (CBDC) fún ìsanwó àkúnwọ́sílẹ̀.
 
 | Ìròyìn | Olùgbọ́ Àkọ́kọ́ | Àfojúsùn | Òpó Pàtàkì | Ìtumọ̀ fún Báńkì |
-| :---- | :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- | ---- |
 | **J.P. Morgan Payments** | Àwọn olùṣúra ilé-iṣẹ́, àwọn G-SIB | Owó-ríró àkókò-gidi, ẹ̀tàn | Àwọn API, biometrics AI | Tún àwọn ètò owó-ríró, FX, àti ewu kọ́ fún ìsanwó àìdásẹ́kun ọjọ́-365. |
 | **Global Payments** | Àwọn oníṣòwò, E-Commerce | Ìdàgbàsókè Point-of-Sale (POS), Omnichannel | Òwò Agentic, Ìjáde-owó Àìnídíwọ́ | Kọ́ àwọn ọ̀nà-àbáwọlé ìsanwó oníṣòwò tí ó ní ààbò, tí API ṣọ́ fún àwọn agent AI aládàáṣiṣẹ́. |
 | **HSBC Insights** | Àwọn Ilé-iṣẹ́ Orílẹ̀-èdè-púpọ̀ | Àṣepọ̀ ERP (SAP/Oracle), Owó Àkókò-gidi | Treasury-as-a-Service, Ìríran Owó | Sọ àwọn àkójọ API ìdúnàádúrà di owó kí o sì fi ìròyìn ìwé-ìṣirò owó àkókò-gidi bọ́ ní orísun. |

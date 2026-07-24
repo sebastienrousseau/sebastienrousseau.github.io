@@ -218,7 +218,7 @@ Peta jalan berikut mengintegrasikan baik celah yang telah diselesaikan maupun ka
 Matriks berikut membandingkan `static-site-generator` (target v1.0) terhadap mesin penerbitan web terkemuka pada 2026:
 
 | Kapabilitas | static-site-generator v1.0 | Hugo v0.155+ | Zola v0.19+ | Astro 5 | Eleventy 3 |
-| :---- | :---- | :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- | ---- | ---- |
 | **Bahasa / Runtime** | Rust (Zero Unsafe) | Go | Rust | JS (Node/V8) | JS (Node/V8) |
 | **Gerbang Build A11y** | Validasi AST Saat Build | Tidak Ada | Tidak Ada | Linter Pasca-build | Linter Pasca-build |
 | **Pengerasan Keamanan** | SRI SHA-384 & Injeksi CSP | Manual | Manual | Manual | Manual |

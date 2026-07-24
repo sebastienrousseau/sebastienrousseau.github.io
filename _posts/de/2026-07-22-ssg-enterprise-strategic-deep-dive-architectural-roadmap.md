@@ -218,7 +218,7 @@ Die folgende Roadmap integriert sowohl die behobenen Lücken als auch die neu en
 Die folgende Matrix vergleicht `static-site-generator` (Ziel v1.0) mit den führenden Web-Publishing-Engines des Jahres 2026:
 
 | Funktion | static-site-generator v1.0 | Hugo v0.155+ | Zola v0.19+ | Astro 5 | Eleventy 3 |
-| :---- | :---- | :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- | ---- | ---- |
 | **Sprache / Laufzeit** | Rust (Zero Unsafe) | Go | Rust | JS (Node/V8) | JS (Node/V8) |
 | **A11y-Build-Gate** | AST-Validierung zur Build-Zeit | Keine | Keine | Post-Build-Linter | Post-Build-Linter |
 | **Sicherheitshärtung** | SHA-384-SRI und CSP-Injektion | Manuell | Manuell | Manuell | Manuell |

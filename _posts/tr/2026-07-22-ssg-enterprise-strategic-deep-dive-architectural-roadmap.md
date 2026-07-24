@@ -218,7 +218,7 @@ Aşağıdaki yol haritası, hem çözülen açıkları hem de yeni keşfedilen k
 Aşağıdaki matris, `static-site-generator` (v1.0 hedefi) ile 2026'nın önde gelen web yayıncılık motorlarını karşılaştırmaktadır:
 
 | Yetenek | static-site-generator v1.0 | Hugo v0.155+ | Zola v0.19+ | Astro 5 | Eleventy 3 |
-| :---- | :---- | :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- | ---- | ---- |
 | **Dil / Çalışma Zamanı** | Rust (Sıfır Unsafe) | Go | Rust | JS (Node/V8) | JS (Node/V8) |
 | **Erişilebilirlik Derleme Kapısı** | Derleme Zamanı AST Doğrulaması | Yok | Yok | Derleme Sonrası Linter | Derleme Sonrası Linter |
 | **Güvenlik Sağlamlaştırma** | SHA-384 SRI ve CSP Enjeksiyonu | Elle | Elle | Elle | Elle |

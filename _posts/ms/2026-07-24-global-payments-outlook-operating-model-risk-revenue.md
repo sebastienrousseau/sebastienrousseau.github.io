@@ -130,7 +130,7 @@ Walaupun setiap organisasi mendekati ekosistem pembayaran daripada perspektif pa
 3. **Penokenan sedang beralih kepada infrastruktur sedia pengeluaran.** Lejar sedang bersatu untuk menyokong kewujudan bersama liabiliti komersial ditokenkan dan mata wang digital bank pusat (CBDC) untuk penyelesaian borong.
 
 | Laporan | Khalayak Utama | Fokus | Tonggak Utama | Implikasi Bank |
-| :---- | :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- | ---- |
 | **J.P. Morgan Payments** | Bendahari korporat, G-SIB | Kecairan masa nyata, penipuan | API, biometrik AI | Bina semula sistem kecairan, FX dan risiko untuk penyelesaian berterusan 365 hari. |
 | **Global Payments** | Pedagang, E-Dagang | Evolusi Titik Jualan (POS), Pelbagai Saluran | Perdagangan Agentik, Daftar Keluar Tanpa Geseran | Bina koridor pembayaran pedagang bergerbang API yang selamat untuk ejen AI autonomi. |
 | **HSBC Insights** | Korporat Multinasional | Penyepaduan ERP (SAP/Oracle), Tunai Masa Nyata | Treasury-as-a-Service, Kebolehlihatan Tunai | Wangkan suite API transaksi dan benamkan pelaporan lejar tunai masa nyata pada sumber. |

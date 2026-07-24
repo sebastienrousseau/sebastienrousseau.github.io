@@ -130,7 +130,7 @@ Choć każda z tych organizacji podchodzi do ekosystemu płatności z odrębnej 
 3. **Tokenizacja przechodzi do infrastruktury gotowej produkcyjnie.** Księgi ujednolicają się, aby wspierać współistnienie tokenizowanych zobowiązań komercyjnych i walut cyfrowych banków centralnych (CBDC) w rozliczeniach hurtowych.
 
 | Raport | Główny odbiorca | Ognisko uwagi | Kluczowy filar | Implikacja dla banku |
-| :---- | :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- | ---- |
 | **J.P. Morgan Payments** | Skarbnicy korporacyjni, G-SIB | Płynność w czasie rzeczywistym, oszustwa | API, biometria AI | Przebudowa systemów płynności, FX i ryzyka pod ciągłe rozliczenia przez 365 dni w roku. |
 | **Global Payments** | Akceptanci, e-commerce | Ewolucja punktu sprzedaży (POS), omnichannel | Handel agentowy, płatność bez tarć | Budowa bezpiecznych, chronionych API korytarzy płatniczych akceptantów dla autonomicznych agentów AI. |
 | **HSBC Insights** | Korporacje wielonarodowe | Integracje ERP (SAP/Oracle), gotówka w czasie rzeczywistym | Treasury-as-a-Service, widoczność gotówki | Monetyzacja pakietów API transakcyjnych i osadzenie raportowania księgi gotówkowej w czasie rzeczywistym u źródła. |

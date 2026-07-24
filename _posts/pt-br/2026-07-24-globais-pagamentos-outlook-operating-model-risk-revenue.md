@@ -130,7 +130,7 @@ Embora cada organização aborde o ecossistema de pagamentos a partir de uma per
 3. **A tokenização está migrando para infraestrutura pronta para produção.** Os razões estão se unificando para dar suporte à coexistência de passivos comerciais tokenizados e de moedas digitais de banco central (CBDCs) na liquidação de atacado.
 
 | Relatório | Público Primário | Foco | Pilar Central | Implicação para o Banco |
-| :---- | :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- | ---- |
 | **J.P. Morgan Payments** | Tesoureiros corporativos, G-SIBs | Liquidez em tempo real, fraude | APIs, biometria por IA | Reconstruir os sistemas de liquidez, câmbio e risco para liquidação contínua de 365 dias. |
 | **Global Payments** | Comerciantes, comércio eletrônico | Evolução do ponto de venda (POS), omnicanalidade | Comércio agêntico, checkout sem atrito | Construir corredores de pagamento de comerciantes seguros e protegidos por API para agentes autônomos de IA. |
 | **HSBC Insights** | Corporações multinacionais | Integrações de ERP (SAP/Oracle), caixa em tempo real | Treasury-as-a-Service, visibilidade de caixa | Monetizar suítes de APIs transacionais e incorporar relatórios de razão de caixa em tempo real na origem. |

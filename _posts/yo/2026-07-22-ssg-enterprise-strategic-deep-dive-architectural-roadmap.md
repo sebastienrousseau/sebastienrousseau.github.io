@@ -218,7 +218,7 @@ Bí ó tilẹ̀ jẹ́ pé a pín ọ̀nà-iṣẹ́ plugin síi-ọ̀nà-púp�
 Àpapọ̀ tí ó tẹ̀lé yìí ń fi `static-site-generator` (àfojúsùn v1.0) wé àwọn ẹ̀rọ ìṣàgbéjáde wẹ́ẹ̀bù olókìkí ti 2026:
 
 | Agbára-iṣẹ́ | static-site-generator v1.0 | Hugo v0.155+ | Zola v0.19+ | Astro 5 | Eleventy 3 |
-| :---- | :---- | :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- | ---- | ---- |
 | **Èdè / Runtime** | Rust (Zero Unsafe) | Go | Rust | JS (Node/V8) | JS (Node/V8) |
 | **Ẹnu-ọ̀nà Àkópọ̀ A11y** | Ìdánilójú AST Àkókò-Àkópọ̀ | Kò Sí | Kò Sí | Linter Lẹ́yìn-àkópọ̀ | Linter Lẹ́yìn-àkópọ̀ |
 | **Ìfúnlókun Ààbò** | SHA-384 SRI & Àbẹrẹ CSP | Pẹ̀lú Ọwọ́ | Pẹ̀lú Ọwọ́ | Pẹ̀lú Ọwọ́ | Pẹ̀lú Ọwọ́ |

@@ -218,7 +218,7 @@ La siguiente hoja de ruta integra tanto las carencias resueltas como las capacid
 La siguiente matriz compara `static-site-generator` (objetivo v1.0) con los principales motores de publicación web de 2026:
 
 | Capacidad | static-site-generator v1.0 | Hugo v0.155+ | Zola v0.19+ | Astro 5 | Eleventy 3 |
-| :---- | :---- | :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- | ---- | ---- |
 | **Lenguaje / runtime** | Rust (cero unsafe) | Go | Rust | JS (Node/V8) | JS (Node/V8) |
 | **Barrera de accesibilidad en compilación** | Validación de AST en compilación | Ninguna | Ninguna | Linter posterior a la compilación | Linter posterior a la compilación |
 | **Endurecimiento de seguridad** | SRI SHA-384 e inyección de CSP | Manual | Manual | Manual | Manual |

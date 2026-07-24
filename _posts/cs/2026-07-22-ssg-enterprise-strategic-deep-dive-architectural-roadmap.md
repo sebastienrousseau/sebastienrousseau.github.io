@@ -218,7 +218,7 @@ Následující plán integruje jak vyřešené mezery, tak nově objevené schop
 Následující matice porovnává `static-site-generator` (cíl verze 1.0) proti předním enginům pro webové publikování roku 2026:
 
 | Schopnost | static-site-generator v1.0 | Hugo v0.155+ | Zola v0.19+ | Astro 5 | Eleventy 3 |
-| :---- | :---- | :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- | ---- | ---- |
 | **Jazyk / běhové prostředí** | Rust (bez unsafe) | Go | Rust | JS (Node/V8) | JS (Node/V8) |
 | **Brána přístupnosti při sestavení** | Validace AST při sestavení | Žádná | Žádná | Linter po sestavení | Linter po sestavení |
 | **Bezpečnostní zpevnění** | SHA-384 SRI a vkládání CSP | Ruční | Ruční | Ruční | Ruční |

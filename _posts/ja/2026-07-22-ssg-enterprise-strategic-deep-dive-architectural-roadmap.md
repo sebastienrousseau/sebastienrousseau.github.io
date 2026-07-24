@@ -218,7 +218,7 @@ HTML解析レイヤーを（Kuchikiやhtml5everのような）完全なインメ
 以下のマトリクスは、`static-site-generator`（v1.0の目標）を、2026年の主要なWeb公開エンジンと比較したものです。
 
 | 機能 | static-site-generator v1.0 | Hugo v0.155+ | Zola v0.19+ | Astro 5 | Eleventy 3 |
-| :---- | :---- | :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- | ---- | ---- |
 | **言語 / ランタイム** | Rust（Zero Unsafe） | Go | Rust | JS (Node/V8) | JS (Node/V8) |
 | **A11yビルドゲート** | ビルド時AST検証 | なし | なし | ビルド後Linter | ビルド後Linter |
 | **セキュリティ強化** | SHA-384 SRIおよびCSP注入 | 手動 | 手動 | 手動 | 手動 |

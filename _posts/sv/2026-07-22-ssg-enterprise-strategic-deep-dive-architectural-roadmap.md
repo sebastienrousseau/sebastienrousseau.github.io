@@ -218,7 +218,7 @@ Följande färdplan integrerar både de åtgärdade luckorna och de nyupptäckta
 Följande matris jämför `static-site-generator` (mål v1.0) mot de ledande webbpubliceringsmotorerna 2026:
 
 | Funktion | static-site-generator v1.0 | Hugo v0.155+ | Zola v0.19+ | Astro 5 | Eleventy 3 |
-| :---- | :---- | :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- | ---- | ---- |
 | **Språk / runtime** | Rust (noll unsafe) | Go | Rust | JS (Node/V8) | JS (Node/V8) |
 | **Tillgänglighetsgrind vid bygge** | AST-validering vid byggtid | Ingen | Ingen | Linter efter bygge | Linter efter bygge |
 | **Säkerhetshärdning** | SHA-384 SRI och CSP-injektion | Manuell | Manuell | Manuell | Manuell |

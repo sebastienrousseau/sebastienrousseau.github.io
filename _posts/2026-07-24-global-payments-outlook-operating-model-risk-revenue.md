@@ -147,7 +147,7 @@ While each organisation approaches the payments ecosystem from a distinct market
 3. **Tokenisation is transitioning to production-ready infrastructure.** Ledgers are unifying to support the co-existence of tokenised commercial liabilities and central bank digital currencies (CBDCs) for wholesale settlement.
 
 | Report | Primary Audience | Focus | Key Pillar | Bank Implication |
-| :---- | :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- | ---- |
 | **J.P. Morgan Payments** | Corporate treasurers, G-SIBs | Real-time liquidity, fraud | APIs, AI biometrics | Rebuild liquidity, FX, and risk systems for continuous 365-day settlement. |
 | **Global Payments** | Merchants, E-Commerce | Point-of-Sale (POS) Evolution, Omnichannel | Agentic Commerce, Frictionless Checkout | Build secure, API-gated merchant payment corridors for autonomous AI agents. |
 | **HSBC Insights** | Multinational Corporates | ERP Integrations (SAP/Oracle), Real-Time Cash | Treasury-as-a-Service, Cash Visibility | Monetise transactional API suites and embed real-time cash ledger reporting at source. |
