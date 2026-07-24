@@ -218,7 +218,7 @@ La feuille de route ci-dessous intègre à la fois les écarts résolus et les c
 La matrice ci-dessous compare `static-site-generator` (cible v1.0) aux principaux moteurs de publication web de 2026 :
 
 | Capacité | static-site-generator v1.0 | Hugo v0.155+ | Zola v0.19+ | Astro 5 | Eleventy 3 |
-| :---- | :---- | :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- | ---- | ---- |
 | **Langage / Runtime** | Rust (zéro unsafe) | Go | Rust | JS (Node/V8) | JS (Node/V8) |
 | **Barrière d'accessibilité à la construction** | Validation d'AST à la compilation | Aucune | Aucune | Linter post-construction | Linter post-construction |
 | **Durcissement de la sécurité** | SRI SHA-384 et injection CSP | Manuel | Manuel | Manuel | Manuel |

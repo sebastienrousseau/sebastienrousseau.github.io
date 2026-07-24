@@ -218,7 +218,7 @@ Următoarea foaie de parcurs integrează atât lipsurile rezolvate, cât și cap
 Următoarea matrice compară `static-site-generator` (ținta v1.0) cu principalele motoare de publicare web ale anului 2026:
 
 | Capabilitate | static-site-generator v1.0 | Hugo v0.155+ | Zola v0.19+ | Astro 5 | Eleventy 3 |
-| :---- | :---- | :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- | ---- | ---- |
 | **Limbaj / Runtime** | Rust (zero unsafe) | Go | Rust | JS (Node/V8) | JS (Node/V8) |
 | **Poartă de compilare A11y** | Validare AST la compilare | Niciuna | Niciuna | Linter post-compilare | Linter post-compilare |
 | **Întărire de securitate** | SRI SHA-384 și injecție CSP | Manuală | Manuală | Manuală | Manuală |

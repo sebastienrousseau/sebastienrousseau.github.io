@@ -130,7 +130,7 @@ Yayin da kowace ƙungiya ke fuskantar tsarin biyan kuɗi daga wani mahangar kasu
 3. **Tokenisation yana sauya zuwa tsari mai shirye don samarwa.** Ledgers suna haɗuwa don tallafa wa haɗakar alhakin kasuwanci na tokenised da kuɗin dijital na babban banki (CBDCs) don biyan babbar kasuwa.
 
 | Rahoto | Babban Masu Sauraro | Mayar da Hankali | Muhimmin Ginshiƙi | Illar Banki |
-| :---- | :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- | ---- |
 | **J.P. Morgan Payments** | Ma'aikatan baitulmali na kamfani, G-SIBs | Ruwan kuɗi na lokaci-lokaci, zamba | APIs, biometrics na AI | Sake gina tsarin ruwan kuɗi, FX, da haɗari don biyan kuɗi mai ci gaba na kwana 365. |
 | **Global Payments** | 'Yan kasuwa, E-Commerce | Juyin Halittar Point-of-Sale (POS), Omnichannel | Kasuwancin Agentic, Biyan Kuɗi Mara Rikici | Gina hanyoyin biyan kuɗi na 'yan kasuwa masu aminci, masu ƙofar API don wakilan AI masu cin gashin kansu. |
 | **HSBC Insights** | Kamfanoni na Ƙasa da Ƙasa | Haɗin ERP (SAP/Oracle), Kuɗi na Lokaci-lokaci | Treasury-as-a-Service, Ganin Kuɗi | Samun kuɗi daga tarin API na ma'amala da saka rahoton ledger na kuɗi na lokaci-lokaci a tushe. |

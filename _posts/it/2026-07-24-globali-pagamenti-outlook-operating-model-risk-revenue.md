@@ -130,7 +130,7 @@ Sebbene ciascuna organizzazione affronti l'ecosistema dei pagamenti da una prosp
 3. **La tokenizzazione sta passando a un'infrastruttura pronta per la produzione.** I registri si stanno unificando per sostenere la coesistenza di passività commerciali tokenizzate e valute digitali delle banche centrali (CBDC) per il regolamento wholesale.
 
 | Report | Pubblico principale | Focus | Pilastro chiave | Implicazione per le banche |
-| :---- | :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- | ---- |
 | **J.P. Morgan Payments** | Tesorieri aziendali, G-SIB | Liquidità in tempo reale, frodi | API, biometria basata su IA | Ricostruire i sistemi di liquidità, FX e rischio per un regolamento continuo su 365 giorni. |
 | **Global Payments** | Merchant, e-commerce | Evoluzione del punto vendita (POS), omnicanalità | Commercio agentico, checkout senza attriti | Costruire corridoi di pagamento merchant sicuri e presidiati da API per agenti IA autonomi. |
 | **HSBC Insights** | Multinazionali | Integrazioni ERP (SAP/Oracle), liquidità in tempo reale | Treasury-as-a-Service, visibilità di cassa | Monetizzare le suite di API transazionali e incorporare la reportistica di cassa in tempo reale alla fonte. |

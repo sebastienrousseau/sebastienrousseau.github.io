@@ -130,7 +130,7 @@ Ačkoli každá organizace přistupuje k platebnímu ekosystému z odlišné tr�
 3. **Tokenizace přechází na infrastrukturu připravenou pro produkci.** Účetní knihy se sjednocují, aby podpořily koexistenci tokenizovaných komerčních závazků a digitálních měn centrálních bank (CBDC) pro velkoobchodní vypořádání.
 
 | Zpráva | Primární publikum | Zaměření | Klíčový pilíř | Dopad na banky |
-| :---- | :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- | ---- |
 | **J.P. Morgan Payments** | Firemní treasureři, G-SIB | Real-time likvidita, podvody | API, AI biometrie | Přestavět systémy likvidity, FX a rizika pro nepřetržité vypořádání 365 dní. |
 | **Global Payments** | Obchodníci, e-commerce | Vývoj místa prodeje (POS), omnichannel | Agentní obchod, bezfrikční checkout | Vybudovat bezpečné, API-branové platební koridory obchodníků pro autonomní AI agenty. |
 | **HSBC Insights** | Nadnárodní korporace | Integrace ERP (SAP/Oracle), real-time hotovost | Treasury-as-a-Service, viditelnost hotovosti | Zpeněžit sady transakčních API a zabudovat real-time reporting hotovostní účetní knihy u zdroje. |

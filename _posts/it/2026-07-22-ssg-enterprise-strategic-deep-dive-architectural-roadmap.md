@@ -218,7 +218,7 @@ La roadmap seguente integra sia i gap risolti sia le capacità di livello enterp
 La matrice seguente confronta `static-site-generator` (target v1.0) con i principali motori di pubblicazione web del 2026:
 
 | Capacità | static-site-generator v1.0 | Hugo v0.155+ | Zola v0.19+ | Astro 5 | Eleventy 3 |
-| :---- | :---- | :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- | ---- | ---- |
 | **Linguaggio / Runtime** | Rust (zero unsafe) | Go | Rust | JS (Node/V8) | JS (Node/V8) |
 | **Gate di accessibilità in build** | Validazione AST in compilazione | Nessuno | Nessuno | Linter post-build | Linter post-build |
 | **Hardening di sicurezza** | SRI SHA-384 e iniezione CSP | Manuale | Manuale | Manuale | Manuale |

@@ -130,7 +130,7 @@ Si chaque organisation aborde l'écosystème des paiements sous un angle de marc
 3. **La tokenisation évolue vers une infrastructure prête pour la production.** Les registres s'unifient pour permettre la coexistence des passifs commerciaux tokenisés et des monnaies numériques de banque centrale (MNBC) pour le règlement de gros.
 
 | Rapport | Public principal | Axe | Pilier clé | Implication pour les banques |
-| :---- | :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- | ---- |
 | **J.P. Morgan Payments** | Trésoriers d'entreprise, G-SIB | Liquidité en temps réel, fraude | API, biométrie IA | Reconstruire les systèmes de liquidité, de change et de risque pour un règlement continu 365 jours par an. |
 | **Global Payments** | Commerçants, e-commerce | Évolution du point de vente (POS), omnicanal | Commerce agentique, paiement sans friction | Construire des corridors de paiement marchands sécurisés et régulés par API pour les agents IA autonomes. |
 | **HSBC Insights** | Grandes entreprises multinationales | Intégrations ERP (SAP/Oracle), trésorerie en temps réel | Treasury-as-a-Service, visibilité de trésorerie | Monétiser les suites d'API transactionnelles et intégrer le reporting de trésorerie en temps réel à la source. |

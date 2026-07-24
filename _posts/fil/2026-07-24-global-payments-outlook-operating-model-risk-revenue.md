@@ -130,7 +130,7 @@ Bagama't nilalapitan ng bawat organisasyon ang payments ecosystem mula sa natata
 3. **Ang tokenisation ay lumilipat patungo sa production-ready na imprastraktura.** Nagkakaisa ang mga ledger upang suportahan ang pagsasama ng tokenised na commercial liabilities at central bank digital currencies (CBDCs) para sa wholesale settlement.
 
 | Ulat | Pangunahing Awdiyens | Pokus | Pangunahing Haligi | Implikasyon sa Bangko |
-| :---- | :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- | ---- |
 | **J.P. Morgan Payments** | Mga corporate treasurer, G-SIBs | Real-time na liquidity, pandaraya | APIs, AI biometrics | Muling itayo ang liquidity, FX, at risk system para sa tuloy-tuloy na 365-araw na settlement. |
 | **Global Payments** | Mga merchant, E-Commerce | Point-of-Sale (POS) Evolution, Omnichannel | Agentic Commerce, Frictionless Checkout | Bumuo ng secure, API-gated na merchant payment corridor para sa mga autonomous AI agent. |
 | **HSBC Insights** | Mga multinational na korporasyon | ERP Integrations (SAP/Oracle), Real-Time Cash | Treasury-as-a-Service, Cash Visibility | Pagkakitaan ang mga transactional API suite at i-embed ang real-time cash ledger reporting sa pinagmulan. |

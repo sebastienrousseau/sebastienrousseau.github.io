@@ -130,7 +130,7 @@ Dù mỗi tổ chức tiếp cận hệ sinh thái thanh toán từ một góc n
 3. **Token hóa đang chuyển sang hạ tầng sẵn sàng cho vận hành thực tế.** Các sổ cái đang hợp nhất để hỗ trợ sự cùng tồn tại của các nghĩa vụ thương mại token hóa và tiền kỹ thuật số của ngân hàng trung ương (CBDC) cho thanh toán bán buôn.
 
 | Báo cáo | Đối tượng chính | Trọng tâm | Trụ cột then chốt | Hàm ý cho ngân hàng |
-| :---- | :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- | ---- |
 | **J.P. Morgan Payments** | Trưởng ngân quỹ doanh nghiệp, các G-SIB | Thanh khoản thời gian thực, gian lận | API, sinh trắc học AI | Xây dựng lại các hệ thống thanh khoản, ngoại hối và rủi ro cho thanh toán liên tục 365 ngày. |
 | **Global Payments** | Người bán, Thương mại điện tử | Tiến hóa điểm bán hàng (POS), Đa kênh | Thương mại tác nhân, Thanh toán không ma sát | Xây dựng các hành lang thanh toán cho người bán được bảo mật, kiểm soát qua API cho các tác nhân AI tự động. |
 | **HSBC Insights** | Các tập đoàn đa quốc gia | Tích hợp ERP (SAP/Oracle), Tiền mặt thời gian thực | Treasury-as-a-Service, Khả năng nhìn thấy tiền mặt | Kiếm tiền từ các bộ API giao dịch và nhúng báo cáo sổ cái tiền mặt thời gian thực ngay tại nguồn. |

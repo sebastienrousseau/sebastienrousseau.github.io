@@ -130,7 +130,7 @@ Her kuruluş ödeme ekosistemine farklı bir pazar perspektifinden yaklaşsa da,
 3. **Tokenleştirme, üretime hazır altyapıya geçiyor.** Defterler, toptan mutabakat için tokenleştirilmiş ticari yükümlülüklerin ve merkez bankası dijital para birimlerinin (CBDC) bir arada var olmasını desteklemek üzere birleşiyor.
 
 | Rapor | Birincil Kitle | Odak | Ana Sütun | Banka Etkisi |
-| :---- | :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- | ---- |
 | **J.P. Morgan Payments** | Kurumsal hazineciler, G-SIB'ler | Gerçek zamanlı likidite, dolandırıcılık | API'ler, YZ biyometri | Sürekli 365 günlük mutabakat için likidite, döviz ve risk sistemlerini yeniden inşa etmek. |
 | **Global Payments** | Satıcılar, E-Ticaret | Satış Noktası (POS) Evrimi, Çok Kanallılık | Ajan Tabanlı Ticaret, Sürtünmesiz Ödeme | Otonom YZ ajanları için güvenli, API geçitli satıcı ödeme koridorları oluşturmak. |
 | **HSBC Insights** | Çok Uluslu Şirketler | ERP Entegrasyonları (SAP/Oracle), Gerçek Zamanlı Nakit | Hizmet olarak Hazine, Nakit Görünürlüğü | İşlemsel API paketlerini paraya çevirmek ve gerçek zamanlı nakit defter raporlamasını kaynağında yerleştirmek. |

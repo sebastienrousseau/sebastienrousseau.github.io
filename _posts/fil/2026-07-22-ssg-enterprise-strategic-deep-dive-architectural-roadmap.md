@@ -218,7 +218,7 @@ Isinasama ng sumusunod na roadmap ang parehong nalutas na mga puwang at ang bago
 Inihahambing ng sumusunod na matris ang `static-site-generator` (target na v1.0) laban sa mga nangungunang web publishing engine ng 2026:
 
 | Kakayahan | static-site-generator v1.0 | Hugo v0.155+ | Zola v0.19+ | Astro 5 | Eleventy 3 |
-| :---- | :---- | :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- | ---- | ---- |
 | **Wika / Runtime** | Rust (Zero Unsafe) | Go | Rust | JS (Node/V8) | JS (Node/V8) |
 | **A11y Build Gate** | Build-Time AST Validation | Wala | Wala | Post-build Linter | Post-build Linter |
 | **Pagpapatibay ng Seguridad** | SHA-384 SRI at CSP Injection | Manwal | Manwal | Manwal | Manwal |

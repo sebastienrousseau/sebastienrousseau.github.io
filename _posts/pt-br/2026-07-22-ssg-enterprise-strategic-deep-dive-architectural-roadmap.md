@@ -218,7 +218,7 @@ O roadmap a seguir integra tanto as lacunas resolvidas quanto as capacidades de 
 A matriz a seguir compara o `static-site-generator` (alvo v1.0) com os principais motores de publicação web de 2026:
 
 | Capacidade | static-site-generator v1.0 | Hugo v0.155+ | Zola v0.19+ | Astro 5 | Eleventy 3 |
-| :---- | :---- | :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- | ---- | ---- |
 | **Linguagem / Runtime** | Rust (Zero Unsafe) | Go | Rust | JS (Node/V8) | JS (Node/V8) |
 | **Gate de Build de A11y** | Validação de AST em Tempo de Build | Nenhum | Nenhum | Linter pós-build | Linter pós-build |
 | **Endurecimento de Segurança** | SRI SHA-384 e injeção de CSP | Manual | Manual | Manual | Manual |

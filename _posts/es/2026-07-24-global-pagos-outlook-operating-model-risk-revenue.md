@@ -130,7 +130,7 @@ Aunque cada organización aborda el ecosistema de pagos desde una perspectiva de
 3. **La tokenización está pasando a una infraestructura lista para producción.** Los libros mayores se están unificando para admitir la coexistencia de pasivos comerciales tokenizados y monedas digitales de banco central (CBDC) para la liquidación mayorista.
 
 | Informe | Público principal | Enfoque | Pilar clave | Implicación para el banco |
-| :---- | :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- | ---- |
 | **J.P. Morgan Payments** | Tesoreros corporativos, G-SIB | Liquidez en tiempo real, fraude | API, biometría con IA | Reconstruir los sistemas de liquidez, divisas y riesgo para una liquidación continua de 365 días. |
 | **Global Payments** | Comercios, comercio electrónico | Evolución del punto de venta (TPV), omnicanalidad | Comercio agéntico, pago sin fricción | Construir corredores de pago para comercios, seguros y con acceso controlado por API, para agentes de IA autónomos. |
 | **HSBC Insights** | Empresas multinacionales | Integraciones ERP (SAP/Oracle), efectivo en tiempo real | Treasury-as-a-Service, visibilidad del efectivo | Monetizar las suites de API transaccionales e incrustar la información del libro mayor de efectivo en tiempo real en el origen. |

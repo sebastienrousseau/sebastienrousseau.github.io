@@ -218,7 +218,7 @@ HTML 파싱 계층을 완전한 인메모리 DOM 라이브러리(예: Kuchiki �
 다음 매트릭스는 `static-site-generator`(v1.0 목표)를 2026년 주요 웹 퍼블리싱 엔진과 비교합니다.
 
 | 역량 | static-site-generator v1.0 | Hugo v0.155+ | Zola v0.19+ | Astro 5 | Eleventy 3 |
-| :---- | :---- | :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- | ---- | ---- |
 | **언어 / 런타임** | Rust (Zero Unsafe) | Go | Rust | JS (Node/V8) | JS (Node/V8) |
 | **접근성 빌드 게이트** | 빌드 타임 AST 검증 | 없음 | 없음 | 빌드 후 린터 | 빌드 후 린터 |
 | **보안 강화** | SHA-384 SRI & CSP 주입 | 수동 | 수동 | 수동 | 수동 |

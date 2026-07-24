@@ -130,7 +130,7 @@ Obwohl jede Organisation das Zahlungsverkehrs-Ökosystem aus einer eigenen Markt
 3. **Die Tokenisierung geht in produktionsreife Infrastruktur über.** Ledger vereinheitlichen sich, um die Koexistenz tokenisierter kommerzieller Verbindlichkeiten und digitaler Zentralbankwährungen (CBDCs) für die Wholesale-Abwicklung zu tragen.
 
 | Bericht | Primäre Zielgruppe | Fokus | Zentrale Säule | Implikation für Banken |
-| :---- | :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- | ---- |
 | **J.P. Morgan Payments** | Firmen-Treasurer, G-SIBs | Echtzeit-Liquidität, Betrug | APIs, KI-Biometrie | Liquiditäts-, FX- und Risikosysteme für durchgängige Abwicklung an 365 Tagen neu aufbauen. |
 | **Global Payments** | Händler, E-Commerce | Entwicklung des Point-of-Sale (POS), Omnichannel | Agentischer Handel, reibungsloser Checkout | Sichere, API-gesteuerte Händler-Zahlungskorridore für autonome KI-Agenten aufbauen. |
 | **HSBC Insights** | Multinationale Unternehmen | ERP-Integrationen (SAP/Oracle), Echtzeit-Liquidität | Treasury-as-a-Service, Liquiditätstransparenz | Transaktions-API-Suiten monetarisieren und Echtzeit-Liquiditätsreporting an der Quelle einbetten. |

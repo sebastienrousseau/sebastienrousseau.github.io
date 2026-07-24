@@ -218,7 +218,7 @@ HTML పార్సింగ్ పొరను ఒక పూర్తి ఇ�
 కింది మ్యాట్రిక్స్ `static-site-generator` (v1.0 లక్ష్యం)ను 2026 యొక్క ప్రముఖ వెబ్ ప్రచురణ ఇంజన్‌లతో పోల్చుతుంది:
 
 | Capability | static-site-generator v1.0 | Hugo v0.155+ | Zola v0.19+ | Astro 5 | Eleventy 3 |
-| :---- | :---- | :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- | ---- | ---- |
 | **Language / Runtime** | Rust (Zero Unsafe) | Go | Rust | JS (Node/V8) | JS (Node/V8) |
 | **A11y Build Gate** | Build-Time AST Validation | None | None | Post-build Linter | Post-build Linter |
 | **Security Hardening** | SHA-384 SRI & CSP Injection | Manual | Manual | Manual | Manual |

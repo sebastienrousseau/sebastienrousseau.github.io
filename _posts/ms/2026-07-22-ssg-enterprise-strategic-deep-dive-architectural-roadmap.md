@@ -218,7 +218,7 @@ Peta jalan berikut mengintegrasikan kedua-dua jurang yang diselesaikan dan keupa
 Matriks berikut membandingkan `static-site-generator` (sasaran v1.0) berbanding enjin penerbitan web terkemuka tahun 2026:
 
 | Keupayaan | static-site-generator v1.0 | Hugo v0.155+ | Zola v0.19+ | Astro 5 | Eleventy 3 |
-| :---- | :---- | :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- | ---- | ---- |
 | **Bahasa / Masa Jalan** | Rust (Zero Unsafe) | Go | Rust | JS (Node/V8) | JS (Node/V8) |
 | **Pagar Binaan A11y** | Pengesahan AST Masa Binaan | Tiada | Tiada | Linter Pasca-binaan | Linter Pasca-binaan |
 | **Pengukuhan Keselamatan** | Suntikan SRI SHA-384 & CSP | Manual | Manual | Manual | Manual |

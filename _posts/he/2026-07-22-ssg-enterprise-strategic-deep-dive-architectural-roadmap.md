@@ -218,7 +218,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 המטריצה הבאה משווה את `static-site-generator` (יעד v1.0) מול מנועי הפרסום המובילים ברשת לשנת 2026:
 
 | יכולת | static-site-generator v1.0 | Hugo v0.155+ | Zola v0.19+ | Astro 5 | Eleventy 3 |
-| :---- | :---- | :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- | ---- | ---- |
 | **שפה / סביבת ריצה** | Rust (Zero Unsafe) | Go | Rust | JS (Node/V8) | JS (Node/V8) |
 | **שער בנייה לנגישות** | אימות AST בזמן בנייה | ללא | ללא | לינטר לאחר בנייה | לינטר לאחר בנייה |
 | **הקשחת אבטחה** | SHA-384 SRI והזרקת CSP | ידני | ידני | ידני | ידני |

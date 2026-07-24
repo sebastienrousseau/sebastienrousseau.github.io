@@ -218,7 +218,7 @@ Lộ trình sau tích hợp cả các khoảng trống đã giải quyết lẫn
 Ma trận sau so sánh `static-site-generator` (mục tiêu v1.0) với các engine xuất bản web hàng đầu năm 2026:
 
 | Năng lực | static-site-generator v1.0 | Hugo v0.155+ | Zola v0.19+ | Astro 5 | Eleventy 3 |
-| :---- | :---- | :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- | ---- | ---- |
 | **Ngôn ngữ / Runtime** | Rust (Zero Unsafe) | Go | Rust | JS (Node/V8) | JS (Node/V8) |
 | **Cổng build A11y** | Xác thực AST tại thời điểm build | Không có | Không có | Linter hậu build | Linter hậu build |
 | **Gia cố bảo mật** | SRI SHA-384 và tiêm CSP | Thủ công | Thủ công | Thủ công | Thủ công |

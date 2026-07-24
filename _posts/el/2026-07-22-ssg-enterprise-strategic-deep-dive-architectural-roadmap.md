@@ -218,7 +218,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 Η ακόλουθη μήτρα συγκρίνει το `static-site-generator` (στόχος v1.0) με τις κορυφαίες μηχανές δημοσίευσης web του 2026:
 
 | Δυνατότητα | static-site-generator v1.0 | Hugo v0.155+ | Zola v0.19+ | Astro 5 | Eleventy 3 |
-| :---- | :---- | :---- | :---- | :---- | :---- |
+| ---- | ---- | ---- | ---- | ---- | ---- |
 | **Γλώσσα / Περιβάλλον εκτέλεσης** | Rust (Zero Unsafe) | Go | Rust | JS (Node/V8) | JS (Node/V8) |
 | **Πύλη μεταγλώττισης A11y** | Επικύρωση AST σε χρόνο μεταγλώττισης | Καμία | Καμία | Post-build Linter | Post-build Linter |
 | **Θωράκιση ασφάλειας** | SHA-384 SRI & έγχυση CSP | Χειροκίνητη | Χειροκίνητη | Χειροκίνητη | Χειροκίνητη |
