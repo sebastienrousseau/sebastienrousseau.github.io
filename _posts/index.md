@@ -206,6 +206,18 @@ site_software: "Static Site Generator, Rust"
 <div class="newsroom-grid feat-latest-grid">
 
 <article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-07-26-from-evidence-to-truth-certified-blockchains-banking-trust/index.html" title="From Evidence to Truth: Why Certified Blockchains Will Define the Next Era of Banking Trust">
+<img alt="A constellation of interconnected points of light, representing certified blockchains as the substrate of verifiable banking trust." src="https://cloudcdn.pro/stocks/images/digital-constellation.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Blockchain · DLT Assurance · DORA</span>
+<h3><a href="/2026-07-26-from-evidence-to-truth-certified-blockchains-banking-trust/index.html">From Evidence to Truth: Why Certified Blockchains Will Define the Next Era of Banking Trust</a></h3>
+<p class="newsroom-meta"><time datetime="2026-07-26">July 26, 2026</time></p>
+<p class="newsroom-tldr"><span class="newsroom-tldr-label">TL;DR</span> Banks certify the entity, the cloud and their AI, but not the ledger that decides what is true. A 5-level Certified Blockchain Index scores ledger governance, consensus, cryptography and observability, closing the fiduciary gap and giving AI a deterministic audit spine.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-07-24-global-payments-outlook-operating-model-risk-revenue/index.html" title="The 2026 Global Payments Outlook: Operating Model, Risk, and Revenue in an Agentic, Invisible, Real-Time World">
 <img alt="An aerial view of London's financial district, representing the 2026 global payments operating model of agentic, invisible, real-time flows." src="https://cloudcdn.pro/stocks/images/drone-view-of-london.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
@@ -226,18 +238,6 @@ site_software: "Static Site Generator, Rust"
 <h3><a href="/2026-07-22-ssg-enterprise-strategic-deep-dive-architectural-roadmap/index.html">Static Site Generator (SSG): Enterprise-Grade Strategic Deep Dive and Architectural Roadmap</a></h3>
 <p class="newsroom-meta"><time datetime="2026-07-22">July 22, 2026</time></p>
 <p class="newsroom-tldr"><span class="newsroom-tldr-label">TL;DR</span> A Rust static-site generator built as secure-by-default infrastructure: compile-time SRI, CSP and a WCAG 2.2 AA build gate, an honest gap analysis of what v0.0.41 ships versus what the README promises, and a phased roadmap to an enterprise-grade 1.0.</p>
-</div>
-</article>
-
-<article class="newsroom-card">
-<a class="newsroom-card-media" href="/2026-07-08-global-corporate-standard-iso-20022-swift-2026/index.html" title="From Messages to Map: Building a Global Corporate Standard on ISO 20022 and Swift">
-<img alt="Interlinked glowing blocks forming a chain across a dark field — harmonised ISO 20022 messages resolving into a connected network, evoking the missing global map that turns structured payment data into a usable corporate standard" src="https://cloudcdn.pro/stocks/images/shubham-dhage-yKzECK-O9-k.webp" loading="lazy" decoding="async" width="600" height="600" />
-</a>
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">ISO 20022 · SWIFT · CBPR+</span>
-<h3><a href="/2026-07-08-global-corporate-standard-iso-20022-swift-2026/index.html">From Messages to Map: Building a Global Corporate Standard on ISO 20022 and Swift</a></h3>
-<p class="newsroom-meta"><time datetime="2026-07-08">July 8, 2026</time></p>
-<p class="newsroom-tldr"><span class="newsroom-tldr-label">TL;DR</span> ISO 20022 and Swift's CBPR+ gave cross-border payments a harmonised global language — but not a global map for how corporates use it. How to extend harmonisation from what a payment says to how a corporate uses it, on the rails that already exist.</p>
 </div>
 </article>
 
