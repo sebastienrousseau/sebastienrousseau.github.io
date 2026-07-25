@@ -161,6 +161,7 @@ TOPICS: dict[str, dict[str, object]] = {
             "regulatory frame around digital-asset-backed payment rails."
         ),
         "slugs": [
+            "2026-07-26-from-evidence-to-truth-certified-blockchains-banking-trust",
             "2026-05-28-digital-assets-tokenisation-stablecoins-bank-strategy-infrastructure-transition-2026",
             "2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf",
             "2018-02-15-the-making-of-the-express-transaction-credits-platform",
