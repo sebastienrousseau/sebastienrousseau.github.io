@@ -83,7 +83,7 @@ apple-touch-fullscreen: "yes"
 msapplication-navbutton-color: "0, 67, 165"
 
 # Twitter Card - The Twitter Card front matter (YAML).
-twitter_card: "summary"
+twitter_card: "summary_large_image"
 twitter_creator: "@wwdseb"
 twitter_description: "ফুলি হোমোমরফিক এনক্রিপশন কীভাবে ব্যাংকিং ও আর্থিক শিল্পে ডেটা নিরাপত্তায় বিপ্লব আনছে এবং কোয়ান্টাম কম্পিউটিং হুমকির বিরুদ্ধে গোপনীয়তা নিশ্চিত করছে তা অন্বেষণ করুন।"
 twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"

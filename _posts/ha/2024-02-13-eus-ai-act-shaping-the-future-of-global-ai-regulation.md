@@ -85,7 +85,7 @@ msapplication-navbutton-color: "0, 67, 165"
 
 # Twitter Card - The Twitter Card front matter (YAML).
 
-twitter_card: "summary"
+twitter_card: "summary_large_image"
 twitter_creator: "@wwdseb"
 twitter_description: "Bincika Dokar Leken Asiri ta Tarayyar Turai (EU AI Act), wani tsari na musamman wanda ke kafa ka'idojin duniya don bunkasa da amfani da AI ta hanyar da ta dace da da'a."
 twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"

@@ -85,7 +85,7 @@ msapplication-navbutton-color: "0, 67, 165"
 
 # Twitter Card - The Twitter Card front matter (YAML).
 
-twitter_card: "summary"
+twitter_card: "summary_large_image"
 twitter_creator: "@wwdseb"
 twitter_description: "AI কীভাবে বিজ্ঞাপনকে রূপান্তরিত করছে তা Amazon-এর Rufus ও Meta-র সর্বশেষ উন্নয়নের অন্তর্দৃষ্টি সহ অন্বেষণ করুন। ভোক্তা সম্পৃক্ততার উপর প্রভাব আবিষ্কার করুন।"
 twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"

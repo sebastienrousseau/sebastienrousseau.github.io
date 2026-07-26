@@ -78,7 +78,7 @@ msapplication-navbutton-color: "0, 67, 165"
 
 # Twitter Card - The Twitter Card front matter (YAML).
 
-twitter_card: "summary"
+twitter_card: "summary_large_image"
 twitter_creator: "@wwdseb"
 twitter_description: "In early 2018, the EXTC platform explored faster cross-border payments via Ethereum ERC-223 smart contracts — an early blueprint for decentralised finance."
 twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"

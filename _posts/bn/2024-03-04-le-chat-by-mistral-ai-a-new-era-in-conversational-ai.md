@@ -83,7 +83,7 @@ apple-touch-fullscreen: "yes"
 msapplication-navbutton-color: "0, 67, 165"
 
 # Twitter Card - The Twitter Card front matter (YAML).
-twitter_card: "summary"
+twitter_card: "summary_large_image"
 twitter_creator: "@wwdseb"
 twitter_description: "Mistral AI-এর নতুন বহুভাষিক সহকারীর সাথে পরিচিত হন। একটি উন্নত AI যা একটি কথোপকথনে একাধিক ভাষায় বুঝতে ও সাড়া দিতে পারে, রিয়েল-টাইমে।"
 twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"

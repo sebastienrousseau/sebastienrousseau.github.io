@@ -83,7 +83,7 @@ apple-touch-fullscreen: "yes"
 msapplication-navbutton-color: "0, 67, 165"
 
 # Twitter Card - The Twitter Card front matter (YAML).
-twitter_card: "summary"
+twitter_card: "summary_large_image"
 twitter_creator: "@wwdseb"
 twitter_description: "গুগল জেমিনি ১.৫ (Gemini 1.5)-এর রূপান্তরকারী সম্ভাবনা অন্বেষণ করুন, যা কার্যকারিতা বৃদ্ধি করে, কনটেক্সট প্রসারিত করে এবং ডেটা বিশ্লেষণে বিপ্লব ঘটায়।"
 twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"

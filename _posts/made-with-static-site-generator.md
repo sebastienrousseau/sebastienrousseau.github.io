@@ -86,7 +86,7 @@ msapplication_tile_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/log
 
 # Twitter Card - The Twitter Card front matter (YAML).
 
-twitter_card: "summary"
+twitter_card: "summary_large_image"
 twitter_creator: "@AlienStudioArt"
 twitter_description: "The Static Site Generator (SSG) is a lightning-fast tool for Search Engine Optimisation (SEO) and compliance to Accessibility Standards."
 twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"

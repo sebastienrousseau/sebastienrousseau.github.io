@@ -75,7 +75,7 @@ msapplication-navbutton-color: "0, 67, 165"
 
 # Twitter Card - The Twitter Card front matter (YAML).
 
-twitter_card: "summary"
+twitter_card: "summary_large_image"
 twitter_creator: "@wwdseb"
 twitter_description: "Ṣawari bí CRYSTALS-Kyber, algorithm cryptography tí ó lè dojú quantum, ṣe ń yí agbaye cryptography padà tí ó sì ń múra wa sílẹ̀ fún àkókò quantum."
 twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"

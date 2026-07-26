@@ -79,7 +79,7 @@ msapplication-navbutton-color: "0, 67, 165"
 
 # Twitter Card - The Twitter Card front matter (YAML).
 
-twitter_card: "summary"
+twitter_card: "summary_large_image"
 twitter_creator: "@wwdseb"
 twitter_description: "Looking for the best Spotify playlists for Jazz, Soul, Hip Hop, Rap, R&B, Neo Soul, House Music, Indie Rock, and Pop Music? Look no further! "
 twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"

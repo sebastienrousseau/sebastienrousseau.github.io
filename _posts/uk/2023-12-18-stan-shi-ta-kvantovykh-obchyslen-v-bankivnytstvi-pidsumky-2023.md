@@ -73,7 +73,7 @@ apple-touch-fullscreen: "yes"
 msapplication-navbutton-color: "0, 67, 165"
 
 # Twitter Card - The Twitter Card front matter (YAML).
-twitter_card: "summary"
+twitter_card: "summary_large_image"
 twitter_creator: "@wwdseb"
 twitter_description: "Дослідження технологічного ландшафту 2023 року: AI та квантові обчислення революціонізують банківську сферу, зростання моделей з відкритим кодом та розвиток регулювання й управління"
 twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"

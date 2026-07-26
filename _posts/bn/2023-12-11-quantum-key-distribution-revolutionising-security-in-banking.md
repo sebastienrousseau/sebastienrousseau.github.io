@@ -75,7 +75,7 @@ msapplication-navbutton-color: "0, 67, 165"
 
 # Twitter Card - The Twitter Card front matter (YAML).
 
-twitter_card: "summary"
+twitter_card: "summary_large_image"
 twitter_creator: "@wwdseb"
 twitter_description: "কোয়ান্টাম কম্পিউটার প্রচলিত এনক্রিপশন পদ্ধতিকে হুমকির মুখে ফেলায়, Quantum Key Distribution (QKD) অতুলনীয় নিরাপত্তা প্রদান করে একটি যুগান্তকারী সমাধান হিসেবে আবির্ভূত হচ্ছে।"
 twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"

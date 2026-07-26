@@ -83,7 +83,7 @@ apple-touch-fullscreen: "yes"
 msapplication-navbutton-color: "0, 67, 165"
 
 # Twitter Card - The Twitter Card front matter (YAML).
-twitter_card: "summary"
+twitter_card: "summary_large_image"
 twitter_creator: "@wwdseb"
 twitter_description: "Bincika fasahar kwafin murya ta OpenVoice mai ban mamaki, wacce ke ba da sauri, daidaito, da sarrafawa maras misaltuwa a cikin samar da magana ta roba."
 twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"

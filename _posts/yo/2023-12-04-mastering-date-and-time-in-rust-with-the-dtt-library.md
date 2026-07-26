@@ -75,7 +75,7 @@ msapplication-navbutton-color: "0, 67, 165"
 
 # Twitter Card - The Twitter Card front matter (YAML).
 
-twitter_card: "summary"
+twitter_card: "summary_large_image"
 twitter_creator: "@wwdseb"
 twitter_description: "DateTime (DTT) jẹ́ ìwé-iṣẹ́ Rust tó péye fún ìtúpalẹ̀, ìfọwọ́sí, ìṣàkóso, àti ìpèsè ọjọ́ àti àkókò. Ó ń pèsè ìpele pínpín gíga àti oríṣiríṣi iṣẹ́."
 twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"

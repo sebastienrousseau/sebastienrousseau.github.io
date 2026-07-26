@@ -75,7 +75,7 @@ msapplication-navbutton-color: "0, 67, 165"
 
 # Twitter Card - The Twitter Card front matter (YAML).
 
-twitter_card: "summary"
+twitter_card: "summary_large_image"
 twitter_creator: "@wwdseb"
 twitter_description: "Bitcoin: একটি পিয়ার-টু-পিয়ার ইলেকট্রনিক ক্যাশ সিস্টেম (P2P ECS) যা মানুষের অনলাইন লেনদেনের পদ্ধতিকে বৈপ্লবিকভাবে পরিবর্তন করার সম্ভাবনা রাখে।"
 twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"

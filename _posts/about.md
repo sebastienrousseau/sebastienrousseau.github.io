@@ -31,7 +31,7 @@ logo_alt: "Logo for Sebastien Rousseau"
 logo_height: "44"
 logo_width: "44"
 logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
-name: "Enterprise AI Financial Technology & Leadership"
+name: "Sebastien Rousseau"
 menu: "active"
 measurementID: "G-169G4ET5HQ"
 permalink: "https://sebastienrousseau.com/about"
@@ -43,7 +43,7 @@ short_name: "sebastienrousseau"
 subtitle: "Shaping the Future of Banking and Financial Services through Strategic Integration of Artificial Intelligence, Post-Quantum Cryptography & Blockchain Technology"
 tags: "payments, digital finance, AI, post-quantum cryptography, blockchain, strategic leadership, operational leadership, cross-platform product design, engineering, solution architecture, ISO 20022, Rust, open source"
 theme-color: "0, 67, 165"
-title: "Enterprise AI Financial Technology & Leadership"
+title: "About Sebastien Rousseau: AI, Payments & Post-Quantum Cryptography"
 url: "https://sebastienrousseau.com/about"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
@@ -70,7 +70,7 @@ apple_touch_icon_sizes: "192x192"
 apple-mobile-web-app-capable: "yes"
 apple-mobile-web-app-status-bar-inset: "black"
 apple-mobile-web-app-status-bar-style: "black-translucent"
-apple-mobile-web-app-title: "Enterprise AI Financial Technology & Leadership"
+apple-mobile-web-app-title: "About Sebastien Rousseau"
 apple-touch-fullscreen: "yes"
 
 # MS Application - The MS Application front matter (YAML).
@@ -79,13 +79,13 @@ msapplication-navbutton-color: "0, 67, 165"
 
 # Twitter Card - The Twitter Card front matter (YAML).
 
-twitter_card: "summary"
+twitter_card: "summary_large_image"
 twitter_creator: "@wwdseb"
 twitter_description: "Shaping the Future of Banking and Financial Services through Strategic Integration of Artificial Intelligence, Post-Quantum Cryptography & Blockchain Technology"
 twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 twitter_image_alt: "Logo of Sebastien Rousseau"
 twitter_site: "@wwdseb"
-twitter_title: "Enterprise AI Financial Technology & Leadership"
+twitter_title: "About Sebastien Rousseau: AI, Payments & Post-Quantum Cryptography"
 twitter_url: "https://sebastienrousseau.com/about"
 
 # Humans.txt - The Humans.txt front matter (YAML).

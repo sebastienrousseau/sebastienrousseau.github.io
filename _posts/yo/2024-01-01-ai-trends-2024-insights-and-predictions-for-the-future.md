@@ -85,7 +85,7 @@ msapplication-navbutton-color: "0, 67, 165"
 
 # Twitter Card - The Twitter Card front matter (YAML).
 
-twitter_card: "summary"
+twitter_card: "summary_large_image"
 twitter_creator: "@wwdseb"
 twitter_description: "Ṣàwárí àwọn aṣa AI aláyípadà ti ọdún 2024, láti orí AI ìpilẹ̀ṣẹ̀ sí AI nínú títa, àti bí wọ́n ṣe máa tún ọjọ́ iwájú wa ṣe."
 twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"

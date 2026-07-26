@@ -83,7 +83,7 @@ apple-touch-fullscreen: "yes"
 msapplication-navbutton-color: "0, 67, 165"
 
 # Twitter Card - The Twitter Card front matter (YAML).
-twitter_card: "summary"
+twitter_card: "summary_large_image"
 twitter_creator: "@wwdseb"
 twitter_description: "LWE সমাধানের জন্য ইলেই চেনের কোয়ান্টাম অ্যালগরিদমে একটি বাগ পাওয়া গেছে, যা ল্যাটিস-ভিত্তিক ক্রিপ্টোগ্রাফিকে সাময়িকভাবে সুরক্ষিত করেছে এবং চলমান গবেষণার প্রয়োজনীয়তা তুলে ধরেছে।"
 twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"

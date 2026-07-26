@@ -75,7 +75,7 @@ msapplication-navbutton-color: "0, 67, 165"
 
 # Twitter Card - The Twitter Card front matter (YAML).
 
-twitter_card: "summary"
+twitter_card: "summary_large_image"
 twitter_creator: "@wwdseb"
 twitter_description: "DateTime (DTT) babban ɗakin karatu ne na Rust don tattaro, tabbatarwa, sarrafa, da kuma tsara kwanaki da lokuta. Yana ba da babban matakin daidaito da kuma ayyuka masu faɗi."
 twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
