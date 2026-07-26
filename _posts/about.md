@@ -3,10 +3,10 @@
 # Front Matter (YAML)
 
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
-banner_alt: ""
+banner_alt: "Aerial drone view of London — the City skyline where Sebastien Rousseau is based"
 banner_height: ""
 banner_width: ""
-banner: ""
+banner: "https://cloudcdn.pro/stocks/images/drone-view-of-london.webp"
 cdn: "https://cloudcdn.pro/clients"
 changefreq: "weekly"
 charset: "UTF-8"
