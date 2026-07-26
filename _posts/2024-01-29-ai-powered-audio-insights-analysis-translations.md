@@ -88,7 +88,7 @@ msapplication-navbutton-color: "0, 67, 165"
 
 # Twitter Card - The Twitter Card front matter (YAML).
 
-twitter_card: "summary"
+twitter_card: "summary_large_image"
 twitter_creator: "@wwdseb"
 twitter_description: "Audio Analyser uses Azure Cognitive Services speech-to-text neural models, Text Analytics NLP, and CherryPy to convert audio recordings into searchable transcripts with sentiment scores, keyword extraction, and multilingual translations."
 twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"

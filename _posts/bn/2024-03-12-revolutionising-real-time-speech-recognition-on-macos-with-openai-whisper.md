@@ -83,7 +83,7 @@ apple-touch-fullscreen: "yes"
 msapplication-navbutton-color: "0, 67, 165"
 
 # Twitter Card - The Twitter Card front matter (YAML).
-twitter_card: "summary"
+twitter_card: "summary_large_image"
 twitter_creator: "@wwdseb"
 twitter_description: "জানুন কীভাবে OpenAI Whisper এবং Metal Performance Shaders macOS-এ রিয়েল-টাইম স্পিচ রিকগনিশন রূপান্তরিত করছে, অতুলনীয় গতি ও নির্ভুলতা প্রদান করে।"
 twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"

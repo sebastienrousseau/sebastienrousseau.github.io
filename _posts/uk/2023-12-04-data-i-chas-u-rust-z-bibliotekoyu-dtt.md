@@ -75,7 +75,7 @@ msapplication-navbutton-color: "0, 67, 165"
 
 # Twitter Card - The Twitter Card front matter (YAML).
 
-twitter_card: "summary"
+twitter_card: "summary_large_image"
 twitter_creator: "@wwdseb"
 twitter_description: "DateTime (DTT) — це комплексна бібліотека Rust для розбору, валідації, маніпулювання та форматування дат і часу. Вона пропонує високий рівень точності та широкий спектр функціональних можливостей."
 twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"

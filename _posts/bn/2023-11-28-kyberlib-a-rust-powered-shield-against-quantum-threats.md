@@ -75,7 +75,7 @@ msapplication-navbutton-color: "0, 67, 165"
 
 # Twitter Card - The Twitter Card front matter (YAML).
 
-twitter_card: "summary"
+twitter_card: "summary_large_image"
 twitter_creator: "@wwdseb"
 twitter_description: "CRYSTALS-Kyber অ্যালগরিদমের একটি শক্তিশালী এবং কোয়ান্টাম-নিরাপদ ক্রিপ্টোগ্রাফি বাস্তবায়ন, আপনার ডেটাকে কোয়ান্টাম হুমকি এবং ক্রিপ্টোঅ্যানালিটিক আক্রমণ থেকে সুরক্ষিত রাখতে।"
 twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"

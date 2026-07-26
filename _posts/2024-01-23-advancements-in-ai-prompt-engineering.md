@@ -88,7 +88,7 @@ msapplication-navbutton-color: "0, 67, 165"
 
 # Twitter Card - The Twitter Card front matter (YAML).
 
-twitter_card: "summary"
+twitter_card: "summary_large_image"
 twitter_creator: "@wwdseb"
 twitter_description: "Prompt engineering controls LLM behaviour at inference time. This article covers zero-shot and few-shot prompting, chain-of-thought reasoning, self-consistency sampling, ReAct tool-use architecture, indirect prompt injection risks, and applied patterns from financial services deployments."
 twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"

@@ -83,7 +83,7 @@ apple-touch-fullscreen: "yes"
 msapplication-navbutton-color: "0, 67, 165"
 
 # Twitter Card - The Twitter Card front matter (YAML).
-twitter_card: "summary"
+twitter_card: "summary_large_image"
 twitter_creator: "@wwdseb"
 twitter_description: "নতুন কোয়ান্টাম অ্যালগরিদম গুরুত্বপূর্ণ ক্রিপ্টো সমস্যার সমাধান করে, কোয়ান্টাম-নিরাপদ সুরক্ষার বিষয়ে গবেষণার তাগিদ দেয়।"
 twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
