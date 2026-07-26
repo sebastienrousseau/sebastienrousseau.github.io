@@ -166,6 +166,34 @@ def test_fix_social_image_no_op_when_no_og_image():
     assert out == html  # untouched
 
 
+def test_fix_social_image_banner_src_rewrites_og_and_promotes():
+    """page/about layouts emit <meta name=banner-src>; postbuild rebuilds
+    og:image/twitter:image from it, promotes, and strips the private marker."""
+    html = (
+        '<meta name="banner-src" content="https://cloudcdn.pro/stocks/images/drone-view-of-london.webp" />\n'
+        '<meta property="og:image" content="https://x/x-black.svg">'
+        '<meta name="twitter:image" content="https://x/x-black.svg">'
+        '<meta name="twitter:card" content="summary">'
+    )
+    out = pb.fix_social_image(html)
+    assert 'content="summary_large_image"' in out
+    assert "drone-view-of-london.webp" in out
+    assert "x-black.svg" not in out  # og:image + twitter:image rewritten
+    assert "banner-src" not in out  # marker stripped
+
+
+def test_fix_social_image_banner_src_empty_strips_and_keeps_summary():
+    """Empty banner-src (page without a banner) is stripped; card stays summary."""
+    html = (
+        '<meta name="banner-src" content="" />\n'
+        '<meta property="og:image" content="https://x/x-black.svg">'
+        '<meta name="twitter:card" content="summary">'
+    )
+    out = pb.fix_social_image(html)
+    assert "banner-src" not in out  # marker stripped
+    assert 'content="summary"' in out  # not promoted (no raster banner)
+
+
 def test_write_robots_emits_sitemap_lines(tmp_path):
     from postbuild_lib.output import write_robots
 

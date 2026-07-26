@@ -307,17 +307,23 @@ def inject_word_count(html: str) -> str:
 # (webp/png/jpg), never for a logo/portrait/divider (a large card needs a large
 # image, and X cannot render an SVG in one).
 _og_image_re = re.compile(r'<meta\s+property="og:image"\s+content="([^"]+)"')
+_banner_src_re = re.compile(
+    r'[ \t]*<meta name="banner-src" content="([^"]*)"\s*/?>\n?'
+)
 _SMALL_OG_MARKERS = ("divider", "/logos/", "sebastienrousseau.webp")
+
+
+def _is_raster_banner(url: str) -> bool:
+    """A genuine large raster image — not an SVG, logo, portrait, or divider."""
+    u = url.lower()
+    return u.endswith((".webp", ".png", ".jpg", ".jpeg")) and not any(
+        marker in u for marker in _SMALL_OG_MARKERS
+    )
 
 
 def _promote_card_for_raster_og(html: str) -> str:
     om = _og_image_re.search(html)
-    if not om:
-        return html
-    img = om.group(1).lower()
-    if not img.endswith((".webp", ".png", ".jpg", ".jpeg")):
-        return html
-    if any(marker in img for marker in _SMALL_OG_MARKERS):
+    if not om or not _is_raster_banner(om.group(1)):
         return html
     return re.sub(
         r'(<meta\s+name="twitter:card"\s+content=)"summary"',
@@ -326,10 +332,37 @@ def _promote_card_for_raster_og(html: str) -> str:
     )
 
 
+def _fix_nonblogposting_social(html: str) -> str:
+    # The page/about layouts emit <meta name="banner-src" content="{{banner}}">
+    # so we can rebuild og:image/twitter:image from the real banner — ssg
+    # otherwise scrapes the first body <img> (a share-button icon) as og:image.
+    # Strip the private marker either way; promote only for a genuine raster
+    # banner (a large card needs a large image).
+    bm = _banner_src_re.search(html)
+    if not bm:
+        return _promote_card_for_raster_og(html)
+    html = html.replace(bm.group(0), "")
+    banner = bm.group(1).strip()
+    if not _is_raster_banner(banner):
+        return _promote_card_for_raster_og(html)
+
+    def sub_attr(pattern: str, value: str, text: str) -> str:
+        return re.sub(pattern, lambda m: m.group(1) + f'"{value}"', text)
+
+    html = sub_attr(r'(<meta\s+property="og:image"\s+content=)"[^"]*"', banner, html)
+    html = sub_attr(r'(<meta\s+name="twitter:image"\s+content=)"[^"]*"', banner, html)
+    html = sub_attr(
+        r'(<meta\s+name="twitter:card"\s+content=)"summary"',
+        "summary_large_image",
+        html,
+    )
+    return html
+
+
 def fix_social_image(html: str) -> str:
     m = _blogposting_image_re.search(html)
     if not m:
-        return _promote_card_for_raster_og(html)
+        return _fix_nonblogposting_social(html)
     banner = m.group(1)
     width = m.group(2) or ""
     height = m.group(3) or ""
