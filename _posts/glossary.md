@@ -3,10 +3,10 @@
 # Front Matter (YAML)
 
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
-banner_alt: ""
+banner_alt: "Quantum-computing circuit board glowing in blue light"
 banner_height: ""
 banner_width: ""
-banner: ""
+banner: "https://cloudcdn.pro/stocks/images/digital-nodes.webp"
 cdn: "https://cloudcdn.pro/clients"
 changefreq: "monthly"
 charset: "UTF-8"

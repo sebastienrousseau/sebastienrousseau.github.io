@@ -3,10 +3,10 @@
 # Front Matter (YAML)
 
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
-banner_alt: ""
+banner_alt: "A writing desk with a closed laptop, notepad, pen and a glass of water"
 banner_height: ""
 banner_width: ""
-banner: ""
+banner: "https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp"
 cdn: "https://cloudcdn.pro/clients"
 changefreq: "weekly"
 charset: "UTF-8"

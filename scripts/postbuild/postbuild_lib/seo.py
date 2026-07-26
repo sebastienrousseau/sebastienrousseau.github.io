@@ -300,10 +300,36 @@ def inject_word_count(html: str) -> str:
     )
 
 
+# Non-BlogPosting pages (About, hub/landing pages such as /articles, /papers,
+# /research) get their twitter:card from the Static Site Generator, which emits
+# `summary` even when a real banner is set — losing the large preview on share.
+# Promote to summary_large_image when the og:image is a genuine raster banner
+# (webp/png/jpg), never for a logo/portrait/divider (a large card needs a large
+# image, and X cannot render an SVG in one).
+_og_image_re = re.compile(r'<meta\s+property="og:image"\s+content="([^"]+)"')
+_SMALL_OG_MARKERS = ("divider", "/logos/", "sebastienrousseau.webp")
+
+
+def _promote_card_for_raster_og(html: str) -> str:
+    om = _og_image_re.search(html)
+    if not om:
+        return html
+    img = om.group(1).lower()
+    if not img.endswith((".webp", ".png", ".jpg", ".jpeg")):
+        return html
+    if any(marker in img for marker in _SMALL_OG_MARKERS):
+        return html
+    return re.sub(
+        r'(<meta\s+name="twitter:card"\s+content=)"summary"',
+        lambda m: m.group(1) + '"summary_large_image"',
+        html,
+    )
+
+
 def fix_social_image(html: str) -> str:
     m = _blogposting_image_re.search(html)
     if not m:
-        return html
+        return _promote_card_for_raster_og(html)
     banner = m.group(1)
     width = m.group(2) or ""
     height = m.group(3) or ""

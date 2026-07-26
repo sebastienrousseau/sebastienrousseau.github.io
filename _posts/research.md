@@ -3,10 +3,10 @@
 # Front Matter (YAML)
 
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
-banner_alt: ""
+banner_alt: "Network nodes connected across a deep-blue digital space"
 banner_height: ""
 banner_width: ""
-banner: ""
+banner: "https://cloudcdn.pro/stocks/images/digital-constellation.webp"
 cdn: "https://cloudcdn.pro/clients"
 changefreq: "weekly"
 charset: "UTF-8"

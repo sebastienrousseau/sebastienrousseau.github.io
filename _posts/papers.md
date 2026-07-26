@@ -3,10 +3,10 @@
 # Front Matter (YAML)
 
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
-banner_alt: ""
+banner_alt: "Abstract neural-network visualisation in blue and purple tones"
 banner_height: ""
 banner_width: ""
-banner: ""
+banner: "https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp"
 cdn: "https://cloudcdn.pro/clients"
 changefreq: "weekly"
 charset: "UTF-8"

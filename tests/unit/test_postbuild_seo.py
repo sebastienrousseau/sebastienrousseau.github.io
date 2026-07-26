@@ -128,6 +128,44 @@ def test_fix_social_image_no_op_when_banner_is_placeholder():
     assert out == html  # untouched
 
 
+def test_fix_social_image_promotes_non_blogposting_raster_banner():
+    """Non-BlogPosting pages (About, hubs) with a real raster og:image
+    banner get lifted to summary_large_image even without a BlogPosting graph."""
+    html = (
+        '<meta property="og:image" content="https://cloudcdn.pro/stocks/images/drone-view-of-london.webp">'
+        '<meta name="twitter:card" content="summary">'
+    )
+    out = pb.fix_social_image(html)
+    assert 'content="summary_large_image"' in out
+
+
+def test_fix_social_image_keeps_summary_for_svg_logo_og():
+    """A logo/SVG og:image cannot fill a large card — stays summary."""
+    html = (
+        '<meta property="og:image" content="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg">'
+        '<meta name="twitter:card" content="summary">'
+    )
+    out = pb.fix_social_image(html)
+    assert out == html  # untouched
+
+
+def test_fix_social_image_keeps_summary_for_small_portrait_og():
+    """The 162x162 portrait raster is too small for a large card — stays summary."""
+    html = (
+        '<meta property="og:image" content="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp">'
+        '<meta name="twitter:card" content="summary">'
+    )
+    out = pb.fix_social_image(html)
+    assert out == html  # untouched
+
+
+def test_fix_social_image_no_op_when_no_og_image():
+    """No og:image and no BlogPosting graph — nothing to promote."""
+    html = '<meta name="twitter:card" content="summary">'
+    out = pb.fix_social_image(html)
+    assert out == html  # untouched
+
+
 def test_write_robots_emits_sitemap_lines(tmp_path):
     from postbuild_lib.output import write_robots
 
