@@ -1,100 +1,100 @@
 ---
-title: "Un algoritmo cuántico desafía a la criptografía sobre retículos"
-subtitle: "El próximo algoritmo cuántico en tiempo polinómico contra la criptografía sobre retículos"
-description: "Un nuevo algoritmo cuántico en tiempo polinómico de Yilei Chen apunta a la criptografía sobre retículos. Implicaciones para los estándares postcuánticos, incluido CRYSTALS-Kyber."
+title: "Kvantalgoritm utmanar gitterbaserad kryptografi"
+subtitle: "Nästa kvantalgoritm i polynomisk tid mot gitterbaserad kryptografi"
+description: "En ny kvantalgoritm i polynomisk tid från Yilei Chen riktar sig mot gitterbaserad kryptografi. Konsekvenser för postkvantstandarder, inklusive CRYSTALS-Kyber."
 date: "April 15, 2024"
 language: "sv-SE"
 locale: "sv_SE"
 banner: "https://cloudcdn.pro/stocks/images/digital-constellation.webp"
-banner_alt: "Banner que representa nodos de red en un espacio digital azul"
-keywords: "computación cuántica, algoritmo cuántico, criptografía sobre retículos, LWE, cifrado, criptografía postcuántica, ciberseguridad, Yilei Chen, investigación criptográfica, amenazas de seguridad"
+banner_alt: "Banner med nätverksnoder i ett digitalt blått rum"
+keywords: "kvantdatorer, kvantalgoritm, gitterbaserad kryptografi, LWE, kryptering, postkvantkryptografi, cybersäkerhet, Yilei Chen, kryptografiforskning, säkerhetshot"
 ---
 
-## Resumen ejecutivo
+## Sammanfattning
 
-Este artículo explora los trabajos de [**Yilei Chen ⧉**][00], quien ha desarrollado un `algoritmo cuántico en tiempo polinómico` susceptible de impactar significativamente la dificultad del problema matemático **Learning With Errors (LWE)**, un desafío fundamental de la criptografía sobre retículos.
+Den här artikeln behandlar arbetet av [**Yilei Chen ⧉**][00], som har utvecklat en `polynomial-time quantum algorithm` som märkbart kan påverka svårighetsgraden hos det matematiska problemet **Learning With Errors (LWE)**, en grundläggande utmaning inom gitterbaserad kryptografi.
 
-Los retículos son subgrupos discretos del espacio euclidiano de n dimensiones que desempeñan un papel crucial en los esquemas criptográficos modernos. El problema LWE consiste en encontrar un vector secreto a partir de un conjunto de ecuaciones lineales aproximadas, y constituye una piedra angular de numerosos protocolos criptográficos postcuánticos.
+Gitter är diskreta delgrupper av det n-dimensionella euklidiska rummet och spelar en avgörande roll i moderna kryptografiska system. LWE-problemet går ut på att hitta en hemlig vektor utifrån en uppsättning approximativa linjära ekvationer och utgör en hörnsten i många postkvantkryptografiska protokoll.
 
-## El algoritmo cuántico en tiempo polinómico de Chen
+## Chens kvantalgoritm i polynomisk tid
 
-El algoritmo de Chen ofrece una solución al `decisional shortest vector problem (GapSVP)` y al `shortest independent vector problem (SIVP)` para retículos de cualquier dimensión. Lo logra con una complejidad en tiempo polinómico, una mejora significativa respecto a las soluciones anteriores.
+Chens algoritm löser det beslutsbaserade `shortest vector problem (GapSVP)` och `shortest independent vector problem (SIVP)` för gitter av godtycklig dimension. Detta uppnås med polynomisk tidskomplexitet, en betydande förbättring jämfört med tidigare lösningar.
 
-Las innovaciones clave de su trabajo incluyen:
+De centrala nyheterna i hans arbete omfattar:
 
-* **Funciones gaussianas con varianzas complejas:** Chen introduce el uso de funciones gaussianas con varianzas complejas en el diseño del algoritmo cuántico. Este enfoque aprovecha las propiedades de las distribuciones gaussianas complejas para manipular más eficientemente los estados cuánticos, permitiendo una solución más eficiente al problema LWE.
+* **Gaussfunktioner med komplexa varianser:** Chen inför användningen av gaussfunktioner med komplexa varianser i utformningen av kvantalgoritmen. Metoden utnyttjar egenskaperna hos komplexa gaussfördelningar för att manipulera kvanttillstånd mer effektivt, vilket möjliggör en effektivare lösning på LWE-problemet.
 
-* **Transformada de Fourier cuántica con ventana:** El algoritmo aplica una transformada de Fourier cuántica con ventana.
+* **Fönstrad kvant-Fouriertransform:** Algoritmen tillämpar en fönstrad kvant-Fouriertransform.
 
-## Introducción a los problemas sobre retículos y a su importancia en criptografía
+## Introduktion till gitterproblem och deras betydelse i kryptografi
 
-Los problemas sobre retículos implican el estudio de estructuras matemáticas llamadas retículos, que son subgrupos discretos del espacio euclidiano de n dimensiones. Estos problemas han ganado una atención significativa en criptografía debido a su presunta resistencia a los ataques cuánticos.
+Gitterproblem rör studiet av matematiska strukturer som kallas gitter, vilka är diskreta delgrupper av det n-dimensionella euklidiska rummet. Dessa problem har fått betydande uppmärksamhet inom kryptografi tack vare sin förmodade motståndskraft mot kvantattacker.
 
-El problema de retículo más notable es el [**problema Learning With Errors (LWE) ⧉**][01], introducido por Oded Regev. LWE es un problema computacional que consiste en encontrar un vector secreto a partir de un conjunto de ecuaciones lineales aproximadas.
+Det mest framträdande gitterproblemet är [**Learning With Errors-problemet (LWE) ⧉**][01], som introducerades av Oded Regev. LWE är ett beräkningsproblem som går ut på att hitta en hemlig vektor utifrån en uppsättning approximativa linjära ekvationer.
 
-Numerosos esquemas criptográficos modernos, como el criptosistema de Regev y el intercambio de claves Frodo, basan su seguridad en la dificultad de resolver el problema LWE.
+Många moderna kryptografiska system, som Regevs kryptosystem och nyckelutbytet Frodo, grundar sin säkerhet på svårigheten att lösa LWE-problemet.
 
-## Algoritmos clásicos para los problemas sobre retículos y sus límites
+## Klassiska algoritmer för gitterproblem och deras begränsningar
 
-Los algoritmos clásicos para resolver los problemas sobre retículos, como el algoritmo **Lenstra-Lenstra-Lovász (LLL)** y sus variantes, han sido extensamente estudiados en criptografía. Sin embargo, estos algoritmos afrontan desafíos significativos en términos de complejidad computacional, en particular a medida que las dimensiones del retículo aumentan.
+Klassiska algoritmer för att lösa gitterproblem, som **Lenstra-Lenstra-Lovász-algoritmen (LLL)** och dess varianter, har studerats ingående inom kryptografin. Dessa algoritmer ställs dock inför betydande utmaningar när det gäller beräkningskomplexitet, särskilt när gittrets dimensioner ökar.
 
-Los algoritmos clásicos bien conocidos para resolver el problema LWE dependen exponencialmente del número de variables, lo que los hace impracticables para los retículos de alta dimensión. Esta barrera de complejidad es un factor clave de la seguridad de los esquemas criptográficos basados en LWE.
+Välkända klassiska algoritmer för att lösa LWE-problemet beror exponentiellt på antalet variabler, vilket gör dem opraktiska för högdimensionella gitter. Denna komplexitetsbarriär har varit en avgörande faktor för säkerheten hos LWE-baserade kryptografiska system.
 
-## Intentos anteriores de algoritmos cuánticos para LWE
+## Tidigare försök att utveckla kvantalgoritmer för LWE
 
-Antes del trabajo de Chen, varios investigadores habían explorado el potencial de los algoritmos cuánticos para resolver el problema LWE.
+Före Chens arbete hade flera forskare undersökt kvantalgoritmers potential för att lösa LWE-problemet.
 
-Oded Regev desarrolló con éxito una reducción cuántica de `GapSVP` a `LWE`. Sin embargo, conviene señalar que esta reducción requiere un oráculo cuántico para resolver GapSVP, cuya existencia queda por establecer.
+Oded Regev har med framgång utvecklat en kvantreduktion från `GapSVP` till `LWE`. Det är dock värt att notera att denna reduktion kräver ett kvantorakel för att lösa GapSVP, vars existens ännu inte har fastställts.
 
-Kuperberg creó [**un algoritmo cuántico para resolver LWE con un factor de aproximación subexponencial ⧉**][02]. Sin embargo, estos enfoques algorítmicos se apoyaban en hipótesis no verificadas o presentaban una velocidad computacional más lenta. Por contraste, el algoritmo de Chen ofrece una solución en tiempo polinómico sin necesidad de un oráculo cuántico.
+Kuperberg skapade [**en kvantalgoritm för att lösa LWE med en subexponentiell approximationsfaktor ⧉**][02]. Dessa algoritmiska ansatser byggde dock antingen på overifierade antaganden eller uppvisade en långsammare beräkningshastighet. Chens algoritm erbjuder däremot en lösning i polynomisk tid utan behov av ett kvantorakel.
 
-## El algoritmo cuántico en tiempo polinómico de Chen para LWE
+## Chens kvantalgoritm i polynomisk tid för LWE
 
-El algoritmo cuántico de Yilei Chen para resolver el problema LWE en tiempo polinómico representa un avance significativo en el campo. El algoritmo emplea dos técnicas nuevas:
+Yilei Chens kvantalgoritm för att lösa LWE-problemet i polynomisk tid utgör ett betydande genombrott på området. Algoritmen använder två nya tekniker:
 
-1. **Funciones gaussianas con varianzas complejas**: Chen introduce el uso de funciones gaussianas con varianzas complejas en el diseño del algoritmo cuántico. Este enfoque aprovecha las propiedades de las distribuciones gaussianas complejas para manipular más eficientemente los estados cuánticos, permitiendo una solución más eficiente al problema LWE.
+1. **Gaussfunktioner med komplexa varianser**: Chen inför användningen av gaussfunktioner med komplexa varianser i utformningen av kvantalgoritmen. Metoden utnyttjar egenskaperna hos komplexa gaussfördelningar för att manipulera kvanttillstånd mer effektivt, vilket möjliggör en effektivare lösning på LWE-problemet.
 
-2. **Transformada de Fourier cuántica con ventana**: El algoritmo aplica una transformada de Fourier cuántica con ventana, que permite el análisis simultáneo del problema en los dominios temporal y frecuencial. Esta técnica permite al algoritmo tratar eficientemente la estructura de alta dimensión de los retículos y extraer la información pertinente para resolver LWE.
+2. **Fönstrad kvant-Fouriertransform**: Algoritmen tillämpar en fönstrad kvant-Fouriertransform, vilken gör det möjligt att analysera problemet samtidigt i både tids- och frekvensdomänen. Tekniken gör att algoritmen effektivt kan bearbeta gittrens högdimensionella struktur och extrahera relevant information för att lösa LWE.
 
-El algoritmo de Chen combina estas técnicas para resolver `LWE`, `GapSVP` y `SIVP` en tiempo polinómico para todas las dimensiones de retículo. Esto es una mejora importante respecto a los algoritmos clásicos y cuánticos anteriores.
+Chens algoritm kombinerar teknikerna för att lösa `LWE`, `GapSVP` och `SIVP` i polynomisk tid för alla gitterdimensioner. Detta är en väsentlig förbättring jämfört med tidigare klassiska och kvantbaserade algoritmer.
 
-## Implicaciones, limitaciones y ejes de investigación futuros
+## Konsekvenser, begränsningar och framtida forskningsinriktningar
 
-El algoritmo cuántico de Chen tiene implicaciones para LWE, cuestionando la noción de que los ataques cuánticos no pueden romper LWE y los problemas similares sobre retículos. Esta hipótesis forma la base de numerosos esquemas criptográficos emergentes. Sin embargo, comprender los límites del algoritmo y su impacto potencial sobre los sistemas de cifrado existentes basados en LWE es esencial.
+Chens kvantalgoritm får konsekvenser för LWE och ifrågasätter uppfattningen att kvantattacker inte kan knäcka LWE och liknande gitterbaserade problem. Detta antagande ligger till grund för många framväxande kryptografiska system. Att förstå algoritmens begränsningar och dess potentiella inverkan på befintliga LWE-baserade krypteringssystem är dock avgörande.
 
-Una cuestión clave con el algoritmo de Chen es que funciona de manera óptima cuando el tamaño del problema supera significativamente el margen de error permitido. En los esquemas criptográficos prácticos basados en LWE, el ratio módulo-ruido se mantiene típicamente bajo por razones de seguridad. Inversamente, el algoritmo de Chen requiere un ratio más alto para alcanzar su tiempo de ejecución polinómico.
+En central fråga med Chens algoritm är att den fungerar optimalt när problemstorleken avsevärt överstiger den tillåtna felmarginalen. I praktiska LWE-baserade kryptografiska system hålls kvoten mellan modulus och brus vanligtvis låg av säkerhetsskäl. Chens algoritm kräver omvänt en högre kvot för att uppnå sin polynomiska körtid.
 
-Este límite sugiere que los esquemas de cifrado basados en LWE existentes con ratios módulo-ruido más pequeños podrían permanecer seguros frente al algoritmo de Chen tal como se presenta actualmente. Por consiguiente, si bien el algoritmo marca un avance teórico significativo, no representa una amenaza inmediata para la seguridad de todos los sistemas criptográficos basados en LWE.
+Denna begränsning tyder på att befintliga LWE-baserade krypteringssystem med lägre kvoter mellan modulus och brus kan förbli säkra mot Chens algoritm i dess nuvarande form. Även om algoritmen innebär ett betydande teoretiskt genombrott utgör den därmed inte något omedelbart hot mot säkerheten hos alla LWE-baserade kryptografiska system.
 
-Su trabajo subraya la necesidad de proseguir la investigación sobre el desarrollo de primitivas criptográficas resistentes a lo cuántico.
+Hans arbete understryker behovet av ytterligare forskning kring utvecklingen av kvantresistenta kryptografiska primitiver.
 
-## Aplicaciones potenciales e incentivos
+## Potentiella tillämpningar och incitament
 
-El desarrollo de algoritmos cuánticos eficientes para los problemas sobre retículos tiene implicaciones de gran alcance en todos los sectores que se apoyan en la comunicación digital segura y el almacenamiento de datos. El algoritmo de Chen pone de manifiesto la necesidad universal de cifrado resistente a lo cuántico.
+Utvecklingen av effektiva kvantalgoritmer för gitterproblem får långtgående konsekvenser för alla sektorer som är beroende av säker digital kommunikation och datalagring. Chens algoritm belyser det allmänna behovet av kvantresistent kryptering.
 
-Esto incluye industrias como:
+Detta omfattar branscher som:
 
-* **Ciberseguridad:** métodos de cifrado robustos y resistentes a lo cuántico son cruciales para proteger la información sensible en la era de la computación cuántica.
+* **Cybersäkerhet:** Robusta, kvantresistenta krypteringsmetoder är avgörande för att skydda känslig information i kvantdatorernas era.
 
-* **Sector público y defensa:** los gobiernos pueden aprovechar estos avances para reforzar la seguridad de las infraestructuras críticas y las comunicaciones clasificadas, mitigando las amenazas potenciales planteadas por las capacidades cuánticas adversarias.
+* **Offentlig sektor och försvar:** Myndigheter kan använda dessa framsteg för att stärka säkerheten hos kritisk infrastruktur och sekretessbelagd kommunikation och därmed begränsa potentiella hot från fientliga kvantdatorkapaciteter.
 
-* **Servicios financieros:** el sector financiero depende fuertemente de canales de comunicación seguros para las transacciones y la protección de los datos. Primitivas criptográficas resistentes a lo cuántico basadas en los problemas sobre retículos podrían contribuir a garantizar la seguridad a largo plazo de los sistemas financieros.
+* **Finansiella tjänster:** Finanssektorn är i hög grad beroende av säkra kommunikationskanaler för transaktioner och dataskydd. Kvantresistenta kryptografiska primitiver baserade på gitterproblem kan bidra till att säkerställa de finansiella systemens långsiktiga säkerhet.
 
-* **Sanidad:** mientras los datos sanitarios se vuelven cada vez más digitalizados, garantizar su confidencialidad e integridad es primordial. Métodos de cifrado cuántico-seguros derivados de los trabajos de Chen podrían ayudar a proteger la información sensible de los pacientes contra los futuros ataques cuánticos.
+* **Hälso- och sjukvård:** I takt med att vårddata blir alltmer digitaliserad är det av yttersta vikt att säkerställa dess konfidentialitet och integritet. Kvantsäkra krypteringsmetoder som härrör från Chens arbete kan bidra till att skydda känslig patientinformation mot framtida kvantattacker.
 
-* **Cloud computing:** con la creciente adopción de los servicios cloud, la seguridad de los datos almacenados y tratados en el cloud es una preocupación principal. Esquemas de cifrado resistentes a lo cuántico basados en los problemas sobre retículos podrían proporcionar una capa adicional de protección para las aplicaciones y el almacenamiento de datos en modo cloud.
+* **Molntjänster:** I och med den växande användningen av molntjänster är säkerheten för data som lagras och behandlas i molnet en central angelägenhet. Kvantresistenta krypteringssystem baserade på gitterproblem kan ge ett extra skyddslager för molnbaserade applikationer och datalagring.
 
-## Conclusión
+## Slutsats
 
-El algoritmo cuántico en tiempo polinómico de Yilei Chen para resolver el problema LWE representa un hito significativo en el campo de la computación cuántica y la criptografía. Utilizando nuevos métodos como las funciones gaussianas y las transformadas de Fourier cuánticas con ventana, Chen ha mostrado cómo los algoritmos cuánticos pueden resolver eficientemente problemas complejos sobre retículos. Sin embargo, es esencial señalar que este trabajo constituye actualmente un avance teórico, y que se necesita investigación adicional para acercarlo a una implementación práctica.
+Yilei Chens kvantalgoritm i polynomisk tid för att lösa LWE-problemet utgör en viktig milstolpe inom kvantdatorer och kryptografi. Med nya metoder som gaussfunktioner och fönstrade kvant-Fouriertransformer visade Chen hur kvantalgoritmer effektivt kan lösa komplexa gitterproblem. Det är dock viktigt att notera att arbetet för närvarande är ett teoretiskt genombrott och att ytterligare forskning krävs för att föra det närmare praktisk implementering.
 
-El desarrollo de la criptografía resistente a lo cuántico no es solo un desafío técnico, sino también un imperativo estratégico para las empresas y los gobiernos. Invertir en I+D en este campo podría producir beneficios significativos a largo plazo en términos de seguridad y confidencialidad de los datos.
+Utvecklingen av kvantresistent kryptografi är inte bara en teknisk utmaning utan också en strategisk nödvändighet för såväl företag som myndigheter. Investeringar i forskning och utveckling på detta område kan ge betydande långsiktiga fördelar i fråga om datasäkerhet och integritet.
 
-## Referencias
+## Referenser
 
 Chen, Y. (2024). [**Quantum Algorithms for Lattice Problems: A New Era in Cryptography ⧉**][00]. *Journal of Quantum Computing and Cryptography*, 7(4), 112-135.
 
-Regev, O. (2005). [**On lattices, learning with errors, random linear codes, and cryptography. ⧉**][01] In *Proceedings of the 37th Annual ACM Symposium on Theory of Computing* (pp. 84-93).
+Regev, O. (2005). [**On lattices, learning with errors, random linear codes, and cryptography. ⧉**][01] I *Proceedings of the 37th Annual ACM Symposium on Theory of Computing* (s. 84-93).
 
 Kuperberg, G. (2005). [**A subexponential-time quantum algorithm for the dihedral hidden subgroup problem. ⧉**][02] *SIAM Journal on Computing*, 35(1), 170-188.
 

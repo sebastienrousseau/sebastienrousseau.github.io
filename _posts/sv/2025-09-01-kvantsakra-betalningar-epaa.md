@@ -1,71 +1,71 @@
 ---
-title: "Pagos resistentes a lo cuántico: por qué la industria debe actuar ahora"
-subtitle: "La criptografía postcuántica es ya una decisión de infraestructura actual, y no futura. El libro blanco EPAA expone el riesgo estructural y la urgente necesidad de migración."
-description: "La computación cuántica amenaza la criptografía de los sistemas de pago. El libro blanco EPAA expone el riesgo estructural y aboga por una migración urgente hacia la criptografía postcuántica."
+title: "Kvantsäkra betalningar: varför branschen måste agera nu"
+subtitle: "Kvantsäker beredskap är ett beslut om infrastruktur i dag. Inte i framtiden."
+description: "Kvantdatorer hotar kryptografin i betalningssystemen. EPAA:s vitbok redogör för den strukturella risken och det brådskande behovet av migrering till PQC."
 date: "September 01, 2025"
 language: "sv-SE"
 locale: "sv_SE"
 banner: "https://cloudcdn.pro/stocks/images/digital-nodes.webp"
-banner_alt: "Placa de circuito de computación cuántica bañada en luz azul"
-keywords: "pagos resistentes a lo cuántico, criptografía postcuántica, SEPA, SWIFT gpi, ISO 20022, seguridad de los servicios financieros, EPAA, harvest-now decrypt-later, agilidad criptográfica, Sebastien Rousseau"
+banner_alt: "Kretskort för kvantdatorer i blått ljus"
+keywords: "kvantsäkra betalningar, postkvantkryptografi, SEPA, SWIFT gpi, ISO 20022, säkerhet inom finansiella tjänster, EPAA, harvest-now decrypt-later, kryptografisk agilitet, Sebastien Rousseau"
 ---
 
-## La amenaza cuántica sobre los sistemas de pago
+## Kvanthotet mot betalningssystemen
 
-La infraestructura de pagos moderna reposa en la criptografía de clave pública —RSA, ECC y Diffie-Hellman— para autenticar las transacciones, proteger los datos de los titulares de tarjetas y asegurar la mensajería entre instituciones financieras. Estos algoritmos sustentan SWIFT, SEPA, los sistemas de liquidación bruta en tiempo real y prácticamente cada esquema de tarjetas en actividad hoy en día.
+Modern betalningsinfrastruktur bygger på kryptografi med öppen nyckel, som RSA, ECC och Diffie-Hellman, för att autentisera transaktioner, skydda kortinnehavarnas data och säkra meddelanden mellan finansinstitut. Dessa algoritmer ligger till grund för SWIFT, SEPA, system för bruttoavveckling i realtid och i praktiken varje kortsystem som är i drift i dag.
 
-Los ordenadores cuánticos que ejecuten el algoritmo de Shor serán capaces de romper estas primitivas criptográficas. Si bien las máquinas cuánticas tolerantes a fallos aún no existen a la escala requerida, la trayectoria del desarrollo de hardware —demostrada por IBM, Google y otros— convierte esto en una cuestión de calendario de ingeniería más que de teoría. El National Institute of Standards and Technology (NIST) ya ha finalizado su primer juego de estándares de criptografía postcuántica (FIPS 203, 204 y 205) en respuesta.
+Kvantdatorer som kör Shors algoritm kommer att kunna bryta dessa kryptografiska primitiver. Feltoleranta kvantmaskiner finns ännu inte i den skala som krävs, men utvecklingen av hårdvaran, som IBM, Google och andra har demonstrerat, gör detta till en fråga om ingenjörsmässig tidsplan snarare än teori. National Institute of Standards and Technology (NIST) har redan färdigställt sin första uppsättning postkvantkryptografiska standarder (FIPS 203, 204 och 205) som svar.
 
-## El riesgo «cosechar ahora, descifrar más tarde»
+## Risken med harvest-now decrypt-later
 
-La amenaza no se confina a una fecha futura en la que los ordenadores cuánticos alcancen capacidad suficiente. Actores estatales y adversarios sofisticados interceptan y almacenan ya hoy datos cifrados, con la intención de descifrarlos una vez que los recursos cuánticos estén disponibles. Esta estrategia «harvest-now decrypt-later» (HNDL) significa que cualquier dato de pago con sensibilidad larga —registros normativos, archivos de cumplimiento, obligaciones contractuales— está ya en riesgo.
+Hotet är inte begränsat till ett framtida datum då kvantdatorer når tillräcklig kapacitet. Statliga aktörer och avancerade motståndare avlyssnar och lagrar redan i dag krypterade data i avsikt att dekryptera dem när kvantresurser blir tillgängliga. Denna strategi, harvest-now decrypt-later (HNDL), innebär att alla betalningsdata med långvarig känslighet, som regulatoriska register, arkiv för regelefterlevnad och avtalsförpliktelser, redan är utsatta för risk.
 
-Los reguladores financieros han comenzado a reaccionar. La Monetary Authority of Singapore (MAS) ha publicado orientaciones sobre la preparación cuántica. La Australian Prudential Regulation Authority (APRA) ha señalado el riesgo criptográfico en su marco de resiliencia tecnológica. El Digital Operational Resilience Act (DORA) de la Unión Europea impone una gestión de los riesgos ICT que debe tener en cuenta las amenazas emergentes, incluida la computación cuántica.
+Finansiella tillsynsmyndigheter har börjat reagera. Monetary Authority of Singapore (MAS) har utfärdat vägledning om kvantberedskap. Australian Prudential Regulation Authority (APRA) har lyft fram kryptografisk risk i sitt ramverk för teknisk motståndskraft. Europeiska unionens Digital Operational Resilience Act (DORA) kräver en hantering av IKT-risker som måste ta hänsyn till framväxande hot, inklusive kvantdatorer.
 
-## Impacto en el conjunto de los rails de pago
+## Konsekvenser för betalningskanalerna
 
-Las implicaciones cubren todo el conjunto de la infraestructura de pagos:
+Konsekvenserna omfattar hela bredden av betalningsinfrastrukturen:
 
-**Mensajería SWIFT:** Los formatos de mensajes MT y MX se apoyan en TLS y las firmas digitales para la integridad y la autenticación. Una infraestructura de claves comprometida socavaría el modelo de confianza que vincula a más de 11.000 instituciones a escala global.
+**SWIFT-meddelanden:** Meddelandeformaten MT och MX förlitar sig på TLS och digitala signaturer för integritet och autentisering. En komprometterad nyckelinfrastruktur skulle undergräva den förtroendemodell som binder samman över 11 000 institut globalt.
 
-**SEPA y pagos instantáneos:** El esquema SEPA Instant Credit Transfer del European Payments Council trata transacciones irrevocables en menos de diez segundos. Una vulneración criptográfica a esa velocidad no deja ninguna ventana para una intervención humana o una verificación manual.
+**SEPA och omedelbara betalningar:** European Payments Councils system SEPA Instant Credit Transfer behandlar oåterkalleliga transaktioner på under tio sekunder. En kryptografisk kompromettering i denna hastighet lämnar inget utrymme för mänsklig inblandning eller manuell verifiering.
 
-**Sistemas de pago en tiempo real:** Faster Payments (UK), FedNow (US) y NPP (Australia) comparten todos la misma dependencia de las primitivas criptográficas clásicas para la autenticación de mensajes y la verificación de los participantes.
+**Betalningssystem i realtid:** Faster Payments (UK), FedNow (US) och NPP (Australien) delar alla samma beroende av klassiska kryptografiska primitiver för meddelandeautentisering och verifiering av deltagare.
 
-**Cumplimiento y datos de larga duración de vida:** Los registros de pago conservados con fines normativos —a menudo impuestos durante cinco a diez años o más— sobrevivirán a las garantías de seguridad de la criptografía que los protegía en el momento de su creación. Los programas de migración [ISO 20022](/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html) deben tener en cuenta la duración de conservación criptográfica de los datos que producen.
+**Regelefterlevnad och långlivade data:** Betalningsregister som bevaras av regulatoriska skäl, ofta ett krav under fem till tio år eller längre, kommer att överleva säkerhetsgarantierna hos den kryptografi som skyddade dem när de skapades. Migreringsprogram för [ISO 20022](/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html) måste beakta den kryptografiska hållbarhetstiden för de data de producerar.
 
-**Blockchain y libros mayores distribuidos:** Las plataformas de activos digitales y los instrumentos de pago tokenizados que dependen de la criptografía de curva elíptica afrontan una amenaza directa y bien comprendida de los algoritmos cuánticos.
+**Blockkedjeteknik och distribuerad liggare:** Plattformar för digitala tillgångar och tokeniserade betalningsinstrument som är beroende av kryptografi baserad på elliptiska kurvor möter ett direkt och väldokumenterat hot från kvantalgoritmer.
 
-## Lo que las organizaciones deben hacer ahora
+## Vad organisationer måste göra nu
 
-La transición hacia una criptografía resistente a lo cuántico no es una actualización única sino un programa plurianual que exige una preparación estructurada:
+Övergången till kvantsäker kryptografi är inte en enskild uppgradering utan ett flerårigt program som kräver strukturerade förberedelser:
 
-**Inventario criptográfico:** Las organizaciones deben catalogar cada sistema, protocolo y almacén de datos que dependa de la criptografía de clave pública clásica. Esto incluye los certificados TLS, la autenticación de API, las configuraciones HSM, los sistemas de gestión de claves y el cifrado de los datos en reposo.
+**Kryptografisk inventering:** Organisationer måste katalogisera varje system, protokoll och datalager som är beroende av klassisk kryptografi med öppen nyckel. Detta omfattar TLS-certifikat, API-autentisering, HSM-konfigurationer, system för nyckelhantering och kryptering av vilande data.
 
-**Adopción de algoritmos postcuánticos:** El NIST ha estandarizado ML-KEM (FIPS 203) para la encapsulación de claves y ML-DSA (FIPS 204) para las firmas digitales. Las organizaciones deberían comenzar a probar estos algoritmos en entornos fuera de producción y desarrollar hojas de ruta de migración para los sistemas críticos.
+**Införande av postkvantalgoritmer:** NIST har standardiserat ML-KEM (FIPS 203) för nyckelinkapsling och ML-DSA (FIPS 204) för digitala signaturer. Organisationer bör börja testa dessa algoritmer i miljöer utanför produktion och ta fram migreringsplaner för kritiska system.
 
-**Agilidad criptográfica:** Los sistemas deben diseñarse —o refactorizarse— de modo que los algoritmos criptográficos puedan reemplazarse sin necesidad de una refactorización aplicativa completa. Este principio se aplica tanto a las pasarelas de pago, como a la mensajería intermediaria y a las API de cliente.
+**Kryptografisk agilitet:** System måste utformas, eller omstruktureras, så att kryptografiska algoritmer kan bytas ut utan att hela applikationen behöver konstrueras om. Denna princip gäller lika mycket för betalningsgateways, meddelandemellanprogram och kundvända API:er.
 
-**Enfoques híbridos:** Durante el periodo de transición, los esquemas criptográficos híbridos que combinan algoritmos clásicos y postcuánticos ofrecen una defensa en profundidad. Este enfoque preserva la retrocompatibilidad al tiempo que introduce la resistencia cuántica.
+**Hybridansatser:** Under övergångsperioden ger hybrida kryptografiska scheman som kombinerar klassiska och postkvantalgoritmer ett djupförsvar. Denna ansats bevarar bakåtkompatibiliteten samtidigt som den inför kvantmotståndskraft.
 
-## Grupo de trabajo EPAA y colaboración industrial
+## EPAA:s arbetsgrupp och branschsamarbete
 
-La Emerging Payments Association Asia (EPAA) ha establecido su Grupo de trabajo Quantum Safe Cryptography para abordar estos desafíos mediante una acción industrial coordinada. El grupo de trabajo reúne a participantes de todo el ecosistema de pagos, incluidos IBM, HSBC, KPMG, JPMorgan Chase y PayPal, entre otros.
+Emerging Payments Association Asia (EPAA) inrättade sin arbetsgrupp Quantum Safe Cryptography för att möta dessa utmaningar genom samordnade branschinsatser. Arbetsgruppen samlar deltagare från hela betalningsekosystemet, däribland IBM, HSBC, KPMG, JPMorgan Chase och PayPal.
 
-En talleres celebrados en Sídney, Hong Kong y Singapur, el grupo de trabajo ha desarrollado un marco compartido para evaluar el riesgo cuántico en los sistemas de pago e identificar vías de migración prácticas. El libro blanco resultante —[Quantum-Safe Payments: Why the Payments Industry Must Act Now][epaa]— representa una posición consensuada sobre la urgencia y la amplitud del desafío.
+Genom workshoppar i Sydney, Hongkong och Singapore har arbetsgruppen tagit fram ett gemensamt ramverk för att bedöma kvantrisk i betalningssystem och identifiera praktiska migreringsvägar. Den resulterande vitboken, [Quantum-Safe Payments: Why the Payments Industry Must Act Now][epaa], utgör en samsyn om utmaningens angelägenhetsgrad och omfattning.
 
-El análisis del grupo de trabajo concluye que la preparación resistente a lo cuántico es una decisión de infraestructura actual, y no futura. Las organizaciones que demoren se exponen a no poder ya satisfacer las expectativas normativas, proteger los datos de larga duración o mantener la interoperabilidad con socios ya migrados.
+Arbetsgruppens analys drar slutsatsen att kvantsäker beredskap är ett beslut om infrastruktur i dag, inte i framtiden. Organisationer som dröjer riskerar att inte kunna leva upp till regulatoriska förväntningar, skydda långlivade data eller bibehålla interoperabilitet med partner som redan har migrerat.
 
-## Sobre el autor
+## Om författaren
 
-Sebastien Rousseau es Senior Digital Product Manager en HSBC Bank plc, donde dirige los productos de API de pagos corporativos en la Commercial & Investment Bank de HSBC. Ha contribuido al Grupo de trabajo EPAA Quantum Safe Cryptography y estudia la aplicación de la criptografía postcuántica a los servicios financieros. [Más información sobre Sebastien ❯][00]
+Sebastien Rousseau är Senior Digital Product Manager på HSBC Bank plc, där han leder API-produkter för företagsbetalningar inom HSBC:s Commercial & Investment Bank. Han har bidragit till EPAA:s arbetsgrupp Quantum Safe Cryptography och forskar om tillämpningen av postkvantkryptografi inom finansiella tjänster. [Läs mer om Sebastien ❯][00]
 
-## Artículos relacionados
+## Relaterade artiklar
 
-- [[Distribución cuántica de claves](/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html): revolucionar la seguridad bancaria][rel1]
-- [[CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html): el algoritmo de protección en la era cuántica][rel2]
+- [[Kvantnyckeldistribution](/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html): stärker säkerheten inom bankväsendet][rel1]
+- [[CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html): skyddsalgoritmen i kvantåldern][rel2]
 
-[00]: /about/index.html "Sobre Sebastien Rousseau"
-[epaa]: https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf "Libro blanco EPAA Quantum-Safe Payments"
-[rel1]: /2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html "Quantum Key Distribution: Revolutionising Security in Banking"
-[rel2]: /2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html "CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age"
+[00]: /about/index.html "Om Sebastien Rousseau"
+[epaa]: https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf "EPAA:s vitbok om kvantsäkra betalningar"
+[rel1]: /2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html "Kvantnyckeldistribution: stärker säkerheten inom bankväsendet"
+[rel2]: /2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html "CRYSTALS-Kyber: skyddsalgoritmen i kvantåldern"
