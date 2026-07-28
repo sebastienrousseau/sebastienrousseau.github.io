@@ -1,76 +1,72 @@
 ---
-title: "Pagos resistentes a lo cuántico: por qué la industria debe actuar ahora"
-subtitle: "La criptografía postcuántica es ya una decisión de infraestructura actual, y no futura. El libro blanco EPAA expone el riesgo estructural y la urgente necesidad de migración."
-description: "La computación cuántica amenaza la criptografía de los sistemas de pago. El libro blanco EPAA expone el riesgo estructural y aboga por una migración urgente hacia la criptografía postcuántica."
+title: "การชำระเงินที่ทนต่อควอนตัม: เหตุใดอุตสาหกรรมต้องลงมือทันที"
+tags: "quantum-safe payments, การเข้ารหัสหลังควอนตัม, payments, EPAA, ISO 20022, SWIFT, SEPA, DORA, การประมวลผลควอนตัม, AI, การชำระเงินข้ามพรมแดน, สเตเบิลคอยน์"
+subtitle: "ความพร้อมด้านการทนต่อควอนตัมเป็นการตัดสินใจด้านโครงสร้างพื้นฐานในปัจจุบัน ไม่ใช่เรื่องของอนาคต เอกสารไวต์เปเปอร์ของ EPAA อธิบายความเสี่ยงเชิงโครงสร้างและความจำเป็นเร่งด่วนในการโยกย้าย"
+description: "การประมวลผลควอนตัมเป็นภัยคุกคามต่อการเข้ารหัสของระบบการชำระเงิน เอกสารไวต์เปเปอร์ของ EPAA อธิบายความเสี่ยงเชิงโครงสร้างและเหตุผลเร่งด่วนในการโยกย้ายไปสู่การเข้ารหัสหลังควอนตัม (PQC)"
 date: "September 01, 2025"
 language: "th-TH"
 locale: "th_TH"
 banner: "https://cloudcdn.pro/stocks/images/digital-nodes.webp"
-banner_alt: "Placa de circuito de computación cuántica bañada en luz azul"
-keywords: "pagos resistentes a lo cuántico, criptografía postcuántica, SEPA, SWIFT gpi, ISO 20022, seguridad de los servicios financieros, EPAA, harvest-now decrypt-later, agilidad criptográfica, Sebastien Rousseau"
+banner_alt: "แผงวงจรคอมพิวเตอร์ควอนตัมภายใต้แสงสีน้ำเงิน"
+keywords: "การชำระเงินที่ทนต่อควอนตัม, การเข้ารหัสหลังควอนตัม, SEPA, SWIFT gpi, ISO 20022, ความมั่นคงปลอดภัยของบริการทางการเงิน, EPAA, harvest-now decrypt-later, ความคล่องตัวด้านการเข้ารหัส, Sebastien Rousseau"
 ---
 
+## ภัยคุกคามจากควอนตัมต่อระบบการชำระเงิน
 
-> **TL;DR.** บทความนี้เป็น DRAFT แปลจากต้นฉบับภาษาสเปน รอการตรวจสอบโดยเจ้าของภาษา เนื้อหาหลัก ตัวอย่าง และการอ้างอิงยังคงเป็นภาษาสเปน เฉพาะ frontmatter เท่านั้นที่ถูกเปลี่ยนเป็นภาษาไทย
+โครงสร้างพื้นฐานการชำระเงินสมัยใหม่พึ่งพาการเข้ารหัสแบบกุญแจสาธารณะ ได้แก่ RSA, ECC และ Diffie-Hellman เพื่อยืนยันตัวตนของธุรกรรม ปกป้องข้อมูลผู้ถือบัตร และรักษาความปลอดภัยของการรับส่งข้อความระหว่างสถาบันการเงิน อัลกอริทึมเหล่านี้เป็นรากฐานของ SWIFT, SEPA, ระบบชำระดุลแบบเรียลไทม์เต็มจำนวน (RTGS) และแทบทุกเครือข่ายบัตรที่ใช้งานอยู่ในปัจจุบัน
 
-**ประเด็นสำคัญ**
+คอมพิวเตอร์ควอนตัมที่รันอัลกอริทึมของ Shor จะสามารถทำลายไพรมิทีฟการเข้ารหัสเหล่านี้ได้ แม้ว่าเครื่องควอนตัมที่ทนต่อความผิดพลาด (fault-tolerant) จะยังไม่มีอยู่ในระดับที่ต้องการ แต่แนวโน้มของการพัฒนาฮาร์ดแวร์ ซึ่งแสดงให้เห็นโดย IBM, Google และรายอื่น ๆ ทำให้เรื่องนี้เป็นคำถามเรื่องกรอบเวลาทางวิศวกรรมมากกว่าเรื่องเชิงทฤษฎี สถาบันมาตรฐานและเทคโนโลยีแห่งชาติของสหรัฐฯ (NIST) ได้สรุปมาตรฐานการเข้ารหัสหลังควอนตัมชุดแรก (FIPS 203, 204 และ 205) เป็นการตอบสนองไปแล้ว
 
-## La amenaza cuántica sobre los sistemas de pago
+## ความเสี่ยงจากกลยุทธ์เก็บเกี่ยวตอนนี้ ถอดรหัสภายหลัง
 
-La infraestructura de pagos moderna reposa en la criptografía de clave pública —RSA, ECC y Diffie-Hellman— para autenticar las transacciones, proteger los datos de los titulares de tarjetas y asegurar la mensajería entre instituciones financieras. Estos algoritmos sustentan SWIFT, SEPA, los sistemas de liquidación bruta en tiempo real y prácticamente cada esquema de tarjetas en actividad hoy en día.
+ภัยคุกคามนี้ไม่ได้จำกัดอยู่ที่วันในอนาคตเมื่อคอมพิวเตอร์ควอนตัมมีขีดความสามารถเพียงพอ ผู้ก่อภัยระดับรัฐและปฏิปักษ์ที่มีความซับซ้อนกำลังดักจับและจัดเก็บข้อมูลที่เข้ารหัสไว้แล้วในวันนี้ โดยตั้งใจจะถอดรหัสเมื่อทรัพยากรควอนตัมพร้อมใช้งาน กลยุทธ์ harvest-now decrypt-later (HNDL) นี้หมายความว่าข้อมูลการชำระเงินใด ๆ ที่มีความอ่อนไหวในระยะยาว เช่น บันทึกตามข้อกำหนด คลังข้อมูลการปฏิบัติตามกฎเกณฑ์ และภาระผูกพันตามสัญญา ล้วนตกอยู่ในความเสี่ยงแล้ว
 
-Los ordenadores cuánticos que ejecuten el algoritmo de Shor serán capaces de romper estas primitivas criptográficas. Si bien las máquinas cuánticas tolerantes a fallos aún no existen a la escala requerida, la trayectoria del desarrollo de hardware —demostrada por IBM, Google y otros— convierte esto en una cuestión de calendario de ingeniería más que de teoría. El National Institute of Standards and Technology (NIST) ya ha finalizado su primer juego de estándares de criptografía postcuántica (FIPS 203, 204 y 205) en respuesta.
+หน่วยงานกำกับดูแลด้านการเงินเริ่มตอบสนองแล้ว Monetary Authority of Singapore (MAS) ได้ออกแนวทางเกี่ยวกับความพร้อมด้านควอนตัม Australian Prudential Regulation Authority (APRA) ได้ระบุความเสี่ยงด้านการเข้ารหัสไว้ในกรอบความยืดหยุ่นทางเทคโนโลยี และ Digital Operational Resilience Act (DORA) ของสหภาพยุโรปกำหนดให้มีการบริหารความเสี่ยง ICT ที่ต้องคำนึงถึงภัยคุกคามที่เกิดขึ้นใหม่ รวมถึงการประมวลผลควอนตัม
 
-## El riesgo «cosechar ahora, descifrar más tarde»
+## ผลกระทบทั่วทุกช่องทางการชำระเงิน
 
-La amenaza no se confina a una fecha futura en la que los ordenadores cuánticos alcancen capacidad suficiente. Actores estatales y adversarios sofisticados interceptan y almacenan ya hoy datos cifrados, con la intención de descifrarlos una vez que los recursos cuánticos estén disponibles. Esta estrategia «harvest-now decrypt-later» (HNDL) significa que cualquier dato de pago con sensibilidad larga —registros normativos, archivos de cumplimiento, obligaciones contractuales— está ya en riesgo.
+นัยของเรื่องนี้ครอบคลุมโครงสร้างพื้นฐานการชำระเงินทั้งหมด:
 
-Los reguladores financieros han comenzado a reaccionar. La Monetary Authority of Singapore (MAS) ha publicado orientaciones sobre la preparación cuántica. La Australian Prudential Regulation Authority (APRA) ha señalado el riesgo criptográfico en su marco de resiliencia tecnológica. El Digital Operational Resilience Act (DORA) de la Unión Europea impone una gestión de los riesgos ICT que debe tener en cuenta las amenazas emergentes, incluida la computación cuántica.
+**การรับส่งข้อความ SWIFT:** รูปแบบข้อความ MT และ MX พึ่งพา TLS และลายเซ็นดิจิทัลเพื่อความสมบูรณ์และการยืนยันตัวตน โครงสร้างพื้นฐานกุญแจที่ถูกเจาะจะบ่อนทำลายแบบจำลองความเชื่อถือที่เชื่อมโยงสถาบันกว่า 11,000 แห่งทั่วโลก
 
-## Impacto en el conjunto de los rails de pago
+**SEPA และการชำระเงินทันที:** โครงการ SEPA Instant Credit Transfer ของ European Payments Council ประมวลผลธุรกรรมที่เพิกถอนไม่ได้ในเวลาไม่ถึงสิบวินาที การถูกเจาะระบบการเข้ารหัสที่ความเร็วระดับนี้ไม่เหลือช่องเวลาสำหรับการแทรกแซงโดยมนุษย์หรือการตรวจสอบด้วยตนเอง
 
-Las implicaciones cubren todo el conjunto de la infraestructura de pagos:
+**ระบบการชำระเงินแบบเรียลไทม์:** Faster Payments (สหราชอาณาจักร), FedNow (สหรัฐฯ) และ NPP (ออสเตรเลีย) ต่างพึ่งพาไพรมิทีฟการเข้ารหัสแบบดั้งเดิมเช่นเดียวกันสำหรับการยืนยันตัวตนของข้อความและการตรวจสอบผู้เข้าร่วม
 
-**Mensajería SWIFT:** Los formatos de mensajes MT y MX se apoyan en TLS y las firmas digitales para la integridad y la autenticación. Una infraestructura de claves comprometida socavaría el modelo de confianza que vincula a más de 11.000 instituciones a escala global.
+**การปฏิบัติตามกฎเกณฑ์และข้อมูลอายุยาว:** บันทึกการชำระเงินที่เก็บรักษาไว้เพื่อวัตถุประสงค์ด้านกฎเกณฑ์ ซึ่งมักถูกกำหนดให้เก็บไว้ห้าถึงสิบปีหรือนานกว่านั้น จะมีอายุยืนกว่าการรับประกันความปลอดภัยของการเข้ารหัสที่ปกป้องข้อมูลเหล่านั้นในเวลาที่สร้างขึ้น โครงการโยกย้าย [ISO 20022](/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html) ต้องพิจารณาอายุการใช้งานของการเข้ารหัสของข้อมูลที่ตนสร้างขึ้น
 
-**SEPA y pagos instantáneos:** El esquema SEPA Instant Credit Transfer del European Payments Council trata transacciones irrevocables en menos de diez segundos. Una vulneración criptográfica a esa velocidad no deja ninguna ventana para una intervención humana o una verificación manual.
+**บล็อกเชนและเทคโนโลยีบัญชีแยกประเภทแบบกระจาย:** แพลตฟอร์มสินทรัพย์ดิจิทัลและตราสารการชำระเงินแบบโทเคนที่พึ่งพาการเข้ารหัสแบบเส้นโค้งวงรี (elliptic curve) เผชิญภัยคุกคามโดยตรงและเป็นที่เข้าใจกันดีจากอัลกอริทึมควอนตัม
 
-**Sistemas de pago en tiempo real:** Faster Payments (UK), FedNow (US) y NPP (Australia) comparten todos la misma dependencia de las primitivas criptográficas clásicas para la autenticación de mensajes y la verificación de los participantes.
+## สิ่งที่องค์กรต้องทำในตอนนี้
 
-**Cumplimiento y datos de larga duración de vida:** Los registros de pago conservados con fines normativos —a menudo impuestos durante cinco a diez años o más— sobrevivirán a las garantías de seguridad de la criptografía que los protegía en el momento de su creación. Los programas de migración [ISO 20022](/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html) deben tener en cuenta la duración de conservación criptográfica de los datos que producen.
+การเปลี่ยนผ่านไปสู่การเข้ารหัสที่ทนต่อควอนตัมไม่ใช่การอัปเกรดเพียงครั้งเดียว แต่เป็นโครงการหลายปีที่ต้องการการเตรียมการอย่างเป็นระบบ:
 
-**Blockchain y libros mayores distribuidos:** Las plataformas de activos digitales y los instrumentos de pago tokenizados que dependen de la criptografía de curva elíptica afrontan una amenaza directa y bien comprendida de los algoritmos cuánticos.
+**การจัดทำบัญชีการเข้ารหัส:** องค์กรต้องจัดทำรายการทุกระบบ โปรโตคอล และแหล่งจัดเก็บข้อมูลที่พึ่งพาการเข้ารหัสแบบกุญแจสาธารณะดั้งเดิม ซึ่งรวมถึงใบรับรอง TLS การยืนยันตัวตนของ API การกำหนดค่า HSM ระบบการจัดการกุญแจ และการเข้ารหัสข้อมูลขณะพัก (data-at-rest)
 
-## Lo que las organizaciones deben hacer ahora
+**การนำอัลกอริทึมหลังควอนตัมมาใช้:** NIST ได้กำหนดมาตรฐาน ML-KEM (FIPS 203) สำหรับการห่อหุ้มกุญแจ และ ML-DSA (FIPS 204) สำหรับลายเซ็นดิจิทัล องค์กรควรเริ่มทดสอบอัลกอริทึมเหล่านี้ในสภาพแวดล้อมที่ไม่ใช่การใช้งานจริง และจัดทำแผนงานการโยกย้ายสำหรับระบบที่สำคัญ
 
-La transición hacia una criptografía resistente a lo cuántico no es una actualización única sino un programa plurianual que exige una preparación estructurada:
+**ความคล่องตัวด้านการเข้ารหัส:** ระบบต้องได้รับการออกแบบหรือปรับโครงสร้างใหม่ เพื่อให้สามารถเปลี่ยนอัลกอริทึมการเข้ารหัสได้โดยไม่ต้องออกแบบแอปพลิเคชันใหม่ทั้งหมด หลักการนี้ใช้กับเกตเวย์การชำระเงิน มิดเดิลแวร์การรับส่งข้อความ และ API ที่ให้บริการลูกค้าเช่นเดียวกัน
 
-**Inventario criptográfico:** Las organizaciones deben catalogar cada sistema, protocolo y almacén de datos que dependa de la criptografía de clave pública clásica. Esto incluye los certificados TLS, la autenticación de API, las configuraciones HSM, los sistemas de gestión de claves y el cifrado de los datos en reposo.
+**แนวทางแบบไฮบริด:** ในช่วงเปลี่ยนผ่าน แผนการเข้ารหัสแบบไฮบริดที่ผสมผสานอัลกอริทึมดั้งเดิมและหลังควอนตัมช่วยให้มีการป้องกันเชิงลึก (defence-in-depth) แนวทางนี้รักษาความเข้ากันได้ย้อนหลังในขณะที่เพิ่มความต้านทานต่อควอนตัม
 
-**Adopción de algoritmos postcuánticos:** El NIST ha estandarizado ML-KEM (FIPS 203) para la encapsulación de claves y ML-DSA (FIPS 204) para las firmas digitales. Las organizaciones deberían comenzar a probar estos algoritmos en entornos fuera de producción y desarrollar hojas de ruta de migración para los sistemas críticos.
+## คณะทำงาน EPAA และความร่วมมือในอุตสาหกรรม
 
-**Agilidad criptográfica:** Los sistemas deben diseñarse —o refactorizarse— de modo que los algoritmos criptográficos puedan reemplazarse sin necesidad de una refactorización aplicativa completa. Este principio se aplica tanto a las pasarelas de pago, como a la mensajería intermediaria y a las API de cliente.
+Emerging Payments Association Asia (EPAA) ได้จัดตั้งคณะทำงาน Quantum Safe Cryptography Working Group เพื่อรับมือกับความท้าทายเหล่านี้ผ่านการดำเนินการที่ประสานงานกันในอุตสาหกรรม คณะทำงานนี้รวบรวมผู้เข้าร่วมจากทั่วระบบนิเวศการชำระเงิน รวมถึง IBM, HSBC, KPMG, JPMorgan Chase และ PayPal เป็นต้น
 
-**Enfoques híbridos:** Durante el periodo de transición, los esquemas criptográficos híbridos que combinan algoritmos clásicos y postcuánticos ofrecen una defensa en profundidad. Este enfoque preserva la retrocompatibilidad al tiempo que introduce la resistencia cuántica.
+ผ่านการประชุมเชิงปฏิบัติการที่จัดขึ้นในซิดนีย์ ฮ่องกง และสิงคโปร์ คณะทำงานได้พัฒนากรอบการทำงานร่วมกันสำหรับการประเมินความเสี่ยงด้านควอนตัมในระบบการชำระเงินและระบุเส้นทางการโยกย้ายที่ปฏิบัติได้จริง เอกสารไวต์เปเปอร์ที่ได้ [Quantum-Safe Payments: Why the Payments Industry Must Act Now][epaa] แสดงถึงจุดยืนที่เป็นฉันทามติเกี่ยวกับความเร่งด่วนและขอบเขตของความท้าทายนี้
 
-## Grupo de trabajo EPAA y colaboración industrial
+การวิเคราะห์ของคณะทำงานสรุปว่าความพร้อมด้านการทนต่อควอนตัมเป็นการตัดสินใจด้านโครงสร้างพื้นฐานในปัจจุบัน ไม่ใช่เรื่องของอนาคต องค์กรที่ล่าช้าเสี่ยงที่จะพบว่าตนเองไม่สามารถตอบสนองความคาดหวังของหน่วยงานกำกับดูแล ปกป้องข้อมูลอายุยาว หรือรักษาความสามารถในการทำงานร่วมกันกับพันธมิตรที่โยกย้ายไปแล้ว
 
-La Emerging Payments Association Asia (EPAA) ha establecido su Grupo de trabajo Quantum Safe Cryptography para abordar estos desafíos mediante una acción industrial coordinada. El grupo de trabajo reúne a participantes de todo el ecosistema de pagos, incluidos IBM, HSBC, KPMG, JPMorgan Chase y PayPal, entre otros.
+## เกี่ยวกับผู้เขียน
 
-En talleres celebrados en Sídney, Hong Kong y Singapur, el grupo de trabajo ha desarrollado un marco compartido para evaluar el riesgo cuántico en los sistemas de pago e identificar vías de migración prácticas. El libro blanco resultante —[Quantum-Safe Payments: Why the Payments Industry Must Act Now][epaa]— representa una posición consensuada sobre la urgencia y la amplitud del desafío.
+Sebastien Rousseau เป็น Senior Digital Product Manager ที่ HSBC Bank plc ดูแลผลิตภัณฑ์ API การชำระเงินสำหรับองค์กรภายใน Commercial & Investment Bank ของ HSBC เขามีส่วนร่วมในคณะทำงาน EPAA Quantum Safe Cryptography และทำวิจัยเกี่ยวกับการประยุกต์ใช้การเข้ารหัสหลังควอนตัมกับบริการทางการเงิน [อ่านเพิ่มเติมเกี่ยวกับ Sebastien ❯][00]
 
-El análisis del grupo de trabajo concluye que la preparación resistente a lo cuántico es una decisión de infraestructura actual, y no futura. Las organizaciones que demoren se exponen a no poder ya satisfacer las expectativas normativas, proteger los datos de larga duración o mantener la interoperabilidad con socios ya migrados.
+## บทความที่เกี่ยวข้อง
 
-## Sobre el autor
+- [[Quantum Key Distribution](/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html): การยกระดับความปลอดภัยในการธนาคาร][rel1]
+- [[CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html): อัลกอริทึมปกป้องในยุคควอนตัม][rel2]
 
-Sebastien Rousseau es Senior Digital Product Manager en HSBC Bank plc, donde dirige los productos de API de pagos corporativos en la Commercial & Investment Bank de HSBC. Ha contribuido al Grupo de trabajo EPAA Quantum Safe Cryptography y estudia la aplicación de la criptografía postcuántica a los servicios financieros. [Más información sobre Sebastien ❯][00]
-
-## Artículos relacionados
-
-- [[Distribución cuántica de claves](/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html): revolucionar la seguridad bancaria][rel1]
-- [[CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html): el algoritmo de protección en la era cuántica][rel2]
-
-[00]: /about/index.html "Sobre Sebastien Rousseau"
-[epaa]: https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf "Libro blanco EPAA Quantum-Safe Payments"
-[rel1]: /2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html "Quantum Key Distribution: Revolutionising Security in Banking"
-[rel2]: /2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html "CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age"
+[00]: /about/index.html "เกี่ยวกับ Sebastien Rousseau"
+[epaa]: https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf "เอกสารไวต์เปเปอร์ EPAA Quantum-Safe Payments"
+[rel1]: /2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html "Quantum Key Distribution: การยกระดับความปลอดภัยในการธนาคาร"
+[rel2]: /2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html "CRYSTALS-Kyber: อัลกอริทึมปกป้องในยุคควอนตัม"

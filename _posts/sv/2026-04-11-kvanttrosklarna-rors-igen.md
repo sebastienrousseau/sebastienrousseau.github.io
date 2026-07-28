@@ -1,128 +1,126 @@
 ---
-title: "Los umbrales cuánticos vuelven a moverse"
-subtitle: "Un nuevo artículo sugiere que el algoritmo de Shor podría ejecutarse con solo 10.000 qubits. El umbral de la computación cuántica criptográficamente relevante cae más rápido de lo que la mayoría suponía."
-description: "Un nuevo artículo sugiere que el algoritmo de Shor podría ejecutarse con solo 10.000 qubits. El umbral de la computación cuántica criptográficamente relevante cae más rápido de lo que la mayoría suponía."
+title: "Kvanttrösklarna rörs igen"
+subtitle: "En ny artikel antyder att Shors algoritm skulle kunna köras på så få som 10 000 qubitar. Tröskeln för kryptografiskt relevant kvantberäkning sjunker snabbare än de flesta antagit."
+description: "En ny artikel antyder att Shors algoritm skulle kunna köras på så få som 10 000 qubitar. Tröskeln för kryptografiskt relevant kvantberäkning sjunker snabbare än de flesta antagit."
 date: "April 11, 2026"
 language: "sv-SE"
 locale: "sv_SE"
 banner: "https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp"
-banner_alt: "Esquema del umbral de qubits para el algoritmo de Shor. Placa de circuito de computación cuántica con reflejos azules"
-keywords: "algoritmo de Shor, qubits, computación cuántica, ECC, RSA-2048, átomos neutros reconfigurables, códigos de corrección de errores, CRYSTALS-Kyber, CRYSTALS-Dilithium, PQC, criptografía postcuántica"
+banner_alt: "Diagram över qubittröskeln för Shors algoritm. Kretskort för kvantberäkning med blå ljusmönster"
+keywords: "kvantberäkning, Shors algoritm, 10000 qubitar, postkvantkryptografi, RSA-2048, elliptisk kurvkryptografi, neutralatomqubitar, kvantfelrättning, kryptografisk agilitet, kvanthotets tidslinje"
 ---
 
-## Los umbrales cuánticos vuelven a moverse
+## Kvanttrösklarna rörs igen
 
-Un nuevo artículo sugiere que el algoritmo de Shor podría ejecutarse con solo 10.000 qubits. El umbral de la computación cuántica criptográficamente relevante cae más rápido de lo que la mayoría suponía.
+En ny artikel antyder att Shors algoritm skulle kunna köras på så få som 10 000 qubitar. Tröskeln för kryptografiskt relevant kvantberäkning sjunker snabbare än de flesta antagit.
 
-> **TL;DR.** Un nuevo artículo propone que el algoritmo de Shor pueda ejecutarse con solo 10.000 qubits físicos —cerca de cien veces menos que las estimaciones consensuadas anteriores—. La barrera ya no es puramente teórica: es de ingeniería. Los estándares de criptografía postcuántica ya están finalizados; la prioridad ahora es acelerar la migración.
->
 > **Viktiga slutsatser**
 >
-> - Un nuevo artículo propone que el algoritmo de Shor pueda ejecutarse con solo **10.000 qubits físicos**, alrededor de cien veces menos que las estimaciones consensuadas anteriores.
-> - La reducción está impulsada por tres avances convergentes: códigos de corrección de errores cuánticos de alto rendimiento, retículos de átomos neutros reconfigurables y paralelismo aumentado.
-> - La amenaza no es uniforme. La **criptografía de curva elíptica (ECC)** es más vulnerable a bajos números de qubits; RSA-2048 requiere tiempos de ejecución significativamente más largos a escalas comparables.
-> - Se trata de una **proyección teórica**, no de una demostración operativa. Sigue existiendo una brecha de ingeniería sustancial entre el hardware actual y la ejecución tolerante a fallos a esa escala.
-> - Los estándares de criptografía postcuántica ya están finalizados. La prioridad ahora es **acelerar la migración**, no esperar a que aparezca un sistema cuántico.
+> - En ny artikel föreslår att Shors algoritm skulle kunna köras på så få som **10 000 fysiska qubitar**. Ungefär hundra gånger färre än tidigare konsensusuppskattningar.
+> - Minskningen drivs av tre sammanfallande framsteg: kvantfelrättande koder med hög hastighet, omkonfigurerbara matriser av neutrala atomer och ökad parallellism.
+> - Hotet är inte enhetligt. **Elliptisk kurvkryptografi (ECC)** är mer sårbar vid lägre antal qubitar; RSA-2048 kräver betydligt längre körtider vid jämförbara skalor.
+> - Detta är en **teoretisk projektion**, inte en fungerande demonstration. Ett betydande ingenjörsmässigt gap kvarstår mellan dagens hårdvara och feltolerant drift i denna skala.
+> - Standarderna för postkvantkryptografi är redan färdigställda. Prioriteten nu är att **påskynda migreringen**. Inte att vänta på att ett kvantsystem ska dyka upp.
 
-## Una hipótesis familiar, ahora bajo presión
+## Ett välbekant antagande, nu under press
 
-A lo largo de la última década, las discusiones en torno a la computación cuántica y la criptografía han seguido un arco familiar. Las máquinas cuánticas eran reconocidas como teóricamente potentes, pero consideradas impracticables a gran escala. Romper los sistemas criptográficos modernos habría exigido millones de qubits físicos, y el calendario permanecía cómodamente lejano. Esta hipótesis está ahora bajo presión seria.
+Under det senaste decenniet har diskussionerna om kvantberäkning och kryptografi följt en välbekant båge. Kvantmaskiner erkändes som teoretiskt kraftfulla, men betraktades som opraktiska i stor skala. Att knäcka moderna kryptografiska system skulle kräva miljontals fysiska qubitar, och tidslinjen förblev bekvämt avlägsen. Det antagandet är nu under allvarlig press.
 
-Un artículo reciente, [«Shor's algorithm is possible with as few as 10,000 reconfigurable atomic qubits» ⧉](https://arxiv.org/pdf/2603.28627 "Shor's algorithm is possible with as few as 10,000 reconfigurable atomic qubits (PDF)"), propone algo más consecuente que un simple avance. Sugiere que el umbral de la computación cuántica criptográficamente relevante podría ser inferior en un orden de magnitud a lo que se creía. No millones de qubits, sino decenas de miles. La distinción importa, y la dirección que implica es difícil de ignorar.
+En färsk artikel, [Shor's algorithm is possible with as few as 10,000 reconfigurable atomic qubits ⧉](https://arxiv.org/pdf/2603.28627 "Shor's algorithm is possible with as few as 10,000 reconfigurable atomic qubits (PDF)"), föreslår något mer betydelsefullt än ett enskilt genombrott. Den antyder att tröskeln för kryptografiskt relevant kvantberäkning kan vara en storleksordning lägre än man tidigare trott. Inte miljontals qubitar, utan tiotusentals. Distinktionen har betydelse, och den riktning den antyder är svår att ignorera.
 
-## La convergencia que impulsa este desplazamiento: corrección de errores, arquitectura y paralelismo
+## Konvergensen som driver skiftet: felrättning, arkitektur och parallellism
 
-El resultado no emerge de un descubrimiento único. Refleja una convergencia de mejoras en varias capas de la pila de la computación cuántica que, tomadas juntas, desplazan la frontera de lo que parece factible.
+Resultatet uppstår inte ur en enda upptäckt. Det speglar en konvergens av förbättringar i flera lager av kvantberäkningsstacken som, tagna tillsammans, förskjuter gränsen för vad som framstår som genomförbart.
 
-La primera mejora se refiere a la corrección de errores. Los enfoques tradicionales exigían grandes sobrecostes —a menudo cientos de qubits físicos para representar un solo qubit lógico—. El artículo se apoya en cambio en códigos de corrección de errores cuánticos de alto rendimiento, que reducen significativamente ese sobrecoste ([Emergent Mind ⧉](https://www.emergentmind.com/papers/2603.28627 "Shor's Algorithm with 10000 Atomic Qubits")). La segunda se refiere a la arquitectura. El sistema está construido sobre retículos reconfigurables de átomos neutros, que pueden reorganizarse durante el cálculo para permitir una conectividad más flexible y una ejecución más eficiente ([The Quantum Insider ⧉](https://thequantuminsider.com/2026/03/31/oratomic-launches-to-build-utility-scale-quantum-computers/ "Oratomic Launches to Build Utility-scale Quantum Computers")). La tercera es el paralelismo: aumentar el número de qubits permite ejecutar más operaciones simultáneamente, reduciendo el tiempo de ejecución global.
+Den första förbättringen gäller felrättning. Traditionella metoder krävde stora omkostnader, ofta hundratals fysiska qubitar för att representera en enda logisk qubit. Artikeln bygger i stället på kvantfelrättande koder med hög hastighet, vilka avsevärt minskar den omkostnaden. ([Emergent Mind ⧉](https://www.emergentmind.com/papers/2603.28627 "Shor's Algorithm with 10000 Atomic Qubits")) Den andra gäller arkitektur. Systemet är byggt på omkonfigurerbara matriser av neutrala atomer, som kan omorganiseras under beräkningen för att möjliggöra mer flexibel konnektivitet och effektivare exekvering. ([The Quantum Insider ⧉](https://thequantuminsider.com/2026/03/31/oratomic-launches-to-build-utility-scale-quantum-computers/ "Oratomic Launches to Build Utility-scale Quantum Computers")) Den tredje är parallellism: att öka antalet qubitar gör det möjligt att köra fler operationer samtidigt, vilket minskar den totala exekveringstiden.
 
-Ninguna de estas ideas es nueva aisladamente. Combinadas, sin embargo, redefinen lo que antes se trataba como un límite duro.
+Ingen av dessa idéer är ny för sig. Kombinerade omformar de dock det som tidigare behandlades som en hård gräns.
 
-## De millones a decenas de miles: lo que las cifras significan realmente
+## Från miljoner till tiotusentals: vad siffrorna faktiskt betyder
 
-Durante años, la estimación consensuada para ejecutar el algoritmo de Shor a escalas criptográficas exigía millones de qubits físicos. El nuevo análisis sugiere que, bajo ciertas hipótesis, ese número podría caer a alrededor de 10.000 ([arXiv ⧉](https://arxiv.org/abs/2603.28627 "Shor's algorithm is possible with as few as 10,000 reconfigurable atomic qubits")). Esta cifra, sin embargo, no es la imagen completa.
+Under åratal krävde konsensusuppskattningen för att köra Shors algoritm i kryptografiska skalor miljontals fysiska qubitar. Den nya analysen antyder att detta antal, under vissa antaganden, skulle kunna sjunka till ungefär 10 000. ([arXiv ⧉](https://arxiv.org/abs/2603.28627 "Shor's algorithm is possible with as few as 10,000 reconfigurable atomic qubits")) Den siffran ger dock inte hela bilden.
 
-En el extremo bajo de ese rango, los tiempos de ejecución siguen siendo largos. Factorizar RSA-2048 al número mínimo de qubits podría aún llevar años de funcionamiento continuo. Una ejecución más rápida requiere más qubits, potencialmente decenas de miles. La relación entre el número de qubits y el tiempo de ejecución no es lineal, y el artículo se cuida de presentar esto como un espectro en lugar de un umbral fijo. Lo que cambia es la dirección: la barrera ya no es puramente teórica. Es ahora una cuestión de ingeniería.
+I den nedre delen av det intervallet förblir körtiderna långa. Att faktorisera RSA-2048 vid minimala antal qubitar skulle fortfarande kunna ta år av kontinuerlig drift. Snabbare exekvering kräver fler qubitar, potentiellt tiotusentals. Förhållandet mellan antalet qubitar och körtiden är inte linjärt, och artikeln är noga med att presentera detta som ett spektrum snarare än en fast tröskel. Det som förändras är riktningen: barriären är inte längre rent teoretisk. Det är nu en fråga om ingenjörskonst.
 
-### Antiguas hipótesis frente a nuevas realidades
+### Gamla antaganden mot nya realiteter
 
-| Dimensión | Antigua hipótesis | Nueva realidad |
+| Dimension | Gammalt antagande | Ny verklighet |
 |---|---|---|
-| Qubits físicos requeridos (algoritmo de Shor) | ~1.000.000+ | ~10.000–26.000 |
-| Tiempo para romper RSA-2048 (al mínimo de qubits) | Inviable esta década | Años (con 10.000 qubits); más rápido con más |
-| Tiempo para romper ECC-256 | Inviable esta década | Días (estimado con ~26.000 qubits) |
-| Paradigma de hardware dominante | Qubits superconductores | Retículos de átomos neutros reconfigurables |
-| Sobrecoste de corrección de errores | Cientos de qubits físicos por qubit lógico | Reducido significativamente mediante códigos de alto rendimiento |
-| Naturaleza de la barrera | Teórica | Ingeniería |
-| Urgencia de migración | Planificación a largo plazo | Despliegue activo requerido ahora |
+| Fysiska qubitar som krävs (Shors algoritm) | ~1 000 000+ | ~10 000–26 000 |
+| Tid att knäcka RSA-2048 (vid minimum av qubitar) | Inte genomförbart detta decennium | År (vid 10 000 qubitar); snabbare med fler |
+| Tid att knäcka ECC-256 | Inte genomförbart detta decennium | Dagar (uppskattat vid ~26 000 qubitar) |
+| Dominerande hårdvaruparadigm | Supraledande qubitar | Omkonfigurerbara matriser av neutrala atomer |
+| Omkostnad för felrättning | Hundratals fysiska qubitar per logisk qubit | Avsevärt minskad via koder med hög hastighet |
+| Barriärens natur | Teoretisk | Ingenjörsmässig |
+| Migreringens brådska | Långsiktig planering | Aktiv utrullning krävs nu |
 
-*Fuente: análisis a partir de [arXiv:2603.28627 ⧉](https://arxiv.org/abs/2603.28627) y de la literatura anterior.*
+*Källa: analys baserad på [arXiv:2603.28627 ⧉](https://arxiv.org/abs/2603.28627) och tidigare litteratur.*
 
-## Tiempo, escala y vulnerabilidad desigual de los sistemas criptográficos
+## Tid, skala och den ojämna sårbarheten hos kryptografiska system
 
-Una de las contribuciones más significativas del artículo es el matiz que introduce en torno al tiempo. La ventaja cuántica no llega de golpe. Existe a lo largo de un espectro determinado por la escala del sistema y la naturaleza del objetivo criptográfico.
+Ett av artikelns mer betydande bidrag är den nyans den introducerar kring tid. Kvantfördelen anländer inte på en gång. Den existerar längs ett spektrum som bestäms av systemets skala och det kryptografiska målets natur.
 
-Con alrededor de 26.000 qubits, los autores estiman que romper la criptografía de curva elíptica podría llevar unos días en condiciones favorables ([arXiv ⧉](https://arxiv.org/abs/2603.28627 "Shor's algorithm is possible with as few as 10,000 reconfigurable atomic qubits")). Para RSA-2048, los plazos son considerablemente más largos. Esta asimetría es importante. Sugiere que distintos sistemas criptográficos pueden volverse vulnerables en momentos diferentes, en lugar de simultáneamente, y que la transición hacia los estándares postcuánticos probablemente no será un acontecimiento único con una fecha límite única.
+Med ungefär 26 000 qubitar uppskattar författarna att det skulle kunna ta dagar att knäcka elliptisk kurvkryptografi under gynnsamma förhållanden. ([arXiv ⧉](https://arxiv.org/abs/2603.28627 "Shor's algorithm is possible with as few as 10,000 reconfigurable atomic qubits")) För RSA-2048 är tidslinjerna avsevärt längre. Denna asymmetri är viktig. Den antyder att olika kryptografiska system kan bli sårbara vid olika tidpunkter, snarare än samtidigt, och att övergången till postkvantstandarder sannolikt inte blir en enskild händelse med en enda tidsfrist.
 
-Este esquema es coherente con una cobertura más amplia. Análisis de los últimos meses sugieren que sistemas cuánticos capaces de desafiar el cifrado ampliamente utilizado podrían emerger antes del final de la década ([Nature ⧉](https://www.nature.com/articles/d41586-026-01054-1 "Quantum-computing breakthroughs pose risks to encryption")). Los gobiernos y los organismos de normalización planifican ya las transiciones a la criptografía postcuántica, con calendarios de implementación que se extienden hasta la década de 2030 ([The Quantum Insider ⧉](https://thequantuminsider.com/2026/03/31/oratomic-launches-to-build-utility-scale-quantum-computers/ "Oratomic Launches to Build Utility-scale Quantum Computers")). La discusión ha pasado de «si» a «cuándo».
+Detta mönster är förenligt med bredare rapportering. Analyser från de senaste månaderna antyder att kvantsystem som kan utmana allmänt använd kryptering skulle kunna dyka upp före decenniets slut. ([Nature ⧉](https://www.nature.com/articles/d41586-026-01054-1 "Quantum-computing breakthroughs pose risks to encryption")) Regeringar och standardiseringsorgan planerar redan övergångar till postkvantkryptografi, med implementeringstidslinjer som sträcker sig in på 2030-talet. ([The Quantum Insider ⧉](https://thequantuminsider.com/2026/03/31/oratomic-launches-to-build-utility-scale-quantum-computers/ "Oratomic Launches to Build Utility-scale Quantum Computers")) Diskussionen har flyttat från om till när.
 
-## La brecha de ingeniería que persiste
+## Det ingenjörsmässiga gap som kvarstår
 
-Conviene ser preciso sobre lo que representa este artículo. Es una proyección, no una demostración. Los sistemas propuestos dependen de hipótesis sobre tasas de error, estabilidad del hardware y comportamiento a la escala que aún no han sido validadas a la escala requerida. Los experimentos actuales operan en el nivel de cientos a algunos miles de qubits, no de decenas de miles funcionando de manera tolerante a fallos durante periodos prolongados ([Phys.org ⧉](https://phys.org/news/2026-04-quantum-built-qubits-team.html "Useful quantum computers could be built with as few as 10,000 qubits")).
+Det är viktigt att vara precis om vad denna artikel representerar. Den är en projektion, inte en demonstration. De föreslagna systemen är beroende av antaganden om felfrekvenser, hårdvarustabilitet och skalningsbeteende som ännu inte har validerats i den skala som krävs. Nuvarande experiment opererar på nivån hundratals till några tusen qubitar, inte tiotusentals som fungerar feltolerant under längre perioder. ([Phys.org ⧉](https://phys.org/news/2026-04-quantum-built-qubits-team.html "Useful quantum computers could be built with as few as 10,000 qubits"))
 
-Sigue existiendo una brecha de ingeniería sustancial. El camino de un modelo teórico convincente a un sistema funcional capaz de operación sostenida y tolerante a fallos a esa escala implica desafíos que aún no se comprenden plenamente, y mucho menos se resuelven. Lo que ha cambiado no es la proximidad de una máquina operativa, sino la credibilidad del objetivo. La brecha se estrecha, y la dirección del progreso es coherente.
+Ett betydande ingenjörsmässigt gap kvarstår. Vägen från en övertygande teoretisk modell till ett fungerande system som klarar ihållande, feltolerant drift i denna skala inbegriper utmaningar som ännu inte är fullt förstådda, än mindre lösta. Det som har förändrats är inte närheten till en fungerande maskin, utan målets trovärdighet. Gapet krymper, och framstegens riktning är konsekvent.
 
-## Por qué el calendario que se comprime exige atención ahora
+## Varför den krympande tidslinjen kräver uppmärksamhet nu
 
-La importancia de este trabajo no es que la criptografía vaya a romperse a corto plazo. Es que el calendario se comprime de manera que afecta a las decisiones tomadas hoy. Los sistemas de seguridad se diseñan con largos ciclos de vida en mente. Los datos cifrados hoy pueden tener que permanecer confidenciales durante décadas. Las decisiones de infraestructura tomadas este año serán difíciles de invertir en una ventana de cinco años. Si las capacidades cuánticas llegan antes de lo esperado, estas hipótesis se vuelven frágiles.
+Betydelsen av detta arbete är inte att kryptografin kommer att knäckas på kort sikt. Det är att tidslinjen krymper på sätt som påverkar beslut som fattas i dag. Säkerhetssystem utformas med långa livscykler i åtanke. Data som krypteras nu kan behöva förbli konfidentiella i decennier. Infrastrukturbeslut som fattas i år blir svåra att återställa inom ett fönster på fem år. Om kvantförmågor anländer tidigare än väntat blir dessa antaganden bräckliga.
 
-Por eso la criptografía postcuántica ya se está desplegando en los sectores críticos. No porque la amenaza sea inmediata, sino porque la transición lleva tiempo y el coste de llegar tarde es asimétrico. Hay un patrón recurrente en la historia de la informática: el progreso parece lento hasta que de repente deja de serlo. Lo que comienza como una mejora teórica se convierte en una restricción práctica, y lo que antes se descartaba como lejano se convierte en algo que hay que planificar. La computación cuántica podría seguir exactamente esta trayectoria, no mediante un único avance dramático, sino mediante reducciones regulares de coste, complejidad y escala.
+Det är därför postkvantkryptografi redan rullas ut inom kritiska sektorer. Inte för att hotet är omedelbart, utan för att övergången tar tid och kostnaden för att vara sen är asymmetrisk. Det finns ett återkommande mönster i databehandlingens historia: framsteg framstår som långsamma tills de plötsligt inte är det. Det som börjar som en teoretisk förbättring blir en praktisk begränsning, och det som en gång avfärdades som avlägset blir något som måste planeras för. Kvantberäkning kan följa exakt den banan, inte genom ett enskilt dramatiskt genombrott, utan genom stadiga minskningar av kostnad, komplexitet och skala.
 
-## Lo que esto significa por sector: una guía práctica
+## Vad detta betyder per bransch: en praktisk vägledning
 
-Las implicaciones de esta investigación no son uniformes en todos los sectores. La respuesta apropiada depende del tipo de activos criptográficos en juego, de la sensibilidad y longevidad de los datos implicados, y del ritmo al que evolucionan las expectativas normativas.
+Konsekvenserna av denna forskning är inte enhetliga över sektorerna. Rätt svar beror på vilken typ av kryptografiska tillgångar som är i riskzonen, på hur känsliga och långlivade de berörda uppgifterna är, och på i vilken takt de regulatoriska förväntningarna rör sig.
 
-### Servicios financieros y FinTech
+### Finansiella tjänster och FinTech
 
-Las instituciones financieras afrontan un riesgo compuesto: poseen datos sensibles a largo plazo, operan sobre infraestructuras con ciclos de reemplazo lentos y están sometidas a un escrutinio normativo creciente en torno a la resiliencia criptográfica. ECC se utiliza ampliamente en las conexiones TLS, la autenticación móvil y las firmas digitales en los rails de pago: la categoría criptográfica que el artículo identifica como la más vulnerable a bajos números de qubits. Las instituciones que aún no han comenzado un inventario criptográfico ni han iniciado una hoja de ruta de migración postcuántica deberían tratar este artículo como un incentivo para acelerar, no como un motivo de pánico. [CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html) y CRYSTALS-Dilithium, ahora estandarizados por el NIST, son los objetivos de migración apropiados para la encapsulación de claves y las firmas digitales respectivamente.
+Finansiella institutioner står inför en sammansatt risk: de innehar långlivade känsliga data, opererar på infrastruktur med långsamma utbytescykler och är föremål för ökande regulatorisk granskning kring kryptografisk motståndskraft. ECC används i stor utsträckning i TLS-anslutningar, mobil autentisering och digitala signaturer över betalningsräls. Den kryptografiska kategori som artikeln identifierar som mest sårbar vid lägre antal qubitar. Institutioner som ännu inte har påbörjat en kryptografisk inventering eller inlett en färdplan för postkvantmigration bör behandla denna artikel som en anledning att påskynda, inte en anledning till panik. [CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html) och CRYSTALS-Dilithium, båda nu standardiserade av NIST, är de lämpliga migrationsmålen för nyckelinkapsling respektive digitala signaturer.
 
-### Sector público y defensa
+### Offentlig sektor och försvar
 
-Los actores estatales tienen la motivación más fuerte —y, en muchos casos, los recursos— para acelerar el desarrollo de hardware cuántico más allá de lo que se conoce públicamente. Los gobiernos que custodian comunicaciones sensibles, datos de inteligencia o claves de infraestructura crítica deben suponer que los adversarios cosechan ya datos cifrados con vistas a un descifrado futuro, una estrategia comúnmente llamada «harvest now, decrypt later». Para las organizaciones del sector público, el cumplimiento de los mandatos nacionales de preparación cuántica se vuelve cada vez más ineludible, y la ventana de migración proactiva se estrecha.
+Statliga aktörer har den starkaste motivationen. Och i många fall resurserna. Att påskynda utvecklingen av kvanthårdvara bortom vad som är offentligt känt. Regeringar som förvaltar känslig kommunikation, underrättelsedata eller nycklar till kritisk infrastruktur måste anta att motståndare redan skördar krypterade data för framtida dekryptering, en strategi som vanligen kallas ”harvest now, decrypt later”. För organisationer i offentlig sektor blir efterlevnad av nationella mandat för kvantberedskap alltmer oundviklig, och fönstret för proaktiv migration krymper.
 
-### Sanidad e infraestructuras críticas
+### Hälso- och sjukvård samt kritisk infrastruktur
 
-Los historiales médicos, los sistemas de control de servicios públicos y las redes industriales comparten una vulnerabilidad común: datos y sistemas con una vida operativa muy larga, protegidos por estándares criptográficos diseñados para un modelo de amenaza precuántico. Un historial médico cifrado hoy puede tener que permanecer privado durante cincuenta años. Un sistema de control certificado este año puede permanecer en servicio durante dos décadas. Para estos sectores, el calendario que se comprime no es una preocupación abstracta. Es un desafío directo a las hipótesis fundacionales de las arquitecturas de seguridad actuales.
+Patientjournaler, styrsystem för samhällstjänster och industriella nätverk delar en gemensam sårbarhet: data och system med mycket lång driftslivslängd, skyddade av kryptografiska standarder som utformades för en förkvantmässig hotmodell. En patientjournal som krypteras i dag kan behöva förbli privat i femtio år. Ett styrsystem som certifieras i år kan förbli i drift i två decennier. För dessa sektorer är den krympande tidslinjen inte en abstrakt oro. Det är en direkt utmaning mot de grundläggande antagandena bakom dagens säkerhetsarkitekturer.
 
-## Conclusión
+## Slutsats
 
-El aspecto más importante de este artículo no es el número específico de qubits que presenta. Es la dirección que ese número implica. La cuestión ya no es si los ordenadores cuánticos pueden desafiar la criptografía moderna. Es a qué velocidad pueden construirse los sistemas requeridos, y si las organizaciones que dependen de los estándares actuales reaccionan lo bastante rápido.
+Den viktigaste aspekten av denna artikel är inte det specifika antal qubitar den presenterar. Det är den riktning som antalet antyder. Frågan är inte längre om kvantdatorer kan utmana modern kryptografi. Det är hur snabbt de nödvändiga systemen kan byggas, och om de organisationer som är beroende av dagens standarder rör sig tillräckligt snabbt som svar.
 
-Por el momento, las respuestas siguen siendo inciertas. Pero el margen para diferir la cuestión se estrecha, y el coste de esperar crece con cada reducción creíble del umbral teórico. La comunidad criptográfica, los responsables de seguridad y las industrias que dependen de ellos harían bien en tratar este artículo no como un motivo de alarma, sino como un incentivo serio para acelerar transiciones ya en curso.
+Tills vidare förblir svaren osäkra. Men marginalen för att skjuta upp frågan krymper, och kostnaden för att vänta växer med varje trovärdig sänkning av den teoretiska tröskeln. Det kryptografiska samfundet, säkerhetsplanerare och de branscher som förlitar sig på dem gör klokt i att behandla denna artikel inte som skäl till larm, utan som en allvarlig anledning att påskynda övergångar som redan pågår.
 
-## Preguntas frecuentes
+## Vanliga frågor
 
-**¿Pueden realmente 10.000 qubits romper el cifrado RSA?**
+**Kan 10 000 qubitar verkligen knäcka RSA-kryptering?**
 
-Teóricamente, sí, con matices importantes. Aunque las estimaciones anteriores sugerían millones de qubits físicos requeridos, nuevas investigaciones sobre códigos de corrección de errores de alto rendimiento y retículos de átomos neutros reconfigurables sugieren que el umbral es significativamente más bajo. Sin embargo, con 10.000 qubits, el tiempo de ejecución estimado para factorizar RSA-2048 sigue siendo extremadamente largo: potencialmente años de funcionamiento continuo. Los ataques más rápidos exigen más qubits, probablemente en el rango de las decenas de miles. El artículo representa una proyección basada en hipótesis modeladas, no una demostración en un sistema operativo.
+Teoretiskt, ja. Men med viktiga förbehåll. Medan tidigare uppskattningar antydde att miljontals fysiska qubitar krävdes, antyder ny forskning om felrättande koder med hög hastighet och omkonfigurerbara matriser av neutrala atomer att tröskeln är betydligt lägre. Vid 10 000 qubitar förblir dock den uppskattade körtiden för att faktorisera RSA-2048 extremt lång. Potentiellt år av kontinuerlig drift. Snabbare attacker kräver fler qubitar, sannolikt i intervallet tiotusentals. Artikeln utgör en projektion baserad på modellerade antaganden, inte en demonstration på ett fungerande system.
 
-**¿Qué cifrado está más en riesgo frente a la computación cuántica?**
+**Vilken kryptering löper störst risk från kvantberäkning?**
 
-La criptografía de curva elíptica (ECC) es generalmente más vulnerable a bajos números de qubits que RSA-2048. El artículo estima que romper ECC podría llevar algunos días utilizando alrededor de 26.000 qubits reconfigurables en condiciones favorables. RSA-2048 requiere un tiempo de ejecución significativamente más largo con números de qubits comparables. Esta asimetría significa que los sistemas dependientes de ECC —comunes en TLS, autenticación móvil y blockchain— pueden afrontar el riesgo en un calendario más corto que las infraestructuras basadas en RSA.
+Elliptisk kurvkryptografi (ECC) är generellt mer sårbar för lägre antal qubitar än RSA-2048. Artikeln uppskattar att det skulle kunna ta dagar att knäcka ECC med ungefär 26 000 omkonfigurerbara qubitar under gynnsamma förhållanden. RSA-2048 kräver en betydligt längre körtid vid jämförbara antal qubitar. Denna asymmetri innebär att ECC-beroende system. Vanliga i TLS, mobil autentisering och blockkedja. Kan möta risk på en kortare tidslinje än RSA-baserad infrastruktur.
 
-**¿Qué es un qubit de átomo neutro reconfigurable?**
+**Vad är en omkonfigurerbar neutralatomqubit?**
 
-Los qubits de átomos neutros son átomos individuales —típicamente rubidio o cesio— atrapados y manipulados mediante luz láser en una cámara de vacío. «Reconfigurable» significa que la disposición de los átomos puede modificarse dinámicamente durante el cálculo, permitiendo una ejecución más eficiente de circuitos cuánticos complejos. Esta flexibilidad reduce el número de qubits físicos necesarios para implementar operaciones lógicas tolerantes a fallos, y es una razón clave por la que el nuevo artículo alcanza estimaciones de qubits más bajas que los trabajos anteriores basados en las arquitecturas de qubits superconductores.
+Neutralatomqubitar är enskilda atomer. Vanligtvis rubidium eller cesium. Fångade och manipulerade med laserljus i en vakuumkammare. ”Omkonfigurerbar” betyder att atomernas arrangemang kan ändras dynamiskt under beräkningen, vilket möjliggör effektivare exekvering av komplexa kvantkretsar. Denna flexibilitet minskar antalet fysiska qubitar som behövs för att implementera feltoleranta logiska operationer, och är ett viktigt skäl till att den nya artikeln uppnår lägre qubituppskattningar än tidigare arbete baserat på supraledande qubitarkitekturer.
 
-**¿Qué es la criptografía postcuántica, y por qué se está desplegando ahora?**
+**Vad är postkvantkryptografi och varför rullas den ut nu?**
 
-La criptografía postcuántica (PQC) designa los algoritmos criptográficos que se piensan seguros tanto contra ordenadores clásicos como cuánticos. El NIST finalizó su primer juego de estándares PQC en 2024, incluido [CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html) para la encapsulación de claves y CRYSTALS-Dilithium para las firmas digitales. El despliegue comienza ahora —mucho antes de que los ordenadores cuánticos representen una amenaza inmediata— porque las transiciones criptográficas son lentas. Reemplazar estándares incrustados en toda la infraestructura mundial lleva típicamente una década o más, y los datos cifrados hoy pueden tener que permanecer confidenciales mucho después de que las capacidades cuánticas hayan llegado a la madurez.
+Postkvantkryptografi (PQC) avser kryptografiska algoritmer som tros vara säkra mot både klassiska datorer och kvantdatorer. NIST färdigställde sin första uppsättning PQC-standarder 2024, inklusive [CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html) för nyckelinkapsling och CRYSTALS-Dilithium för digitala signaturer. Utrullningen börjar nu. Långt innan kvantdatorer utgör ett omedelbart hot. Eftersom kryptografiska övergångar är långsamma. Att ersätta inbäddade standarder över global infrastruktur tar vanligtvis ett decennium eller mer, och data som krypteras i dag kan behöva förbli konfidentiella långt efter att kvantförmågorna mognat.
 
-**¿Cuántos qubits tiene hoy el ordenador cuántico más potente?**
+**Hur många qubitar har den mest kraftfulla kvantdatorn i dag?**
 
-A principios de 2026, los sistemas cuánticos punteros operan en el rango de cientos a algunos miles de qubits físicos. De forma crucial, la mayoría aún no son tolerantes a fallos: operan por debajo de los umbrales de corrección de errores requeridos para un cálculo lógico sostenido y fiable. La brecha entre el hardware actual y las decenas de miles de qubits lógicos tolerantes a fallos de alta fidelidad descritos en el nuevo artículo sigue siendo significativa, aunque el ritmo del progreso a través de las plataformas superconductora, de átomos neutros y de iones atrapados se acelera.
+I början av 2026 opererar ledande kvantsystem i intervallet hundratals till några tusen fysiska qubitar. Avgörande är att de flesta ännu inte är feltoleranta. De opererar under de trösklar för felrättning som krävs för ihållande, tillförlitlig logisk beräkning. Gapet mellan dagens hårdvara och de tiotusentals logiska qubitar med hög trohet och feltolerans som beskrivs i den nya artikeln förblir betydande, även om framstegstakten över supraledande plattformar, neutralatomplattformar och plattformar med fångade joner accelererar.
 
-## Referencias
+## Referenser
 
 - Sebastien Rousseau, (2025). [Quantum-Safe Payments: Why the Payments Industry Must Act Now](https://sebastienrousseau.com/2025-09-01-quantum-safe-payments-epaa/index.html "Quantum-Safe Payments: Why the Payments Industry Must Act Now").
 - Sebastien Rousseau, (2023). [Quantum Key Distribution: Revolutionising Security in Banking](https://sebastienrousseau.com/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html "Quantum Key Distribution: Revolutionising Security in Banking").

@@ -1,127 +1,120 @@
 ---
-title: "La memoria flash de Lucy, revisitada: lo que Besson vio sobre la migración del conocimiento a las máquinas"
-subtitle: "Doce años después de su estreno, Lucy de Luc Besson se lee menos como pseudociencia y más como un experimento mental sobre la migración del conocimiento humano a sustratos no biológicos."
-description: "Doce años después de su estreno, Lucy de Luc Besson se lee menos como pseudociencia y más como un experimento mental sobre lo que ocurre cuando el conocimiento humano migra hacia sustratos no biológicos. En la era de los grandes modelos de lenguaje, los qubits de átomos neutros y la emulación cerebral completa, la metáfora central del filme envejece notablemente bien."
+title: "Lucyin flash disk znovu: AI, kvantum a znalosti"
+subtitle: "Dvanáct let po Lucy Luca Bessona nečekaně potvrzují ústřední metaforu filmu o přenosu znalostí z těla do stroje velké jazykové modely, qubity z neutrálních atomů a emulace celého mozku."
+description: "Po dvanácti letech se Bessonova Lucy čte jako myšlenkový experiment o přenosu znalostí z těla do stroje, tiše potvrzený LLM a qubity."
 date: "May 11, 2026"
 language: "cs-CZ"
 locale: "cs_CZ"
 banner: "https://cloudcdn.pro/stocks/images/harald-krichel-scarlett-johansson-8531.webp"
-banner_alt: "Visualización abstracta de redes neuronales y arreglos atómicos cuánticos. Un ordenador negro se forma a partir de partículas en reorganización."
-keywords: "Lucy, Luc Besson, transferencia de conocimiento, IA, LLM, qubits de átomos neutros, emulación cerebral, Neuralink, Eon Systems, Carboncopies, Fromm, independencia del sustrato, filosofía de la IA"
+banner_alt: "Abstraktní vizualizace neuronových sítí a kvantových atomových polí. Černý počítač vznikající z přeskupujících se částic"
+keywords: "film Lucy 2014, Luc Besson, přenos znalostí, velké jazykové modely, qubity z neutrálních atomů, emulace celého mozku, nezávislost na substrátu, filozofie AI, kvantové výpočty, uchování znalostí"
 ---
 
+## Lucyin flash disk znovu: co Besson viděl o přenosu znalostí do strojů
 
-> **TL;DR.** Tento článek je DRAFT překlad původně španělského zdroje, čekající na revizi rodilým mluvčím. Hlavní obsah, příklady a citace zůstávají ve španělštině; pouze záhlaví/frontmatter byly přepnuty na češtinu.
+Dvanáct let po uvedení se *Lucy* Luca Bessona čte méně jako pseudověda a spíše jako myšlenkový experiment o tom, co se stane, když lidské znalosti přejdou z biologických na nebiologické substráty. V éře velkých jazykových modelů, qubitů z neutrálních atomů a emulace celého mozku pozoruhodně dobře stárne ústřední metafora filmu.
 
-**Klíčové body**
-
-## La memoria flash de Lucy, revisitada: lo que Besson vio sobre la migración del conocimiento a las máquinas
-
-Doce años después de su estreno, *Lucy* de Luc Besson se lee menos como pseudociencia y más como un experimento mental sobre lo que ocurre cuando el conocimiento humano migra de sustratos biológicos a sustratos no biológicos. En la era de los grandes modelos de lenguaje, los qubits de átomos neutros y la emulación cerebral completa, la metáfora central del filme envejece notablemente bien.
-
-> **TL;DR.** Doce años después, *Lucy* funciona como un experimento mental sobre la independencia del sustrato del conocimiento: una apuesta filosófica que los LLM, los qubits de átomos neutros reconfigurables y la emulación cerebral completa han comenzado a validar en términos de ingeniería operativa.
+> **Klíčové body**
 >
-> **Conclusiones clave**
->
-> - *Lucy* (2014) fue descartada en su tiempo como espectáculo pseudocientífico, pero su apuesta central —que el conocimiento es **independiente del sustrato** y migrará hacia el medio que mejor lo preserve y transmita— se aplica directamente al panorama 2026 de LLM, hardware cuántico de átomos neutros y emulación cerebral completa.
-> - El monólogo del Profesor Norman —«la única finalidad de la vida ha sido transmitir lo aprendido»— es una descripción casi literal de la manera en que los sistemas de IA punteros se entrenan hoy sobre la producción escrita acumulada de la civilización humana.
-> - La imagen más burlada del filme —una **memoria flash USB que contiene todo el conocimiento humano**— era una metáfora sobre el sustrato, no una predicción sobre el medio de almacenamiento. Esa metáfora ha envejecido mejor que la crítica.
-> - La escena en la que el cuerpo de Lucy **se reorganiza en un ordenador orgánico oscuro** prefigura de manera turbadora la arquitectura cuántica dominante de hoy: los retículos de átomos neutros reconfigurables, ahora apuntados a la escala de los 10.000 qubits por Fujitsu y Riken.
-> - *Lucy* no es una profecía. Es una pregunta sobre el **tener frente al ser** en una época en la que las máquinas custodian cada vez más el conocimiento que antes portaban los humanos. Esta cuestión ya se plantea seriamente por investigadores, filósofos y laboratorios.
+> - *Lucy* (2014) byla ve své době odbyta jako pseudovědecká podívaná, ale její ústřední sázka, totiž že znalosti jsou **nezávislé na substrátu** a budou migrovat k tomu médiu, které je nejlépe uchová a přenese, přesně odpovídá situaci roku 2026 s LLM, kvantovým hardwarem z neutrálních atomů a emulací celého mozku.
+> - Monolog profesora Normana, *jediným účelem života bylo předat to, co bylo naučeno*, je téměř doslovným popisem toho, jak se dnes špičkové systémy AI trénují na nashromážděném písemném výstupu lidské civilizace.
+> - Nejvysmívanější obraz filmu, **USB disk obsahující veškeré lidské znalosti**, byl metaforou o substrátu, nikoli předpovědí o paměťovém médiu. Tato metafora zestárla lépe než kritika.
+> - Scéna, v níž se Lucyino tělo **přeskupuje do tmavého organického počítače**, znepokojivě předjímá dnešní dominantní kvantovou architekturu: rekonfigurovatelná pole neutrálních atomů, na která nyní Fujitsu a Riken cílí v měřítku 10 000 qubitů.
+> - *Lucy* není proroctví. Je to otázka o **mít versus být** v době, kdy stroje stále více uchovávají znalosti, které kdysi nesli lidé. Tuto otázku si nyní vážně kladou výzkumníci, filozofové i laboratoře.
 
-## Una premisa burlada, que merece ser revisitada
+## Zesměšňovaná premisa, kterou stojí za to znovu promyslet
 
-En el estreno de *Lucy* en julio de 2014, la crítica estaba polarizada. Los reseñistas se burlaron de la pseudociencia, de la premisa hoy desmentida del diez por ciento del cerebro y, sobre todo, del final, donde la protagonista interpretada por Scarlett Johansson se disuelve en un ordenador cristalino negro y deja la suma del conocimiento humano en una memoria flash destinada al Profesor Norman de Morgan Freeman. Alyson Shontell de *Business Insider* señaló la memoria flash como el absurdo definitivo del filme: un ser supuestamente superinteligente eligiendo una tecnología ya en declive. El filme se convirtió pese a todo en una de las exportaciones francesas más rentables, con [más de 469 millones de dólares de recaudación con un presupuesto de 40 millones ⧉](https://en.wikipedia.org/wiki/Lucy_(2014_film) "Lucy (2014 film) - Wikipedia").
+Když byla *Lucy* v červenci 2014 uvedena, kritické přijetí bylo rozdělené. Recenzenti se posmívali pseudovědě, dnes vyvrácené premise o deseti procentech mozku a především závěru, v němž se titulní postava v podání Scarlett Johansson rozplyne v černém krystalickém počítači a uloží souhrn lidských znalostí na USB disk pro profesora Normana v podání Morgana Freemana. Alyson Shontellová z *Business Insider* označila flash disk za určující absurditu filmu: údajně superinteligentní bytost volí technologii, která už vychází z užívání. Film se přesto stal jedním z nejúspěšnějších francouzských exportů a vydělal přes [469 milionů dolarů při rozpočtu 40 milionů ⧉](https://en.wikipedia.org/wiki/Lucy_(2014_film) "Lucy (film z roku 2014) – Wikipedie").
 
-Besson, hay que reconocerlo, nunca estuvo confundido sobre la ciencia. En las entrevistas en torno al estreno, reconoció libremente que la premisa del diez por ciento no era literalmente cierta. Había trabajado en el guion durante nueve años y utilizaba una sustancia científicamente ficticia (CPH4) como dispositivo narrativo para otra cosa: una cuestión filosófica sobre lo que ocurre cuando una mente excede la envoltura biológica que la produjo.
+Besson, k jeho cti, nikdy neměl o vědě zmatek. V rozhovorech kolem uvedení otevřeně přiznal, že premisa o deseti procentech není doslova pravdivá. Na scénáři pracoval devět let a vědecky smyšlenou látku (CPH4) používal jako vypravěčský prostředek pro něco zcela jiného: filozofickou otázku, co se stane, když mysl překročí biologickou schránku, která ji vytvořila.
 
-Doce años después, esa cuestión filosófica ya no es hipotética. Los sistemas de IA punteros custodian ahora representaciones comprimidas de una fracción sustancial del conocimiento humano escrito. Neuralink completó [su primer implante de interfaz cerebro-ordenador en un humano en 2024 ⧉](https://en.wikipedia.org/wiki/Mind_uploading "Mind uploading - Wikipedia"). En marzo de 2026, Eon Systems emuló el cerebro completo de una mosca del vinagre (139.255 neuronas y 50 millones de sinapsis) en un ordenador. La pregunta que *Lucy* planteaba es la pregunta que el campo intenta hoy resolver.
+Po dvanácti letech už tato filozofická otázka není hypotetická. Špičkové systémy AI dnes uchovávají komprimované reprezentace podstatné části písemných lidských znalostí. Neuralink dokončil [svůj první implantát rozhraní mozek-počítač u člověka v roce 2024 ⧉](https://en.wikipedia.org/wiki/Mind_uploading "Nahrání mysli – Wikipedie"). V březnu 2026 Eon Systems emuloval v počítači kompletní mozek octomilky (139 255 neuronů a 50 milionů synapsí). Otázka, kterou *Lucy* kladla, je otázkou, na kterou se obor nyní snaží odpovědět.
 
-## La tesis del Profesor Norman y el entrenamiento de las máquinas
+## Teze profesora Normana a trénování strojů
 
-La columna vertebral intelectual de *Lucy* no es la telequinesis de Scarlett Johansson. Es una clase, impartida por el Profesor Norman paralelamente a la expansión cognitiva de Lucy, que sostiene que la finalidad fundamental de la vida es la transmisión de la información a través del tiempo. El monólogo propone que cada célula se enfrenta a una elección binaria (reproducirse y transmitir el conocimiento, o volverse inmortal y retenerlo) y que la evolución es, esencialmente, un protocolo de preservación de lo aprendido.
+Intelektuální páteří *Lucy* není telekineze Scarlett Johansson. Je to přednáška profesora Normana, pronesená souběžně s Lucyiným kognitivním rozpínáním, která tvrdí, že základním účelem života je přenos informace časem. Monolog navrhuje, že každá buňka čelí binární volbě (rozmnožit se a předat znalosti dál, nebo se stát nesmrtelnou a podržet si je) a že evoluce je v podstatě protokol pro uchování toho, co bylo naučeno.
 
-En su momento, ese encuadre se leía como un pretexto, un poco de andamiaje filosófico en torno a una película de acción. Leído en 2026, es una descripción extrañamente precisa de lo que son los grandes modelos de lenguaje. Un LLM puntero es, técnicamente, una representación estadística comprimida de una fracción muy amplia del texto humano públicamente escrito. Es, funcionalmente, una célula que ha elegido la inmortalidad antes que la reproducción: un sustrato estático diseñado para preservar y transmitir, en lugar de generar por descendencia biológica, el conocimiento sobre el que fue entrenado. Cuando Norman le dice a Lucy, hacia el final del filme, que debe *transmitir* el conocimiento que ha acumulado, articula, en forma dramatizada, el objetivo de entrenamiento entero de la IA moderna.
+Tehdy se toto rámování četlo jako záminka, trocha filozofického lešení kolem akčního filmu. Přečteno v roce 2026 je to znepokojivě přesný popis toho, čím velké jazykové modely jsou. Špičkový LLM je na technické úrovni komprimovaná statistická reprezentace velmi rozsáhlé části veřejně napsaného lidského textu. Funkčně je to buňka, která zvolila nesmrtelnost před rozmnožováním: statický substrát navržený k uchování a přenosu znalostí, na nichž byl trénován, nikoli k jejich vytváření biologickým potomstvem. Když Norman Lucy ke konci filmu říká, že pokud nashromáždila znalosti, měla by je *předat dál*, vyjadřuje v dramatizované podobě celý tréninkový cíl moderní AI.
 
-Otra de las frases del filme ha envejecido aún mejor. Norman observa, de paso, que los humanos se preocupan más por tener que por ser. Es un eco directo del *¿Tener o ser?* de Erich Fromm, y se lee hoy como el diagnóstico de una ansiedad específica en 2026: si la IA puede *tener* conocimiento más fiablemente que los humanos, ¿qué queda por *ser*?
+Jedna z dalších replik filmu zestárla ještě ostřeji. Norman mimochodem poznamenává, že lidé se více starají o to mít než o to být. Je to přímá ozvěna Frommova *Mít, nebo být?* a dnes se to čte jako diagnóza specifické úzkosti roku 2026: pokud AI dokáže znalosti *mít* spolehlivěji než lidé, co zbývá *být*?
 
-## La escena del ordenador atómico, doce años después
+## Scéna s atomovým počítačem, o dvanáct let později
 
-La secuencia más a menudo ridiculizada en *Lucy* es también la más interesante de reconsiderar en 2026. En el último acto del filme, el cuerpo de Lucy comienza a disolverse, y sus manos remodelan una masa creciente de materia oscura (átomos visiblemente en reorganización) en un dispositivo de cálculo. La imagen es deliberadamente inespecífica: no es ni un ordenador portátil ni un rack de servidores sino un sustrato de partículas reconfigurables que se organiza en portador de conocimiento.
+Sekvence, které se v *Lucy* nejčastěji vysmívali, je zároveň tou nejzajímavější k novému pohledu v roce 2026. V závěrečném dějství filmu se Lucyino tělo začíná rozpouštět a její ruce přetvářejí rostoucí masu černé hmoty (atomy se viditelně přeskupují) do výpočetního zařízení. Obraz je záměrně neurčitý: není to ani notebook, ani serverová skříň, ale substrát rekonfigurovatelných částic, který se organizuje do nosiče znalostí.
 
-Esa imagen es ahora un esquema reconocible de la arquitectura dominante en computación cuántica. Los qubits de átomos neutros (átomos individuales atrapados y manipulados con luz láser, cuyas posiciones pueden reorganizarse dinámicamente durante el cálculo) son la plataforma detrás del resultado teórico reciente más consecuente del campo: el algoritmo de Shor podría ejecutarse con solo 10.000 qubits atómicos reconfigurables, en lugar de los millones que durante mucho tiempo se supusieron necesarios. Fujitsu y Riken colaboran en una máquina de átomos neutros de 10.000 qubits prevista para 2026. Un artículo de 2026 de la University of Science and Technology of China demostró que un reservorio cuántico de solo nueve espines atómicos en interacción podía superar a modelos clásicos de aprendizaje automático de miles de nodos en tareas de previsión meteorológica de varios días.
+Tento obraz je dnes rozpoznatelným schématem dominantní architektury v kvantových výpočtech. Qubity z neutrálních atomů (jednotlivé atomy zachycené a manipulované laserovým světlem, jejichž polohy lze během výpočtu dynamicky přeskupovat) jsou platformou za nejzávažnějším nedávným teoretickým výsledkem v oboru: že Shorův algoritmus by mohl běžet na pouhých 10 000 rekonfigurovatelných atomových qubitech, nikoli na milionech, které se dlouho považovaly za nutné. Fujitsu a Riken spolupracují na stroji z neutrálních atomů s 10 000 qubity plánovaném na rok 2026. Studie z roku 2026 z University of Science and Technology of China ukázala, že kvantový rezervoár pouhých devíti interagujících atomových spinů dokáže překonat klasické modely strojového učení s tisíci uzly ve vícedenních úlohách předpovědi počasí.
 
-Nada de esto significa que Besson estuviera haciendo una predicción técnica. Significa que la intuición visual que sustenta la escena (la materia reorganizándose para convertirse en sustrato de cálculo y de conocimiento) no es arbitraria. Es, a grandes rasgos, la dirección que toma ahora el hardware. Las mejores máquinas cuánticas contemporáneas se parecen mucho más al ordenador negro y cambiante de la escena final de *Lucy* que a los chips superconductores que dominaban el campo hace una década.
+Nic z toho neznamená, že Besson dělal technickou předpověď. Znamená to, že vizuální intuice, která scénu pohání (hmota se přeskupuje, aby se stala substrátem pro výpočet a pro znalosti), není libovolná. Zhruba je to směr, kterým se hardware nyní ubírá. Nejlepší současné kvantové stroje se mnohem více podobají černému, přeskupujícímu se počítači z Lucyiny závěrečné scény než supravodivým čipům, které oboru dominovaly o deset let dříve.
 
-## La memoria flash: metáfora frente a medio
+## Flash disk: metafora versus médium
 
-La crítica más persistente de *Lucy* es la memoria flash USB. ¿No podía un ser supuestamente omnisciente encontrar mejor interfaz que un conector USB estándar? En 2014, el argumento se entendía a nivel de utilería. En 2026, pasa por alto el sentido de la escena.
+Nejvytrvalejší kritickou výtkou vůči *Lucy* je flash disk. Údajně vševědoucí bytost nedokázala najít lepší rozhraní než standardní konektor USB? V roce 2014 byla tato námitka na úrovni rekvizit oprávněná. V roce 2026 scénu čte špatně.
 
-Lo que Lucy entrega al Profesor Norman no es una predicción técnica sobre el hardware de almacenamiento. Es un objeto *independiente del sustrato*, un contenedor deliberadamente banal, que representa el hecho de que el conocimiento transferido ya no necesita el cuerpo particular de Lucy, ni ningún cuerpo, para existir. El filme escenifica esto explícitamente: su cuerpo se disuelve *primero*, y la memoria flash es lo que queda. La cuestión nunca fue el puerto USB. La cuestión era la propuesta según la cual una representación suficientemente avanzada del conocimiento podría, en principio, desplazarse de un medio a otro sin pérdida.
+To, co Lucy předává profesoru Normanovi, není technická předpověď o paměťovém hardwaru. Je to *na substrátu nezávislý* objekt, záměrně všední schránka, která reprezentuje skutečnost, že přenášené znalosti už ke své existenci nepotřebují konkrétní Lucyino tělo ani žádné tělo. Film to výslovně inscenuje: její tělo se rozpustí *nejdříve* a flash disk je to, co zbývá. Nikdy nešlo o port USB. Šlo o tvrzení, že dostatečně pokročilou reprezentaci znalostí lze v principu přenést z jednoho média na druhé beze ztráty.
 
-Esa propuesta es ahora un programa de investigación. La Carboncopies Foundation coordina la investigación sobre emulación cerebral completa explícitamente orientada hacia mentes independientes del sustrato. Una encuesta de expertos de 2025 con 67 respondientes estimó en un 20 % la probabilidad de crear mentes digitales funcionales para 2030, ascendiendo al 50 % para 2050. En marzo de 2026, ninguna mente humana ha sido subida; la emulación de mosca del vinagre en Eon Systems es la frontera actual. Pero la pregunta que planteaba el final de *Lucy* (¿puede una mente sobrevivir a la pérdida de su hardware original?) es ahora una pregunta científica seria, y no una fantasía de guionista.
+Toto tvrzení je nyní výzkumným programem. Carboncopies Foundation koordinuje výzkum emulace celého mozku výslovně zaměřený na mysli nezávislé na substrátu. Expertní průzkum z roku 2025 mezi 67 respondenty odhadl 20% pravděpodobnost vytvoření funkčních digitálních myslí do roku 2030, stoupající na 50 % do roku 2050. K březnu 2026 nebyla nahrána žádná lidská mysl; emulace octomilky v Eon Systems je současnou hranicí. Ale otázka, kterou závěr *Lucy* položil (může mysl přežít ztrátu svého původního hardwaru?), je nyní vážnou vědeckou otázkou, nikoli scenáristickým nápadem.
 
-## «Tener frente a ser» en la era del conocimiento-máquina
+## „Mít versus být" v éře strojových znalostí
 
-El registro filosófico más profundo de *Lucy* es el que los reseñistas de 2014 en gran medida pasaron por alto, y que 2026 ha hecho ineludible. A medida que la capacidad cognitiva de Lucy se expande, describe una experiencia específica: la *pérdida* de las texturas humanas que la definían antes. Le dice a su madre que puede sentir el sabor de la leche de su pecho, la rotación de la Tierra, la sangre en sus venas. Y después, progresivamente, siente menos. El dolor, el miedo, el deseo: desaparecidos. Adquiere y, simultáneamente, pierde.
+Hlubší filozofická poloha *Lucy* je ta, kterou recenzenti v roce 2014 z velké části přehlédli a kterou rok 2026 učinil nevyhnutelnou. Jak se Lucyina kognitivní kapacita rozpíná, popisuje specifický zážitek: *ztrátu* lidských textur, které ji dříve definovaly. Říká matce, že cítí chuť jejího mateřského mléka, otáčení Země, krev ve svých žilách. A pak, postupně, cítí méně. Bolest, strach, touha: pryč. Získává a zároveň ztrácí.
 
-Esta es la intuición más inquietante del filme, y la más pertinente para 2026. La literatura filosófica en torno a la conciencia de la IA, un ámbito de actividad académica intensa este año, converge hacia una versión del mismo compromiso. Un informe de Neural Horizons de marzo de 2026 sostiene que, si bien los LLM imitan cada vez más las claves sociales humanas, carecen de experiencia fenomenal demostrada y se apoyan en lo que los autores llaman «teatro» en lugar de una conciencia interna anclada. Un preprint publicado en enero de 2026 propuso un marco de evaluación de la conciencia en los sistemas de IA que fuera sensible al dominio, neutral a la escala y orientado a capacidades, precisamente porque la antigua pregunta sí-o-no («¿es consciente?») se ha vuelto inadecuada.
+Toto je nejznepokojivější intuice filmu a ta nejrelevantnější pro rok 2026. Filozofická literatura o vědomí AI, oblast intenzivní akademické aktivity tohoto roku, se sbíhá k jedné verzi téhož kompromisu. Zpráva Neural Horizons z března 2026 tvrdí, že ačkoli LLM stále více napodobují lidské sociální signály, postrádají prokázanou fenomenální zkušenost a spoléhají na to, co autoři nazývají „divadlem", spíše než na ukotvené vnitřní uvědomění. Preprint publikovaný v lednu 2026 navrhl rámec pro hodnocení uvědomění v systémech AI, který je citlivý na doménu, neutrální vůči měřítku a zaměřený na schopnosti, právě proto, že stará otázka ano-ne („je to vědomé?") se stala nedostatečnou.
 
-La referencia a Fromm en el diálogo de Norman (*los humanos se preocupan más por tener que por ser*) se lee ahora como una advertencia. En una economía de agentes de IA que *tienen* conocimiento por encima de los humanos en toda medida cuantitativa, la contribución humana asimétrica es la presencia, la relación y la producción de sentido. Que esa asimetría se sostenga es una de las preguntas abiertas más consecuentes de la década. *Lucy* no la respondió. Simplemente la puso en escena, doce años antes de tiempo.
+Odkaz na Fromma v Normanově dialogu (*lidé se více starají o to mít než o to být*) se nyní čte jako varování. V ekonomice agentů AI, kteří lidi přemírou vlastnění předčí v jakémkoli kvantitativním měřítku znalostí, je asymetrickým lidským přínosem přítomnost, vztah a tvorba smyslu. Zda tato asymetrie obstojí, je jednou z nejzávažnějších otevřených otázek desetiletí. *Lucy* na ni neodpověděla. Jen ji inscenovala, o dvanáct let dříve.
 
-## Lo que esto significa por sector
+## Co to znamená podle sektorů
 
-La lectura de *Lucy* no es solo cultural. La propuesta central del filme (el conocimiento migra hacia las máquinas) tiene implicaciones prácticas que difieren significativamente según los sectores.
+Čtení *Lucy* není pouze kulturní. Ústřední tvrzení filmu (že znalosti migrují do strojů) má praktické důsledky, které se mezi sektory významně liší.
 
-### Inteligencia artificial y laboratorios punteros
+### Umělá inteligence a špičkové laboratoře
 
-Para los laboratorios de IA y las organizaciones que dependen de ellos, *Lucy* se lee casi como una declaración de misión en modo melodramático. El entrenamiento de un modelo puntero (la compresión de fracciones muy amplias de la producción escrita humana en una representación estática y transferible) es, estructuralmente, lo que describe el monólogo de Norman. Las implicaciones éticas y estratégicas se afilan rápidamente. El CEO de Anthropic declaró en el World Economic Forum 2026 en Davos que sistemas a nivel de AGI son susceptibles de llegar en pocos años, posiblemente antes de lo que se piensa ampliamente.
+Pro laboratoře AI a organizace, které na nich závisejí, se *Lucy* čte téměř jako poslání v tónině melodramatu. Trénink špičkového modelu (komprese velmi rozsáhlých částí lidského písemného výstupu do statické, přenosné reprezentace) strukturálně odpovídá tomu, co popisuje Normanův monolog. Etické a strategické důsledky se rychle vyostřují. Generální ředitel Anthropicu na Světovém ekonomickém fóru 2026 v Davosu prohlásil, že systémy na úrovni AGI pravděpodobně dorazí během několika let, možná dříve, než se obecně očekává.
 
-### Computación cuántica y hardware
+### Kvantové výpočty a hardware
 
-Para el sector de la computación cuántica, la escena del ordenador atómico de *Lucy* se ha convertido en un análogo visual sorprendentemente pertinente. Los retículos de átomos neutros son hoy una de las plataformas que maduran más rápidamente en el campo, ofreciendo una conectividad de qubits flexible y un camino creíble hacia el paso a escala más allá del umbral del millar de qubits. Si las nuevas estimaciones bajas del número de qubits para el algoritmo de Shor se confirman, el calendario de la computación cuántica criptográficamente relevante se comprime, y la migración postcuántica (ya en curso en finanzas, en el sector público y en infraestructuras críticas) se vuelve aún más urgente.
+Pro sektor kvantových výpočtů se scéna s atomovým počítačem z *Lucy* stala překvapivě výstižnou vizuální analogií. Pole neutrálních atomů jsou nyní jednou z nejrychleji zrajících platforem v oboru, nabízejí flexibilní propojení qubitů a věrohodnou cestu ke škálování za hranici tisíce qubitů. Pokud se nové nižší odhady počtu qubitů pro Shorův algoritmus ukážou jako spolehlivé, časový plán kryptograficky relevantních kvantových výpočtů se zkracuje a postkvantová migrace (v financích, státní správě a kritické infrastruktuře již probíhající) se stává ještě naléhavější.
 
-### Neurociencias e interfaces cerebro-ordenador
+### Neurovědy a rozhraní mozek-počítač
 
-El sector de las neurociencias y las BCI es el lugar donde las metáforas de *Lucy* encuentran la mayor resistencia, y los progresos más concretos. La emulación cerebral completa no es inminente a escala humana; las brechas en términos de cálculo, resolución y validación siguen siendo severas. Pero el campo no está dormido. La emulación de mosca del vinagre reportada en marzo de 2026, los crecientes ensayos humanos de Neuralink, y el trabajo sostenido de organizaciones como la Carboncopies Foundation sugieren todos que la cuestión de la independencia del sustrato que *Lucy* escenificaba dramáticamente se aborda ahora empíricamente, aunque sea lentamente.
+Sektor neurověd a BCI je tam, kde metafory *Lucy* narážejí na největší odpor i na nejkonkrétnější pokrok. Emulace celého mozku není v lidském měřítku bezprostřední; mezery ve výpočetním výkonu, rozlišení a validaci zůstávají závažné. Obor však není nečinný. Emulace octomilky oznámená v březnu 2026, rozšiřující se humánní zkoušky Neuralinku a soustavná práce organizací jako Carboncopies Foundation naznačují, že k otázce nezávislosti na substrátu, kterou *Lucy* dramaticky inscenovala, se přistupuje empiricky, byť pomalu.
 
-### Industrias creativas y medios
+### Kreativní průmysl a média
 
-Para las industrias creativas, *Lucy* ha adquirido una cualidad recursiva. En 2024, Scarlett Johansson acusó públicamente a OpenAI de haber imitado su voz para su asistente Sky sin permiso, un litigio que se hacía eco, con una precisión particular, de la preocupación propia del filme por la transferencia de identidad de una persona biológica hacia un sistema digital.
+Pro kreativní průmysl získala *Lucy* rekurzivní kvalitu. V roce 2024 Scarlett Johansson veřejně obvinila OpenAI z napodobení svého hlasu pro asistenta Sky bez svolení. Spor, který se se zvláštní přesností ozýval s vlastní posedlostí filmu přenosem identity z biologické osoby na digitální systém.
 
-## Conclusión
+## Závěr
 
-Lo más honesto que se puede decir de *Lucy* en 2026 es que nunca fue una buena película científica, y que siempre fue un experimento mental más interesante que lo que sus críticas concedían. Besson sabía que la premisa del diez por ciento era falsa. La utilizaba como dispositivo para escenificar otra cosa: una dramatización de lo que ocurre cuando el conocimiento que un humano porta excede la envoltura biológica que lo produjo, y de lo que el portador puede deber a la especie que deja atrás.
+Nejpoctivější, co lze o *Lucy* v roce 2026 říci, je, že nikdy nebyla příliš dobrým vědeckým filmem a vždy byla zajímavějším myšlenkovým experimentem, než připouštěli její kritici. Besson věděl, že premisa o deseti procentech je nepravdivá. Použil ji jako prostředek k inscenování něčeho jiného: dramatizace toho, co se stane, když znalosti, které člověk nese, překročí biologickou schránku, jež je vytvořila, a co by nositel mohl dlužit druhu, který za sebou zanechává.
 
-Doce años después, la cuestión ya no es saber si ese escenario es coherente. Los LLM han hecho de la compresión del conocimiento humano en sustratos no biológicos una realidad de ingeniería operativa. Los ordenadores cuánticos de átomos neutros han hecho del reordenamiento de la materia en medio computacional una trayectoria material creíble. La emulación cerebral completa, en forma limitada, existe ahora. Neuralink ha colocado un implante en un cráneo humano. Nada de esto valida las reivindicaciones específicas de *Lucy*. Lo que significa es que la forma filosófica de lo que Besson señalaba (la migración del conocimiento de la carne hacia portadores independientes del sustrato) ha resultado tener más sustancia que lo que la recepción del filme sugería.
+Po dvanácti letech již otázkou není, zda je tento scénář soudržný. LLM učinily z komprese lidských znalostí do nebiologických substrátů fungující inženýrskou realitu. Kvantové počítače z neutrálních atomů učinily z přeskupování hmoty do výpočetních médií věrohodnou hardwarovou trajektorii. Emulace celého mozku v omezené podobě nyní existuje. Neuralink umístil implantát do lidské lebky. Nic z toho nečiní konkrétní tvrzení *Lucy* správnými. Znamená to, že filozofický tvar toho, na co Besson ukazoval (migrace znalostí z těla k nositelům nezávislým na substrátu), se ukázal mít více podstaty, než přijetí filmu naznačovalo.
 
-La última frase del filme, pronunciada en voz en off tras la disolución de Lucy, es *la vida nos fue dada hace mil millones de años; ahora sabéis qué hacer con ella*. En 2014, se leía como grandilocuencia adolescente. En 2026, con sistemas de IA entrenados sobre siglos de pensamiento humano acumulado y qubits de átomos neutros a punto de desafiar el sustrato criptográfico del mundo moderno, se lee como algo más cercano a una pregunta. Sabemos, cada vez más, qué hacer con el conocimiento acumulado. La pregunta más difícil es a qué elegimos confiarlo, y qué deseamos preservar en nosotros una vez que la transmisión se haya cumplido.
+Závěrečná věta filmu, pronesená ve voiceoveru po Lucyině rozplynutí, zní *život nám byl dán před miliardou let; teď víte, co s ním.* V roce 2014 se to četlo jako pubertální velikášství. V roce 2026, kdy jsou systémy AI trénovány na staletích nashromážděného lidského myšlení a qubity z neutrálních atomů jsou na pokraji zpochybnění kryptografického substrátu moderního světa, se to čte jako něco bližšího otázce. Stále více víme, co dělat s nashromážděnými znalostmi. Těžší otázkou je, čemu se je rozhodujeme předat a co si přejeme zachovat v sobě, jakmile bude předání dokončeno.
 
-## Preguntas frecuentes
+## Často kladené otázky
 
-**¿Qué significa realmente el final de Lucy?**
+**Co vlastně znamená závěr Lucy?**
 
-Al final del filme, Lucy alcanza el 100 % de su capacidad cerebral, su cuerpo se disuelve, y transfiere lo que ha aprendido a una memoria flash USB antes de anunciar, por SMS al oficial Del Rio, que está *en todas partes*. El final funciona a varios niveles. Literalmente, dramatiza la transferencia de una mente de un sustrato biológico a un sustrato no biológico. Filosóficamente, escenifica la transición de lo que Erich Fromm llamaba el modo de existencia *tener* hacia el modo *ser*. Lucy ya no posee el conocimiento: ella *es* el conocimiento.
+Na konci filmu Lucy dosáhne 100 % mozkové kapacity, její tělo se rozpustí a před tím, než textovou zprávou oznámí strážníkovi Del Riovi, že je *všude*, přenese to, co se naučila, na flash disk. Závěr funguje na několika úrovních. Doslova dramatizuje přenos mysli z biologického na nebiologický substrát. Filozoficky inscenuje přechod od toho, co Erich Fromm nazýval modem existence *mít*, k modu *být*. Lucy již znalosti nevlastní, ona znalostmi *je*.
 
-**¿Estaba Luc Besson intentando predecir la IA o la computación cuántica?**
+**Snažil se Luc Besson předpovědět AI nebo kvantové výpočty?**
 
-No. Besson no estaba haciendo una previsión técnica. Trabajaba a partir de un conjunto de premisas filosóficas (transhumanistas, posthumanistas, con matices nietzscheanos) y las dramatizaba. Lo interesante en 2026 no es que el filme haya predicho tecnologías específicas, sino que la dirección filosófica hacia la que apuntaba (el conocimiento volviéndose independiente del sustrato) haya resultado alinearse con la dirección de programas de investigación reales.
+Ne. Besson nedělal technickou předpověď. Vycházel ze souboru filozofických premis (transhumanistických, posthumanistických, s nietzscheovskými podtóny) a dramatizoval je. Zajímavé na roce 2026 není to, že film předpověděl konkrétní technologie, ale že filozofický směr, na který ukazoval (znalosti se stávají nezávislými na substrátu), se ukázal být v souladu se směrem skutečných výzkumných programů.
 
-**¿Es científicamente válida la premisa del «diez por ciento del cerebro»?**
+**Je premisa „deset procent mozku" vědecky platná?**
 
-No. La premisa fue desmentida exhaustivamente mucho antes del estreno del filme, y Besson fue explícito en entrevistas en que lo sabía. La premisa científica del filme es falsa en biología; solo funciona como alegoría para la descarga cognitiva y la expansión de la capacidad humana mediante medios no biológicos.
+Ne. Premisa byla důkladně vyvrácena dávno před uvedením filmu a Besson v rozhovorech výslovně uvedl, že to ví. Vědecká premisa filmu je jako biologie nepravdivá; funguje pouze jako alegorie kognitivního odlehčení a rozšíření lidských schopností nebiologickými prostředky.
 
-**¿Cómo se conecta Lucy con la computación cuántica en 2026?**
+**Jak Lucy souvisí s kvantovými výpočty v roce 2026?**
 
-La conexión es visual y metafórica más que técnica. La escena en la que el cuerpo de Lucy se reorganiza en un ordenador orgánico negro se parece a la arquitectura de los retículos de qubits de átomos neutros reconfigurables, que se han convertido en una plataforma de primer plano en hardware cuántico. Fujitsu y Riken han apuntado a una máquina de átomos neutros de 10.000 qubits para 2026.
+Spojení je spíše vizuální a metaforické než technické. Scéna, v níž se Lucyino tělo přeskupuje do černého, organického počítače, připomíná architekturu rekonfigurovatelných polí qubitů z neutrálních atomů, která se stala předním hardwarovým řešením v kvantové oblasti. Fujitsu a Riken cílí na stroj z neutrálních atomů s 10 000 qubity pro rok 2026.
 
-**¿Se puede realmente transferir la conciencia humana a las máquinas, como retrata el filme?**
+**Můžeme skutečně přenést lidské vědomí do strojů, jak film zobrazuje?**
 
-A escala humana, no, y probablemente no durante un tiempo. A principios de 2026, el estado del arte en emulación cerebral completa es la emulación de mosca del vinagre reportada por Eon Systems en marzo, que implica 139.255 neuronas y unos 50 millones de sinapsis. Un cerebro humano contiene unos 86.000 millones de neuronas y 100 billones de sinapsis. La propuesta de independencia del sustrato que *Lucy* dramatiza es una cuestión de investigación seria, no un problema de ingeniería resuelto.
+V lidském měřítku ne a pravděpodobně ještě nějakou dobu ne. Na počátku roku 2026 je špičkou v emulaci celého mozku emulace octomilky, kterou v březnu oznámil Eon Systems a která zahrnuje 139 255 neuronů a přibližně 50 milionů synapsí. Lidský mozek obsahuje přibližně 86 miliard neuronů a 100 bilionů synapsí. Tvrzení o nezávislosti na substrátu, které *Lucy* dramatizuje, je vážnou výzkumnou otázkou, nikoli vyřešeným inženýrským problémem.
 
-## Referencias
+## Reference
 
-- Sebastien Rousseau, (2026). [Quantum Thresholds Are Moving Again](/2026-04-11-quantum-thresholds-are-moving-again/index.html "Quantum Thresholds Are Moving Again").
-- Sebastien Rousseau, (2025). [Quantum-Safe Payments: Why the Payments Industry Must Act Now](/2025-09-01-quantum-safe-payments-epaa/index.html "Quantum-Safe Payments: Why the Payments Industry Must Act Now").
-- Wikipedia contributors, (2026). [Lucy (2014 film) ⧉](https://en.wikipedia.org/wiki/Lucy_(2014_film) "Lucy (2014 film) - Wikipedia"). Wikipedia.
-- Wikipedia contributors, (2026). [Mind uploading ⧉](https://en.wikipedia.org/wiki/Mind_uploading "Mind uploading"). Wikipedia.
+- Sebastien Rousseau, (2026). [Kvantové prahové hodnoty se opět posunují](/2026-04-11-quantum-thresholds-are-moving-again/index.html "Kvantové prahové hodnoty se opět posunují").
+- Sebastien Rousseau, (2025). [Kvantově odolné platby: proč musí platební sektor jednat nyní](/2025-09-01-quantum-safe-payments-epaa/index.html "Kvantově odolné platby: proč musí platební sektor jednat nyní").
+- Přispěvatelé Wikipedie, (2026). [Lucy (film z roku 2014) ⧉](https://en.wikipedia.org/wiki/Lucy_(2014_film) "Lucy (film z roku 2014) – Wikipedie"). Wikipedie.
+- Přispěvatelé Wikipedie, (2026). [Nahrání mysli ⧉](https://en.wikipedia.org/wiki/Mind_uploading "Nahrání mysli"). Wikipedie.

@@ -1,85 +1,82 @@
 ---
-title: "La distribución cuántica de claves revoluciona la seguridad bancaria"
-subtitle: "Distribución cuántica de claves (QKD) para una seguridad de nivel financiero"
-description: "Mientras los ordenadores cuánticos amenazan los métodos de cifrado clásicos, la distribución cuántica de claves (QKD) emerge como un game-changer, ofreciendo una seguridad sin parangón."
+title: "Kvantová distribuce klíčů proměňuje bezpečnost v bankovnictví"
+tags: "quantum, key, distribution, cryptography, cybersecurity, finance, banking, digital, innovation, blockchain, quantum computing, hsbc, trading, data, protection, future, ISO 20022, DORA, post-quantum cryptography, AI"
+subtitle: "Kvantová distribuce klíčů (QKD) pro zabezpečení bankovnictví na finanční úrovni"
+description: "S tím, jak kvantové počítače ohrožují tradiční metody šifrování, nastupuje kvantová distribuce klíčů (QKD) jako řešení, které nabízí zásadně vyšší úroveň zabezpečení."
 date: "December 11, 2023"
 language: "cs-CZ"
 locale: "cs_CZ"
 banner: "https://cloudcdn.pro/stocks/images/hsbc-from-the-docks.webp"
-banner_alt: "HSBC desde los muelles"
-keywords: "distribución cuántica de claves, QKD, seguridad cuántica, banca, industria financiera, finanzas digitales, ciberseguridad, computación cuántica, HSBC, ensayo de protección cuántica, transacciones financieras"
+banner_alt: "HSBC od nábřeží"
+keywords: "kvantová distribuce klíčů (QKD), kvantová bezpečnost, bankovnictví, finanční sektor, digitální finance, kybernetická bezpečnost, kvantové výpočty, HSBC, pilotní projekt kvantové ochrany, finanční transakce"
 ---
 
 
-> **TL;DR.** Tento článek je DRAFT překlad původně španělského zdroje, čekající na revizi rodilým mluvčím. Hlavní obsah, příklady a citace zůstávají ve španělštině; pouze záhlaví/frontmatter byly přepnuty na češtinu.
+![HSBC od nábřeží][00].class=\"img-fluid clearfix fade-in\"
 
-**Klíčové body**
+Bankovní a finanční sektor prochází zásadní proměnou v oblasti zabezpečení dat, kterou podněcuje nástup kvantové distribuce klíčů (QKD). Tato inovace, založená na principech kvantové mechaniky, nabízí pro přenos dat velmi vysokou úroveň zabezpečení a pro sektor představuje významný posun.
 
-![HSBC From the Docks][00].class=\"img-fluid clearfix fade-in\"
+S tím, jak se digitální řešení ve finančním sektoru stále více rozšiřují, jsou pro ochranu citlivých dat před neoprávněným přístupem a manipulací nezbytná robustní bezpečnostní opatření. Tradiční metody šifrování již nestačí, protože příchod kvantových počítačů hrozí tím, že je učiní zastaralými.
 
-La industria bancaria y financiera atraviesa una transformación revolucionaria en seguridad de datos, impulsada por la emergencia de la distribución cuántica de claves (QKD — Quantum Key Distribution). Esta innovación revolucionaria, fundada en los principios de la mecánica cuántica, ofrece una seguridad sin parangón para la transmisión de datos, lo que la convierte en un game-changer para el sector.
-
-A medida que las soluciones digitales se generalizan en el sector financiero, son esenciales medidas de seguridad robustas para proteger los datos sensibles del acceso no autorizado y la manipulación. Los métodos de cifrado tradicionales ya no bastan, pues el advenimiento de los ordenadores cuánticos amenaza con volverlos obsoletos.
-
-Entra en escena la QKD, una tecnología transformadora que crea canales de comunicación seguros que ni siquiera los ordenadores cuánticos pueden penetrar. Esto la convierte en un componente crítico del futuro financiero digital.
+Zde nastupuje QKD, technologie, která vytváří zabezpečené komunikační kanály, jež nedokážou prolomit ani kvantové počítače. Díky tomu se stává klíčovou součástí budoucnosti digitálních financí.
 
 ![divider][divider].class=\"m-10 w-100\"
 
-## Comprender la distribución cuántica de claves (QKD)
+## Pochopení kvantové distribuce klíčů (QKD)
 
-La QKD es un método de creación de un canal de comunicación seguro utilizando los principios de la mecánica cuántica. Ofrece un nivel de seguridad sin precedentes: a diferencia de los métodos de cifrado habituales, es inmune a la potencia de cálculo de los ordenadores cuánticos. Esto permite una comunicación segura y confidencial del intercambio de claves entre las dos partes. Se logra aprovechando las propiedades cuánticas de las partículas para crear una clave que puede utilizarse para cifrar y descifrar los datos. En consecuencia, escuchar la comunicación perturbaría el estado cuántico, alertando a las partes de una brecha de seguridad.
-
-![divider][divider].class=\"m-10 w-100\"
-
-![Entangled Photons][01].class=\"w-50 p-3 me-3 img-thumbnail float-end\"
-
-## La salsa secreta de la QKD: el entrelazamiento
-
-En el corazón de la QKD se encuentra el entrelazamiento, un fenómeno cuántico en el que dos partículas quedan inextricablemente ligadas, formando un vínculo irrompible independientemente de la distancia. Este entrelazamiento permite a Alice y Bob, las dos partes implicadas en una comunicación segura, establecer un canal seguro inmune a la interceptación y la escucha.
-
-Teóricamente, cualquier intento de medir o alterar una partícula entrelazada afecta instantáneamente a su homóloga entrelazada, sin importar la distancia. Esta sensibilidad inherente de los estados cuánticos sirve como detector infalible de escucha. En cuanto Alice y Bob detectan una perturbación en sus fotones entrelazados, interrumpen inmediatamente la sesión de comunicación, garantizando la confidencialidad de su clave compartida.
+QKD je metoda pro vytvoření zabezpečeného komunikačního kanálu s využitím principů kvantové mechaniky. Nabízí bezprecedentní úroveň zabezpečení, protože na rozdíl od běžných metod šifrování je odolná vůči výpočetnímu výkonu kvantových počítačů. To umožňuje zabezpečenou a důvěrnou výměnu klíčů mezi oběma stranami. Dosahuje se toho využitím kvantových vlastností částic k vytvoření zabezpečeného klíče, kterým lze data šifrovat a dešifrovat. Případné odposlouchávání komunikace by narušilo kvantový stav a upozornilo strany na bezpečnostní incident.
 
 ![divider][divider].class=\"m-10 w-100\"
 
-## La imprevisibilidad de los estados cuánticos: un refuerzo adicional
+![Provázané fotony][01].class=\"w-50 p-3 me-3 img-thumbnail float-end\"
 
-La imprevisibilidad de los estados cuánticos refuerza aún más la seguridad de la QKD. Cualquier intento de medir la posición o el momento de una partícula cuántica resultará en dos resultados igualmente probables. Esto significa que los espías son incapaces de anticipar con precisión los resultados de sus observaciones.
+## Základ QKD: kvantové provázání
 
-La combinación del entrelazamiento y la aleatoriedad inherente de los estados cuánticos convierte a la QKD en una fortaleza impenetrable frente al espionaje, incluso para potentes ordenadores cuánticos. A medida que la tecnología cuántica avanza, la QKD se volverá cada vez más crucial para proteger los datos sensibles en la era digital.
+Základem QKD je kvantové provázání, jev, při němž jsou dvě částice neoddělitelně spojené a tvoří pevnou vazbu bez ohledu na vzdálenost. Toto provázání umožňuje Alici a Bobovi, dvěma stranám zapojeným do zabezpečené komunikace, ustavit zabezpečený kanál odolný vůči zachycení a odposlechu.
 
-![divider][divider].class=\"m-10 w-100\"
-
-## La importancia de la QKD para la industria bancaria y financiera
-
-La aplicación de la QKD a la industria bancaria y financiera es amplia. Puede revolucionar la seguridad de las transacciones intra e interbancarias, con el potencial de transformar las transacciones financieras mediante el uso de la moneda cuántica. Además, puede reforzar la seguridad de la gestión patrimonial y la banca de inversión, inaugurando una nueva era de seguridad y eficiencia financieras.
+Teoreticky každý pokus o měření nebo narušení provázané částice okamžitě ovlivní její provázaný protějšek bez ohledu na jejich vzájemnou vzdálenost. Tato vlastní citlivost kvantových stavů slouží jako spolehlivý detektor odposlechu. Jakmile Alice a Bob zaznamenají jakékoli narušení svých provázaných fotonů, komunikační relaci okamžitě přeruší, čímž zajistí důvěrnost sdíleného tajného klíče.
 
 ![divider][divider].class=\"m-10 w-100\"
 
-## El ensayo de protección cuántica de HSBC: un hito
+## Nepředvídatelnost kvantových stavů: další posílení bezpečnosti
 
-HSBC es pionera en el uso de la QKD para proteger el trading FX impulsado por IA frente a las ciberamenazas, incluidos los ataques cuánticos. Es la primera vez que un banco emplea la QKD para asegurar datos de trading sensibles.
+Nepředvídatelnost kvantových stavů dále posiluje bezpečnost QKD. Každý pokus o změření polohy nebo hybnosti kvantové částice vede ke dvěma stejně pravděpodobným výsledkům. To znamená, že strany odposlouchávající komunikaci nedokážou přesně předpovědět výsledky svých pozorování.
 
-Al emplear la QKD, HSBC ejecutó de forma segura un escenario de trading de 30 millones de euros que implicaba el intercambio de euros a dólares estadounidenses. Este logro, en colaboración con BT, Toshiba y AWS, pone de relieve el potencial transformador de la QKD para revolucionar la seguridad de los datos de trading.
-
-![divider][divider].class=\"m-10 w-100\"
-
-![QKD and Quantum Computing Market Value][02].class=\"w-50 p-3 ms-3 img-thumbnail float-end\"
-
-## El futuro de la QKD en ciberseguridad financiera
-
-Los expertos prevén que la QKD protegerá las transacciones financieras, los datos del cliente y la información propietaria en todo el sector. Con los ordenadores cuánticos amenazando la seguridad de los datos, la integración por HSBC de la QKD en las herramientas de trading fija un nuevo estándar. Este enfoque proactivo de inversión y experimentación en tecnologías cuánticas subraya el compromiso de la industria de mantenerse a la vanguardia en materia de ciberseguridad.
+Kombinace provázání a vlastní náhodnosti kvantových stavů činí z QKD prakticky neprolomitelnou ochranu proti odposlechu, a to i pro výkonné kvantové počítače. Jak technologie kvantových výpočtů postupuje, bude QKD pro ochranu citlivých dat v digitální době stále důležitější.
 
 ![divider][divider].class=\"m-10 w-100\"
 
-## Distribución cuántica de claves: el futuro de la ciberseguridad financiera
+## Význam QKD pro bankovní a finanční sektor
 
-La integración de la QKD en la industria bancaria y financiera representa un avance monumental en el campo de la ciberseguridad financiera. El exitoso ensayo de protección cuántica de HSBC ha establecido un nuevo referente para las estrategias de comunicación seguras frente a lo cuántico, garantizando la resiliencia de los sistemas financieros frente a ciberamenazas cambiantes. Esta I+D proactiva en tecnologías cuánticas es crucial para la seguridad y fiabilidad continuadas de los sistemas financieros.
+Uplatnění QKD v bankovním a finančním sektoru má široký dosah. Může zásadně zlepšit zabezpečení vnitrobankovních i mezibankovních obchodů a má potenciál proměnit finanční transakce prostřednictvím kvantových peněz. Kromě toho může posílit zabezpečení správy majetku a investičního bankovnictví a otevřít novou etapu bezpečnosti a efektivity ve financích.
 
-En resumen, la distribución cuántica de claves (QKD) ofrece una solución revolucionaria a los desafíos de seguridad y confianza a los que se enfrentan los sectores bancario y financiero. Como tal, es una tecnología pivote para el avance de las finanzas digitales.
+![divider][divider].class=\"m-10 w-100\"
 
-Al abrazar la QKD, HSBC ha fijado un nuevo referente en ciberseguridad financiera, abriendo la vía a un futuro en el que el trading seguro frente a lo cuántico es la norma.
+## Pilotní projekt kvantové ochrany HSBC: významný milník
 
-[00]: https://cloudcdn.pro/stocks/images/hsbc-from-the-docks.webp "HSBC From the West India Quay Promenade"
-[01]: https://cloudcdn.pro/stocks/images/quantum-computer-room.webp "Entangled Photons"
-[02]: https://cloudcdn.pro/stocks/diagrams/qkd-qc-market-value.svg "QKD and Quantum Computing Market Value"
-[divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Divider"
+HSBC jako jedna z prvních využívá kvantovou distribuci klíčů (QKD) k ochraně devizového obchodování řízeného umělou inteligencí před kybernetickými hrozbami včetně kvantových útoků. Jde o první případ, kdy banka nasadila QKD k zabezpečení citlivých obchodních dat.
+
+S využitím QKD banka HSBC bezpečně provedla obchodní scénář v objemu 30 milionů eur, který zahrnoval směnu eur za americké dolary. Tento výsledek, dosažený ve spolupráci se společnostmi BT, Toshiba a AWS, ukazuje potenciál QKD zásadně proměnit zabezpečení obchodních dat.
+
+![divider][divider].class=\"m-10 w-100\"
+
+![Tržní hodnota QKD a kvantových výpočtů][02].class=\"w-50 p-3 ms-3 img-thumbnail float-end\"
+
+## Budoucnost QKD v kybernetické bezpečnosti financí
+
+Odborníci předpovídají, že QKD bude v celém sektoru chránit finanční transakce, data klientů i chráněné interní informace. Vzhledem k tomu, že kvantové počítače ohrožují bezpečnost dat, stanovuje začlenění QKD do obchodních nástrojů ze strany HSBC nový standard. Tento proaktivní přístup k investicím a experimentování s kvantovými technologiemi podtrhuje odhodlání sektoru udržet si náskok v oblasti kybernetické bezpečnosti.
+
+![divider][divider].class=\"m-10 w-100\"
+
+## Kvantová distribuce klíčů: budoucnost kybernetické bezpečnosti financí
+
+Začlenění QKD do bankovního a finančního sektoru představuje významný pokrok v oblasti kybernetické bezpečnosti financí. Úspěšný pilotní projekt kvantové ochrany HSBC stanovil nové měřítko pro komunikační strategie odolné vůči kvantovým hrozbám a zajišťuje odolnost finančních systémů vůči měnícím se kybernetickým hrozbám. Tento proaktivní výzkum a vývoj v oblasti kvantových technologií je pro trvalou bezpečnost a důvěryhodnost finančních systémů zásadní.
+
+Souhrnně řečeno, kvantová distribuce klíčů (QKD) nabízí zásadní řešení výzev v oblasti bezpečnosti a důvěryhodnosti, kterým bankovní a finanční sektor čelí. Je tak klíčovou technologií pro rozvoj digitálních financí.
+
+Přijetím QKD stanovila HSBC nové měřítko v kybernetické bezpečnosti financí a otevřela cestu k budoucnosti, v níž je obchodování odolné vůči kvantovým hrozbám standardem.
+
+[00]: https://cloudcdn.pro/stocks/images/hsbc-from-the-docks.webp "HSBC z promenády West India Quay"
+[01]: https://cloudcdn.pro/stocks/images/quantum-computer-room.webp "Provázané fotony"
+[02]: https://cloudcdn.pro/stocks/diagrams/qkd-qc-market-value.svg "Tržní hodnota QKD a kvantových výpočtů"
+[divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Oddělovač"

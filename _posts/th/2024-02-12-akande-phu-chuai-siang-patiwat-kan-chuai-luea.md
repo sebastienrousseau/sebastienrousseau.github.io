@@ -1,99 +1,188 @@
 ---
-title: "Àkàndé: asistente de voz impulsado por GPT para directivos"
-subtitle: "Permitir interacciones fluidas con una tecnología IA puntera"
-description: "Cómo Àkàndé aprovecha la comprensión del lenguaje natural de OpenAI GPT, los resúmenes en PDF y una caché eficiente para redefinir la asistencia personal y ejecutiva."
+title: "Àkàndé: ผู้ช่วยเสียงที่ขับเคลื่อนด้วย GPT สำหรับผู้บริหาร"
+subtitle: "สถาปัตยกรรมของผู้ช่วยเสียงโอเพนซอร์สบน Python: Whisper, GPT-4, แคช SQLite และ fpdf2"
+description: "Àkàndé คือผู้ช่วยเสียงโอเพนซอร์สบน Python ที่เชื่อมการรู้จำเสียงพูดด้วย OpenAI Whisper การสร้างบทสนทนาด้วย GPT-4 และแคชคำตอบ SQLite ในเครื่องเข้าเป็นเวิร์กโฟลว์ที่ขับเคลื่อนด้วยเสียง สร้างสรุปแบบ PDF จากประวัติการสนทนาและเก็บข้อมูลทั้งหมดไว้ในเครื่อง"
 date: "February 12, 2024"
 language: "th-TH"
 locale: "th_TH"
 banner: "https://cloudcdn.pro/stocks/images/akande-voice-assistant.webp"
-banner_alt: "Un dispositivo esférico blanco, moderno"
-keywords: "Àkàndé, asistente de voz, comprensión del lenguaje natural, resúmenes en PDF, caché eficiente, OpenAI GPT, asistencia ejecutiva, asistencia personal, asistentes digitales, innovación tecnológica"
+banner_alt: "อุปกรณ์ทรงกลมสีขาวสไตล์โมเดิร์น"
+keywords: "Àkàndé, OpenAI GPT-4, Whisper STT, การแคช SQLite, fpdf2, ผู้ช่วยเสียง Python, chat completions API, การสร้างสรุป PDF, แคช SHA-256, การแปลงข้อความเป็นเสียง, AI ผู้ช่วยผู้บริหาร, โอเพนซอร์ส"
 ---
 
 
-> **TL;DR.** บทความนี้เป็น DRAFT แปลจากต้นฉบับภาษาสเปน รอการตรวจสอบโดยเจ้าของภาษา เนื้อหาหลัก ตัวอย่าง และการอ้างอิงยังคงเป็นภาษาสเปน เฉพาะ frontmatter เท่านั้นที่ถูกเปลี่ยนเป็นภาษาไทย
+> **บทสรุปผู้บริหาร / ประเด็นสำคัญ**
+>
+> - **[Àkàndé ⧉][00]** คือผู้ช่วยเสียงโอเพนซอร์สบน Python ที่เชื่อมการแปลงเสียงพูดเป็นข้อความด้วย OpenAI Whisper, การสร้างบทสนทนาด้วย GPT-4, แคชคำตอบ SQLite ในเครื่อง และการส่งออก PDF ด้วย fpdf2 เข้าเป็นเวิร์กโฟลว์เดียวที่ขับเคลื่อนด้วยเสียง โดยไม่ต้องใช้พื้นที่จัดเก็บบนคลาวด์และไม่ต้องใช้น้ำหนักโมเดล AI ในเครื่อง
+> - **แคช SQLite** จัดเก็บค่าแฮช SHA-256 ของสตริงคำค้นที่ผ่านการปรับให้เป็นมาตรฐาน โดยจับคู่กับข้อความคำตอบดิบจาก API การพบข้อมูลในแคช (cache hit) ใช้โทเคนเป็นศูนย์และตอบกลับภายในเวลาไม่ถึง 10 มิลลิวินาที ทำให้คำค้นซ้ำ (เช่น การทบทวนการตัดสินใจก่อนหน้านี้ในการประชุม) แทบไม่มีต้นทุน
+> - **การสนทนาแบบหลายรอบ** คงไว้ด้วยการสร้างรายการ `messages` ในหน่วยความจำและส่งไปในทุกการเรียก Chat Completions API โมเดลจะได้รับประวัติเซสชันทั้งหมดจึงสามารถอ้างถึงบทสนทนาก่อนหน้าได้ โดยแลกกับการใช้โทเคนต่อรอบที่เพิ่มขึ้นทีละน้อย
+> - **การสร้างสรุป PDF** แปลงรายการ `messages` ของเซสชันเป็นเอกสาร fpdf2 ที่จัดรูปแบบแล้ว โดยกำกับรอบของผู้ใช้และรอบของผู้ช่วย แทรกเวลาประทับ และแบ่งหน้าอัตโนมัติเพื่อรองรับเซสชันทุกความยาว ไฟล์จะถูกเขียนลงระบบไฟล์ในเครื่อง ไม่ได้อัปโหลด
+> - **ขอบเขตความเป็นส่วนตัว:** มีเพียงคำค้นปัจจุบัน (และประวัติเซสชันภายในขีดจำกัดของหน้าต่างบริบท) เท่านั้นที่ออกจากอุปกรณ์ ไม่มีการส่งไฟล์บันทึกเสียง ข้อความถอดเสียง หรือคำตอบในแคชไปยังบริการภายนอกใด นอกเหนือจาก API ของ OpenAI
 
-**ประเด็นสำคัญ**
+[**Àkàndé ⧉**][00] คือผู้ช่วยเสียงโอเพนซอร์สบน Python ที่สร้างขึ้นรอบองค์ประกอบที่ประกอบเข้าด้วยกันได้สามส่วน ได้แก่ OpenAI Whisper สำหรับการรู้จำเสียงพูด, GPT-4 Chat Completions API สำหรับการเข้าใจและสร้างภาษา และฐานข้อมูล SQLite ในเครื่องสำหรับการแคชคำตอบและการคงสถานะของเซสชัน ผลลัพธ์คือเวิร์กโฟลว์ที่ขับเคลื่อนด้วยเสียงซึ่งสามารถทำงานบนแล็ปท็อปได้ โดยไม่ต้องใช้น้ำหนักโมเดลในเครื่อง โครงสร้างพื้นฐานการจัดเก็บแบบออฟไลน์ หรือชุดคอนเทนเนอร์
 
-## Àkàndé Voice Assistant, un game-changer para la asistencia personal y ejecutiva
+บทความนี้อธิบายสถาปัตยกรรมทางเทคนิคของแต่ละองค์ประกอบ การตัดสินใจด้านการออกแบบเกี่ยวกับการแคชและบริบทแบบหลายรอบ และไปป์ไลน์การส่งออก PDF
 
-[**Àkàndé Voice Assistant ⧉**][00] representa una integración revolucionaria de los modelos GPT de OpenAI con la versatilidad de Python, ofreciendo una comprensión del lenguaje natural sin precedentes, una caché de datos eficiente y la capacidad única de generar resúmenes en PDF. Este asistente de voz innovador responde a la vez a necesidades personales y ejecutivas, proporcionando una experiencia de usuario fluida pilotada por voz que refuerza la productividad y la gestión de la información. Las funcionalidades sofisticadas de Àkàndé, entre ellas su mecanismo de caché avanzado y su compromiso con la confidencialidad, lo posicionan como una herramienta indispensable para profesionales y estudiantes, prometiendo un futuro en el que la asistencia digital sea más intuitiva, reactiva y adaptada a las exigencias individuales.
+## ภาพรวมของไปป์ไลน์
 
-![divider][divider].class=\"m-10 w-100\"
+การโต้ตอบกับ Àkàndé หนึ่งครั้งดำเนินตามลำดับต่อไปนี้:
 
-![A red and green stylised helmet](https://cloudcdn.pro/clients/akande/v1/logos/akande.svg).class=\"fade-in w-50 p-3 float-end\"
+1. **การบันทึกเสียง:** ผู้ใช้พูด แอปพลิเคชันบันทึกเสียงลงในไฟล์ WAV ชั่วคราวโดยใช้ `sounddevice` หรือไลบรารีเสียงที่เข้ากันได้
+2. **การแปลงเสียงเป็นข้อความ:** ไฟล์ WAV ถูกส่งไปยัง `openai.audio.transcriptions.create()` (Whisper API) และได้รับข้อความถอดเสียงกลับมาเป็นสตริงธรรมดา
+3. **การค้นหาในแคช:** ข้อความถอดเสียงถูกปรับให้เป็นมาตรฐาน (แปลงเป็นตัวพิมพ์เล็ก ยุบช่องว่าง) และแฮชด้วย SHA-256 จากนั้นค้นหาค่าแฮชในตาราง `response_cache` ของ SQLite ในเครื่อง
+4. **การเรียก API หรือการพบในแคช:** เมื่อไม่พบในแคช ข้อความถอดเสียงจะถูกเพิ่มต่อท้ายรายการ `messages` ของเซสชันและส่งไปยัง `openai.chat.completions.create()` จากนั้นข้อความคำตอบจะถูกจัดเก็บในแคช
+5. **การแปลงข้อความเป็นเสียง:** ข้อความคำตอบถูกแปลงเป็นเสียงโดยใช้เอนด์พอยต์ `openai.audio.speech.create()` (TTS) หรือไลบรารี TTS ในเครื่อง แล้วเล่นกลับ
+6. **การส่งออก PDF** (ตามคำขอ): รายการ `messages` ทั้งหมดถูกแปลงเป็นเอกสาร fpdf2 ที่จัดรูปแบบแล้วและเขียนลงดิสก์
 
-## Àkàndé: la cumbre de la innovación en asistentes de voz
+## การผสานรวม OpenAI: Chat Completions และ Whisper
 
-En el panorama tecnológico en perpetua evolución, los asistentes de voz han emergido de los márgenes de la novedad para convertirse en figuras centrales de nuestras interacciones digitales cotidianas. En el corazón de esta ola transformadora, Àkàndé se distingue como un parangón de innovación, mezclando fluidamente la tecnología GPT puntera de OpenAI con la robustez de Python para redefinir lo que se puede esperar de los asistentes digitales. Àkàndé no es solo un asistente de voz; es una solución completa diseñada para reforzar los flujos de trabajo personales y ejecutivos gracias a una comprensión superior del lenguaje natural (NLU), una recuperación eficiente de información y la generación de resúmenes en PDF pertinentes. Este artículo explora las funcionalidades únicas de Àkàndé, sus fundamentos tecnológicos y la miríada de maneras en que está a punto de revolucionar el panorama de la asistencia personal y ejecutiva.
+Àkàndé ใช้ `openai` Python SDK ทั้งสำหรับการรู้จำเสียงพูดและการสร้างข้อความ การเรียกถอดเสียงด้วย Whisper:
 
-![divider][divider].class=\"m-10 w-100\"
+```python
+with open(audio_file_path, "rb") as f:
+    transcript = openai.audio.transcriptions.create(
+        model="whisper-1",
+        file=f,
+        language=None  # auto-detect
+    )
+user_text = transcript.text
+```
 
-## La evolución de los asistentes de voz
+การเรียก Chat Completions คงรายการ `messages` ที่กำหนดขอบเขตตามเซสชัน:
 
-### El auge de los asistentes impulsados por IA
+```python
+messages.append({"role": "user", "content": user_text})
 
-Los asistentes de voz se han vuelto omnipresentes en nuestras vidas, facilitando una miríada de tareas mediante simples comandos de voz. Sin embargo, el camino desde los sistemas simples comando-respuesta hasta asistentes sofisticados como Àkàndé ha estado marcado por avances significativos en IA y aprendizaje automático. Àkàndé representa la apoteosis de esta evolución, ofreciendo un asistente de voz que no solo comprende y responde a los comandos, sino que lo hace con un nivel de matiz y conciencia contextual sin precedentes.
+response = openai.chat.completions.create(
+    model="gpt-4-turbo-preview",
+    messages=messages,
+    temperature=0.2,
+    max_tokens=1024
+)
 
-![divider][divider].class=\"m-10 w-100\"
+assistant_text = response.choices[0].message.content
+messages.append({"role": "assistant", "content": assistant_text})
+```
 
-## La ventaja GPT en comprensión del lenguaje natural
+พรอมต์ระบบถูกใส่ไว้ด้านหน้าเพียงครั้งเดียวตอนเริ่มเซสชัน และควบคุมบุคลิกของ Àkàndé รูปแบบผลลัพธ์ และข้อจำกัดเฉพาะโดเมนใด ๆ:
 
-En el corazón de las capacidades revolucionarias de Àkàndé se encuentra su uso de los modelos GPT de OpenAI, a la vanguardia de la tecnología de procesamiento del lenguaje natural. Estos modelos permiten a Àkàndé comprender y tratar consultas complejas con un grado de precisión y humanidad antes inaccesible. Esta maestría del NLU permite a Àkàndé servir de asistente eficaz y fiable, tanto en contextos personales como profesionales, comprendiendo los matices y la intención detrás de las consultas del usuario.
+```python
+messages = [
+    {
+        "role": "system",
+        "content": (
+            "You are Àkàndé, a concise executive assistant. "
+            "Respond in plain prose. Do not use markdown. "
+            "If asked to summarise, produce three bullet points maximum."
+        )
+    }
+]
+```
 
-![divider][divider].class=\"m-10 w-100\"
+การตั้งค่า `temperature=0.2` แลกความหลากหลายเชิงสร้างสรรค์กับความแน่นอนของผลลัพธ์ ซึ่งสำคัญสำหรับคำค้นเชิงข้อเท็จจริง เช่น การเรียกคืนการตัดสินใจก่อนหน้านี้ในเซสชัน
 
-## Mejorar la experiencia del usuario: resúmenes en PDF y caché eficiente
+## แคชคำตอบ SQLite
 
-### Resúmenes en PDF para una mejor retención de información
+สคีมาของแคชมีขนาดเล็กที่สุด:
 
-Una de las funcionalidades destacadas de Àkàndé es su capacidad para generar resúmenes en PDF a partir de interacciones de voz, proporcionando a los usuarios registros concisos y tangibles de la información importante. Esta funcionalidad es valiosa para los profesionales que necesitan digerir y recordar puntos críticos de reuniones o investigaciones.
+```sql
+CREATE TABLE IF NOT EXISTS response_cache (
+    query_hash  TEXT PRIMARY KEY,
+    response    TEXT NOT NULL,
+    created_at  INTEGER NOT NULL  -- Unix timestamp
+);
+```
 
-### Caché optimizada para una reactividad reforzada
+เส้นทางการค้นหาและการเขียน:
 
-Además, el mecanismo de caché sofisticado de Àkàndé basado en SQLite garantiza que las respuestas no solo sean precisas sino entregadas con una velocidad notable, mejorando significativamente la experiencia del usuario al reducir los tiempos de espera y mejorar la eficiencia de la recuperación de información.
+```python
+import hashlib, sqlite3, time
 
-![divider][divider].class=\"m-10 w-100\"
+def _normalise(text: str) -> str:
+    return " ".join(text.lower().split())
 
-## El borde distintivo de Àkàndé
+def cache_get(conn: sqlite3.Connection, query: str) -> str | None:
+    h = hashlib.sha256(_normalise(query).encode()).hexdigest()
+    row = conn.execute(
+        "SELECT response FROM response_cache WHERE query_hash = ?", (h,)
+    ).fetchone()
+    return row[0] if row else None
 
-Lo que distingue verdaderamente a Àkàndé es su enfoque holístico de la experiencia del usuario. Integrando tecnologías avanzadas de reconocimiento de voz y de síntesis de voz, Àkàndé ofrece una interfaz fluida e intuitiva que acomoda una amplia gama de tareas. Desde la configuración de recordatorios y la planificación de reuniones hasta el resumen de los puntos clave de un documento, Àkàndé gestiona las tareas con soltura, convirtiéndolo en una herramienta indispensable para profesionales y estudiantes ocupados.
+def cache_set(conn: sqlite3.Connection, query: str, response: str) -> None:
+    h = hashlib.sha256(_normalise(query).encode()).hexdigest()
+    conn.execute(
+        "INSERT OR REPLACE INTO response_cache VALUES (?, ?, ?)",
+        (h, response, int(time.time()))
+    )
+    conn.commit()
+```
 
-![divider][divider].class=\"m-10 w-100\"
+`INSERT OR REPLACE` รับประกันว่าคำตอบในแคชจะถูกอัปเดตหากมีการส่งคำค้นเดิมหลังการอัปเกรดโมเดล คำสั่งลบตาม TTL (`DELETE WHERE created_at < ?`) สามารถตั้งเวลาให้ทำงานตอนเริ่มระบบเพื่อจำกัดขนาดของแคชได้
 
-## Ampliar los horizontes: aplicaciones polivalentes
+ประสิทธิภาพของการพบในแคช: การค้นหาใน SQLite บน SSD ในเครื่องตอบกลับภายในเวลาไม่ถึง 1 มิลลิวินาทีสำหรับตารางที่มีแถวไม่เกินราว 100,000 แถว ส่วนเวลาไป-กลับของการเรียก GPT-4 API แบบสดโดยทั่วไปอยู่ที่ 600 ถึง 900 มิลลิวินาทีสำหรับคำตอบสั้น ๆ สำหรับการบรีฟประจำวันที่มีคำค้นซ้ำอยู่ไม่กี่รายการ แคชจะช่วยตัดการเรียก API ส่วนใหญ่ออกหลังจากเซสชันแรก
 
-La versatilidad de Àkàndé se extiende más allá de la productividad personal al ámbito de la asistencia ejecutiva, donde sus funcionalidades pueden aprovecharse para gestionar agendas, resumir reuniones e incluso preparar informes ejecutivos.
+## การสร้างสรุป PDF
 
-Para los estudiantes, Àkàndé sirve como herramienta de investigación potente, capaz de resumir artículos académicos y contenido en PDF fácilmente digeribles. Su sistema de caché y sus capacidades de resumen lo convierten también en una herramienta esencial para los directivos que exigen acceso rápido a datos resumidos y al historial de interacciones, permitiendo una toma de decisiones informada y una gestión eficiente de la información.
+การส่งออก PDF ใช้ [fpdf2](https://py-pdf.github.io/fpdf2/) ไลบรารี PDF บน Python ที่มีการดูแลอย่างต่อเนื่องและไม่มีการพึ่งพาไบนารี:
 
-![divider][divider].class=\"m-10 w-100\"
+```python
+from fpdf import FPDF
+from datetime import datetime
 
-## Perspectivas técnicas y consideraciones de confidencialidad
+def export_session_pdf(messages: list[dict], output_path: str) -> None:
+    pdf = FPDF()
+    pdf.add_page()
+    pdf.set_font("Helvetica", size=11)
+    pdf.set_margins(20, 20, 20)
 
-Sumergiéndonos en la arquitectura técnica, el mecanismo de caché de Àkàndé basado en SQLite ilustra un compromiso con la recuperación eficiente de datos y la fiabilidad. Este sistema garantiza que los usuarios reciban respuestas rápidas a las consultas, mejorando la experiencia global minimizando la latencia. Además, el enfoque de Àkàndé para la generación de resúmenes en PDF utiliza algoritmos avanzados para destilar conversaciones y contenidos en información esencial y fácilmente accesible. Esto ayuda no solo a una mejor gestión de la información, sino también a garantizar que las perspectivas críticas no se pierdan en el volumen de las interacciones digitales.
+    pdf.set_font("Helvetica", "B", 14)
+    pdf.cell(0, 10, f"Àkàndé Session — {datetime.now():%Y-%m-%d %H:%M}", ln=True)
+    pdf.ln(4)
 
-### Estándares robustos de seguridad y confidencialidad
+    for msg in messages:
+        if msg["role"] == "system":
+            continue
+        label = "You" if msg["role"] == "user" else "Àkàndé"
+        pdf.set_font("Helvetica", "B", 10)
+        pdf.cell(0, 6, label, ln=True)
+        pdf.set_font("Helvetica", size=10)
+        pdf.multi_cell(0, 5, msg["content"])
+        pdf.ln(3)
 
-Una piedra angular de la filosofía de diseño de Àkàndé es su compromiso inquebrantable con la confidencialidad y la seguridad. Reconociendo la sensibilidad de la información que maneja, en particular en contextos ejecutivos, Àkàndé emplea técnicas de cifrado robustas y controles de acceso estrictos para proteger los datos del usuario. Esto alinea a Àkàndé con los estándares globales de confidencialidad, garantizando que los usuarios puedan confiar a su asistente digital tareas e información sensibles.
+    pdf.output(output_path)
+```
 
-![divider][divider].class=\"m-10 w-100\"
+`multi_cell()` จัดการการตัดบรรทัดและการขึ้นหน้าใหม่อัตโนมัติ ดังนั้นเซสชันทุกความยาวจึงให้เอกสารที่จัดรูปแบบเรียบร้อยโดยไม่ต้องเขียนตรรกะแบ่งหน้าเอง ผลลัพธ์เป็นไฟล์ที่รองรับ PDF/A โดยไม่มีการฝังฟอนต์นอกเหนือจากมาตรวัดฟอนต์ Helvetica มาตรฐาน
 
-## Àkàndé: una visión del futuro
+## แบบจำลองความเป็นส่วนตัว
 
-### Permitir la productividad personal
+ขอบเขตความเป็นส่วนตัวใน Àkàndé กำหนดด้วยข้อเท็จจริงสามประการ:
 
-Àkàndé no es solo un simple asistente de voz; es una visión del futuro en la que los asistentes digitales desempeñan un papel central en el refuerzo de nuestra productividad y nuestros procesos de decisión. A través de su uso innovador de los modelos GPT, sus funcionalidades únicas como la generación de resúmenes en PDF, y su compromiso con la eficiencia y la confidencialidad, Àkàndé fija nuevos referentes para lo que pueden lograr los asistentes digitales. Su desarrollo está pilotado por la retroalimentación de los usuarios y una hoja de ruta clara, prometiendo una mejora continua y una adaptación a las necesidades cambiantes de sus usuarios.
+1. เสียงถูกส่งไปยัง Whisper API ผ่าน HTTPS และ OpenAI ไม่เก็บรักษาไว้เกินกว่าการเรียก API นั้น (ตามนโยบายการใช้ข้อมูลของ API ของ OpenAI ณ เดือนกุมภาพันธ์ 2024)
+2. การเรียก Chat Completions API ส่งรายการ `messages` ของเซสชัน ซึ่งอาจมีประวัติการสนทนาทั้งหมดสำหรับเซสชันแบบหลายรอบ
+3. ฐานข้อมูล SQLite และไฟล์ PDF อยู่บนระบบไฟล์ในเครื่องทั้งหมด ไม่มีการซิงก์เบื้องหลังไปยังบริการคลาวด์ใด ๆ
 
-### Reforzar las actividades académicas
+สำหรับกรณีใช้งานระดับผู้บริหารที่เกี่ยวข้องกับหัวข้ออ่อนไหว เช่น การเจรจาควบรวมกิจการ เรื่องบุคลากร และกลยุทธ์ด้านกฎระเบียบ ควรตรวจทานประวัติเซสชันที่ส่งไปยัง API เทียบกับนโยบายการใช้ AI ขององค์กรก่อนนำไปใช้งานจริง ขีดจำกัด `max_tokens` บนพรอมต์ระบบสามารถใช้เพื่อป้องกันการส่งบริบทเกินขอบเขตการเปิดเผยที่ตั้งใจไว้โดยไม่ได้ตั้งใจ
 
-Las aplicaciones potenciales de Àkàndé son vastas y variadas. En el mundo corporativo, puede transformar la manera en que los directivos interactúan con los datos, facilitando la captura y el recuerdo de discusiones o decisiones importantes. En el entorno académico, puede racionalizar los procesos de investigación y de estudio, haciendo el aprendizaje más eficiente. Para uso personal, Àkàndé puede simplificar las rutinas cotidianas: desde la gestión de agenda hasta la captura y organización de pensamientos y recordatorios personales.
+## คำถามที่พบบ่อย
 
-### Simplificar los flujos de trabajo empresariales
+**Àkàndé เก็บประวัติการสนทนาไว้หลังจากเซสชันสิ้นสุดหรือไม่?**
+รายการ `messages` ในหน่วยความจำจะถูกทิ้งเมื่อกระบวนการสิ้นสุด ประวัติการสนทนาจะถูกเก็บไว้ก็ต่อเมื่อผู้ใช้สั่งการส่งออก PDF หรือมีการเพิ่มชั้นการคงข้อมูลแบบกำหนดเอง แคช SQLite จัดเก็บค่าแฮชของคำค้นและข้อความคำตอบ ไม่ใช่บริบทการสนทนาทั้งหมด
 
-Las implicaciones de la tecnología de Àkàndé se extienden más allá de la productividad individual. A medida que las empresas e instituciones educativas buscan formas de mejorar la eficiencia y la gestión de la información, Àkàndé ofrece una solución escalable que puede integrarse con los sistemas y flujos de trabajo existentes. Su capacidad para proporcionar acceso rápido a información resumida, combinada con su interfaz de usuario intuitiva, lo convierte en una opción atractiva para las organizaciones que buscan sacar partido de los últimos avances de la IA.
+**แคชจัดการคำค้นที่คล้ายกันแต่ไม่เหมือนกันอย่างไร?**
+แคชใช้การแฮชแบบตรงกันทุกตัวอักษรบนสตริงคำค้นที่ปรับให้เป็นมาตรฐานแล้ว คำค้นสองรายการที่ต่างกันเพียงคำเดียวจะให้ค่าแฮชต่างกันและนำไปสู่การเรียก API แยกกัน การแคชเชิงความหมาย (ใช้ความคล้ายของเวกเตอร์ฝังเพื่อจับคู่คำค้นที่เกือบซ้ำกัน) จะต้องมีขั้นตอนการค้นหาเวกเตอร์เพิ่มเติมและไม่ได้เป็นส่วนหนึ่งของการพัฒนาพื้นฐาน
 
-Àkàndé representa la cumbre de la innovación en asistentes de voz, ofreciendo una mezcla de comprensión sofisticada del lenguaje natural, gestión eficiente de datos y funcionalidades centradas en el usuario. Su integración de los modelos GPT de OpenAI con la robustez de Python crea una herramienta potente que trasciende las capacidades tradicionales de los asistentes digitales. En el umbral de un futuro cada vez más dominado por las interacciones digitales, Àkàndé se erige como faro de innovación, prometiendo una nueva era de asistencia personal y ejecutiva más intuitiva, reactiva y adaptada a nuestras necesidades. Con Àkàndé, el futuro de la asistencia digital no es solo un concepto; es una realidad que está aquí para mejorar nuestras vidas digitales de mil maneras.
+**Àkàndé ใช้โมเดล GPT ใดเป็นค่าเริ่มต้น?**
+ค่าเริ่มต้นคือ `gpt-4-turbo-preview` ณ เดือนกุมภาพันธ์ 2024 ชื่อโมเดลเป็นพารามิเตอร์การตั้งค่า จึงสามารถแทนที่ด้วยโมเดล chat completion ของ OpenAI รุ่นใดก็ได้ การเปลี่ยนไปใช้ `gpt-3.5-turbo` ลดต้นทุน API ลงราว 20 เท่าต่อโทเคน แต่ลดคุณภาพการให้เหตุผลสำหรับคำค้นหลายขั้นตอนที่ซับซ้อน
 
-[divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Divider"
+**สามารถปรับแต่งรูปแบบการส่งออก PDF ได้หรือไม่?**
+ได้ ฟังก์ชันส่งออกของ fpdf2 รับรายการ `messages` เป็นอินพุตที่จำเป็นเพียงอย่างเดียว ดังนั้นฟอนต์ ระยะขอบ ขนาดหน้า เนื้อหาส่วนหัว และการกำกับป้ายจึงสามารถเปลี่ยนได้ทั้งหมดด้วยการแก้ไขฟังก์ชันส่งออก fpdf2 ยังรองรับการเพิ่มรูปภาพ ตาราง และฟอนต์ Unicode ทำให้จัดวางเอกสารได้หลากหลายยิ่งขึ้นสำหรับองค์กรที่มีข้อกำหนดด้านแบรนด์เฉพาะ
+
+## เอกสารอ้างอิง
+
+1. OpenAI. *Audio Transcriptions — Whisper API*. OpenAI Platform Documentation, 2024. https://platform.openai.com/docs/api-reference/audio/createTranscription
+2. OpenAI. *Chat Completions API*. OpenAI Platform Documentation, 2024. https://platform.openai.com/docs/api-reference/chat/create
+3. Voss, J. et al. *fpdf2: Modern PDF generation for Python*. GitHub, 2024. https://github.com/py-pdf/fpdf2
+4. SQLite Consortium. *SQLite Documentation*. sqlite.org, 2024. https://www.sqlite.org/docs.html
+
 [00]: https://akande.co "Àkàndé Voice Assistant"

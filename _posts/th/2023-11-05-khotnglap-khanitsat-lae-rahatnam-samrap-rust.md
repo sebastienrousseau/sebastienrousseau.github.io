@@ -1,85 +1,117 @@
 ---
-title: "Constantes matemáticas y criptográficas para la seguridad en Rust"
-subtitle: "Constantes matemáticas y criptográficas probadas para una seguridad Rust con garantía de memoria"
-description: "Proteja la integridad del código con constantes matemáticas y criptográficas rigurosamente verificadas, reforzando la seguridad de memoria y la concurrencia."
-date: "November 05, 2023"
-language: "th-TH"
+title: "ค่าคงที่ทางคณิตศาสตร์และการเข้ารหัสสำหรับความมั่นคงปลอดภัยของ Rust"
+seo_title: "ค่าคงที่ทางคณิตศาสตร์และการเข้ารหัสสำหรับความปลอดภัยของ Rust"
+subtitle: "ค่าคงที่ทางคณิตศาสตร์และการเข้ารหัสที่ผ่านการตรวจสอบ เพื่อความมั่นคงปลอดภัยของ Rust ที่ปลอดภัยด้านหน่วยความจำ"
+description: "ปกป้องความสมบูรณ์ของโค้ดด้วยค่าคงที่ทางคณิตศาสตร์และการเข้ารหัสที่ผ่านการตรวจสอบอย่างละเอียด เสริมความปลอดภัยด้านหน่วยความจำและการทำงานพร้อมกันเพื่อยกระดับความมั่นคงปลอดภัยของโค้ด"
+excerpt: "คณิตศาสตร์มอบค่าคงที่ที่เป็นรากฐานของเทคโนโลยีและการสื่อสารที่ปลอดภัย ค่าคงที่อย่างพาย (π) และจำนวนของออยเลอร์ (e) มีความสำคัญอย่างยิ่งในทุกสิ่ง ตั้งแต่เรขาคณิตไปจนถึง…"
+keywords: "ค่าคงที่ทางคณิตศาสตร์, ค่าคงที่การเข้ารหัส, ความมั่นคงปลอดภัยของ Rust, การสื่อสารที่ปลอดภัย, การเข้ารหัส, RSA, การเข้ารหัสแบบเส้นโค้งวงรี, ไลบรารี Common (CMN), แอปพลิเคชัน Rust, การคำนวณทางคณิตศาสตร์"
+tags: "คณิตศาสตร์, ความมั่นคงปลอดภัยไซเบอร์, การเข้ารหัส, Rust, การเขียนโปรแกรม, การเข้ารหัสข้อมูล, การสื่อสาร, ค่าคงที่, ค่าคงที่ใน Rust, ไลบรารี Common, ISO 20022, การเข้ารหัสหลังยุคควอนตัม, การคำนวณเชิงควอนตัม, AI, โอเพนซอร์ส"
+date: "Nov 05, 2023"
+language: "th"
 locale: "th_TH"
+hreflang: "th"
+layout: "report"
 banner: "https://cloudcdn.pro/stocks/images/antoine-dautry-05A-kdOH6Hw.webp"
-banner_alt: "Cálculo matemático"
-keywords: "constantes matemáticas, constantes criptográficas, seguridad Rust, comunicación segura, cifrado, RSA, criptografía de curva elíptica, biblioteca Common (CMN), aplicaciones Rust, cálculos matemáticos"
+banner_alt: "การคำนวณทางคณิตศาสตร์"
+id: "https://sebastienrousseau.com/2023-11-05-mathematical-and-cryptographic-constants-for-rust-security/index.html"
+permalink: "https://sebastienrousseau.com/2023-11-05-mathematical-and-cryptographic-constants-for-rust-security/index.html"
+url: "https://sebastienrousseau.com/2023-11-05-mathematical-and-cryptographic-constants-for-rust-security/index.html"
+cdn: "https://cloudcdn.pro/clients"
+author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
+name: "Sebastien Rousseau"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
+image_alt: "ภาพเหมือนขาวดำของ Sebastien Rousseau"
+icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
+logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
+logo_alt: "โลโก้ของ Sebastien Rousseau"
+measurementID: "G-169G4ET5HQ"
+theme-color: "0, 67, 165"
+pub_date: "Sun, 05 Nov 2023 06:06:06 +0000"
+last_build_date: "Sun, 05 Nov 2023 06:06:06 +0000"
+last_reviewed: "2026-05-11"
+atom_link: "https://sebastienrousseau.com/2023-11-05-mathematical-and-cryptographic-constants-for-rust-security/rss.xml"
+item_title: "ค่าคงที่ทางคณิตศาสตร์และการเข้ารหัสสำหรับความมั่นคงปลอดภัยของ Rust"
+item_description: "ปกป้องความสมบูรณ์ของโค้ดด้วยค่าคงที่ทางคณิตศาสตร์และการเข้ารหัสที่ผ่านการตรวจสอบอย่างละเอียด เสริมความปลอดภัยด้านหน่วยความจำและการทำงานพร้อมกันเพื่อยกระดับความมั่นคงปลอดภัยของโค้ด"
+item_link: "https://sebastienrousseau.com/2023-11-05-mathematical-and-cryptographic-constants-for-rust-security/rss.xml"
+item_guid: "https://sebastienrousseau.com/2023-11-05-mathematical-and-cryptographic-constants-for-rust-security/rss.xml"
+item_pub_date: "Sun, 05 Nov 2023 06:06:06 +0000"
+twitter_card: "summary_large_image"
+twitter_creator: "@wwdseb"
+twitter_site: "@wwdseb"
+twitter_title: "ค่าคงที่ทางคณิตศาสตร์และการเข้ารหัสสำหรับความมั่นคงปลอดภัยของ Rust"
+twitter_description: "ปกป้องความสมบูรณ์ของโค้ดด้วยค่าคงที่ทางคณิตศาสตร์และการเข้ารหัสที่ผ่านการตรวจสอบอย่างละเอียด เสริมความปลอดภัยด้านหน่วยความจำและการทำงานพร้อมกันเพื่อยกระดับความมั่นคงปลอดภัยของโค้ด"
+twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
+twitter_image_alt: "โลโก้ของ Sebastien Rousseau"
+twitter_url: "https://sebastienrousseau.com/2023-11-05-mathematical-and-cryptographic-constants-for-rust-security/index.html"
+thanks: "ขอบคุณที่อ่านครับ!"
 ---
 
 
-> **TL;DR.** บทความนี้เป็น DRAFT แปลจากต้นฉบับภาษาสเปน รอการตรวจสอบโดยเจ้าของภาษา เนื้อหาหลัก ตัวอย่าง และการอ้างอิงยังคงเป็นภาษาสเปน เฉพาะ frontmatter เท่านั้นที่ถูกเปลี่ยนเป็นภาษาไทย
+![เสาสีขาวขนาดใหญ่](https://cloudcdn.pro/stocks/images/antoine-dautry-05A-kdOH6Hw.webp).class=\"img-fluid clearfix\"
 
-**ประเด็นสำคัญ**
+## ข้อมูลเชิงลึก
 
-![Giant white pillars](https://cloudcdn.pro/stocks/images/antoine-dautry-05A-kdOH6Hw.webp).class=\"img-fluid clearfix\"
+### รากฐานของการสื่อสารที่ปลอดภัย
 
-## Perspectiva
+คณิตศาสตร์มอบค่าคงที่ที่เป็นรากฐานสำคัญของเทคโนโลยีและการสื่อสารที่ปลอดภัย ค่าคงที่อย่างพาย (π) และจำนวนของออยเลอร์ (e) มีความสำคัญอย่างยิ่งในทุกสิ่ง ตั้งแต่เรขาคณิตไปจนถึงการเข้ารหัส เพื่อรักษาความมั่นคงปลอดภัยทางดิจิทัลของเรา
 
-### El fundamento de la comunicación segura
+ในการเข้ารหัส ค่าคงที่มีบทบาทเฉพาะตัว ค่าเหล่านี้ถูกเลือกอย่างพิถีพิถัน ไม่ใช่โดยพลการ และก่อรูปเป็นรากฐานของวิธีการเข้ารหัสที่ปลอดภัย เช่น RSA และการเข้ารหัสแบบเส้นโค้งวงรี ค่าคงที่เหล่านี้คือกุญแจในความหมายที่แท้จริงที่สุด ที่ปกป้องการสื่อสาร อัตลักษณ์ทางดิจิทัล และธุรกรรมอิเล็กทรอนิกส์ของเรา
 
-Las matemáticas proporcionan constantes que son las piedras angulares de la tecnología y de la comunicación segura. Constantes como pi (π) y el número de Euler (e) son cruciales en todo —desde la geometría hasta la criptografía— garantizando nuestra seguridad digital.
+## แนวคิด
 
-En criptografía, las constantes tienen un propósito único. Se eligen meticulosamente, no de forma arbitraria, conformando el fundamento de métodos de cifrado seguros como RSA y la criptografía de curva elíptica. Estas constantes son claves en el sentido más literal, protegiendo nuestras comunicaciones, identidades digitales y transacciones electrónicas.
+### นิยามใหม่ของการเข้าถึงค่าคงที่ด้วยความแม่นยำและความสะดวก
 
-## Idea
+[ไลบรารี Common (CMN)][00] ได้รับการออกแบบมาเพื่อให้นักพัฒนาเข้าถึงค่าคงที่ที่ต้องการได้อย่างแม่นยำและตรงไปตรงมา ในรูปแบบที่เข้ากันได้กับ Rust ทำให้การผสานรวมและการทำความเข้าใจเป็นเรื่องง่าย
 
-### Redefinir el acceso a las constantes con precisión y facilidad
+ด้วยการห่อหุ้มค่าคงที่เหล่านี้ไว้ในสถาปัตยกรรมที่เหมาะกับ Rust ไลบรารี Common (CMN) จึงมอบประสบการณ์ที่มั่นคง รวดเร็ว และใช้งานได้อย่างเป็นธรรมชาติ ไลบรารีนี้ยึดมั่นในความแม่นยำผ่านความปลอดภัยของชนิดข้อมูล (type safety) และเสริมด้วยเอกสารประกอบที่ครบถ้วน ซึ่งช่วยให้การผสานรวมง่ายขึ้นและเข้าใจได้ดียิ่งขึ้น
 
-La [biblioteca Common (CMN)][00] está diseñada para dar a los desarrolladores un acceso preciso y directo a las constantes que necesitan, empaquetadas en un formato compatible con Rust, garantizando una integración y comprensión sencillas.
+## ผลกระทบ
 
-Al encapsular estas constantes en una arquitectura amigable con Rust, la biblioteca Common (CMN) ofrece una experiencia robusta, rápida e intuitiva. Se compromete con la precisión a través de la seguridad de tipos, complementada con una documentación exhaustiva, simplificando la integración y reforzando la comprensión.
+### การปรับแต่งแอปพลิเคชัน Rust ด้วยค่าคงที่ที่เชื่อถือได้
 
-## Impacto
+ไลบรารี Common (CMN) มอบค่าคงที่ทางคณิตศาสตร์และการเข้ารหัสที่แม่นยำหลากหลายให้แก่นักพัฒนา Rust ความแม่นยำนี้ช่วยป้องกันข้อผิดพลาดและเสริมความมั่นคงปลอดภัย ด้วยการออกแบบที่รองรับหลายแพลตฟอร์มและเอกสารประกอบที่ละเอียด CMN ทำให้การพัฒนาและการนำแอปพลิเคชัน Rust ไปใช้งานง่ายขึ้นและเชื่อถือได้มากขึ้น
 
-### Afinar las aplicaciones Rust con constantes fiables
+ด้วยการออกแบบที่คำนึงถึงการพกพาข้ามระบบ ไลบรารี Common (CMN) รับประกันว่าแอปพลิเคชัน Rust สามารถพัฒนาเพียงครั้งเดียวและนำไปใช้งานได้ทุกที่ โดยไม่ต้องกังวลเรื่องความเข้ากันได้ เอกสารประกอบที่ครบถ้วนของไลบรารียังหมายความว่านักพัฒนาสามารถผสานรวมเข้ากับโครงการของตนได้อย่างง่ายดายและเริ่มต้นใช้งานได้อย่างรวดเร็ว
 
-La biblioteca Common (CMN) proporciona a los desarrolladores Rust una amplia gama de constantes matemáticas y criptográficas precisas. Esta precisión ayuda a prevenir errores y refuerza la seguridad. Con su diseño multiplataforma y su documentación detallada, CMN hace que el desarrollo y el despliegue de aplicaciones Rust sean más sencillos y fiables.
+## แรงจูงใจ
 
-Diseñada con la portabilidad en mente, la biblioteca Common (CMN) garantiza que las aplicaciones Rust puedan desarrollarse una vez y desplegarse en cualquier parte, sin preocupaciones de compatibilidad. La documentación exhaustiva de la biblioteca significa también que los desarrolladores pueden integrarla fácilmente en sus proyectos y ponerse al día rápidamente.
+### เสริมพลังให้แอปพลิเคชัน Rust ของคุณด้วยไลบรารี Common (CMN)
 
-## Incentivos
+สำหรับแอปพลิเคชัน Rust ที่ต้องพึ่งพาค่าคงที่ทางคณิตศาสตร์หรือการเข้ารหัส ไลบรารี Common (CMN) คือทรัพยากรที่มีคุณค่าอย่างยิ่ง โดยนำเสนอ:
 
-### Refuerce sus aplicaciones Rust con la biblioteca Common (CMN)
+- **จำนวนอาโวกาโดร:** จำนวนอะตอมในสารหนึ่งโมล
+- **ค่าคงที่โบลต์ซมันน์:** ค่าคงที่ที่เชื่อมโยงพลังงานกับอุณหภูมิ
+- **จำนวนของออยเลอร์:** ฐานของลอการิทึมธรรมชาติ
+- **ฟังก์ชันแกมมา:** ฟังก์ชันพิเศษที่ปรากฏในหลายสาขาของคณิตศาสตร์และฟิสิกส์
+- **อัตราส่วนทองคำ:** จำนวนที่ปรากฏในวัตถุทางธรรมชาติและทางคณิตศาสตร์จำนวนมาก
+- **พาย:** สัดส่วนระหว่างเส้นรอบวงกับเส้นผ่านศูนย์กลางของวงกลม
+- **ค่าคงที่พลังค์:** ควอนตัมของการกระทำ
+- **อัตราส่วนเงิน:** จำนวนที่คล้ายกับอัตราส่วนทองคำ
+- **เทา:** สองเท่าของค่าคงที่ทางคณิตศาสตร์พาย
+- **รากที่สองของ 3:** คำตอบที่เป็นบวกของสมการ x^2 = 3
+- **รากที่สองของ 5:** คำตอบที่เป็นบวกของสมการ x^2 = 5
 
-Para las aplicaciones Rust que dependen de constantes matemáticas o criptográficas, la biblioteca Common (CMN) es un recurso inestimable. Propone:
+นี่เป็นเพียงส่วนหนึ่งของค่าคงที่ทางคณิตศาสตร์และการเข้ารหัสจำนวนมากที่มีอยู่ในไลบรารี Common (CMN) สำหรับข้อมูลเพิ่มเติม โปรดดูเอกสารประกอบของไลบรารี Common (CMN): [https://lib.rs/crates/cmn][01]
 
-- **Número de Avogadro**: número de átomos en un mol de sustancia.
-- **Constante de Boltzmann**: constante que relaciona energía y temperatura.
-- **Número de Euler**: base del logaritmo natural.
-- **Función Gamma**: función especial que aparece en muchos campos matemáticos y físicos.
-- **Número áureo**: número que aparece en muchos objetos naturales y matemáticos.
-- **Pi**: proporción entre la circunferencia y el diámetro de un círculo.
-- **Constante de Planck**: cuanto de acción.
-- **Número de plata**: número similar al número áureo.
-- **Tau**: doble de la constante matemática pi.
-- **Raíz cuadrada de 3**: solución positiva de la ecuación x² = 3.
-- **Raíz cuadrada de 5**: solución positiva de la ecuación x² = 5.
+ประโยชน์ของการใช้ไลบรารี Common (CMN) ได้แก่:
 
-Estas son solo algunas de las numerosas constantes matemáticas y criptográficas disponibles en la biblioteca Common (CMN). Para más información, consulte la documentación: [https://lib.rs/crates/cmn][01].
+- **ความแม่นยำ:** รับประกันการคำนวณทางคณิตศาสตร์ที่เที่ยงตรง
+- **ความน่าเชื่อถือ:** ไลบรารีที่ผ่านการทดสอบอย่างเข้มงวด
+- **ความมั่นคงปลอดภัย:** ความปลอดภัยของชนิดข้อมูลช่วยป้องกันช่องโหว่
+- **การพกพาข้ามระบบ:** ใช้งานได้อย่างง่ายดายบนหลากหลายแพลตฟอร์ม
+- **เอกสารประกอบ:** เรียนรู้ได้อย่างรวดเร็วด้วยคู่มือที่ครบถ้วน
+- **ความอเนกประสงค์** เหมาะสำหรับงานคำนวณหลากหลายประเภท
 
-Los beneficios de utilizar la biblioteca Common (CMN) incluyen:
+กรณีการใช้งานของไลบรารี Common (CMN) มีความหลากหลาย ครอบคลุม:
 
-- **Precisión**: garantiza cálculos matemáticos precisos.
-- **Fiabilidad**: una biblioteca rigurosamente probada.
-- **Seguridad**: la seguridad de tipos ayuda a prevenir las vulnerabilidades.
-- **Portabilidad**: utilícela en diversas plataformas con facilidad.
-- **Documentación**: aprenda rápidamente con guías exhaustivas.
-- **Polivalencia**: ideal para una amplia gama de tareas computacionales.
+- การสร้างกุญแจเข้ารหัสและการสร้างตัวเลขอย่างปลอดภัย
+- การคำนวณทางคณิตศาสตร์ขั้นสูง
+- การพัฒนาแอปพลิเคชันในด้านวิทยาศาสตร์ การเงิน และการเข้ารหัส
+- นวัตกรรมด้านการเรียนรู้ของเครื่อง AI และบล็อกเชน
 
-Los casos de uso de la biblioteca Common (CMN) son diversos:
+เมื่อสาขาการเข้ารหัสพัฒนาไป ไลบรารี Common (CMN) ก็พัฒนาตามไปด้วย โดยก้าวนำแนวโน้มอย่างการคำนวณเชิงควอนตัมและการเข้ารหัสแบบโฮโมมอร์ฟิก เพื่อให้แอปพลิเคชันของคุณยังคงปลอดภัยและพร้อมรับอนาคต
 
-- Generación de claves de cifrado y creación segura de números.
-- Cálculos matemáticos avanzados.
-- Desarrollo de aplicaciones en ciencia, finanzas y criptografía.
-- Innovaciones en aprendizaje automático, IA y blockchain.
-
-A medida que el campo de la criptografía evoluciona, la biblioteca Common (CMN) le sigue el paso, manteniéndose por delante de tendencias como la computación cuántica y el cifrado homomórfico para garantizar que sus aplicaciones permanezcan seguras y perdurables.
-
-Los desarrolladores que necesiten constantes matemáticas o criptográficas en Rust deberían considerar la biblioteca Common (CMN) como recurso principal. Common (CMN) es una herramienta gratuita y de código abierto, disponible para su descarga desde el [repositorio GitHub ⧉][02].
+นักพัฒนาที่ต้องการค่าคงที่ทางคณิตศาสตร์หรือการเข้ารหัสใน Rust ควรพิจารณาไลบรารี Common (CMN) เป็นทรัพยากรหลัก ไลบรารี Common (CMN) เป็นเครื่องมือฟรีและโอเพนซอร์ส และสามารถดาวน์โหลดได้จาก[คลังเก็บ GitHub ⧉][02]
 
 [00]: https://github.com/sebastienrousseau/cmn "The Common (CMN) library website"
 [01]: https://docs.rs/cmn/latest/cmn/ "The Common (CMN) library documentation"

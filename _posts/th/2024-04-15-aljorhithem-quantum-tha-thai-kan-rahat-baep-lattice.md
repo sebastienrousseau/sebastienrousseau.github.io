@@ -1,101 +1,97 @@
 ---
-title: "Un algoritmo cuántico desafía a la criptografía sobre retículos"
-subtitle: "El próximo algoritmo cuántico en tiempo polinómico contra la criptografía sobre retículos"
-description: "Un nuevo algoritmo cuántico en tiempo polinómico de Yilei Chen apunta a la criptografía sobre retículos. Implicaciones para los estándares postcuánticos, incluido CRYSTALS-Kyber."
+title: "อัลกอริทึมควอนตัมท้าทายการเข้ารหัสแบบแลตทิซ"
+subtitle: "อัลกอริทึมควอนตัมเวลาพหุนามตัวถัดไปสำหรับการเข้ารหัสแบบแลตทิซ"
+description: "อัลกอริทึมควอนตัมเวลาพหุนามตัวใหม่โดย Yilei Chen มุ่งเป้าไปที่การเข้ารหัสแบบแลตทิซ พร้อมผลกระทบต่อมาตรฐานหลังยุคควอนตัมรวมถึง CRYSTALS-Kyber"
 date: "April 15, 2024"
 language: "th-TH"
 locale: "th_TH"
 banner: "https://cloudcdn.pro/stocks/images/digital-constellation.webp"
-banner_alt: "Banner que representa nodos de red en un espacio digital azul"
-keywords: "computación cuántica, algoritmo cuántico, criptografía sobre retículos, LWE, cifrado, criptografía postcuántica, ciberseguridad, Yilei Chen, investigación criptográfica, amenazas de seguridad"
+banner_alt: "แบนเนอร์แสดงโหนดเครือข่ายในปริภูมิดิจิทัลสีน้ำเงิน"
+keywords: "การประมวลผลควอนตัม, อัลกอริทึมควอนตัม, การเข้ารหัสแบบแลตทิซ, LWE, การเข้ารหัส, การเข้ารหัสหลังยุคควอนตัม, ความมั่นคงปลอดภัยไซเบอร์, Yilei Chen, การวิจัยการเข้ารหัส, ภัยคุกคามความปลอดภัย"
 ---
 
 
-> **TL;DR.** บทความนี้เป็น DRAFT แปลจากต้นฉบับภาษาสเปน รอการตรวจสอบโดยเจ้าของภาษา เนื้อหาหลัก ตัวอย่าง และการอ้างอิงยังคงเป็นภาษาสเปน เฉพาะ frontmatter เท่านั้นที่ถูกเปลี่ยนเป็นภาษาไทย
+## บทสรุปสำหรับผู้บริหาร
 
-**ประเด็นสำคัญ**
+บทความนี้พิจารณางานของ [**Yilei Chen ⧉**][00] ผู้พัฒนา `polynomial-time quantum algorithm` ที่อาจส่งผลกระทบอย่างมีนัยสำคัญต่อความยากของปัญหาทางคณิตศาสตร์ **Learning With Errors (LWE)** ซึ่งเป็นความท้าทายพื้นฐานในการเข้ารหัสแบบแลตทิซ
 
-## Resumen ejecutivo
+แลตทิซคือกลุ่มย่อยไม่ต่อเนื่องของปริภูมิยุคลิดมิติ n ซึ่งมีบทบาทสำคัญในระบบการเข้ารหัสสมัยใหม่ ปัญหา LWE เกี่ยวข้องกับการค้นหาเวกเตอร์ลับจากชุดสมการเชิงเส้นโดยประมาณ และเป็นรากฐานของโปรโตคอลการเข้ารหัสหลังยุคควอนตัมจำนวนมาก
 
-Este artículo explora los trabajos de [**Yilei Chen ⧉**][00], quien ha desarrollado un `algoritmo cuántico en tiempo polinómico` susceptible de impactar significativamente la dificultad del problema matemático **Learning With Errors (LWE)**, un desafío fundamental de la criptografía sobre retículos.
+## อัลกอริทึมควอนตัมเวลาพหุนามของ Chen
 
-Los retículos son subgrupos discretos del espacio euclidiano de n dimensiones que desempeñan un papel crucial en los esquemas criptográficos modernos. El problema LWE consiste en encontrar un vector secreto a partir de un conjunto de ecuaciones lineales aproximadas, y constituye una piedra angular de numerosos protocolos criptográficos postcuánticos.
+อัลกอริทึมของ Chen ให้คำตอบสำหรับ `shortest vector problem (GapSVP)` แบบตัดสินใจ และ `shortest independent vector problem (SIVP)` สำหรับแลตทิซทุกมิติ โดยทำได้ด้วยความซับซ้อนเชิงเวลาพหุนาม ซึ่งเป็นการปรับปรุงที่สำคัญเหนือคำตอบก่อนหน้า
 
-## El algoritmo cuántico en tiempo polinómico de Chen
+นวัตกรรมสำคัญในงานของเขาประกอบด้วย
 
-El algoritmo de Chen ofrece una solución al `decisional shortest vector problem (GapSVP)` y al `shortest independent vector problem (SIVP)` para retículos de cualquier dimensión. Lo logra con una complejidad en tiempo polinómico, una mejora significativa respecto a las soluciones anteriores.
+* **ฟังก์ชันเกาส์เซียนที่มีความแปรปรวนเชิงซ้อน:** Chen นำการใช้ฟังก์ชันเกาส์เซียนที่มีความแปรปรวนเชิงซ้อนมาใช้ในการออกแบบอัลกอริทึมควอนตัม แนวทางนี้ใช้ประโยชน์จากคุณสมบัติของการแจกแจงเกาส์เซียนเชิงซ้อนเพื่อจัดการสถานะควอนตัมได้อย่างมีประสิทธิภาพยิ่งขึ้น ทำให้แก้ปัญหา LWE ได้อย่างมีประสิทธิภาพมากขึ้น
 
-Las innovaciones clave de su trabajo incluyen:
+* **การแปลงฟูเรียร์ควอนตัมแบบมีหน้าต่าง:** อัลกอริทึมนี้ใช้การแปลงฟูเรียร์ควอนตัมแบบมีหน้าต่าง
 
-* **Funciones gaussianas con varianzas complejas:** Chen introduce el uso de funciones gaussianas con varianzas complejas en el diseño del algoritmo cuántico. Este enfoque aprovecha las propiedades de las distribuciones gaussianas complejas para manipular más eficientemente los estados cuánticos, permitiendo una solución más eficiente al problema LWE.
+## บทนำสู่ปัญหาแลตทิซและความสำคัญในการเข้ารหัส
 
-* **Transformada de Fourier cuántica con ventana:** El algoritmo aplica una transformada de Fourier cuántica con ventana.
+ปัญหาแลตทิซเกี่ยวข้องกับการศึกษาโครงสร้างทางคณิตศาสตร์ที่เรียกว่าแลตทิซ ซึ่งเป็นกลุ่มย่อยไม่ต่อเนื่องของปริภูมิยุคลิดมิติ n ปัญหาเหล่านี้ได้รับความสนใจอย่างมากในการเข้ารหัส เนื่องจากคาดว่ามีความทนทานต่อการโจมตีเชิงควอนตัม
 
-## Introducción a los problemas sobre retículos y a su importancia en criptografía
+ปัญหาแลตทิซที่โดดเด่นที่สุดคือ [**ปัญหา Learning With Errors (LWE) ⧉**][01] ซึ่งเสนอโดย Oded Regev LWE เป็นปัญหาเชิงการคำนวณที่เกี่ยวข้องกับการค้นหาเวกเตอร์ลับจากชุดสมการเชิงเส้นโดยประมาณ
 
-Los problemas sobre retículos implican el estudio de estructuras matemáticas llamadas retículos, que son subgrupos discretos del espacio euclidiano de n dimensiones. Estos problemas han ganado una atención significativa en criptografía debido a su presunta resistencia a los ataques cuánticos.
+ระบบการเข้ารหัสสมัยใหม่จำนวนมาก เช่น ระบบการเข้ารหัสของ Regev และการแลกเปลี่ยนกุญแจ Frodo ตั้งความปลอดภัยไว้บนความยากของการแก้ปัญหา LWE
 
-El problema de retículo más notable es el [**problema Learning With Errors (LWE) ⧉**][01], introducido por Oded Regev. LWE es un problema computacional que consiste en encontrar un vector secreto a partir de un conjunto de ecuaciones lineales aproximadas.
+## อัลกอริทึมแบบดั้งเดิมสำหรับปัญหาแลตทิซและข้อจำกัด
 
-Numerosos esquemas criptográficos modernos, como el criptosistema de Regev y el intercambio de claves Frodo, basan su seguridad en la dificultad de resolver el problema LWE.
+อัลกอริทึมแบบดั้งเดิมสำหรับการแก้ปัญหาแลตทิซ เช่น **อัลกอริทึม Lenstra-Lenstra-Lovász (LLL)** และรูปแบบต่าง ๆ ของมัน ได้รับการศึกษาอย่างกว้างขวางในสาขาการเข้ารหัส อย่างไรก็ตาม อัลกอริทึมเหล่านี้เผชิญความท้าทายสำคัญในด้านความซับซ้อนเชิงการคำนวณ โดยเฉพาะเมื่อมิติของแลตทิซเพิ่มขึ้น
 
-## Algoritmos clásicos para los problemas sobre retículos y sus límites
+อัลกอริทึมแบบดั้งเดิมที่เป็นที่รู้จักสำหรับการแก้ปัญหา LWE ขึ้นอยู่กับจำนวนตัวแปรแบบเอกซ์โพเนนเชียล ทำให้ไม่สามารถใช้งานได้จริงกับแลตทิซมิติสูง อุปสรรคด้านความซับซ้อนนี้เป็นปัจจัยสำคัญต่อความปลอดภัยของระบบการเข้ารหัสที่อิงกับ LWE
 
-Los algoritmos clásicos para resolver los problemas sobre retículos, como el algoritmo **Lenstra-Lenstra-Lovász (LLL)** y sus variantes, han sido extensamente estudiados en criptografía. Sin embargo, estos algoritmos afrontan desafíos significativos en términos de complejidad computacional, en particular a medida que las dimensiones del retículo aumentan.
+## ความพยายามก่อนหน้าในการพัฒนาอัลกอริทึมควอนตัมสำหรับ LWE
 
-Los algoritmos clásicos bien conocidos para resolver el problema LWE dependen exponencialmente del número de variables, lo que los hace impracticables para los retículos de alta dimensión. Esta barrera de complejidad es un factor clave de la seguridad de los esquemas criptográficos basados en LWE.
+ก่อนงานของ Chen นักวิจัยหลายคนได้สำรวจศักยภาพของอัลกอริทึมควอนตัมในการแก้ปัญหา LWE
 
-## Intentos anteriores de algoritmos cuánticos para LWE
+Oded Regev พัฒนาการลดทอนเชิงควอนตัมจาก `GapSVP` ไปยัง `LWE` ได้สำเร็จ อย่างไรก็ตาม ควรสังเกตว่าการลดทอนนี้ต้องการออราเคิลเชิงควอนตัมสำหรับการแก้ GapSVP ซึ่งยังไม่มีการพิสูจน์ว่ามีอยู่จริง
 
-Antes del trabajo de Chen, varios investigadores habían explorado el potencial de los algoritmos cuánticos para resolver el problema LWE.
+Kuperberg สร้าง [**อัลกอริทึมควอนตัมสำหรับแก้ปัญหา LWE ด้วยแฟกเตอร์การประมาณแบบต่ำกว่าเอกซ์โพเนนเชียล ⧉**][02] อย่างไรก็ตาม แนวทางเชิงอัลกอริทึมเหล่านี้อาศัยสมมติฐานที่ยังไม่ได้พิสูจน์ หรือมีความเร็วในการคำนวณที่ช้ากว่า ในทางตรงกันข้าม อัลกอริทึมของ Chen ให้คำตอบในเวลาพหุนามโดยไม่ต้องใช้ออราเคิลเชิงควอนตัม
 
-Oded Regev desarrolló con éxito una reducción cuántica de `GapSVP` a `LWE`. Sin embargo, conviene señalar que esta reducción requiere un oráculo cuántico para resolver GapSVP, cuya existencia queda por establecer.
+## อัลกอริทึมควอนตัมเวลาพหุนามของ Chen สำหรับ LWE
 
-Kuperberg creó [**un algoritmo cuántico para resolver LWE con un factor de aproximación subexponencial ⧉**][02]. Sin embargo, estos enfoques algorítmicos se apoyaban en hipótesis no verificadas o presentaban una velocidad computacional más lenta. Por contraste, el algoritmo de Chen ofrece una solución en tiempo polinómico sin necesidad de un oráculo cuántico.
+อัลกอริทึมควอนตัมของ Yilei Chen สำหรับการแก้ปัญหา LWE ในเวลาพหุนามถือเป็นความก้าวหน้าครั้งสำคัญในสาขานี้ อัลกอริทึมนี้ใช้เทคนิคใหม่สองประการ
 
-## El algoritmo cuántico en tiempo polinómico de Chen para LWE
+1. **ฟังก์ชันเกาส์เซียนที่มีความแปรปรวนเชิงซ้อน**: Chen นำการใช้ฟังก์ชันเกาส์เซียนที่มีความแปรปรวนเชิงซ้อนมาใช้ในการออกแบบอัลกอริทึมควอนตัม แนวทางนี้ใช้ประโยชน์จากคุณสมบัติของการแจกแจงเกาส์เซียนเชิงซ้อนเพื่อจัดการสถานะควอนตัมได้อย่างมีประสิทธิภาพยิ่งขึ้น ทำให้แก้ปัญหา LWE ได้อย่างมีประสิทธิภาพมากขึ้น
 
-El algoritmo cuántico de Yilei Chen para resolver el problema LWE en tiempo polinómico representa un avance significativo en el campo. El algoritmo emplea dos técnicas nuevas:
+2. **การแปลงฟูเรียร์ควอนตัมแบบมีหน้าต่าง**: อัลกอริทึมนี้ใช้การแปลงฟูเรียร์ควอนตัมแบบมีหน้าต่าง ซึ่งช่วยให้วิเคราะห์ปัญหาได้พร้อมกันทั้งในโดเมนเวลาและโดเมนความถี่ เทคนิคนี้ทำให้อัลกอริทึมประมวลผลโครงสร้างมิติสูงของแลตทิซได้อย่างมีประสิทธิภาพ และดึงข้อมูลที่เกี่ยวข้องเพื่อแก้ปัญหา LWE
 
-1. **Funciones gaussianas con varianzas complejas**: Chen introduce el uso de funciones gaussianas con varianzas complejas en el diseño del algoritmo cuántico. Este enfoque aprovecha las propiedades de las distribuciones gaussianas complejas para manipular más eficientemente los estados cuánticos, permitiendo una solución más eficiente al problema LWE.
+อัลกอริทึมของ Chen ผสมผสานเทคนิคเหล่านี้เพื่อแก้ `LWE`, `GapSVP` และ `SIVP` ในเวลาพหุนามสำหรับทุกมิติของแลตทิซ นี่เป็นการปรับปรุงที่สำคัญเหนืออัลกอริทึมแบบดั้งเดิมและควอนตัมก่อนหน้า
 
-2. **Transformada de Fourier cuántica con ventana**: El algoritmo aplica una transformada de Fourier cuántica con ventana, que permite el análisis simultáneo del problema en los dominios temporal y frecuencial. Esta técnica permite al algoritmo tratar eficientemente la estructura de alta dimensión de los retículos y extraer la información pertinente para resolver LWE.
+## ผลกระทบ ข้อจำกัด และทิศทางการวิจัยในอนาคต
 
-El algoritmo de Chen combina estas técnicas para resolver `LWE`, `GapSVP` y `SIVP` en tiempo polinómico para todas las dimensiones de retículo. Esto es una mejora importante respecto a los algoritmos clásicos y cuánticos anteriores.
+อัลกอริทึมควอนตัมของ Chen มีผลกระทบต่อ LWE โดยท้าทายแนวคิดที่ว่าการโจมตีเชิงควอนตัมไม่สามารถทำลาย LWE และปัญหาแบบแลตทิซที่คล้ายกันได้ สมมติฐานนี้เป็นพื้นฐานของระบบการเข้ารหัสที่กำลังเกิดขึ้นจำนวนมาก อย่างไรก็ตาม การเข้าใจข้อจำกัดของอัลกอริทึมและผลกระทบที่อาจเกิดขึ้นต่อระบบการเข้ารหัสที่อิงกับ LWE ที่มีอยู่นั้นเป็นสิ่งจำเป็น
 
-## Implicaciones, limitaciones y ejes de investigación futuros
+ประเด็นสำคัญของอัลกอริทึมของ Chen คือมันทำงานได้อย่างเหมาะสมที่สุดเมื่อขนาดของปัญหามากกว่าขอบเขตความคลาดเคลื่อนที่ยอมรับได้อย่างมีนัยสำคัญ ในระบบการเข้ารหัสที่อิงกับ LWE ในทางปฏิบัติ อัตราส่วนมอดูลัสต่อสัญญาณรบกวนมักถูกกำหนดให้ต่ำเพื่อความปลอดภัย ในทางกลับกัน อัลกอริทึมของ Chen จำเป็นต้องใช้อัตราส่วนที่สูงกว่าเพื่อให้ได้เวลาทำงานแบบพหุนาม
 
-El algoritmo cuántico de Chen tiene implicaciones para LWE, cuestionando la noción de que los ataques cuánticos no pueden romper LWE y los problemas similares sobre retículos. Esta hipótesis forma la base de numerosos esquemas criptográficos emergentes. Sin embargo, comprender los límites del algoritmo y su impacto potencial sobre los sistemas de cifrado existentes basados en LWE es esencial.
+ข้อจำกัดนี้บ่งชี้ว่าระบบการเข้ารหัสที่อิงกับ LWE ที่มีอยู่ซึ่งมีอัตราส่วนมอดูลัสต่อสัญญาณรบกวนที่เล็กกว่าอาจยังคงปลอดภัยจากอัลกอริทึมของ Chen ในรูปแบบปัจจุบัน ดังนั้น แม้ว่าอัลกอริทึมนี้จะเป็นความก้าวหน้าเชิงทฤษฎีที่สำคัญ แต่ก็ไม่ได้เป็นภัยคุกคามในทันทีต่อความปลอดภัยของระบบการเข้ารหัสที่อิงกับ LWE ทั้งหมด
 
-Una cuestión clave con el algoritmo de Chen es que funciona de manera óptima cuando el tamaño del problema supera significativamente el margen de error permitido. En los esquemas criptográficos prácticos basados en LWE, el ratio módulo-ruido se mantiene típicamente bajo por razones de seguridad. Inversamente, el algoritmo de Chen requiere un ratio más alto para alcanzar su tiempo de ejecución polinómico.
+งานของเขาเน้นย้ำถึงความจำเป็นในการวิจัยเพิ่มเติมเกี่ยวกับการพัฒนาไพรมิทิฟการเข้ารหัสที่ต้านทานควอนตัม
 
-Este límite sugiere que los esquemas de cifrado basados en LWE existentes con ratios módulo-ruido más pequeños podrían permanecer seguros frente al algoritmo de Chen tal como se presenta actualmente. Por consiguiente, si bien el algoritmo marca un avance teórico significativo, no representa una amenaza inmediata para la seguridad de todos los sistemas criptográficos basados en LWE.
+## การประยุกต์ใช้และแรงจูงใจที่เป็นไปได้
 
-Su trabajo subraya la necesidad de proseguir la investigación sobre el desarrollo de primitivas criptográficas resistentes a lo cuántico.
+การพัฒนาอัลกอริทึมควอนตัมที่มีประสิทธิภาพสำหรับปัญหาแลตทิซมีผลกระทบเป็นวงกว้างต่อทุกภาคส่วนที่พึ่งพาการสื่อสารดิจิทัลและการจัดเก็บข้อมูลที่ปลอดภัย อัลกอริทึมของ Chen เน้นให้เห็นความจำเป็นในภาพรวมของการเข้ารหัสที่ต้านทานควอนตัม
 
-## Aplicaciones potenciales e incentivos
+ซึ่งรวมถึงอุตสาหกรรมต่าง ๆ เช่น
 
-El desarrollo de algoritmos cuánticos eficientes para los problemas sobre retículos tiene implicaciones de gran alcance en todos los sectores que se apoyan en la comunicación digital segura y el almacenamiento de datos. El algoritmo de Chen pone de manifiesto la necesidad universal de cifrado resistente a lo cuántico.
+* **ความมั่นคงปลอดภัยไซเบอร์:** วิธีการเข้ารหัสที่แข็งแกร่งและต้านทานควอนตัมมีความสำคัญอย่างยิ่งต่อการปกป้องข้อมูลอ่อนไหวในยุคของการประมวลผลควอนตัม
 
-Esto incluye industrias como:
+* **ภาครัฐและการป้องกันประเทศ:** รัฐบาลสามารถใช้ประโยชน์จากความก้าวหน้าเหล่านี้เพื่อเสริมความปลอดภัยของโครงสร้างพื้นฐานสำคัญและการสื่อสารลับ ลดภัยคุกคามที่อาจเกิดจากขีดความสามารถการประมวลผลควอนตัมของฝ่ายตรงข้าม
 
-* **Ciberseguridad:** métodos de cifrado robustos y resistentes a lo cuántico son cruciales para proteger la información sensible en la era de la computación cuántica.
+* **บริการทางการเงิน:** ภาคการเงินพึ่งพาช่องทางการสื่อสารที่ปลอดภัยอย่างมากสำหรับธุรกรรมและการปกป้องข้อมูล ไพรมิทิฟการเข้ารหัสที่ต้านทานควอนตัมซึ่งอิงกับปัญหาแลตทิซสามารถช่วยรับประกันความปลอดภัยในระยะยาวของระบบการเงินได้
 
-* **Sector público y defensa:** los gobiernos pueden aprovechar estos avances para reforzar la seguridad de las infraestructuras críticas y las comunicaciones clasificadas, mitigando las amenazas potenciales planteadas por las capacidades cuánticas adversarias.
+* **การดูแลสุขภาพ:** เมื่อข้อมูลด้านสุขภาพถูกแปลงเป็นดิจิทัลมากขึ้น การรับประกันความลับและความถูกต้องของข้อมูลจึงมีความสำคัญสูงสุด วิธีการเข้ารหัสที่ปลอดภัยต่อควอนตัมซึ่งพัฒนาจากงานของ Chen สามารถช่วยปกป้องข้อมูลผู้ป่วยที่อ่อนไหวจากการโจมตีเชิงควอนตัมในอนาคตได้
 
-* **Servicios financieros:** el sector financiero depende fuertemente de canales de comunicación seguros para las transacciones y la protección de los datos. Primitivas criptográficas resistentes a lo cuántico basadas en los problemas sobre retículos podrían contribuir a garantizar la seguridad a largo plazo de los sistemas financieros.
+* **การประมวลผลบนคลาวด์:** ด้วยการนำบริการคลาวด์มาใช้เพิ่มขึ้น ความปลอดภัยของข้อมูลที่จัดเก็บและประมวลผลบนคลาวด์จึงเป็นข้อกังวลสำคัญ ระบบการเข้ารหัสที่ต้านทานควอนตัมซึ่งอิงกับปัญหาแลตทิซสามารถเพิ่มชั้นการปกป้องเพิ่มเติมสำหรับแอปพลิเคชันและการจัดเก็บข้อมูลบนคลาวด์ได้
 
-* **Sanidad:** mientras los datos sanitarios se vuelven cada vez más digitalizados, garantizar su confidencialidad e integridad es primordial. Métodos de cifrado cuántico-seguros derivados de los trabajos de Chen podrían ayudar a proteger la información sensible de los pacientes contra los futuros ataques cuánticos.
+## บทสรุป
 
-* **Cloud computing:** con la creciente adopción de los servicios cloud, la seguridad de los datos almacenados y tratados en el cloud es una preocupación principal. Esquemas de cifrado resistentes a lo cuántico basados en los problemas sobre retículos podrían proporcionar una capa adicional de protección para las aplicaciones y el almacenamiento de datos en modo cloud.
+อัลกอริทึมควอนตัมเวลาพหุนามของ Yilei Chen สำหรับการแก้ปัญหา LWE ถือเป็นก้าวสำคัญในสาขาการประมวลผลควอนตัมและการเข้ารหัส ด้วยการใช้วิธีการใหม่ เช่น ฟังก์ชันเกาส์เซียนและการแปลงฟูเรียร์ควอนตัมแบบมีหน้าต่าง Chen ได้แสดงให้เห็นว่าอัลกอริทึมควอนตัมสามารถแก้ปัญหาแลตทิซที่ซับซ้อนได้อย่างมีประสิทธิภาพ อย่างไรก็ตาม สิ่งสำคัญคือต้องระบุว่างานนี้ยังเป็นความก้าวหน้าเชิงทฤษฎีในปัจจุบัน และจำเป็นต้องมีการวิจัยเพิ่มเติมเพื่อนำไปสู่การใช้งานจริง
 
-## Conclusión
+การพัฒนาการเข้ารหัสที่ต้านทานควอนตัมไม่เพียงเป็นความท้าทายทางเทคนิคเท่านั้น แต่ยังเป็นความจำเป็นเชิงกลยุทธ์สำหรับทั้งภาคธุรกิจและภาครัฐ การลงทุนในความพยายามด้านการวิจัยและพัฒนาในสาขานี้อาจให้ผลประโยชน์ระยะยาวที่สำคัญในด้านความปลอดภัยและความเป็นส่วนตัวของข้อมูล
 
-El algoritmo cuántico en tiempo polinómico de Yilei Chen para resolver el problema LWE representa un hito significativo en el campo de la computación cuántica y la criptografía. Utilizando nuevos métodos como las funciones gaussianas y las transformadas de Fourier cuánticas con ventana, Chen ha mostrado cómo los algoritmos cuánticos pueden resolver eficientemente problemas complejos sobre retículos. Sin embargo, es esencial señalar que este trabajo constituye actualmente un avance teórico, y que se necesita investigación adicional para acercarlo a una implementación práctica.
-
-El desarrollo de la criptografía resistente a lo cuántico no es solo un desafío técnico, sino también un imperativo estratégico para las empresas y los gobiernos. Invertir en I+D en este campo podría producir beneficios significativos a largo plazo en términos de seguridad y confidencialidad de los datos.
-
-## Referencias
+## เอกสารอ้างอิง
 
 Chen, Y. (2024). [**Quantum Algorithms for Lattice Problems: A New Era in Cryptography ⧉**][00]. *Journal of Quantum Computing and Cryptography*, 7(4), 112-135.
 

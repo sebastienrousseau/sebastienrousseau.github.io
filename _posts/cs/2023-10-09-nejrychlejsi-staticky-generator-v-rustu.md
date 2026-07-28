@@ -1,93 +1,103 @@
 ---
-title: "Static Site Generator: el generador de sitios estáticos más rápido basado en Rust"
-subtitle: "Un SSG ultrarrápido, accesible y optimizado para SEO, escrito en Rust"
-description: "Cree sitios estáticos de alto impacto, escalables hasta el infinito y enteramente bajo su control, gracias a Static Site Generator: un SSG ultrarrápido escrito en Rust."
+title: "Static Site Generator: nejrychlejší generátor statických webů v Rustu"
+subtitle: "Static Site Generator, nejrychlejší generátor statických webů v Rustu pro weby s vysokým dopadem."
+description: "Umožňuje vám vytvářet výkonné statické weby s neomezenými možnostmi, neomezenou škálovatelností a skutečně jedinečnou webovou přítomností, kterou máte plně pod kontrolou."
 date: "October 9, 2023"
 language: "cs-CZ"
 locale: "cs_CZ"
 banner: "https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp"
-banner_alt: "Ordenador portátil apagado sobre una mesa blanca con un vaso de agua a la izquierda y un bolígrafo, un cuaderno y una planta a la derecha"
-keywords: "Static Site Generator, generador de sitios estáticos, SSG, Rust, rendimiento, SEO, accesibilidad, WCAG, ADA, PWA, Markdown, GFM, Atom, RSS"
+banner_alt: "Vypnutý notebook na bílém stole se sklenicí vody vlevo a perem, poznámkovým blokem a rostlinou vpravo"
+keywords: "Static Site Generator, generátor statických webů, SSG, Rust, výkon, SEO, přístupnost, WCAG, ADA, PWA, Markdown, GFM, Atom, RSS"
 ---
 
 
-> **TL;DR.** Tento článek je DRAFT překlad původně španělského zdroje, čekající na revizi rodilým mluvčím. Hlavní obsah, příklady a citace zůstávají ve španělštině; pouze záhlaví/frontmatter byly přepnuty na češtinu.
+![Vypnutý notebook na bílém stole se sklenicí vody vlevo a perem, poznámkovým blokem a rostlinou vpravo](https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp).class=\"img-fluid clearfix\"
 
-**Klíčové body**
+## Poznatek
 
-![Ordenador portátil apagado sobre una mesa blanca con un vaso de agua a la izquierda y un bolígrafo, un cuaderno y una planta a la derecha](https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp).class=\"img-fluid clearfix\"
+### Kvalitní generátor statických webů pro moderní web
 
-## Perspectiva
+V neustále se vyvíjejícím digitálním prostředí jsou rychlost a kvalita zásadní. Chtěl jsem najít způsob, jak rychle generovat statické weby, které nabízejí vysokou kvalitu, přístupnost a vhodnost pro SEO.
 
-### Un generador de sitios estáticos de alta calidad para la web moderna
+Statické weby jsou stránky, které zůstávají neměnné, dokud je ručně neaktualizujete. Skládají se ze souborů HTML, CSS a někdy JavaScriptu a oproti dynamickým webům nabízejí rychlé načítání a vyšší bezpečnost.
 
-En un panorama digital en perpetua evolución, la velocidad y la calidad son primordiales. Quería a toda costa encontrar una manera de generar rápidamente sitios estáticos que aunaran alta calidad, accesibilidad y adecuación al SEO.
+Žádný z dostupných produktů bohužel nesplňoval mé požadavky rovnou po instalaci. Rozhodl jsem se proto vytvořit nové řešení od základu. Mým cílem bylo nabídnout rychlou a spolehlivou alternativu k současným generátorům statických webů na trhu a posunout hranice toho, co je s Rustem možné.
 
-Los sitios estáticos son páginas web que permanecen fijas e inalteradas mientras no se actualicen manualmente. Están constituidos por archivos HTML, CSS y, a veces, JavaScript, ofreciendo tiempos de carga rápidos y una seguridad reforzada respecto a los sitios dinámicos.
+## Myšlenka
 
-Por desgracia, ningún producto existente respondía a mis exigencias listo para usar. Por ello tomé la iniciativa de crear una nueva solución desde cero. Mi objetivo: ofrecer una alternativa rápida y fiable a los generadores de sitios estáticos disponibles en el mercado, y expandir los límites de lo posible con Rust.
+### Řešení s neomezenou škálovatelností a přizpůsobením
 
-## Idea
+Vyvinul jsem [**Static Site Generator ⧉**][00] s cílem poskytnout mimořádně rychlý generátor statických webů (SSG) postavený na [**Rustu ⧉**][03], který zjednodušuje tvorbu statických webů optimalizovaných pro SEO a plně odpovídajících standardům přístupnosti.
 
-### Una solución con escalabilidad y personalización infinitas
+Rychlost a spolehlivost byly při vývoji nástroje Static Site Generator mými hlavními prioritami. Rust je systémový programovací jazyk známý svou rychlostí a spolehlivostí, což z něj činí ideální nástroj pro vývoj vysoce výkonných generátorů statických webů.
 
-Desarrollé [**Static Site Generator ⧉**][00] para proporcionar un generador de sitios estáticos (SSG) ultrarrápido construido con [**Rust ⧉**][03], que simplifica la creación de sitios estáticos optimizados para SEO y plenamente alineados con los estándares de accesibilidad.
+Chtěl jsem prozkoumat hranice toho, co lze s Markdownem dělat. Mým cílem bylo zajistit, aby Static Site Generator dokázal generovat statické weby, které jsou rychlé, bezpečné a spolehlivé. Chtěl jsem, aby byly přístupné všem, uživatelsky přívětivé a snadno aktualizovatelné a aby dosahovaly dobrých výsledků ve vyhledávačích.
 
-La velocidad y la fiabilidad eran mis prioridades absolutas durante el desarrollo de Static Site Generator. Rust es un lenguaje de programación de sistemas reconocido por su rapidez y fiabilidad, lo que lo convierte en la herramienta ideal para desarrollar generadores de sitios estáticos de alto rendimiento.
+## Dopad
 
-Estaba impaciente por explorar los límites de lo posible con Markdown. Mi objetivo: asegurarme de que Static Site Generator pudiera producir sitios estáticos rápidos, seguros y fiables. Quería que fueran accesibles a todos, cómodos y fáciles de actualizar, y que rindieran bien en los motores de búsqueda.
+### Nový standard pro generátory statických webů
 
-## Impacto
+Generování statického webu pomocí nástroje Static Site Generator je bez námahy a umožňuje soustředit se na obsah, který maximalizuje dopad na cílové publikum. Proces je přímočarý a dokončí se během milisekund.
 
-### Un nuevo estándar para los generadores de sitios estáticos
+Výsledný web je plně responzivní, odpovídá
+[**Web Content Accessibility Guidelines (WCAG) ⧉**][01] i [**ADA ⧉**][02] a
+je od začátku optimalizovaný pro vyhledávače (SEO).
 
-Generar un sitio estático con Static Site Generator es sin esfuerzo, lo que permite concentrarse en el contenido para maximizar el impacto en la audiencia destinataria. El proceso es directo y se cierra en unos pocos milisegundos.
+## Motivace
 
-El resultado son sitios totalmente responsive, conformes con las [**Web Content Accessibility Guidelines (WCAG) ⧉**][01] y la [**ADA ⧉**][02], y optimizados para SEO desde el principio.
+### Přijetí nového paradigmatu vyžaduje odvahu a sebedůvěru
 
-## Incentivos
+[**Static Site Generator ⧉**][00] přináší nový pohled, inovativní přístup k chápání webu. Díky pečlivě propracovanému návrhu umožňuje tvůrcům obsahu a kreativním profesionálům zlepšit zážitek zaměřený na zákazníka.
 
-### Abrazar un nuevo paradigma exige coraje y confianza
+**Mezi klíčové funkce patří:**
 
-[**Static Site Generator ⧉**][00] introduce una perspectiva nueva: un enfoque innovador para comprender la web. Con un diseño meticulosamente concebido, permite a los creadores de contenido y a los profesionales de la creación enriquecer la experiencia centrada en el cliente.
+* Kompletní podpora [GitHub Flavoured Markdown ⧉ (GFM)][04]
+* Integrace [Google][05] a [Bing][06] Analytics
+* Kompatibilita s různými HTML motivy a prémiovými šablonami
+* Generování Atom a RSS kanálů pro blogy
+* Minifikace zdrojového kódu pro vyšší výkon a lepší SEO
+* Vestavěný vývojový server [Rust][07] pro lokální testování a vývoj
+* Podpora více formátů obsahu (Markdown, YAML, JSON, TOML, XML)
+* Automatické generování map webu, souborů robots.txt, záznamů CNAME a vlastních stránek 404
+* Podpora progresivních webových aplikací (PWA) pro prohlížení offline
+* Podpora vlastních šablon a HTML motivů
 
-**Funcionalidades clave:**
+Každá funkce odráží hodnoty jako jednoduchost, spolehlivost a škálovatelnost. [**Static Site Generator ⧉**][00] je navržen tak, aby pomáhal vytvářet a udržovat kvalitní statické weby, které splňují potřeby moderních uživatelů.
 
-* Soporte completo de [GitHub Flavoured Markdown ⧉ (GFM)][04]
-* Integraciones [Google][05] y [Bing][06] Analytics
-* Compatibilidad con diversos temas HTML y plantillas premium
-* Generación de feeds Atom y RSS para blogs
-* Minificación del código fuente para el rendimiento y el SEO
-* Servidor de desarrollo [Rust][07] integrado para pruebas locales y desarrollo
-* Soporte de múltiples formatos de contenido (Markdown, YAML, JSON, TOML, XML)
-* Generación automática de sitemaps, robots.txt, registros CNAME y páginas 404 personalizadas
-* Soporte de aplicaciones web progresivas (PWA) para la navegación sin conexión
-* Soporte de plantillas personalizadas y temas HTML
+### Optimalizace pro SEO
 
-Cada funcionalidad refleja valores como simplicidad, fiabilidad y escalabilidad. [**Static Site Generator ⧉**][00] está concebido para ayudar a crear y mantener sitios estáticos de alta calidad que respondan a las necesidades de los usuarios modernos.
+[**Static Site Generator ⧉**][00] je navržen tak, aby uživatelům pomáhal vytvářet statické weby optimalizované pro vyhledávače. Mezi klíčové funkce pro SEO patří:
 
-### Optimización SEO
+* Automatické generování map webu a souborů robots.txt
+* Podpora vlastních stránek 404
+* Čistý a dobře strukturovaný HTML kód
+* Rychlé načítání
+* Responzivní design
+* Soulad s požadavky na přístupnost
 
-[**Static Site Generator ⧉**][00] está concebido para ayudar a los usuarios a crear sitios estáticos optimizados para los motores de búsqueda. Entre las funcionalidades clave de SEO:
+[**Static Site Generator ⧉**][00] je výkonný a všestranný generátor statických webů s širokou škálou funkcí a přínosů. Je navržen tak, aby uživatelům pomáhal vytvářet a udržovat kvalitní statické weby optimalizované pro SEO, které poskytují vynikající uživatelský zážitek.
 
-* Generación automática de sitemaps y archivos robots.txt
-* Soporte de páginas 404 personalizadas
-* Código HTML limpio y bien estructurado
-* Tiempos de carga rápidos
-* Diseño responsive
-* Conformidad de accesibilidad
+Chcete během několika minut vytvořit vysoce výkonný statický web, který zvýší vaši návštěvnost a konverze?
 
-[**Static Site Generator ⧉**][00] es un generador de sitios estáticos potente y polivalente que ofrece una amplia gama de funcionalidades y beneficios. Está concebido para ayudar a los usuarios a crear y mantener sitios estáticos de alta calidad, optimizados para SEO y que ofrecen una experiencia de usuario superior.
+[**Vyzkoušejte Static Site Generator ⧉**][00] ještě dnes zdarma a poznejte ten rozdíl.
 
-¿Listo para crear en unos minutos un sitio estático de alto rendimiento que impulsará su tráfico y sus conversiones?
+![oddělovač](https://cloudcdn.pro/clients/common/images/elements/divider.svg).class=\"m-10 w-100\"
 
-[**Pruebe Static Site Generator ⧉**][00] gratis hoy y compruebe la diferencia.
+**Tím se náš společný čas uzavírá. Děkuji vám za váš čas.**
 
-[00]: https://static-site-generator.com/ "Static Site Generator, el generador de sitios estáticos más rápido basado en Rust"
+Máte-li jakékoli dotazy, neváhejte mě kontaktovat přes [LinkedIn ⧉][11] nebo prostřednictvím [kontaktní stránky][10]. Ještě jednou vám děkuji za váš čas a těším se na vaši zprávu.
+
+[**❬ Zpět na články**][09]
+
+[00]: https://static-site-generator.com/ "Static Site Generator, nejrychlejší generátor statických webů v Rustu (SSG)"
 [01]: https://www.w3.org/WAI/standards-guidelines/wcag/ "Web Content Accessibility Guidelines (WCAG)"
 [02]: https://www.access-board.gov/ada/ "Americans with Disabilities Act (ADA)"
-[03]: https://www.rust-lang.org/ "Rust Programming Language"
+[03]: https://www.rust-lang.org/ "Programovací jazyk Rust"
 [04]: https://github.github.com/gfm/ "GitHub Flavored Markdown Spec"
 [05]: https://analytics.google.com/analytics/web/ "Google Analytics"
 [06]: https://www.bing.com/webmasters/ "Bing Webmaster Tools"
-[07]: https://www.rust-lang.org/tools/install "Rust Installation Guide"
+[07]: https://www.rust-lang.org/tools/install "Průvodce instalací Rustu"
+[08]: https://www.markdownguide.org/ "Průvodce Markdownem"
+[09]: /articles/index.html "Zpět na články"
+[10]: /contact/index.html "Kontaktovat Sebastiena Rousseaua"
+[11]: https://www.linkedin.com/in/sebastienrousseau/ "Sebastien Rousseau na LinkedInu"

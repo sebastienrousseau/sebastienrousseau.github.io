@@ -1,102 +1,131 @@
 ---
-title: "KyberLib: CRYSTALS-Kyber en Rust para el postcuántico"
-subtitle: "KyberLib, una implementación Rust robusta de CRYSTALS-Kyber para la era cuántica"
-description: "Implementación criptográfica robusta y resistente a lo cuántico del algoritmo CRYSTALS-Kyber, para proteger sus datos de las amenazas cuánticas y ataques criptoanalíticos."
-date: "November 28, 2023"
+title: "KyberLib: Rust CRYSTALS-Kyber สำหรับยุคหลังควอนตัม"
+seo_title: "KyberLib: CRYSTALS-Kyber บน Rust สำหรับการเข้ารหัสหลังควอนตัม"
+subtitle: "KyberLib การพัฒนา CRYSTALS-Kyber บน Rust ที่แข็งแกร่งสำหรับยุคควอนตัม"
+description: "การพัฒนาการเข้ารหัสที่แข็งแกร่งและปลอดภัยต่อควอนตัมของอัลกอริทึม CRYSTALS-Kyber เพื่อปกป้องข้อมูลของคุณจากภัยคุกคามเชิงควอนตัมและการโจมตีเชิงวิเคราะห์รหัส"
+excerpt: "KyberLib คือไลบรารีบนภาษา Rust ที่ปกป้องข้อมูลของคุณจากภัยคุกคามที่อาจเกิดจากการประมวลผลเชิงควอนตัม KyberLib สร้างขึ้นบนอัลกอริทึม CRYSTALS-Kyber มอบความปลอดภัยที่ดีเยี่ยม…"
+keywords: "KyberLib, Rust CRYSTALS-Kyber, การเข้ารหัสหลังควอนตัม, การเข้ารหัสแบบแลตทิซ, การแลกเปลี่ยนกุญแจแบบต้านทานควอนตัม, NIST FIPS 203, Sebastien Rousseau, KEM, การยืนยันตัวตนการชำระเงิน, ไลบรารี PQC"
+tags: "KyberLib, Rust, CRYSTALS-Kyber, การเข้ารหัสหลังควอนตัม, การเข้ารหัสแบบแลตทิซ, กลไกการห่อหุ้มกุญแจ, NIST, libsignal, การเข้ารหัส, ISO 20022, การประมวลผลเชิงควอนตัม, AI"
+date: "Nov 28, 2023"
+pub_date: "Sun, 19 Nov 2023 09:59:00 +0000"
+last_build_date: "Sun, 19 Nov 2023 09:59:00 +0000"
+last_reviewed: "2026-05-11"
 language: "th-TH"
 locale: "th_TH"
+hreflang: "th"
+id: "https://sebastienrousseau.com/2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats/index.html"
+permalink: "https://sebastienrousseau.com/2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats/index.html"
+url: "https://sebastienrousseau.com/2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats/index.html"
+cdn: "https://cloudcdn.pro/clients"
+author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
+name: "Sebastien Rousseau"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
+image_alt: "ภาพพอร์ตเทรตขาวดำของ Sebastien Rousseau"
+icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
+logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
+logo_alt: "โลโก้สำหรับ Sebastien Rousseau"
 banner: "https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg"
-banner_alt: "Reforzar la comunicación segura en la era cuántica con KyberLib"
-keywords: "KyberLib, Rust CRYSTALS-Kyber, criptografía postcuántica, criptografía sobre retículos, intercambio de claves resistente a lo cuántico, NIST FIPS 203, Sebastien Rousseau, KEM, autenticación de pagos, biblioteca PQC"
+banner_alt: "เสริมสร้างการสื่อสารที่ปลอดภัยในยุคควอนตัมด้วย KyberLib"
+measurementID: "G-169G4ET5HQ"
+theme-color: "0, 67, 165"
+twitter_creator: "@wwdseb"
+twitter_site: "@wwdseb"
+twitter_title: "KyberLib: เกราะป้องกันบน Rust ต่อภัยคุกคามควอนตัม"
+twitter_description: "การพัฒนาการเข้ารหัสที่แข็งแกร่งและปลอดภัยต่อควอนตัมของอัลกอริทึม CRYSTALS-Kyber เพื่อปกป้องข้อมูลของคุณจากภัยคุกคามเชิงควอนตัมและการโจมตีเชิงวิเคราะห์รหัส"
+twitter_image_alt: "โลโก้ของ Sebastien Rousseau"
+twitter_url: "https://sebastienrousseau.com/2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats/index.html"
+atom_link: "https://sebastienrousseau.com/2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats/rss.xml"
+item_title: "KyberLib: เกราะป้องกันบน Rust ต่อภัยคุกคามควอนตัม"
+item_description: "การพัฒนาการเข้ารหัสที่แข็งแกร่งและปลอดภัยต่อควอนตัมของอัลกอริทึม CRYSTALS-Kyber เพื่อปกป้องข้อมูลของคุณจากภัยคุกคามเชิงควอนตัมและการโจมตีเชิงวิเคราะห์รหัส"
+item_pub_date: "Sun, 19 Nov 2023 09:59:00 +0000"
+item_link: "https://sebastienrousseau.com/2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats/rss.xml"
+item_guid: "https://sebastienrousseau.com/2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats/rss.xml"
+thanks: "ขอบคุณที่อ่านครับ"
 ---
 
 
-> **TL;DR.** บทความนี้เป็น DRAFT แปลจากต้นฉบับภาษาสเปน รอการตรวจสอบโดยเจ้าของภาษา เนื้อหาหลัก ตัวอย่าง และการอ้างอิงยังคงเป็นภาษาสเปน เฉพาะ frontmatter เท่านั้นที่ถูกเปลี่ยนเป็นภาษาไทย
+[![เสริมสร้างการสื่อสารที่ปลอดภัยในยุคควอนตัมด้วย KyberLib](https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg).class=\"img-fluid clearfix\"][07]
 
-**ประเด็นสำคัญ**
-
-[![Reforzar la comunicación segura en la era cuántica con KyberLib](https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg).class=\"img-fluid clearfix\"][07]
-
-`KyberLib` es una biblioteca Rust que protege sus datos frente a la amenaza potencial de la computación cuántica. Construida sobre el **algoritmo [CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html)**, `KyberLib` ofrece una seguridad, una eficiencia y una versatilidad excepcionales, integrándose fácilmente en diversas plataformas, incluidos los entornos `no-std`.
+`KyberLib` คือไลบรารีที่พัฒนาบนภาษา Rust ซึ่งปกป้องข้อมูลของคุณจากภัยคุกคามที่อาจเกิดจากการประมวลผลเชิงควอนตัม `KyberLib` สร้างขึ้นบน **อัลกอริทึม [CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html)** มอบความปลอดภัย ประสิทธิภาพ และความยืดหยุ่นในระดับสูง พร้อมผสานเข้ากับแพลตฟอร์มต่าง ๆ ได้อย่างง่ายดาย รวมถึงสภาพแวดล้อมแบบ `no-std`
 
 ![divider][divider].class=\"m-10 w-100\"
 
-## Asegurar sus datos en la era cuántica
+## การปกป้องข้อมูลของคุณในยุคควอนตัม
 
-El advenimiento de la computación cuántica ha introducido una amenaza significativa para las medidas criptográficas convencionales. Para abordar este desafío, el campo de la criptografía resistente a lo cuántico (QSC) evoluciona rápidamente.
+การมาถึงของการประมวลผลเชิงควอนตัมได้สร้างภัยคุกคามที่สำคัญต่อมาตรการรักษาความปลอดภัยเชิงการเข้ารหัสแบบดั้งเดิม เพื่อรับมือกับความท้าทายนี้ สาขาการเข้ารหัสที่ปลอดภัยต่อควอนตัม (Quantum-Safe Cryptography หรือ QSC) จึงพัฒนาไปอย่างรวดเร็ว
 
-A la vanguardia de este movimiento transformador, el National Institute of Standards and Technology (NIST) lidera la estandarización de los algoritmos QSC.
+ผู้นำในการขับเคลื่อนการเปลี่ยนแปลงนี้คือ National Institute of Standards and Technology (NIST) ซึ่งเป็นผู้นำการกำหนดมาตรฐานอัลกอริทึม QSC
 
-En 2023, el NIST retuvo cuatro algoritmos innovadores:
+ในปี 2023 NIST ได้คัดเลือกอัลกอริทึมใหม่สี่ตัวไว้ในรายชื่อ:
 
-- [**CRYSTALS-Kyber** ⧉][01] (mecanismo de encapsulación de claves)
-- [**CRYSTALS-Dilithium** ⧉][02] (firmas digitales)
-- [**FALCON** ⧉][03] (firmas digitales ligeras)
-- [**SPHINCS+** ⧉][04] (firmas digitales basadas en hash)
+- [**[CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html)** ⧉][01] (กลไกการห่อหุ้มกุญแจ)
+- [**CRYSTALS-Dilithium** ⧉][02] (ลายเซ็นดิจิทัล)
+- [**FALCON** ⧉][03] (ลายเซ็นดิจิทัลแบบน้ำหนักเบา)
+- [**SPHINCS+** ⧉][04] (ลายเซ็นดิจิทัลที่อิงแฮช)
 
-Estos algoritmos revolucionarios se apoyan en principios matemáticos diversos: criptografía sobre retículos, basada en hash, basada en códigos, con el objetivo de proporcionar una defensa robusta contra los ataques cuánticos.
+อัลกอริทึมเหล่านี้ตั้งอยู่บนหลักการทางคณิตศาสตร์ที่หลากหลาย ได้แก่ การเข้ารหัสแบบแลตทิซ การเข้ารหัสที่อิงแฮช และการเข้ารหัสที่อิงรหัส โดยมีเป้าหมายเพื่อสร้างการป้องกันที่แข็งแกร่งต่อการโจมตีเชิงควอนตัม
 
-## Explorar la criptografía sobre retículos
+## การสำรวจการเข้ารหัสแบบแลตทิซ
 
-La criptografía sobre retículos (LBC — Lattice-Based Cryptography) emerge como favorita en QSC, ofreciendo una solución prometedora de criptografía postcuántica (PQC). La LBC es polivalente, con aplicaciones que van desde los mecanismos de encapsulación de claves (KEM) hasta las firmas digitales y los esquemas de cifrado de clave pública, anclados en los retículos matemáticos.
+การเข้ารหัสแบบแลตทิซ (Lattice-Based Cryptography หรือ LBC) กำลังก้าวขึ้นเป็นตัวเลือกนำหน้าใน QSC โดยเป็นโซลูชันการเข้ารหัสหลังควอนตัม (Post-Quantum Cryptographic หรือ PQC) ที่มีแนวโน้มดี LBC มีความยืดหยุ่นในการใช้งาน ตั้งแต่กลไกการห่อหุ้มกุญแจ (KEM) ลายเซ็นดิจิทัล ไปจนถึงรูปแบบการเข้ารหัสกุญแจสาธารณะที่ตั้งอยู่บนแลตทิซทางคณิตศาสตร์
 
-Los retículos son un concepto fundamental de las matemáticas que han hallado aplicaciones en diversos campos, entre ellos la criptografía. En términos simples, un retículo es un arreglo regular de puntos en el espacio, formando una estructura semejante a una cuadrícula. Estos puntos están conectados por líneas, formando una red de celdas interconectadas. La disposición específica de los puntos y su espaciado definen las características únicas de un retículo.
+แลตทิซเป็นแนวคิดพื้นฐานทางคณิตศาสตร์ที่ถูกนำไปใช้ในหลายสาขา รวมถึงการเข้ารหัส กล่าวอย่างง่าย แลตทิซคือการจัดเรียงจุดในปริภูมิอย่างสม่ำเสมอ ก่อให้เกิดโครงสร้างคล้ายตาราง จุดเหล่านี้เชื่อมโยงกันด้วยเส้น ก่อเป็นเครือข่ายของเซลล์ที่เชื่อมต่อกัน การจัดเรียงจุดและระยะห่างระหว่างจุดเป็นตัวกำหนดคุณลักษณะเฉพาะของแลตทิซ
 
-### Representación 3D de un retículo con vectores base
+### การแสดงแลตทิซสามมิติด้วยเวกเตอร์ฐาน
 
-Este gráfico presenta una estructura de retículo 3D generada por tres vectores base:
+กราฟนี้แสดงโครงสร้างแลตทิซสามมิติที่สร้างจากเวกเตอร์ฐานสามตัว:
 
-- `b1 = [1, 0, 0]` en rojo,
-- `b2 = [0, 1, 0]` en verde, y
-- `b3 = [0, 0, 1]` en azul.
+- `b1 = [1, 0, 0]` สีแดง
+- `b2 = [0, 1, 0]` สีเขียว และ
+- `b3 = [0, 0, 1]` สีน้ำเงิน
 
-Cada punto del retículo se forma combinando estos vectores base en proporciones enteras variadas, creando un esquema de cuadrícula que se extiende en las tres dimensiones espaciales. La visualización captura la esencia de un retículo 3D, concepto ampliamente utilizado en física y matemáticas para representar el arreglo regular y repetido de puntos en el espacio.
+แต่ละจุดบนแลตทิซเกิดจากการรวมเวกเตอร์ฐานเหล่านี้ในสัดส่วนจำนวนเต็มที่แตกต่างกัน สร้างเป็นรูปแบบคล้ายตารางที่ขยายออกไปในทั้งสามมิติของปริภูมิ ภาพนี้สะท้อนแก่นของแลตทิซสามมิติ ซึ่งเป็นแนวคิดที่ใช้กันอย่างแพร่หลายในฟิสิกส์และคณิตศาสตร์เพื่อแสดงการจัดเรียงจุดในปริภูมิอย่างสม่ำเสมอและซ้ำกัน
 
-![3D Lattice Representation with Basis Vectors][06].class=\"img-fluid mx-auto d-block\"
+![การแสดงแลตทิซสามมิติด้วยเวกเตอร์ฐาน][06].class=\"img-fluid mx-auto d-block\"
 
-En criptografía, los retículos se emplean como base de ciertos algoritmos criptográficos. La criptografía sobre retículos aprovecha las propiedades matemáticas de los retículos para crear esquemas criptográficos seguros que resistan los ataques de los ordenadores cuánticos. Los ordenadores cuánticos suponen una amenaza significativa para la criptografía convencional, ya que pueden romper eficientemente algoritmos que se apoyan en la factorización de grandes números o en la resolución de los problemas de logaritmo discreto.
+ในการเข้ารหัส แลตทิซถูกนำมาใช้เป็นพื้นฐานของอัลกอริทึมการเข้ารหัสบางประเภท การเข้ารหัสแบบแลตทิซ (LBC) ใช้คุณสมบัติทางคณิตศาสตร์ของแลตทิซเพื่อสร้างรูปแบบการเข้ารหัสที่ปลอดภัยและต้านทานการโจมตีจากคอมพิวเตอร์ควอนตัม คอมพิวเตอร์ควอนตัมเป็นภัยคุกคามที่สำคัญต่อการเข้ารหัสแบบดั้งเดิม เนื่องจากสามารถทำลายอัลกอริทึมที่อาศัยการแยกตัวประกอบจำนวนขนาดใหญ่หรือการแก้ปัญหาลอการิทึมไม่ต่อเนื่องได้อย่างมีประสิทธิภาพ
 
-CRYSTALS-Kyber ilustra las fortalezas de la LBC, proporcionando una resistencia robusta contra los ataques cuánticos junto con una eficiencia y un tamaño de clave excepcionales. Su compatibilidad multiplataforma y criptográfica la convierten en una opción fiable de seguridad de datos en la era cuántica.
+[CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html) เป็นตัวอย่างที่แสดงจุดแข็งของ LBC โดยให้ความต้านทานที่แข็งแกร่งต่อการโจมตีเชิงควอนตัม ควบคู่กับประสิทธิภาพและขนาดกุญแจที่ดีเยี่ยม การรองรับหลายแพลตฟอร์มและความเข้ากันได้กับงานการเข้ารหัสทำให้เป็นตัวเลือกด้านความปลอดภัยของข้อมูลที่เชื่อถือได้ในยุคควอนตัม
 
-Las especificaciones actuales de CRYSTALS-Kyber son:
+ข้อกำหนดปัจจุบันของ [CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html) มีดังนี้:
 
-- **Kyber512**: proporciona un nivel de seguridad equivalente al cifrado AES de 128 bits, protegiendo los datos sensibles con una protección estándar del sector.
-- **Kyber768**: proporciona un nivel de seguridad equivalente al cifrado AES de 256 bits, garantizando la confidencialidad de información altamente sensible.
-- **Kyber1024**: proporciona un nivel de seguridad que supera AES de 256 bits, ofreciendo una protección robusta contra los ataques cuánticos y preservando la integridad de los datos en un futuro lejano.
+- **Kyber512**: ให้ระดับความปลอดภัยเทียบเท่ากับการเข้ารหัส AES 128 บิต ปกป้องข้อมูลที่ละเอียดอ่อนด้วยการป้องกันตามมาตรฐานอุตสาหกรรม
+- **Kyber768**: ให้ระดับความปลอดภัยเทียบเท่ากับการเข้ารหัส AES 256 บิต รับประกันความลับของข้อมูลที่ละเอียดอ่อนสูง
+- **Kyber1024**: ให้ระดับความปลอดภัยที่เหนือกว่าการเข้ารหัส AES 256 บิต มอบการป้องกันที่แข็งแกร่งต่อการโจมตีเชิงควอนตัมและรักษาความสมบูรณ์ของข้อมูลไปได้อีกไกลในอนาคต
 
-### Comparación de niveles de seguridad entre algoritmos clásicos y resistentes a lo cuántico
+### การเปรียบเทียบระดับความปลอดภัยระหว่างอัลกอริทึมแบบคลาสสิกและแบบต้านทานควอนตัม
 
-Este gráfico ilustra los niveles de seguridad relativos de los algoritmos criptográficos clásicos como RSA-2048 y ECDSA, comparados con las especificaciones de las variantes resistentes a lo cuántico de CRYSTALS-Kyber (Kyber512, Kyber768 y Kyber1024).
+แผนภูมิแท่งนี้แสดงระดับความปลอดภัยเชิงเปรียบเทียบของอัลกอริทึมการเข้ารหัสแบบคลาสสิก เช่น RSA-2048 และ Elliptic Curve Digital Signature Algorithm (ECDSA) เทียบกับข้อกำหนดของอัลกอริทึม [CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html) แบบต้านทานควอนตัมในรุ่นต่าง ๆ (Kyber512, Kyber768 และ Kyber1024)
 
-Aunque el gráfico ofrece una comparación visual, es crucial señalar que los niveles de seguridad no son directamente comparables, ya que se basan en principios matemáticos diferentes.
+แม้แผนภูมินี้จะให้การเปรียบเทียบเชิงภาพ แต่สิ่งสำคัญที่ต้องระบุคือ ระดับความปลอดภัยไม่สามารถเปรียบเทียบกันได้โดยตรง เนื่องจากตั้งอยู่บนหลักการทางคณิตศาสตร์ที่แตกต่างกัน
 
-Sin embargo, el gráfico aporta un punto de referencia útil para comprender los niveles de seguridad de los algoritmos resistentes a lo cuántico.
+อย่างไรก็ตาม แผนภูมินี้เป็นจุดอ้างอิงที่มีประโยชน์ในการทำความเข้าใจระดับความปลอดภัยของอัลกอริทึมแบบต้านทานควอนตัม
 
-![Lattice-Based Cryptography][05].class=\"img-fluid mx-auto d-block\"
-
-![divider][divider].class=\"m-10 w-100\"
-
-## KyberLib: una biblioteca Rust para la criptografía resistente a lo cuántico
-
-KyberLib aprovecha la potencia de CRYSTALS-Kyber para ofrecer una seguridad de memoria reforzada y una seguridad de sistema robusta. Admite varias especificaciones de CRYSTALS-Kyber (Kyber512, Kyber768, Kyber1024), ofreciendo un abanico de niveles de seguridad adaptados a sus necesidades específicas. Su conformidad `no_std` la convierte en una elección ideal para los sistemas embebidos, y su compatibilidad con WebAssembly (WASM) facilita la integración con las aplicaciones web.
+![การเข้ารหัสแบบแลตทิซ][05].class=\"img-fluid mx-auto d-block\"
 
 ![divider][divider].class=\"m-10 w-100\"
 
-## Proteger las aplicaciones web mediante la criptografía resistente a lo cuántico
+## KyberLib: ไลบรารี Rust สำหรับการเข้ารหัสแบบต้านทานควอนตัม
 
-Diseñada para una huella de memoria mínima, KyberLib es ideal para los sistemas embebidos y con recursos limitados, sin comprometer la seguridad. Su implementación en Rust capitaliza las funcionalidades de seguridad del lenguaje, fortificando la seguridad ofrecida por el algoritmo CRYSTALS-Kyber.
+KyberLib ใช้ประโยชน์จากพลังของ [CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html) เพื่อมอบความปลอดภัยด้านหน่วยความจำที่ดีขึ้นและความปลอดภัยระดับระบบที่แข็งแกร่ง โดยรองรับข้อกำหนดของ [CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html) หลายรุ่น (Kyber512, Kyber768, Kyber1024) เพื่อให้ระดับความปลอดภัยที่หลากหลายเหมาะกับความต้องการเฉพาะของคุณ การรองรับ `no_std` ทำให้เป็นตัวเลือกที่เหมาะสำหรับระบบฝังตัว ขณะที่ความเข้ากันได้กับ WebAssembly (WASM) ช่วยให้ผสานเข้ากับเว็บแอปพลิเคชันได้อย่างราบรื่น
 
-Además, la compatibilidad WebAssembly de KyberLib refuerza su utilidad en las aplicaciones web, garantizando que siga siendo una herramienta vital en el campo dinámico de la criptografía.
+![divider][divider].class=\"m-10 w-100\"
 
-[Empiece con KyberLib ahora mismo. ⧉][00] Fácil de instalar, gratuita para uso personal o comercial, KyberLib es su solución de referencia para la criptografía resistente a lo cuántico.
+## การปกป้องเว็บแอปพลิเคชันด้วยการเข้ารหัสแบบต้านทานควอนตัม
 
-[00]: https://kyberlib.com/getting-started/index.html "Getting Started"
-[01]: https://pq-crystals.org/kyber/ "Kyber: A CCA-secure module-lattice-based KEM"
-[02]: https://pq-crystals.org/dilithium/ "Dilithium: A CCA-secure lattice-based signature scheme"
-[03]: https://falcon-sign.info/ "FALCON: A post-quantum signature scheme"
-[04]: https://sphincs.org/ "SPHINCS+: A stateless hash-based signature scheme"
-[05]: https://cloudcdn.pro/stocks/diagrams/kyber-vs-classical.svg "Comparison of Security Levels between Classical and Quantum-Resistant Algorithms"
-[06]: https://cloudcdn.pro/stocks/diagrams/3D-lattice-graph.svg "3D Lattice Representation with Basis Vectors"
-[07]: https://kyberlib.com/ "Privacy and Security in a Quantum World"
+KyberLib ออกแบบมาให้ใช้หน่วยความจำน้อยที่สุด จึงเหมาะสำหรับระบบฝังตัวและระบบที่มีทรัพยากรจำกัดโดยไม่ลดทอนความปลอดภัย การพัฒนาบนภาษา Rust ใช้ประโยชน์จากคุณสมบัติด้านความปลอดภัยของภาษา เสริมความแข็งแกร่งให้กับความปลอดภัยที่อัลกอริทึม [CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html) มอบให้
 
-[divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Divider"
+นอกจากนี้ ความเข้ากันได้กับ WebAssembly ของ KyberLib ยังเพิ่มประโยชน์ในการใช้งานกับเว็บแอปพลิเคชัน ทำให้ยังคงเป็นเครื่องมือสำคัญในสาขาการเข้ารหัสที่เปลี่ยนแปลงอยู่ตลอดเวลา
+
+[เริ่มต้นใช้งาน KyberLib ทันที ⧉][00] ติดตั้งง่าย ใช้งานได้ฟรีทั้งเพื่อการส่วนตัวและเชิงพาณิชย์ KyberLib คือโซลูชันที่คุณเลือกใช้สำหรับการเข้ารหัสแบบต้านทานควอนตัม
+
+[00]: https://kyberlib.com/getting-started/index.html "เริ่มต้นใช้งาน"
+[01]: https://pq-crystals.org/kyber/ "Kyber: KEM แบบโมดูลแลตทิซที่ปลอดภัยระดับ CCA"
+[02]: https://pq-crystals.org/dilithium/ "Dilithium: รูปแบบลายเซ็นแบบแลตทิซที่ปลอดภัยระดับ CCA"
+[03]: https://falcon-sign.info/ "FALCON: รูปแบบลายเซ็นหลังควอนตัม"
+[04]: https://sphincs.org/ "SPHINCS+: รูปแบบลายเซ็นที่อิงแฮชแบบไร้สถานะ"
+[05]: https://cloudcdn.pro/stocks/diagrams/kyber-vs-classical.svg "การเปรียบเทียบระดับความปลอดภัยระหว่างอัลกอริทึมแบบคลาสสิกและแบบต้านทานควอนตัม"
+[06]: https://cloudcdn.pro/stocks/diagrams/3D-lattice-graph.svg "การแสดงแลตทิซสามมิติด้วยเวกเตอร์ฐาน"
+[07]: https://kyberlib.com/ "ความเป็นส่วนตัวและความปลอดภัยในโลกควอนตัม"
+
+[divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "เส้นคั่น"

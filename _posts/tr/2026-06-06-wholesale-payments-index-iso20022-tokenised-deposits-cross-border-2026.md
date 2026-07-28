@@ -1,6 +1,6 @@
 ---
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
-banner_alt: "2026'da toptan ödemelerdeki kaymanın görsel kütüğü — mesajlaşma göçü, ISO 20022, tokenleştirilmiş mevduat, gerçek zamanlı raylar ve sınır ötesi atomiklik genelinde programlanabilir mutabakata bırakıyor."
+banner_alt: "2026'daki toptan ödeme kayması için görsel kütük: mesajlaşma göçü; ISO 20022, tokenleştirilmiş mevduat, gerçek zamanlı raylar ve sınır ötesi atomiklik genelinde yerini programlanabilir mutabakata bırakıyor."
 banner_height: "571"
 banner_width: "1425"
 banner: "https://cloudcdn.pro/stocks/images/miquel-parera-NsXLehhHx1Q.webp"
@@ -10,7 +10,7 @@ cname: "sebastienrousseau.com"
 copyright: "© Telif Hakkı 2025 - 2026 - Sebastien Rousseau. Tüm hakları saklıdır."
 date: "6 Haziran 2026"
 description: "2026 toptan ödeme hazırlığı için bir endeks: ISO 20022 veri kalitesi, tokenleştirilmiş mevduat, gerçek zamanlı raylar, sınır ötesi mutabakat ve likidite verimliliğini ölçer."
-excerpt: "2026'da toptan ödeme hazırlığını ölçmek için bir endeks çerçevesi: SWIFT'in Kasım 2026 kilometre taşı öncesi ISO 20022 yapılandırılmış-adres uyumu, tokenleştirilmiş mevduatla mutabakat, BIS Proje Agorá sınır ötesi atomikliği, gerçek zamanlı ray orkestrasyonu ve likidite verimliliği. Dört yüzde — yapılandırılmış-veri tamlığı, ray-yönlendirme optimalliği, mutabakat-kesinlik gecikmesi ve Agorá-koridor kapsamı — ödeme operasyonları duruşunu denetim hazır kanıta dönüştürür."
+excerpt: "2026'da toptan ödeme hazırlığını ölçmek için bir endeks çerçevesi: SWIFT'in Kasım 2026 kilometre taşı öncesi ISO 20022 yapılandırılmış-adres uyumu, tokenleştirilmiş mevduatla mutabakat, BIS Proje Agorá sınır ötesi atomikliği, gerçek zamanlı ray orkestrasyonu ve likidite verimliliği. Dört yüzde, yani yapılandırılmış-veri tamlığı, ray-yönlendirme optimalliği, mutabakat-kesinlik gecikmesi ve Agorá-koridor kapsamı, ödeme operasyonları duruşunu denetime hazır kanıta dönüştürür."
 format-detection: "telephone=no"
 hreflang: "tr"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -87,14 +87,14 @@ site_software: "Statik Site Üreticisi, Rust"
 
 <!-- lead-start: manual -->
 <aside class="post-lead" aria-label="Makale özeti">
-<p class="post-lead-tldr"><strong>Özet.</strong> 2026'da toptan ödemeler iki yapısal kaymanın kesişiminde duruyor: ISO 20022 yapılandırılmış ödeme verisini operasyon modeline zorluyor ve tokenleştirilmiş mevduat + BIS Proje Agorá sınır ötesi mutabakatı atomik, programlanabilir, her zaman açık raylara taşıyor. 2026'da bankanın sorusu artık "mesajları göç ettirdik mi" değil, "ödeme operasyonlarımız ölçülebilir, yönlendirilebilir ve denetlenebilir mi" — endeks bunu dört kesin yüzdeye ayırır: yapılandırılmış-veri tamlığı, ray-yönlendirme optimalliği, mutabakat-kesinlik gecikmesi ve Agorá-koridor kapsamı.</p>
+<p class="post-lead-tldr"><strong>Özet.</strong> 2026'da toptan ödemeler iki yapısal kaymanın kesişiminde duruyor: ISO 20022 yapılandırılmış ödeme verisini operasyon modeline zorluyor ve tokenleştirilmiş mevduat ile BIS Proje Agorá sınır ötesi mutabakatı atomik, programlanabilir, her zaman açık raylara taşıyor. 2026'da bankanın sorusu artık "mesajları göç ettirdik mi" değil, "ödeme operasyonlarımız ölçülebilir, yönlendirilebilir ve denetlenebilir mi"; endeks bunu dört kesin yüzdeye ayırır: yapılandırılmış-veri tamlığı, ray-yönlendirme optimalliği, mutabakat-kesinlik gecikmesi ve Agorá-koridor kapsamı.</p>
 <p class="post-lead-heading"><strong>Temel çıkarımlar</strong></p>
 <ul class="post-lead-takeaways">
   <li><strong>Kasım 2026 sert bir son tarihtir, rehber değil.</strong> SWIFT, SR 2026'da yapılandırılmamış-adres desteğini kaldırıyor; belirlenmiş alanlarda şehir ve ülke olmayan ödemeler takastan düşer. Onarım maliyeti, ret oranı ve operasyon kapasitesi "metrik" olmaktan çıkıp "düzenleyiciye görünen duruş" haline gelir.</li>
-  <li><strong>Düzenlenmiş toptanda tokenleştirilmiş mevduat stabilcoinleri geçer.</strong> Banka-mudi ilişkisini ve merkez bankası mutabakat varlığını korurken programlanabilirliği açar. Stabilcoinler kenarda rol oynamayı sürdürür; tokenleştirilmiş mevduat çekirdeği sabitler.</li>
+  <li><strong>Düzenlenmiş toptanda tokenleştirilmiş mevduat stablecoinleri geçer.</strong> Banka-mudi ilişkisini ve merkez bankası mutabakat varlığını korurken programlanabilirliği açar. Stablecoinler kenarda rol oynamayı sürdürür; tokenleştirilmiş mevduat çekirdeği sabitler.</li>
   <li><strong>BIS Proje Agorá koridor referansıdır.</strong> Bir bankanın sınır ötesi ürünü 2027'ye kadar bir Agorá koridorunda çalışamıyorsa, piyasanın geri kalanının çoktan terk ettiği bir rayda rekabet ediyor demektir.</li>
-  <li><strong>Gerçek zamanlı ray orkestrasyonu operasyon modelidir.</strong> 2026'nın çoklu-ray kararı (FedNow / RTP / TIPS / SEPA Inst / zincir üstü) "hangi ray" değildir — ödeme başına rayı seçen politika sicili, likidite profili ve yönlendirme motorudur.</li>
-  <li><strong>Ölçün ya da ölçülün.</strong> Dört yüzde — yapılandırılmış-veri tamlığı, ray-yönlendirme optimalliği, mutabakat-kesinlik gecikmesi, Agorá-koridor kapsamı — 2026/27 denetim penceresi öncesinde ödeme duruşunu denetim hazır kanıta dönüştürür.</li>
+  <li><strong>Gerçek zamanlı ray orkestrasyonu operasyon modelidir.</strong> 2026'nın çoklu-ray kararı (FedNow / RTP / TIPS / SEPA Inst / zincir üstü) "hangi ray" değildir; ödeme başına rayı seçen politika sicili, likidite profili ve yönlendirme motorudur.</li>
+  <li><strong>Ölçün ya da ölçülün.</strong> Dört yüzde, yani yapılandırılmış-veri tamlığı, ray-yönlendirme optimalliği, mutabakat-kesinlik gecikmesi ve Agorá-koridor kapsamı, 2026/27 denetim penceresi öncesinde ödeme duruşunu denetime hazır kanıta dönüştürür.</li>
 </ul>
 </aside>
 <!-- lead-end -->
@@ -117,16 +117,16 @@ site_software: "Statik Site Üreticisi, Rust"
 
 ## Bu Endeksin 2026'da Önemli Olmasının Nedeni
 
-Stanford AI Endeksi, hızlı hareket eden bir teknoloji alanını ölçülebilir bir şey olarak ele aldığı için yararlıdır: araştırma çıktısı, teknik performans, sorumlu konuşlandırma, ekonomi, sektör benimsenmesi, politika ve kamuoyu duygusu tek bir çerçeveye yerleştirilir ([Stanford HAI ⧉](https://hai.stanford.edu/ai-index/2026-ai-index-report "The 2026 AI Index Report")). Bankalar ve finans kurumları artık altyapı için aynı disipline ihtiyaç duyuyor. Ajan tabanlı yapay zeka, kuantuma dayanıklı güvenlik, bulut yerel dayanıklılık ve toptan ödemeler artık ayrı inovasyon hatları değil; tek bir operasyon modelinde birleşiyorlar.
+Stanford AI Endeksi, hızlı hareket eden bir teknoloji alanını ölçülebilir bir şey olarak ele aldığı için yararlıdır: araştırma çıktısı, teknik performans, sorumlu konuşlandırma, ekonomi, sektör benimsenmesi, politika ve kamuoyu duygusu tek bir çerçeveye yerleştirilir ([Stanford HAI ⧉](https://hai.stanford.edu/ai-index/2026-ai-index-report "2026 AI Endeks Raporu")). Bankalar ve finans kurumları artık altyapı için aynı disipline ihtiyaç duyuyor. Ajan tabanlı yapay zeka, kuantuma dayanıklı güvenlik, bulut yerel dayanıklılık ve toptan ödemeler artık ayrı inovasyon hatları değil; tek bir operasyon modelinde birleşiyorlar.
 
-Bir banka için pratik soru, her alanın önemli olup olmadığı değildir. Kurumun hepsinde aynı anda hazırlığı ölçüp ölçemediğidir. Bir banka ajan tabanlı yapay zekayı konuşlandırabilir ve kriptografisi göç-hazır değilse yine kırılgan kalabilir. Bulut platformlarını modernize edebilir ve ödeme verisi yapılandırılmamış kalırsa yine başarısız olabilir. Tokenleştirme pilotları çalıştırabilir ve mutabakat, likidite, kimlik ve denetim katmanları birlikte tasarlanmamışsa yine sistemik risk yaratabilir.
+Bir banka için pratik soru, her alanın önemli olup olmadığı değildir. Kurumun hepsinde aynı anda hazırlığı ölçüp ölçemediğidir. Bir banka ajan tabanlı yapay zekayı konuşlandırabilir ve kriptografisi göçe hazır değilse yine kırılgan kalabilir. Bulut platformlarını modernize edebilir ve ödeme verisi yapılandırılmamış kalırsa yine başarısız olabilir. Tokenleştirme pilotları çalıştırabilir ve mutabakat, likidite, kimlik ve denetim katmanları birlikte tasarlanmamışsa yine sistemik risk yaratabilir.
 
 ## 2026 Endeks Mimarisi
 
 | Endeks Katmanı | 2026 Yönü | Hazırlık Metriği | Yanlış Yönetilirse Risk |
 |---|---|---|---|
 | **ISO 20022 verisi** | Yapılandırılmamış metinden yönetişimli yapılandırılmış alanlara geç | Yapılandırılmış-adres hazırlığı ve ret oranı | Ödeme retleri ve manuel onarım |
-| **Ray orkestrasyonu** | RTGS, anlık, muhabir, stabilcoin ve tokenleştirilmiş raylar arasında yönlendir | Maliyet, hız, kesinlik ve yargı-yetkisi farkında yönlendirme | Mükerrer kontrollü parçalı raylar |
+| **Ray orkestrasyonu** | RTGS, anlık, muhabir, stablecoin ve tokenleştirilmiş raylar arasında yönlendir | Maliyet, hız, kesinlik ve yargı-yetkisi farkında yönlendirme | Mükerrer kontrollü parçalı raylar |
 | **Tokenleştirilmiş mutabakat** | Sürtünmeyi azalttığı yerde tokenleştirilmiş mevduat ve merkez bankası parası kullan | DvP, PvP, atomik mutabakat kapsamı | İş akışı değeri olmayan pilot varlıklar |
 | **Likidite** | Gün içi likidite, takılı nakit ve mutabakat pencerelerini optimize et | Tasarruf edilen likidite ve mutabakat-başarısızlığı azaltma | Likidite üzerinde daha hızlı tükenmeler |
 | **Uyum** | AML, yaptırımlar, FATF ve denetim gereksinimlerini ödeme verisine göm | Doğrudan-geçen uyum ve açıklanabilirlik | Daha güçlü kontroller olmadan zenginleştirilmiş veri |
@@ -137,17 +137,17 @@ Bir banka için pratik soru, her alanın önemli olup olmadığı değildir. Kur
 
 | Sinyal | G20 / SWIFT / BIS Referansı | Teknik Platform Uygulaması |
 |---|---|---|
-| **Ödeme mesajlarının %65'i hâlâ yapılandırılmamış adres içeriyor** | [SWIFT SR 2026 — yapılandırılmış-adres kilometre taşı, Kas 2026 ⧉](https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed "ISO 20022 November 2026 structured address milestone") | Mesaj SWIFTNet adaptörüne ulaşmadan önce ödeme ara yazılımında şema doğrulaması; kurumsal-kanal + muhabir-banka girişinde otomatik adres ayrıştırma. |
-| **FSB G20 hedefi: 2027'ye kadar sınır ötesi ödemelerin %75'i 1 saat içinde tamamlanır** | [FSB sınır ötesi ödemeler yol haritası, 2026 uygulama aşaması ⧉](https://www.fsb.org/2026/03/fsb-kicks-off-new-implementation-phase-to-enhance-cross-border-payments-through-public-private-partnership/ "FSB cross-border payments implementation phase") | Önceden anlaşılmış likidite pencereleriyle gerçek zamanlı FX-çevirme ağ geçitleri; müşteri portalına T+0 onay kancaları; 1 sa zarfını karşılayamayan herhangi bir koridoru hariç tutan ray-yönlendirme motoru. |
-| **FSB G20 hedefi: ortalama sınır ötesi işlem maliyeti %1'in, perakende %3'ün altında** | [FSB G20 niceliksel hedefler ⧉](https://www.fsb.org/2026/03/fsb-kicks-off-new-implementation-phase-to-enhance-cross-border-payments-through-public-private-partnership/ "FSB cross-border payments implementation phase") | Her koridorda maliyet-atfetme telemetrisi (FX yayılımı, muhabir ücreti, kaldırma maliyeti); fiyat öncesi uyumsuz fiyatlandırmayı yüzeye çıkaran marj politika sicili. |
-| **BIS Proje Agorá yedi merkez bankası + 41 ticari banka genelinde prototip aşamasına geçer** | [BIS Proje Agorá ⧉](https://www.bis.org/about/bisih/topics/fmis/agora.htm "Project Agorá") | Birleşik-defter entegrasyon spesifikasyonu: tokenleştirilmiş mevduat defter düğümü + toptan-CBDC mutabakat düzlemi + KYC/AML kancaları; bankanın koridor payına göre boyutlandırılmış zincir üstü likidite havuzları. |
-| **Deutsche Bank "dijital para" çerçevesi müşteri mimarisinde kristalleşir** | [Deutsche Bank — Dijital Para: stabilcoinler, tokenleştirilmiş mevduat ve CBDC'ler ⧉](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money: stablecoins, tokenised deposits and CBDCs") | Ödeme başına stabilcoin / tokenleştirilmiş mevduat / CBDC seçimini soyutlayan cüzdandan bağımsız mutabakat API'si; programlanabilir koşullar müşterinin değil, bankanın politika siciline göre değerlendirilir. |
+| **Ödeme mesajlarının %65'i hâlâ yapılandırılmamış adres içeriyor** | [SWIFT SR 2026: yapılandırılmış-adres kilometre taşı, Kas 2026 ⧉](https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed "ISO 20022 Kasım 2026 yapılandırılmış adres kilometre taşı") | Mesaj SWIFTNet adaptörüne ulaşmadan önce ödeme ara yazılımında şema doğrulaması; kurumsal-kanal + muhabir-banka girişinde otomatik adres ayrıştırma. |
+| **FSB G20 hedefi: 2027'ye kadar sınır ötesi ödemelerin %75'i 1 saat içinde tamamlanır** | [FSB sınır ötesi ödemeler yol haritası, 2026 uygulama aşaması ⧉](https://www.fsb.org/2026/03/fsb-kicks-off-new-implementation-phase-to-enhance-cross-border-payments-through-public-private-partnership/ "FSB sınır ötesi ödemeler uygulama aşaması") | Önceden anlaşılmış likidite pencereleriyle gerçek zamanlı FX-çevirme ağ geçitleri; müşteri portalına T+0 onay kancaları; 1 sa zarfını karşılayamayan herhangi bir koridoru hariç tutan ray-yönlendirme motoru. |
+| **FSB G20 hedefi: ortalama sınır ötesi işlem maliyeti %1'in, perakende %3'ün altında** | [FSB G20 niceliksel hedefler ⧉](https://www.fsb.org/2026/03/fsb-kicks-off-new-implementation-phase-to-enhance-cross-border-payments-through-public-private-partnership/ "FSB sınır ötesi ödemeler uygulama aşaması") | Her koridorda maliyet-atfetme telemetrisi (FX yayılımı, muhabir ücreti, kaldırma maliyeti); fiyat öncesi uyumsuz fiyatlandırmayı yüzeye çıkaran marj politika sicili. |
+| **BIS Proje Agorá yedi merkez bankası + 41 ticari banka genelinde prototip aşamasına geçer** | [BIS Proje Agorá ⧉](https://www.bis.org/about/bisih/topics/fmis/agora.htm "Proje Agorá") | Birleşik-defter entegrasyon spesifikasyonu: tokenleştirilmiş mevduat defter düğümü + toptan-CBDC mutabakat düzlemi + KYC/AML kancaları; bankanın koridor payına göre boyutlandırılmış zincir üstü likidite havuzları. |
+| **Deutsche Bank "dijital para" çerçevesi müşteri mimarisinde kristalleşir** | [Deutsche Bank, Dijital Para: stablecoinler, tokenleştirilmiş mevduat ve CBDC'ler ⧉](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Dijital Para: stablecoinler, tokenleştirilmiş mevduat ve CBDC'ler") | Ödeme başına stablecoin / tokenleştirilmiş mevduat / CBDC seçimini soyutlayan cüzdandan bağımsız mutabakat API'si; programlanabilir koşullar müşterinin değil, bankanın politika siciline göre değerlendirilir. |
 
 ## Ödeme Verisi Dönüm Noktası
 
 ISO 20022, bir mesajlaşma-formatı projesinden bir veri-kalitesi operasyon modeline geçti. Yararlanıcı, borçlu, alacaklı, ajan, şehir, ülke, amaç ve taraf verisi zayıfsa banka retler, onarımlar, yaptırım sürtünmesi, müşteri hayal kırıklığı ve zayıf analitik yaşayacaktır.
 
-**SR 2026 bunu bir tavsiye değil, sert bir sözleşme haline getirir.** SWIFT Standartlar Sürümü 2026 (Kasım 2026), yapılandırılmış-adres kuralını ağ katmanında uygular — `<PstlAdr>` öğesi `<TwnNm>` ve `<Ctry>` taşımayan mesajlar, onarım için işaretlenmek yerine alındığında SWIFTNet doğrulama yığını tarafından reddedilir. Onarım kuyruğu artık bir arka ofis maliyet kalemi olmaktan çıkar ve müşteri tarafında görünür gecikmeyle bir mutabakat-başarısızlığı olayına dönüşür. SR 2026'yı "daha sıkı rehber" olarak ele alan operasyon ekipleri yanlış el kitabıyla çalışıyor.
+**SR 2026 bunu bir tavsiye değil, sert bir sözleşme haline getirir.** SWIFT Standartlar Sürümü 2026 (Kasım 2026), yapılandırılmış-adres kuralını ağ katmanında uygular: `<PstlAdr>` öğesi `<TwnNm>` ve `<Ctry>` taşımayan mesajlar, onarım için işaretlenmek yerine alındığında SWIFTNet doğrulama yığını tarafından reddedilir. Onarım kuyruğu artık bir arka ofis maliyet kalemi olmaktan çıkar ve müşteri tarafında görünür gecikmeyle bir mutabakat-başarısızlığı olayına dönüşür. SR 2026'yı "daha sıkı rehber" olarak ele alan operasyon ekipleri yanlış el kitabıyla çalışıyor.
 
 ### ISO 20022 Kapsamında Yapılandırılmış Ödeme Verisi Uyumu
 
@@ -189,7 +189,7 @@ sequenceDiagram
     UL->>CB_B: PvP mutabakatı tamamlandı
 ```
 
-Mutabakat yapısı gereği atomiktir: her iki bacak da kabul edilir veya her ikisi de geri alınır. Toptan-CBDC bacağındaki mutabakat kesinliği, ticari-banka tokenleştirilmiş mevduat transferini muhabir riski olmadan etkili kılar. Birleşik defter koordinasyon düzlemidir, kendi başına bir ödeme sistemi değil — merkez bankası hâlâ mutabakat varlığını ihraç eder ve ticari banka hâlâ mevduat yükümlülüğünü kayda alır.
+Mutabakat yapısı gereği atomiktir: her iki bacak da kabul edilir veya her ikisi de geri alınır. Toptan-CBDC bacağındaki mutabakat kesinliği, ticari-banka tokenleştirilmiş mevduat transferini muhabir riski olmadan etkili kılar. Birleşik defter koordinasyon düzlemidir, kendi başına bir ödeme sistemi değildir; merkez bankası hâlâ mutabakat varlığını ihraç eder ve ticari banka hâlâ mevduat yükümlülüğünü kayda alır.
 
 ## Yeni Toptan Ödeme Ürünü
 
@@ -227,9 +227,9 @@ Endeks tarzı bir raporun değeri, parçalı bir teknoloji gündemini ölçüleb
 
 Tokenleştirilmiş mevduat, banka-mudi ilişkisini korurken programlanabilir mutabakatı mümkün kılmak üzere tasarlanmış, ticari banka parasının dijital bir temsilidir.
 
-**Tokenleştirilmiş mevduat stabilcoinlerin yerini alır mı?**
+**Tokenleştirilmiş mevduat stablecoinlerin yerini alır mı?**
 
-Her yerde değil. Stabilcoinler bazı dijital-varlık ve sınır ötesi bağlamlarda yararlı olmayı sürdürebilir; tokenleştirilmiş mevduat ise düzenlenmiş toptan bankacılık için yapısal olarak çekicidir.
+Her yerde değil. Stablecoinler bazı dijital-varlık ve sınır ötesi bağlamlarda yararlı olmayı sürdürebilir; tokenleştirilmiş mevduat ise düzenlenmiş toptan bankacılık için yapısal olarak çekicidir.
 
 **Bankalar ne ölçmeli?**
 
@@ -237,12 +237,12 @@ Yapılandırılmış-veri hazırlığını, ödeme retlerini, onarım maliyetini
 
 ## Kaynaklar
 
-- SWIFT, (2026). [ISO 20022 Kasım 2026 yapılandırılmış adres kilometre taşı ⧉](https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed "ISO 20022 November 2026 structured address milestone").
-- BIS Innovation Hub, (2026). [Proje Agorá ⧉](https://www.bis.org/about/bisih/topics/fmis/agora.htm "Project Agorá").
-- FSB, (2026). [Sınır ötesi ödemeler uygulama aşaması ⧉](https://www.fsb.org/2026/03/fsb-kicks-off-new-implementation-phase-to-enhance-cross-border-payments-through-public-private-partnership/ "Cross-border payments implementation phase").
-- Deutsche Bank, (2026). [Dijital Para: stabilcoinler, tokenleştirilmiş mevduat ve CBDC'ler ⧉](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money: stablecoins, tokenised deposits and CBDCs").
+- SWIFT, (2026). [ISO 20022 Kasım 2026 yapılandırılmış adres kilometre taşı ⧉](https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed "ISO 20022 Kasım 2026 yapılandırılmış adres kilometre taşı").
+- BIS Innovation Hub, (2026). [Proje Agorá ⧉](https://www.bis.org/about/bisih/topics/fmis/agora.htm "Proje Agorá").
+- FSB, (2026). [Sınır ötesi ödemeler uygulama aşaması ⧉](https://www.fsb.org/2026/03/fsb-kicks-off-new-implementation-phase-to-enhance-cross-border-payments-through-public-private-partnership/ "Sınır ötesi ödemeler uygulama aşaması").
+- Deutsche Bank, (2026). [Dijital Para: stablecoinler, tokenleştirilmiş mevduat ve CBDC'ler ⧉](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Dijital Para: stablecoinler, tokenleştirilmiş mevduat ve CBDC'ler").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Yazar hakkında"><img alt="Sebastien Rousseau'nun Portresi" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Uygulamalı yapay zeka, ödeme altyapısı, tokenleştirilmiş para, ISO 20022, kuantum sonrası güvenlik, bulut yerel finansal hizmetler ve düzenlenmiş dijital piyasalar üzerine yazan kıdemli bankacılık teknoloji uzmanı.</span><span class="author-credentials">HSBC Ticari ve Yatırım Bankası, PayPal, Barclays, Shazam, AKQA, Virgin Group'ta 20+ yıl. <a href="/about/index.html">Tam profil</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Yazar hakkında"><img alt="Sebastien Rousseau'nun Portresi" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Uygulamalı yapay zeka, ISO 20022 göçü, finansal hizmetler için kuantum sonrası kriptografi ve toptan ödemelerin yapısal dönüşümü üzerine yazan kıdemli bankacılık teknoloji uzmanı.</span><span class="author-credentials">HSBC Ticari ve Yatırım Bankası, PayPal, Barclays, Shazam, AKQA, Virgin Group'ta 20+ yıl. <a href="/about/index.html">Tam profil</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Son inceleme <time datetime="2026-06-06">2026-06-06</time>.</p>
 <!-- enrich-end -->

@@ -1,131 +1,139 @@
 ---
-title: "Proteger los datos en la era cuántica: la biblioteca Hash (HSH)"
-subtitle: "Una biblioteca Rust resistente a lo cuántico para el hashing y la verificación criptográficos"
-description: "HSH se apoya en primitivas criptográficas resistentes a lo cuántico para proteger sus datos frente a los avances futuros de la computación cuántica."
+title: "Ochrana dat v kvantové éře: hašovací knihovna (HSH)"
+subtitle: "HSH: kvantově odolná hašovací knihovna pro postkvantovou éru autentizace."
+description: "HSH využívá kvantově odolné kryptografické primitivy k ochraně vašich dat a zajišťuje jejich bezpečnost i tváří v tvář budoucímu pokroku kvantových počítačů."
 date: "October 16, 2023"
 language: "cs-CZ"
 locale: "cs_CZ"
 banner: "https://cloudcdn.pro/stocks/images/galina-nelyubova-7ej8VWfwFsg.webp"
-banner_alt: "Ilustración creativa sobre el tema de la computación cuántica"
-keywords: "criptografía resistente a lo cuántico, biblioteca Hash, HSH, Rust, postcuántica, PQC, KDF, Argon2i, BScrypt, Scrypt, servicios financieros, seguridad, NIST"
+banner_alt: "Kreativní ilustrace na téma kvantových počítačů"
+keywords: "kvantově odolná kryptografie, postkvantová kryptografie, hašovací knihovna, HSH, hašování hesel, odvození klíčů, Argon2i, Bcrypt, Scrypt, kvantové počítače"
 ---
 
+![Kreativní ilustrace na téma kvantových počítačů](https://cloudcdn.pro/stocks/images/galina-nelyubova-7ej8VWfwFsg.webp).class=\"img-fluid clearfix\"
 
-> **TL;DR.** Tento článek je DRAFT překlad původně španělského zdroje, čekající na revizi rodilým mluvčím. Hlavní obsah, příklady a citace zůstávají ve španělštině; pouze záhlaví/frontmatter byly přepnuty na češtinu.
+V tomto článku se budu zabývat využitím kvantově odolné kryptografie a konkrétně se zaměřím na knihovnu Rust Hash (HSH), kterou jsem vyvinul. Tato knihovna je plně optimalizována pro kryptografické funkce hašování a ověřování.
 
-**Klíčové body**
+> **Vyzkoušejte si to v prohlížeči.** Doprovodný crate, který obaluje stejnou rodinu algoritmů (SHA-256, BLAKE3, Argon2id), je zkompilován do WebAssembly a běží zcela na straně klienta, bez obousměrné komunikace se serverem a bez JavaScriptu třetích stran: **[otevřít prohlížečové demo hsh →](/labs/hsh-demo/)**
 
-![Ilustración creativa sobre el tema de la computación cuántica](https://cloudcdn.pro/stocks/images/galina-nelyubova-7ej8VWfwFsg.webp).class=\"img-fluid clearfix\"
+## Poznatek
 
-En este artículo examinaré los usos de la criptografía resistente a lo cuántico, centrándome específicamente en la biblioteca Rust Hash (HSH) que he desarrollado. Esta biblioteca está totalmente optimizada para las funciones de hashing y verificación criptográficos.
+### Nastupující hrozba kvantových počítačů
 
-## Perspectiva
+Jak se digitální prostředí vyvíjí, musí organizace finančních služeb přijímat nové technologie, aby zůstaly konkurenceschopné. Pokud to neudělají, hrozí jim, že zůstanou pozadu, protože digitální transformace zasahuje každé odvětví.
 
-### La amenaza emergente de la computación cuántica
+Kvantové počítače přinášejí zásadní obrat: nabízejí sílu urychlit významný pokrok v různých odvětvích, včetně bankovnictví a finančních služeb. Zároveň je však doprovází závažné riziko pro digitální bezpečnost, dané jejich schopností dešifrovat i ty nejsložitější kódy.
 
-A medida que el panorama digital evoluciona, las organizaciones de servicios financieros deben adoptar nuevas tecnologías para seguir siendo competitivas. De no hacerlo, corren el riesgo de quedarse atrás, ya que la transformación digital afecta a todos los sectores.
+Kvantové počítače činí některé tradiční šifrovací techniky zastaralými, protože dokážou řešit matematické problémy, které klasické počítače vyřešit nedovedou.
 
-La computación cuántica anuncia un giro mayor: promete acelerar los avances en sectores diversos, incluidos la banca y los servicios financieros. Pero conlleva un riesgo formidable para la seguridad digital, debido a su capacidad para descifrar los códigos más complejos.
+V dnešním kontextu spolu Alice a Bob mohou komunikovat bezpečně pomocí kryptografických klíčů a zabránit Eve v dekódování zpráv. Absolutní bezpečnost distribuce a uchovávání klíčů však nelze nikdy zcela zaručit. Kvantové počítače proto představují významnou hrozbu pro šifrování a digitální bezpečnost.
 
-La computación cuántica vuelve obsoletas ciertas técnicas de cifrado tradicionales, ya que puede resolver problemas matemáticos inaccesibles para los ordenadores clásicos.
+#### Bezpečné, a přesto zranitelné: kryptografické výzvy v kvantové éře
 
-Hoy, Alice y Bob pueden comunicarse de forma segura mediante claves criptográficas, impidiendo que Eve decodifique sus mensajes. Pero la seguridad absoluta de la distribución y el almacenamiento de claves nunca está totalmente garantizada. Los ordenadores cuánticos suponen, pues, una amenaza significativa para el cifrado y la seguridad digital.
+![Sekvenční diagram][01].class=\"img-fluid clearfix\"
 
-#### Seguros pero vulnerables: navegar por los retos criptográficos en la era cuántica
+##### Legenda
 
-![Diagrama de secuencia][01].class=\"img-fluid clearfix\"
+* *Alice k Eve - Alice odesílá šifrovanou zprávu*
+* *Eve zachytává - Eve zachytí Alicinu zprávu*
+* *Eve se pokouší o dešifrování - Eve se snaží, ale nedokáže dešifrovat*
+* *Eve k Bobovi - Eve odesílá Bobovi šifrovanou zprávu*
+* *Bob k Eve - Bob odesílá Eve šifrovanou odpověď*
+* *Eve zachytává - Eve zachytí Bobovu odpověď*
+* *Eve se pokouší o dešifrování - Eve opět nedokáže dešifrovat*
+* *Eve k Alici - Eve odesílá Alici šifrovanou zprávu*
 
-##### Leyenda
+##### Vysvětlení
 
-* *Alice hacia Eve — Alice envía un mensaje cifrado*
-* *Eve intercepta — Eve intercepta el mensaje de Alice*
-* *Eve intenta descifrar — Eve lo intenta pero no logra descifrar*
-* *Eve hacia Bob — Eve envía un mensaje cifrado a Bob*
-* *Bob hacia Eve — Bob envía una respuesta cifrada a Eve*
-* *Eve intercepta — Eve intercepta la respuesta de Bob*
-* *Eve intenta descifrar — Eve no logra descifrar de nuevo*
-* *Eve hacia Alice — Eve envía un mensaje cifrado a Alice*
+###### Současné šifrování
 
-##### Explicación
+Současné šifrovací algoritmy, které Alice a Bob používají, účinně brání Eve v dešifrování jejich zpráv. Kvantové počítače však pro bezpečnost těchto algoritmů představují potenciální hrozbu.
 
-###### Cifrado actual
+###### Potenciální kvantové riziko
 
-Los algoritmos de cifrado actuales utilizados por Alice y Bob son eficaces para impedir que Eve descifre sus mensajes. Sin embargo, la computación cuántica constituye una amenaza potencial para su seguridad.
+Kvantové počítače jsou u určitých typů výpočtů mnohem rychlejší než tradiční počítače, včetně výpočtů používaných k prolomení některých šifrovacích algoritmů. Kdyby Eve měla přístup ke kvantovému počítači, mohla by šifrování prolomit a číst zprávy Alice a Boba.
 
-###### Riesgo cuántico potencial
+###### Rizika distribuce a uchovávání klíčů
 
-Los ordenadores cuánticos son mucho más rápidos que los ordenadores tradicionales para ciertos tipos de cálculo, incluidos los que sirven para romper determinados algoritmos de cifrado. Si Eve tuviera acceso a un ordenador cuántico, potencialmente podría quebrar el cifrado y leer los mensajes de Alice y Bob.
+I když Alice a Bob používají silné šifrování, jejich zprávy mohou být přesto ohroženy, pokud dojde ke kompromitaci klíčů použitých k šifrování a dešifrování. Klíče lze kompromitovat mnoha způsoby, například krádeží, hackerským útokem nebo útoky sociálního inženýrství.
 
-###### Riesgos vinculados a la distribución y el almacenamiento de claves
+###### Potřeba postkvantové kryptografie
 
-Aunque Alice y Bob utilicen un cifrado robusto, sus mensajes podrían verse comprometidos si las claves utilizadas para cifrar y descifrar son comprometidas. Las claves pueden serlo de múltiples maneras: robo, pirateo o ataques de ingeniería social.
+Postkvantová kryptografie je nový obor kryptografie navržený tak, aby odolával kvantovým útokům. Postkvantové šifrovací algoritmy jsou stále ve vývoji, ale mají potenciál chránit data před kvantovými útoky.
 
-###### Necesidad de una criptografía postcuántica
+### Představení kvantově odolné kryptografie
 
-La criptografía postcuántica es un nuevo campo diseñado para resistir los ataques cuánticos. Los algoritmos de cifrado postcuántico aún están en desarrollo, pero tienen el potencial de proteger los datos frente a los ataques cuánticos.
+Kvantově odolná kryptografie, známá také jako postkvantová kryptografie (PQC) nebo kvantově bezpečná kryptografie, označuje kryptografické algoritmy, o nichž se předpokládá, že jsou bezpečné proti útokům kvantových počítačů.
 
-### Introducción a la criptografía resistente a lo cuántico
+Organizace musí přijmout nezbytná opatření, aby svá data ochránily před nebezpečími kvantových počítačů. Zavedení kvantově odolného šifrování a strategií kvantového provázání může společnostem finančních služeb poskytnout další vrstvu zabezpečení.
 
-La criptografía resistente a lo cuántico, también llamada criptografía postcuántica (PQC) o criptografía «quantum-safe», designa a los algoritmos criptográficos considerados seguros frente a los ataques de ordenadores cuánticos.
+* **Kvantově odolná kryptografie** je nový typ šifrování, který odolá útokům kvantových počítačů. Kvantově odolné šifrovací algoritmy mohou zrychlit zpracování dat a zvýšit jeho přesnost, což z nich činí efektivnější volbu.
 
-Las organizaciones deben tomar las precauciones necesarias para proteger sus datos frente a los peligros de la computación cuántica. Implementar cifrado resistente a lo cuántico y estrategias de entrelazamiento cuántico puede ofrecer a las empresas de servicios financieros una capa adicional de seguridad.
+* **Kvantové provázání** lze využít k vytvoření systémů [kvantové distribuce klíčů](/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html) ([QKD](/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html)), které dokážou generovat a distribuovat bezpečné kryptografické klíče na velké vzdálenosti. Systémy [QKD](/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html) jsou imunní vůči útokům kvantových počítačů, což je činí ideálními pro ochranu citlivých finančních dat.
 
-* La **criptografía resistente a lo cuántico** es un nuevo tipo de cifrado capaz de resistir los ataques de ordenadores cuánticos. Sus algoritmos pueden acelerar el tratamiento de datos e incrementar la precisión, convirtiéndola en una opción más eficiente.
+## Myšlenka
 
-* El **entrelazamiento cuántico** permite crear sistemas de [distribución cuántica de claves](/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html) ([QKD](/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html)), capaces de generar y distribuir claves criptográficas seguras a largas distancias. Los sistemas QKD son inmunes a los ataques de ordenador cuántico, lo que los hace ideales para proteger datos financieros sensibles.
+### Hašovací knihovna (HSH): průkopník interoperability v kvantově odolné kryptografii
 
-## Idea
+Hašovací knihovna (HSH) poskytuje odlehčené, efektivní a uživatelsky přívětivé řešení pro ochranu dat pomocí kvantově odolné kryptografie. Umožňuje vývojářům používat kvantově odolné algoritmy ve svých aplikacích, aniž by potřebovali podrobně rozumět příslušným kryptografickým algoritmům.
 
-### La biblioteca Hash (HSH): interoperabilidad pionera en criptografía resistente a lo cuántico
+Knihovna je postavena na programovacím jazyce Rust, který je proslulý svou rychlostí a efektivitou, ideálně se hodí pro kryptografii a pro dlouhodobou spolehlivost.
 
-La biblioteca Hash (HSH) ofrece una solución ligera, eficiente y fácil de usar para proteger los datos con criptografía resistente a lo cuántico. Permite a los desarrolladores utilizar algoritmos resistentes a lo cuántico en sus aplicaciones sin requerir una comprensión detallada de los algoritmos criptográficos subyacentes.
+## Dopad
 
-La biblioteca está construida con el lenguaje Rust, reconocido por su rapidez y eficiencia, idóneamente adaptado a la criptografía y a la fiabilidad a largo plazo.
+### Přínosy kvantově odolné kryptografické hašovací knihovny
 
-## Impacto
+[Hašovací knihovna (HSH) ⧉][00] poskytuje bohatou sadu moderních kryptografických primitiv a vytváří pevnou bariéru proti složitostem kvantové éry. Její význam spočívá v ochraně citlivých dat v době, kdy kvantové počítače představují významné riziko pro digitální bezpečnost.
 
-### Los beneficios de la biblioteca de hash resistente a lo cuántico
+Knihovna nabízí organizacím a finančním institucím nejvyšší úroveň ochrany dostupnou online, a to s výběrem algoritmů, mezi které patří Argon2i, BScrypt a Scrypt. Jde o bezpečné funkce odvození klíčů z hesla (PBKDF). PBKDF slouží k převodu hesel na kryptografické klíče. Jsou navrženy tak, aby byly pomalé a náročné na paměť, což je činí obtížně prolomitelnými útoky hrubou silou.
 
-La [biblioteca Hash (HSH) ⧉][00] aporta una rica paleta de primitivas criptográficas modernas, levantando una barrera sólida frente a las complejidades de la era cuántica. Su importancia reside en la protección de los datos sensibles en una época en que la computación cuántica supone un riesgo significativo para la seguridad digital.
+Knihovna navíc zaručuje, že výsledky jsou nejen bezpečné a efektivní, ale také dokonale vhodné pro podnikové aplikace, rozšiřitelné a snadno použitelné.
 
-La biblioteca ofrece a las organizaciones e instituciones financieras el nivel más alto de protección disponible en línea, con una selección de algoritmos que incluyen Argon2i, BScrypt y Scrypt. Se trata de funciones de derivación de claves seguras a partir de contraseña (PBKDF). Las PBKDF sirven para convertir contraseñas en claves criptográficas. Diseñadas para ser lentas y exigentes en memoria, son difíciles de romper por fuerza bruta.
+## Pobídky
 
-Por otra parte, la biblioteca garantiza no solo resultados seguros y eficientes, sino también perfectamente adaptados a las aplicaciones empresariales, extensibles y fáciles de usar.
+### Bezpečný pohyb v prostředí kvantových počítačů
 
-## Incentivos
+* **Záruka bezpečnosti**: Používání hašovací knihovny (HSH) dává organizacím jistotu, že jejich data zůstávají v bezpečí.
 
-### Navegar por el paisaje de la computación cuántica con seguridad
+* **Odolnost do budoucna**: Přijetí kvantově odolných algoritmů již nyní ochrání organizace před potenciálními budoucími zranitelnostmi.
 
-* **Garantía de seguridad**: utilizar la biblioteca Hash (HSH) da a las organizaciones la garantía de que sus datos permanecen seguros.
+* **Nákladová efektivita**: Hašovací knihovna (HSH) je open source a lze ji používat bez nákladných licencí či předplatného. To z ní činí atraktivní volbu pro organizace, které chtějí udržet nízké náklady a zároveň mít přístup k bezpečným kvantovým výpočtům.
 
-* **Perdurabilidad**: adoptar hoy algoritmos resistentes a lo cuántico protegerá a las organizaciones frente a las vulnerabilidades futuras.
+### Udržení důvěry spotřebitelů
 
-* **Eficiencia económica**: la biblioteca Hash (HSH) es de código abierto y puede utilizarse sin licencia onerosa ni suscripción. Una opción atractiva para las organizaciones que deseen controlar sus costes a la vez que acceden a una computación cuántica segura.
+* **Ochrana zákaznických dat**: Zabezpečení zákaznických dat před útoky kvantových počítačů posiluje důvěru ve schopnost organizací chránit informace.
 
-### Mantener la confianza de los consumidores
+* **Soulad s předpisy a jejich dodržování**: Použití pokročilých kryptografických metod pomáhá dodržovat přísné zákony a předpisy o ochraně dat, a předcházet tak právním následkům a pokutám.
 
-* **Proteger los datos de los clientes**: asegurar los datos de los clientes frente a los ataques de ordenadores cuánticos refuerza la confianza en la capacidad de las organizaciones para proteger la información.
+### HSH: špičková kvantově odolná hašovací knihovna
 
-* **Cumplimiento y adhesión normativa**: aplicar métodos criptográficos avanzados ayuda a respetar leyes y reglamentos estrictos de protección de datos, evitando consecuencias jurídicas y multas.
+* **Vyšší výkon**: Využití [hašovací knihovny (HSH) ⧉][00] postavené na Rustu přináší bezpečnost, efektivitu a výkon.
+Konzistence napříč platformami: Hašovací knihovna (HSH) chrání data napříč platformami a aplikacemi.
 
-### HSH: la biblioteca de hash definitiva resistente a lo cuántico
+* **Snadná implementace**: Hašovací knihovna (HSH) poskytuje vývojářům nástroj, který se snadno implementuje, čímž snižuje bariéru pro přijetí kvantově odolných algoritmů.
 
-* **Alto rendimiento**: aprovechar la [biblioteca Hash (HSH) ⧉][00] basada en Rust aporta seguridad, eficiencia y rendimiento.
-Coherencia multiplataforma: la biblioteca Hash (HSH) protege los datos en todas las plataformas y aplicaciones.
+## Závěr
 
-* **Facilidad de implementación**: la biblioteca Hash (HSH) proporciona a los desarrolladores una herramienta sencilla de integrar, bajando la barrera de adopción de algoritmos resistentes a lo cuántico.
+[Hašovací knihovna (HSH) ⧉][00] poskytuje odlehčené, efektivní a uživatelsky přívětivé řešení pro ochranu dat pomocí kvantově odolné kryptografie. Vývojářům usnadňuje aktualizaci jejich kryptografických protokolů na kvantově odolné, aniž by potřebovali hluboké porozumění těmto algoritmům.
 
-## Conclusión
+Kvantově odolná kryptografie je rychle se vyvíjející obor a knihovna HSH je odhodlána zůstat v jeho čele. Knihovna je pravidelně aktualizována o nové algoritmy a funkce, aby chránila před nastupujícími hrozbami.
 
-La [biblioteca Hash (HSH) ⧉][00] ofrece una solución ligera, eficiente y fácil de usar para proteger los datos con criptografía resistente a lo cuántico. Facilita la actualización de los protocolos criptográficos de los desarrolladores para hacerlos resistentes a lo cuántico sin exigir una comprensión profunda de los algoritmos.
+[National Institute of Standards and Technology (NIST) ⧉][02] v současnosti prostřednictvím svého [projektu Post-Quantum Cryptography (PQC) ⧉][03] definuje sadu standardů postkvantových kryptografických algoritmů.
 
-La criptografía resistente a lo cuántico es un campo en rápida evolución, y la biblioteca HSH se compromete a mantenerse a la vanguardia. Se actualiza periódicamente con nuevos algoritmos y funcionalidades para proteger frente a las amenazas emergentes.
+Ochrana vašich dat před útoky kvantových počítačů je zásadní pro každou organizaci, která pracuje s citlivými daty. [Hašovací knihovna (HSH) ⧉][00] je výkonný nástroj, který vám může pomoci vaše data před touto nastupující hrozbou ochránit.
 
-El [National Institute of Standards and Technology (NIST) ⧉][02] define actualmente un conjunto de estándares de algoritmos criptográficos postcuánticos a través de su [proyecto Post-Quantum Cryptography (PQC) ⧉][03].
+![oddělovač](https://cloudcdn.pro/clients/common/images/elements/divider.svg).class=\"m-10 w-100\"
 
-Proteger sus datos frente a los ataques de la computación cuántica es esencial para toda organización que maneje datos sensibles. La [biblioteca Hash (HSH) ⧉][00] es una herramienta potente que puede ayudarle a proteger sus datos frente a esta amenaza emergente.
+**Tím naše společná chvíle končí. Děkuji vám za váš čas!**
 
-[00]: https://crates.io/crates/hsh "The Hash Library (HSH) - Quantum-Resistant Cryptographic Hash Library for Password Hashing and Verification"
-[01]: https://cloudcdn.pro/stocks/diagrams/alice-bob-eve-encryption.svg "Seguros pero vulnerables: navegar por los retos criptográficos en la era cuántica"
+Máte-li jakékoli dotazy, neváhejte mě kontaktovat přes [LinkedIn ⧉][11] nebo prostřednictvím [kontaktní stránky][10]. Ještě jednou vám děkuji za váš čas a těším se na vaši zprávu.
+
+[**❬ Zpět na články**][09]
+
+[00]: https://crates.io/crates/hsh "Hašovací knihovna (HSH) - kvantově odolná kryptografická hašovací knihovna pro hašování a ověřování hesel"
+[01]: https://cloudcdn.pro/stocks/diagrams/alice-bob-eve-encryption.svg "Bezpečné, a přesto zranitelné: kryptografické výzvy v kvantové éře"
 [02]: https://www.nist.gov/ "National Institute of Standards and Technology"
 [03]: https://csrc.nist.gov/projects/post-quantum-cryptography "Post-Quantum Cryptography PQC"
+[09]: /articles/index.html "Zpět na články"
+[10]: /contact/index.html "Kontaktovat Sebastiena Rousseaua"
+[11]: https://www.linkedin.com/in/sebastienrousseau/ "Sebastien Rousseau na LinkedInu"

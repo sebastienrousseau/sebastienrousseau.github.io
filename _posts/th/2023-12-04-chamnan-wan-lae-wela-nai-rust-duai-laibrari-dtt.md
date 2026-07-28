@@ -1,71 +1,67 @@
 ---
-title: "Gestión eficiente de fechas y horas con DateTime (DTT)"
-subtitle: "DTT, la biblioteca Rust de alta precisión para las operaciones de fecha y hora"
-description: "DateTime (DTT) es una biblioteca Rust para parsear, validar, manipular y formatear fechas y horas: alta precisión, amplia funcionalidad."
+title: "การจัดการวันและเวลาอย่างมีประสิทธิภาพด้วย DateTime (DTT)"
+subtitle: "DTT ไลบรารี Rust ความแม่นยำสูงสำหรับการดำเนินการด้านวันและเวลา"
+description: "DateTime (DTT) คือไลบรารี Rust สำหรับการแยกวิเคราะห์ ตรวจสอบ จัดการ และจัดรูปแบบวันและเวลา ด้วยความแม่นยำสูงและฟังก์ชันการทำงานที่ครอบคลุม"
 date: "December 04, 2023"
 language: "th-TH"
 locale: "th_TH"
 banner: "https://cloudcdn.pro/clients/dtt/v1/logos/dtt.svg"
-banner_alt: "DateTime (DTT), su caja de herramientas esencial para las operaciones de fecha y hora."
-keywords: "DateTime, DTT, biblioteca Rust, parseo, validación, manipulación, formateo, fechas, horas"
+banner_alt: "DateTime (DTT) ชุดเครื่องมือสำคัญสำหรับการดำเนินการด้านวันและเวลา"
+keywords: "DateTime, DTT, ไลบรารี Rust, การแยกวิเคราะห์, การตรวจสอบ, การจัดการ, การจัดรูปแบบ, วันที่, เวลา"
 ---
 
 
-> **TL;DR.** บทความนี้เป็น DRAFT แปลจากต้นฉบับภาษาสเปน รอการตรวจสอบโดยเจ้าของภาษา เนื้อหาหลัก ตัวอย่าง และการอ้างอิงยังคงเป็นภาษาสเปน เฉพาะ frontmatter เท่านั้นที่ถูกเปลี่ยนเป็นภาษาไทย
+[![DateTime (DTT) ชุดเครื่องมือสำคัญสำหรับการดำเนินการด้านวันและเวลา](https://cloudcdn.pro/clients/dtt/v1/logos/dtt.svg).class=\"img-fluid clearfix\"][01]
 
-**ประเด็นสำคัญ**
+## การจัดการวันและเวลาอย่างมีประสิทธิภาพด้วย DateTime (DTT)
 
-[![DateTime (DTT), Your Essential Toolkit for Date and Time Operations](https://cloudcdn.pro/clients/dtt/v1/logos/dtt.svg).class=\"img-fluid clearfix\"][01]
-
-## Gestión eficiente de fechas y horas con DateTime (DTT)
-
-En el campo del desarrollo de software, gestionar eficientemente las fechas y horas es un desafío común. `DateTime (DTT)` emerge como una biblioteca Rust cuidadosamente diseñada para racionalizar este proceso, haciéndolo fluido y directo.
+ในงานพัฒนาซอฟต์แวร์ การจัดการวันและเวลาอย่างมีประสิทธิภาพเป็นความท้าทายที่พบได้ทั่วไป `DateTime (DTT)` คือไลบรารี Rust ที่ออกแบบมาอย่างพิถีพิถันเพื่อทำให้กระบวนการนี้ราบรื่นและตรงไปตรงมา
 
 ![divider][divider].class=\"m-10 w-100\"
 
-## ¿Qué es DTT?
+## DTT คืออะไร?
 
-`DateTime (DTT)` es una biblioteca Rust de código abierto meticulosamente diseñada para simplificar su interacción con fechas y horas. Ofrece una suite completa de herramientas para parsear, validar, manipular y formatear los datos de fecha y hora. El desarrollo de DTT prioriza rendimiento, precisión y facilidad de integración, convirtiéndola en una elección ideal para los proyectos modernos de desarrollo de software.
+`DateTime (DTT)` คือไลบรารี Rust แบบโอเพนซอร์สที่ออกแบบมาอย่างพิถีพิถันเพื่อทำให้การทำงานกับวันและเวลาง่ายขึ้น ไลบรารีนี้มอบชุดเครื่องมือที่ครอบคลุมสำหรับการแยกวิเคราะห์ ตรวจสอบ จัดการ และจัดรูปแบบข้อมูลวันและเวลา การพัฒนา DTT ให้ความสำคัญกับประสิทธิภาพ ความแม่นยำ และความง่ายในการผสานรวม จึงเป็นตัวเลือกที่เหมาะสมสำหรับโครงการพัฒนาซอฟต์แวร์สมัยใหม่
 
 ![divider][divider].class=\"m-10 w-100\"
 
-## Funcionalidades
+## ฟีเจอร์
 
-DTT dispone de un abanico de funcionalidades que permiten a los desarrolladores gestionar sin esfuerzo fechas y horas:
+DTT มาพร้อมฟีเจอร์หลากหลายที่ช่วยให้นักพัฒนาจัดการวันและเวลาได้อย่างง่ายดาย:
 
-1. **Parseo**: DTT interpreta de manera fluida las fechas y horas a partir de diversos formatos de cadena, convirtiéndolas en una estructura amigable con Rust.
-2. **Validación**: las capacidades robustas de validación de DTT garantizan la exactitud de sus datos de fecha y hora, previniendo los errores e incoherencias comunes.
-3. **Manipulación**: DTT proporciona métodos simples para modificar los datos de fecha y hora. Esto incluye la adición de días, la comparación de horas y más.
-4. **Formateo**: DTT ofrece opciones de formateo personalizables para presentar las fechas y horas en un formato cómodo, respondiendo a las necesidades específicas de su aplicación.
+1. **การแยกวิเคราะห์ (Parsing)**: DTT ตีความวันและเวลาจากรูปแบบสตริงที่หลากหลายได้อย่างราบรื่น และแปลงให้อยู่ในโครงสร้างที่เข้ากันได้กับ Rust
+2. **การตรวจสอบ (Validating)**: ความสามารถในการตรวจสอบที่แข็งแกร่งของ DTT ช่วยรับประกันความถูกต้องของข้อมูลวันและเวลา ป้องกันข้อผิดพลาดและความไม่สอดคล้องที่พบบ่อย
+3. **การจัดการ (Manipulating)**: DTT มีเมธอดที่ใช้งานง่ายสำหรับการเปลี่ยนแปลงข้อมูลวันและเวลา รวมถึงการเพิ่มจำนวนวัน การเปรียบเทียบเวลา และอื่น ๆ
+4. **การจัดรูปแบบ (Formatting)**: DTT มีตัวเลือกการจัดรูปแบบที่ปรับแต่งได้เพื่อแสดงวันและเวลาในรูปแบบที่ใช้งานง่าย ตอบสนองความต้องการเฉพาะของแอปพลิเคชันของคุณ
 
-## Empezar con DTT
+## เริ่มต้นใช้งาน DTT
 
-Para empezar a utilizar DTT en sus proyectos Rust, siga estos pasos simples:
+ในการเริ่มใช้ DTT ในโครงการ Rust ของคุณ ให้ทำตามขั้นตอนง่าย ๆ เหล่านี้:
 
-1. **Instalar Rust**: para instalar DTT, debe disponer de la toolchain Rust en su ordenador. Puede instalarla siguiendo las instrucciones del sitio Rust.
+1. **ติดตั้ง Rust**: ในการติดตั้ง DTT คุณต้องมี Rust toolchain ติดตั้งอยู่บนเครื่องคอมพิวเตอร์ของคุณ คุณสามารถติดตั้ง Rust toolchain ได้โดยทำตามคำแนะนำบนเว็บไซต์ Rust
 
-2. **Instalar DTT**: una vez instalada la toolchain Rust, puede instalar DTT mediante el siguiente comando:
+2. **ติดตั้ง DTT**: เมื่อคุณติดตั้ง Rust toolchain แล้ว คุณสามารถติดตั้ง DTT ได้ด้วยคำสั่งต่อไปนี้:
 
 ```bash
 cargo install dtt
 ```
 
-3. **Añadir la dependencia DTT a su proyecto**: añada la línea siguiente a su archivo Cargo.toml para instalar la biblioteca DateTime (DTT).
+3. **เพิ่ม DTT เป็น dependency ในโครงการของคุณ**: เพิ่มบรรทัดต่อไปนี้ลงในไฟล์ Cargo.toml ของคุณเพื่อติดตั้งไลบรารี DateTime (DTT)
 
 ```toml
 [dependencies]
 dtt = "0.0.4"
 ```
 
-4. **Utilizar DTT**: una vez instalada, importe la biblioteca DateTime (DTT) en su código Rust con la siguiente instrucción.
+4. **ใช้งาน DTT**: เมื่อติดตั้งแล้ว ให้นำเข้าไลบรารี DateTime (DTT) ในโค้ด Rust ของคุณด้วยคำสั่งต่อไปนี้
 
 ```rust
 use dtt::DateTime;
 ```
 
-5. **Empezar a utilizar DTT**: con DTT importada, puede ahora utilizar sus amplias funcionalidades para gestionar fechas y horas en sus proyectos Rust.
+5. **เริ่มใช้งาน DTT**: เมื่อนำเข้า DTT แล้ว คุณสามารถเริ่มใช้ฟีเจอร์ที่หลากหลายเพื่อจัดการวันและเวลาในโครงการ Rust ของคุณได้
 
-He aquí un ejemplo de creación de un objeto DateTime con una zona horaria personalizada (por ejemplo, CEST):
+ต่อไปนี้คือตัวอย่างการสร้างออบเจ็กต์ DateTime ใหม่ด้วยไทม์โซนที่กำหนดเอง (เช่น CEST):
 
 ```rust
 use dtt::DateTime;
@@ -78,37 +74,37 @@ fn main() {
 }
 ```
 
-Disponemos de otros ejemplos si desea comprender [la flexibilidad y la potencia de DateTime (DTT) ⧉][03].
+เรามีตัวอย่างเพิ่มเติมหากคุณต้องการทำความเข้าใจ [ความยืดหยุ่นและพลังของ DateTime (DTT) ⧉][03]
 
 ![divider][divider].class=\"m-10 w-100\"
 
-## Gestión de errores
+## การจัดการข้อผิดพลาด
 
-DTT está diseñada con simplicidad y facilidad de uso en mente. Su API intuitiva y su [documentación ⧉][02] clara facilitan el inicio y la integración a sus proyectos, reduciendo el tiempo y el esfuerzo de desarrollo.
-
-![divider][divider].class=\"m-10 w-100\"
-
-## Ventajas de utilizar DateTime (DTT)
-
-Emplear DateTime (DTT) para gestionar fechas y horas en sus proyectos Rust ofrece una multitud de ventajas:
-
-- **Precisión para las aplicaciones sensibles al tiempo**: la alta precisión de DTT en los cálculos temporales la hace ideal para las aplicaciones donde la precisión es crítica, por ejemplo, en los sistemas de transacción financiera, donde la exactitud del marcado temporal puede impactar el orden de las transacciones.
-- **Tiempo y esfuerzo de desarrollo reducidos**: la API y la [documentación ⧉][02] de DTT facilitan el uso y la integración con su código. Esto minimiza el tiempo y el esfuerzo requeridos para utilizar las funcionalidades de fecha y hora.
-- **Precisión y fiabilidad reforzadas**: las capacidades robustas de validación de DTT garantizan la exactitud de sus datos. Esto conduce a aplicaciones más fiables y dignas de confianza.
-- **Operaciones de fecha y hora simplificadas**: DTT proporciona herramientas para parsear, validar, manipular y formatear los datos de fecha y hora, lo que facilita su uso y mejora la eficiencia del código.
-- **Integración simplificada**: DTT está diseñada para integrarse sin sobresaltos en los proyectos Rust existentes, minimizando las perturbaciones y permitiéndole incorporar fácilmente sus funcionalidades a su base de código.
-- **Productividad del desarrollador reforzada**: al reducir la complejidad y el tiempo implicados en la gestión de fechas y horas, DTT permite a los desarrolladores concentrarse en tareas más estratégicas, impulsando la productividad global.
-- **Facilidad de gestión de zonas horarias**: con su robusto soporte de zonas, DTT simplifica las complejidades vinculadas a la construcción de aplicaciones globales que exigen gestionar varias zonas, como los softwares de planificación para equipos internacionales.
+DTT ออกแบบมาโดยคำนึงถึงความเรียบง่ายและใช้งานง่าย API ที่ใช้งานง่ายและ[เอกสารประกอบ ⧉][02]ที่ชัดเจนทำให้เริ่มต้นและผสานรวมเข้ากับโครงการของคุณได้อย่างสะดวก ลดเวลาและความพยายามในการพัฒนา
 
 ![divider][divider].class=\"m-10 w-100\"
 
-## Abrace la gestión eficiente de fechas y horas con DTT
+## ประโยชน์ของการใช้ DateTime (DTT)
 
-[DTT simplifica su manera de trabajar con las fechas y horas en Rust ⧉][00], proporcionando una solución robusta y fácil de usar para gestionar los datos temporales. Con sus funcionalidades completas, su diseño intuitivo y su fiable gestión de errores, DTT es la biblioteca de referencia para racionalizar las operaciones de fecha y hora en sus proyectos Rust.
+การใช้ DateTime (DTT) เพื่อจัดการวันและเวลาในโครงการ Rust ของคุณมอบประโยชน์มากมาย:
 
-[00]: https://github.com/sebastienrousseau/dtt#readme "Getting Started"
-[01]: https://github.com/sebastienrousseau/dtt "DateTime (DTT), Your Essential Toolkit for Date and Time Operations"
-[02]: https://docs.rs/dtt/latest/dtt/ "DateTime (DTT) Documentation"
-[03]: https://github.com/sebastienrousseau/dtt "DateTime (DTT) GitHub Repository"
+- **ความแม่นยำในแอปพลิเคชันที่อ่อนไหวต่อเวลา**: ความแม่นยำสูงของ DTT ในการคำนวณเวลาทำให้เหมาะสำหรับแอปพลิเคชันที่ความแม่นยำของเวลาเป็นเรื่องสำคัญ เช่น ในระบบธุรกรรมทางการเงิน ที่ความแม่นยำของ timestamp อาจส่งผลต่อลำดับของธุรกรรม
+- **ลดเวลาและความพยายามในการพัฒนา**: API และ[เอกสารประกอบ ⧉][02]ของ DTT ทำให้ใช้งานและผสานรวมเข้ากับโค้ดของคุณได้ง่าย ช่วยลดเวลาและความพยายามที่ต้องใช้ในการใช้ฟังก์ชันด้านวันและเวลา
+- **ความถูกต้องและความน่าเชื่อถือที่เพิ่มขึ้น**: ความสามารถในการตรวจสอบที่แข็งแกร่งของ DTT ช่วยรับประกันความถูกต้องของข้อมูลวันและเวลา ป้องกันข้อผิดพลาดและความไม่สอดคล้องที่พบบ่อย ส่งผลให้แอปพลิเคชันมีความน่าเชื่อถือมากขึ้น
+- **การดำเนินการด้านวันและเวลาที่คล่องตัว**: DTT มอบเครื่องมือสำหรับการแยกวิเคราะห์ ตรวจสอบ จัดการ และจัดรูปแบบข้อมูลวันและเวลา ซึ่งทำให้ทำงานได้ง่ายขึ้นและเพิ่มประสิทธิภาพของโค้ด
+- **การผสานรวมที่ง่ายขึ้น**: DTT ออกแบบมาเพื่อผสานรวมกับโครงการ Rust ที่มีอยู่ได้อย่างราบรื่น ลดการรบกวนและช่วยให้คุณนำฟังก์ชันการทำงานเข้ามาในฐานโค้ดของคุณได้อย่างง่ายดาย
+- **ประสิทธิภาพการทำงานของนักพัฒนาที่เพิ่มขึ้น**: ด้วยการลดความซับซ้อนและเวลาที่ใช้ในการจัดการวันและเวลา DTT ช่วยให้นักพัฒนามุ่งเน้นไปที่งานเชิงกลยุทธ์มากขึ้น เพิ่มประสิทธิภาพการทำงานโดยรวม
+- **ความง่ายในการจัดการไทม์โซน**: ด้วยการรองรับไทม์โซนที่แข็งแกร่ง DTT ช่วยลดความซับซ้อนในการสร้างแอปพลิเคชันระดับโลกที่ต้องจัดการหลายไทม์โซน เช่น ซอฟต์แวร์จัดตารางเวลาสำหรับทีมงานระหว่างประเทศ
 
-[divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Divider"
+![divider][divider].class=\"m-10 w-100\"
+
+## เริ่มจัดการวันและเวลาอย่างมีประสิทธิภาพด้วย DTT
+
+[DTT ทำให้การทำงานกับวันและเวลาใน Rust ง่ายขึ้น ⧉][00] โดยมอบโซลูชันที่แข็งแกร่งและใช้งานง่ายสำหรับการจัดการข้อมูลเชิงเวลา ด้วยฟีเจอร์ที่ครอบคลุม การออกแบบที่ใช้งานง่าย และการจัดการข้อผิดพลาดที่เชื่อถือได้ DTT คือไลบรารีที่คุณเลือกใช้เพื่อทำให้การดำเนินการด้านวันและเวลาในโครงการ Rust ของคุณคล่องตัวยิ่งขึ้น
+
+[00]: https://github.com/sebastienrousseau/dtt#readme "เริ่มต้นใช้งาน"
+[01]: https://github.com/sebastienrousseau/dtt "DateTime (DTT) ชุดเครื่องมือสำคัญสำหรับการดำเนินการด้านวันและเวลา"
+[02]: https://docs.rs/dtt/latest/dtt/ "เอกสารประกอบ DateTime (DTT)"
+[03]: https://github.com/sebastienrousseau/dtt "ที่เก็บโค้ด DateTime (DTT) บน GitHub"
+
+[divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "ตัวคั่น"

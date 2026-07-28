@@ -1,95 +1,154 @@
 ---
-title: "Racionalizar el desarrollo de bibliotecas Rust mediante la generación de código"
-subtitle: "LibMake: un generador de código Rust que impone las buenas prácticas desde el primer día"
-description: "Impulse el desarrollo de bibliotecas Rust con LibMake: una herramienta de generación de código que impone las buenas prácticas y produce el código inicial, ahorrando tiempo y esfuerzo."
+title: "LibMake: generátor lešení pro knihovny v Rustu"
+subtitle: "LibMake: generátor kódu v Rustu, který od prvního dne vynucuje osvědčené postupy"
+description: "LibMake je nástroj CLI v Rustu, který z jediného příkazu nebo verzovaného konfiguračního souboru TOML/YAML vygeneruje kompletní lešení knihovny: Cargo.toml, src/lib.rs se šablonami dokumentace, testovací a benchmarkové sady a CI v GitHub Actions."
 date: "October 26, 2023"
 language: "cs-CZ"
 locale: "cs_CZ"
 banner: "https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp"
-banner_alt: "Grandes columnas blancas"
-keywords: "Rust, biblioteca, desarrollo, código, generador, boilerplate, buenas prácticas, calidad, fiable"
+banner_alt: "Obří bílé sloupy"
+keywords: "LibMake, generátor kódu v Rustu, lešení cargo, šablona knihovny v Rustu, šablonování Tera, GitHub Actions pro Rust, cargo-audit, Rust API Guidelines, generátor standardního kódu, pracovní postup CI v Rustu"
 ---
 
 
-> **TL;DR.** Tento článek je DRAFT překlad původně španělského zdroje, čekající na revizi rodilým mluvčím. Hlavní obsah, příklady a citace zůstávají ve španělštině; pouze záhlaví/frontmatter byly přepnuty na češtinu.
+[**LibMake ⧉**][00] je open-source CLI a knihovna v Rustu, která z jediného vyvolání vygeneruje kompletní lešení projektu knihovny. Zaměřuje se na mezeru mezi `cargo new --lib` (které vytvoří pouze minimální Cargo.toml a src/lib.rs) a nastavením knihovny připraveným pro produkci (které vyžaduje ruční doplnění dokumentačních komentářů, CI, testovacích sad, struktury benchmarků, souboru CONTRIBUTING.md a licenčních souborů).
 
-**Klíčové body**
+Tento článek popisuje, co LibMake generuje, jak fungují režimy konfiguračního souboru a CLI, strukturu generovaného CI a systém šablonování.
 
-![Giant white pillars](https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp).class=\"img-fluid clearfix\"
+## Instalace a základní použití
 
-## Perspectiva
+LibMake je publikován na [crates.io](https://crates.io/crates/libmake) a instaluje se přes Cargo:
 
-### Desafíos del desarrollo de bibliotecas Rust
+```bash
+cargo install libmake
+```
 
-Desarrollar bibliotecas Rust puede ser una tarea difícil, en particular para los principiantes. Uno de los mayores desafíos consiste en poner en pie una estructura de proyecto eficiente y escribir todo el código boilerplate necesario. Esto puede ser costoso en tiempo y repetitivo, y desviar la atención de los aspectos más creativos y estratégicos del desarrollo.
-
-### Beneficios de utilizar un generador de código
-
-Utilizar un generador de código puede racionalizar el proceso al automatizar la generación de boilerplate y otras tareas repetitivas. Esto puede ahorrar a los desarrolladores un tiempo y un esfuerzo significativos, liberándolos para concentrarse en los aspectos más importantes: diseño, implementación y pruebas.
-
-## Idea
-
-### LibMake: un generador de código para bibliotecas Rust
-
-[LibMake ⧉][00] es una herramienta de generación de código concebida para ayudar a crear rápidamente bibliotecas Rust de alta calidad generando un conjunto de archivos modelados y prerrellenados. Esta herramienta de scaffolding boilerplate «opinionada» aspira a reducir significativamente el tiempo de desarrollo y minimizar las tareas repetitivas, permitiéndole concentrarse en su lógica de negocio al tiempo que impone estándares, buenas prácticas y coherencia, y proporciona guías de estilo para su biblioteca.
-
-LibMake es flexible y extensible, y puede utilizarse para crear bibliotecas de cualquier tamaño o complejidad. También admite diversas opciones de configuración, permitiendo a los desarrolladores adaptarlo a sus necesidades específicas.
-
-### Ejemplo de uso de LibMake
-
-Para utilizar LibMake, los desarrolladores deben simplemente ejecutar el siguiente comando:
+Minimální vyvolání CLI vygeneruje pojmenovanou knihovnu v aktuálním adresáři:
 
 ```bash
 libmake \
-    --author "John Smith" \
-    --build "build.rs" \
-    --categories "['category 1', 'category 2', 'category 3']" \
-    --description "A Rust library for doing cool things" \
-    --documentation "https://docs.rs/my_library" \
-    --edition "2021" \
-    --email "john.smith@example.com" \
-    --homepage "https://my_library.rs" \
-    --keywords "['rust', 'library', 'cool']" \
-    --license "MIT" \
-    --name "my_library" \
-    --output "my_library" \
-    --readme "README.md" \
-    --repository "https://github.com/example/my_library" \
-    --rustversion "1.69.0" \
-    --version "0.1.0" \
-    --website "https://example.com/john-smith"
+  --author "Jane Smith" \
+  --email "jane@example.com" \
+  --name "my_library" \
+  --description "A Rust library for doing useful things" \
+  --version "0.1.0" \
+  --licence "MIT OR Apache-2.0" \
+  --repository "https://github.com/example/my_library" \
+  --rustversion "1.70.0" \
+  --edition "2021" \
+  --output "my_library"
 ```
 
-Esto creará un nuevo directorio para la biblioteca, y LibMake generará el código boilerplate necesario y la estructura de documentación. Los desarrolladores podrán entonces añadir su propio código a la biblioteca y comenzar a desarrollar.
+Mezi další volitelné přepínače patří `--categories`, `--keywords`, `--homepage`, `--documentation`, `--readme` a `--build`.
 
-## Impacto
+## Režim konfiguračního souboru
 
-### Tiempo y esfuerzo de desarrollo reducidos
+Pro týmové použití lze všechny přepínače CLI vyjádřit v konfiguračním souboru TOML:
 
-LibMake reduce el tiempo y el esfuerzo requeridos para desarrollar bibliotecas Rust automatizando la generación de código y otras tareas. Esto hace ganar tiempo a los desarrolladores. Pueden concentrarse en las partes importantes: diseño, implementación y pruebas.
+```toml
+# libmake.toml
 
-### Calidad y fiabilidad mejoradas
 
-LibMake puede asimismo ayudar a los desarrolladores a mejorar la calidad y fiabilidad de sus bibliotecas proporcionando plantillas predefinidas que siguen las buenas prácticas. Esto puede ayudar a reducir el número de errores y fallos en las bibliotecas, y hacerlas más robustas y fiables.
+author      = "Jane Smith"
+email       = "jane@example.com"
+name        = "my_library"
+description = "A Rust library for doing useful things"
+version     = "0.1.0"
+licence     = "MIT OR Apache-2.0"
+repository  = "https://github.com/example/my_library"
+rustversion = "1.70.0"
+edition     = "2021"
+output      = "my_library"
+categories  = ["algorithms", "data-structures"]
+keywords    = ["rust", "library"]
+```
 
-## Incentivos
+Vyvolá se takto:
 
-### Imponer las buenas prácticas y generar el código inicial
+```bash
+libmake --config libmake.toml
+```
 
-LibMake puede ayudar a los desarrolladores a imponer las buenas prácticas proporcionando plantillas predefinidas que siguen esas prácticas. También puede generar código inicial para las funcionalidades comunes de biblioteca, lo que puede ahorrar un tiempo significativo.
+LibMake přijímá také konfigurační formáty JSON, YAML a CSV prostřednictvím přepínačů `--config-json`, `--config-yaml` a `--config-csv`. Zařazení souboru `libmake.toml` do kořene repozitáře poskytne každému přispěvateli reprodukovatelný výchozí stav lešení a změny v konfiguraci šablon jsou viditelné v Git diffech.
 
-LibMake ofrece las siguientes funcionalidades y beneficios:
+## Struktura generovaného projektu
 
-- Cree su biblioteca Rust fácilmente desde la línea de comandos o proporcionando un archivo de configuración en formato CSV, JSON, TOML o YAML.
-- Genere rápidamente nuevos proyectos de biblioteca con una estructura predefinida y código boilerplate que puede personalizar con su propia plantilla.
-- Genere un workflow GitHub Actions predefinido para ayudar a automatizar el desarrollo y las pruebas de su biblioteca.
-- Genere automáticamente funciones, métodos y macros básicos para empezar.
-- Imponga buenas prácticas y estándares mediante documentación de partida, suites de pruebas y benchmarks diseñados para ponerle en marcha rápidamente.
+Vyvolání LibMake vytvoří následující rozvržení:
 
-Con LibMake, puede generar fácilmente una nueva estructura de código Rust con todos los archivos, layouts, configuraciones de build, código, pruebas, benchmarks, documentación y mucho más, en cuestión de segundos.
+```
+my_library/
+├── .github/
+│   └── workflows/
+│       └── release.yml     # full CI matrix
+├── benches/
+│   └── lib_benchmarks.rs   # Criterion benchmark stub
+├── src/
+│   └── lib.rs              # doc-commented, deny(missing_docs)
+├── tests/
+│   └── lib_tests.rs        # integration test stub
+├── CONTRIBUTING.md
+├── Cargo.toml              # complete metadata
+├── LICENSE-APACHE
+├── LICENSE-MIT
+└── README.md
+```
 
-### Pruebe LibMake hoy
+Generovaný `src/lib.rs` obsahuje dokumentační komentář na úrovni crate, `#![deny(missing_docs)]`, `#![doc = include_str!("../README.md")]` pro zahrnutí souboru README do rustdoc a veřejný typ jako zárodek s přidruženým dokumentačním komentářem. Tyto volby odpovídají požadavku Rust API Guidelines, aby všechny veřejné položky měly dokumentaci.
 
-Si es desarrollador, le animo a probar [LibMake ⧉][00] para ver cómo puede racionalizar su proceso de desarrollo. LibMake es gratuito y de código abierto, y está disponible para su descarga desde el [repositorio GitHub ⧉][00].
+Generovaný `benches/lib_benchmarks.rs` používá [Criterion.rs](https://github.com/bheisler/criterion.rs) a vyžaduje přidání `criterion` jako vývojové závislosti, kterou LibMake automaticky vloží do `Cargo.toml`.
 
-[00]: https://github.com/sebastienrousseau/libmake "LibMake: A code generator to reduce repetitive tasks and build high-quality Rust libraries"
+## Pracovní postup CI v GitHub Actions
+
+Generovaný `.github/workflows/release.yml` spouští při každém pushi a pull requestu pět úloh:
+
+| Úloha | Toolchain | Co kontroluje |
+|---|---|---|
+| `test` | stable, beta, nightly (matrix) | `cargo test --all-features` |
+| `clippy` | stable | `cargo clippy -- -D warnings` |
+| `fmt` | stable | `cargo fmt --check` |
+| `audit` | stable | `cargo audit` (cargo-audit se instaluje v úloze) |
+| `doc` | stable | `cargo doc --no-deps` (selže při chybějící dokumentaci) |
+
+Úloha nightly má `continue-on-error: true`, takže regrese v nightly neblokuje slučování, a přesto se selhání v běhu pracovního postupu zobrazí.
+
+## Šablonování pomocí Tera
+
+LibMake používá šablonovací engine [Tera](https://keats.github.io/tera/), syntaxi podobnou Jinja2 pro Rust, k vykreslení všech generovaných souborů. Každá šablona dostává jako kontext celou konfigurační strukturu:
+
+```
+{{ name }}            → my_library
+{{ author }}          → Jane Smith
+{{ edition }}         → 2021
+{{ description }}     → A Rust library for doing useful things
+```
+
+Vlastní adresáře se šablonami jsou podporovány přes přepínač `--template`:
+
+```bash
+libmake --config libmake.toml --template ./my_templates/
+```
+
+Vlastní adresář musí zrcadlit výchozí strukturu šablon (stejné názvy souborů). Jakýkoli soubor přítomný ve vlastním adresáři přepíše odpovídající vestavěnou šablonu; soubory, které ve vlastním adresáři chybí, se vrátí k vestavěné verzi. To umožňuje částečné přepisy, například nahrazení pouze šablony pracovního postupu CI při zachování výchozích šablon src/lib.rs a Cargo.toml.
+
+## Často kladené otázky
+
+**Čím se LibMake liší od `cargo new --lib`?**
+`cargo new --lib` vytvoří minimální projekt pouze se soubory `Cargo.toml` a `src/lib.rs` (obsahující jediný blok `#[cfg(test)]`). LibMake vygeneruje úplnou strukturu: integrační testy, benchmarky, CI, CONTRIBUTING.md, soubory s duální licencí a řádně zdokumentovaný src/lib.rs, nakonfigurovanou se skutečnými metadaty projektu namísto zástupných hodnot.
+
+**Lze LibMake použít s existujícím pracovním prostorem Cargo?**
+LibMake generuje samostatný adresář crate. Chcete-li generovaný crate přidat do existujícího pracovního prostoru, přidejte výstupní cestu do pole `members` pracovního prostoru v kořenovém `Cargo.toml`. LibMake neupravuje existující soubory pracovního prostoru.
+
+**Mohu aktualizovat šablony lešení po počátečním vygenerování?**
+LibMake generuje soubory jednorázově; dříve vygenerované projekty nesleduje ani neaktualizuje. Pro převzetí aktualizovaných šablon je doporučeným postupem znovu spustit LibMake do dočasného adresáře, výsledek porovnat (diff) s existujícím crate a požadované změny uplatnit výběrově.
+
+**Které edice Rustu a hodnoty MSRV LibMake podporuje?**
+LibMake přijímá pro `--edition` a `--rustversion` jakýkoli řetězec a zapisuje hodnoty přímo do `Cargo.toml`. Neověřuje, zda je zadaná edice nebo MSRV skutečnou verzí Rustu, takže za dodání správných hodnot odpovídá volající.
+
+## Reference
+
+1. Rousseau, S. *LibMake — A code generator to reduce repetitive tasks and build high-quality Rust libraries*. GitHub, 2023. https://github.com/sebastienrousseau/libmake
+2. The Rust Programming Language. *Rust API Guidelines*. GitHub, 2023. https://rust-lang.github.io/api-guidelines/
+3. The Cargo Book. *Package Layout*. The Rust Programming Language, 2023. https://doc.rust-lang.org/cargo/guide/project-layout.html
+4. Keats, V. et al. *Tera — A template engine inspired by Jinja2 and Django templates*. GitHub, 2023. https://keats.github.io/tera/
+
+[00]: https://github.com/sebastienrousseau/libmake "LibMake: generátor lešení knihoven pro Rust"

@@ -1,59 +1,55 @@
 ---
-title: "El AI Act de la UE: pionero de la regulación ética de la IA en el mundo"
-subtitle: "Navegar el futuro de la IA con el marco jurídico revolucionario de la UE"
-description: "El AI Act de la UE establece el primer marco completo de regulación ética y por riesgo de la IA en el mundo. Lo que cambia para los bancos, los proveedores y los sistemas de alto riesgo."
+title: "กฎหมาย AI ของสหภาพยุโรป: การบุกเบิกการกำกับดูแล AI เชิงจริยธรรมทั่วโลก"
+subtitle: "นำทางอนาคตของ AI ด้วยกรอบกฎหมายบุกเบิกของสหภาพยุโรป"
+description: "กฎหมาย AI ของสหภาพยุโรปวางกรอบที่ครอบคลุมเป็นครั้งแรกสำหรับการกำกับดูแล AI เชิงจริยธรรมแบบแบ่งระดับความเสี่ยงทั่วโลก สิ่งที่เปลี่ยนไปสำหรับธนาคาร ผู้ให้บริการ และระบบความเสี่ยงสูง"
 date: "February 13, 2024"
 language: "th-TH"
 locale: "th_TH"
 banner: "https://cloudcdn.pro/stocks/images/ryoji-iwata-a-qsFZimp1M.webp"
-banner_alt: "Persona sentada en un banco negro, leyendo un periódico"
-keywords: "AI Act UE, regulación de la inteligencia artificial, marco ético IA, gestión de riesgos IA, innovación IA, transparencia IA, derechos de los consumidores, gobernanza IA, estándares IA, ética IA"
+banner_alt: "บุคคลนั่งอ่านหนังสือพิมพ์บนม้านั่งสีดำ"
+keywords: "กฎหมาย AI สหภาพยุโรป, การกำกับดูแลปัญญาประดิษฐ์, กรอบ AI เชิงจริยธรรม, การบริหารความเสี่ยง AI, นวัตกรรม AI, ความโปร่งใสของ AI, สิทธิผู้บริโภคด้าน AI, ธรรมาภิบาล AI, มาตรฐาน AI, จริยธรรม AI"
 ---
 
 
-> **TL;DR.** บทความนี้เป็น DRAFT แปลจากต้นฉบับภาษาสเปน รอการตรวจสอบโดยเจ้าของภาษา เนื้อหาหลัก ตัวอย่าง และการอ้างอิงยังคงเป็นภาษาสเปน เฉพาะ frontmatter เท่านั้นที่ถูกเปลี่ยนเป็นภาษาไทย
+## กฎหมาย AI ของสหภาพยุโรป: การกำหนดอนาคตของการกำกับดูแล AI ระดับโลก
 
-**ประเด็นสำคัญ**
+[**กฎหมายปัญญาประดิษฐ์ของสหภาพยุโรป (AI Act) ⧉**][00] เป็นกรอบการกำกับดูแลที่ครอบคลุม ออกแบบมาเพื่อรับประกันการพัฒนาและการใช้งาน AI ที่มีจริยธรรม โปร่งใส และปลอดภัยทั่วทั้งสหภาพยุโรป กฎหมายนี้นำแนวทางที่อิงความเสี่ยงมาใช้ในการกำกับดูแล AI โดยจัดหมวดหมู่ระบบ AI ตามผลกระทบที่อาจเกิดขึ้นต่อสังคม และกำหนดข้อกำหนดที่เข้มงวดต่อการใช้งานความเสี่ยงสูง กฎหมายฉบับนี้มุ่งคุ้มครองสิทธิขั้นพื้นฐานและส่งเสริมนวัตกรรม พร้อมวางบรรทัดฐานสำหรับธรรมาภิบาล AI ระดับโลก
 
-## El AI Act de la UE: configurar el futuro de la regulación mundial de la IA
+กฎหมายปัญญาประดิษฐ์ของสหภาพยุโรปถือเป็นก้าวสำคัญในการอภิปรายระดับโลกว่าด้วยการกำกับดูแล AI เมื่อเทคโนโลยีดิจิทัลแทรกซึมเข้าสู่ทุกด้านของชีวิตมากขึ้นเรื่อย ๆ ความจำเป็นของกรอบกฎหมายที่รับประกันการนำเทคโนโลยี AI ไปใช้อย่างมีจริยธรรมจึงมีความสำคัญยิ่งกว่าที่เคย กฎหมาย AI ของสหภาพยุโรปไม่เพียงตอบโจทย์ความจำเป็นนี้ แต่ยังวางตำแหน่งให้สหภาพยุโรปเป็นผู้นำในความพยายามระดับโลกที่จะกำหนดทิศทางการพัฒนา AI ภายในกรอบที่มีจริยธรรมและยึดมนุษย์เป็นศูนย์กลาง
 
-El [**Artificial Intelligence Act (AI Act) de la Unión Europea ⧉**][00] es un marco normativo completo concebido para garantizar un desarrollo y uso éticos, transparentes y seguros de la IA en toda la Unión. Introduce un enfoque basado en el riesgo, clasificando los sistemas de IA según su impacto potencial sobre la sociedad e imponiendo exigencias estrictas a las aplicaciones de alto riesgo. Esta legislación aspira a proteger los derechos fundamentales y a promover la innovación, fijando un precedente para la gobernanza mundial de la IA.
+## แง่มุมสำคัญของกฎหมาย AI
 
-El Artificial Intelligence Act de la Unión Europea marca una etapa significativa en el discurso global sobre la regulación de la IA. A medida que las tecnologías digitales permean cada aspecto de nuestras vidas, la necesidad de un marco jurídico que garantice un despliegue ético de las tecnologías de IA nunca ha sido tan crítica. El AI Act de la UE responde a esta necesidad y posiciona a la UE como líder del esfuerzo global para configurar el desarrollo de la IA dentro de un marco ético y centrado en lo humano.
+### แนวปฏิบัติที่ต้องห้ามและการใช้งานความเสี่ยงสูง
 
-## Aspectos clave del AI Act
+โดยแก่นแท้ กฎหมาย AI ออกแบบมาเพื่อปกป้องพลเมืองสหภาพยุโรปจากอันตรายที่อาจเกิดจาก AI ด้วยการห้ามแนวปฏิบัติที่ถือว่ายอมรับไม่ได้ เช่น AI ที่บิดเบือนและฉวยประโยชน์จากจุดอ่อน หรือระบบที่เปิดให้มีการ 'ให้คะแนนทางสังคม' แก่ปัจเจกบุคคล การใช้งานความเสี่ยงสูง รวมถึงในโครงสร้างพื้นฐานสำคัญ การศึกษา การจ้างงาน และการบังคับใช้กฎหมาย จะต้องเผชิญกับข้อกำหนดที่เข้มงวดเพื่อรับประกันความปลอดภัย ความโปร่งใส และความรับผิดชอบตรวจสอบได้
 
-### Prácticas prohibidas y aplicaciones de alto riesgo
+### การส่งเสริมนวัตกรรมและความรู้ความเข้าใจด้าน AI
 
-En su núcleo, el AI Act está diseñado para proteger a los ciudadanos de la UE de los perjuicios potenciales de la IA, prohibiendo prácticas consideradas inaceptables: IA manipuladora que explote vulnerabilidades, o sistemas que autoricen el «social scoring» de los individuos. Las aplicaciones de alto riesgo, incluidas las relativas a infraestructuras críticas, educación, empleo y aplicación de la ley, afrontarán exigencias estrictas que garanticen seguridad, transparencia y rendición de cuentas.
+แม้จะกำกับดูแลการใช้งานความเสี่ยงสูง กฎหมายฉบับนี้ก็ส่งเสริมนวัตกรรมด้วยเช่นกัน โดยเฉพาะในหมู่ SME และสตาร์ทอัพ ผ่านการสนับสนุนการพัฒนา AI ที่ปลอดภัยและน่าเชื่อถือ กฎหมายให้ความสำคัญกับความรู้ความเข้าใจด้าน AI โดยกำหนดให้ผู้ให้บริการและผู้นำไปใช้งานต้องรับประกันว่าบุคลากรของตนได้รับการฝึกอบรมอย่างเพียงพอ และตระหนักถึงแง่มุมด้านจริยธรรมและการปฏิบัติงานของ AI
 
-### Estimular la innovación y la cultura IA
+### นัยระดับโลก: การวางมาตรฐาน
 
-Aunque regule las aplicaciones de alto riesgo, el Act también promueve la innovación, en particular entre pymes y startups, apoyando el desarrollo de una IA segura y digna de confianza. Hace hincapié en la cultura IA, exigiendo a proveedores y desplegadores que se aseguren de que su personal esté adecuadamente formado y consciente de los aspectos éticos y operativos de la IA.
+แนวทางที่ครอบคลุมและมีรายละเอียดของกฎหมาย AI อาจเป็นต้นแบบสำหรับการกำกับดูแล AI ทั่วโลก เช่นเดียวกับที่ GDPR กลายเป็นเกณฑ์มาตรฐานระดับโลกด้านความเป็นส่วนตัวของข้อมูล การเน้นแนวทางที่อิงความเสี่ยง ประกอบกับการคุ้มครองสิทธิขั้นพื้นฐานอย่างเข้มงวด ทำให้สหภาพยุโรปอยู่แถวหน้าของธรรมาภิบาล AI เชิงจริยธรรม
 
-### Implicaciones mundiales: fijar un estándar
+### ความโปร่งใสและสิทธิผู้บริโภค
 
-El enfoque completo y matizado del AI Act podría servir de modelo para la regulación mundial de la IA, a imagen del RGPD que se convirtió en referencia mundial en confidencialidad de los datos. Su énfasis en un enfoque basado en el riesgo, combinado con protecciones estrictas para los derechos fundamentales, posiciona a la UE en la vanguardia de la gobernanza IA ética.
+ด้วยการเน้นความโปร่งใสและการคุ้มครองผู้บริโภค กฎหมาย AI กำหนดให้มีการเปิดเผยข้อมูลอย่างชัดเจนเมื่อบุคคลมีปฏิสัมพันธ์กับ AI โดยเฉพาะกับ AI เชิงสร้างสรรค์ที่ผลิตหรือดัดแปลงเนื้อหา กฎหมายรับรองสิทธิในการยื่นข้อร้องเรียนและขอคำอธิบายเกี่ยวกับการตัดสินใจของระบบ AI ความเสี่ยงสูง ซึ่งช่วยเสริมสิทธิผู้บริโภคในยุคดิจิทัล
 
-### Transparencia y derechos de los consumidores
+### การบังคับใช้และบทลงโทษ
 
-Poniendo el énfasis en la transparencia y la protección de los consumidores, el AI Act impone divulgaciones claras cuando los individuos interactúan con la IA, en particular con la IA generativa que produce o manipula contenido. Consagra el derecho a presentar reclamaciones y a obtener explicaciones sobre las decisiones de los sistemas de IA de alto riesgo, reforzando los derechos de los consumidores en la era digital.
+ด้วยค่าปรับสูงถึง 35 ล้านยูโร หรือ 7% ของรายได้รวมทั่วโลกสำหรับการฝ่าฝืนร้ายแรง กลไกการบังคับใช้ของกฎหมาย AI จึงมีความหนักแน่น สิ่งนี้สะท้อนถึงความมุ่งมั่นของสหภาพยุโรปในการรับประกันการปฏิบัติตามกฎ และตอกย้ำความสำคัญของการใช้ AI อย่างมีจริยธรรมและรับผิดชอบ
 
-### Aplicación y sanciones
+### นัยระดับโลกและความเป็นผู้นำ
 
-Con multas de hasta 35 millones de euros o el 7 % de la facturación mundial por las infracciones graves, el mecanismo de aplicación del AI Act es robusto. Esto refleja la determinación de la UE de garantizar el cumplimiento, subrayando la importancia de un uso ético y responsable de la IA.
-
-### Implicaciones globales y liderazgo
-
-El AI Act de la UE podría servir de modelo para la regulación global de la IA, recordando el impacto del RGPD sobre la confidencialidad de los datos. Su enfoque de categorización por el riesgo puede animar esfuerzos legislativos similares en todo el mundo, promoviendo una estrategia unificada de gobernanza IA que equilibre el avance tecnológico y las consideraciones éticas.
+กฎหมาย AI ของสหภาพยุโรปอาจเป็นต้นแบบสำหรับการกำกับดูแล AI ระดับโลก ชวนให้นึกถึงผลกระทบของ GDPR ต่อความเป็นส่วนตัวของข้อมูล แนวทางการจัดหมวดหมู่ตามความเสี่ยงอาจกระตุ้นให้เกิดความพยายามทางกฎหมายในลักษณะเดียวกันทั่วโลก และส่งเสริมกลยุทธ์ที่เป็นหนึ่งเดียวสำหรับธรรมาภิบาล AI ที่สร้างสมดุลระหว่างความก้าวหน้าทางเทคโนโลยีกับข้อพิจารณาด้านจริยธรรม
 
 ![divider][divider].class=\"m-10 w-100\"
 
-## Conclusión
+## บทสรุป
 
-El Artificial Intelligence Act de la UE representa una etapa crítica para navegar el terreno complejo de la regulación de IA. Estableciendo reglas claras para las aplicaciones de IA, el Act aspira a proteger los derechos y la seguridad de los ciudadanos a la vez que crea un entorno propicio a la innovación. Como primera ley IA completa promulgada por un regulador principal, fija un precedente susceptible de configurar el futuro de la gobernanza global de la IA, abogando por un enfoque equilibrado que defienda el progreso tecnológico junto con la integridad ética.
+กฎหมายปัญญาประดิษฐ์ของสหภาพยุโรปถือเป็นก้าวสำคัญในการนำทางภูมิประเทศอันซับซ้อนของการกำกับดูแล AI ด้วยการวางกฎเกณฑ์ที่ชัดเจนสำหรับการใช้งาน AI กฎหมายฉบับนี้มุ่งคุ้มครองสิทธิและความปลอดภัยของพลเมือง พร้อมสร้างสภาพแวดล้อมที่เอื้อต่อนวัตกรรม ในฐานะกฎหมาย AI ที่ครอบคลุมฉบับแรกจากหน่วยงานกำกับดูแลรายใหญ่ กฎหมายนี้วางบรรทัดฐานที่อาจกำหนดอนาคตของธรรมาภิบาล AI ระดับโลก โดยสนับสนุนแนวทางที่สมดุลซึ่งให้ความสำคัญกับความก้าวหน้าทางเทคโนโลยีควบคู่ไปกับความซื่อตรงทางจริยธรรม
 
 ![divider][divider].class=\"m-10 w-100\"
 
 [divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Divider"
-[00]: https://www.europarl.europa.eu/news/en/press-room/20240212IPR17618/artificial-intelligence-act-committees-confirm-landmark-agreement "AI Act: committees confirm landmark agreement"
+[00]: https://www.europarl.europa.eu/news/en/press-room/20240212IPR17618/artificial-intelligence-act-committees-confirm-landmark-agreement "AI Act: คณะกรรมาธิการยืนยันข้อตกลงสำคัญ"

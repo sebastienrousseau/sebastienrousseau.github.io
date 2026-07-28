@@ -1,119 +1,119 @@
 ---
 title: "Yapay zeka destekli kuantum algoritmalarıyla finansı dönüştürmek"
-subtitle: "Finansal hizmetler için yapay zeka ile kuantumun yakınsaması"
-description: "Yapay zeka tarafından geliştirilen kuantum algoritmaları, finansal hizmetlerde yeni optimizasyon ve modelleme yetenekleri sunar."
+subtitle: "Finansal yenilik için kuantumun gücü: yeni nesil algoritmaların merkezinde yapay zeka"
+description: "Finans için kuantum algoritmalarında yapay zekanın dönüştürücü rolünü, matematiksel ayrıntılarına ve bankacılık uygulamalarına odaklanarak inceleyin."
 date: "December 25, 2023"
 language: "tr-TR"
 locale: "tr_TR"
 banner: "https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp"
-banner_alt: "Yapay zeka ve kuantum arasındaki yakınsamanın görselleştirmesi"
-keywords: "kuantum, yapay zeka, finans, algoritmalar, optimizasyon, bankacılık"
+banner_alt: "Yapay zeka destekli kuantum algoritmalarıyla finansın dönüşümü"
+keywords: "kuantum hesaplama, yapay zeka algoritmaları, finansal matematik, bankacılık teknolojisi, risk yönetimi, algoritma tasarımı, veri analizi, yatırım stratejileri, kuantum finans, makine öğrenmesi"
 ---
 
 
 ---
 
-> **TL;DR.** L'IA ve calcolo quantistico convergono: gli algoritmi ibridi classico-quantistici sfruttano l'IA per accelerare ottimizzazione, simulazione e machine learning finanziari.
+> **TL;DR.** Finans için kuantum algoritmalarında yapay zekanın dönüştürücü rolünü, matematiksel ayrıntılarına ve bankacılık uygulamalarına odaklanarak inceleyin.
 >
 > **Önemli Çıkarımlar**
 >
-> - **Algoritmi ibridi** — combinano elaborazione classica e quantistica per superare i limiti ın solo hardware quantistico attuale.
-> - **Ottimizzazione di portafoglio** — QAOA e annealing quantistico per problemi combinatori finanziari.
-> - **Machine learning quantistico** — feature maps quantistiche per pattern recognition su mercati.
-> - **Orizzonti realistici** — vantaggio pratico atteso entro 5-10 anni per casi d'uso specifici.
+> - **Fikir.** Yapay zekanın kuantum hesaplamayla, özellikle finans alanında bütünleşmesi, iki teknolojinin salt birleşimi değil, her birinin güçlü yönlerini artıran sinerjik bir ilişkidir.
+> - **Etki.** Yapay zeka destekli kuantum algoritmalarının finanstaki pratik etkileri geniş ve dönüştürücüdür.
+> - **Teşvikler.** Bu gelişmiş kuantum algoritmalarının benimsenmesi, finans kurumlarına önemli rekabet avantajları sağlar.
+> - **Finans için kuantum hesaplama: yeniliğin motorları.** Bu finansal dönüşümün merkezinde, finanstaki belirli sorunları ele alan iki kuantum algoritması yer alır: Kuantum Fourier Dönüşümü (QFT) ve Grover Algoritması.
 
 ---
 
-Il panorama finanziario è posicionado per una transformación revolucionaria impulsada için convergencia ın intelligenza artificiale (IA) ve diseño di algoritmi quantistici. Questa revolución non è dovuto alla potencia quantistica bruta, sino a algoritmos elegantes che la optimizan.
+Finans sektörü, yapay zeka (AI) ve kuantum algoritma tasarımının yakınsamasının yönlendirdiği köklü bir dönüşümün eşiğinde. Finanstaki bu dönüşüm, ham kuantum gücünden değil, onu eniyileyen zarif algoritmalardan kaynaklanıyor.
 
-## Bakış
+## İçgörü
 
-### La calcolo quantistico per le finanzas: desvelar i motores ın innovación
+### Finans için kuantum hesaplama: yeniliğin motorlarını ortaya çıkarmak
 
-In il centro di questa revolución finanziaria, dos algoritmi quantistici abordan sfide específicos in finanzas: la transformada di Fourier quantistica (QFT) ve algoritmo di Grover. Questi algoritmos, integrados con IA, offrono una potencia computacional senza precedentes per analizar dati finanziari complejos, permitiendo una evaluación di rischi daha çok precisa, una detección di fraude reforzada e estrategias di inversión superiores.
+Bu finansal dönüşümün merkezinde, finanstaki belirli sorunları ele alan iki kuantum algoritması yer alır: Kuantum Fourier Dönüşümü (QFT) ve Grover Algoritması. Bu algoritmalar yapay zeka ile bütünleştirildiğinde, karmaşık finansal verilerin analizinde eşi görülmemiş bir hesaplama gücü sunarak daha doğru risk değerlendirmesi, geliştirilmiş dolandırıcılık tespiti ve üstün yatırım stratejileri sağlar.
 
-#### Transformada di Fourier quantistica (QFT)
+#### Kuantum Fourier Dönüşümü (QFT)
 
-La QFT, análogo quantistico ın transformada di Fourier clásica, è instrumental in calcolo quantistico per tratar i estados quantistici. Il suo applicazione in finanzas gira attorno alla modelización ın mercados finanziari, in particolare il análisis di tendencias cíclicas e periódicas in conjuntos di dati complejos. A differenza ın transformadas di Fourier clásicas, la QFT aprovecha i principios di superposición e entrelazamiento, aspectos fundamentales ın mecánica quantistica, permitiendo il tratamiento simultáneo di diversi estados.
+Klasik Fourier Dönüşümünün kuantum karşılığı olan QFT, kuantum durumlarının işlenmesinde kuantum hesaplama açısından belirleyicidir. Finanstaki uygulaması, finansal piyasaların modellenmesi etrafında, özellikle karmaşık veri kümelerindeki döngüsel ve periyodik eğilimlerin analizinde şekillenir. Klasik Fourier Dönüşümlerinden farklı olarak QFT, kuantum mekaniğinin temel unsurları olan süperpozisyon ve dolanıklık ilkelerinden yararlanır ve böylece birden çok durumun eşzamanlı işlenmesine olanak tanır.
 
-La transformada di Fourier quantistica (QFT) porta un estado quantistico `|x⟩` a una superposición di estados, permitiendo il tratamiento simultáneo ın dati. Esto se expresa matemáticamente come: `|x⟩ -> (1/√2^n) ∑e=0^2^n-1 e^(2πixy/2^n) |e⟩`.
+Kuantum Fourier Dönüşümü (QFT), bir kuantum durumu `|x⟩` ifadesini durumların bir süperpozisyonuna dönüştürerek eşzamanlı veri işlemeye olanak tanır. Bu, matematiksel olarak şöyle ifade edilir: `|x⟩ -> (1/√2^n) ∑y=0^2^n-1 e^(2πixy/2^n) |y⟩`.
 
-Questa fórmula è pivote per consentire le capacità di procesamiento paralelo ın calcolo quantistico, esenciales per manipular i grandi conjuntos di dati complejos típicos ın mercados finanziari.
+Bu formül, kuantum hesaplamanın paralel işleme yeteneklerinin sağlanmasında merkezi bir rol oynar ve finansal piyasalarda tipik olan büyük ve karmaşık veri kümelerinin işlenmesi için gereklidir.
 
-In términos pratici, la QFT viene utilizzato için análisis a alta velocità di dati finanziari, identificando patrones e tendencias non discernibles için métodos clásicos. Il suo capacità per descomponer un insieme di dati in i suoi frecuencias fundamentales la converte in una strumento inestimable için evaluación di rischi, la optimización di carteras ve predicción di movimientos di mercado con precisión reforzada.
+Pratik açıdan QFT, finansal verilerin yüksek hızlı analizinde, klasik yöntemlerle fark edilemeyen örüntülerin ve eğilimlerin belirlenmesinde kullanılır. Bir veri kümesini temel frekanslarına ayrıştırma yeteneği, onu risk değerlendirmesi, portföy eniyilemesi ve piyasa hareketlerinin daha yüksek doğrulukla öngörülmesi için değerli bir araç haline getirir.
 
-#### Algoritmo di Grover
+#### Grover Algoritması
 
-Il algoritmo di Grover, reconocido için suoi capacità di ricerca quantistica, offre una vantaggio di velocità significativa su i algoritmos clásicos için ricerca in bases di dati non ordenadas, un sfida común in finanzas. È particularmente eficaz in i escenarios in i che una ricerca e recuperación rápidas di informazione a partire da grandi conjuntos di dati sono cruciales, gibi in la detección di fraude ve análisis di mercado.
+Kuantum arama yetenekleriyle bilinen Grover Algoritması, finansta yaygın bir sorun olan sıralanmamış veritabanlarında arama yaparken klasik algoritmalara göre önemli bir hız avantajı sunar. Özellikle dolandırıcılık tespiti ve piyasa analizi gibi büyük veri kümelerinden bilginin hızlı aranmasının ve alınmasının kritik olduğu senaryolarda etkilidir.
 
-Il algoritmo opera aplicando iterativamente una combinación ın operador di difusión di Grover e un operador oráculo. Matemáticamente, questo processo se expresa gibi `(2|ψ⟩⟨ψ|−I)O|x⟩`, dove `O` è il operador oráculo e `|ψ⟩` rappresenta la superposición uniforme di tutti i estados. Questa amplificación iterativa conduce a una aceleración cuadrática in la ricerca ın elemento deseado, una mejora notable su i métodos clásicos.
+Algoritma, Grover yayılım operatörü ile bir kâhin (oracle) operatörünün birleşimini yinelemeli olarak uygulayarak çalışır. Matematiksel olarak bu süreç `(2|ψ⟩⟨ψ|−I)O|x⟩` biçiminde ifade edilir; burada `O` kâhin operatörü, `|ψ⟩` ise tüm durumların düzgün süperpozisyonunu temsil eder. Bu yinelemeli güçlendirme, aranan öğenin bulunmasında karesel bir hızlanma sağlar ve klasik arama yöntemlerine göre kayda değer bir gelişmedir.
 
-In il contexto finanziario, il algoritmo di Grover è particularmente útil per identificare patrones, anomalías o informazione específica in grandi conjuntos di dati non strutturati. I suoi applicazioni van da il análisis in tiempo real di dati di mercado fino a il refuerzo ın medidas di sicurezza mediante algoritmos eficientes di detección di fraude.
+Finans bağlamında Grover Algoritması, büyük ve yapılandırılmamış veri kümelerindeki örüntülerin, anormalliklerin veya belirli bilgilerin belirlenmesinde özellikle yararlıdır. Uygulaması, piyasa verilerinin gerçek zamanlı analizinden verimli dolandırıcılık tespiti algoritmaları aracılığıyla güvenlik önlemlerinin güçlendirilmesine kadar uzanır.
 
 ![divider][divider].class=\"m-10 w-100\"
 
 ## Fikir
 
-### Sinergia: la IA alimentando i motores quantistici ın finanzas
+### Sinerji: finansın kuantum motorlarını besleyen yapay zeka
 
-La integración ın IA con la calcolo quantistico, in particolare in il ámbito ın finanzas, non è simplemente una combinación di dos tecnologie sino una relación sinérgica che amplifica le fortalezas di ognuna. La capacità di aprendizaje, reconocimiento di patrones e análisis predictivo ın IA complementa la potencia computacional bruta ın algoritmi quantistici, conduciendo a progressi senza precedentes in análisis finanziario e toma di decisiones.
+Yapay zekanın kuantum hesaplamayla, özellikle finans alanında bütünleşmesi, iki teknolojinin salt birleşimi değil, her birinin güçlü yönlerini artıran sinerjik bir ilişkidir. Yapay zekanın öğrenme, örüntü tanıma ve öngörücü analitik kapasitesi, kuantum algoritmalarının ham hesaplama gücünü tamamlar ve finansal analiz ile karar almada eşi görülmemiş ilerlemelere yol açar.
 
-#### Reforzar la QFT con IA
+#### QFT'yi yapay zeka ile geliştirmek
 
-- **Optimización pilotada per IA**: la IA, in particolare i algoritmos di machine learning, può emplearse per ajustar finamente i parámetros ın QFT. Técnicas gibi le reti neurali ve deep learning possono analizar i dati finanziari históricos per identificare i patrones subyacentes, che possono utilizarse dopo per ottimizzare il prestazioni ın QFT in la previsión ın tendencias di mercado. Esto conduce a modelli finanziari daha çok precisos e robustos, esenciales için gestión di rischi ve desarrollo di estrategias di inversión.
-- **Análisis predictivo**: i modelli di machine learning, integrados con la QFT, consentono un análisis predictivo che può anticipar il comportamiento ın mercado con mayor precisión.
+- **Yapay zeka odaklı eniyileme**: Yapay zeka, özellikle makine öğrenmesi algoritmaları, QFT'nin parametrelerini ince ayarlamak için kullanılabilir. Sinir ağları ve derin öğrenme gibi teknikler, geçmiş finansal verileri analiz ederek altta yatan örüntüleri belirleyebilir; bunlar daha sonra QFT'nin piyasa eğilimlerini öngörmedeki başarımını eniyilemek için kullanılabilir. Bu, risk yönetimi ve yatırım stratejisi geliştirme için gerekli olan daha doğru ve sağlam finansal modeller sağlar.
+- **Öngörücü analitik**: Makine öğrenmesi modelleri QFT ile bütünleştirildiğinde, piyasa davranışını daha yüksek kesinlikle öngörebilen öngörücü analitiği mümkün kılar.
 
-Questa integración consente alle istituzioni finanziarie simular diversos escenarios di mercado ve suoi resultados, conduciendo a processi di decisión daha çok informados e estratégicos.
+Bu bütünleşme, finans kurumlarının çeşitli piyasa senaryolarını ve bunların sonuçlarını benzetimlemesine olanak tanır ve daha bilgiye dayalı, stratejik karar alma süreçlerine yol açar.
 
-### Optimizar il algoritmo di Grover con IA
+### Grover Algoritmasını yapay zeka ile eniyileme
 
-- **Capacidades di ricerca reforzadas**: la IA può migliorare significativamente la eficiencia ın algoritmo di Grover per buscar e analizar grandi conjuntos di dati. Empleando tecniche heurísticas pilotadas per IA, i parámetros di ricerca ın algoritmo possono ajustarse dinámicamente, conduciendo a una detección daha çok rápida e precisa di fraudes o anomalías di mercado.
+- **Geliştirilmiş arama yetenekleri**: Yapay zeka, Grover Algoritmasının büyük veri kümelerini arama ve analiz etmedeki verimliliğini önemli ölçüde iyileştirebilir. Yapay zeka odaklı sezgisel teknikler kullanılarak Grover Algoritmasının arama parametreleri dinamik olarak ayarlanabilir; bu da dolandırıcılığın veya piyasa anormalliklerinin daha hızlı ve daha doğru tespitini sağlar.
 
-- **Tratamiento di dati in tiempo real**: le capacità di tratamiento in tiempo real ın algoritmo di Grover, aumentadas per IA, sono particularmente beneficiosas in il entorno acelerado ın mercados finanziari. I algoritmos di IA possono actualizar e refinar continuamente i criterios di ricerca según i dati di mercado in evolución, permitiendo alle istituzioni finanziarie reaccionar con rapidez a nuova informazione e mantener una vantaggio competitiva.
+- **Gerçek zamanlı veri işleme**: Grover Algoritmasının yapay zekayla güçlendirilen gerçek zamanlı işleme yetenekleri, finansal piyasaların hızlı temposunda özellikle yararlıdır. Yapay zeka algoritmaları, gelişen piyasa verilerine göre arama ölçütlerini sürekli olarak güncelleyip iyileştirebilir; bu da finans kurumlarının yeni bilgilere hızla tepki vermesine ve rekabet üstünlüğünü korumasına olanak tanır.
 
 ## Etki
 
 ![Efficiency of AI-Enhanced Quantum Algorithms in Finance][01].class=\"m-10 w-100\"
 
-Le implicaciones pratiche ın algoritmi quantistici potenciados per IA in finanzas sono vastas e transformadoras.
+Yapay zeka destekli kuantum algoritmalarının finanstaki pratik etkileri geniş ve dönüştürücüdür.
 
-### Evaluación di rischi e gestión di carteras reforzadas
+### Geliştirilmiş risk değerlendirmesi ve portföy yönetimi
 
-- **QFT optimizada per IA**: la applicazione ın QFT optimizada per IA alla evaluación di rischi consente ai bancos sviluppare modelli di rischio sofisticados che toman in cuenta una gama daha çok amplia di variables e condiciones di mercado. Esto conduce a evaluaciones daha çok precisas, decisiones di préstamo mejor informadas e una gestión di carteras daha çok eficiente.
+- **Yapay zekayla eniyilenmiş QFT**: Risk değerlendirmesinde yapay zekayla eniyilenmiş QFT'nin kullanılması, bankaların daha geniş bir değişken ve piyasa koşulları yelpazesini hesaba katan gelişmiş risk modelleri geliştirmesine olanak tanır. Bu, daha doğru risk değerlendirmeleri, daha bilgiye dayalı kredi kararları ve daha verimli portföy yönetimi sağlar.
 
-### Análisis di mercado e estrategias di inversión superiores
+### Üstün piyasa analizi ve yatırım stratejileri
 
-- **Potencia predictiva ın QFT**: con la potencia predictiva reforzada ın QFT, i analistas finanziari possono anticipar i movimientos di mercado con mayor precisión, informando le estrategias di inversión ve esfuerzos di gestión di rischi.
+- **QFT'nin öngörü gücü**: QFT'nin geliştirilmiş öngörü gücüyle finansal analistler, piyasa hareketlerini daha yüksek doğrulukla öngörebilir ve yatırım stratejileri ile risk yönetimi çalışmalarını yönlendirebilir.
 
-### Detección di fraude daha çok rápida e eficiente
+### Daha hızlı ve daha verimli dolandırıcılık tespiti
 
-- **Algoritmo di Grover impulsado per IA**: la integración ın IA con il algoritmo di Grover reduce significativamente il tiempo requerido per identificare e responder alle actividades fraudulentas, protegiendo i activos finanziari ve confianza ın cliente.
+- **Yapay zeka destekli Grover Algoritması**: Yapay zekanın Grover Algoritmasıyla bütünleşmesi, dolandırıcılık faaliyetlerinin belirlenmesi ve bunlara yanıt verilmesi için gereken süreyi önemli ölçüde azaltır; böylece finansal varlıkları ve müşteri güvenini korur.
 
-### Asignación eficiente di recursos
+### Verimli kaynak tahsisi
 
-- **Optimizar i modelli finanziari**: al impiegare questi algoritmos avanzados, i bancos e istituzioni finanziarie possono asignar i recursos in modo daha çok eficiente, conduciendo a una mejora in la generación di ingresos, una reducción di costi e una eficiencia operativa globale.
+- **Finansal modelleri eniyileme**: Bu gelişmiş algoritmaları kullanarak bankalar ve finans kurumları kaynakları daha etkili biçimde tahsis edebilir; bu da gelir üretiminin iyileşmesine, maliyetlerin azalmasına ve genel operasyonel verimliliğe yol açar.
 
 ## Teşvikler
 
-La adopción di questi algoritmi quantistici avanzados offre vantaggi competitivas significative alle istituzioni finanziarie.
+Bu gelişmiş kuantum algoritmalarının benimsenmesi, finans kurumlarına önemli rekabet avantajları sağlar.
 
-### Toma di decisiones informada
+### Bilgiye dayalı karar alma
 
-- **Perspectivas estratégicas**: le prospettive provenientes di analíticas impulsadas per lo quantistico consentono ai bancos tomar decisiones estratégicas con mayor confianza, mejorando la rentabilidad e favoreciendo un crecimiento sostenido.
+- **Stratejik içgörüler**: Kuantum destekli analitikten elde edilen içgörüler, bankaların stratejik kararları daha büyük bir güvenle almasına olanak tanır; kârlılığı artırır ve sürdürülebilir büyümeyi destekler.
 
-### Gestión di rischi reforzada
+### Geliştirilmiş risk yönetimi
 
-- **Mitigación di rischi**: la capacità di evaluar e gestire il rischio con precisión mediante questi algoritmos se traduce in pérdidas finanziarie reducidas e mayor confianza ın cliente.
+- **Risk azaltma**: Bu algoritmalarla riski doğru biçimde değerlendirme ve yönetme yeteneği, azalan finansal kayıplara ve artan müşteri güvenine dönüşür.
 
-### Yenilik e agilidad
+### Yenilik ve çeviklik
 
-- **Liderazgo di mercado**: le istituzioni che abracen queste tecnologie saranno in la vanguardia ın innovación finanziaria, adaptándose con rapidez ai cambiamenti di mercado e aprovechando le oportunidades emergentes.
+- **Piyasa liderliği**: Bu teknolojileri benimseyen kurumlar, finansal yeniliğin ön saflarında yer alacak; piyasa değişikliklerine hızla uyum sağlayacak ve ortaya çıkan fırsatları değerlendirecektir.
 
 ## Sonuç
 
-Le principali istituzioni finanziarie già sono implementando algoritmi quantistici potenciados per IA in applicazioni concretas. [**Goldman Sachs** ⧉][07] ha utilizzato la QFT per acelerar il pricing di derivados in un factor di 1000, mentre che [**BBVA** ⧉][06] è stato asociado con una startup quantistica per migliorare il análisis di rischio crediticio. In detección di fraude, la startup suiza [**TerraQuantum** ⧉][05] ha alcanzado una ganancia di velocità ın 75 % con il algoritmo di Grover, e [**Santander** ⧉][04] ha colaborado con D-Wave per pilotar un sistema quantistico di detección di anomalías. Questi progressi sono solo la punta ın iceberg; [**BMO Financial Group** ⧉][03] e [**J.P. Morgan** ⧉][02] exploran il análisis di mercado ve simulación di escenarios mediante métodos quantistici. A medida che la tecnologia madura, podemos esperar applicazioni ancora daha çok transformadoras per revolucionar la toma di decisiones finanziarie ve gestión di rischi.
+Önde gelen finans kurumları, yapay zeka destekli kuantum algoritmalarını gerçek dünya uygulamalarında halihazırda kullanıyor. [**Goldman Sachs** ⧉][07] türev ürün fiyatlamasını 1000 kat hızlandırmak için QFT'yi kullandı; [**BBVA** ⧉][06] ise kredi riski analizini iyileştirmek için bir kuantum girişimiyle iş birliği yaptı. Dolandırıcılık tespitinde, İsviçreli girişim [**TerraQuantum** ⧉][05] Grover Algoritmasını kullanarak %75 hız artışı elde etti; [**Santander** ⧉][04] ise bir kuantum anormallik tespiti sistemini pilot uygulamak için D-Wave ile iş birliği yaptı. Bu ilerlemeler buzdağının yalnızca görünen kısmı; [**BMO Financial Group** ⧉][03] ve [**J.P. Morgan** ⧉][02] kuantum yöntemleriyle piyasa analizi ve senaryo benzetimi üzerinde çalışıyor. Teknoloji olgunlaştıkça, finansal karar alma ve risk yönetimini kökten değiştirecek daha da dönüştürücü uygulamalar bekleyebiliriz.
 
-La integración ın IA con il diseño di algoritmi quantistici rappresenta un momento pivote için settore finanziario. Aprovechar le capacità computacionales extraordinarias di algoritmos gibi la QFT e Grover, potenciadas per IA, desbloquea una nuova era di eficiencia, precisión e agilidad in finanzas. Questa fusión tecnológica abre la vía a un futuro in il che le finanzas sono daha çok robustas, perspicaces e reactivas rispetto al panorama economico globale in rápida evolución.
+Yapay zekanın kuantum algoritma tasarımıyla bütünleşmesi, finans sektörü için belirleyici bir an anlamına geliyor. QFT ve Grover gibi algoritmaların yapay zekayla güçlendirilen olağanüstü hesaplama yeteneklerinden yararlanmak, finansta yeni bir verimlilik, kesinlik ve çeviklik çağının kapısını açıyor. Bu teknolojik birleşim, finansın daha sağlam, daha kavrayışlı ve hızla değişen küresel ekonomiye daha duyarlı olduğu bir geleceğin önünü açıyor.
 
 ![divider][divider].class=\"m-10 w-100\"
 
@@ -122,7 +122,7 @@ La integración ın IA con il diseño di algoritmi quantistici rappresenta un mo
 [01]: https://cloudcdn.pro/stocks/diagrams/ai_quantum_algorithms_efficiency.svg "Efficiency of AI-Enhanced Quantum Algorithms in Finance"
 [02]: https://www.jpmorgan.com/technology/applied-research "J.P. Morgan Applied Research"
 [03]: https://www.bmo.com/main/about-bmo/quantum-computing/ "BMO Quantum Computing"
-[04]: https://web.archive.org/web/2*/https://www.santander.com/in/press-room/press-releases/santander-and-d-wave-to-explore-the-use-of-quantum-computing-in-the-banking-industry "Santander and D-Wave to explore the use of quantum computing in the banking industry (archived)"
+[04]: https://web.archive.org/web/2*/https://www.santander.com/en/press-room/press-releases/santander-and-d-wave-to-explore-the-use-of-quantum-computing-in-the-banking-industry "Santander and D-Wave to explore the use of quantum computing in the banking industry (archived)"
 [05]: https://www.terraquantum.swiss/ "TerraQuantum"
 [06]: https://web.archive.org/web/2*/https://zapata.ai/bbva-monte-carlo-simulation-finance-case-study/ "BBVA Monte Carlo Simulation Finance Case Study (Zapata Computing, archived)"
 [07]: https://www.goldmansachs.com/intelligence/pages/gs-research/euv-3.0/report.pdf "Europe Technology Hardware EUV 3.0 High NA a prime Digital Enabler for the next decade with deep competitive moat"

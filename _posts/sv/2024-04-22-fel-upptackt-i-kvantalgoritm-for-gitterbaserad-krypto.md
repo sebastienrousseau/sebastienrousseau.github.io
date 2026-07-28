@@ -1,58 +1,58 @@
 ---
-title: "Criptografía sobre retículos: un bug en el ataque LWE de Chen"
-subtitle: "La revisión por pares revela un fallo en el trabajo revolucionario de Chen"
-description: "Un bug en el algoritmo cuántico LWE de Yilei Chen ofrece un respiro temporal a la criptografía sobre retículos. Lo que esto significa para CRYSTALS-Kyber, Dilithium y la hoja de ruta PQC."
+title: "Kvantgitterkrypto: fel i Chens LWE-attack"
+subtitle: "Peer review avslöjar ett fel i Chens uppmärksammade arbete"
+description: "Ett fel i Yilei Chens kvant-LWE-algoritm ger gitterbaserad kryptografi ett tillfälligt andrum. Vad det betyder för CRYSTALS-Kyber, Dilithium och färdplanen för PQC."
 date: "April 22, 2024"
 language: "sv-SE"
 locale: "sv_SE"
 banner: "https://cloudcdn.pro/stocks/images/digital-nodes.webp"
-banner_alt: "Imagen generada con MidJourney: una red de nodos digitales en tonos rojos y azules."
-keywords: "criptografía postcuántica, NIST, estandarización PQC, Yilei Chen, algoritmo cuántico, criptografía sobre retículos, problema LWE, CRYSTALS-KYBER, CRYSTALS-Dilithium, criptografía resistente a lo cuántico"
+banner_alt: "Bild genererad med MidJourney: ett nätverk av digitala noder i röda och blå toner."
+keywords: "postkvantkryptografi, NIST, PQC-standardisering, Yilei Chen, kvantalgoritm, gitterbaserad kryptografi, LWE-problemet, CRYSTALS-KYBER, CRYSTALS-Dilithium, kvantresistent kryptografi"
 ---
 
-## El enigma cuántico: reevaluación de la estandarización NIST de criptografía postcuántica a la luz del algoritmo de Yilei Chen
+## Kvantgåtan: en omvärdering av NIST:s standardisering av postkvantkryptografi i ljuset av Yilei Chens algoritm
 
-A raíz de mi reciente artículo sobre los [desafíos de los algoritmos cuánticos para la criptografía sobre retículos][00], debo aportar una actualización sobre los últimos desarrollos relativos a [la investigación de Yilei Chen ⧉][01].
+Efter min nyligen publicerade artikel om [utmaningarna med kvantalgoritmer för gitterbaserad kryptografi][00] vill jag lämna en uppdatering om den senaste utvecklingen i [Yilei Chens forskning ⧉][01].
 
-En un giro inesperado, Yilei Chen, profesor adjunto en el Institute for Interdisciplinary Information Science (IIIS) de la Universidad Tsinghua, ha informado de que sus colegas Hongxun Wu y Thomas Vidick han descubierto independientemente un bug en su algoritmo cuántico en tiempo polinómico diseñado para resolver el problema Learning with Errors (LWE).
+I en oväntad vändning har Yilei Chen, biträdande professor vid Tsinghua-universitetets Institute for Interdisciplinary Information Science (IIIS), rapporterat att forskarkollegorna Hongxun Wu och Thomas Vidick oberoende av varandra har upptäckt ett fel i hans kvantalgoritm i polynomisk tid, utformad för att lösa problemet Learning with Errors (LWE).
 
-Este bug vuelve inoperante al algoritmo, y Chen ha reconocido que su enfoque no se sostiene como reivindicó inicialmente.
+Felet gör algoritmen obrukbar, och Chen har medgett att hans metod inte håller på det sätt han först hävdade.
 
-## El bug en el algoritmo cuántico de Chen
+## Felet i Chens kvantalgoritm
 
-El bug se ha encontrado en el paso 9 del algoritmo de Chen, y este ha declarado no saber cómo corregirlo. Este descubrimiento es un alivio para la comunidad criptográfica, ya que confirma que el problema LWE, componente crítico de los métodos de protección en criptografía postcuántica, sigue siendo seguro.
+Felet upptäcktes i steg 9 i Chens algoritm, och han har uppgett att han inte vet hur det ska åtgärdas. Upptäckten är en lättnad för den kryptografiska gemenskapen, eftersom den bekräftar att LWE-problemet, en kritisk komponent i postkvantkryptografins skyddsmetoder, förblir säkert.
 
-El artículo de Chen también examinaba otros problemas complejos sobre retículos, como el decisional shortest vector problem (GapSVP) y el shortest independent vector problem (SIVP), en factores de aproximación polinómicos. Aunque el bug en su algoritmo no afecta directamente a estos problemas, suscita interrogantes sobre la robustez de los algoritmos cuánticos contra la criptografía sobre retículos.
+Chens artikel undersökte även andra komplexa gitterproblem, såsom decisional shortest vector problem (GapSVP) och shortest independent vector problem (SIVP), inom polynomiska approximationsfaktorer. Även om felet i hans algoritm inte direkt påverkar dessa problem väcker det frågor om robustheten hos kvantalgoritmer för gitterbaserad kryptografi.
 
-Pero según [la página de Nigel Smart ⧉][02], el ataque cuántico propuesto contra LWE es defectuoso y no compromete los esquemas de criptografía sobre retículos como [Kyber ⧉][04], [Dilithium ⧉][05], [BGV ⧉][06] o [TFHE ⧉][07].
+Men enligt [Nigel Smarts sida ⧉][02] är den föreslagna kvantattacken mot LWE bristfällig och äventyrar inte gitterkryptografiska system som [Kyber ⧉][04], [Dilithium ⧉][05], [BGV ⧉][06] eller [TFHE ⧉][07].
 
-## Implicaciones para el proceso de estandarización NIST de criptografía postcuántica
+## Konsekvenser för NIST:s standardiseringsprocess för postkvantkryptografi
 
-La investigación de Chen ha suscitado indirectamente preocupaciones y dudas sobre el [proceso de estandarización NIST de criptografía postcuántica (PQC) ⧉][03] y la selección de los algoritmos criptográficos resistentes a lo cuántico.
+Chens forskning väckte indirekt oro och tvivel kring [NIST:s standardiseringsprocess för postkvantkryptografi (PQC) ⧉][03] och urvalet av kvantresistenta kryptografiska algoritmer.
 
-Los esquemas [CRYSTALS-KYBER](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html) y CRYSTALS-Dilithium, entre los finalistas del proceso de estandarización NIST PQC, son ejemplos de esquemas criptográficos sobre retículos que han sido rigurosamente probados y evaluados por su resistencia cuántica. Sin embargo, es crucial continuar probando y refinando estos esquemas para garantizar su seguridad y viabilidad a largo plazo.
+Systemen [CRYSTALS-KYBER](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html) och CRYSTALS-Dilithium, som hör till finalisterna i NIST:s PQC-standardiseringsprocess, är exempel på gitterbaserade kryptografiska system som har testats och utvärderats noggrant med avseende på kvantresistens. Det är dock avgörande att fortsätta testa och förfina dessa system för att säkerställa deras säkerhet och livskraft på lång sikt.
 
-El NIST, la comunidad criptográfica y las empresas deben permanecer vigilantes y continuar explorando fundamentos matemáticos alternativos para la criptografía postcuántica, con el fin de garantizar que un conjunto robusto y diverso de opciones de seguridad resistente a lo cuántico esté en su sitio.
+NIST, den kryptografiska gemenskapen och företagen måste förbli vaksamma och fortsätta utforska alternativa matematiska grundvalar för postkvantkryptografi, så att det finns en robust och mångsidig uppsättning alternativ för kvantresistent säkerhet på plats.
 
-## El futuro de la criptografía postcuántica
+## Framtiden för postkvantkryptografi
 
-El descubrimiento del bug en el algoritmo de Chen subraya el papel crítico de la revisión por pares en el proceso científico. También pone de manifiesto la necesidad de revisión instantánea, retroalimentación y debate.
+Upptäckten av felet i Chens algoritm understryker peer reviewens avgörande roll i den vetenskapliga processen. Den belyser också behovet av omedelbar granskning, återkoppling och debatt.
 
-La era cuántica ha comenzado, y la necesidad de desarrollar métodos criptográficos resistentes a lo cuántico exige medidas cooperativas a escala mundial para garantizar la seguridad de nuestra infraestructura digital frente a las crecientes capacidades de la computación cuántica y a la carrera por la supremacía cuántica.
+Kvanteran har inletts, och behovet av att utveckla kvantresistenta kryptografiska metoder kräver samordnade åtgärder på global nivå för att trygga säkerheten i vår digitala infrastruktur inför en allt kraftfullare kvantberäkning och kapplöpningen mot kvantöverlägsenhet.
 
-El proceso de estandarización NIST PQC es una etapa significativa en esta dirección, pero es solo un comienzo. El bug en el algoritmo de Chen es un recordatorio brutal de los desafíos e incertidumbres por venir, pero también sirve como llamada a la acción para que la comunidad criptográfica redoble sus esfuerzos y amplíe las fronteras de lo posible.
+NIST:s PQC-standardiseringsprocess är ett betydande steg i den riktningen, men den är bara en början. Felet i Chens algoritm är en skarp påminnelse om de utmaningar och den osäkerhet som ligger framför oss, men det är också en uppmaning till den kryptografiska gemenskapen att fördubbla sina ansträngningar och flytta fram gränserna för det möjliga.
 
-Es un desarrollo fascinante en el campo de la criptografía postcuántica, y será interesante ver cómo evoluciona el proceso de estandarización NIST PQC en respuesta a esta nueva información.
+Detta är en fascinerande utveckling inom postkvantkryptografin, och det ska bli intressant att se hur NIST:s PQC-standardiseringsprocess utvecklas till följd av denna nya information.
 
-## Conclusión
+## Slutsats
 
-El bug descubierto en el algoritmo cuántico de Yilei Chen para resolver el problema LWE atestigua la importancia de una revisión por pares rigurosa y de la colaboración en el desarrollo de la criptografía resistente a lo cuántico.
+Felet som upptäckts i Yilei Chens kvantalgoritm för att lösa LWE-problemet visar tydligt hur viktig noggrann peer review och samverkan är för utvecklingen av kvantresistent kryptografi.
 
-Aunque el bug ofrece un respiro temporal a la seguridad de los esquemas criptográficos sobre retículos, también recuerda la necesidad continuada de investigación y desarrollo en el campo de la criptografía postcuántica.
+Även om felet ger de gitterbaserade kryptografiska systemens säkerhet ett tillfälligt andrum, påminner det också om det fortsatta behovet av forskning och utveckling inom postkvantkryptografin.
 
-Mientras el NIST prosigue su proceso de estandarización PQC, la comunidad criptográfica debe permanecer proactiva y adaptativa, abrazando las nuevas ideas y enfoques para garantizar la seguridad a largo plazo de nuestro mundo digital frente a las crecientes capacidades de la computación cuántica.
+När NIST fortsätter sin PQC-standardiseringsprocess måste den kryptografiska gemenskapen förbli proaktiv och anpassningsbar och ta till sig nya idéer och angreppssätt för att trygga den långsiktiga säkerheten i vår digitala värld inför en allt kraftfullare kvantberäkning.
 
-## Referencias
+## Referenser
 
 - Sebastien Rousseau, (2024). [Quantum Algorithm Challenges Lattice-Based Cryptography][00].
 - Chen, Y. (2024). [Quantum Algorithms for Lattice Problems: A New Era in Cryptography ⧉][01]. Journal of Quantum Computing and Cryptography, 7(4), 112-135.

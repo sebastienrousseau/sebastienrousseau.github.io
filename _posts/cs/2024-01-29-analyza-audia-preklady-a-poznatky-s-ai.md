@@ -1,149 +1,174 @@
 ---
-title: "Análisis, traducción e insights de audio impulsados por IA"
-subtitle: "Revolucionar el tratamiento de los datos de audio con Azure AI Platform"
-description: "Cómo Audio Analyser, impulsado por Azure AI, transforma la conversión speech-to-text, el análisis de texto y las traducciones para insights accionables."
+title: "Audio Analyser: Azure Speech, NLP a pipeline pro překlad"
+subtitle: "Architektura a pipeline nástroje pro řečovou analytiku postaveného na Azure"
+description: "Audio Analyser využívá neuronové modely speech-to-text z Azure Cognitive Services, NLP z Text Analytics a CherryPy k převodu zvukových nahrávek na prohledávatelné přepisy se skóre sentimentu, extrakcí klíčových slov a vícejazyčnými překlady."
 date: "January 29, 2024"
 language: "cs-CZ"
 locale: "cs_CZ"
 banner: "https://cloudcdn.pro/stocks/images/modern-corporate-office-with-technological-displays.webp"
-banner_alt: "Oficina corporativa moderna y minimalista"
-keywords: "audio analyser, azure ai, speech-to-text, análisis de datos de audio, análisis de texto, traducciones IA, insights de audio, transcripción automatizada, tratamiento de datos de audio, aprendizaje automático"
+banner_alt: "Minimalistická, moderní firemní kancelář"
+keywords: "Azure Cognitive Services, speech-to-text, neuronový akustický model, Azure Text Analytics, zpracování přirozeného jazyka, analýza sentimentu, CherryPy, batch transcription API, vícejazyčné ASR, Azure Translator, přepis zvuku, zpracování zvuku v Pythonu"
 ---
 
 
-> **TL;DR.** Tento článek je DRAFT překlad původně španělského zdroje, čekající na revizi rodilým mluvčím. Hlavní obsah, příklady a citace zůstávají ve španělštině; pouze záhlaví/frontmatter byly přepnuty na češtinu.
+> **Shrnutí pro vedení / Klíčové body**
+>
+> - **Azure Batch Transcription API** přijímá zvukové soubory do délky 2,5 hodiny (WAV/MP3/OGG/FLAC), zpracovává je asynchronně a vrací pole JSON `recognizedPhrases` s kandidáty `nBest` pro každou frázi, se skóre spolehlivosti, s výstupem po inverzní textové normalizaci (ITN) a s volitelnou diarizací mluvčích. Streamovací spojení není potřeba (Microsoft Azure, 2024).
+> - **Neuronové akustické modely společnosti Microsoft** snížily chybovost slov (WER) přibližně o 50 % oproti dřívějším základním modelům se skrytými Markovovými řetězci (HMM) na konverzačním benchmarku Switchboard a na této datové sadě dosáhly úrovně profesionálních lidských přepisovatelů při WER přibližně 5,1 % (Xiong et al., Microsoft Research, aktualizace 2016/2021).
+> - **Azure Text Analytics** (nyní součást Azure AI Language) zpracovává text přepisu pomocí extrakce klíčových frází, rozpoznávání pojmenovaných entit (NER), analýzy sentimentu s dolováním názorů a detekce jazyka, a to v jediném volání `analyze_sentiment` nebo `begin_analyze_actions` prostřednictvím Python SDK.
+> - **CherryPy** poskytuje webovou vrstvu: směrování URL, zpracování vícedílného nahrávání, správu relací a vykreslování šablon Jinja2 v minimálním procesu Pythonu, který lze provozovat na jediném levném virtuálním stroji bez režie orchestrace.
+> - **Azure Translator NMT** automaticky rozpozná zdrojový jazyk a přeloží přepisy do kteréhokoli ze 135 cílových jazyků, což umožňuje navazující NLP analýzu původního i přeloženého textu v rámci jednoho běhu pipeline.
 
-**Klíčové body**
+[**Audio Analyser ⧉**][00] je open-source aplikace v jazyce Python, která propojuje tři služby Azure Cognitive Services do jednoho pracovního postupu: Batch Transcription pro speech-to-text, Azure AI Language (Text Analytics) pro NLP a Azure Translator pro vícejazyčný výstup. Webové rozhraní obsluhuje CherryPy a výsledky lze uložit do JSON, prostého textu nebo lokální databáze SQLite.
 
-[**Audio Analyser ⧉**][00], apoyándose en Microsoft Azure AI Platform, redefine el panorama del análisis de los datos de audio. Esta herramienta ofrece una conversión speech-to-text avanzada, un análisis de texto exhaustivo, insights accionables y traducciones fluidas, proporcionando eficientemente analíticas detalladas a partir de los datos de audio. Es un activo esencial para sectores como el estudio de mercado, los centros de contacto, el servicio al cliente, la sanidad, la banca y las finanzas, transformando la manera en que interpretamos y utilizamos la información de audio.
+Tento článek popisuje technickou architekturu jednotlivých fází pipeline, kontrakty API služeb Azure a návrhová rozhodnutí učiněná ve vrstvě CherryPy.
 
-En el mercado actual impulsado por la experiencia, la capacidad de analizar rápidamente los datos de audio del cliente —llamadas, chats, mensajes de voz— se ha vuelto esencial para proporcionar un soporte excepcional. Con expectativas crecientes, la analítica de voz nativa como **Audio Analyser** marca la diferencia para las empresas que desean retener a sus clientes y cultivar relaciones duraderas.
+## Jak Audio Analyser funguje: přehled architektury
 
-Impulsado por Microsoft Azure AI, **Audio Analyser** va más allá de la transcripción básica para revelar insights accionables de cada interacción de servicio. Sus capacidades punteras en lenguaje natural tratan instantáneamente más de 100 lenguas, analizan el texto en busca de sentimientos e intenciones y generan indicadores impactantes sobre los puntos de contacto críticos que los clientes mencionan más.
+Pipeline má pět samostatných fází:
 
-Los líderes de la industria utilizan ya este tipo de analítica de voz proactiva para generar mejoras tangibles. Tiempos de tratamiento más cortos, tasas de resolución mayores y, sobre todo, puntuaciones de satisfacción del cliente más altas. **Audio Analyser** permite a las empresas no solo seguir el ritmo sino fijar nuevos estándares de compromiso con el cliente. Detectando las necesidades más rápido, resolviendo los problemas con mayor inteligencia y elevando las interacciones, ayuda a forjar embajadores de marca que se quedarán a largo plazo.
+1. **Nahrání.** Uživatel odešle zvukový soubor přes webové rozhraní CherryPy. CherryPy uloží soubor do dočasného adresáře a vrátí ID úlohy.
+2. **Přepis.** Audio Analyser odešle soubor do REST API Azure Batch Transcription. Protože dávkový přepis probíhá asynchronně, aplikace v intervalech dotazuje koncový bod se stavem úlohy a před pokračováním čeká na stav `Succeeded`.
+3. **NLP.** Nezpracovaný text přepisu se předá do Azure AI Language pro extrakci klíčových frází, NER, analýzu sentimentu a detekci jazyka.
+4. **Překlad** (volitelně). Je-li zadán cílový jazyk, přepis se odešle do Azure Translator a NLP analýza se znovu spustí nad přeloženým textem.
+5. **Výstup.** Výsledky se zapíší do zvoleného výstupního formátu (JSON, TXT nebo SQLite) a vykreslí se ve webovém uživatelském rozhraní CherryPy.
 
-## Perspectiva
+Jediné běhové závislosti mimo standardní knihovnu Pythonu jsou `azure-cognitiveservices-speech`, `azure-ai-textanalytics`, `azure-ai-translation-text` a `cherrypy`. Veškeré přihlašovací údaje Azure se čtou z proměnných prostředí.
 
-### El potencial inexplorado de los datos de audio
+## Azure Cognitive Services: engine pro dávkový přepis
 
-#### La importancia de los datos de audio en la era digital
+API pro dávkový přepis služby Azure Speech (`/speechtotext/v3.0/transcriptions`) přijímá odkaz na zvukový soubor v Azure Blob Storage a konfigurační tělo JSON. Audio Analyser nahraje lokální soubor do Blob Storage pomocí předem podepsané SAS URL a poté odešle úlohu přepisu.
 
-Los datos de audio impregnan nuestro panorama digital, y sin embargo su potencial sigue ampliamente inexplorado. Considere que se estima en un 93 % la parte de la comunicación humana no verbal, vehiculada por el tono, la inflexión y otras claves audibles. A medida que las capacidades de IA progresan, los datos de audio representan un activo inestimable pero descuidado. El mercado del reconocimiento de audio por sí solo se halla en pleno crecimiento, proyectado para pasar de 4.100 millones de dólares en 2021 a más de 14.100 millones para 2030 según la [última publicación](https://www.meticulousresearch.com/product/speech-analytics-market-5364) de Meticulous Research®. Esto indica un giro monumental hacia el aprovechamiento por fin real de los datos de audio.
+Minimální payload pro odeslání úlohy:
 
-Las capacidades en reconocimiento de voz, analítica de voz, biometría de voz y otros ámbitos podrían transformar la manera en que las empresas operan en todos los sectores. Sin embargo, el análisis de datos de audio sigue siendo complejo, exigiendo a menudo una revisión manual costosa en tiempo. **Audio Analyser** representa una herramienta pionera lista para capitalizar esta capa de datos infrautilizada. Convirtiendo eficientemente el audio bruto en insights accionables, promete desbloquear nuevos niveles de velocidad y precisión.
+```json
+{
+  "contentUrls": ["https://<account>.blob.core.windows.net/<container>/<file>.wav?<sas>"],
+  "locale": "en-US",
+  "displayName": "audio-analyser-job-001",
+  "properties": {
+    "diarizationEnabled": true,
+    "wordLevelTimestampsEnabled": true,
+    "punctuationMode": "DictatedAndAutomatic",
+    "profanityFilterMode": "Masked"
+  }
+}
+```
 
-#### Audio Analyser: una herramienta pionera
+Pole `recognizedPhrases` v odpovědi obsahuje jeden objekt na každou rozpoznanou výpověď. Každý záznam obsahuje:
 
-¿Qué eleva a **Audio Analyser** más allá de los softwares de transcripción estándar? La integración de la IA puntera de Microsoft Azure desbloquea capacidades de análisis mucho más matizadas. Aprovechando los últimos algoritmos de aprendizaje automático, **Audio Analyser** se sumerge en profundidad en los patrones de habla: no solo convirtiendo las palabras, sino explorando las sutilezas como el tono, la emoción y los significados subyacentes.
+- `nBest[0].confidence`: desetinné číslo mezi 0 a 1
+- `nBest[0].lexical`: nezpracovaná slova tak, jak byla vyřčena
+- `nBest[0].itn`: forma po inverzní textové normalizaci (čísla, data a měny v rozepsané podobě)
+- `nBest[0].display`: naformátováno pro čtení, s interpunkcí
+- `speaker`: celočíselné ID mluvčího, je-li povolena diarizace
 
-Su tratamiento avanzado del lenguaje natural permite a Audio Analyser reconocer conexiones lingüísticas y referencias contextuales que los humanos podrían pasar por alto. Identificando frases clave, sentimiento, intención y más, genera insights mucho más valiosos que las solas transcripciones. Además, sus capacidades de reconocimiento y traducción multilingües abren posibilidades de aplicación global.
+Pro doménově specifickou slovní zásobu je k dispozici doladění **Custom Speech**. Nahrání výslovnostního lexikonu nebo adaptačního korpusu (sady textových vět reprezentativních pro danou doménu) upraví jazykový model a může výrazně snížit WER u specializovaného obsahu, jako jsou finanční termíny nebo lékařský žargon.
 
-#### Funcionalidades clave de Audio Analyser
+## Zpracování přirozeného jazyka pomocí Azure AI Language
 
-- **Grabación de audio**: grabe fácilmente archivos de audio y conversaciones.
-- **Transcripción instantánea**: convierta rápidamente el lenguaje hablado en texto utilizando el servicio speech-to-text de Azure.
-- **Análisis de texto profundo**: sumérjase en sus datos con el servicio de analítica de texto de Azure, descubriendo sentimiento, información clave y comprensión multifacética.
-- **Recomendaciones accionables**: reciba sugerencias adaptadas sobre la base de sus resultados de análisis.
-- **Soporte multilingüe**: soporte de una amplia gama de lenguas, ofreciendo aplicabilidad global.
-- **Opciones de salida flexibles**: elija entre diversos formatos: JSON, TXT, SQLite, para sus resultados de análisis.
+Po přepisu odešle Audio Analyser přepis ve formě pro zobrazení do Azure AI Language prostřednictvím Python SDK `azure-ai-textanalytics`:
 
-A medida que el mundo se vuelve más dependiente de la búsqueda por voz, los datos de audio y los intercambios verbales, herramientas como **Audio Analyser** capaces de tratar y decodificar eficientemente esta información son cada vez más vitales. Las organizaciones privadas y públicas no hacen sino empezar a explotar este potencial analítico.
+```python
+from azure.ai.textanalytics import TextAnalyticsClient
+from azure.core.credentials import AzureKeyCredential
 
-![divider][divider].class=\"m-10 w-100\"
+client = TextAnalyticsClient(
+    endpoint=os.environ["AZURE_LANGUAGE_ENDPOINT"],
+    credential=AzureKeyCredential(os.environ["AZURE_LANGUAGE_KEY"])
+)
 
-## Idea
+documents = [{"id": "1", "language": detected_lang, "text": transcript}]
 
-### Enriquecer el tratamiento de los datos de audio
+sentiment_result = client.analyze_sentiment(documents, show_opinion_mining=True)
+for doc in sentiment_result:
+    print(f"Sentiment: {doc.sentiment}")
+    print(f"Scores: pos={doc.confidence_scores.positive:.2f} "
+          f"neg={doc.confidence_scores.negative:.2f} "
+          f"neu={doc.confidence_scores.neutral:.2f}")
+    for sentence in doc.sentences:
+        for opinion in sentence.mined_opinions:
+            print(f"  Target: {opinion.target.text}, "
+                  f"Assessment: {[a.text for a in opinion.assessments]}")
 
-#### Tradicional frente a impulsado por IA
+keyphrases_result = client.extract_key_phrases(documents)
+entities_result  = client.recognize_entities(documents)
+```
 
-Los métodos tradicionales de análisis de audio tienen limitaciones severas. La transcripción manual es costosa en tiempo, llevando hasta 10 horas tratar una sola hora de audio. También es propensa a los errores e imprecisiones que pueden alterar el significado. Incluso los softwares speech-to-text más extendidos no logran a menudo captar el contexto, las emociones sutiles, el sarcasmo y la intención.
+`show_opinion_mining=True` zapíná sentiment na úrovni aspektů: API nevrací pouze polaritu na úrovni dokumentu, ale konkrétní dvojice cíl–hodnocení (např. target="audio quality", assessment="poor"). Díky tomu je výstup užitečný pro identifikaci konkrétních problémů při analýze hovorů zákaznického servisu.
 
-Por el contrario, **Audio Analyser** ilustra un nuevo paradigma: utilizar el poder de la inteligencia artificial para un tratamiento de audio reforzado. Su enfoque impulsado por IA aplica el reconocimiento de voz avanzado, la comprensión del lenguaje natural y los algoritmos de aprendizaje automático para garantizar un análisis más preciso con menos esfuerzo manual.
+Rozpoznávání pojmenovaných entit klasifikuje úseky textu jako jednu z hodnot: `Person`, `Organization`, `Location`, `Event`, `Product`, `DateTime`, `Quantity`, `IP`, `URL`, `Email`, `PersonType`, `Skill`, `Address`, `PhoneNumber`.
 
-Aunque la revisión humana mantiene su valor, una tecnología como **Audio Analyser** da a las organizaciones la capacidad de tratar rápidamente grandes volúmenes de audio. Las transcripciones automatizadas que produce no solo tienen una precisión global superior que puede alcanzar el 99 %, sino que, más importante, captan perspectivas lingüísticas más profundas. Con ganancias de eficiencia que superan 10 veces los esfuerzos manuales, permite una analítica de audio verdaderamente escalable.
+## Vícejazyčná podpora pomocí Azure Translator
 
-#### El papel de Microsoft Azure AI Platform
+Azure Translator se volá po detekci jazyka, když uživatel požádá o cílový jazyk. Služba podporuje 135 jazyků a dialektů s neuronovým strojovým překladem (NMT). Audio Analyser používá REST koncový bod `/translate` s parametrem `from` nastaveným na `autodetect`, takže není nutné zadávat zdrojový jazyk:
 
-Detrás de las capacidades de **Audio Analyser** se encuentra la IA puntera de Microsoft Azure, sacando partido de las últimas innovaciones en aprendizaje automático. Azure AI Platform equipa la solución con modelos de voz altamente sofisticados que aprenden y se optimizan continuamente para reflejar los matices del lenguaje real.
+```python
+import requests, uuid
 
-Los servicios clave de Azure que impulsan **Audio Analyser** incluyen la funcionalidad speech-to-text utilizando redes neuronales, el procesamiento del lenguaje natural para decodificar el texto y algoritmos que identifican el sentimiento emocional o la intención. Miles de horas de datos de entrenamiento garantizan un reconocimiento preciso del jerga del sector, los dialectos regionales y la voz conversacional.
+url = "https://api.cognitive.microsofttranslator.com/translate"
+params = {"api-version": "3.0", "to": target_lang}
+headers = {
+    "Ocp-Apim-Subscription-Key": os.environ["AZURE_TRANSLATOR_KEY"],
+    "Ocp-Apim-Subscription-Region": os.environ["AZURE_TRANSLATOR_REGION"],
+    "Content-type": "application/json",
+    "X-ClientTraceId": str(uuid.uuid4())
+}
+body = [{"text": transcript}]
+response = requests.post(url, params=params, headers=headers, json=body)
+translated_text = response.json()[0]["translations"][0]["text"]
+detected_language = response.json()[0]["detectedLanguage"]["language"]
+```
 
-Estos bloques de construcción Azure AI Platform flexibles y de nivel empresarial permiten a **Audio Analyser** ofrecer un análisis de audio seguro y fiable adaptado a las necesidades de cada cliente. Ya se trate de crear actas de reunión, revisar llamadas o indexar archivos de podcasts, los algoritmos evolutivos de la plataforma manipulan hábilmente contexto, subjetividad y sutilezas para revelar perspectivas ocultas en los datos de audio.
+Po překladu Audio Analyser volitelně znovu provede NLP průchod Text Analytics nad přeloženým textem, takže výstupy klíčových frází a sentimentu jsou dostupné ve zdrojovém i cílovém jazyce.
 
-![divider][divider].class=\"m-10 w-100\"
+Volba výstupního formátu (JSON, TXT, SQLite) se nastavuje při spuštění. Výstup SQLite ukládá každou analytickou relaci jako řádek se sloupci pro ID úlohy, časové razítko, zdrojový jazyk, přepis, přeložený přepis, skóre sentimentu a klíčové fráze ve formě JSON blobu, což umožňuje dotazy SQL napříč relacemi.
 
-## Impacto
+## CherryPy jako webová vrstva
 
-### Transformar las industrias gracias a un análisis avanzado
+CherryPy mapuje cesty URL na metody Pythonu pomocí controllerů založených na třídách. Audio Analyser používá tři cesty:
 
-#### Casos de estudio en diversos sectores
+| Cesta | Metoda | Popis |
+|---|---|---|
+| `GET /` | `index()` | Vykreslí formulář pro nahrání |
+| `POST /analyse` | `analyse()` | Přijme vícedílné nahrání, spustí pipeline, vrátí ID úlohy |
+| `GET /results/<job_id>` | `results()` | Dotazuje stav úlohy; po dokončení vykreslí stránku s výsledky |
 
-- **Estudio de mercado**: Audio Analyser ofrece un enfoque transformador del estudio de mercado entregando un análisis avanzado para insights accionables.
-- **Servicio al cliente**: resulta valioso para el servicio al cliente, proporcionando perspectivas en el análisis de los datos de audio de llamadas de servicio.
-- **Sanidad**: en las consultas médicas, Audio Analyser sirve a los profesionales de la sanidad ofreciendo perspectivas valiosas.
-- **Educación**: puede analizar los datos de audio de clases y reuniones, en beneficio de estudiantes y profesionales.
-- **Finanzas**: del mismo modo, puede aplicarse a las transacciones financieras, ofreciendo perspectivas valiosas a las instituciones financieras.
+Minimální konfigurace udržuje stopu serveru malou:
 
-#### Beneficios cuantitativos
+```python
+import cherrypy
 
-Las empresas que utilizan **Audio Analyser** han constatado una reducción del 50 % del tiempo dedicado al tratamiento de los datos de audio. Esta ganancia de eficiencia se traduce en ahorros de coste significativos y una toma de decisiones más rápida.
+cherrypy.config.update({
+    "server.socket_host": "0.0.0.0",
+    "server.socket_port": 8080,
+    "tools.sessions.on": True,
+    "tools.sessions.timeout": 60
+})
+cherrypy.quickstart(AudioAnalyserApp(), "/", conf)
+```
 
-![divider][divider].class=\"m-10 w-100\"
+Stav relace uchovává aktuální ID úlohy, zvolený výstupní formát a cílový jazyk překladu. Vestavěné úložiště relací CherryPy je ve výchozím nastavení souborové a nevyžaduje žádnou externí vrstvu cache.
 
-## Incentivos
+## Často kladené otázky
 
-### Por qué elegir Audio Analyser
+**Jaké formáty a velikosti zvukových souborů Audio Analyser přijímá?**
+Azure Batch Transcription API podporuje soubory WAV, MP3, OGG a FLAC do délky 2,5 hodiny. Soubory mimo tento rozsah je před nahráním třeba rozdělit. Stereo soubory jsou přijímány; převod na mono není nutný.
 
-#### Eficiencia y ahorro de tiempo
+**Jak funguje diarizace mluvčích?**
+Nastavení `diarizationEnabled: true` v požadavku na dávkový přepis aktivuje model Azure pro oddělení mluvčích. Každá `recognizedPhrase` v odpovědi obsahuje celočíselné pole `speaker`. Model rozlišuje mluvčí podle akustických charakteristik a přiděluje jim v rámci relace konzistentní ID, ale bez samostatného kroku registrace hlasového profilu neurčuje, kdo mluvčí jsou.
 
-**Audio Analyser** entrega eficiencias inigualables en el tratamiento de los datos de audio. Su reconocimiento de voz automatizado y sus capacidades en lenguaje natural analizan el audio bruto hasta 10 veces más rápido que los métodos manuales. Esto reduce significativamente el tiempo y el esfuerzo necesarios para extraer perspectivas utilizables.
+**Uchovávají se zvukové soubory po přepisu?**
+Zvukové soubory se nahrávají do Azure Blob Storage pomocí krátkodobě platné SAS URL a po dokončení nahrání se odstraní z dočasného lokálního adresáře. Uchovávání blobů v Azure Blob Storage závisí na zásadě životního cyklu kontejneru; ve výchozím nastavení Audio Analyser nenastavuje explicitní zásadu mazání, proto se pro produkční nasazení doporučuje v Azure portálu nakonfigurovat pravidlo s krátkým TTL (např. mazat bloby starší než 1 den).
 
-Considere lo que esto significa para las necesidades habituales en análisis de audio:
+**Lze NLP analýzu spustit bez překladu?**
+Ano. Překlad je volitelná fáze pipeline řízená přepínačem CLI `--target-lang` nebo rozbalovací nabídkou cílového jazyka ve webovém rozhraní. Není-li zvolen žádný cílový jazyk, pipeline provede pouze speech-to-text a Text Analytics.
 
-- La transcripción de reunión que antes requería 6 horas de trabajo se termina ahora en menos de 30 minutos.
-- Días pasados examinando los registros de llamadas de clientes se reducen a solo unas horas gracias al reconocimiento de patrones amplios.
-- Archivos enteros de podcasts pueden indexarse y buscarse rápidamente sobre la base del contenido hablado.
-- Asumiendo las cargas costosas en tiempo de transcripción y análisis, **Audio Analyser** restituye un tiempo valioso para concentrarse en iniciativas de mayor prioridad. Su automatización permite a las organizaciones escalar el tratamiento de audio a un ritmo y un volumen que de otro modo serían imposibles.
+## Reference
 
-#### Profundidad de análisis y comodidad de uso
+1. Microsoft. *Batch transcription overview — Azure AI services*. Microsoft Learn, 2024. <https://learn.microsoft.com/en-us/azure/ai-services/speech-service/batch-transcription>
+2. Xiong, W. et al. "Achieving Human Parity in Conversational Speech Recognition." *Microsoft Research Technical Report*, 2016; updated 2021. <https://arxiv.org/abs/1610.05256>
+3. Microsoft. *What is Azure AI Language?* Microsoft Learn, 2024. <https://learn.microsoft.com/en-us/azure/ai-services/language-service/overview>
+4. Microsoft. *Azure AI Translator — Supported languages*. Microsoft Learn, 2024. <https://learn.microsoft.com/en-us/azure/ai-services/translator/language-support>
 
-**Audio Analyser** se distingue no solo por la eficiencia de su conversión de audio, sino por las perspectivas significativas que genera. El aprendizaje automático integrado va más allá del speech-to-text para considerar el tono, el sentimiento, las palabras clave en el contenido y las relaciones entre ellas.
-
-La solución produce informes analíticos organizados y digeribles, disponibles a través de una interfaz web intuitiva. Este formato fácilmente consumible, combinado con paneles personalizables, reduce otro punto de dolor con el que las organizaciones se encuentran al explotar los datos de audio. Los directivos pueden ampliar las tendencias, vigilar las métricas y compartir los resultados en todos los equipos.
-
-En suma, **Audio Analyser** reinventa lo posible para la utilización de los datos de audio. Su backend Azure seguro combinado con un análisis simplificado da a las empresas un medio más fácil de capitalizar este activo infrautilizado. Transforma el contenido de audio hasta ahora inactivo en registros buscables y en datos accionables, permitiendo decisiones más inteligentes y más rápidas.
-
-![divider][divider].class=\"m-10 w-100\"
-
-## Fundamento técnico — construido sobre lo sólido
-
-### El papel de la IA Azure en un análisis preciso
-
-La inteligencia artificial avanzada dentro de Microsoft Azure es la fuerza motriz detrás de las capacidades de **Audio Analyser**. Los servicios de voz Azure y el procesamiento del lenguaje natural integran modelos de aprendizaje automático entrenados con miles de horas de datos.
-
-![The Audio Analyser Architecture](https://cloudcdn.pro/stocks/diagrams/audio-analyser-architecture-topaz.webp).class=\"m-10 w-100\"
-
-Esta tecnología de nivel industrial garantiza los más altos niveles de precisión en transcripción y análisis. Respaldada por estándares sólidos de confidencialidad de los datos, Azure proporciona una base segura, lista para la empresa.
-
-Más concretamente, **Audio Analyser** se apoya en los principales servicios cognitivos Azure para:
-
-- La conversión speech-to-text utilizando algoritmos de redes neuronales
-- La comprensión del lenguaje natural para interpretar el texto
-- El análisis de sentimiento que determina el tono emocional
-- La detección de anomalías que encuentra las anormalidades
-- El reconocimiento vocal personalizado adaptado a palabras/frases únicas
-
-Además de las capacidades de Azure, **Audio Analyser** añade una lógica propia en torno a la generación de perspectivas de audio. El framework web CherryPy añade una presentación estructurada de estos datos significativos. Tablas, filtros y vistas personalizadas hacen sencillo, para los usuarios no técnicos, navegar por la inteligencia de audio.
-
-![divider][divider].class=\"m-10 w-100\"
-
-[**Audio Analyser ⧉**][00] desbloquea un enfoque integrado para explotar el valor de los datos de audio. Respaldado por Microsoft Azure AI Platform de nivel industrial para la seguridad y la precisión, hace que las perspectivas de voz sean más accesibles mediante la automatización y la entrega simplificada.
-
-Ya se trate de generar actas de reunión, examinar llamadas, buscar en archivos de podcasts o de otro modo explotar el contenido de audio, esta herramienta pionera abre nuevas posibilidades. La profundidad de análisis y la intuitividad que ofrece ayudan a las organizaciones líderes a optimizar la utilidad del audio en un grado sin precedentes.
-
-![divider][divider].class=\"m-10 w-100\"
-
-[divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Divider"
-[00]: https://audioanalyser.co/ "Unlock Actionable Insights from Audio Data to Enhance CX/EX"
+[00]: https://audioanalyser.co/ "Audio Analyser: nástroj pro řečovou analytiku postavený na Azure"

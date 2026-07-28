@@ -1,145 +1,142 @@
 ---
-title: "Estado de la IA y la computación cuántica en la banca: revisión 2023"
-subtitle: "Configurar el futuro de la banca: IA, computación cuántica, modelos de código abierto y panorama regulatorio"
-description: "Explorar el panorama tecnológico 2023: IA y computación cuántica revolucionando la banca, auge de los modelos de código abierto, regulaciones y gobernanza en evolución."
+title: "สถานะของ AI และการประมวลผลควอนตัมในธนาคาร: บททบทวนปี 2023"
+subtitle: "กำหนดอนาคตของธนาคาร: AI การประมวลผลควอนตัม โมเดลโอเพนซอร์ส และกรอบการกำกับดูแล"
+description: "สำรวจเทคโนโลยีแห่งปี 2023: AI และการประมวลผลควอนตัมที่เปลี่ยนแปลงธนาคาร การเติบโตของโมเดลโอเพนซอร์ส และกฎระเบียบกับการกำกับดูแลที่พัฒนาต่อเนื่อง"
 date: "December 18, 2023"
 language: "th-TH"
 locale: "th_TH"
+hreflang: "th"
 banner: "https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp"
-banner_alt: "Estado de la IA y la computación cuántica en la banca: revisión 2023"
-keywords: "IA en la banca, computación cuántica, tecnología financiera, IA de código abierto, gestión del riesgo, seguridad cuántica, regulación de la IA, ética de la IA, gobernanza de la IA, innovación bancaria"
+banner_alt: "สถานะของ AI และการประมวลผลควอนตัมในธนาคาร: บททบทวนปี 2023"
+keywords: "AI ในธนาคาร, การประมวลผลควอนตัม, เทคโนโลยีทางการเงิน, AI โอเพนซอร์ส, การบริหารความเสี่ยง, ความปลอดภัยควอนตัม, การกำกับดูแล AI, จริยธรรม AI, ธรรมาภิบาล AI, นวัตกรรมธนาคาร"
 ---
 
 
-> **TL;DR.** บทความนี้เป็น DRAFT แปลจากต้นฉบับภาษาสเปน รอการตรวจสอบโดยเจ้าของภาษา เนื้อหาหลัก ตัวอย่าง และการอ้างอิงยังคงเป็นภาษาสเปน เฉพาะ frontmatter เท่านั้นที่ถูกเปลี่ยนเป็นภาษาไทย
+## มุมมองเชิงลึก
 
-**ประเด็นสำคัญ**
+ในปี 2023 จุดบรรจบระหว่าง **ปัญญาประดิษฐ์ (AI)** และ **การประมวลผลควอนตัม (QC)** ส่งผลกระทบอย่างลึกซึ้งต่อ **อุตสาหกรรมธนาคารและการเงิน** เทคโนโลยีเหล่านี้เปลี่ยนแปลงวิธีการดำเนินงานของสถาบันการเงินอย่างมีนัยสำคัญ โดยส่งผลต่อการชำระเงิน การบริหารความเสี่ยง และความมั่นคงปลอดภัยไซเบอร์
 
-## Perspectiva
-
-En 2023, la intersección de la **inteligencia artificial (IA)** y la **computación cuántica (QC)** ha impactado profundamente en la **industria bancaria y financiera**. Estas tecnologías han revolucionado la manera en que operan las instituciones financieras, impactando significativamente los pagos, la gestión del riesgo y la ciberseguridad.
-
-Este artículo discute el impacto de los **modelos de IA de código abierto**, la **computación cuántica en seguridad transaccional** y las **regulaciones y la gobernanza** sobre la banca y las finanzas.
+บทความนี้พิจารณาผลกระทบของ **โมเดล AI โอเพนซอร์ส**, **QC ในความปลอดภัยของธุรกรรม** และ **กฎระเบียบกับการกำกับดูแลต่อธนาคารและการเงิน**
 
 ![divider][divider].class=\"m-10 w-100\"
 
-## La importancia de la IA y la computación cuántica en la industria bancaria
+## ความสำคัญของ AI และการประมวลผลควอนตัมในอุตสาหกรรมธนาคาร
 
-La industria bancaria atraviesa una transformación profunda, impulsada por la convergencia de la IA y la computación cuántica. Estas tecnologías revolucionarias están remodelando el sector de los servicios financieros, introduciendo niveles sin precedentes de eficiencia, ahorros de coste y experiencias de cliente reforzadas.
+อุตสาหกรรมธนาคารกำลังเปลี่ยนแปลงอย่างลึกซึ้ง โดยได้รับแรงขับเคลื่อนจากการมาบรรจบกันของปัญญาประดิษฐ์ (AI) และการประมวลผลควอนตัม (QC) เทคโนโลยีเหล่านี้กำลังปรับโครงสร้างภาคบริการทางการเงินใหม่ นำมาซึ่งประสิทธิภาพ การประหยัดต้นทุน และประสบการณ์ลูกค้าที่ดีขึ้นในระดับที่ไม่เคยมีมาก่อน
 
-### Crecimiento fulgurante del mercado del software de IA: una visualización
+### รายได้ที่พุ่งสูงของตลาดซอฟต์แวร์ AI: การแสดงภาพการเติบโต
 
 ![AI Software Market's Surging Revenue: A Visualization of Growth][21].class=\"img-fluid w-100 clearfix fade-in\"
 
-El mercado del software de IA conoce una trayectoria de crecimiento notable, con una facturación anual proyectada en unos **asombrosos 126.000 millones de dólares para 2025**.
+ตลาดซอฟต์แวร์ AI กำลังเติบโตในเส้นทางที่โดดเด่น โดยคาดการณ์ว่ารายได้ต่อปีจะสูงถึง **1.26 แสนล้านดอลลาร์สหรัฐภายในปี 2025**
 
-Esta visualización pone de manifiesto el crecimiento impresionante del mercado de 2018 a 2025, subrayando la demanda creciente de soluciones impulsadas por IA en diversas industrias.
+ภาพนี้แสดงการเติบโตของตลาดตั้งแต่ปี 2018 ถึง 2025 และเน้นให้เห็นความต้องการโซลูชันที่ขับเคลื่อนด้วย AI ที่เพิ่มขึ้นในหลายอุตสาหกรรม
 
-### El poder de la IA en la banca
+### พลังของ AI ในธนาคาร
 
-Los **algoritmos de IA** han demostrado capacidades notables para analizar vastas cantidades de datos, identificar patrones y tomar decisiones informadas. Esta capacidad resulta inestimable para los bancos en diversos aspectos de sus operaciones.
+**อัลกอริทึม AI** แสดงให้เห็นความสามารถในการวิเคราะห์ข้อมูลปริมาณมหาศาล ระบุรูปแบบ และตัดสินใจบนพื้นฐานของข้อมูล ความสามารถนี้มีคุณค่าอย่างยิ่งต่อธนาคารในหลายด้านของการดำเนินงาน
 
-- **Evaluación de riesgos**: los sistemas de gestión de riesgos impulsados por IA pueden analizar datos financieros complejos para evaluar la solvencia, identificar fraude potencial y mitigar riesgos financieros. Esto permite a los bancos tomar decisiones de préstamo mejor informadas y proteger su capital.
+- **การประเมินความเสี่ยง**: ระบบบริหารความเสี่ยงที่ขับเคลื่อนด้วย AI สามารถวิเคราะห์ข้อมูลทางการเงินที่ซับซ้อนเพื่อประเมินความน่าเชื่อถือด้านเครดิต ระบุการฉ้อโกงที่อาจเกิดขึ้น และลดความเสี่ยงทางการเงิน สิ่งนี้ช่วยให้ธนาคารตัดสินใจปล่อยสินเชื่อได้อย่างมีข้อมูลมากขึ้นและปกป้องเงินทุนของตน
 
-- **Procesos de aprobación de préstamos**: la IA puede racionalizar los procesos de aprobación, reduciendo los tiempos de respuesta y mejorando la satisfacción del cliente. Al automatizar tareas y aprovechar el análisis predictivo, los bancos pueden tramitar las solicitudes más eficientemente y con mayor rapidez.
+- **กระบวนการอนุมัติสินเชื่อ**: AI สามารถทำให้กระบวนการอนุมัติสินเชื่อคล่องตัวขึ้น ลดระยะเวลาดำเนินการและเพิ่มความพึงพอใจของลูกค้า ด้วยการทำงานอัตโนมัติและการใช้การวิเคราะห์เชิงพยากรณ์ ธนาคารสามารถประมวลผลคำขอได้อย่างมีประสิทธิภาพและรวดเร็วยิ่งขึ้น
 
-- **Optimización de carteras de inversión**: la IA puede analizar las tendencias de mercado, los factores de riesgo y los objetivos de inversión individuales para optimizar las carteras. Esto puede ayudar a los clientes a alcanzar sus objetivos financieros al tiempo que gestionan eficazmente su apetito por el riesgo.
+- **การปรับพอร์ตการลงทุนให้เหมาะสม**: AI สามารถวิเคราะห์แนวโน้มตลาด ปัจจัยความเสี่ยง และเป้าหมายการลงทุนของแต่ละบุคคลเพื่อปรับพอร์ตการลงทุนให้เหมาะสม สิ่งนี้ช่วยให้ลูกค้าบรรลุเป้าหมายทางการเงินขณะที่บริหารระดับความเสี่ยงที่ยอมรับได้อย่างมีประสิทธิภาพ
 
-- **Detección de fraude**: los algoritmos de IA pueden detectar patrones en los datos transaccionales susceptibles de indicar una actividad fraudulenta. Esto permite a los bancos señalar las transacciones sospechosas y tomar las acciones apropiadas para prevenir pérdidas.
+- **การตรวจจับการฉ้อโกง**: อัลกอริทึม AI สามารถตรวจจับรูปแบบในข้อมูลธุรกรรมที่อาจบ่งชี้กิจกรรมฉ้อโกง สิ่งนี้ช่วยให้ธนาคารทำเครื่องหมายธุรกรรมที่น่าสงสัยและดำเนินการที่เหมาะสมเพื่อป้องกันความสูญเสียทางการเงิน
 
-- **Servicio al cliente**: la IA puede aumentar las interacciones humanas en servicio al cliente proporcionando soporte proactivo, resolviendo rápidamente las consultas y recomendando productos y servicios personalizados. Esto puede reforzar la satisfacción y la fidelidad del cliente.
-
-![divider][divider].class=\"m-10 w-100\"
-
-### Computación cuántica: desbloquear un análisis de datos sin parangón
-
-[**HSBC** ⧉][01] ha estado a la vanguardia de la integración de la computación cuántica en el sector financiero. El banco ha colaborado con proveedores tecnológicos y laboratorios de investigación para explorar la aplicación de las tecnologías cuánticas a problemas concretos.
-
-HSBC fue el primer banco en [**proteger el trading FX impulsado por IA mediante lo cuántico en 2023** ⧉][01]. En un experimento inédito, HSBC utilizó la **[Distribución cuántica de claves](/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html)** para asegurar un escenario de trading de 30 millones de euros hacia el dólar estadounidense. Este experimento demostró que la tecnología cuántica protegerá las transacciones de cualquier valor cuando llegue a ser comercialmente accesible y escalable.
+- **การบริการลูกค้า**: AI สามารถเสริมการปฏิสัมพันธ์ในการบริการลูกค้าของมนุษย์ด้วยการให้การสนับสนุนเชิงรุก แก้ไขข้อสงสัยได้อย่างรวดเร็ว และแนะนำผลิตภัณฑ์และบริการที่เหมาะกับแต่ละบุคคล สิ่งนี้ช่วยเพิ่มความพึงพอใจและความภักดีของลูกค้า
 
 ![divider][divider].class=\"m-10 w-100\"
 
-## El auge de la IA de código abierto: un cambio de paradigma
+### การประมวลผลควอนตัม: เปิดการวิเคราะห์ข้อมูลที่ไม่มีใครเทียบได้
 
-El año 2023 ha conocido un notable auge de la adopción de la IA de código abierto, en particular en el ámbito de los **grandes modelos de lenguaje (LLM)**. La IA de código abierto designa los softwares y herramientas de IA cuyo código fuente está disponible para desarrolladores, investigadores y otras partes interesadas.
+[**HSBC** ⧉][01] อยู่แถวหน้าของการผสานการประมวลผลควอนตัมเข้าสู่ภาคการเงิน ธนาคารได้ร่วมมือกับผู้ให้บริการเทคโนโลยีและห้องปฏิบัติการวิจัยเพื่อศึกษาการนำเทคโนโลยีควอนตัมไปใช้กับปัญหาในโลกจริง
 
-Esta democratización de la tecnología IA ha alimentado avances significativos, alentado la proliferación de modelos de código abierto y consolidado los LLM como motor de innovación. Estos modelos han desempeñado un papel pivote para estimular la innovación, reforzar la toma de decisiones y mejorar la gestión de riesgos en diversas industrias.
+HSBC เป็นธนาคารแรกที่ [**ปกป้องการซื้อขายเงินตราต่างประเทศที่ขับเคลื่อนด้วย AI ด้วยควอนตัมในปี 2023** ⧉][01] ในการทดลองครั้งแรกของโลก HSBC ใช้ **[การกระจายกุญแจเชิงควอนตัม](/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html)** เพื่อคุ้มครองสถานการณ์การซื้อขายมูลค่า 30 ล้านยูโรจากยูโรเป็นดอลลาร์สหรัฐ การทดลองนี้แสดงให้เห็นว่าเทคโนโลยีควอนตัมจะปกป้องการซื้อขายทุกมูลค่าเมื่อสามารถเข้าถึงได้ในเชิงพาณิชย์และขยายขนาดได้
 
-### LLM de código abierto: revolucionar el panorama de la IA
+![divider][divider].class=\"m-10 w-100\"
 
-Los LLM de código abierto, como [**WizardLM** ⧉][07] y [**LLaMA 2** ⧉][08], han emergido como competidores formidables de los modelos propietarios. Por ejemplo, [Vicuna ⧉][09], un LLM económico, ha alcanzado el 90 % de las capacidades de ChatGPT mientras que el coste total de su entrenamiento no superó los 300 $. [LLaMA 2 ⧉][08] ha fijado el estándar de oro de la IA ética al alcanzar las puntuaciones de infracción más bajas hasta la fecha. Los LLM de código abierto son más transparentes y personalizables que los LLM propietarios «caja negra» que carecen de interpretabilidad.
+## การเติบโตของ AI โอเพนซอร์ส: การเปลี่ยนกระบวนทัศน์ในปัญญาประดิษฐ์
 
-#### Crecimiento explosivo de los modelos de IA de código abierto en 2023
+ปี 2023 เป็นปีที่การนำเทคโนโลยี AI โอเพนซอร์สมาใช้เพิ่มขึ้นอย่างเห็นได้ชัด โดยเฉพาะในด้าน **โมเดลภาษาขนาดใหญ่ (LLMs)** AI โอเพนซอร์สหมายถึงซอฟต์แวร์และเครื่องมือ AI ที่เปิดเผยซอร์สโค้ดให้แก่นักพัฒนา นักวิจัย และผู้มีส่วนได้ส่วนเสียอื่น ๆ
+
+การทำให้เทคโนโลยี AI เข้าถึงได้อย่างทั่วถึงนี้ได้ส่งเสริมความก้าวหน้าที่สำคัญ กระตุ้นการแพร่ขยายของโมเดลโอเพนซอร์ส และทำให้ LLMs กลายเป็นผู้นำในนวัตกรรม AI โมเดลเหล่านี้มีบทบาทสำคัญในการขับเคลื่อนนวัตกรรม ยกระดับการตัดสินใจ และปรับปรุงการบริหารความเสี่ยงในหลายอุตสาหกรรม
+
+### LLMs โอเพนซอร์ส: การเปลี่ยนแปลงวงการ AI
+
+LLMs โอเพนซอร์ส เช่น [**WizardLM** ⧉][07] และ [**LLaMA 2** ⧉][08] ได้กลายเป็นคู่แข่งที่แข็งแกร่งของโมเดลแบบปิด ตัวอย่างเช่น [Vicuna ⧉][09] ซึ่งเป็น LLM ที่ประหยัด สามารถทำได้ถึง 90% ของความสามารถของ ChatGPT แม้ว่ากระบวนการฝึกทั้งหมดจะมีค่าใช้จ่ายเพียง 300 ดอลลาร์ [LLaMA 2 ⧉][08] ได้วางมาตรฐานสูงสุดสำหรับ AI ที่มีจริยธรรมด้วยการทำคะแนนการละเมิดต่ำที่สุดเท่าที่เคยมีมา LLMs โอเพนซอร์สมีความโปร่งใสและปรับแต่งได้มากกว่า LLMs แบบปิดที่เป็น "กล่องดำ" ซึ่งขาดความสามารถในการตีความ
+
+#### การเติบโตอย่างรวดเร็วของโมเดล AI โอเพนซอร์สในปี 2023
 
 ![Explosive Growth of Open-Source AI Models in 2023][22].class=\"img-fluid w-100 clearfix fade-in\"
 
-Este gráfico ilustra vívidamente el ascenso notable de los modelos de IA de código abierto en 2023, con una explosión del número de proyectos y contribuciones. Esta tendencia pone de relieve la importancia creciente de la IA de código abierto para estimular la innovación y favorecer la colaboración en la comunidad IA.
+แผนภูมิแท่งนี้แสดงให้เห็นการเติบโตของโมเดล AI โอเพนซอร์สในปี 2023 อย่างชัดเจน โดยมีการเพิ่มขึ้นอย่างมากทั้งจำนวนโครงการและจำนวนการมีส่วนร่วม แนวโน้มนี้เน้นให้เห็นความสำคัญที่เพิ่มขึ้นของ AI โอเพนซอร์สในการขับเคลื่อนนวัตกรรมและส่งเสริมความร่วมมือภายในชุมชน AI
 
-Varios LLM de código abierto han atraído la atención por sus capacidades revolucionarias:
+LLMs โอเพนซอร์สหลายตัวได้รับความสนใจอย่างมากจากความสามารถที่โดดเด่น:
 
-- [**Mixtral 8x7B** ⧉][10]: desarrollado por Mistral AI, este potente modelo de lenguaje se distingue por sus pesos abiertos, permitiendo un funcionamiento local con menos restricciones que los modelos competidores. Procesa hasta 32K tokens de contexto y admite varias lenguas: francés, alemán, español, italiano e inglés. [Mixtral 8x7B ⧉][10] está diseñado para el trabajo composicional, el análisis de datos, la depuración de software y la programación. Reivindica igualar o superar a GPT-3.5 de OpenAI y superar a LLaMA 2-70B de Meta en ciertos benchmarks.
+- [**Mixtral 8x7B** ⧉][10]: พัฒนาโดย Mistral AI โมเดลภาษาที่ทรงพลังนี้โดดเด่นด้วยน้ำหนักแบบเปิด (open weights) ซึ่งอนุญาตให้ทำงานในเครื่องท้องถิ่นได้โดยมีข้อจำกัดน้อยกว่าโมเดลของคู่แข่ง โมเดลนี้ประมวลผลหน้าต่างบริบทได้ถึง 32K โทเค็นและรองรับหลายภาษา ได้แก่ ฝรั่งเศส เยอรมัน สเปน อิตาลี และอังกฤษ [Mixtral 8x7B ⧉][10] ออกแบบมาสำหรับงานเชิงประกอบ การวิเคราะห์ข้อมูล การแก้ไขปัญหาซอฟต์แวร์ และการเขียนโปรแกรม โมเดลนี้อ้างว่าเทียบเท่าหรือเหนือกว่า GPT-3.5 ของ OpenAI และทำได้ดีกว่าโมเดล LLaMA 2-70B ของ Meta ในบางเกณฑ์มาตรฐาน
 
-- [**GPT-NeoX-20B** ⧉][11]: con 20.000 millones de parámetros, GPT-NeoX-20B es un LLM de código abierto de primer nivel. Se basa en GPT-3 pero introduce el paralelismo síncrono de datos y el gradient checkpointing para mejorar el rendimiento y la eficiencia. El modelo ha demostrado un rendimiento excepcional en diversas tareas: pregunta-respuesta, resumen, traducción.
+- [**GPT-NeoX-20B** ⧉][11]: ด้วยพารามิเตอร์จำนวน 2 หมื่นล้านตัว GPT-NeoX-20B เป็น LLM โอเพนซอร์สชั้นนำ GPT-NeoX-20B พัฒนาต่อยอดจาก GPT-3 แต่เพิ่มการประมวลผลข้อมูลแบบขนานที่ซิงโครนัส (synchronous data parallelism) และ gradient checkpointing เพื่อปรับปรุงประสิทธิภาพและความคุ้มค่า โมเดลนี้แสดงประสิทธิภาพที่โดดเด่นในงานหลากหลาย รวมถึงการตอบคำถาม การสรุปความ และการแปล
 
-- [**GPT-J** ⧉][12]: con 6.000 millones de parámetros, [GPT-J ⧉][12] ofrece una mayor accesibilidad que los modelos más grandes. [GPT-J ⧉][12] está entrenado sobre el conjunto de datos Pile y comparte sus raíces con la arquitectura GPT-2. Comprende los matices conversacionales, proporciona perspectivas desde fuentes diversas, adapta su tono y estilo, y prioriza la generación de contenido ético y responsable.
+- [**GPT-J** ⧉][12]: ด้วยพารามิเตอร์ 6 พันล้านตัว [GPT-J ⧉][12] เข้าถึงได้ง่ายกว่าเมื่อเทียบกับโมเดลขนาดใหญ่กว่า [GPT-J ⧉][12] ฝึกด้วยชุดข้อมูล Pile และมีรากฐานร่วมกับสถาปัตยกรรม GPT-2 โมเดลนี้เข้าใจความละเอียดอ่อนของการสนทนา ให้มุมมองจากแหล่งข้อมูลที่หลากหลาย ปรับโทนและสไตล์ และให้ความสำคัญกับการสร้างเนื้อหาที่มีจริยธรรมและมีความรับผิดชอบ
 
-- [**OPT-175B** ⧉][13]: con un tamaño sin precedentes de 175.000 millones de parámetros, [OPT-175B ⧉][13] se erige como un coloso de eficiencia y escala. Entrenado con datos textuales no etiquetados que contienen principalmente frases en inglés, [OPT-175B ⧉][13] emplea la arquitectura Transformer para procesar jerárquicamente el texto de entrada. El modelo ha demostrado un rendimiento impresionante en diversas tareas: pregunta-respuesta, resumen, traducción.
+- [**OPT-175** ⧉B][13]: ด้วยขนาดที่ไม่เคยมีมาก่อนถึง 1.75 แสนล้านพารามิเตอร์ [OPT-175B ⧉][13] เป็นโมเดลขนาดมหึมาในด้านประสิทธิภาพและขนาด [OPT-175B ⧉][13] ฝึกด้วยข้อมูลข้อความที่ไม่มีป้ายกำกับซึ่งส่วนใหญ่เป็นประโยคภาษาอังกฤษ และใช้สถาปัตยกรรม Transformer เพื่อประมวลผลข้อความนำเข้าตามลำดับชั้น โมเดลนี้แสดงประสิทธิภาพที่น่าประทับใจในงานหลากหลาย รวมถึงการตอบคำถาม การสรุปความ และการแปล
 
-- [**LLMa 2** ⧉][14]: con 1.600 millones de parámetros, [LLMa 2 ⧉][14] ilustra la versatilidad, respondiendo a una amplia gama de tareas: pregunta-respuesta, resumen, traducción. Entrenado con el conjunto de datos Pile y utilizando la arquitectura Transformer, [LLMa 2 ⧉][14] prueba su adaptabilidad a diversas aplicaciones.
+- [**LLMa 2** ⧉][14]: ด้วยพารามิเตอร์ 1.6 พันล้านตัว [LLMa 2 ⧉][14] แสดงความอเนกประสงค์ รองรับงานหลากหลาย รวมถึงการตอบคำถาม การสรุปความ และการแปล เมื่อฝึกด้วยชุดข้อมูล Pile และใช้สถาปัตยกรรม Transformer [LLMa 2 ⧉][14] พิสูจน์ความสามารถในการปรับตัวเข้ากับการใช้งานที่หลากหลาย
 
-- [**Google Gemini LLM** ⧉][26]: desvelado en 2023, [Google Gemini LLM ⧉][26] representa un paso significativo en el campo de los grandes modelos de lenguaje. Presentado como sucesor de [PaLM 2 ⧉][27], [Gemini LLM ⧉][26] está diseñado para sobresalir en diversos dominios: comprensión del lenguaje natural, generación de distintos formatos de texto creativo, aplicación de conocimientos a la resolución de problemas. Con su capacidad para tratar datos multimodales, [Google Gemini LLM ⧉][26] tiene gran potencial para aplicaciones en visión por ordenador, investigación científica y sanidad. El modelo está actualmente disponible en tres tamaños: **Ultra**, **Pro** y **Nano**, respondiendo a distintas necesidades computacionales.
+- [**Google Gemini LLM** ⧉][26]: เปิดตัวในปี 2023 [Google Gemini LLM ⧉][26] เป็นก้าวสำคัญในด้านโมเดลภาษาขนาดใหญ่ ในฐานะผู้สืบทอดของ [PaLM 2 ⧉][27] [Gemini LLM ⧉][26] ออกแบบมาให้ทำงานได้ดีในหลายด้าน รวมถึงการเข้าใจภาษาธรรมชาติ การสร้างรูปแบบข้อความเชิงสร้างสรรค์ที่หลากหลาย และการประยุกต์ความรู้เพื่อแก้ปัญหา ด้วยความสามารถในการประมวลผลข้อมูลหลายรูปแบบ [Google Gemini LLM ⧉][26] มีศักยภาพสูงสำหรับการใช้งานในด้านต่าง ๆ เช่น คอมพิวเตอร์วิทัศน์ การวิจัยทางวิทยาศาสตร์ และการดูแลสุขภาพ ปัจจุบันโมเดลนี้มีให้ใช้งานในสามขนาด ได้แก่ **Ultra**, **Pro** และ **Nano** เพื่อตอบสนองความต้องการด้านการประมวลผลที่แตกต่างกัน
 
-### La revolución de la IA de código abierto: configurar el futuro de la IA
+### การเปลี่ยนแปลงของ AI โอเพนซอร์ส: การกำหนดอนาคตของ AI
 
-La revolución de la IA de código abierto transforma fundamentalmente el panorama del desarrollo, despliegue y uso de la IA. Al hacer la IA más accesible, asequible y polivalente, la tecnología de código abierto democratiza las capacidades de IA y abre la vía a innovaciones y aplicaciones revolucionarias. A medida que el movimiento de código abierto gana impulso, podemos anticipar con confianza incluso más avances transformadores que configurarán el futuro de la IA y su profundo impacto sobre nuestro mundo.
+การเปลี่ยนแปลงของ AI โอเพนซอร์สกำลังปรับเปลี่ยนวิธีการพัฒนา การนำไปใช้ และการใช้งาน AI อย่างพื้นฐาน ด้วยการทำให้ AI เข้าถึงได้ง่ายขึ้น มีราคาที่จับต้องได้ และใช้งานได้หลากหลาย เทคโนโลยีโอเพนซอร์สกำลังทำให้ความสามารถของ AI เข้าถึงได้อย่างทั่วถึงและเปิดทางสู่นวัตกรรมและการใช้งานใหม่ ๆ เมื่อการเคลื่อนไหวโอเพนซอร์สมีแรงส่งมากขึ้น เราคาดหวังได้อย่างมั่นใจว่าจะมีความก้าวหน้าที่เปลี่ยนแปลงมากยิ่งขึ้นซึ่งจะกำหนดอนาคตของ AI และผลกระทบอันลึกซึ้งต่อโลกของเรา
 
 ![divider][divider].class=\"m-10 w-100\"
 
-## Los desafíos de la regulación de la IA
+## ความท้าทายในการกำกับดูแล AI
 
-Otro desafío es **garantizar que los sistemas de IA sean justos y no sesgados**. Los sistemas de IA pueden perpetuar los sesgos existentes en los datos sobre los que se entrenan. Por ello es importante desarrollar sistemas de IA transparentes y responsables, auditados para identificar y abordar los sesgos potenciales.
+ความท้าทายอีกประการหนึ่งคือ **การทำให้มั่นใจว่าระบบ AI มีความเป็นธรรมและปราศจากอคติ** ระบบ AI อาจสืบทอดอคติที่มีอยู่ในข้อมูลที่ใช้ฝึก ดังนั้นจึงสำคัญที่จะพัฒนาระบบ AI ที่โปร่งใสและตรวจสอบได้ และสามารถตรวจสอบเพื่อระบุและจัดการกับอคติที่อาจเกิดขึ้น
 
-Por último, es importante **establecer directrices éticas para el desarrollo y despliegue de la IA**. Los sistemas de IA deberían diseñarse y utilizarse de una manera responsable y respetuosa con los derechos humanos. Por ejemplo, los sistemas de IA no deberían utilizarse para dañar o explotar a los individuos, ni para invadir su privacidad.
+สุดท้าย สำคัญที่จะ **กำหนดแนวทางด้านจริยธรรมสำหรับการพัฒนาและการนำ AI ไปใช้** ระบบ AI ควรได้รับการออกแบบและใช้งานในลักษณะที่มีความรับผิดชอบและเคารพสิทธิมนุษยชน ตัวอย่างเช่น ไม่ควรใช้ระบบ AI เพื่อทำร้ายหรือเอาเปรียบบุคคล และไม่ควรใช้เพื่อล่วงละเมิดความเป็นส่วนตัวของบุคคล
 
-Abordar estos desafíos exigirá un enfoque multipartícipe que implique a gobiernos, empresas, investigadores y sociedad civil. Es importante iniciar la conversación ahora sobre la manera de regular la IA equilibrando las necesidades de confidencialidad, seguridad e innovación.
+การจัดการกับความท้าทายเหล่านี้ต้องอาศัยแนวทางที่มีผู้มีส่วนได้ส่วนเสียหลายฝ่าย ทั้งภาครัฐ ภาคธุรกิจ นักวิจัย และภาคประชาสังคม สำคัญที่จะเริ่มการหารือตั้งแต่ตอนนี้ว่าจะกำกับดูแล AI อย่างไรให้สมดุลระหว่างความจำเป็นด้านความเป็นส่วนตัวและความปลอดภัยกับความจำเป็นด้านนวัตกรรม
 
-## El estado de la gobernanza de la IA
+## สถานะของการกำกับดูแล AI
 
 ![The State of AI Governance][28].class=\"fade-in w-100 p-3 me-3 img-thumbnail \"
 
-En 2023, **importantes iniciativas mundiales y desarrollos han configurado el panorama de la gobernanza y regulación de la IA**. Estas actividades reflejan el reconocimiento creciente de la [**necesidad de marcos robustos para supervisar el desarrollo y despliegue de las tecnologías de IA** ⧉][19].
+ในปี 2023 **ความริเริ่มและพัฒนาการระดับโลกที่สำคัญได้กำหนดทิศทางของการกำกับดูแลและการควบคุม AI** กิจกรรมเหล่านี้สะท้อนการยอมรับที่เพิ่มขึ้นถึง [**ความจำเป็นของกรอบการทำงานที่แข็งแกร่งเพื่อกำกับดูแลการพัฒนาและการนำเทคโนโลยี AI ไปใช้** ⧉][19]
 
-En Estados Unidos, el presidente Joe Biden emitió un [**decreto para gestionar los riesgos asociados a la IA y apoyar los esfuerzos internacionales de gobernanza** ⧉][15]. La [**Office of Science and Technology Policy (OSTP)** ⧉][23] de la Casa Blanca ha mantenido amplios debates con investigadores, empresas y sociedad civil para informar la gobernanza. Estados Unidos trabaja con sus aliados y socios sobre la gobernanza de la IA, incluida la participación en el G7 Hiroshima AI Process y en el [**AI Safety Summit** ⧉][16] del Reino Unido.
+ในสหรัฐอเมริกา ประธานาธิบดีโจ ไบเดนได้ออก [**คำสั่งฝ่ายบริหารเพื่อจัดการความเสี่ยงที่เกี่ยวข้องกับ AI และสนับสนุนความพยายามระหว่างประเทศในการกำกับดูแล AI** ⧉][15] [**สำนักงานนโยบายวิทยาศาสตร์และเทคโนโลยี (OSTP)** ⧉][23] ของทำเนียบขาวได้หารืออย่างกว้างขวางกับนักวิจัย บริษัท และภาคประชาสังคมเพื่อกำหนดแนวทางการกำกับดูแล AI สหรัฐฯ กำลังทำงานร่วมกับพันธมิตรและหุ้นส่วนในด้านการกำกับดูแล AI รวมถึงการเข้าร่วมใน G7 Hiroshima AI Process และ [**AI Safety Summit** ⧉][16] ของสหราชอาณาจักร
 
-El Reino Unido acogió la primera [**AI Safety Summit** ⧉][16], reuniendo a líderes gubernamentales mundiales para discutir los [**riesgos de la IA y la acción coordinada internacionalmente** ⧉][17].
+สหราชอาณาจักรเป็นเจ้าภาพจัด [**AI Safety Summit** ⧉][16] ครั้งแรก โดยรวบรวมผู้นำรัฐบาลจากทั่วโลกเพื่อหารือเกี่ยวกับ [**ความเสี่ยงของ AI และการดำเนินการที่ประสานงานกันในระดับนานาชาติ** ⧉][17]
 
-La [**Declaración de Bletchley** ⧉][18] vio a 28 países más la UE comprometerse a trabajar juntos para abordar los riesgos planteados por la IA durante la primera AI Safety Summit en el Reino Unido.
+[**Bletchley Declaration** ⧉][18] มี 28 ประเทศพร้อมกับสหภาพยุโรปให้คำมั่นที่จะทำงานร่วมกันเพื่อจัดการกับความเสี่ยงที่เกิดจาก AI ในระหว่าง AI Safety Summit ครั้งแรกในสหราชอาณาจักร
 
-Los líderes e investigadores del MIT han publicado un conjunto de notas políticas sobre la gobernanza de la IA para ayudar a los legisladores a crear una mejor supervisión. [**A Framework for U.S. AI Governance: Creating a Safe and Thriving AI Sector** ⧉][20] propone que entidades gubernamentales existentes regulen las herramientas de IA.
+ผู้นำและนักวิชาการของ MIT ได้เผยแพร่ชุดเอกสารสรุปเชิงนโยบายเกี่ยวกับการกำกับดูแล AI เพื่อช่วยให้ผู้กำหนดนโยบายสร้างการกำกับดูแลที่ดีขึ้น [**A Framework for U.S. AI Governance: Creating a Safe and Thriving AI Sector** ⧉][20] เสนอให้หน่วยงานภาครัฐที่มีอยู่กำกับดูแลเครื่องมือ AI
 
-Más de 60 países en los continentes americano, africano, asiático y europeo han publicado estrategias nacionales de IA, reflejando el impulso global hacia la gobernanza. China se ha comprometido activamente a lanzar principios y regulaciones, entre ellas la [**Global AI Governance Initiative** ⧉][06] y las [**Interim Administrative Measures for the Management of Generative AI Services** ⧉][05].
+มากกว่า 60 ประเทศในทวีปอเมริกา แอฟริกา เอเชีย และยุโรปได้เผยแพร่ยุทธศาสตร์ AI ระดับชาติ ซึ่งสะท้อนแรงส่งระดับโลกในการกำกับดูแล AI จีนมีบทบาทในการออกหลักการและกฎระเบียบต่าง ๆ รวมถึง [**Global AI Governance Initiative** ⧉][06] และ [**Interim Administrative Measures for the Management of Generative AI Services** ⧉][05]
 
-Estas iniciativas y desarrollos muestran la creciente necesidad de esfuerzos coordinados nacionales e internacionales para un desarrollo y despliegue responsables de la IA. Si bien se han hecho progresos, la naturaleza compleja y rápidamente evolutiva de la IA presenta desafíos continuos que exigen atención sostenida.
-
-![divider][divider].class=\"m-10 w-100\"
-
-## Conclusión
-
-El año 2023 ha visto avances significativos en los campos de la IA y la QC, en particular en la industria bancaria. El uso pionero por HSBC de la protección cuántica para el trading impulsado por IA representa un hito significativo de la aplicación de estas tecnologías al sector bancario. Los modelos de código abierto han acelerado la madurez de la IA, mientras que las notas políticas del MIT sobre la gobernanza proporcionan una hoja de ruta para la regulación. Estos desarrollos configurarán el futuro de la IA y la QC, con implicaciones profundas para la banca y las finanzas.
+ความริเริ่มและพัฒนาการเหล่านี้แสดงให้เห็นความจำเป็นที่เพิ่มขึ้นของความพยายามที่ประสานงานกันทั้งในระดับชาติและระหว่างประเทศ เพื่อให้การพัฒนาและการนำ AI ไปใช้เป็นไปอย่างมีความรับผิดชอบ แม้จะมีความคืบหน้า แต่ธรรมชาติที่ซับซ้อนและพัฒนาอย่างรวดเร็วของ AI ก็ยังคงสร้างความท้าทายที่ต้องได้รับความใส่ใจอย่างต่อเนื่อง
 
 ![divider][divider].class=\"m-10 w-100\"
 
-**¿Quiere saber más sobre el impacto de la IA y la computación cuántica en la industria bancaria?**
+## บทสรุป
 
-*En conclusión, espero que este artículo haya despertado su interés por el poder transformador de la IA y la computación cuántica en la banca.*
+ปี 2023 มีความก้าวหน้าที่สำคัญในด้าน AI และ QC โดยเฉพาะในอุตสาหกรรมธนาคาร การที่ HSBC บุกเบิกการใช้การป้องกันเชิงควอนตัมสำหรับการซื้อขายที่ขับเคลื่อนด้วย AI ถือเป็นหมุดหมายสำคัญของการนำเทคโนโลยีเหล่านี้ไปใช้ในภาคธนาคาร โมเดลโอเพนซอร์สได้เร่งความสมบูรณ์ของ AI ขณะที่เอกสารวิชาการของ MIT เกี่ยวกับการกำกับดูแล AI เป็นแนวทางสำหรับการกำกับดูแล พัฒนาการเหล่านี้จะกำหนดอนาคตของ AI และ QC โดยมีนัยสำคัญอย่างลึกซึ้งต่อธนาคารและการเงิน
 
-*Si está deseoso de aprender más sobre la intersección de la IA y la computación cuántica en la industria bancaria, no dude en contactarme en [**LinkedIn** ⧉][02] o a través de la [**página de contacto** ⧉][03].*
+![divider][divider].class=\"m-10 w-100\"
 
-*También puede encontrarme en mi nuevo canal de YouTube, [**Banking on Quantum** ⧉][24], donde exploraré los últimos desarrollos de estas tecnologías transformadoras y sus implicaciones para el futuro de las finanzas.*
+**ต้องการเรียนรู้เพิ่มเติมเกี่ยวกับผลกระทบของ AI และการประมวลผลควอนตัมต่ออุตสาหกรรมธนาคารหรือไม่**
 
-*[**Suscríbase a Banking on Quantum hoy y manténgase a la vanguardia en este campo en rápida evolución.** ⧉][25]*
+*ท้ายที่สุด ผมหวังว่าบทความนี้จะจุดประกายความสนใจของคุณต่อพลังการเปลี่ยนแปลงของ AI และการประมวลผลควอนตัมในอุตสาหกรรมธนาคาร*
 
-Gracias de nuevo por su tiempo, espero tener noticias suyas.
+*หากคุณสนใจเรียนรู้เพิ่มเติมเกี่ยวกับจุดบรรจบระหว่าง AI และการประมวลผลควอนตัมในอุตสาหกรรมธนาคาร อย่าลังเลที่จะติดต่อผมทาง [**LinkedIn** ⧉][02] หรือผ่าน [**หน้าติดต่อ** ⧉][03]*
+
+*คุณยังสามารถติดตามผมได้ที่ช่อง YouTube ใหม่ของผม [**Banking on Quantum** ⧉][24] ซึ่งผมจะสำรวจพัฒนาการล่าสุดของเทคโนโลยีที่เปลี่ยนแปลงเหล่านี้และนัยที่มีต่ออนาคตของการเงิน*
+
+*[**สมัครติดตาม Banking on Quantum วันนี้และก้าวนำในสาขาที่พัฒนาอย่างรวดเร็วนี้** ⧉][25]*
+
+ขอบคุณอีกครั้งสำหรับเวลาของคุณ และผมหวังว่าจะได้รับข่าวจากคุณ
 
 ![divider][divider].class=\"m-10 w-100\"
 
@@ -151,7 +148,7 @@ Gracias de nuevo por su tiempo, espero tener noticias suyas.
 [07]: https://github.com/nlpxucan/WizardLM "WizardLM"
 [08]: https://ai.meta.com/llama/ "LLaMA 2"
 [09]: https://lmsys.org/blog/2023-03-30-vicuna/ "Vicuna: An Open-Source Chatbot Impressing GPT-4 with 90%* ChatGPT Quality"
-[10]: https://mistral.ai/news/mixtral-of-experts/ "Mixtral 8x7B"
+[10]: https://mistral.ai/news/mixtral-of-experts/ "Mixtral 8x7B: An Open-Source Language Model Matching GPT-3.5 and Outperforming LLaMA 2-70B"
 [11]: https://huggingface.co/EleutherAI/gpt-neox-20b "GPT-NeoX-20B"
 [12]: https://huggingface.co/kingoflolz/mesh-transformer-jax "GPT-J"
 [13]: https://huggingface.co/kingoflolz/mesh-transformer-jax "OPT-175B"
@@ -159,7 +156,7 @@ Gracias de nuevo por su tiempo, espero tener noticias suyas.
 [15]: https://carnegieendowment.org/2023/11/14/future-of-ai-governance-conversation-with-arati-prabhakar-event-8195 "The Future of AI Governance: A Conversation with Arati Prabhakar"
 [16]: https://www.aisafetysummit.gov.uk/ "AI Safety Summit"
 [17]: https://www.cov.com/en/news-and-insights/insights/2023/12/international-developments-in-ai-governance-same-goal-different-paths "International developments in AI governance: same goal, different paths"
-[18]: https://www.gov.uk/government/publications/ai-safety-summit-2023-the-bletchley-declaration/the-bletchley-declaration-by-countries-attending-the-ai-safety-summit-1-2-november-2023 "The Bletchley Declaration"
+[18]: https://www.gov.uk/government/publications/ai-safety-summit-2023-the-bletchley-declaration/the-bletchley-declaration-by-countries-attending-the-ai-safety-summit-1-2-november-2023 "The Bletchley Declaration by Countries Attending the AI Safety Summit, 1-2 November 2023"
 [19]: https://www.spglobal.com/en/research-insights/featured/special-editorial/the-ai-governance-challenge "The AI Governance Challenge"
 [20]: https://news.mit.edu/2023/mit-group-releases-white-papers-governance-ai-1211 "MIT group releases white papers on governance of AI"
 [21]: https://cloudcdn.pro/stocks/diagrams/ai-software-market-revenue-2018-2025-professional.svg "AI Software Market's Surging Revenue: A Visualization of Growth"

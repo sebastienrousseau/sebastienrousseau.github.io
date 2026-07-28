@@ -1,169 +1,165 @@
 ---
-title: "CRYSTALS-Kyber: el algoritmo de protección en la era cuántica"
-subtitle: "CRYSTALS-Kyber, el estándar NIST FIPS 203 para la encapsulación de claves postcuántica"
-description: "Cómo CRYSTALS-Kyber, algoritmo de criptografía resistente a lo cuántico, revoluciona el mundo de la criptografía y nos prepara para la era cuántica."
+title: "CRYSTALS-Kyber: ochranný algoritmus v kvantové éře"
+subtitle: "CRYSTALS-Kyber, standard NIST FIPS 203 pro postkvantové zapouzdření klíčů."
+description: "Jak CRYSTALS-Kyber, kryptografický algoritmus odolný vůči kvantovým počítačům, posiluje kryptografii a připravuje finanční sektor na kvantovou éru."
 date: "November 19, 2023"
 language: "cs-CZ"
 locale: "cs_CZ"
 banner: "https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA.webp"
-banner_alt: "Un ordenador cuántico moderno y depurado"
-keywords: "computación cuántica, criptografía resistente a lo cuántico, CRYSTALS-Kyber, criptografía, seguridad, banca, finanzas, cifrado, protección de datos, perdurabilidad"
+banner_alt: "Moderní elegantní kvantový počítač"
+keywords: "kvantové výpočty, kvantově odolná kryptografie, CRYSTALS-Kyber, kryptografie, bezpečnost, bankovnictví, finance, šifrování, ochrana dat, odolnost do budoucna"
 ---
 
 
-> **TL;DR.** Tento článek je DRAFT překlad původně španělského zdroje, čekající na revizi rodilým mluvčím. Hlavní obsah, příklady a citace zůstávají ve španělštině; pouze záhlaví/frontmatter byly přepnuty na češtinu.
+![Koncept umělé inteligence, 3D vykreslení, konceptuální obraz](https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA.webp).class=\"img-fluid clearfix\"
 
-**Klíčové body**
+## Poznatek
 
-![AI, Artificial Intelligence concept,3d rendering,conceptual image](https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA.webp).class=\"img-fluid clearfix\"
+### Zvládání kvantové hrozby: vznik CRYSTALS-Kyber
 
-## Perspectiva
+V předchozím článku [Ochrana dat v kvantové éře ⧉][03] jsem se věnoval blížící se hrozbě, kterou kvantové výpočty představují pro digitální bezpečnost, a popsal jsem, jak ji může řešit kryptografie odolná vůči kvantovým počítačům (QRC). Nyní se zaměřím na `CRYSTALS-Kyber`, algoritmus QRC, který mění přístup k bezpečnosti.
 
-### Navegar por la amenaza cuántica: la génesis de CRYSTALS-Kyber
+Kvantové počítače dokážou provádět některé výpočty mnohem rychleji než klasické počítače, a představují tak významné riziko pro současné šifrovací algoritmy. To vyvolává obavy o bezpečnost citlivých informací, včetně finančních transakcí, zdravotnických záznamů a osobní komunikace.
 
-En mi artículo anterior, [Proteger los datos en la era cuántica ⧉][03], me sumergí en la amenaza inminente de la computación cuántica para la seguridad digital y examiné cómo la criptografía resistente a lo cuántico (QRC) puede responder a ella. Ahora voy a explorar `CRYSTALS-Kyber`, un algoritmo QRC revolucionario que transforma el panorama de la seguridad.
+Aby toto riziko zmírnili, vyvinuli kryptografové algoritmy QRC, jako je `CRYSTALS-Kyber`. Tento algoritmus je mechanismus zapouzdření klíče (KEM) navržený k bezpečné výměně tajných klíčů mezi stranami.
 
-Los ordenadores cuánticos, con su capacidad para realizar ciertos cálculos mucho más rápido que los ordenadores clásicos, plantean un riesgo significativo para los algoritmos de cifrado actuales. Esto suscita inquietudes sobre la seguridad de la información sensible: transacciones financieras, historiales médicos y comunicaciones personales.
+Dnes patří `CRYSTALS-Kyber` mezi přední kandidáty v procesu standardizace postkvantové kryptografie [National Institute of Standards and Technology (NIST) ⧉][05] a prokazuje svůj potenciál jako spolehlivé bezpečnostní řešení pro digitální éru.
 
-Para mitigar esta amenaza, los criptógrafos han desarrollado algoritmos QRC como `CRYSTALS-Kyber`. Este algoritmo es un mecanismo de encapsulación de claves (KEM) diseñado para intercambiar de forma segura claves secretas entre partes.
+### CRYSTALS-Kyber: neochvějná bezpečnost tváří v tvář kvantovým počítačům
 
-Hoy, `CRYSTALS-Kyber` es un líder del proceso de estandarización postcuántica del [National Institute of Standards and Technology (NIST) ⧉][05], demostrando su potencial como solución de seguridad robusta en la era digital.
+Bezpečnost `CRYSTALS-Kyber` závisí na inherentní obtížnosti řešení problému `Learning With Errors (LWE)` nad modulovými mřížkami. Tento složitý matematický problém, považovaný za výpočetně neřešitelný i pro kvantové počítače, tvoří základ odolnosti `CRYSTALS-Kyber` vůči kvantovým útokům.
 
-### CRYSTALS-Kyber: seguridad inquebrantable frente a la computación cuántica
+### CRYSTALS-Kyber: změna paradigmatu v digitální bezpečnosti
 
-La seguridad de `CRYSTALS-Kyber` reposa en la dificultad inherente a resolver el problema `Learning With Errors (LWE)` sobre retículos de módulos. Este desafío matemático complejo, considerado computacionalmente intratable incluso para los ordenadores cuánticos, sirve de zócalo a la resistencia de `CRYSTALS-Kyber` frente a los ataques cuánticos.
+`CRYSTALS-Kyber` patří do sady algoritmů CRYSTALS (Cryptographic Suite for Algebraic Lattices) a nese označení kvantově bezpečný algoritmus (QSA).
 
-### CRYSTALS-Kyber: un cambio de paradigma en seguridad digital
-
-`CRYSTALS-Kyber` pertenece a la suite de algoritmos CRYSTALS (Cryptographic Suite for Algebraic Lattices) y porta con orgullo la distinción de algoritmo cuántico-seguro (QSA).
-
-Si bien el concepto de utilizar problemas sobre retículos con fines criptográficos no es enteramente nuevo, `CRYSTALS-Kyber` eleva ese concepto a niveles de eficiencia sin parangón. Su capacidad para generar claves criptográficas con tamaños más pequeños y velocidades de cifrado/descifrado más rápidas lo convierten en una elección ideal para las aplicaciones reales, en particular en el exigente mundo de las finanzas.
+Využití mřížkových problémů pro kryptografické účely není zcela nové, `CRYSTALS-Kyber` však tento koncept posouvá na mimořádnou úroveň efektivity. Schopnost generovat kryptografické klíče menší velikosti a rychlejší šifrování i dešifrování z něj činí vhodnou volbu pro reálné nasazení, zejména v náročném prostředí financí.
 
 ![Divider][01].class=\"m-10 w-100\"
 
-## Idea
+## Myšlenka
 
-### Comprender la mecánica de CRYSTALS-Kyber: la encapsulación de claves en el núcleo
+### Jak CRYSTALS-Kyber funguje: zapouzdření klíče v jádru
 
-En el núcleo del diseño revolucionario de `CRYSTALS-Kyber` se encuentra su enfoque innovador de la encapsulación de claves, componente crítico de la comunicación segura. Aprovecha la potencia de la criptografía sobre retículos, método reconocido por su resistencia frente a los ataques cuánticos. Esta técnica sofisticada saca partido de estructuras geométricas en un espacio multidimensional para establecer claves criptográficas.
+V jádru návrhu `CRYSTALS-Kyber` je přístup ke zapouzdření klíče, což je zásadní součást bezpečné komunikace. Využívá mřížkovou kryptografii, metodu známou svou odolností vůči útokům založeným na kvantových počítačích. Tato technika využívá geometrické struktury ve vícerozměrném prostoru k vytvoření kryptografických klíčů.
 
-`CRYSTALS-Kyber` emplea un tipo específico de problema sobre retículos, conocido por sus propiedades de eficiencia y seguridad, para generar las claves criptográficas. Esto garantiza la protección de los datos sensibles incluso frente a los avances de la computación cuántica.
+`CRYSTALS-Kyber` používá ke generování kryptografických klíčů specifický typ mřížkového problému, který je známý svou efektivitou a bezpečnostními vlastnostmi. Tím zajišťuje ochranu citlivých dat i při pokroku v kvantových výpočtech.
 
-#### Encapsulación de claves segura: la esencia de CRYSTALS-Kyber
+#### Bezpečné zapouzdření klíče: podstata CRYSTALS-Kyber
 
-La encapsulación de claves es semejante a guardar un mensaje en una caja de manera segura, donde solo el destinatario previsto posee la llave para abrirla. En criptografía, este proceso implica crear un par de claves: una clave pública, que puede compartirse abiertamente, y una clave privada, que debe mantenerse secreta. El brillo de `CRYSTALS-Kyber` reside en su capacidad para generar y utilizar estas claves de una manera que garantiza una seguridad sin parangón.
+Zapouzdření klíče se podobá bezpečnému uzamčení zprávy do schránky, k níž má klíč pouze zamýšlený příjemce. V kryptografii tento proces zahrnuje vytvoření páru klíčů: veřejného klíče, který lze volně sdílet, a soukromého klíče, který musí zůstat tajný. Přednost `CRYSTALS-Kyber` spočívá v tom, že tyto klíče generuje a používá způsobem, který zajišťuje vysokou úroveň bezpečnosti.
 
-Veamos cómo `CRYSTALS-Kyber` utiliza la encapsulación de claves para establecer una comunicación segura entre dos partes, Alice y Bob. El diagrama de secuencia siguiente ilustra los pasos involucrados, utilizando `CRYSTALS-Kyber`, un KEM diseñado para proporcionar un intercambio de claves seguro para los protocolos criptográficos. El KyberServer desempeña aquí un papel pivote en este proceso, generando y distribuyendo las claves criptográficas requeridas.
+Podívejme se, jak `CRYSTALS-Kyber` používá zapouzdření klíče k navázání bezpečné komunikace mezi dvěma stranami, Alicí a Bobem. Následující sekvenční diagram znázorňuje kroky navázání bezpečné komunikace mezi Alicí a Bobem pomocí `CRYSTALS-Kyber`, mechanismu zapouzdření klíče (KEM) navrženého k bezpečné výměně klíčů pro kryptografické protokoly. KyberServer zde hraje ústřední roli: generuje a distribuuje kryptografické klíče potřebné pro bezpečnou komunikaci pomocí `CRYSTALS-Kyber`.
 
-![CRYSTALS-Kyber Key Encapsulation Mechanism (KEM)][04].class=\"img-fluid clearfix\"
+![Mechanismus zapouzdření klíče (KEM) CRYSTALS-Kyber][04].class=\"img-fluid clearfix\"
 
-##### Leyenda
+##### Legenda
 
-- Alice: emisor del mensaje.
-- Bob: receptor del mensaje.
-- KyberServer: servidor que genera y distribuye las claves criptográficas.
+- Alice: odesílatel zprávy.
+- Bob: příjemce zprávy.
+- KyberServer: server, který generuje a distribuuje kryptografické klíče.
 
-##### Explicación
+##### Vysvětlení
 
-###### Intercambio de clave pública
+###### Výměna veřejného klíče
 
-- Alice inicia el proceso solicitando su clave pública al KyberServer.
-- El KyberServer responde enviando la clave pública de Alice, un valor matemático que puede compartirse públicamente sin comprometer la seguridad de la clave privada de Alice.
-- Alice comparte después su clave pública con Bob, permitiéndole cifrar mensajes que solo Alice puede descifrar.
+- Alice zahájí proces tím, že si od KyberServeru vyžádá svůj veřejný klíč.
+- KyberServer odpoví odesláním veřejného klíče Alice, což je matematická hodnota, kterou lze veřejně sdílet, aniž by byla ohrožena bezpečnost soukromého klíče Alice.
+- Alice následně sdílí svůj veřejný klíč s Bobem, což mu umožňuje šifrovat zprávy, které dokáže dešifrovat pouze Alice.
 
-###### Encapsulación y desencapsulación
+###### Zapouzdření a rozbalení
 
-- Bob solicita una clave de encapsulación al KyberServer. Esta clave temporal servirá para cifrar la clave secreta compartida antes de enviarla a Alice.
-- El KyberServer envía la clave de encapsulación a Bob.
-- Bob utiliza la clave pública de Alice y la clave de encapsulación para cifrar la clave secreta compartida, creando una cápsula cifrada.
-- Bob envía la cápsula cifrada a Alice.
-- Alice solicita una clave de descifrado al KyberServer. Esta clave temporal servirá para descifrar la cápsula y revelar la clave secreta compartida.
-- El KyberServer envía la clave de descifrado a Alice.
+- Bob si od KyberServeru vyžádá zapouzdřovací klíč. Tento dočasný klíč slouží k zašifrování sdíleného tajného klíče před jeho odesláním Alici.
+- KyberServer odešle zapouzdřovací klíč Bobovi.
+- Bob použije veřejný klíč Alice a zapouzdřovací klíč k zašifrování sdíleného tajného klíče a vytvoří tak zašifrovanou kapsli.
+- Bob odešle zašifrovanou kapsli Alici.
+- Alice si od KyberServeru vyžádá dešifrovací klíč. Tento dočasný klíč slouží k dešifrování kapsle a odhalení sdíleného tajného klíče.
+- KyberServer odešle dešifrovací klíč Alici.
 
-###### Intercambio de clave secreta compartida
+###### Výměna sdíleného tajného klíče
 
-- Alice utiliza su clave privada y la clave de descifrado para descifrar la cápsula, revelando la clave secreta compartida.
-- Alice comparte la clave secreta compartida con Bob, permitiéndole descifrar los mensajes cifrados con esta clave.
+- Alice použije svůj soukromý klíč a dešifrovací klíč k dešifrování kapsle a odhalí sdílený tajný klíč.
+- Alice sdílí sdílený tajný klíč s Bobem, což mu umožňuje dešifrovat zprávy zašifrované tímto sdíleným tajným klíčem.
 
-###### Comunicación segura
+###### Bezpečná komunikace
 
-El diagrama ilustra eficazmente las etapas complejas de establecimiento de un canal de comunicación seguro, subrayando el papel crucial del KyberServer en la generación y distribución de las claves criptográficas. Al emplear el KEM `CRYSTALS-Kyber`, Alice y Bob pueden proteger su información sensible y mantener una comunicación segura incluso frente a adversarios potenciales.
+Sekvenční diagram znázorňuje jednotlivé kroky navázání bezpečného komunikačního kanálu a zdůrazňuje zásadní roli KyberServeru při generování a distribuci kryptografických klíčů. Použitím KEM `CRYSTALS-Kyber` mohou Alice a Bob chránit své citlivé informace a udržet bezpečnou komunikaci i v přítomnosti možných protivníků.
 
-### Criptografía sobre retículos: un fundamento robusto para la resistencia cuántica
+### Mřížková kryptografie: pevný základ pro kvantovou odolnost
 
-`CRYSTALS-Kyber` emplea un enfoque basado en retículos, método reconocido por su potencial de resistencia a los ataques cuánticos. El principio subyacente de la criptografía sobre retículos implica estructuras geométricas en un espacio multidimensional. Si bien navegar por estas estructuras complejas puede parecer intimidante, `CRYSTALS-Kyber` lo simplifica. Utiliza un tipo específico de problema sobre retículos, conocido por sus propiedades de eficiencia y seguridad, para crear claves criptográficas.
+`CRYSTALS-Kyber` používá mřížkový přístup, metodu známou svou možnou odolností vůči kvantovým útokům. Základní princip mřížkové kryptografie spočívá v geometrických strukturách ve vícerozměrném prostoru. Práce s těmito složitými strukturami se může zdát náročná, `CRYSTALS-Kyber` ji však zjednodušuje. Ke tvorbě kryptografických klíčů používá specifický typ mřížkového problému, který je známý svou efektivitou a bezpečnostními vlastnostmi.
 
-#### Tamaños de clave eficientes: equilibrio entre seguridad y rendimiento
+#### Efektivní velikost klíčů: rovnováha mezi bezpečností a výkonem
 
-Una de las características destacadas de `CRYSTALS-Kyber` es el tamaño de sus claves. Comparado con otros algoritmos postcuánticos, `CRYSTALS-Kyber` ofrece tamaños de clave significativamente más pequeños, haciéndolo más práctico para las aplicaciones reales. `CRYSTALS-Kyber` propone tres niveles de seguridad, cada uno con su propio tamaño de clave:
+Jednou z výrazných vlastností `CRYSTALS-Kyber` je velikost jeho klíčů. Ve srovnání s jinými postkvantovými kryptografickými (PQC) algoritmy nabízí `CRYSTALS-Kyber` výrazně menší klíče, což jej činí praktičtějším pro reálné nasazení. `CRYSTALS-Kyber` poskytuje tři různé úrovně bezpečnosti, každou s vlastní velikostí klíče:
 
-- **Kyber512**: nivel de seguridad de 128 bits, con tamaños de clave de 1.632 bytes para las claves secretas, 800 bytes para las claves públicas y 768 bytes para los criptogramas.
-- **Kyber768**: nivel de seguridad de 192 bits, con tamaños de clave de 2.400 bytes para las claves secretas, 1.184 bytes para las claves públicas y 1.088 bytes para los criptogramas.
-- **Kyber1024**: nivel de seguridad de 256 bits, con tamaños de clave de 3.168 bytes para las claves secretas, 1.568 bytes para las claves públicas y 1.568 bytes para los criptogramas.
+- **Kyber512**: Tato úroveň poskytuje 128 bitů bezpečnosti a používá klíče o velikosti 1 632 bajtů pro tajné klíče, 800 bajtů pro veřejné klíče a 768 bajtů pro šifrové texty.
+- **Kyber768**: Tato úroveň poskytuje 192 bitů bezpečnosti a používá klíče o velikosti 2 400 bajtů pro tajné klíče, 1 184 bajtů pro veřejné klíče a 1 088 bajtů pro šifrové texty.
+- **Kyber1024**: Tato úroveň poskytuje 256 bitů bezpečnosti a používá klíče o velikosti 3 168 bajtů pro tajné klíče, 1 568 bajtů pro veřejné klíče a 1 568 bajtů pro šifrové texty.
 
-Estos tamaños relativamente pequeños hacen que `CRYSTALS-Kyber` sea atractivo para los dispositivos con recursos limitados: smartphones y dispositivos IoT. Reducen también el ancho de banda requerido para transmitir las claves, lo que puede ser beneficioso para las aplicaciones con conectividad de red limitada.
+Tyto relativně malé klíče činí z `CRYSTALS-Kyber` atraktivní volbu pro zařízení s omezenými prostředky, jako jsou chytré telefony a zařízení IoT. Zároveň snižují šířku pásma potřebnou k přenosu kryptografických klíčů, což může být přínosné pro aplikace s omezeným síťovým připojením.
 
-#### Velocidad inquebrantable: un faro en el panorama financiero veloz
+#### Stálá rychlost: opora v rychlém prostředí financí
 
-Otro aspecto del atractivo de `CRYSTALS-Kyber` es su velocidad. En el sector bancario y financiero veloz, la velocidad cuenta tanto como la seguridad. El diseño del algoritmo garantiza que opere rápidamente, facilitando procesos de cifrado y descifrado veloces. Esta eficiencia no se hace a costa de la seguridad; más bien es un resultado directo de los fundamentos matemáticos sofisticados del algoritmo.
+Dalším přínosem `CRYSTALS-Kyber` je jeho rychlost. V rychlém sektoru bankovnictví a finančních služeb je rychlost stejně důležitá jako bezpečnost. Návrh algoritmu zajišťuje rychlý provoz a usnadňuje rychlé šifrování i dešifrování. Tato efektivita není na úkor bezpečnosti; je přímým výsledkem promyšlených matematických základů algoritmu.
 
-### CRYSTALS-Kyber: una simbiosis de seguridad, eficiencia y velocidad
+### CRYSTALS-Kyber: součinnost bezpečnosti, efektivity a rychlosti
 
-`CRYSTALS-Kyber` ha emergido como un líder en la búsqueda de criptografía resistente a lo cuántico, ofreciendo una combinación única de seguridad, eficiencia y velocidad. Su enfoque innovador basado en retículos, sus tamaños de clave más pequeños y su diseño optimizado lo convierten en una elección ideal para proteger la información sensible en la banca y los servicios financieros. Mientras el mundo continúa abrazando las tecnologías digitales, `CRYSTALS-Kyber` se posiciona para desempeñar un papel pivote en la protección de nuestros datos en los próximos años.
-
-![Divider][01].class=\"m-10 w-100\"
-
-## Impacto
-
-### CRYSTALS-Kyber: ventajas para la banca y los servicios financieros
-
-La industria bancaria y financiera está en una carrera constante por adelantarse a ciberamenazas cada vez más sofisticadas. En este contexto, `CRYSTALS-Kyber` se distingue no solo por sus propiedades resistentes a lo cuántico (QR) sino también por los beneficios tangibles que ofrece a esta industria. Esta sección detalla las ventajas prácticas de `CRYSTALS-Kyber`, subrayando por qué es particularmente adecuado para las necesidades únicas de las instituciones financieras.
-
-- **Seguridad reforzada con claves más pequeñas**: una de las ventajas más significativas de `CRYSTALS-Kyber` es su capacidad para crear claves de cifrado más pequeñas sin sacrificar la seguridad. En un sector donde las brechas de datos pueden tener consecuencias catastróficas, una seguridad robusta no es negociable. Los tamaños de clave más pequeños de `CRYSTALS-Kyber` simplifican los procesos de gestión de claves, factor crítico en los grandes sistemas bancarios donde miles de claves están en juego. Esto no solo refuerza la seguridad, sino que también optimiza la eficiencia de almacenamiento y transmisión, factor crucial en una época en que la velocidad y el espacio son valiosos.
-
-- **Velocidad y eficiencia**: en los servicios financieros, donde las transacciones se producen en milisegundos, la velocidad de las operaciones criptográficas es crucial. `CRYSTALS-Kyber` sobresale en este aspecto, ofreciendo procesos rápidos de generación de claves, encapsulación y desencapsulación. Esta velocidad garantiza que las medidas de seguridad no se conviertan en un cuello de botella en los entornos de trading de alta frecuencia o durante transacciones a gran escala. Además, la eficiencia de `CRYSTALS-Kyber` se traduce en una reducción de los recursos de cálculo, conduciendo a ahorros de coste y a operaciones más respetuosas con el medio ambiente.
-
-- **Perdurabilidad frente a las amenazas cuánticas**: con el advenimiento de la computación cuántica, la industria afronta un futuro en el que los métodos criptográficos tradicionales podrían quedar obsoletos. Al adoptar `CRYSTALS-Kyber`, las instituciones financieras no solo aseguran su presente sino que también se preparan para un mundo postcuántico. Este enfoque proactivo de la ciberseguridad demuestra un compromiso con la protección a largo plazo de los datos, consideración esencial para las partes interesadas y los clientes que priorizan la seguridad.
-
-- **Cumplimiento normativo y ventaja competitiva**: a medida que los reguladores mundiales empiezan a reconocer la amenaza cuántica, es probable que impongan la adopción de algoritmos resistentes a lo cuántico. La adopción temprana de `CRYSTALS-Kyber` posiciona a las instituciones financieras como líderes en cumplimiento y seguridad. Además, ofrece una ventaja competitiva, tranquilizando a clientes y socios sobre el compromiso de la institución con prácticas de seguridad punteras.
+`CRYSTALS-Kyber` se stal jedním z předních řešení v oblasti kryptografie odolné vůči kvantovým počítačům a nabízí kombinaci bezpečnosti, efektivity a rychlosti. Jeho mřížkový přístup, menší klíče a optimalizovaný návrh z něj činí vhodnou volbu pro ochranu citlivých informací v bankovnictví a finančních službách. S tím, jak svět dále přijímá digitální technologie, bude `CRYSTALS-Kyber` hrát významnou roli při ochraně našich dat i v následujících letech.
 
 ![Divider][01].class=\"m-10 w-100\"
 
-## Incentivos
+## Dopad
 
-### El caso para la adopción de CRYSTALS-Kyber
+### CRYSTALS-Kyber: přínosy pro bankovnictví a finanční služby
 
-En un panorama donde la ciberseguridad no es solo una necesidad sino un diferenciador competitivo, la industria bancaria y financiera se encuentra en un punto crítico. La adopción de `CRYSTALS-Kyber` representa un movimiento estratégico, alineándose tanto con las necesidades de seguridad actuales como con los giros tecnológicos futuros. Esta última sección describe los incentivos convincentes para integrar `CRYSTALS-Kyber` en la infraestructura criptográfica de los servicios financieros.
+Bankovnictví a finanční služby jsou v neustálém závodě s čím dál sofistikovanějšími kybernetickými hrozbami. V tomto kontextu `CRYSTALS-Kyber` vyniká nejen svými vlastnostmi odolnými vůči kvantovým počítačům (QR), ale také hmatatelnými přínosy pro toto odvětví. Tato část popisuje praktické výhody `CRYSTALS-Kyber` a zdůrazňuje, proč je zvláště vhodný pro specifické potřeby finančních institucí.
 
-- **Adelantarse a las tendencias de ciberseguridad**: el auge de la computación cuántica plantea una amenaza significativa para los algoritmos tradicionales de cifrado, haciéndolos vulnerables al descifrado por los futuros ordenadores cuánticos. Al adoptar `CRYSTALS-Kyber`, las instituciones financieras pueden proteger sus datos sensibles e infraestructuras críticas frente a estas amenazas emergentes.
+- **Vyšší bezpečnost s menšími klíči**: Jednou z nejvýznamnějších výhod `CRYSTALS-Kyber` je schopnost vytvářet menší šifrovací klíče bez ztráty bezpečnosti. V odvětví, kde mohou mít úniky dat katastrofální následky, je spolehlivá bezpečnost nepostradatelná. Menší klíče, které `CRYSTALS-Kyber` nabízí, zjednodušují správu klíčů, což je zásadní faktor v rozsáhlých bankovních systémech, kde jsou v oběhu tisíce klíčů. To nejen zvyšuje bezpečnost, ale také optimalizuje efektivitu ukládání a přenosu, což je zásadní v době, kdy jsou rychlost i prostor vzácné.
 
-- **Eficiencia operativa y rentabilidad**: los tamaños de clave compactos y los algoritmos eficientes de `CRYSTALS-Kyber` conducen a ahorros sustanciales de coste. Comparado con los algoritmos tradicionales, `CRYSTALS-Kyber` reduce las necesidades de almacenamiento hasta en un 50 % y el consumo de ancho de banda hasta en un 30 %, generando ahorros significativos para las instituciones financieras con grandes volúmenes de datos.
+- **Rychlost a efektivita**: Ve finančních službách, kde transakce probíhají v milisekundách, je rychlost kryptografických operací zásadní. `CRYSTALS-Kyber` v tomto ohledu vyniká a nabízí rychlé generování klíčů, zapouzdření i rozbalení. Tato rychlost zajišťuje, že se bezpečnostní opatření nestanou úzkým hrdlem v prostředí vysokofrekvenčního obchodování ani při rozsáhlých transakcích. Efektivita `CRYSTALS-Kyber` navíc znamená nižší nároky na výpočetní prostředky, což vede k úsporám nákladů a šetrnějšímu provozu k životnímu prostředí.
 
-- **Alineación normativa y gestión de riesgos**: con varios organismos reguladores —entre ellos el NIST y la European Union Agency for Cybersecurity (ENISA)— recomendando activamente la adopción de soluciones criptográficas resistentes a lo cuántico, los adoptantes tempranos de `CRYSTALS-Kyber` estarán bien posicionados para cumplir las futuras exigencias normativas y mitigar los riesgos jurídicos potenciales.
+- **Odolnost do budoucna vůči kvantovým hrozbám**: S nástupem kvantových výpočtů čelí odvětví budoucnosti, v níž se tradiční kryptografické metody mohou stát zastaralými. Přijetím `CRYSTALS-Kyber` finanční instituce zabezpečují nejen svou současnost, ale připravují se také na postkvantový svět. Tento proaktivní přístup ke kybernetické bezpečnosti dokládá závazek k dlouhodobé ochraně dat, což je zásadní hledisko pro zainteresované strany i klienty, kteří kladou důraz na bezpečnost dat.
 
-- **Reforzar la confianza del cliente y la reputación institucional**: instituciones financieras de primer nivel como Barclays y Deutsche Bank han adoptado `CRYSTALS-Kyber` para proteger los datos de clientes y asegurar transacciones financieras críticas. Este compromiso con una seguridad avanzada no solo ha protegido a estas instituciones de potenciales ciberataques, sino que también ha reforzado su reputación como guardianes de confianza de la información sensible.
-
-![Divider][01].class=\"m-10 w-100\"
-
-## Conclusión
-
-### Asegurar el futuro financiero con CRYSTALS-Kyber
-
-Ante la evolución de las amenazas de ciberseguridad, la industria bancaria y financiera afronta una elección crítica. Los algoritmos tradicionales de cifrado, antaño considerados seguros, son ahora vulnerables frente a la potencia emergente de la computación cuántica. `CRYSTALS-Kyber` emerge como un faro de seguridad, ofreciendo una solución robusta, eficiente y perdurable para proteger los activos digitales del sector financiero.
-
-Con su combinación única de funcionalidades QR, eficiencia operativa y tamaños de clave más pequeños, `CRYSTALS-Kyber` es un game-changer para la seguridad financiera. Al adoptar `CRYSTALS-Kyber`, las instituciones no solo aseguran sus operaciones actuales sino que también se preparan para un futuro en el que la computación cuántica redefine la ciberseguridad. Este enfoque proactivo demuestra un compromiso con los más altos estándares de seguridad, reforzando la confianza del cliente y la resistencia de la industria frente a las amenazas en evolución.
-
-En un mundo cada vez más interconectado y digital, `CRYSTALS-Kyber` se alza como un testimonio del poder de las soluciones innovadoras y orientadas al futuro. Su adopción por instituciones financieras de primer nivel como Barclays y Deutsche Bank es un fuerte respaldo a sus capacidades y una señal clara a la industria para abrazar esta solución criptográfica resistente a lo cuántico.
+- **Soulad s regulací a konkurenční výhoda**: Jak regulátoři po celém světě začínají uznávat kvantovou hrozbu, pravděpodobně budou vyžadovat přijetí algoritmů odolných vůči kvantovým počítačům. Včasné přijetí `CRYSTALS-Kyber` staví finanční instituce do role lídrů v souladu s předpisy a v bezpečnosti. Přináší také konkurenční výhodu a ujišťuje klienty i partnery o odhodlání instituce používat nejmodernější bezpečnostní postupy.
 
 ![Divider][01].class=\"m-10 w-100\"
 
-En conclusión, espero que esta exploración de `CRYSTALS-Kyber` haya iluminado el profundo impacto de la criptografía resistente a lo cuántico en el sector financiero. Si desea sumergirse más profundamente en esta tecnología revolucionaria o tiene preguntas, le invito a contactarme en [LinkedIn ⧉][02] o a través de la [página de contacto][00].
+## Pobídky
 
-Gracias de nuevo por su tiempo, espero tener noticias suyas.
+### Důvody pro přijetí CRYSTALS-Kyber
 
-[00]: /contact/index.html "Contact"
+V prostředí, kde kybernetická bezpečnost není jen nutností, ale i konkurenční odlišností, se bankovnictví a finanční služby nacházejí v kritickém bodě. Přijetí `CRYSTALS-Kyber` je strategický krok, který odpovídá současným bezpečnostním potřebám i budoucím technologickým změnám. Tato závěrečná část shrnuje důvody pro začlenění `CRYSTALS-Kyber` do kryptografické infrastruktury finančních služeb.
+
+- **Náskok před trendy v kybernetické bezpečnosti**: Rozmach kvantových výpočtů představuje významnou hrozbu pro tradiční šifrovací algoritmy, protože je činí zranitelnými vůči dešifrování budoucími kvantovými počítači. Přijetím `CRYSTALS-Kyber` mohou finanční instituce chránit svá citlivá data a kritickou infrastrukturu před těmito vznikajícími hrozbami.
+
+- **Provozní efektivita a nákladová efektivnost**: Kompaktní klíče a efektivní algoritmy `CRYSTALS-Kyber` vedou k výrazným úsporám nákladů. Ve srovnání s tradičními šifrovacími algoritmy snižuje `CRYSTALS-Kyber` nároky na úložiště až o 50 % a spotřebu šířky pásma až o 30 %, což přináší významné úspory pro finanční instituce s velkými objemy dat.
+
+- **Soulad s regulací a řízení rizik**: Několik regulačních orgánů, včetně National Institute of Standards and Technology (NIST) a European Union Agency for Cybersecurity (ENISA), aktivně doporučuje přijetí kryptografických řešení odolných vůči kvantovým počítačům. Ti, kdo `CRYSTALS-Kyber` přijmou včas, budou dobře připraveni splnit budoucí regulační požadavky a omezit případná právní rizika.
+
+- **Posílení důvěry klientů a reputace instituce**: Přední finanční instituce, jako jsou Barclays a Deutsche Bank, přijaly `CRYSTALS-Kyber` k ochraně dat svých klientů a zabezpečení klíčových finančních transakcí. Tento závazek k pokročilé bezpečnosti tyto instituce nejen ochránil před možnými kybernetickými útoky, ale také posílil jejich pověst důvěryhodných správců citlivých informací.
+
+![Divider][01].class=\"m-10 w-100\"
+
+## Závěr
+
+### Zabezpečení finanční budoucnosti s CRYSTALS-Kyber
+
+Tváří v tvář vyvíjejícím se hrozbám kybernetické bezpečnosti stojí bankovnictví a finanční služby před zásadní volbou. Tradiční šifrovací algoritmy, kdysi považované za bezpečné, jsou nyní zranitelné vůči rostoucímu výkonu kvantových výpočtů. `CRYSTALS-Kyber` nabízí spolehlivé, efektivní a do budoucna odolné řešení pro ochranu digitálních aktiv finančního sektoru.
+
+Díky kombinaci vlastností odolných vůči kvantovým počítačům, provozní efektivity a menších klíčů výrazně mění `CRYSTALS-Kyber` přístup k finanční bezpečnosti. Jeho přijetím instituce zabezpečují nejen svůj současný provoz, ale připravují se také na budoucnost, v níž kvantové výpočty mění kybernetickou bezpečnost. Tento proaktivní přístup dokládá závazek k nejvyšším bezpečnostním standardům, posiluje důvěru klientů a odolnost odvětví vůči vyvíjejícím se hrozbám.
+
+V čím dál propojenějším a digitálním světě je `CRYSTALS-Kyber` dokladem přínosu inovativních a předvídavých řešení. Jeho přijetí předními finančními institucemi, jako jsou Barclays a Deutsche Bank, je silným potvrzením jeho možností a jasným signálem pro celé odvětví, aby toto kryptografické řešení odolné vůči kvantovým počítačům přijalo.
+
+![Divider][01].class=\"m-10 w-100\"
+
+Na závěr věřím, že tento pohled na `CRYSTALS-Kyber` objasnil zásadní význam kryptografie odolné vůči kvantovým počítačům pro finanční sektor. Pokud se chcete o této technologii dozvědět více nebo máte dotazy, spojte se se mnou na [LinkedInu ⧉][02] nebo prostřednictvím [kontaktní stránky][00].
+
+Ještě jednou děkuji za váš čas a těším se na vaši zprávu.
+
+[00]: /contact/index.html "Kontakt"
 [01]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Divider"
-[02]: https://www.linkedin.com/in/sebastienrousseau/ "Sebastien Rousseau on LinkedIn"
-[03]: /2023-10-16-protecting-data-in-the-quantum-age-the-hash-library-hsh/index.html "Protecting Data in the Quantum Age: The Hash Library (HSH)"
-[04]: https://cloudcdn.pro/stocks/diagrams/alice-bob-eve-kyber.svg "CRYSTALS-Kyber Key Encapsulation Mechanism (KEM)"
-[05]: https://www.nist.gov/ "The National Institute of Standards and Technology (NIST)"
+[02]: https://www.linkedin.com/in/sebastienrousseau/ "Sebastien Rousseau na LinkedInu"
+[03]: /2023-10-16-protecting-data-in-the-quantum-age-the-hash-library-hsh/index.html "Ochrana dat v kvantové éře: hashovací knihovna (HSH)"
+[04]: https://cloudcdn.pro/stocks/diagrams/alice-bob-eve-kyber.svg "Mechanismus zapouzdření klíče (KEM) CRYSTALS-Kyber"
+[05]: https://www.nist.gov/ "Národní institut pro standardy a technologie (NIST)"

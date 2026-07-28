@@ -1,148 +1,167 @@
 ---
 title: "Blockchain'in arkasındaki teknolojiyi anlamak"
-subtitle: "Dağıtık defter sistemini destekleyen temel mekanizmalar"
-description: "Blockchain'in mimarisi: bloklar, hash'ler, konsensüs algoritmaları ve güveni mümkün kılan kriptografi."
+subtitle: "Blockchain'in arkasındaki kriptografi ve uzlaşmaya yönelik pratik bir inceleme"
+description: "Blockchain'in nasıl çalıştığına teknik bir giriş: kriptografik hash zincirleri, Merkle ağaçları, dağıtık uzlaşma ve Ethereum'un programlanabilir katmanının bir ödeme defterini akıllı sözleşmeler ve tokenleştirilmiş varlıklar için bir platforma nasıl dönüştürdüğü."
 date: "January 9, 2018"
 language: "tr-TR"
 locale: "tr_TR"
 banner: "https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp"
-banner_alt: "Soyut bir blockchain ağ görselleştirmesi"
-keywords: "blockchain, kriptografi, hash, konsensüs, proof-of-work, proof-of-stake, dağıtık defter"
+banner_alt: "Karanlık arka planda ışık izleriyle birbirine bağlanan soyut dijital defter blokları"
+keywords: "blockchain teknolojisi, kriptografik hash, Merkle ağacı, dağıtık uzlaşma, proof of work, Ethereum, akıllı sözleşmeler, EVM, Solidity, ERC-20, dağıtık defter, merkeziyetsiz finans"
 ---
 
 
-![Soyut bir blockchain ağ görselleştirmesi](https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp).class=\"img-fluid clearfix\"
+![Karanlık arka planda ışık izleriyle birbirine bağlanan soyut dijital defter blokları](https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp).class=\"img-fluid clearfix\"
 
----
-
-> **TL;DR.** La blockchain combina funzioni hash crittografiche, alberi di Merkle, firme digitali e algoritmi di consenso distribuito per produrre un libro mastro condiviso, immutabile e senza fiducia. Capire questi mattoni è il punto di partenza per qualsiasi applicazione seria in pagamenti, regolamento o tokenizzazione.
+> **Yönetici Özeti / Önemli Çıkarımlar**
 >
-> **Önemli Çıkarımlar**
->
-> - **Hash crittografici** — funzioni gibi SHA-256 producono impronte uniche e irreversibili che ancorano l'integrità ın catena.
-> - **Alberi di Merkle** — strutture dati efficienti che permettono verifica compatta di grandi insiemi di transazioni.
-> - **Firme digitali** — coppie chiave pubblica/privata che autorizzano transazioni e garantiscono il non ripudio.
-> - **Consenso bizantino** — protocolli che tollerano nodi malevoli e producono accordo finale senza coordinamento centrale.
+> - **Sorun.** Dijital nakit, çifte harcama sorununu çözmeyi gerektirir: güvenilir bir takas kurumu olmadan aynı birimin iki kez harcanmasını önlemek. Bitcoin'in 2008 tarihli teknik raporu bu sorunu, güvenilen aracıları kriptografik kanıt ve dağıtık uzlaşma ile değiştirerek çözdü ([Nakamoto, 2008](https://bitcoin.org/bitcoin.pdf "Bitcoin: Eşten Eşe Elektronik Nakit Sistemi")).
+> - **Veri yapısı.** Bir blockchain, her blok başlığının bir önceki başlığın SHA-256 hash'ini içerdiği, bloklardan oluşan bağlı bir listedir. Hash zinciri geçmişi yalnızca-ekleme (append-only) biçimine sokar: geçmişteki herhangi bir bloğun değiştirilmesi sonraki her hash'i geçersiz kılar ve saldırganı sonraki tüm proof-of-work'ü yeniden yapmaya zorlar.
+> - **Merkle ağaçları.** Bir blok içindeki işlemler ikili bir Merkle ağacına hash'lenir. Blok başlığında saklanan kök hash, tüm bloğu indirmeden herhangi bir tekil işlemin verimli biçimde doğrulanmasına olanak tanır; hafif SPV istemcilerinin temeli budur.
+> - **Ethereum'un uzantısı.** Ethereum'un Yellow Paper (2014) belgesi EVM'yi tanıttı: her tam düğümde çalışan deterministik bir yığın makinesi. Akıllı sözleşmeler, zincire dağıtılan bytecode'dur; tüm düğümlerde aynı şekilde çalışır ve atomik olarak sonuçlanır, güvenilen aracıların yerini kendi kendini uygulayan kodla alır ([Wood, 2014](https://ethereum.github.io/yellowpaper/paper.pdf "Ethereum Yellow Paper")).
+> - **Pratik önem.** 2017'den bu yana dağıtılan her tokenleştirilmiş varlık, stablecoin ve DeFi protokolü bu temeller üzerinde çalışır. Hash zincirini, Merkle ağacını ve EVM yürütme modelini anlamak, Ethereum tabanlı herhangi bir sistemle çalışmanın ön koşuludur.
 
 ---
 
-## Bakış
+## Blockchain'in Çözdüğü Sorun
 
-La tecnologia blockchain ha aperto la puerta a una nuova era di applicazioni decentralizzate (dApps) che operano in modo independiente, senza control centralizado. Ethereum fornisce una piattaforma potente per creare dApps complejas e smart contracts.
+Bitcoin'den önce, dijital ödemeler çifte harcamayı önlemek için güvenilir bir aracı gerektiriyordu: bir banka, ödeme işlemcisi veya takas kurumu. Alice, 10 £ temsil eden dijital bir dosyayı Bob'a gönderdiğinde, dosyanın kendisinde onun aynı kopyayı Carol'a göndermesini engelleyen hiçbir şey yoktu. Mevcut her sistemdeki çözüm merkezî kayıt tutmaydı: bankanın defteri paranın harcandığını söylüyordu, dolayısıyla para tekrar harcanamıyordu.
 
-Uno ın usos daha çok prometedores di Ethereum è il lanzamiento di criptovalute e tokens digitali personalizados. In questa guía completa examinaremos passo a passo gibi creare il suo propio token crittografico su Ethereum.
+Bitcoin'in katkısı, o güvenilir defteri, tüm işlemlerin kaydının binlerce bağımsız düğüm arasında çoğaltıldığı dağıtık bir defterle değiştirmekti. Düğümler arasındaki karşılıklı güvensizlik, iki mekanizma aracılığıyla güvenliğe dönüştürüldü:
 
-## Fikir
+1. **Kriptografik bağlama.** Her işlem bloğu, bir önceki bloğun hash'ini içerir. Hash fonksiyonu tek yönlü, deterministik bir eşlemedir: herhangi bir girdi verildiğinde fonksiyon sabit uzunlukta bir çıktı üretir ve girdinin tek bir bitinin bile değiştirilmesi tamamen farklı bir çıktı üretir. Bu, geçmişteki bir bloğa yapılan herhangi bir değişikliğin ondan sonraki her bloğu geçersiz kılması anlamına gelir.
 
-Il nostro objetivo è costruire una criptovaluta semplice su Ethereum, ofreciéndole una experiencia pratica di desarrollo blockchain. Questi sono i passi chiave che cubriremos:
+2. **Proof-of-work uzlaşması.** Yeni bir blok eklemek, bloğun hash'inin bir hedef eşiğin altına düşmesini sağlayan bir nonce değeri bulmayı gerektirir; bulunması hesaplama açısından pahalı, doğrulanması ise önemsiz derecede ucuzdur. Bu, geçmişi yeniden yazmayı, değiştirilen bloğun derinliğiyle orantılı olarak pahalı hale getirir, çünkü bir saldırganın o bloktan zincirin ucuna kadar tüm proof-of-work'ü yeniden yapması gerekir.
 
-### Diseñar la criptovaluta
+Bu birleşim, en fazla kümülatif proof-of-work'e sahip en uzun zincirin, yapısı gereği, gerçek kaynaklar harcayan dürüst katılımcılar tarafından sürdürülen zincir olduğu anlamına gelir.
 
-La primera tarea crucial è progettare il suo criptovaluta. Esto abarca la definición di atributos chiave:
+## Kriptografik Yapı Taşları
 
-- **Nombre**: elija un nombre único che represente la identidad ve propósito ın token.
-- **Símbolo**: elija un símbolo corto gibi BTC per Bitcoin. Se utilizza in i exchanges.
-- **Oferta total**: determine il número máximo di tokens in circulación.
-- **Decimales**: defina la divisibilidad di il suo token, gibi 2 per céntimos.
-- **Funcionalidades adicionales**: añada opcionalmente extras gibi minting, burning, freezing, etc.
+Blockchain teknolojisi, önceden var olan üç kriptografik ilkeyi yeni bir mimaride birleştirir:
 
-### Escribir smart contracts
+### SHA-256 Hash Fonksiyonları
 
-Per dar vida a il suo criptovaluta, dovrà codificar smart contracts che definan la funzionalità ve regole ın token. I smart contracts sono scripts programáticos almacenados in la blockchain che se ejecutan automáticamente quando se cumplen ciertas condiciones.
+SHA-256 (256-bit Güvenli Hash Algoritması), NIST tarafından standartlaştırılan SHA-2 ailesinin bir üyesidir. Rastgele uzunlukta bir girdi alır ve 256-bit'lik bir çıktı üretir. Blockchain kullanımı için temel özellikler:
 
-Queste sono alcune capacità chiave che hacen che i smart contracts sean idóneos per le criptovalute:
+- **Deterministik.** Aynı girdi her zaman aynı çıktıyı üretir.
+- **Ön görüntü direnci (pre-image resistance).** Bir hash çıktısı verildiğinde, girdiyi yeniden oluşturmak hesaplama açısından olanaksızdır.
+- **Çığ etkisi (avalanche effect).** Girdinin bir bitinin değiştirilmesi çıktı bitlerinin kabaca yarısını değiştirir ve kaba kuvvet aramasını verimsiz kılar.
+- **Çakışma direnci (collision resistance).** Aynı hash'i üreten iki farklı girdi bulmak hesaplama açısından olanaksızdır.
 
-- **Autoejecución**: se activan automáticamente, senza intervención di un tercero.
-- **Inmutabilidad**: una vez desplegado, il código non può modificarse. Esto garantisce la sicurezza.
-- **Autonomía**: non è necesaria nessuna autoridad central per gestire i smart contracts.
-- **Transparencia**: qualsiasi può inspeccionar la lógica di un smart contract.
-- **Automatización**: acciones gibi la transferencia di fondi possono automatizarse mediante il codice ın contratto.
-- **Seguridad**: i fondi depositados in un contrato rimangono protegidos fino a che se cumplen le condiciones di liberación.
-- **Eficiencia**: i smart contracts eliminan intermediarios, haciendo i processi daha çok rápidos e meno costosos.
+Bitcoin, uzunluk uzatma (length-extension) saldırılarına karşı ek güvenlik için SHA-256'yı iki kez uygular (SHA-256d). Ethereum, bir SHA-3 finalisti varyantı olan Keccak-256'yı kullanır.
 
-Ejemplo di código di contrato in Solidity.
+### Merkle Ağaçları
+
+Merkle ağacı, hash'lerden oluşan ikili bir ağaçtır. Her yaprak düğüm bir işlemin hash'idir. Her iç düğüm, iki alt düğümünün hash'idir. Kök, yani Merkle kökü, bloktaki tüm işlemleri blok başlığında saklanan tek bir 32 baytlık değerde özetler.
+
+Pratik sonuç: belirli bir işlemin bir bloğa dahil edildiğini doğrulamak için tüm `n` işleme değil, yalnızca `log₂(n)` hash'e ihtiyaç duyarsınız. 2.000 işlemli bir blok için doğrulama, 2.000 yerine 11 hash gerektirir; hafif istemcilerdeki Basitleştirilmiş Ödeme Doğrulaması'nın (SPV) temeli budur.
+
+### Dijital İmzalar (ECDSA)
+
+Bitcoin ve Ethereum'da işlem yetkilendirmesi, secp256k1 eğrisi üzerinde Eliptik Eğri Dijital İmza Algoritması'nı (ECDSA) kullanır. Bir özel anahtar bir işlemi imzalar; herhangi bir düğüm, özel anahtarı bilmeden ilgili açık anahtarı kullanarak imzayı doğrulayabilir. Bu, bir adresten yapılacak harcamayı yalnızca özel anahtarın sahibinin yetkilendirebilmesini sağlar.
+
+Ethereum adresleri, açık anahtarın Keccak-256 hash'inin son 20 baytıdır; bu türetme, adresleri anahtar çiftine kriptografik olarak bağlı kalırken kompakt ve taşınabilir kılar.
+
+## Bitcoin Blockchain'i Nasıl Çalışır
+
+Bir Bitcoin bloğu üç mantıksal bileşen içerir:
+
+**Blok başlığı:** protokol sürümü, bir önceki blok başlığının hash'i, işlemlerin Merkle kökü, bir Unix zaman damgası, güncel zorluk hedefi ve nonce'den oluşan 80 bayt. Madenciler, başlığın çift SHA-256 hash'i zorluk hedefinin altına düşene kadar nonce'yi (ve bazen coinbase işlemindeki zaman damgasını veya extra-nonce'yi) yineler.
+
+**İşlem listesi:** bloğa dahil edilen işlemlerin sıralı kümesi. Coinbase işlemi (ilki), blok ödülünü ve işlem ücretlerini madencinin adresine atar.
+
+**Zincir:** başlıkların birbirine bağlanması. Zincirdeki kümülatif proof-of-work (her bloğu üretmek için yapılan tüm işin toplamı), hangi çatalın kanonik zincir olduğunu belirler. Düğümler her zaman en fazla kümülatif işe sahip zinciri izler.
+
+Bitcoin için blok süresi 10 dakika olacak şekilde hedeflenir. Zorluk, toplam ağ hash oranı değiştikçe bu hedefi korumak için her 2.016 blokta bir (yaklaşık iki haftada bir) ayarlanır.
+
+## Ethereum'un Programlanabilir Katmanı
+
+Ethereum, Bitcoin'in işlem modelini "değer aktar"dan "kod çalıştır"a genelleştirdi. Temel eklemeler:
+
+**Ethereum Sanal Makinesi (EVM):** tüm tam düğümlerde deterministik olarak çalışan, 256-bit kelimeli, yığın tabanlı bir sanal makine. Her opcode'un açık bir gas maliyeti vardır. Hesaplama, sonsuz döngülerin ağı durdurmasını önleyecek şekilde blok gas limitiyle sınırlandırılır. Aynı durum üzerinde aynı bytecode'u çalıştıran tüm düğümler aynı çıktıyı üretmelidir; yürütme üzerindeki bu uzlaşma, akıllı sözleşmeleri güvene ihtiyaç duymayan (trustless) hale getiren şeydir.
+
+**Hesaplar.** Ethereum'un iki hesap türü vardır: özel anahtarlarla kontrol edilen Harici Sahipli Hesaplar (EOA) ve kodu zincir üzerinde saklanan Sözleşme Hesapları. Bir sözleşme adresine gönderilen bir işlem, sözleşmenin bytecode yürütmesini tetikler.
+
+**Durum (State).** Ethereum'un küresel durumu, adreslerin hesap durumlarına (nonce, bakiye, depolama, kod hash'i) eşlenmesidir. Durum kökü, yani tüm hesap durumlarının bir Merkle Patricia trie'si, her blok başlığına dahil edilir ve herhangi bir hesabın herhangi bir blok yüksekliğindeki durumunun verimli biçimde kanıtlanmasına olanak tanır.
+
+**Gas.** Kullanıcılar her EVM işlemi için gas (ETH cinsinden) öder. Gas iki işlev görür: madencileri/doğrulayıcıları hesaplama karşılığında ödüllendirir ve herhangi bir tek işlemin tüketebileceği kaynakları sınırlayarak pahalı işlemler yoluyla hizmet reddi (denial-of-service) saldırılarını önler.
+
+## Solidity ile Akıllı Sözleşme Yazmak
+
+Solidity, EVM bytecode'una derlenen, statik olarak tiplenmiş, sözleşme odaklı bir dildir. Minimal bir token sözleşmesi temel kavramları gösterir:
 
 ```solidity
 pragma solidity ^0.8.0;
 
 contract MyToken {
+    string public name;
+    string public symbol;
+    uint8 public decimals;
+    uint256 public totalSupply;
+    mapping(address => uint256) public balanceOf;
 
- string public name;
- string public symbol;
- uint256 public decimals;
- uint256 public totalSupply;
+    event Transfer(address indexed from, address indexed to, uint256 value);
 
- constructor(string memory _name, string memory _symbol, uint8 _decimals, uint256 _totalSupply) {
- name = _name;
- symbol = _symbol;
- decimals = _decimals;
- totalSupply = _totalSupply;
- }
+    constructor(
+        string memory _name,
+        string memory _symbol,
+        uint8 _decimals,
+        uint256 _totalSupply
+    ) {
+        name = _name;
+        symbol = _symbol;
+        decimals = _decimals;
+        totalSupply = _totalSupply;
+        balanceOf[msg.sender] = _totalSupply;
+    }
 
+    function transfer(address _to, uint256 _value) external returns (bool) {
+        require(balanceOf[msg.sender] >= _value, "Insufficient balance");
+        balanceOf[msg.sender] -= _value;
+        balanceOf[_to] += _value;
+        emit Transfer(msg.sender, _to, _value);
+        return true;
+    }
 }
 ```
 
-Questo contrato básico consente creare un token con propiedades gibi nombre, símbolo, decimales e offerta total.
+Temel gözlemler: `mapping(address => uint256)`, bellek içi bir veri yapısı değil, bir EVM depolama düzenidir; okuma ve yazma işlemleri gas harcar. `require`, başarısızlık durumunda tüm işlemi geri alır ve kullanılmayan gas'i iade eder. `event Transfer`, zincir dışı indeksleyicilerin tüm durumu yeniden okumadan transferleri izlemek için kullandığı bir günlük yayar. `constructor` dağıtım sırasında bir kez çalışır; sonraki çağrılar adlandırılmış fonksiyonlara gider.
 
-La función `constructor` inicializa questi parámetros in il momento ın despliegue ın contrato.
+ERC-20 standardı, değiştirilebilir (fungible) tokenler için ortak bir arayüzü resmileştirdi: `transfer`, `transferFrom`, `approve`, `allowance`, `balanceOf`, `totalSupply`. Bu sayede ERC-20 uyumlu herhangi bir token, özel entegrasyon olmadan ERC-20 farkında herhangi bir borsa veya cüzdanla çalışabilir.
 
-Questo ejemplo se limita a configurar propiedades básicas. Extendería il contrato per añadir daha çok funzionalità:
+## Defterden Finansal Altyapıya
 
-- Transferencias di tokens tra indirizzi
-- Gestión di saldos
-- Autorizaciones (allowances) per gastar tokens
-- Minting e burning di tokens
-- Congelación o bloqueo di transferencias di tokens
-- Implementación di standard di token gibi ERC-20
-- Despliegue e interacción con il contrato
+Burada açıklanan blockchain ilkeleri (hash zincirleri, Merkle ağaçları, EVM ve ERC-20), 2018 ile 2026 arasında daha geniş bir finansal uygulama kümesinin temeli haline geldi:
 
-### Desarrollo e pruebas locali
+**Merkeziyetsiz Finans (DeFi).** Borç verme protokolleri (Compound, Aave), otomatik piyasa yapıcılar (Uniswap) ve getiri toplayıcılar (yield aggregator) tümü EVM akıllı sözleşmeleri olarak çalışır. Geleneksel finansal aracıların takas, saklama ve mutabakat işlevlerinin yerini kendi kendini yürüten kod ve zincir üzerindeki likidite havuzlarıyla alırlar.
 
-Antes di desplegar il suo criptovaluta in la blockchain Ethereum, è prudente realizar pruebas locali exhaustivas. Esto garantisce che il suo criptovaluta funcione gibi se espera, senza bugs ni vulnerabilidades imprevistas.
+**Tokenleştirilmiş Varlıklar.** Merkez bankaları ve ticari bankalar, EVM uyumlu zincirlerin izinli varyantları üzerinde tokenleştirilmiş mevduatları, tokenleştirilmiş tahvilleri ve tokenleştirilmiş para piyasası fonlarını pilot olarak deniyor. Altta yatan mekanikler (hash ile güvence altına alınmış durum geçişleri, atomik mutabakat, programlanabilir transfer kuralları) 2014 Ethereum mimarisinin doğrudan mirasçılarıdır.
 
-Per empezar, siga questi passi:
+**Merkez Bankası Dijital Paraları.** İngiltere Merkez Bankası'nın toptan CBDC araştırması, ECB'nin dijital euro programı ve Project Agorá'nın tümü, Bitcoin ve Ethereum'daki temel tasarımlardan türetilen veya bunlarla uyumlu DLT mimarilerini araştırıyor. Uzlaşma ve hash zinciri yapıları, izinlendirme ve yönetişim modeli kamuya açık blockchain'lerden tamamen farklı olduğunda bile geçerliliğini korur.
 
-#### Descargar Go-Ethereum (Geth)
+2008 Bitcoin teknik raporundan 2026 tokenleştirilmiş finansına uzanan yolculuk yirmi yılı kapsar, ancak tutarlı bir teknik soy hattı üzerinde ilerler. Bir SHA-256 hash zincirinin değişmezliği nasıl uyguladığını, bir Merkle ağacının verimli doğrulamayı nasıl mümkün kıldığını ve EVM'nin akıllı sözleşmeleri atomik olarak nasıl yürüttüğünü anlamak, düzenlemeye tabi finansal hizmetlerde blockchain'in ne yapıp ne yapamayacağına dair her iddiayı değerlendirmenin ön koşuludur.
 
-Comience descargando [Go-Ethereum][00], anche llamado Geth, un cliente Ethereum escrito in Go. Geth actúa gibi interfaz di línea di comandos (CLI) Ethereum, ejecutable in Windows, Mac e Linux. È una strumento versátil che consente minar, creare e interactuar con smart contracts in la rete Ethereum.
+## Sıkça Sorulan Sorular
 
-#### Instalar Ethereum
+**Bir blockchain ile dağıtık veritabanı arasındaki fark nedir?**
 
-Una vez descargado Geth, instale Ethereum. Per i requisitos previos detallados e instrucciones di compilación complete, consulte le [Installation Instructions][01] disponibles in il suo wiki oficial.
+Geleneksel bir dağıtık veritabanı, erişilebilirlik ve performans için verileri düğümler arasında çoğaltır, ancak güven merkezîdir: bir yönetici kayıtları değiştirebilir. Bir blockchain, hash zincirleme ve uzlaşma yoluyla kurcalamayı hesaplama açısından pahalı hale getirir: geçmişteki herhangi bir kaydı değiştirmek, sonraki tüm proof-of-work veya proof-of-stake'i yeniden yapmayı ve ağı değiştirilmiş çatalı kabul etmeye ikna etmeyi gerektirir. Ayırt edici özellik, erişim denetimleriyle değil, kriptografi ve teşvik tasarımıyla uygulanan kurcalama kanıtıdır (tamper-evidence).
 
-#### Configurar un entorno di desarrollo
+**Ethereum neden SHA-256 yerine Keccak-256 kullanır?**
 
-Per facilitar il desarrollo di il suo criptovaluta, necesitará un entorno di desarrollo, un framework di pruebas e una canalización di activos per Ethereum. Le instrucciones detalladas per instalar queste strumenti esenciales se encuentran in la wiki di Ethereum.
+Ethereum, Keccak-256'yı (NIST standartlaştırma düzenlemelerinden önceki SHA-3 finalisti) kısmen, tasarımcıları Bitcoin'in halihazırda bağımlı olduğu SHA-2 soyundan bağımsızlık istediği için benimsedi. Keccak ayrıca belirli EVM işlemleri için onu çekici kılan farklı cebirsel özelliklere sahiptir. Geliştiriciler için pratik etki, Ethereum adres türetme ve depolama yuvası hash'lemesinin, Bitcoin'deki gibi SHA-256d değil, Keccak-256 kullanmasıdır.
 
-#### Desplegar in una testnet
+**EVM'de "gas" neyi önler?**
 
-Una vez che il suo criptovaluta supere le pruebas locali, può desplegarla in una testnet. Una testnet è un entorno seguro e controlado che imita il mainnet di Ethereum, permitiéndole evaluar il prestazioni di il suo criptovaluta in un entorno real, senza rischio finanziario real.
+Gas iki tür saldırıyı önler. İlk olarak, hesaplama açısından pahalı işlemler yoluyla hizmet reddini önler: her opcode gas'e mal olur, dolayısıyla bir saldırgan ağı bedelsiz olarak sonsuz döngüler çalıştırmaya zorlayamaz. İkinci olarak, blok gas limiti blok başına toplam hesaplamayı sınırlayarak blok doğrulama süresinin tam düğümler için sınırlı ve öngörülebilir kalmasını sağlar. Gas olmasaydı, tek bir sözleşme çağrısı sınırsız hesaplama yürüterek ağı durdurabilirdi.
 
-## Etki
+**Proof-of-stake, proof-of-work ile karşılaştırıldığında güvenlik modelini nasıl değiştirir?**
 
-Al costruire una criptovaluta basata in Ethereum da cero, obtendrá:
+Proof-of-work'te güvenlik enerji harcamasıyla sağlanır: zincire saldırmak, ağın hash oranının %50'sinden fazlasını kontrol etmeyi, yani onun fiziksel donanım ve gücünün %50'sinden fazlasını kontrol etmeyi gerektirir. Proof-of-stake'te (2022'deki Merge'den bu yana Ethereum tarafından kullanılıyor) güvenlik ekonomik teminatla sağlanır: doğrulayıcılar teminat olarak ETH kilitler ve çelişkili blokları imzalarlarsa bu teminat kesilir (slashing). %51 saldırısı, kilitlenmiş tüm ETH'nin %50'sinden fazlasını edinmeyi ve riske atmayı gerektirir; bu, donanım ve enerji maliyeti değil, bir sermaye maliyetidir. Güvenlik modeli farklıdır, ancak rasyonel doğrulayıcıların sermaye imhasına ücret gelirini tercih ettiği varsayımı altında ekonomik açıdan matematiksel olarak karşılaştırılabilir.
 
-- Un conocimiento profundo ın applicazioni decentralizzate (dApps) e ın programación di smart contracts
-- Experiencia pratica con la programación in Solidity
-- Una comprensión ın protocolos di consenso di Ethereum
-- Familiaridad con standard di token gibi ERC-20
+## Kaynaklar
 
-Questo aprendizaje le otorgará i medios per aprovechar la tecnologia blockchain in soluzioni innovadoras.
-
-## Teşvikler
-
-Completar una construcción di token di extremo a extremo desbloquea una experiencia pratica di primera mano con:
-
-- La arquitectura blockchain
-- La mecánica ın criptovalute
-- Il desarrollo di smart contracts
-- Le capacità e limitaciones di Ethereum
-
-Adquirirá competencias valiosas per fare avanzar il suo carrera in programación blockchain.
-
-## Sonuç
-
-In il campo ın tecnologia blockchain, la comprensión se gana mejor attraverso la puesta in pratica. Construir una criptovaluta su la piattaforma Ethereum offre una oportunidad única di adquirir experiencia di primera mano con le capacità e limitaciones ın tecnologia. Questa guía le arma con i conocimientos e competencias per emprender questo apasionante viaje, favoreciendo la innovación ve descubrimiento in il universo in perpetua evolución ın desarrollo blockchain e cripto.
-
-[00]: https://geth.ethereum.org/downloads/
-[01]: https://geth.ethereum.org/docs/getting-started/installing-geth
+- Nakamoto, S., (2008). [Bitcoin: Eşten Eşe Elektronik Nakit Sistemi ⧉](https://bitcoin.org/bitcoin.pdf "Bitcoin Teknik Raporu").
+- Buterin, V., (2014). [Ethereum: Yeni Nesil Bir Akıllı Sözleşme ve Merkeziyetsiz Uygulama Platformu ⧉](https://ethereum.org/whitepaper "Ethereum Teknik Raporu").
+- Wood, G., (2014). [Ethereum: Güvenli, Merkeziyetsiz, Genelleştirilmiş Bir İşlem Defteri ⧉](https://ethereum.github.io/yellowpaper/paper.pdf "Ethereum Yellow Paper").
+- NIST, (2015). [SHA-3 Standardı: Permütasyon Tabanlı Hash ve Genişletilebilir Çıktı Fonksiyonları ⧉](https://www.nist.gov/publications/sha-3-standard-permutation-based-hash-and-extendable-output-functions "NIST FIPS 202").

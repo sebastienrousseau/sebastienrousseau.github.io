@@ -1,58 +1,58 @@
 ---
-title: "Gemini'ı açığa çıkarmak: Google'ın yapay zeka devrimi açıklandı"
-subtitle: "Google'ın çok modlu modeli Gemini'a derin bir bakış"
-description: "Gemini, doğal olarak çok modlu olarak tasarlanmış Google'ın en gelişmiş yapay zeka modelidir. Mimari ve yetenekler."
+title: "Gemini 1.5'i çözümlemek: Google'ın yapay zeka atılımı açıklandı"
+subtitle: "Google'ın en son yapay zeka atılımına ayrıntılı bir bakış"
+description: "Google'ın Gemini 1.5 modeli bağlam pencerelerini 1 milyon tokenın ötesine ölçekliyor. Bunun geri getirmeyle zenginleştirilmiş finans için ne sağladığı ve bilinmeye değer ödünleşimler."
 date: "February 19, 2024"
 language: "tr-TR"
 locale: "tr_TR"
 banner: "https://cloudcdn.pro/stocks/images/abstract-visualization-of-gemini.webp"
-banner_alt: "Gemini modelinin görselleştirmesi"
-keywords: "Gemini, Google, yapay zeka, çok modlu, LLM, üretken yapay zeka"
+banner_alt: "Gemini 1.5'in yeteneklerini temsil eden yapay zeka ağlarının soyut görselleştirmesi"
+keywords: "Gemini 1.5, Google yapay zeka, Mixture-of-Experts mimarisi, hesaplama verimliliği, bağlam penceresi genişletme, yapay zeka yeniliği, veri analizi dönüşümü, bağlam içi öğrenme, yapay zeka kullanım senaryoları, teknolojik dönüşüm"
 ---
 
 
 ---
 
-> **TL;DR.** Gemini è il modello multimodale di Google progettato gibi nativamente multimodale (testo, immagini, audio, video). Posizionato in concorrenza diretta con GPT-4 e Claude için banking e l'enterprise.
+> **TL;DR.** Google'ın Gemini 1.5 modeli bağlam pencerelerini 1 milyon tokenın ötesine ölçekler. Bunun geri getirmeyle zenginleştirilmiş finans için ne sağladığı ve bilinmeye değer ödünleşimler.
 >
 > **Önemli Çıkarımlar**
 >
-> - **Multimodalità nativa** — non un add-on, ma la base dell'architettura.
-> - **Tre dimensioni** — Ultra (frontier), Pro (production-ready), Nano (on-device).
-> - **Integrazione Workspace** — disponibile in Gmail, Docs, Meet e nei prodotti enterprise di Google Cloud.
-> - **Roadmap competitivo** — pressione su OpenAI e Anthropic, accelerazione ın ciclo di rilascio.
+> - **Gemini'in evrimi: 1.0'dan 1.5'e.** Gemini 1.5, Mixture of Experts (MoE) mimarisinin yeni bir sürümü üzerine kuruludur ve sinir ağındaki en ilgili yolları seçici biçimde etkinleştirme yeteneğini güçlendirir.
+> - **Kullanım senaryoları ve gelecek etkileri.** Gemini 1.5'teki ilerlemeler; teknoloji, eğitim ve yaratıcı sanatlar gibi sektörlerde çok sayıda uygulamanın önünü açar.
+> - **Etik değerlendirmeler ve sorumlu geliştirme.** Gemini 1.5 gibi dil modellerinin hızlı ilerlemesi, etik etkiler etrafında önemli sorular doğurur.
+> - **Verimlilik ve kalitede atılım.** Gemini 1.5, önceki Ultra sürümüyle karşılaştırılabilir bir kaliteye ulaşırken gerekli hesaplama kaynaklarını belirgin biçimde azaltır.
 
 ---
 
-[**Gemini 1.5 di Google ⧉**][00] marca un progresso significativo in IA, mejorando la eficiencia ve capacità per tratar grandi cantidades di informazione. Questo modello di linguaggio supera a il suo predecesor, Gemini 1.0, e inaugura una nuova era di potencia computacional e uso ın modelli di IA. Exploremos il potencial transformador di Gemini 1.5 ve suoi implicaciones için futuro ın innovación IA.
+[**Google'ın Gemini 1.5 modeli ⧉**][00], yapay zekada önemli bir ilerlemeyi işaret ediyor; verimliliği ve büyük hacimli bilgiyi işleme yeteneğini artırıyor. Bu dil modeli, öncülü Gemini 1.0'ın performansını aşıyor ve hesaplama gücü ile yapay zeka modeli kullanımında yeni bir dönem açıyor. Gemini 1.5'in dönüştürücü potansiyelini ve yapay zeka yeniliğinin geleceğine yönelik etkilerini inceleyelim.
 
-## La evolución di Gemini: di 1.0 a 1.5
+## Gemini'in evrimi: 1.0'dan 1.5'e
 
-Gemini 1.5 è costruito su una nuova versión ın arquitectura Mixture of Experts (MoE), reforzando il suo capacità per activar selectivamente le rutas daha çok pertinentes di il suo rete neurale. Questo progresso aumenta significativamente la eficiencia ve prestazioni, permitiendo a Gemini 1.5 tratar fino a un millón di tokens. Questa funzionalità consente al modello tratar grandi conjuntos di dati —vídeos, audios e bases di código complejas— superando a Gemini 1.0.
+Gemini 1.5, Mixture of Experts (MoE) mimarisinin yeni bir sürümü üzerine kuruludur ve sinir ağındaki en ilgili yolları seçici biçimde etkinleştirme yeteneğini güçlendirir. Bu ilerleme verimliliği ve performansı belirgin biçimde artırır; Gemini 1.5'in bir milyon tokena kadar işleme yapmasına olanak tanır. Bu özellik, modelin videolar, sesler ve karmaşık kod tabanları dahil büyük veri kümelerini işlemesini sağlayarak Gemini 1.0'ı geride bırakır.
 
-### Avance in eficiencia e qualità
+### Verimlilik ve kalitede atılım
 
-Gemini 1.5 alcanza una qualità comparable alla versión Ultra anterior al tiempo che reduce significativamente i recursos computacionales requeridos. Questa eficiencia democratiza il acceso alle capacità IA avanzadas, permitiendo una applicazione e experimentación daha çok amplias in tutte le industrias.
+Gemini 1.5, önceki Ultra sürümüyle karşılaştırılabilir bir kaliteye ulaşırken gerekli hesaplama kaynaklarını belirgin biçimde azaltır. Bu verimlilik, gelişmiş yapay zeka yeteneklerine erişimi yaygınlaştırır ve sektörler genelinde daha geniş uygulama ile denemeye olanak tanır.
 
-### Ampliar la ventana di contexto
+### Bağlam penceresini genişletmek
 
-Una ın funzionalità daha çok revolucionarias di Gemini 1.5 è il suo ventana di contexto ampliada, capaz di tratar entradas di fino a 10 millones di tokens. Questa capacità è un game-changer per le applicazioni che richiedono la síntesis di grandi volúmenes di informazione, permitiendo una comprensión daha çok profunda e matizada ın dati.
+Gemini 1.5'in en çığır açıcı özelliklerinden biri, 10 milyon tokena kadar girdileri işleyebilen genişletilmiş bağlam penceresidir. Bu yetenek, büyük hacimli bilginin sentezlenmesini gerektiren uygulamalar için belirleyici bir öneme sahiptir ve verilerin daha derin, daha ayrıntılı biçimde anlaşılmasını sağlar.
 
-### Éxito in i benchmarks
+### Kıyaslama başarısı
 
-Il prestazioni di Gemini 1.5 in diversos benchmarks, superando a Gemini 1.0 in il 87 % ın escenarios di prueba, subraya il suo superioridad. La IA ha establecido un récord in tratamiento e recuperación di informazione a partire da grandi conjuntos di dati in la evaluación "Needle In A Haystack".
+Gemini 1.5'in çeşitli kıyaslamalardaki performansı, test senaryolarının %87'sinde Gemini 1.0'ı geride bırakarak üstünlüğünü ortaya koyar. Model, "Needle In A Haystack" değerlendirmesinde büyük veri kümelerinden bilgi işleme ve geri getirme konusunda bir rekor kırdı.
 
-## Casos di uso revolucionarios e implicaciones futuras
+## Kullanım senaryoları ve gelecek etkileri
 
-I progressi di Gemini 1.5 desbloquean una plétora di applicazioni in settori gibi la tecnologia, la educación ve artes creativas. Il suo versatilidad ve suo potencial transformador van a revolucionar le industrias, ofreciendo strumenti için análisis di dati, la comprensión multimodal, la asistencia alla programación ve generación di contenuto creativo.
+Gemini 1.5'teki ilerlemeler; teknoloji, eğitim ve yaratıcı sanatlar gibi sektörlerde çok sayıda uygulamanın önünü açar. Çok yönlülüğü ve dönüştürücü potansiyeli sektörleri köklü biçimde değiştirecek; veri analizi, çok kipli anlama, programlama desteği ve yaratıcı içerik üretimi için araçlar sunacaktır.
 
-## Consideraciones éticas e desarrollo responsable
+## Etik değerlendirmeler ve sorumlu geliştirme
 
-Il progresso rápido ın modelli di linguaggio gibi Gemini 1.5 suscita cuestiones importanti attorno alle implicaciones éticas. La comunità IA reconoce ampliamente la importancia di priorizar la confidencialidad, evitar i sesgos e sviluppare sistemi seguros man mano che i modelli se tornano daha çok capaces. [**Google ⧉**][01] indica haber puesto il énfasis in propiedades gibi la sicurezza ve equidad durante il desarrollo di Gemini 1.5. Inoltre, la compañía afirma haber incorporado tecniche algorítmicas per rilevare la generación di contenuto dañino, così gibi sistemi di vigilancia di sesgos. Auditorías externas continuas ve supervisión per parte di organizaciones senza ánimo di lucro e studi académicos sono cruciales per validare le prioridades éticas ve salvaguardas tecniche. Per migliorare Gemini 1.5 ve demás modelli punteros al tiempo che se protege la confidencialidad e se promueve la equidad, ricercatori, legisladores e aziende devono permanecer vigilantes.
+Gemini 1.5 gibi dil modellerinin hızlı ilerlemesi, etik etkiler etrafında önemli sorular doğurur. Yapay zeka topluluğu, modeller daha yetenekli hale geldikçe gizliliği önceliklendirmenin, önyargıdan kaçınmanın ve güvenli sistemler geliştirmenin önemini geniş ölçüde kabul eder. [**Google ⧉**][01], Gemini 1.5'in geliştirilmesi sırasında güvenlik, emniyet ve adalet gibi özellikleri öne çıkardığını belirtir. Ayrıca şirket, zararlı içerik üretimini saptamaya yönelik algoritmik teknikleri önyargı izleme sistemleriyle birlikte kullandığını iddia eder. Etik önceliklerin ve teknik güvencelerin doğrulanması için sürekli dış denetimler ile kâr amacı gütmeyen kuruluşların ve akademik çalışmaların gözetimi kritik önemdedir. Gizliliği korurken ve adaleti geliştirirken Gemini 1.5 ile diğer önde gelen modelleri iyileştirmek için araştırmacılar, politika yapıcılar ve şirketler dikkatli olmayı sürdürmelidir.
 
 ## Sonuç
 
-Gemini 1.5 marca un progresso significativo in la tecnologia IA. Mejora la eficiencia, amplía il contexto e introduce usos innovadores, fijando nuovi standard için tecnologia. Va a revolucionar le nostre interacciones con la tecnologia e configurar il futuro ın innovación IA.
+Gemini 1.5, yapay zeka teknolojisinde önemli bir ilerlemeyi işaret eder. Verimliliği artırır, bağlamı genişletir ve yenilikçi kullanımlar getirerek teknoloji için yeni standartlar belirler. Teknolojiyle etkileşimlerimizi köklü biçimde değiştirecek ve yapay zeka yeniliğinin geleceğini şekillendirecektir.
 
 [00]: https://blog.google/technology/ai/google-gemini-next-generation-model-february-2024/ "Google's Gemini 1.5: The Next Generation of AI Models"
 [01]: https://deepmind.google/technologies/gemini/#introduction "Gemini - Google DeepMind"
